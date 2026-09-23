@@ -86,6 +86,16 @@ const { theme = 'light' } = Astro.props;
     color: var(--color-bg);
   }
 
+  .site-header--dark {
+    position: relative;
+    color: var(--color-ink);
+    background: var(--color-bg);
+  }
+
+  .site-header.is-open {
+    color: var(--color-bg);
+  }
+
   .site-header__inner {
     position: relative;
     z-index: 2;

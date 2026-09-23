@@ -2,65 +2,62 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
-import StoryPair from '../../components/editorial/StoryPair.astro';
-import DestinationBand from '../../components/editorial/DestinationBand.astro';
 import FactStrip from '../../components/proof/FactStrip.astro';
+import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
 import LeadForm from '../../components/forms/LeadForm.astro';
 ---
 
 <BaseLayout
-  title="MICE и деловые поездки в Бразилию и Латинскую Америку"
-  description="Ada Tours организует MICE, incentive, корпоративные группы и деловые поездки в Бразилии и Латинской Америке."
+  title="MICE и корпоративные поездки в Латинской Америке"
+  description="MICE, деловые делегации, incentive и корпоративные группы по Бразилии и Латинской Америке."
 >
   <Hero
-    eyebrow="MICE · Brazil & Latin America"
-    title="Деловая поездка, в которой все части работают вместе"
-    intro="Транспорт, размещение, встречи, площадки, сопровождающие и программа вне деловой части собираются как одна локальная операция."
-    image="https://brasiltours.ru/image/cache/countries/brazil/new-pics/raphael-nogueira-espuilpsruw-1920-1920x1080.webp"
+    eyebrow="MICE"
+    title="Деловая поездка должна работать как один сценарий"
+    intro="Перелеты, встречи, транспорт, площадки, рестораны, экскурсии и свободное время должны быть связаны одной локальной координацией."
+    image="/media/prototype/rio-panorama.jpg"
     ctaLabel="Обсудить группу"
   />
 
+  <EditorialStatement
+    eyebrow="Корпоративные группы"
+    text="MICE-страница Ada Tours не должна выглядеть отдельным корпоративным сайтом. Та же крупная фотография и editorial-подача, но больше фактов, процесса и доказательств."
+  />
+
   <FactStrip
-    dark
     facts={[
-      { value: '40–50', label: 'человек', note: 'обычный масштаб групп в практике Ada Tours' },
-      { value: '200–500', label: 'участников', note: 'масштаб отдельных событий и крупных групп' },
-      { value: '№1', label: 'Бразилия', note: 'ключевая страна Ada Tours для MICE' },
-      { value: '1', label: 'локальный координатор', note: 'единая точка сборки наземной части программы' },
+      { value: 'Brazil', label: 'ключевой MICE-рынок Ada Tours' },
+      { value: 'Groups', label: 'корпоративные и incentive поездки' },
+      { value: 'DMC', label: 'локальная координация программы' },
+      { value: '24/7', label: 'формулировку поддержки подтвердить до production' },
     ]}
   />
 
-  <EditorialStatement
-    eyebrow="MICE"
-    text="Сложность начинается не с экскурсии, а в стыках: аэропорт, автобус, отель, встреча, площадка, переводчик, ужин и следующий выезд должны работать по одному таймингу."
-  />
-
-  <StoryPair
-    eyebrow="Рио-де-Жанейро"
-    title="Деловая программа не обязана заканчиваться переговорной"
-    text="Рио позволяет сочетать встречи и корпоративную часть с панорамными площадками, гастрономией, морскими прогулками и индивидуальными активностями для небольших VIP-групп."
-    image="/media/prototype/rio-panorama.jpg"
-  />
-
-  <DestinationBand
+  <EditorialProof
     eyebrow="Деловые делегации"
-    title="От встреч до отраслевой программы"
-    text="Поездка может включать переговоры, посещения компаний и поставщиков, транспорт между городами, переводчиков и отдельную культурную часть."
-    href="/mice/delovye-delegacii/"
-    image="/media/prototype/buenos-aires.jpg"
-    align="right"
+    title="Встречи, визиты и городская программа в одной логистике"
+    text="Для деловой поездки критично не только расписание встреч, но и время между ними: аэропорт, переезды, питание, переводчики, вечерняя программа и резерв на изменения."
+    image="/media/prototype/rio-night.jpg"
+    facts={[
+      'Трансферы и транспорт на протяжении программы',
+      'Гиды и переводческое сопровождение по запросу',
+      'Площадки, рестораны и вечерние активности',
+      'Резервные сценарии при изменении графика',
+    ]}
   />
 
   <ProcessSteps
-    title="Сначала задача группы, потом маршрут"
+    eyebrow="Организация"
+    title="Сначала деловая задача, потом туристическая оболочка"
     steps={[
-      { title: 'Бриф', text: 'Фиксируем даты, состав группы, деловую задачу, города и обязательные точки.' },
-      { title: 'Логистика', text: 'Собираем отели, транспорт, встречи, площадки и резерв времени между ними.' },
-      { title: 'Программа', text: 'Добавляем экскурсии, рестораны и активности так, чтобы они не ломали деловую часть.' },
-      { title: 'На месте', text: 'Координируем наземную часть программы и корректируем ее при изменениях.' },
+      { title: 'Задача', text: 'Фиксируем формат поездки, количество участников, обязательные встречи и ограничения по времени.' },
+      { title: 'Логистика', text: 'Строим перелеты, транспорт, районы размещения и последовательность деловой программы.' },
+      { title: 'Experience', text: 'Добавляем рестораны, экскурсии, мероприятия и свободное время без конфликта с основным расписанием.' },
+      { title: 'Координация', text: 'На месте одна команда держит расписание и изменения в связке с организатором.' },
     ]}
+    dark
   />
 
-  <LeadForm title="Рассчитать MICE или деловую группу" entityId="mice" />
+  <LeadForm title="Рассчитать MICE или деловую поездку" entityId="mice" />
 </BaseLayout>

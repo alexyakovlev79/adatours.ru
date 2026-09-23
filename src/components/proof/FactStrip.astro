@@ -1,5 +1,5 @@
 ---
-interface Fact { value: string; label: string; note?: string; }
+interface Fact { value: string; label: string; }
 interface Props { facts: Fact[]; dark?: boolean; }
 const { facts, dark = false } = Astro.props;
 ---
@@ -10,7 +10,6 @@ const { facts, dark = false } = Astro.props;
       <div class="fact">
         <strong>{fact.value}</strong>
         <span>{fact.label}</span>
-        {fact.note && <small>{fact.note}</small>}
       </div>
     ))}
   </div>
@@ -18,69 +17,67 @@ const { facts, dark = false } = Astro.props;
 
 <style>
   .fact-strip {
-    background: var(--color-gold);
-    color: var(--color-ink-deep);
+    border-block: 1px solid var(--color-line);
+    background: var(--color-bg);
   }
 
   .fact-strip--dark {
     color: var(--color-bg);
     background: var(--color-ink-deep);
+    border-color: rgba(255,255,255,.18);
   }
 
   .fact-strip__inner {
     display: grid;
-    grid-template-columns: repeat(var(--facts, 4), minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
     margin-inline: auto;
   }
 
   .fact {
-    min-height: 220px;
-    padding: 44px 28px;
-    border-inline-start: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+    min-height: 180px;
+    padding: 38px 28px;
+    border-left: 1px solid currentColor;
+    border-color: inherit;
   }
 
   .fact:last-child {
-    border-inline-end: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+    border-right: 1px solid currentColor;
+    border-color: inherit;
   }
 
   .fact strong {
     display: block;
     font-family: var(--font-display);
-    font-size: clamp(2.6rem, 4.5vw, 6.5rem);
+    font-size: clamp(2.2rem, 3.4vw, 4.8rem);
     font-weight: 500;
-    line-height: .9;
+    line-height: .95;
     letter-spacing: -.045em;
   }
 
   .fact span {
     display: block;
-    margin-top: 18px;
-    font-family: var(--font-display);
-    font-size: .78rem;
-    font-weight: 600;
+    margin-top: 12px;
+    color: var(--color-muted);
+    font-size: .76rem;
+    line-height: 1.35;
     letter-spacing: .08em;
     text-transform: uppercase;
   }
 
-  .fact small {
-    display: block;
-    max-width: 260px;
-    margin-top: 10px;
-    opacity: .62;
-    font-size: .78rem;
-    line-height: 1.5;
+  .fact-strip--dark .fact span {
+    color: rgba(255,255,255,.56);
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 680px) {
     .fact-strip__inner {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0,1fr));
     }
 
     .fact {
-      min-height: 165px;
-      padding: 30px 18px;
-      border-bottom: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+      min-height: 132px;
+      padding: 26px 16px;
+      border-bottom: 1px solid var(--color-line);
     }
   }
 </style>

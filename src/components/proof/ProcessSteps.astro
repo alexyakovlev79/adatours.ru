@@ -4,21 +4,19 @@ interface Props {
   eyebrow?: string;
   title: string;
   steps: Step[];
+  dark?: boolean;
 }
-const { eyebrow = 'Как работаем', title, steps } = Astro.props;
+const { eyebrow, title, steps, dark = false } = Astro.props;
 ---
 
-<section class="process section">
+<section class:list={['process section', { 'process--dark': dark }]}>
   <div class="container">
-    <div class="process__heading">
-      <p class="eyebrow">{eyebrow}</p>
-      <h2>{title}</h2>
-    </div>
-
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <h2>{title}</h2>
     <div class="process__steps">
       {steps.map((step, index) => (
-        <article>
-          <span>{String(index + 1).padStart(2, '0')}</span>
+        <article class="step">
+          <span>{String(index + 1).padStart(2,'0')}</span>
           <h3>{step.title}</h3>
           <p>{step.text}</p>
         </article>
@@ -28,20 +26,14 @@ const { eyebrow = 'Как работаем', title, steps } = Astro.props;
 </section>
 
 <style>
-  .process {
-    background: var(--color-bg);
+  .process--dark {
+    color: var(--color-bg);
+    background: var(--color-ink-deep);
   }
 
-  .process__heading {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
-    align-items: start;
-    margin-bottom: clamp(48px, 7vw, 90px);
-  }
-
-  .process__heading h2 {
-    margin: 0;
+  .process h2 {
+    max-width: 1000px;
+    margin: 12px 0 clamp(46px, 7vw, 92px);
   }
 
   .process__steps {
@@ -50,44 +42,65 @@ const { eyebrow = 'Как работаем', title, steps } = Astro.props;
     border-top: 1px solid var(--color-line);
   }
 
-  .process__steps article {
-    padding: 32px 28px 38px;
+  .process--dark .process__steps {
+    border-color: rgba(255,255,255,.22);
+  }
+
+  .step {
+    min-height: 340px;
+    padding: 34px 28px 28px 0;
     border-right: 1px solid var(--color-line);
-    border-bottom: 1px solid var(--color-line);
   }
 
-  .process__steps article:first-child {
-    border-left: 1px solid var(--color-line);
+  .process--dark .step {
+    border-color: rgba(255,255,255,.22);
   }
 
-  .process__steps span {
+  .step + .step {
+    padding-left: 28px;
+  }
+
+  .step > span {
     color: var(--color-gold-deep);
     font-family: var(--font-display);
-    font-size: .78rem;
-    letter-spacing: .08em;
+    font-size: .82rem;
+    letter-spacing: .1em;
   }
 
-  .process__steps h3 {
-    margin: 36px 0 18px;
-    font-size: clamp(1.4rem, 2vw, 2.1rem);
+  .process--dark .step > span {
+    color: var(--color-gold);
   }
 
-  .process__steps p {
-    margin: 0;
-    color: rgba(26,26,26,.67);
-    font-size: .95rem;
+  .step h3 {
+    margin: 54px 0 20px;
+    font-size: clamp(1.55rem, 2vw, 2.5rem);
+  }
+
+  .step p {
+    color: color-mix(in srgb, currentColor 68%, transparent);
   }
 
   @media (max-width: 900px) {
     .process__steps {
-      grid-template-columns: repeat(2, minmax(0,1fr));
+      grid-template-columns: repeat(2,minmax(0,1fr));
     }
   }
 
-  @media (max-width: 620px) {
-    .process__heading,
+  @media (max-width: 560px) {
     .process__steps {
       grid-template-columns: 1fr;
+    }
+
+    .step,
+    .step + .step {
+      min-height: 0;
+      padding: 28px 0 42px;
+      border-right: 0;
+      border-bottom: 1px solid var(--color-line);
+    }
+
+    .step h3 {
+      margin-top: 28px;
     }
   }
 </style>

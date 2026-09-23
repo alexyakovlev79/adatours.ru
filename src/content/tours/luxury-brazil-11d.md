@@ -29,12 +29,12 @@ currency: USD
 priceNote: Цена в исходной программе 2026 начинается от $3653. Финальный расчет зависит от дат, категории отелей и набора услуг.
 dates: []
 hero:
-  src: /media/prototype/rio-panorama.jpg
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash-1920x1080.webp
   alt: Панорама Рио-де-Жанейро
 gallery:
-  - src: /media/prototype/iguazu.jpg
+  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/vodopady-iguasu-8-1920x1080.webp
     alt: Водопады Игуасу
-  - src: /media/prototype/rio-night.jpg
+  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/dharmendra-sahu-ia2kjtrx8y4-unsplash-2-1920x1080.webp
     alt: Рио-де-Жанейро вечером
 featured: true
 priority: 100
@@ -57,7 +57,7 @@ itinerary:
     title: Прибытие в Рио
     places: [Рио-де-Жанейро]
     text: Встреча в аэропорту, трансфер и размещение. Остаток дня можно оставить свободным, выйти к Копакабане или Ипанеме и без спешки войти в ритм города.
-    image: /media/prototype/rio-night.jpg
+    image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
   - day: 2
     title: Сахарная голова
     places: [Урка, Сахарная голова]
@@ -66,7 +66,7 @@ itinerary:
     title: Корковаду и Христос-Искупитель
     places: [Корковаду, Тижука]
     text: Поездка к статуе Христа и панораме Рио с Корковаду. В зависимости от программы день можно дополнить Ботаническим садом или другими районами города.
-    image: /media/prototype/rio-panorama.jpg
+    image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
   - day: 4
     title: Свободный Рио
     places: [Рио-де-Жанейро]
@@ -79,7 +79,7 @@ itinerary:
     title: Бразильская сторона Игуасу
     places: [Национальный парк Игуасу]
     text: Маршрут идет по смотровым площадкам с панорамой каскадов. По желанию можно добавить Парк птиц или Макуко Сафари.
-    image: /media/prototype/iguazu.jpg
+    image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/vodopady-iguasu-8-1920x1080.webp
   - day: 7
     title: Аргентинская сторона
     places: [Пуэрто-Игуасу, Глотка дьявола]

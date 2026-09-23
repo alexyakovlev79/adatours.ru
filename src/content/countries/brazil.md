@@ -7,7 +7,7 @@ status: approved
 summary: >-
   Бразилия раскрывается через очень разные поездки: Рио и побережье, водопады Игуасу, Амазонию, Пантанал, колониальные города и маршруты по нескольким регионам. Ada Tours собирает их в одну программу с локальной логистикой и сопровождением на месте.
 hero:
-  src: /media/prototype/rio-panorama.jpg
+  src: https://brasiltours.ru/image/cache/countries/brazil/tild3463-3039-4366-b661-663030613337-thales-botelho-de-so-1920x1080.webp
   alt: Панорама Рио-де-Жанейро
 gallery:
   - src: /media/prototype/lencois.jpg
@@ -33,7 +33,7 @@ featureBands:
   - eyebrow: Город
     title: Рио-де-Жанейро
     text: Океан, гранитные холмы, Корковаду, Сахарная голова и районы с совершенно разным ритмом. Для большинства первых поездок Рио становится началом большого маршрута по стране.
-    image: /media/prototype/rio-night.jpg
+    image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
     href: /napravleniya/braziliya/rio-de-zhanejro/
   - eyebrow: Природа
     title: Ленсойс-Мараньенсис

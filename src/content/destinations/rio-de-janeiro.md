@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Рио удобно поставить в начало путешествия по Бразилии: 3-5 дней хватает на главные панорамы, пляжи и районы города, после чего маршрут можно продолжить в Игуасу, Амазонию, Пантанал или на побережье.
 hero:
-  src: /media/prototype/rio-night.jpg
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
   alt: Рио-де-Жанейро вечером
 gallery:
   - src: /media/prototype/rio-panorama.jpg
@@ -36,7 +36,7 @@ featureBands:
     title: Корковаду и Сахарная голова
     text: >-
       2 главные высотные точки дают разный взгляд на город: с Корковаду видно, как Рио лежит между горами и океаном, а Сахарная голова открывает залив Гуанабара и береговую линию.
-    image: /media/prototype/rio-panorama.jpg
+    image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
   - eyebrow: После заката
     title: Рио не заканчивается пляжем
     text: Вечером маршрут можно продолжить ресторанами, Самбой, Лапой или спокойным ужином с видом на город. Формат зависит от того, какой ритм нужен именно вашей поездке.

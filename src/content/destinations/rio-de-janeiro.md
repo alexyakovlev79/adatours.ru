@@ -25,9 +25,9 @@ featuredExcursions: []
 facts:
   - value: 3-5
     label: дней для первого знакомства
-  - value: 2
+  - value: "2"
     label: главные вершины города
-  - value: 1
+  - value: "1"
     label: океан рядом каждый день
   - value: 24/7
     label: ритм большого города

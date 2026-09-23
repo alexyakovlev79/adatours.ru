@@ -1,0 +1,55 @@
+---
+import '../styles/tokens.css';
+import '../styles/typography.css';
+import '../styles/global.css';
+import SiteHeader from '../components/global/SiteHeader.astro';
+import SiteFooter from '../components/global/SiteFooter.astro';
+import { SITE } from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  image?: string;
+  lang?: string;
+  headerTheme?: 'light' | 'dark';
+}
+
+const {
+  title = SITE.defaultTitle,
+  description = SITE.defaultDescription,
+  canonical,
+  image,
+  lang = SITE.locale,
+  headerTheme = 'light',
+} = Astro.props;
+
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site ?? SITE.url).toString();
+const fullTitle = title.includes('Ada Tours') ? title : `${title} | Ada Tours`;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    {image && <meta property="og:image" content={new URL(image, Astro.site ?? SITE.url).toString()} />}
+    <meta name="theme-color" content="#131412" />
+  </head>
+  <body>
+    <SiteHeader theme={headerTheme} />
+    <main>
+      <slot />
+    </main>
+    <SiteFooter />
+  </body>
+</html>

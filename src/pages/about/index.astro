@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/editorial/Hero.astro';
+import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+---
+
+<BaseLayout title="О компании Ada Tours">
+  <Hero
+    eyebrow="Ada Tours"
+    title="Локальная экспертиза и сложные маршруты"
+    intro="Фактический паспорт компании будет единым источником данных для About, коммерческих страниц и Schema.org."
+    compact
+  />
+  <EditorialStatement
+    eyebrow="Факты прежде маркетинга"
+    text="История, цифры, география и возможности Ada Tours будут публиковаться только после сверки конфликтующих данных."
+  />
+</BaseLayout>

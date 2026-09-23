@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PrimaryCTA from '../components/global/PrimaryCTA.astro';
+---
+
+<BaseLayout
+  title="Страница не найдена"
+  description="Страница не найдена. Вернитесь на главную Ada Tours или перейдите к направлениям."
+>
+  <section class="not-found">
+    <div class="not-found__overlay"></div>
+    <div class="not-found__content">
+      <p class="eyebrow">404</p>
+      <h1>Маршрут изменился</h1>
+      <p>Такой страницы нет. Можно вернуться на главную или выбрать другое направление.</p>
+      <div class="not-found__actions">
+        <PrimaryCTA href="/" label="На главную" />
+        <a href="/strany/">Смотреть страны ↗</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found {
+    position: relative;
+    display: grid;
+    min-height: 100svh;
+    color: var(--color-bg);
+    background:
+      radial-gradient(circle at 70% 20%, rgba(242,204,103,.26), transparent 30%),
+      linear-gradient(145deg, #484a41, #10110f);
+    isolation: isolate;
+  }
+
+  .not-found__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(0,0,0,.1), rgba(0,0,0,.55));
+  }
+
+  .not-found__content {
+    align-self: end;
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+    padding: calc(var(--header-h) + 80px) 0 clamp(50px, 8vw, 110px);
+  }
+
+  .not-found h1 {
+    max-width: 950px;
+    margin: 12px 0 24px;
+  }
+
+  .not-found p:not(.eyebrow) {
+    max-width: 650px;
+    color: rgba(255,255,255,.8);
+  }
+
+  .not-found__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 34px;
+    align-items: center;
+    margin-top: 34px;
+  }
+</style>

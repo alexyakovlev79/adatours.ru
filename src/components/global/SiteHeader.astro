@@ -1,0 +1,231 @@
+---
+import PrimaryCTA from './PrimaryCTA.astro';
+import { NAV_LINKS } from '../../lib/site';
+
+interface Props {
+  theme?: 'light' | 'dark';
+}
+
+const { theme = 'light' } = Astro.props;
+---
+
+<header class:list={['site-header', `site-header--${theme}`]} data-site-header>
+  <div class="site-header__inner">
+    <a class="brand" href="/" aria-label="Ada Tours, на главную">
+      <span class="brand__ada">ADA</span>
+      <span class="brand__tours">TOURS</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      {NAV_LINKS.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+
+    <div class="desktop-cta">
+      <PrimaryCTA href="/contacts/" label="Оставить заявку" />
+    </div>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-menu-toggle
+    >
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
+    <nav aria-label="Мобильная навигация">
+      {NAV_LINKS.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+    <div class="mobile-menu__contact">
+      <PrimaryCTA href="/contacts/" label="Оставить заявку" />
+      <a href="/contacts/">WhatsApp</a>
+      <a href="/contacts/">Telegram</a>
+      <a href="/contacts/">Позвонить</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const header = document.querySelector('[data-site-header]');
+  const toggle = document.querySelector('[data-menu-toggle]');
+  const menu = document.querySelector('[data-mobile-menu]');
+
+  if (header && toggle instanceof HTMLButtonElement && menu instanceof HTMLElement) {
+    const setOpen = (open: boolean) => {
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+      menu.setAttribute('aria-hidden', String(!open));
+      document.body.classList.toggle('menu-open', open);
+      header.classList.toggle('is-open', open);
+    };
+
+    toggle.addEventListener('click', () => {
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') setOpen(false);
+    });
+  }
+</script>
+
+<style>
+  .site-header {
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: 50;
+    color: var(--color-bg);
+  }
+
+  .site-header__inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: clamp(24px, 3vw, 48px);
+    min-height: var(--header-h);
+    padding-inline: var(--gutter);
+  }
+
+  .brand {
+    display: inline-grid;
+    line-height: 0.78;
+    font-family: var(--font-display);
+    letter-spacing: -0.055em;
+  }
+
+  .brand__ada {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .brand__tours {
+    margin-left: 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: center;
+    gap: clamp(16px, 2vw, 30px);
+  }
+
+  .desktop-nav a {
+    font-family: var(--font-display);
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    opacity: 0.95;
+  }
+
+  .desktop-nav a:hover {
+    opacity: 0.62;
+  }
+
+  .desktop-cta :global(.cta) {
+    min-width: auto;
+    padding: 12px 15px;
+  }
+
+  .menu-toggle,
+  .mobile-menu {
+    display: none;
+  }
+
+  @media (max-width: 1080px) {
+    .site-header__inner {
+      grid-template-columns: 1fr auto;
+    }
+
+    .desktop-nav,
+    .desktop-cta {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      padding: 10px;
+      place-content: center;
+      gap: 7px;
+      border: 0;
+      color: inherit;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: currentColor;
+      transition: transform 250ms var(--ease-out);
+    }
+
+    .is-open .menu-toggle span:first-child {
+      transform: translateY(4px) rotate(45deg);
+    }
+
+    .is-open .menu-toggle span:last-child {
+      transform: translateY(-4px) rotate(-45deg);
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      display: grid;
+      align-content: end;
+      gap: 48px;
+      padding: calc(var(--header-h) + 48px) var(--gutter) 48px;
+      color: var(--color-bg);
+      background: var(--color-ink-deep);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition:
+        opacity 260ms var(--ease-out),
+        transform 260ms var(--ease-out),
+        visibility 260ms;
+    }
+
+    .is-open .mobile-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .mobile-menu nav {
+      display: grid;
+      gap: 7px;
+    }
+
+    .mobile-menu nav a {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 10vw, 4.5rem);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .mobile-menu__contact {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 18px 26px;
+      font-size: 0.88rem;
+    }
+  }
+</style>

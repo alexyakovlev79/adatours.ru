@@ -1,0 +1,103 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  text?: string;
+  href: string;
+  image?: string;
+  align?: 'left' | 'right';
+}
+
+const {
+  eyebrow,
+  title,
+  text,
+  href,
+  image,
+  align = 'left',
+} = Astro.props;
+
+const style = image ? `--band-image: url("${image}")` : undefined;
+---
+
+<a class:list={['band', `band--${align}`, { 'band--image': image }]} href={href} style={style}>
+  <div class="band__overlay"></div>
+  <div class="band__content">
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <h2>{title}</h2>
+    {text && <p class="band__text">{text}</p>}
+    <span class="band__link">Смотреть <span aria-hidden="true">↗</span></span>
+  </div>
+</a>
+
+<style>
+  .band {
+    position: relative;
+    display: grid;
+    min-height: clamp(440px, 55vw, 680px);
+    overflow: hidden;
+    color: var(--color-bg);
+    background:
+      radial-gradient(circle at 75% 25%, rgba(242, 204, 103, .2), transparent 28%),
+      linear-gradient(135deg, #45463e, #171815);
+    isolation: isolate;
+  }
+
+  .band--image {
+    background-image: var(--band-image);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .band__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(10,10,9,.68), rgba(10,10,9,.12) 70%);
+    transition: background 350ms var(--ease-out);
+  }
+
+  .band:hover .band__overlay {
+    background: linear-gradient(90deg, rgba(10,10,9,.76), rgba(10,10,9,.16) 70%);
+  }
+
+  .band__content {
+    align-self: end;
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+    padding-block: clamp(48px, 6vw, 86px);
+  }
+
+  .band--right .band__content {
+    text-align: right;
+  }
+
+  .band h2 {
+    max-width: 920px;
+    margin: 10px 0 18px;
+  }
+
+  .band--right h2,
+  .band--right .band__text {
+    margin-left: auto;
+  }
+
+  .band__text {
+    max-width: 580px;
+    margin-bottom: 26px;
+    color: rgba(255,255,255,.82);
+  }
+
+  .band__link {
+    display: inline-flex;
+    gap: 28px;
+    align-items: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid currentColor;
+    font-family: var(--font-display);
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+</style>

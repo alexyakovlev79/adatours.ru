@@ -1,0 +1,28 @@
+---
+interface Props {
+  eyebrow?: string;
+  text: string;
+}
+
+const { eyebrow, text } = Astro.props;
+---
+
+<section class="statement section">
+  <div class="container">
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <p class="statement__text">{text}</p>
+  </div>
+</section>
+
+<style>
+  .statement__text {
+    max-width: 1050px;
+    margin: 16px 0 0;
+    font-family: var(--font-display);
+    font-size: clamp(2.1rem, 1.25rem + 3vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+</style>

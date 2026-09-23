@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/editorial/Hero.astro';
+import EditorialStatement from '../components/editorial/EditorialStatement.astro';
+import DestinationBand from '../components/editorial/DestinationBand.astro';
+import StoryPair from '../components/editorial/StoryPair.astro';
+---
+
+<BaseLayout headerTheme="light">
+  <Hero
+    eyebrow="Ada Tours"
+    title="Бразилия и Латинская Америка"
+    intro="Индивидуальные маршруты, VIP-путешествия, MICE и работа с турагентствами. Первый экран и тексты будут финализированы в редакционном цикле."
+  />
+
+  <EditorialStatement
+    eyebrow="Прототип"
+    text="Новый Ada Tours строится как большая editorial travel platform: крупные фотографии, сильная типографика и минимум интерфейсного шума."
+  />
+
+  <DestinationBand
+    eyebrow="Направление №1"
+    title="Бразилия"
+    text="Country hub станет одной из первых эталонных страниц нового сайта."
+    href="/strany/"
+  />
+
+  <StoryPair
+    eyebrow="Multi-country"
+    title="Одна поездка — несколько стран"
+    text="Туры не привязаны к одной стране в URL. Это позволяет естественно работать с комбинированными маршрутами по Латинской Америке."
+  />
+
+  <DestinationBand
+    eyebrow="Для бизнеса"
+    title="MICE и деловые делегации"
+    text="Коммерческие разделы используют тот же визуальный язык, но дают больше фактов, кейсов и доказательств."
+    href="/mice/"
+    align="right"
+  />
+
+  <DestinationBand
+    eyebrow="Для партнеров"
+    title="DMC для турагентств и туроператоров"
+    text="Отдельный B2B-контур без визуального разрыва с travel-частью сайта."
+    href="/dmc/"
+  />
+</BaseLayout>

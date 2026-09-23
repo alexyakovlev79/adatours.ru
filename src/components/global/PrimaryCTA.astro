@@ -1,0 +1,58 @@
+---
+interface Props {
+  href?: string;
+  label?: string;
+  variant?: 'gold' | 'light' | 'ghost';
+}
+
+const {
+  href = '/contacts/',
+  label = 'Оставить заявку',
+  variant = 'gold',
+} = Astro.props;
+---
+
+<a class:list={['cta', `cta--${variant}`]} href={href}>
+  <span>{label}</span>
+  <span aria-hidden="true">↗</span>
+</a>
+
+<style>
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    min-width: 210px;
+    padding: 16px 20px;
+    border: 1px solid transparent;
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition:
+      background 220ms var(--ease-out),
+      color 220ms var(--ease-out),
+      border-color 220ms var(--ease-out);
+  }
+
+  .cta--gold {
+    background: var(--color-gold);
+    color: var(--color-ink-deep);
+  }
+
+  .cta--gold:hover {
+    background: var(--color-gold-hover);
+  }
+
+  .cta--light {
+    background: var(--color-bg);
+    color: var(--color-ink);
+  }
+
+  .cta--ghost {
+    border-color: currentColor;
+    background: transparent;
+  }
+</style>

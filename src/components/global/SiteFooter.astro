@@ -1,0 +1,102 @@
+---
+import { NAV_LINKS, SITE } from '../../lib/site';
+---
+
+<footer class="footer">
+  <div class="footer__top">
+    <div>
+      <p class="eyebrow">Ada Tours</p>
+      <h2>Бразилия и Латинская Америка</h2>
+    </div>
+    <a class="footer__request" href="/contacts/">Обсудить поездку <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <div class="footer__grid">
+    <nav aria-label="Навигация в подвале">
+      {NAV_LINKS.map((link) => <a href={link.href}>{link.label}</a>)}
+      <a href="/multi-country/">Multi-country</a>
+      <a href="/contacts/">Контакты</a>
+    </nav>
+
+    <div class="footer__meta">
+      <p>© {new Date().getFullYear()} {SITE.name}</p>
+      <a href="/privacy/">Политика конфиденциальности</a>
+      <a href="/personal-data/">Обработка персональных данных</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding: var(--section-y-tight) var(--gutter) 36px;
+    color: var(--color-bg);
+    background: var(--color-ink-deep);
+  }
+
+  .footer__top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 48px;
+    padding-bottom: clamp(56px, 8vw, 110px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .footer h2 {
+    max-width: 950px;
+    margin: 12px 0 0;
+  }
+
+  .footer__request {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid currentColor;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+  }
+
+  .footer__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 48px;
+    padding-top: 38px;
+  }
+
+  .footer nav,
+  .footer__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 24px;
+    align-items: center;
+  }
+
+  .footer nav a,
+  .footer__meta {
+    font-size: 0.82rem;
+  }
+
+  .footer__meta {
+    justify-content: flex-end;
+    color: rgba(255,255,255,.6);
+  }
+
+  .footer__meta p {
+    margin: 0;
+    font-size: inherit;
+  }
+
+  @media (max-width: 780px) {
+    .footer__top,
+    .footer__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .footer__meta {
+      justify-content: flex-start;
+    }
+  }
+</style>

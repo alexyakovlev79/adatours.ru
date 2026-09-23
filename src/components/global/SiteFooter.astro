@@ -1,6 +1,7 @@
 ---
 import { NAV_LINKS, SITE } from '../../lib/site';
 import { withBase } from '../../lib/paths';
+import { ORG } from '../../data/organization/ada-tours';
 ---
 
 <footer class="footer">
@@ -21,6 +22,9 @@ import { withBase } from '../../lib/paths';
 
     <div class="footer__meta">
       <p>© {new Date().getFullYear()} {SITE.name}</p>
+      <a href={ORG.whatsappHref} target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href={ORG.phoneHref}>{ORG.phoneDisplay}</a>
+      <a href={`mailto:${ORG.email}`}>{ORG.email}</a>
       <a href={withBase('/privacy/')}>Политика конфиденциальности</a>
       <a href={withBase('/personal-data/')}>Обработка персональных данных</a>
     </div>

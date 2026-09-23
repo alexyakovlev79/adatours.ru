@@ -1,13 +1,97 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
+import ContactActions from '../../components/global/ContactActions.astro';
+import LeadForm from '../../components/forms/LeadForm.astro';
+import { ORG } from '../../data/organization/ada-tours';
 ---
 
-<BaseLayout title="Контакты Ada Tours">
+<BaseLayout
+  title="Контакты Ada Tours"
+  description="Связаться с Ada Tours: WhatsApp, телефон, email и форма заявки."
+>
   <Hero
     eyebrow="Контакты"
     title="Обсудить поездку"
-    intro="Здесь появятся утвержденные телефон, WhatsApp, Telegram и форма заявки. Backend будет подключен отдельно."
-    compact
+    intro="Для маршрута достаточно отправить даты, состав группы и то, что для вас важно. Остальные детали можно собрать вместе."
+    image="/media/prototype/rio-night.jpg"
+    ctaLabel="Оставить заявку"
   />
+
+  <section class="contacts section">
+    <div class="container contacts__grid">
+      <div>
+        <p class="eyebrow">Связаться напрямую</p>
+        <h2>Рио-де-Жанейро</h2>
+        <p>{ORG.address}</p>
+      </div>
+      <div class="contacts__actions">
+        <ContactActions />
+        <dl>
+          <div>
+            <dt>WhatsApp</dt>
+            <dd><a href={ORG.whatsappHref} target="_blank" rel="noopener noreferrer">{ORG.whatsappDisplay}</a></dd>
+          </div>
+          <div>
+            <dt>Телефон</dt>
+            <dd><a href={ORG.phoneHref}>{ORG.phoneDisplay}</a></dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href={`mailto:${ORG.email}`}>{ORG.email}</a></dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <LeadForm title="Оставить заявку" entityId="contacts" />
 </BaseLayout>
+
+<style>
+  .contacts__grid {
+    display: grid;
+    grid-template-columns: 1fr .8fr;
+    gap: clamp(48px,8vw,120px);
+  }
+
+  .contacts h2 {
+    margin: 12px 0 20px;
+  }
+
+  .contacts__actions {
+    display: grid;
+    gap: 42px;
+    align-content: start;
+  }
+
+  dl {
+    margin: 0;
+    border-top: 1px solid var(--color-line);
+  }
+
+  dl div {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  dt {
+    color: var(--color-muted);
+    font-size: .76rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  @media (max-width: 760px) {
+    .contacts__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

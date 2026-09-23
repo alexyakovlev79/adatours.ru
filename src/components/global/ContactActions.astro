@@ -1,0 +1,47 @@
+---
+import { ORG } from '../../data/organization/ada-tours';
+
+interface Props {
+  compact?: boolean;
+  light?: boolean;
+}
+
+const { compact = false, light = false } = Astro.props;
+---
+
+<div class:list={['contact-actions', { 'contact-actions--compact': compact, 'contact-actions--light': light }]}>
+  <a href={ORG.whatsappHref} target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  <a href={ORG.phoneHref}>Позвонить</a>
+  <a href={`mailto:${ORG.email}`}>Email</a>
+</div>
+
+<style>
+  .contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    align-items: center;
+  }
+
+  .contact-actions a {
+    padding-bottom: 5px;
+    border-bottom: 1px solid currentColor;
+    font-family: var(--font-display);
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .contact-actions--compact {
+    gap: 10px 16px;
+  }
+
+  .contact-actions--compact a {
+    font-size: .7rem;
+  }
+
+  .contact-actions--light {
+    color: var(--color-bg);
+  }
+</style>

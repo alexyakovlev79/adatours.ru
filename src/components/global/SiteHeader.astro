@@ -2,6 +2,7 @@
 import PrimaryCTA from './PrimaryCTA.astro';
 import { NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
+import ContactActions from './ContactActions.astro';
 
 interface Props {
   theme?: 'light' | 'dark';
@@ -22,6 +23,9 @@ const { theme = 'light' } = Astro.props;
     </nav>
 
     <div class="desktop-cta">
+      <div class="desktop-cta__links">
+        <ContactActions compact />
+      </div>
       <PrimaryCTA href="/contacts/" label="Оставить заявку" />
     </div>
 
@@ -44,9 +48,7 @@ const { theme = 'light' } = Astro.props;
     </nav>
     <div class="mobile-menu__contact">
       <PrimaryCTA href="/contacts/" label="Оставить заявку" />
-      <a href={withBase('/contacts/')}>WhatsApp</a>
-      <a href={withBase('/contacts/')}>Telegram</a>
-      <a href={withBase('/contacts/')}>Позвонить</a>
+      <ContactActions light />
     </div>
   </div>
 </header>
@@ -146,9 +148,25 @@ const { theme = 'light' } = Astro.props;
     opacity: 0.62;
   }
 
+  .desktop-cta {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .desktop-cta__links {
+    display: none;
+  }
+
   .desktop-cta :global(.cta) {
     min-width: auto;
     padding: 12px 15px;
+  }
+
+  @media (min-width: 1320px) {
+    .desktop-cta__links {
+      display: block;
+    }
   }
 
   .menu-toggle,

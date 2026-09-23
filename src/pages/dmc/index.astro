@@ -1,13 +1,63 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
+import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import StoryPair from '../../components/editorial/StoryPair.astro';
+import FactStrip from '../../components/proof/FactStrip.astro';
+import ProcessSteps from '../../components/proof/ProcessSteps.astro';
+import LeadForm from '../../components/forms/LeadForm.astro';
 ---
 
-<BaseLayout title="DMC для турагентств и туроператоров">
+<BaseLayout
+  title="DMC по Бразилии и Латинской Америке для турагентств"
+  description="Ada Tours — принимающий DMC и туроператор по Бразилии и Латинской Америке для турагентств, туроператоров, VIP и MICE."
+>
   <Hero
     eyebrow="DMC / B2B"
-    title="Принимающий партнер по Бразилии и Латинской Америке"
-    intro="Страница-прототип для B2B. Условия, SLA, white label и другие факты будут опубликованы только после утверждения."
-    compact
+    title="Локальный партнер для сложных маршрутов"
+    intro="Ada Tours собирает наземную часть поездки в Бразилии и других странах Латинской Америки: FIT, группы, VIP, multi-country и MICE."
+    image="/media/prototype/rio-panorama.jpg"
+    ctaLabel="Запросить программу"
   />
+
+  <FactStrip
+    facts={[
+      { value: 'B2B', label: 'основной сегмент', note: 'турагентства и туроператоры входят в приоритет бизнеса Ada Tours' },
+      { value: 'FIT', label: 'индивидуальные поездки', note: 'маршрут можно собирать под конкретного клиента' },
+      { value: 'MICE', label: 'группы и события', note: 'отдельная операционная ветка' },
+      { value: 'LATAM', label: 'география', note: 'Бразилия и другие страны Латинской Америки' },
+    ]}
+  />
+
+  <EditorialStatement
+    eyebrow="Для партнеров"
+    text="Партнеру не нужен еще один каталог. Нужен локальный оператор, который понимает маршрут, проверяет стыки и возвращает собранное предложение, которое можно обсуждать с клиентом."
+  />
+
+  <StoryPair
+    eyebrow="Бразилия"
+    title="Одна страна уже требует много локальной координации"
+    text="Рио, Игуасу, Амазония, Пантанал и побережье связаны внутренними перелетами и наземными переездами. На длинном маршруте важно не просто подобрать услуги, а проверить, как они работают вместе."
+    image="/media/prototype/lencois.jpg"
+  />
+
+  <StoryPair
+    eyebrow="Multi-country"
+    title="Несколько стран — одна логика поездки"
+    text="Для комбинированных программ мы смотрим на маршрут целиком: перелеты, границы, количество ночей и темп. Это особенно важно, когда Бразилия соединяется с Аргентиной, Перу, Чили или другими странами региона."
+    image="/media/prototype/patagonia.jpg"
+    reverse
+  />
+
+  <ProcessSteps
+    title="Рабочий цикл B2B-запроса"
+    steps={[
+      { title: 'Запрос', text: 'Получаем даты, количество туристов, бюджетный уровень, географию и обязательные пожелания.' },
+      { title: 'Сборка', text: 'Проверяем реальную логистику и собираем наземную программу по маршруту.' },
+      { title: 'Уточнение', text: 'Меняем отели, активности и темп программы после обратной связи партнера.' },
+      { title: 'Операция', text: 'После подтверждения координируем локальную часть поездки на месте.' },
+    ]}
+  />
+
+  <LeadForm title="Отправить B2B-запрос" entityId="dmc" />
 </BaseLayout>

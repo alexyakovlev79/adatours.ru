@@ -1,13 +1,62 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
+import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import StoryPair from '../../components/editorial/StoryPair.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
+import FactStrip from '../../components/proof/FactStrip.astro';
+import LeadForm from '../../components/forms/LeadForm.astro';
 ---
 
-<BaseLayout title="VIP и Luxury путешествия">
+<BaseLayout
+  title="VIP и Luxury путешествия по Бразилии и Латинской Америке"
+  description="Индивидуальные VIP и luxury маршруты по Бразилии и Латинской Америке от Ada Tours."
+>
   <Hero
     eyebrow="VIP / Luxury"
-    title="Персональные путешествия по Латинской Америке"
-    intro="Раздел-прототип. Финальный текст будет написан после утверждения фактов и доказательств."
-    compact
+    title="Сервис, который подстраивается под поездку"
+    intro="Частные гиды и трансферы, сильные отели, индивидуальный темп и возможность менять программу под конкретные даты и состав путешественников."
+    image="/media/prototype/patagonia.jpg"
+    ctaLabel="Собрать VIP-маршрут"
   />
+
+  <FactStrip
+    dark
+    facts={[
+      { value: 'Private', label: 'формат', note: 'маршрут и наземные услуги собираются под конкретный запрос' },
+      { value: '24/7', label: 'поездка', note: 'для VIP особенно важна локальная оперативность во время маршрута' },
+      { value: '1', label: 'маршрут', note: 'без необходимости подгонять поездку под массовый пакет' },
+      { value: 'LATAM', label: 'география', note: 'Бразилия, Аргентина, Перу и multi-country программы' },
+    ]}
+  />
+
+  <EditorialStatement
+    eyebrow="Luxury"
+    text="Luxury начинается не с списка дорогих услуг. Он начинается с того, насколько точно маршрут совпадает с человеком: время выезда, темп, категория размещения, приватность и возможность изменить план без разрушения всей поездки."
+  />
+
+  <StoryPair
+    eyebrow="Бразилия"
+    title="Рио можно прожить совершенно по-разному"
+    text="Утренний Корковаду до основной толпы, частный гид, хороший ресторан, вертолет при подходящей погоде, отдельный автомобиль и свободное окно в расписании дают больше, чем еще 1 пункт в экскурсионном списке."
+    image="/media/prototype/rio-night.jpg"
+  />
+
+  <StoryPair
+    eyebrow="Природа"
+    title="Комфорт не должен спорить с местом"
+    text="В удаленных регионах хороший luxury-маршрут строится вокруг лучших доступных лоджей, правильной логистики и времени на саму природу, а не вокруг попытки превратить каждую точку в городской пятизвездочный сервис."
+    image="/media/prototype/amazon.jpg"
+    reverse
+  />
+
+  <DestinationBand
+    eyebrow="Пример маршрута"
+    title="Роскошная Бразилия"
+    text="11 дней: Рио, Игуасу и Бузиос. Уже собрали прототип полной tour page."
+    href="/tury/roskoshnaya-braziliya/"
+    image="/media/prototype/iguazu.jpg"
+  />
+
+  <LeadForm title="Собрать индивидуальный VIP-маршрут" entityId="vip" />
 </BaseLayout>

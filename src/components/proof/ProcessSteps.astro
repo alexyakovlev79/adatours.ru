@@ -1,0 +1,93 @@
+---
+interface Step { title: string; text: string; }
+interface Props {
+  eyebrow?: string;
+  title: string;
+  steps: Step[];
+}
+const { eyebrow = 'Как работаем', title, steps } = Astro.props;
+---
+
+<section class="process section">
+  <div class="container">
+    <div class="process__heading">
+      <p class="eyebrow">{eyebrow}</p>
+      <h2>{title}</h2>
+    </div>
+
+    <div class="process__steps">
+      {steps.map((step, index) => (
+        <article>
+          <span>{String(index + 1).padStart(2, '0')}</span>
+          <h3>{step.title}</h3>
+          <p>{step.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .process {
+    background: var(--color-bg);
+  }
+
+  .process__heading {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: clamp(48px, 7vw, 90px);
+  }
+
+  .process__heading h2 {
+    margin: 0;
+  }
+
+  .process__steps {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    border-top: 1px solid var(--color-line);
+  }
+
+  .process__steps article {
+    padding: 32px 28px 38px;
+    border-right: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .process__steps article:first-child {
+    border-left: 1px solid var(--color-line);
+  }
+
+  .process__steps span {
+    color: var(--color-gold-deep);
+    font-family: var(--font-display);
+    font-size: .78rem;
+    letter-spacing: .08em;
+  }
+
+  .process__steps h3 {
+    margin: 36px 0 18px;
+    font-size: clamp(1.4rem, 2vw, 2.1rem);
+  }
+
+  .process__steps p {
+    margin: 0;
+    color: rgba(26,26,26,.67);
+    font-size: .95rem;
+  }
+
+  @media (max-width: 900px) {
+    .process__steps {
+      grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+  }
+
+  @media (max-width: 620px) {
+    .process__heading,
+    .process__steps {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Hero from '../../../components/editorial/Hero.astro';
+import EditorialStatement from '../../../components/editorial/EditorialStatement.astro';
+import ProcessSteps from '../../../components/proof/ProcessSteps.astro';
+import LeadForm from '../../../components/forms/LeadForm.astro';
+---
+
+<BaseLayout title="Деловые делегации в Бразилию и Латинскую Америку">
+  <Hero
+    eyebrow="MICE · Business delegations"
+    title="Деловая делегация — это маршрут с жесткими точками"
+    intro="Переговоры, визиты, транспорт и переводчики задают каркас. Экскурсионная и ресторанная программа добавляется уже вокруг него."
+    image="/media/prototype/buenos-aires.jpg"
+    ctaLabel="Обсудить делегацию"
+  />
+
+  <EditorialStatement
+    eyebrow="Логистика"
+    text="Если встреча сдвинулась на час, меняется не только трансфер. Может сдвинуться ресторан, экскурсия, выезд в аэропорт или работа переводчика. Поэтому делегацию нужно вести как одну связанную операцию."
+  />
+
+  <ProcessSteps
+    title="Как собирается программа"
+    steps={[
+      { title: 'Обязательные встречи', text: 'Сначала фиксируем точки, которые нельзя двигать.' },
+      { title: 'Маршрут', text: 'Связываем города, трансферы и перелеты вокруг делового расписания.' },
+      { title: 'Сервис', text: 'Добавляем переводчиков, рестораны, экскурсии и сопровождение.' },
+      { title: 'Координация', text: 'На месте держим всю цепочку в одном операционном контуре.' },
+    ]}
+  />
+
+  <LeadForm title="Рассчитать деловую делегацию" entityId="mice_business_delegation" />
+</BaseLayout>

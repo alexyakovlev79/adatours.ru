@@ -1,6 +1,7 @@
 ---
 import PrimaryCTA from './PrimaryCTA.astro';
 import { NAV_LINKS } from '../../lib/site';
+import { withBase } from '../../lib/paths';
 
 interface Props {
   theme?: 'light' | 'dark';
@@ -11,13 +12,13 @@ const { theme = 'light' } = Astro.props;
 
 <header class:list={['site-header', `site-header--${theme}`]} data-site-header>
   <div class="site-header__inner">
-    <a class="brand" href="/" aria-label="Ada Tours, на главную">
+    <a class="brand" href={withBase('/')} aria-label="Ada Tours, на главную">
       <span class="brand__ada">ADA</span>
       <span class="brand__tours">TOURS</span>
     </a>
 
     <nav class="desktop-nav" aria-label="Основная навигация">
-      {NAV_LINKS.map((link) => <a href={link.href}>{link.label}</a>)}
+      {NAV_LINKS.map((link) => <a href={withBase(link.href)}>{link.label}</a>)}
     </nav>
 
     <div class="desktop-cta">
@@ -39,13 +40,13 @@ const { theme = 'light' } = Astro.props;
 
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
     <nav aria-label="Мобильная навигация">
-      {NAV_LINKS.map((link) => <a href={link.href}>{link.label}</a>)}
+      {NAV_LINKS.map((link) => <a href={withBase(link.href)}>{link.label}</a>)}
     </nav>
     <div class="mobile-menu__contact">
       <PrimaryCTA href="/contacts/" label="Оставить заявку" />
-      <a href="/contacts/">WhatsApp</a>
-      <a href="/contacts/">Telegram</a>
-      <a href="/contacts/">Позвонить</a>
+      <a href={withBase('/contacts/')}>WhatsApp</a>
+      <a href={withBase('/contacts/')}>Telegram</a>
+      <a href={withBase('/contacts/')}>Позвонить</a>
     </div>
   </div>
 </header>

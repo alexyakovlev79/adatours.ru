@@ -1,4 +1,6 @@
 ---
+import { withBase } from '../../lib/paths';
+
 interface Props {
   eyebrow?: string;
   title: string;
@@ -18,9 +20,10 @@ const {
 } = Astro.props;
 
 const style = image ? `--band-image: url("${image}")` : undefined;
+const resolvedHref = withBase(href);
 ---
 
-<a class:list={['band', `band--${align}`, { 'band--image': image }]} href={href} style={style}>
+<a class:list={['band', `band--${align}`, { 'band--image': image }]} href={resolvedHref} style={style}>
   <div class="band__overlay"></div>
   <div class="band__content">
     {eyebrow && <p class="eyebrow">{eyebrow}</p>}

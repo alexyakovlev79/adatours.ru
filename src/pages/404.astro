@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PrimaryCTA from '../components/global/PrimaryCTA.astro';
+import { withBase } from '../lib/paths';
 ---
 
 <BaseLayout
@@ -15,7 +16,7 @@ import PrimaryCTA from '../components/global/PrimaryCTA.astro';
       <p>Такой страницы нет. Можно вернуться на главную или выбрать другое направление.</p>
       <div class="not-found__actions">
         <PrimaryCTA href="/" label="На главную" />
-        <a href="/strany/">Смотреть страны ↗</a>
+        <a href={withBase('/strany/')}>Смотреть страны ↗</a>
       </div>
     </div>
   </section>

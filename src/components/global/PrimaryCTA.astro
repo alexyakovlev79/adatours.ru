@@ -1,4 +1,6 @@
 ---
+import { withBase } from '../../lib/paths';
+
 interface Props {
   href?: string;
   label?: string;
@@ -10,9 +12,11 @@ const {
   label = 'Оставить заявку',
   variant = 'gold',
 } = Astro.props;
+
+const resolvedHref = withBase(href);
 ---
 
-<a class:list={['cta', `cta--${variant}`]} href={href}>
+<a class:list={['cta', `cta--${variant}`]} href={resolvedHref}>
   <span>{label}</span>
   <span aria-hidden="true">↗</span>
 </a>

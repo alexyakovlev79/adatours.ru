@@ -6,6 +6,7 @@ import TripStats from '../components/tour/TripStats.astro';
 import HighlightsEditorial from '../components/tour/HighlightsEditorial.astro';
 import Itinerary from '../components/tour/Itinerary.astro';
 import TourPricing from '../components/tour/TourPricing.astro';
+import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 
@@ -68,5 +69,6 @@ const stats = [
   )}
 
   <TourPricing price={money} note={d.priceNote} />
+  <IncludedExcluded included={d.included} notIncluded={d.notIncluded} />
   <LeadForm title="Получить расчет и адаптировать маршрут под ваши даты" entityId={d.id} />
 </BaseLayout>

@@ -3,7 +3,7 @@ id: country_brazil
 locale: ru
 name: Бразилия
 slug: braziliya
-status: approved
+status: review
 summary: >-
   Бразилия раскрывается через очень разные поездки: Рио и побережье, водопады Игуасу, Амазонию, Пантанал, колониальные города и маршруты по нескольким регионам. Ada Tours собирает их в одну программу с локальной логистикой и сопровождением на месте.
 hero:
@@ -44,7 +44,6 @@ featureBands:
     text: Амазония требует отдельной логистики и времени. Ее лучше включать в маршрут осознанно, с учетом перелетов, сезона и формата лоджа или речной программы.
     image: /media/prototype/amazon.jpg
 sourceUrl: https://brasiltours.ru/braziliya
-sourceSnapshot: page_texts_original/braziliya__742b7023.md
 updatedAt: 2026-09-24
 ---
 

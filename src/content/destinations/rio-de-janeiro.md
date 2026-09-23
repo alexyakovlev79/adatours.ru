@@ -3,7 +3,7 @@ id: destination_brazil_rio
 locale: ru
 name: Рио-де-Жанейро
 slug: rio-de-zhanejro
-status: approved
+status: review
 countryId: country_brazil
 destinationType: city
 summary: >-
@@ -42,7 +42,6 @@ featureBands:
     text: Вечером маршрут можно продолжить ресторанами, Самбой, Лапой или спокойным ужином с видом на город. Формат зависит от того, какой ритм нужен именно вашей поездке.
     image: /media/prototype/rio-night.jpg
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii
-sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii__7f36c92d.md
 updatedAt: 2026-09-24
 ---
 

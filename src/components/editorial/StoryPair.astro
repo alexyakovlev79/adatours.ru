@@ -1,4 +1,6 @@
 ---
+import { withBase } from '../../lib/paths';
+
 interface Props {
   eyebrow?: string;
   title: string;
@@ -8,10 +10,11 @@ interface Props {
 }
 
 const { eyebrow, title, text, image, reverse = false } = Astro.props;
+const resolvedImage = image ? withBase(image) : undefined;
 ---
 
 <section class:list={['story section', { 'story--reverse': reverse }]}>
-  <div class="story__media" style={image ? `background-image:url("${image}")` : undefined}></div>
+  <div class="story__media" style={resolvedImage ? `background-image:url("${resolvedImage}")` : undefined}></div>
   <div class="story__copy">
     {eyebrow && <p class="eyebrow">{eyebrow}</p>}
     <h2>{title}</h2>
@@ -38,7 +41,7 @@ const { eyebrow, title, text, image, reverse = false } = Astro.props;
   }
 
   .story__media {
-    min-height: clamp(420px, 52vw, 720px);
+    min-height: clamp(440px, 52vw, 720px);
     background:
       radial-gradient(circle at 70% 20%, rgba(242,204,103,.22), transparent 30%),
       linear-gradient(150deg, #57584f, #1a1a18);

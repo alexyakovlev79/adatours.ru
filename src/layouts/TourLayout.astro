@@ -1,0 +1,72 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Hero from '../components/editorial/Hero.astro';
+import EditorialStatement from '../components/editorial/EditorialStatement.astro';
+import TripStats from '../components/tour/TripStats.astro';
+import HighlightsEditorial from '../components/tour/HighlightsEditorial.astro';
+import Itinerary from '../components/tour/Itinerary.astro';
+import TourPricing from '../components/tour/TourPricing.astro';
+import LeadForm from '../components/forms/LeadForm.astro';
+import StoryPair from '../components/editorial/StoryPair.astro';
+
+const { entry } = Astro.props;
+const d = entry.data;
+const money = d.priceFrom && d.currency
+  ? `от ${d.currency === 'USD' ? '$' : ''}${d.priceFrom.toLocaleString('ru-RU')}`
+  : 'По запросу';
+
+const stats = [
+  d.durationDays ? { value: String(d.durationDays), label: 'дней' } : null,
+  d.durationNights !== undefined ? { value: String(d.durationNights), label: 'ночей' } : null,
+  { value: String(d.destinations.length || d.route.length), label: 'точки маршрута' },
+  { value: d.format ?? 'Private', label: 'формат' },
+].filter(Boolean);
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.lead}
+  image={d.hero?.src}
+>
+  <Hero
+    eyebrow="Индивидуальный тур"
+    title={d.title}
+    intro={d.lead}
+    image={d.hero?.src}
+    meta={d.durationDays ? `${d.durationDays} дней · ${d.route.join(' · ')}` : undefined}
+    ctaLabel="Получить программу"
+  />
+
+  <TripStats stats={stats} />
+
+  <EditorialStatement
+    eyebrow="Почему этот маршрут"
+    text={d.lead}
+  />
+
+  {d.gallery[0] && (
+    <StoryPair
+      eyebrow="Бразилия"
+      title="Город, водопады и Атлантика в одном путешествии"
+      text="Маршрут собран так, чтобы после насыщенного Рио увидеть Игуасу с 2 сторон, а финальные дни оставить для спокойного побережья."
+      image={d.gallery[0].src}
+    />
+  )}
+
+  <HighlightsEditorial items={d.highlights} />
+
+  <Itinerary days={d.itinerary} />
+
+  {d.gallery[1] && (
+    <StoryPair
+      eyebrow="Финал маршрута"
+      title="После большого путешествия темп становится тише"
+      text="Пляжная часть нужна не как формальный довесок. Она дает несколько свободных дней после города и водопадов, без ежедневной гонки по экскурсиям."
+      image={d.gallery[1].src}
+      reverse
+    />
+  )}
+
+  <TourPricing price={money} note={d.priceNote} />
+  <LeadForm title="Получить расчет и адаптировать маршрут под ваши даты" entityId={d.id} />
+</BaseLayout>

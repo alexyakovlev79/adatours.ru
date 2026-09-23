@@ -1,0 +1,72 @@
+---
+interface Stat {
+  value: string;
+  label: string;
+}
+interface Props { stats: Stat[]; }
+const { stats } = Astro.props;
+---
+
+<section class="stats">
+  <div class="stats__inner">
+    {stats.map((stat) => (
+      <div class="stat">
+        <strong>{stat.value}</strong>
+        <span>{stat.label}</span>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .stats {
+    border-bottom: 1px solid var(--color-line);
+    background: var(--color-bg);
+  }
+
+  .stats__inner {
+    display: grid;
+    grid-template-columns: repeat(var(--stats-count, 4), minmax(0, 1fr));
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+  }
+
+  .stat {
+    min-height: 180px;
+    padding: 38px 30px;
+    border-left: 1px solid var(--color-line);
+  }
+
+  .stat:last-child {
+    border-right: 1px solid var(--color-line);
+  }
+
+  .stat strong {
+    display: block;
+    margin-bottom: 10px;
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 3vw, 4.8rem);
+    font-weight: 500;
+    line-height: .95;
+    letter-spacing: -.04em;
+  }
+
+  .stat span {
+    font-size: .8rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  @media (max-width: 760px) {
+    .stats__inner {
+      grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    .stat {
+      min-height: 130px;
+      padding: 26px 18px;
+      border-bottom: 1px solid var(--color-line);
+    }
+  }
+</style>

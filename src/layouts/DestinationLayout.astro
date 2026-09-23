@@ -1,0 +1,47 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Hero from '../components/editorial/Hero.astro';
+import EditorialStatement from '../components/editorial/EditorialStatement.astro';
+import StoryPair from '../components/editorial/StoryPair.astro';
+import TripStats from '../components/tour/TripStats.astro';
+import LeadForm from '../components/forms/LeadForm.astro';
+
+const { entry } = Astro.props;
+const d = entry.data;
+---
+
+<BaseLayout
+  title={`${d.name}: туры и экскурсии`}
+  description={d.summary}
+  image={d.hero?.src}
+>
+  <Hero
+    eyebrow="Направление"
+    title={d.name}
+    intro={d.summary}
+    image={d.hero?.src}
+    ctaLabel="Собрать поездку"
+  />
+
+  {d.facts.length > 0 && <TripStats stats={d.facts} />}
+
+  <EditorialStatement eyebrow="Город в маршруте" text={d.summary} />
+
+  <section class="destination-copy section--tight">
+    <div class="container prose">
+      <slot />
+    </div>
+  </section>
+
+  {d.featureBands.map((band, index) => (
+    <StoryPair
+      eyebrow={band.eyebrow}
+      title={band.title}
+      text={band.text}
+      image={band.image}
+      reverse={index % 2 === 1}
+    />
+  ))}
+
+  <LeadForm title={`Собрать поездку: ${d.name}`} entityId={d.id} />
+</BaseLayout>

@@ -4,11 +4,13 @@ import { z } from 'astro/zod';
 
 const locale = z.enum(['ru', 'en', 'cn']);
 const status = z.enum(['draft', 'review', 'approved', 'published', 'archived']);
-const media = z.object({
+
+const mediaObject = z.object({
   src: z.string(),
   alt: z.string().default(''),
   caption: z.string().optional(),
-}).optional();
+});
+const media = mediaObject.optional();
 
 const common = {
   id: z.string(),
@@ -20,6 +22,14 @@ const common = {
   updatedAt: z.coerce.date().optional(),
 };
 
+const editorialBand = z.object({
+  eyebrow: z.string().optional(),
+  title: z.string(),
+  text: z.string(),
+  image: z.string(),
+  href: z.string().optional(),
+});
+
 const countries = defineCollection({
   loader: glob({ base: './src/content/countries', pattern: '**/*.{md,mdx}' }),
   schema: z.object({
@@ -27,7 +37,7 @@ const countries = defineCollection({
     name: z.string(),
     summary: z.string(),
     hero: media,
-    gallery: z.array(media.unwrap()).default([]),
+    gallery: z.array(mediaObject).default([]),
     regions: z.array(z.string()).default([]),
     bestTime: z.string().optional(),
     entryNotes: z.string().optional(),
@@ -36,6 +46,7 @@ const countries = defineCollection({
     relatedThemes: z.array(z.string()).default([]),
     featuredTours: z.array(z.string()).default([]),
     featuredExcursions: z.array(z.string()).default([]),
+    featureBands: z.array(editorialBand).default([]),
   }),
 });
 
@@ -56,11 +67,16 @@ const destinations = defineCollection({
     ]),
     summary: z.string(),
     hero: media,
-    gallery: z.array(media.unwrap()).default([]),
+    gallery: z.array(mediaObject).default([]),
     themes: z.array(z.string()).default([]),
     relatedDestinations: z.array(z.string()).default([]),
     featuredTours: z.array(z.string()).default([]),
     featuredExcursions: z.array(z.string()).default([]),
+    featureBands: z.array(editorialBand).default([]),
+    facts: z.array(z.object({
+      value: z.string(),
+      label: z.string(),
+    })).default([]),
   }),
 });
 
@@ -82,9 +98,28 @@ const tours = defineCollection({
     priceNote: z.string().optional(),
     dates: z.array(z.string()).default([]),
     hero: media,
-    gallery: z.array(media.unwrap()).default([]),
+    gallery: z.array(mediaObject).default([]),
     featured: z.boolean().default(false),
     priority: z.number().int().default(0),
+    lead: z.string(),
+    highlights: z.array(z.object({
+      title: z.string(),
+      text: z.string(),
+    })).default([]),
+    itinerary: z.array(z.object({
+      day: z.number().int().positive(),
+      title: z.string(),
+      places: z.array(z.string()).default([]),
+      text: z.string(),
+      image: z.string().optional(),
+    })).default([]),
+    included: z.array(z.string()).default([]),
+    notIncluded: z.array(z.string()).default([]),
+    notes: z.array(z.string()).default([]),
+    faq: z.array(z.object({
+      question: z.string(),
+      answer: z.string(),
+    })).default([]),
   }),
 });
 
@@ -102,7 +137,7 @@ const excursions = defineCollection({
     priceFrom: z.number().nonnegative().nullable().optional(),
     currency: z.string().optional(),
     hero: media,
-    gallery: z.array(media.unwrap()).default([]),
+    gallery: z.array(mediaObject).default([]),
     route: z.array(z.string()).default([]),
   }),
 });
@@ -133,7 +168,7 @@ const cases = defineCollection({
     year: z.number().int().optional(),
     nda: z.boolean().default(false),
     hero: media,
-    gallery: z.array(media.unwrap()).default([]),
+    gallery: z.array(mediaObject).default([]),
     proof: z.array(z.string()).default([]),
     relatedServices: z.array(z.string()).default([]),
   }),

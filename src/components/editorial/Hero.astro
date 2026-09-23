@@ -1,5 +1,6 @@
 ---
 import PrimaryCTA from '../global/PrimaryCTA.astro';
+import { withBase } from '../../lib/paths';
 
 interface Props {
   eyebrow?: string;
@@ -9,6 +10,7 @@ interface Props {
   ctaHref?: string;
   ctaLabel?: string;
   compact?: boolean;
+  meta?: string;
 }
 
 const {
@@ -19,15 +21,20 @@ const {
   ctaHref = '/contacts/',
   ctaLabel = 'Оставить заявку',
   compact = false,
+  meta,
 } = Astro.props;
 
-const style = image ? `--hero-image: url("${image}")` : undefined;
+const resolvedImage = image ? withBase(image) : undefined;
+const style = resolvedImage ? `--hero-image: url("${resolvedImage}")` : undefined;
 ---
 
 <section class:list={['hero', { 'hero--compact': compact, 'hero--image': image }]} style={style}>
   <div class="hero__overlay"></div>
   <div class="hero__content">
-    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <div class="hero__head">
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      {meta && <p class="hero__meta">{meta}</p>}
+    </div>
     <h1>{title}</h1>
     <div class="hero__bottom">
       {intro && <p>{intro}</p>}
@@ -50,7 +57,7 @@ const style = image ? `--hero-image: url("${image}")` : undefined;
   }
 
   .hero--compact {
-    min-height: min(78svh, 760px);
+    min-height: min(84svh, 820px);
   }
 
   .hero--image {
@@ -67,7 +74,7 @@ const style = image ? `--hero-image: url("${image}")` : undefined;
       180deg,
       rgba(15, 16, 14, .18) 0%,
       rgba(15, 16, 14, .18) 35%,
-      rgba(15, 16, 14, .62) 100%
+      rgba(15, 16, 14, .66) 100%
     );
   }
 
@@ -80,29 +87,50 @@ const style = image ? `--hero-image: url("${image}")` : undefined;
     padding: calc(var(--header-h) + 72px) 0 clamp(48px, 7vw, 96px);
   }
 
+  .hero__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .hero__meta {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-xs);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
   .hero h1 {
-    max-width: 1100px;
+    max-width: 1180px;
     margin: 12px 0 clamp(36px, 5vw, 70px);
   }
 
   .hero__bottom {
     display: grid;
-    grid-template-columns: minmax(0, 620px) auto;
+    grid-template-columns: minmax(0, 650px) auto;
     align-items: end;
     justify-content: space-between;
     gap: 48px;
   }
 
   .hero__bottom p {
-    max-width: 620px;
+    max-width: 650px;
     margin: 0;
-    color: rgba(255,255,255,.82);
+    color: rgba(255,255,255,.84);
     font-size: var(--text-lg);
   }
 
   @media (max-width: 720px) {
     .hero__content {
       padding-bottom: 34px;
+    }
+
+    .hero__head {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 8px;
     }
 
     .hero__bottom {

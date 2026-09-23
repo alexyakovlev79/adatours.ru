@@ -4,45 +4,79 @@ import Hero from '../components/editorial/Hero.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
+import LeadForm from '../components/forms/LeadForm.astro';
 ---
 
-<BaseLayout headerTheme="light">
+<BaseLayout
+  title="Ada Tours — путешествия по Бразилии и Латинской Америке"
+  description="Индивидуальные путешествия, VIP, MICE и DMC по Бразилии и Латинской Америке."
+>
   <Hero
-    eyebrow="Ada Tours"
-    title="Бразилия и Латинская Америка"
-    intro="Индивидуальные маршруты, VIP-путешествия, MICE и работа с турагентствами. Первый экран и тексты будут финализированы в редакционном цикле."
+    eyebrow="Ada Tours · Brazil & Latin America"
+    title="Латинская Америка, собранная под вас"
+    intro="Индивидуальные маршруты по Бразилии и Латинской Америке, VIP-поездки, MICE и работа с турагентствами. Локальную часть программы координирует Ada Tours."
+    image="/media/prototype/rio-panorama.jpg"
+    ctaLabel="Обсудить поездку"
   />
 
   <EditorialStatement
-    eyebrow="Прототип"
-    text="Новый Ada Tours строится как большая editorial travel platform: крупные фотографии, сильная типографика и минимум интерфейсного шума."
+    eyebrow="Путешествия"
+    text="От Рио и Игуасу до Амазонии и Патагонии. Мы собираем маршрут вокруг времени, интересов и нужного уровня сервиса, а не вокруг готового набора экскурсий."
   />
 
   <DestinationBand
     eyebrow="Направление №1"
     title="Бразилия"
-    text="Country hub станет одной из первых эталонных страниц нового сайта."
-    href="/strany/"
+    text="Рио, Игуасу, Амазония, Пантанал, побережье и десятки сочетаний внутри одной страны."
+    href="/strany/braziliya/"
+    image="/media/prototype/lencois.jpg"
   />
 
   <StoryPair
-    eyebrow="Multi-country"
-    title="Одна поездка — несколько стран"
-    text="Туры не привязаны к одной стране в URL. Это позволяет естественно работать с комбинированными маршрутами по Латинской Америке."
+    eyebrow="Аргентина"
+    title="Город, вино и Патагония"
+    text="Буэнос-Айрес легко соединяется с Мендосой, ледниками, Ушуайей или продолжением маршрута в Чили. Для длинной поездки Аргентина часто становится второй большой частью multi-country программы."
+    image="/media/prototype/patagonia.jpg"
+    reverse
   />
 
   <DestinationBand
-    eyebrow="Для бизнеса"
-    title="MICE и деловые делегации"
-    text="Коммерческие разделы используют тот же визуальный язык, но дают больше фактов, кейсов и доказательств."
-    href="/mice/"
+    eyebrow="Multi-country"
+    title="Несколько стран в одной логике"
+    text="Если перелетов много, важнее всего связать их так, чтобы путешествие не превратилось в бесконечные переезды."
+    href="/multi-country/"
+    image="/media/prototype/buenos-aires.jpg"
     align="right"
+  />
+
+  <StoryPair
+    eyebrow="Природа"
+    title="Амазония требует времени"
+    text="Лес, река и лоджи живут в другом ритме, чем большие города. Поэтому Амазонию лучше закладывать в маршрут отдельным блоком, с учетом перелетов и сезона."
+    image="/media/prototype/amazon.jpg"
+  />
+
+  <DestinationBand
+    eyebrow="MICE"
+    title="Деловые поездки и группы"
+    text="Бразилия, Аргентина, Перу и другие направления: логистика, встречи, площадки, транспорт и программа вне деловой части."
+    href="/mice/"
+    image="/media/prototype/rio-night.jpg"
+  />
+
+  <EditorialStatement
+    eyebrow="DMC / B2B"
+    text="Для турагентств и туроператоров Ada Tours работает как принимающий партнер: собирает наземную часть поездки, координирует подрядчиков и помогает вести сложные маршруты по региону."
   />
 
   <DestinationBand
     eyebrow="Для партнеров"
-    title="DMC для турагентств и туроператоров"
-    text="Отдельный B2B-контур без визуального разрыва с travel-частью сайта."
+    title="DMC по Бразилии и Латинской Америке"
+    text="FIT, группы, VIP и MICE. Условия работы и формат запроса вынесены в отдельный B2B-раздел."
     href="/dmc/"
+    image="/media/prototype/rio-panorama.jpg"
+    align="right"
   />
+
+  <LeadForm title="Расскажите, какой маршрут нужен" entityId="home" />
 </BaseLayout>

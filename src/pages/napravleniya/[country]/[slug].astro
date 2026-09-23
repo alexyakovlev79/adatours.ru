@@ -1,0 +1,28 @@
+---
+import { getCollection, render } from 'astro:content';
+import DestinationLayout from '../../../layouts/DestinationLayout.astro';
+
+export async function getStaticPaths() {
+  const [destinations, countries] = await Promise.all([
+    getCollection('destinations', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
+    getCollection('countries', ({ data }) => data.locale === 'ru'),
+  ]);
+
+  const countryById = new Map(countries.map((country) => [country.data.id, country.data.slug]));
+
+  return destinations.map((entry) => ({
+    params: {
+      country: countryById.get(entry.data.countryId) ?? 'unknown',
+      slug: entry.data.slug,
+    },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<DestinationLayout entry={entry}>
+  <Content />
+</DestinationLayout>

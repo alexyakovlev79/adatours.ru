@@ -1,0 +1,62 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Hero from '../components/editorial/Hero.astro';
+import EditorialStatement from '../components/editorial/EditorialStatement.astro';
+import StoryPair from '../components/editorial/StoryPair.astro';
+import DestinationBand from '../components/editorial/DestinationBand.astro';
+import LeadForm from '../components/forms/LeadForm.astro';
+
+const { entry } = Astro.props;
+const d = entry.data;
+---
+
+<BaseLayout
+  title={`${d.name}: туры и путешествия`}
+  description={d.summary}
+  image={d.hero?.src}
+>
+  <Hero
+    eyebrow="Страна"
+    title={d.name}
+    intro={d.summary}
+    image={d.hero?.src}
+    ctaLabel="Подобрать маршрут"
+  />
+
+  <EditorialStatement eyebrow="Ada Tours" text={d.summary} />
+
+  <section class="country-copy section--tight">
+    <div class="container prose">
+      <slot />
+    </div>
+  </section>
+
+  {d.featureBands.map((band, index) =>
+    band.href ? (
+      <DestinationBand
+        eyebrow={band.eyebrow}
+        title={band.title}
+        text={band.text}
+        image={band.image}
+        href={band.href}
+        align={index % 2 === 1 ? 'right' : 'left'}
+      />
+    ) : (
+      <StoryPair
+        eyebrow={band.eyebrow}
+        title={band.title}
+        text={band.text}
+        image={band.image}
+        reverse={index % 2 === 1}
+      />
+    )
+  )}
+
+  <LeadForm title={`Собрать путешествие по стране: ${d.name}`} entityId={d.id} />
+</BaseLayout>
+
+<style>
+  .country-copy {
+    background: var(--color-bg);
+  }
+</style>

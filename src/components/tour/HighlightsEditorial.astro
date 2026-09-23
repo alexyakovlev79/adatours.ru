@@ -1,0 +1,70 @@
+---
+interface Highlight {
+  title: string;
+  text: string;
+}
+interface Props { items: Highlight[]; }
+const { items } = Astro.props;
+---
+
+<section class="highlights section">
+  <div class="container">
+    <p class="eyebrow">Главные впечатления</p>
+    <div class="highlights__list">
+      {items.map((item, index) => (
+        <article class="highlight">
+          <span>{String(index + 1).padStart(2, '0')}</span>
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .highlights {
+    background: var(--color-bg);
+  }
+
+  .highlights__list {
+    margin-top: 36px;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .highlight {
+    display: grid;
+    grid-template-columns: 90px minmax(240px, .85fr) minmax(300px, 1fr);
+    gap: 28px;
+    align-items: start;
+    padding: clamp(30px, 4vw, 58px) 0;
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .highlight > span {
+    color: var(--color-gold-deep);
+    font-family: var(--font-display);
+    font-size: 1rem;
+    letter-spacing: .08em;
+  }
+
+  .highlight h3,
+  .highlight p {
+    margin: 0;
+  }
+
+  .highlight p {
+    max-width: 640px;
+    color: rgba(26,26,26,.7);
+  }
+
+  @media (max-width: 760px) {
+    .highlight {
+      grid-template-columns: 46px 1fr;
+    }
+
+    .highlight p {
+      grid-column: 2;
+    }
+  }
+</style>

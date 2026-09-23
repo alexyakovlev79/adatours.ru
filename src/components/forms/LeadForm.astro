@@ -1,0 +1,122 @@
+---
+interface Props {
+  title?: string;
+  entityId?: string;
+}
+const {
+  title = 'Расскажите, какой маршрут вам нужен',
+  entityId = '',
+} = Astro.props;
+---
+
+<section class="lead section">
+  <div class="container lead__grid">
+    <div>
+      <p class="eyebrow">Ada Tours</p>
+      <h2>{title}</h2>
+      <p class="lead__note">Форма в прототипе пока не отправляет данные. Backend подключим после утверждения интерфейса.</p>
+    </div>
+
+    <form class="form" action="#" method="post" onsubmit="return false;">
+      <input type="hidden" name="entity_id" value={entityId} />
+      <label>
+        <span>Имя</span>
+        <input name="name" type="text" autocomplete="name" placeholder="Ваше имя" />
+      </label>
+      <label>
+        <span>Телефон / WhatsApp</span>
+        <input name="phone" type="tel" autocomplete="tel" placeholder="+7..." />
+      </label>
+      <label>
+        <span>Email</span>
+        <input name="email" type="email" autocomplete="email" placeholder="name@example.com" />
+      </label>
+      <label>
+        <span>Комментарий</span>
+        <textarea name="comment" rows="3" placeholder="Даты, состав группы, пожелания"></textarea>
+      </label>
+      <button type="submit">Оставить заявку <span aria-hidden="true">↗</span></button>
+    </form>
+  </div>
+</section>
+
+<style>
+  .lead {
+    color: var(--color-bg);
+    background: var(--color-ink-deep);
+  }
+
+  .lead__grid {
+    display: grid;
+    grid-template-columns: 1fr .8fr;
+    gap: clamp(50px, 8vw, 130px);
+    align-items: start;
+  }
+
+  .lead h2 {
+    margin: 12px 0 24px;
+  }
+
+  .lead__note {
+    max-width: 560px;
+    color: rgba(255,255,255,.56);
+  }
+
+  .form {
+    display: grid;
+    gap: 28px;
+    padding-top: 6px;
+  }
+
+  .form label {
+    display: grid;
+    gap: 8px;
+  }
+
+  .form label span {
+    color: rgba(255,255,255,.55);
+    font-size: .72rem;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+
+  .form input,
+  .form textarea {
+    width: 100%;
+    padding: 12px 0;
+    border: 0;
+    border-bottom: 1px solid rgba(255,255,255,.35);
+    border-radius: 0;
+    outline: 0;
+    color: var(--color-bg);
+    background: transparent;
+  }
+
+  .form input:focus,
+  .form textarea:focus {
+    border-bottom-color: var(--color-gold);
+  }
+
+  .form button {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 14px;
+    padding: 17px 20px;
+    border: 0;
+    color: var(--color-ink-deep);
+    background: var(--color-gold);
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 800px) {
+    .lead__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

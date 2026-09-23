@@ -1,0 +1,153 @@
+---
+import { withBase } from '../../lib/paths';
+
+interface Day {
+  day: number;
+  title: string;
+  places?: string[];
+  text: string;
+  image?: string;
+}
+interface Props { days: Day[]; }
+const { days } = Astro.props;
+---
+
+<section class="itinerary section">
+  <div class="container">
+    <div class="itinerary__heading">
+      <p class="eyebrow">Маршрут</p>
+      <h2>{days.length} дней путешествия</h2>
+    </div>
+
+    <div class="itinerary__days">
+      {days.map((day, index) => (
+        <details class="day" open={index === 0}>
+          <summary>
+            <span class="day__number">{String(day.day).padStart(2, '0')}</span>
+            <span class="day__title">{day.title}</span>
+            <span class="day__toggle" aria-hidden="true">+</span>
+          </summary>
+          <div class:list={['day__content', { 'day__content--image': day.image }]}>
+            <div>
+              {day.places && day.places.length > 0 && <p class="day__places">{day.places.join(' · ')}</p>}
+              <p>{day.text}</p>
+            </div>
+            {day.image && (
+              <img src={withBase(day.image)} alt="" loading="lazy" />
+            )}
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .itinerary {
+    color: var(--color-bg);
+    background: var(--color-ink-deep);
+  }
+
+  .itinerary__heading {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: clamp(40px, 6vw, 80px);
+  }
+
+  .itinerary__heading h2 {
+    margin: 0;
+  }
+
+  .itinerary__days {
+    border-top: 1px solid rgba(255,255,255,.25);
+  }
+
+  .day {
+    border-bottom: 1px solid rgba(255,255,255,.25);
+  }
+
+  .day summary {
+    display: grid;
+    grid-template-columns: 80px 1fr 44px;
+    gap: 20px;
+    align-items: center;
+    min-height: 118px;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .day summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .day__number {
+    color: var(--color-gold);
+    font-family: var(--font-display);
+    font-size: .9rem;
+    letter-spacing: .08em;
+  }
+
+  .day__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.45rem, 1.1rem + 1vw, 2.3rem);
+    line-height: 1.1;
+  }
+
+  .day__toggle {
+    justify-self: end;
+    font-size: 2rem;
+    font-weight: 200;
+    transition: transform 220ms var(--ease-out);
+  }
+
+  .day[open] .day__toggle {
+    transform: rotate(45deg);
+  }
+
+  .day__content {
+    display: grid;
+    grid-template-columns: minmax(0, 720px);
+    gap: 40px;
+    padding: 0 0 54px 100px;
+  }
+
+  .day__content--image {
+    grid-template-columns: minmax(0, .95fr) minmax(280px, .65fr);
+  }
+
+  .day__content p {
+    margin-top: 0;
+    color: rgba(255,255,255,.74);
+  }
+
+  .day__places {
+    color: var(--color-gold) !important;
+    font-size: .78rem !important;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .day__content img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  @media (max-width: 760px) {
+    .itinerary__heading,
+    .day__content--image {
+      grid-template-columns: 1fr;
+    }
+
+    .day summary {
+      grid-template-columns: 44px 1fr 30px;
+      min-height: 94px;
+    }
+
+    .day__content {
+      padding-left: 64px;
+    }
+  }
+</style>

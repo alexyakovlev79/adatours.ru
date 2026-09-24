@@ -25,15 +25,15 @@ const resolvedImage = image ? withBase(image) : undefined;
 <style>
   .story {
     display: grid;
-    grid-template-columns: minmax(0, 7fr) minmax(340px, 5fr);
-    gap: clamp(34px, 6vw, 100px);
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+    gap: clamp(34px, 5vw, 80px);
     align-items: center;
     width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
     margin-inline: auto;
   }
 
   .story--reverse {
-    grid-template-columns: minmax(340px, 5fr) minmax(0, 7fr);
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
   }
 
   .story--reverse .story__media {
@@ -49,8 +49,18 @@ const resolvedImage = image ? withBase(image) : undefined;
     background-size: cover;
   }
 
+  .story__copy {
+    min-width: 0;
+    max-width: 100%;
+  }
+
   .story h2 {
+    max-width: 100%;
     margin: 12px 0 24px;
+    font-size: clamp(2.35rem, 3.4vw, 4rem);
+    line-height: 1.04;
+    hyphens: auto;
+    overflow-wrap: break-word;
   }
 
   .story__copy p:last-child {

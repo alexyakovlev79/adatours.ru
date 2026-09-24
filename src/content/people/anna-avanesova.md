@@ -4,7 +4,7 @@ locale: ru
 name: Анна Аванесова
 slug: anna-avanesova
 status: review
-role: Founder & CEO, Ada Tours
+role: Основатель и CEO Ada Tours
 photo:
   src: https://adatours.com/assets/fastweb/img/team-anna.webp
   alt: Анна Аванесова, основатель и CEO Ada Tours

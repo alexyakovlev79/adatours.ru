@@ -3,7 +3,7 @@ id: theme_gastronomy_wine
 locale: ru
 name: Гастрономия и вино
 slug: gastronomiya-i-vino
-status: review
+status: approved
 summary: >-
   Винодельни, локальная кухня, дегустации и гастрономические остановки можно встроить в индивидуальный маршрут по Аргентине, Бразилии, Чили, Перу, Мексике и другим странам региона.
 hero:

@@ -27,7 +27,7 @@ import { ORG } from '../../data/organization/ada-tours';
 
   <FactStrip
     facts={[
-      { value: 'Бразилия', label: 'ключевая география и MICE №1' },
+      { value: String(ORG.history.toursSinceYear), label: 'создаем поездки с этого года' },
       { value: ORG.service.groups.standard.display, label: ORG.service.groups.standard.label },
       { value: ORG.service.groups.largeEvents.display, label: ORG.service.groups.largeEvents.label },
       { value: String(ORG.service.languages.length), label: 'языков для обработки заявок' },

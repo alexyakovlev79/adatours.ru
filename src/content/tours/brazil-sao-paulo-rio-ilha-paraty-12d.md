@@ -1,7 +1,7 @@
 ---
 id: tour_brazil_sao_paulo_rio_ilha_paraty_12d
 locale: ru
-title: Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати
+title: "Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати"
 slug: braziliya-san-paulu-iguasu-rio-ilha-grande-paraty-12-dnej
 status: approved
 countries:

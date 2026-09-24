@@ -20,7 +20,8 @@ relatedDestinations:
   - destination_brazil_amazon
   - destination_brazil_rio
 featuredTours:
-  - tour_luxury_brazil_11d
+  - tour_brazil_adventure_17d
+  - tour_brazil_pantanal_bonito_lencois_8d
 featuredExcursions: []
 facts:
   - value: Ягуар

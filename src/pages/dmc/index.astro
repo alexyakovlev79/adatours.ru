@@ -6,6 +6,7 @@ import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
 import LeadForm from '../../components/forms/LeadForm.astro';
+import { withBase } from '../../lib/paths';
 ---
 
 <BaseLayout
@@ -66,8 +67,8 @@ import LeadForm from '../../components/forms/LeadForm.astro';
         <h2>Продолжить по задаче</h2>
       </div>
       <nav aria-label="Разделы DMC">
-        <a href="/dmc/dlya-turagentstv/">Для турагентств и туроператоров <span aria-hidden="true">↗</span></a>
-        <a href="/dmc/usloviya-raboty/">Условия работы <span aria-hidden="true">↗</span></a>
+        <a href={withBase("/dmc/dlya-turagentstv/")}>Для турагентств и туроператоров <span aria-hidden="true">↗</span></a>
+        <a href={withBase("/dmc/usloviya-raboty/")}>Условия работы <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </section>

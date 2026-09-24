@@ -1,13 +1,60 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
+import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
+
+const [destinations, countries] = await Promise.all([
+  getCollection('destinations', ({ data }) =>
+    data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+  ),
+  getCollection('countries', ({ data }) =>
+    data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+  ),
+]);
+
+const countryById = new Map(countries.map((country) => [
+  country.data.id,
+  { name: country.data.name, slug: country.data.slug },
+]));
+
+const ordered = destinations.sort((a, b) => {
+  const aCountry = countryById.get(a.data.countryId)?.name ?? '';
+  const bCountry = countryById.get(b.data.countryId)?.name ?? '';
+  return aCountry.localeCompare(bCountry, 'ru') || a.data.name.localeCompare(b.data.name, 'ru');
+});
 ---
 
-<BaseLayout title="Города и регионы Латинской Америки">
+<BaseLayout
+  title="Города и регионы Латинской Америки"
+  description="Рио-де-Жанейро, Игуасу, Амазония, Пантанал, Буэнос-Айрес, Патагония, Мендоса, Лима, Куско и Мачу-Пикчу в структуре маршрутов Ada Tours."
+>
   <Hero
     eyebrow="Направления"
     title="Города, регионы и природные территории"
-    intro="Destination entities объединяют города, регионы, острова, национальные парки, курорты и природные территории."
-    compact
+    intro="Направление здесь связано со страной и маршрутами. Так можно пройти от места к подходящему туру, а не искать одну и ту же точку в нескольких дублях каталога."
+    image="/media/prototype/patagonia.jpg"
   />
+
+  <EditorialStatement
+    eyebrow="Wave 2"
+    text="Сначала собраны ключевые точки Бразилии, Аргентины и Перу. Дальше этот же шаблон масштабируется на остальные 200+ самостоятельных destination entities."
+  />
+
+  {ordered.map((destination, index) => {
+    const country = countryById.get(destination.data.countryId);
+    if (!country) return null;
+
+    return (
+      <DestinationBand
+        eyebrow={country.name}
+        title={destination.data.name}
+        text={destination.data.summary}
+        image={destination.data.hero?.src}
+        href={`/napravleniya/${country.slug}/${destination.data.slug}/`}
+        align={index % 3 === 1 ? 'right' : 'left'}
+      />
+    );
+  })}
 </BaseLayout>

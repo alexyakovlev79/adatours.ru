@@ -1,13 +1,39 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
+import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
+
+const tours = (await getCollection('tours', ({ data }) =>
+  data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+)).sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0));
 ---
 
-<BaseLayout title="Туры по Бразилии и Латинской Америке">
+<BaseLayout
+  title="Туры по Бразилии и Латинской Америке"
+  description="Индивидуальные, VIP и multi-country маршруты Ada Tours по Бразилии, Аргентине, Перу и другим странам Латинской Америки."
+>
   <Hero
     eyebrow="Туры"
     title="Маршруты по Латинской Америке"
-    intro="Каталог будет строиться из структурированных Tour entities с фильтрами и editorial-подачей."
-    compact
+    intro="Не магазин готовых пакетов, а отправные точки. Длительность, отели, приватность, перелеты и состав программы можно перестроить под конкретную поездку."
+    image="/media/prototype/rio-panorama.jpg"
   />
+
+  <EditorialStatement
+    eyebrow="Первая очередь"
+    text="Сейчас в новом сайте появляются маршруты, на которых мы проверяем полноценный Tour template: Бразилия, Перу и поездка через 3 страны."
+  />
+
+  {tours.map((tour, index) => (
+    <DestinationBand
+      eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
+      title={tour.data.title}
+      text={tour.data.lead}
+      image={tour.data.hero?.src}
+      href={`/tury/${tour.data.slug}/`}
+      align={index % 2 === 1 ? 'right' : 'left'}
+    />
+  ))}
 </BaseLayout>

@@ -11,6 +11,7 @@ const { compact = false, light = false } = Astro.props;
 
 <div class:list={['contact-actions', { 'contact-actions--compact': compact, 'contact-actions--light': light }]}>
   <a href={ORG.whatsappHref} target="_blank" rel="noopener noreferrer">WhatsApp</a>
+  <a href={ORG.telegramHref} target="_blank" rel="noopener noreferrer">Telegram</a>
   <a href={ORG.phoneHref}>Позвонить</a>
   <a href={`mailto:${ORG.email}`}>Email</a>
 </div>

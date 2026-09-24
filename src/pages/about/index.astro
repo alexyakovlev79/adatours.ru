@@ -2,17 +2,64 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import FactStrip from '../../components/proof/FactStrip.astro';
+import EditorialProof from '../../components/proof/EditorialProof.astro';
+import LeadForm from '../../components/forms/LeadForm.astro';
+import { ORG } from '../../data/organization/ada-tours';
 ---
 
-<BaseLayout title="О компании Ada Tours">
+<BaseLayout
+  title="О компании Ada Tours — DMC в Бразилии и Латинской Америке"
+  description="Ada Tours работает с индивидуальными путешествиями, VIP, MICE, группами и B2B-партнерами в Бразилии и странах Латинской Америки."
+>
   <Hero
-    eyebrow="Ada Tours"
-    title="Локальная экспертиза и сложные маршруты"
-    intro="Фактический паспорт компании будет единым источником данных для About, коммерческих страниц и Schema.org."
-    compact
+    eyebrow="Ada Tours · DMC"
+    title="Латинская Америка с локальной координацией"
+    intro="Ada Tours работает с турагентствами и туроператорами, частными клиентами, корпоративными группами и сложными маршрутами по нескольким странам."
+    image="/media/prototype/rio-panorama.jpg"
+    ctaLabel="Обсудить поездку"
   />
+
   <EditorialStatement
-    eyebrow="Факты прежде маркетинга"
-    text="История, цифры, география и возможности Ada Tours будут публиковаться только после сверки конфликтующих данных."
+    eyebrow="Что мы организуем"
+    text="Бразилия остается главной географией Ada Tours, а маршруты могут продолжаться в Аргентине, Перу и других странах региона."
   />
+
+  <FactStrip
+    facts={[
+      { value: 'Бразилия', label: 'ключевая география и MICE №1' },
+      { value: ORG.service.groups.standard.display, label: ORG.service.groups.standard.label },
+      { value: ORG.service.groups.largeEvents.display, label: ORG.service.groups.largeEvents.label },
+      { value: String(ORG.service.languages.length), label: 'языков для обработки заявок' },
+    ]}
+  />
+
+  <EditorialProof
+    eyebrow="Форматы"
+    title="От индивидуального маршрута до крупного события"
+    text="Одна и та же локальная команда может вести частную поездку, группу, деловую делегацию или программу по нескольким странам. Состав услуг меняется под задачу, но маршрут и наземная часть остаются связаны между собой."
+    image="/media/prototype/lencois.jpg"
+    facts={[
+      'B2B для туроператоров и турагентств',
+      'VIP и индивидуальные premium-маршруты',
+      'MICE, incentive и корпоративные группы',
+      'Multi-country программы по Латинской Америке',
+    ]}
+  />
+
+  <EditorialProof
+    eyebrow="MICE"
+    title="Бразилия — приоритет №1 для деловых и корпоративных поездок"
+    text="Далее по приоритету идут Аргентина, Перу и Коста-Рика. Для MICE важны не только программа и площадки, но и транспорт, размещение, переводчики, встречи и изменения по ходу поездки."
+    image="/media/prototype/rio-night.jpg"
+    facts={ORG.business.micePriorityCountries.map((country, index) => `${index + 1}. ${country}`)}
+    reverse
+  />
+
+  <EditorialStatement
+    eyebrow="Языки"
+    text={`Ada Tours может обрабатывать заявки на ${ORG.service.languages.join(', ').toLowerCase()} языках.`}
+  />
+
+  <LeadForm title="Обсудить поездку или партнерство" entityId="about" />
 </BaseLayout>

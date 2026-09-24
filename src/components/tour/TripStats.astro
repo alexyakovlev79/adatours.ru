@@ -71,25 +71,40 @@ const { stats } = Astro.props;
     }
 
     .stats__inner {
+      position: relative;
       grid-template-columns: repeat(2, minmax(0,1fr));
     }
 
-    .stat {
+    .stats__inner::before,
+    .stats__inner::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      background: var(--color-line);
+      pointer-events: none;
+    }
+
+    .stats__inner::before {
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 1px;
+      transform: translateX(-.5px);
+    }
+
+    .stats__inner::after {
+      top: 50%;
+      right: 0;
+      left: 0;
+      height: 1px;
+      transform: translateY(-.5px);
+    }
+
+    .stat,
+    .stat + .stat {
       min-height: 130px;
       padding: 26px 18px;
       border: 0;
-    }
-
-    .stat + .stat {
-      border-left: 0;
-    }
-
-    .stat:nth-child(even) {
-      border-left: 1px solid var(--color-line);
-    }
-
-    .stat:nth-child(n + 3) {
-      border-top: 1px solid var(--color-line);
     }
 
     .stat--long strong {

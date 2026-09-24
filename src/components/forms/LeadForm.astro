@@ -1,4 +1,6 @@
 ---
+import PhoneField from './PhoneField.astro';
+
 interface Props {
   title?: string;
   entityId?: string;
@@ -23,10 +25,10 @@ const {
         <span>Имя</span>
         <input name="name" type="text" autocomplete="name" placeholder="Ваше имя" />
       </label>
-      <label>
-        <span>Телефон / WhatsApp</span>
-        <input name="phone" type="tel" autocomplete="tel" placeholder="+7..." />
-      </label>
+      <div class="form-field">
+        <span class="form-field__label">Телефон / WhatsApp</span>
+        <PhoneField />
+      </div>
       <label>
         <span>Email</span>
         <input name="email" type="email" autocomplete="email" placeholder="name@example.com" />
@@ -68,12 +70,14 @@ const {
     padding-top: 6px;
   }
 
-  .form label {
+  .form label,
+  .form-field {
     display: grid;
     gap: 8px;
   }
 
-  .form label span {
+  .form label span,
+  .form-field__label {
     color: rgba(255,255,255,.55);
     font-size: .72rem;
     letter-spacing: .09em;

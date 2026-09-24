@@ -12,6 +12,12 @@ import { ORG } from '../../data/organization/ada-tours';
 const people = await getCollection('people', ({ data }) => data.id === 'person_anna' && data.locale === 'ru');
 const anna = people[0];
 const AnnaContent = anna ? (await render(anna)).Content : null;
+const languagesInPrepositional = ORG.service.languages.map((language) =>
+  language.toLowerCase().replace(/ий$/, 'ом')
+);
+const languagesText = languagesInPrepositional.length > 1
+  ? `${languagesInPrepositional.slice(0, -1).join(', ')} и ${languagesInPrepositional[languagesInPrepositional.length - 1]}`
+  : (languagesInPrepositional[0] ?? '');
 ---
 
 <BaseLayout
@@ -64,7 +70,7 @@ const AnnaContent = anna ? (await render(anna)).Content : null;
 
   <EditorialStatement
     eyebrow="Языки"
-    text={`Ada Tours может обрабатывать заявки на ${ORG.service.languages.join(', ').toLowerCase()} языках.`}
+    text={`Ada Tours может обрабатывать заявки на ${languagesText} языках.`}
   />
 
   {anna && AnnaContent && (

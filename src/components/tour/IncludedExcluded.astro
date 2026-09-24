@@ -57,6 +57,10 @@ const { included, notIncluded } = Astro.props;
     font-size: .98rem;
   }
 
+  .included li:last-child {
+    border-bottom: 0;
+  }
+
   .included li::before {
     position: absolute;
     left: 0;

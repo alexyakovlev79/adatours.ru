@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/editorial/Hero.astro';
+import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
+
+const cases = (await getCollection('cases', ({ data }) =>
+  data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+)).sort((a, b) => (b.data.year ?? 0) - (a.data.year ?? 0));
+---
+
+<BaseLayout
+  title="Кейсы Ada Tours: MICE, делегации и сложные группы"
+  description="Анонимные кейсы Ada Tours по деловым делегациям, корпоративным группам, MICE и сложной логистике в Бразилии и Латинской Америке."
+>
+  <Hero
+    eyebrow="Кейсы"
+    title="Как выглядит работа Ada Tours в реальных проектах"
+    intro="Клиентские названия в части проектов закрыты NDA. Поэтому кейсы показывают задачу, масштаб и операционную работу без идентифицирующих деталей."
+    image="/media/prototype/rio-night.jpg"
+  />
+
+  <EditorialStatement
+    eyebrow="Доказательства"
+    text="Для MICE и B2B важны не общие обещания, а конкретная работа: транспорт, переводчики, встречи, мероприятия, изменения по ходу программы и координация поставщиков."
+  />
+
+  {cases.map((item, index) => (
+    <DestinationBand
+      eyebrow={item.data.segment}
+      title={item.data.title}
+      text={[item.data.groupSize, item.data.duration, item.data.cities.join(' · ')].filter(Boolean).join(' · ')}
+      image={item.data.hero?.src}
+      href={`/cases/${item.data.slug}/`}
+      align={index % 2 === 1 ? 'right' : 'left'}
+    />
+  ))}
+</BaseLayout>

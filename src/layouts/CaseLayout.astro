@@ -1,0 +1,94 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Hero from '../components/editorial/Hero.astro';
+import TripStats from '../components/tour/TripStats.astro';
+import EditorialStatement from '../components/editorial/EditorialStatement.astro';
+import LeadForm from '../components/forms/LeadForm.astro';
+import { withBase } from '../lib/paths';
+
+const { entry } = Astro.props;
+const d = entry.data;
+
+const stats = [
+  d.groupSize ? { value: d.groupSize, label: 'размер группы' } : null,
+  d.duration ? { value: d.duration, label: 'продолжительность' } : null,
+  d.year ? { value: String(d.year), label: 'год проекта' } : null,
+  d.cities.length ? { value: String(d.cities.length), label: 'города / региона' } : null,
+].filter(Boolean);
+---
+
+<BaseLayout
+  title={d.title}
+  description={`${d.title}. Анонимный кейс Ada Tours: задача, логистика, выполненные работы и результат.`}
+  image={d.hero?.src}
+>
+  <Hero
+    eyebrow={d.nda ? 'Анонимный кейс' : 'Кейс Ada Tours'}
+    title={d.title}
+    intro={d.cities.length ? d.cities.join(' · ') : d.segment}
+    image={d.hero?.src}
+    ctaLabel="Обсудить похожую задачу"
+  />
+
+  {stats.length > 0 && <TripStats stats={stats} />}
+
+  <EditorialStatement
+    eyebrow={d.segment}
+    text="Здесь оставлены только факты, которые можно публиковать без раскрытия заказчика. Название компании и персональные данные не используются."
+  />
+
+  <section class="case-copy section--tight">
+    <div class="container prose">
+      <slot />
+    </div>
+  </section>
+
+  {d.proof.length > 0 && (
+    <section class="case-proof section">
+      <div class="container">
+        <p class="eyebrow">Основание кейса</p>
+        <h2>Какие материалы подтверждают проект</h2>
+        <ul>
+          {d.proof.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  {d.relatedServices.length > 0 && (
+    <nav class="case-links container section--tight" aria-label="Связанные услуги">
+      {d.relatedServices.map((href) => (
+        <a href={withBase(href)}>Связанная услуга <span aria-hidden="true">↗</span></a>
+      ))}
+    </nav>
+  )}
+
+  <LeadForm title="Обсудить похожую поездку или мероприятие" entityId={d.id} />
+</BaseLayout>
+
+<style>
+  .case-copy,
+  .case-proof {
+    background: var(--color-bg);
+  }
+
+  .case-proof h2 {
+    max-width: 760px;
+    margin: 12px 0 32px;
+  }
+
+  .case-proof ul {
+    max-width: 760px;
+    padding-left: 1.2em;
+  }
+
+  .case-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 32px;
+  }
+
+  .case-links a {
+    border-bottom: 1px solid currentColor;
+  }
+</style>

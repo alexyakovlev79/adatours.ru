@@ -6,6 +6,11 @@ export const ORG = {
     cnpj: '08.537.782/0001-04',
     registeredAt: '2006-12-11',
     status: 'active',
+    streetAddress: 'Avenida Nossa Senhora de Copacabana, 680, Sala 916',
+    addressLocality: 'Rio de Janeiro',
+    addressRegion: 'RJ',
+    postalCode: '22050-001',
+    addressCountry: 'BR',
     address: 'Avenida Nossa Senhora de Copacabana, 680, Sala 916, Copacabana, Rio de Janeiro, RJ, 22050-001, Brasil',
   },
 

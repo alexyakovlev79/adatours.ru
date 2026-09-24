@@ -1,0 +1,159 @@
+---
+import { withBase } from '../../lib/paths';
+
+interface Props {
+  pathname: string;
+  title: string;
+  theme?: 'light' | 'dark';
+}
+
+const { pathname, title, theme = 'light' } = Astro.props;
+const base = import.meta.env.BASE_URL || '/';
+const normalizedBase = base.endsWith('/') ? base : `${base}/`;
+let cleanPath = pathname;
+
+if (normalizedBase !== '/' && cleanPath.startsWith(normalizedBase)) {
+  cleanPath = `/${cleanPath.slice(normalizedBase.length)}`;
+}
+
+const segments = cleanPath.split('/').filter(Boolean);
+
+const labels: Record<string, string> = {
+  strany: 'Страны',
+  tury: 'Туры',
+  napravleniya: 'Направления',
+  'po-interesam': 'По интересам',
+  dmc: 'Для агентств',
+  'dlya-turagentstv': 'Для турагентств',
+  'usloviya-raboty': 'Условия работы',
+  mice: 'MICE',
+  'delovye-delegacii': 'Деловые делегации',
+  vip: 'VIP',
+  'multi-country': 'Multi-country',
+  about: 'О нас',
+  team: 'Команда',
+  contacts: 'Контакты',
+  cases: 'Кейсы',
+  reviews: 'Отзывы',
+  articles: 'Статьи',
+  braziliya: 'Бразилия',
+  argentina: 'Аргентина',
+  peru: 'Перу',
+  'rio-de-zhanejro': 'Рио-де-Жанейро',
+  'foz-do-iguasu': 'Игуасу',
+  'manaus-amazonia': 'Амазония',
+  pantanal: 'Пантанал',
+  'buenos-ajres': 'Буэнос-Айрес',
+  'el-kalafate': 'Эль-Калафате',
+  mendosa: 'Мендоса',
+  kusko: 'Куско',
+  'machu-pikchu': 'Мачу-Пикчу',
+  lima: 'Лима',
+  rybalka: 'Рыболовные туры',
+  'moto-tury': 'Мото-туры',
+  'gastronomiya-i-vino': 'Гастрономия и вино',
+  'semejnye-tury': 'Семейные туры',
+  spa: 'SPA',
+  dajving: 'Дайвинг',
+  priklyucheniya: 'Приключения',
+  'plyazhnyj-otdyh': 'Пляжный отдых',
+  'svadby-i-romantika': 'Свадьбы и романтика',
+};
+
+const pageTitle = title
+  .replace(/\s*[|–—-]\s*Ada Tours.*$/i, '')
+  .trim();
+
+const crumbs = [
+  { label: 'Главная', href: withBase('/') },
+  ...segments.map((segment, index) => ({
+    label: labels[segment] ?? (index === segments.length - 1 ? pageTitle : segment.replace(/-/g, ' ')),
+    href: withBase(`/${segments.slice(0, index + 1).join('/')}/`),
+  })),
+];
+---
+
+<nav class:list={['breadcrumbs', `breadcrumbs--${theme}`]} aria-label="Хлебные крошки">
+  <ol>
+    {crumbs.map((crumb, index) => (
+      <li>
+        {index === crumbs.length - 1
+          ? <span aria-current="page">{crumb.label}</span>
+          : <a href={crumb.href}>{crumb.label}</a>}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .breadcrumbs {
+    position: absolute;
+    z-index: 45;
+    top: calc(var(--header-h) + 6px);
+    left: var(--gutter);
+    right: var(--gutter);
+    pointer-events: none;
+  }
+
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: var(--font-display);
+    font-size: .67rem;
+    line-height: 1.35;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  .breadcrumbs li {
+    display: flex;
+    align-items: center;
+    pointer-events: auto;
+  }
+
+  .breadcrumbs li + li::before {
+    content: '/';
+    margin: 0 9px;
+    opacity: .45;
+  }
+
+  .breadcrumbs a,
+  .breadcrumbs span {
+    color: inherit;
+  }
+
+  .breadcrumbs a {
+    opacity: .7;
+  }
+
+  .breadcrumbs a:hover {
+    opacity: 1;
+  }
+
+  .breadcrumbs--light {
+    color: rgba(255,255,255,.78);
+  }
+
+  .breadcrumbs--dark {
+    color: rgba(26,26,26,.72);
+  }
+
+  @media (max-width: 680px) {
+    .breadcrumbs {
+      top: calc(var(--header-h) - 4px);
+    }
+
+    .breadcrumbs ol {
+      font-size: .61rem;
+      letter-spacing: .045em;
+    }
+
+    .breadcrumbs li + li::before {
+      margin-inline: 7px;
+    }
+  }
+</style>

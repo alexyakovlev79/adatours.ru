@@ -3,7 +3,7 @@ id: theme_spa
 locale: ru
 name: SPA и wellness
 slug: spa
-status: review
+status: approved
 summary: >-
   SPA, термальные источники и wellness-форматы можно встроить в индивидуальное путешествие по Латинской Америке как спокойный блок между городами, природой и длинными переездами.
 hero:

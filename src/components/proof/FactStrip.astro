@@ -17,14 +17,12 @@ const { facts, dark = false } = Astro.props;
 
 <style>
   .fact-strip {
-    border-block: 1px solid var(--color-line);
     background: var(--color-bg);
   }
 
   .fact-strip--dark {
     color: var(--color-bg);
     background: var(--color-ink-deep);
-    border-color: rgba(255,255,255,.18);
   }
 
   .fact-strip__inner {
@@ -37,13 +35,14 @@ const { facts, dark = false } = Astro.props;
   .fact {
     min-height: 180px;
     padding: 38px 28px;
-    border-left: 1px solid currentColor;
-    border-color: inherit;
   }
 
-  .fact:last-child {
-    border-right: 1px solid currentColor;
-    border-color: inherit;
+  .fact + .fact {
+    border-left: 1px solid var(--color-line);
+  }
+
+  .fact-strip--dark .fact + .fact {
+    border-color: rgba(255,255,255,.18);
   }
 
   .fact strong {
@@ -77,7 +76,17 @@ const { facts, dark = false } = Astro.props;
     .fact {
       min-height: 132px;
       padding: 26px 16px;
+      border-left: 0;
       border-bottom: 1px solid var(--color-line);
+    }
+
+    .fact:nth-child(even) {
+      border-left: 1px solid var(--color-line);
+    }
+
+    .fact-strip--dark .fact:nth-child(even),
+    .fact-strip--dark .fact {
+      border-color: rgba(255,255,255,.18);
     }
   }
 </style>

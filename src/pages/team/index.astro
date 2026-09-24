@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/editorial/Hero.astro';
+import PersonProfile from '../../components/proof/PersonProfile.astro';
+
+const people = await getCollection('people', ({ data }) =>
+  data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+);
+
+const renderedPeople = await Promise.all(
+  people.map(async (entry) => {
+    const { Content } = await render(entry);
+    return { entry, Content };
+  })
+);
+---
+
+<BaseLayout
+  title="Команда Ada Tours"
+  description="Команда Ada Tours: эксперты по Бразилии, Латинской Америке, индивидуальным путешествиям, VIP, MICE и сложным маршрутам."
+>
+  <Hero
+    eyebrow="Ada Tours"
+    title="Люди, которые собирают маршруты"
+    intro="На этой странице публикуются только подтвержденные профили команды Ada Tours. Биографии и роли хранятся как отдельные сущности и используются на страницах услуг, в статьях и кейсах."
+    compact
+    ctaLabel="Обсудить поездку"
+  />
+
+  {renderedPeople.map(({ entry, Content }) => (
+    <PersonProfile
+      name={entry.data.name}
+      role={entry.data.role}
+      photo={entry.data.photo}
+      expertise={entry.data.expertise}
+      href={`/team/${entry.data.slug}/`}
+    >
+      <Content />
+    </PersonProfile>
+  ))}
+</BaseLayout>

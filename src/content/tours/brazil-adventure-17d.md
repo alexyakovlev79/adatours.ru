@@ -1,7 +1,7 @@
 ---
 id: tour_brazil_adventure_17d
 locale: ru
-title: Большое приключение по Бразилии: Рио, Игуасу, Пантанал, Бонито и Ленсойс за 17 дней
+title: "Большое приключение по Бразилии: Рио, Игуасу, Пантанал, Бонито и Ленсойс за 17 дней"
 slug: bolshoe-priklyuchenie-braziliya-17-dnej
 status: approved
 countries:

@@ -3,7 +3,7 @@ id: case_mice_corporate_group_rio_angra_2026
 locale: ru
 title: Корпоративная группа в Рио и Ангра-дус-Рейш
 slug: korporativnaya-gruppa-rio-angra-2026
-status: review
+status: approved
 segment: MICE / корпоративные группы
 countries:
   - country_brazil

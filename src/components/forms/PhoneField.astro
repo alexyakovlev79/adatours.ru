@@ -1,0 +1,337 @@
+---
+import { PHONE_COUNTRIES } from '../../data/phone-countries';
+
+const DEFAULT_ISO = 'ru';
+const defaultCountry = PHONE_COUNTRIES.find((country) => country.iso2 === DEFAULT_ISO) ?? PHONE_COUNTRIES[0];
+const flagUrl = (iso2: string) => `https://flagcdn.com/24x18/${iso2}.png`;
+const placeholderFromMask = (country: { mask: string; dial: string }) => {
+  const pattern = country.mask.startsWith(country.dial) ? country.mask.slice(country.dial.length) : country.mask;
+  return pattern.replace(/9/g, '0').trim();
+};
+---
+
+<div class="phone-field" data-phone-field>
+  <div class="phone-field__control">
+    <button
+      type="button"
+      class="phone-field__country-toggle"
+      aria-haspopup="listbox"
+      aria-expanded="false"
+      aria-label={`Выбрать страну: ${defaultCountry.name} ${defaultCountry.dial}`}
+    >
+      <img
+        class="phone-field__flag"
+        src={flagUrl(defaultCountry.iso2)}
+        alt=""
+        width="24"
+        height="18"
+        data-phone-flag
+      />
+      <span class="phone-field__dial" data-phone-dial>{defaultCountry.dial}</span>
+      <span class="phone-field__chevron" aria-hidden="true"></span>
+    </button>
+
+    <input
+      class="phone-field__input"
+      name="phone"
+      type="tel"
+      inputmode="tel"
+      autocomplete="tel-national"
+      placeholder={placeholderFromMask(defaultCountry)}
+      data-phone-input
+      data-mask={defaultCountry.mask}
+      data-dial={defaultCountry.dial}
+      data-iso2={defaultCountry.iso2}
+    />
+
+    <div class="phone-field__menu" role="listbox" data-phone-menu data-nosnippet>
+      {PHONE_COUNTRIES.map((country) => (
+        <button
+          type="button"
+          class="phone-field__option"
+          role="option"
+          data-phone-option
+          data-name={country.name}
+          data-iso2={country.iso2}
+          data-dial={country.dial}
+          data-mask={country.mask}
+        >
+          <img
+            class="phone-field__flag"
+            src={flagUrl(country.iso2)}
+            alt=""
+            loading="lazy"
+            width="24"
+            height="18"
+          />
+          <span class="phone-field__country-name">{country.name}</span>
+          <span class="phone-field__option-code">{country.dial}</span>
+        </button>
+      ))}
+    </div>
+  </div>
+
+  <input type="hidden" name="phone_country" value={defaultCountry.iso2} data-phone-country />
+  <input type="hidden" name="phone_dial" value={defaultCountry.dial} data-phone-dial-hidden />
+</div>
+
+<script>
+  const flagUrl = (iso2) => `https://flagcdn.com/24x18/${iso2}.png`;
+
+  const maskParts = (mask, dial) => {
+    const pattern = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
+    return {
+      pattern,
+      digits: (pattern.match(/9/g) || []).length,
+    };
+  };
+
+  const formatNational = (value, mask, dial) => {
+    const meta = maskParts(mask, dial);
+    let digits = String(value || '').replace(/\D/g, '');
+    const dialDigits = String(dial || '').replace(/\D/g, '');
+
+    if (digits.startsWith(dialDigits) && digits.length > meta.digits) {
+      digits = digits.slice(dialDigits.length);
+    }
+
+    digits = digits.slice(0, meta.digits);
+
+    let output = '';
+    let digitIndex = 0;
+    for (const character of meta.pattern) {
+      if (character === '9') {
+        if (digitIndex >= digits.length) break;
+        output += digits[digitIndex++];
+      } else if (digitIndex > 0 || digits.length > 0) {
+        output += character;
+      }
+    }
+
+    return output;
+  };
+
+  const placeholderFromMask = (mask, dial) => {
+    return maskParts(mask, dial).pattern.replace(/9/g, '0').trim();
+  };
+
+  document.querySelectorAll('[data-phone-field]').forEach((field) => {
+    const toggle = field.querySelector('.phone-field__country-toggle');
+    const flag = field.querySelector('[data-phone-flag]');
+    const dial = field.querySelector('[data-phone-dial]');
+    const input = field.querySelector('[data-phone-input]');
+    const menu = field.querySelector('[data-phone-menu]');
+    const countryHidden = field.querySelector('[data-phone-country]');
+    const dialHidden = field.querySelector('[data-phone-dial-hidden]');
+
+    if (!(toggle instanceof HTMLButtonElement) ||
+        !(flag instanceof HTMLImageElement) ||
+        !(dial instanceof HTMLElement) ||
+        !(input instanceof HTMLInputElement) ||
+        !(menu instanceof HTMLElement) ||
+        !(countryHidden instanceof HTMLInputElement) ||
+        !(dialHidden instanceof HTMLInputElement)) return;
+
+    const closeMenu = () => {
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+
+    const applyCountry = (option, focusInput = true) => {
+      if (!(option instanceof HTMLButtonElement)) return;
+      const { iso2 = 'ru', dial: countryDial = '+7', mask = '+7(999) 999-99-99', name = 'Russia (Россия)' } = option.dataset;
+
+      flag.src = flagUrl(iso2);
+      dial.textContent = countryDial;
+      input.dataset.iso2 = iso2;
+      input.dataset.dial = countryDial;
+      input.dataset.mask = mask;
+      input.placeholder = placeholderFromMask(mask, countryDial);
+      input.value = formatNational(input.value, mask, countryDial);
+      countryHidden.value = iso2;
+      dialHidden.value = countryDial;
+      toggle.setAttribute('aria-label', `Выбрать страну: ${name} ${countryDial}`);
+      closeMenu();
+
+      if (focusInput) input.focus();
+    };
+
+    toggle.addEventListener('click', () => {
+      const open = !menu.classList.contains('is-open');
+      menu.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+
+      if (open) {
+        const selected = menu.querySelector(`[data-phone-option][data-iso2="${input.dataset.iso2}"]`);
+        if (selected instanceof HTMLElement) {
+          setTimeout(() => selected.scrollIntoView({ block: 'center' }), 0);
+        }
+      }
+    });
+
+    menu.querySelectorAll('[data-phone-option]').forEach((option) => {
+      option.addEventListener('click', () => applyCountry(option));
+    });
+
+    input.addEventListener('input', () => {
+      const mask = input.dataset.mask || '+7(999) 999-99-99';
+      const countryDial = input.dataset.dial || '+7';
+      const formatted = formatNational(input.value, mask, countryDial);
+      if (input.value !== formatted) input.value = formatted;
+    });
+
+    document.addEventListener('click', (event) => {
+      if (event.target instanceof Node && !field.contains(event.target)) closeMenu();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && menu.classList.contains('is-open')) {
+        closeMenu();
+        toggle.focus();
+      }
+    });
+  });
+</script>
+
+<style>
+  .phone-field {
+    min-width: 0;
+  }
+
+  .phone-field__control {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    min-height: 48px;
+    border-bottom: 1px solid rgba(255,255,255,.35);
+  }
+
+  .phone-field__control:focus-within {
+    border-bottom-color: var(--color-gold);
+  }
+
+  .phone-field__country-toggle {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 8px;
+    min-width: 92px;
+    padding: 0 14px 0 0;
+    border: 0;
+    border-right: 1px solid rgba(255,255,255,.18);
+    color: var(--color-bg);
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .phone-field__flag {
+    display: block;
+    width: 24px;
+    height: 18px;
+    flex: 0 0 24px;
+    object-fit: cover;
+    border: 1px solid rgba(255,255,255,.2);
+  }
+
+  .phone-field__dial {
+    white-space: nowrap;
+    font-size: .95rem;
+  }
+
+  .phone-field__chevron {
+    width: 0;
+    height: 0;
+    flex: 0 0 auto;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top: 5px solid rgba(255,255,255,.55);
+  }
+
+  .phone-field__input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 0 12px 14px;
+    border: 0;
+    outline: 0;
+    color: var(--color-bg);
+    background: transparent;
+  }
+
+  .phone-field__input::placeholder {
+    color: rgba(255,255,255,.46);
+  }
+
+  .phone-field__menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 50;
+    display: none;
+    width: min(430px, calc(100vw - 32px));
+    max-height: 310px;
+    overflow: auto;
+    border: 1px solid #c9c9c9;
+    color: #1a1a1a;
+    background: #fff;
+    box-shadow: 0 18px 40px rgba(0,0,0,.24);
+  }
+
+  .phone-field__menu.is-open {
+    display: block;
+  }
+
+  .phone-field__option {
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr) auto;
+    gap: 11px;
+    align-items: center;
+    width: 100%;
+    padding: 10px 12px;
+    border: 0;
+    border-bottom: 1px solid #ece8e1;
+    color: #1a1a1a;
+    background: #fff;
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+    font-size: .82rem;
+    line-height: 1.35;
+  }
+
+  .phone-field__option:last-child {
+    border-bottom: 0;
+  }
+
+  .phone-field__option:hover,
+  .phone-field__option:focus-visible {
+    background: #f7f3ec;
+  }
+
+  .phone-field__option .phone-field__flag {
+    border-color: rgba(0,0,0,.1);
+  }
+
+  .phone-field__country-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .phone-field__option-code {
+    color: #6f6a62;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 760px) {
+    .phone-field__menu {
+      position: fixed;
+      top: 50%;
+      right: 16px;
+      left: 16px;
+      width: auto;
+      max-height: min(440px, 70dvh);
+      transform: translateY(-50%);
+    }
+  }
+</style>

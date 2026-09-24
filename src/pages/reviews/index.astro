@@ -5,17 +5,34 @@ import EditorialStatement from '../../components/editorial/EditorialStatement.as
 import ReviewQuote from '../../components/proof/ReviewQuote.astro';
 import LeadForm from '../../components/forms/LeadForm.astro';
 import { ADA_REVIEWS } from '../../data/reviews/ada-tours';
+
+const heroImage = '/media/prototype/rio-panorama.jpg';
+const reviewPageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://adatours.ru').toString();
+const reviewSchemas = ADA_REVIEWS.map((review) => ({
+  '@type': 'Review',
+  '@id': `${reviewPageUrl}#${review.id}`,
+  itemReviewed: { '@id': 'https://adatours.ru/#organization' },
+  author: {
+    '@type': 'Person',
+    name: review.author,
+  },
+  reviewBody: review.text,
+  inLanguage: 'ru',
+  citation: review.sourceUrl,
+}));
 ---
 
 <BaseLayout
   title="Отзывы клиентов и партнеров Ada Tours"
   description="Отзывы туристов, турагентств и партнеров Ada Tours о маршрутах по Бразилии и Латинской Америке, группах, VIP и multi-country поездках."
+  image={heroImage}
+  pageSchema={reviewSchemas}
 >
   <Hero
     eyebrow="Отзывы"
     title="Опыт клиентов и партнеров Ada Tours"
     intro="Здесь собраны фрагменты реальных отзывов, которые уже опубликованы Ada Tours. Для англоязычных отзывов показан русский перевод, рядом остается ссылка на исходную публикацию."
-    image="/media/prototype/rio-panorama.jpg"
+    image={heroImage}
     compact
   />
 

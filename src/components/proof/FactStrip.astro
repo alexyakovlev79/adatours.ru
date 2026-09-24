@@ -116,5 +116,9 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
     .fact--long strong {
       font-size: clamp(1.65rem, 7vw, 2.15rem);
     }
+
+    .fact-strip--wide-first .fact:first-child strong {
+      font-size: clamp(1.65rem, 7vw, 2rem);
+    }
   }
 </style>

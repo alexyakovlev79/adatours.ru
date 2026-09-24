@@ -3,7 +3,7 @@ id: country_peru
 locale: ru
 name: Перу
 slug: peru
-status: review
+status: approved
 summary: >-
   Лима, Куско, Мачу-Пикчу, Священная долина, Титикака и перуанская Амазония. Ada Tours связывает высотные регионы, внутренние перелеты и наземную программу в один маршрут.
 hero:

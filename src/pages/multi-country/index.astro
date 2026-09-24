@@ -1,13 +1,136 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
+import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import FactStrip from '../../components/proof/FactStrip.astro';
+import EditorialProof from '../../components/proof/EditorialProof.astro';
+import ProcessSteps from '../../components/proof/ProcessSteps.astro';
+import LeadForm from '../../components/forms/LeadForm.astro';
+import { withBase } from '../../lib/paths';
 ---
 
-<BaseLayout title="Multi-country туры по Латинской Америке">
+<BaseLayout
+  title="Multi-country туры по Латинской Америке"
+  description="Индивидуальные маршруты по нескольким странам Латинской Америки: Бразилия, Аргентина, Перу и другие сочетания с единой координацией."
+>
   <Hero
     eyebrow="Multi-country"
-    title="Несколько стран в одном маршруте"
-    intro="Отдельный top-level hub для комбинированных программ по Латинской Америке."
-    compact
+    title="Несколько стран, один рабочий маршрут"
+    intro="Международные и внутренние перелеты, отели, трансферы, гиды и темп поездки связываются в одну программу, чтобы изменение в одной стране не ломало следующую."
+    image="/media/prototype/buenos-aires.jpg"
+    ctaLabel="Собрать маршрут"
   />
+
+  <EditorialStatement
+    eyebrow="Латинская Америка"
+    text="На карте страны стоят рядом. В реальной поездке между ними есть расписания, багаж, разные поставщики и время на переезды."
+  />
+
+  <FactStrip
+    facts={[
+      { value: 'Бразилия', label: 'главная география Ada Tours' },
+      { value: 'Аргентина', label: 'частое продолжение маршрута' },
+      { value: 'Перу', label: 'сильная третья страна' },
+      { value: '1 маршрут', label: 'единая логика всей поездки' },
+    ]}
+  />
+
+  <EditorialProof
+    eyebrow="Популярное сочетание"
+    title="Бразилия + Аргентина + Перу"
+    text="Такой маршрут может соединить Рио и Игуасу, Буэнос-Айрес и Патагонию, Лиму, Куско и Мачу-Пикчу. Состав точек меняется под длительность поездки, сезон и темп."
+    image="/media/prototype/patagonia.jpg"
+    facts={[
+      'Единая последовательность перелетов и наземных переездов',
+      'Размещение под реальное время прибытия и выезда',
+      'Локальные гиды и трансферы в каждой стране',
+      'Запас времени на сложные стыковки и изменения',
+    ]}
+  />
+
+  <EditorialProof
+    eyebrow="Координация"
+    title="Изменение в одной стране проверяется по всему маршруту"
+    text="Перенос рейса, смена отеля или дополнительный день может затронуть следующую страну. Поэтому программа ведется как единый рабочий документ, даже если локально участвуют разные поставщики."
+    image="/media/prototype/lencois.jpg"
+    facts={[
+      'Международные и региональные перелеты',
+      'Наземные трансферы',
+      'Отели и экскурсионная программа',
+      'Багаж, темп и время на стыковки',
+    ]}
+    reverse
+  />
+
+  <ProcessSteps
+    eyebrow="Как собирается маршрут"
+    title="Сначала логика поездки, потом детали"
+    steps={[
+      {
+        title: 'Каркас',
+        text: 'Фиксируем страны, обязательные места, даты и общую длительность.',
+      },
+      {
+        title: 'Стыковки',
+        text: 'Проверяем последовательность перелетов и реальное время между точками.',
+      },
+      {
+        title: 'Наземная часть',
+        text: 'Добавляем отели, трансферы, гидов, экскурсии и свободные дни.',
+      },
+      {
+        title: 'Одна версия',
+        text: 'Все подтверждения и изменения сводятся в единый маршрут поездки.',
+      },
+    ]}
+    dark
+  />
+
+  <section class="multi-links section--tight">
+    <div class="container multi-links__grid">
+      <p class="eyebrow">Продолжить</p>
+      <nav aria-label="Связанные разделы">
+        <a href={withBase('/strany/braziliya/')}>Бразилия <span aria-hidden="true">↗</span></a>
+        <a href={withBase('/tury/')}>Все туры <span aria-hidden="true">↗</span></a>
+        <a href={withBase('/dmc/')}>DMC для партнеров <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </section>
+
+  <LeadForm title="Собрать маршрут по нескольким странам" entityId="multi_country" />
 </BaseLayout>
+
+<style>
+  .multi-links {
+    border-top: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .multi-links__grid {
+    display: grid;
+    grid-template-columns: .7fr 1.3fr;
+    gap: clamp(40px, 8vw, 120px);
+    align-items: start;
+  }
+
+  .multi-links nav {
+    display: grid;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .multi-links nav a {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--color-line);
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+  }
+
+  @media (max-width: 760px) {
+    .multi-links__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

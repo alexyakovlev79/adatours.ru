@@ -3,7 +3,7 @@ id: theme_family
 locale: ru
 name: Семейные туры
 slug: semejnye-tury
-status: review
+status: approved
 summary: >-
   Семейный маршрут по Латинской Америке строится вокруг возраста детей, темпа, коротких переездов и сильных впечатлений без перегруженного расписания.
 hero:

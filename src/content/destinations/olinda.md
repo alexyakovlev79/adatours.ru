@@ -26,7 +26,7 @@ featuredExcursions: []
 facts:
   - value: UNESCO
     label: исторический центр в списке Всемирного наследия
-  - value: 1535
+  - value: "1535"
     label: год основания города
   - value: Барокко
     label: церкви и монастыри исторического центра

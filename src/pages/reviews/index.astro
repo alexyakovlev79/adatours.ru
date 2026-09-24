@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/editorial/Hero.astro';
+import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import ReviewQuote from '../../components/proof/ReviewQuote.astro';
+import LeadForm from '../../components/forms/LeadForm.astro';
+import { ADA_REVIEWS } from '../../data/reviews/ada-tours';
+---
+
+<BaseLayout
+  title="Отзывы клиентов и партнеров Ada Tours"
+  description="Отзывы туристов, турагентств и партнеров Ada Tours о маршрутах по Бразилии и Латинской Америке, группах, VIP и multi-country поездках."
+>
+  <Hero
+    eyebrow="Отзывы"
+    title="Опыт клиентов и партнеров Ada Tours"
+    intro="Здесь собраны фрагменты реальных отзывов, которые уже опубликованы Ada Tours. Для англоязычных отзывов показан русский перевод, рядом остается ссылка на исходную публикацию."
+    image="/media/prototype/rio-panorama.jpg"
+    compact
+  />
+
+  <EditorialStatement
+    eyebrow="Что видно по отзывам"
+    text="Люди чаще всего пишут о координации на месте, гидах и водителях, точности логистики, работе с изменениями и персональном подходе."
+  />
+
+  <div class="reviews">
+    {ADA_REVIEWS.map((review, index) => <ReviewQuote review={review} index={index} />)}
+  </div>
+
+  <LeadForm title="Обсудить поездку или партнерство" entityId="reviews" />
+</BaseLayout>

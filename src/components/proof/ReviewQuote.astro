@@ -1,0 +1,146 @@
+---
+import type { AdaReview } from '../../data/reviews/ada-tours';
+
+interface Props {
+  review: AdaReview;
+  index?: number;
+}
+
+const { review, index = 0 } = Astro.props;
+---
+
+<section class="review" id={review.id}>
+  <div class="review__inner">
+    <div class="review__meta">
+      <p class="eyebrow">{review.segment}</p>
+      <p class="review__number">{String(index + 1).padStart(2, '0')}</p>
+      {review.route && <p class="review__route">{review.route}</p>}
+    </div>
+
+    <div class="review__body">
+      <blockquote>
+        <p>«{review.text}»</p>
+      </blockquote>
+
+      <div class="review__author">
+        <strong>{review.author}</strong>
+        {review.organization && <span>{review.organization}</span>}
+        {review.role && <span>{review.role}</span>}
+      </div>
+
+      <div class="review__source">
+        {review.translated && <span>Перевод с английского.</span>}
+        <a href={review.sourceUrl} target="_blank" rel="noopener noreferrer">
+          Оригинал, отзыв №{review.sourceReviewNumber} на adatours.com
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .review {
+    border-top: 1px solid var(--color-line);
+  }
+
+  .review:last-child {
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .review__inner {
+    display: grid;
+    grid-template-columns: minmax(220px, .7fr) minmax(0, 1.6fr);
+    gap: clamp(36px, 8vw, 120px);
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+    padding-block: clamp(54px, 7vw, 96px);
+  }
+
+  .review__number {
+    margin: 18px 0 26px;
+    font-family: var(--font-display);
+    font-size: clamp(3.8rem, 7vw, 7.5rem);
+    font-weight: 600;
+    line-height: .9;
+    letter-spacing: -.05em;
+    color: var(--color-gold-deep);
+  }
+
+  .review__route {
+    max-width: 260px;
+    margin: 0;
+    color: color-mix(in srgb, var(--color-ink) 58%, transparent);
+    font-size: .84rem;
+    line-height: 1.5;
+  }
+
+  blockquote {
+    margin: 0;
+  }
+
+  blockquote p {
+    max-width: 880px;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 1.3rem + 2vw, 3.8rem);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -.035em;
+  }
+
+  .review__author {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    align-items: baseline;
+    margin-top: 34px;
+  }
+
+  .review__author strong {
+    font-family: var(--font-display);
+    font-size: 1rem;
+  }
+
+  .review__author span {
+    color: color-mix(in srgb, var(--color-ink) 58%, transparent);
+    font-size: .84rem;
+  }
+
+  .review__source {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    margin-top: 18px;
+    color: color-mix(in srgb, var(--color-ink) 48%, transparent);
+    font-size: .72rem;
+  }
+
+  .review__source a {
+    border-bottom: 1px solid currentColor;
+  }
+
+  @media (max-width: 720px) {
+    .review__inner {
+      grid-template-columns: 1fr;
+      gap: 26px;
+    }
+
+    .review__meta {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 6px 18px;
+      align-items: start;
+    }
+
+    .review__number {
+      grid-row: 1 / span 2;
+      grid-column: 2;
+      margin: 0;
+      font-size: 3.4rem;
+    }
+
+    .review__route {
+      max-width: none;
+    }
+  }
+</style>

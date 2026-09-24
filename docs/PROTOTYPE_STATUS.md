@@ -19,16 +19,18 @@ Do not redesign global components or tokens without a concrete defect, a new pag
 
 ## Prototype coverage
 
-The repository already contains prototypes for:
+The repository contains working page types for:
 
 - Home;
-- Brazil country page;
-- Rio de Janeiro destination page;
-- full tour page;
-- DMC;
-- MICE;
-- business delegations;
+- Country;
+- Destination;
+- Tour detail;
+- DMC / B2B;
+- MICE and business delegations;
 - VIP / Luxury;
+- Multi-country;
+- Cases;
+- Reviews;
 - Contacts;
 - 404.
 
@@ -89,17 +91,30 @@ Result:
 - Anna's profile additionally contains Person schema;
 - rendered spot-checks at 1440×900 and 390×844 found no overlap between header, breadcrumbs and H1 on About, DMC, MICE, VIP, Multi-country and Brazil.
 
+## Wave 2 priority batch
+
+Status: **content approved; reviews implementation added on 2026-09-24**.
+
+Approved content in the priority batch:
+
+- Brazil destinations: Rio de Janeiro, Foz do Iguacu, Manaus / Amazon, Pantanal;
+- Argentina destinations: Buenos Aires, El Calafate, Mendoza;
+- Peru destinations: Cusco, Lima, Machu Picchu;
+- priority tours: Luxury Brazil, Brazil + Argentina + Peru, Peru 8 days;
+- cases: business delegation in Sao Paulo / Campinas, corporate group in Rio / Angra;
+- reviews: 8 curated public client and partner excerpts with source traceability.
+
+The latest production deploy before the reviews implementation was run #115 for commit `3797657`, conclusion `success`.
+
 ## Current phase
 
-Proceed to Content Wave 2 without changing the accepted global design system.
+Finish QA of the Wave 2 reviews page and then move to Wave 3 scale-out.
 
-Priority order from the master blueprint:
+Wave 3 order remains value-first, not alphabetical:
 
-1. Brazil destinations;
-2. Argentina destinations;
-3. Peru destinations;
-4. priority tours;
-5. cases;
-6. reviews.
+1. expand the strongest country/destination clusters;
+2. add additional high-value tours tied to approved destinations and themes;
+3. add excursions only after the destination/tour relation is stable;
+4. keep the full 700+ queue gated by template quality and regression checks.
 
-Bulk generation of the full 700+ page queue is still deferred until Wave 2 templates and content quality are stable.
+The accepted global design system remains frozen unless QA exposes a concrete defect.

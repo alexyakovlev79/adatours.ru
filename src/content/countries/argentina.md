@@ -3,7 +3,7 @@ id: country_argentina
 locale: ru
 name: Аргентина
 slug: argentina
-status: review
+status: approved
 summary: >-
   Буэнос-Айрес, Патагония, Мендоса, Игуасу и северо-запад страны. Ada Tours собирает индивидуальные, VIP и тематические маршруты по Аргентине и сочетает их с Бразилией, Чили и другими странами региона.
 hero:

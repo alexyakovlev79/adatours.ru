@@ -10,13 +10,13 @@ const { included, notIncluded } = Astro.props;
   <div class="container">
     <p class="eyebrow">Условия программы</p>
     <div class="included__grid">
-      <div>
+      <div class="included__column included__column--included">
         <h2>Включено</h2>
         <ul>
           {included.map((item) => <li>{item}</li>)}
         </ul>
       </div>
-      <div>
+      <div class="included__column included__column--extra">
         <h2>Оплачивается отдельно</h2>
         <ul>
           {notIncluded.map((item) => <li>{item}</li>)}
@@ -58,10 +58,20 @@ const { included, notIncluded } = Astro.props;
   }
 
   .included li::before {
-    content: '—';
     position: absolute;
     left: 0;
     color: var(--color-gold-deep);
+    font-family: var(--font-display);
+  }
+
+  .included__column--included li::before {
+    content: '✓';
+    font-size: .9rem;
+  }
+
+  .included__column--extra li::before {
+    content: '•';
+    font-size: 1rem;
   }
 
   @media (max-width: 760px) {

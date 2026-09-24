@@ -17,7 +17,7 @@ themes:
 audiences:
   - couples
   - private
-format: Индивидуально
+format: Частный
 durationDays: 11
 durationNights: 10
 route:

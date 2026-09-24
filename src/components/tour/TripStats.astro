@@ -10,7 +10,7 @@ const { stats } = Astro.props;
 <section class="stats">
   <div class="stats__inner">
     {stats.map((stat) => (
-      <div class="stat">
+      <div class:list={['stat', { 'stat--long': stat.value.length > 9 }]}>
         <strong>{stat.value}</strong>
         <span>{stat.label}</span>
       </div>
@@ -32,6 +32,7 @@ const { stats } = Astro.props;
   }
 
   .stat {
+    min-width: 0;
     min-height: 180px;
     padding: 38px 30px;
   }
@@ -42,12 +43,19 @@ const { stats } = Astro.props;
 
   .stat strong {
     display: block;
+    max-width: 100%;
     margin-bottom: 10px;
     font-family: var(--font-display);
     font-size: clamp(2.2rem, 3vw, 4.8rem);
     font-weight: 500;
     line-height: .95;
     letter-spacing: -.04em;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
+  .stat--long strong {
+    font-size: clamp(1.8rem, 2.5vw, 3.3rem);
   }
 
   .stat span {
@@ -69,6 +77,7 @@ const { stats } = Astro.props;
     .stat {
       min-height: 130px;
       padding: 26px 18px;
+      border: 0;
     }
 
     .stat + .stat {
@@ -81,6 +90,10 @@ const { stats } = Astro.props;
 
     .stat:nth-child(n + 3) {
       border-top: 1px solid var(--color-line);
+    }
+
+    .stat--long strong {
+      font-size: clamp(1.65rem, 7vw, 2.15rem);
     }
   }
 </style>

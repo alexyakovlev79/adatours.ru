@@ -7,7 +7,7 @@ const { facts, dark = false } = Astro.props;
 <section class:list={['fact-strip', { 'fact-strip--dark': dark }]}>
   <div class="fact-strip__inner">
     {facts.map((fact) => (
-      <div class="fact">
+      <div class:list={['fact', { 'fact--long': fact.value.length > 9 }]}>
         <strong>{fact.value}</strong>
         <span>{fact.label}</span>
       </div>
@@ -33,6 +33,7 @@ const { facts, dark = false } = Astro.props;
   }
 
   .fact {
+    min-width: 0;
     min-height: 180px;
     padding: 38px 28px;
   }
@@ -47,11 +48,18 @@ const { facts, dark = false } = Astro.props;
 
   .fact strong {
     display: block;
+    max-width: 100%;
     font-family: var(--font-display);
     font-size: clamp(2.2rem, 3.4vw, 4.8rem);
     font-weight: 500;
     line-height: .95;
     letter-spacing: -.045em;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
+  .fact--long strong {
+    font-size: clamp(1.8rem, 2.5vw, 3.3rem);
   }
 
   .fact span {
@@ -73,20 +81,28 @@ const { facts, dark = false } = Astro.props;
       grid-template-columns: repeat(2, minmax(0,1fr));
     }
 
-    .fact {
+    .fact,
+    .fact + .fact {
       min-height: 132px;
       padding: 26px 16px;
-      border-left: 0;
-      border-bottom: 1px solid var(--color-line);
+      border: 0;
     }
 
     .fact:nth-child(even) {
       border-left: 1px solid var(--color-line);
     }
 
+    .fact:nth-child(n + 3) {
+      border-top: 1px solid var(--color-line);
+    }
+
     .fact-strip--dark .fact:nth-child(even),
-    .fact-strip--dark .fact {
+    .fact-strip--dark .fact:nth-child(n + 3) {
       border-color: rgba(255,255,255,.18);
+    }
+
+    .fact--long strong {
+      font-size: clamp(1.65rem, 7vw, 2.15rem);
     }
   }
 </style>

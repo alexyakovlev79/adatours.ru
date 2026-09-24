@@ -41,6 +41,10 @@ const { items } = Astro.props;
     border-bottom: 1px solid var(--color-line);
   }
 
+  .highlight:last-child {
+    border-bottom: 0;
+  }
+
   .highlight > span {
     color: var(--color-gold-deep);
     font-family: var(--font-display);

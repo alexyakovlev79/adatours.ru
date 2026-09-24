@@ -68,6 +68,10 @@ const { days } = Astro.props;
     border-bottom: 1px solid rgba(255,255,255,.25);
   }
 
+  .day:last-child {
+    border-bottom: 0;
+  }
+
   .day summary {
     display: grid;
     grid-template-columns: 80px 1fr 44px;

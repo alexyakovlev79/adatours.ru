@@ -99,6 +99,10 @@ const { eyebrow, title, steps, dark = false } = Astro.props;
       border-bottom: 1px solid var(--color-line);
     }
 
+    .step:last-child {
+      border-bottom: 0;
+    }
+
     .step h3 {
       margin-top: 28px;
     }

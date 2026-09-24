@@ -39,6 +39,7 @@ const { theme = 'light' } = Astro.props;
     >
       <span></span>
       <span></span>
+      <span></span>
     </button>
   </div>
 
@@ -206,11 +207,16 @@ const { theme = 'light' } = Astro.props;
     }
 
     .is-open .menu-toggle span:first-child {
-      transform: translateY(4px) rotate(45deg);
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .is-open .menu-toggle span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(.4);
     }
 
     .is-open .menu-toggle span:last-child {
-      transform: translateY(-4px) rotate(-45deg);
+      transform: translateY(-8px) rotate(-45deg);
     }
 
     .mobile-menu {

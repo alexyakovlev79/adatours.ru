@@ -1,15 +1,21 @@
 ---
+import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import LeadForm from '../../components/forms/LeadForm.astro';
+import PersonProfile from '../../components/proof/PersonProfile.astro';
 import { ORG } from '../../data/organization/ada-tours';
+
+const people = await getCollection('people', ({ data }) => data.id === 'person_anna' && data.locale === 'ru');
+const anna = people[0];
+const AnnaContent = anna ? (await render(anna)).Content : null;
 ---
 
 <BaseLayout
-  title="О компании Ada Tours — DMC в Бразилии и Латинской Америке"
+  title="О компании Ada Tours - DMC в Бразилии и Латинской Америке"
   description="Ada Tours работает с индивидуальными путешествиями, VIP, MICE, группами и B2B-партнерами в Бразилии и странах Латинской Америки."
 >
   <Hero
@@ -41,7 +47,7 @@ import { ORG } from '../../data/organization/ada-tours';
     image="/media/prototype/lencois.jpg"
     facts={[
       'B2B для туроператоров и турагентств',
-      'VIP и индивидуальные premium-маршруты',
+      'VIP и индивидуальные премиальные маршруты',
       'MICE, incentive и корпоративные группы',
       'Multi-country программы по Латинской Америке',
     ]}
@@ -49,7 +55,7 @@ import { ORG } from '../../data/organization/ada-tours';
 
   <EditorialProof
     eyebrow="MICE"
-    title="Бразилия — приоритет №1 для деловых и корпоративных поездок"
+    title="Бразилия - приоритет №1 для деловых и корпоративных поездок"
     text="Далее по приоритету идут Аргентина, Перу и Коста-Рика. Для MICE важны не только программа и площадки, но и транспорт, размещение, переводчики, встречи и изменения по ходу поездки."
     image="/media/prototype/rio-night.jpg"
     facts={ORG.business.micePriorityCountries.map((country, index) => `${index + 1}. ${country}`)}
@@ -60,6 +66,19 @@ import { ORG } from '../../data/organization/ada-tours';
     eyebrow="Языки"
     text={`Ada Tours может обрабатывать заявки на ${ORG.service.languages.join(', ').toLowerCase()} языках.`}
   />
+
+  {anna && AnnaContent && (
+    <PersonProfile
+      name={anna.data.name}
+      role={anna.data.role}
+      photo={anna.data.photo}
+      expertise={anna.data.expertise}
+      href={`/team/${anna.data.slug}/`}
+      eyebrow="Основатель"
+    >
+      <AnnaContent />
+    </PersonProfile>
+  )}
 
   <LeadForm title="Обсудить поездку или партнерство" entityId="about" />
 </BaseLayout>

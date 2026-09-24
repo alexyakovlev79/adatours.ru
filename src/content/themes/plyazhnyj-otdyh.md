@@ -3,7 +3,7 @@ id: theme_beach
 locale: ru
 name: Пляжный отдых
 slug: plyazhnyj-otdyh
-status: review
+status: approved
 summary: >-
   Побережье Бразилии и Карибского бассейна можно использовать как самостоятельный отдых или как спокойное продолжение насыщенного экскурсионного маршрута.
 hero:

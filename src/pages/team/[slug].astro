@@ -40,7 +40,7 @@ const personSchema = {
 ---
 
 <BaseLayout
-  title={`${entry.data.name} — ${entry.data.role}`}
+  title={`${entry.data.name} - ${entry.data.role}`}
   description={`${entry.data.name}, ${entry.data.role}. Экспертиза: ${entry.data.expertise.join(', ')}.`}
 >
   <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />

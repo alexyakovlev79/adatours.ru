@@ -77,7 +77,9 @@ const editorialHighlights = d.highlights.filter((_, index) => {
   )}
 
   <TourPricing price={money} note={d.priceNote} />
-  {(d.included.length > 0 || d.notIncluded.length > 0) && (\n    <IncludedExcluded included={d.included} notIncluded={d.notIncluded} />\n  )}
+  {(d.included.length > 0 || d.notIncluded.length > 0) && (
+    <IncludedExcluded included={d.included} notIncluded={d.notIncluded} />
+  )}
   <LeadForm title="Получить расчет и адаптировать маршрут под ваши даты" entityId={d.id} />
 </BaseLayout>
 

@@ -1,0 +1,44 @@
+---
+id: destination_brazil_natal
+locale: ru
+name: Натал
+slug: natal
+status: approved
+countryId: country_brazil
+destinationType: city
+summary: >-
+  Натал, столица штата Риу-Гранди-ду-Норти, стоит на северо-восточном побережье Бразилии. Дюны, рифы, пляжи и водные активности делают город удобной отправной точкой для отдыха у океана и поездки в Прайя-де-Пипа.
+hero:
+  src: https://brasiltours.ru/image/countries/brazil/new-pics/natal.jpg
+  alt: Натал на северо-восточном побережье Бразилии
+gallery: []
+themes:
+  - beach
+  - adventure
+  - diving
+relatedDestinations:
+  - destination_brazil_praia_de_pipa
+  - destination_brazil_recife
+featuredTours:
+  - tour_brazil_dunes_13d
+featuredExcursions: []
+facts:
+  - value: Риу-Гранди-ду-Норти
+    label: столица штата
+  - value: "1599"
+    label: год основания по исходному материалу Ada Tours
+  - value: Дюны
+    label: один из главных природных сюжетов региона
+  - value: Атлантика
+    label: пляжи, рифы и морские активности
+featureBands: []
+sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya
+sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya__f8409995.md
+updatedAt: 2026-09-25
+---
+
+Натал находится на северо-востоке Бразилии и является столицей штата Риу-Гранди-ду-Норти. В исходном материале Ada Tours город описан через сочетание океанского побережья, песчаных дюн, рифов и озер.
+
+Активную часть программы можно строить вокруг поездок по дюнам, морских прогулок, серфинга, дайвинга и снорклинга. Городская часть добавляет архитектуру и кухню региона, а побережье задает основной ритм поездки.
+
+Натал особенно удобен как транспортная точка для продолжения маршрута в Прайя-де-Пипа. Поэтому в длинной программе по Бразилии их логично рассматривать как один северо-восточный блок.

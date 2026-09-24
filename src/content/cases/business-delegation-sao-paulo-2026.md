@@ -3,7 +3,7 @@ id: case_mice_business_delegation_sao_paulo_2026
 locale: ru
 title: Деловая делегация в Сан-Паулу и Кампинасе
 slug: delovaya-delegaciya-san-paulu-kampinas-2026
-status: review
+status: approved
 segment: MICE / деловые делегации
 countries:
   - country_brazil

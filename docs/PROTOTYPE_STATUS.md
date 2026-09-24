@@ -108,7 +108,20 @@ The latest production deploy before the reviews implementation was run #115 for 
 
 ## Current phase
 
-Finish QA of the Wave 2 reviews page and then move to Wave 3 scale-out.
+Wave 3 scale-out is in progress.
+
+Approved Wave 3 Brazil destinations now in production content:
+
+- Bonito;
+- Buzios;
+- Paraty;
+- Salvador;
+- Sao Paulo;
+- Angra dos Reis;
+- Ilha Grande;
+- Lencois Maranhenses.
+
+The second Wave 3 destination batch is synchronized with Google Drive and needs the normal final deploy/regression check before the next content package.
 
 Wave 3 order remains value-first, not alphabetical:
 

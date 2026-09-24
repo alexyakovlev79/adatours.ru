@@ -38,6 +38,7 @@ const fullTitle = title.includes('Ada Tours') ? title : `${title} | Ada Tours`;
 const isPreview = import.meta.env.BASE_URL !== '/';
 const faviconUrl = withBase('/favicon.png');
 const appleTouchIconUrl = withBase('/apple-touch-icon.png');
+const ogImageUrl = image ? new URL(withBase(image), Astro.site ?? SITE.url).toString() : undefined;
 
 const base = import.meta.env.BASE_URL || '/';
 const normalizedBase = base.endsWith('/') ? base : `${base}/`;
@@ -172,7 +173,7 @@ const graph = [
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
-    {image && <meta property="og:image" content={new URL(image, Astro.site ?? SITE.url).toString()} />}
+    {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
     <meta name="theme-color" content="#131412" />
     <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
   </head>

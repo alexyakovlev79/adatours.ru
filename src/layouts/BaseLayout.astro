@@ -4,6 +4,7 @@ import '../styles/typography.css';
 import '../styles/global.css';
 import SiteHeader from '../components/global/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
+import Breadcrumbs from '../components/global/Breadcrumbs.astro';
 import { SITE } from '../lib/site';
 import { withBase } from '../lib/paths';
 import { ORG } from '../data/organization/ada-tours';
@@ -16,6 +17,8 @@ interface Props {
   lang?: string;
   headerTheme?: 'light' | 'dark';
   noindex?: boolean;
+  showBreadcrumbs?: boolean;
+  pageSchema?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
 const {
@@ -26,6 +29,8 @@ const {
   lang = SITE.locale,
   headerTheme = 'light',
   noindex = false,
+  showBreadcrumbs = true,
+  pageSchema,
 } = Astro.props;
 
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site ?? SITE.url).toString();
@@ -34,14 +39,66 @@ const isPreview = import.meta.env.BASE_URL !== '/';
 const faviconUrl = withBase('/favicon.png');
 const appleTouchIconUrl = withBase('/apple-touch-icon.png');
 
+const base = import.meta.env.BASE_URL || '/';
+const normalizedBase = base.endsWith('/') ? base : `${base}/`;
+let logicalPath = Astro.url.pathname;
+if (normalizedBase !== '/' && logicalPath.startsWith(normalizedBase)) {
+  logicalPath = `/${logicalPath.slice(normalizedBase.length)}`;
+}
+if (!logicalPath.startsWith('/')) logicalPath = `/${logicalPath}`;
+
+const segments = logicalPath.split('/').filter(Boolean);
+const breadcrumbLabels: Record<string, string> = {
+  strany: 'Страны',
+  tury: 'Туры',
+  napravleniya: 'Направления',
+  'po-interesam': 'По интересам',
+  dmc: 'Для агентств',
+  'dlya-turagentstv': 'Для турагентств',
+  'usloviya-raboty': 'Условия работы',
+  mice: 'MICE',
+  'delovye-delegacii': 'Деловые делегации',
+  vip: 'VIP',
+  'multi-country': 'Multi-country',
+  about: 'О нас',
+  team: 'Команда',
+  contacts: 'Контакты',
+  cases: 'Кейсы',
+  reviews: 'Отзывы',
+  articles: 'Статьи',
+  braziliya: 'Бразилия',
+  argentina: 'Аргентина',
+  peru: 'Перу',
+  'rio-de-zhanejro': 'Рио-де-Жанейро',
+  'foz-do-iguasu': 'Игуасу',
+  'manaus-amazonia': 'Амазония',
+  pantanal: 'Пантанал',
+  'buenos-ajres': 'Буэнос-Айрес',
+  'el-kalafate': 'Эль-Калафате',
+  mendosa: 'Мендоса',
+  kusko: 'Куско',
+  'machu-pikchu': 'Мачу-Пикчу',
+  lima: 'Лима',
+};
+
+const pageTitle = title.replace(/\s*[|–—-]\s*Ada Tours.*$/i, '').trim();
+const breadcrumbItems = [
+  { name: 'Главная', url: new URL('/', SITE.url).toString() },
+  ...segments.map((segment, index) => ({
+    name: breadcrumbLabels[segment] ?? (index === segments.length - 1 ? pageTitle : segment.replace(/-/g, ' ')),
+    url: new URL(`/${segments.slice(0, index + 1).join('/')}/`, SITE.url).toString(),
+  })),
+];
+
 const organizationSchema = {
-  '@context': 'https://schema.org',
   '@type': ['Organization', 'TravelAgency'],
+  '@id': `${SITE.url}/#organization`,
   name: ORG.brand,
   legalName: ORG.legal.name,
   url: SITE.url,
   email: ORG.contacts.email,
   telephone: ORG.contacts.phoneDisplay,
+  sameAs: Object.values(ORG.externalProfiles),
   identifier: {
     '@type': 'PropertyValue',
     propertyID: 'CNPJ',
@@ -56,6 +113,46 @@ const organizationSchema = {
     addressCountry: ORG.legal.addressCountry,
   },
 };
+
+const webSiteSchema = {
+  '@type': 'WebSite',
+  '@id': `${SITE.url}/#website`,
+  url: SITE.url,
+  name: SITE.name,
+  inLanguage: lang,
+  publisher: { '@id': `${SITE.url}/#organization` },
+};
+
+const webPageSchema = {
+  '@type': 'WebPage',
+  '@id': `${canonicalUrl}#webpage`,
+  url: canonicalUrl,
+  name: fullTitle,
+  description,
+  inLanguage: lang,
+  isPartOf: { '@id': `${SITE.url}/#website` },
+  about: { '@id': `${SITE.url}/#organization` },
+};
+
+const breadcrumbSchema = segments.length > 0 ? {
+  '@type': 'BreadcrumbList',
+  '@id': `${canonicalUrl}#breadcrumb`,
+  itemListElement: breadcrumbItems.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.name,
+    item: item.url,
+  })),
+} : null;
+
+const extraSchemas = !pageSchema ? [] : (Array.isArray(pageSchema) ? pageSchema : [pageSchema]);
+const graph = [
+  organizationSchema,
+  webSiteSchema,
+  webPageSchema,
+  ...(breadcrumbSchema ? [breadcrumbSchema] : []),
+  ...extraSchemas,
+];
 ---
 
 <!doctype html>
@@ -77,10 +174,13 @@ const organizationSchema = {
     <meta property="og:url" content={canonicalUrl} />
     {image && <meta property="og:image" content={new URL(image, Astro.site ?? SITE.url).toString()} />}
     <meta name="theme-color" content="#131412" />
-    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
   </head>
   <body>
     <SiteHeader theme={headerTheme} />
+    {showBreadcrumbs && !noindex && segments.length > 0 && (
+      <Breadcrumbs pathname={Astro.url.pathname} title={title} theme={headerTheme} />
+    )}
     <main>
       <slot />
     </main>

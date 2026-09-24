@@ -25,7 +25,8 @@ export const ORG = {
     phoneHref: 'tel:+552134356408',
     whatsappDisplay: '+55 21 98848-4456',
     whatsappHref: 'https://wa.me/5521988484456',
-    telegramHref: null as string | null,
+    telegramDisplay: '+55 21 98848-4456',
+    telegramHref: 'https://t.me/+5521988484456',
     address: 'Avenida Nossa Senhora de Copacabana, 680, Sala 916, Copacabana, Rio de Janeiro, RJ, 22050-001, Brasil',
   },
 
@@ -77,6 +78,7 @@ export const ORG = {
   phoneHref: 'tel:+552134356408',
   whatsappDisplay: '+55 21 98848-4456',
   whatsappHref: 'https://wa.me/5521988484456',
+  telegramDisplay: '+55 21 98848-4456',
+  telegramHref: 'https://t.me/+5521988484456',
   address: 'Avenida Nossa Senhora de Copacabana, 680, Sala 916, Copacabana, Rio de Janeiro, RJ, 22050-001, Brasil',
-  telegramHref: null as string | null,
 } as const;

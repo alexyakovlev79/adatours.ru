@@ -1,6 +1,19 @@
 export const ORG = {
   brand: 'Ada Tours',
 
+  legal: {
+    name: 'Ada Tours 2007 - Operadora de Turismo LTDA',
+    cnpj: '08.537.782/0001-04',
+    registeredAt: '2006-12-11',
+    status: 'active',
+    address: 'Avenida Nossa Senhora de Copacabana, 680, Sala 916, Copacabana, Rio de Janeiro, RJ, 22050-001, Brasil',
+  },
+
+  history: {
+    toursSinceYear: 2005,
+    toursSinceLabel: 'создаем поездки с 2005 года',
+  },
+
   contacts: {
     email: 'info@adatours.com',
     phoneDisplay: '+55 21 3435-6408',
@@ -8,7 +21,7 @@ export const ORG = {
     whatsappDisplay: '+55 21 98848-4456',
     whatsappHref: 'https://wa.me/5521988484456',
     telegramHref: null as string | null,
-    address: 'Nsa Sra de Copacabana 680/916, Copacabana, Rio de Janeiro, Brazil',
+    address: 'Avenida Nossa Senhora de Copacabana, 680, Sala 916, Copacabana, Rio de Janeiro, RJ, 22050-001, Brasil',
   },
 
   business: {
@@ -59,6 +72,6 @@ export const ORG = {
   phoneHref: 'tel:+552134356408',
   whatsappDisplay: '+55 21 98848-4456',
   whatsappHref: 'https://wa.me/5521988484456',
-  address: 'Nsa Sra de Copacabana 680/916, Copacabana, Rio de Janeiro, Brazil',
+  address: 'Avenida Nossa Senhora de Copacabana, 680, Sala 916, Copacabana, Rio de Janeiro, RJ, 22050-001, Brasil',
   telegramHref: null as string | null,
 } as const;

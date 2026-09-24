@@ -35,9 +35,18 @@ export const ORG = {
       'Испанский',
     ],
     groups: {
-      standard: 'обычно 40–50 человек',
-      largeEvents: '200–500 человек',
-      miceVip: 'от небольших VIP-групп до примерно 50 человек',
+      standard: {
+        display: '40–50',
+        label: 'обычный размер группы',
+      },
+      largeEvents: {
+        display: '200–500',
+        label: 'участников крупных событий',
+      },
+      miceVip: {
+        display: 'до 50',
+        label: 'участников в MICE/VIP-группах',
+      },
     },
   },
 

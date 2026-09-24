@@ -17,8 +17,7 @@ expertise:
   - MICE
   - Multi-country маршруты
 externalProfiles:
-  - https://adatours.com/about-us
-  - https://adatours.com/choose-brazil-dmc-complex-agency-trips
+  - https://www.xing.com/profile/Anna_Avanesova2
 sourceUrl: https://adatours.com/about-us
 updatedAt: 2026-09-24
 ---

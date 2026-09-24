@@ -36,8 +36,8 @@ const { price = 'По запросу', note } = Astro.props;
 
   .pricing h2 {
     margin: 12px 0 0;
-    font-size: var(--text-display);
-    line-height: .88;
+    font-size: clamp(3rem, 2rem + 3.2vw, 5.5rem);
+    line-height: .92;
   }
 
   .pricing__copy {

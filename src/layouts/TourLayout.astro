@@ -22,13 +22,22 @@ const stats = [
   { value: String(d.destinations.length || d.route.length), label: 'точки маршрута' },
   { value: d.format ?? 'Private', label: 'формат' },
 ].filter(Boolean);
+
+const firstStory = d.gallery[0] && d.highlights[0]
+  ? { item: d.highlights[0], image: d.gallery[0] }
+  : null;
+const lastStory = d.gallery[1] && d.highlights.length > 1
+  ? { item: d.highlights[d.highlights.length - 1], image: d.gallery[1] }
+  : null;
+
+const editorialHighlights = d.highlights.filter((_, index) => {
+  if (firstStory && index === 0) return false;
+  if (lastStory && index === d.highlights.length - 1) return false;
+  return true;
+});
 ---
 
-<BaseLayout
-  title={d.title}
-  description={d.lead}
-  image={d.hero?.src}
->
+<BaseLayout title={d.title} description={d.lead} image={d.hero?.src}>
   <Hero
     eyebrow="Индивидуальный тур"
     title={d.title}
@@ -39,31 +48,30 @@ const stats = [
   />
 
   <TripStats stats={stats} />
+  <EditorialStatement eyebrow="Почему этот маршрут" text={d.lead} />
 
-  <EditorialStatement
-    eyebrow="Почему этот маршрут"
-    text={d.lead}
-  />
+  <section class="tour-copy section--tight">
+    <div class="container prose"><slot /></div>
+  </section>
 
-  {d.gallery[0] && (
+  {firstStory && (
     <StoryPair
-      eyebrow="Бразилия"
-      title="Город, водопады и Атлантика в одном путешествии"
-      text="Маршрут собран так, чтобы после насыщенного Рио увидеть Игуасу с 2 сторон, а финальные дни оставить для спокойного побережья."
-      image={d.gallery[0].src}
+      eyebrow="Акцент маршрута"
+      title={firstStory.item.title}
+      text={firstStory.item.text}
+      image={firstStory.image.src}
     />
   )}
 
-  <HighlightsEditorial items={d.highlights} />
-
+  {editorialHighlights.length > 0 && <HighlightsEditorial items={editorialHighlights} />}
   <Itinerary days={d.itinerary} />
 
-  {d.gallery[1] && (
+  {lastStory && (
     <StoryPair
-      eyebrow="Финал маршрута"
-      title="После большого путешествия темп становится тише"
-      text="Пляжная часть нужна не как формальный довесок. Она дает несколько свободных дней после города и водопадов, без ежедневной гонки по экскурсиям."
-      image={d.gallery[1].src}
+      eyebrow="Еще один акцент"
+      title={lastStory.item.title}
+      text={lastStory.item.text}
+      image={lastStory.image.src}
       reverse
     />
   )}
@@ -72,3 +80,7 @@ const stats = [
   <IncludedExcluded included={d.included} notIncluded={d.notIncluded} />
   <LeadForm title="Получить расчет и адаптировать маршрут под ваши даты" entityId={d.id} />
 </BaseLayout>
+
+<style>
+  .tour-copy { background: var(--color-bg); }
+</style>

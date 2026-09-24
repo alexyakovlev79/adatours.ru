@@ -6,6 +6,7 @@ import SiteHeader from '../components/global/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
 import { SITE } from '../lib/site';
 import { withBase } from '../lib/paths';
+import { ORG } from '../data/organization/ada-tours';
 
 interface Props {
   title?: string;
@@ -32,6 +33,29 @@ const fullTitle = title.includes('Ada Tours') ? title : `${title} | Ada Tours`;
 const isPreview = import.meta.env.BASE_URL !== '/';
 const faviconUrl = withBase('/favicon.png');
 const appleTouchIconUrl = withBase('/apple-touch-icon.png');
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['Organization', 'TravelAgency'],
+  name: ORG.brand,
+  legalName: ORG.legal.name,
+  url: SITE.url,
+  email: ORG.contacts.email,
+  telephone: ORG.contacts.phoneDisplay,
+  identifier: {
+    '@type': 'PropertyValue',
+    propertyID: 'CNPJ',
+    value: ORG.legal.cnpj,
+  },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: ORG.legal.streetAddress,
+    addressLocality: ORG.legal.addressLocality,
+    addressRegion: ORG.legal.addressRegion,
+    postalCode: ORG.legal.postalCode,
+    addressCountry: ORG.legal.addressCountry,
+  },
+};
 ---
 
 <!doctype html>
@@ -53,6 +77,7 @@ const appleTouchIconUrl = withBase('/apple-touch-icon.png');
     <meta property="og:url" content={canonicalUrl} />
     {image && <meta property="og:image" content={new URL(image, Astro.site ?? SITE.url).toString()} />}
     <meta name="theme-color" content="#131412" />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
   </head>
   <body>
     <SiteHeader theme={headerTheme} />

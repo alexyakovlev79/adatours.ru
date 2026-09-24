@@ -5,6 +5,7 @@ import '../styles/global.css';
 import SiteHeader from '../components/global/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
 import { SITE } from '../lib/site';
+import { withBase } from '../lib/paths';
 
 interface Props {
   title?: string;
@@ -29,6 +30,8 @@ const {
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site ?? SITE.url).toString();
 const fullTitle = title.includes('Ada Tours') ? title : `${title} | Ada Tours`;
 const isPreview = import.meta.env.BASE_URL !== '/';
+const faviconUrl = withBase('/favicon.png');
+const appleTouchIconUrl = withBase('/apple-touch-icon.png');
 ---
 
 <!doctype html>
@@ -40,6 +43,8 @@ const isPreview = import.meta.env.BASE_URL !== '/';
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/png" sizes="120x120" href={faviconUrl} />
+    <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIconUrl} />
     {(isPreview || noindex) && <meta name="robots" content="noindex,nofollow,noarchive" />}
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.name} />

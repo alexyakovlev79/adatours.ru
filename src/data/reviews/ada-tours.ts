@@ -49,7 +49,7 @@ export const ADA_REVIEWS: AdaReview[] = [
     sourceLanguage: 'en',
     translated: true,
     permission: 'approved_full_publication',
-    text: 'Клиенты вернулись и остались очень довольны услугами Ada Tours в Рио. Гид и водитель были превосходны и очень хорошо знали город.',
+    text: 'Клиенты вернулись и остались очень довольны услугами Ada Tours в Рио. Гид и водитель были превосходны и дали очень много полезной информации.',
   },
   {
     id: 'review_marina_ryzhuk_10',

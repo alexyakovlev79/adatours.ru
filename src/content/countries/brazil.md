@@ -32,7 +32,7 @@ featuredTours:
 featureBands:
   - eyebrow: Город
     title: Рио-де-Жанейро
-    text: Рио часто становится началом большого маршрута: океан, Корковаду, Сахарная голова и разные районы города.
+    text: "Рио часто становится началом большого маршрута: океан, Корковаду, Сахарная голова и разные районы города."
     image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
     href: /napravleniya/braziliya/rio-de-zhanejro/
   - eyebrow: Природа

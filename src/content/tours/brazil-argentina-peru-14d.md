@@ -3,7 +3,7 @@ id: tour_brazil_argentina_peru_14d
 locale: ru
 title: Бразилия, Аргентина и Перу за 14 дней
 slug: braziliya-argentina-peru-14-dnej
-status: review
+status: approved
 countries:
   - country_brazil
   - country_argentina
@@ -33,7 +33,9 @@ route:
   - Лима
   - Куско
   - Пуно
-priceNote: Финальная стоимость рассчитывается под даты, отели, перелеты и состав услуг. Цена старого сайта в новую версию автоматически не переносится.
+priceFrom: 5716
+currency: USD
+priceNote: В исходной программе, зафиксированной 23.09.2026, указана стоимость от $5716. Финальный расчет зависит от дат, отелей, перелетов и состава услуг.
 dates: []
 hero:
   src: https://brasiltours.ru/image/cache/countries/argentina/new-photos/kulli-kittus-icwoh2prgu4-unsplash-1920x1080.webp
@@ -120,9 +122,10 @@ notes:
 faq:
   - question: Можно ли убрать одну из стран?
     answer: Да. Маршрут можно сократить до 2 стран или перестроить под другую комбинацию.
-  - question: Можно ли добавить Патагонию?
-    answer: Да, но для Патагонии нужен дополнительный запас дней и отдельная логистика перелетов.
+  - question: Можно ли сделать только Бразилию и Аргентину?
+    answer: Да. Исходная страница прямо предусматривает сокращение маршрута до Бразилии и Аргентины.
 sourceUrl: https://brasiltours.ru/3-strany-latinskoj-ameriki
+sourceSnapshot: page_texts_original/3-strany-latinskoj-ameriki__7610ce8f.md
 updatedAt: 2026-09-24
 ---
 

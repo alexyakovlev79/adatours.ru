@@ -1,0 +1,60 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Hero from '../components/editorial/Hero.astro';
+import EditorialStatement from '../components/editorial/EditorialStatement.astro';
+import DestinationBand from '../components/editorial/DestinationBand.astro';
+import LeadForm from '../components/forms/LeadForm.astro';
+
+const { entry } = Astro.props;
+const d = entry.data;
+
+const countries = await getCollection('countries', ({ data }) =>
+  data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+);
+
+const featuredCountries = d.featuredCountries
+  .map((id) => countries.find((country) => country.data.id === id))
+  .filter(Boolean);
+---
+
+<BaseLayout
+  title={`${d.name} по Бразилии и Латинской Америке`}
+  description={d.summary}
+  image={d.hero?.src}
+>
+  <Hero
+    eyebrow="По интересам"
+    title={d.name}
+    intro={d.summary}
+    image={d.hero?.src}
+    ctaLabel="Собрать маршрут"
+  />
+
+  <EditorialStatement eyebrow="Формат поездки" text={d.summary} />
+
+  <section class="theme-copy section--tight">
+    <div class="container prose">
+      <slot />
+    </div>
+  </section>
+
+  {featuredCountries.map((country, index) => country && (
+    <DestinationBand
+      eyebrow="Страна"
+      title={country.data.name}
+      text={country.data.summary}
+      image={country.data.hero?.src}
+      href={`/strany/${country.data.slug}/`}
+      align={index % 2 === 1 ? 'right' : 'left'}
+    />
+  ))}
+
+  <LeadForm title={`Собрать поездку: ${d.name}`} entityId={d.id} />
+</BaseLayout>
+
+<style>
+  .theme-copy {
+    background: var(--color-bg);
+  }
+</style>

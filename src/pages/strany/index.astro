@@ -1,13 +1,42 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
+import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
+
+const countries = (await getCollection('countries', ({ data }) =>
+  data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+)).sort((a, b) => {
+  const order = ['country_brazil', 'country_argentina', 'country_peru'];
+  return order.indexOf(a.data.id) - order.indexOf(b.data.id);
+});
 ---
 
-<BaseLayout title="Страны Латинской Америки">
+<BaseLayout
+  title="Страны Латинской Америки с Ada Tours"
+  description="Бразилия, Аргентина, Перу и другие направления Латинской Америки. Страны, города, маршруты и тематические поездки с локальной координацией Ada Tours."
+>
   <Hero
     eyebrow="Страны"
-    title="24 направления, одна система"
-    intro="Этот раздел будет собран как editorial-каталог, а не сетка одинаковых карточек."
-    compact
+    title="Латинская Америка без каталожного ритма"
+    intro="Каждая страна требует своего темпа. На первом уровне мы показываем направления, вокруг которых уже строится основная архитектура нового сайта."
+    image="/media/prototype/patagonia.jpg"
   />
+
+  <EditorialStatement
+    eyebrow="Первая очередь"
+    text="Бразилия, Аргентина и Перу входят в основной маршрутный каркас Ada Tours. Остальные страны будут подключаться после приемки этих страниц и связанных шаблонов."
+  />
+
+  {countries.map((country, index) => (
+    <DestinationBand
+      eyebrow="Страна"
+      title={country.data.name}
+      text={country.data.summary}
+      image={country.data.hero?.src}
+      href={`/strany/${country.data.slug}/`}
+      align={index % 2 === 1 ? 'right' : 'left'}
+    />
+  ))}
 </BaseLayout>

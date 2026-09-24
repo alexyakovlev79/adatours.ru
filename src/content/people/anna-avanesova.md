@@ -1,0 +1,30 @@
+---
+id: person_anna
+locale: ru
+name: Анна Аванесова
+slug: anna-avanesova
+status: review
+role: Founder & CEO, Ada Tours
+photo:
+  src: https://adatours.com/assets/fastweb/img/team-anna.webp
+  alt: Анна Аванесова, основатель и CEO Ada Tours
+languages: []
+expertise:
+  - Бразилия
+  - Латинская Америка
+  - Индивидуальные путешествия
+  - VIP / Luxury
+  - MICE
+  - Multi-country маршруты
+externalProfiles:
+  - https://adatours.com/about-us
+  - https://adatours.com/choose-brazil-dmc-complex-agency-trips
+sourceUrl: https://adatours.com/about-us
+updatedAt: 2026-09-24
+---
+
+Анна Аванесова основала Ada Tours и руководит компанией. До создания компании она много путешествовала по Латинской Америке самостоятельно, в том числе по сложным наземным маршрутам, и этот опыт стал основой подхода Ada Tours к индивидуальным программам.
+
+В работе Анна занимается сложными маршрутами по Бразилии и Латинской Америке, VIP-поездками, программами для групп и MICE, а также сотрудничеством с зарубежными турагентствами и туроператорами.
+
+На официальном сайте Ada Tours Анна описывает подход компании через личное знакомство с регионом, свободу маршрута и индивидуальную настройку поездки под конкретного путешественника. В 2026 году она также публикует экспертные материалы Ada Tours как Founder and CEO.

@@ -59,5 +59,58 @@ import LeadForm from '../../components/forms/LeadForm.astro';
     dark
   />
 
+  <section class="dmc-paths section--tight">
+    <div class="container dmc-paths__grid">
+      <div>
+        <p class="eyebrow">B2B</p>
+        <h2>Продолжить по задаче</h2>
+      </div>
+      <nav aria-label="Разделы DMC">
+        <a href="/dmc/dlya-turagentstv/">Для турагентств и туроператоров <span aria-hidden="true">↗</span></a>
+        <a href="/dmc/usloviya-raboty/">Условия работы <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </section>
+
   <LeadForm title="Запросить B2B-предложение" entityId="dmc" />
 </BaseLayout>
+
+
+<style>
+  .dmc-paths {
+    border-top: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .dmc-paths__grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: clamp(40px, 8vw, 120px);
+    align-items: start;
+  }
+
+  .dmc-paths h2 {
+    margin: 12px 0 0;
+  }
+
+  .dmc-paths nav {
+    display: grid;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .dmc-paths nav a {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--color-line);
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+  }
+
+  @media (max-width: 760px) {
+    .dmc-paths__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

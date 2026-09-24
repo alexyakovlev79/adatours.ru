@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Hero from '../../../components/editorial/Hero.astro';
+import EditorialStatement from '../../../components/editorial/EditorialStatement.astro';
+import FactStrip from '../../../components/proof/FactStrip.astro';
+import EditorialProof from '../../../components/proof/EditorialProof.astro';
+import ProcessSteps from '../../../components/proof/ProcessSteps.astro';
+import LeadForm from '../../../components/forms/LeadForm.astro';
+import { ORG } from '../../../data/organization/ada-tours';
+---
+
+<BaseLayout
+  title="DMC для турагентств по Бразилии и Латинской Америке"
+  description="Ada Tours как принимающий партнер для турагентств и туроператоров: FIT, группы, VIP, MICE и multi-country маршруты по Бразилии и Латинской Америке."
+>
+  <Hero
+    eyebrow="DMC · Для турагентств"
+    title="Наземная часть поездки у одного принимающего партнера"
+    intro="Ada Tours собирает маршрут, размещение, трансферы, гидов и локальную координацию для турагентств и туроператоров."
+    image="/media/prototype/rio-panorama.jpg"
+    ctaLabel="Запросить предложение"
+  />
+
+  <EditorialStatement
+    eyebrow="B2B"
+    text="Партнер передает задачу и требования клиента. На месте Ada Tours связывает маршрут, подрядчиков и изменения в одну программу."
+  />
+
+  <FactStrip
+    facts={[
+      { value: 'FIT', label: 'индивидуальные путешествия' },
+      { value: 'Groups', label: ORG.service.groups.standard.label },
+      { value: 'MICE', label: 'деловые и корпоративные поездки' },
+      { value: 'VIP', label: 'частные сложные маршруты' },
+    ]}
+  />
+
+  <EditorialProof
+    eyebrow="Кому подходит"
+    title="Туроператоры, luxury travel advisors и MICE-агентства"
+    text="Формат рассчитан на партнеров, которым нужен локальный DMC по Бразилии или связанный маршрут по нескольким странам Латинской Америки."
+    image="/media/prototype/lencois.jpg"
+    facts={ORG.business.b2bPartnerTypes}
+  />
+
+  <EditorialProof
+    eyebrow="Что прислать"
+    title="Для первого расчета достаточно рабочего брифа"
+    text="Чем точнее исходные ограничения, тем быстрее можно собрать маршрут без лишних вариантов, которые заведомо не подходят клиенту."
+    image="/media/prototype/buenos-aires.jpg"
+    facts={[
+      'Даты или диапазон дат',
+      'Количество путешественников',
+      'Страны, города и обязательные точки',
+      'Уровень размещения, бюджет и специальные требования',
+    ]}
+    reverse
+  />
+
+  <ProcessSteps
+    eyebrow="Рабочий процесс"
+    title="От запроса партнера до программы на месте"
+    steps={[
+      { title: 'Бриф', text: 'Фиксируем даты, географию, состав группы и обязательные условия.' },
+      { title: 'Маршрут', text: 'Связываем города, перелеты, трансферы, размещение и программу.' },
+      { title: 'Предложение', text: 'Собираем расчет после проверки доступности и состава услуг.' },
+      { title: 'Координация', text: 'Во время поездки локальная команда ведет подрядчиков и изменения по маршруту.' },
+    ]}
+    dark
+  />
+
+  <LeadForm title="Запросить предложение для клиента" entityId="dmc_for_agencies" />
+</BaseLayout>

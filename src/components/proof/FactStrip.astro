@@ -1,10 +1,10 @@
 ---
 interface Fact { value: string; label: string; }
-interface Props { facts: Fact[]; dark?: boolean; }
-const { facts, dark = false } = Astro.props;
+interface Props { facts: Fact[]; dark?: boolean; wideFirst?: boolean; }
+const { facts, dark = false, wideFirst = false } = Astro.props;
 ---
 
-<section class:list={['fact-strip', { 'fact-strip--dark': dark }]}>
+<section class:list={['fact-strip', { 'fact-strip--dark': dark, 'fact-strip--wide-first': wideFirst }]}>
   <div class="fact-strip__inner">
     {facts.map((fact) => (
       <div class:list={['fact', { 'fact--long': fact.value.length > 9 }]}>
@@ -32,6 +32,10 @@ const { facts, dark = false } = Astro.props;
     margin-inline: auto;
   }
 
+  .fact-strip--wide-first .fact-strip__inner {
+    grid-template-columns: minmax(245px, 1.18fr) repeat(3, minmax(170px, 1fr));
+  }
+
   .fact {
     min-width: 0;
     min-height: 180px;
@@ -54,8 +58,9 @@ const { facts, dark = false } = Astro.props;
     font-weight: 500;
     line-height: .95;
     letter-spacing: -.045em;
-    overflow-wrap: anywhere;
-    hyphens: auto;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
   }
 
   .fact--long strong {
@@ -76,8 +81,15 @@ const { facts, dark = false } = Astro.props;
     color: rgba(255,255,255,.56);
   }
 
+  @media (max-width: 900px) and (min-width: 681px) {
+    .fact-strip--wide-first .fact-strip__inner {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+  }
+
   @media (max-width: 680px) {
-    .fact-strip__inner {
+    .fact-strip__inner,
+    .fact-strip--wide-first .fact-strip__inner {
       grid-template-columns: repeat(2, minmax(0,1fr));
     }
 

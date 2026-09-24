@@ -20,6 +20,7 @@ const { stats } = Astro.props;
 
 <style>
   .stats {
+    padding-block: clamp(24px, 2.5vw, 40px);
     background: var(--color-bg);
   }
 
@@ -57,6 +58,10 @@ const { stats } = Astro.props;
   }
 
   @media (max-width: 760px) {
+    .stats {
+      padding-block: 18px;
+    }
+
     .stats__inner {
       grid-template-columns: repeat(2, minmax(0,1fr));
     }

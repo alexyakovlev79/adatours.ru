@@ -119,9 +119,23 @@ Approved Wave 3 Brazil destinations now in production content:
 - Sao Paulo;
 - Angra dos Reis;
 - Ilha Grande;
-- Lencois Maranhenses.
+- Lencois Maranhenses;
+- Sao Luis;
+- Recife;
+- Olinda;
+- Porto de Galinhas;
+- Fernando de Noronha.
 
-The second Wave 3 destination batch is synchronized with Google Drive and needs the normal final deploy/regression check before the next content package.
+Together with the 4 priority Brazil destinations from Wave 2, the repository now contains 17 approved Brazil destination entities.
+
+Approved Wave 3 tours now in production content:
+
+- Sao Paulo + Iguacu + Rio + Ilha Grande + Paraty, 12 days;
+- Brazil adventure, 17 days;
+- Pantanal + Bonito + Lencois Maranhenses, 8 days;
+- Northeast Brazil: Recife + Olinda + Porto de Galinhas + Fernando de Noronha, 10 days.
+
+The latest northeast Brazil batch is synchronized with Google Drive. Final deploy and rendered regression QA remain required for the current HEAD before the next content package.
 
 Wave 3 order remains value-first, not alphabetical:
 

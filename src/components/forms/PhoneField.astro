@@ -4,6 +4,8 @@ import { PHONE_COUNTRIES } from '../../data/phone-countries';
 const DEFAULT_ISO = 'ru';
 const defaultCountry = PHONE_COUNTRIES.find((country) => country.iso2 === DEFAULT_ISO) ?? PHONE_COUNTRIES[0];
 const flagUrl = (iso2: string) => `https://flagcdn.com/24x18/${iso2}.png`;
+const flagEmoji = (iso2: string) =>
+  iso2.toUpperCase().replace(/[A-Z]/g, (char) => String.fromCodePoint(127397 + char.charCodeAt(0)));
 const placeholderFromMask = (country: { mask: string; dial: string }) => {
   const pattern = country.mask.startsWith(country.dial) ? country.mask.slice(country.dial.length) : country.mask;
   return pattern.replace(/9/g, '0').trim();
@@ -19,14 +21,18 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       aria-expanded="false"
       aria-label={`Выбрать страну: ${defaultCountry.name} ${defaultCountry.dial}`}
     >
-      <img
-        class="phone-field__flag"
-        src={flagUrl(defaultCountry.iso2)}
-        alt=""
-        width="24"
-        height="18"
-        data-phone-flag
-      />
+      <span class="phone-field__flag-wrap" aria-hidden="true">
+        <span class="phone-field__flag-fallback" data-phone-flag-fallback>{flagEmoji(defaultCountry.iso2)}</span>
+        <img
+          class="phone-field__flag"
+          src={flagUrl(defaultCountry.iso2)}
+          alt=""
+          width="24"
+          height="18"
+          referrerpolicy="no-referrer"
+          data-phone-flag
+        />
+      </span>
       <span class="phone-field__dial" data-phone-dial>{defaultCountry.dial}</span>
       <span class="phone-field__chevron" aria-hidden="true"></span>
     </button>
@@ -56,14 +62,18 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
           data-dial={country.dial}
           data-mask={country.mask}
         >
-          <img
-            class="phone-field__flag"
-            src={flagUrl(country.iso2)}
-            alt=""
-            loading="lazy"
-            width="24"
-            height="18"
-          />
+          <span class="phone-field__flag-wrap" aria-hidden="true">
+            <span class="phone-field__flag-fallback">{flagEmoji(country.iso2)}</span>
+            <img
+              class="phone-field__flag"
+              src={flagUrl(country.iso2)}
+              alt=""
+              loading="lazy"
+              width="24"
+              height="18"
+              referrerpolicy="no-referrer"
+            />
+          </span>
           <span class="phone-field__country-name">{country.name}</span>
           <span class="phone-field__option-code">{country.dial}</span>
         </button>
@@ -77,6 +87,10 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
 
 <script>
   const flagUrl = (iso2) => `https://flagcdn.com/24x18/${iso2}.png`;
+  const flagEmoji = (iso2) =>
+    String(iso2 || '')
+      .toUpperCase()
+      .replace(/[A-Z]/g, (char) => String.fromCodePoint(127397 + char.charCodeAt(0)));
 
   const maskParts = (mask, dial) => {
     const pattern = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
@@ -118,6 +132,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
   document.querySelectorAll('[data-phone-field]').forEach((field) => {
     const toggle = field.querySelector('.phone-field__country-toggle');
     const flag = field.querySelector('[data-phone-flag]');
+    const flagFallback = field.querySelector('[data-phone-flag-fallback]');
     const dial = field.querySelector('[data-phone-dial]');
     const input = field.querySelector('[data-phone-input]');
     const menu = field.querySelector('[data-phone-menu]');
@@ -126,11 +141,29 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
 
     if (!(toggle instanceof HTMLButtonElement) ||
         !(flag instanceof HTMLImageElement) ||
+        !(flagFallback instanceof HTMLElement) ||
         !(dial instanceof HTMLElement) ||
         !(input instanceof HTMLInputElement) ||
         !(menu instanceof HTMLElement) ||
         !(countryHidden instanceof HTMLInputElement) ||
         !(dialHidden instanceof HTMLInputElement)) return;
+
+    field.querySelectorAll('.phone-field__flag').forEach((image) => {
+      if (!(image instanceof HTMLImageElement)) return;
+
+      const showFallback = () => {
+        image.hidden = true;
+      };
+
+      const showImage = () => {
+        image.hidden = false;
+      };
+
+      image.addEventListener('error', showFallback);
+      image.addEventListener('load', showImage);
+
+      if (image.complete && image.naturalWidth === 0) showFallback();
+    });
 
     const closeMenu = () => {
       menu.classList.remove('is-open');
@@ -141,6 +174,8 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       if (!(option instanceof HTMLButtonElement)) return;
       const { iso2 = 'ru', dial: countryDial = '+7', mask = '+7(999) 999-99-99', name = 'Russia (Россия)' } = option.dataset;
 
+      flagFallback.textContent = flagEmoji(iso2);
+      flag.hidden = false;
       flag.src = flagUrl(iso2);
       dial.textContent = countryDial;
       input.dataset.iso2 = iso2;
@@ -224,13 +259,37 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     cursor: pointer;
   }
 
+  .phone-field__flag-wrap {
+    position: relative;
+    display: grid;
+    width: 24px;
+    height: 18px;
+    flex: 0 0 24px;
+    place-items: center;
+    overflow: hidden;
+  }
+
+  .phone-field__flag-fallback,
+  .phone-field__flag {
+    grid-area: 1 / 1;
+  }
+
+  .phone-field__flag-fallback {
+    font-size: 18px;
+    line-height: 1;
+  }
+
   .phone-field__flag {
     display: block;
     width: 24px;
     height: 18px;
-    flex: 0 0 24px;
     object-fit: cover;
     border: 1px solid rgba(255,255,255,.2);
+    background: #fff;
+  }
+
+  .phone-field__flag[hidden] {
+    display: none;
   }
 
   .phone-field__dial {

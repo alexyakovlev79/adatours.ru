@@ -150,8 +150,27 @@ const crumbs = [
     }
 
     .breadcrumbs ol {
+      flex-wrap: nowrap;
+      overflow: hidden;
       font-size: .61rem;
       letter-spacing: .045em;
+    }
+
+    .breadcrumbs li {
+      flex: 0 0 auto;
+      min-width: 0;
+    }
+
+    .breadcrumbs li:last-child {
+      flex: 1 1 auto;
+      overflow: hidden;
+    }
+
+    .breadcrumbs li:last-child span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .breadcrumbs li + li::before {

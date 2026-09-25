@@ -31,17 +31,7 @@ facts:
     label: пляжи, рифы и прибрежная природа
   - value: Капоэйра
     label: один из культурных сюжетов старого материала
-featureBands:
-  - eyebrow: История
-    title: Старый город Порту-Сегуру
-    text: >-
-      В исходном материале Ada Tours среди основных точек названы церковь Носса-Сеньора-да-Пена, городской музей и объекты, связанные с ранней португальской историей Бразилии.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/porto-seguro-2.jpg
-  - eyebrow: Побережье
-    title: Пляжи, рифы и курортный ритм
-    text: >-
-      За пределами исторического центра поездка переходит к океану: пляжам, кокосовым и мангровым рощам, коралловым рифам и более активной вечерней жизни.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/porto-seguro-2.jpg
+featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-v-portu-seguru-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-plyazhnye-tury-v-portu-seguru-braziliya__ec39380d.md
 updatedAt: 2026-09-25

@@ -119,7 +119,7 @@ After the latest value-first Brazil batches, production content contains:
 - **32 approved Brazil destination entities**;
 - the 4 Wave 2 priority Brazil destinations: Rio de Janeiro, Foz do Iguacu, Manaus / Amazon and Pantanal;
 - 28 additional Brazil destinations added during Wave 3;
-- **7 approved Wave 3 tours** on top of the 3 Wave 2 priority tours.
+- **8 approved Wave 3 tours** on top of the 3 Wave 2 priority tours.
 
 The newest destination package opens a coherent Southern Brazil cluster:
 
@@ -127,7 +127,7 @@ The newest destination package opens a coherent Southern Brazil cluster:
 - Florianopolis;
 - Porto Alegre.
 
-All 3 have standalone source pages, reciprocal destination relations and approved Drive copies synchronized with their production Markdown files.
+All 3 have standalone source pages and reciprocal destination relations. The new Southern Brazil 12-day tour now connects Rio, Iguacu and Florianopolis with the southern route through Porto Alegre, Gramado, Canela and the Cambara do Sul area.
 
 ### Latest Wave 3 Brazil destinations in main
 
@@ -174,7 +174,8 @@ The repository currently contains these approved Brazil destination entities:
 - Northeast Brazil: Recife + Olinda + Porto de Galinhas + Fernando de Noronha, 10 days;
 - Brazil gems: Rio + Ouro Preto + Salvador + Praia do Forte + Iguacu, 14 days;
 - Brazil dunes: Rio + Iguacu + Lencois Maranhenses + Praia de Pipa, 13 days;
-- Argentina + Brazil with Praia de Pipa, 11 days.
+- Argentina + Brazil with Praia de Pipa, 11 days;
+- Southern Brazil: Rio + Iguacu + Gramado + Cambara do Sul + Florianopolis, 12 days.
 
 ### Wave 3 execution order
 

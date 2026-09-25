@@ -20,7 +20,8 @@ relatedDestinations:
   - destination_brazil_curitiba
   - destination_brazil_porto_alegre
   - destination_brazil_sao_paulo
-featuredTours: []
+featuredTours:
+  - tour_brazil_south_12d
 featuredExcursions: []
 facts:
   - value: Санта-Катарина

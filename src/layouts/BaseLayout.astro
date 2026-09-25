@@ -87,7 +87,12 @@ const breadcrumbItems = [
   { name: 'Главная', url: new URL('/', SITE.url).toString() },
   ...segments.map((segment, index) => ({
     name: breadcrumbLabels[segment] ?? (index === segments.length - 1 ? pageTitle : segment.replace(/-/g, ' ')),
-    url: new URL(`/${segments.slice(0, index + 1).join('/')}/`, SITE.url).toString(),
+    url: new URL(
+      segments[0] === 'napravleniya' && index === 1
+        ? `/strany/${segment}/`
+        : `/${segments.slice(0, index + 1).join('/')}/`,
+      SITE.url,
+    ).toString(),
   })),
 ];
 

@@ -68,7 +68,9 @@ const crumbs = [
   { label: 'Главная', href: withBase('/') },
   ...segments.map((segment, index) => ({
     label: labels[segment] ?? (index === segments.length - 1 ? pageTitle : segment.replace(/-/g, ' ')),
-    href: withBase(`/${segments.slice(0, index + 1).join('/')}/`),
+    href: segments[0] === 'napravleniya' && index === 1
+      ? withBase(`/strany/${segment}/`)
+      : withBase(`/${segments.slice(0, index + 1).join('/')}/`),
   })),
 ];
 ---

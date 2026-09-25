@@ -110,12 +110,35 @@ The latest production deploy before the reviews implementation was run #115 for 
 
 Wave 3 scale-out is in progress.
 
-Approved Wave 3 Brazil destinations now in production content:
+The accepted global visual system remains frozen unless regression QA exposes a concrete defect.
 
+### Current production coverage
+
+After the latest value-first Brazil batches, production content contains:
+
+- **29 approved Brazil destination entities**;
+- the 4 Wave 2 priority Brazil destinations: Rio de Janeiro, Foz do Iguacu, Manaus / Amazon and Pantanal;
+- 25 additional Brazil destinations added during Wave 3;
+- **7 approved Wave 3 tours** on top of the 3 Wave 2 priority tours.
+
+The newest destination package expands 2 already established clusters:
+
+- Bahia: Itacare, Morro de Sao Paulo and Porto Seguro;
+- Minas Gerais: Belo Horizonte, linked to the existing Ouro Preto content and the Brazil gems route.
+
+The 4 newest approved Drive copies are synchronized with their production Markdown files.
+
+### Latest Wave 3 Brazil destinations in main
+
+The repository currently contains these approved Brazil destination entities:
+
+- Rio de Janeiro;
+- Foz do Iguacu;
+- Manaus / Amazon;
+- Pantanal;
 - Bonito;
 - Buzios;
 - Paraty;
-- Salvador;
 - Sao Paulo;
 - Angra dos Reis;
 - Ilha Grande;
@@ -124,24 +147,38 @@ Approved Wave 3 Brazil destinations now in production content:
 - Recife;
 - Olinda;
 - Porto de Galinhas;
-- Fernando de Noronha.
+- Fernando de Noronha;
+- Ouro Preto;
+- Praia do Forte;
+- Natal;
+- Praia de Pipa;
+- Brasilia;
+- Fortaleza;
+- Jericoacoara;
+- Costa do Sauipe;
+- Itacare;
+- Morro de Sao Paulo;
+- Porto Seguro;
+- Belo Horizonte;
+- Salvador.
 
-Together with the 4 priority Brazil destinations from Wave 2, the repository now contains 17 approved Brazil destination entities.
-
-Approved Wave 3 tours now in production content:
+### Approved Wave 3 tours in main
 
 - Sao Paulo + Iguacu + Rio + Ilha Grande + Paraty, 12 days;
 - Brazil adventure, 17 days;
 - Pantanal + Bonito + Lencois Maranhenses, 8 days;
-- Northeast Brazil: Recife + Olinda + Porto de Galinhas + Fernando de Noronha, 10 days.
+- Northeast Brazil: Recife + Olinda + Porto de Galinhas + Fernando de Noronha, 10 days;
+- Brazil gems: Rio + Ouro Preto + Salvador + Praia do Forte + Iguacu, 14 days;
+- Brazil dunes: Rio + Iguacu + Lencois Maranhenses + Praia de Pipa, 13 days;
+- Argentina + Brazil with Praia de Pipa, 11 days.
 
-The latest northeast Brazil batch is synchronized with Google Drive. Final deploy and rendered regression QA remain required for the current HEAD before the next content package.
+### Wave 3 execution order
 
-Wave 3 order remains value-first, not alphabetical:
+Continue value-first, not alphabetically:
 
-1. expand the strongest country/destination clusters;
-2. add additional high-value tours tied to approved destinations and themes;
-3. add excursions only after the destination/tour relation is stable;
-4. keep the full 700+ queue gated by template quality and regression checks.
+1. finish strong destination clusters before opening thin isolated pages;
+2. add high-value tours tied to approved destinations and themes;
+3. add excursions only after destination/tour relations are stable;
+4. keep the full 700+ queue gated by build and rendered regression QA.
 
-The accepted global design system remains frozen unless QA exposes a concrete defect.
+The next content package should be chosen from the inventory and original snapshots, with Drive approved copy and GitHub production content kept synchronized.

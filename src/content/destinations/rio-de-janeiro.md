@@ -24,6 +24,7 @@ relatedDestinations:
   - destination_brazil_pantanal
 featuredTours:
   - tour_luxury_brazil_11d
+  - tour_brazil_south_12d
 featuredExcursions: []
 facts:
   - value: 3–7
@@ -47,7 +48,7 @@ featureBands:
     image: /media/prototype/rio-night.jpg
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii__7f36c92d.md
-updatedAt: 2026-09-24
+updatedAt: 2026-09-25
 ---
 
 Ada Tours организует поездки в Рио-де-Жанейро от короткого знакомства с городом до полноценного индивидуального тура. В программу можно включить отель, встречу в аэропорту, частного или группового гида, трансферы, билеты, морскую прогулку, вертолет и дополнительные дни в других регионах Бразилии.

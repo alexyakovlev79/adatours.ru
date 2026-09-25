@@ -36,12 +36,12 @@ featureBands:
     title: Пляжи, лес и водопады
     text: >-
       Итакаре подходит для маршрута, где пляжный отдых не отделен от природы: рядом с океаном начинаются участки Мата-Атлантики и выезды к водопадам.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/itacare.jpg
+    image: https://brasiltours.ru/image/cache/catalog/category/2/4/2453583532_ccdfe43f03_o-1920x1080.webp
   - eyebrow: Город
     title: Небольшой исторический центр Баии
     text: >-
       В старом описании Ada Tours отмечены низкая цветная застройка, белые церкви, мощеные улицы и сильное афро-бразильское культурное влияние.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/itacare.jpg
+    image: https://brasiltours.ru/image/cache/catalog/category/3/9/395971683_a9ab2c282a_b_1-1920x1080.webp
 sourceUrl: https://brasiltours.ru/plyazhnye-tury-v-braziliyu-na-morskoj-kurort-itakare
 sourceSnapshot: page_texts_original/plyazhnye-tury-v-braziliyu-na-morskoj-kurort-itakare__2bb91022.md
 updatedAt: 2026-09-25

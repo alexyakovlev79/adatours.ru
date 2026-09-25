@@ -1,6 +1,6 @@
 # Prototype and content status
 
-Date: 2026-09-24
+Date: 2026-09-25
 
 ## Visual baseline
 
@@ -116,17 +116,18 @@ The accepted global visual system remains frozen unless regression QA exposes a 
 
 After the latest value-first Brazil batches, production content contains:
 
-- **29 approved Brazil destination entities**;
+- **32 approved Brazil destination entities**;
 - the 4 Wave 2 priority Brazil destinations: Rio de Janeiro, Foz do Iguacu, Manaus / Amazon and Pantanal;
-- 25 additional Brazil destinations added during Wave 3;
+- 28 additional Brazil destinations added during Wave 3;
 - **7 approved Wave 3 tours** on top of the 3 Wave 2 priority tours.
 
-The newest destination package expands 2 already established clusters:
+The newest destination package opens a coherent Southern Brazil cluster:
 
-- Bahia: Itacare, Morro de Sao Paulo and Porto Seguro;
-- Minas Gerais: Belo Horizonte, linked to the existing Ouro Preto content and the Brazil gems route.
+- Curitiba;
+- Florianopolis;
+- Porto Alegre.
 
-The 4 newest approved Drive copies are synchronized with their production Markdown files.
+All 3 have standalone source pages, reciprocal destination relations and approved Drive copies synchronized with their production Markdown files.
 
 ### Latest Wave 3 Brazil destinations in main
 
@@ -160,7 +161,10 @@ The repository currently contains these approved Brazil destination entities:
 - Morro de Sao Paulo;
 - Porto Seguro;
 - Belo Horizonte;
-- Salvador.
+- Salvador;
+- Curitiba;
+- Florianopolis;
+- Porto Alegre.
 
 ### Approved Wave 3 tours in main
 

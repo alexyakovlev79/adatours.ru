@@ -16,6 +16,7 @@ themes:
   - culture
   - history
 relatedDestinations:
+  - destination_brazil_gold_route
   - destination_brazil_rio
   - destination_brazil_salvador
 featuredTours:

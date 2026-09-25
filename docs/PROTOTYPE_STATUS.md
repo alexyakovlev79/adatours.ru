@@ -116,9 +116,9 @@ The accepted global visual system remains frozen unless regression QA exposes a 
 
 After the latest value-first Brazil batches, production content contains:
 
-- **32 approved Brazil destination entities**;
+- **33 approved Brazil destination entities**;
 - the 4 Wave 2 priority Brazil destinations: Rio de Janeiro, Foz do Iguacu, Manaus / Amazon and Pantanal;
-- 28 additional Brazil destinations added during Wave 3;
+- 29 additional Brazil destinations added during Wave 3;
 - **8 approved Wave 3 tours** on top of the 3 Wave 2 priority tours.
 
 The newest destination package opens a coherent Southern Brazil cluster:
@@ -128,6 +128,8 @@ The newest destination package opens a coherent Southern Brazil cluster:
 - Porto Alegre.
 
 All 3 have standalone source pages and reciprocal destination relations. The new Southern Brazil 12-day tour now connects Rio, Iguacu and Florianopolis with the southern route through Porto Alegre, Gramado, Canela and the Cambara do Sul area.
+
+The newest route-cluster entity adds the historical Gold Route of Minas Gerais, linking Ouro Preto, Belo Horizonte, Mariana, Congonhas and Inhotim to the existing Brazil gems tour.
 
 ### Latest Wave 3 Brazil destinations in main
 
@@ -164,7 +166,8 @@ The repository currently contains these approved Brazil destination entities:
 - Salvador;
 - Curitiba;
 - Florianopolis;
-- Porto Alegre.
+- Porto Alegre;
+- Gold Route / Zolotoj Put.
 
 ### Approved Wave 3 tours in main
 

@@ -16,6 +16,7 @@ themes:
   - culture
   - history
 relatedDestinations:
+  - destination_brazil_gold_route
   - destination_brazil_ouro_preto
   - destination_brazil_sao_paulo
   - destination_brazil_rio

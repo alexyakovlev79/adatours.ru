@@ -36,12 +36,12 @@ featureBands:
     title: Пампулья и Оскар Нимейер
     text: >-
       Старый материал Ada Tours выделяет Пампулью и проекты Оскара Нимейера как одну из главных причин добавить Белу-Оризонти в маршрут по Минас-Жерайс.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/belo-horizonte-3.jpg
+    image: https://brasiltours.ru/image/cache/catalog/category/B/N/BN20229_6-1920x1080.webp
   - eyebrow: Маршрут
     title: Городской вход в Минас-Жерайс
     text: >-
       Белу-Оризонти удобно использовать как логистическую точку для Ору-Прету и других исторических мест штата, а затем продолжать маршрут внутренним перелетом.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/belo-horizonte-3.jpg
+    image: https://brasiltours.ru/image/cache/catalog/category/p/c/pca-estacao1_01-1920x1080.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-belu-orizonte-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-belu-orizonte-v-brazilii__b4f01d5a.md
 updatedAt: 2026-09-25

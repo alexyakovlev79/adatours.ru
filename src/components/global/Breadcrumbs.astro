@@ -157,8 +157,15 @@ const crumbs = [
     }
 
     .breadcrumbs li {
-      flex: 0 0 auto;
       min-width: 0;
+    }
+
+    .breadcrumbs li:not(:first-child):not(:last-child) {
+      display: none;
+    }
+
+    .breadcrumbs li:first-child {
+      flex: 0 0 auto;
     }
 
     .breadcrumbs li:last-child {

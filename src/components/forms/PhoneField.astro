@@ -64,15 +64,6 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
         >
           <span class="phone-field__flag-wrap" aria-hidden="true">
             <span class="phone-field__flag-fallback">{flagEmoji(country.iso2)}</span>
-            <img
-              class="phone-field__flag"
-              src={flagUrl(country.iso2)}
-              alt=""
-              loading="lazy"
-              width="24"
-              height="18"
-              referrerpolicy="no-referrer"
-            />
           </span>
           <span class="phone-field__country-name">{country.name}</span>
           <span class="phone-field__option-code">{country.dial}</span>

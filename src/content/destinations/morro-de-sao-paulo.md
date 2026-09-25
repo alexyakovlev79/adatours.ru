@@ -35,12 +35,7 @@ featureBands:
     title: Первый, Второй, Третий и Четвертый пляжи
     text: >-
       Старое описание Ada Tours разделяет побережье по нумерованным пляжам: ближе к поселению больше инфраструктуры и вечерней жизни, дальше ритм становится спокойнее.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/morro-de-sao-paulo-2.jpg
-  - eyebrow: Панорама
-    title: Маяк над океаном
-    text: >-
-      Маяк конца XIX века в исходном материале описан как действующий и одновременно как смотровая точка с видом на остров и океан.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/morro-de-sao-paulo-2.jpg
+    image: https://brasiltours.ru/image/cache/catalog/category/p/o/pola1-1920x1080.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya__6567032e.md
 updatedAt: 2026-09-25

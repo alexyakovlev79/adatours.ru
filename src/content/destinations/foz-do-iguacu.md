@@ -21,7 +21,8 @@ themes:
 relatedDestinations:
   - destination_brazil_rio
   - destination_argentina_buenos_aires
-featuredTours: []
+featuredTours:
+  - tour_brazil_south_12d
 featuredExcursions: []
 facts:
   - value: "275"
@@ -45,7 +46,7 @@ featureBands:
     image: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu.jpg
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-vodopadah-iguasu-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-na-vodopadah-iguasu-v-brazilii__8b9c1a33.md
-updatedAt: 2026-09-24
+updatedAt: 2026-09-25
 ---
 
 Водопады Игуасу находятся на реке Игуасу у границы Бразилии и Аргентины. На старой странице Ada Tours поездка строится вокруг смотровых площадок, троп и «Горла дьявола», а отдельным блоком идут активности национального парка.

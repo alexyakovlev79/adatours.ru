@@ -5,12 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && pagefind --site dist",
     "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",
     "astro": "7.3.4"
+  },
+  "devDependencies": {
+    "pagefind": "1.5.2"
   },
   "engines": {
     "node": ">=24"

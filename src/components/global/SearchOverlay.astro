@@ -4,6 +4,7 @@ import SearchResults from './SearchResults.astro';
 
 const pagefindBundle = withBase('/pagefind/');
 const pagefindBase = import.meta.env.BASE_URL || '/';
+const logoBlack = withBase('/brand/adatours-logo-black.svg');
 ---
 
 <div
@@ -22,8 +23,7 @@ const pagefindBase = import.meta.env.BASE_URL || '/';
   <div class="search-overlay__inner">
     <div class="search-overlay__top">
       <a class="search-overlay__brand" href={withBase('/')} tabindex="-1" aria-label="Ada Tours">
-        <span>ADA</span>
-        <small>TOURS</small>
+        <img src={logoBlack} width="553" height="184" alt="" aria-hidden="true" />
       </a>
       <button class="search-overlay__close" type="button" aria-label="Закрыть поиск" data-search-close>
         <span></span><span></span>
@@ -346,9 +346,8 @@ const pagefindBase = import.meta.env.BASE_URL || '/';
   .search-overlay.is-open{opacity:1;transform:translateY(0)}
   .search-overlay__inner{min-height:100%;width:min(calc(100% - (var(--gutter) * 2)),var(--container-max));margin-inline:auto}
   .search-overlay__top{display:flex;align-items:center;justify-content:space-between;min-height:var(--header-h)}
-  .search-overlay__brand{display:inline-grid;font-family:var(--font-display);line-height:.78;letter-spacing:-.055em}
-  .search-overlay__brand span{font-size:1.5rem;font-weight:700}
-  .search-overlay__brand small{margin-left:.85rem;font-size:.8rem;font-weight:500;letter-spacing:.12em}
+  .search-overlay__brand{display:inline-flex;align-items:center;width:clamp(116px,8.6vw,138px);line-height:0}
+  .search-overlay__brand img{display:block;width:100%;height:auto}
   .search-overlay__close{position:relative;width:48px;height:48px;border:0;background:transparent;cursor:pointer}
   .search-overlay__close span{position:absolute;top:23px;left:10px;width:28px;height:1px;background:currentColor}
   .search-overlay__close span:first-child{transform:rotate(45deg)}

@@ -9,6 +9,19 @@ const mediaObject = z.object({
   src: z.string(),
   alt: z.string().default(''),
   caption: z.string().optional(),
+  status: z.enum(['approved', 'needs_replacement', 'replaced']).optional(),
+  replacementReason: z.enum([
+    'low_resolution',
+    'upscaled',
+    'blur',
+    'jpeg_artifacts',
+    'bad_crop',
+    'blacklist',
+    'other',
+  ]).optional(),
+  intendedSlot: z.string().optional(),
+  sourceWidth: z.number().int().positive().optional(),
+  sourceHeight: z.number().int().positive().optional(),
 });
 const media = mediaObject.optional();
 
@@ -112,7 +125,7 @@ const tours = defineCollection({
       title: z.string(),
       places: z.array(z.string()).default([]),
       text: z.string(),
-      image: z.string().optional(),
+      image: z.union([z.string(), mediaObject]).optional(),
     })).default([]),
     included: z.array(z.string()).default([]),
     notIncluded: z.array(z.string()).default([]),

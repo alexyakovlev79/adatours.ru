@@ -65,6 +65,8 @@ featureBands:
     text: >-
       Корковаду и Сахарная голова дают два разных взгляда на город, бухты, горы и океан. Их можно соединить с историческим центром, пляжами и Санта-Терезой.
     image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
+    imageStatus: needs_replacement
+    imageReplacementReason: duplicate_on_page
   - eyebrow: Вечер
     title: Лапа и культурная жизнь Рио
     text: >-

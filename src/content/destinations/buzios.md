@@ -43,7 +43,7 @@ featureBands:
   - eyebrow: Вечер
     title: Руа дас Педрас после заката
     text: >-
-      После пляжа центр Бузиоса меняет ритм: прогулка по Руа дас Педрас, магазины, бары и рестораны становятся естественным продолжением дня.
+      После пляжа приятно выйти на Руа дас Педрас: вечером здесь работают магазины, бары и рестораны.
     image: https://brasiltours.ru/image/cache/catalog/category/6/0/60947055_3cfef10045_o-1920x1080.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-morskoj-kurort-buzios-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-na-morskoj-kurort-buzios-v-brazilii__24ce5ef5.md

@@ -4,6 +4,7 @@ import '../styles/typography.css';
 import '../styles/global.css';
 import SiteHeader from '../components/global/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
+import SearchOverlay from '../components/global/SearchOverlay.astro';
 import Breadcrumbs from '../components/global/Breadcrumbs.astro';
 import { SITE } from '../lib/site';
 import { withBase } from '../lib/paths';
@@ -184,6 +185,7 @@ const graph = [
   </head>
   <body>
     <SiteHeader theme={headerTheme} />
+    <SearchOverlay />
     {showBreadcrumbs && !noindex && segments.length > 0 && (
       <Breadcrumbs pathname={Astro.url.pathname} title={title} theme={headerTheme} />
     )}

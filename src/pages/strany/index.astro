@@ -31,7 +31,6 @@ const countries = (await getCollection('countries', ({ data }) =>
 
   {countries.map((country, index) => (
     <DestinationBand
-      eyebrow="Страна"
       title={country.data.name}
       text={country.data.summary}
       image={country.data.hero?.src}

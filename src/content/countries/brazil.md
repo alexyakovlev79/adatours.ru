@@ -4,6 +4,9 @@ locale: ru
 name: Бразилия
 slug: braziliya
 status: approved
+searchAliases:
+  - Brasil
+  - Brazil
 summary: >-
   Рио, Игуасу, Амазония, Пантанал и Атлантика. Ada Tours соединяет их в один маршрут с точной логистикой и нужным уровнем сервиса.
 hero:

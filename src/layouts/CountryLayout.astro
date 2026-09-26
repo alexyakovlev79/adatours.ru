@@ -39,6 +39,8 @@ const galleryItems = d.gallery.filter((item) => !usedImages.has(item.src));
     title={d.name}
     intro={d.summary}
     image={d.hero?.src}
+    mediaStatus={d.hero?.status}
+    replacementReason={d.hero?.replacementReason}
     ctaLabel="Подобрать маршрут"
   />
 
@@ -57,6 +59,8 @@ const galleryItems = d.gallery.filter((item) => !usedImages.has(item.src));
         title={band.title}
         text={band.text}
         image={band.image}
+        mediaStatus={band.imageStatus}
+        replacementReason={band.imageReplacementReason}
         href={band.href}
         align={index % 2 === 1 ? 'right' : 'left'}
       />
@@ -66,6 +70,8 @@ const galleryItems = d.gallery.filter((item) => !usedImages.has(item.src));
         title={band.title}
         text={band.text}
         image={band.image}
+        mediaStatus={band.imageStatus}
+        replacementReason={band.imageReplacementReason}
         reverse={index % 2 === 1}
       />
     )

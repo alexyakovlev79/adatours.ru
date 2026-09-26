@@ -4,6 +4,11 @@ locale: ru
 name: Рио-де-Жанейро
 slug: rio-de-zhanejro
 status: approved
+searchAliases:
+  - Рио
+  - Rio
+  - Rio de Janeiro
+  - Рио де Жанейро
 countryId: country_brazil
 destinationType: city
 summary: >-

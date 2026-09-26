@@ -17,6 +17,8 @@ const mediaObject = z.object({
     'jpeg_artifacts',
     'bad_crop',
     'blacklist',
+    'duplicate_on_page',
+    'outdated_visual',
     'other',
   ]).optional(),
   intendedSlot: z.string().optional(),
@@ -41,6 +43,18 @@ const editorialBand = z.object({
   title: z.string(),
   text: z.string(),
   image: z.string(),
+  imageStatus: z.enum(['approved', 'needs_replacement', 'replaced']).optional(),
+  imageReplacementReason: z.enum([
+    'low_resolution',
+    'upscaled',
+    'blur',
+    'jpeg_artifacts',
+    'bad_crop',
+    'blacklist',
+    'duplicate_on_page',
+    'outdated_visual',
+    'other',
+  ]).optional(),
   href: z.string().optional(),
 });
 

@@ -111,6 +111,7 @@ const destinationSchema = {
       eyebrow="Фотографии"
       title={`${d.name}: детали места`}
       items={galleryItems}
+      layout={d.id === 'destination_brazil_rio' ? 'flush' : 'editorial'}
     />
   )}
 

@@ -17,6 +17,7 @@ const common = {
   locale,
   slug: z.string(),
   status,
+  searchAliases: z.array(z.string()).default([]),
   sourceUrl: z.string().url().optional(),
   sourceSnapshot: z.string().optional(),
   updatedAt: z.coerce.date().optional(),

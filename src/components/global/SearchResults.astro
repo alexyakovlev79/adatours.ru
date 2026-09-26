@@ -1,0 +1,13 @@
+---
+import SearchResult from './SearchResult.astro';
+---
+<div class="search-results" aria-live="polite" aria-busy="false" data-search-results>
+  <SearchResult />
+  <p class="search-status" data-search-status>Ищите страну, место или тур.</p>
+  <div class="search-results__list" data-search-list></div>
+</div>
+<style>
+  .search-results{margin-top:clamp(30px,4vw,56px)}
+  .search-status{margin:0 0 20px;font-family:var(--font-display);font-size:.9rem;line-height:1.45;color:color-mix(in srgb,var(--color-ink) 62%,transparent)}
+  .search-results__list{border-bottom:1px solid var(--color-line)}
+</style>

@@ -1,0 +1,330 @@
+---
+import { withBase } from '../../lib/paths';
+import SearchResults from './SearchResults.astro';
+
+const pagefindBundle = withBase('/pagefind/');
+const pagefindBase = import.meta.env.BASE_URL || '/';
+---
+
+<div
+  class="search-overlay"
+  id="site-search"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Поиск по Ada Tours"
+  aria-hidden="true"
+  hidden
+  data-search-overlay
+  data-pagefind-bundle={pagefindBundle}
+  data-search-base={pagefindBase}
+  data-pagefind-ignore="all"
+>
+  <div class="search-overlay__inner">
+    <div class="search-overlay__top">
+      <a class="search-overlay__brand" href={withBase('/')} tabindex="-1" aria-label="Ada Tours">
+        <span>ADA</span>
+        <small>TOURS</small>
+      </a>
+      <button class="search-overlay__close" type="button" aria-label="Закрыть поиск" data-search-close>
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <div class="search-overlay__content">
+      <label class="search-overlay__label" for="site-search-input">Поиск</label>
+      <input
+        class="search-overlay__input"
+        id="site-search-input"
+        type="search"
+        inputmode="search"
+        autocomplete="off"
+        placeholder="Бразилия, Рио, название тура..."
+        aria-describedby="site-search-help"
+        data-search-input
+      />
+      <p class="search-overlay__help" id="site-search-help">Начните вводить от 2 символов.</p>
+
+      <div class="search-filters" role="group" aria-label="Тип результата">
+        <button type="button" class="is-active" aria-pressed="true" data-search-filter="all">Все</button>
+        <button type="button" aria-pressed="false" data-search-filter="country">Страны</button>
+        <button type="button" aria-pressed="false" data-search-filter="destination">Места</button>
+        <button type="button" aria-pressed="false" data-search-filter="tour">Туры</button>
+      </div>
+
+      <SearchResults />
+    </div>
+  </div>
+</div>
+
+<script>
+  const overlay = document.querySelector('[data-search-overlay]');
+  const openButtons = Array.from(document.querySelectorAll('[data-search-open]'));
+  const closeButton = overlay?.querySelector('[data-search-close]');
+  const input = overlay?.querySelector('[data-search-input]');
+  const filters = Array.from(overlay?.querySelectorAll('[data-search-filter]') ?? []);
+  const results = overlay?.querySelector('[data-search-results]');
+  const status = overlay?.querySelector('[data-search-status]');
+  const list = overlay?.querySelector('[data-search-list]');
+  const template = overlay?.querySelector('[data-search-result-template]');
+
+  if (
+    overlay instanceof HTMLElement &&
+    input instanceof HTMLInputElement &&
+    results instanceof HTMLElement &&
+    status instanceof HTMLElement &&
+    list instanceof HTMLElement &&
+    template instanceof HTMLTemplateElement
+  ) {
+    let activeFilter = 'all';
+    let pagefindPromise: Promise<any> | null = null;
+    let debounceId = 0;
+    let requestId = 0;
+    let previousFocus: HTMLElement | null = null;
+
+    const normalize = (value: string) =>
+      value.toLocaleLowerCase('ru-RU')
+        .replace(/ё/g, 'е')
+        .replace(/[‐‑‒–—-]+/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+    const ensurePagefind = () => {
+      if (!pagefindPromise) {
+        const bundlePath = overlay.dataset.pagefindBundle ?? '/pagefind/';
+        const baseUrl = overlay.dataset.searchBase ?? '/';
+        pagefindPromise = (async () => {
+          const pagefind = await import(/* @vite-ignore */ `${bundlePath}pagefind.js`);
+          await pagefind.options({
+            baseUrl,
+            basePath: bundlePath,
+            ranking: {
+              termFrequency: 0.6,
+              pageLength: 0.55,
+              termSimilarity: 1,
+              metaWeights: {
+                title: 10,
+                aliases: 7,
+                geography: 4,
+                themes: 1,
+                summary: 0.35,
+              },
+            },
+          });
+          await pagefind.init();
+          return pagefind;
+        })();
+      }
+      return pagefindPromise;
+    };
+
+    const resultPriority = (data: any, query: string) => {
+      const q = normalize(query);
+      const title = normalize(data?.meta?.title ?? '');
+      const aliases = String(data?.meta?.aliases ?? '')
+        .split('|')
+        .map((value) => normalize(value))
+        .filter(Boolean);
+
+      if (title === q) return 0;
+      if (title.startsWith(q)) return 1;
+      if (aliases.some((alias) => alias === q)) return 2;
+      if (aliases.some((alias) => alias.startsWith(q))) return 3;
+      return 4;
+    };
+
+    const setStatus = (message: string) => { status.textContent = message; };
+    const clearResults = () => { list.replaceChildren(); };
+
+    const createResult = (data: any) => {
+      const fragment = template.content.cloneNode(true) as DocumentFragment;
+      const link = fragment.querySelector('[data-result-link]');
+      const title = fragment.querySelector('[data-result-title]');
+      const type = fragment.querySelector('[data-result-type]');
+      const subtitle = fragment.querySelector('[data-result-subtitle]');
+      const summary = fragment.querySelector('[data-result-summary]');
+
+      if (link instanceof HTMLAnchorElement) link.href = data.url;
+      if (title instanceof HTMLElement) title.textContent = data.meta?.title ?? 'Без названия';
+      if (type instanceof HTMLElement) type.textContent = data.meta?.type_label ?? '';
+      if (subtitle instanceof HTMLElement) subtitle.textContent = data.meta?.subtitle ?? '';
+      if (summary instanceof HTMLElement) summary.textContent = data.meta?.summary ?? '';
+      return fragment;
+    };
+
+    const runSearch = async () => {
+      const query = input.value.trim();
+      const thisRequest = ++requestId;
+
+      if (query.length < 2) {
+        results.setAttribute('aria-busy', 'false');
+        clearResults();
+        setStatus(query.length === 0 ? 'Ищите страну, место или тур.' : 'Введите еще 1 символ.');
+        return;
+      }
+
+      results.setAttribute('aria-busy', 'true');
+      setStatus('Ищу...');
+
+      try {
+        const pagefind = await ensurePagefind();
+        const options = activeFilter === 'all' ? {} : { filters: { entity_type: activeFilter } };
+        const search = await pagefind.search(query, options);
+        if (thisRequest !== requestId) return;
+
+        const loaded = await Promise.all(
+          search.results.slice(0, 30).map(async (raw: any, index: number) => ({
+            index,
+            data: await raw.data(),
+          }))
+        );
+        if (thisRequest !== requestId) return;
+
+        loaded.sort((a, b) => {
+          const priority = resultPriority(a.data, query) - resultPriority(b.data, query);
+          return priority || a.index - b.index;
+        });
+
+        clearResults();
+        for (const item of loaded.slice(0, 24)) list.append(createResult(item.data));
+
+        setStatus(
+          loaded.length === 0
+            ? 'Ничего не найдено. Попробуйте другое название или вариант написания.'
+            : `Найдено: ${loaded.length}`
+        );
+      } catch (error) {
+        console.error('Ada Tours search failed', error);
+        clearResults();
+        setStatus('Поиск временно недоступен.');
+      } finally {
+        if (thisRequest === requestId) results.setAttribute('aria-busy', 'false');
+      }
+    };
+
+    const scheduleSearch = () => {
+      window.clearTimeout(debounceId);
+      debounceId = window.setTimeout(runSearch, 120);
+    };
+
+    const setFilter = (value: string) => {
+      activeFilter = value;
+      filters.forEach((button) => {
+        if (button instanceof HTMLButtonElement) {
+          const active = button.dataset.searchFilter === value;
+          button.classList.toggle('is-active', active);
+          button.setAttribute('aria-pressed', String(active));
+        }
+      });
+      runSearch();
+    };
+
+    const openSearch = () => {
+      previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      window.dispatchEvent(new CustomEvent('ada:search-open'));
+      overlay.hidden = false;
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('search-open');
+      requestAnimationFrame(() => overlay.classList.add('is-open'));
+      input.focus();
+      ensurePagefind().catch(() => {});
+    };
+
+    const closeSearch = () => {
+      overlay.classList.remove('is-open');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('search-open');
+      window.setTimeout(() => { overlay.hidden = true; }, 220);
+      previousFocus?.focus();
+    };
+
+    openButtons.forEach((button) => button.addEventListener('click', (event) => {
+      event.preventDefault();
+      openSearch();
+    }));
+    closeButton?.addEventListener('click', closeSearch);
+    input.addEventListener('input', scheduleSearch);
+
+    filters.forEach((button) => button.addEventListener('click', () => {
+      if (button instanceof HTMLButtonElement) {
+        setFilter(button.dataset.searchFilter ?? 'all');
+        input.focus();
+      }
+    }));
+
+    input.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowDown') {
+        const first = list.querySelector('a');
+        if (first instanceof HTMLAnchorElement) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+
+    list.addEventListener('keydown', (event) => {
+      if (!(event.target instanceof HTMLAnchorElement)) return;
+      const links = Array.from(list.querySelectorAll('a'));
+      const index = links.indexOf(event.target);
+      if (event.key === 'ArrowDown' && index < links.length - 1) {
+        event.preventDefault();
+        links[index + 1]?.focus();
+      }
+      if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        if (index > 0) links[index - 1]?.focus();
+        else input.focus();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (overlay.hidden) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeSearch();
+        return;
+      }
+      if (event.key === 'Tab') {
+        const focusable = Array.from(
+          overlay.querySelectorAll<HTMLElement>(
+            'button:not([disabled]), input:not([disabled]), a[href]:not([tabindex="-1"])'
+          )
+        ).filter((element) => element.offsetParent !== null);
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+  }
+</script>
+
+<style>
+  .search-overlay{position:fixed;inset:0;z-index:100;overflow:auto;color:var(--color-ink);background:var(--color-bg);opacity:0;transform:translateY(-8px);transition:opacity 220ms var(--ease-out),transform 220ms var(--ease-out)}
+  .search-overlay.is-open{opacity:1;transform:translateY(0)}
+  .search-overlay__inner{min-height:100%;width:min(calc(100% - (var(--gutter) * 2)),var(--container-max));margin-inline:auto}
+  .search-overlay__top{display:flex;align-items:center;justify-content:space-between;min-height:var(--header-h)}
+  .search-overlay__brand{display:inline-grid;font-family:var(--font-display);line-height:.78;letter-spacing:-.055em}
+  .search-overlay__brand span{font-size:1.5rem;font-weight:700}
+  .search-overlay__brand small{margin-left:.85rem;font-size:.8rem;font-weight:500;letter-spacing:.12em}
+  .search-overlay__close{position:relative;width:48px;height:48px;border:0;background:transparent;cursor:pointer}
+  .search-overlay__close span{position:absolute;top:23px;left:10px;width:28px;height:1px;background:currentColor}
+  .search-overlay__close span:first-child{transform:rotate(45deg)}
+  .search-overlay__close span:last-child{transform:rotate(-45deg)}
+  .search-overlay__content{padding:clamp(48px,7vw,100px) 0 clamp(80px,10vw,140px)}
+  .search-overlay__label{display:block;margin-bottom:14px;font-family:var(--font-display);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+  .search-overlay__input{width:100%;padding:0 0 20px;border:0;border-bottom:2px solid var(--color-ink);border-radius:0;color:var(--color-ink);background:transparent;font-family:var(--font-display);font-size:clamp(2.25rem,2rem + 3.2vw,5.25rem);line-height:1.02;letter-spacing:-.04em;outline:0}
+  .search-overlay__input::placeholder{color:color-mix(in srgb,var(--color-ink) 28%,transparent)}
+  .search-overlay__input:focus{border-bottom-color:var(--color-gold-deep)}
+  .search-overlay__help{margin:12px 0 0;font-size:.82rem;color:color-mix(in srgb,var(--color-ink) 58%,transparent)}
+  .search-filters{display:flex;flex-wrap:wrap;gap:6px 24px;margin-top:clamp(28px,4vw,48px)}
+  .search-filters button{padding:8px 0 7px;border:0;border-bottom:1px solid transparent;color:color-mix(in srgb,var(--color-ink) 58%,transparent);background:transparent;font-family:var(--font-display);font-size:.9rem;cursor:pointer}
+  .search-filters button:hover,.search-filters button.is-active{color:var(--color-ink)}
+  .search-filters button.is-active{border-bottom-color:var(--color-gold-deep)}
+  @media(max-width:640px){.search-overlay__content{padding-top:42px}.search-overlay__input{padding-bottom:16px;font-size:clamp(2rem,10vw,3.2rem)}.search-filters{gap-inline:18px}}
+</style>

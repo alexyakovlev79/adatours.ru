@@ -5,6 +5,7 @@ import EditorialStatement from '../components/editorial/EditorialStatement.astro
 import StoryPair from '../components/editorial/StoryPair.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
+import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -15,6 +16,18 @@ const d = entry.data;
   description={d.summary}
   image={d.hero?.src}
 >
+  <SearchIndexRecord
+    title={d.name}
+    summary={d.summary}
+    entityType="country"
+    typeLabel="Страна"
+    subtitle="Страна"
+    aliases={d.searchAliases}
+    geography={[d.name, ...d.regions]}
+    themes={d.relatedThemes}
+    image={d.hero?.src}
+  />
+
   <Hero
     eyebrow="Страна"
     title={d.name}

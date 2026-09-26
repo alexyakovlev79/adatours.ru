@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  summary: string;
+  entityType: 'country' | 'destination' | 'tour';
+  typeLabel: string;
+  subtitle: string;
+  aliases?: string[];
+  geography?: string[];
+  themes?: string[];
+  image?: string;
+}
+const { title, summary, entityType, typeLabel, subtitle, aliases = [], geography = [], themes = [], image } = Astro.props;
+---
+<section class="pagefind-record" data-pagefind-body aria-hidden="true">
+  <h1 data-pagefind-meta="title">{title}</h1>
+  <p data-pagefind-meta="summary">{summary}</p>
+  <span data-pagefind-meta="entity_type" data-pagefind-filter="entity_type">{entityType}</span>
+  <span data-pagefind-meta="type_label">{typeLabel}</span>
+  <span data-pagefind-meta="subtitle">{subtitle}</span>
+  {aliases.length > 0 && <span data-pagefind-meta="aliases">{aliases.join(' | ')}</span>}
+  {geography.length > 0 && <span data-pagefind-meta="geography">{geography.join(' | ')}</span>}
+  {themes.length > 0 && <span data-pagefind-meta="themes">{themes.join(' | ')}</span>}
+  {image && <img src={image} alt="" data-pagefind-meta="image[src]" />}
+</section>
+<style>
+  .pagefind-record{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);clip-path:inset(50%);white-space:nowrap;border:0;pointer-events:none}
+</style>

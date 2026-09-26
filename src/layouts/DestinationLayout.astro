@@ -7,6 +7,7 @@ import StoryPair from '../components/editorial/StoryPair.astro';
 import TripStats from '../components/tour/TripStats.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
+import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import { withBase } from '../lib/paths';
 
 const { entry } = Astro.props;
@@ -24,6 +25,7 @@ const relatedTours = tourEntries
   .sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0))
   .slice(0, 3);
 const country = countryEntries[0];
+const countryName = country?.data.name ?? '';
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://adatours.ru').toString();
 const countryUrl = country
@@ -54,6 +56,18 @@ const destinationSchema = {
   image={d.hero?.src}
   pageSchema={destinationSchema}
 >
+  <SearchIndexRecord
+    title={d.name}
+    summary={d.summary}
+    entityType="destination"
+    typeLabel="Место"
+    subtitle={countryName ? `Место · ${countryName}` : 'Место'}
+    aliases={d.searchAliases}
+    geography={[d.name, countryName].filter(Boolean)}
+    themes={d.themes}
+    image={d.hero?.src}
+  />
+
   <Hero
     eyebrow="Направление"
     title={d.name}

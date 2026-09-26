@@ -1,0 +1,38 @@
+name: Pull Request CI
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Build Astro and Pagefind
+        run: npm run build
+
+      - name: Search index smoke checks
+        shell: bash
+        run: |
+          test -f dist/pagefind/pagefind.js
+          grep -q 'data-pagefind-body' dist/strany/braziliya/index.html
+          grep -q 'data-pagefind-body' dist/napravleniya/braziliya/rio-de-zhanejro/index.html
+          grep -q 'data-pagefind-body' dist/tury/roskoshnaya-braziliya/index.html
+          ! grep -q 'data-pagefind-body' dist/index.html
+          indexed_pages=$(grep -Rsl 'data-pagefind-body' dist --include='*.html' | wc -l)
+          test "$indexed_pages" -ge 10

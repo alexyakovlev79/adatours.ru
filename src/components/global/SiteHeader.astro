@@ -1,5 +1,6 @@
 ---
 import PrimaryCTA from './PrimaryCTA.astro';
+import SearchTrigger from './SearchTrigger.astro';
 import { NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
 import ContactActions from './ContactActions.astro';
@@ -23,10 +24,15 @@ const { theme = 'light' } = Astro.props;
     </nav>
 
     <div class="desktop-cta">
+      <SearchTrigger />
       <div class="desktop-cta__links">
         <ContactActions compact />
       </div>
       <PrimaryCTA href="/contacts/" label="Оставить заявку" />
+    </div>
+
+    <div class="mobile-search">
+      <SearchTrigger compact />
     </div>
 
     <button
@@ -75,6 +81,8 @@ const { theme = 'light' } = Astro.props;
     menu.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => setOpen(false));
     });
+
+    window.addEventListener('ada:search-open', () => setOpen(false));
 
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') setOpen(false);
@@ -170,6 +178,7 @@ const { theme = 'light' } = Astro.props;
     }
   }
 
+  .mobile-search,
   .menu-toggle,
   .mobile-menu {
     display: none;
@@ -177,12 +186,17 @@ const { theme = 'light' } = Astro.props;
 
   @media (max-width: 1080px) {
     .site-header__inner {
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr auto auto;
+      gap: 4px;
     }
 
     .desktop-nav,
     .desktop-cta {
       display: none;
+    }
+
+    .mobile-search {
+      display: block;
     }
 
     .menu-toggle {

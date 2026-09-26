@@ -20,7 +20,7 @@ audiences:
   - couples
   - private
   - family
-format: Индивидуальный маршрут с групповыми сервисами на побережье
+format: Частный
 durationDays: 12
 durationNights: 11
 route:

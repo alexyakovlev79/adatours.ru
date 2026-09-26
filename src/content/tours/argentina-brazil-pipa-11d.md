@@ -22,7 +22,7 @@ audiences:
   - private
   - couples
   - family
-format: Индивидуальный маршрут с отдельными групповыми экскурсиями
+format: Частный
 durationDays: 11
 durationNights: 10
 route:

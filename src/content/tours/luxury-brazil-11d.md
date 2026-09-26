@@ -50,8 +50,8 @@ gallery:
   - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1334121-unsplash-1920x1080.webp
     alt: Катер Macuco Safari у водопадов Игуасу
     intendedSlot: gallery
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1-1920x1080.webp
-    alt: Канатная дорога на Сахарную голову
+  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/ricardo-frantz-jww5qixn7ee-unsplash-1920x1080.webp
+    alt: Поезд к Корковаду через лес Тижука
     intendedSlot: gallery
   - src: https://brasiltours.ru/image/cache/fogo_tableside1-1920x1080.webp
     alt: Приготовление бразильского шурраско
@@ -89,8 +89,8 @@ itinerary:
     places: [Урка, Сахарная голова]
     text: Подъем по канатной дороге на Урку и Сахарную голову. Сверху хорошо читаются залив Гуанабара, пляжи и гранитные холмы, из которых собран городской рельеф.
     image:
-      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/ricardo-frantz-jww5qixn7ee-unsplash-1920x1080.webp
-      alt: Поезд к Корковаду через лес Тижука
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1-1920x1080.webp
+      alt: Канатная дорога на Сахарную голову
       intendedSlot: itinerary:day-2
   - day: 3
     title: Корковаду и Христос-Искупитель

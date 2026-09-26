@@ -37,7 +37,11 @@ const {
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site ?? SITE.url).toString();
 const fullTitle = title.includes('Ada Tours') ? title : `${title} | Ada Tours`;
 const isPreview = import.meta.env.BASE_URL !== '/';
-const faviconUrl = withBase('/favicon.png');
+const faviconSvgUrl = withBase('/favicon.svg');
+const favicon48Url = withBase('/favicon-48x48.png');
+const favicon32Url = withBase('/favicon-32x32.png');
+const favicon16Url = withBase('/favicon-16x16.png');
+const faviconIcoUrl = withBase('/favicon.ico');
 const appleTouchIconUrl = withBase('/apple-touch-icon.png');
 const ogImageUrl = image ? new URL(withBase(image), Astro.site ?? SITE.url).toString() : undefined;
 
@@ -171,7 +175,11 @@ const graph = [
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="icon" type="image/png" sizes="120x120" href={faviconUrl} />
+    <link rel="icon" type="image/svg+xml" href={faviconSvgUrl} />
+    <link rel="icon" type="image/png" sizes="48x48" href={favicon48Url} />
+    <link rel="icon" type="image/png" sizes="32x32" href={favicon32Url} />
+    <link rel="icon" type="image/png" sizes="16x16" href={favicon16Url} />
+    <link rel="shortcut icon" href={faviconIcoUrl} />
     <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIconUrl} />
     {(isPreview || noindex) && <meta name="robots" content="noindex,nofollow,noarchive" />}
     <meta property="og:type" content="website" />

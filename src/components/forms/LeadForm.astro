@@ -25,7 +25,7 @@ const {
         <input name="name" type="text" autocomplete="name" placeholder="Ваше имя" />
       </label>
       <div class="form-field">
-        <span class="form-field__label">Телефон / WhatsApp / Telegram</span>
+        <span class="form-field__label">Номер для связи</span>
         <PhoneField />
       </div>
       <label>
@@ -45,6 +45,25 @@ const {
         <span>Комментарий</span>
         <textarea name="comment" rows="3" placeholder="Даты, состав группы, пожелания"></textarea>
       </label>
+
+      <fieldset class="contact-method">
+        <legend>Как с вами связаться</legend>
+        <div class="contact-method__options">
+          <label class="contact-method__option">
+            <input type="radio" name="contact_method" value="phone" checked />
+            <span>Телефон</span>
+          </label>
+          <label class="contact-method__option">
+            <input type="radio" name="contact_method" value="whatsapp" />
+            <span>WhatsApp</span>
+          </label>
+          <label class="contact-method__option">
+            <input type="radio" name="contact_method" value="telegram" />
+            <span>Telegram</span>
+          </label>
+        </div>
+      </fieldset>
+
       <button type="submit">Оставить заявку <span aria-hidden="true">↗</span></button>
     </form>
   </div>
@@ -80,7 +99,8 @@ const {
   }
 
   .form label span,
-  .form-field__label {
+  .form-field__label,
+  .contact-method legend {
     color: rgba(255,255,255,.55);
     font-size: .72rem;
     letter-spacing: .09em;
@@ -104,11 +124,73 @@ const {
     border-bottom-color: var(--color-gold);
   }
 
+  .contact-method {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .contact-method legend {
+    margin: 0 0 12px;
+    padding: 0;
+  }
+
+  .contact-method__options {
+    display: flex;
+    align-items: center;
+    gap: clamp(18px, 3vw, 32px);
+    flex-wrap: wrap;
+  }
+
+  .form .contact-method__option {
+    display: inline-flex;
+    cursor: pointer;
+  }
+
+  .contact-method__option input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .form .contact-method__option span {
+    position: relative;
+    padding: 0 0 7px;
+    color: rgba(255,255,255,.68);
+    font-size: .95rem;
+    line-height: 1.2;
+    letter-spacing: .01em;
+    text-transform: none;
+    transition: color 180ms ease, border-color 180ms ease;
+    border-bottom: 2px solid transparent;
+  }
+
+  .form .contact-method__option:hover span {
+    color: var(--color-bg);
+  }
+
+  .form .contact-method__option input:checked + span {
+    color: var(--color-gold);
+    border-bottom-color: var(--color-gold);
+  }
+
+  .form .contact-method__option input:focus-visible + span {
+    outline: 2px solid var(--color-gold-deep);
+    outline-offset: 4px;
+  }
+
   .form button {
     display: inline-flex;
     justify-content: space-between;
     gap: 30px;
-    margin-top: 14px;
+    margin-top: 2px;
     padding: 17px 20px;
     border: 0;
     color: var(--color-ink-deep);
@@ -124,6 +206,12 @@ const {
   @media (max-width: 800px) {
     .lead__grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .contact-method__options {
+      gap: 16px 22px;
     }
   }
 </style>

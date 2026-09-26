@@ -48,7 +48,6 @@ const destinationById = new Map(destinationEntries.map((item) => [item.data.id, 
 const countryNames = d.countries.map((id) => countryById.get(id)).filter(Boolean) as string[];
 const destinationNames = d.destinations.map((id) => destinationById.get(id)).filter(Boolean) as string[];
 const subtitleParts = [
-  'Тур',
   d.durationDays ? `${d.durationDays} дней` : '',
   countryNames.join(', '),
 ].filter(Boolean);

@@ -34,7 +34,8 @@ const resolveDayImage = (image: Day['image']) => {
     <div class="itinerary__days">
       {days.map((day, index) => {
         const image = resolveDayImage(day.image);
-        const visibleImage = image && image.status !== 'needs_replacement' ? image : null;
+        // needs_replacement remains visible until a real replacement is installed.
+        const visibleImage = image;
         return (
         <details class="day" open={index === 0}>
           <summary>

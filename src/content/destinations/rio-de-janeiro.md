@@ -17,8 +17,27 @@ hero:
   src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
   alt: Рио-де-Жанейро вечером
 gallery:
-  - src: /media/prototype/rio-panorama.jpg
-    alt: Панорама Рио-де-Жанейро
+  - src: https://brasiltours.ru/image/cache/catalog/category/f/i/file-1920x1080.webp
+    alt: Рио-де-Жанейро
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN929_50-1920x1080.webp
+    alt: Рио-де-Жанейро
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN5634_14-1920x1080.webp
+    alt: Рио-де-Жанейро
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN5107_12-1920x1080.webp
+    alt: Рио-де-Жанейро
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/f/i/file_1-1920x1080.webp
+    alt: Рио-де-Жанейро
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN5194_14-1920x1080.webp
+    alt: Рио-де-Жанейро
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN5634_16-1920x1080.webp
+    alt: Рио-де-Жанейро
+    intendedSlot: gallery
 themes:
   - city
   - culture

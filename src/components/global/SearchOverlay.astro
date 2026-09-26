@@ -140,13 +140,16 @@ const pagefindBase = import.meta.env.BASE_URL || '/';
       const link = fragment.querySelector('[data-result-link]');
       const title = fragment.querySelector('[data-result-title]');
       const type = fragment.querySelector('[data-result-type]');
-      const subtitle = fragment.querySelector('[data-result-subtitle]');
+      const metaTail = fragment.querySelector('[data-result-meta-tail]');
       const summary = fragment.querySelector('[data-result-summary]');
 
       if (link instanceof HTMLAnchorElement) link.href = data.url;
       if (title instanceof HTMLElement) title.textContent = data.meta?.title ?? 'Без названия';
       if (type instanceof HTMLElement) type.textContent = data.meta?.type_label ?? '';
-      if (subtitle instanceof HTMLElement) subtitle.textContent = data.meta?.subtitle ?? '';
+      if (metaTail instanceof HTMLElement) {
+        const subtitle = String(data.meta?.subtitle ?? '').trim();
+        metaTail.textContent = subtitle ? ` · ${subtitle}` : '';
+      }
       if (summary instanceof HTMLElement) summary.textContent = data.meta?.summary ?? '';
       return fragment;
     };

@@ -117,13 +117,45 @@ const pagefindBase = import.meta.env.BASE_URL || '/';
       return pagefindPromise;
     };
 
-    const resultPriority = (data: any, query: string) => {
-      const q = normalize(query);
-      const title = normalize(data?.meta?.title ?? '');
-      const aliases = String(data?.meta?.aliases ?? '')
+    const metaValues = (data: any, key: string) =>
+      String(data?.meta?.[key] ?? '')
         .split('|')
         .map((value) => normalize(value))
         .filter(Boolean);
+
+    const fieldMatches = (values: string[], query: string) =>
+      values.some((value) => value.includes(query));
+
+    const matchesActiveFilter = (data: any, query: string) => {
+      if (activeFilter === 'all') return true;
+
+      const q = normalize(query);
+      const title = normalize(data?.meta?.title ?? '');
+      const aliases = metaValues(data, 'aliases');
+      const names = [title, ...aliases];
+
+      if (activeFilter === 'country') {
+        return fieldMatches(names, q);
+      }
+
+      const geography = metaValues(data, 'geography');
+
+      if (activeFilter === 'destination') {
+        return fieldMatches([...names, ...geography], q);
+      }
+
+      if (activeFilter === 'tour') {
+        const themes = metaValues(data, 'themes');
+        return fieldMatches([...names, ...geography, ...themes], q);
+      }
+
+      return true;
+    };
+
+    const resultPriority = (data: any, query: string) => {
+      const q = normalize(query);
+      const title = normalize(data?.meta?.title ?? '');
+      const aliases = metaValues(data, 'aliases');
 
       if (title === q) return 0;
       if (title.startsWith(q)) return 1;
@@ -182,18 +214,20 @@ const pagefindBase = import.meta.env.BASE_URL || '/';
         );
         if (thisRequest !== requestId) return;
 
-        loaded.sort((a, b) => {
+        const filtered = loaded.filter((item) => matchesActiveFilter(item.data, query));
+
+        filtered.sort((a, b) => {
           const priority = resultPriority(a.data, query) - resultPriority(b.data, query);
           return priority || a.index - b.index;
         });
 
         clearResults();
-        for (const item of loaded.slice(0, 24)) list.append(createResult(item.data));
+        for (const item of filtered.slice(0, 24)) list.append(createResult(item.data));
 
         setStatus(
-          loaded.length === 0
+          filtered.length === 0
             ? 'Ничего не найдено. Попробуйте другое название или вариант написания.'
-            : `Найдено: ${loaded.length}`
+            : `Найдено: ${filtered.length}`
         );
       } catch (error) {
         console.error('Ada Tours search failed', error);

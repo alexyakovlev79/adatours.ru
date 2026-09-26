@@ -26,7 +26,8 @@ const stats = [
   { value: d.format ?? 'Private', label: 'формат' },
 ].filter(Boolean);
 
-const usableGallery = d.gallery.filter((item) => item.status !== 'needs_replacement');
+// Media QA status must never silently remove a source image from the page.
+const usableGallery = d.gallery;
 const firstStory = usableGallery[0] && d.highlights[0]
   ? { item: d.highlights[0], image: usableGallery[0] }
   : null;

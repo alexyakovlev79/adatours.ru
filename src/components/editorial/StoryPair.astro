@@ -7,13 +7,19 @@ interface Props {
   text: string;
   image?: string;
   reverse?: boolean;
+  mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
+  replacementReason?: string;
 }
 
-const { eyebrow, title, text, image, reverse = false } = Astro.props;
+const { eyebrow, title, text, image, reverse = false, mediaStatus, replacementReason } = Astro.props;
 const resolvedImage = image ? withBase(image) : undefined;
 ---
 
-<section class:list={['story section', { 'story--reverse': reverse }]}>
+<section
+  class:list={['story section', { 'story--reverse': reverse }]}
+  data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
+  data-replacement-reason={replacementReason}
+>
   <div class="story__media" style={resolvedImage ? `background-image:url("${resolvedImage}")` : undefined}></div>
   <div class="story__copy">
     {eyebrow && <p class="eyebrow">{eyebrow}</p>}

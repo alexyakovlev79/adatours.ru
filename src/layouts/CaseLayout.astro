@@ -15,6 +15,11 @@ const stats = [
   d.year ? { value: String(d.year), label: 'год проекта' } : null,
   d.cities.length ? { value: String(d.cities.length), label: 'города / региона' } : null,
 ].filter(Boolean);
+
+const serviceLabels: Record<string, string> = {
+  '/mice/': 'MICE и корпоративные поездки',
+  '/mice/delovye-delegacii/': 'Деловые делегации',
+};
 ---
 
 <BaseLayout
@@ -34,7 +39,7 @@ const stats = [
 
   <EditorialStatement
     eyebrow={d.segment}
-    text="Здесь оставлены только факты, которые можно публиковать без раскрытия заказчика. Название компании и персональные данные не используются."
+    text="Заказчик под NDA, поэтому название компании и персональные данные закрыты. В кейсе остаются маршрут, задача и работа Ada Tours на месте."
   />
 
   <section class="case-copy section--tight">
@@ -46,8 +51,8 @@ const stats = [
   {d.proof.length > 0 && (
     <section class="case-proof section">
       <div class="container">
-        <p class="eyebrow">Основание кейса</p>
-        <h2>Какие материалы подтверждают проект</h2>
+        <p class="eyebrow">Подтверждение</p>
+        <h2>Чем подтвержден проект</h2>
         <ul>
           {d.proof.map((item) => <li>{item}</li>)}
         </ul>
@@ -58,7 +63,7 @@ const stats = [
   {d.relatedServices.length > 0 && (
     <nav class="case-links container section--tight" aria-label="Связанные услуги">
       {d.relatedServices.map((href) => (
-        <a href={withBase(href)}>Связанная услуга <span aria-hidden="true">↗</span></a>
+        <a href={withBase(href)}>{serviceLabels[href] ?? 'Услуги Ada Tours'} <span aria-hidden="true">↗</span></a>
       ))}
     </nav>
   )}

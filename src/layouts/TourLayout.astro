@@ -76,6 +76,8 @@ const subtitleParts = [
     title={d.title}
     intro={d.lead}
     image={d.hero?.src}
+    mediaStatus={d.hero?.status}
+    replacementReason={d.hero?.replacementReason}
     meta={d.durationDays ? `${d.durationDays} дней · ${d.route.join(' · ')}` : undefined}
     ctaLabel="Получить программу"
   />
@@ -93,6 +95,8 @@ const subtitleParts = [
       title={firstStory.item.title}
       text={firstStory.item.text}
       image={firstStory.image.src}
+      mediaStatus={firstStory.image.status}
+      replacementReason={firstStory.image.replacementReason}
     />
   )}
 
@@ -114,6 +118,8 @@ const subtitleParts = [
       title={lastStory.item.title}
       text={lastStory.item.text}
       image={lastStory.image.src}
+      mediaStatus={lastStory.image.status}
+      replacementReason={lastStory.image.replacementReason}
       reverse
     />
   )}

@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
@@ -9,6 +10,7 @@ import TourPricing from '../components/tour/TourPricing.astro';
 import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
+import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -35,9 +37,36 @@ const editorialHighlights = d.highlights.filter((_, index) => {
   if (lastStory && index === d.highlights.length - 1) return false;
   return true;
 });
+
+const [countryEntries, destinationEntries] = await Promise.all([
+  getCollection('countries', ({ data }) => data.locale === 'ru' && d.countries.includes(data.id)),
+  getCollection('destinations', ({ data }) => data.locale === 'ru' && d.destinations.includes(data.id)),
+]);
+
+const countryById = new Map(countryEntries.map((item) => [item.data.id, item.data.name]));
+const destinationById = new Map(destinationEntries.map((item) => [item.data.id, item.data.name]));
+const countryNames = d.countries.map((id) => countryById.get(id)).filter(Boolean) as string[];
+const destinationNames = d.destinations.map((id) => destinationById.get(id)).filter(Boolean) as string[];
+const subtitleParts = [
+  'Тур',
+  d.durationDays ? `${d.durationDays} дней` : '',
+  countryNames.join(', '),
+].filter(Boolean);
 ---
 
 <BaseLayout title={d.title} description={d.lead} image={d.hero?.src}>
+  <SearchIndexRecord
+    title={d.title}
+    summary={d.lead}
+    entityType="tour"
+    typeLabel="Тур"
+    subtitle={subtitleParts.join(' · ')}
+    aliases={d.searchAliases}
+    geography={[...countryNames, ...destinationNames, ...d.route]}
+    themes={d.themes}
+    image={d.hero?.src}
+  />
+
   <Hero
     eyebrow="Индивидуальный тур"
     title={d.title}

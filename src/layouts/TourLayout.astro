@@ -11,6 +11,7 @@ import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
+import MediaGallery from '../components/editorial/MediaGallery.astro';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -25,12 +26,15 @@ const stats = [
   { value: d.format ?? 'Private', label: 'формат' },
 ].filter(Boolean);
 
-const firstStory = d.gallery[0] && d.highlights[0]
-  ? { item: d.highlights[0], image: d.gallery[0] }
+const usableGallery = d.gallery.filter((item) => item.status !== 'needs_replacement');
+const firstStory = usableGallery[0] && d.highlights[0]
+  ? { item: d.highlights[0], image: usableGallery[0] }
   : null;
-const lastStory = d.gallery[1] && d.highlights.length > 1
-  ? { item: d.highlights[d.highlights.length - 1], image: d.gallery[1] }
+const lastStory = usableGallery[1] && d.highlights.length > 1
+  ? { item: d.highlights[d.highlights.length - 1], image: usableGallery[1] }
   : null;
+const storyImages = new Set([firstStory?.image.src, lastStory?.image.src].filter(Boolean));
+const galleryItems = usableGallery.filter((item) => !storyImages.has(item.src));
 
 const editorialHighlights = d.highlights.filter((_, index) => {
   if (firstStory && index === 0) return false;
@@ -92,6 +96,15 @@ const subtitleParts = [
   )}
 
   {editorialHighlights.length > 0 && <HighlightsEditorial items={editorialHighlights} />}
+
+  {galleryItems.length > 0 && (
+    <MediaGallery
+      eyebrow="Впечатления"
+      title="Фотографии маршрута"
+      items={galleryItems}
+    />
+  )}
+
   <Itinerary days={d.itinerary} />
 
   {lastStory && (

@@ -6,9 +6,15 @@ import StoryPair from '../components/editorial/StoryPair.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
+import MediaGallery from '../components/editorial/MediaGallery.astro';
 
 const { entry } = Astro.props;
 const d = entry.data;
+const usedImages = new Set([
+  d.hero?.src,
+  ...d.featureBands.map((band) => band.image),
+].filter(Boolean));
+const galleryItems = d.gallery.filter((item) => !usedImages.has(item.src));
 ---
 
 <BaseLayout
@@ -63,6 +69,14 @@ const d = entry.data;
         reverse={index % 2 === 1}
       />
     )
+  )}
+
+  {galleryItems.length > 0 && (
+    <MediaGallery
+      eyebrow="Фотографии"
+      title={`${d.name}: еще несколько кадров`}
+      items={galleryItems}
+    />
   )}
 
   <LeadForm title={`Собрать путешествие по стране: ${d.name}`} entityId={d.id} />

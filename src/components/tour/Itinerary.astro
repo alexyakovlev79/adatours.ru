@@ -6,10 +6,22 @@ interface Day {
   title: string;
   places?: string[];
   text: string;
-  image?: string;
+  image?: string | {
+    src: string;
+    alt?: string;
+    status?: 'approved' | 'needs_replacement' | 'replaced';
+    replacementReason?: string;
+    intendedSlot?: string;
+  };
 }
 interface Props { days: Day[]; }
 const { days } = Astro.props;
+
+const resolveDayImage = (image: Day['image']) => {
+  if (!image) return null;
+  if (typeof image === 'string') return { src: image, alt: '', status: undefined };
+  return image;
+};
 ---
 
 <section class="itinerary section">
@@ -20,24 +32,28 @@ const { days } = Astro.props;
     </div>
 
     <div class="itinerary__days">
-      {days.map((day, index) => (
+      {days.map((day, index) => {
+        const image = resolveDayImage(day.image);
+        const visibleImage = image && image.status !== 'needs_replacement' ? image : null;
+        return (
         <details class="day" open={index === 0}>
           <summary>
             <span class="day__number">{String(day.day).padStart(2, '0')}</span>
             <span class="day__title">{day.title}</span>
             <span class="day__toggle" aria-hidden="true">+</span>
           </summary>
-          <div class:list={['day__content', { 'day__content--image': day.image }]}>
+          <div class:list={['day__content', { 'day__content--image': visibleImage }]}>
             <div>
               {day.places && day.places.length > 0 && <p class="day__places">{day.places.join(' · ')}</p>}
               <p>{day.text}</p>
             </div>
-            {day.image && (
-              <img src={withBase(day.image)} alt="" loading="lazy" />
+            {visibleImage && (
+              <img src={withBase(visibleImage.src)} alt={visibleImage.alt ?? ''} loading="lazy" />
             )}
           </div>
         </details>
-      ))}
+        );
+      })}
     </div>
   </div>
 </section>

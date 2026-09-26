@@ -32,10 +32,33 @@ hero:
   src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash-1920x1080.webp
   alt: Панорама Рио-де-Жанейро
 gallery:
+  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/mateus-campos-felipe-1629323-unsplash-1920x1080.webp
+    alt: Фламинго в Парке птиц, Фос-ду-Игуасу
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/dharmendra-sahu-ia2kjtrx8y4-unsplash-2-1920x1080.webp
+    alt: Пляж Бузиоса на Атлантическом побережье
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/ugur-arpaci-u18v0toiofu-unsplash-1920x1080.webp
+    alt: Карнавальные костюмы и самба
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio-14-1920x1080.webp
+    alt: Ботанический сад Рио-де-Жанейро
+    intendedSlot: gallery
   - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/vodopady-iguasu-8-1920x1080.webp
     alt: Водопады Игуасу
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/dharmendra-sahu-ia2kjtrx8y4-unsplash-2-1920x1080.webp
-    alt: Рио-де-Жанейро вечером
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1334121-unsplash-1920x1080.webp
+    alt: Катер Macuco Safari у водопадов Игуасу
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/ricardo-frantz-jww5qixn7ee-unsplash-1920x1080.webp
+    alt: Поезд к Корковаду через лес Тижука
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/fogo_tableside1-1920x1080.webp
+    alt: Приготовление бразильского шурраско
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/caipirinha-cocktail-1920x1080.webp
+    alt: Бразильская кайпиринья
+    intendedSlot: gallery
 featured: true
 priority: 100
 lead: 11 дней между Рио, Игуасу и Атлантикой. Сначала город и его панорамы, затем водопады с бразильской и аргентинской сторон, в финале несколько дней у океана в Бузиосе.
@@ -57,49 +80,90 @@ itinerary:
     title: Прибытие в Рио
     places: [Рио-де-Жанейро]
     text: Встреча в аэропорту, трансфер и размещение. Остаток дня можно оставить свободным, выйти к Копакабане или Ипанеме и спокойно освоиться после перелета.
-    image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio-22-1920x1080.webp
+      alt: Статуя Христа-Искупителя и панорама Рио-де-Жанейро
+      intendedSlot: itinerary:day-1
   - day: 2
     title: Сахарная голова
     places: [Урка, Сахарная голова]
     text: Подъем по канатной дороге на Урку и Сахарную голову. Сверху хорошо читаются залив Гуанабара, пляжи и гранитные холмы, из которых собран городской рельеф.
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1-1920x1080.webp
+      alt: Канатная дорога на Сахарную голову
+      intendedSlot: itinerary:day-2
   - day: 3
     title: Корковаду и Христос-Искупитель
     places: [Корковаду, Тижука]
     text: Поездка к статуе Христа и панораме Рио с Корковаду. В зависимости от программы день можно дополнить Ботаническим садом или другими районами города.
-    image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/sebastien-goldberg-zzvzhtvg2gc-unsplash-1920x1080.webp
+      alt: Панорама Рио-де-Жанейро с Корковаду
+      intendedSlot: itinerary:day-3
   - day: 4
     title: Свободный Рио
     places: [Рио-де-Жанейро]
     text: День без обязательной программы. По запросу добавляются вертолет, гастрономический маршрут, прогулка по историческим районам или другие индивидуальные активности.
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio-12-1920x1080.webp
+      alt: Полет на вертолете над Рио-де-Жанейро
+      intendedSlot: itinerary:day-4
   - day: 5
     title: Перелет в Игуасу
     places: [Рио-де-Жанейро, Фос-ду-Игуасу]
     text: Перелет на юг страны, встреча и трансфер в отель. Вечер остается свободным перед 2 днями у водопадов.
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash-1920x1080.webp
+      alt: Водопады Игуасу
+      intendedSlot: itinerary:day-5
   - day: 6
     title: Бразильская сторона Игуасу
     places: [Национальный парк Игуасу]
     text: Маршрут идет по смотровым площадкам с панорамой каскадов. По желанию можно добавить Парк птиц или Макуко Сафари.
-    image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/vodopady-iguasu-8-1920x1080.webp
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash-1920x1080.webp
+      alt: Бразильская сторона водопадов Игуасу
+      intendedSlot: itinerary:day-6
   - day: 7
     title: Аргентинская сторона
     places: [Пуэрто-Игуасу, Глотка дьявола]
     text: Переезд через границу и прогулка по аргентинской части парка. Здесь настилы проходят между потоками, а главная точка дня находится у Глотки дьявола.
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/iguazu-22-1920x1080.webp
+      alt: Глотка дьявола на водопадах Игуасу
+      intendedSlot: itinerary:day-7
   - day: 8
     title: Рио и переезд в Бузиос
     places: [Рио-де-Жанейро, Бузиос]
     text: Перелет обратно в Рио и переезд на Атлантическое побережье. После экскурсионной части путешествия темп становится заметно спокойнее.
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/buzios/buzios-4-1920x1080.webp
+      alt: Бухта Бузиоса с яхтами
+      intendedSlot: itinerary:day-8
   - day: 9
     title: Пляжи Бузиоса
     places: [Бузиос]
     text: Свободный день. Можно выбрать спокойную бухту, провести время у океана или вернуться в город к вечеру.
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/buzios/buzios-3-1920x1080.webp
+      alt: Пляж в Бузиосе
+      intendedSlot: itinerary:day-9
   - day: 10
     title: Свободный день или морская прогулка
     places: [Бузиос]
     text: Еще один день без жесткого расписания. По желанию добавляется лодочная прогулка вдоль бухт и островов.
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/45-1920x1080.webp
+      alt: Rua das Pedras в Бузиосе
+      intendedSlot: itinerary:day-10
   - day: 11
     title: Возвращение в Рио
     places: [Бузиос, Рио-де-Жанейро]
     text: Завтрак, выезд с побережья и трансфер в аэропорт Рио к международному рейсу.
+    image:
+      src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/jaime-dantas-sp4cvudiy5u-unsplash-1920x1080.webp
+      alt: Пляж Ипанема в Рио-де-Жанейро
+      intendedSlot: itinerary:day-11
 included:
   - Точный состав включенных услуг фиксируется в индивидуальном предложении
 notIncluded:

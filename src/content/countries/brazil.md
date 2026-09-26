@@ -13,10 +13,45 @@ hero:
   src: https://brasiltours.ru/image/cache/countries/brazil/tild3463-3039-4366-b661-663030613337-thales-botelho-de-so-1920x1080.webp
   alt: Панорама Рио-де-Жанейро
 gallery:
-  - src: /media/prototype/lencois.jpg
-    alt: Дюны и лагуны Ленсойс-Мараньенсис
-  - src: /media/prototype/amazon.jpg
-    alt: Амазония
+  - src: https://brasiltours.ru/image/cache/frisas_esp-1920x1080.webp
+    alt: Бразильский Самбадром во время карнавала
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/arquibancadas-8-1920x1080.webp
+    alt: Трибуны Самбадрома в Рио-де-Жанейро
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/f/i/file_2_2-1920x1080.webp
+    alt: Пляжный отдых в Бразилии
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/a/n/anta-1920x1080.webp
+    alt: Капибара в Бразилии
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/g/r/groot-1920x1080.webp
+    alt: Атлантическое побережье Бразилии
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/f/i/file-1920x1080.webp
+    alt: Побережье Бразилии
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/r/i/rio-1920x1080.webp
+    alt: Статуя Христа-Искупителя в Рио-де-Жанейро
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/b/e/beach-1920x1080.webp
+    alt: Пляжный курорт в Бразилии
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/f/i/file_22-1920x1080.webp
+    alt: Дельфины у побережья Бразилии
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/f/i/file_1_3-1920x1080.webp
+    alt: Пляж в Рио-де-Жанейро
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/b/e/beach_BeachCouple_l-1920x1080.webp
+    alt: Романтический отдых на побережье Бразилии
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/f/o/foz-1920x1080.webp
+    alt: Водопады Игуасу
+    intendedSlot: gallery
+  - src: https://brasiltours.ru/image/cache/catalog/category/f/o/foz2-1920x1080.webp
+    alt: Каскады водопадов Игуасу
+    intendedSlot: gallery
 regions:
   - Рио-де-Жанейро
   - Игуасу

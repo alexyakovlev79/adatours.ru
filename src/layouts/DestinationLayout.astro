@@ -79,6 +79,8 @@ const destinationSchema = {
     title={d.name}
     intro={d.summary}
     image={d.hero?.src}
+    mediaStatus={d.hero?.status}
+    replacementReason={d.hero?.replacementReason}
     ctaLabel="Собрать поездку"
   />
 
@@ -98,6 +100,8 @@ const destinationSchema = {
       title={band.title}
       text={band.text}
       image={band.image}
+      mediaStatus={band.imageStatus}
+      replacementReason={band.imageReplacementReason}
       reverse={index % 2 === 1}
     />
   ))}
@@ -119,6 +123,8 @@ const destinationSchema = {
           title={tour.data.title}
           text={tour.data.lead}
           image={tour.data.hero?.src}
+          mediaStatus={tour.data.hero?.status}
+          replacementReason={tour.data.hero?.replacementReason}
           href={`/tury/${tour.data.slug}/`}
           align={index % 2 === 1 ? 'right' : 'left'}
         />

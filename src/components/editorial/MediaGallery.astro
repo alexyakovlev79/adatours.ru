@@ -22,7 +22,8 @@ const {
   title = 'Еще несколько кадров',
 } = Astro.props;
 
-const visibleItems = items.filter((item) => item.status !== 'needs_replacement');
+// Media QA status is metadata, not a visibility switch.
+const visibleItems = items;
 ---
 
 {visibleItems.length > 0 && (
@@ -38,6 +39,7 @@ const visibleItems = items.filter((item) => item.status !== 'needs_replacement')
           <figure
             class:list={['media-gallery__item', `media-gallery__item--${index % 6}`]}
             data-media-status={item.status ?? 'legacy'}
+            data-replacement-reason={item.replacementReason}
           >
             <img src={withBase(item.src)} alt={item.alt ?? ''} loading="lazy" />
             {item.caption && <figcaption>{item.caption}</figcaption>}

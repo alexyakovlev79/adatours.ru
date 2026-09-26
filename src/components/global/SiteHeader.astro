@@ -10,13 +10,15 @@ interface Props {
 }
 
 const { theme = 'light' } = Astro.props;
+const logoWhite = withBase('/brand/adatours-logo-white.svg');
+const logoBlack = withBase('/brand/adatours-logo-black.svg');
 ---
 
 <header class:list={['site-header', `site-header--${theme}`]} data-site-header>
   <div class="site-header__inner">
     <a class="brand" href={withBase('/')} aria-label="Ada Tours, на главную">
-      <span class="brand__ada">ADA</span>
-      <span class="brand__tours">TOURS</span>
+      <img class="brand__logo brand__logo--white" src={logoWhite} width="553" height="184" alt="" aria-hidden="true" />
+      <img class="brand__logo brand__logo--black" src={logoBlack} width="553" height="184" alt="" aria-hidden="true" />
     </a>
 
     <nav class="desktop-nav" aria-label="Основная навигация">
@@ -149,22 +151,38 @@ const { theme = 'light' } = Astro.props;
   }
 
   .brand {
-    display: inline-grid;
-    line-height: 0.78;
-    font-family: var(--font-display);
-    letter-spacing: -0.055em;
+    display: inline-flex;
+    align-items: center;
+    width: clamp(116px, 8.6vw, 138px);
+    line-height: 0;
   }
 
-  .brand__ada {
-    font-size: 1.5rem;
-    font-weight: 700;
+  .brand__logo {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
-  .brand__tours {
-    margin-left: 0.85rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
+  .brand__logo--black {
+    display: none;
+  }
+
+  .site-header--dark .brand__logo--white,
+  .site-header.is-scrolled .brand__logo--white {
+    display: none;
+  }
+
+  .site-header--dark .brand__logo--black,
+  .site-header.is-scrolled .brand__logo--black {
+    display: block;
+  }
+
+  .site-header.is-open .brand__logo--white {
+    display: block;
+  }
+
+  .site-header.is-open .brand__logo--black {
+    display: none;
   }
 
   .desktop-nav {
@@ -214,6 +232,10 @@ const { theme = 'light' } = Astro.props;
   }
 
   @media (max-width: 1080px) {
+    .brand {
+      width: 108px;
+    }
+
     .site-header__inner {
       grid-template-columns: 1fr auto auto;
       gap: 4px;

@@ -21,7 +21,6 @@ for (const target of targets) {
   const response = await fetch(target.url, {
     headers: {
       'user-agent': 'Mozilla/5.0 (compatible; AdaToursSiteBuild/1.0)',
-      'referer': 'https://brasiltours.ru/',
       'accept': 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
     },
     redirect: 'follow',

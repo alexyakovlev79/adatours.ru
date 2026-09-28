@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Порту-Алегри, административный центр штата Риу-Гранди-ду-Сул, расположен у Гуаибы и дает другой образ Бразилии: зеленый южный город, старые кварталы, прогулки у воды и знакомство с культурой гаучу.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/porto-alegre-1920x1080.webp
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/porto-alegre-1200x498.webp
   alt: Порту-Алегри на юге Бразилии
 gallery: []
 themes:

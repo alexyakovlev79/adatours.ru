@@ -4,6 +4,7 @@ import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
+import DestinationBand from '../components/editorial/DestinationBand.astro';
 import { withBase } from '../lib/paths';
 
 const { entry } = Astro.props;
@@ -121,41 +122,32 @@ const destinationTypeLabel = {
   )}
 
   {tourEntries.length > 0 && (
-    <section class="country-linked country-linked--tours section" aria-labelledby="country-tours-title">
-      <div class="container">
-        <div class="country-linked__heading">
-          <p class="eyebrow">Туры</p>
-          <h2 id="country-tours-title">{d.name}: туры и маршруты</h2>
-          <p>
-            Все опубликованные программы, где эта страна входит в маршрут.
-            Многострановые поездки тоже включены.
-          </p>
+    <section class="country-tours" aria-labelledby="country-tours-title">
+      <div class="country-tours__heading section">
+        <div class="container">
+          <div class="country-linked__heading country-linked__heading--title-only">
+            <p class="eyebrow">Туры</p>
+            <h2 id="country-tours-title">{d.name}: туры и маршруты</h2>
+          </div>
         </div>
+      </div>
 
-        <div class="country-linked__grid">
-          {tourEntries.map((item, index) => {
-            const image = item.data.hero?.src ? withBase(item.data.hero.src) : undefined;
-            const meta = [
+      <div class="country-tours__bands">
+        {tourEntries.map((item, index) => (
+          <DestinationBand
+            eyebrow={[
               item.data.durationDays ? `${item.data.durationDays} дней` : '',
               item.data.format ?? '',
-            ].filter(Boolean).join(' · ');
-            return (
-              <a
-                class:list={['entity-poster', 'entity-poster--tour', { 'entity-poster--wide': index % 5 === 0 }]}
-                href={withBase(`/tury/${item.data.slug}/`)}
-                style={image ? `--entity-image: url("${image}")` : undefined}
-              >
-                <span class="entity-poster__shade" aria-hidden="true"></span>
-                <span class="entity-poster__content">
-                  {meta && <span class="entity-poster__meta">{meta}</span>}
-                  <strong>{item.data.title}</strong>
-                  <span class="entity-poster__text">{item.data.lead}</span>
-                  <span class="entity-poster__link">Смотреть <span aria-hidden="true">↗</span></span>
-                </span>
-              </a>
-            );
-          })}
-        </div>
+            ].filter(Boolean).join(' · ')}
+            title={item.data.title}
+            text={item.data.lead}
+            image={item.data.hero?.src}
+            mediaStatus={item.data.hero?.status}
+            replacementReason={item.data.hero?.replacementReason}
+            href={`/tury/${item.data.slug}/`}
+            align={index % 2 === 1 ? 'right' : 'left'}
+          />
+        ))}
       </div>
     </section>
   )}
@@ -215,8 +207,16 @@ const destinationTypeLabel = {
     background: var(--color-bg);
   }
 
-  .country-linked--tours {
+  .country-tours {
     background: #f5f0e8;
+  }
+
+  .country-tours__heading {
+    background: #f5f0e8;
+  }
+
+  .country-tours__bands {
+    display: block;
   }
 
   .country-linked__heading {
@@ -243,6 +243,10 @@ const destinationTypeLabel = {
     margin: 0;
     color: color-mix(in srgb, var(--color-ink) 68%, transparent);
     font-size: var(--text-lg);
+  }
+
+  .country-linked__heading--title-only {
+    margin-bottom: 0;
   }
 
   .country-linked__grid {

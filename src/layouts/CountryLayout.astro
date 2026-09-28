@@ -92,7 +92,7 @@ const destinationTypeLabel = {
   </section>
 
   {destinationEntries.length > 0 && (
-    <section class="country-linked section" aria-label={`Направления: ${d.name}`}>
+    <section class="country-linked country-linked--destinations section" aria-label={`Направления: ${d.name}`}>
       <div class="container">
         <div class="country-linked__grid">
           {destinationEntries.map((item, index) => {
@@ -125,9 +125,10 @@ const destinationTypeLabel = {
     <section class="country-tours" aria-labelledby="country-tours-title">
       <div class="country-tours__heading section">
         <div class="container">
-          <div class="country-linked__heading country-linked__heading--title-only">
+          <div class="country-linked__heading country-linked__heading--tours">
             <p class="eyebrow">Туры</p>
-            <h2 id="country-tours-title">{d.name}: туры и маршруты</h2>
+            <h2 id="country-tours-title">Туры в {d.name}</h2>
+            <p>Готовый маршрут можно взять за основу и адаптировать под ваши даты, темп и интересы.</p>
           </div>
         </div>
       </div>
@@ -189,6 +190,7 @@ const destinationTypeLabel = {
 
 <style>
   .country-copy {
+    padding-block: clamp(58px, 5.5vw, 82px);
     background: var(--color-bg);
   }
 
@@ -197,14 +199,22 @@ const destinationTypeLabel = {
   }
 
   .country-copy__prose :global(p) {
-    margin-block: 0 1.35em;
+    margin-block: 0 1.25em;
     color: color-mix(in srgb, var(--color-ink) 82%, transparent);
     font-size: clamp(1.18rem, 1.45vw, 1.48rem);
     line-height: 1.55;
   }
 
+  .country-copy__prose :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
   .country-linked {
     background: var(--color-bg);
+  }
+
+  .country-linked--destinations {
+    padding-top: 0;
   }
 
   .country-tours {
@@ -212,6 +222,7 @@ const destinationTypeLabel = {
   }
 
   .country-tours__heading {
+    padding-block: clamp(68px, 7vw, 108px);
     background: #f5f0e8;
   }
 
@@ -245,8 +256,12 @@ const destinationTypeLabel = {
     font-size: var(--text-lg);
   }
 
-  .country-linked__heading--title-only {
+  .country-linked__heading--tours {
     margin-bottom: 0;
+  }
+
+  .country-linked__heading--tours > p:last-child {
+    max-width: 650px;
   }
 
   .country-linked__grid {

@@ -9,7 +9,7 @@ destinationType: resort
 summary: >-
   Бузиос подходит для нескольких спокойных дней у океана после Рио: пляжи и бухты, морские прогулки, дайвинг и серфинг, смотровые площадки и вечерняя Руа дас Педрас.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/dharmendra-sahu-ia2kjtrx8y4-unsplash-2-1920x1080.webp
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/dharmendra-sahu-ia2kjtrx8y4-unsplash-2-1200x522.webp
   alt: Побережье Бузиоса в Бразилии
 gallery:
   - src: https://brasiltours.ru/image/cache/catalog/category/2/1/2180577202_cf51d7904f_b-1920x1080.webp

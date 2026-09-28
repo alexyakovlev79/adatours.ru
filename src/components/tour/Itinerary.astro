@@ -219,9 +219,12 @@ const resolveDayImage = (image: Day['image']) => {
     }
 
     .day__media {
+      position: relative;
+      left: calc(-1 * (var(--gutter) + 64px));
       width: 100vw;
-      margin-left: calc(50% - 50vw - 32px);
-      margin-right: calc(50% - 50vw + 32px);
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .day__content img {

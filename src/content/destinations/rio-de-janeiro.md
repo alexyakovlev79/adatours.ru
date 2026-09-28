@@ -17,37 +17,8 @@ hero:
   src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
   alt: Рио-де-Жанейро вечером
 gallery:
-  - src: /media/rio/rio-boat.webp
-    alt: Прогулка на катамаране у побережья Рио-де-Жанейро
-    status: replaced
-    replacementReason: low_resolution
-    intendedSlot: gallery
-  - src: /media/rio/rio-fruit-market.webp
-    alt: Фрукты на рынке в Рио-де-Жанейро
-    status: replaced
-    replacementReason: low_resolution
-    intendedSlot: gallery
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN5634_14-1920x1080.webp
-    alt: Рио-де-Жанейро
-    intendedSlot: gallery
-  - src: /media/rio/rio-beach-bar-night.webp
-    alt: Вечерний бар на набережной Рио-де-Жанейро
-    status: replaced
-    replacementReason: low_resolution
-    intendedSlot: gallery
-  - src: /media/rio/rio-christ-night.webp
-    alt: Ночной Рио-де-Жанейро со смотровой площадки Корковаду
-    status: replaced
-    replacementReason: low_resolution
-    intendedSlot: gallery
-  - src: /media/rio/rio-hang-glider.webp
-    alt: Полет на дельтаплане над побережьем Рио-де-Жанейро
-    status: replaced
-    replacementReason: low_resolution
-    intendedSlot: gallery
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN5634_16-1920x1080.webp
-    alt: Рио-де-Жанейро
-    intendedSlot: gallery
+  - src: /media/prototype/rio-panorama.jpg
+    alt: Панорама Рио-де-Жанейро
 themes:
   - city
   - culture
@@ -75,8 +46,6 @@ featureBands:
     text: >-
       Корковаду и Сахарная голова дают два разных взгляда на город, бухты, горы и океан. Их можно соединить с историческим центром, пляжами и Санта-Терезой.
     image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
-    imageStatus: needs_replacement
-    imageReplacementReason: duplicate_on_page
   - eyebrow: Вечер
     title: Лапа и культурная жизнь Рио
     text: >-

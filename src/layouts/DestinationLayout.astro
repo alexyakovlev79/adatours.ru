@@ -8,7 +8,6 @@ import TripStats from '../components/tour/TripStats.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
-import MediaGallery from '../components/editorial/MediaGallery.astro';
 import { withBase } from '../lib/paths';
 
 const { entry } = Astro.props;
@@ -27,11 +26,6 @@ const relatedTours = tourEntries
   .slice(0, 3);
 const country = countryEntries[0];
 const countryName = country?.data.name ?? '';
-const usedImages = new Set([
-  d.hero?.src,
-  ...d.featureBands.map((band) => band.image),
-].filter(Boolean));
-const galleryItems = d.gallery.filter((item) => !usedImages.has(item.src));
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://adatours.ru').toString();
 const countryUrl = country
@@ -106,14 +100,6 @@ const destinationSchema = {
     />
   ))}
 
-  {galleryItems.length > 0 && (
-    <MediaGallery
-      eyebrow="Фотографии"
-      title={`${d.name}: детали места`}
-      items={galleryItems}
-      layout={d.id === 'destination_brazil_rio' ? 'flush' : 'editorial'}
-    />
-  )}
 
   {relatedTours.length > 0 && (
     <>

@@ -1,0 +1,55 @@
+name: Restore legacy Wave 0-3 media
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/restore-legacy-media.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Download exact legacy media from brasiltours.ru
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p public/media/restored
+          UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.36'
+          REF='https://brasiltours.ru/'
+
+          fetch() {
+            local url="$1"
+            local out="$2"
+            curl --fail --location --retry 3 --retry-delay 2 \
+              -A "$UA" -e "$REF" "$url" -o "$out"
+            test -s "$out"
+            test "$(wc -c < "$out")" -gt 20000
+          }
+
+          fetch 'https://brasiltours.ru/image/cache/countries/brazil/tild3463-3039-4366-b661-663030613337-thales-botelho-de-so-1920x1080.webp' 'public/media/restored/brazil-hero-thales-botelho.webp'
+          fetch 'https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp' 'public/media/restored/rio-micaela-parente.webp'
+          fetch 'https://brasiltours.ru/image/cache/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash-1920x1080.webp' 'public/media/restored/luxury-brazil-hero.webp'
+          fetch 'https://brasiltours.ru/image/cache/countries/argentina/new-photos/kulli-kittus-icwoh2prgu4-unsplash-1920x1080.webp' 'public/media/restored/brazil-argentina-peru-hero.webp'
+          fetch 'https://brasiltours.ru/image/cache/countries/brazil/new-pics/praia-grande-1920x1080.webp' 'public/media/restored/south-brazil-hero.webp'
+
+          file public/media/restored/*
+
+      - name: Commit restored media
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/media/restored
+          git diff --cached --quiet && exit 0
+          git commit -m 'Restore exact Wave 0-3 media locally'
+          git push

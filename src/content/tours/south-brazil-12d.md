@@ -34,7 +34,7 @@ route:
 priceNote: Стоимость рассчитывается под даты, отели, внутренние перелеты и состав экскурсий.
 dates: []
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/praia-grande-1920x1080.webp
+  src: /media/restored/south-brazil-hero.webp
   alt: Побережье и природный маршрут по югу Бразилии
 gallery:
   - src: https://brasiltours.ru/image/cache/gramadu%20b-1920x1080.webp

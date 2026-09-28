@@ -7,6 +7,7 @@ import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import { withBase } from '../lib/paths';
 
 const { entry } = Astro.props;
+// Country page: linked destination/tour catalogue for internal linking and discovery.
 const d = entry.data;
 
 const [destinationEntries, tourEntries, excursionEntries] = await Promise.all([

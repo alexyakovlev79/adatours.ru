@@ -39,13 +39,13 @@ const resolveDayImage = (image: Day['image']) => {
     </div>
 
     <div class="itinerary__days">
-      {days.map((day, index) => {
+      {days.map((day) => {
         const image = resolveDayImage(day.image);
         const dayImages = day.images?.length ? day.images : (image ? [image] : []);
         // Source-linked images stay attached to the exact itinerary day.
         const visibleImage = dayImages.length > 0;
         return (
-        <details class="day" open={true}>
+        <details class="day" open>
           <summary>
             <span class="day__number">{String(day.day).padStart(2, '0')}</span>
             <span class="day__title">{day.title}</span>
@@ -85,12 +85,10 @@ const resolveDayImage = (image: Day['image']) => {
 
   @media (min-width: 1100px) {
     .itinerary__container {
-      width: 100vw;
+      width: 100%;
       max-width: none;
-      margin-left: calc(50% - 50vw);
-      margin-right: calc(50% - 50vw);
-      padding-left: clamp(24px, 2vw, 40px);
-      padding-right: clamp(24px, 2vw, 40px);
+      margin-inline: 0;
+      padding-inline: 24px;
     }
   }
 
@@ -157,15 +155,12 @@ const resolveDayImage = (image: Day['image']) => {
     transform: rotate(45deg);
   }
 
-  .day__content {
+  .day__content,
+  .day__content--image {
     display: grid;
-    grid-template-columns: minmax(0, 720px);
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px;
     padding: 0 0 54px 100px;
-  }
-
-  .day__content--image {
-    grid-template-columns: minmax(0, 920px);
   }
 
   .day__content p {
@@ -202,7 +197,6 @@ const resolveDayImage = (image: Day['image']) => {
 
     .day__content,
     .day__content--image {
-      grid-template-columns: 1fr;
       padding-left: 0;
     }
   }

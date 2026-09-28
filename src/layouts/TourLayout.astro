@@ -15,8 +15,7 @@ import MediaGallery from '../components/editorial/MediaGallery.astro';
 const { entry } = Astro.props;
 const d = entry.data;
 const roundedPrice = typeof d.priceFrom === 'number' ? Math.round(d.priceFrom) : null;
-const money = roundedPrice && d.currency
-  ? `от ${d.currency === 'USD' ? '
+const currencyPrefix = d.currency === 'USD' ? '
 
 const stats = [
   d.durationDays ? { value: String(d.durationDays), label: 'дней' } : null,
@@ -134,7 +133,9 @@ const subtitleParts = [
   .tour-copy :global(.prose) { padding-top: 0; padding-bottom: 0; }
   .tour-copy :global(.prose:empty) { display: none; }
 </style>
- : ''}${roundedPrice.toLocaleString('ru-RU', { maximumFractionDigits: 0 })}`
+ : '';
+const money = roundedPrice && d.currency
+  ? 'от ' + currencyPrefix + roundedPrice.toLocaleString('ru-RU', { maximumFractionDigits: 0 })
   : 'По запросу';
 
 const publicPriceNote = d.priceNote && !/стоимость\s+на\s+исходной\s+странице/i.test(d.priceNote)

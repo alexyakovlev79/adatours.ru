@@ -14,7 +14,7 @@ destinationType: city
 summary: >-
   Рио-де-Жанейро можно сделать поездкой на 3–7 дней или первой частью большого маршрута по Бразилии: Корковаду, Сахарная голова, исторический центр, пляжи, Санта-Тереза, Лапа и свободное время.
 hero:
-  src: /media/restored/rio-micaela-parente.webp
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x787.webp
   alt: Рио-де-Жанейро вечером
 gallery:
   - src: /media/prototype/rio-panorama.jpg
@@ -45,7 +45,7 @@ featureBands:
     title: Корковаду и Сахарная голова
     text: >-
       Корковаду и Сахарная голова дают два разных взгляда на город, бухты, горы и океан. Их можно соединить с историческим центром, пляжами и Санта-Терезой.
-    image: /media/restored/rio-micaela-parente.webp
+    image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1200x492.webp
   - eyebrow: Вечер
     title: Лапа и культурная жизнь Рио
     text: >-

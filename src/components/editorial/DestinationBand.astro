@@ -100,6 +100,13 @@ const resolvedHref = withBase(href);
     margin-left: auto;
   }
 
+  /* Country-page tour bands: keep long tour names from covering the photography. */
+  .band-card .band h2 {
+    max-width: 1120px;
+    font-size: clamp(2.15rem, 3vw, 3.65rem);
+    line-height: 1.04;
+  }
+
   .band {
     position: relative;
     display: grid;
@@ -170,6 +177,12 @@ const resolvedHref = withBase(href);
     text-transform: uppercase;
   }
   @media (max-width: 720px) {
+    .band-card .band h2 {
+      max-width: 100%;
+      font-size: clamp(1.7rem, 7.2vw, 2.35rem);
+      line-height: 1.06;
+    }
+
     .band-card--right .band-card__below-inner {
       text-align: left;
     }

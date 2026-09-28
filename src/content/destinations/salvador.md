@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Сальвадор в штате Баия раскрывается через Пелуриньо, подъемник Ласерда, церкви и площади исторического центра, музыку, капоэйру, афро-бразильские традиции и отдых у океана.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/salvador-da-bahia-1920x1080.webp
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/salvador-da-bahia-1200x546.webp
   alt: Исторический центр Сальвадора в Бразилии
 gallery:
   - src: https://brasiltours.ru/image/cache/catalog/category/S/S/SSA_Salvador_da_Bahia_church2_b-1920x1080.webp

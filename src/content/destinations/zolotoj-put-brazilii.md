@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: >-
   Золотой путь Бразилии связывает исторические города Минас-Жерайс, старые золотые шахты, барочную архитектуру и современное искусство. Основные точки маршрута - Ору-Прету, Мариана, Конгоньяс, Белу-Оризонти и Иньотим.
 hero:
-  src: https://brasiltours.ru/image/cache/oru%20pretu-1920x1080.webp
+  src: https://brasiltours.ru/image/cache/oru%20pretu-800x600.webp
   alt: Исторический город Ору-Прету на Золотом пути Бразилии
 gallery: []
 themes:

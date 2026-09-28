@@ -9,7 +9,7 @@ destinationType: island
 summary: >-
   Фернанду-ди-Норонья - архипелаг в Атлантике с вулканическими берегами, прозрачной водой и богатой морской жизнью. Сюда едут на несколько дней ради дайвинга, снорклинга, пляжей и океана.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/fernando-de-noronha-1920x1080.webp
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/fernando-de-noronha-1200x495.webp
   alt: Архипелаг Фернанду-ди-Норонья в Бразилии
 gallery: []
 themes:

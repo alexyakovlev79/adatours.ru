@@ -73,15 +73,17 @@ const crumbs = [
       : withBase(`/${segments.slice(0, index + 1).join('/')}/`),
   })),
 ];
+
+// The visible breadcrumb must not duplicate the page H1.
+// Keep the current page in BreadcrumbList schema (BaseLayout), but omit it from visual navigation.
+const visibleCrumbs = crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
 ---
 
 <nav class:list={['breadcrumbs', `breadcrumbs--${theme}`]} aria-label="Хлебные крошки">
   <ol>
-    {crumbs.map((crumb, index) => (
+    {visibleCrumbs.map((crumb, index) => (
       <li>
-        {index === crumbs.length - 1
-          ? <span aria-current="page">{crumb.label}</span>
-          : <a href={crumb.href}>{crumb.label}</a>}
+        <a href={crumb.href}>{crumb.label}</a>
       </li>
     ))}
   </ol>

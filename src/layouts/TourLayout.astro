@@ -130,7 +130,7 @@ const subtitleParts = [
 
   <TourPricing price={money} note={publicPriceNote} />
   {(d.included.length > 0 || d.notIncluded.length > 0) && (
-    <IncludedExcluded included={d.included} notIncluded={d.notIncluded} />
+    <IncludedExcluded included={d.included} notIncluded={d.notIncluded} notes={d.notes} />
   )}
   <LeadForm title="Получить расчет и адаптировать маршрут под ваши даты" entityId={d.id} />
 </BaseLayout>

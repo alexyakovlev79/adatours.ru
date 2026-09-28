@@ -10,6 +10,7 @@ interface Props {
   align?: 'left' | 'right';
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
+  descriptionBelow?: boolean;
 }
 
 const {
@@ -21,6 +22,7 @@ const {
   align = 'left',
   mediaStatus,
   replacementReason,
+  descriptionBelow = false,
 } = Astro.props;
 
 const resolvedImage = image ? withBase(image) : undefined;
@@ -28,20 +30,76 @@ const style = resolvedImage ? `--band-image: url("${resolvedImage}")` : undefine
 const resolvedHref = withBase(href);
 ---
 
-<a class:list={['band', `band--${align}`, { 'band--image': image }]} href={resolvedHref} style={style}
-  data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
-  data-replacement-reason={replacementReason}
->
-  <div class="band__overlay"></div>
-  <div class="band__content">
-    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
-    <h2>{title}</h2>
-    {text && <p class="band__text">{text}</p>}
-    <span class="band__link">Смотреть <span aria-hidden="true">↗</span></span>
-  </div>
-</a>
+{descriptionBelow ? (
+  <a
+    class:list={['band-card', `band-card--${align}`]}
+    href={resolvedHref}
+    data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
+    data-replacement-reason={replacementReason}
+  >
+    <div class:list={['band', `band--${align}`, { 'band--image': image }]} style={style}>
+      <div class="band__overlay"></div>
+      <div class="band__content">
+        {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+        <h2>{title}</h2>
+        <span class="band__link">Смотреть <span aria-hidden="true">↗</span></span>
+      </div>
+    </div>
+    {text && (
+      <div class="band-card__below">
+        <div class="band-card__below-inner">
+          <p>{text}</p>
+        </div>
+      </div>
+    )}
+  </a>
+) : (
+  <a class:list={['band', `band--${align}`, { 'band--image': image }]} href={resolvedHref} style={style}
+    data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
+    data-replacement-reason={replacementReason}
+  >
+    <div class="band__overlay"></div>
+    <div class="band__content">
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      <h2>{title}</h2>
+      {text && <p class="band__text">{text}</p>}
+      <span class="band__link">Смотреть <span aria-hidden="true">↗</span></span>
+    </div>
+  </a>
+)}
 
 <style>
+  .band-card {
+    display: block;
+    background: var(--color-bg);
+  }
+
+  .band-card__below {
+    background: var(--color-bg);
+  }
+
+  .band-card__below-inner {
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+    padding-block: clamp(24px, 3vw, 38px);
+  }
+
+  .band-card__below p {
+    max-width: 760px;
+    margin: 0;
+    color: color-mix(in srgb, var(--color-ink) 76%, transparent);
+    font-size: clamp(1rem, 1.25vw, 1.14rem);
+    line-height: 1.55;
+  }
+
+  .band-card--right .band-card__below-inner {
+    text-align: right;
+  }
+
+  .band-card--right .band-card__below p {
+    margin-left: auto;
+  }
+
   .band {
     position: relative;
     display: grid;
@@ -110,5 +168,18 @@ const resolvedHref = withBase(href);
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
+  }
+  @media (max-width: 720px) {
+    .band-card--right .band-card__below-inner {
+      text-align: left;
+    }
+
+    .band-card--right .band-card__below p {
+      margin-left: 0;
+    }
+
+    .band-card__below-inner {
+      padding-block: 18px 24px;
+    }
   }
 </style>

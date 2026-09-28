@@ -13,6 +13,13 @@ interface Day {
     replacementReason?: string;
     intendedSlot?: string;
   };
+  images?: Array<{
+    src: string;
+    alt?: string;
+    status?: 'approved' | 'needs_replacement' | 'replaced';
+    replacementReason?: string;
+    intendedSlot?: string;
+  }>;
 }
 interface Props { days: Day[]; }
 const { days } = Astro.props;
@@ -34,8 +41,9 @@ const resolveDayImage = (image: Day['image']) => {
     <div class="itinerary__days">
       {days.map((day, index) => {
         const image = resolveDayImage(day.image);
-        // needs_replacement remains visible until a real replacement is installed.
-        const visibleImage = image;
+        const dayImages = day.images?.length ? day.images : (image ? [image] : []);
+        // Source-linked images stay attached to the exact itinerary day.
+        const visibleImage = dayImages.length > 0;
         return (
         <details class="day" open={index === 0}>
           <summary>
@@ -49,13 +57,17 @@ const resolveDayImage = (image: Day['image']) => {
               <p>{day.text}</p>
             </div>
             {visibleImage && (
-              <img
-                src={withBase(visibleImage.src)}
-                alt={visibleImage.alt ?? ''}
-                loading="lazy"
-                data-media-status={visibleImage.status ?? 'legacy'}
-                data-replacement-reason={visibleImage.replacementReason}
-              />
+              <div class="day__media">
+                {dayImages.map((item) => (
+                  <img
+                    src={withBase(item.src)}
+                    alt={item.alt ?? ''}
+                    loading="lazy"
+                    data-media-status={item.status ?? 'legacy'}
+                    data-replacement-reason={item.replacementReason}
+                  />
+                ))}
+              </div>
             )}
           </div>
         </details>
@@ -154,6 +166,11 @@ const resolveDayImage = (image: Day['image']) => {
     font-size: .78rem !important;
     letter-spacing: .08em;
     text-transform: uppercase;
+  }
+
+  .day__media {
+    display: grid;
+    gap: 16px;
   }
 
   .day__content img {

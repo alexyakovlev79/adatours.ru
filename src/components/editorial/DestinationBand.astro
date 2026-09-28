@@ -34,11 +34,12 @@ const resolvedHref = withBase(href);
   <a
     class:list={['band-card', `band-card--${align}`]}
     href={resolvedHref}
-    style={style}
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
     data-replacement-reason={replacementReason}
   >
-    <span class="band-card__media" aria-hidden="true"></span>
+    {resolvedImage
+      ? <img class="band-card__media" src={resolvedImage} alt="" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer" />
+      : <span class="band-card__media" aria-hidden="true"></span>}
     <span class="band-card__overlay" aria-hidden="true"></span>
     {eyebrow && <span class="band-card__eyebrow eyebrow">{eyebrow}</span>}
     <strong class="band-card__title">{title}</strong>
@@ -88,9 +89,14 @@ const resolvedHref = withBase(href);
 
   .band-card__media {
     z-index: -2;
-    background-image: var(--band-image);
-    background-position: center;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+    background:
+      radial-gradient(circle at 75% 25%, rgba(242, 204, 103, .2), transparent 28%),
+      linear-gradient(135deg, #45463e, #171815);
   }
 
   .band-card__overlay {
@@ -253,9 +259,11 @@ const resolvedHref = withBase(href);
 
     .band-card__media {
       z-index: 0;
-      background-image: var(--band-image);
-      background-position: center;
-      background-size: cover;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      object-position: center;
     }
 
     .band-card__overlay {

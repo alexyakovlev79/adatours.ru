@@ -3,7 +3,6 @@ import PrimaryCTA from './PrimaryCTA.astro';
 import SearchTrigger from './SearchTrigger.astro';
 import { NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
-import ContactActions from './ContactActions.astro';
 
 interface Props {
   theme?: 'light' | 'dark';
@@ -27,9 +26,6 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
 
     <div class="desktop-cta">
       <SearchTrigger />
-      <div class="desktop-cta__links">
-        <ContactActions compact />
-      </div>
       <PrimaryCTA href="/contacts/" label="Оставить заявку" />
     </div>
 
@@ -57,7 +53,6 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     </nav>
     <div class="mobile-menu__contact">
       <PrimaryCTA href="/contacts/" label="Оставить заявку" />
-      <ContactActions light />
     </div>
   </div>
 </header>
@@ -187,11 +182,13 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
 
   .desktop-nav {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: clamp(16px, 2vw, 30px);
   }
 
   .desktop-nav a {
+    white-space: nowrap;
     font-family: var(--font-display);
     font-size: 0.74rem;
     font-weight: 600;
@@ -210,19 +207,9 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     align-items: center;
   }
 
-  .desktop-cta__links {
-    display: none;
-  }
-
   .desktop-cta :global(.cta) {
     min-width: auto;
     padding: 12px 15px;
-  }
-
-  @media (min-width: 1320px) {
-    .desktop-cta__links {
-      display: block;
-    }
   }
 
   .mobile-search,

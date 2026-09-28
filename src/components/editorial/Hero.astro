@@ -29,15 +29,24 @@ const {
 } = Astro.props;
 
 const resolvedImage = image ? withBase(image) : undefined;
-const style = resolvedImage ? `--hero-image: url("${resolvedImage}")` : undefined;
+
 ---
 
 <section
   class:list={['hero', { 'hero--compact': compact, 'hero--image': image }]}
-  style={style}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
 >
+  {resolvedImage && (
+    <img
+      class="hero__media"
+      src={resolvedImage}
+      alt=""
+      aria-hidden="true"
+      loading="eager"
+      fetchpriority="high"
+    />
+  )}
   <div class="hero__overlay"></div>
   <div class="hero__content">
     <div class="hero__head">
@@ -69,10 +78,15 @@ const style = resolvedImage ? `--hero-image: url("${resolvedImage}")` : undefine
     min-height: min(84svh, 820px);
   }
 
-  .hero--image {
-    background-image: var(--hero-image);
-    background-position: center;
-    background-size: cover;
+  .hero__media {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
   }
 
   .hero__overlay {

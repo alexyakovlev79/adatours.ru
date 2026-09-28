@@ -88,7 +88,7 @@ gallery:
 featured: false
 priority: 92
 lead: ""
-highlights:
+highlights: []
 itinerary:
   - day: 1
     title: "Прибытие в Рио-де-Жанейро"

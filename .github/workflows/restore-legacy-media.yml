@@ -1,4 +1,4 @@
-name: Diagnose legacy image hotlinking
+name: Diagnose legacy image URLs
 
 on:
   push:
@@ -10,26 +10,23 @@ jobs:
   diagnose:
     runs-on: ubuntu-latest
     steps:
-      - name: Check image responses by referrer
+      - name: Check guessed live image URLs
         shell: bash
         run: |
           set -u
           UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.36'
           urls=(
-            'https://brasiltours.ru/image/cache/countries/brazil/tild3463-3039-4366-b661-663030613337-thales-botelho-de-so-1920x1080.webp'
-            'https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp'
-            'https://brasiltours.ru/image/cache/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash-1920x1080.webp'
+            'https://brasiltours.ru/image/cache/countries/brazil/tild3463-3039-4366-b661-663030613337-thales-botelho-de-so-preload.webp'
+            'https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-preload.webp'
+            'https://brasiltours.ru/image/cache/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash-preload.webp'
+            'https://brasiltours.ru/image/cache/countries/argentina/new-photos/kulli-kittus-icwoh2prgu4-unsplash-preload.webp'
+            'https://brasiltours.ru/image/cache/countries/brazil/new-pics/praia-grande-preload.webp'
           )
+          n=0
           for url in "${urls[@]}"; do
+            n=$((n+1))
+            out="/tmp/x$n"
             echo "URL=$url"
-            for mode in no-ref github-ref same-ref; do
-              out="/tmp/${mode}.bin"
-              case "$mode" in
-                no-ref) refargs=() ;;
-                github-ref) refargs=(-e 'https://alexyakovlev79.github.io/adatours.ru/strany/braziliya/') ;;
-                same-ref) refargs=(-e 'https://brasiltours.ru/') ;;
-              esac
-              curl -sS -L -A "$UA" "${refargs[@]}" -o "$out" -w "$mode status=%{http_code} type=%{content_type} bytes=%{size_download}\n" "$url" || true
-              file "$out" || true
-            done
+            curl -sS -L -A "$UA" -o "$out" -w 'status=%{http_code} type=%{content_type} bytes=%{size_download}\n' "$url" || true
+            file "$out" || true
           done

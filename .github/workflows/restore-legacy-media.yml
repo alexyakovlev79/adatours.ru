@@ -1,4 +1,4 @@
-name: Restore legacy Wave 0-3 media
+name: Diagnose legacy image hotlinking
 
 on:
   push:
@@ -6,50 +6,30 @@ on:
     paths:
       - '.github/workflows/restore-legacy-media.yml'
 
-permissions:
-  contents: write
-
 jobs:
-  restore:
+  diagnose:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-
-      - name: Download exact legacy media from brasiltours.ru
+      - name: Check image responses by referrer
         shell: bash
         run: |
-          set -euo pipefail
-          mkdir -p public/media/restored
+          set -u
           UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.36'
-          REF='https://brasiltours.ru/'
-
-          fetch() {
-            local url="$1"
-            local out="$2"
-            curl --fail --location --retry 3 --retry-delay 2 \
-              -A "$UA" -e "$REF" "$url" -o "$out"
-            test -s "$out"
-            test "$(wc -c < "$out")" -gt 20000
-          }
-
-          fetch 'https://brasiltours.ru/image/cache/countries/brazil/tild3463-3039-4366-b661-663030613337-thales-botelho-de-so-1920x1080.webp' 'public/media/restored/brazil-hero-thales-botelho.webp'
-          fetch 'https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp' 'public/media/restored/rio-micaela-parente.webp'
-          fetch 'https://brasiltours.ru/image/cache/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash-1920x1080.webp' 'public/media/restored/luxury-brazil-hero.webp'
-          fetch 'https://brasiltours.ru/image/cache/countries/argentina/new-photos/kulli-kittus-icwoh2prgu4-unsplash-1920x1080.webp' 'public/media/restored/brazil-argentina-peru-hero.webp'
-          fetch 'https://brasiltours.ru/image/cache/countries/brazil/new-pics/praia-grande-1920x1080.webp' 'public/media/restored/south-brazil-hero.webp'
-
-          file public/media/restored/*
-
-      - name: Commit restored media
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/media/restored
-          git diff --cached --quiet && exit 0
-          git commit -m 'Restore exact Wave 0-3 media locally'
-          git push
+          urls=(
+            'https://brasiltours.ru/image/cache/countries/brazil/tild3463-3039-4366-b661-663030613337-thales-botelho-de-so-1920x1080.webp'
+            'https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp'
+            'https://brasiltours.ru/image/cache/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash-1920x1080.webp'
+          )
+          for url in "${urls[@]}"; do
+            echo "URL=$url"
+            for mode in no-ref github-ref same-ref; do
+              out="/tmp/${mode}.bin"
+              case "$mode" in
+                no-ref) refargs=() ;;
+                github-ref) refargs=(-e 'https://alexyakovlev79.github.io/adatours.ru/strany/braziliya/') ;;
+                same-ref) refargs=(-e 'https://brasiltours.ru/') ;;
+              esac
+              curl -sS -L -A "$UA" "${refargs[@]}" -o "$out" -w "$mode status=%{http_code} type=%{content_type} bytes=%{size_download}\n" "$url" || true
+              file "$out" || true
+            done
+          done

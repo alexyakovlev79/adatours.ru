@@ -34,57 +34,9 @@ currency: USD
 priceNote: "Стоимость на исходной странице: $7232.50"
 dates: []
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/lensojs/oblozhka-1920x1080.webp
+  src: https://brasiltours.ru/image/countries/brazil/new-pics/lensojs/oblozhka.jpg
   alt: Дюны Ленсойс-Мараньенсес Бразилия
-gallery:
-  - src: https://brasiltours.ru/image/cache/Zipline%20Cabanas-Arvorismo-1920x1080.webp
-    alt: "Зиплайн Arvorismo Бонито в Бразилии"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio/1-1920x1080.webp
-    alt: "Пляжный отдых и лучшие отели на Копакабане, Рио"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/angra/angra-dos-reis-1920x1080.webp
-    alt: "Пляжный отдых на острове Илья-Гранди, Бразилия"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/bonito/bra-bonito-1-1-1920x1080.webp
-    alt: "Пещера в городе Бонито, Бразилия"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/lensojs/sebastien-goldberg-0b93axrl-yq-unsplash-1920x1080.webp
-    alt: "Дюны Ленсойс-Мараньенсес Бразилия"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash-1920x1080.webp
-    alt: "Водопады Игуасу на границе Бразилии и Аргентины"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/bonito/bonito-malenkaya-1920x1080.webp
-    alt: "Романтический круиз по реке в Бонито, Бразилия"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1334121-unsplash-1920x1080.webp
-    alt: "Макуко-сафари у водопадов Игуасу, Бразилия и Аргентина"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/bonito/dsc08416-1-1920x1080.webp
-    alt: "Тюбинг, сплав на шинах по реке в Бразилии"
-  - src: https://brasiltours.ru/image/cache/So%20Luis-1920x1080.webp
-    alt: "Исторический город Сан-Луис, Бразилия"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/pantanal/filipe-sizilio-h4blc6pm4g0-unsplash-1920x1080.webp
-    alt: "Заповедник Пантанал в Бразилии"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio-22-1920x1080.webp
-    alt: "Статуя Христа Искупителя в Рио-де-Жанейро"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/angra/angra-dos-reis-3-1920x1080.webp
-    alt: "Пляжный отдых на острове Илья-Гранди, Бразилия"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/lensojs/marcreation-m0wxmehpbte-unsplash-1920x1080.webp
-    alt: "Дюны Ленсойс-Мараньенсес Бразилия"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/vodopady-iguasu-4-1920x1080.webp
-    alt: "Водопады Игуасу на границе Бразилии и Аргентины"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/11-1920x1080.webp
-    alt: "Парк птиц в национальном парке Игуасу, Бразилия"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio/davi-costa-1229343-unsplash-1920x1080.webp
-    alt: "Фуникулер на гору Корковадо в Рио"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio/4-1920x1080.webp
-    alt: "Волейбол на пляже Копакабана, Рио-де-Жанейро"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/bonito-canopi-1920x1080.webp
-    alt: "Зиплайн Arvorismo Бонито"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/vodopady-iguasu-2-1920x1080.webp
-    alt: "Водопады Игуасу"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/pantanal/papagayo-huge-for-site-1920x1080.webp
-    alt: "Синий попугай в Пантанале"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio/10-1920x1080.webp
-    alt: "Закат на пляжах Рио-де-Жанейро"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash-1920x1080.webp
-    alt: "Водопады Игуасу"
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash-1920x1080.webp
-    alt: "Водопады Игуасу"
+gallery: []
 featured: false
 priority: 92
 lead: "За 17 дней маршрут проходит через несколько совершенно разных регионов Бразилии. Сначала Рио-де-Жанейро с океаном, Корковадо, Сахарной головой и лесом Тижука. Затем остров Илья-Гранде, водопады Игуасу, заболоченные равнины Пантанала, прозрачные реки и пещеры Бонито. Финальная часть путешествия проходит на северо-востоке страны, среди колониальных улиц Сан-Луиса и белых дюн Ленсойс-Мараньенсес."

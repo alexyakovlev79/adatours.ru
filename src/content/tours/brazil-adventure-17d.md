@@ -33,7 +33,7 @@ priceFrom: 7233
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/lensojs/oblozhka-1920x1080.webp
+  src: https://brasiltours.ru/image/countries/brazil/new-pics/lensojs/oblozhka.jpg
   alt: Дюны Ленсойс-Мараньенсес Бразилия
 gallery: []
 featured: false

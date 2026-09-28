@@ -29,9 +29,8 @@ route:
   - Сан-Луис
   - Ленсойс-Мараньенсес
   - Рио-де-Жанейро
-priceFrom: 7232.5
+priceFrom: 7233
 currency: USD
-priceNote: "Стоимость на исходной странице: $7232.50"
 dates: []
 hero:
   src: https://brasiltours.ru/image/countries/brazil/new-pics/lensojs/oblozhka.jpg

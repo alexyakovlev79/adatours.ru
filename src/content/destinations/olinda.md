@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Олинда рядом с Ресифи известна историческим центром UNESCO на холмах, барочными церквями и монастырями, цветными фасадами и собственным карнавалом. Ее удобно включать в маршрут по Пернамбуку вместе с Ресифи и побережьем.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/olinda-1920x1080.webp
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/olinda-1200x579.webp
   alt: Исторический центр Олинды в Пернамбуку, Бразилия
 gallery:
   - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN16009_8-1920x1080.webp

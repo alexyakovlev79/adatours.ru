@@ -214,17 +214,25 @@ const resolveDayImage = (image: Day['image']) => {
 
     .day__content,
     .day__content--image {
+      display: block;
+      min-width: 0;
       padding-left: 64px;
       padding-right: 0;
     }
 
+    .day__content > div:first-child {
+      min-width: 0;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+    }
+
     .day__media {
-      position: relative;
-      left: calc(-1 * (var(--gutter) + 64px));
       width: 100vw;
       max-width: none;
+      margin-top: 28px;
       margin-left: 0;
       margin-right: 0;
+      transform: translateX(calc(-1 * (var(--gutter) + 64px)));
     }
 
     .day__content img {

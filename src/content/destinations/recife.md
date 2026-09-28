@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Ресифи, столица Пернамбуку, сочетает каналы и мосты, атлантическое побережье, исторические здания с португальским и голландским наследием и удобную точку старта для Олинды и пляжей северо-востока Бразилии.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/recife-2-1920x1080.webp
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/recife-2-1200x545.webp
   alt: Ресифи, столица штата Пернамбуку в Бразилии
 gallery: []
 themes:

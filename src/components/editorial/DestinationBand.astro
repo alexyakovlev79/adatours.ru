@@ -34,24 +34,16 @@ const resolvedHref = withBase(href);
   <a
     class:list={['band-card', `band-card--${align}`]}
     href={resolvedHref}
+    style={style}
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
     data-replacement-reason={replacementReason}
   >
-    <div class:list={['band', `band--${align}`, { 'band--image': image }]} style={style}>
-      <div class="band__overlay"></div>
-      <div class="band__content">
-        {eyebrow && <p class="eyebrow">{eyebrow}</p>}
-        <h2>{title}</h2>
-        <span class="band__link">Смотреть <span aria-hidden="true">↗</span></span>
-      </div>
-    </div>
-    {text && (
-      <div class="band-card__below">
-        <div class="band-card__below-inner">
-          <p>{text}</p>
-        </div>
-      </div>
-    )}
+    <span class="band-card__media" aria-hidden="true"></span>
+    <span class="band-card__overlay" aria-hidden="true"></span>
+    {eyebrow && <span class="band-card__eyebrow eyebrow">{eyebrow}</span>}
+    <strong class="band-card__title">{title}</strong>
+    {text && <span class="band-card__description">{text}</span>}
+    <span class="band-card__link">Смотреть <span aria-hidden="true">↗</span></span>
   </a>
 ) : (
   <a class:list={['band', `band--${align}`, { 'band--image': image }]} href={resolvedHref} style={style}
@@ -69,42 +61,105 @@ const resolvedHref = withBase(href);
 )}
 
 <style>
+  /* Full-width tour card used on country pages. On desktop all copy stays over
+     the hero. On mobile only the description moves below the image. */
   .band-card {
-    display: block;
-    background: var(--color-bg);
+    position: relative;
+    display: grid;
+    grid-template-columns:
+      minmax(var(--gutter), 1fr)
+      minmax(0, var(--container-max))
+      minmax(var(--gutter), 1fr);
+    grid-template-rows: minmax(0, 1fr) auto auto auto auto minmax(0, .25fr);
+    min-height: clamp(440px, 55vw, 680px);
+    overflow: hidden;
+    color: var(--color-bg);
+    background:
+      radial-gradient(circle at 75% 25%, rgba(242, 204, 103, .2), transparent 28%),
+      linear-gradient(135deg, #45463e, #171815);
+    isolation: isolate;
   }
 
-  .band-card__below {
-    background: var(--color-bg);
+  .band-card__media,
+  .band-card__overlay {
+    position: absolute;
+    inset: 0;
   }
 
-  .band-card__below-inner {
-    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
-    margin-inline: auto;
-    padding-block: clamp(24px, 3vw, 38px);
+  .band-card__media {
+    z-index: -2;
+    background-image: var(--band-image);
+    background-position: center;
+    background-size: cover;
   }
 
-  .band-card__below p {
-    max-width: 760px;
-    margin: 0;
-    color: color-mix(in srgb, var(--color-ink) 76%, transparent);
-    font-size: clamp(1rem, 1.25vw, 1.14rem);
-    line-height: 1.55;
+  .band-card__overlay {
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(10,10,9,.7), rgba(10,10,9,.08) 72%);
+    transition: background 350ms var(--ease-out);
   }
 
-  .band-card--right .band-card__below-inner {
-    text-align: right;
+  .band-card:hover .band-card__overlay {
+    background: linear-gradient(90deg, rgba(10,10,9,.78), rgba(10,10,9,.14) 72%);
   }
 
-  .band-card--right .band-card__below p {
-    margin-left: auto;
-  }
-
-  /* Country-page tour bands: keep long tour names from covering the photography. */
-  .band-card .band h2 {
+  .band-card__eyebrow,
+  .band-card__title,
+  .band-card__description,
+  .band-card__link {
+    grid-column: 2;
+    justify-self: start;
     max-width: 1120px;
+  }
+
+  .band-card__eyebrow {
+    grid-row: 2;
+    align-self: end;
+    margin: 0 0 10px;
+  }
+
+  .band-card__title {
+    grid-row: 3;
+    display: block;
+    max-width: 1120px;
+    margin: 0 0 18px;
+    font-family: var(--font-display);
     font-size: clamp(2.15rem, 3vw, 3.65rem);
+    font-weight: 400;
     line-height: 1.04;
+  }
+
+  .band-card__description {
+    grid-row: 4;
+    display: block;
+    max-width: 700px;
+    margin: 0 0 24px;
+    color: rgba(255,255,255,.84);
+    font-size: clamp(.98rem, 1.2vw, 1.12rem);
+    line-height: 1.5;
+  }
+
+  .band-card__link {
+    grid-row: 5;
+    display: inline-flex;
+    gap: 28px;
+    align-items: center;
+    margin-bottom: clamp(34px, 4vw, 58px);
+    padding-bottom: 7px;
+    border-bottom: 1px solid currentColor;
+    font-family: var(--font-display);
+    font-size: .76rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .band-card--right .band-card__eyebrow,
+  .band-card--right .band-card__title,
+  .band-card--right .band-card__description,
+  .band-card--right .band-card__link {
+    justify-self: end;
+    text-align: right;
   }
 
   .band {
@@ -176,23 +231,85 @@ const resolvedHref = withBase(href);
     letter-spacing: .1em;
     text-transform: uppercase;
   }
+
   @media (max-width: 720px) {
-    .band-card .band h2 {
+    .band-card {
+      display: grid;
+      grid-template-columns: var(--gutter) minmax(0, 1fr) var(--gutter);
+      grid-template-rows: 320px auto;
+      min-height: 0;
+      overflow: visible;
+      color: var(--color-ink);
+      background: var(--color-bg);
+    }
+
+    .band-card__media,
+    .band-card__overlay {
+      position: static;
+      grid-column: 1 / -1;
+      grid-row: 1;
+      inset: auto;
+    }
+
+    .band-card__media {
+      z-index: 0;
+      background-image: var(--band-image);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .band-card__overlay {
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(8,9,8,.04) 20%, rgba(8,9,8,.72) 100%);
+    }
+
+    .band-card__eyebrow {
+      display: none;
+    }
+
+    .band-card__title,
+    .band-card__link {
+      grid-column: 2;
+      grid-row: 1;
+      z-index: 2;
+      justify-self: start;
+      color: #fff;
+      text-align: left;
+    }
+
+    .band-card__title {
+      align-self: end;
       max-width: 100%;
+      margin: 0 0 70px;
       font-size: clamp(1.7rem, 7.2vw, 2.35rem);
       line-height: 1.06;
     }
 
-    .band-card--right .band-card__below-inner {
-      text-align: left;
+    .band-card__link {
+      align-self: end;
+      margin: 0 0 24px;
     }
 
-    .band-card--right .band-card__below p {
-      margin-left: 0;
-    }
-
-    .band-card__below-inner {
+    .band-card__description,
+    .band-card--right .band-card__description {
+      grid-column: 2;
+      grid-row: 2;
+      z-index: 0;
+      justify-self: stretch;
+      max-width: none;
+      margin: 0;
       padding-block: 18px 24px;
+      color: color-mix(in srgb, var(--color-ink) 76%, transparent);
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: left;
+      background: var(--color-bg);
+    }
+
+    .band-card--right .band-card__title,
+    .band-card--right .band-card__link {
+      justify-self: start;
+      text-align: left;
     }
   }
 </style>

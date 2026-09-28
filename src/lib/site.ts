@@ -15,4 +15,5 @@ export const NAV_LINKS = [
   { href: '/mice/', label: 'MICE' },
   { href: '/dmc/', label: 'Для агентств' },
   { href: '/about/', label: 'О нас' },
+  { href: '/contacts/', label: 'Контакты' },
 ];

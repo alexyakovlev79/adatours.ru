@@ -1,4 +1,4 @@
-name: Inspect brasiltours live media references
+name: Inspect tour source media references
 
 on:
   push:
@@ -10,26 +10,28 @@ jobs:
   inspect:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch Brazil and Rio source HTML and print media URLs
+      - name: Print first image URLs from three source tours
         shell: bash
         run: |
           set -euo pipefail
           UA='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.36'
-          curl -sS -L -A "$UA" 'https://brasiltours.ru/braziliya' -o /tmp/brazil.html
-          curl -sS -L -A "$UA" 'https://brasiltours.ru/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii' -o /tmp/rio.html
           python - <<'PY'
-          import re, html
-          from pathlib import Path
-          for name in ('brazil','rio'):
-              s=Path('/tmp/'+name+'.html').read_text(errors='ignore')
-              print('\n###', name, 'len=', len(s))
-              pats=[
+          import re, html, subprocess
+          pages={
+            'luxury':'https://brasiltours.ru/roskoshnaya-braziliya',
+            'bap':'https://brasiltours.ru/3-strany-latinskoj-ameriki',
+            'south':'https://brasiltours.ru/tur-v-yuzhnuyu-braziliyu',
+          }
+          ua='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/140 Safari/537.36'
+          for name,url in pages.items():
+              s=subprocess.check_output(['curl','-sS','-L','-A',ua,url],text=True,errors='ignore')
+              print('\n###',name,url,'len=',len(s))
+              vals=[]
+              for p in [
                   r'''(?:src|data-src|data-lazy|data-original|href)=["']([^"']+)["']''',
                   r'''url\((?:["']?)([^)"']+)(?:["']?)\)''',
                   r'''(?:srcset|data-srcset)=["']([^"']+)["']''',
-              ]
-              vals=[]
-              for p in pats:
+              ]:
                   vals += re.findall(p,s,re.I)
               out=[]
               for v in vals:
@@ -38,6 +40,6 @@ jobs:
                       u=part.strip().split()[0] if part.strip() else ''
                       if u and ('/image/' in u or re.search(r'\.(?:jpg|jpeg|png|webp)(?:\?|$)',u,re.I)):
                           if u not in out: out.append(u)
-              for i,u in enumerate(out):
+              for i,u in enumerate(out[:50]):
                   print(f'{i:03d} {u}')
           PY

@@ -31,6 +31,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
           height="18"
           referrerpolicy="no-referrer"
           data-phone-flag
+          hidden
         />
       </span>
       <span class="phone-field__dial" data-phone-dial>{defaultCountry.dial}</span>
@@ -153,7 +154,8 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       image.addEventListener('error', showFallback);
       image.addEventListener('load', showImage);
 
-      if (image.complete && image.naturalWidth === 0) showFallback();
+      if (image.complete && image.naturalWidth > 0) showImage();
+      else if (image.complete) showFallback();
     });
 
     const closeMenu = () => {
@@ -166,8 +168,9 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       const { iso2 = 'ru', dial: countryDial = '+7', mask = '+7(999) 999-99-99', name = 'Russia (Россия)' } = option.dataset;
 
       flagFallback.textContent = flagEmoji(iso2);
-      flag.hidden = false;
+      flag.hidden = true;
       flag.src = flagUrl(iso2);
+      if (flag.complete && flag.naturalWidth > 0) flag.hidden = false;
       dial.textContent = countryDial;
       input.dataset.iso2 = iso2;
       input.dataset.dial = countryDial;
@@ -266,6 +269,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
   }
 
   .phone-field__flag-fallback {
+    font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
     font-size: 18px;
     line-height: 1;
   }

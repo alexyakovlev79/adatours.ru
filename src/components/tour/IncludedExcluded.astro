@@ -2,8 +2,9 @@
 interface Props {
   included: string[];
   notIncluded: string[];
+  notes?: string[];
 }
-const { included, notIncluded } = Astro.props;
+const { included, notIncluded, notes = [] } = Astro.props;
 ---
 
 <section class="included section">
@@ -23,6 +24,15 @@ const { included, notIncluded } = Astro.props;
         </ul>
       </div>
     </div>
+
+    {notes.length > 0 && (
+      <div class="included__notes">
+        <h3>Важные условия</h3>
+        <ul>
+          {notes.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    )}
   </div>
 </section>
 
@@ -81,6 +91,29 @@ const { included, notIncluded } = Astro.props;
   .included__column--extra li::before {
     content: '−';
     font-size: 1rem;
+  }
+
+  .included__notes {
+    margin-top: clamp(44px, 6vw, 76px);
+    max-width: 980px;
+  }
+
+  .included__notes h3 {
+    margin: 0 0 20px;
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+  }
+
+  .included__notes ul {
+    border-top: 1px solid var(--color-line);
+  }
+
+  .included__notes li {
+    padding-left: 0;
+  }
+
+  .included__notes li::before {
+    content: none;
   }
 
   @media (max-width: 760px) {

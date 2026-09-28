@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Флорианополис, административный центр штата Санта-Катарина, сочетает островной город, более 40 пляжей, лагуны, дюны, серфинг и исторический центр. Это сильная остановка для пляжного и активного маршрута по югу Бразилии.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/florianopolis-6-1920x1080.webp
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/florianopolis-6-1200x456.webp
   alt: Побережье Флорианополиса в Бразилии
 gallery: []
 themes:

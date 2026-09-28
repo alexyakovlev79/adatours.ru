@@ -33,7 +33,7 @@ priceFrom: 4828
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  src: https://brasiltours.ru/image/countries/brazil/new-pics/porto-de-galinhas/porto-de-galinhas-4.jpg
   alt: Натуральные бассейны Порту-де-Галиньяс
 gallery: []
 featured: false

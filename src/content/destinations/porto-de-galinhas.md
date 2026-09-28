@@ -9,7 +9,7 @@ destinationType: resort
 summary: >-
   Порту-ди-Галиньяш в Пернамбуку выбирают ради пляжей, рифов и природных бассейнов во время отлива. Маракайпи подходит для серфинга, а Муру-Алту дает более спокойный формат отдыха у воды.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/porto-de-galinhas-1920x1080.webp
+  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/porto-de-galinhas-1200x491.webp
   alt: Пляж Порту-ди-Галиньяш в Пернамбуку, Бразилия
 gallery:
   - src: https://brasiltours.ru/image/cache/catalog/category/l/u/lua-de-mel-porto-de-galinhas-00-1920x1080.webp

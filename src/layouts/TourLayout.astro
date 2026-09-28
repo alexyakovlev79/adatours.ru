@@ -15,125 +15,7 @@ import MediaGallery from '../components/editorial/MediaGallery.astro';
 const { entry } = Astro.props;
 const d = entry.data;
 const roundedPrice = typeof d.priceFrom === 'number' ? Math.round(d.priceFrom) : null;
-const currencyPrefix = d.currency === 'USD' ? '
-
-const stats = [
-  d.durationDays ? { value: String(d.durationDays), label: 'дней' } : null,
-  d.durationNights !== undefined ? { value: String(d.durationNights), label: 'ночей' } : null,
-  { value: String(d.destinations.length || d.route.length), label: 'точки маршрута' },
-  { value: d.format ?? 'Private', label: 'формат' },
-].filter(Boolean);
-
-// Media QA status must never silently remove a source image from the page.
-const usableGallery = d.gallery;
-const firstStory = usableGallery[0] && d.highlights[0]
-  ? { item: d.highlights[0], image: usableGallery[0] }
-  : null;
-const lastStory = usableGallery[1] && d.highlights.length > 1
-  ? { item: d.highlights[d.highlights.length - 1], image: usableGallery[1] }
-  : null;
-const storyImages = new Set([firstStory?.image.src, lastStory?.image.src].filter(Boolean));
-const galleryItems = usableGallery.filter((item) => !storyImages.has(item.src));
-
-const editorialHighlights = d.highlights.filter((_, index) => {
-  if (firstStory && index === 0) return false;
-  if (lastStory && index === d.highlights.length - 1) return false;
-  return true;
-});
-
-const [countryEntries, destinationEntries] = await Promise.all([
-  getCollection('countries', ({ data }) => data.locale === 'ru' && d.countries.includes(data.id)),
-  getCollection('destinations', ({ data }) => data.locale === 'ru' && d.destinations.includes(data.id)),
-]);
-
-const countryById = new Map(countryEntries.map((item) => [item.data.id, item.data.name]));
-const destinationById = new Map(destinationEntries.map((item) => [item.data.id, item.data.name]));
-const countryNames = d.countries.map((id) => countryById.get(id)).filter(Boolean) as string[];
-const destinationNames = d.destinations.map((id) => destinationById.get(id)).filter(Boolean) as string[];
-const subtitleParts = [
-  d.durationDays ? `${d.durationDays} дней` : '',
-  countryNames.join(', '),
-].filter(Boolean);
----
-
-<BaseLayout title={d.title} description={d.lead} image={d.hero?.src}>
-  <SearchIndexRecord
-    title={d.title}
-    summary={d.lead}
-    entityType="tour"
-    typeLabel="Тур"
-    subtitle={subtitleParts.join(' · ')}
-    aliases={d.searchAliases}
-    geography={[...countryNames, ...destinationNames, ...d.route]}
-    themes={d.themes}
-    image={d.hero?.src}
-  />
-
-  <Hero
-    eyebrow="Индивидуальный тур"
-    title={d.title}
-    intro={d.lead}
-    image={d.hero?.src}
-    mediaStatus={d.hero?.status}
-    replacementReason={d.hero?.replacementReason}
-    meta={d.durationDays ? `${d.durationDays} дней · ${d.route.join(' · ')}` : undefined}
-    ctaLabel="Получить программу"
-  />
-
-  <TripStats stats={stats} />
-
-  <section class="tour-copy">
-    <div class="container prose"><slot /></div>
-  </section>
-
-  {firstStory && (
-    <StoryPair
-      eyebrow="Акцент маршрута"
-      title={firstStory.item.title}
-      text={firstStory.item.text}
-      image={firstStory.image.src}
-      mediaStatus={firstStory.image.status}
-      replacementReason={firstStory.image.replacementReason}
-    />
-  )}
-
-  {editorialHighlights.length > 0 && <HighlightsEditorial items={editorialHighlights} />}
-
-  {galleryItems.length > 0 && (
-    <MediaGallery
-      eyebrow="Впечатления"
-      title="Фотографии маршрута"
-      items={galleryItems}
-    />
-  )}
-
-  <Itinerary days={d.itinerary} />
-
-  {lastStory && (
-    <StoryPair
-      eyebrow="Еще один акцент"
-      title={lastStory.item.title}
-      text={lastStory.item.text}
-      image={lastStory.image.src}
-      mediaStatus={lastStory.image.status}
-      replacementReason={lastStory.image.replacementReason}
-      reverse
-    />
-  )}
-
-  <TourPricing price={money} note={publicPriceNote} />
-  {(d.included.length > 0 || d.notIncluded.length > 0) && (
-    <IncludedExcluded included={d.included} notIncluded={d.notIncluded} />
-  )}
-  <LeadForm title="Получить расчет и адаптировать маршрут под ваши даты" entityId={d.id} />
-</BaseLayout>
-
-<style>
-  .tour-copy { background: var(--color-bg); padding: 0 0 clamp(28px, 4vw, 56px); }
-  .tour-copy :global(.prose) { padding-top: 0; padding-bottom: 0; }
-  .tour-copy :global(.prose:empty) { display: none; }
-</style>
- : '';
+const currencyPrefix = d.currency === 'USD' ? String.fromCharCode(36) : '';
 const money = roundedPrice && d.currency
   ? 'от ' + currencyPrefix + roundedPrice.toLocaleString('ru-RU', { maximumFractionDigits: 0 })
   : 'По запросу';
@@ -246,7 +128,7 @@ const subtitleParts = [
     />
   )}
 
-  <TourPricing price={money} note={d.priceNote} />
+  <TourPricing price={money} note={publicPriceNote} />
   {(d.included.length > 0 || d.notIncluded.length > 0) && (
     <IncludedExcluded included={d.included} notIncluded={d.notIncluded} />
   )}

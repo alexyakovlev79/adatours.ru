@@ -83,9 +83,8 @@ const subtitleParts = [
   />
 
   <TripStats stats={stats} />
-  <EditorialStatement eyebrow="Почему этот маршрут" text={d.lead} />
 
-  <section class="tour-copy section--tight">
+  <section class="tour-copy">
     <div class="container prose"><slot /></div>
   </section>
 
@@ -132,5 +131,7 @@ const subtitleParts = [
 </BaseLayout>
 
 <style>
-  .tour-copy { background: var(--color-bg); }
+  .tour-copy { background: var(--color-bg); padding: 0; }
+  .tour-copy :global(.prose) { padding-top: 0; padding-bottom: 0; }
+  .tour-copy :global(.prose:empty) { display: none; }
 </style>

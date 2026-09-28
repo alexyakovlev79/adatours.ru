@@ -36,7 +36,7 @@ priceFrom: 4349
 currency: USD
 dates: []
 hero:
-  src: /media/tours/brazil-dunes-13d-hero.webp
+  src: https://brasiltours.ru/image/cache/Lenis%20Maranhenses-1920x1080.webp
   alt: Дюны и лагуны Ленсойс-Мараньенсес
 gallery: []
 featured: false

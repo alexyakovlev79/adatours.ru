@@ -91,7 +91,7 @@ const destinationTypeLabel = {
   </section>
 
   {destinationEntries.length > 0 && (
-    <section class="country-linked section" aria-labelledby="country-destinations-title">
+    <section class="country-linked section" aria-label={`Направления: ${d.name}`}>
       <div class="container">
         <div class="country-linked__grid">
           {destinationEntries.map((item, index) => {

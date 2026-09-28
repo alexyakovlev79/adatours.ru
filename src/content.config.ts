@@ -140,6 +140,7 @@ const tours = defineCollection({
       places: z.array(z.string()).default([]),
       text: z.string(),
       image: z.union([z.string(), mediaObject]).optional(),
+      images: z.array(mediaObject).default([]),
     })).default([]),
     included: z.array(z.string()).default([]),
     notIncluded: z.array(z.string()).default([]),

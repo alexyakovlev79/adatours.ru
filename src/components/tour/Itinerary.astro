@@ -20,6 +20,10 @@ interface Day {
     replacementReason?: string;
     intendedSlot?: string;
   }>;
+  subsections?: Array<{
+    title: string;
+    text: string;
+  }>;
 }
 interface Props { days: Day[]; }
 const { days } = Astro.props;
@@ -55,6 +59,14 @@ const resolveDayImage = (image: Day['image']) => {
             <div>
               {day.places && day.places.length > 0 && <p class="day__places">{day.places.join(' · ')}</p>}
               <p>{day.text}</p>
+              {day.subsections?.map((subsection) => (
+                <section class="day__subsection">
+                  <h3>{subsection.title}</h3>
+                  {subsection.text.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean).map((paragraph) => (
+                    <p>{paragraph}</p>
+                  ))}
+                </section>
+              ))}
             </div>
             {visibleImage && (
               <div class="day__media">
@@ -173,6 +185,24 @@ const resolveDayImage = (image: Day['image']) => {
     font-size: .78rem !important;
     letter-spacing: .08em;
     text-transform: uppercase;
+  }
+
+  .day__subsection {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,.16);
+  }
+
+  .day__subsection h3 {
+    margin: 0 0 14px;
+    color: var(--color-gold);
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 1rem + .45vw, 1.45rem);
+    line-height: 1.2;
+  }
+
+  .day__subsection p:last-child {
+    margin-bottom: 0;
   }
 
   .day__media {

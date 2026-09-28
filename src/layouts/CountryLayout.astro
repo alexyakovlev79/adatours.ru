@@ -93,15 +93,6 @@ const destinationTypeLabel = {
   {destinationEntries.length > 0 && (
     <section class="country-linked section" aria-labelledby="country-destinations-title">
       <div class="container">
-        <div class="country-linked__heading">
-          <p class="eyebrow">Направления</p>
-          <h2 id="country-destinations-title">{d.name}: куда поехать</h2>
-          <p>
-            Здесь собраны все направления, которые уже есть на сайте: города, острова,
-            природные территории, курорты и отдельные маршруты.
-          </p>
-        </div>
-
         <div class="country-linked__grid">
           {destinationEntries.map((item, index) => {
             const image = item.data.hero?.src ? withBase(item.data.hero.src) : undefined;

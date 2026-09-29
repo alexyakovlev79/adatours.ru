@@ -1,0 +1,16 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+const markerCount = text.split('**').length - 1;
+const isBalanced = markerCount > 0 && markerCount % 2 === 0;
+const parts = isBalanced ? text.split('**') : [text];
+---
+
+<>
+  {parts.map((part, index) =>
+    isBalanced && index % 2 === 1 ? <strong>{part}</strong> : part
+  )}
+</>

@@ -1,5 +1,6 @@
 ---
 import PrimaryCTA from '../global/PrimaryCTA.astro';
+import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface Props {
   price?: string;
@@ -15,7 +16,7 @@ const { price = 'По запросу', note } = Astro.props;
       <h2>{price}</h2>
     </div>
     <div class="pricing__copy">
-      <p>{note ?? 'Финальная стоимость зависит от дат, категории размещения и выбранных дополнительных услуг.'}</p>
+      <p><InlineMarkdown text={note ?? 'Финальная стоимость зависит от дат, категории размещения и выбранных дополнительных услуг.'} /></p>
       <PrimaryCTA href="/contacts/" label="Получить расчет" />
     </div>
   </div>

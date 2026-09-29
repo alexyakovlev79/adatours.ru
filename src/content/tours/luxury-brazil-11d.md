@@ -29,10 +29,10 @@ currency: USD
 priceNote: Стоимость по программе 2026 — от $3653. Точная сумма зависит от дат, категории отелей и набора услуг.
 dates: []
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash-1920x686.webp
+  src: https://brasiltours.ru/image/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash.jpg
   alt: Панорама Рио-де-Жанейро
 gallery:
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/vodopady-iguasu-8-1920x1080.webp
+  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-8.jpg
     alt: "Водопады Игуасу с бразильской и аргентинской стороны"
     intendedSlot: gallery
 featured: true
@@ -87,7 +87,7 @@ itinerary:
     text: |-
       Этот день оставлен без обязательной программы. Его можно провести на пляже или выбрать одну из дополнительных экскурсий.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash.jpg
         alt: "Панорама Рио-де-Жанейро у Атлантики"
         intendedSlot: "itinerary:day-4"
   - label: "ДОП."

@@ -1,4 +1,5 @@
 ---
+import InlineMarkdown from '../global/InlineMarkdown.astro';
 interface Props {
   included: string[];
   notIncluded: string[];
@@ -14,13 +15,13 @@ const { included, notIncluded, notes = [] } = Astro.props;
       <div class="included__column included__column--included">
         <h2>Включено</h2>
         <ul>
-          {included.map((item) => <li>{item}</li>)}
+          {included.map((item) => <li><InlineMarkdown text={item} /></li>)}
         </ul>
       </div>
       <div class="included__column included__column--extra">
         <h2>Оплачивается отдельно</h2>
         <ul>
-          {notIncluded.map((item) => <li>{item}</li>)}
+          {notIncluded.map((item) => <li><InlineMarkdown text={item} /></li>)}
         </ul>
       </div>
     </div>
@@ -29,7 +30,7 @@ const { included, notIncluded, notes = [] } = Astro.props;
       <div class="included__notes">
         <h3>Важные условия</h3>
         <ul>
-          {notes.map((item) => <li>{item}</li>)}
+          {notes.map((item) => <li><InlineMarkdown text={item} /></li>)}
         </ul>
       </div>
     )}

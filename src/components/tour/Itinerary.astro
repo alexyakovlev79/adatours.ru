@@ -137,7 +137,7 @@ const resolveDayImage = (image: Day['image']) => {
     grid-template-columns: 80px 1fr 44px;
     gap: 20px;
     align-items: center;
-    min-height: 118px;
+    min-height: 82px;
     cursor: pointer;
     list-style: none;
   }
@@ -245,7 +245,7 @@ const resolveDayImage = (image: Day['image']) => {
       display: flex;
       flex-direction: column;
       min-height: 100%;
-      padding-bottom: 41px;
+      padding-bottom: 18px;
     }
 
     .day__content {
@@ -276,7 +276,7 @@ const resolveDayImage = (image: Day['image']) => {
       flex: 0 0 auto;
       min-height: 0;
       max-height: none;
-      margin-top: 41px;
+      margin-top: 18px;
       padding-top: 0;
       aspect-ratio: 16 / 9;
     }
@@ -298,11 +298,11 @@ const resolveDayImage = (image: Day['image']) => {
 
     .day summary {
       grid-template-columns: 44px 1fr 30px;
-      min-height: 94px;
+      min-height: 76px;
     }
 
     .day-card {
-      padding-bottom: 14px;
+      padding-bottom: 10px;
     }
 
     .day__content {
@@ -324,14 +324,14 @@ const resolveDayImage = (image: Day['image']) => {
     .day__media {
       width: 100vw;
       max-width: none;
-      margin-top: 14px;
+      margin-top: 10px;
       margin-left: 0;
       margin-right: 0;
       transform: translateX(calc(-1 * var(--gutter)));
     }
 
     .day[open] + .day__media {
-      margin-top: 28px;
+      margin-top: 22px;
     }
 
     .day__media img {

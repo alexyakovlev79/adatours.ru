@@ -52,7 +52,7 @@ const resolveDayImage = (image: Day['image']) => {
         const visibleImage = dayImages.length > 0;
         return (
         <article class:list={['day-card', { 'day-card--image': visibleImage }]}>
-          <details class="day" open>
+          <details class="day">
             <summary>
               <span class="day__number">{typeof day.day === 'number' ? String(day.day).padStart(2, '0') : ''}</span>
               <span class="day__title">{day.title}</span>
@@ -92,22 +92,6 @@ const resolveDayImage = (image: Day['image']) => {
     </div>
   </div>
 </section>
-
-<script is:inline>
-  (() => {
-    const mobileQuery = window.matchMedia('(max-width: 760px)');
-    const details = document.querySelectorAll('.itinerary .day');
-
-    const syncDefaultState = (isMobile) => {
-      details.forEach((item) => {
-        item.open = !isMobile;
-      });
-    };
-
-    syncDefaultState(mobileQuery.matches);
-    mobileQuery.addEventListener?.('change', (event) => syncDefaultState(event.matches));
-  })();
-</script>
 
 <style>
   .itinerary {
@@ -279,14 +263,27 @@ const resolveDayImage = (image: Day['image']) => {
 
     .day__media {
       display: grid;
-      flex: 1 1 320px;
       grid-auto-rows: minmax(0, 1fr);
       width: 100%;
+      overflow: hidden;
+    }
+
+    .day[open] + .day__media {
+      flex: 1 1 320px;
       min-height: 260px;
       max-height: 660px;
       margin-top: auto;
       padding-top: 40px;
-      overflow: hidden;
+      aspect-ratio: auto;
+    }
+
+    .day:not([open]) + .day__media {
+      flex: 0 0 auto;
+      min-height: 0;
+      max-height: none;
+      margin-top: 28px;
+      padding-top: 0;
+      aspect-ratio: 16 / 9;
     }
 
     .day__media img {
@@ -296,10 +293,6 @@ const resolveDayImage = (image: Day['image']) => {
       min-height: 0;
       aspect-ratio: auto;
       object-fit: cover;
-    }
-
-    .day:not([open]) + .day__media {
-      display: none;
     }
   }
 

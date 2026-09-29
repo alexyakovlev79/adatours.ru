@@ -14,7 +14,13 @@ and therefore to all tour pages that use the shared tour layout.
 
 At desktop width (`min-width: 1100px`) itinerary cards are arranged in two columns.
 
-For every pair of neighboring cards in one grid row:
+All itinerary items are collapsed by default. In the collapsed state the photograph remains visible directly below the summary row, while places/direction and descriptive text stay hidden until the user opens the item.
+
+Collapsed desktop photographs use the same 16:9 presentation, so all closed itinerary cards show media at one consistent size.
+
+When an item is opened, its media leaves the fixed collapsed ratio and returns to the flexible desktop behavior below.
+
+For every pair of neighboring **opened** cards in one grid row:
 
 - the **bottom edges of the photographs must align on one horizontal line**;
 - the distance from both photographs to the next pair of cards must be the same;
@@ -48,10 +54,13 @@ The `.day-card` itself is the object that stretches to the full height of its CS
 
 Desktop:
 
-- image height may vary from the image in the neighboring card;
-- media should fill the remaining card height within the established min/max bounds;
+- every item is collapsed by default;
+- collapsed media remains visible and uses the same 16:9 size across cards;
+- opening an item reveals places/direction, text, and subsections;
+- opened image height may vary from the image in the neighboring opened card;
+- opened media should fill the remaining card height within the established min/max bounds;
 - use `object-fit: cover`;
-- keep the bottom edge aligned with the neighboring card.
+- keep the bottom edge aligned with the neighboring opened card where the pair is expanded.
 
 Mobile:
 

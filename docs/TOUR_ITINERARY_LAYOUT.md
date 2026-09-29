@@ -18,7 +18,7 @@ All itinerary items are collapsed by default. In the collapsed state the photogr
 
 Collapsed desktop photographs use the same 16:9 presentation, so all closed itinerary cards show media at one consistent size.
 
-The collapsed summary must also sit visually halfway between the photograph above and its own photograph below. Preserve the overall vertical density by splitting the inter-photo spacing symmetrically: desktop uses 41 px below the preceding card media and 41 px above the next collapsed media; mobile uses 14 px + 14 px. Do not solve this by adding extra total height.
+The collapsed summary must sit visually halfway between the photograph above and its own photograph below. Keep the gap compact and symmetric: desktop uses 18 px below the preceding card media and 18 px above the next collapsed media; mobile uses 10 px + 10 px. The summary row itself is also compact (82 px desktop, 76 px mobile), so the photographs remain the dominant separators between itinerary items.
 
 There are no horizontal divider lines above or below itinerary cards. The always-visible photographs themselves separate one itinerary item from the next, on both desktop and mobile.
 

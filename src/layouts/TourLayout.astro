@@ -10,7 +10,6 @@ import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
-import MediaGallery from '../components/editorial/MediaGallery.astro';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -39,9 +38,6 @@ const firstStory = usableGallery[0] && d.highlights[0]
 const lastStory = usableGallery[1] && d.highlights.length > 1
   ? { item: d.highlights[d.highlights.length - 1], image: usableGallery[1] }
   : null;
-const storyImages = new Set([firstStory?.image.src, lastStory?.image.src].filter(Boolean));
-const galleryItems = usableGallery.filter((item) => !storyImages.has(item.src));
-
 const editorialHighlights = d.highlights.filter((_, index) => {
   if (firstStory && index === 0) return false;
   if (lastStory && index === d.highlights.length - 1) return false;
@@ -106,13 +102,6 @@ const subtitleParts = [
 
   {editorialHighlights.length > 0 && <HighlightsEditorial items={editorialHighlights} />}
 
-  {galleryItems.length > 0 && (
-    <MediaGallery
-      eyebrow="Впечатления"
-      title="Фотографии маршрута"
-      items={galleryItems}
-    />
-  )}
 
   <Itinerary days={d.itinerary} />
 

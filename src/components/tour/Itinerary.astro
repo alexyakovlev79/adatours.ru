@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
+import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface Day {
   day?: number;
@@ -59,12 +60,12 @@ const resolveDayImage = (image: Day['image']) => {
           <div class:list={['day__content', { 'day__content--image': visibleImage }]}>
             <div>
               {day.places && day.places.length > 0 && <p class="day__places">{day.places.join(' · ')}</p>}
-              <p>{day.text}</p>
+              <p><InlineMarkdown text={day.text} /></p>
               {day.subsections?.map((subsection) => (
                 <section class="day__subsection">
                   <h3>{subsection.title}</h3>
                   {subsection.text.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean).map((paragraph) => (
-                    <p>{paragraph}</p>
+                    <p><InlineMarkdown text={paragraph} /></p>
                   ))}
                 </section>
               ))}

@@ -31,8 +31,8 @@ currency: USD
 priceNote: Стоимость на 23.09.2026 — от $2230. Точная сумма зависит от дат, отелей, билетов и состава услуг.
 dates: []
 hero:
-  src: https://brasiltours.ru/image/cache/Lima-1920x1080.webp
-  alt: Перу, маршрут через Лиму и Анды
+  src: https://brasiltours.ru/image/lima.png
+  alt: Лима на берегу Тихого океана, Перу
 gallery: []
 featured: true
 priority: 90

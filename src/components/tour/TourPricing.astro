@@ -1,12 +1,13 @@
 ---
 import PrimaryCTA from '../global/PrimaryCTA.astro';
-import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface Props {
   price?: string;
+  // Kept for backward compatibility with existing content/component calls.
+  // Tour price notes are intentionally not rendered in the public pricing block.
   note?: string;
 }
-const { price = 'По запросу', note } = Astro.props;
+const { price = 'По запросу' } = Astro.props;
 ---
 
 <section class="pricing section">
@@ -16,7 +17,6 @@ const { price = 'По запросу', note } = Astro.props;
       <h2>{price}</h2>
     </div>
     <div class="pricing__copy">
-      <p><InlineMarkdown text={note ?? 'Финальная стоимость зависит от дат, категории размещения и выбранных дополнительных услуг.'} /></p>
       <PrimaryCTA href="/contacts/" label="Получить расчет" />
     </div>
   </div>
@@ -45,12 +45,8 @@ const { price = 'По запросу', note } = Astro.props;
     max-width: 500px;
   }
 
-  .pricing__copy p {
-    margin-top: 0;
-  }
-
   .pricing :global(.cta) {
-    margin-top: 22px;
+    margin-top: 0;
     border-color: var(--color-ink-deep);
     background: transparent;
   }

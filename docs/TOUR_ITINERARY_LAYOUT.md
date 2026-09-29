@@ -76,9 +76,10 @@ Mobile:
 - ordinary days keep their two-digit day number; additional-excursion items keep the number position empty;
 - opening the plus reveals the same full content as before; closing it hides the text again but never hides the mobile photograph;
 - the desktop paired-card alignment rule does not apply;
-- the mobile media **frame** uses 16:9, but the image itself must never be stretched or compressed to that ratio;
-- the image fills the frame with `width: 100%`, `height: 100%`, and `object-fit: cover`; if the source aspect ratio differs, crop the excess instead of distorting the photograph;
-- do not put `aspect-ratio: 16 / 9` on the `img` itself on mobile; the ratio belongs to the `.day__media` frame;
+- mobile itinerary photos keep their **original source aspect ratio**;
+- do not crop, stretch, compress, or force any common aspect ratio on mobile;
+- the image is rendered as `width: 100%` and `height: auto`; therefore different source photos may legitimately have different heights;
+- do not put `aspect-ratio: 16 / 9`, a fixed height, `height: 100%`, or `object-fit: cover` on mobile itinerary media;
 - itinerary photographs are full-bleed: each photo reaches both the left and right viewport edges, with no content gutter on either side.
 
 ## Additional excursions

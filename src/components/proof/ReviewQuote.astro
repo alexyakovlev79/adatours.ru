@@ -1,5 +1,6 @@
 ---
 import type { AdaReview } from '../../data/reviews/ada-tours';
+import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface Props {
   review: AdaReview;
@@ -19,7 +20,7 @@ const { review, index = 0 } = Astro.props;
 
     <div class="review__body">
       <blockquote>
-        <p>«{review.text}»</p>
+        <p>«<InlineMarkdown text={review.text} />»</p>
       </blockquote>
 
       <div class="review__author">

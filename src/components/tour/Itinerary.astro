@@ -93,6 +93,22 @@ const resolveDayImage = (image: Day['image']) => {
   </div>
 </section>
 
+<script is:inline>
+  (() => {
+    const mobileQuery = window.matchMedia('(max-width: 760px)');
+    const details = document.querySelectorAll('.itinerary .day');
+
+    const syncDefaultState = (isMobile) => {
+      details.forEach((item) => {
+        item.open = !isMobile;
+      });
+    };
+
+    syncDefaultState(mobileQuery.matches);
+    mobileQuery.addEventListener?.('change', (event) => syncDefaultState(event.matches));
+  })();
+</script>
+
 <style>
   .itinerary {
     color: var(--color-bg);

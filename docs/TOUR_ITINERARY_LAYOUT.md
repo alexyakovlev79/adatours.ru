@@ -56,6 +56,12 @@ Desktop:
 Mobile:
 
 - itinerary is single-column;
+- every itinerary item is **collapsed by default**;
+- the collapsed state shows the summary row only (day number when present, title, and the plus control) plus the item's photograph directly below it;
+- places/direction, descriptive text, and subsections stay hidden until the user opens the item;
+- the photograph remains visible in both collapsed and expanded states because `.day__media` stays outside `<details>`;
+- ordinary days keep their two-digit day number; additional-excursion items keep the number position empty;
+- opening the plus reveals the same full content as before; closing it hides the text again but never hides the mobile photograph;
 - the desktop paired-card alignment rule does not apply;
 - the existing mobile 16:9 presentation is allowed;
 - itinerary photographs are full-bleed: each photo reaches both the left and right viewport edges, with no content gutter on either side.

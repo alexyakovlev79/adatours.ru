@@ -1,4 +1,5 @@
 ---
+import InlineMarkdown from '../global/InlineMarkdown.astro';
 interface Props {
   eyebrow?: string;
   text: string;
@@ -10,7 +11,7 @@ const { eyebrow, text } = Astro.props;
 <section class="statement section">
   <div class="container">
     {eyebrow && <p class="eyebrow">{eyebrow}</p>}
-    <p class="statement__text">{text}</p>
+    <p class="statement__text"><InlineMarkdown text={text} /></p>
   </div>
 </section>
 

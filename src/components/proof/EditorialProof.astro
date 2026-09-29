@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
+import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface Props {
   eyebrow?: string;
@@ -19,10 +20,10 @@ const { eyebrow, title, text, image, facts = [], reverse = false } = Astro.props
   <div class="proof__copy">
     {eyebrow && <p class="eyebrow">{eyebrow}</p>}
     <h2>{title}</h2>
-    <p>{text}</p>
+    <p><InlineMarkdown text={text} /></p>
     {facts.length > 0 && (
       <ul>
-        {facts.map((fact) => <li>{fact}</li>)}
+        {facts.map((fact) => <li><InlineMarkdown text={fact} /></li>)}
       </ul>
     )}
   </div>

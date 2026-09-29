@@ -328,8 +328,8 @@ const resolveDayImage = (image: Day['image']) => {
       margin-left: 0;
       margin-right: 0;
       transform: translateX(calc(-1 * var(--gutter)));
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
+      aspect-ratio: auto;
+      overflow: visible;
     }
 
     .day[open] + .day__media {
@@ -339,10 +339,10 @@ const resolveDayImage = (image: Day['image']) => {
     .day__media img {
       display: block;
       width: 100%;
-      height: 100%;
+      height: auto;
       max-width: none;
       aspect-ratio: auto;
-      object-fit: cover;
+      object-fit: initial;
     }
   }
 </style>

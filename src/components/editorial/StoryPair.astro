@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
+import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface Props {
   eyebrow?: string;
@@ -24,7 +25,7 @@ const resolvedImage = image ? withBase(image) : undefined;
   <div class="story__copy">
     {eyebrow && <p class="eyebrow">{eyebrow}</p>}
     <h2>{title}</h2>
-    <p>{text}</p>
+    <p><InlineMarkdown text={text} /></p>
   </div>
 </section>
 

@@ -225,6 +225,20 @@ const resolveDayImage = (image: Day['image']) => {
     object-fit: cover;
   }
 
+  /*
+   * DESKTOP ITINERARY LAYOUT INVARIANT
+   * ----------------------------------
+   * The itinerary is a two-column grid on desktop. For every pair of neighboring
+   * cards, the BOTTOM edges of their media blocks must align. Text above the media
+   * may have different lengths. A card with shorter text is allowed to use a taller
+   * image so the image grows upward and fills part of the spare vertical space.
+   *
+   * Do NOT force equal image heights or a fixed 16:9 ratio on desktop.
+   * Do NOT keep itinerary media inside <details>; it must remain a sibling of
+   * <details> inside .day-card so the card itself controls row height and bottom
+   * alignment. Mobile remains single-column and may keep 16:9 images.
+   */
+
   @media (min-width: 1100px) {
     .itinerary__days {
       display: grid;

@@ -51,40 +51,42 @@ const resolveDayImage = (image: Day['image']) => {
         // Source-linked images stay attached to the exact itinerary day.
         const visibleImage = dayImages.length > 0;
         return (
-        <details class="day" open>
-          <summary>
-            <span class="day__number">{typeof day.day === 'number' ? String(day.day).padStart(2, '0') : (day.label ?? 'ДОП.')}</span>
-            <span class="day__title">{day.title}</span>
-            <span class="day__toggle" aria-hidden="true">+</span>
-          </summary>
-          <div class:list={['day__content', { 'day__content--image': visibleImage }]}>
-            <div>
-              {day.places && day.places.length > 0 && <p class="day__places">{day.places.join(' · ')}</p>}
-              <p><InlineMarkdown text={day.text} /></p>
-              {day.subsections?.map((subsection) => (
-                <section class="day__subsection">
-                  <h3>{subsection.title}</h3>
-                  {subsection.text.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean).map((paragraph) => (
-                    <p><InlineMarkdown text={paragraph} /></p>
-                  ))}
-                </section>
-              ))}
-            </div>
-            {visibleImage && (
-              <div class="day__media">
-                {dayImages.map((item) => (
-                  <img
-                    src={withBase(item.src)}
-                    alt={item.alt ?? ''}
-                    loading="lazy"
-                    data-media-status={item.status ?? 'legacy'}
-                    data-replacement-reason={item.replacementReason}
-                  />
+        <article class:list={['day-card', { 'day-card--image': visibleImage }]}>
+          <details class="day" open>
+            <summary>
+              <span class="day__number">{typeof day.day === 'number' ? String(day.day).padStart(2, '0') : (day.label ?? 'ДОП.')}</span>
+              <span class="day__title">{day.title}</span>
+              <span class="day__toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="day__content">
+              <div>
+                {day.places && day.places.length > 0 && <p class="day__places">{day.places.join(' · ')}</p>}
+                <p><InlineMarkdown text={day.text} /></p>
+                {day.subsections?.map((subsection) => (
+                  <section class="day__subsection">
+                    <h3>{subsection.title}</h3>
+                    {subsection.text.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean).map((paragraph) => (
+                      <p><InlineMarkdown text={paragraph} /></p>
+                    ))}
+                  </section>
                 ))}
               </div>
-            )}
-          </div>
-        </details>
+            </div>
+          </details>
+          {visibleImage && (
+            <div class="day__media">
+              {dayImages.map((item) => (
+                <img
+                  src={withBase(item.src)}
+                  alt={item.alt ?? ''}
+                  loading="lazy"
+                  data-media-status={item.status ?? 'legacy'}
+                  data-replacement-reason={item.replacementReason}
+                />
+              ))}
+            </div>
+          )}
+        </article>
         );
       })}
     </div>
@@ -123,12 +125,16 @@ const resolveDayImage = (image: Day['image']) => {
   }
 
 
-  .day {
+  .day-card {
     border-bottom: 1px solid rgba(255,255,255,.25);
   }
 
-  .day:last-child {
+  .day-card:last-child {
     border-bottom: 0;
+  }
+
+  .day {
+    border: 0;
   }
 
   .day summary {
@@ -169,8 +175,7 @@ const resolveDayImage = (image: Day['image']) => {
     transform: rotate(45deg);
   }
 
-  .day__content,
-  .day__content--image {
+  .day__content {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 40px;
@@ -227,45 +232,49 @@ const resolveDayImage = (image: Day['image']) => {
       column-gap: 48px;
     }
 
-    .day {
-      display: grid;
-      grid-template-rows: auto minmax(0, 1fr);
+    .day-card {
+      display: flex;
+      flex-direction: column;
       min-height: 100%;
+      padding-bottom: 54px;
     }
 
     .day__content {
-      padding-left: 0;
+      padding: 0;
     }
 
-    .day__content--image {
-      display: grid;
-      grid-template-rows: auto minmax(240px, 1fr);
-      gap: 40px;
-      min-height: 0;
-      padding-left: 0;
+    .day-card--image .day__content {
+      padding-bottom: 0;
     }
 
     .day__media {
       display: grid;
+      flex: 1 1 320px;
       grid-auto-rows: minmax(0, 1fr);
       width: 100%;
-      min-height: 0;
-      margin-top: 0;
+      min-height: 260px;
+      max-height: 660px;
+      margin-top: auto;
+      padding-top: 40px;
       overflow: hidden;
     }
 
-    .day__content img {
+    .day__media img {
       display: block;
       width: 100%;
       height: 100%;
+      min-height: 0;
       aspect-ratio: auto;
       object-fit: cover;
+    }
+
+    .day:not([open]) + .day__media {
+      display: none;
     }
   }
 
   @media (max-width: 760px) {
-    .itinerary__heading,
-    .day__content--image {
+    .itinerary__heading {
       grid-template-columns: 1fr;
     }
 
@@ -274,12 +283,18 @@ const resolveDayImage = (image: Day['image']) => {
       min-height: 94px;
     }
 
-    .day__content,
-    .day__content--image {
+    .day-card {
+      padding-bottom: 0;
+    }
+
+    .day__content {
       display: block;
       min-width: 0;
-      padding-left: 64px;
-      padding-right: 0;
+      padding: 0 0 0 64px;
+    }
+
+    .day-card:not(.day-card--image) {
+      padding-bottom: 54px;
     }
 
     .day__content > div:first-child {
@@ -297,7 +312,7 @@ const resolveDayImage = (image: Day['image']) => {
       transform: translateX(calc(-1 * (var(--gutter) + 64px)));
     }
 
-    .day__content img {
+    .day__media img {
       width: 100%;
       max-width: none;
       aspect-ratio: 16 / 9;

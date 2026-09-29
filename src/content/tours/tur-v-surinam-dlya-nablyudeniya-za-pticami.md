@@ -32,7 +32,7 @@ priceFrom: 3903
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/cache/countries/surinam/oblozhka-1920x1080.webp
+  src: https://brasiltours.ru/image/countries/surinam/oblozhka.jpg
   alt: "Тур наблюдения за птицами в Суринам"
 gallery: []
 featured: false

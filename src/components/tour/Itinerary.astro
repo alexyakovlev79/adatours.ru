@@ -54,7 +54,7 @@ const resolveDayImage = (image: Day['image']) => {
         <article class:list={['day-card', { 'day-card--image': visibleImage }]}>
           <details class="day" open>
             <summary>
-              <span class="day__number">{typeof day.day === 'number' ? String(day.day).padStart(2, '0') : (day.label ?? 'ДОП.')}</span>
+              <span class="day__number">{typeof day.day === 'number' ? String(day.day).padStart(2, '0') : ''}</span>
               <span class="day__title">{day.title}</span>
               <span class="day__toggle" aria-hidden="true">+</span>
             </summary>
@@ -323,7 +323,7 @@ const resolveDayImage = (image: Day['image']) => {
       margin-top: 28px;
       margin-left: 0;
       margin-right: 0;
-      transform: translateX(calc(-1 * (var(--gutter) + 64px)));
+      transform: translateX(calc(-1 * var(--gutter)));
     }
 
     .day__media img {

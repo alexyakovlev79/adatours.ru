@@ -57,7 +57,8 @@ Mobile:
 
 - itinerary is single-column;
 - the desktop paired-card alignment rule does not apply;
-- the existing mobile 16:9 presentation is allowed.
+- the existing mobile 16:9 presentation is allowed;
+- itinerary photographs are full-bleed: each photo reaches both the left and right viewport edges, with no content gutter on either side.
 
 ## Additional excursions
 
@@ -69,6 +70,8 @@ Examples:
 - «Парк птиц», дополнительно.
 
 They use the same visual card structure as ordinary days, may have their own photograph, and are inserted at the same point in the sequence as in the source program. They do not increase the advertised number of tour days.
+
+Additional-excursion cards have no visible numeric/day label. Do not render «ДОП.» or any other gold label in the number column; keep that position visually empty.
 
 ## Inline bold
 
@@ -86,3 +89,8 @@ Reference page while the site is on GitHub Pages:
 
 https://alexyakovlev79.github.io/adatours.ru/tury/bolshoe-priklyuchenie-braziliya-17-dnej/
 
+
+
+## Tour gallery block
+
+The standalone «Фотографии маршрута» / route-photo gallery is not rendered on tour pages. Legacy gallery media may remain in structured data when needed for other editorial slots, but do not output a separate route-photo gallery block in the tour layout.

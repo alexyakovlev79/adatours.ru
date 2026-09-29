@@ -2,7 +2,8 @@
 import { withBase } from '../../lib/paths';
 
 interface Day {
-  day: number;
+  day?: number;
+  label?: string;
   title: string;
   places?: string[];
   text: string;
@@ -39,7 +40,7 @@ const resolveDayImage = (image: Day['image']) => {
   <div class="container itinerary__container">
     <div class="itinerary__heading">
       <p class="eyebrow">Маршрут</p>
-      <h2>{days.length} дней путешествия</h2>
+      <h2>{days.filter((day) => typeof day.day === 'number').length} дней путешествия</h2>
     </div>
 
     <div class="itinerary__days">
@@ -51,7 +52,7 @@ const resolveDayImage = (image: Day['image']) => {
         return (
         <details class="day" open>
           <summary>
-            <span class="day__number">{String(day.day).padStart(2, '0')}</span>
+            <span class="day__number">{typeof day.day === 'number' ? String(day.day).padStart(2, '0') : (day.label ?? 'ДОП.')}</span>
             <span class="day__title">{day.title}</span>
             <span class="day__toggle" aria-hidden="true">+</span>
           </summary>

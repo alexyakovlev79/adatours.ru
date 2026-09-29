@@ -135,7 +135,8 @@ const tours = defineCollection({
       text: z.string(),
     })).default([]),
     itinerary: z.array(z.object({
-      day: z.number().int().positive(),
+      day: z.number().int().positive().optional(),
+      label: z.string().optional(),
       title: z.string(),
       places: z.array(z.string()).default([]),
       text: z.string(),

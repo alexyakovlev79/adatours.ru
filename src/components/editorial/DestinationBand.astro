@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
+import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface Props {
   eyebrow?: string;
@@ -43,7 +44,7 @@ const resolvedHref = withBase(href);
     <span class="band-card__overlay" aria-hidden="true"></span>
     {eyebrow && <span class="band-card__eyebrow eyebrow">{eyebrow}</span>}
     <strong class="band-card__title">{title}</strong>
-    {text && <span class="band-card__description">{text}</span>}
+    {text && <span class="band-card__description"><InlineMarkdown text={text} /></span>}
     <span class="band-card__link">Смотреть <span aria-hidden="true">↗</span></span>
   </a>
 ) : (
@@ -55,7 +56,7 @@ const resolvedHref = withBase(href);
     <div class="band__content">
       {eyebrow && <p class="eyebrow">{eyebrow}</p>}
       <h2>{title}</h2>
-      {text && <p class="band__text">{text}</p>}
+      {text && <p class="band__text"><InlineMarkdown text={text} /></p>}
       <span class="band__link">Смотреть <span aria-hidden="true">↗</span></span>
     </div>
   </a>

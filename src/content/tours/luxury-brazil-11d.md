@@ -50,7 +50,7 @@ itinerary:
       
       На вечер можно выбрать ресторан Cipriani в Belmond Copacabana Palace, отмеченный 1 звездой Мишлен. Вместо обычной встречи с гидом можно воспользоваться сервисом Fast Track Gold.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio-22-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-22.jpg
         alt: "Статуя Христа-Искупителя и панорама Рио-де-Жанейро"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -65,7 +65,7 @@ itinerary:
       
       Днем можно посетить Fogo de Chão, а вечером - Al Mare на Копакабане в отеле Fasano.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/ricardo-frantz-jww5qixn7ee-unsplash-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/ricardo-frantz-jww5qixn7ee-unsplash.jpg
         alt: "Поезд к Корковаду через лес Тижука"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -78,7 +78,7 @@ itinerary:
       
       После спуска можно зайти за кофе и бразильскими десертами в историческую Confeitaria Colombo. На вечер рекомендован Marius Degustare с морепродуктами и необычным интерьером.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/sebastien-goldberg-zzvzhtvg2gc-unsplash-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/sebastien-goldberg-zzvzhtvg2gc-unsplash.jpg
         alt: "Панорама Рио-де-Жанейро с Корковаду"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -98,7 +98,7 @@ itinerary:
       
       На одном из островов предусмотрен обед с местной кухней, затем остается время для прогулки и купания. Во время переходов шхуна проходит мимо небольших островов и закрытых бухт, а с воды хорошо видны зеленые склоны, которые подходят почти вплотную к берегу. Продолжительность программы около 8 часов.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/dharmendra-sahu-ia2kjtrx8y4-unsplash-2-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/dharmendra-sahu-ia2kjtrx8y4-unsplash-2.jpg
         alt: "Тропическое побережье и бирюзовая вода"
         intendedSlot: "itinerary:extra:Тропические острова"
   - label: "ДОП."
@@ -109,7 +109,7 @@ itinerary:
       
       В шоу входят самба и капоэйра с акробатикой и боевыми элементами. Танцоры выходят один за другим, музыка становится плотнее, барабаны задают темп всему залу. Капоэйра добавляет резкие повороты, удары ногами и акробатические движения. По желанию можно заказать ужин с традиционными бразильскими блюдами. После шоу гид доставит вас обратно в отель.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/ugur-arpaci-u18v0toiofu-unsplash-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/ugur-arpaci-u18v0toiofu-unsplash.jpg
         alt: "Карнавальные костюмы и бразильская самба"
         intendedSlot: "itinerary:extra:Ночное шоу с самбой и капоэйрой"
   - label: "ДОП."
@@ -120,7 +120,7 @@ itinerary:
       
       С воздуха видны Копакабана, Ипанема, Ботанический сад, лагуна Родригу-ди-Фрейташ, Корковадо со статуей Христа, яхты и бухты. Маршрут проходит вдоль побережья и между скалами. С высоты линии пляжей, кварталы и зеленые склоны складываются в единую карту, а знакомые места выглядят совсем иначе, чем с городских смотровых площадок.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio-12-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
         alt: "Полет на вертолете над Рио-де-Жанейро"
         intendedSlot: "itinerary:extra:Полет на вертолете над Рио"
   - label: "ДОП."
@@ -131,7 +131,7 @@ itinerary:
       
       После приготовления проходит дегустация.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/caipirinha-cocktail-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/caipirinha-cocktail.jpg
         alt: "Бразильская кайпиринья"
         intendedSlot: "itinerary:extra:Мастер-класс по приготовлению кайпириньи"
   - label: "ДОП."
@@ -142,7 +142,7 @@ itinerary:
       
       После приготовления все можно попробовать сразу с огня. Отдельная часть барбекю - ананас с корицей: на жаре сахар карамелизируется, а сладкий фрукт становится частью того же барбекю, что мясо и закуски.
     images:
-      - src: https://brasiltours.ru/image/cache/fogo_tableside1-1920x1080.webp
+      - src: https://brasiltours.ru/image/fogo_tableside1.png
         alt: "Приготовление бразильского шурраско"
         intendedSlot: "itinerary:extra:Мастер-класс по шурраско"
   - label: "ДОП."
@@ -155,7 +155,7 @@ itinerary:
       
       Продолжительность дополнительной экскурсии около 4 часов.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/rio-14-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-14.jpg
         alt: "Ботанический сад Рио-де-Жанейро"
         intendedSlot: "itinerary:extra:Ботанический сад"
   - label: "ДОП."
@@ -168,7 +168,7 @@ itinerary:
       
       Кроме основных экскурсий в Рио, программа специально оставляет выбор между активными и гастрономическими форматами. За один свободный день можно сделать акцент на воде и островах, на городе с высоты, на тропическом лесе или на кухне. Это дает возможность не превращать люксовый маршрут в непрерывную цепочку обязательных посещений и подстроить его под интересы конкретной пары или семьи.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1.jpg
         alt: "Сахарная голова и канатная дорога в Рио-де-Жанейро"
         intendedSlot: "itinerary:extra:Треккинг на Сахарную Голова"
   - day: 5
@@ -179,7 +179,7 @@ itinerary:
       
       Город расположен в приграничной части страны рядом с Аргентиной и Парагваем. После океанского Рио пейзаж меняется на плотную зелень и широкие реки.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash.jpg
         alt: "Водопады Игуасу"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -192,7 +192,7 @@ itinerary:
       
       После основной экскурсии можно выбрать Парк птиц или Макуко Сафари.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
         alt: "Бразильская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-6"
   - label: "ДОП."
@@ -203,7 +203,7 @@ itinerary:
       
       Часть видов находится под защитой, в том числе птицы, восстановленные после незаконной торговли. Деревянные дорожки проходят среди зелени, поэтому туканов, ара и других птиц можно рассматривать с очень близкого расстояния, видеть оттенки оперения, движение и полет без стекла между посетителем и птицей.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/mateus-campos-felipe-1629323-unsplash-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/mateus-campos-felipe-1629323-unsplash.jpg
         alt: "Фламинго в Парке птиц, Фос-ду-Игуасу"
         intendedSlot: "itinerary:extra:Парк птиц"
   - label: "ДОП."
@@ -214,7 +214,7 @@ itinerary:
       
       После короткого пешего перехода вы выходите к реке Игуасу и садитесь в моторную лодку. Она подходит ближе к водопадам, где пассажиры оказываются среди брызг и сильного шума воды. Снизу водопады воспринимаются иначе, чем со смотровых дорожек: над лодкой поднимается белая стена водяной пыли, поток оказывается совсем рядом, а радуги возникают практически на уровне глаз.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1334121-unsplash-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1334121-unsplash.jpg
         alt: "Катер Macuco Safari у водопадов Игуасу"
         intendedSlot: "itinerary:extra:Макуко Сафари"
   - day: 7
@@ -231,7 +231,7 @@ itinerary:
       
       На Игуасу важна именно комбинация 2 сторон. Бразильская дает широкую панораму всей линии каскадов и постепенное приближение к главному разлому. Аргентинская ведет по настилам внутрь водопадного комплекса и заканчивается у края «Глотки дьявола». Поэтому 2 дня здесь дают разные впечатления от одного природного объекта, а дополнительные Парк птиц и Макуко Сафари можно добавить между основными экскурсиями.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/iguazu-22-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/iguazu-22.jpg
         alt: "Глотка дьявола на водопадах Игуасу"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -242,7 +242,7 @@ itinerary:
       
       По мере движения городская застройка сменяется холмами и зеленью. Бузиос расположен на полуострове с десятками небольших бухт и пляжей. Воздух становится суше, движение спокойнее, а океан появляется между холмами все чаще. После размещения в отеле начинается пляжная часть маршрута, для которой в программе оставлено несколько дней без жесткого расписания.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/buzios/buzios-4-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
         alt: "Бухта Бузиоса с яхтами"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -255,7 +255,7 @@ itinerary:
       
       В Бузиосе программа сознательно становится свободнее. После насыщенных дней в Рио и на Игуасу здесь нет необходимости каждое утро отправляться на экскурсию. Можно выбрать один пляж и остаться там на несколько часов, взять лодку, прогуляться по Rua das Pedras или провести день в отеле. Разные стороны полуострова дают разное море: где-то вода спокойная и подходит для плавания, где-то открытая Атлантика приносит заметную волну.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/buzios/buzios-3-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-3.jpg
         alt: "Пляж в Бузиосе"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -266,7 +266,7 @@ itinerary:
       
       Дополнительно предлагается морская прогулка вдоль побережья. Лодка проходит мимо островов и закрытых бухт, к которым трудно добраться с суши. Во время остановок можно плавать в теплой прозрачной воде и рассматривать берег со стороны моря. С борта особенно хорошо видно устройство полуострова: небольшие пляжи сменяют друг друга, между ними поднимаются зеленые холмы, а дома разбросаны вдоль линии берега.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/45-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/45.jpg
         alt: "Rua das Pedras в Бузиосе"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -275,7 +275,7 @@ itinerary:
     text: |-
       После завтрака выезд в сторону Рио. Дорога занимает около 2,5-3 часов. По прибытии трансфер в международный аэропорт и завершение путешествия.
     images:
-      - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/jaime-dantas-sp4cvudiy5u-unsplash-1920x1080.webp
+      - src: https://brasiltours.ru/image/countries/brazil/new-pics/jaime-dantas-sp4cvudiy5u-unsplash.jpg
         alt: "Пляж Ипанема в Рио-де-Жанейро"
         intendedSlot: "itinerary:day-11"
 included:

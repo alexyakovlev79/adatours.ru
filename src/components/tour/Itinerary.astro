@@ -227,9 +227,24 @@ const resolveDayImage = (image: Day['image']) => {
       column-gap: 48px;
     }
 
+    .day {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
     .day__content,
     .day__content--image {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      gap: 0;
       padding-left: 0;
+    }
+
+    .day__media {
+      margin-top: auto;
+      padding-top: 40px;
     }
   }
 

@@ -250,7 +250,7 @@ const resolveDayImage = (image: Day['image']) => {
       display: flex;
       flex-direction: column;
       min-height: 100%;
-      padding-bottom: 54px;
+      padding-bottom: 41px;
     }
 
     .day__content {
@@ -281,7 +281,7 @@ const resolveDayImage = (image: Day['image']) => {
       flex: 0 0 auto;
       min-height: 0;
       max-height: none;
-      margin-top: 28px;
+      margin-top: 41px;
       padding-top: 0;
       aspect-ratio: 16 / 9;
     }
@@ -307,7 +307,7 @@ const resolveDayImage = (image: Day['image']) => {
     }
 
     .day-card {
-      padding-bottom: 0;
+      padding-bottom: 14px;
     }
 
     .day__content {
@@ -329,10 +329,14 @@ const resolveDayImage = (image: Day['image']) => {
     .day__media {
       width: 100vw;
       max-width: none;
-      margin-top: 28px;
+      margin-top: 14px;
       margin-left: 0;
       margin-right: 0;
       transform: translateX(calc(-1 * var(--gutter)));
+    }
+
+    .day[open] + .day__media {
+      margin-top: 28px;
     }
 
     .day__media img {

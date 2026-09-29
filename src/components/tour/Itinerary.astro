@@ -228,25 +228,29 @@ const resolveDayImage = (image: Day['image']) => {
     }
 
     .day {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
       min-height: 100%;
     }
 
-    .day__content,
+    .day__content {
+      padding-left: 0;
+    }
+
     .day__content--image {
-      display: flex;
-      flex: 1 1 auto;
-      flex-direction: column;
-      gap: 0;
+      display: grid;
+      grid-template-rows: auto minmax(240px, 1fr);
+      gap: 40px;
+      min-height: 0;
       padding-left: 0;
     }
 
     .day__media {
+      display: grid;
+      grid-auto-rows: minmax(0, 1fr);
       width: 100%;
-      aspect-ratio: 16 / 9;
-      margin-top: auto;
-      padding-top: 40px;
+      min-height: 0;
+      margin-top: 0;
       overflow: hidden;
     }
 

@@ -35,7 +35,6 @@ route:
   - Пуно
 priceFrom: 5716
 currency: USD
-priceNote: Стоимость на 23.09.2026 — от $5716. Точная сумма зависит от дат, отелей, перелетов и состава услуг.
 dates: []
 hero:
   src: https://brasiltours.ru/image/cache/countries/argentina/new-photos/kulli-kittus-icwoh2prgu4-unsplash-1920x1029.webp

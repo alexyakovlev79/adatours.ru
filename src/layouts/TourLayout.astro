@@ -19,10 +19,6 @@ const money = roundedPrice && d.currency
   ? 'от ' + currencyPrefix + roundedPrice.toLocaleString('ru-RU', { maximumFractionDigits: 0 })
   : 'По запросу';
 
-const publicPriceNote = d.priceNote && !/стоимость\s+на\s+исходной\s+странице/i.test(d.priceNote)
-  ? d.priceNote
-  : undefined;
-
 const stats = [
   d.durationDays ? { value: String(d.durationDays), label: 'дней' } : null,
   d.durationNights !== undefined ? { value: String(d.durationNights), label: 'ночей' } : null,
@@ -117,7 +113,7 @@ const subtitleParts = [
     />
   )}
 
-  <TourPricing price={money} note={publicPriceNote} />
+  <TourPricing price={money} />
   {(d.included.length > 0 || d.notIncluded.length > 0) && (
     <IncludedExcluded included={d.included} notIncluded={d.notIncluded} notes={d.notes} />
   )}

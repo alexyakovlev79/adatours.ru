@@ -138,9 +138,25 @@ const tours = defineCollection({
     itinerary: z.array(z.object({
       day: z.number().int().positive().optional(),
       label: z.string().optional(),
-      title: z.string(),
+      title: z.string().optional(),
       places: z.array(z.string()).default([]),
-      text: z.string(),
+      text: z.string().default(''),
+      excursionRef: z.string().optional(),
+      contentBlocks: z.array(z.union([
+        z.object({
+          type: z.literal('text'),
+          text: z.string(),
+        }),
+        z.object({
+          type: z.literal('section'),
+          title: z.string(),
+          text: z.string(),
+        }),
+        z.object({
+          type: z.literal('excursion'),
+          excursionRef: z.string(),
+        }),
+      ])).default([]),
       image: z.union([z.string(), mediaObject]).optional(),
       images: z.array(mediaObject).default([]),
       subsections: z.array(z.object({

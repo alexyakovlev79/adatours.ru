@@ -12,7 +12,7 @@ destination: destination_brazil_rio
 themes: [gastronomy, culture]
 language: []
 hero:
-  src: /media/tours/luxury-brazil-11d/itinerary/extra-caipirinha-enhanced-20260930.webp
+  src: /media/excursions/master-klass-po-prigotovleniyu-kajpirini/hero.webp
   alt: Бразильская кайпиринья
 gallery: []
 route:

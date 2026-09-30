@@ -16,7 +16,7 @@ priceFrom: 188
 currency: USD
 priceNote: Цена указана на человека. Для 2 и более человек возможна скидка.
 hero:
-  src: https://brasiltours.ru/image/cache/catalog/product/f/i/file_113_44-preload.webp
+  src: https://brasiltours.ru/image/catalog/product/f/i/file_113_44.jpg
   alt: Ледник Перито-Морено в Аргентине
 gallery: []
 route: []

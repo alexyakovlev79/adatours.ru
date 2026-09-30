@@ -1,13 +1,36 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
+
+const entries = (await getCollection('excursions', ({ data }) =>
+  data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+)).sort((a, b) => a.data.title.localeCompare(b.data.title, 'ru'));
 ---
 
-<BaseLayout title="Экскурсии в Бразилии и Латинской Америке | Ada Tours">
+<BaseLayout
+  title="Экскурсии в Бразилии и Латинской Америке"
+  description="Экскурсии Ada Tours по городам и природным территориям Латинской Америки: частные и групповые программы с прямой заявкой принимающему туроператору."
+>
   <Hero
     eyebrow="Экскурсии"
-    title="Экскурсии, ради которых стоит оставить время"
-    intro="Город, природа, вода, гастрономия или частная прогулка с гидом. Выберите место, а мы подберем подходящий формат."
+    title="Экскурсии по Латинской Америке"
+    intro="Город, природа, вода, гастрономия или день за пределами столицы. Выберите программу, а Ada Tours поможет встроить ее в путешествие."
     compact
   />
+
+  {entries.map((entry, index) => (
+    <DestinationBand
+      eyebrow={[entry.data.duration ?? '', entry.data.format ?? ''].filter(Boolean).join(' · ')}
+      title={entry.data.title}
+      text={entry.data.lead}
+      image={entry.data.hero?.src}
+      mediaStatus={entry.data.hero?.status}
+      replacementReason={entry.data.hero?.replacementReason}
+      href={`/ekskursii/${entry.data.slug}/`}
+      align={index % 2 === 1 ? 'right' : 'left'}
+      descriptionBelow={true}
+    />
+  ))}
 </BaseLayout>

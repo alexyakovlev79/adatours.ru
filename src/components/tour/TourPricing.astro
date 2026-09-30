@@ -3,11 +3,12 @@ import PrimaryCTA from '../global/PrimaryCTA.astro';
 
 interface Props {
   price?: string;
+  ctaLabel?: string;
   // Kept for backward compatibility with existing content/component calls.
   // Tour price notes are intentionally not rendered in the public pricing block.
   note?: string;
 }
-const { price = 'По запросу' } = Astro.props;
+const { price = 'По запросу', ctaLabel = 'Заказать этот тур' } = Astro.props;
 ---
 
 <section class="pricing section">
@@ -17,7 +18,7 @@ const { price = 'По запросу' } = Astro.props;
       <h2>{price}</h2>
     </div>
     <div class="pricing__copy">
-      <PrimaryCTA href="/contacts/" label="Заказать этот тур" />
+      <PrimaryCTA href="/contacts/" label={ctaLabel} />
     </div>
   </div>
 </section>

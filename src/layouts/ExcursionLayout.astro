@@ -1,0 +1,158 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Hero from '../components/editorial/Hero.astro';
+import TripStats from '../components/tour/TripStats.astro';
+import MediaGallery from '../components/editorial/MediaGallery.astro';
+import TourPricing from '../components/tour/TourPricing.astro';
+import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
+import LeadForm from '../components/forms/LeadForm.astro';
+import EditorialStatement from '../components/editorial/EditorialStatement.astro';
+import DestinationBand from '../components/editorial/DestinationBand.astro';
+
+const { entry } = Astro.props;
+const d = entry.data;
+
+const [countryEntries, destinationEntries, relatedEntries] = await Promise.all([
+  getCollection('countries', ({ data }) => data.locale === 'ru' && data.id === d.country),
+  getCollection('destinations', ({ data }) => data.locale === 'ru' && data.id === d.destination),
+  getCollection('excursions', ({ data }) =>
+    data.locale === 'ru' &&
+    !['draft', 'archived'].includes(data.status) &&
+    data.id !== d.id &&
+    (data.destination === d.destination || data.country === d.country)
+  ),
+]);
+
+const country = countryEntries[0];
+const destination = destinationEntries[0];
+const relatedExcursions = relatedEntries
+  .sort((a, b) => {
+    const aSame = a.data.destination === d.destination ? 0 : 1;
+    const bSame = b.data.destination === d.destination ? 0 : 1;
+    return aSame - bSame || a.data.title.localeCompare(b.data.title, 'ru');
+  })
+  .slice(0, 3);
+
+const roundedPrice = typeof d.priceFrom === 'number' ? Math.round(d.priceFrom) : null;
+const currencyPrefix = d.currency === 'USD' ? String.fromCharCode(36) : '';
+const money = roundedPrice && d.currency
+  ? 'от ' + currencyPrefix + roundedPrice.toLocaleString('ru-RU', { maximumFractionDigits: 0 })
+  : 'По запросу';
+
+const stats = [
+  d.duration ? { value: d.duration, label: 'продолжительность' } : null,
+  destination ? { value: destination.data.name, label: 'место' } : null,
+  d.format ? { value: d.format, label: 'формат' } : null,
+].filter(Boolean);
+
+const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://adatours.ru').toString();
+const excursionSchema = {
+  '@type': 'TouristTrip',
+  '@id': `${pageUrl}#excursion`,
+  name: d.title,
+  description: d.lead,
+  url: pageUrl,
+  ...(d.hero?.src ? { image: d.hero.src } : {}),
+  ...(d.route.length > 0 ? {
+    itinerary: {
+      '@type': 'ItemList',
+      itemListElement: d.route.map((name, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        item: { '@type': 'Place', name },
+      })),
+    },
+  } : {}),
+  ...(roundedPrice && d.currency ? {
+    offers: {
+      '@type': 'Offer',
+      price: roundedPrice,
+      priceCurrency: d.currency,
+      url: pageUrl,
+    },
+  } : {}),
+};
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.lead}
+  image={d.hero?.src}
+  pageSchema={excursionSchema}
+>
+  <Hero
+    eyebrow="Экскурсия"
+    title={d.title}
+    intro={d.lead}
+    image={d.hero?.src}
+    mediaStatus={d.hero?.status}
+    replacementReason={d.hero?.replacementReason}
+    meta={[d.duration ?? '', d.route.join(' · ')].filter(Boolean).join(' · ')}
+    ctaLabel="Заказать экскурсию"
+  />
+
+  {stats.length > 0 && <TripStats stats={stats} />}
+
+  <section class="excursion-copy section--tight">
+    <div class="container prose">
+      <slot />
+    </div>
+  </section>
+
+  {d.gallery.length > 0 && (
+    <MediaGallery
+      items={d.gallery}
+      eyebrow="Фотографии"
+      title="Экскурсия в кадрах"
+    />
+  )}
+
+  <TourPricing price={money} ctaLabel="Заказать экскурсию" />
+
+  {(d.included.length > 0 || d.notIncluded.length > 0 || d.notes.length > 0) && (
+    <IncludedExcluded included={d.included} notIncluded={d.notIncluded} notes={d.notes} />
+  )}
+
+  {relatedExcursions.length > 0 && (
+    <>
+      <EditorialStatement eyebrow="Рядом" text="Другие экскурсии, которые можно добавить к поездке" />
+      {relatedExcursions.map((item, index) => (
+        <DestinationBand
+          eyebrow={[item.data.duration ?? '', item.data.format ?? ''].filter(Boolean).join(' · ')}
+          title={item.data.title}
+          text={item.data.lead}
+          image={item.data.hero?.src}
+          mediaStatus={item.data.hero?.status}
+          replacementReason={item.data.hero?.replacementReason}
+          href={`/ekskursii/${item.data.slug}/`}
+          align={index % 2 === 1 ? 'right' : 'left'}
+        />
+      ))}
+    </>
+  )}
+
+  <LeadForm title={`Заказать экскурсию: ${d.title}`} entityId={d.id} />
+</BaseLayout>
+
+<style>
+  .excursion-copy {
+    background: var(--color-bg);
+    padding-block: clamp(58px, 6vw, 96px);
+  }
+
+  .excursion-copy :global(.prose) {
+    max-width: 900px;
+  }
+
+  .excursion-copy :global(.prose p) {
+    margin-block: 0 1.3em;
+    color: color-mix(in srgb, var(--color-ink) 82%, transparent);
+    font-size: clamp(1.12rem, 1.4vw, 1.42rem);
+    line-height: 1.58;
+  }
+
+  .excursion-copy :global(.prose p:last-child) {
+    margin-bottom: 0;
+  }
+</style>

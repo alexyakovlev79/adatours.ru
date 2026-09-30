@@ -170,9 +170,14 @@ const excursions = defineCollection({
     language: z.array(z.string()).default([]),
     priceFrom: z.number().nonnegative().nullable().optional(),
     currency: z.string().optional(),
+    priceNote: z.string().optional(),
     hero: media,
     gallery: z.array(mediaObject).default([]),
     route: z.array(z.string()).default([]),
+    lead: z.string(),
+    included: z.array(z.string()).default([]),
+    notIncluded: z.array(z.string()).default([]),
+    notes: z.array(z.string()).default([]),
   }),
 });
 

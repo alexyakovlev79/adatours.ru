@@ -12,18 +12,26 @@ import { withBase } from '../lib/paths';
 
 const { entry } = Astro.props;
 const d = entry.data;
-const [tourEntries, countryEntries] = await Promise.all([
+const [tourEntries, countryEntries, excursionEntries] = await Promise.all([
   getCollection('tours', ({ data }) =>
     data.locale === 'ru' &&
     !['draft', 'archived'].includes(data.status) &&
     data.destinations.includes(d.id)
   ),
   getCollection('countries', ({ data }) => data.locale === 'ru' && data.id === d.countryId),
+  getCollection('excursions', ({ data }) =>
+    data.locale === 'ru' &&
+    !['draft', 'archived'].includes(data.status) &&
+    data.destination === d.id
+  ),
 ]);
 
 const relatedTours = tourEntries
   .sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0))
   .slice(0, 3);
+const relatedExcursions = excursionEntries
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, 'ru'))
+  .slice(0, 6);
 const country = countryEntries[0];
 const countryName = country?.data.name ?? '';
 
@@ -113,6 +121,24 @@ const destinationSchema = {
           mediaStatus={tour.data.hero?.status}
           replacementReason={tour.data.hero?.replacementReason}
           href={`/tury/${tour.data.slug}/`}
+          align={index % 2 === 1 ? 'right' : 'left'}
+        />
+      ))}
+    </>
+  )}
+
+  {relatedExcursions.length > 0 && (
+    <>
+      <EditorialStatement eyebrow="Экскурсии" text={`Экскурсии: ${d.name}`} />
+      {relatedExcursions.map((excursion, index) => (
+        <DestinationBand
+          eyebrow={[excursion.data.duration ?? '', excursion.data.format ?? ''].filter(Boolean).join(' · ')}
+          title={excursion.data.title}
+          text={excursion.data.lead}
+          image={excursion.data.hero?.src}
+          mediaStatus={excursion.data.hero?.status}
+          replacementReason={excursion.data.hero?.replacementReason}
+          href={`/ekskursii/${excursion.data.slug}/`}
           align={index % 2 === 1 ? 'right' : 'left'}
         />
       ))}

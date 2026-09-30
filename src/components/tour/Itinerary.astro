@@ -1,27 +1,31 @@
 ---
+import { getCollection } from 'astro:content';
 import { withBase } from '../../lib/paths';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
+
+interface MediaItem {
+  src: string;
+  alt?: string;
+  status?: 'approved' | 'needs_replacement' | 'replaced';
+  replacementReason?: string;
+  intendedSlot?: string;
+}
+
+type ContentBlock =
+  | { type: 'text'; text: string }
+  | { type: 'section'; title: string; text: string }
+  | { type: 'excursion'; excursionRef: string };
 
 interface Day {
   day?: number;
   label?: string;
-  title: string;
+  title?: string;
   places?: string[];
-  text: string;
-  image?: string | {
-    src: string;
-    alt?: string;
-    status?: 'approved' | 'needs_replacement' | 'replaced';
-    replacementReason?: string;
-    intendedSlot?: string;
-  };
-  images?: Array<{
-    src: string;
-    alt?: string;
-    status?: 'approved' | 'needs_replacement' | 'replaced';
-    replacementReason?: string;
-    intendedSlot?: string;
-  }>;
+  text?: string;
+  excursionRef?: string;
+  contentBlocks?: ContentBlock[];
+  image?: string | MediaItem;
+  images?: MediaItem[];
   subsections?: Array<{
     title: string;
     text: string;
@@ -47,6 +51,73 @@ const resolveDayImage = (image: Day['image']) => {
   if (typeof image === 'string') return { src: image, alt: '', status: undefined };
   return image;
 };
+
+const referencedExcursionIds = new Set<string>();
+for (const day of days) {
+  if (day.excursionRef) referencedExcursionIds.add(day.excursionRef);
+  for (const block of day.contentBlocks ?? []) {
+    if (block.type === 'excursion') referencedExcursionIds.add(block.excursionRef);
+  }
+}
+
+const excursionEntries = referencedExcursionIds.size > 0
+  ? await getCollection(
+      'excursions',
+      ({ data }) => data.locale === 'ru' && referencedExcursionIds.has(data.id),
+    )
+  : [];
+
+const excursionById = new Map(excursionEntries.map((entry) => [entry.data.id, entry]));
+const missingExcursionIds = [...referencedExcursionIds].filter((id) => !excursionById.has(id));
+
+if (missingExcursionIds.length > 0) {
+  throw new Error(
+    `Itinerary references missing excursion entities: ${missingExcursionIds.join(', ')}`,
+  );
+}
+
+const resolveExcursion = (id?: string) => {
+  if (!id) return null;
+  const entry = excursionById.get(id);
+  if (!entry) return null;
+
+  return {
+    id: entry.data.id,
+    title: entry.data.title,
+    lead: entry.data.lead,
+    bodyHtml: entry.rendered?.html ?? '',
+    hero: entry.data.hero,
+  };
+};
+
+const splitParagraphs = (text: string) =>
+  text.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean);
+
+const resolvedDays = days.map((day) => {
+  const excursion = resolveExcursion(day.excursionRef);
+  const localImage = resolveDayImage(day.image);
+  const dayImages = excursion?.hero
+    ? [excursion.hero]
+    : day.images?.length
+      ? day.images
+      : localImage
+        ? [localImage]
+        : [];
+
+  const contentBlocks = (day.contentBlocks ?? []).map((block) =>
+    block.type === 'excursion'
+      ? { ...block, excursion: resolveExcursion(block.excursionRef) }
+      : block
+  );
+
+  return {
+    ...day,
+    resolvedTitle: excursion?.title ?? day.title ?? '',
+    excursion,
+    dayImages,
+    contentBlocks,
+  };
+});
 ---
 
 <section class="itinerary section">
@@ -57,37 +128,97 @@ const resolveDayImage = (image: Day['image']) => {
     </div>
 
     <div class="itinerary__days">
-      {days.map((day) => {
-        const image = resolveDayImage(day.image);
-        const dayImages = day.images?.length ? day.images : (image ? [image] : []);
-        // Source-linked images stay attached to the exact itinerary day.
-        const visibleImage = dayImages.length > 0;
+      {resolvedDays.map((day) => {
+        const visibleImage = day.dayImages.length > 0;
         return (
-        <article class:list={['day-card', { 'day-card--image': visibleImage }]}>
+        <article
+          class:list={['day-card', { 'day-card--image': visibleImage }]}
+          data-excursion-ref={day.excursion?.id}
+        >
           <details class="day">
             <summary>
               <span class="day__number">{typeof day.day === 'number' ? String(day.day).padStart(2, '0') : ''}</span>
-              <span class="day__title">{day.title}</span>
+              <span class="day__title">{day.resolvedTitle}</span>
               <span class="day__toggle" aria-hidden="true">+</span>
             </summary>
             <div class="day__content">
               <div>
                 {day.places && day.places.length > 0 && <p class="day__places">{day.places.join(' · ')}</p>}
-                <p><InlineMarkdown text={day.text} /></p>
-                {day.subsections?.map((subsection) => (
-                  <section class="day__subsection">
-                    <h3>{subsection.title}</h3>
-                    {subsection.text.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean).map((paragraph) => (
-                      <p><InlineMarkdown text={paragraph} /></p>
+
+                {day.excursion ? (
+                  day.excursion.bodyHtml
+                    ? <div class="excursion-embed__body" set:html={day.excursion.bodyHtml} />
+                    : <p><InlineMarkdown text={day.excursion.lead} /></p>
+                ) : day.contentBlocks.length > 0 ? (
+                  day.contentBlocks.map((block) => {
+                    if (block.type === 'text') {
+                      return (
+                        <div class="day__content-block">
+                          {splitParagraphs(block.text).map((paragraph) => (
+                            <p><InlineMarkdown text={paragraph} /></p>
+                          ))}
+                        </div>
+                      );
+                    }
+
+                    if (block.type === 'section') {
+                      return (
+                        <section class="day__content-block day__content-block--section">
+                          <h3>{block.title}</h3>
+                          {splitParagraphs(block.text).map((paragraph) => (
+                            <p><InlineMarkdown text={paragraph} /></p>
+                          ))}
+                        </section>
+                      );
+                    }
+
+                    const excursion = block.excursion;
+                    if (!excursion) return null;
+
+                    return (
+                      <section
+                        class="day__embedded-excursion"
+                        data-excursion-ref={excursion.id}
+                      >
+                        <h3>{excursion.title}</h3>
+                        {excursion.bodyHtml
+                          ? <div class="excursion-embed__body" set:html={excursion.bodyHtml} />
+                          : <p><InlineMarkdown text={excursion.lead} /></p>
+                        }
+                        {excursion.hero && (
+                          <div class="day__embedded-excursion__media">
+                            <img
+                              src={withBase(excursion.hero.src)}
+                              alt={excursion.hero.alt ?? excursion.title}
+                              loading="lazy"
+                              data-media-status={excursion.hero.status ?? 'legacy'}
+                              data-replacement-reason={excursion.hero.replacementReason}
+                            />
+                          </div>
+                        )}
+                      </section>
+                    );
+                  })
+                ) : (
+                  <>
+                    <p><InlineMarkdown text={day.text ?? ''} /></p>
+                    {day.subsections?.map((subsection) => (
+                      <section class="day__subsection">
+                        <h3>{subsection.title}</h3>
+                        {splitParagraphs(subsection.text).map((paragraph) => (
+                          <p><InlineMarkdown text={paragraph} /></p>
+                        ))}
+                      </section>
                     ))}
-                  </section>
-                ))}
+                  </>
+                )}
               </div>
             </div>
           </details>
+
           {visibleImage && (
             <div class="day__media">
-              {dayImages.map((item) => (
+              {day.dayImages.map((item) => (
                 <img
                   src={withBase(item.src)}
                   alt={item.alt ?? ''}
@@ -217,6 +348,43 @@ const resolveDayImage = (image: Day['image']) => {
 
   .day__subsection p:last-child {
     margin-bottom: 0;
+  }
+
+  .day__content-block + .day__content-block,
+  .day__content-block + .day__embedded-excursion,
+  .day__embedded-excursion + .day__content-block,
+  .day__embedded-excursion + .day__embedded-excursion {
+    margin-top: 28px;
+  }
+
+  .day__content-block--section h3,
+  .day__embedded-excursion h3 {
+    margin: 0 0 14px;
+    color: var(--color-gold);
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 1rem + .45vw, 1.45rem);
+    line-height: 1.2;
+  }
+
+  .day__embedded-excursion :global(.excursion-embed__body p) {
+    margin-top: 0;
+    color: rgba(255,255,255,.74);
+  }
+
+  .day__embedded-excursion :global(.excursion-embed__body p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .day__embedded-excursion__media {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  .day__embedded-excursion__media img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 
   .day__media {

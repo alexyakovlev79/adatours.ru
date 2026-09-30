@@ -136,12 +136,8 @@ itinerary:
     images:
       - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1334121-unsplash.jpg
         alt: "Макуко-сафари у водопадов Игуасу"
-  - title: "Парк птиц, дополнительно"
+  - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
     places: ["Фос-ду-Игуасу"]
-    text: "В Парке птиц маршрут проходит через большие открытые вольеры. Туканы, ара, фламинго и другие птицы летают над дорожками и садятся на ветки рядом. Их можно рассмотреть с близкого расстояния: яркое оперение, крупные клювы, длинные хвосты и поведение в тропической зелени."
-    images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/11.jpg
-        alt: "Парк птиц Игуасу"
   - day: 8
     title: "Перелет в Пантанал"
     places: ["Фос-ду-Игуасу", "Кампо-Гранде", "Пантанал"]

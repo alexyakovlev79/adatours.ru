@@ -31,7 +31,7 @@ priceFrom: 3123
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/rafael-vianna-croffi-v7jhssul1sm-1200.jpg
+  src: /media/tours/pantanal-bonito-lencois-8d/hero-enhanced-20260930.webp
   alt: Пещера в Бонито, Бразилия
 gallery:
   - src: https://brasiltours.ru/image/cache/catalog/category/b/o/bonitospring-1920x1080.webp

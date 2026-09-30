@@ -28,7 +28,7 @@ priceFrom: 1411
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/catalog/product/c/l/clipper1_1.jpg
+  src: /media/tours/amazon-clipper-cruise-traditional-3-days-2-nights/hero-enhanced-20260930.webp
   alt: "Круиз по Амазонке на теплоходе Amazon Clipper"
 gallery: []
 featured: false

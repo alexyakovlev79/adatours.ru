@@ -33,7 +33,7 @@ priceFrom: 3580
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/São_Paulo.png
+  src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/hero-enhanced-20260930.webp
   alt: Сан-Паулу, начало маршрута по Бразилии
 gallery:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/ilha-grande.jpg

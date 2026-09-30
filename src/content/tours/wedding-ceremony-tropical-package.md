@@ -22,7 +22,7 @@ priceFrom: 4063
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/catalog/product/4/2/42627617073039430.png
+  src: /media/tours/wedding-ceremony-tropical-package/hero-enhanced-20260930.webp
   alt: "Тропическая свадебная церемония в Бразилии"
 gallery: []
 featured: false

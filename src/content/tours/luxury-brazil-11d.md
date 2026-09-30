@@ -29,7 +29,7 @@ currency: USD
 priceNote: Стоимость по программе 2026 — от $3653. Точная сумма зависит от дат, категории отелей и набора услуг.
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash.jpg
+  src: /media/tours/luxury-brazil-11d/hero-enhanced-20260930.webp
   alt: Панорама Рио-де-Жанейро
 gallery:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-8.jpg

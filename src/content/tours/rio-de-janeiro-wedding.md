@@ -21,7 +21,7 @@ priceFrom: 4243
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/rio-de-janeiro-praiaantiga-1.png
+  src: /media/tours/rio-de-janeiro-wedding/hero-enhanced-20260930.webp
   alt: "Пляж Прайя-Вермелья в Рио-де-Жанейро"
 gallery: []
 featured: false

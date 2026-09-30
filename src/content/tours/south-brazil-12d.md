@@ -35,7 +35,7 @@ priceFrom: 8761
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/santa-katarina-florianopolis1.png
+  src: /media/tours/south-brazil-12d/hero-enhanced-20260930.webp
   alt: Флорианополис и побережье Южной Бразилии
 gallery:
   - src: https://brasiltours.ru/image/cache/gramadu%20b-1920x1080.webp

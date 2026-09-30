@@ -34,7 +34,7 @@ priceFrom: 6289
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-5.jpg
+  src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
   alt: Сахарная Голова и Рио-де-Жанейро
 gallery:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/praia-do-forte.jpg

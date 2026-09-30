@@ -33,7 +33,7 @@ priceFrom: 4828
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/porto-de-galinhas/porto-de-galinhas-4.jpg
+  src: /media/tours/brazil-northeast-recife-porto-noronha-10d/hero-enhanced-20260930.webp
   alt: Натуральные бассейны Порту-де-Галиньяс
 gallery: []
 featured: false

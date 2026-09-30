@@ -37,7 +37,7 @@ priceFrom: 5716
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/cache/countries/argentina/new-photos/kulli-kittus-icwoh2prgu4-unsplash-1920x1029.webp
+  src: /media/tours/brazil-argentina-peru-14d/hero-enhanced-20260930.webp
   alt: Путешествие по Бразилии, Аргентине и Перу
 gallery: []
 featured: true

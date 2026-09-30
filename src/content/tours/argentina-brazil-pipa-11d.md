@@ -35,7 +35,7 @@ priceFrom: 2288
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/Natal.png
+  src: /media/tours/argentina-brazil-pipa-11d/hero-enhanced-20260930.webp
   alt: Прайя-де-Пипа, Бразилия
 gallery:
   - src: https://brasiltours.ru/image/countries/argentina/new-photos/florian-delee-sgq-0qddxs4-unsplash.jpg

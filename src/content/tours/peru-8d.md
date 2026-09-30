@@ -31,7 +31,7 @@ currency: USD
 priceNote: Стоимость на 23.09.2026 — от $2230. Точная сумма зависит от дат, отелей, билетов и состава услуг.
 dates: []
 hero:
-  src: https://brasiltours.ru/image/lima.png
+  src: /media/tours/peru-8d/hero-enhanced-20260930.webp
   alt: Лима на берегу Тихого океана, Перу
 gallery: []
 featured: true

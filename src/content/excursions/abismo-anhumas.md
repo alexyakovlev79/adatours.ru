@@ -1,0 +1,30 @@
+---
+id: excursion_brazil_bonito_abismo_anhumas
+locale: ru
+title: "Abismo Anhumas"
+slug: abismo-anhumas
+status: approved
+searchAliases:
+  - Спуск в пещеру Abismo Anhumas
+  - Абисму-Аньюмас
+country: country_brazil
+destination: destination_brazil_bonito
+themes: [adventure, nature]
+language: []
+hero:
+  src: /media/excursions/abismo-anhumas/hero.webp
+  alt: Подземное озеро в пещере Abismo Anhumas
+gallery: []
+route:
+  - Бонито
+  - Abismo Anhumas
+lead: "Вертикальный спуск примерно на 72 м в огромную пещеру с прозрачным подземным озером и гигантскими сталактитами."
+included: []
+notIncluded: []
+notes: []
+updatedAt: 2026-09-30
+---
+
+Дополнительно можно заказать спуск в пещеру Abismo Anhumas, примерно в 20 км к западу от Бонито. За узкой расщелиной открывается огромная подземная полость. Спуск по тросовой системе идет примерно на 72 м вниз.
+
+На дне находится прозрачное подземное озеро и большие сталактиты. Здесь проводят сноркелинг и дайвинг среди затопленных известняковых образований. Посещение ограничено небольшим числом групп, поэтому внутри сохраняются тишина и ощущение изолированного подземного пространства.

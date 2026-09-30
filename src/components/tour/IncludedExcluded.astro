@@ -11,20 +11,22 @@ const { included, notIncluded, notes = [] } = Astro.props;
 <section class="included section">
   <div class="container">
     <p class="eyebrow">Условия программы</p>
-    <div class="included__grid">
-      <div class="included__column included__column--included">
-        <h2>Включено</h2>
-        <ul>
-          {included.map((item) => <li><InlineMarkdown text={item} /></li>)}
-        </ul>
+    {(included.length > 0 || notIncluded.length > 0) && (
+      <div class="included__grid">
+        <div class="included__column included__column--included">
+          <h2>Включено</h2>
+          <ul>
+            {included.map((item) => <li><InlineMarkdown text={item} /></li>)}
+          </ul>
+        </div>
+        <div class="included__column included__column--extra">
+          <h2>Оплачивается отдельно</h2>
+          <ul>
+            {notIncluded.map((item) => <li><InlineMarkdown text={item} /></li>)}
+          </ul>
+        </div>
       </div>
-      <div class="included__column included__column--extra">
-        <h2>Оплачивается отдельно</h2>
-        <ul>
-          {notIncluded.map((item) => <li><InlineMarkdown text={item} /></li>)}
-        </ul>
-      </div>
-    </div>
+    )}
 
     {notes.length > 0 && (
       <div class="included__notes">

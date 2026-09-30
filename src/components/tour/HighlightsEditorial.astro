@@ -198,6 +198,44 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
       grid-template-columns: repeat(2, minmax(0, 1fr));
       column-gap: 48px;
     }
+
+    /*
+     * Keep the same opened-pair invariant as the itinerary:
+     * neighboring cards share one grid-row height, while the media block
+     * absorbs the remaining vertical space. Shorter text therefore gets
+     * a taller image and both image bottoms finish on one horizontal line.
+     */
+    .highlight--media {
+      min-height: 100%;
+    }
+
+    .highlight__media {
+      display: grid;
+      grid-auto-rows: minmax(0, 1fr);
+    }
+
+    .highlight__details[open] + .highlight__media {
+      flex: 1 1 320px;
+      min-height: 260px;
+      max-height: 660px;
+      margin-top: auto;
+      padding-top: 22px;
+      aspect-ratio: auto;
+    }
+
+    .highlight__details:not([open]) + .highlight__media {
+      flex: 0 0 auto;
+      min-height: 0;
+      max-height: none;
+      margin-top: 18px;
+      padding-top: 0;
+      aspect-ratio: 16 / 9;
+    }
+
+    .highlight__details[open] + .highlight__media img {
+      min-height: 0;
+      aspect-ratio: auto;
+    }
   }
 
   @media (max-width: 760px) {

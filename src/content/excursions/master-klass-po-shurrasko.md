@@ -12,7 +12,7 @@ destination: destination_brazil_rio
 themes: [gastronomy, culture]
 language: []
 hero:
-  src: /media/tours/luxury-brazil-11d/itinerary/extra-churrasco-enhanced-20260930.webp
+  src: /media/excursions/master-klass-po-shurrasko/hero.webp
   alt: Приготовление бразильского шурраско
 gallery: []
 route:

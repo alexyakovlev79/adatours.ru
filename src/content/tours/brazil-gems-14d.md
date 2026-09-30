@@ -57,7 +57,7 @@ itinerary:
       
       Размещение и отдых после длительного перелета.
     images:
-      - src: https://brasiltours.ru/image/rio%2011.png
+      - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
         alt: "Рио-де-Жанейро, Бразилия"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -81,7 +81,7 @@ itinerary:
       
       После экскурсии возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+      - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
         alt: "Канатная дорога на Сахарную Голова"
         intendedSlot: "itinerary:day-2"
   - day: 3

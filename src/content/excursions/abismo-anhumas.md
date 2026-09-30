@@ -12,7 +12,7 @@ destination: destination_brazil_bonito
 themes: [adventure, nature]
 language: []
 hero:
-  src: /media/excursions/abismo-anhumas/hero.webp
+  src: /media/tours/brazil-adventure-17d/highlights/07-abismo-anhumas-enhanced-20260930.webp
   alt: Подземное озеро в пещере Abismo Anhumas
 gallery: []
 route:

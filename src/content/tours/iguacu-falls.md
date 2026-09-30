@@ -24,7 +24,7 @@ priceFrom: 4023
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/cache/Foz%20do%20Iguau-1920x1080.webp
+  src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
   alt: "Свадебная церемония у водопадов Игуасу"
 gallery: []
 featured: false

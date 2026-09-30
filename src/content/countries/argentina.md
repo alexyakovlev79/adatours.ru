@@ -7,7 +7,7 @@ status: approved
 summary: >-
   Буэнос-Айрес, Мендоса, Патагония, Игуасу и северо-запад страны. Частный маршрут по Аргентине можно продолжить в Бразилии, Чили и других странах региона.
 hero:
-  src: /media/countries/argentina/hero-enhanced-20260930.webp
+  src: https://brasiltours.ru/image/countries/argentina/11.jpg
   alt: Пейзаж Аргентины
 gallery:
   - src: https://brasiltours.ru/image/countries/argentina/new-photos/puerto-madero-buenos-aires-argentina.jpg

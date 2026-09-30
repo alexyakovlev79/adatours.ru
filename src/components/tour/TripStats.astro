@@ -84,6 +84,27 @@ const { stats } = Astro.props;
     color: var(--color-muted);
   }
 
+  .stats__inner[data-count="1"] {
+    max-width: 620px;
+  }
+
+  .stats__inner[data-count="1"] .stat {
+    min-height: 0;
+    padding: 38px 40px 42px;
+    text-align: center;
+  }
+
+  .stats__inner[data-count="1"] .stat strong {
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+
+  .stats__inner[data-count="1"] .stat span {
+    display: block;
+    margin-top: 2px;
+    text-align: center;
+  }
+
   .stats__inner[data-count="2"] {
     max-width: 980px;
   }
@@ -154,6 +175,38 @@ const { stats } = Astro.props;
 
     .stat--long strong {
       font-size: clamp(1.65rem, 7vw, 2.15rem);
+    }
+
+    .stats__inner[data-count="1"] {
+      display: block;
+    }
+
+    .stats__inner[data-count="1"]::before,
+    .stats__inner[data-count="1"]::after {
+      display: none;
+    }
+
+    .stats__inner[data-count="1"] .stat {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 22px;
+      align-items: center;
+      min-height: 0;
+      padding: 24px 0;
+      border: 0;
+    }
+
+    .stats__inner[data-count="1"] .stat strong,
+    .stats__inner[data-count="1"] .stat--long strong {
+      margin: 0;
+      font-size: clamp(1.9rem, 8.5vw, 2.55rem);
+      line-height: 1;
+    }
+
+    .stats__inner[data-count="1"] .stat span {
+      margin-top: 0;
+      text-align: right;
+      white-space: nowrap;
     }
 
     .stats__inner[data-count="2"] {

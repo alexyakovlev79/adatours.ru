@@ -48,7 +48,7 @@ itinerary:
 
       Ночь на борту теплохода.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/c/l/clipper3.jpg
+      - src: /media/tours/amazon-clipper-cruise-traditional-3-days-2-nights/itinerary/day-01-enhanced-20260930.webp
         alt: "День 1: начало круиза по Амазонке"
   - day: 2
     title: "Озеро Жанауака, тропический лес, местная община и рыбалка на пираний"
@@ -66,7 +66,7 @@ itinerary:
 
       Ночь на борту теплохода.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/c/l/clipper4.jpg
+      - src: /media/tours/amazon-clipper-cruise-traditional-3-days-2-nights/itinerary/day-02-enhanced-20260930.webp
         alt: "День 2: путешествие по Амазонии на Amazon Clipper"
   - day: 3
     title: "Экологический парк Жанауари и «Встреча вод»"
@@ -82,7 +82,7 @@ itinerary:
 
       Завершение круиза в Манаусе.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/c/l/clipper2.jpg
+      - src: /media/tours/amazon-clipper-cruise-traditional-3-days-2-nights/itinerary/day-03-enhanced-20260930.webp
         alt: "День 3: финальный день круиза по Амазонке"
 included:
   - "размещение в каюте на борту Amazon Clipper"

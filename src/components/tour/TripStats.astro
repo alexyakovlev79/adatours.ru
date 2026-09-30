@@ -65,10 +65,30 @@ const { stats } = Astro.props;
     color: var(--color-muted);
   }
 
+  .stats__inner[data-count="2"] {
+    max-width: 980px;
+  }
+
+  .stats__inner[data-count="2"] .stat {
+    min-height: 0;
+    padding: 38px 40px 42px;
+    text-align: center;
+  }
+
   .stats__inner[data-count="2"] .stat strong {
     overflow-wrap: normal;
     hyphens: none;
     white-space: nowrap;
+  }
+
+  .stats__inner[data-count="2"] .stat span {
+    display: block;
+    margin-top: 2px;
+    text-align: center;
+  }
+
+  .stats__inner[data-count="2"] .stat + .stat {
+    border-left-color: color-mix(in srgb, var(--color-line) 72%, transparent);
   }
 
   @media (max-width: 760px) {
@@ -151,6 +171,7 @@ const { stats } = Astro.props;
     }
 
     .stats__inner[data-count="2"] .stat span {
+      margin-top: 0;
       text-align: right;
       white-space: nowrap;
     }

@@ -536,7 +536,7 @@ const destinationTypeLabel = {
       z-index: 0;
       max-width: none;
       margin: 0;
-      padding: 18px 4px 6px;
+      padding: 18px var(--gutter) 6px;
       color: color-mix(in srgb, var(--color-ink) 76%, transparent);
       font-size: 1rem;
       line-height: 1.5;
@@ -554,6 +554,8 @@ const destinationTypeLabel = {
 
     .country-linked__grid {
       grid-template-columns: 1fr;
+      width: calc(100% + (var(--gutter) * 2));
+      margin-inline: calc(-1 * var(--gutter));
     }
 
     .entity-poster,

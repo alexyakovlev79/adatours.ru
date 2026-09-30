@@ -63,6 +63,12 @@ const { stats } = Astro.props;
    * keep scaling with the viewport after their cells have stopped getting wider.
    */
   @media (min-width: 761px) {
+    .stats__inner[data-count="3"] .stat strong {
+      display: flex;
+      align-items: flex-end;
+      min-height: clamp(2.09rem, 2.85vw, 4.56rem);
+    }
+
     .stats__inner[data-count="3"] .stat--long strong {
       font-size: clamp(1.8rem, 1.85vw, 2rem);
       overflow-wrap: normal;

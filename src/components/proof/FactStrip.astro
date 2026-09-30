@@ -72,6 +72,12 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
    * the text should not become larger while the available cell width is fixed.
    */
   @media (min-width: 681px) {
+    .fact-strip__inner[data-count="3"] .fact strong {
+      display: flex;
+      align-items: flex-end;
+      min-height: clamp(2.09rem, 3.23vw, 4.56rem);
+    }
+
     .fact-strip__inner[data-count="3"] .fact--long strong {
       font-size: clamp(1.8rem, 1.85vw, 2rem);
       overflow-wrap: normal;

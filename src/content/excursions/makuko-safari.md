@@ -12,7 +12,7 @@ destination: destination_brazil_iguacu
 themes: [adventure, nature]
 language: []
 hero:
-  src: /media/tours/luxury-brazil-11d/itinerary/extra-macuco-safari-enhanced-20260930.webp
+  src: /media/excursions/makuko-safari/hero.webp
   alt: Катер Макуко Сафари у водопадов Игуасу
 gallery: []
 route:

@@ -16,8 +16,8 @@ priceFrom: 51
 currency: USD
 priceNote: Цена указана на человека. Для 2 и более человек возможна скидка.
 hero:
-  src: https://brasiltours.ru/image/cache/bird%20park%20112-preload.webp
-  alt: Парк птиц в Игуасу
+  src: https://brasiltours.ru/image/bird%20park%20112.png
+  alt: Экзотические птицы в Парке птиц Игуасу
 gallery:
   - src: https://brasiltours.ru/image/catalog/product/P/2/P2240074_2.JPG
     alt: Парк птиц в Игуасу

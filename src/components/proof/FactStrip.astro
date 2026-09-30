@@ -5,7 +5,7 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
 ---
 
 <section class:list={['fact-strip', { 'fact-strip--dark': dark, 'fact-strip--wide-first': wideFirst }]}>
-  <div class="fact-strip__inner">
+  <div class="fact-strip__inner" data-count={facts.length}>
     {facts.map((fact) => (
       <div class:list={['fact', { 'fact--long': fact.value.length > 9 }]}>
         <strong>{fact.value}</strong>
@@ -65,6 +65,19 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
 
   .fact--long strong {
     font-size: clamp(1.8rem, 2.5vw, 3.3rem);
+  }
+
+  /*
+   * Keep three-column fact rows stable once the container reaches its max width:
+   * the text should not become larger while the available cell width is fixed.
+   */
+  @media (min-width: 681px) {
+    .fact-strip__inner[data-count="3"] .fact--long strong {
+      font-size: clamp(1.8rem, 1.85vw, 2rem);
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }
   }
 
   .fact span {

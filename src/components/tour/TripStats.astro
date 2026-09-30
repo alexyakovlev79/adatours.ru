@@ -58,6 +58,19 @@ const { stats } = Astro.props;
     font-size: clamp(1.8rem, 2.5vw, 3.3rem);
   }
 
+  /*
+   * Three-column rows stop growing at --container-max, so long values must not
+   * keep scaling with the viewport after their cells have stopped getting wider.
+   */
+  @media (min-width: 761px) {
+    .stats__inner[data-count="3"] .stat--long strong {
+      font-size: clamp(1.8rem, 1.85vw, 2rem);
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }
+  }
+
   .stat span {
     font-size: .8rem;
     letter-spacing: .08em;

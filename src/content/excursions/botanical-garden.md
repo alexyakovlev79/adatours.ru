@@ -13,7 +13,7 @@ themes: [nature, city]
 duration: около 4 часов
 language: []
 hero:
-  src: /media/tours/luxury-brazil-11d/itinerary/extra-botanical-garden-enhanced-20260930.webp
+  src: /media/excursions/botanical-garden/hero.webp
   alt: Ботанический сад Рио-де-Жанейро
 gallery: []
 route:

@@ -14,7 +14,7 @@ interface Props {
   items: MediaItem[];
   eyebrow?: string;
   title?: string;
-  layout?: 'editorial' | 'flush';
+  layout?: 'editorial' | 'flush' | 'orientation';
 }
 
 const {
@@ -27,10 +27,11 @@ const {
 // Media QA status is metadata, not a visibility switch.
 const visibleItems = items;
 const flush = layout === 'flush';
+const orientation = layout === 'orientation';
 ---
 
 {visibleItems.length > 0 && (
-  <section class:list={['media-gallery', 'section', { 'media-gallery--flush': flush }]}>
+  <section class:list={['media-gallery', 'section', { 'media-gallery--flush': flush, 'media-gallery--orientation': orientation }]}>
     <div class="container">
       <div class="media-gallery__heading">
         <p class="eyebrow">{eyebrow}</p>
@@ -43,6 +44,11 @@ const flush = layout === 'flush';
             class:list={['media-gallery__item', `media-gallery__item--${index % 6}`]}
             data-media-status={item.status ?? 'legacy'}
             data-replacement-reason={item.replacementReason}
+            data-orientation={
+              item.sourceWidth && item.sourceHeight
+                ? (item.sourceHeight > item.sourceWidth ? 'portrait' : 'landscape')
+                : undefined
+            }
           >
             <img src={withBase(item.src)} alt={item.alt ?? ''} loading="lazy" />
             {item.caption && <figcaption>{item.caption}</figcaption>}
@@ -204,6 +210,43 @@ const flush = layout === 'flush';
     background: linear-gradient(transparent, rgba(0,0,0,.58));
   }
 
+
+  /* Excursion gallery: landscape images span the content width,
+     portrait images form two-column pairs. */
+  .media-gallery--orientation .media-gallery__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .media-gallery--orientation .media-gallery__item,
+  .media-gallery--orientation .media-gallery__item--0,
+  .media-gallery--orientation .media-gallery__item--1,
+  .media-gallery--orientation .media-gallery__item--2,
+  .media-gallery--orientation .media-gallery__item--3,
+  .media-gallery--orientation .media-gallery__item--4,
+  .media-gallery--orientation .media-gallery__item--5 {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+
+  .media-gallery--orientation .media-gallery__item[data-orientation="portrait"] {
+    grid-column: span 1;
+  }
+
+  .media-gallery--orientation .media-gallery__item img,
+  .media-gallery--orientation .media-gallery__item--0 img,
+  .media-gallery--orientation .media-gallery__item--1 img,
+  .media-gallery--orientation .media-gallery__item--2 img,
+  .media-gallery--orientation .media-gallery__item--3 img,
+  .media-gallery--orientation .media-gallery__item--4 img,
+  .media-gallery--orientation .media-gallery__item--5 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+
   @media (max-width: 760px) {
     .media-gallery__heading {
       grid-template-columns: 1fr;
@@ -263,5 +306,57 @@ const flush = layout === 'flush';
       aspect-ratio: auto;
       object-fit: cover;
     }
+
+    .media-gallery--orientation .media-gallery__grid {
+      grid-template-columns: 1fr;
+      max-width: none;
+    }
+
+    .media-gallery--orientation .media-gallery__item,
+    .media-gallery--orientation .media-gallery__item--0,
+    .media-gallery--orientation .media-gallery__item--1,
+    .media-gallery--orientation .media-gallery__item--2,
+    .media-gallery--orientation .media-gallery__item--3,
+    .media-gallery--orientation .media-gallery__item--4,
+    .media-gallery--orientation .media-gallery__item--5,
+    .media-gallery--orientation .media-gallery__item[data-orientation="portrait"] {
+      grid-column: 1;
+      margin: 0;
+    }
+
+    .media-gallery--orientation .media-gallery__item img,
+    .media-gallery--orientation .media-gallery__item:nth-child(3n + 1) img,
+    .media-gallery--orientation .media-gallery__item:nth-child(3n + 2) img,
+    .media-gallery--orientation .media-gallery__item:nth-child(3n) img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: auto;
+      object-fit: contain;
+    }
+
   }
 </style>
+
+
+<script>
+  const classifyGalleryImages = () => {
+    document.querySelectorAll('.media-gallery--orientation .media-gallery__item').forEach((item) => {
+      const img = item.querySelector('img');
+      if (!(img instanceof HTMLImageElement)) return;
+
+      const applyOrientation = () => {
+        if (!img.naturalWidth || !img.naturalHeight) return;
+        item.setAttribute(
+          'data-orientation',
+          img.naturalHeight > img.naturalWidth ? 'portrait' : 'landscape'
+        );
+      };
+
+      if (img.complete) applyOrientation();
+      else img.addEventListener('load', applyOrientation, { once: true });
+    });
+  };
+
+  classifyGalleryImages();
+  document.addEventListener('astro:page-load', classifyGalleryImages);
+</script>

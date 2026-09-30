@@ -16,16 +16,16 @@ priceFrom: 51
 currency: USD
 priceNote: Цена указана на человека. Для 2 и более человек возможна скидка.
 hero:
-  src: https://brasiltours.ru/image/bird%20park%20112.png
+  src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/hero-enhanced-20260930.webp
   alt: Экзотические птицы в Парке птиц Игуасу
 gallery:
-  - src: https://brasiltours.ru/image/catalog/product/P/2/P2240074_2.JPG
+  - src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/gallery-1-enhanced-20260930.webp
     alt: Парк птиц в Игуасу
-  - src: https://brasiltours.ru/image/catalog/product/p/a/parrot_1.png
+  - src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/gallery-2-enhanced-20260930.webp
     alt: Попугай в Парке птиц Игуасу
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_47_60.png
+  - src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/gallery-3-enhanced-20260930.webp
     alt: Птицы в парке Игуасу
-  - src: https://brasiltours.ru/image/catalog/product/P/2/P2240011.JPG
+  - src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/gallery-4-enhanced-20260930.webp
     alt: Парк птиц в районе Игуасу
 route:
   - Национальный парк Игуасу

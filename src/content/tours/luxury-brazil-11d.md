@@ -195,17 +195,8 @@ itinerary:
       - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
         alt: "Бразильская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-6"
-  - label: "ДОП."
-    title: "Парк птиц"
+  - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
     places: ["Фос-ду-Игуасу"]
-    text: |-
-      Парк расположен рядом с водопадами. Посетители заходят в большие вольеры, где птицы свободно летают среди тропической растительности. Здесь можно увидеть туканов, алых ара и множество небольших птиц.
-      
-      Часть видов находится под защитой, в том числе птицы, восстановленные после незаконной торговли. Деревянные дорожки проходят среди зелени, поэтому туканов, ара и других птиц можно рассматривать с очень близкого расстояния, видеть оттенки оперения, движение и полет без стекла между посетителем и птицей.
-    images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/mateus-campos-felipe-1629323-unsplash.jpg
-        alt: "Фламинго в Парке птиц, Фос-ду-Игуасу"
-        intendedSlot: "itinerary:extra:Парк птиц"
   - label: "ДОП."
     title: "Макуко Сафари"
     places: ["Национальный парк Игуасу"]

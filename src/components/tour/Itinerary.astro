@@ -30,6 +30,18 @@ interface Day {
 interface Props { days: Day[]; }
 const { days } = Astro.props;
 
+const pluralRu = (value: number, one: string, few: string, many: string) => {
+  const n = Math.abs(value) % 100;
+  const n1 = n % 10;
+  if (n >= 11 && n <= 19) return many;
+  if (n1 === 1) return one;
+  if (n1 >= 2 && n1 <= 4) return few;
+  return many;
+};
+
+const itineraryDayCount = days.filter((day) => typeof day.day === 'number').length;
+const itineraryDayLabel = pluralRu(itineraryDayCount, 'день', 'дня', 'дней');
+
 const resolveDayImage = (image: Day['image']) => {
   if (!image) return null;
   if (typeof image === 'string') return { src: image, alt: '', status: undefined };
@@ -41,7 +53,7 @@ const resolveDayImage = (image: Day['image']) => {
   <div class="container itinerary__container">
     <div class="itinerary__heading">
       <p class="eyebrow">Маршрут</p>
-      <h2>{days.filter((day) => typeof day.day === 'number').length} дней путешествия</h2>
+      <h2>{itineraryDayCount} {itineraryDayLabel} путешествия</h2>
     </div>
 
     <div class="itinerary__days">

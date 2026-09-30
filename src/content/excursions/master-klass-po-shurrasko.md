@@ -20,8 +20,7 @@ route:
 lead: "Кулинарный мастер-класс у открытого огня: мясо на шампурах, сыр, кукуруза, куриные сердечки и ананас с корицей."
 included: []
 notIncluded: []
-notes:
-  - Каноническая Excursion создана из самостоятельного блока маршрута тура tour_luxury_brazil_11d; отдельной исходной excursion_detail на brasiltours.ru не было.
+notes: []
 updatedAt: 2026-09-30
 ---
 

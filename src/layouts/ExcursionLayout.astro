@@ -34,15 +34,36 @@ const relatedExcursions = relatedEntries
   })
   .slice(0, 3);
 
+const fallbackCountries: Record<string, { label: string; href: string }> = {
+  country_ecuador: { label: 'Эквадор', href: '/strany/' },
+};
+
+const fallbackDestinations: Record<string, { label: string; href: string }> = {
+  destination_ecuador_kito_vulkan_kotopahi: {
+    label: 'Кито и вулкан Котопахи',
+    href: '/napravleniya/',
+  },
+};
+
+const countryBreadcrumb = country
+  ? {
+      label: country.data.name,
+      href: `/strany/${country.data.slug}/`,
+    }
+  : fallbackCountries[d.country];
+
+const destinationBreadcrumb = country && destination
+  ? {
+      label: destination.data.name,
+      href: `/napravleniya/${country.data.slug}/${destination.data.slug}/`,
+    }
+  : d.destination
+    ? fallbackDestinations[d.destination]
+    : undefined;
+
 const excursionBreadcrumbs = [
-  ...(country ? [{
-    label: country.data.name,
-    href: `/strany/${country.data.slug}/`,
-  }] : []),
-  ...(country && destination ? [{
-    label: destination.data.name,
-    href: `/napravleniya/${country.data.slug}/${destination.data.slug}/`,
-  }] : []),
+  ...(countryBreadcrumb ? [countryBreadcrumb] : []),
+  ...(destinationBreadcrumb ? [destinationBreadcrumb] : []),
   {
     label: 'Экскурсии',
     href: '/ekskursii/',

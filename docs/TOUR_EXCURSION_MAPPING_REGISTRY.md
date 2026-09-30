@@ -123,7 +123,7 @@ URL:
 | Sheet row | Tour ID | Production file | Тур | Scan status | Найденные ранее связи | Последнее обновление |
 |---:|---|---|---|---|---:|---|
 | 75 | `tour_luxury_brazil_11d` | `src/content/tours/luxury-brazil-11d.md` | Роскошная Бразилия | DONE_LINKED | 9 | 2026-09-30 |
-| 76 | `tour_brazil_argentina_peru_14d` | `src/content/tours/brazil-argentina-peru-14d.md` | Бразилия, Аргентина и Перу за 14 дней | IN_PROGRESS | 0 | 2026-09-30 |
+| 76 | `tour_brazil_argentina_peru_14d` | `src/content/tours/brazil-argentina-peru-14d.md` | Бразилия, Аргентина и Перу за 14 дней | DONE_NO_RELATIONS | 0 | 2026-09-30 |
 | 77 | `tour_peru_8d` | `src/content/tours/peru-8d.md` | Перу за 8 дней: Лима, Куско, Мачу-Пикчу и Титикака | PENDING | 0 | 2026-09-30 |
 | 78 | `tour_brazil_sao_paulo_rio_ilha_paraty_12d` | `src/content/tours/brazil-sao-paulo-rio-ilha-paraty-12d.md` | Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати | PENDING | 1 | 2026-09-30 |
 | 79 | `tour_brazil_adventure_17d` | `src/content/tours/brazil-adventure-17d.md` | Большое приключение по Бразилии за 17 дней | PENDING | 1 | 2026-09-30 |
@@ -139,7 +139,7 @@ URL:
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | PENDING | 0 | 2026-09-30 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | PENDING | 0 | 2026-09-30 |
 
-**Следующий тур для полного прохода:** строка **76**, `tour_brazil_argentina_peru_14d`.
+**Следующий тур для полного прохода:** строка **77**, `tour_peru_8d`.
 
 ## 4. Уже существующие Tour↔Excursion связи
 

@@ -60,7 +60,7 @@ itinerary:
       
       На известных пляжах Рио работают уютные кафе, где можно попробовать напитки из свежих сочных фруктов и просто почувствовать атмосферу города у океана.
     images:
-      - src: https://brasiltours.ru/image/Ipanema-Beach11.png
+      - src: /media/tours/south-brazil-12d/itinerary/day-01-enhanced-20260930.webp
         alt: "Рио-де-Жанейро и пляж Ипанема"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -75,7 +75,7 @@ itinerary:
       
       Возвращение в отель и отдых.
     images:
-      - src: https://brasiltours.ru/image/P2240031.JPG
+      - src: /media/tours/south-brazil-12d/itinerary/day-02-enhanced-20260930.webp
         alt: "Рио-де-Жанейро"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -88,7 +88,7 @@ itinerary:
       
       После экскурсии возвращаемся в отель. Отдых.
     images:
-      - src: https://brasiltours.ru/image/рио.jpg
+      - src: /media/tours/south-brazil-12d/itinerary/day-03-enhanced-20260930.webp
         alt: "Корковадо и Рио-де-Жанейро"
         intendedSlot: "itinerary:day-3"
   - title: "Полет над Рио на вертолете"
@@ -96,7 +96,7 @@ itinerary:
     text: |-
       При желании можно заказать вертолетную прогулку над городом. С воздуха видны океан, белые пляжи, зеленые горы, яхты и кварталы Рио. Предусмотрены варианты полета продолжительностью 6 или 13 минут, в зависимости от выбранной программы.
     images:
-      - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+      - src: /media/tours/south-brazil-12d/itinerary/extra-helicopter-enhanced-20260930.webp
         alt: "Полет над Рио-де-Жанейро"
         intendedSlot: "itinerary:extra:Полет над Рио на вертолете"
   - day: 4
@@ -119,7 +119,7 @@ itinerary:
         text: |-
           Затем начинается «Макуко-сафари». Сначала вы проедете около 3 км по джунглям в открытом кузове джипа в сопровождении гида, который расскажет об экологии региона. После этого пешком спуститесь к берегу реки Игуасу. Отсюда моторная лодка подойдет близко к водопадам. Брызги, радуги и мощный шум воды делают эту часть дня особенно яркой.
     images:
-      - src: https://brasiltours.ru/image/P2240064.JPG
+      - src: /media/tours/south-brazil-12d/itinerary/day-04-enhanced-20260930.webp
         alt: "Водопады Игуасу"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -132,7 +132,7 @@ itinerary:
       
       У «Горла дьявола» особенно хорошо ощущается сила воды: миллионы капель поднимаются в воздух, а над ущельем появляются радуги. В течение экскурсии будет достаточно времени для прогулки по маршрутам и фотографий.
     images:
-      - src: https://brasiltours.ru/image/iguacu%20new.png
+      - src: /media/tours/south-brazil-12d/itinerary/day-05-enhanced-20260930.webp
         alt: "Водопады Игуасу"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -145,7 +145,7 @@ itinerary:
       
       После размещения можно прогуляться по спокойным улицам, пообедать в одном из ресторанов и посмотреть город. На главной площади находится церковь Игрежа-Матрис-Сан-Педро. Она построена из 78 000 базальтовых камней и украшена витражами со сценами из жизни Святого Петра. Перед церковью стоят 12 статуй апостолов в натуральную величину.
     images:
-      - src: https://brasiltours.ru/image/gramadu%20b.png
+      - src: /media/tours/south-brazil-12d/itinerary/day-06-enhanced-20260930.webp
         alt: "Грамаду, Южная Бразилия"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -160,7 +160,7 @@ itinerary:
       
       Самая известная часть каньона называется «Локоть» из-за характерной формы. На маршруте есть несколько смотровых площадок. С них видны глубокие ущелья, острые скалы, зеленые склоны и белые облака, поднимающиеся снизу и временами полностью окутывающие обзорные точки.
     images:
-      - src: https://brasiltours.ru/image/skyglass.png
+      - src: /media/tours/south-brazil-12d/itinerary/day-07-enhanced-20260930.webp
         alt: "Skyglass в Канеле"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -171,7 +171,7 @@ itinerary:
       
       После полета трансфер в Национальный парк. Здесь пройдем несколько сравнительно коротких треков, чтобы увидеть самые живописные участки каньона с разных точек. На краю каньона запланирован пикник с видом на скалы, ущелья и облака.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/chapada-waterfall.jpg
+      - src: /media/tours/south-brazil-12d/itinerary/day-08-enhanced-20260930.webp
         alt: "Каньоны у Прая-Гранде"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -182,7 +182,7 @@ itinerary:
       
       Флорианополис известен множеством пляжей: здесь есть места и для спокойного отдыха, и для серфинга, и для фотосессий на фоне высоких волн. Город интересен не только побережьем. Здесь сохранились исторические памятники, связанные с периодом основания Флорианополиса в начале XVIII века.
     images:
-      - src: https://brasiltours.ru/image/santa-katarina-florianopolis1.png
+      - src: /media/tours/south-brazil-12d/hero-enhanced-20260930.webp
         alt: "Флорианополис, Санта-Катарина"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -199,7 +199,7 @@ itinerary:
       
       После экскурсии возвращение в гостиницу.
     images:
-      - src: https://brasiltours.ru/image/floriss3.png
+      - src: /media/tours/south-brazil-12d/itinerary/day-10-enhanced-20260930.webp
         alt: "Флорианополис, Бразилия"
         intendedSlot: "itinerary:day-10"
   - day: 11

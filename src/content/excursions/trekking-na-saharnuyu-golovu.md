@@ -21,9 +21,7 @@ route:
 lead: "Треккинг от Урки по тропе среди тропической растительности с возможностью продолжить подъем на Сахарную Голова с инструктором и страховкой."
 included: []
 notIncluded: []
-notes:
-  - Каноническая Excursion создана из самостоятельного блока маршрута тура tour_luxury_brazil_11d; отдельной исходной excursion_detail на brasiltours.ru не было.
-  - "Не объединять с excursion_source_ekskursiya_na_sakharnuyu_golovu: это другой формат с канатной дорогой и городской экскурсией."
+notes: []
 updatedAt: 2026-09-30
 ---
 

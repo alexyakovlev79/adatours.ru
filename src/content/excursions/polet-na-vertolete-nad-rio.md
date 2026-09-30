@@ -12,7 +12,7 @@ destination: destination_brazil_rio
 themes: [adventure, city]
 language: []
 hero:
-  src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
+  src: /media/excursions/polet-na-vertolete-nad-rio/hero.webp
   alt: Полет на вертолете над Рио-де-Жанейро
 gallery: []
 route:

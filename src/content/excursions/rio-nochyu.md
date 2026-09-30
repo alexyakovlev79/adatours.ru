@@ -13,7 +13,7 @@ destination: destination_brazil_rio
 themes: [culture]
 language: []
 hero:
-  src: /media/tours/luxury-brazil-11d/itinerary/extra-samba-show-enhanced-20260930.webp
+  src: /media/excursions/rio-nochyu/hero.webp
   alt: Ночное шоу с самбой в Рио-де-Жанейро
 gallery: []
 route:

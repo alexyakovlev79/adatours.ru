@@ -1,24 +1,69 @@
 ---
+import { withBase } from '../../lib/paths';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
+
+interface HighlightMedia {
+  src: string;
+  alt?: string;
+  status?: 'approved' | 'needs_replacement' | 'replaced';
+  replacementReason?: string;
+}
+
 interface Highlight {
   title: string;
   text: string;
+  image?: HighlightMedia;
 }
+
 interface Props { items: Highlight[]; }
 const { items } = Astro.props;
+const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.src));
 ---
 
 <section class="highlights section">
   <div class="container">
     <p class="eyebrow">Главные впечатления</p>
-    <div class="highlights__list">
-      {items.map((item, index) => (
-        <article class="highlight">
-          <span>{String(index + 1).padStart(2, '0')}</span>
-          <h3>{item.title}</h3>
-          <p><InlineMarkdown text={item.text} /></p>
-        </article>
-      ))}
+
+    <div class:list={['highlights__list', { 'highlights__list--media': mediaMode }]}>
+      {items.map((item, index) => {
+        const image = item.image;
+        return (
+          <article class:list={['highlight', { 'highlight--media': mediaMode && image }]}>
+            {mediaMode && image ? (
+              <>
+                <details class="highlight__details">
+                  <summary>
+                    <span class="highlight__number">{String(index + 1).padStart(2, '0')}</span>
+                    <span class="highlight__title" role="heading" aria-level="3">{item.title}</span>
+                    <span class="highlight__toggle" aria-hidden="true">+</span>
+                  </summary>
+                  <div class="highlight__content">
+                    <p><InlineMarkdown text={item.text} /></p>
+                  </div>
+                </details>
+
+                <div class="highlight__media">
+                  <img
+                    src={withBase(image.src)}
+                    alt={image.alt ?? ''}
+                    width="1200"
+                    height="675"
+                    loading="lazy"
+                    data-media-status={image.status ?? 'approved'}
+                    data-replacement-reason={image.replacementReason}
+                  />
+                </div>
+              </>
+            ) : (
+              <>
+                <span class="highlight__number">{String(index + 1).padStart(2, '0')}</span>
+                <h3>{item.title}</h3>
+                <p><InlineMarkdown text={item.text} /></p>
+              </>
+            )}
+          </article>
+        );
+      })}
     </div>
   </div>
 </section>
@@ -46,7 +91,7 @@ const { items } = Astro.props;
     border-bottom: 0;
   }
 
-  .highlight > span {
+  .highlight__number {
     color: var(--color-gold-deep);
     font-family: var(--font-display);
     font-size: 1rem;
@@ -54,22 +99,127 @@ const { items } = Astro.props;
   }
 
   .highlight h3,
-  .highlight p {
+  .highlight > p {
     margin: 0;
   }
 
-  .highlight p {
+  .highlight > p {
     max-width: 640px;
     color: rgba(26,26,26,.7);
   }
 
+  .highlights__list--media {
+    border-top: 0;
+  }
+
+  .highlight--media {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 0 20px;
+    border-bottom: 0;
+  }
+
+  .highlight__details {
+    border: 0;
+  }
+
+  .highlight__details summary {
+    display: grid;
+    grid-template-columns: 80px 1fr 44px;
+    gap: 20px;
+    align-items: center;
+    min-height: 126px;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .highlight__details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .highlight__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.45rem, 1.1rem + 1vw, 2.3rem);
+    line-height: 1.1;
+  }
+
+  .highlight__toggle {
+    justify-self: end;
+    font-size: 2rem;
+    font-weight: 200;
+    transition: transform 220ms var(--ease-out);
+  }
+
+  .highlight__details[open] .highlight__toggle {
+    transform: rotate(45deg);
+  }
+
+  .highlight__content {
+    padding: 0 0 36px 100px;
+  }
+
+  .highlight__content p {
+    max-width: 720px;
+    margin: 0;
+    color: rgba(26,26,26,.7);
+  }
+
+  .highlight__media {
+    width: 100%;
+    margin-top: 18px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+  }
+
+  .highlight__details[open] + .highlight__media {
+    margin-top: 22px;
+  }
+
+  .highlight__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 1100px) {
+    .highlights__list--media {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 48px;
+    }
+  }
+
   @media (max-width: 760px) {
-    .highlight {
+    .highlight:not(.highlight--media) {
       grid-template-columns: 46px 1fr;
     }
 
-    .highlight p {
+    .highlight:not(.highlight--media) > p {
       grid-column: 2;
+    }
+
+    .highlight__details summary {
+      grid-template-columns: 44px 1fr 30px;
+      min-height: 76px;
+    }
+
+    .highlight__content {
+      padding: 0 0 26px 64px;
+    }
+
+    .highlight__media {
+      width: 100vw;
+      max-width: none;
+      margin-top: 10px;
+      transform: translateX(calc(-1 * var(--gutter)));
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
+    .highlight__details[open] + .highlight__media {
+      margin-top: 18px;
     }
   }
 </style>

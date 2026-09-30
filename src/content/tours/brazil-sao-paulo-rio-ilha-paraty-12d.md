@@ -85,14 +85,8 @@ itinerary:
       - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
         alt: "Водопады Игуасу"
         intendedSlot: "itinerary:day-3"
-  - title: "Парк птиц"
+  - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
     places: ["Фос-ду-Игуасу"]
-    text: |-
-      Дополнительно можно посетить Парк птиц рядом с национальным парком. Его большие вольеры устроены среди тропической растительности, и многие птицы летают совсем рядом с посетителями.
-    images:
-      - src: https://brasiltours.ru/image/BRA%20FOZ%201.png
-        alt: "Парк птиц рядом с водопадами Игуасу"
-        intendedSlot: "itinerary:extra:Парк птиц"
   - title: "Макуко-сафари"
     places: ["Национальный парк Игуасу"]
     text: |-

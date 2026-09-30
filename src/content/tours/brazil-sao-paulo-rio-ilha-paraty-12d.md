@@ -87,14 +87,8 @@ itinerary:
         intendedSlot: "itinerary:day-3"
   - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
     places: ["Фос-ду-Игуасу"]
-  - title: "Макуко-сафари"
+  - excursionRef: excursion_source_makuko_safari
     places: ["Национальный парк Игуасу"]
-    text: |-
-      Еще один дополнительный вариант - «Макуко-сафари»: около 3 км на открытом джипе через джунгли, затем переход к реке и поездка на моторной лодке близко к водопадам.
-    images:
-      - src: https://brasiltours.ru/image/countries/brazil/macuca.png
-        alt: "Макуко-сафари у водопадов Игуасу"
-        intendedSlot: "itinerary:extra:Макуко-сафари"
   - day: 4
     title: "Игуасу"
     places: ["Игуасу"]
@@ -143,14 +137,8 @@ itinerary:
       - src: https://brasiltours.ru/image/catalog/product/c/o/corcovado_6.png
         alt: "Корковадо и панорама Рио-де-Жанейро"
         intendedSlot: "itinerary:day-7"
-  - title: "Полет над Рио на вертолете"
+  - excursionRef: excursion_source_polet_na_vertolete_nad_rio
     places: ["Рио-де-Жанейро"]
-    text: |-
-      Дополнительно можно заказать полет над Рио на вертолете продолжительностью 8-10 минут. Площадка находится на Сахарной Горе или в районе Лагоа. Во время полета открываются виды на пляжи, горы, статую Христа и городские кварталы. За несколько минут хорошо видна география Рио: длинная береговая линия, гранитные вершины и плотная застройка между ними.
-    images:
-      - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0003.jpg
-        alt: "Полет на вертолете над Рио-де-Жанейро"
-        intendedSlot: "itinerary:extra:Полет над Рио на вертолете"
   - day: 8
     title: "Рио-де-Жанейро - Илья-Гранде"
     places: ["Рио-де-Жанейро", "Илья-Гранди"]

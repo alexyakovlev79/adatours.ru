@@ -208,7 +208,7 @@ itinerary:
     text: |-
       Свободный день. Его можно провести на пляжах, посвятить самостоятельным прогулкам по городу или просто отдыху у океана.
     images:
-      - src: https://brasiltours.ru/image/florip.jpg
+      - src: /media/tours/south-brazil-12d/itinerary/day-11-enhanced-20260930.webp
         alt: "Пляжи Флорианополиса"
         intendedSlot: "itinerary:day-11"
   - day: 12
@@ -217,7 +217,7 @@ itinerary:
     text: |-
       Завтрак в отеле. В назначенное время трансфер в аэропорт Флорианополиса.
     images:
-      - src: https://brasiltours.ru/image/flori1.png
+      - src: /media/tours/south-brazil-12d/itinerary/day-12-enhanced-20260930.webp
         alt: "Флорианополис, Бразилия"
         intendedSlot: "itinerary:day-12"
 included:

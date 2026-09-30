@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   В Буэнос-Айресе можно соединить Ла-Боку и Сан-Тельмо, Пласа-де-Майо, Каса-Росаду, Обелиск, музеи, театры, танго и отдельный выезд в дельту Тигре.
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/puerto-madero-buenos-aires-argentina.jpg
+  src: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
   alt: Буэнос-Айрес, Аргентина
 gallery:
   - src: /media/prototype/buenos-aires.jpg
@@ -42,7 +42,7 @@ featureBands:
     title: Дельта Тигре и аргентинская пампа
     text: >-
       Отдельный день можно посвятить поездке в Тигре с прогулкой по дельте или выезду на эстансию, где программа знакомит с традициями гаучо.
-    image: https://brasiltours.ru/image/countries/argentina/new-photos/puerto-madero-buenos-aires-argentina.jpg
+    image: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/stolica-argentiny-gorod-buehnos-ajres
 sourceSnapshot: page_texts_original/stolica-argentiny-gorod-buehnos-ajres__3e2ffb79.md
 updatedAt: 2026-09-24

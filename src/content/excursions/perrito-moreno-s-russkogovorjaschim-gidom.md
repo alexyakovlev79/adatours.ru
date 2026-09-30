@@ -16,7 +16,7 @@ priceFrom: 188
 currency: USD
 priceNote: Цена указана на человека. Для 2 и более человек возможна скидка.
 hero:
-  src: https://brasiltours.ru/image/catalog/product/f/i/file_113_44.jpg
+  src: /media/excursions/perrito-moreno-s-russkogovorjaschim-gidom/hero-enhanced-20260930.webp
   alt: Ледник Перито-Морено в Аргентине
 gallery: []
 route: []

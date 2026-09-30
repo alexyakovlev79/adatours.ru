@@ -17,7 +17,7 @@ priceFrom: 150
 currency: USD
 priceNote: Цена указана на человека. Для группы больше 1 человека возможна скидка.
 hero:
-  src: https://brasiltours.ru/image/mendoza.jpg
+  src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
   alt: Горный маршрут из Мендосы в Анды
 gallery:
   - src: https://brasiltours.ru/image/mendoza%201.png

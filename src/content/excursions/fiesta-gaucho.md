@@ -16,7 +16,7 @@ priceFrom: 320
 currency: USD
 priceNote: Цена указана на человека. Для 2 и более человек возможна скидка.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/fermin-rodriguez-penelas-whx1iw-jynw-unsplash-1920.jpg
+  src: /media/excursions/fiesta-gaucho/hero-enhanced-20260930.webp
   alt: Аргентинский гаучо с лошадью
 gallery:
   - src: https://brasiltours.ru/image/catalog/product/f/i/file_187_19.jpg

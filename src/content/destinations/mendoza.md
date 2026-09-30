@@ -9,7 +9,7 @@ destinationType: region
 summary: >-
   Мендоса соединяет город у подножия Анд с виноградниками и винодельнями. В одной программе можно совместить городскую прогулку и поездку по Ruta de los Vinos с дегустациями.
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/mendoza.jpg
+  src: /media/destinations/mendoza/hero-enhanced-20260930.webp
   alt: Мендоса и винный регион Аргентины
 gallery: []
 themes:
@@ -35,12 +35,12 @@ featureBands:
     title: Мендоса между площадями и зелеными авеню
     text: >-
       В старой программе Ada Tours среди городских точек перечислены Plaza Independencia, Plaza España, административный центр и парк Сан-Мартин.
-    image: https://brasiltours.ru/image/countries/argentina/new-photos/mendoza.jpg
+    image: /media/destinations/mendoza/hero-enhanced-20260930.webp
   - eyebrow: Вино
     title: Виноградники и Ruta de los Vinos
     text: >-
       Главная причина ехать в Мендосу – винодельни. Их можно собирать в отдельный день или несколько дней по маршрутам Ruta de los Vinos.
-    image: https://brasiltours.ru/image/countries/argentina/new-photos/mendoza.jpg
+    image: /media/destinations/mendoza/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/gorod-i-vinnyj-region-mendosa-v-argentine
 sourceSnapshot: page_texts_original/gorod-i-vinnyj-region-mendosa-v-argentine__ac7f8b41.md
 updatedAt: 2026-09-24

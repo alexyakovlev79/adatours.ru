@@ -10,9 +10,9 @@ hero:
   src: /media/countries/argentina/hero-enhanced-20260930-v2.webp
   alt: Пейзаж Аргентины
 gallery:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/puerto-madero-buenos-aires-argentina.jpg
+  - src: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
     alt: Буэнос-Айрес, район Пуэрто-Мадеро
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/florian-delee-sgq-0qddxs4-unsplash.jpg
+  - src: /media/destinations/el-calafate/hero-enhanced-20260930.webp
     alt: Патагония, район Эль-Калафате
 regions:
   - Буэнос-Айрес
@@ -34,15 +34,15 @@ featureBands:
   - eyebrow: Столица
     title: Буэнос-Айрес
     text: Танго, исторические районы, современная набережная и гастрономия делают город естественной первой точкой маршрута.
-    image: https://brasiltours.ru/image/countries/argentina/new-photos/puerto-madero-buenos-aires-argentina.jpg
+    image: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
   - eyebrow: Патагония
     title: Ледники и юг континента
     text: Эль-Калафате, Ушуайя и другие точки юга требуют отдельного времени на перелеты, погоду и наземную логистику.
-    image: https://brasiltours.ru/image/countries/argentina/new-photos/florian-delee-sgq-0qddxs4-unsplash.jpg
+    image: /media/destinations/el-calafate/hero-enhanced-20260930.webp
   - eyebrow: Вино
     title: Мендоса
     text: Винный регион можно включить как самостоятельный блок или соединить с Буэнос-Айресом и продолжением поездки по Андам.
-    image: https://brasiltours.ru/image/countries/argentina/new-photos/mendoza.jpg
+    image: /media/destinations/mendoza/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/argentina-ru
 sourceSnapshot: page_texts_original/argentina-ru__e4db8af4.md
 updatedAt: 2026-09-24

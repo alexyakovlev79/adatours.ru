@@ -16,7 +16,7 @@ language: []
 priceFrom: 400
 currency: USD
 hero:
-  src: /media/tours/luxury-brazil-11d/itinerary/extra-tropical-islands-enhanced-20260930.webp
+  src: /media/excursions/tropicheskie-ostrova-rajskoe-naslazhdenie/hero.webp
   alt: Тропические острова и бирюзовая вода у Ангра-дус-Рейс
 gallery: []
 route:

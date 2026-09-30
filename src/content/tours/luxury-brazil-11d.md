@@ -155,7 +155,7 @@ itinerary:
       
       Продолжительность дополнительной экскурсии около 4 часов.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-14.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/extra-botanical-garden-enhanced-20260930.webp
         alt: "Ботанический сад Рио-де-Жанейро"
         intendedSlot: "itinerary:extra:Ботанический сад"
   - label: "ДОП."
@@ -168,7 +168,7 @@ itinerary:
       
       Кроме основных экскурсий в Рио, программа специально оставляет выбор между активными и гастрономическими форматами. За один свободный день можно сделать акцент на воде и островах, на городе с высоты, на тропическом лесе или на кухне. Это дает возможность не превращать люксовый маршрут в непрерывную цепочку обязательных посещений и подстроить его под интересы конкретной пары или семьи.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/extra-sugarloaf-trekking-enhanced-20260930.webp
         alt: "Сахарная голова и канатная дорога в Рио-де-Жанейро"
         intendedSlot: "itinerary:extra:Треккинг на Сахарную Голова"
   - day: 5
@@ -179,7 +179,7 @@ itinerary:
       
       Город расположен в приграничной части страны рядом с Аргентиной и Парагваем. После океанского Рио пейзаж меняется на плотную зелень и широкие реки.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
         alt: "Водопады Игуасу"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -192,7 +192,7 @@ itinerary:
       
       После основной экскурсии можно выбрать Парк птиц или Макуко Сафари.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
         alt: "Бразильская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-6"
   - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
@@ -205,7 +205,7 @@ itinerary:
       
       После короткого пешего перехода вы выходите к реке Игуасу и садитесь в моторную лодку. Она подходит ближе к водопадам, где пассажиры оказываются среди брызг и сильного шума воды. Снизу водопады воспринимаются иначе, чем со смотровых дорожек: над лодкой поднимается белая стена водяной пыли, поток оказывается совсем рядом, а радуги возникают практически на уровне глаз.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1334121-unsplash.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/extra-macuco-safari-enhanced-20260930.webp
         alt: "Катер Macuco Safari у водопадов Игуасу"
         intendedSlot: "itinerary:extra:Макуко Сафари"
   - day: 7
@@ -222,7 +222,7 @@ itinerary:
       
       На Игуасу важна именно комбинация 2 сторон. Бразильская дает широкую панораму всей линии каскадов и постепенное приближение к главному разлому. Аргентинская ведет по настилам внутрь водопадного комплекса и заканчивается у края «Глотки дьявола». Поэтому 2 дня здесь дают разные впечатления от одного природного объекта, а дополнительные Парк птиц и Макуко Сафари можно добавить между основными экскурсиями.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/iguazu-22.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
         alt: "Глотка дьявола на водопадах Игуасу"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -233,7 +233,7 @@ itinerary:
       
       По мере движения городская застройка сменяется холмами и зеленью. Бузиос расположен на полуострове с десятками небольших бухт и пляжей. Воздух становится суше, движение спокойнее, а океан появляется между холмами все чаще. После размещения в отеле начинается пляжная часть маршрута, для которой в программе оставлено несколько дней без жесткого расписания.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
         alt: "Бухта Бузиоса с яхтами"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -246,7 +246,7 @@ itinerary:
       
       В Бузиосе программа сознательно становится свободнее. После насыщенных дней в Рио и на Игуасу здесь нет необходимости каждое утро отправляться на экскурсию. Можно выбрать один пляж и остаться там на несколько часов, взять лодку, прогуляться по Rua das Pedras или провести день в отеле. Разные стороны полуострова дают разное море: где-то вода спокойная и подходит для плавания, где-то открытая Атлантика приносит заметную волну.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-3.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-09-enhanced-20260930.webp
         alt: "Пляж в Бузиосе"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -257,7 +257,7 @@ itinerary:
       
       Дополнительно предлагается морская прогулка вдоль побережья. Лодка проходит мимо островов и закрытых бухт, к которым трудно добраться с суши. Во время остановок можно плавать в теплой прозрачной воде и рассматривать берег со стороны моря. С борта особенно хорошо видно устройство полуострова: небольшие пляжи сменяют друг друга, между ними поднимаются зеленые холмы, а дома разбросаны вдоль линии берега.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/45.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-10-enhanced-20260930.webp
         alt: "Rua das Pedras в Бузиосе"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -266,7 +266,7 @@ itinerary:
     text: |-
       После завтрака выезд в сторону Рио. Дорога занимает около 2,5-3 часов. По прибытии трансфер в международный аэропорт и завершение путешествия.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/jaime-dantas-sp4cvudiy5u-unsplash.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-11-enhanced-20260930.webp
         alt: "Пляж Ипанема в Рио-де-Жанейро"
         intendedSlot: "itinerary:day-11"
 included:

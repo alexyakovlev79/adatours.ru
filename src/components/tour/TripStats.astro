@@ -8,7 +8,7 @@ const { stats } = Astro.props;
 ---
 
 <section class="stats">
-  <div class="stats__inner">
+  <div class="stats__inner" data-count={stats.length} style={`--stats-count: ${stats.length}`}>
     {stats.map((stat) => (
       <div class:list={['stat', { 'stat--long': stat.value.length > 9 }]}>
         <strong>{stat.value}</strong>
@@ -65,6 +65,12 @@ const { stats } = Astro.props;
     color: var(--color-muted);
   }
 
+  .stats__inner[data-count="2"] .stat strong {
+    overflow-wrap: normal;
+    hyphens: none;
+    white-space: nowrap;
+  }
+
   @media (max-width: 760px) {
     .stats {
       padding-block: 18px;
@@ -109,6 +115,44 @@ const { stats } = Astro.props;
 
     .stat--long strong {
       font-size: clamp(1.65rem, 7vw, 2.15rem);
+    }
+
+    .stats__inner[data-count="2"] {
+      display: block;
+    }
+
+    .stats__inner[data-count="2"]::before,
+    .stats__inner[data-count="2"]::after {
+      display: none;
+    }
+
+    .stats__inner[data-count="2"] .stat,
+    .stats__inner[data-count="2"] .stat + .stat {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 22px;
+      align-items: center;
+      min-height: 0;
+      padding: 24px 0;
+      border: 0;
+      border-bottom: 1px solid var(--color-line);
+    }
+
+    .stats__inner[data-count="2"] .stat:last-child {
+      border-bottom: 0;
+    }
+
+    .stats__inner[data-count="2"] .stat strong,
+    .stats__inner[data-count="2"] .stat--long strong {
+      margin: 0;
+      font-size: clamp(1.9rem, 8.5vw, 2.55rem);
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .stats__inner[data-count="2"] .stat span {
+      text-align: right;
+      white-space: nowrap;
     }
   }
 </style>

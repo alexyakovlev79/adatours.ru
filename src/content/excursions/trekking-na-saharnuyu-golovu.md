@@ -12,7 +12,7 @@ destination: destination_brazil_rio
 themes: [adventure, nature]
 language: []
 hero:
-  src: /media/tours/luxury-brazil-11d/itinerary/extra-sugarloaf-trekking-enhanced-20260930.webp
+  src: /media/excursions/trekking-na-saharnuyu-golovu/hero.webp
   alt: Сахарная Голова в Рио-де-Жанейро
 gallery: []
 route:

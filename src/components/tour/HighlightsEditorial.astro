@@ -21,7 +21,7 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
 ---
 
 <section class="highlights section">
-  <div class="container highlights__container">
+  <div class:list={['container', { 'highlights__container--media': mediaMode }]}>
     <p class="eyebrow">Главные впечатления</p>
 
     <div class:list={['highlights__list', { 'highlights__list--media': mediaMode }]}>
@@ -186,7 +186,7 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
   }
 
   @media (min-width: 1100px) {
-    .highlights__container {
+    .highlights__container--media {
       width: 100%;
       max-width: none;
       margin-inline: 0;

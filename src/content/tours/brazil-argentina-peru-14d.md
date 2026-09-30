@@ -99,7 +99,7 @@ itinerary:
       
       Размещение в отеле и свободное время.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-111.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-01-enhanced-20260930.webp
         alt: "Знаменитый пляж Копакабана в Рио-де-Жанейро"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -114,7 +114,7 @@ itinerary:
       
       Экскурсия проходит с русскоговорящим гидом.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/extra-sugarloaf-trekking-enhanced-20260930.webp
         alt: "Канатная дорога на Сахарную голову в Рио-де-Жанейро"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -129,7 +129,7 @@ itinerary:
       
       После спуска экскурсия продолжается в историческом центре. Вы увидите церкви и монастыри XVI-XVIII веков, колониальные фасады и главный кафедральный собор. Каменная плитка улиц, старые двери, балконы и здания позволяют рассмотреть город уже с уровня улицы после панорамных видов с гор.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-13.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-03-enhanced-20260930.webp
         alt: "Исторический центр Рио-де-Жанейро"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -144,7 +144,7 @@ itinerary:
       
       Для прогулок у каскадов пригодятся хорошая нескользкая обувь и непромокаемая защита для техники.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/iguazu-22.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
         alt: "Водопады Игуасу"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -159,7 +159,7 @@ itinerary:
       
       В Национальном парке также доступны дополнительные активности, включая лодочную поездку среди водопадов и рафтинг.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/mateus-campos-felipe-1629321-unsplash.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-05-enhanced-20260930.webp
         alt: "Парк птиц в Игуасу"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -176,7 +176,7 @@ itinerary:
       
       После экскурсии трансфер в аэропорт и перелет в Буэнос-Айрес. По прибытии встреча с водителем и трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/017-macuco-safari.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp
         alt: "Макуко-сафари у водопадов Игуасу"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -193,7 +193,7 @@ itinerary:
       
       Вечером танго-шоу с ужином, без гида. Живая музыка, танго, традиционные блюда и аргентинские вина завершают день.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/nico-chamorro-coscia-2hfmlbmfd14-unsplash.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-07-enhanced-20260930.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -206,7 +206,7 @@ itinerary:
       
       Лима становится переходом от южноамериканских мегаполисов и водопадов к высокогорной части маршрута по Перу.
     images:
-      - src: https://brasiltours.ru/image/countries/peru/lima/27208258098-7f1434084c-k.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-08-enhanced-20260930.webp
         alt: "Лима, Перу"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -225,7 +225,7 @@ itinerary:
       
       После экскурсии возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/peru/lima/willian-justen-de-vasconcellos-mzkeirbstv4-unsplash.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-09-enhanced-20260930.webp
         alt: "Побережье Лимы"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -246,7 +246,7 @@ itinerary:
       
       Ночь в Куско.
     images:
-      - src: https://brasiltours.ru/image/countries/peru/cusco.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-10-enhanced-20260930.webp
         alt: "Куско, Перу"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -265,7 +265,7 @@ itinerary:
       
       После экскурсии возвращение в Куско на поезде, затем трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/peru/babak-fakhamzadeh-2994-unsplash.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-11-enhanced-20260930.webp
         alt: "Мачу-Пикчу, Перу"
         intendedSlot: "itinerary:day-11"
   - day: 12
@@ -284,7 +284,7 @@ itinerary:
       
       Вечером прибытие в Пуно, расположенный на высоте 3827 м. Трансфер в отель с англоговорящим сопровождающим.
     images:
-      - src: https://brasiltours.ru/image/countries/peru/fabio-hanashiro-iyymqhlwdqe-unsplash.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-12-enhanced-20260930.webp
         alt: "Анды Перу"
         intendedSlot: "itinerary:day-12"
   - day: 13
@@ -303,7 +303,7 @@ itinerary:
       
       По прибытии трансфер в отель в Лиме.
     images:
-      - src: https://brasiltours.ru/image/countries/peru/tititkaka-33.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-13-enhanced-20260930.webp
         alt: "Озеро Титикака и острова Урос"
         intendedSlot: "itinerary:day-13"
   - day: 14
@@ -316,7 +316,7 @@ itinerary:
       
       В результате поездка дает последовательное знакомство с побережьем, водопадами, мегаполисами и Андами без повторения одинаковых по смыслу дней. Каждый следующий участок заметно меняет впечатление от региона.
     images:
-      - src: https://brasiltours.ru/image/countries/peru/peruvian-photo.jpg
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-14-enhanced-20260930.webp
         alt: "Перуанская кухня и финал маршрута"
         intendedSlot: "itinerary:day-14"
 included:

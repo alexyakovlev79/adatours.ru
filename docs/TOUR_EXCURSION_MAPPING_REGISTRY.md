@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.1  
+Версия: 1.2  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -116,7 +116,7 @@ URL:
 
 | Sheet row | Tour ID | Production file | Тур | Scan status | Найденные ранее связи | Последнее обновление |
 |---:|---|---|---|---|---:|---|
-| 75 | `tour_luxury_brazil_11d` | `src/content/tours/luxury-brazil-11d.md` | Роскошная Бразилия | DONE_MAPPING | 9 | 2026-09-30 |
+| 75 | `tour_luxury_brazil_11d` | `src/content/tours/luxury-brazil-11d.md` | Роскошная Бразилия | DONE_LINKED | 9 | 2026-09-30 |
 | 76 | `tour_brazil_argentina_peru_14d` | `src/content/tours/brazil-argentina-peru-14d.md` | Бразилия, Аргентина и Перу за 14 дней | PENDING | 0 | 2026-09-30 |
 | 77 | `tour_peru_8d` | `src/content/tours/peru-8d.md` | Перу за 8 дней: Лима, Куско, Мачу-Пикчу и Титикака | PENDING | 0 | 2026-09-30 |
 | 78 | `tour_brazil_sao_paulo_rio_ilha_paraty_12d` | `src/content/tours/brazil-sao-paulo-rio-ilha-paraty-12d.md` | Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати | PENDING | 1 | 2026-09-30 |
@@ -139,15 +139,15 @@ URL:
 
 | Tour ID | Excursion ID | Положение | После дня | Перед днем | Статус | Примечание |
 |---|---|---|---:|---:|---|---|
-| `tour_luxury_brazil_11d` | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | between_days | 4 | 5 | MATCHED_TO_INSERT | Точное соответствие source excursion_detail, строка Sheets 711 |
-| `tour_luxury_brazil_11d` | `excursion_source_rio_nochyu` | between_days | 4 | 5 | MATCHED_TO_INSERT | Ночное сценическое шоу: самба/танцы, гид, опциональный ужин. Ближайшая каноническая source-экскурсия «Шоу мулаток», строка 627; `rio-nochyu-lapa` не подходит по содержанию |
-| `tour_luxury_brazil_11d` | `excursion_source_polet_na_vertolete_nad_rio` | between_days | 4 | 5 | MATCHED_TO_INSERT | Точное соответствие source excursion_detail, строка Sheets 626 |
-| `tour_luxury_brazil_11d` | `excursion_rio_caipirinha_masterclass` | between_days | 4 | 5 | NEW_ENTITY_TO_CREATE | Отдельной source excursion_detail не найдено. Stable ID зарезервирован; строка Sheets 731 |
-| `tour_luxury_brazil_11d` | `excursion_rio_churrasco_masterclass` | between_days | 4 | 5 | NEW_ENTITY_TO_CREATE | Отдельной source excursion_detail не найдено. Stable ID зарезервирован; строка Sheets 732 |
-| `tour_luxury_brazil_11d` | `excursion_source_botanical_garden` | between_days | 4 | 5 | MATCHED_TO_INSERT | Точное соответствие source excursion_detail, строка Sheets 622 |
-| `tour_luxury_brazil_11d` | `excursion_rio_sugarloaf_trekking` | between_days | 4 | 5 | NEW_ENTITY_TO_CREATE | Это именно треккинг/восхождение; не объединять с канатной дорогой `excursion_source_ekskursiya_na_sakharnuyu_golovu`. Stable ID зарезервирован; строка Sheets 733 |
+| `tour_luxury_brazil_11d` | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | between_days | 4 | 5 | LINKED_EXISTING | Точное соответствие source excursion_detail, строка Sheets 711 |
+| `tour_luxury_brazil_11d` | `excursion_source_rio_nochyu` | between_days | 4 | 5 | LINKED_EXISTING | Ночное сценическое шоу: самба/танцы, гид, опциональный ужин. Ближайшая каноническая source-экскурсия «Шоу мулаток», строка 627; `rio-nochyu-lapa` не подходит по содержанию |
+| `tour_luxury_brazil_11d` | `excursion_source_polet_na_vertolete_nad_rio` | between_days | 4 | 5 | LINKED_EXISTING | Точное соответствие source excursion_detail, строка Sheets 626 |
+| `tour_luxury_brazil_11d` | `excursion_rio_caipirinha_masterclass` | between_days | 4 | 5 | LINKED_EXISTING | Production Excursion создана из standalone-блока тура; строка Sheets 731 |
+| `tour_luxury_brazil_11d` | `excursion_rio_churrasco_masterclass` | between_days | 4 | 5 | LINKED_EXISTING | Production Excursion создана из standalone-блока тура; строка Sheets 732 |
+| `tour_luxury_brazil_11d` | `excursion_source_botanical_garden` | between_days | 4 | 5 | LINKED_EXISTING | Точное соответствие source excursion_detail, строка Sheets 622 |
+| `tour_luxury_brazil_11d` | `excursion_rio_sugarloaf_trekking` | between_days | 4 | 5 | LINKED_EXISTING | Это именно треккинг/восхождение; не объединять с канатной дорогой `excursion_source_ekskursiya_na_sakharnuyu_golovu`. Production Excursion создана из standalone-блока тура; строка Sheets 733 |
 | `tour_luxury_brazil_11d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 6 | 7 | LINKED_EXISTING | Каноническая standalone-связь |
-| `tour_luxury_brazil_11d` | `excursion_source_makuko_safari` | between_days | 6 | 7 | MATCHED_TO_INSERT | Точное соответствие русской source excursion_detail, строка Sheets 694; вариант `makuko-safari-he` не использовать |
+| `tour_luxury_brazil_11d` | `excursion_source_makuko_safari` | between_days | 6 | 7 | LINKED_EXISTING | Точное соответствие русской source excursion_detail, строка Sheets 694; вариант `makuko-safari-he` не использовать |
 | `tour_brazil_sao_paulo_rio_ilha_paraty_12d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 3 | 4 | LINKED_EXISTING | Каноническая standalone-связь |
 | `tour_brazil_adventure_17d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 7 | 8 | LINKED_EXISTING | Каноническая standalone-связь |
 | `tour_brazil_gems_14d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | legacy_inside_day | 12 | 13 | LINKED_EXISTING_LEGACY | В текущем `main` relation находится внутри `contentBlocks` дня 12. В предыдущем V2-аудите был сигнал о ложном marker-match; автоматически не менять в рамках нового прохода. |
@@ -173,10 +173,10 @@ Excursion ID
 
 - `LINKED_EXISTING` — связь уже реально есть в production;
 - `MATCHED_TO_INSERT` — каноническая Excursion найдена, позиция определена, production-связь еще не внесена;
-- `NEW_ENTITY_TO_CREATE` — отдельной канонической Excursion раньше не было; новый stable ID уже зарезервирован и строка будущей Excursion добавлена в основной реестр страниц;
+- `CREATED_FROM_TOUR` — отдельной канонической Excursion раньше не было; production-сущность создана непосредственно из standalone-блока тура и затем связана через `excursionRef`;
 - `REVIEW` — неоднозначное сопоставление, которое пока не позволяет закрепить один `excursion_id`.
 
-Если подходящей канонической сущности нет, нельзя оставлять слот без `excursion_id`: зарезервировать новый детерминированный stable ID, добавить плановую строку Excursion в Google Sheets и использовать этот ID в mapping-реестре.
+Если подходящей канонической сущности нет, нельзя оставлять слот без связи и нельзя ограничиваться резервированием ID. Нужно сразу создать production Excursion из самостоятельного блока тура, используя только подтвержденные данные блока. Отсутствующие цену, длительность, язык, состав услуг и другие факты не додумывать. Изображение нужно вынести в канонический `/media/excursions/{slug}/`, после чего локальную карточку тура заменить на `excursionRef` и обновить Google Sheets.
 
 ## 6. Обязательный рабочий цикл одного тура
 
@@ -190,8 +190,8 @@ Excursion ID
 8. Посчитать все самостоятельные itinerary-item без `day` между пронумерованными днями: `standalone_between_days = N`.
 9. Для каждого элемента найти каноническую Excursion в основном Google Sheets / `src/content/excursions/`.
 10. Если match надежный — записать существующий stable ID.
-11. Если канонической Excursion нет — зарезервировать новый stable ID, добавить будущую Excursion в Google Sheets и записать `NEW_ENTITY_TO_CREATE`.
-12. Проверить `mapped_relation_rows = N` и `missing_slots = 0`.
+11. Если канонической Excursion нет — сразу создать production Excursion из данных standalone-блока тура; не выдумывать отсутствующие факты. Создать stable ID и URL, добавить строку в Google Sheets, вынести hero в канонический media-path и заменить карточку тура на `excursionRef`.
+12. Проверить `mapped_relation_rows = N`, `production_excursion_refs = N` и `missing_slots = 0`.
 13. Если самостоятельных элементов нет — это нормальный результат и статус `DONE_NO_RELATIONS`.
 14. Если `missing_slots = 0` — поставить туру `DONE_MAPPING`.
 15. После фактической замены локальных карточек на `excursionRef`, создания недостающих Excursion и успешного deploy — `DONE_LINKED`.

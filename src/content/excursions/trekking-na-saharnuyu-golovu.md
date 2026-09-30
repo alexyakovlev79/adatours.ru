@@ -23,7 +23,7 @@ included: []
 notIncluded: []
 notes:
   - Каноническая Excursion создана из самостоятельного блока маршрута тура tour_luxury_brazil_11d; отдельной исходной excursion_detail на brasiltours.ru не было.
-  - Не объединять с excursion_source_ekskursiya_na_sakharnuyu_golovu: это другой формат с канатной дорогой и городской экскурсией.
+  - "Не объединять с excursion_source_ekskursiya_na_sakharnuyu_golovu: это другой формат с канатной дорогой и городской экскурсией."
 updatedAt: 2026-09-30
 ---
 

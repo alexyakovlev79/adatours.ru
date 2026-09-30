@@ -9,7 +9,7 @@ destinationType: region
 summary: >-
   Мачу-Пикчу – инкская цитадель XV века в горах Перу. В центре посещения находятся террасы и каменные сооружения, Храм Солнца, Храм трех окон, Главный храм и камень Интиуатана.
 hero:
-  src: https://brasiltours.ru/image/countries/peru/willian-justen-de-vasconcellos-667258-unsplash.jpg
+  src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
   alt: Мачу-Пикчу, Перу
 gallery: []
 themes:
@@ -35,12 +35,12 @@ featureBands:
     title: Храмы, террасы и каменная архитектура
     text: >-
       В цитадели сохранились каменные дома, террасы и храмы. Среди самых известных объектов – Храм Солнца, Храм трех окон, Главный храм и Интиуатана.
-    image: https://brasiltours.ru/image/countries/peru/willian-justen-de-vasconcellos-667258-unsplash.jpg
+    image: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
   - eyebrow: Маршрут
     title: Куско, Священная долина и Тропа инков
     text: >-
       Мачу-Пикчу удобно соединять с Куско и Священной долиной. Для активного варианта можно рассмотреть Тропу инков.
-    image: https://brasiltours.ru/image/countries/peru/willian-justen-de-vasconcellos-667258-unsplash.jpg
+    image: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-inkov-machu-pikchu-v-peru
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-inkov-machu-pikchu-v-peru__75c9afab.md
 updatedAt: 2026-09-24

@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Куско раскрывает наследие инков и испанского колониального периода: Пласа-де-Армас, Кориканча, Санто-Доминго, музеи, Саксайуаман, местные рынки и маршруты в Священную долину.
 hero:
-  src: https://brasiltours.ru/image/countries/peru/787.jpg
+  src: /media/destinations/cusco/hero-enhanced-20260930.webp
   alt: Куско, Перу
 gallery: []
 themes:
@@ -35,12 +35,12 @@ featureBands:
     title: Инкский фундамент и колониальный город
     text: >-
       Куско интересен тем, как инкская кладка и испанская колониальная архитектура существуют рядом. В центре прогулки – Пласа-де-Армас, Кориканча и Санто-Доминго.
-    image: https://brasiltours.ru/image/countries/peru/787.jpg
+    image: /media/destinations/cusco/hero-enhanced-20260930.webp
   - eyebrow: Окрестности
     title: Саксайуаман и Священная долина
     text: >-
       За пределами центра стоит увидеть Саксайуаман и Священную долину. Эти места продолжают знакомство с наследием инков перед поездкой к Мачу-Пикчу.
-    image: https://brasiltours.ru/image/countries/peru/787.jpg
+    image: /media/destinations/cusco/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kusko-v-peru
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-kusko-v-peru__f2854c27.md
 updatedAt: 2026-09-24

@@ -7,12 +7,12 @@ status: approved
 summary: >-
   Лима, Куско, Священная долина, Мачу-Пикчу, Титикака и Амазония. Ada Tours собирает маршрут с учетом высоты, внутренних перелетов и наземных переездов.
 hero:
-  src: https://brasiltours.ru/image/countries/peru/alexander-schimmeck-z01bft5iv7y-unsplash.jpg
+  src: /media/countries/peru/hero-enhanced-20260930.webp
   alt: Горный пейзаж Перу
 gallery:
-  - src: https://brasiltours.ru/image/countries/peru/willian-justen-de-vasconcellos-667258-unsplash.jpg
+  - src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
     alt: Мачу-Пикчу в Перу
-  - src: https://brasiltours.ru/image/countries/peru/787.jpg
+  - src: /media/destinations/cusco/hero-enhanced-20260930.webp
     alt: Куско, Перу
 regions:
   - Лима
@@ -34,11 +34,11 @@ featureBands:
   - eyebrow: Анды
     title: Куско и Священная долина
     text: Первые дни в Андах лучше оставить спокойнее, чтобы высота не забирала впечатления от Куско и Священной долины.
-    image: https://brasiltours.ru/image/countries/peru/787.jpg
+    image: /media/destinations/cusco/hero-enhanced-20260930.webp
   - eyebrow: Главный символ
     title: Мачу-Пикчу
     text: Поезд, автобус, время входа и ночевку лучше согласовать заранее как одну часть маршрута.
-    image: https://brasiltours.ru/image/countries/peru/willian-justen-de-vasconcellos-667258-unsplash.jpg
+    image: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
   - eyebrow: Высокогорье
     title: Озеро Титикака
     text: Пуно и Титикака добавляют в маршрут высокогорье и позволяют продолжить поездку в сторону Боливии.

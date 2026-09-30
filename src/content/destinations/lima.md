@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Лима соединяет колониальный исторический центр с музеями и современными районами: Пласа-Майор, Кафедральный собор, Дворец правительства, музей Ларко, монастырь Сан-Франциско, Мирафлорес и Уака-Пукльяна.
 hero:
-  src: https://brasiltours.ru/image/countries/peru/909.jpg
+  src: /media/destinations/lima/hero-enhanced-20260930.webp
   alt: Лима, столица Перу
 gallery: []
 themes:
@@ -35,12 +35,12 @@ featureBands:
     title: Пласа-Майор и колониальная архитектура
     text: >-
       В историческом центре стоит увидеть Пласа-Майор, Дворец архиепископа, Дом Алиаги, Дворец правительства, Кафедральный собор и другие здания колониального периода.
-    image: https://brasiltours.ru/image/countries/peru/909.jpg
+    image: /media/destinations/lima/hero-enhanced-20260930.webp
   - eyebrow: За пределами центра
     title: Музеи, Мирафлорес и доинкское наследие
     text: >-
       За пределами Пласа-Майор можно добавить музей Ларко, монастырь Сан-Франциско, Парк любви, Мост вздохов, Уака-Пукльяну и археологический комплекс Пачакамак.
-    image: https://brasiltours.ru/image/countries/peru/909.jpg
+    image: /media/destinations/lima/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-stolicu-peru-gorod-limu__14d2550a.md
 updatedAt: 2026-09-24

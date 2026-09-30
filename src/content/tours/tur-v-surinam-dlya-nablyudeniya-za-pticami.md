@@ -54,7 +54,7 @@ itinerary:
 
       Включено в этот день: трансфер из аэропорта, размещение и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/surinam/surinam-palulu-camping.jpg
+      - src: /media/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami/itinerary/day-01-enhanced-20260930.webp
         alt: "День 1: прибытие и ночная прогулка в саванне, кемпинг «Палулу»"
   - day: 2
     title: "Саванна Крака и переезд в лодж «Зинтете» на реке Сарамакка"
@@ -68,7 +68,7 @@ itinerary:
 
       Включено в этот день: проживание в лодже «Зинтете», все питание, услуги гида и трансферы.
     images:
-      - src: https://brasiltours.ru/image/countries/surinam/6-green-and-rufous-kingfisher.jpg
+      - src: /media/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami/itinerary/day-02-enhanced-20260930.webp
         alt: "День 2: саванна Крака и переезд в лодж «Зинтете»"
   - day: 3
     title: "Лесные тропы и гвианский скальный петушок"
@@ -82,7 +82,7 @@ itinerary:
 
       Включено в этот день: проживание в лодже «Зинтете», все питание, услуги гида и трансферы.
     images:
-      - src: https://brasiltours.ru/image/countries/surinam/12-part-of-the-team-watching-crimson-fruitcrows.jpg
+      - src: /media/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami/itinerary/day-03-enhanced-20260930.webp
         alt: "День 3: лесные тропы и наблюдение за птицами"
   - day: 4
     title: "Последнее утро у Сарамакки и переезд в природный парк «Пеперпот»"
@@ -96,7 +96,7 @@ itinerary:
 
       Включено в этот день: трансферы, услуги гида и проживание в отеле.
     images:
-      - src: https://brasiltours.ru/image/countries/surinam/8-hoary-throated-spinetail.jpg
+      - src: /media/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami/itinerary/day-04-enhanced-20260930.webp
         alt: "День 4: переезд в природный парк «Пеперпот»"
   - day: 5
     title: "Природный парк «Пеперпот», утреннее и вечернее наблюдение за птицами"
@@ -110,7 +110,7 @@ itinerary:
 
       Включено в этот день: трансферы, услуги гида и проживание в отеле «Пеперпот».
     images:
-      - src: https://brasiltours.ru/image/countries/surinam/otel.jpg
+      - src: /media/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami/itinerary/day-05-enhanced-20260930.webp
         alt: "День 5: природный парк «Пеперпот»"
   - day: 6
     title: "Нордвайквег и Вег-нар-Зе, алые ибисы и птицы побережья"
@@ -124,7 +124,7 @@ itinerary:
 
       Включено в этот день: трансферы, услуги гида и проживание в отеле «Пеперпот».
     images:
-      - src: https://brasiltours.ru/image/countries/surinam/25-southern-lapwing.jpg
+      - src: /media/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami/itinerary/day-06-enhanced-20260930.webp
         alt: "День 6: Нордвайквег и Вег-нар-Зе"
   - day: 7
     title: "Ньив-Амстердам и ботанический сад Парамарибо, совы и прибрежные птицы"
@@ -138,7 +138,7 @@ itinerary:
 
       Включено в этот день: трансферы, услуги гида и проживание в отеле «Пеперпот».
     images:
-      - src: https://brasiltours.ru/image/countries/surinam/9-hoatzin.jpg
+      - src: /media/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami/itinerary/day-07-enhanced-20260930.webp
         alt: "День 7: Ньив-Амстердам и ботанический сад Парамарибо"
   - day: 8
     title: "Трансфер в аэропорт"
@@ -150,7 +150,7 @@ itinerary:
 
       Включено в этот день: трансфер в аэропорт.
     images:
-      - src: https://brasiltours.ru/image/countries/surinam/bez-imeni-2.jpg
+      - src: /media/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami/itinerary/day-08-enhanced-20260930.webp
         alt: "День 8: трансфер в аэропорт"
 included:
   - "трансфер из аэропорта в начале тура и трансфер в аэропорт в день вылета"

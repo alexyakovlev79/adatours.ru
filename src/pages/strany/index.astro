@@ -5,11 +5,25 @@ import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
 
+const priority = new Map([
+  ['country_brazil', 0],
+  ['country_argentina', 1],
+  ['country_peru', 2],
+]);
+
 const countries = (await getCollection('countries', ({ data }) =>
   data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
 )).sort((a, b) => {
-  const order = ['country_brazil', 'country_argentina', 'country_peru'];
-  return order.indexOf(a.data.id) - order.indexOf(b.data.id);
+  const ai = priority.get(a.data.id);
+  const bi = priority.get(b.data.id);
+
+  if (ai !== undefined || bi !== undefined) {
+    if (ai === undefined) return 1;
+    if (bi === undefined) return -1;
+    return ai - bi;
+  }
+
+  return a.data.name.localeCompare(b.data.name, 'ru');
 });
 ---
 

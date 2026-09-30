@@ -130,12 +130,8 @@ itinerary:
     images:
       - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
         alt: "День 7: Бразильская сторона водопадов Игуасу"
-  - title: "«Макуко Сафари», дополнительно"
-    places: ["Фос-ду-Игуасу"]
-    text: "Сначала вы проедете по джунглям в открытом электрическом джипе. Гид расскажет о местной экосистеме и животных. Затем короткая прогулка ведет к реке Игуасу, где начинается лодочная часть. Моторная лодка подходит очень близко к водопадам. Вокруг шум, брызги и плотная водяная пыль, поэтому эта экскурсия воспринимается как непосредственное знакомство со стихией."
-    images:
-      - src: /media/tours/luxury-brazil-11d/itinerary/extra-macuco-safari-enhanced-20260930.webp
-        alt: "Макуко-сафари у водопадов Игуасу"
+  - excursionRef: excursion_source_makuko_safari
+    places: ["Национальный парк Игуасу"]
   - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
     places: ["Фос-ду-Игуасу"]
   - day: 8
@@ -173,12 +169,8 @@ itinerary:
     images:
       - src: https://brasiltours.ru/image/Zipline%20Cabanas-Arvorismo.png
         alt: "День 12: Сплав и зиплайн Arvorismo"
-  - title: "Abismo Anhumas, дополнительно"
+  - excursionRef: excursion_brazil_bonito_abismo_anhumas
     places: ["Бонито"]
-    text: "Дополнительно можно заказать спуск в пещеру Abismo Anhumas, примерно в 20 км к западу от Бонито. За узкой расщелиной открывается огромная подземная полость. Спуск по тросовой системе идет примерно на 72 м вниз.\n\nНа дне находится прозрачное подземное озеро и большие сталактиты. Здесь проводят сноркелинг и дайвинг среди затопленных известняковых образований. Посещение ограничено небольшим числом групп, поэтому внутри сохраняются тишина и ощущение изолированного подземного пространства."
-    images:
-      - src: https://brasiltours.ru/image/countries/brazil/bonito-canopi.jpg
-        alt: "Спуск в пещеру Abismo Anhumas"
   - day: 13
     title: "Перелет в Сан-Луис"
     places: ["Кампо-Гранде", "Сан-Луис"]

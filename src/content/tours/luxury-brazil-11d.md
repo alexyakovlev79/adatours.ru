@@ -50,7 +50,7 @@ itinerary:
       
       На вечер можно выбрать ресторан Cipriani в Belmond Copacabana Palace, отмеченный 1 звездой Мишлен. Вместо обычной встречи с гидом можно воспользоваться сервисом Fast Track Gold.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-22.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
         alt: "Статуя Христа-Искупителя и панорама Рио-де-Жанейро"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -65,7 +65,7 @@ itinerary:
       
       Днем можно посетить Fogo de Chão, а вечером - Al Mare на Копакабане в отеле Fasano.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/ricardo-frantz-jww5qixn7ee-unsplash.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-02-enhanced-20260930.webp
         alt: "Поезд к Корковаду через лес Тижука"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -78,7 +78,7 @@ itinerary:
       
       После спуска можно зайти за кофе и бразильскими десертами в историческую Confeitaria Colombo. На вечер рекомендован Marius Degustare с морепродуктами и необычным интерьером.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/sebastien-goldberg-zzvzhtvg2gc-unsplash.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-03-enhanced-20260930.webp
         alt: "Панорама Рио-де-Жанейро с Корковаду"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -87,7 +87,7 @@ itinerary:
     text: |-
       Этот день оставлен без обязательной программы. Его можно провести на пляже или выбрать одну из дополнительных экскурсий.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash.jpg
+      - src: /media/tours/luxury-brazil-11d/hero-enhanced-20260930.webp
         alt: "Панорама Рио-де-Жанейро у Атлантики"
         intendedSlot: "itinerary:day-4"
   - label: "ДОП."
@@ -98,7 +98,7 @@ itinerary:
       
       На одном из островов предусмотрен обед с местной кухней, затем остается время для прогулки и купания. Во время переходов шхуна проходит мимо небольших островов и закрытых бухт, а с воды хорошо видны зеленые склоны, которые подходят почти вплотную к берегу. Продолжительность программы около 8 часов.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/dharmendra-sahu-ia2kjtrx8y4-unsplash-2.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/extra-tropical-islands-enhanced-20260930.webp
         alt: "Тропическое побережье и бирюзовая вода"
         intendedSlot: "itinerary:extra:Тропические острова"
   - label: "ДОП."
@@ -109,7 +109,7 @@ itinerary:
       
       В шоу входят самба и капоэйра с акробатикой и боевыми элементами. Танцоры выходят один за другим, музыка становится плотнее, барабаны задают темп всему залу. Капоэйра добавляет резкие повороты, удары ногами и акробатические движения. По желанию можно заказать ужин с традиционными бразильскими блюдами. После шоу гид доставит вас обратно в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/ugur-arpaci-u18v0toiofu-unsplash.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/extra-samba-show-enhanced-20260930.webp
         alt: "Карнавальные костюмы и бразильская самба"
         intendedSlot: "itinerary:extra:Ночное шоу с самбой и капоэйрой"
   - label: "ДОП."
@@ -120,7 +120,7 @@ itinerary:
       
       С воздуха видны Копакабана, Ипанема, Ботанический сад, лагуна Родригу-ди-Фрейташ, Корковадо со статуей Христа, яхты и бухты. Маршрут проходит вдоль побережья и между скалами. С высоты линии пляжей, кварталы и зеленые склоны складываются в единую карту, а знакомые места выглядят совсем иначе, чем с городских смотровых площадок.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
         alt: "Полет на вертолете над Рио-де-Жанейро"
         intendedSlot: "itinerary:extra:Полет на вертолете над Рио"
   - label: "ДОП."
@@ -131,7 +131,7 @@ itinerary:
       
       После приготовления проходит дегустация.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/caipirinha-cocktail.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/extra-caipirinha-enhanced-20260930.webp
         alt: "Бразильская кайпиринья"
         intendedSlot: "itinerary:extra:Мастер-класс по приготовлению кайпириньи"
   - label: "ДОП."
@@ -142,7 +142,7 @@ itinerary:
       
       После приготовления все можно попробовать сразу с огня. Отдельная часть барбекю - ананас с корицей: на жаре сахар карамелизируется, а сладкий фрукт становится частью того же барбекю, что мясо и закуски.
     images:
-      - src: https://brasiltours.ru/image/fogo_tableside1.png
+      - src: /media/tours/luxury-brazil-11d/itinerary/extra-churrasco-enhanced-20260930.webp
         alt: "Приготовление бразильского шурраско"
         intendedSlot: "itinerary:extra:Мастер-класс по шурраско"
   - label: "ДОП."

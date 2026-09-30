@@ -10,6 +10,11 @@ import { SITE } from '../lib/site';
 import { withBase } from '../lib/paths';
 import { ORG } from '../data/organization/ada-tours';
 
+interface BreadcrumbItem {
+  label: string;
+  href: string;
+}
+
 interface Props {
   title?: string;
   description?: string;
@@ -19,6 +24,7 @@ interface Props {
   headerTheme?: 'light' | 'dark';
   noindex?: boolean;
   showBreadcrumbs?: boolean;
+  breadcrumbs?: BreadcrumbItem[];
   pageSchema?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
@@ -31,6 +37,7 @@ const {
   headerTheme = 'light',
   noindex = false,
   showBreadcrumbs = true,
+  breadcrumbs,
   pageSchema,
 } = Astro.props;
 
@@ -102,6 +109,13 @@ const breadcrumbItems = [
   })),
 ];
 
+const schemaBreadcrumbItems = breadcrumbs?.length
+  ? breadcrumbs.map((item) => ({
+      name: item.label,
+      url: new URL(item.href, SITE.url).toString(),
+    }))
+  : breadcrumbItems;
+
 const organizationSchema = {
   '@type': ['Organization', 'TravelAgency'],
   '@id': `${SITE.url}/#organization`,
@@ -146,10 +160,10 @@ const webPageSchema = {
   about: { '@id': `${SITE.url}/#organization` },
 };
 
-const breadcrumbSchema = segments.length > 0 ? {
+const breadcrumbSchema = (segments.length > 0 || Boolean(breadcrumbs?.length)) ? {
   '@type': 'BreadcrumbList',
   '@id': `${canonicalUrl}#breadcrumb`,
-  itemListElement: breadcrumbItems.map((item, index) => ({
+  itemListElement: schemaBreadcrumbItems.map((item, index) => ({
     '@type': 'ListItem',
     position: index + 1,
     name: item.name,
@@ -196,7 +210,7 @@ const graph = [
     <SiteHeader theme={headerTheme} />
     <SearchOverlay />
     {showBreadcrumbs && !noindex && segments.length > 0 && (
-      <Breadcrumbs pathname={Astro.url.pathname} title={title} theme={headerTheme} />
+      <Breadcrumbs pathname={Astro.url.pathname} title={title} theme={headerTheme} items={breadcrumbs} />
     )}
     <main>
       <slot />

@@ -1,13 +1,19 @@
 ---
 import { withBase } from '../../lib/paths';
 
+interface BreadcrumbItem {
+  label: string;
+  href: string;
+}
+
 interface Props {
   pathname: string;
   title: string;
   theme?: 'light' | 'dark';
+  items?: BreadcrumbItem[];
 }
 
-const { pathname, title, theme = 'light' } = Astro.props;
+const { pathname, title, theme = 'light', items } = Astro.props;
 const base = import.meta.env.BASE_URL || '/';
 const normalizedBase = base.endsWith('/') ? base : `${base}/`;
 let cleanPath = pathname;
@@ -65,7 +71,7 @@ const pageTitle = title
   .replace(/\s*[|–—-]\s*Ada Tours.*$/i, '')
   .trim();
 
-const crumbs = [
+const defaultCrumbs = [
   { label: 'Главная', href: withBase('/') },
   ...segments.map((segment, index) => ({
     label: labels[segment] ?? (index === segments.length - 1 ? pageTitle : segment.replace(/-/g, ' ')),
@@ -75,12 +81,20 @@ const crumbs = [
   })),
 ];
 
+const crumbs = items?.length
+  ? items.map((item) => ({
+      ...item,
+      href: /^https?:\/\//i.test(item.href) ? item.href : withBase(item.href),
+    }))
+  : defaultCrumbs;
+const isCustomTrail = Boolean(items?.length);
+
 // The visible breadcrumb must not duplicate the page H1.
 // Keep the current page in BreadcrumbList schema (BaseLayout), but omit it from visual navigation.
 const visibleCrumbs = crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
 ---
 
-<nav class:list={['breadcrumbs', `breadcrumbs--${theme}`]} aria-label="Хлебные крошки">
+<nav class:list={['breadcrumbs', `breadcrumbs--${theme}`, isCustomTrail && 'breadcrumbs--custom']} aria-label="Хлебные крошки">
   <ol>
     {visibleCrumbs.map((crumb, index) => (
       <li>
@@ -163,7 +177,7 @@ const visibleCrumbs = crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
       min-width: 0;
     }
 
-    .breadcrumbs li:not(:first-child):not(:last-child) {
+    .breadcrumbs:not(.breadcrumbs--custom) li:not(:first-child):not(:last-child) {
       display: none;
     }
 
@@ -186,6 +200,29 @@ const visibleCrumbs = crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
 
     .breadcrumbs li + li::before {
       margin-inline: 7px;
+    }
+
+    .breadcrumbs--custom li:nth-child(2) {
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .breadcrumbs--custom li:nth-child(2) a {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .breadcrumbs--custom li:last-child {
+      flex: 0 0 auto;
+      overflow: visible;
+    }
+
+    .breadcrumbs--custom li:last-child a {
+      overflow: visible;
+      text-overflow: clip;
     }
   }
 </style>

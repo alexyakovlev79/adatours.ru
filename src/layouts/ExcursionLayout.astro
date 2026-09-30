@@ -34,6 +34,25 @@ const relatedExcursions = relatedEntries
   })
   .slice(0, 3);
 
+const excursionBreadcrumbs = [
+  ...(country ? [{
+    label: country.data.name,
+    href: `/strany/${country.data.slug}/`,
+  }] : []),
+  ...(country && destination ? [{
+    label: destination.data.name,
+    href: `/napravleniya/${country.data.slug}/${destination.data.slug}/`,
+  }] : []),
+  {
+    label: 'Экскурсии',
+    href: '/ekskursii/',
+  },
+  {
+    label: d.title,
+    href: `/ekskursii/${d.slug}/`,
+  },
+];
+
 const roundedPrice = typeof d.priceFrom === 'number' ? Math.round(d.priceFrom) : null;
 const currencyPrefix = d.currency === 'USD' ? String.fromCharCode(36) : '';
 const money = roundedPrice && d.currency
@@ -80,6 +99,7 @@ const excursionSchema = {
   description={d.lead}
   image={d.hero?.src}
   pageSchema={excursionSchema}
+  breadcrumbs={excursionBreadcrumbs}
 >
   <Hero
     eyebrow="Экскурсия"

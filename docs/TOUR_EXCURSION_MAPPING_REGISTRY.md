@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.0  
+Версия: 1.1  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -27,7 +27,7 @@ Production excursions:
 
 Текущий рабочий проход идет **по уникализированным турам**, сверху вниз по строкам Google Sheets.
 
-Связь с канонической Excursion создается/фиксируется только тогда, когда самостоятельная экскурсия стоит **отдельным элементом маршрута между двумя пронумерованными днями**.
+Связь с канонической Excursion создается/фиксируется для **каждого самостоятельного элемента маршрута между двумя пронумерованными днями**. Это обязательный инвариант: самостоятельных текстовых карточек без целевой Excursion после завершения прохода оставаться не должно.
 
 Пример допустимой позиции:
 
@@ -45,6 +45,18 @@ Production excursions:
 - перед каким днем стоит экскурсия;
 - статус связи.
 
+Для каждого тура сначала считается:
+
+```text
+standalone_between_days = N
+mapped_relation_rows = M
+missing_slots = N - M
+```
+
+Тур нельзя считать полностью размеченным, пока `missing_slots != 0`.
+
+Если подходящая каноническая Excursion уже есть — использовать ее stable ID. Если отдельной Excursion раньше не существовало, нужно **сразу зарезервировать новый стабильный `excursion_id`**, добавить будущую Excursion в основной Google Sheets и записать связь с этим ID. Самостоятельную карточку нельзя оставлять «просто текстом без связи».
+
 ### Игнорировать в новом проходе
 
 Не создавать новую Tour↔Excursion связь, если экскурсия:
@@ -58,6 +70,8 @@ Production excursions:
 - встречается где-либо еще, где нет формализованной позиции **между днями**.
 
 Такие упоминания не считать совпадением и отдельно в реестр не заносить.
+
+Важно: это правило относится только к упоминаниям **внутри пронумерованного дня или других блоков**. Любой самостоятельный itinerary-item без `day`, стоящий между двумя днями, наоборот, обязан получить связь с Excursion.
 
 ### Историческое исключение — «Парк птиц»
 
@@ -81,8 +95,9 @@ URL:
 
 - `PENDING` — полный проход по экскурсиям этого тура еще не делался;
 - `IN_PROGRESS` — чат начал этот тур, но не завершил;
-- `DONE_RELATIONS` — тур полностью просмотрен, найдены и зафиксированы связи;
-- `DONE_NO_RELATIONS` — тур полностью просмотрен, подходящих самостоятельных экскурсий между днями нет;
+- `DONE_MAPPING` — тур полностью просмотрен; для каждого самостоятельного блока между днями определен канонический или заранее зарезервированный `excursion_id`; `missing_slots = 0`;
+- `DONE_LINKED` — все найденные связи уже реализованы в production через `excursionRef` и прошли build/deploy;
+- `DONE_NO_RELATIONS` — тур полностью просмотрен, самостоятельных блоков между днями нет;
 - `REVIEW` — есть неоднозначность, которую нельзя безопасно решить автоматически.
 
 ### Правило зависшего чата
@@ -91,7 +106,7 @@ URL:
 
 Если `IN_PROGRESS` нет, брать первый `PENDING` по возрастанию строки Google Sheets.
 
-После полного разбора тура статус обязательно меняется на `DONE_RELATIONS` или `DONE_NO_RELATIONS`.
+После полного разбора тура статус меняется на `DONE_MAPPING` или `DONE_NO_RELATIONS`. После фактической реализации всех `excursionRef` и успешного deploy — на `DONE_LINKED`.
 
 ## 3. Очередь уникализированных туров
 
@@ -101,7 +116,7 @@ URL:
 
 | Sheet row | Tour ID | Production file | Тур | Scan status | Найденные ранее связи | Последнее обновление |
 |---:|---|---|---|---|---:|---|
-| 75 | `tour_luxury_brazil_11d` | `src/content/tours/luxury-brazil-11d.md` | Роскошная Бразилия | PENDING | 1 | 2026-09-30 |
+| 75 | `tour_luxury_brazil_11d` | `src/content/tours/luxury-brazil-11d.md` | Роскошная Бразилия | DONE_MAPPING | 9 | 2026-09-30 |
 | 76 | `tour_brazil_argentina_peru_14d` | `src/content/tours/brazil-argentina-peru-14d.md` | Бразилия, Аргентина и Перу за 14 дней | PENDING | 0 | 2026-09-30 |
 | 77 | `tour_peru_8d` | `src/content/tours/peru-8d.md` | Перу за 8 дней: Лима, Куско, Мачу-Пикчу и Титикака | PENDING | 0 | 2026-09-30 |
 | 78 | `tour_brazil_sao_paulo_rio_ilha_paraty_12d` | `src/content/tours/brazil-sao-paulo-rio-ilha-paraty-12d.md` | Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати | PENDING | 1 | 2026-09-30 |
@@ -118,13 +133,21 @@ URL:
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | PENDING | 0 | 2026-09-30 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | PENDING | 0 | 2026-09-30 |
 
-**Следующий тур для полного прохода:** строка **75**, `tour_luxury_brazil_11d`.
+**Следующий тур для полного прохода:** строка **76**, `tour_brazil_argentina_peru_14d`.
 
 ## 4. Уже существующие Tour↔Excursion связи
 
 | Tour ID | Excursion ID | Положение | После дня | Перед днем | Статус | Примечание |
 |---|---|---|---:|---:|---|---|
+| `tour_luxury_brazil_11d` | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | between_days | 4 | 5 | MATCHED_TO_INSERT | Точное соответствие source excursion_detail, строка Sheets 711 |
+| `tour_luxury_brazil_11d` | `excursion_source_rio_nochyu` | between_days | 4 | 5 | MATCHED_TO_INSERT | Ночное сценическое шоу: самба/танцы, гид, опциональный ужин. Ближайшая каноническая source-экскурсия «Шоу мулаток», строка 627; `rio-nochyu-lapa` не подходит по содержанию |
+| `tour_luxury_brazil_11d` | `excursion_source_polet_na_vertolete_nad_rio` | between_days | 4 | 5 | MATCHED_TO_INSERT | Точное соответствие source excursion_detail, строка Sheets 626 |
+| `tour_luxury_brazil_11d` | `excursion_rio_caipirinha_masterclass` | between_days | 4 | 5 | NEW_ENTITY_TO_CREATE | Отдельной source excursion_detail не найдено. Stable ID зарезервирован; строка Sheets 731 |
+| `tour_luxury_brazil_11d` | `excursion_rio_churrasco_masterclass` | between_days | 4 | 5 | NEW_ENTITY_TO_CREATE | Отдельной source excursion_detail не найдено. Stable ID зарезервирован; строка Sheets 732 |
+| `tour_luxury_brazil_11d` | `excursion_source_botanical_garden` | between_days | 4 | 5 | MATCHED_TO_INSERT | Точное соответствие source excursion_detail, строка Sheets 622 |
+| `tour_luxury_brazil_11d` | `excursion_rio_sugarloaf_trekking` | between_days | 4 | 5 | NEW_ENTITY_TO_CREATE | Это именно треккинг/восхождение; не объединять с канатной дорогой `excursion_source_ekskursiya_na_sakharnuyu_golovu`. Stable ID зарезервирован; строка Sheets 733 |
 | `tour_luxury_brazil_11d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 6 | 7 | LINKED_EXISTING | Каноническая standalone-связь |
+| `tour_luxury_brazil_11d` | `excursion_source_makuko_safari` | between_days | 6 | 7 | MATCHED_TO_INSERT | Точное соответствие русской source excursion_detail, строка Sheets 694; вариант `makuko-safari-he` не использовать |
 | `tour_brazil_sao_paulo_rio_ilha_paraty_12d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 3 | 4 | LINKED_EXISTING | Каноническая standalone-связь |
 | `tour_brazil_adventure_17d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 7 | 8 | LINKED_EXISTING | Каноническая standalone-связь |
 | `tour_brazil_gems_14d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | legacy_inside_day | 12 | 13 | LINKED_EXISTING_LEGACY | В текущем `main` relation находится внутри `contentBlocks` дня 12. В предыдущем V2-аудите был сигнал о ложном marker-match; автоматически не менять в рамках нового прохода. |
@@ -150,10 +173,10 @@ Excursion ID
 
 - `LINKED_EXISTING` — связь уже реально есть в production;
 - `MATCHED_TO_INSERT` — каноническая Excursion найдена, позиция определена, production-связь еще не внесена;
-- `NEEDS_EXCURSION_ENTITY` — самостоятельная экскурсия между днями есть, но каноническая Excursion пока не найдена;
-- `REVIEW` — неоднозначное сопоставление.
+- `NEW_ENTITY_TO_CREATE` — отдельной канонической Excursion раньше не было; новый stable ID уже зарезервирован и строка будущей Excursion добавлена в основной реестр страниц;
+- `REVIEW` — неоднозначное сопоставление, которое пока не позволяет закрепить один `excursion_id`.
 
-Не придумывать новый Excursion ID, если подходящей канонической сущности нет.
+Если подходящей канонической сущности нет, нельзя оставлять слот без `excursion_id`: зарезервировать новый детерминированный stable ID, добавить плановую строку Excursion в Google Sheets и использовать этот ID в mapping-реестре.
 
 ## 6. Обязательный рабочий цикл одного тура
 
@@ -164,13 +187,16 @@ Excursion ID
 5. Прочитать текущий production MD тура целиком.
 6. Просмотреть последовательность `itinerary`.
 7. Рассматривать только самостоятельные элементы между двумя пронумерованными днями.
-8. Для каждого такого элемента попытаться найти каноническую сущность в `src/content/excursions/`.
-9. Если match надежный — добавить relation в раздел 4 и внести production-связь по принятой архитектуре.
-10. Если канонической Excursion нет — записать `NEEDS_EXCURSION_ENTITY`.
-11. Если подходящих элементов нет — это нормальный результат.
-12. После завершения поставить туру `DONE_RELATIONS` или `DONE_NO_RELATIONS`.
-13. Обновить дату и, если были GitHub-изменения, зафиксировать актуальный commit.
-14. Только после этого переходить к следующей строке.
+8. Посчитать все самостоятельные itinerary-item без `day` между пронумерованными днями: `standalone_between_days = N`.
+9. Для каждого элемента найти каноническую Excursion в основном Google Sheets / `src/content/excursions/`.
+10. Если match надежный — записать существующий stable ID.
+11. Если канонической Excursion нет — зарезервировать новый stable ID, добавить будущую Excursion в Google Sheets и записать `NEW_ENTITY_TO_CREATE`.
+12. Проверить `mapped_relation_rows = N` и `missing_slots = 0`.
+13. Если самостоятельных элементов нет — это нормальный результат и статус `DONE_NO_RELATIONS`.
+14. Если `missing_slots = 0` — поставить туру `DONE_MAPPING`.
+15. После фактической замены локальных карточек на `excursionRef`, создания недостающих Excursion и успешного deploy — `DONE_LINKED`.
+16. Обновить дату и commit.
+17. Только после этого переходить к следующей строке.
 
 ## 7. Что делать при появлении новых уникализированных туров
 

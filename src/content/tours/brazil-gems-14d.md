@@ -102,7 +102,7 @@ itinerary:
       
       После экскурсии возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/rio%20beach.png
+      - src: /media/tours/brazil-gems-14d/itinerary/day-03-enhanced-20261001.webp
         alt: "Рио-де-Жанейро и побережье"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -129,7 +129,7 @@ itinerary:
       
       Ночевка в Ору-Прету.
     images:
-      - src: https://brasiltours.ru/image/Ouro%20Preto.png
+      - src: /media/tours/brazil-gems-14d/itinerary/day-04-enhanced-20261001.webp
         alt: "Ору-Прету, Бразилия"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -156,7 +156,7 @@ itinerary:
       
       Ночевка в Ору-Прету.
     images:
-      - src: https://brasiltours.ru/image/oru%20pretu.png
+      - src: /media/tours/brazil-gems-14d/itinerary/day-05-enhanced-20261001.webp
         alt: "Исторический Ору-Прету"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -186,7 +186,7 @@ itinerary:
       
       По прибытии встреча, трансфер и размещение в отеле.
     images:
-      - src: https://brasiltours.ru/image/Ouro%20Preto.png
+      - src: /media/tours/brazil-gems-14d/itinerary/day-04-enhanced-20261001.webp
         alt: "Ору-Прету перед поездкой в Иньотим"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -207,7 +207,7 @@ itinerary:
       
       После экскурсии трансфер в Прайя-ду-Форте только с водителем.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg
+      - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
         alt: "Сальвадор, Бразилия"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -220,7 +220,7 @@ itinerary:
       
       Это курорт с пляжами, кокосовыми и мангровыми рощами, теплой океанской водой и участками мелкого золотистого песка.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+      - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
         alt: "Побережье Баии и Прайя-ду-Форте"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -233,7 +233,7 @@ itinerary:
       
       С июня по октябрь у побережья иногда видны киты.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+      - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
         alt: "Прайя-ду-Форте, Бразилия"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -246,7 +246,7 @@ itinerary:
       
       Эти дни оставлены без жесткой экскурсионной программы, чтобы можно было отдыхать у океана, купаться и самостоятельно выбирать занятия.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+      - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
         alt: "Пляжный отдых в Прайя-ду-Форте"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -261,7 +261,7 @@ itinerary:
       
       По прибытии встреча и трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bra-praia-da-pipa-1.jpg
+      - src: /media/tours/brazil-gems-14d/itinerary/day-11-enhanced-20261001.webp
         alt: "Побережье перед перелетом в Фоз-ду-Игуасу"
         intendedSlot: "itinerary:day-11"
   - day: 12
@@ -301,7 +301,7 @@ itinerary:
       - type: text
         text: "Возвращение в отель."
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0025.jpg
+      - src: /media/tours/brazil-gems-14d/itinerary/day-12-enhanced-20261001.webp
         alt: "Бразильская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-12"
   - day: 13
@@ -328,7 +328,7 @@ itinerary:
       
       После экскурсии возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/BRA%20FOZ%201.png
+      - src: /media/tours/brazil-gems-14d/itinerary/day-13-enhanced-20261001.webp
         alt: "Водопады Игуасу"
         intendedSlot: "itinerary:day-13"
   - day: 14
@@ -340,7 +340,7 @@ itinerary:
       
       Вылет домой.
     images:
-      - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+      - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
         alt: "Фоз-ду-Игуасу, Бразилия"
         intendedSlot: "itinerary:day-14"
 included:

@@ -12,7 +12,7 @@ destination: destination_brazil_rio
 themes: [adventure, city]
 language: []
 hero:
-  src: /media/excursions/polet-na-vertolete-nad-rio/hero.webp
+  src: /media/excursions/polet-na-vertolete-nad-rio/hero-enhanced-20261001.webp
   alt: Полет на вертолете над Рио-де-Жанейро
 gallery: []
 route:

@@ -62,7 +62,7 @@ itinerary:
       
       *Лодочная экскурсия проводится только в сезон дождей. Если провести ее невозможно, она заменяется джип-туром.*
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bonito-blue-cave.jpg
+      - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
         alt: "Пещера Голубого озера в Бонито"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -81,7 +81,7 @@ itinerary:
       
       После экскурсии возвращение в отель на ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bonito-tubie.jpg
+      - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-02-enhanced-20261001.webp
         alt: "Природа Пантанала"
         intendedSlot: "itinerary:day-2"
   - day: 3

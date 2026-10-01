@@ -100,7 +100,7 @@ itinerary:
       
       Один из главных участков программы - поездка на экологическом поезде и пеший маршрут к смотровой площадке «Глотка дьявола», откуда открывается вид на самый мощный и полноводный каскад комплекса. В сочетании с предыдущим днем эта экскурсия позволяет увидеть Игуасу и как единую панораму, и с дорожек внутри самой системы водопадов.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bra-foz-right.jpg
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
         alt: "Аргентинская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -109,7 +109,7 @@ itinerary:
     text: |-
       Завтрак, трансфер в аэропорт и перелет в Рио-де-Жанейро. По прибытии - трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
         alt: "Панорама Рио-де-Жанейро"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -123,7 +123,7 @@ itinerary:
       
       Со смотровых площадок открываются виды на Копакабану, залив, острова, мост Нитерой и Корковадо. После спуска поездка продолжается по старому центру Рио, где находятся исторические церкви, монастыри, кафедральный собор и здания колониального периода.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/f/i/file_54_35.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-06-enhanced-20261001.webp
         alt: "Сахарная Голова и панорама Рио-де-Жанейро"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -134,7 +134,7 @@ itinerary:
       
       Со смотровой площадки видны залив Гуанабара, мост Нитерой, Ботанический сад, стадион Маракана и Сахарная Голова.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/c/o/corcovado_6.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-07-enhanced-20261001.webp
         alt: "Корковадо и панорама Рио-де-Жанейро"
         intendedSlot: "itinerary:day-7"
   - excursionRef: excursion_source_polet_na_vertolete_nad_rio
@@ -150,7 +150,7 @@ itinerary:
       
       На острове нет автомобилей. Основная часть территории покрыта тропической растительностью, а вдоль побережья находятся пляжи и небольшие бухты. Передвижение строится вокруг лодок и пеших маршрутов, поэтому после Рио темп путешествия заметно меняется. Здесь меньше городского шума, а основными ориентирами становятся причалы, лесные склоны, пляжи и вода между островами.
     images:
-      - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
         alt: "Рио-де-Жанейро перед переездом на Илья-Гранди"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -164,7 +164,7 @@ itinerary:
       
       Шхуна делает остановки для купания. Прогулка проходит без гида и оставляет достаточно времени у воды, поэтому этот день целиком посвящен морю и островному побережью. В отличие от предыдущих городских дней здесь нет плотной экскурсионной программы: главными становятся бухты, зеленые островки и остановки в море.
     images:
-      - src: https://brasiltours.ru/image/ilh%20grd.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-09-enhanced-20261001.webp
         alt: "Илья-Гранди, Бразилия"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -183,7 +183,7 @@ itinerary:
       
       Сегодня это небольшой курортный город, где прогулки по старым улицам можно совмещать с отдыхом на побережье. Каменные улицы исторического центра проходят между невысокими домами с цветными дверями и окнами, а за пределами старой застройки начинаются зеленые склоны Атлантического леса и пляжи. Поэтому Парати в этом маршруте работает сразу как историческая остановка и база для поездок к морю.
     images:
-      - src: https://brasiltours.ru/image/ilha%20grande.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-10-enhanced-20261001.webp
         alt: "Илья-Гранди на пути в Парати"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -202,7 +202,7 @@ itinerary:
       
       Далее начинается тропа к пляжу Cachadaco. Пеший участок занимает около 40 минут и имеет среднюю сложность. Финальная точка - природный бассейн Caixa D'aco, окруженный скалами. Здесь можно купаться и заниматься снорклингом, наблюдая за рыбами и другой морской фауной.
     images:
-      - src: https://brasiltours.ru/image/Paraty.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
         alt: "Парати, Бразилия"
         intendedSlot: "itinerary:day-11"
   - day: 12

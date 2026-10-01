@@ -77,19 +77,10 @@ itinerary:
       - src: https://brasiltours.ru/image/countries/argentina/buenos.jpg
         alt: "Буэнос-Айрес, свободный день"
         intendedSlot: "itinerary:day-3"
-  - title: "Тигре и северная зона"
+  - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
     places:
       - "Тигре"
       - "Сан-Исидро"
-    text: |-
-      Поездка из Буэнос-Айреса в город Тигре занимает около 1 часа. Здесь вы пересядете на туристическую лодку и отправитесь по дельте и ее островам. Во время прогулки гид расскажет о жизни островитян, их обычаях и быте.
-      
-      
-      На обратном пути в Буэнос-Айрес маршрут проходит через северные пригороды с частными резиденциями, район Сан-Исидро и мимо президентской резиденции Кинта-де-Оливос.
-    images:
-      - src: https://brasiltours.ru/image/countries/argentina/excursiya-tigre-2.jpg
-        alt: "Тигре и дельта Параны"
-        intendedSlot: "itinerary:extra-1"
   - title: "Фиеста гаучо на ранчо Санта-Сусана"
     places:
       - "Буэнос-Айрес"

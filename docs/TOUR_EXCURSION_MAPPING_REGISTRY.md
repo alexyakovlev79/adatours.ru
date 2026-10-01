@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.18  
+Версия: 1.19  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -163,8 +163,8 @@ missing_excursion_entities = 0
 | 79 | `tour_brazil_adventure_17d` | `src/content/tours/brazil-adventure-17d.md` | Большое приключение по Бразилии за 17 дней | DONE_LINKED | 3 | 2026-10-01 |
 | 80 | `tour_brazil_pantanal_bonito_lencois_8d` | `src/content/tours/pantanal-bonito-lencois-8d.md` | Пантанал, Бонито и Ленсойс-Мараньенсес за 8 дней | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 81 | `tour_brazil_recife_porto_noronha_10d` | `src/content/tours/brazil-northeast-recife-porto-noronha-10d.md` | Северо-восток Бразилии: Ресифи, Порту-ди-Галиньяш и Фернанду-ди-Норонья за 10 дней | DONE_NO_RELATIONS | 0 | 2026-10-01 |
-| 82 | `tour_brazil_gems_14d` | `src/content/tours/brazil-gems-14d.md` | Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-ду-Форте и Игуасу | IN_PROGRESS | 1 | 2026-10-01 |
-| 83 | `tour_brazil_dunes_13d` | `src/content/tours/brazil-dunes-13d.md` | Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа | IN_PROGRESS | 1 | 2026-10-01 |
+| 82 | `tour_brazil_gems_14d` | `src/content/tours/brazil-gems-14d.md` | Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-ду-Форте и Игуасу | DONE_LINKED | 2 | 2026-10-01 |
+| 83 | `tour_brazil_dunes_13d` | `src/content/tours/brazil-dunes-13d.md` | Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа | DONE_LINKED | 2 | 2026-10-01 |
 | 84 | `tour_argentina_brazil_pipa_11d` | `src/content/tours/argentina-brazil-pipa-11d.md` | Аргентина и Бразилия за 11 дней | DONE_LINKED | 3 | 2026-10-01 |
 | 85 | `tour_brazil_south_12d` | `src/content/tours/south-brazil-12d.md` | Южная Бразилия за 12 дней: Рио, Игуасу, Грамаду, каньоны и Флорианополис | DONE_LINKED | 3 | 2026-10-01 |
 | 286 | `tour_source_tur_v_surinam_dlya_nablyudeniya_za_pticami` | `src/content/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami.md` | Орнитологический тур в Суринам на 8 дней | PENDING | 0 | 2026-09-30 |
@@ -173,7 +173,13 @@ missing_excursion_entities = 0
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | PENDING | 0 | 2026-09-30 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | PENDING | 0 | 2026-09-30 |
 
-**Следующий повторный проход v1.1:** строка **82**, `tour_brazil_gems_14d`.
+**Следующий повторный проход v1.1:** строка **84**, `tour_argentina_brazil_pipa_11d`.
+
+### Повторная проверка v1.1 — строки 82–83, 2026-10-01
+
+- **Строка 82 / `tour_brazil_gems_14d`:** в дне 12 были 2 самостоятельные экскурсии, ошибочно оставленные внутри numbered day: «Макуко Сафари» как локальная section и «Парк птиц» как embedded `excursionRef`. Обе вынесены отдельными карточками после дня 12 в исходном порядке: сначала `excursion_source_makuko_safari`, затем `excursion_source_park_jekzoticheskih_ptic_v_iguasu`. Дублирующий текст удален, 14 numbered days сохранены. Инварианты: `standalone_between_days = 2`, `production_excursion_refs = 2`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`.
+- **Строка 83 / `tour_brazil_dunes_13d`:** «Парк птиц» извлечен из `contentBlocks` дня 5 и вынесен отдельной карточкой после дня 5. В дне 7 обнаружена самостоятельная дополнительная ознакомительная экскурсия по Сан-Луису: около 3 часов, англоговорящий гид, собственный описательный блок в V2/original. Отдельной канонической Excursion в основном реестре не было, поэтому создана `excursion_sao_luis_intro_city_tour`, добавлена в production и Google Sheets и связана после дня 7. 13 numbered days сохранены. Инварианты: `standalone_between_days = 2`, `production_excursion_refs = 2`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`.
+- Production commit `9441168e161fe62680363a62af9911514f3a91bd`: build = success, deploy = success. Hero новой экскурсии переиспользует уже улучшенный asset Сан-Луиса и хранится в каноническом media-path Excursion.
 
 ### Повторная проверка v1.1 — строки 80–81, 2026-10-01
 
@@ -220,8 +226,10 @@ missing_excursion_entities = 0
 | `tour_brazil_adventure_17d` | `excursion_source_makuko_safari` | between_days | 7 | 8 | LINKED_EXISTING | Сопоставлено с существующей канонической Excursion `makuko-safari`; локальная карточка удалена из тура. |
 | `tour_brazil_adventure_17d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 7 | 8 | LINKED_EXISTING | Каноническая standalone-связь |
 | `tour_brazil_adventure_17d` | `excursion_brazil_bonito_abismo_anhumas` | between_days | 12 | 13 | LINKED_EXISTING | Production Excursion создана из standalone-блока тура; строка Sheets 737. Для hero без перекодирования использован уже улучшенный Abismo Anhumas image blob из highlights этого тура, скопированный в `/media/excursions/abismo-anhumas/hero.webp`. |
-| `tour_brazil_gems_14d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | legacy_inside_day | 12 | 13 | LINKED_EXISTING_LEGACY | В текущем `main` relation находится внутри `contentBlocks` дня 12. В предыдущем V2-аудите был сигнал о ложном marker-match; автоматически не менять в рамках нового прохода. |
-| `tour_brazil_dunes_13d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | legacy_inside_day | 5 | 6 | LINKED_EXISTING_LEGACY | Внутри `contentBlocks` дня 5; историческое исключение |
+| `tour_brazil_gems_14d` | `excursion_source_makuko_safari` | between_days | 12 | 13 | LINKED_EXISTING | v1.1: самостоятельный блок «Макуко-сафари» извлечен из `contentBlocks` дня 12; используется существующая каноническая Excursion. |
+| `tour_brazil_gems_14d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 12 | 13 | LINKED_EXISTING | v1.1: прежняя `legacy_inside_day` связь извлечена из дня 12 и нормализована в отдельную карточку между днями 12 и 13. |
+| `tour_brazil_dunes_13d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 5 | 6 | LINKED_EXISTING | v1.1: прежняя `legacy_inside_day` связь извлечена из дня 5 и нормализована в отдельную карточку между днями 5 и 6. |
+| `tour_brazil_dunes_13d` | `excursion_sao_luis_intro_city_tour` | between_days | 7 | 8 | LINKED_EXISTING | v1.1: ознакомительная экскурсия по Сан-Луису (около 3 часов, англоговорящий гид) извлечена из дня 7. Отдельной source excursion_detail не найдено; production Excursion создана из V2/original и добавлена в Sheets строкой 743. |
 | `tour_brazil_south_12d` | `excursion_source_polet_na_vertolete_nad_rio` | between_days | 3 | 4 | LINKED_EXISTING | Точный match по V2/original: standalone-полет над Рио после дня 3; локальная карточка заменена на существующую каноническую Excursion. |
 | `tour_brazil_south_12d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 4 | 5 | LINKED_EXISTING | Извлечена из `contentBlocks` дня 4 в отдельную карточку между днями 4 и 5; дублирующее описание внутри дня удалено. |
 | `tour_brazil_south_12d` | `excursion_source_makuko_safari` | between_days | 4 | 5 | LINKED_EXISTING | Извлечена из текста дня 4 в отдельную карточку между днями 4 и 5; используется существующая каноническая Excursion `makuko-safari`. |

@@ -24,6 +24,8 @@ included:
   - Ужин
 notIncluded: []
 notes: []
+sourceUrl: https://brasiltours.ru/tango-shou-v-buenos-ajrese
+sourceSnapshot: page_texts_newstep/Excursions/tango-shou-v-buenos-ajrese__f0fe36bb.md
 updatedAt: 2026-10-01
 ---
 

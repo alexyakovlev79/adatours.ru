@@ -24,11 +24,9 @@ hero:
 gallery:
   - src: /media/excursions/khram-pachakamak/gallery-1.jpg
     alt: Руины археологического комплекса Пачакамак
-  - src: /media/excursions/khram-pachakamak/gallery-2.jpg
-    alt: Археологическая зона Пачакамак
-  - src: /media/excursions/khram-pachakamak/gallery-3.png
+  - src: /media/excursions/khram-pachakamak/gallery-2.png
     alt: Лима, столица Перу
-  - src: /media/excursions/khram-pachakamak/gallery-4.png
+  - src: /media/excursions/khram-pachakamak/gallery-3.png
     alt: Вид на Лиму
 route:
   - Лима

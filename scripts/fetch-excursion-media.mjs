@@ -275,18 +275,13 @@ const files = [
     referer: 'https://brasiltours.ru/khram-pachakamak',
   },
   {
-    url: 'https://brasiltours.ru/image/countries/peru/jeison-higuita-kd9assbyz3q-unsplash.jpg',
-    path: 'public/media/excursions/khram-pachakamak/gallery-2.jpg',
-    referer: 'https://brasiltours.ru/khram-pachakamak',
-  },
-  {
     url: 'https://brasiltours.ru/image/countries/peru/lima-2.png',
-    path: 'public/media/excursions/khram-pachakamak/gallery-3.png',
+    path: 'public/media/excursions/khram-pachakamak/gallery-2.png',
     referer: 'https://brasiltours.ru/khram-pachakamak',
   },
   {
     url: 'https://brasiltours.ru/image/countries/peru/lima-3.png',
-    path: 'public/media/excursions/khram-pachakamak/gallery-4.png',
+    path: 'public/media/excursions/khram-pachakamak/gallery-3.png',
     referer: 'https://brasiltours.ru/khram-pachakamak',
   },
 

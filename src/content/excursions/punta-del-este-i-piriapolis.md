@@ -16,7 +16,7 @@ language:
   - английский
 priceFrom: 953
 currency: USD
-priceNote: "Основная стоимость — $953. Для группы из 2–4 человек в source также указано $477 на человека."
+priceNote: "Основная стоимость — $953. Для группы из 2–4 человек — $477 на человека."
 hero:
   src: /media/excursions/punta-del-este-i-piriapolis/hero.jpg
   alt: Пунта-дель-Эсте, Уругвай

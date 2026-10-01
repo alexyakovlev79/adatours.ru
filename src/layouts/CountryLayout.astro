@@ -19,6 +19,7 @@ const countryTourTarget = ({
   country_antarctica: 'Антарктиду',
   country_bolivia: 'Боливию',
   country_venezuela: 'Венесуэлу',
+  country_guyana: 'Гайану',
 } as Record<string, string>)[d.id] ?? d.name;
 
 const [destinationEntries, tourEntries, excursionEntries, themeEntries] = await Promise.all([

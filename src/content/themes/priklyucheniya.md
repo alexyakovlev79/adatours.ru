@@ -15,6 +15,7 @@ featuredCountries:
   - country_peru
   - country_bolivia
   - country_venezuela
+  - country_guyana
 sourceUrl: https://brasiltours.ru/priklyucheniya
 sourceSnapshot: page_texts_original/priklyucheniya__9d8e52e1.md
 updatedAt: 2026-10-02

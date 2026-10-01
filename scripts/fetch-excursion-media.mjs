@@ -223,6 +223,47 @@ const files = [
     referer: 'https://brasiltours.ru/siti-tur-v-bogote',
   },
 
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/starij-rio1920.jpg',
+    path: 'public/media/excursions/tajny-starogo-rio-de-zhanejro/hero.jpg',
+    referer: 'https://brasiltours.ru/tajny-starogo-rio-de-zhanejro',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/bra-rio-de-janeiro1.jpg',
+    path: 'public/media/excursions/tajny-starogo-rio-de-zhanejro/gallery-1.jpg',
+    referer: 'https://brasiltours.ru/tajny-starogo-rio-de-zhanejro',
+  },
+  {
+    url: 'https://brasiltours.ru/image/Río_de_Janeiro%20teatre.png',
+    path: 'public/media/excursions/tajny-starogo-rio-de-zhanejro/gallery-2.png',
+    referer: 'https://brasiltours.ru/tajny-starogo-rio-de-zhanejro',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-24-12-49-54-294.jpg',
+    path: 'public/media/excursions/tajny-starogo-rio-de-zhanejro/gallery-3.jpg',
+    referer: 'https://brasiltours.ru/tajny-starogo-rio-de-zhanejro',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/bohemian-lapa.png',
+    path: 'public/media/excursions/tajny-starogo-rio-de-zhanejro/gallery-4.png',
+    referer: 'https://brasiltours.ru/tajny-starogo-rio-de-zhanejro',
+  },
+  {
+    url: 'https://brasiltours.ru/image/lapa%20at%20ni.11png.png',
+    path: 'public/media/excursions/tajny-starogo-rio-de-zhanejro/gallery-5.png',
+    referer: 'https://brasiltours.ru/tajny-starogo-rio-de-zhanejro',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-25-11-49-25-590.jpg',
+    path: 'public/media/excursions/tajny-starogo-rio-de-zhanejro/gallery-6.jpg',
+    referer: 'https://brasiltours.ru/tajny-starogo-rio-de-zhanejro',
+  },
+  {
+    url: 'https://brasiltours.ru/image/riogid/gid-images/9/file_6.jpg',
+    path: 'public/media/excursions/tajny-starogo-rio-de-zhanejro/gallery-7.jpg',
+    referer: 'https://brasiltours.ru/tajny-starogo-rio-de-zhanejro',
+  },
+
 ];
 
 for (const file of files) {

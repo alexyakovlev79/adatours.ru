@@ -133,6 +133,47 @@ const files = [
     referer: 'https://brasiltours.ru/kanon-kolka-i-polet-kondora',
   },
 
+  {
+    url: 'https://brasiltours.ru/image/countries/uruguay/montevideo-1680.jpg',
+    path: 'public/media/excursions/peshij-tur-po-istoricheskomu-tsentru/hero.jpg',
+    referer: 'https://brasiltours.ru/peshij-tur-po-istoricheskomu-tsentru',
+  },
+  {
+    url: 'https://brasiltours.ru/image/montevid11.png',
+    path: 'public/media/excursions/peshij-tur-po-istoricheskomu-tsentru/gallery-1.png',
+    referer: 'https://brasiltours.ru/peshij-tur-po-istoricheskomu-tsentru',
+  },
+  {
+    url: 'https://brasiltours.ru/image/Uruguay%20Montevideo.jpg',
+    path: 'public/media/excursions/peshij-tur-po-istoricheskomu-tsentru/gallery-2.jpg',
+    referer: 'https://brasiltours.ru/peshij-tur-po-istoricheskomu-tsentru',
+  },
+  {
+    url: 'https://brasiltours.ru/image/montevideo3jpg.png',
+    path: 'public/media/excursions/peshij-tur-po-istoricheskomu-tsentru/gallery-3.png',
+    referer: 'https://brasiltours.ru/peshij-tur-po-istoricheskomu-tsentru',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/uruguay/2.jpg',
+    path: 'public/media/excursions/punta-del-este-i-piriapolis/hero.jpg',
+    referer: 'https://brasiltours.ru/punta-del-este-i-piriapolis',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/uruguay/pirapolis.jpg',
+    path: 'public/media/excursions/punta-del-este-i-piriapolis/gallery-1.jpg',
+    referer: 'https://brasiltours.ru/punta-del-este-i-piriapolis',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/uruguay/castelo-pirapol.jpg',
+    path: 'public/media/excursions/punta-del-este-i-piriapolis/gallery-2.jpg',
+    referer: 'https://brasiltours.ru/punta-del-este-i-piriapolis',
+  },
+  {
+    url: 'https://brasiltours.ru/image/punta-del-este-18072018-339787.png',
+    path: 'public/media/excursions/punta-del-este-i-piriapolis/gallery-3.png',
+    referer: 'https://brasiltours.ru/punta-del-este-i-piriapolis',
+  },
+
 ];
 
 for (const file of files) {

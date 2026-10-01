@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.24  
+Версия: 1.25  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -171,9 +171,14 @@ missing_excursion_entities = 0
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
-| 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | PENDING | 0 | 2026-09-30 |
+| 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка **416**, `tour_source_wedding_ceremony_tropical_package`.
+**Следующий проход v1.1:** очередь текущих туров со статусом `Уникализировано` закрыта. Перед новым проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 416, 2026-10-01
+
+- **Строка 416 / `tour_source_wedding_ceremony_tropical_package`:** сверены production, V2 и original. Страница представляет однодневный свадебный пакет без itinerary по дням; `excursionRef = 0`, самостоятельных дополнительных Excursion и embedded excursion-модулей в источниках нет. Итог: `DONE_NO_RELATIONS`.
+- Повторно проверен основной Google Sheets по условию `Тип страницы = Тур` + `Статус = Уникализировано`: новых Tour ID сверх уже внесенных в этот registry не найдено. Текущая очередь полностью закрыта.
 
 ### Проверка v1.1 — строки 410–411, 2026-10-01
 

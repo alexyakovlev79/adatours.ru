@@ -5,7 +5,7 @@ title: "Пешая экскурсия по историческому центр
 slug: peshij-tur-po-istoricheskomu-tsentru
 status: approved
 searchAliases:
-  - Монтевидео: Пеший тур по Историческому центру
+  - "Монтевидео: Пеший тур по Историческому центру"
   - Пешеходная экскурсия по Монтевидео
   - Старый город Монтевидео
 country: country_uruguay
@@ -16,7 +16,7 @@ language:
   - английский
 priceFrom: 280
 currency: USD
-priceNote: "Основная стоимость — $280. Для группы из 2–4 человек в source также указано $141 на человека."
+priceNote: "Основная стоимость — $280. Для группы из 2–4 человек — $141 на человека."
 hero:
   src: /media/excursions/peshij-tur-po-istoricheskomu-tsentru/hero.jpg
   alt: Исторический центр Монтевидео, Уругвай

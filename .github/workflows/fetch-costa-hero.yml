@@ -1,0 +1,32 @@
+name: Fetch Costa hero source
+
+on:
+  push:
+    paths:
+      - ".github/workflows/fetch-costa-hero.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch exact source hero
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          curl --fail --location --retry 3 --retry-delay 2 \
+            "https://brasiltours.ru/image/cache/countries/costa-rica/novye-foto/oblozhki/la-fortuna-1920x1080.webp" \
+            --output out/hero.webp
+          test -s out/hero.webp
+          file out/hero.webp
+          sha256sum out/hero.webp
+      - name: Upload hero artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: costa-rica-source-hero
+          path: out/hero.webp
+          if-no-files-found: error
+          retention-days: 1

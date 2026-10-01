@@ -20,11 +20,11 @@ hero:
   src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
   alt: Горный маршрут из Мендосы в Анды
 gallery:
-  - src: https://brasiltours.ru/image/mendoza%201.png
+  - src: /media/excursions/mendosa-tur-v-gory/gallery-1-enhanced-20261001.webp
     alt: Горный пейзаж в окрестностях Мендосы
-  - src: https://brasiltours.ru/image/mendoza%20valley1.png
+  - src: /media/excursions/mendosa-tur-v-gory/gallery-2-enhanced-20261001.webp
     alt: Долина и горы в районе Мендосы
-  - src: https://brasiltours.ru/image/mendoza-004.jpg
+  - src: /media/excursions/mendosa-tur-v-gory/gallery-3-enhanced-20261001.webp
     alt: Пейзаж горного маршрута из Мендосы
 route:
   - Мендоса

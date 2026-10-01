@@ -19,18 +19,18 @@ priceFrom: 260
 currency: USD
 priceNote: "Основная стоимость — $260. Для группы из 2 человек — $144 на человека, из 3 человек — $106, из 4 человек — $88; групповой тариф — $88 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/peru/lima-3.png
+  src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/hero-enhanced-20261001.webp
   alt: Лима, столица Перу
 gallery:
-  - src: https://brasiltours.ru/image/countries/peru/water-park-lima.jpg
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-1-enhanced-20261001.webp
     alt: Волшебный круговорот воды в Парке-де-ла-Ресерва
-  - src: https://brasiltours.ru/image/Lima.png
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
     alt: Лима, Перу
   - src: https://brasiltours.ru/image/lima%20larko.png
     alt: Музей Ларко в Лиме
   - src: https://brasiltours.ru/image/lima.png
     alt: Городской пейзаж Лимы
-  - src: https://brasiltours.ru/image/countries/peru/water-tour-lima.jpg
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-5-enhanced-20261001.webp
     alt: Фонтаны Парка-де-ла-Ресерва
 route:
   - Лима

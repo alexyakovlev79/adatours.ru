@@ -19,12 +19,12 @@ priceFrom: 600
 currency: USD
 priceNote: "Основная стоимость — $600. Для группы из 2 человек — $330 на человека, из 3 человек — $240, из 4 человек — $218."
 hero:
-  src: /media/excursions/ostrov-santa-krus/hero.png
+  src: /media/excursions/ostrov-santa-krus/hero-enhanced-20261001.webp
   alt: Галапагосские острова, остров Санта-Крус в Эквадоре
 gallery:
-  - src: /media/excursions/ostrov-santa-krus/gallery-1.png
+  - src: /media/excursions/ostrov-santa-krus/gallery-1-enhanced-20261001.webp
     alt: Остров Санта-Крус на Галапагосах
-  - src: /media/excursions/ostrov-santa-krus/gallery-2.png
+  - src: /media/excursions/ostrov-santa-krus/gallery-2-enhanced-20261001.webp
     alt: Природа острова Санта-Крус
 route:
   - Балтра

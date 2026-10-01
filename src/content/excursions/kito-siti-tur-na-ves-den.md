@@ -18,16 +18,16 @@ priceFrom: 330
 currency: USD
 priceNote: "Стоимость экскурсии — $330. Стоимость тура на 1 человека с русскоговорящим гидом — $525."
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/5.jpg
+  src: /media/excursions/kito-siti-tur-na-ves-den/hero-enhanced-20261001.webp
   alt: Исторический центр Кито в Эквадоре
 gallery:
-  - src: https://brasiltours.ru/image/countries/equador/quito.jpg
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-1-enhanced-20261001.webp
     alt: Панорама Кито
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-right-1.jpg
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-2-enhanced-20261001.webp
     alt: Исторический центр Кито
-  - src: https://brasiltours.ru/image/countries/equador/quito1.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-3-enhanced-20261001.webp
     alt: Архитектура Кито
-  - src: https://brasiltours.ru/image/countries/equador/quito.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
     alt: Вид на Кито
 route:
   - Кито

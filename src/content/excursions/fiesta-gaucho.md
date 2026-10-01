@@ -19,15 +19,15 @@ hero:
   src: /media/excursions/fiesta-gaucho/hero-enhanced-20260930.webp
   alt: Аргентинский гаучо с лошадью
 gallery:
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_187_19.jpg
+  - src: /media/excursions/fiesta-gaucho/gallery-1-enhanced-20261001.webp
     alt: Гаучо верхом на лошади
-  - src: https://brasiltours.ru/image/catalog/product/2/4/2499724771_af2635fc69_o.jpg
+  - src: /media/excursions/fiesta-gaucho/gallery-2-enhanced-20261001.webp
     alt: Соревнование гаучо
-  - src: https://brasiltours.ru/image/catalog/product/4/4/446138435_95e9b0d46e.jpg
+  - src: /media/excursions/fiesta-gaucho/gallery-3-enhanced-20261001.webp
     alt: Шоу гаучо в Аргентине
-  - src: https://brasiltours.ru/image/catalog/product/f/i/fiesta-de-la-patria-gaucha.jpg
+  - src: /media/excursions/fiesta-gaucho/gallery-4-enhanced-20261001.webp
     alt: Конное мастерство аргентинских гаучо
-  - src: https://brasiltours.ru/image/catalog/product/f/i/fiesta-gaucha-1.jpg
+  - src: /media/excursions/fiesta-gaucho/gallery-5-enhanced-20261001.webp
     alt: Гости на аргентинском ранчо
 route:
   - Буэнос-Айрес

@@ -19,6 +19,7 @@ themes:
 relatedDestinations:
   - destination_peru_cusco
   - destination_peru_lima
+  - destination_peru_arekipa
 featuredTours: []
 featuredExcursions: []
 facts:
@@ -43,7 +44,7 @@ featureBands:
     image: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-inkov-machu-pikchu-v-peru
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-inkov-machu-pikchu-v-peru__75c9afab.md
-updatedAt: 2026-09-24
+updatedAt: 2026-10-02
 ---
 
 Мачу-Пикчу – инкская цитадель XV века, связанная с именем правителя Пачакутека. Комплекс входит в Список Всемирного наследия ЮНЕСКО.

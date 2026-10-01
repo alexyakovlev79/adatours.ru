@@ -19,6 +19,7 @@ themes:
 relatedDestinations:
   - destination_peru_lima
   - destination_peru_machu_picchu
+  - destination_peru_arekipa
 featuredTours: []
 featuredExcursions: []
 facts:
@@ -43,7 +44,7 @@ featureBands:
     image: /media/destinations/cusco/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kusko-v-peru
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-kusko-v-peru__f2854c27.md
-updatedAt: 2026-09-24
+updatedAt: 2026-10-02
 ---
 
 Куско был столицей империи инков. В городе сохранилось характерное сочетание инкской и испанской архитектуры: многие здания колониального периода появились на месте более ранних культовых и административных сооружений.

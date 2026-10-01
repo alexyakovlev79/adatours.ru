@@ -12,7 +12,7 @@ destination: destination_brazil_buzios
 themes: []
 language: []
 hero:
-  src: /media/excursions/morskaya-progulka-po-buziosu/hero.webp
+  src: /media/excursions/morskaya-progulka-po-buziosu/hero-enhanced-20261001.webp
   alt: Бухта Бузиоса с яхтами
 gallery: []
 route:

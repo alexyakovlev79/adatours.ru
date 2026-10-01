@@ -12,7 +12,7 @@ destination: destination_argentina_buenos_aires
 themes: []
 language: []
 hero:
-  src: /media/excursions/tango-shou-s-uzhinom-v-buenos-ajrese/hero.webp
+  src: /media/excursions/tango-shou-s-uzhinom-v-buenos-ajrese/hero-enhanced-20261001.webp
   alt: Танго в Буэнос-Айресе
 gallery: []
 route:

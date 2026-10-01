@@ -16,7 +16,7 @@ priceFrom: 50
 currency: USD
 priceNote: "Стоимость посещения — $50 на человека."
 hero:
-  src: /media/excursions/muzej-larko-lima/hero.webp
+  src: /media/excursions/muzej-larko-lima/hero-enhanced-20261001.webp
   alt: Музей Ларко в Лиме
 gallery: []
 route:

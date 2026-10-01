@@ -13,7 +13,7 @@ themes: []
 duration: 19:00–22:00
 language: []
 hero:
-  src: /media/excursions/folklornoe-shou-s-uzhinom-v-lime/hero.webp
+  src: /media/excursions/folklornoe-shou-s-uzhinom-v-lime/hero-enhanced-20261001.webp
   alt: Лима, Перу
 gallery: []
 route:

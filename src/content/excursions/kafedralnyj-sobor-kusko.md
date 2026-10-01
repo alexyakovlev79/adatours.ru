@@ -16,7 +16,7 @@ priceFrom: 20
 currency: USD
 priceNote: "Стоимость экскурсии — $20."
 hero:
-  src: /media/excursions/kafedralnyj-sobor-kusko/hero.webp
+  src: /media/excursions/kafedralnyj-sobor-kusko/hero-enhanced-20261001.webp
   alt: Куско, Перу
 gallery: []
 route:

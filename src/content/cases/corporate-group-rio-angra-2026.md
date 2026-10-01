@@ -14,7 +14,7 @@ groupSize: около 30 человек
 year: 2026
 nda: true
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/jaume-galofre-g8jgfpsexfq-unsplash.jpg
+  src: /media/destinations/angra-dos-reis/hero-enhanced-20261001.webp
   alt: Побережье Ангра-дус-Рейш, Бразилия
 gallery: []
 proof:

@@ -15,7 +15,7 @@ groupSize: 7–8 человек
 year: 2026
 nda: true
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/sao-paulo-2.jpg
+  src: /media/destinations/sao-paulo/hero-enhanced-20261001.webp
   alt: Сан-Паулу, Бразилия
 gallery: []
 proof:

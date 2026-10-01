@@ -36,7 +36,7 @@ hero:
 gallery:
   - src: https://brasiltours.ru/image/cache/catalog/category/b/o/bonitospring-1920x1080.webp
     alt: Прозрачная вода в Бонито
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/valeria-rossi-ohx5xc7xeao-unsplash.jpg
+  - src: /media/destinations/lencois-maranhenses/hero-enhanced-20261001.webp
     alt: Дюны и лагуны Ленсойс-Мараньенсес
 featured: false
 priority: 86

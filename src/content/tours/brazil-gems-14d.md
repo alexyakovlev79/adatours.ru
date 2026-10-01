@@ -37,7 +37,7 @@ hero:
   src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
   alt: Сахарная Голова и Рио-де-Жанейро
 gallery:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/praia-do-forte.jpg
+  - src: /media/destinations/praia-do-forte/hero-enhanced-20261001.webp
     alt: Прайя-ду-Форте в штате Баия
 featured: false
 priority: 91

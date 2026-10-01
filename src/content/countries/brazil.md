@@ -37,7 +37,7 @@ featureBands:
   - eyebrow: Город
     title: Рио-де-Жанейро
     text: "Рио часто становится первой точкой поездки: океан, Корковаду, Сахарная голова и районы города с совсем разным настроением."
-    image: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1200x492.webp
+    image: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
     href: /napravleniya/braziliya/rio-de-zhanejro/
   - eyebrow: Природа
     title: Ленсойс-Мараньенсис

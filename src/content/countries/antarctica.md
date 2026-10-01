@@ -19,15 +19,15 @@ gallery:
     alt: Ледяной пейзаж Антарктиды
   - src: /media/countries/antarktida/gallery-3-enhanced-20261001.webp
     alt: Айсберг в водах Антарктиды
-  - src: https://brasiltours.ru/image/catalog/category/p/i/pinquin.jpg
+  - src: /media/countries/antarctica/feature-2-wildlife-enhanced-20261001.webp
     alt: Пингвины в Антарктиде
   - src: /media/countries/antarktida/gallery-5-enhanced-20261001.webp
     alt: Айсберги и горы Антарктиды
-  - src: https://brasiltours.ru/image/catalog/category/A/n/Antarctica.jpg
+  - src: /media/countries/antarctica/feature-1-zodiac-enhanced-20261001.webp
     alt: Высадка на лодке Zodiac в Антарктиде
   - src: /media/countries/antarktida/gallery-7-enhanced-20261001.webp
     alt: Наблюдение за китами в Антарктиде
-  - src: https://brasiltours.ru/image/catalog/category/f/i/file_24_18.jpg
+  - src: /media/countries/antarctica/feature-3-expedition-ship-enhanced-20261001.webp
     alt: Айсберги в антарктических водах
   - src: /media/countries/antarktida/gallery-9-enhanced-20261001.webp
     alt: Пингвины на берегу Антарктиды

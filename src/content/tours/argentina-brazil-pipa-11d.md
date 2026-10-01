@@ -115,7 +115,7 @@ itinerary:
       
       По прибытии предусмотрены встреча и индивидуальный трансфер с водителем в гостиницу. Остаток дня можно использовать для отдыха перед поездкой к леднику.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/2-argentina-el-calafate.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-04-enhanced-20261001.webp
         alt: "Эль-Калафате, Патагония"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -139,7 +139,7 @@ itinerary:
       
       После прогулки экскурсия продолжится по территории парка на автобусе. Дорога открывает новые виды на горы, озера и ледник. Затем возвращение в гостиницу.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
         alt: "Ледник Перито-Морено"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -153,7 +153,7 @@ itinerary:
       
       По прибытии вас встретят и отвезут в гостиницу. После размещения остается время для отдыха перед экскурсионными днями у водопадов.
     images:
-      - src: https://brasiltours.ru/image/El%20Calafate.png
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-06-enhanced-20261001.webp
         alt: "Эль-Калафате перед перелетом к Игуасу"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -197,7 +197,7 @@ itinerary:
       
       После экскурсии предусмотрен трансфер в аэропорт для вылета в Буэнос-Айрес, встреча и трансфер в гостиницу.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0035.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
         alt: "Водопады Игуасу на аргентинской стороне"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -221,7 +221,7 @@ itinerary:
       
       После экскурсии предусмотрен переезд в аэропорт и вылет в Натал. По прилете водитель встретит вас и отвезет в отель в Прайя-да-Пипа.
     images:
-      - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+      - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
         alt: "Водопады Игуасу на бразильской стороне"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -232,7 +232,7 @@ itinerary:
       
       Когда-то Прайя-да-Пипа была небольшим рыбацким поселком. Во второй половине XX века сюда начали приезжать путешественники, которых привлекали волны, белые пляжи и изумрудная вода. Постепенно место превратилось в популярный пляжный курорт.
     images:
-      - src: https://brasiltours.ru/image/Natal.png
+      - src: /media/tours/argentina-brazil-pipa-11d/hero-enhanced-20260930.webp
         alt: "Прайя-де-Пипа, Бразилия"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -243,7 +243,7 @@ itinerary:
       
       Свободные дни позволяют выбирать отдых по настроению: провести несколько часов у воды, добавить активность или просто оставить расписание пустым после насыщенной экскурсионной части путешествия.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/natal.png
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-10-enhanced-20261001.webp
         alt: "Побережье Прайя-де-Пипа"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -252,7 +252,7 @@ itinerary:
     text: |-
       После завтрака предусмотрен трансфер без гида в аэропорт Натала для вылета домой.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/natal.png
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-10-enhanced-20261001.webp
         alt: "Прайя-де-Пипа перед вылетом из Натала"
         intendedSlot: "itinerary:day-11"
 included:

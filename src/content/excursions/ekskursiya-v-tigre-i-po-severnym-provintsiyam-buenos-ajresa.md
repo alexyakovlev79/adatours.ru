@@ -16,7 +16,7 @@ language:
 priceFrom: 100
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/tigre-argentina1.png
+  src: /media/excursions/ekskursiya-v-tigre-i-po-severnym-provintsiyam-buenos-ajresa/hero-enhanced-20261001.webp
   alt: Тигре, Аргентина
 gallery: []
 route:

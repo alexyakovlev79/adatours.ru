@@ -12,7 +12,7 @@ destination: destination_brazil_iguacu
 themes: [adventure, nature]
 language: []
 hero:
-  src: /media/excursions/makuko-safari/hero.webp
+  src: /media/excursions/makuko-safari/hero-enhanced-20261001.webp
   alt: Катер Макуко Сафари у водопадов Игуасу
 gallery: []
 route:

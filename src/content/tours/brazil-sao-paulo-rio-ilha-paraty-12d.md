@@ -52,7 +52,7 @@ itinerary:
     text: |-
       Прибытие в аэропорт Сан-Паулу. Водитель встретит вас с табличкой с логотипом компании и вашими фамилиями. Трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/São_Paulo.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/hero-enhanced-20260930.webp
         alt: "Сан-Паулу, Бразилия"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -71,7 +71,7 @@ itinerary:
       
       Затем вы увидите проспект Паулиста и парк Ибирапуэра. В парке есть озера, каналы, раскидистые деревья, спортивные площадки и велосипедные дорожки. Здесь же находятся обелиск в память о героях революции 1932 года и монумент «Бандейрас», посвященный экспедициям, отправлявшимся вглубь страны за золотом и драгоценными камнями. Завершает экскурсию знакомство с элитными районами, современной архитектурой и районом граффити.
     images:
-      - src: https://brasiltours.ru/image/san%20paolo%201.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
         alt: "Сан-Паулу, Бразилия"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -82,7 +82,7 @@ itinerary:
       
       Комплекс Игуасу расположен в национальном парке с тропическим лесом. Происхождение водопадов связывают с вулканическими процессами и смещением земных пластов. Название «Игуасу» переводится с гуарани как «большая вода». Река распадается на 275 водопадов, а маршрут ведет вдоль каскадов к «Глотке дьявола». На смотровых площадках видны отдельные потоки, каньон, облака брызг и радуги над водой.
     images:
-      - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
         alt: "Водопады Игуасу"
         intendedSlot: "itinerary:day-3"
   - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
@@ -211,7 +211,7 @@ itinerary:
     text: |-
       Завтрак и трансфер в аэропорт Сан-Паулу для международного перелета.
     images:
-      - src: https://brasiltours.ru/image/san%20paolo%201.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
         alt: "Сан-Паулу, Бразилия"
         intendedSlot: "itinerary:day-12"
 included:

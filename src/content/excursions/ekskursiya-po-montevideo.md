@@ -17,7 +17,7 @@ language:
 priceFrom: 500
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/Montevideo.png
+  src: /media/excursions/ekskursiya-po-montevideo/hero-enhanced-20261001.webp
   alt: Монтевидео, Уругвай
 gallery: []
 route:

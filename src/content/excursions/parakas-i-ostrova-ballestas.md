@@ -12,7 +12,7 @@ destination: destination_peru_parakas
 themes: [nature, wildlife]
 language: []
 hero:
-  src: https://brasiltours.ru/image/paracas.jpg
+  src: /media/excursions/parakas-i-ostrova-ballestas/hero-enhanced-20261001.webp
   alt: Паракас и острова Бальестас, Перу
 gallery: []
 route:

@@ -15,7 +15,7 @@ language:
   - английский
   - испанский
 hero:
-  src: /media/excursions/lima-siti-tur/hero.webp
+  src: /media/excursions/lima-siti-tur/hero-enhanced-20261001.webp
   alt: Побережье Лимы, Перу
 gallery: []
 route:

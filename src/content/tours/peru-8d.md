@@ -144,7 +144,7 @@ itinerary:
       
       После экскурсии - возвращение в Пуно и трансфер в аэропорт для перелета в Лиму. Авиабилеты в стоимость тура не включены. По прибытии в Лиму - встреча и трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/lake%20titicaca%20peru.png
+      - src: /media/tours/peru-8d/itinerary/day-06-enhanced-20261001.webp
         alt: "Плавучие острова Урос на озере Титикака"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -156,7 +156,7 @@ itinerary:
       
       Можно заказать обзорную экскурсию по городу или поездку Паракас - Наска.
     images:
-      - src: https://brasiltours.ru/image/Paracas_Candelabra.png
+      - src: /media/tours/peru-8d/itinerary/day-07-enhanced-20261001.webp
         alt: "Канделябр Паракаса, Перу"
         intendedSlot: "itinerary:day-7"
   - excursionRef: excursion_peru_paracas_ballestas
@@ -180,7 +180,7 @@ itinerary:
       
       Стоимость посещения — $50 на 1 человека. В музее также работает ресторан национальной кухни Café del Muzeo.
     images:
-      - src: https://brasiltours.ru/image/lima%20larko.png
+      - src: /media/tours/peru-8d/itinerary/day-08-enhanced-20261001.webp
         alt: "Музей Ларко в Лиме"
         intendedSlot: "itinerary:day-8"
 included:

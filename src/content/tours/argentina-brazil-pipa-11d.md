@@ -62,7 +62,7 @@ itinerary:
       
       После размещения можно отдохнуть после перелета и провести оставшееся время самостоятельно.
     images:
-      - src: https://brasiltours.ru/image/Buenos%20Aires.png
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -86,7 +86,7 @@ itinerary:
       
       Во время представления подают аргентинское вино и традиционные блюда. Вечер проходит в ресторане и позволяет увидеть танго там, где оно стало частью городской культуры.
     images:
-      - src: https://brasiltours.ru/image/buenos%20government%20house.png
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-02-enhanced-20261001.webp
         alt: "Каса-Росада в Буэнос-Айресе"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -95,7 +95,7 @@ itinerary:
     text: |-
       После завтрака день остается свободным. При желании можно добавить одну из нескольких экскурсий.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-3"
   - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa

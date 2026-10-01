@@ -13,7 +13,7 @@ themes: [culture, adventure]
 duration: 35 минут
 language: []
 hero:
-  src: https://brasiltours.ru/image/Nazca.jpg
+  src: /media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp
   alt: Линии Наска, Перу
 gallery: []
 route:

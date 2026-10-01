@@ -14,7 +14,7 @@ language: []
 priceFrom: 225
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/02.jpg
+  src: /media/excursions/svyashchennaya-dolina-inkov/hero-enhanced-20261001.webp
   alt: Священная долина инков, Перу
 gallery: []
 route:

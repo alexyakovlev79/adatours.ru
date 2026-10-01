@@ -12,9 +12,9 @@ hero:
   src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/salvador-da-bahia-1200x546.webp
   alt: Исторический центр Сальвадора в Бразилии
 gallery:
-  - src: https://brasiltours.ru/image/cache/catalog/category/S/S/SSA_Salvador_da_Bahia_church2_b-1920x1080.webp
+  - src: /media/destinations/salvador/gallery-1-enhanced-20261001.webp
     alt: Церковь в Сальвадоре, Баия
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN4084_11-1920x1080.webp
+  - src: /media/destinations/salvador/gallery-2-enhanced-20261001.webp
     alt: Городская сцена Сальвадора
 themes:
   - culture

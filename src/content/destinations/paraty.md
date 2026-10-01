@@ -14,7 +14,7 @@ hero:
 gallery:
   - src: /media/destinations/paraty/gallery-1-enhanced-20261001.webp
     alt: Колониальная архитектура Парати
-  - src: https://brasiltours.ru/image/cache/catalog/category/p/a/paraty_mar2-1920x1080.webp
+  - src: /media/destinations/paraty/gallery-2-enhanced-20261001.webp
     alt: Море и острова у Парати
 themes:
   - culture

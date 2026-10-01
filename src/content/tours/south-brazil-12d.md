@@ -42,7 +42,7 @@ gallery:
     alt: Грамаду на юге Бразилии
   - src: https://brasiltours.ru/image/cache/skyglass1-1920x1080.webp
     alt: Skyglass в Канеле
-  - src: https://brasiltours.ru/image/cache/santa-katarina-florianopolis1-1920x1080.webp
+  - src: /media/tours/yuzhnaya-braziliya-rio-iguasu-gramado-florianopolis-12-dnej/gallery-3-enhanced-20261001.webp
     alt: Флорианополис в штате Санта-Катарина
 featured: false
 priority: 93

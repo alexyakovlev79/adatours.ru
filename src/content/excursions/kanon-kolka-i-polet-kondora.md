@@ -19,14 +19,14 @@ priceFrom: 688
 currency: USD
 priceNote: "Стоимость — $688. Для 2 человек — $388 на человека, для 3 человек — $289, для 4 человек — $239; групповой тариф — $164 на человека."
 hero:
-  src: /media/excursions/kanon-kolka-i-polet-kondora/hero.jpg
+  src: /media/excursions/kanon-kolka-i-polet-kondora/hero-enhanced-20261001.webp
   alt: Каньон Колка в Перу
 gallery:
-  - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-1.jpg
+  - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-1-enhanced-20261001.webp
     alt: Смотровая площадка над каньоном Колка
-  - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-2.jpg
+  - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-2-enhanced-20261001.webp
     alt: Долина и склоны каньона Колка
-  - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3.jpg
+  - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3-enhanced-20261001.webp
     alt: Арекипа, Перу
 route:
   - Арекипа

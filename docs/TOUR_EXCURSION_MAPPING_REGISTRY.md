@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.23  
+Версия: 1.24  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -169,11 +169,17 @@ missing_excursion_entities = 0
 | 85 | `tour_brazil_south_12d` | `src/content/tours/south-brazil-12d.md` | Южная Бразилия за 12 дней: Рио, Игуасу, Грамаду, каньоны и Флорианополис | DONE_LINKED | 3 | 2026-10-01 |
 | 286 | `tour_source_tur_v_surinam_dlya_nablyudeniya_za_pticami` | `src/content/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami.md` | Орнитологический тур в Суринам на 8 дней | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
-| 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | IN_PROGRESS | 1 | 2026-10-01 |
-| 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | IN_PROGRESS | 0 | 2026-10-01 |
+| 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
+| 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | PENDING | 0 | 2026-09-30 |
 
-**Следующий проход v1.1:** строка **410**, `tour_source_iguacu_falls`.
+**Следующий проход v1.1:** строка **416**, `tour_source_wedding_ceremony_tropical_package`.
+
+### Проверка v1.1 — строки 410–411, 2026-10-01
+
+- **Строка 410 / `tour_source_iguacu_falls`:** сверены production, V2 и original. Единственная самостоятельная Excursion — Парк птиц — была ошибочно оставлена внутри `contentBlocks` дня 2. Существующая каноническая `excursion_source_park_jekzoticheskih_ptic_v_iguasu` извлечена из numbered day и поставлена отдельной карточкой после дня 2, перед днем 3. Дублирующий `Парк птиц` удален из `places` дня 2. Три numbered days сохранены. Инварианты: `standalone_between_days = 1`, `production_excursion_refs = 1`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`.
+- **Строка 411 / `tour_source_rio_de_janeiro_wedding`:** сверены production, V2 и original. У страницы нет itinerary-программы по дням, `excursionRef = 0`; самостоятельных дополнительных Excursion в источниках нет. Итог: `DONE_NO_RELATIONS`.
+- Production commit `bf939d2205497c71dea2d488111b643e00cf42b1`: build = success, deploy = success. Публичный URL из текущего web-fetch окружения недоступен для прямого HTML spot-check; успешный GitHub Pages deploy и собранный Pages artifact подтверждены workflow.
 
 ### Проверка v1.1 — строки 286 и 344, 2026-10-01
 
@@ -247,7 +253,7 @@ missing_excursion_entities = 0
 | `tour_brazil_south_12d` | `excursion_source_polet_na_vertolete_nad_rio` | between_days | 3 | 4 | LINKED_EXISTING | Точный match по V2/original: standalone-полет над Рио после дня 3; локальная карточка заменена на существующую каноническую Excursion. |
 | `tour_brazil_south_12d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 4 | 5 | LINKED_EXISTING | Извлечена из `contentBlocks` дня 4 в отдельную карточку между днями 4 и 5; дублирующее описание внутри дня удалено. |
 | `tour_brazil_south_12d` | `excursion_source_makuko_safari` | between_days | 4 | 5 | LINKED_EXISTING | Извлечена из текста дня 4 в отдельную карточку между днями 4 и 5; используется существующая каноническая Excursion `makuko-safari`. |
-| `tour_source_iguacu_falls` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | legacy_inside_day | 2 | 3 | LINKED_EXISTING_LEGACY | Внутри `contentBlocks` дня 2; историческое исключение |
+| `tour_source_iguacu_falls` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 2 | 3 | LINKED_EXISTING | v1.1: прежняя `legacy_inside_day` связь извлечена из `contentBlocks` дня 2 и нормализована в отдельную карточку между днями 2 и 3. |
 
 ## 5. Как фиксировать новую найденную экскурсию
 

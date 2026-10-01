@@ -41,7 +41,7 @@ priceFrom: 12075
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/cache/countries/costa-rica/novye-foto/oblozhki/la-fortuna-1920x1080.webp
+  src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/oblozhki/la-fortuna.jpg
   alt: "Горячие источники Табакон у вулкана Ареналь, Коста-Рика"
 gallery: []
 featured: false

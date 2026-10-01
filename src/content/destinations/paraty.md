@@ -39,12 +39,12 @@ featureBands:
     title: Колониальный центр и Золотой путь
     text: >-
       Каменные улицы, белые фасады и церкви сохраняют масштаб старого портового города. Парати был связан с Золотым путем, по которому богатства внутренних районов Бразилии отправлялись к Атлантике.
-    image: https://brasiltours.ru/image/cache/catalog/category/0/9/09_MVG_paraty1-1920x1080.webp
+    image: /media/destinations/paraty/featureBands-1-enhanced-20261001.webp
   - eyebrow: Природа
     title: Залив, острова и водопады
     text: >-
       За пределами исторического центра начинается другой Парати: прогулки на лодках между островами и бухтами, купание, водопады и поездка к пляжам Тринидада.
-    image: https://brasiltours.ru/image/cache/catalog/category/p/a/paraty13_cotia-1920x1080.webp
+    image: /media/destinations/paraty/featureBands-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-parati-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-parati-v-brazilii__1096e90c.md
 updatedAt: 2026-09-24

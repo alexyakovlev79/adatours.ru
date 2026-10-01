@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Порту-Алегри, административный центр штата Риу-Гранди-ду-Сул, расположен у Гуаибы и дает другой образ Бразилии: зеленый южный город, старые кварталы, прогулки у воды и знакомство с культурой гаучу.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/porto-alegre-1200x498.webp
+  src: /media/destinations/porto-alegre/hero-enhanced-20261001.webp
   alt: Порту-Алегри на юге Бразилии
 gallery: []
 themes:
@@ -35,12 +35,12 @@ featureBands:
     title: Исторический центр у Гуаибы
     text: >-
       В центре Порту-Алегри можно соединить архитектуру, кафедральный собор, музей искусств и рынок, а затем выйти к воде или подняться на городские смотровые точки.
-    image: https://brasiltours.ru/image/cache/catalog/category/P/o/PortoAlegre-centro-200710_preview-1920x1080.webp
+    image: /media/destinations/porto-alegre/featureBands-1-enhanced-20261001.webp
   - eyebrow: Регион
     title: Знакомство с культурой гаучу
     text: >-
       В окрестностях Порту-Алегри можно добавить конные прогулки, поездки на ранчо и знакомство с культурой гаучу. Это совсем другая Бразилия по сравнению с Рио, Баией или Амазонией.
-    image: https://brasiltours.ru/image/cache/catalog/category/l/a/lacador26morg4-1920x1080.webp
+    image: /media/destinations/porto-alegre/featureBands-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-portu-alegri-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-portu-alegri-v-brazilii__67a33061.md
 updatedAt: 2026-09-25

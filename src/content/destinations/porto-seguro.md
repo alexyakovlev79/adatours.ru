@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Порту-Сегуру на юге штата Баия сочетает исторический центр колониального периода, атлантические пляжи и активную курортную жизнь. В программу можно включить старый город, музейные объекты, побережье, рифы и соседние курортные районы.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/porto-seguro-2.jpg
+  src: /media/destinations/porto-seguro/hero-enhanced-20261001.webp
   alt: Порту-Сегуру на побережье штата Баия
 gallery: []
 themes:

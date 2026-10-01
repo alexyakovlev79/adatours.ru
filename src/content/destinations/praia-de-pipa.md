@@ -9,7 +9,7 @@ destinationType: resort
 summary: >-
   Прайя-де-Пипа находится примерно в 70 км к югу от Натала. Курорт известен пляжами, дюнами, серфингом, морскими прогулками, наблюдением за дельфинами и живой вечерней сценой.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/praia-de-pipa.jpg
+  src: /media/destinations/praia-de-pipa/hero-enhanced-20261001.webp
   alt: Пляж Прайя-де-Пипа недалеко от Натала
 gallery: []
 themes:

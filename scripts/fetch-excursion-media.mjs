@@ -57,6 +57,31 @@ const files = [
     path: 'public/media/excursions/favela-tur/gallery-4.png',
     referer: 'https://brasiltours.ru/favela-tur',
   },
+  {
+    url: 'https://brasiltours.ru/image/countries/argentina/excursiya-tigre-1.jpg',
+    path: 'public/media/excursions/jekskursija-v-tigre/hero.jpg',
+    referer: 'https://brasiltours.ru/jekskursija-v-tigre',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/argentina/buenos1.jpg',
+    path: 'public/media/excursions/jekskursija-v-tigre/gallery-1.jpg',
+    referer: 'https://brasiltours.ru/jekskursija-v-tigre',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/argentina/tigre-trip.png',
+    path: 'public/media/excursions/jekskursija-v-tigre/gallery-2.png',
+    referer: 'https://brasiltours.ru/jekskursija-v-tigre',
+  },
+  {
+    url: 'https://brasiltours.ru/image/catalog/product/f/i/file_47_34.png',
+    path: 'public/media/excursions/jekskursija-v-tigre/gallery-3.png',
+    referer: 'https://brasiltours.ru/jekskursija-v-tigre',
+  },
+  {
+    url: 'https://brasiltours.ru/image/catalog/product/f/i/file_48_28.png',
+    path: 'public/media/excursions/jekskursija-v-tigre/gallery-4.png',
+    referer: 'https://brasiltours.ru/jekskursija-v-tigre',
+  },
 ];
 
 for (const file of files) {

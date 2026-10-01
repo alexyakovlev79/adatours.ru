@@ -1,0 +1,47 @@
+name: Probe next tour images
+
+on:
+  push:
+    branches:
+      - chatgpt-write-probe-20261001
+    paths:
+      - ".github/workflows/probe-next-tour-images.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify all source images
+        shell: bash
+        run: |
+          set -euo pipefail
+          urls=(
+            "https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg"
+            "https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg"
+            "https://brasiltours.ru/image/countries/argentina/tigre-argentina1.png"
+            "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg"
+            "https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg"
+            "https://brasiltours.ru/image/ushuaia.png"
+            "https://brasiltours.ru/image/El%20Calafate%20ADA.png"
+            "https://brasiltours.ru/image/ARG%20Patagonia%201.png"
+            "https://brasiltours.ru/image/countries/argentina/el-chalten-adatours-2.jpg"
+            "https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg"
+            "https://brasiltours.ru/image/ARG%20Patagonia%201.png"
+            "https://brasiltours.ru/image/countries/argentina/arg-patogonia1.jpg"
+            "https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg"
+            "https://brasiltours.ru/image/santiago%20de%20chile3.png"
+          )
+          i=0
+          for u in "${urls[@]}"; do
+            i=$((i+1))
+            f="/tmp/img-$i"
+            curl --fail --silent --show-error --location --retry 3 --retry-delay 2 "$u" --output "$f"
+            mime=$(file --brief --mime-type "$f")
+            size=$(stat -c%s "$f")
+            echo "$i | $mime | $size | $u"
+            [[ "$mime" == image/* ]]
+            [[ "$size" -gt 1000 ]]
+          done

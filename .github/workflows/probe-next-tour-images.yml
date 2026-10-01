@@ -1,4 +1,4 @@
-name: Probe next tour images
+name: Probe Buenos Aires Salta Iguazu images
 
 on:
   push:
@@ -14,25 +14,27 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Verify all source images
+      - name: Verify source images
         shell: bash
         run: |
           set -euo pipefail
           urls=(
-            "https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg"
-            "https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg"
-            "https://brasiltours.ru/image/countries/argentina/tigre-argentina1.png"
-            "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg"
-            "https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg"
-            "https://brasiltours.ru/image/ushuaia.png"
-            "https://brasiltours.ru/image/El%20Calafate%20ADA.png"
-            "https://brasiltours.ru/image/ARG%20Patagonia%201.png"
-            "https://brasiltours.ru/image/countries/argentina/el-chalten-adatours-2.jpg"
-            "https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg"
-            "https://brasiltours.ru/image/ARG%20Patagonia%201.png"
-            "https://brasiltours.ru/image/countries/argentina/arg-patogonia1.jpg"
-            "https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg"
-            "https://brasiltours.ru/image/santiago%20de%20chile3.png"
+            "https://brasiltours.ru/image/countries/argentina/bue.jpg"
+            "https://brasiltours.ru/image/buenos%20aires4.png"
+            "https://brasiltours.ru/image/Arg%20Buenos.png"
+            "https://brasiltours.ru/image/countries/argentina/buenos.jpg"
+            "https://brasiltours.ru/image/countries/argentina/excursiya-tigre-2.jpg"
+            "https://brasiltours.ru/image/countries/argentina/rancho-gaucho11.png"
+            "https://brasiltours.ru/image/countries/uruguay/montevideo-1680.jpg"
+            "https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg"
+            "https://brasiltours.ru/image/salta.jpg"
+            "https://brasiltours.ru/image/Salta.png"
+            "https://brasiltours.ru/image/countries/argentina/argentinian-meat.png"
+            "https://brasiltours.ru/image/Foz%20do%20Iguau.png"
+            "https://brasiltours.ru/image/Puerto%20Iguazu.png"
+            "https://brasiltours.ru/image/Arg%20Buenos%20Aires.png"
+            "https://brasiltours.ru/image/argentinian%20tango.png"
+            "https://brasiltours.ru/image/countries/argentina/new-photos/pexels-joaquin-carfagna-14899674.jpg"
           )
           i=0
           for u in "${urls[@]}"; do

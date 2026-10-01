@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.15  
+Версия: 1.16  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -159,8 +159,8 @@ missing_excursion_entities = 0
 | 75 | `tour_luxury_brazil_11d` | `src/content/tours/luxury-brazil-11d.md` | Роскошная Бразилия | DONE_LINKED | 10 | 2026-10-01 |
 | 76 | `tour_brazil_argentina_peru_14d` | `src/content/tours/brazil-argentina-peru-14d.md` | Бразилия, Аргентина и Перу за 14 дней | DONE_LINKED | 1 | 2026-10-01 |
 | 77 | `tour_peru_8d` | `src/content/tours/peru-8d.md` | Перу за 8 дней: Лима, Куско, Мачу-Пикчу и Титикака | DONE_LINKED | 7 | 2026-10-01 |
-| 78 | `tour_brazil_sao_paulo_rio_ilha_paraty_12d` | `src/content/tours/brazil-sao-paulo-rio-ilha-paraty-12d.md` | Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати | DONE_LINKED | 3 | 2026-09-30 |
-| 79 | `tour_brazil_adventure_17d` | `src/content/tours/brazil-adventure-17d.md` | Большое приключение по Бразилии за 17 дней | DONE_LINKED | 3 | 2026-09-30 |
+| 78 | `tour_brazil_sao_paulo_rio_ilha_paraty_12d` | `src/content/tours/brazil-sao-paulo-rio-ilha-paraty-12d.md` | Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати | DONE_LINKED | 3 | 2026-10-01 |
+| 79 | `tour_brazil_adventure_17d` | `src/content/tours/brazil-adventure-17d.md` | Большое приключение по Бразилии за 17 дней | DONE_LINKED | 3 | 2026-10-01 |
 | 80 | `tour_brazil_pantanal_bonito_lencois_8d` | `src/content/tours/pantanal-bonito-lencois-8d.md` | Пантанал, Бонито и Ленсойс-Мараньенсес за 8 дней | DONE_NO_RELATIONS | 0 | 2026-09-30 |
 | 81 | `tour_brazil_recife_porto_noronha_10d` | `src/content/tours/brazil-northeast-recife-porto-noronha-10d.md` | Северо-восток Бразилии: Ресифи, Порту-ди-Галиньяш и Фернанду-ди-Норонья за 10 дней | DONE_NO_RELATIONS | 0 | 2026-09-30 |
 | 82 | `tour_brazil_gems_14d` | `src/content/tours/brazil-gems-14d.md` | Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-ду-Форте и Игуасу | PENDING | 1 | 2026-10-01 |
@@ -173,7 +173,14 @@ missing_excursion_entities = 0
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | PENDING | 0 | 2026-09-30 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | PENDING | 0 | 2026-09-30 |
 
-**Следующая пачка повторного прохода v1.1 по указанию пользователя:** строки **78–80**.
+**Следующий повторный проход v1.1:** строка **80**, `tour_brazil_pantanal_bonito_lencois_8d`.
+
+### Повторная проверка v1.1 — строки 78–79, 2026-10-01
+
+- **Строка 78 / `tour_brazil_sao_paulo_rio_ilha_paraty_12d`:** повторно сверены production, V2 и original. Самостоятельные дополнительные экскурсии: Парк птиц, Макуко Сафари, полет на вертолете над Рио. Все 3 уже вынесены в отдельные `excursionRef`; локальных дублей и embedded excursion-модулей не осталось. Инварианты: `standalone_between_days = 3`, `production_excursion_refs = 3`, `remaining_embedded_excursion_modules = 0`, `missing_excursion_entities = 0`.
+- **Строка 79 / `tour_brazil_adventure_17d`:** повторно сверены production, V2 и original. Самостоятельные дополнительные экскурсии: Макуко Сафари, Парк птиц, Abismo Anhumas. Все 3 уже вынесены в отдельные `excursionRef`; локальных дублей и embedded excursion-модулей не осталось. Основные экскурсионные дни (Илья-Гранде, Estancia Mimosa, Голубая пещера + Рио-Сукури, сплав + Arvorismo и др.) остаются содержанием numbered day, так как это основная программа соответствующего дня, а не самостоятельные дополнительные модули. Инварианты: `standalone_between_days = 3`, `production_excursion_refs = 3`, `remaining_embedded_excursion_modules = 0`, `missing_excursion_entities = 0`.
+
+Новых Excursion по этим 2 турам создавать не потребовалось.
 
 ## 4. Уже существующие Tour↔Excursion связи
 

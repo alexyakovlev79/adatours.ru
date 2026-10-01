@@ -82,6 +82,36 @@ const files = [
     path: 'public/media/excursions/jekskursija-v-tigre/gallery-4.png',
     referer: 'https://brasiltours.ru/jekskursija-v-tigre',
   },
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/raphael-nogueira-espuilpsruw-1920.jpg',
+    path: 'public/media/excursions/ekskursiya-na-sakharnuyu-golovu/hero.jpg',
+    referer: 'https://brasiltours.ru/ekskursiya-na-sakharnuyu-golovu',
+  },
+  {
+    url: 'https://brasiltours.ru/image/rio%20at%20night.png',
+    path: 'public/media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-1.png',
+    referer: 'https://brasiltours.ru/ekskursiya-na-sakharnuyu-golovu',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1.jpg',
+    path: 'public/media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-2.jpg',
+    referer: 'https://brasiltours.ru/ekskursiya-na-sakharnuyu-golovu',
+  },
+  {
+    url: 'https://brasiltours.ru/image/Rio%20de%20Janeiro.png',
+    path: 'public/media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3.png',
+    referer: 'https://brasiltours.ru/ekskursiya-na-sakharnuyu-golovu',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/bra-rio-de-janeiro1.jpg',
+    path: 'public/media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4.jpg',
+    referer: 'https://brasiltours.ru/ekskursiya-na-sakharnuyu-golovu',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/new-pics/sugaloaf-view-rio-de-janeiro.jpg',
+    path: 'public/media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-5.jpg',
+    referer: 'https://brasiltours.ru/ekskursiya-na-sakharnuyu-golovu',
+  },
 ];
 
 for (const file of files) {

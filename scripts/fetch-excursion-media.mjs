@@ -223,7 +223,9 @@ const files = [
     referer: 'https://brasiltours.ru/siti-tur-v-bogote',
   },
 
-];\n\nfor (const file of files) {
+];
+
+for (const file of files) {
   await mkdir(dirname(file.path), { recursive: true });
   const response = await fetch(file.url, {
     redirect: 'follow',

@@ -165,6 +165,8 @@ itinerary:
     places: ["Наска"]
   - excursionRef: excursion_source_lima_siti_tur
     places: ["Лима"]
+  - excursionRef: excursion_lima_folklore_dinner_show
+    places: ["Лима"]
   - day: 8
     title: "Лима"
     places: ["Лима"]

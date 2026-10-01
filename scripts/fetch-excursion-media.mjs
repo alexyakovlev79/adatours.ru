@@ -32,6 +32,31 @@ const files = [
     path: 'public/media/excursions/tur-na-ostrov-florena/gallery-2.png',
     referer: 'https://brasiltours.ru/tur-na-ostrov-florena',
   },
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/raul-escobar-txoj60clby0-1920.jpg',
+    path: 'public/media/excursions/favela-tur/hero.jpg',
+    referer: 'https://brasiltours.ru/favela-tur',
+  },
+  {
+    url: 'https://brasiltours.ru/image/corcovado1.png',
+    path: 'public/media/excursions/favela-tur/gallery-1.png',
+    referer: 'https://brasiltours.ru/favela-tur',
+  },
+  {
+    url: 'https://brasiltours.ru/image/favela11.png',
+    path: 'public/media/excursions/favela-tur/gallery-2.png',
+    referer: 'https://brasiltours.ru/favela-tur',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/brazil/bra-rio-de-janeiro1.jpg',
+    path: 'public/media/excursions/favela-tur/gallery-3.jpg',
+    referer: 'https://brasiltours.ru/favela-tur',
+  },
+  {
+    url: 'https://brasiltours.ru/image/rio.png',
+    path: 'public/media/excursions/favela-tur/gallery-4.png',
+    referer: 'https://brasiltours.ru/favela-tur',
+  },
 ];
 
 for (const file of files) {

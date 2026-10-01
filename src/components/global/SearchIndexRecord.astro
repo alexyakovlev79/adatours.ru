@@ -13,7 +13,7 @@ interface Props {
 const { title, summary, entityType, typeLabel, subtitle, aliases = [], geography = [], themes = [], image } = Astro.props;
 ---
 <section class="pagefind-record" data-pagefind-body aria-hidden="true">
-  <h1 data-pagefind-meta="title">{title}</h1>
+  <span data-pagefind-meta="title">{title}</span>
   <p data-pagefind-meta="summary">{summary}</p>
   <span data-pagefind-meta="entity_type" data-pagefind-filter="entity_type">{entityType}</span>
   <span data-pagefind-meta="type_label">{typeLabel}</span>

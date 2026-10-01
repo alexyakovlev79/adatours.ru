@@ -12,7 +12,7 @@ destination: destination_brazil_rio
 themes: [gastronomy, culture]
 language: []
 hero:
-  src: /media/excursions/master-klass-po-shurrasko/hero.webp
+  src: /media/excursions/master-klass-po-shurrasko/hero-enhanced-20261001.webp
   alt: Приготовление бразильского шурраско
 gallery: []
 route:

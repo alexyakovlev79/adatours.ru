@@ -12,7 +12,7 @@ destination: destination_brazil_rio
 themes: [adventure, nature]
 language: []
 hero:
-  src: /media/excursions/trekking-na-saharnuyu-golovu/hero.webp
+  src: /media/excursions/trekking-na-saharnuyu-golovu/hero-enhanced-20261001.webp
   alt: Сахарная Голова в Рио-де-Жанейро
 gallery: []
 route:

@@ -13,7 +13,7 @@ themes: [nature, city]
 duration: около 4 часов
 language: []
 hero:
-  src: /media/excursions/botanical-garden/hero.webp
+  src: /media/excursions/botanical-garden/hero-enhanced-20261001.webp
   alt: Ботанический сад Рио-де-Жанейро
 gallery: []
 route:

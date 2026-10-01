@@ -13,7 +13,7 @@ destination: destination_brazil_rio
 themes: [culture]
 language: []
 hero:
-  src: /media/excursions/rio-nochyu/hero.webp
+  src: /media/excursions/rio-nochyu/hero-enhanced-20261001.webp
   alt: Ночное шоу с самбой в Рио-де-Жанейро
 gallery: []
 route:

@@ -12,7 +12,7 @@ destination: destination_brazil_rio
 themes: [gastronomy, culture]
 language: []
 hero:
-  src: /media/excursions/master-klass-po-prigotovleniyu-kajpirini/hero.webp
+  src: /media/excursions/master-klass-po-prigotovleniyu-kajpirini/hero-enhanced-20261001.webp
   alt: Бразильская кайпиринья
 gallery: []
 route:

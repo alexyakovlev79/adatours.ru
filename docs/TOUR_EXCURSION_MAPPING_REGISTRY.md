@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.11  
+Версия: 1.12  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -132,7 +132,7 @@ URL:
 | 82 | `tour_brazil_gems_14d` | `src/content/tours/brazil-gems-14d.md` | Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-ду-Форте и Игуасу | DONE_NO_RELATIONS | 1 | 2026-09-30 |
 | 83 | `tour_brazil_dunes_13d` | `src/content/tours/brazil-dunes-13d.md` | Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа | DONE_NO_RELATIONS | 1 | 2026-10-01 |
 | 84 | `tour_argentina_brazil_pipa_11d` | `src/content/tours/argentina-brazil-pipa-11d.md` | Аргентина и Бразилия за 11 дней | DONE_LINKED | 3 | 2026-10-01 |
-| 85 | `tour_brazil_south_12d` | `src/content/tours/south-brazil-12d.md` | Южная Бразилия за 12 дней: Рио, Игуасу, Грамаду, каньоны и Флорианополис | DONE_LINKED | 2 | 2026-10-01 |
+| 85 | `tour_brazil_south_12d` | `src/content/tours/south-brazil-12d.md` | Южная Бразилия за 12 дней: Рио, Игуасу, Грамаду, каньоны и Флорианополис | DONE_LINKED | 3 | 2026-10-01 |
 | 286 | `tour_source_tur_v_surinam_dlya_nablyudeniya_za_pticami` | `src/content/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami.md` | Орнитологический тур в Суринам на 8 дней | PENDING | 0 | 2026-09-30 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | PENDING | 0 | 2026-09-30 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | PENDING | 1 | 2026-09-30 |
@@ -170,7 +170,8 @@ URL:
 | `tour_brazil_gems_14d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | legacy_inside_day | 12 | 13 | LINKED_EXISTING_LEGACY | В текущем `main` relation находится внутри `contentBlocks` дня 12. В предыдущем V2-аудите был сигнал о ложном marker-match; автоматически не менять в рамках нового прохода. |
 | `tour_brazil_dunes_13d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | legacy_inside_day | 5 | 6 | LINKED_EXISTING_LEGACY | Внутри `contentBlocks` дня 5; историческое исключение |
 | `tour_brazil_south_12d` | `excursion_source_polet_na_vertolete_nad_rio` | between_days | 3 | 4 | LINKED_EXISTING | Точный match по V2/original: standalone-полет над Рио после дня 3; локальная карточка заменена на существующую каноническую Excursion. |
-| `tour_brazil_south_12d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | legacy_inside_day | 4 | 5 | LINKED_EXISTING_LEGACY | Внутри `contentBlocks` дня 4; историческое исключение |
+| `tour_brazil_south_12d` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 4 | 5 | LINKED_EXISTING | Извлечена из `contentBlocks` дня 4 в отдельную карточку между днями 4 и 5; дублирующее описание внутри дня удалено. |
+| `tour_brazil_south_12d` | `excursion_source_makuko_safari` | between_days | 4 | 5 | LINKED_EXISTING | Извлечена из текста дня 4 в отдельную карточку между днями 4 и 5; используется существующая каноническая Excursion `makuko-safari`. |
 | `tour_source_iguacu_falls` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | legacy_inside_day | 2 | 3 | LINKED_EXISTING_LEGACY | Внутри `contentBlocks` дня 2; историческое исключение |
 
 ## 5. Как фиксировать новую найденную экскурсию

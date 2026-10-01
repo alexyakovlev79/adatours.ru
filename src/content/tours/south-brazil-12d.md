@@ -91,14 +91,8 @@ itinerary:
       - src: /media/tours/south-brazil-12d/itinerary/day-03-enhanced-20260930.webp
         alt: "Корковадо и Рио-де-Жанейро"
         intendedSlot: "itinerary:day-3"
-  - title: "Полет над Рио на вертолете"
+  - excursionRef: excursion_source_polet_na_vertolete_nad_rio
     places: ["Рио-де-Жанейро"]
-    text: |-
-      При желании можно заказать вертолетную прогулку над городом. С воздуха видны океан, белые пляжи, зеленые горы, яхты и кварталы Рио. Предусмотрены варианты полета продолжительностью 6 или 13 минут, в зависимости от выбранной программы.
-    images:
-      - src: /media/tours/south-brazil-12d/itinerary/extra-helicopter-enhanced-20260930.webp
-        alt: "Полет над Рио-де-Жанейро"
-        intendedSlot: "itinerary:extra:Полет над Рио на вертолете"
   - day: 4
     title: "Рио-де-Жанейро - Фоз-ду-Игуасу"
     places: ["Рио-де-Жанейро", "Фоз-ду-Игуасу"]

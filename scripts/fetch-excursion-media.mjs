@@ -1,20 +1,36 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 
-const pageUrl = 'https://brasiltours.ru/ostrov-santa-krus';
-
 const files = [
   {
     url: 'https://brasiltours.ru/image/galapagos%20diving%202.png',
     path: 'public/media/excursions/ostrov-santa-krus/hero.png',
+    referer: 'https://brasiltours.ru/ostrov-santa-krus',
   },
   {
     url: 'https://brasiltours.ru/image/galapagos4.png',
     path: 'public/media/excursions/ostrov-santa-krus/gallery-1.png',
+    referer: 'https://brasiltours.ru/ostrov-santa-krus',
   },
   {
     url: 'https://brasiltours.ru/image/galapags.png',
     path: 'public/media/excursions/ostrov-santa-krus/gallery-2.png',
+    referer: 'https://brasiltours.ru/ostrov-santa-krus',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/equador/10-equador-galapagos.jpg',
+    path: 'public/media/excursions/tur-na-ostrov-florena/hero.jpg',
+    referer: 'https://brasiltours.ru/tur-na-ostrov-florena',
+  },
+  {
+    url: 'https://brasiltours.ru/image/galapagos4.png',
+    path: 'public/media/excursions/tur-na-ostrov-florena/gallery-1.png',
+    referer: 'https://brasiltours.ru/tur-na-ostrov-florena',
+  },
+  {
+    url: 'https://brasiltours.ru/image/galapagos.png',
+    path: 'public/media/excursions/tur-na-ostrov-florena/gallery-2.png',
+    referer: 'https://brasiltours.ru/tur-na-ostrov-florena',
   },
 ];
 
@@ -24,7 +40,7 @@ for (const file of files) {
     redirect: 'follow',
     headers: {
       'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/154 Safari/537.36',
-      referer: pageUrl,
+      referer: file.referer,
       accept: 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
     },
   });

@@ -19,13 +19,13 @@ hero:
   src: /media/excursions/jekskursija-v-tigre/hero-enhanced-20261001.webp
   alt: Экскурсия по Тигре, Аргентина
 gallery:
-  - src: /media/excursions/jekskursija-v-tigre/gallery-1.jpg
+  - src: /media/excursions/jekskursija-v-tigre/gallery-1-enhanced-20261001.webp
     alt: Буэнос-Айрес, Аргентина
-  - src: /media/excursions/jekskursija-v-tigre/gallery-2.png
+  - src: /media/excursions/jekskursija-v-tigre/gallery-2-enhanced-20261001.webp
     alt: Прогулка по дельте Рио-де-ла-Плата
-  - src: /media/excursions/jekskursija-v-tigre/gallery-3.png
+  - src: /media/excursions/jekskursija-v-tigre/gallery-3-enhanced-20261001.webp
     alt: Клуб морских гонок в Тигре
-  - src: /media/excursions/jekskursija-v-tigre/gallery-4.png
+  - src: /media/excursions/jekskursija-v-tigre/gallery-4-enhanced-20261001.webp
     alt: Набережная Тигре
 route:
   - Буэнос-Айрес

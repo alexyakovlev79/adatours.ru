@@ -17,16 +17,16 @@ language: []
 priceFrom: 165
 currency: USD
 hero:
-  src: /media/excursions/favela-tur/hero.jpg
+  src: /media/excursions/favela-tur/hero-enhanced-20261001.webp
   alt: Фавелы Рио-де-Жанейро на склонах города
 gallery:
-  - src: /media/excursions/favela-tur/gallery-1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: Вид на Рио-де-Жанейро и Корковадо
-  - src: /media/excursions/favela-tur/gallery-2.png
+  - src: /media/excursions/favela-tur/gallery-2-enhanced-20261001.webp
     alt: Улицы фавелы в Рио-де-Жанейро
-  - src: /media/excursions/favela-tur/gallery-3.jpg
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp
     alt: Панорама Рио-де-Жанейро
-  - src: /media/excursions/favela-tur/gallery-4.png
+  - src: /media/excursions/favela-tur/gallery-4-enhanced-20261001.webp
     alt: Городской пейзаж Рио-де-Жанейро
 route:
   - Рио-де-Жанейро

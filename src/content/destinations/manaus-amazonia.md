@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: >-
   Манаус можно соединить с несколькими днями в джунглях Амазонии: театр Амазонас, встреча вод, лодж, лодочные маршруты, рыбалка, ночное сафари и природные программы.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/amazon.jpg
+  src: /media/destinations/manaus-amazonia/hero-enhanced-20261001.webp
   alt: Амазония в Бразилии
 gallery:
   - src: /media/home/amazon-enhanced-20260930.webp
@@ -38,7 +38,7 @@ featureBands:
     title: Город перед джунглями
     text: >-
       В Манаусе сохранился театр Амазонас, связанный с периодом резинового бума. Город становится отправной точкой для дальнейшей природной программы.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/amazon.jpg
+    image: /media/destinations/manaus-amazonia/hero-enhanced-20261001.webp
   - eyebrow: Амазония
     title: Встреча вод и жизнь на реке
     text: >-

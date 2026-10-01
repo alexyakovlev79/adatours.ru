@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Сальвадор в штате Баия раскрывается через Пелуриньо, подъемник Ласерда, церкви и площади исторического центра, музыку, капоэйру, афро-бразильские традиции и отдых у океана.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/salvador-da-bahia-1200x546.webp
+  src: /media/destinations/salvador/hero-enhanced-20261001.webp
   alt: Исторический центр Сальвадора в Бразилии
 gallery:
   - src: /media/destinations/salvador/gallery-1-enhanced-20261001.webp
@@ -38,12 +38,12 @@ featureBands:
     title: Пелуриньо и верхний город
     text: >-
       В историческом центре Сальвадора цветные фасады, площади, церкви и крутые улицы собираются в один городской маршрут. Подъемник Ласерда связывает верхнюю и нижнюю части города.
-    image: https://brasiltours.ru/image/cache/catalog/category/B/N/BN5107_8-1920x1080.webp
+    image: /media/destinations/salvador/featureBands-1-enhanced-20261001.webp
   - eyebrow: Культура
     title: Музыка, капоэйра и афро-бразильские традиции
     text: >-
       Сальвадор особенно интересен тем, как история Баии продолжает жить в музыке, кухне, религиозных традициях, уличных выступлениях и капоэйре.
-    image: https://brasiltours.ru/image/cache/catalog/category/B/N/BN3980_10-1920x1080.webp
+    image: /media/destinations/salvador/featureBands-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-salvador-de-baiya-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-salvador-de-baiya-braziliya__78c919ac.md
 updatedAt: 2026-09-24

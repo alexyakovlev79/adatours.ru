@@ -9,7 +9,7 @@ destinationType: resort
 summary: >-
   Прайя-ду-Форте находится примерно в 85 км от Сальвадора. Здесь сочетаются атлантические пляжи, морские активности, природоохранные проекты с морскими черепахами и руины комплекса Гарсия-де-Авила.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/praia-do-forte.jpg
+  src: /media/destinations/praia-do-forte/hero-enhanced-20261001.webp
   alt: Побережье Прайя-ду-Форте в штате Баия
 gallery: []
 themes:

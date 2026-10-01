@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Сан-Луис, столица штата Мараньян, подходит для культурной остановки перед Ленсойс-Мараньенсес: исторический центр UNESCO, колониальная архитектура, фасады с азулежу, рынки и атлантическое побережье.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/maranhao.jpg
+  src: /media/destinations/sao-luis/hero-enhanced-20261001.webp
   alt: Сан-Луис в штате Мараньян, Бразилия
 gallery: []
 themes:

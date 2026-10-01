@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Сан-Паулу подходит для поездки, где важны современная городская Бразилия, музеи, архитектура, гастрономия, деловые встречи и большой выбор культурных событий.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/sao-paulo-2.jpg
+  src: /media/destinations/sao-paulo/hero-enhanced-20261001.webp
   alt: Панорама Сан-Паулу, Бразилия
 gallery: []
 themes:

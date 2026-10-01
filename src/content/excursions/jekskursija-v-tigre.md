@@ -16,7 +16,7 @@ language: []
 priceFrom: 100
 currency: USD
 hero:
-  src: /media/excursions/jekskursija-v-tigre/hero.jpg
+  src: /media/excursions/jekskursija-v-tigre/hero-enhanced-20261001.webp
   alt: Экскурсия по Тигре, Аргентина
 gallery:
   - src: /media/excursions/jekskursija-v-tigre/gallery-1.jpg

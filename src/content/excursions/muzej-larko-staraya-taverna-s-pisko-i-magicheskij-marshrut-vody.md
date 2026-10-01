@@ -26,9 +26,9 @@ gallery:
     alt: Волшебный круговорот воды в Парке-де-ла-Ресерва
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
     alt: Лима, Перу
-  - src: https://brasiltours.ru/image/lima%20larko.png
+  - src: /media/tours/peru-8d/itinerary/day-08-enhanced-20261001.webp
     alt: Музей Ларко в Лиме
-  - src: https://brasiltours.ru/image/lima.png
+  - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
     alt: Городской пейзаж Лимы
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-5-enhanced-20261001.webp
     alt: Фонтаны Парка-де-ла-Ресерва

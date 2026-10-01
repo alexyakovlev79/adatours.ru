@@ -21,13 +21,13 @@ hero:
   src: /media/excursions/polet-na-deltaplane-nad-rio/hero-enhanced-20261001.webp
   alt: Полет на дельтаплане над Рио-де-Жанейро
 gallery:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-praia-da-pipa-1.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-11-enhanced-20261001.webp
     alt: Пляж Пепино в Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-de-janeiro1.jpg
+  - src: /media/excursions/polet-na-deltaplane-nad-rio/gallery-2-enhanced-20261001.webp
     alt: Вид с высоты на Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-10-22-38-13-19.jpg
+  - src: /media/excursions/polet-na-deltaplane-nad-rio/gallery-3-enhanced-20261001.webp
     alt: Гора Педра-Бонита в Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/deltaplan.jpg
+  - src: /media/excursions/polet-na-deltaplane-nad-rio/gallery-4-enhanced-20261001.webp
     alt: Старт на дельтаплане с инструктором
 route:
   - Педра-Бонита

@@ -9,12 +9,12 @@ destinationType: resort
 summary: >-
   Ангра-дус-Рейс на Коста-Верде подходит для отдыха у моря после Рио: острова и бухты, пляжи, катамараны, небольшие катера и яхты, спокойные отели и поездки по побережью.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/jaume-galofre-g8jgfpsexfq-unsplash.jpg
+  src: /media/destinations/angra-dos-reis/hero-enhanced-20261001.webp
   alt: Побережье Ангра-дус-Рейс, Бразилия
 gallery:
-  - src: https://brasiltours.ru/image/catalog/category/2/2/2248997743_fd73ffba2e_o.jpg
+  - src: /media/destinations/angra-dos-reis/gallery-1-enhanced-20261001.webp
     alt: Острова и бухты у Ангра-дус-Рейс
-  - src: https://brasiltours.ru/image/catalog/category/1/2/126357158_32405f8243_o.jpg
+  - src: /media/destinations/angra-dos-reis/gallery-2-enhanced-20261001.webp
     alt: Атлантическое побережье Ангра-дус-Рейс
 themes:
   - beach
@@ -40,12 +40,12 @@ featureBands:
     title: Острова, бухты и морские маршруты
     text: >-
       Из Ангра-дус-Рейс можно выходить к островам на катамаране, небольшом катере или яхте. Такой день легко сделать спокойным пляжным маршрутом или частью частной программы по Коста-Верде.
-    image: https://brasiltours.ru/image/catalog/category/2/2/2248997743_fd73ffba2e_o.jpg
+    image: /media/destinations/angra-dos-reis/gallery-1-enhanced-20261001.webp
   - eyebrow: Отдых
     title: Несколько дней между Рио и островами
     text: >-
       Ангра подходит для паузы после насыщенной городской программы: море, отель, пляж и короткие поездки по побережью. Формат можно адаптировать для пары, семьи или небольшой частной группы.
-    image: https://brasiltours.ru/image/catalog/category/1/2/126357158_32405f8243_o.jpg
+    image: /media/destinations/angra-dos-reis/gallery-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii__37f42b69.md
 updatedAt: 2026-09-24

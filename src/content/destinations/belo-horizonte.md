@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Белу-Оризонти, столица штата Минас-Жерайс, дает современную городскую часть маршрута и удобную точку для поездок по историческому региону. В самом городе основной архитектурный сюжет связан с Оскаром Нимейером и Пампульей.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/belo-horizonte-3.jpg
+  src: /media/destinations/belo-horizonte/hero-enhanced-20261001.webp
   alt: Белу-Оризонти, столица штата Минас-Жерайс
 gallery: []
 themes:
@@ -37,12 +37,12 @@ featureBands:
     title: Пампулья и Оскар Нимейер
     text: >-
       Пампулья и проекты Оскара Нимейера дают Белу-Оризонти сильную архитектурную линию и хорошо дополняют маршрут по Минас-Жерайс.
-    image: https://brasiltours.ru/image/cache/catalog/category/B/N/BN20229_6-1920x1080.webp
+    image: /media/destinations/belo-horizonte/featureBands-1-enhanced-20261001.webp
   - eyebrow: Маршрут
     title: Городской вход в Минас-Жерайс
     text: >-
       Белу-Оризонти удобно использовать как логистическую точку для Ору-Прету и других исторических мест штата, а затем продолжать маршрут внутренним перелетом.
-    image: https://brasiltours.ru/image/cache/catalog/category/p/c/pca-estacao1_01-1920x1080.webp
+    image: /media/destinations/belo-horizonte/featureBands-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-belu-orizonte-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-belu-orizonte-v-brazilii__b4f01d5a.md
 updatedAt: 2026-09-25

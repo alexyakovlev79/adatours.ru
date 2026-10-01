@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Бразилиа, столица Бразилии на Центральном плоскогорье, интересна прежде всего модернистской архитектурой. Площадь Трех властей, Национальный конгресс и кафедральный собор формируют основной городской маршрут.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/brasilia.jpg
+  src: /media/destinations/brasilia/hero-enhanced-20261001.webp
   alt: Архитектура Бразилиа, столицы Бразилии
 gallery: []
 themes:

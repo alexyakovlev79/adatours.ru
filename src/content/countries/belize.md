@@ -9,41 +9,9 @@ searchAliases:
 summary: >-
   Карибское море, Белизский барьерный риф, острова, тропические леса и археологические центры майя. Ada Tours может соединить морскую часть поездки с маршрутами по материковому Белизу и соседним странам Центральной Америки.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/belize/12-1920x1080.webp
+  src: https://brasiltours.ru/image/countries/belize/12.jpg
   alt: Снорклинг в Белизе
-gallery:
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN12163_7-1920x1080.webp
-    alt: Пляж Белиза на Карибском море
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN13031_1-1920x1080.webp
-    alt: Руины майя в Белизе
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN14870_2-1920x1080.webp
-    alt: Археологический памятник майя в Белизе
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN16031_25-1920x1080.webp
-    alt: Природа Белиза
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN22330_27-1920x1080.webp
-    alt: Путешествие по Белизу
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN16031_17-1920x1080.webp
-    alt: Тропический пейзаж Белиза
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN22330_7-1920x1080.webp
-    alt: Пляжный отдых в Белизе
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN9002_8-1920x1080.webp
-    alt: Карибское побережье Белиза
-  - src: https://brasiltours.ru/image/countries/belize/ambergris-caye-2.jpg
-    alt: Остров Амбергрис-Кайе
-  - src: https://brasiltours.ru/image/countries/belize/beliz-siti-2.jpg
-    alt: Белиз-сити
-  - src: https://brasiltours.ru/image/countries/belize/caye-caulker-2.jpg
-    alt: Остров Кайе-Колкер
-  - src: https://brasiltours.ru/image/countries/belize/kajo-2.jpg
-    alt: Кайо и руины майя
-  - src: https://brasiltours.ru/image/countries/belize/orange-walk-2.jpg
-    alt: Ориндж-Уолк
-  - src: https://brasiltours.ru/image/countries/belize/222.jpg
-    alt: Пласенсия
-  - src: https://brasiltours.ru/image/countries/belize/233.jpg
-    alt: Пунта-Горда
-  - src: https://brasiltours.ru/image/countries/belize/san-ignacio.jpg
-    alt: Сан-Игнасио
+gallery: []
 regions:
   - Амбергрис-Кайе
   - Белиз-сити
@@ -64,11 +32,11 @@ featureBands:
   - eyebrow: Карибское море
     title: Рифы, острова и снорклинг
     text: Белиз позволяет соединить пляжный отдых с дайвингом и снорклингом у коралловых рифов и островов Карибского моря.
-    image: https://brasiltours.ru/image/cache/catalog/category/B/N/BN12163_7-1920x1080.webp
+    image: https://brasiltours.ru/image/catalog/category/B/N/BN12163_7.jpg
   - eyebrow: Наследие майя
     title: Руины среди тропических лесов
     text: В материковой части страны маршрут можно строить вокруг археологических центров майя, джунглей, пещер и природных заповедников.
-    image: https://brasiltours.ru/image/cache/catalog/category/B/N/BN13031_1-1920x1080.webp
+    image: https://brasiltours.ru/image/catalog/category/B/N/BN13031_1.jpg
   - eyebrow: Острова
     title: Амбергрис-Кайе и Кайе-Колкер
     text: Островную часть путешествия можно совместить с Белиз-сити, Кайо, Сан-Игнасио и другими остановками на материке.

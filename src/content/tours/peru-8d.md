@@ -49,7 +49,7 @@ itinerary:
       
       Лима расположена на берегу Тихого океана. Город основали испанцы, поэтому европейская архитектура здесь соседствует с памятниками эпохи инков. После размещения можно отдохнуть после перелета и начать знакомство со столицей Перу в своем темпе.
     images:
-      - src: https://brasiltours.ru/image/lima3.png
+      - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
         alt: "Лима, Перу"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -76,7 +76,7 @@ itinerary:
       
       Дополнительно можно посетить кафедральный собор Куско. Стоимость экскурсии продолжительностью около 40 минут - $20.
     images:
-      - src: https://brasiltours.ru/image/Lima-Peru.png
+      - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
         alt: "Лима и перелет в Куско"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -94,7 +94,7 @@ itinerary:
       
       Затем вы спуститесь на автобусе в поселок. Обед пройдет в ресторане национальной кухни El MAPI. После обеда - поезд обратно и трансфер в гостиницу в Куско.
     images:
-      - src: https://brasiltours.ru/image/cusco.png
+      - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
         alt: "Мачу-Пикчу и Куско, Перу"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -103,7 +103,7 @@ itinerary:
     text: |-
       Завтрак. Свободный день в Куско.
     images:
-      - src: https://brasiltours.ru/image/cusco%20plaza%20de%20armas.png
+      - src: /media/tours/peru-8d/itinerary/day-04-enhanced-20261001.webp
         alt: "Куско, Перу"
         intendedSlot: "itinerary:day-4"
   - excursionRef: excursion_peru_sacred_valley_full_day
@@ -126,7 +126,7 @@ itinerary:
       
       В дороге вы проведете около 10 часов. В конце дня - прибытие в Пуно и размещение в гостинице Conde de Lemos Inn 3*.
     images:
-      - src: https://brasiltours.ru/image/countries/peru/titikaka-peru.png
+      - src: /media/tours/peru-8d/itinerary/day-05-enhanced-20261001.webp
         alt: "Дорога из Куско в Пуно"
         intendedSlot: "itinerary:day-5"
   - day: 6

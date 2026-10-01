@@ -174,6 +174,23 @@ const files = [
     referer: 'https://brasiltours.ru/punta-del-este-i-piriapolis',
   },
 
+
+  {
+    url: 'https://brasiltours.ru/image/countries/bolivia/el-fluerte.jpg',
+    path: 'public/media/excursions/samaipata-tur/hero.jpg',
+    referer: 'https://brasiltours.ru/samaipata-tur',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/bolivia/sapaita.jpg',
+    path: 'public/media/excursions/samaipata-tur/gallery-1.jpg',
+    referer: 'https://brasiltours.ru/samaipata-tur',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/bolivia/sapaita1.jpg',
+    path: 'public/media/excursions/samaipata-tur/gallery-2.jpg',
+    referer: 'https://brasiltours.ru/samaipata-tur',
+  },
+
 ];
 
 for (const file of files) {

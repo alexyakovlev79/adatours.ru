@@ -9,7 +9,7 @@ destinationType: resort
 summary: >-
   Жерикоакоара на северо-востоке Бразилии сочетает океанский пляж, белые дюны и лагуны. В программу можно включить поездки на багги, прогулки верхом и на шхуне, серфинг, Lago Azul и Lago Paraiso.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/jericoacoara.jpg
+  src: /media/destinations/jericoacoara/hero-enhanced-20261001.webp
   alt: Пляж и дюны Жерикоакоара в Бразилии
 gallery: []
 themes:

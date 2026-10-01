@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Итакаре в штате Баия соединяет атлантическое побережье, лес Мата-Атлантика, водопады и небольшой исторический центр. Вокруг города много пляжей, поэтому сюда стоит заложить несколько дней для природы и отдыха у океана.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/itacare.jpg
+  src: /media/destinations/itacare/hero-enhanced-20261001.webp
   alt: Побережье Итакаре в штате Баия
 gallery: []
 themes:

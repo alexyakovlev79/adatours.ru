@@ -13,9 +13,11 @@ destinationType: city
 summary: >-
   Арекипа на юге Перу известна историческим центром из светлого вулканического камня, монастырем Санта-Каталина, Пласа-де-Армас и маршрутами к каньону Колка.
 hero:
-  src: https://brasiltours.ru/image/catalog/category/f/i/file_6.jpg
+  src: https://brasiltours.ru/image/countries/peru/111.jpg
   alt: Арекипа, Перу
 gallery:
+  - src: https://brasiltours.ru/image/catalog/category/f/i/file_6.jpg
+    alt: Арекипа, Перу
   - src: https://brasiltours.ru/image/catalog/category/a/r/arequipa3.jpg
     alt: Историческая застройка Арекипы
   - src: https://brasiltours.ru/image/catalog/category/a/r/arequipa.jpg

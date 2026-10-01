@@ -16,7 +16,7 @@ language: []
 priceFrom: 400
 currency: USD
 hero:
-  src: /media/excursions/tropicheskie-ostrova-rajskoe-naslazhdenie/hero.webp
+  src: /media/excursions/tropicheskie-ostrova-rajskoe-naslazhdenie/hero-enhanced-20261001.webp
   alt: Тропические острова и бирюзовая вода у Ангра-дус-Рейс
 gallery: []
 route:

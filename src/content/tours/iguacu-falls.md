@@ -42,7 +42,7 @@ itinerary:
 
       Если церемония пройдет в свадебном образе, свадебное платье нужно привезти с собой.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/f/i/file_57_36.png
+      - src: /media/tours/iguacu-falls/itinerary/day-01-enhanced-20261001.webp
         alt: "День 1: прибытие в Фоз-ду-Игуасу"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -63,7 +63,7 @@ itinerary:
 
           Вечером мы рекомендуем романтический ужин в ресторане с видом на водопады.
     images:
-      - src: https://brasiltours.ru/image/svadb3.png
+      - src: /media/tours/iguacu-falls/itinerary/day-02-enhanced-20261001.webp
         alt: "День 2: свадебная церемония у водопадов Игуасу"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -74,7 +74,7 @@ itinerary:
 
       По желанию путешествие можно продолжить в Рио-де-Жанейро, Буэнос-Айресе, на пляжных курортах Бразилии, в Амазонии или другом направлении.
     images:
-      - src: https://brasiltours.ru/image/wedding.png
+      - src: /media/tours/iguacu-falls/itinerary/day-03-enhanced-20261001.webp
         alt: "День 3: завершение свадебного тура в Фоз-ду-Игуасу"
         intendedSlot: "itinerary:day-3"
 included: []

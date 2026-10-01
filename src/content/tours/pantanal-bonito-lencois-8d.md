@@ -96,7 +96,7 @@ itinerary:
       
       Бонито считается одним из самых известных центров экотуризма Бразилии. Здесь древние леса соседствуют со сталактитовыми и сталагмитовыми пещерами, водопадами и прозрачными реками, в которых хорошо видны экзотические рыбы.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bonito-waterfall.jpg
+      - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-03-enhanced-20261001.webp
         alt: "Водопады в Бонито"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -109,7 +109,7 @@ itinerary:
       
       После обеда программа продолжается на реке Сукури. Здесь запланирован снорклинг в кристально чистой воде. Благодаря прозрачности реки подводную флору и фауну можно рассматривать на расстоянии до 50 метров. Во время плавания вокруг видны водные растения и рыбы, а течение позволяет спокойно наблюдать за подводным миром.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bra-bonito.jpg
+      - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-04-enhanced-20261001.webp
         alt: "Прозрачная вода в Бонито"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -122,7 +122,7 @@ itinerary:
       
       Исторический центр Сан-Луиса включен в список Всемирного наследия ЮНЕСКО. Здесь сохранилось много зданий XVII и XVIII веков. Одна из самых заметных деталей городской архитектуры, красочные азулежу, керамические плитки, которыми украшены фасады домов. Прогулка по старым кварталам позволяет увидеть Сан-Луис как живой город, где колониальная застройка остается частью современной городской среды.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/bra-bonito-1-jpg.jpg
+      - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-05-enhanced-20261001.webp
         alt: "Бонито, Бразилия"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -141,7 +141,7 @@ itinerary:
       
       Ночь в Баррейриньясе.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/img-20230303-wa0021.jpg
+      - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-06-enhanced-20261001.webp
         alt: "Дюны Ленсойс-Мараньенсес"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -154,7 +154,7 @@ itinerary:
       
       После экскурсии трансфер в Сан-Луис. Ночь в Сан-Луисе.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/barrerhinas.png
+      - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-07-enhanced-20261001.webp
         alt: "Баррейриньяс и побережье Мараньяна"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -163,7 +163,7 @@ itinerary:
     text: |-
       Трансфер в аэропорт для вылета домой.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/lensojs.jpg
+      - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-08-enhanced-20261001.webp
         alt: "Ленсойс-Мараньенсес, Бразилия"
         intendedSlot: "itinerary:day-8"
 included:

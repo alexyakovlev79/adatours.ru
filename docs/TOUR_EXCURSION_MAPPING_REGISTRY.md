@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.27  
+Версия: 1.28  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **18** туров со статусом `Уникализировано`.
+В текущем реестре учтено **19** туров со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -170,12 +170,17 @@ missing_excursion_entities = 0
 | 286 | `tour_source_tur_v_surinam_dlya_nablyudeniya_za_pticami` | `src/content/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami.md` | Орнитологический тур в Суринам на 8 дней | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 291 | `tour_source_buenos_ajres_salta_iguasu` | `src/content/tours/buenos-ajres-salta-iguasu.md` | Буэнос-Айрес, Сальта и Игуасу | DONE_LINKED | 3 | 2026-10-02 |
 | 292 | `tour_source_vinnyj_tur_v_argentinu_i_chili` | `src/content/tours/vinnyj-tur-v-argentinu-i-chili.md` | Тур в Чили и Аргентину с винным регионом Мендоса на 9 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
+| 293 | `tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin` | `src/content/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin.md` | Восхождение на Аконкагуа 6962 м | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 291 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 293 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 293, 2026-10-02
+
+- **Строка 293 / `tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin`:** опубликована 20-дневная экспедиция «Восхождение на Аконкагуа 6962 м» из V2 + original. В исходнике дни 19–20 объединены одним резервным блоком; в production они нормализованы в 2 numbered days, поэтому `durationDays = 20` и число numbered days = 20. Самостоятельных дополнительных Excursion между днями и embedded excursion-модулей нет: переходы, акклиматизационные выходы, высотные лагеря и восхождение являются основной программой экспедиции. Инварианты: `production_excursion_refs = 0`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `missing_excursion_entities = 0`. Итог: `DONE_NO_RELATIONS`.
 
 ### Проверка v1.1 — строки 291–292, 2026-10-02
 

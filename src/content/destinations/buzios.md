@@ -12,9 +12,9 @@ hero:
   src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/dharmendra-sahu-ia2kjtrx8y4-unsplash-2-1200x522.webp
   alt: Побережье Бузиоса в Бразилии
 gallery:
-  - src: https://brasiltours.ru/image/cache/catalog/category/2/1/2180577202_cf51d7904f_b-1920x1080.webp
+  - src: /media/destinations/buzios/gallery-1-enhanced-20261001.webp
     alt: Бухта и пляж в Бузиосе
-  - src: https://brasiltours.ru/image/cache/catalog/category/9/1/910820702_d9ae7c5e69_b-1920x1080.webp
+  - src: /media/destinations/buzios/gallery-2-enhanced-20261001.webp
     alt: Океанское побережье Бузиоса
 themes:
   - beach

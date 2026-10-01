@@ -12,7 +12,7 @@ hero:
   src: https://brasiltours.ru/image/countries/brazil/new-pics/amazon.jpg
   alt: Амазония в Бразилии
 gallery:
-  - src: /media/prototype/amazon.jpg
+  - src: /media/home/amazon-enhanced-20260930.webp
     alt: Река и тропический лес Амазонии
 themes:
   - nature
@@ -43,7 +43,7 @@ featureBands:
     title: Встреча вод и жизнь на реке
     text: >-
       Одна из главных природных точек рядом с Манаусом – встреча темных вод Рио-Негро и более светлых вод Амазонки. Дальше путешествие продолжается на лодках и в джунглях.
-    image: /media/prototype/amazon.jpg
+    image: /media/home/amazon-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-brazilskuyu-amazonku-i-v-gorod-manaus
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-na-brazilskuyu-amazonku-i-v-gorod-manaus__791a2ef7.md
 updatedAt: 2026-09-24

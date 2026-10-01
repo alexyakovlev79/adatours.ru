@@ -38,7 +38,7 @@ hero:
   src: /media/tours/argentina-brazil-pipa-11d/hero-enhanced-20260930.webp
   alt: Прайя-де-Пипа, Бразилия
 gallery:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/florian-delee-sgq-0qddxs4-unsplash.jpg
+  - src: /media/destinations/el-calafate/hero-enhanced-20260930.webp
     alt: Патагония рядом с Эль-Калафате
 featured: false
 priority: 89

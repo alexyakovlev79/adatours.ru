@@ -12,7 +12,7 @@ hero:
   src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/paraty-1200x538.webp
   alt: Исторический центр Парати в Бразилии
 gallery:
-  - src: https://brasiltours.ru/image/cache/catalog/category/p/a/paraty1-1920x1080.webp
+  - src: /media/destinations/paraty/gallery-1-enhanced-20261001.webp
     alt: Колониальная архитектура Парати
   - src: https://brasiltours.ru/image/cache/catalog/category/p/a/paraty_mar2-1920x1080.webp
     alt: Море и острова у Парати

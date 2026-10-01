@@ -17,7 +17,7 @@ hero:
   src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x787.webp
   alt: Рио-де-Жанейро вечером
 gallery:
-  - src: /media/prototype/rio-panorama.jpg
+  - src: /media/catalog/tury/hero-enhanced-20260930.webp
     alt: Панорама Рио-де-Жанейро
 themes:
   - city
@@ -50,7 +50,7 @@ featureBands:
     title: Лапа и культурная жизнь Рио
     text: >-
       После дневных экскурсий программу можно продолжить Лапой, самбой и форро, концертом или спокойным вечером у океана.
-    image: /media/prototype/rio-night.jpg
+    image: /media/home/rio-night-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii__7f36c92d.md
 updatedAt: 2026-09-25

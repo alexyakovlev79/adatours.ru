@@ -14,7 +14,7 @@ hero:
 gallery:
   - src: https://brasiltours.ru/image/cache/catalog/category/b/o/bonitospring-1920x1080.webp
     alt: Прозрачная вода в окрестностях Бонито
-  - src: https://brasiltours.ru/image/cache/catalog/category/b/o/bonito43-1920x1080.webp
+  - src: /media/destinations/bonito/gallery-2-enhanced-20261001.webp
     alt: Активный отдых на воде в Бонито
 themes:
   - nature

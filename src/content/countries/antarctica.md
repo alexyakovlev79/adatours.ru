@@ -13,23 +13,23 @@ hero:
   src: /media/countries/antarctica/hero-enhanced-20261001.webp
   alt: Айсберги у побережья Антарктиды
 gallery:
-  - src: https://brasiltours.ru/image/catalog/category/5/9/592612372_09cda66c76.jpg
+  - src: /media/countries/antarktida/gallery-1-enhanced-20261001.webp
     alt: Экспедиционное судно в Антарктиде
-  - src: https://brasiltours.ru/image/catalog/category/a/n/antarctic.jpg
+  - src: /media/countries/antarktida/gallery-2-enhanced-20261001.webp
     alt: Ледяной пейзаж Антарктиды
-  - src: https://brasiltours.ru/image/catalog/category/i/c/iceberg.jpg
+  - src: /media/countries/antarktida/gallery-3-enhanced-20261001.webp
     alt: Айсберг в водах Антарктиды
   - src: https://brasiltours.ru/image/catalog/category/p/i/pinquin.jpg
     alt: Пингвины в Антарктиде
-  - src: https://brasiltours.ru/image/catalog/category/a/n/antarctica.jpg
+  - src: /media/countries/antarktida/gallery-5-enhanced-20261001.webp
     alt: Айсберги и горы Антарктиды
   - src: https://brasiltours.ru/image/catalog/category/A/n/Antarctica.jpg
     alt: Высадка на лодке Zodiac в Антарктиде
-  - src: https://brasiltours.ru/image/catalog/category/f/i/file_23_34.jpg
+  - src: /media/countries/antarktida/gallery-7-enhanced-20261001.webp
     alt: Наблюдение за китами в Антарктиде
   - src: https://brasiltours.ru/image/catalog/category/f/i/file_24_18.jpg
     alt: Айсберги в антарктических водах
-  - src: https://brasiltours.ru/image/catalog/category/A/n/Antarctica1.jpg
+  - src: /media/countries/antarktida/gallery-9-enhanced-20261001.webp
     alt: Пингвины на берегу Антарктиды
 regions:
   - Антарктический полуостров

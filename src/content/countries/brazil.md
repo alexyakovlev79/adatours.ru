@@ -13,9 +13,9 @@ hero:
   src: https://brasiltours.ru/image/cache/countries/brazil/tild3463-3039-4366-b661-663030613337-thales-botelho-de-so-1680x900.webp
   alt: Панорама Рио-де-Жанейро
 gallery:
-  - src: /media/prototype/lencois.jpg
+  - src: /media/home/lencois-enhanced-20260930.webp
     alt: Дюны и лагуны Ленсойс-Мараньенсис
-  - src: /media/prototype/amazon.jpg
+  - src: /media/home/amazon-enhanced-20260930.webp
     alt: Амазония
 regions:
   - Рио-де-Жанейро
@@ -42,11 +42,11 @@ featureBands:
   - eyebrow: Природа
     title: Ленсойс-Мараньенсис
     text: Белые дюны и сезонные лагуны. Один из самых необычных природных пейзажей Бразилии.
-    image: /media/prototype/lencois.jpg
+    image: /media/home/lencois-enhanced-20260930.webp
   - eyebrow: Амазония
     title: Река, лес и лодж
     text: Амазонии лучше отдать несколько дней и заранее связать перелеты, сезон и формат лоджа.
-    image: /media/prototype/amazon.jpg
+    image: /media/home/amazon-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/braziliya
 updatedAt: 2026-09-24
 ---

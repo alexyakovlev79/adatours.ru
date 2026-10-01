@@ -12,7 +12,7 @@ hero:
   src: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
   alt: Буэнос-Айрес, Аргентина
 gallery:
-  - src: /media/prototype/buenos-aires.jpg
+  - src: /media/home/buenos-aires-enhanced-20260930.webp
     alt: Улица Буэнос-Айреса
 themes:
   - city
@@ -37,7 +37,7 @@ featureBands:
     title: Ла-Бока, Сан-Тельмо и центр
     text: >-
       В один городской день можно соединить Ла-Боку и Сан-Тельмо с Пласа-де-Майо, Каса-Росадой и Обелиском, а музеи, галереи и театры оставить на продолжение прогулки.
-    image: /media/prototype/buenos-aires.jpg
+    image: /media/home/buenos-aires-enhanced-20260930.webp
   - eyebrow: За пределами центра
     title: Дельта Тигре и аргентинская пампа
     text: >-

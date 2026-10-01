@@ -12,7 +12,7 @@ hero:
   src: /media/destinations/el-calafate/hero-enhanced-20260930.webp
   alt: Патагония рядом с Эль-Калафате
 gallery:
-  - src: /media/prototype/patagonia.jpg
+  - src: /media/home/patagonia-enhanced-20260930.webp
     alt: Горный пейзаж Патагонии
 themes:
   - nature
@@ -37,7 +37,7 @@ featureBands:
     title: Перито-Морено как главный природный сюжет
     text: >-
       Перито-Морено – самый известный ледник района Эль-Калафате и одна из главных причин ехать в эту часть Патагонии.
-    image: /media/prototype/patagonia.jpg
+    image: /media/home/patagonia-enhanced-20260930.webp
   - eyebrow: Активный день
     title: Ледники с воды и пешком
     text: >-

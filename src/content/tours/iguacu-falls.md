@@ -47,7 +47,7 @@ itinerary:
         intendedSlot: "itinerary:day-1"
   - day: 2
     title: "Свадебная церемония и фотосессия у водопадов"
-    places: ["водопады Игуасу", "Парк птиц"]
+    places: ["водопады Игуасу"]
     text: ""
     contentBlocks:
       - type: text
@@ -55,8 +55,6 @@ itinerary:
           Рано утром в номер придет профессиональный визажист и подготовит образ невесты.
 
           Затем состоится трансфер к месту церемонии на смотровой площадке у водопадов с бразильской стороны. После церемонии вы отправитесь на прогулку по самым красивым участкам парка.
-      - type: excursion
-        excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
       - type: text
         text: |-
           Во время прогулки пройдет фотосессия.
@@ -66,6 +64,8 @@ itinerary:
       - src: /media/tours/iguacu-falls/itinerary/day-02-enhanced-20261001.webp
         alt: "День 2: свадебная церемония у водопадов Игуасу"
         intendedSlot: "itinerary:day-2"
+  - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
+    places: ["Фоз-ду-Игуасу"]
   - day: 3
     title: "Трансфер в аэропорт"
     places: ["Фоз-ду-Игуасу"]

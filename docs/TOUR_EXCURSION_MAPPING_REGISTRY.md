@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.12  
+Версия: 1.13  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -14,7 +14,7 @@ Repo: `alexyakovlev79/adatours.ru`
 
 Полная методика обхода, сопоставления и создания новых Excursion:
 
-`docs/ADA_TOURS_TOUR_EXCURSION_LINKING_WORKFLOW_v1.0_2026-09-30.md`
+`docs/ADA_TOURS_TOUR_EXCURSION_LINKING_WORKFLOW_v1.1_2026-10-01.md`
 
 Новый чат должен прочитать **оба файла**: workflow + текущий registry.
 
@@ -31,69 +31,103 @@ Production excursions:
 
 ## 1. Правило сопоставления
 
-Текущий рабочий проход идет **по уникализированным турам**, сверху вниз по строкам Google Sheets.
+Текущий рабочий проход идет **по уникализированным турам**, сверху вниз по строкам Google Sheets, но перед продолжением обычной очереди нужно закрывать известные случаи старой архитектуры `legacy_inside_day`.
 
-Связь с канонической Excursion создается/фиксируется для **каждого самостоятельного элемента маршрута между двумя пронумерованными днями**. Это обязательный инвариант: самостоятельных текстовых карточек без целевой Excursion после завершения прохода оставаться не должно.
+### 1.1. Два источника самостоятельных Excursion
 
-Пример допустимой позиции:
+Самостоятельная экскурсия может быть:
+
+1. уже оформлена отдельным itinerary-item без `day` между двумя numbered days;
+2. ошибочно встроена внутрь numbered day как самостоятельный экскурсионный модуль.
+
+Второй случай **нельзя игнорировать**.
+
+Сильные признаки встроенной самостоятельной Excursion:
+
+- `type: excursion`;
+- отдельный подзаголовок/секция с собственным названием и описанием;
+- текст прямо перечисляет отдельные экскурсии: «вас ждут еще 2 экскурсии…»;
+- существует отдельная source/production Excursion;
+- у активности самостоятельный продуктовый scope: собственный маршрут, механика, длительность, цена, hero или отдельный набор фактов;
+- V2/original подтверждает, что это самостоятельная экскурсия.
+
+### 1.2. Нормализация embedded Excursion
+
+Если такая экскурсия находится внутри numbered day:
+
+1. найти или создать каноническую Excursion;
+2. удалить из дня ее дублирующие title/text/photo;
+3. удалить ставшую лишней фразу-перечисление;
+4. поставить отдельный `excursionRef` сразу после этого дня и до следующего numbered day;
+5. сохранить исходный порядок нескольких экскурсий;
+6. карточка должна получать title/body/hero только из canonical Excursion.
+
+Пример:
 
 ```text
-День 6
-→ самостоятельная экскурсия
-→ День 7
+БЫЛО:
+День 4
+  водопады
+  Парк птиц
+  Макуко-сафари
+День 5
+
+СТАЛО:
+День 4
+  только программа водопадов
+→ Парк птиц / excursionRef
+→ Макуко-сафари / excursionRef
+День 5
 ```
 
-Тогда в реестре фиксируются:
+### 1.3. Что действительно игнорировать
 
-- `tour_id`;
-- `excursion_id`;
-- после какого дня стоит экскурсия;
-- перед каким днем стоит экскурсия;
-- статус связи.
+Не создавать relation только из-за обычного проходного упоминания:
 
-Для каждого тура сначала считается:
+- одно упоминание названия без самостоятельного модуля;
+- неотделимая часть основной программы дня;
+- highlights;
+- included / notIncluded;
+- notes / FAQ;
+- цена;
+- alt / caption;
+- обычный абзац без самостоятельного продуктового scope.
+
+**Нахождение внутри `contentBlocks` само по себе больше не является основанием игнорировать экскурсию.**
+
+### 1.4. Инварианты
+
+До нормализации:
+
+```text
+existing_between_days = A
+embedded_excursion_modules = B
+```
+
+После нормализации:
 
 ```text
 standalone_between_days = N
-mapped_relation_rows = M
-missing_slots = N - M
+N = A + B
+mapped_relation_rows = N
+production_excursion_refs = N
+remaining_local_standalone_cards = 0
+remaining_embedded_excursion_modules = 0
+duplicate_excursion_text_inside_days = 0
+missing_excursion_entities = 0
 ```
 
-Тур нельзя считать полностью размеченным, пока `missing_slots != 0`.
+Тур нельзя считать полностью закрытым, пока любой из этих инвариантов нарушен.
 
-Если подходящая каноническая Excursion уже есть — использовать ее stable ID. Если отдельной Excursion раньше не существовало, нужно **сразу создать новую production Excursion из самостоятельного блока тура**: присвоить stable ID и URL, использовать только подтвержденные данные блока, не додумывать отсутствующие факты, вынести изображение в канонический `/media/excursions/{slug}/`, добавить страницу в основной Google Sheets и заменить локальную карточку тура на `excursionRef`. Самостоятельную карточку нельзя оставлять «просто текстом без связи».
+Если подходящая каноническая Excursion уже есть — использовать ее stable ID. Если отдельной Excursion раньше не существовало, нужно **сразу создать новую production Excursion** из подтвержденного источника/блока, не додумывать отсутствующие факты, вынести изображение в канонический `/media/excursions/{slug}/`, добавить страницу в основной Google Sheets и использовать `excursionRef`.
 
-### Игнорировать в новом проходе
+### 1.5. Старые `legacy_inside_day`
 
-Не создавать новую Tour↔Excursion связь, если экскурсия:
+После workflow v1.1 это **не допустимое постоянное состояние и не историческое исключение**.
 
-- упомянута только внутри текста дня;
-- находится внутри `contentBlocks` конкретного дня;
-- встречается в highlights;
-- встречается в included / notIncluded;
-- упомянута в notes / FAQ / цене / условиях;
-- присутствует только в alt / caption / фотографии;
-- встречается где-либо еще, где нет формализованной позиции **между днями**.
+Любая relation со статусом/положением `legacy_inside_day` означает технический долг: соответствующий тур нужно повторно нормализовать по v1.1. Уже существующую каноническую Excursion не пересоздавать; нужно только извлечь ее из numbered day и удалить дублирующий day content.
 
-Такие упоминания не считать совпадением и отдельно в реестр не заносить.
-
-Важно: это правило относится только к упоминаниям **внутри пронумерованного дня или других блоков**. Любой самостоятельный itinerary-item без `day`, стоящий между двумя днями, наоборот, обязан получить связь с Excursion.
-
-### Историческое исключение — «Парк птиц»
-
-«Парк птиц в Игуасу» был канонизирован **до принятия текущего правила**. В `main` уже существуют 7 связей с:
-
-`excursion_source_park_jekzoticheskih_ptic_v_iguasu`
-
-Каноническая excursion:
-
-`src/content/excursions/park-jekzoticheskih-ptic-v-iguasu.md`
-
-URL:
-
-`/ekskursii/park-jekzoticheskih-ptic-v-iguasu/`
-
-Из этих 7 связей 3 стоят отдельными itinerary-элементами между днями, 4 находятся внутри `contentBlocks` дня. **Эти 4 старые связи не использовать как прецедент для новых экскурсий и не удалять автоматически в рамках нового прохода.**
+---
 
 ## 2. Статусы обхода тура
 
@@ -103,7 +137,7 @@ URL:
 - `IN_PROGRESS` — чат начал этот тур, но не завершил;
 - `DONE_MAPPING` — тур полностью просмотрен; для каждого самостоятельного блока между днями уже существует production Excursion и определен ее `excursion_id`, но не все локальные карточки еще заменены на `excursionRef`; `missing_slots = 0`;
 - `DONE_LINKED` — все найденные связи уже реализованы в production через `excursionRef` и прошли build/deploy;
-- `DONE_NO_RELATIONS` — тур полностью просмотрен, самостоятельных блоков между днями нет;
+- `DONE_NO_RELATIONS` — тур полностью просмотрен по workflow v1.1: нет ни самостоятельных блоков между днями, ни самостоятельных excursion-модулей внутри numbered days;
 - `REVIEW` — есть неоднозначность, которую нельзя безопасно решить автоматически.
 
 ### Правило зависшего чата
@@ -129,8 +163,8 @@ URL:
 | 79 | `tour_brazil_adventure_17d` | `src/content/tours/brazil-adventure-17d.md` | Большое приключение по Бразилии за 17 дней | DONE_LINKED | 3 | 2026-09-30 |
 | 80 | `tour_brazil_pantanal_bonito_lencois_8d` | `src/content/tours/pantanal-bonito-lencois-8d.md` | Пантанал, Бонито и Ленсойс-Мараньенсес за 8 дней | DONE_NO_RELATIONS | 0 | 2026-09-30 |
 | 81 | `tour_brazil_recife_porto_noronha_10d` | `src/content/tours/brazil-northeast-recife-porto-noronha-10d.md` | Северо-восток Бразилии: Ресифи, Порту-ди-Галиньяш и Фернанду-ди-Норонья за 10 дней | DONE_NO_RELATIONS | 0 | 2026-09-30 |
-| 82 | `tour_brazil_gems_14d` | `src/content/tours/brazil-gems-14d.md` | Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-ду-Форте и Игуасу | DONE_NO_RELATIONS | 1 | 2026-09-30 |
-| 83 | `tour_brazil_dunes_13d` | `src/content/tours/brazil-dunes-13d.md` | Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа | DONE_NO_RELATIONS | 1 | 2026-10-01 |
+| 82 | `tour_brazil_gems_14d` | `src/content/tours/brazil-gems-14d.md` | Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-ду-Форте и Игуасу | PENDING | 1 | 2026-10-01 |
+| 83 | `tour_brazil_dunes_13d` | `src/content/tours/brazil-dunes-13d.md` | Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа | PENDING | 1 | 2026-10-01 |
 | 84 | `tour_argentina_brazil_pipa_11d` | `src/content/tours/argentina-brazil-pipa-11d.md` | Аргентина и Бразилия за 11 дней | DONE_LINKED | 3 | 2026-10-01 |
 | 85 | `tour_brazil_south_12d` | `src/content/tours/south-brazil-12d.md` | Южная Бразилия за 12 дней: Рио, Игуасу, Грамаду, каньоны и Флорианополис | DONE_LINKED | 3 | 2026-10-01 |
 | 286 | `tour_source_tur_v_surinam_dlya_nablyudeniya_za_pticami` | `src/content/tours/tur-v-surinam-dlya-nablyudeniya-za-pticami.md` | Орнитологический тур в Суринам на 8 дней | PENDING | 0 | 2026-09-30 |
@@ -139,7 +173,7 @@ URL:
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | PENDING | 0 | 2026-09-30 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | PENDING | 0 | 2026-09-30 |
 
-**Следующий тур для полного прохода:** строка **286**, `tour_source_tur_v_surinam_dlya_nablyudeniya_za_pticami`.
+**Следующий тур для полного прохода / v1.1-нормализации:** строка **82**, `tour_brazil_gems_14d`.
 
 ## 4. Уже существующие Tour↔Excursion связи
 
@@ -204,13 +238,14 @@ Excursion ID
 3. Иначе взять первый `PENDING` по Sheet row.
 4. Перед содержательным разбором поменять его статус здесь на `IN_PROGRESS`, чтобы параллельный/следующий чат не начал тот же тур.
 5. Прочитать текущий production MD тура целиком.
-6. Просмотреть последовательность `itinerary`.
-7. Рассматривать только самостоятельные элементы между двумя пронумерованными днями.
-8. Посчитать все самостоятельные itinerary-item без `day` между пронумерованными днями: `standalone_between_days = N`.
+6. Просмотреть последовательность `itinerary` и содержимое каждого numbered day (`text`, `contentBlocks`, вложенные секции, images).
+7. Найти уже существующие самостоятельные элементы между numbered days: `existing_between_days = A`.
+8. Найти самостоятельные excursion-модули, ошибочно встроенные внутрь numbered days: `embedded_excursion_modules = B`; извлечь их после соответствующего дня, удалить дублирующие title/text/photo и сохранить порядок.
+9. После нормализации посчитать `standalone_between_days = N`, где `N = A + B`.
 9. Для каждого элемента найти каноническую Excursion в основном Google Sheets / `src/content/excursions/`.
 10. Если match надежный — записать существующий stable ID.
 11. Если канонической Excursion нет — сразу создать production Excursion из данных standalone-блока тура; не выдумывать отсутствующие факты. Создать stable ID и URL, добавить строку в Google Sheets, вынести hero в канонический media-path и заменить карточку тура на `excursionRef`.
-12. Проверить `mapped_relation_rows = N`, `production_excursion_refs = N` и `missing_slots = 0`.
+12. Проверить `mapped_relation_rows = N`, `production_excursion_refs = N`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0` и `missing_slots = 0`.
 13. Если самостоятельных элементов нет — это нормальный результат и статус `DONE_NO_RELATIONS`.
 14. Если `missing_slots = 0` — поставить туру `DONE_MAPPING`.
 15. После фактической замены локальных карточек на `excursionRef`, создания недостающих Excursion и успешного deploy — `DONE_LINKED`.

@@ -191,9 +191,39 @@ const files = [
     referer: 'https://brasiltours.ru/samaipata-tur',
   },
 
-];
 
-for (const file of files) {
+  {
+    url: 'https://brasiltours.ru/image/countries/colombia/img-20220726-wa0018.jpg',
+    path: 'public/media/excursions/siti-tur-v-bogote/hero.jpg',
+    referer: 'https://brasiltours.ru/siti-tur-v-bogote',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/colombia/botero.jpg',
+    path: 'public/media/excursions/siti-tur-v-bogote/gallery-1.jpg',
+    referer: 'https://brasiltours.ru/siti-tur-v-bogote',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/colombia/img-20220726-wa0034.jpg',
+    path: 'public/media/excursions/siti-tur-v-bogote/gallery-2.jpg',
+    referer: 'https://brasiltours.ru/siti-tur-v-bogote',
+  },
+  {
+    url: 'https://brasiltours.ru/image/bogota%20colombia.png',
+    path: 'public/media/excursions/siti-tur-v-bogote/gallery-3.png',
+    referer: 'https://brasiltours.ru/siti-tur-v-bogote',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/colombia/img-20220726-wa0333.jpg',
+    path: 'public/media/excursions/siti-tur-v-bogote/gallery-4.jpg',
+    referer: 'https://brasiltours.ru/siti-tur-v-bogote',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/colombia/cartaghena2.jpg',
+    path: 'public/media/excursions/siti-tur-v-bogote/gallery-5.jpg',
+    referer: 'https://brasiltours.ru/siti-tur-v-bogote',
+  },
+
+];\n\nfor (const file of files) {
   await mkdir(dirname(file.path), { recursive: true });
   const response = await fetch(file.url, {
     redirect: 'follow',

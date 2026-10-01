@@ -6,7 +6,7 @@ slug: anna-avanesova
 status: approved
 role: Основатель и CEO Ada Tours
 photo:
-  src: https://adatours.com/assets/fastweb/img/team-anna.webp
+  src: /media/people/anna-avanesova/photo-src-enhanced-20261001.webp
   alt: Анна Аванесова, основатель и CEO Ada Tours
 languages: []
 expertise:

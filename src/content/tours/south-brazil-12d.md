@@ -38,9 +38,9 @@ hero:
   src: /media/tours/south-brazil-12d/hero-enhanced-20260930.webp
   alt: Флорианополис и побережье Южной Бразилии
 gallery:
-  - src: https://brasiltours.ru/image/cache/gramadu%20b-1920x1080.webp
+  - src: /media/tours/south-brazil-12d/gallery-1-src-enhanced-20261001.webp
     alt: Грамаду на юге Бразилии
-  - src: https://brasiltours.ru/image/cache/skyglass1-1920x1080.webp
+  - src: /media/tours/south-brazil-12d/gallery-2-src-enhanced-20261001.webp
     alt: Skyglass в Канеле
   - src: /media/tours/yuzhnaya-braziliya-rio-iguasu-gramado-florianopolis-12-dnej/gallery-3-enhanced-20261001.webp
     alt: Флорианополис в штате Санта-Катарина

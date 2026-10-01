@@ -34,7 +34,7 @@ hero:
   src: /media/tours/pantanal-bonito-lencois-8d/hero-enhanced-20260930.webp
   alt: Пещера в Бонито, Бразилия
 gallery:
-  - src: https://brasiltours.ru/image/cache/catalog/category/b/o/bonitospring-1920x1080.webp
+  - src: /media/tours/pantanal-bonito-lencois-8d/gallery-1-src-enhanced-20261001.webp
     alt: Прозрачная вода в Бонито
   - src: /media/destinations/lencois-maranhenses/hero-enhanced-20261001.webp
     alt: Дюны и лагуны Ленсойс-Мараньенсес

@@ -42,7 +42,7 @@ featureBands:
   - eyebrow: Высокогорье
     title: Озеро Титикака
     text: Пуно и Титикака добавляют в маршрут высокогорье и позволяют продолжить поездку в сторону Боливии.
-    image: https://brasiltours.ru/image/countries/peru/8878.jpg
+    image: /media/countries/peru/featureBands-3-image-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/peru-ru
 sourceSnapshot: page_texts_original/peru-ru__722f1abd.md
 updatedAt: 2026-09-24

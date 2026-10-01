@@ -32,7 +32,7 @@ hero:
   src: /media/tours/luxury-brazil-11d/hero-enhanced-20260930.webp
   alt: Панорама Рио-де-Жанейро
 gallery:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-8.jpg
+  - src: /media/tours/luxury-brazil-11d/gallery-1-src-enhanced-20261001.webp
     alt: "Водопады Игуасу с бразильской и аргентинской стороны"
     intendedSlot: gallery
 featured: true

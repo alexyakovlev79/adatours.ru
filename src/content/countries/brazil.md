@@ -10,7 +10,7 @@ searchAliases:
 summary: >-
   Рио, Игуасу, Амазония, Пантанал и Атлантика. Частный маршрут по Бразилии можно собрать вокруг города, природы, пляжей или соединить их в одной поездке.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/tild3463-3039-4366-b661-663030613337-thales-botelho-de-so-1680x900.webp
+  src: /media/countries/brazil/hero-src-enhanced-20261001.webp
   alt: Панорама Рио-де-Жанейро
 gallery:
   - src: /media/home/lencois-enhanced-20260930.webp

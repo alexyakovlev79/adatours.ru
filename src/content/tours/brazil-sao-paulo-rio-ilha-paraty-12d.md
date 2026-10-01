@@ -38,7 +38,7 @@ hero:
 gallery:
   - src: /media/destinations/ilha-grande/hero-enhanced-20261001.webp
     alt: Побережье острова Илья-Гранди
-  - src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/paraty-1920x1080.webp
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/gallery-2-src-enhanced-20261001.webp
     alt: Исторический центр Парати
 featured: false
 priority: 88

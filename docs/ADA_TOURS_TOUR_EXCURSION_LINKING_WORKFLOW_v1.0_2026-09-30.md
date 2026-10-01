@@ -1,5 +1,7 @@
 # Ada Tours — Tour ↔ Excursion linking workflow
 
+> **DEPRECATED.** Не использовать для новых проходов. Актуальная инструкция: `docs/ADA_TOURS_TOUR_EXCURSION_LINKING_WORKFLOW_v1.1_2026-10-01.md`.
+
 **Версия:** 1.1  
 **Дата:** 2026-10-01  
 **Репозиторий:** `alexyakovlev79/adatours.ru`  

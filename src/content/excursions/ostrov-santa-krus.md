@@ -19,12 +19,12 @@ priceFrom: 600
 currency: USD
 priceNote: "Основная стоимость — $600. Для группы из 2 человек — $330 на человека, из 3 человек — $240, из 4 человек — $218."
 hero:
-  src: https://brasiltours.ru/image/cache/galapagos%20diving%202-1920x1080.webp
+  src: /media/excursions/ostrov-santa-krus/hero.webp
   alt: Галапагосские острова, остров Санта-Крус в Эквадоре
 gallery:
-  - src: https://brasiltours.ru/image/cache/galapagos4-1920x1080.webp
+  - src: /media/excursions/ostrov-santa-krus/gallery-1.webp
     alt: Остров Санта-Крус на Галапагосах
-  - src: https://brasiltours.ru/image/cache/galapags-1920x1080.webp
+  - src: /media/excursions/ostrov-santa-krus/gallery-2.webp
     alt: Природа острова Санта-Крус
 route:
   - Балтра

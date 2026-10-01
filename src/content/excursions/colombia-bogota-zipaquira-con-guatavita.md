@@ -44,7 +44,6 @@ notIncluded:
   - Обед
 notes:
   - Стоимость экскурсии — $280.
-  - В исходной странице есть противоречащий маршруту абзац про Чикинкиру, Ракиру и Вилья-де-Лейва; он не перенесен в production, поскольку title, H1, название продукта, structured route и отдельный блок страницы согласованно указывают на Сипакиру и Гуатавиту.
   - При необходимости Ada Tours может изменить порядок посещения достопримечательностей.
 sourceUrl: https://brasiltours.ru/colombia-bogota-zipaquira-con-guatavita
 sourceSnapshot: page_texts_newstep/Excursions/colombia-bogota-zipaquira-con-guatavita__64010891.md

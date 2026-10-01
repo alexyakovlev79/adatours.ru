@@ -112,6 +112,27 @@ const files = [
     path: 'public/media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-5.jpg',
     referer: 'https://brasiltours.ru/ekskursiya-na-sakharnuyu-golovu',
   },
+  {
+    url: 'https://brasiltours.ru/image/countries/peru/kanon-kolka-69.jpg',
+    path: 'public/media/excursions/kanon-kolka-i-polet-kondora/hero.jpg',
+    referer: 'https://brasiltours.ru/kanon-kolka-i-polet-kondora',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/peru/smotrovaya-ploshchad.jpg',
+    path: 'public/media/excursions/kanon-kolka-i-polet-kondora/gallery-1.jpg',
+    referer: 'https://brasiltours.ru/kanon-kolka-i-polet-kondora',
+  },
+  {
+    url: 'https://brasiltours.ru/image/countries/peru/kolkayuk.jpg',
+    path: 'public/media/excursions/kanon-kolka-i-polet-kondora/gallery-2.jpg',
+    referer: 'https://brasiltours.ru/kanon-kolka-i-polet-kondora',
+  },
+  {
+    url: 'https://brasiltours.ru/image/Arequipa.jpg',
+    path: 'public/media/excursions/kanon-kolka-i-polet-kondora/gallery-3.jpg',
+    referer: 'https://brasiltours.ru/kanon-kolka-i-polet-kondora',
+  },
+
 ];
 
 for (const file of files) {

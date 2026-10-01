@@ -11,9 +11,10 @@ hero:
   alt: Пляж на побережье Латинской Америки
 featuredCountries:
   - country_brazil
+  - country_venezuela
 sourceUrl: https://brasiltours.ru/plyazhnye-tury
 sourceSnapshot: page_texts_original/plyazhnye-tury__bc5e8bbc.md
-updatedAt: 2026-09-24
+updatedAt: 2026-10-02
 ---
 
 ## Выбираем пляж вместе с маршрутом

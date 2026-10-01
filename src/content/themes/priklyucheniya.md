@@ -13,9 +13,10 @@ featuredCountries:
   - country_brazil
   - country_argentina
   - country_peru
+  - country_venezuela
 sourceUrl: https://brasiltours.ru/priklyucheniya
 sourceSnapshot: page_texts_original/priklyucheniya__9d8e52e1.md
-updatedAt: 2026-09-24
+updatedAt: 2026-10-02
 ---
 
 ## Активные дни должны подходить по нагрузке

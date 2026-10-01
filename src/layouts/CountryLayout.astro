@@ -21,7 +21,7 @@ const countryTourTarget = ({
   country_venezuela: 'Венесуэлу',
 } as Record<string, string>)[d.id] ?? d.name;
 
-const [destinationEntries, tourEntries, excursionEntries] = await Promise.all([
+const [destinationEntries, tourEntries, excursionEntries, themeEntries] = await Promise.all([
   getCollection('destinations', ({ data }) =>
     data.locale === 'ru' &&
     !['draft', 'archived'].includes(data.status) &&
@@ -36,6 +36,11 @@ const [destinationEntries, tourEntries, excursionEntries] = await Promise.all([
     data.locale === 'ru' &&
     !['draft', 'archived'].includes(data.status) &&
     data.country === d.id
+  ),
+  getCollection('themes', ({ data }) =>
+    data.locale === 'ru' &&
+    !['draft', 'archived'].includes(data.status) &&
+    d.relatedThemes.includes(data.id)
   ),
 ]);
 
@@ -56,6 +61,14 @@ tourEntries.sort((a, b) =>
 );
 
 excursionEntries.sort((a, b) => a.data.title.localeCompare(b.data.title, 'ru'));
+
+const preferredThemes = new Map(
+  d.relatedThemes.map((id, index) => [id, index])
+);
+
+themeEntries.sort((a, b) =>
+  (preferredThemes.get(a.data.id) ?? 999) - (preferredThemes.get(b.data.id) ?? 999)
+);
 
 const destinationTypeLabel = {
   city: 'Город',
@@ -223,6 +236,35 @@ const destinationTypeLabel = {
     </section>
   )}
 
+  {themeEntries.length > 0 && (
+    <section class="country-themes" aria-labelledby="country-themes-title">
+      <div class="country-themes__heading section">
+        <div class="container">
+          <div class="country-linked__heading country-linked__heading--themes">
+            <p class="eyebrow">Форматы поездки</p>
+            <h2 id="country-themes-title">Путешествия по интересам</h2>
+            <p>Выберите тему поездки и посмотрите связанные с ней направления и программы.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="country-themes__bands">
+        {themeEntries.map((item, index) => (
+          <DestinationBand
+            eyebrow="По интересам"
+            title={item.data.name}
+            text={item.data.summary}
+            image={item.data.hero?.src}
+            mediaStatus={item.data.hero?.status}
+            replacementReason={item.data.hero?.replacementReason}
+            href={`/po-interesam/${item.data.slug}/`}
+            align={index % 2 === 1 ? 'right' : 'left'}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
   <LeadForm title={`Собрать путешествие по стране: ${d.name}`} entityId={d.id} />
 </BaseLayout>
 
@@ -265,6 +307,19 @@ const destinationTypeLabel = {
   }
 
   .country-tours__bands {
+    display: block;
+  }
+
+  .country-themes {
+    background: var(--color-bg);
+  }
+
+  .country-themes__heading {
+    padding-block: clamp(68px, 7vw, 108px);
+    background: var(--color-bg);
+  }
+
+  .country-themes__bands {
     display: block;
   }
 
@@ -482,7 +537,8 @@ const destinationTypeLabel = {
       padding-block: 42px;
     }
 
-    .country-tours__heading {
+    .country-tours__heading,
+    .country-themes__heading {
       padding-block: 50px;
     }
 

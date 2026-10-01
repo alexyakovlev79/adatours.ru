@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Парати соединяет хорошо сохранившийся колониальный центр с заливом, островами и Атлантическим лесом: прогулки по старому городу, морские маршруты, водопады и Тринидад.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/paraty-1200x538.webp
+  src: /media/destinations/paraty/hero-enhanced-20261001.webp
   alt: Исторический центр Парати в Бразилии
 gallery:
   - src: /media/destinations/paraty/gallery-1-enhanced-20261001.webp

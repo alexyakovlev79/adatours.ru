@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Натал, столица штата Риу-Гранди-ду-Норти, стоит на северо-восточном побережье Бразилии. Дюны, рифы, пляжи и водные активности делают город удобной отправной точкой для отдыха у океана и поездки в Прайя-де-Пипа.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/natal.jpg
+  src: /media/destinations/natal/hero-enhanced-20261001.webp
   alt: Натал на северо-восточном побережье Бразилии
 gallery: []
 themes:

@@ -9,12 +9,12 @@ destinationType: city
 summary: >-
   Олинда рядом с Ресифи известна историческим центром UNESCO на холмах, барочными церквями и монастырями, цветными фасадами и собственным карнавалом. Ее удобно включать в маршрут по Пернамбуку вместе с Ресифи и побережьем.
 hero:
-  src: https://brasiltours.ru/image/cache/countries/brazil/new-pics/olinda-1200x579.webp
+  src: /media/destinations/olinda/hero-enhanced-20261001.webp
   alt: Исторический центр Олинды в Пернамбуку, Бразилия
 gallery:
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN16009_8-1920x1080.webp
+  - src: /media/destinations/olinda/gallery-1-enhanced-20261001.webp
     alt: Колониальная архитектура Олинды
-  - src: https://brasiltours.ru/image/cache/catalog/category/B/N/BN23312_4-1920x1080.webp
+  - src: /media/destinations/olinda/gallery-2-enhanced-20261001.webp
     alt: Историческая застройка Олинды
 themes:
   - culture
@@ -37,12 +37,12 @@ featureBands:
     title: Город на холмах
     text: >-
       Улицы Олинды поднимаются по холмам между церквями, монастырями и цветными домами. Исторический центр хорошо сохранил облик колониального города.
-    image: https://brasiltours.ru/image/cache/catalog/category/B/N/BN16009_8-1920x1080.webp
+    image: /media/destinations/olinda/gallery-1-enhanced-20261001.webp
   - eyebrow: Культура
     title: Карнавал и городская жизнь
     text: >-
       Олинда известна собственным карнавалом, ремеслами и культурной сценой. Эту часть поездки удобно соединить с прогулкой по историческому центру и видами в сторону побережья.
-    image: https://brasiltours.ru/image/cache/catalog/category/B/N/BN23312_4-1920x1080.webp
+    image: /media/destinations/olinda/gallery-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/recife-brazil
 sourceSnapshot: page_texts_original/recife-brazil__a111f363.md
 updatedAt: 2026-09-24

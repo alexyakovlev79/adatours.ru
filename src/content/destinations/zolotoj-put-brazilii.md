@@ -42,7 +42,7 @@ featureBands:
     title: Иньотим после исторических городов
     text: >-
       После Ору-Прету маршрут можно продолжить через Иньотим, где современное искусство и ландшафтный парк дают резкую смену впечатлений перед выездом к Белу-Оризонти и дальнейшим перелетом.
-    image: https://brasiltours.ru/image/cache/Inhotim%2002-thumb-626x419-205093-1920x1080.webp
+    image: /media/destinations/zolotoj-put-brazilii/featureBands-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/zolotoj-put-brazilii
 sourceSnapshot: page_texts_original/zolotoj-put-brazilii__7e6b89a6.md
 updatedAt: 2026-09-25

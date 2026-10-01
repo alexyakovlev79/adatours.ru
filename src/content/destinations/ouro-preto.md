@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Ору-Прету в штате Минас-Жерайс вырос в эпоху золотой лихорадки. Сегодня сюда едут ради барочной архитектуры, старых шахт, музеев, площади Тирадентис и исторического центра, включенного в список Всемирного наследия UNESCO.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/ouro-preto-2.jpg
+  src: /media/destinations/ouro-preto/hero-enhanced-20261001.webp
   alt: Исторический центр Ору-Прету в штате Минас-Жерайс
 gallery: []
 themes:
@@ -36,12 +36,12 @@ featureBands:
     title: Город золотой лихорадки
     text: >-
       Ору-Прету формировался вокруг добычи золота. Эта история читается в старой застройке, музеях и шахтах, часть которых открыта для посещения.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/ouro-preto-2.jpg
+    image: /media/destinations/ouro-preto/hero-enhanced-20261001.webp
   - eyebrow: Архитектура
     title: Площадь Тирадентис и барочный центр
     text: >-
       Центральная часть города соединяет площадь Тирадентис, музеи, церкви и крутые мощеные улицы. С верхних точек открываются виды на историческую застройку и окрестные холмы.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/ouro-preto-2.jpg
+    image: /media/destinations/ouro-preto/hero-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya__226a4f58.md
 updatedAt: 2026-09-25

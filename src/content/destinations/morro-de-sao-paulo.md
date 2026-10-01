@@ -9,7 +9,7 @@ destinationType: resort
 summary: >-
   Морро-де-Сан-Паулу находится на острове Тиньяре в штате Баия. Сюда едут ради теплого океана, нумерованных пляжей, тропической природы и старого маяка со смотровой площадкой.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/morro-de-sao-paulo-2.jpg
+  src: /media/destinations/morro-de-sao-paulo/hero-enhanced-20261001.webp
   alt: Побережье Морро-де-Сан-Паулу на острове Тиньяре
 gallery: []
 themes:
@@ -35,7 +35,7 @@ featureBands:
     title: Первый, Второй, Третий и Четвертый пляжи
     text: >-
       Побережье здесь принято делить по нумерованным пляжам: ближе к поселению больше ресторанов и вечерней жизни, дальше становится тише.
-    image: https://brasiltours.ru/image/cache/catalog/category/p/o/pola1-1920x1080.webp
+    image: /media/destinations/morro-de-sao-paulo/featureBands-1-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya__6567032e.md
 updatedAt: 2026-09-25

@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: >-
   Пантанал подходит для поездки, где главная цель – природа: наблюдение за животными и птицами, прогулки на лодках и лошадях, рыбалка, фазенда и ночное сафари.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/david-waite-hy1zhwmhl8m-unsplash.jpg
+  src: /media/destinations/pantanal/hero-enhanced-20261001.webp
   alt: Природа Пантанала в Бразилии
 gallery: []
 themes:
@@ -37,12 +37,12 @@ featureBands:
     title: Птицы, кайманы, капибары и ягуары
     text: >-
       Пантанал выбирают ради наблюдения за птицами и животными: кайманами, капибарами, гигантскими выдрами, муравьедами и, при удаче, ягуарами.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/david-waite-hy1zhwmhl8m-unsplash.jpg
+    image: /media/destinations/pantanal/hero-enhanced-20261001.webp
   - eyebrow: Формат поездки
     title: Лошадь, лодка, рыбалка и фазенда
     text: >-
       Дни можно проводить верхом, на лодках или на рыбалке, а ночевать на бразильской фазенде. Вечером возможны выезды на ночное сафари.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/david-waite-hy1zhwmhl8m-unsplash.jpg
+    image: /media/destinations/pantanal/hero-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii
 sourceSnapshot: page_texts_original/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii__a1533a1e.md
 updatedAt: 2026-09-24

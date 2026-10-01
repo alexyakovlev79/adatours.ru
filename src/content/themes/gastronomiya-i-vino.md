@@ -7,7 +7,7 @@ status: approved
 summary: >-
   Винодельни, рынки, рестораны, дегустации и местная кухня могут стать отдельной темой поездки или частью большого маршрута по Латинской Америке.
 hero:
-  src: https://brasiltours.ru/image/countries/thematic-tours/sergey-mikheev-bztsk.jpg
+  src: /media/themes/gastronomiya-i-vino/hero-enhanced-20261001.webp
   alt: Вино и гастрономия в путешествии
 featuredCountries:
   - country_argentina

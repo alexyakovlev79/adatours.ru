@@ -7,7 +7,7 @@ status: approved
 summary: >-
   Рыбалка может стать основой всей поездки или занять несколько дней большого маршрута. Амазония, морское побережье и Патагония отличаются сезоном, дорогой, лодками и необходимой подготовкой.
 hero:
-  src: https://brasiltours.ru/image/countries/thematic-tours/wynand-van-poortvliet-86gwjv3rd-m-unsplash.jpg
+  src: /media/themes/rybalka/hero-enhanced-20261001.webp
   alt: Рыбалка на природе
 featuredCountries:
   - country_brazil

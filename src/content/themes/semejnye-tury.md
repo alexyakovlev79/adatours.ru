@@ -7,7 +7,7 @@ status: approved
 summary: >-
   Семейную поездку по Латинской Америке лучше собирать с учетом возраста детей, длины переездов, жары, высоты и привычного режима дня.
 hero:
-  src: https://brasiltours.ru/image/countries/thematic-tours/natalya-zaritskaya-siodjcyotms-unsplash.jpg
+  src: /media/themes/semejnye-tury/hero-enhanced-20261001.webp
   alt: Семейное путешествие
 featuredCountries:
   - country_brazil

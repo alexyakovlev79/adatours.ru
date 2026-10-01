@@ -7,7 +7,7 @@ status: approved
 summary: >-
   Пляжи Бразилии и Карибского бассейна подходят и для отдельной поездки, и для нескольких спокойных дней после насыщенного маршрута.
 hero:
-  src: https://brasiltours.ru/image/countries/thematic-tours/emily-bauman-fnan6ofxr9a-unsplash.jpg
+  src: /media/themes/plyazhnyj-otdyh/hero-enhanced-20261001.webp
   alt: Пляж на побережье Латинской Америки
 featuredCountries:
   - country_brazil

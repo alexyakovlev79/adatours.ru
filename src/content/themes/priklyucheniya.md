@@ -7,7 +7,7 @@ status: approved
 summary: >-
   Трекинг, каякинг, джунгли и горные районы можно собрать в отдельную активную поездку или добавить на несколько дней к обычному маршруту по Латинской Америке.
 hero:
-  src: https://brasiltours.ru/image/countries/thematic-tours/quests-shutterstock.jpg
+  src: /media/themes/priklyucheniya/hero-enhanced-20261001.webp
   alt: Активное путешествие в Латинской Америке
 featuredCountries:
   - country_brazil

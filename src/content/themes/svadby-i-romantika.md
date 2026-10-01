@@ -7,7 +7,7 @@ status: approved
 summary: >-
   Свадебная церемония, предложение, медовый месяц или годовщина требуют подходящего места, приватности и достаточно свободного времени вокруг самого события.
 hero:
-  src: https://brasiltours.ru/image/countries/thematic-tours/couple-blond-uplifted.jpg
+  src: /media/themes/svadby-i-romantika/hero-enhanced-20261001.webp
   alt: Пара в романтическом путешествии
 featuredCountries:
   - country_brazil

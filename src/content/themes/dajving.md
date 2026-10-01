@@ -7,7 +7,7 @@ status: approved
 summary: >-
   Погружения в Латинской Америке сильно зависят от сезона, опыта дайвера и выбранного места. Под конкретные даты Ada Tours проверяет подходящие локации и сертифицированных операторов.
 hero:
-  src: https://brasiltours.ru/image/countries/thematic-tours/nariman-mesharrafa-tswb6pp746q-unsplash-1.jpg
+  src: /media/themes/dajving/hero-enhanced-20261001.webp
   alt: Дайвинг в тропическом море
 featuredCountries:
   - country_brazil

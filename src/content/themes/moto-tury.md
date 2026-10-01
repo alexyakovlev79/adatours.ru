@@ -7,7 +7,7 @@ status: approved
 summary: >-
   Мото-маршруты по Бразилии, Аргентине, Чили, Перу, Боливии, Коста-Рике и другим странам региона собираются вокруг дороги: покрытия, рельефа, дневного пробега и времени на остановки.
 hero:
-  src: https://brasiltours.ru/image/countries/thematic-tours/harley-davidson-4ixhdlcropi-unsplash.jpg
+  src: /media/themes/moto-tury/hero-enhanced-20261001.webp
   alt: Мотоцикл на дороге
 featuredCountries:
   - country_brazil

@@ -7,7 +7,7 @@ status: approved
 summary: >-
   SPA, термальные источники и wellness-отели хорошо подходят для нескольких спокойных дней между городами, природными районами и длинными переездами.
 hero:
-  src: https://brasiltours.ru/image/countries/thematic-tours/spa.jpg
+  src: /media/themes/spa/hero-enhanced-20261001.webp
   alt: SPA и wellness отдых
 featuredCountries:
   - country_brazil

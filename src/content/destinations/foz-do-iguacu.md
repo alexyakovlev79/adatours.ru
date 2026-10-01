@@ -9,10 +9,10 @@ destinationType: city
 summary: >-
   Фоз-ду-Игуасу дает доступ к водопадам Игуасу на границе Бразилии и Аргентины: смотровые площадки, тропы, Макуко Сафари, Парк птиц, лодки и полет на вертолете с бразильской стороны.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu.jpg
+  src: /media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp
   alt: Водопады Игуасу со стороны Бразилии
 gallery:
-  - src: /media/prototype/iguazu.jpg
+  - src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
     alt: Водопады Игуасу
 themes:
   - nature
@@ -38,12 +38,12 @@ featureBands:
     title: Бразильская и аргентинская стороны
     text: >-
       Водопады стоит увидеть с обеих сторон границы: бразильская и аргентинская части дают разные виды и маршруты по национальному парку.
-    image: /media/prototype/iguazu.jpg
+    image: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
   - eyebrow: Активности
     title: Макуко Сафари, Парк птиц и лодки
     text: >-
       Поездку к водопадам можно дополнить джип-туром Макуко Сафари, Парком птиц и водной прогулкой. С бразильской стороны также доступен панорамный полет на вертолете.
-    image: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu.jpg
+    image: /media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-vodopadah-iguasu-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-na-vodopadah-iguasu-v-brazilii__8b9c1a33.md
 updatedAt: 2026-09-25

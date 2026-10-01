@@ -9,7 +9,7 @@ destinationType: city
 summary: >-
   Форталеза, столица штата Сеара, сочетает городскую программу с пляжами и дюнами северо-восточного побережья. В поездку можно добавить серфинг, дайвинг, прогулки на лодках и выезды на багги.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/fortaleza-br.jpg
+  src: /media/destinations/fortaleza/hero-enhanced-20261001.webp
   alt: Форталеза на северо-восточном побережье Бразилии
 gallery: []
 themes:

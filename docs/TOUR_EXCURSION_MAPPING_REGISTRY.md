@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.16  
+Версия: 1.17  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -161,8 +161,8 @@ missing_excursion_entities = 0
 | 77 | `tour_peru_8d` | `src/content/tours/peru-8d.md` | Перу за 8 дней: Лима, Куско, Мачу-Пикчу и Титикака | DONE_LINKED | 7 | 2026-10-01 |
 | 78 | `tour_brazil_sao_paulo_rio_ilha_paraty_12d` | `src/content/tours/brazil-sao-paulo-rio-ilha-paraty-12d.md` | Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати | DONE_LINKED | 3 | 2026-10-01 |
 | 79 | `tour_brazil_adventure_17d` | `src/content/tours/brazil-adventure-17d.md` | Большое приключение по Бразилии за 17 дней | DONE_LINKED | 3 | 2026-10-01 |
-| 80 | `tour_brazil_pantanal_bonito_lencois_8d` | `src/content/tours/pantanal-bonito-lencois-8d.md` | Пантанал, Бонито и Ленсойс-Мараньенсес за 8 дней | DONE_NO_RELATIONS | 0 | 2026-09-30 |
-| 81 | `tour_brazil_recife_porto_noronha_10d` | `src/content/tours/brazil-northeast-recife-porto-noronha-10d.md` | Северо-восток Бразилии: Ресифи, Порту-ди-Галиньяш и Фернанду-ди-Норонья за 10 дней | DONE_NO_RELATIONS | 0 | 2026-09-30 |
+| 80 | `tour_brazil_pantanal_bonito_lencois_8d` | `src/content/tours/pantanal-bonito-lencois-8d.md` | Пантанал, Бонито и Ленсойс-Мараньенсес за 8 дней | DONE_NO_RELATIONS | 0 | 2026-10-01 |
+| 81 | `tour_brazil_recife_porto_noronha_10d` | `src/content/tours/brazil-northeast-recife-porto-noronha-10d.md` | Северо-восток Бразилии: Ресифи, Порту-ди-Галиньяш и Фернанду-ди-Норонья за 10 дней | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 82 | `tour_brazil_gems_14d` | `src/content/tours/brazil-gems-14d.md` | Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-ду-Форте и Игуасу | PENDING | 1 | 2026-10-01 |
 | 83 | `tour_brazil_dunes_13d` | `src/content/tours/brazil-dunes-13d.md` | Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа | PENDING | 1 | 2026-10-01 |
 | 84 | `tour_argentina_brazil_pipa_11d` | `src/content/tours/argentina-brazil-pipa-11d.md` | Аргентина и Бразилия за 11 дней | DONE_LINKED | 3 | 2026-10-01 |
@@ -173,7 +173,14 @@ missing_excursion_entities = 0
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | PENDING | 0 | 2026-09-30 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | PENDING | 0 | 2026-09-30 |
 
-**Следующий повторный проход v1.1:** строка **80**, `tour_brazil_pantanal_bonito_lencois_8d`.
+**Следующий повторный проход v1.1:** строка **82**, `tour_brazil_gems_14d`.
+
+### Повторная проверка v1.1 — строки 80–81, 2026-10-01
+
+- **Строка 80 / `tour_brazil_pantanal_bonito_lencois_8d`:** повторно сверены production, V2 и original. `excursionRef = 0`, самостоятельных карточек между днями нет, `contentBlocks` с отдельными Excursion отсутствуют. Верховая езда, лодочная прогулка, фотосафари, Голубой грот, Рио-Сукури, Гранд Ленсойс и прогулка по Прегисас входят в основную программу соответствующих numbered days. Перечень активностей Пантанала описывает включенную программу пребывания, а не отдельные дополнительные продукты. Итог: `DONE_NO_RELATIONS`.
+- **Строка 81 / `tour_brazil_recife_porto_noronha_10d`:** повторно сверены production, V2 и original. `excursionRef = 0`, самостоятельных excursion-модулей между днями и внутри numbered days нет. Экскурсия 4x4 по Норонье и дайвинг дня 7 являются основной программой дня. Упоминания Санто-Алексио, дополнительных погружений, лодочной прогулки и треккингов в свободные дни остаются вариантами досуга без отдельного title/body/product scope; в основном реестре отдельной Excursion для них нет. Итог: `DONE_NO_RELATIONS`.
+
+Новых Excursion по этим 2 турам создавать не потребовалось.
 
 ### Повторная проверка v1.1 — строки 78–79, 2026-10-01
 

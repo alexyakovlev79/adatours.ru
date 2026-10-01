@@ -1,5 +1,5 @@
-import { mkdir, writeFile } from 'node:fs/promises';
-import { dirname } from 'node:path';
+import { mkdir, writeFile, readFile, readdir } from 'node:fs/promises';
+import { dirname, extname, join } from 'node:path';
 
 const files = [
   {
@@ -287,7 +287,31 @@ const files = [
 
 ];
 
+const sourceExtensions = new Set(['.astro', '.md', '.mdx', '.ts', '.js', '.mjs', '.json', '.yaml', '.yml', '.css', '.html']);
+
+async function collectSourceText(root) {
+  let combined = '';
+  const entries = await readdir(root, { withFileTypes: true });
+  for (const entry of entries) {
+    const fullPath = join(root, entry.name);
+    if (entry.isDirectory()) {
+      combined += await collectSourceText(fullPath);
+      continue;
+    }
+    if (!sourceExtensions.has(extname(entry.name).toLowerCase())) continue;
+    combined += '\n' + await readFile(fullPath, 'utf8');
+  }
+  return combined;
+}
+
+const sourceText = await collectSourceText('src');
+
 for (const file of files) {
+  const publicPath = file.path.replace(/^public/, '');
+  if (!sourceText.includes(publicPath)) {
+    console.log(`Skipped unused legacy media: ${publicPath}`);
+    continue;
+  }
   await mkdir(dirname(file.path), { recursive: true });
   const response = await fetch(file.url, {
     redirect: 'follow',

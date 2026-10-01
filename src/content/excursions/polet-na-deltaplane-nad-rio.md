@@ -18,7 +18,7 @@ priceFrom: 390
 currency: USD
 priceNote: "Цена указана на человека. Для двух и более человек возможны скидки."
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/deltap-waifu2x-noise1-1920.jpg
+  src: /media/excursions/polet-na-deltaplane-nad-rio/hero-enhanced-20261001.webp
   alt: Полет на дельтаплане над Рио-де-Жанейро
 gallery:
   - src: https://brasiltours.ru/image/countries/brazil/bra-praia-da-pipa-1.jpg

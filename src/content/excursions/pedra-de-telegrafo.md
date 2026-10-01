@@ -16,14 +16,14 @@ language: []
 priceFrom: 205
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/skala-waifu2x-noise1-1920.jpg
+  src: /media/excursions/pedra-de-telegrafo/hero-enhanced-20261001.webp
   alt: Скала Педра-ду-Телеграфу над побережьем Рио-де-Жанейро
 gallery:
-  - src: https://brasiltours.ru/image/skala2.png
+  - src: /media/excursions/pedra-de-telegrafo/gallery-1-enhanced-20261001.webp
     alt: Фотосъемка на Педра-ду-Телеграфу
-  - src: https://brasiltours.ru/image/countries/brazil/tild3663-3466-4362-b062-643262633065-pexels-matheus-berte.jpg
+  - src: /media/excursions/pedra-de-telegrafo/gallery-2-enhanced-20261001.webp
     alt: Горные склоны и побережье Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/skala1.png
+  - src: /media/excursions/pedra-de-telegrafo/gallery-3-enhanced-20261001.webp
     alt: Вид с Педра-ду-Телеграфу
 route:
   - Рио-де-Жанейро

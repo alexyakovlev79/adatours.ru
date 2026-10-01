@@ -18,12 +18,12 @@ language:
 priceFrom: 366
 currency: USD
 hero:
-  src: /media/excursions/tur-na-ostrov-florena/hero.jpg
+  src: /media/excursions/tur-na-ostrov-florena/hero-enhanced-20261001.webp
   alt: Морские львы на Галапагосских островах
 gallery:
-  - src: /media/excursions/tur-na-ostrov-florena/gallery-1.png
+  - src: /media/excursions/ostrov-santa-krus/gallery-1-enhanced-20261001.webp
     alt: Природа Галапагосских островов
-  - src: /media/excursions/tur-na-ostrov-florena/gallery-2.png
+  - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
     alt: Дикая природа острова Флорена
 route:
   - Пуэрто-Айора

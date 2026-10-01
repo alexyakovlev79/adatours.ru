@@ -18,12 +18,12 @@ priceFrom: 503
 currency: USD
 priceNote: "Основная стоимость — $503. Для группы из 2 человек — $263 на человека, из 3 человек — $233, из 4 человек — $188."
 hero:
-  src: https://brasiltours.ru/image/papalacta1.jpg
+  src: /media/excursions/papallakta/hero-enhanced-20261001.webp
   alt: Термальные бассейны Папаякты в Эквадорских Андах
 gallery:
-  - src: https://brasiltours.ru/image/ecuador%20papalacta.png
+  - src: /media/excursions/papallakta/gallery-1-enhanced-20261001.webp
     alt: Термальный комплекс Папаякта
-  - src: https://brasiltours.ru/image/countries/equador/new/56.jpg
+  - src: /media/excursions/papallakta/gallery-2-enhanced-20261001.webp
     alt: Горный пейзаж Папаякты
 route:
   - Кито

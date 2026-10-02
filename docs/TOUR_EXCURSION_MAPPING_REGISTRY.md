@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.28  
+Версия: 1.29  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **19** туров со статусом `Уникализировано`.
+В текущем реестре учтено **20** туров со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -171,12 +171,17 @@ missing_excursion_entities = 0
 | 291 | `tour_source_buenos_ajres_salta_iguasu` | `src/content/tours/buenos-ajres-salta-iguasu.md` | Буэнос-Айрес, Сальта и Игуасу | DONE_LINKED | 3 | 2026-10-02 |
 | 292 | `tour_source_vinnyj_tur_v_argentinu_i_chili` | `src/content/tours/vinnyj-tur-v-argentinu-i-chili.md` | Тур в Чили и Аргентину с винным регионом Мендоса на 9 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 293 | `tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin` | `src/content/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin.md` | Восхождение на Аконкагуа 6962 м | DONE_NO_RELATIONS | 0 | 2026-10-02 |
+| 294 | `tour_source_kongress_v_argentine` | `src/content/tours/kongress-v-argentine.md` | Корпоративный тур в Аргентину: Буэнос-Айрес и Тигре за 5 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 293 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 294 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 294, 2026-10-02
+
+- **Строка 294 / `tour_source_kongress_v_argentine`:** опубликована 5-дневная корпоративная MICE-программа «Корпоративный тур в Аргентину: Буэнос-Айрес и Тигре за 5 дней». В numbered days есть обзорная экскурсия по Буэнос-Айресу, вечернее танго-шоу Michelangelo и поездка в дельту Тигре, однако они являются частью конкретных корпоративных дней: связаны с утренним конгрессом, собственными трансферами, ресторанами и индивидуальной логистикой. Source действительно содержит ссылки на отдельные generic Excursion, но scope программы отличается: городская экскурсия в туре длится 4 часа и включает расширенный маршрут, танго привязано к Michelangelo и частным трансферам, Тигре — к частной лодке, рынку и музею. Извлечение их в существующие generic `excursionRef` потеряло бы подтвержденные детали. Отдельных standalone-карточек/секций между днями нет. Итог: `DONE_NO_RELATIONS`, `production_excursion_refs = 0`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`.
 
 ### Проверка v1.1 — строка 293, 2026-10-02
 

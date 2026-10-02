@@ -4,7 +4,12 @@ locale: ru
 title: "Перейра: кофейная ферма и дегустация колумбийского кофе"
 slug: kofejnyj-tur-v-perejra
 status: approved
+searchAliases:
+  - Кофейный тур в Перейре
+  - Кофейная ферма Перейра
+  - Дегустация колумбийского кофе
 country: country_colombia
+themes: [gastronomy, coffee]
 duration: 5 часов
 language:
   - английский

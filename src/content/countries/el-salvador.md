@@ -10,7 +10,7 @@ searchAliases:
 summary: >-
   Эль-Сальвадор соединяет вулканы, озёра, национальные парки, колониальные города и побережье Тихого океана. Ada Tours может собрать природный и культурный маршрут, добавить дайвинг, пляжный отдых и термальные источники или соединить страну с Гватемалой и Гондурасом.
 hero:
-  src: https://brasiltours.ru/image/countries/el-salvador/el-salvador.jpg
+  src: /media/countries/el-salvador/hero-enhanced-20261002.webp
   alt: Вулканический пейзаж Эль-Сальвадора
 gallery: []
 regions:
@@ -32,15 +32,15 @@ featureBands:
   - eyebrow: Вулканы и природа
     title: Санта-Ана и Лос-Вулканес
     text: Район Санта-Аны подходит для активной части путешествия с вулканами, кратерными озёрами и пешими маршрутами. В исходном материале отдельно выделены вулкан Санта-Ана и национальный парк Лос-Вулканес.
-    image: https://brasiltours.ru/image/countries/el-salvador/2.jpg
+    image: /media/countries/el-salvador/featureBands-1-enhanced-20261002.webp
   - eyebrow: Колониальное наследие
     title: Сучитото и исторические города
     text: Сучитото, Санта-Ана и другие города добавляют к маршруту колониальную архитектуру, церкви, небольшие городские кварталы и более спокойный ритм между природными выездами.
-    image: https://brasiltours.ru/image/countries/el-salvador/3.jpg
+    image: /media/countries/el-salvador/featureBands-2-enhanced-20261002.webp
   - eyebrow: Столица
     title: Сан-Сальвадор
     text: В столице можно соединить музеи, городскую архитектуру и поездки в ближайшие природные районы, включая Эль-Бокерон и вулканические ландшафты вокруг города.
-    image: https://brasiltours.ru/image/countries/el-salvador/4.jpg
+    image: /media/countries/el-salvador/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/el-salvador-ru
 sourceSnapshot: page_texts_original/el-salvador-ru__9e7634c2.md
 updatedAt: 2026-10-02

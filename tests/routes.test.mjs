@@ -79,7 +79,7 @@ test('excursions use the destination geography even when departing from another 
   assert.equal(excursionDestinationPath(destinationRoute(excursion.destination)), '/urugvaj/montevideo/');
   assert.deepEqual(excursionBreadcrumbs(excursion).map(({ label, href }) => [label, href]), [
     ['Экскурсии', '/ekskursii/'], ['Уругвай', '/urugvaj/excursion/'],
-    ['Монтевидео', '/urugvaj/montevideo/'], ['Монтевидео', '/urugvaj/montevideo/montevideo-test/'],
+    ['Монтевидео', '/urugvaj/montevideo/'],
   ]);
   assert.equal(canonicalPath({ type: 'excursion', slug: excursion.slug, countryIds: ['country_argentina'], destinationIds: [excursion.destination] }), excursionPath(excursion));
 });
@@ -125,7 +125,7 @@ test('every published old URL is an excluded alias while the new URLs and catalo
 
 test('country and destination breadcrumbs use existing catalog levels', () => {
   assert.deepEqual(countryBreadcrumbs(brazil).map((item) => item.href), ['/strany/', '/braziliya/']);
-  assert.deepEqual(destinationBreadcrumbs(rio).map((item) => item.href), ['/napravleniya/', '/braziliya/place/', '/braziliya/place/rio-de-zhanejro/']);
+  assert.deepEqual(destinationBreadcrumbs(rio).map((item) => item.href), ['/napravleniya/', '/braziliya/place/']);
 });
 
 test('stored country-first legacy URLs become redirects and stay excluded after geography changes', () => {

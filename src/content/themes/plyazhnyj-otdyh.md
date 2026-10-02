@@ -18,6 +18,7 @@ featuredCountries:
   - country_costa_rica
   - country_cuba
   - country_mexico
+  - country_panama
 
 sourceUrl: https://brasiltours.ru/plyazhnye-tury
 sourceSnapshot: page_texts_original/plyazhnye-tury__bc5e8bbc.md

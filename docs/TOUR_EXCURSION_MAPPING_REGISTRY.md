@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.44  
+Версия: 1.45  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -174,7 +174,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **32** тур со статусом `Уникализировано`.
+В текущем реестре учтено **33** тур со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -208,13 +208,17 @@ missing_excursion_entities = 0
 | 304 | `tour_source_argentina_dlya_degustatorov_khoroshej_zhizni` | `src/content/tours/argentina-dlya-degustatorov-khoroshej-zhizni.md` | Аргентина для ценителей вина, кухни и красивой жизни | DONE_LINKED | 1 | 2026-10-02 |
 | 305 | `tour_source_tur_v_argentinu_na_dikuyu_prirodu` | `src/content/tours/tur-v-argentinu-na-dikuyu-prirodu.md` | Эко-тур по Аргентине на 9 дней: киты Пуэрто-Мадрина и заповедник Ибера | DONE_LINKED | 2 | 2026-10-02 |
 | 306 | `tour_source_tur_v_argentinu_na_11dnej` | `src/content/tours/tur-v-argentinu-na-11dnej.md` | VIP-тур по Аргентине на 11 дней: Патагония, Ушуайя и водопады Игуасу | DONE_LINKED | 8 | 2026-10-02 |
-| 307 | `tour_source_neveroyatnaya_argentina` | `src/content/tours/neveroyatnaya-argentina.md` | Тур в Аргентину и Патагонию по лучшим достопримечательностям | IN_PROGRESS | 0 | 2026-10-02 |
+| 307 | `tour_source_neveroyatnaya_argentina` | `src/content/tours/neveroyatnaya-argentina.md` | Невероятная Аргентина: Буэнос-Айрес, Ушуайя, Эль-Калафате и Игуасу за 13 дней | DONE_LINKED | 5 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Текущий проход v1.2:** строка 307 — `IN_PROGRESS`.
+**Следующий проход v1.2:** строка 307 закрыта. Перед следующим проходом проверить Google Sheets на новые туры со статусом `Добавлена`, затем первый `Запланирована`.
+
+### Проверка v1.2 — строка 307, 2026-10-02
+
+- **Строка 307 / `tour_source_neveroyatnaya_argentina`:** опубликован 13-дневный тур «Невероятная Аргентина: Буэнос-Айрес, Ушуайя, Эль-Калафате и Игуасу за 13 дней» из V2 + original. Сохранены 13 numbered days и исходная последовательность маршрута. Самостоятельные модули извлечены из numbered days и оформлены через 5 canonical `excursionRef`: после дня 2 — существующая `excursion_buenos_aires_tango_show_dinner_transfer`; после дня 3 — новая `excursion_ushuaia_laguna_esmeralda_trekking`; после дня 8 — новые `excursion_el_calafate_glaciares_gourmet` и `excursion_el_calafate_todo_glaciares`; после дня 10 — новая `excursion_iguazu_gran_aventura`. Национальный парк Тьерра-дель-Фуэго + канал Бигль, оффроуд к озерам, Перито-Морено + «Водное сафари» и обе основные стороны Игуасу сохранены внутри numbered days как основная программа. Destination completeness по уже опубликованным каноническим Destination: `destination_argentina_buenos_aires`, `destination_argentina_el_calafate`, `destination_brazil_iguacu`; запланированные, но еще не опубликованные Ушуайя и Пуэрто-Игуасу в `Tour.destinations` не добавлялись. Инварианты: `standalone_excursion_modules = 5`, `production_excursion_refs = 5`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`. В itinerary нет cache-WebP; для обычных дней использованы raw source images из точного media mapping. Build/deploy commit `3eeb97c1b28646ce6aa696c9cfff22338b91d377` завершен успешно. Итог: `DONE_LINKED`.
 
 ### Проверка v1.2 — строка 306, 2026-10-02
 
@@ -400,6 +404,12 @@ missing_excursion_entities = 0
 | `tour_source_tur_v_argentinu_na_11dnej` | `excursion_source_makuko_safari` | between_days | 9 | 10 | LINKED_EXISTING | Дополнительный Macuco Safari дня 9 заменен на канонический `excursionRef`. |
 | `tour_source_tur_v_argentinu_na_11dnej` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 9 | 10 | LINKED_EXISTING | Парк птиц дня 9 использует существующую каноническую Excursion; локальный текст не дублируется. |
 | `tour_source_tur_v_argentinu_na_11dnej` | `excursion_iguazu_helicopter_falls` | between_days | 9 | 10 | LINKED_EXISTING | Дополнительный полет над водопадами Игуасу вынесен в отдельный `excursionRef`. |
+
+| `tour_source_neveroyatnaya_argentina` | `excursion_buenos_aires_tango_show_dinner_transfer` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином и возвращением в отель вынесено из numbered day 2 после обзорной экскурсии по Буэнос-Айресу. |
+| `tour_source_neveroyatnaya_argentina` | `excursion_ushuaia_laguna_esmeralda_trekking` | between_days | 3 | 4 | CREATED_FROM_TOUR | Опциональный треккинг к лагуне Эсмеральда за $105 извлечен из дня 3; создана каноническая Excursion из V2/original. |
+| `tour_source_neveroyatnaya_argentina` | `excursion_el_calafate_glaciares_gourmet` | between_days | 8 | 9 | CREATED_FROM_TOUR | Самостоятельная полнодневная навигация Glaciares Gourmet за $388 извлечена из свободного дня 8; Premium-вариант с доплатой $153 сохранен в canonical Excursion. |
+| `tour_source_neveroyatnaya_argentina` | `excursion_el_calafate_todo_glaciares` | between_days | 8 | 9 | CREATED_FROM_TOUR | Самостоятельная полнодневная навигация Todo Glaciares за $336 извлечена из свободного дня 8. |
+| `tour_source_neveroyatnaya_argentina` | `excursion_iguazu_gran_aventura` | between_days | 10 | 11 | CREATED_FROM_TOUR | Опциональное «Великое приключение» за $96 — Zodiac по нижнему Игуасу + 4x4 по джунглям — извлечено из дня 10. |
 
 ## 5. Как фиксировать новую найденную экскурсию
 

@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.37  
+Версия: 1.38  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **28** туров со статусом `Уникализировано`.
+В текущем реестре учтено **29** туров со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -180,12 +180,17 @@ missing_excursion_entities = 0
 | 300 | `tour_source_aconcagua_trek_ru` | `src/content/tours/aconcagua-trek-ru.md` | Треккинг на Аконкагуа: экспедиция на 18 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 301 | `tour_source_antarktida_ekspress_vozdushnyj_kruiz` | `src/content/tours/antarktida-ekspress-vozdushnyj-kruiz.md` | Антарктида Экспресс: Ушуайя, мыс Горн и Антарктида за 6 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 302 | `tour_source_vsya_argentina` | `src/content/tours/vsya-argentina.md` | Тур в Аргентину и Патагонию на 26 дней | DONE_LINKED | 5 | 2026-10-02 |
+| 303 | `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `src/content/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej.md` | Аргентина Deluxe за 11 дней: Буэнос-Айрес, Патагония, Ушуайя и Игуасу | DONE_LINKED | 8 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 302 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 303 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 303, 2026-10-02
+
+- **Строка 303 / `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej`:** опубликован 11-дневный индивидуальный Deluxe-тур из V2 + original. Основная программа numbered days сохранена внутри дней: обзорный Буэнос-Айрес, Перито-Морено, Tierra del Fuego и обе стороны Игуасу. Извлечено 8 самостоятельных модулей: после дня 2 — новый `excursion_buenos_aires_gala_tango_dinner_transfer`; после дня 3 — существующие Тигре, Fiesta Gaucha и Колония-дель-Сакраменто из Буэнос-Айреса; после дня 7 — новый `excursion_ushuaia_martillo_penguin_boat`; после дня 9 — существующие Macuco Safari и Парк птиц плюс новый `excursion_iguazu_helicopter_falls`. Опциональный треккинг по Перито-Морено оставлен как вариант основной экскурсии дня 5: V2 не оформляет его самостоятельной карточкой/секцией с отдельным продуктовым scope. Новые сущности не объединены с похожими, но отличающимися продуктами: Gala Tango имеет ужин+трансфер и цену шоу «по запросу»; Мартильо — морская навигация, а не `excursion_ushuaia_penguin_walk`; вертолет Игуасу не объединен с полетом над Рио. Инварианты: `production_excursion_refs = 8`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`. Итог: `DONE_LINKED`.
 
 ### Проверка v1.1 — строка 302, 2026-10-02
 
@@ -332,6 +337,15 @@ missing_excursion_entities = 0
 | `tour_source_vsya_argentina` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 5 | 6 | LINKED_EXISTING | В V2 присутствовал прямой ADA_TOURS_EXCURSION_REF; локальный текст Парка птиц удален из дня 5. |
 | `tour_source_vsya_argentina` | `excursion_el_chalten_kayaking` | between_days | 21 | 22 | LINKED_NEW | Опциональный каякинг от $300 за человека извлечен из дня 21; создана каноническая Excursion без неподтвержденных деталей. |
 | `tour_source_vsya_argentina` | `excursion_ushuaia_penguin_walk` | between_days | 23 | 24 | LINKED_NEW | Опциональная групповая прогулка с пингвинами за $350 с англоязычным гидом извлечена из дня 23; создана каноническая Excursion. |
+
+| `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_buenos_aires_gala_tango_dinner_transfer` | between_days | 2 | 3 | LINKED_NEW | Gala Tango с ужином и трансфером вынесено из вечерней части дня 2; отдельная source page Gala Tango в inventory недоступна (technical/502). |
+| `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | between_days | 3 | 4 | LINKED_EXISTING | Опциональная программа Tigre + San Isidro свободного дня 3 сопоставлена с существующей канонической Excursion. |
+| `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_source_fiesta_gaucho` | between_days | 3 | 4 | LINKED_EXISTING | Опциональный полный день Rancho / Fiesta Gaucha сопоставлен с существующей канонической Excursion. |
+| `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_buenos_aires_colonia_del_sacramento_day_trip` | between_days | 3 | 4 | LINKED_EXISTING | Опциональная поездка на пароме в Колонию-дель-Сакраменто из Буэнос-Айреса сопоставлена с ранее созданной канонической сущностью. |
+| `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_ushuaia_martillo_penguin_boat` | between_days | 7 | 8 | LINKED_NEW | Морская поездка к острову Мартильо вынесена из отдельного optional-блока дня 7. Не объединять с прогулкой с пингвинами: scope отличается. |
+| `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_source_makuko_safari` | between_days | 9 | 10 | LINKED_EXISTING | Дополнительный Macuco Safari дня 9 сопоставлен с существующей канонической Excursion. |
+| `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 9 | 10 | LINKED_EXISTING | V2 содержит отдельный Парк птиц и прямой ADA_TOURS_EXCURSION_REF на каноническую сущность. |
+| `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_iguazu_helicopter_falls` | between_days | 9 | 10 | LINKED_NEW | Дополнительный полет над водопадами и «Горлом Дьявола» вынесен в новую сущность; цена и длительность не выдумывались. |
 
 ## 5. Как фиксировать новую найденную экскурсию
 

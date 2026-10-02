@@ -7,11 +7,135 @@
   "contentPath": "src/content/tours/issledovanie-argentiny.md",
   "sourceUrl": "https://brasiltours.ru/issledovanie-argentiny",
   "countryIds": [
-    "country_argentina"
+    "country_argentina",
+    "country_brazil"
   ],
-  "destinationIds": [],
-  "destinations": [],
-  "aliases": [],
+  "destinationIds": [
+    "destination_argentina_buenos_aires",
+    "destination_argentina_treleu",
+    "destination_argentina_puerto_madrin",
+    "destination_argentina_poluostrov_valdes",
+    "destination_argentina_puerto_piramides",
+    "destination_argentina_el_pedral",
+    "destination_argentina_ushuajya",
+    "destination_argentina_nacionalnyj_park_terra_del_fuego",
+    "destination_argentina_kanal_bigl",
+    "destination_argentina_ozero_fagnano",
+    "destination_argentina_ozero_eskondido_ognennaya_zemlya",
+    "destination_argentina_el_calafate",
+    "destination_argentina_nacionalnyj_park_los_glasyares",
+    "destination_argentina_lednik_perito_moreno",
+    "destination_argentina_ozero_argentino",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_iguacu"
+  ],
+  "destinations": [
+    {
+      "id": "destination_argentina_buenos_aires",
+      "name": "Буэнос-Айрес",
+      "url": "/argentina/place/buenos-ajres/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_treleu",
+      "name": "Трелеу",
+      "url": "/argentina/place/treleu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_puerto_madrin",
+      "name": "Пуэрто-Мадрин",
+      "url": "/argentina/place/puerto-madrin/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_poluostrov_valdes",
+      "name": "Полуостров Вальдес",
+      "url": "/argentina/place/poluostrov-valdes/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_puerto_piramides",
+      "name": "Пуэрто-Пирамидес",
+      "url": "/argentina/place/puerto-piramides/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_el_pedral",
+      "name": "Эль-Педраль",
+      "url": "/argentina/place/el-pedral/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_ushuajya",
+      "name": "Ушуайя",
+      "url": "/argentina/place/ushuajya/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_nacionalnyj_park_terra_del_fuego",
+      "name": "Национальный парк Тьерра-дель-Фуэго",
+      "url": "/argentina/place/nacionalnyj-park-terra-del-fuego/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_kanal_bigl",
+      "name": "Канал Бигль",
+      "url": "/argentina/place/kanal-bigl/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_ozero_fagnano",
+      "name": "Озеро Фагнано",
+      "url": "/argentina/place/ozero-fagnano/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_ozero_eskondido_ognennaya_zemlya",
+      "name": "Озеро Эскондидо (Огненная Земля)",
+      "url": "/argentina/place/ozero-eskondido-ognennaya-zemlya/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_el_calafate",
+      "name": "Эль-Калафате",
+      "url": "/argentina/place/el-kalafate/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_nacionalnyj_park_los_glasyares",
+      "name": "Национальный парк Лос-Гласьярес",
+      "url": "/argentina/place/nacionalnyj-park-los-glasyares/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_lednik_perito_moreno",
+      "name": "Ледник Перито-Морено",
+      "url": "/argentina/place/lednik-perito-moreno/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_ozero_argentino",
+      "name": "Озеро Аргентино",
+      "url": "/argentina/place/ozero-argentino/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    }
+  ],
+  "aliases": [
+    "Лучшие достопримечательности Аргентины за 16 дней"
+  ],
   "text": {
     "selected": {
       "driveId": "1M-N5pDW1zOoSxMsohNrV1sg2OReyt2rZ",
@@ -148,7 +272,7 @@
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -162,9 +286,16 @@
       "spreadsheetId": "1ewRE1JZSLE94lI3Cay9r7MLZrgp5Vbbb4v5Ydqp02_c",
       "sheetName": "Лист1",
       "sheetRow": 103
+    },
+    {
+      "kind": "production_frontmatter",
+      "path": "src/content/tours/issledovanie-argentiny.md"
     }
   ],
   "legacyUrls": [
     "/tury/issledovanie-argentiny/"
+  ],
+  "routeCountryIds": [
+    "country_argentina"
   ]
 }

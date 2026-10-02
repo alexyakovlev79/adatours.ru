@@ -437,6 +437,11 @@ missing_excursion_entities = 0
 | `tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 10 | 11 | LINKED_EXISTING | Парк птиц за $50 извлечен из дня 10 и связан с существующей канонической Excursion. |
 | `tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu` | `excursion_iguazu_helicopter_falls` | between_days | 10 | 11 | LINKED_EXISTING | Вертолетный полет над водопадами Игуасу за $170 извлечен из дня 10 и связан с существующей канонической Excursion. |
 
+| `tour_source_issledovanie_argentiny` | `excursion_el_calafate_glaciares_gourmet` | between_days | 11 | 12 | LINKED_EXISTING | Glaciares Gourmet вынесена из свободного дня 11 и связана с существующей канонической Excursion. |
+| `tour_source_issledovanie_argentiny` | `excursion_el_calafate_todo_glaciares` | between_days | 11 | 12 | LINKED_EXISTING | Todo Glaciares вынесена из свободного дня 11 и связана с существующей канонической Excursion. |
+| `tour_source_issledovanie_argentiny` | `excursion_iguazu_gran_aventura` | between_days | 13 | 14 | LINKED_EXISTING | «Великое приключение» на аргентинской стороне Игуасу связано с существующей канонической Excursion. |
+| `tour_source_issledovanie_argentiny` | `excursion_buenos_aires_tango_show_dinner_transfer` | between_days | 15 | 16 | LINKED_EXISTING | Включенное танго-шоу с ужином в Буэнос-Айресе связано с существующей канонической Excursion. |
+
 ## 5. Как фиксировать новую найденную экскурсию
 
 Для каждой новой самостоятельной экскурсии между днями добавить строку в таблицу раздела 4:

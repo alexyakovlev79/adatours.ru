@@ -10,7 +10,7 @@ searchAliases:
 summary: >-
   Эквадор соединяет Анды, Амазонскую низменность, Тихоокеанское побережье и Галапагосские острова. Маршрут по стране можно строить вокруг Кито, вулканов, колониальных городов и природных районов.
 hero:
-  src: https://brasiltours.ru/image/countries/equador/ekvador.jpg
+  src: /media/countries/ekvador/hero-enhanced-20261002.webp
   alt: Игуана на Галапагосских островах, Эквадор
 gallery: []
 regions:
@@ -36,17 +36,17 @@ featureBands:
     title: Кито и вулканы
     text: >-
       Кито расположен высоко в Андах среди вулканических массивов. Исторический центр, линия экватора и поездки к вулканам позволяют соединить городскую и природную часть маршрута.
-    image: https://brasiltours.ru/image/countries/equador/new/4.jpg
+    image: /media/countries/ekvador/featureBands-1-enhanced-20261002.webp
   - eyebrow: Тихий океан
     title: Галапагосские острова
     text: >-
       Галапагосы дополняют материковый Эквадор вулканическими ландшафтами, морской природой и большим числом эндемичных видов.
-    image: https://brasiltours.ru/image/countries/equador/new/2.jpg
+    image: /media/countries/ekvador/featureBands-2-enhanced-20261002.webp
   - eyebrow: Восточные склоны Анд
     title: Баньос и дорога к Амазонии
     text: >-
       Баньос известен зелеными горами, реками, водопадами и активными маршрутами на переходе от Анд к амазонской части страны.
-    image: https://brasiltours.ru/image/countries/equador/new/1.jpg
+    image: /media/countries/ekvador/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/ekvador-ru
 sourceSnapshot: page_texts_original/ekvador-ru__f44fca57.md
 updatedAt: 2026-10-02

@@ -13,14 +13,14 @@ destinationType: city
 summary: >-
   Барилоче — горнолыжный курорт Аргентины на берегу озера Науэль-Уапи в центральной части Патагонских Анд. Город окружен горами, озерами и лесами национального парка Науэль-Уапи и известен зимним спортом, прогулками на природе и шоколадом.
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/bariloch-2.jpg
+  src: /media/destinations/bariloche/hero-enhanced-20261002.webp
   alt: "На фото: аргентинский курорт Барилоче в Патагонии"
 gallery:
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN21474_35.jpg
+  - src: /media/destinations/bariloche/gallery-1-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN5231_4.jpg
+  - src: /media/destinations/bariloche/gallery-2-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
-  - src: https://brasiltours.ru/image/catalog/category/b/a/bariloche6.jpg
+  - src: /media/destinations/bariloche/gallery-3-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN21474_14.jpg
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
@@ -48,12 +48,12 @@ featureBands:
     title: Озера, леса и горные вершины
     text: >-
       Барилоче расположен на берегу озера Науэль-Уапи в центральной части Патагонских Анд. Вокруг города находятся горные вершины, озера и густые леса национального парка Науэль-Уапи.
-    image: https://brasiltours.ru/image/catalog/category/B/N/BN21474_35.jpg
+    image: /media/destinations/bariloche/gallery-1-enhanced-20261002.webp
   - eyebrow: Активный отдых
     title: Катедраль и Отто
     text: >-
       Зимой Барилоче становится центром горнолыжного отдыха. На горах Катедраль и Отто работают современные подъемники, а в теплое время года популярны экскурсии и прогулки на открытом воздухе.
-    image: https://brasiltours.ru/image/catalog/category/b/a/bariloche6.jpg
+    image: /media/destinations/bariloche/gallery-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-argentinskij-kurort-bariloche
 sourceSnapshot: https://drive.google.com/file/d/1uxXs54TV0fZmXC_ac_WQI9MEEKrGzEox/view?usp=drivesdk
 updatedAt: 2026-10-02

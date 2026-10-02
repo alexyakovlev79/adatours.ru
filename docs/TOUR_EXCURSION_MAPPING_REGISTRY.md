@@ -205,6 +205,7 @@ missing_excursion_entities = 0
 | 307 | `tour_source_neveroyatnaya_argentina` | `src/content/tours/neveroyatnaya-argentina.md` | Невероятная Аргентина: Буэнос-Айрес, Ушуайя, Эль-Калафате и Игуасу за 13 дней | DONE_LINKED | 5 | 2026-10-02 |
 | 308 | `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `src/content/tours/argentina-buenos-ajres-kalafate-iguasu.md` | Тур в Аргентину на 10 дней: Буэнос-Айрес, Патагония и Игуасу | DONE_LINKED | 9 | 2026-10-02 |
 | 309 | `tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu` | `src/content/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu.md` | Тур в Аргентину на 12 дней: Буэнос-Айрес, Патагония, Ушуайя и Игуасу | DONE_LINKED | 10 | 2026-10-02 |
+| 310 | `tour_source_argentina_ot_lda_k_vodopadam` | `src/content/tours/argentina-ot-lda-k-vodopadam.md` | Аргентина: Буэнос-Айрес, ледник Перито-Морено и водопады Игуасу | DONE_LINKED | 5 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |

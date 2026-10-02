@@ -43,12 +43,11 @@ const optionalTourEntries = allTourEntries.filter((item) =>
 );
 const excursionTourCounts = buildExcursionTourCounts(allTourEntries);
 const destinationTourCounts = buildDestinationTourCounts(allTourEntries);
-const relatedTours = mainTourEntries
-  .sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0))
-  .slice(0, 3);
-const optionalTours = optionalTourEntries
-  .sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0))
-  .slice(0, 3);
+const compareTours = (a, b) =>
+  (b.data.priority ?? 0) - (a.data.priority ?? 0) ||
+  a.data.title.localeCompare(b.data.title, 'ru');
+const relatedTours = mainTourEntries.sort(compareTours);
+const optionalTours = optionalTourEntries.sort(compareTours);
 const relatedExcursions = excursionEntries
   .sort(compareExcursionsByPopularity(excursionTourCounts))
   .slice(0, 6);

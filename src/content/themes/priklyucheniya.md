@@ -20,6 +20,7 @@ featuredCountries:
   - country_honduras
   - country_colombia
   - country_costa_rica
+  - country_cuba
 sourceUrl: https://brasiltours.ru/priklyucheniya
 sourceSnapshot: page_texts_original/priklyucheniya__9d8e52e1.md
 updatedAt: 2026-10-02

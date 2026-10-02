@@ -10,6 +10,9 @@ language:
   - английский
 priceFrom: 438
 currency: USD
+route:
+  - Перейра
+  - кофейная ферма
 updatedAt: 2026-10-02
 ---
 

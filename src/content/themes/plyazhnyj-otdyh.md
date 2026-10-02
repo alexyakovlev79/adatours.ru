@@ -22,6 +22,7 @@ featuredCountries:
   - country_panama
   - country_suriname
   - country_uruguay
+  - country_french_guiana
 
 sourceUrl: https://brasiltours.ru/plyazhnye-tury
 sourceSnapshot: page_texts_original/plyazhnye-tury__bc5e8bbc.md

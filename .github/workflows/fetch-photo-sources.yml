@@ -1,0 +1,48 @@
+name: Fetch exact photo sources
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/fetch-photo-sources.yml
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch exact raw sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p sources
+          fetch() {
+            local url="$1"
+            local out="$2"
+            local referer="$3"
+            curl -fL --retry 2 --retry-delay 2 --connect-timeout 20 --max-time 120 \
+              -A "Mozilla/5.0" \
+              -e "$referer" \
+              "$url" -o "sources/$out"
+            test -s "sources/$out"
+          }
+          fetch "https://brasiltours.ru/image/countries/uruguay/1.jpg" "01-uruguay-hero.jpg" "https://brasiltours.ru/urugvaj-ru"
+          fetch "https://brasiltours.ru/image/countries/uruguay/22.jpg" "02-uruguay-feature-1.jpg" "https://brasiltours.ru/urugvaj-ru"
+          fetch "https://brasiltours.ru/image/countries/uruguay/11.jpg" "03-uruguay-feature-2.jpg" "https://brasiltours.ru/urugvaj-ru"
+          fetch "https://brasiltours.ru/image/countries/uruguay/2.jpg" "04-uruguay-feature-3.jpg" "https://brasiltours.ru/urugvaj-ru"
+          fetch "https://brasiltours.ru/image/countries/french-gviana/cassius-prudent-ideeqv3msic-unsplash.jpg" "05-french-guiana-hero.jpg" "https://brasiltours.ru/frantsuzskaya-gviana-ru"
+          fetch "https://brasiltours.ru/image/countries/french-gviana/3.jpg" "06-french-guiana-feature-1.jpg" "https://brasiltours.ru/frantsuzskaya-gviana-ru"
+          fetch "https://brasiltours.ru/image/countries/french-gviana/4.jpg" "07-french-guiana-feature-2.jpg" "https://brasiltours.ru/frantsuzskaya-gviana-ru"
+          fetch "https://brasiltours.ru/image/countries/french-gviana/5.jpg" "08-french-guiana-feature-3.jpg" "https://brasiltours.ru/frantsuzskaya-gviana-ru"
+          fetch "https://brasiltours.ru/image/countries/chile/5-chile-torres-del-paine.jpg" "09-chile-hero.jpg" "https://brasiltours.ru/chili-ru"
+          fetch "https://brasiltours.ru/image/countries/chile/san-pedro-atakama.jpg" "10-chile-feature-1.jpg" "https://brasiltours.ru/chili-ru"
+
+      - name: Upload exact sources
+        uses: actions/upload-artifact@v4
+        with:
+          name: photo-source-batch-20261002
+          path: sources/
+          if-no-files-found: error
+          retention-days: 1

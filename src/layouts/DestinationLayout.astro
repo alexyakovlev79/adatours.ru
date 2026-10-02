@@ -187,3 +187,14 @@ const destinationSchema = {
 
   <LeadForm title={`Собрать поездку: ${d.name}`} entityId={d.id} />
 </BaseLayout>
+
+
+<style>
+  @media (max-width: 820px) {
+    :global(.story__media) {
+      width: 100vw;
+      max-width: none;
+      margin-left: calc(-1 * var(--gutter));
+    }
+  }
+</style>

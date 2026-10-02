@@ -30,7 +30,10 @@ const countryTourTarget = ({
   country_paraguay: 'Парагвай',
   country_suriname: 'Суринам',
   country_uruguay: 'Уругвай',
+  country_french_guiana: 'Французскую Гвиану',
 } as Record<string, string>)[d.id] ?? d.name;
+
+const countryTourPreposition = d.id === 'country_french_guiana' ? 'во' : 'в';
 
 const [destinationEntries, tourEntries, excursionEntries, themeEntries] = await Promise.all([
   getCollection('destinations', ({ data }) =>
@@ -188,7 +191,7 @@ const destinationTypeLabel = {
         <div class="container">
           <div class="country-linked__heading country-linked__heading--tours">
             <p class="eyebrow">Туры</p>
-            <h2 id="country-tours-title">Туры в {countryTourTarget}</h2>
+            <h2 id="country-tours-title">Туры {countryTourPreposition} {countryTourTarget}</h2>
             <p>Готовый маршрут можно взять за основу и адаптировать под ваши даты, темп и интересы.</p>
           </div>
         </div>

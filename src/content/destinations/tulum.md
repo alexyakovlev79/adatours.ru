@@ -1,0 +1,30 @@
+---
+id: "destination_mexico_tulum"
+locale: "ru"
+slug: "tulum"
+status: "approved"
+name: "Тулум"
+countryId: "country_mexico"
+destinationType: "resort"
+summary: "Руины города майя над Карибским морем, поселок Тулум Пуэбло и пляжи восточного побережья Юкатана с отелями и подводным миром."
+searchAliases: []
+themes: []
+hero: {"src":"https://brasiltours.ru/image/countries/mexico/tanja-cotoaga-gvczokkp8bw-unsplash.jpg","alt":"На фото: морской курорт Тулум в Мексике"}
+gallery: [{"src":"https://brasiltours.ru/image/catalog/category/t/u/tulum2_1.jpg","alt":"На фото: морской курорт Тулум в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/x/e/xel-ha-tulum-excursion-1.jpg","alt":"На фото: морской курорт Тулум в Мексике"}]
+facts: []
+featureBands: []
+relatedDestinations: []
+featuredTours: []
+featuredExcursions: []
+sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-morskoj-kurort-tulum-v-meksike"
+sourceSnapshot: "https://drive.google.com/file/d/1iCbTN_dLNkCztJVBRLKu8QzEclZFWNn8/view?usp=drivesdk"
+updatedAt: "2026-10-02"
+---
+
+## Тулум - лучший туристический центр Юкатана!
+
+Тулум — это удивительное место на восточном побережье полуострова Юкатан. Он состоит из трех частей: руины старого города майя — главная «фишка» этих мест, индейский поселок Тулум Пуэбло и туристско-развлекательная зона с лучшими отелями и пляжами вдоль дороги и Карибского моря.
+
+## Тулум - отличное смешение отдыхов!
+
+Тулум считается единственным морским портом майя, это одно из наиболее известных археологических мест. С города на краю отвесного утеса открывается восхитительный вид на море. Город окружен с трех сторон каменными стенами, а со стороны моря — труднодоступными скалами пятнадцатиметровой высоты. Пляжи в Тулуме отличные, и туристы приезжают сюда насладиться всем тем, что предлагает город: тропическая природа, отвесные скалы, мелкий белый песочек, чистейшая бирюзовая вода и удивительной красоты подводный мир. Здесь соединилась романтика, экзотика, археология и деревенская жизнь — отличное смешение!

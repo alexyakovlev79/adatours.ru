@@ -1,0 +1,30 @@
+---
+id: "destination_mexico_puerto_eskandido"
+locale: "ru"
+slug: "puerto-eskandido"
+status: "approved"
+name: "Пуэрто Эскандидо"
+countryId: "country_mexico"
+destinationType: "resort"
+summary: "Курорт в штате Оахака привлекает серферов пляжами и бухтами с волнами разной сложности. Для спокойного отдыха здесь есть тихая лагуна, а на Авениде Перес Гасга работают бары, кафе и магазины."
+searchAliases: []
+themes: []
+hero: {"src":"https://brasiltours.ru/image/countries/mexico/puerto-escondido.jpg","alt":"На фото: морской курорт Пуэрто Эскандидо в Мексике"}
+gallery: [{"src":"https://brasiltours.ru/image/catalog/category/p/u/puerto_escondido_mexico.jpg","alt":"На фото: морской курорт Пуэрто Эскандидо в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/P/u/PuertoEscondido-Oaxaca_intro_345x225.jpg","alt":"На фото: морской курорт Пуэрто Эскандидо в Мексике"}]
+facts: []
+featureBands: []
+relatedDestinations: []
+featuredTours: []
+featuredExcursions: []
+sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-puerto-escondido-v-meksike"
+sourceSnapshot: "https://drive.google.com/file/d/1Euc0lIWoG6I64WxN72vvpoNsftRUcaaK/view?usp=drivesdk"
+updatedAt: "2026-10-02"
+---
+
+## Пуэрто Эскандидо - городок уютных пляжей!
+
+Пуэрто Эскандидо является одним из наиболее густонаселенных городов Мексики в штате Оахака. Он расположен на побережье в штате Оахака, в 800 км к югу от столицы Мексики и 290 км от столицы Оахака-де-Хуарес и представляет собой длинную прибережную полосу, где разместилось с десяток чистых уютных пляжей.
+
+## Пуэрто Эскандидо - рай для серферов!
+
+Сердцем курорта является Авенида Перес Гасга. Здесь множество баров, гостиниц, кафе, ресторанов, дискотек, магазинов, интернет-кафе. Этот курорт - рай для серферов: здесь много пляжей и красочных бухт с различной длиной волны и уровнем сложности. А можно нырнуть с маской и трубкой в тихую лагуну и понаблюдать за разноцветными рыбками в воде, и, если повезет, увидеть морских черепах и дельфинов. Изумрудно-лазурная вода комфортной температуры, свежий бриз с океана, зеленые пальмы, мелкий песочек — все это как создает ощущение, что вы попали в настоящее райское местечко.

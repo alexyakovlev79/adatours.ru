@@ -1,0 +1,44 @@
+---
+id: destination_belize_kaje_kolker
+locale: ru
+slug: kaje-kolker
+status: approved
+name: Кайе Колкер
+countryId: country_belize
+destinationType: island
+summary: Кайе Колкер — небольшой коралловый остров в Карибском море недалеко от берега Белиза. Спокойный отдых среди пальм здесь можно дополнить дайвингом и водными видами спорта.
+searchAliases: []
+hero:
+  src: https://brasiltours.ru/image/countries/belize/caye-caulker-2.jpg
+  alt: 'На фото: остров Кайе Колкер в Белизе'
+gallery:
+- src: https://brasiltours.ru/image/catalog/category/B/N/BN4971_5.jpg
+  alt: 'На фото: остров Кей Колкер в Белизе'
+- src: https://brasiltours.ru/image/catalog/category/B/N/BN16031_16.jpg
+  alt: 'На фото: остров Кей Колкер в Белизе'
+- src: https://brasiltours.ru/image/catalog/category/f/r/fronthouseonbeach.jpg
+  alt: 'На фото: остров Кей Колкер в Белизе'
+- src: https://brasiltours.ru/image/catalog/category/B/N/BN16031_12.jpg
+  alt: 'На фото: остров Кей Колкер в Белизе'
+- src: https://brasiltours.ru/image/catalog/category/c/a/caye_caulker_belize.jpg
+  alt: 'На фото: остров Кей Колкер в Белизе'
+- src: https://brasiltours.ru/image/catalog/category/c/a/caye-caulker-12.jpg
+  alt: 'На фото: остров Кей Колкер в Белизе'
+- src: https://brasiltours.ru/image/catalog/category/p/2/p269127-Belize-Caye_Caulker.jpg
+  alt: 'На фото: остров Кей Колкер в Белизе'
+themes: []
+relatedDestinations: []
+featuredTours: []
+featuredExcursions: []
+featureBands: []
+facts: []
+sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-kej-kolker-v-belize-kariby
+sourceSnapshot: https://drive.google.com/file/d/1Wke3_TOU7uf8RsTEV2vk3C4Q-3aZfwlZ/view?usp=drivesdk
+updatedAt: '2026-10-02'
+---
+
+Это небольшой коралловый остров в Карибском море недалеко от берега Белиза, примерно в 15 км от Белиз-Сити. Экзотика тропических джунглей, необычайно замысловатые пещеры, переходящие в гроты, качественный сервис, великолепная кухня весьма привлекательны для безмятежного отдыха.
+
+Отсутствие спешки – это здесь естественное состояние. И все располагает к этому - ласкающий бриз, качающиеся пальмы, кристальная вода, отсутствие забот.
+
+Наряду с перспективой провести такой спокойный отдых, можно активно заняться дайвингом и различными водными видами спорта.

@@ -1,0 +1,40 @@
+---
+id: "destination_uruguay_punta_del_este"
+locale: ru
+slug: "punta-del-este"
+status: approved
+name: "Пунта дель Эсте"
+countryId: "country_uruguay"
+destinationType: "resort"
+summary: "Пунта дель Эсте: пляжный и активный отдых на курорте Уругвая. Вечером гостей ждут ночные клубы, рестораны и уличные кафе."
+searchAliases: []
+hero:
+  src: "https://brasiltours.ru/image/countries/uruguay/2.jpg"
+  alt: "На фото: курорт Пунта дель Эсте в Уругвае"
+gallery:
+  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22634_50.jpg"
+    alt: "На фото: курорт Пунта дель Эсте в Уругвае"
+  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22634_47.jpg"
+    alt: "На фото: курорт Пунта дель Эсте в Уругвае"
+  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN19637_6.jpg"
+    alt: "На фото: курорт Пунта дель Эсте в Уругвае"
+themes: []
+facts: []
+featureBands: []
+relatedDestinations: []
+featuredTours: []
+featuredExcursions: []
+sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-punta-del-ehste-v-urugvae"
+sourceSnapshot: "https://drive.google.com/file/d/1j4hteqGcwQ9DrWN-TWLRc1N611u-RjBf/view?usp=drivesdk"
+updatedAt: '2026-10-02'
+---
+
+### Пунта дель Эсте- город-курорт Уругвая!
+
+Пунта дель Эсте- город-курорт мирового масштаба- дает туристам возможность не только загорать на прекрасном пляже и поплавать в лазурном океане, но и предназначен именно для активного отдыха и “прожигания” жизни.
+
+## Пляжный отдых в Пунта дель Эсте
+
+### Пунта дель Эсте - пляжи, море, солнце!
+
+Для этого здесь есть множество тренажерных залов и фитнесс- клубов. Днем жизнь проходит на пляже и в океане, а вечером начинается ночная жизнь, для которой в городе есть многочисленные ночные клубы, рестораны и просто уличные кафе.

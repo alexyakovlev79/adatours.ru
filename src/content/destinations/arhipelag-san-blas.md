@@ -1,0 +1,30 @@
+---
+id: "destination_panama_arhipelag_san_blas"
+locale: "ru"
+slug: "arhipelag-san-blas"
+status: "approved"
+name: "Архипелаг Сан-Блас"
+countryId: "country_panama"
+destinationType: "island"
+summary: "Архипелаг вдоль карибского побережья Панамы. Туры с посещением деревень куна, рыбалка и дайвинг знакомят с островами Сан-Блас."
+searchAliases: []
+themes: []
+hero: {"src":"https://brasiltours.ru/image/countries/panama/10.jpg","alt":"На фото: острова Сан-Блас в Панаме"}
+gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN14129_2.jpg","alt":"На фото: острова Сан-Блас в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/5/1/513999588_b498abfcc3_b.jpg","alt":"На фото: острова Сан-Блас в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/i/m/img_feature.jpg","alt":"На фото: острова Сан-Блас в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/1/0/1021557912_8d5cf76730_o.jpg","alt":"На фото: острова Сан-Блас в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN4976_6.jpg","alt":"На фото: острова Сан-Блас в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/0/2036384314_7a066db1b6_o.jpg","alt":"На фото: острова Сан-Блас в Панаме"}]
+facts: []
+featureBands: []
+relatedDestinations: []
+featuredTours: []
+featuredExcursions: []
+sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-paname"
+sourceSnapshot: "https://drive.google.com/file/d/1kNHUsa9ipvi2GUeQ9caudUoTz_VNdIzU/view?usp=drivesdk"
+updatedAt: "2026-10-02"
+---
+
+## Острова Сан-Блас!
+
+Сан-Блас – 375 островов этого архипелага тянутся вдоль карибского побережья Панамы от залива Сан-Блас до колумбийской границы.
+
+## Колорит архипелага Сан -Блас!
+
+Большинство островов архипелага очень маленькие и необитаемы. Вы можете совершить тур по архипелагу Сан-Блас с посещением деревень индейцев. Здесь и рыбалка и дайвинг в кристально чистых водах Карибского моря. Женщины племени куна носят традиционные костюмы и дополняют их многочисленными украшениями, в том числе кольцами в носу. Здесь до сих пор царит матриархат! Свои жилища куна сооружают из пальмовой древесины, листьев и соломы, однако такие дома настолько прочны, что способны выдерживать сильные ветра и ливни.

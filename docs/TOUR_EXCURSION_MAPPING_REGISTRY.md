@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.46  
+Версия: 1.47  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -174,7 +174,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **33** тур со статусом `Уникализировано`.
+В текущем реестре учтено **34** тур со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -209,13 +209,17 @@ missing_excursion_entities = 0
 | 305 | `tour_source_tur_v_argentinu_na_dikuyu_prirodu` | `src/content/tours/tur-v-argentinu-na-dikuyu-prirodu.md` | Эко-тур по Аргентине на 9 дней: киты Пуэрто-Мадрина и заповедник Ибера | DONE_LINKED | 2 | 2026-10-02 |
 | 306 | `tour_source_tur_v_argentinu_na_11dnej` | `src/content/tours/tur-v-argentinu-na-11dnej.md` | VIP-тур по Аргентине на 11 дней: Патагония, Ушуайя и водопады Игуасу | DONE_LINKED | 8 | 2026-10-02 |
 | 307 | `tour_source_neveroyatnaya_argentina` | `src/content/tours/neveroyatnaya-argentina.md` | Невероятная Аргентина: Буэнос-Айрес, Ушуайя, Эль-Калафате и Игуасу за 13 дней | DONE_LINKED | 5 | 2026-10-02 |
-| 308 | `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `src/content/tours/argentina-buenos-ajres-kalafate-iguasu.md` | Тур в Аргентину на 10 дней: Патагония и водопады Игуасу | IN_PROGRESS | 0 | 2026-10-02 |
+| 308 | `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `src/content/tours/argentina-buenos-ajres-kalafate-iguasu.md` | Тур в Аргентину на 10 дней: Буэнос-Айрес, Патагония и Игуасу | DONE_LINKED | 9 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Текущий проход v1.2:** строка 308 — `IN_PROGRESS`.
+**Следующий проход v1.2:** строка 308 закрыта. Перед следующим проходом проверить Google Sheets на новые туры со статусом `Добавлена`, затем первый `Запланирована`.
+
+### Проверка v1.2 — строка 308, 2026-10-02
+
+- **Строка 308 / `tour_source_argentina_buenos_ajres_kalafate_iguasu`:** опубликован 10-дневный индивидуальный тур «Тур в Аргентину на 10 дней: Буэнос-Айрес, Патагония и Игуасу» из V2 + original. Основная программа numbered days сохранена внутри дней: обзорный Буэнос-Айрес, Перито-Морено, перелеты и обе стороны Игуасу. Извлечены 9 самостоятельных модулей: после дня 2 — `excursion_source_tango_shou_v_buenos_ajrese`; после дня 3 — Тигре, Монтевидео из Буэнос-Айреса и `excursion_source_fiesta_gaucho`; после дня 5 — новая `excursion_el_calafate_ice_trekking_perito_moreno`; после дня 7 — `excursion_iguazu_gran_aventura` и альтернативная `excursion_source_makuko_safari`; после дня 8 — Парк птиц и `excursion_iguazu_helicopter_falls`. Цены самостоятельных опций из source сохранены в блоке «Не включено»: Тигре $100, Монтевидео $500/$850, Fiesta Gaucho $320, ледовый треккинг $500, Gran Aventura $100, Парк птиц $50, вертолет $170. Для нового ледового треккинга создана отдельная production Excursion только из подтвержденных данных source; отсутствующие длительность и язык не додумывались. Инварианты: `standalone_excursion_modules = 9`, `production_excursion_refs = 9`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`. В production-туре 10 numbered days, cache-WebP отсутствуют, hero и day media используют подтвержденные raw source images. Build/deploy commit `d8b2e1f4d41cd7ed5a37528397ca0a73c21631a6` завершен успешно. Итог: `DONE_LINKED`.
 
 ### Проверка v1.2 — строка 307, 2026-10-02
 
@@ -411,6 +415,16 @@ missing_excursion_entities = 0
 | `tour_source_neveroyatnaya_argentina` | `excursion_el_calafate_glaciares_gourmet` | between_days | 8 | 9 | CREATED_FROM_TOUR | Самостоятельная полнодневная навигация Glaciares Gourmet за $388 извлечена из свободного дня 8; Premium-вариант с доплатой $153 сохранен в canonical Excursion. |
 | `tour_source_neveroyatnaya_argentina` | `excursion_el_calafate_todo_glaciares` | between_days | 8 | 9 | CREATED_FROM_TOUR | Самостоятельная полнодневная навигация Todo Glaciares за $336 извлечена из свободного дня 8. |
 | `tour_source_neveroyatnaya_argentina` | `excursion_iguazu_gran_aventura` | between_days | 10 | 11 | CREATED_FROM_TOUR | Опциональное «Великое приключение» за $96 — Zodiac по нижнему Игуасу + 4x4 по джунглям — извлечено из дня 10. |
+
+| `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `excursion_source_tango_shou_v_buenos_ajrese` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином вынесено из numbered day 2 после обзорной экскурсии по Буэнос-Айресу. |
+| `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | between_days | 3 | 4 | LINKED_EXISTING | Опциональная сборная экскурсия Тигре + Сан-Исидро за $100 сопоставлена с существующей канонической Excursion. |
+| `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `excursion_source_ekskursiya_po_montevideo` | between_days | 3 | 4 | LINKED_EXISTING | Однодневная поездка из Буэнос-Айреса в Монтевидео с паромом, трансферами и гидом сопоставлена с существующей канонической Excursion. |
+| `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `excursion_source_fiesta_gaucho` | between_days | 3 | 4 | LINKED_EXISTING | Опциональный полный день Fiesta Gaucho за $320 сопоставлен с существующей канонической Excursion. |
+| `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `excursion_el_calafate_ice_trekking_perito_moreno` | between_days | 5 | 6 | CREATED_FROM_TOUR | Айс-трекинг по Перито-Морено за $500 извлечен из дня 5; создана каноническая Excursion без выдуманных длительности и языка. |
+| `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `excursion_iguazu_gran_aventura` | between_days | 7 | 8 | LINKED_EXISTING | «Большое приключение» на аргентинской стороне Игуасу сопоставлено с ранее созданной canonical Excursion; текущая программа отдельно фиксирует цену $100, длительность 1 ч 15 мин и ограничение до 12 лет. |
+| `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `excursion_source_makuko_safari` | between_days | 7 | 8 | LINKED_EXISTING | Macuco Safari вынесено как явно названная альтернатива Gran Aventura на бразильской стороне; используется существующая каноническая Excursion. |
+| `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 8 | 9 | LINKED_EXISTING | Парк птиц за $50 извлечен из дня 8 и связан с существующей канонической Excursion. |
+| `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `excursion_iguazu_helicopter_falls` | between_days | 8 | 9 | LINKED_EXISTING | Вертолетный полет над водопадами Игуасу за $170 извлечен из дня 8 и связан с существующей канонической Excursion. |
 
 ## 5. Как фиксировать новую найденную экскурсию
 

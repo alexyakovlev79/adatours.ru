@@ -6,12 +6,14 @@ slug: braziliya-san-paulu-iguasu-rio-ilha-grande-paraty-12-dnej
 status: approved
 countries:
   - country_brazil
+  - country_argentina
 destinations:
   - destination_brazil_sao_paulo
   - destination_brazil_iguacu
   - destination_brazil_rio
   - destination_brazil_ilha_grande
   - destination_brazil_paraty
+  - destination_argentina_puerto_iguasu
 themes:
   - culture
   - nature

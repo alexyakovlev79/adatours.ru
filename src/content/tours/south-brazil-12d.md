@@ -10,6 +10,7 @@ destinations:
   - destination_brazil_rio
   - destination_brazil_iguacu
   - destination_brazil_florianopolis
+  - destination_brazil_porto_alegre
 themes:
   - nature
   - beach

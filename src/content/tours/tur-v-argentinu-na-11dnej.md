@@ -11,10 +11,14 @@ searchAliases:
 countries:
   - country_argentina
   - country_brazil
+  - country_uruguay
 destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_el_calafate
   - destination_brazil_iguacu
+  - destination_uruguay_koloniya_del_sakramento
+  - destination_argentina_ushuajya
+  - destination_argentina_puerto_iguasu
 themes:
   - luxury
   - culture
@@ -36,7 +40,7 @@ priceFrom: 3858
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/cache/countries/argentina/new-photos/miriam-duran-1084491-unsplash-1920x1080.webp
+  src: https://brasiltours.ru/image/countries/argentina/new-photos/miriam-duran-1084491-unsplash.jpg
   alt: "Аргентина Делюкс"
 gallery: []
 featured: false

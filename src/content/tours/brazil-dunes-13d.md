@@ -6,6 +6,7 @@ slug: braziliya-rio-iguasu-lencois-natal-pipa-13-dnej
 status: approved
 countries:
   - country_brazil
+  - country_argentina
 destinations:
   - destination_brazil_rio
   - destination_brazil_iguacu
@@ -13,6 +14,7 @@ destinations:
   - destination_brazil_lencois_maranhenses
   - destination_brazil_natal
   - destination_brazil_praia_de_pipa
+  - destination_argentina_puerto_iguasu
 themes:
   - nature
   - adventure

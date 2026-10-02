@@ -17,6 +17,7 @@ destinations:
   - destination_argentina_el_calafate
   - destination_chile_puerto_natales_torres_del_pajne
   - destination_chile_santyago_de_chili
+  - destination_argentina_el_chalten
 themes:
   - multi-country
   - nature

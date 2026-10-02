@@ -1,3 +1,5 @@
+> Исторический handoff от 24.09.2026. Рабочие задачи, источники и завершение определяет `docs/workflows/master.md`; этот файл не является startup-инструкцией.
+
 # SITE_HANDOFF_2026-09-24
 
 ## Точка продолжения
@@ -130,34 +132,9 @@ Result:
 
 Production artifact также был получен из run #116.
 
-## Что НЕ успела закончить
+## Исторические незавершенные задачи
 
-### 1. Финальная rendered QA страницы /reviews/
-
-Это главный незакрытый хвост текущей точки.
-
-Firecrawl screenshot QA не выполнился из-за исчерпания credits.
-
-Remote Desktop Commander был offline.
-
-Поэтому на текущем этапе подтверждены:
-
-- успешный Astro build;
-- успешный GitHub Pages deploy;
-- наличие generated production artifact;
-- наличие `/reviews/` в production build.
-
-Но еще НЕ подтверждены вручную:
-
-- desktop rendered view;
-- mobile rendered view;
-- отсутствие горизонтального overflow;
-- фактическая работа source links;
-- визуальный ритм 8 review-блоков;
-- корректность hero crop;
-- отсутствие новых конфликтов breadcrumbs/header/H1.
-
-Новый чат должен начать именно с этой QA.
+Требование отдельной экранной приемки страницы отзывов отменено 02.10.2026. Оно не блокирует наполнение сайта и не назначается следующему чату.
 
 ### 2. Source-verification 8 review excerpts
 
@@ -188,34 +165,9 @@ Remote Desktop Commander был offline.
 
 До подтверждения текущая осторожная версия fact passport остается правильной.
 
-## Что делать новому чату дальше
+## Продолжение работы
 
-### Сначала
-
-1. Проверить live `/reviews/` после run #116 на desktop 1440/1280 и mobile 390/360.
-2. Проверить title, description, canonical, breadcrumbs и JSON-LD.
-3. Проверить 8 source links.
-4. Сверить 8 review excerpts с исходником.
-5. Если найден дефект, исправить точечно и повторить QA.
-
-### Затем
-
-Wave 2 priority batch можно считать закрытым после QA reviews.
-
-Дальше переходить к Wave 3 / scale-out по правилу value-first:
-
-1. расширять сильнейшие Brazil destination clusters;
-2. добавлять high-value tours, связанные с уже approved destinations/themes;
-3. только после стабилизации relations добавлять excursions;
-4. не идти алфавитно;
-5. не запускать массовую очередь 700+ страниц без regression QA шаблонов.
-
-Для выбора следующего пакета использовать:
-
-- master blueprint;
-- `ADA_TOURS_CONTENT_NORMALIZATION_v1.md`;
-- inventory / original snapshots на Google Drive;
-- фактическую бизнес-ценность и связи с уже готовыми страницами.
+Следующий чат выполняет конкретный запрос пользователя по актуальному workflow из `docs/workflows/`. Очередь не зависит от повторного аудита старых страниц. Туры могут ссылаться на зарезервированные места до создания их страниц; экскурсии создаются по выбранной записи или как необходимая часть тура.
 
 ## Важное правило синхронизации
 

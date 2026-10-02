@@ -9,6 +9,9 @@ import Breadcrumbs from '../components/global/Breadcrumbs.astro';
 import { SITE } from '../lib/site';
 import { withBase } from '../lib/paths';
 import { ORG } from '../data/organization/ada-tours';
+import { validateSiteContent } from '../lib/content-validation';
+
+await validateSiteContent();
 
 interface BreadcrumbItem {
   label: string;

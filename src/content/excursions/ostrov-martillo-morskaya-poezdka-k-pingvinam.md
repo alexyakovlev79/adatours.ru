@@ -8,7 +8,7 @@ searchAliases:
   - "Остров Мартильо"
   - "Пингвины Ушуайя Мартильо"
 country: country_argentina
-destination: destination_argentina_ushuaia
+destination: destination_argentina_ushuajya
 destinationName: "Ушуайя"
 themes:
   - nature

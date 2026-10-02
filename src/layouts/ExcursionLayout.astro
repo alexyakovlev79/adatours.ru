@@ -10,13 +10,15 @@ import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
+import { withBase } from '../lib/paths';
+import { destinationCatalogById } from '../lib/content-validation';
 
 const { entry } = Astro.props;
 const d = entry.data;
 
 const [countryEntries, destinationEntries, tourEntries, excursionEntries] = await Promise.all([
-  getCollection('countries', ({ data }) => data.locale === 'ru'),
-  getCollection('destinations', ({ data }) => data.locale === 'ru' && data.id === d.destination),
+  getCollection('countries', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
+  getCollection('destinations', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status) && data.id === d.destination),
   getCollection('tours', ({ data }) =>
     data.locale === 'ru' &&
     !['draft', 'archived'].includes(data.status)
@@ -48,11 +50,11 @@ const getTourExcursionIds = (tour) => {
 };
 
 const relatedExcursionTourOverlap = new Map<string, number>();
+const relatedTours = tourEntries.filter((tour) => getTourExcursionIds(tour).has(d.id))
+  .sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0) || a.data.title.localeCompare(b.data.title, 'ru'));
 
-for (const tour of tourEntries) {
+for (const tour of relatedTours) {
   const tourExcursionIds = getTourExcursionIds(tour);
-
-  if (!tourExcursionIds.has(d.id)) continue;
 
   tourExcursionIds.delete(d.id);
 
@@ -75,21 +77,10 @@ const relatedExcursions = excursionEntries
   })
   .slice(0, 10);
 
-const fallbackCountries: Record<string, { label: string; href: string }> = {
-  country_ecuador: { label: 'Эквадор', href: '/strany/ekvador/' },
-};
-
-const fallbackDestinations: Record<string, { label: string; href: string }> = {
-  destination_ecuador_kito_vulkan_kotopahi: {
-    label: 'Кито и вулкан Котопахи',
-    href: '/napravleniya/ekvador/kito-vulkan-kotopahi/',
-  },
-};
-
 const destinationName =
   destination?.data.name ??
-  d.destinationName ??
-  (d.destination ? fallbackDestinations[d.destination]?.label : undefined);
+  (d.destination ? destinationCatalogById.get(d.destination)?.name : undefined) ??
+  d.destinationName;
 
 const destinationHref = destinationCountry && destination
   ? `/napravleniya/${destinationCountry.data.slug}/${destination.data.slug}/`
@@ -100,16 +91,14 @@ const countryBreadcrumb = country
       label: country.data.name,
       href: `/strany/${country.data.slug}/`,
     }
-  : fallbackCountries[d.country];
+  : undefined;
 
-const destinationBreadcrumb = country && destination
+const destinationBreadcrumb = destination && destinationHref
   ? {
       label: destination.data.name,
-      href: `/napravleniya/${country.data.slug}/${destination.data.slug}/`,
+      href: destinationHref,
     }
-  : d.destination
-    ? fallbackDestinations[d.destination]
-    : undefined;
+  : undefined;
 
 const excursionBreadcrumbs = [
   ...(countryBreadcrumb ? [countryBreadcrumb] : []),
@@ -229,6 +218,17 @@ const excursionSchema = {
 
   {(d.included.length > 0 || d.notIncluded.length > 0 || d.notes.length > 0) && (
     <IncludedExcluded included={d.included} notIncluded={d.notIncluded} notes={d.notes} />
+  )}
+
+  {relatedTours.length > 0 && (
+    <section class="section--tight">
+      <div class="container prose">
+        <h2>Туры с этой экскурсией</h2>
+        <ul>
+          {relatedTours.map((tour) => <li><a href={withBase(`/tury/${tour.data.slug}/`)}>{tour.data.title}</a></li>)}
+        </ul>
+      </div>
+    </section>
   )}
 
   {relatedExcursions.length > 0 && (

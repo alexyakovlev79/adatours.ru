@@ -15,6 +15,7 @@ destinations:
   - destination_argentina_buenos_aires
   - destination_chile_santyago_de_chili
   - destination_chile_ostrov_pashi
+  - destination_chile_puerto_natales_torres_del_pajne
 themes:
   - adventure
   - culture

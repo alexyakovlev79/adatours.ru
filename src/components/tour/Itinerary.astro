@@ -63,7 +63,7 @@ for (const day of days) {
 const excursionEntries = referencedExcursionIds.size > 0
   ? await getCollection(
       'excursions',
-      ({ data }) => data.locale === 'ru' && referencedExcursionIds.has(data.id),
+      ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status) && referencedExcursionIds.has(data.id),
     )
   : [];
 
@@ -84,6 +84,7 @@ const resolveExcursion = (id?: string) => {
   return {
     id: entry.data.id,
     title: entry.data.title,
+    href: `/ekskursii/${entry.data.slug}/`,
     lead: entry.data.lead,
     bodyHtml: entry.rendered?.html ?? '',
     hero: entry.data.hero,
@@ -146,9 +147,12 @@ const resolvedDays = days.map((day) => {
                 {day.places && day.places.length > 0 && <p class="day__places">{day.places.join(' · ')}</p>}
 
                 {day.excursion ? (
-                  day.excursion.bodyHtml
-                    ? <div class="excursion-embed__body" set:html={day.excursion.bodyHtml} />
-                    : <p><InlineMarkdown text={day.excursion.lead} /></p>
+                  <>
+                    {day.excursion.bodyHtml
+                      ? <div class="excursion-embed__body" set:html={day.excursion.bodyHtml} />
+                      : <p><InlineMarkdown text={day.excursion.lead} /></p>}
+                    <p><a class="day__excursion-link" href={withBase(day.excursion.href)}>Подробнее об экскурсии</a></p>
+                  </>
                 ) : day.contentBlocks.length > 0 ? (
                   day.contentBlocks.map((block) => {
                     if (block.type === 'text') {
@@ -180,7 +184,7 @@ const resolvedDays = days.map((day) => {
                         class="day__embedded-excursion"
                         data-excursion-ref={excursion.id}
                       >
-                        <h3>{excursion.title}</h3>
+                        <h3><a class="day__excursion-link" href={withBase(excursion.href)}>{excursion.title}</a></h3>
                         {excursion.bodyHtml
                           ? <div class="excursion-embed__body" set:html={excursion.bodyHtml} />
                           : <p><InlineMarkdown text={excursion.lead} /></p>
@@ -330,6 +334,12 @@ const resolvedDays = days.map((day) => {
     font-size: .78rem !important;
     letter-spacing: .08em;
     text-transform: uppercase;
+  }
+
+  .day__excursion-link {
+    color: var(--color-gold);
+    text-decoration: underline;
+    text-underline-offset: .2em;
   }
 
   .day__subsection {

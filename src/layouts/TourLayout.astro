@@ -10,6 +10,8 @@ import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
+import { withBase } from '../lib/paths';
+import { destinationCatalogById } from '../lib/content-validation';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -60,14 +62,25 @@ const editorialHighlights = d.highlights.filter((_, index) => {
 });
 
 const [countryEntries, destinationEntries] = await Promise.all([
-  getCollection('countries', ({ data }) => data.locale === 'ru' && d.countries.includes(data.id)),
-  getCollection('destinations', ({ data }) => data.locale === 'ru' && d.destinations.includes(data.id)),
+  getCollection('countries', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
+  getCollection('destinations', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status) && d.destinations.includes(data.id)),
 ]);
 
-const countryById = new Map(countryEntries.map((item) => [item.data.id, item.data.name]));
-const destinationById = new Map(destinationEntries.map((item) => [item.data.id, item.data.name]));
-const countryNames = d.countries.map((id) => countryById.get(id)).filter(Boolean) as string[];
-const destinationNames = d.destinations.map((id) => destinationById.get(id)).filter(Boolean) as string[];
+const countryById = new Map(countryEntries.map((item) => [item.data.id, item]));
+const destinationById = new Map(destinationEntries.map((item) => [item.data.id, item]));
+const countryNames = d.countries.map((id) => countryById.get(id)?.data.name).filter(Boolean) as string[];
+const routeDestinations = d.destinations.map((id) => {
+  const destination = destinationById.get(id);
+  const planned = destinationCatalogById.get(id);
+  const country = destination ? countryById.get(destination.data.countryId) : undefined;
+  return {
+    id,
+    name: destination?.data.name ?? planned?.name ?? '',
+    // Keep a future place as text; its link activates when the page is published.
+    href: destination && country ? `/napravleniya/${country.data.slug}/${destination.data.slug}/` : undefined,
+  };
+}).filter((item) => item.name);
+const destinationNames = routeDestinations.map((item) => item.name);
 const durationLabel = d.durationDays
   ? `${d.durationDays} ${pluralRu(d.durationDays, 'день', 'дня', 'дней')}`
   : '';
@@ -111,6 +124,17 @@ const heroMetaParts = [
     <div class="container prose"><slot /></div>
   </section>
 
+  {routeDestinations.length > 0 && (
+    <nav class="tour-destinations container" aria-label="Места маршрута">
+      <p class="eyebrow">Места маршрута</p>
+      <ul>
+        {routeDestinations.map((item) => (
+          <li>{item.href ? <a href={withBase(item.href)}>{item.name}</a> : <span>{item.name}</span>}</li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
   {firstStory && (
     <StoryPair
       eyebrow="Акцент маршрута"
@@ -150,4 +174,7 @@ const heroMetaParts = [
   .tour-copy { background: var(--color-bg); padding: 0 0 clamp(28px, 4vw, 56px); }
   .tour-copy :global(.prose) { padding-top: 0; padding-bottom: 0; }
   .tour-copy :global(.prose:empty) { display: none; }
+  .tour-destinations { padding-block: 0 clamp(28px, 4vw, 56px); }
+  .tour-destinations ul { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 0; padding: 0; list-style: none; }
+  .tour-destinations a { text-decoration: underline; text-underline-offset: .2em; }
 </style>

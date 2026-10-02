@@ -10,7 +10,8 @@ searchAliases:
   - "birdwatching Suriname"
 countries:
   - country_suriname
-destinations: []
+destinations:
+  - destination_suriname_paramaribo
 themes: [nature, wildlife]
 audiences: [private]
 format: Частный

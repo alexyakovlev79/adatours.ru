@@ -18,6 +18,13 @@ destinations:
   - destination_brazil_iguacu
   - destination_argentina_mendoza
   - destination_argentina_el_calafate
+  - destination_uruguay_montevideo
+  - destination_argentina_puerto_iguasu
+  - destination_argentina_salta
+  - destination_argentina_bariloche
+  - destination_argentina_el_chalten
+  - destination_chile_puerto_natales_torres_del_pajne
+  - destination_argentina_ushuajya
 themes:
   - adventure
   - culture

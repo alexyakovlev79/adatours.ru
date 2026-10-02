@@ -1,16 +1,11 @@
-# Media strategy — adatours.ru
+# Media strategy — Ada Tours
 
-## Priority order
+Актуально с 02.10.2026. Рабочие инструкции: [master](workflows/master.md), [улучшение фото](workflows/photo-enhancement.md), [отдельная генерация highlights](workflows/highlights.md).
 
-1. Reuse good wide 1920×1080 images already published on brasiltours.ru when Ada Tours has the right to reuse them.
-2. Use stronger originals from the Ada Tours Google Drive photo archive when available.
-3. If neither source gives enough resolution, aspect ratio, or visual quality, generate a new wide image with GPT Images using the available Ada Tours image as a visual reference.
-4. Ask Anna/team for new assets only when rights, identity, or a unique factual scene cannot be resolved from existing materials.
+При создании контента используются точные raw URL из `data/source-index/entries/<entityId>.json`. Внешние изображения поддерживаются общими шаблонами напрямую. Скачивание и улучшение выполняются только по отдельной команде пользователя в Work, обычно пакетами по 10 фото.
 
-## Important
+Адреса с `/image/cache/` запрещены в активном контенте, индексах источников и заданиях. Уже улучшенные локальные файлы сохраняются; реестр `src/data/media/photo-enhancements.json` предотвращает повторную обработку. Повторно скачивать уже доступный файл той же версии не требуется.
 
-- Do not preserve weak imagery just because it existed on the old site.
-- Hero images must survive large desktop rendering.
-- Record provenance in the media manifest.
-- AI-generated replacements must be marked in source metadata and must not imply a factual documentary scene if the source is only illustrative.
-- Prototype images under public/media/prototype are temporary and can be replaced without changing page architecture.
+Качество исходного фото не блокирует публикацию сущности. Поиск альтернатив в интернете или на Диске, проверка каждого изображения по сети при наполнении, самостоятельная визуальная приемка страницы и результата генерации не выполняются.
+
+Один пакет улучшений сохраняет изображения, изменения канонических слотов и записи реестра одним подготовленным commit. История происхождения фото сохраняется; запись об улучшении не выдается за новое документальное подтверждение сцены.

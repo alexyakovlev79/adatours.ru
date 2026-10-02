@@ -11,10 +11,14 @@ searchAliases:
 countries:
   - country_argentina
   - country_brazil
+  - country_uruguay
 destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_el_calafate
   - destination_brazil_iguacu
+  - destination_uruguay_koloniya_del_sakramento
+  - destination_argentina_ushuajya
+  - destination_argentina_puerto_iguasu
 themes:
   - luxury
   - culture

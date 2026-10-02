@@ -13,6 +13,7 @@ countries:
 destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_puerto_madrin
+  - destination_argentina_ibera
 themes:
   - nature
   - wildlife

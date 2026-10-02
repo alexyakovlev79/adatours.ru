@@ -17,22 +17,22 @@ priceFrom: 160
 currency: USD
 priceNote: "Стоимость — $160 на человека. Минимум — 2 человека. Для групп возможны скидки."
 hero:
-  src: /media/excursions/tajny-starogo-rio-de-zhanejro/hero.jpg
+  src: https://brasiltours.ru/image/countries/brazil/starij-rio1920.jpg
   alt: Исторический центр Рио-де-Жанейро
 gallery:
-  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-1.jpg
+  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-de-janeiro1.jpg
     alt: Панорама Рио-де-Жанейро
-  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-2.png
+  - src: https://brasiltours.ru/image/Río_de_Janeiro%20teatre.png
     alt: Городской театр Рио-де-Жанейро
-  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-3.jpg
+  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-24-12-49-54-294.jpg
     alt: Историческая архитектура центра Рио-де-Жанейро
-  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-4.png
+  - src: https://brasiltours.ru/image/countries/brazil/bohemian-lapa.png
     alt: Район Лапа в Рио-де-Жанейро
-  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-5.png
+  - src: https://brasiltours.ru/image/lapa%20at%20ni.11png.png
     alt: Лапа в вечернем Рио-де-Жанейро
-  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-6.jpg
+  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-25-11-49-25-590.jpg
     alt: Чай и кофе в кафе «Коломбо»
-  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-7.jpg
+  - src: https://brasiltours.ru/image/riogid/gid-images/9/file_6.jpg
     alt: Церковь Канделария в Рио-де-Жанейро
 route:
   - Рио-де-Жанейро

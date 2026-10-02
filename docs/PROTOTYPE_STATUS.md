@@ -1,3 +1,5 @@
+> Historical prototype status. Operational instructions are in `docs/workflows/master.md`; this file does not gate content creation.
+
 # Prototype and content status
 
 Date: 2026-09-25
@@ -110,7 +112,7 @@ The latest production deploy before the reviews implementation was run #115 for 
 
 Wave 3 scale-out is in progress.
 
-The accepted global visual system remains frozen unless regression QA exposes a concrete defect.
+The accepted global visual system changes only in a separately requested template task.
 
 ### Current production coverage
 
@@ -180,13 +182,6 @@ The repository currently contains these approved Brazil destination entities:
 - Argentina + Brazil with Praia de Pipa, 11 days;
 - Southern Brazil: Rio + Iguacu + Gramado + Cambara do Sul + Florianopolis, 12 days.
 
-### Wave 3 execution order
+### Current execution policy
 
-Continue value-first, not alphabetically:
-
-1. finish strong destination clusters before opening thin isolated pages;
-2. add high-value tours tied to approved destinations and themes;
-3. add excursions only after destination/tour relations are stable;
-4. keep the full 700+ queue gated by build and rendered regression QA.
-
-The next content package should be chosen from the inventory and original snapshots, with Drive approved copy and GitHub production content kept synchronized.
+Follow the selected workflow in `docs/workflows/` and the exact source entry. Future destination IDs are reserved in the catalog; page creation does not depend on a separate template or screen acceptance pass. This historical prototype sequence no longer controls the content queue.

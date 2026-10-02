@@ -19,14 +19,14 @@ priceFrom: 280
 currency: USD
 priceNote: "Основная стоимость — $280. Для группы из 2–4 человек — $141 на человека."
 hero:
-  src: /media/excursions/peshij-tur-po-istoricheskomu-tsentru/hero.jpg
+  src: https://brasiltours.ru/image/countries/uruguay/montevideo-1680.jpg
   alt: Исторический центр Монтевидео, Уругвай
 gallery:
-  - src: /media/excursions/peshij-tur-po-istoricheskomu-tsentru/gallery-1.png
+  - src: https://brasiltours.ru/image/montevid11.png
     alt: Монтевидео, столица Уругвая
-  - src: /media/excursions/peshij-tur-po-istoricheskomu-tsentru/gallery-2.jpg
+  - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
     alt: Архитектура исторического центра Монтевидео
-  - src: /media/excursions/peshij-tur-po-istoricheskomu-tsentru/gallery-3.png
+  - src: https://brasiltours.ru/image/montevideo3jpg.png
     alt: Улицы Монтевидео
 route:
   - Монтевидео

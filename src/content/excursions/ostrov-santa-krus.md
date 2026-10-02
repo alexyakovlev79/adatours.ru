@@ -9,7 +9,7 @@ searchAliases:
   - Галапагосы Санта-Крус
   - Экскурсия на Санта-Крус
 country: country_ecuador
-destination: destination_ecuador_galapagos
+destination: destination_ecuador_galapagosskie_ostrova
 destinationName: "Галапагосские острова"
 themes: [nature, wildlife]
 duration: 6 часов

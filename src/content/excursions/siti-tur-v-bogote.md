@@ -19,18 +19,18 @@ priceFrom: 226
 currency: USD
 priceNote: "Основная стоимость — $226. Для 2 человек — $141 на человека, для 3 человек — $109 на человека, для 4 человек — $102 на человека."
 hero:
-  src: /media/excursions/siti-tur-v-bogote/hero.jpg
+  src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0018.jpg
   alt: Панорама Боготы, Колумбия
 gallery:
-  - src: /media/excursions/siti-tur-v-bogote/gallery-1.jpg
+  - src: https://brasiltours.ru/image/countries/colombia/botero.jpg
     alt: Музей Ботеро в Боготе
-  - src: /media/excursions/siti-tur-v-bogote/gallery-2.jpg
+  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0034.jpg
     alt: Уличная жизнь Боготы
-  - src: /media/excursions/siti-tur-v-bogote/gallery-3.png
+  - src: https://brasiltours.ru/image/bogota%20colombia.png
     alt: Исторический центр Боготы
-  - src: /media/excursions/siti-tur-v-bogote/gallery-4.jpg
+  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0333.jpg
     alt: Музеи Боготы
-  - src: /media/excursions/siti-tur-v-bogote/gallery-5.jpg
+  - src: https://brasiltours.ru/image/countries/colombia/cartaghena2.jpg
     alt: Колумбия
 route:
   - Богота

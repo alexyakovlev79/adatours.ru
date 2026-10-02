@@ -8,7 +8,7 @@ searchAliases:
   - "Лагуна Эсмеральда Ушуайя"
   - "Треккинг Эсмеральда"
 country: country_argentina
-destination: destination_argentina_ushuaia
+destination: destination_argentina_ushuajya
 destinationName: "Ушуайя"
 themes:
   - adventure

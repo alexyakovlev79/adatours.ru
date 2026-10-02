@@ -15,6 +15,8 @@ destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_el_calafate
   - destination_brazil_iguacu
+  - destination_argentina_ushuajya
+  - destination_argentina_puerto_iguasu
 themes:
   - adventure
   - nature

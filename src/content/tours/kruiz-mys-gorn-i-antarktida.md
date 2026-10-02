@@ -14,6 +14,7 @@ countries:
   - country_antarctica
 destinations:
   - destination_argentina_ushuajya
+  - destination_chile_punta_arenas
 themes:
   - adventure
   - nature

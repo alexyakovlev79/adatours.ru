@@ -11,7 +11,9 @@ searchAliases:
 countries:
   - country_chile
   - country_argentina
-destinations: []
+destinations:
+  - destination_chile_valdiviya_i_puerto_mont
+  - destination_argentina_ushuajya
 themes:
   - adventure
   - nature

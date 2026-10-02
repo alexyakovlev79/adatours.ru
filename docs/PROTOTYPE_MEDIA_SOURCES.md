@@ -1,13 +1,7 @@
-# Prototype preferred wide image sources
+# Источники фотографий
 
-These URLs come from the current public brasiltours.ru image cache and were discovered by the 2026-09-23 inventory.
+Прежний список производных изображений прототипа выведен из работы. Актуальный источник — `data/source-index/entries/<entityId>.json`, поле `media.images`. Оно содержит точные raw URL и назначение фото.
 
-They are used remotely only for prototype review. Before production, approved files must be copied into Ada Tours-owned storage/repository and recorded in the final media manifest.
+При обновлении существующей страницы сохраняются текущие улучшенные локальные файлы. Копирование исходных фотографий в репозиторий до первой публикации не требуется. Обработка фото описана в [photo-enhancement.md](workflows/photo-enhancement.md).
 
-- Brazil hero: https://brasiltours.ru/image/cache/countries/brazil/tild3463-3039-4366-b661-663030613337-thales-botelho-de-so-1920x1080.webp
-- Rio hero: https://brasiltours.ru/image/cache/countries/brazil/new-pics/micaela-parente-1309093-unsplash-1920x1080.webp
-- Luxury Brazil hero: https://brasiltours.ru/image/cache/countries/brazil/new-pics/marcos-paulo-prado-ggfymhbe878-unsplash-1920x1080.webp
-- Iguazu: https://brasiltours.ru/image/cache/countries/brazil/new-pics/iguasu/vodopady-iguasu-8-1920x1080.webp
-- Buzios: https://brasiltours.ru/image/cache/countries/brazil/new-pics/dharmendra-sahu-ia2kjtrx8y4-unsplash-2-1920x1080.webp
-- MICE Rio: https://brasiltours.ru/image/cache/countries/brazil/new-pics/raphael-nogueira-espuilpsruw-1920-1920x1080.webp
-- VIP: https://brasiltours.ru/image/cache/countries/thematic-tours/alevision-co-3sytdivac7w-unsplash-1920x1080.webp
+Исторический список доступен в Git history; применять его как очередь или источник нельзя.

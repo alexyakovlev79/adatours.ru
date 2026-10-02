@@ -18,14 +18,14 @@ priceFrom: 953
 currency: USD
 priceNote: "Основная стоимость — $953. Для группы из 2–4 человек — $477 на человека."
 hero:
-  src: /media/excursions/punta-del-este-i-piriapolis/hero.jpg
+  src: https://brasiltours.ru/image/countries/uruguay/2.jpg
   alt: Пунта-дель-Эсте, Уругвай
 gallery:
-  - src: /media/excursions/punta-del-este-i-piriapolis/gallery-1.jpg
+  - src: https://brasiltours.ru/image/countries/uruguay/pirapolis.jpg
     alt: Пириаполис, Уругвай
-  - src: /media/excursions/punta-del-este-i-piriapolis/gallery-2.jpg
+  - src: https://brasiltours.ru/image/countries/uruguay/castelo-pirapol.jpg
     alt: Пириаполис и его историческая архитектура
-  - src: /media/excursions/punta-del-este-i-piriapolis/gallery-3.png
+  - src: https://brasiltours.ru/image/punta-del-este-18072018-339787.png
     alt: Побережье Пунта-дель-Эсте
 route:
   - Монтевидео

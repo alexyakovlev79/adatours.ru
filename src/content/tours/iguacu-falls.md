@@ -11,7 +11,7 @@ searchAliases:
 countries:
   - country_brazil
 destinations:
-  - destination_brazil_iguazu
+  - destination_brazil_iguacu
 themes: [romance]
 audiences: [couples, private]
 format: Частный

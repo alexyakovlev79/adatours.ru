@@ -7,12 +7,15 @@ status: approved
 countries:
   - country_argentina
   - country_brazil
+  - country_uruguay
 destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_el_calafate
   - destination_brazil_iguacu
   - destination_brazil_natal
   - destination_brazil_praia_de_pipa
+  - destination_uruguay_montevideo
+  - destination_argentina_puerto_iguasu
 themes:
   - multi-country
   - nature

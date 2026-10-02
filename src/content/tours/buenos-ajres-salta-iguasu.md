@@ -11,11 +11,13 @@ searchAliases:
 countries:
   - country_argentina
   - country_brazil
+  - country_uruguay
 destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_salta
   - destination_argentina_puerto_iguasu
   - destination_brazil_iguacu
+  - destination_uruguay_koloniya_del_sakramento
 themes:
   - culture
   - nature

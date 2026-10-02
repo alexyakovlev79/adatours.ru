@@ -15,6 +15,8 @@ destinations:
   - destination_peru_lima
   - destination_peru_cusco
   - destination_peru_machu_picchu
+  - destination_argentina_puerto_iguasu
+  - destination_peru_puno_i_o_titikaka
 themes:
   - multi-country
   - nature

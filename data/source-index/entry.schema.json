@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ada Tours source entry",
+  "type": "object",
+  "required": ["id", "type", "name", "url", "slug", "contentPath", "sourceUrl", "countryIds", "destinationIds", "destinations", "aliases", "text", "media", "readiness", "sheet"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^(country|destination|tour|excursion)_[a-z0-9_]+$"},
+    "type": {"enum": ["country", "destination", "tour", "excursion"]},
+    "name": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "pattern": "^/.*?/$"},
+    "slug": {"type": "string", "minLength": 1},
+    "contentPath": {"type": "string", "pattern": "^src/content/(countries|destinations|tours|excursions)/.+\\.md$"},
+    "sourceUrl": {"type": ["string", "null"]},
+    "countryIds": {"type": "array", "items": {"type": "string", "pattern": "^country_"}, "uniqueItems": true},
+    "destinationIds": {"type": "array", "items": {"type": "string", "pattern": "^destination_"}, "uniqueItems": true},
+    "destinations": {"type": "array", "items": {"type": "object", "required": ["id", "name", "url", "countryId"]}},
+    "destinationType": {"type": "string"},
+    "destinationName": {"type": ["string", "null"]},
+    "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "text": {
+      "type": "object",
+      "required": ["selected", "original", "verification"],
+      "properties": {
+        "selected": {"$ref": "#/$defs/drivePointer"},
+        "original": {"$ref": "#/$defs/drivePointer"},
+        "verification": {"type": "object"},
+        "sourceScope": {"type": "string"},
+        "provenance": {"type": "object"}
+      }
+    },
+    "media": {
+      "type": "object",
+      "required": ["images", "status", "sourceUrl"],
+      "properties": {
+        "images": {"type": "array", "items": {"$ref": "#/$defs/rawImage"}},
+        "status": {"enum": ["ready", "existing_enhanced_preserved"]},
+        "sourceUrl": {"type": ["string", "null"]},
+        "current": {"type": "array", "items": {"$ref": "#/$defs/image"}},
+        "provenance": {"type": "object"}
+      }
+    },
+    "readiness": {
+      "type": "object",
+      "required": ["sources", "text", "media", "geography"],
+      "properties": {
+        "sources": {"const": "ready"},
+        "text": {"type": "string"},
+        "media": {"enum": ["ready", "existing_enhanced_preserved"]},
+        "geography": {"enum": ["fixed", "no_destination_asserted", "resolve_when_creating_tour"]}
+      }
+    },
+    "sheet": {
+      "type": "object",
+      "required": ["spreadsheetId", "sheetName", "row"],
+      "properties": {
+        "spreadsheetId": {"type": "string"},
+        "sheetName": {"type": "string"},
+        "row": {"type": ["integer", "null"], "minimum": 2}
+      }
+    }
+  },
+  "$defs": {
+    "drivePointer": {
+      "type": "object",
+      "required": ["driveId", "url", "name", "kind", "folderId", "folderPath", "mimeType"],
+      "properties": {
+        "driveId": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "pattern": "^https://(drive|docs)\\.google\\.com/"},
+        "name": {"type": "string"},
+        "kind": {"enum": ["original_snapshot", "cleaned_snapshot", "rewrite_v2", "tour_excerpt"]},
+        "folderId": {"type": "string"},
+        "folderPath": {"type": "string"},
+        "mimeType": {"type": "string"},
+        "containerKind": {"type": "string"},
+        "parentTourId": {"type": "string", "pattern": "^tour_"}
+      }
+    },
+    "image": {
+      "type": "object",
+      "required": ["url", "role", "order", "alt"],
+      "properties": {
+        "url": {"type": "string"},
+        "role": {"enum": ["hero", "gallery"]},
+        "order": {"type": "integer", "minimum": 1},
+        "alt": {"type": "string"}
+      }
+    },
+    "rawImage": {
+      "allOf": [
+        {"$ref": "#/$defs/image"},
+        {"properties": {"url": {"type": "string", "pattern": "^https://brasiltours\\.ru/image/(?!cache/)"}}}
+      ]
+    }
+  }
+}

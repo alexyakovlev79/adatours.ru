@@ -9,6 +9,7 @@ searchAliases:
   - Саленто
   - Восковые пальмы Колумбия
 country: country_colombia
+destination: destination_colombia_pereira
 themes: [nature, culture, adventure]
 duration: 5 часов
 language:

@@ -11,9 +11,10 @@ hero:
   alt: Дайвинг в тропическом море
 featuredCountries:
   - country_brazil
+  - country_honduras
 sourceUrl: https://brasiltours.ru/dajving
 sourceSnapshot: page_texts_original/dajving__b833d7b0.md
-updatedAt: 2026-09-24
+updatedAt: 2026-10-02
 ---
 
 ## Сначала выбираем формат погружений

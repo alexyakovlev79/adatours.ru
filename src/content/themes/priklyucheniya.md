@@ -27,6 +27,7 @@ featuredCountries:
   - country_suriname
   - country_french_guiana
   - country_chile
+  - country_el_salvador
 sourceUrl: https://brasiltours.ru/priklyucheniya
 sourceSnapshot: page_texts_original/priklyucheniya__9d8e52e1.md
 updatedAt: 2026-10-02

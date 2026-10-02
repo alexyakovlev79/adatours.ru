@@ -9,7 +9,7 @@ searchAliases:
 summary: >-
   Уругвай соединяет Монтевидео, историческую Колонию-дель-Сакраменто, пляжные курорты Пунта-дель-Эсте и побережья Атлантики, природные районы и термальные источники. Ada Tours может собрать самостоятельный маршрут или соединить Уругвай с Аргентиной и Бразилией.
 hero:
-  src: https://brasiltours.ru/image/countries/uruguay/1.jpg
+  src: /media/countries/uruguay/hero-enhanced-20261002.webp
   alt: Пунта-дель-Эсте, Уругвай
 gallery: []
 regions:
@@ -29,15 +29,15 @@ featureBands:
   - eyebrow: Столица и культура
     title: Монтевидео
     text: В Монтевидео можно соединить архитектуру, набережную Рамбла, городские рынки, рестораны и пляжи. Столица удобно дополняет как короткую поездку по стране, так и комбинированный маршрут с Аргентиной.
-    image: https://brasiltours.ru/image/countries/uruguay/22.jpg
+    image: /media/countries/uruguay/featureBands-1-enhanced-20261002.webp
   - eyebrow: Исторический город
     title: Колония-дель-Сакраменто
     text: Исторический центр Колонии-дель-Сакраменто позволяет добавить к маршруту архитектуру XVII–XVIII веков, музеи и прогулки по старым кварталам и набережной.
-    image: https://brasiltours.ru/image/countries/uruguay/11.jpg
+    image: /media/countries/uruguay/featureBands-2-enhanced-20261002.webp
   - eyebrow: Атлантическое побережье
     title: Пунта-дель-Эсте
     text: Пунта-дель-Эсте подходит для нескольких дней у океана с пляжами, ресторанами, прогулками и морскими выездами. Побережье можно продолжить через Пириаполис, Кабо-Полонио, Ла-Палому и другие курортные районы.
-    image: https://brasiltours.ru/image/countries/uruguay/2.jpg
+    image: /media/countries/uruguay/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/urugvaj-ru
 sourceSnapshot: page_texts_original/urugvaj-ru__d4c9eeb4.md
 updatedAt: 2026-10-02

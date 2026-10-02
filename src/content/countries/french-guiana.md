@@ -10,7 +10,7 @@ searchAliases:
 summary: >-
   Французская Гвиана соединяет Кайенну, космодром Куру, тропические леса Гвианской Амазонии, реки и атлантическое побережье. Ada Tours может собрать природный и культурный маршрут, добавить пляжный отдых и гастрономию или соединить Французскую Гвиану с Суринамом, Гайаной и Бразилией.
 hero:
-  src: https://brasiltours.ru/image/countries/french-gviana/cassius-prudent-ideeqv3msic-unsplash.jpg
+  src: /media/countries/french-guiana/hero-enhanced-20261002.webp
   alt: Тропические леса Французской Гвианы
 gallery: []
 regions:
@@ -30,15 +30,15 @@ featureBands:
   - eyebrow: Столица и культура
     title: Кайенна
     text: В Кайенне можно соединить креольскую и колониальную архитектуру, площадь Палмист, набережную, рынок, ботанический сад и городскую гастрономию. Столица становится естественной отправной точкой для дальнейших поездок по территории.
-    image: https://brasiltours.ru/image/countries/french-gviana/3.jpg
+    image: /media/countries/french-guiana/featureBands-1-enhanced-20261002.webp
   - eyebrow: Космос и история
     title: Космодром Куру
     text: Куру позволяет добавить к маршруту космический центр и музей, а также продолжить поездку к побережью и островам. Посещение запусков зависит от действующего расписания и доступности.
-    image: https://brasiltours.ru/image/countries/french-gviana/4.jpg
+    image: /media/countries/french-guiana/featureBands-2-enhanced-20261002.webp
   - eyebrow: Тропические леса
     title: Гвианская Амазония
     text: В природной части маршрута можно сделать акцент на тропических лесах, реках, каноэ и заповедных территориях. Поездки в удалённые районы требуют более тщательной организации и могут зависеть от специальных разрешений.
-    image: https://brasiltours.ru/image/countries/french-gviana/5.jpg
+    image: /media/countries/french-guiana/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/frantsuzskaya-gviana-ru
 sourceSnapshot: page_texts_original/frantsuzskaya-gviana-ru__2c78e967.md
 updatedAt: 2026-10-02

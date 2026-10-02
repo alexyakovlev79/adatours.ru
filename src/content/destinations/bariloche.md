@@ -22,13 +22,13 @@ gallery:
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
   - src: /media/destinations/bariloche/gallery-3-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN21474_14.jpg
+  - src: /media/destinations/bariloche/gallery-4-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
-  - src: https://brasiltours.ru/image/catalog/category/b/a/bariloche.jpg
+  - src: /media/destinations/bariloche/gallery-5-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
-  - src: https://brasiltours.ru/image/catalog/category/f/i/file_2_6.jpg
+  - src: /media/destinations/bariloche/gallery-6-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN3647_3.jpg
+  - src: /media/destinations/bariloche/gallery-7-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
 themes: []
 relatedDestinations: []
@@ -66,3 +66,4 @@ updatedAt: 2026-10-02
 Среди известных мест в окрестностях — гора Кампанарио со смотровой площадкой, Плайя Бонита, полуостров Льяо-Льяо, озеро Морено, остров Гуемил, часовня Святого Эдуардо и залив Эль-Требол.
 
 Зимой Барилоче известен горнолыжным отдыхом. На горах Катедраль высотой около 2388 м и Отто высотой около 1405 м работают подъемники. Весной и летом здесь проходят экскурсии на открытом воздухе, а осенью леса вокруг озер меняют окраску.
+

@@ -5,27 +5,17 @@ import { countryPath } from '../../lib/routes';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
+import { buildCountryTourCounts, compareCountriesByPopularity } from '../../lib/country-popularity';
 
 const tours = await getCollection('tours', ({ data }) =>
   data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
 );
 
-const tourCountByCountry = new Map<string, number>();
-
-for (const tour of tours) {
-  for (const countryId of new Set(tour.data.countries)) {
-    tourCountByCountry.set(countryId, (tourCountByCountry.get(countryId) ?? 0) + 1);
-  }
-}
+const countryTourCounts = buildCountryTourCounts(tours);
 
 const countries = (await getCollection('countries', ({ data }) =>
   data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
-)).sort((a, b) => {
-  const countDifference =
-    (tourCountByCountry.get(b.data.id) ?? 0) - (tourCountByCountry.get(a.data.id) ?? 0);
-
-  return countDifference || a.data.name.localeCompare(b.data.name, 'ru');
-});
+)).sort(compareCountriesByPopularity(countryTourCounts));
 
 const countryAlignments = new Map([
   ['kuba', 'left'],

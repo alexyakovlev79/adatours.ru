@@ -9,16 +9,16 @@ destinationType: city
 summary: Белиз-Сити расположен там, где Белиз-Ривер впадает в Карибское море. В бывшей столице страны можно познакомиться с колониальной архитектурой, музеями и историей майя.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/belize/beliz-siti-2.jpg
+  src: /media/destinations/beliz-siti/hero-enhanced-20261002.webp
   alt: 'На фото: город Белиз-Сити, в Белизе'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN6984_1.jpg
+- src: /media/destinations/beliz-siti/gallery-1-enhanced-20261002.webp
   alt: 'На фото: город Белиз-Сити, в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/1/9/1978630-Regent_Street-Belize_City.jpg
+- src: /media/destinations/beliz-siti/gallery-2-enhanced-20261002.webp
   alt: 'На фото: город Белиз-Сити, в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/p/1/p144849-Belize_City-Belize_City.jpg
+- src: /media/destinations/beliz-siti/gallery-3-enhanced-20261002.webp
   alt: 'На фото: город Белиз-Сити, в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN22330_9.jpg
+- src: /media/destinations/beliz-siti/gallery-4-enhanced-20261002.webp
   alt: 'На фото: город Белиз-Сити, в Белизе'
 themes: []
 relatedDestinations: []
@@ -38,3 +38,4 @@ updatedAt: '2026-10-02'
 Кроме пляжного отдыха Белиз сити предлагает посетить руины городов индейцев майя. В городе можно осмотреть Собор Святого Иоанна 19-го века, который является самым старым англиканским храмом в Центральной Америке; посетить музей Белиза, расположенный в помещении старой тюрьмы в здании старой тюрьмы; Морской Музей с интересной коллекцией артефактов и моделей; Прибрежный Зональный музей. В Музее Белиза в здании старой тюрьмы (1857 г) - роскошная коллекция по истории страны и цивилизации майя.
 
 Белиз - Сити - это крупнейший транспортный, коммерческий, культурный и исторический центр Белиза, славящийся своей архитектурой и историей, и до сих пор являющийся символом страны. На колоритной набережной, застроенной симпатичными двух- и трехэтажными домами, буквально у стен плещется море, видны яхты, покачивающиеся в устье Хауловер Крик. Из города можно отправиться к изумительным рифам Колкер-Кайе и Амбергрис-Кайе.
+

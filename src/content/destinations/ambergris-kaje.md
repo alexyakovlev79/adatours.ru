@@ -16,13 +16,13 @@ gallery:
   alt: 'На фото: остров Амбергрис-Кайе, Белиз'
 - src: /media/destinations/ambergris-kaje/gallery-2-enhanced-20261002.webp
   alt: 'На фото: остров Амбергрис Кей, Белиз'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN12163_21.jpg
+- src: /media/destinations/ambergris-kaje/gallery-3-enhanced-20261002.webp
   alt: 'На фото: остров Амбергрис-Кайе, Белиз'
-- src: https://brasiltours.ru/image/catalog/category/r/s/rss-709-ambergris-cay-65513183.jpg
+- src: /media/destinations/ambergris-kaje/gallery-4-enhanced-20261002.webp
   alt: 'На фото: остров Амбергрис-Кайе, Белиз'
-- src: https://brasiltours.ru/image/catalog/category/e/0/e02_shark02.jpg
+- src: /media/destinations/ambergris-kaje/gallery-5-enhanced-20261002.webp
   alt: 'На фото: остров Амбергрис-Кайе, Белиз'
-- src: https://brasiltours.ru/image/catalog/category/p/a/palm_tree.jpg
+- src: /media/destinations/ambergris-kaje/gallery-6-enhanced-20261002.webp
   alt: 'На фото: остров Амбергрис Кей, Белиз'
 themes: []
 relatedDestinations: []
@@ -42,4 +42,5 @@ updatedAt: '2026-10-02'
 Самой большой достопримечательностью острова для туристов является сказочный Барьерный риф, который тянется параллельно всему побережью. Риф находится всего в четверти мили от пляжа, что делает его легко доступным для занятий подводным плаванием и дайвингом.
 
 Большая голубая дыра и морской заказник Хол-Чан являются must-see на Амбергрис-Кайе. Дыра - это круглая воронка из известняка, чья глубина достигает 122 метров. Здесь вас ждет сказочное погружение в ультрамариновые воды, где Вы встретите различных акул, рыбу-молот и коралловых рыбок. В Хол-Чан глубиной всего до 30 метров сконцентрировано более 150 видов экзотических рыб и 40 разновидностей кораллов, а также морские черепахи и акулы.
+
 

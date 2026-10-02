@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.32  
+Версия: 1.33  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **23** тура со статусом `Уникализировано`.
+В текущем реестре учтено **24** тура со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -175,12 +175,17 @@ missing_excursion_entities = 0
 | 295 | `tour_source_kruiz_mys_gorn_i_antarktida` | `src/content/tours/kruiz-mys-gorn-i-antarktida.md` | Круиз через мыс Горн и пролив Дрейка в Антарктиду | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 296 | `tour_source_patagoniya_i_chilijskie_fordy` | `src/content/tours/patagoniya-i-chilijskie-fordy.md` | Патагония и Чилийские фьорды | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 297 | `tour_source_programma_dlya_aktivnykh_lyudej` | `src/content/tours/programma-dlya-aktivnykh-lyudej.md` | Аргентина, Патагония, Сантьяго и остров Пасхи за 12 дней | DONE_LINKED | 1 | 2026-10-02 |
+| 298 | `tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii` | `src/content/tours/prostory-patagonii-chili-i-argentina-v-odnom-puteshestvii.md` | Просторы Патагонии: Чили и Аргентина за 8 дней | DONE_LINKED | 2 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 297 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 298 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 298, 2026-10-02
+
+- **Строка 298 / `tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii`:** опубликован 8-дневный тур «Просторы Патагонии: Чили и Аргентина за 8 дней» из V2 + original. Основные программы дней — обзорный Буэнос-Айрес, Перито-Морено, Торрес-дель-Пайне и обзорный Сантьяго — сохранены внутри numbered days. Извлечены 2 самостоятельных вечерних модуля: после дня 2 танго-шоу с ужином связано с существующей `excursion_source_tango_shou_v_buenos_ajrese`; после дня 3 Nativo Experience вынесен в новую каноническую `excursion_el_calafate_nativo_experience`, созданную из утвержденного блока тура, поскольку отдельной source excursion_detail не найдено. Инварианты: `production_excursion_refs = 2`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`. Итог: `DONE_LINKED`.
 
 ### Проверка v1.1 — строка 297, 2026-10-02
 
@@ -298,6 +303,9 @@ missing_excursion_entities = 0
 | `tour_source_buenos_ajres_salta_iguasu` | `excursion_buenos_aires_colonia_del_sacramento_day_trip` | between_days | 3 | 4 | LINKED_EXISTING | Отдельного source excursion_detail с выездом из Буэнос-Айреса не найдено; создана каноническая Excursion из standalone-блока тура, отличная от source-продукта «Колония» из Монтевидео. |
 
 | `tour_source_programma_dlya_aktivnykh_lyudej` | `excursion_source_tango_shou_v_buenos_ajrese` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином вынесено из numbered day 2 в отдельный `excursionRef`; основная обзорная программа Буэнос-Айреса осталась внутри дня. |
+
+| `tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii` | `excursion_source_tango_shou_v_buenos_ajrese` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином вынесено из numbered day 2 после основной обзорной экскурсии по Буэнос-Айресу. |
+| `tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii` | `excursion_el_calafate_nativo_experience` | between_days | 3 | 4 | LINKED_NEW | Nativo Experience вынесен из вечернего блока дня 3; отдельной source excursion_detail не найдено, создана каноническая Excursion из V2/original тура. |
 
 ## 5. Как фиксировать новую найденную экскурсию
 

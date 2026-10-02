@@ -14,6 +14,7 @@ featuredCountries:
   - country_argentina
   - country_peru
   - country_costa_rica
+  - country_mexico
 sourceUrl: https://brasiltours.ru/moto-tury
 sourceSnapshot: page_texts_original/moto-tury__55b12a54.md
 updatedAt: 2026-10-02

@@ -15,6 +15,7 @@ featuredCountries:
   - country_dominican_republic
   - country_colombia
   - country_costa_rica
+  - country_mexico
 
 sourceUrl: https://brasiltours.ru/dajving
 sourceSnapshot: page_texts_original/dajving__b833d7b0.md

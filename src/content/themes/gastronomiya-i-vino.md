@@ -14,6 +14,7 @@ featuredCountries:
   - country_brazil
   - country_peru
   - country_colombia
+  - country_mexico
 sourceUrl: https://brasiltours.ru/vinnyi-tury
 sourceSnapshot: page_texts_original/vinnyi-tury__d73d99b5.md
 updatedAt: 2026-10-02

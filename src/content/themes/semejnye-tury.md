@@ -14,6 +14,7 @@ featuredCountries:
   - country_argentina
   - country_peru
   - country_dominican_republic
+  - country_mexico
 
 sourceUrl: https://brasiltours.ru/semejnyj-otdykh
 sourceSnapshot: page_texts_original/semejnyj-otdykh__12a9f6fe.md

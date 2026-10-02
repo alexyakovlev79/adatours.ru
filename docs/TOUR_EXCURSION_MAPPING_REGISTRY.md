@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.40  
+Версия: 1.41  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -14,9 +14,9 @@ Repo: `alexyakovlev79/adatours.ru`
 
 Полная методика обхода, сопоставления и создания новых Excursion:
 
-`docs/ADA_TOURS_TOUR_EXCURSION_LINKING_WORKFLOW_v1.1_2026-10-01.md`
+`ADA_TOURS_TOUR_EXCURSION_LINKING_WORKFLOW_v1.2_2026-10-02(1).md` — канонический Project source, заменяет repo-копию v1.1.
 
-Новый чат должен прочитать **оба файла**: workflow + текущий registry.
+Новый чат должен прочитать **оба источника**: Project source workflow v1.2 + текущий registry. При конфликте с историческими формулировками этого registry действует workflow v1.2.
 
 Основной реестр страниц:
 `Ada Tours — реестр страниц нового сайта`  
@@ -119,13 +119,13 @@ missing_excursion_entities = 0
 
 Тур нельзя считать полностью закрытым, пока любой из этих инвариантов нарушен.
 
-Если подходящая каноническая Excursion уже есть — использовать ее stable ID. Если отдельной Excursion раньше не существовало, нужно **сразу создать новую production Excursion** из подтвержденного источника/блока, не додумывать отсутствующие факты, вынести изображение в канонический `/media/excursions/{slug}/`, добавить страницу в основной Google Sheets и использовать `excursionRef`.
+Если подходящая каноническая Excursion уже есть — использовать ее stable ID. Если отдельной Excursion раньше не существовало, нужно **сразу создать новую production Excursion** из подтвержденного источника/блока, не додумывать отсутствующие факты, использовать подтвержденный raw source URL вида `https://brasiltours.ru/image/...`, добавить страницу в основной Google Sheets и использовать `excursionRef`. Локальный enhanced WebP создается позже отдельным photo-enhancement workflow.
 
 ### 1.5. Старые `legacy_inside_day`
 
-После workflow v1.1 это **не допустимое постоянное состояние и не историческое исключение**.
+После workflow v1.2 это **не допустимое постоянное состояние и не историческое исключение**.
 
-Любая relation со статусом/положением `legacy_inside_day` означает технический долг: соответствующий тур нужно повторно нормализовать по v1.1. Уже существующую каноническую Excursion не пересоздавать; нужно только извлечь ее из numbered day и удалить дублирующий day content.
+Любая relation со статусом/положением `legacy_inside_day` означает технический долг: соответствующий тур нужно повторно нормализовать по v1.2. Уже существующую каноническую Excursion не пересоздавать; нужно только извлечь ее из numbered day и удалить дублирующий day content.
 
 ---
 
@@ -137,7 +137,7 @@ missing_excursion_entities = 0
 - `IN_PROGRESS` — чат начал этот тур, но не завершил;
 - `DONE_MAPPING` — тур полностью просмотрен; для каждого самостоятельного блока между днями уже существует production Excursion и определен ее `excursion_id`, но не все локальные карточки еще заменены на `excursionRef`; `missing_slots = 0`;
 - `DONE_LINKED` — все найденные связи уже реализованы в production через `excursionRef` и прошли build/deploy;
-- `DONE_NO_RELATIONS` — тур полностью просмотрен по workflow v1.1: нет ни самостоятельных блоков между днями, ни самостоятельных excursion-модулей внутри numbered days;
+- `DONE_NO_RELATIONS` — тур полностью просмотрен по workflow v1.2: нет ни самостоятельных блоков между днями, ни самостоятельных excursion-модулей внутри numbered days;
 - `REVIEW` — есть неоднозначность, которую нельзя безопасно решить автоматически.
 
 ### Правило зависшего чата
@@ -188,7 +188,7 @@ missing_excursion_entities = 0
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 305 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.2:** строка 305 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
 
 ### Проверка v1.1 — строка 305, 2026-10-02
 
@@ -383,7 +383,7 @@ Excursion ID
 - `CREATED_FROM_TOUR` — отдельной канонической Excursion раньше не было; production-сущность создана непосредственно из standalone-блока тура и затем связана через `excursionRef`;
 - `REVIEW` — неоднозначное сопоставление, которое пока не позволяет закрепить один `excursion_id`.
 
-Если подходящей канонической сущности нет, нельзя оставлять слот без связи и нельзя ограничиваться резервированием ID. Нужно сразу создать production Excursion из самостоятельного блока тура, используя только подтвержденные данные блока. Отсутствующие цену, длительность, язык, состав услуг и другие факты не додумывать. Изображение нужно вынести в канонический `/media/excursions/{slug}/`, после чего локальную карточку тура заменить на `excursionRef` и обновить Google Sheets.
+Если подходящей канонической сущности нет, нельзя оставлять слот без связи и нельзя ограничиваться резервированием ID. Нужно сразу создать production Excursion из самостоятельного блока тура, используя только подтвержденные данные блока. Отсутствующие цену, длительность, язык, состав услуг и другие факты не додумывать. Для первичного media использовать подтвержденный raw source URL `https://brasiltours.ru/image/...`; локальный enhanced WebP создается позже отдельным photo-enhancement workflow. После создания локальную карточку тура заменить на `excursionRef` и обновить Google Sheets.
 
 ## 6. Обязательный рабочий цикл одного тура
 
@@ -398,7 +398,7 @@ Excursion ID
 9. После нормализации посчитать `standalone_between_days = N`, где `N = A + B`.
 9. Для каждого элемента найти каноническую Excursion в основном Google Sheets / `src/content/excursions/`.
 10. Если match надежный — записать существующий stable ID.
-11. Если канонической Excursion нет — сразу создать production Excursion из данных standalone-блока тура; не выдумывать отсутствующие факты. Создать stable ID и URL, добавить строку в Google Sheets, вынести hero в канонический media-path и заменить карточку тура на `excursionRef`.
+11. Если канонической Excursion нет — сразу создать production Excursion из данных standalone-блока тура; не выдумывать отсутствующие факты. Создать stable ID и URL, добавить строку в Google Sheets, поставить подтвержденный raw hero `https://brasiltours.ru/image/...` и заменить карточку тура на `excursionRef`. Локальный enhanced hero создается позже отдельным photo-enhancement workflow.
 12. Проверить `mapped_relation_rows = N`, `production_excursion_refs = N`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0` и `missing_slots = 0`.
 13. Если самостоятельных элементов нет — это нормальный результат и статус `DONE_NO_RELATIONS`.
 14. Если `missing_slots = 0` — поставить туру `DONE_MAPPING`.
@@ -431,3 +431,13 @@ Excursion ID
 4. какие туры имеют `DONE_*`.
 
 После этого работа продолжается с этой точки. Повторный обход `DONE_*` запрещен без отдельного указания пользователя.
+
+
+## 9. Аудит v1.2 — Перейра / Саленто, 2026-10-02
+
+- Для `excursion_source_salento_i_dolina_kokora` после аудита создана каноническая Destination `destination_colombia_pereira` и добавлена связь `destination: destination_colombia_pereira`.
+- Та же Destination применена к `excursion_source_kofejnyj_tur_v_perejra` и `excursion_source_poseshchenie_shokoladnoj_fermy`, чтобы три продукта Перейры использовали одну географическую сущность.
+- Destination зарегистрирована в основном Google Sheets как `/napravleniya/kolumbiya/perejra/`; факты подтверждены source-туром `https://brasiltours.ru/kolumbiya-c-kofe` (Перейра, кофейный треугольник, кофейные фермы, Саленто и долина Кокора).
+- Для Саленто/Кокоры выполнен строгий source-media QA по v1.2 в GitHub Actions: 7 production raw URL и 2 source-media Destination Перейры вернули HTTP 200, `Content-Type: image/jpeg`, валидную сигнатуру изображения и ненулевые реальные bytes. Проверка завершилась успешным build/deploy.
+- В текущих production-турах `excursion_source_salento_i_dolina_kokora` пока не встречается через `excursionRef`; поэтому блок связанных экскурсий на странице Саленто отсутствует. Это ожидаемое поведение v1.2, fallback по стране/месту не используется.
+- Ручное поле `relatedExcursions` не добавлялось.

@@ -15,6 +15,7 @@ featuredCountries:
   - country_nicaragua
   - country_paraguay
   - country_suriname
+  - country_uruguay
 sourceUrl: https://brasiltours.ru/rybalka
 sourceSnapshot: page_texts_original/rybalka__f03e5a9e.md
 updatedAt: 2026-10-02

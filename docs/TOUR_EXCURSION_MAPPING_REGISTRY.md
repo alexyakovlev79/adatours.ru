@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.36  
+Версия: 1.37  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **27** туров со статусом `Уникализировано`.
+В текущем реестре учтено **28** туров со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -179,12 +179,17 @@ missing_excursion_entities = 0
 | 299 | `tour_source_rybalka_v_ushuajya` | `src/content/tours/rybalka-v-ushuajya.md` | Рыбалка в Ушуайе: поездка в Пуэрто-Альмансу и ловля королевского краба | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 300 | `tour_source_aconcagua_trek_ru` | `src/content/tours/aconcagua-trek-ru.md` | Треккинг на Аконкагуа: экспедиция на 18 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 301 | `tour_source_antarktida_ekspress_vozdushnyj_kruiz` | `src/content/tours/antarktida-ekspress-vozdushnyj-kruiz.md` | Антарктида Экспресс: Ушуайя, мыс Горн и Антарктида за 6 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
+| 302 | `tour_source_vsya_argentina` | `src/content/tours/vsya-argentina.md` | Тур в Аргентину и Патагонию на 26 дней | DONE_LINKED | 5 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 301 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 302 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 302, 2026-10-02
+
+- **Строка 302 / `tour_source_vsya_argentina`:** опубликован 26-дневный тур «Тур в Аргентину и Патагонию на 26 дней» из V2 + original. В numbered days оставлена основная программа: обзорные и природные экскурсии, винодельни, Монтевидео, Перито-Морено, Торрес-дель-Пайне, Барилоче, поездка 4x4 и Тьерра-дель-Фуэго. Извлечены 5 самостоятельных модулей: после дня 2 — `excursion_buenos_aires_tango_show_dinner`; после дня 5 — `excursion_source_makuko_safari` и `excursion_source_park_jekzoticheskih_ptic_v_iguasu`; после дня 21 — новая `excursion_el_chalten_kayaking`; после дня 23 — новая `excursion_ushuaia_penguin_walk`. Две новые сущности созданы строго из подтвержденных данных V2: каякинг — от $300 за человека без выдуманных длительности/языка/состава, прогулка с пингвинами — $350 с человека, групповой формат и англоязычный гид. Инварианты: `production_excursion_refs = 5`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`. Итог: `DONE_LINKED`.
 
 ### Проверка v1.1 — строка 301, 2026-10-02
 
@@ -321,6 +326,12 @@ missing_excursion_entities = 0
 
 | `tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii` | `excursion_source_tango_shou_v_buenos_ajrese` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином вынесено из numbered day 2 после основной обзорной экскурсии по Буэнос-Айресу. |
 | `tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii` | `excursion_el_calafate_nativo_experience` | between_days | 3 | 4 | LINKED_NEW | Nativo Experience вынесен из вечернего блока дня 3; отдельной source excursion_detail не найдено, создана каноническая Excursion из V2/original тура. |
+
+| `tour_source_vsya_argentina` | `excursion_buenos_aires_tango_show_dinner` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином без гида извлечено из numbered day 2 после основной обзорной экскурсии. |
+| `tour_source_vsya_argentina` | `excursion_source_makuko_safari` | between_days | 5 | 6 | LINKED_EXISTING | Самостоятельный Макуко-сафари извлечен из дня 5; основной блок бразильской стороны водопадов остался внутри numbered day. |
+| `tour_source_vsya_argentina` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 5 | 6 | LINKED_EXISTING | В V2 присутствовал прямой ADA_TOURS_EXCURSION_REF; локальный текст Парка птиц удален из дня 5. |
+| `tour_source_vsya_argentina` | `excursion_el_chalten_kayaking` | between_days | 21 | 22 | LINKED_NEW | Опциональный каякинг от $300 за человека извлечен из дня 21; создана каноническая Excursion без неподтвержденных деталей. |
+| `tour_source_vsya_argentina` | `excursion_ushuaia_penguin_walk` | between_days | 23 | 24 | LINKED_NEW | Опциональная групповая прогулка с пингвинами за $350 с англоязычным гидом извлечена из дня 23; создана каноническая Excursion. |
 
 ## 5. Как фиксировать новую найденную экскурсию
 

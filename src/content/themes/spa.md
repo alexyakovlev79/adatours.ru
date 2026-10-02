@@ -13,6 +13,7 @@ featuredCountries:
   - country_brazil
   - country_argentina
   - country_peru
+  - country_uruguay
 sourceUrl: https://brasiltours.ru/spa-zdorove
 sourceSnapshot: page_texts_original/spa-zdorove__f65becfb.md
 updatedAt: 2026-09-24

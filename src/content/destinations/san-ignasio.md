@@ -9,20 +9,20 @@ destinationType: city
 summary: Сан-Игнасио расположен на левом берегу реки Макал у подножия гор. Город служит отправной точкой для путешествий к древним поселениям майя и природным достопримечательностям.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/belize/san-ignacio.jpg
+  src: /media/destinations/san-ignasio/hero-enhanced-20261002.webp
   alt: 'На фото: город Сан-Игнасио в Белизе'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN6984_4.jpg
+- src: /media/destinations/san-ignasio/gallery-1-enhanced-20261002.webp
   alt: 'На фото: город Сан-Игнасио в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/p/1/p161819-Belize-San_Ignacio_town.jpg
+- src: /media/destinations/san-ignasio/gallery-2-enhanced-20261002.webp
   alt: 'На фото: город Сан-Игнасио в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN17714_4.jpg
+- src: /media/destinations/san-ignasio/gallery-3-enhanced-20261002.webp
   alt: 'На фото: город Сан-Игнасио в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/p/3/p341516-San_Ignacio-Waterfall_near_Kaana_Resort.jpg
+- src: /media/destinations/san-ignasio/gallery-4-enhanced-20261002.webp
   alt: 'На фото: город Сан-Игнасио в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/M/e/Mexico-2005--0254-0206-San-Ignacio--Main-Square--Voting.jpg
+- src: /media/destinations/san-ignasio/gallery-5-enhanced-20261002.webp
   alt: 'На фото: город Сан-Игнасио в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN14870_5.jpg
+- src: /media/destinations/san-ignasio/gallery-6-enhanced-20261002.webp
   alt: 'На фото: город Сан-Игнасио в Белизе'
 themes: []
 relatedDestinations: []

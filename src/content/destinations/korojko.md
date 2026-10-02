@@ -9,10 +9,10 @@ destinationType: city
 summary: Коройко расположен в регионе Юнгас, где высокие Анды спускаются к бассейну Амазонки. Из города можно отправиться к водопадам, на цитрусовые и кофейные плантации.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/coroico-new.jpg
+  src: /media/destinations/korojko/hero-enhanced-20261002.webp
   alt: 'На фото: Коройко в Боливии (Дорога Смерти)'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN17230_15.jpg
+- src: /media/destinations/korojko/gallery-1-enhanced-20261002.webp
   alt: 'На фото: Коройко в Боливии (Дорога Смерти)'
 - src: https://brasiltours.ru/image/catalog/category/C/o/Coroico_Town.jpg
   alt: 'На фото: город Коройко в Боливии'

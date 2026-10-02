@@ -12,7 +12,7 @@ hero:
   src: /media/destinations/punta-gorda/hero-enhanced-20261002.webp
   alt: 'На фото: Пунта Горда в Белизе на Карибском море'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/e/Belize.jpg
+- src: /media/destinations/punta-gorda/gallery-1-enhanced-20261002.webp
   alt: 'На фото: Пунта Горда в Белизе на Карибском море'
 themes: []
 relatedDestinations: []

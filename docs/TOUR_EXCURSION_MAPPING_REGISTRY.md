@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.41  
+Версия: 1.42  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -174,7 +174,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **31** тур со статусом `Уникализировано`.
+В текущем реестре учтено **32** тур со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -207,12 +207,17 @@ missing_excursion_entities = 0
 | 303 | `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `src/content/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej.md` | Аргентина Deluxe за 11 дней: Буэнос-Айрес, Патагония, Ушуайя и Игуасу | DONE_LINKED | 8 | 2026-10-02 |
 | 304 | `tour_source_argentina_dlya_degustatorov_khoroshej_zhizni` | `src/content/tours/argentina-dlya-degustatorov-khoroshej-zhizni.md` | Аргентина для ценителей вина, кухни и красивой жизни | DONE_LINKED | 1 | 2026-10-02 |
 | 305 | `tour_source_tur_v_argentinu_na_dikuyu_prirodu` | `src/content/tours/tur-v-argentinu-na-dikuyu-prirodu.md` | Эко-тур по Аргентине на 9 дней: киты Пуэрто-Мадрина и заповедник Ибера | DONE_LINKED | 2 | 2026-10-02 |
+| 306 | `tour_source_tur_v_argentinu_na_11dnej` | `src/content/tours/tur-v-argentinu-na-11dnej.md` | VIP-тур по Аргентине на 11 дней: Патагония, Ушуайя и водопады Игуасу | DONE_LINKED | 8 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.2:** строка 305 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.2:** строка 306 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.2 — строка 306, 2026-10-02
+
+- **Строка 306 / `tour_source_tur_v_argentinu_na_11dnej`:** опубликован 11-дневный VIP-тур «VIP-тур по Аргентине на 11 дней: Патагония, Ушуайя и водопады Игуасу» из V2 + original. Основная программа numbered days сохранена внутри дней: обзорный Буэнос-Айрес, Перито-Морено, Tierra del Fuego и обе стороны Игуасу. Извлечены 8 самостоятельных модулей: после дня 2 — `excursion_buenos_aires_tango_show_dinner`; после дня 3 — Тигре, Fiesta Gaucho и Колония-дель-Сакраменто; после дня 7 — `excursion_ushuaia_martillo_penguin_boat`; после дня 9 — Macuco Safari, Парк птиц и `excursion_iguazu_helicopter_falls`. Опциональный ледовый треккинг по Перито-Морено оставлен вариантом основной экскурсии дня 5, поскольку V2 не оформляет его отдельным самостоятельным продуктовым блоком. Все 8 канонических Excursion уже существовали в production, новые сущности не создавались. Инварианты: `standalone_excursion_modules = 8`, `production_excursion_refs = 8`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`. Build/deploy commit `7cf41c1370829c9863317ba1f55162984c0d269d` завершен успешно. Итог: `DONE_LINKED`.
 
 ### Проверка v1.1 — строка 305, 2026-10-02
 
@@ -385,6 +390,15 @@ missing_excursion_entities = 0
 
 | `tour_source_tur_v_argentinu_na_dikuyu_prirodu` | `excursion_buenos_aires_tango_show_dinner` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином без гида вынесено из дня 2 после основной программы ранчо «Дон Сильвано». |
 | `tour_source_tur_v_argentinu_na_dikuyu_prirodu` | `excursion_ibera_corrientes_river_or_dorado_fishing` | between_days | 6 | 7 | LINKED_NEW | Optional-блок дня 6 — прогулка по реке Корриентес или рыбалка на дорадо — вынесен в отдельную каноническую Excursion; подтверждено только, что она организуется по желанию и за дополнительную плату. |
+
+| `tour_source_tur_v_argentinu_na_11dnej` | `excursion_buenos_aires_tango_show_dinner` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином вынесено из дня 2 после основной обзорной экскурсии по Буэнос-Айресу. |
+| `tour_source_tur_v_argentinu_na_11dnej` | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | between_days | 3 | 4 | LINKED_EXISTING | Опциональная программа Тигре и Северной зоны свободного дня 3 использует существующую каноническую Excursion. |
+| `tour_source_tur_v_argentinu_na_11dnej` | `excursion_source_fiesta_gaucho` | between_days | 3 | 4 | LINKED_EXISTING | Опциональный день на ранчо / Fiesta Gaucho свободного дня 3 использует существующую каноническую Excursion. |
+| `tour_source_tur_v_argentinu_na_11dnej` | `excursion_buenos_aires_colonia_del_sacramento_day_trip` | between_days | 3 | 4 | LINKED_EXISTING | Опциональная поездка из Буэнос-Айреса в Колонию-дель-Сакраменто вынесена в отдельный `excursionRef`. |
+| `tour_source_tur_v_argentinu_na_11dnej` | `excursion_ushuaia_martillo_penguin_boat` | between_days | 7 | 8 | LINKED_EXISTING | Морская поездка к острову Мартильо вынесена из optional-блока дня 7; основной Tierra del Fuego остался внутри numbered day. |
+| `tour_source_tur_v_argentinu_na_11dnej` | `excursion_source_makuko_safari` | between_days | 9 | 10 | LINKED_EXISTING | Дополнительный Macuco Safari дня 9 заменен на канонический `excursionRef`. |
+| `tour_source_tur_v_argentinu_na_11dnej` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 9 | 10 | LINKED_EXISTING | Парк птиц дня 9 использует существующую каноническую Excursion; локальный текст не дублируется. |
+| `tour_source_tur_v_argentinu_na_11dnej` | `excursion_iguazu_helicopter_falls` | between_days | 9 | 10 | LINKED_EXISTING | Дополнительный полет над водопадами Игуасу вынесен в отдельный `excursionRef`. |
 
 ## 5. Как фиксировать новую найденную экскурсию
 

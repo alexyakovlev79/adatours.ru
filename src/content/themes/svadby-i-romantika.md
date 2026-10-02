@@ -12,10 +12,11 @@ hero:
 featuredCountries:
   - country_brazil
   - country_argentina
-  - country_peru
+  - country_peru  - country_dominican_republic
+
 sourceUrl: https://brasiltours.ru/svadby-i-romantika
 sourceSnapshot: page_texts_original/svadby-i-romantika__00c77142.md
-updatedAt: 2026-09-24
+updatedAt: 2026-10-02
 ---
 
 ## Сначала место и формат события

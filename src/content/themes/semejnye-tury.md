@@ -12,10 +12,11 @@ hero:
 featuredCountries:
   - country_brazil
   - country_argentina
-  - country_peru
+  - country_peru  - country_dominican_republic
+
 sourceUrl: https://brasiltours.ru/semejnyj-otdykh
 sourceSnapshot: page_texts_original/semejnyj-otdykh__12a9f6fe.md
-updatedAt: 2026-09-24
+updatedAt: 2026-10-02
 ---
 
 ## Меньше переездов, больше времени вместе

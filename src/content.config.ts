@@ -181,6 +181,7 @@ const excursions = defineCollection({
     title: z.string(),
     country: z.string(),
     destination: z.string().optional(),
+    destinationName: z.string().optional(), // Fallback label until the Destination entity exists.
     themes: z.array(z.string()).default([]),
     duration: z.string().optional(),
     format: z.string().optional(),

@@ -82,6 +82,15 @@ const fallbackDestinations: Record<string, { label: string; href: string }> = {
   },
 };
 
+const destinationName =
+  destination?.data.name ??
+  d.destinationName ??
+  (d.destination ? fallbackDestinations[d.destination]?.label : undefined);
+
+const destinationHref = country && destination
+  ? `/napravleniya/${country.data.slug}/${destination.data.slug}/`
+  : undefined;
+
 const countryBreadcrumb = country
   ? {
       label: country.data.name,
@@ -119,7 +128,7 @@ const money = roundedPrice && d.currency
 
 const stats = [
   d.duration ? { value: d.duration, label: 'продолжительность' } : null,
-  destination ? { value: destination.data.name, label: 'место' } : null,
+  destinationName ? { value: destinationName, label: 'место' } : null,
   d.format ? { value: d.format, label: 'формат' } : null,
 ].filter(Boolean);
 
@@ -177,6 +186,19 @@ const excursionSchema = {
       <slot />
     </div>
   </section>
+
+  {destination && destinationHref && (
+    <DestinationBand
+      eyebrow="Место"
+      title={destination.data.name}
+      text={destination.data.summary}
+      image={destination.data.hero?.src}
+      mediaStatus={destination.data.hero?.status}
+      replacementReason={destination.data.hero?.replacementReason}
+      href={destinationHref}
+      descriptionBelow={true}
+    />
+  )}
 
   {d.gallery.length > 0 && (
     <MediaGallery

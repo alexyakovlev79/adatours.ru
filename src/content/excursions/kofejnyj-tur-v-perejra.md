@@ -6,6 +6,8 @@ slug: kofejnyj-tur-v-perejra
 status: approved
 country: country_colombia
 duration: 5 часов
+language:
+  - английский
 priceFrom: 438
 currency: USD
 updatedAt: 2026-10-02

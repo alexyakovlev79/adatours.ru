@@ -15,6 +15,8 @@ destinations:
   - destination_brazil_bonito
   - destination_brazil_sao_luis
   - destination_brazil_lencois_maranhenses
+  - destination_brazil_barrejrinyas
+  - destination_brazil_kampo_grande
 themes: [adventure, nature, wildlife, beach]
 audiences: [private, couples, family]
 format: Частный

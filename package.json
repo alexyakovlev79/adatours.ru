@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && pagefind --site dist",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "reserve:destination": "node scripts/reserve-destination.mjs",
+    "test:destination-reservations": "node --test tests/destination-reservations.test.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",
     "astro": "7.3.4"
   },
   "devDependencies": {
+    "js-yaml": "4.3.2",
     "pagefind": "1.5.2"
   },
   "engines": {

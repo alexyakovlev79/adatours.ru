@@ -14,6 +14,12 @@ countries:
 destinations:
   - destination_chile_valdiviya_i_puerto_mont
   - destination_argentina_ushuajya
+  - destination_chile_kaleta_tortel
+  - destination_chile_morskoj_park_fransisko_koloane
+  - destination_chile_nacionalnyj_park_bernardo_o_higgins
+  - destination_chile_nacionalnyj_park_san_rafael
+  - destination_chile_puerto_sisnes
+  - destination_chile_ford_garibaldi
 themes:
   - adventure
   - nature

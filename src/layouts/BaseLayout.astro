@@ -2,21 +2,18 @@
 import '../styles/tokens.css';
 import '../styles/typography.css';
 import '../styles/global.css';
+import '../styles/image-text-align.css';
 import SiteHeader from '../components/global/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
 import SearchOverlay from '../components/global/SearchOverlay.astro';
 import Breadcrumbs from '../components/global/Breadcrumbs.astro';
 import { SITE } from '../lib/site';
 import { withBase } from '../lib/paths';
+import { expandBreadcrumbTrails, type BreadcrumbItem } from '../lib/routes';
 import { ORG } from '../data/organization/ada-tours';
 import { validateSiteContent } from '../lib/content-validation';
 
 await validateSiteContent();
-
-interface BreadcrumbItem {
-  label: string;
-  href: string;
-}
 
 interface Props {
   title?: string;
@@ -44,7 +41,9 @@ const {
   pageSchema,
 } = Astro.props;
 
-const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site ?? SITE.url).toString();
+const canonicalUrl = canonical
+  ? new URL(withBase(canonical), Astro.site ?? SITE.url).toString()
+  : new URL(Astro.url.pathname, Astro.site ?? SITE.url).toString();
 const fullTitle = title.includes('Ada Tours') ? title : `${title} | Ada Tours`;
 const isPreview = import.meta.env.BASE_URL !== '/';
 const faviconSvgUrl = withBase('/favicon.svg');
@@ -100,24 +99,22 @@ const breadcrumbLabels: Record<string, string> = {
 
 const pageTitle = title.replace(/\s*[|–—-]\s*Ada Tours.*$/i, '').trim();
 const breadcrumbItems = [
-  { name: 'Главная', url: new URL('/', SITE.url).toString() },
+  { name: 'Главная', url: new URL(withBase('/'), Astro.site ?? SITE.url).toString() },
   ...segments.map((segment, index) => ({
     name: breadcrumbLabels[segment] ?? (index === segments.length - 1 ? pageTitle : segment.replace(/-/g, ' ')),
     url: new URL(
-      segments[0] === 'napravleniya' && index === 1
-        ? `/strany/${segment}/`
-        : `/${segments.slice(0, index + 1).join('/')}/`,
-      SITE.url,
+      withBase(`/${segments.slice(0, index + 1).join('/')}/`),
+      Astro.site ?? SITE.url,
     ).toString(),
   })),
 ];
 
-const schemaBreadcrumbItems = breadcrumbs?.length
-  ? breadcrumbs.map((item) => ({
+const schemaBreadcrumbTrails = breadcrumbs?.length
+  ? expandBreadcrumbTrails(breadcrumbs).map((trail) => trail.map((item) => ({
       name: item.label,
-      url: new URL(item.href, SITE.url).toString(),
-    }))
-  : breadcrumbItems;
+      url: new URL(withBase(item.href), Astro.site ?? SITE.url).toString(),
+    })))
+  : [breadcrumbItems];
 
 const organizationSchema = {
   '@type': ['Organization', 'TravelAgency'],
@@ -163,23 +160,23 @@ const webPageSchema = {
   about: { '@id': `${SITE.url}/#organization` },
 };
 
-const breadcrumbSchema = (segments.length > 0 || Boolean(breadcrumbs?.length)) ? {
+const breadcrumbSchemas = (segments.length > 0 || Boolean(breadcrumbs?.length)) ? schemaBreadcrumbTrails.map((trail, trailIndex) => ({
   '@type': 'BreadcrumbList',
-  '@id': `${canonicalUrl}#breadcrumb`,
-  itemListElement: schemaBreadcrumbItems.map((item, index) => ({
+  '@id': `${canonicalUrl}#breadcrumb${trailIndex ? `-${trailIndex + 1}` : ''}`,
+  itemListElement: trail.map((item, index) => ({
     '@type': 'ListItem',
     position: index + 1,
     name: item.name,
     item: item.url,
   })),
-} : null;
+})) : [];
 
 const extraSchemas = !pageSchema ? [] : (Array.isArray(pageSchema) ? pageSchema : [pageSchema]);
 const graph = [
   organizationSchema,
   webSiteSchema,
   webPageSchema,
-  ...(breadcrumbSchema ? [breadcrumbSchema] : []),
+  ...breadcrumbSchemas,
   ...extraSchemas,
 ];
 ---

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Destination reservation request: one object or an all-or-nothing batch",
+  "oneOf": [
+    { "$ref": "#/$defs/request" },
+    { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/request" } }
+  ],
+  "$defs": {
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["countryId", "name", "discoveredIn"],
+      "properties": {
+        "countryId": { "type": "string", "pattern": "^country_[a-z0-9_]+$" },
+        "name": { "type": "string", "minLength": 1 },
+        "aliases": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "destinationId": { "type": "string", "pattern": "^destination_[a-z0-9_]+$", "description": "Select an existing canonical ID; never supply a new invented ID." },
+        "discoveredIn": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["entityType", "evidence"],
+          "allOf": [
+            { "if": { "properties": { "entityType": { "enum": ["tour", "excursion"] } } }, "then": { "required": ["entityId"] } }
+          ],
+          "properties": {
+            "entityType": { "enum": ["tour", "excursion", "user_request"] },
+            "entityId": { "type": "string", "minLength": 1 },
+            "sourceUrl": { "type": ["string", "null"], "format": "uri" },
+            "evidence": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    }
+  }
+}

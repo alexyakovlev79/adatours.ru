@@ -29,6 +29,11 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-09-30
+relatedDestinations:
+  - destination_peru_olyantajtambo
+  - destination_peru_svyaschennaya_dolina_inkov
+  - destination_peru_urubamba
+  - destination_peru_chinchero
 ---
 
 Священная долина считалась колыбелью цивилизации инков. Плодородные земли и мягкий климат позволяли развивать земледелие, а вдоль долины строились города и церемониальные центры.

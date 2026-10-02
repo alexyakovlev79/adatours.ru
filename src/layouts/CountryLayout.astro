@@ -7,6 +7,7 @@ import LeadForm from '../components/forms/LeadForm.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import { withBase } from '../lib/paths';
+import { countryBreadcrumbs, countryPath, destinationPath, excursionPath, themePath, tourPath } from '../lib/routes';
 
 const { entry } = Astro.props;
 // Country page: linked destination/tour catalogue for internal linking and discovery.
@@ -95,12 +96,23 @@ const destinationTypeLabel = {
   natural_area: 'Природная территория',
   route_cluster: 'Маршрут',
 };
+
+// A linked place banner represents that place; other editorial bands belong
+// to this country. An unset property keeps the banner's original alternation.
+const featureBandImageTextAlign = (href: string) => {
+  const destination = destinationEntries.find((item) =>
+    href === destinationPath(item.data)
+  );
+  return destination ? destination.data.imageTextAlign : d.imageTextAlign;
+};
 ---
 
 <BaseLayout
   title={`${d.name}: туры и путешествия`}
   description={d.summary}
   image={d.hero?.src}
+  canonical={countryPath(d)}
+  breadcrumbs={countryBreadcrumbs(d)}
 >
   <SearchIndexRecord
     title={d.name}
@@ -119,6 +131,7 @@ const destinationTypeLabel = {
     title={d.name}
     intro={d.summary}
     image={d.hero?.src}
+    imageTextAlign={d.imageTextAlign}
     mediaStatus={d.hero?.status}
     replacementReason={d.hero?.replacementReason}
     ctaLabel="Подобрать маршрут"
@@ -140,6 +153,7 @@ const destinationTypeLabel = {
         mediaStatus={band.imageStatus}
         replacementReason={band.imageReplacementReason}
         href={band.href}
+        imageTextAlign={featureBandImageTextAlign(band.href)}
         align={index % 2 === 1 ? 'right' : 'left'}
       />
     ) : (
@@ -163,10 +177,11 @@ const destinationTypeLabel = {
         <div class="country-linked__grid">
           {destinationEntries.map((item, index) => {
             const image = item.data.hero?.src ? withBase(item.data.hero.src) : undefined;
-            const href = withBase(`/napravleniya/${d.slug}/${item.data.slug}/`);
+            const href = withBase(destinationPath(item.data));
             return (
               <a
                 class:list={['destination-card', { 'destination-card--wide': index % 7 === 0 }]}
+                data-image-text-align={item.data.imageTextAlign}
                 href={href}
               >
                 <span
@@ -211,9 +226,10 @@ const destinationTypeLabel = {
             title={item.data.title}
             text={item.data.lead}
             image={item.data.hero?.src}
+            imageTextAlign={item.data.imageTextAlign}
             mediaStatus={item.data.hero?.status}
             replacementReason={item.data.hero?.replacementReason}
-            href={`/tury/${item.data.slug}/`}
+            href={tourPath(item.data)}
             align={index % 2 === 1 ? 'right' : 'left'}
             descriptionBelow={true}
           />
@@ -237,7 +253,8 @@ const destinationTypeLabel = {
             return (
               <a
                 class:list={['entity-poster', { 'entity-poster--wide': index % 5 === 0 }]}
-                href={withBase(`/ekskursii/${item.data.slug}/`)}
+                data-image-text-align={item.data.imageTextAlign}
+                href={withBase(excursionPath(item.data))}
                 style={image ? `--entity-image: url("${image}")` : undefined}
               >
                 <span class="entity-poster__shade" aria-hidden="true"></span>
@@ -273,9 +290,10 @@ const destinationTypeLabel = {
             title={item.data.name}
             text={item.data.summary}
             image={item.data.hero?.src}
+            imageTextAlign={item.data.imageTextAlign}
             mediaStatus={item.data.hero?.status}
             replacementReason={item.data.hero?.replacementReason}
-            href={`/po-interesam/${item.data.slug}/`}
+            href={themePath(item.data)}
             align={index % 2 === 1 ? 'right' : 'left'}
           />
         ))}
@@ -667,6 +685,25 @@ const destinationTypeLabel = {
     .entity-poster strong,
     .entity-poster:not(.entity-poster--wide) strong {
       font-size: clamp(2rem, 9vw, 3rem);
+    }
+  }
+
+  .destination-card[data-image-text-align] .destination-card__meta,
+  .destination-card[data-image-text-align] .destination-card__title,
+  .destination-card[data-image-text-align] .destination-card__link {
+    justify-self: var(--image-text-inline);
+    text-align: var(--image-text-align);
+  }
+
+  .entity-poster[data-image-text-align] .entity-poster__content {
+    align-items: var(--image-text-flex);
+    text-align: var(--image-text-align);
+  }
+
+  @media (min-width: 821px) {
+    .destination-card[data-image-text-align] .destination-card__description {
+      justify-self: var(--image-text-inline);
+      text-align: var(--image-text-align);
     }
   }
 </style>

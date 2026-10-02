@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { countryPath } from '../../lib/routes';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
@@ -55,7 +56,8 @@ const countryAlignments = new Map([
       title={country.data.name}
       text={country.data.summary}
       image={country.data.hero?.src}
-      href={`/strany/${country.data.slug}/`}
+      imageTextAlign={country.data.imageTextAlign}
+      href={countryPath(country.data)}
       align={countryAlignments.get(country.data.slug) ?? (index % 2 === 1 ? 'right' : 'left')}
     />
   ))}

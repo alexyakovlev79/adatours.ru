@@ -13,6 +13,7 @@ countries:
   - country_argentina
 destinations:
   - destination_argentina_ushuajya
+  - destination_argentina_puerto_almansa
 themes:
   - theme_fishing
   - theme_adventure

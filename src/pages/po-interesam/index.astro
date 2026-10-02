@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { themePath } from '../../lib/routes';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
@@ -46,7 +47,8 @@ if (adventuresIndex !== -1 && fishingIndex !== -1) {
       title={theme.data.name}
       text={theme.data.summary}
       image={theme.data.hero?.src}
-      href={`/po-interesam/${theme.data.slug}/`}
+      imageTextAlign={theme.data.imageTextAlign}
+      href={themePath(theme.data)}
       align={index % 3 === 1 ? 'right' : 'left'}
     />
   ))}

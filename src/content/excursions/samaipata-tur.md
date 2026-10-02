@@ -45,6 +45,8 @@ notes:
 sourceUrl: https://brasiltours.ru/samaipata-tur
 sourceSnapshot: page_texts_newstep/Excursions/samaipata-tur__b865455c.md
 updatedAt: 2026-10-01
+relatedDestinations:
+  - destination_bolivia_samaipata
 ---
 
 Из Санта-Круса вы отправитесь примерно на 120 км к Самаипате, колониальному городку в предгорьях Анд на высоте около 1650 м. По дороге открываются зеленые долины, холмы и горные хребты.

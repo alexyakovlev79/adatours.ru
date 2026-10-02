@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "preparedAt": "2026-10-02",
+  "scope": "Unresolved identity or scope observed while preparing reservations from the 39 existing tours and existing excursions. No source crawl.",
+  "rule": "These observations reserve no ID, name or URL. Read only for a separate explicit clarification task; ordinary known-entity ingestion does not review this file.",
+  "entries": [
+    {
+      "countryId": "country_chile",
+      "name": "Остров Магдалена",
+      "reason": "Два контекста: возможный визит в районе Айсен и навигация из Пунта-Аренаса по Магелланову проливу. Общее имя не должно сливаться в один резерв. Нужны два уточнённых объекта.",
+      "reasonCode": "identity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_source_patagoniya_i_chilijskie_fordy",
+          "sourceUrl": "https://brasiltours.ru/patagoniya-i-chilijskie-fordy",
+          "evidence": "День 2: В зависимости от условий возможен визит в Пуэрто-Сиснес, По Уапи или на остров Магдалена."
+        },
+        {
+          "entityType": "tour",
+          "entityId": "tour_source_roskoshnaya_patagoniya_10_dney",
+          "sourceUrl": "https://brasiltours.ru/roskoshnaya-patagoniya-10-dney",
+          "evidence": "День 8: Остров Магдалена, остров Марта и перелет в Сантьяго; в местах программы: остров Магдалена."
+        }
+      ]
+    },
+    {
+      "countryId": "country_brazil",
+      "name": "Прая-Гранде",
+      "reason": "Город посещается, но штат/точная идентичность в тексте не названы. Не угадывать её по соседнему каньону.",
+      "reasonCode": "identity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_brazil_south_12d",
+          "sourceUrl": "https://brasiltours.ru/tur-v-yuzhnuyu-braziliyu",
+          "evidence": "День 7: Грамаду - Прая-Гранде; в местах программы: Прая-Гранде."
+        }
+      ]
+    },
+    {
+      "countryId": "country_brazil",
+      "name": "Камбара-ду-Сул",
+      "reason": "В тексте это «каньон Камбара-ду-Сул», а не посещаемый город. Не создавать город из этого упоминания и не закреплять ошибочное имя каньона.",
+      "reasonCode": "identity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_brazil_south_12d",
+          "sourceUrl": "https://brasiltours.ru/tur-v-yuzhnuyu-braziliyu",
+          "evidence": "День 7: После посещения Skyglass едем в Прая-Гранде, недалеко от каньона Камбара-ду-Сул, который называют самым большим каньоном Южной Америки."
+        }
+      ]
+    },
+    {
+      "countryId": "country_chile",
+      "name": "Пуэрто-Айсен",
+      "reason": "Судно проходит в район Пуэрто-Айсен; посещение города не подтверждено. Не подменять район плавания городом.",
+      "reasonCode": "identity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_source_patagoniya_i_chilijskie_fordy",
+          "sourceUrl": "https://brasiltours.ru/patagoniya-i-chilijskie-fordy",
+          "evidence": "День 2: Канал По Уапи; в местах программы: Пуэрто-Айсен."
+        }
+      ]
+    },
+    {
+      "countryId": "country_chile",
+      "name": "По Уапи",
+      "reason": "Название используется для канала в заголовке и возможного визита в тексте. Нужно отличить водный объект от поселения и зафиксировать точное имя, не восстанавливая его догадкой.",
+      "reasonCode": "identity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_source_patagoniya_i_chilijskie_fordy",
+          "sourceUrl": "https://brasiltours.ru/patagoniya-i-chilijskie-fordy",
+          "evidence": "День 2: Канал По Уапи; в местах программы: По Уапи."
+        }
+      ]
+    },
+    {
+      "countryId": "country_argentina",
+      "name": "Озеро Фаньяно / Фагнано",
+      "reason": "Тур подтверждает поездку из Ушуайи. Для пограничного озера необходимо определить аргентинскую часть/масштаб страницы: правило одной страны не разрешает присвоить всё озеро одному countryId.",
+      "reasonCode": "identity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_source_argentina_chili_i_prekrasnaya_patagoniya",
+          "sourceUrl": "https://brasiltours.ru/argentina-chili-i-prekrasnaya-patagoniya",
+          "evidence": "День 4: С панорамной точки открываются виды на озера Эскондидо и Фаньяно."
+        }
+      ]
+    },
+    {
+      "countryId": "country_argentina",
+      "name": "Озеро Виктория",
+      "reason": "В рыболовном туре из Ушуайи нет достаточного географического пояснения. Не сопоставлять с островом Виктория у Барилоче и не выбирать другое озеро по догадке.",
+      "reasonCode": "identity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_source_rybalka_v_ushuajya",
+          "sourceUrl": "https://brasiltours.ru/rybalka-v-ushuajya",
+          "evidence": "Текст тура: По пути предусмотрены остановки у озера Виктория и знаменитого «флагового дерева»."
+        }
+      ]
+    },
+    {
+      "countryId": "country_colombia",
+      "name": "Гуатавита",
+      "reason": "Текст не уточняет, что посещают: город, озеро или оба объекта. Не создавать один неопределённый резерв.",
+      "reasonCode": "identity",
+      "discoveredIn": [
+        {
+          "entityType": "excursion",
+          "entityId": "excursion_source_colombia_bogota_zipaquira_con_guatavita",
+          "sourceUrl": "https://brasiltours.ru/colombia-bogota-zipaquira-con-guatavita",
+          "evidence": "Текст экскурсии: Вторая часть маршрута связана с Гуатавитой — местом, которое в исходной программе связано с легендой об Эльдорадо."
+        }
+      ]
+    },
+    {
+      "countryId": "country_brazil",
+      "name": "Вассурас",
+      "reason": "Короткая речная остановка внутри программы Ленсойс; не каждый такой пункт становится самостоятельной очередью подготовки.",
+      "reasonCode": "granularity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_brazil_dunes_13d",
+          "sourceUrl": "https://brasiltours.ru/zagadochnye-dyuny-s-ozerami-vodopadami-i-plyazhami-brazilii",
+          "evidence": "День 9: остановка в Вассурасе («Малый Ленсойс»), затем ночёвка в деревне Атинс."
+        }
+      ]
+    },
+    {
+      "countryId": "country_brazil",
+      "name": "Иньотим",
+      "reason": "Посещение подтверждено, но это культурный комплекс. Требуется выбор, выделяются ли такие достопримечательности в Destination; городом его подменять нельзя.",
+      "reasonCode": "granularity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_brazil_gems_14d",
+          "sourceUrl": "https://brasiltours.ru/v-poiskakh-dragotsennostej",
+          "evidence": "День 6: Ору-Прету - Иньотим - Салвадор; в местах программы: Иньотим."
+        }
+      ]
+    },
+    {
+      "countryId": "country_brazil",
+      "name": "Маракайпе и Муро-Альто",
+      "reason": "Локальные пляжи программы Порту-ди-Галиньяш, не включённые в очередь самостоятельных мест.",
+      "reasonCode": "granularity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_brazil_recife_porto_noronha_10d",
+          "sourceUrl": "https://brasiltours.ru/recife-porto-de-galinhas",
+          "evidence": "День 4: Свободный день в Порту-де-Галиньяс; в местах программы: Маракайпе, Муро-Альто."
+        }
+      ]
+    },
+    {
+      "countryId": "country_brazil",
+      "name": "Прайя-Вермелья",
+      "reason": "Пляж церемонии в Рио, не отдельная курортная часть маршрута.",
+      "reasonCode": "granularity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_source_rio_de_janeiro_wedding",
+          "sourceUrl": "https://brasiltours.ru/rio-de-janeiro-wedding",
+          "evidence": "В route свадебного тура назван пляж Прайя-Вермелья; существующая географическая связь — Рио-де-Жанейро."
+        }
+      ]
+    },
+    {
+      "countryId": "country_brazil",
+      "name": "Жанауака, Жанауари, Встреча вод",
+      "reason": "Локальные остановки амазонского круиза. Общий маршрут уже связан с destination_brazil_amazon; уровень отдельной страницы для каждого объекта не задан.",
+      "reasonCode": "granularity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_source_amazon_clipper_cruise_traditional_3_days_2_nights",
+          "sourceUrl": "https://brasiltours.ru/amazon-clipper-cruise-traditional-3-days-2-nights",
+          "evidence": "День 3: Экологический парк Жанауари и «Встреча вод»; в местах программы: Встреча вод."
+        }
+      ]
+    },
+    {
+      "countryId": "country_suriname",
+      "name": "Нордвайквег и Вег-нар-Зе",
+      "reason": "Район/прибрежный участок наблюдения за птицами. Очередь не расширяется на каждый маршрутный участок без определения масштаба места.",
+      "reasonCode": "granularity",
+      "discoveredIn": [
+        {
+          "entityType": "tour",
+          "entityId": "tour_source_tur_v_surinam_dlya_nablyudeniya_za_pticami",
+          "sourceUrl": "https://brasiltours.ru/tur-v-surinam-dlya-nablyudeniya-za-pticami",
+          "evidence": "День 6: Нордвайквег и Вег-нар-Зе, алые ибисы и птицы побережья; в местах программы: Нордвайквег, Вег-нар-Зе."
+        }
+      ]
+    },
+    {
+      "countryId": "country_peru",
+      "name": "Писак",
+      "reason": "Текст называет археологический комплекс, затем ярмарку недалеко от Писака. Нужно выбрать масштаб: город или комплекс, не подменяя одно другим.",
+      "reasonCode": "identity",
+      "discoveredIn": [
+        {
+          "entityType": "excursion",
+          "entityId": "excursion_peru_sacred_valley_full_day",
+          "sourceUrl": null,
+          "evidence": "Текст экскурсии: Маршрут включает Урубамбу с загородной резиденцией Верховного главы инков Уайны-Капака, археологический комплекс Писак на холме Вилькабамба, Ольянтайтамбо с церемониальным центром, Чинчеро с колониальным храмом, построенным поверх стен инкского Храма Солнца, и Морай с земледельческими террасами в форме амфитеатра."
+        }
+      ]
+    },
+    {
+      "countryId": "country_ecuador",
+      "name": "Машпи",
+      "reason": "Экскурсия названа по лоджу, окружающий заповедник не имеет отдельного установленного имени в тексте. Не резервировать отель как место и не придумывать имя заповедника.",
+      "reasonCode": "identity",
+      "discoveredIn": [
+        {
+          "entityType": "excursion",
+          "entityId": "excursion_source_mashpi_lodzh",
+          "sourceUrl": "https://brasiltours.ru/mashpi-lodzh",
+          "evidence": "Текст экскурсии: Машпи Лодж находится в заповеднике площадью около 1300 гектаров, среди тропического леса Эквадора."
+        }
+      ]
+    },
+    {
+      "countryId": "country_brazil",
+      "name": "Abismo Anhumas",
+      "reason": "Пещера около Бонито — главный объект экскурсии. Нужен единый выбор детализации пещер/достопримечательностей; в очередь городов, регионов, парков и островов пока не включена.",
+      "reasonCode": "granularity",
+      "discoveredIn": [
+        {
+          "entityType": "excursion",
+          "entityId": "excursion_brazil_bonito_abismo_anhumas",
+          "sourceUrl": null,
+          "evidence": "Текст экскурсии: Дополнительно можно заказать спуск в пещеру Abismo Anhumas, примерно в 20 км к западу от Бонито."
+        }
+      ]
+    }
+  ]
+}

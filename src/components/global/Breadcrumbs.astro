@@ -1,10 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
-
-interface BreadcrumbItem {
-  label: string;
-  href: string;
-}
+import type { BreadcrumbItem } from '../../lib/routes';
 
 interface Props {
   pathname: string;
@@ -75,30 +71,35 @@ const defaultCrumbs = [
   { label: 'Главная', href: withBase('/') },
   ...segments.map((segment, index) => ({
     label: labels[segment] ?? (index === segments.length - 1 ? pageTitle : segment.replace(/-/g, ' ')),
-    href: segments[0] === 'napravleniya' && index === 1
-      ? withBase(`/strany/${segment}/`)
-      : withBase(`/${segments.slice(0, index + 1).join('/')}/`),
+    href: withBase(`/${segments.slice(0, index + 1).join('/')}/`),
   })),
 ];
 
-const crumbs = items?.length
-  ? items.map((item) => ({
-      ...item,
-      href: /^https?:\/\//i.test(item.href) ? item.href : withBase(item.href),
-    }))
+const crumbs: BreadcrumbItem[] = items?.length
+  ? items.map((item) => 'links' in item
+    ? { links: item.links.map((link) => ({ ...link, href: withBase(link.href) })) }
+    : { ...item, href: withBase(item.href) })
   : defaultCrumbs;
 const isCustomTrail = Boolean(items?.length);
 
-// The visible breadcrumb must not duplicate the page H1.
-// Keep the current page in BreadcrumbList schema (BaseLayout), but omit it from visual navigation.
-const visibleCrumbs = crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
+// Entity trails explicitly include the current title and parallel country links.
+const visibleCrumbs = isCustomTrail ? crumbs : crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
 ---
 
 <nav class:list={['breadcrumbs', `breadcrumbs--${theme}`, isCustomTrail && 'breadcrumbs--custom']} aria-label="Хлебные крошки">
   <ol>
     {visibleCrumbs.map((crumb, index) => (
-      <li>
-        <a href={crumb.href}>{crumb.label}</a>
+      <li class:list={{ 'breadcrumbs__group': 'links' in crumb }}>
+        {'links' in crumb ? crumb.links.map((link, linkIndex) => (
+          <>
+            {linkIndex > 0 && <span class="breadcrumbs__dot" aria-hidden="true">·</span>}
+            <a href={link.href}>{link.label}</a>
+          </>
+        )) : isCustomTrail && index === visibleCrumbs.length - 1 ? (
+          <span aria-current="page">{crumb.label}</span>
+        ) : (
+          <a href={crumb.href}>{crumb.label}</a>
+        )}
       </li>
     ))}
   </ol>
@@ -152,6 +153,9 @@ const visibleCrumbs = crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
   .breadcrumbs a:hover {
     opacity: 1;
   }
+
+  .breadcrumbs__group { flex-wrap: wrap; }
+  .breadcrumbs__dot { margin-inline: .45em; }
 
   .breadcrumbs--light {
     color: rgba(255,255,255,.78);
@@ -224,5 +228,11 @@ const visibleCrumbs = crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
       overflow: visible;
       text-overflow: clip;
     }
+
+    .breadcrumbs--custom ol { flex-wrap: wrap; overflow: visible; }
+    .breadcrumbs--custom li:nth-child(2),
+    .breadcrumbs--custom li:last-child { flex: 0 1 auto; overflow: visible; }
+    .breadcrumbs--custom li:nth-child(2) a,
+    .breadcrumbs--custom li:last-child span { white-space: normal; overflow: visible; }
   }
 </style>

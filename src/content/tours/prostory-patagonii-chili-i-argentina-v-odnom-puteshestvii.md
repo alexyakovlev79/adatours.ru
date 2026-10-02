@@ -16,6 +16,9 @@ destinations:
   - destination_argentina_el_calafate
   - destination_chile_santyago_de_chili
   - destination_chile_puerto_natales_torres_del_pajne
+  - destination_argentina_lednik_perito_moreno
+  - destination_argentina_nacionalnyj_park_los_glasyares
+  - destination_argentina_ozero_argentino
 themes:
   - adventure
   - culture

@@ -13,6 +13,7 @@ countries:
 destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_mendoza
+  - destination_argentina_kanon_atuel
 themes:
   - theme_gastronomy_wine
 audiences:

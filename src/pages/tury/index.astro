@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { tourPath } from '../../lib/routes';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
@@ -32,7 +33,8 @@ const tours = (await getCollection('tours', ({ data }) =>
       title={tour.data.title}
       text={tour.data.lead}
       image={tour.data.hero?.src}
-      href={`/tury/${tour.data.slug}/`}
+      imageTextAlign={tour.data.imageTextAlign}
+      href={tourPath(tour.data)}
       align={index % 2 === 1 ? 'right' : 'left'}
     />
   ))}

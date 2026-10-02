@@ -1,0 +1,143 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import CountryLayout from '../layouts/CountryLayout.astro';
+import DestinationLayout from '../layouts/DestinationLayout.astro';
+import TourLayout from '../layouts/TourLayout.astro';
+import ExcursionLayout from '../layouts/ExcursionLayout.astro';
+import EntityCatalogLayout from '../layouts/EntityCatalogLayout.astro';
+import RedirectLayout from '../layouts/RedirectLayout.astro';
+import {
+  aliasesForEntity, assertUniqueRoutePaths, countryPath, destinationCountryPath, destinationPath,
+  excursionCountryPath, excursionDestinationPath, excursionGeography, excursionPath,
+  mainTourCountries, routeCountries, tourCountryPath, tourPath,
+  type BreadcrumbItem, type CountryRoute, type DestinationRoute,
+} from '../lib/routes';
+
+type DetailProps =
+  | { mode: 'detail'; kind: 'country'; entry: CollectionEntry<'countries'> }
+  | { mode: 'detail'; kind: 'destination'; entry: CollectionEntry<'destinations'> }
+  | { mode: 'detail'; kind: 'tour'; entry: CollectionEntry<'tours'> }
+  | { mode: 'detail'; kind: 'excursion'; entry: CollectionEntry<'excursions'> };
+type CatalogProps = {
+  mode: 'catalog'; kind: 'tour' | 'excursion' | 'destination';
+  entries: Array<CollectionEntry<'tours'> | CollectionEntry<'excursions'> | CollectionEntry<'destinations'>>;
+  canonical: string; title: string; description: string; breadcrumbs: BreadcrumbItem[]; hero?: string;
+};
+type Props = DetailProps | CatalogProps | { mode: 'redirect'; to: string; title: string };
+
+export async function getStaticPaths() {
+  const [countries, destinations, tours, excursions] = await Promise.all([
+    getCollection('countries', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
+    getCollection('destinations', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
+    getCollection('tours', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
+    getCollection('excursions', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
+  ]);
+  destinations.sort((a, b) => a.data.name.localeCompare(b.data.name, 'ru'));
+  tours.sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0) || a.data.title.localeCompare(b.data.title, 'ru'));
+  excursions.sort((a, b) => a.data.title.localeCompare(b.data.title, 'ru'));
+
+  const routes: Array<{ params: { path: string }; props: Props }> = [];
+  const add = (path: string, props: Props) => routes.push({ params: { path: path.replace(/^\/|\/$/g, '') }, props });
+
+  for (const entry of countries) {
+    const canonical = countryPath(entry.data);
+    add(canonical, { mode: 'detail', kind: 'country', entry });
+    for (const alias of aliasesForEntity('country', entry.data, canonical)) add(alias, { mode: 'redirect', to: canonical, title: entry.data.name });
+  }
+  for (const entry of destinations) {
+    const canonical = destinationPath(entry.data);
+    add(canonical, { mode: 'detail', kind: 'destination', entry });
+    for (const alias of aliasesForEntity('destination', entry.data, canonical)) add(alias, { mode: 'redirect', to: canonical, title: entry.data.name });
+  }
+  for (const entry of tours) {
+    const canonical = tourPath(entry.data);
+    add(canonical, { mode: 'detail', kind: 'tour', entry });
+    for (const alias of aliasesForEntity('tour', entry.data, canonical)) add(alias, { mode: 'redirect', to: canonical, title: entry.data.title });
+  }
+
+  const excursionCountries = new Map<string, { country: CountryRoute; entries: CollectionEntry<'excursions'>[] }>();
+  const excursionDestinations = new Map<string, { country: CountryRoute; destination: DestinationRoute; entries: CollectionEntry<'excursions'>[] }>();
+  for (const entry of excursions) {
+    const canonical = excursionPath(entry.data);
+    add(canonical, { mode: 'detail', kind: 'excursion', entry });
+    for (const alias of aliasesForEntity('excursion', entry.data, canonical)) add(alias, { mode: 'redirect', to: canonical, title: entry.data.title });
+    const { country, destination } = excursionGeography(entry.data);
+    const countryGroup = excursionCountries.get(country.id) ?? { country, entries: [] };
+    countryGroup.entries.push(entry);
+    excursionCountries.set(country.id, countryGroup);
+    if (destination) {
+      const destinationGroup = excursionDestinations.get(destination.id) ?? { country, destination, entries: [] };
+      destinationGroup.entries.push(entry);
+      excursionDestinations.set(destination.id, destinationGroup);
+    }
+  }
+
+  for (const country of routeCountries) {
+    const places = destinations.filter((entry) => entry.data.countryId === country.id);
+    if (places.length) {
+      const canonical = destinationCountryPath(country);
+      add(canonical, {
+        mode: 'catalog', kind: 'destination', entries: places, canonical,
+        title: `Места: ${country.name}`,
+        description: `Города, регионы и природные места страны: ${country.name}.`,
+        breadcrumbs: [{ label: 'Направления', href: '/napravleniya/' }, { label: country.name, href: canonical }],
+      });
+    }
+    const selectedTours = tours.filter((entry) => entry.data.countries.includes(country.id));
+    if (selectedTours.length) {
+      const canonical = tourCountryPath(country);
+      add(canonical, {
+        mode: 'catalog', kind: 'tour', entries: selectedTours, canonical,
+        title: `Туры: ${country.name}`,
+        description: `Маршруты Ada Tours, в которые входит ${country.name}.`,
+        breadcrumbs: [{ label: 'Туры', href: '/tury/' }, { label: country.name, href: canonical }],
+        hero: '/media/catalog/tury/hero-enhanced-20260930.webp',
+      });
+    }
+  }
+  const multiCountryTours = tours.filter((entry) => mainTourCountries(entry.data).length > 1);
+  if (multiCountryTours.length) add('/multi-country/tour/', {
+    mode: 'catalog', kind: 'tour', entries: multiCountryTours, canonical: '/multi-country/tour/',
+    title: 'Туры по нескольким странам',
+    description: 'Маршруты Ada Tours с путешествием по нескольким странам.',
+    breadcrumbs: [{ label: 'Туры', href: '/tury/' }, { label: 'Несколько стран', href: '/multi-country/tour/' }],
+    hero: '/media/catalog/tury/hero-enhanced-20260930.webp',
+  });
+  for (const { country, entries } of excursionCountries.values()) {
+    const canonical = excursionCountryPath(country);
+    add(canonical, {
+      mode: 'catalog', kind: 'excursion', entries, canonical,
+      title: `Экскурсии: ${country.name}`,
+      description: `Экскурсии Ada Tours по стране: ${country.name}.`,
+      breadcrumbs: [{ label: 'Экскурсии', href: '/ekskursii/' }, { label: country.name, href: canonical }],
+    });
+  }
+  for (const { country, destination, entries } of excursionDestinations.values()) {
+    const canonical = excursionDestinationPath(destination);
+    add(canonical, {
+      mode: 'catalog', kind: 'excursion', entries, canonical,
+      title: `Экскурсии: ${destination.name}`,
+      description: `Экскурсии Ada Tours: ${destination.name}, ${country.name}.`,
+      breadcrumbs: [{ label: 'Экскурсии', href: '/ekskursii/' }, { label: country.name, href: excursionCountryPath(country) }, { label: destination.name, href: canonical }],
+    });
+  }
+  return assertUniqueRoutePaths(routes);
+}
+
+const props = Astro.props;
+const Content = props.mode === 'detail' ? (await render(props.entry)).Content : null;
+---
+
+{props.mode === 'redirect' ? (
+  <RedirectLayout to={props.to} title={props.title} />
+) : props.mode === 'catalog' ? (
+  <EntityCatalogLayout kind={props.kind} entries={props.entries} title={props.title} description={props.description} canonical={props.canonical} breadcrumbs={props.breadcrumbs} hero={props.hero} />
+) : Content && props.kind === 'country' ? (
+  <CountryLayout entry={props.entry}><Content /></CountryLayout>
+) : Content && props.kind === 'destination' ? (
+  <DestinationLayout entry={props.entry}><Content /></DestinationLayout>
+) : Content && props.kind === 'tour' ? (
+  <TourLayout entry={props.entry}><Content /></TourLayout>
+) : Content && props.kind === 'excursion' ? (
+  <ExcursionLayout entry={props.entry}><Content /></ExcursionLayout>
+) : null}

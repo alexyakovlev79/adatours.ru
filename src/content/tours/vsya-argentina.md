@@ -25,6 +25,20 @@ destinations:
   - destination_argentina_el_chalten
   - destination_chile_puerto_natales_torres_del_pajne
   - destination_argentina_ushuajya
+  - destination_argentina_vilya_la_angostura
+  - destination_argentina_vilya_traful
+  - destination_argentina_dolina_uko
+  - destination_argentina_kafayate
+  - destination_argentina_kebrada_de_umauaka
+  - destination_argentina_lednik_perito_moreno
+  - destination_argentina_luhan_de_kujo
+  - destination_argentina_nacionalnyj_park_los_kardones
+  - destination_argentina_nacionalnyj_park_terra_del_fuego
+  - destination_argentina_ostrov_viktoriya_ozero_nauel_uapi
+  - destination_argentina_purmamarka
+  - destination_argentina_salinas_grandes
+  - destination_argentina_tilkara
+  - destination_argentina_gorod_umauaka
 themes:
   - adventure
   - culture

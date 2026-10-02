@@ -12,6 +12,10 @@ countries:
   - country_suriname
 destinations:
   - destination_suriname_paramaribo
+  - destination_suriname_kraka
+  - destination_suriname_niv_amsterdam
+  - destination_suriname_prirodnyj_park_peperpot
+  - destination_suriname_reka_saramakka
 themes: [nature, wildlife]
 audiences: [private]
 format: Частный

@@ -2,6 +2,10 @@ import { getCollection } from 'astro:content';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { extname, join, resolve, sep } from 'node:path';
 import destinationRecords from '../data/catalog/destinations.json';
+import destinationReservations from '../data/catalog/destination-reservations.json';
+import { validateDestinationReservations } from './destination-reservations.mjs';
+import { validateSourceTextPointer, validateProvidedMedia, isNonemptyUtf8 } from './provided-materials.mjs';
+import { canonicalPath, countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
 
 export interface CatalogDestination {
   id: string;
@@ -11,6 +15,7 @@ export interface CatalogDestination {
   countrySlug: string;
   url: string;
   sourceUrl: string | null;
+  aliases?: string[];
 }
 
 // The catalog reserves IDs and URLs before their Destination pages are created.
@@ -36,6 +41,13 @@ async function validateContent(): Promise<void> {
   ]);
   const errors: string[] = [];
   const rows = [...countries, ...destinations, ...tours, ...excursions, ...themes, ...cases, ...people, ...articles];
+  const publishedRouteById = new Map<string, string>();
+  for (const { data } of countries.filter(({ data }) => isPublished(data))) publishedRouteById.set(data.id, countryPath(data));
+  for (const { data } of destinations.filter(({ data }) => isPublished(data))) publishedRouteById.set(data.id, destinationPath(data));
+  for (const { data } of tours.filter(({ data }) => isPublished(data))) publishedRouteById.set(data.id, tourPath(data));
+  for (const { data } of excursions.filter(({ data }) => isPublished(data))) publishedRouteById.set(data.id, excursionPath(data));
+  const publishedPaths = [...publishedRouteById.values(), ...themes.filter(({ data }) => isPublished(data)).map(({ data }) => themePath(data))];
+  if (new Set(publishedPaths).size !== publishedPaths.length) errors.push('Повторяющийся канонический URL опубликованных объектов.');
   const countryById = new Map(countries.filter(({ data }) => isPublished(data)).map((entry) => [key(entry.data.locale, entry.data.id), entry]));
   const excursionById = new Map(excursions.filter(({ data }) => isPublished(data)).map((entry) => [key(entry.data.locale, entry.data.id), entry]));
   const seenIds = new Set<string>();
@@ -79,7 +91,7 @@ async function validateContent(): Promise<void> {
     for (const field of ['id', 'name', 'slug', 'countryId', 'countrySlug', 'url'] as const) {
       if (typeof item[field] !== 'string' || !item[field].trim()) errors.push(`${label}: не заполнено ${field}.`);
     }
-    const expectedUrl = `/napravleniya/${item.countrySlug}/${item.slug}/`;
+    const expectedUrl = `/${item.countrySlug}/place/${item.slug}/`;
     const catalogPath = new URL(item.url || '/', 'https://adatours.ru').pathname.replace(/^\/adatours\.ru(?=\/)/, '');
     if (catalogPath !== expectedUrl) errors.push(`${label}: URL должен соответствовать ${expectedUrl}.`);
     if (catalogIds.has(item.id)) errors.push(`${label}: повторяющийся id в каталоге.`);
@@ -90,20 +102,34 @@ async function validateContent(): Promise<void> {
     if (country && country.data.slug !== item.countrySlug) errors.push(`${label}: countrySlug не совпадает со страницей страны.`);
   }
 
+  errors.push(...validateDestinationReservations(destinationCatalog, destinationReservations, {
+    countries: countries.filter(({ data }) => isPublished(data)).map(({ data }) => ({ id: data.id, slug: data.slug })),
+    publishedDestinationIds: destinations.filter(({ data }) => isPublished(data)).map(({ data }) => data.id),
+  }));
+
   for (const { data: d } of destinations.filter(({ data }) => isPublished(data))) {
     const planned = destinationCatalogById.get(d.id);
     if (!countryById.has(key(d.locale, d.countryId))) errors.push(`${d.id}: страна ${d.countryId} ещё не опубликована.`);
     if (!planned) errors.push(`${d.id}: место отсутствует в src/data/catalog/destinations.json.`);
     else if (planned.countryId !== d.countryId || planned.slug !== d.slug) errors.push(`${d.id}: countryId/slug не совпадает с закреплённым каталогом.`);
+    if (destinationReservations.entries.some((item) => item.id === d.id)) {
+      if (!d.summary.trim() || !d.hero?.src?.trim()) errors.push(`${d.id}: заполненный резерв требует описания и фотографии в самой странице места.`);
+      if (planned && d.name !== planned.name) errors.push(`${d.id}: название заполненного места должно совпадать с резервом.`);
+    }
   }
 
   for (const { data: d } of excursions.filter(({ data }) => isPublished(data))) {
     if (!countryById.has(key(d.locale, d.country))) errors.push(`${d.id}: страна ${d.country} ещё не опубликована.`);
     if (d.destination && !destinationCatalogById.has(d.destination)) errors.push(`${d.id}: неизвестный ID места ${d.destination}; выбери ID из каталога.`);
+    if (new Set(d.relatedDestinations).size !== d.relatedDestinations.length || (d.destination && d.relatedDestinations.includes(d.destination))) errors.push(`${d.id}: дополнительные места не должны повторяться или дублировать основное место.`);
+    for (const id of d.relatedDestinations) {
+      if (!destinationCatalogById.has(id)) errors.push(`${d.id}: неизвестный ID дополнительного места ${id}.`);
+    }
   }
 
   for (const { data: d } of tours.filter(({ data }) => isPublished(data))) {
     if (new Set(d.countries).size !== d.countries.length || new Set(d.destinations).size !== d.destinations.length) errors.push(`${d.id}: повторяющиеся ID в countries/destinations.`);
+    if (d.routeCountries && (new Set(d.routeCountries).size !== d.routeCountries.length || d.routeCountries.some((id) => !d.countries.includes(id)))) errors.push(`${d.id}: routeCountries должны быть уникальным подмножеством countries.`);
     for (const id of d.countries) {
       if (!countryById.has(key(d.locale, id))) errors.push(`${d.id}: страна ${id} ещё не опубликована.`);
     }
@@ -133,11 +159,53 @@ async function validateContent(): Promise<void> {
   // policy on its small local JSON records without querying any external URL.
   const sourceEntryRoot = 'data/source-index/entries';
   const sourceEntryFiles = await readdir(sourceEntryRoot);
+  const sourceIds = new Set<string>();
+  const publishedReservations = new Set(destinationReservations.entries.filter((item) => publishedRouteById.has(item.id)).map((item) => item.id));
+  const providedTextFiles = new Map<string, Promise<boolean>>();
+  const validProvidedTextFile = (path: string) => {
+    if (!providedTextFiles.has(path)) {
+      providedTextFiles.set(path, readFile(path).then(isNonemptyUtf8, () => false));
+    }
+    return providedTextFiles.get(path)!;
+  };
   for (let offset = 0; offset < sourceEntryFiles.length; offset += 64) {
     await Promise.all(sourceEntryFiles.slice(offset, offset + 64).filter((name) => name.endsWith('.json')).map(async (name) => {
       const source = await readFile(join(sourceEntryRoot, name), 'utf8');
       if (cachePath.test(source)) errors.push(`source-index/${name}: URL /image/cache/ запрещён в подготовленных источниках.`);
+      const entry = JSON.parse(source);
+      sourceIds.add(entry.id);
+      const expectedUrl = canonicalPath(entry);
+      if (entry.url !== expectedUrl) errors.push(`source-index/${name}: ожидается канонический URL ${expectedUrl}.`);
+      const publishedUrl = publishedRouteById.get(entry.id);
+      if (publishedUrl && entry.url !== publishedUrl) errors.push(`source-index/${name}: URL не совпадает с опубликованной сущностью ${publishedUrl}.`);
+      const extraDestinations = entry.relatedDestinationIds ?? [];
+      if (!Array.isArray(extraDestinations) || new Set(extraDestinations).size !== extraDestinations.length || extraDestinations.some((id: string) => !destinationCatalogById.has(id) || entry.destinationIds.includes(id))) errors.push(`source-index/${name}: дополнительные места должны быть уникальными ID из каталога и не дублировать основное.`);
+      const publishedExcursion = excursionById.get(key('ru', entry.id));
+      if (publishedExcursion && JSON.stringify(extraDestinations) !== JSON.stringify(publishedExcursion.data.relatedDestinations)) errors.push(`source-index/${name}: дополнительные места не совпадают с опубликованной экскурсией.`);
+      const completingReservation = publishedReservations.has(entry.id);
+      if (completingReservation && entry.text?.selected?.kind !== 'provided_materials') errors.push(`source-index/${name}: заполненному резерву нужен text.selected.kind: provided_materials.`);
+      for (const field of ['selected', 'original']) {
+        const pointer = entry.text?.[field];
+        if (!completingReservation && pointer?.kind !== 'provided_materials' && pointer?.repositoryPath === undefined) continue;
+        const pointerErrors = validateSourceTextPointer(pointer, entry.id);
+        errors.push(...pointerErrors.map((error) => `source-index/${name} text.${field}: ${error}`));
+        if (!pointerErrors.length && pointer.repositoryPath && !await validProvidedTextFile(pointer.repositoryPath)) errors.push(`source-index/${name}: предоставленный текст ${pointer.repositoryPath} отсутствует, пуст или не является UTF-8.`);
+      }
+      if (completingReservation || entry.media?.status === 'provided_originals') {
+        const mediaErrors = validateProvidedMedia(entry.media);
+        errors.push(...mediaErrors.map((error) => `source-index/${name}: ${error}`));
+        for (const image of mediaErrors.length ? [] : entry.media.images) {
+          if (image.url.startsWith('/media/')) {
+            const relative = decodeURIComponent(new URL(image.url, 'https://adatours.ru').pathname);
+            const path = resolve(publicRoot, `.${relative}`);
+            if (!path.startsWith(`${publicRoot}${sep}`) || !await stat(path).then((file) => file.isFile() && file.size > 0, () => false)) errors.push(`source-index/${name}: предоставленная фотография ${image.url} отсутствует или пуста.`);
+          }
+        }
+      }
     }));
+  }
+  for (const reservation of destinationReservations.entries) {
+    if (publishedRouteById.has(reservation.id) && !sourceIds.has(reservation.id)) errors.push(`${reservation.id}: заполненному месту нужна запись предоставленных источников.`);
   }
   const photoRegistry = await readFile('src/data/media/photo-enhancements.json', 'utf8');
   if (cachePath.test(photoRegistry)) errors.push('photo-enhancements.json: используйте канонические raw-идентификаторы исходных фотографий.');

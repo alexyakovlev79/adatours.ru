@@ -12,6 +12,7 @@ countries:
   - country_argentina
 destinations:
   - destination_argentina_buenos_aires
+  - destination_argentina_tigre
 themes:
   - mice
   - culture

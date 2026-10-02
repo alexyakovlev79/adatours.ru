@@ -14,6 +14,7 @@ destinations:
   - destination_brazil_ilha_grande
   - destination_brazil_paraty
   - destination_argentina_puerto_iguasu
+  - destination_brazil_trindadi_parati
 themes:
   - culture
   - nature

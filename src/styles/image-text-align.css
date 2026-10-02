@@ -1,0 +1,13 @@
+/* Opt-in only: an absent object property keeps each surface's existing layout.
+   Components apply these values to photo overlays, never to adjacent copy. */
+[data-image-text-align="left"] {
+  --image-text-align: left;
+  --image-text-inline: start;
+  --image-text-flex: flex-start;
+}
+
+[data-image-text-align="right"] {
+  --image-text-align: right;
+  --image-text-inline: end;
+  --image-text-flex: flex-end;
+}

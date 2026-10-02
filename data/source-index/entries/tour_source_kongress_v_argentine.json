@@ -2,7 +2,7 @@
   "id": "tour_source_kongress_v_argentine",
   "type": "tour",
   "name": "Корпоративный тур а Аргентину: Буэнос-Айрес и Тигре",
-  "url": "/tury/kongress-v-argentine/",
+  "url": "/argentina/tour/kongress-v-argentine/",
   "slug": "kongress-v-argentine",
   "contentPath": "src/content/tours/kongress-v-argentine.md",
   "sourceUrl": "https://brasiltours.ru/kongress-v-argentine",
@@ -10,13 +10,20 @@
     "country_argentina"
   ],
   "destinationIds": [
-    "destination_argentina_buenos_aires"
+    "destination_argentina_buenos_aires",
+    "destination_argentina_tigre"
   ],
   "destinations": [
     {
       "id": "destination_argentina_buenos_aires",
       "name": "Буэнос-Айрес",
-      "url": "/napravleniya/argentina/buenos-ajres/",
+      "url": "/argentina/place/buenos-ajres/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_tigre",
+      "name": "Тигре",
+      "url": "/argentina/place/tigre/",
       "countryId": "country_argentina"
     }
   ],
@@ -126,5 +133,8 @@
       "kind": "production_frontmatter",
       "path": "src/content/tours/kongress-v-argentine.md"
     }
+  ],
+  "legacyUrls": [
+    "/tury/kongress-v-argentine/"
   ]
 }

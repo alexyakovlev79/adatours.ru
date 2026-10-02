@@ -31,6 +31,8 @@ notIncluded: []
 notes: []
 sourceSnapshot: page_texts_original/neveroyatnaya-argentina__b36cf7e0.md
 updatedAt: 2026-10-02
+relatedDestinations:
+  - destination_argentina_ozero_argentino
 ---
 
 Полнодневная навигация начинается в порту Пунта-Бандера примерно в 47 км от Эль-Калафате. Судно идет по северной части озера Аргентино через Бока-дель-Дьябло к каналу Упсала среди айсбергов, отколовшихся от ледника.

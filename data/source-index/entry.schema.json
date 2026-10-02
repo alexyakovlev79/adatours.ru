@@ -12,7 +12,10 @@
     "contentPath": {"type": "string", "pattern": "^src/content/(countries|destinations|tours|excursions)/.+\\.md$"},
     "sourceUrl": {"type": ["string", "null"]},
     "countryIds": {"type": "array", "items": {"type": "string", "pattern": "^country_"}, "uniqueItems": true},
+    "routeCountryIds": {"type": "array", "items": {"type": "string", "pattern": "^country_"}, "uniqueItems": true, "minItems": 1},
+    "legacyUrls": {"type": "array", "items": {"type": "string", "pattern": "^/.*?/$"}, "uniqueItems": true},
     "destinationIds": {"type": "array", "items": {"type": "string", "pattern": "^destination_"}, "uniqueItems": true},
+    "relatedDestinationIds": {"type": "array", "items": {"type": "string", "pattern": "^destination_"}, "uniqueItems": true},
     "destinations": {"type": "array", "items": {"type": "object", "required": ["id", "name", "url", "countryId"]}},
     "destinationType": {"type": "string"},
     "destinationName": {"type": ["string", "null"]},
@@ -21,8 +24,8 @@
       "type": "object",
       "required": ["selected", "original", "verification"],
       "properties": {
-        "selected": {"$ref": "#/$defs/drivePointer"},
-        "original": {"$ref": "#/$defs/drivePointer"},
+        "selected": {"$ref": "#/$defs/textPointer"},
+        "original": {"$ref": "#/$defs/textPointer"},
         "verification": {"type": "object"},
         "sourceScope": {"type": "string"},
         "provenance": {"type": "object"}
@@ -32,12 +35,20 @@
       "type": "object",
       "required": ["images", "status", "sourceUrl"],
       "properties": {
-        "images": {"type": "array", "items": {"$ref": "#/$defs/rawImage"}},
-        "status": {"enum": ["ready", "existing_enhanced_preserved"]},
+        "images": {"type": "array", "items": {"$ref": "#/$defs/image"}},
+        "status": {"enum": ["ready", "existing_enhanced_preserved", "provided_originals"]},
         "sourceUrl": {"type": ["string", "null"]},
         "current": {"type": "array", "items": {"$ref": "#/$defs/image"}},
         "provenance": {"type": "object"}
-      }
+      },
+      "allOf": [{
+        "if": {"properties": {"status": {"const": "provided_originals"}}},
+        "then": {"properties": {
+          "images": {"minItems": 1, "items": {"$ref": "#/$defs/providedImage"}, "contains": {"type": "object", "required": ["role"], "properties": {"role": {"const": "hero"}}}},
+          "provenance": {"type": "object", "required": ["kind"], "properties": {"kind": {"const": "user_provided"}}}
+        }, "required": ["provenance"]},
+        "else": {"properties": {"images": {"items": {"$ref": "#/$defs/rawImage"}}}}
+      }]
     },
     "readiness": {
       "type": "object",
@@ -45,7 +56,7 @@
       "properties": {
         "sources": {"const": "ready"},
         "text": {"type": "string"},
-        "media": {"enum": ["ready", "existing_enhanced_preserved"]},
+        "media": {"enum": ["ready", "existing_enhanced_preserved", "provided_originals"]},
         "geography": {"enum": ["fixed", "no_destination_asserted", "resolve_when_creating_tour"]}
       }
     },
@@ -60,6 +71,38 @@
     }
   },
   "$defs": {
+    "textPointer": {
+      "oneOf": [
+        {"$ref": "#/$defs/drivePointer"},
+        {"$ref": "#/$defs/providedDrivePointer"},
+        {"$ref": "#/$defs/providedRepositoryPointer"}
+      ]
+    },
+    "providedDrivePointer": {
+      "type": "object",
+      "required": ["driveId", "url", "name", "kind", "mimeType"],
+      "not": {"required": ["repositoryPath"]},
+      "properties": {
+        "kind": {"const": "provided_materials"},
+        "driveId": {"type": "string", "pattern": "^[A-Za-z0-9_-]+$"},
+        "url": {"type": "string", "pattern": "^https://(?:drive\\.google\\.com/file/d/[A-Za-z0-9_-]+(?:/(?:view|edit|preview))?|docs\\.google\\.com/(?:document|spreadsheets|presentation|drawings)/d/[A-Za-z0-9_-]+(?:/(?:view|edit|preview|export))?)/?(?:[?#].*)?$"},
+        "name": {"type": "string", "pattern": "\\S"},
+        "mimeType": {"type": "string", "pattern": "\\S", "not": {"const": "application/vnd.google-apps.folder"}},
+        "folderId": {"type": "string"},
+        "folderPath": {"type": "string"}
+      }
+    },
+    "providedRepositoryPointer": {
+      "type": "object",
+      "required": ["repositoryPath", "name", "kind", "mimeType"],
+      "not": {"anyOf": [{"required": ["driveId"]}, {"required": ["url"]}]},
+      "properties": {
+        "kind": {"const": "provided_materials"},
+        "repositoryPath": {"type": "string", "pattern": "^data/source-index/materials/(country|destination|tour|excursion)_[a-z0-9_]+\\.md$"},
+        "name": {"type": "string", "pattern": "\\S"},
+        "mimeType": {"const": "text/markdown"}
+      }
+    },
     "drivePointer": {
       "type": "object",
       "required": ["driveId", "url", "name", "kind", "folderId", "folderPath", "mimeType"],
@@ -89,6 +132,12 @@
       "allOf": [
         {"$ref": "#/$defs/image"},
         {"properties": {"url": {"type": "string", "pattern": "^https://brasiltours\\.ru/image/(?!cache/)"}}}
+      ]
+    },
+    "providedImage": {
+      "allOf": [
+        {"$ref": "#/$defs/image"},
+        {"properties": {"url": {"type": "string", "pattern": "^(https://|/media/)", "not": {"pattern": "/image/cache/|^https://(?:drive|docs)\\.google\\.com(?:[:/]|$)"}}}}
       ]
     }
   }

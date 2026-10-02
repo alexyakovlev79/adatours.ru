@@ -15,6 +15,9 @@ destinations:
   - destination_brazil_iguacu
   - destination_brazil_belo_horizonte
   - destination_argentina_puerto_iguasu
+  - destination_brazil_kongonyas
+  - destination_brazil_mariana
+  - destination_brazil_petropolis
 themes:
   - culture
   - history

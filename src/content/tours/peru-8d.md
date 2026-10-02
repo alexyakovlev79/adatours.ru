@@ -13,6 +13,10 @@ destinations:
   - destination_peru_puno_i_o_titikaka
   - destination_peru_parakas
   - destination_peru_linii_naska_i_ostrova_balestas
+  - destination_peru_olyantajtambo
+  - destination_peru_svyaschennaya_dolina_inkov
+  - destination_peru_urubamba
+  - destination_peru_chinchero
 themes:
   - culture
   - nature

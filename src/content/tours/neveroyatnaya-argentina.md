@@ -17,6 +17,12 @@ destinations:
   - destination_brazil_iguacu
   - destination_argentina_ushuajya
   - destination_argentina_puerto_iguasu
+  - destination_argentina_laguna_esmeralda
+  - destination_argentina_lednik_perito_moreno
+  - destination_argentina_nacionalnyj_park_los_glasyares
+  - destination_argentina_nacionalnyj_park_terra_del_fuego
+  - destination_argentina_ozero_argentino
+  - destination_argentina_ozero_eskondido_ognennaya_zemlya
 themes:
   - adventure
   - nature

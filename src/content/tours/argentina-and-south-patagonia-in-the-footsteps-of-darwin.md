@@ -12,6 +12,8 @@ countries:
   - country_argentina
 destinations:
   - destination_argentina_mendoza
+  - destination_argentina_akonkagua
+  - destination_argentina_puente_de_inka
 themes:
   - adventure
   - trekking

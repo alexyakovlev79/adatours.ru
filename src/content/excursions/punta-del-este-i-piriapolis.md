@@ -47,6 +47,9 @@ notes:
 sourceUrl: https://brasiltours.ru/punta-del-este-i-piriapolis
 sourceSnapshot: page_texts_newstep/Excursions/punta-del-este-i-piriapolis__4a5b29b8.md
 updatedAt: 2026-10-01
+relatedDestinations:
+  - destination_uruguay_piriapolis
+  - destination_uruguay_punta_balena
 ---
 
 Экскурсия начинается в Монтевидео и идет вдоль побережья к Пириаполису, одному из старейших курортов Уругвая. Вы проедете по Рамбла Костанера, увидите исторический Gran Hotel Argentino и подниметесь на холм Сан-Антонио, откуда открывается панорама города и побережья.

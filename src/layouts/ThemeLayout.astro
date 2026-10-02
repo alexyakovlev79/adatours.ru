@@ -5,6 +5,7 @@ import Hero from '../components/editorial/Hero.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
+import { countryPath, themePath } from '../lib/routes';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -22,12 +23,15 @@ const featuredCountries = d.featuredCountries
   title={`${d.name} по Бразилии и Латинской Америке`}
   description={d.summary}
   image={d.hero?.src}
+  canonical={themePath(d)}
+  breadcrumbs={[{ label: 'По интересам', href: '/po-interesam/' }, { label: d.name, href: themePath(d) }]}
 >
   <Hero
     eyebrow="По интересам"
     title={d.name}
     intro={d.summary}
     image={d.hero?.src}
+    imageTextAlign={d.imageTextAlign}
     ctaLabel="Собрать маршрут"
   />
 
@@ -45,7 +49,8 @@ const featuredCountries = d.featuredCountries
       title={country.data.name}
       text={country.data.summary}
       image={country.data.hero?.src}
-      href={`/strany/${country.data.slug}/`}
+      imageTextAlign={country.data.imageTextAlign}
+      href={countryPath(country.data)}
       align={index % 2 === 1 ? 'right' : 'left'}
     />
   ))}

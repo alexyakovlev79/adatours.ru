@@ -1,10 +1,15 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
+
+const [brazil] = await getCollection('countries', ({ data }) =>
+  data.id === 'country_brazil' && data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+);
 ---
 
 <BaseLayout
@@ -28,8 +33,9 @@ import LeadForm from '../components/forms/LeadForm.astro';
     eyebrow="Направление №1"
     title="Бразилия"
     text="Рио, Игуасу, Амазония, Пантанал и побережье в десятках сочетаний."
-    href="/strany/braziliya/"
+    href="/braziliya/"
     image="/media/home/lencois-enhanced-20260930.webp"
+    imageTextAlign={brazil?.data.imageTextAlign}
   />
 
   <StoryPair

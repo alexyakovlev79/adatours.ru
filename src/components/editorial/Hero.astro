@@ -8,6 +8,7 @@ interface Props {
   title: string;
   intro?: string;
   image?: string;
+  imageTextAlign?: 'left' | 'right';
   ctaHref?: string;
   ctaLabel?: string;
   compact?: boolean;
@@ -21,6 +22,7 @@ const {
   title,
   intro,
   image,
+  imageTextAlign,
   ctaHref = '/contacts/',
   ctaLabel = 'Оставить заявку',
   compact = false,
@@ -35,6 +37,7 @@ const resolvedImage = image ? withBase(image) : undefined;
 
 <section
   class:list={['hero', { 'hero--compact': compact, 'hero--image': image }]}
+  data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
 >
@@ -162,5 +165,24 @@ const resolvedImage = image ? withBase(image) : undefined;
       grid-template-columns: 1fr;
       gap: 28px;
     }
+  }
+
+  .hero[data-image-text-align] .hero__content {
+    align-items: var(--image-text-flex);
+    text-align: var(--image-text-align);
+  }
+
+  .hero[data-image-text-align] .hero__head {
+    width: min(100%, 1180px);
+    flex-wrap: wrap;
+    align-items: var(--image-text-flex);
+    justify-content: var(--image-text-flex);
+  }
+
+  .hero[data-image-text-align] .hero__bottom {
+    width: min(100%, 650px);
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: var(--image-text-inline);
+    gap: 28px;
   }
 </style>

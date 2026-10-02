@@ -10,6 +10,8 @@ import DestinationBand from '../components/editorial/DestinationBand.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import { withBase } from '../lib/paths';
+import { countryPath, destinationBreadcrumbs as buildDestinationBreadcrumbs, destinationPath, excursionPath, tourPath } from '../lib/routes';
+import { excursionHasDestination } from '../lib/destination-links.mjs';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -23,7 +25,7 @@ const [tourEntries, countryEntries, excursionEntries, destinationEntries] = awai
   getCollection('excursions', ({ data }) =>
     data.locale === 'ru' &&
     !['draft', 'archived'].includes(data.status) &&
-    data.destination === d.id
+    excursionHasDestination(data, d.id)
   ),
   getCollection('destinations', ({ data }) =>
     data.locale === 'ru' &&
@@ -70,22 +72,12 @@ const countryById = new Map(countryEntries.map((item) => [item.data.id, item]));
 const country = countryById.get(d.countryId);
 const countryName = country?.data.name ?? '';
 
-const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://adatours.ru').toString();
+const pageUrl = new URL(withBase(destinationPath(d)), Astro.site ?? 'https://adatours.ru').toString();
 const countryUrl = country
-  ? new URL(withBase(`/strany/${country.data.slug}/`), Astro.site ?? 'https://adatours.ru').toString()
+  ? new URL(withBase(countryPath(country.data)), Astro.site ?? 'https://adatours.ru').toString()
   : undefined;
 
-const destinationBreadcrumbs = [
-  { label: 'Главная', href: '/' },
-  { label: 'Направления', href: '/napravleniya/' },
-  ...(country ? [{ label: country.data.name, href: `/strany/${country.data.slug}/` }] : []),
-  {
-    label: d.name,
-    href: country
-      ? `/napravleniya/${country.data.slug}/${d.slug}/`
-      : `/napravleniya/${d.slug}/`,
-  },
-];
+const destinationBreadcrumbs = buildDestinationBreadcrumbs(d);
 
 const destinationSchema = {
   '@type': 'TouristDestination',
@@ -109,6 +101,7 @@ const destinationSchema = {
   title={`${d.name}: туры и экскурсии`}
   description={d.summary}
   image={d.hero?.src}
+  canonical={destinationPath(d)}
   pageSchema={destinationSchema}
   breadcrumbs={destinationBreadcrumbs}
 >
@@ -129,6 +122,7 @@ const destinationSchema = {
     title={d.name}
     intro={d.summary}
     image={d.hero?.src}
+    imageTextAlign={d.imageTextAlign}
     mediaStatus={d.hero?.status}
     replacementReason={d.hero?.replacementReason}
     ctaLabel="Собрать поездку"
@@ -159,6 +153,7 @@ const destinationSchema = {
   {visibleGallery.length > 0 && (
     <MediaGallery
       items={visibleGallery}
+      imageTextAlign={d.imageTextAlign}
       eyebrow="Фотографии"
       title={`${d.name} в фотографиях`}
     />
@@ -173,9 +168,10 @@ const destinationSchema = {
           title={tour.data.title}
           text={tour.data.lead}
           image={tour.data.hero?.src}
+          imageTextAlign={tour.data.imageTextAlign}
           mediaStatus={tour.data.hero?.status}
           replacementReason={tour.data.hero?.replacementReason}
-          href={`/tury/${tour.data.slug}/`}
+          href={tourPath(tour.data)}
           align={index % 2 === 1 ? 'right' : 'left'}
         />
       ))}
@@ -191,9 +187,10 @@ const destinationSchema = {
           title={excursion.data.title}
           text={excursion.data.lead}
           image={excursion.data.hero?.src}
+          imageTextAlign={excursion.data.imageTextAlign}
           mediaStatus={excursion.data.hero?.status}
           replacementReason={excursion.data.hero?.replacementReason}
-          href={`/ekskursii/${excursion.data.slug}/`}
+          href={excursionPath(excursion.data)}
           align={index % 2 === 1 ? 'right' : 'left'}
         />
       ))}
@@ -207,7 +204,7 @@ const destinationSchema = {
         const relatedCountry = countryById.get(item.data.countryId);
         const relatedCountryName = relatedCountry?.data.name ?? '';
         const relatedHref = relatedCountry
-          ? `/napravleniya/${relatedCountry.data.slug}/${item.data.slug}/`
+          ? destinationPath(item.data)
           : '/napravleniya/';
 
         return (
@@ -216,6 +213,7 @@ const destinationSchema = {
             title={item.data.name}
             text={item.data.summary}
             image={item.data.hero?.src}
+            imageTextAlign={item.data.imageTextAlign}
             mediaStatus={item.data.hero?.status}
             replacementReason={item.data.hero?.replacementReason}
             href={relatedHref}

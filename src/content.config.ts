@@ -4,6 +4,7 @@ import { z } from 'astro/zod';
 
 const locale = z.enum(['ru', 'en', 'cn']);
 const status = z.enum(['draft', 'review', 'approved', 'published', 'archived']);
+const imageTextAlign = z.enum(['left', 'right']).optional();
 
 const mediaObject = z.object({
   src: z.string(),
@@ -66,6 +67,7 @@ const countries = defineCollection({
     ...common,
     name: z.string(),
     summary: z.string(),
+    imageTextAlign,
     hero: media,
     gallery: z.array(mediaObject).default([]),
     regions: z.array(z.string()).default([]),
@@ -96,6 +98,7 @@ const destinations = defineCollection({
       'route_cluster',
     ]),
     summary: z.string(),
+    imageTextAlign,
     hero: media,
     gallery: z.array(mediaObject).default([]),
     themes: z.array(z.string()).default([]),
@@ -116,6 +119,8 @@ const tours = defineCollection({
     ...common,
     title: z.string(),
     countries: z.array(z.string()).min(1),
+    routeCountries: z.array(z.string()).min(1).optional(),
+    imageTextAlign,
     destinations: z.array(z.string()).default([]),
     themes: z.array(z.string()).default([]),
     audiences: z.array(z.string()).default([]),
@@ -182,8 +187,10 @@ const excursions = defineCollection({
     ...common,
     title: z.string(),
     country: z.string(),
+    imageTextAlign,
     destination: z.string().optional(),
     destinationName: z.string().optional(), // Fallback label until the Destination entity exists.
+    relatedDestinations: z.array(z.string()).default([]), // Additional visited places; the primary destination retains the URL.
     themes: z.array(z.string()).default([]),
     duration: z.string().optional(),
     format: z.string().optional(),
@@ -207,6 +214,7 @@ const themes = defineCollection({
     ...common,
     name: z.string(),
     summary: z.string(),
+    imageTextAlign,
     hero: media,
     featuredCountries: z.array(z.string()).default([]),
     featuredDestinations: z.array(z.string()).default([]),

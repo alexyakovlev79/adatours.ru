@@ -9,6 +9,7 @@ interface Props {
   href: string;
   image?: string;
   align?: 'left' | 'right';
+  imageTextAlign?: 'left' | 'right';
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
   descriptionBelow?: boolean;
@@ -21,6 +22,7 @@ const {
   href,
   image,
   align = 'left',
+  imageTextAlign,
   mediaStatus,
   replacementReason,
   descriptionBelow = false,
@@ -29,12 +31,14 @@ const {
 const resolvedImage = image ? withBase(image) : undefined;
 const style = resolvedImage ? `--band-image: url("${resolvedImage}")` : undefined;
 const resolvedHref = withBase(href);
+const resolvedAlign = imageTextAlign ?? align;
 ---
 
 {descriptionBelow ? (
   <a
-    class:list={['band-card', `band-card--${align}`]}
+    class:list={['band-card', `band-card--${resolvedAlign}`]}
     href={resolvedHref}
+    data-image-text-align={imageTextAlign}
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
     data-replacement-reason={replacementReason}
   >
@@ -48,7 +52,8 @@ const resolvedHref = withBase(href);
     <span class="band-card__link">Смотреть <span aria-hidden="true">↗</span></span>
   </a>
 ) : (
-  <a class:list={['band', `band--${align}`, { 'band--image': image }]} href={resolvedHref} style={style}
+  <a class:list={['band', `band--${resolvedAlign}`, { 'band--image': image }]} href={resolvedHref} style={style}
+    data-image-text-align={imageTextAlign}
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
     data-replacement-reason={replacementReason}
   >
@@ -313,6 +318,20 @@ const resolvedHref = withBase(href);
     .band-card--right .band-card__link {
       justify-self: start;
       text-align: left;
+    }
+  }
+
+  .band-card[data-image-text-align] .band-card__eyebrow,
+  .band-card[data-image-text-align] .band-card__title,
+  .band-card[data-image-text-align] .band-card__link {
+    justify-self: var(--image-text-inline);
+    text-align: var(--image-text-align);
+  }
+
+  @media (min-width: 721px) {
+    .band-card[data-image-text-align] .band-card__description {
+      justify-self: var(--image-text-inline);
+      text-align: var(--image-text-align);
     }
   }
 </style>

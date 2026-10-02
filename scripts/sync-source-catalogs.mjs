@@ -6,6 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { canonicalPath } from '../src/lib/routes.ts';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourceRoot = path.join(repoRoot, 'data', 'source-index');
@@ -24,6 +25,8 @@ records.sort((a, b) => (a.sheet?.row ?? Number.MAX_SAFE_INTEGER) - (b.sheet?.row
 const seenIds = new Set();
 const seenUrls = new Set();
 for (const record of records) {
+  const canonical = canonicalPath(record);
+  if (record.url !== canonical) throw new Error(`Non-canonical source URL for ${record.id}: expected ${canonical}. Update the exact entry first.`);
   if (seenIds.has(record.id) || seenUrls.has(record.url)) throw new Error(`Duplicate entity ID or site URL: ${record.id}`);
   seenIds.add(record.id);
   seenUrls.add(record.url);
@@ -32,7 +35,9 @@ for (const record of records) {
 const entries = records.map(record => {
   const compact = Object.fromEntries(compactKeys.map(key => [key, record[key]]));
   compact.entryPath = `data/source-index/entries/${record.id}.json`;
-  if (record.aliases?.length) compact.aliases = record.aliases;
+  for (const key of ['aliases', 'routeCountryIds', 'relatedDestinationIds', 'legacyUrls']) {
+    if (record[key]?.length) compact[key] = record[key];
+  }
   return compact;
 });
 const indexPath = path.join(sourceRoot, 'index.json');

@@ -52,6 +52,10 @@ notes:
 sourceUrl: https://brasiltours.ru/ostrov-santa-krus
 sourceSnapshot: page_texts_newstep/Excursions/ostrov-santa-krus__a0c85550.md
 updatedAt: 2026-10-01
+relatedDestinations:
+  - destination_ecuador_ostrov_baltra
+  - destination_ecuador_ostrov_santa_krus_galapagosy
+  - destination_ecuador_puerto_ajora
 ---
 
 Из аэропорта на острове Балтра вы отправитесь к каналу Итабака, который отделяет Балтру от Санта-Круса. Переправа на моторной лодке занимает около 5 минут, после чего маршрут продолжается на индивидуальном транспорте через остров в сторону Пуэрто-Айоры.

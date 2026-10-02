@@ -1,0 +1,50 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Hero from '../components/editorial/Hero.astro';
+import DestinationBand from '../components/editorial/DestinationBand.astro';
+import { destinationPath, excursionPath, tourPath, type BreadcrumbItem } from '../lib/routes';
+
+interface Props {
+  kind: 'tour' | 'excursion' | 'destination';
+  entries: Array<CollectionEntry<'tours'> | CollectionEntry<'excursions'> | CollectionEntry<'destinations'>>;
+  title: string;
+  description: string;
+  canonical: string;
+  breadcrumbs: BreadcrumbItem[];
+  hero?: string;
+}
+
+const { kind, entries, title, description, canonical, breadcrumbs, hero } = Astro.props;
+const eyebrow = kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : 'Направления';
+const cards = entries.map((entry) => {
+  if (kind === 'tour') {
+    const d = (entry as CollectionEntry<'tours'>).data;
+    return { data: d, title: d.title, text: d.lead, href: tourPath(d), meta: [d.durationDays ? `${d.durationDays} дней` : '', d.format].filter(Boolean).join(' · ') };
+  }
+  if (kind === 'excursion') {
+    const d = (entry as CollectionEntry<'excursions'>).data;
+    return { data: d, title: d.title, text: d.lead, href: excursionPath(d), meta: [d.duration, d.format].filter(Boolean).join(' · ') };
+  }
+  const d = (entry as CollectionEntry<'destinations'>).data;
+  return { data: d, title: d.name, text: d.summary, href: destinationPath(d), meta: '' };
+});
+---
+
+<BaseLayout title={title} description={description} canonical={canonical} breadcrumbs={breadcrumbs} image={hero}>
+  <Hero eyebrow={eyebrow} title={title} intro={description} image={hero} compact />
+  {cards.map((card, index) => (
+    <DestinationBand
+      eyebrow={card.meta}
+      title={card.title}
+      text={card.text}
+      image={card.data.hero?.src}
+      imageTextAlign={card.data.imageTextAlign}
+      mediaStatus={card.data.hero?.status}
+      replacementReason={card.data.hero?.replacementReason}
+      href={card.href}
+      align={index % 2 === 1 ? 'right' : 'left'}
+      descriptionBelow={kind !== 'tour'}
+    />
+  ))}
+</BaseLayout>

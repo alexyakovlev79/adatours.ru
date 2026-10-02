@@ -52,6 +52,8 @@ notes:
 sourceUrl: https://brasiltours.ru/kanon-kolka-i-polet-kondora
 sourceSnapshot: page_texts_newstep/Excursions/kanon-kolka-i-polet-kondora__3b226618.md
 updatedAt: 2026-10-01
+relatedDestinations:
+  - destination_peru_kanon_kolka
 ---
 
 Рано утром вы отправитесь из Арекипы в долину Колка. Дорога проходит по предгорьям вулкана Чачани, откуда открываются виды на Мисти и Пиччу-Пиччу, а затем через заповедник викуний Пампа-Каньяуас.

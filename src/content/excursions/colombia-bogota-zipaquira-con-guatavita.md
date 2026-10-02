@@ -49,6 +49,8 @@ notes:
 sourceUrl: https://brasiltours.ru/colombia-bogota-zipaquira-con-guatavita
 sourceSnapshot: page_texts_newstep/Excursions/colombia-bogota-zipaquira-con-guatavita__64010891.md
 updatedAt: 2026-10-02
+relatedDestinations:
+  - destination_colombia_sipakira
 ---
 
 Главная точка этой экскурсии — Соляной собор Сипакиры, устроенный внутри соляной шахты на глубине около 180 метров. Вторая часть маршрута связана с Гуатавитой — местом, которое в исходной программе связано с легендой об Эльдорадо.

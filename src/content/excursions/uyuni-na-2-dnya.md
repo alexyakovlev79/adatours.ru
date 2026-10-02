@@ -59,6 +59,9 @@ notes:
 sourceUrl: https://brasiltours.ru/uyuni-na-2-dnya
 sourceSnapshot: page_texts_newstep/Excursions/uyuni-na-2-dnya__07be428b.md
 updatedAt: 2026-10-02
+relatedDestinations:
+  - destination_bolivia_laguna_verde
+  - destination_bolivia_laguna_kolorada
 ---
 
 Это двухдневный маршрут на джипе 4x4 по высокогорным ландшафтам юго-западной Боливии. В программе — цветные лагуны, вулканы, термальные источники, активные гейзеры и финал на Салар де Уюни, где в сухой сезон открывается белая соляная равнина, а в сезон дождей поверхность превращается в огромное зеркало.

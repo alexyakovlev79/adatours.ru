@@ -12,13 +12,16 @@ import EditorialStatement from '../components/editorial/EditorialStatement.astro
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import { withBase } from '../lib/paths';
 import { destinationCatalogById } from '../lib/content-validation';
+import { destinationPath, excursionBreadcrumbs as buildExcursionBreadcrumbs, excursionGeography, excursionPath, tourPath } from '../lib/routes';
+import { excursionDestinationIds } from '../lib/destination-links.mjs';
 
 const { entry } = Astro.props;
 const d = entry.data;
+const linkedDestinationIds = excursionDestinationIds(d);
 
 const [countryEntries, destinationEntries, tourEntries, excursionEntries] = await Promise.all([
   getCollection('countries', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
-  getCollection('destinations', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status) && data.id === d.destination),
+  getCollection('destinations', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status) && linkedDestinationIds.includes(data.id)),
   getCollection('tours', ({ data }) =>
     data.locale === 'ru' &&
     !['draft', 'archived'].includes(data.status)
@@ -29,11 +32,11 @@ const [countryEntries, destinationEntries, tourEntries, excursionEntries] = awai
   ),
 ]);
 
-const country = countryEntries.find((item) => item.data.id === d.country);
-const destination = destinationEntries[0];
-const destinationCountry = destination
-  ? countryEntries.find((item) => item.data.id === destination.data.countryId)
-  : undefined;
+const geography = excursionGeography(d);
+const country = countryEntries.find((item) => item.data.id === geography.country.id);
+const destinationById = new Map(destinationEntries.map((item) => [item.data.id, item]));
+const destination = d.destination ? destinationById.get(d.destination) : undefined;
+const visibleDestinations = linkedDestinationIds.map((id) => destinationById.get(id)).filter((item) => item !== undefined);
 
 const getTourExcursionIds = (tour) => {
   const ids = new Set<string>();
@@ -82,36 +85,7 @@ const destinationName =
   (d.destination ? destinationCatalogById.get(d.destination)?.name : undefined) ??
   d.destinationName;
 
-const destinationHref = destinationCountry && destination
-  ? `/napravleniya/${destinationCountry.data.slug}/${destination.data.slug}/`
-  : undefined;
-
-const countryBreadcrumb = country
-  ? {
-      label: country.data.name,
-      href: `/strany/${country.data.slug}/`,
-    }
-  : undefined;
-
-const destinationBreadcrumb = destination && destinationHref
-  ? {
-      label: destination.data.name,
-      href: destinationHref,
-    }
-  : undefined;
-
-const excursionBreadcrumbs = [
-  ...(countryBreadcrumb ? [countryBreadcrumb] : []),
-  ...(destinationBreadcrumb ? [destinationBreadcrumb] : []),
-  {
-    label: 'Экскурсии',
-    href: '/ekskursii/',
-  },
-  {
-    label: d.title,
-    href: `/ekskursii/${d.slug}/`,
-  },
-];
+const excursionBreadcrumbs = buildExcursionBreadcrumbs(d);
 
 const roundedPrice = typeof d.priceFrom === 'number' ? Math.round(d.priceFrom) : null;
 const currencyPrefix = d.currency === 'USD' ? String.fromCharCode(36) : '';
@@ -125,7 +99,7 @@ const stats = [
   d.format ? { value: d.format, label: 'формат' } : null,
 ].filter(Boolean);
 
-const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://adatours.ru').toString();
+const pageUrl = new URL(withBase(excursionPath(d)), Astro.site ?? 'https://adatours.ru').toString();
 const excursionSchema = {
   '@type': 'TouristTrip',
   '@id': `${pageUrl}#excursion`,
@@ -158,6 +132,7 @@ const excursionSchema = {
   title={d.title}
   description={d.lead}
   image={d.hero?.src}
+  canonical={excursionPath(d)}
   pageSchema={excursionSchema}
   breadcrumbs={excursionBreadcrumbs}
 >
@@ -178,6 +153,7 @@ const excursionSchema = {
     title={d.title}
     intro={d.lead}
     image={d.hero?.src}
+    imageTextAlign={d.imageTextAlign}
     mediaStatus={d.hero?.status}
     replacementReason={d.hero?.replacementReason}
     meta={[d.duration ?? '', d.route.join(' · ')].filter(Boolean).join(' · ')}
@@ -192,22 +168,24 @@ const excursionSchema = {
     </div>
   </section>
 
-  {destination && destinationHref && (
+  {visibleDestinations.map((place) => (
     <DestinationBand
       eyebrow="Место"
-      title={destination.data.name}
-      text={destination.data.summary}
-      image={destination.data.hero?.src}
-      mediaStatus={destination.data.hero?.status}
-      replacementReason={destination.data.hero?.replacementReason}
-      href={destinationHref}
+      title={place.data.name}
+      text={place.data.summary}
+      image={place.data.hero?.src}
+      imageTextAlign={place.data.imageTextAlign}
+      mediaStatus={place.data.hero?.status}
+      replacementReason={place.data.hero?.replacementReason}
+      href={destinationPath(place.data)}
       descriptionBelow={true}
     />
-  )}
+  ))}
 
   {d.gallery.length > 0 && (
     <MediaGallery
       items={d.gallery}
+      imageTextAlign={d.imageTextAlign}
       eyebrow="Фотографии"
       title="Экскурсия в кадрах"
       layout="orientation"
@@ -225,7 +203,7 @@ const excursionSchema = {
       <div class="container prose">
         <h2>Туры с этой экскурсией</h2>
         <ul>
-          {relatedTours.map((tour) => <li><a href={withBase(`/tury/${tour.data.slug}/`)}>{tour.data.title}</a></li>)}
+          {relatedTours.map((tour) => <li><a href={withBase(tourPath(tour.data))}>{tour.data.title}</a></li>)}
         </ul>
       </div>
     </section>
@@ -240,9 +218,10 @@ const excursionSchema = {
           title={item.data.title}
           text={item.data.lead}
           image={item.data.hero?.src}
+          imageTextAlign={item.data.imageTextAlign}
           mediaStatus={item.data.hero?.status}
           replacementReason={item.data.hero?.replacementReason}
-          href={`/ekskursii/${item.data.slug}/`}
+          href={excursionPath(item.data)}
           align={index % 2 === 1 ? 'right' : 'left'}
         />
       ))}

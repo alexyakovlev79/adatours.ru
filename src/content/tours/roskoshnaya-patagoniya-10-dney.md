@@ -17,6 +17,10 @@ destinations:
   - destination_chile_puerto_natales_torres_del_pajne
   - destination_chile_punta_arenas
   - destination_chile_santyago_de_chili
+  - destination_argentina_lednik_perito_moreno
+  - destination_argentina_nacionalnyj_park_los_glasyares
+  - destination_chile_dolina_majpo
+  - destination_chile_ostrov_marta_magellanov_proliv
 themes:
   - luxury
   - multi-country

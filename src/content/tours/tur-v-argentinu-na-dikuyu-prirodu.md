@@ -14,6 +14,10 @@ destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_puerto_madrin
   - destination_argentina_ibera
+  - destination_argentina_korrientes
+  - destination_argentina_poluostrov_valdes
+  - destination_argentina_puerto_piramides
+  - destination_argentina_treleu
 themes:
   - nature
   - wildlife

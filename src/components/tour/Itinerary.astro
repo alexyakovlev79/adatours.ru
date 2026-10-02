@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { withBase } from '../../lib/paths';
+import { excursionPath } from '../../lib/routes';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface MediaItem {
@@ -84,10 +85,11 @@ const resolveExcursion = (id?: string) => {
   return {
     id: entry.data.id,
     title: entry.data.title,
-    href: `/ekskursii/${entry.data.slug}/`,
+    href: excursionPath(entry.data),
     lead: entry.data.lead,
     bodyHtml: entry.rendered?.html ?? '',
     hero: entry.data.hero,
+    imageTextAlign: entry.data.imageTextAlign,
   };
 };
 
@@ -135,6 +137,7 @@ const resolvedDays = days.map((day) => {
         <article
           class:list={['day-card', { 'day-card--image': visibleImage }]}
           data-excursion-ref={day.excursion?.id}
+          data-image-text-align={day.excursion?.imageTextAlign}
         >
           <details class="day">
             <summary>
@@ -183,6 +186,7 @@ const resolvedDays = days.map((day) => {
                       <section
                         class="day__embedded-excursion"
                         data-excursion-ref={excursion.id}
+                        data-image-text-align={excursion.imageTextAlign}
                       >
                         <h3><a class="day__excursion-link" href={withBase(excursion.href)}>{excursion.title}</a></h3>
                         {excursion.bodyHtml

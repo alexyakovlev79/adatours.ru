@@ -29,6 +29,8 @@ notes:
   - "Экскурсия оплачивается отдельно."
 sourceSnapshot: page_texts_original/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej__374153d4.md
 updatedAt: 2026-10-02
+relatedDestinations:
+  - destination_argentina_ostrov_martilo
 ---
 
 Можно заказать морскую поездку к колонии пингвинов.

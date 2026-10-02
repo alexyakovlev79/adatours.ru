@@ -11,6 +11,8 @@ destinations:
   - destination_brazil_iguacu
   - destination_brazil_florianopolis
   - destination_brazil_porto_alegre
+  - destination_brazil_gramadu
+  - destination_brazil_kanela
 themes:
   - nature
   - beach

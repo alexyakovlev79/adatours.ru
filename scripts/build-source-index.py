@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 import re
 import shutil
+import subprocess
 from urllib.parse import urlsplit, urlunsplit
 
 import yaml
@@ -152,6 +153,7 @@ def main():
         return result
 
     entries = []
+    full_records = []
     catalog_rows = defaultdict(list)
     for entity_id, source in sorted(sources.items(), key=lambda item: item[1]["sheetRow"]):
         entity_type = source["entityType"]
@@ -171,7 +173,9 @@ def main():
         elif entity_type == "destination":
             item = destinations[entity_id]
             country_ids, destination_ids = [item["countryId"]], [entity_id]
-            assert item["slug"] == slug and item["url"] == url, f"Destination URL disagrees with catalog: {entity_id}"
+            # The fixed snapshot contains the pre-migration URL. Identity and
+            # slug remain stable; the shared route helper resolves today's URL.
+            assert item["slug"] == slug, f"Destination slug disagrees with catalog: {entity_id}"
             geography_state = "fixed"
         elif entity_type == "excursion":
             geo = geography[entity_id]
@@ -246,20 +250,48 @@ def main():
             "readiness": {"sources": "ready", "text": source["readiness"], "media": media_record["status"], "geography": geography_state},
             "sheet": {**SHEET, "row": source["sheetRow"]},
         }
+        if entity_type == "tour" and data.get("routeCountries"):
+            record["routeCountryIds"] = data["routeCountries"]
+        if entity_type == "excursion" and data.get("relatedDestinations"):
+            record["relatedDestinationIds"] = data["relatedDestinations"]
         if entity_type == "destination":
             record["destinationType"] = destinations[entity_id]["destinationType"]
         if entity_type == "excursion":
             record["destinationName"] = destination_details[0]["name"] if destination_details else None
         if geographic_evidence:
             record["geographicEvidence"] = geographic_evidence
-        dump_json(output / "entries" / f"{entity_id}.json", record)
+        previous_path = output / "entries" / f"{entity_id}.json"
+        if previous_path.is_file():
+            previous = json.loads(previous_path.read_text())
+            if previous.get("legacyUrls"):
+                record["legacyUrls"] = previous["legacyUrls"]
+        full_records.append(record)
 
+    # Later user-provided places and tour-derived excursions are not part of
+    # the original snapshot. An administrative replay must retain them.
+    for path in sorted((output / "entries").glob("*.json")):
+        previous = json.loads(path.read_text())
+        if previous["id"] not in sources:
+            full_records.append(previous)
+    resolved = subprocess.run(
+        ["node", str(repo / "scripts/resolve-canonical-paths.mjs")],
+        input=json.dumps(full_records, ensure_ascii=False), text=True,
+        capture_output=True, check=True, cwd=repo,
+    )
+    canonical_urls = {item["id"]: item["url"] for item in json.loads(resolved.stdout)}
+    for record in full_records:
+        old_url = record["url"]
+        record["url"] = canonical_urls[record["id"]]
+        if old_url != record["url"]:
+            record["legacyUrls"] = unique([*record.get("legacyUrls", []), old_url])
+        dump_json(output / "entries" / f"{record['id']}.json", record)
         compact = {key: record[key] for key in ("id", "type", "name", "url", "slug", "contentPath", "countryIds", "destinationIds", "sourceUrl")}
-        compact["entryPath"] = entry_path
-        if aliases:
-            compact["aliases"] = aliases
+        compact["entryPath"] = f"data/source-index/entries/{record['id']}.json"
+        for key in ("aliases", "routeCountryIds", "relatedDestinationIds", "legacyUrls"):
+            if record.get(key):
+                compact[key] = record[key]
         entries.append(compact)
-        catalog_rows[COLLECTIONS[entity_type]].append(compact)
+        catalog_rows[COLLECTIONS[record["type"]]].append(compact)
 
     metadata = {
         "schemaVersion": VERSION, "preparedAt": DATE, "entityCount": len(entries),
@@ -282,16 +314,16 @@ def main():
     if (output / "catalogs/by-country").exists():
         shutil.rmtree(output / "catalogs/by-country")
 
-    reserved = []
-    for destination in destination_catalog:
-        if destination["id"] not in sources:
-            assert not destination.get("sourceUrl"), f"Review unindexed donor destination: {destination['id']}"
-            reserved.append({**destination, "status": "reserved", "independentSnapshot": False,
-                             "textStatus": "no_independent_snapshot", "rule": "Existing references are valid. Do not invent source text or create this place while adding an unrelated entity."})
-    assert len(reserved) == 3
-    dump_json(output / "reserved-destinations.json", {"preparedAt": DATE, "entries": reserved})
+    # Identity lives only in the canonical catalog; content preparation is a
+    # queue referencing those IDs. Never regenerate a second reserved catalog.
+    reserved = [item["id"] for item in destination_catalog if item["id"] not in sources]
+    dump_json(output / "reserved-destinations.json", {
+        "canonicalCatalog": "src/data/catalog/destinations.json",
+        "preparationQueue": "src/data/catalog/destination-reservations.json",
+        "rule": "Resolve queue records by canonical ID. This pointer contains no independent identity or content records.",
+    })
     actual_ids = {path.stem for path in (output / "entries").glob("*.json")}
-    assert actual_ids == set(sources), "Stale or missing per-entry files"
+    assert actual_ids == {record["id"] for record in full_records}, "Stale or missing per-entry files"
     total_bytes = sum(path.stat().st_size for path in output.rglob("*") if path.is_file())
     print(json.dumps({"entries": len(entries), "reserved": len(reserved), "counts": metadata["counts"],
                       "files": sum(path.is_file() for path in output.rglob("*")), "bytes": total_bytes}, ensure_ascii=False, indent=2))

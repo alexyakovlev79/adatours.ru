@@ -15,6 +15,8 @@ destinations:
   - destination_brazil_natal
   - destination_brazil_praia_de_pipa
   - destination_argentina_puerto_iguasu
+  - destination_brazil_atins
+  - destination_brazil_barrejrinyas
 themes:
   - nature
   - adventure

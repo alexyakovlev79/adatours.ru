@@ -30,6 +30,8 @@ notes:
 sourceUrl: https://brasiltours.ru/perrito-moreno-s-russkogovorjaschim-gidom
 sourceSnapshot: page_texts_newstep/Excursions/perrito-moreno-s-russkogovorjaschim-gidom__3da7adb1.md
 updatedAt: 2026-09-30
+relatedDestinations:
+  - destination_argentina_lednik_perito_moreno
 ---
 
 Экскурсия проходит в районе Эль-Калафате. Сопровождение — русскоговорящий гид.

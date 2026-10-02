@@ -15,6 +15,10 @@ countries:
 destinations:
   - destination_argentina_ushuajya
   - destination_chile_punta_arenas
+  - destination_antarctica_ostrov_king_dzhordzh
+  - destination_antarctica_yuzhnye_shetlandskie_ostrova
+  - destination_chile_mys_gorn
+  - destination_chile_puerto_vilyams
 themes:
   - adventure
   - nature

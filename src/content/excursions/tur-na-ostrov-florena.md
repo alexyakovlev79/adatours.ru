@@ -47,6 +47,10 @@ notes:
 sourceUrl: https://brasiltours.ru/tur-na-ostrov-florena
 sourceSnapshot: page_texts_newstep/Excursions/tur-na-ostrov-florena__8e9c8be0.md
 updatedAt: 2026-10-01
+relatedDestinations:
+  - destination_ecuador_ostrov_santa_krus_galapagosy
+  - destination_ecuador_ostrov_florena_galapagosy
+  - destination_ecuador_puerto_ajora
 ---
 
 Экскурсия начинается в Пуэрто-Айоре на острове Санта-Крус и продолжается поездкой на остров Флорена.

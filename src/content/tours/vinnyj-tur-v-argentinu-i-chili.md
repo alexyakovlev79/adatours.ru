@@ -16,6 +16,8 @@ destinations:
   - destination_argentina_mendoza
   - destination_chile_santyago_de_chili
   - destination_chile_valparaiso_i_vinya_del_mar
+  - destination_argentina_dolina_uko
+  - destination_argentina_luhan_de_kujo
 themes:
   - multi-country
   - wine

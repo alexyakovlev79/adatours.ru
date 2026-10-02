@@ -12,12 +12,18 @@ countries:
   - country_argentina
   - country_brazil
   - country_uruguay
+routeCountries:
+  - country_argentina
+  - country_brazil
 destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_el_calafate
   - destination_brazil_iguacu
   - destination_uruguay_montevideo
   - destination_argentina_puerto_iguasu
+  - destination_argentina_lednik_perito_moreno
+  - destination_argentina_san_isidro_buenos_ajres
+  - destination_argentina_tigre
 themes:
   - culture
   - nature

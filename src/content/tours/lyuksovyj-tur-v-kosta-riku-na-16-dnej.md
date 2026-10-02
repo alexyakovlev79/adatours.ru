@@ -17,6 +17,13 @@ destinations:
   - destination_costa_rica_monteverde_santa_elena
   - destination_costa_rica_manuel_antonio
   - destination_costa_rica_poluostrov_osa
+  - destination_costa_rica_vodopady_la_pas
+  - destination_costa_rica_vulkan_poas
+  - destination_costa_rica_nacionalnyj_park_korkovado
+  - destination_costa_rica_nacionalnyj_park_tenorio
+  - destination_costa_rica_ostrov_kano
+  - destination_costa_rica_plajya_konchal
+  - destination_costa_rica_rio_seleste
 themes:
   - luxury
   - nature

@@ -38,6 +38,9 @@ notes:
   - "В Premium-вариант входят закуска, первое блюдо, основное блюдо, десерт, алкогольные и безалкогольные напитки."
 sourceSnapshot: page_texts_original/neveroyatnaya-argentina__b36cf7e0.md
 updatedAt: 2026-10-02
+relatedDestinations:
+  - destination_argentina_lednik_perito_moreno
+  - destination_argentina_ozero_argentino
 ---
 
 Полнодневная навигация проходит на яхте Maria Turquesa по озеру Аргентино. Отправление из частного порта La Soledad примерно в 60 км от Эль-Калафате. Патагонское ледниковое поле считается крупнейшим на планете после Антарктиды, поэтому эта экскурсия строится вокруг продолжительной навигации среди ледников и каналов национального парка.

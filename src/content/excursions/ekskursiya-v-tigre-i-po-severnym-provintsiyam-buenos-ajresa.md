@@ -33,6 +33,9 @@ notes: []
 sourceUrl: https://brasiltours.ru/ekskursiya-v-tigre-i-po-severnym-provintsiyam-buenos-ajresa
 sourceSnapshot: page_texts_newstep/Excursions/ekskursiya-v-tigre-i-po-severnym-provintsiyam-buenos-ajresa__f0291151.md
 updatedAt: 2026-10-01
+relatedDestinations:
+  - destination_argentina_san_isidro_buenos_ajres
+  - destination_argentina_tigre
 ---
 
 Тигре расположен примерно в 40 км от Буэнос-Айреса, среди островов и протоков дельты Рио-де-ла-Плата. Город часто называют аргентинской Венецией.

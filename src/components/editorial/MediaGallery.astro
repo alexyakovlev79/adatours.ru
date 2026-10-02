@@ -15,6 +15,7 @@ interface Props {
   eyebrow?: string;
   title?: string;
   layout?: 'editorial' | 'flush' | 'orientation';
+  imageTextAlign?: 'left' | 'right';
 }
 
 const {
@@ -22,6 +23,7 @@ const {
   eyebrow = 'Фотографии',
   title = 'Еще несколько кадров',
   layout = 'editorial',
+  imageTextAlign,
 } = Astro.props;
 
 // Media QA status is metadata, not a visibility switch.
@@ -31,7 +33,7 @@ const orientation = layout === 'orientation';
 ---
 
 {visibleItems.length > 0 && (
-  <section class:list={['media-gallery', 'section', { 'media-gallery--flush': flush, 'media-gallery--orientation': orientation }]}>
+  <section class:list={['media-gallery', 'section', { 'media-gallery--flush': flush, 'media-gallery--orientation': orientation }]} data-image-text-align={imageTextAlign}>
     <div class="container">
       <div class="media-gallery__heading">
         <p class="eyebrow">{eyebrow}</p>
@@ -208,6 +210,10 @@ const orientation = layout === 'orientation';
     padding: 28px 24px 18px;
     color: #fff;
     background: linear-gradient(transparent, rgba(0,0,0,.58));
+  }
+
+  .media-gallery--flush[data-image-text-align] figcaption {
+    text-align: var(--image-text-align);
   }
 
 

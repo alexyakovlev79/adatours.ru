@@ -38,7 +38,7 @@ featureBands:
     title: Рио-де-Жанейро
     text: "Рио часто становится первой точкой поездки: океан, Корковаду, Сахарная голова и районы города с совсем разным настроением."
     image: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
-    href: /napravleniya/braziliya/rio-de-zhanejro/
+    href: /braziliya/place/rio-de-zhanejro/
   - eyebrow: Природа
     title: Ленсойс-Мараньенсис
     text: Белые дюны и сезонные лагуны. Один из самых необычных природных пейзажей Бразилии.

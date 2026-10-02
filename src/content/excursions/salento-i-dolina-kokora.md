@@ -53,6 +53,9 @@ notes:
 sourceUrl: https://brasiltours.ru/salento-i-dolina-kokora
 sourceSnapshot: page_texts_newstep/Excursions/salento-i-dolina-kokora__eba5ca96.md
 updatedAt: 2026-10-02
+relatedDestinations:
+  - destination_colombia_dolina_kokora
+  - destination_colombia_salento
 ---
 
 Главная часть этой пятичасовой экскурсии — долина Кокора с облачным лесом и знаменитыми восковыми пальмами. После природной части маршрут продолжается в Саленто: здесь можно пройтись по колониальным улицам, посмотреть местные ремесла и увидеть долину со смотровой площадки.

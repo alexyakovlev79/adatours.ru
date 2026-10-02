@@ -18,6 +18,7 @@ featuredCountries:
   - country_mexico
   - country_nicaragua
   - country_panama
+  - country_el_salvador
 
 sourceUrl: https://brasiltours.ru/dajving
 sourceSnapshot: page_texts_original/dajving__b833d7b0.md

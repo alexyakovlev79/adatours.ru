@@ -237,7 +237,6 @@ export function destinationBreadcrumbs(destination: { name: string; slug: string
   return [
     { label: 'Направления', href: '/napravleniya/' },
     { label: country.name, href: destinationCountryPath(country) },
-    { label: destination.name, href: destinationPath(destination) },
   ];
 }
 
@@ -255,7 +254,6 @@ export function excursionBreadcrumbs(excursion: ExcursionRouteInput & { title: s
     { label: 'Экскурсии', href: '/ekskursii/' },
     { label: country.name, href: excursionCountryPath(country) },
     ...(destination ? [{ label: destination.name, href: excursionDestinationPath(destination) }] : []),
-    { label: excursion.title, href: excursionPath(excursion) },
   ];
 }
 

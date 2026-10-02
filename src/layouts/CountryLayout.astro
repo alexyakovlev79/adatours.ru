@@ -536,6 +536,12 @@ const destinationTypeLabel = {
   }
 
   @media (max-width: 820px) {
+    :global(.story__media) {
+      width: 100vw;
+      max-width: none;
+      margin-left: calc(-1 * var(--gutter));
+    }
+
     .country-copy {
       padding-block: 42px;
     }

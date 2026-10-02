@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.31  
+Версия: 1.32  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **22** тура со статусом `Уникализировано`.
+В текущем реестре учтено **23** тура со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -174,12 +174,17 @@ missing_excursion_entities = 0
 | 294 | `tour_source_kongress_v_argentine` | `src/content/tours/kongress-v-argentine.md` | Корпоративный тур в Аргентину: Буэнос-Айрес и Тигре за 5 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 295 | `tour_source_kruiz_mys_gorn_i_antarktida` | `src/content/tours/kruiz-mys-gorn-i-antarktida.md` | Круиз через мыс Горн и пролив Дрейка в Антарктиду | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 296 | `tour_source_patagoniya_i_chilijskie_fordy` | `src/content/tours/patagoniya-i-chilijskie-fordy.md` | Патагония и Чилийские фьорды | DONE_NO_RELATIONS | 0 | 2026-10-02 |
+| 297 | `tour_source_programma_dlya_aktivnykh_lyudej` | `src/content/tours/programma-dlya-aktivnykh-lyudej.md` | Аргентина, Патагония, Сантьяго и остров Пасхи за 12 дней | DONE_LINKED | 1 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 296 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 297 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 297, 2026-10-02
+
+- **Строка 297 / `tour_source_programma_dlya_aktivnykh_lyudej`:** опубликован 12-дневный тур «Аргентина, Патагония, Сантьяго и остров Пасхи за 12 дней» из V2 + original. Основные экскурсионные программы соответствующих numbered days сохранены внутри дней, как в уже нормализованных турах: обзорный Буэнос-Айрес, винная долина/треккинг вокруг Сантьяго, Торрес-дель-Пайне, ледник Грей, обзорный Сантьяго и программы Рапа-Нуи являются основной программой дня, а не отдельными дополнительными вставками. Единственный самостоятельный дополнительный модуль — вечернее танго-шоу с ужином после основной программы дня 2. Он извлечен из текста дня и поставлен отдельным `excursionRef: excursion_source_tango_shou_v_buenos_ajrese` между днями 2 и 3. Инварианты: `production_excursion_refs = 1`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`. Итог: `DONE_LINKED`.
 
 ### Проверка v1.1 — строка 296, 2026-10-02
 
@@ -291,6 +296,8 @@ missing_excursion_entities = 0
 
 | `tour_source_buenos_ajres_salta_iguasu` | `excursion_source_fiesta_gaucho` | between_days | 3 | 4 | LINKED_EXISTING | Сопоставлено с существующей канонической Excursion «Фиеста Гаучо»; локальная карточка тура заменена на `excursionRef`. |
 | `tour_source_buenos_ajres_salta_iguasu` | `excursion_buenos_aires_colonia_del_sacramento_day_trip` | between_days | 3 | 4 | LINKED_EXISTING | Отдельного source excursion_detail с выездом из Буэнос-Айреса не найдено; создана каноническая Excursion из standalone-блока тура, отличная от source-продукта «Колония» из Монтевидео. |
+
+| `tour_source_programma_dlya_aktivnykh_lyudej` | `excursion_source_tango_shou_v_buenos_ajrese` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином вынесено из numbered day 2 в отдельный `excursionRef`; основная обзорная программа Буэнос-Айреса осталась внутри дня. |
 
 ## 5. Как фиксировать новую найденную экскурсию
 

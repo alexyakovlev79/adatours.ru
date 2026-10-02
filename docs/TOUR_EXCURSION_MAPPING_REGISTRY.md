@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.39  
+Версия: 1.40  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **30** туров со статусом `Уникализировано`.
+В текущем реестре учтено **31** тур со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -182,12 +182,17 @@ missing_excursion_entities = 0
 | 302 | `tour_source_vsya_argentina` | `src/content/tours/vsya-argentina.md` | Тур в Аргентину и Патагонию на 26 дней | DONE_LINKED | 5 | 2026-10-02 |
 | 303 | `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `src/content/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej.md` | Аргентина Deluxe за 11 дней: Буэнос-Айрес, Патагония, Ушуайя и Игуасу | DONE_LINKED | 8 | 2026-10-02 |
 | 304 | `tour_source_argentina_dlya_degustatorov_khoroshej_zhizni` | `src/content/tours/argentina-dlya-degustatorov-khoroshej-zhizni.md` | Аргентина для ценителей вина, кухни и красивой жизни | DONE_LINKED | 1 | 2026-10-02 |
+| 305 | `tour_source_tur_v_argentinu_na_dikuyu_prirodu` | `src/content/tours/tur-v-argentinu-na-dikuyu-prirodu.md` | Эко-тур по Аргентине на 9 дней: киты Пуэрто-Мадрина и заповедник Ибера | DONE_LINKED | 2 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 304 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 305 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 305, 2026-10-02
+
+- **Строка 305 / `tour_source_tur_v_argentinu_na_dikuyu_prirodu`:** опубликован 9-дневный эко-тур «Эко-тур по Аргентине на 9 дней: киты Пуэрто-Мадрина и заповедник Ибера» из V2 + original. Основная программа numbered days сохранена внутри дней: обзорный Буэнос-Айрес, ранчо гаучо «Дон Сильвано», наблюдение за китами у Эль-Дорадильо, полуостров Вальдес и базовая программа Ibera Lodge. Извлечены 2 самостоятельных дополнительных модуля: после дня 2 вечернее танго-шоу с ужином без гида связано с существующей `excursion_buenos_aires_tango_show_dinner`; после дня 6 optional-блок «прогулка по реке Корриентес или рыбалка на дорадо» вынесен в новую каноническую `excursion_ibera_corrientes_river_or_dorado_fishing`, созданную без выдуманной цены, длительности или языка. Source hero существовал только в cache, поэтому использован подтвержденный raw image `https://brasiltours.ru/image/ibera-wetlands-argentina.png` с той же source page. Инварианты: `production_excursion_refs = 2`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`. Итог: `DONE_LINKED`.
 
 ### Проверка v1.1 — строка 304, 2026-10-02
 
@@ -353,6 +358,9 @@ missing_excursion_entities = 0
 | `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_iguazu_helicopter_falls` | between_days | 9 | 10 | LINKED_NEW | Дополнительный полет над водопадами и «Горлом Дьявола» вынесен в новую сущность; цена и длительность не выдумывались. |
 
 | `tour_source_argentina_dlya_degustatorov_khoroshej_zhizni` | `excursion_buenos_aires_tango_show_dinner` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином, без гида, вынесено из numbered day 2 после основной обзорной экскурсии по Буэнос-Айресу; scope точно совпадает с канонической Excursion. |
+
+| `tour_source_tur_v_argentinu_na_dikuyu_prirodu` | `excursion_buenos_aires_tango_show_dinner` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином без гида вынесено из дня 2 после основной программы ранчо «Дон Сильвано». |
+| `tour_source_tur_v_argentinu_na_dikuyu_prirodu` | `excursion_ibera_corrientes_river_or_dorado_fishing` | between_days | 6 | 7 | LINKED_NEW | Optional-блок дня 6 — прогулка по реке Корриентес или рыбалка на дорадо — вынесен в отдельную каноническую Excursion; подтверждено только, что она организуется по желанию и за дополнительную плату. |
 
 ## 5. Как фиксировать новую найденную экскурсию
 

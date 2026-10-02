@@ -13,9 +13,10 @@ featuredCountries:
   - country_brazil
   - country_argentina
   - country_peru
+  - country_costa_rica
 sourceUrl: https://brasiltours.ru/moto-tury
 sourceSnapshot: page_texts_original/moto-tury__55b12a54.md
-updatedAt: 2026-09-24
+updatedAt: 2026-10-02
 ---
 
 ## Дорога определяет маршрут

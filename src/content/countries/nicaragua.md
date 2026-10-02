@@ -9,7 +9,7 @@ searchAliases:
 summary: >-
   Никарагуа соединяет вулканы, озёра, колониальные города Гранада и Леон, остров Ометепе и пляжи Тихого океана и Карибского моря. Ada Tours может собрать природный маршрут, добавить серфинг, дайвинг, рыбалку или несколько спокойных дней у моря.
 hero:
-  src: https://brasiltours.ru/image/countries/nikaragua/1.jpg
+  src: /media/countries/nicaragua/hero-enhanced-20261002.webp
   alt: Попугаи в Никарагуа
 gallery: []
 regions:
@@ -37,15 +37,15 @@ featureBands:
   - eyebrow: Вулканы и озёра
     title: Момбачо, Масая и остров Ометепе
     text: Вулканические маршруты можно соединить с Момбачо, Масая и другими вулканами, а остров Ометепе на озере Никарагуа добавить для пеших маршрутов, велосипеда и природных поездок.
-    image: https://brasiltours.ru/image/countries/nikaragua/5.jpg
+    image: /media/countries/nicaragua/featureBands-1-enhanced-20261002.webp
   - eyebrow: Колониальные города
     title: Гранада и Леон
     text: Гранада и Леон дают городскую часть путешествия с колониальной архитектурой, рынками, местной кухней и удобным доступом к природным районам.
-    image: https://brasiltours.ru/image/countries/nikaragua/3.jpg
+    image: /media/countries/nicaragua/featureBands-2-enhanced-20261002.webp
   - eyebrow: Тихий океан
     title: Сан-Хуан-дель-Сур и серфинг
     text: Сан-Хуан-дель-Сур и пляжи тихоокеанского побережья подходят для серфинга, пляжного отдыха и нескольких активных дней. В программу можно добавить и более спокойные пляжи для семейного или уединённого отдыха.
-    image: https://brasiltours.ru/image/countries/nikaragua/8.jpg
+    image: /media/countries/nicaragua/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/nikaragua-ru
 sourceSnapshot: page_texts_original/nikaragua-ru__866b0c85.md
 updatedAt: 2026-10-02

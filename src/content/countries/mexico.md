@@ -9,7 +9,7 @@ searchAliases:
 summary: >-
   Мексика соединяет Мехико и Теотиуакан, города майя на Юкатане и в Чьяпасе, сеноты, Карибское море и тихоокеанские курорты. Ada Tours может собрать экскурсионный маршрут, добавить пляжный отдых, дайвинг, гастрономию или мото-путешествие.
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/joe-pilie-wzk-r3ja3xo-unsplash.jpg
+  src: /media/countries/mexico/hero-enhanced-20261002.webp
   alt: Кактус в пейзаже Мексики
 gallery: []
 regions:
@@ -49,15 +49,15 @@ featureBands:
   - eyebrow: Археология
     title: Теотиуакан, Чичен-Ица и Паленке
     text: Археологические маршруты можно построить вокруг Теотиуакана, Чичен-Ицы, Паленке и Ушмаля, соединяя памятники древних культур с колониальными городами и природными районами.
-    image: https://brasiltours.ru/image/countries/mexico/teotihuacan.jpg
+    image: /media/countries/mexico/featureBands-1-enhanced-20261002.webp
   - eyebrow: Карибское море
     title: Канкун, Тулум и Косумель
     text: На Юкатане пляжный отдых легко соединить с сенотами и археологией. Канкун, Тулум, Плайя-дель-Кармен и Косумель дают разные варианты отдыха на Карибском море.
-    image: https://brasiltours.ru/image/countries/mexico/tanja-cotoaga-gvczokkp8bw-unsplash.jpg
+    image: /media/countries/mexico/featureBands-2-enhanced-20261002.webp
   - eyebrow: Города и кухня
     title: Оахака и другие города Мексики
     text: Мехико, Оахака, Гвадалахара и другие города добавляют к маршруту архитектуру, рынки, местную кухню и современную городскую жизнь.
-    image: https://brasiltours.ru/image/countries/mexico/oaxaca.jpg
+    image: /media/countries/mexico/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/meksika-ru
 sourceSnapshot: page_texts_original/meksika-ru__f2ecf68f.md
 updatedAt: 2026-10-02

@@ -244,6 +244,48 @@ const resolvedDays = days.map((day) => {
   </div>
 </section>
 
+<script>
+  const desktop = window.matchMedia('(min-width: 1100px)');
+
+  document.querySelectorAll<HTMLDetailsElement>('.itinerary .day-card:not(.day-card--image) > .day').forEach((day) => {
+    const summary = day.querySelector<HTMLElement>('summary');
+    if (!summary) return;
+
+    let mobileOpen = day.open;
+    let desktopStatic = false;
+
+    const syncLayout = () => {
+      if (desktopStatic === desktop.matches) return;
+      desktopStatic = desktop.matches;
+
+      if (desktopStatic) {
+        // Keep the mobile accordion state while desktop uses a static text card.
+        mobileOpen = day.open;
+        day.open = true;
+        day.setAttribute('data-desktop-static', '');
+        summary.setAttribute('tabindex', '-1');
+        summary.setAttribute('aria-disabled', 'true');
+      } else {
+        day.removeAttribute('data-desktop-static');
+        day.open = mobileOpen;
+        summary.removeAttribute('tabindex');
+        summary.removeAttribute('aria-disabled');
+      }
+    };
+
+    summary.addEventListener('click', (event) => {
+      if (desktop.matches) event.preventDefault();
+    });
+
+    day.addEventListener('toggle', () => {
+      if (desktop.matches && !day.open) day.open = true;
+    });
+
+    desktop.addEventListener('change', syncLayout);
+    syncLayout();
+  });
+</script>
+
 <style>
   .itinerary {
     color: var(--color-bg);
@@ -444,6 +486,14 @@ const resolvedDays = days.map((day) => {
 
     .day__content {
       padding: 0;
+    }
+
+    .day[data-desktop-static] summary {
+      cursor: default;
+    }
+
+    .day[data-desktop-static] .day__toggle {
+      display: none;
     }
 
     .day-card--image .day__content {

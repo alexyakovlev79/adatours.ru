@@ -9,6 +9,7 @@ import DestinationBand from '../components/editorial/DestinationBand.astro';
 import { withBase } from '../lib/paths';
 import { countryBreadcrumbs, countryPath, destinationPath, excursionPath, themePath, tourPath } from '../lib/routes';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
+import { tourHasMainCountry } from '../lib/tour-relations';
 
 const { entry } = Astro.props;
 // Country page: linked destination/tour catalogue for internal linking and discovery.
@@ -61,7 +62,7 @@ const [destinationEntries, allTourEntries, excursionEntries, themeEntries] = awa
   ),
 ]);
 
-const tourEntries = allTourEntries.filter((item) => item.data.countries.includes(d.id));
+const tourEntries = allTourEntries.filter((item) => tourHasMainCountry(item.data, d.id));
 const excursionTourCounts = buildExcursionTourCounts(allTourEntries);
 
 const preferredDestinations = new Map(

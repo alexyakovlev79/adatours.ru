@@ -13,6 +13,7 @@
     "sourceUrl": {"type": ["string", "null"]},
     "countryIds": {"type": "array", "items": {"type": "string", "pattern": "^country_"}, "uniqueItems": true},
     "routeCountryIds": {"type": "array", "items": {"type": "string", "pattern": "^country_"}, "uniqueItems": true, "minItems": 1},
+    "routeDestinationIds": {"type": "array", "items": {"type": "string", "pattern": "^destination_"}, "uniqueItems": true, "minItems": 1},
     "legacyUrls": {"type": "array", "items": {"type": "string", "pattern": "^/.*?/$"}, "uniqueItems": true},
     "destinationIds": {"type": "array", "items": {"type": "string", "pattern": "^destination_"}, "uniqueItems": true},
     "relatedDestinationIds": {"type": "array", "items": {"type": "string", "pattern": "^destination_"}, "uniqueItems": true},

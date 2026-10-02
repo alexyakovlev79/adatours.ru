@@ -13,6 +13,7 @@ import {
   type BreadcrumbItem, type CountryRoute, type DestinationRoute,
 } from '../lib/routes';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
+import { tourHasMainCountry } from '../lib/tour-relations';
 
 type DetailProps =
   | { mode: 'detail'; kind: 'country'; entry: CollectionEntry<'countries'> }
@@ -86,7 +87,7 @@ export async function getStaticPaths() {
         breadcrumbs: [{ label: 'Направления', href: '/napravleniya/' }, { label: country.name, href: canonical }],
       });
     }
-    const selectedTours = tours.filter((entry) => entry.data.countries.includes(country.id));
+    const selectedTours = tours.filter((entry) => tourHasMainCountry(entry.data, country.id));
     if (selectedTours.length) {
       const canonical = tourCountryPath(country);
       add(canonical, {

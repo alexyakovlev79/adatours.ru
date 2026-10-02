@@ -6,6 +6,7 @@ import destinationReservations from '../data/catalog/destination-reservations.js
 import { validateDestinationReservations } from './destination-reservations.mjs';
 import { validateSourceTextPointer, validateProvidedMedia, isNonemptyUtf8 } from './provided-materials.mjs';
 import { canonicalPath, countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
+import { mainTourCountryIds, mainTourDestinationIds } from './tour-relations';
 
 export interface CatalogDestination {
   id: string;
@@ -130,6 +131,7 @@ async function validateContent(): Promise<void> {
   for (const { data: d } of tours.filter(({ data }) => isPublished(data))) {
     if (new Set(d.countries).size !== d.countries.length || new Set(d.destinations).size !== d.destinations.length) errors.push(`${d.id}: повторяющиеся ID в countries/destinations.`);
     if (d.routeCountries && (new Set(d.routeCountries).size !== d.routeCountries.length || d.routeCountries.some((id) => !d.countries.includes(id)))) errors.push(`${d.id}: routeCountries должны быть уникальным подмножеством countries.`);
+    if (d.routeDestinations && (new Set(d.routeDestinations).size !== d.routeDestinations.length || d.routeDestinations.some((id) => !d.destinations.includes(id)))) errors.push(`${d.id}: routeDestinations должны быть уникальным подмножеством destinations.`);
     for (const id of d.countries) {
       if (!countryById.has(key(d.locale, id))) errors.push(`${d.id}: страна ${id} ещё не опубликована.`);
     }
@@ -137,6 +139,11 @@ async function validateContent(): Promise<void> {
       const planned = destinationCatalogById.get(id);
       if (!planned) errors.push(`${d.id}: неизвестный ID места ${id}; будущие места разрешены только по каталогу.`);
       else if (!d.countries.includes(planned.countryId)) errors.push(`${d.id}: страна места ${id} отсутствует в countries.`);
+    }
+    const mainCountryIds = new Set(mainTourCountryIds(d));
+    for (const id of mainTourDestinationIds(d)) {
+      const planned = destinationCatalogById.get(id);
+      if (planned && !mainCountryIds.has(planned.countryId)) errors.push(`${d.id}: основное место ${id} относится к стране ${planned.countryId}, которой нет в routeCountries/countries.`);
     }
     for (const day of d.itinerary) {
       const refs = [day.excursionRef, ...day.contentBlocks.filter((block) => block.type === 'excursion').map((block) => block.excursionRef)];
@@ -180,6 +187,10 @@ async function validateContent(): Promise<void> {
       if (publishedUrl && entry.url !== publishedUrl) errors.push(`source-index/${name}: URL не совпадает с опубликованной сущностью ${publishedUrl}.`);
       const extraDestinations = entry.relatedDestinationIds ?? [];
       if (!Array.isArray(extraDestinations) || new Set(extraDestinations).size !== extraDestinations.length || extraDestinations.some((id: string) => !destinationCatalogById.has(id) || entry.destinationIds.includes(id))) errors.push(`source-index/${name}: дополнительные места должны быть уникальными ID из каталога и не дублировать основное.`);
+      const routeCountryIds = entry.routeCountryIds ?? [];
+      if (!Array.isArray(routeCountryIds) || new Set(routeCountryIds).size !== routeCountryIds.length || routeCountryIds.some((id: string) => !entry.countryIds.includes(id))) errors.push(`source-index/${name}: routeCountryIds должны быть уникальным подмножеством countryIds.`);
+      const routeDestinationIds = entry.routeDestinationIds ?? [];
+      if (!Array.isArray(routeDestinationIds) || new Set(routeDestinationIds).size !== routeDestinationIds.length || routeDestinationIds.some((id: string) => !entry.destinationIds.includes(id))) errors.push(`source-index/${name}: routeDestinationIds должны быть уникальным подмножеством destinationIds.`);
       const publishedExcursion = excursionById.get(key('ru', entry.id));
       if (publishedExcursion && JSON.stringify(extraDestinations) !== JSON.stringify(publishedExcursion.data.relatedDestinations)) errors.push(`source-index/${name}: дополнительные места не совпадают с опубликованной экскурсией.`);
       const completingReservation = publishedReservations.has(entry.id);

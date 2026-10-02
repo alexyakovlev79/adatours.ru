@@ -13,6 +13,7 @@ import { withBase } from '../lib/paths';
 import { countryPath, destinationBreadcrumbs as buildDestinationBreadcrumbs, destinationPath, excursionPath, tourPath } from '../lib/routes';
 import { excursionHasDestination } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
+import { tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-relations';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -33,9 +34,17 @@ const [allTourEntries, countryEntries, excursionEntries, destinationEntries] = a
   ),
 ]);
 
-const tourEntries = allTourEntries.filter((item) => item.data.destinations.includes(d.id));
+const mainTourEntries = allTourEntries.filter((item) =>
+  tourHasMainDestination(item.data, d.id)
+);
+const optionalTourEntries = allTourEntries.filter((item) =>
+  tourHasOptionalDestination(item.data, d.id)
+);
 const excursionTourCounts = buildExcursionTourCounts(allTourEntries);
-const relatedTours = tourEntries
+const relatedTours = mainTourEntries
+  .sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0))
+  .slice(0, 3);
+const optionalTours = optionalTourEntries
   .sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0))
   .slice(0, 3);
 const relatedExcursions = excursionEntries
@@ -43,7 +52,7 @@ const relatedExcursions = excursionEntries
   .slice(0, 6);
 const destinationTourOverlap = new Map<string, number>();
 
-for (const tour of tourEntries) {
+for (const tour of mainTourEntries) {
   const uniqueDestinationIds = new Set(
     tour.data.destinations.filter((destinationId) => destinationId !== d.id)
   );
@@ -165,6 +174,25 @@ const destinationSchema = {
     <>
       <EditorialStatement eyebrow="Маршруты" text={`Туры через ${d.name}`} />
       {relatedTours.map((tour, index) => (
+        <DestinationBand
+          eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
+          title={tour.data.title}
+          text={tour.data.lead}
+          image={tour.data.hero?.src}
+          imageTextAlign={tour.data.imageTextAlign}
+          mediaStatus={tour.data.hero?.status}
+          replacementReason={tour.data.hero?.replacementReason}
+          href={tourPath(tour.data)}
+          align={index % 2 === 1 ? 'right' : 'left'}
+        />
+      ))}
+    </>
+  )}
+
+  {optionalTours.length > 0 && (
+    <>
+      <EditorialStatement eyebrow="Можно добавить" text={`К этим турам можно добавить экскурсию в ${d.name}`} />
+      {optionalTours.map((tour, index) => (
         <DestinationBand
           eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
           title={tour.data.title}

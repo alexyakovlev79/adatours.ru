@@ -1,4 +1,5 @@
 import type { CollectionEntry } from 'astro:content';
+import { mainTourCountryIds } from './tour-relations';
 
 type TourEntry = CollectionEntry<'tours'>;
 type CountryEntry = CollectionEntry<'countries'>;
@@ -7,7 +8,7 @@ export const buildCountryTourCounts = (tours: TourEntry[]) => {
   const counts = new Map<string, number>();
 
   for (const tour of tours) {
-    for (const countryId of new Set(tour.data.countries)) {
+    for (const countryId of new Set(mainTourCountryIds(tour.data))) {
       counts.set(countryId, (counts.get(countryId) ?? 0) + 1);
     }
   }

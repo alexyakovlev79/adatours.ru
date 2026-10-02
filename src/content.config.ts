@@ -122,6 +122,7 @@ const tours = defineCollection({
     routeCountries: z.array(z.string()).min(1).optional(),
     imageTextAlign,
     destinations: z.array(z.string()).default([]),
+    routeDestinations: z.array(z.string()).min(1).optional(),
     themes: z.array(z.string()).default([]),
     audiences: z.array(z.string()).default([]),
     format: z.string().optional(),

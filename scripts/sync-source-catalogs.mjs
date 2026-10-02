@@ -35,7 +35,7 @@ for (const record of records) {
 const entries = records.map(record => {
   const compact = Object.fromEntries(compactKeys.map(key => [key, record[key]]));
   compact.entryPath = `data/source-index/entries/${record.id}.json`;
-  for (const key of ['aliases', 'routeCountryIds', 'relatedDestinationIds', 'legacyUrls']) {
+  for (const key of ['aliases', 'routeCountryIds', 'routeDestinationIds', 'relatedDestinationIds', 'legacyUrls']) {
     if (record[key]?.length) compact[key] = record[key];
   }
   return compact;

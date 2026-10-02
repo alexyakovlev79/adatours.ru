@@ -21,6 +21,13 @@ destinations:
   - destination_argentina_puerto_iguasu
   - destination_argentina_san_isidro_buenos_ajres
   - destination_argentina_tigre
+routeDestinations:
+  - destination_argentina_buenos_aires
+  - destination_argentina_el_calafate
+  - destination_brazil_iguacu
+  - destination_brazil_natal
+  - destination_brazil_praia_de_pipa
+  - destination_argentina_puerto_iguasu
 themes:
   - multi-country
   - nature

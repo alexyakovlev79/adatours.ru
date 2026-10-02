@@ -252,6 +252,8 @@ def main():
         }
         if entity_type == "tour" and data.get("routeCountries"):
             record["routeCountryIds"] = data["routeCountries"]
+        if entity_type == "tour" and data.get("routeDestinations"):
+            record["routeDestinationIds"] = data["routeDestinations"]
         if entity_type == "excursion" and data.get("relatedDestinations"):
             record["relatedDestinationIds"] = data["relatedDestinations"]
         if entity_type == "destination":
@@ -287,7 +289,7 @@ def main():
         dump_json(output / "entries" / f"{record['id']}.json", record)
         compact = {key: record[key] for key in ("id", "type", "name", "url", "slug", "contentPath", "countryIds", "destinationIds", "sourceUrl")}
         compact["entryPath"] = f"data/source-index/entries/{record['id']}.json"
-        for key in ("aliases", "routeCountryIds", "relatedDestinationIds", "legacyUrls"):
+        for key in ("aliases", "routeCountryIds", "routeDestinationIds", "relatedDestinationIds", "legacyUrls"):
             if record.get(key):
                 compact[key] = record[key]
         entries.append(compact)

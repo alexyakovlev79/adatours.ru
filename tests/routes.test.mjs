@@ -11,6 +11,7 @@ import {
   isLegacyRedirectPath, legacyDestinationPath, legacyEntityPath, mainTourCountries,
   tourBreadcrumbs, tourCountryPath, tourPath,
 } from '../src/lib/routes.ts';
+import { mainTourDestinationIds, optionalTourDestinationIds } from '../src/lib/tour-relations.ts';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 function published(collection) {
@@ -43,6 +44,19 @@ test('tour main route excludes optional geography and keeps parallel country bre
   const trip = tours.find((entry) => entry.id === 'tour_argentina_brazil_pipa_11d');
   assert.deepEqual(trip.countries, ['country_argentina', 'country_brazil', 'country_uruguay']);
   assert.deepEqual(mainTourCountries(trip).map((entry) => entry.id), ['country_argentina', 'country_brazil']);
+  assert.deepEqual(mainTourDestinationIds(trip), [
+    'destination_argentina_buenos_aires',
+    'destination_argentina_el_calafate',
+    'destination_brazil_iguacu',
+    'destination_brazil_natal',
+    'destination_brazil_praia_de_pipa',
+    'destination_argentina_puerto_iguasu',
+  ]);
+  assert.deepEqual(optionalTourDestinationIds(trip), [
+    'destination_uruguay_montevideo',
+    'destination_argentina_san_isidro_buenos_ajres',
+    'destination_argentina_tigre',
+  ]);
   assert.equal(tourPath(trip), '/multi-country/tour/argentina-braziliya-buenos-ajres-el-kalafate-iguasu-pipa-11-dnej/');
   const crumbs = tourBreadcrumbs(trip);
   assert.deepEqual(crumbs[1], { links: [

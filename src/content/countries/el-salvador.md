@@ -36,11 +36,12 @@ featureBands:
   - eyebrow: Колониальное наследие
     title: Сучитото и исторические города
     text: Сучитото, Санта-Ана и другие города добавляют к маршруту колониальную архитектуру, церкви, небольшие городские кварталы и более спокойный ритм между природными выездами.
-    image: /media/countries/el-salvador/featureBands-2-enhanced-20261002-v2.webp
+    image: /media/countries/el-salvador/featureBands-2-enhanced-20261002.webp
   - eyebrow: Столица
     title: Сан-Сальвадор
     text: В столице можно соединить музеи, городскую архитектуру и поездки в ближайшие природные районы, включая Эль-Бокерон и вулканические ландшафты вокруг города.
     image: /media/countries/el-salvador/featureBands-3-enhanced-20261002.webp
+    imagePositionMobile: 92% center
 sourceUrl: https://brasiltours.ru/el-salvador-ru
 sourceSnapshot: page_texts_original/el-salvador-ru__9e7634c2.md
 updatedAt: 2026-10-02

@@ -10,9 +10,10 @@ interface Props {
   reverse?: boolean;
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
+  imagePositionMobile?: string;
 }
 
-const { eyebrow, title, text, image, reverse = false, mediaStatus, replacementReason } = Astro.props;
+const { eyebrow, title, text, image, reverse = false, mediaStatus, replacementReason, imagePositionMobile } = Astro.props;
 const resolvedImage = image ? withBase(image) : undefined;
 ---
 
@@ -21,7 +22,13 @@ const resolvedImage = image ? withBase(image) : undefined;
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
 >
-  <div class="story__media" style={resolvedImage ? `background-image:url("${resolvedImage}")` : undefined}></div>
+  <div
+    class="story__media"
+    style={[
+      resolvedImage ? `background-image:url("${resolvedImage}")` : "",
+      imagePositionMobile ? `--story-image-position-mobile:${imagePositionMobile}` : "",
+    ].filter(Boolean).join(";") || undefined}
+  ></div>
   <div class="story__copy">
     {eyebrow && <p class="eyebrow">{eyebrow}</p>}
     <h2>{title}</h2>
@@ -83,6 +90,10 @@ const resolvedImage = image ? withBase(image) : undefined;
 
     .story--reverse .story__media {
       order: initial;
+    }
+
+    .story__media {
+      background-position: var(--story-image-position-mobile, center);
     }
   }
 </style>

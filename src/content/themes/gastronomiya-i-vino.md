@@ -17,6 +17,7 @@ featuredCountries:
   - country_mexico
   - country_paraguay
   - country_uruguay
+  - country_french_guiana
 sourceUrl: https://brasiltours.ru/vinnyi-tury
 sourceSnapshot: page_texts_original/vinnyi-tury__d73d99b5.md
 updatedAt: 2026-10-02

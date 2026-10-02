@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.45  
+Версия: 1.46  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -209,12 +209,13 @@ missing_excursion_entities = 0
 | 305 | `tour_source_tur_v_argentinu_na_dikuyu_prirodu` | `src/content/tours/tur-v-argentinu-na-dikuyu-prirodu.md` | Эко-тур по Аргентине на 9 дней: киты Пуэрто-Мадрина и заповедник Ибера | DONE_LINKED | 2 | 2026-10-02 |
 | 306 | `tour_source_tur_v_argentinu_na_11dnej` | `src/content/tours/tur-v-argentinu-na-11dnej.md` | VIP-тур по Аргентине на 11 дней: Патагония, Ушуайя и водопады Игуасу | DONE_LINKED | 8 | 2026-10-02 |
 | 307 | `tour_source_neveroyatnaya_argentina` | `src/content/tours/neveroyatnaya-argentina.md` | Невероятная Аргентина: Буэнос-Айрес, Ушуайя, Эль-Калафате и Игуасу за 13 дней | DONE_LINKED | 5 | 2026-10-02 |
+| 308 | `tour_source_argentina_buenos_ajres_kalafate_iguasu` | `src/content/tours/argentina-buenos-ajres-kalafate-iguasu.md` | Тур в Аргентину на 10 дней: Патагония и водопады Игуасу | IN_PROGRESS | 0 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.2:** строка 307 закрыта. Перед следующим проходом проверить Google Sheets на новые туры со статусом `Добавлена`, затем первый `Запланирована`.
+**Текущий проход v1.2:** строка 308 — `IN_PROGRESS`.
 
 ### Проверка v1.2 — строка 307, 2026-10-02
 

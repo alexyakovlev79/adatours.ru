@@ -75,6 +75,18 @@ const countryUrl = country
   ? new URL(withBase(`/strany/${country.data.slug}/`), Astro.site ?? 'https://adatours.ru').toString()
   : undefined;
 
+const destinationBreadcrumbs = [
+  { label: 'Главная', href: '/' },
+  { label: 'Направления', href: '/napravleniya/' },
+  ...(country ? [{ label: country.data.name, href: `/strany/${country.data.slug}/` }] : []),
+  {
+    label: d.name,
+    href: country
+      ? `/napravleniya/${country.data.slug}/${d.slug}/`
+      : `/napravleniya/${d.slug}/`,
+  },
+];
+
 const destinationSchema = {
   '@type': 'TouristDestination',
   '@id': `${pageUrl}#destination`,
@@ -98,6 +110,7 @@ const destinationSchema = {
   description={d.summary}
   image={d.hero?.src}
   pageSchema={destinationSchema}
+  breadcrumbs={destinationBreadcrumbs}
 >
   <SearchIndexRecord
     title={d.name}

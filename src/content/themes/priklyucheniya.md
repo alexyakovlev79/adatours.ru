@@ -26,6 +26,7 @@ featuredCountries:
   - country_paraguay
   - country_suriname
   - country_french_guiana
+  - country_chile
 sourceUrl: https://brasiltours.ru/priklyucheniya
 sourceSnapshot: page_texts_original/priklyucheniya__9d8e52e1.md
 updatedAt: 2026-10-02

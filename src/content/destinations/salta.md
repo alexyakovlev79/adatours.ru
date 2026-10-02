@@ -9,14 +9,14 @@ destinationType: city
 summary: Сальта на северо-западе Аргентины сохранила старинные здания и собор Сан-Франциско. Из города можно отправиться в Анды на «Поезде в облаках» и увидеть Семицветную гору.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/sonia-nadales-8utniizfacc-unsplash-uzkaya.jpg
+  src: /media/destinations/salta/hero-enhanced-20261002.webp
   alt: 'На фото: цветные скалы в Сальте Аргентина'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/1/5/15982919cabildo18cent.jpg
+- src: /media/destinations/salta/gallery-1-enhanced-20261002.webp
   alt: 'На фото: город  Сальта в Аргентине'
-- src: https://brasiltours.ru/image/catalog/category/s/a/salta-argentina.jpg
+- src: /media/destinations/salta/gallery-2-enhanced-20261002.webp
   alt: 'На фото: город  Сальта в Аргентине'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN21473_33.jpg
+- src: /media/destinations/salta/gallery-3-enhanced-20261002.webp
   alt: 'На фото: город  Сальта в Аргентине'
 - src: https://brasiltours.ru/image/catalog/category/B/N/BN879_14.jpg
   alt: 'На фото: город  Сальта в Аргентине'
@@ -38,3 +38,4 @@ updatedAt: '2026-10-02'
 Вы можете отсюда на легендарном «Поезде в облаках» отправиться в Сан-Антонио-де-лос-Кобрес — затерянный в Андах городок на высоте 4220 метров и насладиться ландшафтом, изрезанным глубокими каньонами. Вы не уедите из Сальты, не увидев в лучах солнца переливы Семицветной Горы.
 
 В Сальте Вам предложат продегустировать ароматное вино от местных производителей и закусить его пикантной знаменитой говядиной, a вечером обязательно надо посмотреть одно из лучших зрелищ на этой земле —аргентинское танго.
+

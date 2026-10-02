@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.38  
+Версия: 1.39  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **29** туров со статусом `Уникализировано`.
+В текущем реестре учтено **30** туров со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -181,12 +181,17 @@ missing_excursion_entities = 0
 | 301 | `tour_source_antarktida_ekspress_vozdushnyj_kruiz` | `src/content/tours/antarktida-ekspress-vozdushnyj-kruiz.md` | Антарктида Экспресс: Ушуайя, мыс Горн и Антарктида за 6 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 302 | `tour_source_vsya_argentina` | `src/content/tours/vsya-argentina.md` | Тур в Аргентину и Патагонию на 26 дней | DONE_LINKED | 5 | 2026-10-02 |
 | 303 | `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `src/content/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej.md` | Аргентина Deluxe за 11 дней: Буэнос-Айрес, Патагония, Ушуайя и Игуасу | DONE_LINKED | 8 | 2026-10-02 |
+| 304 | `tour_source_argentina_dlya_degustatorov_khoroshej_zhizni` | `src/content/tours/argentina-dlya-degustatorov-khoroshej-zhizni.md` | Аргентина для ценителей вина, кухни и красивой жизни | DONE_LINKED | 1 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 303 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 304 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 304, 2026-10-02
+
+- **Строка 304 / `tour_source_argentina_dlya_degustatorov_khoroshej_zhizni`:** опубликован 7-дневный тур «Аргентина для ценителей вина, кухни и красивой жизни» из V2 + original. Основная обзорная экскурсия по Буэнос-Айресу, «Фиеста Гаучо» и групповой винный тур в Мендосе сохранены внутри numbered days как основная программа дней 2, 3 и 5. Отдельным дополнительным модулем после основной программы дня 2 является вечернее танго-шоу с ужином, без гида; оно извлечено из day text и связано с точной канонической `excursion_buenos_aires_tango_show_dinner`, где также зафиксированы ужин, аргентинские вина и отсутствие услуг гида. Опциональные активности Мендосы в дни 4 и 6 остаются частью текста свободного/настраиваемого дня и не превращены в самостоятельные карточки. Инварианты: `production_excursion_refs = 1`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `duplicate_excursion_text_inside_days = 0`, `missing_excursion_entities = 0`. Итог: `DONE_LINKED`.
 
 ### Проверка v1.1 — строка 303, 2026-10-02
 
@@ -346,6 +351,8 @@ missing_excursion_entities = 0
 | `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_source_makuko_safari` | between_days | 9 | 10 | LINKED_EXISTING | Дополнительный Macuco Safari дня 9 сопоставлен с существующей канонической Excursion. |
 | `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | between_days | 9 | 10 | LINKED_EXISTING | V2 содержит отдельный Парк птиц и прямой ADA_TOURS_EXCURSION_REF на каноническую сущность. |
 | `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | `excursion_iguazu_helicopter_falls` | between_days | 9 | 10 | LINKED_NEW | Дополнительный полет над водопадами и «Горлом Дьявола» вынесен в новую сущность; цена и длительность не выдумывались. |
+
+| `tour_source_argentina_dlya_degustatorov_khoroshej_zhizni` | `excursion_buenos_aires_tango_show_dinner` | between_days | 2 | 3 | LINKED_EXISTING | Вечернее танго-шоу с ужином, без гида, вынесено из numbered day 2 после основной обзорной экскурсии по Буэнос-Айресу; scope точно совпадает с канонической Excursion. |
 
 ## 5. Как фиксировать новую найденную экскурсию
 

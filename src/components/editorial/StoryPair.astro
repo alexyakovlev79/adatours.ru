@@ -10,10 +10,11 @@ interface Props {
   reverse?: boolean;
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
+  imagePosition?: string;
   imagePositionMobile?: string;
 }
 
-const { eyebrow, title, text, image, reverse = false, mediaStatus, replacementReason, imagePositionMobile } = Astro.props;
+const { eyebrow, title, text, image, reverse = false, mediaStatus, replacementReason, imagePosition, imagePositionMobile } = Astro.props;
 const resolvedImage = image ? withBase(image) : undefined;
 ---
 
@@ -26,6 +27,7 @@ const resolvedImage = image ? withBase(image) : undefined;
     class="story__media"
     style={[
       resolvedImage ? `background-image:url("${resolvedImage}")` : "",
+      imagePosition ? `--story-image-position:${imagePosition}` : "",
       imagePositionMobile ? `--story-image-position-mobile:${imagePositionMobile}` : "",
     ].filter(Boolean).join(";") || undefined}
   ></div>
@@ -59,7 +61,7 @@ const resolvedImage = image ? withBase(image) : undefined;
     background:
       radial-gradient(circle at 70% 20%, rgba(242,204,103,.22), transparent 30%),
       linear-gradient(150deg, #57584f, #1a1a18);
-    background-position: center;
+    background-position: var(--story-image-position, center);
     background-size: cover;
   }
 

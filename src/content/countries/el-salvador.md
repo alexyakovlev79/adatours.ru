@@ -41,6 +41,7 @@ featureBands:
     title: Сан-Сальвадор
     text: В столице можно соединить музеи, городскую архитектуру и поездки в ближайшие природные районы, включая Эль-Бокерон и вулканические ландшафты вокруг города.
     image: /media/countries/el-salvador/featureBands-3-enhanced-20261002.webp
+    imagePosition: 92% center
     imagePositionMobile: 92% center
 sourceUrl: https://brasiltours.ru/el-salvador-ru
 sourceSnapshot: page_texts_original/el-salvador-ru__9e7634c2.md

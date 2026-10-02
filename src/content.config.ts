@@ -56,6 +56,7 @@ const editorialBand = z.object({
     'other',
   ]).optional(),
   href: z.string().optional(),
+  imagePosition: z.string().optional(),
   imagePositionMobile: z.string().optional(),
 });
 

@@ -19,7 +19,7 @@ const [tourEntries, countryEntries, excursionEntries, relatedDestinationEntries]
     !['draft', 'archived'].includes(data.status) &&
     data.destinations.includes(d.id)
   ),
-  getCollection('countries', ({ data }) => data.locale === 'ru' && data.id === d.countryId),
+  getCollection('countries', ({ data }) => data.locale === 'ru'),
   getCollection('excursions', ({ data }) =>
     data.locale === 'ru' &&
     !['draft', 'archived'].includes(data.status) &&
@@ -47,7 +47,8 @@ const featureBandImages = new Set(d.featureBands.map((band) => band.image));
 const visibleGallery = d.gallery.filter(
   (item) => item.src !== d.hero?.src && !featureBandImages.has(item.src)
 );
-const country = countryEntries[0];
+const countryById = new Map(countryEntries.map((item) => [item.data.id, item]));
+const country = countryById.get(d.countryId);
 const countryName = country?.data.name ?? '';
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://adatours.ru').toString();
@@ -167,21 +168,29 @@ const destinationSchema = {
     </>
   )}
 
-  {relatedDestinations.length > 0 && country && (
+  {relatedDestinations.length > 0 && (
     <>
-      <EditorialStatement eyebrow="Продолжить маршрут" text={`Другие места в ${countryName}`} />
-      {relatedDestinations.map((item, index) => (
-        <DestinationBand
-          eyebrow={countryName}
-          title={item.data.name}
-          text={item.data.summary}
-          image={item.data.hero?.src}
-          mediaStatus={item.data.hero?.status}
-          replacementReason={item.data.hero?.replacementReason}
-          href={`/napravleniya/${country.data.slug}/${item.data.slug}/`}
-          align={index % 2 === 1 ? 'right' : 'left'}
-        />
-      ))}
+      <EditorialStatement eyebrow="Продолжить маршрут" text="Куда поехать дальше" />
+      {relatedDestinations.map((item, index) => {
+        const relatedCountry = countryById.get(item.data.countryId);
+        const relatedCountryName = relatedCountry?.data.name ?? '';
+        const relatedHref = relatedCountry
+          ? `/napravleniya/${relatedCountry.data.slug}/${item.data.slug}/`
+          : '/napravleniya/';
+
+        return (
+          <DestinationBand
+            eyebrow={relatedCountryName}
+            title={item.data.name}
+            text={item.data.summary}
+            image={item.data.hero?.src}
+            mediaStatus={item.data.hero?.status}
+            replacementReason={item.data.hero?.replacementReason}
+            href={relatedHref}
+            align={index % 2 === 1 ? 'right' : 'left'}
+          />
+        );
+      })}
     </>
   )}
 

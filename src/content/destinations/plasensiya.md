@@ -9,18 +9,18 @@ destinationType: resort
 summary: Пласенсия расположена на небольшом полуострове в 75 км южнее Дангриги. Вдоль лагуны тянутся песчаные пляжи, а от курорта отходят катера к Барьерному рифу.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/belize/222.jpg
+  src: /media/destinations/plasensiya/hero-enhanced-20261002.webp
   alt: 'На фото: курорт город Пласенсия в Белизе'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN24154_21.jpg
+- src: /media/destinations/plasensiya/gallery-1-enhanced-20261002.webp
   alt: 'На фото: курорт город Пласенсия в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN12163_5.jpg
+- src: /media/destinations/plasensiya/gallery-2-enhanced-20261002.webp
   alt: 'На фото: местные жители Белиза'
-- src: https://brasiltours.ru/image/catalog/category/9/2/924685-Beach_at_Placencia_Belize-Belize.jpg
+- src: /media/destinations/plasensiya/gallery-3-enhanced-20261002.webp
   alt: 'На фото: курорт город Пласенсия в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_19.jpg
+- src: /media/destinations/plasensiya/gallery-4-enhanced-20261002.webp
   alt: 'На фото: курорт город Пласенсия в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/s/u/sunrise3.jpg
+- src: /media/destinations/plasensiya/gallery-5-enhanced-20261002.webp
   alt: 'На фото: курорт город Пласенсия в Белизе'
 themes: []
 relatedDestinations: []
@@ -38,3 +38,4 @@ updatedAt: '2026-10-02'
 Набережная Пласенсии, проходящая вдоль пляжей, известна как самая узкая набережная в мире. Вдоль неё стоят многочисленные бары, рестораны и магазины.
 
 В Пласенсии можно заниматься виндсёрфингом, потому что полуостров вдаётся в море, где дуют постоянные северо-восточные ветры. Любой отель имеет прокат снаряжения для дайвинга. От Пласенсии отходят катера к Барьерному рифу, который протянулся вдоль берегов страны на 320 км и является вторым по величине коралловым рифом в мире.
+

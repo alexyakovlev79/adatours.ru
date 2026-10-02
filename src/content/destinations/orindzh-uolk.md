@@ -9,12 +9,12 @@ destinationType: city
 summary: Ориндж-Уолк знакомит с руинами майя Ламанаи и Куэлло. В окрестных джунглях можно наблюдать птиц, а дальше на север отправиться в приграничный Коросал.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/belize/orange-walk-2.jpg
+  src: /media/destinations/orindzh-uolk/hero-enhanced-20261002.webp
   alt: 'На фото: Ориндж Уолк (Холпатин) в Белизе'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_23_43.jpg
+- src: /media/destinations/orindzh-uolk/gallery-1-enhanced-20261002.webp
   alt: 'На фото: Ориндж Уолк (Холпатин) в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_24_26.jpg
+- src: /media/destinations/orindzh-uolk/gallery-2-enhanced-20261002.webp
   alt: 'На фото: Ориндж Уолк (Холпатин) в Белизе'
 themes: []
 relatedDestinations: []
@@ -34,3 +34,4 @@ updatedAt: '2026-10-02'
 Для экскурсий вам предложат знаменитые руины майя Ламанаи и Куэлло. А в джунглях Ориндж более 400 видов птиц, больше, чем где-либо еще в стране, здесь настоящий рай для любителей птиц.
 
 И, конечно же, если вы хотите продолжить путь дальше на север после наслаждения красотами Ориндж Уолка, в 30 милях отсюда находится пограничный город Коросал и свободная зона для любителей шопинга.
+

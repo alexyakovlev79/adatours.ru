@@ -7,10 +7,48 @@
   "contentPath": "src/content/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii.md",
   "sourceUrl": "https://brasiltours.ru/ekzoticheskij-karnaval-parad-chempionov-v-brazilii",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_amazon",
+    "destination_brazil_buzios"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_brazil_amazon",
+      "name": "Манаус и Амазония",
+      "url": "/braziliya/place/manaus-amazonia/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_buzios",
+      "name": "Бузиос",
+      "url": "/braziliya/place/buzios/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -154,13 +192,102 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png",
+          "alt": "на фото: Закат над Рио"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/Rio%20cable%20car.png",
+          "alt": "на фото: Канатная дорога на Сахарную Голову"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/rio%2011.png",
+          "alt": "на фото: Панорама Рио с Корковадо"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%204.png",
+          "alt": "на фото: Водопады Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "на фото: Вид на Рио"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%206.png",
+          "alt": "на фото: Водопады Игуасу"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%204.png",
+          "alt": "на фото: Водопады Игуасу"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20Amazonia%202.png",
+          "alt": "на фото: Амазонка"
+        },
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%206.png",
+          "alt": "на фото: Водопады Игуасу"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/bra-amazonia-1.jpg",
+          "alt": "на фото: Амазония"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20Buzios%2011.png",
+          "alt": "на фото: Бузиос"
+        },
+        {
+          "url": "https://brasiltours.ru/image/BRA%20Amazonia%202.png",
+          "alt": "на фото: Амазонка"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20Buzios%2011.png",
+          "alt": "на фото: Бузиос"
+        }
+      ],
+      "11": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png",
+          "alt": "на фото: Закат над Рио"
+        },
+        {
+          "url": "https://brasiltours.ru/image/BRA%20Buzios%2011.png",
+          "alt": "на фото: Бузиос"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "f8a04c281534fb16f2ca5521e7f7f53ba5cd285234adc8bf670198bda3bb3e07",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -178,5 +305,16 @@
   ],
   "legacyUrls": [
     "/tury/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/"
+  ],
+  "registryRow": 466,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_amazon",
+    "destination_brazil_buzios"
   ]
 }

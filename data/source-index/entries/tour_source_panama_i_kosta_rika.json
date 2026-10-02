@@ -2,15 +2,74 @@
   "id": "tour_source_panama_i_kosta_rika",
   "type": "tour",
   "name": "Панама и Коста Рика",
-  "url": "/kosta-rika/tour/panama-i-kosta-rika/",
+  "url": "/multi-country/tour/panama-i-kosta-rika/",
   "slug": "panama-i-kosta-rika",
   "contentPath": "src/content/tours/panama-i-kosta-rika.md",
   "sourceUrl": "https://brasiltours.ru/panama-i-kosta-rika",
   "countryIds": [
+    "country_panama",
     "country_costa_rica"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_panama_panama_siti",
+    "destination_panama_nacionalnyj_park_chagres",
+    "destination_costa_rica_vulkan_poas",
+    "destination_costa_rica_vodopady_la_pas",
+    "destination_costa_rica_la_fortuna_vulkan_arenal",
+    "destination_costa_rica_zapovednik_kano_negro",
+    "destination_costa_rica_monteverde_santa_elena",
+    "destination_costa_rica_manuel_antonio"
+  ],
+  "destinations": [
+    {
+      "id": "destination_panama_panama_siti",
+      "name": "Панама-Сити",
+      "url": "/panama/place/panama-siti/",
+      "countryId": "country_panama"
+    },
+    {
+      "id": "destination_panama_nacionalnyj_park_chagres",
+      "name": "Национальный парк Чагрес",
+      "url": "/panama/place/nacionalnyj-park-chagres/",
+      "countryId": "country_panama"
+    },
+    {
+      "id": "destination_costa_rica_vulkan_poas",
+      "name": "Вулкан Поас",
+      "url": "/kosta-rika/place/vulkan-poas/",
+      "countryId": "country_costa_rica"
+    },
+    {
+      "id": "destination_costa_rica_vodopady_la_pas",
+      "name": "Водопады Ла-Пас",
+      "url": "/kosta-rika/place/vodopady-la-pas/",
+      "countryId": "country_costa_rica"
+    },
+    {
+      "id": "destination_costa_rica_la_fortuna_vulkan_arenal",
+      "name": "Ла Фортуна & Вулкан Ареналь",
+      "url": "/kosta-rika/place/la-fortuna-vulkan-arenal/",
+      "countryId": "country_costa_rica"
+    },
+    {
+      "id": "destination_costa_rica_zapovednik_kano_negro",
+      "name": "Заповедник Каньо-Негро",
+      "url": "/kosta-rika/place/zapovednik-kano-negro/",
+      "countryId": "country_costa_rica"
+    },
+    {
+      "id": "destination_costa_rica_monteverde_santa_elena",
+      "name": "Монтеверде & Санта Елена",
+      "url": "/kosta-rika/place/monteverde-santa-elena/",
+      "countryId": "country_costa_rica"
+    },
+    {
+      "id": "destination_costa_rica_manuel_antonio",
+      "name": "Мануэль Антонио",
+      "url": "/kosta-rika/place/manuel-antonio/",
+      "countryId": "country_costa_rica"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -94,13 +153,41 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/panama%20chagres%20national%20park1.png",
+          "alt": "Национальный парк Чагрес"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/panama%20canal.png",
+          "alt": "Панамский канал"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "0a93728686091bdc8b9b71014322f00010be4df48c43a5a046b72ede56cc74f1",
+      "missingDays": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -118,5 +205,20 @@
   ],
   "legacyUrls": [
     "/tury/panama-i-kosta-rika/"
+  ],
+  "registryRow": 526,
+  "routeCountryIds": [
+    "country_panama",
+    "country_costa_rica"
+  ],
+  "routeDestinationIds": [
+    "destination_panama_panama_siti",
+    "destination_panama_nacionalnyj_park_chagres",
+    "destination_costa_rica_vulkan_poas",
+    "destination_costa_rica_vodopady_la_pas",
+    "destination_costa_rica_la_fortuna_vulkan_arenal",
+    "destination_costa_rica_zapovednik_kano_negro",
+    "destination_costa_rica_monteverde_santa_elena",
+    "destination_costa_rica_manuel_antonio"
   ]
 }

@@ -9,8 +9,31 @@
   "countryIds": [
     "country_brazil"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_angra_dos_reis",
+    "destination_brazil_petropolis"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_angra_dos_reis",
+      "name": "Ангра-дус-Рейс",
+      "url": "/braziliya/place/angra-dos-reis/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_petropolis",
+      "name": "Петрополис",
+      "url": "/braziliya/place/petropolis/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -130,13 +153,50 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/rio%202.png",
+          "alt": "На фото: Вид на Рио"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/cable%20car.png",
+          "alt": "на фото: Канатная дорога на Сахарную Голову"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "На фото: Статуя Христа и вид на Рио"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/cable%20car.png",
+          "alt": "на фото: Канатная дорога на Сахарную Голову"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/rio%202.png",
+          "alt": "На фото: Вид на Рио"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "429e6e8eb4984f554ac9380dfe2620434dbb2777823b50fa12a22f02a37b8eeb",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -154,5 +214,12 @@
   ],
   "legacyUrls": [
     "/tury/parad-chempionov-karnavala-v-rio/"
+  ],
+  "registryRow": 444,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio"
   ]
 }

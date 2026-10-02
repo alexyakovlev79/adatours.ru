@@ -2,15 +2,104 @@
   "id": "tour_source_braziliya_argentina_i_chili",
   "type": "tour",
   "name": "Бразилия, Аргентина и Чили",
-  "url": "/braziliya/tour/braziliya-argentina-i-chili/",
+  "url": "/multi-country/tour/braziliya-argentina-i-chili/",
   "slug": "braziliya-argentina-i-chili",
   "contentPath": "src/content/tours/braziliya-argentina-i-chili.md",
   "sourceUrl": "https://brasiltours.ru/braziliya-argentina-i-chili",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina",
+    "country_chile",
+    "country_uruguay"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_argentina_buenos_aires",
+    "destination_argentina_tigre",
+    "destination_argentina_san_isidro_buenos_ajres",
+    "destination_chile_santyago_de_chili",
+    "destination_brazil_petropolis",
+    "destination_uruguay_montevideo",
+    "destination_uruguay_koloniya_del_sakramento",
+    "destination_chile_dolina_majpo",
+    "destination_chile_valparaiso_i_vinya_del_mar"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_buenos_aires",
+      "name": "Буэнос-Айрес",
+      "url": "/argentina/place/buenos-ajres/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_tigre",
+      "name": "Тигре",
+      "url": "/argentina/place/tigre/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_san_isidro_buenos_ajres",
+      "name": "Сан-Исидро (Буэнос-Айрес)",
+      "url": "/argentina/place/san-isidro-buenos-ajres/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_chile_santyago_de_chili",
+      "name": "Сантьяго-де-Чили",
+      "url": "/chili/place/santyago-de-chili/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_brazil_petropolis",
+      "name": "Петрополис",
+      "url": "/braziliya/place/petropolis/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_uruguay_montevideo",
+      "name": "Монтевидео",
+      "url": "/urugvaj/place/montevideo/",
+      "countryId": "country_uruguay"
+    },
+    {
+      "id": "destination_uruguay_koloniya_del_sakramento",
+      "name": "Колония дель Сакраменто",
+      "url": "/urugvaj/place/koloniya-del-sakramento/",
+      "countryId": "country_uruguay"
+    },
+    {
+      "id": "destination_chile_dolina_majpo",
+      "name": "Долина Майпо",
+      "url": "/chili/place/dolina-majpo/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_valparaiso_i_vinya_del_mar",
+      "name": "Вальпараисо и Винья дель Мар",
+      "url": "/chili/place/valparaiso-i-vinya-del-mar/",
+      "countryId": "country_chile"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -154,13 +243,114 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/plyazh-urka-v-rio.jpg",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/rio%202.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/stairs%20rio.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/plyazh-urka-v-rio.jpg",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/rio%202.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/arg-buenos-aires-left.jpg",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/arg-buenos-aires-left.jpg",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "11": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/tigre-trip.png",
+          "alt": "Тигре"
+        },
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "12": [
+        {
+          "url": "https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg",
+          "alt": "Сантьяго-де-Чили"
+        },
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "13": [
+        {
+          "url": "https://brasiltours.ru/image/santiago.png",
+          "alt": "Сантьяго-де-Чили"
+        }
+      ],
+      "14": [
+        {
+          "url": "https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg",
+          "alt": "Сантьяго-де-Чили"
+        }
+      ],
+      "15": [
+        {
+          "url": "https://brasiltours.ru/image/santiago.png",
+          "alt": "Сантьяго-де-Чили"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "6569b9117dadbc17057571cd25452d619008c24c6705532bd0af91fdd8a7885d",
+      "missingDays": [
+        6
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -178,5 +368,20 @@
   ],
   "legacyUrls": [
     "/tury/braziliya-argentina-i-chili/"
+  ],
+  "registryRow": 355,
+  "routeCountryIds": [
+    "country_brazil",
+    "country_argentina",
+    "country_chile"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_argentina_buenos_aires",
+    "destination_argentina_tigre",
+    "destination_argentina_san_isidro_buenos_ajres",
+    "destination_chile_santyago_de_chili"
   ]
 }

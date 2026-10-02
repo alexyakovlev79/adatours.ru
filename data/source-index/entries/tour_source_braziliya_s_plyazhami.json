@@ -7,10 +7,48 @@
   "contentPath": "src/content/tours/braziliya-s-plyazhami.md",
   "sourceUrl": "https://brasiltours.ru/braziliya-s-plyazhami",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_recife",
+    "destination_brazil_porto_de_galinhas"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_brazil_recife",
+      "name": "Ресифи",
+      "url": "/braziliya/place/recife/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_porto_de_galinhas",
+      "name": "Порту-ди-Галиньяш",
+      "url": "/braziliya/place/porto-de-galinhas/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -130,13 +168,80 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/rio%20beach.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/rio-de-janeiro-praiaantiga-1.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/rio%20beach.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%204.png",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/rio-de-janeiro-praiaantiga-1.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%206.png",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/Foz%20do%20Iguau.png",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/Recife.png",
+          "alt": "Ресифи"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/Porto%20de%20Galinhas.png",
+          "alt": "Бразилия с пляжами"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/bra-recife-1.jpg",
+          "alt": "Ресифи"
+        },
+        {
+          "url": "https://brasiltours.ru/image/Porto%20de%20Galinhas.png",
+          "alt": "Бразилия с пляжами"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "eb422636763eb935a1289f440c21d943a727bce8daff62bd3a711f286cd31fd1",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -154,5 +259,16 @@
   ],
   "legacyUrls": [
     "/tury/braziliya-s-plyazhami/"
+  ],
+  "registryRow": 354,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_recife",
+    "destination_brazil_porto_de_galinhas"
   ]
 }

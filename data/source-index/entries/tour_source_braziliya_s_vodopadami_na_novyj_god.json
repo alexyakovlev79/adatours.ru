@@ -7,10 +7,34 @@
   "contentPath": "src/content/tours/braziliya-s-vodopadami-na-novyj-god.md",
   "sourceUrl": "https://brasiltours.ru/braziliya-s-vodopadami-na-novyj-god",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -118,13 +142,72 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/NEW%20YEAR.png",
+          "alt": "На фото: На пляже в Рио-де-Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/%D1%80%D0%B8%D0%BE.jpg",
+          "alt": "На фото: Вид с высоты на статую Христа-Искупителя"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/New%20Year%20Brazil.png",
+          "alt": "На фото: Новогодние салюты в Рио, вид с пляжа"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/NEW%20YEAR.png",
+          "alt": "На фото: На пляже в Рио-де-Жанейро"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%204.png",
+          "alt": "На фото: Вид сверху на водопады Фос-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/New%20Year%20Brazil.png",
+          "alt": "На фото: Новогодние салюты в Рио, вид с пляжа"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%206.png",
+          "alt": "На фото: Водопады Фос-ду-Игуасу, Бразилия"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%204.png",
+          "alt": "На фото: Вид сверху на водопады Фос-ду-Игуасу"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%206.png",
+          "alt": "На фото: Водопады Фос-ду-Игуасу, Бразилия"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "cf46457931f28e6767fe7c82a19fcb90a33bcc56519d9f67231f7e074ba76ebd",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -142,5 +225,14 @@
   ],
   "legacyUrls": [
     "/tury/braziliya-s-vodopadami-na-novyj-god/"
+  ],
+  "registryRow": 427,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu"
   ]
 }

@@ -487,3 +487,821 @@ Excursion ID
 - Для Саленто/Кокоры выполнен строгий source-media QA по v1.2 в GitHub Actions: 7 production raw URL и 2 source-media Destination Перейры вернули HTTP 200, `Content-Type: image/jpeg`, валидную сигнатуру изображения и ненулевые реальные bytes. Проверка завершилась успешным build/deploy.
 - В текущих production-турах `excursion_source_salento_i_dolina_kokora` пока не встречается через `excursionRef`; поэтому блок связанных экскурсий на странице Саленто отсутствует. Это ожидаемое поведение v1.2, fallback по стране/месту не используется.
 - Ручное поле `relatedExcursions` не добавлялось.
+
+
+<!-- ADA_TOURS_PREPARED_BATCH:2026-10-02-planned-tours-v2 -->
+
+## 10. Плановые туры из готового V2 — 2026-10-02
+
+**Статус данных:** канонизированы в подготовленном commit.
+
+Эта секция фиксирует подготовленные Tour MD, самостоятельные Excursion и фактические `excursionRef` одного пакета. Подтверждение успешной сборки, публикации и последующей синхронизации Google Sheets в неё не входит. Исторические статусы выше сохранены без изменения.
+
+Идентификатор пакета: `2026-10-02-planned-tours-v2`. Методика: `docs/workflows/tour-excursion-linking.md`, версия 2.1.
+
+Из 301 выбранных туров подготовлены **274**; **27** остаются за пределами пакета по причинам ниже. В готовых турах записано **463 самостоятельных модулей** с **85 уникальными Excursion ID**. Для этого пакета подготовлены **48 новые Excursion**.
+
+В готовых турах используются **370 новых резервов Destination** из плана резервирования. Это связи с каноническими ID; создание страниц мест здесь не заявляется.
+
+Контрольная сумма исходного отчёта сборки: `4c56742b59a026748eace80084ecd72fda6e2b0c5514e948a4afbfa7e73616c3`.
+
+Commit определяется по изменению, содержащему эту секцию и перечисленные файлы. Его SHA до создания commit не назначается.
+
+Штатный run нужно сопоставить с commit в [GitHub Actions](https://github.com/alexyakovlev79/adatours.ru/actions). Успешный deploy данным файлом заранее не объявляется.
+
+### 10.1. Все готовые туры
+
+`N` — число фактических вставок самостоятельных модулей в подготовленном Tour MD. Нулевое значение означает отсутствие таких вставок в разобранном источнике.
+
+| Строка реестра | Tour ID | Тур и канонический URL | Production-файл | N | SHA-256 V2 |
+|---:|---|---|---|---:|---|
+| 313 | `tour_source_argentina_2024` | Тур в Аргентину с Патагонией по лучшим достопримечательностям · `/argentina/tour/argentina-2024/` | `src/content/tours/argentina-2024.md` | 9 | `66f51ee2166f6f76417564609323ba2b522df5f171711160aedc02f0383a6f83` |
+| 314 | `tour_source_argentina_bariloche_i_buenos_ajres` | Тур в Аргентину – Барилоче и Буэнос-Айрес, по самым красивым местам · `/argentina/tour/argentina-bariloche-i-buenos-ajres/` | `src/content/tours/argentina-bariloche-i-buenos-ajres.md` | 0 | `f0abecf8b72426ebb619b97f6006fb4cef3243203acc6e67acf5250444ea8447` |
+| 315 | `tour_source_argentina_buenos_ajres_salta_iguasu` | Тур в Аргентину, Буэнос-Айрес и Водопады Игуасу на 12 дней · `/argentina/tour/argentina-buenos-ajres-salta-iguasu/` | `src/content/tours/argentina-buenos-ajres-salta-iguasu.md` | 4 | `7627ded9fd4ab54b78a5694c9105f750c8c1ab8d38c02c196049978fb891f584` |
+| 318 | `tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu` | Тур в Аргентину, Эль-Калафате, Мендосу и Водопады Игуасу · `/argentina/tour/argentina-buenos-ajres-mendoza-kalafate-iguasu/` | `src/content/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu.md` | 8 | `995ee6679ce621e91c1030cbb29aaa67b0ba2214519cffc8dce4e0eb93c7bb9e` |
+| 319 | `tour_source_argentina_puteshestvie_v_doistoricheskij_mir` | Тур в Аргентину: Буэнос-Айрес, Мендоса,Сан Хуан, Пуэрто Мадрин · `/argentina/tour/argentina-puteshestvie-v-doistoricheskij-mir/` | `src/content/tours/argentina-puteshestvie-v-doistoricheskij-mir.md` | 2 | `b317c1d8fb5ad5c171083389cd096bcb8007ca53ce480392e62a7a5a4e55744f` |
+| 320 | `tour_source_vlyubites_v_argentinu` | Тур в Аргентину: Буэнос-Айрес, Эль-Калафате, Сальта, Игуасу · `/argentina/tour/vlyubites-v-argentinu/` | `src/content/tours/vlyubites-v-argentinu.md` | 1 | `8d5b1135a3dd49d9440db3dd8284657da244dfc123898602bbe4d5a31d000eb6` |
+| 322 | `tour_source_udivitelnaya_salta` | Удивительная Сальта · `/argentina/tour/udivitelnaya-salta/` | `src/content/tours/udivitelnaya-salta.md` | 0 | `80a458800f9532264f07feb0950008693a826e4f592f7c616ea25a3d0137775f` |
+| 323 | `tour_source_fordy_ognennoj_zemli` | Фьорды Огненной Земли · `/multi-country/tour/fordy-ognennoj-zemli/` | `src/content/tours/fordy-ognennoj-zemli.md` | 0 | `380fe43fe319a8bc3d51b5f6921e3860ea62ce8322eb619084acd87a4dbb377d` |
+| 324 | `tour_source_chili_argentina` | Чили & Аргентина Делюкс · `/multi-country/tour/chili-argentina/` | `src/content/tours/chili-argentina.md` | 4 | `89fb9cc4ad3e8d2cf8c0cda7e6272130c61abf8afd19c1053dc6024da59e51d7` |
+| 325 | `tour_source_chili_i_argentina_vip` | Чили и Аргентина ВИП · `/multi-country/tour/chili-i-argentina-vip/` | `src/content/tours/chili-i-argentina-vip.md` | 7 | `6f0dc76b78655ba5146f498d15c60ea53ae7c505f4724c5c103c7fdc83c4c808` |
+| 326 | `tour_source_beliz_san_pedro_ostrov_ambergris_kaje` | Белиз · `/beliz/tour/beliz-san-pedro-ostrov-ambergris-kaje/` | `src/content/tours/beliz-san-pedro-ostrov-ambergris-kaje.md` | 0 | `d599209e4fb42fd65365f05b0732c86f679fe6a33cb6405ba5fb4c4d8bf4225b` |
+| 327 | `tour_source_luchshee_iz_dvukh_mirov` | Белиз: Лучшее Из Двух Миров · `/beliz/tour/luchshee-iz-dvukh-mirov/` | `src/content/tours/luchshee-iz-dvukh-mirov.md` | 0 | `5f5dc759b54ed1ec473868447180f32abdf412cae29795323a46a58fc4a253bf` |
+| 328 | `tour_source_beliz_priklyuchenie_materik_ostrov` | Белиз: Приключение «Материк / Остров» · `/beliz/tour/beliz-priklyuchenie-materik-ostrov/` | `src/content/tours/beliz-priklyuchenie-materik-ostrov.md` | 0 | `91179bfb768d21364cdd6f40b783287a674fa8a06fcf6ba2d346fde71b3126b6` |
+| 329 | `tour_source_beliz_strastnyj_nablyudatel_za_ptitsami` | Белиз: Страстный Наблюдатель за птицами · `/beliz/tour/beliz-strastnyj-nablyudatel-za-ptitsami/` | `src/content/tours/beliz-strastnyj-nablyudatel-za-ptitsami.md` | 0 | `2f0a56048f2548b44797efb91d0aef083bf5b6935fcb580bbed5ef022d2235d0` |
+| 330 | `tour_source_gvatemala_gonduras_el_salvador_beliz` | Гватемала - Гондурас- Эль Сальвадор - Белиз · `/multi-country/tour/gvatemala-gonduras-el-salvador-beliz/` | `src/content/tours/gvatemala-gonduras-el-salvador-beliz.md` | 0 | `cbd6ff257ff749a08eef7bc31a9b07da39ce42044694d7b72a48c2cac683fd33` |
+| 331 | `tour_source_gvatemala_gonduras_i_beliz` | Гватемала, Гондурас и Белиз · `/multi-country/tour/gvatemala-gonduras-i-beliz/` | `src/content/tours/gvatemala-gonduras-i-beliz.md` | 1 | `c11169002c6923b8acb9f6c4258e788b2186e7ad66d5e1021ae584fac960c025` |
+| 332 | `tour_source_issleduya_beliz` | Исследуя Белиз · `/beliz/tour/issleduya-beliz/` | `src/content/tours/issleduya-beliz.md` | 0 | `0c27629943f2da6e49d26a4748ce2e9438d9f0af4a6e5ad1060724c54790aac1` |
+| 333 | `tour_source_luchshee_v_belize` | Лучшее в Белизе · `/beliz/tour/luchshee-v-belize/` | `src/content/tours/luchshee-v-belize.md` | 0 | `de06468183e4b74a7f706ade376cec5f41fcb76d05948e327774755726369f46` |
+| 334 | `tour_source_luchshee_v_belize_za_11_dnej` | Лучшее в Белизе за 11 дней · `/beliz/tour/luchshee-v-belize-za-11-dnej/` | `src/content/tours/luchshee-v-belize-za-11-dnej.md` | 0 | `f85621ba400e8471b844b8f6cd7725f25600c74d43f2d17a1d752d8ac8dc538f` |
+| 335 | `tour_source_chudesa_beliza` | Тур в Белиз, на 6 дней (с англо или русскоговорящим гидом) · `/beliz/tour/chudesa-beliza/` | `src/content/tours/chudesa-beliza.md` | 1 | `bfa1de01efcd98d5810b0e09b19f38b342bf5b0774295f0fce7f97d31e5ac4a5` |
+| 336 | `tour_source_kankun_beliz` | Тур в Канкун и Белиз на 11 дней (с русскоговорящим гидом) · `/multi-country/tour/kankun-beliz/` | `src/content/tours/kankun-beliz.md` | 2 | `3a59d7e12668a92d30ca36b1cf3b3042e7a832e7ab4c12fdb1adac39331b7449` |
+| 337 | `tour_source_chudesa_gvatemaly_beliza` | Чудеса Гватемалы & Белиза · `/multi-country/tour/chudesa-gvatemaly-beliza/` | `src/content/tours/chudesa-gvatemaly-beliza.md` | 1 | `9ced1461a0848336bc0d6f3fe015759d95dc3ad02776d073ac68f05cf717b179` |
+| 339 | `tour_source_mechta_bolivii` | Мечта Боливии · `/boliviya/tour/mechta-bolivii/` | `src/content/tours/mechta-bolivii.md` | 0 | `c2747a0d11fc3cf31638b16f32a5de6a85b1e973928f5630d3180bcbdb199b3d` |
+| 341 | `tour_source_sokrovishcha_bolivii` | Тур в Боливию на 12 дней (все экскурсии с гидами) · `/boliviya/tour/sokrovishcha-bolivii/` | `src/content/tours/sokrovishcha-bolivii.md` | 0 | `133f7702532ac000a72d38c0d7ec3c050969820911abdb23604d88b5d940b2d9` |
+| 342 | `tour_source_prirodnye_chudesa_bolivii` | Тур в Боливию по лучшим местам страны на 10 дней · `/boliviya/tour/prirodnye-chudesa-bolivii/` | `src/content/tours/prirodnye-chudesa-bolivii.md` | 0 | `0021402ff0c75b5a11837afb60f83c0206e446ec19f23feae73f422b075bc05f` |
+| 343 | `tour_source_krasivaya_boliviya` | Тур в Боливию: солончак Уюни, Лунная Долина, Ла-Пас и Тиванку · `/boliviya/tour/krasivaya-boliviya/` | `src/content/tours/krasivaya-boliviya.md` | 0 | `11ce5ac4d301f3da01809622f66a5a8e9a5f66e3176d0be54c755b383dd534c3` |
+| 345 | `tour_source_lyuksovyj_tur_na_amazonku_v_brazilii_v_manause_i_anavilyanase_na_tri_dnya` | VIP тур в Амазонию 3 дня: гидросамолет, лодж Mirante do Gavião и розовые дельфины · `/braziliya/tour/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/` | `src/content/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya.md` | 0 | `754425518d0798f8b24f3b5c8ccbb6d21440986649c0ef0247c1fbf466494b2a` |
+| 346 | `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | VIP тур в Бразилию и Аргентину: Рио, Игуасу, Буэнос-Айрес · `/multi-country/tour/vip-tur-v-braziliyu-i-argentinu-na-10-dnej/` | `src/content/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej.md` | 12 | `2adf30e87a497e6785a8b5f7f9fd6897171ed2bf8d4d1b18643ecb8c0946b76c` |
+| 347 | `tour_source_amazoniya` | Амазония · `/braziliya/tour/amazoniya/` | `src/content/tours/amazoniya.md` | 2 | `782b045ae3f832fd84c14dab1dd0fbaee265715af40883c6b23f35b086483b5a` |
+| 348 | `tour_source_amazoniya_kruiz_tukano` | Амазония: Круиз Тукано · `/braziliya/tour/amazoniya-kruiz-tukano/` | `src/content/tours/amazoniya-kruiz-tukano.md` | 0 | `d0a61ed78cd0af625bf29f3f604702801d0813677cbfad7954623d87246faacd` |
+| 349 | `tour_source_argentina_i_braziliya_ot_lda_k_solntsu` | Аргентина и Бразилия: От льда к солнцу · `/multi-country/tour/argentina-i-braziliya-ot-lda-k-solntsu/` | `src/content/tours/argentina-i-braziliya-ot-lda-k-solntsu.md` | 2 | `d3e24bfd31665ccbf85a4dfe4dcd08605e611b8a96bb521cdd831bfd57666235` |
+| 350 | `tour_source_bolshoe_brazilskoe_priklyuchenie` | Большое бразильское приключение · `/braziliya/tour/bolshoe-brazilskoe-priklyuchenie/` | `src/content/tours/bolshoe-brazilskoe-priklyuchenie.md` | 0 | `adc3ea1b1666755bedffde65bedfbf395177b149ad3bdd92c4cb279bc4a5691c` |
+| 351 | `tour_source_fan_braziliya_i_argentina` | Бразилия и Аргентина Фан · `/multi-country/tour/fan-braziliya-i-argentina/` | `src/content/tours/fan-braziliya-i-argentina.md` | 1 | `fa0b8d1ff30b7d83b88e3206558601449ec0936e4a189fec5f1687fd678e9d51` |
+| 352 | `tour_source_braziliya_ot_san_paulo_do_buziosa` | Бразилия от Сан Пауло до Бузиоса · `/braziliya/tour/braziliya-ot-san-paulo-do-buziosa/` | `src/content/tours/braziliya-ot-san-paulo-do-buziosa.md` | 3 | `dcdf4aad4c2300ac1764364668a31477fd14ac67f3bfdf0454fc6015565b37d9` |
+| 353 | `tour_source_braziliya_s_detmi` | Бразилия с детьми · `/braziliya/tour/braziliya-s-detmi/` | `src/content/tours/braziliya-s-detmi.md` | 7 | `6a527a771960305db280ecbaec4e8f450204759e7e126d1a0c21e33a8c1dadc7` |
+| 354 | `tour_source_braziliya_s_plyazhami` | Бразилия с пляжами · `/braziliya/tour/braziliya-s-plyazhami/` | `src/content/tours/braziliya-s-plyazhami.md` | 2 | `eb422636763eb935a1289f440c21d943a727bce8daff62bd3a711f286cd31fd1` |
+| 355 | `tour_source_braziliya_argentina_i_chili` | Бразилия, Аргентина и Чили · `/multi-country/tour/braziliya-argentina-i-chili/` | `src/content/tours/braziliya-argentina-i-chili.md` | 7 | `6569b9117dadbc17057571cd25452d619008c24c6705532bd0af91fdd8a7885d` |
+| 356 | `tour_source_braziliya_argentina_gruppovoj_tur` | Бразилия-Аргентина:групповой тур · `/multi-country/tour/braziliya-argentina-gruppovoj-tur/` | `src/content/tours/braziliya-argentina-gruppovoj-tur.md` | 1 | `43bfa5d2f9a472fc16a227bed4d56af0f19c05c0b411e3ef483c2dc921828a4a` |
+| 357 | `tour_source_little_mix_ru` | Бразилия: Little Mix · `/braziliya/tour/little-mix-ru/` | `src/content/tours/little-mix-ru.md` | 0 | `ea7f2cc3184c25967aa579faf23f0c76f50d319dabe105f3e0df71524bebad8a` |
+| 358 | `tour_source_sao_paulo_buzios_rio_iguasu` | Бразилия: Сан Пауло –Игуасу- Рио-де-Жанейро – Бузиос · `/braziliya/tour/sao-paulo-buzios-rio-iguasu/` | `src/content/tours/sao-paulo-buzios-rio-iguasu.md` | 3 | `d4c50be44ee629c0cef7d332bd888c54101d70b2b67ed4160299a8276b46d8b2` |
+| 359 | `tour_source_braziliya_gruppovoj_tur_na_13_dnej` | Бразилия: групповой тур на 13 дней · `/braziliya/tour/braziliya-gruppovoj-tur-na-13-dnej/` | `src/content/tours/braziliya-gruppovoj-tur-na-13-dnej.md` | 0 | `021b2f7b056da1a615cf53477bf2abd43233454ed45d9e9069f99afbcbcba76d` |
+| 360 | `tour_source_vazhnoe_brazilii` | Важное Бразилии · `/braziliya/tour/vazhnoe-brazilii/` | `src/content/tours/vazhnoe-brazilii.md` | 3 | `f631557941cb56030866ea54b01c0cd238d3408c4c60370501151487b7dbe91e` |
+| 361 | `tour_source_vkusy_brazilii` | Вкусы Бразилии · `/braziliya/tour/vkusy-brazilii/` | `src/content/tours/vkusy-brazilii.md` | 0 | `1ee63cb46a8900fa5e278a806466c0f33c5b85feab7d6846b99dfa09e62ce50e` |
+| 363 | `tour_source_dostoprimechatelnosti_i_karnaval_v_rio_de_zhanejro` | Достопримечательности и Карнавал в Рио-де-Жанейро · `/braziliya/tour/dostoprimechatelnosti-i-karnaval-v-rio-de-zhanejro/` | `src/content/tours/dostoprimechatelnosti-i-karnaval-v-rio-de-zhanejro.md` | 1 | `1d93e8587b9c9bf6b16af3a041602fc2e769d9757dbdd4f0d919ad7038bae276` |
+| 364 | `tour_source_kofe_tur_v_brazilii` | Индивидуальный кофе-тур в Бразилию · `/braziliya/tour/kofe-tur-v-brazilii/` | `src/content/tours/kofe-tur-v-brazilii.md` | 5 | `72f57d7cf19844651b4758cbefdb4f0b9841d810dcb287b9ab3ddc31b3275ace` |
+| 365 | `tour_source_led_solntse_i_kraj_zemli` | Индивидуальный тур в Аргентину и Бразилию на 12 дней · `/multi-country/tour/led-solntse-i-kraj-zemli/` | `src/content/tours/led-solntse-i-kraj-zemli.md` | 1 | `c7b2b94bab657ed9d728599edb77363186902d737f5cdcf780507cdfc8f970f8` |
+| 366 | `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | Индивидуальный тур в Бразилию на 12 дней: Рио, Игуасу, Пантанал и Бузиос · `/braziliya/tour/rio-de-janeiro-foz-do-iguacu-pantanal-buzios/` | `src/content/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios.md` | 11 | `cdaa589838a3b1b2fbc08ffe2971039e3d6a37c8ed3dcf8d7fa1759b38dd6797` |
+| 367 | `tour_source_rajskaya_braziliya` | Индивидуальный тур в Бразилию на 13 дней · `/braziliya/tour/rajskaya-braziliya/` | `src/content/tours/rajskaya-braziliya.md` | 2 | `b32e966bcd55df6aa0aa3086aa657f3210150536f8644e6e403fc22233ee07f2` |
+| 369 | `tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe` | Индивидуальный тур в Бразилию на Парад Чемпионов · `/braziliya/tour/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe/` | `src/content/tours/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe.md` | 1 | `95936c857c1edf3c506f9ebff1fb15d5cbfae177342609b48c709f5bb64272e3` |
+| 370 | `tour_source_nezabyvaemaya_braziliya` | Индивидуальный тур в Бразилию, по лучшим местам за 12 дней · `/braziliya/tour/nezabyvaemaya-braziliya/` | `src/content/tours/nezabyvaemaya-braziliya.md` | 7 | `7b7296d3d55c89493b9ca703ca25a40797043be20a4cefd9e2ebf043c1b7b56d` |
+| 371 | `tour_source_rio_i_iguasu_puteshestvie_po_kultovym_chudesam_brazilii` | Индивидуальный тур в Бразилию: Рио-де-Жанейро и Игуасу · `/braziliya/tour/rio-i-iguasu-puteshestvie-po-kultovym-chudesam-brazilii/` | `src/content/tours/rio-i-iguasu-puteshestvie-po-kultovym-chudesam-brazilii.md` | 2 | `7ef91f4c7222f4fbff445a98201ba2e620a01beca549263ea0116e69d5965c88` |
+| 372 | `tour_source_severnyj_pantanal_vodopady_reki` | Индивидуальный тур в Бразилию: Северный Пантанал – водопады и реки · `/braziliya/tour/severnyj-pantanal-vodopady-reki/` | `src/content/tours/severnyj-pantanal-vodopady-reki.md` | 0 | `71411f448d0b78c3c6f14f24823ee13afa2aa04e9cc4ecfbb9ddb104defc4bfe` |
+| 373 | `tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro` | Индивидуальный тур в Бразилию: Северный Пантанал, Водопады и Рио-де-Жанейро · `/braziliya/tour/severnyj-pantanal-vodopady-reki-i-rio-de-zhanejro/` | `src/content/tours/severnyj-pantanal-vodopady-reki-i-rio-de-zhanejro.md` | 0 | `e34976eb5fbe0a38cd64eea9f73cb7412651c82bfe7c1ce3bd7fdcf3f8c5e3d9` |
+| 375 | `tour_source_kongress_v_rio_de_zhanejro` | Корпоративный тур в Рио-де-Жанейро на 5 дней · `/braziliya/tour/kongress-v-rio-de-zhanejro/` | `src/content/tours/kongress-v-rio-de-zhanejro.md` | 0 | `88cfbba707891a114b7759a22260ed0f5c059211dd70d8db7d092b6146664f1b` |
+| 376 | `tour_source_luchshee_v_rio_de_zhanejro_dlya_mice` | Корпоративный тур в Рио-де-Жанейро на 6 дней · `/braziliya/tour/luchshee-v-rio-de-zhanejro-dlya-mice/` | `src/content/tours/luchshee-v-rio-de-zhanejro-dlya-mice.md` | 0 | `b20563ff661dbe939cbf629e50aef751c28c634352eaed1f9a690fcd1a3e36a1` |
+| 377 | `tour_source_brazil_coffee_tour_ru` | Кофе Тур в Бразилии на 8 дней · `/braziliya/tour/brazil-coffee-tour-ru/` | `src/content/tours/brazil-coffee-tour-ru.md` | 5 | `428bf674a201df36b1007b769308ec96c5d6894a2b7878fd0ce2c4091baf3467` |
+| 378 | `tour_source_lensojs_maranenses` | Ленсойс-Мараньенсес · `/braziliya/tour/lensojs-maranenses/` | `src/content/tours/lensojs-maranenses.md` | 1 | `0fb637564a18f640cedf42df4e6de187eeb545ed6247d46fa2cc9e1f4dcf68d6` |
+| 379 | `tour_source_luchshee_brazilii_argentiny_i_chili` | Лучшее Бразилии, Аргентины и Чили · `/multi-country/tour/luchshee-brazilii-argentiny-i-chili/` | `src/content/tours/luchshee-brazilii-argentiny-i-chili.md` | 4 | `febaedb1e3419b9778054349ba5d33f855efc29c55323634b813476a8e7402a3` |
+| 380 | `tour_source_luchshee_v_brazilii_rio_iguasu_buzios` | Лучшее в Бразилии · `/braziliya/tour/luchshee-v-brazilii-rio-iguasu-buzios/` | `src/content/tours/luchshee-v-brazilii-rio-iguasu-buzios.md` | 3 | `ae07fc6cbd1d06061060ae8a604b7791c2a5cc83cd0780660c7920373d910fa3` |
+| 381 | `tour_source_luchshee_v_brazilii_za_9_dnej` | Лучшее в Бразилии за 9 дней · `/braziliya/tour/luchshee-v-brazilii-za-9-dnej/` | `src/content/tours/luchshee-v-brazilii-za-9-dnej.md` | 2 | `e6fa09729e8f0bbdb7fac7a9d23258d41fd737c6b42b8ff68bef6d645345fe43` |
+| 383 | `tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej` | Люксовый индивидуальный тур в Бразилию с Амазонией \| 16 дней · `/braziliya/tour/vip-tur-v-braziliyu-s-amazoniej-16-dnej/` | `src/content/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej.md` | 5 | `604ed1712c34c82a8153d8c993fbf26e18f360e29d8e4a87fc21b74d93970783` |
+| 384 | `tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas` | Люксовый тур в Бразилию на Карнавал в Рио, Игуасу и Алагоас \| 11 дней · `/braziliya/tour/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu-s-alagoas/` | `src/content/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu-s-alagoas.md` | 4 | `143a5238ca32ba204226e52e0431cbc2836a59f4cc64270a8760c55569e093c7` |
+| 385 | `tour_source_manaus_4_dnya_3_nochi` | Манаус: 4 дня / 3 ночи · `/braziliya/tour/manaus-4-dnya-3-nochi/` | `src/content/tours/manaus-4-dnya-3-nochi.md` | 7 | `7ec4911d896a54e7880a9a4940870d55c4f287abb7afb624256dcb243703cbea` |
+| 386 | `tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala` | Мечты сбываются на Парад Чемпионов Карнавала в Бразилии · `/multi-country/tour/mechty-sbyvayutsya-na-parad-chempionov-karnavala/` | `src/content/tours/mechty-sbyvayutsya-na-parad-chempionov-karnavala.md` | 4 | `0952de606b4499b3e4445b36f0e87855a0e1c84911ec6af57c22ff92bce487b8` |
+| 387 | `tour_source_mototur_cherez_braziliyu` | Мото тур по Бразилии за 12 дней · `/braziliya/tour/mototur-cherez-braziliyu/` | `src/content/tours/mototur-cherez-braziliyu.md` | 0 | `d3d4739dd93e6fb7746d6f8422d689651f80ffef9967d96dd511cdb95cfc9fa5` |
+| 388 | `tour_source_na_mototsiklakh_po_brazilii` | Мото-тур: на мотоциклах по Бразилии на 10 дней · `/braziliya/tour/na-mototsiklakh-po-brazilii/` | `src/content/tours/na-mototsiklakh-po-brazilii.md` | 1 | `f24f2890f4dc6d414041a0e5bcef56c6046c17a58993ded6fd05b96fa238ef36` |
+| 389 | `tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe` | Незабываемый карнавал в Рио с отдыхом на побережье и водопадами · `/braziliya/tour/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/` | `src/content/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe.md` | 4 | `2897d79e51df007d75b8fe562c704dc008c40665c7f72cfb169fc6161da31397` |
+| 390 | `tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej` | Новогодний VIP тур в Бразилию с Бонито: Рио, Игуасу \| 16 дней · `/braziliya/tour/vip-tur-v-braziliyu-s-bonito-16-dnej/` | `src/content/tours/vip-tur-v-braziliyu-s-bonito-16-dnej.md` | 5 | `6e521c1c75bebe46a4d56b044d406049dc32881bab9f37a092fc3817b571c543` |
+| 391 | `tour_source_nezabyvaemyj_novyj_god_v_brazilii` | Новогодний тур в Бразилию 10 дней: Рио, Игуасу, Бузиос от $3192 · `/braziliya/tour/nezabyvaemyj-novyj-god-v-brazilii/` | `src/content/tours/nezabyvaemyj-novyj-god-v-brazilii.md` | 2 | `e39d2867fba3c96931da75aa21f33d63564e6209c874513ea68cb999de9db2e4` |
+| 392 | `tour_source_mechty_sbyvayutsya_na_novyj_god` | Новогодний тур в Бразилию и Аргентину: 10 дней с русским гидом · `/multi-country/tour/mechty-sbyvayutsya-na-novyj-god/` | `src/content/tours/mechty-sbyvayutsya-na-novyj-god.md` | 7 | `9c0875ba881530767d9720da9822da021ac8c8dc4ef1104f2c5186a152af509b` |
+| 393 | `tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god` | Новогодний тур в Бразилию, Аргентину и Чили 2027: 10 дней, цены · `/multi-country/tour/tur-v-braziliyu-argentinu-i-chili-na-novyj-god/` | `src/content/tours/tur-v-braziliyu-argentinu-i-chili-na-novyj-god.md` | 4 | `38724a935a8de73ea7eaf1311099bc112e6b19ac008065f15508789cfd5964ef` |
+| 395 | `tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu` | Новый год в Рио и на Игуасу: тур 7 дней от $1791 · `/braziliya/tour/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu/` | `src/content/tours/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu.md` | 2 | `856da1a47bf0c5f261235031001209dc3579f29b5e846004984ad2a7c61a953b` |
+| 396 | `tour_source_nezabyvaemyj_novyj_god_v_rio` | Новый год в Рио: Копакабана, статуя Христа, Сахарная Голова · `/braziliya/tour/nezabyvaemyj-novyj-god-v-rio/` | `src/content/tours/nezabyvaemyj-novyj-god-v-rio.md` | 5 | `0b83928c95c9f1ca9a93458108bea65a51a9310e60e38d19635e85263f929a54` |
+| 397 | `tour_source_opyt_brazilii` | Опыт Бразилии · `/braziliya/tour/opyt-brazilii/` | `src/content/tours/opyt-brazilii.md` | 2 | `571f1c2368fd54d9ffcad699a77ee6f2e401df32dc22b8cdb6020d1799767ffb` |
+| 398 | `tour_source_pantanal_bonito` | Пантанал & Бонито · `/braziliya/tour/pantanal-bonito/` | `src/content/tours/pantanal-bonito.md` | 1 | `e806d757179d55fa9a5664a7d3a3473c35c9c803e3eed824cc2d4cefd9f7f006` |
+| 399 | `tour_source_pantanal_4dnya_3_nochi` | Пантанал 4дня/ 3 ночи · `/braziliya/tour/pantanal-4dnya-3-nochi/` | `src/content/tours/pantanal-4dnya-3-nochi.md` | 0 | `8f865326b17feedf76e3765978a22c46f14b55c664a1ebac75fd4ac2b5378c9e` |
+| 400 | `tour_source_pantanal_za_5_dnej` | Пантанал за 5 дней · `/braziliya/tour/pantanal-za-5-dnej/` | `src/content/tours/pantanal-za-5-dnej.md` | 0 | `8b434597f7995cfdec9570787d16ff928664cf78099167138ce7c895fd37ecde` |
+| 401 | `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | Парад Чемпионов в Рио де Жанейро & Водопады · `/braziliya/tour/parad-chempionov-v-rio-de-zhanejro-vodopady/` | `src/content/tours/parad-chempionov-v-rio-de-zhanejro-vodopady.md` | 4 | `72e2e3ebc2e158660d270c720015a6895fb3d20436330ad59652a3f7ffa77f8b` |
+| 402 | `tour_source_peru_i_braziliya_na` | Перу и Бразилия · `/multi-country/tour/peru-i-braziliya-na/` | `src/content/tours/peru-i-braziliya-na.md` | 3 | `057d4df7fe8611a348264ab2acd8db243857b58a417ef6d7f3e7b28286a92236` |
+| 403 | `tour_source_belosnezhnye_zhemchuzhiny_brazilii` | Пляжный тур в Бразилию на 10 дней · `/braziliya/tour/belosnezhnye-zhemchuzhiny-brazilii/` | `src/content/tours/belosnezhnye-zhemchuzhiny-brazilii.md` | 0 | `e070fcaabed8eb0583d3388e106d1004a1f785916c095a136fda1e61dddc298d` |
+| 404 | `tour_source_prazdnik_gordosti_v_rio_de_zhanejro` | Праздник гордости в Рио-де-Жанейро · `/braziliya/tour/prazdnik-gordosti-v-rio-de-zhanejro/` | `src/content/tours/prazdnik-gordosti-v-rio-de-zhanejro.md` | 0 | `cbfd5a591299a3401073df37cb28e731c7cea5b09e553cbea2c3d714ab82c3a6` |
+| 405 | `tour_source_priklyucheniya_v_amazonke` | Приключенческий тур-выживание в Амазонских джунглях · `/braziliya/tour/priklyucheniya-v-amazonke/` | `src/content/tours/priklyucheniya-v-amazonke.md` | 0 | `c851a26614f2b5c874330d0d48683b75306e1b1490bb082170daa4887cd9b5f4` |
+| 406 | `tour_source_puteshestvie_po_kultovym_chudesam_brazilii` | Путешествие по культовым чудесам Бразилии · `/braziliya/tour/puteshestvie-po-kultovym-chudesam-brazilii/` | `src/content/tours/puteshestvie-po-kultovym-chudesam-brazilii.md` | 2 | `50100b4372eb18eb33875f579ad12cac27a2b6c38528b61564777404ec3caef8` |
+| 407 | `tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu` | Рио-де-Жанейро - Амазония - Водопады Игуасу · `/braziliya/tour/rio-de-zhanejro-amazoniya-vodopady-iguasu/` | `src/content/tours/rio-de-zhanejro-amazoniya-vodopady-iguasu.md` | 5 | `18c7e01a25fb51525045d12f5454277c9e4862bc9de376013c543acf02f44f6e` |
+| 408 | `tour_source_roskoshnaya_braziliya_i_argentina` | Роскошная Бразилия и Аргентина · `/multi-country/tour/roskoshnaya-braziliya-i-argentina/` | `src/content/tours/roskoshnaya-braziliya-i-argentina.md` | 13 | `1495fad00a004e7a1216545bb2bd8bbede43b9ffa963890b9d9b939dc163210f` |
+| 409 | `tour_source_rybalka_v_pantanale` | Рыбалка в Пантанале · `/braziliya/tour/rybalka-v-pantanale/` | `src/content/tours/rybalka-v-pantanale.md` | 0 | `8d56699eb54f3bb7214ab01526d59f97ca645296dcb91b2402d98264d59576cb` |
+| 412 | `tour_source_sekrety_pantanala` | Секреты Пантанала · `/braziliya/tour/sekrety-pantanala/` | `src/content/tours/sekrety-pantanala.md` | 0 | `b42623d2472021874b09aec2c054c59d1b56af2652cf24385170d52a742018de` |
+| 413 | `tour_source_tur_v_braziliyu_s_detmi` | Семейный тур в Бразилию \| Отдых с детьми в Латинской Америке · `/braziliya/tour/tur-v-braziliyu-s-detmi/` | `src/content/tours/tur-v-braziliyu-s-detmi.md` | 8 | `190328c4164a92f4186836834a0b227770c503751cde23e3f4a8b1c4e08602b9` |
+| 414 | `tour_source_solntse_tango_vino_i_atakama` | Солнце, Танго, Вино и Атакама · `/multi-country/tour/solntse-tango-vino-i-atakama/` | `src/content/tours/solntse-tango-vino-i-atakama.md` | 3 | `724533b901f74b0459576a5c2eb1d1cfe708bf7d276e872b97aba090de272166` |
+| 415 | `tour_source_rio_de_zhanejro` | Спортивная рыбалка – Pousada Mamori · `/braziliya/tour/rio-de-zhanejro/` | `src/content/tours/rio-de-zhanejro.md` | 0 | `47436b5c90ba03cb5d839042975fd395c3a3db2f21ff2e54c2acf48bbf91e6eb` |
+| 417 | `tour_source_novyj_god_v_rio_de_zhanejro_1` | Тур Новый Год в Рио-де-Жанейро · `/braziliya/tour/novyj-god-v-rio-de-zhanejro-1/` | `src/content/tours/novyj-god-v-rio-de-zhanejro-1.md` | 6 | `68e76884fb127625153dd23bb754555d05195b3fe00e16def3028e2987836520` |
+| 418 | `tour_source_argentina_and_brazil_ru` | Тур в Аргентину и Бразилию, лучшее за 10 дней · `/multi-country/tour/argentina-and-brazil-ru/` | `src/content/tours/argentina-and-brazil-ru.md` | 1 | `54aacf1abb070fcd4375744b79c3d3b034cf9942ede3f3da64aeb44f32d9e5f1` |
+| 419 | `tour_source_ekzoticheskij_karnaval_v_brazilii_rio_amazonka_vodopady_iguasu` | Тур в Бразилию - карнавал в Рио, Амазонка, водопады Игуасу · `/braziliya/tour/ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu/` | `src/content/tours/ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu.md` | 4 | `0c813006585f2007fb67faf618c7714aee3ade1eedb2455d78c0196409b00ddc` |
+| 420 | `tour_source_tur_v_braziliyu_za_vkusami` | Тур в Бразилию в Рио де Жанейро, Илья-Гранди, Парати · `/braziliya/tour/tur-v-braziliyu-za-vkusami/` | `src/content/tours/tur-v-braziliyu-za-vkusami.md` | 0 | `a15508e3a86e2f9d4f7ef0b25f7fec699aac00b0333053875aba2b721a4e6d74` |
+| 421 | `tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu` | Тур в Бразилию в Рио-де-Жанейро и Водопады Игуасу на 8 дней · `/braziliya/tour/special-noe-predlozhenie-rio-and-vodopa-dy-iguasu/` | `src/content/tours/special-noe-predlozhenie-rio-and-vodopa-dy-iguasu.md` | 7 | `f82859fe2dffecd285c5d38f268db6b1ccbba67a66ecf1e0ef1e2aebc3d74469` |
+| 422 | `tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej` | Тур в Бразилию и Аргентину на 9 дней: Рио, Игуасу, Буэнос-Айрес \| Цена от $2775 · `/multi-country/tour/mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej/` | `src/content/tours/mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej.md` | 8 | `78898c84afc37e750b17350831e144ff31783df64d77ba898c729a73581ddb62` |
+| 423 | `tour_source_tur_v_argentinu_i_braziliyu_ot_lda_do_solntsa` | Тур в Бразилию и Аргентину: Водопады Игуасу и ледники Патагонии · `/multi-country/tour/tur-v-argentinu-i-braziliyu-ot-lda-do-solntsa/` | `src/content/tours/tur-v-argentinu-i-braziliyu-ot-lda-do-solntsa.md` | 1 | `1602de79ce38a8f621daf8e52f322b2204d098a449039c698cc3d0a2486d6374` |
+| 424 | `tour_source_braziliya_i_argentina_v_sentyabre` | Тур в Бразилию и Аргентину: Рио-де-Жанейро, Фоз де Игуасу, Буэнос Айрес · `/multi-country/tour/braziliya-i-argentina-v-sentyabre/` | `src/content/tours/braziliya-i-argentina-v-sentyabre.md` | 1 | `68279792632c47dc4b13d9ef203dfab7206a12df4cdb4c646205f54c471ee34f` |
+| 425 | `tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu` | Тур в Бразилию и Аргентину: от Манауса (Амазонка) до Игуасу · `/multi-country/tour/tur-v-braziliyu-s-amazoniej-i-argentinu/` | `src/content/tours/tur-v-braziliyu-s-amazoniej-i-argentinu.md` | 2 | `d77292c305c2527897a68f905ffb29cdfde4a03cf638eeebf6a8f663fdc7656b` |
+| 426 | `tour_source_braziliya_i_peru_na_novyj_god` | Тур в Бразилию и Перу на празднование Нового Года · `/multi-country/tour/braziliya-i-peru-na-novyj-god/` | `src/content/tours/braziliya-i-peru-na-novyj-god.md` | 5 | `8f9275bd649b30be65d8b04e58961985317851098b3907c98087b9d8237cf7a2` |
+| 427 | `tour_source_braziliya_s_vodopadami_na_novyj_god` | Тур в Бразилию и на водопады Игуасу на Новый Год · `/braziliya/tour/braziliya-s-vodopadami-na-novyj-god/` | `src/content/tours/braziliya-s-vodopadami-na-novyj-god.md` | 3 | `cf46457931f28e6767fe7c82a19fcb90a33bcc56519d9f67231f7e074ba76ebd` |
+| 428 | `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | Тур в Бразилию индивидуальный: Рио, Игуасу, Пантанал, Бонито и Бузиос · `/braziliya/tour/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/` | `src/content/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala.md` | 5 | `b678c6c8178341645156d27ce4bf38c8e37cc89b95f14030796f404d87d9c4c1` |
+| 429 | `tour_source_roskoshnyj_novyj_god_v_brazilii` | Тур в Бразилию на 10 дней – Роскошный Новый Год · `/braziliya/tour/roskoshnyj-novyj-god-v-brazilii/` | `src/content/tours/roskoshnyj-novyj-god-v-brazilii.md` | 4 | `ff4cac7656483f49494b37e5b7c5797e1c6720af1f4943de09c70f8d730620a7` |
+| 430 | `tour_source_tropicheskij_karnaval_s_angroj_dush_rejsh` | Тур в Бразилию на 12 дней \| Карнавал в Рио с пляжным отдыхом · `/braziliya/tour/tropicheskij-karnaval-s-angroj-dush-rejsh/` | `src/content/tours/tropicheskij-karnaval-s-angroj-dush-rejsh.md` | 1 | `f47a9df73c82f6a26e067b7d06f0bab6de2bfc2dd7f12b32c0b7da62cbdeefc8` |
+| 431 | `tour_source_tur_v_braziliyu_na_6dnej` | Тур в Бразилию на 6 дней: Рио-де-Жанейро и на Водопады Игуасу · `/braziliya/tour/tur-v-braziliyu-na-6dnej/` | `src/content/tours/tur-v-braziliyu-na-6dnej.md` | 2 | `d3006619915b53354265a9eb9d085c0bd255eac4b23728f793b20cfad16c9cac` |
+| 432 | `tour_source_super_predlozhenie_rio_buzios` | Тур в Бразилию на 8 дней с Рио и пляжным отдыхом в Бузиосе · `/braziliya/tour/super-predlozhenie-rio-buzios/` | `src/content/tours/super-predlozhenie-rio-buzios.md` | 5 | `44ce2b95548c1f8fc5fa9aa060c90c13a467f53a6cf29ff063ad99c42311b215` |
+| 433 | `tour_source_tur_v_ekzoticheskuyu_braziliyu` | Тур в Бразилию на Амазонку и водопады Игуасу с пляжным отдыхом · `/braziliya/tour/tur-v-ekzoticheskuyu-braziliyu/` | `src/content/tours/tur-v-ekzoticheskuyu-braziliyu.md` | 9 | `51f5282c4fe94e21910297490228880e794e4e223b31151eca9123fcd47fd268` |
+| 434 | `tour_source_ekzoticheskij_karnaval_v_brazilii` | Тур в Бразилию на Карнавал в Рио \| Игуасу, Амазонка и Бузиос · `/braziliya/tour/ekzoticheskij-karnaval-v-brazilii/` | `src/content/tours/ekzoticheskij-karnaval-v-brazilii.md` | 6 | `7d6d35dbbe989b26fcf3a8599a522891696ed76346ccbc821823ba6d7ff68ce3` |
+| 435 | `tour_source_karnaval_v_rio_de_zhanejro_vodopady` | Тур в Бразилию на Карнавал в Рио и Игуасу \| 8 дней · `/braziliya/tour/karnaval-v-rio-de-zhanejro-vodopady/` | `src/content/tours/karnaval-v-rio-de-zhanejro-vodopady.md` | 0 | `8442f1b9ffc14168b29268c2d33c5bb6fde300d3f1d826b6e2a4b69e8bed0096` |
+| 436 | `tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu` | Тур в Бразилию на Карнавал в Рио и водопады Игуасу \| 8 дней · `/braziliya/tour/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu/` | `src/content/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu.md` | 3 | `f0ad58a031ec863be8d7be24430fd2429a21d554690fb9b3d271ca839fa56eec` |
+| 437 | `tour_source_tropicheskij_karnaval_v_brazilii` | Тур в Бразилию на Карнавал в Рио с пляжным отдыхом \| 12 дней · `/braziliya/tour/tropicheskij-karnaval-v-brazilii/` | `src/content/tours/tropicheskij-karnaval-v-brazilii.md` | 0 | `4913197eb82313acea6d6af2fa5a430ba64cb0945d2fefbfd3488a0ad3810143` |
+| 438 | `tour_source_mechty_sbyvayutsya_na_karnaval` | Тур в Бразилию на Карнавал в Рио, Аргентина, Игуасу \| 10 дней · `/multi-country/tour/mechty-sbyvayutsya-na-karnaval/` | `src/content/tours/mechty-sbyvayutsya-na-karnaval.md` | 4 | `97edc350e3174c64c0df948ef3526f49ad205a22593edf62dd1ae8993ad23069` |
+| 439 | `tour_source_nezabyvaemyj_karnaval_v_brazilii` | Тур в Бразилию на Карнавал с пляжным отдыхом и водопадами Игуасу · `/braziliya/tour/nezabyvaemyj-karnaval-v-brazilii/` | `src/content/tours/nezabyvaemyj-karnaval-v-brazilii.md` | 4 | `40d13c6181a676dce27754fa69370ebba81c7aaf673564db2fec8e684b2715ff` |
+| 440 | `tour_source_novogodnie_priklyucheniya_v_brazilii` | Тур в Бразилию на Новый Год: Рио, Пантанал, Бонито, пляжи Бузиоса · `/braziliya/tour/novogodnie-priklyucheniya-v-brazilii/` | `src/content/tours/novogodnie-priklyucheniya-v-brazilii.md` | 1 | `8da80ff29e4b7492401d6120d698b626edf6bbf6b7caa68400d1ee70bd5eeaf1` |
+| 441 | `tour_source_ekzoticheskij_novyj_god_ru` | Тур в Бразилию на Новый год: Рио, Игуасу, Амазония · `/braziliya/tour/ekzoticheskij-novyj-god-ru/` | `src/content/tours/ekzoticheskij-novyj-god-ru.md` | 4 | `568aa7c970d421522ccf3bd4597845c8c957b532b7f0ab67a5d78c41b536a5bd` |
+| 442 | `tour_source_tur_v_braziliyu_na_13_dnej` | Тур в Бразилию на водопады Игуасу с пляжным отдыхом в Бузиос · `/braziliya/tour/tur-v-braziliyu-na-13-dnej/` | `src/content/tours/tur-v-braziliyu-na-13-dnej.md` | 4 | `868fbb2694e33b4ca87f11d135c29f30474ec7f2a07a2565be57e760da154dba` |
+| 443 | `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | Тур в Бразилию на кофейные плантации и водопады Игуасу, 8 дней · `/braziliya/tour/tur-v-braziliyu-na-kofejnye-fazendy/` | `src/content/tours/tur-v-braziliyu-na-kofejnye-fazendy.md` | 9 | `df502226775e035681c3930e89284073ad190fd6cb267ecab36cd7376d5b480e` |
+| 444 | `tour_source_parad_chempionov_karnavala_v_rio` | Тур в Бразилию на парад чемпионов карнавала в Рио · `/braziliya/tour/parad-chempionov-karnavala-v-rio/` | `src/content/tours/parad-chempionov-karnavala-v-rio.md` | 1 | `429e6e8eb4984f554ac9380dfe2620434dbb2777823b50fa12a22f02a37b8eeb` |
+| 446 | `tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre` | Тур в Бразилию по лучшим достопримечательностям на 13 дней · `/braziliya/tour/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/` | `src/content/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre.md` | 3 | `a404036659ae5f2d292e731d2b11f60b5008da08c8038b1ce68e49fcdfca8473` |
+| 447 | `tour_source_ekspress_braziliya_rio_ibuzios` | Тур в Бразилию с Рио и отдыхом на курорте Бузиос «Экспресс» · `/braziliya/tour/ekspress-braziliya-rio-ibuzios/` | `src/content/tours/ekspress-braziliya-rio-ibuzios.md` | 0 | `6faa8e4004433eccb5091e9302882c7d55607cf2254631b60caff75a7d59d857` |
+| 449 | `tour_source_stolitsy_latinskoj_ameriki` | Тур в Бразилию, Аргентину и Уругвай за 13 дней · `/multi-country/tour/stolitsy-latinskoj-ameriki/` | `src/content/tours/stolitsy-latinskoj-ameriki.md` | 1 | `fb0a87049906697883ebca8c7e927759f284d32a09991b5c3c6e3b5e9801b1eb` |
+| 450 | `tour_source_solntse_tango_i_vino` | Тур в Бразилию, Аргентину и Чили с Водопадами Игуасу на 12 дней · `/multi-country/tour/solntse-tango-i-vino/` | `src/content/tours/solntse-tango-i-vino.md` | 15 | `2dbfee5b9f74404d9fd6c109910d3778e39eaaf1c126c6c433e8a18a6675d4ad` |
+| 451 | `tour_source_braziliya_argentina_chili_peru_ru` | Тур в Бразилию, Аргентину, Чили и Перу на 15 дней · `/multi-country/tour/braziliya-argentina-chili-peru-ru/` | `src/content/tours/braziliya-argentina-chili-peru-ru.md` | 0 | `e7ec7abda93964a5b2adc7cbcfe2e35e25634d2534f99610c5407c8f8c7503f6` |
+| 452 | `tour_source_tur_v_krasochnuyu_braziliyu_2022` | Тур в Бразилию: Игуасу, Рио-де-Жанейро, Сальвадор, Ресифи · `/braziliya/tour/tur-v-krasochnuyu-braziliyu-2022/` | `src/content/tours/tur-v-krasochnuyu-braziliyu-2022.md` | 2 | `65b388700d274faf3440629a615b393486b1919fe6cfe17f8e3608074245bb14` |
+| 453 | `tour_source_tropicheskaya_braziliya` | Тур в Бразилию: Рио-де-Жанейро и пляжный отдых в Бузиосе · `/braziliya/tour/tropicheskaya-braziliya/` | `src/content/tours/tropicheskaya-braziliya.md` | 5 | `c22f449c32d17bdc15ff3b2bd85666bd085484e1e0d1ac429cb71e5197d13b62` |
+| 454 | `tour_source_podlinnaya_braziliya` | Тур в Бразилию: Рио-де-Жанейро, Манаус, Сальвадор, Фос-ду-Игуасу · `/braziliya/tour/podlinnaya-braziliya/` | `src/content/tours/podlinnaya-braziliya.md` | 3 | `73b1b3d1459f6457c32e1e54f47cef96697d10c664e52547dc8a1521ba9b853a` |
+| 455 | `tour_source_brazilskaya_mechta` | Тур в Бразилию: Рио-де-Жанейро, Тропический остров и исторический Парати · `/braziliya/tour/brazilskaya-mechta/` | `src/content/tours/brazilskaya-mechta.md` | 0 | `6805d024a628b9e357a52087104bfa328c138d37772e73e92aac08ed6f5191eb` |
+| 456 | `tour_source_braziliya_s_san_paulo` | Тур в Бразилию: Сан Пауло, Манаус, Рио-де-Жанейро, Игуасу · `/braziliya/tour/braziliya-s-san-paulo/` | `src/content/tours/braziliya-s-san-paulo.md` | 5 | `b62b1a91a0d471688e1271ad3f5044e9cb1ecb3131a216a3ec87ad5c7ee727ef` |
+| 457 | `tour_source_tur_v_braziliyu_k_mestam_sily` | Тур в Бразилию: водопады Игуасу, регион Висконде де Мауа и Парати · `/braziliya/tour/tur-v-braziliyu-k-mestam-sily/` | `src/content/tours/tur-v-braziliyu-k-mestam-sily.md` | 0 | `2a86994c89cf72ae3220827b24cc2281f4e4dffd26bd9a4464cd05d10c5f0e17` |
+| 458 | `tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio` | Тур в Латинскую Америку \| 3 страны и Карнавал в Бразилии · `/multi-country/tour/3-strany-latinskoj-ameriki-na-karnaval-v-rio/` | `src/content/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio.md` | 6 | `fc21f99adee22a5dc440be045ef23ddddef18551c10d8e2a86ce86abbb90ebf8` |
+| 459 | `tour_source_tur_v_peru_i_braziliyu` | Тур в Перу с Мачу Пикчу и Бразилию в Рио с пляжным отдыхом · `/multi-country/tour/tur-v-peru-i-braziliyu/` | `src/content/tours/tur-v-peru-i-braziliyu.md` | 4 | `6531f35cafcb3e53c3282a8316c83dc7e54b02f407f9e0c4b88147fada460ad8` |
+| 460 | `tour_source_tur_v_4_strany_yuzhnoj_ameriki` | Тур в страны Южной Америки: Бразилия, Аргентина, Чили, Уругвай · `/multi-country/tour/tur-v-4-strany-yuzhnoj-ameriki/` | `src/content/tours/tur-v-4-strany-yuzhnoj-ameriki.md` | 3 | `fd9b6f9ddba1532e98e475b4776b870133b64fdde5cd14cddb0c4357cef28d56` |
+| 461 | `tour_source_karnaval_v_rio_de_zhanejro` | Тур на Карнавал в Рио в Бразилии: цены и программа тура · `/braziliya/tour/karnaval-v-rio-de-zhanejro/` | `src/content/tours/karnaval-v-rio-de-zhanejro.md` | 1 | `ea0890fa63782868f3898363499de1c4464da9b0cac47fa201a77d62c5a2a766` |
+| 462 | `tour_source_tropicheskij_novyj_god_v_brazilii` | Тур на Новый год в Бразилию: Рио и пляжный отдых в Бузиосе · `/braziliya/tour/tropicheskij-novyj-god-v-brazilii/` | `src/content/tours/tropicheskij-novyj-god-v-brazilii.md` | 0 | `1427de052b7a6e1627bf03935f28039a586e1f5e9f5417d4086c448c832b5af8` |
+| 464 | `tour_source_udivitelnaya_braziliya` | Удивительная Бразилия · `/braziliya/tour/udivitelnaya-braziliya/` | `src/content/tours/udivitelnaya-braziliya.md` | 0 | `3dc9bb163dc595b17c1f04d6e74c1f70bf11927d3f01fc4542013c3356a6289a` |
+| 465 | `tour_source_chili_argentina_braziliya` | Чили-Аргентина- Бразилия · `/multi-country/tour/chili-argentina-braziliya/` | `src/content/tours/chili-argentina-braziliya.md` | 11 | `94364c774281d68c7c32be5bf01136325dabbdd9f52655df8309328bdd81e011` |
+| 466 | `tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii` | Экзотический Карнавал (Парад Чемпионов) в Бразилии · `/braziliya/tour/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/` | `src/content/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii.md` | 6 | `f8a04c281534fb16f2ca5521e7f7f53ba5cd285234adc8bf670198bda3bb3e07` |
+| 468 | `tour_source_exclusive_amazon_experience_ru` | Эксклюзивное Приключение в Амазонии · `/braziliya/tour/exclusive-amazon-experience-ru/` | `src/content/tours/exclusive-amazon-experience-ru.md` | 0 | `a770e65ed93fd5064d2cc9a36413fcfb1172a41a519465b541155ac1da07ff47` |
+| 469 | `tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu` | Экспресс Бразилия: Рио де Жанейро + Водопады Игуазу · `/braziliya/tour/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/` | `src/content/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu.md` | 0 | `7d43ece09b60fbc4e35485a16b8318e9d13a1722f6967790e8ad2220b93b2357` |
+| 471 | `tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda` | Активная Венесуэла: Аквапарк Юрского периода · `/venesuela/tour/aktivnaya-venesuela-akvapark-yurskogo-perioda/` | `src/content/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda.md` | 0 | `bc3e110f87f8f04a02c6ef73834ab0d54e81844a710d4e32a6ee542378b3e157` |
+| 472 | `tour_source_venesuela_novye_konkistadory` | Венесуэла -Новые Конкистадоры · `/venesuela/tour/venesuela-novye-konkistadory/` | `src/content/tours/venesuela-novye-konkistadory.md` | 0 | `19b1efe3758a9e8eda1510eb027c8d2c10ae2f6a2349897ff89c18f4e234dee9` |
+| 473 | `tour_source_venesuela_populyarnye_napravleniya` | Венесуэла: Популярные направления · `/venesuela/tour/venesuela-populyarnye-napravleniya/` | `src/content/tours/venesuela-populyarnye-napravleniya.md` | 1 | `65b88c34c334c6c8a2136610ea41b9d8bb14c24021bf060d37e02ddef7878afe` |
+| 474 | `tour_source_kraski_venesuely` | Краски Венесуэлы · `/venesuela/tour/kraski-venesuely/` | `src/content/tours/kraski-venesuely.md` | 8 | `47cdfb0c0008c64a531d489abf92a69cf33988f8fd7f39b03f89d3ec22c1a9c8` |
+| 475 | `tour_source_populyarnye_napravleniya_venesuely` | Популярные Направления Венесуэлы от туроператора Ада Турс · `/venesuela/tour/populyarnye-napravleniya-venesuely/` | `src/content/tours/populyarnye-napravleniya-venesuely.md` | 1 | `4961c5369f0f9903629e32e0bd53d56924cb0b47ff7274f9ba9755464ae1aed7` |
+| 476 | `tour_source_skazki_venesuelskogo_lesa` | Сказки Венесуэльского Леса · `/venesuela/tour/skazki-venesuelskogo-lesa/` | `src/content/tours/skazki-venesuelskogo-lesa.md` | 2 | `9d5b71f5db7207ee85bcb88a9ff7a9c9b3a7b526d571367633ceb5b2d8f90cf7` |
+| 477 | `tour_source_soedinennye_shtaty_venesuely` | Соединенные Штаты Венесуэлы · `/venesuela/tour/soedinennye-shtaty-venesuely/` | `src/content/tours/soedinennye-shtaty-venesuely.md` | 0 | `6bcfa56f85976b7b6a68dcbc311b445d1ec58e95f325bcd6d459f06227cb000d` |
+| 478 | `tour_source_priroda_i_kultura_venesuely_bolivii` | Тур в Венесуэлу и Боливию \| Природа и культура за 12 дней · `/multi-country/tour/priroda-i-kultura-venesuely-bolivii/` | `src/content/tours/priroda-i-kultura-venesuely-bolivii.md` | 1 | `4fd820f744469e777f0b9be1024b371725e44310be1ec6dc6ada55307a9340b7` |
+| 479 | `tour_source_venesuela_prirodnye_kontrasty_tropikov` | Тур в Венесуэлу на 12 дней по лучшим местам страны и пляжным отдыхом · `/venesuela/tour/venesuela-prirodnye-kontrasty-tropikov/` | `src/content/tours/venesuela-prirodnye-kontrasty-tropikov.md` | 1 | `02d2fce4e2ddc26e5cd4a7e7e3491f483d3a31489a3e3f850e8da9a0d556bfac` |
+| 480 | `tour_source_krasota_venesuely` | Тур в Венесуэлу на 12 дней с пляжным отдыхом и эко-маршрутами · `/venesuela/tour/krasota-venesuely/` | `src/content/tours/krasota-venesuely.md` | 1 | `0d56927a839dc32eb9cac0382dc62ab190a81be7884f624b4ee020dd709827a8` |
+| 481 | `tour_source_luchshee_v_venesuele` | Тур в Венесуэлу на 12 дней с пляжным отдыхом на о.Маргарита · `/venesuela/tour/luchshee-v-venesuele/` | `src/content/tours/luchshee-v-venesuele.md` | 8 | `6bae8e51cdd0245f15faa2326b9afbaceb3acba88adf5d8bd06da44025b3ae9e` |
+| 482 | `tour_source_venesuela_treking_v_zateryannyj_i_pervozdannyj_mir_rorajmy` | Тур в Венесуэлу на 12 дней с трекингом на столовую гору Рорайма · `/venesuela/tour/venesuela-treking-v-zateryannyj-i-pervozdannyj-mir-rorajmy/` | `src/content/tours/venesuela-treking-v-zateryannyj-i-pervozdannyj-mir-rorajmy.md` | 1 | `131e42c62bb5248674289b59712e39b13fcd03ce61124353e4ce1e3a5119e590` |
+| 483 | `tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana` | Тур в три страны Латинской Америки: Суринам, Гайана и Фр.Гвиана · `/multi-country/tour/3-strany-gajana-surinam-i-frantsuzskaya-gviana/` | `src/content/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana.md` | 0 | `86c0e35251a48ce327e7f63eacd28a198b63c95140e53319d9eae0cf20e6cf5f` |
+| 484 | `tour_source_luchshee_v_gvatemale` | Лучшее в Гватемале · `/multi-country/tour/luchshee-v-gvatemale/` | `src/content/tours/luchshee-v-gvatemale.md` | 0 | `ab38f3e5216b9185aec0c61788099531914c518474d0eeab477ba175dd772369` |
+| 485 | `tour_source_mir_majya` | Мир Майя · `/multi-country/tour/mir-majya/` | `src/content/tours/mir-majya.md` | 0 | `d4c14f902934bc4937d870df0b20400e67ad87378fae6aafdb55cbc376bdca10` |
+| 486 | `tour_source_klassicheskaya_programma_po_gvatemale` | Тур в Гватемалу: Антигуа, Гватемала Сити, Сантьяго Атитлан · `/gvatemala/tour/klassicheskaya-programma-po-gvatemale/` | `src/content/tours/klassicheskaya-programma-po-gvatemale.md` | 0 | `a99ca4552744421eb4376ed0f6c46ee53df7dc2a416b79f0d8a623156bb49830` |
+| 487 | `tour_source_otkryvaya_gvatemalu` | Тур в Гватемалу: Гватемала Cити, Антигуа, Сантьяго Атитлан, Тикаль · `/gvatemala/tour/otkryvaya-gvatemalu/` | `src/content/tours/otkryvaya-gvatemalu.md` | 0 | `f65119791ad91cf2a2d2cc16029b350517c31ada8a65fdadea52138dc9867b14` |
+| 488 | `tour_source_vivat_kolumbiya` | Виват Колумбия · `/kolumbiya/tour/vivat-kolumbiya/` | `src/content/tours/vivat-kolumbiya.md` | 0 | `066b57f2bac735849bb3c802c88c5dd01464bef6dc7570a858f52d060ce8036d` |
+| 489 | `tour_source_zateryannyj_gorod_v_santa_marte` | Затерянный город в Санта Мартe 2023 · `/kolumbiya/tour/zateryannyj-gorod-v-santa-marte/` | `src/content/tours/zateryannyj-gorod-v-santa-marte.md` | 0 | `d5418c19da937115b3ead57296340b9a2a87c1db85082b36ae2e34b722acaa10` |
+| 490 | `tour_source_kolumbiya_2024` | Колумбия · `/kolumbiya/tour/kolumbiya-2024/` | `src/content/tours/kolumbiya-2024.md` | 1 | `a7ad7e5264ddffd9283f723d63522fd0f04c6ff462aba5c4311652a4359283f4` |
+| 491 | `tour_source_kolumbiya_live` | Колумбия Live · `/kolumbiya/tour/kolumbiya-live/` | `src/content/tours/kolumbiya-live.md` | 0 | `4d1873c12922dccd31f32490577afed8c7cda37bab4220651d32986b9c259633` |
+| 492 | `tour_source_kolumbiya_c_kofe` | Колумбия Кофе · `/kolumbiya/tour/kolumbiya-c-kofe/` | `src/content/tours/kolumbiya-c-kofe.md` | 0 | `c6583ff025a5853984d45c6edf17c34002f7da8b16fc0e722b377f3286ba44e1` |
+| 493 | `tour_source_kolumbiya_metropoliten` | Колумбия Метрополитен · `/kolumbiya/tour/kolumbiya-metropoliten/` | `src/content/tours/kolumbiya-metropoliten.md` | 0 | `97230bc51a60fda9768b480f78300b6c5a9bc4d781f6e2e00acd277eac253d98` |
+| 494 | `tour_source_kolumbiya_s_kano_kristales_i_ne_tolko` | Колумбия с «Каньо-Кристалес» и не только · `/kolumbiya/tour/kolumbiya-s-kano-kristales-i-ne-tolko/` | `src/content/tours/kolumbiya-s-kano-kristales-i-ne-tolko.md` | 0 | `7628d52349a83a5f61a966ea55ce8231c96dd1a379877340e9d6fd1179ba0136` |
+| 495 | `tour_source_kolumbiya_stolitsy` | Колумбия- столицы · `/kolumbiya/tour/kolumbiya-stolitsy/` | `src/content/tours/kolumbiya-stolitsy.md` | 1 | `4654cf8d14e955bafb364218dcc55c0778077ad1d4e4653848f55e8d810eaad2` |
+| 496 | `tour_source_manyashchij_peru_kolumbiya` | Манящий Перу & Колумбия · `/multi-country/tour/manyashchij-peru-kolumbiya/` | `src/content/tours/manyashchij-peru-kolumbiya.md` | 3 | `de7210213f956024b5ded10a90a564a71e56812444b35efc38601c15e82ceabb` |
+| 497 | `tour_source_ot_venesuely_do_kolumbii` | Тур в Венесуэлу и Колумбию на 12 дней (групповой с русским гидом) · `/multi-country/tour/ot-venesuely-do-kolumbii/` | `src/content/tours/ot-venesuely-do-kolumbii.md` | 0 | `726c84fe8270f632af4d4f6f50fd0d6cffefbfd5b29b921a061530a9cb4ca752` |
+| 499 | `tour_source_puteshestvie_k_raduzhnoj_reke_kolumbii` | Тур в Колумбию в Боготу, Ла Макарену и реку Каньо-Кристалес · `/kolumbiya/tour/puteshestvie-k-raduzhnoj-reke-kolumbii/` | `src/content/tours/puteshestvie-k-raduzhnoj-reke-kolumbii.md` | 0 | `f09ee11405f091e015350f4221882aa9764288701404fe51ac6c4d1ad83649ef` |
+| 500 | `tour_source_manyashchaya_kolumbiya_baru` | Тур в Колумбию в группе на 12 дней с пляжным отдыхом на о.Бару · `/kolumbiya/tour/manyashchaya-kolumbiya-baru/` | `src/content/tours/manyashchaya-kolumbiya-baru.md` | 0 | `bbb7ec7f3b7b2f3007e480b4d3df25af77fdb8b9bd427ae7b71ddd9b987bfb8e` |
+| 501 | `tour_source_tur_v_kolumbiyu_za_chudesami` | Тур в Колумбию за чудесами: Богота, Картахена, Вилья-де-Лейва · `/kolumbiya/tour/tur-v-kolumbiyu-za-chudesami/` | `src/content/tours/tur-v-kolumbiyu-za-chudesami.md` | 0 | `27810073c8f5b99b05c2dcc28a590d662e574c8fcaa1cfa2d45036b053ef6d0d` |
+| 502 | `tour_source_manyashchaya_kolumbiya_kofe_tur` | Тур в Колумбию на 10 дней в Боготу, Медельин, Картахену с кофе-туром · `/kolumbiya/tour/manyashchaya-kolumbiya-kofe-tur/` | `src/content/tours/manyashchaya-kolumbiya-kofe-tur.md` | 0 | `e2f57a6a02a796693c5ab71f888f4bd8ccba4751ccba0a9c7acb16f8d65b4fc6` |
+| 503 | `tour_source_tur_v_kolumbiyu_na_12_dnej` | Тур в Колумбию на 12 дней по лучшим местам с пляжным отдыхом · `/kolumbiya/tour/tur-v-kolumbiyu-na-12-dnej/` | `src/content/tours/tur-v-kolumbiyu-na-12-dnej.md` | 1 | `44706cfcdf250bbf00185bcbfc7e267ded05c4c8f48a9ead3b5c1763252796bf` |
+| 504 | `tour_source_ikonicheskaya_kolumbiya` | Тур в Колумбию на 14 дней - города, культура, горы и Карибы · `/kolumbiya/tour/ikonicheskaya-kolumbiya/` | `src/content/tours/ikonicheskaya-kolumbiya.md` | 0 | `00e418978bb8cd9421e7d011dd99511bf45789670863fd2c87b22a44c6e0962c` |
+| 505 | `tour_source_colombia_bogota_cultural_ru` | Тур в Колумбию на 8 дней: Богота, Медельин и Картахена · `/kolumbiya/tour/colombia-bogota-cultural-ru/` | `src/content/tours/colombia-bogota-cultural-ru.md` | 0 | `dbd00a28d7a45e0a85332ef6c26d325b041f9adc93fc8ac97aa8844ff9538874` |
+| 506 | `tour_source_kolumbiya_bogota_ekhe_kafetero_kartakhena` | Тур в Колумбию на 9 дней в Боготу, Картахену, Перейру и на озеро Гуатавита · `/kolumbiya/tour/kolumbiya-bogota-ekhe-kafetero-kartakhena/` | `src/content/tours/kolumbiya-bogota-ekhe-kafetero-kartakhena.md` | 0 | `24dbca634c7c89a630ad7dcae934487492860c3043f97012e90b082c002710d8` |
+| 507 | `tour_source_manyashchaya_kolumbiya` | Тур в Колумбию – Богота, Картахена, Медельин, Сипакира и Гуатапе · `/kolumbiya/tour/manyashchaya-kolumbiya/` | `src/content/tours/manyashchaya-kolumbiya.md` | 0 | `5bae805548a3fa1bf012e8d3d476e0d9a9271dcafead7adc85cab0261f7d91b3` |
+| 508 | `tour_source_vkusy_kolumbii` | Тур в Колумбию – Богота, Медельин и Картахена за 9 дней · `/kolumbiya/tour/vkusy-kolumbii/` | `src/content/tours/vkusy-kolumbii.md` | 0 | `00760df0f21c428c96583189a29e0882c81cbe0ef9be8a24e32d0c388c994e84` |
+| 509 | `tour_source_fantasticheskaya_kolumbiya` | Тур в Колумбию: Богота, Картахена, Медельин, острова Росарио и Санта-Марта · `/kolumbiya/tour/fantasticheskaya-kolumbiya/` | `src/content/tours/fantasticheskaya-kolumbiya.md` | 0 | `6b785ed417295974f102e98f9691e80372cbbac954751e0ff8fa36ba33e3baf4` |
+| 510 | `tour_source_kolumbiya_2024_kulturnaya` | Тур в Колумбю на 6 дней: культура и история Боготы и Картахены · `/kolumbiya/tour/kolumbiya-2024-kulturnaya/` | `src/content/tours/kolumbiya-2024-kulturnaya.md` | 0 | `98ff7b266a9252f66da697516543e0f8b8eadbb5cab08516f3a7400d5fe6eae5` |
+| 511 | `tour_source_3_vzglyada_na_kosta_riku` | 3 Взгляда на Коста Рику · `/kosta-rika/tour/3-vzglyada-na-kosta-riku/` | `src/content/tours/3-vzglyada-na-kosta-riku.md` | 0 | `6a3184fd9d900ce084f417c80cbaa7f51ed4302f8e25d3c20acccd0adaaa7c68` |
+| 512 | `tour_source_5_chudes_kosta_riki` | 5 Чудес Коста Рики · `/kosta-rika/tour/5-chudes-kosta-riki/` | `src/content/tours/5-chudes-kosta-riki.md` | 0 | `8e18b0c6d24399c8cb87bcb656b91516334d94563baffaee993e8d375ad28421` |
+| 513 | `tour_source_pybalka_v_kosta_rike` | Pыбалка в Коста-Рике · `/kosta-rika/tour/pybalka-v-kosta-rike/` | `src/content/tours/pybalka-v-kosta-rike.md` | 0 | `9b5ed2edf50b55ed276ba310e9437fc4f88bdb97c9051b5b7b1473596950eeee` |
+| 514 | `tour_source_kosta_rika` | Базовая Коста-Рика · `/kosta-rika/tour/kosta-rika/` | `src/content/tours/kosta-rika.md` | 0 | `f82b6b549e014204f82d14a22b71212bd2c0ca7c5510676c4891dd4400263045` |
+| 516 | `tour_source_zhemchuzhiny_kosta_riki_za_10_dnej` | Жемчужины Коста-Рики · `/kosta-rika/tour/zhemchuzhiny-kosta-riki-za-10-dnej/` | `src/content/tours/zhemchuzhiny-kosta-riki-za-10-dnej.md` | 0 | `71ce5cf6f6f550bd35d7fd49a9c8b7b69b5331a77dee63cfe877dcf36fdc4a01` |
+| 517 | `tour_source_kosta_rika_dlya_lyubitelej_prirody` | Коста Рика для любителей природы · `/kosta-rika/tour/kosta-rika-dlya-lyubitelej-prirody/` | `src/content/tours/kosta-rika-dlya-lyubitelej-prirody.md` | 0 | `08c4184748559aea8ceaf93f09353b83f25c2244df558609eae2ecfbe9a80963` |
+| 518 | `tour_source_kosta_rika_za_5_dnej` | Коста Рика за 5 дней · `/kosta-rika/tour/kosta-rika-za-5-dnej/` | `src/content/tours/kosta-rika-za-5-dnej.md` | 0 | `58e2e77393c897281bce22a7b280b2bea20988e85e2323ab6ddeb5c1810da1d1` |
+| 519 | `tour_source_kosta_rika_korotkaya_no_polnaya_programma` | Коста Рика: Короткая, но полная программа · `/kosta-rika/tour/kosta-rika-korotkaya-no-polnaya-programma/` | `src/content/tours/kosta-rika-korotkaya-no-polnaya-programma.md` | 0 | `8c0fd73835c8eaf9852fe3a0fd93ce07c4b9194a90dd7baf628c6f8d0e549ba7` |
+| 520 | `tour_source_kosta_rika_otdykh_na_plyazhe_i_v_gorakh` | Коста Рика: Отдых на пляже и в горах · `/kosta-rika/tour/kosta-rika-otdykh-na-plyazhe-i-v-gorakh/` | `src/content/tours/kosta-rika-otdykh-na-plyazhe-i-v-gorakh.md` | 0 | `8b6486c7ef392d0283fda258d9711da435b16731824007ebf5f18f12e6a5005c` |
+| 521 | `tour_source_kosta_rika_nastoyashchie_dragotsennosti` | Коста-Рика: Настоящие Драгоценности · `/kosta-rika/tour/kosta-rika-nastoyashchie-dragotsennosti/` | `src/content/tours/kosta-rika-nastoyashchie-dragotsennosti.md` | 0 | `436d2e8c25efbde5dcf15323a6f948d51d160ef341e6a2324902ad7e1ece3acd` |
+| 522 | `tour_source_kostarikanskie_sokrovishcha` | Костариканские сокровища · `/kosta-rika/tour/kostarikanskie-sokrovishcha/` | `src/content/tours/kostarikanskie-sokrovishcha.md` | 0 | `c10438103dbe3bd48d34a03a506f2d993554aecf424725964cc6ebc7df836082` |
+| 523 | `tour_source_krasivaya_kosta_rika` | Красивая Коста Рика · `/kosta-rika/tour/krasivaya-kosta-rika/` | `src/content/tours/krasivaya-kosta-rika.md` | 0 | `8f97efa5b51edf5544e75c8ebae20d6d63f3d761ee51498b42e44e7d3d04c98e` |
+| 524 | `tour_source_costa_rica` | На машине по Коста Рике 2024 · `/kosta-rika/tour/costa-rica/` | `src/content/tours/costa-rica.md` | 0 | `d0e0aaf5cba1a10c239c1585bd2c1642d7d61605ab3b20899993eb1b1c9d4822` |
+| 525 | `tour_source_treasures_of_costa_rica_san_jose` | Настоящие Сокровища Коста-Рики · `/kosta-rika/tour/treasures-of-costa-rica-san-jose/` | `src/content/tours/treasures-of-costa-rica-san-jose.md` | 0 | `69c43b15f88a7547d07219ec4bb966d26fdea4cbeeb3422d03138bab4c2da514` |
+| 526 | `tour_source_panama_i_kosta_rika` | Панама и Коста Рика · `/multi-country/tour/panama-i-kosta-rika/` | `src/content/tours/panama-i-kosta-rika.md` | 0 | `0a93728686091bdc8b9b71014322f00010be4df48c43a5a046b72ede56cc74f1` |
+| 527 | `tour_source_klassicheskaya_kosta_rika` | Тур в Коста-Рику, Сан-Хосе, в леса Монтеверде и на вулкан Ареналь · `/kosta-rika/tour/klassicheskaya-kosta-rika/` | `src/content/tours/klassicheskaya-kosta-rika.md` | 0 | `0779717bfec3ca1d8d913b7768bddf59b699bdadf917671ecd98edc78e206407` |
+| 528 | `tour_source_luchshee_v_kosta_rike` | Тур в Коста-Рику- лучшее в Коста Рике · `/kosta-rika/tour/luchshee-v-kosta-rike/` | `src/content/tours/luchshee-v-kosta-rike.md` | 0 | `76788f4a630f56308f91017a65467731fb2796c398ae0f5a903735a4b1496501` |
+| 529 | `tour_source_3_shaga_po_kosta_rike` | Тур в Коста-Рику: Ареналь, Сан-Хосе и пляжный отдых на Тихом океане · `/kosta-rika/tour/3-shaga-po-kosta-rike/` | `src/content/tours/3-shaga-po-kosta-rike.md` | 0 | `72ef76040511788d0f7cec109136af7ff12b882a5dbe92d1e982488244dcc0e1` |
+| 530 | `tour_source_ekonomichnaya_kosta_rika` | Экономичная Коста Рика · `/kosta-rika/tour/ekonomichnaya-kosta-rika/` | `src/content/tours/ekonomichnaya-kosta-rika.md` | 0 | `b434466b1b30fa7a734078cc2b3ddff3969e071ee0f672f6573517d6f0498beb` |
+| 531 | `tour_source_ekstrim_v_kosta_rike` | Экстремальная Коста-Рика · `/kosta-rika/tour/ekstrim-v-kosta-rike/` | `src/content/tours/ekstrim-v-kosta-rike.md` | 0 | `b2189a9ab21b7281242b19df7b255fda1c76c82d8a1cde89d1845e47964ad779` |
+| 532 | `tour_source_bolshie_meksikanskie_kanikuly` | Большие Мексиканские Каникулы · `/meksika/tour/bolshie-meksikanskie-kanikuly/` | `src/content/tours/bolshie-meksikanskie-kanikuly.md` | 0 | `b7eb96ac7a047757dfe36e73887b5552bb77f5819144b81f8342329e717691e7` |
+| 534 | `tour_source_vsya_meksika` | Вся Мексика · `/meksika/tour/vsya-meksika/` | `src/content/tours/vsya-meksika.md` | 0 | `090778e6f9e3f943861a704033d33a552f604fd9fa810732bd8c5c32cc5ec726` |
+| 535 | `tour_source_gastronomicheskoe_turne_po_meksike` | Гастрономическое турне по Мексике · `/meksika/tour/gastronomicheskoe-turne-po-meksike/` | `src/content/tours/gastronomicheskoe-turne-po-meksike.md` | 0 | `b4baf02368d1bcc2873c669bca4d29e25a278a9fccbefb121c0acb3a0f56bf69` |
+| 536 | `tour_source_meksika_den_mertvykh` | День Мертвых в Мексике · `/meksika/tour/meksika-den-mertvykh/` | `src/content/tours/meksika-den-mertvykh.md` | 0 | `00190007ee2d6e44b66f73fcad057b4ca89f2a352e0803ecb25116184b7e6dc8` |
+| 537 | `tour_source_mexico_city_keretaro` | Колониальные Сокровища Мексики · `/meksika/tour/mexico-city-keretaro/` | `src/content/tours/mexico-city-keretaro.md` | 0 | `a3ad4939506a971f106ea010237c5634da7655de1b182d4ce706f62493b09815` |
+| 538 | `tour_source_meksika_fantasticheskaya` | Мексика Фантастическая · `/meksika/tour/meksika-fantasticheskaya/` | `src/content/tours/meksika-fantasticheskaya.md` | 0 | `2b8f18158c666237bc8ae327837b5cdd1ccf11dc88db1123be86623aabf32109` |
+| 539 | `tour_source_meksika_yuzhnoe_priklyuchenie_kratkij_marshrut` | Мексика: «Южное Приключение — Краткий маршрут» · `/meksika/tour/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/` | `src/content/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut.md` | 0 | `c388db3fe6da3a12019a2b5ce5fc2dd4d292400ca38488003f24cc11d6bdc587` |
+| 540 | `tour_source_meksika_treugolnik_solntsa` | Мексика: Треугольник Солнца · `/meksika/tour/meksika-treugolnik-solntsa/` | `src/content/tours/meksika-treugolnik-solntsa.md` | 0 | `42213dca8fc3d028ca0dcd0ad53d28c4ac1e926e9a2da7b1bd7c968b41a04d7d` |
+| 541 | `tour_source_cancun_palenque_cenot` | Тур в Мексику Канкун, Тулум, Паленке, Ушмаль, Чичен Ица · `/meksika/tour/cancun-palenque-cenot/` | `src/content/tours/cancun-palenque-cenot.md` | 0 | `031bdfb4e0dcf74d0e8bf01c6e1caf2398d21895076562a5ed4d8bb89d083e5f` |
+| 542 | `tour_source_meksika_lindo` | Тур в Мексику: Мехико- Мерида - Ушмаль и Кабах - Чичен-Ица · `/meksika/tour/meksika-lindo/` | `src/content/tours/meksika-lindo.md` | 0 | `14785da34f4623a38659a329b83cd82225d514325ac6b7bbc1ba731683b21aff` |
+| 543 | `tour_source_udivitelnyj_gastronomicheskij_tur_po_meksike_2024` | Удивительный Гастрономический Тур по Мексике по цене 3276$ \|Ada Tours · `/meksika/tour/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/` | `src/content/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024.md` | 0 | `c92ed5c8f11a42e295ec4d282177836692ff520fc2c8b2f6154e0c021ca406e1` |
+| 544 | `tour_source_fantasticheskij_tur_po_meksike` | Фантастический Тур по Мексике · `/meksika/tour/fantasticheskij-tur-po-meksike/` | `src/content/tours/fantasticheskij-tur-po-meksike.md` | 0 | `1fa5014b93182c96d4be09c68c42f8b93e289b57a617473fc1eb4fadad9cd195` |
+| 545 | `tour_source_vip_kosta_rika_nikaragua` | ВИП-тур в Коста-Рику и Никарагуа \| На частном самолете · `/multi-country/tour/vip-kosta-rika-nikaragua/` | `src/content/tours/vip-kosta-rika-nikaragua.md` | 1 | `0c7dc31839cbafa6c79c91b31413fae3ba4acf14fa60f8e7de67efca39a16c2c` |
+| 546 | `tour_source_costa_rica_nicaragua_ru` | Коста Рика Никарагуа · `/multi-country/tour/costa-rica-nicaragua-ru/` | `src/content/tours/costa-rica-nicaragua-ru.md` | 0 | `15f138ab6ed9bf1e8e4fd10743171d4a9b4993a17908486fd57c0308ebf19c08` |
+| 547 | `tour_source_luchshee_v_tsentralnoj_amerike` | Лучшее в Центральной Америке · `/multi-country/tour/luchshee-v-tsentralnoj-amerike/` | `src/content/tours/luchshee-v-tsentralnoj-amerike.md` | 0 | `f40a4a6515ffa580bba74164d764cb1fb73218fdb71f7c6c38637e9ff53ac66d` |
+| 548 | `tour_source_panama_kosta_rika_nikaragua` | Панама – Коста Рика- Никарагуа · `/multi-country/tour/panama-kosta-rika-nikaragua/` | `src/content/tours/panama-kosta-rika-nikaragua.md` | 0 | `88ba5300423c085aa0e29c4b5bc849c1be22af6dcab39c380b6b71263aad1df1` |
+| 549 | `tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh` | Тур в Гватемалу, Гондурас, Сальвадор, Никарагуа и Коста-Рику на 19 дней · `/multi-country/tour/otbleski-tsentralnoj-ameriki-v-5-stranakh/` | `src/content/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh.md` | 0 | `0c935380f4723f5621f6e997990924afc142d3a46e984d72e93e1a3a68e8e78d` |
+| 550 | `tour_source_otbleski_tsentralnoj_ameriki` | Тур в Центральную Америку: лучшие достопримечательности · `/multi-country/tour/otbleski-tsentralnoj-ameriki/` | `src/content/tours/otbleski-tsentralnoj-ameriki.md` | 0 | `bd0576eccda568889ed9f2ef79d11a21f03baa7b3a71f5b73751f10ab8e24860` |
+| 551 | `tour_source_vsya_panama_natsionalnye_parki_ostrova_i_doliny` | Вся Панама: Национальные парки, острова и долины · `/panama/tour/vsya-panama-natsionalnye-parki-ostrova-i-doliny/` | `src/content/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny.md` | 1 | `d3b4f276cd036ee0298eab23dbe5e0ee368772068a3222da4265f5f43f0ee62d` |
+| 552 | `tour_source_luchshee_v_paname` | Лучшее в Панаме 2023 · `/panama/tour/luchshee-v-paname/` | `src/content/tours/luchshee-v-paname.md` | 0 | `a49f840a6a4d44656ee292de55eeed6379c024fe2c753af40093e1c85f55d0e8` |
+| 553 | `tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru` | Люксовый тур в Панаму: 12 дней vip отдыха \| Ada Tours · `/panama/tour/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/` | `src/content/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru.md` | 0 | `f7376fe574a643a2c86795ffcc817a44405b8b112a9c6c25d32d738854138fc8` |
+| 554 | `tour_source_panama_2024` | Панама · `/panama/tour/panama-2024/` | `src/content/tours/panama-2024.md` | 0 | `c12da03a57c22cdcb43eb5e17bc84da0326cea3f8fab4cb6e3aa82f62a75ed12` |
+| 555 | `tour_source_panama_panama_siti_dolina_anton_krepost_san_lorenso` | Панама · `/panama/tour/panama-panama-siti-dolina-anton-krepost-san-lorenso/` | `src/content/tours/panama-panama-siti-dolina-anton-krepost-san-lorenso.md` | 1 | `9ba5305a4083c58419cc1f90310fb3e67a4b17ad52845afc33cd751149bd8ff0` |
+| 556 | `tour_source_ostrova_san_blas_na_yakhte_lyuks_klassa` | Тур на яхте класса ВИП (люксовый) по островам Сан-Блас, Панама · `/panama/tour/ostrova-san-blas-na-yakhte-lyuks-klassa/` | `src/content/tours/ostrova-san-blas-na-yakhte-lyuks-klassa.md` | 0 | `aff78cf5a4b2e15157afd576ef2f8b0ca8102544d6081044db8a0808bac855c4` |
+| 557 | `tour_source_klassicheskij_paragvaj` | Парагвай 2023 · `/paragvaj/tour/klassicheskij-paragvaj/` | `src/content/tours/klassicheskij-paragvaj.md` | 0 | `a2e9effb679f59ed0df742ae46bb2cba87b097e93200d7f25ca54abe51034e25` |
+| 558 | `tour_source_tur_po_uruguayu_i_paragvayu_16_dnej` | Тур в Уругвай и Парагвай 2026: скрытые сокровища Южной Америки \| 16 дней · `/multi-country/tour/tur-po-uruguayu-i-paragvayu-16-dnej/` | `src/content/tours/tur-po-uruguayu-i-paragvayu-16-dnej.md` | 2 | `8bc907da4ed082215263a176affb2f25d4d99c2c4ceaa66408cb109b14f4ef3e` |
+| 559 | `tour_source_vip_tur_v_boliviyu_i_peru_na_18_dnej_s_kruizom_po_amazonke` | VIP тур в Перу 18 дней: Мачу-Пикчу, Амазонка и солончак Уюни · `/multi-country/tour/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/` | `src/content/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke.md` | 0 | `c8dc31f6a3047cb5663963a077a60ce06317c379ce2f32d38400e683a9c427ae` |
+| 560 | `tour_source_ves_mnogolikij_peru_plyazhi_tumbesa` | Весь Многоликий Перу + пляжи Тумбеса · `/peru/tour/ves-mnogolikij-peru-plyazhi-tumbesa/` | `src/content/tours/ves-mnogolikij-peru-plyazhi-tumbesa.md` | 2 | `407c8edd8769cf8a443b3c092e8c6162c4ae720d1de9e3ffab95314069a9b03e` |
+| 562 | `tour_source_vip_tur_v_peru` | Вип тур в Чили, Боливию и Перу · `/multi-country/tour/vip-tur-v-peru/` | `src/content/tours/vip-tur-v-peru.md` | 0 | `0eccbc5da45b73f64be4de87224f3441a99aa7a994aeb6fb0a09783dcc059401` |
+| 563 | `tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej` | Люксовый индивидуальный тур в Перу «Инка Делюкс» \| Ada Tours · `/peru/tour/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/` | `src/content/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej.md` | 3 | `e49b485609ec9a83adc6f0c3c8005cc075fbda2825afced395f8f79f0e217db8` |
+| 564 | `tour_source_manyashchij_peru_i_ikitos` | Манящий ПЕРУ +ИКИТОС · `/peru/tour/manyashchij-peru-i-ikitos/` | `src/content/tours/manyashchij-peru-i-ikitos.md` | 6 | `12cec927c2cabdaa7ec8046b69171f3d4c2c8044dc0a689742a75b14734328f1` |
+| 565 | `tour_source_peru_i_boliviya` | Перу и Боливия · `/multi-country/tour/peru-i-boliviya/` | `src/content/tours/peru-i-boliviya.md` | 0 | `5a122b95d54de69c4dde7c2ddce2a2e37f782d170c58ccbc7e6b2293aa50b723` |
+| 567 | `tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii` | Перу: Иcтория Великой Империи и праздник Святой Канделярии · `/peru/tour/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/` | `src/content/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii.md` | 1 | `e6ff9efb0882dc7578160381836d0e141d1ee207f2e345fd4426883a4246f11c` |
+| 568 | `tour_source_peru_expeditoin_ru` | Перу: Энергия Предков · `/peru/tour/peru-expeditoin-ru/` | `src/content/tours/peru-expeditoin-ru.md` | 0 | `8dac8d29cec1890db6827f8268e5a4b82d9e9300a5d97cf3d4e2be8fcc1e3e1c` |
+| 569 | `tour_source_ves_mnogolikij_peru_ikitos` | Тур в Перу "Весь Многоликий Перу и Икитос" на 15 дней · `/peru/tour/ves-mnogolikij-peru-ikitos/` | `src/content/tours/ves-mnogolikij-peru-ikitos.md` | 2 | `f05f46061e0c886286ecb248e0b2500aa6649a5d2f2df6c7a81c847901a2aa72` |
+| 570 | `tour_source_peru_strana_inkov` | Тур в Перу на 6 дней: Лима, Куско и Мачу Пикчу · `/peru/tour/peru-strana-inkov/` | `src/content/tours/peru-strana-inkov.md` | 0 | `3f30c77d33d4881d85d553cffc8a3b00f7f248641d9015cc068ac1eb91eb70f5` |
+| 571 | `tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej` | Тур в Перу на поезде Belmond Hiram Bingham в Мачу-Пикчу · `/peru/tour/peru-priklyucheniya-v-andakh-s-belmond-kollektsiej/` | `src/content/tours/peru-priklyucheniya-v-andakh-s-belmond-kollektsiej.md` | 0 | `4f52f1ef7b7aee8818cfe06ce1a4487b7ffad86b2ebec9193b441e7a427f02ad` |
+| 572 | `tour_source_21_dnevnoe_priklyuchenie_v_peru` | Тур в Перу – лучшее в стране за 21 день · `/peru/tour/21-dnevnoe-priklyuchenie-v-peru/` | `src/content/tours/21-dnevnoe-priklyuchenie-v-peru.md` | 0 | `f0d354b04c5c866c8af9cf163fc1ed7547bf2627431d5ae59b2dd42d24b34d1a` |
+| 573 | `tour_source_ves_mnogolikij_peru_i_senor_sipan` | Тур в Перу: Лима, Куско, Мачу-Пикчу, Арекипа, Пуно, Tрухильо, Чиклайо · `/peru/tour/ves-mnogolikij-peru-i-senor-sipan/` | `src/content/tours/ves-mnogolikij-peru-i-senor-sipan.md` | 2 | `f77134874753523568673fc8c199db70207f7f82d29ddb71540b50da733a4f3a` |
+| 574 | `tour_source_ves_mnogolikij_peru` | Тур в Перу: Лима, Куско, Титикака, Колка, Арекипа, пустыня Наска · `/peru/tour/ves-mnogolikij-peru/` | `src/content/tours/ves-mnogolikij-peru.md` | 2 | `5f4a52a4abc678e66b1c935f2b14ccb32c5fff659df60a9275762cbae47e39fd` |
+| 575 | `tour_source_vpechatlenie_ot_surinama` | Впечатление от Суринама · `/surinam/tour/vpechatlenie-ot-surinama/` | `src/content/tours/vpechatlenie-ot-surinama.md` | 0 | `563b4728e69e706efc88eb408e3f0af4141189a6d8961e026d87f18f9e6c1895` |
+| 576 | `tour_source_velikolepnyj_surinam` | Индивидуальный тур в Суринам на 12 дней: джунгли и культура · `/surinam/tour/velikolepnyj-surinam/` | `src/content/tours/velikolepnyj-surinam.md` | 0 | `e0c0c287667277a0598676b6d26f953692d1d880a46b14315f7ddebe6af00df5` |
+| 577 | `tour_source_vpechatleniya_ot_surinama` | Суринам · `/surinam/tour/vpechatleniya-ot-surinama/` | `src/content/tours/vpechatleniya-ot-surinama.md` | 0 | `6a73b1f6d83e659da52656e659967e0dce858469bb3a90d592d033922a041048` |
+| 578 | `tour_source_luchshee_v_urugvae_pyatizvjozdochnyj_marshrut` | Лучшее в Уругвае: пятизвёздочный маршрут · `/urugvaj/tour/luchshee-v-urugvae-pyatizvjozdochnyj-marshrut/` | `src/content/tours/luchshee-v-urugvae-pyatizvjozdochnyj-marshrut.md` | 0 | `73581ab10295033aed16d77846b9ec1e7c82b9d9ec2c384c84b4331d66d628b1` |
+| 579 | `tour_source_urugvaj_vino_i_traditsii_starovertsev` | Уругвай: Вино и Традиции Староверцев -тур от туроператора Ада Турс · `/urugvaj/tour/urugvaj-vino-i-traditsii-starovertsev/` | `src/content/tours/urugvaj-vino-i-traditsii-starovertsev.md` | 0 | `1f27a0485837b644b9c19b0b6017f965bc7c3665235f8e01522ce1083b1b706b` |
+| 580 | `tour_source_priklyuchenie_v_gvianakh` | Приключение в Гвианах · `/multi-country/tour/priklyuchenie-v-gvianakh/` | `src/content/tours/priklyuchenie-v-gvianakh.md` | 0 | `3f5ecc3353c2729ed6fd4be3f9ed0eae36f5084ac755385c252d16d4154b7671` |
+| 581 | `tour_source_surinam_gajana_frantsuzskaya_gviana` | Суринам, Гайана, Французская Гвиана · `/multi-country/tour/surinam-gajana-frantsuzskaya-gviana/` | `src/content/tours/surinam-gajana-frantsuzskaya-gviana.md` | 0 | `306cd6fa77a2b1a922122ef5fb2955b30df483b7d5a9e493b8b3ee80c6007559` |
+| 582 | `tour_source_vip_chili_5` | VIP Чили 5* · `/chili/tour/vip-chili-5/` | `src/content/tours/vip-chili-5.md` | 0 | `caa46662acd7c9dc4b06ff5b9399e7a7dec257db37cbf524559c0c3c71cde1d3` |
+| 583 | `tour_source_tur_v_chili_luchshee_v_strane_i_gastronomiya_gurme` | VIP тур в Чили: Атакама, Патагония и гастрономия \| Ada Tours · `/chili/tour/tur-v-chili-luchshee-v-strane-i-gastronomiya-gurme/` | `src/content/tours/tur-v-chili-luchshee-v-strane-i-gastronomiya-gurme.md` | 0 | `e2d098a4aeabe0786b1ac4d25ea096e74f1de0f0fb5bf03385423cdc55fbfe1c` |
+| 584 | `tour_source_antarktida_programma_s_nochevkoj` | Антарктида: программа с ночевкой · `/antarktida/tour/antarktida-programma-s-nochevkoj/` | `src/content/tours/antarktida-programma-s-nochevkoj.md` | 0 | `eea03a099b1858f2e9bb5b75e2330a380f1a249a146edcad0033184663d0acfa` |
+| 585 | `tour_source_chili_zagadki_chelovechestva` | Индивидуальный тур в Чили и на остров Пасхи на 10 дней · `/chili/tour/chili-zagadki-chelovechestva/` | `src/content/tours/chili-zagadki-chelovechestva.md` | 0 | `6748893237ce33d72d1f961897e4455db22adac2feb85e69b779a58531547cc8` |
+| 586 | `tour_source_klassicheskaya_antarktida` | Классическая Антарктика · `/antarktida/tour/klassicheskaya-antarktida/` | `src/content/tours/klassicheskaya-antarktida.md` | 0 | `1f24a30119985a5061cb731de0f436a46d5154efafc1b63d093c8360ab2ce3fa` |
+| 587 | `tour_source_klassicheskaya_antarktika` | Классическая Антарктика · `/antarktida/tour/klassicheskaya-antarktika/` | `src/content/tours/klassicheskaya-antarktika.md` | 0 | `16bc1cc8039d16150a971e028fbba61d7eb20f1e140545a52c4cff481486b936` |
+| 588 | `tour_source_koloritnyj_santyago_i_zagadochnyj_ostrov_paskhi` | Колоритный Сантьяго и загадочный остров Пасхи · `/chili/tour/koloritnyj-santyago-i-zagadochnyj-ostrov-paskhi/` | `src/content/tours/koloritnyj-santyago-i-zagadochnyj-ostrov-paskhi.md` | 0 | `4ad1a929e5599626f1fa9d79e26e612edde64e257b0cc4e843f20be267b2777f` |
+| 589 | `tour_source_nezabyvaemyj_tur_v_antarktidu_s_nochevkoj` | Незабываемый тур в Антарктиду(с ночевкой) · `/antarktida/tour/nezabyvaemyj-tur-v-antarktidu-s-nochevkoj/` | `src/content/tours/nezabyvaemyj-tur-v-antarktidu-s-nochevkoj.md` | 0 | `b6e1e9bdf349329482fefbde921366e7abb1817a30f0570bd12d524feca03257` |
+| 590 | `tour_source_antarktida_programma_na_ves_den` | Тур в Антарктиду на весь день из Пунта-Аренас (Чили) · `/antarktida/tour/antarktida-programma-na-ves-den/` | `src/content/tours/antarktida-programma-na-ves-den.md` | 0 | `c138bafaf22492b56502bd1ab5b793da60f9075d702307d2223c2b0c0bf10653` |
+| 591 | `tour_source_chili_samoe_luchshee` | Тур в Чили на 12 дней по лучшим местам страны с о.Пасха · `/chili/tour/chili-samoe-luchshee/` | `src/content/tours/chili-samoe-luchshee.md` | 0 | `fcc219e07ecbd747e4603eec0889e48b348dd74ae279a1c8910465c2b7d589d5` |
+| 592 | `tour_source_chili_santyago_pustynya_atakama_torres_del_pajne` | Тур в Чили с пустыней Аатакама и парком Торрес-дель-Пайне в Патагонии · `/chili/tour/chili-santyago-pustynya-atakama-torres-del-pajne/` | `src/content/tours/chili-santyago-pustynya-atakama-torres-del-pajne.md` | 0 | `f7907e620a3a5f8a26590b34ed636fedbdf1df8a1ab38acfe5c3f30558728ba7` |
+| 594 | `tour_source_chili_kosmicheskoe_puteshestvie_na_zemle` | Чили: Космическое путешествие на Земле · `/chili/tour/chili-kosmicheskoe-puteshestvie-na-zemle/` | `src/content/tours/chili-kosmicheskoe-puteshestvie-na-zemle.md` | 1 | `914dac6cb1674747deb479fc21d44f228d18a19444e64d2fabd6bafbbc14f229` |
+| 595 | `tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej` | VIP тур в Перу и Эквадор 18 дней: Мачу-Пикчу, Амазонка и Галапагосы · `/multi-country/tour/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/` | `src/content/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej.md` | 0 | `3cde905a0b89881091364b3d2de0f512611b48020428b25e7512495db93c415d` |
+| 596 | `tour_source_aktivnyj_ekvador_i_trekking` | Активный Эквадор и Треккинг · `/ekvador/tour/aktivnyj-ekvador-i-trekking/` | `src/content/tours/aktivnyj-ekvador-i-trekking.md` | 0 | `fc0c046596e321a6a45d7cb15e9775dc8d54622a3ec184e8731a29267b2a6202` |
+| 597 | `tour_source_aktivnyj_ekvador` | Активный Эквадор тур в Эквадор · `/ekvador/tour/aktivnyj-ekvador/` | `src/content/tours/aktivnyj-ekvador.md` | 0 | `36491df98c3c034337306adf531eea1d99548dc84591080bb966837621b4ac09` |
+| 598 | `tour_source_ves_ekvador_na_novyj_god` | Весь Эквадор · `/ekvador/tour/ves-ekvador-na-novyj-god/` | `src/content/tours/ves-ekvador-na-novyj-god.md` | 2 | `b616d07a26b10a2182c8347df5a1e5e2e0f7938f1502a628d4362fd19c44d558` |
+| 599 | `tour_source_ves_ekvador_i_galapagosskie_ostrova` | Весь Эквадор и Галапагосские острова · `/ekvador/tour/ves-ekvador-i-galapagosskie-ostrova/` | `src/content/tours/ves-ekvador-i-galapagosskie-ostrova.md` | 2 | `2cbcb32135d77f9d31d97c267344258c7e05c2b4940f88d7e555efe31f4a00f2` |
+| 600 | `tour_source_ves_ekvador_variant_1` | Индивидуальный тур в Эквадор (континентальный) на 5 дней · `/ekvador/tour/ves-ekvador-variant-1/` | `src/content/tours/ves-ekvador-variant-1.md` | 0 | `402218ec9d5cbbd38fd122218b6cc679f0454484afc276e815800cd446e6c124` |
+| 601 | `tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy` | Лучшее в Эквадоре: Гарантированные заезды · `/ekvador/tour/luchshee-v-ekvadore-garantirovannye-zaezdy/` | `src/content/tours/luchshee-v-ekvadore-garantirovannye-zaezdy.md` | 2 | `e3ade2a98940df135dbefdae929648dd6200a48419092e7714b3c78282b8a4f8` |
+| 602 | `tour_source_pochuvstvujte_peru_ekvador` | Почувствуйте Перу-Эквадор · `/multi-country/tour/pochuvstvujte-peru-ekvador/` | `src/content/tours/pochuvstvujte-peru-ekvador.md` | 2 | `02aadcdd8546df21abacb7927d26a66801a83791e379437abecfebb90c7fa67e` |
+| 603 | `tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie` | Тур в Эквадор (континентальный) на 9 дней: лучшее в стране · `/ekvador/tour/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/` | `src/content/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie.md` | 0 | `4c4a687dc91a3da52e161f57329288afaf1bf9e4919482306513d8a69edba0fd` |
+| 604 | `tour_source_ekvador_s_udovolstviem` | Тур в Эквадор и Галапагосы: по лучшим заповедным местам · `/ekvador/tour/ekvador-s-udovolstviem/` | `src/content/tours/ekvador-s-udovolstviem.md` | 2 | `330b99c69dd0c5dfb7866567234c6ca5cb22cecea434a47a8ab45f7395dc22e2` |
+| 605 | `tour_source_ekvador_aktivnyj_tur_s_galapagossom` | Тур в Эквадор и на Галапагосские острова (активити-тур) на 17 дней · `/ekvador/tour/ekvador-aktivnyj-tur-s-galapagossom/` | `src/content/tours/ekvador-aktivnyj-tur-s-galapagossom.md` | 3 | `fe748423c0ffb23b3a40eb4188e876c58095253a39c89dd1bb18bb334bbe6474` |
+| 607 | `tour_source_ekvador_i_galapagosskie_ostrova_v_iyule` | Тур в Эквадор и на Галапагосские острова – Кито, Килотоа, Миндо · `/ekvador/tour/ekvador-i-galapagosskie-ostrova-v-iyule/` | `src/content/tours/ekvador-i-galapagosskie-ostrova-v-iyule.md` | 0 | `f130f1b4842ae84ba8e04a7aa25699281a4790eac613bd8e3cdb2b35cf8394f8` |
+| 608 | `tour_source_ekvador_v_sentyabre` | Тур в Эквадор на 11 дней: Кито, Килотоа, Баньос, Амазония · `/ekvador/tour/ekvador-v-sentyabre/` | `src/content/tours/ekvador-v-sentyabre.md` | 7 | `5a0e4f3fc6cb78dca863ea3a246d34b0caee1c8dd1f9ce4e83281a0dabba0bf2` |
+| 609 | `tour_source_ekvador_krasota_i_priroda` | Тур в Эквадор на 9 дней – Кито, Котопакси, Машпи, Галапагосы · `/ekvador/tour/ekvador-krasota-i-priroda/` | `src/content/tours/ekvador-krasota-i-priroda.md` | 2 | `e4206659057bc472569c5a023f012c15bc9cf4c827fbaffc97fd6cc220e878fd` |
+| 612 | `tour_source_ves_ekvador_i_gorbatye_kity` | Эквадор + Галапагосские Острова и горбатые киты · `/ekvador/tour/ves-ekvador-i-gorbatye-kity/` | `src/content/tours/ves-ekvador-i-gorbatye-kity.md` | 2 | `ec2daeb6ca11dc549d09361cd4e71a54c2b2ece7f598f025b070c986b1206292` |
+| 615 | `tour_source_ekvador_kito_galapagosskie_ostrova` | Эквадор: Кито – Галапагосские Острова · `/ekvador/tour/ekvador-kito-galapagosskie-ostrova/` | `src/content/tours/ekvador-kito-galapagosskie-ostrova.md` | 1 | `3ad90108bcd27d36585c29fb3d6a4211ed307026cd3956d05fbbd61f612199e4` |
+| 616 | `tour_source_luchshee_v_salvadore` | Тур в Сальвадор: Сан-Сальвадор, Сучитото, Залив Фонсека · `/el-salvador/tour/luchshee-v-salvadore/` | `src/content/tours/luchshee-v-salvadore.md` | 0 | `9d4f2563ba2854be1d26dc2dc652a085514d939e53c2ad3e92fb6af9d9066f42` |
+
+### 10.2. Фактические Excursion ID и позиции
+
+Порядок взят из подготовленного `itinerary`. Диапазон в позиции означает сохранённый общий блок исходных дней; дополнительный день из него не придумывался. Для каждой связи состояние данных — «канонизирована в подготовленном commit; результат выпуска определяется Actions».
+
+| Tour ID | № модуля в туре | Excursion ID | После дня | Перед днём | Сущность |
+|---|---:|---|---|---|---|
+| `tour_source_argentina_2024` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 2 | 3 | Существующая каноническая |
+| `tour_source_argentina_2024` | 2 | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | 3 | 4 | Существующая каноническая |
+| `tour_source_argentina_2024` | 3 | `excursion_source_ekskursiya_po_montevideo` | 3 | 4 | Существующая каноническая |
+| `tour_source_argentina_2024` | 4 | `excursion_source_fiesta_gaucho` | 3 | 4 | Существующая каноническая |
+| `tour_source_argentina_2024` | 5 | `excursion_mendoza_city_tour` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_argentina_2024` | 6 | `excursion_el_calafate_ice_trekking_perito_moreno` | 7 | 8 | Существующая каноническая |
+| `tour_source_argentina_2024` | 7 | `excursion_iguazu_gran_aventura` | 9 | 10 | Существующая каноническая |
+| `tour_source_argentina_2024` | 8 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 10 | 11 | Существующая каноническая |
+| `tour_source_argentina_2024` | 9 | `excursion_iguazu_helicopter_falls` | 10 | 11 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_salta_iguasu` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 2 | 3 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_salta_iguasu` | 2 | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | 3 | 4 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_salta_iguasu` | 3 | `excursion_source_fiesta_gaucho` | 3 | 4 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_salta_iguasu` | 4 | `excursion_source_ekskursiya_po_montevideo` | 3 | 4 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 2 | 3 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu` | 2 | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | 3 | 4 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu` | 3 | `excursion_source_fiesta_gaucho` | 3 | 4 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu` | 4 | `excursion_source_ekskursiya_po_montevideo` | 3 | 4 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu` | 5 | `excursion_mendoza_city_tour` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu` | 6 | `excursion_el_calafate_ice_trekking_perito_moreno` | 7 | 8 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu` | 7 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 10 | 11 | Существующая каноническая |
+| `tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu` | 8 | `excursion_iguazu_helicopter_falls` | 10 | 11 | Существующая каноническая |
+| `tour_source_argentina_puteshestvie_v_doistoricheskij_mir` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 1 | 2 | Существующая каноническая |
+| `tour_source_argentina_puteshestvie_v_doistoricheskij_mir` | 2 | `excursion_buenos_aires_porteno_tango_dinner_transfer` | 2 | 3 | Новая, подготовлена в пакете |
+| `tour_source_vlyubites_v_argentinu` | 1 | `excursion_buenos_aires_tango_show_dinner_transfer` | 2 | 3 | Существующая каноническая |
+| `tour_source_chili_argentina` | 1 | `excursion_source_makuko_safari` | 11 | 12 | Существующая каноническая |
+| `tour_source_chili_argentina` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 11 | 12 | Существующая каноническая |
+| `tour_source_chili_argentina` | 3 | `excursion_iguazu_helicopter_falls` | 11 | 12 | Существующая каноническая |
+| `tour_source_chili_argentina` | 4 | `excursion_buenos_aires_tango_show_dinner` | 13 | 14 | Существующая каноническая |
+| `tour_source_chili_i_argentina_vip` | 1 | `excursion_ushuaia_helicopter_flight` | 10 | 11 | Новая, подготовлена в пакете |
+| `tour_source_chili_i_argentina_vip` | 2 | `excursion_source_makuko_safari` | 21 | 22 | Существующая каноническая |
+| `tour_source_chili_i_argentina_vip` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 21 | 22 | Существующая каноническая |
+| `tour_source_chili_i_argentina_vip` | 4 | `excursion_iguazu_helicopter_falls` | 21 | 22 | Существующая каноническая |
+| `tour_source_chili_i_argentina_vip` | 5 | `excursion_source_tango_shou_v_buenos_ajrese` | 24 | 25 | Существующая каноническая |
+| `tour_source_chili_i_argentina_vip` | 6 | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | 25 | 26 | Существующая каноническая |
+| `tour_source_chili_i_argentina_vip` | 7 | `excursion_source_ekskursiya_po_montevideo` | 25 | 26 | Существующая каноническая |
+| `tour_source_gvatemala_gonduras_i_beliz` | 1 | `excursion_belize_blue_hole_scenic_flight` | 11 | 12 | Новая, подготовлена в пакете |
+| `tour_source_chudesa_beliza` | 1 | `excursion_belize_blue_hole_scenic_flight` | 5 | 6 | Новая, подготовлена в пакете |
+| `tour_source_kankun_beliz` | 1 | `excursion_cancun_xelha_day_trip` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_kankun_beliz` | 2 | `excursion_belize_blue_hole_scenic_flight` | 10 | 11 | Новая, подготовлена в пакете |
+| `tour_source_chudesa_gvatemaly_beliza` | 1 | `excursion_belize_blue_hole_scenic_flight` | 10 | 11 | Новая, подготовлена в пакете |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 1 | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | 4 | 5 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 2 | `excursion_source_rio_nochyu` | 4 | 5 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 3 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 4 | `excursion_rio_caipirinha_masterclass` | 4 | 5 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 5 | `excursion_rio_churrasco_masterclass` | 4 | 5 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 6 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 7 | `excursion_rio_sugarloaf_trekking` | 4 | 5 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 8 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 9 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 10 | `excursion_source_tango_shou_v_buenos_ajrese` | 8 | 9 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 11 | `excursion_source_fiesta_gaucho` | 9 | 10 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej` | 12 | `excursion_source_ekskursiya_po_montevideo` | 9 | 10 | Существующая каноническая |
+| `tour_source_amazoniya` | 1 | `excursion_source_vstrecha_rek` | 2 | 3 | Существующая каноническая |
+| `tour_source_amazoniya` | 2 | `excursion_source_plavanie_s_rozovymi_del_finami` | 2 | 3 | Существующая каноническая |
+| `tour_source_argentina_i_braziliya_ot_lda_k_solntsu` | 1 | `excursion_buenos_aires_tango_show_dinner_transfer` | 2 | 3 | Существующая каноническая |
+| `tour_source_argentina_i_braziliya_ot_lda_k_solntsu` | 2 | `excursion_ushuaia_martillo_penguin_boat` | 6 | 7 | Существующая каноническая |
+| `tour_source_fan_braziliya_i_argentina` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 12 | 13 | Существующая каноническая |
+| `tour_source_braziliya_ot_san_paulo_do_buziosa` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 3 | 4 | Существующая каноническая |
+| `tour_source_braziliya_ot_san_paulo_do_buziosa` | 2 | `excursion_source_makuko_safari` | 3 | 4 | Существующая каноническая |
+| `tour_source_braziliya_ot_san_paulo_do_buziosa` | 3 | `excursion_source_polet_na_vertolete_nad_rio` | 7 | 8 | Существующая каноническая |
+| `tour_source_braziliya_s_detmi` | 1 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_s_detmi` | 2 | `excursion_source_rio_nochyu` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_s_detmi` | 3 | `excursion_source_royal_petropolis_private_tour_full_day` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_s_detmi` | 4 | `excursion_rio_itacuruca_tropical_islands` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_braziliya_s_detmi` | 5 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_s_detmi` | 6 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_braziliya_s_detmi` | 7 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_braziliya_s_plyazhami` | 1 | `excursion_source_makuko_safari` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_s_plyazhami` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_argentina_i_chili` | 1 | `excursion_source_royal_petropolis_private_tour_full_day` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_argentina_i_chili` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_braziliya_argentina_i_chili` | 3 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_braziliya_argentina_i_chili` | 4 | `excursion_source_tango_shou_v_buenos_ajrese` | 8 | 9 | Существующая каноническая |
+| `tour_source_braziliya_argentina_i_chili` | 5 | `excursion_source_ekskursiya_po_montevideo` | 9 | 10 | Существующая каноническая |
+| `tour_source_braziliya_argentina_i_chili` | 6 | `excursion_source_fiesta_gaucho` | 10 | 11 | Существующая каноническая |
+| `tour_source_braziliya_argentina_i_chili` | 7 | `excursion_santiago_maipo_wine_tour` | 13 | 14 | Новая, подготовлена в пакете |
+| `tour_source_braziliya_argentina_gruppovoj_tur` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 12 | 13 | Существующая каноническая |
+| `tour_source_sao_paulo_buzios_rio_iguasu` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 3 | 4 | Существующая каноническая |
+| `tour_source_sao_paulo_buzios_rio_iguasu` | 2 | `excursion_source_makuko_safari` | 3 | 4 | Существующая каноническая |
+| `tour_source_sao_paulo_buzios_rio_iguasu` | 3 | `excursion_source_polet_na_vertolete_nad_rio` | 7 | 8 | Существующая каноническая |
+| `tour_source_vazhnoe_brazilii` | 1 | `excursion_amazon_night_caiman_boat_trip` | 3 | 4 | Новая, подготовлена в пакете |
+| `tour_source_vazhnoe_brazilii` | 2 | `excursion_amazon_caboclo_family_visit` | 3 | 4 | Новая, подготовлена в пакете |
+| `tour_source_vazhnoe_brazilii` | 3 | `excursion_amazon_piranha_fishing` | 3 | 4 | Новая, подготовлена в пакете |
+| `tour_source_dostoprimechatelnosti_i_karnaval_v_rio_de_zhanejro` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 2 | 3 | Существующая каноническая |
+| `tour_source_kofe_tur_v_brazilii` | 1 | `excursion_source_botanical_garden` | 3 | 4 | Существующая каноническая |
+| `tour_source_kofe_tur_v_brazilii` | 2 | `excursion_rio_itacuruca_tropical_islands` | 3 | 4 | Новая, подготовлена в пакете |
+| `tour_source_kofe_tur_v_brazilii` | 3 | `excursion_source_rio_nochyu` | 3 | 4 | Существующая каноническая |
+| `tour_source_kofe_tur_v_brazilii` | 4 | `excursion_source_royal_petropolis_private_tour_full_day` | 3 | 4 | Существующая каноническая |
+| `tour_source_kofe_tur_v_brazilii` | 5 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_led_solntse_i_kraj_zemli` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 2 | 3 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 1 | `excursion_source_lapa_shou_nochnogo_rio_de_zhanejro` | 3 | 4 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 2 | `excursion_source_tajny_starogo_rio_de_zhanejro` | 3 | 4 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 3 | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | 3 | 4 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 4 | `excursion_source_royal_petropolis_private_tour_full_day` | 3 | 4 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 5 | `excursion_source_favela_tur` | 3 | 4 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 6 | `excursion_source_botanical_garden` | 3 | 4 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 7 | `excursion_source_rio_nochyu` | 3 | 4 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 8 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 9 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 10 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 11 | `excursion_buzios_coastal_boat_trip` | 11 | 12 | Существующая каноническая |
+| `tour_source_rajskaya_braziliya` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_rajskaya_braziliya` | 2 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_nezabyvaemaya_braziliya` | 1 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
+| `tour_source_nezabyvaemaya_braziliya` | 2 | `excursion_source_royal_petropolis_private_tour_full_day` | 4 | 5 | Существующая каноническая |
+| `tour_source_nezabyvaemaya_braziliya` | 3 | `excursion_rio_itacuruca_tropical_islands` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_nezabyvaemaya_braziliya` | 4 | `excursion_source_rio_nochyu` | 4 | 5 | Существующая каноническая |
+| `tour_source_nezabyvaemaya_braziliya` | 5 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_nezabyvaemaya_braziliya` | 6 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_nezabyvaemaya_braziliya` | 7 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_rio_i_iguasu_puteshestvie_po_kultovym_chudesam_brazilii` | 1 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_rio_i_iguasu_puteshestvie_po_kultovym_chudesam_brazilii` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_brazil_coffee_tour_ru` | 1 | `excursion_source_botanical_garden` | 3 | 4 | Существующая каноническая |
+| `tour_source_brazil_coffee_tour_ru` | 2 | `excursion_rio_itacuruca_tropical_islands` | 3 | 4 | Новая, подготовлена в пакете |
+| `tour_source_brazil_coffee_tour_ru` | 3 | `excursion_source_rio_nochyu` | 3 | 4 | Существующая каноническая |
+| `tour_source_brazil_coffee_tour_ru` | 4 | `excursion_source_royal_petropolis_private_tour_full_day` | 3 | 4 | Существующая каноническая |
+| `tour_source_brazil_coffee_tour_ru` | 5 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_lensojs_maranenses` | 1 | `excursion_sao_luis_city_tour_four_hours` | 1 | 2 | Новая, подготовлена в пакете |
+| `tour_source_luchshee_brazilii_argentiny_i_chili` | 1 | `excursion_source_makuko_safari` | 3 | 4 | Существующая каноническая |
+| `tour_source_luchshee_brazilii_argentiny_i_chili` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 3 | 4 | Существующая каноническая |
+| `tour_source_luchshee_brazilii_argentiny_i_chili` | 3 | `excursion_iguazu_helicopter_falls` | 3 | 4 | Существующая каноническая |
+| `tour_source_luchshee_brazilii_argentiny_i_chili` | 4 | `excursion_buenos_aires_tango_show_dinner_transfer` | 5 | 6 | Существующая каноническая |
+| `tour_source_luchshee_v_brazilii_rio_iguasu_buzios` | 1 | `excursion_source_makuko_safari` | 4 | 5 | Существующая каноническая |
+| `tour_source_luchshee_v_brazilii_rio_iguasu_buzios` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 4 | 5 | Существующая каноническая |
+| `tour_source_luchshee_v_brazilii_rio_iguasu_buzios` | 3 | `excursion_iguazu_helicopter_falls` | 4 | 5 | Существующая каноническая |
+| `tour_source_luchshee_v_brazilii_za_9_dnej` | 1 | `excursion_source_makuko_safari` | 4 | 5 | Существующая каноническая |
+| `tour_source_luchshee_v_brazilii_za_9_dnej` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 4 | 5 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej` | 2 | `excursion_source_makuko_safari` | 7 | 8 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 7 | 8 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej` | 4 | `excursion_iguazu_helicopter_falls` | 7 | 8 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej` | 5 | `excursion_source_vstrecha_rek` | 10 | 11 | Существующая каноническая |
+| `tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas` | 2 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas` | 3 | `excursion_iguazu_helicopter_falls` | 6 | 7 | Существующая каноническая |
+| `tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas` | 4 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_manaus_4_dnya_3_nochi` | 1 | `excursion_amazon_night_caiman_boat_trip` | 1 | 2 | Новая, подготовлена в пакете |
+| `tour_source_manaus_4_dnya_3_nochi` | 2 | `excursion_amazon_caboclo_family_visit` | 1 | 2 | Новая, подготовлена в пакете |
+| `tour_source_manaus_4_dnya_3_nochi` | 3 | `excursion_amazon_piranha_fishing` | 1 | 2 | Новая, подготовлена в пакете |
+| `tour_source_manaus_4_dnya_3_nochi` | 4 | `excursion_amazon_pink_dolphin_observation` | 4 | — | Новая, подготовлена в пакете |
+| `tour_source_manaus_4_dnya_3_nochi` | 5 | `excursion_source_vstrecha_rek` | 4 | — | Существующая каноническая |
+| `tour_source_manaus_4_dnya_3_nochi` | 6 | `excursion_amazon_jungle_survival_trekking` | 4 | — | Новая, подготовлена в пакете |
+| `tour_source_manaus_4_dnya_3_nochi` | 7 | `excursion_amazon_monkey_forest_canoe` | 4 | — | Новая, подготовлена в пакете |
+| `tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala` | 1 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala` | 3 | `excursion_iguazu_helicopter_falls` | 5 | 6 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala` | 4 | `excursion_buenos_aires_tango_show_dinner` | 7 | 8 | Существующая каноническая |
+| `tour_source_na_mototsiklakh_po_brazilii` | 1 | `excursion_sao_paulo_city_tour_six_hours` | 1 | 2 | Новая, подготовлена в пакете |
+| `tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 2 | 3 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe` | 3 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe` | 4 | `excursion_iguazu_helicopter_falls` | 6 | 7 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej` | 2 | `excursion_source_makuko_safari` | 7 | 8 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej` | 3 | `excursion_iguazu_helicopter_falls` | 7 | 8 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej` | 4 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 7 | 8 | Существующая каноническая |
+| `tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej` | 5 | `excursion_brazil_bonito_abismo_anhumas` | 9 | 10 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_novyj_god_v_brazilii` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_novyj_god_v_brazilii` | 2 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_novyj_god` | 1 | `excursion_source_favela_tur` | 4 | 5 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_novyj_god` | 2 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_novyj_god` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_novyj_god` | 4 | `excursion_source_tango_shou_v_buenos_ajrese` | 8 | 9 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_novyj_god` | 5 | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | 9 | 10 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_novyj_god` | 6 | `excursion_source_ekskursiya_po_montevideo` | 9 | 10 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_novyj_god` | 7 | `excursion_source_fiesta_gaucho` | 9 | 10 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god` | 1 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god` | 3 | `excursion_buenos_aires_tango_show_optional_dinner` | 7 | 8 | Новая, подготовлена в пакете |
+| `tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god` | 4 | `excursion_santiago_maipo_wine_tour` | 9 | 10 | Новая, подготовлена в пакете |
+| `tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu` | 2 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_novyj_god_v_rio` | 1 | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | 4 | 5 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_novyj_god_v_rio` | 2 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_novyj_god_v_rio` | 3 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_novyj_god_v_rio` | 4 | `excursion_source_favela_tur` | 4 | 5 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_novyj_god_v_rio` | 5 | `excursion_source_polet_na_deltaplane_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_opyt_brazilii` | 1 | `excursion_source_makuko_safari` | 4 | 5 | Существующая каноническая |
+| `tour_source_opyt_brazilii` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 4 | 5 | Существующая каноническая |
+| `tour_source_pantanal_bonito` | 1 | `excursion_brazil_bonito_abismo_anhumas` | 5 | 6 | Существующая каноническая |
+| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 2 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 4 | `excursion_iguazu_helicopter_falls` | 5 | 6 | Существующая каноническая |
+| `tour_source_peru_i_braziliya_na` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 8 | 9 | Существующая каноническая |
+| `tour_source_peru_i_braziliya_na` | 2 | `excursion_iguazu_helicopter_falls` | 8 | 9 | Существующая каноническая |
+| `tour_source_peru_i_braziliya_na` | 3 | `excursion_source_polet_na_vertolete_nad_rio` | 10 | 11 | Существующая каноническая |
+| `tour_source_puteshestvie_po_kultovym_chudesam_brazilii` | 1 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_puteshestvie_po_kultovym_chudesam_brazilii` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu` | 1 | `excursion_rio_zona_sul_bike_tour` | 1 | 2 | Новая, подготовлена в пакете |
+| `tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu` | 2 | `excursion_source_polet_na_vertolete_nad_rio` | 2 | 3 | Существующая каноническая |
+| `tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu` | 3 | `excursion_source_vstrecha_rek` | 3 | 4 | Существующая каноническая |
+| `tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu` | 4 | `excursion_iguazu_gran_aventura` | 6 | 7 | Существующая каноническая |
+| `tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu` | 5 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 7 | 8 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 1 | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | 4 | 5 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 2 | `excursion_source_rio_nochyu` | 4 | 5 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 3 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 4 | `excursion_rio_caipirinha_masterclass` | 4 | 5 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 5 | `excursion_rio_churrasco_masterclass` | 4 | 5 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 6 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 7 | `excursion_rio_sugarloaf_trekking` | 4 | 5 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 8 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 9 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 10 | `excursion_source_tango_shou_v_buenos_ajrese` | 8 | 9 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 11 | `excursion_buenos_aires_gastronomic_tour` | 9 | 10 | Новая, подготовлена в пакете |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 12 | `excursion_source_fiesta_gaucho` | 9 | 10 | Существующая каноническая |
+| `tour_source_roskoshnaya_braziliya_i_argentina` | 13 | `excursion_source_ekskursiya_po_montevideo` | 9 | 10 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_s_detmi` | 1 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_s_detmi` | 2 | `excursion_rio_maracana_stadium_tour` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_tur_v_braziliyu_s_detmi` | 3 | `excursion_source_royal_petropolis_private_tour_full_day` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_s_detmi` | 4 | `excursion_rio_itacuruca_tropical_islands` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_tur_v_braziliyu_s_detmi` | 5 | `excursion_source_rio_nochyu` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_s_detmi` | 6 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_s_detmi` | 7 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_s_detmi` | 8 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_solntse_tango_vino_i_atakama` | 1 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_solntse_tango_vino_i_atakama` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_solntse_tango_vino_i_atakama` | 3 | `excursion_source_tango_shou_v_buenos_ajrese` | 7 | 8 | Существующая каноническая |
+| `tour_source_novyj_god_v_rio_de_zhanejro_1` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_novyj_god_v_rio_de_zhanejro_1` | 2 | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | 4 | 5 | Существующая каноническая |
+| `tour_source_novyj_god_v_rio_de_zhanejro_1` | 3 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
+| `tour_source_novyj_god_v_rio_de_zhanejro_1` | 4 | `excursion_source_favela_tur` | 4 | 5 | Существующая каноническая |
+| `tour_source_novyj_god_v_rio_de_zhanejro_1` | 5 | `excursion_rio_pedra_bonita_trekking` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_novyj_god_v_rio_de_zhanejro_1` | 6 | `excursion_source_polet_na_deltaplane_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_argentina_and_brazil_ru` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 2 | 3 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_v_brazilii_rio_amazonka_vodopady_iguasu` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 2 | 3 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_v_brazilii_rio_amazonka_vodopady_iguasu` | 2 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_v_brazilii_rio_amazonka_vodopady_iguasu` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_v_brazilii_rio_amazonka_vodopady_iguasu` | 4 | `excursion_iguazu_helicopter_falls` | 6 | 7 | Существующая каноническая |
+| `tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu` | 1 | `excursion_source_rio_nochyu` | 4 | 5 | Существующая каноническая |
+| `tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu` | 2 | `excursion_source_tajny_starogo_rio_de_zhanejro` | 4 | 5 | Существующая каноническая |
+| `tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu` | 3 | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | 4 | 5 | Существующая каноническая |
+| `tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu` | 4 | `excursion_source_royal_petropolis_private_tour_full_day` | 4 | 5 | Существующая каноническая |
+| `tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu` | 5 | `excursion_source_favela_tur` | 4 | 5 | Существующая каноническая |
+| `tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu` | 6 | `excursion_source_rafain_shou` | 5 | 6 | Существующая каноническая |
+| `tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu` | 7 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 7 | 8 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej` | 2 | `excursion_source_rio_nochyu` | 9 | — | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej` | 3 | `excursion_source_zaliv_guanabara_morskaya_progulka` | 9 | — | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej` | 4 | `excursion_source_tajny_starogo_rio_de_zhanejro` | 9 | — | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej` | 5 | `excursion_source_polet_na_vertolete_nad_rio` | 9 | — | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej` | 6 | `excursion_source_botanical_garden` | 9 | — | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej` | 7 | `excursion_source_favela_tur` | 9 | — | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej` | 8 | `excursion_source_polet_na_deltaplane_nad_rio` | 9 | — | Существующая каноническая |
+| `tour_source_tur_v_argentinu_i_braziliyu_ot_lda_do_solntsa` | 1 | `excursion_buenos_aires_tango_show_dinner_transfer` | 2 | 3 | Существующая каноническая |
+| `tour_source_braziliya_i_argentina_v_sentyabre` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 7 | 8 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu` | 1 | `excursion_source_vstrecha_rek` | 5 | 6 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu` | 2 | `excursion_source_tango_shou_v_buenos_ajrese` | 12 | 13 | Существующая каноническая |
+| `tour_source_braziliya_i_peru_na_novyj_god` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_braziliya_i_peru_na_novyj_god` | 2 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_i_peru_na_novyj_god` | 3 | `excursion_source_favela_tur` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_i_peru_na_novyj_god` | 4 | `excursion_rio_pedra_bonita_trekking` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_braziliya_i_peru_na_novyj_god` | 5 | `excursion_source_polet_na_deltaplane_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_s_vodopadami_na_novyj_god` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_s_vodopadami_na_novyj_god` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_braziliya_s_vodopadami_na_novyj_god` | 3 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | 3 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | 4 | `excursion_iguazu_helicopter_falls` | 5 | 6 | Существующая каноническая |
+| `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | 5 | `excursion_brazil_bonito_abismo_anhumas` | 10 | 11 | Существующая каноническая |
+| `tour_source_roskoshnyj_novyj_god_v_brazilii` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_roskoshnyj_novyj_god_v_brazilii` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_roskoshnyj_novyj_god_v_brazilii` | 3 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_roskoshnyj_novyj_god_v_brazilii` | 4 | `excursion_source_plavanie_s_rozovymi_del_finami` | 10 | — | Существующая каноническая |
+| `tour_source_tropicheskij_karnaval_s_angroj_dush_rejsh` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 2 | 3 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_6dnej` | 1 | `excursion_source_makuko_safari` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_6dnej` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 4 | 5 | Существующая каноническая |
+| `tour_source_super_predlozhenie_rio_buzios` | 1 | `excursion_source_rio_nochyu` | 4 | 5 | Существующая каноническая |
+| `tour_source_super_predlozhenie_rio_buzios` | 2 | `excursion_source_tajny_starogo_rio_de_zhanejro` | 4 | 5 | Существующая каноническая |
+| `tour_source_super_predlozhenie_rio_buzios` | 3 | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | 4 | 5 | Существующая каноническая |
+| `tour_source_super_predlozhenie_rio_buzios` | 4 | `excursion_source_royal_petropolis_private_tour_full_day` | 4 | 5 | Существующая каноническая |
+| `tour_source_super_predlozhenie_rio_buzios` | 5 | `excursion_source_favela_tur` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_ekzoticheskuyu_braziliyu` | 1 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_ekzoticheskuyu_braziliyu` | 2 | `excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_ekzoticheskuyu_braziliyu` | 3 | `excursion_source_rio_nochyu` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_ekzoticheskuyu_braziliyu` | 4 | `excursion_source_royal_petropolis_private_tour_full_day` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_ekzoticheskuyu_braziliyu` | 5 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_ekzoticheskuyu_braziliyu` | 6 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_tur_v_ekzoticheskuyu_braziliyu` | 7 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_tur_v_ekzoticheskuyu_braziliyu` | 8 | `excursion_source_vstrecha_rek` | 8 | 9 | Существующая каноническая |
+| `tour_source_tur_v_ekzoticheskuyu_braziliyu` | 9 | `excursion_source_plavanie_s_rozovymi_del_finami` | 8 | 9 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_v_brazilii` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_v_brazilii` | 2 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_v_brazilii` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_v_brazilii` | 4 | `excursion_iguazu_helicopter_falls` | 6 | 7 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_v_brazilii` | 5 | `excursion_source_vstrecha_rek` | 9 | 10 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_v_brazilii` | 6 | `excursion_source_plavanie_s_rozovymi_del_finami` | 9 | 10 | Существующая каноническая |
+| `tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu` | 2 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_karnaval` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 8 | 9 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_karnaval` | 2 | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | 9 | 10 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_karnaval` | 3 | `excursion_source_ekskursiya_po_montevideo` | 9 | 10 | Существующая каноническая |
+| `tour_source_mechty_sbyvayutsya_na_karnaval` | 4 | `excursion_source_fiesta_gaucho` | 9 | 10 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_karnaval_v_brazilii` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 2 | 3 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_karnaval_v_brazilii` | 2 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_karnaval_v_brazilii` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_nezabyvaemyj_karnaval_v_brazilii` | 4 | `excursion_iguazu_helicopter_falls` | 6 | 7 | Существующая каноническая |
+| `tour_source_novogodnie_priklyucheniya_v_brazilii` | 1 | `excursion_brazil_bonito_abismo_anhumas` | 8 | 9 | Существующая каноническая |
+| `tour_source_ekzoticheskij_novyj_god_ru` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_ekzoticheskij_novyj_god_ru` | 2 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_ekzoticheskij_novyj_god_ru` | 3 | `excursion_source_vstrecha_rek` | 9 | 10 | Существующая каноническая |
+| `tour_source_ekzoticheskij_novyj_god_ru` | 4 | `excursion_source_plavanie_s_rozovymi_del_finami` | 9 | 10 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_13_dnej` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_13_dnej` | 2 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_13_dnej` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_13_dnej` | 4 | `excursion_brazil_bonito_abismo_anhumas` | 10 | 11 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | 1 | `excursion_source_rio_nochyu` | 3 | 4 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | 2 | `excursion_source_zaliv_guanabara_morskaya_progulka` | 3 | 4 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | 3 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | 4 | `excursion_source_botanical_garden` | 3 | 4 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | 5 | `excursion_source_favela_tur` | 3 | 4 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | 6 | `excursion_source_lapa_shou_nochnogo_rio_de_zhanejro` | 3 | 4 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | 7 | `excursion_source_rafain_shou` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | 8 | `excursion_source_makuko_safari` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | 9 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 4 | 5 | Существующая каноническая |
+| `tour_source_parad_chempionov_karnavala_v_rio` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 2 | 3 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre` | 2 | `excursion_rio_caipirinha_masterclass` | 3 | 4 | Существующая каноническая |
+| `tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre` | 3 | `excursion_source_makuko_safari` | 9 | 10 | Существующая каноническая |
+| `tour_source_stolitsy_latinskoj_ameriki` | 1 | `excursion_iguazu_gran_aventura` | 4 | 5 | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 7 | 8 | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 2 | `excursion_source_rio_nochyu` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 3 | `excursion_source_tajny_starogo_rio_de_zhanejro` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 4 | `excursion_source_polet_na_vertolete_nad_rio` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 5 | `excursion_source_botanical_garden` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 6 | `excursion_source_favela_tur` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 7 | `excursion_source_polet_na_deltaplane_nad_rio` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 8 | `excursion_source_rafain_shou` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 9 | `excursion_source_makuko_safari` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 10 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 11 | `excursion_iguazu_helicopter_falls` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 12 | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 13 | `excursion_source_ekskursiya_po_montevideo` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 14 | `excursion_source_fiesta_gaucho` | 12 | — | Существующая каноническая |
+| `tour_source_solntse_tango_i_vino` | 15 | `excursion_santiago_maipo_wine_tour` | 12 | — | Новая, подготовлена в пакете |
+| `tour_source_tur_v_krasochnuyu_braziliyu_2022` | 1 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_tur_v_krasochnuyu_braziliyu_2022` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_tropicheskaya_braziliya` | 1 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
+| `tour_source_tropicheskaya_braziliya` | 2 | `excursion_rio_itacuruca_tropical_islands` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_tropicheskaya_braziliya` | 3 | `excursion_source_rio_nochyu` | 4 | 5 | Существующая каноническая |
+| `tour_source_tropicheskaya_braziliya` | 4 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
+| `tour_source_tropicheskaya_braziliya` | 5 | `excursion_source_royal_petropolis_private_tour_full_day` | 4 | 5 | Существующая каноническая |
+| `tour_source_podlinnaya_braziliya` | 1 | `excursion_source_rafain_shou` | 9 | 10 | Существующая каноническая |
+| `tour_source_podlinnaya_braziliya` | 2 | `excursion_source_makuko_safari` | 10 | 11 | Существующая каноническая |
+| `tour_source_podlinnaya_braziliya` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 10 | 11 | Существующая каноническая |
+| `tour_source_braziliya_s_san_paulo` | 1 | `excursion_source_vstrecha_rek` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_s_san_paulo` | 2 | `excursion_source_plavanie_s_rozovymi_del_finami` | 4 | 5 | Существующая каноническая |
+| `tour_source_braziliya_s_san_paulo` | 3 | `excursion_source_polet_na_vertolete_nad_rio` | 7 | 8 | Существующая каноническая |
+| `tour_source_braziliya_s_san_paulo` | 4 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 9 | 10 | Существующая каноническая |
+| `tour_source_braziliya_s_san_paulo` | 5 | `excursion_source_makuko_safari` | 9 | 10 | Существующая каноническая |
+| `tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio` | 1 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio` | 3 | `excursion_source_tango_shou_v_buenos_ajrese` | 8 | 9 | Существующая каноническая |
+| `tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio` | 4 | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | 9 | 10 | Существующая каноническая |
+| `tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio` | 5 | `excursion_source_fiesta_gaucho` | 9 | 10 | Существующая каноническая |
+| `tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio` | 6 | `excursion_source_ekskursiya_po_montevideo` | 9 | 10 | Существующая каноническая |
+| `tour_source_tur_v_peru_i_braziliyu` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 8 | 9 | Существующая каноническая |
+| `tour_source_tur_v_peru_i_braziliyu` | 2 | `excursion_source_makuko_safari` | 8 | 9 | Существующая каноническая |
+| `tour_source_tur_v_peru_i_braziliyu` | 3 | `excursion_iguazu_helicopter_falls` | 8 | 9 | Существующая каноническая |
+| `tour_source_tur_v_peru_i_braziliyu` | 4 | `excursion_source_polet_na_vertolete_nad_rio` | 10 | 11 | Существующая каноническая |
+| `tour_source_tur_v_4_strany_yuzhnoj_ameriki` | 1 | `excursion_source_tango_shou_v_buenos_ajrese` | 8 | 9 | Существующая каноническая |
+| `tour_source_tur_v_4_strany_yuzhnoj_ameriki` | 2 | `excursion_source_makuko_safari` | 12 | 13 | Существующая каноническая |
+| `tour_source_tur_v_4_strany_yuzhnoj_ameriki` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 12 | 13 | Существующая каноническая |
+| `tour_source_karnaval_v_rio_de_zhanejro` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 2 | 3 | Существующая каноническая |
+| `tour_source_chili_argentina_braziliya` | 1 | `excursion_santiago_maipo_wine_tour` | 2 | 3 | Новая, подготовлена в пакете |
+| `tour_source_chili_argentina_braziliya` | 2 | `excursion_source_tango_shou_v_buenos_ajrese` | 8 | 9 | Существующая каноническая |
+| `tour_source_chili_argentina_braziliya` | 3 | `excursion_source_fiesta_gaucho` | 9 | 10 | Существующая каноническая |
+| `tour_source_chili_argentina_braziliya` | 4 | `excursion_source_ekskursiya_po_montevideo` | 9 | 10 | Существующая каноническая |
+| `tour_source_chili_argentina_braziliya` | 5 | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | 9 | 10 | Существующая каноническая |
+| `tour_source_chili_argentina_braziliya` | 6 | `excursion_source_makuko_safari` | 11 | 12 | Существующая каноническая |
+| `tour_source_chili_argentina_braziliya` | 7 | `excursion_iguazu_helicopter_falls` | 11 | 12 | Существующая каноническая |
+| `tour_source_chili_argentina_braziliya` | 8 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 11 | 12 | Существующая каноническая |
+| `tour_source_chili_argentina_braziliya` | 9 | `excursion_source_botanical_garden` | 14 | 15 | Существующая каноническая |
+| `tour_source_chili_argentina_braziliya` | 10 | `excursion_source_royal_petropolis_private_tour_full_day` | 14 | 15 | Существующая каноническая |
+| `tour_source_chili_argentina_braziliya` | 11 | `excursion_source_polet_na_vertolete_nad_rio` | 14 | 15 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii` | 2 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii` | 4 | `excursion_iguazu_helicopter_falls` | 5 | 6 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii` | 5 | `excursion_source_vstrecha_rek` | 9 | 10 | Существующая каноническая |
+| `tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii` | 6 | `excursion_source_plavanie_s_rozovymi_del_finami` | 9 | 10 | Существующая каноническая |
+| `tour_source_venesuela_populyarnye_napravleniya` | 1 | `excursion_canaima_pemon_village_visit` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_kraski_venesuely` | 1 | `excursion_venezuela_avila_humboldt_visit` | 1 | 2 | Новая, подготовлена в пакете |
+| `tour_source_kraski_venesuely` | 2 | `excursion_canaima_pemon_village_visit` | 5 | 6 | Новая, подготовлена в пакете |
+| `tour_source_kraski_venesuely` | 3 | `excursion_venezuela_angel_helicopter_flight` | 5 | 6 | Новая, подготовлена в пакете |
+| `tour_source_kraski_venesuely` | 4 | `excursion_venezuela_angel_airplane_flight` | 5 | 6 | Новая, подготовлена в пакете |
+| `tour_source_kraski_venesuely` | 5 | `excursion_venezuela_kavak_angel_flight` | 5 | 6 | Новая, подготовлена в пакете |
+| `tour_source_kraski_venesuely` | 6 | `excursion_venezuela_kuravaina_trekking` | 5 | 6 | Новая, подготовлена в пакете |
+| `tour_source_kraski_venesuely` | 7 | `excursion_venezuela_blue_lagoon_trip` | 5 | 6 | Новая, подготовлена в пакете |
+| `tour_source_kraski_venesuely` | 8 | `excursion_venezuela_sakaika_cycling` | 5 | 6 | Новая, подготовлена в пакете |
+| `tour_source_populyarnye_napravleniya_venesuely` | 1 | `excursion_canaima_pemon_village_visit` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_skazki_venesuelskogo_lesa` | 1 | `excursion_canaima_pemon_village_visit` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_skazki_venesuelskogo_lesa` | 2 | `excursion_venezuela_avila_humboldt_visit` | 12 | — | Новая, подготовлена в пакете |
+| `tour_source_priroda_i_kultura_venesuely_bolivii` | 1 | `excursion_canaima_pemon_village_visit` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_venesuela_prirodnye_kontrasty_tropikov` | 1 | `excursion_canaima_pemon_village_visit` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_krasota_venesuely` | 1 | `excursion_canaima_pemon_village_visit` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_luchshee_v_venesuele` | 1 | `excursion_venezuela_avila_humboldt_visit` | 3 | 4 | Новая, подготовлена в пакете |
+| `tour_source_luchshee_v_venesuele` | 2 | `excursion_canaima_pemon_village_visit` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_luchshee_v_venesuele` | 3 | `excursion_venezuela_angel_helicopter_flight` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_luchshee_v_venesuele` | 4 | `excursion_venezuela_kavak_angel_helicopter` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_luchshee_v_venesuele` | 5 | `excursion_venezuela_kavak_angel_flight` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_luchshee_v_venesuele` | 6 | `excursion_venezuela_kuravaina_trekking` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_luchshee_v_venesuele` | 7 | `excursion_venezuela_blue_lagoon_trip` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_luchshee_v_venesuele` | 8 | `excursion_venezuela_sakaika_lagoon_trip` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_venesuela_treking_v_zateryannyj_i_pervozdannyj_mir_rorajmy` | 1 | `excursion_canaima_pemon_village_visit` | 11 | 12 | Новая, подготовлена в пакете |
+| `tour_source_kolumbiya_2024` | 1 | `excursion_colombia_guatape_helicopter_flight` | 7 | 8 | Новая, подготовлена в пакете |
+| `tour_source_kolumbiya_stolitsy` | 1 | `excursion_colombia_san_pedro_majagua_day_trip` | 7 | 8 | Новая, подготовлена в пакете |
+| `tour_source_manyashchij_peru_kolumbiya` | 1 | `excursion_cusco_cathedral_visit` | 3 | 4 | Существующая каноническая |
+| `tour_source_manyashchij_peru_kolumbiya` | 2 | `excursion_peru_sacred_valley_full_day` | 5 | 6 | Существующая каноническая |
+| `tour_source_manyashchij_peru_kolumbiya` | 3 | `excursion_colombia_baru_agua_azul_day_trip` | 13 | 14 | Новая, подготовлена в пакете |
+| `tour_source_tur_v_kolumbiyu_na_12_dnej` | 1 | `excursion_source_kofejnyj_tur_v_perejra` | 2 | 3 | Существующая каноническая |
+| `tour_source_vip_kosta_rika_nikaragua` | 1 | `excursion_costa_rica_monteverde_viento_fresco_day_trip` | 3 | 4 | Новая, подготовлена в пакете |
+| `tour_source_vsya_panama_natsionalnye_parki_ostrova_i_doliny` | 1 | `excursion_panama_chorro_del_macho_canopy` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_panama_panama_siti_dolina_anton_krepost_san_lorenso` | 1 | `excursion_panama_chorro_del_macho_canopy` | 2 | 3 | Новая, подготовлена в пакете |
+| `tour_source_tur_po_uruguayu_i_paragvayu_16_dnej` | 1 | `excursion_source_makuko_safari` | 14 | 15 | Существующая каноническая |
+| `tour_source_tur_po_uruguayu_i_paragvayu_16_dnej` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 14 | 15 | Существующая каноническая |
+| `tour_source_ves_mnogolikij_peru_plyazhi_tumbesa` | 1 | `excursion_cusco_cathedral_visit` | 3 | 4 | Существующая каноническая |
+| `tour_source_ves_mnogolikij_peru_plyazhi_tumbesa` | 2 | `excursion_peru_paracas_nazca_full_day` | 11 | 12 | Новая, подготовлена в пакете |
+| `tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej` | 1 | `excursion_peru_sacred_valley_via_ferrata` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej` | 2 | `excursion_peru_sacred_valley_zipline` | 4 | 5 | Новая, подготовлена в пакете |
+| `tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej` | 3 | `excursion_lima_larco_museum_visit` | 7 | 8 | Существующая каноническая |
+| `tour_source_manyashchij_peru_i_ikitos` | 1 | `excursion_cusco_cathedral_visit` | 2 | 3 | Существующая каноническая |
+| `tour_source_manyashchij_peru_i_ikitos` | 2 | `excursion_peru_sacred_valley_full_day` | 4 | 5 | Существующая каноническая |
+| `tour_source_manyashchij_peru_i_ikitos` | 3 | `excursion_peru_paracas_nazca_full_day` | 10 | 11 | Новая, подготовлена в пакете |
+| `tour_source_manyashchij_peru_i_ikitos` | 4 | `excursion_peru_caral_day_trip` | 10 | 11 | Новая, подготовлена в пакете |
+| `tour_source_manyashchij_peru_i_ikitos` | 5 | `excursion_lima_city_gold_museum` | 10 | 11 | Новая, подготовлена в пакете |
+| `tour_source_manyashchij_peru_i_ikitos` | 6 | `excursion_lima_folklore_dinner_show` | 10 | 11 | Существующая каноническая |
+| `tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii` | 1 | `excursion_cusco_cathedral_visit` | 2 | 3 | Существующая каноническая |
+| `tour_source_ves_mnogolikij_peru_ikitos` | 1 | `excursion_cusco_cathedral_visit` | 3 | 4 | Существующая каноническая |
+| `tour_source_ves_mnogolikij_peru_ikitos` | 2 | `excursion_peru_paracas_nazca_full_day` | 11 | 12 | Новая, подготовлена в пакете |
+| `tour_source_ves_mnogolikij_peru_i_senor_sipan` | 1 | `excursion_cusco_cathedral_visit` | 3 | 4 | Существующая каноническая |
+| `tour_source_ves_mnogolikij_peru_i_senor_sipan` | 2 | `excursion_peru_paracas_nazca_full_day` | 11 | 12 | Новая, подготовлена в пакете |
+| `tour_source_ves_mnogolikij_peru` | 1 | `excursion_cusco_cathedral_visit` | 3 | 4 | Существующая каноническая |
+| `tour_source_ves_mnogolikij_peru` | 2 | `excursion_peru_paracas_nazca_full_day` | 11 | 12 | Новая, подготовлена в пакете |
+| `tour_source_chili_kosmicheskoe_puteshestvie_na_zemle` | 1 | `excursion_chile_atacama_astronomy_tour` | 3 | 4 | Новая, подготовлена в пакете |
+| `tour_source_ves_ekvador_na_novyj_god` | 1 | `excursion_source_ostrov_severnyj_sejmur` | 10 | 11 | Существующая каноническая |
+| `tour_source_ves_ekvador_na_novyj_god` | 2 | `excursion_source_ostrov_plasa` | 10 | 11 | Существующая каноническая |
+| `tour_source_ves_ekvador_i_galapagosskie_ostrova` | 1 | `excursion_source_ostrov_severnyj_sejmur` | 7 | 8 | Существующая каноническая |
+| `tour_source_ves_ekvador_i_galapagosskie_ostrova` | 2 | `excursion_source_ostrov_plasa` | 7 | 8 | Существующая каноническая |
+| `tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy` | 1 | `excursion_source_ostrov_severnyj_sejmur` | 10 | 11 | Существующая каноническая |
+| `tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy` | 2 | `excursion_source_ostrov_plasa` | 10 | 11 | Существующая каноническая |
+| `tour_source_pochuvstvujte_peru_ekvador` | 1 | `excursion_source_ostrov_severnyj_sejmur` | 17 | 18 | Существующая каноническая |
+| `tour_source_pochuvstvujte_peru_ekvador` | 2 | `excursion_source_ostrov_plasa` | 17 | 18 | Существующая каноническая |
+| `tour_source_ekvador_s_udovolstviem` | 1 | `excursion_source_ostrov_severnyj_sejmur` | 11 | 12 | Существующая каноническая |
+| `tour_source_ekvador_s_udovolstviem` | 2 | `excursion_source_ostrov_plasa` | 11 | 12 | Существующая каноническая |
+| `tour_source_ekvador_aktivnyj_tur_s_galapagossom` | 1 | `excursion_ecuador_mindo_river_tubing` | 3 | 4 | Новая, подготовлена в пакете |
+| `tour_source_ekvador_aktivnyj_tur_s_galapagossom` | 2 | `excursion_source_ostrov_severnyj_sejmur` | 16 | 17 | Существующая каноническая |
+| `tour_source_ekvador_aktivnyj_tur_s_galapagossom` | 3 | `excursion_source_ostrov_plasa` | 16 | 17 | Существующая каноническая |
+| `tour_source_ekvador_v_sentyabre` | 1 | `excursion_ecuador_misicocha_forest_walk` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_ekvador_v_sentyabre` | 2 | `excursion_ecuador_cosano_amazoonico` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_ekvador_v_sentyabre` | 3 | `excursion_ecuador_kichwa_family_crafts` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_ekvador_v_sentyabre` | 4 | `excursion_ecuador_casa_suizo_river_island_walk` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_ekvador_v_sentyabre` | 5 | `excursion_ecuador_casa_suizo_butterfly_farm` | 6 | 7 | Новая, подготовлена в пакете |
+| `tour_source_ekvador_v_sentyabre` | 6 | `excursion_source_ostrov_severnyj_sejmur` | 10 | 11 | Существующая каноническая |
+| `tour_source_ekvador_v_sentyabre` | 7 | `excursion_source_ostrov_plasa` | 10 | 11 | Существующая каноническая |
+| `tour_source_ekvador_krasota_i_priroda` | 1 | `excursion_source_ostrov_severnyj_sejmur` | 8 | 9 | Существующая каноническая |
+| `tour_source_ekvador_krasota_i_priroda` | 2 | `excursion_source_ostrov_plasa` | 8 | 9 | Существующая каноническая |
+| `tour_source_ves_ekvador_i_gorbatye_kity` | 1 | `excursion_source_ostrov_severnyj_sejmur` | 7 | 8 | Существующая каноническая |
+| `tour_source_ves_ekvador_i_gorbatye_kity` | 2 | `excursion_source_ostrov_plasa` | 7 | 8 | Существующая каноническая |
+| `tour_source_ekvador_kito_galapagosskie_ostrova` | 1 | `excursion_quito_equator_six_hour_tour` | 1 | 2 | Новая, подготовлена в пакете |
+
+### 10.3. Заблокированные туры для продолжения
+
+Эти ID не включены в готовые Tour-файлы пакета. Сначала разрешается указанная причина по точному источнику или mapping; затем повторяется сборка затронутых данных. Исключённый источник не становится очередью публикации автоматически.
+
+Причины ниже взяты из итогового адресного разбора источников, включая результат проверки точного Original там, где она выполнена. SHA-256 этого разбора: `8b3c0dfe1d4151f9f3e8743e154e7f1549f24c8f1a890ac066e7cf2df75833bb`.
+
+| Строка реестра | Tour ID | Стадия | Конкретные причины | Проверенный источник |
+|---:|---|---|---|---|
+| 312 | `tour_source_tur_v_argentinu_v_patagoniyu` | Требуется разрешить блокировку | В день 8 после Ушуайи указан выезд в аэропорт Калафате, но транспорт между этими городами не описан. Точный Original повторяет эту связку. | [V2](https://drive.google.com/file/d/1ihJ6M_I3yGwNoqQKZjqJECV6YoUVanvJ/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/12d0MV65-Cj-LufF8vRZU5ln1Xi2RwGyQ/view?usp=drivesdk) · SHA-256 Original: `a01f3ec0571ff1224f59ec04cf9960fcc979209959dde3cf37fdd356e4493203` |
+| 316 | `tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni` | Требуется разрешить блокировку | Перечень перелётов и включённых услуг содержит Рио и Игуасу, которых нет в подробной программе Аргентины, Чили и Боливии. В Original соответствующие списки пусты, поэтому условия не удалось подтвердить. | [V2](https://drive.google.com/file/d/1dNdMAaIb5bvL-FMKEGuj5_qy6QCEkMfA/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1kmGBApOHtAluPM4C2IZePo8uYfkqJ_yB/view?usp=drivesdk) · SHA-256 Original: `f47ca008b3723647b6883056f90fa542077b043227bf46b87de220d14067eb74` |
+| 317 | `tour_source_argentina_chili_boliviya` | Требуется разрешить блокировку | Перечень перелётов и включённых услуг содержит Рио и Игуасу, которых нет в подробной программе Аргентины, Чили и Боливии. В Original соответствующие списки пусты, поэтому условия не удалось подтвердить. | [V2](https://drive.google.com/file/d/1W8ovBDU435OY8C1h1Uekv77nkgd5B709/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1LANhMIKuqPEUMHqLM6lcpk_0Abp51Mx8/view?usp=drivesdk) · SHA-256 Original: `93127059286446131d6b8d4a80f3f40efeaf5948ec965d5c785de9bba1c36bfc` |
+| 321 | `tour_source_kruiznyj_tur_po_luchshim_mestam_argentiny_chili_i_bolivii` | Требуется разрешить блокировку | «Остров Рыб» в Уюни не позволяет однозначно выбрать Инкауаси или Исла-Пескадо. Точный Original тоже не называет остров; предполагаемый ID не создавался. | [V2](https://drive.google.com/file/d/1gcFSZ3j6cFll304P8SWxLUDJs0K2trDP/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1TM9yhh7VsCCV8gbhT2ENH_FfIYEw_8Ih/view?usp=drivesdk) · SHA-256 Original: `aea552aec4fcd2400b88f73b7a9f908deb2782131e2739becffe84de5576a055` |
+| 338 | `tour_source_solonchak_uyuni` | Требуется разрешить блокировку | «Остров Рыб» в Уюни не позволяет однозначно выбрать Инкауаси или Исла-Пескадо. Точный Original тоже не называет остров; предполагаемый ID не создавался. | [V2](https://drive.google.com/file/d/1xnPYMsQKI8n36d-ekdcIJ9ZSrPWuZ9sS/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1Oajx4hWyMaaK7O_BOaQdgzbeKznVcoQg/view?usp=drivesdk) · SHA-256 Original: `e380367c3747505f800ea92115dcba40e3352109d474041667e8fcfce5af013f` |
+| 340 | `tour_source_priklyucheniya_v_bolivii` | Требуется разрешить блокировку | В дне Ла-Паса и Лунной долины названы чилийские Кордильера-де-ла-Саль и Лос-Фламенкос без переезда в Чили. Такое же противоречие есть в Original. | [V2](https://drive.google.com/file/d/1e9nlNWXZxBtD8FEmtGFeECUuK6-V7rRH/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1GXFvYKBzZp4eQwU5f6QiIN47YMLfeY3X/view?usp=drivesdk) · SHA-256 Original: `a2fcec6a31107a4a0309ed8f3af5b35a5d5fa49ea3b3904fc47342cc9af4329f` |
+| 362 | `tour_source_5_stran_latinskoj_ameriki` | Требуется разрешить блокировку | «Остров Рыб» в Уюни не позволяет однозначно выбрать Инкауаси или Исла-Пескадо. Точный Original тоже не называет остров; предполагаемый ID не создавался. | [V2](https://drive.google.com/file/d/14_PyOo8ZDuAiXeu4rMyPkDhd5SLAb0Hg/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1ZW4KPkdpt5MTCrYR7PdsqxA8izBEbcw1/view?usp=drivesdk) · SHA-256 Original: `88615b6b8b6901cf85cccf871198f2e1620d9eec9445e9643b63cb1cfc9fb1dd` |
+| 368 | `tour_source_nezabyvaemyj_parad_chempionov_v_brazilii` | Требуется разрешить блокировку | В перечне перелётов указан Манаус, хотя программа проходит через Рио, Игуасу и Бузиос. В Original списки услуг пусты; также расходятся обозначенная и подробная длительность. | [V2](https://drive.google.com/file/d/1rW2RVz3vsX171LYMVOdKZjmbVFZ_nqYr/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1KW9UIxaZQdogdOPT4BLvjKGseqt7-MfG/view?usp=drivesdk) · SHA-256 Original: `7082e0380d62fcd35a17528879e4e6f065188b83accc28a4c16f8361a881c2e2` |
+| 374 | `tour_source_karnaval_5_stran` | Требуется разрешить блокировку | «Остров Рыб» в Уюни не позволяет однозначно выбрать Инкауаси или Исла-Пескадо. Точный Original тоже не называет остров; предполагаемый ID не создавался. | [V2](https://drive.google.com/file/d/1vg1mD1sMutKZHvcGAM8_vNYJ4ppDTKGj/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1UVuZS9tANtOSfXbjKJzOyOVehWWG-2A3/view?usp=drivesdk) · SHA-256 Original: `8f408c994ab078095e8b5591bac126036ac9bce06886ae89aa11a2efb3e37da8` |
+| 382 | `tour_source_luchshee_v_rio_de_zhanejro` | Требуется разрешить блокировку | Заявлены 7 дней / 6 ночей, но подробно расписаны дни 1–8 с вылетом в день 8. Original содержит то же расхождение. | [V2](https://drive.google.com/file/d/14kreGDJi8jmToszpfyXd-8rza6F78RxS/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1sS5aDZ10Fc4GAAov5E8Klo_DrpaIBDmR/view?usp=drivesdk) · SHA-256 Original: `6dd10e76e53612d70dee6d634c902a3dbbe7565f32d9543ef679f7b291176e10` |
+| 394 | `tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god` | Требуется разрешить блокировку | «Остров Рыб» в Уюни не позволяет однозначно выбрать Инкауаси или Исла-Пескадо. Точный Original тоже не называет остров; предполагаемый ID не создавался. | [V2](https://drive.google.com/file/d/1X9xvFC1bpZiyxNyVYUzWHAfni5XOD9ov/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1o9Ae8I4l1HrQ85ucn-KdPaEHTy32WJQc/view?usp=drivesdk) · SHA-256 Original: `8ee36f974e5685ee579fcaef8da0037185f7f710fabc56c3fe3043166d458981` |
+| 445 | `tour_source_ekzoticheskij_parad_chempionov_v_brazilii` | Требуется разрешить блокировку | Шапка обещает две ночи в Бузиосе, но день 10 возвращает из Амазонии в Рио, а день 11 завершает тур вылетом из Рио. Original не разрешает расхождение. | [V2](https://drive.google.com/file/d/1COKJGlLabzkoE1-zE5Tsmax6ivkwHukn/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1VEQ3XuvhYEyj4wYR00Q5tYFdNJh5sliR/view?usp=drivesdk) · SHA-256 Original: `b4bbf1f558b740f41f2a84f7ff7a531f1db673e451a784df2d48b7cc4e75c209` |
+| 448 | `tour_source_romanticheskaya_braziliya` | Требуется разрешить блокировку | Название и маршрут обещают Коста-ду-Сауипе, а дни 8–12 описывают отдых и выезд из Прайя-ду-Форте. Выбор или замена курорта не оговорены и в Original. | [V2](https://drive.google.com/file/d/1oxlpfJ0LcMojqSVDW6igF6yl_lZQ25h7/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/14Q8rkqDETgJPwLv0tUUWy3SDsPEwvSzE/view?usp=drivesdk) · SHA-256 Original: `578c6c42ca7029879b828acd51ecdead8fbecb28e0478e0b604f67f6d0218e63` |
+| 463 | `tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala` | Требуется разрешить блокировку | «Остров Рыб» в Уюни не позволяет однозначно выбрать Инкауаси или Исла-Пескадо. Точный Original тоже не называет остров; предполагаемый ID не создавался. | [V2](https://drive.google.com/file/d/1ZXQdgUQgbvKmj7RFavqjAyoTha17Fplh/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1LHR7QTq7xoZ5OpV90VOqvaRtcOkoccfU/view?usp=drivesdk) · SHA-256 Original: `3b3a11ec87ed9c8a91c435ecdde0035b986b3c995464d3f4b0e792cc7460c0f4` |
+| 467 | `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala_v_brazilii` | Требуется разрешить блокировку | В цене внутренних перелётов указан Кампу-Гранди, хотя дни 7–9 описывают Манаус и Амазонию. В Original списки услуг пусты; маршрут через Кампу-Гранди и сумма USD 800 там не подтверждены. | [V2](https://drive.google.com/file/d/14P315bp2Xlner0nNdat0WhSuintRX0AO/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1yGXSAL9AMU8TUGuZfxl8lZPI7-i3PNF0/view?usp=drivesdk) · SHA-256 Original: `87230838b7a6f70db924e42c679de7618334b0da9be87243abdcd0cd1437c1a8` |
+| 470 | `tour_source_emotsii_brazilii` | Требуется разрешить блокировку | Статус Макуко-Сафари расходится между программой и перечнем дополнительных услуг. В V2 также остались служебные фразы об исходном описании. Original не позволяет определить включённость экскурсии. | [V2](https://drive.google.com/file/d/15Zw6YM0OMn2h5FnpUWxmIW0AVbFV8reO/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1rss8kmWixki4wsIY4hVi8T86wTr7axZv/view?usp=drivesdk) · SHA-256 Original: `1676c7d4fc71f4d3d3ae80d7a57747e27591433eefb57fa26c2cdef152d6e7ee` |
+| 498 | `tour_source_tur_v_kolumbiyu_na_10_dnej` | Требуется разрешить блокировку | В колумбийском туре среди дополнительных экскурсий указан вертолётный полёт над Рио. Original с пустыми списками услуг не подтверждает эту строку. | [V2](https://drive.google.com/file/d/1T-ie16JSmpharVOTK7tU7XAfg2nYPIPy/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1Qr3iqYH_qogzbmw1OFLWzzl3_InyUwEK/view?usp=drivesdk) · SHA-256 Original: `ed54b29dc26f9dfc05b90b0c2d9dd01bbf5ff971c1d92a06af57c2521cf71a57` |
+| 515 | `tour_source_gvatemala_kosta_rika` | Требуется разрешить блокировку | Шапка включает Поас, водопады Ла-Пас и Монтеверде, но подробные дни проходят по другому маршруту Коста-Рики. То же расхождение присутствует в Original. | [V2](https://drive.google.com/file/d/11slsiQv4cYW4hFklos0if0SER8ez1ZZA/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1bjfdrhcxJeo4nBOzvuTCPGz0-_XoAa2m/view?usp=drivesdk) · SHA-256 Original: `5e18f64439e8e139c34f2e50f5a977215b78f83be92b9c565a7e514490242da7` |
+| 533 | `tour_source_viva_meksika` | Требуется разрешить блокировку | Шапка включает Паленке, Кампече, Сумидеро и Сан-Кристобаль, которых нет в подробных днях. Original повторяет расхождение; Пуэбла описана лишь как вариант автотрансфера. | [V2](https://drive.google.com/file/d/1hrJ47C30A9KaPGhWWPg07n85bMeO2FH8/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1HJTK31fj0amXChnX-S4kbeD6k3ReajfE/view?usp=drivesdk) · SHA-256 Original: `b2b9eae7bdeb867cb875d145dfbf954b4ac395ab3952b17881383d056bb082ab` |
+| 561 | `tour_source_ves_mnogolikij_peru_i_prazdnik_sv_kandelarii` | Требуется разрешить блокировку | Заголовок дня 7 добавляет Лиму, хотя текст возвращает в Пуно; заголовок дня 10 добавляет Наску, хотя текст заканчивается перелётом в Лиму. Original содержит те же ошибки. | [V2](https://drive.google.com/file/d/1IWkV6aazJkOpMai5_gpRshl1xxMQ2HGf/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1Sl5OnNI-cgX8k8JfV_eurehMggq-ATN8/view?usp=drivesdk) · SHA-256 Original: `8d6618d83b5840964bba7803d1c5a666d8b7bcf746ca3a4aa5455a5523dbb897` |
+| 566 | `tour_source_peru_na_prazdnik_sv_kandelyarii` | Источник исключён; не публиковать | Выбранный V2 имеет status: excluded: программа исключена из нового сайта по решению Анны от 28.09.2026. Это отдельное явное исключение, а не автоматическое удаление всех датированных программ. | [V2](https://drive.google.com/file/d/1DYAr9gYVva0QfxcfRrHW00PJq6tVtv-j/view?usp=drivesdk) |
+| 593 | `tour_source_velikij_tur_po_yuzhnoj_amerike` | Требуется разрешить блокировку | Названия «Рыбачий остров» и «Кочани» не позволяют однозначно определить места. Original не уточняет остров и не подтверждает написание Колчани. | [V2](https://drive.google.com/file/d/1Of-rCEbo7uTXOBvvXzNiFYyt8TC5a2Wn/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1bDtn-FVcdYlM-oCSIFI276Mw3rGghs2a/view?usp=drivesdk) · SHA-256 Original: `a1bee30f2527dd966110cdab1d22cfa7b363a8aa23a790ddd764ca61ab928081` |
+| 606 | `tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh` | Требуется разрешить блокировку | Парк Кондор запланирован на понедельник, а в том же дне указан режим закрытия по понедельникам и вторникам. Original повторяет противоречие. | [V2](https://drive.google.com/file/d/1l0-bTlulZuyQmjhJ5yU85K9R4TFq8Etp/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1dbDiJbsQyV7eM8qntO0KJrPskb071lvR/view?usp=drivesdk) · SHA-256 Original: `74f13ba0b54ebbc89831385ffd9eff13f422e4ae1e5f2d986b66691201bc089b` |
+| 610 | `tour_source_galapagosskie_ostrova_na_vip_yakhte` | Требуется разрешить блокировку | Названия «Старый Дафне» / «Дафне» не позволяют однозначно выбрать Daphne Major или Daphne Minor. Original не уточняет остров. | [V2](https://drive.google.com/file/d/16Ck2YmhiPe5rZwMWeXsOKJhyG5kIj0nk/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1_8mAexfPceMS3fPtxwJGyqmtmqY5ZzYI/view?usp=drivesdk) · SHA-256 Original: `4a09afe05575e8e4fa0fec493669001837c9eede14c8e77600510e296d805c9f` |
+| 611 | `tour_source_kontinentalnyj_ekvador_amazoniya` | Требуется разрешить блокировку | Во вводный блок V2 попала экскурсия через Сипакиру и Вилья-де-Лейву в Колумбии, хотя программа проходит по Эквадору. В Original этой вставки нет; замена без редакционного решения не подготовлена. | [V2](https://drive.google.com/file/d/11wwczX85gDnEqH-Rf59Uh8D-N6rOHb0g/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1VkRQarBDda9VhzaLT4zAg4PVJRCc5_jN/view?usp=drivesdk) · SHA-256 Original: `a28a76fc2e423c46e515274541b0cd204034ae18b7b072d78697d63fb5003b43` |
+| 613 | `tour_source_ves_ekvador_galapagosskie_ostrova` | Требуется разрешить блокировку | Куэнка есть в общей строке маршрута, но отсутствует в подробных днях. Отдельно оплачиваемый перелёт Гуаякиль–Галапагосы также не согласован с отправлением из Кито; пустые списки услуг Original не разрешают вопрос. | [V2](https://drive.google.com/file/d/1XmePdA0ajjWZlYfpTRGnGsnk6Gkeq8Te/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1I4CeVPF9lDGQQMAs3naJ_DWh0V8n3NJ0/view?usp=drivesdk) · SHA-256 Original: `3f1f6ac681c0e2115e7ccc2b77008f3e11367dec3c4807c4ea63c142172786a7` |
+| 614 | `tour_source_ekvador_zhivaya_priroda` | Требуется разрешить блокировку | Килотоа присутствует в общей строке маршрута, но не посещается по подробной программе. Original содержит то же расхождение. | [V2](https://drive.google.com/file/d/1d_Qh3Eih0O3CwhTSshAWPtfw-V21akNK/view?usp=drivesdk) · [Original](https://drive.google.com/file/d/1R00iFsSsw16B85EhNKk3H-10_zlcudxO/view?usp=drivesdk) · SHA-256 Original: `e1e1b280fd396e217809da66548d177f473ab62c8e73d34700b9c027aed85ff3` |
+
+### 10.4. Известные ограничения подготовленных данных
+
+- У 168 готовых туров есть дни без доказанного соответствия собственной фотографии. Чужие или случайные изображения не подставлялись.
+- У 7 готовых туров сохранены нераспределимые диапазоны дней. Диапазон указан в названии блока; длительность тура взята из подтверждённого источника.
+- У 35 новых канонических экскурсий отсутствует подтверждённый hero. Отсутствие отражено в source entry и не замаскировано подстановкой фотографии.
+
+Следующая стадия: включить подготовленные файлы одним логическим commit, получить результат одного штатного Actions build/deploy и после успешного выпуска обновить только соответствующие строки реестра и очереди материалов. Самостоятельный служебный commit ради статуса этого журнала не требуется.
+
+<!-- /ADA_TOURS_PREPARED_BATCH:2026-10-02-planned-tours-v2 -->

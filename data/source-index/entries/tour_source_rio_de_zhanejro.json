@@ -9,8 +9,17 @@
   "countryIds": [
     "country_brazil"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_amazon"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_amazon",
+      "name": "Манаус и Амазония",
+      "url": "/braziliya/place/manaus-amazonia/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -112,13 +121,34 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/MANAUS.png",
+          "alt": "Манаус"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/MANAUS.png",
+          "alt": "Манаус"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "47436b5c90ba03cb5d839042975fd395c3a3db2f21ff2e54c2acf48bbf91e6eb",
+      "missingDays": [
+        2
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -136,5 +166,12 @@
   ],
   "legacyUrls": [
     "/tury/rio-de-zhanejro/"
+  ],
+  "registryRow": 415,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_amazon"
   ]
 }

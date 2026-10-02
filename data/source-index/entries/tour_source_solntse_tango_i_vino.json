@@ -2,15 +2,90 @@
   "id": "tour_source_solntse_tango_i_vino",
   "type": "tour",
   "name": "Тур в Бразилию, Аргентину и Чили с Водопадами Игуасу на 12 дней",
-  "url": "/braziliya/tour/solntse-tango-i-vino/",
+  "url": "/multi-country/tour/solntse-tango-i-vino/",
   "slug": "solntse-tango-i-vino",
   "contentPath": "src/content/tours/solntse-tango-i-vino.md",
   "sourceUrl": "https://brasiltours.ru/solntse-tango-i-vino",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina",
+    "country_chile",
+    "country_uruguay"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_argentina_buenos_aires",
+    "destination_chile_santyago_de_chili",
+    "destination_chile_valparaiso_i_vinya_del_mar",
+    "destination_argentina_tigre",
+    "destination_argentina_san_isidro_buenos_ajres",
+    "destination_uruguay_montevideo",
+    "destination_chile_dolina_majpo"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_buenos_aires",
+      "name": "Буэнос-Айрес",
+      "url": "/argentina/place/buenos-ajres/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_chile_santyago_de_chili",
+      "name": "Сантьяго-де-Чили",
+      "url": "/chili/place/santyago-de-chili/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_valparaiso_i_vinya_del_mar",
+      "name": "Вальпараисо и Винья дель Мар",
+      "url": "/chili/place/valparaiso-i-vinya-del-mar/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_argentina_tigre",
+      "name": "Тигре",
+      "url": "/argentina/place/tigre/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_san_isidro_buenos_ajres",
+      "name": "Сан-Исидро (Буэнос-Айрес)",
+      "url": "/argentina/place/san-isidro-buenos-ajres/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_uruguay_montevideo",
+      "name": "Монтевидео",
+      "url": "/urugvaj/place/montevideo/",
+      "countryId": "country_uruguay"
+    },
+    {
+      "id": "destination_chile_dolina_majpo",
+      "name": "Долина Майпо",
+      "url": "/chili/place/dolina-majpo/",
+      "countryId": "country_chile"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -220,13 +295,104 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png",
+          "alt": "На фото: город Рио-де-Жанейро, Бразилия"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png",
+          "alt": "На фото: город Рио-де-Жанейро, Бразилия"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png",
+          "alt": "На фото: город Рио-де-Жанейро, Бразилия"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%201.png",
+          "alt": "На фото: водопады Игуасу в Бразилии и Аргентине"
+        },
+        {
+          "url": "https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png",
+          "alt": "На фото: город Рио-де-Жанейро, Бразилия"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%204.png",
+          "alt": "На фото: водопады Игуасу в Бразилии и Аргентине"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/Foz%20do%20Iguau.png",
+          "alt": "На фото: водопады Игуасу в Бразилии и Аргентине"
+        },
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg",
+          "alt": "На фото: столица Аргентины, город Буэнос Айрес"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg",
+          "alt": "На фото: столица Аргентины, город Буэнос Айрес"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg",
+          "alt": "На фото: столица Аргентины, город Буэнос Айрес"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/santiago-de-chile.png",
+          "alt": "На фото: Сантьяго де Чили"
+        },
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg",
+          "alt": "На фото: столица Аргентины, город Буэнос Айрес"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/santiago-de-chile.png",
+          "alt": "На фото: Сантьяго де Чили"
+        }
+      ],
+      "11": [
+        {
+          "url": "https://brasiltours.ru/image/valparaiso1.png",
+          "alt": "На фото: Вальпараисо, Чили"
+        }
+      ],
+      "12": [
+        {
+          "url": "https://brasiltours.ru/image/santiago-de-chile.png",
+          "alt": "На фото: Сантьяго де Чили"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "2dbfee5b9f74404d9fd6c109910d3778e39eaaf1c126c6c433e8a18a6675d4ad",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -244,5 +410,19 @@
   ],
   "legacyUrls": [
     "/tury/solntse-tango-i-vino/"
+  ],
+  "registryRow": 450,
+  "routeCountryIds": [
+    "country_brazil",
+    "country_argentina",
+    "country_chile"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_argentina_buenos_aires",
+    "destination_chile_santyago_de_chili",
+    "destination_chile_valparaiso_i_vinya_del_mar"
   ]
 }

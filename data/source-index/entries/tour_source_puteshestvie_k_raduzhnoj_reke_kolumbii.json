@@ -9,8 +9,31 @@
   "countryIds": [
     "country_colombia"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_colombia_bogota",
+    "destination_colombia_la_makarena",
+    "destination_colombia_kano_kristales"
+  ],
+  "destinations": [
+    {
+      "id": "destination_colombia_bogota",
+      "name": "Богота",
+      "url": "/kolumbiya/place/bogota/",
+      "countryId": "country_colombia"
+    },
+    {
+      "id": "destination_colombia_la_makarena",
+      "name": "Ла-Макарена",
+      "url": "/kolumbiya/place/la-makarena/",
+      "countryId": "country_colombia"
+    },
+    {
+      "id": "destination_colombia_kano_kristales",
+      "name": "Каньо-Кристалес",
+      "url": "/kolumbiya/place/kano-kristales/",
+      "countryId": "country_colombia"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -88,13 +111,47 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/Bogota.png",
+          "alt": "на фото: столица Колумбии, город Богота"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/bogota%20colombia.png",
+          "alt": "на фото: Богота- столица Колумбии"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/Bogota.png",
+          "alt": "на фото: столица Колумбии, город Богота"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/bogota%20colombia.png",
+          "alt": "на фото: Богота- столица Колумбии"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "f09ee11405f091e015350f4221882aa9764288701404fe51ac6c4d1ad83649ef",
+      "missingDays": [
+        3,
+        4
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -112,5 +169,14 @@
   ],
   "legacyUrls": [
     "/tury/puteshestvie-k-raduzhnoj-reke-kolumbii/"
+  ],
+  "registryRow": 499,
+  "routeCountryIds": [
+    "country_colombia"
+  ],
+  "routeDestinationIds": [
+    "destination_colombia_bogota",
+    "destination_colombia_la_makarena",
+    "destination_colombia_kano_kristales"
   ]
 }

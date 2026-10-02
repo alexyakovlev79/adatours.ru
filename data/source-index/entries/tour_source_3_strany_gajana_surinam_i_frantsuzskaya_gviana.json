@@ -2,15 +2,75 @@
   "id": "tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana",
   "type": "tour",
   "name": "Тур в три страны Латинской Америки: Суринам, Гайана и Фр.Гвиана",
-  "url": "/gajana/tour/3-strany-gajana-surinam-i-frantsuzskaya-gviana/",
+  "url": "/multi-country/tour/3-strany-gajana-surinam-i-frantsuzskaya-gviana/",
   "slug": "3-strany-gajana-surinam-i-frantsuzskaya-gviana",
   "contentPath": "src/content/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana.md",
   "sourceUrl": "https://brasiltours.ru/3-strany-gajana-surinam-i-frantsuzskaya-gviana",
   "countryIds": [
+    "country_suriname",
+    "country_french_guiana",
     "country_guyana"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_suriname_paramaribo",
+    "destination_suriname_albina",
+    "destination_french_guiana_sen_loran_dyu_maroni",
+    "destination_french_guiana_kosmodrom_kuru",
+    "destination_french_guiana_ostrov_dyavola",
+    "destination_french_guiana_kajenna",
+    "destination_guyana_dzhordzhtaun",
+    "destination_guyana_nacionalnyj_park_kajetur"
+  ],
+  "destinations": [
+    {
+      "id": "destination_suriname_paramaribo",
+      "name": "Парамарибо",
+      "url": "/surinam/place/paramaribo/",
+      "countryId": "country_suriname"
+    },
+    {
+      "id": "destination_suriname_albina",
+      "name": "Альбина",
+      "url": "/surinam/place/albina/",
+      "countryId": "country_suriname"
+    },
+    {
+      "id": "destination_french_guiana_sen_loran_dyu_maroni",
+      "name": "Сен-Лоран-дю-Марони",
+      "url": "/francuzskaya-gviana/place/sen-loran-dyu-maroni/",
+      "countryId": "country_french_guiana"
+    },
+    {
+      "id": "destination_french_guiana_kosmodrom_kuru",
+      "name": "Космодром Куру",
+      "url": "/francuzskaya-gviana/place/kosmodrom-kuru/",
+      "countryId": "country_french_guiana"
+    },
+    {
+      "id": "destination_french_guiana_ostrov_dyavola",
+      "name": "Остров Дьявола",
+      "url": "/francuzskaya-gviana/place/ostrov-dyavola/",
+      "countryId": "country_french_guiana"
+    },
+    {
+      "id": "destination_french_guiana_kajenna",
+      "name": "Кайенна",
+      "url": "/francuzskaya-gviana/place/kajenna/",
+      "countryId": "country_french_guiana"
+    },
+    {
+      "id": "destination_guyana_dzhordzhtaun",
+      "name": "Джорджтаун",
+      "url": "/gajana/place/dzhordzhtaun/",
+      "countryId": "country_guyana"
+    },
+    {
+      "id": "destination_guyana_nacionalnyj_park_kajetur",
+      "name": "Национальный парк Кайетур",
+      "url": "/gajana/place/nacionalnyj-park-kajetur/",
+      "countryId": "country_guyana"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -106,13 +166,62 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg",
+          "alt": "Парамарибо"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg",
+          "alt": "Парамарибо"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/Kourou.jpg",
+          "alt": "Космодром Куру"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/Kourou.jpg",
+          "alt": "Космодром Куру"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg",
+          "alt": "Парамарибо"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/Georgetown.png",
+          "alt": "Джорджтаун"
+        },
+        {
+          "url": "https://brasiltours.ru/image/gayana%20waterfalls%20kaentur.png",
+          "alt": "Национальный парк Кайетур"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "86c0e35251a48ce327e7f63eacd28a198b63c95140e53319d9eae0cf20e6cf5f",
+      "missingDays": [
+        7
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -130,5 +239,21 @@
   ],
   "legacyUrls": [
     "/tury/3-strany-gajana-surinam-i-frantsuzskaya-gviana/"
+  ],
+  "registryRow": 483,
+  "routeCountryIds": [
+    "country_suriname",
+    "country_french_guiana",
+    "country_guyana"
+  ],
+  "routeDestinationIds": [
+    "destination_suriname_paramaribo",
+    "destination_suriname_albina",
+    "destination_french_guiana_sen_loran_dyu_maroni",
+    "destination_french_guiana_kosmodrom_kuru",
+    "destination_french_guiana_ostrov_dyavola",
+    "destination_french_guiana_kajenna",
+    "destination_guyana_dzhordzhtaun",
+    "destination_guyana_nacionalnyj_park_kajetur"
   ]
 }

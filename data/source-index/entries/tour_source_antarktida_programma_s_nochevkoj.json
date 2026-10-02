@@ -2,15 +2,67 @@
   "id": "tour_source_antarktida_programma_s_nochevkoj",
   "type": "tour",
   "name": "Антарктида: программа с ночевкой",
-  "url": "/chili/tour/antarktida-programma-s-nochevkoj/",
+  "url": "/antarktida/tour/antarktida-programma-s-nochevkoj/",
   "slug": "antarktida-programma-s-nochevkoj",
   "contentPath": "src/content/tours/antarktida-programma-s-nochevkoj.md",
   "sourceUrl": "https://brasiltours.ru/antarktida-programma-s-nochevkoj",
   "countryIds": [
+    "country_antarctica",
     "country_chile"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_chile_punta_arenas",
+    "destination_antarctica_ostrov_king_dzhordzh",
+    "destination_antarctica_ostrov_ardli",
+    "destination_antarctica_lednik_kollinz",
+    "destination_antarctica_villa_las_estrellas",
+    "destination_antarctica_stanciya_bellinsgauzen",
+    "destination_antarctica_stanciya_velikaya_stena"
+  ],
+  "destinations": [
+    {
+      "id": "destination_chile_punta_arenas",
+      "name": "Пунта Аренас",
+      "url": "/chili/place/punta-arenas/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_antarctica_ostrov_king_dzhordzh",
+      "name": "Остров Кинг-Джордж",
+      "url": "/antarktida/place/ostrov-king-dzhordzh/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_ostrov_ardli",
+      "name": "Остров Ардли",
+      "url": "/antarktida/place/ostrov-ardli/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_lednik_kollinz",
+      "name": "Ледник Коллинз",
+      "url": "/antarktida/place/lednik-kollinz/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_villa_las_estrellas",
+      "name": "Вилла-Лас-Эстреллас",
+      "url": "/antarktida/place/villa-las-estrellas/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_stanciya_bellinsgauzen",
+      "name": "Станция Беллинсгаузен",
+      "url": "/antarktida/place/stanciya-bellinsgauzen/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_stanciya_velikaya_stena",
+      "name": "Станция Великая Стена",
+      "url": "/antarktida/place/stanciya-velikaya-stena/",
+      "countryId": "country_antarctica"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -88,13 +140,32 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/Punta%20arenas.png",
+          "alt": "Пунта Аренас"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/Punta%20arenas.png",
+          "alt": "Пунта Аренас"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "eea03a099b1858f2e9bb5b75e2330a380f1a249a146edcad0033184663d0acfa",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -112,5 +183,18 @@
   ],
   "legacyUrls": [
     "/tury/antarktida-programma-s-nochevkoj/"
+  ],
+  "registryRow": 584,
+  "routeCountryIds": [
+    "country_antarctica"
+  ],
+  "routeDestinationIds": [
+    "destination_chile_punta_arenas",
+    "destination_antarctica_ostrov_king_dzhordzh",
+    "destination_antarctica_ostrov_ardli",
+    "destination_antarctica_lednik_kollinz",
+    "destination_antarctica_villa_las_estrellas",
+    "destination_antarctica_stanciya_bellinsgauzen",
+    "destination_antarctica_stanciya_velikaya_stena"
   ]
 }

@@ -7,10 +7,90 @@
   "contentPath": "src/content/tours/kofe-tur-v-brazilii.md",
   "sourceUrl": "https://brasiltours.ru/kofe-tur-v-brazilii",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_viskondi_de_maua",
+    "destination_brazil_dolina_kofe_rio_de_zhanejro",
+    "destination_brazil_rio_das_flores",
+    "destination_brazil_fazenda_ponte_alta",
+    "destination_brazil_fazenda_taquara",
+    "destination_brazil_fazenda_florenca",
+    "destination_brazil_petropolis",
+    "destination_brazil_itakurusa"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_brazil_viskondi_de_maua",
+      "name": "Висконди-де-Мауа",
+      "url": "/braziliya/place/viskondi-de-maua/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_dolina_kofe_rio_de_zhanejro",
+      "name": "Долина кофе (Рио-де-Жанейро)",
+      "url": "/braziliya/place/dolina-kofe-rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_rio_das_flores",
+      "name": "Рио-дас-Флорес",
+      "url": "/braziliya/place/rio-das-flores/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_fazenda_ponte_alta",
+      "name": "Fazenda Ponte Alta",
+      "url": "/braziliya/place/fazenda-ponte-alta/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_fazenda_taquara",
+      "name": "Fazenda Taquara",
+      "url": "/braziliya/place/fazenda-taquara/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_fazenda_florenca",
+      "name": "Fazenda Florença",
+      "url": "/braziliya/place/fazenda-florenca/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_petropolis",
+      "name": "Петрополис",
+      "url": "/braziliya/place/petropolis/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_itakurusa",
+      "name": "Итакуруса",
+      "url": "/braziliya/place/itakurusa/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -160,13 +240,78 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/rio.jpg",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/rio5.jpg",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/vodopady-iguasu-8.jpg",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/rio-de-janeiro-aerial.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/iguacu%20new.png",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/stairs%20rio.png",
+          "alt": "Рио-де-Жанейро"
+        },
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/vodopady-iguasu-8.jpg",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/rio.jpg",
+          "alt": "Рио-де-Жанейро"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "72f57d7cf19844651b4758cbefdb4f0b9841d810dcb287b9ab3ddc31b3275ace",
+      "missingDays": [
+        8
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -184,5 +329,20 @@
   ],
   "legacyUrls": [
     "/tury/kofe-tur-v-brazilii/"
+  ],
+  "registryRow": 364,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_viskondi_de_maua",
+    "destination_brazil_dolina_kofe_rio_de_zhanejro",
+    "destination_brazil_rio_das_flores",
+    "destination_brazil_fazenda_ponte_alta",
+    "destination_brazil_fazenda_taquara",
+    "destination_brazil_fazenda_florenca"
   ]
 }

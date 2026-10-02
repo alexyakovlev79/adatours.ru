@@ -7,10 +7,62 @@
   "contentPath": "src/content/tours/braziliya-gruppovoj-tur-na-13-dnej.md",
   "sourceUrl": "https://brasiltours.ru/braziliya-gruppovoj-tur-na-13-dnej",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_amazon",
+    "destination_brazil_salvador",
+    "destination_brazil_praia_do_forte",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_derevnya_akazhatuba"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_amazon",
+      "name": "Манаус и Амазония",
+      "url": "/braziliya/place/manaus-amazonia/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_salvador",
+      "name": "Сальвадор",
+      "url": "/braziliya/place/salvador/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_praia_do_forte",
+      "name": "Прайя-ду-Форте",
+      "url": "/braziliya/place/praia-do-forte/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_brazil_derevnya_akazhatuba",
+      "name": "Деревня Акажатуба",
+      "url": "/braziliya/place/derevnya-akazhatuba/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -124,13 +176,114 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/rio%2011.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/rio%2011.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/sugarloaf-mountain-rio-de-janeiro-1.jpg",
+          "alt": "Сахарная Голова"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/manaus,,.png",
+          "alt": "Манаус"
+        },
+        {
+          "url": "https://brasiltours.ru/image/rio%2011.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/manaus,,.png",
+          "alt": "Манаус"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg",
+          "alt": "Сальвадор"
+        },
+        {
+          "url": "https://brasiltours.ru/image/manaus,,.png",
+          "alt": "Манаус"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/salvador%20de%20bahi2.png",
+          "alt": "Сальвадор"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg",
+          "alt": "Сальвадор"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/iguasu-ff.png",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/salvador%20de%20bahi2.png",
+          "alt": "Сальвадор"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/iguacu%20new.png",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "11": [
+        {
+          "url": "https://brasiltours.ru/image/iguas%20nat.11png.png",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "12": [
+        {
+          "url": "https://brasiltours.ru/image/iguazu%20argentina%20side.png",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/rio%2011.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "13": [
+        {
+          "url": "https://brasiltours.ru/image/rio%2011.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "021b2f7b056da1a615cf53477bf2abd43233454ed45d9e9069f99afbcbcba76d",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -148,5 +301,18 @@
   ],
   "legacyUrls": [
     "/tury/braziliya-gruppovoj-tur-na-13-dnej/"
+  ],
+  "registryRow": 359,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_amazon",
+    "destination_brazil_salvador",
+    "destination_brazil_praia_do_forte",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_derevnya_akazhatuba"
   ]
 }

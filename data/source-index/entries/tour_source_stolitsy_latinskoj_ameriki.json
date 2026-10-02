@@ -2,15 +2,68 @@
   "id": "tour_source_stolitsy_latinskoj_ameriki",
   "type": "tour",
   "name": "Тур в Бразилию, Аргентину и Уругвай за 13 дней",
-  "url": "/braziliya/tour/stolitsy-latinskoj-ameriki/",
+  "url": "/multi-country/tour/stolitsy-latinskoj-ameriki/",
   "slug": "stolitsy-latinskoj-ameriki",
   "contentPath": "src/content/tours/stolitsy-latinskoj-ameriki.md",
   "sourceUrl": "https://brasiltours.ru/stolitsy-latinskoj-ameriki",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina",
+    "country_uruguay"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_argentina_buenos_aires",
+    "destination_uruguay_koloniya_del_sakramento",
+    "destination_uruguay_montevideo",
+    "destination_uruguay_punta_del_este"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_buenos_aires",
+      "name": "Буэнос-Айрес",
+      "url": "/argentina/place/buenos-ajres/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_uruguay_koloniya_del_sakramento",
+      "name": "Колония дель Сакраменто",
+      "url": "/urugvaj/place/koloniya-del-sakramento/",
+      "countryId": "country_uruguay"
+    },
+    {
+      "id": "destination_uruguay_montevideo",
+      "name": "Монтевидео",
+      "url": "/urugvaj/place/montevideo/",
+      "countryId": "country_uruguay"
+    },
+    {
+      "id": "destination_uruguay_punta_del_este",
+      "name": "Пунта дель Эсте",
+      "url": "/urugvaj/place/punta-del-este/",
+      "countryId": "country_uruguay"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -124,13 +177,114 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/rio%2011.png",
+          "alt": "на фото:Рио де Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/rio-de-janeiro-aerial.png",
+          "alt": "на фото:Рио де Жанейро"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%204.png",
+          "alt": "на фото: Водопады Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/rio%2011.png",
+          "alt": "на фото:Рио де Жанейро"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%206.png",
+          "alt": "на фото: Водопады Игуасу"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/Arg%20Buenos%20Aires.png",
+          "alt": "на фото:Буэнос Айрес"
+        },
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%204.png",
+          "alt": "на фото: Водопады Игуасу"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/URUGUAY%20-%20Colonia%20del%20Sacramento.jpg",
+          "alt": "на фото: Колония-дель -Сакраменто"
+        },
+        {
+          "url": "https://brasiltours.ru/image/Uruguay%20Montevideo.jpg",
+          "alt": "на фото: Монтевидео"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/montevideo4.png",
+          "alt": "на фото: Монтевидео"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/punta-del-este_1_orig.png",
+          "alt": "на фото: Пунта-дель-Эсте"
+        },
+        {
+          "url": "https://brasiltours.ru/image/Uruguay%20Montevideo.jpg",
+          "alt": "на фото: Монтевидео"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/punta-del-este_1_orig.png",
+          "alt": "на фото: Пунта-дель-Эсте"
+        }
+      ],
+      "11": [
+        {
+          "url": "https://brasiltours.ru/image/punta-del-este_1_orig.png",
+          "alt": "на фото: Пунта-дель-Эсте"
+        }
+      ],
+      "12": [
+        {
+          "url": "https://brasiltours.ru/image/punta-del-este_1_orig.png",
+          "alt": "на фото: Пунта-дель-Эсте"
+        }
+      ],
+      "13": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg",
+          "alt": "на фото: Буэнос Айрес"
+        },
+        {
+          "url": "https://brasiltours.ru/image/punta-del-este_1_orig.png",
+          "alt": "на фото: Пунта-дель-Эсте"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "fb0a87049906697883ebca8c7e927759f284d32a09991b5c3c6e3b5e9801b1eb",
+      "missingDays": [
+        6
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -148,5 +302,20 @@
   ],
   "legacyUrls": [
     "/tury/stolitsy-latinskoj-ameriki/"
+  ],
+  "registryRow": 449,
+  "routeCountryIds": [
+    "country_brazil",
+    "country_argentina",
+    "country_uruguay"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_argentina_buenos_aires",
+    "destination_uruguay_koloniya_del_sakramento",
+    "destination_uruguay_montevideo",
+    "destination_uruguay_punta_del_este"
   ]
 }

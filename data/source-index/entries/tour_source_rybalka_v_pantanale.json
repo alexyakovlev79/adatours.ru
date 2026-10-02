@@ -9,8 +9,31 @@
   "countryIds": [
     "country_brazil"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_pantanal",
+    "destination_brazil_kuyaba",
+    "destination_brazil_portu_zhofri"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_pantanal",
+      "name": "Пантанал",
+      "url": "/braziliya/place/pantanal/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_kuyaba",
+      "name": "Куяба",
+      "url": "/braziliya/place/kuyaba/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_portu_zhofri",
+      "name": "Порту-Жофри",
+      "url": "/braziliya/place/portu-zhofri/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -82,13 +105,24 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {},
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "8d56699eb54f3bb7214ab01526d59f97ca645296dcb91b2402d98264d59576cb",
+      "missingDays": [
+        1,
+        2,
+        3,
+        4
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -106,5 +140,14 @@
   ],
   "legacyUrls": [
     "/tury/rybalka-v-pantanale/"
+  ],
+  "registryRow": 409,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_pantanal",
+    "destination_brazil_kuyaba",
+    "destination_brazil_portu_zhofri"
   ]
 }

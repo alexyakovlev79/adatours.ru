@@ -9,8 +9,24 @@
   "countryIds": [
     "country_brazil"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_kampo_grande",
+    "destination_brazil_pantanal"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_kampo_grande",
+      "name": "Кампо-Гранде",
+      "url": "/braziliya/place/kampo-grande/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_pantanal",
+      "name": "Пантанал",
+      "url": "/braziliya/place/pantanal/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -82,13 +98,35 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/Pantanal.png",
+          "alt": "Пантанал"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/pantanal%20new1.png",
+          "alt": "Пантанал"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "8f865326b17feedf76e3765978a22c46f14b55c664a1ebac75fd4ac2b5378c9e",
+      "missingDays": [
+        3,
+        4
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -106,5 +144,13 @@
   ],
   "legacyUrls": [
     "/tury/pantanal-4dnya-3-nochi/"
+  ],
+  "registryRow": 399,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_kampo_grande",
+    "destination_brazil_pantanal"
   ]
 }

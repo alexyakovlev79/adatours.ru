@@ -2,15 +2,81 @@
   "id": "tour_source_klassicheskaya_antarktida",
   "type": "tour",
   "name": "Классическая Антарктика",
-  "url": "/chili/tour/klassicheskaya-antarktida/",
+  "url": "/antarktida/tour/klassicheskaya-antarktida/",
   "slug": "klassicheskaya-antarktida",
   "contentPath": "src/content/tours/klassicheskaya-antarktida.md",
   "sourceUrl": "https://brasiltours.ru/klassicheskaya-antarktida",
   "countryIds": [
+    "country_antarctica",
     "country_chile"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_chile_punta_arenas",
+    "destination_antarctica_ostrov_king_dzhordzh",
+    "destination_antarctica_yuzhnye_shetlandskie_ostrova",
+    "destination_antarctica_stanciya_frej",
+    "destination_antarctica_stanciya_bellinsgauzen",
+    "destination_antarctica_antarkticheskij_poluostrov",
+    "destination_antarctica_antarkticheskij_proliv",
+    "destination_antarctica_proliv_gerlashe",
+    "destination_antarctica_proliv_penola"
+  ],
+  "destinations": [
+    {
+      "id": "destination_chile_punta_arenas",
+      "name": "Пунта Аренас",
+      "url": "/chili/place/punta-arenas/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_antarctica_ostrov_king_dzhordzh",
+      "name": "Остров Кинг-Джордж",
+      "url": "/antarktida/place/ostrov-king-dzhordzh/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_yuzhnye_shetlandskie_ostrova",
+      "name": "Южные Шетландские острова",
+      "url": "/antarktida/place/yuzhnye-shetlandskie-ostrova/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_stanciya_frej",
+      "name": "Станция Фрей",
+      "url": "/antarktida/place/stanciya-frej/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_stanciya_bellinsgauzen",
+      "name": "Станция Беллинсгаузен",
+      "url": "/antarktida/place/stanciya-bellinsgauzen/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_antarkticheskij_poluostrov",
+      "name": "Антарктический полуостров",
+      "url": "/antarktida/place/antarkticheskij-poluostrov/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_antarkticheskij_proliv",
+      "name": "Антарктический пролив",
+      "url": "/antarktida/place/antarkticheskij-proliv/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_proliv_gerlashe",
+      "name": "Пролив Герлаше",
+      "url": "/antarktida/place/proliv-gerlashe/",
+      "countryId": "country_antarctica"
+    },
+    {
+      "id": "destination_antarctica_proliv_penola",
+      "name": "Пролив Пенола",
+      "url": "/antarktida/place/proliv-penola/",
+      "countryId": "country_antarctica"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -82,13 +148,50 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/Punta%20arenas.png",
+          "alt": "Пунта Аренас"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/countries/antarctica/dylan-shaw-de6z6lz4-v8-unsplash.jpg",
+          "alt": "Классическая Антарктида"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/countries/antarctica/dylan-shaw-de6z6lz4-v8-unsplash.jpg",
+          "alt": "Классическая Антарктида"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/Punta%20arenas.png",
+          "alt": "Пунта Аренас"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/Punta%20arenas.png",
+          "alt": "Пунта Аренас"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "1f24a30119985a5061cb731de0f436a46d5154efafc1b63d093c8360ab2ce3fa",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -106,5 +209,20 @@
   ],
   "legacyUrls": [
     "/tury/klassicheskaya-antarktida/"
+  ],
+  "registryRow": 586,
+  "routeCountryIds": [
+    "country_antarctica"
+  ],
+  "routeDestinationIds": [
+    "destination_chile_punta_arenas",
+    "destination_antarctica_ostrov_king_dzhordzh",
+    "destination_antarctica_yuzhnye_shetlandskie_ostrova",
+    "destination_antarctica_stanciya_frej",
+    "destination_antarctica_stanciya_bellinsgauzen",
+    "destination_antarctica_antarkticheskij_poluostrov",
+    "destination_antarctica_antarkticheskij_proliv",
+    "destination_antarctica_proliv_gerlashe",
+    "destination_antarctica_proliv_penola"
   ]
 }

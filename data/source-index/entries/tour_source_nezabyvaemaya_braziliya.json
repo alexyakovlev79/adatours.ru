@@ -7,10 +7,55 @@
   "contentPath": "src/content/tours/nezabyvaemaya-braziliya.md",
   "sourceUrl": "https://brasiltours.ru/nezabyvaemaya-braziliya",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_buzios",
+    "destination_brazil_petropolis",
+    "destination_brazil_itakurusa"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_brazil_buzios",
+      "name": "Бузиос",
+      "url": "/braziliya/place/buzios/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_petropolis",
+      "name": "Петрополис",
+      "url": "/braziliya/place/petropolis/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_itakurusa",
+      "name": "Итакуруса",
+      "url": "/braziliya/place/itakurusa/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -154,13 +199,104 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/deltap.jpg",
+          "alt": "На фото: Полет на дельтаплане над Рио"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/img-20211017-wa0016.jpg",
+          "alt": "На фото: Гора Сахарная Голова"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "На фото: Вид на гору Корковадо"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/img-20221105-wa0001.jpg",
+          "alt": "На фото: Полет на вертолете над Рио"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/catalog/product/I/g/Iguazu_13.jpg",
+          "alt": "На фото: Водопады Фос-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/rios%20bay11.png",
+          "alt": "На фото: Набережная Рио-де-Жанейро"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/vodopady-iguasu-8.jpg",
+          "alt": "На фото:  Вид на Водопады Игуасу"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/Bra%20buzios%2012.png",
+          "alt": "На фото: Бузиос"
+        },
+        {
+          "url": "https://brasiltours.ru/image/catalog/product/I/g/Iguazu_13.jpg",
+          "alt": "На фото: Водопады Фос-ду-Игуасу"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/catalog/product/B/u/Buzios_1_8.jpg",
+          "alt": "На фото: Пляж в Бузиосе"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/Bra%20buzios%2012.png",
+          "alt": "На фото: Бузиос"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/catalog/product/B/u/Buzios_1_8.jpg",
+          "alt": "На фото: Пляж в Бузиосе"
+        }
+      ],
+      "11": [
+        {
+          "url": "https://brasiltours.ru/image/Bra%20buzios%2012.png",
+          "alt": "На фото: Бузиос"
+        }
+      ],
+      "12": [
+        {
+          "url": "https://brasiltours.ru/image/catalog/product/B/u/Buzios_1_8.jpg",
+          "alt": "На фото: Пляж в Бузиосе"
+        },
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/deltap.jpg",
+          "alt": "На фото: Полет на дельтаплане над Рио"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "7b7296d3d55c89493b9ca703ca25a40797043be20a4cefd9e2ebf043c1b7b56d",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -178,5 +314,15 @@
   ],
   "legacyUrls": [
     "/tury/nezabyvaemaya-braziliya/"
+  ],
+  "registryRow": 370,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_buzios"
   ]
 }

@@ -9,8 +9,24 @@
   "countryIds": [
     "country_brazil"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_angra_dos_reis"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_angra_dos_reis",
+      "name": "Ангра-дус-Рейс",
+      "url": "/braziliya/place/angra-dos-reis/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -142,13 +158,46 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/Rio%20cable%20car.png",
+          "alt": "На фото: Канатная дорога в Рио-де-Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/%D1%80%D0%B8%D0%BE.jpg",
+          "alt": "На фото: Статуя Христа-Искупителя, Рио-де-Жанейро"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/jaime-dantas-sp4cvudiy5u-unsplash-2.jpg",
+          "alt": "На фото: Вид с берега на гору Сахарная голова"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/Rio%20cable%20car.png",
+          "alt": "На фото: Канатная дорога в Рио-де-Жанейро"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "68e76884fb127625153dd23bb754555d05195b3fe00e16def3028e2987836520",
+      "missingDays": [
+        4
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -166,5 +215,12 @@
   ],
   "legacyUrls": [
     "/tury/novyj-god-v-rio-de-zhanejro-1/"
+  ],
+  "registryRow": 417,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio"
   ]
 }

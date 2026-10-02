@@ -2,15 +2,145 @@
   "id": "tour_source_solntse_tango_vino_i_atakama",
   "type": "tour",
   "name": "Солнце, Танго, Вино и Атакама",
-  "url": "/braziliya/tour/solntse-tango-vino-i-atakama/",
+  "url": "/multi-country/tour/solntse-tango-vino-i-atakama/",
   "slug": "solntse-tango-vino-i-atakama",
   "contentPath": "src/content/tours/solntse-tango-vino-i-atakama.md",
   "sourceUrl": "https://brasiltours.ru/solntse-tango-vino-i-atakama",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina",
+    "country_chile"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_argentina_buenos_aires",
+    "destination_chile_santyago_de_chili",
+    "destination_chile_valparaiso_i_vinya_del_mar",
+    "destination_chile_san_pedro_de_atakama",
+    "destination_chile_kalama",
+    "destination_chile_lunnaya_dolina_atakama",
+    "destination_chile_laguna_miskanti",
+    "destination_chile_laguna_minikes",
+    "destination_chile_sokajre",
+    "destination_chile_laguna_chaksa",
+    "destination_chile_solonchak_atakama",
+    "destination_chile_nacionalnyj_zapovednik_los_flamenkos",
+    "destination_chile_gejzery_el_tatio",
+    "destination_chile_tokonao",
+    "destination_chile_machuka"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_buenos_aires",
+      "name": "Буэнос-Айрес",
+      "url": "/argentina/place/buenos-ajres/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_chile_santyago_de_chili",
+      "name": "Сантьяго-де-Чили",
+      "url": "/chili/place/santyago-de-chili/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_valparaiso_i_vinya_del_mar",
+      "name": "Вальпараисо и Винья дель Мар",
+      "url": "/chili/place/valparaiso-i-vinya-del-mar/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_san_pedro_de_atakama",
+      "name": "Сан-Педро-де-Атакама",
+      "url": "/chili/place/san-pedro-de-atakama/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_kalama",
+      "name": "Калама",
+      "url": "/chili/place/kalama/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_lunnaya_dolina_atakama",
+      "name": "Лунная долина (Атакама)",
+      "url": "/chili/place/lunnaya-dolina-atakama/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_laguna_miskanti",
+      "name": "Лагуна Мисканти",
+      "url": "/chili/place/laguna-miskanti/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_laguna_minikes",
+      "name": "Лагуна Миньикес",
+      "url": "/chili/place/laguna-minikes/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_sokajre",
+      "name": "Сокайре",
+      "url": "/chili/place/sokajre/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_laguna_chaksa",
+      "name": "Лагуна Чакса",
+      "url": "/chili/place/laguna-chaksa/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_solonchak_atakama",
+      "name": "Солончак Атакама",
+      "url": "/chili/place/solonchak-atakama/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_nacionalnyj_zapovednik_los_flamenkos",
+      "name": "Национальный заповедник Лос-Фламенкос",
+      "url": "/chili/place/nacionalnyj-zapovednik-los-flamenkos/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_gejzery_el_tatio",
+      "name": "Гейзеры Эль-Татио",
+      "url": "/chili/place/gejzery-el-tatio/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_tokonao",
+      "name": "Токонао",
+      "url": "/chili/place/tokonao/",
+      "countryId": "country_chile"
+    },
+    {
+      "id": "destination_chile_machuka",
+      "name": "Мачука",
+      "url": "/chili/place/machuka/",
+      "countryId": "country_chile"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -160,13 +290,126 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/rio%2011.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/stairs%20rio.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/rio%2011.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%201.png",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/stairs%20rio.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%204.png",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%206.png",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/riogid/buenosaires.png",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/img-20211017-wa0035.jpg",
+          "alt": "Солнце, Танго, Вино и Атакама"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/riogid/buenosaires.png",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/santiag.png",
+          "alt": "Сантьяго-де-Чили"
+        },
+        {
+          "url": "https://brasiltours.ru/image/riogid/buenosaires.png",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/santiago%20de%20ch.png",
+          "alt": "Сантьяго-де-Чили"
+        }
+      ],
+      "11": [
+        {
+          "url": "https://brasiltours.ru/image/valparaiso%20chil.png",
+          "alt": "Вальпараисо"
+        }
+      ],
+      "12": [
+        {
+          "url": "https://brasiltours.ru/image/san%20pedro%20de%20atacama.png",
+          "alt": "Сан-Педро-де-Атакама"
+        },
+        {
+          "url": "https://brasiltours.ru/image/santiago.png",
+          "alt": "Сантьяго-де-Чили"
+        }
+      ],
+      "13": [
+        {
+          "url": "https://brasiltours.ru/image/san%20pedro%20do%20atacama.png",
+          "alt": "Сан-Педро-де-Атакама"
+        }
+      ],
+      "14": [
+        {
+          "url": "https://brasiltours.ru/image/santiag.png",
+          "alt": "Сантьяго-де-Чили"
+        }
+      ],
+      "15": [
+        {
+          "url": "https://brasiltours.ru/image/santiago%20de%20ch.png",
+          "alt": "Сантьяго-де-Чили"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "724533b901f74b0459576a5c2eb1d1cfe708bf7d276e872b97aba090de272166",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -184,5 +427,31 @@
   ],
   "legacyUrls": [
     "/tury/solntse-tango-vino-i-atakama/"
+  ],
+  "registryRow": 414,
+  "routeCountryIds": [
+    "country_brazil",
+    "country_argentina",
+    "country_chile"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_argentina_buenos_aires",
+    "destination_chile_santyago_de_chili",
+    "destination_chile_valparaiso_i_vinya_del_mar",
+    "destination_chile_san_pedro_de_atakama",
+    "destination_chile_kalama",
+    "destination_chile_lunnaya_dolina_atakama",
+    "destination_chile_laguna_miskanti",
+    "destination_chile_laguna_minikes",
+    "destination_chile_sokajre",
+    "destination_chile_laguna_chaksa",
+    "destination_chile_solonchak_atakama",
+    "destination_chile_nacionalnyj_zapovednik_los_flamenkos",
+    "destination_chile_gejzery_el_tatio",
+    "destination_chile_tokonao",
+    "destination_chile_machuka"
   ]
 }

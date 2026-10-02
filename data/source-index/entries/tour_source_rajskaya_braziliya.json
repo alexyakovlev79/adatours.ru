@@ -7,10 +7,62 @@
   "contentPath": "src/content/tours/rajskaya-braziliya.md",
   "sourceUrl": "https://brasiltours.ru/rajskaya-braziliya",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_brazil_recife",
+    "destination_brazil_olinda",
+    "destination_brazil_porto_de_galinhas",
+    "destination_brazil_fernando_de_noronha",
+    "destination_argentina_puerto_iguasu"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_recife",
+      "name": "Ресифи",
+      "url": "/braziliya/place/recife/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_olinda",
+      "name": "Олинда",
+      "url": "/braziliya/place/olinda/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_porto_de_galinhas",
+      "name": "Порту-ди-Галиньяш",
+      "url": "/braziliya/place/porto-de-galinhas/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_fernando_de_noronha",
+      "name": "Фернанду-ди-Норонья",
+      "url": "/braziliya/place/fernando-de-noronha/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -136,13 +188,101 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/rio%202.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/Rio_de_Janeiro_from_Corcovado_mountain.png",
+          "alt": "Статуя Христа и Корковадо"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/iguas%20nat.11png.png",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/iguasu%20national%20park.png",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/Recife.png",
+          "alt": "Ресифи"
+        },
+        {
+          "url": "https://brasiltours.ru/image/iguas%20nat.11png.png",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/bra-recife-1.jpg",
+          "alt": "Ресифи"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/Porto%20de%20Galinhas.png",
+          "alt": "На фото: Порту-де-Галиньяс"
+        },
+        {
+          "url": "https://brasiltours.ru/image/recife.png",
+          "alt": "Ресифи"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/Porto%20de%20Galinhas.png",
+          "alt": "На фото: Порту-де-Галиньяс"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/Porto%20de%20Galinhas.png",
+          "alt": "На фото: Порту-де-Галиньяс"
+        }
+      ],
+      "13": [
+        {
+          "url": "https://brasiltours.ru/image/Recife.png",
+          "alt": "Ресифи"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "b32e966bcd55df6aa0aa3086aa657f3210150536f8644e6e403fc22233ee07f2",
+      "missingDays": [
+        11,
+        12
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -160,5 +300,17 @@
   ],
   "legacyUrls": [
     "/tury/rajskaya-braziliya/"
+  ],
+  "registryRow": 367,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_brazil_recife",
+    "destination_brazil_olinda",
+    "destination_brazil_porto_de_galinhas",
+    "destination_brazil_fernando_de_noronha"
   ]
 }

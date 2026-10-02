@@ -7,10 +7,76 @@
   "contentPath": "src/content/tours/opyt-brazilii.md",
   "sourceUrl": "https://brasiltours.ru/opyt-brazilii",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_paraty",
+    "destination_brazil_trindadi_parati",
+    "destination_brazil_viskondi_de_maua",
+    "destination_brazil_maringa_viskondi_de_maua",
+    "destination_brazil_vila_da_maromba",
+    "destination_brazil_nacionalnyj_park_serra_da_bokajna"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_brazil_paraty",
+      "name": "Парати",
+      "url": "/braziliya/place/paraty/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_trindadi_parati",
+      "name": "Триндади (Парати)",
+      "url": "/braziliya/place/trindadi-parati/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_viskondi_de_maua",
+      "name": "Висконди-де-Мауа",
+      "url": "/braziliya/place/viskondi-de-maua/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_maringa_viskondi_de_maua",
+      "name": "Маринга (Висконди-де-Мауа)",
+      "url": "/braziliya/place/maringa-viskondi-de-maua/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_vila_da_maromba",
+      "name": "Вила-да-Маромба",
+      "url": "/braziliya/place/vila-da-maromba/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_nacionalnyj_park_serra_da_bokajna",
+      "name": "Национальный парк Серра-да-Бокайна",
+      "url": "/braziliya/place/nacionalnyj-park-serra-da-bokajna/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -136,13 +202,88 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/cristo-redentor-rio-de-janeiro-1.jpg",
+          "alt": "Статуя Христа и Корковадо"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/iguacu%20new.png",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/iguas%20nat.11png.png",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/iguacu%20new.png",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/Paraty.png",
+          "alt": "Парати"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/Paraty.png",
+          "alt": "Парати"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/Paraty.png",
+          "alt": "Парати"
+        },
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "571f1c2368fd54d9ffcad699a77ee6f2e401df32dc22b8cdb6020d1799767ffb",
+      "missingDays": [
+        7
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -160,5 +301,20 @@
   ],
   "legacyUrls": [
     "/tury/opyt-brazilii/"
+  ],
+  "registryRow": 397,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_paraty",
+    "destination_brazil_trindadi_parati",
+    "destination_brazil_viskondi_de_maua",
+    "destination_brazil_maringa_viskondi_de_maua",
+    "destination_brazil_vila_da_maromba",
+    "destination_brazil_nacionalnyj_park_serra_da_bokajna"
   ]
 }

@@ -2,15 +2,61 @@
   "id": "tour_source_roskoshnaya_braziliya_i_argentina",
   "type": "tour",
   "name": "Роскошная Бразилия и Аргентина",
-  "url": "/braziliya/tour/roskoshnaya-braziliya-i-argentina/",
+  "url": "/multi-country/tour/roskoshnaya-braziliya-i-argentina/",
   "slug": "roskoshnaya-braziliya-i-argentina",
   "contentPath": "src/content/tours/roskoshnaya-braziliya-i-argentina.md",
   "sourceUrl": "https://brasiltours.ru/roskoshnaya-braziliya-i-argentina",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina",
+    "country_uruguay"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_argentina_buenos_aires",
+    "destination_brazil_angra_dos_reis",
+    "destination_uruguay_montevideo"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_buenos_aires",
+      "name": "Буэнос-Айрес",
+      "url": "/argentina/place/buenos-ajres/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_brazil_angra_dos_reis",
+      "name": "Ангра-дус-Рейс",
+      "url": "/braziliya/place/angra-dos-reis/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_uruguay_montevideo",
+      "name": "Монтевидео",
+      "url": "/urugvaj/place/montevideo/",
+      "countryId": "country_uruguay"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -226,13 +272,88 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/rio%20at%20nigh11.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/corcovado1.png",
+          "alt": "Статуя Христа и Корковадо"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/Rio%20de%20Janeiro.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/BRA%20FOZ%206.png",
+          "alt": "Фоз-ду-Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/rio%20at%20nigh11.png",
+          "alt": "Рио-де-Жанейро"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/Foz%20do%20Iguau.png",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg",
+          "alt": "Буэнос-Айрес"
+        },
+        {
+          "url": "https://brasiltours.ru/image/iguas%20nat.11png.png",
+          "alt": "Фоз-ду-Игуасу"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg",
+          "alt": "Буэнос-Айрес"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg",
+          "alt": "Буэнос-Айрес"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "1495fad00a004e7a1216545bb2bd8bbede43b9ffa963890b9d9b939dc163210f",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -250,5 +371,16 @@
   ],
   "legacyUrls": [
     "/tury/roskoshnaya-braziliya-i-argentina/"
+  ],
+  "registryRow": 408,
+  "routeCountryIds": [
+    "country_brazil",
+    "country_argentina"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_argentina_buenos_aires"
   ]
 }

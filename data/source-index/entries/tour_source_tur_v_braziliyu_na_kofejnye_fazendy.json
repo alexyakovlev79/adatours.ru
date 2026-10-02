@@ -7,10 +7,41 @@
   "contentPath": "src/content/tours/tur-v-braziliyu-na-kofejnye-fazendy.md",
   "sourceUrl": "https://brasiltours.ru/tur-v-braziliyu-na-kofejnye-fazendy",
   "countryIds": [
-    "country_brazil"
+    "country_brazil",
+    "country_argentina"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_dolina_kofe_rio_de_zhanejro"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_brazil_dolina_kofe_rio_de_zhanejro",
+      "name": "Долина кофе (Рио-де-Жанейро)",
+      "url": "/braziliya/place/dolina-kofe-rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -166,13 +197,72 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/rio-10.jpg",
+          "alt": "Смотровая площадка Рио-де-Жанейро, Бразилия"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg",
+          "alt": "Полет на вертолете над Рио-де-Жанейро, Бразилия"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/rio-13.jpg",
+          "alt": "Исторический центр Рио-де-Жанейро, Бразилия"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg",
+          "alt": "Водопады Игуасу на границе Бразилии и Аргентины"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/iguazu-22.jpg",
+          "alt": "Мосты над водопадами Игуасу, Бразилия и Аргентина"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/rio-lapa.jpg",
+          "alt": "Акведук Кариока в районе Лапа, Рио, Бразилия"
+        },
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg",
+          "alt": "Водопады Игуасу на границе Бразилии и Аргентины"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/rio-10.jpg",
+          "alt": "Смотровая площадка Рио-де-Жанейро, Бразилия"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg",
+          "alt": "Полет на вертолете над Рио-де-Жанейро, Бразилия"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "df502226775e035681c3930e89284073ad190fd6cb267ecab36cd7376d5b480e",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -190,5 +280,15 @@
   ],
   "legacyUrls": [
     "/tury/tur-v-braziliyu-na-kofejnye-fazendy/"
+  ],
+  "registryRow": 443,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_rio",
+    "destination_brazil_iguacu",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_dolina_kofe_rio_de_zhanejro"
   ]
 }

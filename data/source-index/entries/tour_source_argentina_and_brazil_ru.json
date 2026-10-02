@@ -2,15 +2,67 @@
   "id": "tour_source_argentina_and_brazil_ru",
   "type": "tour",
   "name": "Тур в Аргентину и Бразилию, лучшее за 10 дней",
-  "url": "/braziliya/tour/argentina-and-brazil-ru/",
+  "url": "/multi-country/tour/argentina-and-brazil-ru/",
   "slug": "argentina-and-brazil-ru",
   "contentPath": "src/content/tours/argentina-and-brazil-ru.md",
   "sourceUrl": "https://brasiltours.ru/argentina-and-brazil-ru",
   "countryIds": [
+    "country_argentina",
     "country_brazil"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_argentina_buenos_aires",
+    "destination_argentina_el_calafate",
+    "destination_argentina_lednik_perito_moreno",
+    "destination_argentina_ozero_argentino",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_iguacu",
+    "destination_brazil_rio"
+  ],
+  "destinations": [
+    {
+      "id": "destination_argentina_buenos_aires",
+      "name": "Буэнос-Айрес",
+      "url": "/argentina/place/buenos-ajres/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_el_calafate",
+      "name": "Эль-Калафате",
+      "url": "/argentina/place/el-kalafate/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_lednik_perito_moreno",
+      "name": "Ледник Перито-Морено",
+      "url": "/argentina/place/lednik-perito-moreno/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_ozero_argentino",
+      "name": "Озеро Аргентино",
+      "url": "/argentina/place/ozero-argentino/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_argentina_puerto_iguasu",
+      "name": "Пуэрто Игуасу",
+      "url": "/argentina/place/puerto-iguasu/",
+      "countryId": "country_argentina"
+    },
+    {
+      "id": "destination_brazil_iguacu",
+      "name": "Фоз-ду-Игуасу",
+      "url": "/braziliya/place/foz-do-iguasu/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_rio",
+      "name": "Рио-де-Жанейро",
+      "url": "/braziliya/place/rio-de-zhanejro/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -148,13 +200,84 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/arg-buenos-aires-left.jpg",
+          "alt": "На фото: Обелиск в Буэнос-Айресе"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/arg-buenos-aires1.jpg",
+          "alt": "На фото: Буэнос–Айрес"
+        }
+      ],
+      "3": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg",
+          "alt": "На фото: Достопримечательности Буэнос-Айреса"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg",
+          "alt": "На фото: Ледник Перито-Морено"
+        }
+      ],
+      "5": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg",
+          "alt": "На фото: Аргентинская сторона водопадов Игуасу"
+        }
+      ],
+      "6": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg",
+          "alt": "На фото: Аргентинская сторона водопадов Игуасу"
+        }
+      ],
+      "7": [
+        {
+          "url": "https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg",
+          "alt": "На фото: Аргентинская сторона водопадов Игуасу"
+        },
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/img-20211017-wa0016.jpg",
+          "alt": "На фото: Гора Пан-ди-Асукар в Рио-де-Жанейро"
+        }
+      ],
+      "8": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/leblon-beach.png",
+          "alt": "На фото: Ночной пляж в Рио"
+        }
+      ],
+      "9": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/corcovado.png",
+          "alt": "На фото: Статуя Христа-Искупителя, Рио-де-Жанейро"
+        }
+      ],
+      "10": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/red-beach-2.png",
+          "alt": "На фото: Вид на гору Пан-ди-Асукар в Рио"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "54aacf1abb070fcd4375744b79c3d3b034cf9942ede3f3da64aeb44f32d9e5f1",
+      "missingDays": []
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -172,5 +295,19 @@
   ],
   "legacyUrls": [
     "/tury/argentina-and-brazil-ru/"
+  ],
+  "registryRow": 418,
+  "routeCountryIds": [
+    "country_argentina",
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_argentina_buenos_aires",
+    "destination_argentina_el_calafate",
+    "destination_argentina_lednik_perito_moreno",
+    "destination_argentina_ozero_argentino",
+    "destination_argentina_puerto_iguasu",
+    "destination_brazil_iguacu",
+    "destination_brazil_rio"
   ]
 }

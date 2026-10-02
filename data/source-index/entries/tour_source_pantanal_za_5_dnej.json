@@ -9,8 +9,24 @@
   "countryIds": [
     "country_brazil"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_brazil_kampo_grande",
+    "destination_brazil_pantanal"
+  ],
+  "destinations": [
+    {
+      "id": "destination_brazil_kampo_grande",
+      "name": "Кампо-Гранде",
+      "url": "/braziliya/place/kampo-grande/",
+      "countryId": "country_brazil"
+    },
+    {
+      "id": "destination_brazil_pantanal",
+      "name": "Пантанал",
+      "url": "/braziliya/place/pantanal/",
+      "countryId": "country_brazil"
+    }
+  ],
   "aliases": [],
   "text": {
     "selected": {
@@ -88,13 +104,41 @@
     "provenance": {
       "kind": "donor_page_inventory",
       "selection": "own-page-carousel"
+    },
+    "dayImages": {
+      "1": [
+        {
+          "url": "https://brasiltours.ru/image/Pantanal.png",
+          "alt": "Пантанал"
+        }
+      ],
+      "2": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg",
+          "alt": "Пантанал"
+        }
+      ],
+      "4": [
+        {
+          "url": "https://brasiltours.ru/image/countries/brazil/pantanal-tub.jpg",
+          "alt": "Пантанал"
+        }
+      ]
+    },
+    "dayImageProvenance": {
+      "kind": "own_carousel_explicit_place_match",
+      "sourceSha256": "8b434597f7995cfdec9570787d16ff928664cf78099167138ce7c895fd37ecde",
+      "missingDays": [
+        3,
+        5
+      ]
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "rewrite_v2_available",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "fixed"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -112,5 +156,13 @@
   ],
   "legacyUrls": [
     "/tury/pantanal-za-5-dnej/"
+  ],
+  "registryRow": 400,
+  "routeCountryIds": [
+    "country_brazil"
+  ],
+  "routeDestinationIds": [
+    "destination_brazil_kampo_grande",
+    "destination_brazil_pantanal"
   ]
 }

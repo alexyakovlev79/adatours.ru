@@ -9,12 +9,12 @@ destinationType: region
 summary: В Кайо находятся заповедники, тропические леса, водопады и пещеры с подземными реками. Природные достопримечательности округа привлекают любителей экотуризма.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/belize/kajo-2.jpg
+  src: /media/destinations/kajo/hero-enhanced-20261002.webp
   alt: 'На фото: руины майя Шунантунич, в Кайо Белиз'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_23_44.jpg
+- src: /media/destinations/kajo/gallery-1-enhanced-20261002.webp
   alt: 'На фото: округ Кайо в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_24_27.jpg
+- src: /media/destinations/kajo/gallery-2-enhanced-20261002.webp
   alt: 'На фото: округ Кайо в Белизе'
 themes: []
 relatedDestinations: []
@@ -32,3 +32,4 @@ updatedAt: '2026-10-02'
 В Кайо можно кататься на яхте, заниматься эко-туризмом, купаться и загорать на пляжах. Морская вода удивительной прозрачности позволяет любоваться красочными морскими рыбками.
 
 И еще Кайо привлекает туристов из-за близости барьерного рифа, всего в 30 км, что делает особенно манящим для дайверов. И все располагает к этому - ласкающий бриз, качающиеся пальмы, кристальная вода, безмятежная атмосфера.
+

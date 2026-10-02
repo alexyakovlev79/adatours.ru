@@ -12,19 +12,19 @@ hero:
   src: /media/destinations/kaje-kolker/hero-enhanced-20261002.webp
   alt: 'На фото: остров Кайе Колкер в Белизе'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN4971_5.jpg
+- src: /media/destinations/kaje-kolker/gallery-1-enhanced-20261002.webp
   alt: 'На фото: остров Кей Колкер в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN16031_16.jpg
+- src: /media/destinations/kaje-kolker/gallery-2-enhanced-20261002.webp
   alt: 'На фото: остров Кей Колкер в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/f/r/fronthouseonbeach.jpg
+- src: /media/destinations/kaje-kolker/gallery-3-enhanced-20261002.webp
   alt: 'На фото: остров Кей Колкер в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN16031_12.jpg
+- src: /media/destinations/kaje-kolker/gallery-4-enhanced-20261002.webp
   alt: 'На фото: остров Кей Колкер в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/c/a/caye_caulker_belize.jpg
+- src: /media/destinations/kaje-kolker/gallery-5-enhanced-20261002.webp
   alt: 'На фото: остров Кей Колкер в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/c/a/caye-caulker-12.jpg
+- src: /media/destinations/kaje-kolker/gallery-6-enhanced-20261002.webp
   alt: 'На фото: остров Кей Колкер в Белизе'
-- src: https://brasiltours.ru/image/catalog/category/p/2/p269127-Belize-Caye_Caulker.jpg
+- src: /media/destinations/kaje-kolker/gallery-7-enhanced-20261002.webp
   alt: 'На фото: остров Кей Колкер в Белизе'
 themes: []
 relatedDestinations: []
@@ -42,4 +42,5 @@ updatedAt: '2026-10-02'
 Отсутствие спешки – это здесь естественное состояние. И все располагает к этому - ласкающий бриз, качающиеся пальмы, кристальная вода, отсутствие забот.
 
 Наряду с перспективой провести такой спокойный отдых, можно активно заняться дайвингом и различными водными видами спорта.
+
 

@@ -9,14 +9,14 @@ destinationType: island
 summary: На Солнечном острове находятся Дворец Инков Пилкокайна и Фонтан Инков, к которому ведет священная лестница. От дворца открывается вид на остров Луна.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/Colca-Canyon-Peru.png
+  src: /media/destinations/isla-del-sol/hero-enhanced-20261003.webp
   alt: 'На фото: Солнечный остров в Боливии'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN2385_38.jpg
+- src: /media/destinations/isla-del-sol/gallery-1-enhanced-20261003.webp
   alt: 'На фото: Солнечный остров в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/t/i/titicaca_1.jpg
+- src: /media/destinations/isla-del-sol/gallery-2-enhanced-20261003.webp
   alt: 'На фото: Солнечный остров в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/3/0/308115239_d6f24df607.jpg
+- src: /media/destinations/isla-del-sol/gallery-3-enhanced-20261003.webp
   alt: 'На фото: Солнечный остров в Боливии'
 themes: []
 relatedDestinations: []

@@ -14,9 +14,9 @@ hero:
 gallery:
 - src: /media/destinations/santa-krus/gallery-1-enhanced-20261003.webp
   alt: 'На фото: кафедральный собор в городе Санта-Круз в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/B/X/BXK80648_fortaleza-santa-cruz-vista-rj-niteroi800_1.jpg
+- src: /media/destinations/santa-krus/gallery-2-enhanced-20261003.webp
   alt: 'На фото: в городе Санта-Круз в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_4_11.jpg
+- src: /media/destinations/santa-krus/gallery-3-enhanced-20261003.webp
   alt: 'На фото: в городе Санта-Круз в Боливии'
 themes: []
 relatedDestinations: []

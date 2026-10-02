@@ -9,14 +9,14 @@ destinationType: city
 summary: Сукре называют Белым городом за его колониальные здания. На площади 25 мая находятся Кафедральный собор и ратуша, а в старинных особняках и дворцах работают музеи и отели.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/sucre-2.jpg
+  src: /media/destinations/sucre/hero-enhanced-20261003.webp
   alt: 'На фото: город Сукре в Боливии'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/A/r/Arco.jpg
+- src: /media/destinations/sucre/gallery-1-enhanced-20261003.webp
   alt: 'На фото: город Сукре в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/B/O/BOSUCRE1786.jpg
+- src: /media/destinations/sucre/gallery-2-enhanced-20261003.webp
   alt: 'На фото: город Сукре в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_4_12.jpg
+- src: /media/destinations/sucre/gallery-3-enhanced-20261003.webp
   alt: 'На фото: город Сукре в Боливии'
 - src: https://brasiltours.ru/image/catalog/category/8/0/800px-Watching_Sunset_Salar_de_Uyuni_Bolivia_Luca_Galuzzi_2006.jpg
   alt: 'На фото: город Сукре в Боливии'

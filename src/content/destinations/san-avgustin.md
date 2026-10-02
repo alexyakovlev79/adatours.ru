@@ -1,7 +1,7 @@
 ---
 id: "destination_colombia_san_avgustin"
 locale: "ru"
-slug: "san-avgustin"
+slug: san-agustin
 status: "approved"
 name: "Сан-Августин"
 countryId: "country_colombia"

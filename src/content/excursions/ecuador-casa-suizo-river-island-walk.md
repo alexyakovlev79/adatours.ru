@@ -1,7 +1,7 @@
 ---
 id: excursion_ecuador_casa_suizo_river_island_walk
 locale: ru
-slug: ecuador-casa-suizo-river-island-walk
+slug: casa-del-suizo-river-island-walk
 status: published
 title: Прогулка по речному острову у Casa del Suizo
 country: country_ecuador

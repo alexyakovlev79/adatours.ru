@@ -1,7 +1,7 @@
 ---
 id: tour_source_braziliya_ot_san_paulo_do_buziosa
 locale: ru
-slug: braziliya-ot-san-paulo-do-buziosa
+slug: brazil-sao-paulo-to-buzios
 status: published
 title: Бразилия от Сан Пауло до Бузиоса
 countries:

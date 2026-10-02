@@ -1,7 +1,7 @@
 ---
 id: tour_source_meksika_yuzhnoe_priklyuchenie_kratkij_marshrut
 locale: ru
-slug: meksika-yuzhnoe-priklyuchenie-kratkij-marshrut
+slug: southern-mexico-short-adventure
 status: published
 title: 'Мексика: «Южное Приключение — Краткий маршрут»'
 countries:

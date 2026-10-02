@@ -1,7 +1,7 @@
 ---
 id: tour_source_argentina_and_brazil_ru
 locale: ru
-slug: argentina-and-brazil-ru
+slug: best-of-argentina-brazil-10-days
 status: published
 title: Тур в Аргентину и Бразилию, лучшее за 10 дней
 countries:

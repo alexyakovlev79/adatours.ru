@@ -2,7 +2,7 @@
 id: tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin
 locale: ru
 title: "Восхождение на Аконкагуа 6962 м"
-slug: argentina-and-south-patagonia-in-the-footsteps-of-darwin
+slug: aconcagua-climb
 status: approved
 searchAliases:
   - "Аконкагуа"

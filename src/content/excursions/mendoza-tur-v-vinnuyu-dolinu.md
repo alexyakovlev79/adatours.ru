@@ -2,7 +2,7 @@
 id: excursion_source_mendoza_tur_v_vinnuyu_dolinu
 locale: ru
 title: "Мендоса: винодельни и дегустация вина"
-slug: mendoza-tur-v-vinnuyu-dolinu
+slug: mendoza-wineries-wine-tasting
 status: approved
 searchAliases:
   - Мендоса винный тур

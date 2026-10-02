@@ -2,7 +2,7 @@
 id: "excursion_source_ozero_kilotoa"
 locale: "ru"
 title: "Экскурсии в Эквадоре: на озеро Килотоа из столицы Кито"
-slug: "ozero-kilotoa"
+slug: quilotoa-lake-from-quito
 status: "approved"
 searchAliases: []
 country: "country_ecuador"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_aktivnyj_ekvador
 locale: ru
-slug: aktivnyj-ekvador
+slug: active-ecuador
 status: published
 title: Активный Эквадор тур в Эквадор
 countries:

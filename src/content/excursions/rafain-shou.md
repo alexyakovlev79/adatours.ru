@@ -2,7 +2,7 @@
 id: "excursion_source_rafain_shou"
 locale: "ru"
 title: "Водопады Игуасу Бразилия: ужин в ресторане и Рафаин-шоу"
-slug: "rafain-shou"
+slug: rafain-dinner-show
 status: "approved"
 searchAliases: []
 country: "country_brazil"

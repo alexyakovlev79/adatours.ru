@@ -1,7 +1,7 @@
 ---
 id: excursion_santiago_maipo_wine_tour
 locale: ru
-slug: vinnaya-ekskursiya-v-dolinu-majpo
+slug: maipo-valley-wine-tour
 status: published
 title: Винная экскурсия в долину Майпо
 country: country_chile

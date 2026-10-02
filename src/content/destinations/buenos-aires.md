@@ -2,7 +2,7 @@
 id: destination_argentina_buenos_aires
 locale: ru
 name: Буэнос-Айрес
-slug: buenos-ajres
+slug: buenos-aires
 status: approved
 countryId: country_argentina
 destinationType: city

@@ -2,7 +2,7 @@
 id: "excursion_source_brazilskaya_storona_vodopadov_iguasu"
 locale: "ru"
 title: "Бразильская сторона водопадов Игуасу"
-slug: "brazilskaya-storona-vodopadov-iguasu"
+slug: iguazu-falls-brazilian-side-6-hours
 status: "approved"
 searchAliases: []
 country: "country_brazil"

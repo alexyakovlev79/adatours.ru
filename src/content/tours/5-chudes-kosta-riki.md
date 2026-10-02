@@ -1,7 +1,7 @@
 ---
 id: tour_source_5_chudes_kosta_riki
 locale: ru
-slug: 5-chudes-kosta-riki
+slug: costa-rica-5-wonders
 status: published
 title: 5 Чудес Коста Рики
 countries:

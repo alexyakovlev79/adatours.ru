@@ -2,7 +2,7 @@
 id: excursion_source_amboro_park_tur
 locale: ru
 title: "Парк Амборо из Санта-Круса: облачный лес и водопады Куэвас"
-slug: amboro-park-tur
+slug: amboro-national-park-cuevas-waterfalls
 status: approved
 searchAliases:
   - Амборо Парк тур

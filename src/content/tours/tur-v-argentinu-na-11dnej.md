@@ -2,7 +2,7 @@
 id: tour_source_tur_v_argentinu_na_11dnej
 locale: ru
 title: "VIP-тур по Аргентине на 11 дней: Патагония, Ушуайя и водопады Игуасу"
-slug: tur-v-argentinu-na-11dnej
+slug: argentina-patagonia-vip-11-days
 status: approved
 searchAliases:
   - "Тур в Аргентину и Патагонию на 11 дней"

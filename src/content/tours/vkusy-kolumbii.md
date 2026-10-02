@@ -1,7 +1,7 @@
 ---
 id: tour_source_vkusy_kolumbii
 locale: ru
-slug: vkusy-kolumbii
+slug: colombia-bogota-medellin-cartagena-9-days
 status: published
 title: Тур в Колумбию – Богота, Медельин и Картахена за 9 дней
 countries:

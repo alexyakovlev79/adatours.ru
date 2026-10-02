@@ -1,7 +1,7 @@
 ---
 id: tour_source_argentina_i_braziliya_ot_lda_k_solntsu
 locale: ru
-slug: argentina-i-braziliya-ot-lda-k-solntsu
+slug: argentina-brazil-ice-to-sun
 status: published
 title: 'Аргентина и Бразилия: От льда к солнцу'
 countries:

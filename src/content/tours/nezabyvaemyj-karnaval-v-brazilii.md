@@ -1,7 +1,7 @@
 ---
 id: tour_source_nezabyvaemyj_karnaval_v_brazilii
 locale: ru
-slug: nezabyvaemyj-karnaval-v-brazilii
+slug: brazil-carnival-iguazu-beaches
 status: published
 title: Тур в Бразилию на Карнавал с пляжным отдыхом и водопадами Игуасу
 countries:

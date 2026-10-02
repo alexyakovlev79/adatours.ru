@@ -1,7 +1,7 @@
 ---
 id: tour_source_manyashchij_peru_kolumbiya
 locale: ru
-slug: manyashchij-peru-kolumbiya
+slug: peru-colombia-discovery
 status: published
 title: Манящий Перу & Колумбия
 countries:

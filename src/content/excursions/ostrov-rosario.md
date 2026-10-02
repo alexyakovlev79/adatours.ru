@@ -2,7 +2,7 @@
 id: excursion_source_ostrov_rosario
 locale: ru
 title: "Острова Росарио из Картахены: Карибское море и коралловые рифы"
-slug: ostrov-rosario
+slug: rosario-islands-tour-from-cartagena
 status: approved
 searchAliases:
   - Остров Росарио

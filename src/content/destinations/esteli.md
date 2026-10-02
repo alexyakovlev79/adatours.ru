@@ -1,7 +1,7 @@
 ---
 id: "destination_nicaragua_esteli"
 locale: "ru"
-slug: "esteli"
+slug: esteli
 status: "approved"
 name: "Эстели"
 countryId: "country_nicaragua"

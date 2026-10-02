@@ -1,7 +1,7 @@
 ---
 id: tour_source_vazhnoe_brazilii
 locale: ru
-slug: vazhnoe-brazilii
+slug: essential-brazil
 status: published
 title: Важное Бразилии
 countries:

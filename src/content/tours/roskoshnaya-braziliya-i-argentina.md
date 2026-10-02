@@ -1,7 +1,7 @@
 ---
 id: tour_source_roskoshnaya_braziliya_i_argentina
 locale: ru
-slug: roskoshnaya-braziliya-i-argentina
+slug: luxury-brazil-argentina
 status: published
 title: Роскошная Бразилия и Аргентина
 countries:

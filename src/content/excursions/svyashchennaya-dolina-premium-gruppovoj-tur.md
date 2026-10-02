@@ -2,7 +2,7 @@
 id: "excursion_source_svyashchennaya_dolina_premium_gruppovoj_tur"
 locale: "ru"
 title: "Экскурсия в Перу: Священная Долина инков из города Куско"
-slug: "svyashchennaya-dolina-premium-gruppovoj-tur"
+slug: sacred-valley-chinchero-moray-ollantaytambo-group-tour
 status: "approved"
 searchAliases: []
 country: "country_peru"

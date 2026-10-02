@@ -1,7 +1,7 @@
 ---
 id: excursion_ecuador_casa_suizo_butterfly_farm
 locale: ru
-slug: ecuador-casa-suizo-butterfly-farm
+slug: casa-del-suizo-butterfly-farm
 status: published
 title: Ферма бабочек у Casa del Suizo
 country: country_ecuador

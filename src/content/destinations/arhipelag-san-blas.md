@@ -1,7 +1,7 @@
 ---
 id: "destination_panama_arhipelag_san_blas"
 locale: "ru"
-slug: "arhipelag-san-blas"
+slug: san-blas-islands
 status: "approved"
 name: "Архипелаг Сан-Блас"
 countryId: "country_panama"

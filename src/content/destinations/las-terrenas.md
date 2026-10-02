@@ -1,7 +1,7 @@
 ---
 id: "destination_dominican_republic_las_terrenas"
 locale: ru
-slug: "las-terrenas"
+slug: las-terrenas
 status: approved
 name: "Лас Терренас"
 countryId: "country_dominican_republic"

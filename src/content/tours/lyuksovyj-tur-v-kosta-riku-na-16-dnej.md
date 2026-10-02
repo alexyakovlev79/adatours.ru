@@ -2,7 +2,7 @@
 id: tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej
 locale: ru
 title: "Премиум-тур в Коста-Рику на 16 дней: вулканы, джунгли, Корковадо и Плайя-Кончаль"
-slug: lyuksovyj-tur-v-kosta-riku-na-16-dnej
+slug: luxury-costa-rica-16-days
 status: approved
 searchAliases:
   - "Роскошная Коста-Рика"

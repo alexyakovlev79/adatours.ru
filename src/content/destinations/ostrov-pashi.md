@@ -1,7 +1,7 @@
 ---
 id: "destination_chile_ostrov_pashi"
 locale: ru
-slug: "ostrov-pashi"
+slug: easter-island
 status: approved
 name: "Остров Пасхи"
 countryId: "country_chile"

@@ -1,7 +1,7 @@
 ---
 id: destination_belize_kajo
 locale: ru
-slug: kajo
+slug: cayo
 status: approved
 name: Кайо
 countryId: country_belize

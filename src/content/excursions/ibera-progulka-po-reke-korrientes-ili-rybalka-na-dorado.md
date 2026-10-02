@@ -2,7 +2,7 @@
 id: excursion_ibera_corrientes_river_or_dorado_fishing
 locale: ru
 title: "Прогулка по реке Корриентес или рыбалка на дорадо в Ибере"
-slug: ibera-progulka-po-reke-korrientes-ili-rybalka-na-dorado
+slug: ibera-corrientes-river-cruise-or-dorado-fishing
 status: approved
 searchAliases:
   - "Рыбалка на дорадо в Ибере"

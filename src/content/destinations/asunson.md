@@ -1,7 +1,7 @@
 ---
 id: "destination_paraguay_asunson"
 locale: "ru"
-slug: "asunson"
+slug: asuncion
 status: "approved"
 name: "Асунсьон"
 countryId: "country_paraguay"

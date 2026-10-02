@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu
 locale: ru
-slug: tur-v-braziliyu-s-amazoniej-i-argentinu
+slug: brazil-amazon-argentina-manaus-iguazu
 status: published
 title: 'Тур в Бразилию и Аргентину: от Манауса (Амазонка) до Игуасу'
 countries:

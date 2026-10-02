@@ -1,7 +1,7 @@
 ---
 id: tour_source_severnyj_pantanal_vodopady_reki
 locale: ru
-slug: severnyj-pantanal-vodopady-reki
+slug: northern-pantanal-waterfalls-rivers
 status: published
 title: 'Индивидуальный тур в Бразилию: Северный Пантанал – водопады и реки'
 countries:

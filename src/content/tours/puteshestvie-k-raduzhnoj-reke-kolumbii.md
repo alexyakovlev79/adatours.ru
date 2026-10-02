@@ -1,7 +1,7 @@
 ---
 id: tour_source_puteshestvie_k_raduzhnoj_reke_kolumbii
 locale: ru
-slug: puteshestvie-k-raduzhnoj-reke-kolumbii
+slug: colombia-bogota-la-macarena-cano-cristales
 status: published
 title: Тур в Колумбию в Боготу, Ла Макарену и реку Каньо-Кристалес
 countries:

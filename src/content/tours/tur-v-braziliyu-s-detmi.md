@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_braziliyu_s_detmi
 locale: ru
-slug: tur-v-braziliyu-s-detmi
+slug: brazil-family-tour
 status: published
 title: Семейный тур в Бразилию | Отдых с детьми в Латинской Америке
 countries:

@@ -2,7 +2,7 @@
 id: excursion_cusco_cathedral_visit
 locale: ru
 title: "Кафедральный собор Куско"
-slug: kafedralnyj-sobor-kusko
+slug: cusco-cathedral-tour
 status: approved
 searchAliases:
   - Собор Куско

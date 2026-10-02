@@ -1,7 +1,7 @@
 ---
 id: tour_source_meksika_fantasticheskaya
 locale: ru
-slug: meksika-fantasticheskaya
+slug: fantastic-mexico
 status: published
 title: Мексика Фантастическая
 countries:

@@ -2,7 +2,7 @@
 id: country_chile
 locale: ru
 name: Чили
-slug: chili
+slug: chile
 status: approved
 searchAliases:
   - Chile

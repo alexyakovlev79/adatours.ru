@@ -1,7 +1,7 @@
 ---
 id: "destination_guyana_savanny_rupununi"
 locale: ru
-slug: "savanny-rupununi"
+slug: rupununi-savannahs
 status: approved
 name: "Саванны Рупунуни"
 countryId: "country_guyana"

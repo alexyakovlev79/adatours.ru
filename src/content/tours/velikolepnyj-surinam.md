@@ -1,7 +1,7 @@
 ---
 id: tour_source_velikolepnyj_surinam
 locale: ru
-slug: velikolepnyj-surinam
+slug: suriname-jungle-culture-private-tour-12-days
 status: published
 title: 'Индивидуальный тур в Суринам на 12 дней: джунгли и культура'
 countries:

@@ -2,7 +2,7 @@
 id: tour_source_neveroyatnaya_argentina
 locale: ru
 title: "Невероятная Аргентина: Буэнос-Айрес, Ушуайя, Эль-Калафате и Игуасу за 13 дней"
-slug: neveroyatnaya-argentina
+slug: incredible-argentina-patagonia
 status: approved
 searchAliases:
   - "Невероятная Аргентина"

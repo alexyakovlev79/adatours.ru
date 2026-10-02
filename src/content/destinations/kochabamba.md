@@ -1,7 +1,7 @@
 ---
 id: destination_bolivia_kochabamba
 locale: ru
-slug: kochabamba
+slug: cochabamba
 status: approved
 name: Кочабамба
 countryId: country_bolivia

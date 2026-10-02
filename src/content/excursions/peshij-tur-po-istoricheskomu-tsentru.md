@@ -2,7 +2,7 @@
 id: excursion_source_peshij_tur_po_istoricheskomu_tsentru
 locale: ru
 title: "Пешая экскурсия по историческому центру Монтевидео"
-slug: peshij-tur-po-istoricheskomu-tsentru
+slug: montevideo-old-town-walking-tour
 status: approved
 searchAliases:
   - "Монтевидео: Пеший тур по Историческому центру"

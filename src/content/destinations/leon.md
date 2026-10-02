@@ -1,7 +1,7 @@
 ---
 id: "destination_nicaragua_leon"
 locale: "ru"
-slug: "leon"
+slug: leon
 status: "approved"
 name: "Леон"
 countryId: "country_nicaragua"

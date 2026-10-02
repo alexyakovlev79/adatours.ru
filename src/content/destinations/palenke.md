@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_palenke"
 locale: "ru"
-slug: "palenke"
+slug: palenque
 status: "approved"
 name: "Паленке"
 countryId: "country_mexico"

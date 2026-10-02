@@ -2,7 +2,7 @@
 id: theme_beach
 locale: ru
 name: Пляжный отдых
-slug: plyazhnyj-otdyh
+slug: beach-holidays
 status: approved
 summary: >-
   Пляжи Бразилии и Карибского бассейна подходят и для отдельной поездки, и для нескольких спокойных дней после насыщенного маршрута.

@@ -1,7 +1,7 @@
 ---
 id: excursion_colombia_san_pedro_majagua_day_trip
 locale: ru
-slug: colombia-san-pedro-majagua-day-trip
+slug: colombia-san-pedro-de-majagua-day-trip
 status: published
 title: 'Острова Росарио: групповой день в San Pedro de Majagua'
 country: country_colombia

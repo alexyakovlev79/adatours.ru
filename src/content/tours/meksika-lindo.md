@@ -1,7 +1,7 @@
 ---
 id: tour_source_meksika_lindo
 locale: ru
-slug: meksika-lindo
+slug: mexico-city-merida-uxmal-kabah-chichen-itza
 status: published
 title: 'Тур в Мексику: Мехико- Мерида - Ушмаль и Кабах - Чичен-Ица'
 countries:

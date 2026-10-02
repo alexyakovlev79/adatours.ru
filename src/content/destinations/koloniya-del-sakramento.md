@@ -1,7 +1,7 @@
 ---
 id: "destination_uruguay_koloniya_del_sakramento"
 locale: ru
-slug: "koloniya-del-sakramento"
+slug: colonia-del-sacramento
 status: approved
 name: "Колония дель Сакраменто"
 countryId: "country_uruguay"

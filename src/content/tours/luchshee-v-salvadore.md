@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_salvadore
 locale: ru
-slug: luchshee-v-salvadore
+slug: el-salvador-san-salvador-suchitoto-gulf-of-fonseca
 status: published
 title: 'Тур в Сальвадор: Сан-Сальвадор, Сучитото, Залив Фонсека'
 countries:

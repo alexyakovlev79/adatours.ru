@@ -1,7 +1,7 @@
 ---
 id: tour_source_soedinennye_shtaty_venesuely
 locale: ru
-slug: soedinennye-shtaty-venesuely
+slug: united-states-of-venezuela
 status: published
 title: Соединенные Штаты Венесуэлы
 countries:

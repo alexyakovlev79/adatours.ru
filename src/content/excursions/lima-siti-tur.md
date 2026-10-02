@@ -2,7 +2,7 @@
 id: excursion_source_lima_siti_tur
 locale: ru
 title: "Обзорная экскурсия по Лиме"
-slug: lima-siti-tur
+slug: lima-city-tour-4-hours
 status: approved
 searchAliases:
   - Лима сити-тур

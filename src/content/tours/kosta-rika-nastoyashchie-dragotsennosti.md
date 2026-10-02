@@ -1,7 +1,7 @@
 ---
 id: tour_source_kosta_rika_nastoyashchie_dragotsennosti
 locale: ru
-slug: kosta-rika-nastoyashchie-dragotsennosti
+slug: costa-rica-gems
 status: published
 title: 'Коста-Рика: Настоящие Драгоценности'
 countries:

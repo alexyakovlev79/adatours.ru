@@ -1,7 +1,7 @@
 ---
 id: tour_source_peru_priklyucheniya_v_andakh_s_belmond_kollektsiej
 locale: ru
-slug: peru-priklyucheniya-v-andakh-s-belmond-kollektsiej
+slug: peru-belmond-hiram-bingham-machu-picchu
 status: published
 title: Тур в Перу на поезде Belmond Hiram Bingham в Мачу-Пикчу
 countries:

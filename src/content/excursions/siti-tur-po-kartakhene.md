@@ -2,7 +2,7 @@
 id: excursion_source_siti_tur_po_kartakhene
 locale: ru
 title: "Картахена: сити-тур по колониальному городу и крепости Сан-Фелипе"
-slug: siti-tur-po-kartakhene
+slug: cartagena-city-san-felipe-castle-tour
 status: approved
 searchAliases:
   - Сити-тур по Картахене

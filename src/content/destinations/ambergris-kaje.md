@@ -1,7 +1,7 @@
 ---
 id: destination_belize_ambergris_kaje
 locale: ru
-slug: ambergris-kaje
+slug: ambergris-caye
 status: approved
 name: Амбергрис-Кайе
 countryId: country_belize

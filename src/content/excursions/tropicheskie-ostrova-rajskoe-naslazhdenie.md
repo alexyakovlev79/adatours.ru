@@ -2,7 +2,7 @@
 id: excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie
 locale: ru
 title: "Тропические острова у Ангра-дус-Рейс"
-slug: tropicheskie-ostrova-rajskoe-naslazhdenie
+slug: angra-dos-reis-ilha-grande-island-cruise
 status: approved
 searchAliases:
   - Тропические острова

@@ -1,7 +1,7 @@
 ---
 id: destination_venezuela_los_rokes
 locale: ru
-slug: los-rokes
+slug: los-roques
 status: approved
 name: Лос Рокес
 countryId: country_venezuela

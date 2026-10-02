@@ -1,7 +1,7 @@
 ---
 id: tour_source_argentina_bariloche_i_buenos_ajres
 locale: ru
-slug: argentina-bariloche-i-buenos-ajres
+slug: argentina-bariloche-buenos-aires
 status: published
 title: Тур в Аргентину – Барилоче и Буэнос-Айрес, по самым красивым местам
 countries:

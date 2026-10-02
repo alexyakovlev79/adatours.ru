@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_brazilii_za_9_dnej
 locale: ru
-slug: luchshee-v-brazilii-za-9-dnej
+slug: best-of-brazil-9-days
 status: published
 title: Лучшее в Бразилии за 9 дней
 countries:

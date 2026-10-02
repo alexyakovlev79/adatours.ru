@@ -1,7 +1,7 @@
 ---
 id: tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu
 locale: ru
-slug: rio-de-zhanejro-amazoniya-vodopady-iguasu
+slug: rio-de-janeiro-amazon-iguazu-falls
 status: published
 title: Рио-де-Жанейро - Амазония - Водопады Игуасу
 countries:

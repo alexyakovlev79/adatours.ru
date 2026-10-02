@@ -1,7 +1,7 @@
 ---
 id: tour_source_tropicheskij_novyj_god_v_brazilii
 locale: ru
-slug: tropicheskij-novyj-god-v-brazilii
+slug: brazil-new-year-rio-buzios-beach
 status: published
 title: 'Тур на Новый год в Бразилию: Рио и пляжный отдых в Бузиосе'
 countries:

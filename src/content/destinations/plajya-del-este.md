@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_plajya_del_este"
 locale: "ru"
-slug: "plajya-del-este"
+slug: playas-del-este
 status: "approved"
 name: "Плайя дель Эсте"
 countryId: "country_cuba"

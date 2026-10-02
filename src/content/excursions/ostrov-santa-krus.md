@@ -2,7 +2,7 @@
 id: excursion_source_ostrov_santa_krus
 locale: ru
 title: "Остров Санта-Крус на Галапагосах: гигантские черепахи и лавовые туннели"
-slug: ostrov-santa-krus
+slug: santa-cruz-island-tour
 status: approved
 searchAliases:
   - Остров Санта-Крус

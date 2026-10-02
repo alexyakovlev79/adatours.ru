@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_mankora"
 locale: ru
-slug: "mankora"
+slug: mancora
 status: approved
 name: "Манкора"
 countryId: "country_peru"

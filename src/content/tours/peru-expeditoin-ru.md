@@ -1,7 +1,7 @@
 ---
 id: tour_source_peru_expeditoin_ru
 locale: ru
-slug: peru-expeditoin-ru
+slug: peru-ancestral-energy
 status: published
 title: 'Перу: Энергия Предков'
 countries:

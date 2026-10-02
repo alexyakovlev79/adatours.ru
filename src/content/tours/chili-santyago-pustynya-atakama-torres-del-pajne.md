@@ -1,7 +1,7 @@
 ---
 id: tour_source_chili_santyago_pustynya_atakama_torres_del_pajne
 locale: ru
-slug: chili-santyago-pustynya-atakama-torres-del-pajne
+slug: chile-santiago-atacama-torres-del-paine
 status: published
 title: Тур в Чили с пустыней Аатакама и парком Торрес-дель-Пайне в Патагонии
 countries:

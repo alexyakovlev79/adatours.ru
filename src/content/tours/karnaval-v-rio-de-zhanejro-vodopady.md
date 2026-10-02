@@ -1,7 +1,7 @@
 ---
 id: tour_source_karnaval_v_rio_de_zhanejro_vodopady
 locale: ru
-slug: karnaval-v-rio-de-zhanejro-vodopady
+slug: brazil-rio-carnival-iguazu-8-days
 status: published
 title: Тур в Бразилию на Карнавал в Рио и Игуасу | 8 дней
 countries:

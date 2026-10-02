@@ -1,7 +1,7 @@
 ---
 id: "destination_french_guiana_kosmodrom_kuru"
 locale: ru
-slug: "kosmodrom-kuru"
+slug: guiana-space-centre
 status: approved
 name: "Космодром Куру"
 countryId: "country_french_guiana"

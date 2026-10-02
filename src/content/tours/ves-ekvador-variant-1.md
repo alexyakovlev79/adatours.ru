@@ -1,7 +1,7 @@
 ---
 id: tour_source_ves_ekvador_variant_1
 locale: ru
-slug: ves-ekvador-variant-1
+slug: mainland-ecuador-private-tour-5-days
 status: published
 title: Индивидуальный тур в Эквадор (континентальный) на 5 дней
 countries:

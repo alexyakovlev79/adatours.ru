@@ -2,7 +2,7 @@
 id: excursion_source_samaipata_tur
 locale: ru
 title: "Самаипата и Эль-Фуэрте из Санта-Круса"
-slug: samaipata-tur
+slug: samaipata-el-fuerte-tour
 status: approved
 searchAliases:
   - Самаипата тур

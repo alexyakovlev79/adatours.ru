@@ -2,7 +2,7 @@
 id: destination_ecuador_kito_vulkan_kotopahi
 locale: ru
 name: "Кито & вулкан Котопахи"
-slug: kito-vulkan-kotopahi
+slug: quito-and-cotopaxi-volcano
 status: approved
 searchAliases:
   - Кито

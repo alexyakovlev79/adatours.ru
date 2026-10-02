@@ -1,7 +1,7 @@
 ---
 id: tour_source_gvatemala_gonduras_el_salvador_beliz
 locale: ru
-slug: gvatemala-gonduras-el-salvador-beliz
+slug: guatemala-honduras-el-salvador-belize
 status: published
 title: Гватемала - Гондурас- Эль Сальвадор - Белиз
 countries:

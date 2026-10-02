@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_kolumbiyu_za_chudesami
 locale: ru
-slug: tur-v-kolumbiyu-za-chudesami
+slug: colombia-bogota-cartagena-villa-de-leyva
 status: published
 title: 'Тур в Колумбию за чудесами: Богота, Картахена, Вилья-де-Лейва'
 countries:

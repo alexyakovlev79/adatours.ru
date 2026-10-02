@@ -1,7 +1,7 @@
 ---
 id: tour_source_braziliya_gruppovoj_tur_na_13_dnej
 locale: ru
-slug: braziliya-gruppovoj-tur-na-13-dnej
+slug: brazil-group-tour-13-days
 status: published
 title: 'Бразилия: групповой тур на 13 дней'
 countries:

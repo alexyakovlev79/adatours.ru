@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_braziliyu_k_mestam_sily
 locale: ru
-slug: tur-v-braziliyu-k-mestam-sily
+slug: brazil-iguazu-visconde-de-maua-paraty
 status: published
 title: 'Тур в Бразилию: водопады Игуасу, регион Висконде де Мауа и Парати'
 countries:

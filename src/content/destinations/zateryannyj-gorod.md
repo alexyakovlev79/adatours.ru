@@ -1,7 +1,7 @@
 ---
 id: "destination_colombia_zateryannyj_gorod"
 locale: "ru"
-slug: "zateryannyj-gorod"
+slug: ciudad-perdida
 status: "approved"
 name: "Затерянный город"
 countryId: "country_colombia"

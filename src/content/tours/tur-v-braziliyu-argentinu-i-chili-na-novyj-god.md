@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god
 locale: ru
-slug: tur-v-braziliyu-argentinu-i-chili-na-novyj-god
+slug: brazil-argentina-chile-new-year-2027-10-days
 status: published
 title: 'Новогодний тур в Бразилию, Аргентину и Чили 2027: 10 дней, цены'
 countries:

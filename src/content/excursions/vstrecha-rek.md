@@ -2,7 +2,7 @@
 id: "excursion_source_vstrecha_rek"
 locale: "ru"
 title: "Встреча рек!!!"
-slug: "vstrecha-rek"
+slug: meeting-of-the-waters-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

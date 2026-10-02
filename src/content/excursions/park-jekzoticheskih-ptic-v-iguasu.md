@@ -2,7 +2,7 @@
 id: excursion_source_park_jekzoticheskih_ptic_v_iguasu
 locale: ru
 title: Парк птиц в Игуасу
-slug: park-jekzoticheskih-ptic-v-iguasu
+slug: iguazu-bird-park-tour-6-hours
 status: approved
 searchAliases:
   - Парк экзотических птиц в Игуасу

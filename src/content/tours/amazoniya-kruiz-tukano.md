@@ -1,7 +1,7 @@
 ---
 id: tour_source_amazoniya_kruiz_tukano
 locale: ru
-slug: amazoniya-kruiz-tukano
+slug: amazon-tucano-cruise
 status: published
 title: 'Амазония: Круиз Тукано'
 countries:

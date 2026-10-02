@@ -9,7 +9,7 @@ import RedirectLayout from '../layouts/RedirectLayout.astro';
 import {
   aliasesForEntity, assertUniqueRoutePaths, countryPath, destinationCountryPath, destinationPath,
   excursionCountryPath, excursionDestinationPath, excursionGeography, excursionPath,
-  mainTourCountries, routeCountries, tourCountryPath, tourPath,
+  mainTourCountries, pageAliases, routeCountries, tourCountryPath, tourPath,
   type BreadcrumbItem, type CountryRoute, type DestinationRoute,
 } from '../lib/routes';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
@@ -86,7 +86,7 @@ export async function getStaticPaths() {
         mode: 'catalog', kind: 'destination', entries: places, canonical,
         title: `Места: ${country.name}`,
         description: `Города, регионы и природные места страны: ${country.name}.`,
-        breadcrumbs: [{ label: 'Направления', href: '/napravleniya/' }, { label: country.name, href: canonical }],
+        breadcrumbs: [{ label: 'Направления', href: '/places/' }, { label: country.name, href: canonical }],
       });
     }
     const selectedTours = tours.filter((entry) => tourHasMainCountry(entry.data, country.id));
@@ -96,7 +96,7 @@ export async function getStaticPaths() {
         mode: 'catalog', kind: 'tour', entries: selectedTours, canonical,
         title: `Туры: ${country.name}`,
         description: `Маршруты Ada Tours, в которые входит ${country.name}.`,
-        breadcrumbs: [{ label: 'Туры', href: '/tury/' }, { label: country.name, href: canonical }],
+        breadcrumbs: [{ label: 'Туры', href: '/tours/' }, { label: country.name, href: canonical }],
         hero: '/media/catalog/tury/hero-enhanced-20260930.webp',
       });
     }
@@ -106,7 +106,7 @@ export async function getStaticPaths() {
     mode: 'catalog', kind: 'tour', entries: multiCountryTours, canonical: '/multi-country/tour/',
     title: 'Туры по нескольким странам',
     description: 'Маршруты Ada Tours с путешествием по нескольким странам.',
-    breadcrumbs: [{ label: 'Туры', href: '/tury/' }, { label: 'Несколько стран', href: '/multi-country/tour/' }],
+    breadcrumbs: [{ label: 'Туры', href: '/tours/' }, { label: 'Несколько стран', href: '/multi-country/tour/' }],
     hero: '/media/catalog/tury/hero-enhanced-20260930.webp',
   });
   for (const { country, entries } of excursionCountries.values()) {
@@ -115,7 +115,7 @@ export async function getStaticPaths() {
       mode: 'catalog', kind: 'excursion', entries, canonical,
       title: `Экскурсии: ${country.name}`,
       description: `Экскурсии Ada Tours по стране: ${country.name}.`,
-      breadcrumbs: [{ label: 'Экскурсии', href: '/ekskursii/' }, { label: country.name, href: canonical }],
+      breadcrumbs: [{ label: 'Экскурсии', href: '/excursions/' }, { label: country.name, href: canonical }],
     });
   }
   for (const { country, destination, entries } of excursionDestinations.values()) {
@@ -124,8 +124,11 @@ export async function getStaticPaths() {
       mode: 'catalog', kind: 'excursion', entries, canonical,
       title: `Экскурсии: ${destination.name}`,
       description: `Экскурсии Ada Tours: ${destination.name}, ${country.name}.`,
-      breadcrumbs: [{ label: 'Экскурсии', href: '/ekskursii/' }, { label: country.name, href: excursionCountryPath(country) }, { label: destination.name, href: canonical }],
+      breadcrumbs: [{ label: 'Экскурсии', href: '/excursions/' }, { label: country.name, href: excursionCountryPath(country) }, { label: destination.name, href: canonical }],
     });
+  }
+  for (const { from, to, title } of pageAliases) {
+    add(from, { mode: 'redirect', to, title: title ?? 'Страница перемещена' });
   }
   return assertUniqueRoutePaths(routes);
 }

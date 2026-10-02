@@ -2,7 +2,7 @@
 id: country_bolivia
 locale: ru
 name: Боливия
-slug: boliviya
+slug: bolivia
 status: approved
 searchAliases:
   - Bolivia

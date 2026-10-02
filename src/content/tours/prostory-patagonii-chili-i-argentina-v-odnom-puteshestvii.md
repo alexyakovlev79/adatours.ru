@@ -2,7 +2,7 @@
 id: tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii
 locale: ru
 title: "Просторы Патагонии: Чили и Аргентина за 8 дней"
-slug: prostory-patagonii-chili-i-argentina-v-odnom-puteshestvii
+slug: patagonia-chile-argentina-journey
 status: approved
 searchAliases:
   - "Просторы Патагонии"

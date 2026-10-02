@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_v_park_ispolinov_salto_del_mornito"
 locale: "ru"
 title: "Экскурсия в Парк Исполинов — Салто дель Морнито"
-slug: "jekskursija-v-park-ispolinov-salto-del-mornito"
+slug: alto-de-los-idolos-mortino-waterfall-tour
 status: "approved"
 searchAliases: []
 country: "country_colombia"

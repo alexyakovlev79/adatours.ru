@@ -2,7 +2,7 @@
 id: "excursion_source_half_day_corcovado_tijuca_private_tour"
 locale: "ru"
 title: "Корковадо и лес Тижука: экскурсия на полдня"
-slug: "half-day-corcovado-tijuca-private-tour"
+slug: half-day-corcovado-tijuca-private-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

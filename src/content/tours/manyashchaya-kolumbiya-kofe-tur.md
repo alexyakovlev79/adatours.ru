@@ -1,7 +1,7 @@
 ---
 id: tour_source_manyashchaya_kolumbiya_kofe_tur
 locale: ru
-slug: manyashchaya-kolumbiya-kofe-tur
+slug: colombia-bogota-medellin-cartagena-coffee-10-days
 status: published
 title: Тур в Колумбию на 10 дней в Боготу, Медельин, Картахену с кофе-туром
 countries:

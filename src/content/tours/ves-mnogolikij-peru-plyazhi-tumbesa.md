@@ -1,7 +1,7 @@
 ---
 id: tour_source_ves_mnogolikij_peru_plyazhi_tumbesa
 locale: ru
-slug: ves-mnogolikij-peru-plyazhi-tumbesa
+slug: complete-peru-tumbes-beaches
 status: published
 title: Весь Многоликий Перу + пляжи Тумбеса
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_vpechatleniya_ot_surinama
 locale: ru
-slug: vpechatleniya-ot-surinama
+slug: experience-suriname
 status: published
 title: Суринам
 countries:

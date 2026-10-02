@@ -1,7 +1,7 @@
 ---
 id: tour_source_mechty_sbyvayutsya_na_karnaval
 locale: ru
-slug: mechty-sbyvayutsya-na-karnaval
+slug: brazil-argentina-rio-carnival-iguazu-10-days
 status: published
 title: Тур в Бразилию на Карнавал в Рио, Аргентина, Игуасу | 10 дней
 countries:

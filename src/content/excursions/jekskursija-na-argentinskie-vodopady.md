@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_na_argentinskie_vodopady"
 locale: "ru"
 title: "Экскурсия на Водопады Игуасу в Аргентине и Бразилии"
-slug: "jekskursija-na-argentinskie-vodopady"
+slug: iguazu-falls-argentine-side-tour
 status: "approved"
 searchAliases: []
 country: "country_argentina"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_krasivaya_kosta_rika
 locale: ru
-slug: krasivaya-kosta-rika
+slug: beautiful-costa-rica
 status: published
 title: Красивая Коста Рика
 countries:

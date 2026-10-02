@@ -1,7 +1,7 @@
 ---
 id: tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala
 locale: ru
-slug: mechty-sbyvayutsya-na-parad-chempionov-karnavala
+slug: brazil-carnival-champions-parade-dreams
 status: published
 title: Мечты сбываются на Парад Чемпионов Карнавала в Бразилии
 countries:

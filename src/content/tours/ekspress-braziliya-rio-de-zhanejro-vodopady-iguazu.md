@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu
 locale: ru
-slug: ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu
+slug: brazil-rio-iguazu-express
 status: published
 title: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуазу'
 countries:

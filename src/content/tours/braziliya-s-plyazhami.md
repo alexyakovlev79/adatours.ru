@@ -1,7 +1,7 @@
 ---
 id: tour_source_braziliya_s_plyazhami
 locale: ru
-slug: braziliya-s-plyazhami
+slug: brazil-beaches
 status: published
 title: Бразилия с пляжами
 countries:

@@ -2,7 +2,7 @@
 id: tour_source_patagoniya_i_chilijskie_fordy
 locale: ru
 title: "Патагония и Чилийские фьорды"
-slug: patagoniya-i-chilijskie-fordy
+slug: patagonia-chilean-fjords
 status: approved
 searchAliases:
   - "Чилийские фьорды"

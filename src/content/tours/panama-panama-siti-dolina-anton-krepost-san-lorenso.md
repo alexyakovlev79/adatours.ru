@@ -1,7 +1,7 @@
 ---
 id: tour_source_panama_panama_siti_dolina_anton_krepost_san_lorenso
 locale: ru
-slug: panama-panama-siti-dolina-anton-krepost-san-lorenso
+slug: panama-city-anton-valley-san-lorenzo
 status: published
 title: Панама
 countries:

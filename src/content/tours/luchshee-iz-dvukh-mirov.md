@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_iz_dvukh_mirov
 locale: ru
-slug: luchshee-iz-dvukh-mirov
+slug: belize-best-of-both-worlds
 status: published
 title: 'Белиз: Лучшее Из Двух Миров'
 countries:

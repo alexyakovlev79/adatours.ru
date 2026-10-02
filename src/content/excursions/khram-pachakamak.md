@@ -2,7 +2,7 @@
 id: excursion_source_khram_pachakamak
 locale: ru
 title: "Пачакамак из Лимы: Храм Солнца и археологический комплекс"
-slug: khram-pachakamak
+slug: pachacamac-temple-from-lima
 status: approved
 searchAliases:
   - Храм Пачакамак

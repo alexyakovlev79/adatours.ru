@@ -1,7 +1,7 @@
 ---
 id: tour_source_udivitelnaya_braziliya
 locale: ru
-slug: udivitelnaya-braziliya
+slug: amazing-brazil
 status: published
 title: Удивительная Бразилия
 countries:

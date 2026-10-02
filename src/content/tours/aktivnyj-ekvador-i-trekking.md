@@ -1,7 +1,7 @@
 ---
 id: tour_source_aktivnyj_ekvador_i_trekking
 locale: ru
-slug: aktivnyj-ekvador-i-trekking
+slug: active-ecuador-trekking
 status: published
 title: Активный Эквадор и Треккинг
 countries:

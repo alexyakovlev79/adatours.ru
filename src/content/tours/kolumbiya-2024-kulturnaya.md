@@ -1,7 +1,7 @@
 ---
 id: tour_source_kolumbiya_2024_kulturnaya
 locale: ru
-slug: kolumbiya-2024-kulturnaya
+slug: colombia-bogota-cartagena-culture-6-days-2024
 status: published
 title: 'Тур в Колумбю на 6 дней: культура и история Боготы и Картахены'
 countries:

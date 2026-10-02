@@ -1,7 +1,7 @@
 ---
 id: tour_source_na_mototsiklakh_po_brazilii
 locale: ru
-slug: na-mototsiklakh-po-brazilii
+slug: brazil-motorcycle-tour-10-days
 status: published
 title: 'Мото-тур: на мотоциклах по Бразилии на 10 дней'
 countries:

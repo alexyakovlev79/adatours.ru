@@ -2,7 +2,7 @@
 id: "excursion_source_ballestas_islands_tour"
 locale: "ru"
 title: "Экскурсия в Перу по островам Бальестас на весь день"
-slug: "ballestas-islands-tour"
+slug: ballestas-islands-tour
 status: "approved"
 searchAliases: []
 country: "country_peru"

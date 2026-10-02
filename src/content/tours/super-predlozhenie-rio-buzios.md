@@ -1,7 +1,7 @@
 ---
 id: tour_source_super_predlozhenie_rio_buzios
 locale: ru
-slug: super-predlozhenie-rio-buzios
+slug: brazil-rio-buzios-8-days
 status: published
 title: Тур в Бразилию на 8 дней с Рио и пляжным отдыхом в Бузиосе
 countries:

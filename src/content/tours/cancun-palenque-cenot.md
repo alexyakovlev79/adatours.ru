@@ -1,7 +1,7 @@
 ---
 id: tour_source_cancun_palenque_cenot
 locale: ru
-slug: cancun-palenque-cenot
+slug: mexico-cancun-tulum-palenque-uxmal-chichen-itza
 status: published
 title: Тур в Мексику Канкун, Тулум, Паленке, Ушмаль, Чичен Ица
 countries:

@@ -2,7 +2,7 @@
 id: destination_argentina_el_calafate
 locale: ru
 name: Эль-Калафате
-slug: el-kalafate
+slug: el-calafate
 status: approved
 countryId: country_argentina
 destinationType: city

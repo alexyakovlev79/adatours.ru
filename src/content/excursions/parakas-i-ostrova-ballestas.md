@@ -2,7 +2,7 @@
 id: excursion_peru_paracas_ballestas
 locale: ru
 title: "Паракас и острова Бальестас"
-slug: parakas-i-ostrova-ballestas
+slug: paracas-ballestas-islands-tour
 status: approved
 searchAliases:
   - Острова Бальестас

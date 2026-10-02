@@ -2,7 +2,7 @@
 id: excursion_source_jekskursija_v_tigre
 locale: ru
 title: "Тигре за 4 часа: прогулка по дельте из Буэнос-Айреса"
-slug: jekskursija-v-tigre
+slug: tigre-delta-tour-from-buenos-aires
 status: approved
 searchAliases:
   - Экскурсия в Тигре

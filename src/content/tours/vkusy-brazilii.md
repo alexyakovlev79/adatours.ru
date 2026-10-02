@@ -1,7 +1,7 @@
 ---
 id: tour_source_vkusy_brazilii
 locale: ru
-slug: vkusy-brazilii
+slug: flavors-of-brazil
 status: published
 title: Вкусы Бразилии
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_kolumbiya_stolitsy
 locale: ru
-slug: kolumbiya-stolitsy
+slug: colombia-capitals
 status: published
 title: Колумбия- столицы
 countries:

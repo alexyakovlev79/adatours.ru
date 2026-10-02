@@ -2,7 +2,7 @@
 id: "excursion_source_royal_petropolis_private_tour_full_day"
 locale: "ru"
 title: "Экскурсия в Рио-де-Жанейро: Королевский Петрополис"
-slug: "royal-petropolis-private-tour-full-day"
+slug: royal-petropolis-private-tour-full-day
 status: "approved"
 searchAliases: []
 country: "country_brazil"

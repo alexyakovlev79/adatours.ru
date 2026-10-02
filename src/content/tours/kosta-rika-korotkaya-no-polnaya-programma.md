@@ -1,7 +1,7 @@
 ---
 id: tour_source_kosta_rika_korotkaya_no_polnaya_programma
 locale: ru
-slug: kosta-rika-korotkaya-no-polnaya-programma
+slug: costa-rica-short-complete-tour
 status: published
 title: 'Коста Рика: Короткая, но полная программа'
 countries:

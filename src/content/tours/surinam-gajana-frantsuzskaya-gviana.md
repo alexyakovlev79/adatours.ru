@@ -1,7 +1,7 @@
 ---
 id: tour_source_surinam_gajana_frantsuzskaya_gviana
 locale: ru
-slug: surinam-gajana-frantsuzskaya-gviana
+slug: suriname-guyana-french-guiana
 status: published
 title: Суринам, Гайана, Французская Гвиана
 countries:

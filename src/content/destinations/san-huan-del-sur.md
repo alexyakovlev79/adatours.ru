@@ -1,7 +1,7 @@
 ---
 id: "destination_nicaragua_san_huan_del_sur"
 locale: "ru"
-slug: "san-huan-del-sur"
+slug: san-juan-del-sur
 status: "approved"
 name: "Сан Хуан дель Сур"
 countryId: "country_nicaragua"

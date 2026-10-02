@@ -2,7 +2,7 @@
 id: excursion_source_mashpi_lodzh
 locale: ru
 title: "Машпи Лодж: 2 дня в тропическом лесу Эквадора"
-slug: mashpi-lodzh
+slug: mashpi-lodge-2-days
 status: approved
 searchAliases:
   - Машпи Лодж

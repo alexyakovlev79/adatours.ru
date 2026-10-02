@@ -1,7 +1,7 @@
 ---
 id: "destination_nicaragua_granada"
 locale: "ru"
-slug: "granada"
+slug: granada
 status: "approved"
 name: "Гранада"
 countryId: "country_nicaragua"

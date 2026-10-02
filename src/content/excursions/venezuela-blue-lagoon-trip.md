@@ -1,7 +1,7 @@
 ---
 id: excursion_venezuela_blue_lagoon_trip
 locale: ru
-slug: venezuela-blue-lagoon-trip
+slug: canaima-blue-lagoon-trip
 status: published
 title: Голубая лагуна в Канайме
 country: country_venezuela

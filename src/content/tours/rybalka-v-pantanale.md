@@ -1,7 +1,7 @@
 ---
 id: tour_source_rybalka_v_pantanale
 locale: ru
-slug: rybalka-v-pantanale
+slug: pantanal-fishing
 status: published
 title: Рыбалка в Пантанале
 countries:

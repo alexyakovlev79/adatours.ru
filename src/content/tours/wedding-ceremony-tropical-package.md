@@ -2,7 +2,7 @@
 id: tour_source_wedding_ceremony_tropical_package
 locale: ru
 title: "Тропическая свадебная церемония в Рио-де-Жанейро на 1 день"
-slug: wedding-ceremony-tropical-package
+slug: tropical-wedding-ceremony
 status: approved
 searchAliases:
   - "тропическая свадебная церемония"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_gvatemale
 locale: ru
-slug: luchshee-v-gvatemale
+slug: best-of-guatemala
 status: published
 title: Лучшее в Гватемале
 countries:

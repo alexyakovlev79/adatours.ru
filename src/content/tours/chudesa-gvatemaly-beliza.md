@@ -1,7 +1,7 @@
 ---
 id: tour_source_chudesa_gvatemaly_beliza
 locale: ru
-slug: chudesa-gvatemaly-beliza
+slug: guatemala-belize-wonders
 status: published
 title: Чудеса Гватемалы & Белиза
 countries:

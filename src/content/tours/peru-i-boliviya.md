@@ -1,7 +1,7 @@
 ---
 id: tour_source_peru_i_boliviya
 locale: ru
-slug: peru-i-boliviya
+slug: peru-bolivia
 status: published
 title: Перу и Боливия
 countries:

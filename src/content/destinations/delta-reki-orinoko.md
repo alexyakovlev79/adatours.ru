@@ -1,7 +1,7 @@
 ---
 id: destination_venezuela_delta_reki_orinoko
 locale: ru
-slug: delta-reki-orinoko
+slug: orinoco-delta
 status: approved
 name: Дельта реки Ориноко
 countryId: country_venezuela

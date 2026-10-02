@@ -1,7 +1,7 @@
 ---
 id: tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana
 locale: ru
-slug: 3-strany-gajana-surinam-i-frantsuzskaya-gviana
+slug: suriname-guyana-french-guiana-3-countries
 status: published
 title: 'Тур в три страны Латинской Америки: Суринам, Гайана и Фр.Гвиана'
 countries:

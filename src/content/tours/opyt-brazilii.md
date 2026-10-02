@@ -1,7 +1,7 @@
 ---
 id: tour_source_opyt_brazilii
 locale: ru
-slug: opyt-brazilii
+slug: experience-brazil
 status: published
 title: Опыт Бразилии
 countries:

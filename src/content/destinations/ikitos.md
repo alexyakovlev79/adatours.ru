@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_ikitos"
 locale: "ru"
-slug: "ikitos"
+slug: iquitos
 status: "approved"
 name: "Икитос"
 countryId: "country_peru"

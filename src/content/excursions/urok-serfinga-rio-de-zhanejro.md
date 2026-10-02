@@ -2,7 +2,7 @@
 id: "excursion_source_urok_serfinga_rio_de_zhanejro"
 locale: "ru"
 title: "Урок серфинга в Рио-де-Жанейро"
-slug: "urok-serfinga-rio-de-zhanejro"
+slug: rio-de-janeiro-surfing-lesson
 status: "approved"
 searchAliases: []
 country: "country_brazil"

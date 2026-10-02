@@ -2,7 +2,7 @@
 id: excursion_source_favela_tur
 locale: ru
 title: "Фавела-тур в Рио: Видигал, Два Брата и Росинья"
-slug: favela-tur
+slug: rio-favela-tour
 status: approved
 searchAliases:
   - Фавела-тур

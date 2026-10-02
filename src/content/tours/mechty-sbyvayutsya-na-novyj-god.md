@@ -1,7 +1,7 @@
 ---
 id: tour_source_mechty_sbyvayutsya_na_novyj_god
 locale: ru
-slug: mechty-sbyvayutsya-na-novyj-god
+slug: brazil-argentina-new-year-10-days
 status: published
 title: 'Новогодний тур в Бразилию и Аргентину: 10 дней с русским гидом'
 countries:

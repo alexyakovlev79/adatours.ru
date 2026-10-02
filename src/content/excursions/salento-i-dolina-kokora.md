@@ -2,7 +2,7 @@
 id: excursion_source_salento_i_dolina_kokora
 locale: ru
 title: "Долина Кокора и Саленто: восковые пальмы и облачный лес"
-slug: salento-i-dolina-kokora
+slug: cocora-valley-salento-tour
 status: approved
 searchAliases:
   - Долина Кокора

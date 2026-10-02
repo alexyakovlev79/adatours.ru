@@ -1,7 +1,7 @@
 ---
 id: tour_source_panama_i_kosta_rika
 locale: ru
-slug: panama-i-kosta-rika
+slug: panama-costa-rica
 status: published
 title: Панама и Коста Рика
 countries:

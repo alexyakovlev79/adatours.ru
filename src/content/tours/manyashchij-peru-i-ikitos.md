@@ -1,7 +1,7 @@
 ---
 id: tour_source_manyashchij_peru_i_ikitos
 locale: ru
-slug: manyashchij-peru-i-ikitos
+slug: peru-iquitos-discovery
 status: published
 title: Манящий ПЕРУ +ИКИТОС
 countries:

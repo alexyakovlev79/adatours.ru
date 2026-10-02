@@ -2,7 +2,7 @@
 id: tour_source_rio_de_janeiro_wedding
 locale: ru
 title: "Свадебная церемония на пляже Прайя-Вермелья в Рио-де-Жанейро"
-slug: rio-de-janeiro-wedding
+slug: rio-de-janeiro-praia-vermelha-wedding
 status: approved
 searchAliases:
   - "свадебная церемония в Рио-де-Жанейро"

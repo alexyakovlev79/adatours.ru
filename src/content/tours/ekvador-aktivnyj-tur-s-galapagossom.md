@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekvador_aktivnyj_tur_s_galapagossom
 locale: ru
-slug: ekvador-aktivnyj-tur-s-galapagossom
+slug: ecuador-galapagos-adventure-17-days
 status: published
 title: Тур в Эквадор и на Галапагосские острова (активити-тур) на 17 дней
 countries:

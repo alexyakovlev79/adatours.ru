@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_brazilii_rio_iguasu_buzios
 locale: ru
-slug: luchshee-v-brazilii-rio-iguasu-buzios
+slug: best-of-brazil-rio-iguazu-buzios
 status: published
 title: Лучшее в Бразилии
 countries:

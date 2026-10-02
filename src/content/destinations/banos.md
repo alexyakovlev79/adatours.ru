@@ -1,7 +1,7 @@
 ---
 id: "destination_ecuador_banos"
 locale: ru
-slug: "banos"
+slug: banos
 status: approved
 name: "Баньос"
 countryId: "country_ecuador"

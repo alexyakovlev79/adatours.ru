@@ -2,7 +2,7 @@
 id: excursion_source_tajny_starogo_rio_de_zhanejro
 locale: ru
 title: "Тайны старого Рио-де-Жанейро"
-slug: tajny-starogo-rio-de-zhanejro
+slug: secrets-of-old-rio-de-janeiro
 status: approved
 searchAliases:
   - Тайны старого Рио

@@ -2,7 +2,7 @@
 id: case_mice_business_delegation_sao_paulo_2026
 locale: ru
 title: Деловая делегация в Сан-Паулу и Кампинасе
-slug: delovaya-delegaciya-san-paulu-kampinas-2026
+slug: business-delegation-sao-paulo-campinas-2026
 status: approved
 segment: MICE / деловые делегации
 countries:
@@ -23,7 +23,7 @@ proof:
   - Подтвержденный состав транспорта, сопровождения и деловых визитов
 relatedServices:
   - /mice/
-  - /mice/delovye-delegacii/
+  - /mice/business-delegations/
 sourceSnapshot: internal_mice_case_campinas_sao_paulo_2026
 updatedAt: 2026-09-26
 ---

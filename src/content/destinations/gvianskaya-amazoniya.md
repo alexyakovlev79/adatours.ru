@@ -1,7 +1,7 @@
 ---
 id: "destination_french_guiana_gvianskaya_amazoniya"
 locale: ru
-slug: "gvianskaya-amazoniya"
+slug: french-guiana-amazon-rainforest
 status: approved
 name: "Гвианская Амазония"
 countryId: "country_french_guiana"

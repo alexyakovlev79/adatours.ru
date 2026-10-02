@@ -1,7 +1,7 @@
 ---
 id: "destination_ecuador_galapagosskie_ostrova"
 locale: ru
-slug: "galapagosskie-ostrova"
+slug: galapagos-islands
 status: approved
 name: "Галапагосские острова"
 countryId: "country_ecuador"

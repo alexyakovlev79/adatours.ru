@@ -2,7 +2,7 @@
 id: country_guyana
 locale: ru
 name: Гайана
-slug: gajana
+slug: guyana
 status: approved
 searchAliases:
   - Guyana

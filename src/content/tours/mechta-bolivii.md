@@ -1,7 +1,7 @@
 ---
 id: tour_source_mechta_bolivii
 locale: ru
-slug: mechta-bolivii
+slug: bolivia-dream
 status: published
 title: Мечта Боливии
 countries:

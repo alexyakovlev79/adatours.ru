@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_olgin"
 locale: "ru"
-slug: "olgin"
+slug: holguin
 status: "approved"
 name: "Ольгин"
 countryId: "country_cuba"

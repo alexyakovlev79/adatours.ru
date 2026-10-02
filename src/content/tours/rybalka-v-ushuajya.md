@@ -2,7 +2,7 @@
 id: tour_source_rybalka_v_ushuajya
 locale: ru
 title: "Рыбалка в Ушуайе: поездка в Пуэрто-Альмансу и ловля королевского краба"
-slug: rybalka-v-ushuajya
+slug: ushuaia-fishing
 status: approved
 searchAliases:
   - "Рыбалка в Ушуайя"

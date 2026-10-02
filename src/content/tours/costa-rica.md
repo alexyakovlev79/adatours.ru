@@ -1,7 +1,7 @@
 ---
 id: tour_source_costa_rica
 locale: ru
-slug: costa-rica
+slug: costa-rica-self-drive-2024
 status: published
 title: На машине по Коста Рике 2024
 countries:

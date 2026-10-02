@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_kosumel"
 locale: "ru"
-slug: "kosumel"
+slug: cozumel
 status: "approved"
 name: "Косумель"
 countryId: "country_mexico"

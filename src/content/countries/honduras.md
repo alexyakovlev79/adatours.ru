@@ -2,7 +2,7 @@
 id: country_honduras
 locale: ru
 name: Гондурас
-slug: gonduras
+slug: honduras
 status: approved
 searchAliases:
   - Honduras

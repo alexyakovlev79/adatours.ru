@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_krasochnuyu_braziliyu_2022
 locale: ru
-slug: tur-v-krasochnuyu-braziliyu-2022
+slug: brazil-iguazu-rio-salvador-recife-2022
 status: published
 title: 'Тур в Бразилию: Игуасу, Рио-де-Жанейро, Сальвадор, Ресифи'
 countries:

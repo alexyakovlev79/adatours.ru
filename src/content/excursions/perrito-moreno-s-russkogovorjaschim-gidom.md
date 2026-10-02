@@ -2,7 +2,7 @@
 id: excursion_source_perrito_moreno_s_russkogovorjaschim_gidom
 locale: ru
 title: Ледник Перито-Морено с русскоговорящим гидом
-slug: perrito-moreno-s-russkogovorjaschim-gidom
+slug: perito-moreno-russian-speaking-guide
 status: approved
 searchAliases:
   - Перрито Морено с русскоговорящим гидом

@@ -1,7 +1,7 @@
 ---
 id: "destination_nicaragua_ostrova_korn"
 locale: "ru"
-slug: "ostrova-korn"
+slug: corn-islands
 status: "approved"
 name: "Острова Корн"
 countryId: "country_nicaragua"

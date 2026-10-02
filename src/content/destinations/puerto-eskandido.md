@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_puerto_eskandido"
 locale: "ru"
-slug: "puerto-eskandido"
+slug: puerto-escondido
 status: "approved"
 name: "Пуэрто Эскандидо"
 countryId: "country_mexico"

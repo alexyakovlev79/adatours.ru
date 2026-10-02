@@ -1,7 +1,7 @@
 ---
 id: tour_source_mir_majya
 locale: ru
-slug: mir-majya
+slug: maya-world
 status: published
 title: Мир Майя
 countries:

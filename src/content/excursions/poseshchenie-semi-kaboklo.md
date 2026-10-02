@@ -1,7 +1,7 @@
 ---
 id: excursion_amazon_caboclo_family_visit
 locale: ru
-slug: poseshchenie-semi-kaboklo
+slug: amazon-caboclo-family-visit
 status: published
 title: Посещение семьи кабокло в Амазонии
 country: country_brazil

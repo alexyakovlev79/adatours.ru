@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_chili_luchshee_v_strane_i_gastronomiya_gurme
 locale: ru
-slug: tur-v-chili-luchshee-v-strane-i-gastronomiya-gurme
+slug: chile-vip-atacama-patagonia-gourmet
 status: published
 title: 'VIP тур в Чили: Атакама, Патагония и гастрономия | Ada Tours'
 countries:

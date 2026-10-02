@@ -1,7 +1,7 @@
 ---
 id: tour_source_antarktida_programma_s_nochevkoj
 locale: ru
-slug: antarktida-programma-s-nochevkoj
+slug: antarctica-overnight-program
 status: published
 title: 'Антарктида: программа с ночевкой'
 countries:

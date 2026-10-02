@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekzoticheskij_novyj_god_ru
 locale: ru
-slug: ekzoticheskij-novyj-god-ru
+slug: brazil-new-year-rio-iguazu-amazon
 status: published
 title: 'Тур в Бразилию на Новый год: Рио, Игуасу, Амазония'
 countries:

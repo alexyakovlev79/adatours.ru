@@ -1,7 +1,7 @@
 ---
 id: "destination_nicaragua_ostrov_ometepe"
 locale: "ru"
-slug: "ostrov-ometepe"
+slug: ometepe-island
 status: "approved"
 name: "Остров Ометепе"
 countryId: "country_nicaragua"

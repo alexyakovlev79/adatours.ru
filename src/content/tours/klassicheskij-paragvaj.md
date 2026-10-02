@@ -1,7 +1,7 @@
 ---
 id: tour_source_klassicheskij_paragvaj
 locale: ru
-slug: klassicheskij-paragvaj
+slug: classic-paraguay-2023
 status: published
 title: Парагвай 2023
 countries:

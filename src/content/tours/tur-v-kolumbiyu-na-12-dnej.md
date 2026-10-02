@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_kolumbiyu_na_12_dnej
 locale: ru
-slug: tur-v-kolumbiyu-na-12-dnej
+slug: colombia-highlights-beaches-12-days
 status: published
 title: Тур в Колумбию на 12 дней по лучшим местам с пляжным отдыхом
 countries:

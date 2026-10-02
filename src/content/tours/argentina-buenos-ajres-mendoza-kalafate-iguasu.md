@@ -1,7 +1,7 @@
 ---
 id: tour_source_argentina_buenos_ajres_mendoza_kalafate_iguasu
 locale: ru
-slug: argentina-buenos-ajres-mendoza-kalafate-iguasu
+slug: argentina-buenos-aires-mendoza-el-calafate-iguazu
 status: published
 title: Тур в Аргентину, Эль-Калафате, Мендосу и Водопады Игуасу
 countries:

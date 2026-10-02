@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_tsentralnoj_amerike
 locale: ru
-slug: luchshee-v-tsentralnoj-amerike
+slug: best-of-central-america
 status: published
 title: Лучшее в Центральной Америке
 countries:

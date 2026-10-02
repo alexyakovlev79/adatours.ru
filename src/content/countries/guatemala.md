@@ -2,7 +2,7 @@
 id: country_guatemala
 locale: ru
 name: Гватемала
-slug: gvatemala
+slug: guatemala
 status: approved
 searchAliases:
   - Guatemala

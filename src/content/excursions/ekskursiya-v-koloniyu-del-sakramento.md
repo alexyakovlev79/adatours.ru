@@ -2,7 +2,7 @@
 id: excursion_source_ekskursiya_v_koloniyu_del_sakramento
 locale: ru
 title: "Экскурсия из Монтевидео в старинный город Колония-дель-Сакраменто"
-slug: ekskursiya-v-koloniyu-del-sakramento
+slug: colonia-del-sacramento-from-montevideo
 status: approved
 searchAliases: []
 country: country_uruguay

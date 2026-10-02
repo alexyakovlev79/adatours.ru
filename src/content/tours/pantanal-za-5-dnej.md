@@ -1,7 +1,7 @@
 ---
 id: tour_source_pantanal_za_5_dnej
 locale: ru
-slug: pantanal-za-5-dnej
+slug: pantanal-5-days
 status: published
 title: Пантанал за 5 дней
 countries:

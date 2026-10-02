@@ -2,7 +2,7 @@
 id: excursion_source_rio_nochyu
 locale: ru
 title: "Ночное шоу с самбой и капоэйрой"
-slug: rio-nochyu
+slug: rio-samba-capoeira-night-show
 status: approved
 searchAliases:
   - Рио ночью

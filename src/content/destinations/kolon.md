@@ -1,7 +1,7 @@
 ---
 id: "destination_panama_kolon"
 locale: "ru"
-slug: "kolon"
+slug: colon
 status: "approved"
 name: "Колон"
 countryId: "country_panama"

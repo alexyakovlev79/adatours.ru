@@ -1,7 +1,7 @@
 ---
 id: "destination_panama_bokete"
 locale: "ru"
-slug: "bokete"
+slug: boquete
 status: "approved"
 name: "Бокете"
 countryId: "country_panama"

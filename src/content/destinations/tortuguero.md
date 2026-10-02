@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_tortuguero"
 locale: "ru"
-slug: "tortuguero"
+slug: tortuguero
 status: "approved"
 name: "Тортугуэро"
 countryId: "country_costa_rica"

@@ -2,7 +2,7 @@
 id: country_mexico
 locale: ru
 name: Мексика
-slug: meksika
+slug: mexico
 status: approved
 searchAliases:
   - Mexico

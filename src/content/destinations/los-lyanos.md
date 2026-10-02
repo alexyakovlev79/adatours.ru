@@ -1,7 +1,7 @@
 ---
 id: destination_venezuela_los_lyanos
 locale: ru
-slug: los-lyanos
+slug: los-llanos
 status: approved
 name: Лос Льянос
 countryId: country_venezuela

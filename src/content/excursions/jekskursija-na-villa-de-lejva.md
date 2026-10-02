@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_na_villa_de_lejva"
 locale: "ru"
 title: "Экскурсия на Вилла де Лейва"
-slug: "jekskursija-na-villa-de-lejva"
+slug: villa-de-leyva-tour
 status: "approved"
 searchAliases: []
 country: "country_colombia"

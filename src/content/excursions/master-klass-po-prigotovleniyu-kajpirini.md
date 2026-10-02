@@ -2,7 +2,7 @@
 id: excursion_rio_caipirinha_masterclass
 locale: ru
 title: "Мастер-класс по приготовлению кайпириньи"
-slug: master-klass-po-prigotovleniyu-kajpirini
+slug: caipirinha-making-class
 status: approved
 searchAliases:
   - Мастер-класс кайпиринья

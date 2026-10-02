@@ -1,7 +1,7 @@
 ---
 id: tour_source_vsya_panama_natsionalnye_parki_ostrova_i_doliny
 locale: ru
-slug: vsya-panama-natsionalnye-parki-ostrova-i-doliny
+slug: panama-national-parks-islands-valleys
 status: published
 title: 'Вся Панама: Национальные парки, острова и долины'
 countries:

@@ -2,7 +2,7 @@
 id: "excursion_source_ekskursiya_na_raduzhnuyu_goru_vinikunka"
 locale: "ru"
 title: "Экскурсия Радужные Горы в Перу из города Куско на 6 часов"
-slug: "ekskursiya-na-raduzhnuyu-goru-vinikunka"
+slug: rainbow-mountain-vinicunca-tour
 status: "approved"
 searchAliases: []
 country: "country_peru"

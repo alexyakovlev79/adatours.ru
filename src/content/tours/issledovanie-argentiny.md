@@ -2,7 +2,7 @@
 id: tour_source_issledovanie_argentiny
 locale: ru
 title: "Лучшие достопримечательности Аргентины за 16 дней"
-slug: issledovanie-argentiny
+slug: explore-argentina-16-days
 status: approved
 searchAliases:
   - "Тур в Аргентину с Патагонией (Эль-Калафате), водопады Игуасу"

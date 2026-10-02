@@ -1,7 +1,7 @@
 ---
 id: tour_source_bolshie_meksikanskie_kanikuly
 locale: ru
-slug: bolshie-meksikanskie-kanikuly
+slug: grand-mexico-holiday
 status: published
 title: Большие Мексиканские Каникулы
 countries:

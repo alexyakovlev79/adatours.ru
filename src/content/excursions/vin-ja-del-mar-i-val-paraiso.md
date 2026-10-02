@@ -2,7 +2,7 @@
 id: "excursion_source_vin_ja_del_mar_i_val_paraiso"
 locale: "ru"
 title: "Винья дель Мар и Вальпараисо"
-slug: "vin-ja-del-mar-i-val-paraiso"
+slug: vina-del-mar-valparaiso-tour
 status: "approved"
 searchAliases: []
 country: "country_chile"

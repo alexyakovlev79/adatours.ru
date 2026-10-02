@@ -1,7 +1,7 @@
 ---
 id: destination_bolivia_solnechnyj_ostrov
 locale: ru
-slug: solnechnyj-ostrov
+slug: isla-del-sol
 status: approved
 name: Солнечный остров
 countryId: country_bolivia

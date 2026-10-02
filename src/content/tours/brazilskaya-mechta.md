@@ -1,7 +1,7 @@
 ---
 id: tour_source_brazilskaya_mechta
 locale: ru
-slug: brazilskaya-mechta
+slug: brazil-dream-rio-tropical-island-paraty
 status: published
 title: 'Тур в Бразилию: Рио-де-Жанейро, Тропический остров и исторический Парати'
 countries:

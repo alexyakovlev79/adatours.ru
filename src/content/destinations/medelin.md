@@ -1,7 +1,7 @@
 ---
 id: "destination_colombia_medelin"
 locale: "ru"
-slug: "medelin"
+slug: medellin
 status: "approved"
 name: "Медельин"
 countryId: "country_colombia"

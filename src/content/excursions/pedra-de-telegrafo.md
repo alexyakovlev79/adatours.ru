@@ -2,7 +2,7 @@
 id: excursion_source_pedra_de_telegrafo
 locale: ru
 title: "Педра-ду-Телеграфу: треккинг к знаменитой скале Рио"
-slug: pedra-de-telegrafo
+slug: pedra-do-telegrafo-hike
 status: approved
 searchAliases:
   - Педра де Телеграфо

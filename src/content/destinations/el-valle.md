@@ -1,7 +1,7 @@
 ---
 id: "destination_panama_el_valle"
 locale: "ru"
-slug: "el-valle"
+slug: el-valle-de-anton
 status: "approved"
 name: "Эль Валле"
 countryId: "country_panama"

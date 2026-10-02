@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_linii_naska_i_ostrova_balestas"
 locale: "ru"
-slug: "linii-naska-i-ostrova-balestas"
+slug: nazca-lines-and-ballestas-islands
 status: "approved"
 name: "Линии Наска и Острова Бальестас"
 countryId: "country_peru"

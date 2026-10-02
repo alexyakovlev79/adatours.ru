@@ -2,7 +2,7 @@
 id: tour_source_aconcagua_trek_ru
 locale: ru
 title: "Треккинг на Аконкагуа: экспедиция на 18 дней"
-slug: aconcagua-trek-ru
+slug: aconcagua-trek
 status: approved
 searchAliases:
   - "Треккинг на Аконкагуа"

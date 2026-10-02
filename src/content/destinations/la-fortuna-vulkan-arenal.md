@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_la_fortuna_vulkan_arenal"
 locale: "ru"
-slug: "la-fortuna-vulkan-arenal"
+slug: la-fortuna-arenal-volcano
 status: "approved"
 name: "Ла Фортуна & Вулкан Ареналь"
 countryId: "country_costa_rica"

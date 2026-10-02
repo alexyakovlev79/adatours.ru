@@ -1,7 +1,7 @@
 ---
 id: excursion_ushuaia_helicopter_flight
 locale: ru
-slug: polet-na-vertolete-nad-ushuajej
+slug: ushuaia-helicopter-flight
 status: published
 title: Полет на вертолете над Ушуайей
 country: country_argentina

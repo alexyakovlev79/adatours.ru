@@ -2,7 +2,7 @@
 id: country_uruguay
 locale: ru
 name: Уругвай
-slug: urugvaj
+slug: uruguay
 status: approved
 searchAliases:
   - Uruguay

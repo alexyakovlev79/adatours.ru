@@ -1,7 +1,7 @@
 ---
 id: tour_source_issleduya_beliz
 locale: ru
-slug: issleduya-beliz
+slug: explore-belize
 status: published
 title: Исследуя Белиз
 countries:

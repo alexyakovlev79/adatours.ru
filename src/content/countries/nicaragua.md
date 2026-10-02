@@ -2,7 +2,7 @@
 id: country_nicaragua
 locale: ru
 name: Никарагуа
-slug: nikaragua
+slug: nicaragua
 status: approved
 searchAliases:
   - Nicaragua

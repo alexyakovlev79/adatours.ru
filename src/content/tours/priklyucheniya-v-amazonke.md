@@ -1,7 +1,7 @@
 ---
 id: tour_source_priklyucheniya_v_amazonke
 locale: ru
-slug: priklyucheniya-v-amazonke
+slug: amazon-jungle-survival-adventure
 status: published
 title: Приключенческий тур-выживание в Амазонских джунглях
 countries:

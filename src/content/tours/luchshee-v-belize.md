@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_belize
 locale: ru
-slug: luchshee-v-belize
+slug: best-of-belize
 status: published
 title: Лучшее в Белизе
 countries:

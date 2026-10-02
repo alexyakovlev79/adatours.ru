@@ -1,7 +1,7 @@
 ---
 id: tour_source_rajskaya_braziliya
 locale: ru
-slug: rajskaya-braziliya
+slug: brazil-paradise-private-tour-13-days
 status: published
 title: Индивидуальный тур в Бразилию на 13 дней
 countries:

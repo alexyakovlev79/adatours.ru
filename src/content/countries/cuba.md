@@ -2,7 +2,7 @@
 id: country_cuba
 locale: ru
 name: Куба
-slug: kuba
+slug: cuba
 status: approved
 searchAliases:
   - Cuba

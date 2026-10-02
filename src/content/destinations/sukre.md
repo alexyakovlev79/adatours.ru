@@ -1,7 +1,7 @@
 ---
 id: destination_bolivia_sukre
 locale: ru
-slug: sukre
+slug: sucre
 status: approved
 name: Сукре
 countryId: country_bolivia

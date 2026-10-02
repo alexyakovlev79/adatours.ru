@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_ostrov_huventud"
 locale: "ru"
-slug: "ostrov-huventud"
+slug: isla-de-la-juventud
 status: "approved"
 name: "Остров Хувентуд"
 countryId: "country_cuba"

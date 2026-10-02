@@ -1,7 +1,7 @@
 ---
 id: tour_source_fan_braziliya_i_argentina
 locale: ru
-slug: fan-braziliya-i-argentina
+slug: brazil-argentina-fun
 status: published
 title: Бразилия и Аргентина Фан
 countries:

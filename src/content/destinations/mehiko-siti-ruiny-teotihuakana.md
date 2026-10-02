@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_mehiko_siti_ruiny_teotihuakana"
 locale: "ru"
-slug: "mehiko-siti-ruiny-teotihuakana"
+slug: mexico-city-and-teotihuacan
 status: "approved"
 name: "Мехико Сити (руины Теотихуакана)"
 countryId: "country_mexico"

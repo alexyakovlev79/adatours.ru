@@ -1,7 +1,7 @@
 ---
 id: tour_source_puteshestvie_po_kultovym_chudesam_brazilii
 locale: ru
-slug: puteshestvie-po-kultovym-chudesam-brazilii
+slug: brazil-iconic-wonders
 status: published
 title: Путешествие по культовым чудесам Бразилии
 countries:

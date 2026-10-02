@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_kesaltenango"
 locale: ru
-slug: "kesaltenango"
+slug: quetzaltenango
 status: approved
 name: "Кесальтенанго"
 countryId: "country_guatemala"

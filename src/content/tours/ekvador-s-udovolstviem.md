@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekvador_s_udovolstviem
 locale: ru
-slug: ekvador-s-udovolstviem
+slug: ecuador-galapagos-nature-discovery
 status: published
 title: 'Тур в Эквадор и Галапагосы: по лучшим заповедным местам'
 countries:

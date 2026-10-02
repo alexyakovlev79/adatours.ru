@@ -1,7 +1,7 @@
 ---
 id: tour_source_kolumbiya_s_kano_kristales_i_ne_tolko
 locale: ru
-slug: kolumbiya-s-kano-kristales-i-ne-tolko
+slug: colombia-cano-cristales-beyond
 status: published
 title: Колумбия с «Каньо-Кристалес» и не только
 countries:

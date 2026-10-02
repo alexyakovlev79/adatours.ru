@@ -1,7 +1,7 @@
 ---
 id: tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu
 locale: ru
-slug: lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu
+slug: luxury-brazil-rio-carnival-iguazu-8-days
 status: published
 title: Тур в Бразилию на Карнавал в Рио и водопады Игуасу | 8 дней
 countries:

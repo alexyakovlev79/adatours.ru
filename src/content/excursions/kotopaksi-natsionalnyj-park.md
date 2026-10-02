@@ -2,7 +2,7 @@
 id: "excursion_source_kotopaksi_natsionalnyj_park"
 locale: "ru"
 title: "Экскурсия к Вулкану Котопахи в Национальный Парк в Андах"
-slug: "kotopaksi-natsionalnyj-park"
+slug: cotopaxi-national-park-tour
 status: "approved"
 searchAliases: []
 country: "country_ecuador"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii
 locale: ru
-slug: ekzoticheskij-karnaval-parad-chempionov-v-brazilii
+slug: brazil-exotic-carnival-champions-parade
 status: published
 title: Экзотический Карнавал (Парад Чемпионов) в Бразилии
 countries:

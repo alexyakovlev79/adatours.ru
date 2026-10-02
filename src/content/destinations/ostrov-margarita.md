@@ -1,7 +1,7 @@
 ---
 id: "destination_venezuela_ostrov_margarita"
 locale: ru
-slug: "ostrov-margarita"
+slug: margarita-island
 status: approved
 name: "Остров Маргарита"
 countryId: "country_venezuela"

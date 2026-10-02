@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_gavana"
 locale: "ru"
-slug: "gavana"
+slug: havana
 status: "approved"
 name: "Гавана"
 countryId: "country_cuba"

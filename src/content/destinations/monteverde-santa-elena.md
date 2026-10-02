@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_monteverde_santa_elena"
 locale: "ru"
-slug: "monteverde-santa-elena"
+slug: monteverde-santa-elena
 status: "approved"
 name: "Монтеверде & Санта Елена"
 countryId: "country_costa_rica"

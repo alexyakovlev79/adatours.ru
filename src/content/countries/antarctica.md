@@ -2,7 +2,7 @@
 id: country_antarctica
 locale: ru
 name: Антарктида
-slug: antarktida
+slug: antarctica
 status: approved
 searchAliases:
   - Антарктика

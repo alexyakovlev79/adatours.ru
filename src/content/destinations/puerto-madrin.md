@@ -1,7 +1,7 @@
 ---
 id: destination_argentina_puerto_madrin
 locale: ru
-slug: puerto-madrin
+slug: puerto-madryn
 status: approved
 name: Пуэрто-Мадрин
 countryId: country_argentina

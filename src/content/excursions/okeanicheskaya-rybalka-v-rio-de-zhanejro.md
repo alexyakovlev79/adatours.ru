@@ -2,7 +2,7 @@
 id: "excursion_source_okeanicheskaya_rybalka_v_rio_de_zhanejro"
 locale: "ru"
 title: "Экскурсия в Рио-де-Жанейро в Бразилии – Океаническая рыбалка"
-slug: "okeanicheskaya-rybalka-v-rio-de-zhanejro"
+slug: rio-de-janeiro-deep-sea-fishing
 status: "approved"
 searchAliases: []
 country: "country_brazil"

@@ -2,7 +2,7 @@
 id: destination_peru_arekipa
 locale: ru
 name: Арекипа
-slug: arekipa
+slug: arequipa
 status: approved
 searchAliases:
   - Arequipa

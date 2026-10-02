@@ -1,7 +1,7 @@
 ---
 id: tour_source_ves_mnogolikij_peru_ikitos
 locale: ru
-slug: ves-mnogolikij-peru-ikitos
+slug: complete-peru-iquitos-15-days
 status: published
 title: Тур в Перу "Весь Многоликий Перу и Икитос" на 15 дней
 countries:

@@ -4,15 +4,16 @@ import { destinationSlug, normalizeDestinationName, reserveDestinations, syncRes
 import { excursionHasDestination } from '../src/lib/destination-links.mjs';
 import { excursionPath } from '../src/lib/routes.ts';
 
-const countries = [{ id: 'country_argentina', slug: 'argentina' }, { id: 'country_brazil', slug: 'braziliya' }, { id: 'country_chile', slug: 'chili' }];
+const countries = [{ id: 'country_argentina', slug: 'argentina' }, { id: 'country_brazil', slug: 'brazil' }, { id: 'country_chile', slug: 'chile' }];
 const discovery = { entityType: 'tour', entityId: 'tour_fixture', sourceUrl: 'https://brasiltours.ru/fixture', evidence: 'День 2: поездка в указанное место.' };
 const request = (name, extra = {}) => ({ countryId: 'country_argentina', name, discoveredIn: discovery, ...extra });
+const newRequest = (name, englishName, extra = {}) => request(name, { englishName, ...extra });
 const empty = () => ({ catalog: [], reservations: { version: 1, entries: [] }, countries, publishedDestinationIds: [] });
 const continueWith = (result, extra = {}) => ({ catalog: result.catalog, reservations: result.reservations, countries, publishedDestinationIds: [], ...extra });
 
 test('repeat request keeps ID/slug/URL and does not duplicate evidence or mutate inputs', () => {
   const state = empty();
-  const first = reserveDestinations(state, request('Эль-Чалтен', { aliases: ['El Chaltén'] }));
+  const first = reserveDestinations(state, newRequest('Эль-Чалтен', 'El Chaltén'));
   assert.equal(first.ok, true);
   assert.equal(first.results[0].outcome, 'reserved');
   assert.equal(first.catalog[0].id, 'destination_argentina_el_chalten');
@@ -29,7 +30,7 @@ test('repeat request keeps ID/slug/URL and does not duplicate evidence or mutate
 
 test('same Iguacu name in two countries keeps two independent identities', () => {
   const state = empty();
-  const result = reserveDestinations(state, [request('Игуасу', { countryId: 'country_brazil' }), request('Игуасу')]);
+  const result = reserveDestinations(state, [newRequest('Игуасу', 'Iguacu', { countryId: 'country_brazil' }), newRequest('Игуасу', 'Iguazu')]);
   assert.equal(result.ok, true);
   assert.equal(result.catalog.length, 2);
   assert.notEqual(result.catalog[0].id, result.catalog[1].id);
@@ -39,10 +40,10 @@ test('same Iguacu name in two countries keeps two independent identities', () =>
 });
 
 test('aliases that bridge two known places reject the whole batch before any mutation', () => {
-  const known = reserveDestinations(empty(), [request('Тигре'), request('Сан-Исидро')]);
+  const known = reserveDestinations(empty(), [newRequest('Тигре', 'Tigre'), newRequest('Сан-Исидро', 'San Isidro')]);
   const state = continueWith(known);
   const before = structuredClone(state);
-  const result = reserveDestinations(state, [request('Кафаяте'), request('Тигре', { aliases: ['Сан-Исидро'] })]);
+  const result = reserveDestinations(state, [newRequest('Кафаяте', 'Cafayate'), request('Тигре', { aliases: ['Сан-Исидро'] })]);
   assert.equal(result.ok, false);
   assert.equal(result.results[0].outcome, 'ambiguous');
   assert.equal(result.results[0].requestIndex, 1);
@@ -53,7 +54,7 @@ test('aliases that bridge two known places reject the whole batch before any mut
 });
 
 test('explicit existing ID cannot cross countries or steal an alias', () => {
-  const known = reserveDestinations(empty(), [request('Тигре'), request('Сан-Исидро')]);
+  const known = reserveDestinations(empty(), [newRequest('Тигре', 'Tigre'), newRequest('Сан-Исидро', 'San Isidro')]);
   const id = known.catalog[0].id;
   assert.equal(reserveDestinations(continueWith(known), request('Tigre', { destinationId: id, countryId: 'country_brazil' })).ok, false);
   const conflict = reserveDestinations(continueWith(known), request('Сан-Исидро', { destinationId: id }));
@@ -65,15 +66,15 @@ test('explicit existing ID cannot cross countries or steal an alias', () => {
 });
 
 test('an unqualified name does not silently duplicate a qualified place', () => {
-  const known = reserveDestinations(empty(), request('Остров Магдалена (Магелланов пролив)', { countryId: 'country_chile' }));
+  const known = reserveDestinations(empty(), newRequest('Остров Магдалена (Магелланов пролив)', 'Magdalena Island (Strait of Magellan)', { countryId: 'country_chile' }));
   const result = reserveDestinations(continueWith(known), request('Магдалена', { countryId: 'country_chile' }));
   assert.equal(result.results[0].outcome, 'ambiguous');
   assert.equal(result.catalog.length, 1);
 });
 
 test('a parenthetical geographic qualifier does not confuse a place with its parent city', () => {
-  const known = reserveDestinations(empty(), request('Буэнос-Айрес'));
-  const result = reserveDestinations(continueWith(known), request('Сан-Исидро (Буэнос-Айрес)'));
+  const known = reserveDestinations(empty(), newRequest('Буэнос-Айрес', 'Buenos Aires'));
+  const result = reserveDestinations(continueWith(known), newRequest('Сан-Исидро (Буэнос-Айрес)', 'San Isidro (Buenos Aires)'));
   assert.equal(result.ok, true);
   assert.equal(result.catalog.length, 2);
   const bare = reserveDestinations(continueWith(result), request('Сан-Исидро'));
@@ -83,7 +84,7 @@ test('a parenthetical geographic qualifier does not confuse a place with its par
 });
 
 test('a direct user request reserves a place without a fabricated tour or excursion ID', () => {
-  const input = request('Тигре', { discoveredIn: { entityType: 'user_request', evidence: 'Пользователь предоставил материалы места Тигре в Аргентине.' } });
+  const input = newRequest('Тигре', 'Tigre', { discoveredIn: { entityType: 'user_request', evidence: 'Пользователь предоставил материалы места Тигре в Аргентине.' } });
   const first = reserveDestinations(empty(), input);
   assert.equal(first.ok, true);
   assert.equal(first.reservations.entries[0].discoveredIn[0].entityId, undefined);
@@ -91,12 +92,58 @@ test('a direct user request reserves a place without a fabricated tour or excurs
   assert.equal(reserveDestinations(empty(), request('Тигре', { discoveredIn: { entityType: 'user_request' } })).ok, false);
 });
 
-test('transliteration collision cannot create a numeric-suffix duplicate', () => {
-  const known = reserveDestinations(empty(), request('Сезд'));
-  const result = reserveDestinations(continueWith(known), request('Съезд'));
-  assert.equal(destinationSlug('Съезд'), 'sezd');
+test('an explicitly supplied slug collision cannot create a numeric-suffix duplicate', () => {
+  const known = reserveDestinations(empty(), request('Первое место', { slug: 'shared-place' }));
+  const result = reserveDestinations(continueWith(known), request('Другое место', { slug: 'shared-place' }));
   assert.equal(result.results[0].outcome, 'ambiguous');
   assert.equal(result.catalog.length, 1);
+});
+
+test('a new place requires an explicit English slug or englishName, never just its display name', () => {
+  for (const name of ['Тигре', 'Tigre']) {
+    const state = empty();
+    const result = reserveDestinations(state, request(name));
+    assert.equal(result.ok, false);
+    assert.equal(result.results[0].outcome, 'invalid');
+    assert.match(result.results[0].errors.join(' '), /explicit English slug or englishName/);
+    assert.deepEqual(state, empty());
+  }
+});
+
+test('new places accept an explicit English slug and an accented Latin proper name', () => {
+  const fromSlug = reserveDestinations(empty(), request('Водопад', { slug: 'waterfall' }));
+  assert.equal(fromSlug.ok, true);
+  assert.equal(fromSlug.catalog[0].name, 'Водопад');
+  assert.equal(fromSlug.catalog[0].url, '/argentina/place/waterfall/');
+  const fromName = reserveDestinations(empty(), newRequest('Сан-Паулу', 'São Paulo', { countryId: 'country_brazil' }));
+  assert.equal(fromName.ok, true);
+  assert.equal(fromName.catalog[0].slug, 'sao-paulo');
+  assert.equal(fromName.catalog[0].url, '/brazil/place/sao-paulo/');
+  assert.deepEqual(fromName.catalog[0].aliases, ['São Paulo']);
+});
+
+test('existing Russian name and explicit ID reuse do not need or replace an English slug', () => {
+  const known = reserveDestinations(empty(), request('Тигре', { slug: 'tigre' }));
+  for (const extra of [{}, { destinationId: known.catalog[0].id }, { slug: 'a-different-path' }]) {
+    const result = reserveDestinations(continueWith(known), request('Тигре', extra));
+    assert.equal(result.ok, true);
+    assert.equal(result.results[0].outcome, 'existing');
+    assert.equal(result.changed, false);
+    assert.deepEqual(result.catalog, known.catalog);
+  }
+});
+
+test('URL normalization rejects Cyrillic and other scripts instead of silently dropping letters', () => {
+  assert.throws(() => destinationSlug('Тигре'), /Cyrillic/);
+  assert.throws(() => destinationSlug('Rio Москва'), /Cyrillic/);
+  assert.throws(() => destinationSlug('東京'), /Latin alphabet/);
+  assert.equal(destinationSlug('  São—Paulo  '), 'sao-paulo');
+  assert.equal(destinationSlug('Øresund'), 'oresund');
+  for (const extra of [{ englishName: 'Тигре' }, { slug: 'Тигре' }, { slug: 'Tigre_city' }, { englishName: '東京' }]) {
+    const result = reserveDestinations(empty(), request('Тигре', extra));
+    assert.equal(result.ok, false);
+    assert.deepEqual(result.catalog, []);
+  }
 });
 
 test('unknown country, empty names and unsafe raw media URLs do not write state', () => {
@@ -117,7 +164,7 @@ test('ordinary aliases preserve a prepared canonical record without opening a ne
 });
 
 test('build guard rejects country-scoped alias conflicts, duplicated evidence and a second identity copy', () => {
-  const known = reserveDestinations(empty(), [request('Тигре'), request('Сан-Исидро')]);
+  const known = reserveDestinations(empty(), [newRequest('Тигре', 'Tigre'), newRequest('Сан-Исидро', 'San Isidro')]);
   const catalog = structuredClone(known.catalog);
   const queue = structuredClone(known.reservations);
   catalog[0].aliases = ['Tígre'];
@@ -131,7 +178,7 @@ test('build guard rejects country-scoped alias conflicts, duplicated evidence an
 });
 
 test('publication changes queue status by the same ID; no placeholder is a prerequisite', () => {
-  const known = reserveDestinations(empty(), request('Тигре'));
+  const known = reserveDestinations(empty(), newRequest('Тигре', 'Tigre'));
   const id = known.catalog[0].id;
   assert.equal(known.reservations.entries[0].status, 'needs_content');
   assert.ok(validateDestinationReservations(known.catalog, known.reservations, { countries, publishedDestinationIds: [id] }).some((error) => error.includes('same commit')));
@@ -144,7 +191,7 @@ test('publication changes queue status by the same ID; no placeholder is a prere
 });
 
 test('provided original material can reference a saved local image without permitting traversal', () => {
-  const known = reserveDestinations(empty(), request('Тигре'));
+  const known = reserveDestinations(empty(), newRequest('Тигре', 'Tigre'));
   const queue = structuredClone(known.reservations);
   queue.entries[0].materials = { repositoryPath: 'data/source-index/materials/tigre.md', imageUrls: ['/media/destinations/tigre/original.jpg'] };
   assert.deepEqual(validateDestinationReservations(known.catalog, queue, { countries }), []);

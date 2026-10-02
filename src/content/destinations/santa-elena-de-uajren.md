@@ -1,7 +1,7 @@
 ---
 id: "destination_venezuela_santa_elena_de_uajren"
 locale: ru
-slug: "santa-elena-de-uajren"
+slug: santa-elena-de-uairen
 status: approved
 name: "Санта Елена де Уайрен"
 countryId: "country_venezuela"

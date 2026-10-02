@@ -1,7 +1,7 @@
 ---
 id: tour_source_venesuela_treking_v_zateryannyj_i_pervozdannyj_mir_rorajmy
 locale: ru
-slug: venesuela-treking-v-zateryannyj-i-pervozdannyj-mir-rorajmy
+slug: venezuela-mount-roraima-trek-12-days
 status: published
 title: Тур в Венесуэлу на 12 дней с трекингом на столовую гору Рорайма
 countries:

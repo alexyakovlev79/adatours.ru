@@ -2,7 +2,7 @@
 id: tour_brazil_pantanal_bonito_lencois_8d
 locale: ru
 title: Пантанал, Бонито и Ленсойс-Мараньенсес за 8 дней
-slug: pantanal-bonito-lencois-maranhenses-8-dnej
+slug: pantanal-bonito-lencois-maranhenses-8-days
 status: approved
 countries:
   - country_brazil

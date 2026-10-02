@@ -2,7 +2,7 @@
 id: excursion_source_polet_na_vertolete_nad_rio
 locale: ru
 title: "Полет на вертолете над Рио-де-Жанейро"
-slug: polet-na-vertolete-nad-rio
+slug: rio-de-janeiro-helicopter-flight
 status: approved
 searchAliases:
   - Полет на вертолете над Рио

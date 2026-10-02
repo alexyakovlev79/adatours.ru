@@ -2,7 +2,7 @@
 id: excursion_peru_nazca_lines_flight
 locale: ru
 title: "Полет над линиями Наска"
-slug: polet-nad-liniyami-naska
+slug: nazca-lines-flight
 status: approved
 searchAliases:
   - Линии Наска

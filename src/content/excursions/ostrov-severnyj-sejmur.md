@@ -2,7 +2,7 @@
 id: "excursion_source_ostrov_severnyj_sejmur"
 locale: "ru"
 title: "Экскурсия на Галапагосские острова: северный остров Сеймур"
-slug: "ostrov-severnyj-sejmur"
+slug: north-seymour-island-tour
 status: "approved"
 searchAliases: []
 country: "country_ecuador"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekvador_v_sentyabre
 locale: ru
-slug: ekvador-v-sentyabre
+slug: ecuador-quito-quilotoa-banos-amazon-september-11-days
 status: published
 title: 'Тур в Эквадор на 11 дней: Кито, Килотоа, Баньос, Амазония'
 countries:

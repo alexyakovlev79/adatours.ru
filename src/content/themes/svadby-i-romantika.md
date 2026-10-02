@@ -2,7 +2,7 @@
 id: theme_weddings_romance
 locale: ru
 name: Свадьбы и романтические путешествия
-slug: svadby-i-romantika
+slug: weddings-and-romance
 status: approved
 summary: >-
   Свадебная церемония, предложение, медовый месяц или годовщина требуют подходящего места, приватности и достаточно свободного времени вокруг самого события.

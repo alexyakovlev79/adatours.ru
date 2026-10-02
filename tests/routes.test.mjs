@@ -5,10 +5,10 @@ import { spawnSync } from 'node:child_process';
 import test from 'node:test';
 import yaml from 'js-yaml';
 import {
-  canonicalPath, countryBreadcrumbs, countryPath, createEntityAliasRegistry, destinationBreadcrumbs, destinationCountryPath,
+  aliasesForEntity, assertUniqueRoutePaths, canonicalPath, countryBreadcrumbs, countryPath, createEntityAliasRegistry, destinationBreadcrumbs, destinationCountryPath,
   destinationPath, destinationRoute, excursionBreadcrumbs, excursionCountryPath,
   excursionDestinationPath, excursionGeography, excursionPath, expandBreadcrumbTrails,
-  isLegacyRedirectPath, legacyDestinationPath, legacyEntityPath, mainTourCountries,
+  isLegacyRedirectPath, legacyDestinationPath, legacyEntityPath, mainTourCountries, normalizePageAliases, pageAliases,
   tourBreadcrumbs, tourCountryPath, tourPath,
 } from '../src/lib/routes.ts';
 import { mainTourDestinationIds, optionalTourDestinationIds } from '../src/lib/tour-relations.ts';
@@ -28,16 +28,16 @@ const brazil = countries.find((entry) => entry.id === 'country_brazil');
 const rio = destinations.find((entry) => entry.id === 'destination_brazil_rio');
 const luxury = tours.find((entry) => entry.id === 'tour_luxury_brazil_11d');
 
-test('canonical country-first URLs preserve existing slugs and global theme paths', () => {
-  assert.equal(countryPath(brazil), '/braziliya/');
-  assert.equal(destinationPath(rio), '/braziliya/place/rio-de-zhanejro/');
+test('canonical country-first URLs use English slugs and global English theme paths', () => {
+  assert.equal(countryPath(brazil), '/brazil/');
+  assert.equal(destinationPath(rio), '/brazil/place/rio-de-janeiro/');
   const adventure = tours.find((entry) => entry.id === 'tour_brazil_adventure_17d');
-  assert.equal(tourPath(adventure), '/braziliya/tour/bolshoe-priklyuchenie-braziliya-17-dnej/');
-  assert.equal(tourPath(luxury), '/multi-country/tour/roskoshnaya-braziliya/');
-  assert.equal(canonicalPath({ type: 'theme', slug: 'gastronomiya-i-vino' }), '/po-interesam/gastronomiya-i-vino/');
-  assert.equal(destinationCountryPath(brazil), '/braziliya/place/');
-  assert.equal(tourCountryPath(brazil), '/braziliya/tour/');
-  assert.equal(excursionCountryPath(brazil), '/braziliya/excursion/');
+  assert.equal(tourPath(adventure), '/brazil/tour/grand-brazil-adventure-17-days/');
+  assert.equal(tourPath(luxury), '/multi-country/tour/luxury-brazil/');
+  assert.equal(canonicalPath({ type: 'theme', slug: 'gastronomy-and-wine' }), '/interests/gastronomy-and-wine/');
+  assert.equal(destinationCountryPath(brazil), '/brazil/place/');
+  assert.equal(tourCountryPath(brazil), '/brazil/tour/');
+  assert.equal(excursionCountryPath(brazil), '/brazil/excursion/');
 });
 
 test('tour main route excludes optional geography and keeps parallel country breadcrumbs', () => {
@@ -57,11 +57,11 @@ test('tour main route excludes optional geography and keeps parallel country bre
     'destination_argentina_san_isidro_buenos_ajres',
     'destination_argentina_tigre',
   ]);
-  assert.equal(tourPath(trip), '/multi-country/tour/argentina-braziliya-buenos-ajres-el-kalafate-iguasu-pipa-11-dnej/');
+  assert.equal(tourPath(trip), '/multi-country/tour/argentina-brazil-buenos-aires-el-calafate-iguazu-pipa-11-days/');
   const crumbs = tourBreadcrumbs(trip);
   assert.deepEqual(crumbs[1], { links: [
     { label: 'Аргентина', href: '/argentina/tour/' },
-    { label: 'Бразилия', href: '/braziliya/tour/' },
+    { label: 'Бразилия', href: '/brazil/tour/' },
   ] });
   const trails = expandBreadcrumbTrails(crumbs);
   assert.equal(trails.length, 2);
@@ -75,11 +75,11 @@ test('tour main route excludes optional geography and keeps parallel country bre
 test('excursions use the destination geography even when departing from another country', () => {
   const excursion = { slug: 'montevideo-test', title: 'Монтевидео', country: 'country_argentina', destination: 'destination_uruguay_montevideo' };
   assert.equal(excursionGeography(excursion).country.id, 'country_uruguay');
-  assert.equal(excursionPath(excursion), '/urugvaj/montevideo/montevideo-test/');
-  assert.equal(excursionDestinationPath(destinationRoute(excursion.destination)), '/urugvaj/montevideo/');
+  assert.equal(excursionPath(excursion), '/uruguay/montevideo/montevideo-test/');
+  assert.equal(excursionDestinationPath(destinationRoute(excursion.destination)), '/uruguay/montevideo/');
   assert.deepEqual(excursionBreadcrumbs(excursion).map(({ label, href }) => [label, href]), [
-    ['Экскурсии', '/ekskursii/'], ['Уругвай', '/urugvaj/excursion/'],
-    ['Монтевидео', '/urugvaj/montevideo/'],
+    ['Экскурсии', '/excursions/'], ['Уругвай', '/uruguay/excursion/'],
+    ['Монтевидео', '/uruguay/montevideo/'],
   ]);
   assert.equal(canonicalPath({ type: 'excursion', slug: excursion.slug, countryIds: ['country_argentina'], destinationIds: [excursion.destination] }), excursionPath(excursion));
 });
@@ -91,14 +91,14 @@ test('reserved future destinations yield a route without a published page or fal
   assert.ok(future, 'fixture needs an excursion linked to a future destination');
   const destination = destinationRoute(future.destinationIds[0]);
   assert.equal(canonicalPath(future), `/${destination.countrySlug}/${destination.slug}/${future.slug}/`);
-  assert.equal(canonicalPath({ type: 'excursion', slug: 'fazendy-kofejnykh-baronov', countryIds: ['country_brazil'], destinationIds: [] }), '/braziliya/excursion/fazendy-kofejnykh-baronov/');
+  assert.equal(canonicalPath({ type: 'excursion', slug: 'coffee-baron-estates', countryIds: ['country_brazil'], destinationIds: [] }), '/brazil/excursion/coffee-baron-estates/');
 });
 
 test('Iguasu destinations stay distinct and each source route has exactly one country', () => {
   const brazilSide = destinationRoute('destination_brazil_iguacu');
   const argentinaSide = destinationRoute('destination_argentina_puerto_iguasu');
-  assert.equal(destinationPath(brazilSide), '/braziliya/place/foz-do-iguasu/');
-  assert.equal(destinationPath(argentinaSide), '/argentina/place/puerto-iguasu/');
+  assert.equal(destinationPath(brazilSide), '/brazil/place/foz-do-iguacu/');
+  assert.equal(destinationPath(argentinaSide), '/argentina/place/puerto-iguazu/');
   assert.notEqual(brazilSide.countryId, argentinaSide.countryId);
   assert.throws(() => canonicalPath({ type: 'destination', id: brazilSide.id, slug: brazilSide.slug, countryIds: ['country_brazil', 'country_argentina'] }), /exactly one country/);
   assert.throws(() => canonicalPath({ type: 'destination', id: brazilSide.id, slug: brazilSide.slug, countryIds: ['country_argentina'] }), /reserved catalog entry/);
@@ -118,14 +118,83 @@ test('every published old URL is an excluded alias while the new URLs and catalo
     assert.equal(isLegacyRedirectPath(canonical), false, canonical);
     assert.equal(isLegacyRedirectPath(`/adatours.ru${canonical}`, '/adatours.ru'), false, canonical);
   }
-  for (const path of ['/strany/', '/napravleniya/', '/tury/', '/ekskursii/', '/multi-country/', '/multi-country/tour/', '/braziliya/place/', '/braziliya/tour/', '/braziliya/excursion/', '/braziliya/rio-de-zhanejro/']) {
+  for (const path of ['/country/', '/places/', '/tours/', '/excursions/', '/multi-country/', '/multi-country/tour/', '/brazil/place/', '/brazil/tour/', '/brazil/excursion/', '/brazil/rio-de-janeiro/']) {
     assert.equal(isLegacyRedirectPath(path), false, path);
   }
 });
 
 test('country and destination breadcrumbs use existing catalog levels', () => {
-  assert.deepEqual(countryBreadcrumbs(brazil).map((item) => item.href), ['/strany/', '/braziliya/']);
-  assert.deepEqual(destinationBreadcrumbs(rio).map((item) => item.href), ['/napravleniya/', '/braziliya/place/']);
+  assert.deepEqual(countryBreadcrumbs(brazil).map((item) => item.href), ['/country/', '/brazil/']);
+  assert.deepEqual(destinationBreadcrumbs(rio).map((item) => item.href), ['/places/', '/brazil/place/']);
+});
+
+test('all exact pre-migration spellings remain aliases for the same stable entities', () => {
+  const fixtures = [
+    ['country', brazil, countryPath(brazil), ['/braziliya/', '/strany/braziliya/']],
+    ['destination', rio, destinationPath(rio), ['/braziliya/place/rio-de-zhanejro/', '/napravleniya/braziliya/rio-de-zhanejro/']],
+    ['tour', luxury, tourPath(luxury), ['/tury/roskoshnaya-braziliya/', '/multi-country/tour/roskoshnaya-braziliya/']],
+  ];
+  for (const [type, entry, current, expected] of fixtures) {
+    const actual = aliasesForEntity(type, entry, current);
+    for (const oldPath of expected) {
+      assert.ok(actual.includes(oldPath), `${entry.id} lost ${oldPath}`);
+      assert.equal(isLegacyRedirectPath(oldPath), true, `sitemap must exclude ${oldPath}`);
+    }
+    assert.equal(isLegacyRedirectPath(current), false, `canonical must remain in sitemap: ${current}`);
+  }
+});
+
+test('reserved destination history is registered even without a source snapshot', () => {
+  const catalogue = JSON.parse(readFileSync(`${root}src/data/catalog/destinations.json`, 'utf8'));
+  const sourceIds = new Set(JSON.parse(readFileSync(`${root}data/source-index/catalogs/destinations.json`, 'utf8')).entries.map(({ id }) => id));
+  const reserved = catalogue.find((entry) => !sourceIds.has(entry.id) && entry.legacyUrls?.length);
+  assert.ok(reserved, 'migration fixture needs a reserved destination with URL history');
+  const current = destinationPath(reserved);
+  const actual = aliasesForEntity('destination', reserved, current);
+  for (const oldPath of reserved.legacyUrls.filter((path) => path !== current)) {
+    assert.ok(actual.includes(oldPath), `reserved place lost ${oldPath}`);
+    assert.equal(isLegacyRedirectPath(oldPath), true, oldPath);
+  }
+});
+
+test('global catalogue and exact page aliases share redirect and sitemap rules', () => {
+  const registered = new Map(pageAliases.map(({ from, to }) => [from, to]));
+  for (const [from, to] of [
+    ['/strany/', '/country/'], ['/napravleniya/', '/places/'],
+    ['/tury/', '/tours/'], ['/ekskursii/', '/excursions/'], ['/po-interesam/', '/interests/'],
+  ]) assert.equal(registered.get(from), to, from);
+  for (const { from, to } of pageAliases) {
+    assert.equal(isLegacyRedirectPath(from), true, from);
+    assert.equal(isLegacyRedirectPath(`/adatours.ru${from}`, '/adatours.ru'), true, from);
+    assert.equal(isLegacyRedirectPath(to), false, `redirect target must be final: ${to}`);
+  }
+});
+
+test('route segments reject case, punctuation and path injection', () => {
+  for (const slug of ['', 'Brazil', 'rio_de_janeiro', 'rio--de-janeiro', 'Бразилия', 'a/b', 'a?b', 'a#b', '..']) {
+    assert.throws(() => countryPath({ slug }), /Invalid route segment/);
+  }
+  assert.equal(countryPath({ slug: 'el-salvador' }), '/el-salvador/');
+});
+
+test('duplicate aliases with one final target deduplicate, while conflicting targets fail', () => {
+  assert.deepEqual(normalizePageAliases([
+    { from: '/old', to: '/new/' }, { from: '/old/', to: '/new', title: 'duplicate' },
+  ]), [{ from: '/old/', to: '/new/' }]);
+  assert.throws(() => normalizePageAliases([{ from: '/old/', to: '/new/' }, { from: '/old/', to: '/other/' }]), /Alias target collision/);
+  assert.throws(() => normalizePageAliases([{ from: '/same/', to: '/same/' }]), /itself/);
+  assert.throws(() => normalizePageAliases([{ from: '/old/', to: '/middle/' }, { from: '/middle/', to: '/new/' }]), /final canonical/);
+  for (const from of ['https://example.com/', '//example.com/', '/old/?a=1', '/old/#anchor', '/../old/']) {
+    assert.throws(() => normalizePageAliases([{ from, to: '/new/' }]), /Invalid legacy route/);
+  }
+  const alias = { params: { path: 'old' }, props: { mode: 'redirect', to: '/new/' } };
+  assert.deepEqual(assertUniqueRoutePaths([alias, { ...alias }]), [alias]);
+  assert.throws(() => assertUniqueRoutePaths([alias, { params: { path: 'old' }, props: { mode: 'redirect', to: '/other/' } }]), /Route collision/);
+  assert.throws(() => assertUniqueRoutePaths([alias, { params: { path: 'old' }, props: { mode: 'detail' } }]), /Route collision/);
+  assert.throws(() => createEntityAliasRegistry([
+    { type: 'tour', id: 'first', slug: 'first', countryIds: ['country_brazil'], legacyUrls: ['/shared-history/'] },
+    { type: 'tour', id: 'second', slug: 'second', countryIds: ['country_brazil'], legacyUrls: ['/shared-history/'] },
+  ]), /Alias target collision/);
 });
 
 test('stored country-first legacy URLs become redirects and stay excluded after geography changes', () => {
@@ -151,15 +220,15 @@ test('stored country-first legacy URLs become redirects and stay excluded after 
 
 test('source-index CLI shares the exact routing contract used in pages', () => {
   const inputs = [
-    { id: 'country_brazil', type: 'country', slug: 'braziliya' },
+    { id: 'country_brazil', type: 'country', slug: 'brazil' },
     { id: 'tour_example', type: 'tour', slug: 'example', countryIds: ['country_argentina', 'country_brazil', 'country_uruguay'], routeCountryIds: ['country_argentina', 'country_brazil'] },
     { id: 'excursion_example', type: 'excursion', slug: 'example', countryIds: ['country_argentina'], destinationIds: ['destination_uruguay_montevideo'] },
   ];
   const result = spawnSync(process.execPath, ['scripts/resolve-canonical-paths.mjs'], { cwd: root, input: JSON.stringify(inputs), encoding: 'utf8' });
   assert.equal(result.status, 0, result.stderr);
   assert.deepEqual(JSON.parse(result.stdout), [
-    { id: 'country_brazil', url: '/braziliya/' },
+    { id: 'country_brazil', url: '/brazil/' },
     { id: 'tour_example', url: '/multi-country/tour/example/' },
-    { id: 'excursion_example', url: '/urugvaj/montevideo/example/' },
+    { id: 'excursion_example', url: '/uruguay/montevideo/example/' },
   ]);
 });

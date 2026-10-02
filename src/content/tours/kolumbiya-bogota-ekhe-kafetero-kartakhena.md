@@ -1,7 +1,7 @@
 ---
 id: tour_source_kolumbiya_bogota_ekhe_kafetero_kartakhena
 locale: ru
-slug: kolumbiya-bogota-ekhe-kafetero-kartakhena
+slug: colombia-bogota-eje-cafetero-cartagena-9-days
 status: published
 title: Тур в Колумбию на 9 дней в Боготу, Картахену, Перейру и на озеро Гуатавита
 countries:

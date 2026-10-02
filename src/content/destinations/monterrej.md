@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_monterrej"
 locale: "ru"
-slug: "monterrej"
+slug: monterrey
 status: "approved"
 name: "Монтеррей"
 countryId: "country_mexico"

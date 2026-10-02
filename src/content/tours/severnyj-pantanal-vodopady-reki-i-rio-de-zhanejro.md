@@ -1,7 +1,7 @@
 ---
 id: tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro
 locale: ru
-slug: severnyj-pantanal-vodopady-reki-i-rio-de-zhanejro
+slug: northern-pantanal-waterfalls-rivers-rio-de-janeiro
 status: published
 title: 'Индивидуальный тур в Бразилию: Северный Пантанал, Водопады и Рио-де-Жанейро'
 countries:

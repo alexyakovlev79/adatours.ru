@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_4_strany_yuzhnoj_ameriki
 locale: ru
-slug: tur-v-4-strany-yuzhnoj-ameriki
+slug: brazil-argentina-chile-uruguay
 status: published
 title: 'Тур в страны Южной Америки: Бразилия, Аргентина, Чили, Уругвай'
 countries:

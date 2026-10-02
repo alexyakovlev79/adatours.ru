@@ -1,7 +1,7 @@
 ---
 id: tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru
 locale: ru
-slug: lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru
+slug: luxury-panama-12-days
 status: published
 title: 'Люксовый тур в Панаму: 12 дней vip отдыха | Ada Tours'
 countries:

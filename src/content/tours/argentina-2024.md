@@ -1,7 +1,7 @@
 ---
 id: tour_source_argentina_2024
 locale: ru
-slug: argentina-2024
+slug: argentina-patagonia-highlights-2024
 status: published
 title: Тур в Аргентину с Патагонией по лучшим достопримечательностям
 countries:

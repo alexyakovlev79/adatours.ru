@@ -1,7 +1,7 @@
 ---
 id: excursion_sao_luis_city_tour_four_hours
 locale: ru
-slug: obzornaya-ekskursiya-po-san-luisu-4-chasa
+slug: sao-luis-city-tour-4-hours
 status: published
 title: Обзорная экскурсия по Сан-Луису на 4 часа
 country: country_brazil

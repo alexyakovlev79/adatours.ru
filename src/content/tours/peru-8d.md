@@ -2,7 +2,7 @@
 id: tour_peru_8d
 locale: ru
 title: "Перу за 8 дней: Лима, Куско, Мачу-Пикчу и Титикака"
-slug: peru-8-dnej
+slug: peru-8-days
 status: approved
 countries:
   - country_peru

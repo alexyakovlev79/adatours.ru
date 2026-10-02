@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_chichikastenango"
 locale: ru
-slug: "chichikastenango"
+slug: chichicastenango
 status: approved
 name: "Чичикастенанго"
 countryId: "country_guatemala"

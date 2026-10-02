@@ -2,7 +2,7 @@
 id: destination_peru_cusco
 locale: ru
 name: Куско
-slug: kusko
+slug: cusco
 status: approved
 countryId: country_peru
 destinationType: city

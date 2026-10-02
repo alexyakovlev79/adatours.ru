@@ -1,7 +1,7 @@
 ---
 id: tour_source_tropicheskij_karnaval_s_angroj_dush_rejsh
 locale: ru
-slug: tropicheskij-karnaval-s-angroj-dush-rejsh
+slug: brazil-rio-carnival-angra-dos-reis-12-days
 status: published
 title: Тур в Бразилию на 12 дней | Карнавал в Рио с пляжным отдыхом
 countries:

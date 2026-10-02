@@ -2,7 +2,7 @@
 id: theme_gastronomy_wine
 locale: ru
 name: Гастрономия и вино
-slug: gastronomiya-i-vino
+slug: food-and-wine
 status: approved
 summary: >-
   Винодельни, рынки, рестораны, дегустации и местная кухня могут стать отдельной темой поездки или частью большого маршрута по Латинской Америке.

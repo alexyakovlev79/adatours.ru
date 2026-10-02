@@ -2,7 +2,7 @@
 id: destination_colombia_pereira
 locale: ru
 name: Перейра
-slug: perejra
+slug: pereira
 status: approved
 searchAliases:
   - Pereira

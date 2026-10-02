@@ -2,7 +2,7 @@
 id: excursion_source_ekskursiya_v_zateryannyj_gorod_machu_pikchu
 locale: ru
 title: "Мачу-Пикчу из Куско: экскурсия на весь день"
-slug: ekskursiya-v-zateryannyj-gorod-machu-pikchu
+slug: machu-picchu-day-tour-from-cusco
 status: approved
 searchAliases:
   - Экскурсия в Мачу-Пикчу

@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_kosta_rike
 locale: ru
-slug: luchshee-v-kosta-rike
+slug: best-of-costa-rica
 status: published
 title: Тур в Коста-Рику- лучшее в Коста Рике
 countries:

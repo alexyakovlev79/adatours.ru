@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_tikal_flores"
 locale: ru
-slug: "tikal-flores"
+slug: tikal-and-flores
 status: approved
 name: "Тикаль & Флорес"
 countryId: "country_guatemala"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_fantasticheskij_tur_po_meksike
 locale: ru
-slug: fantasticheskij-tur-po-meksike
+slug: fantastic-mexico-tour
 status: published
 title: Фантастический Тур по Мексике
 countries:

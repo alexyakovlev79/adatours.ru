@@ -1,7 +1,7 @@
 ---
 id: "destination_guyana_nacionalnyj_park_kajetur"
 locale: ru
-slug: "nacionalnyj-park-kajetur"
+slug: kaieteur-national-park
 status: approved
 name: "Национальный парк Кайетур"
 countryId: "country_guyana"

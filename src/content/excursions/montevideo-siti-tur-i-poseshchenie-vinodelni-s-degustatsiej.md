@@ -2,7 +2,7 @@
 id: excursion_source_montevideo_siti_tur_i_poseshchenie_vinodelni_s_degustatsiej
 locale: ru
 title: "Монтевидео и винодельня: сити-тур с дегустацией"
-slug: montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej
+slug: montevideo-city-winery-tour
 status: approved
 searchAliases:
   - Монтевидео винодельня

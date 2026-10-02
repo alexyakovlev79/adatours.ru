@@ -1,7 +1,7 @@
 ---
 id: tour_source_fantasticheskaya_kolumbiya
 locale: ru
-slug: fantasticheskaya-kolumbiya
+slug: colombia-bogota-cartagena-medellin-rosario-islands-santa-marta
 status: published
 title: 'Тур в Колумбию: Богота, Картахена, Медельин, острова Росарио и Санта-Марта'
 countries:

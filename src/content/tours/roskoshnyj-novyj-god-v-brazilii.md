@@ -1,7 +1,7 @@
 ---
 id: tour_source_roskoshnyj_novyj_god_v_brazilii
 locale: ru
-slug: roskoshnyj-novyj-god-v-brazilii
+slug: luxury-brazil-new-year-10-days
 status: published
 title: Тур в Бразилию на 10 дней – Роскошный Новый Год
 countries:

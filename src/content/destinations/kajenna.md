@@ -1,7 +1,7 @@
 ---
 id: "destination_french_guiana_kajenna"
 locale: ru
-slug: "kajenna"
+slug: cayenne
 status: approved
 name: "Кайенна"
 countryId: "country_french_guiana"

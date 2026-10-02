@@ -1,7 +1,7 @@
 ---
 id: destination_venezuela_kanajma_i_vodopad_anhel
 locale: ru
-slug: kanajma-i-vodopad-anhel
+slug: canaima-and-angel-falls
 status: approved
 name: Канайма и водопад Анхель
 countryId: country_venezuela

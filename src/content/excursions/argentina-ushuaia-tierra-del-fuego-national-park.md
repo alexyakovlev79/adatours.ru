@@ -2,7 +2,7 @@
 id: "excursion_source_argentina_ushuaia_tierra_del_fuego_national_park"
 locale: "ru"
 title: "Национальный парк Огненная земля"
-slug: "argentina-ushuaia-tierra-del-fuego-national-park"
+slug: argentina-ushuaia-tierra-del-fuego-national-park
 status: "approved"
 searchAliases: []
 country: "country_argentina"

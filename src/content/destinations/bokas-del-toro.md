@@ -1,7 +1,7 @@
 ---
 id: "destination_panama_bokas_del_toro"
 locale: "ru"
-slug: "bokas-del-toro"
+slug: bocas-del-toro
 status: "approved"
 name: "Бокас-дель-Торо"
 countryId: "country_panama"

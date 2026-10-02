@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_montesuma"
 locale: "ru"
-slug: "montesuma"
+slug: montezuma
 status: "approved"
 name: "Монтесума"
 countryId: "country_costa_rica"

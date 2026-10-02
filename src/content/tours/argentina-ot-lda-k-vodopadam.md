@@ -2,7 +2,7 @@
 id: tour_source_argentina_ot_lda_k_vodopadam
 locale: ru
 title: "Аргентина: Буэнос-Айрес, ледник Перито-Морено и водопады Игуасу"
-slug: argentina-ot-lda-k-vodopadam
+slug: argentina-glaciers-to-iguazu-falls
 status: approved
 searchAliases:
   - "Отдых в Аргентине: ледники Патагонии и водопады Игуасу"

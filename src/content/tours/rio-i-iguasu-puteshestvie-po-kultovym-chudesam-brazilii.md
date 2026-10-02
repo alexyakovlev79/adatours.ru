@@ -1,7 +1,7 @@
 ---
 id: tour_source_rio_i_iguasu_puteshestvie_po_kultovym_chudesam_brazilii
 locale: ru
-slug: rio-i-iguasu-puteshestvie-po-kultovym-chudesam-brazilii
+slug: brazil-rio-iguazu-private-tour
 status: published
 title: 'Индивидуальный тур в Бразилию: Рио-де-Жанейро и Игуасу'
 countries:

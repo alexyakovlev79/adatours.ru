@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_san_hose"
 locale: "ru"
-slug: "san-hose"
+slug: san-jose
 status: "approved"
 name: "Сан Хосе"
 countryId: "country_costa_rica"

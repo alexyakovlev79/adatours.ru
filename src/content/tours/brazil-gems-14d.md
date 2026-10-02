@@ -2,7 +2,7 @@
 id: tour_brazil_gems_14d
 locale: ru
 title: "Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-ду-Форте и Игуасу"
-slug: braziliya-rio-ouro-preto-salvador-praia-do-forte-iguasu-14-dnej
+slug: brazil-rio-ouro-preto-salvador-praia-do-forte-iguazu-14-days
 status: approved
 countries:
   - country_brazil

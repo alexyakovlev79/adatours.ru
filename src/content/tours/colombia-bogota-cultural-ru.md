@@ -1,7 +1,7 @@
 ---
 id: tour_source_colombia_bogota_cultural_ru
 locale: ru
-slug: colombia-bogota-cultural-ru
+slug: colombia-bogota-medellin-cartagena-cultural-tour-8-days
 status: published
 title: 'Тур в Колумбию на 8 дней: Богота, Медельин и Картахена'
 countries:

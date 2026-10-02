@@ -1,7 +1,7 @@
 ---
 id: tour_source_venesuela_novye_konkistadory
 locale: ru
-slug: venesuela-novye-konkistadory
+slug: venezuela-new-conquistadors
 status: published
 title: Венесуэла -Новые Конкистадоры
 countries:

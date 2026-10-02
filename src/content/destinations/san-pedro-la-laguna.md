@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_san_pedro_la_laguna"
 locale: ru
-slug: "san-pedro-la-laguna"
+slug: san-pedro-la-laguna
 status: approved
 name: "Сан Педро ла Лагуна"
 countryId: "country_guatemala"

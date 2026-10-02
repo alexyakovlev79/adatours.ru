@@ -1,7 +1,7 @@
 ---
 id: destination_belize_beliz_siti
 locale: ru
-slug: beliz-siti
+slug: belize-city
 status: approved
 name: Белиз-сити
 countryId: country_belize

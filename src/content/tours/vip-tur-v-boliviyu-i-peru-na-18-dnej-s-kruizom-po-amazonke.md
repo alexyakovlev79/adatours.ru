@@ -1,7 +1,7 @@
 ---
 id: tour_source_vip_tur_v_boliviyu_i_peru_na_18_dnej_s_kruizom_po_amazonke
 locale: ru
-slug: vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke
+slug: peru-bolivia-amazon-cruise-vip-18-days
 status: published
 title: 'VIP тур в Перу 18 дней: Мачу-Пикчу, Амазонка и солончак Уюни'
 countries:

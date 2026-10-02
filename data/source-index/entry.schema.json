@@ -2,143 +2,514 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Ada Tours source entry",
   "type": "object",
-  "required": ["id", "type", "name", "url", "slug", "contentPath", "sourceUrl", "countryIds", "destinationIds", "destinations", "aliases", "text", "media", "readiness", "sheet"],
+  "required": [
+    "id",
+    "type",
+    "name",
+    "url",
+    "slug",
+    "contentPath",
+    "sourceUrl",
+    "countryIds",
+    "destinationIds",
+    "destinations",
+    "aliases",
+    "text",
+    "media",
+    "readiness",
+    "sheet"
+  ],
   "properties": {
-    "id": {"type": "string", "pattern": "^(country|destination|tour|excursion)_[a-z0-9_]+$"},
-    "type": {"enum": ["country", "destination", "tour", "excursion"]},
-    "name": {"type": "string", "minLength": 1},
-    "url": {"type": "string", "pattern": "^/.*?/$"},
-    "slug": {"type": "string", "minLength": 1},
-    "contentPath": {"type": "string", "pattern": "^src/content/(countries|destinations|tours|excursions)/.+\\.md$"},
-    "sourceUrl": {"type": ["string", "null"]},
-    "countryIds": {"type": "array", "items": {"type": "string", "pattern": "^country_"}, "uniqueItems": true},
-    "routeCountryIds": {"type": "array", "items": {"type": "string", "pattern": "^country_"}, "uniqueItems": true, "minItems": 1},
-    "routeDestinationIds": {"type": "array", "items": {"type": "string", "pattern": "^destination_"}, "uniqueItems": true, "minItems": 1},
-    "legacyUrls": {"type": "array", "items": {"type": "string", "pattern": "^/.*?/$"}, "uniqueItems": true},
-    "destinationIds": {"type": "array", "items": {"type": "string", "pattern": "^destination_"}, "uniqueItems": true},
-    "relatedDestinationIds": {"type": "array", "items": {"type": "string", "pattern": "^destination_"}, "uniqueItems": true},
-    "destinations": {"type": "array", "items": {"type": "object", "required": ["id", "name", "url", "countryId"]}},
-    "destinationType": {"type": "string"},
-    "destinationName": {"type": ["string", "null"]},
-    "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "id": {
+      "type": "string",
+      "pattern": "^(country|destination|tour|excursion)_[a-z0-9_]+$"
+    },
+    "type": {
+      "enum": [
+        "country",
+        "destination",
+        "tour",
+        "excursion"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^/.*?/$"
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contentPath": {
+      "type": "string",
+      "pattern": "^src/content/(countries|destinations|tours|excursions)/.+\\.md$"
+    },
+    "sourceUrl": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "countryIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^country_"
+      },
+      "uniqueItems": true
+    },
+    "routeCountryIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^country_"
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "routeDestinationIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^destination_"
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "legacyUrls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^/.*?/$"
+      },
+      "uniqueItems": true
+    },
+    "destinationIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^destination_"
+      },
+      "uniqueItems": true
+    },
+    "relatedDestinationIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^destination_"
+      },
+      "uniqueItems": true
+    },
+    "destinations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "url",
+          "countryId"
+        ]
+      }
+    },
+    "destinationType": {
+      "type": "string"
+    },
+    "destinationName": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
     "text": {
       "type": "object",
-      "required": ["selected", "original", "verification"],
+      "required": [
+        "selected",
+        "original",
+        "verification"
+      ],
       "properties": {
-        "selected": {"$ref": "#/$defs/textPointer"},
-        "original": {"$ref": "#/$defs/textPointer"},
-        "verification": {"type": "object"},
-        "sourceScope": {"type": "string"},
-        "provenance": {"type": "object"}
+        "selected": {
+          "$ref": "#/$defs/textPointer"
+        },
+        "original": {
+          "$ref": "#/$defs/textPointer"
+        },
+        "verification": {
+          "type": "object"
+        },
+        "sourceScope": {
+          "type": "string"
+        },
+        "provenance": {
+          "type": "object"
+        }
       }
     },
     "media": {
       "type": "object",
-      "required": ["images", "status", "sourceUrl"],
+      "required": [
+        "images",
+        "status",
+        "sourceUrl"
+      ],
       "properties": {
-        "images": {"type": "array", "items": {"$ref": "#/$defs/image"}},
-        "status": {"enum": ["ready", "existing_enhanced_preserved", "provided_originals"]},
-        "sourceUrl": {"type": ["string", "null"]},
-        "current": {"type": "array", "items": {"$ref": "#/$defs/image"}},
-        "provenance": {"type": "object"}
+        "images": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/image"
+          }
+        },
+        "status": {
+          "enum": [
+            "ready",
+            "existing_enhanced_preserved",
+            "provided_originals"
+          ]
+        },
+        "sourceUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "current": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/image"
+          }
+        },
+        "provenance": {
+          "type": "object"
+        }
       },
-      "allOf": [{
-        "if": {"properties": {"status": {"const": "provided_originals"}}},
-        "then": {"properties": {
-          "images": {"minItems": 1, "items": {"$ref": "#/$defs/providedImage"}, "contains": {"type": "object", "required": ["role"], "properties": {"role": {"const": "hero"}}}},
-          "provenance": {"type": "object", "required": ["kind"], "properties": {"kind": {"const": "user_provided"}}}
-        }, "required": ["provenance"]},
-        "else": {"properties": {"images": {"items": {"$ref": "#/$defs/rawImage"}}}}
-      }]
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "provided_originals"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "images": {
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/providedImage"
+                },
+                "contains": {
+                  "type": "object",
+                  "required": [
+                    "role"
+                  ],
+                  "properties": {
+                    "role": {
+                      "const": "hero"
+                    }
+                  }
+                }
+              },
+              "provenance": {
+                "type": "object",
+                "required": [
+                  "kind"
+                ],
+                "properties": {
+                  "kind": {
+                    "const": "user_provided"
+                  }
+                }
+              }
+            },
+            "required": [
+              "provenance"
+            ]
+          },
+          "else": {
+            "properties": {
+              "images": {
+                "items": {
+                  "$ref": "#/$defs/rawImage"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "readiness": {
       "type": "object",
-      "required": ["sources", "text", "media", "geography"],
+      "required": [
+        "sources",
+        "text",
+        "media",
+        "geography"
+      ],
       "properties": {
-        "sources": {"const": "ready"},
-        "text": {"type": "string"},
-        "media": {"enum": ["ready", "existing_enhanced_preserved", "provided_originals"]},
-        "geography": {"enum": ["fixed", "no_destination_asserted", "resolve_when_creating_tour"]}
+        "sources": {
+          "const": "ready"
+        },
+        "text": {
+          "type": "string"
+        },
+        "media": {
+          "enum": [
+            "ready",
+            "existing_enhanced_preserved",
+            "provided_originals"
+          ]
+        },
+        "geography": {
+          "enum": [
+            "fixed",
+            "no_destination_asserted",
+            "resolve_when_creating_tour"
+          ]
+        }
       }
     },
     "sheet": {
       "type": "object",
-      "required": ["spreadsheetId", "sheetName", "row"],
+      "required": [
+        "spreadsheetId",
+        "sheetName",
+        "row"
+      ],
       "properties": {
-        "spreadsheetId": {"type": "string"},
-        "sheetName": {"type": "string"},
-        "row": {"type": ["integer", "null"], "minimum": 2}
+        "spreadsheetId": {
+          "type": "string"
+        },
+        "sheetName": {
+          "type": "string"
+        },
+        "row": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 2
+        }
       }
     }
   },
   "$defs": {
     "textPointer": {
       "oneOf": [
-        {"$ref": "#/$defs/drivePointer"},
-        {"$ref": "#/$defs/providedDrivePointer"},
-        {"$ref": "#/$defs/providedRepositoryPointer"}
+        {
+          "$ref": "#/$defs/drivePointer"
+        },
+        {
+          "$ref": "#/$defs/providedDrivePointer"
+        },
+        {
+          "$ref": "#/$defs/providedRepositoryPointer"
+        }
       ]
     },
     "providedDrivePointer": {
       "type": "object",
-      "required": ["driveId", "url", "name", "kind", "mimeType"],
-      "not": {"required": ["repositoryPath"]},
+      "required": [
+        "driveId",
+        "url",
+        "name",
+        "kind",
+        "mimeType"
+      ],
+      "not": {
+        "required": [
+          "repositoryPath"
+        ]
+      },
       "properties": {
-        "kind": {"const": "provided_materials"},
-        "driveId": {"type": "string", "pattern": "^[A-Za-z0-9_-]+$"},
-        "url": {"type": "string", "pattern": "^https://(?:drive\\.google\\.com/file/d/[A-Za-z0-9_-]+(?:/(?:view|edit|preview))?|docs\\.google\\.com/(?:document|spreadsheets|presentation|drawings)/d/[A-Za-z0-9_-]+(?:/(?:view|edit|preview|export))?)/?(?:[?#].*)?$"},
-        "name": {"type": "string", "pattern": "\\S"},
-        "mimeType": {"type": "string", "pattern": "\\S", "not": {"const": "application/vnd.google-apps.folder"}},
-        "folderId": {"type": "string"},
-        "folderPath": {"type": "string"}
+        "kind": {
+          "const": "provided_materials"
+        },
+        "driveId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://(?:drive\\.google\\.com/file/d/[A-Za-z0-9_-]+(?:/(?:view|edit|preview))?|docs\\.google\\.com/(?:document|spreadsheets|presentation|drawings)/d/[A-Za-z0-9_-]+(?:/(?:view|edit|preview|export))?)/?(?:[?#].*)?$"
+        },
+        "name": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "mimeType": {
+          "type": "string",
+          "pattern": "\\S",
+          "not": {
+            "const": "application/vnd.google-apps.folder"
+          }
+        },
+        "folderId": {
+          "type": "string"
+        },
+        "folderPath": {
+          "type": "string"
+        }
       }
     },
     "providedRepositoryPointer": {
       "type": "object",
-      "required": ["repositoryPath", "name", "kind", "mimeType"],
-      "not": {"anyOf": [{"required": ["driveId"]}, {"required": ["url"]}]},
+      "required": [
+        "repositoryPath",
+        "name",
+        "kind",
+        "mimeType"
+      ],
+      "not": {
+        "anyOf": [
+          {
+            "required": [
+              "driveId"
+            ]
+          },
+          {
+            "required": [
+              "url"
+            ]
+          }
+        ]
+      },
       "properties": {
-        "kind": {"const": "provided_materials"},
-        "repositoryPath": {"type": "string", "pattern": "^data/source-index/materials/(country|destination|tour|excursion)_[a-z0-9_]+\\.md$"},
-        "name": {"type": "string", "pattern": "\\S"},
-        "mimeType": {"const": "text/markdown"}
+        "kind": {
+          "const": "provided_materials"
+        },
+        "repositoryPath": {
+          "type": "string",
+          "pattern": "^data/source-index/materials/(country|destination|tour|excursion)_[a-z0-9_]+\\.md$"
+        },
+        "name": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "mimeType": {
+          "const": "text/markdown"
+        }
       }
     },
     "drivePointer": {
       "type": "object",
-      "required": ["driveId", "url", "name", "kind", "folderId", "folderPath", "mimeType"],
+      "required": [
+        "driveId",
+        "url",
+        "name",
+        "kind",
+        "folderId",
+        "folderPath",
+        "mimeType"
+      ],
       "properties": {
-        "driveId": {"type": "string", "minLength": 1},
-        "url": {"type": "string", "pattern": "^https://(drive|docs)\\.google\\.com/"},
-        "name": {"type": "string"},
-        "kind": {"enum": ["original_snapshot", "cleaned_snapshot", "rewrite_v2", "tour_excerpt"]},
-        "folderId": {"type": "string"},
-        "folderPath": {"type": "string"},
-        "mimeType": {"type": "string"},
-        "containerKind": {"type": "string"},
-        "parentTourId": {"type": "string", "pattern": "^tour_"}
+        "driveId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://(drive|docs)\\.google\\.com/"
+        },
+        "name": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "original_snapshot",
+            "cleaned_snapshot",
+            "rewrite_v2",
+            "tour_excerpt"
+          ]
+        },
+        "folderId": {
+          "type": "string"
+        },
+        "folderPath": {
+          "type": "string"
+        },
+        "mimeType": {
+          "type": "string"
+        },
+        "containerKind": {
+          "type": "string"
+        },
+        "parentTourId": {
+          "type": "string",
+          "pattern": "^tour_"
+        }
       }
     },
     "image": {
       "type": "object",
-      "required": ["url", "role", "order", "alt"],
+      "required": [
+        "url",
+        "role",
+        "order",
+        "alt"
+      ],
       "properties": {
-        "url": {"type": "string"},
-        "role": {"enum": ["hero", "gallery"]},
-        "order": {"type": "integer", "minimum": 1},
-        "alt": {"type": "string"}
+        "url": {
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "hero",
+            "gallery"
+          ]
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "alt": {
+          "type": "string"
+        }
       }
     },
     "rawImage": {
       "allOf": [
-        {"$ref": "#/$defs/image"},
-        {"properties": {"url": {"type": "string", "pattern": "^https://brasiltours\\.ru/image/(?!cache/)"}}}
+        {
+          "$ref": "#/$defs/image"
+        },
+        {
+          "properties": {
+            "url": {
+              "type": "string",
+              "pattern": "^https://brasiltours\\.ru/image/(?!cache/)"
+            }
+          }
+        }
       ]
     },
     "providedImage": {
       "allOf": [
-        {"$ref": "#/$defs/image"},
-        {"properties": {"url": {"type": "string", "pattern": "^(https://|/media/)", "not": {"pattern": "/image/cache/|^https://(?:drive|docs)\\.google\\.com(?:[:/]|$)"}}}}
+        {
+          "$ref": "#/$defs/image"
+        },
+        {
+          "properties": {
+            "url": {
+              "type": "string",
+              "pattern": "^(https://|/media/)",
+              "not": {
+                "pattern": "/image/cache/|^https://(?:drive|docs)\\.google\\.com(?:[:/]|$)"
+              }
+            }
+          }
+        }
       ]
     }
   }

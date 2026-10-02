@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_po_uruguayu_i_paragvayu_16_dnej
 locale: ru
-slug: tur-po-uruguayu-i-paragvayu-16-dnej
+slug: uruguay-paraguay-16-days-2026
 status: published
 title: 'Тур в Уругвай и Парагвай 2026: скрытые сокровища Южной Америки | 16 дней'
 countries:

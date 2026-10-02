@@ -2,7 +2,7 @@
 id: "excursion_source_korkovado_i_les_tizhuka"
 locale: "ru"
 title: "Корковадо и лес Тижука"
-slug: "korkovado-i-les-tizhuka"
+slug: corcovado-tijuca-forest-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

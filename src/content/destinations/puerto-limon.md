@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_puerto_limon"
 locale: "ru"
-slug: "puerto-limon"
+slug: puerto-limon
 status: "approved"
 name: "Пуэрто Лимон"
 countryId: "country_costa_rica"

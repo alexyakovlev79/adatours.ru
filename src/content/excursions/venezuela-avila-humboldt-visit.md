@@ -1,7 +1,7 @@
 ---
 id: excursion_venezuela_avila_humboldt_visit
 locale: ru
-slug: venezuela-avila-humboldt-visit
+slug: mount-avila-humboldt-hotel-tour
 status: published
 title: Гора Авила и исторический отель Humboldt
 country: country_venezuela

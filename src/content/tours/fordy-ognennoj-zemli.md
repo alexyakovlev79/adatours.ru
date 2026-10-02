@@ -1,7 +1,7 @@
 ---
 id: tour_source_fordy_ognennoj_zemli
 locale: ru
-slug: fordy-ognennoj-zemli
+slug: tierra-del-fuego-fjords
 status: published
 title: Фьорды Огненной Земли
 countries:

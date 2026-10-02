@@ -1,7 +1,7 @@
 ---
 id: tour_source_kolumbiya_c_kofe
 locale: ru
-slug: kolumbiya-c-kofe
+slug: colombia-coffee
 status: published
 title: Колумбия Кофе
 countries:

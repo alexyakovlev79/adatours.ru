@@ -1,7 +1,7 @@
 ---
 id: tour_source_klassicheskaya_programma_po_gvatemale
 locale: ru
-slug: klassicheskaya-programma-po-gvatemale
+slug: guatemala-antigua-guatemala-city-santiago-atitlan
 status: published
 title: 'Тур в Гватемалу: Антигуа, Гватемала Сити, Сантьяго Атитлан'
 countries:

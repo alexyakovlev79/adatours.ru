@@ -2,7 +2,7 @@
 id: destination_brazil_rio
 locale: ru
 name: Рио-де-Жанейро
-slug: rio-de-zhanejro
+slug: rio-de-janeiro
 status: approved
 searchAliases:
   - Рио

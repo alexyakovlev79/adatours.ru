@@ -1,7 +1,7 @@
 ---
 id: tour_source_kolumbiya_live
 locale: ru
-slug: kolumbiya-live
+slug: colombia-live
 status: published
 title: Колумбия Live
 countries:

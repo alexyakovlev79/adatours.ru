@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_pisko"
 locale: ru
-slug: "pisko"
+slug: pisco
 status: approved
 name: "Писко"
 countryId: "country_peru"

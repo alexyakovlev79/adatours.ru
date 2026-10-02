@@ -2,7 +2,7 @@
 id: country_suriname
 locale: ru
 name: Суринам
-slug: surinam
+slug: suriname
 status: approved
 searchAliases:
   - Suriname

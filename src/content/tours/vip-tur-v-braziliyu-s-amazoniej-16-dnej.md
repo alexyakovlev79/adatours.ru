@@ -1,7 +1,7 @@
 ---
 id: tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej
 locale: ru
-slug: vip-tur-v-braziliyu-s-amazoniej-16-dnej
+slug: luxury-brazil-amazon-16-days
 status: published
 title: Люксовый индивидуальный тур в Бразилию с Амазонией | 16 дней
 countries:

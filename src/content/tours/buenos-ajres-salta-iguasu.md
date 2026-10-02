@@ -2,7 +2,7 @@
 id: tour_source_buenos_ajres_salta_iguasu
 locale: ru
 title: "Буэнос-Айрес, Сальта и Игуасу"
-slug: buenos-ajres-salta-iguasu
+slug: buenos-aires-salta-iguazu
 status: approved
 searchAliases:
   - "Буэнос-Айрес Сальта Игуасу"

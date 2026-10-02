@@ -1,7 +1,7 @@
 ---
 id: tour_source_vlyubites_v_argentinu
 locale: ru
-slug: vlyubites-v-argentinu
+slug: argentina-buenos-aires-el-calafate-salta-iguazu
 status: published
 title: 'Тур в Аргентину: Буэнос-Айрес, Эль-Калафате, Сальта, Игуасу'
 countries:

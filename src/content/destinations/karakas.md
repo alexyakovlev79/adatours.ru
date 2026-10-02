@@ -1,7 +1,7 @@
 ---
 id: destination_venezuela_karakas
 locale: ru
-slug: karakas
+slug: caracas
 status: approved
 name: Каракас
 countryId: country_venezuela

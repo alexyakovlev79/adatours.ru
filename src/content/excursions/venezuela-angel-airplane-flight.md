@@ -1,7 +1,7 @@
 ---
 id: excursion_venezuela_angel_airplane_flight
 locale: ru
-slug: venezuela-angel-airplane-flight
+slug: angel-falls-airplane-flight
 status: published
 title: Полет на самолете над Сальто-Анхелем
 country: country_venezuela

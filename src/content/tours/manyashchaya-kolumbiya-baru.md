@@ -1,7 +1,7 @@
 ---
 id: tour_source_manyashchaya_kolumbiya_baru
 locale: ru
-slug: manyashchaya-kolumbiya-baru
+slug: colombia-baru-beach-group-tour-12-days
 status: published
 title: Тур в Колумбию в группе на 12 дней с пляжным отдыхом на о.Бару
 countries:

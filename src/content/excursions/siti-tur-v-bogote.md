@@ -2,7 +2,7 @@
 id: excursion_source_siti_tur_v_bogote
 locale: ru
 title: "Сити-тур по Боготе: Ла-Канделария, Музей золота и Монсеррат"
-slug: siti-tur-v-bogote
+slug: bogota-city-tour
 status: approved
 searchAliases:
   - Сити-тур в Боготе

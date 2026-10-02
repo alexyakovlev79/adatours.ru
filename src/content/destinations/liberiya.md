@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_liberiya"
 locale: "ru"
-slug: "liberiya"
+slug: liberia
 status: "approved"
 name: "Либерия"
 countryId: "country_costa_rica"

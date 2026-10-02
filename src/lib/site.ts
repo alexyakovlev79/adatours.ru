@@ -8,9 +8,9 @@ export const SITE = {
 };
 
 export const NAV_LINKS = [
-  { href: '/strany/', label: 'Страны' },
-  { href: '/tury/', label: 'Туры' },
-  { href: '/po-interesam/', label: 'По интересам' },
+  { href: '/country/', label: 'Страны' },
+  { href: '/tours/', label: 'Туры' },
+  { href: '/interests/', label: 'По интересам' },
   { href: '/vip/', label: 'VIP' },
   { href: '/mice/', label: 'MICE' },
   { href: '/dmc/', label: 'Для агентств' },

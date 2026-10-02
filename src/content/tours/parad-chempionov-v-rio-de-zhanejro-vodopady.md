@@ -1,7 +1,7 @@
 ---
 id: tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady
 locale: ru
-slug: parad-chempionov-v-rio-de-zhanejro-vodopady
+slug: rio-champions-parade-waterfalls
 status: published
 title: Парад Чемпионов в Рио де Жанейро & Водопады
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_gvatemala_gonduras_i_beliz
 locale: ru
-slug: gvatemala-gonduras-i-beliz
+slug: guatemala-honduras-belize
 status: published
 title: Гватемала, Гондурас и Белиз
 countries:

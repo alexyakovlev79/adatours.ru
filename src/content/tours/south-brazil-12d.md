@@ -2,7 +2,7 @@
 id: tour_brazil_south_12d
 locale: ru
 title: "Южная Бразилия за 12 дней: Рио, Игуасу, Грамаду, каньоны и Флорианополис"
-slug: yuzhnaya-braziliya-rio-iguasu-gramado-florianopolis-12-dnej
+slug: southern-brazil-rio-iguazu-gramado-florianopolis-12-days
 status: approved
 countries:
   - country_brazil

@@ -1,7 +1,7 @@
 ---
 id: tour_source_vip_chili_5
 locale: ru
-slug: vip-chili-5
+slug: chile-five-star-vip
 status: published
 title: VIP Чили 5*
 countries:

@@ -78,9 +78,9 @@ const countryById = new Map(countryEntries.map((item) => [item.data.id, item]));
 const country = countryById.get(d.countryId);
 const countryName = country?.data.name ?? '';
 
-const pageUrl = new URL(withBase(destinationPath(d)), Astro.site ?? 'https://adatours.ru').toString();
+const pageUrl = new URL(withBase(destinationPath(d)), Astro.site ?? 'https://adatours.ru/').toString();
 const countryUrl = country
-  ? new URL(withBase(countryPath(country.data)), Astro.site ?? 'https://adatours.ru').toString()
+  ? new URL(withBase(countryPath(country.data)), Astro.site ?? 'https://adatours.ru/').toString()
   : undefined;
 
 const destinationBreadcrumbs = buildDestinationBreadcrumbs(d);
@@ -230,7 +230,7 @@ const destinationSchema = {
         const relatedCountryName = relatedCountry?.data.name ?? '';
         const relatedHref = relatedCountry
           ? destinationPath(item.data)
-          : '/napravleniya/';
+          : '/places/';
 
         return (
           <DestinationBand

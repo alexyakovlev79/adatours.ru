@@ -1,7 +1,7 @@
 ---
 id: tour_source_kofe_tur_v_brazilii
 locale: ru
-slug: kofe-tur-v-brazilii
+slug: brazil-private-coffee-tour
 status: published
 title: Индивидуальный кофе-тур в Бразилию
 countries:

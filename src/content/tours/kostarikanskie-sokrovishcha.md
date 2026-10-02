@@ -1,7 +1,7 @@
 ---
 id: tour_source_kostarikanskie_sokrovishcha
 locale: ru
-slug: kostarikanskie-sokrovishcha
+slug: costa-rica-treasures
 status: published
 title: Костариканские сокровища
 countries:

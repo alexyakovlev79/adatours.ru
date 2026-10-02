@@ -1,7 +1,7 @@
 ---
 id: tour_source_aktivnaya_venesuela_akvapark_yurskogo_perioda
 locale: ru
-slug: aktivnaya-venesuela-akvapark-yurskogo-perioda
+slug: active-venezuela-jurassic-water-world
 status: published
 title: 'Активная Венесуэла: Аквапарк Юрского периода'
 countries:

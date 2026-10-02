@@ -2,7 +2,7 @@
 id: excursion_el_chalten_kayaking
 locale: ru
 title: "Каякинг в Эль-Чалтене"
-slug: kajaking-v-el-chalten
+slug: el-chalten-kayaking
 status: approved
 searchAliases:
   - "Каякинг Эль-Чалтен"

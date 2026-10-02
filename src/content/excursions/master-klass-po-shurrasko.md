@@ -2,7 +2,7 @@
 id: excursion_rio_churrasco_masterclass
 locale: ru
 title: "Мастер-класс по бразильскому шурраско"
-slug: master-klass-po-shurrasko
+slug: brazilian-churrasco-cooking-class
 status: approved
 searchAliases:
   - Мастер-класс шурраско

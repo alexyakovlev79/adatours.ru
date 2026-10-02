@@ -1,7 +1,7 @@
 ---
 id: tour_source_chili_argentina_braziliya
 locale: ru
-slug: chili-argentina-braziliya
+slug: chile-argentina-brazil
 status: published
 title: Чили-Аргентина- Бразилия
 countries:

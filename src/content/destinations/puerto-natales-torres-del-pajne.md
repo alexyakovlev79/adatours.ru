@@ -1,7 +1,7 @@
 ---
 id: "destination_chile_puerto_natales_torres_del_pajne"
 locale: ru
-slug: "puerto-natales-torres-del-pajne"
+slug: puerto-natales-torres-del-paine
 status: approved
 name: "Пуэрто Наталес & Торрес дель Пайне"
 countryId: "country_chile"

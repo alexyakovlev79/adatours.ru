@@ -2,7 +2,7 @@
 id: excursion_sao_luis_intro_city_tour
 locale: ru
 title: "Ознакомительная экскурсия по Сан-Луису"
-slug: oznakomitelnaya-ekskursiya-po-san-luisu
+slug: sao-luis-introductory-tour
 status: approved
 searchAliases:
   - Обзорная экскурсия по Сан-Луису

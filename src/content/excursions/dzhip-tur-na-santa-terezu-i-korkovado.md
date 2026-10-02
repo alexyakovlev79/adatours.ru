@@ -2,7 +2,7 @@
 id: "excursion_source_dzhip_tur_na_santa_terezu_i_korkovado"
 locale: "ru"
 title: "Джип тур на Санта-Терезу и Корковадо"
-slug: "dzhip-tur-na-santa-terezu-i-korkovado"
+slug: santa-teresa-corcovado-jeep-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

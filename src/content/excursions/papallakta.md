@@ -2,7 +2,7 @@
 id: excursion_source_papallakta
 locale: ru
 title: "Папаякта: термальные источники в Андах из Кито"
-slug: papallakta
+slug: papallacta-hot-springs-from-quito
 status: approved
 searchAliases:
   - Папаякта

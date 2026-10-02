@@ -1,7 +1,7 @@
 ---
 id: excursion_rio_zona_sul_bike_tour
 locale: ru
-slug: velotur-po-yuzhnoj-chasti-rio
+slug: rio-south-zone-bike-tour
 status: published
 title: Велотур по южной части Рио
 country: country_brazil

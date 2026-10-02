@@ -2,7 +2,7 @@
 id: country_paraguay
 locale: ru
 name: Парагвай
-slug: paragvaj
+slug: paraguay
 status: approved
 searchAliases:
   - Paraguay

@@ -2,7 +2,7 @@
 id: "excursion_source_tur_pro_karnaval"
 locale: "ru"
 title: "Тур про Карнавал"
-slug: "tur-pro-karnaval"
+slug: rio-carnival-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

@@ -2,7 +2,7 @@
 id: excursion_ushuaia_laguna_esmeralda_trekking
 locale: ru
 title: "Треккинг к лагуне Эсмеральда из Ушуайи"
-slug: trekking-k-lagune-esmeralda
+slug: laguna-esmeralda-hike-from-ushuaia
 status: approved
 searchAliases:
   - "Лагуна Эсмеральда Ушуайя"

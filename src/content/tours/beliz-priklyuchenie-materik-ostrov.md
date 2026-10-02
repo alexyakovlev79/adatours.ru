@@ -1,7 +1,7 @@
 ---
 id: tour_source_beliz_priklyuchenie_materik_ostrov
 locale: ru
-slug: beliz-priklyuchenie-materik-ostrov
+slug: belize-mainland-island-adventure
 status: published
 title: 'Белиз: Приключение «Материк / Остров»'
 countries:

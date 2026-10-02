@@ -69,6 +69,28 @@ def dump_json(path, value, *, compact=False):
     path.write_text(json.dumps(value, **options) + "\n")
 
 
+def current_identity(entity_id, entity_type, source, production, current_entries, current_catalog):
+    """Never reconstruct an existing identity from a pre-migration snapshot URL."""
+    live = production.get(entity_id)
+    data = live["data"] if live else {}
+    previous = current_entries.get(entity_id, {})
+    catalog = current_catalog.get(entity_id, {})
+    slug = data.get("slug") or previous.get("slug") or catalog.get("slug")
+    assert isinstance(slug, str) and re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug), \
+        f"An explicit current English slug is required; the snapshot URL is not a slug source: {entity_id}"
+    content_path = live["path"] if live else previous.get("contentPath") or catalog.get("contentPath")
+    if not content_path:
+        assert not previous, f"Existing source entry is missing its exact contentPath: {entity_id}"
+        content_path = f"src/content/{COLLECTIONS[entity_type]}/{slug}.md"
+    # A snapshot URL is retained only as a historical alias, never as identity.
+    url = previous.get("url") or catalog.get("url") or source.get("url")
+    legacy_urls = unique([
+        *previous.get("legacyUrls", []), *catalog.get("legacyUrls", []), *data.get("legacyUrls", []),
+        source.get("url"), previous.get("url"), catalog.get("url"),
+    ])
+    return {"slug": slug, "contentPath": content_path, "url": url, "legacyUrls": legacy_urls}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--inputs", type=Path, default=Path(__file__).resolve().parents[2] / "data")
@@ -87,6 +109,12 @@ def main():
     catalog_path = repo / "src/data/catalog/destinations.json"
     destination_catalog = json.loads(catalog_path.read_text())
     destinations = {record["id"]: record for record in destination_catalog}
+    current_entries = {record["id"]: record for path in sorted((output / "entries").glob("*.json"))
+                       for record in [json.loads(path.read_text())]}
+    current_catalog = {record["id"]: record for path in sorted((output / "catalogs").glob("*.json"))
+                       for record in json.loads(path.read_text()).get("entries", [])}
+    for entity_id, destination in destinations.items():
+        current_catalog[entity_id] = {**current_catalog.get(entity_id, {}), **destination}
     assert len(destinations) == len(destination_catalog)
     assert len(sources) == 722, "Inspect inventory additions explicitly before changing the fixed population"
     assert len(geography) == 140
@@ -159,12 +187,14 @@ def main():
         entity_type = source["entityType"]
         live = production.get(entity_id)
         data = live["data"] if live else {}
-        url = source["url"]
-        slug = data.get("slug") or url.strip("/").split("/")[-1]
-        content_path = live["path"] if live else f"src/content/{COLLECTIONS[entity_type]}/{slug}.md"
+        previous = current_entries.get(entity_id, {})
+        current = {**current_catalog.get(entity_id, {}), **previous}
+        identity = current_identity(entity_id, entity_type, source, production, current_entries, current_catalog)
+        slug, content_path = identity["slug"], identity["contentPath"]
         entry_path = f"data/source-index/entries/{entity_id}.json"
-        aliases = unique([*data.get("searchAliases", []), data.get("title"), data.get("name")])
-        aliases = [alias for alias in aliases if alias != source["name"]]
+        stored_aliases = unique([*current_catalog.get(entity_id, {}).get("aliases", []), *previous.get("aliases", [])])
+        aliases = unique([*stored_aliases, *data.get("searchAliases", []), data.get("title"), data.get("name")])
+        aliases = [alias for alias in aliases if alias != source["name"] or alias in stored_aliases]
 
         geographic_evidence = []
         if entity_type == "country":
@@ -173,8 +203,8 @@ def main():
         elif entity_type == "destination":
             item = destinations[entity_id]
             country_ids, destination_ids = [item["countryId"]], [entity_id]
-            # The fixed snapshot contains the pre-migration URL. Identity and
-            # slug remain stable; the shared route helper resolves today's URL.
+            # Current live/entry identity and the canonical catalog must agree;
+            # the fixed snapshot is not authoritative after a URL migration.
             assert item["slug"] == slug, f"Destination slug disagrees with catalog: {entity_id}"
             geography_state = "fixed"
         elif entity_type == "excursion":
@@ -191,6 +221,11 @@ def main():
             destination_ids = data.get("destinations", [])
             geographic_evidence = [{"kind": "production_frontmatter", "path": content_path}]
             geography_state = "fixed"
+        elif "countryIds" in current:
+            country_ids = current["countryIds"]
+            destination_ids = current.get("destinationIds", [])
+            geographic_evidence = current.get("geographicEvidence", [])
+            geography_state = current.get("readiness", {}).get("geography", "fixed" if country_ids else "resolve_when_creating_tour")
         else:
             country_ids = []
             for evidence in source.get("geographicEvidence", []):
@@ -243,49 +278,59 @@ def main():
             assert sum(image["role"] == "hero" for image in media_record["images"]) == 1, f"Expected one raw hero: {entity_id}"
 
         record = {
-            "id": entity_id, "type": entity_type, "name": source["name"], "url": url, "slug": slug,
-            "contentPath": content_path, "sourceUrl": source["sourceUrl"],
+            "id": entity_id, "type": entity_type, "name": source["name"], **identity,
+            "sourceUrl": source["sourceUrl"],
             "countryIds": country_ids, "destinationIds": destination_ids, "destinations": destination_details,
             "aliases": aliases, "text": text_record, "media": media_record,
             "readiness": {"sources": "ready", "text": source["readiness"], "media": media_record["status"], "geography": geography_state},
             "sheet": {**SHEET, "row": source["sheetRow"]},
         }
-        if entity_type == "tour" and data.get("routeCountries"):
-            record["routeCountryIds"] = data["routeCountries"]
-        if entity_type == "tour" and data.get("routeDestinations"):
-            record["routeDestinationIds"] = data["routeDestinations"]
-        if entity_type == "excursion" and data.get("relatedDestinations"):
-            record["relatedDestinationIds"] = data["relatedDestinations"]
+        route_fields = {"tour": {"routeCountryIds": "routeCountries", "routeDestinationIds": "routeDestinations"},
+                        "excursion": {"relatedDestinationIds": "relatedDestinations"}}
+        for entry_key, content_key in route_fields.get(entity_type, {}).items():
+            value = data.get(content_key) if live else current.get(entry_key)
+            if value:
+                record[entry_key] = value
         if entity_type == "destination":
             record["destinationType"] = destinations[entity_id]["destinationType"]
         if entity_type == "excursion":
             record["destinationName"] = destination_details[0]["name"] if destination_details else None
         if geographic_evidence:
             record["geographicEvidence"] = geographic_evidence
-        previous_path = output / "entries" / f"{entity_id}.json"
-        if previous_path.is_file():
-            previous = json.loads(previous_path.read_text())
-            if previous.get("legacyUrls"):
-                record["legacyUrls"] = previous["legacyUrls"]
         full_records.append(record)
 
     # Later user-provided places and tour-derived excursions are not part of
     # the original snapshot. An administrative replay must retain them.
-    for path in sorted((output / "entries").glob("*.json")):
-        previous = json.loads(path.read_text())
+    for previous in current_entries.values():
         if previous["id"] not in sources:
-            full_records.append(previous)
+            record = deepcopy(previous)
+            record.update(current_identity(record["id"], record["type"], {}, production, current_entries, current_catalog))
+            full_records.append(record)
+    # Use the shared route helper with today's country/catalog objects. The
+    # catalogs on disk are outputs of this run and may still hold older slugs.
+    resolver = """
+import { canonicalPath, routeCountryById, routeDestinationById } from './src/lib/routes.ts';
+let input = '';
+for await (const chunk of process.stdin) input += chunk;
+const { records, countries, destinations } = JSON.parse(input);
+for (const country of countries) routeCountryById.set(country.id, country);
+for (const destination of destinations) routeDestinationById.set(destination.id, destination);
+process.stdout.write(JSON.stringify(records.map((entry) => ({ id: entry.id, url: canonicalPath(entry) }))));
+"""
     resolved = subprocess.run(
-        ["node", str(repo / "scripts/resolve-canonical-paths.mjs")],
-        input=json.dumps(full_records, ensure_ascii=False), text=True,
+        ["node", "--input-type=module", "--eval", resolver],
+        input=json.dumps({"records": full_records, "countries": list(countries.values()), "destinations": destination_catalog}, ensure_ascii=False), text=True,
         capture_output=True, check=True, cwd=repo,
     )
     canonical_urls = {item["id"]: item["url"] for item in json.loads(resolved.stdout)}
     for record in full_records:
         old_url = record["url"]
         record["url"] = canonical_urls[record["id"]]
-        if old_url != record["url"]:
-            record["legacyUrls"] = unique([*record.get("legacyUrls", []), old_url])
+        legacy_urls = [url for url in unique([*record.get("legacyUrls", []), old_url]) if url != record["url"]]
+        if legacy_urls:
+            record["legacyUrls"] = legacy_urls
+        else:
+            record.pop("legacyUrls", None)
         dump_json(output / "entries" / f"{record['id']}.json", record)
         compact = {key: record[key] for key in ("id", "type", "name", "url", "slug", "contentPath", "countryIds", "destinationIds", "sourceUrl")}
         compact["entryPath"] = f"data/source-index/entries/{record['id']}.json"

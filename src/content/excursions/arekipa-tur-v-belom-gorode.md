@@ -2,7 +2,7 @@
 id: "excursion_source_arekipa_tur_v_belom_gorode"
 locale: "ru"
 title: "Экскурсии в Перу - \"Белый Город\" Арекипа, Сан-Лазаро и Пичу-Пичу"
-slug: "arekipa-tur-v-belom-gorode"
+slug: arequipa-white-city-tour
 status: "approved"
 searchAliases: []
 country: "country_peru"

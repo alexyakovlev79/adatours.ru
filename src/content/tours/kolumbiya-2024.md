@@ -1,7 +1,7 @@
 ---
 id: tour_source_kolumbiya_2024
 locale: ru
-slug: kolumbiya-2024
+slug: colombia-2024
 status: published
 title: Колумбия
 countries:

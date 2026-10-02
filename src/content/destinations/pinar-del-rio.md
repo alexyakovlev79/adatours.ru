@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_pinar_del_rio"
 locale: "ru"
-slug: "pinar-del-rio"
+slug: pinar-del-rio
 status: "approved"
 name: "Пинар-дель-Рио"
 countryId: "country_cuba"

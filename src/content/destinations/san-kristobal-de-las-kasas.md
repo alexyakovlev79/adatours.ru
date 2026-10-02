@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_san_kristobal_de_las_kasas"
 locale: "ru"
-slug: "san-kristobal-de-las-kasas"
+slug: san-cristobal-de-las-casas
 status: "approved"
 name: "Сан Кристобал де Лас Касас"
 countryId: "country_mexico"

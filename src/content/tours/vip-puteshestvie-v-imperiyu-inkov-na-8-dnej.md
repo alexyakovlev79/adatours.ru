@@ -1,7 +1,7 @@
 ---
 id: tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej
 locale: ru
-slug: vip-puteshestvie-v-imperiyu-inkov-na-8-dnej
+slug: peru-inca-deluxe-8-days
 status: published
 title: Люксовый индивидуальный тур в Перу «Инка Делюкс» | Ada Tours
 countries:

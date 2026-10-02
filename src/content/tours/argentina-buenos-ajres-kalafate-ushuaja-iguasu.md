@@ -2,7 +2,7 @@
 id: tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu
 locale: ru
 title: "Тур в Аргентину на 12 дней: Буэнос-Айрес, Патагония, Ушуайя и Игуасу"
-slug: argentina-buenos-ajres-kalafate-ushuaja-iguasu
+slug: argentina-buenos-aires-el-calafate-ushuaia-iguazu-12-days
 status: approved
 searchAliases:
   - "Аргентина за 12 дней"

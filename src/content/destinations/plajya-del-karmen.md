@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_plajya_del_karmen"
 locale: "ru"
-slug: "plajya-del-karmen"
+slug: playa-del-carmen
 status: "approved"
 name: "Плайя дель Кармен"
 countryId: "country_mexico"

@@ -1,5 +1,7 @@
 # Ada Tours — создание и обновление страны из готового источника
 
+Адреса объектов и правила английских slug: `docs/workflows/urls.md`. Для существующего объекта использовать закреплённые `slug`, `url` и точный `contentPath`; русское название не транслитерировать заново.
+
 Версия: 1.1 · 2026-10-02 · Репозиторий: `alexyakovlev79/adatours.ru`, ветка `main`.
 
 Применяется к выбранной Country с подготовленным источником. Общий процесс — `docs/workflows/master.md`. Для Destination действует отдельный `docs/workflows/destinations.md`. Создавать дополнительные страны без записи и точного source эта инструкция не поручает.
@@ -16,7 +18,7 @@
 
 ## 2. Данные Country
 
-Путь — exact `entry.contentPath` в `src/content/countries/`. Canonical URL — exact `entry.url` вида `/<country-slug>/`; `/strany/` остается общим каталогом, прежний `/strany/<slug>/` — только redirect alias. Использовать текущий slug, не вводить новую транслитерацию и не переименовывать content-файл из-за адреса. Схема — `src/content.config.ts`; `countryId` и `destinationType` принадлежат Destination и в Country не добавляются.
+Путь — exact `entry.contentPath` в `src/content/countries/`. Canonical URL — exact `entry.url` вида `/<country-slug>/`; `/country/` — общий каталог, прежние `/strany/` и `/strany/<slug>/` — только redirect aliases. Использовать закреплённый английский slug (Бразилия — `brazil`), не переименовывать content-файл из-за адреса. Схема — `src/content.config.ts`; `countryId` и `destinationType` принадлежат Destination и в Country не добавляются.
 
 | Поля | Источник / правило |
 |---|---|

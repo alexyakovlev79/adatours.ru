@@ -2,7 +2,7 @@
 id: "excursion_source_tortuga_bej_vysokogorya_s_cherepakhami"
 locale: "ru"
 title: "Экскурсия на Галапагосские острова в Тортуга Бэй в Эквадоре"
-slug: "tortuga-bej-vysokogorya-s-cherepakhami"
+slug: tortuga-bay-tortoise-highlands-tour
 status: "approved"
 searchAliases: []
 country: "country_ecuador"

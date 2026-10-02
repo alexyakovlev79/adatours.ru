@@ -1,7 +1,7 @@
 ---
 id: "destination_ecuador_guayakil"
 locale: ru
-slug: "guayakil"
+slug: guayaquil
 status: approved
 name: "Гуаякиль"
 countryId: "country_ecuador"

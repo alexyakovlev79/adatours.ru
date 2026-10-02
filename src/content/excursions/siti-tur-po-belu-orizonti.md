@@ -2,7 +2,7 @@
 id: "excursion_source_siti_tur_po_belu_orizonti"
 locale: "ru"
 title: "Сити-тур по Белу-Оризонти"
-slug: "siti-tur-po-belu-orizonti"
+slug: belo-horizonte-city-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

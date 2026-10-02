@@ -2,7 +2,7 @@
 id: country_belize
 locale: ru
 name: Белиз
-slug: beliz
+slug: belize
 status: approved
 searchAliases:
   - Belize

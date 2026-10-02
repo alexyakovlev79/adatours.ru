@@ -2,7 +2,7 @@
 id: destination_brazil_amazon
 locale: ru
 name: Манаус и Амазония
-slug: manaus-amazonia
+slug: manaus-amazon
 status: approved
 countryId: country_brazil
 destinationType: natural_area

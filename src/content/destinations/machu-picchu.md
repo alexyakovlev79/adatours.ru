@@ -2,7 +2,7 @@
 id: destination_peru_machu_picchu
 locale: ru
 name: Мачу-Пикчу
-slug: machu-pikchu
+slug: machu-picchu
 status: approved
 countryId: country_peru
 destinationType: region

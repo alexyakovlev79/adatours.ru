@@ -1,7 +1,7 @@
 ---
 id: tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios
 locale: ru
-slug: rio-de-janeiro-foz-do-iguacu-pantanal-buzios
+slug: brazil-rio-foz-do-iguacu-pantanal-buzios-12-days
 status: published
 title: 'Индивидуальный тур в Бразилию на 12 дней: Рио, Игуасу, Пантанал и Бузиос'
 countries:

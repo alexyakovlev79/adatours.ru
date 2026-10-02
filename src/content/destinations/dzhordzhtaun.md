@@ -1,7 +1,7 @@
 ---
 id: "destination_guyana_dzhordzhtaun"
 locale: ru
-slug: "dzhordzhtaun"
+slug: georgetown
 status: approved
 name: "Джорджтаун"
 countryId: "country_guyana"

@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_plajya_esmeralda"
 locale: "ru"
-slug: "plajya-esmeralda"
+slug: playa-esmeralda
 status: "approved"
 name: "Плайя Эсмеральда"
 countryId: "country_cuba"

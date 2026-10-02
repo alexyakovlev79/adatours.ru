@@ -2,7 +2,7 @@
 id: excursion_peru_sacred_valley_full_day
 locale: ru
 title: "Священная долина инков"
-slug: svyashchennaya-dolina-inkov
+slug: sacred-valley-of-the-incas-tour
 status: approved
 searchAliases:
   - Экскурсия в Священную долину инков

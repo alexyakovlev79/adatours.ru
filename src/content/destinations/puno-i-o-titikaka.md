@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_puno_i_o_titikaka"
 locale: ru
-slug: "puno-i-o-titikaka"
+slug: puno-and-lake-titicaca
 status: approved
 name: "Пуно и о.Титикака"
 countryId: "country_peru"

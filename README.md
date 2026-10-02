@@ -19,7 +19,7 @@ GitHub Pages preview uses:
 
 Production on the custom domain uses:
 
-- `SITE_ORIGIN=https://adatours.ru`
+- `SITE_ORIGIN=https://adatours.ru/`
 - `SITE_BASE=/`
 
 Components resolve internal links and local media through `import.meta.env.BASE_URL`, so the preview subpath does not leak into production URLs.

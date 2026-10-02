@@ -1,7 +1,7 @@
 ---
 id: "destination_colombia_kali"
 locale: "ru"
-slug: "kali"
+slug: cali
 status: "approved"
 name: "Кали"
 countryId: "country_colombia"

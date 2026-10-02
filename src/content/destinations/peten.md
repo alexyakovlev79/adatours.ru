@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_peten"
 locale: ru
-slug: "peten"
+slug: peten
 status: approved
 name: "Петен"
 countryId: "country_guatemala"

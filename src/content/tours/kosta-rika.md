@@ -1,7 +1,7 @@
 ---
 id: tour_source_kosta_rika
 locale: ru
-slug: kosta-rika
+slug: costa-rica-essentials
 status: published
 title: Базовая Коста-Рика
 countries:

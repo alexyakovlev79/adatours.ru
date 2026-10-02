@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekvador_kito_galapagosskie_ostrova
 locale: ru
-slug: ekvador-kito-galapagosskie-ostrova
+slug: ecuador-quito-galapagos-islands
 status: published
 title: 'Эквадор: Кито – Галапагосские Острова'
 countries:

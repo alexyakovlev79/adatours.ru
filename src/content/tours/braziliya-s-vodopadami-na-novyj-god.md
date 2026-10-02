@@ -1,7 +1,7 @@
 ---
 id: tour_source_braziliya_s_vodopadami_na_novyj_god
 locale: ru
-slug: braziliya-s-vodopadami-na-novyj-god
+slug: brazil-iguazu-new-year
 status: published
 title: Тур в Бразилию и на водопады Игуасу на Новый Год
 countries:

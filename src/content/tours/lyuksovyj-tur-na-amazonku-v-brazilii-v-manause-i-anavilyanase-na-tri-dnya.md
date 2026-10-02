@@ -1,7 +1,7 @@
 ---
 id: tour_source_lyuksovyj_tur_na_amazonku_v_brazilii_v_manause_i_anavilyanase_na_tri_dnya
 locale: ru
-slug: lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya
+slug: amazon-manaus-anavilhanas-vip-3-days
 status: published
 title: 'VIP тур в Амазонию 3 дня: гидросамолет, лодж Mirante do Gavião и розовые дельфины'
 countries:

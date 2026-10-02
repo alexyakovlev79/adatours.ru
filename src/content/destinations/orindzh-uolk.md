@@ -1,7 +1,7 @@
 ---
 id: destination_belize_orindzh_uolk
 locale: ru
-slug: orindzh-uolk
+slug: orange-walk
 status: approved
 name: Ориндж-Уолк
 countryId: country_belize

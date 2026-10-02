@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_kabo_san_lukas"
 locale: "ru"
-slug: "kabo-san-lukas"
+slug: cabo-san-lucas
 status: "approved"
 name: "Кабо-Сан-Лукас"
 countryId: "country_mexico"

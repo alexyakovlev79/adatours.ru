@@ -1,7 +1,7 @@
 ---
 id: tour_source_vsya_meksika
 locale: ru
-slug: vsya-meksika
+slug: complete-mexico
 status: published
 title: Вся Мексика
 countries:

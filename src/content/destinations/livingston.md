@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_livingston"
 locale: ru
-slug: "livingston"
+slug: livingston
 status: approved
 name: "Ливингстон"
 countryId: "country_guatemala"

@@ -1,7 +1,7 @@
 ---
 id: excursion_mendoza_city_tour
 locale: ru
-slug: obzornaya-ekskursiya-po-mendose
+slug: mendoza-city-tour
 status: published
 title: Обзорная экскурсия по Мендосе
 country: country_argentina

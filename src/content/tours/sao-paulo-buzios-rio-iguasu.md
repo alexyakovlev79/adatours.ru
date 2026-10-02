@@ -1,7 +1,7 @@
 ---
 id: tour_source_sao_paulo_buzios_rio_iguasu
 locale: ru
-slug: sao-paulo-buzios-rio-iguasu
+slug: brazil-sao-paulo-iguazu-rio-buzios
 status: published
 title: 'Бразилия: Сан Пауло –Игуасу- Рио-де-Жанейро – Бузиос'
 countries:

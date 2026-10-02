@@ -1,7 +1,7 @@
 ---
 id: "destination_chile_valparaiso_i_vinya_del_mar"
 locale: ru
-slug: "valparaiso-i-vinya-del-mar"
+slug: valparaiso-vina-del-mar
 status: approved
 name: "Вальпараисо и Винья дель Мар"
 countryId: "country_chile"

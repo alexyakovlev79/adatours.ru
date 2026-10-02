@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_venesuele
 locale: ru
-slug: luchshee-v-venesuele
+slug: best-of-venezuela-margarita-island-12-days
 status: published
 title: Тур в Венесуэлу на 12 дней с пляжным отдыхом на о.Маргарита
 countries:

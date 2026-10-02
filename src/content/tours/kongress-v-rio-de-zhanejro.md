@@ -1,7 +1,7 @@
 ---
 id: tour_source_kongress_v_rio_de_zhanejro
 locale: ru
-slug: kongress-v-rio-de-zhanejro
+slug: rio-de-janeiro-corporate-tour-5-days
 status: published
 title: Корпоративный тур в Рио-де-Жанейро на 5 дней
 countries:

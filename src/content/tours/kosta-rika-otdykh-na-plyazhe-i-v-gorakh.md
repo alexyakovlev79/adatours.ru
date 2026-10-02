@@ -1,7 +1,7 @@
 ---
 id: tour_source_kosta_rika_otdykh_na_plyazhe_i_v_gorakh
 locale: ru
-slug: kosta-rika-otdykh-na-plyazhe-i-v-gorakh
+slug: costa-rica-beaches-mountains
 status: published
 title: 'Коста Рика: Отдых на пляже и в горах'
 countries:

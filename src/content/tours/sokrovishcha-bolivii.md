@@ -1,7 +1,7 @@
 ---
 id: tour_source_sokrovishcha_bolivii
 locale: ru
-slug: sokrovishcha-bolivii
+slug: bolivia-treasures-12-days
 status: published
 title: Тур в Боливию на 12 дней (все экскурсии с гидами)
 countries:

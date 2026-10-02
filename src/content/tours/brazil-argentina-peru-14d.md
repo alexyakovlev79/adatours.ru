@@ -2,7 +2,7 @@
 id: tour_brazil_argentina_peru_14d
 locale: ru
 title: Бразилия, Аргентина и Перу за 14 дней
-slug: braziliya-argentina-peru-14-dnej
+slug: brazil-argentina-peru-14-days
 status: approved
 countries:
   - country_brazil

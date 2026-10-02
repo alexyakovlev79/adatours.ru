@@ -2,7 +2,7 @@
 id: destination_argentina_mendoza
 locale: ru
 name: Мендоса
-slug: mendosa
+slug: mendoza
 status: approved
 countryId: country_argentina
 destinationType: region

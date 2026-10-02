@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_puerto_valyarta"
 locale: "ru"
-slug: "puerto-valyarta"
+slug: puerto-vallarta
 status: "approved"
 name: "Пуэрто Вальярта"
 countryId: "country_mexico"

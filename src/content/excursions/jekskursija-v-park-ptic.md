@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_v_park_ptic"
 locale: "ru"
 title: "Экскурсия в Парк птиц"
-slug: "jekskursija-v-park-ptic"
+slug: parque-das-aves-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

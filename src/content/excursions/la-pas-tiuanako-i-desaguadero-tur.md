@@ -2,7 +2,7 @@
 id: excursion_source_la_pas_tiuanako_i_desaguadero_tur
 locale: ru
 title: "Экскурсия в Боливии: цивилизация Тиуанако на 8 часов"
-slug: la-pas-tiuanako-i-desaguadero-tur
+slug: tiwanaku-desaguadero-from-la-paz
 status: approved
 searchAliases: []
 country: country_bolivia

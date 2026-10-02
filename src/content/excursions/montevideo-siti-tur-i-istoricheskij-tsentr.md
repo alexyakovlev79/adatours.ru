@@ -2,7 +2,7 @@
 id: excursion_source_montevideo_siti_tur_i_istoricheskij_tsentr
 locale: ru
 title: "Монтевидео: сити-тур и исторический центр"
-slug: montevideo-siti-tur-i-istoricheskij-tsentr
+slug: montevideo-city-old-town-tour
 status: approved
 searchAliases:
   - Монтевидео сити-тур

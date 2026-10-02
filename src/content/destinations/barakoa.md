@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_barakoa"
 locale: "ru"
-slug: "barakoa"
+slug: baracoa
 status: "approved"
 name: "Баракоа"
 countryId: "country_cuba"

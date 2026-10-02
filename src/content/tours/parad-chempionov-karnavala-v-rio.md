@@ -1,7 +1,7 @@
 ---
 id: tour_source_parad_chempionov_karnavala_v_rio
 locale: ru
-slug: parad-chempionov-karnavala-v-rio
+slug: brazil-rio-carnival-champions-parade
 status: published
 title: Тур в Бразилию на парад чемпионов карнавала в Рио
 countries:

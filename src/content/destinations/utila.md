@@ -1,7 +1,7 @@
 ---
 id: "destination_honduras_utila"
 locale: ru
-slug: "utila"
+slug: utila
 status: approved
 name: "Утила"
 countryId: "country_honduras"

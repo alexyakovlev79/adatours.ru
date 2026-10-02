@@ -1,7 +1,7 @@
 ---
 id: "destination_colombia_kartahena"
 locale: "ru"
-slug: "kartahena"
+slug: cartagena
 status: "approved"
 name: "Картахена"
 countryId: "country_colombia"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_braziliya_s_detmi
 locale: ru
-slug: braziliya-s-detmi
+slug: brazil-with-kids
 status: published
 title: Бразилия с детьми
 countries:

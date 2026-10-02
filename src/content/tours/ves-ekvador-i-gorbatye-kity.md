@@ -1,7 +1,7 @@
 ---
 id: tour_source_ves_ekvador_i_gorbatye_kity
 locale: ru
-slug: ves-ekvador-i-gorbatye-kity
+slug: ecuador-galapagos-humpback-whales
 status: published
 title: Эквадор + Галапагосские Острова и горбатые киты
 countries:

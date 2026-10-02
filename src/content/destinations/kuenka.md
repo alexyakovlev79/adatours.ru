@@ -2,7 +2,7 @@
 id: destination_ecuador_kuenka
 locale: ru
 name: Куэнка
-slug: kuenka
+slug: cuenca
 status: approved
 searchAliases:
   - Cuenca

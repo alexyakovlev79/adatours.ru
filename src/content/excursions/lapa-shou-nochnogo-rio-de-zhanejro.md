@@ -2,7 +2,7 @@
 id: "excursion_source_lapa_shou_nochnogo_rio_de_zhanejro"
 locale: "ru"
 title: "Лапа — шоу ночного Рио-де-Жанейро"
-slug: "lapa-shou-nochnogo-rio-de-zhanejro"
+slug: lapa-nightlife-tour-6-hours
 status: "approved"
 searchAliases: []
 country: "country_brazil"

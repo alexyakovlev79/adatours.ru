@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_kahamarka"
 locale: "ru"
-slug: "kahamarka"
+slug: cajamarca
 status: "approved"
 name: "Кахамарка"
 countryId: "country_peru"

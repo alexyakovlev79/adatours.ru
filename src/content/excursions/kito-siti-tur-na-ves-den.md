@@ -2,7 +2,7 @@
 id: excursion_source_kito_siti_tur_na_ves_den
 locale: ru
 title: "Кито за 8 часов: исторический центр, линия экватора и музей Интиньян"
-slug: kito-siti-tur-na-ves-den
+slug: quito-city-equator-tour-8-hours
 status: approved
 searchAliases:
   - Кито сити-тур

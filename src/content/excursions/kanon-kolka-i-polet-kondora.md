@@ -2,7 +2,7 @@
 id: excursion_source_kanon_kolka_i_polet_kondora
 locale: ru
 title: "Каньон Колка и полет кондора из Арекипы"
-slug: kanon-kolka-i-polet-kondora
+slug: colca-canyon-condor-tour-from-arequipa
 status: approved
 searchAliases:
   - Каньон Колка

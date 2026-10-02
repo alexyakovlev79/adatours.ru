@@ -2,7 +2,7 @@
 id: tour_source_argentina_buenos_ajres_kalafate_iguasu
 locale: ru
 title: "Тур в Аргентину на 10 дней: Буэнос-Айрес, Патагония и Игуасу"
-slug: argentina-buenos-ajres-kalafate-iguasu
+slug: argentina-buenos-aires-el-calafate-iguazu-10-days
 status: approved
 searchAliases:
   - "Аргентина за 10 дней"

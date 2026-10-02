@@ -1,7 +1,7 @@
 ---
 id: tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu
 locale: ru
-slug: special-noe-predlozhenie-rio-and-vodopa-dy-iguasu
+slug: brazil-rio-iguazu-8-days
 status: published
 title: Тур в Бразилию в Рио-де-Жанейро и Водопады Игуасу на 8 дней
 countries:

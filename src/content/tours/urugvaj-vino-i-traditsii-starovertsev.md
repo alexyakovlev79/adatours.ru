@@ -1,7 +1,7 @@
 ---
 id: tour_source_urugvaj_vino_i_traditsii_starovertsev
 locale: ru
-slug: urugvaj-vino-i-traditsii-starovertsev
+slug: uruguay-wine-old-believer-traditions
 status: published
 title: 'Уругвай: Вино и Традиции Староверцев -тур от туроператора Ада Турс'
 countries:

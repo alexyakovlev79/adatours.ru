@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_argentinu_i_braziliyu_ot_lda_do_solntsa
 locale: ru
-slug: tur-v-argentinu-i-braziliyu-ot-lda-do-solntsa
+slug: brazil-argentina-iguazu-patagonia-glaciers
 status: published
 title: 'Тур в Бразилию и Аргентину: Водопады Игуасу и ледники Патагонии'
 countries:

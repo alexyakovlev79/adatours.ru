@@ -1,7 +1,7 @@
 ---
 id: "destination_panama_panama_siti"
 locale: "ru"
-slug: "panama-siti"
+slug: panama-city
 status: "approved"
 name: "Панама-Сити"
 countryId: "country_panama"

@@ -2,7 +2,7 @@
 id: tour_source_kruiz_mys_gorn_i_antarktida
 locale: ru
 title: "Круиз через мыс Горн и пролив Дрейка в Антарктиду"
-slug: kruiz-mys-gorn-i-antarktida
+slug: cape-horn-antarctica-cruise
 status: approved
 searchAliases:
   - "Круиз Мыс Горн и Антарктида"

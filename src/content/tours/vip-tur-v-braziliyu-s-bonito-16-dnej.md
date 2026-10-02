@@ -1,7 +1,7 @@
 ---
 id: tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej
 locale: ru
-slug: vip-tur-v-braziliyu-s-bonito-16-dnej
+slug: brazil-new-year-vip-bonito-rio-iguazu-16-days
 status: published
 title: 'Новогодний VIP тур в Бразилию с Бонито: Рио, Игуасу | 16 дней'
 countries:

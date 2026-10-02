@@ -2,7 +2,7 @@
 id: tour_source_kongress_v_argentine
 locale: ru
 title: "Корпоративный тур в Аргентину: Буэнос-Айрес и Тигре за 5 дней"
-slug: kongress-v-argentine
+slug: argentina-buenos-aires-tigre-corporate-tour
 status: approved
 searchAliases:
   - "Корпоративный тур Аргентина"

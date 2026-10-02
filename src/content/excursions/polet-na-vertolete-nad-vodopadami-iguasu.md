@@ -2,7 +2,7 @@
 id: excursion_iguazu_helicopter_falls
 locale: ru
 title: "Полет на вертолете над водопадами Игуасу"
-slug: polet-na-vertolete-nad-vodopadami-iguasu
+slug: iguazu-falls-helicopter-flight
 status: approved
 searchAliases:
   - "Вертолет над Игуасу"

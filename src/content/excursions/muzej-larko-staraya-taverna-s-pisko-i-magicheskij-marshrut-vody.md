@@ -2,7 +2,7 @@
 id: excursion_source_muzej_larko_staraya_taverna_s_pisko_i_magicheskij_marshrut_vody
 locale: ru
 title: "Музей Ларко и Волшебный круговорот воды в Лиме"
-slug: muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody
+slug: larco-museum-and-magic-water-circuit
 status: approved
 searchAliases:
   - Музей Ларко

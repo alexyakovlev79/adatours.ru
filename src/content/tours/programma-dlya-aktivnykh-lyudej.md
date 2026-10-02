@@ -2,7 +2,7 @@
 id: tour_source_programma_dlya_aktivnykh_lyudej
 locale: ru
 title: "Аргентина, Патагония, Сантьяго и остров Пасхи за 12 дней"
-slug: programma-dlya-aktivnykh-lyudej
+slug: active-adventure-tour
 status: approved
 searchAliases:
   - "Программа для Активных людей"

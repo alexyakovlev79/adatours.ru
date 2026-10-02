@@ -1,7 +1,7 @@
 ---
 id: tour_source_pybalka_v_kosta_rike
 locale: ru
-slug: pybalka-v-kosta-rike
+slug: costa-rica-fishing
 status: published
 title: Pыбалка в Коста-Рике
 countries:

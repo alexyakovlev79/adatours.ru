@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_brazilii_argentiny_i_chili
 locale: ru
-slug: luchshee-brazilii-argentiny-i-chili
+slug: best-of-brazil-argentina-chile
 status: published
 title: Лучшее Бразилии, Аргентины и Чили
 countries:

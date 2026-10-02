@@ -1,7 +1,7 @@
 ---
 id: "destination_colombia_santa_marta"
 locale: "ru"
-slug: "santa-marta"
+slug: santa-marta
 status: "approved"
 name: "Санта-Марта"
 countryId: "country_colombia"

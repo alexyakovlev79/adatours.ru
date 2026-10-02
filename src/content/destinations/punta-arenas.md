@@ -1,7 +1,7 @@
 ---
 id: "destination_chile_punta_arenas"
 locale: ru
-slug: "punta-arenas"
+slug: punta-arenas
 status: approved
 name: "Пунта Аренас"
 countryId: "country_chile"

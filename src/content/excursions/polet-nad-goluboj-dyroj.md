@@ -1,7 +1,7 @@
 ---
 id: excursion_belize_blue_hole_scenic_flight
 locale: ru
-slug: polet-nad-goluboj-dyroj
+slug: great-blue-hole-scenic-flight
 status: published
 title: Полет над Голубой дырой в Белизе
 country: country_belize

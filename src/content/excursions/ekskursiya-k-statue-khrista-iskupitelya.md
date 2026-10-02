@@ -2,7 +2,7 @@
 id: excursion_source_ekskursiya_k_statue_khrista_iskupitelya
 locale: ru
 title: "Экскурсия к статуе Христа-Искупителя в Рио-де-Жанейро"
-slug: ekskursiya-k-statue-khrista-iskupitelya
+slug: christ-the-redeemer-tour
 status: approved
 searchAliases:
   - Христос-Искупитель

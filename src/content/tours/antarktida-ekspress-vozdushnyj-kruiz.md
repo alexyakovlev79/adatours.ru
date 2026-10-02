@@ -2,7 +2,7 @@
 id: tour_source_antarktida_ekspress_vozdushnyj_kruiz
 locale: ru
 title: "Антарктида Экспресс: Ушуайя, мыс Горн и Антарктида за 6 дней"
-slug: antarktida-ekspress-vozdushnyj-kruiz
+slug: antarctica-patagonia-express-air-cruise-6-days
 status: approved
 searchAliases:
   - "Тур в Антарктиду и Патагонию Экспресс"

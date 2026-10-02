@@ -2,7 +2,7 @@
 id: "excursion_source_shakhty_vandy"
 locale: "ru"
 title: "Экскурсия в Игуасу в Аргентине – Шахты Ванды"
-slug: "shakhty-vandy"
+slug: wanda-mines-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

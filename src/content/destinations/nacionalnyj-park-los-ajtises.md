@@ -1,7 +1,7 @@
 ---
 id: "destination_dominican_republic_nacionalnyj_park_los_ajtises"
 locale: ru
-slug: "nacionalnyj-park-los-ajtises"
+slug: los-haitises-national-park
 status: approved
 name: "Национальный парк Лос-Айтисес"
 countryId: "country_dominican_republic"

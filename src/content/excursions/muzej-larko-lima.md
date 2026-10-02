@@ -2,7 +2,7 @@
 id: excursion_lima_larco_museum_visit
 locale: ru
 title: "Музей Ларко в Лиме"
-slug: muzej-larko-lima
+slug: larco-museum-lima-tour
 status: approved
 searchAliases:
   - Larco Herrera

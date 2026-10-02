@@ -1,7 +1,7 @@
 ---
 id: excursion_venezuela_kavak_angel_helicopter
 locale: ru
-slug: venezuela-kavak-angel-helicopter
+slug: kavac-canyon-angel-falls-helicopter-tour
 status: published
 title: Каньон Кавак и Сальто-Анхель на вертолете
 country: country_venezuela

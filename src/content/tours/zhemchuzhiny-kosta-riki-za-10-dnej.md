@@ -1,7 +1,7 @@
 ---
 id: tour_source_zhemchuzhiny_kosta_riki_za_10_dnej
 locale: ru
-slug: zhemchuzhiny-kosta-riki-za-10-dnej
+slug: costa-rica-pearls-10-days
 status: published
 title: Жемчужины Коста-Рики
 countries:

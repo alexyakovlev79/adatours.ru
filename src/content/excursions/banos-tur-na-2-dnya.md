@@ -2,7 +2,7 @@
 id: "excursion_source_banos_tur_na_2_dnya"
 locale: "ru"
 title: "Экскурсии в Эквадоре из Кито: Баньос - город вулканов и водопадов"
-slug: "banos-tur-na-2-dnya"
+slug: banos-tour-from-quito-2-days
 status: "approved"
 searchAliases: []
 country: "country_ecuador"

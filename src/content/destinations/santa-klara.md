@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_santa_klara"
 locale: "ru"
-slug: "santa-klara"
+slug: santa-clara
 status: "approved"
 name: "Санта Клара"
 countryId: "country_cuba"

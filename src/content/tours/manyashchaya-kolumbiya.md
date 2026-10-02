@@ -1,7 +1,7 @@
 ---
 id: tour_source_manyashchaya_kolumbiya
 locale: ru
-slug: manyashchaya-kolumbiya
+slug: colombia-bogota-cartagena-medellin-zipaquira-guatape
 status: published
 title: Тур в Колумбию – Богота, Картахена, Медельин, Сипакира и Гуатапе
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_ves_ekvador_i_galapagosskie_ostrova
 locale: ru
-slug: ves-ekvador-i-galapagosskie-ostrova
+slug: complete-ecuador-galapagos-islands
 status: published
 title: Весь Эквадор и Галапагосские острова
 countries:

@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_plajya_tamarindo"
 locale: "ru"
-slug: "plajya-tamarindo"
+slug: playa-tamarindo
 status: "approved"
 name: "Плайя Тамариндо"
 countryId: "country_costa_rica"

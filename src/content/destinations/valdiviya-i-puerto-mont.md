@@ -1,7 +1,7 @@
 ---
 id: "destination_chile_valdiviya_i_puerto_mont"
 locale: ru
-slug: "valdiviya-i-puerto-mont"
+slug: valdivia-puerto-montt
 status: approved
 name: "Вальдивия и Пуэрто Монт"
 countryId: "country_chile"

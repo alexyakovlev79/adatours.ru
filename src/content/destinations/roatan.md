@@ -1,7 +1,7 @@
 ---
 id: "destination_honduras_roatan"
 locale: ru
-slug: "roatan"
+slug: roatan
 status: approved
 name: "Роатан"
 countryId: "country_honduras"

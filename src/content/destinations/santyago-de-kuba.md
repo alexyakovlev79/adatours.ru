@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_santyago_de_kuba"
 locale: "ru"
-slug: "santyago-de-kuba"
+slug: santiago-de-cuba
 status: "approved"
 name: "Сантьяго де Куба"
 countryId: "country_cuba"

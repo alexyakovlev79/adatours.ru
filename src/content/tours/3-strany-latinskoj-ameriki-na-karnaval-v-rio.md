@@ -1,7 +1,7 @@
 ---
 id: tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio
 locale: ru
-slug: 3-strany-latinskoj-ameriki-na-karnaval-v-rio
+slug: latin-america-3-countries-rio-carnival
 status: published
 title: Тур в Латинскую Америку | 3 страны и Карнавал в Бразилии
 countries:

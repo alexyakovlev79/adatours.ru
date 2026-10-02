@@ -2,7 +2,7 @@
 id: excursion_source_tur_na_ostrov_florena
 locale: ru
 title: "Остров Флорена на Галапагосах: экскурсия с Санта-Крус"
-slug: tur-na-ostrov-florena
+slug: floreana-island-tour-from-santa-cruz
 status: approved
 searchAliases:
   - Остров Флорена

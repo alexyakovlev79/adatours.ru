@@ -1,7 +1,7 @@
 ---
 id: excursion_buenos_aires_gastronomic_tour
 locale: ru
-slug: gastronomicheskij-tur-po-buenos-ajresu
+slug: buenos-aires-food-tour
 status: published
 title: Гастрономический тур по Буэнос-Айресу
 country: country_argentina

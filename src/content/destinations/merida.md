@@ -1,7 +1,7 @@
 ---
 id: "destination_venezuela_merida"
 locale: ru
-slug: "merida"
+slug: merida
 status: approved
 name: "Мерида"
 countryId: "country_venezuela"

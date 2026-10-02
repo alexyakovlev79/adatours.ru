@@ -1,7 +1,7 @@
 ---
 id: "destination_suriname_paramaribo"
 locale: ru
-slug: "paramaribo"
+slug: paramaribo
 status: approved
 name: "Парамарибо"
 countryId: "country_suriname"

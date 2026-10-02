@@ -2,7 +2,7 @@
 id: country_french_guiana
 locale: ru
 name: Французская Гвиана
-slug: francuzskaya-gviana
+slug: french-guiana
 status: approved
 searchAliases:
   - French Guiana

@@ -1,7 +1,7 @@
 ---
 id: tour_source_braziliya_i_peru_na_novyj_god
 locale: ru
-slug: braziliya-i-peru-na-novyj-god
+slug: brazil-peru-new-year
 status: published
 title: Тур в Бразилию и Перу на празднование Нового Года
 countries:

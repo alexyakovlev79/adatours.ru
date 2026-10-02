@@ -2,7 +2,7 @@
 id: "excursion_source_colombia_santa_marta_parque_tayrona_playa_crystal"
 locale: "ru"
 title: "Санта Марта - Парк Тайрона и Плайя Кристал"
-slug: "colombia-santa-marta-parque-tayrona-playa-crystal"
+slug: tayrona-national-park-playa-cristal
 status: "approved"
 searchAliases: []
 country: "country_colombia"

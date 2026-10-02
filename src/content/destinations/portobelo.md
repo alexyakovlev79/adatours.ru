@@ -1,7 +1,7 @@
 ---
 id: "destination_panama_portobelo"
 locale: "ru"
-slug: "portobelo"
+slug: portobelo
 status: "approved"
 name: "Портобело"
 countryId: "country_panama"

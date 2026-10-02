@@ -1,7 +1,7 @@
 ---
 id: tour_source_podlinnaya_braziliya
 locale: ru
-slug: podlinnaya-braziliya
+slug: authentic-brazil-rio-manaus-salvador-foz-do-iguacu
 status: published
 title: 'Тур в Бразилию: Рио-де-Жанейро, Манаус, Сальвадор, Фос-ду-Игуасу'
 countries:

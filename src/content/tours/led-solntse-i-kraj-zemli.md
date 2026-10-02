@@ -1,7 +1,7 @@
 ---
 id: tour_source_led_solntse_i_kraj_zemli
 locale: ru
-slug: led-solntse-i-kraj-zemli
+slug: argentina-brazil-private-tour-12-days
 status: published
 title: Индивидуальный тур в Аргентину и Бразилию на 12 дней
 countries:

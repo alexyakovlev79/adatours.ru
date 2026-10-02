@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_koban"
 locale: ru
-slug: "koban"
+slug: coban
 status: approved
 name: "Кобан"
 countryId: "country_guatemala"

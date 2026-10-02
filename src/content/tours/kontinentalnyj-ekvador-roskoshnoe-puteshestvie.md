@@ -1,7 +1,7 @@
 ---
 id: tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie
 locale: ru
-slug: kontinentalnyj-ekvador-roskoshnoe-puteshestvie
+slug: luxury-mainland-ecuador-9-days
 status: published
 title: 'Тур в Эквадор (континентальный) на 9 дней: лучшее в стране'
 countries:

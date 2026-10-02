@@ -2,7 +2,7 @@
 id: "excursion_source_peujja_i_vodopady_petroje"
 locale: "ru"
 title: "Пеуйла и Водопады Петроэ"
-slug: "peujja-i-vodopady-petroje"
+slug: peulla-petrohue-waterfalls-tour
 status: "approved"
 searchAliases: []
 country: "country_chile"

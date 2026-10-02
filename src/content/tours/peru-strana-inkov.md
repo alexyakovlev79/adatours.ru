@@ -1,7 +1,7 @@
 ---
 id: tour_source_peru_strana_inkov
 locale: ru
-slug: peru-strana-inkov
+slug: peru-lima-cusco-machu-picchu-6-days
 status: published
 title: 'Тур в Перу на 6 дней: Лима, Куско и Мачу Пикчу'
 countries:

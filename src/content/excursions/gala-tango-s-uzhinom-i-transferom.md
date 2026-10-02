@@ -2,7 +2,7 @@
 id: excursion_buenos_aires_gala_tango_dinner_transfer
 locale: ru
 title: "Gala Tango с ужином и трансфером"
-slug: gala-tango-s-uzhinom-i-transferom
+slug: gala-tango-dinner-transfer
 status: approved
 searchAliases:
   - "Gala Tango Буэнос-Айрес"

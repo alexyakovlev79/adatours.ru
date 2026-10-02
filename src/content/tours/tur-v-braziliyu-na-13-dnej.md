@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_braziliyu_na_13_dnej
 locale: ru
-slug: tur-v-braziliyu-na-13-dnej
+slug: brazil-iguazu-buzios-13-days
 status: published
 title: Тур в Бразилию на водопады Игуасу с пляжным отдыхом в Бузиос
 countries:

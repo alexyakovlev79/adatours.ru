@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_gvatemala_siti"
 locale: ru
-slug: "gvatemala-siti"
+slug: guatemala-city
 status: approved
 name: "Гватемала-Сити"
 countryId: "country_guatemala"

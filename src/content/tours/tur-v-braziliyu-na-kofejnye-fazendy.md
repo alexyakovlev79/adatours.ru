@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_braziliyu_na_kofejnye_fazendy
 locale: ru
-slug: tur-v-braziliyu-na-kofejnye-fazendy
+slug: brazil-coffee-plantations-iguazu-8-days
 status: published
 title: Тур в Бразилию на кофейные плантации и водопады Игуасу, 8 дней
 countries:

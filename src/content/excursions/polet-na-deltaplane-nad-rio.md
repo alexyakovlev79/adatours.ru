@@ -2,7 +2,7 @@
 id: excursion_source_polet_na_deltaplane_nad_rio
 locale: ru
 title: "Полет на дельтаплане над Рио-де-Жанейро"
-slug: polet-na-deltaplane-nad-rio
+slug: rio-de-janeiro-hang-gliding
 status: approved
 searchAliases:
   - Полет на дельтаплане над Рио

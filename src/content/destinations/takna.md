@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_takna"
 locale: ru
-slug: "takna"
+slug: tacna
 status: approved
 name: "Такна"
 countryId: "country_peru"

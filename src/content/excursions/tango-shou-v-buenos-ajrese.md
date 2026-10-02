@@ -2,7 +2,7 @@
 id: excursion_source_tango_shou_v_buenos_ajrese
 locale: ru
 title: "Танго-шоу в Буэнос-Айресе"
-slug: tango-shou-v-buenos-ajrese
+slug: buenos-aires-tango-show-4-hours
 status: approved
 searchAliases:
   - Танго-шоу с ужином в Буэнос-Айресе

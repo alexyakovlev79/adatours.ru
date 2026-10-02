@@ -2,7 +2,7 @@
 id: excursion_ushuaia_penguin_walk
 locale: ru
 title: "Прогулка с пингвинами в Ушуайе"
-slug: progulka-s-pingvinami-v-ushuaie
+slug: ushuaia-walking-with-penguins
 status: approved
 searchAliases:
   - "Пингвины Ушуайя"

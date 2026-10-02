@@ -2,7 +2,7 @@
 id: tour_source_vsya_argentina
 locale: ru
 title: "Тур в Аргентину и Патагонию на 26 дней"
-slug: vsya-argentina
+slug: best-of-argentina-patagonia-26-days
 status: approved
 searchAliases:
   - "Вся Аргентина"

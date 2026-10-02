@@ -1,7 +1,7 @@
 ---
 id: tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej
 locale: ru
-slug: lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej
+slug: peru-ecuador-galapagos-luxury-18-days
 status: published
 title: 'VIP тур в Перу и Эквадор 18 дней: Мачу-Пикчу, Амазонка и Галапагосы'
 countries:

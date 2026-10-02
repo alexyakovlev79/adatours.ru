@@ -1,7 +1,7 @@
 ---
 id: tour_source_solntse_tango_vino_i_atakama
 locale: ru
-slug: solntse-tango-vino-i-atakama
+slug: sun-tango-wine-atacama
 status: published
 title: Солнце, Танго, Вино и Атакама
 countries:

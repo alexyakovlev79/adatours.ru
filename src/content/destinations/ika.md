@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_ika"
 locale: "ru"
-slug: "ika"
+slug: ica
 status: "approved"
 name: "Ика"
 countryId: "country_peru"

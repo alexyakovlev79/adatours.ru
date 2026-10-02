@@ -1,7 +1,7 @@
 ---
 id: "destination_nicaragua_matagalpa"
 locale: "ru"
-slug: "matagalpa"
+slug: matagalpa
 status: "approved"
 name: "Матагальпа"
 countryId: "country_nicaragua"

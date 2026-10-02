@@ -2,7 +2,7 @@
 id: excursion_source_medelin_siti_tur_i_eskobar
 locale: ru
 title: "Медельин: Ботеро, Побладо и история Пабло Эскобара"
-slug: medelin-siti-tur-i-eskobar
+slug: medellin-city-pablo-escobar-tour
 status: approved
 searchAliases:
   - Медельин сити-тур

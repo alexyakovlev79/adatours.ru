@@ -1,7 +1,7 @@
 ---
 id: excursion_buenos_aires_tango_show_optional_dinner
 locale: ru
-slug: tango-shou-s-vozmozhnostyu-zakazat-uzhin
+slug: buenos-aires-tango-show-optional-dinner
 status: published
 title: Танго-шоу в Буэнос-Айресе с возможностью заказать ужин
 country: country_argentina

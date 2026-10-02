@@ -1,7 +1,7 @@
 ---
 id: tour_source_solntse_tango_i_vino
 locale: ru
-slug: solntse-tango-i-vino
+slug: brazil-argentina-chile-iguazu-12-days
 status: published
 title: Тур в Бразилию, Аргентину и Чили с Водопадами Игуасу на 12 дней
 countries:

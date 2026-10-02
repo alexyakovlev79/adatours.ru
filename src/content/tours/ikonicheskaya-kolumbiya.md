@@ -1,7 +1,7 @@
 ---
 id: tour_source_ikonicheskaya_kolumbiya
 locale: ru
-slug: ikonicheskaya-kolumbiya
+slug: iconic-colombia-14-days
 status: published
 title: Тур в Колумбию на 14 дней - города, культура, горы и Карибы
 countries:

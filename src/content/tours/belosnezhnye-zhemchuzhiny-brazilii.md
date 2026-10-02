@@ -1,7 +1,7 @@
 ---
 id: tour_source_belosnezhnye_zhemchuzhiny_brazilii
 locale: ru
-slug: belosnezhnye-zhemchuzhiny-brazilii
+slug: brazil-beach-tour-10-days
 status: published
 title: Пляжный тур в Бразилию на 10 дней
 countries:

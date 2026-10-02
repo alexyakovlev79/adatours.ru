@@ -1,7 +1,7 @@
 ---
 id: "destination_uruguay_montevideo"
 locale: ru
-slug: "montevideo"
+slug: montevideo
 status: approved
 name: "Монтевидео"
 countryId: "country_uruguay"

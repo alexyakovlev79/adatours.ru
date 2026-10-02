@@ -2,7 +2,7 @@
 id: country_dominican_republic
 locale: ru
 name: Доминикана
-slug: dominikana
+slug: dominican-republic
 status: approved
 searchAliases:
   - Доминиканская Республика

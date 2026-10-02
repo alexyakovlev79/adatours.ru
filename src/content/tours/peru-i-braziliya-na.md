@@ -1,7 +1,7 @@
 ---
 id: tour_source_peru_i_braziliya_na
 locale: ru
-slug: peru-i-braziliya-na
+slug: peru-brazil
 status: published
 title: Перу и Бразилия
 countries:

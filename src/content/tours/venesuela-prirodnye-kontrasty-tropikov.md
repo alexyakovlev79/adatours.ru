@@ -1,7 +1,7 @@
 ---
 id: tour_source_venesuela_prirodnye_kontrasty_tropikov
 locale: ru
-slug: venesuela-prirodnye-kontrasty-tropikov
+slug: venezuela-tropical-contrasts-beaches-12-days
 status: published
 title: Тур в Венесуэлу на 12 дней по лучшим местам страны и пляжным отдыхом
 countries:

@@ -1,7 +1,7 @@
 ---
 id: destination_bolivia_santa_krus
 locale: ru
-slug: santa-krus
+slug: santa-cruz
 status: approved
 name: Санта Крус
 countryId: country_bolivia

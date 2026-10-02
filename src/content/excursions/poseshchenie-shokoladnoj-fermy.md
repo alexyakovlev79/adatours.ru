@@ -2,7 +2,7 @@
 id: excursion_source_poseshchenie_shokoladnoj_fermy
 locale: ru
 title: "Перейра: шоколадная ферма и дегустация шоколада"
-slug: poseshchenie-shokoladnoj-fermy
+slug: pereira-chocolate-farm-tour
 status: approved
 searchAliases:
   - Шоколадная ферма Перейра

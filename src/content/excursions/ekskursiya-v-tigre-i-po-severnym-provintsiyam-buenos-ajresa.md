@@ -2,7 +2,7 @@
 id: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
 locale: ru
 title: "Тигре и Северная зона"
-slug: ekskursiya-v-tigre-i-po-severnym-provintsiyam-buenos-ajresa
+slug: tigre-northern-buenos-aires-tour
 status: approved
 searchAliases:
   - Экскурсия в Тигре

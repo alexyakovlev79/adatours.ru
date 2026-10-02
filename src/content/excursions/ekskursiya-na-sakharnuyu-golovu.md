@@ -2,7 +2,7 @@
 id: excursion_source_ekskursiya_na_sakharnuyu_golovu
 locale: ru
 title: "Сахарная Голова и исторический центр Рио с обедом"
-slug: ekskursiya-na-sakharnuyu-golovu
+slug: sugarloaf-mountain-and-rio-city-tour
 status: approved
 searchAliases:
   - Экскурсия на Сахарную Голову

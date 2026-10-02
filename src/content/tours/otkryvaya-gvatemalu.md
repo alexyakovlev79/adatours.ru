@@ -1,7 +1,7 @@
 ---
 id: tour_source_otkryvaya_gvatemalu
 locale: ru
-slug: otkryvaya-gvatemalu
+slug: guatemala-guatemala-city-antigua-atitlan-tikal
 status: published
 title: 'Тур в Гватемалу: Гватемала Cити, Антигуа, Сантьяго Атитлан, Тикаль'
 countries:

@@ -1,7 +1,7 @@
 ---
 id: "destination_panama_david"
 locale: "ru"
-slug: "david"
+slug: david
 status: "approved"
 name: "Давид"
 countryId: "country_panama"

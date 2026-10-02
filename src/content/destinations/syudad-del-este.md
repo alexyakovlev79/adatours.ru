@@ -1,7 +1,7 @@
 ---
 id: "destination_paraguay_syudad_del_este"
 locale: "ru"
-slug: "syudad-del-este"
+slug: ciudad-del-este
 status: "approved"
 name: "Сьюдад-дель-Эсте"
 countryId: "country_paraguay"

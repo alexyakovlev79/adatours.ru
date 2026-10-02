@@ -1,7 +1,7 @@
 ---
 id: tour_source_prirodnye_chudesa_bolivii
 locale: ru
-slug: prirodnye-chudesa-bolivii
+slug: bolivia-natural-wonders-10-days
 status: published
 title: Тур в Боливию по лучшим местам страны на 10 дней
 countries:

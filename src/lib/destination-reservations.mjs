@@ -3,12 +3,9 @@ const nonempty = (value) => typeof value === 'string' && Boolean(value.trim());
 const cachePath = /\/image\/cache\//i;
 const statuses = new Set(['needs_content', 'added']);
 const own = (value, key) => Object.prototype.hasOwnProperty.call(value, key);
-const transliteration = Object.fromEntries([
-  ...'абвгдеёжзийклмнопрстуфхцчшщъыьэюя',
-].map((letter, i) => [letter, [
-  'a', 'b', 'v', 'g', 'd', 'e', 'e', 'zh', 'z', 'i', 'j', 'k', 'l', 'm', 'n',
-  'o', 'p', 'r', 's', 't', 'u', 'f', 'h', 'c', 'ch', 'sh', 'sch', '', 'y', '', 'e', 'yu', 'ya',
-][i]]));
+const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+// These Latin letters do not decompose to ASCII under NFKD.
+const latinLetters = { æ: 'ae', œ: 'oe', ø: 'o', ł: 'l', đ: 'd', ð: 'd', þ: 'th', ß: 'ss', ı: 'i' };
 
 /** Punctuation, whitespace, letter case and accents do not create new identities. */
 export function normalizeDestinationName(value) {
@@ -16,9 +13,14 @@ export function normalizeDestinationName(value) {
     .replace(/\p{M}/gu, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 }
 
-/** Only for a new record; an existing record's ID, slug and URL never change. */
+/** Normalize an explicitly supplied English/Latin name, never a Russian name. */
 export function destinationSlug(name) {
-  return [...String(name).toLocaleLowerCase('ru')].map((letter) => transliteration[letter] ?? letter).join('')
+  if (!nonempty(name)) return '';
+  if (/\p{Script=Cyrillic}/u.test(name)) throw new TypeError('Cyrillic names cannot produce a URL slug; supply an English name or an accepted Latin proper name.');
+  if ([...name].some((letter) => /\p{L}/u.test(letter) && !/\p{Script=Latin}/u.test(letter))) {
+    throw new TypeError('URL names must use the Latin alphabet; supply an English name or an accepted Latin proper name.');
+  }
+  return [...name.toLowerCase()].map((letter) => latinLetters[letter] ?? letter).join('')
     .normalize('NFKD').replace(/\p{M}/gu, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
@@ -160,10 +162,18 @@ export function reserveDestinations({ catalog, reservations, countries, publishe
     if (!nonempty(request.name) || !normalizeDestinationName(request.name)) errors.push('A real, explicitly named place is required.');
     if (request.aliases != null && (!Array.isArray(request.aliases) || request.aliases.some((alias) => !nonempty(alias) || !normalizeDestinationName(alias)))) errors.push('aliases must be nonempty strings.');
     if (request.destinationId != null && !nonempty(request.destinationId)) errors.push('destinationId must be a known canonical ID.');
+    if (own(request, 'slug') && (!nonempty(request.slug) || !slugPattern.test(request.slug))) errors.push('slug must be an explicit English lowercase ASCII kebab-case URL segment.');
+    let englishSlug;
+    if (own(request, 'englishName')) {
+      try {
+        englishSlug = destinationSlug(request.englishName);
+        if (!englishSlug) errors.push('englishName must be a nonempty English name or accepted Latin proper name.');
+      } catch (error) { errors.push(error.message); }
+    }
     errors.push(...discoveryErrors(request.discoveredIn, `request ${requestIndex}`));
     if (cachePath.test(JSON.stringify(request))) errors.push('/image/cache/ is forbidden.');
     if (errors.length) return fail({ outcome: 'invalid', requestIndex, errors });
-    const variants = [request.name.trim(), ...(request.aliases ?? []).map((alias) => alias.trim())];
+    const variants = [request.name.trim(), ...(request.aliases ?? []).map((alias) => alias.trim()), ...(nonempty(request.englishName) ? [request.englishName.trim()] : [])];
     const wanted = new Set(variants.map(normalizeDestinationName));
     const inCountry = nextCatalog.filter((item) => item.countryId === country.id);
     const matches = inCountry.filter((item) => [...nameKeys(item)].some((alias) => wanted.has(alias)));
@@ -184,8 +194,8 @@ export function reserveDestinations({ catalog, reservations, countries, publishe
       const partials = inCountry.filter((item) => [item.name, ...(item.aliases ?? [])].map(coreName).some((alias) => variants.map(coreName).some((name) =>
         name.length > 3 && alias.length > 3 && (` ${alias} `.includes(` ${name} `) || ` ${name} `.includes(` ${alias} `)))));
       if (partials.length) return fail({ outcome: 'ambiguous', requestIndex, candidates: partials, reason: 'A qualified or overlapping existing name needs explicit ID resolution.' });
-      const slug = destinationSlug(request.name);
-      if (!slug) return fail({ outcome: 'invalid', requestIndex, errors: ['Name cannot produce a nonempty Latin slug; provide an explicit Latin name and original-script alias.'] });
+      const slug = request.slug ?? englishSlug;
+      if (!slug) return fail({ outcome: 'invalid', requestIndex, errors: ['A new destination requires an explicit English slug or englishName in the Latin alphabet. The public Russian name is never transliterated.'] });
       const id = `destination_${country.id.replace(/^country_/, '')}_${slug.replaceAll('-', '_')}`;
       const url = `/${country.slug}/place/${slug}/`;
       const collisions = nextCatalog.filter((item) => item.id === id || item.url === url);

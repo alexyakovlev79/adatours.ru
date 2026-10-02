@@ -1,7 +1,7 @@
 ---
 id: tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe
 locale: ru
-slug: nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe
+slug: rio-carnival-waterfalls-coast
 status: published
 title: Незабываемый карнавал в Рио с отдыхом на побережье и водопадами
 countries:

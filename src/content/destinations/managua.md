@@ -1,7 +1,7 @@
 ---
 id: "destination_nicaragua_managua"
 locale: "ru"
-slug: "managua"
+slug: managua
 status: "approved"
 name: "Манагуа"
 countryId: "country_nicaragua"

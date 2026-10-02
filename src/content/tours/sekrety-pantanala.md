@@ -1,7 +1,7 @@
 ---
 id: tour_source_sekrety_pantanala
 locale: ru
-slug: sekrety-pantanala
+slug: secrets-of-the-pantanal
 status: published
 title: Секреты Пантанала
 countries:

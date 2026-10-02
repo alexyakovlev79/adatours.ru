@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_oahaka"
 locale: "ru"
-slug: "oahaka"
+slug: oaxaca
 status: "approved"
 name: "Оахака"
 countryId: "country_mexico"

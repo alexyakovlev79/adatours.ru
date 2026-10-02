@@ -1,7 +1,7 @@
 ---
 id: tour_source_nezabyvaemaya_braziliya
 locale: ru
-slug: nezabyvaemaya-braziliya
+slug: unforgettable-brazil-private-tour-12-days
 status: published
 title: Индивидуальный тур в Бразилию, по лучшим местам за 12 дней
 countries:

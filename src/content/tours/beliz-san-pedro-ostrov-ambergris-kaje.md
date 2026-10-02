@@ -1,7 +1,7 @@
 ---
 id: tour_source_beliz_san_pedro_ostrov_ambergris_kaje
 locale: ru
-slug: beliz-san-pedro-ostrov-ambergris-kaje
+slug: belize-san-pedro-ambergris-caye
 status: published
 title: Белиз
 countries:

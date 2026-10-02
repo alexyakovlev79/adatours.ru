@@ -2,7 +2,7 @@
 id: excursion_source_obzornaya_ekskursiya_po_gorodu_i_arkheologicheskij_park_saksajuaman
 locale: ru
 title: "Куско и Саксайуаман: Кенко, Пука-Пукара и Тамбомачай"
-slug: obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman
+slug: cusco-sacsayhuaman-archaeological-tour
 status: approved
 searchAliases:
   - Экскурсия по Куско и Саксайуаману

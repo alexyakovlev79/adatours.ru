@@ -1,7 +1,7 @@
 ---
 id: excursion_amazon_monkey_forest_canoe
 locale: ru
-slug: les-obezyan-v-amazonii
+slug: amazon-monkey-forest-canoe-trip
 status: published
 title: 'Лес обезьян: прогулка на каноэ в Амазонии'
 country: country_brazil

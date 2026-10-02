@@ -1,7 +1,7 @@
 ---
 id: tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej
 locale: ru
-slug: mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej
+slug: brazil-argentina-rio-iguazu-buenos-aires-9-days
 status: published
 title: 'Тур в Бразилию и Аргентину на 9 дней: Рио, Игуасу, Буэнос-Айрес | Цена от $2775'
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy
 locale: ru
-slug: luchshee-v-ekvadore-garantirovannye-zaezdy
+slug: best-of-ecuador-guaranteed-departures
 status: published
 title: 'Лучшее в Эквадоре: Гарантированные заезды'
 countries:

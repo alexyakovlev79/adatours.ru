@@ -2,7 +2,7 @@
 id: country_costa_rica
 locale: ru
 name: Коста-Рика
-slug: kosta-rika
+slug: costa-rica
 status: approved
 searchAliases:
   - Коста Рика

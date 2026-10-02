@@ -2,7 +2,7 @@
 id: "excursion_source_plavanie_s_rozovymi_del_finami"
 locale: "ru"
 title: "Плавание с розовыми дельфинами"
-slug: "plavanie-s-rozovymi-del-finami"
+slug: swimming-with-pink-dolphins
 status: "approved"
 searchAliases: []
 country: "country_brazil"

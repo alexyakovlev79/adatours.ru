@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_sego_de_avila"
 locale: "ru"
-slug: "sego-de-avila"
+slug: ciego-de-avila
 status: "approved"
 name: "Сьего де Авила"
 countryId: "country_cuba"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_bolshoe_brazilskoe_priklyuchenie
 locale: ru
-slug: bolshoe-brazilskoe-priklyuchenie
+slug: grand-brazil-adventure
 status: published
 title: Большое бразильское приключение
 countries:

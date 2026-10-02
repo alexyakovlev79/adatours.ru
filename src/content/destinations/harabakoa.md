@@ -1,7 +1,7 @@
 ---
 id: "destination_dominican_republic_harabakoa"
 locale: "ru"
-slug: "harabakoa"
+slug: jarabacoa
 status: "approved"
 name: "Харабакоа"
 countryId: "country_dominican_republic"

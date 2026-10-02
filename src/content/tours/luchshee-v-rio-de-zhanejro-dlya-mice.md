@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_rio_de_zhanejro_dlya_mice
 locale: ru
-slug: luchshee-v-rio-de-zhanejro-dlya-mice
+slug: rio-de-janeiro-corporate-tour-6-days
 status: published
 title: Корпоративный тур в Рио-де-Жанейро на 6 дней
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_krasota_venesuely
 locale: ru
-slug: krasota-venesuely
+slug: venezuela-nature-beaches-12-days
 status: published
 title: Тур в Венесуэлу на 12 дней с пляжным отдыхом и эко-маршрутами
 countries:

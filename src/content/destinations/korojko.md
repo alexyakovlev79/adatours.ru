@@ -1,7 +1,7 @@
 ---
 id: destination_bolivia_korojko
 locale: ru
-slug: korojko
+slug: coroico
 status: approved
 name: Коройко
 countryId: country_bolivia

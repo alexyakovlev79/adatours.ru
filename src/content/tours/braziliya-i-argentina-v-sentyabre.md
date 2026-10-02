@@ -1,7 +1,7 @@
 ---
 id: tour_source_braziliya_i_argentina_v_sentyabre
 locale: ru
-slug: braziliya-i-argentina-v-sentyabre
+slug: brazil-argentina-rio-iguazu-buenos-aires-september
 status: published
 title: 'Тур в Бразилию и Аргентину: Рио-де-Жанейро, Фоз де Игуасу, Буэнос Айрес'
 countries:

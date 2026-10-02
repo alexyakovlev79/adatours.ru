@@ -1,7 +1,7 @@
 ---
 id: tour_source_meksika_treugolnik_solntsa
 locale: ru
-slug: meksika-treugolnik-solntsa
+slug: mexico-triangle-of-the-sun
 status: published
 title: 'Мексика: Треугольник Солнца'
 countries:

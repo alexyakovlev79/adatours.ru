@@ -1,7 +1,7 @@
 ---
 id: tour_source_ves_mnogolikij_peru_i_senor_sipan
 locale: ru
-slug: ves-mnogolikij-peru-i-senor-sipan
+slug: peru-lima-cusco-machu-picchu-arequipa-puno-trujillo-chiclayo
 status: published
 title: 'Тур в Перу: Лима, Куско, Мачу-Пикчу, Арекипа, Пуно, Tрухильо, Чиклайо'
 countries:

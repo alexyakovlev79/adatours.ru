@@ -2,7 +2,7 @@
 id: tour_source_vinnyj_tur_v_argentinu_i_chili
 locale: ru
 title: "Тур в Чили и Аргентину с винным регионом Мендоса на 9 дней"
-slug: vinnyj-tur-v-argentinu-i-chili
+slug: chile-argentina-mendoza-wine-9-days
 status: approved
 searchAliases:
   - "Винный тур Аргентина Чили"

@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_kamaguej"
 locale: "ru"
-slug: "kamaguej"
+slug: camaguey
 status: "approved"
 name: "Камагуэй"
 countryId: "country_cuba"

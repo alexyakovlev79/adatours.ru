@@ -1,7 +1,7 @@
 ---
 id: tour_source_tropicheskaya_braziliya
 locale: ru
-slug: tropicheskaya-braziliya
+slug: tropical-brazil-rio-buzios
 status: published
 title: 'Тур в Бразилию: Рио-де-Жанейро и пляжный отдых в Бузиосе'
 countries:

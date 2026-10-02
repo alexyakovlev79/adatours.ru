@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_verakrus"
 locale: "ru"
-slug: "verakrus"
+slug: veracruz
 status: "approved"
 name: "Веракрус"
 countryId: "country_mexico"

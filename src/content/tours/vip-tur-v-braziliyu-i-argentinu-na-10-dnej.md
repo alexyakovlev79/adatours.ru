@@ -1,7 +1,7 @@
 ---
 id: tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej
 locale: ru
-slug: vip-tur-v-braziliyu-i-argentinu-na-10-dnej
+slug: brazil-argentina-vip-10-days
 status: published
 title: 'VIP тур в Бразилию и Аргентину: Рио, Игуасу, Буэнос-Айрес'
 countries:

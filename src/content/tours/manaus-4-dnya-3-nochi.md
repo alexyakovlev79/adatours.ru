@@ -1,7 +1,7 @@
 ---
 id: tour_source_manaus_4_dnya_3_nochi
 locale: ru
-slug: manaus-4-dnya-3-nochi
+slug: manaus-4-days-3-nights
 status: published
 title: 'Манаус: 4 дня / 3 ночи'
 countries:

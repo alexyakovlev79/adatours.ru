@@ -1,7 +1,7 @@
 ---
 id: tour_source_little_mix_ru
 locale: ru
-slug: little-mix-ru
+slug: brazil-little-mix
 status: published
 title: 'Бразилия: Little Mix'
 countries:

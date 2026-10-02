@@ -7,6 +7,7 @@ import { withBase } from '../lib/paths';
 <BaseLayout
   title="Страница не найдена"
   description="Страница не найдена. Вернитесь на главную Ada Tours или перейдите к направлениям."
+  canonical="/404.html"
   noindex
 >
   <section class="not-found">
@@ -17,7 +18,7 @@ import { withBase } from '../lib/paths';
       <p>Такой страницы нет. Можно вернуться на главную или выбрать другое направление.</p>
       <div class="not-found__actions">
         <PrimaryCTA href="/" label="На главную" />
-        <a href={withBase('/strany/')}>Смотреть страны ↗</a>
+        <a href={withBase('/country/')}>Смотреть страны ↗</a>
       </div>
     </div>
   </section>

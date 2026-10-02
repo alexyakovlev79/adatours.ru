@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekvador_i_galapagosskie_ostrova_v_iyule
 locale: ru
-slug: ekvador-i-galapagosskie-ostrova-v-iyule
+slug: ecuador-galapagos-quito-quilotoa-mindo-july
 status: published
 title: Тур в Эквадор и на Галапагосские острова – Кито, Килотоа, Миндо
 countries:

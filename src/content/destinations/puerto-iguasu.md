@@ -1,7 +1,7 @@
 ---
 id: destination_argentina_puerto_iguasu
 locale: ru
-slug: puerto-iguasu
+slug: puerto-iguazu
 status: approved
 name: Пуэрто Игуасу
 countryId: country_argentina

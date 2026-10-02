@@ -2,7 +2,7 @@
 id: "excursion_source_h_d_city_tour_manaus"
 locale: "ru"
 title: "Манаус-сити тур"
-slug: "h-d-city-tour-manaus"
+slug: manaus-city-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

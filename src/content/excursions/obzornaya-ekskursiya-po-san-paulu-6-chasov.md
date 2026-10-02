@@ -1,7 +1,7 @@
 ---
 id: excursion_sao_paulo_city_tour_six_hours
 locale: ru
-slug: obzornaya-ekskursiya-po-san-paulu-6-chasov
+slug: sao-paulo-city-tour-6-hours
 status: published
 title: Обзорная экскурсия по Сан-Паулу на 6 часов
 country: country_brazil

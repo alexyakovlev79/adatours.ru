@@ -1,5 +1,7 @@
 # Ada Tours — создание места из готового источника
 
+Адреса объектов и правила английских slug: `docs/workflows/urls.md`. Для существующего объекта использовать закреплённые `slug`, `url` и точный `contentPath`; русское название не транслитерировать заново.
+
 Версия: 2.1 · 2026-10-02 · Репозиторий: `alexyakovlev79/adatours.ru`, ветка `main`.
 
 Эта инструкция применяется к добавлению или точечному обновлению одной известной Destination. Она заменяет `ADA_TOURS_DESTINATION_GITHUB_WORKFLOW_v2_2026-10-02.md`. Общий шаблон и связи уже реализованы; задача чата — заполнить данные выбранного места.
@@ -18,9 +20,9 @@
 
 ## 2. Что создать
 
-Файл указан в `entry.contentPath`: `src/content/destinations/<slug>.md`.
+Файл указан точно в `entry.contentPath` внутри `src/content/destinations/`; его историческое имя может отличаться от нынешнего английского slug. Не переименовывать файл из-за URL.
 
-Действующая схема: `src/content.config.ts`. Использовать ее имена полей в camelCase. Готовые ID, slug и URL `/<country-slug>/place/<destination-slug>/` уже закреплены в `entry`; не создавать новые варианты транслитерации или ID. `/<country-slug>/place/` — каталог мест страны, а `/<country-slug>/<destination-slug>/` — каталог экскурсий этого места; это разные страницы. Прежний `/napravleniya/<country>/<destination>/` остается только redirect alias. Content-файл не переносится в папки URL.
+Действующая схема: `src/content.config.ts`. Использовать ее имена полей в camelCase. Готовые ID, slug и URL `/<country-slug>/place/<destination-slug>/` уже закреплены в `entry`; не создавать новые варианты написания slug или ID. Все новые slug соответствуют английскому контракту `docs/workflows/urls.md`. `/<country-slug>/place/` — каталог мест страны, а `/<country-slug>/<destination-slug>/` — каталог экскурсий этого места; это разные страницы. Прежний `/napravleniya/<country>/<destination>/` остается только redirect alias. Content-файл не переносится в папки URL.
 
 | Поля | Откуда брать |
 |---|---|

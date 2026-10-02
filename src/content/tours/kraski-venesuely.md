@@ -1,7 +1,7 @@
 ---
 id: tour_source_kraski_venesuely
 locale: ru
-slug: kraski-venesuely
+slug: colors-of-venezuela
 status: published
 title: Краски Венесуэлы
 countries:

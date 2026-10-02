@@ -1,7 +1,7 @@
 ---
 id: tour_source_tropicheskij_karnaval_v_brazilii
 locale: ru
-slug: tropicheskij-karnaval-v-brazilii
+slug: brazil-rio-carnival-beach-12-days
 status: published
 title: Тур в Бразилию на Карнавал в Рио с пляжным отдыхом | 12 дней
 countries:

@@ -2,7 +2,7 @@
 id: excursion_source_uyuni_na_2_dnya
 locale: ru
 title: "Уюни на 2 дня: лагуны, гейзеры и солончак на джипе 4x4"
-slug: uyuni-na-2-dnya
+slug: uyuni-salt-flats-4x4-tour-2-days
 status: approved
 searchAliases:
   - Салар де Уюни

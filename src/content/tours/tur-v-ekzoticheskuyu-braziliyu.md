@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_ekzoticheskuyu_braziliyu
 locale: ru
-slug: tur-v-ekzoticheskuyu-braziliyu
+slug: brazil-amazon-iguazu-beaches
 status: published
 title: Тур в Бразилию на Амазонку и водопады Игуасу с пляжным отдыхом
 countries:

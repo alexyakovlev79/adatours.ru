@@ -1,7 +1,7 @@
 ---
 id: excursion_buenos_aires_porteno_tango_dinner_transfer
 locale: ru
-slug: porteno-tango-shou-s-uzhinom
+slug: tango-porteno-dinner-show
 status: published
 title: Танго-шоу с ужином в доме танго «Портеньо»
 country: country_argentina

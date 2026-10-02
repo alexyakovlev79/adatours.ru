@@ -2,7 +2,7 @@
 id: country_colombia
 locale: ru
 name: Колумбия
-slug: kolumbiya
+slug: colombia
 status: approved
 searchAliases:
   - Colombia

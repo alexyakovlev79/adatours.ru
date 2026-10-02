@@ -86,7 +86,7 @@ const stats = [
   d.format ? { value: d.format, label: 'формат' } : null,
 ].filter(Boolean);
 
-const pageUrl = new URL(withBase(excursionPath(d)), Astro.site ?? 'https://adatours.ru').toString();
+const pageUrl = new URL(withBase(excursionPath(d)), Astro.site ?? 'https://adatours.ru/').toString();
 const excursionSchema = {
   '@type': 'TouristTrip',
   '@id': `${pageUrl}#excursion`,

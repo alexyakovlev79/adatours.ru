@@ -1,7 +1,7 @@
 ---
 id: destination_argentina_kordoba
 locale: ru
-slug: kordoba
+slug: cordoba
 status: approved
 name: Кордоба
 countryId: country_argentina

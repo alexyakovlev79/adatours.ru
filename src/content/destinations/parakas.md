@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_parakas"
 locale: ru
-slug: "parakas"
+slug: paracas
 status: approved
 name: "Паракас"
 countryId: "country_peru"

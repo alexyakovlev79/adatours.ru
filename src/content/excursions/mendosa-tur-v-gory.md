@@ -2,7 +2,7 @@
 id: excursion_source_mendosa_tur_v_gory
 locale: ru
 title: "Мендоса: горный маршрут к Аконкагуа и мосту Инков"
-slug: mendosa-tur-v-gory
+slug: mendoza-aconcagua-puente-del-inca-tour
 status: approved
 searchAliases:
   - Мендоса тур в горы

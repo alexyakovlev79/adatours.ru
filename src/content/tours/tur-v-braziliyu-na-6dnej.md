@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_braziliyu_na_6dnej
 locale: ru
-slug: tur-v-braziliyu-na-6dnej
+slug: brazil-rio-iguazu-6-days
 status: published
 title: 'Тур в Бразилию на 6 дней: Рио-де-Жанейро и на Водопады Игуасу'
 countries:

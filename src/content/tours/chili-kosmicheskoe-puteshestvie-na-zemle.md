@@ -1,7 +1,7 @@
 ---
 id: tour_source_chili_kosmicheskoe_puteshestvie_na_zemle
 locale: ru
-slug: chili-kosmicheskoe-puteshestvie-na-zemle
+slug: chile-otherworldly-journey
 status: published
 title: 'Чили: Космическое путешествие на Земле'
 countries:

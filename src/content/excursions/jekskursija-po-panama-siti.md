@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_po_panama_siti"
 locale: "ru"
 title: "Экскурсия по Панама-Сити"
-slug: "jekskursija-po-panama-siti"
+slug: panama-city-tour
 status: "approved"
 searchAliases: []
 country: "country_panama"

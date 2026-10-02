@@ -1,7 +1,7 @@
 ---
 id: tour_source_meksika_den_mertvykh
 locale: ru
-slug: meksika-den-mertvykh
+slug: mexico-day-of-the-dead
 status: published
 title: День Мертвых в Мексике
 countries:

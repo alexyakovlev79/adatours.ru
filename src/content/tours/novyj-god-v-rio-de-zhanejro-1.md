@@ -1,7 +1,7 @@
 ---
 id: tour_source_novyj_god_v_rio_de_zhanejro_1
 locale: ru
-slug: novyj-god-v-rio-de-zhanejro-1
+slug: rio-de-janeiro-new-year-tour
 status: published
 title: Тур Новый Год в Рио-де-Жанейро
 countries:

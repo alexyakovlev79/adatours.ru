@@ -2,7 +2,7 @@
 id: tour_source_argentina_dlya_degustatorov_khoroshej_zhizni
 locale: ru
 title: "Аргентина для ценителей вина, кухни и красивой жизни"
-slug: argentina-dlya-degustatorov-khoroshej-zhizni
+slug: argentina-food-fine-living
 status: approved
 searchAliases:
   - "Аргентина для дегустаторов хорошей жизни"

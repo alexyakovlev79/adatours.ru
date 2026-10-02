@@ -1,7 +1,7 @@
 ---
 id: "destination_chile_san_pedro_de_atakama"
 locale: ru
-slug: "san-pedro-de-atakama"
+slug: san-pedro-de-atacama
 status: approved
 name: "Сан-Педро-де-Атакама"
 countryId: "country_chile"

@@ -109,7 +109,7 @@ The behavior was visually accepted on the 17-day Brazil tour after refactoring t
 
 Reference page while the site is on GitHub Pages:
 
-https://alexyakovlev79.github.io/adatours.ru/tury/bolshoe-priklyuchenie-braziliya-17-dnej/
+https://alexyakovlev79.github.io/adatours.ru/brazil/tour/grand-brazil-adventure-17-days/
 
 
 

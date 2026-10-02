@@ -2,7 +2,7 @@
 id: excursion_source_punta_del_este_i_piriapolis
 locale: ru
 title: "Пунта-дель-Эсте и Пириаполис из Монтевидео"
-slug: punta-del-este-i-piriapolis
+slug: punta-del-este-piriapolis-from-montevideo
 status: approved
 searchAliases:
   - Пунта дель Эсте и Пириаполис

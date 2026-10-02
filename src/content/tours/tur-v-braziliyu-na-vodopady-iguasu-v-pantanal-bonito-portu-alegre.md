@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_braziliyu_na_vodopady_iguasu_v_pantanal_bonito_portu_alegre
 locale: ru
-slug: tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre
+slug: brazil-iguazu-pantanal-bonito-porto-alegre-13-days
 status: published
 title: Тур в Бразилию по лучшим достопримечательностям на 13 дней
 countries:

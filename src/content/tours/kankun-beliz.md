@@ -1,7 +1,7 @@
 ---
 id: tour_source_kankun_beliz
 locale: ru
-slug: kankun-beliz
+slug: cancun-belize-11-days
 status: published
 title: Тур в Канкун и Белиз на 11 дней (с русскоговорящим гидом)
 countries:

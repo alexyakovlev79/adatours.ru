@@ -1,7 +1,7 @@
 ---
 id: tour_source_braziliya_argentina_chili_peru_ru
 locale: ru
-slug: braziliya-argentina-chili-peru-ru
+slug: brazil-argentina-chile-peru-15-days
 status: published
 title: Тур в Бразилию, Аргентину, Чили и Перу на 15 дней
 countries:

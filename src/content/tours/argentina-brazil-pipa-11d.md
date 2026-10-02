@@ -2,7 +2,7 @@
 id: tour_argentina_brazil_pipa_11d
 locale: ru
 title: "Аргентина и Бразилия за 11 дней: Буэнос-Айрес, Эль-Калафате, Игуасу и Прайя-де-Пипа"
-slug: argentina-braziliya-buenos-ajres-el-kalafate-iguasu-pipa-11-dnej
+slug: argentina-brazil-buenos-aires-el-calafate-iguazu-pipa-11-days
 status: approved
 countries:
   - country_argentina

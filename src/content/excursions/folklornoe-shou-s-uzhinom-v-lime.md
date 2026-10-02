@@ -2,7 +2,7 @@
 id: excursion_lima_folklore_dinner_show
 locale: ru
 title: "Фольклорное шоу с ужином в Лиме"
-slug: folklornoe-shou-s-uzhinom-v-lime
+slug: lima-folklore-dinner-show
 status: approved
 searchAliases:
   - Фольклорное шоу Лима

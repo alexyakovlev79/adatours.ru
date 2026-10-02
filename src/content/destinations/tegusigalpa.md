@@ -1,7 +1,7 @@
 ---
 id: "destination_honduras_tegusigalpa"
 locale: ru
-slug: "tegusigalpa"
+slug: tegucigalpa
 status: approved
 name: "Тегусигальпа"
 countryId: "country_honduras"

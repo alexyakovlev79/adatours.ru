@@ -2,7 +2,7 @@
 id: country_venezuela
 locale: ru
 name: Венесуэла
-slug: venesuela
+slug: venezuela
 status: approved
 searchAliases:
   - Venezuela

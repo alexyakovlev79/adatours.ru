@@ -1,7 +1,7 @@
 ---
 id: destination_belize_kaje_kolker
 locale: ru
-slug: kaje-kolker
+slug: caye-caulker
 status: approved
 name: Кайе Колкер
 countryId: country_belize

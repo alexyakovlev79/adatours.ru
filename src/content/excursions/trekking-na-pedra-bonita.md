@@ -1,7 +1,7 @@
 ---
 id: excursion_rio_pedra_bonita_trekking
 locale: ru
-slug: trekking-na-pedra-bonita
+slug: pedra-bonita-hike
 status: published
 title: Треккинг на Педра-Бонита
 country: country_brazil

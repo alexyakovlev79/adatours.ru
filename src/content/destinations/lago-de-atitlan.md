@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_lago_de_atitlan"
 locale: ru
-slug: "lago-de-atitlan"
+slug: lake-atitlan
 status: approved
 name: "Лаго де Атитлан"
 countryId: "country_guatemala"

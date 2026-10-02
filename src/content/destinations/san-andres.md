@@ -1,7 +1,7 @@
 ---
 id: "destination_colombia_san_andres"
 locale: "ru"
-slug: "san-andres"
+slug: san-andres
 status: "approved"
 name: "Сан-Андрес"
 countryId: "country_colombia"

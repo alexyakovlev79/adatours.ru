@@ -2,7 +2,7 @@
 id: excursion_source_la_pas_siti_tur
 locale: ru
 title: "Ла-Пас за 4–5 часов: рынки, канатная дорога и Килли-Килли"
-slug: la-pas-siti-tur
+slug: la-paz-city-tour
 status: approved
 searchAliases:
   - Ла Пас сити-тур

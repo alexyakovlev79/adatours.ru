@@ -2,7 +2,7 @@
 id: "excursion_source_tur_v_niteroj"
 locale: "ru"
 title: "Тур в Нитерой"
-slug: "tur-v-niteroj"
+slug: niteroi-city-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

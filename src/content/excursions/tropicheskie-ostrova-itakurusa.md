@@ -1,7 +1,7 @@
 ---
 id: excursion_rio_itacuruca_tropical_islands
 locale: ru
-slug: tropicheskie-ostrova-itakurusa
+slug: itacuruca-tropical-islands-boat-trip
 status: published
 title: 'Тропические острова: морская прогулка из Итакурусы'
 country: country_brazil

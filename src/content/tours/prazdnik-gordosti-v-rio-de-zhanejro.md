@@ -1,7 +1,7 @@
 ---
 id: tour_source_prazdnik_gordosti_v_rio_de_zhanejro
 locale: ru
-slug: prazdnik-gordosti-v-rio-de-zhanejro
+slug: rio-de-janeiro-pride
 status: published
 title: Праздник гордости в Рио-де-Жанейро
 countries:

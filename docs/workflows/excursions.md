@@ -1,5 +1,7 @@
 # Ada Tours — создание известной экскурсии
 
+Адреса объектов и правила английских slug: `docs/workflows/urls.md`. Для существующего объекта использовать закреплённые `slug`, `url` и точный `contentPath`; русское название не транслитерировать заново.
+
 Версия: 1.1 · 2026-10-02 · Репозиторий: `alexyakovlev79/adatours.ru`, ветка `main`.
 
 Применять, когда пользователь просит добавить известную экскурсию из реестра или следующую экскурсию из закрепленной очереди. Это перенос выбранного материала в готовый `ExcursionLayout.astro`. Извлечение экскурсий из программы тура описано отдельно в `docs/workflows/tour-excursion-linking.md`.
@@ -16,7 +18,7 @@
 
 ## 2. Поля текущей схемы
 
-Файл: `entry.contentPath` в `src/content/excursions/`; иерархия URL не переносит Markdown в новые папки. Canonical URL при конкретном месте — `/<country-slug>/<destination-slug>/<excursion-slug>/`, без места — `/<country-slug>/excursion/<excursion-slug>/`. При `destination` страна/slug берутся из каталожного места, даже до публикации его MD; страна отправления продукта их не подменяет. URL дает `canonicalPath()` из `src/lib/routes.ts`, для готовой записи брать `entry.url`. Старый `/ekskursii/<slug>/` — redirect alias. Источник схемы: `src/content.config.ts`; имена полей — camelCase.
+Файл: точный `entry.contentPath` в `src/content/excursions/`; английский slug и иерархия URL не переименовывают Markdown и не переносят его в новые папки. Canonical URL при конкретном месте — `/<country-slug>/<destination-slug>/<excursion-slug>/`, без места — `/<country-slug>/excursion/<excursion-slug>/`. При `destination` страна/slug берутся из каталожного места, даже до публикации его MD; страна отправления продукта их не подменяет. URL дает `canonicalPath()` из `src/lib/routes.ts`, для готовой записи брать `entry.url`. Старый `/ekskursii/<slug>/` — redirect alias. Источник схемы: `src/content.config.ts`; имена полей — camelCase.
 
 | Поля | Правило |
 |---|---|

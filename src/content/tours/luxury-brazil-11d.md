@@ -2,7 +2,7 @@
 id: tour_luxury_brazil_11d
 locale: ru
 title: Роскошная Бразилия
-slug: roskoshnaya-braziliya
+slug: luxury-brazil
 status: approved
 countries:
   - country_brazil

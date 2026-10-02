@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekspress_braziliya_rio_ibuzios
 locale: ru
-slug: ekspress-braziliya-rio-ibuzios
+slug: brazil-rio-buzios-express
 status: published
 title: Тур в Бразилию с Рио и отдыхом на курорте Бузиос «Экспресс»
 countries:

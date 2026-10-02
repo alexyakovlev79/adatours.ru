@@ -1,7 +1,7 @@
 ---
 id: "destination_panama_zhemchuzhnye_ostrova"
 locale: "ru"
-slug: "zhemchuzhnye-ostrova"
+slug: pearl-islands
 status: "approved"
 name: "Жемчужные Острова"
 countryId: "country_panama"

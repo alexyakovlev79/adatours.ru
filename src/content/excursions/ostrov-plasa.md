@@ -2,7 +2,7 @@
 id: "excursion_source_ostrov_plasa"
 locale: "ru"
 title: "Экскурсии на Галапагосские острова: остров Пласа в Эквадоре"
-slug: "ostrov-plasa"
+slug: south-plaza-island-tour
 status: "approved"
 searchAliases: []
 country: "country_ecuador"

@@ -2,7 +2,7 @@
 id: tour_source_roskoshnaya_patagoniya_10_dney
 locale: ru
 title: "Роскошная Патагония: VIP-тур по Аргентине и Чили на 10 дней"
-slug: roskoshnaya-patagoniya-10-dney
+slug: luxury-patagonia-10-days
 status: approved
 searchAliases:
   - "Роскошная Патагония"

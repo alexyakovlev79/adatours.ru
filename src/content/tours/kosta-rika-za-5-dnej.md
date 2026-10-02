@@ -1,7 +1,7 @@
 ---
 id: tour_source_kosta_rika_za_5_dnej
 locale: ru
-slug: kosta-rika-za-5-dnej
+slug: costa-rica-5-days
 status: published
 title: Коста Рика за 5 дней
 countries:

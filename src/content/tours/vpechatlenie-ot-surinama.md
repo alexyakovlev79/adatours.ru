@@ -1,7 +1,7 @@
 ---
 id: tour_source_vpechatlenie_ot_surinama
 locale: ru
-slug: vpechatlenie-ot-surinama
+slug: suriname-impressions
 status: published
 title: Впечатление от Суринама
 countries:

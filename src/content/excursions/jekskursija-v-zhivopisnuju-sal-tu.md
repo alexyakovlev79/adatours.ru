@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_v_zhivopisnuju_sal_tu"
 locale: "ru"
 title: "Экскурсия в живописную Сальту"
-slug: "jekskursija-v-zhivopisnuju-sal-tu"
+slug: salta-sightseeing-tour
 status: "approved"
 searchAliases: []
 country: "country_argentina"

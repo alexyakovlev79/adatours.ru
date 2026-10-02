@@ -2,7 +2,7 @@
 id: "excursion_source_siti_tur_v_asunsone"
 locale: "ru"
 title: "Сити тур в Асунсьоне"
-slug: "siti-tur-v-asunsone"
+slug: asuncion-city-tour
 status: "approved"
 searchAliases: []
 country: "country_paraguay"

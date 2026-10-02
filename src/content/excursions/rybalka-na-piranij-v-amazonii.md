@@ -1,7 +1,7 @@
 ---
 id: excursion_amazon_piranha_fishing
 locale: ru
-slug: rybalka-na-piranij-v-amazonii
+slug: amazon-piranha-fishing
 status: published
 title: Рыбалка на пираний в Амазонии
 country: country_brazil

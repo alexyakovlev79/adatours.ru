@@ -1,7 +1,7 @@
 ---
 id: tour_source_panama_kosta_rika_nikaragua
 locale: ru
-slug: panama-kosta-rika-nikaragua
+slug: panama-costa-rica-nicaragua
 status: published
 title: Панама – Коста Рика- Никарагуа
 countries:

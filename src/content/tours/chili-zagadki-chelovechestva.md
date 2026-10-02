@@ -1,7 +1,7 @@
 ---
 id: tour_source_chili_zagadki_chelovechestva
 locale: ru
-slug: chili-zagadki-chelovechestva
+slug: chile-easter-island-private-tour-10-days
 status: published
 title: Индивидуальный тур в Чили и на остров Пасхи на 10 дней
 countries:

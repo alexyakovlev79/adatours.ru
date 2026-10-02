@@ -1,7 +1,7 @@
 ---
 id: excursion_amazon_night_caiman_boat_trip
 locale: ru
-slug: vechernyaya-progulka-po-amazonii-s-kajmanami
+slug: amazon-evening-caiman-watching
 status: published
 title: Вечерняя прогулка по Амазонии с наблюдением за кайманами
 country: country_brazil

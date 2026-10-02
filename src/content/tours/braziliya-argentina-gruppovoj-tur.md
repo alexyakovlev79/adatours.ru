@@ -1,7 +1,7 @@
 ---
 id: tour_source_braziliya_argentina_gruppovoj_tur
 locale: ru
-slug: braziliya-argentina-gruppovoj-tur
+slug: brazil-argentina-group-tour
 status: published
 title: Бразилия-Аргентина:групповой тур
 countries:

@@ -1,7 +1,7 @@
 ---
 id: "destination_colombia_bogota"
 locale: "ru"
-slug: "bogota"
+slug: bogota
 status: "approved"
 name: "Богота"
 countryId: "country_colombia"

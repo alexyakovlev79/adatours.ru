@@ -2,7 +2,7 @@
 id: "excursion_source_nezabyvaemoe_tango_shou"
 locale: "ru"
 title: "Экскурсия \"Танго в Буэнос-Айресе\" с шоу и ужином"
-slug: "nezabyvaemoe-tango-shou"
+slug: la-ventana-tango-dinner-show
 status: "approved"
 searchAliases: []
 country: "country_argentina"

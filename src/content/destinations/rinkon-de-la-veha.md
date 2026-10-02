@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_rinkon_de_la_veha"
 locale: "ru"
-slug: "rinkon-de-la-veha"
+slug: rincon-de-la-vieja
 status: "approved"
 name: "Ринкон-де-ла-Вьеха"
 countryId: "country_costa_rica"

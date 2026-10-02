@@ -2,7 +2,7 @@
 id: "excursion_source_odnodnevnyj_tur_dlya_issledovaniya_ozera_titikaka"
 locale: "ru"
 title: "Экскурсии в Перу: озеро Титикака и плавающие острова Урос"
-slug: "odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka"
+slug: lake-titicaca-uros-islands-day-tour
 status: "approved"
 searchAliases: []
 country: "country_peru"

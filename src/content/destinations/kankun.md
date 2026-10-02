@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_kankun"
 locale: "ru"
-slug: "kankun"
+slug: cancun
 status: "approved"
 name: "Канкун"
 countryId: "country_mexico"

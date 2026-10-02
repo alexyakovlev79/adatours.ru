@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_teotiuakan"
 locale: "ru"
-slug: "teotiuakan"
+slug: teotihuacan
 status: "approved"
 name: "Теотиуакан"
 countryId: "country_mexico"

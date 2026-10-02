@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_kampeche"
 locale: "ru"
-slug: "kampeche"
+slug: campeche
 status: "approved"
 name: "Кампече"
 countryId: "country_mexico"

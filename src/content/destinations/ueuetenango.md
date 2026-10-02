@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_ueuetenango"
 locale: ru
-slug: "ueuetenango"
+slug: huehuetenango
 status: approved
 name: "Уэуэтенанго"
 countryId: "country_guatemala"

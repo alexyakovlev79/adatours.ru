@@ -1,7 +1,7 @@
 ---
 id: "destination_colombia_vilya_de_lejva"
 locale: "ru"
-slug: "vilya-de-lejva"
+slug: villa-de-leyva
 status: "approved"
 name: "Вилья-де-Лейва"
 countryId: "country_colombia"

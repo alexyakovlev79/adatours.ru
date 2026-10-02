@@ -2,7 +2,7 @@
 id: "excursion_source_uvlekatel_nyj_tur_k_perito_moreno"
 locale: "ru"
 title: "Увлекательный тур к Перито Морено"
-slug: "uvlekatel-nyj-tur-k-perito-moreno"
+slug: perito-moreno-english-speaking-guide
 status: "approved"
 searchAliases: []
 country: "country_argentina"

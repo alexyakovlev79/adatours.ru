@@ -2,7 +2,7 @@
 id: excursion_ushuaia_martillo_penguin_boat
 locale: ru
 title: "Остров Мартильо: морская поездка к пингвинам"
-slug: ostrov-martillo-morskaya-poezdka-k-pingvinam
+slug: martillo-island-penguin-boat-trip
 status: approved
 searchAliases:
   - "Остров Мартильо"

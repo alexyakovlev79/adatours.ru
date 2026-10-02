@@ -1,7 +1,7 @@
 ---
 id: tour_source_mexico_city_keretaro
 locale: ru
-slug: mexico-city-keretaro
+slug: mexico-city-queretaro-colonial-treasures
 status: published
 title: Колониальные Сокровища Мексики
 countries:

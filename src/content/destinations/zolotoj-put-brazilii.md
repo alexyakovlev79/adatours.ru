@@ -2,7 +2,7 @@
 id: destination_brazil_gold_route
 locale: ru
 name: Золотой путь Бразилии
-slug: zolotoj-put-brazilii
+slug: gold-route
 status: approved
 countryId: country_brazil
 destinationType: route_cluster

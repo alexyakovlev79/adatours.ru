@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_antigua_guatemala"
 locale: ru
-slug: "antigua-guatemala"
+slug: antigua-guatemala
 status: approved
 name: "Антигуа-Гуатемала"
 countryId: "country_guatemala"

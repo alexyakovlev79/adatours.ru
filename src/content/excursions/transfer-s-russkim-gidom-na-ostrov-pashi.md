@@ -2,7 +2,7 @@
 id: "excursion_source_transfer_s_russkim_gidom_na_ostrov_pashi"
 locale: "ru"
 title: "Трансфер с русским гидом на Остров Пасхи"
-slug: "transfer-s-russkim-gidom-na-ostrov-pashi"
+slug: easter-island-transfer-russian-speaking-guide
 status: "approved"
 searchAliases: []
 country: "country_chile"

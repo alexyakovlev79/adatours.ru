@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_urugvae_pyatizvjozdochnyj_marshrut
 locale: ru
-slug: luchshee-v-urugvae-pyatizvjozdochnyj-marshrut
+slug: best-of-uruguay-five-star-tour
 status: published
 title: 'Лучшее в Уругвае: пятизвёздочный маршрут'
 countries:

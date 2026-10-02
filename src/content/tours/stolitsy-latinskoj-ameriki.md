@@ -1,7 +1,7 @@
 ---
 id: tour_source_stolitsy_latinskoj_ameriki
 locale: ru
-slug: stolitsy-latinskoj-ameriki
+slug: brazil-argentina-uruguay-13-days
 status: published
 title: Тур в Бразилию, Аргентину и Уругвай за 13 дней
 countries:

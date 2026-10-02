@@ -1,5 +1,7 @@
 # ADA TOURS — ДОБАВЛЕНИЕ И УНИКАЛИЗАЦИЯ ТУРА
 
+Адреса объектов и правила английских slug: `docs/workflows/urls.md`. Для существующего объекта использовать закреплённые `slug`, `url` и точный `contentPath`; русское название не транслитерировать заново.
+
 Версия: 3.1
 
 Дата: 02.10.2026
@@ -32,7 +34,7 @@
 | Схема | `src/content.config.ts` |
 | Публичный адрес | Публичный хост проекта + canonical `entry.url`: `/<country-slug>/tour/<tour-slug>/` либо `/multi-country/tour/<tour-slug>/` |
 
-Нужная запись задает `id`, `slug`, `contentPath`, `url`, `sourceUrl`, `countryIds`, `routeCountryIds`, `destinationIds`, `routeDestinationIds`, выбранный текст `text.selected` и фотографии `media.images[]`. У `text.selected` используются точные `driveId`, `url`, `name`, `kind`; у изображения — `url`, `role`, `order`, `alt`. Читать именно эту запись и выбранный файл. Если они уже получены в рабочем цикле и не изменялись, использовать локальные копии. `contentPath` существующего тура содержит его текущий filename и не угадывается по русскому URL.
+Нужная запись задает `id`, `slug`, `contentPath`, `url`, `sourceUrl`, `countryIds`, `routeCountryIds`, `destinationIds`, `routeDestinationIds`, выбранный текст `text.selected` и фотографии `media.images[]`. У `text.selected` используются точные `driveId`, `url`, `name`, `kind`; у изображения — `url`, `role`, `order`, `alt`. Читать именно эту запись и выбранный файл. Если они уже получены в рабочем цикле и не изменялись, использовать локальные копии. `contentPath` существующего тура содержит его точный текущий filename и не выводится из URL. Для нового продукта нужен закреплённый английский slug по `docs/workflows/urls.md`; текущий content-файл не переименовывается вслед за slug.
 
 Папки в таблице — справочник обслуживания индекса, не область поиска. `1qJ4nY892iSINyc4E2b394H3xmnLRaEDU` — очищенный newstep, а не original. Архив V1 `1HQsgzuoIPDMFQAQ8QXQGX0h_kLWtdJbC` не является готовым V2. Выбранная запись `text.selected` имеет приоритет.
 

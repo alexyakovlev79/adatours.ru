@@ -1,7 +1,7 @@
 ---
 id: tour_source_vip_tur_v_peru
 locale: ru
-slug: vip-tur-v-peru
+slug: chile-bolivia-peru-vip
 status: published
 title: Вип тур в Чили, Боливию и Перу
 countries:

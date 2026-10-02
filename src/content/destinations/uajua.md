@@ -2,7 +2,7 @@
 id: destination_el_salvador_uajua
 locale: ru
 name: Уайуа
-slug: uajua
+slug: juayua
 status: approved
 searchAliases:
   - Хвайуа

@@ -1,7 +1,7 @@
 ---
 id: destination_belize_plasensiya
 locale: ru
-slug: plasensiya
+slug: placencia
 status: approved
 name: Пласенсия
 countryId: country_belize

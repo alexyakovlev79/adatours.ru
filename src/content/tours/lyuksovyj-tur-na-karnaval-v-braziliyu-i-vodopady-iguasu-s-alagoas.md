@@ -1,7 +1,7 @@
 ---
 id: tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas
 locale: ru
-slug: lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu-s-alagoas
+slug: luxury-brazil-rio-carnival-iguazu-alagoas-11-days
 status: published
 title: Люксовый тур в Бразилию на Карнавал в Рио, Игуасу и Алагоас | 11 дней
 countries:

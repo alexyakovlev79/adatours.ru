@@ -2,7 +2,7 @@
 id: "excursion_source_jel_val_e_de_anton"
 locale: "ru"
 title: "Эль-Валье-де-Антон"
-slug: "jel-val-e-de-anton"
+slug: el-valle-de-anton-tour
 status: "approved"
 searchAliases: []
 country: "country_panama"

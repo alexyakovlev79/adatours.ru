@@ -1,7 +1,7 @@
 ---
 id: tour_source_venesuela_populyarnye_napravleniya
 locale: ru
-slug: venesuela-populyarnye-napravleniya
+slug: venezuela-popular-destinations
 status: published
 title: 'Венесуэла: Популярные направления'
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekzoticheskij_karnaval_v_brazilii_rio_amazonka_vodopady_iguasu
 locale: ru
-slug: ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu
+slug: brazil-rio-carnival-amazon-iguazu
 status: published
 title: Тур в Бразилию - карнавал в Рио, Амазонка, водопады Игуасу
 countries:

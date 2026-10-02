@@ -1,7 +1,7 @@
 ---
 id: tour_source_chili_argentina
 locale: ru
-slug: chili-argentina
+slug: chile-argentina-deluxe
 status: published
 title: Чили & Аргентина Делюкс
 countries:

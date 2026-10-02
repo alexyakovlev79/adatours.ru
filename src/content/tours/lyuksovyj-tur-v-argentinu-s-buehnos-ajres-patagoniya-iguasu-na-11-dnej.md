@@ -2,7 +2,7 @@
 id: tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej
 locale: ru
 title: "Аргентина Deluxe за 11 дней: Буэнос-Айрес, Патагония, Ушуайя и Игуасу"
-slug: lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej
+slug: luxury-argentina-buenos-aires-patagonia-iguazu-11-days-2026-2027
 status: approved
 searchAliases:
   - "Люксовый тур в Аргентину 11 дней"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_antarktida_programma_na_ves_den
 locale: ru
-slug: antarktida-programma-na-ves-den
+slug: antarctica-day-tour-from-punta-arenas
 status: published
 title: Тур в Антарктиду на весь день из Пунта-Аренас (Чили)
 countries:

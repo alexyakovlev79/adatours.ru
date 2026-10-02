@@ -2,7 +2,7 @@
 id: "excursion_source_makuko_safari_he"
 locale: "ru"
 title: "Макуко Сафари"
-slug: "makuko-safari-he"
+slug: macuco-safari-group-add-on
 status: "approved"
 searchAliases: []
 country: "country_brazil"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_3_vzglyada_na_kosta_riku
 locale: ru
-slug: 3-vzglyada-na-kosta-riku
+slug: costa-rica-3-perspectives
 status: published
 title: 3 Взгляда на Коста Рику
 countries:

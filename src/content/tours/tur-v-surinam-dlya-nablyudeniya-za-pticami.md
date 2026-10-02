@@ -2,7 +2,7 @@
 id: tour_source_tur_v_surinam_dlya_nablyudeniya_za_pticami
 locale: ru
 title: "Тур в Суринам: наблюдение за редкими птицами джунглей и саванн"
-slug: tur-v-surinam-dlya-nablyudeniya-za-pticami
+slug: suriname-birdwatching-8-days
 status: approved
 searchAliases:
   - "бердвотчинг в Суринаме"

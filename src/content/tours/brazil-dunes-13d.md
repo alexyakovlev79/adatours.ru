@@ -2,7 +2,7 @@
 id: tour_brazil_dunes_13d
 locale: ru
 title: "Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа"
-slug: braziliya-rio-iguasu-lencois-natal-pipa-13-dnej
+slug: brazil-rio-iguazu-lencois-natal-pipa-13-days
 status: approved
 countries:
   - country_brazil

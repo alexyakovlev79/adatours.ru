@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekzoticheskij_karnaval_v_brazilii
 locale: ru
-slug: ekzoticheskij-karnaval-v-brazilii
+slug: brazil-rio-carnival-iguazu-amazon-buzios
 status: published
 title: Тур в Бразилию на Карнавал в Рио | Игуасу, Амазонка и Бузиос
 countries:

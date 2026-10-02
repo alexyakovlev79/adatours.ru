@@ -1,7 +1,7 @@
 ---
 id: "destination_paraguay_enkarnason_trinidad"
 locale: "ru"
-slug: "enkarnason-trinidad"
+slug: encarnacion-and-trinidad
 status: "approved"
 name: "Энкарнасьон & Тринидад"
 countryId: "country_paraguay"

@@ -2,7 +2,7 @@
 id: "excursion_source_torres_del_pejn_gruppovoj_tur"
 locale: "ru"
 title: "Национальный парк Торрес дель Пейн (групповой тур)"
-slug: "torres-del-pejn-gruppovoj-tur"
+slug: torres-del-paine-national-park-group-tour
 status: "approved"
 searchAliases: []
 country: "country_chile"

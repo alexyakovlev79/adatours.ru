@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_trinidad"
 locale: "ru"
-slug: "trinidad"
+slug: trinidad
 status: "approved"
 name: "Тринидад"
 countryId: "country_cuba"

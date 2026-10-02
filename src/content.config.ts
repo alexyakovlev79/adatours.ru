@@ -1,6 +1,13 @@
 import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { contentIdentity } from './lib/content-identity.mjs';
+
+const contentLoader = (collection: string) => glob({
+  base: `./src/content/${collection}`,
+  pattern: '**/*.{md,mdx}',
+  generateId: contentIdentity,
+});
 
 const locale = z.enum(['ru', 'en', 'cn']);
 const status = z.enum(['draft', 'review', 'approved', 'published', 'archived']);
@@ -31,7 +38,7 @@ const media = mediaObject.optional();
 const common = {
   id: z.string(),
   locale,
-  slug: z.string(),
+  slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'Use the approved lowercase English URL slug.'),
   status,
   searchAliases: z.array(z.string()).default([]),
   sourceUrl: z.string().url().optional(),
@@ -62,7 +69,7 @@ const editorialBand = z.object({
 });
 
 const countries = defineCollection({
-  loader: glob({ base: './src/content/countries', pattern: '**/*.{md,mdx}' }),
+  loader: contentLoader('countries'),
   schema: z.object({
     ...common,
     name: z.string(),
@@ -83,7 +90,7 @@ const countries = defineCollection({
 });
 
 const destinations = defineCollection({
-  loader: glob({ base: './src/content/destinations', pattern: '**/*.{md,mdx}' }),
+  loader: contentLoader('destinations'),
   schema: z.object({
     ...common,
     name: z.string(),
@@ -114,7 +121,7 @@ const destinations = defineCollection({
 });
 
 const tours = defineCollection({
-  loader: glob({ base: './src/content/tours', pattern: '**/*.{md,mdx}' }),
+  loader: contentLoader('tours'),
   schema: z.object({
     ...common,
     title: z.string(),
@@ -183,7 +190,7 @@ const tours = defineCollection({
 });
 
 const excursions = defineCollection({
-  loader: glob({ base: './src/content/excursions', pattern: '**/*.{md,mdx}' }),
+  loader: contentLoader('excursions'),
   schema: z.object({
     ...common,
     title: z.string(),
@@ -210,7 +217,7 @@ const excursions = defineCollection({
 });
 
 const themes = defineCollection({
-  loader: glob({ base: './src/content/themes', pattern: '**/*.{md,mdx}' }),
+  loader: contentLoader('themes'),
   schema: z.object({
     ...common,
     name: z.string(),
@@ -224,7 +231,7 @@ const themes = defineCollection({
 });
 
 const cases = defineCollection({
-  loader: glob({ base: './src/content/cases', pattern: '**/*.{md,mdx}' }),
+  loader: contentLoader('cases'),
   schema: z.object({
     ...common,
     title: z.string(),
@@ -243,7 +250,7 @@ const cases = defineCollection({
 });
 
 const people = defineCollection({
-  loader: glob({ base: './src/content/people', pattern: '**/*.{md,mdx}' }),
+  loader: contentLoader('people'),
   schema: z.object({
     ...common,
     name: z.string(),
@@ -256,7 +263,7 @@ const people = defineCollection({
 });
 
 const articles = defineCollection({
-  loader: glob({ base: './src/content/articles', pattern: '**/*.{md,mdx}' }),
+  loader: contentLoader('articles'),
   schema: z.object({
     ...common,
     title: z.string(),

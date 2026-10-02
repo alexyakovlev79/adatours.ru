@@ -1,7 +1,7 @@
 ---
 id: tour_source_klassicheskaya_kosta_rika
 locale: ru
-slug: klassicheskaya-kosta-rika
+slug: classic-costa-rica-san-jose-monteverde-arenal
 status: published
 title: Тур в Коста-Рику, Сан-Хосе, в леса Монтеверде и на вулкан Ареналь
 countries:

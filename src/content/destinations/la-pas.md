@@ -1,7 +1,7 @@
 ---
 id: destination_bolivia_la_pas
 locale: ru
-slug: la-pas
+slug: la-paz
 status: approved
 name: Ла Пас
 countryId: country_bolivia

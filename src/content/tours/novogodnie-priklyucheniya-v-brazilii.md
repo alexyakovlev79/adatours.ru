@@ -1,7 +1,7 @@
 ---
 id: tour_source_novogodnie_priklyucheniya_v_brazilii
 locale: ru
-slug: novogodnie-priklyucheniya-v-brazilii
+slug: brazil-new-year-rio-pantanal-bonito-buzios
 status: published
 title: 'Тур в Бразилию на Новый Год: Рио, Пантанал, Бонито, пляжи Бузиоса'
 countries:

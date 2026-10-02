@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_v_kafazhate"
 locale: "ru"
 title: "Экскурсия в Кафажате"
-slug: "jekskursija-v-kafazhate"
+slug: cafayate-tour
 status: "approved"
 searchAliases: []
 country: "country_argentina"

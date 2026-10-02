@@ -1,7 +1,7 @@
 ---
 id: tour_source_lensojs_maranenses
 locale: ru
-slug: lensojs-maranenses
+slug: lencois-maranhenses
 status: published
 title: Ленсойс-Мараньенсес
 countries:

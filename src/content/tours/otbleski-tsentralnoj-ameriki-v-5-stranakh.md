@@ -1,7 +1,7 @@
 ---
 id: tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh
 locale: ru
-slug: otbleski-tsentralnoj-ameriki-v-5-stranakh
+slug: central-america-5-countries-19-days
 status: published
 title: Тур в Гватемалу, Гондурас, Сальвадор, Никарагуа и Коста-Рику на 19 дней
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekvador_krasota_i_priroda
 locale: ru
-slug: ekvador-krasota-i-priroda
+slug: ecuador-quito-cotopaxi-mashpi-galapagos-9-days
 status: published
 title: Тур в Эквадор на 9 дней – Кито, Котопакси, Машпи, Галапагосы
 countries:

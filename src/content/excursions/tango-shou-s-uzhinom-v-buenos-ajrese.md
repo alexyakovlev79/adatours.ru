@@ -2,7 +2,7 @@
 id: excursion_buenos_aires_tango_show_dinner
 locale: ru
 title: "Танго-шоу с ужином в Буэнос-Айресе"
-slug: tango-shou-s-uzhinom-v-buenos-ajrese
+slug: buenos-aires-tango-show-with-dinner
 status: approved
 searchAliases:
   - Танго-шоу Буэнос-Айрес

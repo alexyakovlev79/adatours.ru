@@ -1,7 +1,7 @@
 ---
 id: tour_source_nezabyvaemyj_novyj_god_v_rio
 locale: ru
-slug: nezabyvaemyj-novyj-god-v-rio
+slug: rio-new-year-copacabana-christ-redeemer-sugarloaf
 status: published
 title: 'Новый год в Рио: Копакабана, статуя Христа, Сахарная Голова'
 countries:

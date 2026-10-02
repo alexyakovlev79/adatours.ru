@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_manuel_antonio"
 locale: "ru"
-slug: "manuel-antonio"
+slug: manuel-antonio
 status: "approved"
 name: "Мануэль Антонио"
 countryId: "country_costa_rica"

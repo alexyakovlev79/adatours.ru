@@ -10,5 +10,6 @@ export default defineConfig({
   base,
   output: 'static',
   trailingSlash: 'always',
+  prerenderConflictBehavior: 'error',
   integrations: [sitemap({ filter: (page) => !isLegacyRedirectPath(new URL(page).pathname, base) })],
 });

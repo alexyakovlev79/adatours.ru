@@ -1,7 +1,7 @@
 ---
 id: tour_source_klassicheskaya_antarktida
 locale: ru
-slug: klassicheskaya-antarktida
+slug: classic-antarctica-air-cruise-8-days
 status: published
 title: Классическая Антарктика
 countries:

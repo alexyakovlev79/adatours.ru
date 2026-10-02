@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_truhilo"
 locale: ru
-slug: "truhilo"
+slug: trujillo
 status: approved
 name: "Трухильо"
 countryId: "country_peru"

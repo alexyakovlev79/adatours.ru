@@ -2,7 +2,7 @@
 id: destination_brazil_iguacu
 locale: ru
 name: Фоз-ду-Игуасу
-slug: foz-do-iguasu
+slug: foz-do-iguacu
 status: approved
 countryId: country_brazil
 destinationType: city

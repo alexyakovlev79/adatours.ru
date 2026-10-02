@@ -1,7 +1,7 @@
 ---
 id: "destination_uruguay_punta_del_este"
 locale: ru
-slug: "punta-del-este"
+slug: punta-del-este
 status: approved
 name: "Пунта дель Эсте"
 countryId: "country_uruguay"

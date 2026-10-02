@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekstrim_v_kosta_rike
 locale: ru
-slug: ekstrim-v-kosta-rike
+slug: costa-rica-extreme-adventure
 status: published
 title: Экстремальная Коста-Рика
 countries:

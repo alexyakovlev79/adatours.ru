@@ -2,7 +2,7 @@
 id: "excursion_source_tur_v_otavalo_i_kotakachi"
 locale: "ru"
 title: "Экскурсия в город Котакачи, Водопад Пегуче в Отавало и мастерские"
-slug: "tur-v-otavalo-i-kotakachi"
+slug: otavalo-cotacachi-peguche-tour
 status: "approved"
 searchAliases: []
 country: "country_ecuador"

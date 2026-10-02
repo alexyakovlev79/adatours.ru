@@ -2,7 +2,7 @@
 id: "excursion_source_obzornaja_jekskursija_po_sant_jago"
 locale: "ru"
 title: "Обзорная экскурсия по Сантьяго"
-slug: "obzornaja-jekskursija-po-sant-jago"
+slug: santiago-city-tour
 status: "approved"
 searchAliases: []
 country: "country_chile"

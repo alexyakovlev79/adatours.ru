@@ -1,7 +1,7 @@
 ---
 id: tour_source_argentina_puteshestvie_v_doistoricheskij_mir
 locale: ru
-slug: argentina-puteshestvie-v-doistoricheskij-mir
+slug: argentina-prehistoric-journey
 status: published
 title: 'Тур в Аргентину: Буэнос-Айрес, Мендоса,Сан Хуан, Пуэрто Мадрин'
 countries:

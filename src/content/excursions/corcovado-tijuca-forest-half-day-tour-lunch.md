@@ -2,7 +2,7 @@
 id: "excursion_source_corcovado_tijuca_forest_half_day_tour_lunch"
 locale: "ru"
 title: "Джип тур на Корковадо и тропический лес Тижука"
-slug: "corcovado-tijuca-forest-half-day-tour-lunch"
+slug: corcovado-tijuca-forest-jeep-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

@@ -2,7 +2,7 @@
 id: "excursion_source_ostrov_bartolome_morskaya_ekskursiya"
 locale: "ru"
 title: "Экскурсия на Галапагосские острова: остров Бартоломе"
-slug: "ostrov-bartolome-morskaya-ekskursiya"
+slug: bartolome-island-boat-tour
 status: "approved"
 searchAliases: []
 country: "country_ecuador"

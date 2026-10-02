@@ -13,8 +13,10 @@
       "properties": {
         "countryId": { "type": "string", "pattern": "^country_[a-z0-9_]+$" },
         "name": { "type": "string", "minLength": 1 },
+        "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "description": "Explicit English URL segment. Required for a new destination unless englishName is supplied; an existing match keeps its recorded slug." },
+        "englishName": { "type": "string", "minLength": 1, "description": "Established English exonym or accepted proper name in the Latin alphabet; accents are allowed and stripped for the slug. Russian transliteration is forbidden. Required for a new destination unless slug is supplied; also recorded as a known name alias." },
         "aliases": { "type": "array", "items": { "type": "string", "minLength": 1 } },
-        "destinationId": { "type": "string", "pattern": "^destination_[a-z0-9_]+$", "description": "Select an existing canonical ID; never supply a new invented ID." },
+        "destinationId": { "type": "string", "pattern": "^destination_[a-z0-9_]+$", "description": "Select an existing canonical ID; never supply a new invented ID. Existing matches, including name/alias matches without this field, do not require slug or englishName." },
         "discoveredIn": {
           "type": "object",
           "additionalProperties": false,

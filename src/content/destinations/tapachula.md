@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_tapachula"
 locale: "ru"
-slug: "tapachula"
+slug: tapachula
 status: "approved"
 name: "Тапачула"
 countryId: "country_mexico"

@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_na_brazil_skuju_storonu_vodopadov"
 locale: "ru"
 title: "Экскурсия на Бразильскую сторону водопадов"
-slug: "jekskursija-na-brazil-skuju-storonu-vodopadov"
+slug: iguazu-falls-brazilian-side-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

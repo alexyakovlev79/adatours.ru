@@ -2,7 +2,7 @@
 id: "excursion_source_penol_i_guatape"
 locale: "ru"
 title: "Экскурсия из Медельина: Эль Пеньолa и Гуатапе (Колумбия)"
-slug: "penol-i-guatape"
+slug: el-penol-guatape-from-medellin
 status: "approved"
 searchAliases: []
 country: "country_colombia"

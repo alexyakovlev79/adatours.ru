@@ -1,7 +1,7 @@
 ---
 id: tour_source_udivitelnyj_gastronomicheskij_tur_po_meksike_2024
 locale: ru
-slug: udivitelnyj-gastronomicheskij-tur-po-meksike-2024
+slug: mexico-gourmet-discovery-2024
 status: published
 title: Удивительный Гастрономический Тур по Мексике по цене 3276$ |Ada Tours
 countries:

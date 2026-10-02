@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_v_buzios"
 locale: "ru"
 title: "Экскурсия в Бузиос"
-slug: "jekskursija-v-buzios"
+slug: buzios-group-tour-from-rio
 status: "approved"
 searchAliases: []
 country: "country_brazil"

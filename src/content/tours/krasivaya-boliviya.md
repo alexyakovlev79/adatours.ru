@@ -1,7 +1,7 @@
 ---
 id: tour_source_krasivaya_boliviya
 locale: ru
-slug: krasivaya-boliviya
+slug: bolivia-uyuni-moon-valley-la-paz-tiwanaku
 status: published
 title: 'Тур в Боливию: солончак Уюни, Лунная Долина, Ла-Пас и Тиванку'
 countries:

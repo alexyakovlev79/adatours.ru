@@ -2,7 +2,7 @@
 id: "excursion_source_morskaya_ekskursiya_na_ostrov_isabela_na_skorostnom_katere"
 locale: "ru"
 title: "Морская экскурсия на Галапагосские острова - остров Исабела"
-slug: "morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere"
+slug: isabela-island-speedboat-tour
 status: "approved"
 searchAliases: []
 country: "country_ecuador"

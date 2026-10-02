@@ -2,7 +2,7 @@
 id: "excursion_source_tizhuka_tropicheskij_les_i_vodopady_na_dzhipe"
 locale: "ru"
 title: "Экскурсия в Рио-де-Жанейро на джипе в Лес Тижука"
-slug: "tizhuka-tropicheskij-les-i-vodopady-na-dzhipe"
+slug: tijuca-forest-waterfalls-jeep-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

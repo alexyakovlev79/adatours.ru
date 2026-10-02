@@ -1,7 +1,7 @@
 ---
 id: tour_source_priklyuchenie_v_gvianakh
 locale: ru
-slug: priklyuchenie-v-gvianakh
+slug: guianas-adventure
 status: published
 title: Приключение в Гвианах
 countries:

@@ -2,7 +2,7 @@
 id: excursion_buenos_aires_colonia_del_sacramento_day_trip
 locale: ru
 title: "Колония-дель-Сакраменто из Буэнос-Айреса"
-slug: koloniya-del-sakramento-iz-buenos-ajresa
+slug: colonia-del-sacramento-from-buenos-aires
 status: approved
 searchAliases:
   - "Колония-дель-Сакраменто из Буэнос-Айреса"

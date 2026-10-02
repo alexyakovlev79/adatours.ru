@@ -2,7 +2,7 @@
 id: excursion_rio_sugarloaf_trekking
 locale: ru
 title: "Треккинг на Сахарную Голова"
-slug: trekking-na-saharnuyu-golovu
+slug: sugarloaf-mountain-hike
 status: approved
 searchAliases:
   - Треккинг на Сахарную голову

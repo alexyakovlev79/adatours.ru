@@ -1,7 +1,7 @@
 ---
 id: tour_source_mototur_cherez_braziliyu
 locale: ru
-slug: mototur-cherez-braziliyu
+slug: brazil-motorcycle-tour-12-days
 status: published
 title: Мото тур по Бразилии за 12 дней
 countries:

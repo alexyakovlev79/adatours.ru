@@ -2,7 +2,7 @@
 id: excursion_source_makuko_safari
 locale: ru
 title: "Макуко Сафари у водопадов Игуасу"
-slug: makuko-safari
+slug: macuco-safari
 status: approved
 searchAliases:
   - Макуко Сафари

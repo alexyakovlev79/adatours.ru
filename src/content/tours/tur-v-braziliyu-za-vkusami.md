@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_braziliyu_za_vkusami
 locale: ru
-slug: tur-v-braziliyu-za-vkusami
+slug: brazil-rio-ilha-grande-paraty
 status: published
 title: Тур в Бразилию в Рио де Жанейро, Илья-Гранди, Парати
 countries:

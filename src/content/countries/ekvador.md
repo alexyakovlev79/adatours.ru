@@ -2,7 +2,7 @@
 id: country_ecuador
 locale: ru
 name: Эквадор
-slug: ekvador
+slug: ecuador
 status: approved
 searchAliases:
   - Ecuador

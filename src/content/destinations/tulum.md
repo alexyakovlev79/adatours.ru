@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_tulum"
 locale: "ru"
-slug: "tulum"
+slug: tulum
 status: "approved"
 name: "Тулум"
 countryId: "country_mexico"

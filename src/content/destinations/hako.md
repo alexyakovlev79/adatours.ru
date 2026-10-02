@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_hako"
 locale: "ru"
-slug: "hako"
+slug: jaco
 status: "approved"
 name: "Хако"
 countryId: "country_costa_rica"

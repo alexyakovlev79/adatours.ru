@@ -1,7 +1,7 @@
 ---
 id: tour_source_tur_v_peru_i_braziliyu
 locale: ru
-slug: tur-v-peru-i-braziliyu
+slug: peru-machu-picchu-brazil-rio-beaches
 status: published
 title: Тур в Перу с Мачу Пикчу и Бразилию в Рио с пляжным отдыхом
 countries:

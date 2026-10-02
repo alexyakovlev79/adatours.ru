@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_ikstapa_i_siuataneho"
 locale: "ru"
-slug: "ikstapa-i-siuataneho"
+slug: ixtapa-and-zihuatanejo
 status: "approved"
 name: "Икстапа и Сиуатанехо"
 countryId: "country_mexico"

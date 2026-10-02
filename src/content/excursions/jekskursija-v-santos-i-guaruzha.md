@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_v_santos_i_guaruzha"
 locale: "ru"
 title: "Экскурсия в Сантос и Гуаружа"
-slug: "jekskursija-v-santos-i-guaruzha"
+slug: santos-guaruja-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

@@ -2,7 +2,7 @@
 id: excursion_source_ekskursiya_po_montevideo
 locale: ru
 title: "Монтевидео из Буэнос-Айреса"
-slug: ekskursiya-po-montevideo
+slug: montevideo-day-trip-from-buenos-aires
 status: approved
 searchAliases:
   - Экскурсия по Монтевидео

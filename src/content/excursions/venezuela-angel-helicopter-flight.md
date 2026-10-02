@@ -1,7 +1,7 @@
 ---
 id: excursion_venezuela_angel_helicopter_flight
 locale: ru
-slug: venezuela-angel-helicopter-flight
+slug: angel-falls-helicopter-flight
 status: published
 title: Полет на вертолете над Сальто-Анхелем
 country: country_venezuela

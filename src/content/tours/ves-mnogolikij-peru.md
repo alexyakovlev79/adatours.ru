@@ -1,7 +1,7 @@
 ---
 id: tour_source_ves_mnogolikij_peru
 locale: ru
-slug: ves-mnogolikij-peru
+slug: peru-lima-cusco-titicaca-colca-arequipa-nazca
 status: published
 title: 'Тур в Перу: Лима, Куско, Титикака, Колка, Арекипа, пустыня Наска'
 countries:

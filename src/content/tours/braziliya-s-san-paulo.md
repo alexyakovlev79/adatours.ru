@@ -1,7 +1,7 @@
 ---
 id: tour_source_braziliya_s_san_paulo
 locale: ru
-slug: braziliya-s-san-paulo
+slug: brazil-sao-paulo-manaus-rio-iguazu
 status: published
 title: 'Тур в Бразилию: Сан Пауло, Манаус, Рио-де-Жанейро, Игуасу'
 countries:

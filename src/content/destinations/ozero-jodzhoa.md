@@ -1,7 +1,7 @@
 ---
 id: "destination_honduras_ozero_jodzhoa"
 locale: ru
-slug: "ozero-jodzhoa"
+slug: lake-yojoa
 status: approved
 name: "Озеро Йоджоа"
 countryId: "country_honduras"

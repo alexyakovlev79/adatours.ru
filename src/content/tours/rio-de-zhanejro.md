@@ -1,7 +1,7 @@
 ---
 id: tour_source_rio_de_zhanejro
 locale: ru
-slug: rio-de-zhanejro
+slug: pousada-mamori-sport-fishing
 status: published
 title: Спортивная рыбалка – Pousada Mamori
 countries:

@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_chiklajo"
 locale: ru
-slug: "chiklajo"
+slug: chiclayo
 status: approved
 name: "Чиклайо"
 countryId: "country_peru"

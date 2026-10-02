@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_senfuegos"
 locale: "ru"
-slug: "senfuegos"
+slug: cienfuegos
 status: "approved"
 name: "Сьенфуэгос"
 countryId: "country_cuba"

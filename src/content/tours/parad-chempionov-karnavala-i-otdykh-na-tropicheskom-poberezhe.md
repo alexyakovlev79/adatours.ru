@@ -1,7 +1,7 @@
 ---
 id: tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe
 locale: ru
-slug: parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe
+slug: brazil-champions-parade-tropical-coast
 status: published
 title: Индивидуальный тур в Бразилию на Парад Чемпионов
 countries:

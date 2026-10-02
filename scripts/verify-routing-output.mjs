@@ -6,7 +6,7 @@ import yaml from 'js-yaml';
 import {
   aliasesForEntity, countryBreadcrumbs, countryPath, destinationBreadcrumbs, destinationPath,
   excursionBreadcrumbs, excursionPath, expandBreadcrumbTrails,
-  tourBreadcrumbs, tourPath,
+  isLegacyRedirectPath, pageAliases, tourBreadcrumbs, tourPath,
 } from '../src/lib/routes.ts';
 
 // Inspect the output of an existing build. This command never runs a build.
@@ -44,9 +44,30 @@ const definitions = [
   { collection: 'excursions', type: 'excursion', path: excursionPath, breadcrumbs: excursionBreadcrumbs },
 ];
 let details = 0;
-let aliases = 0;
 let parallelCountryTrails = 0;
 const catalogues = new Set();
+const redirectTargets = new Map();
+function verifyRedirect(from, to) {
+  const previous = redirectTargets.get(from);
+  if (previous) {
+    assert.equal(previous, to, `alias has conflicting targets: ${from}`);
+    return;
+  }
+  assert.ok(existsSync(fileFor(from)), `redirect page missing: ${from}`);
+  assert.ok(existsSync(fileFor(to)), `redirect target missing: ${from} → ${to}`);
+  assert.equal(isLegacyRedirectPath(to), false, `redirect target must be final: ${from} → ${to}`);
+  const redirect = html(from);
+  const target = absolute(to);
+  assert.equal(canonical(redirect), target, `redirect canonical: ${from}`);
+  assert.equal(canonical(html(to)), target, `redirect targets a noncanonical page: ${from} → ${to}`);
+  assert.equal(tagWith(html(to), 'meta', 'http-equiv', 'refresh'), undefined, `redirect chain: ${from} → ${to}`);
+  assert.ok((attr(tagWith(redirect, 'meta', 'name', 'robots') ?? '', 'content') ?? '').includes('noindex'), `redirect robots: ${from}`);
+  assert.equal(attr(tagWith(redirect, 'meta', 'http-equiv', 'refresh') ?? '', 'content'), `0;url=${href(to)}`, `redirect refresh: ${from}`);
+  assert.ok(redirect.includes('window.location.search') && redirect.includes('window.location.hash'), `redirect loses query/hash: ${from}`);
+  assert.ok(redirect.includes('data-pagefind-ignore') && !redirect.includes('data-pagefind-body'), `redirect search exclusion: ${from}`);
+  assert.ok(!sitemapUrls.has(absolute(from)), `redirect present in sitemap: ${from}`);
+  redirectTargets.set(from, to);
+}
 for (const definition of definitions) {
   const directory = resolve(root, 'src/content', definition.collection);
   const entries = readdirSync(directory).filter((name) => name.endsWith('.md')).map((name) => yaml.load(read(resolve(directory, name)).split(/^---\s*$/m)[1]))
@@ -74,7 +95,9 @@ for (const definition of definitions) {
     assert.ok(nav, `visible breadcrumbs missing: ${entry.id}`);
     const levels = [...nav.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/g)].map((match) => match[1]);
     assert.equal(levels.length, crumbs.length, `visual breadcrumb levels: ${entry.id}`);
-    assert.ok(levels.at(-1).includes('aria-current="page"'), `current breadcrumb missing: ${entry.id}`);
+    // A multi-country trail ends with parallel parent links after the current
+    // object's label was deliberately removed from the visible breadcrumbs.
+    if (!('links' in crumbs.at(-1))) assert.ok(levels.at(-1).includes('aria-current="page"'), `current breadcrumb missing: ${entry.id}`);
     crumbs.forEach((crumb, index) => {
       const links = 'links' in crumb ? crumb.links : [crumb];
       if ('links' in crumb) {
@@ -94,17 +117,40 @@ for (const definition of definitions) {
     details++;
 
     for (const legacy of aliasesForEntity(definition.type, entry, path)) {
-      const redirect = html(legacy);
-      assert.equal(canonical(redirect), target, `redirect canonical: ${legacy}`);
-      assert.ok((attr(tagWith(redirect, 'meta', 'name', 'robots') ?? '', 'content') ?? '').includes('noindex'), `redirect robots: ${legacy}`);
-      assert.equal(attr(tagWith(redirect, 'meta', 'http-equiv', 'refresh') ?? '', 'content'), `0;url=${href(path)}`, `redirect refresh: ${legacy}`);
-      assert.ok(redirect.includes('window.location.search') && redirect.includes('window.location.hash'), `redirect loses query/hash: ${legacy}`);
-      assert.ok(redirect.includes('data-pagefind-ignore') && !redirect.includes('data-pagefind-body'), `redirect search exclusion: ${legacy}`);
-      assert.ok(!sitemapUrls.has(absolute(legacy)), `redirect present in sitemap: ${legacy}`);
-      aliases++;
+      verifyRedirect(legacy, path);
     }
+  }
+}
+const entityAliases = redirectTargets.size;
+for (const { from, to } of pageAliases) verifyRedirect(from, to);
+
+// Check all rendered canonical pages, including static pages and catalogue pages.
+// Old spellings may survive as redirect locations, but never as internal navigation.
+let canonicalPages = 0;
+let internalLinks = 0;
+const pageFiles = readdirSync(output, { recursive: true }).filter((name) => name === 'index.html' || name.endsWith('/index.html'));
+for (const file of pageFiles) {
+  const path = `/${file.replace(/(?:^|\/)index\.html$/, '')}`.replace(/\/?$/, '/');
+  const source = html(path);
+  const canonicalUrl = canonical(source);
+  if (!canonicalUrl || isLegacyRedirectPath(path)) continue;
+  assert.equal(canonicalUrl, absolute(path), `canonical metadata disagrees with rendered path: ${path}`);
+  canonicalPages++;
+  for (const match of source.matchAll(/<a\b[^>]*>/gi)) {
+    const value = attr(match[0], 'href');
+    if (!value) continue;
+    let linked;
+    try { linked = new URL(value.replace(/&amp;/g, '&'), canonicalUrl); }
+    catch { continue; }
+    if (linked.origin !== siteRoot.origin || !['http:', 'https:'].includes(linked.protocol)) continue;
+    internalLinks++;
+    assert.equal(isLegacyRedirectPath(linked.pathname, base), false, `canonical page links to legacy URL: ${path} → ${value}`);
   }
 }
 assert.ok(existsSync(fileFor('/multi-country/')), 'existing multi-country editorial page must remain');
 assert.ok(existsSync(fileFor('/multi-country/tour/')), 'multi-country tour catalogue must exist');
-console.log(JSON.stringify({ ok: true, site: siteRoot.toString(), details, aliases, cataloguePages: catalogues.size, parallelCountryTrails }, null, 2));
+console.log(JSON.stringify({
+  ok: true, site: siteRoot.toString(), details, aliases: redirectTargets.size,
+  entityAliases, pageAliases: pageAliases.length, cataloguePages: catalogues.size,
+  canonicalPages, internalLinks, parallelCountryTrails,
+}, null, 2));

@@ -1,7 +1,7 @@
 ---
 id: "destination_dominican_republic_santo_domingo"
 locale: ru
-slug: "santo-domingo"
+slug: santo-domingo
 status: approved
 name: "Санто Доминго"
 countryId: "country_dominican_republic"

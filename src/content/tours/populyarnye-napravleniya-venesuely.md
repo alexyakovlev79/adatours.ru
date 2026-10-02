@@ -1,7 +1,7 @@
 ---
 id: tour_source_populyarnye_napravleniya_venesuely
 locale: ru
-slug: populyarnye-napravleniya-venesuely
+slug: popular-destinations-of-venezuela
 status: published
 title: Популярные Направления Венесуэлы от туроператора Ада Турс
 countries:

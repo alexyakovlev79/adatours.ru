@@ -1,7 +1,7 @@
 ---
 id: excursion_amazon_jungle_survival_trekking
 locale: ru
-slug: trekking-i-vyzhivanie-v-dzhunglyah
+slug: amazon-jungle-survival-trek
 status: published
 title: Треккинг и выживание в джунглях Амазонии
 country: country_brazil

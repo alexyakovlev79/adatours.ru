@@ -1,7 +1,7 @@
 ---
 id: tour_source_ot_venesuely_do_kolumbii
 locale: ru
-slug: ot-venesuely-do-kolumbii
+slug: venezuela-colombia-group-tour-12-days
 status: published
 title: Тур в Венесуэлу и Колумбию на 12 дней (групповой с русским гидом)
 countries:

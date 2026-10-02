@@ -1,7 +1,7 @@
 ---
 id: excursion_venezuela_kavak_angel_flight
 locale: ru
-slug: venezuela-kavak-angel-flight
+slug: kavac-canyon-angel-falls-flight
 status: published
 title: Каньон Кавак и полет над Сальто-Анхелем
 country: country_venezuela

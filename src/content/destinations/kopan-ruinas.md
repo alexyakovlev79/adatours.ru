@@ -1,7 +1,7 @@
 ---
 id: "destination_honduras_kopan_ruinas"
 locale: ru
-slug: "kopan-ruinas"
+slug: copan-ruinas
 status: approved
 name: "Копан Руинас"
 countryId: "country_honduras"

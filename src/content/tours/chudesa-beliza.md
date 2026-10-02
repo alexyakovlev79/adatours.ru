@@ -1,7 +1,7 @@
 ---
 id: tour_source_chudesa_beliza
 locale: ru
-slug: chudesa-beliza
+slug: belize-wonders-6-days
 status: published
 title: Тур в Белиз, на 6 дней (с англо или русскоговорящим гидом)
 countries:

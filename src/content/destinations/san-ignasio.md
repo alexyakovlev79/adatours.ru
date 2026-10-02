@@ -1,7 +1,7 @@
 ---
 id: destination_belize_san_ignasio
 locale: ru
-slug: san-ignasio
+slug: san-ignacio
 status: approved
 name: Сан Игнасио
 countryId: country_belize

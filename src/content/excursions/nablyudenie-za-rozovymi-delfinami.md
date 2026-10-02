@@ -1,7 +1,7 @@
 ---
 id: excursion_amazon_pink_dolphin_observation
 locale: ru
-slug: nablyudenie-za-rozovymi-delfinami
+slug: amazon-pink-dolphin-watching
 status: published
 title: Наблюдение за розовыми дельфинами в Амазонии
 country: country_brazil

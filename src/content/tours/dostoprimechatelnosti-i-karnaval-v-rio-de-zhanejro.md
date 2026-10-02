@@ -1,7 +1,7 @@
 ---
 id: tour_source_dostoprimechatelnosti_i_karnaval_v_rio_de_zhanejro
 locale: ru
-slug: dostoprimechatelnosti-i-karnaval-v-rio-de-zhanejro
+slug: rio-de-janeiro-sightseeing-carnival
 status: published
 title: Достопримечательности и Карнавал в Рио-де-Жанейро
 countries:

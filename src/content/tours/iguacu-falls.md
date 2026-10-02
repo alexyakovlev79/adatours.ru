@@ -2,7 +2,7 @@
 id: tour_source_iguacu_falls
 locale: ru
 title: "Свадебная церемония у водопадов Игуасу: 3 дня в Бразилии"
-slug: iguacu-falls
+slug: iguazu-falls-wedding
 status: approved
 searchAliases:
   - "свадьба на водопадах Игуасу"

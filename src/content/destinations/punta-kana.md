@@ -1,7 +1,7 @@
 ---
 id: "destination_dominican_republic_punta_kana"
 locale: ru
-slug: "punta-kana"
+slug: punta-cana
 status: approved
 name: "Пунта-Кана"
 countryId: "country_dominican_republic"

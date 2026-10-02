@@ -1,7 +1,7 @@
 ---
 id: "destination_dominican_republic_samana"
 locale: ru
-slug: "samana"
+slug: samana
 status: approved
 name: "Самана"
 countryId: "country_dominican_republic"

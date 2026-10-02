@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_belize_za_11_dnej
 locale: ru
-slug: luchshee-v-belize-za-11-dnej
+slug: best-of-belize-11-days
 status: published
 title: Лучшее в Белизе за 11 дней
 countries:

@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_varadero"
 locale: "ru"
-slug: "varadero"
+slug: varadero
 status: "approved"
 name: "Варадеро"
 countryId: "country_cuba"

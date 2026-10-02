@@ -1,7 +1,7 @@
 ---
 id: tour_source_pantanal_4dnya_3_nochi
 locale: ru
-slug: pantanal-4dnya-3-nochi
+slug: pantanal-4-days-3-nights
 status: published
 title: Пантанал 4дня/ 3 ночи
 countries:

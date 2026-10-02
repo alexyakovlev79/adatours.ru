@@ -2,7 +2,7 @@
 id: theme_adventure
 locale: ru
 name: Приключения
-slug: priklyucheniya
+slug: adventure
 status: approved
 summary: >-
   Трекинг, каякинг, джунгли и горные районы можно собрать в отдельную активную поездку или добавить на несколько дней к обычному маршруту по Латинской Америке.

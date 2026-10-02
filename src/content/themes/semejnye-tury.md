@@ -2,7 +2,7 @@
 id: theme_family
 locale: ru
 name: Семейные туры
-slug: semejnye-tury
+slug: family-tours
 status: approved
 summary: >-
   Семейную поездку по Латинской Америке лучше собирать с учетом возраста детей, длины переездов, жары, высоты и привычного режима дня.

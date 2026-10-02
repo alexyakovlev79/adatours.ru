@@ -2,7 +2,7 @@
 id: "excursion_source_fazendy_kofejnykh_baronov"
 locale: "ru"
 title: "Фазенды кофейных баронов"
-slug: "fazendy-kofejnykh-baronov"
+slug: coffee-baron-estates-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

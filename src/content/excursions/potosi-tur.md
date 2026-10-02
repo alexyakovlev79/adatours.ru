@@ -2,7 +2,7 @@
 id: "excursion_source_potosi_tur"
 locale: "ru"
 title: "Экскурсия в город Потоси в Боливии на 4 часа"
-slug: "potosi-tur"
+slug: potosi-city-tour
 status: "approved"
 searchAliases: []
 country: "country_bolivia"

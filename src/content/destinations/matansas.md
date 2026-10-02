@@ -1,7 +1,7 @@
 ---
 id: "destination_cuba_matansas"
 locale: "ru"
-slug: "matansas"
+slug: matanzas
 status: "approved"
 name: "Матансас"
 countryId: "country_cuba"

@@ -1,7 +1,7 @@
 ---
 id: "destination_peru_tumbes"
 locale: ru
-slug: "tumbes"
+slug: tumbes
 status: approved
 name: "Тумбес"
 countryId: "country_peru"

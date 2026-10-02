@@ -1,7 +1,7 @@
 ---
 id: tour_source_vivat_kolumbiya
 locale: ru
-slug: vivat-kolumbiya
+slug: viva-colombia
 status: published
 title: Виват Колумбия
 countries:

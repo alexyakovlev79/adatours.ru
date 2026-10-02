@@ -1,7 +1,7 @@
 ---
 id: tour_source_udivitelnaya_salta
 locale: ru
-slug: udivitelnaya-salta
+slug: amazing-salta
 status: published
 title: Удивительная Сальта
 countries:

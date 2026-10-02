@@ -1,7 +1,7 @@
 ---
 id: tour_source_koloritnyj_santyago_i_zagadochnyj_ostrov_paskhi
 locale: ru
-slug: koloritnyj-santyago-i-zagadochnyj-ostrov-paskhi
+slug: santiago-easter-island
 status: published
 title: Колоритный Сантьяго и загадочный остров Пасхи
 countries:

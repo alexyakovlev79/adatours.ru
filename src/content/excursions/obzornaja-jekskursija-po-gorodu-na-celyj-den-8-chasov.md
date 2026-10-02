@@ -2,7 +2,7 @@
 id: "excursion_source_obzornaja_jekskursija_po_gorodu_na_celyj_den_8_chasov"
 locale: "ru"
 title: "Обзорная экскурсия по городу на целый день (8 часов)"
-slug: "obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov"
+slug: sao-paulo-city-tour-8-hours
 status: "approved"
 searchAliases: []
 country: "country_brazil"

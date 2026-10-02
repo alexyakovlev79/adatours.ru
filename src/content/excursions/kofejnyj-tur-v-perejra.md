@@ -2,7 +2,7 @@
 id: excursion_source_kofejnyj_tur_v_perejra
 locale: ru
 title: "Перейра: кофейная ферма и дегустация колумбийского кофе"
-slug: kofejnyj-tur-v-perejra
+slug: pereira-coffee-farm-tour
 status: approved
 searchAliases:
   - Кофейный тур в Перейре

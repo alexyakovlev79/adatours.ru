@@ -1,7 +1,7 @@
 ---
 id: destination_argentina_ushuajya
 locale: ru
-slug: ushuajya
+slug: ushuaia
 status: approved
 name: Ушуайя
 countryId: country_argentina

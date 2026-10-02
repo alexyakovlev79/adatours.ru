@@ -1,7 +1,7 @@
 ---
 id: tour_source_otbleski_tsentralnoj_ameriki
 locale: ru
-slug: otbleski-tsentralnoj-ameriki
+slug: central-america-highlights
 status: published
 title: 'Тур в Центральную Америку: лучшие достопримечательности'
 countries:

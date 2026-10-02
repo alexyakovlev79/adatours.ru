@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekonomichnaya_kosta_rika
 locale: ru
-slug: ekonomichnaya-kosta-rika
+slug: budget-costa-rica
 status: published
 title: Экономичная Коста Рика
 countries:

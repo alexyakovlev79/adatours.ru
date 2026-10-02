@@ -1,7 +1,7 @@
 ---
 id: "destination_guatemala_lago_izabal"
 locale: ru
-slug: "lago-izabal"
+slug: lake-izabal
 status: approved
 name: "Лаго-Изабал"
 countryId: "country_guatemala"

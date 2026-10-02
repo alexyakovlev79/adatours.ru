@@ -1,7 +1,7 @@
 ---
 id: tour_source_kolumbiya_metropoliten
 locale: ru
-slug: kolumbiya-metropoliten
+slug: metropolitan-colombia
 status: published
 title: Колумбия Метрополитен
 countries:

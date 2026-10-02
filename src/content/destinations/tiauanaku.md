@@ -1,7 +1,7 @@
 ---
 id: destination_bolivia_tiauanaku
 locale: ru
-slug: tiauanaku
+slug: tiwanaku
 status: approved
 name: Тиауанаку
 countryId: country_bolivia

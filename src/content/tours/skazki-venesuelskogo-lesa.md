@@ -1,7 +1,7 @@
 ---
 id: tour_source_skazki_venesuelskogo_lesa
 locale: ru
-slug: skazki-venesuelskogo-lesa
+slug: venezuela-forest-tales
 status: published
 title: Сказки Венесуэльского Леса
 countries:

@@ -1,7 +1,7 @@
 ---
 id: "destination_chile_santyago_de_chili"
 locale: ru
-slug: "santyago-de-chili"
+slug: santiago-de-chile
 status: approved
 name: "Сантьяго-де-Чили"
 countryId: "country_chile"

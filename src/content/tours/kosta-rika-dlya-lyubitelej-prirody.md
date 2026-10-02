@@ -1,7 +1,7 @@
 ---
 id: tour_source_kosta_rika_dlya_lyubitelej_prirody
 locale: ru
-slug: kosta-rika-dlya-lyubitelej-prirody
+slug: costa-rica-for-nature-lovers
 status: published
 title: Коста Рика для любителей природы
 countries:

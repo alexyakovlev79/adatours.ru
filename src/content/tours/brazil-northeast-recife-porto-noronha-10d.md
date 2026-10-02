@@ -2,7 +2,7 @@
 id: tour_brazil_recife_porto_noronha_10d
 locale: ru
 title: "Пляжный тур в Бразилию на 10 дней: Ресифи, Порту-де-Галиньяс и Фернанду-де-Норонья"
-slug: severo-vostok-brazilii-recife-porto-de-galinhas-fernando-de-noronha-10-dnej
+slug: northeast-brazil-recife-porto-de-galinhas-fernando-de-noronha-10-days
 status: approved
 countries:
   - country_brazil

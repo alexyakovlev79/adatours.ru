@@ -2,7 +2,7 @@
 id: "excursion_source_zaliv_guanabara_morskaya_progulka"
 locale: "ru"
 title: "Экскурсия в Рио: морская прогулка по Заливу Гуанабара"
-slug: "zaliv-guanabara-morskaya-progulka"
+slug: guanabara-bay-boat-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

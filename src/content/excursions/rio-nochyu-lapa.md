@@ -2,7 +2,7 @@
 id: "excursion_source_rio_nochyu_lapa"
 locale: "ru"
 title: "Экскурсия Лапа: ночная жизнь Рио в Бразилии"
-slug: "rio-nochyu-lapa"
+slug: lapa-nightlife-tour-4-hours
 status: "approved"
 searchAliases: []
 country: "country_brazil"

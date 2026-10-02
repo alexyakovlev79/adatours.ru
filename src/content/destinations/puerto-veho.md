@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_puerto_veho"
 locale: "ru"
-slug: "puerto-veho"
+slug: puerto-viejo
 status: "approved"
 name: "Пуэрто Вьехо"
 countryId: "country_costa_rica"

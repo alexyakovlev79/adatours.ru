@@ -2,7 +2,7 @@
 id: "excursion_source_jekskursija_na_goru_korkovado_k_statue_hrista_i_saharnuju_golovu"
 locale: "ru"
 title: "Сити Тур+ Корковадо + Сахарная Голова"
-slug: "jekskursija-na-goru-korkovado-k-statue-hrista-i-saharnuju-golovu"
+slug: rio-city-corcovado-sugarloaf-tour
 status: "approved"
 searchAliases: []
 country: "country_brazil"

@@ -1,7 +1,7 @@
 ---
 id: tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu
 locale: ru
-slug: priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu
+slug: rio-iguazu-new-year-7-days
 status: published
 title: 'Новый год в Рио и на Игуасу: тур 7 дней от $1791'
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_brazil_coffee_tour_ru
 locale: ru
-slug: brazil-coffee-tour-ru
+slug: brazil-coffee-tour-8-days
 status: published
 title: Кофе Тур в Бразилии на 8 дней
 countries:

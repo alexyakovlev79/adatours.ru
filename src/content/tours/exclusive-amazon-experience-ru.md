@@ -1,7 +1,7 @@
 ---
 id: tour_source_exclusive_amazon_experience_ru
 locale: ru
-slug: exclusive-amazon-experience-ru
+slug: exclusive-amazon-experience
 status: published
 title: Эксклюзивное Приключение в Амазонии
 countries:

@@ -1,7 +1,7 @@
 ---
 id: "destination_costa_rica_poluostrov_osa"
 locale: "ru"
-slug: "poluostrov-osa"
+slug: osa-peninsula
 status: "approved"
 name: "Полуостров Оса"
 countryId: "country_costa_rica"

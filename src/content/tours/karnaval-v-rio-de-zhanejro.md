@@ -1,7 +1,7 @@
 ---
 id: tour_source_karnaval_v_rio_de_zhanejro
 locale: ru
-slug: karnaval-v-rio-de-zhanejro
+slug: rio-de-janeiro-carnival
 status: published
 title: 'Тур на Карнавал в Рио в Бразилии: цены и программа тура'
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_chili_samoe_luchshee
 locale: ru
-slug: chili-samoe-luchshee
+slug: best-of-chile-easter-island-12-days
 status: published
 title: Тур в Чили на 12 дней по лучшим местам страны с о.Пасха
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_amazoniya
 locale: ru
-slug: amazoniya
+slug: amazon
 status: published
 title: Амазония
 countries:

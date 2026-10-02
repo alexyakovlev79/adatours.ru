@@ -2,7 +2,7 @@
 id: "excursion_source_buenos_ajres_sochetanie_istorii_i_iskusstva"
 locale: "ru"
 title: "Экскурсия в Буэнос-Айресе Аргентина: лучшее в городе"
-slug: "buenos-ajres-sochetanie-istorii-i-iskusstva"
+slug: buenos-aires-history-art-tour
 status: "approved"
 searchAliases: []
 country: "country_argentina"

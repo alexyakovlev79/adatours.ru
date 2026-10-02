@@ -2,7 +2,7 @@
 id: country_brazil
 locale: ru
 name: Бразилия
-slug: braziliya
+slug: brazil
 status: approved
 searchAliases:
   - Brasil
@@ -38,7 +38,7 @@ featureBands:
     title: Рио-де-Жанейро
     text: "Рио часто становится первой точкой поездки: океан, Корковаду, Сахарная голова и районы города с совсем разным настроением."
     image: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
-    href: /braziliya/place/rio-de-zhanejro/
+    href: /brazil/place/rio-de-janeiro/
   - eyebrow: Природа
     title: Ленсойс-Мараньенсис
     text: Белые дюны и сезонные лагуны. Один из самых необычных природных пейзажей Бразилии.

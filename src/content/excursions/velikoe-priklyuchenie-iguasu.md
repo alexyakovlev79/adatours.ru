@@ -2,7 +2,7 @@
 id: excursion_iguazu_gran_aventura
 locale: ru
 title: "Великое приключение на Игуасу: лодка Zodiac и джунгли"
-slug: velikoe-priklyuchenie-iguasu
+slug: iguazu-great-adventure
 status: approved
 searchAliases:
   - "Gran Aventura Игуасу"

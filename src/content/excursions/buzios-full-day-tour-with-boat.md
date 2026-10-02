@@ -2,7 +2,7 @@
 id: "excursion_source_buzios_full_day_tour_with_boat"
 locale: "ru"
 title: "Тур в Бузиос с морской прогулкой"
-slug: "buzios-full-day-tour-with-boat"
+slug: buzios-full-day-tour-with-boat
 status: "approved"
 searchAliases: []
 country: "country_brazil"

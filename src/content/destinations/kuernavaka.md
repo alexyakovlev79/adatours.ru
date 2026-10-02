@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_kuernavaka"
 locale: "ru"
-slug: "kuernavaka"
+slug: cuernavaca
 status: "approved"
 name: "Куэрнавака"
 countryId: "country_mexico"

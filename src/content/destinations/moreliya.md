@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_moreliya"
 locale: "ru"
-slug: "moreliya"
+slug: morelia
 status: "approved"
 name: "Морелия"
 countryId: "country_mexico"

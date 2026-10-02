@@ -2,7 +2,7 @@
 id: "excursion_source_punta_arenas_mnogoobrazie_krasot_jetogo_kraja"
 locale: "ru"
 title: "Пунта Аренас- многообразие красот этого края"
-slug: "punta-arenas-mnogoobrazie-krasot-jetogo-kraja"
+slug: punta-arenas-city-tour
 status: "approved"
 searchAliases: []
 country: "country_chile"

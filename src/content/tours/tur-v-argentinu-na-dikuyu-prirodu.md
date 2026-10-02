@@ -2,7 +2,7 @@
 id: tour_source_tur_v_argentinu_na_dikuyu_prirodu
 locale: ru
 title: "Эко-тур по Аргентине на 9 дней: киты Пуэрто-Мадрина и заповедник Ибера"
-slug: tur-v-argentinu-na-dikuyu-prirodu
+slug: argentina-wildlife-buenos-aires
 status: approved
 searchAliases:
   - "Дикая природа Аргентины"

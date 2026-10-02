@@ -1,7 +1,7 @@
 ---
 id: tour_source_gastronomicheskoe_turne_po_meksike
 locale: ru
-slug: gastronomicheskoe-turne-po-meksike
+slug: mexico-gastronomic-tour
 status: published
 title: Гастрономическое турне по Мексике
 countries:

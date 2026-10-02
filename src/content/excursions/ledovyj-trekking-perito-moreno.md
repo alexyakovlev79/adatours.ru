@@ -2,7 +2,7 @@
 id: excursion_el_calafate_ice_trekking_perito_moreno
 locale: ru
 title: "Ледовый треккинг по леднику Перито-Морено"
-slug: ledovyj-trekking-perito-moreno
+slug: perito-moreno-glacier-ice-trekking
 status: approved
 searchAliases:
   - "Айс-трекинг Перито-Морено"

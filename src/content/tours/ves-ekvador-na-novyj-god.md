@@ -1,7 +1,7 @@
 ---
 id: tour_source_ves_ekvador_na_novyj_god
 locale: ru
-slug: ves-ekvador-na-novyj-god
+slug: complete-ecuador-new-year
 status: published
 title: Весь Эквадор
 countries:

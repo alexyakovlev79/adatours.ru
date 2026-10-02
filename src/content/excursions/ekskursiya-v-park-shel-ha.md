@@ -1,7 +1,7 @@
 ---
 id: excursion_cancun_xelha_day_trip
 locale: ru
-slug: ekskursiya-v-park-shel-ha
+slug: xel-ha-park-tour
 status: published
 title: Экскурсия в парк Шель-Ха
 country: country_mexico

@@ -1,7 +1,7 @@
 ---
 id: excursion_rio_maracana_stadium_tour
 locale: ru
-slug: ekskursiya-na-stadion-marakana
+slug: maracana-stadium-tour
 status: published
 title: Экскурсия на стадион «Маракана»
 country: country_brazil

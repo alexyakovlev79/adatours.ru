@@ -1,7 +1,7 @@
 ---
 id: tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala
 locale: ru
-slug: ekzoticheskij-koktejl-na-parad-chempionov-karnavala
+slug: brazil-rio-iguazu-pantanal-bonito-buzios-private-tour
 status: published
 title: 'Тур в Бразилию индивидуальный: Рио, Игуасу, Пантанал, Бонито и Бузиос'
 countries:

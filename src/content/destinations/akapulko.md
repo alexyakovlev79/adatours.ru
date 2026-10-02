@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_akapulko"
 locale: "ru"
-slug: "akapulko"
+slug: acapulco
 status: "approved"
 name: "Акапулько"
 countryId: "country_mexico"

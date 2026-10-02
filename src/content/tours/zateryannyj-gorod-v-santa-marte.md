@@ -1,7 +1,7 @@
 ---
 id: tour_source_zateryannyj_gorod_v_santa_marte
 locale: ru
-slug: zateryannyj-gorod-v-santa-marte
+slug: santa-marta-lost-city-2023
 status: published
 title: Затерянный город в Санта Мартe 2023
 countries:

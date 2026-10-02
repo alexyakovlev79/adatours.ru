@@ -1,7 +1,7 @@
 ---
 id: tour_source_21_dnevnoe_priklyuchenie_v_peru
 locale: ru
-slug: 21-dnevnoe-priklyuchenie-v-peru
+slug: best-of-peru-21-days
 status: published
 title: Тур в Перу – лучшее в стране за 21 день
 countries:

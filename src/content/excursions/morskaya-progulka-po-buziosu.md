@@ -2,7 +2,7 @@
 id: excursion_buzios_coastal_boat_trip
 locale: ru
 title: "Морская прогулка по Бузиосу"
-slug: morskaya-progulka-po-buziosu
+slug: buzios-boat-trip
 status: approved
 searchAliases:
   - Морская прогулка Бузиос

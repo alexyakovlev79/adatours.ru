@@ -1,7 +1,7 @@
 ---
 id: tour_source_treasures_of_costa_rica_san_jose
 locale: ru
-slug: treasures-of-costa-rica-san-jose
+slug: costa-rica-san-jose-treasures
 status: published
 title: Настоящие Сокровища Коста-Рики
 countries:

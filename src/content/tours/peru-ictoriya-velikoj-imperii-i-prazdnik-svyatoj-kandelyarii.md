@@ -1,7 +1,7 @@
 ---
 id: tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii
 locale: ru
-slug: peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii
+slug: peru-inca-empire-candelaria-festival
 status: published
 title: 'Перу: Иcтория Великой Империи и праздник Святой Канделярии'
 countries:

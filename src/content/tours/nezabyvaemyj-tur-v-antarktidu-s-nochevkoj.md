@@ -1,7 +1,7 @@
 ---
 id: tour_source_nezabyvaemyj_tur_v_antarktidu_s_nochevkoj
 locale: ru
-slug: nezabyvaemyj-tur-v-antarktidu-s-nochevkoj
+slug: antarctica-overnight-adventure
 status: published
 title: Незабываемый тур в Антарктиду(с ночевкой)
 countries:

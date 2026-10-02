@@ -1,7 +1,7 @@
 ---
 id: "destination_mexico_gvadalahara"
 locale: "ru"
-slug: "gvadalahara"
+slug: guadalajara
 status: "approved"
 name: "Гвадалахара"
 countryId: "country_mexico"

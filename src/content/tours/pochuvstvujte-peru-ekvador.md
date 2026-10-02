@@ -1,7 +1,7 @@
 ---
 id: tour_source_pochuvstvujte_peru_ekvador
 locale: ru
-slug: pochuvstvujte-peru-ekvador
+slug: experience-peru-ecuador
 status: published
 title: Почувствуйте Перу-Эквадор
 countries:

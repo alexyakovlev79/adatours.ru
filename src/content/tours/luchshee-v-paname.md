@@ -1,7 +1,7 @@
 ---
 id: tour_source_luchshee_v_paname
 locale: ru
-slug: luchshee-v-paname
+slug: best-of-panama-2023
 status: published
 title: Лучшее в Панаме 2023
 countries:

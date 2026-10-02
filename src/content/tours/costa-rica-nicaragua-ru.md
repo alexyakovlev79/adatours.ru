@@ -1,7 +1,7 @@
 ---
 id: tour_source_costa_rica_nicaragua_ru
 locale: ru
-slug: costa-rica-nicaragua-ru
+slug: costa-rica-nicaragua
 status: published
 title: Коста Рика Никарагуа
 countries:

@@ -1,7 +1,7 @@
 ---
 id: tour_source_beliz_strastnyj_nablyudatel_za_ptitsami
 locale: ru
-slug: beliz-strastnyj-nablyudatel-za-ptitsami
+slug: belize-birdwatching
 status: published
 title: 'Белиз: Страстный Наблюдатель за птицами'
 countries:

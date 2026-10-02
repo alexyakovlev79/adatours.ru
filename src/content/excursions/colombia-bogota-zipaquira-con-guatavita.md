@@ -2,7 +2,7 @@
 id: excursion_source_colombia_bogota_zipaquira_con_guatavita
 locale: ru
 title: "Сипакира и Гуатавита из Боготы: Соляной собор и легенда Эльдорадо"
-slug: colombia-bogota-zipaquira-con-guatavita
+slug: zipaquira-guatavita-tour-from-bogota
 status: approved
 searchAliases:
   - Сипакира из Боготы

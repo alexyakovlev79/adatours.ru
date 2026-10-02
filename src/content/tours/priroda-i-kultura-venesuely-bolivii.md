@@ -1,7 +1,7 @@
 ---
 id: tour_source_priroda_i_kultura_venesuely_bolivii
 locale: ru
-slug: priroda-i-kultura-venesuely-bolivii
+slug: venezuela-bolivia-nature-culture-12-days
 status: published
 title: Тур в Венесуэлу и Боливию | Природа и культура за 12 дней
 countries:

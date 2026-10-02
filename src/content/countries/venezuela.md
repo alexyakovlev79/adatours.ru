@@ -35,11 +35,11 @@ featureBands:
   - eyebrow: Карибское море
     title: Лос-Рокес и островной отдых
     text: Архипелаг Лос-Рокес подходит для пляжной части путешествия, снорклинга, дайвинга, рыбалки и других активностей на Карибском море.
-    image: https://brasiltours.ru/image/countries/venezuela/11.jpg
+    image: /media/countries/venezuela/featureBands-2-enhanced-20261002.webp
   - eyebrow: Дикая природа
     title: Дельта Ориноко и саванны
     text: Дельта Ориноко и Лос-Льянос добавляют к маршруту реки, мангровые и тропические ландшафты, саванны и наблюдение за животными и птицами.
-    image: https://brasiltours.ru/image/countries/venezuela/3344.jpg
+    image: /media/countries/venezuela/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/venesuela-ru
 sourceSnapshot: page_texts_original/venesuela-ru__4c0604b5.md
 updatedAt: 2026-10-02

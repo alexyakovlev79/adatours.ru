@@ -9,7 +9,7 @@ searchAliases:
 summary: >-
   Гватемала соединяет древние города майя, колониальную Антигуа, озеро Атитлан, вулканы, джунгли Петена и Карибское побережье. Ada Tours может собрать маршрут по стране или соединить Гватемалу с соседними странами Центральной Америки.
 hero:
-  src: https://brasiltours.ru/image/countries/guatemala/hector-pineda-m25dywqgkrg-unsplash.jpg
+  src: /media/countries/guatemala/hero-enhanced-20261002.webp
   alt: Петен, Гватемала
 gallery: []
 regions:
@@ -39,15 +39,15 @@ featureBands:
   - eyebrow: Колониальное наследие
     title: Антигуа-Гуатемала и вулканы
     text: Антигуа позволяет соединить колониальную архитектуру, мощеные улицы и пейзажи трех окружающих город вулканов в одном маршруте.
-    image: https://brasiltours.ru/image/countries/guatemala/antigua-de-guatemala.jpg
+    image: /media/countries/guatemala/featureBands-1-enhanced-20261002.webp
   - eyebrow: Высокогорное озеро
     title: Атитлан и поселения майя
     text: Озеро Атитлан окружено вулканами и городками, где сохраняются местные языки, традиции и ремесла. Маршрут можно продолжить в Панахачель или Сан-Педро-ла-Лагуну.
-    image: https://brasiltours.ru/image/countries/guatemala/lago-de-atitlan.jpg
+    image: /media/countries/guatemala/featureBands-2-enhanced-20261002.webp
   - eyebrow: Мир майя
     title: Тикаль, Флорес и джунгли Петена
     text: В районе Флореса и Петена находятся Тикаль и другие археологические центры майя, окруженные влажным тропическим лесом.
-    image: https://brasiltours.ru/image/countries/guatemala/tikal-flores.jpg
+    image: /media/countries/guatemala/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/gvatemala-ru
 sourceSnapshot: page_texts_original/gvatemala-ru__bf741ecd.md
 updatedAt: 2026-10-02

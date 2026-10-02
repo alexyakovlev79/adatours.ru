@@ -9,7 +9,7 @@ searchAliases:
 summary: >-
   Гайана соединяет тропические леса, водопад Кайетур, саванны Рупунуни и Джорджтаун на побережье Атлантики. Ada Tours может собрать природный маршрут по стране или включить Гайану в комбинированное путешествие по Гвианам и соседним странам Южной Америки.
 hero:
-  src: https://brasiltours.ru/image/countries/gayana/1.jpg
+  src: /media/countries/guyana/hero-enhanced-20261002.webp
   alt: Тропический лес в Гайане
 gallery: []
 regions:
@@ -26,15 +26,15 @@ featureBands:
   - eyebrow: Природа Гайаны
     title: Водопад Кайетур и тропический лес
     text: "Кайетур можно сделать главным природным акцентом поездки и соединить его с маршрутами по тропическим лесам, рекам и удаленным районам страны."
-    image: https://brasiltours.ru/image/countries/gayana/3.jpg
+    image: /media/countries/guyana/featureBands-1-enhanced-20261002.webp
   - eyebrow: Юго-запад страны
     title: Саванны Рупунуни
     text: "Рупунуни открывает другой ландшафт Гайаны: просторные саванны, небольшие сообщества, верховые маршруты, рыбалку и наблюдение за природой."
-    image: https://brasiltours.ru/image/countries/gayana/4.jpg
+    image: /media/countries/guyana/featureBands-2-enhanced-20261002.webp
   - eyebrow: Столица
     title: Джорджтаун и атлантическое побережье
     text: "В Джорджтауне сохранилась деревянная и колониальная архитектура, зеленые улицы, рынки и система каналов и дамб, связанная с прибрежным положением города."
-    image: https://brasiltours.ru/image/countries/gayana/2.jpg
+    image: /media/countries/guyana/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/gajana-ru
 sourceSnapshot: page_texts_original/gajana-ru__efe33980.md
 updatedAt: 2026-10-02

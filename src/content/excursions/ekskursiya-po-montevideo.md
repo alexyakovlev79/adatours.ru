@@ -8,7 +8,8 @@ searchAliases:
   - Экскурсия по Монтевидео
   - Монтевидео, Уругвай
 country: country_argentina
-destination: destination_argentina_buenos_aires
+destination: destination_uruguay_montevideo
+destinationName: "Монтевидео"
 themes: [culture, multi-country]
 duration: весь день
 language:

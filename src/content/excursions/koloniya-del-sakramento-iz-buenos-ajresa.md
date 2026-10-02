@@ -8,6 +8,7 @@ searchAliases:
   - "Колония-дель-Сакраменто из Буэнос-Айреса"
 country: country_uruguay
 destination: destination_uruguay_koloniya_del_sakramento
+destinationName: "Колония-дель-Сакраменто"
 themes: []
 language: []
 hero:

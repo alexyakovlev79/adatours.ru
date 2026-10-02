@@ -10,6 +10,7 @@ searchAliases:
   - Килли-Килли
 country: country_bolivia
 destination: destination_bolivia_la_pas
+destinationName: "Ла-Пас"
 themes: [culture, city]
 duration: "4–5 часов"
 language:

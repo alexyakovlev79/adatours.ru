@@ -11,6 +11,7 @@ searchAliases:
   - Эльдорадо Гуатавита
 country: country_colombia
 destination: destination_colombia_bogota
+destinationName: "Богота"
 themes: [culture, history]
 duration: 8 часов
 language:

@@ -7,6 +7,8 @@ status: approved
 searchAliases:
   - "Каякинг Эль-Чалтен"
 country: country_argentina
+destination: destination_argentina_el_chalten
+destinationName: "Эль-Чалтен"
 themes:
   - adventure
   - nature

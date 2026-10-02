@@ -10,6 +10,7 @@ searchAliases:
   - Пабло Эскобар Медельин
 country: country_colombia
 destination: destination_colombia_medelin
+destinationName: "Медельин"
 themes: [culture, city, history]
 duration: "Весь день"
 language:

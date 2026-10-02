@@ -10,6 +10,7 @@ searchAliases:
   - Канелонес винодельня
 country: country_uruguay
 destination: destination_uruguay_montevideo
+destinationName: "Монтевидео"
 themes: [culture, city, gastronomy, wine]
 duration: 8 часов
 language:

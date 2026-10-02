@@ -10,6 +10,7 @@ searchAliases:
   - Водопады Куэвас
 country: country_bolivia
 destination: destination_bolivia_santa_krus
+destinationName: "Санта-Крус"
 themes: [nature, adventure]
 duration: 8 часов
 language:

@@ -10,6 +10,7 @@ searchAliases:
   - Старый город Монтевидео
 country: country_uruguay
 destination: destination_uruguay_montevideo
+destinationName: "Монтевидео"
 themes: [culture, city]
 duration: 4 часа
 language:

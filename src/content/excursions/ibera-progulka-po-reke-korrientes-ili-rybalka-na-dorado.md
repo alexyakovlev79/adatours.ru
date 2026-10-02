@@ -8,6 +8,8 @@ searchAliases:
   - "Рыбалка на дорадо в Ибере"
   - "Прогулка по реке Корриентес"
 country: country_argentina
+destination: destination_argentina_ibera
+destinationName: "Ибера"
 themes:
   - nature
   - fishing

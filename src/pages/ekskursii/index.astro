@@ -4,10 +4,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { excursionPath } from '../../lib/routes';
 import Hero from '../../components/editorial/Hero.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
+import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../../lib/excursion-popularity';
 
-const entries = (await getCollection('excursions', ({ data }) =>
-  data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
-)).sort((a, b) => a.data.title.localeCompare(b.data.title, 'ru'));
+const [entries, tours] = await Promise.all([
+  getCollection('excursions', ({ data }) =>
+    data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+  ),
+  getCollection('tours', ({ data }) =>
+    data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+  ),
+]);
+
+const excursionTourCounts = buildExcursionTourCounts(tours);
+entries.sort(compareExcursionsByPopularity(excursionTourCounts));
 ---
 
 <BaseLayout

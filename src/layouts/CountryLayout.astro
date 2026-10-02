@@ -8,6 +8,7 @@ import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import { withBase } from '../lib/paths';
 import { countryBreadcrumbs, countryPath, destinationPath, excursionPath, themePath, tourPath } from '../lib/routes';
+import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
 
 const { entry } = Astro.props;
 // Country page: linked destination/tour catalogue for internal linking and discovery.
@@ -38,7 +39,7 @@ const countryTourTarget = ({
 
 const countryTourPreposition = d.id === 'country_french_guiana' ? 'во' : 'в';
 
-const [destinationEntries, tourEntries, excursionEntries, themeEntries] = await Promise.all([
+const [destinationEntries, allTourEntries, excursionEntries, themeEntries] = await Promise.all([
   getCollection('destinations', ({ data }) =>
     data.locale === 'ru' &&
     !['draft', 'archived'].includes(data.status) &&
@@ -46,8 +47,7 @@ const [destinationEntries, tourEntries, excursionEntries, themeEntries] = await 
   ),
   getCollection('tours', ({ data }) =>
     data.locale === 'ru' &&
-    !['draft', 'archived'].includes(data.status) &&
-    data.countries.includes(d.id)
+    !['draft', 'archived'].includes(data.status)
   ),
   getCollection('excursions', ({ data }) =>
     data.locale === 'ru' &&
@@ -60,6 +60,9 @@ const [destinationEntries, tourEntries, excursionEntries, themeEntries] = await 
     d.relatedThemes.includes(data.id)
   ),
 ]);
+
+const tourEntries = allTourEntries.filter((item) => item.data.countries.includes(d.id));
+const excursionTourCounts = buildExcursionTourCounts(allTourEntries);
 
 const preferredDestinations = new Map(
   d.regions.map((name, index) => [name.toLocaleLowerCase('ru'), index])
@@ -77,7 +80,7 @@ tourEntries.sort((a, b) =>
   a.data.title.localeCompare(b.data.title, 'ru')
 );
 
-excursionEntries.sort((a, b) => a.data.title.localeCompare(b.data.title, 'ru'));
+excursionEntries.sort(compareExcursionsByPopularity(excursionTourCounts));
 
 const preferredThemes = new Map(
   d.relatedThemes.map((id, index) => [id, index])

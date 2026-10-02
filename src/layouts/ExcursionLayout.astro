@@ -14,6 +14,7 @@ import { withBase } from '../lib/paths';
 import { destinationCatalogById } from '../lib/content-validation';
 import { destinationPath, excursionBreadcrumbs as buildExcursionBreadcrumbs, excursionGeography, excursionPath, tourPath } from '../lib/routes';
 import { excursionDestinationIds } from '../lib/destination-links.mjs';
+import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsForTour } from '../lib/excursion-popularity';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -38,26 +39,13 @@ const destinationById = new Map(destinationEntries.map((item) => [item.data.id, 
 const destination = d.destination ? destinationById.get(d.destination) : undefined;
 const visibleDestinations = linkedDestinationIds.map((id) => destinationById.get(id)).filter((item) => item !== undefined);
 
-const getTourExcursionIds = (tour) => {
-  const ids = new Set<string>();
-
-  for (const item of tour.data.itinerary) {
-    if (item.excursionRef) ids.add(item.excursionRef);
-
-    for (const block of item.contentBlocks) {
-      if (block.type === 'excursion') ids.add(block.excursionRef);
-    }
-  }
-
-  return ids;
-};
-
+const excursionTourCounts = buildExcursionTourCounts(tourEntries);
 const relatedExcursionTourOverlap = new Map<string, number>();
-const relatedTours = tourEntries.filter((tour) => getTourExcursionIds(tour).has(d.id))
+const relatedTours = tourEntries.filter((tour) => excursionIdsForTour(tour).has(d.id))
   .sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0) || a.data.title.localeCompare(b.data.title, 'ru'));
 
 for (const tour of relatedTours) {
-  const tourExcursionIds = getTourExcursionIds(tour);
+  const tourExcursionIds = excursionIdsForTour(tour);
 
   tourExcursionIds.delete(d.id);
 
@@ -71,13 +59,7 @@ for (const tour of relatedTours) {
 
 const relatedExcursions = excursionEntries
   .filter((item) => item.data.id !== d.id && relatedExcursionTourOverlap.has(item.data.id))
-  .sort((a, b) => {
-    const overlapDiff =
-      (relatedExcursionTourOverlap.get(b.data.id) ?? 0) -
-      (relatedExcursionTourOverlap.get(a.data.id) ?? 0);
-
-    return overlapDiff || a.data.title.localeCompare(b.data.title, 'ru');
-  })
+  .sort(compareExcursionsByPopularity(excursionTourCounts))
   .slice(0, 10);
 
 const destinationName =

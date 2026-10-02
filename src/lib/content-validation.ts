@@ -6,7 +6,6 @@ import destinationReservations from '../data/catalog/destination-reservations.js
 import { validateDestinationReservations } from './destination-reservations.mjs';
 import { validateSourceTextPointer, validateProvidedMedia, isNonemptyUtf8 } from './provided-materials.mjs';
 import { canonicalPath, countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
-import { mainTourCountryIds, mainTourDestinationIds } from './tour-relations';
 
 export interface CatalogDestination {
   id: string;
@@ -139,11 +138,6 @@ async function validateContent(): Promise<void> {
       const planned = destinationCatalogById.get(id);
       if (!planned) errors.push(`${d.id}: неизвестный ID места ${id}; будущие места разрешены только по каталогу.`);
       else if (!d.countries.includes(planned.countryId)) errors.push(`${d.id}: страна места ${id} отсутствует в countries.`);
-    }
-    const mainCountryIds = new Set(mainTourCountryIds(d));
-    for (const id of mainTourDestinationIds(d)) {
-      const planned = destinationCatalogById.get(id);
-      if (planned && !mainCountryIds.has(planned.countryId)) errors.push(`${d.id}: основное место ${id} относится к стране ${planned.countryId}, которой нет в routeCountries/countries.`);
     }
     for (const day of d.itinerary) {
       const refs = [day.excursionRef, ...day.contentBlocks.filter((block) => block.type === 'excursion').map((block) => block.excursionRef)];

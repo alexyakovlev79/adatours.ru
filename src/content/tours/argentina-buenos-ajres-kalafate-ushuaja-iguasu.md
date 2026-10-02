@@ -27,6 +27,14 @@ destinations:
   - destination_argentina_ostrov_martilo
   - destination_argentina_san_isidro_buenos_ajres
   - destination_argentina_tigre
+routeDestinations:
+  - destination_argentina_buenos_aires
+  - destination_argentina_el_calafate
+  - destination_brazil_iguacu
+  - destination_argentina_ushuajya
+  - destination_argentina_puerto_iguasu
+  - destination_argentina_lednik_perito_moreno
+  - destination_argentina_nacionalnyj_park_terra_del_fuego
 themes:
   - culture
   - nature

@@ -25,6 +25,13 @@ destinations:
   - destination_argentina_nacionalnyj_park_los_glasyares
   - destination_argentina_san_isidro_buenos_ajres
   - destination_argentina_tigre
+routeDestinations:
+  - destination_argentina_buenos_aires
+  - destination_argentina_el_calafate
+  - destination_brazil_iguacu
+  - destination_argentina_puerto_iguasu
+  - destination_argentina_lednik_perito_moreno
+  - destination_argentina_nacionalnyj_park_los_glasyares
 themes:
   - culture
   - nature

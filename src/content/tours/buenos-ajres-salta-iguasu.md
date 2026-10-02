@@ -29,6 +29,17 @@ destinations:
   - destination_argentina_san_isidro_buenos_ajres
   - destination_argentina_tigre
   - destination_argentina_tilkara
+routeDestinations:
+  - destination_argentina_buenos_aires
+  - destination_argentina_salta
+  - destination_argentina_puerto_iguasu
+  - destination_brazil_iguacu
+  - destination_argentina_kafayate
+  - destination_argentina_kebrada_de_umauaka
+  - destination_argentina_nacionalnyj_park_los_kardones
+  - destination_argentina_purmamarka
+  - destination_argentina_salinas_grandes
+  - destination_argentina_tilkara
 themes:
   - culture
   - nature

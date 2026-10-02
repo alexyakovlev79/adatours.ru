@@ -14,9 +14,10 @@ featuredCountries:
   - country_argentina
   - country_peru
   - country_uruguay
+  - country_el_salvador
 sourceUrl: https://brasiltours.ru/spa-zdorove
 sourceSnapshot: page_texts_original/spa-zdorove__f65becfb.md
-updatedAt: 2026-09-24
+updatedAt: 2026-10-02
 ---
 
 ## Несколько спокойных дней между переездами

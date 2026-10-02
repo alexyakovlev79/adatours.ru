@@ -40,7 +40,7 @@ featureBands:
     image: https://brasiltours.ru/image/countries/dominican/3.jpg
   - eyebrow: Колониальная история
     title: Санто-Доминго
-    text: Столица дает городскую часть поездки: крепость Озама, музеи и здания колониального периода можно соединить с пляжной программой на юге или востоке страны.
+    text: "Столица дает городскую часть поездки: крепость Озама, музеи и здания колониального периода можно соединить с пляжной программой на юге или востоке страны."
     image: https://brasiltours.ru/image/countries/dominican/6.jpg
 sourceUrl: https://brasiltours.ru/dominikanskaya-respublika-ru
 sourceSnapshot: page_texts_original/dominikanskaya-respublika-ru__b5f4dd8b.md

@@ -34,6 +34,14 @@ included:
   - Дегустация кофе
 notIncluded:
   - Обед
+notes:
+  - Стоимость экскурсии — $438.
+  - Для 2 человек — $219 на человека.
+  - Для 3 человек — $188 на человека.
+  - Для 4 человек — $148 на человека.
+  - При необходимости Ada Tours может изменить порядок посещения достопримечательностей.
+sourceUrl: https://brasiltours.ru/kofejnyj-tur-v-perejra
+sourceSnapshot: page_texts_newstep/Excursions/kofejnyj-tur-v-perejra__c83cd958.md
 updatedAt: 2026-10-02
 ---
 

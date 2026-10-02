@@ -6,25 +6,25 @@ import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
 
-const priority = new Map([
-  ['country_brazil', 0],
-  ['country_argentina', 1],
-  ['country_peru', 2],
-]);
+const tours = await getCollection('tours', ({ data }) =>
+  data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+);
+
+const tourCountByCountry = new Map<string, number>();
+
+for (const tour of tours) {
+  for (const countryId of new Set(tour.data.countries)) {
+    tourCountByCountry.set(countryId, (tourCountByCountry.get(countryId) ?? 0) + 1);
+  }
+}
 
 const countries = (await getCollection('countries', ({ data }) =>
   data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
 )).sort((a, b) => {
-  const ai = priority.get(a.data.id);
-  const bi = priority.get(b.data.id);
+  const countDifference =
+    (tourCountByCountry.get(b.data.id) ?? 0) - (tourCountByCountry.get(a.data.id) ?? 0);
 
-  if (ai !== undefined || bi !== undefined) {
-    if (ai === undefined) return 1;
-    if (bi === undefined) return -1;
-    return ai - bi;
-  }
-
-  return a.data.name.localeCompare(b.data.name, 'ru');
+  return countDifference || a.data.name.localeCompare(b.data.name, 'ru');
 });
 
 const countryAlignments = new Map([

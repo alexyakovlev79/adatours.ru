@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.33  
+Версия: 1.34  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **24** тура со статусом `Уникализировано`.
+В текущем реестре учтено **25** туров со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -176,12 +176,17 @@ missing_excursion_entities = 0
 | 296 | `tour_source_patagoniya_i_chilijskie_fordy` | `src/content/tours/patagoniya-i-chilijskie-fordy.md` | Патагония и Чилийские фьорды | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 297 | `tour_source_programma_dlya_aktivnykh_lyudej` | `src/content/tours/programma-dlya-aktivnykh-lyudej.md` | Аргентина, Патагония, Сантьяго и остров Пасхи за 12 дней | DONE_LINKED | 1 | 2026-10-02 |
 | 298 | `tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii` | `src/content/tours/prostory-patagonii-chili-i-argentina-v-odnom-puteshestvii.md` | Просторы Патагонии: Чили и Аргентина за 8 дней | DONE_LINKED | 2 | 2026-10-02 |
+| 299 | `tour_source_rybalka_v_ushuajya` | `src/content/tours/rybalka-v-ushuajya.md` | Рыбалка в Ушуайе: поездка в Пуэрто-Альмансу и ловля королевского краба | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 298 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 299 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 299, 2026-10-02
+
+- **Строка 299 / `tour_source_rybalka_v_ushuajya`:** опубликована однодневная 8-часовая программа «Рыбалка в Ушуайе: поездка в Пуэрто-Альмансу и ловля королевского краба» из V2 + original. Source page классифицирована как `tour_detail`; весь маршрут Ушуайя — озеро Виктория — Пуэрто-Альманса, 25-минутный выход на лодке, сбор королевского краба и обед являются единым продуктом, а не дополнительными standalone Excursion. В исходнике нет numbered days и отдельных дополнительных карточек, поэтому production `itinerary = []`, а содержательная программа сохранена в body страницы. Hero cache не переносился: использован подтвержденный raw content image `https://brasiltours.ru/image/ushuaia.png` из `IMAGES_MASTER.csv` этой же source page. Итог: `DONE_NO_RELATIONS`, `production_excursion_refs = 0`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `missing_excursion_entities = 0`.
 
 ### Проверка v1.1 — строка 298, 2026-10-02
 

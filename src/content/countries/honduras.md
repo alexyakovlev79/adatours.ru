@@ -9,7 +9,7 @@ searchAliases:
 summary: >-
   Гондурас соединяет руины майя в Копане, острова Роатан и Утила, озеро Йоджоа, водопады и тропические леса. Ada Tours может собрать маршрут по стране с дайвингом, пляжным отдыхом и природными поездками или включить Гондурас в путешествие по Центральной Америке.
 hero:
-  src: https://brasiltours.ru/image/countries/gonduras/4.jpg
+  src: /media/countries/honduras/hero-enhanced-20261002.webp
   alt: Пляж на Карибском море в Гондурасе
 gallery: []
 regions:
@@ -30,15 +30,15 @@ featureBands:
   - eyebrow: Мир майя
     title: Копан и наследие майя
     text: Руины Копана позволяют сделать археологию одной из главных частей маршрута и соединить ее с колониальными городами и природными районами западного Гондураса.
-    image: https://brasiltours.ru/image/countries/gonduras/5.jpg
+    image: /media/countries/honduras/featureBands-1-enhanced-20261002.webp
   - eyebrow: Карибское море
     title: Роатан, Утила и коралловый риф
     text: Острова залива подходят для пляжного отдыха, снорклинга и дайвинга. Роатан дает более курортный формат, а Утила известна дайвингом и более демократичной атмосферой.
-    image: https://brasiltours.ru/image/countries/gonduras/angello-pro-obdmqhuiisu-unsplash.jpg
+    image: /media/countries/honduras/featureBands-2-enhanced-20261002.webp
   - eyebrow: Озера и водопады
     title: Йоджоа и Пульхапанзак
     text: Район озера Йоджоа можно включить в природную часть поездки с наблюдением за птицами, пешими маршрутами, горячими источниками и поездкой к водопаду Пульхапанзак.
-    image: https://brasiltours.ru/image/countries/gonduras/6.jpg
+    image: /media/countries/honduras/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/gonduras-ru
 sourceSnapshot: page_texts_original/gonduras-ru__f10f03e7.md
 updatedAt: 2026-10-02

@@ -10,7 +10,7 @@ searchAliases:
 summary: >-
   Доминикана соединяет пляжи Пунта-Каны и Карибского побережья, Атлантику с серфингом, колониальный Санто-Доминго и природные маршруты Саманы, Лос-Айтисеса и горных районов. Ada Tours может собрать пляжный отдых, активную поездку или маршрут по нескольким регионам страны.
 hero:
-  src: https://brasiltours.ru/image/countries/dominican/asael-pena-gnrnsiiwkc0-unsplash.jpg
+  src: /media/countries/dominican-republic/hero-enhanced-20261002.webp
   alt: Пляж Плайя-Дорада в Доминикане
 gallery: []
 regions:
@@ -33,15 +33,15 @@ featureBands:
   - eyebrow: Карибское побережье
     title: Пунта-Кана, Баваро и спокойные пляжи
     text: Пунта-Кана и Баваро дают классический пляжный формат с белым песком и бирюзовой водой. Ла-Романа и Хуан-Долио можно добавить для спокойного моря, снорклинга и семейного отдыха.
-    image: https://brasiltours.ru/image/countries/dominican/5.jpg
+    image: /media/countries/dominican-republic/featureBands-1-enhanced-20261002.webp
   - eyebrow: Природа
     title: Самана и национальный парк Лос-Айтисес
     text: Полуостров Самана и Лос-Айтисес добавляют в маршрут лодочные поездки, мангровые ландшафты, пещеры и наблюдение за горбатыми китами в сезон.
-    image: https://brasiltours.ru/image/countries/dominican/3.jpg
+    image: /media/countries/dominican-republic/featureBands-2-enhanced-20261002.webp
   - eyebrow: Колониальная история
     title: Санто-Доминго
     text: "Столица дает городскую часть поездки: крепость Озама, музеи и здания колониального периода можно соединить с пляжной программой на юге или востоке страны."
-    image: https://brasiltours.ru/image/countries/dominican/6.jpg
+    image: /media/countries/dominican-republic/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/dominikanskaya-respublika-ru
 sourceSnapshot: page_texts_original/dominikanskaya-respublika-ru__b5f4dd8b.md
 updatedAt: 2026-10-02

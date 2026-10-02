@@ -15,6 +15,13 @@ const weddingsIndex = themes.findIndex((theme) => theme.data.slug === 'svadby-i-
 if (spaIndex !== -1 && weddingsIndex !== -1) {
   [themes[spaIndex], themes[weddingsIndex]] = [themes[weddingsIndex], themes[spaIndex]];
 }
+
+const adventuresIndex = themes.findIndex((theme) => theme.data.slug === 'priklyucheniya');
+const fishingIndex = themes.findIndex((theme) => theme.data.slug === 'rybalka');
+
+if (adventuresIndex !== -1 && fishingIndex !== -1) {
+  [themes[adventuresIndex], themes[fishingIndex]] = [themes[fishingIndex], themes[adventuresIndex]];
+}
 ---
 
 <BaseLayout

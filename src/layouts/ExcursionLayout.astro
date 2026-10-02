@@ -13,26 +13,63 @@ import DestinationBand from '../components/editorial/DestinationBand.astro';
 const { entry } = Astro.props;
 const d = entry.data;
 
-const [countryEntries, destinationEntries, relatedEntries] = await Promise.all([
+const [countryEntries, destinationEntries, tourEntries, excursionEntries] = await Promise.all([
   getCollection('countries', ({ data }) => data.locale === 'ru' && data.id === d.country),
   getCollection('destinations', ({ data }) => data.locale === 'ru' && data.id === d.destination),
+  getCollection('tours', ({ data }) =>
+    data.locale === 'ru' &&
+    !['draft', 'archived'].includes(data.status)
+  ),
   getCollection('excursions', ({ data }) =>
     data.locale === 'ru' &&
-    !['draft', 'archived'].includes(data.status) &&
-    data.id !== d.id &&
-    (data.destination === d.destination || data.country === d.country)
+    !['draft', 'archived'].includes(data.status)
   ),
 ]);
 
 const country = countryEntries[0];
 const destination = destinationEntries[0];
-const relatedExcursions = relatedEntries
+
+const getTourExcursionIds = (tour) => {
+  const ids = new Set<string>();
+
+  for (const item of tour.data.itinerary) {
+    if (item.excursionRef) ids.add(item.excursionRef);
+
+    for (const block of item.contentBlocks) {
+      if (block.type === 'excursion') ids.add(block.excursionRef);
+    }
+  }
+
+  return ids;
+};
+
+const relatedExcursionTourOverlap = new Map<string, number>();
+
+for (const tour of tourEntries) {
+  const tourExcursionIds = getTourExcursionIds(tour);
+
+  if (!tourExcursionIds.has(d.id)) continue;
+
+  tourExcursionIds.delete(d.id);
+
+  for (const excursionId of tourExcursionIds) {
+    relatedExcursionTourOverlap.set(
+      excursionId,
+      (relatedExcursionTourOverlap.get(excursionId) ?? 0) + 1
+    );
+  }
+}
+
+const relatedExcursions = excursionEntries
+  .filter((item) => item.data.id !== d.id && relatedExcursionTourOverlap.has(item.data.id))
   .sort((a, b) => {
-    const aSame = a.data.destination === d.destination ? 0 : 1;
-    const bSame = b.data.destination === d.destination ? 0 : 1;
-    return aSame - bSame || a.data.title.localeCompare(b.data.title, 'ru');
+    const overlapDiff =
+      (relatedExcursionTourOverlap.get(b.data.id) ?? 0) -
+      (relatedExcursionTourOverlap.get(a.data.id) ?? 0);
+
+    return overlapDiff || a.data.title.localeCompare(b.data.title, 'ru');
   })
-  .slice(0, 3);
+  .slice(0, 10);
 
 const fallbackCountries: Record<string, { label: string; href: string }> = {
   country_ecuador: { label: 'Эквадор', href: '/strany/ekvador/' },

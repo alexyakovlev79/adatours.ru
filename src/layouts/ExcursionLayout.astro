@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
+import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import Hero from '../components/editorial/Hero.astro';
 import TripStats from '../components/tour/TripStats.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
@@ -171,6 +172,18 @@ const excursionSchema = {
   pageSchema={excursionSchema}
   breadcrumbs={excursionBreadcrumbs}
 >
+  <SearchIndexRecord
+    title={d.title}
+    summary={d.lead}
+    entityType="excursion"
+    typeLabel="Экскурсия"
+    subtitle={[d.duration, destinationName, country?.data.name].filter(Boolean).join(' · ')}
+    aliases={d.searchAliases}
+    geography={[destinationName, country?.data.name, ...d.route].filter(Boolean)}
+    themes={d.themes}
+    image={d.hero?.src}
+  />
+
   <Hero
     eyebrow="Экскурсия"
     title={d.title}

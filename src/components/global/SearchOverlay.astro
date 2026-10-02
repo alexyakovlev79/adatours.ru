@@ -38,7 +38,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         type="search"
         inputmode="search"
         autocomplete="off"
-        placeholder="Бразилия, Рио, тур..."
+        placeholder="Бразилия, Рио, тур, экскурсия..."
         aria-describedby="site-search-help"
         data-search-input
       />
@@ -49,6 +49,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         <button type="button" aria-pressed="false" data-search-filter="country">Страны</button>
         <button type="button" aria-pressed="false" data-search-filter="destination">Места</button>
         <button type="button" aria-pressed="false" data-search-filter="tour">Туры</button>
+        <button type="button" aria-pressed="false" data-search-filter="excursion">Экскурсии</button>
       </div>
 
       <SearchResults />
@@ -149,6 +150,11 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         return fieldMatches([...names, ...geography, ...themes], q);
       }
 
+      if (activeFilter === 'excursion') {
+        const themes = metaValues(data, 'themes');
+        return fieldMatches([...names, ...geography, ...themes], q);
+      }
+
       return true;
     };
 
@@ -193,7 +199,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       if (query.length < 2) {
         results.setAttribute('aria-busy', 'false');
         clearResults();
-        setStatus(query.length === 0 ? 'Ищите страну, место или тур.' : 'Введите еще 1 символ.');
+        setStatus(query.length === 0 ? 'Ищите страну, место, тур или экскурсию.' : 'Введите еще 1 символ.');
         return;
       }
 

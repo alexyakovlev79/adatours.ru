@@ -39,7 +39,8 @@ themes:
   - culture
   - nature
   - adventure
-relatedDestinations: []
+relatedDestinations:
+  - destination_ecuador_kuenka
 featuredTours: []
 featuredExcursions:
   - excursion_source_kito_siti_tur_na_ves_den

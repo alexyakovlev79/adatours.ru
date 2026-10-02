@@ -186,14 +186,22 @@ const excursionSchema = {
   )}
 
   {relatedTours.length > 0 && (
-    <section class="section--tight">
-      <div class="container prose">
-        <h2>Туры с этой экскурсией</h2>
-        <ul>
-          {relatedTours.map((tour) => <li><a href={withBase(tourPath(tour.data))}>{tour.data.title}</a></li>)}
-        </ul>
-      </div>
-    </section>
+    <>
+      <EditorialStatement eyebrow="Туры" text="Туры с этой экскурсией" />
+      {relatedTours.map((tour, index) => (
+        <DestinationBand
+          eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
+          title={tour.data.title}
+          text={tour.data.lead}
+          image={tour.data.hero?.src}
+          imageTextAlign={tour.data.imageTextAlign}
+          mediaStatus={tour.data.hero?.status}
+          replacementReason={tour.data.hero?.replacementReason}
+          href={tourPath(tour.data)}
+          align={index % 2 === 1 ? 'right' : 'left'}
+        />
+      ))}
+    </>
   )}
 
   {relatedExcursions.length > 0 && (

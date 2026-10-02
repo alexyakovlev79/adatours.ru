@@ -9,10 +9,10 @@ destinationType: city
 summary: Ла-Пас находится на высоте 3660 м над уровнем моря. Колониальные площади, крутые улочки, Рынок ведьм и Лунная долина в окрестностях делают город насыщенной остановкой в Боливии.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/la-paz-2.jpg
+  src: /media/countries/bolivia/featureBands-2-enhanced-20261002.webp
   alt: 'На фото: столица Боливии город Ла Пас'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/l/a/la-paz-bolivia-776712.jpg
+- src: /media/destinations/la-pas/gallery-1-enhanced-20261003.webp
   alt: 'На фото: столица Боливии город Ла Пас'
 - src: https://brasiltours.ru/image/catalog/category/1/0/1034574309_f8a777f8ff_b.jpg
   alt: 'На фото: столица Боливии город Ла Пас'

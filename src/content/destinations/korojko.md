@@ -14,9 +14,9 @@ hero:
 gallery:
 - src: /media/destinations/korojko/gallery-1-enhanced-20261002.webp
   alt: 'На фото: Коройко в Боливии (Дорога Смерти)'
-- src: https://brasiltours.ru/image/catalog/category/C/o/Coroico_Town.jpg
+- src: /media/destinations/korojko/gallery-2-enhanced-20261003.webp
   alt: 'На фото: город Коройко в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/C/o/CoroicoWaterfallTN2.jpg
+- src: /media/destinations/korojko/gallery-3-enhanced-20261003.webp
   alt: 'На фото: Коройко в Боливии'
 themes: []
 relatedDestinations: []

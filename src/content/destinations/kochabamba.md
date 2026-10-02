@@ -9,20 +9,20 @@ destinationType: city
 summary: Кочабамба расположена в долине среди Анд и известна мягкой температурой круглый год. С холма Сан-Педро открывается панорама города, а рынок Ла Канча знакомит с местной торговлей.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/kochabamba-3-ew.jpg
+  src: /media/destinations/kochabamba/hero-enhanced-20261003.webp
   alt: 'На фото: город Кочабамба в Боливии'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/8/3/831145950_3ad6c338b9.jpg
+- src: /media/destinations/kochabamba/gallery-1-enhanced-20261003.webp
   alt: 'На фото: город Кочабамба в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/c/o/cochabamba_lds_mormon_temple.jpg
+- src: /media/destinations/kochabamba/gallery-2-enhanced-20261003.webp
   alt: 'На фото: город Кочабамба в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/3/8/380683853_4cd58835eb_b.jpg
+- src: /media/destinations/kochabamba/gallery-3-enhanced-20261003.webp
   alt: 'На фото: город Кочабамба в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN3340_24.jpg
+- src: /media/destinations/kochabamba/gallery-4-enhanced-20261003.webp
   alt: 'На фото: город Кочабамба в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN2662_10.jpg
+- src: /media/destinations/kochabamba/gallery-5-enhanced-20261003.webp
   alt: 'На фото: город Кочабамба в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN3340_25.jpg
+- src: /media/destinations/kochabamba/gallery-6-enhanced-20261003.webp
   alt: 'На фото: город Кочабамба в Боливии'
 themes: []
 relatedDestinations: []

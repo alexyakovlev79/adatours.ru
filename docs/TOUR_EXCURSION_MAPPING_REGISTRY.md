@@ -29,6 +29,30 @@ Production tours:
 Production excursions:
 `src/content/excursions/`
 
+### 0.1. Связь Excursion → Destination и карточка места
+
+Карточка места на всех страницах Excursion строится автоматически в общем `ExcursionLayout.astro`.
+
+Правила:
+
+- `destination` в Excursion хранит стабильный ID места;
+- если соответствующая Destination уже существует, название, `summary`, `hero` и ссылка берутся только из канонической Destination;
+- фото и описание места в Excursion вручную не дублировать;
+- URL карточки строится через `countryId` самой Destination, а не через `country` Excursion;
+- если Destination еще не создана, в Excursion указывать `destinationName` как fallback-название места;
+- при отсутствующей Destination показывается только `destinationName` в поле «Место», без фотографии и описания;
+- после появления Destination с тем же `destination` полный блок места появляется автоматически, без правок Excursion;
+- при существующей Destination ее `name` имеет приоритет над `destinationName`.
+
+Для новой Excursion, у которой место еще не создано:
+
+```yaml
+destination: destination_country_place
+destinationName: "Название места"
+```
+
+Если Destination уже существует, `destinationName` можно не указывать.
+
 ## 1. Правило сопоставления
 
 Текущий рабочий проход идет **по уникализированным турам**, сверху вниз по строкам Google Sheets, но перед продолжением обычной очереди нужно закрывать известные случаи старой архитектуры `legacy_inside_day`.

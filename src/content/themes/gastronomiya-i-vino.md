@@ -13,9 +13,10 @@ featuredCountries:
   - country_argentina
   - country_brazil
   - country_peru
+  - country_colombia
 sourceUrl: https://brasiltours.ru/vinnyi-tury
 sourceSnapshot: page_texts_original/vinnyi-tury__d73d99b5.md
-updatedAt: 2026-09-24
+updatedAt: 2026-10-02
 ---
 
 ## Вино и кухня могут стать основой маршрута

@@ -1,0 +1,41 @@
+---
+id: "excursion_source_obzornaja_jekskursija_po_gorodu_na_celyj_den_8_chasov"
+locale: "ru"
+title: "Обзорная экскурсия по городу на целый день (8 часов)"
+slug: "obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov"
+status: "approved"
+searchAliases: []
+country: "country_brazil"
+destination: "destination_brazil_sao_paulo"
+destinationName: "Сан-Паулу"
+relatedDestinations: []
+themes: []
+duration: "8 часов"
+language: []
+priceFrom: 183
+currency: "USD"
+priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
+hero:
+  src: "https://brasiltours.ru/image/catalog/product/f/i/file_57_122.png"
+  alt: "Обзорная экскурсия по Сан Пауло"
+gallery:
+  - src: "https://brasiltours.ru/image/san%20paolo%201.png"
+    alt: ""
+  - src: "https://brasiltours.ru/image/san%20paolo.png"
+    alt: ""
+  - src: "https://brasiltours.ru/image/catalog/product/s/a/saopaulo_3.jpg"
+    alt: ""
+route: []
+lead: "Обзорная экскурсия по Сан-Паулу на целый день продолжительностью 8 часов."
+included: []
+notIncluded: []
+notes:
+  - "Принимающая сторона оставляет за собой право изменения порядка достопримечательностей."
+sourceUrl: "https://brasiltours.ru/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov"
+sourceSnapshot: "https://drive.google.com/file/d/1zBaIn5ihjvdNYYJvRib_RV8oLmdo2gPn/view?usp=drivesdk"
+updatedAt: "2026-10-02"
+---
+
+Стоимость экскурсии — $183 на человека.
+
+Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения.

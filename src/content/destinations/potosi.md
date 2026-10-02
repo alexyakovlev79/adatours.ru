@@ -9,16 +9,16 @@ destinationType: city
 summary: Потоси расположен у подножья горы Серро-де-Потоси. О прошлом города напоминают колониальные особняки, церкви и монастыри, а экскурсии знакомят с работой действующих шахт.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/potosi-3.jpg
+  src: /media/destinations/potosi/hero-enhanced-20261003.webp
   alt: 'На фото: рассвет в городе Потоси в Боливии'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/c/e/cerro_rico_from_town.jpg
+- src: /media/destinations/potosi/gallery-1-enhanced-20261003.webp
   alt: 'На фото: в городе Потоси в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/1/3/139080834_60f5aefd50.jpg
+- src: /media/destinations/potosi/gallery-2-enhanced-20261003.webp
   alt: 'На фото: в городе Потоси в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/p/o/potosi.jpg
+- src: /media/destinations/potosi/gallery-3-enhanced-20261003.webp
   alt: 'На фото: в городе Потоси в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN3880_6.jpg
+- src: /media/destinations/potosi/gallery-4-enhanced-20261003.webp
   alt: 'На фото: в городе Потоси в Боливии'
 themes: []
 relatedDestinations: []

@@ -9,7 +9,7 @@ destinationType: city
 summary: Оруро был основан в 1606 году как центр добычи серебра. Сегодня город известен карнавалом, в котором сохранились элементы доколумбовских традиций индейцев региона.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/oruro.jpg
+  src: /media/destinations/oruro/hero-enhanced-20261003.webp
   alt: 'На фото: карнавал в городе Оруро в Боливии'
 gallery: []
 themes: []

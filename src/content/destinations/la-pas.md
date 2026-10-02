@@ -14,9 +14,9 @@ hero:
 gallery:
 - src: /media/destinations/la-pas/gallery-1-enhanced-20261003.webp
   alt: 'На фото: столица Боливии город Ла Пас'
-- src: https://brasiltours.ru/image/catalog/category/1/0/1034574309_f8a777f8ff_b.jpg
+- src: /media/destinations/la-pas/gallery-2-enhanced-20261003.webp
   alt: 'На фото: столица Боливии город Ла Пас'
-- src: https://brasiltours.ru/image/catalog/category/L/a/La_Paz_400.jpg
+- src: /media/destinations/la-pas/gallery-3-enhanced-20261003.webp
   alt: 'На фото: столица Боливии город Ла Пас'
 themes: []
 relatedDestinations: []

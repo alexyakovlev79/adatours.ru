@@ -9,10 +9,10 @@ destinationType: city
 summary: Санта-Крус-де-ла-Сьерра находится на востоке Боливии. В городе можно посетить площадь 24 сентября и Кафедральный собор, а в окрестностях — национальные парки Амборо и Ноэль Кемп Меркадо.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/bolivia-santa-cruz.jpg
+  src: /media/destinations/santa-krus/hero-enhanced-20261003.webp
   alt: 'На фото: кафедральный собор в городе Санта-Круз в Боливии'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/p/h/photo-9317-03-02-07-10-52-31.jpg
+- src: /media/destinations/santa-krus/gallery-1-enhanced-20261003.webp
   alt: 'На фото: кафедральный собор в городе Санта-Круз в Боливии'
 - src: https://brasiltours.ru/image/catalog/category/B/X/BXK80648_fortaleza-santa-cruz-vista-rj-niteroi800_1.jpg
   alt: 'На фото: в городе Санта-Круз в Боливии'

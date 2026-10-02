@@ -9,16 +9,16 @@ destinationType: natural_area
 summary: Дельта реки Ориноко знакомит с тропическими лесами, мангровыми зарослями и жизнью индейцев варао. По протокам путешествуют на лодках, наблюдая за обитателями реки и берегов.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/3344.jpg
+  src: /media/countries/venezuela/featureBands-3-enhanced-20261002.webp
   alt: 'На фото: дельта реки Ориноко в Венесуэле'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_54_1.jpg
+- src: /media/destinations/orinoco-delta/gallery-1-enhanced-20261003.webp
   alt: 'На фото: дельта реки Ориноко в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_55_1.jpg
+- src: /media/destinations/orinoco-delta/gallery-2-enhanced-20261003.webp
   alt: 'На фото: дельта реки Ориноко в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_56_1.jpg
+- src: /media/destinations/orinoco-delta/gallery-3-enhanced-20261003.webp
   alt: 'На фото: дельта реки Ориноко в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_53_2.jpg
+- src: /media/destinations/orinoco-delta/gallery-4-enhanced-20261003.webp
   alt: 'На фото: дельта реки Ориноко в Венесуэле'
 themes: []
 relatedDestinations: []

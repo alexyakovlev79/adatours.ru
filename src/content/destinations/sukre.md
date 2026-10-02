@@ -18,7 +18,7 @@ gallery:
   alt: 'На фото: город Сукре в Боливии'
 - src: /media/destinations/sucre/gallery-3-enhanced-20261003.webp
   alt: 'На фото: город Сукре в Боливии'
-- src: https://brasiltours.ru/image/catalog/category/8/0/800px-Watching_Sunset_Salar_de_Uyuni_Bolivia_Luca_Galuzzi_2006.jpg
+- src: /media/destinations/sucre/gallery-4-enhanced-20261003.webp
   alt: 'На фото: город Сукре в Боливии'
 themes: []
 relatedDestinations: []

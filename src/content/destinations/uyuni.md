@@ -9,18 +9,18 @@ destinationType: natural_area
 summary: Солончак Уюни в сезон дождей превращается в огромное зеркало, отражающее небо. В сухой сезон перед путешественниками простирается плоская белая соляная пустыня.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/trevor-mckinnon-y-z-ltvmjdg-unsplash-2.jpg
+  src: /media/countries/bolivia/featureBands-1-enhanced-20261002.webp
   alt: 'На фото: соленое озеро (солончак) Уюни'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN4206_13.jpg
+- src: /media/destinations/uyuni/gallery-1-enhanced-20261003.webp
   alt: 'На фото: Лес кактусов и соленое озеро (солончак) Уюни'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN2662_4.jpg
+- src: /media/destinations/uyuni/gallery-2-enhanced-20261003.webp
   alt: 'На фото: соленое озеро (солончак) Уюни'
-- src: https://brasiltours.ru/image/catalog/category/b/o/boliviasalar003.jpg
+- src: /media/destinations/uyuni/gallery-3-enhanced-20261003.webp
   alt: 'На фото: соленое озеро (солончак) Уюни'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN4206_3.jpg
+- src: /media/destinations/uyuni/gallery-4-enhanced-20261003.webp
   alt: 'На фото: соленое озеро (солончак) Уюни'
-- src: https://brasiltours.ru/image/catalog/category/j/a/janInSaltDesert.jpg
+- src: /media/destinations/uyuni/gallery-5-enhanced-20261003.webp
   alt: 'На фото: Джип тур на соленое озеро (солончак) Уюни'
 themes: []
 relatedDestinations: []

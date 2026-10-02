@@ -9,7 +9,7 @@ destinationType: region
 summary: Тиауанаку — древний город в Андах, духовный и политический центр одноименной цивилизации. Здесь можно увидеть Ворота Солнца, пирамиду Акапана и Каласасайю.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/tiahuanacu-bolivia.jpg
+  src: /media/countries/bolivia/featureBands-3-enhanced-20261002.webp
   alt: 'На фото: город Тиванку в Боливии'
 gallery: []
 themes: []

@@ -9,6 +9,7 @@ searchAliases:
   - Кофейная ферма Перейра
   - Дегустация колумбийского кофе
 country: country_colombia
+destination: destination_colombia_pereira
 themes: [gastronomy, coffee]
 duration: 5 часов
 language:

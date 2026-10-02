@@ -7,6 +7,8 @@ status: approved
 searchAliases:
   - "Пингвины Ушуайя"
 country: country_argentina
+destination: destination_argentina_ushuaia
+destinationName: "Ушуайя"
 themes:
   - nature
   - wildlife

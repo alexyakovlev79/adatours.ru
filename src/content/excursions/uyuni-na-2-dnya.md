@@ -10,6 +10,7 @@ searchAliases:
   - Уюни на 2 дня
 country: country_bolivia
 destination: destination_bolivia_uyuni
+destinationName: "Уюни"
 themes: [nature, adventure]
 duration: "2 дня / 1 ночь"
 format: "Джип-тур 4x4"

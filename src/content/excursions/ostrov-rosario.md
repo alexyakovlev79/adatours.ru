@@ -9,6 +9,8 @@ searchAliases:
   - Острова Росарио
   - Росарио из Картахены
 country: country_colombia
+destination: destination_colombia_islas_rosario
+destinationName: "Острова Росарио"
 themes: [nature, beach]
 duration: 5 часов
 language:

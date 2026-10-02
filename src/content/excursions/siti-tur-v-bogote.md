@@ -10,6 +10,7 @@ searchAliases:
   - Ла-Канделария и Монсеррат
 country: country_colombia
 destination: destination_colombia_bogota
+destinationName: "Богота"
 themes: [culture, city]
 duration: 5 часов
 language:

@@ -9,6 +9,7 @@ searchAliases:
   - Полет над Наска
 country: country_peru
 destination: destination_peru_linii_naska_i_ostrova_balestas
+destinationName: "Линии Наска и острова Бальестас"
 themes: [culture, adventure]
 duration: 35 минут
 language: []

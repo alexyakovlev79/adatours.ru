@@ -10,6 +10,7 @@ searchAliases:
   - Экскурсия на Флорену
 country: country_ecuador
 destination: destination_ecuador_galapagos
+destinationName: "Галапагосские острова"
 themes: [nature, wildlife]
 duration: 6 часов
 language:

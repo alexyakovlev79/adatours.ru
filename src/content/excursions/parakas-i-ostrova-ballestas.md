@@ -9,6 +9,7 @@ searchAliases:
   - Паракас и Бальестас
 country: country_peru
 destination: destination_peru_parakas
+destinationName: "Паракас"
 themes: [nature, wildlife]
 language: []
 hero:

@@ -10,6 +10,7 @@ searchAliases:
   - Эль-Фуэрте-де-Самайпата
 country: country_bolivia
 destination: destination_bolivia_santa_krus
+destinationName: "Санта-Крус"
 themes: [culture, history]
 duration: 8 часов
 language:

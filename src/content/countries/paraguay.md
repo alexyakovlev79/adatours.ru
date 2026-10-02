@@ -9,7 +9,7 @@ searchAliases:
 summary: >-
   Парагвай соединяет Асунсьон, реки Парана и Парагвай, иезуитские миссии, Гран-Чако и район плотины Итайпу. Ada Tours может собрать природный и культурный маршрут, добавить гастрономию и рыбалку или соединить Парагвай с Бразилией и Аргентиной.
 hero:
-  src: https://brasiltours.ru/image/countries/paraguay/1.jpg
+  src: /media/countries/paraguay/hero-enhanced-20261002.webp
   alt: Замок Карлота Пальмерола в Арегуа, Парагвай
 gallery: []
 regions:
@@ -29,15 +29,15 @@ featureBands:
   - eyebrow: Столица и культура
     title: Асунсьон
     text: Асунсьон добавляет к маршруту колониальную архитектуру, музеи, ботанический сад и современную городскую жизнь. Здесь же удобно знакомиться с местной кухней и искусством.
-    image: https://brasiltours.ru/image/countries/paraguay/3.jpg
+    image: /media/countries/paraguay/featureBands-1-enhanced-20261002.webp
   - eyebrow: Иезуитское наследие
     title: Энкарнасьон и Тринидад
     text: На юге страны можно включить в маршрут иезуитские миссии Тринидад-де-Парана и Хесус-де-Таваранге, где архитектура колониального барокко соединяется с традициями гуарани.
-    image: https://brasiltours.ru/image/countries/paraguay/2.jpg
+    image: /media/countries/paraguay/featureBands-2-enhanced-20261002.webp
   - eyebrow: Река Парана
     title: Сьюдад-дель-Эсте и Итайпу
     text: Район Сьюдад-дель-Эсте позволяет добавить к поездке реку Парана и плотину Итайпу, а также продолжить маршрут к границе с Бразилией и Аргентиной.
-    image: https://brasiltours.ru/image/countries/paraguay/4.jpg
+    image: /media/countries/paraguay/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/paragvaj-ru
 sourceSnapshot: page_texts_original/paragvaj-ru__b93a6194.md
 updatedAt: 2026-10-02

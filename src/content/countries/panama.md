@@ -38,11 +38,11 @@ featureBands:
   - eyebrow: Горы и природа
     title: Бокете и Панамское нагорье
     text: Бокете и горные районы подходят для треккинга, наблюдения за птицами и поездок к вулкану Бару. В программу можно добавить леса, водопады и более прохладные высокогорные районы.
-    image: https://brasiltours.ru/image/countries/panama/4.jpg
+    image: /media/countries/panama/featureBands-2-enhanced-20261002.webp
   - eyebrow: Острова и море
     title: Бокас-дель-Торо и Сан-Блас
     text: Архипелаги Бокас-дель-Торо и Сан-Блас позволяют добавить к маршруту пляжи, лодочные поездки, снорклинг и отдых на Карибском море.
-    image: https://brasiltours.ru/image/countries/panama/10.jpg
+    image: /media/countries/panama/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/panama-ru
 sourceSnapshot: page_texts_original/panama-ru__16b2ec4f.md
 updatedAt: 2026-10-02

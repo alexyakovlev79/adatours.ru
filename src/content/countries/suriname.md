@@ -9,7 +9,7 @@ searchAliases:
 summary: >-
   Суринам соединяет колониальный Парамарибо, тропические леса, реки, водопады и национальные парки северо-востока Южной Америки. Ada Tours может собрать природный маршрут, добавить рыбалку и пляжный отдых или соединить Суринам с Гайаной, Французской Гвианой и Бразилией.
 hero:
-  src: https://brasiltours.ru/image/countries/surinam/1.jpg
+  src: /media/countries/suriname/hero-enhanced-20261002.webp
   alt: Дикая природа Суринама
 gallery: []
 regions:
@@ -27,15 +27,15 @@ featureBands:
   - eyebrow: Столица и культура
     title: Парамарибо
     text: Исторический центр Парамарибо соединяет нидерландскую колониальную архитектуру, религиозные здания разных общин и многоэтничную культуру страны. Столицу удобно сделать отправной точкой для поездок в глубинные районы.
-    image: https://brasiltours.ru/image/countries/surinam/5.jpg
+    image: /media/countries/suriname/featureBands-1-enhanced-20261002.webp
   - eyebrow: Реки и тропические леса
     title: Браунсберг и Брокопондо
     text: Из Парамарибо маршрут можно продолжить к водохранилищу Бломмстейн, плотине Брокопондо и национальному парку Браунсберг, добавив лодочные поездки, пешие маршруты, водопады и наблюдение за природой.
-    image: https://brasiltours.ru/image/catalog/category/B/N/BN20144_4.jpg
+    image: /media/countries/suriname/featureBands-2-enhanced-20261002.webp
   - eyebrow: Атлантическое побережье
     title: Галиби и морские черепахи
     text: На побережье в районе Галиби можно добавить природную поездку с наблюдением за морскими черепахами. Пляжи Суринама подходят скорее как часть исследовательского маршрута, чем как самостоятельный курортный отдых.
-    image: https://brasiltours.ru/image/catalog/category/B/N/BN2716_303.jpg
+    image: /media/countries/suriname/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/surinam-ru
 sourceSnapshot: page_texts_original/surinam-ru__9168c20b.md
 updatedAt: 2026-10-02

@@ -13,6 +13,7 @@ import { withBase } from '../lib/paths';
 import { countryPath, destinationBreadcrumbs as buildDestinationBreadcrumbs, destinationPath, excursionPath, tourPath } from '../lib/routes';
 import { excursionHasDestination } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
+import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-relations';
 
 const { entry } = Astro.props;
@@ -41,6 +42,7 @@ const optionalTourEntries = allTourEntries.filter((item) =>
   tourHasOptionalDestination(item.data, d.id)
 );
 const excursionTourCounts = buildExcursionTourCounts(allTourEntries);
+const destinationTourCounts = buildDestinationTourCounts(allTourEntries);
 const relatedTours = mainTourEntries
   .sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0))
   .slice(0, 3);
@@ -67,13 +69,7 @@ for (const tour of mainTourEntries) {
 
 const relatedDestinations = destinationEntries
   .filter((item) => item.data.id !== d.id && destinationTourOverlap.has(item.data.id))
-  .sort((a, b) => {
-    const overlapDiff =
-      (destinationTourOverlap.get(b.data.id) ?? 0) -
-      (destinationTourOverlap.get(a.data.id) ?? 0);
-
-    return overlapDiff || a.data.name.localeCompare(b.data.name, 'ru');
-  })
+  .sort(compareDestinationsByPopularity(destinationTourCounts))
   .slice(0, 10);
 const featureBandImages = new Set(d.featureBands.map((band) => band.image));
 const visibleGallery = d.gallery.filter(

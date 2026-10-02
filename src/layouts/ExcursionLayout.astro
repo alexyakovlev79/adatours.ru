@@ -15,6 +15,7 @@ import { destinationCatalogById } from '../lib/content-validation';
 import { destinationPath, excursionBreadcrumbs as buildExcursionBreadcrumbs, excursionGeography, excursionPath, tourPath } from '../lib/routes';
 import { excursionDestinationIds } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsForTour } from '../lib/excursion-popularity';
+import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -37,7 +38,11 @@ const geography = excursionGeography(d);
 const country = countryEntries.find((item) => item.data.id === geography.country.id);
 const destinationById = new Map(destinationEntries.map((item) => [item.data.id, item]));
 const destination = d.destination ? destinationById.get(d.destination) : undefined;
-const visibleDestinations = linkedDestinationIds.map((id) => destinationById.get(id)).filter((item) => item !== undefined);
+const destinationTourCounts = buildDestinationTourCounts(tourEntries);
+const visibleDestinations = linkedDestinationIds
+  .map((id) => destinationById.get(id))
+  .filter((item) => item !== undefined)
+  .sort(compareDestinationsByPopularity(destinationTourCounts));
 
 const excursionTourCounts = buildExcursionTourCounts(tourEntries);
 const relatedExcursionTourOverlap = new Map<string, number>();

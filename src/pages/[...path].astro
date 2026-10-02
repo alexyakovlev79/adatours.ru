@@ -13,6 +13,7 @@ import {
   type BreadcrumbItem, type CountryRoute, type DestinationRoute,
 } from '../lib/routes';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
+import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { tourHasMainCountry } from '../lib/tour-relations';
 
 type DetailProps =
@@ -35,8 +36,9 @@ export async function getStaticPaths() {
     getCollection('excursions', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
   ]);
   const excursionTourCounts = buildExcursionTourCounts(tours);
+  const destinationTourCounts = buildDestinationTourCounts(tours);
 
-  destinations.sort((a, b) => a.data.name.localeCompare(b.data.name, 'ru'));
+  destinations.sort(compareDestinationsByPopularity(destinationTourCounts));
   tours.sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0) || a.data.title.localeCompare(b.data.title, 'ru'));
   excursions.sort(compareExcursionsByPopularity(excursionTourCounts));
 

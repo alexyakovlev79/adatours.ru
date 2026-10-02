@@ -9,6 +9,7 @@ import DestinationBand from '../components/editorial/DestinationBand.astro';
 import { withBase } from '../lib/paths';
 import { countryBreadcrumbs, countryPath, destinationPath, excursionPath, themePath, tourPath } from '../lib/routes';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
+import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { tourHasMainCountry } from '../lib/tour-relations';
 
 const { entry } = Astro.props;
@@ -64,17 +65,9 @@ const [destinationEntries, allTourEntries, excursionEntries, themeEntries] = awa
 
 const tourEntries = allTourEntries.filter((item) => tourHasMainCountry(item.data, d.id));
 const excursionTourCounts = buildExcursionTourCounts(allTourEntries);
+const destinationTourCounts = buildDestinationTourCounts(allTourEntries);
 
-const preferredDestinations = new Map(
-  d.regions.map((name, index) => [name.toLocaleLowerCase('ru'), index])
-);
-
-destinationEntries.sort((a, b) => {
-  const ai = preferredDestinations.get(a.data.name.toLocaleLowerCase('ru')) ?? 999;
-  const bi = preferredDestinations.get(b.data.name.toLocaleLowerCase('ru')) ?? 999;
-  if (ai !== bi) return ai - bi;
-  return a.data.name.localeCompare(b.data.name, 'ru');
-});
+destinationEntries.sort(compareDestinationsByPopularity(destinationTourCounts));
 
 tourEntries.sort((a, b) =>
   (b.data.priority ?? 0) - (a.data.priority ?? 0) ||

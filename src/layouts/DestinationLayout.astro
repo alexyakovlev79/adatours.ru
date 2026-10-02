@@ -13,7 +13,7 @@ import { withBase } from '../lib/paths';
 
 const { entry } = Astro.props;
 const d = entry.data;
-const [tourEntries, countryEntries, excursionEntries, relatedDestinationEntries] = await Promise.all([
+const [tourEntries, countryEntries, excursionEntries, destinationEntries] = await Promise.all([
   getCollection('tours', ({ data }) =>
     data.locale === 'ru' &&
     !['draft', 'archived'].includes(data.status) &&
@@ -27,8 +27,7 @@ const [tourEntries, countryEntries, excursionEntries, relatedDestinationEntries]
   ),
   getCollection('destinations', ({ data }) =>
     data.locale === 'ru' &&
-    !['draft', 'archived'].includes(data.status) &&
-    d.relatedDestinations.includes(data.id)
+    !['draft', 'archived'].includes(data.status)
   ),
 ]);
 
@@ -38,11 +37,31 @@ const relatedTours = tourEntries
 const relatedExcursions = excursionEntries
   .sort((a, b) => a.data.title.localeCompare(b.data.title, 'ru'))
   .slice(0, 6);
-const relatedDestinations = relatedDestinationEntries
-  .sort((a, b) =>
-    d.relatedDestinations.indexOf(a.data.id) - d.relatedDestinations.indexOf(b.data.id)
-  )
-  .slice(0, 3);
+const destinationTourOverlap = new Map<string, number>();
+
+for (const tour of tourEntries) {
+  const uniqueDestinationIds = new Set(
+    tour.data.destinations.filter((destinationId) => destinationId !== d.id)
+  );
+
+  for (const destinationId of uniqueDestinationIds) {
+    destinationTourOverlap.set(
+      destinationId,
+      (destinationTourOverlap.get(destinationId) ?? 0) + 1
+    );
+  }
+}
+
+const relatedDestinations = destinationEntries
+  .filter((item) => item.data.id !== d.id && destinationTourOverlap.has(item.data.id))
+  .sort((a, b) => {
+    const overlapDiff =
+      (destinationTourOverlap.get(b.data.id) ?? 0) -
+      (destinationTourOverlap.get(a.data.id) ?? 0);
+
+    return overlapDiff || a.data.name.localeCompare(b.data.name, 'ru');
+  })
+  .slice(0, 10);
 const featureBandImages = new Set(d.featureBands.map((band) => band.image));
 const visibleGallery = d.gallery.filter(
   (item) => item.src !== d.hero?.src && !featureBandImages.has(item.src)

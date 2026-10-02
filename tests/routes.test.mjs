@@ -66,7 +66,7 @@ test('tour main route excludes optional geography and keeps parallel country bre
   const trails = expandBreadcrumbTrails(crumbs);
   assert.equal(trails.length, 2);
   assert.deepEqual(trails.map((trail) => trail.map((item) => item.label)), [
-    ['Туры', 'Аргентина', trip.title], ['Туры', 'Бразилия', trip.title],
+    ['Туры', 'Аргентина'], ['Туры', 'Бразилия'],
   ]);
   assert.throws(() => tourPath({ slug: 'invalid', countries: ['country_brazil'], routeCountries: ['country_argentina'] }), /subset/);
   assert.throws(() => tourPath({ slug: 'invalid', countries: ['country_brazil'], routeCountries: [] }), /no route countries/);

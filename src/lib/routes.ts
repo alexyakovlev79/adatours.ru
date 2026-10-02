@@ -246,7 +246,6 @@ export function tourBreadcrumbs(tour: TourRouteInput & { title: string }): Bread
   return [
     { label: 'Туры', href: '/tury/' },
     links.length === 1 ? links[0] : { links },
-    { label: tour.title, href: tourPath(tour) },
   ];
 }
 

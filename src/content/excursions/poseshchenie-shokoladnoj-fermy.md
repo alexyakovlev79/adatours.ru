@@ -9,6 +9,7 @@ searchAliases:
   - Тур на шоколадную ферму
   - Дегустация шоколада Колумбия
 country: country_colombia
+destination: destination_colombia_pereira
 themes: [gastronomy]
 duration: 5 часов
 language:

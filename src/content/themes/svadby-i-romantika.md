@@ -14,6 +14,7 @@ featuredCountries:
   - country_argentina
   - country_peru
   - country_dominican_republic
+  - country_nicaragua
 
 sourceUrl: https://brasiltours.ru/svadby-i-romantika
 sourceSnapshot: page_texts_original/svadby-i-romantika__00c77142.md

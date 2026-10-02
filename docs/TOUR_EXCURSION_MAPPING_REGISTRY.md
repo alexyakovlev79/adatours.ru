@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.30  
+Версия: 1.31  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **21** туров со статусом `Уникализировано`.
+В текущем реестре учтено **22** тура со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -173,12 +173,17 @@ missing_excursion_entities = 0
 | 293 | `tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin` | `src/content/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin.md` | Восхождение на Аконкагуа 6962 м | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 294 | `tour_source_kongress_v_argentine` | `src/content/tours/kongress-v-argentine.md` | Корпоративный тур в Аргентину: Буэнос-Айрес и Тигре за 5 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 295 | `tour_source_kruiz_mys_gorn_i_antarktida` | `src/content/tours/kruiz-mys-gorn-i-antarktida.md` | Круиз через мыс Горн и пролив Дрейка в Антарктиду | DONE_NO_RELATIONS | 0 | 2026-10-02 |
+| 296 | `tour_source_patagoniya_i_chilijskie_fordy` | `src/content/tours/patagoniya-i-chilijskie-fordy.md` | Патагония и Чилийские фьорды | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 295 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 296 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 296, 2026-10-02
+
+- **Строка 296 / `tour_source_patagoniya_i_chilijskie_fordy`:** опубликован 9-дневный экспедиционный круиз «Патагония и Чилийские фьорды» из V2 + original. Маршрут проходит от Пуэрто-Монта через фьорды региона Айсен, национальный парк Сан-Рафаэль, залив Пеньяс, Калета Тортель, канал Мессье, национальный парк Бернардо О’Хиггинс, пролив Магеллана, Огненную Землю и пролив Бигль к Ушуайе. Высадки, выходы на лодках «Зодиак», ледники и наблюдение за животными являются основной программой numbered days; отдельных standalone Excursion между днями и embedded excursion-модулей нет. Итог: `DONE_NO_RELATIONS`, `production_excursion_refs = 0`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `missing_excursion_entities = 0`.
 
 ### Проверка v1.1 — строка 295, 2026-10-02
 

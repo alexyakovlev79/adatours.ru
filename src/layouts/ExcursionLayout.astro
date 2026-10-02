@@ -14,7 +14,7 @@ const { entry } = Astro.props;
 const d = entry.data;
 
 const [countryEntries, destinationEntries, tourEntries, excursionEntries] = await Promise.all([
-  getCollection('countries', ({ data }) => data.locale === 'ru' && data.id === d.country),
+  getCollection('countries', ({ data }) => data.locale === 'ru'),
   getCollection('destinations', ({ data }) => data.locale === 'ru' && data.id === d.destination),
   getCollection('tours', ({ data }) =>
     data.locale === 'ru' &&
@@ -26,8 +26,11 @@ const [countryEntries, destinationEntries, tourEntries, excursionEntries] = awai
   ),
 ]);
 
-const country = countryEntries[0];
+const country = countryEntries.find((item) => item.data.id === d.country);
 const destination = destinationEntries[0];
+const destinationCountry = destination
+  ? countryEntries.find((item) => item.data.id === destination.data.countryId)
+  : undefined;
 
 const getTourExcursionIds = (tour) => {
   const ids = new Set<string>();
@@ -87,8 +90,8 @@ const destinationName =
   d.destinationName ??
   (d.destination ? fallbackDestinations[d.destination]?.label : undefined);
 
-const destinationHref = country && destination
-  ? `/napravleniya/${country.data.slug}/${destination.data.slug}/`
+const destinationHref = destinationCountry && destination
+  ? `/napravleniya/${destinationCountry.data.slug}/${destination.data.slug}/`
   : undefined;
 
 const countryBreadcrumb = country

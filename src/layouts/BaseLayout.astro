@@ -24,6 +24,7 @@ interface Props {
   headerTheme?: 'light' | 'dark';
   noindex?: boolean;
   showBreadcrumbs?: boolean;
+  hideCurrentBreadcrumbLabel?: boolean;
   breadcrumbs?: BreadcrumbItem[];
   pageSchema?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
@@ -37,6 +38,7 @@ const {
   headerTheme = 'light',
   noindex = false,
   showBreadcrumbs = true,
+  hideCurrentBreadcrumbLabel = false,
   breadcrumbs,
   pageSchema,
 } = Astro.props;
@@ -210,7 +212,13 @@ const graph = [
     <SiteHeader theme={headerTheme} />
     <SearchOverlay />
     {showBreadcrumbs && !noindex && segments.length > 0 && (
-      <Breadcrumbs pathname={Astro.url.pathname} title={title} theme={headerTheme} items={breadcrumbs} />
+      <Breadcrumbs
+        pathname={Astro.url.pathname}
+        title={title}
+        theme={headerTheme}
+        items={breadcrumbs}
+        hideCurrentLabel={hideCurrentBreadcrumbLabel}
+      />
     )}
     <main>
       <slot />

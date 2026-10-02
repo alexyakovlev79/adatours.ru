@@ -7,9 +7,10 @@ interface Props {
   title: string;
   theme?: 'light' | 'dark';
   items?: BreadcrumbItem[];
+  hideCurrentLabel?: boolean;
 }
 
-const { pathname, title, theme = 'light', items } = Astro.props;
+const { pathname, title, theme = 'light', items, hideCurrentLabel = false } = Astro.props;
 const base = import.meta.env.BASE_URL || '/';
 const normalizedBase = base.endsWith('/') ? base : `${base}/`;
 let cleanPath = pathname;
@@ -83,7 +84,9 @@ const crumbs: BreadcrumbItem[] = items?.length
 const isCustomTrail = Boolean(items?.length);
 
 // Entity trails explicitly include the current title and parallel country links.
-const visibleCrumbs = isCustomTrail ? crumbs : crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
+const visibleCrumbs = isCustomTrail
+  ? (hideCurrentLabel && crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs)
+  : crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
 ---
 
 <nav class:list={['breadcrumbs', `breadcrumbs--${theme}`, isCustomTrail && 'breadcrumbs--custom']} aria-label="Хлебные крошки">

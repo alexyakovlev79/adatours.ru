@@ -1,6 +1,6 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
-Версия: 1.35  
+Версия: 1.36  
 Дата старта: 2026-09-30  
 Repo: `alexyakovlev79/adatours.ru`  
 Ветка: `main`  
@@ -150,7 +150,7 @@ missing_excursion_entities = 0
 
 ## 3. Очередь уникализированных туров
 
-В текущем реестре учтено **26** туров со статусом `Уникализировано`.
+В текущем реестре учтено **27** туров со статусом `Уникализировано`.
 
 Важно: существующая связь с «Парком птиц» не означает, что тур уже полностью просмотрен на **все остальные экскурсии**. Поэтому на старте полный scan-status всех 16 туров = `PENDING`.
 
@@ -178,12 +178,17 @@ missing_excursion_entities = 0
 | 298 | `tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii` | `src/content/tours/prostory-patagonii-chili-i-argentina-v-odnom-puteshestvii.md` | Просторы Патагонии: Чили и Аргентина за 8 дней | DONE_LINKED | 2 | 2026-10-02 |
 | 299 | `tour_source_rybalka_v_ushuajya` | `src/content/tours/rybalka-v-ushuajya.md` | Рыбалка в Ушуайе: поездка в Пуэрто-Альмансу и ловля королевского краба | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 300 | `tour_source_aconcagua_trek_ru` | `src/content/tours/aconcagua-trek-ru.md` | Треккинг на Аконкагуа: экспедиция на 18 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
+| 301 | `tour_source_antarktida_ekspress_vozdushnyj_kruiz` | `src/content/tours/antarktida-ekspress-vozdushnyj-kruiz.md` | Антарктида Экспресс: Ушуайя, мыс Горн и Антарктида за 6 дней | DONE_NO_RELATIONS | 0 | 2026-10-02 |
 | 344 | `tour_source_amazon_clipper_cruise_traditional_3_days_2_nights` | `src/content/tours/amazon-clipper-cruise-traditional-3-days-2-nights.md` | Amazon Clipper Cruise | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 410 | `tour_source_iguacu_falls` | `src/content/tours/iguacu-falls.md` | Свадебная церемония у водопадов Игуасу | DONE_LINKED | 1 | 2026-10-01 |
 | 411 | `tour_source_rio_de_janeiro_wedding` | `src/content/tours/rio-de-janeiro-wedding.md` | Свадебная церемония на пляже в Рио-де-Жанейро | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 | 416 | `tour_source_wedding_ceremony_tropical_package` | `src/content/tours/wedding-ceremony-tropical-package.md` | Тропическая свадебная церемония | DONE_NO_RELATIONS | 0 | 2026-10-01 |
 
-**Следующий проход v1.1:** строка 300 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+**Следующий проход v1.1:** строка 301 закрыта. Перед следующим проходом проверить Google Sheets на новые уникализированные туры.
+
+### Проверка v1.1 — строка 301, 2026-10-02
+
+- **Строка 301 / `tour_source_antarktida_ekspress_vozdushnyj_kruiz`:** опубликован 6-дневный тур «Антарктида Экспресс: Ушуайя, мыс Горн и Антарктида за 6 дней» из V2 + original. Это отдельный продукт, а не дубль `tour_source_kruiz_mys_gorn_i_antarktida`: у текущей программы цена $6595, а ключевая особенность — после острова Кинг-Джордж предусмотрен перелет в Пунта-Аренас, что исключает обратный морской переход через пролив Дрейка. Zodiac-высадки, береговые выходы и наблюдение за дикой природой являются основной программой numbered days; отдельных standalone Excursion между днями нет. Source hero существовал только в cache, поэтому использован подтвержденный raw content image `https://brasiltours.ru/image/Antarc%20Adatours.png` с той же source page. Итог: `DONE_NO_RELATIONS`, `production_excursion_refs = 0`, `remaining_local_standalone_cards = 0`, `remaining_embedded_excursion_modules = 0`, `missing_excursion_entities = 0`.
 
 ### Проверка v1.1 — строка 300, 2026-10-02
 

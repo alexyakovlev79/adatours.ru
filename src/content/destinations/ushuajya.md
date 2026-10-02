@@ -9,18 +9,18 @@ destinationType: city
 summary: Ушуайя стоит на берегах пролива Бигл, на архипелаге Огненная Земля. Здесь начинаются прогулки по национальному парку, горные маршруты и поездки на поезде к южным пейзажам.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/ushuajya.jpg
+  src: /media/destinations/ushuajya/hero-enhanced-20261002.webp
   alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN22516_11.jpg
+- src: /media/destinations/ushuajya/gallery-1-enhanced-20261002.webp
   alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN22516_59.jpg
+- src: /media/destinations/ushuajya/gallery-2-enhanced-20261002.webp
   alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN22516_1.jpg
+- src: /media/destinations/ushuajya/gallery-3-enhanced-20261002.webp
   alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN22516_54.jpg
+- src: /media/destinations/ushuajya/gallery-4-enhanced-20261002.webp
   alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN14141_4.jpg
+- src: /media/destinations/ushuajya/gallery-5-enhanced-20261002.webp
   alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
 themes: []
 relatedDestinations: []
@@ -40,3 +40,4 @@ updatedAt: '2026-10-02'
 Огненная Земля. На сегодняшний день других версий в происхождении названия нет этой территории. А именно, «Огненная земля» - первооткрыватель многих неизведанных земель, Магеллан, увидел на берегу с палубы своего корабля множество огней и решил , что это извергается вулкан и, естественно, что он назвал побережье «Огненной Землей». А это местное население (индейцы) по ночам жгли костры на берегу.
 
 Из Ушуайя до Антарктиды приблизительно 900 км. В городе стоит посмотреть исторический музей и старинную тюрьму – «ужас заключенных». В Ушуайя можно полетать на вертолете над «краем света», сделать тур по городу, поездить на самом «южном» поезде мира, на котором возили заключенных. А пешие прогулки вдоль берегов пролива Бигл дают возможность увидеть морских тюленей, пингвинов, бакланов, кондоров, альбатросов. В Национальном парке Огненной Земли представлены разнообразные виды животного и растительного мира.
+

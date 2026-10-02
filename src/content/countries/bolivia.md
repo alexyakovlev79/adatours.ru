@@ -9,7 +9,7 @@ searchAliases:
 summary: >-
   Боливия соединяет высокогорное Альтиплано, солончак Уюни, Ла-Пас, Тиауанако, колониальные города и озеро Титикака. Ada Tours может собрать маршрут по стране или соединить Боливию с Перу, Чили, Аргентиной и Бразилией.
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/22.jpg
+  src: /media/countries/bolivia/hero-enhanced-20261002.webp
   alt: Розовые фламинго на лагуне Альтиплано в Боливии
 gallery: []
 regions:
@@ -35,15 +35,15 @@ featureBands:
   - eyebrow: Альтиплано
     title: Солончак Уюни и высокогорные лагуны
     text: Уюни можно включить в джип-маршрут по Альтиплано с соляной равниной, лагунами, вулканическими пейзажами и фламинго.
-    image: https://brasiltours.ru/image/countries/bolivia/trevor-mckinnon-y-z-ltvmjdg-unsplash-2.jpg
+    image: /media/countries/bolivia/featureBands-1-enhanced-20261002.webp
   - eyebrow: Высокогорный город
     title: Ла-Пас и Лунная долина
     text: Ла-Пас добавляет в путешествие высокогорный городской пейзаж, колониальное наследие, рынки и поездки к природным объектам в окрестностях.
-    image: https://brasiltours.ru/image/countries/bolivia/la-paz-2.jpg
+    image: /media/countries/bolivia/featureBands-2-enhanced-20261002.webp
   - eyebrow: Древняя история
     title: Тиауанако и культура Альтиплано
     text: Руины Тиауанако позволяют добавить к природному маршруту археологию и историю цивилизаций, существовавших здесь задолго до испанского периода.
-    image: https://brasiltours.ru/image/countries/bolivia/tiahuanacu-bolivia.jpg
+    image: /media/countries/bolivia/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/boliviya-ru
 sourceSnapshot: page_texts_original/boliviya-ru__8e21444b.md
 updatedAt: 2026-10-01

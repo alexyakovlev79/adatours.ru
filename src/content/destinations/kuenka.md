@@ -34,8 +34,7 @@ gallery:
 themes:
   - culture
   - nature
-relatedDestinations:
-  - destination_ecuador_kito_vulkan_kotopahi
+relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 facts:

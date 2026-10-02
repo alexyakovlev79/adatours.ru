@@ -10,7 +10,7 @@ searchAliases:
 summary: >-
   Куба соединяет старую Гавану, колониальные города, долину Виньялес, Карибское море и пляжные курорты Варадеро, Кайо-Коко и других островов. Ada Tours может собрать маршрут по городам и природе, добавить пляжный отдых или соединить Кубу с другими странами региона.
 hero:
-  src: https://brasiltours.ru/image/countries/cuba/eye-qrbkrawwije-unsplash.jpg
+  src: /media/countries/cuba/hero-enhanced-20261002.webp
   alt: Ретроавтомобили на улицах Гаваны
 gallery: []
 regions:
@@ -40,15 +40,15 @@ featureBands:
   - eyebrow: Город и история
     title: Гавана и кубинские города
     text: Гавану можно соединить с Тринидадом, Сьенфуэгосом, Камагуэем, Сантьяго-де-Куба и другими городами, где колониальная архитектура, музыка и повседневная жизнь дают разный взгляд на страну.
-    image: https://brasiltours.ru/image/countries/cuba/havana.jpg
+    image: /media/countries/cuba/featureBands-1-enhanced-20261002.webp
   - eyebrow: Природа и сельские районы
     title: Пинар-дель-Рио и долина Виньялес
     text: Пинар-дель-Рио и долина Виньялес добавляют к городскому маршруту зеленые долины, холмы и районы, исторически связанные с выращиванием табака.
-    image: https://brasiltours.ru/image/countries/cuba/vinales-cuba.jpg
+    image: /media/countries/cuba/featureBands-2-enhanced-20261002.webp
   - eyebrow: Карибское море
     title: Варадеро и пляжная Куба
     text: Варадеро можно сделать отдельной пляжной частью поездки или добавить после маршрута по городам. В исходной программе также выделены Кайо-Коко, Кайо-Гильермо, Плайя-Анкон, Плайя-Эсмеральда и другие курорты.
-    image: https://brasiltours.ru/image/countries/cuba/varadero-cuba-2.jpg
+    image: /media/countries/cuba/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/kuba-ru
 sourceSnapshot: page_texts_original/kuba-ru__2b20ff13.md
 updatedAt: 2026-10-02

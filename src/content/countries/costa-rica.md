@@ -10,7 +10,7 @@ searchAliases:
 summary: >-
   Коста-Рика соединяет вулканы Ареналь и Поас, облачные леса Монтеверде, национальные парки Корковадо и Тортугеро и пляжи Тихого океана и Карибского моря. Ada Tours может собрать природный маршрут, добавить пляжный отдых, дайвинг или несколько активных дней.
 hero:
-  src: https://brasiltours.ru/image/countries/costa-rica/zdenek-machacek-46tbp3bp8lq-unsplash.jpg
+  src: /media/countries/costa-rica/hero-enhanced-20261002.webp
   alt: Попугай в лесах Коста-Рики
 gallery: []
 regions:
@@ -40,15 +40,15 @@ featureBands:
   - eyebrow: Вулканы и термальные источники
     title: Ареналь, Поас и горные районы
     text: Вулканы Ареналь, Поас, Ирасу, Ринкон-де-ла-Вьеха и Турриальба можно соединить с трекингом, горячими источниками и переездами через центральную часть страны.
-    image: https://brasiltours.ru/image/countries/costa-rica/6.jpg
+    image: /media/countries/costa-rica/featureBands-1-enhanced-20261002.webp
   - eyebrow: Облачные и дождевые леса
     title: Монтеверде, Корковадо и полуостров Оса
     text: Монтеверде известен облачным лесом, а Корковадо и полуостров Оса дают маршруты по тропическому лесу с наблюдением за птицами и животными.
-    image: https://brasiltours.ru/image/countries/costa-rica/9.jpg
+    image: /media/countries/costa-rica/featureBands-2-enhanced-20261002.webp
   - eyebrow: Два побережья
     title: Мануэль-Антонио, Тамариндо и Карибское море
     text: Пляжи Тихого океана можно соединить с Мануэль-Антонио, Тамариндо и Никойей, а на Карибском побережье добавить Пуэрто-Вьехо и Тортугеро.
-    image: https://brasiltours.ru/image/countries/costa-rica/8.jpg
+    image: /media/countries/costa-rica/featureBands-3-enhanced-20261002.webp
 sourceUrl: https://brasiltours.ru/kosta-rika-ru
 sourceSnapshot: page_texts_original/kosta-rika-ru__8195b997.md
 updatedAt: 2026-10-02

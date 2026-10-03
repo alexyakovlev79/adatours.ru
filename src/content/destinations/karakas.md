@@ -9,16 +9,16 @@ destinationType: city
 summary: Каракас — столица Венесуэлы с музеями, театрами и исторической архитектурой. Над городом расположен национальный парк Авила, а неподалеку находится карибское побережье.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/karakas-2.jpg
+  src: /media/destinations/caracas/hero-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN11_39.jpg
+- src: /media/destinations/caracas/gallery-1-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN12_6.jpg
+- src: /media/destinations/caracas/gallery-2-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN18867_24.jpg
+- src: /media/destinations/caracas/gallery-3-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN12_14.jpg
+- src: /media/destinations/caracas/gallery-4-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
 - src: https://brasiltours.ru/image/catalog/category/B/N/BN18867_30.jpg
   alt: 'На фото: столица Венесуэлы, город Каракас'

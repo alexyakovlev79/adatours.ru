@@ -9,18 +9,18 @@ destinationType: national_park
 summary: В национальном парке Канайма находится водопад Анхель. Вокруг него раскинулись тропические леса и скалы, а к небольшим водопадам парка можно отправиться на каноэ.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/2233.jpg
+  src: /media/countries/venezuela/featureBands-1-enhanced-20261002.webp
   alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN6278_2.jpg
+- src: /media/destinations/canaima-and-angel-falls/gallery-1-enhanced-20261003.webp
   alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/7/5/7568110canaimabeach.jpg
+- src: /media/destinations/canaima-and-angel-falls/gallery-2-enhanced-20261003.webp
   alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN19760_25.jpg
+- src: /media/destinations/canaima-and-angel-falls/gallery-3-enhanced-20261003.webp
   alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN11_38.jpg
+- src: /media/destinations/canaima-and-angel-falls/gallery-4-enhanced-20261003.webp
   alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/p/h/photo-8261-17-01-08-20-28-01.jpg
+- src: /media/destinations/canaima-and-angel-falls/gallery-5-enhanced-20261003.webp
   alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 themes: []
 relatedDestinations: []

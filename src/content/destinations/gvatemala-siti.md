@@ -9,16 +9,16 @@ destinationType: city
 summary: "Столица Гватемалы с Национальным дворцом культуры, Кафедральным собором, парками и музеями."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/guatemala-city.jpg"
+  src: "/media/destinations/guatemala-city/hero-enhanced-20261003.webp"
   alt: "На фото: город Гватемала-Сити (столица страны)"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN4465_4.jpg"
+  - src: "/media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp"
     alt: "На фото: город Гватемала-Сити (столица страны)"
-  - src: "https://brasiltours.ru/image/catalog/category/g/u/guatemala_city_b350w.jpg"
+  - src: "/media/destinations/guatemala-city/gallery-2-enhanced-20261003.webp"
     alt: "На фото: город Гватемала-Сити (столица страны)"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN18606_25.jpg"
+  - src: "/media/destinations/guatemala-city/gallery-3-enhanced-20261003.webp"
     alt: "На фото: город Гватемала-Сити (столица страны)"
-  - src: "https://brasiltours.ru/image/catalog/category/p/4/p44133-Guatemala_City_Guatemala-La_Merced.jpg"
+  - src: "/media/destinations/guatemala-city/gallery-4-enhanced-20261003.webp"
     alt: "На фото: город Гватемала-Сити (столица страны)"
   - src: "https://brasiltours.ru/image/catalog/category/D/u/DuskfromGuatemalaCity.jpg"
     alt: "На фото: город Гватемала-Сити (столица страны)"

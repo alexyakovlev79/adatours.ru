@@ -8,8 +8,8 @@ countryId: "country_colombia"
 destinationType: "region"
 summary: "Сьюдад-Пердида, или Затерянный город, хранит руины поселения культуры Тайрона в горах Сьерра-Невада-де-Санта-Марта. К ним ведут пешие тропы."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/colombia/new-photos/ciudad-perdida.jpg","alt":"На фото: затерянный город в Колумбии (Lost City)"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_53_1.jpg","alt":"На фото: затерянный город в Колумбии (Lost City)"}]
+hero: {"src":"/media/destinations/ciudad-perdida/hero-enhanced-20261003.webp","alt":"На фото: затерянный город в Колумбии (Lost City)"}
+gallery: [{"src":"/media/destinations/ciudad-perdida/gallery-1-enhanced-20261003.webp","alt":"На фото: затерянный город в Колумбии (Lost City)"}]
 themes: []
 relatedDestinations: []
 featuredTours: []
@@ -30,4 +30,5 @@ updatedAt: "2026-10-02"
 ## Отдых в горах Колумбии
 
 Поход в Затерянный город (Сьюдад-Пердида) должен быть в начале списка всех бесстрашных путешественников и любителей экотуризма.​Отправляемся в поход с рюкзаками по маленьким тропам, так как там нет проложенных дорог, никакой инфраструктуры. И именно этот факт делает местность уникальной для любителей экстрима и активностей.
+
 

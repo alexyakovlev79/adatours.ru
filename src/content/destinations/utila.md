@@ -9,24 +9,24 @@ destinationType: island
 summary: "Остров Гондураса с молодежной атмосферой, барами и кафе. Здесь изучают подводный мир и проходят обучение дайвингу."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/gonduras/utila.jpg"
+  src: "/media/destinations/utila/hero-enhanced-20261003.webp"
   alt: "На фото: остров Утила в Гондурасе"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN9410_1.jpg"
+  - src: "/media/destinations/utila/gallery-1-enhanced-20261003.webp"
     alt: "На фото: дайвинг на острове Утила в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN14033_10.jpg"
+  - src: "/media/destinations/utila/gallery-2-enhanced-20261003.webp"
     alt: "На фото: остров Утила в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/d/i/diver-brain-coral-utila.jpg"
+  - src: "/media/destinations/utila/gallery-3-enhanced-20261003.webp"
     alt: "На фото: дайвинг на острове Утила в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN15635_10.jpg"
+  - src: "/media/destinations/utila/gallery-4-enhanced-20261003.webp"
     alt: "На фото: дайвинг на острове Утила в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/u/t/utila2.jpg"
+  - src: "/media/destinations/utila/gallery-5-enhanced-20261003.webp"
     alt: "На фото: остров Утила в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_4_9.jpg"
+  - src: "/media/destinations/utila/gallery-6-enhanced-20261003.webp"
     alt: "На фото: остров Утила в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/p/7/p74691-Utila_Honduras-Diving_in_Utila.jpg"
+  - src: "/media/destinations/utila/gallery-7-enhanced-20261003.webp"
     alt: "На фото: остров Утила в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/u/t/utila10.jpg"
+  - src: "/media/destinations/utila/gallery-8-enhanced-20261003.webp"
     alt: "На фото: остров Утила в Гондурасе"
 themes: []
 relatedDestinations: []
@@ -48,3 +48,4 @@ updatedAt: "2026-10-02"
 ### Утила- рай для молодежи
 
 Гондурасу досталась часть барьерного рифа Белиза - второго по величине в мире – это самое дешевое место в мире, где можно получить сертификат дайвера уважаемой ассоциации PADI, подводный мир здесь очень красив и разнообразен. На острове очень много баров, кафе и интернет-кафе.
+

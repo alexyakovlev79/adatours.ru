@@ -9,18 +9,18 @@ destinationType: city
 summary: "Столица Гондураса у горы Эль-Пикачо с каменными мостами, колониальной застройкой и рынками ремесленных изделий."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/gonduras/8.jpg"
+  src: "/media/destinations/tegucigalpa/hero-enhanced-20261003.webp"
   alt: "На фото: город Тегусигальпа в Гондурасе"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN2264_2.jpg"
+  - src: "/media/destinations/tegucigalpa/gallery-1-enhanced-20261003.webp"
     alt: "На фото: город Тегусигальпа в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/9/1/91921-004.jpg"
+  - src: "/media/destinations/tegucigalpa/gallery-2-enhanced-20261003.webp"
     alt: "На фото: город Тегусигальпа в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN3165_9.jpg"
+  - src: "/media/destinations/tegucigalpa/gallery-3-enhanced-20261003.webp"
     alt: "На фото: город Тегусигальпа в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/2/8/2809930-Villa_Roy_Tegucigalpa_estilo_neoclasico-Tegucigalpa.jpg"
+  - src: "/media/destinations/tegucigalpa/gallery-4-enhanced-20261003.webp"
     alt: "На фото: город Тегусигальпа в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN3165_12.jpg"
+  - src: "/media/destinations/tegucigalpa/gallery-5-enhanced-20261003.webp"
     alt: "На фото: город Тегусигальпа в Гондурасе"
 themes: []
 relatedDestinations: []
@@ -44,3 +44,4 @@ updatedAt: "2026-10-02"
 ### Рынки - колорит Тегусигальпы
 
 Тегусигальпа никогда не страдала ни от пожаров, ни от землетрясений. Она во многом сохранила колорит колониальной эпохи.Одна из достопримечательностей Тегусигальпы — рынки. На них продаются не только продукты сельского хозяйства, но и изделия народного ремесла: глиняная посуда, плетеные корзины, резная деревянная скульптура.
+

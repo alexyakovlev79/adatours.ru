@@ -2,7 +2,7 @@
 id: tour_source_puteshestvie_po_kultovym_chudesam_brazilii
 locale: ru
 slug: brazil-iconic-wonders
-status: published
+status: archived
 title: Путешествие по культовым чудесам Бразилии
 countries:
 - country_brazil
@@ -159,6 +159,9 @@ routeDestinations:
 - destination_brazil_ilha_grande
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_rio_i_iguasu_puteshestvie_po_kultovym_chudesam_brazilii"
 ---
 
 **Длительность:** 7 дней / 6 ночей  

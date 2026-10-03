@@ -2,7 +2,7 @@
 id: tour_source_novogodnie_priklyucheniya_v_brazilii
 locale: ru
 slug: brazil-new-year-rio-pantanal-bonito-buzios
-status: published
+status: archived
 title: 'Тур в Бразилию на Новый Год: Рио, Пантанал, Бонито, пляжи Бузиоса'
 countries:
 - country_brazil
@@ -272,6 +272,8 @@ routeDestinations:
 - destination_brazil_golubaya_peschera_bonito
 - destination_brazil_reka_sukuri
 - destination_brazil_vodopady_reki_mimozo
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 12 дней / 11 ночей

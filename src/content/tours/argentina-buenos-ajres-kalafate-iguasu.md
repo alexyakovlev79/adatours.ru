@@ -3,7 +3,7 @@ id: tour_source_argentina_buenos_ajres_kalafate_iguasu
 locale: ru
 title: "Тур в Аргентину на 10 дней: Буэнос-Айрес, Патагония и Игуасу"
 slug: argentina-buenos-aires-el-calafate-iguazu-10-days
-status: approved
+status: archived
 searchAliases:
   - "Аргентина за 10 дней"
   - "Буэнос-Айрес Калафате Игуасу"
@@ -250,6 +250,9 @@ faq: []
 sourceUrl: https://brasiltours.ru/argentina-buenos-ajres-kalafate-iguasu
 sourceSnapshot: page_texts_original/argentina-buenos-ajres-kalafate-iguasu__2214ad3f.md
 updatedAt: 2026-10-02
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_argentina_ot_lda_k_vodopadam"
 ---
 
 Программа индивидуальная. В Буэнос-Айресе и Игуасу экскурсии проходят с русскоговорящим гидом, в Эль-Калафате предусмотрены групповые экскурсии с англоговорящим гидом.

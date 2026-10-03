@@ -1,10 +1,11 @@
 ---
+import { isActiveEntity } from '../../lib/archive.mjs';
 import { getCollection, render } from 'astro:content';
 import CaseLayout from '../../layouts/CaseLayout.astro';
 
 export async function getStaticPaths() {
   const entries = await getCollection('cases', ({ data }) =>
-    data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+    data.locale === 'ru' && isActiveEntity(data)
   );
 
   return entries.map((entry) => ({

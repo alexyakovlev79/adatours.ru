@@ -2,7 +2,7 @@
 id: tour_source_exclusive_amazon_experience_ru
 locale: ru
 slug: exclusive-amazon-experience
-status: published
+status: archived
 title: Эксклюзивное Приключение в Амазонии
 countries:
 - country_brazil
@@ -97,6 +97,8 @@ routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_arhipelag_anavianas
 - destination_brazil_ozero_akazhatuba
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 4 дня / 3 ночи  

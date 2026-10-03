@@ -3,7 +3,7 @@ id: tour_source_aconcagua_trek_ru
 locale: ru
 title: "Треккинг на Аконкагуа: экспедиция на 18 дней"
 slug: aconcagua-trek
-status: approved
+status: archived
 searchAliases:
   - "Треккинг на Аконкагуа"
   - "Аконкагуа 18 дней"
@@ -355,6 +355,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/aconcagua-trek-ru
 sourceSnapshot: page_texts_original/aconcagua-trek-ru__46dfb342.md
 updatedAt: 2026-10-02
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 ## Даты экспедиций Аконкагуа 2025/2026

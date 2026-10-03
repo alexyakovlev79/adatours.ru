@@ -1,4 +1,5 @@
 ---
+import { isActiveEntity } from '../../lib/archive.mjs';
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
@@ -8,7 +9,7 @@ import { SITE } from '../../lib/site';
 
 export async function getStaticPaths() {
   const people = await getCollection('people', ({ data }) =>
-    data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+    data.locale === 'ru' && isActiveEntity(data)
   );
 
   return people.map((entry) => ({

@@ -2,7 +2,7 @@
 id: tour_source_braziliya_i_argentina_v_sentyabre
 locale: ru
 slug: brazil-argentina-rio-iguazu-buenos-aires-september
-status: published
+status: archived
 title: 'Тур в Бразилию и Аргентину: Рио-де-Жанейро, Фоз де Игуасу, Буэнос Айрес'
 countries:
 - country_brazil
@@ -177,6 +177,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 9 дней / 8 ночей  

@@ -2,7 +2,7 @@
 id: tour_source_gastronomicheskoe_turne_po_meksike
 locale: ru
 slug: mexico-gastronomic-tour
-status: published
+status: archived
 title: Гастрономическое турне по Мексике
 countries:
 - country_mexico
@@ -221,6 +221,9 @@ routeDestinations:
 - destination_mexico_koba
 - destination_mexico_tulum
 - destination_mexico_gran_senot
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_udivitelnyj_gastronomicheskij_tur_po_meksike_2024"
 ---
 
 **Маршрут:** Мехико-Сити - Сочимилко - Теотиуакан - тур по тако и мескалю - Канкун - Чичен-Ица - сенот - Коба - Тулум - Гран-Сенот.

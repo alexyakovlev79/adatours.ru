@@ -2,7 +2,7 @@
 id: tour_source_sekrety_pantanala
 locale: ru
 slug: secrets-of-the-pantanal
-status: published
+status: archived
 title: Секреты Пантанала
 countries:
 - country_brazil
@@ -102,6 +102,9 @@ routeCountries:
 routeDestinations:
 - destination_brazil_kampo_grande
 - destination_brazil_pantanal
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_pantanal_4dnya_3_nochi"
 ---
 
 **Длительность:** 4 дня / 3 ночи  

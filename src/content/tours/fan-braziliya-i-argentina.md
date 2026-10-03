@@ -2,7 +2,7 @@
 id: tour_source_fan_braziliya_i_argentina
 locale: ru
 slug: brazil-argentina-fun
-status: published
+status: archived
 title: Бразилия и Аргентина Фан
 countries:
 - country_brazil
@@ -246,6 +246,9 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_buenos_aires
 - destination_brazil_derevnya_akazhatuba
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_braziliya_argentina_gruppovoj_tur"
 ---
 
 **Длительность:** 14 дней / 13 ночей  

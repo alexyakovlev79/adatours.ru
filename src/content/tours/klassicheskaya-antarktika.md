@@ -2,7 +2,7 @@
 id: tour_source_klassicheskaya_antarktika
 locale: ru
 slug: classic-antarctic-air-cruise-8-days
-status: published
+status: archived
 title: Классическая Антарктика
 countries:
 - country_antarctica
@@ -145,6 +145,9 @@ routeDestinations:
 - destination_antarctica_antarkticheskij_proliv
 - destination_antarctica_proliv_gerlashe
 - destination_antarctica_proliv_penola
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_klassicheskaya_antarktida"
 ---
 
 **Длительность:** 8 дней / 7 ночей  

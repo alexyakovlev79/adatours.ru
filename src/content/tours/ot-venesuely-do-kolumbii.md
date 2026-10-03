@@ -2,7 +2,7 @@
 id: tour_source_ot_venesuely_do_kolumbii
 locale: ru
 slug: venezuela-colombia-group-tour-12-days
-status: published
+status: archived
 title: Тур в Венесуэлу и Колумбию на 12 дней (групповой с русским гидом)
 countries:
 - country_venezuela
@@ -248,6 +248,8 @@ routeDestinations:
 - destination_colombia_salento
 - destination_colombia_kartahena
 - destination_colombia_sipakira
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 12 дней / 11 ночей  

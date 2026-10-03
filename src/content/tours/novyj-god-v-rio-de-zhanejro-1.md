@@ -2,7 +2,7 @@
 id: tour_source_novyj_god_v_rio_de_zhanejro_1
 locale: ru
 slug: rio-de-janeiro-new-year-tour
-status: published
+status: archived
 title: Тур Новый Год в Рио-де-Жанейро
 countries:
 - country_brazil
@@ -166,6 +166,8 @@ routeCountries:
 - country_brazil
 routeDestinations:
 - destination_brazil_rio
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 5 дней / 4 ночи, 30.12.2025-03.01.2026  

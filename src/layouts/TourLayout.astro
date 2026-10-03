@@ -1,4 +1,6 @@
 ---
+import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
+import ArchiveNotice from '../components/global/ArchiveNotice.astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
@@ -16,6 +18,7 @@ import { destinationPath, tourBreadcrumbs, tourPath } from '../lib/routes';
 
 const { entry } = Astro.props;
 const d = entry.data;
+const archived = isArchivedEntity(d);
 const roundedPrice = typeof d.priceFrom === 'number' ? Math.round(d.priceFrom) : null;
 const currencyPrefix = d.currency === 'USD' ? String.fromCharCode(36) : '';
 const money = roundedPrice && d.currency
@@ -63,8 +66,8 @@ const editorialHighlights = d.highlights.filter((_, index) => {
 });
 
 const [countryEntries, destinationEntries] = await Promise.all([
-  getCollection('countries', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
-  getCollection('destinations', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status) && d.destinations.includes(data.id)),
+  getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
+  getCollection('destinations', ({ data }) => data.locale === 'ru' && isActiveEntity(data) && d.destinations.includes(data.id)),
 ]);
 
 const countryById = new Map(countryEntries.map((item) => [item.data.id, item]));
@@ -95,8 +98,8 @@ const heroMetaParts = [
 ].filter(Boolean);
 ---
 
-<BaseLayout title={d.title} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
-  <SearchIndexRecord
+<BaseLayout noindex={archived} title={d.title} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
+  {!archived && <SearchIndexRecord
     title={d.title}
     summary={d.lead}
     entityType="tour"
@@ -106,10 +109,11 @@ const heroMetaParts = [
     geography={[...countryNames, ...destinationNames, ...d.route]}
     themes={d.themes}
     image={d.hero?.src}
-  />
+  />}
+  {archived && <ArchiveNotice id={d.id} kind="tour" />}
 
   <Hero
-    eyebrow="Индивидуальный тур"
+    eyebrow={archived ? "Архивный тур" : "Индивидуальный тур"}
     title={d.title}
     intro={d.lead}
     image={d.hero?.src}
@@ -117,7 +121,8 @@ const heroMetaParts = [
     mediaStatus={d.hero?.status}
     replacementReason={d.hero?.replacementReason}
     meta={heroMetaParts.length > 0 ? heroMetaParts.join(' · ') : undefined}
-    ctaLabel="Получить программу"
+    ctaLabel={archived ? "Актуальные туры" : "Получить программу"}
+    ctaHref={archived ? "/tours/" : "/contacts/"}
   />
 
   {d.durationDays && <TripStats stats={stats} />}
@@ -165,11 +170,11 @@ const heroMetaParts = [
     />
   )}
 
-  <TourPricing price={money} />
+  {!archived && <TourPricing price={money} />}
   {(d.included.length > 0 || d.notIncluded.length > 0 || d.notes.length > 0) && (
     <IncludedExcluded included={d.included} notIncluded={d.notIncluded} notes={d.notes} />
   )}
-  <LeadForm title="Получить расчет и адаптировать маршрут под ваши даты" entityId={d.id} />
+  {!archived && <LeadForm title="Получить расчет и адаптировать маршрут под ваши даты" entityId={d.id} />}
 </BaseLayout>
 
 <style>

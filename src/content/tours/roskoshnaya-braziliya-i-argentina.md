@@ -2,7 +2,7 @@
 id: tour_source_roskoshnaya_braziliya_i_argentina
 locale: ru
 slug: luxury-brazil-argentina
-status: published
+status: archived
 title: Роскошная Бразилия и Аргентина
 countries:
 - country_brazil
@@ -266,6 +266,9 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej"
 ---
 
 **Длительность:** 10 дней / 9 ночей  

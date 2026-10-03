@@ -3,7 +3,7 @@ id: tour_source_argentina_chili_prekrasnaya_patagoniya
 locale: ru
 title: "Аргентина и Чили: путешествие по Патагонии на 13 дней"
 slug: patagonia-argentina-chile-13-days
-status: approved
+status: archived
 searchAliases:
   - "Аргентина-Чили: Прекрасная Патагония"
   - "Аргентина Чили Патагония"
@@ -299,6 +299,9 @@ faq: []
 sourceUrl: https://brasiltours.ru/argentina-chili-prekrasnaya-patagoniya
 sourceSnapshot: page_texts_original/argentina-chili-prekrasnaya-patagoniya__86fe2724.md
 updatedAt: 2026-10-01
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_argentina_chili_i_prekrasnaya_patagoniya"
 ---
 
 ## От Буэнос-Айреса до Огненной Земли и Торрес-дель-Пайне

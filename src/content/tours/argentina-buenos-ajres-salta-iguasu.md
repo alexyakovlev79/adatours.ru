@@ -2,7 +2,7 @@
 id: tour_source_argentina_buenos_ajres_salta_iguasu
 locale: ru
 slug: argentina-buenos-aires-salta-iguazu-12-days
-status: published
+status: archived
 title: Тур в Аргентину, Буэнос-Айрес и Водопады Игуасу на 12 дней
 countries:
 - country_argentina
@@ -270,6 +270,9 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
 - destination_argentina_ukiya
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_buenos_ajres_salta_iguasu"
 ---
 
 **Длительность:** 12 дней / 11 ночей

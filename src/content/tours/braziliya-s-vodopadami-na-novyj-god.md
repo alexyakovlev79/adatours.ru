@@ -2,7 +2,7 @@
 id: tour_source_braziliya_s_vodopadami_na_novyj_god
 locale: ru
 slug: brazil-iguazu-new-year
-status: published
+status: archived
 title: Тур в Бразилию и на водопады Игуасу на Новый Год
 countries:
 - country_brazil
@@ -216,6 +216,8 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 8 дней / 7 ночей  

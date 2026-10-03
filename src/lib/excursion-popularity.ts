@@ -1,3 +1,4 @@
+import { isActiveEntity, activeReplacementId } from './archive.mjs';
 import type { CollectionEntry } from 'astro:content';
 
 type TourEntry = CollectionEntry<'tours'>;
@@ -5,12 +6,14 @@ type ExcursionEntry = CollectionEntry<'excursions'>;
 
 export const excursionIdsForTour = (tour: TourEntry) => {
   const ids = new Set<string>();
+  if (!isActiveEntity(tour)) return ids;
+  const addActive = (id: string) => { const activeId = activeReplacementId(id); if (activeId) ids.add(activeId); };
 
   for (const item of tour.data.itinerary) {
-    if (item.excursionRef) ids.add(item.excursionRef);
+    if (item.excursionRef) addActive(item.excursionRef);
 
-    for (const block of item.contentBlocks) {
-      if (block.type === 'excursion') ids.add(block.excursionRef);
+    for (const block of (item.contentBlocks ?? [])) {
+      if (block.type === 'excursion') addActive(block.excursionRef);
     }
   }
 
@@ -21,6 +24,7 @@ export const buildExcursionTourCounts = (tours: TourEntry[]) => {
   const counts = new Map<string, number>();
 
   for (const tour of tours) {
+    if (!isActiveEntity(tour)) continue;
     for (const excursionId of excursionIdsForTour(tour)) {
       counts.set(excursionId, (counts.get(excursionId) ?? 0) + 1);
     }

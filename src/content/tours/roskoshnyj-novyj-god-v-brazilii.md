@@ -2,7 +2,7 @@
 id: tour_source_roskoshnyj_novyj_god_v_brazilii
 locale: ru
 slug: luxury-brazil-new-year-10-days
-status: published
+status: archived
 title: Тур в Бразилию на 10 дней – Роскошный Новый Год
 countries:
 - country_brazil
@@ -241,6 +241,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_amazon
 - destination_brazil_arhipelag_anavianas
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 10 дней / 9 ночей  

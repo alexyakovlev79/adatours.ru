@@ -35,6 +35,7 @@ for (const record of records) {
 const entries = records.map(record => {
   const compact = Object.fromEntries(compactKeys.map(key => [key, record[key]]));
   compact.entryPath = `data/source-index/entries/${record.id}.json`;
+  for (const key of ['status', 'archivedAt', 'archiveReason', 'archiveDuplicateOf']) { if (record[key] !== undefined) compact[key] = record[key]; }
   for (const key of ['aliases', 'routeCountryIds', 'routeDestinationIds', 'relatedDestinationIds', 'legacyUrls']) {
     if (record[key]?.length) compact[key] = record[key];
   }
@@ -58,6 +59,11 @@ for (const record of records) {
   }
 }
 counts.rawDonorUrls = donorUrls.size;
+counts.activeTypes = {}; counts.archivedTypes = {};
+for (const record of records) {
+  const target = record.status === 'archived' ? counts.archivedTypes : counts.activeTypes;
+  target[record.type] = (target[record.type] ?? 0) + 1;
+}
 metadata.counts = counts;
 const write = (filename, value) => {
   const target = path.join(sourceRoot, filename);

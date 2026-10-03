@@ -2,7 +2,7 @@
 id: tour_source_soedinennye_shtaty_venesuely
 locale: ru
 slug: united-states-of-venezuela
-status: published
+status: archived
 title: Соединенные Штаты Венесуэлы
 countries:
 - country_venezuela
@@ -221,6 +221,8 @@ routeDestinations:
 - destination_venezuela_kanajma_i_vodopad_anhel
 - destination_venezuela_barinas
 - destination_venezuela_los_lyanos
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 12 дней / 11 ночей  

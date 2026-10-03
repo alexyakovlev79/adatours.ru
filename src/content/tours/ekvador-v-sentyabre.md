@@ -2,7 +2,7 @@
 id: tour_source_ekvador_v_sentyabre
 locale: ru
 slug: ecuador-quito-quilotoa-banos-amazon-september-11-days
-status: published
+status: archived
 title: 'Тур в Эквадор на 11 дней: Кито, Килотоа, Баньос, Амазония'
 countries:
 - country_ecuador
@@ -305,6 +305,8 @@ routeDestinations:
 - destination_ecuador_ostrov_plasa_sur
 - destination_ecuador_plyazhi_bachas
 - destination_ecuador_mys_karrion
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 11 дней / 10 ночей  

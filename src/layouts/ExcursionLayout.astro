@@ -1,4 +1,6 @@
 ---
+import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
+import ArchiveNotice from '../components/global/ArchiveNotice.astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
@@ -19,18 +21,19 @@ import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../
 
 const { entry } = Astro.props;
 const d = entry.data;
+const archived = isArchivedEntity(d);
 const linkedDestinationIds = excursionDestinationIds(d);
 
 const [countryEntries, destinationEntries, tourEntries, excursionEntries] = await Promise.all([
-  getCollection('countries', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status)),
-  getCollection('destinations', ({ data }) => data.locale === 'ru' && !['draft', 'archived'].includes(data.status) && linkedDestinationIds.includes(data.id)),
+  getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
+  getCollection('destinations', ({ data }) => data.locale === 'ru' && isActiveEntity(data) && linkedDestinationIds.includes(data.id)),
   getCollection('tours', ({ data }) =>
     data.locale === 'ru' &&
-    !['draft', 'archived'].includes(data.status)
+    isActiveEntity(data)
   ),
   getCollection('excursions', ({ data }) =>
     data.locale === 'ru' &&
-    !['draft', 'archived'].includes(data.status)
+    isActiveEntity(data)
   ),
 ]);
 
@@ -116,14 +119,15 @@ const excursionSchema = {
 ---
 
 <BaseLayout
+  noindex={archived}
   title={d.title}
   description={d.lead}
   image={d.hero?.src}
   canonical={excursionPath(d)}
-  pageSchema={excursionSchema}
+  pageSchema={archived ? undefined : excursionSchema}
   breadcrumbs={excursionBreadcrumbs}
 >
-  <SearchIndexRecord
+  {!archived && <SearchIndexRecord
     title={d.title}
     summary={d.lead}
     entityType="excursion"
@@ -134,10 +138,11 @@ const excursionSchema = {
     themes={d.themes}
     image={d.hero?.src}
     tourCount={excursionTourCounts.get(d.id) ?? 0}
-  />
+  />}
+  {archived && <ArchiveNotice id={d.id} kind="excursion" />}
 
   <Hero
-    eyebrow="Экскурсия"
+    eyebrow={archived ? "Архивная экскурсия" : "Экскурсия"}
     title={d.title}
     intro={d.lead}
     image={d.hero?.src}
@@ -145,7 +150,8 @@ const excursionSchema = {
     mediaStatus={d.hero?.status}
     replacementReason={d.hero?.replacementReason}
     meta={[d.duration ?? '', d.route.join(' · ')].filter(Boolean).join(' · ')}
-    ctaLabel="Заказать экскурсию"
+    ctaLabel={archived ? "Актуальные экскурсии" : "Заказать экскурсию"}
+    ctaHref={archived ? "/excursions/" : "/contacts/"}
   />
 
   {stats.length > 0 && <TripStats stats={stats} />}
@@ -180,7 +186,7 @@ const excursionSchema = {
     />
   )}
 
-  <TourPricing price={money} ctaLabel="Заказать экскурсию" />
+  {!archived && <TourPricing price={money} ctaLabel="Заказать экскурсию" />}
 
   {(d.included.length > 0 || d.notIncluded.length > 0 || d.notes.length > 0) && (
     <IncludedExcluded included={d.included} notIncluded={d.notIncluded} notes={d.notes} />
@@ -224,7 +230,7 @@ const excursionSchema = {
     </>
   )}
 
-  <LeadForm title={`Заказать экскурсию: ${d.title}`} entityId={d.id} />
+  {!archived && <LeadForm title={`Заказать экскурсию: ${d.title}`} entityId={d.id} />}
 </BaseLayout>
 
 <style>

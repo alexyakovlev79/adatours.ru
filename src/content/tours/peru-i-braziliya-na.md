@@ -2,7 +2,7 @@
 id: tour_source_peru_i_braziliya_na
 locale: ru
 slug: peru-brazil
-status: published
+status: archived
 title: Перу и Бразилия
 countries:
 - country_peru
@@ -366,6 +366,9 @@ routeDestinations:
 - destination_peru_pukara
 - destination_peru_andaguaililyas
 - destination_peru_pereval_la_raya
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_tur_v_peru_i_braziliyu"
 ---
 
 За 13 дней программа проходит через доколумбовые памятники, города инков, высокогорье Анд, один из крупнейших водопадных комплексов мира, знаменитые панорамы Рио и пляжи Атлантики.

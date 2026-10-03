@@ -2,7 +2,7 @@
 id: tour_source_argentina_i_braziliya_ot_lda_k_solntsu
 locale: ru
 slug: argentina-brazil-ice-to-sun
-status: published
+status: archived
 title: 'Аргентина и Бразилия: От льда к солнцу'
 countries:
 - country_argentina
@@ -252,6 +252,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
 - destination_brazil_rio
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 12 дней / 11 ночей

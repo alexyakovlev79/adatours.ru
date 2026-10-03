@@ -2,7 +2,7 @@
 id: tour_source_dostoprimechatelnosti_i_karnaval_v_rio_de_zhanejro
 locale: ru
 slug: rio-de-janeiro-sightseeing-carnival
-status: published
+status: archived
 title: Достопримечательности и Карнавал в Рио-де-Жанейро
 countries:
 - country_brazil
@@ -165,6 +165,8 @@ routeDestinations:
 - destination_brazil_angra_dos_reis
 - destination_brazil_ilha_grande
 - destination_brazil_petropolis
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 8 дней / 7 ночей  

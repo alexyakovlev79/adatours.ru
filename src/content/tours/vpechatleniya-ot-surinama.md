@@ -2,7 +2,7 @@
 id: tour_source_vpechatleniya_ot_surinama
 locale: ru
 slug: experience-suriname
-status: published
+status: archived
 title: Суринам
 countries:
 - country_suriname
@@ -153,6 +153,9 @@ routeDestinations:
 - destination_suriname_bigi_pan
 - destination_suriname_jodensavanna
 - destination_suriname_redi_doti
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_vpechatlenie_ot_surinama"
 ---
 
 Суринам окружен густой тропической зеленью, а на севере выходит к Атлантическому океану. Днем путешествие проходит среди рек, лесов и мангровых болот, вечером слышны звуки джунглей. Здесь легко за несколько дней перейти от городских кварталов и колониальной истории к местам, где основная дорога - река, а вокруг остаются только лес и небольшие поселения.

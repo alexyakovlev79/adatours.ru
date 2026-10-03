@@ -2,7 +2,7 @@
 id: tour_source_ekzoticheskij_novyj_god_ru
 locale: ru
 slug: brazil-new-year-rio-iguazu-amazon
-status: published
+status: archived
 title: 'Тур в Бразилию на Новый год: Рио, Игуасу, Амазония'
 countries:
 - country_brazil
@@ -283,6 +283,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_amazon
 - destination_brazil_buzios
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 12 дней / 11 ночей  

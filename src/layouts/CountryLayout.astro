@@ -7,7 +7,10 @@ import LeadForm from '../components/forms/LeadForm.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import { withBase } from '../lib/paths';
-import { countryBreadcrumbs, countryPath, destinationPath, excursionPath, themePath, tourPath } from '../lib/routes';
+import {
+  countryBreadcrumbs, countryPath, destinationCountryPath, destinationPath,
+  excursionCountryPath, excursionGeography, excursionPath, themePath, tourCountryPath, tourPath,
+} from '../lib/routes';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { tourHasMainCountry } from '../lib/tour-relations';
@@ -15,6 +18,10 @@ import { tourHasMainCountry } from '../lib/tour-relations';
 const { entry } = Astro.props;
 // Country page: linked destination/tour catalogue for internal linking and discovery.
 const d = entry.data;
+
+// Limit only the rendered previews. Full collections remain available to counts,
+// editorial image settings and the separate, unabridged country catalogues.
+const previewLimits = { destinations: 15, tours: 10, excursions: 5 } as const;
 
 const countryTourTarget = ({
   country_brazil: 'Бразилию',
@@ -54,7 +61,7 @@ const [destinationEntries, allTourEntries, excursionEntries, themeEntries] = awa
   getCollection('excursions', ({ data }) =>
     data.locale === 'ru' &&
     !['draft', 'archived'].includes(data.status) &&
-    data.country === d.id
+    excursionGeography(data).country.id === d.id
   ),
   getCollection('themes', ({ data }) =>
     data.locale === 'ru' &&
@@ -173,12 +180,12 @@ const featureBandImageTextAlign = (href: string) => {
     <section class="country-linked country-linked--destinations section" aria-label={`Направления: ${d.name}`}>
       <div class="container">
         <div class="country-linked__grid">
-          {destinationEntries.map((item, index) => {
+          {destinationEntries.slice(0, previewLimits.destinations).map((item, index) => {
             const image = item.data.hero?.src ? withBase(item.data.hero.src) : undefined;
             const href = withBase(destinationPath(item.data));
             return (
               <a
-                class:list={['destination-card', { 'destination-card--wide': index % 7 === 0 }]}
+                class:list={['destination-card', { 'destination-card--wide': index % 5 === 0 }]}
                 data-image-text-align={item.data.imageTextAlign}
                 href={href}
               >
@@ -198,6 +205,14 @@ const featureBandImageTextAlign = (href: string) => {
             );
           })}
         </div>
+        {destinationEntries.length > previewLimits.destinations && (
+          <div class="country-linked__more">
+            <a class="country-catalog-link" href={withBase(destinationCountryPath(d))}>
+              <span>{d.name}: все красоты</span>
+              <span class="country-catalog-link__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        )}
       </div>
     </section>
   )}
@@ -215,7 +230,7 @@ const featureBandImageTextAlign = (href: string) => {
       </div>
 
       <div class="country-tours__bands">
-        {tourEntries.map((item, index) => (
+        {tourEntries.slice(0, previewLimits.tours).map((item, index) => (
           <DestinationBand
             eyebrow={[
               item.data.durationDays ? `${item.data.durationDays} дней` : '',
@@ -233,6 +248,14 @@ const featureBandImageTextAlign = (href: string) => {
           />
         ))}
       </div>
+      {tourEntries.length > previewLimits.tours && (
+        <div class="container country-tours__more">
+          <a class="country-catalog-link" href={withBase(tourCountryPath(d))}>
+            <span>{d.name}: все туры</span>
+            <span class="country-catalog-link__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      )}
     </section>
   )}
 
@@ -245,7 +268,7 @@ const featureBandImageTextAlign = (href: string) => {
         </div>
 
         <div class="country-linked__grid">
-          {excursionEntries.map((item, index) => {
+          {excursionEntries.slice(0, previewLimits.excursions).map((item, index) => {
             const image = item.data.hero?.src ? withBase(item.data.hero.src) : undefined;
             const meta = [item.data.duration ?? '', item.data.format ?? ''].filter(Boolean).join(' · ');
             return (
@@ -265,6 +288,14 @@ const featureBandImageTextAlign = (href: string) => {
             );
           })}
         </div>
+        {excursionEntries.length > previewLimits.excursions && (
+          <div class="country-linked__more">
+            <a class="country-catalog-link" href={withBase(excursionCountryPath(d))}>
+              <span>{d.name}: все экскурсии</span>
+              <span class="country-catalog-link__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        )}
       </div>
     </section>
   )}
@@ -342,6 +373,58 @@ const featureBandImageTextAlign = (href: string) => {
 
   .country-tours__bands {
     display: block;
+  }
+
+  .country-linked__more,
+  .country-tours__more {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: clamp(28px, 4vw, 52px);
+  }
+
+  .country-tours__more {
+    padding-bottom: clamp(40px, 5vw, 72px);
+  }
+
+  .country-catalog-link {
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(20px, 3vw, 40px);
+    max-width: 100%;
+    min-height: 48px;
+    padding-block: 10px;
+    border-bottom: 1px solid var(--color-gold-deep, #c89a20);
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: clamp(1.15rem, 1.8vw, 1.65rem);
+    line-height: 1.25;
+    text-decoration: none;
+    transition: border-color 180ms ease;
+  }
+
+  .country-catalog-link > span:first-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .country-catalog-link__arrow {
+    flex-shrink: 0;
+    font-size: 1.3em;
+    line-height: 1;
+    transition: transform 180ms ease;
+  }
+
+  .country-catalog-link:hover {
+    border-color: var(--color-ink);
+  }
+
+  .country-catalog-link:hover .country-catalog-link__arrow {
+    transform: translate(2px, -2px);
+  }
+
+  .country-catalog-link:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 7px;
   }
 
   .country-themes {
@@ -577,6 +660,11 @@ const featureBandImageTextAlign = (href: string) => {
       padding-block: 42px;
     }
 
+    .country-catalog-link {
+      width: 100%;
+      justify-content: space-between;
+    }
+
     .country-tours__heading,
     .country-themes__heading {
       padding-block: 50px;
@@ -702,6 +790,17 @@ const featureBandImageTextAlign = (href: string) => {
     .destination-card[data-image-text-align] .destination-card__description {
       justify-self: var(--image-text-inline);
       text-align: var(--image-text-align);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .country-catalog-link,
+    .country-catalog-link__arrow {
+      transition: none;
+    }
+
+    .country-catalog-link:hover .country-catalog-link__arrow {
+      transform: none;
     }
   }
 </style>

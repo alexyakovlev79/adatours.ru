@@ -192,7 +192,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       const days = Number(data?.meta?.tour_duration_days);
       if (!Number.isFinite(days) || days <= 0) return Number.NEGATIVE_INFINITY;
 
-      return 3 * resultTourCountryCount(data) - Math.abs(days - 13);
+      return 2 * resultTourCountryCount(data) - Math.abs(days - 13);
     };
 
     const compareTourSearchResults = (a: any, b: any) => {

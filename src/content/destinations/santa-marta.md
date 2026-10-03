@@ -8,8 +8,8 @@ countryId: "country_colombia"
 destinationType: "city"
 summary: "Санта-Марта находится на Карибском побережье у гор Сьерра-Невада-де-Санта-Марта. Пляжи, дайвинг и вечерние кафе делают город местом для отдыха у моря."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/colombia/new-photos/santa-marta-2.jpg","alt":"На фото: курорт Санта-Марта в Колумбии"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17161_69.jpg","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/2/3/23610224_7d6804ba1c.jpg","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17161_75.jpg","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/t/a/tana3.jpg","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19_67.jpg","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_16.jpg","alt":"На фото: курорт Санта-Марта в Колумбии"}]
+hero: {"src":"/media/destinations/santa-marta/hero-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"}
+gallery: [{"src":"/media/destinations/santa-marta/gallery-1-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-2-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-3-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-4-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-5-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_16.jpg","alt":"На фото: курорт Санта-Марта в Колумбии"}]
 themes: []
 relatedDestinations: []
 featuredTours: []

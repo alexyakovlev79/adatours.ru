@@ -18,11 +18,11 @@ gallery:
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"
   - src: "/media/destinations/santa-elena-de-uairen/gallery-3-enhanced-20261003.webp"
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/s/a/santaelenadeuarien.jpg"
+  - src: "/media/destinations/santa-elena-de-uairen/gallery-4-enhanced-20261003.webp"
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/P/I/PICT2958.JPG"
+  - src: "/media/destinations/santa-elena-de-uairen/gallery-5-enhanced-20261003.webp"
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/9/0/901190234_200503ca79_b.jpg"
+  - src: "/media/destinations/santa-elena-de-uairen/gallery-6-enhanced-20261003.webp"
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"
 themes: []
 relatedDestinations: []

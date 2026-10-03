@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: "Саванны на юго-западе Гайаны с лесистыми холмами, пресноводными ручьями и разнообразным животным миром."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/gayana/4.jpg"
+  src: "/media/countries/guyana/featureBands-2-enhanced-20261002.webp"
   alt: "На фото: Саванны Рупунуни в Гайане"
 gallery: []
 themes: []

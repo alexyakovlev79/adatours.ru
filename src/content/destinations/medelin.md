@@ -8,7 +8,7 @@ countryId: "country_colombia"
 destinationType: "city"
 summary: "Медельин окружен холмами и зелеными горными склонами. Здесь можно увидеть старинные базилики, коллекцию орхидей в ботаническом саду и скульптуры Ботеро."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/colombia/new-photos/medellin.jpg","alt":"На фото: город Медельин в Колумбии"}
+hero: {"src":"/media/destinations/medellin/hero-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/6/9/6915-Pueblito-Paisa--Medellin-0.jpg","alt":"На фото: город Медельин в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/M/e/Medellin.jpg","alt":"На фото: город Медельин в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19_163.jpg","alt":"На фото: город Медельин в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/m/e/medellin036ag5cp0.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17161_43.jpg","alt":"На фото: город Медельин в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19_81.jpg","alt":"На фото: город Медельин в Колумбии"}]
 themes: []
 relatedDestinations: []

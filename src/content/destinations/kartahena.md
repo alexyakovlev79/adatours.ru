@@ -8,8 +8,8 @@ countryId: "country_colombia"
 destinationType: "city"
 summary: "Картахена стоит на берегу Карибского моря. Старый центр города входит в список Всемирного наследия ЮНЕСКО, а пляжи и коралловые рифы привлекают любителей дайвинга."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/colombia/new-photos/2.jpg","alt":"На фото: колумбийка из страны Колумбия"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/2/8/28261-beautiful-streets-in-catagena-cartagena-colombia.jpg","alt":"На фото: город Картахена в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN20163_9.jpg","alt":"На фото: город Картахена в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19_35.jpg","alt":"На фото: город Картахена в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/C/a/Cartagena.jpg","alt":"На фото: город Картахена в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17161_117.jpg","alt":"На фото: город Картахена в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/1/6/1677259-San-Diego-Cartagena-Colombia-2.jpg","alt":"На фото: город Картахена в Колумбии"}]
+hero: {"src":"/media/destinations/cartagena/hero-enhanced-20261003.webp","alt":"На фото: колумбийка из страны Колумбия"}
+gallery: [{"src":"/media/destinations/cartagena/gallery-1-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-2-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-3-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-4-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-5-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-6-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"}]
 themes: []
 relatedDestinations: []
 featuredTours: []

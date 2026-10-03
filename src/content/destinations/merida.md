@@ -9,24 +9,24 @@ destinationType: city
 summary: "Студенческий город с канатной дорогой, церквями и рынком Меркада-Принсипаль-де-Мерида. В окрестностях находится национальный парк Сьерра-Невада."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/venezuela/6655.jpg"
+  src: "/media/destinations/merida/hero-enhanced-20261003.webp"
   alt: "На фото: окрестности города Мерида в Венесуэле"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN12_8.jpg"
+  - src: "/media/destinations/merida/gallery-1-enhanced-20261003.webp"
     alt: "На фото: окрестности города Мерида в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN2935_19.jpg"
+  - src: "/media/destinations/merida/gallery-2-enhanced-20261003.webp"
     alt: "На фото: окрестности города Мерида в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN19760_38.jpg"
+  - src: "/media/destinations/merida/gallery-3-enhanced-20261003.webp"
     alt: "На фото: окрестности города Мерида в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN18866_28.jpg"
+  - src: "/media/destinations/merida/gallery-4-enhanced-20261003.webp"
     alt: "На фото: окрестности города Мерида в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN19760_58.jpg"
+  - src: "/media/destinations/merida/gallery-5-enhanced-20261003.webp"
     alt: "На фото: окрестности города Мерида в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN19760_37.jpg"
+  - src: "/media/destinations/merida/gallery-6-enhanced-20261003.webp"
     alt: "На фото: окрестности города Мерида в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN19760_46.jpg"
+  - src: "/media/destinations/merida/gallery-7-enhanced-20261003.webp"
     alt: "На фото: окрестности города Мерида в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN12_2.jpg"
+  - src: "/media/destinations/merida/gallery-8-enhanced-20261003.webp"
     alt: "На фото: город Мерида в Венесуэле"
 themes: []
 relatedDestinations: []

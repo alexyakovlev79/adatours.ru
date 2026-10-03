@@ -9,7 +9,7 @@ destinationType: island
 summary: "Остров у побережья Венесуэлы с пляжами, пальмами, крепостями и местами для серфинга."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/venezuela/3355.jpg"
+  src: "/media/destinations/margarita-island/hero-enhanced-20261003.webp"
   alt: "На фото: остров Маргариты в Венесуэле"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/1/8/185006894_3c7aec1045.jpg"

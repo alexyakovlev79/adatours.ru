@@ -8,7 +8,7 @@ countryId: "country_costa_rica"
 destinationType: "resort"
 summary: "Пуэрто Вьехо находится на Карибском побережье Коста-Рики. Пляжи, пальмы и тропический лес сочетаются здесь с серфингом, снорклингом и дайвингом."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/costa-rica/15.jpg","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"}
+hero: {"src":"/media/destinations/puerto-viejo/hero-enhanced-20261003.webp","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22310_14.jpg","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22310_2.jpg","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN15654_2.jpg","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/p/1/p117601-Puerto_Viejo_de_Talamanca-Stranded.jpg","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22310_26.jpg","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/f/u/full-puerto-viejo-talamanca.jpg","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/r/n/rnc07964wm.jpg","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"}]
 themes: []
 relatedDestinations: []

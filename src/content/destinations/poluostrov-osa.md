@@ -8,8 +8,8 @@ countryId: "country_costa_rica"
 destinationType: "region"
 summary: "Полуостров Оса находится на тихоокеанском побережье Коста-Рики. В национальном парке Корковадо и у бухты Дрейк-Бей можно наблюдать за природой и отдыхать у океана."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/costa-rica/11.jpg","alt":"На фото: эко туры на полуостров Оса в Коста-Рике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN6794_80.jpg","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/1/1/1128175345_29f8036c5a.jpg","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN10399_29.jpg","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/2/3/2369266488_904f75e1c3.jpg","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN13556_8.jpg","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"}]
+hero: {"src":"/media/destinations/osa-peninsula/hero-enhanced-20261003.webp","alt":"На фото: эко туры на полуостров Оса в Коста-Рике"}
+gallery: [{"src":"/media/destinations/osa-peninsula/gallery-1-enhanced-20261003.webp","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"/media/destinations/osa-peninsula/gallery-2-enhanced-20261003.webp","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"/media/destinations/osa-peninsula/gallery-3-enhanced-20261003.webp","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"/media/destinations/osa-peninsula/gallery-4-enhanced-20261003.webp","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"/media/destinations/osa-peninsula/gallery-5-enhanced-20261003.webp","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"}]
 themes: []
 relatedDestinations: []
 featuredTours: []

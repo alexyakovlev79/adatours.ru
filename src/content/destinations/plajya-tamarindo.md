@@ -8,8 +8,8 @@ countryId: "country_costa_rica"
 destinationType: "resort"
 summary: "Плайя Тамариндо предлагает пляжный отдых, серфинг, рыбалку и прогулки под парусом. В городке есть рестораны, художественные галереи и лавки ремесленников."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/costa-rica/13.jpg","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN6421_11.jpg","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN20025_2.jpg","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN6421_9.jpg","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/1/3/1349889940_17d0c1d8e5.jpg","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"}]
+hero: {"src":"/media/destinations/playa-tamarindo/hero-enhanced-20261003.webp","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"}
+gallery: [{"src":"/media/destinations/playa-tamarindo/gallery-1-enhanced-20261003.webp","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"},{"src":"/media/destinations/playa-tamarindo/gallery-2-enhanced-20261003.webp","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"},{"src":"/media/destinations/playa-tamarindo/gallery-3-enhanced-20261003.webp","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"},{"src":"/media/destinations/playa-tamarindo/gallery-4-enhanced-20261003.webp","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"}]
 themes: []
 relatedDestinations: []
 featuredTours: []

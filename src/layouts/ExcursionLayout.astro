@@ -133,6 +133,7 @@ const excursionSchema = {
     geography={[destinationName, country?.data.name, ...d.route].filter(Boolean)}
     themes={d.themes}
     image={d.hero?.src}
+    tourCount={excursionTourCounts.get(d.id) ?? 0}
   />
 
   <Hero

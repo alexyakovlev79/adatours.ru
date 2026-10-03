@@ -46,9 +46,9 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
 
       <div class="search-filters" role="group" aria-label="Тип результата">
         <button type="button" class="is-active" aria-pressed="true" data-search-filter="all">Все</button>
+        <button type="button" aria-pressed="false" data-search-filter="tour">Туры</button>
         <button type="button" aria-pressed="false" data-search-filter="country">Страны</button>
         <button type="button" aria-pressed="false" data-search-filter="destination">Места</button>
-        <button type="button" aria-pressed="false" data-search-filter="tour">Туры</button>
         <button type="button" aria-pressed="false" data-search-filter="excursion">Экскурсии</button>
       </div>
 
@@ -170,6 +170,11 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       return 4;
     };
 
+    const resultTourCount = (data: any) => {
+      const count = Number(data?.meta?.tour_count ?? 0);
+      return Number.isFinite(count) && count >= 0 ? count : 0;
+    };
+
     const setStatus = (message: string) => { status.textContent = message; };
     const clearResults = () => { list.replaceChildren(); };
 
@@ -223,6 +228,13 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         const filtered = loaded.filter((item) => matchesActiveFilter(item.data, query));
 
         filtered.sort((a, b) => {
+          if (activeFilter === 'country' || activeFilter === 'destination' || activeFilter === 'excursion') {
+            const countDifference = resultTourCount(b.data) - resultTourCount(a.data);
+            return countDifference ||
+              String(a.data.meta?.title ?? '').localeCompare(String(b.data.meta?.title ?? ''), 'ru') ||
+              a.index - b.index;
+          }
+
           const priority = resultPriority(a.data, query) - resultPriority(b.data, query);
           return priority || a.index - b.index;
         });

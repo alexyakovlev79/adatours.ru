@@ -1305,3 +1305,16 @@ Commit определяется по изменению, содержащему 
 Следующая стадия: включить подготовленные файлы одним логическим commit, получить результат одного штатного Actions build/deploy и после успешного выпуска обновить только соответствующие строки реестра и очереди материалов. Самостоятельный служебный commit ради статуса этого журнала не требуется.
 
 <!-- /ADA_TOURS_PREPARED_BATCH:2026-10-02-planned-tours-v2 -->
+
+## Сверка очереди Анны — 2026-10-03
+
+- `tour_source_luchshee_v_rio_de_zhanejro`: N=0; самостоятельных отделимых модулей нет; обычные дни сохранены.
+- `tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni`: N=2; `excursion_el_calafate_ice_trekking_perito_moreno`, `excursion_santiago_maipo_wine_tour`.
+- `tour_source_argentina_chili_boliviya`: N=2; `excursion_el_calafate_ice_trekking_perito_moreno`, `excursion_santiago_maipo_wine_tour`.
+- `tour_source_romanticheskaya_braziliya`: N=2; `excursion_source_makuko_safari_he`, `excursion_source_park_jekzoticheskih_ptic_v_iguasu`.
+- `tour_source_ves_ekvador_galapagosskie_ostrova`: N=8; `excursion_ecuador_misicocha_forest_walk`, `excursion_ecuador_cosano_amazoonico`, `excursion_ecuador_kichwa_family_crafts`, `excursion_ecuador_casa_suizo_river_island_walk`, `excursion_ecuador_casa_suizo_butterfly_farm`, `excursion_source_ostrov_bartolome_morskaya_ekskursiya`, `excursion_source_ostrov_severnyj_sejmur`, `excursion_source_ostrov_plasa`.
+- `tour_source_gvatemala_kosta_rika`: N=0; самостоятельных отделимых модулей нет; обычные дни сохранены.
+- `tour_source_kontinentalnyj_ekvador_amazoniya`: N=0; самостоятельных отделимых модулей нет; обычные дни сохранены.
+- `tour_source_tur_v_kolumbiyu_na_10_dnej`: N=1; `excursion_colombia_el_ocaso_coffee_tour`.
+
+Для программы Эквадора 11 дней блоки дня 6 — альтернативы по выбору с гидом, а в день 10 посещается один из двух островов. Для аргентинских программ Mil Outdoor и длинный треккинг не обещаны как подтвержденные; вопрос сохранен в журнале и у менеджеров.

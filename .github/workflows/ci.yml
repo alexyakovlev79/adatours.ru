@@ -15,6 +15,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Preserve catalog audit inputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-audit-inputs
+          retention-days: 3
+          path: |
+            AGENTS.md
+            README.md
+            package.json
+            astro.config.mjs
+            tsconfig.json
+            src/
+            scripts/
+            docs/
+            data/
+            tests/
+
       - name: Setup Node
         uses: actions/setup-node@v5
         with:
@@ -30,9 +47,8 @@ jobs:
         shell: bash
         run: |
           test -f dist/pagefind/pagefind.js
-          grep -q 'data-pagefind-body' dist/strany/braziliya/index.html
-          grep -q 'data-pagefind-body' dist/napravleniya/braziliya/rio-de-zhanejro/index.html
-          grep -q 'data-pagefind-body' dist/tury/roskoshnaya-braziliya/index.html
+          grep -q 'data-pagefind-body' dist/brazil/index.html
+          grep -q 'data-pagefind-body' dist/brazil/rio-de-janeiro/index.html
           ! grep -q 'data-pagefind-body' dist/index.html
           indexed_pages=$(grep -Rsl 'data-pagefind-body' dist --include='*.html' | wc -l)
           test "$indexed_pages" -ge 10

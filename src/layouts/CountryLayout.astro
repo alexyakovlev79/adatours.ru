@@ -14,6 +14,7 @@ import {
 } from '../lib/routes';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
+import { compareToursBySalesFit } from '../lib/tour-ranking';
 import { tourHasMainCountry } from '../lib/tour-relations';
 
 const { entry } = Astro.props;
@@ -77,10 +78,7 @@ const destinationTourCounts = buildDestinationTourCounts(allTourEntries);
 
 destinationEntries.sort(compareDestinationsByPopularity(destinationTourCounts));
 
-tourEntries.sort((a, b) =>
-  (b.data.priority ?? 0) - (a.data.priority ?? 0) ||
-  a.data.title.localeCompare(b.data.title, 'ru')
-);
+tourEntries.sort(compareToursBySalesFit);
 
 excursionEntries.sort(compareExcursionsByPopularity(excursionTourCounts));
 

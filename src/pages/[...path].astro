@@ -17,6 +17,7 @@ import {
 import { excursionDestinationIds } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsForTour } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
+import { compareToursBySalesFit } from '../lib/tour-ranking';
 import { tourHasMainCountry, tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-relations';
 import { paginateCatalog, type CatalogPagination } from '../lib/catalog-pagination';
 
@@ -46,10 +47,9 @@ export async function getStaticPaths() {
   const excursions = allExcursions.filter(isActiveEntity);
   const excursionTourCounts = buildExcursionTourCounts(tours);
   const destinationTourCounts = buildDestinationTourCounts(tours);
-  // Preserve the existing global tour order; nested catalogues retain priority + title.
-  const globalTours = [...tours].sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0));
+  const globalTours = [...tours].sort(compareToursBySalesFit);
   destinations.sort(compareDestinationsByPopularity(destinationTourCounts));
-  tours.sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0) || a.data.title.localeCompare(b.data.title, 'ru'));
+  tours.sort(compareToursBySalesFit);
   excursions.sort(compareExcursionsByPopularity(excursionTourCounts));
   const tourExcursions = new Map(tours.map((tour) => [tour.data.id, excursionIdsForTour(tour)]));
   const countryEntryById = new Map(countries.map((country) => [country.data.id, country]));

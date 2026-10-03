@@ -9,22 +9,22 @@ destinationType: city
 summary: "Город в высокогорье между вулканами, откуда отправляются к горячим источникам и в деревни местных ремесленников."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/quetzaltenango.jpg"
+  src: "/media/destinations/quetzaltenango/hero-enhanced-20261003.webp"
   alt: "На фото: город Кесальтенанго в Гватемале"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN3554_14.jpg"
+  - src: "/media/destinations/quetzaltenango/gallery-1-enhanced-20261003.webp"
     alt: "На фото: город Кесальтенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN3554_3.jpg"
+  - src: "/media/destinations/quetzaltenango/gallery-2-enhanced-20261003.webp"
     alt: "На фото: город Кесальтенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/0/0/001.jpg"
+  - src: "/media/destinations/quetzaltenango/gallery-3-enhanced-20261003.webp"
     alt: "На фото: город Кесальтенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/n/o/normal_guatemala_quetzaltenango_1.jpg"
+  - src: "/media/destinations/quetzaltenango/gallery-4-enhanced-20261003.webp"
     alt: "На фото: город Кесальтенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN17718_23.jpg"
+  - src: "/media/destinations/quetzaltenango/gallery-5-enhanced-20261003.webp"
     alt: "На фото: город Кесальтенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/m/e/meninos.jpg"
+  - src: "/media/destinations/quetzaltenango/gallery-6-enhanced-20261003.webp"
     alt: "На фото: город Кесальтенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/q/u/quetzaltenango.jpg"
+  - src: "/media/destinations/quetzaltenango/gallery-7-enhanced-20261003.webp"
     alt: "На фото: город Кесальтенанго в Гватемале"
 themes: []
 relatedDestinations: []

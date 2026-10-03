@@ -20,9 +20,9 @@ gallery:
     alt: "На фото: город Гватемала-Сити (столица страны)"
   - src: "/media/destinations/guatemala-city/gallery-4-enhanced-20261003.webp"
     alt: "На фото: город Гватемала-Сити (столица страны)"
-  - src: "https://brasiltours.ru/image/catalog/category/D/u/DuskfromGuatemalaCity.jpg"
+  - src: "/media/destinations/guatemala-city/gallery-5-enhanced-20261003.webp"
     alt: "На фото: город Гватемала-Сити (столица страны)"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN4465_5.jpg"
+  - src: "/media/destinations/guatemala-city/gallery-6-enhanced-20261003.webp"
     alt: "На фото: город Гватемала-Сити (столица страны)"
 themes: []
 relatedDestinations: []

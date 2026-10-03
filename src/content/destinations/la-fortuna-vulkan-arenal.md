@@ -9,7 +9,7 @@ destinationType: "route_cluster"
 summary: "Из Ла-Фортуны открываются виды на вулкан Ареналь. В окрестностях находятся одноименное озеро, национальный парк и водопад Ла-Фортуна."
 searchAliases: []
 hero: {"src":"https://brasiltours.ru/image/countries/costa-rica/6.jpg","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22224_3.jpg","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/1/8/1815037728_deb566459f.jpg","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22310_1.jpg","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN21311_7.jpg","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"}]
+gallery: [{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-3-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-4-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"}]
 themes: []
 relatedDestinations: []
 featuredTours: []

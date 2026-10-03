@@ -10,8 +10,13 @@ interface Props {
   themes?: string[];
   image?: string;
   tourCount?: number;
+  tourCountryCount?: number;
+  tourDurationDays?: number;
 }
-const { title, summary, entityType, typeLabel, subtitle, aliases = [], geography = [], themes = [], image, tourCount } = Astro.props;
+const {
+  title, summary, entityType, typeLabel, subtitle, aliases = [], geography = [], themes = [], image,
+  tourCount, tourCountryCount, tourDurationDays,
+} = Astro.props;
 ---
 <section class="pagefind-record" data-pagefind-body aria-hidden="true">
   <span data-pagefind-meta="title" data-pagefind-filter="search_title">{title}</span>
@@ -20,6 +25,8 @@ const { title, summary, entityType, typeLabel, subtitle, aliases = [], geography
   <span data-pagefind-meta="type_label">{typeLabel}</span>
   <span data-pagefind-meta="subtitle">{subtitle}</span>
   {typeof tourCount === 'number' && <span data-pagefind-meta="tour_count[data-tour-count]" data-tour-count={tourCount}></span>}
+  {typeof tourCountryCount === 'number' && <span data-pagefind-meta="tour_country_count">{tourCountryCount}</span>}
+  {typeof tourDurationDays === 'number' && <span data-pagefind-meta="tour_duration_days">{tourDurationDays}</span>}
   {aliases.length > 0 && <span data-pagefind-meta="aliases">{aliases.join(' | ')}</span>}
   {geography.length > 0 && <span data-pagefind-meta="geography">{geography.join(' | ')}</span>}
   {themes.length > 0 && <span data-pagefind-meta="themes">{themes.join(' | ')}</span>}

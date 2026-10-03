@@ -183,6 +183,30 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       return Number.isFinite(count) && count >= 0 ? count : 0;
     };
 
+    const resultTourCountryCount = (data: any) => {
+      const count = Number(data?.meta?.tour_country_count ?? 0);
+      return Number.isFinite(count) && count >= 0 ? count : 0;
+    };
+
+    const resultTourDurationDistance = (data: any) => {
+      const days = Number(data?.meta?.tour_duration_days);
+      return Number.isFinite(days) && days > 0
+        ? Math.abs(days - 13)
+        : Number.POSITIVE_INFINITY;
+    };
+
+    const compareTourSearchResults = (a: any, b: any) => {
+      const countryDifference = resultTourCountryCount(b.data) - resultTourCountryCount(a.data);
+      if (countryDifference) return countryDifference;
+
+      const durationDifference =
+        resultTourDurationDistance(a.data) - resultTourDurationDistance(b.data);
+      if (durationDifference) return durationDifference;
+
+      return String(a.data.meta?.title ?? '').localeCompare(String(b.data.meta?.title ?? ''), 'ru') ||
+        a.index - b.index;
+    };
+
     const setStatus = (message: string) => { status.textContent = message; };
     const clearResults = () => { list.replaceChildren(); };
 
@@ -272,6 +296,10 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
             return countDifference ||
               String(a.data.meta?.title ?? '').localeCompare(String(b.data.meta?.title ?? ''), 'ru') ||
               a.index - b.index;
+          }
+
+          if (activeFilter === 'tour') {
+            return compareTourSearchResults(a, b);
           }
 
           const priority = resultPriority(a.data, query) - resultPriority(b.data, query);

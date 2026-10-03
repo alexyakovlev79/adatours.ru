@@ -15,6 +15,7 @@ import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import { withBase } from '../lib/paths';
 import { destinationCatalogById } from '../lib/content-validation';
 import { destinationPath, tourBreadcrumbs, tourPath } from '../lib/routes';
+import { mainTourCountryIds } from '../lib/tour-relations';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -109,6 +110,8 @@ const heroMetaParts = [
     geography={[...countryNames, ...destinationNames, ...d.route]}
     themes={d.themes}
     image={d.hero?.src}
+    tourCountryCount={new Set(mainTourCountryIds(d)).size}
+    tourDurationDays={d.durationDays}
   />}
   {archived && <ArchiveNotice id={d.id} kind="tour" />}
 

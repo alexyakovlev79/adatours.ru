@@ -98,7 +98,7 @@ const heroMetaParts = [
 ].filter(Boolean);
 ---
 
-<BaseLayout noindex={archived} title={d.title} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
+<BaseLayout headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={d.title} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
   {!archived && <SearchIndexRecord
     title={d.title}
     summary={d.lead}

@@ -9,18 +9,18 @@ destinationType: city
 summary: "Город с рынком Indígena, кафе и кофейными плантациями в окрестностях, откуда отправляются к природным достопримечательностям."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/ueuetenango-2.jpg"
+  src: "/media/destinations/huehuetenango/hero-enhanced-20261003.webp"
   alt: "На фото: провинция Уэуэтенанго в Гватемале"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/I/M/IMG0464.gif"
+  - src: "/media/destinations/huehuetenango/gallery-1-enhanced-20261003.webp"
     alt: "На фото: провинция Уэуэтенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/b/a/batcelomclass3.jpg"
+  - src: "/media/destinations/huehuetenango/gallery-2-enhanced-20261003.webp"
     alt: "На фото: провинция Уэуэтенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/H/o/Hotel-en-Huehuetenango-Capital-en-Venta-2007102703580957.jpg"
+  - src: "/media/destinations/huehuetenango/gallery-3-enhanced-20261003.webp"
     alt: "На фото: провинция Уэуэтенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/M/X/MX01_E_15_33.jpg"
+  - src: "/media/destinations/huehuetenango/gallery-4-enhanced-20261003.webp"
     alt: "На фото: провинция Уэуэтенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_18.jpg"
+  - src: "/media/destinations/huehuetenango/gallery-5-enhanced-20261003.webp"
     alt: "На фото: провинция Уэуэтенанго в Гватемале"
 themes: []
 relatedDestinations: []

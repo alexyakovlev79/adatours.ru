@@ -9,22 +9,22 @@ destinationType: route_cluster
 summary: "Флорес на озере Петен-Ица и древний город майя Тикаль в джунглях. Здесь можно увидеть пирамиды, храмы, обсерватории и дворцы."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/tikal-flores.jpg"
+  src: "/media/countries/guatemala/featureBands-3-enhanced-20261002.webp"
   alt: "На фото: Тикаль и Флорес в Гватемале"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN470_37.jpg"
+  - src: "/media/destinations/tikal-and-flores/gallery-1-enhanced-20261003.webp"
     alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/2/2/2215128-San-Cristobal-0.jpg"
+  - src: "/media/destinations/tikal-and-flores/gallery-2-enhanced-20261003.webp"
     alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/5/f/5fcace66bc2413a22d81f94cf39a7c4c.jpg"
+  - src: "/media/destinations/tikal-and-flores/gallery-3-enhanced-20261003.webp"
     alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/f/l/flores.jpg"
+  - src: "/media/destinations/tikal-and-flores/gallery-4-enhanced-20261003.webp"
     alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN4118_13.jpg"
+  - src: "/media/destinations/tikal-and-flores/gallery-5-enhanced-20261003.webp"
     alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN17503_49.jpg"
+  - src: "/media/destinations/tikal-and-flores/gallery-6-enhanced-20261003.webp"
     alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/p/1/p114458-Flores_Guatemala-Tikal_National_Park.jpg"
+  - src: "/media/destinations/tikal-and-flores/gallery-7-enhanced-20261003.webp"
     alt: "На фото: Тикаль и Флорес в гватемале"
 themes: []
 relatedDestinations: []

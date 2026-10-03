@@ -9,20 +9,20 @@ destinationType: city
 summary: "Поселок на берегу озера с кафе, занятиями испанским языком и восхождениями на вулканы в окрестностях."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/san-pedro-la-laguna.jpg"
+  src: "/media/destinations/san-pedro-la-laguna/hero-enhanced-20261003.webp"
   alt: "На фото: Сан-Педро-ла-Лагуна в Гватемале"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/2/1/2195972-Kids-at-the-School-I-Volunteered-at-0.jpg"
+  - src: "/media/destinations/san-pedro-la-laguna/gallery-1-enhanced-20261003.webp"
     alt: "На фото: Сан-Педро-ла-Лагуна в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/a/2/a29e52bad9cdbe7da0ddcc5a3cf470bc.jpg"
+  - src: "/media/destinations/san-pedro-la-laguna/gallery-2-enhanced-20261003.webp"
     alt: "На фото: Сан-Педро-ла-Лагуна в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/8/4/847376219_638933ab69.jpg"
+  - src: "/media/destinations/san-pedro-la-laguna/gallery-3-enhanced-20261003.webp"
     alt: "На фото: Сан-Педро-ла-Лагуна в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/p/1/p132919-San_Pedro_la_Laguna-Hotel_boat_dock.jpg"
+  - src: "/media/destinations/san-pedro-la-laguna/gallery-4-enhanced-20261003.webp"
     alt: "На фото: Сан-Педро-ла-Лагуна в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/_/M/_MG_1996.jpg"
+  - src: "/media/destinations/san-pedro-la-laguna/gallery-5-enhanced-20261003.webp"
     alt: "На фото: Сан-Педро-ла-Лагуна в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/p/1/p132924-San_Pedro_la_Laguna-Colorful_Casa_Elena.jpg"
+  - src: "/media/destinations/san-pedro-la-laguna/gallery-6-enhanced-20261003.webp"
     alt: "На фото: Сан-Педро-ла-Лагуна в Гватемале"
 themes: []
 relatedDestinations: []

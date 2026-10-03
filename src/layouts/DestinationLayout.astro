@@ -74,7 +74,10 @@ for (const tour of mainTourEntries) {
 
 const relatedDestinations = destinationEntries
   .filter((item) => item.data.id !== d.id && destinationTourOverlap.has(item.data.id))
-  .sort(compareDestinationsByPopularity(destinationTourCounts))
+  .sort((a, b) =>
+    (destinationTourOverlap.get(b.data.id) ?? 0) - (destinationTourOverlap.get(a.data.id) ?? 0) ||
+    a.data.name.localeCompare(b.data.name, 'ru')
+  )
   .slice(0, 10);
 const featureBandImages = new Set(d.featureBands.map((band) => band.image));
 const visibleGallery = d.gallery.filter(

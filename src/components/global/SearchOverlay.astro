@@ -58,6 +58,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
 </div>
 
 <script>
+  const MAX_SEARCH_RESULTS = 300;
   const overlay = document.querySelector('[data-search-overlay]');
   const openButtons = Array.from(document.querySelectorAll('[data-search-open]'));
   const closeButton = overlay?.querySelector('[data-search-close]');
@@ -217,8 +218,20 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         const search = await pagefind.search(query, options);
         if (thisRequest !== requestId) return;
 
+        let candidates = search.results;
+        if (activeFilter === 'all' && candidates.length > MAX_SEARCH_RESULTS) {
+          // Keep matching countries inside the cap before loading result data.
+          const countrySearch = await pagefind.search(query, { filters: { entity_type: 'country' } });
+          if (thisRequest !== requestId) return;
+          const countryIds = new Set(countrySearch.results.map((raw: any) => raw.id));
+          candidates = [
+            ...candidates.filter((raw: any) => countryIds.has(raw.id)),
+            ...candidates.filter((raw: any) => !countryIds.has(raw.id)),
+          ];
+        }
+
         const loaded = await Promise.all(
-          search.results.map(async (raw: any, index: number) => ({
+          candidates.slice(0, MAX_SEARCH_RESULTS).map(async (raw: any, index: number) => ({
             index,
             data: await raw.data(),
           }))
@@ -228,6 +241,12 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         const filtered = loaded.filter((item) => matchesActiveFilter(item.data, query));
 
         filtered.sort((a, b) => {
+          if (activeFilter === 'all') {
+            const countryPriority = Number(b.data.meta?.entity_type === 'country') -
+              Number(a.data.meta?.entity_type === 'country');
+            if (countryPriority) return countryPriority;
+          }
+
           if (activeFilter === 'country' || activeFilter === 'destination' || activeFilter === 'excursion') {
             const countDifference = resultTourCount(b.data) - resultTourCount(a.data);
             return countDifference ||
@@ -239,13 +258,16 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
           return priority || a.index - b.index;
         });
 
+        const visibleResults = filtered.slice(0, MAX_SEARCH_RESULTS);
         clearResults();
-        for (const item of filtered) list.append(createResult(item.data));
+        for (const item of visibleResults) list.append(createResult(item.data));
 
         setStatus(
-          filtered.length === 0
+          visibleResults.length === 0
             ? 'Ничего не найдено. Попробуйте другое название или вариант написания.'
-            : `Найдено: ${filtered.length}`
+            : search.results.length > MAX_SEARCH_RESULTS
+              ? `Показано: ${visibleResults.length} (максимум ${MAX_SEARCH_RESULTS}). Уточните запрос.`
+              : `Найдено: ${visibleResults.length}`
         );
       } catch (error) {
         console.error('Ada Tours search failed', error);

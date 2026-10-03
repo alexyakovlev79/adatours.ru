@@ -1,4 +1,5 @@
 ---
+import { isActiveEntity } from '../lib/archive.mjs';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
@@ -8,7 +9,7 @@ import StoryPair from '../components/editorial/StoryPair.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 
 const [brazil] = await getCollection('countries', ({ data }) =>
-  data.id === 'country_brazil' && data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+  data.id === 'country_brazil' && data.locale === 'ru' && isActiveEntity(data)
 );
 ---
 

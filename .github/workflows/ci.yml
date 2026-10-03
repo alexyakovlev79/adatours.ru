@@ -23,6 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
+      - name: Lifecycle and unit tests
+        run: |
+          node scripts/sync-archives.mjs
+          node --test tests/*.test.mjs
+
       - name: Build Astro and Pagefind
         run: npm run build
 
@@ -30,9 +35,14 @@ jobs:
         shell: bash
         run: |
           test -f dist/pagefind/pagefind.js
-          grep -q 'data-pagefind-body' dist/strany/braziliya/index.html
-          grep -q 'data-pagefind-body' dist/napravleniya/braziliya/rio-de-zhanejro/index.html
-          grep -q 'data-pagefind-body' dist/tury/roskoshnaya-braziliya/index.html
+          grep -q 'data-pagefind-body' dist/brazil/index.html
+          grep -q 'data-pagefind-body' dist/brazil/place/rio-de-janeiro/index.html
           ! grep -q 'data-pagefind-body' dist/index.html
           indexed_pages=$(grep -Rsl 'data-pagefind-body' dist --include='*.html' | wc -l)
           test "$indexed_pages" -ge 10
+
+      - name: Verify archives remain accessible and excluded from public collections
+        run: node scripts/verify-archive-output.mjs
+
+      - name: Verify canonical routing
+        run: node scripts/verify-routing-output.mjs

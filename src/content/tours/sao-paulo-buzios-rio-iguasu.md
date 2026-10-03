@@ -2,7 +2,7 @@
 id: tour_source_sao_paulo_buzios_rio_iguasu
 locale: ru
 slug: brazil-sao-paulo-iguazu-rio-buzios
-status: published
+status: archived
 title: 'Бразилия: Сан Пауло –Игуасу- Рио-де-Жанейро – Бузиос'
 countries:
 - country_brazil
@@ -212,6 +212,9 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_rio
 - destination_brazil_buzios
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_braziliya_ot_san_paulo_do_buziosa"
 ---
 
 **Длительность:** 12 дней / 11 ночей  

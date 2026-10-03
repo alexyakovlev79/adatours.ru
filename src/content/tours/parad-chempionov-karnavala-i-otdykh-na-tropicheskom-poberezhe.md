@@ -2,7 +2,7 @@
 id: tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe
 locale: ru
 slug: brazil-champions-parade-tropical-coast
-status: published
+status: archived
 title: Индивидуальный тур в Бразилию на Парад Чемпионов
 countries:
 - country_brazil
@@ -189,6 +189,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_buzios
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 10 дней / 9 ночей  

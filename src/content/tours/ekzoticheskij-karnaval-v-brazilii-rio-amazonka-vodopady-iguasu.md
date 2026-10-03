@@ -2,7 +2,7 @@
 id: tour_source_ekzoticheskij_karnaval_v_brazilii_rio_amazonka_vodopady_iguasu
 locale: ru
 slug: brazil-rio-carnival-amazon-iguazu
-status: published
+status: archived
 title: Тур в Бразилию - карнавал в Рио, Амазонка, водопады Игуасу
 countries:
 - country_brazil
@@ -219,6 +219,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_amazon
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 11 дней / 10 ночей  

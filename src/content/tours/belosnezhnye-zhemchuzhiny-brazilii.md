@@ -2,7 +2,7 @@
 id: tour_source_belosnezhnye_zhemchuzhiny_brazilii
 locale: ru
 slug: brazil-beach-tour-10-days
-status: published
+status: archived
 title: Пляжный тур в Бразилию на 10 дней
 countries:
 - country_brazil
@@ -200,6 +200,9 @@ routeDestinations:
 - destination_brazil_olinda
 - destination_brazil_porto_de_galinhas
 - destination_brazil_fernando_de_noronha
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_brazil_recife_porto_noronha_10d"
 ---
 
 **Длительность:** 10 дней / 9 ночей

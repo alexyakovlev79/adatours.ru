@@ -2,7 +2,7 @@
 id: tour_source_bolshoe_brazilskoe_priklyuchenie
 locale: ru
 slug: grand-brazil-adventure
-status: published
+status: archived
 title: Большое бразильское приключение
 countries:
 - country_brazil
@@ -285,6 +285,8 @@ routeDestinations:
 - destination_brazil_reka_sukuri
 - destination_brazil_vodopady_reki_mimozo
 - destination_brazil_reka_pregias
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 14 дней / 13 ночей  

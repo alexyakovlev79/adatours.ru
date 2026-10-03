@@ -3,7 +3,7 @@ id: excursion_source_makuko_safari
 locale: ru
 title: "Макуко Сафари у водопадов Игуасу"
 slug: macuco-safari
-status: approved
+status: archived
 searchAliases:
   - Макуко Сафари
   - Macuco Safari
@@ -26,6 +26,9 @@ notes:
 sourceUrl: https://brasiltours.ru/makuko-safari
 sourceSnapshot: page_texts_newstep/Excursions/makuko-safari__d7f3a8bf.md
 updatedAt: 2026-09-30
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "excursion_source_makuko_safari_he"
 ---
 
 Сначала вы едете на открытом джипе через тропический лес. Гид рассказывает об экосистеме региона, растениях и животных. Здесь встречаются высокие деревья, крупные лианы, папоротники, бабочки и коати.

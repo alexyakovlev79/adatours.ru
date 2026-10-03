@@ -1,3 +1,4 @@
+import { isActiveEntity } from './archive.mjs';
 import type { CollectionEntry } from 'astro:content';
 
 type TourEntry = CollectionEntry<'tours'>;
@@ -7,6 +8,7 @@ export const buildDestinationTourCounts = (tours: TourEntry[]) => {
   const counts = new Map<string, number>();
 
   for (const tour of tours) {
+    if (!isActiveEntity(tour)) continue;
     for (const destinationId of new Set(tour.data.destinations)) {
       counts.set(destinationId, (counts.get(destinationId) ?? 0) + 1);
     }

@@ -2,7 +2,7 @@
 id: tour_source_venesuela_populyarnye_napravleniya
 locale: ru
 slug: venezuela-popular-destinations
-status: published
+status: archived
 title: 'Венесуэла: Популярные направления'
 countries:
 - country_venezuela
@@ -212,6 +212,9 @@ routeDestinations:
 - destination_venezuela_koloniya_tovar
 - destination_venezuela_kanajma_i_vodopad_anhel
 - destination_venezuela_ostrov_margarita
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_populyarnye_napravleniya_venesuely"
 ---
 
 **Длительность:** 12 дней / 11 ночей

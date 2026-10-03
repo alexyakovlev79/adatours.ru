@@ -2,7 +2,7 @@
 id: tour_source_skazki_venesuelskogo_lesa
 locale: ru
 slug: venezuela-forest-tales
-status: published
+status: archived
 title: Сказки Венесуэльского Леса
 countries:
 - country_venezuela
@@ -223,6 +223,8 @@ routeDestinations:
 - destination_venezuela_los_rokes
 - destination_venezuela_karakas
 - destination_venezuela_koloniya_tovar
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 12 дней / 11 ночей  

@@ -1,11 +1,12 @@
 ---
+import { isActiveEntity } from '../../lib/archive.mjs';
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
 
 const people = await getCollection('people', ({ data }) =>
-  data.locale === 'ru' && !['draft', 'archived'].includes(data.status)
+  data.locale === 'ru' && isActiveEntity(data)
 );
 
 const renderedPeople = await Promise.all(

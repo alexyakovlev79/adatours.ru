@@ -1,3 +1,4 @@
+import { isActiveEntity, archiveById, archiveEntries, activeReplacementId } from './archive.mjs';
 import { getCollection } from 'astro:content';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { extname, join, resolve, sep } from 'node:path';
@@ -22,7 +23,7 @@ export interface CatalogDestination {
 export const destinationCatalog = destinationRecords as CatalogDestination[];
 export const destinationCatalogById = new Map(destinationCatalog.map((item) => [item.id, item]));
 
-const isPublished = (data: { status: string }) => !['draft', 'archived'].includes(data.status);
+const isPublished = (data: { status: string }) => isActiveEntity(data);
 const key = (locale: string, id: string) => `${locale}:${id}`;
 const cachePath = /\/image\/cache\//i;
 let buildValidation: Promise<void> | undefined;
@@ -50,6 +51,17 @@ async function validateContent(): Promise<void> {
   if (new Set(publishedPaths).size !== publishedPaths.length) errors.push('Повторяющийся канонический URL опубликованных объектов.');
   const countryById = new Map(countries.filter(({ data }) => isPublished(data)).map((entry) => [key(entry.data.locale, entry.data.id), entry]));
   const excursionById = new Map(excursions.filter(({ data }) => isPublished(data)).map((entry) => [key(entry.data.locale, entry.data.id), entry]));
+  const contentById = new Map(rows.map((entry) => [entry.data.id, entry]));
+  for (const entry of [...tours, ...excursions]) {
+    if (entry.data.status === 'archived' && !archiveById.has(entry.data.id)) errors.push(`${entry.data.id}: добавь запись в data/catalog-archive.json и синхронизируй архив.`);
+  }
+  for (const archived of archiveEntries) {
+    const page = contentById.get(archived.id);
+    if (archived.hadPage && !page) errors.push(`${archived.id}: архивная страница должна оставаться доступной.`);
+    if (page && page.data.status !== 'archived') errors.push(`${archived.id}: запись архива требует status: archived в MD.`);
+    if (page && (archived.type === 'tour' ? tourPath(page.data) : excursionPath(page.data)) !== archived.url) errors.push(`${archived.id}: обнови URL архива одновременно с каноническим маршрутом.`);
+    if (archived.duplicateOf && (!activeReplacementId(archived.id) || archiveById.has(archived.duplicateOf))) errors.push(`${archived.id}: у дубля нет активной замены.`);
+  }
   const seenIds = new Set<string>();
   const seenRoutes = new Set<string>();
   const localMedia = new Set<string>();
@@ -142,7 +154,8 @@ async function validateContent(): Promise<void> {
     for (const day of d.itinerary) {
       const refs = [day.excursionRef, ...day.contentBlocks.filter((block) => block.type === 'excursion').map((block) => block.excursionRef)];
       for (const id of refs.filter(Boolean) as string[]) {
-        if (!excursionById.has(key(d.locale, id))) errors.push(`${d.id}: экскурсия ${id} должна быть создана и опубликована вместе с туром.`);
+        const activeId = activeReplacementId(id);
+        if (activeId && !excursionById.has(key(d.locale, activeId)) && !excursions.some((item) => item.data.id === activeId && item.data.status === 'archived')) errors.push(`${d.id}: экскурсия ${id} должна быть создана и опубликована вместе с туром.`);
       }
     }
   }

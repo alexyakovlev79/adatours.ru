@@ -1,0 +1,23 @@
+---
+import { archiveInfo, activeReplacementId, archiveById } from '../../lib/archive.mjs';
+import tourCatalog from '../../../data/source-index/catalogs/tours.json';
+import excursionCatalog from '../../../data/source-index/catalogs/excursions.json';
+import { getCollection } from 'astro:content';
+import { withBase } from '../../lib/paths';
+interface Props { id: string; kind: 'tour' | 'excursion'; }
+const { id, kind } = Astro.props;
+const record = archiveInfo(id);
+const replacementId = record?.duplicateOf ? activeReplacementId(id) : undefined;
+const activePages = replacementId ? await getCollection(kind === 'tour' ? 'tours' : 'excursions', ({ data }) => data.id === replacementId && !['draft', 'archived'].includes(data.status)) : [];
+const replacement = activePages.length ? [...tourCatalog.entries, ...excursionCatalog.entries].find((item) => item.id === replacementId && !archiveById.has(item.id)) : undefined;
+---
+<aside class="archive-notice container" data-catalog-status="archived" role="note">
+  <p class="eyebrow">{kind === 'tour' ? 'Архивный тур' : 'Архивная экскурсия'}</p>
+  <p>Страница сохранена для справки. Эта программа больше не входит в актуальный каталог; прежние даты и цены не являются действующим предложением.</p>
+  {replacement && <p><a href={withBase(replacement.url)}>Перейти к актуальной программе</a></p>}
+</aside>
+<style>
+  .archive-notice { margin-block: 2rem; padding-block: 1.25rem; border-top: 1px solid currentColor; border-bottom: 1px solid currentColor; }
+  .archive-notice p { max-width: 76ch; margin-block: .5rem; }
+  .archive-notice a { text-decoration: underline; text-underline-offset: .2em; }
+</style>

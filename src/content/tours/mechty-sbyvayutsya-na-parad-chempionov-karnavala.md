@@ -2,7 +2,7 @@
 id: tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala
 locale: ru
 slug: brazil-carnival-champions-parade-dreams
-status: published
+status: archived
 title: Мечты сбываются на Парад Чемпионов Карнавала в Бразилии
 countries:
 - country_brazil
@@ -225,6 +225,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 9 дней / 8 ночей, 20.02 - 28.02.2026  

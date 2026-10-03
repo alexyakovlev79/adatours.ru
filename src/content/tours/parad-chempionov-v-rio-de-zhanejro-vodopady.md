@@ -2,7 +2,7 @@
 id: tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady
 locale: ru
 slug: rio-champions-parade-waterfalls
-status: published
+status: archived
 title: Парад Чемпионов в Рио де Жанейро & Водопады
 countries:
 - country_brazil
@@ -194,6 +194,8 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 7 дней / 6 ночей  

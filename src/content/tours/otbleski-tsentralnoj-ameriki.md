@@ -2,7 +2,7 @@
 id: tour_source_otbleski_tsentralnoj_ameriki
 locale: ru
 slug: central-america-highlights
-status: published
+status: archived
 title: 'Тур в Центральную Америку: лучшие достопримечательности'
 countries:
 - country_guatemala
@@ -363,6 +363,9 @@ routeDestinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_san_hose
+archivedAt: "2026-10-03"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh"
 ---
 
 **Длительность:** 19 дней / 18 ночей  

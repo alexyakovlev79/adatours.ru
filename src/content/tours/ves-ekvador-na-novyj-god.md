@@ -2,7 +2,7 @@
 id: tour_source_ves_ekvador_na_novyj_god
 locale: ru
 slug: complete-ecuador-new-year
-status: published
+status: archived
 title: Весь Эквадор
 countries:
 - country_ecuador
@@ -497,6 +497,8 @@ routeDestinations:
 - destination_ecuador_ostrov_plasa_sur
 - destination_ecuador_mys_karrion
 - destination_ecuador_plyazhi_bachas
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 11 дней / 10 ночей  

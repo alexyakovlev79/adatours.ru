@@ -2,7 +2,7 @@
 id: tour_source_vsya_meksika
 locale: ru
 slug: complete-mexico
-status: published
+status: archived
 title: Вся Мексика
 countries:
 - country_mexico
@@ -262,6 +262,8 @@ routeDestinations:
 - destination_mexico_chichen_ica
 - destination_mexico_kankun
 - destination_mexico_rivera_majya
+archivedAt: "2026-10-03"
+archiveReason: "expired_dates"
 ---
 
 **Длительность:** 9 дней / 8 ночей

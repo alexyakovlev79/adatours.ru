@@ -44,7 +44,12 @@ const pluralRu = (value: number, one: string, few: string, many: string) => {
   return many;
 };
 
-const itineraryDayCount = days.filter((day) => typeof day.day === 'number').length;
+// Some itinerary cards cover several days (for example, days 3–6), so the
+// journey length is the highest numbered day, not the number of cards.
+const itineraryDayCount = days.reduce(
+  (maxDay, day) => typeof day.day === 'number' ? Math.max(maxDay, day.day) : maxDay,
+  0,
+);
 const itineraryDayLabel = pluralRu(itineraryDayCount, 'день', 'дня', 'дней');
 
 const resolveDayImage = (image: Day['image']) => {

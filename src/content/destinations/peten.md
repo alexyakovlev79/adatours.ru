@@ -9,12 +9,12 @@ destinationType: region
 summary: "Регион Гватемалы с археологическими памятниками майя среди джунглей: Тикаль, Якша, Сейбал, Агуатека, Сан-Бартоло и Эль-Мирадор."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/hector-pineda-m25dywqgkrg-unsplash.jpg"
+  src: "/media/countries/guatemala/hero-enhanced-20261002.webp"
   alt: "На фото: пирамиды Эль-Петен в Гватемале"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/s/m/small_peten-foto-templo-del-jaguar__527b54aac.jpg"
+  - src: "/media/destinations/peten/gallery-1-enhanced-20261003.webp"
     alt: "На фото: пирамиды Эль-Петен в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/p/i/piramide-del-gran-jaguar-peten-guatemala-323367.jpg"
+  - src: "/media/destinations/peten/gallery-2-enhanced-20261003.webp"
     alt: "На фото: пирамиды Эль-Петен в Гватемале"
 themes: []
 relatedDestinations: []

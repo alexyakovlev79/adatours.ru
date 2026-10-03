@@ -9,10 +9,10 @@ destinationType: natural_area
 summary: "Деревня на южном берегу озера Изабал. В окрестностях находятся колониальный форт Сан-Филипе и руины Киригуа."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/lago-izabal.jpg"
+  src: "/media/destinations/lake-izabal/hero-enhanced-20261003.webp"
   alt: "На фото: озеро Исабаль в Гватемале"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/L/a/Lake-Izabal-Guatemala-Cen-006.jpg"
+  - src: "/media/destinations/lake-izabal/gallery-1-enhanced-20261003.webp"
     alt: "На фото: озеро Исабаль в Гватемале"
 themes: []
 relatedDestinations: []

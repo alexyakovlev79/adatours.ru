@@ -22,7 +22,7 @@ gallery:
     alt: "На фото: озеро Атитлан в Гватемале"
   - src: "/media/destinations/lake-atitlan/gallery-5-enhanced-20261003.webp"
     alt: "На фото: озеро Атитлан в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN3554_31.jpg"
+  - src: "/media/destinations/lake-atitlan/gallery-6-enhanced-20261003.webp"
     alt: "На фото: озеро Атитлан в Гватемале"
 themes: []
 relatedDestinations: []

@@ -9,16 +9,16 @@ destinationType: city
 summary: "Город в устье Рио-Дульче с деревянными домами, кокосовыми рощами и культурой гарифуна. Отсюда отправляются на лодочные экскурсии."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/livingston.jpg"
+  src: "/media/destinations/livingston/hero-enhanced-20261003.webp"
   alt: "На фото: город Ливингстон в Гватемале"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/D/S/DSCF2389_1.jpg"
+  - src: "/media/destinations/livingston/gallery-1-enhanced-20261003.webp"
     alt: "На фото: город Ливингстон в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/l/i/livingston10_1.jpg"
+  - src: "/media/destinations/livingston/gallery-2-enhanced-20261003.webp"
     alt: "На фото: город Ливингстон в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/2/0/2005_0330livingston0072_1.jpg"
+  - src: "/media/destinations/livingston/gallery-3-enhanced-20261003.webp"
     alt: "На фото: город Ливингстон в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/g/u/guatemala-city-gua108_1.jpg"
+  - src: "/media/destinations/livingston/gallery-4-enhanced-20261003.webp"
     alt: "На фото: город Ливингстон в Гватемале"
 themes: []
 relatedDestinations: []

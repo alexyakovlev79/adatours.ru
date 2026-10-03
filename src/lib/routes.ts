@@ -146,6 +146,11 @@ export function excursionPath(excursion: ExcursionRouteInput): string {
   return `${parent}${segment(excursion.slug)}/`;
 }
 
+/** Exact reverse relation catalogue, separate from the excursion product itself. */
+export function tourExcursionPath(excursion: ExcursionRouteInput): string {
+  return `${excursionPath(excursion)}tour/`;
+}
+
 export function themePath(theme: { slug: string }): string {
   return `/interests/${segment(theme.slug)}/`;
 }

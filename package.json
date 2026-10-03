@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "node --test tests/catalog-pagination.test.mjs && astro build && node scripts/check-catalog-pagination.mjs && pagefind --site dist",
     "preview": "astro preview",
     "reserve:destination": "node scripts/reserve-destination.mjs",
-    "test:destination-reservations": "node --test tests/destination-reservations.test.mjs"
+    "test:destination-reservations": "node --test tests/destination-reservations.test.mjs",
+    "test:catalog-pagination": "node --test tests/catalog-pagination.test.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

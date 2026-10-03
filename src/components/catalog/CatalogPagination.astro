@@ -1,0 +1,105 @@
+---
+import { withBase } from '../../lib/paths';
+import { catalogPagePath, paginationNumbers, type CatalogPagination } from '../../lib/catalog-pagination';
+
+interface Props { pagination: CatalogPagination; }
+const { pagination: p } = Astro.props;
+const numbers = paginationNumbers(p.currentPage, p.totalPages);
+---
+
+<div class="catalog-pagination container" data-catalog-controls>
+  <p class="catalog-pagination__count" data-catalog-count>Показано {p.from}–{p.to} из {p.totalItems}</p>
+  {p.nextPath && (
+    <a
+      class="catalog-pagination__more"
+      href={withBase(p.nextPath)}
+      data-catalog-load-more
+      aria-controls="catalog-items"
+    >Показать еще <span aria-hidden="true">+</span></a>
+  )}
+  <p class="catalog-pagination__status" data-catalog-status role="status" aria-live="polite" aria-atomic="true"></p>
+  {p.totalPages > 1 && (
+    <nav class="catalog-pagination__nav" aria-label="Страницы каталога">
+      {p.previousPath && <a class="catalog-pagination__direction" href={withBase(p.previousPath)} rel="prev">← Назад</a>}
+      <div class="catalog-pagination__numbers">
+        {numbers.map((page) => page === 'gap'
+          ? <span class="catalog-pagination__gap" aria-hidden="true">…</span>
+          : page === p.currentPage
+            ? <span class="catalog-pagination__number is-current" aria-current="page" aria-label={`Страница ${page}, текущая`}>{page}</span>
+            : <a class="catalog-pagination__number" href={withBase(catalogPagePath(p.rootPath, page))} aria-label={`Страница ${page}`}>{page}</a>
+        )}
+      </div>
+      {p.nextPath && <a class="catalog-pagination__direction" href={withBase(p.nextPath)} rel="next">Далее →</a>}
+    </nav>
+  )}
+  {p.currentPage > 1 && (
+    <a class="catalog-pagination__first" href={withBase(p.rootPath)}>На первую страницу каталога</a>
+  )}
+</div>
+
+<style>
+  .catalog-pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding-block: clamp(36px, 5vw, 72px);
+    color: var(--color-ink);
+    text-align: center;
+  }
+  .catalog-pagination__count { margin: 0; font-size: 1rem; }
+  .catalog-pagination__more {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    min-height: 52px;
+    max-width: 100%;
+    padding: 14px 32px;
+    color: var(--color-ink);
+    background: var(--color-gold);
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 180ms ease;
+  }
+  .catalog-pagination__more:hover { background: var(--color-gold-hover, #e6ba43); }
+  .catalog-pagination__more[aria-disabled='true'] { cursor: progress; opacity: .65; }
+  .catalog-pagination__more[hidden] { display: none; }
+  .catalog-pagination__status { max-width: 650px; margin: 0; font-size: .95rem; }
+  .catalog-pagination__status:empty { display: none; }
+  .catalog-pagination__nav, .catalog-pagination__numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .catalog-pagination__nav { column-gap: 22px; row-gap: 16px; }
+  .catalog-pagination__number, .catalog-pagination__direction {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 8px 12px;
+    color: inherit;
+    font-family: var(--font-display);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .catalog-pagination__number.is-current { border-color: var(--color-gold-deep, #c89a20); font-weight: 600; }
+  a.catalog-pagination__number:hover, .catalog-pagination__direction:hover { border-color: currentColor; }
+  .catalog-pagination__gap { padding-inline: 2px; }
+  .catalog-pagination__first { color: inherit; text-underline-offset: .25em; }
+  .catalog-pagination a:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 4px; }
+  @media (max-width: 600px) {
+    .catalog-pagination__more { width: 100%; }
+    .catalog-pagination__nav { width: 100%; gap: 12px; }
+    .catalog-pagination__numbers { order: -1; flex-basis: 100%; gap: 2px; }
+    .catalog-pagination__number { min-width: 36px; padding-inline: 8px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .catalog-pagination__more { transition: none; }
+  }
+</style>

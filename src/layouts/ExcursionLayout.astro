@@ -12,9 +12,10 @@ import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
+import CatalogMoreLink from '../components/editorial/CatalogMoreLink.astro';
 import { withBase } from '../lib/paths';
 import { destinationCatalogById } from '../lib/content-validation';
-import { destinationPath, excursionBreadcrumbs as buildExcursionBreadcrumbs, excursionGeography, excursionPath, tourPath } from '../lib/routes';
+import { destinationPath, excursionBreadcrumbs as buildExcursionBreadcrumbs, excursionGeography, excursionPath, tourExcursionPath, tourPath } from '../lib/routes';
 import { excursionDestinationIds } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsForTour } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
@@ -23,6 +24,7 @@ const { entry } = Astro.props;
 const d = entry.data;
 const archived = isArchivedEntity(d);
 const linkedDestinationIds = excursionDestinationIds(d);
+const relatedTourLimit = 10;
 
 const [countryEntries, destinationEntries, tourEntries, excursionEntries] = await Promise.all([
   getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
@@ -192,10 +194,10 @@ const excursionSchema = {
     <IncludedExcluded included={d.included} notIncluded={d.notIncluded} notes={d.notes} />
   )}
 
-  {relatedTours.length > 0 && (
+  {!archived && relatedTours.length > 0 && (
     <>
       <EditorialStatement eyebrow="Туры" text="Туры с этой экскурсией" />
-      {relatedTours.map((tour, index) => (
+      {relatedTours.slice(0, relatedTourLimit).map((tour, index) => (
         <DestinationBand
           eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
           title={tour.data.title}
@@ -208,6 +210,9 @@ const excursionSchema = {
           align={index % 2 === 1 ? 'right' : 'left'}
         />
       ))}
+      {relatedTours.length > relatedTourLimit && (
+        <CatalogMoreLink href={tourExcursionPath(d)} label="Все туры с этой экскурсией" />
+      )}
     </>
   )}
 

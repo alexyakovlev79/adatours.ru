@@ -2,8 +2,12 @@
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
+import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
-import { destinationPath, excursionPath, tourPath, type BreadcrumbItem } from '../lib/routes';
+import CatalogPagination from '../components/catalog/CatalogPagination.astro';
+import { countryRoute, destinationPath, excursionPath, tourPath, type BreadcrumbItem } from '../lib/routes';
+import { withBase } from '../lib/paths';
+import type { CatalogPagination as PaginationData } from '../lib/catalog-pagination';
 
 interface Props {
   kind: 'tour' | 'excursion' | 'destination';
@@ -13,10 +17,34 @@ interface Props {
   canonical: string;
   breadcrumbs: BreadcrumbItem[];
   hero?: string;
+  pagination: PaginationData;
+  catalogVersion: string;
+  variant?: 'global-tours' | 'global-places' | 'global-excursions';
 }
 
-const { kind, entries, title, description, canonical, breadcrumbs, hero } = Astro.props;
+const { kind, entries, title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant } = Astro.props;
 const eyebrow = kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : 'Направления';
+const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
+const metaTitle = `${title}${pageSuffix}`;
+const metaDescription = p.currentPage > 1
+  ? `${description} Страница ${p.currentPage} из ${p.totalPages}, объекты ${p.from}–${p.to} из ${p.totalItems}.`
+  : description;
+const presentation = variant === 'global-tours' ? {
+  title: 'Путешествия по Латинской Америке',
+  intro: 'Готовые маршруты Ada Tours можно взять за основу и изменить под ваши даты, длительность, отели и состав программы.',
+  editorial: { eyebrow: 'Выберите основу', text: 'От короткой поездки по Бразилии до большого маршрута по нескольким странам. Каждый вариант можно доработать под вас.' },
+} : variant === 'global-places' ? {
+  title: 'Места, ради которых летят в Латинскую Америку',
+  intro: 'Рио, Игуасу, Амазония, Патагония, Куско и десятки других мест. Выберите точку на карте, мы свяжем ее с подходящим маршрутом.',
+  editorial: { eyebrow: 'Выбирайте по месту', text: 'Одно место может стать центром путешествия или частью большого маршрута по нескольким странам.' },
+} : variant === 'global-excursions' ? {
+  title: 'Экскурсии по Латинской Америке',
+  intro: 'Город, природа, вода, гастрономия или день за пределами столицы. Выберите программу, а Ada Tours поможет встроить ее в путешествие.',
+  editorial: undefined,
+} : { title, intro: description, editorial: undefined };
+const pageBreadcrumbs: BreadcrumbItem[] = p.currentPage > 1
+  ? [...breadcrumbs, { label: `Страница ${p.currentPage}`, href: canonical }]
+  : breadcrumbs;
 const cards = entries.map((entry) => {
   if (kind === 'tour') {
     const d = (entry as CollectionEntry<'tours'>).data;
@@ -27,24 +55,86 @@ const cards = entries.map((entry) => {
     return { data: d, title: d.title, text: d.lead, href: excursionPath(d), meta: [d.duration, d.format].filter(Boolean).join(' · ') };
   }
   const d = (entry as CollectionEntry<'destinations'>).data;
-  return { data: d, title: d.name, text: d.summary, href: destinationPath(d), meta: '' };
+  return { data: d, title: d.name, text: d.summary, href: destinationPath(d), meta: variant === 'global-places' ? countryRoute(d.countryId).name : '' };
 });
+const absoluteUrl = (path: string) => new URL(withBase(path), Astro.site ?? 'https://adatours.ru/').toString();
+const listSchema = {
+  '@type': 'ItemList',
+  '@id': `${absoluteUrl(canonical)}#catalog`,
+  name: metaTitle,
+  numberOfItems: cards.length,
+  itemListElement: cards.map((card, index) => ({
+    '@type': 'ListItem',
+    position: p.offset + index + 1,
+    name: card.title,
+    url: absoluteUrl(card.href),
+  })),
+};
 ---
 
-<BaseLayout title={title} description={description} canonical={canonical} breadcrumbs={breadcrumbs} image={hero}>
-  <Hero eyebrow={eyebrow} title={title} intro={description} image={hero} compact />
-  {cards.map((card, index) => (
-    <DestinationBand
-      eyebrow={card.meta}
-      title={card.title}
-      text={card.text}
-      image={card.data.hero?.src}
-      imageTextAlign={card.data.imageTextAlign}
-      mediaStatus={card.data.hero?.status}
-      replacementReason={card.data.hero?.replacementReason}
-      href={card.href}
-      align={index % 2 === 1 ? 'right' : 'left'}
-      descriptionBelow={kind !== 'tour'}
-    />
-  ))}
+<BaseLayout title={metaTitle} description={metaDescription} canonical={canonical} breadcrumbs={pageBreadcrumbs} image={hero} pageSchema={listSchema}>
+  <Hero
+    eyebrow={eyebrow}
+    title={`${presentation.title}${pageSuffix}`}
+    intro={presentation.intro}
+    image={hero}
+    compact={p.currentPage > 1 || (variant !== 'global-tours' && variant !== 'global-places')}
+  />
+  {p.currentPage === 1 && presentation.editorial && (
+    <EditorialStatement eyebrow={presentation.editorial.eyebrow} text={presentation.editorial.text} />
+  )}
+  {p.currentPage > 1 && (
+    <div class="catalog-start container">
+      <a href={withBase(p.rootPath)}>← На первую страницу каталога</a>
+      <span>Страница {p.currentPage} из {p.totalPages}</span>
+    </div>
+  )}
+  <div
+    data-catalog-root
+    data-catalog-key={p.rootPath}
+    data-catalog-version={catalogVersion}
+    data-catalog-page={p.currentPage}
+    data-catalog-from={p.from}
+    data-catalog-to={p.to}
+    data-catalog-total={p.totalItems}
+  >
+    <div id="catalog-items" data-catalog-items>
+      {cards.map((card, index) => (
+        <div data-catalog-item={card.data.id}>
+          <DestinationBand
+            eyebrow={card.meta}
+            title={card.title}
+            text={card.text}
+            image={card.data.hero?.src}
+            imageTextAlign={card.data.imageTextAlign}
+            mediaStatus={card.data.hero?.status}
+            replacementReason={card.data.hero?.replacementReason}
+            href={card.href}
+            align={variant === 'global-places'
+              ? (p.offset + index) % 3 === 1 ? 'right' : 'left'
+              : (p.offset + index) % 2 === 1 ? 'right' : 'left'}
+            descriptionBelow={kind !== 'tour' && variant !== 'global-places'}
+          />
+        </div>
+      ))}
+    </div>
+    <CatalogPagination pagination={p} />
+  </div>
 </BaseLayout>
+
+<script>
+  import '../scripts/catalog-load-more';
+</script>
+
+<style>
+  .catalog-start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-block: 24px;
+  }
+  .catalog-start a { color: var(--color-ink); text-underline-offset: .25em; }
+  .catalog-start span { font-size: .95rem; }
+</style>

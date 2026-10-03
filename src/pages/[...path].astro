@@ -1,4 +1,5 @@
 ---
+import { createHash } from 'node:crypto';
 import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import CountryLayout from '../layouts/CountryLayout.astro';
@@ -9,26 +10,30 @@ import EntityCatalogLayout from '../layouts/EntityCatalogLayout.astro';
 import RedirectLayout from '../layouts/RedirectLayout.astro';
 import {
   aliasesForEntity, assertUniqueRoutePaths, countryPath, countryRoute, destinationCountryPath, destinationPath, destinationRoute,
-  excursionCountryPath, excursionDestinationPath, excursionGeography, excursionPath,
-  mainTourCountries, optionalTourDestinationPath, pageAliases, routeCountries, tourCountryPath, tourDestinationPath, tourPath,
+  excursionBreadcrumbs, excursionCountryPath, excursionDestinationPath, excursionGeography, excursionPath,
+  mainTourCountries, optionalTourDestinationPath, pageAliases, routeCountries, tourCountryPath, tourDestinationPath, tourExcursionPath, tourPath,
   type BreadcrumbItem, type CountryRoute, type DestinationRoute,
 } from '../lib/routes';
 import { excursionDestinationIds } from '../lib/destination-links.mjs';
-import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
+import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsForTour } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { tourHasMainCountry, tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-relations';
+import { paginateCatalog, type CatalogPagination } from '../lib/catalog-pagination';
 
 type DetailProps =
   | { mode: 'detail'; kind: 'country'; entry: CollectionEntry<'countries'> }
   | { mode: 'detail'; kind: 'destination'; entry: CollectionEntry<'destinations'> }
   | { mode: 'detail'; kind: 'tour'; entry: CollectionEntry<'tours'> }
   | { mode: 'detail'; kind: 'excursion'; entry: CollectionEntry<'excursions'> };
-type CatalogProps = {
+type CatalogInput = {
   mode: 'catalog'; kind: 'tour' | 'excursion' | 'destination';
   entries: Array<CollectionEntry<'tours'> | CollectionEntry<'excursions'> | CollectionEntry<'destinations'>>;
   canonical: string; title: string; description: string; breadcrumbs: BreadcrumbItem[]; hero?: string;
+  variant?: 'global-tours' | 'global-places' | 'global-excursions';
 };
-type Props = DetailProps | CatalogProps | { mode: 'redirect'; to: string; title: string };
+type CatalogProps = CatalogInput & { pagination: CatalogPagination; catalogVersion: string };
+type RedirectProps = { mode: 'redirect'; to: string; title: string };
+type Props = DetailProps | CatalogProps | RedirectProps;
 
 export async function getStaticPaths() {
   const [countries, destinations, allTours, allExcursions] = await Promise.all([
@@ -41,13 +46,52 @@ export async function getStaticPaths() {
   const excursions = allExcursions.filter(isActiveEntity);
   const excursionTourCounts = buildExcursionTourCounts(tours);
   const destinationTourCounts = buildDestinationTourCounts(tours);
-
+  // Preserve the existing global tour order; nested catalogues retain priority + title.
+  const globalTours = [...tours].sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0));
   destinations.sort(compareDestinationsByPopularity(destinationTourCounts));
   tours.sort((a, b) => (b.data.priority ?? 0) - (a.data.priority ?? 0) || a.data.title.localeCompare(b.data.title, 'ru'));
   excursions.sort(compareExcursionsByPopularity(excursionTourCounts));
+  const tourExcursions = new Map(tours.map((tour) => [tour.data.id, excursionIdsForTour(tour)]));
 
   const routes: Array<{ params: { path: string }; props: Props }> = [];
-  const add = (path: string, props: Props) => routes.push({ params: { path: path.replace(/^\/|\/$/g, '') }, props });
+  const addRaw = (path: string, props: Props) => routes.push({ params: { path: path.replace(/^\/|\/$/g, '') }, props });
+  const add = (path: string, props: DetailProps | CatalogInput | RedirectProps) => {
+    if (props.mode !== 'catalog') return addRaw(path, props);
+    // Every catalogue, including a new relation catalogue, uses the same static pagination.
+    const catalogVersion = createHash('sha256').update(JSON.stringify(props.entries.map((entry) => entry.data.id))).digest('hex').slice(0, 20);
+    for (const page of paginateCatalog(props.entries, path)) {
+      addRaw(page.pagination.canonical, {
+        ...props,
+        entries: page.entries,
+        canonical: page.pagination.canonical,
+        pagination: page.pagination,
+        catalogVersion,
+      });
+    }
+  };
+
+  add('/tours/', {
+    mode: 'catalog', kind: 'tour', entries: globalTours, canonical: '/tours/', variant: 'global-tours',
+    title: 'Туры по Бразилии и Латинской Америке',
+    description: 'Индивидуальные, VIP и multi-country маршруты Ada Tours по Бразилии, Аргентине, Перу и другим странам Латинской Америки.',
+    breadcrumbs: [{ label: 'Туры', href: '/tours/' }],
+    hero: '/media/catalog/tury/hero-enhanced-20260930.webp',
+  });
+  const activeCountryIds = new Set(countries.map((country) => country.data.id));
+  add('/places/', {
+    mode: 'catalog', kind: 'destination', entries: destinations.filter((place) => activeCountryIds.has(place.data.countryId)),
+    canonical: '/places/', variant: 'global-places',
+    title: 'Места Латинской Америки | Ada Tours',
+    description: 'Рио-де-Жанейро, Игуасу, Амазония, Пантанал, Буэнос-Айрес, Патагония, Мендоса, Лима, Куско и Мачу-Пикчу в структуре маршрутов Ada Tours.',
+    breadcrumbs: [{ label: 'Направления', href: '/places/' }],
+    hero: '/media/home/patagonia-enhanced-20260930.webp',
+  });
+  add('/excursions/', {
+    mode: 'catalog', kind: 'excursion', entries: excursions, canonical: '/excursions/', variant: 'global-excursions',
+    title: 'Экскурсии в Бразилии и Латинской Америке',
+    description: 'Экскурсии Ada Tours по городам и природным территориям Латинской Америки: частные и групповые программы с прямой заявкой принимающему туроператору.',
+    breadcrumbs: [{ label: 'Экскурсии', href: '/excursions/' }],
+  });
 
   for (const entry of countries) {
     const canonical = countryPath(entry.data);
@@ -59,7 +103,6 @@ export async function getStaticPaths() {
     add(canonical, { mode: 'detail', kind: 'destination', entry });
     for (const alias of aliasesForEntity('destination', entry.data, canonical)) add(alias, { mode: 'redirect', to: canonical, title: entry.data.name });
 
-    // Full catalogues use the same relation predicates and ordering as the place previews.
     const country = countryRoute(entry.data.countryId);
     const breadcrumbs: BreadcrumbItem[] = [
       { label: 'Направления', href: '/places/' },
@@ -101,12 +144,26 @@ export async function getStaticPaths() {
     const canonical = excursionPath(entry.data);
     add(canonical, { mode: 'detail', kind: 'excursion', entry });
     for (const alias of aliasesForEntity('excursion', entry.data, canonical)) add(alias, { mode: 'redirect', to: canonical, title: entry.data.title });
-    if (isArchivedEntity(entry)) continue; // Keep page and aliases, exclude catalog membership.
+    if (isArchivedEntity(entry)) continue; // Keep page and aliases, exclude every catalogue membership.
+    const relatedTours = tours.filter((tour) => tourExcursions.get(tour.data.id)?.has(entry.data.id));
+    if (relatedTours.length) {
+      const catalogPath = tourExcursionPath(entry.data);
+      add(catalogPath, {
+        mode: 'catalog', kind: 'tour', entries: relatedTours, canonical: catalogPath,
+        title: `Туры с экскурсией «${entry.data.title}»`,
+        description: `Все маршруты Ada Tours, в которых есть экскурсия «${entry.data.title}».`,
+        breadcrumbs: [
+          ...excursionBreadcrumbs(entry.data),
+          { label: entry.data.title, href: canonical },
+          { label: 'Туры с этой экскурсией', href: catalogPath },
+        ],
+        hero: '/media/catalog/tury/hero-enhanced-20260930.webp',
+      });
+    }
     const { country } = excursionGeography(entry.data);
     const countryGroup = excursionCountries.get(country.id) ?? { country, entries: [] };
     countryGroup.entries.push(entry);
     excursionCountries.set(country.id, countryGroup);
-    // Include every visited place, once per excursion, without changing its canonical URL.
     for (const destinationId of excursionDestinationIds(entry.data)) {
       const destination = destinationRoute(destinationId);
       const destinationCountry = countryRoute(destination.countryId);
@@ -178,7 +235,7 @@ const Content = props.mode === 'detail' ? (await render(props.entry)).Content : 
 {props.mode === 'redirect' ? (
   <RedirectLayout to={props.to} title={props.title} />
 ) : props.mode === 'catalog' ? (
-  <EntityCatalogLayout kind={props.kind} entries={props.entries} title={props.title} description={props.description} canonical={props.canonical} breadcrumbs={props.breadcrumbs} hero={props.hero} />
+  <EntityCatalogLayout {...props} />
 ) : Content && props.kind === 'country' ? (
   <CountryLayout entry={props.entry}><Content /></CountryLayout>
 ) : Content && props.kind === 'destination' ? (

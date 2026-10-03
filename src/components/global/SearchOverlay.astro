@@ -171,6 +171,13 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       return 4;
     };
 
+    const allResultGroup = (data: any, query: string) => {
+      const titleMatches = normalize(data?.meta?.title ?? '').includes(normalize(query));
+      // Country priority applies only to literal title matches, not aliases or other fields.
+      if (!titleMatches) return 2;
+      return data?.meta?.entity_type === 'country' ? 0 : 1;
+    };
+
     const resultTourCount = (data: any) => {
       const count = Number(data?.meta?.tour_count ?? 0);
       return Number.isFinite(count) && count >= 0 ? count : 0;
@@ -220,14 +227,28 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
 
         let candidates = search.results;
         if (activeFilter === 'all' && candidates.length > MAX_SEARCH_RESULTS) {
-          // Keep matching countries inside the cap before loading result data.
-          const countrySearch = await pagefind.search(query, { filters: { entity_type: 'country' } });
+          // Select the same title-first groups before the cap without loading extra result data.
+          const availableFilters = await pagefind.filters();
           if (thisRequest !== requestId) return;
-          const countryIds = new Set(countrySearch.results.map((raw: any) => raw.id));
-          candidates = [
-            ...candidates.filter((raw: any) => countryIds.has(raw.id)),
-            ...candidates.filter((raw: any) => !countryIds.has(raw.id)),
-          ];
+          const q = normalize(query);
+          const matchingTitles = Object.keys(availableFilters.search_title ?? {})
+            .filter((title) => normalize(title).includes(q));
+
+          if (matchingTitles.length > 0) {
+            const titleFilter = { search_title: { any: matchingTitles } };
+            const [titleSearch, countryTitleSearch] = await Promise.all([
+              pagefind.search(query, { filters: titleFilter }),
+              pagefind.search(query, { filters: { ...titleFilter, entity_type: 'country' } }),
+            ]);
+            if (thisRequest !== requestId) return;
+            const titleIds = new Set(titleSearch.results.map((raw: any) => raw.id));
+            const countryTitleIds = new Set(countryTitleSearch.results.map((raw: any) => raw.id));
+            candidates = [
+              ...candidates.filter((raw: any) => countryTitleIds.has(raw.id)),
+              ...candidates.filter((raw: any) => titleIds.has(raw.id) && !countryTitleIds.has(raw.id)),
+              ...candidates.filter((raw: any) => !titleIds.has(raw.id)),
+            ];
+          }
         }
 
         const loaded = await Promise.all(
@@ -242,9 +263,8 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
 
         filtered.sort((a, b) => {
           if (activeFilter === 'all') {
-            const countryPriority = Number(b.data.meta?.entity_type === 'country') -
-              Number(a.data.meta?.entity_type === 'country');
-            if (countryPriority) return countryPriority;
+            const groupDifference = allResultGroup(a.data, query) - allResultGroup(b.data, query);
+            if (groupDifference) return groupDifference;
           }
 
           if (activeFilter === 'country' || activeFilter === 'destination' || activeFilter === 'excursion') {

@@ -9,16 +9,16 @@ destinationType: city
 summary: "Кобан окружен кофейными плантациями. Отсюда отправляются на экскурсии по природным местам Альта-Верапаса."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/guatemala-coban.jpg"
+  src: "/media/destinations/coban/hero-enhanced-20261003.webp"
   alt: "На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/p/7/p71176-Coban_Guatemala-Pension_Monja_Blanca.jpg"
+  - src: "/media/destinations/coban/gallery-1-enhanced-20261003.webp"
     alt: "На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/p/1/p159064-Coban-The_Cahabon_Plunges_Underground.jpg"
+  - src: "/media/destinations/coban/gallery-2-enhanced-20261003.webp"
     alt: "На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/l/a/large.jpg"
+  - src: "/media/destinations/coban/gallery-3-enhanced-20261003.webp"
     alt: "На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/p/h/phpThumb.jpg"
+  - src: "/media/destinations/coban/gallery-4-enhanced-20261003.webp"
     alt: "На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале"
 themes: []
 relatedDestinations: []

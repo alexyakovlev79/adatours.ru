@@ -1,0 +1,62 @@
+name: Verified tour corrections
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Export text workspace or apply reviewed tour corrections
+        required: true
+        default: export
+        type: choice
+        options: [export, apply]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verified-tour-corrections
+  cancel-in-progress: false
+
+jobs:
+  corrections:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 1
+      - name: Export text-only content workspace
+        if: inputs.operation == 'export'
+        run: |
+          mkdir -p /tmp/tour-workspace
+          git rev-parse HEAD > /tmp/tour-workspace/HEAD.txt
+          git archive --format=tar.gz -o /tmp/tour-workspace/workspace.tar.gz HEAD AGENTS.md package.json package-lock.json astro.config.mjs src scripts tests docs data .github/workflows
+      - uses: actions/upload-artifact@v6
+        if: inputs.operation == 'export'
+        with:
+          name: verified-tour-text-workspace
+          path: /tmp/tour-workspace/
+          retention-days: 2
+      - uses: actions/setup-node@v6
+        if: inputs.operation == 'apply'
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install repository dependencies
+        if: inputs.operation == 'apply'
+        run: npm ci
+      - name: Apply reviewed, hash-guarded changes
+        if: inputs.operation == 'apply'
+        run: node scripts/apply-tour-repairs.mjs data/tour-repairs/2026-10-03.json
+      - name: Commit exact prepared paths without overwriting concurrent work
+        if: inputs.operation == 'apply'
+        run: |
+          test -s /tmp/verified-tour-paths.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          while IFS= read -r path; do git add -- "$path"; done < /tmp/verified-tour-paths.txt
+          git diff --cached --check
+          if git diff --cached --quiet; then echo 'No changes to commit'; exit 0; fi
+          git commit -m 'content: correct manager-queue tours from verified 2027 programs'
+          git push origin HEAD:main
+          git rev-parse HEAD >> "$GITHUB_STEP_SUMMARY"

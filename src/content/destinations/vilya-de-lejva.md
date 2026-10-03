@@ -8,8 +8,8 @@ countryId: "country_colombia"
 destinationType: "city"
 summary: "Вилья-де-Лейва сохранила побеленные дома, мощеные улицы и терракотовые крыши колониальной эпохи. Вокруг главной площади находятся церкви, музеи и старинные здания."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/colombia/new-photos/villa-de-leyva-3.jpg","alt":"На фото: город Вилья-де-Лейва в Колумбии"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/v/i/villa-de-leyva-nathalie.jpg","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/v/i/villa-de-leyva2-nathalie.jpg","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/v/i/villadeleyva.jpg","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/a/n/antig12m.jpg","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_17.jpg","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"https://brasiltours.ru/image/catalog/category/c/o/colombia_villa-de-leyva-y--r-quira_2695_18.jpg","alt":"На фото: город Вилья-де-Лейва в Колумбии"}]
+hero: {"src":"/media/destinations/villa-de-leyva/hero-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"}
+gallery: [{"src":"/media/destinations/villa-de-leyva/gallery-1-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-2-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-3-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-4-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-5-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-6-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"}]
 themes: []
 relatedDestinations: []
 featuredTours: []

@@ -8,8 +8,8 @@ countryId: "country_colombia"
 destinationType: "city"
 summary: "Кали известен колониальной архитектурой, музеями и танцевальными залами сальсы. Среди достопримечательностей города есть старинные церкви и Башня Кали."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/colombia/new-photos/cali-2.jpg","alt":"На фото: город Кали, Колумбия"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17161_49_1.jpg","alt":"На фото: город Кали, Колумбия"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17161_52_1.jpg","alt":"На фото: город Кали, Колумбия"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_15.jpg","alt":"На фото: город Кали, Колумбия"},{"src":"https://brasiltours.ru/image/catalog/category/c/a/cartagena-colombia_1.jpg","alt":"На фото: город Кали, Колумбия"},{"src":"https://brasiltours.ru/image/catalog/category/f/t/ftdelgado04b_1.jpg","alt":"На фото: город Кали, Колумбия"}]
+hero: {"src":"/media/destinations/cali/hero-enhanced-20261003.webp","alt":"На фото: город Кали, Колумбия"}
+gallery: [{"src":"/media/destinations/cali/gallery-1-enhanced-20261003.webp","alt":"На фото: город Кали, Колумбия"},{"src":"/media/destinations/cali/gallery-2-enhanced-20261003.webp","alt":"На фото: город Кали, Колумбия"},{"src":"/media/destinations/cali/gallery-3-enhanced-20261003.webp","alt":"На фото: город Кали, Колумбия"},{"src":"https://brasiltours.ru/image/catalog/category/c/a/cartagena-colombia_1.jpg","alt":"На фото: город Кали, Колумбия"},{"src":"https://brasiltours.ru/image/catalog/category/f/t/ftdelgado04b_1.jpg","alt":"На фото: город Кали, Колумбия"}]
 themes: []
 relatedDestinations: []
 featuredTours: []

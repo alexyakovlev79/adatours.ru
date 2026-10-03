@@ -9,14 +9,14 @@ destinationType: city
 summary: "Из Санта Елена де Уайрен начинаются экскурсии к водопадам и тепуи Гран-Сабана. Город служит транзитным пунктом для путешествий на юг страны."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/venezuela/gran-sabana.jpg"
+  src: "/media/destinations/santa-elena-de-uairen/hero-enhanced-20261003.webp"
   alt: "На фото: водопады Гран Сабана Боливар в Венесуэле"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/1/8/18-106.jpg"
+  - src: "/media/destinations/santa-elena-de-uairen/gallery-1-enhanced-20261003.webp"
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/a/n/andredib_roraima03.jpg"
+  - src: "/media/destinations/santa-elena-de-uairen/gallery-2-enhanced-20261003.webp"
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-  - src: "https://brasiltours.ru/image/catalog/category/1/1/1175437846.jpg"
+  - src: "/media/destinations/santa-elena-de-uairen/gallery-3-enhanced-20261003.webp"
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"
   - src: "https://brasiltours.ru/image/catalog/category/s/a/santaelenadeuarien.jpg"
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"

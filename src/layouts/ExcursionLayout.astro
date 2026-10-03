@@ -69,7 +69,10 @@ for (const tour of relatedTours) {
 
 const relatedExcursions = excursionEntries
   .filter((item) => item.data.id !== d.id && relatedExcursionTourOverlap.has(item.data.id))
-  .sort(compareExcursionsByPopularity(excursionTourCounts))
+  .sort((a, b) =>
+    (relatedExcursionTourOverlap.get(b.data.id) ?? 0) - (relatedExcursionTourOverlap.get(a.data.id) ?? 0) ||
+    a.data.title.localeCompare(b.data.title, 'ru')
+  )
   .slice(0, 10);
 
 const destinationName =

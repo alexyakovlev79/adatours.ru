@@ -213,7 +213,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         if (thisRequest !== requestId) return;
 
         const loaded = await Promise.all(
-          search.results.slice(0, 30).map(async (raw: any, index: number) => ({
+          search.results.map(async (raw: any, index: number) => ({
             index,
             data: await raw.data(),
           }))
@@ -228,7 +228,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         });
 
         clearResults();
-        for (const item of filtered.slice(0, 24)) list.append(createResult(item.data));
+        for (const item of filtered) list.append(createResult(item.data));
 
         setStatus(
           filtered.length === 0

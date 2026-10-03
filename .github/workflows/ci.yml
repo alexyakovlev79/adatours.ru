@@ -36,7 +36,7 @@ jobs:
         run: |
           test -f dist/pagefind/pagefind.js
           grep -q 'data-pagefind-body' dist/brazil/index.html
-          grep -q 'data-pagefind-body' dist/brazil/rio-de-janeiro/index.html
+          grep -q 'data-pagefind-body' dist/brazil/place/rio-de-janeiro/index.html
           ! grep -q 'data-pagefind-body' dist/index.html
           indexed_pages=$(grep -Rsl 'data-pagefind-body' dist --include='*.html' | wc -l)
           test "$indexed_pages" -ge 10

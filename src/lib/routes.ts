@@ -97,6 +97,15 @@ export function destinationPath(destination: { slug: string; countryId: string }
   return `${destinationCountryPath(countryRoute(destination.countryId))}${segment(destination.slug)}/`;
 }
 
+/** Catalogues beneath the place page cannot collide with excursion product slugs. */
+export function tourDestinationPath(destination: { slug: string; countryId: string }): string {
+  return `${destinationPath(destination)}tour/`;
+}
+
+export function optionalTourDestinationPath(destination: { slug: string; countryId: string }): string {
+  return `${destinationPath(destination)}optional-tours/`;
+}
+
 export function tourCountryPath(country: { slug: string }): string {
   return `${countryPath(country)}tour/`;
 }

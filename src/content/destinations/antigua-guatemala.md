@@ -9,12 +9,12 @@ destinationType: city
 summary: "Мощеные улицы, колониальные здания и храм Святого Франциска в городе, окруженном 3 вулканами."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/antigua-de-guatemala.jpg"
+  src: "/media/countries/guatemala/featureBands-1-enhanced-20261002.webp"
   alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN3333_3.jpg"
+  - src: "/media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp"
     alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN790_1.jpg"
+  - src: "/media/destinations/antigua-guatemala/gallery-2-enhanced-20261003.webp"
     alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
   - src: "https://brasiltours.ru/image/catalog/category/a/n/antig12m_1.jpg"
     alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"

@@ -9,18 +9,18 @@ destinationType: city
 summary: "Город садов и парков с соборами, зоопарком, морской дамбой Сиуолл и каналами, построенными голландцами."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/gayana/2.jpg"
+  src: "/media/countries/guyana/featureBands-3-enhanced-20261002.webp"
   alt: "На фото: столица страны Гайана - город Джорджтаун"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN20144_2.jpg"
+  - src: "/media/destinations/georgetown/gallery-1-enhanced-20261003.webp"
     alt: "На фото: столица страны Гайана - город Джорджтаун"
-  - src: "https://brasiltours.ru/image/catalog/category/4/2/42004348_4faf78c16e_o.jpg"
+  - src: "/media/destinations/georgetown/gallery-2-enhanced-20261003.webp"
     alt: "На фото: столица страны Гайана - город Джорджтаун"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN20144_3.jpg"
+  - src: "/media/destinations/georgetown/gallery-3-enhanced-20261003.webp"
     alt: "На фото: столица страны Гайана - город Джорджтаун"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN20144_1.jpg"
+  - src: "/media/destinations/georgetown/gallery-4-enhanced-20261003.webp"
     alt: "На фото: столица страны Гайана - город Джорджтаун"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_4_17.jpg"
+  - src: "/media/destinations/georgetown/gallery-5-enhanced-20261003.webp"
     alt: "На фото: столица страны Гайана - город Джорджтаун"
 themes: []
 relatedDestinations: []

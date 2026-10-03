@@ -9,7 +9,7 @@ destinationType: national_park
 summary: "Национальный парк Гайаны с водопадом Кайетур, естественными пейзажами и разнообразной флорой и фауной."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/gayana/3.jpg"
+  src: "/media/countries/guyana/featureBands-1-enhanced-20261002.webp"
   alt: "На фото: Национальный парк Кайетур в Гайане"
 gallery: []
 themes: []

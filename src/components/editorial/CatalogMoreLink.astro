@@ -1,0 +1,94 @@
+---
+import { withBase } from '../../lib/paths';
+
+interface Props {
+  href: string;
+  label: string;
+}
+
+const { href, label } = Astro.props;
+---
+
+<div class="catalog-more">
+  <div class="container catalog-more__inner">
+    <a class="catalog-more__link" href={withBase(href)}>
+      <span>{label}</span>
+      <span class="catalog-more__arrow" aria-hidden="true">↗</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  .catalog-more {
+    padding-block: clamp(28px, 4vw, 52px) clamp(40px, 5vw, 72px);
+    background: var(--color-bg);
+  }
+
+  .catalog-more__inner {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .catalog-more__link {
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(20px, 3vw, 40px);
+    max-width: 100%;
+    min-height: 48px;
+    padding-block: 10px;
+    border-bottom: 1px solid var(--color-gold-deep, #c89a20);
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: clamp(1.15rem, 1.8vw, 1.65rem);
+    line-height: 1.25;
+    text-decoration: none;
+    transition: border-color 180ms ease;
+  }
+
+  .catalog-more__link > span:first-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .catalog-more__arrow {
+    flex-shrink: 0;
+    font-size: 1.3em;
+    line-height: 1;
+    transition: transform 180ms ease;
+  }
+
+  .catalog-more__link:hover {
+    border-color: var(--color-ink);
+  }
+
+  .catalog-more__link:hover .catalog-more__arrow {
+    transform: translate(2px, -2px);
+  }
+
+  .catalog-more__link:focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 7px;
+  }
+
+  @media (max-width: 820px) {
+    .catalog-more__inner {
+      justify-content: flex-start;
+    }
+
+    .catalog-more__link {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .catalog-more__link,
+    .catalog-more__arrow {
+      transition: none;
+    }
+
+    .catalog-more__link:hover .catalog-more__arrow {
+      transform: none;
+    }
+  }
+</style>

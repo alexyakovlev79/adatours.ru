@@ -7,10 +7,14 @@ import StoryPair from '../components/editorial/StoryPair.astro';
 import TripStats from '../components/tour/TripStats.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
+import CatalogMoreLink from '../components/editorial/CatalogMoreLink.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import { withBase } from '../lib/paths';
-import { countryPath, destinationBreadcrumbs as buildDestinationBreadcrumbs, destinationPath, excursionPath, tourPath } from '../lib/routes';
+import {
+  countryPath, destinationBreadcrumbs as buildDestinationBreadcrumbs, destinationPath, destinationRoute,
+  excursionDestinationPath, excursionPath, optionalTourDestinationPath, tourDestinationPath, tourPath,
+} from '../lib/routes';
 import { excursionHasDestination } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
@@ -18,6 +22,8 @@ import { tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-
 
 const { entry } = Astro.props;
 const d = entry.data;
+// Keep the complete sorted collections for relations and counts; cap only the previews.
+const previewLimits = { tours: 10, optionalTours: 5, excursions: 5 } as const;
 const [allTourEntries, countryEntries, excursionEntries, destinationEntries] = await Promise.all([
   getCollection('tours', ({ data }) =>
     data.locale === 'ru' &&
@@ -49,8 +55,7 @@ const compareTours = (a, b) =>
 const relatedTours = mainTourEntries.sort(compareTours);
 const optionalTours = optionalTourEntries.sort(compareTours);
 const relatedExcursions = excursionEntries
-  .sort(compareExcursionsByPopularity(excursionTourCounts))
-  .slice(0, 6);
+  .sort(compareExcursionsByPopularity(excursionTourCounts));
 const destinationTourOverlap = new Map<string, number>();
 
 for (const tour of mainTourEntries) {
@@ -169,7 +174,7 @@ const destinationSchema = {
   {relatedTours.length > 0 && (
     <>
       <EditorialStatement eyebrow="Маршруты" text={`Туры через ${d.name}`} />
-      {relatedTours.map((tour, index) => (
+      {relatedTours.slice(0, previewLimits.tours).map((tour, index) => (
         <DestinationBand
           eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
           title={tour.data.title}
@@ -182,13 +187,16 @@ const destinationSchema = {
           align={index % 2 === 1 ? 'right' : 'left'}
         />
       ))}
+      {relatedTours.length > previewLimits.tours && (
+        <CatalogMoreLink href={tourDestinationPath(d)} label={`${d.name}: все туры`} />
+      )}
     </>
   )}
 
   {optionalTours.length > 0 && (
     <>
       <EditorialStatement eyebrow="Можно добавить" text={`К этим турам можно добавить экскурсию в ${d.name}`} />
-      {optionalTours.map((tour, index) => (
+      {optionalTours.slice(0, previewLimits.optionalTours).map((tour, index) => (
         <DestinationBand
           eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
           title={tour.data.title}
@@ -201,13 +209,19 @@ const destinationSchema = {
           align={index % 2 === 1 ? 'right' : 'left'}
         />
       ))}
+      {optionalTours.length > previewLimits.optionalTours && (
+        <CatalogMoreLink
+          href={optionalTourDestinationPath(d)}
+          label="Все туры с возможностью посетить это место"
+        />
+      )}
     </>
   )}
 
   {relatedExcursions.length > 0 && (
     <>
       <EditorialStatement eyebrow="Экскурсии" text={`Экскурсии: ${d.name}`} />
-      {relatedExcursions.map((excursion, index) => (
+      {relatedExcursions.slice(0, previewLimits.excursions).map((excursion, index) => (
         <DestinationBand
           eyebrow={[excursion.data.duration ?? '', excursion.data.format ?? ''].filter(Boolean).join(' · ')}
           title={excursion.data.title}
@@ -220,6 +234,12 @@ const destinationSchema = {
           align={index % 2 === 1 ? 'right' : 'left'}
         />
       ))}
+      {relatedExcursions.length > previewLimits.excursions && (
+        <CatalogMoreLink
+          href={excursionDestinationPath(destinationRoute(d.id))}
+          label={`${d.name}: все экскурсии`}
+        />
+      )}
     </>
   )}
 

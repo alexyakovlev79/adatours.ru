@@ -161,7 +161,7 @@ const excursionSchema = {
     ctaHref={archived ? "/excursions/" : "/contacts/"}
   />
 
-  {stats.length > 0 && <TripStats stats={stats} />}
+  {stats.length > 0 && <TripStats stats={stats} variant="excursion" />}
 
   <section class="excursion-copy section--tight">
     <div class="container prose">

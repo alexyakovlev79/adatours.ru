@@ -3,11 +3,14 @@ interface Stat {
   value: string;
   label: string;
 }
-interface Props { stats: Stat[]; }
-const { stats } = Astro.props;
+interface Props {
+  stats: Stat[];
+  variant?: 'default' | 'excursion';
+}
+const { stats, variant = 'default' } = Astro.props;
 ---
 
-<section class="stats">
+<section class="stats" data-variant={variant}>
   <div class="stats__inner" data-count={stats.length} style={`--stats-count: ${stats.length}`}>
     {stats.map((stat) => (
       <div class:list={['stat', { 'stat--long': stat.value.length > 9 }]}>
@@ -246,6 +249,20 @@ const { stats } = Astro.props;
       margin-top: 0;
       text-align: right;
       white-space: nowrap;
+    }
+
+    .stats[data-variant="excursion"] .stats__inner[data-count="2"] .stat {
+      text-align: left;
+    }
+
+    .stats[data-variant="excursion"] .stats__inner[data-count="2"] .stat strong,
+    .stats[data-variant="excursion"] .stats__inner[data-count="2"] .stat--long strong {
+      font-size: clamp(1.35rem, 5.6vw, 1.65rem);
+      line-height: 1.08;
+      text-align: left;
+      white-space: normal;
+      overflow-wrap: normal;
+      hyphens: none;
     }
   }
 </style>

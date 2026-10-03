@@ -1,96 +1,48 @@
 name: Pull Request CI
+
 on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+
 permissions:
-  contents: write
+  contents: read
+
 jobs:
   build:
-    if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'feat/archive-catalog-2026-10-03'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-        with:
-          ref: feat/archive-catalog-2026-10-03
-          fetch-depth: 0
-      - uses: actions/setup-node@v5
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
         with:
           node-version: 24
-      - name: Preserve concurrent main changes
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git fetch origin main
-          git merge origin/main --no-edit
-      - name: Apply reviewed archive changes
-        shell: bash
-        run: |
-          if [ -f .archive-inputs/part-0 ]; then
-          python3 - <<'PY'
-          import pathlib,lzma,json,hashlib,subprocess,shutil,re
-          p=pathlib.Path('.archive-inputs')
-          raw=lzma.decompress(b''.join(f.read_bytes() for f in sorted(p.glob('part-*'))))
-          assert hashlib.sha256(raw).hexdigest()=='0ff9cc420b6702d5bcb62901796d41a1c7051b5cfefd0f009b01a1ee5af81f39'
-          data=json.loads(raw)
-          patch=''.join(b for b in re.split(r'(?=^diff --git )',data['patch'],flags=re.M) if not b.startswith('diff --git a/src/pages/[...path].astro '))
-          subprocess.run(['git','apply','--3way','--index','-'],input=patch,text=True,check=True)
-          target=pathlib.Path('src/pages/[...path].astro'); s=target.read_text()
-          assert 'archive.mjs' not in s
-          s=s.replace('---\n','---\nimport { isActiveEntity, isArchivedEntity } from \'../lib/archive.mjs\';\n',1)
-          s=s.replace('const [countries, destinations, tours, excursions]','const [countries, destinations, allTours, allExcursions]')
-          s=s.replace("!['draft', 'archived'].includes(data.status)",'isActiveEntity(data)')
-          for coll in ['tours','excursions']:
-              old="getCollection('"+coll+"', ({ data }) => data.locale === 'ru' && isActiveEntity(data))"
-              assert s.count(old)==1
-              s=s.replace(old,"getCollection('"+coll+"', ({ data }) => data.locale === 'ru' && (data.status !== 'draft' || isArchivedEntity(data)))")
-          s=s.replace('  const excursionTourCounts =','  const tours = allTours.filter(isActiveEntity);\n  const excursions = allExcursions.filter(isActiveEntity);\n  const excursionTourCounts =',1)
-          for old,new in [('for (const entry of tours) {','for (const entry of allTours) {'),('for (const entry of excursions) {','for (const entry of allExcursions) {')]:
-              assert s.count(old)==1; s=s.replace(old,new)
-          old='    const { country } = excursionGeography(entry.data);'
-          assert s.count(old)==1
-          s=s.replace(old,'    if (isArchivedEntity(entry)) continue; // Keep page and aliases, exclude catalog membership.\n'+old)
-          target.write_text(s)
-          for name,text in data['files'].items():
-              target=pathlib.Path(name)
-              assert not target.is_absolute() and '..' not in target.parts and target.parts[0] in ['src','scripts','docs','data','tests']
-              target.parent.mkdir(parents=True,exist_ok=True)
-              target.write_text(text,encoding='utf-8')
-          shutil.rmtree(p)
-          PY
-          fi
+
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-      - name: Synchronize lifecycle and commit
-        run: |
-          node scripts/sync-archives.mjs --apply
-          git add AGENTS.md astro.config.mjs data docs scripts src tests
-          git add -u -- .archive-inputs || true
-          if ! git diff --cached --quiet; then
-            git commit -m 'Implement reversible archives and apply reviewed catalog decisions'
-            git push origin HEAD:feat/archive-catalog-2026-10-03
-          fi
+
       - name: Lifecycle and unit tests
         run: |
           node scripts/sync-archives.mjs
           node --test tests/*.test.mjs
+
       - name: Build Astro and Pagefind
         run: npm run build
-      - name: Verify archive pages, links, sitemap and photo queue
+
+      - name: Search index smoke checks
+        shell: bash
+        run: |
+          test -f dist/pagefind/pagefind.js
+          grep -q 'data-pagefind-body' dist/brazil/index.html
+          grep -q 'data-pagefind-body' dist/brazil/rio-de-janeiro/index.html
+          ! grep -q 'data-pagefind-body' dist/index.html
+          indexed_pages=$(grep -Rsl 'data-pagefind-body' dist --include='*.html' | wc -l)
+          test "$indexed_pages" -ge 10
+
+      - name: Verify archives remain accessible and excluded from public collections
         run: node scripts/verify-archive-output.mjs
+
       - name: Verify canonical routing
         run: node scripts/verify-routing-output.mjs
-      - name: Preserve verification inputs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: archive-verification-inputs
-          retention-days: 3
-          path: |
-            AGENTS.md
-            astro.config.mjs
-            data/
-            docs/
-            scripts/
-            src/
-            tests/

@@ -1,6 +1,11 @@
 name: Verified tour corrections
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/verified-tour-repairs.yml
+      - data/tour-repairs/2026-10-03.json
   workflow_dispatch:
     inputs:
       operation:
@@ -12,6 +17,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: verified-tour-corrections
@@ -25,31 +31,41 @@ jobs:
         with:
           ref: main
           fetch-depth: 1
+      - name: Select guarded operation
+        id: operation
+        env:
+          REQUESTED_OPERATION: ${{ inputs.operation }}
+        run: |
+          operation="${REQUESTED_OPERATION:-export}"
+          if [ -z "$REQUESTED_OPERATION" ] && [ -f data/tour-repairs/2026-10-03.json ]; then operation=apply; fi
+          echo "operation=$operation" >> "$GITHUB_OUTPUT"
       - name: Export text-only content workspace
-        if: inputs.operation == 'export'
+        if: steps.operation.outputs.operation == 'export'
         run: |
           mkdir -p /tmp/tour-workspace
           git rev-parse HEAD > /tmp/tour-workspace/HEAD.txt
           git archive --format=tar.gz -o /tmp/tour-workspace/workspace.tar.gz HEAD AGENTS.md package.json package-lock.json astro.config.mjs src scripts tests docs data .github/workflows
       - uses: actions/upload-artifact@v6
-        if: inputs.operation == 'export'
+        if: steps.operation.outputs.operation == 'export'
         with:
           name: verified-tour-text-workspace
           path: /tmp/tour-workspace/
           retention-days: 2
       - uses: actions/setup-node@v6
-        if: inputs.operation == 'apply'
+        if: steps.operation.outputs.operation == 'apply'
         with:
           node-version: 24
           cache: npm
       - name: Install repository dependencies
-        if: inputs.operation == 'apply'
+        if: steps.operation.outputs.operation == 'apply'
         run: npm ci
       - name: Apply reviewed, hash-guarded changes
-        if: inputs.operation == 'apply'
+        if: steps.operation.outputs.operation == 'apply'
         run: node scripts/apply-tour-repairs.mjs data/tour-repairs/2026-10-03.json
       - name: Commit exact prepared paths without overwriting concurrent work
-        if: inputs.operation == 'apply'
+        if: steps.operation.outputs.operation == 'apply'
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           test -s /tmp/verified-tour-paths.txt
           git config user.name 'github-actions[bot]'
@@ -60,3 +76,4 @@ jobs:
           git commit -m 'content: correct manager-queue tours from verified 2027 programs'
           git push origin HEAD:main
           git rev-parse HEAD >> "$GITHUB_STEP_SUMMARY"
+          gh workflow run deploy.yml --ref main

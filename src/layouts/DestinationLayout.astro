@@ -42,10 +42,13 @@ const [allTourEntries, countryEntries, excursionEntries, destinationEntries] = a
   ),
 ]);
 
-const mainTourEntries = allTourEntries.filter((item) =>
+const allRelatedTourEntries = allTourEntries.filter((item) =>
+  item.data.destinations.includes(d.id)
+);
+const mainTourEntries = allRelatedTourEntries.filter((item) =>
   tourHasMainDestination(item.data, d.id)
 );
-const optionalTourEntries = allTourEntries.filter((item) =>
+const optionalTourEntries = allRelatedTourEntries.filter((item) =>
   tourHasOptionalDestination(item.data, d.id)
 );
 const excursionTourCounts = buildExcursionTourCounts(allTourEntries);
@@ -59,7 +62,7 @@ const relatedExcursions = excursionEntries
   .sort(compareExcursionsByPopularity(excursionTourCounts));
 const destinationTourOverlap = new Map<string, number>();
 
-for (const tour of mainTourEntries) {
+for (const tour of allRelatedTourEntries) {
   const uniqueDestinationIds = new Set(
     tour.data.destinations.filter((destinationId) => destinationId !== d.id)
   );

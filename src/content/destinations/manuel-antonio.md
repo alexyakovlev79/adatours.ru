@@ -8,8 +8,8 @@ countryId: "country_costa_rica"
 destinationType: "national_park"
 summary: "Мануэль Антонио объединяет пляжный курорт и национальный парк на тихоокеанском побережье Коста-Рики. Здесь можно гулять среди джунглей и знакомиться с подводным миром."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/costa-rica/8.jpg","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22310_8.jpg","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22911_2.jpg","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/fish.jpg","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/a/v/avsmanuel.jpg","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22310_12.jpg","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_1.jpg","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"}]
+hero: {"src":"/media/countries/costa-rica/featureBands-3-enhanced-20261002.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"}
+gallery: [{"src":"/media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-3-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-4-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-5-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-6-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"}]
 themes: []
 relatedDestinations: []
 featuredTours: []

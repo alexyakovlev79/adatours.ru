@@ -28,14 +28,13 @@ jobs:
         run: |
           if [ -f .archive-inputs/part-0 ]; then
           python3 - <<'PY'
-          import pathlib, lzma, json, hashlib, subprocess, shutil
+          import pathlib,lzma,json,hashlib,subprocess,shutil
           p=pathlib.Path('.archive-inputs')
           raw=lzma.decompress(b''.join(f.read_bytes() for f in sorted(p.glob('part-*'))))
-          assert hashlib.sha256(raw).hexdigest() == '0ff9cc420b6702d5bcb62901796d41a1c7051b5cfefd0f009b01a1ee5af81f39'
+          assert hashlib.sha256(raw).hexdigest()=='0ff9cc420b6702d5bcb62901796d41a1c7051b5cfefd0f009b01a1ee5af81f39'
           data=json.loads(raw)
-          subprocess.run(['git','apply','--check','-'],input=data['patch'],text=True,check=True)
-          subprocess.run(['git','apply','-'],input=data['patch'],text=True,check=True)
-          for name, text in data['files'].items():
+          subprocess.run(['git','apply','--3way','--index','-'],input=data['patch'],text=True,check=True)
+          for name,text in data['files'].items():
               target=pathlib.Path(name)
               assert not target.is_absolute() and '..' not in target.parts and target.parts[0] in ['src','scripts','docs','data','tests']
               target.parent.mkdir(parents=True,exist_ok=True)
@@ -45,26 +44,9 @@ jobs:
           fi
       - name: Install dependencies
         run: npm install --no-audit --no-fund
-      - name: Synchronize lifecycle and preserve audit report
-        shell: bash
+      - name: Synchronize lifecycle and commit
         run: |
           node scripts/sync-archives.mjs --apply
-          python3 - <<'PY'
-          import json,pathlib,collections
-          m=json.loads(pathlib.Path('data/catalog-archive.json').read_text())
-          entries=m['entries']; byid={f.stem:json.loads(f.read_text()) for f in pathlib.Path('data/source-index/entries').glob('*.json')}
-          lines=['# Архив туров и экскурсий — 3 октября 2026','', 'Проверены 342 тура (315 опубликованных и 27 в планах) и 188 экскурсий. Архивированы 44 тура и 1 экскурсия: 18 дублей и 27 программ с явно прошедшими датами. 39 существующих страниц сохраняются без 404; 6 записей из планов не создают пустых страниц.', '', '## Правила', '', 'Архивные страницы открываются по прежним адресам с `noindex, nofollow`. Они исключены из sitemap, поиска, публичных блоков, подсчётов связей и массовой фотоочереди. Тексты, изображения, стабильные ID и история не удаляются.', '', 'Сходство названий и разница цены сами по себе не определяют дубли. Сравнивались число дней, маршрут, программа, услуги, фотографии и подробность условий. Будущие даты сохранены; исторические годы в описании достопримечательностей и год в имени файла не являются основанием для архива.', '', '## Архивированные объекты', '']
-          for i,a in enumerate(entries,1):
-              lines += [f"### {i}. {a['name']}", '', f"- ID: `{a['id']}`", f"- Архивная страница: {a['url']}" if a['hadPage'] else f"- Запись из планов, страница не создавалась: `{a['id']}`", f"- Основание: {a['evidence']}"]
-              if a.get('duplicateOf'):
-                  k=byid[a['duplicateOf']]; lines += [f"- Оставлена: {k.get('name',k.get('title',k['id']))} — {k['url']} (`{k['id']}`)"]
-              lines += ['', f"Источник: {a['sourceUrl']}", '']
-          lines += ['## Сохранены / требуют редакционной проверки','']
-          for r in m['review']:
-              lines += ['### '+ ' / '.join(byid.get(i,{}).get('name',i) for i in r['ids']), '', r['note'], '', 'ID: '+', '.join('`'+i+'`' for i in r['ids']), '']
-          lines += ['## Контрольные значения', '', 'После отбора: 277 опубликованных активных туров; 21 активный тур остаётся в планах; 187 активных экскурсий. Явно прошедшие даты у самостоятельных экскурсий не выявлены.', '', 'Подробные причины, прежние статусы, исходные URL, метрики сравнения и контрольные суммы текстов: `data/catalog-archive.json`. Проверки: `node --test tests/archive.test.mjs`, `node scripts/sync-archives.mjs`, `node scripts/verify-archive-output.mjs`.']
-          out=pathlib.Path('docs/reports/archive-audit-2026-10-03.md'); out.parent.mkdir(exist_ok=True); out.write_text('\n'.join(lines)+'\n',encoding='utf-8')
-          PY
           git add AGENTS.md astro.config.mjs data docs scripts src tests
           git add -u -- .archive-inputs || true
           if ! git diff --cached --quiet; then

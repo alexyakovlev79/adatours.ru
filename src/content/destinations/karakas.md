@@ -20,13 +20,13 @@ gallery:
   alt: 'На фото: столица Венесуэлы, город Каракас'
 - src: /media/destinations/caracas/gallery-4-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN18867_30.jpg
+- src: /media/destinations/caracas/gallery-5-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN18866_46.jpg
+- src: /media/destinations/caracas/gallery-6-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN18867_29.jpg
+- src: /media/destinations/caracas/gallery-7-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN19760_21.jpg
+- src: /media/destinations/caracas/gallery-8-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
 themes: []
 relatedDestinations: []

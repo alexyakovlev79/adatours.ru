@@ -9,18 +9,18 @@ destinationType: natural_area
 summary: Равнины Лос Льяноса занимают обширную саванну Венесуэлы. Здесь можно наблюдать анаконд, кайманов, речных дельфинов, капибар и многочисленных птиц.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/los-llanos.jpg
+  src: /media/destinations/los-llanos/hero-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN11_18.jpg
+- src: /media/destinations/los-llanos/gallery-1-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN11_78.jpg
+- src: /media/destinations/los-llanos/gallery-2-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN10401_9.jpg
+- src: /media/destinations/los-llanos/gallery-3-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN10401_2.jpg
+- src: /media/destinations/los-llanos/gallery-4-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN19760_36.jpg
+- src: /media/destinations/los-llanos/gallery-5-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
 - src: https://brasiltours.ru/image/catalog/category/B/N/BN10401_4.jpg
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'

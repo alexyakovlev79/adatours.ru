@@ -9,20 +9,20 @@ destinationType: city
 summary: "Торговый городок в 120 км от столицы Гватемалы. По четвергам и воскресеньям здесь работает рынок «Чичи» с ремесленными изделиями и сувенирами."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/guatemala/chichicastenango.jpg"
+  src: "/media/destinations/chichicastenango/hero-enhanced-20261003.webp"
   alt: "На фото: рынок в городе Чичикастенанго в Гватемале"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN17503_25.jpg"
+  - src: "/media/destinations/chichicastenango/gallery-1-enhanced-20261003.webp"
     alt: "На фото: рынок в городе Чичикастенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN2403_21.jpg"
+  - src: "/media/destinations/chichicastenango/gallery-2-enhanced-20261003.webp"
     alt: "На фото: рынок в городе Чичикастенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/C/h/Chichicastenango_masks.jpg"
+  - src: "/media/destinations/chichicastenango/gallery-3-enhanced-20261003.webp"
     alt: "На фото: рынок в городе Чичикастенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/v/e/vendedora_de_flores_chichicastenango.jpg"
+  - src: "/media/destinations/chichicastenango/gallery-4-enhanced-20261003.webp"
     alt: "На фото: рынок в городе Чичикастенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN3552_5.jpg"
+  - src: "/media/destinations/chichicastenango/gallery-5-enhanced-20261003.webp"
     alt: "На фото: рынок в городе Чичикастенанго в Гватемале"
-  - src: "https://brasiltours.ru/image/catalog/category/g/u/guatemala_chichicastenango1.jpg"
+  - src: "/media/destinations/chichicastenango/gallery-6-enhanced-20261003.webp"
     alt: "На фото: в городе Чичикастенанго в Гватемале"
 themes: []
 relatedDestinations: []
@@ -46,3 +46,4 @@ updatedAt: "2026-10-02"
 ### Рынок «Чичи» ждет своих туристов!
 
 «Чичи», как местные называют самый большой в стране, а по некоторым данным и во всей Центральной Америке рынок, работает два дня в неделю: по четвергам и воскресеньям. Здесь продают национальную одежду, амулеты, ритуальные маски майя, платки, шерстяные пледы и покрывала, различные сувениры. Все очень яркое, необычное. Прекрасный климат делают его посещение очень приятным событием, а несколько старинных церквей являются его визитной карточкой.
+

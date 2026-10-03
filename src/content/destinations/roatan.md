@@ -9,18 +9,18 @@ destinationType: island
 summary: "Остров у северного побережья Гондураса с пляжами и рифовой системой. Здесь занимаются дайвингом, сноркеллингом и отправляются на прогулки на каяках."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/gonduras/angello-pro-obdmqhuiisu-unsplash.jpg"
+  src: "/media/countries/honduras/featureBands-2-enhanced-20261002.webp"
   alt: "На фото: остров Роатан в Гондурасе"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN9410_2.jpg"
+  - src: "/media/destinations/roatan/gallery-1-enhanced-20261003.webp"
     alt: "На фото: остров Роатан в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/s/e/seahorse-1.jpg"
+  - src: "/media/destinations/roatan/gallery-2-enhanced-20261003.webp"
     alt: "На фото: остров Роатан в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN9423_1.jpg"
+  - src: "/media/destinations/roatan/gallery-3-enhanced-20261003.webp"
     alt: "На фото: остров Роатан в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/7/3/732766-Sunset_from_Roatan-Isla_de_Roatan.jpg"
+  - src: "/media/destinations/roatan/gallery-4-enhanced-20261003.webp"
     alt: "На фото: остров Роатан в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/r/o/roatan_dock__2__m3l1.jpg"
+  - src: "/media/destinations/roatan/gallery-5-enhanced-20261003.webp"
     alt: "На фото: остров Роатан в Гондурасе"
 themes: []
 relatedDestinations: []
@@ -42,3 +42,4 @@ updatedAt: "2026-10-02"
 ### Чем заняться на острове Роатан?
 
 Дайвинг, сноркеллинг, прогулки на каяках здесь поистине незабываемы из-за богатства подводного мира. Экскурсии в парк бабочек, на ферму змей и игуан, в сады Карамбола пропитаны духом романтики и удивительных открытий.Особенно восхищает городок Оак-Ридж, как и Венеция, расположенный на воде, но отличающийся роскошным мангровым туннелем, сомкнувшим густые ветви над одним из каналов.
+

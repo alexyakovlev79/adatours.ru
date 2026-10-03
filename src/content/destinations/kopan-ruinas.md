@@ -9,20 +9,20 @@ destinationType: city
 summary: "Копан известен резными каменными скульптурами, пирамидами и храмами майя. В городе есть небольшие улицы, кафе и дома среди зелени."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/gonduras/5.jpg"
+  src: "/media/countries/honduras/featureBands-1-enhanced-20261002.webp"
   alt: "На фото: руины Копана в Гондурасе"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN3165_7.jpg"
+  - src: "/media/destinations/copan-ruinas/gallery-1-enhanced-20261003.webp"
     alt: "На фото: руины Копана в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/1/4/144239145_da56212022.jpg"
+  - src: "/media/destinations/copan-ruinas/gallery-2-enhanced-20261003.webp"
     alt: "На фото: руины Копана в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN18764_8.jpg"
+  - src: "/media/destinations/copan-ruinas/gallery-3-enhanced-20261003.webp"
     alt: "На фото: руины Копана в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/p/3/p347415-Copan_Ruinas-Bring_a_Map.jpg"
+  - src: "/media/destinations/copan-ruinas/gallery-4-enhanced-20261003.webp"
     alt: "На фото: город Копан в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN3165_1.jpg"
+  - src: "/media/destinations/copan-ruinas/gallery-5-enhanced-20261003.webp"
     alt: "На фото: руины Копана в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/h/o/honduras_copan.jpg"
+  - src: "/media/destinations/copan-ruinas/gallery-6-enhanced-20261003.webp"
     alt: "На фото: руины Копана в Гондурасе"
 themes: []
 relatedDestinations: []
@@ -46,3 +46,4 @@ updatedAt: "2026-10-02"
 ### Что можно увидеть в Копане
 
 Cейчас - это очаровательное местечко среди ярко-зеленых гор. Маленькие улочки с уютными кафе и барами, домики, увитые зеленью, дружелюбные люди, свежий горный воздух. Развалины были обнаружены в 1570 году. В окрестностях можно посетить несколько туристических достопримечательностей. Это Археологический парк и руины города Quirigua, Санта-Ана, Озеро Лаго-де-Исабаль.
+

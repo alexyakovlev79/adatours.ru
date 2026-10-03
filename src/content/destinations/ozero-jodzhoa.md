@@ -9,12 +9,12 @@ destinationType: natural_area
 summary: "Озеро вулканического происхождения между Тегусигальпой и Сан-Педро-Сулой, с птицами, прибрежными ресторанами и национальными парками."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/gonduras/6.jpg"
+  src: "/media/countries/honduras/featureBands-3-enhanced-20261002.webp"
   alt: "На фото: водопады на озере Йоджоа в Гондурасе"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_53_4.jpg"
+  - src: "/media/destinations/lake-yojoa/gallery-1-enhanced-20261003.webp"
     alt: "На фото: на озере Йоджоа в Гондурасе"
-  - src: "https://brasiltours.ru/image/catalog/category/l/a/lago_de_yojoaA.jpg"
+  - src: "/media/destinations/lake-yojoa/gallery-2-enhanced-20261003.webp"
     alt: "На фото: на озере Йоджоа в Гондурасе"
 themes: []
 relatedDestinations: []
@@ -36,3 +36,4 @@ updatedAt: "2026-10-02"
 ### Озеро Йоджоа - отличное место отдыха!
 
 Озеро расположено на трассе, соединяющей два крупнейших городах Гондураса, Тегусигальпа и Сан-Педро-Сула. Поэтому служит местом для отдыха при переезде из одного города в другой, здесь можно насладиться видом озера и отведать свежей жареной рыбы в ресторанах, расположенных на его берегах. Можно легко добраться до потрясающего своим каскадом водопада Пульхапанзак. На западном и восточном берегах озера расположены Национальные Парки с великолепной флорой и фауной.
+

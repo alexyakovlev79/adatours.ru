@@ -44,7 +44,7 @@ jobs:
         run: |
           mkdir -p /tmp/tour-workspace
           git rev-parse HEAD > /tmp/tour-workspace/HEAD.txt
-          git archive --format=tar.gz -o /tmp/tour-workspace/workspace.tar.gz HEAD AGENTS.md package.json package-lock.json astro.config.mjs src scripts tests docs data .github/workflows
+          git archive --format=tar.gz -o /tmp/tour-workspace/workspace.tar.gz HEAD AGENTS.md package.json src scripts tests docs data .github/workflows
       - uses: actions/upload-artifact@v6
         if: steps.operation.outputs.operation == 'export'
         with:
@@ -55,10 +55,9 @@ jobs:
         if: steps.operation.outputs.operation == 'apply'
         with:
           node-version: 24
-          cache: npm
       - name: Install repository dependencies
         if: steps.operation.outputs.operation == 'apply'
-        run: npm ci
+        run: npm install --no-package-lock
       - name: Apply reviewed, hash-guarded changes
         if: steps.operation.outputs.operation == 'apply'
         run: node scripts/apply-tour-repairs.mjs data/tour-repairs/2026-10-03.json

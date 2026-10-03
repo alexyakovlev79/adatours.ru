@@ -22,11 +22,11 @@ gallery:
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
 - src: /media/destinations/los-llanos/gallery-5-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN10401_4.jpg
+- src: /media/destinations/los-llanos/gallery-6-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN19760_6.jpg
+- src: /media/destinations/los-llanos/gallery-7-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN19760_51.jpg
+- src: /media/destinations/los-llanos/gallery-8-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
 themes: []
 relatedDestinations: []

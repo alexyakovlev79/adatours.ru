@@ -9,22 +9,22 @@ destinationType: island
 summary: Лос Рокес — архипелаг из 346 крупных и мелких островов. Его коралловый риф охраняется национальным парком; путешественников ждут подводное плавание и прогулки на лодках.
 searchAliases: []
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/11.jpg
+  src: /media/countries/venezuela/featureBands-2-enhanced-20261002.webp
   alt: 'На фото: архипелаг Лос Рокес в Венесуэле'
 gallery:
-- src: https://brasiltours.ru/image/catalog/category/2/3/2375990040_f951e509f1_o.jpg
+- src: /media/destinations/los-roques/gallery-1-enhanced-20261003.webp
   alt: ''
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN12_56.jpg
+- src: /media/destinations/los-roques/gallery-2-enhanced-20261003.webp
   alt: ''
-- src: https://brasiltours.ru/image/catalog/category/2/3/2322674160_5912022fd5_o.jpg
+- src: /media/destinations/los-roques/gallery-3-enhanced-20261003.webp
   alt: ''
-- src: https://brasiltours.ru/image/catalog/category/2/3/2375152515_6d6d91880f_o.jpg
+- src: /media/destinations/los-roques/gallery-4-enhanced-20261003.webp
   alt: ''
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN18866_8.jpg
+- src: /media/destinations/los-roques/gallery-5-enhanced-20261003.webp
   alt: ''
-- src: https://brasiltours.ru/image/catalog/category/B/N/BN18866_15.jpg
+- src: /media/destinations/los-roques/gallery-6-enhanced-20261003.webp
   alt: ''
-- src: https://brasiltours.ru/image/catalog/category/f/i/file_11_7.jpg
+- src: /media/destinations/los-roques/gallery-7-enhanced-20261003.webp
   alt: ''
 themes: []
 relatedDestinations: []

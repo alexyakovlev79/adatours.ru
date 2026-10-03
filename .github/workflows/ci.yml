@@ -28,12 +28,29 @@ jobs:
         run: |
           if [ -f .archive-inputs/part-0 ]; then
           python3 - <<'PY'
-          import pathlib,lzma,json,hashlib,subprocess,shutil
+          import pathlib,lzma,json,hashlib,subprocess,shutil,re
           p=pathlib.Path('.archive-inputs')
           raw=lzma.decompress(b''.join(f.read_bytes() for f in sorted(p.glob('part-*'))))
           assert hashlib.sha256(raw).hexdigest()=='0ff9cc420b6702d5bcb62901796d41a1c7051b5cfefd0f009b01a1ee5af81f39'
           data=json.loads(raw)
-          subprocess.run(['git','apply','--3way','--index','-'],input=data['patch'],text=True,check=True)
+          patch=''.join(b for b in re.split(r'(?=^diff --git )',data['patch'],flags=re.M) if not b.startswith('diff --git a/src/pages/[...path].astro '))
+          subprocess.run(['git','apply','--3way','--index','-'],input=patch,text=True,check=True)
+          target=pathlib.Path('src/pages/[...path].astro'); s=target.read_text()
+          assert 'archive.mjs' not in s
+          s=s.replace('---\n','---\nimport { isActiveEntity, isArchivedEntity } from \'../lib/archive.mjs\';\n',1)
+          s=s.replace('const [countries, destinations, tours, excursions]','const [countries, destinations, allTours, allExcursions]')
+          s=s.replace("!['draft', 'archived'].includes(data.status)",'isActiveEntity(data)')
+          for coll in ['tours','excursions']:
+              old="getCollection('"+coll+"', ({ data }) => data.locale === 'ru' && isActiveEntity(data))"
+              assert s.count(old)==1
+              s=s.replace(old,"getCollection('"+coll+"', ({ data }) => data.locale === 'ru' && (data.status !== 'draft' || isArchivedEntity(data)))")
+          s=s.replace('  const excursionTourCounts =','  const tours = allTours.filter(isActiveEntity);\n  const excursions = allExcursions.filter(isActiveEntity);\n  const excursionTourCounts =',1)
+          for old,new in [('for (const entry of tours) {','for (const entry of allTours) {'),('for (const entry of excursions) {','for (const entry of allExcursions) {')]:
+              assert s.count(old)==1; s=s.replace(old,new)
+          old='    const { country } = excursionGeography(entry.data);'
+          assert s.count(old)==1
+          s=s.replace(old,'    if (isArchivedEntity(entry)) continue; // Keep page and aliases, exclude catalog membership.\n'+old)
+          target.write_text(s)
           for name,text in data['files'].items():
               target=pathlib.Path(name)
               assert not target.is_absolute() and '..' not in target.parts and target.parts[0] in ['src','scripts','docs','data','tests']

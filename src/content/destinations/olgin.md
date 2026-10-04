@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Ольгин известен парками и площадями в тени деревьев. Рядом с городом находится парк Баиа де Наранхо, а на побережье можно отдыхать на пляжах с теплой океанской водой."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/cuba/holguin-2.jpg","alt":"На фото: город-курорт на море Ольгин на острове Куба"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/3/0/304163113_7ad01589b3_o.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/3/9/396063289_d6ebf81f47_b.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/4/4/446569826_1b47024c8a_o.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/3/9/396403564_845346e8b8_b.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/2/3/2353558030_752843a701_b.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/3/9/397182197_dad6770c78_b.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/5/7/571394909_1af391d27f_b.jpg","alt":""}]
+hero: {"src":"/media/destinations/holguin/hero-enhanced-20261004.webp","alt":"На фото: город-курорт на море Ольгин на острове Куба"}
+gallery: [{"src":"/media/destinations/holguin/gallery-1-enhanced-20261004.webp","alt":""},{"src":"/media/destinations/holguin/gallery-2-enhanced-20261004.webp","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/4/4/446569826_1b47024c8a_o.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/3/9/396403564_845346e8b8_b.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/2/3/2353558030_752843a701_b.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/3/9/397182197_dad6770c78_b.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/5/7/571394909_1af391d27f_b.jpg","alt":""}]
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -30,3 +30,4 @@ updatedAt: "2026-10-02"
 ## Ольгин - пляжный отдых на Кубе!
 
 В музее Coppo de Maita — раскопки индейского поселения. Ольгин является родиной 30% эндемичных кубинских видов растений, а также более 1 000 видов животных, особенно птиц и бабочек. В городе много пляжей c великолепным песком и теплой океанской водой.
+

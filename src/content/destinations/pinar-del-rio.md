@@ -10,7 +10,7 @@ summary: "Пинар-дель-Рио находится в табачном ра
 searchAliases: []
 themes: []
 hero: {"src":/media/countries/cuba/featureBands-2-enhanced-20261002.webp,"alt":"На фото: Провинция Пинар-дель-Рио и Долина Виньялес на острове Куба"}
-gallery: [{"src":"/media/destinations/pinar-del-rio/gallery-1-enhanced-20261004.webp","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"/media/destinations/pinar-del-rio/gallery-2-enhanced-20261004.webp","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"/media/destinations/pinar-del-rio/gallery-3-enhanced-20261004.webp","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/3/1/314096563_1d27d7fbf1_b.jpg","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/0/2061488392_2c299503ff_b.jpg","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"}]
+gallery: [{"src":"/media/destinations/pinar-del-rio/gallery-1-enhanced-20261004.webp","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"/media/destinations/pinar-del-rio/gallery-2-enhanced-20261004.webp","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"/media/destinations/pinar-del-rio/gallery-3-enhanced-20261004.webp","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"/media/destinations/pinar-del-rio/gallery-4-enhanced-20261004.webp","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"/media/destinations/pinar-del-rio/gallery-5-enhanced-20261004.webp","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"}]
 facts: []
 featureBands: []
 relatedDestinations: []

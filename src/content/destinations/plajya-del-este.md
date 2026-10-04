@@ -9,8 +9,8 @@ destinationType: "resort"
 summary: "Пляжи к востоку от Гаваны тянутся от Бакуранао до Гуанабо. Здесь отдыхают на белом песке под кокосовыми пальмами, купаются в прозрачной воде и любуются коралловыми рифами."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/cuba/kajo-santa-mariya-kuba.jpg","alt":"на фото: пляж Плайя дель Эсте на острове Куба"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/D/S/DSCN4363.JPG","alt":"на фото: пляж Плайя дель Эсте на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/5/8/580685219_24cde0ea7c.jpg","alt":"на фото: пляж Плайя дель Эсте на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/4/6/464503411_1f711d8f1d_b.jpg","alt":"на фото: пляж Плайя дель Эсте на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/5/3/535032808_226cf7ee40.jpg","alt":"на фото: пляж Плайя дель Эсте на острове Куба"}]
+hero: {"src":"/media/destinations/playas-del-este/hero-enhanced-20261004.webp","alt":"на фото: пляж Плайя дель Эсте на острове Куба"}
+gallery: [{"src":"/media/destinations/playas-del-este/gallery-1-enhanced-20261004.webp","alt":"на фото: пляж Плайя дель Эсте на острове Куба"},{"src":"/media/destinations/playas-del-este/gallery-2-enhanced-20261004.webp","alt":"на фото: пляж Плайя дель Эсте на острове Куба"},{"src":"/media/destinations/playas-del-este/gallery-3-enhanced-20261004.webp","alt":"на фото: пляж Плайя дель Эсте на острове Куба"},{"src":"/media/destinations/playas-del-este/gallery-4-enhanced-20261004.webp","alt":"на фото: пляж Плайя дель Эсте на острове Куба"}]
 facts: []
 featureBands: []
 relatedDestinations: []

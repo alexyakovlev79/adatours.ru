@@ -9,8 +9,8 @@ destinationType: "resort"
 summary: "Плайя Эсмеральда находится в провинции Ольгин, рядом с бухтой Наранхо. Белый песок, морские рифы и прозрачная вода подходят для пляжного отдыха, погружений и водного спорта."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/cuba/caya-levico.jpg","alt":"На фото: пляж Эсмеральда на острове Куба"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/3/8/384.jpg","alt":"На фото: пляж Эсмеральда на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/t/h/the-beach-in-front-of.jpg","alt":"На фото: пляж Эсмеральда на острове Куба"}]
+hero: {"src":"/media/destinations/playa-esmeralda/hero-enhanced-20261004.webp","alt":"На фото: пляж Эсмеральда на острове Куба"}
+gallery: [{"src":"/media/destinations/playa-esmeralda/gallery-1-enhanced-20261004.webp","alt":"На фото: пляж Эсмеральда на острове Куба"},{"src":"/media/destinations/playa-esmeralda/gallery-2-enhanced-20261004.webp","alt":"На фото: пляж Эсмеральда на острове Куба"}]
 facts: []
 featureBands: []
 relatedDestinations: []

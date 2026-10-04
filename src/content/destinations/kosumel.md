@@ -9,8 +9,8 @@ destinationType: "island"
 summary: "Косумель находится к востоку от полуострова Юкатан. Остров известен коралловыми рифами и дайвингом; отели и дайвинг-клубы сосредоточены на его западном побережье."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/cozumel.jpg","alt":"На фото: остров Косумель в Мексике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN5170_51.jpg","alt":"На фото: остров Косумель в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN5170_26.jpg","alt":"На фото: остров Косумель в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN1568_3.jpg","alt":"На фото: остров Косумель в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN12209_1.jpg","alt":"На фото: остров Косумель в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN5170_53.jpg","alt":"На фото: остров Косумель в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN6739_31.jpg","alt":"На фото: остров Косумель в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19394_11.jpg","alt":"На фото: остров Косумель в Мексике"}]
+hero: {"src":"/media/destinations/cozumel/hero-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"}
+gallery: [{"src":"/media/destinations/cozumel/gallery-1-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-2-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-3-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-4-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-5-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-6-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19394_11.jpg","alt":"На фото: остров Косумель в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

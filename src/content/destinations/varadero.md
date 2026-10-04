@@ -9,7 +9,7 @@ destinationType: "resort"
 summary: "Варадеро находится на полуострове Икакос и известен песчаными пляжами. Здесь можно заниматься дайвингом, играть в гольф и посетить пещеру Амбросио."
 searchAliases: []
 hero: {"src":/media/countries/cuba/featureBands-3-enhanced-20261002.webp,"alt":"На фото: пляж Варадеро на острове Куба"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/V/a/Varadero1.jpg","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/1/8/1802059615_091b98860a_o.jpg","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/8/0/800px-Varadero_cuba.jpg","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/1/3/139553464_28193a7967_o.jpg","alt":"На фото: пляж Варадеро на острове Куба"}]
+gallery: [{"src":"/media/destinations/varadero/gallery-1-enhanced-20261004.webp","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"/media/destinations/varadero/gallery-2-enhanced-20261004.webp","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"/media/destinations/varadero/gallery-3-enhanced-20261004.webp","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"/media/destinations/varadero/gallery-4-enhanced-20261004.webp","alt":"На фото: пляж Варадеро на острове Куба"}]
 themes: []
 relatedDestinations: []
 featuredTours: []
@@ -26,4 +26,5 @@ updatedAt: "2026-10-02"
 Варадеро находится на полуострове Икакос, в 130 км к северу от Гаваны. Это 20 км махрового песчаного берега, теплая вода Атлантического океана и бесконечная вереница отелей.
 
 Это великолепные пляжи с белоснежным тончайшим песком и изумительно лазурной морской водой, с дайвинг-центрами. Пляжи Варадеро входят в тройку лучших пляжей мира. Сюда едут купаться и нежиться под солнышком, слушать ритмы сальсы и играть в гольф, тусоваться на дискотеках и потягивать ром. В окрестностях Варадеро находится пещера Амбросио с наскальными рисунками. На территории довольно большого озера находится дельфинарий.
+
 

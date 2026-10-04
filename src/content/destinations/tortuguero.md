@@ -8,8 +8,8 @@ countryId: "country_costa_rica"
 destinationType: "national_park"
 summary: "Тортугуэро, Земля черепах, охраняет места гнездования морских черепах. Во время прогулок на лодках по каналам можно увидеть тропических птиц, игуан и крокодилов."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/costa-rica/1.jpg","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/s/e/sea-turtles.jpg","alt":"На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/T/o/Tortuguero.jpg","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"},{"src":"https://brasiltours.ru/image/catalog/category/e/l/elements-travel-tortuguero01.jpg","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"}]
+hero: {"src":"/media/destinations/tortuguero/hero-enhanced-20261004.webp","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"}
+gallery: [{"src":"/media/destinations/tortuguero/gallery-1-enhanced-20261004.webp","alt":"На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике"},{"src":"/media/destinations/tortuguero/gallery-2-enhanced-20261004.webp","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"},{"src":"/media/destinations/tortuguero/gallery-3-enhanced-20261004.webp","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"}]
 themes: []
 relatedDestinations: []
 featuredTours: []

@@ -8,7 +8,7 @@ countryId: "country_costa_rica"
 destinationType: "national_park"
 summary: "Национальный парк Ринкон-де-ла-Вьеха находится на северо-западе Коста-Рики. Вулканические пейзажи, пешие и конные маршруты дополняют рафтинг и скалолазание."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/costa-rica/17.jpg","alt":"На фото: Ринкон-де-ла-Вьехо в Коста-Рике"}
+hero: {"src":"/media/destinations/rincon-de-la-vieja/hero-enhanced-20261004.webp","alt":"На фото: Ринкон-де-ла-Вьехо в Коста-Рике"}
 gallery: []
 themes: []
 relatedDestinations: []

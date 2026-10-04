@@ -8,8 +8,8 @@ countryId: "country_costa_rica"
 destinationType: "city"
 summary: "Пуэрто Лимон, центр афрокарибской культуры Коста-Рики, привлекает пляжами и карнавалом. В окрестностях можно заниматься серфингом, дайвингом и морской рыбалкой."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/costa-rica/14.jpg","alt":"На фото: пляж Лимон в Коста-Рике на Карибском море"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN1243_3.jpg","alt":"На фото: пляж Лимон в Коста-Рике на Карибском море"},{"src":"https://brasiltours.ru/image/catalog/category/i/c/icn138054.jpg","alt":"На фото: Лимон в Коста-Рике на Карибском море"},{"src":"https://brasiltours.ru/image/catalog/category/b/n/bn2031_11.jpg","alt":"На фото: Лимон в Коста-Рике на Карибском море"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN11553_31.jpg","alt":"На фото: Лимон в Коста-Рике на Карибском море"},{"src":"https://brasiltours.ru/image/catalog/category/P/u/PuertoLimonShoppingStreet-b74fd.jpg","alt":"На фото: Лимон в Коста-Рике на Карибском море"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN11553_33.jpg","alt":"На фото: Лимон в Коста-Рике на Карибском море"}]
+hero: {"src":"/media/destinations/puerto-limon/hero-enhanced-20261004.webp","alt":"На фото: пляж Лимон в Коста-Рике на Карибском море"}
+gallery: [{"src":"/media/destinations/puerto-limon/gallery-1-enhanced-20261004.webp","alt":"На фото: пляж Лимон в Коста-Рике на Карибском море"},{"src":"/media/destinations/puerto-limon/gallery-2-enhanced-20261004.webp","alt":"На фото: Лимон в Коста-Рике на Карибском море"},{"src":"/media/destinations/puerto-limon/gallery-3-enhanced-20261004.webp","alt":"На фото: Лимон в Коста-Рике на Карибском море"},{"src":"/media/destinations/puerto-limon/gallery-4-enhanced-20261004.webp","alt":"На фото: Лимон в Коста-Рике на Карибском море"},{"src":"/media/destinations/puerto-limon/gallery-5-enhanced-20261004.webp","alt":"На фото: Лимон в Коста-Рике на Карибском море"},{"src":"/media/destinations/puerto-limon/gallery-6-enhanced-20261004.webp","alt":"На фото: Лимон в Коста-Рике на Карибском море"}]
 themes: []
 relatedDestinations: []
 featuredTours: []

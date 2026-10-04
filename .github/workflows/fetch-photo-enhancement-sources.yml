@@ -1,7 +1,8 @@
 name: Fetch temporary photo enhancement sources
 
 on:
-  push:
+  pull_request:
+    branches: [main]
     paths:
       - '.github/workflows/fetch-photo-enhancement-sources.yml'
 
@@ -39,4 +40,4 @@ jobs:
           git add tmp/photo-enhancement-inputs/20261004-next10
           git diff --cached --quiet && exit 0
           git commit -m 'chore: stage exact source photos for next enhancement batch [skip ci]'
-          git push
+          git push origin HEAD:tmp/photo-sources-20261004-next10

@@ -1,0 +1,42 @@
+name: Fetch temporary photo enhancement sources
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fetch-photo-enhancement-sources.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download exact raw source photos
+        shell: bash
+        run: |
+          set -euo pipefail
+          dir='tmp/photo-enhancement-inputs/20261004-next10'
+          mkdir -p "$dir"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN2031_10.jpg' -o "$dir/san-jose-gallery-5.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN11553_60.jpg' -o "$dir/san-jose-gallery-6.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN17854_2.jpg' -o "$dir/san-jose-gallery-7.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN19310_1.jpg' -o "$dir/san-jose-gallery-8.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/costa-rica/1.jpg' -o "$dir/tortuguero-hero.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/s/e/sea-turtles.jpg' -o "$dir/tortuguero-gallery-1.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/T/o/Tortuguero.jpg' -o "$dir/tortuguero-gallery-2.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/e/l/elements-travel-tortuguero01.jpg' -o "$dir/tortuguero-gallery-3.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/costa-rica/3.jpg' -o "$dir/jaco-hero.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN6421_3_1.jpg' -o "$dir/jaco-gallery-1.jpg"
+          file "$dir"/*
+      - name: Commit temporary source files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tmp/photo-enhancement-inputs/20261004-next10
+          git diff --cached --quiet && exit 0
+          git commit -m 'chore: stage exact source photos for next enhancement batch [skip ci]'
+          git push

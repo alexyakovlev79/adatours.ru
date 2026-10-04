@@ -36,7 +36,7 @@ itinerary:
 
     Рио окружен зелеными холмами, заливами, островами и океаном. Это второй по величине город Бразилии и один из тех мегаполисов, где природа постоянно остается в поле зрения. Копакабана, Ипанема и Леблон тянутся вдоль побережья и живут с раннего утра до позднего вечера. Их легко узнать по черно-белой плитке набережных. На золотом песке играют в футбол и волейбол, вдоль океана гуляют, бегают и встречаются с друзьями. В пляжных кафе подают холодную кокосовую воду, свежие соки и другие напитки. Если хочется активности, в Рио доступны серфинг, дайвинг, рафтинг, теннис, гольф, дельтапланеризм и другие виды спорта. На пляжах часто выступают местные музыканты, поэтому знакомство с городом начинается еще до первой экскурсии.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Закатный вид на Рио'
 - day: 2
   title: 'Рио-де-Жанейро: Корковадо и Христос-Искупитель'
@@ -74,7 +74,7 @@ itinerary:
 
     Еще один яркий опыт - купание с розовыми речными дельфинами. Можно зайти в воду по пояс и кормить дельфинов рыбой с рук. После этого маршрут продолжается по Амазонии: вы снова увидите гигантские листья виктории-регии, побываете в местном сообществе и познакомитесь с тем, как здесь живут люди у большой реки. В местном сообществе можно увидеть животных, среди которых анаконда или ленивец, а затем попробовать ловить пираний прямо с лодки. После насыщенного дня вас доставят в амазонский лодж. Экскурсия проводится на лодках примерно по 10 человек.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Закатный вид на Рио'
   - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
     alt: 'На фото: Река Амазонка'
@@ -101,7 +101,7 @@ itinerary:
 
     Сальвадор часто называют африканской душой Бразилии. Здесь потомки африканцев особенно бережно сохранили культурные традиции, поэтому город звучит и пахнет иначе, чем Рио: барабанная музыка, капоэйра, специи, блюда на пальмовом масле денде, религиозные традиции Кандомбле и большие уличные праздники. Даже в обычный день можно увидеть круг капоэйры, попробовать акараже из фасоли и креветок или услышать барабаны на улицах исторического центра. Сальвадор известен и своим карнавалом, но афро-бразильская культура здесь заметна круглый год, далеко за пределами праздничных дат.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: 'На фото: Встреча туристов в Сальвадоре'
   - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
     alt: 'На фото: Река Амазонка'
@@ -116,7 +116,7 @@ itinerary:
 
     Вечером запланировано посещение дома Кандомбле. Вы услышите барабанный бой, увидите танцы и традиционную церемонию в честь Ориша, африканских божеств. Это религиозное событие, поэтому проведение зависит от календаря общины.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: 'На фото: Встреча туристов в Сальвадоре'
 - day: 8
   title: Сальвадор - Прайя-ду-Форте
@@ -127,7 +127,7 @@ itinerary:
     Сальвадора программа специально оставляет время без экскурсий. Можно провести его у океана и отдохнуть перед перелетом
     к водопадам Игуасу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: 'На фото: Встреча туристов в Сальвадоре'
 - day: 9
   title: Сальвадор - Фос-ду-Игуасу
@@ -142,9 +142,9 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: 'На фото: Встреча туристов в Сальвадоре'
 - excursionRef: excursion_source_rafain_shou
   places: []
@@ -157,7 +157,7 @@ itinerary:
 
     Особенно сильное впечатление дает контраст: выше водопадов река кажется спокойной, почти ленивой, а у края вода мгновенно превращается в белый кипящий поток. Вокруг водопадов лежит национальный парк с тропической флорой и фауной. Рельеф региона сформирован древними вулканическими процессами и смещениями земной коры.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -174,7 +174,7 @@ itinerary:
 
     Площадь Национального парка составляет около 55 500 гектаров. Помимо самих водопадов, здесь сохраняется характерная для региона флора и фауна, поэтому весь день проходит внутри большого природного пространства, а не только возле одной смотровой площадки.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'
 - day: 12
   title: Фос-ду-Игуасу - Рио-де-Жанейро
@@ -186,7 +186,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/rio-de-janeiro-aerial.png
     alt: 'На фото: Вид с высоты птичьего полёта над Рио-де-Жанейро'
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'
 - day: 13
   title: Рио-де-Жанейро
@@ -194,7 +194,7 @@ itinerary:
   - Рио-де-Жанейро
   text: После завтрака трансфер в аэропорт к международному рейсу домой.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Закатный вид на Рио'
 included:
 - проживание в отелях 4* с завтраком;
@@ -221,7 +221,7 @@ priceFrom: 4875
 currency: USD
 priceNote: $4875
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0035.jpg
+  src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
   alt: 'На фото: Водопады Игуасу'
 routeCountries:
 - country_brazil

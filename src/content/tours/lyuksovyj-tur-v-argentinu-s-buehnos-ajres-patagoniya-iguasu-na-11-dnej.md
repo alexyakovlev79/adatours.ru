@@ -433,7 +433,7 @@ itinerary:
       
       После основной программы можно заказать дополнительные активности.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash.jpg
+      - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
         alt: "Водопады Игуасу, Бразилия"
         intendedSlot: "itinerary:day-9"
   - excursionRef: excursion_source_makuko_safari

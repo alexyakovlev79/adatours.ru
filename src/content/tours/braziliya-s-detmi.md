@@ -42,7 +42,7 @@ itinerary:
 
     Рио хорошо ощущается именно с первых часов: шум улиц сменяется шумом океана, между домами появляются зеленые склоны, а пляжная жизнь идет параллельно обычной городской. В одной панораме здесь помещаются высотные здания, горы, лес и море.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Сахарная голова
@@ -57,7 +57,7 @@ itinerary:
 
     Для детей сама дорога наверх уже становится отдельным приключением. Кабинка идет над лесистым склоном, город постепенно раскрывается под ногами, а на верхней площадке можно долго рассматривать бухты, пляжи и горы, которые окружают Рио со всех сторон.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: Корковаду и озеро Родриго-де-Фрейтас
@@ -101,7 +101,7 @@ itinerary:
 
     Продолжительность полета: 8-9 минут.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_botanical_garden
   places: []
@@ -123,9 +123,9 @@ itinerary:
 
     При желании можно дополнительно заказать экскурсию на аргентинскую сторону водопадов.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 6
   title: Бразильская сторона Игуасу, «Макуко» и Парк птиц
@@ -174,7 +174,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
     alt: Амазония
-  - src: https://brasiltours.ru/image/countries/brazil/bra-foz-right.jpg
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 8
   title: Затопленный лес, пираньи и деревня кабокло
@@ -256,7 +256,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/buzios.png
     alt: Бузиос
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 included:
 - Проживание в отелях по программе на базе завтраков.

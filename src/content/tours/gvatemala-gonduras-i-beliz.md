@@ -204,7 +204,7 @@ priceFrom: 6166
 currency: USD
 priceNote: $6166
 hero:
-  src: https://brasiltours.ru/image/countries/belize/ambergris-caye-2.jpg
+  src: /media/countries/belize/featureBands-3-enhanced-20261002.webp
   alt: Гватемала, Гондурас и Белиз
 routeCountries:
 - country_guatemala

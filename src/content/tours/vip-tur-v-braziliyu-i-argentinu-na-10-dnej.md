@@ -81,7 +81,7 @@ itinerary:
 
     На вечер можно выбрать **Marius Degustare** на Копакабане. Интерьер оформлен в морской теме, а в меню - креветки, устрицы, рыба и другие морепродукты.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
     alt: Статуя Христа Искупителя на горе Корковадо, панорама Рио-де-Жанейро и залив Гуанабара
 - day: 4
   title: Свободный день в Рио

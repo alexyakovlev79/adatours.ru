@@ -70,7 +70,7 @@ itinerary:
 
     Еще одна дополнительная программа - **«Макуко-сафари» за 130 USD на человека**.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/countries/brazil/sao-paolo4.png
     alt: Сан-Паулу
@@ -91,7 +91,7 @@ itinerary:
 
     Одна из главных частей дня - поездка на экологическом поезде, после которой вы продолжите путь пешком к смотровой площадке у «Глотки дьявола». Отсюда открывается панорама на самый мощный и многоводный каскад комплекса.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 5
   title: Игуасу - Рио-де-Жанейро

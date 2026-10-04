@@ -40,7 +40,7 @@ itinerary:
 
     Остаток дня свободный. Можно сразу отправиться гулять по Рио или провести время у океана.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Рио-де-Жанейро - Сахарная голова и старый центр
@@ -86,9 +86,9 @@ itinerary:
 
     Один из главных участков экскурсии - поездка на экологическом поезде и дальнейшая прогулка к смотровой площадке «Горло Дьявола». Здесь несколько потоков сходятся в одном огромном каньоне. Облако брызг поднимается вверх, а гул воды слышен еще до выхода на финальную площадку.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: Игуасу
@@ -131,7 +131,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Recife.png
     alt: Ресифи
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 7
   title: Ресифи и Олинда
@@ -163,7 +163,7 @@ itinerary:
 
     Курорт известен пляжами с чистой бирюзовой водой, белым песком и пальмами.
   images:
-  - src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'На фото: Порту-де-Галиньяс'
   - src: https://brasiltours.ru/image/recife.png
     alt: Ресифи
@@ -184,7 +184,7 @@ itinerary:
 
     В городе много ресторанов и кафе со свежими блюдами из рыбы. Вечером работают бары, дискотеки и проходят традиционные шоу.
   images:
-  - src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'На фото: Порту-де-Галиньяс'
 - day: 10
   title: Порту-де-Галиньяс - Фернанду-ди-Норонья
@@ -196,7 +196,7 @@ itinerary:
 
     По прибытии встреча и трансфер в отель. Время для отдыха.
   images:
-  - src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'На фото: Порту-де-Галиньяс'
 - day: 11
   title: Фернанду-ди-Норонья
@@ -262,7 +262,7 @@ priceFrom: 5801
 currency: USD
 priceNote: $5801
 hero:
-  src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
   alt: 'На фото: Порту-де-Галиньяс'
 routeCountries:
 - country_brazil

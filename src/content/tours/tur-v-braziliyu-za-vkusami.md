@@ -74,7 +74,7 @@ itinerary:
 
     Со смотровой площадки на горе открывается панорама Рио и окружающего побережья. После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: 'На фото: статуя Христа в Рио-де-Жанейро, Бразилия'
 - day: 4
   title: Рио-де-Жанейро - Илья-Гранди
@@ -125,7 +125,7 @@ itinerary:
 
     Сегодня сюда приезжают художники, артисты и путешественники, которым интересна историческая атмосфера. При этом рядом с городом много пляжей с теплой прозрачной водой, поэтому Парати сочетает прогулки по старому центру и отдых у океана.
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: 'На фото: город Парати. Бразилия'
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/ilha-grande-rj.jpg
     alt: 'На фото: пляжи Илья Гранди. Бразилия'

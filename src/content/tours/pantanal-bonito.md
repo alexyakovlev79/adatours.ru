@@ -41,7 +41,7 @@ itinerary:
 
     На время пребывания в Пантанале экскурсии и питание включены.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bonito-blue-cave.jpg
+  - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
     alt: Пантанал & Бонито
 - day: 2
   title: Пантанал
@@ -54,7 +54,7 @@ itinerary:
 
     Вечером запланировано сафари на джипах с поиском хищников.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bonito-blue-cave.jpg
+  - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
     alt: Пантанал & Бонито
 - day: 3
   title: Пантанал - Бонито
@@ -74,9 +74,9 @@ itinerary:
 
     Бонито - одно из известных направлений экотуризма в Бразилии. Здесь леса соседствуют со сталактитовыми и сталагмитовыми пещерами, водопадами и реками с прозрачной водой и большим количеством рыб.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bonito-blue-cave.jpg
+  - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
     alt: Пантанал & Бонито
-  - src: https://brasiltours.ru/image/countries/brazil/bonito-tubie.jpg
+  - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-02-enhanced-20261001.webp
     alt: Бонито
 - day: 4
   title: Голубая пещера и Рио-Сукури
@@ -106,7 +106,7 @@ itinerary:
 
     **Дополнительная стоимость Abismo Anhumas:** $450 на человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bonito-blue-cave.jpg
+  - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
     alt: Пантанал & Бонито
 - excursionRef: excursion_brazil_bonito_abismo_anhumas
   places: []
@@ -117,7 +117,7 @@ itinerary:
   - Бонито
   text: После завтрака трансфер в аэропорт для обратного вылета в Рио-де-Жанейро.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bonito-blue-cave.jpg
+  - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
     alt: Пантанал & Бонито
 included:
 - Трансферы.
@@ -143,7 +143,7 @@ priceFrom: 2040
 currency: USD
 priceNote: $2040
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/bonito-blue-cave.jpg
+  src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
   alt: Пантанал & Бонито
 routeCountries:
 - country_brazil

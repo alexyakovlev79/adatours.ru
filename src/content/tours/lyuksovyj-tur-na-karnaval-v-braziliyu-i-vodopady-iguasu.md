@@ -196,7 +196,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/017-macuco-safari.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp
     alt: VIP экскурсия на приватной лодке Макуко-Сафари к водопадам Игуасу в Бразилии
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -225,7 +225,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Мостики и тропы над каскадами Игуасу в Бразилии и Аргентине, виды на водопады и джунгли
 - day: 8
   title: '12.02: вылет'

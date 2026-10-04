@@ -16,7 +16,7 @@ priceFrom: 253
 currency: USD
 priceNote: "Стоимость — $664. При 2 участниках — $331 на человека; при 3 участниках — $253 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/tiahuanacu-bolivia.jpg
+  src: /media/countries/bolivia/featureBands-3-enhanced-20261002.webp
   alt: "на фото: Тиуанако, Боливия"
 gallery:
   - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-right.jpg

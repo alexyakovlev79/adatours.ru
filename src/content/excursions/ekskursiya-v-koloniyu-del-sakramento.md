@@ -16,7 +16,7 @@ priceFrom: 953
 currency: USD
 priceNote: "Основная стоимость — $953. Для группы из 2–4 человек — $477."
 hero:
-  src: https://brasiltours.ru/image/countries/uruguay/22.jpg
+  src: /media/countries/uruguay/featureBands-1-enhanced-20261002.webp
   alt: "на фото: Колония-дель-Сакраменто в Уругвае"
 gallery:
   - src: https://brasiltours.ru/image/colonia%20sacramento.png

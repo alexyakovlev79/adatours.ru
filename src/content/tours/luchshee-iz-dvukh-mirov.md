@@ -71,7 +71,7 @@ itinerary:
   text: "Наземный трансфер из Сан-Игнасио на муниципальный аэродром Белиза.\n\nДалее местный перелет в Сан-Педро на острове\
     \ Амбергрис-Ки.\n\n**Размещение:** Ramon’s Village.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/belize/beliz-siti-2.jpg
+  - src: /media/destinations/beliz-siti/hero-enhanced-20261002.webp
     alt: Белиз-сити
 - day: 7
   title: Сан-Педро

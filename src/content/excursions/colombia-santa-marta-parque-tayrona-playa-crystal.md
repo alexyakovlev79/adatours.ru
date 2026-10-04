@@ -13,7 +13,7 @@ themes: []
 duration: "5 часов"
 language: []
 hero:
-  src: "https://brasiltours.ru/image/countries/colombia/new-photos/santa-marta-2.jpg"
+  src: /media/destinations/santa-marta/hero-enhanced-20261003.webp
   alt: "Санта Марта - Парк Тайрона и Плайя Кристал"
 gallery:
   - src: "https://brasiltours.ru/image/countries/colombia/img-20220726-wa0188.jpg"

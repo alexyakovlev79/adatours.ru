@@ -18,7 +18,7 @@ destinationName: Лима
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/14g9D9z3HEkt3Lx1O7W-pvn45NKMRrdkq/view?usp=drivesdk
 hero:
-  src: https://brasiltours.ru/image/lima3.png
+  src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
   alt: ''
 ---
 

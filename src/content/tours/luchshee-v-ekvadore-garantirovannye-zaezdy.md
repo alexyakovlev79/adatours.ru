@@ -177,7 +177,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/quito.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
     alt: Кито
 - day: 4
   title: Баньос - Риобамба

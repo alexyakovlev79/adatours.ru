@@ -114,7 +114,7 @@ itinerary:
 
     С этого дня начинается большая патагонская часть путешествия. Вместо городской застройки вокруг будут озера, открытая степь, гранитные горы и ледники.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/5-chile-torres-del-paine.jpg
+  - src: /media/countries/chile/hero-enhanced-20261002.webp
     alt: Торрес-дель-Пайне
   - src: https://brasiltours.ru/image/santiago.png
     alt: Сантьяго-де-Чили
@@ -151,7 +151,7 @@ itinerary:
 
     Сам Эль-Калафате остается небольшим городом с ресторанами, барами и магазинами. После переезда можно отдохнуть у озера и подготовиться к большому ледниковому дню.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
     alt: Ледник Перито-Морено
 - day: 7
   title: Лос-Гласиарес и ледник Перито-Морено

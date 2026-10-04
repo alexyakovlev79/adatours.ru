@@ -89,7 +89,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
     alt: 'на фото: Эль Калафате'
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: Буэнос-Айрес
 - day: 4
   title: Калафате и ледник Перито-Морено
@@ -215,7 +215,7 @@ itinerary:
 
     По прибытии в Рио - трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 10
   title: Рио-де-Жанейро и Сахарная Голова
@@ -272,7 +272,7 @@ itinerary:
 
     Международный вылет домой.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 included:
 - Проживание в отелях по программе.

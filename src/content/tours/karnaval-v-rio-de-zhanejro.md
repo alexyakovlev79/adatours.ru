@@ -104,7 +104,7 @@ itinerary:
 
     На вечер можно выбрать ресторан Marius с морепродуктами. Стоимость - USD 130 на человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
     alt: Статуя Христа на горе Корковадо, Рио-де-Жанейро Бразилия
 - day: 5
   title: Завершение путешествия

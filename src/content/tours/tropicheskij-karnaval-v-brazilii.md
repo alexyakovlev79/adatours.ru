@@ -53,7 +53,7 @@ itinerary:
       \ застройка. Знакомые места складываются в единую панораму, а пляжи тянутся вдоль кварталов почти без разрыва. **Продолжительность:**\
       \ от 10 до 30 минут. \n\n**Стоимость:** от USD 230."
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1.jpg
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-2-enhanced-20261001.webp
     alt: Канатная дорога на Сахарную Голову в Рио
 - day: 3
   title: Свободное время и Карнавал на Самбадроме
@@ -96,7 +96,7 @@ itinerary:
     полуострова отличаются друг от друга. Одни бухты защищены скалами и подходят для спокойного купания, другие открыты ветру
     и волнам. Впереди несколько дней, когда каждый день можно строить заново.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Морской курорт Бузиос в Бразилии, бирюзовая вода Атлантики
 - day: 6
   title: Пляжный отдых в Бузиосе
@@ -135,7 +135,7 @@ itinerary:
     дни оставить пляжам и прогулкам. Такой запас времени важен после ночного парада: отдых не приходится втискивать между
     ранними выездами и новыми обязательными экскурсиями.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Морской курорт Бузиос в Бразилии, бирюзовая вода Атлантики
 - day: 8
   title: Пляжный отдых в Бузиосе
@@ -173,7 +173,7 @@ itinerary:
     дни оставить пляжам и прогулкам. Такой запас времени важен после ночного парада: отдых не приходится втискивать между
     ранними выездами и новыми обязательными экскурсиями.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Морской курорт Бузиос в Бразилии, бирюзовая вода Атлантики
 - day: 10
   title: Пляжный отдых в Бузиосе
@@ -211,7 +211,7 @@ itinerary:
     дни оставить пляжам и прогулкам. Такой запас времени важен после ночного парада: отдых не приходится втискивать между
     ранними выездами и новыми обязательными экскурсиями.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Морской курорт Бузиос в Бразилии, бирюзовая вода Атлантики
 - day: 12
   title: Бузиос - Рио-де-Жанейро. Вылет домой
@@ -248,7 +248,7 @@ priceFrom: 3689
 currency: USD
 priceNote: $3689
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/ugur-arpaci-u18v0toiofu-unsplash.jpg
+  src: /media/tours/luxury-brazil-11d/itinerary/extra-samba-show-enhanced-20260930.webp
   alt: Парад чемпионов на карнавале в Рио, шесть лучших школ самбы на Самбадроме
 routeCountries:
 - country_brazil

@@ -191,7 +191,7 @@ itinerary:
 
     Во время прогулки вы познакомитесь с образом жизни айленьос, жителей островов дельты. На обратном пути маршрут проходит через северные пригороды, район Сан-Исидро и мимо президентской резиденции Кинта-де-Оливос.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_source_fiesta_gaucho
   places: []
@@ -218,7 +218,7 @@ itinerary:
 
     Площадь природной территории указана как **55 500 гектаров**. После экскурсии трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/buen%20air.png
     alt: Буэнос-Айрес
@@ -242,7 +242,7 @@ itinerary:
 
     После экскурсии трансфер в аэропорт, перелет в Рио-де-Жанейро и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-foz-right.jpg
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
     alt: Рио-де-Жанейро
@@ -267,7 +267,7 @@ itinerary:
 
     После экскурсии свободное время для прогулок по набережным и городу.
   images:
-  - src: https://brasiltours.ru/image/rio-de-janeiro-praiaantiga-1.png
+  - src: /media/tours/rio-de-janeiro-wedding/hero-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 13
   title: Исторический Рио и Корковадо
@@ -303,7 +303,7 @@ itinerary:
 
     Продолжительность - около **8-9 минут**.
   images:
-  - src: https://brasiltours.ru/image/rio-de-janeiro-praiaantiga-1.png
+  - src: /media/tours/rio-de-janeiro-wedding/hero-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_botanical_garden
   places: []

@@ -20,7 +20,7 @@ hero:
   src: https://brasiltours.ru/image/countries/argentina/mendoza-sm.jpg
   alt: Винный регион Мендосы в Аргентине
 gallery:
-  - src: https://brasiltours.ru/image/mendoza.jpg
+  - src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
     alt: Мендоса, Аргентина
   - src: https://brasiltours.ru/image/wine%20tour.png
     alt: Дегустация вина на винодельне в Мендосе

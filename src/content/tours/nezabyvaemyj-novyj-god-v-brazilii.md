@@ -46,7 +46,7 @@ itinerary:
 
     Перед первой большой экскурсией Рио уже успевает показать еще одну сторону новогодних дней. На Ипанеме и Леблоне заранее бронируют столики, официанты готовят праздничные меню, а вдоль побережья становится больше продавцов белой одежды, цветов и свечей. Для местных жителей подготовка к 31 декабря начинается задолго до вечера, поэтому турист оказывается внутри праздника еще до самой новогодней ночи.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-13.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-03-enhanced-20260930.webp
     alt: Улицы Рио-де -Жанейро, Бразилия
 - day: 2
   title: 31 декабря. Корковадо и встреча 2027 года на Копакабане
@@ -86,7 +86,7 @@ itinerary:
 
     В праздничные даты маршрут городской экскурсии может корректироваться из-за загруженности Рио.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1.jpg
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-2-enhanced-20261001.webp
     alt: Канатная дорога на Сахарную Голову в Рио-де -Жанейро, Бразилия
 - day: 4
   title: 2 января. Перелет из Рио в Игуасу
@@ -104,7 +104,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/012-cataratas-do-iguacu-1.jpg
     alt: Водопады Игуасу в Аргентине и Бразилии
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-13.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-03-enhanced-20260930.webp
     alt: Улицы Рио-де -Жанейро, Бразилия
 - day: 5
   title: 3 января. Бразильская сторона Игуасу
@@ -131,7 +131,7 @@ itinerary:
 
     Дополнительно можно заказать видеозапись путешествия.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Водопады Игуасу в Аргентине и Бразилии
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -222,7 +222,7 @@ itinerary:
 
     За 10 дней поездка успевает несколько раз полностью сменить обстановку: новогодний Рио, мощные потоки Игуасу и спокойный океанский берег. В памяти остаются люди в белом на Копакабане, салют над Атлантикой, город с высоты Корковадо, водяная пыль у Глотки дьявола и последние дни без обязательного расписания на побережье.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-13.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-03-enhanced-20260930.webp
     alt: Улицы Рио-де -Жанейро, Бразилия
 included:
 - Проживание в отелях.

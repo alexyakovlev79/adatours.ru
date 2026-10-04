@@ -142,7 +142,7 @@ itinerary:
 
       Рекомендуется взять ланч-бокс. Пообедать также можно в ресторане парка.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
         alt: "Ледник Перито-Морено"
         intendedSlot: "itinerary:day-5"
 
@@ -204,7 +204,7 @@ itinerary:
 
       Главная точка маршрута, Гарганта-дель-Дьябло, или «Глотка дьявола», высотой 72 м. По территории парка вы будете перемещаться на экологическом поезде, затем пройдете по смотровым площадкам Верхнего и Нижнего маршрутов. На разных участках троп меняется и расстояние до воды, и угол обзора на каскады.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0025.jpg
+      - src: /media/tours/brazil-gems-14d/itinerary/day-12-enhanced-20261001.webp
         alt: "Аргентинская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-9"
 
@@ -224,7 +224,7 @@ itinerary:
     text: |-
       Экскурсия на полдня. С бразильской стороны открывается широкая панорама системы водопадов. Маршрут проходит по традиционным мосткам, откуда видны каскады Флориано, Дэодоро, Бенжамин Констант и Гарганта-дель-Дьябло.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0025.jpg
+      - src: /media/tours/brazil-gems-14d/itinerary/day-12-enhanced-20261001.webp
         alt: "Бразильская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-10"
 

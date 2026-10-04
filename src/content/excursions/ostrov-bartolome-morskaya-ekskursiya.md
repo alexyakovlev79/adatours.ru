@@ -21,11 +21,11 @@ hero:
   src: "https://brasiltours.ru/image/galapagos2.png"
   alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
 gallery:
-  - src: "https://brasiltours.ru/image/galapagos.png"
+  - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
     alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
-  - src: "https://brasiltours.ru/image/galapagos4.png"
+  - src: /media/excursions/ostrov-santa-krus/gallery-1-enhanced-20261001.webp
     alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
-  - src: "https://brasiltours.ru/image/galapags.png"
+  - src: /media/excursions/ostrov-santa-krus/gallery-2-enhanced-20261001.webp
     alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
 route:
   - "Балтра"

@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Столица Парагвая с сувенирным кварталом Recova, парком Хардин Ботанико и музеями. Знакомство с городом дополняют местная кухня и чай матэ."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/paraguay/3.jpg","alt":"На фото: город Асунсьон - столица Парагвая"}
+hero: {"src":/media/countries/paraguay/featureBands-1-enhanced-20261002.webp,"alt":"На фото: город Асунсьон - столица Парагвая"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN6530_4.jpg","alt":"На фото: город Асунсьон - столица Парагвая"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN6530_1.jpg","alt":"На фото: город Асунсьон - столица Парагвая"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN6530_5.jpg","alt":"На фото: город Асунсьон - столица Парагвая"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN6530_3.jpg","alt":"На фото: город Асунсьон - столица Парагвая"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN6530_9.jpg","alt":"На фото: город Асунсьон - столица Парагвая"}]
 facts: []
 featureBands: []

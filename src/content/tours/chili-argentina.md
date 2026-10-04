@@ -160,7 +160,7 @@ itinerary:
 
     Главное впечатление здесь связано с движением льда. Перито-Морено выглядит неподвижной ледяной стеной, но в течение дня слышны треск и грохот, а отдельные куски откалываются и падают в озеро. На разных площадках меняется перспектива: где-то хорошо виден высокий фронт, где-то - изгибы ледника и окружающие горы. Поэтому на посещение выделен отдельный день, без попытки объединить Перито-Морено с другими большими переездами.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
     alt: Ледник Перито-Морено
 - day: 8
   title: Эль-Калафате - Барилоче
@@ -213,7 +213,7 @@ itinerary:
 
     Переезд в Игуасу резко меняет климат и окружающий пейзаж: вместо холодной Патагонии и Анд начинаются влажный субтропический лес и большая река.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%201.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-13-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/countries/argentina/bariloche-header-8490.jpg
     alt: Барилоче
@@ -232,7 +232,7 @@ itinerary:
 
     Этот день сочетает 4 разных способа увидеть Игуасу. С пешеходных дорожек вы смотрите на каскады сбоку, во время Макуко-сафари подходите к ним по воде, в Парке птиц знакомитесь с субтропической природой региона, а вертолет показывает весь водопадный комплекс сверху. За счет этого бразильская сторона занимает целый день и не сводится к короткой прогулке у одной смотровой площадки.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -254,7 +254,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/buen%20air.png
     alt: Буэнос-Айрес
-  - src: https://brasiltours.ru/image/BRA%20FOZ%201.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-13-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 13
   title: Буэнос-Айрес и танго-шоу

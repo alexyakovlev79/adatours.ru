@@ -19,7 +19,7 @@ hero:
   src: "https://brasiltours.ru/image/catalog/product/f/i/file_57_122.png"
   alt: "Обзорная экскурсия по Сан Пауло"
 gallery:
-  - src: "https://brasiltours.ru/image/san%20paolo%201.png"
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
     alt: ""
   - src: "https://brasiltours.ru/image/san%20paolo.png"
     alt: ""

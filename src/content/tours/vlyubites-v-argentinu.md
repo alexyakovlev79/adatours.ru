@@ -84,7 +84,7 @@ itinerary:
 
     По прибытии трансфер из аэропорта в отель в центре города.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: на фото:Буэнос Айрес, Аргентина
 - day: 5
   title: Ледник Перито-Морено
@@ -99,7 +99,7 @@ itinerary:
 
     В конце дня автобус доставит вас обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
     alt: 'на фото: Перито Морено ледник, Аргентина'
 - day: 6
   title: Эль-Калафате
@@ -182,7 +182,7 @@ itinerary:
 
     По прибытии трансфер из аэропорта в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Игуасу водопады'
   - src: https://brasiltours.ru/image/countries/argentina/arg-salta-right.jpg
     alt: 'на фото: Салта, Аргентина'
@@ -222,7 +222,7 @@ itinerary:
 
     После экскурсии вы подниметесь на панорамном лифте к месту посадки в автобус. Затем возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Игуасу водопады'
 - day: 14
   title: Игуасу - Буэнос-Айрес
@@ -235,7 +235,7 @@ itinerary:
 
     По прибытии частный трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: на фото:Буэнос Айрес, Аргентина
   - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
     alt: 'на фото: Игуасу водопады'

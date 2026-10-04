@@ -11,7 +11,7 @@ destinationType: city
 summary: >-
   Сучитото — один из самых известных исторических городов Эль-Сальвадора, расположенный среди сельских пейзажей у озера Лаго-де-Сучитлан. Город сохранил колониальную застройку и мощеные улицы и имеет статус Национального культурного наследия.
 hero:
-  src: https://brasiltours.ru/image/countries/el-salvador/3.jpg
+  src: /media/countries/el-salvador/featureBands-2-enhanced-20261002.webp
   alt: "На фото: город Сучитото в Эль-Сальвадоре"
 gallery:
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN17640_18.jpg

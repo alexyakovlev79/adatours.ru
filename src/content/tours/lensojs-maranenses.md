@@ -57,7 +57,7 @@ itinerary:
 
     Экскурсия проходит по историческому центру, включенному в список Всемирного наследия ЮНЕСКО.
   images:
-  - src: https://brasiltours.ru/image/So%20Luis.png
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp
     alt: Сан-Луис
 - excursionRef: excursion_sao_luis_city_tour_four_hours
   places: []
@@ -98,7 +98,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/img-20230303-wa0013.jpg
     alt: Ленсойс-Мараньенсес
-  - src: https://brasiltours.ru/image/So%20Luis.png
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp
     alt: Сан-Луис
 - day: 3
   title: Баррейриньяс - река Прегисас - Сан-Луис
@@ -127,7 +127,7 @@ itinerary:
 
     Размещение в Luzeiros Hotel.
   images:
-  - src: https://brasiltours.ru/image/So%20Luis.png
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp
     alt: Сан-Луис
 - day: 4
   title: Сан-Луис
@@ -138,7 +138,7 @@ itinerary:
 
     На этом программа заканчивается.
   images:
-  - src: https://brasiltours.ru/image/So%20Luis.png
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp
     alt: Сан-Луис
 included:
 - Проживание в указанных или аналогичных отелях.

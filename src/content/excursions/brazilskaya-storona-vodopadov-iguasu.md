@@ -19,7 +19,7 @@ hero:
   src: "https://brasiltours.ru/image/catalog/product/f/i/file_240_4.jpg"
   alt: "Бразильская сторона водопадов Игуасу"
 gallery:
-  - src: "https://brasiltours.ru/image/BRA%20FOZ%204.png"
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: ""
   - src: "https://brasiltours.ru/image/catalog/product/f/i/file_113_26.jpg"
     alt: ""

@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Пинар-дель-Рио находится в табачном районе Кубы. Здесь знакомятся с производством сигар, а в окрестностях едут к известняковым горам, долине Виньялес и «Пещере индейцев»."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/cuba/vinales-cuba.jpg","alt":"На фото: Провинция Пинар-дель-Рио и Долина Виньялес на острове Куба"}
+hero: {"src":/media/countries/cuba/featureBands-2-enhanced-20261002.webp,"alt":"На фото: Провинция Пинар-дель-Рио и Долина Виньялес на острове Куба"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/1/9/199966139_230700c531_o.jpg","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/1/9/199965843_90bcd420b4_o.jpg","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/0/2095957627_3707a0d0ff_b.jpg","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/3/1/314096563_1d27d7fbf1_b.jpg","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/0/2061488392_2c299503ff_b.jpg","alt":"На фото: Провинция Пинар-дель-Рио на острове Куба"}]
 facts: []
 featureBands: []

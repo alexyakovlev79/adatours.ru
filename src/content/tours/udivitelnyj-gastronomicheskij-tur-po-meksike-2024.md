@@ -71,7 +71,7 @@ itinerary:
 
     После возвращения в Мехико начинается гастрономическая часть дня. Вы посетите традиционные такерии и попробуете разные варианты самого известного мексиканского блюда. Маршрут показывает, насколько по-разному в городе готовят тако и какие вкусы считаются вечерней классикой Мехико. Дегустацию дополняет знакомство с мескалем.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/teotihuacan.jpg
+  - src: /media/countries/mexico/featureBands-1-enhanced-20261002.webp
     alt: Теотиуакан
   - src: https://brasiltours.ru/image/Mexico%20City.png
     alt: Мехико

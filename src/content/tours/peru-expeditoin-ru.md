@@ -52,7 +52,7 @@ itinerary:
 
     После исторического центра - музей Ларко. Его коллекция знакомит с культурами древнего Перу через изделия из золота, текстиль и керамику, включая знаменитую эротическую керамику. Во время визита открыто и музейное хранилище, где можно увидеть дополнительные образцы керамики.
   images:
-  - src: https://brasiltours.ru/image/lima%20larko.png
+  - src: /media/tours/peru-8d/itinerary/day-08-enhanced-20261001.webp
     alt: Музей Ларко
 - day: 2
   title: Куско, столица Империи инков
@@ -131,7 +131,7 @@ itinerary:
 
     Прибытие в Пуно вечером и размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/cusco%20plaza%20de%20armas.png
+  - src: /media/tours/peru-8d/itinerary/day-04-enhanced-20261001.webp
     alt: Куско
   - src: https://brasiltours.ru/image/Puno.jpg
     alt: 'Перу: Энергия Предков'

@@ -27,7 +27,7 @@ gallery:
     alt: "на фото: черепаха на Галапагосских островах"
   - src: "https://brasiltours.ru/image/countries/equador/img-20210923-wa0037.jpg"
     alt: "на фото: лавовые туннели,  Галапагосские острова в Эквадоре"
-  - src: "https://brasiltours.ru/image/galapagos.png"
+  - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
     alt: "на фото: Черепахи на Галапагосских  островах"
 route:
   - "Кито (или Гуаякиль)"

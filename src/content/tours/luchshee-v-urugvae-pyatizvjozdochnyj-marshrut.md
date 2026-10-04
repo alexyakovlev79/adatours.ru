@@ -32,7 +32,7 @@ itinerary:
 
     Размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/Montevideo.png
+  - src: /media/excursions/ekskursiya-po-montevideo/hero-enhanced-20261001.webp
     alt: Монтевидео
 - day: 2
   title: Монтевидео
@@ -84,7 +84,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/punta-del-este-18072018-339787.png
     alt: Пунта дель Эсте
-  - src: https://brasiltours.ru/image/Montevideo.png
+  - src: /media/excursions/ekskursiya-po-montevideo/hero-enhanced-20261001.webp
     alt: Монтевидео
 - day: 5
   title: Пунта-дель-Эсте

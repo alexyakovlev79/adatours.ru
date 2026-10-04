@@ -9,7 +9,7 @@ destinationType: "natural_area"
 summary: "Национальный парк Гвианская Амазония во Французской Гвиане: тропические леса, реки и богатый животный мир. Доступ в парк по воде или по воздуху."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/french-gviana/5.jpg"
+  src: /media/countries/french-guiana/featureBands-3-enhanced-20261002.webp
   alt: "На фото: парк Гвианская Амазония во Французской Гвиане"
 gallery: []
 themes: []

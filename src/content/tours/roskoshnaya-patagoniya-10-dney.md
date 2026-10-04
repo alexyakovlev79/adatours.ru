@@ -367,7 +367,7 @@ itinerary:
       
       После экскурсии трансфер в аэропорт, перелет в Сантьяго-де-Чили и трансфер с гидом в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/punta-arenas-2.jpg
+      - src: /media/countries/chile/featureBands-2-enhanced-20261002.webp
         alt: "Магеллановы пингвины в Патагонии"
         intendedSlot: "itinerary:day-8"
   - day: 9

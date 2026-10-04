@@ -42,7 +42,7 @@ itinerary:
 
     После размещения свободное время.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер на гору в Рио-де-Жанейро, Бразилия'
 - day: 2
   title: Сахарная Голова и обзорная экскурсия по Рио
@@ -59,7 +59,7 @@ itinerary:
 
     Возможно посещение кафедрального собора Сан-Себастьян и остановка у яркой лестницы Селарона.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер на гору в Рио-де-Жанейро, Бразилия'
 - day: 3
   title: Корковадо и статуя Христа Искупителя
@@ -105,9 +105,9 @@ itinerary:
 
     Стоимость - $50 с человека.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу (Фоз Игуазу), Бразилия и Аргентина'
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер на гору в Рио-де-Жанейро, Бразилия'
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -130,7 +130,7 @@ itinerary:
 
     После экскурсии возвращение в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу (Фоз Игуазу), Бразилия и Аргентина'
 - day: 6
   title: Игуасу - Рио-де-Жанейро, вылет домой
@@ -145,7 +145,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Puerto%20Iguazu.png
     alt: 'На фото: Водопады Игуасу (Фоз Игуазу), Бразилия и Аргентина'
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер на гору в Рио-де-Жанейро, Бразилия'
 included:
 - Проживание в отелях.
@@ -168,7 +168,7 @@ priceFrom: 1135
 currency: USD
 priceNote: $1135
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/thales-botelho-de-sousa-quqishtm0h0-unsplash-1.jpg
+  src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-2-enhanced-20261001.webp
   alt: 'На фото: фуникулер на гору в Рио-де-Жанейро, Бразилия'
 routeCountries:
 - country_brazil

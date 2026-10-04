@@ -167,7 +167,7 @@ priceFrom: 2119
 currency: USD
 priceNote: $2119.
 hero:
-  src: https://brasiltours.ru/image/ecuador%20papalacta.png
+  src: /media/excursions/papallakta/gallery-1-enhanced-20261001.webp
   alt: 'на фото: Эквадор'
 routeCountries:
 - country_ecuador

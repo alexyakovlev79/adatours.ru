@@ -21,7 +21,7 @@ hero:
   src: "https://brasiltours.ru/image/countries/peru/vicunca.jpg"
   alt: "на фото: Виникунка, Радужная Гора, Перу"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/peru/peruvian-photo.jpg"
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-14-enhanced-20260930.webp
     alt: "на фото: завтрак на Виникунка, Радужная Гора , Перу"
 route:
   - "Куско"

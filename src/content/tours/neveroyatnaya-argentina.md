@@ -42,7 +42,7 @@ priceFrom: 4609
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/gabor-sz-5rbqw61losu-unsplash.jpg
+  src: /media/destinations/puerto-iguasu/hero-enhanced-20261002.webp
   alt: "Водопады Игуасу, Аргентина"
 gallery: []
 featured: false
@@ -74,7 +74,7 @@ itinerary:
 
       Сан-Тельмо показывает историческую часть города, затем маршрут постепенно переходит к Пуэрто-Мадеро, современному району с ресторанами международной кухни. В Реколете вы увидите старые здания, европейскую архитектуру и знаменитое кладбище, которое само по себе представляет архитектурный ансамбль. Район много десятилетий считается одним из наиболее престижных в городе. Завершает дневную часть Палермо с большими зелеными зонами, которые называют «легкими» Буэнос-Айреса.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-2"
 
@@ -254,7 +254,7 @@ itinerary:
 
       По прибытии встреча и частный трансфер в отель Dazzler. Возвращение в столицу завершает внутренний круг маршрута: Буэнос-Айрес - Ушуайя - Эль-Калафате - Игуасу - Буэнос-Айрес. На следующий день остается только международный трансфер в аэропорт.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-12"
 

@@ -186,7 +186,7 @@ itinerary:
     text: |-
       Трансфер из отеля в аэропорт. Перелет в Пуэрто-Игуасу. После прибытия - трансфер из аэропорта в отель.
     images:
-      - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+      - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
         alt: "Игуасу"
         intendedSlot: "itinerary:day-8"
   - day: 9

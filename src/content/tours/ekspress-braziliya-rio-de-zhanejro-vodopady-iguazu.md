@@ -69,7 +69,7 @@ itinerary:
 
     У районов есть собственные внутренние правила. Для посещения требуется разрешение местного «крестного отца», полиция сюда не заглядывает. Поездка проходит на джипе по районам Rocinha, после чего вы возвращаетесь в отель.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: Статуя Христа и Корковадо
 - day: 4
   title: Рио-де-Жанейро - Фоз-де-Игуасу
@@ -89,7 +89,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
     alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 5
   title: Аргентинская сторона Игуасу

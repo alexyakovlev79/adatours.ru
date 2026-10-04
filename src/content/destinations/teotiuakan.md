@@ -9,7 +9,7 @@ destinationType: "region"
 summary: "Древний археологический комплекс в 40 км к северо-востоку от Мехико. Главные сооружения Теотиуакана — Пирамида Солнца и Пирамида Луны."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/teotihuacan.jpg","alt":"На фото: пирамида Солнца в Теотиуакане в Мексике"}
+hero: {"src":/media/countries/mexico/featureBands-1-enhanced-20261002.webp,"alt":"На фото: пирамида Солнца в Теотиуакане в Мексике"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/t/e/teotihuacan-pyramids-mexico-1600x1200.jpg","alt":"На фото: пирамида Солнца в Теотиуакане в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/T/e/Teotihuacan.jpg","alt":"На фото: пирамида Солнца в Теотиуакане в Мексике"}]
 facts: []
 featureBands: []

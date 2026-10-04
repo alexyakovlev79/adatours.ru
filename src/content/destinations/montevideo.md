@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Монтевидео: площадь Независимости, старый город и порт, дворец Сальво и музеи, посвященные истории Уругвая и культуре гаучо."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/uruguay/22.jpg"
+  src: /media/countries/uruguay/featureBands-1-enhanced-20261002.webp
   alt: "На фото: древний форт в столице Уругвая городе Монтевидео"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN6531_5.jpg"

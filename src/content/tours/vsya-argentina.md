@@ -65,7 +65,7 @@ priceFrom: 12323
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
   alt: "Буэнос-Айрес, Аргентина"
 gallery: []
 featured: false
@@ -234,7 +234,7 @@ itinerary:
       
       Предусмотрено свободное время среди виноградников и виноделен. Обед на центральной площади оплачивается отдельно. Также в программе посещение музея вина. Ночь - в винном отеле.
     images:
-      - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+      - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
         alt: "Переезд к Сальте и Кафаяте"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -327,7 +327,7 @@ itinerary:
     text: |-
       После завтрака трансфер в аэропорт и перелет в Мендосу. По прибытии - трансфер в отель и размещение. Оставшаяся часть дня свободна для самостоятельной прогулки и знакомства с городом.
     images:
-      - src: https://brasiltours.ru/image/mendoza.jpg
+      - src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
         alt: "Мендоса, Аргентина"
         intendedSlot: "itinerary:day-11"
   - day: 12
@@ -628,7 +628,7 @@ itinerary:
     text: |-
       После завтрака трансфер в аэропорт и перелет в Ушуайю. По прибытии - трансфер в отель и свободное время.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
         alt: "Патагония перед перелетом в Ушуайю"
         intendedSlot: "itinerary:day-23"
   - excursionRef: excursion_ushuaia_penguin_walk

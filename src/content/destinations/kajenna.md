@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Кайенна: колониальные здания и рынки, площади де Гренобль и де Пальмистес, ботанический сад и музей культуры Французской Гвианы."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/french-gviana/3.jpg"
+  src: /media/countries/french-guiana/featureBands-1-enhanced-20261002.webp
   alt: "На фото: столица Французской Гвианы. город Кайенна"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN2660_5.jpg"

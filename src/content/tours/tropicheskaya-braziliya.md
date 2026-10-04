@@ -253,7 +253,7 @@ priceFrom: 3811
 currency: USD
 priceNote: $3811
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/jaime-dantas-sp4cvudiy5u-unsplash.jpg
+  src: /media/tours/luxury-brazil-11d/itinerary/day-11-enhanced-20260930.webp
   alt: 'На фото: город Рио-де-Жанейро в Бразилии'
 routeCountries:
 - country_brazil

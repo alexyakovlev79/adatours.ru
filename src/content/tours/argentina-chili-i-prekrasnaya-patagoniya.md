@@ -97,7 +97,7 @@ itinerary:
       
       Ушуайя находится на Огненной Земле у пролива Бигль. Уже после перелета пейзаж меняется полностью: горы подходят к воде, леса окружают город, а климат становится заметно прохладнее.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
         alt: "Буэнос-Айрес перед перелетом в Ушуайю"
         intendedSlot: "itinerary:day-3"
   - day: 4

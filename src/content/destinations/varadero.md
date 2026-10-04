@@ -8,7 +8,7 @@ countryId: "country_cuba"
 destinationType: "resort"
 summary: "Варадеро находится на полуострове Икакос и известен песчаными пляжами. Здесь можно заниматься дайвингом, играть в гольф и посетить пещеру Амбросио."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/cuba/varadero-cuba-2.jpg","alt":"На фото: пляж Варадеро на острове Куба"}
+hero: {"src":/media/countries/cuba/featureBands-3-enhanced-20261002.webp,"alt":"На фото: пляж Варадеро на острове Куба"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/V/a/Varadero1.jpg","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/1/8/1802059615_091b98860a_o.jpg","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/8/0/800px-Varadero_cuba.jpg","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/1/3/139553464_28193a7967_o.jpg","alt":"На фото: пляж Варадеро на острове Куба"}]
 themes: []
 relatedDestinations: []

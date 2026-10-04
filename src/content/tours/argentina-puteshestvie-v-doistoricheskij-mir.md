@@ -50,7 +50,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Buenos%20Aires.png
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -97,7 +97,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Mendoza.png
     alt: 'на фото: винный регион и город Мендоса в Аргентине'
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
 - day: 4
   title: Анды и окрестности Мендосы
@@ -114,7 +114,7 @@ itinerary:
 
     Вечером возвращение в отель в Мендосе.
   images:
-  - src: https://brasiltours.ru/image/mendoza%201.png
+  - src: /media/excursions/mendosa-tur-v-gory/gallery-1-enhanced-20261001.webp
     alt: 'на фото: город Мендоса в Аргентине'
 - day: 5
   title: Винодельни Валье-де-Уко
@@ -253,7 +253,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Buenos%20Aires.png
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
   - src: https://brasiltours.ru/image/puerto%20madrin%20argentina.png
     alt: 'на фото: город Пуэрто Мадрин в Аргентине'
@@ -266,7 +266,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
 included:
 - 12 ночей в отелях выбранной категории на базе завтраков.

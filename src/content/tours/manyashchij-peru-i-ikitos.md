@@ -75,7 +75,7 @@ itinerary:
 
      После экскурсии возвращение в отель и отдых, чтобы спокойно адаптироваться к высоте Куско.
   images:
-  - src: https://brasiltours.ru/image/lima3.png
+  - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
     alt: Лима
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
@@ -192,7 +192,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/catalog/product/i/q/iquitos.png
     alt: Манящий Перу и Икитос
-  - src: https://brasiltours.ru/image/lima3.png
+  - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
     alt: Лима
 - day: 10
   title: Лима
@@ -235,7 +235,7 @@ itinerary:
   - Лима
   text: Завтрак. Трансфер в аэропорт для международного вылета.
   images:
-  - src: https://brasiltours.ru/image/lima3.png
+  - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
     alt: Лима
 included:
 - Внутренние авиаперелеты Лима - Куско, Хулиака - Лима и Лима - Икитос - Лима.

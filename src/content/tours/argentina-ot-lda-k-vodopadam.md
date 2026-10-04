@@ -166,7 +166,7 @@ itinerary:
 
       После патагонского холода климат меняется полностью: Игуасу находится среди влажного субтропического леса. За один перелет вы переходите от ледника и холодного воздуха к жаре, густой зелени и водяной взвеси над каскадами. Этот контраст и задает основную логику второй половины маршрута.
     images:
-      - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+      - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
         alt: "на фото: Водопады Игуасу в Аргентине и Бразилии"
         intendedSlot: "itinerary:day-6"
 
@@ -205,7 +205,7 @@ itinerary:
 
       После тура трансфер в отель. Вечером можно спокойно отдохнуть после дня у водопадов и вернуться к впечатлениям от маршрута.
     images:
-      - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
         alt: "на фото: Водопады Игуасу в Аргентине и Бразилии"
         intendedSlot: "itinerary:day-8"
 
@@ -217,7 +217,7 @@ itinerary:
     text: |-
       Завтрак в отеле. В назначенное время трансфер в аэропорт и перелет в Буэнос-Айрес. По прибытии трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+      - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
         alt: "на фото: Водопады Игуасу в Аргентине и Бразилии"
         intendedSlot: "itinerary:day-9"
 

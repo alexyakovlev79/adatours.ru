@@ -73,7 +73,7 @@ itinerary:
     \ в отель и свободный вечер.\n\n**Остановки:** Базилика Национального Обета, Главная площадь, «Золотая церковь», площадь\
     \ Сан-Франциско, Панесильо, музей Интиньян, «Середина мира».  \n**Размещение:** Ikala 3*.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/quito1.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-3-enhanced-20261001.webp
     alt: 'На фото: Кафедральный собор Кито в Эквадоре'
 - day: 3
   title: Тропический лес Миндо

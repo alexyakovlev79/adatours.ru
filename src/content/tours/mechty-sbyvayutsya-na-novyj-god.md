@@ -64,7 +64,7 @@ itinerary:
 
     При желании можно отдельно заказать новогодний ужин или вечеринку в одном из отелей на Копакабане.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/4.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-17-enhanced-20260930.webp
     alt: Дети гоняют мяч на лучших пляжах Рио, Копакабана и футбол у океана в Бразилии
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-22.jpg
     alt: Статуя Христа в Рио-де-Жанейро в Бразилии
@@ -85,7 +85,7 @@ itinerary:
 
     Из-за высокой новогодней загрузки порядок остановок может быть изменен.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/davi-costa-1229343-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-03-enhanced-20260930.webp
     alt: Канатная дорога к Сахарной Голове в Рио-де-Жанейро, подъем на гору и вид на океан
 - day: 4
   title: ', 02.01. Свободный день в Рио'
@@ -121,7 +121,7 @@ itinerary:
 
     На следующий день вы увидите водопады с бразильской стороны.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
     alt: Водопады Игуасу в Аргентине и Бразилии, 275 каскадов и Глотка Дьявола
 - day: 6
   title: ', 04.01. Бразильская сторона Игуасу'
@@ -148,7 +148,7 @@ itinerary:
 
     **Стоимость:** USD 50 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Смотровые площадки на водопадах Игуасу в Аргентине и Бразилии
 - excursionRef: excursion_source_makuko_safari
   places: []

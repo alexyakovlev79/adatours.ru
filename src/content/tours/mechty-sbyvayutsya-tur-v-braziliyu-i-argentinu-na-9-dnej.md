@@ -45,7 +45,7 @@ itinerary:
 
     Если захочется выйти к океану сразу, проще всего начать с набережной. На Копакабане жизнь продолжается и после заката: на песке играют, по дорожке бегают, у киосков заказывают холодную кокосовую воду. Ипанема дает другой вид на берег и горы. Эти прогулки не входят в обязательную программу, поэтому можно легко сократить их, если после перелета нужен отдых.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: Закат со смотровой площадки, Рио-де-Жанейро
 - day: 2
   title: Сахарная Голова и старый центр Рио
@@ -102,9 +102,9 @@ itinerary:
 
     Перемена после Рио заметна сразу. Вместо пляжей, проспектов и городских холмов основная часть следующих дней проходит среди субтропического леса. Водопады находятся внутри охраняемых территорий, поэтому поездка строится вокруг пешеходных маршрутов, настилов и смотровых площадок.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
     alt: Водопады Игуасу, Бразилия, радуга в брызгах
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/4.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-17-enhanced-20260930.webp
     alt: Люди играют на пляже в Рио, Бразилия
 - day: 5
   title: Бразильская сторона водопадов Игуасу
@@ -145,7 +145,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba2.jpg
     alt: Ночной Буэнос-Айрес, небоскребы столицы Аргентины
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1334121-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/extra-macuco-safari-enhanced-20260930.webp
     alt: Экскурсия на лодке под водопадами Игуасу
 - day: 7
   title: Буэнос-Айрес и танго-шоу

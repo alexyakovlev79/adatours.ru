@@ -125,7 +125,7 @@ itinerary:
 
     Цена включает групповые трансферы и ужин, напитки оплачиваются отдельно.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
   - src: https://brasiltours.ru/image/countries/brazil/img-0589.JPG
     alt: 'На фото: Королевский Петрополис в Рио-де-Жанейро в Бразилии'
@@ -148,7 +148,7 @@ itinerary:
 
     Стоимость - USD 50 с человека.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -163,7 +163,7 @@ itinerary:
 
     Национальный парк занимает 55 500 гектаров. Во время экскурсии вас ждут местная флора и фауна, многочисленные смотровые площадки и близость к воде.
   images:
-  - src: https://brasiltours.ru/image/iguacu%20national%20park.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
 - day: 8
   title: Фоз-ду-Игуасу
@@ -172,7 +172,7 @@ itinerary:
   - Пуэрто Игуасу
   text: Завтрак в отеле. Частный трансфер только с водителем из отеля в аэропорт Фоз-ду-Игуасу.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
 included:
 - Проживание в отелях с завтраками.

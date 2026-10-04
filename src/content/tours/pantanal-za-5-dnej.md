@@ -115,7 +115,7 @@ priceFrom: 4145
 currency: USD
 priceNote: $4145
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/david-waite-hy1zhwmhl8m-unsplash.jpg
+  src: /media/destinations/pantanal/hero-enhanced-20261001.webp
   alt: Пантанал за 5 дней
 routeCountries:
 - country_brazil

@@ -113,7 +113,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/cusco%202.png
     alt: 'на фото: Куско в Перу'
-  - src: https://brasiltours.ru/image/lima.png
+  - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
     alt: 'на фото: Лима, столица Перу'
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
@@ -245,7 +245,7 @@ itinerary:
 
     По желанию можно посетить горячие источники. Предусмотрено время на обед.
   images:
-  - src: https://brasiltours.ru/image/Colca-Canyon-Peru.png
+  - src: /media/destinations/isla-del-sol/hero-enhanced-20261003.webp
     alt: 'на фото: Каньон Колка в Перу'
   - src: https://brasiltours.ru/image/puno2.png
     alt: 'на фото: Пуно в Перу'
@@ -268,7 +268,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Arequipa.png
     alt: 'на фото: Арекипа, белый город в Перу'
-  - src: https://brasiltours.ru/image/Colca-Canyon-Peru.png
+  - src: /media/destinations/isla-del-sol/hero-enhanced-20261003.webp
     alt: 'на фото: Каньон Колка в Перу'
 - day: 10
   title: Арекипа - Лима
@@ -292,7 +292,7 @@ itinerary:
 
     По прилете встреча, трансфер и размещение в гостинице.
   images:
-  - src: https://brasiltours.ru/image/lima3.png
+  - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
     alt: 'на фото: Лима, столица Перу'
   - src: https://brasiltours.ru/image/Arequipa.png
     alt: 'на фото: Арекипа, белый город в Перу'
@@ -358,7 +358,7 @@ itinerary:
 
     По прилете трансфер в отель **Britania** или отель той же категории.
   images:
-  - src: https://brasiltours.ru/image/lima.png
+  - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
     alt: 'на фото: Лима, столица Перу'
 - day: 14
   title: Лима и вылет
@@ -381,7 +381,7 @@ itinerary:
 
     После посещения продолжение трансфера в аэропорт.
   images:
-  - src: https://brasiltours.ru/image/lima3.png
+  - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
     alt: 'на фото: Лима, столица Перу'
 included:
 - Внутренние авиаперелеты Лима - Куско, Арекипа - Лима, Лима - Трухильо, Чиклайо - Лима

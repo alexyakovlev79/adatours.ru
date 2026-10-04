@@ -161,7 +161,7 @@ itinerary:
 
     Основная экскурсия запланирована на следующий день, поэтому после размещения можно отдохнуть.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
     alt: Джунгли и водопады Игуасу в Бразилии и Аргентине, каскады и тропический лес
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
     alt: Дети плещутся в океане на пляже Рио-де-Жанейро, летний отдых и счастье
@@ -196,7 +196,7 @@ itinerary:
 
     Стоимость: USD 170 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Мостики и Глотка Дьявола на водопадах Игуасу
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -234,7 +234,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/amazon.jpg
     alt: Амазонка в Манаусе, круиз по реке и тропические леса Бразилии
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-8.jpg
+  - src: /media/tours/luxury-brazil-11d/gallery-1-src-enhanced-20261001.webp
     alt: Мощные потоки воды на водопадах Игуасу в Бразилии и Аргентине, каскады и брызги
 - day: 9
   title: Амазония

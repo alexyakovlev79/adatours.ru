@@ -19,7 +19,7 @@ hero:
   src: "https://brasiltours.ru/image/countries/brazil/rafain-show-in-inguazu-waifu2x-noise1-1920.jpg"
   alt: "На фото: Танцоры на Рафаин-шоу"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg"
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: "На фото: Буэнос-Айрес Аргентина"
   - src: "https://brasiltours.ru/image/countries/argentina/bue-a.jpg"
     alt: "На фото: Мясное блюдо ресторана Rafain Grill Place"

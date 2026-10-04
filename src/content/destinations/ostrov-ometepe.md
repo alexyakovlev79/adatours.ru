@@ -9,7 +9,7 @@ destinationType: "island"
 summary: "Вулканы Концепсьон и Мадерас, панорамные виды и природа биосферного заповедника. Ометепе привлекает путешественников маршрутами восхождений."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/nikaragua/5.jpg","alt":"На фото: вулканы на острове Ометепе в Никарагуа"}
+hero: {"src":/media/countries/nicaragua/featureBands-1-enhanced-20261002.webp,"alt":"На фото: вулканы на острове Ометепе в Никарагуа"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_25_11.jpg","alt":"На фото: вулканы на острове Ометепе в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_23_33.jpg","alt":"На фото: вулканы на острове Ометепе в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_26_8.jpg","alt":"На фото: на острове Ометепе в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_24_17.jpg","alt":"На фото: на острове Ометепе в Никарагуа"}]
 facts: []
 featureBands: []

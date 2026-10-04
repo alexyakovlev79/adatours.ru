@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Парамарибо: голландская колониальная архитектура, исторический центр ЮНЕСКО, городские парки и район художников Марон."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/surinam/5.jpg"
+  src: /media/countries/suriname/featureBands-1-enhanced-20261002.webp
   alt: "На фото: столица Суринама город Парамарибо"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/9/9/99742310_53052b5188_o.jpg"

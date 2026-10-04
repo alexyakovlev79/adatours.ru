@@ -20,7 +20,7 @@ hero:
   src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-4.jpg
   alt: Статуя Христа-Искупителя над Рио-де-Жанейро
 gallery:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
     alt: Панорама Рио-де-Жанейро
   - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1-1920.jpg
     alt: Вид на Рио-де-Жанейро с высоты

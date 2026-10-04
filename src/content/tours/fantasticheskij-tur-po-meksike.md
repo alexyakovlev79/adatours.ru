@@ -82,7 +82,7 @@ itinerary:
     был основан в начале I века н.э. и достиг своего пика примерно в 500 году н.э., когда его влияние распространилось на
     север до Гватемалы и на север до нынешнего Техаса.Возвращение в отель вечером.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/teotihuacan.jpg
+  - src: /media/countries/mexico/featureBands-1-enhanced-20261002.webp
     alt: Теотиуакан
 - day: 4
   title: Мехико - Сан-Кристобаль

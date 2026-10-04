@@ -18,7 +18,7 @@ priceFrom: 488
 currency: "USD"
 priceNote: "Стоимость — $488."
 hero:
-  src: "https://brasiltours.ru/image/galapagos.png"
+  src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
   alt: "на фото: Остров Северный Сеймур на Галапагосских острова Эквадора"
 gallery:
   - src: "https://brasiltours.ru/image/galapagos%20baltra1.png"

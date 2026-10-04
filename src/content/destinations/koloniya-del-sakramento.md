@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Колония дель Сакраменто: мощеные улочки, старые церкви и виды на Рио-де-ла-Плата. Вечером открыты бары, рестораны и небольшие кафе."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/uruguay/11.jpg"
+  src: /media/countries/uruguay/featureBands-2-enhanced-20261002.webp
   alt: "На фото: город Колония дель Сакраменто в Уругвае"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22634_8.jpg"

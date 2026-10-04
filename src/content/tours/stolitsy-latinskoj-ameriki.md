@@ -37,7 +37,7 @@ itinerary:
   - Рио-де-Жанейро
   text: Прибытие в Рио и трансфер в отель. Размещение на 2 ночи. Питание - завтрак.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: на фото:Рио де Жанейро
 - day: 2
   title: 'Рио-де-Жанейро: Корковадо, центр и Сахарная Голова'
@@ -71,9 +71,9 @@ itinerary:
 
     После экскурсии трансфер в отель на аргентинской стороне. Питание - завтрак.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: на фото:Рио де Жанейро
 - day: 4
   title: Аргентинская сторона Игуасу
@@ -92,7 +92,7 @@ itinerary:
 
     Продолжительность - 1 час 15 минут.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
 - excursionRef: excursion_iguazu_gran_aventura
   places: []
@@ -115,7 +115,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Arg%20Buenos%20Aires.png
     alt: на фото:Буэнос Айрес
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
 - day: 6
   title: Ранчо гаучо «Дон Сильвано»
@@ -203,7 +203,7 @@ itinerary:
   - Пунта дель Эсте
   text: Завтрак в отеле. Трансфер в аэропорт для вылета в Буэнос-Айрес или по другому направлению.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Буэнос Айрес'
   - src: https://brasiltours.ru/image/punta-del-este_1_orig.png
     alt: 'на фото: Пунта-дель-Эсте'
@@ -234,7 +234,7 @@ priceFrom: 5005
 currency: USD
 priceNote: $5005
 hero:
-  src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
   alt: на фото:Рио де Жанейро
 routeCountries:
 - country_brazil

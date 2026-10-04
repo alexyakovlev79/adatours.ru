@@ -20,7 +20,7 @@ hero:
   alt: "Тур в Нитерой"
 gallery:
   -
-    src: "https://brasiltours.ru/image/countries/brazil/new-pics/rio-5.jpg"
+    src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
     alt: ""
   -
     src: "https://brasiltours.ru/image/countries/brazil/new-pics/niteroj.jpg"

@@ -9,7 +9,7 @@ destinationType: "region"
 summary: "Космодром Куру во Французской Гвиане: космический центр, запускающий спутники и другие аппараты, и Le Vieux Бург для отдыха и знакомства с местной кухней."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/french-gviana/4.jpg"
+  src: /media/countries/french-guiana/featureBands-2-enhanced-20261002.webp
   alt: "На фото: запуск ракеты с космодрома Куру во Французской Гвиане"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN6532_13.jpg"

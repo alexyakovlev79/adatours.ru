@@ -52,7 +52,7 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/san-ignacio.jpg
+  - src: /media/destinations/san-ignasio/hero-enhanced-20261002.webp
     alt: Сан Игнасио
 - day: 3
   title: Медицинская тропа Панти и ферма бабочек
@@ -123,7 +123,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/ambergris-caye-2.jpg
+  - src: /media/countries/belize/featureBands-3-enhanced-20261002.webp
     alt: Амбергрис-Кайе
 included:
 - 1 ночь в Best Western Biltmore Plaza в стандартном номере, налоги и завтрак включены.

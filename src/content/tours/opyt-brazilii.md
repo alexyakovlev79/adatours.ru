@@ -42,7 +42,7 @@ itinerary:
 
     Самые известные пляжи города - Копакабана, Ипанема и Леблон. Вдоль набережных работают открытые кафе, где можно заказать кокосовую воду, свежевыжатые соки и другие напитки. Первый день остается свободным, чтобы спокойно отдохнуть после перелета.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Сахарная Голова и исторический центр Рио
@@ -57,7 +57,7 @@ itinerary:
 
     Этот день специально соединяет 2 масштаба. Сначала Рио виден почти целиком, с океаном, заливом и горными массивами. Через несколько часов вы уже рассматриваете отдельные улицы и здания на уровне земли. Такой переход помогает связать географию города с его исторической частью, а не воспринимать Сахарную Голову как отдельную смотровую экскурсию.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: Корковадо, Христос Спаситель и Город Самбы
@@ -98,9 +98,9 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/iguacu%20new.png
+  - src: /media/tours/south-brazil-12d/itinerary/day-05-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -121,7 +121,7 @@ itinerary:
 
     Аргентинская сторона дополняет бразильскую именно близостью к воде. На предыдущем дне важен общий обзор системы каскадов, а здесь дорожки и платформы позволяют рассматривать отдельные потоки и проходить над руслом. Более длинная нижняя тропа подойдет тем, кто готов увеличить пешеходную нагрузку и провести у водопадов больше времени.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 6
   title: Игуасу - Рио-де-Жанейро - Висконди-де-Мауа
@@ -141,9 +141,9 @@ itinerary:
 
     Размещение в поусаде поддерживает этот формат. Вместо большого городского отеля здесь шале среди природы, бассейн с речной водой и горячая ванна с панорамным видом. Висконди-де-Мауа становится не просто остановкой между перелетом и Парати, а отдельной горной частью маршрута с другим климатом, ландшафтом и темпом.
   images:
-  - src: https://brasiltours.ru/image/iguacu%20new.png
+  - src: /media/tours/south-brazil-12d/itinerary/day-05-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 7
   title: Висконди-де-Мауа и водопады
@@ -178,7 +178,7 @@ itinerary:
 
     Также вы посетите **Дом муки Ouro Branco**, где показывают ручное производство маниоковой муки. По желанию можно попробовать свежий кофе и рападуру, традиционную бразильскую сладость.
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: Парати
 - day: 9
   title: Парати и Триндаде
@@ -197,7 +197,7 @@ itinerary:
 
     На обратном пути предусмотрена остановка на обед по желанию в ресторане Vagalume на Praia dos Ranchos.
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: Парати
 - day: 10
   title: Парати - Рио-де-Жанейро
@@ -206,9 +206,9 @@ itinerary:
   - Парати
   text: После завтрака трансфер в аэропорт Рио-де-Жанейро.
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: Парати
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 included:
 - Проживание в указанных отелях или аналогичных.

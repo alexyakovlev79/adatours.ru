@@ -200,7 +200,7 @@ itinerary:
 
     После экскурсии возвращение в Пуно.
   images:
-  - src: https://brasiltours.ru/image/lake%20titicaca%20peru.png
+  - src: /media/tours/peru-8d/itinerary/day-06-enhanced-20261001.webp
     alt: Озеро Титикака
 - day: 8
   title: Пуно - каньон Колка
@@ -319,7 +319,7 @@ itinerary:
 
     После экскурсии переезд на автобусе в Лиму. По прибытии трансфер и размещение в отеле Britania 3*.
   images:
-  - src: https://brasiltours.ru/image/lima.png
+  - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
     alt: Лима
   - src: https://brasiltours.ru/image/paracas2.png
     alt: Паракас

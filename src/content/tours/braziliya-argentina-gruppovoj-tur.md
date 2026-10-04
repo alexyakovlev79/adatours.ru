@@ -40,7 +40,7 @@ itinerary:
 
     С раннего утра до позднего вечера на пляжах играют в футбол и волейбол. Для активного отдыха доступны гольф, теннис, серфинг, рафтинг, дайвинг и полеты на дельтаплане. В прибрежных кафе подают кокосовую воду, свежие соки и другие напитки, а на пляжах часто выступают местные музыканты.
   images:
-  - src: https://brasiltours.ru/image/Ipanema-Beach11.png
+  - src: /media/tours/south-brazil-12d/itinerary/day-01-enhanced-20260930.webp
     alt: Ипанема
 - day: 2
   title: 'Рио-де-Жанейро: Корковадо и Христос Искупитель'
@@ -55,7 +55,7 @@ itinerary:
 
     Со смотровой площадки открывается панорама Рио: мост Нитерой, залив Гуанабара, Ботанический сад, стадион Маракана, Сахарная Голова и другие районы города.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: Статуя Христа и Корковадо
 - day: 3
   title: 'Рио-де-Жанейро: Сахарная Голова и старый центр'
@@ -70,7 +70,7 @@ itinerary:
 
     После спуска маршрут продолжается на автомобиле по старому центру Рио. Вы увидите исторические церкви, монастыри, главный кафедральный собор и здания колониального периода.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: Статуя Христа и Корковадо
 - day: 4
   title: Рио-де-Жанейро - Манаус
@@ -121,7 +121,7 @@ itinerary:
 
     Даже в обычные дни здесь можно увидеть круги капоэйры, попробовать акараже из бобов и креветок, жаренное в масле денде, и познакомиться с традициями Кандомбле. Рядом с Сальвадором расположены пляжные отели, в том числе работающие по системе all inclusive.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
   - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
     alt: Бразилия-Аргентина:групповой тур
@@ -138,7 +138,7 @@ itinerary:
 
     Дальше прогулка идет по узким улицам с пастельными фасадами. В программу входит церковь Сан-Франсиску с богатым барочным интерьером и позолотой, а также площадь Пелуринью, исторический центр старого города.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: Сальвадор
 - day: 8
   title: Сальвадор - Прайя-ду-Форте
@@ -162,9 +162,9 @@ itinerary:
 
     По прибытии встреча с водителем и трансфер в отель. Остаток дня свободный.
   images:
-  - src: https://brasiltours.ru/image/iguacu%20national%20park.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
 - day: 10
   title: Бразильская сторона водопадов Игуасу
@@ -193,7 +193,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/buen%20air.png
     alt: Буэнос-Айрес
-  - src: https://brasiltours.ru/image/iguacu%20national%20park.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 12
   title: Буэнос-Айрес

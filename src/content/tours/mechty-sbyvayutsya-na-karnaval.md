@@ -113,7 +113,7 @@ itinerary:
 
     Игуасу состоит из множества отдельных каскадов. Река подходит к длинной линии базальтовых уступов и распадается на потоки, часть которых скрыта лесом. Над ущельем почти постоянно висит водяная пыль. В следующие 2 дня вы увидите водопады с обоих берегов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Настил над каскадами Игуасу, смотровой мостик к Глотке Дьявола и брызги водопадов
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
     alt: Отдых на лучших пляжах Рио в Бразилии
@@ -152,7 +152,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba12.jpg
     alt: Купол Дворца Конгресса в Буэнос-Айресе, 80-метровый зеленый купол и бронзовая квадрига
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-8.jpg
+  - src: /media/tours/luxury-brazil-11d/gallery-1-src-enhanced-20261001.webp
     alt: Мощные водопады Игуасу в Бразилии и Аргентине, каскады и джунгли на границе
 - day: 8
   title: Буэнос-Айрес и танго-шоу

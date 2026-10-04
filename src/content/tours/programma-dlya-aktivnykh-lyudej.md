@@ -49,7 +49,7 @@ itinerary:
     text: |-
       Прилет в Буэнос-Айрес, встреча и трансфер в отель. После дороги остается время на размещение и отдых.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2

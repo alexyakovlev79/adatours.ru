@@ -173,7 +173,7 @@ priceFrom: 1475
 currency: USD
 priceNote: $1475
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/tanja-cotoaga-gvczokkp8bw-unsplash.jpg
+  src: /media/countries/mexico/featureBands-2-enhanced-20261002.webp
   alt: 'На фото: курорт Косумель в Мексике'
 routeCountries:
 - country_mexico

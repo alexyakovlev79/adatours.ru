@@ -188,7 +188,7 @@ itinerary:
 
     Недалеко от Салвадора расположены прибрежные курортные зоны с пляжами и отелями формата all inclusive.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
   - src: https://brasiltours.ru/image/countries/brazil/sao-paolo4.png
     alt: Сан-Паулу
@@ -219,7 +219,7 @@ itinerary:
 
     Прайя-ду-Форте находится примерно в 60 км к северу от Салвадора на так называемом побережье Кокосовых пальм.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: Сальвадор
 - day: 9
   title: Прайя-ду-Форте
@@ -278,7 +278,7 @@ priceFrom: 3510
 currency: USD
 priceNote: $3510
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-5.jpg
+  src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
   alt: 'Бразилия: Little Mix'
 routeCountries:
 - country_brazil

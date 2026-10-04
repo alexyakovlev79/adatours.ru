@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Сан-Педро-де-Атакама: Лунная долина, гейзеры Татио, лагуны Альтиплано, Атакамский солончак и археологический район Тулор."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/chile/san-pedro-atakama.jpg"
+  src: /media/countries/chile/featureBands-1-enhanced-20261002.webp
   alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/t/r/tree_jpg.jpg"

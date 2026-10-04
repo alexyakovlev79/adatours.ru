@@ -37,7 +37,7 @@ itinerary:
 
     После размещения можно отдохнуть после перелета и провести оставшееся время самостоятельно.
   images:
-  - src: https://brasiltours.ru/image/Buenos%20Aires.png
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'На фото: город Буэнос - Айрес, столица Аргентины'
 - day: 2
   title: Буэнос-Айрес и танго-шоу
@@ -68,7 +68,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
     alt: 'На фото: Эль Калафате. Патагония, Аргентина'
-  - src: https://brasiltours.ru/image/Buenos%20Aires.png
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'На фото: город Буэнос - Айрес, столица Аргентины'
 - day: 4
   title: Калафате и ледник Перито-Морено
@@ -84,7 +84,7 @@ itinerary:
 
     Затем экскурсия продолжится по территории парка на автобусе. По пути открываются новые виды на ледник и окружающие его горные пейзажи. После экскурсии возвращение в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/El%20Calafate.png
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-06-enhanced-20261001.webp
     alt: 'На фото: Эль Калафате. Патагония, Аргентина'
 - day: 5
   title: Калафате - Игуасу
@@ -97,7 +97,7 @@ itinerary:
 
     По прибытии предусмотрены встреча и трансфер в гостиницу. После размещения остается время для отдыха перед знакомством с водопадами.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу (Фоз Игуазу) Бразилия и Аргентина'
   - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
     alt: 'На фото: Эль Калафате. Патагония, Аргентина'
@@ -122,7 +122,7 @@ itinerary:
 
     После экскурсии по программе предусмотрен трансфер в аэропорт для вылета в Буэнос-Айрес. По прибытии встреча и трансфер в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Водопады Игуасу (Фоз Игуазу) Бразилия и Аргентина'
 - day: 7
   title: Бразильская сторона Игуасу - Рио-де-Жанейро
@@ -140,9 +140,9 @@ itinerary:
 
     По дороге к отелю появляются зеленые горы, высокие пальмы и океан. С наступлением сумерек город загорается огнями. На известных пляжах работают кафе, где можно попробовать напитки из свежих тропических фруктов.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: город Рио- де -Жанейро, Бразилия - смотровая площадка'
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу (Фоз Игуазу) Бразилия и Аргентина'
 - day: 8
   title: Рио-де-Жанейро и Сахарная Голова
@@ -155,7 +155,7 @@ itinerary:
 
     Затем вторая линия канатной дороги ведет на вершину Сахарной Головы. Перед вами раскрывается панорама Рио: Копакабана, Ипанема, залив Гуанабара, четкая линия моста Нитерой и Корковадо со статуей Христа Искупителя.
   images:
-  - src: https://brasiltours.ru/image/rio-de-janeiro-praiaantiga-1.png
+  - src: /media/tours/rio-de-janeiro-wedding/hero-enhanced-20260930.webp
     alt: 'На фото: город Рио- де -Жанейро, Бразилия'
 - day: 9
   title: Рио-де-Жанейро и Корковадо
@@ -170,7 +170,7 @@ itinerary:
 
     Со смотровой площадки город виден среди гор и океана: жилые кварталы, пляжи, залив и зеленые склоны складываются в одну широкую панораму.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: 'На фото: город Рио- де -Жанейро, Бразилия и статуя Христа'
 - day: 10
   title: Рио-де-Жанейро, вылет домой

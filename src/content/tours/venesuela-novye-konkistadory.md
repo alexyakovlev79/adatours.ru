@@ -209,7 +209,7 @@ priceFrom: 4741
 currency: USD
 priceNote: $4741
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/2.jpg
+  src: /media/countries/venezuela/hero-enhanced-20261002.webp
   alt: Венесуэла -Новые  Конкистадоры
 routeCountries:
 - country_venezuela

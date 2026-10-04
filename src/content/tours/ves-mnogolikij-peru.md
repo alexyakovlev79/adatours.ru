@@ -55,7 +55,7 @@ itinerary:
 
     После размещения свободное время.
   images:
-  - src: https://brasiltours.ru/image/Lima-Peru.png
+  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
     alt: 'на фото: город Лима, столица Перу'
 - day: 2
   title: Лима
@@ -82,7 +82,7 @@ itinerary:
 
     В этот день Лима раскрывается очень по-разному. Сначала вы стоите над Тихим океаном в Мирафлоресе, затем оказываетесь среди административных зданий и храмов исторического центра, заходите в старый особняк Casa Aliaga и завершаете день среди подсвеченных фонтанов. В доме Альяга особенно заметно соединение нескольких эпох: колониальный дом стоит на более древнем фундаменте, а внутри сохранились картины школы Куско, резная мебель и предметы искусства.
   images:
-  - src: https://brasiltours.ru/image/Lima.png
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
     alt: 'на фото: Тихоокеанское побережье Лимы, Перу'
 - day: 3
   title: Лима - Куско
@@ -234,7 +234,7 @@ itinerary:
 
     Поездка через Колку занимает почти весь день и проходит среди высокогорных пейзажей. Главная точка утром - Ла-Крус-дель-Кондор. Здесь путешественники ждут появления кондоров над каньоном и наблюдают, как крупные птицы используют восходящие потоки воздуха. Затем дорога к Арекипе снова проходит через смотровые площадки с видами на вулканы.
   images:
-  - src: https://brasiltours.ru/image/Arequipa.jpg
+  - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3-enhanced-20261001.webp
     alt: 'на фото: Белый город Арекипа в Перу'
 - day: 10
   title: Арекипа - Лима
@@ -256,7 +256,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/lima%20pacific.png
     alt: 'на фото: город Лима, столица Перу'
-  - src: https://brasiltours.ru/image/Arequipa.jpg
+  - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3-enhanced-20261001.webp
     alt: 'на фото: Белый город Арекипа в Перу'
 - day: 11
   title: Лима
@@ -292,7 +292,7 @@ itinerary:
 
     При музее работает ресторан национальной кухни Café del Muzeo.
   images:
-  - src: https://brasiltours.ru/image/Lima-Peru.png
+  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
     alt: 'на фото: город Лима, столица Перу'
 included:
 - Внутренние авиаперелеты Лима - Куско и Арекипа - Лима

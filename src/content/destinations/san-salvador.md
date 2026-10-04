@@ -12,7 +12,7 @@ destinationType: city
 summary: >-
   Сан-Сальвадор — столица Эль-Сальвадора, основанная в 1546 году. Город расположен в долине Валье-де-лас-Амакас у вулкана Кетцальтепек; колониальная архитектура здесь соседствует с современной городской застройкой.
 hero:
-  src: https://brasiltours.ru/image/countries/el-salvador/4.jpg
+  src: /media/countries/el-salvador/featureBands-3-enhanced-20261002.webp
   alt: "На фото: вулкан на фоне Сан-Сальвадора в Эль-Сальвадоре"
 gallery:
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN4975_7.jpg

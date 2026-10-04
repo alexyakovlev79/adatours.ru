@@ -90,7 +90,7 @@ itinerary:
 
     Ночь в Гватемала-Сити, отель Barceló.
   images:
-  - src: https://brasiltours.ru/image/countries/guatemala/guatemala-city.jpg
+  - src: /media/destinations/guatemala-city/hero-enhanced-20261003.webp
     alt: Гватемала-Сити
 - day: 4
   title: Гватемала-Сити - Сан-Сальвадор
@@ -104,7 +104,7 @@ itinerary:
 
     Ночь в Сан-Сальвадоре, отель La-Terraza.
   images:
-  - src: https://brasiltours.ru/image/countries/guatemala/guatemala-city.jpg
+  - src: /media/destinations/guatemala-city/hero-enhanced-20261003.webp
     alt: Гватемала-Сити
 - day: 5
   title: Хойя-де-Серен - Сан-Андрес - Тасумаль

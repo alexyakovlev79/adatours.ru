@@ -9,7 +9,7 @@ destinationType: "route_cluster"
 summary: "Пуэрто Наталес и Торрес дель Пайне: фьорд Ультима Эсперанса, пещера Милодон, горные озера, ледники и водопады Чилийской Патагонии."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/chile/5-chile-torres-del-paine.jpg"
+  src: /media/countries/chile/hero-enhanced-20261002.webp
   alt: "На фото: парк Торрес дель Пайне в Чили"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN17764_33.jpg"

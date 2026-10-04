@@ -116,7 +116,7 @@ itinerary:
 
     Дополнительно можно заказать экскурсию к водопадам с аргентинской стороны.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу (Фоз Игуазу) в Аргентине и Бразилии'
   - src: https://brasiltours.ru/image/brazil%20logo.png
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро, Бразилия'
@@ -135,7 +135,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу (Фоз Игуазу) в Аргентине и Бразилии'
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -154,7 +154,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
     alt: 'На фото: курорт Бузиос, Бразилия'
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу (Фоз Игуазу) в Аргентине и Бразилии'
 - day: 8
   title: Бузиос

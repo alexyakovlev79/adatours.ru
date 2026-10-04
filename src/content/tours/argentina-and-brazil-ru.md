@@ -57,7 +57,7 @@ itinerary:
   text: Завтрак в отеле. Индивидуальный трансфер в аэропорт и перелет в Эль-Калафате. По прибытии индивидуальный трансфер
     с водителем в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Достопримечательности Буэнос-Айреса'
 - day: 4
   title: Эль-Калафате и ледник Перито-Морено
@@ -71,7 +71,7 @@ itinerary:
 
     Ледник постоянно движется. От него откалываются массивные фрагменты льда, которые с глухим грохотом падают в воду и поднимают волны. За ледяной стеной удобно наблюдать со смотровых площадок. Бело-голубые пласты льда меняют цвет в зависимости от света, а треск и обвалы слышны еще до того, как удается увидеть место падения. Именно близость смотровых площадок делает Перито-Морено одним из самых впечатляющих ледников Патагонии для путешественников.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Ледник Перито-Морено'
 - day: 5
   title: Эль-Калафате - Фоз-де-Игуасу
@@ -174,7 +174,7 @@ priceFrom: 2788
 currency: USD
 priceNote: $2788
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0035.jpg
+  src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
   alt: 'На фото: Национальный парк Игуасу'
 routeCountries:
 - country_argentina

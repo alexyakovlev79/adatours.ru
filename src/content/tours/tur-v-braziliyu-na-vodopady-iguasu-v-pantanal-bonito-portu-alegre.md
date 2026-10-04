@@ -155,7 +155,7 @@ itinerary:
 
     Вечером трансфер в аэропорт Кампу-Гранди и перелет в Игуасу. Встреча в аэропорту и трансфер в **Belmond das Cataratas**.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу, Бразилия'
   - src: https://brasiltours.ru/image/BRA%20BONITO%202.png
     alt: 'На фото: круиз по реке в Бонито, Бразилия'
@@ -168,7 +168,7 @@ itinerary:
 
     По пешеходным дорожкам и смотровым площадкам можно рассмотреть водопады с разных сторон и подойти к знаменитому «Горлу дьявола», где вода обрушивается особенно мощным потоком и воздух заполнен мельчайшими брызгами.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу, Бразилия'
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -179,7 +179,7 @@ itinerary:
   - Порту-Алегри
   text: После завтрака трансфер в аэропорт и перелет в Порту-Алегри. По прибытии встреча и трансфер в **Sheraton Porto Alegre**.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: водопады Игуасу, Бразилия'
 - day: 11
   title: Бенту-Гонсалвис
@@ -204,7 +204,7 @@ itinerary:
 
     После программы трансфер в **Parador Casa da Montanha**.
   images:
-  - src: https://brasiltours.ru/image/gramadu%20b.png
+  - src: /media/tours/south-brazil-12d/gallery-1-src-enhanced-20261001.webp
     alt: На фото:город Грамаду в Бразилии
 - day: 13
   title: Порту-Алегри
@@ -234,7 +234,7 @@ priceFrom: 14051
 currency: USD
 priceNote: $14051
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/bra-bonito-1-1.jpg
+  src: /media/destinations/bonito/hero-enhanced-20261001.webp
   alt: 'На фото: пещера в Бонито Бразилия'
 routeCountries:
 - country_brazil

@@ -59,7 +59,7 @@ itinerary:
 
     В канун Нового года набережная постепенно наполняется людьми. Для многих бразильцев белая одежда в эту ночь связана с пожеланием мира и удачи, а цветы и свечи становятся частью праздничной традиции на берегу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-111.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Лучшие пляжи Рио-де-Жанейро, Бразилия
 - day: 2
   title: ', 31 декабря. Корковадо и встреча 2027 года на Копакабане'
@@ -101,7 +101,7 @@ itinerary:
 
     Во время сити-тура можно увидеть, как историческая застройка соседствует с современными кварталами. Кафедральный собор Сан-Себастьян сильно отличается от классических европейских соборов своей формой, а лестница Селарона стала одной из самых узнаваемых городских деталей.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-111.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Лучшие пляжи Рио-де-Жанейро, Бразилия
 - day: 4
   title: ', 2 января. Перелет Рио-де-Жанейро - Игуасу'
@@ -120,9 +120,9 @@ itinerary:
 
     Водопады Игуасу воспринимаются как целая система, а не как один поток. Каскады распределены по большой территории, поэтому впечатление меняется от точки к точке: сначала видна общая панорама, затем отдельные струи и огромные стены воды, а ближе к главным площадкам брызги постоянно висят в воздухе.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Панорама водопадов Игуасу с бразильской стороны
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-111.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Лучшие пляжи Рио-де-Жанейро, Бразилия
 - day: 5
   title: ', 3 января. Бразильская сторона водопадов Игуасу'
@@ -151,7 +151,7 @@ itinerary:
 
     Стоимость - $50 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Панорама водопадов Игуасу с бразильской стороны
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -177,7 +177,7 @@ itinerary:
 
     Аргентинская сторона отличается от бразильской тем, что дорожки проходят непосредственно среди потоков. На нижнем маршруте каскады видны снизу и сбоку, на верхнем можно наблюдать движение воды перед падением. Глотка Дьявола завершает эту часть поездки самым мощным впечатлением: мостки приводят почти к самому краю огромного водного провала.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Панорама водопадов Игуасу с бразильской стороны
   - src: https://brasiltours.ru/image/countries/argentina/new-photos/8.jpg
     alt: Исторические здания и район Сан-Тельмо в Аргентине,  Буэнос-Айрес
@@ -198,7 +198,7 @@ itinerary:
 
     Буэнос-Айрес раскрывается через очень разные районы. Ла-Бока запоминается яркими фасадами, Сан-Тельмо - старой городской застройкой и кафе, а Пласа-де-Майо связывает экскурсию с политической и исторической частью города. Вечернее танго меняет настроение дня: после прогулки по улицам действие переносится в зал, где музыка и движение становятся главным языком.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/nico-chamorro-coscia-2hfmlbmfd14-unsplash.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-07-enhanced-20260930.webp
     alt: Общий вид на здание Конгресса и Метрополитен в Буэнос-Айресе, Аргентина
 - excursionRef: excursion_buenos_aires_tango_show_optional_dinner
   places: []

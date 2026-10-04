@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Колониальный город Никарагуа, основанный в 1524 году. Старинные церкви, крепость Ла-Польвора, сувенирные лавки и кофейни на улицах старого города."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/nikaragua/3.jpg","alt":"На фото: город Гранада в Никарагуа"}
+hero: {"src":/media/countries/nicaragua/featureBands-2-enhanced-20261002.webp,"alt":"На фото: город Гранада в Никарагуа"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/3/5/35.JPG","alt":"На фото: город Гранада в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/2/0/2003-02-01_Ratay-Granada.jpg","alt":"На фото: город Гранада в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22834_8.jpg","alt":"На фото: город Гранада в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN3163_7.jpg","alt":"На фото: город Гранада в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/N/i/NightStreet.jpg","alt":"На фото: город Гранада в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17639_4.jpg","alt":"На фото: город Гранада в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_4_3.jpg","alt":"На фото: город Гранада в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_23_28.jpg","alt":"На фото: город Гранада в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/G/r/Granada.jpg","alt":"На фото: город Гранада в Никарагуа"}]
 facts: []
 featureBands: []

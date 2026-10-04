@@ -38,7 +38,7 @@ itinerary:
 
     После заселения остаток дня свободен. Можно выйти к Атлантике, пройтись вдоль широкой полосы пляжа или самостоятельно познакомиться с ближайшими районами Рио. Вечером город особенно хорошо показывает свой рельеф: темные массивы гор поднимаются почти сразу за кварталами, вдоль воды тянутся огни, а на склонах фавел загораются плотные россыпи окон. Это первый спокойный вечер перед 2 насыщенными экскурсионными днями.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Вертолетная экскурсия над Рио, Бразилия
 - day: 2
   title: Сахарная голова и колониальный центр Рио
@@ -53,7 +53,7 @@ itinerary:
 
     После спуска вы отправитесь в центр Рио. В программе каменные церкви XVII-XVIII веков, монастыри, колониальные фасады и главный городской собор. После открытых панорам Сахарной головы эта часть экскурсии показывает другой Рио: узкие улицы, старые здания и места, связанные с колониальной историей города.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Вертолетная экскурсия над Рио, Бразилия
 - day: 3
   title: Корковадо и статуя Христа Искупителя
@@ -95,7 +95,7 @@ itinerary:
 
     После Рио пейзаж и впечатления резко меняются. Здесь главной частью дня становится вода. Река Игуасу разбивается на сотни потоков, которые падают с высоты до 80 м. Гул слышен еще до выхода к основным обзорным точкам, а в воздухе постоянно висит водяная пыль. Она оседает на коже, одежде и камнях, поэтому водопады ощущаются задолго до того, как открывается главная панорама.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Панорама водопадов Игуасу, Бразилия
 - day: 5
   title: Бразильская сторона водопадов Игуасу
@@ -122,7 +122,7 @@ itinerary:
 
     **Стоимость:** USD 130 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Водопады Игуасу, вид с бразильской стороны
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -180,7 +180,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
     alt: Гигантская кувшинк (Виктория Амазонская), Пантанал, Бразилия
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Вертолетная экскурсия над Рио, Бразилия
 - day: 10
   title: Свободные дни в Бузиосе
@@ -219,7 +219,7 @@ itinerary:
 
     К этому моменту маршрут охватывает 4 очень разные части страны: большой прибрежный город, систему водопадов, внутреннюю природную территорию и океанское побережье. Такой порядок дает несколько дней для активных экскурсий в начале и середине поездки, а финал оставляет несколько свободных дней у океана перед обратным перелетом в спокойном темпе.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Вертолетная экскурсия над Рио, Бразилия
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/tadeu-jnr-wijh1xipfxc-unsplash.jpg
     alt: Закат в Бузиосе, лодки в гавани

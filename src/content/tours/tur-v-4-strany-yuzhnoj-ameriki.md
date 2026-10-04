@@ -132,7 +132,7 @@ itinerary:
 
     После экскурсии возвращение в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/El%20Calafate.png
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-06-enhanced-20261001.webp
     alt: 'На фото: ледники Эль Калафате, Патагония, Аргентина'
 - day: 7
   title: Эль-Калафате - Буэнос-Айрес
@@ -148,7 +148,7 @@ itinerary:
 
     В Буэнос-Айресе легко заполнить свободный вечер по своему вкусу: попробовать аргентинское мясо, пройтись по центральным улицам или выбрать музей. Город одинаково интересен тем, кто едет за архитектурой, гастрономией, искусством или вечерней жизнью.
   images:
-  - src: https://brasiltours.ru/image/Buenos%20Aires.png
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, Буэнос -Айрес'
   - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
     alt: 'На фото: ледники Эль Калафате, Патагония, Аргентина'
@@ -208,7 +208,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
     alt: 'На фото: город Монтевидео, Уругвай'
-  - src: https://brasiltours.ru/image/Buenos%20Aires.png
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, Буэнос -Айрес'
 - day: 11
   title: Буэнос-Айрес - Фоз-ду-Игуасу, аргентинская сторона водопадов
@@ -234,7 +234,7 @@ itinerary:
 
     После экскурсии предусмотрен трансфер в гостиницу на бразильской стороне.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: тропические Водопады Игуасу  в Аргентине и Бразилии'
   - src: https://brasiltours.ru/image/buenos-aires.png
     alt: 'На фото: столица Аргентины, Буэнос -Айрес'
@@ -257,7 +257,7 @@ itinerary:
 
     **Парк птиц - USD 50 на человека.** Парк расположен недалеко от национального парка Игуасу.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: 'На фото: тропические Водопады Игуасу  в Аргентине и Бразилии'
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -276,7 +276,7 @@ itinerary:
 
     На известных пляжах работают кафе, где можно попробовать напитки из свежих тропических фруктов. Горы подходят к городской застройке почти вплотную, а океан появляется между кварталами и склонами. Уже в первый вечер хорошо видно, почему Рио воспринимается прежде всего через сочетание природы и города. Остаток дня можно посвятить отдыху.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер в Рио-де-Жанейро Бразилия'
   - src: https://brasiltours.ru/image/iguasu%20national%20park.png
     alt: 'На фото: тропические Водопады Игуасу  в Аргентине и Бразилии'
@@ -300,7 +300,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
     alt: Бузиос
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: 'На фото: город Рио- де-Жанейро в Бразилии'
 - day: 15
   title: Бузиос
@@ -340,7 +340,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Buzios.png
     alt: 'На фото: курорт Бузиос и пляжный отдых в Бразилии'
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер в Рио-де-Жанейро Бразилия'
 included:
 - Проживание в отелях 4* с завтраком.

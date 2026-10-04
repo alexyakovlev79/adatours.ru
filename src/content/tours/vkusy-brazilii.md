@@ -103,7 +103,7 @@ itinerary:
 
     Позднее появился более удобный путь через Рио, и прежний маршрут потерял значение. Это помогло Парати сохранить старую застройку. Со временем город стал курортом, куда приезжают ради колониальной архитектуры, пляжей и природы побережья.
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: Парати
   - src: https://brasiltours.ru/image/Ilha%20Grande.png
     alt: Илья-Гранди
@@ -118,7 +118,7 @@ itinerary:
 
     Город давно привлекает художников, скульпторов и других представителей творческой среды. Их сюда приводят историческая застройка и природа окрестностей. Парати признан ЮНЕСКО одним из важнейших памятников португальской колониальной архитектуры. Исторический центр воспринимается как большой музей под открытым небом, где обычная прогулка проходит среди домов и улиц, сохранивших облик прошлых столетий.
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: Парати
 - day: 8
   title: Парати - Рио-де-Жанейро
@@ -127,7 +127,7 @@ itinerary:
   - Парати
   text: Завтрак. Трансфер в аэропорт Рио-де-Жанейро для международного перелета.
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: Парати
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
     alt: Рио-де-Жанейро

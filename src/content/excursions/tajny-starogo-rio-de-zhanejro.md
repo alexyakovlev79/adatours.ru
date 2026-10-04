@@ -20,7 +20,7 @@ hero:
   src: https://brasiltours.ru/image/countries/brazil/starij-rio1920.jpg
   alt: Исторический центр Рио-де-Жанейро
 gallery:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-de-janeiro1.jpg
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp
     alt: Панорама Рио-де-Жанейро
   - src: https://brasiltours.ru/image/Río_de_Janeiro%20teatre.png
     alt: Городской театр Рио-де-Жанейро

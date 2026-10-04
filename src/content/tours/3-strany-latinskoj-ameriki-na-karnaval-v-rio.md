@@ -106,7 +106,7 @@ itinerary:
 
     Рядом находится система водопадов Игуасу. В этот день обязательных экскурсий нет. Можно отдохнуть после перелета и подготовиться к прогулкам у воды: взять удобную нескользкую обувь и защиту для техники от брызг.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Граница Аргентины и Бразилии у водопадов Игуасу, каскады и облако брызг над рекой
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/ugur-arpaci-u18v0toiofu-unsplash.jpg
     alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио
@@ -157,7 +157,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba2.jpg
     alt: Ночной вид на деловой центр Буэнос-Айреса
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Граница Аргентины и Бразилии у водопадов Игуасу, каскады и облако брызг над рекой
 - day: 8
   title: Буэнос-Айрес и танго-шоу

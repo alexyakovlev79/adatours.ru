@@ -85,7 +85,7 @@ itinerary:
 
     Рио встречает совсем другой картиной: зеленые холмы, бухта Гуанабара, океан и длинные пляжи. Копакабана, Ипанема и Леблон известны черно-белой плиткой на набережных, пляжными кафе и постоянной городской жизнью у воды. С раннего утра на песке играют в футбол и волейбол, вдоль берега работают открытые кафе с кокосовой водой и свежими соками, а на пляжах выступают музыканты. Для активного отдыха в городе доступны серфинг, дайвинг, теннис, гольф, рафтинг и дельтапланеризм. Остаток дня можно провести самостоятельно.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Закат на Рио-де-Жанейро'
 - day: 6
   title: Сахарная Голова и обзорная экскурсия по Рио
@@ -96,7 +96,7 @@ itinerary:
 
     С вершины открывается вид на Копакабану, залив, острова, мост Нитерой и статую Христа на Корковадо. После спуска экскурсия продолжается по городу. Размещение в Arena Leme Copacabana, ужин и ночевка.
   images:
-  - src: https://brasiltours.ru/image/rio%20beach.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Пляж в Рио-де-Жанейро'
 - day: 7
   title: Корковадо, Христос-Искупитель и свободный вечер
@@ -117,7 +117,7 @@ itinerary:
   - Рио-де-Жанейро
   text: Трансфер из отеля в аэропорт для вылета.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Закат на Рио-де-Жанейро'
 included:
 - Все трансферы в автомобилях с кондиционером.
@@ -146,7 +146,7 @@ priceFrom: 5358
 currency: USD
 priceNote: $5358
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/chapada-waterfall.jpg
+  src: /media/tours/south-brazil-12d/itinerary/day-08-enhanced-20260930.webp
   alt: 'На фото: Водопады Фос Ду Игуасу'
 routeCountries:
 - country_brazil

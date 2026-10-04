@@ -51,7 +51,7 @@ itinerary:
 
     Черно-белая плитка на набережных, песок, пальмы и кафе с холодной кокосовой водой создают первое знакомство с Рио еще до начала экскурсий. В этом маршруте город получает 3 ночи, поэтому после перелета можно провести вечер спокойно, оставив Корковадо и Сахарную Голову на следующие дни.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: 'Рио-де-Жанейро: Сахарная Голова'
@@ -77,7 +77,7 @@ itinerary:
 
     Поезд поднимается через лес к вершине Корковадо. На высоте около 700 м находится статуя Христа высотой 38 м, построенная в 1931 году. Со смотровой площадки открывается панорама города, залива Гуанабара, моста Нитерой, Ботанического сада, стадиона Маракана и Сахарной Головы.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 4
   title: Рио-де-Жанейро - Игуасу
@@ -90,7 +90,7 @@ itinerary:
 
     Комплекс Игуасу включает 275 водных потоков. Водопады расположены на границе Бразилии и Аргентины. Главная часть системы связана с ущельем «Глотка Дьявола». Вода падает с высоты до 72 м, а шум слышен за несколько километров. Смотровые площадки и пешеходные переходы позволяют подходить к каскадам с разных сторон.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%201.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-13-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/stairs%20rio.png
     alt: Рио-де-Жанейро
@@ -109,7 +109,7 @@ itinerary:
 
     Еще одна дополнительная экскурсия - Парк птиц за USD 50 с человека.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -127,7 +127,7 @@ itinerary:
 
     После экскурсии трансфер в аэропорт и перелет в Буэнос-Айрес. По прибытии встреча и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/riogid/buenosaires.png
     alt: Буэнос-Айрес
@@ -140,7 +140,7 @@ itinerary:
 
     В программу входят Ла-Бока, Сан-Тельмо, Пласа-Доррего, Пласа-де-Майо, Каса-Росада, 67-метровый Обелиск на Авениде 9 Июля, Реколета, церковь Эль-Пилар, современные районы Пуэрто-Мадеро, парк Лезама и парк 3 Февраля.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0035.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
     alt: Солнце, Танго, Вино и Атакама
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -287,7 +287,7 @@ priceFrom: 6600
 currency: USD
 priceNote: $6600
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0035.jpg
+  src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
   alt: Солнце, Танго, Вино и Атакама
 routeCountries:
 - country_brazil

@@ -133,7 +133,7 @@ itinerary:
 
     Затем возвращение на станцию, поезд обратно и трансфер в гостиницу в Куско.
   images:
-  - src: https://brasiltours.ru/image/cusco%20plaza%20de%20armas.png
+  - src: /media/tours/peru-8d/itinerary/day-04-enhanced-20261001.webp
     alt: Куско
 - day: 5
   title: Священная долина
@@ -405,7 +405,7 @@ priceFrom: 4129
 currency: USD
 priceNote: $4129
 hero:
-  src: https://brasiltours.ru/image/lima.png
+  src: /media/tours/peru-8d/hero-enhanced-20260930.webp
   alt: Весь Многоликий Перу  + Пляжи Тумбеса
 routeCountries:
 - country_peru

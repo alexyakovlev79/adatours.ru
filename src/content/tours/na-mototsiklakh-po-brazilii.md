@@ -119,7 +119,7 @@ itinerary:
     \ соседствуют с тропическим побережьем. Поэтому здесь мото-маршрут снова делает паузу и переключается с дороги на пешую\
     \ и морскую программу.\n\nВечером 3-часовая экскурсия по историческому центру."
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: 'На фото: город Парати в Бразилии'
   - src: https://brasiltours.ru/image/cable%20rio.png
     alt: 'На фото:  в Рио-де-Жанейро в Бразилии'
@@ -146,7 +146,7 @@ itinerary:
 
     По прибытии сдача мотоциклов и размещение в Mercure Jardins. К этому моменту круговой маршрут замыкается: после гор Минас-Жерайс, Рио и побережья Коста-Верде группа возвращается в город, где началось путешествие.
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: 'На фото: город Парати в Бразилии'
   - src: https://brasiltours.ru/image/So%20Paulo.png
     alt: 'На фото: город Сан-Пауло в Бразилии'

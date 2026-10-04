@@ -53,7 +53,7 @@ itinerary:
 
     Стоимость - от USD 230.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/davi-costa-1229343-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-03-enhanced-20260930.webp
     alt: Вид на Рио с фуникулера Сахарной Головы, панорама города, залива и океана с высоты
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []

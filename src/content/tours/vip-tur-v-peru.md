@@ -236,7 +236,7 @@ itinerary:
 
     Экскурсионная часть дня объединяет несколько ключевых памятников вокруг Куско. Саксайуаман известен гигантскими каменными блоками, Кориканча связан с культом Солнца, Тамбомачай - с водой и системой каналов, а Пука-Пукара выполнял охранную функцию. В результате перед перелетом в Лиму день остается полноценным продолжением знакомства с архитектурой и религиозными представлениями инков.
   images:
-  - src: https://brasiltours.ru/image/Lima.png
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
     alt: Лима
   - src: https://brasiltours.ru/image/cusco%202.png
     alt: Куско
@@ -279,7 +279,7 @@ sourceSnapshot: https://drive.google.com/file/d/1HgUcyEI4xTrOqyf_fBuwuYx7SVm8jUC
 durationDays: 12
 durationNights: 11
 hero:
-  src: https://brasiltours.ru/image/Lima-Peru.png
+  src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
   alt: 'Вип: Чили, Боливия и Перу'
 routeCountries:
 - country_chile

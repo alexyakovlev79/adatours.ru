@@ -17,7 +17,7 @@ destination: destination_brazil_sao_luis
 destinationName: Сан-Луис
 sourceSnapshot: https://drive.google.com/file/d/1IDFSVXvO7ggxj3FVSY3gp50CRWS4eBe6/view?usp=drivesdk
 hero:
-  src: https://brasiltours.ru/image/So%20Luis.png
+  src: /media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp
   alt: Сан-Луис
 ---
 

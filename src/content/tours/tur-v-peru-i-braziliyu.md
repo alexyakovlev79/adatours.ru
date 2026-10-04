@@ -69,7 +69,7 @@ itinerary:
 
     Продолжительность экскурсии около 4 часов. После возвращения в отель свободное время.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima-3.png
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/hero-enhanced-20261001.webp
     alt: На фото6 дворец в Лиме, Перу
 - day: 3
   title: Лима - Куско
@@ -129,7 +129,7 @@ itinerary:
 
     Общая продолжительность пути около 10 часов. К вечеру прибытие в Пуно и трансфер в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/cusco%20plaza%20de%20armas.png
+  - src: /media/tours/peru-8d/itinerary/day-04-enhanced-20261001.webp
     alt: 'На фото: город Куско. Перу'
 - day: 6
   title: Озеро Титикака и острова Урос - Лима
@@ -168,9 +168,9 @@ itinerary:
 
     Самый известный участок комплекса - Глотка Дьявола. К нему ведут пешеходные дорожки и смотровые площадки, откуда можно наблюдать за огромными массами воды и облаками брызг.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: 'НА фото: водопады Фоз Игуасу в Аргентине и Бразилии'
-  - src: https://brasiltours.ru/image/countries/peru/lima-3.png
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/hero-enhanced-20261001.webp
     alt: На фото6 дворец в Лиме, Перу
 - day: 8
   title: Бразильская сторона Игуасу
@@ -219,7 +219,7 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: 'НА фото: водопады Фоз Игуасу в Аргентине и Бразилии'
   - src: https://brasiltours.ru/image/lapa%20at%20ni.png
     alt: 'На фото: Лапа, Рио, Бразилия'
@@ -240,7 +240,7 @@ itinerary:
 
     На вечер предложен ресторан морепродуктов Marius. Указанная стоимость - **130 U$ на человека**.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: 'На фото: Статуя Христа Спасителя в городе Рио-де-Жанейро в Бразилии'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -310,7 +310,7 @@ priceFrom: 5529
 currency: USD
 priceNote: $5529
 hero:
-  src: https://brasiltours.ru/image/countries/peru/willian-justen-de-vasconcellos-667258-unsplash.jpg
+  src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
   alt: 'На фото: город инков Мачу Пикчу в Перу'
 routeCountries:
 - country_peru

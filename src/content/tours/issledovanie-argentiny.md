@@ -65,7 +65,7 @@ itinerary:
     text: |-
       Прибытие в международный аэропорт Эсейса. Сотрудники встречают вас в аэропорту, после чего предусмотрен частный трансфер в отель Dazzler. Первый день оставлен без насыщенной экскурсионной программы, чтобы спокойно разместиться после перелета.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
         alt: "На фото: Здание в Буэнос-Айресе"
         intendedSlot: "itinerary:day-1"
 
@@ -97,7 +97,7 @@ itinerary:
 
       Размещение в Dazzler Puerto Madryn, номер с видом на море. Так начинается патагонская часть маршрута.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/tigre-argentina1.png
+      - src: /media/excursions/ekskursiya-v-tigre-i-po-severnym-provintsiyam-buenos-ajresa/hero-enhanced-20261001.webp
         alt: "На фото: Пуэрто-Мадрин, Аргентина"
         intendedSlot: "itinerary:day-3"
 
@@ -221,7 +221,7 @@ itinerary:
 
       После прогулки экскурсия продолжается на воде. «Сафари» проходит по бухте Рико озера Аргентино и длится около 1 часа. Судно подходит к стене ледника и делает остановку, чтобы пассажиры могли рассмотреть ее с воды. Этот ракурс позволяет почувствовать высоту фронта и увидеть оттенки льда совсем иначе. Затем возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
         alt: "На фото: Смотровая площадка на ледник Перито Морено"
         intendedSlot: "itinerary:day-10"
 

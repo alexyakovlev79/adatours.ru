@@ -172,7 +172,7 @@ itinerary:
 
       Ушуайя становится самой южной точкой маршрута. Город расположен среди гор и воды, рядом с каналом Бигл и национальным парком «Огненная Земля».
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
         alt: "Переезд из Эль-Калафате в Ушуайю"
         intendedSlot: "itinerary:day-6"
 

@@ -179,7 +179,7 @@ itinerary:
 
     Возвращение в центр идет вдоль побережья. Затем паром обратно в Буэнос-Айрес и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_source_ekskursiya_po_montevideo
   places: []
@@ -218,7 +218,7 @@ itinerary:
 
     На обратном пути маршрут проходит через северные пригороды с крупными резиденциями и район Сан-Исидро. По дороге можно увидеть президентскую резиденцию Quinta de Olivos.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/tigre-trip.png
+  - src: /media/excursions/jekskursija-v-tigre/gallery-2-enhanced-20261001.webp
     alt: Тигре
   - src: https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg
     alt: Буэнос-Айрес
@@ -234,7 +234,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
     alt: Сантьяго-де-Чили
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: Буэнос-Айрес
 - day: 13
   title: Сантьяго-де-Чили

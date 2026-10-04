@@ -40,7 +40,7 @@ itinerary:
 
     После размещения в отеле свободное время и отдых.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: романтический закат на смотровой площадке в Рио-де-Жанейро, Бразилия'
 - day: 2
   title: Рио-де-Жанейро и Сахарная Голова
@@ -68,7 +68,7 @@ itinerary:
 
     После экскурсии возвращение в отель и отдых.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: 'На фото: вертолетная экскурсия на Статую Христа Искупителя в Рио, Бразилия'
 - day: 4
   title: свободный день в Рио
@@ -97,7 +97,7 @@ itinerary:
 
     **Продолжительность:** 8 часов.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: романтический закат на смотровой площадке в Рио-де-Жанейро, Бразилия'
 - excursionRef: excursion_source_botanical_garden
   places: []
@@ -130,7 +130,7 @@ itinerary:
 
     дополнительная экскурс
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
   - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
     alt: 'На фото: Рио-де-Жанейро, Бразилия'
@@ -165,7 +165,7 @@ itinerary:
 
       Если на момент путешествия аргентинская сторона водопадов будет закрыта, эта экскурсия заменяется на «Макуко Сафари».
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
 - day: 7
   title: Фоз-ду-Игуасу - Манаус
@@ -226,7 +226,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
     alt: 'На фото: курорт Бузиос и пляжный отдых в Бразилии'
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: романтический закат на смотровой площадке в Рио-де-Жанейро, Бразилия'
 - day: 10
   title: Бузиос

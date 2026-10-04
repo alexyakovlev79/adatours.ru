@@ -22,7 +22,7 @@ gallery:
     alt: ""
   - src: "https://brasiltours.ru/image/countries/brazil/surfing.jpg"
     alt: ""
-  - src: "https://brasiltours.ru/image/countries/brazil/bra-rio-de-janeiro1.jpg"
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp
     alt: ""
   - src: "https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-11-16-2-53-57.jpg"
     alt: ""

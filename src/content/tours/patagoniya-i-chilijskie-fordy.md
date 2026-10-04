@@ -173,7 +173,7 @@ itinerary:
     text: |-
       Утреннее прибытие в Ушуайю, Аргентина, и высадка с судна.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/ushuajya.jpg
+      - src: /media/destinations/ushuajya/hero-enhanced-20261002.webp
         alt: "Ушуайя, Аргентина"
         intendedSlot: "itinerary:day-9"
 included:

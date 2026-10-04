@@ -18,7 +18,7 @@ priceFrom: 69
 currency: "USD"
 priceNote: "Стоимость — $153. 2 участника — $95 на человека. 3 участника — $75 на человека. 4 участника — $72 на человека. Групповой тур — $69 на человека."
 hero:
-  src: "https://brasiltours.ru/image/Arequipa.jpg"
+  src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3-enhanced-20261001.webp
   alt: "на фото: Арекипа, белый город в Перу"
 gallery:
   - src: "https://brasiltours.ru/image/arequipa.png"

@@ -9,7 +9,7 @@ destinationType: "resort"
 summary: "Пунта дель Эсте: пляжный и активный отдых на курорте Уругвая. Вечером гостей ждут ночные клубы, рестораны и уличные кафе."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/uruguay/2.jpg"
+  src: /media/countries/uruguay/featureBands-3-enhanced-20261002.webp
   alt: "На фото: курорт Пунта дель Эсте в Уругвае"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22634_50.jpg"

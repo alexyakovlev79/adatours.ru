@@ -93,7 +93,7 @@ itinerary:
     \ предусмотрен ланч-бокс. Подъем занимает ориентировочно 4-5 часов, обратный путь - 2-3 часа. Вечером возвращение в отель.\n\
     \n**Размещение:** Finlandia 4*.  \n**Питание:** завтрак, ланч-бокс."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/quito.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
     alt: Кито
 - day: 4
   title: Треккинг на Пасочоа

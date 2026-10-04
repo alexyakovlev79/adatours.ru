@@ -63,7 +63,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/davi-costa-1229343-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-03-enhanced-20260930.webp
     alt: Канатная дорога на Сахарную Голову в Рио, подъем на гору и панорама залива Гуанабара
 - day: 3
   title: Корковадо, Христос-Спаситель и лес Тижука
@@ -111,7 +111,7 @@ itinerary:
 
     Вечером водитель встретит вас в порту и отвезет обратно в Рио.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/ilha-grande.jpg
+  - src: /media/destinations/ilha-grande/hero-enhanced-20261001.webp
     alt: Илья-Гранди в Бразилии, экскурсия на яхте по бухтам и пляжам Атлантического океана
 - day: 5
   title: Свободный день и Новый год на Копакабане
@@ -148,7 +148,7 @@ itinerary:
 
     Остаток дня свободный. Основная экскурсия по Игуасу запланирована на завтра.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Туристы на мостике над водопадами Игуасу в Бразилии
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/bonito/bonito-3.jpg
     alt: Подводное плавание в Бонито, Рио-да-Прата и Сукури, экотуризм и природа Бразилии
@@ -170,7 +170,7 @@ itinerary:
     title: Дополнительные экскурсии в Игуасу
     text: Можно добавить **Макуко-сафари**, полет на вертолете над водопадами и посещение Парка птиц.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Туристы на мостике над водопадами Игуасу в Бразилии
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -199,7 +199,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/bonito/bonito-7.jpg
     alt: Речной пейзаж в Бонито, прозрачная вода и зелень вокруг, экотуризм в Бразилии
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Туристы на мостике над водопадами Игуасу в Бразилии
 - day: 9
   title: Бонито. Сноркелинг в Рио-Сукури
@@ -223,7 +223,7 @@ itinerary:
 
     **Ограничение:** всего 8 человек в день.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bonito/bra-bonito-1-1.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-10-enhanced-20260930.webp
     alt: Голубая пещера Грута-ду-Лагу-Азул в Бонито, карстовое озеро и сталактиты Бразилии
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/bonito/bonito-3.jpg
     alt: Подводное плавание в Бонито, Рио-да-Прата и Сукури, экотуризм и природа Бразилии

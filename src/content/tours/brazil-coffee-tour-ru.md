@@ -56,7 +56,7 @@ itinerary:
 
     Со смотровой площадки открывается панорама города и окрестностей: мост Нитерой, залив Гуанабара, Ботанический сад, стадион Маракана, Сахарная Голова и другие районы Рио.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: Статуя Христа и Корковадо
 - day: 3
   title: 'Рио-де-Жанейро: свободный день'
@@ -111,7 +111,7 @@ itinerary:
 
     После экскурсии трансфер в отель. Вечером остается свободное время для отдыха после насыщенного дня в Рио.
   images:
-  - src: https://brasiltours.ru/image/iguacu%20national%20park.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/rio%20cocos.png
     alt: Рио-де-Жанейро
@@ -134,7 +134,7 @@ itinerary:
 
     Вечером водитель отвезет вас обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/iguacu%20national%20park.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 6
   title: Фос-ду-Игуасу - Рио-де-Жанейро
@@ -148,7 +148,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/stairs%20rio.png
     alt: Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/iguacu%20national%20park.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 7
   title: Рио-де-Жанейро - Барра-ду-Пираи - кофейная фазенда - Рио-де-Жанейро

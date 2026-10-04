@@ -26,7 +26,7 @@ gallery:
     alt: Руины археологического комплекса Пачакамак
   - src: https://brasiltours.ru/image/countries/peru/lima-2.png
     alt: Лима, столица Перу
-  - src: https://brasiltours.ru/image/countries/peru/lima-3.png
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/hero-enhanced-20261001.webp
     alt: Вид на Лиму
 route:
   - Лима

@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Пунта Аренас на берегу Магелланова пролива: исторический центр, памятник Магеллану и виды на город, пролив и Огненную Землю с холма Ла-Крус."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/chile/punta-arenas-2.jpg"
+  src: /media/countries/chile/featureBands-2-enhanced-20261002.webp
   alt: "На фото: пингвины в Пунта Аренас в Чили (Патагония)"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN14140_8.jpg"

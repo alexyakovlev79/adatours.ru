@@ -100,7 +100,7 @@ itinerary:
 
      После программы возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/cusco.png
+  - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
     alt: Куско
   - src: https://brasiltours.ru/image/lima%20plaza.png
     alt: Лима
@@ -120,7 +120,7 @@ itinerary:
 
     Во второй половине дня спуск в Агуас-Кальентес. Обед в ресторане национальной кухни. Затем поезд обратно в Куско, встреча на станции и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/cusco.png
+  - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
     alt: Куско
 - day: 5
   title: Куско или Священная долина
@@ -136,7 +136,7 @@ itinerary:
 
     В стоимость дополнительной поездки входит обед, шведский стол с блюдами национальной кухни.
   images:
-  - src: https://brasiltours.ru/image/cusco.png
+  - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
     alt: Куско
 - excursionRef: excursion_peru_sacred_valley_full_day
   places: []
@@ -156,7 +156,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/puno2.png
     alt: Пуно
-  - src: https://brasiltours.ru/image/cusco.png
+  - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
     alt: Куско
 - day: 7
   title: Озеро Титикака, Урос и Такиле - Лима
@@ -174,7 +174,7 @@ itinerary:
 
     Обед на острове. После возвращения в Пуно трансфер в аэропорт и перелет в Лиму. По прибытии встреча и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/lake%20titicaca%20peru.png
+  - src: /media/tours/peru-8d/itinerary/day-06-enhanced-20261001.webp
     alt: Озеро Титикака
   - src: https://brasiltours.ru/image/countries/peru/lima-plaza-de-armas.png
     alt: Лима
@@ -304,7 +304,7 @@ priceFrom: 3833
 currency: USD
 priceNote: $3833
 hero:
-  src: https://brasiltours.ru/image/lima.png
+  src: /media/tours/peru-8d/hero-enhanced-20260930.webp
   alt: Манящий Перу & Колумбия
 routeCountries:
 - country_peru

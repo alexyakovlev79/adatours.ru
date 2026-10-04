@@ -65,7 +65,7 @@ itinerary:
 
     После экскурсии остается свободное время. Закат можно встретить на Арпоадоре. Вечером можно посетить ресторан морепродуктов Marius; стоимость - $130 с человека.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: 'На фото: Статуя Христа и вид на Рио'
 - day: 4
   title: Свободный день и дополнительные экскурсии

@@ -18,7 +18,7 @@ priceFrom: 672
 currency: "USD"
 priceNote: "Стоимость — $1219. 2 участника — $855 на человека. 3 участника — $733 на человека. 4 участника — $672 на человека."
 hero:
-  src: "https://brasiltours.ru/image/Nazca.jpg"
+  src: /media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp
   alt: "на фото: Линии Наска в Перу"
 gallery:
   - src: "https://brasiltours.ru/image/paracas2.png"
@@ -29,7 +29,7 @@ gallery:
     alt: "на фото: Острова Бальестас (Islas Ballestas) в Перу"
   - src: "https://brasiltours.ru/image/naska%20peru.png"
     alt: "на фото: Линии Наска в Перу"
-  - src: "https://brasiltours.ru/image/Paracas_Candelabra.png"
+  - src: /media/tours/peru-8d/itinerary/day-07-enhanced-20261001.webp
     alt: ""
 route:
   - "Лима"

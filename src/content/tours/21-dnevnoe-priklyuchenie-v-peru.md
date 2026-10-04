@@ -46,7 +46,7 @@ itinerary:
 
     После регистрации и размещения остаток дня свободен. Можно прогуляться по улицам Мирафлореса и увидеть первое сочетание городской жизни и тихоокеанского побережья. Лима живет на контрасте старого и нового: исторические кварталы, современные районы, шумные улицы и виды на океан здесь соседствуют буквально в пределах одного города.
   images:
-  - src: https://brasiltours.ru/image/Lima-Peru.png
+  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
     alt: 'на фото: Лима'
 - day: 2
   title: Лима
@@ -80,9 +80,9 @@ itinerary:
 
     Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/Paracas_Candelabra.png
+  - src: /media/tours/peru-8d/itinerary/day-07-enhanced-20261001.webp
     alt: 'на фото: Паракас'
-  - src: https://brasiltours.ru/image/Lima-Peru.png
+  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
     alt: 'на фото: Лима'
 - day: 4
   title: Ика - Наска
@@ -144,7 +144,7 @@ itinerary:
 
     Ночь в Арекипе.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/kanon-kolka-69.jpg
+  - src: /media/excursions/kanon-kolka-i-polet-kondora/hero-enhanced-20261001.webp
     alt: 'на фото: Каньон Колка'
 - day: 8
   title: Пуно
@@ -350,7 +350,7 @@ itinerary:
   - Лима
   text: Свободный день в Лиме.
   images:
-  - src: https://brasiltours.ru/image/Lima-Peru.png
+  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
     alt: 'на фото: Лима'
 - day: 21
   title: Лима

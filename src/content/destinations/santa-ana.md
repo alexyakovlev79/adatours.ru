@@ -12,7 +12,7 @@ destinationType: city
 summary: >-
   Санта Ана — город на западе Эль-Сальвадора, основанный в 1569 году и известный под современным названием с 1708 года. Город является центром производства и торговли кофе и служит отправной точкой для поездок к озеру Коатепеке и Тасумалю.
 hero:
-  src: https://brasiltours.ru/image/countries/el-salvador/2.jpg
+  src: /media/countries/el-salvador/featureBands-1-enhanced-20261002.webp
   alt: "На фото: руины Тасумаля в Эль-Сальвадоре (Чальчуапа)"
 gallery:
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN22644_2.jpg

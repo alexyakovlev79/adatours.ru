@@ -90,7 +90,7 @@ itinerary:
 
     Доступны варианты продолжительностью от 6 до 13 минут.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: 'НА фото: статуя Христа в Рио-де-Жанейро в Бразилии'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -104,7 +104,7 @@ itinerary:
 
     По прибытии - трансфер в отель и отдых.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: водопады Игуасу (Фоз Игуазу) в Бразилии и Аргентине'
   - src: https://brasiltours.ru/image/catalog/product/2/0/2015-02-02_134748_2_3.png
     alt: На фото:Рио
@@ -133,7 +133,7 @@ itinerary:
 
     Стоимость - $50 с человека.
   images:
-  - src: https://brasiltours.ru/image/iguacu%20new.png
+  - src: /media/tours/south-brazil-12d/itinerary/day-05-enhanced-20260930.webp
     alt: 'На фото: водопады Игуасу (Фоз Игуазу) в Бразилии и Аргентине'
 - excursionRef: excursion_source_makuko_safari
   places: []

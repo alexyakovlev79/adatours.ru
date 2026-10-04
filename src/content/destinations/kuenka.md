@@ -12,7 +12,7 @@ destinationType: city
 summary: >-
   Куэнка была основана испанцами в 1557 году на месте инкского города. В старом центре сохранились мощеные улицы, колониальные здания, храмы и музеи, а рядом находятся Ингапирка и Эль-Каяс.
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/5.jpg
+  src: /media/excursions/kito-siti-tur-na-ves-den/hero-enhanced-20261001.webp
   alt: Куэнка, Эквадор
 gallery:
   - src: https://brasiltours.ru/image/catalog/category/f/i/file_3.jpg

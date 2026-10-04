@@ -146,7 +146,7 @@ itinerary:
 
     После программы возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
   - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
     alt: 'на фото: Центр Рио'
@@ -183,7 +183,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'на фото: Водопады Игуасу'
 - day: 6
   title: Игуасу - Рио-де-Жанейро - Бузиос

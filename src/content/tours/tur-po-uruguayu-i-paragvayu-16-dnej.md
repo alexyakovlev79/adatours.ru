@@ -235,7 +235,7 @@ itinerary:
     Фос-де-Игуасу, уже на бразильской стороне. После сухого Чако и центральных районов Парагвая меняется климат: впереди влажный
     тропический лес и водопады. Вечер в Фос-де-Игуасу остается паузой перед двумя следующими насыщенными днями.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/iguazu-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
     alt: Мостик над водой к Глотке Дьявола, Игуасу, Аргентина
 - day: 14
   title: Бразильская сторона Игуасу, Макуко-сафари и Парк птиц
@@ -247,7 +247,7 @@ itinerary:
     площадках брызги долетают до посетителей, а шум воды становится настолько сильным, что разговаривать рядом с каскадами
     трудно.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/017-macuco-safari.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp
     alt: Экскурсия Макуко-сафари на водопадах Игуасу, заплыв под каскады в Бразилии
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -263,7 +263,7 @@ itinerary:
     туман, брызги летят на площадку, а часть горизонта пропадает в белом облаке. После водопадов вы отправитесь к монументу
     Трех границ. Здесь у слияния Игуасу и Параны сходятся Бразилия, Аргентина и Парагвай.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/iguazu-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
     alt: Мостик над водой к Глотке Дьявола, Игуасу, Аргентина
 - day: 16
   title: Трансфер в аэропорт и вылет домой

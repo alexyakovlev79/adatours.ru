@@ -68,9 +68,9 @@ itinerary:
 
     После экскурсии возвращение в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Водопады Игуасу (Фоз Игуасу) в Аргентине и Бразилии'
-  - src: https://brasiltours.ru/image/rio-de-janeiro-praiaantiga-1.png
+  - src: /media/tours/rio-de-janeiro-wedding/hero-enhanced-20260930.webp
     alt: 'На фото: лучшие пляжи Рио де Жанейро, Бразилия'
 - day: 4
   title: Аргентинская сторона водопадов Игуасу
@@ -104,7 +104,7 @@ itinerary:
 
     После дороги время для отдыха. В Висконде-де-Мауа особенно заметен контраст с Рио и Игуасу. Здесь нет большого города и многолюдных смотровых площадок: вокруг горный воздух, лес, вода и небольшие поселения. Регион хорошо подходит для спокойных прогулок после нескольких насыщенных экскурсионных дней.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Водопады Игуасу (Фоз Игуасу) в Аргентине и Бразилии'
   - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
     alt: 'На фото: Рио на закате'
@@ -135,7 +135,7 @@ itinerary:
 
     Во время обзорной прогулки вы увидите основные достопримечательности исторического центра и почувствуете атмосферу города-музея под открытым небом. Мощеные улицы здесь сами становятся частью впечатления: исторический центр сохранил старую планировку, фасады домов и связь с портом. После горных дней в Висконде-де-Мауа Парати возвращает маршрут к океану, но уже в совсем другой обстановке, среди колониальной архитектуры и тихих улиц.
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: 'На фото: город Парати в Бразилии'
 - day: 8
   title: Парати - Тринидад
@@ -157,7 +157,7 @@ itinerary:
   - Парати
   text: После завтрака трансфер из Парати в аэропорт Рио-де-Жанейро для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/Paraty.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: 'На фото: город Парати в Бразилии'
   - src: https://brasiltours.ru/image/rio-de-janeiro-aerial.png
     alt: 'На фото: Рио де Жанейро, Бразилия'

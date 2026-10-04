@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Баньос у подножья вулкана Тунгурагуа: термальные источники, водопады в окрестностях и базилика из вулканического камня на центральной площади."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/equador/new/1.jpg"
+  src: /media/countries/ekvador/featureBands-3-enhanced-20261002.webp
   alt: "На фото: город Баньос в Эквадоре в Андах"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/8/0/800px-Ecuador_landscapenear_Banos.JPG"

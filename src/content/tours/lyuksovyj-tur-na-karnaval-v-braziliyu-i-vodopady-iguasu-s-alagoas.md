@@ -150,7 +150,7 @@ itinerary:
 
     После экскурсии остается свободное время.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/davi-costa-1229343-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-03-enhanced-20260930.webp
     alt: VIP билет на фуникулер Сахарная Голова в Рио
 - day: 5
   title: Свободный день и опциональная Angra dos Reis
@@ -183,7 +183,7 @@ itinerary:
 
     Поездка в Angra dos Reis, трансферы, лодка и обед в базовую стоимость не включены.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/angra/angra-dos-reis-3.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-04-enhanced-20260930.webp
     alt: Экскурсия на приватной лодке в Ангра-дус-Рейс, остановки для купания и снорклинга у райских пляжей
 - day: 6
   title: Рио - Игуасу, бразильская сторона, Macuco Safari, вертолет и Парк птиц
@@ -216,7 +216,7 @@ itinerary:
 
     В этом варианте программы Парк птиц включен в экскурсионный день, а не вынесен как дополнительная опция.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Глотка Дьявола и панорама водопадов Игуасу, каскады и туман над рекой в Южной Америке
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/ugur-arpaci-u18v0toiofu-unsplash.jpg
     alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио, яркие перья и улыбка
@@ -281,7 +281,7 @@ itinerary:
 
     После перелета оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Глотка Дьявола и панорама водопадов Игуасу, каскады и туман над рекой в Южной Америке
 - day: 9
   title: Алагоас
@@ -318,7 +318,7 @@ itinerary:
 
     Размещение продолжается в Kenoa Exclusive Beach Spa & Resort.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Глотка Дьявола и панорама водопадов Игуасу, каскады и туман над рекой в Южной Америке
 - day: 11
   title: Аэропорт Maceio и вылет домой

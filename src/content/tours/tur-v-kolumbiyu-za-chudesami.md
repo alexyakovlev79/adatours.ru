@@ -280,7 +280,7 @@ priceFrom: 2803
 currency: USD
 priceNote: $2803
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/2.jpg
+  src: /media/destinations/cartagena/hero-enhanced-20261003.webp
   alt: 'На фото: девушка в национальном костюме из Колумбии'
 routeCountries:
 - country_colombia

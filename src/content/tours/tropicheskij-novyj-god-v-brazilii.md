@@ -54,7 +54,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/roan-lavery-qr-8dl0ji3w-unsplash.jpg
     alt: Шампанское и встреча Нового года в Бразилии на пляже Копакабана
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
     alt: Статуя Христа Искупителя на горе Корковадо, Рио-де-Жанейро
 - day: 3
   title: 1 января. Сахарная Голова и центр Рио
@@ -84,7 +84,7 @@ itinerary:
 
     После прибытия предусмотрен трансфер в отель на побережье. Остаток дня можно посвятить отдыху.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Пляж Бузиос - бирюзовая вода и пальмы, пляжный отдых в Бразилии
 - day: 5
   title: 3-7 января. Свободные дни в Бузиосе
@@ -101,7 +101,7 @@ itinerary:
 
     На северо-востоке Бразилии есть Порту-де-Галиньяс, Пипа, Сальвадор, Жерикоакоара, Акираз, Порту-Сегуру и Транкозу. Перелет из Рио занимает около 2-3 часов. Эти курорты подойдут тем, кто любит длинные пляжи с прозрачной водой. Океан там часто теплее и спокойнее.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Пляж Бузиос - бирюзовая вода и пальмы, пляжный отдых в Бразилии
 - day: 6
   title: 3-7 января. Свободные дни в Бузиосе
@@ -117,7 +117,7 @@ itinerary:
 
     На северо-востоке Бразилии есть Порту-де-Галиньяс, Пипа, Сальвадор, Жерикоакоара, Акираз, Порту-Сегуру и Транкозу. Перелет из Рио занимает около 2-3 часов. Эти курорты подойдут тем, кто любит длинные пляжи с прозрачной водой. Океан там часто теплее и спокойнее.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Пляж Бузиос - бирюзовая вода и пальмы, пляжный отдых в Бразилии
 - day: 7
   title: 3-7 января. Свободные дни в Бузиосе
@@ -133,7 +133,7 @@ itinerary:
 
     На северо-востоке Бразилии есть Порту-де-Галиньяс, Пипа, Сальвадор, Жерикоакоара, Акираз, Порту-Сегуру и Транкозу. Перелет из Рио занимает около 2-3 часов. Эти курорты подойдут тем, кто любит длинные пляжи с прозрачной водой. Океан там часто теплее и спокойнее.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Пляж Бузиос - бирюзовая вода и пальмы, пляжный отдых в Бразилии
 - day: 8
   title: 3-7 января. Свободные дни в Бузиосе
@@ -149,7 +149,7 @@ itinerary:
 
     На северо-востоке Бразилии есть Порту-де-Галиньяс, Пипа, Сальвадор, Жерикоакоара, Акираз, Порту-Сегуру и Транкозу. Перелет из Рио занимает около 2-3 часов. Эти курорты подойдут тем, кто любит длинные пляжи с прозрачной водой. Океан там часто теплее и спокойнее.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Пляж Бузиос - бирюзовая вода и пальмы, пляжный отдых в Бразилии
 - day: 9
   title: 3-7 января. Свободные дни в Бузиосе
@@ -165,7 +165,7 @@ itinerary:
 
     На северо-востоке Бразилии есть Порту-де-Галиньяс, Пипа, Сальвадор, Жерикоакоара, Акираз, Порту-Сегуру и Транкозу. Перелет из Рио занимает около 2-3 часов. Эти курорты подойдут тем, кто любит длинные пляжи с прозрачной водой. Океан там часто теплее и спокойнее.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Пляж Бузиос - бирюзовая вода и пальмы, пляжный отдых в Бразилии
 - day: 10
   title: 8 января. Возвращение в Рио и вылет домой

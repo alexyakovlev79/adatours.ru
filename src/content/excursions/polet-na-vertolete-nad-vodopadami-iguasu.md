@@ -14,7 +14,7 @@ themes:
   - nature
 language: []
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
   alt: "Водопады Игуасу с воздуха"
 gallery: []
 route:

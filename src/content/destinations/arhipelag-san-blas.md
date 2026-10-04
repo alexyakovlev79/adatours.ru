@@ -9,7 +9,7 @@ destinationType: "island"
 summary: "Архипелаг вдоль карибского побережья Панамы. Туры с посещением деревень куна, рыбалка и дайвинг знакомят с островами Сан-Блас."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/panama/10.jpg","alt":"На фото: острова Сан-Блас в Панаме"}
+hero: {"src":/media/countries/panama/featureBands-3-enhanced-20261002.webp,"alt":"На фото: острова Сан-Блас в Панаме"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN14129_2.jpg","alt":"На фото: острова Сан-Блас в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/5/1/513999588_b498abfcc3_b.jpg","alt":"На фото: острова Сан-Блас в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/i/m/img_feature.jpg","alt":"На фото: острова Сан-Блас в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/1/0/1021557912_8d5cf76730_o.jpg","alt":"На фото: острова Сан-Блас в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN4976_6.jpg","alt":"На фото: острова Сан-Блас в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/0/2036384314_7a066db1b6_o.jpg","alt":"На фото: острова Сан-Блас в Панаме"}]
 facts: []
 featureBands: []

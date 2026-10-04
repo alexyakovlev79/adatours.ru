@@ -143,7 +143,7 @@ itinerary:
 
     Вечером отдых перед следующим насыщенным днем.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/5-chile-torres-del-paine.jpg
+  - src: /media/countries/chile/hero-enhanced-20261002.webp
     alt: Торрес-дель-Пайне на закате, Патагония, индивидуальный тур в Чили с Ada Tours.
 - day: 6
   title: Торрес-дель-Пайне и ледник Грей
@@ -167,7 +167,7 @@ itinerary:
 
     **Включено:** входные билеты в парк Торрес-дель-Пайне, навигация и обед.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/5-chile-torres-del-paine.jpg
+  - src: /media/countries/chile/hero-enhanced-20261002.webp
     alt: Торрес-дель-Пайне на закате, Патагония, индивидуальный тур в Чили с Ada Tours.
 - day: 7
   title: возвращение в Сантьяго и вылет домой

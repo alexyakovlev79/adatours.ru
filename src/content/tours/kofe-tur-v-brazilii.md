@@ -159,7 +159,7 @@ itinerary:
 
       Вечером водитель возвращает группу в отель.
   images:
-  - src: https://brasiltours.ru/image/iguacu%20new.png
+  - src: /media/tours/south-brazil-12d/itinerary/day-05-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
 - day: 6
   title: Фос-ду-Игуасу - Рио-де-Жанейро

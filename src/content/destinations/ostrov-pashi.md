@@ -9,7 +9,7 @@ destinationType: "island"
 summary: "Остров Пасхи: статуи моаи, Аху Тонгарики, вулкан Рано-Рараку, пляж Анакена и знакомство с культурой островитян."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/chile/thomas-griggs-thwov7i363y-unsplash.jpg"
+  src: /media/countries/chile/featureBands-3-enhanced-20261002.webp
   alt: "На фото: истуканы острова Пасхи в Чили"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/e/a/easter4.jpg"

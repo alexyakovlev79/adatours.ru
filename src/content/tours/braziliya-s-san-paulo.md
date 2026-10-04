@@ -57,7 +57,7 @@ itinerary:
 
     В завершение вы увидите элитные районы, современную архитектуру и квартал граффити.
   images:
-  - src: https://brasiltours.ru/image/san%20paolo%201.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
     alt: 'На фото: Собор Сан-Паулу'
 - day: 3
   title: Сан-Паулу - Манаус - Амазония
@@ -122,7 +122,7 @@ itinerary:
 
     Такое чередование делает программу особенно насыщенной: после большого мегаполиса и нескольких дней среди рек и леса вы снова возвращаетесь к городской Бразилии, но уже с совсем другим ощущением страны. За один маршрут меняются климат, транспорт, пейзажи и сам темп путешествия.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Заказ в Рио-де-Жанейро'
   - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
     alt: 'На фото: Река Амазонка'
@@ -141,7 +141,7 @@ itinerary:
 
     После спуска программа продолжается в старом центре Рио. Вы увидите исторические церкви, монастыри, главный собор и здания колониального периода.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: Вид сверху на Рио-де-Жанейро'
 - day: 7
   title: Корковаду и Христос-Искупитель
@@ -162,7 +162,7 @@ itinerary:
 
     Продолжительность полета: около 8-10 минут.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: 'На фото: Статуя Христа-Искупителя, Рио-де-Жанейро'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -177,9 +177,9 @@ itinerary:
 
     По прибытии трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу'
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Заказ в Рио-де-Жанейро'
 - day: 9
   title: Бразильская сторона Игуасу
@@ -202,7 +202,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Смотровая площадка на водопадах Игуасу'
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -223,7 +223,7 @@ itinerary:
 
     Здесь хорошо видно, как река собирается в мощный поток и исчезает в каньоне. После панорамной бразильской стороны эта часть позволяет рассмотреть Игуасу гораздо ближе.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу'
 - day: 11
   title: Игуасу - Сан-Паулу
@@ -236,9 +236,9 @@ itinerary:
 
     Перелет в Сан-Паулу и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Смотровая площадка на водопадах Игуасу'
-  - src: https://brasiltours.ru/image/san%20paolo%201.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
     alt: 'На фото: Собор Сан-Паулу'
 - day: 12
   title: Сан-Паулу

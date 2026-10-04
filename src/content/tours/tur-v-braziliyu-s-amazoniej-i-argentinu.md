@@ -52,7 +52,7 @@ itinerary:
 
     По дороге видны зеленые горы, высокие пальмы и океан. Вечером вдоль пляжей загораются огни, а в небольших кафе подают напитки из свежих тропических фруктов. Первый день остается спокойным, чтобы восстановиться после дороги и привыкнуть к климату.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: 'Рио-де-Жанейро: Корковадо'
@@ -65,7 +65,7 @@ itinerary:
 
     После экскурсии возвращение в гостиницу и отдых.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: Статуя Христа и Корковадо
 - day: 3
   title: 'Рио-де-Жанейро: Сахарная Голова'
@@ -136,7 +136,7 @@ itinerary:
 
     Можно попробовать акараже, пончики из бобов и креветок, жаренные в денде. В Салвадоре также сильны традиции кандомбле, религии с африканскими корнями. Даже вне карнавала город остается очень музыкальным и живым.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
   - src: https://brasiltours.ru/image/manaus,,.png
     alt: Манаус
@@ -165,7 +165,7 @@ itinerary:
 
     День можно провести у океана без плотной экскурсионной программы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
 - day: 9
   title: Салвадор - Фоз-ду-Игуасу
@@ -176,7 +176,7 @@ itinerary:
 
     По прибытии встреча и трансфер в отель. Остаток дня свободен для отдыха и прогулки по окрестностям.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-left.jpg
     alt: Сальвадор
@@ -207,7 +207,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Arg%20Buenos.png
     alt: Буэнос-Айрес
-  - src: https://brasiltours.ru/image/iguacu%20new.png
+  - src: /media/tours/south-brazil-12d/itinerary/day-05-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
 - day: 12
   title: 'Буэнос-Айрес: обзорная экскурсия и танго'
@@ -220,7 +220,7 @@ itinerary:
 
     Маршрут также включает район Ла-Бока, который связывают с историей аргентинского танго, пешеходную улицу Каминито, площадь Сан-Мартин и район Реколета.
   images:
-  - src: https://brasiltours.ru/image/Buenos%20Aires.png
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []

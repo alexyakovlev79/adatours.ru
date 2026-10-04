@@ -71,7 +71,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: Корковадо и Христос-Искупитель
@@ -138,9 +138,9 @@ itinerary:
 
     Стоимость: $65 на человека.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -173,7 +173,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 6
   title: Игуасу - Рио-де-Жанейро - Бузиос
@@ -197,7 +197,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Bra%20buzios%2012.png
     alt: Бузиос
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
 - day: 7
   title: Бузиос
@@ -268,7 +268,7 @@ priceFrom: 3269
 currency: USD
 priceNote: $3269
 hero:
-  src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
   alt: Лучшее в Бразилии за 9 дней
 routeCountries:
 - country_brazil

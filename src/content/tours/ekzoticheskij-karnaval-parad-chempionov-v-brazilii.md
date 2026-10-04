@@ -37,7 +37,7 @@ itinerary:
 
     Свободное время можно провести на набережной, у океана или отправиться знакомиться с вечерним Рио. В первый день нет плотной экскурсионной программы, поэтому после перелета можно спокойно привыкнуть к городу, пройтись по пляжу и оставить силы на следующий вечер, когда предстоит Парад Чемпионов.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'на фото: Закат над Рио'
 - day: 2
   title: Сахарная Голова и Парад Чемпионов
@@ -52,7 +52,7 @@ itinerary:
 
     После завершения парада организован обратный трансфер в отель. Парад продолжается глубокой ночью, поэтому этот день намеренно оставляет время для отдыха перед выездом на Самбадром и после возвращения.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'на фото: Канатная дорога на Сахарную Голову'
 - day: 3
   title: Корковадо и Христос-Спаситель
@@ -75,7 +75,7 @@ itinerary:
 
     На вечер можно выбрать ресторан морепродуктов Marius, ориентировочная стоимость — $130 с человека.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: 'на фото: Панорама Рио с Корковадо'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -87,9 +87,9 @@ itinerary:
   - Пуэрто Игуасу
   text: Завтрак в отеле. Трансфер в аэропорт и перелет в Фоз-де-Игуасу. По прибытии встреча и трансфер в выбранный отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: 'на фото: Вид на Рио'
 - day: 5
   title: Бразильская сторона водопадов Игуасу
@@ -118,7 +118,7 @@ itinerary:
 
     Стоимость - $170 с человека.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -137,7 +137,7 @@ itinerary:
 
     Национальный парк занимает 55 500 га. Помимо самих каскадов здесь сохраняются характерные для региона флора и фауна. Над водопадами часто образуются радуги, а с разных площадок открываются совершенно разные виды на ущелье и многочисленные потоки. Аргентинская сторона дополняет предыдущий день: здесь маршрут проходит непосредственно над и рядом с водой, поэтому водопады воспринимаются уже не как единая панорама, а как последовательность отдельных каскадов.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
 - day: 7
   title: Фоз-де-Игуасу - Манаус - Амазония
@@ -152,7 +152,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/BRA%20Amazonia%202.png
     alt: 'на фото: Амазонка'
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
 - day: 8
   title: Eco Lodge Evolution
@@ -216,7 +216,7 @@ itinerary:
     возвращает вас из курортного Бузиоса в Рио, где начиналось путешествие 10 дней назад. На этом заканчивается маршрут, объединивший
     Карнавал, 2 стороны Игуасу, Амазонию и отдых на Атлантическом побережье.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'на фото: Закат над Рио'
   - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
     alt: 'на фото: Бузиос'

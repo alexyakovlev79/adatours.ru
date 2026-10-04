@@ -18,7 +18,7 @@ priceFrom: 953
 currency: USD
 priceNote: "Основная стоимость — $953. Для группы из 2–4 человек — $477 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/uruguay/2.jpg
+  src: /media/countries/uruguay/featureBands-3-enhanced-20261002.webp
   alt: Пунта-дель-Эсте, Уругвай
 gallery:
   - src: https://brasiltours.ru/image/countries/uruguay/pirapolis.jpg

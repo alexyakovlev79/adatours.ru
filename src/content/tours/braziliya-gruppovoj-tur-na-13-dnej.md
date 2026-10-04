@@ -39,7 +39,7 @@ itinerary:
 
     На пляжах с утра до вечера играют в футбол и волейбол. Для активного отдыха доступны гольф, теннис, серфинг, рафтинг, дайвинг и полеты на дельтаплане. В прибрежных кафе подают кокосовую воду, свежие соки и другие напитки. На побережье часто выступают местные музыканты, поэтому даже свободное время в Рио легко провести без отдельной экскурсии.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: 'Рио-де-Жанейро: Корковадо'
@@ -54,7 +54,7 @@ itinerary:
 
     Со смотровой площадки открывается панорама города: мост Нитерой, залив Гуанабара, Ботанический сад, стадион Маракана и Сахарная Голова.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: 'Рио-де-Жанейро: Сахарная Голова и старый центр'
@@ -91,7 +91,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/manaus,,.png
     alt: Манаус
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: Манаус
@@ -124,7 +124,7 @@ itinerary:
 
     Город также известен карнавалом и пляжами вокруг Сальвадора, где расположены в том числе отели с системой all inclusive.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
   - src: https://brasiltours.ru/image/manaus,,.png
     alt: Манаус
@@ -153,7 +153,7 @@ itinerary:
 
     День отведен отдыху и купанию. После экскурсионных дней в Рио, Амазонии и Сальвадоре это более спокойная часть программы, когда можно провести время у океана перед перелетом к Игуасу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
 - day: 9
   title: Сальвадор - Фос-ду-Игуасу
@@ -180,7 +180,7 @@ itinerary:
 
     Особенно заметен контраст между спокойной рекой выше водопадов и мощным падением воды в каньон «Глотка дьявола». Высота составляет около 72 м. Водяная пыль, шум и постоянное движение потока делают эту часть поездки совсем непохожей на предыдущие городские и лесные дни.
   images:
-  - src: https://brasiltours.ru/image/iguacu%20new.png
+  - src: /media/tours/south-brazil-12d/itinerary/day-05-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
 - day: 11
   title: Аргентинская сторона Игуасу
@@ -193,7 +193,7 @@ itinerary:
 
     Во время групповой экскурсии вы пройдете по территории национального парка и увидите начало знаменитого «Горла дьявола».
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 12
   title: Фос-ду-Игуасу - Рио-де-Жанейро
@@ -207,7 +207,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/iguazu%20argentina%20side.png
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 13
   title: Рио-де-Жанейро
@@ -215,7 +215,7 @@ itinerary:
   - Рио-де-Жанейро
   text: После завтрака трансфер в аэропорт для международного вылета домой.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 included:
 - Проживание в указанных или аналогичных отелях с завтраком.

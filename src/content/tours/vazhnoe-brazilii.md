@@ -130,7 +130,7 @@ itinerary:
 
     Экскурсия проходит индивидуально с англоговорящим гидом.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-foz-right.jpg
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
     alt: Манаус
@@ -159,7 +159,7 @@ itinerary:
   - Фоз-ду-Игуасу
   text: В назначенное время трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-foz-right.jpg
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 included:
 - Проживание в отелях.

@@ -54,7 +54,7 @@ itinerary:
 
     Со смотровой площадки у статуи видны океан, пляжи, горы, лагуны и большая часть города. Здесь хорошо заметно, как Рио растянулся между скальными массивами и водой. Подъем через лес тоже становится частью поездки: за окнами постепенно исчезают плотные городские кварталы и появляется тропическая растительность. На вершине городской шум остается далеко внизу, а знакомые пляжи и залив складываются в одну панораму.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Полет на вертолете над Рио-де-Жанейро, Бразилия
 - day: 3
   title: Свободный день в Рио
@@ -77,7 +77,7 @@ itinerary:
 
     Можно выбрать короткий обзорный полет продолжительностью 6 минут или вариант на 13 минут, чтобы провести над городом больше времени.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-13.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-03-enhanced-20260930.webp
     alt: Исторический центр Рио-де-Жанейро, Бразилия
 - excursionRef: excursion_source_rio_nochyu
   places: []
@@ -108,7 +108,7 @@ itinerary:
 
     Для желающих предусмотрена возможность заказать видеозапись поездки.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Водопады Игуасу на границе Бразилии и Аргентины
 - excursionRef: excursion_source_rafain_shou
   places: []
@@ -131,7 +131,7 @@ itinerary:
 
     После прогулок возвращение в гостиницу. День на аргентинской стороне получается длиннее и более пешеходным, чем знакомство с водопадами со стороны Бразилии. Нижний и верхний круги показывают отдельные каскады под разным углом, а Глотка Дьявола завершает маршрут самым мощным потоком. В результате за 2 дня можно увидеть и общую панораму Игуасу, и детали отдельных водопадов почти с расстояния вытянутой руки.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/iguazu-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
     alt: Мосты над водопадами Игуасу, Бразилия и Аргентина
 - day: 6
   title: Игуасу - Рио-де-Жанейро
@@ -146,7 +146,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-lapa.jpg
     alt: Акведук Кариока в районе Лапа, Рио, Бразилия
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Водопады Игуасу на границе Бразилии и Аргентины
 - day: 7
   title: Кофейная долина, фазенды и дегустация
@@ -171,7 +171,7 @@ itinerary:
   - Рио-де-Жанейро
   text: После завтрака выезд из гостиницы и трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Полет на вертолете над Рио-де-Жанейро, Бразилия
 included:
 - Проживание в отелях.

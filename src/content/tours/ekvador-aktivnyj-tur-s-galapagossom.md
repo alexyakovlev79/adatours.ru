@@ -311,7 +311,7 @@ itinerary:
     \ в Пуэрто-Айору и свободное время: можно прогуляться по набережной, пирсу и небольшим улицам портового города.\n\n**Размещение:**\
     \ Villa Laguna 4*.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/galapagos.png
+  - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
     alt: 'На фото: на Галапагосских островах Эквадора'
 - day: 16
   title: Сеймур-Норте или Пласа-Сур
@@ -370,7 +370,7 @@ priceFrom: 7265
 currency: USD
 priceNote: $7265
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/56.jpg
+  src: /media/excursions/papallakta/gallery-2-enhanced-20261001.webp
   alt: 'На фото: Эквадорские леса и джунгли'
 routeCountries:
 - country_ecuador

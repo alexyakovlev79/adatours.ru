@@ -19,7 +19,7 @@ priceFrom: 258
 currency: USD
 priceNote: "Основная стоимость — $258. Для 2 человек — $156 на человека, для 3 человек — $141 на человека, для 4 человек — $102 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/medellin.jpg
+  src: /media/destinations/medellin/hero-enhanced-20261003.webp
   alt: Медельин, Колумбия
 gallery:
   - src: https://brasiltours.ru/image/countries/colombia/botero.jpg

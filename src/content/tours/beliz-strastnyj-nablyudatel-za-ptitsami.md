@@ -221,7 +221,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/ambergris-caye-2.jpg
+  - src: /media/countries/belize/featureBands-3-enhanced-20261002.webp
     alt: Амбергрис-Кайе
 included:
 - Встреча в аэропорту Meet & Greet.

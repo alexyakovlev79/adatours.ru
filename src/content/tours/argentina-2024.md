@@ -121,7 +121,7 @@ itinerary:
 
     Вы посетите 2-3 винодельни. Среди возможных вариантов Salentein, Clos de los Siete, Piedras Negras, Andeluna Cellars, Atamisque и другие. Во время посещений вы познакомитесь с уходом за виноградом, сбором урожая, производством, выдержкой и фракционированием разных типов вина. Гид объяснит основы дегустации, расскажет о роли бокалов и пробки. Завершится программа обедом на винодельне с местными винами.
   images:
-  - src: https://brasiltours.ru/image/mendoza.jpg
+  - src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
     alt: 'На фото: Указатель Мендоса, Аргентина'
 - day: 6
   title: Мендоса - Эль-Калафате
@@ -164,7 +164,7 @@ itinerary:
   text: Трансфер в аэропорт. Перелет в Игуасу с пересадкой в Буэнос-Айресе. После прибытия в Фоз-де-Игуасу вас встретят и
     отвезут в отель.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Водопад Фоз-де-Игуасу, Аргентина'
   - src: https://brasiltours.ru/image/ARG%20Patagonia%201.png
     alt: 'На фото: горы в Эль Калафате, Аргентина'
@@ -181,7 +181,7 @@ itinerary:
 
     Дополнительно можно заказать экскурсию «Большое приключение», $100 на человека.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Водопад Фоз-де-Игуасу, Аргентина'
 - excursionRef: excursion_iguazu_gran_aventura
   places: []
@@ -200,7 +200,7 @@ itinerary:
 
     Еще один вариант - вертолетный полет над водопадами за $170 на человека.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Водопад Фоз-де-Игуасу, Аргентина'
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -221,7 +221,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/salta%20argen.png
     alt: 'На фото: Город Сальта на северо-западе Аргентины'
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Водопад Фоз-де-Игуасу, Аргентина'
 - day: 12
   title: Кафаяте - Сальта

@@ -194,7 +194,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Belize%20City.png
     alt: Белиз-сити
-  - src: https://brasiltours.ru/image/countries/belize/kajo-2.jpg
+  - src: /media/destinations/kajo/hero-enhanced-20261002.webp
     alt: Кайо
 - day: 8
   title: Сан-Педро и морской заповедник Хол-Чан

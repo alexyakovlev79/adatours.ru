@@ -70,7 +70,7 @@ itinerary:
     \ разных культур Южной Америки, в том числе дом с предметами семьи, которая жила в этой местности много поколений назад.\n\
     \nПосле экскурсии возвращение в отель.\n\n**Размещение:** Plaza Grande 5*, Royal Suite.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/quito.jpg
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-1-enhanced-20261001.webp
     alt: 'На фото: Здание в городе Кито'
 - day: 3
   title: Кито - Национальный парк Котопакси - Кито
@@ -94,7 +94,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/equador/cotopaxi.jpg
     alt: 'На фото: Вулкан Котопахи в Эквадоре'
-  - src: https://brasiltours.ru/image/countries/equador/quito1.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-3-enhanced-20261001.webp
     alt: 'На фото: Кафедральный собор Кито'
 - day: 4
   title: Кито - Машпи

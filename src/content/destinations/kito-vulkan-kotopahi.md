@@ -16,7 +16,7 @@ destinationType: region
 summary: >-
   Кито лежит в андской долине на высоте 2850 м. Исторический центр, линия экватора, Пулулахуа и вулкан Котопахи позволяют соединить городскую архитектуру и высокогорную природу в одном направлении.
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/4.jpg
+  src: /media/countries/ekvador/featureBands-1-enhanced-20261002.webp
   alt: Кито и вулкан Котопахи в Эквадоре
 gallery:
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN1169_2.jpg

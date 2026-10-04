@@ -82,7 +82,7 @@ itinerary:
     \ которая жила в этой местности много поколений назад.\n\nПосле экскурсии возвращение в отель.\n\n**Размещение:** Plaza\
     \ Grande 5*, Royal Suite.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/quito.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
     alt: 'На фото: Кито столица Эквадора'
 - day: 3
   title: Кито - Котопакси
@@ -139,7 +139,7 @@ itinerary:
     \ вдоль каньона, водопад «Фата Невесты» с канатной дорогой, «Котел Дьявола» и короткая экскурсия по городу.\n\nПосле программы\
     \ переезд в Кито.\n\n**Размещение:** Plaza Grande 5*, Royal Suite.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/quito.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
     alt: 'На фото: Кито столица Эквадора'
 - day: 6
   title: Кито - Машпи
@@ -182,7 +182,7 @@ itinerary:
     \ обстановки, расположения отеля и количества пассажиров.\n\nВечер остается свободным. На следующий день начинается островная\
     \ часть маршрута.\n\n**Размещение:** Plaza Grande 5*, Royal Suite.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/quito.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
     alt: 'На фото: Кито столица Эквадора'
 - day: 9
   title: Перелет на Галапагосские острова и Санта-Крус

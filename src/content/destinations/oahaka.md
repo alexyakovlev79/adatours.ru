@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Оахака находится в горах Сьерра-Мадре-дель-Сур на юге Мексики. Город привлекает археологическими памятниками, местной кухней и изделиями ремесленников."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/oaxaca.jpg","alt":"На фото: рынок города Оахака в Мексике"}
+hero: {"src":/media/countries/mexico/featureBands-3-enhanced-20261002.webp,"alt":"На фото: рынок города Оахака в Мексике"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN2177_1.jpg","alt":"На фото: город Оахака в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN2601_10.jpg","alt":"На фото: город Оахака в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN1130_8.jpg","alt":"На фото: город Оахака в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN12210_1.jpg","alt":"На фото: город Оахака в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN13588_7.jpg","alt":"На фото: город Оахака в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17883_50.jpg","alt":"На фото: город Оахака в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN961_24.jpg","alt":"На фото: рынок города Оахака в Мексике"}]
 facts: []
 featureBands: []

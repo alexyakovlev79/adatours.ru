@@ -146,7 +146,7 @@ itinerary:
       
       Киты подходят достаточно близко к берегу, поэтому их можно рассмотреть вместе с детенышами и сфотографировать с суши. Для наблюдения за животными это один из самых спокойных дней маршрута: лодка пока не нужна, главное происходит прямо у побережья.
     images:
-      - src: https://brasiltours.ru/image/Buenos%20Aires.png
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
         alt: "Пуэрто-Мадрин и побережье Патагонии"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -302,7 +302,7 @@ itinerary:
       
       Размещение на 1 ночь в выбранном отеле. Оставшееся время свободно, поэтому вечер можно провести самостоятельно после нескольких дней в Ибере.
     images:
-      - src: https://brasiltours.ru/image/Buenos%20Aires.png
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
         alt: "Возвращение в Буэнос-Айрес"
         intendedSlot: "itinerary:day-8"
   - day: 9

@@ -37,7 +37,7 @@ itinerary:
 
     Уже по дороге город начинает знакомство с Бразилией: зеленые горы подходят почти вплотную к жилым районам, вдоль пути появляются пальмы, а между ними открывается океан. К вечеру на побережье загораются огни. В кафе у знаменитых пляжей можно попробовать напитки из свежих тропических фруктов и спокойно провести первый вечер после дороги.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'на фото: Рио-де-Жанейро на закате'
 - day: 2
   title: 'Рио-де-Жанейро: Корковадо и Христос Искупитель'
@@ -50,7 +50,7 @@ itinerary:
 
     После экскурсии возвращение в отель и отдых.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'на фото: Рио-де-Жанейро на закате'
 - day: 3
   title: 'Рио-де-Жанейро: Сахарная Голова и город'
@@ -65,7 +65,7 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'на фото: Рио-де-Жанейро на закате'
 - day: 4
   title: Рио-де-Жанейро - Фоз-ду-Игуасу
@@ -77,9 +77,9 @@ itinerary:
 
     По прибытии вас встретят и отвезут в отель. Остаток дня свободный: можно отдохнуть после перелета и подготовиться к экскурсии к водопадам.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'на фото: Рио-де-Жанейро на закате'
 - day: 5
   title: 'Фоз-ду-Игуасу: водопады, Макуко-сафари и Парк птиц'
@@ -109,9 +109,9 @@ itinerary:
 
     По прибытии встреча, трансфер в гостиницу, размещение и отдых.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу  в Бразилии и Аргентине'
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: 'на фото: Сан Салвадор Бразилия'
 - day: 7
   title: Салвадор
@@ -130,7 +130,7 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: 'на фото: Сан Салвадор Бразилия'
 - day: 8
   title: Салвадор - Ресифи
@@ -145,7 +145,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/bra-recife-1.jpg
     alt: 'на фото: город Ресифе'
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: 'на фото: Сан Салвадор Бразилия'
 - day: 9
   title: Ресифи и Олинда
@@ -175,7 +175,7 @@ itinerary:
 
     Размещение в гостинице и свободное время. С этого дня начинается спокойная пляжная часть путешествия.
   images:
-  - src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'на фото:  город Порту де Галиньяс'
   - src: https://brasiltours.ru/image/bra-recife-1.jpg
     alt: 'на фото: город Ресифе'
@@ -192,7 +192,7 @@ itinerary:
 
     В самом городке работают рестораны, бары и клубы. Вечером можно вернуться с пляжа, поужинать и прогуляться по улицам курорта.
   images:
-  - src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'на фото:  город Порту де Галиньяс'
 - day: 12
   title: Порту-де-Галиньяс
@@ -206,7 +206,7 @@ itinerary:
 
     В самом городке работают рестораны, бары и клубы. Вечером можно вернуться с пляжа, поужинать и прогуляться по улицам курорта.
   images:
-  - src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'на фото:  город Порту де Галиньяс'
 - day: 13
   title: Порту-де-Галиньяс
@@ -220,7 +220,7 @@ itinerary:
 
     В самом городке работают рестораны, бары и клубы. Вечером можно вернуться с пляжа, поужинать и прогуляться по улицам курорта.
   images:
-  - src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'на фото:  город Порту де Галиньяс'
 - day: 14
   title: Порту-де-Галиньяс - Ресифи
@@ -231,7 +231,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/bra-recife-1.jpg
     alt: 'на фото: город Ресифе'
-  - src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'на фото:  город Порту де Галиньяс'
 included:
 - Проживание в отелях 4* на базе завтраков.

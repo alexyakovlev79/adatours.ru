@@ -59,7 +59,7 @@ itinerary:
 
     Первый день знакомит прежде всего с повседневным Санта-Крусом: ремесленные мастерские, городской рынок, жилые кварталы и исторический центр идут в одной программе. Это спокойное начало перед выездом в Самаипату и облачный лес Амборо.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bolivia-santa-cruz.jpg
+  - src: /media/destinations/santa-krus/hero-enhanced-20261003.webp
     alt: 'На фото: Санта Крус в Боливии'
 - day: 2
   title: Самаипата
@@ -81,7 +81,7 @@ itinerary:
 
     Во второй половине дня возвращение в Санта-Крус. По дороге остановка у водопадов Куэвас с прозрачной водой и густой растительностью. Ночевка в LP Equipetrol.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bolivia-santa-cruz.jpg
+  - src: /media/destinations/santa-krus/hero-enhanced-20261003.webp
     alt: 'На фото: Санта Крус в Боливии'
   - src: https://brasiltours.ru/image/countries/bolivia/12.jpg
     alt: 'На фото: парк Амборо в Боливии'
@@ -95,7 +95,7 @@ itinerary:
 
     После прилета трансфер в город и свободное время. Ночевка в Hotel de Su Merced.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bolivia-santa-cruz.jpg
+  - src: /media/destinations/santa-krus/hero-enhanced-20261003.webp
     alt: 'На фото: Санта Крус в Боливии'
   - src: https://brasiltours.ru/image/countries/bolivia/tatio-geyzer.png
     alt: 'На фото: Сукре Боливия'

@@ -123,7 +123,7 @@ itinerary:
 
     По сравнению с Рио здесь почти исчезает городская среда. Основные маршруты проходят внутри национальных парков, среди влажного леса, мостков и смотровых площадок. Сначала водопады слышны, затем отдельные белые потоки появляются между деревьями, и только позже открывается большая часть системы. Такая постепенность делает первый день у Игуасу отдельным впечатлением, а не просто остановкой между перелетами.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/douglas-lopez-icqiqn-nyxw-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Закат над водопадами Игуасу, золотой час и оранжевое небо над Глоткой Дьявола
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-23.jpg
     alt: Панорама Рио-де-Жанейро со смотровой площадки
@@ -158,7 +158,7 @@ itinerary:
 
     **Стоимость:** $170 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
     alt: Каскады водопадов Игуасу в Бразилии и Аргентине, мощь воды и тропический лес
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -181,7 +181,7 @@ itinerary:
 
     Аргентинская сторона дает больше отдельных маршрутов и близких подходов к воде. Настилы ведут через широкое русло, а затем к краю каскадов. На одном участке вода еще движется спокойно между островами, через несколько минут уже падает вниз почти под ногами. У Горла дьявола обзор частично закрывает плотное облако брызг, зато физически ощущаются шум и вибрация огромного потока.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Панорама каскадов Игуасу на границе Бразилии и Аргентины и Глотка Дьявола
 - day: 8
   title: Игуасу - Рио-де-Жанейро - Бузиос

@@ -9,7 +9,7 @@ destinationType: "island"
 summary: "Галапагосские острова: эндемичная флора и фауна, гигантские черепахи, морские котики и водные развлечения у песчаных пляжей."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/equador/new/2.jpg"
+  src: /media/countries/ekvador/featureBands-2-enhanced-20261002.webp
   alt: "На фото: Галапагосские острова в Эквадоре"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/g/a/galapagos-islands-bE.jpg"

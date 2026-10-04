@@ -279,7 +279,7 @@ itinerary:
 
     По прилете встреча, трансфер и размещение.
   images:
-  - src: https://brasiltours.ru/image/lima.png
+  - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
     alt: 'НА фото: город Лима, столица Перу'
 - day: 11
   title: Лима. Свободный день
@@ -292,7 +292,7 @@ itinerary:
 
     По желанию
   images:
-  - src: https://brasiltours.ru/image/lima3.png
+  - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
     alt: 'НА фото: город Лима, столица Перу'
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []
@@ -406,7 +406,7 @@ priceFrom: 5318
 currency: USD
 priceNote: $5318
 hero:
-  src: https://brasiltours.ru/image/countries/peru/alexander-schimmeck-z01bft5iv7y-unsplash.jpg
+  src: /media/countries/peru/hero-enhanced-20260930.webp
   alt: 'На фото: девушки-перуанки с альпакой в Перу'
 routeCountries:
 - country_peru

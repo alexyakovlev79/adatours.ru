@@ -38,7 +38,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/rio%20beach.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-03-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Сахарная голова и старый Рио
@@ -53,7 +53,7 @@ itinerary:
 
     После спуска вы отправитесь в старый центр Рио. Здесь сохранились церкви, монастыри, главный собор и здания колониальной эпохи. Эта часть экскурсии хорошо показывает другой Рио: без пляжей и курортной картинки, с историческими улицами и архитектурой старого города.
   images:
-  - src: https://brasiltours.ru/image/rio-de-janeiro-praiaantiga-1.png
+  - src: /media/tours/rio-de-janeiro-wedding/hero-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: Корковаду и Христос-Искупитель
@@ -70,7 +70,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/rio%20beach.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-03-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 4
   title: Рио-де-Жанейро - Фос-ду-Игуасу
@@ -96,9 +96,9 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/rio-de-janeiro-praiaantiga-1.png
+  - src: /media/tours/rio-de-janeiro-wedding/hero-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -119,7 +119,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 6
   title: Игуасу - Ресифи - Порту-де-Галиньяс
@@ -137,7 +137,7 @@ itinerary:
 
     Порту-де-Галиньяс вырос на месте старого колониального поселения и сегодня известен прежде всего своими пляжами. Здесь прозрачная бирюзовая вода, белый песок и пальмы вдоль берега. После нескольких дней городов и водопадов начинается спокойная пляжная часть путешествия.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/Recife.png
     alt: Ресифи
@@ -162,7 +162,7 @@ itinerary:
 
     Порту-де-Галиньяс хорошо завершает маршрут именно потому, что после насыщенных экскурсий здесь остается время без расписания: можно выбрать пляж по погоде, вернуться в понравившийся природный бассейн или провести несколько часов в кафе у воды.
   images:
-  - src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: Бразилия с пляжами
 - day: 8
   title: Порту-де-Галиньяс - Ресифи
@@ -173,7 +173,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/bra-recife-1.jpg
     alt: Ресифи
-  - src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: Бразилия с пляжами
 included:
 - Проживание в выбранных отелях или аналогичных.
@@ -197,7 +197,7 @@ priceFrom: 2608
 currency: USD
 priceNote: $2608
 hero:
-  src: https://brasiltours.ru/image/Porto%20de%20Galinhas.png
+  src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
   alt: Бразилия с пляжами
 routeCountries:
 - country_brazil

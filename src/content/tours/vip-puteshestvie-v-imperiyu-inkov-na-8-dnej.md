@@ -42,7 +42,7 @@ itinerary:
 
     После перелета день остается свободным. Можно отдыхать в отеле или пройтись по набережной Малекон, где гуляют, катаются на велосипедах и встречают закат.
   images:
-  - src: https://brasiltours.ru/image/Lima.png
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
     alt: Город Лима - столица Перу, вид с океана
 - day: 2
   title: Индивидуальный сити-тур по Лиме
@@ -152,7 +152,7 @@ itinerary:
 
     По прибытии трансфер в **Belmond Palacio Nazarenas** в Куско. Отель расположен в историческом здании.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/fabio-hanashiro-iyymqhlwdqe-unsplash.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-12-enhanced-20260930.webp
     alt: Затерянный город инков - Мачу-Пикчу, Перу
 - day: 6
   title: Куско, Саксайуаман, Кенко и Кориканча
@@ -193,7 +193,7 @@ itinerary:
 
     Дополнительно.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima/willian-justen-de-vasconcellos-mzkeirbstv4-unsplash.jpg
+  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-09-enhanced-20260930.webp
     alt: Город Лима - вид с океана, столица Перу
   - src: https://brasiltours.ru/image/countries/peru/kusko/cusco-3.jpg
     alt: Город Куско - древняя столица инков, Перу
@@ -210,7 +210,7 @@ itinerary:
 
     За 8 дней вы проходите путь от океанской Лимы к Священной долине, Мачу-Пикчу и высокогорному Куско, а затем возвращаетесь к побережью. В памяти остаются разные детали: серый свет над океаном, каменные ступени Мачу-Пикчу, террасы Морай, соляные поля Марас и темнеющие улицы Куско.
   images:
-  - src: https://brasiltours.ru/image/Lima.png
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
     alt: Город Лима - столица Перу, вид с океана
 included:
 - Размещение в отелях 5*

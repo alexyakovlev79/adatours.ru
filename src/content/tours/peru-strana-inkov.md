@@ -39,7 +39,7 @@ itinerary:
 
     Столица Перу раскинулась на берегу Тихого океана. Город был основан испанцами, поэтому европейская архитектура здесь соседствует с памятниками доинкского времени. Уже во время первых прогулок можно увидеть, как в Лиме рядом существуют следы разных исторических эпох.
   images:
-  - src: https://brasiltours.ru/image/Lima-Peru.png
+  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
     alt: Лима
 - day: 2
   title: Лима
@@ -133,7 +133,7 @@ priceFrom: 919
 currency: USD
 priceNote: $919
 hero:
-  src: https://brasiltours.ru/image/countries/peru/alexander-schimmeck-z01bft5iv7y-unsplash.jpg
+  src: /media/countries/peru/hero-enhanced-20260930.webp
   alt: Перу - страна Инков
 routeCountries:
 - country_peru

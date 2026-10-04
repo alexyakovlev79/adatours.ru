@@ -19,7 +19,7 @@ priceFrom: 889
 currency: USD
 priceNote: "Основная стоимость — $889. Для 2 человек — $630 на человека, для 3 человек — $544 на человека, для 4 человек — $502 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/peru/willian-justen-de-vasconcellos-667258-unsplash.jpg
+  src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
   alt: Мачу-Пикчу в горах Перу
 gallery:
   - src: https://brasiltours.ru/image/cusco%202.png

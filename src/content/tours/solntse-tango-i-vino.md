@@ -43,7 +43,7 @@ itinerary:
 
     Пляжная часть Рио сразу задает настроение поездке. У воды работают кафе с фруктовыми напитками, а набережные и песок остаются оживленными до позднего вечера. За линией домов поднимаются зеленые склоны, поэтому океан и горы постоянно остаются в поле зрения даже во время обычной прогулки по району.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: город Рио-де-Жанейро, Бразилия'
 - day: 2
   title: 'Рио-де-Жанейро: Корковадо и Христос Искупитель'
@@ -69,7 +69,7 @@ itinerary:
 
     С этой точки особенно хорошо видно, почему Рио трудно воспринимать отдельно от его рельефа. Черно-белая Копакабана и Ипанема лежат между океаном и гранитными вершинами, залив Гуанабара уходит в сторону Нитероя, а Корковадо со статуей Христа остается заметным почти из любой открытой точки. Поэтому прогулка по центру после подъема на Сахарную Голову воспринимается уже иначе: за фасадами и площадями постоянно ощущается близость гор и воды.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: город Рио-де-Жанейро, Бразилия'
 - day: 4
   title: Рио-де-Жанейро - Фоз-ду-Игуасу
@@ -82,7 +82,7 @@ itinerary:
 
     Остаток дня можно посвятить отдыху перед экскурсионной программой у водопадов.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%201.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-13-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
   - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
     alt: 'На фото: город Рио-де-Жанейро, Бразилия'
@@ -95,7 +95,7 @@ itinerary:
 
     Пешеходные дорожки и смотровые площадки позволяют постепенно приближаться к главным каскадам. Один из центральных участков комплекса - «Глотка Дьявола». Здесь поток воды, брызги и постоянный гул ощущаются уже с расстояния.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
 - day: 6
   title: Аргентинская сторона Игуасу - Буэнос-Айрес
@@ -115,9 +115,9 @@ itinerary:
 
     После экскурсии трансфер в аэропорт и перелет в Буэнос-Айрес. Встреча и трансфер в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, город Буэнос Айрес'
 - day: 7
   title: Буэнос-Айрес и танго-шоу
@@ -130,7 +130,7 @@ itinerary:
 
     Ла-Бока и Сан-Тельмо сохраняют связь со старой портовой частью столицы: здесь много небольших кафе, ресторанов и антикварных лавок, а Пласа-Доррего известна рынком старых вещей. Пласа-де-Майо связана с главными событиями аргентинской истории, рядом находится Каса-Росада, президентский дворец, который традиционно связывают с именем Эвиты Перон. После тропиков Рио и Игуасу эта часть маршрута резко меняет визуальную среду: вместо леса и водопадов появляются широкие улицы, европейские фасады и плотная городская жизнь, которая продолжается далеко за полночь.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, город Буэнос Айрес'
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -143,7 +143,7 @@ itinerary:
 
     Можно выбрать поездку в Тигре, дневную экскурсию в Монтевидео, «Фиесту Гаучо» или провести день в городе.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, город Буэнос Айрес'
 - day: 9
   title: Буэнос-Айрес - Сантьяго-де-Чили
@@ -154,7 +154,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/santiago-de-chile.png
     alt: 'На фото: Сантьяго де Чили'
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, город Буэнос Айрес'
 - day: 10
   title: Сантьяго-де-Чили
@@ -244,7 +244,7 @@ priceFrom: 4150
 currency: USD
 priceNote: $4150
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/micaela-parente-1309093-unsplash.jpg
+  src: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
   alt: 'На фото: город Рио-де-Жанейро, Бразилия'
 routeCountries:
 - country_brazil

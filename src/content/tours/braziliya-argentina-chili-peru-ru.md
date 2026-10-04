@@ -54,7 +54,7 @@ itinerary:
 
     Для активного отдыха в городе доступны гольф, теннис, серфинг, рафтинг, дайвинг, полеты на дельтаплане и другие занятия. На пляжах работают открытые кафе с кокосовой водой, свежими соками и напитками, а иногда выступают местные музыканты. Первый свободный день позволяет увидеть Рио без жесткого расписания и выбрать между пляжем, прогулкой и активным отдыхом.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-5.jpg
+  - src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
     alt: 'На фото: Вид на гору Пан-ди-Асукар, Рио-де-Жанейро'
 - day: 2
   title: 'Рио-де-Жанейро: Корковадо'
@@ -69,7 +69,7 @@ itinerary:
 
     Со смотровой площадки открывается панорама Рио и его окрестностей: мост Нитерой, залив Гуанабара, Ботанический сад, стадион Маракана и Сахарная Голова.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: 'На фото: Статуя Христа-Искупителя в Рио-де-Жанейро'
 - day: 3
   title: 'Рио-де-Жанейро: Сахарная Голова и город'
@@ -84,7 +84,7 @@ itinerary:
 
     После спуска экскурсия продолжается по городу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-5.jpg
+  - src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
     alt: 'На фото: Вид на гору Пан-ди-Асукар, Рио-де-Жанейро'
 - day: 4
   title: Рио-де-Жанейро - Фос-ду-Игуасу
@@ -107,7 +107,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguazu-adatours.jpg
     alt: 'На фото: Водопады Фоз ду Игуасу'
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-5.jpg
+  - src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
     alt: 'На фото: Вид на гору Пан-ди-Асукар, Рио-де-Жанейро'
 - day: 5
   title: Бразильская сторона Игуасу
@@ -146,7 +146,7 @@ itinerary:
 
     Буэнос-Айрес известен как родина танго и большой космополитический город. Среди его знаковых мест, Каса-Росада, Пуэрто-Мадеро, Каминито, улица Флорида, стадион Boca Juniors, кафедральный собор, Национальный исторический музей и Ботанический сад.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос-Айрес, Аргентине'
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguazu-adatours.jpg
     alt: 'На фото: Водопады Фоз ду Игуасу'
@@ -165,7 +165,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос-Айрес, Аргентине'
 - day: 8
   title: Буэнос-Айрес
@@ -176,7 +176,7 @@ itinerary:
 
     Можно самостоятельно продолжить знакомство с городом или заказать дополнительные экскурсии.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос-Айрес, Аргентине'
 - day: 9
   title: Буэнос-Айрес - Сантьяго-де-Чили
@@ -196,7 +196,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
     alt: 'На фото: Вид на город Сантьяго, Чили'
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос-Айрес, Аргентине'
 - day: 10
   title: Винья-дель-Мар и Вальпараисо
@@ -307,7 +307,7 @@ itinerary:
 
     Трансфер в аэропорт для посадки на следующий международный рейс. Окончание программы после 15 дней путешествия по 4 странам Латинской Америки.
   images:
-  - src: https://brasiltours.ru/image/lima.png
+  - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
     alt: 'На фото: Лима - столица Перу'
 included:
 - Проживание в отелях с завтраками.

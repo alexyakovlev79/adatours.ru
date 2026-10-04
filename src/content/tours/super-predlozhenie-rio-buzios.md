@@ -31,7 +31,7 @@ itinerary:
 
     Если прилет проходит днем, уже по дороге видны зеленые холмы, скалистые горы, пальмы и бухты. Вечером на склонах загораются огни. После размещения можно отправиться к Копакабане или Ипанеме, прогуляться вдоль набережной и провести первые часы у океана. По дороге из аэропорта зеленые холмы, скалистые горы и пальмы сменяются бухтами между районами города. У пляжей продолжают работать кафе. Копакабана и Ипанема узнаваемы по черно-белому рисунку набережной. Здесь можно просто пройти вдоль воды, остановиться в кафе и выпить холодную кокосовую воду.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: смотровая площадка в Рио-де-Жанейро в Бразилии'
 - day: 2
   title: Сахарная Голова
@@ -42,7 +42,7 @@ itinerary:
 
     На Урке находится большая смотровая площадка, рестораны и бары. Следующий подъем ведет на Сахарную Голову. Отсюда видны Копакабана и Ипанема, Леме, залив Гуанабара, мост Рио-Нитерой, сам Нитерой, окрестные горы, острова и статуя Христа на Корковадо.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер в Рио-де-Жанейро в Бразилии'
 - day: 3
   title: Исторический центр и Корковадо
@@ -92,7 +92,7 @@ itinerary:
 
     Программа возможна в группе с англоговорящим гидом или индивидуально, минимум для 2 человек, с русскоговорящим гидом.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: смотровая площадка в Рио-де-Жанейро в Бразилии'
 - excursionRef: excursion_source_rio_nochyu
   places: []
@@ -155,7 +155,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
     alt: 'На фото: бразильский морской курорт Бузиос'
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер в Рио-де-Жанейро в Бразилии'
 included:
 - Проживание в отелях с завтраками.
@@ -178,7 +178,7 @@ priceFrom: 1909
 currency: USD
 priceNote: $1909
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/45.jpg
+  src: /media/tours/luxury-brazil-11d/itinerary/day-10-enhanced-20260930.webp
   alt: 'На фото: бразильский морской курорт Бузиос'
 routeCountries:
 - country_brazil

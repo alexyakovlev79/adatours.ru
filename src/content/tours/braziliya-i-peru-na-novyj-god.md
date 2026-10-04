@@ -139,7 +139,7 @@ itinerary:
 
     На Пласа-де-Армас вы увидите Муниципалитет, Дворец правительства и Кафедральный собор с гробницей Франсиско Писарро.
   images:
-  - src: https://brasiltours.ru/image/Lima-Peru.png
+  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
     alt: Лима, столица Перу
   - src: https://brasiltours.ru/image/countries/brazil/rio1.jpg
     alt: Оживленный город Рио де Жанейро
@@ -290,9 +290,9 @@ itinerary:
 
     Ландшафт здесь резко отличается от привычного образа национального парка. Раньше на этой территории был океан, поэтому почва очень соленая и почти лишена растительности. Соль покрывает слой терракотово-бордового песка, а плавные дюны создают почти неземной пейзаж.
   images:
-  - src: https://brasiltours.ru/image/Lima-Peru.png
+  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
     alt: Лима, столица Перу
-  - src: https://brasiltours.ru/image/Paracas_Candelabra.png
+  - src: /media/tours/peru-8d/itinerary/day-07-enhanced-20261001.webp
     alt: Линии Назка
 - day: 14
   title: 10.01 - острова у Паракаса, линии Наска и Лима
@@ -321,7 +321,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/peru/prezind-palace-lima.png
     alt: Лима, столица Перу
-  - src: https://brasiltours.ru/image/Nazca.jpg
+  - src: /media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp
     alt: Линии Назка
 - day: 15
   title: 11.01 - Лима
@@ -329,7 +329,7 @@ itinerary:
   - Лима
   text: Завтрак в отеле. Трансфер в аэропорт.
   images:
-  - src: https://brasiltours.ru/image/Lima-Peru.png
+  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
     alt: Лима, столица Перу
 included:
 - Размещение в отелях на базе завтраков.

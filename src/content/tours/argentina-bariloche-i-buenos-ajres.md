@@ -57,7 +57,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/argentina/arg-bariloche-waifu2x-photo-noise1-s.jpg
     alt: 'На фото: Радуга на фоне домов в Барилоче'
-  - src: https://brasiltours.ru/image/countries/argentina/buenos1.jpg
+  - src: /media/excursions/jekskursija-v-tigre/gallery-1-enhanced-20261001.webp
     alt: 'На фото: Президентский дворец, Буэнос-Айресе'
 - day: 4
   title: Буэнос-Айрес
@@ -72,7 +72,7 @@ itinerary:
 
     Вечером поездка в La Ventana Barrio de Tango в Сан-Тельмо. Дом танго работает с 1982 года в восстановленном историческом конвентильо. В шоу участвуют 32 артиста: 2 танго-оркестра, ансамбль народной музыки, танцоры и певцы. Ужин включает блюда международной и аргентинской кухни, традиционный гриль и аргентинские вина. После представления возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos1.jpg
+  - src: /media/excursions/jekskursija-v-tigre/gallery-1-enhanced-20261001.webp
     alt: 'На фото: Президентский дворец, Буэнос-Айресе'
 - day: 5
   title: Буэнос-Айрес
@@ -80,7 +80,7 @@ itinerary:
   - Буэнос-Айрес
   text: Завтрак в отеле. Свободный день для самостоятельных прогулок или дополнительных экскурсий.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos1.jpg
+  - src: /media/excursions/jekskursija-v-tigre/gallery-1-enhanced-20261001.webp
     alt: 'На фото: Президентский дворец, Буэнос-Айресе'
 - day: 6
   title: Буэнос-Айрес
@@ -88,7 +88,7 @@ itinerary:
   - Буэнос-Айрес
   text: Завтрак в отеле. Свободное время до назначенного часа, затем частный трансфер в международный аэропорт.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos1.jpg
+  - src: /media/excursions/jekskursija-v-tigre/gallery-1-enhanced-20261001.webp
     alt: 'На фото: Президентский дворец, Буэнос-Айресе'
 included:
 - 2 ночи в Барилоче.

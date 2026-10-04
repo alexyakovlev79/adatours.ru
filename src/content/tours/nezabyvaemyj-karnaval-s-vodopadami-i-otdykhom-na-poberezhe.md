@@ -38,7 +38,7 @@ itinerary:
 
     Рио постоянно меняется в течение дня. При ярком солнце особенно заметны светлые пляжи, темная зелень склонов и резкие очертания гранитных гор. Ближе к вечеру свет становится мягче, океан темнеет, а огни вдоль берега и на холмах постепенно выходят на первый план. Такое первое знакомство хорошо показывает, почему город трудно свести только к отдельным достопримечательностям: природный рельеф буквально входит в городскую ткань.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Вертолетный тур над Рио, пляжи и горы
 - day: 2
   title: Сахарная Голова, старый Рио и дополнительные программы
@@ -65,7 +65,7 @@ itinerary:
 
     Отдельный вариант за **$250 с человека** длится 9-10 минут, включает облет статуи Христа и трансфер.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
     alt: Вид на статую Христа с обзорной площадки, Рио
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -116,9 +116,9 @@ itinerary:
 
     После ночного Карнавала и городских дней смена обстановки особенно заметна. Здесь основным фоном становятся влажный лес, шум реки и постоянная водяная пыль. Масштаб Игуасу трудно передать фотографией: линия каскадов растягивается почти на 3 километра, и обзор меняется на каждом участке тропы. Именно поэтому на водопады выделены 3 ночи.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
     alt: Каскады водопадов Игуасу, бразильская сторона
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Вертолетный тур над Рио, пляжи и горы
 - day: 6
   title: Бразильская сторона Игуасу
@@ -149,7 +149,7 @@ itinerary:
 
     Дополнительные программы дают три совсем разных способа увидеть район Игуасу. Парк птиц остается на суше и посвящен местной фауне. Macuco Safari переносит поездку к самой воде и сочетает джунгли с катером. Вертолет, наоборот, показывает общую геометрию реки и линии каскадов сверху. Их можно рассматривать как дополнение к основной бразильской экскурсии, а не замену прогулке по смотровым дорожкам.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/iguazu-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
     alt: Водопады Игуасу на границе Бразилии и Аргентины
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -196,7 +196,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-7.jpg
     alt: Водопады Игуасу крупным планом, мощь воды
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
     alt: Вид на статую Христа с обзорной площадки, Рио
 - day: 9
   title: Отдых в Ангра-душ-Рейш
@@ -215,7 +215,7 @@ itinerary:
 
     Можно ограничиться территорией отеля и пляжем, а можно каждый день выбирать новую морскую программу. Вокруг Ангры много небольших островов, заповедных берегов, прозрачных бухт и старых фортов. Поездка на Илья-Гранди позволяет увидеть более уединенные места, а прогулка по воде показывает побережье с той стороны, которая недоступна с автомобильной дороги.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/gabor-sz-5rbqw61losu-unsplash.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
     alt: Каскады водопадов Игуасу, бразильская сторона
 - day: 10
   title: Отдых в Ангра-душ-Рейш
@@ -233,7 +233,7 @@ itinerary:
 
     Можно ограничиться территорией отеля и пляжем, а можно каждый день выбирать новую морскую программу. Вокруг Ангры много небольших островов, заповедных берегов, прозрачных бухт и старых фортов. Поездка на Илья-Гранди позволяет увидеть более уединенные места, а прогулка по воде показывает побережье с той стороны, которая недоступна с автомобильной дороги.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/iguazu-22.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
     alt: Водопады Игуасу на границе Бразилии и Аргентины
 - day: 11
   title: Отдых в Ангра-душ-Рейш
@@ -265,7 +265,7 @@ itinerary:
 
     Финальный переезд возвращает к месту, с которого началось путешествие, но после нескольких регионов Рио воспринимается иначе. За поездку вы успеваете сравнить ночной Самбадром и дневные смотровые площадки, увидеть Игуасу как общую панораму и с близких аргентинских настилов, а затем несколько дней провести среди островов Ангры. Именно эта смена формата составляет основную структуру маршрута.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-12.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Вертолетный тур над Рио, пляжи и горы
 included:
 - Проживание в выбранных отелях на базе завтраков.

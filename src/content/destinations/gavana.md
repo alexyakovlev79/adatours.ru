@@ -8,7 +8,7 @@ countryId: "country_cuba"
 destinationType: "city"
 summary: "Гавана соединяет колониальную архитектуру, набережную Малекон и кубинскую музыку. В городе можно увидеть старинные крепости, Капитолий и дом-музей Эрнеста Хемингуэя."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/cuba/havana.jpg","alt":"На фото: ретро-машина на улицах острова Куба"}
+hero: {"src":/media/countries/cuba/featureBands-1-enhanced-20261002.webp,"alt":"На фото: ретро-машина на улицах острова Куба"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN2477_27.jpg","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN8472_6.jpg","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN2277_12.jpg","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN2276_14.jpg","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN4723_24.jpg","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN2477_49.jpg","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN2276_17.jpg","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN4721_39.jpg","alt":"На фото: столица острова Кубы, город Гавана"}]
 themes: []
 relatedDestinations: []

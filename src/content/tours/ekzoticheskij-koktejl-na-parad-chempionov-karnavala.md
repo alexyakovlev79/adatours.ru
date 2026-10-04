@@ -83,7 +83,7 @@ itinerary:
 
     Вечером трансфер на Самбадром. Здесь проходит Парад чемпионов, где выступают лучшие школы самбы. Огромные костюмированные колонны, платформы, музыка и танец сменяют друг друга всю ночь. После окончания парада трансфер обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: Канатная дорога в Рио-де-Жанейро, Бразилия'
 - day: 3
   title: Рио-де-Жанейро и Корковадо
@@ -121,9 +121,9 @@ itinerary:
 
     Остаток дня можно использовать для отдыха перед 2 днями у водопадов.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу в Бразилии'
-  - src: https://brasiltours.ru/image/rio.png
+  - src: /media/excursions/favela-tur/gallery-4-enhanced-20261001.webp
     alt: 'на фото: закат в Рио-де-Жанейро, Бразилия'
 - day: 5
   title: Бразильская сторона водопадов Игуасу
@@ -154,7 +154,7 @@ itinerary:
 
     Стоимость: USD 170 с человека.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу в Бразилии'
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -179,7 +179,7 @@ itinerary:
 
     После экскурсии трансфер обратно в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу в Бразилии'
 - day: 7
   title: Фос-ду-Игуасу - Пантанал
@@ -198,7 +198,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/pantanal%20new.png
     alt: 'На фото: лотосы в заповеднике Пантанал  в Бразилии'
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу в Бразилии'
 - day: 8
   title: Пантанал
@@ -252,7 +252,7 @@ itinerary:
 
     Количество посетителей ограничено: в день допускаются 2 группы по 8 человек.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-bonito-1-jpg.jpg
+  - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-05-enhanced-20261001.webp
     alt: 'на фото: Пещеры Бонито в Бразилии'
 - excursionRef: excursion_brazil_bonito_abismo_anhumas
   places: []
@@ -297,7 +297,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
     alt: 'На фото: курорт Бузиос в Бразилии'
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: Канатная дорога в Рио-де-Жанейро, Бразилия'
 included:
 - Проживание в отелях на базе завтраков.

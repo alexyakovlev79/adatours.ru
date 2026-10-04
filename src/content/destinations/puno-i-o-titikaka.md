@@ -9,7 +9,7 @@ destinationType: "route_cluster"
 summary: "Пуно и озеро Титикака: плавучие острова Урош, жизнь местных общин и прогулки на тростниковых лодках."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/peru/8878.jpg"
+  src: /media/countries/peru/featureBands-3-image-enhanced-20261001.webp
   alt: "На фото: город Пуно в Перу и озеро Титикака"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN2019_100_1.jpg"

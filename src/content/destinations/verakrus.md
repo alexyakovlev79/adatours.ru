@@ -10,7 +10,7 @@ summary: "Портовый город на берегу Мексиканског
 searchAliases: []
 themes: []
 hero: {"src":"/media/destinations/veracruz/hero-enhanced-20261004.webp","alt":"На фото: город порт Веракрус в Мексике"}
-gallery: [{"src":"/media/destinations/veracruz/gallery-1-enhanced-20261004.webp","alt":"На фото: мексиканское блюдо"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17722_5.jpg","alt":"На фото: город порт Веракрус в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN962_56.jpg","alt":"На фото: рыба в городе Веракрус в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_5.jpg","alt":"На фото: город порт Веракрус в Мексике"}]
+gallery: [{"src":"/media/destinations/veracruz/gallery-1-enhanced-20261004.webp","alt":"На фото: мексиканское блюдо"},{"src":"/media/destinations/veracruz/gallery-2-enhanced-20261004.webp","alt":"На фото: город порт Веракрус в Мексике"},{"src":"/media/destinations/veracruz/gallery-3-enhanced-20261004.webp","alt":"На фото: рыба в городе Веракрус в Мексике"},{"src":"/media/destinations/veracruz/gallery-4-enhanced-20261004.webp","alt":"На фото: город порт Веракрус в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

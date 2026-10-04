@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Сантьяго де Куба знакомит с карнавалами, крепостью Кастильо-дель-Моро и площадью Сеспедес. Город стоит на холмах; из окрестностей можно отправиться к базилике Эль-Кобре и в парк Баконао."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/cuba/santiago-de-cuba.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/2/2/2251405608_7c906506ab_o.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/4/4/44925536_d013ac0785_o.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2251836473_7fbcf84e3e_b.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/3/5/355799202_a18c374676_o.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2256959075_bbda3990f8_b.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"}]
+hero: {"src":"/media/destinations/santiago-de-cuba/hero-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"}
+gallery: [{"src":"/media/destinations/santiago-de-cuba/gallery-1-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/4/4/44925536_d013ac0785_o.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2251836473_7fbcf84e3e_b.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/3/5/355799202_a18c374676_o.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2256959075_bbda3990f8_b.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"}]
 facts: []
 featureBands: []
 relatedDestinations: []

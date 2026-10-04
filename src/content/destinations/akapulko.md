@@ -9,7 +9,7 @@ destinationType: "resort"
 summary: "Акапулько предлагает пляжи, морские прогулки и вечерние шоу. Здесь можно увидеть форт Сан-Диего, площадь Сокало и ныряльщиков со скалы Ла-Кебрада."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/akapulko.jpg","alt":"На фото: город Акапулько в Мексике"}
+hero: {"src":"/media/destinations/acapulco/hero-enhanced-20261004.webp","alt":"На фото: город Акапулько в Мексике"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN3769_9.jpg","alt":"На фото: город Акапулько в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN1567_35.jpg","alt":"На фото: город Акапулько в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN12209_4.jpg","alt":"На фото: город Акапулько в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN12212_3.jpg","alt":"На фото: город Акапулько в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN1569_22.jpg","alt":"На фото: город Акапулько в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22897_3.jpg","alt":"На фото: город Акапулько в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN2091_11.jpg","alt":"На фото: город Акапулько в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17652_47.jpg","alt":"На фото: город Акапулько в Мексике"}]
 facts: []
 featureBands: []

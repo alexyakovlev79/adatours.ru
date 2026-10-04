@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Тринидад на Кубе сохранил мощеные улицы и колониальные дома. В городе работают исторический, археологический и романтический музеи, а в долине Сан Луис сохранились следы сахарных плантаций."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/cuba/trinidad.jpg","alt":"На фото: кубинский город Тринидад"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/5/5/553419001_86af6cc823_b.jpg","alt":"На фото: кубинский город Тринидад"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2295862883_bb720e278a_b.jpg","alt":"На фото: кубинский город Тринидад"},{"src":"https://brasiltours.ru/image/catalog/category/4/0/400689648_6508ff0961_o.jpg","alt":"На фото: кубинский город Тринидад"},{"src":"https://brasiltours.ru/image/catalog/category/5/5/559729660_556c75a397_b.jpg","alt":"На фото: кубинский город Тринидад"}]
+hero: {"src":"/media/destinations/trinidad/hero-enhanced-20261004.webp","alt":"На фото: кубинский город Тринидад"}
+gallery: [{"src":"/media/destinations/trinidad/gallery-1-enhanced-20261004.webp","alt":"На фото: кубинский город Тринидад"},{"src":"/media/destinations/trinidad/gallery-2-enhanced-20261004.webp","alt":"На фото: кубинский город Тринидад"},{"src":"/media/destinations/trinidad/gallery-3-enhanced-20261004.webp","alt":"На фото: кубинский город Тринидад"},{"src":"/media/destinations/trinidad/gallery-4-enhanced-20261004.webp","alt":"На фото: кубинский город Тринидад"}]
 facts: []
 featureBands: []
 relatedDestinations: []

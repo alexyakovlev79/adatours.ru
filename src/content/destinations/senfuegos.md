@@ -10,7 +10,7 @@ summary: "Сьенфуэгос расположен на берегу Кариб
 searchAliases: []
 themes: []
 hero: {"src":"/media/destinations/cienfuegos/hero-enhanced-20261004.webp","alt":"На фото: город Сьенфуэгос на острове Куба"}
-gallery: [{"src":"/media/destinations/cienfuegos/gallery-1-enhanced-20261004.webp","alt":"На фото: город Сьенфуэгос на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/0/2089804032_c19f49f7b0_o.jpg","alt":"На фото: город Сьенфуэгос на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/4/4/442565814_552b92a763_o.jpg","alt":"На фото: город Сьенфуэгос на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/5/2501514745_cb0e9b9f0c_b.jpg","alt":"На фото: город Сьенфуэгос на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/3/2/329384373_caee3d26c7_b.jpg","alt":"На фото: город Сьенфуэгос на острове Куба"}]
+gallery: [{"src":"/media/destinations/cienfuegos/gallery-1-enhanced-20261004.webp","alt":"На фото: город Сьенфуэгос на острове Куба"},{"src":"/media/destinations/cienfuegos/gallery-2-enhanced-20261004.webp","alt":"На фото: город Сьенфуэгос на острове Куба"},{"src":"/media/destinations/cienfuegos/gallery-3-enhanced-20261004.webp","alt":"На фото: город Сьенфуэгос на острове Куба"},{"src":"/media/destinations/cienfuegos/gallery-4-enhanced-20261004.webp","alt":"На фото: город Сьенфуэгос на острове Куба"},{"src":"/media/destinations/cienfuegos/gallery-5-enhanced-20261004.webp","alt":"На фото: город Сьенфуэгос на острове Куба"}]
 facts: []
 featureBands: []
 relatedDestinations: []

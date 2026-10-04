@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Портовый город на берегу Мексиканского залива известен историческим центром, кофейнями и карнавалом. У порта можно заглянуть в старинное Gran Cafe del Portal."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/roberto-carlos-roman-don-gkhcioqacvm-unsplash.jpg","alt":"На фото: город порт Веракрус в Мексике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN962_62.jpg","alt":"На фото: мексиканское блюдо"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17722_5.jpg","alt":"На фото: город порт Веракрус в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN962_56.jpg","alt":"На фото: рыба в городе Веракрус в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_5.jpg","alt":"На фото: город порт Веракрус в Мексике"}]
+hero: {"src":"/media/destinations/veracruz/hero-enhanced-20261004.webp","alt":"На фото: город порт Веракрус в Мексике"}
+gallery: [{"src":"/media/destinations/veracruz/gallery-1-enhanced-20261004.webp","alt":"На фото: мексиканское блюдо"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17722_5.jpg","alt":"На фото: город порт Веракрус в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN962_56.jpg","alt":"На фото: рыба в городе Веракрус в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_5.jpg","alt":"На фото: город порт Веракрус в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

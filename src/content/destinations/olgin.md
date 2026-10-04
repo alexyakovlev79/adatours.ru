@@ -10,7 +10,7 @@ summary: "Ольгин известен парками и площадями в 
 searchAliases: []
 themes: []
 hero: {"src":"/media/destinations/holguin/hero-enhanced-20261004.webp","alt":"На фото: город-курорт на море Ольгин на острове Куба"}
-gallery: [{"src":"/media/destinations/holguin/gallery-1-enhanced-20261004.webp","alt":""},{"src":"/media/destinations/holguin/gallery-2-enhanced-20261004.webp","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/4/4/446569826_1b47024c8a_o.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/3/9/396403564_845346e8b8_b.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/2/3/2353558030_752843a701_b.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/3/9/397182197_dad6770c78_b.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/5/7/571394909_1af391d27f_b.jpg","alt":""}]
+gallery: [{"src":"/media/destinations/holguin/gallery-1-enhanced-20261004.webp","alt":""},{"src":"/media/destinations/holguin/gallery-2-enhanced-20261004.webp","alt":""},{"src":"/media/destinations/holguin/gallery-3-enhanced-20261004.webp","alt":""},{"src":"/media/destinations/holguin/gallery-4-enhanced-20261004.webp","alt":""},{"src":"/media/destinations/holguin/gallery-5-enhanced-20261004.webp","alt":""},{"src":"/media/destinations/holguin/gallery-6-enhanced-20261004.webp","alt":""},{"src":"/media/destinations/holguin/gallery-7-enhanced-20261004.webp","alt":""}]
 facts: []
 featureBands: []
 relatedDestinations: []

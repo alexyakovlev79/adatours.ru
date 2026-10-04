@@ -8,8 +8,8 @@ countryId: "country_cuba"
 destinationType: "city"
 summary: "Камагуэй известен площадями, лабиринтом узких улиц и глиняными кувшинами тинахонами. В городе сохранились исторические здания, работают музеи и театр."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/cuba/camagueey.jpg","alt":"На фото: город Камагуэй на острове Куба"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/2/4/245646042_7e4cd88390_b.jpg","alt":"На фото: город Камагуэй на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/3/9/396945793_126c28ef48_o.jpg","alt":"На фото: город Камагуэй на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/4/5/455544775_779c1e040d_o.jpg","alt":"На фото: город Камагуэй на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/3/9/396947050_bbda7973cc_o.jpg","alt":"На фото: город Камагуэй на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2206500791_ed22a517ea_o.jpg","alt":"На фото: город Камагуэй на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/4/5/455544769_aa66e18641_o.jpg","alt":"На фото: город Камагуэй на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/1/5/1581861420_88ad3ec9b8_b.jpg","alt":"На фото: город Камагуэй на острове Куба"}]
+hero: {"src":"/media/destinations/camaguey/hero-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"}
+gallery: [{"src":"/media/destinations/camaguey/gallery-1-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"},{"src":"/media/destinations/camaguey/gallery-2-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"},{"src":"/media/destinations/camaguey/gallery-3-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"},{"src":"/media/destinations/camaguey/gallery-4-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2206500791_ed22a517ea_o.jpg","alt":"На фото: город Камагуэй на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/4/5/455544769_aa66e18641_o.jpg","alt":"На фото: город Камагуэй на острове Куба"},{"src":"/media/destinations/camaguey/gallery-7-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"}]
 themes: []
 relatedDestinations: []
 featuredTours: []
@@ -28,4 +28,5 @@ updatedAt: "2026-10-02"
 В городе огромное количество больших и маленьких площадей, извилистые, узкие улочки, представляющие собой настоящий лабиринт.
 
 Здесь сохранились и здания, представляющие значительный исторический интерес. Камагуэй известен как «город тинахонов» - из-за любви жителей к глиняным кувшинам самых различных размеров. В городе много музеев, театр, в котором проходят потрясающие концерты симфонического и камерного оркестров.
+
 

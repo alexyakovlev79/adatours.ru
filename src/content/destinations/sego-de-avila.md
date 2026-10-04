@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Город и одноименная провинция находятся в центральной части Кубы. На островах у северного побережья устроены пляжные курорты, а в городе можно увидеть театр «Принсипаль» и Кафедральный собор."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/cuba/kajya-koko-kuba.jpg","alt":"На фото: пляж Кайо Коко на острове Куба"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/2/0/2089808082_b38fec0da2_o.jpg","alt":"На фото: провинция Сьего де Авила на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/3/2349272028_e6bf3eda6a_b.jpg","alt":"На фото: провинция Сьего де Авила на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/1/0/104417378_789bdd0e72_o.jpg","alt":"На фото: провинция Сьего де Авила на острове Куба"}]
+hero: {"src":"/media/destinations/ciego-de-avila/hero-enhanced-20261004.webp","alt":"На фото: пляж Кайо Коко на острове Куба"}
+gallery: [{"src":"/media/destinations/ciego-de-avila/gallery-1-enhanced-20261004.webp","alt":"На фото: провинция Сьего де Авила на острове Куба"},{"src":"/media/destinations/ciego-de-avila/gallery-2-enhanced-20261004.webp","alt":"На фото: провинция Сьего де Авила на острове Куба"},{"src":"/media/destinations/ciego-de-avila/gallery-3-enhanced-20261004.webp","alt":"На фото: провинция Сьего де Авила на острове Куба"}]
 facts: []
 featureBands: []
 relatedDestinations: []

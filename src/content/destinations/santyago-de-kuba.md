@@ -10,7 +10,7 @@ summary: "Сантьяго де Куба знакомит с карнавала�
 searchAliases: []
 themes: []
 hero: {"src":"/media/destinations/santiago-de-cuba/hero-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"}
-gallery: [{"src":"/media/destinations/santiago-de-cuba/gallery-1-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/4/4/44925536_d013ac0785_o.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2251836473_7fbcf84e3e_b.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/3/5/355799202_a18c374676_o.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2256959075_bbda3990f8_b.jpg","alt":"На фото: город Сантьяго-де-Куба на острове Куба"}]
+gallery: [{"src":"/media/destinations/santiago-de-cuba/gallery-1-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"/media/destinations/santiago-de-cuba/gallery-2-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"/media/destinations/santiago-de-cuba/gallery-3-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"/media/destinations/santiago-de-cuba/gallery-4-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"/media/destinations/santiago-de-cuba/gallery-5-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"}]
 facts: []
 featureBands: []
 relatedDestinations: []

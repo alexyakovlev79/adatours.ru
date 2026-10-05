@@ -1,39 +1,46 @@
-name: Package first 10 original photo sources for GPT Image
+name: Fetch temporary photo enhancement sources
 
 on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/fetch-photo-enhancement-sources.yml'
   push:
     paths:
       - '.github/workflows/fetch-photo-enhancement-sources.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  package:
+  fetch:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Download exact historical originals
+      - name: Download exact raw source photos
         shell: bash
         run: |
           set -euo pipefail
-          dir='tmp/gpt-image-originals/20261005-redo-01-10'
+          dir='tmp/photo-enhancement-inputs/20261004-next10'
           mkdir -p "$dir"
-          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/001.jpg' -o "$dir/001.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/002.jpg' -o "$dir/002.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/003.jpg' -o "$dir/003.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/004.jpg' -o "$dir/004.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/005.jpg' -o "$dir/005.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/006.jpg' -o "$dir/006.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/007.jpg' -o "$dir/007.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/008.jpg' -o "$dir/008.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/009.jpg' -o "$dir/009.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/010.jpg' -o "$dir/010.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN2031_10.jpg' -o "$dir/san-jose-gallery-5.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN11553_60.jpg' -o "$dir/san-jose-gallery-6.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN17854_2.jpg' -o "$dir/san-jose-gallery-7.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN19310_1.jpg' -o "$dir/san-jose-gallery-8.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/costa-rica/1.jpg' -o "$dir/tortuguero-hero.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/s/e/sea-turtles.jpg' -o "$dir/tortuguero-gallery-1.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/T/o/Tortuguero.jpg' -o "$dir/tortuguero-gallery-2.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/e/l/elements-travel-tortuguero01.jpg' -o "$dir/tortuguero-gallery-3.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/costa-rica/3.jpg' -o "$dir/jaco-hero.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN6421_3_1.jpg' -o "$dir/jaco-gallery-1.jpg"
           file "$dir"/*
-      - name: Upload exact originals
-        uses: actions/upload-artifact@v4
-        with:
-          name: gpt-image-originals-20261005-redo-01-10
-          path: tmp/gpt-image-originals/20261005-redo-01-10
-          if-no-files-found: error
-          retention-days: 1
+      - name: Commit temporary source files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tmp/photo-enhancement-inputs/20261004-next10
+          git diff --cached --quiet && exit 0
+          git commit -m 'chore: stage exact source photos for next enhancement batch [skip ci]'
+          git push

@@ -40,6 +40,8 @@ The card with more photographs must fit its text and photographs **inside that s
 
 The **bottom edges of the media blocks stay aligned on one horizontal line**. A governing card is allowed to show each photograph at its full desktop slot height; a neighboring card with more photographs may show each individual photograph shorter. This is intentional.
 
+Opening a desktop itinerary card must never make its visual row shorter than the same row in the collapsed state. The opened media keeps at least the collapsed 16:9 media height, with the expanded-content gap added above it. Therefore revealing text can keep the next row in place or move it downward, but it must never pull the next row upward.
+
 The invariant is: **row height is governed by the smaller photograph count; equal counts reserve that full number of photograph slots; media bottoms align; mobile is unaffected**.
 
 ## Desktop paired toggle behavior

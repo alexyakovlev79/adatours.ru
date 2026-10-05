@@ -1,0 +1,95 @@
+name: Interest visitor UI validation
+on:
+  push:
+    branches: [feat/interests-visitor-ui-20261005]
+permissions:
+  contents: write
+concurrency:
+  group: interest-visitor-ui
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: feat/interests-visitor-ui-20261005
+          fetch-depth: 0
+      - name: Apply prepared public website files with exact-source guards
+        env:
+          PAYLOAD_URL: 'https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-73e0-820a-bc3c-48d6f5ac3e08/raw?se=2026-10-05T10%3A34%3A02Z&sp=r&sv=2026-02-06&sr=b&scid=dd04be6b-f0a0-50d4-9544-68cd0f834fff&skoid=b5d2651b-fef3-4bb0-a03b-ca59cc22929b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-05T05%3A56%3A50Z&ske=2026-10-06T05%3A56%3A50Z&sks=b&skv=2026-02-06&sig=Wgc3UBFTPoxCEyoAQFP3xz06J3LQPeqZV2TxOxxXzzo%3D'
+        run: |
+          curl --fail --location --silent --show-error "$PAYLOAD_URL" --output /tmp/interest-ui.zip
+          echo '908c89a9a70d3c808d48dded95c1d724a453dbcc8ed0b8b283bab171a052dd82  /tmp/interest-ui.zip' | sha256sum --check
+          python3 - <<'PY'
+          from pathlib import Path, PurePosixPath
+          import json, hashlib, zipfile
+          z=zipfile.ZipFile('/tmp/interest-ui.zip')
+          manifest=json.loads(z.read('manifest.json'))
+          sha=lambda data: hashlib.sha256(data).hexdigest()
+          pending=[]
+          for item in manifest['files']:
+              rel=PurePosixPath(item['path'])
+              assert not rel.is_absolute() and '..' not in rel.parts
+              p=Path(str(rel)); data=z.read('files/'+str(rel))
+              assert sha(data)==item['sha256'],str(rel)
+              current=sha(p.read_bytes()) if p.exists() else None
+              assert current==item['beforeSha256'],f'Concurrent change requires review: {rel}'
+              pending.append((p,data))
+          media=Path('src/data/media/photo-enhancements.json')
+          registry=json.loads(media.read_text())
+          additions=json.loads(z.read('media-additions.json'))
+          for row in additions:
+              assert not any(x.get('source')==row['source'] or x.get('enhanced')==row['enhanced'] for x in registry['enhancements'])
+              registry['enhancements'].append(row)
+          for p,data in pending:
+              p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(data)
+          media.write_text(json.dumps(registry,ensure_ascii=False,indent=2)+'\n')
+          print(f'Applied {len(pending)} guarded files and {len(additions)} generated media records; existing photos preserved.')
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm install --no-audit --no-fund
+      - name: Test all modules and build all public pages
+        env:
+          SITE_ORIGIN: https://alexyakovlev79.github.io
+          SITE_BASE: /adatours.ru
+        run: |
+          set -o pipefail
+          node --test tests/*.test.mjs | tee /tmp/interest-ui-unit.log
+          npm run build | tee /tmp/interest-ui-build.log
+      - name: Record validated implementation and remove temporary workflow
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import os,re
+          unit=Path('/tmp/interest-ui-unit.log').read_text()
+          build=Path('/tmp/interest-ui-build.log').read_text()
+          passed=re.search(r'(?:# |ℹ )pass (\d+)',unit)
+          results='\n'.join(line for line in build.splitlines() if 'checks passed:' in line)
+          Path('docs/reports/interest-presentation-2026-10-05.md').write_text('# Страницы интересов и общая форма — 05.10.2026\n\n'
+          'Выполнены пункты 2–11: все 13 интересов в общем разделе, сортировка по текущему числу активных туров, четыре сохраненные генерации GPT Image, индивидуальные вступления и динамические склоняемые подписи.\n\n'
+          'География Theme использует полноширинные DestinationBand; фон каждой страны — hero TOP-1 полного тематического каталога этой страны. Архивирование и изменение ранжирования пересчитывают обложки и счетчики при штатной сборке.\n\n'
+          'Одна форма перед подвалом добавляется через BaseLayout на всех реальных страницах сайта, включая полные каталоги и страницы пагинации. Существующие контекстные заголовки сохранены. Архивные страницы предлагают другую поездку. Отправка на сервер в существующем LeadForm не подключена; этот релиз меняет размещение, а не backend.\n\n'
+          'Сверены и актуализированы полные версии 11 прикрепленных пользователем MD-файлов. Точные исходные имена и SHA256, соответствующие канонические пути и SHA256 результата: interest-source-files-2026-10-05.json. Дополнены interests.md, archive.md и catalog-pagination.md, добавлен forms.md.\n\n'
+          '## Результаты штатных проверок\n\n'+(f'Полный набор: {passed[1]} тестов пройдено.\n\n' if passed else '')+'```text\n'+results+'\n```\n\n'
+          +'GitHub Actions run: '+os.environ['GITHUB_RUN_ID']+'. Production deploy подтверждается отдельным штатным workflow после объединения.\n')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm .github/workflows/interest-visitor-ui.yml
+          git add src public/media/themes docs AGENTS.md package.json tests scripts/check-interest-presentation.mjs
+          git diff --cached --check
+          git commit -m 'Complete interest visitor copy, generated covers, dynamic geography and global footer forms'
+          git push origin HEAD:feat/interests-visitor-ui-20261005
+          git rev-parse HEAD > /tmp/interest-ui-commit.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: interest-ui-validation
+          path: |
+            /tmp/interest-ui-unit.log
+            /tmp/interest-ui-build.log
+            /tmp/interest-ui-commit.txt
+          retention-days: 3

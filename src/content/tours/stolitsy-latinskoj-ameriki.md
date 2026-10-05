@@ -233,7 +233,7 @@ priceFrom: 5005
 currency: USD
 priceNote: $5005
 hero:
-  src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
+  src: /media/tours/brazil-argentina-uruguay-13-days/hero-rio-sunset-user-20261005.webp
   alt: на фото:Рио де Жанейро
 routeCountries:
 - country_brazil

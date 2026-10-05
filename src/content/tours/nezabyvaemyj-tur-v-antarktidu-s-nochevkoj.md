@@ -78,7 +78,7 @@ priceFrom: 8221
 currency: USD
 priceNote: $8221
 hero:
-  src: https://brasiltours.ru/image/Antarctica-XXI-seals-1024x768.png
+  src: /media/tours/antarctica-overnight-adventure/hero-seal-user-20261005.webp
   alt: Незабываемый тур в Антарктиду(с ночевкой)
 routeCountries:
 - country_antarctica

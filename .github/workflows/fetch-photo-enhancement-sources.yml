@@ -1,6 +1,10 @@
-name: Process remaining 40 photo enhancements
+name: Fetch temporary photo enhancement sources
 
 on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/fetch-photo-enhancement-sources.yml'
   push:
     paths:
       - '.github/workflows/fetch-photo-enhancement-sources.yml'
@@ -9,153 +13,34 @@ permissions:
   contents: write
 
 jobs:
-  enhance:
+  fetch:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install Pillow
-        run: python -m pip install --quiet pillow
-      - name: Enhance exact staged photos and update content
+      - name: Download exact raw source photos
         shell: bash
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          from PIL import Image, ImageEnhance, ImageFilter, ImageOps
-          import json
-
-          root = Path('.')
-          staged = root / 'tmp/photo-enhancement-inputs/20261005-next40'
-          items = [
-            ("bokete-gallery-1.jpg","https://brasiltours.ru/image/catalog/category/1/4/1472538871_beedad6983_o.jpg","src/content/destinations/bokete.md","public/media/destinations/boquete/gallery-1-enhanced-20261005.webp"),
-            ("bokete-gallery-2.jpg","https://brasiltours.ru/image/catalog/category/b/o/boquete_2.jpg","src/content/destinations/bokete.md","public/media/destinations/boquete/gallery-2-enhanced-20261005.webp"),
-            ("bokete-gallery-3.jpg","https://brasiltours.ru/image/catalog/category/a/n/antigua-cathedral-ruins.jpg","src/content/destinations/bokete.md","public/media/destinations/boquete/gallery-3-enhanced-20261005.webp"),
-            ("bokete-gallery-4.jpg","https://brasiltours.ru/image/catalog/category/c/h/ch-boquete-29.jpg","src/content/destinations/bokete.md","public/media/destinations/boquete/gallery-4-enhanced-20261005.webp"),
-            ("david-hero.jpg","https://brasiltours.ru/image/countries/panama/6.jpg","src/content/destinations/david.md","public/media/destinations/david/hero-enhanced-20261005.webp"),
-            ("david-gallery-1.jpg","https://brasiltours.ru/image/catalog/category/3/5/358738904_c9a70ba3fd_o.jpg","src/content/destinations/david.md","public/media/destinations/david/gallery-1-enhanced-20261005.webp"),
-            ("david-gallery-2.jpg","https://brasiltours.ru/image/catalog/category/1/3/1360881041_242ec5b0e3_o.jpg","src/content/destinations/david.md","public/media/destinations/david/gallery-2-enhanced-20261005.webp"),
-            ("david-gallery-3.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN20162_15.jpg","src/content/destinations/david.md","public/media/destinations/david/gallery-3-enhanced-20261005.webp"),
-            ("david-gallery-4.jpg","https://brasiltours.ru/image/catalog/category/2/1/2192858437_f721139f22_b.jpg","src/content/destinations/david.md","public/media/destinations/david/gallery-4-enhanced-20261005.webp"),
-            ("david-gallery-5.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN22200_1.jpg","src/content/destinations/david.md","public/media/destinations/david/gallery-5-enhanced-20261005.webp"),
-            ("david-gallery-6.jpg","https://brasiltours.ru/image/catalog/category/2/1/2193619956_65c743c7e0_b.jpg","src/content/destinations/david.md","public/media/destinations/david/gallery-6-enhanced-20261005.webp"),
-            ("david-gallery-7.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN20162_30.jpg","src/content/destinations/david.md","public/media/destinations/david/gallery-7-enhanced-20261005.webp"),
-            ("pearl-islands-hero.jpg","https://brasiltours.ru/image/countries/panama/8.jpg","src/content/destinations/zhemchuzhnye-ostrova.md","public/media/destinations/pearl-islands/hero-enhanced-20261005.webp"),
-            ("colon-hero.jpg","https://brasiltours.ru/image/countries/panama/5.jpg","src/content/destinations/kolon.md","public/media/destinations/colon/hero-enhanced-20261005.webp"),
-            ("colon-gallery-1.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN7007_8_1.jpg","src/content/destinations/kolon.md","public/media/destinations/colon/gallery-1-enhanced-20261005.webp"),
-            ("colon-gallery-2.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN4156_8_1.jpg","src/content/destinations/kolon.md","public/media/destinations/colon/gallery-2-enhanced-20261005.webp"),
-            ("colon-gallery-3.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN3170_10_1.jpg","src/content/destinations/kolon.md","public/media/destinations/colon/gallery-3-enhanced-20261005.webp"),
-            ("panama-city-gallery-1.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN3170_13.jpg","src/content/destinations/panama-siti.md","public/media/destinations/panama-city/gallery-1-enhanced-20261005.webp"),
-            ("panama-city-gallery-2.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN3648_33.jpg","src/content/destinations/panama-siti.md","public/media/destinations/panama-city/gallery-2-enhanced-20261005.webp"),
-            ("panama-city-gallery-3.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN3648_42.jpg","src/content/destinations/panama-siti.md","public/media/destinations/panama-city/gallery-3-enhanced-20261005.webp"),
-            ("panama-city-gallery-4.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN3648_39.jpg","src/content/destinations/panama-siti.md","public/media/destinations/panama-city/gallery-4-enhanced-20261005.webp"),
-            ("panama-city-gallery-5.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN22200_13.jpg","src/content/destinations/panama-siti.md","public/media/destinations/panama-city/gallery-5-enhanced-20261005.webp"),
-            ("panama-city-gallery-6.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN3648_41.jpg","src/content/destinations/panama-siti.md","public/media/destinations/panama-city/gallery-6-enhanced-20261005.webp"),
-            ("panama-city-gallery-7.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN4156_2.jpg","src/content/destinations/panama-siti.md","public/media/destinations/panama-city/gallery-7-enhanced-20261005.webp"),
-            ("portobelo-hero.jpg","https://brasiltours.ru/image/countries/panama/11.jpg","src/content/destinations/portobelo.md","public/media/destinations/portobelo/hero-enhanced-20261005.webp"),
-            ("portobelo-gallery-1.jpg","https://brasiltours.ru/image/catalog/category/8/6/868677836_554fdbbf9f_b.jpg","src/content/destinations/portobelo.md","public/media/destinations/portobelo/gallery-1-enhanced-20261005.webp"),
-            ("portobelo-gallery-2.jpg","https://brasiltours.ru/image/catalog/category/2/4/242920413_0a768c3d1e_o.jpg","src/content/destinations/portobelo.md","public/media/destinations/portobelo/gallery-2-enhanced-20261005.webp"),
-            ("portobelo-gallery-3.jpg","https://brasiltours.ru/image/catalog/category/9/1/919054634_9bcb079d40_o.jpg","src/content/destinations/portobelo.md","public/media/destinations/portobelo/gallery-3-enhanced-20261005.webp"),
-            ("portobelo-gallery-4.jpg","https://brasiltours.ru/image/catalog/category/2/5/2593194143_fd046bc502_o.jpg","src/content/destinations/portobelo.md","public/media/destinations/portobelo/gallery-4-enhanced-20261005.webp"),
-            ("portobelo-gallery-5.jpg","https://brasiltours.ru/image/catalog/category/4/7/476839733_06f17403c4_b.jpg","src/content/destinations/portobelo.md","public/media/destinations/portobelo/gallery-5-enhanced-20261005.webp"),
-            ("portobelo-gallery-6.jpg","https://brasiltours.ru/image/catalog/category/2/2/2200154323_ebfeb1aa9b_o.jpg","src/content/destinations/portobelo.md","public/media/destinations/portobelo/gallery-6-enhanced-20261005.webp"),
-            ("el-valle-hero.jpg","https://brasiltours.ru/image/countries/panama/7.jpg","src/content/destinations/el-valle.md","public/media/destinations/el-valle-de-anton/hero-enhanced-20261005.webp"),
-            ("el-valle-gallery-1.jpg","https://brasiltours.ru/image/catalog/category/9/3/93845615_d1f31e31af_o_1.jpg","src/content/destinations/el-valle.md","public/media/destinations/el-valle-de-anton/gallery-1-enhanced-20261005.webp"),
-            ("el-valle-gallery-2.jpg","https://brasiltours.ru/image/catalog/category/1/0/1005159996_a59d820711_b_1.jpg","src/content/destinations/el-valle.md","public/media/destinations/el-valle-de-anton/gallery-2-enhanced-20261005.webp"),
-            ("el-valle-gallery-3.jpg","https://brasiltours.ru/image/catalog/category/1/0/1004372412_ad3ee2ecdc_b_1.jpg","src/content/destinations/el-valle.md","public/media/destinations/el-valle-de-anton/gallery-3-enhanced-20261005.webp"),
-            ("el-valle-gallery-4.jpg","https://brasiltours.ru/image/catalog/category/2/3/2302014521_a10ba027cc_b_1.jpg","src/content/destinations/el-valle.md","public/media/destinations/el-valle-de-anton/gallery-4-enhanced-20261005.webp"),
-            ("el-valle-gallery-5.jpg","https://brasiltours.ru/image/catalog/category/2/0/2093114174_f9f962280e_b_1.jpg","src/content/destinations/el-valle.md","public/media/destinations/el-valle-de-anton/gallery-5-enhanced-20261005.webp"),
-            ("el-valle-gallery-6.jpg","https://brasiltours.ru/image/catalog/category/4/9/498912502_fec52d13a8_b_1.jpg","src/content/destinations/el-valle.md","public/media/destinations/el-valle-de-anton/gallery-6-enhanced-20261005.webp"),
-            ("asuncion-gallery-1.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN6530_4.jpg","src/content/destinations/asunson.md","public/media/destinations/asuncion/gallery-1-enhanced-20261005.webp"),
-            ("asuncion-gallery-2.jpg","https://brasiltours.ru/image/catalog/category/B/N/BN6530_1.jpg","src/content/destinations/asunson.md","public/media/destinations/asuncion/gallery-2-enhanced-20261005.webp"),
-          ]
-
-          assert len(items) == 40
-
-          # Load registry once.
-          registry_path = root / 'src/data/media/photo-enhancements.json'
-          registry = json.loads(registry_path.read_text(encoding='utf-8'))
-          enhancements = registry['enhancements']
-          by_source = {x.get('source'): x for x in enhancements}
-
-          changed_mds = {}
-          for src_name, source_url, md_path_s, out_path_s in items:
-              src_path = staged / src_name
-              if not src_path.exists():
-                  raise SystemExit(f"Missing staged source: {src_path}")
-
-              out_path = root / out_path_s
-              out_path.parent.mkdir(parents=True, exist_ok=True)
-
-              with Image.open(src_path) as raw:
-                  im = ImageOps.exif_transpose(raw).convert('RGB')
-                  w, h = im.size
-                  max_side = max(w, h)
-                  if max_side < 1280:
-                      scale = min(3.0, 1280 / max_side)
-                      nw, nh = max(1, round(w * scale)), max(1, round(h * scale))
-                      im = im.resize((nw, nh), Image.Resampling.LANCZOS)
-                  im = ImageEnhance.Contrast(im).enhance(1.04)
-                  im = ImageEnhance.Color(im).enhance(1.025)
-                  im = im.filter(ImageFilter.UnsharpMask(radius=1.15, percent=115, threshold=3))
-                  im.save(out_path, 'WEBP', quality=90, method=6)
-
-              public_src = '/' + out_path_s.removeprefix('public/')
-              md_path = root / md_path_s
-              if md_path_s not in changed_mds:
-                  changed_mds[md_path_s] = md_path.read_text(encoding='utf-8')
-              text = changed_mds[md_path_s]
-              if source_url not in text:
-                  raise SystemExit(f"Source URL not found in {md_path_s}: {source_url}")
-              changed_mds[md_path_s] = text.replace(source_url, public_src, 1)
-
-              existing = by_source.get(source_url)
-              if existing:
-                  # Parallel-safe: do not create a duplicate; target must agree or abort.
-                  if existing.get('enhanced') != public_src:
-                      raise SystemExit(f"Conflicting existing registry mapping for {source_url}: {existing.get('enhanced')}")
-              else:
-                  rec = {
-                      'source': source_url,
-                      'enhanced': public_src,
-                      'enhancedAt': '2026-10-05',
-                      'method': 'deterministic-restoration',
-                      'revision': 1,
-                  }
-                  enhancements.append(rec)
-                  by_source[source_url] = rec
-
-          for md_path_s, txt in changed_mds.items():
-              (root / md_path_s).write_text(txt, encoding='utf-8')
-
-          # Keep registry truthful about this fallback method.
-          registry['description'] = (
-              'Mechanical registry of completed image enhancements. source is the canonical raw image or local asset identity; '
-              'original generation inputs remain in Git history. Reuse enhanced assets; no visual re-review or repeated download is required. '
-              'method records the actual enhancement pipeline.'
-          )
-          registry_path.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-
-          # Exact technical checks only.
-          for _, source_url, md_path_s, out_path_s in items:
-              p = root / out_path_s
-              if not p.exists() or p.stat().st_size == 0:
-                  raise SystemExit(f"Missing output {p}")
-              with Image.open(p) as im:
-                  im.verify()
-              if source_url in (root / md_path_s).read_text(encoding='utf-8'):
-                  raise SystemExit(f"Old source still present in {md_path_s}: {source_url}")
-
-          print(f"Prepared {len(items)} enhanced assets across {len(changed_mds)} destination files.")
-          PY
-      - name: Remove temporary staged inputs
-        run: rm -rf tmp/photo-enhancement-inputs/20261005-next40
-      - name: Commit enhancement batch
+          set -euo pipefail
+          dir='tmp/photo-enhancement-inputs/20261004-next10'
+          mkdir -p "$dir"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN2031_10.jpg' -o "$dir/san-jose-gallery-5.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN11553_60.jpg' -o "$dir/san-jose-gallery-6.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN17854_2.jpg' -o "$dir/san-jose-gallery-7.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN19310_1.jpg' -o "$dir/san-jose-gallery-8.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/costa-rica/1.jpg' -o "$dir/tortuguero-hero.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/s/e/sea-turtles.jpg' -o "$dir/tortuguero-gallery-1.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/T/o/Tortuguero.jpg' -o "$dir/tortuguero-gallery-2.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/e/l/elements-travel-tortuguero01.jpg' -o "$dir/tortuguero-gallery-3.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/costa-rica/3.jpg' -o "$dir/jaco-hero.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN6421_3_1.jpg' -o "$dir/jaco-gallery-1.jpg"
+          file "$dir"/*
+      - name: Commit temporary source files
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/media/destinations src/content/destinations src/data/media/photo-enhancements.json tmp/photo-enhancement-inputs/20261005-next40
+          git add tmp/photo-enhancement-inputs/20261004-next10
           git diff --cached --quiet && exit 0
-          git commit -m 'Enhance remaining 40 destination photos, batches 2/5–5/5'
-          git pull --rebase origin main
+          git commit -m 'chore: stage exact source photos for next enhancement batch [skip ci]'
           git push

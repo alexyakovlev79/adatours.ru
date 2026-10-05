@@ -7,8 +7,8 @@ status: approved
 summary: Карнавал в Рио, Новый год и другие поездки, приуроченные к событию. Сначала выберите праздник, затем —
   маршрут, который позволит увидеть больше страны.
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/markus-kammermann-7y3-tvfi0k-unsplash.jpg
-  alt: Шествие школ самбы на карнавале в Рио, яркие костюмы и барабаны на Самбадроме
+  src: /media/themes/events-and-festivals/hero-enhanced-20261005.webp
+  alt: Карнавальные танцоры и музыканты, иллюстрация GPT Image
 updatedAt: '2026-10-05'
 ---
 

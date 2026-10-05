@@ -4,10 +4,16 @@ import PhoneField from './PhoneField.astro';
 interface Props {
   title?: string;
   entityId?: string;
+  tourId?: string;
+  pageUrl?: string;
+  locale?: string;
 }
 const {
   title = 'Расскажите, какой маршрут вам нужен',
   entityId = '',
+  tourId = '',
+  pageUrl = Astro.url.toString(),
+  locale = 'ru',
 } = Astro.props;
 ---
 
@@ -18,8 +24,11 @@ const {
       <h2>{title}</h2>
     </div>
 
-    <form class="form" action="#" method="post" onsubmit="return false;">
+    <form class="form" data-lead-form action="#" method="post" onsubmit="return false;">
       <input type="hidden" name="entity_id" value={entityId} />
+      <input type="hidden" name="tour_id" value={tourId} />
+      <input type="hidden" name="page_url" value={pageUrl} />
+      <input type="hidden" name="locale" value={locale} />
       <label>
         <span>Имя</span>
         <input name="name" type="text" autocomplete="name" placeholder="Ваше имя" />

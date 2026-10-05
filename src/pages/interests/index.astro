@@ -1,7 +1,7 @@
 ---
-import { INTERESTS, themeRelevance, countLabel } from '../../lib/interest-model.mjs';
-import { isActiveEntity } from '../../lib/archive.mjs';
+import { buildInterestIndex, countLabel } from '../../lib/interest-model.mjs';
 import { getCollection } from 'astro:content';
+import { interestTourCount } from '../../lib/interest-copy.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { themePath } from '../../lib/routes';
 import Hero from '../../components/editorial/Hero.astro';
@@ -9,8 +9,7 @@ import EditorialStatement from '../../components/editorial/EditorialStatement.as
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
 
 const [entries, tours] = await Promise.all([getCollection('themes'), getCollection('tours')]);
-const themes = INTERESTS.map((interest) => entries.find((entry) => entry.data.id === interest.id && entry.data.locale === 'ru' && isActiveEntity(entry))).filter(Boolean);
-const tourCount = (id) => tours.filter((entry) => entry.data.locale === 'ru' && isActiveEntity(entry) && themeRelevance(entry, id)).length;
+const themes = buildInterestIndex(entries, tours);
 
 ---
 
@@ -26,13 +25,15 @@ const tourCount = (id) => tours.filter((entry) => entry.data.locale === 'ru' && 
   />
 
   <EditorialStatement
-    eyebrow={`${themes.length} интересов`}
+    eyebrow={countLabel(themes.length, ['интерес', 'интереса', 'интересов'])}
     text="Одна тема может задать всю поездку или стать ее лучшей частью."
   />
 
-  {themes.map((theme, index) => (
+  <div data-interest-index>
+  {themes.map(({ entry: theme, tourCount }, index) => (
+    <div data-interest-index-item={theme.data.id} data-interest-tour-count={tourCount}>
     <DestinationBand
-      eyebrow={countLabel(tourCount(theme.data.id))}
+      eyebrow={interestTourCount(theme.data.id, tourCount)}
       title={theme.data.name}
       text={theme.data.summary}
       image={theme.data.hero?.src}
@@ -40,5 +41,7 @@ const tourCount = (id) => tours.filter((entry) => entry.data.locale === 'ru' && 
       href={themePath(theme.data)}
       align={index % 3 === 1 ? 'right' : 'left'}
     />
+    </div>
   ))}
+  </div>
 </BaseLayout>

@@ -3,7 +3,6 @@ import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
 import TripStats from '../components/tour/TripStats.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
-import LeadForm from '../components/forms/LeadForm.astro';
 import { withBase } from '../lib/paths';
 
 const { entry } = Astro.props;
@@ -22,7 +21,7 @@ const serviceLabels: Record<string, string> = {
 };
 ---
 
-<BaseLayout
+<BaseLayout leadTitle="Обсудить похожую поездку или мероприятие" leadEntityId={d.id}
   title={d.title}
   description={`${d.title}. Анонимный кейс Ada Tours: задача, логистика, выполненные работы и результат.`}
   image={d.hero?.src}
@@ -68,7 +67,6 @@ const serviceLabels: Record<string, string> = {
     </nav>
   )}
 
-  <LeadForm title="Обсудить похожую поездку или мероприятие" entityId={d.id} />
 </BaseLayout>
 
 <style>

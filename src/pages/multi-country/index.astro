@@ -5,11 +5,10 @@ import EditorialStatement from '../../components/editorial/EditorialStatement.as
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
-import LeadForm from '../../components/forms/LeadForm.astro';
 import { withBase } from '../../lib/paths';
 ---
 
-<BaseLayout
+<BaseLayout leadTitle="Собрать маршрут по нескольким странам" leadEntityId="multi_country"
   title="Multi-country туры по Латинской Америке"
   description="Индивидуальные маршруты по нескольким странам Латинской Америки: Бразилия, Аргентина, Перу и другие сочетания с единой координацией."
 >
@@ -98,7 +97,6 @@ import { withBase } from '../../lib/paths';
     </div>
   </section>
 
-  <LeadForm title="Собрать маршрут по нескольким странам" entityId="multi_country" />
 </BaseLayout>
 
 <style>

@@ -6,7 +6,6 @@ import Hero from '../components/editorial/Hero.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 import TripStats from '../components/tour/TripStats.astro';
-import LeadForm from '../components/forms/LeadForm.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogMoreLink from '../components/editorial/CatalogMoreLink.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
@@ -113,7 +112,7 @@ const destinationSchema = {
 };
 ---
 
-<BaseLayout
+<BaseLayout leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id}
   title={`${d.name}: туры и экскурсии`}
   description={d.summary}
   image={d.hero?.src}
@@ -274,7 +273,6 @@ const destinationSchema = {
     </>
   )}
 
-  <LeadForm title={`Собрать поездку: ${d.name}`} entityId={d.id} />
 </BaseLayout>
 
 

@@ -28,10 +28,20 @@ const destinationMembership = (tour, id) => {
   return (d.destinations ?? []).includes(id) ? OPTIONAL_COUNTRY_WEIGHT : 0;
 };
 export const interestTourCatalogPath = (theme, country) => `/interests/${dataOf(theme).slug}/tours/${country ? `${dataOf(country).slug}/` : ''}`;
-export const countLabel = (count, forms = ['тур', 'тура', 'туров']) => {
+export const pluralIndex = (count) => {
+  if (!Number.isSafeInteger(count) || count < 0) throw new RangeError('A count must be a non-negative safe integer.');
   const last = count % 10, lastTwo = count % 100;
-  return `${count} ${forms[lastTwo >= 11 && lastTwo <= 14 ? 2 : last === 1 ? 0 : last >= 2 && last <= 4 ? 1 : 2]}`;
+  return lastTwo >= 11 && lastTwo <= 14 ? 2 : last === 1 ? 0 : last >= 2 && last <= 4 ? 1 : 2;
 };
+export const countLabel = (count, forms = ['тур', 'тура', 'туров']) => `${count} ${forms[pluralIndex(count)]}`;
+
+/** Complete interest index: primary and secondary matches count once, without editorial limits. */
+export function buildInterestIndex(themes, tours) {
+  const activeTours = activeUnique(tours);
+  return activeUnique(themes).filter((entry) => INTEREST_IDS.has(dataOf(entry).id)).map((entry) => ({
+    entry, tourCount: activeTours.filter((tour) => themeRelevance(tour, dataOf(entry).id) > 0).length,
+  })).sort((a, b) => b.tourCount - a.tourCount || byName(a, b) || dataOf(a.entry).id.localeCompare(dataOf(b.entry).id));
+}
 export const excursionIdsForInterestTour = (tour) => {
   const ids = new Set();
   if (!active(tour)) return ids;
@@ -97,7 +107,7 @@ export function buildInterestHub(id, { tours = [], countries = [], destinations 
     const countryId = dataOf(entry).id;
     const countryTours = matchedTours.filter((tour) => countryMembership(tour, countryId));
     const mainCount = countryTours.filter((tour) => countryMembership(tour, countryId) === 1).length;
-    return { entry, tourCount: countryTours.length, mainCount, optionalCount: countryTours.length - mainCount, tours: countryTours,
+    return { entry, tourCount: countryTours.length, mainCount, optionalCount: countryTours.length - mainCount, tours: countryTours, topTour: countryTours[0],
       score: countryTours.reduce((sum, tour) => sum + themeRelevance(tour, id) * countryMembership(tour, countryId), 0),
       places: destinationRows.filter((row) => row.countryId === countryId).sort((a, b) => b.score - a.score || byName(a, b)).slice(0, 2).map((row) => nameOf(row.entry)) };
   }).filter((row) => row.tourCount).sort((a, b) => b.score - a.score || b.tourCount - a.tourCount || byName(a, b));

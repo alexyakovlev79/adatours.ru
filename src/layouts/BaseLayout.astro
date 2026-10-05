@@ -5,6 +5,7 @@ import '../styles/global.css';
 import '../styles/image-text-align.css';
 import SiteHeader from '../components/global/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
+import LeadForm from '../components/forms/LeadForm.astro';
 import SearchOverlay from '../components/global/SearchOverlay.astro';
 import Breadcrumbs from '../components/global/Breadcrumbs.astro';
 import { SITE } from '../lib/site';
@@ -16,6 +17,9 @@ import { validateSiteContent } from '../lib/content-validation';
 await validateSiteContent();
 
 interface Props {
+  leadTitle?: string;
+  leadEntityId?: string;
+  leadTourId?: string;
   title?: string;
   description?: string;
   canonical?: string;
@@ -30,6 +34,9 @@ interface Props {
 }
 
 const {
+  leadTitle,
+  leadEntityId,
+  leadTourId,
   title = SITE.defaultTitle,
   description = SITE.defaultDescription,
   canonical,
@@ -222,7 +229,14 @@ const graph = [
     )}
     <main>
       <slot />
+      <div id="request" data-lead-location="footer" data-interest-section={leadEntityId?.startsWith('theme_') ? 'cta' : undefined} data-pagefind-ignore>
+        <LeadForm title={leadTitle} entityId={leadEntityId || logicalPath} tourId={leadTourId} pageUrl={canonicalUrl} locale={lang} />
+      </div>
     </main>
     <SiteFooter />
   </body>
 </html>
+
+<style>
+  #request { scroll-margin-top: 100px; }
+</style>

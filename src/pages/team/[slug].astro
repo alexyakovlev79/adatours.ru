@@ -4,7 +4,6 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
-import LeadForm from '../../components/forms/LeadForm.astro';
 import { SITE } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -40,7 +39,7 @@ const personSchema = {
 };
 ---
 
-<BaseLayout
+<BaseLayout leadTitle="Обсудить поездку с Ada Tours" leadEntityId={entry.data.id}
   title={`${entry.data.name} - ${entry.data.role}`}
   description={`${entry.data.name}, ${entry.data.role}. Экспертиза: ${entry.data.expertise.join(', ')}.`}
 >
@@ -64,5 +63,4 @@ const personSchema = {
     <Content />
   </PersonProfile>
 
-  <LeadForm title="Обсудить поездку с Ada Tours" entityId={entry.data.id} />
 </BaseLayout>

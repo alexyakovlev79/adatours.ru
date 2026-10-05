@@ -4,10 +4,9 @@ import Hero from '../../../components/editorial/Hero.astro';
 import EditorialStatement from '../../../components/editorial/EditorialStatement.astro';
 import EditorialProof from '../../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../../components/proof/ProcessSteps.astro';
-import LeadForm from '../../../components/forms/LeadForm.astro';
 ---
 
-<BaseLayout
+<BaseLayout leadTitle="Отправить запрос от агентства или туроператора" leadEntityId="dmc_terms"
   title="Условия работы с Ada Tours для турагентств и туроператоров"
   description="Как Ada Tours работает с B2B-партнерами: бриф, маршрут, расчет, подтверждение услуг и локальная координация в Бразилии и Латинской Америке."
 >
@@ -77,5 +76,4 @@ import LeadForm from '../../../components/forms/LeadForm.astro';
     reverse
   />
 
-  <LeadForm title="Отправить запрос от агентства или туроператора" entityId="dmc_terms" />
 </BaseLayout>

@@ -6,14 +6,13 @@ import Hero from '../components/editorial/Hero.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
-import LeadForm from '../components/forms/LeadForm.astro';
 
 const [brazil] = await getCollection('countries', ({ data }) =>
   data.id === 'country_brazil' && data.locale === 'ru' && isActiveEntity(data)
 );
 ---
 
-<BaseLayout
+<BaseLayout leadTitle="Расскажите, какой маршрут нужен" leadEntityId="home"
   title="Ada Tours — путешествия по Бразилии и Латинской Америке"
   description="Индивидуальные путешествия, VIP, MICE и DMC по Бразилии и Латинской Америке."
 >
@@ -85,5 +84,4 @@ const [brazil] = await getCollection('countries', ({ data }) =>
     align="right"
   />
 
-  <LeadForm title="Расскажите, какой маршрут нужен" entityId="home" />
 </BaseLayout>

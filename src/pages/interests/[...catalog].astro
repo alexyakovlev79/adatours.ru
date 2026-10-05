@@ -2,7 +2,8 @@
 import { createHash } from 'node:crypto';
 import { getCollection } from 'astro:content';
 import { isActiveEntity } from '../../lib/archive.mjs';
-import { buildInterestHub, interestTourCatalogPath, countLabel } from '../../lib/interest-model.mjs';
+import { buildInterestHub, interestTourCatalogPath } from '../../lib/interest-model.mjs';
+import { interestCatalogDescription } from '../../lib/interest-copy.mjs';
 import { themePath } from '../../lib/routes';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import EntityCatalogLayout from '../../layouts/EntityCatalogLayout.astro';
@@ -20,11 +21,11 @@ export async function getStaticPaths() {
     const d = theme.data, hub = buildInterestHub(d.id, { themes, tours, countries, destinations, excursions });
     const root = interestTourCatalogPath(d);
     const breadcrumbs = [{ label: 'По интересам', href: '/interests/' }, { label: d.name, href: themePath(d) }, { label: 'Все туры', href: root }];
-    add(hub.allTours, root, { kind: 'tour', title: `${d.name}: все туры`, description: `${countLabel(hub.allTours.length)} по выбранному интересу. Сначала основная тема поездки, затем существенная часть программы.`, breadcrumbs, hero: d.hero?.src });
+    add(hub.allTours, root, { kind: 'tour', title: `${d.name}: все туры`, description: interestCatalogDescription(d.id, hub.allTours.length), breadcrumbs, hero: d.hero?.src, leadEntityId: d.id, leadTitle: `Собрать поездку: ${d.name}` });
     for (const row of hub.allCountries) {
       const country = row.entry.data, countryRoot = interestTourCatalogPath(d, country);
-      add(row.tours, countryRoot, { kind: 'tour', title: `${country.name}: ${d.name}`, description: `${countLabel(row.tourCount)} по интересу «${d.name}», в которых есть ${country.name}.${row.optionalCount ? ` В ${row.optionalCount} программах страна посещается дополнительно; это отмечено у тура.` : ''}`,
-        breadcrumbs: [...breadcrumbs, { label: country.name, href: countryRoot }], hero: d.hero?.src, countryContextId: country.id });
+      add(row.tours, countryRoot, { kind: 'tour', title: `${country.name}: ${d.name}`, description: interestCatalogDescription(d.id, row.tourCount, country.name),
+        breadcrumbs: [...breadcrumbs, { label: country.name, href: countryRoot }], hero: row.topTour.data.hero?.src, countryContextId: country.id, leadEntityId: d.id, leadTitle: `Собрать поездку: ${country.name}` });
     }
   }
   return paths;

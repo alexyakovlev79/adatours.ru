@@ -7,8 +7,8 @@ status: approved
 summary: Пантанал, Амазония, Галапагосы и другие природные районы. Выберите путешествие ради наблюдения за животными,
   птицами и ландшафтами, без обязательного активного спорта.
 hero:
-  src: /media/destinations/pantanal/hero-enhanced-20261001.webp
-  alt: Природа Пантанала в Бразилии
+  src: /media/themes/wildlife/hero-enhanced-20261005.webp
+  alt: Ягуар у воды в тропическом лесу, иллюстрация GPT Image
 updatedAt: '2026-10-05'
 ---
 

@@ -10,7 +10,7 @@ summary: "Ла Пас расположен на берегу Калифорни�
 searchAliases: []
 themes: []
 hero: {"src":"/media/destinations/la-paz/hero-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"}
-gallery: [{"src":"/media/destinations/la-paz/gallery-1-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"},{"src":"/media/destinations/la-paz/gallery-2-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_19.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_4.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_5.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_7.jpg","alt":"На фото: город Ла Пас в Мексике"}]
+gallery: [{"src":"/media/destinations/la-paz/gallery-1-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"},{"src":"/media/destinations/la-paz/gallery-2-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"},{"src":"/media/destinations/la-paz/gallery-3-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"},{"src":"/media/destinations/la-paz/gallery-4-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"},{"src":"/media/destinations/la-paz/gallery-5-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"},{"src":"/media/destinations/la-paz/gallery-6-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

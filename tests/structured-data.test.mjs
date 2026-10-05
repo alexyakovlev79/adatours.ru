@@ -2,12 +2,19 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildStructuredData, absoluteUrl, logicalPath, hasType, safeJsonLd } from '../src/lib/structured-data.mjs';
 const root = 'https://adatours.ru/';
-const organization = { name: 'Ada Tours', url: root, logo: '/brand/adatours-logo-black.svg', languages: ['Русский'], email: 'info@adatours.com' };
+const organization = {
+  name: 'Ada Tours', url: root, legalName: 'Ada Tours 2007 - Operadora de Turismo LTDA',
+  logo: '/brand/adatours-logo-black.svg', languages: ['Русский', 'English'], email: 'info@adatours.com',
+  description: 'Принимающий туроператор и DMC.', cnpj: '08.537.782/0001-04',
+  sameAs: ['https://adatours.com/'],
+  areaServed: [{ '@type': 'Country', name: 'Бразилия' }, { '@type': 'Place', name: 'Латинская Америка' }],
+};
 const record = (kind, id, path, data = {}, archived = false) => ({ kind, path, archived, data: { id, status: 'published', slug: id, name: id, ...data } });
 const brazil = record('country', 'br', '/brazil/', { name: 'Бразилия' });
-const rio = record('destination', 'rio', '/brazil/place/rio/', { name: 'Рио', countryId: 'br', destinationType: 'city' });
-const tour = record('tour', 'trip', '/brazil/tour/trip/', { name: undefined, title: 'Рио за 3 дня', lead: 'Поездка в Рио.', durationDays: 3, durationNights: 2, countries: ['br'], destinations: ['rio', 'reserved'], route: ['Рио', 'Будущее место'], priceFrom: 1200.6, currency: 'USD', itinerary: [{ day: 1, title: 'Прибытие', text: 'Встреча в аэропорту' }, { title: 'Дополнительная экскурсия', text: 'Не отдельный день' }] });
-const all = [brazil, rio, tour];
+const adventure = record('theme', 'adventure', '/interests/adventure/', { name: 'Приключения' });
+const rio = record('destination', 'rio', '/brazil/place/rio/', { name: 'Рио', countryId: 'br', destinationType: 'city', themes: ['adventure'] });
+const tour = record('tour', 'trip', '/brazil/tour/trip/', { name: undefined, title: 'Рио за 3 дня', lead: 'Поездка в Рио.', durationDays: 3, durationNights: 2, countries: ['br'], destinations: ['rio', 'reserved'], primaryThemes: ['adventure'], audiences: ['Частные путешественники'], route: ['Рио', 'Будущее место'], priceFrom: 1200.6, currency: 'USD', itinerary: [{ day: 1, title: 'Прибытие', text: 'Встреча в аэропорту' }, { title: 'Дополнительная экскурсия', text: 'Не отдельный день' }] });
+const all = [brazil, adventure, rio, tour];
 function build(path = tour.path, options = {}) {
   return buildStructuredData({ root, organization, records: all, page: { path, url: absoluteUrl(path, root), title: 'Страница', description: 'Описание', lang: 'ru' }, ...options });
 }
@@ -25,6 +32,7 @@ test('tour is the page main entity, linked to provider, country and real places'
   const graph = build(); const trip = entity(graph); const page = nodes(graph, 'WebPage')[0];
   assert.equal(page.mainEntity['@id'], trip['@id']);
   assert.equal(trip.provider['@id'], `${root}#organization`);
+  assert.deepEqual(trip.touristType, ['Приключения', 'Частные путешественники']);
   assert.equal(page.spatialCoverage[0]['@id'], `${root}brazil/#country`);
   assert.match(trip.description, /3 дней, 2 ночей/);
   assert.equal(trip.duration, undefined);
@@ -39,6 +47,7 @@ test('from price is rounded to the UI and not presented as an exact fixed price'
   assert.equal(offer.priceSpecification.minPrice, 1201);
   assert.equal(offer.price, undefined); assert.equal(offer.availability, undefined);
   assert.equal(offer.priceCurrency, 'USD');
+  assert.equal(offer.offeredBy['@id'], `${root}#organization`);
 });
 test('missing, zero, hidden and archived prices do not create offers', () => {
   for (const priceFrom of [0, null, undefined, NaN]) {
@@ -90,10 +99,11 @@ test('reviews keep displayed authors/text without invented ratings', () => {
   assert.equal(nodes(graph, 'AggregateRating').length, 0);
 });
 test('people, static services and geography get distinct semantic types', () => {
-  const person = record('person', 'anna', '/team/anna/', { name: 'Анна', role: 'Менеджер' });
+  const person = record('person', 'anna', '/team/anna/', { name: 'Анна', role: 'Менеджер', languages: ['Английский', 'Русский'] });
   const profile = build(person.path, { records: [person] });
   assert.equal(nodes(profile, 'ProfilePage').length, 1);
   assert.equal(nodes(profile, 'Person')[0].worksFor['@id'], `${root}#organization`);
+  assert.deepEqual(nodes(profile, 'Person')[0].knowsLanguage, ['en', 'ru']);
   assert.equal(nodes(build('/vip/'), 'Service').length, 1);
   assert.equal(nodes(build('/contacts/'), 'ContactPage').length, 1);
   const antarctica = record('country', 'antarctica', '/antarctica/', { name: 'Антарктида', slug: 'antarctica' });
@@ -106,5 +116,11 @@ test('JSON-LD is safe inside a script and node IDs are unique', () => {
   assert.ok(!serialized.includes('<')); assert.deepEqual(JSON.parse(serialized), payload);
   const graph = build(); const ids = graph['@graph'].map((n) => n['@id']);
   assert.equal(new Set(ids).size, ids.length);
-  assert.equal(nodes(graph, 'Organization')[0].foundingDate, undefined);
+  const org = nodes(graph, 'Organization')[0];
+  assert.equal(org.foundingDate, undefined);
+  assert.equal(org.taxID, '08.537.782/0001-04');
+  assert.deepEqual(org.sameAs, ['https://adatours.com/']);
+  assert.deepEqual(org.knowsLanguage, ['ru', 'en']);
+  assert.deepEqual(org.contactPoint.availableLanguage, ['ru', 'en']);
+  assert.equal(org.areaServed[0].name, 'Бразилия');
 });

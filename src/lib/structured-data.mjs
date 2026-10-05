@@ -1,7 +1,7 @@
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
  * Facts come from the content model and the rendered page, never SEO inventions.
  */
-export const SCHEMA_VERSION = '2026-10-05.2';
+export const SCHEMA_VERSION = '2026-10-05.3';
 export const types = (node) => [node?.['@type'] ?? []].flat();
 export const hasType = (node, type) => types(node).includes(type);
 export const ref = (id) => ({ '@id': id });
@@ -60,6 +60,20 @@ const dateValue = (value) => {
   return Number.isNaN(date.getTime()) ? undefined : date.toISOString();
 };
 const recordName = (record) => cleanText(record?.data.name || record?.data.title);
+const languageCodes = new Map([
+  ['русский', 'ru'], ['russian', 'ru'],
+  ['английский', 'en'], ['english', 'en'],
+  ['испанский', 'es'], ['spanish', 'es'],
+  ['португальский', 'pt'], ['portuguese', 'pt'],
+  ['китайский', 'zh'], ['chinese', 'zh'],
+  ['японский', 'ja'], ['japanese', 'ja'],
+  ['арабский', 'ar'], ['arabic', 'ar'],
+  ['малайский', 'ms'], ['malay', 'ms'],
+]);
+const languageCode = (value) => {
+  const text = cleanText(value);
+  return languageCodes.get(text.toLocaleLowerCase('ru')) || text;
+};
 const publicType = (record) => {
   if (record.kind === 'country') return record.data.slug === 'antarctica' ? ['Place', 'TouristDestination'] : ['Country', 'TouristDestination'];
   if (record.kind === 'destination') return record.data.destinationType === 'city' ? ['City', 'TouristDestination'] : 'TouristDestination';
@@ -85,12 +99,14 @@ export function buildStructuredData({ root, organization, records, page, documen
   add({ '@type': 'ImageObject', '@id': logoId, url: absoluteUrl(organization.logo, root), contentUrl: absoluteUrl(organization.logo, root), caption: organization.name, width: 553, height: 184 });
   add({ '@type': ['Organization', 'TravelAgency'], '@id': orgId, name: organization.name,
     legalName: organization.legalName, url: organization.url, logo: ref(logoId),
-    email: organization.email, telephone: organization.telephone,
+    description: cleanText(organization.description), email: organization.email, telephone: organization.telephone,
     identifier: organization.cnpj ? { '@type': 'PropertyValue', propertyID: 'CNPJ', value: organization.cnpj } : undefined,
-    address: organization.address,
+    taxID: organization.cnpj, address: organization.address, areaServed: organization.areaServed,
     sameAs: organization.sameAs?.filter((url) => /^https?:\/\//.test(url)),
+    knowsLanguage: organization.languages?.map(languageCode),
     contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', email: organization.email,
-      telephone: organization.telephone, availableLanguage: organization.languages },
+      telephone: organization.telephone, availableLanguage: organization.languages?.map(languageCode),
+      areaServed: organization.areaServed },
   });
   add({ '@type': 'WebSite', '@id': siteId, url: root, name: organization.name, inLanguage: page.lang, publisher: ref(orgId) });
   const imageUrl = absoluteUrl(page.image || current?.data.hero?.src || current?.data.photo?.src || document.primaryImage?.src, root);
@@ -121,6 +137,9 @@ export function buildStructuredData({ root, organization, records, page, documen
     if (record.kind === 'destination') {
       const country = byId.get(d.countryId);
       if (publicRecord(country)) node.containedInPlace = ensureRecord(country);
+      const touristTypes = (d.themes || []).map((key) => byId.get(key))
+        .filter((theme) => publicRecord(theme) && theme.kind === 'theme').map(recordName);
+      if (touristTypes.length) node.touristType = [...new Set(touristTypes)];
     }
     if (record.kind === 'theme') {
       const termSet = add({ '@type': 'DefinedTermSet', '@id': `${root}interests/#terms`, name: 'Интересы Ada Tours', url: absoluteUrl('/interests/', root) });
@@ -129,6 +148,12 @@ export function buildStructuredData({ root, organization, records, page, documen
     }
     if (['tour', 'excursion'].includes(record.kind)) {
       node.provider = ref(orgId);
+      const themeIds = record.kind === 'tour' ? [...(d.primaryThemes || []), ...(d.themes || [])] : (d.themes || []);
+      const touristTypes = [
+        ...themeIds.map((key) => byId.get(key)).filter((theme) => publicRecord(theme) && theme.kind === 'theme').map(recordName),
+        ...(record.kind === 'tour' ? (d.audiences || []) : []),
+      ].map(cleanText).filter(Boolean);
+      if (touristTypes.length) node.touristType = [...new Set(touristTypes)];
       if (full) {
         // Trip has no schema.org duration property. Keep duration in its factual description
         // and express numbered programme days with subTrip, rather than invalid properties.
@@ -162,7 +187,7 @@ export function buildStructuredData({ root, organization, records, page, documen
         // UI renders 0/null/missing as "По запросу"; never turn it into a free offer.
         if (!record.archived && price > 0 && /^[A-Z]{3}$/.test(d.currency || '') && document.priceVisible !== false) {
           node.offers = add({ '@type': 'Offer', '@id': `${url}#offer`, url, name: `Стоимость от ${price} ${d.currency}`,
-            seller: ref(orgId), itemOffered: ref(id), priceCurrency: d.currency,
+            seller: ref(orgId), offeredBy: ref(orgId), itemOffered: ref(id), priceCurrency: d.currency,
             priceSpecification: { '@type': 'PriceSpecification', minPrice: price, priceCurrency: d.currency } });
         }
       }
@@ -170,7 +195,11 @@ export function buildStructuredData({ root, organization, records, page, documen
     if (record.kind === 'person') {
       node.jobTitle = cleanText(d.role);
       node.worksFor = ref(orgId);
-      if (full) { node.knowsAbout = d.expertise; node.sameAs = d.externalProfiles?.filter((v) => /^https?:\/\//.test(v)); }
+      if (full) {
+        node.knowsAbout = d.expertise;
+        node.knowsLanguage = d.languages?.map(languageCode);
+        node.sameAs = d.externalProfiles?.filter((v) => /^https?:\/\//.test(v));
+      }
     }
     if (['case', 'article'].includes(record.kind)) {
       node.headline = recordName(record); node.publisher = ref(orgId); node.inLanguage = page.lang;
@@ -194,7 +223,8 @@ export function buildStructuredData({ root, organization, records, page, documen
     if (current.archived) webPage.description = `${webPage.description} Архивная программа; не предлагается к бронированию.`;
   } else if (servicePages[page.path]) {
     const service = add({ '@type': 'Service', '@id': `${page.url}#service`, name: cleanText(document.h1 || page.title),
-      description: cleanText(page.description), serviceType: servicePages[page.path], url: page.url, provider: ref(orgId), mainEntityOfPage: ref(pageId), image: imageRef });
+      description: cleanText(page.description), serviceType: servicePages[page.path], url: page.url, provider: ref(orgId),
+      areaServed: organization.areaServed, mainEntityOfPage: ref(pageId), image: imageRef });
     webPage.mainEntity = service; webPage.about = service;
   } else if (['/', '/about/', '/contacts/'].includes(page.path)) {
     webPage.mainEntity = ref(orgId); webPage.about = ref(orgId);

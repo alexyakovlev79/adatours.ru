@@ -99,6 +99,8 @@ export const ORG = {
   },
 
   externalProfiles: {
+    officialInternationalSite: 'https://adatours.com/',
+    abavRio: 'https://abavrio.com.br/agencias/ada-tours/',
     evintra: 'https://www.evintra.com/in/country/br/dmc-in-brazil',
   },
 

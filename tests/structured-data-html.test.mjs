@@ -25,9 +25,13 @@ test('all ordinary HTML remains byte-for-byte unchanged', () => {
   const html = '<section data-astro-cid-abcd><a href="/brazil/?a=1&amp;b=2">Бразилия</a><img src="/media/image.webp" alt="Фото" /></section>';
   assert.equal(inspectHtml(html, options).html, html);
 });
-test('full-document inspection finds canonical, robots and redirect', () => {
-  const html = '<!doctype html><html><head><link rel="canonical" href="https://adatours.ru/brazil/"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=/brazil/"></head><body><p>Переход</p></body></html>';
+test('full-document inspection finds canonical, robots, social metadata and redirect', () => {
+  const html = '<!doctype html><html><head><link rel="canonical" href="https://adatours.ru/brazil/"><meta name="robots" content="noindex,follow"><meta property="og:url" content="https://adatours.ru/brazil/"><meta property="og:title" content="Бразилия | Ada Tours"><meta property="og:locale" content="ru_RU"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Бразилия | Ada Tours"><meta http-equiv="refresh" content="0;url=/brazil/"></head><body><p>Переход</p></body></html>';
   const result = inspectHtml(html, { ...options, fullDocument: true });
   assert.equal(result.metadata.canonical, 'https://adatours.ru/brazil/');
+  assert.equal(result.metadata.ogUrl, result.metadata.canonical);
+  assert.equal(result.metadata.ogLocale, 'ru_RU');
+  assert.equal(result.metadata.twitterCard, 'summary_large_image');
+  assert.equal(result.metadata.twitterTitle, 'Бразилия | Ada Tours');
   assert.equal(result.metadata.redirect, true); assert.equal(result.metadata.robots, 'noindex,follow');
 });

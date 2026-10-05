@@ -10,7 +10,7 @@ summary: "Древний археологический комплекс в 40 �
 searchAliases: []
 themes: []
 hero: {"src":/media/countries/mexico/featureBands-1-enhanced-20261002.webp,"alt":"На фото: пирамида Солнца в Теотиуакане в Мексике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/t/e/teotihuacan-pyramids-mexico-1600x1200.jpg","alt":"На фото: пирамида Солнца в Теотиуакане в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/T/e/Teotihuacan.jpg","alt":"На фото: пирамида Солнца в Теотиуакане в Мексике"}]
+gallery: [{"src":"/media/destinations/teotihuacan/gallery-1-enhanced-20261004.webp","alt":"На фото: пирамида Солнца в Теотиуакане в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/T/e/Teotihuacan.jpg","alt":"На фото: пирамида Солнца в Теотиуакане в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Торговый город, связанный с Соконуско и Гватемалой. История переселенцев отражается в архитектуре Тапачулы, ее ресторанах и фестивалях."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/sean-benesh-6k-lvfcq-e-unsplash.jpg","alt":"На фото: один из мексиканских домов в Тапачула"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/t/a/tapachula.jpg","alt":"На фото: город Тапачула в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/D/S/DSC00315.jpg","alt":"На фото: город Тапачула в Мексике"}]
+hero: {"src":"/media/destinations/tapachula/hero-enhanced-20261004.webp","alt":"На фото: один из мексиканских домов в Тапачула"}
+gallery: [{"src":"/media/destinations/tapachula/gallery-1-enhanced-20261004.webp","alt":"На фото: город Тапачула в Мексике"},{"src":"/media/destinations/tapachula/gallery-2-enhanced-20261004.webp","alt":"На фото: город Тапачула в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

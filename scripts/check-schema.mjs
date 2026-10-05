@@ -70,6 +70,16 @@ for (const file of files.sort()) {
       assert.equal(nodes.filter((n) => hasType(n, 'Organization')).length, 1, 'One organization');
       assert.equal(nodes.filter((n) => hasType(n, 'WebSite')).length, 1, 'One website');
       assert.ok(page.description, 'Page description');
+      assert.equal(inspected.metadata.ogUrl, canonical, 'Open Graph URL equals canonical');
+      assert.ok(inspected.metadata.ogTitle, 'Open Graph title');
+      assert.equal(inspected.metadata.ogLocale, 'ru_RU', 'Open Graph locale');
+      assert.ok(['summary', 'summary_large_image'].includes(inspected.metadata.twitterCard), 'Twitter card');
+      assert.ok(inspected.metadata.twitterTitle, 'Twitter title');
+      if (!base && !/noindex/i.test(inspected.metadata.robots)) {
+        for (const directive of ['index', 'follow', 'max-image-preview:large', 'max-snippet:-1', 'max-video-preview:-1']) {
+          assert.ok(inspected.metadata.robots.includes(directive), `Production robots directive: ${directive}`);
+        }
+      }
       if (archived) {
         assert.ok(/noindex/.test(inspected.metadata.robots) && /nofollow/.test(inspected.metadata.robots), 'Archive stays noindex,nofollow');
         assert.equal(nodes.filter((n) => hasType(n, 'Offer')).length, 0, 'No archived sales offer');

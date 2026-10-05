@@ -28,11 +28,17 @@ export async function pageStructuredData(input: {
   const inspected = inspectHtml(input.html, { root: input.root, pageUrl: input.url });
   const organization = {
     name: ORG.brand, url: SITE.url, legalName: ORG.legal.name, cnpj: ORG.legal.cnpj,
+    description: SITE.defaultDescription,
     email: ORG.contacts.email, telephone: ORG.contacts.phoneHref.replace(/^tel:/, ''),
     logo: '/brand/adatours-logo-black.svg', languages: [...ORG.service.languages],
-    // ORG.externalProfiles currently includes a country directory, not a company profile.
-    // Add only verified identity URLs here; do not copy arbitrary mentions into sameAs.
-    sameAs: [] as string[],
+    // Only exact, verified identity URLs belong in sameAs. Evintra is a country directory.
+    sameAs: [ORG.externalProfiles.officialInternationalSite, ORG.externalProfiles.abavRio],
+    areaServed: [
+      { '@type': 'Country', name: 'Бразилия' },
+      { '@type': 'Country', name: 'Аргентина' },
+      { '@type': 'Country', name: 'Перу' },
+      { '@type': 'Place', name: 'Латинская Америка' },
+    ],
     address: { '@type': 'PostalAddress', streetAddress: ORG.legal.streetAddress,
       addressLocality: ORG.legal.addressLocality, addressRegion: ORG.legal.addressRegion,
       postalCode: ORG.legal.postalCode, addressCountry: ORG.legal.addressCountry },

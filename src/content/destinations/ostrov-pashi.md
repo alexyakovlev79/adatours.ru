@@ -12,13 +12,13 @@ hero:
   src: /media/countries/chile/featureBands-3-enhanced-20261002.webp
   alt: "На фото: истуканы острова Пасхи в Чили"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/e/a/easter4.jpg"
+  - src: "/media/destinations/ostrov-pashi/gallery-1-enhanced-20261005.webp"
     alt: "На фото: остров Пасхи в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/7/9/79741075_ed2acfd283.jpg"
+  - src: "/media/destinations/ostrov-pashi/gallery-2-enhanced-20261005.webp"
     alt: "На фото: остров Пасхи в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/e/a/easter5.jpg"
+  - src: "/media/destinations/ostrov-pashi/gallery-3-enhanced-20261005.webp"
     alt: "На фото: истуканы острова Пасхи в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_4_14.jpg"
+  - src: "/media/destinations/ostrov-pashi/gallery-4-enhanced-20261005.webp"
     alt: "На фото: истуканы острова Пасхи в Чили"
   - src: "https://brasiltours.ru/image/catalog/category/e/a/easter3.jpg"
     alt: "На фото: остров Пасхи в Чили"

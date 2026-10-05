@@ -577,15 +577,14 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   /*
    * DESKTOP ITINERARY LAYOUT INVARIANT
    * ----------------------------------
-   * The itinerary is a two-column grid on desktop. For every pair of neighboring
-   * cards, the BOTTOM edges of their media blocks must align. Text above the media
-   * may have different lengths. A card with shorter text is allowed to use a taller
-   * image so the image grows upward and fills part of the spare vertical space.
+   * The itinerary is a two-column grid on desktop. Media bottoms align per row.
+   * If a row contains different photo counts, the smaller count governs the row's
+   * maximum media capacity. Equal multi-photo counts reserve that many full photo
+   * slots. The card with more photos divides the shared capacity between them.
    *
-   * Do NOT force equal image heights or a fixed 16:9 ratio on desktop.
-   * Do NOT keep itinerary media inside <details>; it must remain a sibling of
-   * <details> inside .day-card so the card itself controls row height and bottom
-   * alignment. Mobile remains single-column and may keep 16:9 images.
+   * Keep itinerary media as a sibling of <details> so the outer .day-card can
+   * coordinate the row. Mobile remains single-column and preserves source aspect
+   * ratios; none of the desktop row sizing rules apply there.
    */
 
   @media (min-width: 1100px) {
@@ -656,18 +655,20 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
     .day-card[data-row-coordinated] .day[open] + .day__media,
     .day-card[data-row-coordinated] .day:not([open]) + .day__media {
-      flex: 1 1 var(--itinerary-row-media-height);
       min-height: 0;
-      max-height: var(--itinerary-row-media-height);
       margin-top: auto;
       aspect-ratio: auto;
     }
 
     .day-card[data-row-coordinated] .day[open] + .day__media {
+      flex: 1 1 calc(var(--itinerary-row-media-height) + 40px);
+      max-height: calc(var(--itinerary-row-media-height) + 40px);
       padding-top: 40px;
     }
 
     .day-card[data-row-coordinated] .day:not([open]) + .day__media {
+      flex: 1 1 var(--itinerary-row-media-height);
+      max-height: var(--itinerary-row-media-height);
       padding-top: 0;
     }
 

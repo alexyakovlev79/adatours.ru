@@ -15,7 +15,7 @@ priceFrom: 178
 currency: "USD"
 priceNote: "Стоимость — $178 на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/img-20210331-wa0177-2-waifu2x-noise1-1920.jpg"
+  src: "/media/excursions/macuco-safari-group-add-on/hero-enhanced-20261005.webp"
   alt: "На фото: Люди в лодке на Макуко -Сафари"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/product/m/a/macuco_safari_45191.jpg"

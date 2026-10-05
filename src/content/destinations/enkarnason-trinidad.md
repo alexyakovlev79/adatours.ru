@@ -9,7 +9,7 @@ destinationType: "route_cluster"
 summary: "Энкарнасьон на границе с Аргентиной, ежегодный карнавал и прогулочная аллея у реки. Из города можно добраться к миссиям в Тринидаде и Хесусе."
 searchAliases: []
 hero: {"src":/media/countries/paraguay/featureBands-2-enhanced-20261002.webp,"alt":"На фото: руины Энкарнасьон & Тринидад в Парагвае"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/2/1/2183772765_325daa8626_b.jpg","alt":"На фото: руины Энкарнасьон & Тринидад в Парагвае"},{"src":"https://brasiltours.ru/image/catalog/category/1/1/1129663590_2b644cc8b1_b.jpg","alt":"На фото: руины Энкарнасьон & Тринидад в Парагвае"},{"src":"https://brasiltours.ru/image/catalog/category/1/9/190502049_f01c7c72c5_o.jpg","alt":"На фото: руины Энкарнасьон & Тринидад в Парагвае"},{"src":"https://brasiltours.ru/image/catalog/category/1/0/1024548050_4bc205bce2_b.jpg","alt":"На фото: руины Энкарнасьон & Тринидад в Парагвае"}]
+gallery: [{"src":"/media/destinations/encarnacion-and-trinidad/gallery-1-enhanced-20261005.webp","alt":"На фото: руины Энкарнасьон & Тринидад в Парагвае"},{"src":"/media/destinations/encarnacion-and-trinidad/gallery-2-enhanced-20261005.webp","alt":"На фото: руины Энкарнасьон & Тринидад в Парагвае"},{"src":"/media/destinations/encarnacion-and-trinidad/gallery-3-enhanced-20261005.webp","alt":"На фото: руины Энкарнасьон & Тринидад в Парагвае"},{"src":"/media/destinations/encarnacion-and-trinidad/gallery-4-enhanced-20261005.webp","alt":"На фото: руины Энкарнасьон & Тринидад в Парагвае"}]
 facts: []
 featureBands: []
 relatedDestinations: []

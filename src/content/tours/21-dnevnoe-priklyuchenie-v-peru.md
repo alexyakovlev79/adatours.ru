@@ -99,7 +99,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Ica.png
     alt: 'на фото: Ика'
-  - src: https://brasiltours.ru/image/countries/peru/999.jpg
+  - src: /media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261005.webp
     alt: 'на фото: Линии Наска'
 - day: 5
   title: Наска - Арекипа
@@ -113,7 +113,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/arequipa.png
     alt: 'на фото: Арекипа'
-  - src: https://brasiltours.ru/image/countries/peru/999.jpg
+  - src: /media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261005.webp
     alt: 'на фото: Линии Наска'
 - day: 6
   title: Арекипа

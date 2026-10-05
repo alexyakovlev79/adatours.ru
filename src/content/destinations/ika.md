@@ -8,8 +8,8 @@ countryId: "country_peru"
 destinationType: "city"
 summary: "Город на юге Перу, откуда отправляются к рисункам Наска и оазису Уакачина. Озеро среди дюн и катание по песку дополняют поездку в Ику."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/peru/ika.jpg","alt":"На фото: оазис Уакачина возле города Ика в Перу"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/t/i/titicaca.jpg","alt":"На фото: оазис Уакачина возле города Ика в Перу"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_10.jpg","alt":"На фото: древние петроглифы Ика в Перу"},{"src":"https://brasiltours.ru/image/catalog/category/1/6/1613930376_6d43ac8c4b_o.jpg","alt":"На фото: оазис Уакачина возле города Ика в Перу"},{"src":"https://brasiltours.ru/image/catalog/category/1/0/107261378_a977adf05a_b.jpg","alt":"На фото: оазис Уакачина возле города Ика в Перу"}]
+hero: {"src":"/media/destinations/ica/hero-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"}
+gallery: [{"src":"/media/destinations/ica/gallery-1-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"},{"src":"/media/destinations/ica/gallery-2-enhanced-20261005.webp","alt":"На фото: древние петроглифы Ика в Перу"},{"src":"/media/destinations/ica/gallery-3-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"},{"src":"/media/destinations/ica/gallery-4-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"}]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -8,8 +8,8 @@ countryId: "country_peru"
 destinationType: "city"
 summary: "Город на Амазонке с архитектурой эпохи каучуковых магнатов. Из Икитоса отправляются в джунгли, в гости к местным народам и на фермы бабочек."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/peru/iquitos.jpg","alt":"На фото: ленивец из Амазонии в Икитос Перу"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/h/o/houseboats_iquitos_peru_feb_2002_1.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN21272_7.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/p/l/plaza-de-armas-iquitos.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/i/q/iquitos.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/i/q/iquitos1.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN21272_2.jpg","alt":""},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN21272_5.jpg","alt":""}]
+hero: {"src":"/media/destinations/iquitos/hero-enhanced-20261005.webp","alt":"На фото: ленивец из Амазонии в Икитос Перу"}
+gallery: [{"src":"/media/destinations/iquitos/gallery-1-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-2-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-3-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-4-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-5-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-6-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-7-enhanced-20261005.webp","alt":""}]
 facts: []
 featureBands: []
 relatedDestinations: []

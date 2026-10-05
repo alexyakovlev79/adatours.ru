@@ -13,24 +13,24 @@ destinationType: city
 summary: >-
   Арекипа на юге Перу известна историческим центром из светлого вулканического камня, монастырем Санта-Каталина, Пласа-де-Армас и маршрутами к каньону Колка.
 hero:
-  src: https://brasiltours.ru/image/countries/peru/111.jpg
+  src: /media/destinations/arequipa/hero-enhanced-20261005.webp
   alt: Арекипа, Перу
 gallery:
-  - src: https://brasiltours.ru/image/catalog/category/f/i/file_6.jpg
+  - src: /media/destinations/arequipa/gallery-1-enhanced-20261005.webp
     alt: Арекипа, Перу
-  - src: https://brasiltours.ru/image/catalog/category/a/r/arequipa3.jpg
+  - src: /media/destinations/arequipa/gallery-2-enhanced-20261005.webp
     alt: Историческая застройка Арекипы
-  - src: https://brasiltours.ru/image/catalog/category/a/r/arequipa.jpg
+  - src: /media/destinations/arequipa/gallery-3-enhanced-20261005.webp
     alt: Арекипа, Белый город Перу
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN18637_32.jpg
+  - src: /media/destinations/arequipa/gallery-4-enhanced-20261005.webp
     alt: Архитектура Арекипы
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN15879_11.jpg
+  - src: /media/destinations/arequipa/gallery-5-enhanced-20261005.webp
     alt: Городской пейзаж Арекипы
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN16146_54.jpg
+  - src: /media/destinations/arequipa/gallery-6-enhanced-20261005.webp
     alt: Арекипа и окрестности
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN22359_10.jpg
+  - src: /media/destinations/arequipa/gallery-7-enhanced-20261005.webp
     alt: Достопримечательности Арекипы
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN22579_72.jpg
+  - src: /media/destinations/arequipa/gallery-8-enhanced-20261005.webp
     alt: Арекипа в Перу
 relatedDestinations:
   - destination_peru_lima
@@ -53,12 +53,12 @@ featureBands:
     title: Монастыри, церкви и колониальный центр
     text: >-
       В центре Арекипы находятся монастырь Санта-Каталина, кафедральный собор, церковь Ла-Кампанья, церкви Сан-Франциско и Санто-Доминго, Пласа-де-Армас, Каса-де-ла-Монеда и Каса-Морал.
-    image: https://brasiltours.ru/image/catalog/category/a/r/arequipa3.jpg
+    image: /media/destinations/arequipa/gallery-2-enhanced-20261005.webp
   - eyebrow: За городом
     title: Инкские террасы и каньон Колка
     text: >-
       В окрестностях Арекипы сохранились сельскохозяйственные террасы, а поездка к каньону Колка добавляет к городскому маршруту горные пейзажи и возможность увидеть андских кондоров.
-    image: https://brasiltours.ru/image/catalog/category/a/r/arequipa.jpg
+    image: /media/destinations/arequipa/gallery-3-enhanced-20261005.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-arekipa-v-peru__e7ff1886.md
 updatedAt: 2026-10-02

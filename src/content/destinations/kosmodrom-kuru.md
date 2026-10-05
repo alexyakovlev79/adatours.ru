@@ -12,13 +12,13 @@ hero:
   src: /media/countries/french-guiana/featureBands-2-enhanced-20261002.webp
   alt: "На фото: запуск ракеты с космодрома Куру во Французской Гвиане"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN6532_13.jpg"
+  - src: "/media/destinations/kosmodrom-kuru/gallery-1-enhanced-20261005.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/category/p/e/people_at_4th_contact.jpg"
+  - src: "/media/destinations/kosmodrom-kuru/gallery-2-enhanced-20261005.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN6532_8.jpg"
+  - src: "/media/destinations/kosmodrom-kuru/gallery-3-enhanced-20261005.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN6532_7.jpg"
+  - src: "/media/destinations/kosmodrom-kuru/gallery-4-enhanced-20261005.webp"
     alt: ""
 facts: []
 featureBands: []

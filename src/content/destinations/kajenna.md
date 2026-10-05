@@ -12,13 +12,13 @@ hero:
   src: /media/countries/french-guiana/featureBands-1-enhanced-20261002.webp
   alt: "На фото: столица Французской Гвианы. город Кайенна"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN2660_5.jpg"
+  - src: "/media/destinations/kajenna/gallery-1-enhanced-20261005.webp"
     alt: "На фото: столица Французской Гвианы. город Кайенна"
-  - src: "https://brasiltours.ru/image/catalog/category/I/M/IMG_1832.jpg"
+  - src: "/media/destinations/kajenna/gallery-2-enhanced-20261005.webp"
     alt: "На фото: столица Французской Гвианы. город Кайенна"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN2660_1.jpg"
+  - src: "/media/destinations/kajenna/gallery-3-enhanced-20261005.webp"
     alt: "На фото: столица Французской Гвианы. город Кайенна"
-  - src: "https://brasiltours.ru/image/catalog/category/1/3/1313651999_e233bd95e8.jpg"
+  - src: "/media/destinations/kajenna/gallery-4-enhanced-20261005.webp"
     alt: "Цветок лотоса во Французской Гвиане"
 facts: []
 featureBands: []

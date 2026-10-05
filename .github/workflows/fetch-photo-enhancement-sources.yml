@@ -21,18 +21,58 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          dir='tmp/photo-enhancement-inputs/20261004-next10'
+          dir='tmp/photo-enhancement-inputs/20261005-next50'
           mkdir -p "$dir"
-          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN2031_10.jpg' -o "$dir/san-jose-gallery-5.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN11553_60.jpg' -o "$dir/san-jose-gallery-6.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN17854_2.jpg' -o "$dir/san-jose-gallery-7.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN19310_1.jpg' -o "$dir/san-jose-gallery-8.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/costa-rica/1.jpg' -o "$dir/tortuguero-hero.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/s/e/sea-turtles.jpg' -o "$dir/tortuguero-gallery-1.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/T/o/Tortuguero.jpg' -o "$dir/tortuguero-gallery-2.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/e/l/elements-travel-tortuguero01.jpg' -o "$dir/tortuguero-gallery-3.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/costa-rica/3.jpg' -o "$dir/jaco-hero.jpg"
-          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN6421_3_1.jpg' -o "$dir/jaco-gallery-1.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/brazil/img-20210331-wa0177-2-waifu2x-noise1-1920.jpg' -o "$dir/001.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/2/2/2206500791_ed22a517ea_o.jpg' -o "$dir/002.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/4/5/455544769_aa66e18641_o.jpg' -o "$dir/003.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/f/i/file_23_29.jpg' -o "$dir/004.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/f/i/file_25_9.jpg' -o "$dir/005.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/f/i/file_24_14.jpg' -o "$dir/006.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/f/i/file_27_6.jpg' -o "$dir/007.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN7007_7.jpg' -o "$dir/008.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN22133_12.jpg' -o "$dir/009.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN6530_5.jpg' -o "$dir/010.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN6530_3.jpg' -o "$dir/011.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN6530_9.jpg' -o "$dir/012.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/2/3/237659237_cc4ebeb495_b.jpg' -o "$dir/013.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/2/5/2527536167_e834fc7bfd_o.jpg' -o "$dir/014.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/2/3/2382096452_641d675e1a_b.jpg' -o "$dir/015.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/5/1/514948755_a63ff10785_o.jpg' -o "$dir/016.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/2/1/2183772765_325daa8626_b.jpg' -o "$dir/017.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/1/1/1129663590_2b644cc8b1_b.jpg' -o "$dir/018.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/1/9/190502049_f01c7c72c5_o.jpg' -o "$dir/019.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/1/0/1024548050_4bc205bce2_b.jpg' -o "$dir/020.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/peru/111.jpg' -o "$dir/021.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/f/i/file_6.jpg' -o "$dir/022.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/a/r/arequipa3.jpg' -o "$dir/023.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/a/r/arequipa.jpg' -o "$dir/024.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN18637_32.jpg' -o "$dir/025.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN15879_11.jpg' -o "$dir/026.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN16146_54.jpg' -o "$dir/027.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN22359_10.jpg' -o "$dir/028.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN22579_72.jpg' -o "$dir/029.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/peru/ika.jpg' -o "$dir/030.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/t/i/titicaca.jpg' -o "$dir/031.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/f/i/file_10.jpg' -o "$dir/032.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/1/6/1613930376_6d43ac8c4b_o.jpg' -o "$dir/033.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/1/0/107261378_a977adf05a_b.jpg' -o "$dir/034.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/peru/iquitos.jpg' -o "$dir/035.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/h/o/houseboats_iquitos_peru_feb_2002_1.jpg' -o "$dir/036.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN21272_7.jpg' -o "$dir/037.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/p/l/plaza-de-armas-iquitos.jpg' -o "$dir/038.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/i/q/iquitos.jpg' -o "$dir/039.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/i/q/iquitos1.jpg' -o "$dir/040.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN21272_2.jpg' -o "$dir/041.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN21272_5.jpg' -o "$dir/042.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/peru/444.jpg' -o "$dir/043.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/c/a/cajamarcaperu.png' -o "$dir/044.png"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/o/t/otuzco_0.jpg' -o "$dir/045.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/countries/peru/999.jpg' -o "$dir/046.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN20733_16.jpg' -o "$dir/047.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/n/a/nazca.gif' -o "$dir/048.gif"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN16146_3.jpg' -o "$dir/049.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN3984_4.jpg' -o "$dir/050.jpg"
           file "$dir"/*
       - name: Commit temporary source files
         shell: bash
@@ -40,7 +80,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add tmp/photo-enhancement-inputs/20261004-next10
+          git add tmp/photo-enhancement-inputs/20261005-next50
           git diff --cached --quiet && exit 0
-          git commit -m 'chore: stage exact source photos for next enhancement batch [skip ci]'
+          git commit -m 'chore: stage exact source photos for next 50 enhancement batch [skip ci]'
           git push

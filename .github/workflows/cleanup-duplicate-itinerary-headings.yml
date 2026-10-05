@@ -241,6 +241,4 @@ jobs:
           git add src/content/tours src/content/excursions .github/workflows/cleanup-duplicate-itinerary-headings.yml
           git commit -m 'Remove duplicate itinerary headings across content' -m "$summary"
           git pull --rebase origin main
-          npm ci
-          npm run build
           git push

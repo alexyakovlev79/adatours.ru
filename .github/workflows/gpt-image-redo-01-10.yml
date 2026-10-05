@@ -1,0 +1,129 @@
+name: GPT Image redo 01-10
+
+on:
+  push:
+    paths:
+      - '.github/workflows/gpt-image-redo-01-10.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  redo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify OpenAI API key
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "${OPENAI_API_KEY:-}" ]; then
+            echo "::error::OPENAI_API_KEY repository secret is not configured"
+            exit 1
+          fi
+
+      - name: Redo first 10 photos with GPT Image 2
+        shell: bash
+        run: |
+          set -euo pipefail
+          src_commit='e49979d661e3d6c5b429d84905f0f9fb25c5f7a0'
+          tmp_dir="$RUNNER_TEMP/gpt-image-redo-01-10"
+          mkdir -p "$tmp_dir"
+
+          prompt='Technically restore and enhance this exact photograph. Preserve the exact scene, composition, crop, camera viewpoint, every person, face, identity, pose, clothing, vehicle or boat, object, landscape, architecture, text/logo placement, and all relative positions. Do not add, remove, replace, relocate, stylize, or reinterpret anything. Improve only technical image quality: recover natural fine detail, reduce JPEG/compression artifacts and noise, gently deblur, improve local contrast, dynamic range, sharpness and realistic color while preserving authentic lighting and skin texture. Avoid over-sharpening, HDR halos, plastic skin, invented texture, altered faces, altered objects, changed weather, changed time of day, or changed background. The output must be recognizably the same original photograph at higher technical quality.'
+
+          process_one() {
+            num="$1"
+            ext="$2"
+            size="$3"
+            out="$4"
+            src="$tmp_dir/${num}.${ext}"
+            resp="$tmp_dir/${num}.json"
+
+            git show "${src_commit}:tmp/photo-enhancement-inputs/20261005-next50/${num}.${ext}" > "$src"
+            mkdir -p "$(dirname "$out")"
+
+            echo "GPT Image 2 edit: $num -> $out ($size)"
+            curl --fail-with-body --silent --show-error --max-time 300 \
+              -X POST "https://api.openai.com/v1/images/edits" \
+              -H "Authorization: Bearer $OPENAI_API_KEY" \
+              -F "model=gpt-image-2" \
+              -F "image[]=@$src" \
+              -F "prompt=$prompt" \
+              -F "quality=high" \
+              -F "size=$size" \
+              -F "output_format=webp" \
+              -F "output_compression=90" \
+              -o "$resp"
+
+            err="$(jq -r '.error.message // empty' "$resp")"
+            if [ -n "$err" ]; then
+              echo "::error::GPT Image failed for $num: $err"
+              exit 1
+            fi
+
+            jq -r '.data[0].b64_json // empty' "$resp" | base64 --decode > "$out"
+            test -s "$out"
+            file "$out"
+          }
+
+          process_one 001 jpg 2048x960 public/media/excursions/macuco-safari-group-add-on/hero-enhanced-20261005.webp
+          process_one 002 jpg 1392x1024 public/media/destinations/camaguey/gallery-5-enhanced-20261005.webp
+          process_one 003 jpg 1344x1008 public/media/destinations/camaguey/gallery-6-enhanced-20261005.webp
+          process_one 004 jpg 1536x1024 public/media/destinations/leon/gallery-8-enhanced-20261005.webp
+          process_one 005 jpg 1344x1008 public/media/destinations/leon/gallery-9-enhanced-20261005.webp
+          process_one 006 jpg 1024x1536 public/media/destinations/leon/gallery-10-enhanced-20261005.webp
+          process_one 007 jpg 1344x1008 public/media/destinations/leon/gallery-11-enhanced-20261005.webp
+          process_one 008 jpg 1344x1008 public/media/destinations/bocas-del-toro/gallery-7-enhanced-20261005.webp
+          process_one 009 jpg 1344x1008 public/media/destinations/bocas-del-toro/gallery-8-enhanced-20261005.webp
+          process_one 010 jpg 1344x1008 public/media/destinations/asuncion/gallery-3-enhanced-20261005.webp
+
+      - name: Update enhancement registry
+        shell: bash
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const p = 'src/data/media/photo-enhancements.json';
+          const j = JSON.parse(fs.readFileSync(p, 'utf8'));
+          const sources = new Set([
+            'https://brasiltours.ru/image/countries/brazil/img-20210331-wa0177-2-waifu2x-noise1-1920.jpg',
+            'https://brasiltours.ru/image/catalog/category/2/2/2206500791_ed22a517ea_o.jpg',
+            'https://brasiltours.ru/image/catalog/category/4/5/455544769_aa66e18641_o.jpg',
+            'https://brasiltours.ru/image/catalog/category/f/i/file_23_29.jpg',
+            'https://brasiltours.ru/image/catalog/category/f/i/file_25_9.jpg',
+            'https://brasiltours.ru/image/catalog/category/f/i/file_24_14.jpg',
+            'https://brasiltours.ru/image/catalog/category/f/i/file_27_6.jpg',
+            'https://brasiltours.ru/image/catalog/category/B/N/BN7007_7.jpg',
+            'https://brasiltours.ru/image/catalog/category/B/N/BN22133_12.jpg',
+            'https://brasiltours.ru/image/catalog/category/B/N/BN6530_5.jpg'
+          ]);
+          let changed = 0;
+          for (const rec of j.enhancements ?? []) {
+            if (!sources.has(rec.source)) continue;
+            rec.method = 'gpt-image-2';
+            rec.enhancedAt = '2026-10-05';
+            rec.revision = Math.max(2, Number(rec.revision || 1) + 1);
+            changed++;
+          }
+          if (changed !== 10) throw new Error('Expected 10 registry records, got ' + changed);
+          fs.writeFileSync(p, JSON.stringify(j, null, 2) + '\n');
+          NODE
+
+      - name: Commit GPT Image replacements
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/media src/data/media/photo-enhancements.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'Redo first 10 photo enhancements with GPT Image 2'
+          git pull --rebase origin main
+          git push

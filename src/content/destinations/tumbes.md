@@ -9,14 +9,14 @@ destinationType: "city"
 summary: "Тумбес на севере перуанского побережья: пляжи, мангровые заросли и природоохранные территории. Пляж Пуэрто Пиззаро находится в 13 км от города."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/peru/tumbes-2.jpg"
+  src: "/media/destinations/tumbes/hero-enhanced-20261005.webp"
   alt: "На фото: город Тумбес в Перу"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/A/-/A-Tumbes-our-next-house.jpg"
+  - src: "/media/destinations/tumbes/gallery-1-enhanced-20261005.webp"
     alt: "На фото: город Тумбес в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/n/o/normal_peru_tumbes_1183756454.jpg"
+  - src: "/media/destinations/tumbes/gallery-2-enhanced-20261005.webp"
     alt: "На фото: город Тумбес в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_12.jpg"
+  - src: "/media/destinations/tumbes/gallery-3-enhanced-20261005.webp"
     alt: "На фото: город Тумбес в Перу"
   - src: "https://brasiltours.ru/image/catalog/category/3/3/330px-Puerto_pizarro_tumbes.jpg"
     alt: "На фото: город Тумбес в Перу"

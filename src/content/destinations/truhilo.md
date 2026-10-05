@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Трухильо: колониальная архитектура, древний Чан Чан и храмы Солнца и Луны. В бухте Уанчако катаются на серфе и тростниковых лодках."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/peru/4455.jpg"
+  src: "/media/destinations/truhilo/hero-enhanced-20261005.webp"
   alt: "На фото: город Трухильо в Перу"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/2/2/2232645-Travel_Picture-Trujillo.jpg"

@@ -9,18 +9,18 @@ destinationType: "city"
 summary: "Такна на юге Перу: собор по проекту Эйфеля, европейская архитектура и поездки к курорту Покойай и лагуне Арикота."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/peru/5558.jpg"
+  src: "/media/destinations/takna/hero-enhanced-20261005.webp"
   alt: "На фото: Такна - самый южный город Перу"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/5/2/525425_1.jpg"
+  - src: "/media/destinations/takna/gallery-1-enhanced-20261005.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/category/T/a/Tacna001_1.jpg"
+  - src: "/media/destinations/takna/gallery-2-enhanced-20261005.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/category/t/a/tacna_2_1.jpg"
+  - src: "/media/destinations/takna/gallery-3-enhanced-20261005.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/category/5/2/525419_1.jpg"
+  - src: "/media/destinations/takna/gallery-4-enhanced-20261005.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/category/a/u/autour_du_monde.1041867660.dscn0488_1.jpg"
+  - src: "/media/destinations/takna/gallery-5-enhanced-20261005.webp"
     alt: ""
 facts: []
 featureBands: []

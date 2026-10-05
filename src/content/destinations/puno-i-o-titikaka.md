@@ -24,11 +24,11 @@ gallery:
     alt: "На фото: город Пуно в Перу и озеро Титикака"
   - src: "/media/destinations/puno-i-o-titikaka/gallery-6-enhanced-20261005.webp"
     alt: "На фото: город Пуно в Перу и озеро Титикака"
-  - src: "https://brasiltours.ru/image/catalog/category/5/0/500024003_29624af8d7_o.jpg"
+  - src: "/media/destinations/puno-i-o-titikaka/gallery-7-enhanced-20261005.webp"
     alt: "На фото: город Пуно в Перу и озеро Титикака"
-  - src: "https://brasiltours.ru/image/catalog/category/2/2/222337479_332b0200e8_b.jpg"
+  - src: "/media/destinations/puno-i-o-titikaka/gallery-8-enhanced-20261005.webp"
     alt: "На фото: город Пуно в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/9/0/904991188_e3b474c3fd_o.jpg"
+  - src: "/media/destinations/puno-i-o-titikaka/gallery-9-enhanced-20261005.webp"
     alt: "На фото: город Пуно в Перу"
 facts: []
 featureBands: []

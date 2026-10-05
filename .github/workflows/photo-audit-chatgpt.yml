@@ -18,111 +18,30 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Install queue dependency
-        run: npm install --no-save --ignore-scripts js-yaml@4.3.2
-      - name: Run canonical queues
+      - run: npm install --no-save --ignore-scripts js-yaml@4.3.2
+      - name: Exact relevant queue
         shell: bash
         run: |
           set -euo pipefail
-          node scripts/photo-queue.mjs --all > /tmp/all.json
-          node scripts/photo-queue.mjs --type tour --all > /tmp/tours.json
-          node scripts/photo-queue.mjs --type destination --all > /tmp/destinations.json
-          node scripts/photo-queue.mjs --type excursion --all > /tmp/excursions.json
           node --input-type=module <<'NODE'
-          import fs from 'node:fs';
-          import { readPhotoInputs } from './scripts/photo-queue.mjs';
-          import { isPhotoEligible, activeReplacementId, isActiveEntity } from './src/lib/archive.mjs';
-
-          const queues = Object.fromEntries(
-            ['all','tours','destinations','excursions'].map((k) => [k, JSON.parse(fs.readFileSync('/tmp/' + k + '.json', 'utf8'))])
-          );
-          const { entries, contents, enhancements } = readPhotoInputs();
-          const entryById = new Map(entries.map((e) => [e.id, e]));
-          const enhancedURLs = new Set(enhancements.map((r) => r.enhanced));
-          const bySource = new Map(enhancements.map((r) => [r.source, r]));
-
-          function auditType(type) {
-            const selected = entries.filter((entry) => isPhotoEligible(entry, contents.get(entry.id)))
-              .filter((entry) => !type || entry.type === type);
-            const seenSlots = new Set();
-            const slots = [];
-            const addSlot = (ownerId, slot, current) => {
-              const owner = entryById.get(ownerId), data = contents.get(ownerId);
-              if (!owner || !isPhotoEligible(owner, data) || !current || typeof current !== 'string') return;
-              const key = ownerId + ':' + slot;
-              if (seenSlots.has(key)) return;
-              seenSlots.add(key);
-              const registeredSource = bySource.get(current);
-              const isEnhancedCurrent = current.includes('-enhanced-') || enhancedURLs.has(current);
-              slots.push({
-                ownerId,
-                ownerType: owner.type,
-                slot,
-                current,
-                state: isEnhancedCurrent ? 'enhanced-current' : registeredSource ? 'reuse-ready' : 'pending-enhancement'
-              });
-            };
-            const addExcursion = (id) => {
-              const replacement = activeReplacementId(id);
-              if (!replacement) return;
-              const data = contents.get(replacement);
-              if (!data || !isActiveEntity(data)) return;
-              addSlot(replacement, 'hero.src', typeof data.hero === 'string' ? data.hero : data.hero?.src);
-            };
-            const walk = (value, ownerId, slot) => {
-              if (Array.isArray(value)) { value.forEach((item, index) => walk(item, ownerId, slot + '[' + index + ']')); return; }
-              if (!value || typeof value !== 'object') return;
-              if (value.excursionRef) {
-                addExcursion(value.excursionRef);
-                for (const [key, nested] of Object.entries(value)) {
-                  if (!['src','image','images','excursionRef'].includes(key)) walk(nested, ownerId, slot + '.' + key);
-                }
-                return;
-              }
-              for (const [key, nested] of Object.entries(value)) {
-                const location = slot ? slot + '.' + key : key;
-                if (typeof nested === 'string' && ['src','image'].includes(key)) addSlot(ownerId, location, nested);
-                else walk(nested, ownerId, location);
-              }
-            };
-            for (const entry of selected) {
-              const data = contents.get(entry.id);
-              for (const key of ['hero','gallery','highlights','itinerary']) walk(data[key], entry.id, key);
-              let i = 0;
-              for (const match of (data._body ?? '').matchAll(/!\[[^\]]*\]\(([^\s)]+)(?:\s+[^)]*)?\)/g)) addSlot(entry.id, 'body.image[' + (i++) + ']', match[1]);
-            }
-            const counts = slots.reduce((a,s)=>(a[s.state]=(a[s.state]||0)+1,a),{});
-            return {
-              activeEntities: selected.length,
-              activeSlots: slots.length,
-              uniqueCurrentImages: new Set(slots.map(s=>s.current)).size,
-              states: counts
-            };
+          import { readPhotoInputs, buildPhotoQueue } from './scripts/photo-queue.mjs';
+          import { isPhotoEligible } from './src/lib/archive.mjs';
+          const input = readPhotoInputs();
+          const relevantTypes = new Set(['tour','destination','excursion']);
+          const relevantEntries = input.entries.filter((e) => relevantTypes.has(e.type));
+          const q = buildPhotoQueue({...input, entries: relevantEntries, all:true});
+          const countryQ = buildPhotoQueue({...input, type:'country', all:true});
+          const activeCounts = {};
+          for (const type of ['tour','destination','excursion','country']) {
+            activeCounts[type] = input.entries.filter((e)=>e.type===type && isPhotoEligible(e,input.contents.get(e.id))).length;
           }
-
-          const stats = {
-            tour: auditType('tour'),
-            destination: auditType('destination'),
-            excursion: auditType('excursion')
-          };
-          stats.allRelevant = {
-            activeEntities: stats.tour.activeEntities + stats.destination.activeEntities + stats.excursion.activeEntities,
-            activeSlots: stats.tour.activeSlots + stats.destination.activeSlots + stats.excursion.activeSlots,
-            states: {
-              'enhanced-current': (stats.tour.states['enhanced-current']||0)+(stats.destination.states['enhanced-current']||0)+(stats.excursion.states['enhanced-current']||0),
-              'reuse-ready': (stats.tour.states['reuse-ready']||0)+(stats.destination.states['reuse-ready']||0)+(stats.excursion.states['reuse-ready']||0),
-              'pending-enhancement': (stats.tour.states['pending-enhancement']||0)+(stats.destination.states['pending-enhancement']||0)+(stats.excursion.states['pending-enhancement']||0)
-            }
-          };
-
-          const compactQueues = {};
-          for (const [k,q] of Object.entries(queues)) compactQueues[k] = {
-            selectedEntities: q.selectedEntityIds.length,
-            totalPendingSources: q.totalPendingSources,
-            reuseGroups: q.reuse.length,
-            photoGroups: q.photos.length
-          };
-
-          console.log('PHOTO_AUDIT_SUMMARY=' + JSON.stringify({stats, queues: compactQueues}));
-          console.log('PHOTO_AUDIT_FIRST50=' + JSON.stringify(queues.all.photos.slice(0,50)));
+          console.log('PHOTO_AUDIT_RELEVANT=' + JSON.stringify({
+            activeCounts,
+            relevantSelectedEntities:q.selectedEntityIds.length,
+            relevantPendingUniqueSources:q.totalPendingSources,
+            relevantReuseGroups:q.reuse.length,
+            countryPendingUniqueSources:countryQ.totalPendingSources,
+            countryReuseGroups:countryQ.reuse.length
+          }));
+          console.log('PHOTO_AUDIT_RELEVANT_FIRST50=' + JSON.stringify(q.photos.slice(0,50)));
           NODE

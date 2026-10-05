@@ -26,6 +26,17 @@ test('country scores use all tours, optional visits have lower weight and duplic
   assert.equal(hub.countries[1].score, 7.5); assert.equal(hub.countries[1].optionalCount, 15);
   assert.equal(countryMembership(tours[0], 'two'), .25);
 });
+test('geography cover tours are unique and allocated from weaker countries upward', () => {
+  const geography = [entity('brazil'), entity('argentina'), entity('peru')];
+  const t1 = tour('t1', { countries: ['brazil', 'argentina', 'peru'], routeCountries: ['brazil', 'argentina', 'peru'], hero: { src: '/t1.webp' } });
+  const t2 = tour('t2', { countries: ['brazil', 'argentina'], routeCountries: ['brazil', 'argentina'], hero: { src: '/t2.webp' } });
+  const t3 = tour('t3', { countries: ['brazil'], routeCountries: ['brazil'], hero: { src: '/t3.webp' } });
+  const hub = buildInterestHub(A, { countries: geography, tours: [t1, t2, t3], themes });
+  assert.deepEqual(hub.countries.map((row) => row.entry.data.id), ['brazil', 'argentina', 'peru']);
+  assert.deepEqual(hub.allCountries.map((row) => row.topTour.data.id), ['t1', 't1', 't1']);
+  assert.deepEqual(hub.countries.map((row) => row.coverTour?.data.id), ['t3', 't2', 't1']);
+  assert.equal(new Set(hub.countries.map((row) => row.coverTour?.data.id).filter(Boolean)).size, 3);
+});
 test('no excursion/destination inheritance and no archived/draft contribution', () => {
   const tours = [tour('a', { destinations: ['city'], itinerary: [{ excursionRef: 'sightseeing' }] }), tour('arch', { status: 'archived' }), tour('draft', { status: 'draft' })];
   const hub = buildInterestHub(A, { countries, tours, themes,

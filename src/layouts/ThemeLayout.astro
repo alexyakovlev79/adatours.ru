@@ -55,13 +55,13 @@ const tourCatalog = interestTourCatalogPath(d);
       <div class="container section--tight">
         <header class="theme-heading"><p class="eyebrow">География путешествий</p><h2>Куда поехать</h2><p>{copy.geographyIntro}</p></header>
       </div>
-      {hub.countries.map((row, index) => <div data-interest-item={row.entry.data.id} data-interest-cover-tour={row.topTour.data.id}>
+      {hub.countries.map((row, index) => <div data-interest-item={row.entry.data.id} data-interest-cover-tour={row.coverTour?.data.id} data-interest-cover-source={row.coverTour ? 'tour' : 'country'}>
         <DestinationBand
           headingTag="h3"
           title={row.entry.data.name}
           eyebrow={interestTourCount(d.id, row.tourCount)}
           text={[row.places.join(' · '), row.optionalCount ? `Дополнительное посещение страны: ${countLabel(row.optionalCount)}` : ''].filter(Boolean).join('. ')}
-          image={row.topTour.data.hero?.src}
+          image={row.coverTour?.data.hero?.src ?? row.entry.data.hero?.src}
           imageTextAlign={row.entry.data.imageTextAlign}
           href={interestTourCatalogPath(d, row.entry.data)}
           align={index % 2 ? 'right' : 'left'}

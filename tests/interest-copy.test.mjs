@@ -55,7 +55,7 @@ test('interest index includes all 13, counts primary+secondary once and sorts by
   const archived=buildInterestIndex(themes,[tour('one',{primaryThemes:[N],themes:[A],status:'archived'}),tours[1]]);
   assert.equal(archived.find(r=>r.entry.data.id===A).tourCount,0);
 });
-test('country cover uses the exact top thematic tour and changes after archiving or reranking', () => {
+test('country rows retain the exact top thematic tour and change it after archiving or reranking', () => {
   const tours=[tour('top'),tour('second',{durationDays:12}),tour('secondary',{primaryThemes:[N],themes:[A],countries:['one','two']})];
   const get=(list)=>buildInterestHub(A,{tours:list,countries,themes}).allCountries.find(r=>r.entry.data.id==='one');
   assert.equal(get(tours).topTour.data.id,'top');

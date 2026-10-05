@@ -47,6 +47,9 @@ for (const interest of INTERESTS) {
     assert.ok(found.length <= INTEREST_LIMITS[name], `${root}: ${name} limit`);
   }
   assert.equal(new Set([...expectations.stories, ...expectations.experiences]).size, expectations.stories.length + expectations.experiences.length, `${root}: no repeated experience`);
+  const coverTourIds = hub.countries.map((row) => row.coverTour?.data.id).filter(Boolean);
+  assert.equal(new Set(coverTourIds).size, coverTourIds.length, `${root}: country geography never repeats a tour cover`);
+  for (const row of hub.countries) if (row.coverTour) assert.ok(row.tours.some((tour) => tour.data.id === row.coverTour.data.id), `${root}: cover belongs to country thematic catalogue`);
   if (hub.allTours.length) assert.ok(html.includes(`href="${base}${interestTourCatalogPath(interest)}"`), `complete tour catalogue link: ${root}`);
   for (const row of hub.countries) assert.ok(section(html, 'countries').includes(`href="${base}${interestTourCatalogPath(interest, row.entry.data)}"`), `country links preserve interest: ${root}`);
   assert.ok(html.includes('data-interest-section="cta"'), `CTA: ${root}`);

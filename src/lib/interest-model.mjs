@@ -111,11 +111,29 @@ export function buildInterestHub(id, { tours = [], countries = [], destinations 
       score: countryTours.reduce((sum, tour) => sum + themeRelevance(tour, id) * countryMembership(tour, countryId), 0),
       places: destinationRows.filter((row) => row.countryId === countryId).sort((a, b) => b.score - a.score || byName(a, b)).slice(0, 2).map((row) => nameOf(row.entry)) };
   }).filter((row) => row.tourCount).sort((a, b) => b.score - a.score || b.tourCount - a.tourCount || byName(a, b));
+
+  // Allocate visible country covers from the weakest displayed country upward so one
+  // multi-country tour can be the background of only one country in the geography block.
+  const countryPreview = rankedCountries.slice(0, INTEREST_LIMITS.countries);
+  const usedCountryCoverTours = new Set();
+  const coverTourByCountry = new Map();
+  for (let index = countryPreview.length - 1; index >= 0; index -= 1) {
+    const row = countryPreview[index];
+    const coverTour = row.tours.find((tour) => {
+      const tourId = dataOf(tour).id;
+      return tourId && dataOf(tour).hero?.src && !usedCountryCoverTours.has(tourId);
+    });
+    if (!coverTour) continue;
+    usedCountryCoverTours.add(dataOf(coverTour).id);
+    coverTourByCountry.set(dataOf(row.entry).id, coverTour);
+  }
+  const previewCountries = countryPreview.map((row) => ({ ...row, coverTour: coverTourByCountry.get(dataOf(row.entry).id) }));
+
   const relatedThemes = activeUnique(themes).filter((entry) => dataOf(entry).id !== id && INTEREST_IDS.has(dataOf(entry).id)).map((entry) => ({
     entry, tourCount: matchedTours.filter((tour) => themeRelevance(tour, dataOf(entry).id)).length,
   })).filter((row) => row.tourCount).sort((a, b) => b.tourCount - a.tourCount || byName(a, b));
   return { id, allTours: matchedTours, tours: matchedTours.slice(0, INTEREST_LIMITS.tours), stories,
-    allCountries: rankedCountries, countries: rankedCountries.slice(0, INTEREST_LIMITS.countries),
+    allCountries: rankedCountries, countries: previewCountries,
     allExperiences: experiences, experiences: experiences.filter((row) => !used.has(row.id)).slice(0, INTEREST_LIMITS.experiences),
     allRelatedThemes: relatedThemes, relatedThemes: relatedThemes.slice(0, INTEREST_LIMITS.related) };
 }

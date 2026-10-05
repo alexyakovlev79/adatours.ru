@@ -24,13 +24,22 @@ for (const {id,slug} of INTERESTS) {
   assert.ok(text(html).includes(`Готовые маршруты · ${countLabel(hub.allTours.length)}`),`${slug}: current full count`);
   assert.ok(html.includes(copy.tourIntro),`${slug}: tour intro`);
   if(hub.countries.length) assert.ok(html.includes(copy.geographyIntro),`${slug}: geography intro`);
-  assert.deepEqual(ids(html,'data-interest-cover-tour'),hub.countries.map(row=>row.topTour.data.id));
+  const coverTourIds=hub.countries.map(row=>row.coverTour?.data.id).filter(Boolean);
+  assert.deepEqual(ids(html,'data-interest-cover-tour'),coverTourIds);
+  assert.equal(new Set(coverTourIds).size,coverTourIds.length,`${slug}: unique geography tour covers`);
+  const geographyStart=html.indexOf('data-interest-section="countries"');
   for (const row of hub.countries) {
-    const block=html.split(`data-interest-cover-tour="${row.topTour.data.id}"`).find((part,i)=>i>0 && part.includes(row.entry.data.name));
-    assert.ok(block, `${slug}: ${row.entry.data.id} band`);
-    assert.ok(row.topTour.data.hero?.src,`${slug}: the top tour has an actual hero`);
-    // The actual background URL appears in the full-width band, not a unrelated country photo.
-    assert.ok(block.split('</a>')[0].includes(row.topTour.data.hero.src),`${slug}: top-tour hero`);
+    const start=html.indexOf(`data-interest-item="${row.entry.data.id}"`,geographyStart);
+    assert.ok(start>=0,`${slug}: ${row.entry.data.id} band`);
+    const end=html.indexOf('</a>',start);
+    const block=html.slice(start,end>=0?end:start+20000);
+    const expectedImage=row.coverTour?.data.hero?.src??row.entry.data.hero?.src;
+    if(row.coverTour) {
+      assert.ok(row.coverTour.data.hero?.src,`${slug}: assigned cover tour has a hero`);
+      assert.ok(block.includes(row.coverTour.data.hero.src),`${slug}: assigned unique tour hero`);
+    } else if(expectedImage) {
+      assert.ok(block.includes(expectedImage),`${slug}: country hero fallback after unique tours are exhausted`);
+    }
   }
   for(const row of [...hub.stories,...hub.experiences]) if(row.tourCount) assert.ok(html.includes(interestTourCount(id,row.tourCount)));
   for(const row of hub.relatedThemes) assert.ok(html.includes(relatedInterestCount(row.tourCount)));
@@ -69,4 +78,4 @@ for(const file of readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.ht
   pages++;
 }
 assert.ok(pages>700,'all real site pages are checked, not just a handful of examples');
-console.log(`Interest presentation checks passed: 13 sorted interests, 13 individual copy sets, 4 generated covers, dynamic top-tour geography, theme-owned catalog heroes, requested theme hero alignment and inflected counters; exactly one footer form on all ${pages} real HTML pages.`);
+console.log(`Interest presentation checks passed: 13 sorted interests, 13 individual copy sets, 4 generated covers, unique bottom-up tour geography covers, theme-owned catalog heroes, requested theme hero alignment and inflected counters; exactly one footer form on all ${pages} real HTML pages.`);

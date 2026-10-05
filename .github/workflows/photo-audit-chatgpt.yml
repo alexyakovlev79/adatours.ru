@@ -17,9 +17,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
+          node-version: 24
+      - name: Install queue dependency
+        run: npm install --no-save --ignore-scripts js-yaml@4.3.2
       - name: Run canonical queues
         shell: bash
         run: |
@@ -40,7 +40,6 @@ jobs:
           const entryById = new Map(entries.map((e) => [e.id, e]));
           const enhancedURLs = new Set(enhancements.map((r) => r.enhanced));
           const bySource = new Map(enhancements.map((r) => [r.source, r]));
-          const stats = {};
 
           function auditType(type) {
             const selected = entries.filter((entry) => isPhotoEligible(entry, contents.get(entry.id)))
@@ -101,13 +100,14 @@ jobs:
             };
           }
 
-          stats.tour = auditType('tour');
-          stats.destination = auditType('destination');
-          stats.excursion = auditType('excursion');
+          const stats = {
+            tour: auditType('tour'),
+            destination: auditType('destination'),
+            excursion: auditType('excursion')
+          };
           stats.allRelevant = {
             activeEntities: stats.tour.activeEntities + stats.destination.activeEntities + stats.excursion.activeEntities,
             activeSlots: stats.tour.activeSlots + stats.destination.activeSlots + stats.excursion.activeSlots,
-            uniqueCurrentImages: null,
             states: {
               'enhanced-current': (stats.tour.states['enhanced-current']||0)+(stats.destination.states['enhanced-current']||0)+(stats.excursion.states['enhanced-current']||0),
               'reuse-ready': (stats.tour.states['reuse-ready']||0)+(stats.destination.states['reuse-ready']||0)+(stats.excursion.states['reuse-ready']||0),
@@ -122,6 +122,7 @@ jobs:
             reuseGroups: q.reuse.length,
             photoGroups: q.photos.length
           };
+
           console.log('PHOTO_AUDIT_SUMMARY=' + JSON.stringify({stats, queues: compactQueues}));
           console.log('PHOTO_AUDIT_FIRST50=' + JSON.stringify(queues.all.photos.slice(0,50)));
           NODE

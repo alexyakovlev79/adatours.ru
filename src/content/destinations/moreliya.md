@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Морелия, столица штата Мичоакан, сохранила колониальный исторический центр с соборами и монастырями. Здания из розового камня кантера дали городу прозвище «Розовый Город»."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/morelia.jpg","alt":"На фото: город Морелия в Мексике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN1569_17.jpg","alt":"На фото: город Морелия в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN2368_26.jpg","alt":"На фото: город Морелия в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN1567_5.jpg","alt":"На фото: город Морелия в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/2/_/2.jpg","alt":"На фото: город Морелия в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/m/o/morelia.jpg","alt":"На фото: город Морелия в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/M/o/MoreliaFromBalcony.jpg","alt":"На фото: город Морелия в Мексике"}]
+hero: {"src":"/media/destinations/morelia/hero-enhanced-20261004.webp","alt":"На фото: город Морелия в Мексике"}
+gallery: [{"src":"/media/destinations/morelia/gallery-1-enhanced-20261004.webp","alt":"На фото: город Морелия в Мексике"},{"src":"/media/destinations/morelia/gallery-2-enhanced-20261004.webp","alt":"На фото: город Морелия в Мексике"},{"src":"/media/destinations/morelia/gallery-3-enhanced-20261004.webp","alt":"На фото: город Морелия в Мексике"},{"src":"/media/destinations/morelia/gallery-4-enhanced-20261004.webp","alt":"На фото: город Морелия в Мексике"},{"src":"/media/destinations/morelia/gallery-5-enhanced-20261004.webp","alt":"На фото: город Морелия в Мексике"},{"src":"/media/destinations/morelia/gallery-6-enhanced-20261004.webp","alt":"На фото: город Морелия в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

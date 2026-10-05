@@ -10,7 +10,7 @@ summary: "Монтеррей окружен горами Сьерра-Мадре
 searchAliases: []
 themes: []
 hero: {"src":"/media/destinations/monterrey/hero-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"}
-gallery: [{"src":"/media/destinations/monterrey/gallery-1-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-2-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-3-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-4-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_2.jpg","alt":"На фото: город Монтеррей в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/8/8/88341355_NAjzmSj5_MonterreyExpressway.jpg","alt":"На фото: город Монтеррей в Мексике"}]
+gallery: [{"src":"/media/destinations/monterrey/gallery-1-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-2-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-3-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-4-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-5-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-6-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

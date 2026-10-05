@@ -10,7 +10,7 @@ summary: "Руины города майя над Карибским морем,
 searchAliases: []
 themes: []
 hero: {"src":/media/countries/mexico/featureBands-2-enhanced-20261002.webp,"alt":"На фото: морской курорт Тулум в Мексике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/t/u/tulum2_1.jpg","alt":"На фото: морской курорт Тулум в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/x/e/xel-ha-tulum-excursion-1.jpg","alt":"На фото: морской курорт Тулум в Мексике"}]
+gallery: [{"src":"/media/destinations/tulum/gallery-1-enhanced-20261004.webp","alt":"На фото: морской курорт Тулум в Мексике"},{"src":"/media/destinations/tulum/gallery-2-enhanced-20261004.webp","alt":"На фото: морской курорт Тулум в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

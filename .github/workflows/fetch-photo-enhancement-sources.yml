@@ -1,4 +1,4 @@
-name: Process next 50 photo enhancements
+name: Package first 10 original photo sources for GPT Image
 
 on:
   push:
@@ -6,136 +6,34 @@ on:
       - '.github/workflows/fetch-photo-enhancement-sources.yml'
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  enhance:
+  package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install Pillow
-        run: python -m pip install --quiet pillow
-      - name: Restore 50 exact staged photos and update canonical slots
+      - name: Download exact historical originals
         shell: bash
         run: |
           set -euo pipefail
-          python - <<'PY'
-          from pathlib import Path
-          from PIL import Image, ImageEnhance, ImageFilter, ImageOps, ImageFile
-          ImageFile.LOAD_TRUNCATED_IMAGES = True
-          import json
-          
-          root = Path(".")
-          staged = root / "tmp/photo-enhancement-inputs/20261005-next50"
-          items = json.loads(r'''[{"n":1,"file":"001.jpg","source":"https://brasiltours.ru/image/countries/brazil/img-20210331-wa0177-2-waifu2x-noise1-1920.jpg","md":["src/content/excursions/makuko-safari-he.md"],"out":"public/media/excursions/macuco-safari-group-add-on/hero-enhanced-20261005.webp"},{"n":2,"file":"002.jpg","source":"https://brasiltours.ru/image/catalog/category/2/2/2206500791_ed22a517ea_o.jpg","md":["src/content/destinations/kamaguej.md"],"out":"public/media/destinations/camaguey/gallery-5-enhanced-20261005.webp"},{"n":3,"file":"003.jpg","source":"https://brasiltours.ru/image/catalog/category/4/5/455544769_aa66e18641_o.jpg","md":["src/content/destinations/kamaguej.md"],"out":"public/media/destinations/camaguey/gallery-6-enhanced-20261005.webp"},{"n":4,"file":"004.jpg","source":"https://brasiltours.ru/image/catalog/category/f/i/file_23_29.jpg","md":["src/content/destinations/leon.md"],"out":"public/media/destinations/leon/gallery-8-enhanced-20261005.webp"},{"n":5,"file":"005.jpg","source":"https://brasiltours.ru/image/catalog/category/f/i/file_25_9.jpg","md":["src/content/destinations/leon.md"],"out":"public/media/destinations/leon/gallery-9-enhanced-20261005.webp"},{"n":6,"file":"006.jpg","source":"https://brasiltours.ru/image/catalog/category/f/i/file_24_14.jpg","md":["src/content/destinations/leon.md"],"out":"public/media/destinations/leon/gallery-10-enhanced-20261005.webp"},{"n":7,"file":"007.jpg","source":"https://brasiltours.ru/image/catalog/category/f/i/file_27_6.jpg","md":["src/content/destinations/leon.md"],"out":"public/media/destinations/leon/gallery-11-enhanced-20261005.webp"},{"n":8,"file":"008.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN7007_7.jpg","md":["src/content/destinations/bokas-del-toro.md"],"out":"public/media/destinations/bocas-del-toro/gallery-7-enhanced-20261005.webp"},{"n":9,"file":"009.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN22133_12.jpg","md":["src/content/destinations/bokas-del-toro.md"],"out":"public/media/destinations/bocas-del-toro/gallery-8-enhanced-20261005.webp"},{"n":10,"file":"010.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN6530_5.jpg","md":["src/content/destinations/asunson.md"],"out":"public/media/destinations/asuncion/gallery-3-enhanced-20261005.webp"},{"n":11,"file":"011.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN6530_3.jpg","md":["src/content/destinations/asunson.md"],"out":"public/media/destinations/asuncion/gallery-4-enhanced-20261005.webp"},{"n":12,"file":"012.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN6530_9.jpg","md":["src/content/destinations/asunson.md"],"out":"public/media/destinations/asuncion/gallery-5-enhanced-20261005.webp"},{"n":13,"file":"013.jpg","source":"https://brasiltours.ru/image/catalog/category/2/3/237659237_cc4ebeb495_b.jpg","md":["src/content/destinations/syudad-del-este.md"],"out":"public/media/destinations/ciudad-del-este/gallery-1-enhanced-20261005.webp"},{"n":14,"file":"014.jpg","source":"https://brasiltours.ru/image/catalog/category/2/5/2527536167_e834fc7bfd_o.jpg","md":["src/content/destinations/syudad-del-este.md"],"out":"public/media/destinations/ciudad-del-este/gallery-2-enhanced-20261005.webp"},{"n":15,"file":"015.jpg","source":"https://brasiltours.ru/image/catalog/category/2/3/2382096452_641d675e1a_b.jpg","md":["src/content/destinations/syudad-del-este.md"],"out":"public/media/destinations/ciudad-del-este/gallery-3-enhanced-20261005.webp"},{"n":16,"file":"016.jpg","source":"https://brasiltours.ru/image/catalog/category/5/1/514948755_a63ff10785_o.jpg","md":["src/content/destinations/syudad-del-este.md"],"out":"public/media/destinations/ciudad-del-este/gallery-4-enhanced-20261005.webp"},{"n":17,"file":"017.jpg","source":"https://brasiltours.ru/image/catalog/category/2/1/2183772765_325daa8626_b.jpg","md":["src/content/destinations/enkarnason-trinidad.md"],"out":"public/media/destinations/encarnacion-and-trinidad/gallery-1-enhanced-20261005.webp"},{"n":18,"file":"018.jpg","source":"https://brasiltours.ru/image/catalog/category/1/1/1129663590_2b644cc8b1_b.jpg","md":["src/content/destinations/enkarnason-trinidad.md"],"out":"public/media/destinations/encarnacion-and-trinidad/gallery-2-enhanced-20261005.webp"},{"n":19,"file":"019.jpg","source":"https://brasiltours.ru/image/catalog/category/1/9/190502049_f01c7c72c5_o.jpg","md":["src/content/destinations/enkarnason-trinidad.md"],"out":"public/media/destinations/encarnacion-and-trinidad/gallery-3-enhanced-20261005.webp"},{"n":20,"file":"020.jpg","source":"https://brasiltours.ru/image/catalog/category/1/0/1024548050_4bc205bce2_b.jpg","md":["src/content/destinations/enkarnason-trinidad.md"],"out":"public/media/destinations/encarnacion-and-trinidad/gallery-4-enhanced-20261005.webp"},{"n":21,"file":"021.jpg","source":"https://brasiltours.ru/image/countries/peru/111.jpg","md":["src/content/destinations/arekipa.md"],"out":"public/media/destinations/arequipa/hero-enhanced-20261005.webp"},{"n":22,"file":"022.jpg","source":"https://brasiltours.ru/image/catalog/category/f/i/file_6.jpg","md":["src/content/destinations/arekipa.md"],"out":"public/media/destinations/arequipa/gallery-1-enhanced-20261005.webp"},{"n":23,"file":"023.jpg","source":"https://brasiltours.ru/image/catalog/category/a/r/arequipa3.jpg","md":["src/content/destinations/arekipa.md"],"out":"public/media/destinations/arequipa/gallery-2-enhanced-20261005.webp"},{"n":24,"file":"024.jpg","source":"https://brasiltours.ru/image/catalog/category/a/r/arequipa.jpg","md":["src/content/destinations/arekipa.md"],"out":"public/media/destinations/arequipa/gallery-3-enhanced-20261005.webp"},{"n":25,"file":"025.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN18637_32.jpg","md":["src/content/destinations/arekipa.md"],"out":"public/media/destinations/arequipa/gallery-4-enhanced-20261005.webp"},{"n":26,"file":"026.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN15879_11.jpg","md":["src/content/destinations/arekipa.md"],"out":"public/media/destinations/arequipa/gallery-5-enhanced-20261005.webp"},{"n":27,"file":"027.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN16146_54.jpg","md":["src/content/destinations/arekipa.md"],"out":"public/media/destinations/arequipa/gallery-6-enhanced-20261005.webp"},{"n":28,"file":"028.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN22359_10.jpg","md":["src/content/destinations/arekipa.md"],"out":"public/media/destinations/arequipa/gallery-7-enhanced-20261005.webp"},{"n":29,"file":"029.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN22579_72.jpg","md":["src/content/destinations/arekipa.md"],"out":"public/media/destinations/arequipa/gallery-8-enhanced-20261005.webp"},{"n":30,"file":"030.jpg","source":"https://brasiltours.ru/image/countries/peru/ika.jpg","md":["src/content/destinations/ika.md"],"out":"public/media/destinations/ica/hero-enhanced-20261005.webp"},{"n":31,"file":"031.jpg","source":"https://brasiltours.ru/image/catalog/category/t/i/titicaca.jpg","md":["src/content/destinations/ika.md"],"out":"public/media/destinations/ica/gallery-1-enhanced-20261005.webp"},{"n":32,"file":"032.jpg","source":"https://brasiltours.ru/image/catalog/category/f/i/file_10.jpg","md":["src/content/destinations/ika.md"],"out":"public/media/destinations/ica/gallery-2-enhanced-20261005.webp"},{"n":33,"file":"033.jpg","source":"https://brasiltours.ru/image/catalog/category/1/6/1613930376_6d43ac8c4b_o.jpg","md":["src/content/destinations/ika.md"],"out":"public/media/destinations/ica/gallery-3-enhanced-20261005.webp"},{"n":34,"file":"034.jpg","source":"https://brasiltours.ru/image/catalog/category/1/0/107261378_a977adf05a_b.jpg","md":["src/content/destinations/ika.md"],"out":"public/media/destinations/ica/gallery-4-enhanced-20261005.webp"},{"n":35,"file":"035.jpg","source":"https://brasiltours.ru/image/countries/peru/iquitos.jpg","md":["src/content/destinations/ikitos.md"],"out":"public/media/destinations/iquitos/hero-enhanced-20261005.webp"},{"n":36,"file":"036.jpg","source":"https://brasiltours.ru/image/catalog/category/h/o/houseboats_iquitos_peru_feb_2002_1.jpg","md":["src/content/destinations/ikitos.md"],"out":"public/media/destinations/iquitos/gallery-1-enhanced-20261005.webp"},{"n":37,"file":"037.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN21272_7.jpg","md":["src/content/destinations/ikitos.md"],"out":"public/media/destinations/iquitos/gallery-2-enhanced-20261005.webp"},{"n":38,"file":"038.jpg","source":"https://brasiltours.ru/image/catalog/category/p/l/plaza-de-armas-iquitos.jpg","md":["src/content/destinations/ikitos.md"],"out":"public/media/destinations/iquitos/gallery-3-enhanced-20261005.webp"},{"n":39,"file":"039.jpg","source":"https://brasiltours.ru/image/catalog/category/i/q/iquitos.jpg","md":["src/content/destinations/ikitos.md"],"out":"public/media/destinations/iquitos/gallery-4-enhanced-20261005.webp"},{"n":40,"file":"040.jpg","source":"https://brasiltours.ru/image/catalog/category/i/q/iquitos1.jpg","md":["src/content/destinations/ikitos.md"],"out":"public/media/destinations/iquitos/gallery-5-enhanced-20261005.webp"},{"n":41,"file":"041.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN21272_2.jpg","md":["src/content/destinations/ikitos.md"],"out":"public/media/destinations/iquitos/gallery-6-enhanced-20261005.webp"},{"n":42,"file":"042.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN21272_5.jpg","md":["src/content/destinations/ikitos.md"],"out":"public/media/destinations/iquitos/gallery-7-enhanced-20261005.webp"},{"n":43,"file":"043.jpg","source":"https://brasiltours.ru/image/countries/peru/444.jpg","md":["src/content/destinations/kahamarka.md"],"out":"public/media/destinations/cajamarca/hero-enhanced-20261005.webp"},{"n":44,"file":"044.png","source":"https://brasiltours.ru/image/catalog/category/c/a/cajamarcaperu.png","md":["src/content/destinations/kahamarka.md"],"out":"public/media/destinations/cajamarca/gallery-1-enhanced-20261005.webp"},{"n":45,"file":"045.jpg","source":"https://brasiltours.ru/image/catalog/category/o/t/otuzco_0.jpg","md":["src/content/destinations/kahamarka.md"],"out":"public/media/destinations/cajamarca/gallery-2-enhanced-20261005.webp"},{"n":46,"file":"046.jpg","source":"https://brasiltours.ru/image/countries/peru/999.jpg","md":["src/content/destinations/linii-naska-i-ostrova-balestas.md","src/content/tours/21-dnevnoe-priklyuchenie-v-peru.md"],"out":"public/media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261005.webp"},{"n":47,"file":"047.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN20733_16.jpg","md":["src/content/destinations/linii-naska-i-ostrova-balestas.md"],"out":"public/media/destinations/nazca-lines-and-ballestas-islands/gallery-1-enhanced-20261005.webp"},{"n":48,"file":"048.gif","source":"https://brasiltours.ru/image/catalog/category/n/a/nazca.gif","md":["src/content/destinations/linii-naska-i-ostrova-balestas.md"],"out":"public/media/destinations/nazca-lines-and-ballestas-islands/gallery-2-enhanced-20261005.webp"},{"n":49,"file":"049.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN16146_3.jpg","md":["src/content/destinations/linii-naska-i-ostrova-balestas.md"],"out":"public/media/destinations/nazca-lines-and-ballestas-islands/gallery-3-enhanced-20261005.webp"},{"n":50,"file":"050.jpg","source":"https://brasiltours.ru/image/catalog/category/B/N/BN3984_4.jpg","md":["src/content/destinations/linii-naska-i-ostrova-balestas.md"],"out":"public/media/destinations/nazca-lines-and-ballestas-islands/gallery-4-enhanced-20261005.webp"}]''')
-          assert len(items) == 50
-          assert [x["n"] for x in items] == list(range(1, 51))
-          
-          registry_path = root / "src/data/media/photo-enhancements.json"
-          registry = json.loads(registry_path.read_text(encoding="utf-8"))
-          enhancements = registry["enhancements"]
-          by_source = {x.get("source"): x for x in enhancements}
-          
-          changed = {}
-          processed = 0
-          reused = 0
-          replacements = 0
-          
-          for item in items:
-              source = item["source"]
-              existing = by_source.get(source)
-              public_src = None
-          
-              if existing:
-                  candidate = existing.get("enhanced")
-                  if candidate and candidate.startswith("/") and (root / "public" / candidate.lstrip("/")).exists():
-                      public_src = candidate
-                      reused += 1
-          
-              if public_src is None:
-                  src_path = staged / item["file"]
-                  if not src_path.exists() or src_path.stat().st_size == 0:
-                      raise SystemExit(f"Missing staged source: {src_path}")
-          
-                  out_path = root / item["out"]
-                  out_path.parent.mkdir(parents=True, exist_ok=True)
-          
-                  with Image.open(src_path) as raw:
-                      try:
-                          raw.seek(0)
-                      except EOFError:
-                          pass
-                      im = ImageOps.exif_transpose(raw).convert("RGB")
-                      w, h = im.size
-                      max_side = max(w, h)
-                      if max_side < 1280:
-                          scale = min(3.0, 1280 / max_side)
-                          nw, nh = max(1, round(w * scale)), max(1, round(h * scale))
-                          im = im.resize((nw, nh), Image.Resampling.LANCZOS)
-                      im = ImageEnhance.Contrast(im).enhance(1.04)
-                      im = ImageEnhance.Color(im).enhance(1.025)
-                      im = im.filter(ImageFilter.UnsharpMask(radius=1.15, percent=115, threshold=3))
-                      im.save(out_path, "WEBP", quality=90, method=6)
-          
-                  with Image.open(out_path) as check:
-                      check.verify()
-          
-                  public_src = "/" + item["out"].removeprefix("public/")
-                  rec = {
-                      "source": source,
-                      "enhanced": public_src,
-                      "enhancedAt": "2026-10-05",
-                      "method": "deterministic-restoration",
-                      "revision": 1,
-                  }
-                  enhancements.append(rec)
-                  by_source[source] = rec
-                  processed += 1
-          
-              for md_path_s in item["md"]:
-                  md_path = root / md_path_s
-                  text = changed.get(md_path_s)
-                  if text is None:
-                      text = md_path.read_text(encoding="utf-8")
-                  count = text.count(source)
-                  if count:
-                      text = text.replace(source, public_src)
-                      replacements += count
-                  elif public_src not in text:
-                      raise SystemExit(f"Neither source nor enhanced path found in {md_path_s} for #{item['n']}")
-                  changed[md_path_s] = text
-          
-          for path_s, text in changed.items():
-              (root / path_s).write_text(text, encoding="utf-8")
-          
-          registry_path.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-          
-          assert processed + reused == 50
-          assert len({x["source"] for x in items}) == 50
-          json.loads(registry_path.read_text(encoding="utf-8"))
-          for item in items:
-              rec = by_source[item["source"]]
-              if not (root / "public" / rec["enhanced"].lstrip("/")).exists():
-                  raise SystemExit(f"Missing enhanced output: {rec['enhanced']}")
-          
-          print(json.dumps({
-              "unique_sources": 50,
-              "processed": processed,
-              "reused": reused,
-              "source_occurrences_replaced": replacements,
-              "content_files_changed": len(changed)
-          }, ensure_ascii=False))
-          
-          PY
-      - name: Commit enhanced assets and registry
-        shell: bash
-        run: |
-          set -euo pipefail
-          rm -rf tmp/photo-enhancement-inputs/20261005-next50
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A public/media src/content src/data/media/photo-enhancements.json tmp/photo-enhancement-inputs/20261005-next50
-          git diff --cached --quiet && exit 0
-          git commit -m 'Enhance next 50 unprocessed photos'
-          git pull --rebase origin main
-          git push
+          dir='tmp/gpt-image-originals/20261005-redo-01-10'
+          mkdir -p "$dir"
+          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/001.jpg' -o "$dir/001.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/002.jpg' -o "$dir/002.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/003.jpg' -o "$dir/003.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/004.jpg' -o "$dir/004.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/005.jpg' -o "$dir/005.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/006.jpg' -o "$dir/006.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/007.jpg' -o "$dir/007.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/008.jpg' -o "$dir/008.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/009.jpg' -o "$dir/009.jpg"
+          curl -fL --retry 2 --connect-timeout 20 'https://raw.githubusercontent.com/alexyakovlev79/adatours.ru/e49979d661e3d6c5b429d84905f0f9fb25c5f7a0/tmp/photo-enhancement-inputs/20261005-next50/010.jpg' -o "$dir/010.jpg"
+          file "$dir"/*
+      - name: Upload exact originals
+        uses: actions/upload-artifact@v4
+        with:
+          name: gpt-image-originals-20261005-redo-01-10
+          path: tmp/gpt-image-originals/20261005-redo-01-10
+          if-no-files-found: error
+          retention-days: 1

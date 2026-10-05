@@ -9,6 +9,7 @@ summary: >-
 hero:
   src: /media/themes/svadby-i-romantika/hero-enhanced-20261001.webp
   alt: Пара в романтическом путешествии
+imageTextAlign: right
 sourceUrl: https://brasiltours.ru/svadby-i-romantika
 sourceSnapshot: page_texts_original/svadby-i-romantika__00c77142.md
 updatedAt: 2026-10-02

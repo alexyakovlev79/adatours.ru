@@ -9,6 +9,7 @@ summary: Пантанал, Амазония, Галапагосы и други�
 hero:
   src: /media/themes/wildlife/hero-enhanced-20261005.webp
   alt: Ягуар у воды в тропическом лесу, иллюстрация GPT Image
+imageTextAlign: right
 updatedAt: '2026-10-05'
 ---
 

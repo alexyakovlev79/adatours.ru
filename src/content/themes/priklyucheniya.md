@@ -9,6 +9,7 @@ summary: >-
 hero:
   src: /media/themes/priklyucheniya/hero-enhanced-20261001.webp
   alt: Активное путешествие в Латинской Америке
+imageTextAlign: left
 sourceUrl: https://brasiltours.ru/priklyucheniya
 sourceSnapshot: page_texts_original/priklyucheniya__9d8e52e1.md
 updatedAt: 2026-10-02

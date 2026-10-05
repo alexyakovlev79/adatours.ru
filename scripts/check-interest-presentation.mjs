@@ -10,12 +10,17 @@ const collections = Object.fromEntries(['tours','countries','destinations','excu
 const at=path=>readFileSync(join('dist',path,'index.html'),'utf8');
 const ids=(html,attribute)=>[...html.matchAll(new RegExp(`${attribute}="([^"]+)"`,'g'))].map(m=>m[1]);
 const text=html=>html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ');
+const heroSection=html=>html.match(/<section\b[^>]*class="[^"]*\bhero\b[^"]*"[\s\S]*?<\/section>/)?.[0]??'';
+const expectedThemeAlign=new Map([['motorcycle-tours','left'],['adventure','left'],['weddings-and-romance','right'],['wildlife','right']]);
 const index=at('/interests/'), expected=buildInterestIndex(collections.themes,collections.tours);
 assert.equal(expected.length,13);
 assert.deepEqual(ids(index,'data-interest-index-item'),expected.map(r=>r.entry.data.id));
 assert.deepEqual(ids(index,'data-interest-tour-count').map(Number),expected.map(r=>r.tourCount));
 for (const {id,slug} of INTERESTS) {
+  const theme=collections.themes.find(entry=>entry.data.id===id), themeHero=theme?.data.hero?.src;
+  assert.ok(themeHero,`${slug}: theme hero`);
   const hub=buildInterestHub(id,collections), html=at(`/interests/${slug}/`), copy=interestCopy(id);
+  if(expectedThemeAlign.has(slug)) assert.ok(heroSection(html).includes(`data-image-text-align="${expectedThemeAlign.get(slug)}"`),`${slug}: requested theme hero alignment`);
   assert.ok(text(html).includes(`Готовые маршруты · ${countLabel(hub.allTours.length)}`),`${slug}: current full count`);
   assert.ok(html.includes(copy.tourIntro),`${slug}: tour intro`);
   if(hub.countries.length) assert.ok(html.includes(copy.geographyIntro),`${slug}: geography intro`);
@@ -30,8 +35,17 @@ for (const {id,slug} of INTERESTS) {
   for(const row of [...hub.stories,...hub.experiences]) if(row.tourCount) assert.ok(html.includes(interestTourCount(id,row.tourCount)));
   for(const row of hub.relatedThemes) assert.ok(html.includes(relatedInterestCount(row.tourCount)));
   for(const phrase of ['Сначала — путешествия, для которых','Страны, которые встречаются в действующих','туров с этим интересом','41 тур объединяют']) assert.ok(!html.includes(phrase));
-  if(hub.allTours.length) assert.ok(at(interestTourCatalogPath({slug})).includes(interestCatalogDescription(id,hub.allTours.length)));
-  for(const row of hub.allCountries) assert.ok(at(interestTourCatalogPath({slug},row.entry)).includes(interestCatalogDescription(id,row.tourCount,row.entry.data.name)));
+  if(hub.allTours.length) {
+    const catalogHtml=at(interestTourCatalogPath({slug}));
+    assert.ok(catalogHtml.includes(interestCatalogDescription(id,hub.allTours.length)));
+    assert.ok(heroSection(catalogHtml).includes(themeHero),`${slug}: interest tour catalog uses theme hero`);
+  }
+  for(const row of hub.allCountries) {
+    const countryRoot=interestTourCatalogPath({slug},row.entry), countryHtml=at(countryRoot);
+    assert.ok(countryHtml.includes(interestCatalogDescription(id,row.tourCount,row.entry.data.name)));
+    assert.ok(heroSection(countryHtml).includes(themeHero),`${slug}: ${row.entry.data.id} catalog uses theme hero`);
+    if(row.tours.length>10) assert.ok(heroSection(at(`${countryRoot}page/2/`)).includes(themeHero),`${slug}: ${row.entry.data.id} page 2 uses theme hero`);
+  }
 }
 const enhancements=JSON.parse(readFileSync('src/data/media/photo-enhancements.json','utf8')).enhancements;
 for (const slug of ['wildlife','culture-and-history','cruises-and-expeditions','events-and-festivals']) {
@@ -55,4 +69,4 @@ for(const file of readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.ht
   pages++;
 }
 assert.ok(pages>700,'all real site pages are checked, not just a handful of examples');
-console.log(`Interest presentation checks passed: 13 sorted interests, 13 individual copy sets, 4 generated covers, dynamic top-tour geography and inflected counters; exactly one footer form on all ${pages} real HTML pages.`);
+console.log(`Interest presentation checks passed: 13 sorted interests, 13 individual copy sets, 4 generated covers, dynamic top-tour geography, theme-owned catalog heroes, requested theme hero alignment and inflected counters; exactly one footer form on all ${pages} real HTML pages.`);

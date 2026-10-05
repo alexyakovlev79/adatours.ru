@@ -9,6 +9,7 @@ summary: >-
 hero:
   src: /media/themes/moto-tury/hero-enhanced-20261001.webp
   alt: Мотоцикл на дороге
+imageTextAlign: left
 sourceUrl: https://brasiltours.ru/moto-tury
 sourceSnapshot: page_texts_original/moto-tury__55b12a54.md
 updatedAt: 2026-10-02

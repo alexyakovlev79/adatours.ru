@@ -3,7 +3,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import ReviewQuote from '../../components/proof/ReviewQuote.astro';
-import LeadForm from '../../components/forms/LeadForm.astro';
 import { ADA_REVIEWS } from '../../data/reviews/ada-tours';
 
 const heroImage = '/media/catalog/tury/hero-enhanced-20260930.webp';
@@ -22,7 +21,7 @@ const reviewSchemas = ADA_REVIEWS.map((review) => ({
 }));
 ---
 
-<BaseLayout
+<BaseLayout leadTitle="Обсудить поездку или партнерство" leadEntityId="reviews"
   title="Отзывы клиентов и партнеров Ada Tours"
   description="Отзывы туристов, турагентств и партнеров Ada Tours о маршрутах по Бразилии и Латинской Америке, группах, VIP и multi-country поездках."
   image={heroImage}
@@ -45,5 +44,4 @@ const reviewSchemas = ADA_REVIEWS.map((review) => ({
     {ADA_REVIEWS.map((review, index) => <ReviewQuote review={review} index={index} />)}
   </div>
 
-  <LeadForm title="Обсудить поездку или партнерство" entityId="reviews" />
 </BaseLayout>

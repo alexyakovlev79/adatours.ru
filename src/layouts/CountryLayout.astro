@@ -5,7 +5,6 @@ import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
-import LeadForm from '../components/forms/LeadForm.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import { withBase } from '../lib/paths';
@@ -104,7 +103,7 @@ const featureBandImageTextAlign = (href: string) => {
 };
 ---
 
-<BaseLayout
+<BaseLayout leadTitle={`Собрать путешествие по стране: ${d.name}`} leadEntityId={d.id}
   title={`${d.name}: туры и путешествия`}
   description={d.summary}
   image={d.hero?.src}
@@ -323,7 +322,6 @@ const featureBandImageTextAlign = (href: string) => {
     </section>
   )}
 
-  <LeadForm title={`Собрать путешествие по стране: ${d.name}`} entityId={d.id} />
 </BaseLayout>
 
 <style>

@@ -9,7 +9,6 @@ import TripStats from '../components/tour/TripStats.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
 import TourPricing from '../components/tour/TourPricing.astro';
 import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
-import LeadForm from '../components/forms/LeadForm.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogMoreLink from '../components/editorial/CatalogMoreLink.astro';
@@ -124,7 +123,7 @@ const excursionSchema = {
 };
 ---
 
-<BaseLayout
+<BaseLayout leadTitle={archived ? "Подобрать другую поездку" : `Заказать экскурсию: ${d.title}`} leadEntityId={archived ? "" : d.id}
   headerTheme={archived ? 'dark' : 'light'}
   noindex={archived}
   title={d.title}
@@ -240,7 +239,6 @@ const excursionSchema = {
     </>
   )}
 
-  {!archived && <LeadForm title={`Заказать экскурсию: ${d.title}`} entityId={d.id} />}
 </BaseLayout>
 
 <style>

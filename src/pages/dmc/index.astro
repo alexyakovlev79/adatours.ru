@@ -5,11 +5,10 @@ import EditorialStatement from '../../components/editorial/EditorialStatement.as
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
-import LeadForm from '../../components/forms/LeadForm.astro';
 import { withBase } from '../../lib/paths';
 ---
 
-<BaseLayout
+<BaseLayout leadTitle="Запросить B2B-предложение" leadEntityId="dmc"
   title="DMC по Бразилии и Латинской Америке"
   description="Ada Tours как принимающий партнер для турагентств и туроператоров по Бразилии и странам Латинской Америки."
 >
@@ -73,7 +72,6 @@ import { withBase } from '../../lib/paths';
     </div>
   </section>
 
-  <LeadForm title="Запросить B2B-предложение" entityId="dmc" />
 </BaseLayout>
 
 

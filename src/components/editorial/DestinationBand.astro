@@ -4,6 +4,7 @@ import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface Props {
   eyebrow?: string;
+  headingTag?: 'h2' | 'h3';
   title: string;
   text?: string;
   href: string;
@@ -17,6 +18,7 @@ interface Props {
 
 const {
   eyebrow,
+  headingTag: Heading = 'h2',
   title,
   text,
   href,
@@ -60,7 +62,7 @@ const resolvedAlign = imageTextAlign ?? align;
     <div class="band__overlay"></div>
     <div class="band__content">
       {eyebrow && <p class="eyebrow">{eyebrow}</p>}
-      <h2>{title}</h2>
+      <Heading class="band__title">{title}</Heading>
       {text && <p class="band__text"><InlineMarkdown text={text} /></p>}
       <span class="band__link">Смотреть <span aria-hidden="true">↗</span></span>
     </div>
@@ -209,12 +211,14 @@ const resolvedAlign = imageTextAlign ?? align;
     text-align: right;
   }
 
-  .band h2 {
+  .band .band__title {
+    font-size: var(--text-h2);
+    line-height: 1.02;
     max-width: 920px;
     margin: 10px 0 18px;
   }
 
-  .band--right h2,
+  .band--right .band__title,
   .band--right .band__text {
     margin-left: auto;
   }

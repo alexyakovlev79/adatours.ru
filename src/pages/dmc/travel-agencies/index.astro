@@ -5,11 +5,10 @@ import EditorialStatement from '../../../components/editorial/EditorialStatement
 import FactStrip from '../../../components/proof/FactStrip.astro';
 import EditorialProof from '../../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../../components/proof/ProcessSteps.astro';
-import LeadForm from '../../../components/forms/LeadForm.astro';
 import { ORG } from '../../../data/organization/ada-tours';
 ---
 
-<BaseLayout
+<BaseLayout leadTitle="Запросить предложение для клиента" leadEntityId="dmc_for_agencies"
   title="DMC для турагентств по Бразилии и Латинской Америке"
   description="Ada Tours как принимающий партнер для турагентств и туроператоров: FIT, группы, VIP, MICE и multi-country маршруты по Бразилии и Латинской Америке."
 >
@@ -69,5 +68,4 @@ import { ORG } from '../../../data/organization/ada-tours';
     dark
   />
 
-  <LeadForm title="Запросить предложение для клиента" entityId="dmc_for_agencies" />
 </BaseLayout>

@@ -7,8 +7,8 @@ status: approved
 summary: Антарктида, амазонские круизы и патагонские фьорды. Путешествия, в которых судно или экспедиционный формат
   определяют маршрут, а не служат короткой прогулкой по воде.
 hero:
-  src: /media/countries/antarctica/hero-enhanced-20261001.webp
-  alt: Айсберги у побережья Антарктиды
+  src: /media/themes/cruises-and-expeditions/hero-enhanced-20261005.webp
+  alt: Экспедиционное судно среди ледников, иллюстрация GPT Image
 updatedAt: '2026-10-05'
 ---
 

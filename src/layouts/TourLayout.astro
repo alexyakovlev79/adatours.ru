@@ -10,7 +10,6 @@ import HighlightsEditorial from '../components/tour/HighlightsEditorial.astro';
 import Itinerary from '../components/tour/Itinerary.astro';
 import TourPricing from '../components/tour/TourPricing.astro';
 import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
-import LeadForm from '../components/forms/LeadForm.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import { withBase } from '../lib/paths';
@@ -100,7 +99,7 @@ const heroMetaParts = [
 ].filter(Boolean);
 ---
 
-<BaseLayout headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={d.title} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
+<BaseLayout leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={d.title} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
   {!archived && <SearchIndexRecord
     title={d.title}
     summary={d.lead}
@@ -178,7 +177,6 @@ const heroMetaParts = [
   {(d.included.length > 0 || d.notIncluded.length > 0 || d.notes.length > 0) && (
     <IncludedExcluded included={d.included} notIncluded={d.notIncluded} notes={d.notes} />
   )}
-  {!archived && <LeadForm title="Получить расчет и адаптировать маршрут под ваши даты" entityId={d.id} />}
 </BaseLayout>
 
 <style>

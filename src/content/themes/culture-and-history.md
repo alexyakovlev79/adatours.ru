@@ -7,8 +7,8 @@ status: approved
 summary: Мачу-Пикчу, наследие инков и майя, колониальные города, музеи, танго и местные традиции. Маршруты для тех,
   кто хочет узнавать историю через места и людей.
 hero:
-  src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
-  alt: Мачу-Пикчу, Перу
+  src: /media/themes/culture-and-history/hero-enhanced-20261005.webp
+  alt: Колониальная улица на фоне вулкана, иллюстрация GPT Image
 updatedAt: '2026-10-05'
 ---
 

@@ -5,7 +5,6 @@ import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
-import LeadForm from '../../components/forms/LeadForm.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
 import { ORG } from '../../data/organization/ada-tours';
 
@@ -20,7 +19,7 @@ const languagesText = languagesInPrepositional.length > 1
   : (languagesInPrepositional[0] ?? '');
 ---
 
-<BaseLayout
+<BaseLayout leadTitle="Обсудить поездку или партнерство" leadEntityId="about"
   title="О компании Ada Tours - DMC в Бразилии и Латинской Америке"
   description="Ada Tours работает с индивидуальными путешествиями, VIP, MICE, группами и B2B-партнерами в Бразилии и странах Латинской Америки."
 >
@@ -86,5 +85,4 @@ const languagesText = languagesInPrepositional.length > 1
     </PersonProfile>
   )}
 
-  <LeadForm title="Обсудить поездку или партнерство" entityId="about" />
 </BaseLayout>

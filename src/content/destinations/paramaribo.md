@@ -12,7 +12,7 @@ hero:
   src: /media/countries/suriname/featureBands-1-enhanced-20261002.webp
   alt: "На фото: столица Суринама город Парамарибо"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/9/9/99742310_53052b5188_o.jpg"
+  - src: "/media/destinations/paramaribo/gallery-1-enhanced-20261005.webp"
     alt: "На фото: столица Суринама город Парамарибо"
   - src: "https://brasiltours.ru/image/catalog/category/2/4/2475011722_7d49273047_b.jpg"
     alt: "На фото: столица Суринама город Парамарибо"

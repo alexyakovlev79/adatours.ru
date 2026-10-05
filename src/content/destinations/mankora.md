@@ -9,16 +9,16 @@ destinationType: "resort"
 summary: "Манкора на тихоокеанском побережье Перу: серфинг, пляжи и ночная жизнь. В окрестностях находятся археологические памятники инков."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/peru/997.jpg"
+  src: "/media/destinations/mankora/hero-enhanced-20261005.webp"
   alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/m/a/mancora_caballos_g_1.jpg"
+  - src: "/media/destinations/mankora/gallery-1-enhanced-20261005.webp"
     alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_13.jpg"
+  - src: "/media/destinations/mankora/gallery-2-enhanced-20261005.webp"
     alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/m/a/mancora1_1.jpg"
+  - src: "/media/destinations/mankora/gallery-3-enhanced-20261005.webp"
     alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/m/a/mancorabeachhor05_1.jpg"
+  - src: "/media/destinations/mankora/gallery-4-enhanced-20261005.webp"
     alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
 facts: []
 featureBands: []

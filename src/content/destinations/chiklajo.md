@@ -9,18 +9,18 @@ destinationType: "city"
 summary: "Чиклайо: современный торговый город Перу в плодородной долине среди сахарных и рисовых плантаций, в 13 км от Тихого океана."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/peru/chiclayo-2.jpg"
+  src: "/media/destinations/chiklajo/hero-enhanced-20261005.webp"
   alt: "На фото: шпили города Чиклайо в Перу"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/c/h/chiclayo.jpg"
+  - src: "/media/destinations/chiklajo/gallery-1-enhanced-20261005.webp"
     alt: "На фото: город Чиклайо в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/D/S/DSCN0517.jpg"
+  - src: "/media/destinations/chiklajo/gallery-2-enhanced-20261005.webp"
     alt: "На фото: город Чиклайо в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/P/e/PeruRadish.jpg"
+  - src: "/media/destinations/chiklajo/gallery-3-enhanced-20261005.webp"
     alt: "На фото: город Чиклайо в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/7/8/78483-004.jpg"
+  - src: "/media/destinations/chiklajo/gallery-4-enhanced-20261005.webp"
     alt: "На фото: город Чиклайо в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_9.jpg"
+  - src: "/media/destinations/chiklajo/gallery-5-enhanced-20261005.webp"
     alt: "На фото: город Чиклайо в Перу"
 facts: []
 featureBands: []

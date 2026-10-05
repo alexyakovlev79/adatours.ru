@@ -12,15 +12,15 @@ hero:
   src: /media/countries/chile/featureBands-2-enhanced-20261002.webp
   alt: "На фото: пингвины в Пунта Аренас в Чили (Патагония)"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN14140_8.jpg"
+  - src: "/media/destinations/punta-arenas/gallery-1-enhanced-20261005.webp"
     alt: "На фото: Пунта Аренас в Чили (Патагония)"
-  - src: "https://brasiltours.ru/image/catalog/category/0/8/08-04-07_punta_arenas.jpg"
+  - src: "/media/destinations/punta-arenas/gallery-2-enhanced-20261005.webp"
     alt: "На фото: Пунта Аренас в Чили (Патагония)"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22688_25.jpg"
+  - src: "/media/destinations/punta-arenas/gallery-3-enhanced-20261005.webp"
     alt: "На фото: Пунта Аренас в Чили (Патагония)"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN1592_2.jpg"
+  - src: "/media/destinations/punta-arenas/gallery-4-enhanced-20261005.webp"
     alt: "На фото: Пунта Аренас в Чили (Патагония)"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22688_15.jpg"
+  - src: "/media/destinations/punta-arenas/gallery-5-enhanced-20261005.webp"
     alt: "На фото: Пунта Аренас в Чили (Патагония)"
 facts: []
 featureBands: []

@@ -20,9 +20,9 @@ gallery:
     alt: "На фото: истуканы острова Пасхи в Чили"
   - src: "/media/destinations/ostrov-pashi/gallery-4-enhanced-20261005.webp"
     alt: "На фото: истуканы острова Пасхи в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/e/a/easter3.jpg"
+  - src: "/media/destinations/ostrov-pashi/gallery-5-enhanced-20261005.webp"
     alt: "На фото: остров Пасхи в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_5_6.jpg"
+  - src: "/media/destinations/ostrov-pashi/gallery-6-enhanced-20261005.webp"
     alt: "На фото: истуканы острова Пасхи в Чили"
 facts: []
 featureBands: []

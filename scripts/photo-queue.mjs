@@ -1,4 +1,4 @@
-/** Read-only source/slot queue for chat photo jobs. No network and no generation. */
+/** Read-only audit/resync helper for the photo registry. Routine `next N` jobs use Google Sheet `Фото`. No network and no generation. */
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -74,7 +74,7 @@ export function buildPhotoQueue({ entries, contents, enhancements = [], type, co
   };
   for (const entry of selected) {
     const data = contents.get(entry.id);
-    for (const key of ['hero', 'gallery', 'highlights', 'itinerary']) walk(data[key], entry.id, key);
+    for (const key of ['hero', 'gallery', 'featureBands', 'highlights', 'itinerary']) walk(data[key], entry.id, key);
     let i = 0;
     for (const match of (data._body ?? '').matchAll(/!\[[^\]]*\]\(([^\s)]+)(?:\s+[^)]*)?\)/g)) addSlot(entry.id, `body.image[${i++}]`, match[1]);
   }

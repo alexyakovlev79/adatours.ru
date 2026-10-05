@@ -35,8 +35,8 @@ priceFrom: 6595
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/Antarc%20Adatours.png
-  alt: "Антарктида и экспедиционный круиз"
+  src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/hero-enhanced-20261005.webp
+  alt: "Экспедиционный корабль среди льдов Антарктиды"
 gallery: []
 featured: false
 priority: 0
@@ -156,7 +156,7 @@ notes:
 faq: []
 sourceUrl: https://brasiltours.ru/antarktida-ekspress-vozdushnyj-kruiz
 sourceSnapshot: page_texts_original/antarktida-ekspress-vozdushnyj-kruiz__5646eb1c.md
-updatedAt: 2026-10-02
+updatedAt: 2026-10-05
 primaryThemes: ["theme_cruises","theme_wildlife"]
 themes: []
 ---

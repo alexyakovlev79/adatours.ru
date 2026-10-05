@@ -10,7 +10,7 @@ summary: "Плайя дель Кармен находится в центре Р
 searchAliases: []
 themes: []
 hero: {"src":"/media/destinations/playa-del-carmen/hero-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17573_2.jpg","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_3.jpg","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN4134_32.jpg","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN4134_17.jpg","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/p/l/playa_del_carmen_spiaggia2.jpg","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"}]
+gallery: [{"src":"/media/destinations/playa-del-carmen/gallery-1-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"/media/destinations/playa-del-carmen/gallery-2-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"/media/destinations/playa-del-carmen/gallery-3-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"/media/destinations/playa-del-carmen/gallery-4-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"/media/destinations/playa-del-carmen/gallery-5-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -15,7 +15,7 @@ hero:
   src: /media/excursions/kito-siti-tur-na-ves-den/hero-enhanced-20261001.webp
   alt: Куэнка, Эквадор
 gallery:
-  - src: https://brasiltours.ru/image/catalog/category/f/i/file_3.jpg
+  - src: /media/destinations/playa-del-carmen/gallery-2-enhanced-20261004.webp
     alt: Колониальная застройка Куэнки
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN4417_17.jpg
     alt: Улицы Куэнки в Эквадоре

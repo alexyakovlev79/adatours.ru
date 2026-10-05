@@ -1,0 +1,137 @@
+name: Recover preserved 50 photo results
+on:
+  push:
+    branches: [chatgpt/recover-photo-publication-20261005]
+    paths: [.github/workflows/recover-photo-publication-20261005.yml]
+permissions:
+  contents: write
+concurrency:
+  group: recover-photo-publication-20261005
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Retrieve checksum-pinned preserved package
+        env:
+          PACKAGE_URL: 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-ba04-8210-899f-98d68f26836a/raw?se=2026-10-05T16%3A58%3A22Z&sp=r&sv=2026-02-06&sr=b&scid=3b4ff295-63f0-5926-9458-9504407c85a3&skoid=b5d2651b-fef3-4bb0-a03b-ca59cc22929b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-05T03%3A34%3A54Z&ske=2026-10-06T03%3A34%3A54Z&sks=b&skv=2026-02-06&sig=pCfmncGiLe/dJhoxfbTLe4%2BbNN//g1AVtTXDiWlts6k%3D'
+        run: |
+          echo "::add-mask::$PACKAGE_URL"
+          curl --fail --location --silent --show-error --max-time 120 "$PACKAGE_URL" -o "$RUNNER_TEMP/photos.zip"
+          echo "f49d5184ab579634821cb8542650ae97693decfc609923dece11f034dc3cc4bb  $RUNNER_TEMP/photos.zip" | sha256sum --check
+      - name: Start clean publication branch from current main
+        run: |
+          git fetch origin main
+          git checkout -b chatgpt/recovered-50-photos-20261005 origin/main
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Preserve parallel changes and commit five batches of ten
+        shell: python
+        run: |
+          import hashlib, json, os, pathlib, re, subprocess, zipfile
+          root = pathlib.Path.cwd()
+          package = zipfile.ZipFile(pathlib.Path(os.environ['RUNNER_TEMP']) / 'photos.zip')
+          manifest = json.loads(package.read('manifest.json'))
+          assert len(manifest) == 50
+          assert len({x['source'] for x in manifest}) == 50
+          assert len({x['enhanced'] for x in manifest}) == 50
+          assert sorted(r for x in manifest for r in x['rows']) == [r for r in range(1503,1554) if r != 1534]
+          prepared = json.loads(package.read('repository/src/data/media/photo-enhancements.json'))
+          prepared_by_source = {x['source']: x for x in prepared['enhancements']}
+          registry_path = root / 'src/data/media/photo-enhancements.json'
+          registry = json.loads(registry_path.read_text())
+          by_source = {x['source']: x for x in registry['enhancements']}
+          def strings(value):
+              if isinstance(value, str):
+                  yield value
+              elif isinstance(value, dict):
+                  for key, item in value.items():
+                      yield key
+                      yield from strings(item)
+              elif isinstance(value, list):
+                  for item in value:
+                      yield from strings(item)
+          archive_tokens = set(strings(json.loads((root / 'data/catalog-archive.json').read_text())))
+          def content_path(item):
+              path = pathlib.PurePosixPath(item['enhanced'])
+              assert len(path.parts) == 5 and path.parts[1:3] == ('media','destinations')
+              assert path.name.endswith('-enhanced-20261005.webp')
+              assert '..' not in path.parts
+              return root / 'src/content/destinations' / (path.parts[3] + '.md')
+          def update_slot(text, item):
+              fm = re.match(r'\A---\n(.*?)\n---(?:\n|$)', text, re.S)
+              assert fm, item['entity_id']
+              front = fm.group(1)
+              assert re.search(r'^id: [\"\x27]?' + re.escape(item['entity_id']) + r'[\"\x27]?\s*$', front, re.M)
+              assert re.search(r'^status: [\"\x27]?(?:approved|published)[\"\x27]?\s*$', front, re.M)
+              assert item['entity_id'] not in archive_tokens, 'Archived owner'
+              if item['slot'] == 'hero.src':
+                  section_name, index = 'hero', 0
+              else:
+                  slot = re.fullmatch(r'gallery\[(\d+)\]\.src', item['slot'])
+                  assert slot, item['slot']
+                  section_name, index = 'gallery', int(slot.group(1))
+              section = re.search(r'^' + section_name + r':[ \t]*\n((?:^[ \t].*(?:\n|$)|^[ \t]*\n)*)', front, re.M)
+              assert section, item['slot']
+              matches = list(re.finditer(r'^[ \t]*(?:-[ \t]+)?src:[ \t]*(?P<q>[\"\x27])(?P<v>[^\"\x27\r\n]+)(?P=q)[ \t]*$', section.group(1), re.M))
+              assert index < len(matches), item['slot']
+              match = matches[index]
+              assert match.group('v') in (item['source'], item['enhanced']), 'Concurrent slot change: ' + item['entity_id'] + ' ' + item['slot']
+              start = fm.start(1) + section.start(1) + match.start('v')
+              end = fm.start(1) + section.start(1) + match.end('v')
+              return text[:start] + item['enhanced'] + text[end:]
+          # Preflight all positions before changing any repository file.
+          planned = {}
+          for item in manifest:
+              path = content_path(item)
+              text = planned.get(path, path.read_text())
+              planned[path] = update_slot(text, item)
+              entry = prepared_by_source[item['source']]
+              assert entry['enhanced'] == item['enhanced'] and entry['method'] == 'gpt-image'
+              if item['source'] in by_source:
+                  assert by_source[item['source']]['enhanced'] == item['enhanced'], 'Concurrent registry change'
+              data = package.read('repository/public' + item['enhanced'])
+              assert data[:4] == b'RIFF' and data[8:12] == b'WEBP'
+              assert hashlib.sha256(data).hexdigest() == item['asset_sha256']
+              asset = root / ('public' + item['enhanced'])
+              if asset.exists():
+                  assert hashlib.sha256(asset.read_bytes()).hexdigest() == item['asset_sha256'], 'Concurrent asset change'
+          commits = []
+          for batch_number in range(5):
+              batch = manifest[batch_number*10:(batch_number+1)*10]
+              touched = {registry_path}
+              for item in batch:
+                  path = content_path(item)
+                  path.write_text(update_slot(path.read_text(), item))
+                  touched.add(path)
+                  asset = root / ('public' + item['enhanced'])
+                  asset.parent.mkdir(parents=True, exist_ok=True)
+                  asset.write_bytes(package.read('repository/public' + item['enhanced']))
+                  touched.add(asset)
+                  if item['source'] not in by_source:
+                      entry = prepared_by_source[item['source']]
+                      registry['enhancements'].append(entry)
+                      by_source[item['source']] = entry
+              registry_path.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + '\n')
+              subprocess.run(['git','add','--',*[str(p.relative_to(root)) for p in sorted(touched)]], check=True)
+              if subprocess.run(['git','diff','--cached','--quiet']).returncode:
+                  subprocess.run(['git','commit','-m',f'Publish 10 preserved GPT Image photo enhancements (recovery {batch_number+1}/5)'], check=True)
+              sha = subprocess.check_output(['git','rev-parse','HEAD'], text=True).strip()
+              commits.append({'batch': batch_number+1, 'sha': sha, 'rows': [r for item in batch for r in item['rows']]})
+          for path, expected in planned.items():
+              assert path.read_text() == expected, path
+          for item in manifest:
+              assert hashlib.sha256((root / ('public' + item['enhanced'])).read_bytes()).hexdigest() == item['asset_sha256']
+              assert sum(x['source'] == item['source'] for x in registry['enhancements']) == 1
+          assert subprocess.check_output(['git','status','--porcelain'], text=True) == ''
+          print(json.dumps({'recovered':50,'commits':commits,'blocked_row':1534}, ensure_ascii=False, indent=2))
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as summary:
+              summary.write('Recovered 50 existing GPT Image results without regeneration. Five atomic batches of ten. Row 1534 unchanged; row 1553 is the compensating result.\n\n')
+              for commit in commits:
+                  summary.write(f"Batch {commit['batch']}: {commit['sha']}\n\n")
+      - name: Push publication branch without changing main
+        run: git push origin HEAD:refs/heads/chatgpt/recovered-50-photos-20261005

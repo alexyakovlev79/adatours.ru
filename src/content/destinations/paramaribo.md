@@ -14,17 +14,17 @@ hero:
 gallery:
   - src: "/media/destinations/paramaribo/gallery-1-enhanced-20261005.webp"
     alt: "На фото: столица Суринама город Парамарибо"
-  - src: "https://brasiltours.ru/image/catalog/category/2/4/2475011722_7d49273047_b.jpg"
+  - src: "/media/destinations/paramaribo/gallery-2-enhanced-20261005.webp"
     alt: "На фото: столица Суринама город Парамарибо"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN9564_48.jpg"
+  - src: "/media/destinations/paramaribo/gallery-3-enhanced-20261005.webp"
     alt: "На фото: столица Суринама город Парамарибо"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN120_302.jpg"
+  - src: "/media/destinations/paramaribo/gallery-4-enhanced-20261005.webp"
     alt: "На фото: столица Суринама город Парамарибо"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN20143_3.jpg"
+  - src: "/media/destinations/paramaribo/gallery-5-enhanced-20261005.webp"
     alt: "На фото: столица Суринама город Парамарибо"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN2661_5.jpg"
+  - src: "/media/destinations/paramaribo/gallery-6-enhanced-20261005.webp"
     alt: "На фото: столица Суринама город Парамарибо"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN20143_2.jpg"
+  - src: "/media/destinations/paramaribo/gallery-7-enhanced-20261005.webp"
     alt: "На фото: столица Суринама город Парамарибо"
 facts: []
 featureBands: []

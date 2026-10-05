@@ -12,7 +12,6 @@ hero:
   src: "/media/destinations/samana/hero-enhanced-20261003.webp"
   alt: "На фото: курорт Самана в Доминикане"
 gallery: []
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -21,6 +20,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-na-poluostrov-samana-v-dominikane"
 sourceSnapshot: "https://drive.google.com/file/d/1XXVPKDVY0st0bGT3xqNJ39du3aCxvTy0/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_beach"]
 ---
 
 ### Полуостров Самана- девственная природа!

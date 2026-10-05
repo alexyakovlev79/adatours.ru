@@ -7,7 +7,6 @@ title: Ночная астрономическая экскурсия в Ата�
 country: country_chile
 lead: Можно отправиться на ночную астрономическую экскурсию в группе с англоговорящим гидом и наблюдать небо через профессиональные
   телескопы. Тур не проводится в даты ежемесячного лунного затмения.
-themes: []
 language: []
 route: []
 included: []
@@ -18,6 +17,7 @@ destination: destination_chile_san_pedro_de_atakama
 destinationName: Сан-Педро-де-Атакама
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1TmhuHeFCJQI9NsauVVqkAf0BUuW2PXCY/view?usp=drivesdk
+themes: ["theme_wildlife"]
 ---
 
 Можно отправиться на ночную астрономическую экскурсию в группе с англоговорящим гидом и наблюдать небо через профессиональные телескопы. Тур не проводится в даты ежемесячного лунного затмения.

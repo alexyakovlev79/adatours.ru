@@ -11,7 +11,6 @@ searchAliases:
 country: country_uruguay
 destination: destination_uruguay_montevideo
 destinationName: "Монтевидео"
-themes: [culture, city]
 duration: 4 часа
 language:
   - английский
@@ -55,6 +54,7 @@ notes:
 sourceUrl: https://brasiltours.ru/montevideo-siti-tur-i-istoricheskij-tsentr
 sourceSnapshot: page_texts_newstep/Excursions/montevideo-siti-tur-i-istoricheskij-tsentr__0ba49bad.md
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 За четыре часа Монтевидео раскрывается через набережную Рамбла, главные площади и здания города, живописные районы и улицы Старого города. В программе сочетаются панорамная часть, прогулка по историческому центру и обед в традиционном Mercado Puerto.

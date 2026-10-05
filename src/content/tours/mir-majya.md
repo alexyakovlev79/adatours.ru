@@ -21,7 +21,6 @@ destinations:
 - destination_guatemala_kirigua
 - destination_guatemala_peten
 - destination_guatemala_tikal_flores
-themes: []
 audiences: []
 route:
 - Гватемала
@@ -240,6 +239,8 @@ routeDestinations:
 - destination_guatemala_kirigua
 - destination_guatemala_peten
 - destination_guatemala_tikal_flores
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 **Длительность:** 10 дней / 9 ночей  

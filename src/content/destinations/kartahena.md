@@ -10,7 +10,6 @@ summary: "Картахена стоит на берегу Карибского �
 searchAliases: []
 hero: {"src":"/media/destinations/cartagena/hero-enhanced-20261003.webp","alt":"На фото: колумбийка из страны Колумбия"}
 gallery: [{"src":"/media/destinations/cartagena/gallery-1-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-2-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-3-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-4-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-5-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-6-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kartahena-v-kolumbii"
 sourceSnapshot: "https://drive.google.com/file/d/1aT9pixhPx7CbKLwgsVTWeZaz52-4brNT/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_beach","theme_diving"]
 ---
 
 ## Старый центр ЮНЕСКО и крепость Сан-Фелипе: что посмотреть в Картахене

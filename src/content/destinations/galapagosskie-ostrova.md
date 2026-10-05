@@ -18,7 +18,6 @@ gallery:
     alt: "На фото: Галапагосские острова в Эквадоре"
   - src: "https://brasiltours.ru/image/catalog/category/f/i/file_53_5.jpg"
     alt: "На фото: Галапагосские острова в Эквадоре"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -27,6 +26,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-na-galapagosskie-ostrova-v-ehkvadore"
 sourceSnapshot: "https://drive.google.com/file/d/1bjUlrA_eHw50CWvpFbMeKl_p6UCxg0uj/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_wildlife","theme_diving"]
 ---
 
 ### Галапагосские острова - уникальный край Эквадора!

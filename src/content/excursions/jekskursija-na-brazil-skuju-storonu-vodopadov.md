@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_iguacu"
 destinationName: "Фоз-ду-Игуасу"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 64
 currency: "USD"
@@ -37,6 +36,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/jekskursija-na-brazil-skuju-storonu-vodopadov"
 sourceSnapshot: "https://drive.google.com/file/d/1SBnm8nZfR7Y6XvkFLIbj5VegmRAgPisM/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 Экскурсия на бразильскую сторону водопадов.

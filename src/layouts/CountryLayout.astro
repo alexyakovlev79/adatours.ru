@@ -1,4 +1,5 @@
 ---
+import { interestsForCountry } from '../lib/interest-model.mjs';
 import { isActiveEntity } from '../lib/archive.mjs';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
@@ -50,7 +51,7 @@ const countryTourTarget = ({
 
 const countryTourPreposition = d.id === 'country_french_guiana' ? 'во' : 'в';
 
-const [destinationEntries, allTourEntries, excursionEntries, themeEntries] = await Promise.all([
+const [destinationEntries, allTourEntries, excursionEntries, allThemeEntries] = await Promise.all([
   getCollection('destinations', ({ data }) =>
     data.locale === 'ru' &&
     isActiveEntity(data) &&
@@ -67,8 +68,7 @@ const [destinationEntries, allTourEntries, excursionEntries, themeEntries] = awa
   ),
   getCollection('themes', ({ data }) =>
     data.locale === 'ru' &&
-    isActiveEntity(data) &&
-    d.relatedThemes.includes(data.id)
+    isActiveEntity(data)
   ),
 ]);
 
@@ -82,13 +82,7 @@ tourEntries.sort(compareToursBySalesFit);
 
 excursionEntries.sort(compareExcursionsByPopularity(excursionTourCounts));
 
-const preferredThemes = new Map(
-  d.relatedThemes.map((id, index) => [id, index])
-);
-
-themeEntries.sort((a, b) =>
-  (preferredThemes.get(a.data.id) ?? 999) - (preferredThemes.get(b.data.id) ?? 999)
-);
+const themeEntries = interestsForCountry(d.id, allTourEntries, allThemeEntries).map((row) => row.entry);
 
 const destinationTypeLabel = {
   city: 'Город',
@@ -125,7 +119,7 @@ const featureBandImageTextAlign = (href: string) => {
     subtitle=""
     aliases={d.searchAliases}
     geography={[d.name, ...d.regions]}
-    themes={d.relatedThemes}
+    themes={themeEntries.map((theme) => theme.data.id)}
     image={d.hero?.src}
     tourCount={tourEntries.length}
   />

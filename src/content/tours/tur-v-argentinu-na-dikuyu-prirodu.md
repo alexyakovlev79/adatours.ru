@@ -18,10 +18,6 @@ destinations:
   - destination_argentina_poluostrov_valdes
   - destination_argentina_puerto_piramides
   - destination_argentina_treleu
-themes:
-  - nature
-  - wildlife
-  - adventure
 audiences:
   - private
 format: "Эко-тур"
@@ -345,6 +341,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/tur-v-argentinu-na-dikuyu-prirodu
 sourceSnapshot: page_texts_original/tur-v-argentinu-na-dikuyu-prirodu__de3d500b.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_wildlife"]
+themes: []
 ---
 
 Ибера становится центральной природной частью путешествия. Здесь обитают сотни видов птиц, капибары, кайманы и рептилии. Программа лоджа включает фото-сафари, прогулки на катере и верховую езду по заболоченным территориям. После нескольких дней среди дикой природы маршрут возвращается в Буэнос-Айрес.

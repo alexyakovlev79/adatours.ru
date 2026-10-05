@@ -24,7 +24,6 @@ gallery:
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"
   - src: "/media/destinations/santa-elena-de-uairen/gallery-6-enhanced-20261003.webp"
     alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -33,6 +32,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-santa-elena-de-uajren-v-venesuehle"
 sourceSnapshot: "https://drive.google.com/file/d/1PvppchG9xK1TqHp_yXidbhtlqNgacvaI/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 Санта Елена де Уайрен является основным транзитным пунктом для путешествующих на юг страны. Отсюда начинаются экскурсии на водопады и тепуи Гран-Сабана. Множество жителей города говорят по- португальски, что связано с близостью Бразилии.

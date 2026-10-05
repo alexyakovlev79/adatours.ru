@@ -21,7 +21,6 @@ destinations:
 - destination_peru_andaguaililyas
 - destination_peru_pereval_la_raya
 - destination_peru_sikuani
-themes: []
 audiences: []
 route:
 - Лима (2 ночи)
@@ -329,6 +328,8 @@ routeDestinations:
 - destination_peru_andaguaililyas
 - destination_peru_pereval_la_raya
 - destination_peru_sikuani
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 13 дней / 12 ночей  

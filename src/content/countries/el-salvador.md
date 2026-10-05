@@ -22,12 +22,6 @@ bestTime: Сухой сезон — с ноября по апрель; в исх
 currency: SVC
 languages:
   - испанский
-relatedThemes:
-  - theme_adventure
-  - theme_beach
-  - theme_diving
-  - theme_spa
-  - theme_gastronomy_wine
 featureBands:
   - eyebrow: Вулканы и природа
     title: Санта-Ана и Лос-Вулканес

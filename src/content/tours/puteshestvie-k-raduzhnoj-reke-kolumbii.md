@@ -10,7 +10,6 @@ destinations:
 - destination_colombia_bogota
 - destination_colombia_la_makarena
 - destination_colombia_kano_kristales
-themes: []
 audiences: []
 route:
 - Богота
@@ -178,6 +177,8 @@ routeDestinations:
 - destination_colombia_bogota
 - destination_colombia_la_makarena
 - destination_colombia_kano_kristales
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 6 дней / 5 ночей  

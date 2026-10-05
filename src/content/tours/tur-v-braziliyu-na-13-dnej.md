@@ -16,7 +16,6 @@ destinations:
 - destination_brazil_golubaya_peschera_bonito
 - destination_brazil_reka_rio_da_prata
 - destination_brazil_peschera_abismo_anhumas
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -321,6 +320,8 @@ routeDestinations:
 - destination_brazil_buzios
 - destination_brazil_golubaya_peschera_bonito
 - destination_brazil_reka_rio_da_prata
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_adventure","theme_culture"]
 ---
 
 **Длительность:** 13 дней / 12 ночей  

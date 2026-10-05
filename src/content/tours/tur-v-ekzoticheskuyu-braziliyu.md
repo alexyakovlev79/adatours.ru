@@ -15,7 +15,6 @@ destinations:
 - destination_brazil_buzios
 - destination_brazil_angra_dos_reis
 - destination_brazil_petropolis
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -298,6 +297,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_amazon
 - destination_brazil_buzios
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 12 дней / 11 ночей  

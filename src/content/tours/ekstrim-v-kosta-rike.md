@@ -15,7 +15,6 @@ destinations:
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_flamingo
 - destination_costa_rica_ostrova_katalina
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -216,6 +215,8 @@ routeDestinations:
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_flamingo
 - destination_costa_rica_ostrova_katalina
+primaryThemes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_beach","theme_fishing","theme_diving"]
 ---
 
 **Длительность:** 13 дней / 12 ночей  

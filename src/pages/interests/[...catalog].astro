@@ -1,0 +1,33 @@
+---
+import { createHash } from 'node:crypto';
+import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../../lib/archive.mjs';
+import { buildInterestHub, interestTourCatalogPath, countLabel } from '../../lib/interest-model.mjs';
+import { themePath } from '../../lib/routes';
+import { paginateCatalog } from '../../lib/catalog-pagination';
+import EntityCatalogLayout from '../../layouts/EntityCatalogLayout.astro';
+export async function getStaticPaths() {
+  const [themes, tours, countries, destinations, excursions] = await Promise.all([
+    getCollection('themes'), getCollection('tours'), getCollection('countries'), getCollection('destinations'), getCollection('excursions'),
+  ]);
+  const paths = [];
+  const add = (entries, root, props) => {
+    const catalogVersion = createHash('sha256').update(JSON.stringify(entries.map((entry) => entry.data.id))).digest('hex').slice(0, 20);
+    for (const page of paginateCatalog(entries, root)) paths.push({ params: { catalog: page.pagination.canonical.replace(/^\/interests\/|\/$/g, '') },
+      props: { ...props, entries: page.entries, pagination: page.pagination, canonical: page.pagination.canonical, catalogVersion } });
+  };
+  for (const theme of themes.filter((entry) => entry.data.locale === 'ru' && isActiveEntity(entry))) {
+    const d = theme.data, hub = buildInterestHub(d.id, { themes, tours, countries, destinations, excursions });
+    const root = interestTourCatalogPath(d);
+    const breadcrumbs = [{ label: 'По интересам', href: '/interests/' }, { label: d.name, href: themePath(d) }, { label: 'Все туры', href: root }];
+    add(hub.allTours, root, { kind: 'tour', title: `${d.name}: все туры`, description: `${countLabel(hub.allTours.length)} по выбранному интересу. Сначала основная тема поездки, затем существенная часть программы.`, breadcrumbs, hero: d.hero?.src });
+    for (const row of hub.allCountries) {
+      const country = row.entry.data, countryRoot = interestTourCatalogPath(d, country);
+      add(row.tours, countryRoot, { kind: 'tour', title: `${country.name}: ${d.name}`, description: `${countLabel(row.tourCount)} по интересу «${d.name}», в которых есть ${country.name}.${row.optionalCount ? ` В ${row.optionalCount} программах страна посещается дополнительно; это отмечено у тура.` : ''}`,
+        breadcrumbs: [...breadcrumbs, { label: country.name, href: countryRoot }], hero: d.hero?.src, countryContextId: country.id });
+    }
+  }
+  return paths;
+}
+---
+<EntityCatalogLayout {...Astro.props} />

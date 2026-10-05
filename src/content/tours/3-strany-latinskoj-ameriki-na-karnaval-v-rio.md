@@ -18,7 +18,6 @@ destinations:
 - destination_argentina_tigre
 - destination_argentina_san_isidro_buenos_ajres
 - destination_uruguay_montevideo
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро, 4 ночи
@@ -303,6 +302,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
 - destination_chile_santyago_de_chili
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 За 12 дней вы увидите Рио с Сахарной головы и Корковадо, проведете ночь на Самбадроме, пройдете маршруты у Игуасу, посмотрите Буэнос-Айрес и танго-шоу, а завершите поездку в Сантьяго на фоне Анд.

@@ -23,7 +23,6 @@ gallery:
     alt: "На фото: собор в городе Уайуа в Эль-Сальвадоре"
   - src: https://brasiltours.ru/image/catalog/category/D/S/DSC07258.JPG
     alt: "На фото: в городе Уайуа в Эль-Сальвадоре"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -48,6 +47,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-uajua-v-ehl-salvadore
 sourceSnapshot: https://drive.google.com/file/d/1HzFg1IPvZrWBO3zHAYBoGGCLofi6Pd7T/view?usp=drivesdk
 updatedAt: 2026-10-02
+themes: ["theme_culture","theme_events","theme_gastronomy_wine","theme_wildlife"]
 ---
 
 Уайуа, который местные жители называют Хвайуа, — небольшой город в горах Эль-Сальвадора. Он основан в 1577 году.

@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 duration: "Полдня"
 language: []
 priceFrom: 188
@@ -32,6 +31,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/half-day-corcovado-tijuca-private-tour"
 sourceSnapshot: "https://drive.google.com/file/d/1naFcVglXCWFI_JIgq71oPTGxE4z5Pyg1/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 Экскурсия на Корковадо и в лес Тижука рассчитана на полдня.

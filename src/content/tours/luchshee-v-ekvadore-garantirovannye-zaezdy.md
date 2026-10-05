@@ -30,7 +30,6 @@ destinations:
 - destination_ecuador_plyazhi_bachas
 - destination_ecuador_mys_karrion
 - destination_ecuador_kanon_pastasa
-themes: []
 audiences: []
 route:
 - Кито
@@ -585,6 +584,8 @@ routeDestinations:
 - destination_ecuador_ostrov_plasa_sur
 - destination_ecuador_plyazhi_bachas
 - destination_ecuador_mys_karrion
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 11 дней / 10 ночей

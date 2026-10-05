@@ -13,11 +13,6 @@ destinations:
   - destination_brazil_porto_alegre
   - destination_brazil_gramadu
   - destination_brazil_kanela
-themes:
-  - nature
-  - beach
-  - adventure
-  - culture
 audiences:
   - private
   - couples
@@ -230,6 +225,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/tur-v-yuzhnuyu-braziliyu
 sourceSnapshot: page_texts_original/tur-v-yuzhnuyu-braziliyu__6a976af6.md
 updatedAt: 2026-09-29
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_culture","theme_adventure"]
 ---
 
 Бразилия дарит очень разные впечатления: океан и горы, густая зелень, солнце, водопады, тихие курортные города и длинные пляжи. Маршрут построен так, чтобы за 12 дней увидеть несколько совершенно разных частей страны и завершить путешествие отдыхом на побережье.

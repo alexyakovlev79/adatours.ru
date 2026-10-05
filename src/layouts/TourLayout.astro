@@ -1,4 +1,5 @@
 ---
+import { themeIds } from '../lib/interest-model.mjs';
 import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
 import ArchiveNotice from '../components/global/ArchiveNotice.astro';
 import { getCollection } from 'astro:content';
@@ -108,7 +109,7 @@ const heroMetaParts = [
     subtitle={subtitleParts.join(' · ')}
     aliases={d.searchAliases}
     geography={[...countryNames, ...destinationNames, ...d.route]}
-    themes={d.themes}
+    themes={themeIds(d)}
     image={d.hero?.src}
     tourCountryCount={new Set(mainTourCountryIds(d)).size}
     tourDurationDays={d.durationDays}

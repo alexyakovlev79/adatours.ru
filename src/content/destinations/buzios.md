@@ -16,10 +16,6 @@ gallery:
     alt: Бухта и пляж в Бузиосе
   - src: /media/destinations/buzios/gallery-2-enhanced-20261001.webp
     alt: Океанское побережье Бузиоса
-themes:
-  - beach
-  - diving
-  - luxury
 relatedDestinations:
   - destination_brazil_rio
   - destination_brazil_paraty
@@ -48,6 +44,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-morskoj-kurort-buzios-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-na-morskoj-kurort-buzios-v-brazilii__24ce5ef5.md
 updatedAt: 2026-09-24
+themes: ["theme_beach","theme_diving","theme_adventure"]
 ---
 
 

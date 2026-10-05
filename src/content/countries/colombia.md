@@ -26,11 +26,6 @@ bestTime: Апрель, октябрь и ноябрь — наиболее до
 currency: COP
 languages:
   - испанский
-relatedThemes:
-  - theme_beach
-  - theme_diving
-  - theme_adventure
-  - theme_gastronomy_wine
 featureBands:
   - eyebrow: Анды и современный город
     title: Медельин и окрестности

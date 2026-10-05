@@ -14,10 +14,6 @@ hero:
 gallery:
   - src: /media/home/amazon-enhanced-20260930.webp
     alt: Река и тропический лес Амазонии
-themes:
-  - nature
-  - adventure
-  - fishing
 relatedDestinations:
   - destination_brazil_rio
   - destination_brazil_pantanal
@@ -47,6 +43,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-brazilskuyu-amazonku-i-v-gorod-manaus
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-na-brazilskuyu-amazonku-i-v-gorod-manaus__791a2ef7.md
 updatedAt: 2026-09-24
+themes: ["theme_wildlife","theme_fishing","theme_culture"]
 ---
 
 Манаус вырос в XIX веке во время резинового бума. Один из самых заметных памятников этого периода – театр Амазонас с неоклассической архитектурой и цветным куполом.

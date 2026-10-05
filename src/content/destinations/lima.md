@@ -12,10 +12,6 @@ hero:
   src: /media/destinations/lima/hero-enhanced-20260930.webp
   alt: Лима, столица Перу
 gallery: []
-themes:
-  - city
-  - culture
-  - gastronomy
 relatedDestinations:
   - destination_peru_cusco
   - destination_peru_machu_picchu
@@ -45,6 +41,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-stolicu-peru-gorod-limu__14d2550a.md
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Лима была основана Франсиско Писарро в 1535 году и позже стала столицей независимого Перу. Первое знакомство с городом обычно начинается с исторического центра и Пласа-Майор.

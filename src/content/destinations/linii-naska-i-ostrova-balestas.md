@@ -8,7 +8,6 @@ countryId: "country_peru"
 destinationType: "route_cluster"
 summary: "Геоглифы плато Наска, морские животные и птицы островов Бальестас, гигантский Канделябр Паракаса. Воздушные и лодочные экскурсии по Перу."
 searchAliases: []
-themes: []
 hero: {"src":"https://brasiltours.ru/image/countries/peru/999.jpg","alt":"На фото: линии пустыни Наска в Перу"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN20733_16.jpg","alt":"На фото: линии пустыни Наска в Перу"},{"src":"https://brasiltours.ru/image/catalog/category/n/a/nazca.gif","alt":"На фото: линии пустыни Наска в Перу"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN16146_3.jpg","alt":"На фото: пустыня Наска в Перу"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN3984_4.jpg","alt":"На фото: линии пустыни Наска в Перу"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1YRM5C4ku2odRh-Plseu-MrFxgTgVxbD7/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 ## Геоглифы и андский канделябр: что посмотреть на плато Наска, Перу

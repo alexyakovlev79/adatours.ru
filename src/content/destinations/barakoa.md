@@ -10,7 +10,6 @@ summary: "Баракоа знакомит с одной из старейших 
 searchAliases: []
 hero: {"src":"/media/destinations/baracoa/hero-enhanced-20261004.webp","alt":"На фото: город Баракоа на острове Куба"}
 gallery: [{"src":"/media/destinations/baracoa/gallery-1-enhanced-20261004.webp","alt":"На фото: город Баракоа на острове Куба"},{"src":"/media/destinations/baracoa/gallery-2-enhanced-20261004.webp","alt":"На фото: город Баракоа на острове Куба"},{"src":"/media/destinations/baracoa/gallery-3-enhanced-20261004.webp","alt":"На фото: город Баракоа на острове Куба"},{"src":"/media/destinations/baracoa/gallery-4-enhanced-20261004.webp","alt":"На фото: город Баракоа на острове Куба"},{"src":"/media/destinations/baracoa/gallery-5-enhanced-20261004.webp","alt":"На фото: город Баракоа на острове Куба"},{"src":"/media/destinations/baracoa/gallery-6-enhanced-20261004.webp","alt":"На фото: город Баракоа на острове Куба"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-barakoa-na-ostrove-kuba"
 sourceSnapshot: "https://drive.google.com/file/d/15SB7MKjoZ7yhcHh74QzZGSmF-VFfQ0Ez/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_wildlife","theme_beach"]
 ---
 
 ## Баракоа - живописный уголок Кубы

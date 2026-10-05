@@ -26,7 +26,6 @@ gallery:
   alt: ''
 - src: /media/destinations/los-roques/gallery-7-enhanced-20261003.webp
   alt: ''
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -35,6 +34,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-arhipelag-los-rokes-v-venesuehle
 sourceSnapshot: https://drive.google.com/file/d/13xTxvdRL9dx2DMXz_o1VnUZjRfrHXXsX/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_wildlife","theme_diving","theme_beach"]
 ---
 
 Лос Рокес - это архипелаг, состоящий из 346 крупных и мелких островов. В 1972 году на базе архипелага создан Национальный парк и 24-ти километровый коралловый риф попал под охрану государства.

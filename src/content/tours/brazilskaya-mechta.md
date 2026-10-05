@@ -13,7 +13,6 @@ destinations:
 - destination_brazil_nacionalnyj_park_serra_da_bokajna
 - destination_brazil_sako_du_mamangua
 - destination_brazil_sao_paulo
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -183,6 +182,8 @@ routeDestinations:
 - destination_brazil_paraty
 - destination_brazil_nacionalnyj_park_serra_da_bokajna
 - destination_brazil_sako_du_mamangua
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 7 дней / 6 ночей  

@@ -24,10 +24,6 @@ regions:
 bestTime: Сезон дождей — с мая по июль; условия различаются по регионам
 languages:
   - английский
-relatedThemes:
-  - theme_diving
-  - theme_beach
-  - theme_adventure
 featureBands:
   - eyebrow: Карибское море
     title: Рифы, острова и снорклинг

@@ -30,7 +30,6 @@ destinations:
 - destination_bolivia_laguna_honda
 - destination_bolivia_vulkan_ollague
 - destination_bolivia_solonchak_chiguana
-themes: []
 audiences: []
 route:
 - Лима
@@ -356,6 +355,8 @@ routeDestinations:
 - destination_peru_linii_naska_i_ostrova_balestas
 - destination_peru_pisko
 - destination_peru_parakas
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_cruises","theme_gastronomy_wine"]
 ---
 
 **Длительность:** 18 дней / 17 ночей

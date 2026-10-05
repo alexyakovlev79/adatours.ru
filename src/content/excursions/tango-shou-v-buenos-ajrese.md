@@ -8,7 +8,6 @@ searchAliases:
   - Танго-шоу с ужином в Буэнос-Айресе
 country: country_argentina
 destination: destination_argentina_buenos_aires
-themes: []
 duration: 4 часа
 language: []
 priceFrom: 120
@@ -27,6 +26,7 @@ notes: []
 sourceUrl: https://brasiltours.ru/tango-shou-v-buenos-ajrese
 sourceSnapshot: page_texts_newstep/Excursions/tango-shou-v-buenos-ajrese__f0fe36bb.md
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Вечером проходит танго-шоу с ужином в Буэнос-Айресе.

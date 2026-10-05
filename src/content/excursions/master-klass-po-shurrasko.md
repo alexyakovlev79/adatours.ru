@@ -9,7 +9,6 @@ searchAliases:
   - Бразильское барбекю
 country: country_brazil
 destination: destination_brazil_rio
-themes: [gastronomy, culture]
 language: []
 hero:
   src: /media/excursions/master-klass-po-shurrasko/hero-enhanced-20261001.webp
@@ -22,6 +21,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-09-30
+themes: ["theme_gastronomy_wine"]
 ---
 
 Занятие проходит в ресторане у открытого огня. Вы готовите мясо на длинных шампурах, а также сыр, чесночные булочки, кукурузу, куриные сердечки и ананас с корицей.

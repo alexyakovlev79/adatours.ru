@@ -28,7 +28,6 @@ gallery:
     alt: "На фото: в столице Уругвая городе Монтевидео"
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22633_37.jpg"
     alt: "На фото: в столице Уругвая городе Монтевидео"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -37,6 +36,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-montevideo-v-urugvae"
 sourceSnapshot: "https://drive.google.com/file/d/1QY_x4mfgp982UJk8rz7ngt0dgdUqhody/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 ### Монтевидео - столица Уругвая!

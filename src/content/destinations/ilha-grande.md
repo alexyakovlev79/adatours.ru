@@ -16,10 +16,6 @@ gallery:
     alt: Зеленые склоны острова Илья-Гранди
   - src: /media/destinations/ilha-grande/gallery-2-enhanced-20261001.webp
     alt: Побережье и бухта на Илья-Гранди
-themes:
-  - beach
-  - diving
-  - adventure
 relatedDestinations:
   - destination_brazil_angra_dos_reis
   - destination_brazil_paraty
@@ -49,6 +45,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi
 sourceSnapshot: page_texts_original/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi__6bfbc8fb.md
 updatedAt: 2026-09-24
+themes: ["theme_beach","theme_diving","theme_adventure","theme_wildlife"]
 ---
 
 На Илья-Гранди добираются по морю, в том числе из Ангра-дус-Рейс. На острове почти нет привычных автомобильных переездов: между пляжами и поселениями ходят пешком или перемещаются на лодке.

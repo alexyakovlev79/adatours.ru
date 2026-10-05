@@ -19,7 +19,6 @@ destinations:
 - destination_argentina_salinas_grandes
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
-themes: []
 audiences: []
 route:
 - Буэнос-Айрес
@@ -293,6 +292,8 @@ routeDestinations:
 - destination_argentina_salinas_grandes
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 15 дней / 14 ночей  

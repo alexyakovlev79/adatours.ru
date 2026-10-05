@@ -12,10 +12,6 @@ hero:
   src: /media/destinations/praia-de-pipa/hero-enhanced-20261001.webp
   alt: Пляж Прайя-де-Пипа недалеко от Натала
 gallery: []
-themes:
-  - beach
-  - adventure
-  - nature
 relatedDestinations:
   - destination_brazil_natal
 featuredTours:
@@ -35,6 +31,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-v-prajya-de-pipa-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-plyazhnye-tury-v-prajya-de-pipa-braziliya__eb45ba81.md
 updatedAt: 2026-09-25
+themes: ["theme_beach","theme_adventure","theme_wildlife"]
 ---
 
 Прайя-де-Пипа находится примерно в 70 км к югу от Натала. Здесь пляжи и дюны сочетаются с серфингом, прогулками у океана и возможностью увидеть дельфинов у побережья.

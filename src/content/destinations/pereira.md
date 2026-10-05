@@ -16,10 +16,6 @@ hero:
   src: https://brasiltours.ru/image/countries/colombia/coco-v.jpg
   alt: Долина Кокора рядом с Перейрой, Колумбия
 gallery: []
-themes:
-  - gastronomy
-  - nature
-  - culture
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -44,6 +40,7 @@ facts:
 sourceUrl: https://brasiltours.ru/kolumbiya-c-kofe
 sourceSnapshot: page_texts_original/kolumbiya-c-kofe__a5554234.md
 updatedAt: 2026-10-02
+themes: ["theme_gastronomy_wine","theme_wildlife","theme_culture"]
 ---
 
 Перейра входит в колумбийский кофейный треугольник. В программах Ada Tours город становится отправной точкой для поездок на кофейные фермы, в Саленто и долину Кокора.

@@ -23,7 +23,6 @@ destinations:
 - destination_peru_ostrova_uros
 - destination_peru_ostrov_takile
 - destination_peru_huliaka
-themes: []
 audiences: []
 route:
 - Лима
@@ -217,6 +216,8 @@ routeDestinations:
 - destination_peru_ostrova_uros
 - destination_peru_ostrov_takile
 - destination_peru_huliaka
+primaryThemes: ["theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 8 дней / 7 ночей  

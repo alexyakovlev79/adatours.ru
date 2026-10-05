@@ -18,7 +18,6 @@ destinations:
 - destination_colombia_santa_marta
 - destination_colombia_nacionalnyj_park_tajrona
 - destination_colombia_kartahena
-themes: []
 audiences: []
 route:
 - Богота
@@ -312,6 +311,8 @@ routeDestinations:
 - destination_colombia_santa_marta
 - destination_colombia_nacionalnyj_park_tajrona
 - destination_colombia_kartahena
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: ["theme_gastronomy_wine","theme_beach"]
 ---
 
 **Длительность:** 13 дней / 12 ночей

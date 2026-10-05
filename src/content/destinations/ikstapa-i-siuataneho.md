@@ -8,7 +8,6 @@ countryId: "country_mexico"
 destinationType: "route_cluster"
 summary: "Икстапа и соседний рыбацкий городок Сиуатанехо находятся на тихоокеанском побережье Мексики. Здесь отдыхают на пляжах, гуляют у бухты и пробуют блюда из свежих морепродуктов."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/ixtapa-and-zihuatanejo/hero-enhanced-20261004.webp","alt":"На фото: Икстапа и Сиуатанехо в Мексике"}
 gallery: [{"src":"/media/destinations/ixtapa-and-zihuatanejo/gallery-1-enhanced-20261004.webp","alt":"На фото: Икстапа и Сиуатанехо в Мексике"},{"src":"/media/destinations/ixtapa-and-zihuatanejo/gallery-2-enhanced-20261004.webp","alt":"На фото: Икстапа и Сиуатанехо в Мексике"},{"src":"/media/destinations/ixtapa-and-zihuatanejo/gallery-3-enhanced-20261004.webp","alt":"На фото: Икстапа и Сиуатанехо в Мексике"},{"src":"/media/destinations/ixtapa-and-zihuatanejo/gallery-4-enhanced-20261004.webp","alt":"На фото: Икстапа и Сиуатанехо в Мексике"},{"src":"/media/destinations/ixtapa-and-zihuatanejo/gallery-5-enhanced-20261004.webp","alt":"На фото: Икстапа и Сиуатанехо в Мексике"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/19v8S-_9LPnM7up4duniU4iC0yRKpbkMQ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_gastronomy_wine"]
 ---
 
 Один из самых молодых курортов на мексиканском побережье Тихого океана. Икстапа привлекает туристов замечательными условиями.

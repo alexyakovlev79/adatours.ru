@@ -22,7 +22,6 @@ gallery:
     alt: "На фото: Пунта Аренас в Чили (Патагония)"
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22688_15.jpg"
     alt: "На фото: Пунта Аренас в Чили (Патагония)"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -31,6 +30,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-v-patagonii-v-chili-punta-arenas-i-ognennaya-zemlya"
 sourceSnapshot: "https://drive.google.com/file/d/1SHjV6jtfTMtdQGVCNX13aNbzEqgWNN1n/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 ## Магелланов пролив и пингвины: что посмотреть в Пунта-Аренасе, Чили

@@ -10,9 +10,6 @@ searchAliases:
 country: country_argentina
 destination: destination_argentina_puerto_iguasu
 destinationName: "Пуэрто-Игуасу"
-themes:
-  - adventure
-  - nature
 language: []
 priceFrom: 96
 currency: USD
@@ -31,6 +28,7 @@ notes:
   - "Рекомендуются средство от насекомых, кроссовки и удобная одежда."
 sourceSnapshot: page_texts_original/neveroyatnaya-argentina__b36cf7e0.md
 updatedAt: 2026-10-02
+themes: ["theme_adventure","theme_wildlife"]
 ---
 
 На лодке Zodiac маршрут проходит около 6 км по нижнему течению реки Игуасу через пороги и каньон, затем программа продолжается на открытых полноприводных автомобилях через джунгли.

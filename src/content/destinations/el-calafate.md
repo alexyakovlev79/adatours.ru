@@ -14,10 +14,6 @@ hero:
 gallery:
   - src: /media/home/patagonia-enhanced-20260930.webp
     alt: Горный пейзаж Патагонии
-themes:
-  - nature
-  - adventure
-  - luxury
 relatedDestinations:
   - destination_argentina_buenos_aires
   - destination_argentina_mendoza
@@ -46,6 +42,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/argentinskaya-patagoniya-i-gorod-ehl-kalafate
 sourceSnapshot: page_texts_original/argentinskaya-patagoniya-i-gorod-ehl-kalafate__cf077830.md
 updatedAt: 2026-09-24
+themes: ["theme_wildlife","theme_adventure"]
 ---
 
 Эль-Калафате – удобная база для поездок к ледникам Национального парка Лос-Гласьярес. Главная точка здесь – Перито-Морено, но программу можно дополнить и другими природными экскурсиями Патагонии.

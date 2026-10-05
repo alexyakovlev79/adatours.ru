@@ -8,7 +8,6 @@ countries:
 - country_brazil
 destinations:
 - destination_brazil_rio
-themes: []
 audiences: []
 route: []
 dates:
@@ -152,6 +151,8 @@ routeCountries:
 - country_brazil
 routeDestinations:
 - destination_brazil_rio
+primaryThemes: ["theme_events"]
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 **Длительность:** 5 дней / 4 ночи

@@ -10,7 +10,6 @@ searchAliases:
 country: country_peru
 destination: destination_peru_parakas
 destinationName: "Паракас"
-themes: [nature, wildlife]
 language: []
 hero:
   src: /media/excursions/parakas-i-ostrova-ballestas/hero-enhanced-20261001.webp
@@ -26,6 +25,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-09-30
+themes: ["theme_wildlife"]
 ---
 
 Рано утром вы выезжаете из Лимы в Паракас. В 8:00 катер отправляется из порта к Андскому Канделябру Паракаса и островам Бальестас.

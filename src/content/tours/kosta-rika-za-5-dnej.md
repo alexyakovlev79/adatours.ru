@@ -12,7 +12,6 @@ destinations:
 - destination_costa_rica_tortuguero
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -129,6 +128,8 @@ routeDestinations:
 - destination_costa_rica_tortuguero
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
+primaryThemes: ["theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 5 дней / 4 ночи  

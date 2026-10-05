@@ -20,7 +20,6 @@ gallery:
     alt: "На фото: город Ливингстон в Гватемале"
   - src: "/media/destinations/livingston/gallery-4-enhanced-20261003.webp"
     alt: "На фото: город Ливингстон в Гватемале"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -29,6 +28,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1RBZT2FBMH2ftWKUVzYMn7Ahnst1pW64b/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ### Ливингстон-городок на реке Рио-Дульче

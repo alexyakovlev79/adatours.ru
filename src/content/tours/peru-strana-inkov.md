@@ -17,7 +17,6 @@ destinations:
 - destination_peru_chinchero
 - destination_peru_urubamba
 - destination_peru_moraj
-themes: []
 audiences: []
 route:
 - Лима
@@ -148,6 +147,8 @@ routeDestinations:
 - destination_peru_chinchero
 - destination_peru_urubamba
 - destination_peru_moraj
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

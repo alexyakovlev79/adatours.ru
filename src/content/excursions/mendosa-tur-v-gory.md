@@ -10,7 +10,6 @@ searchAliases:
   - Аконкагуа из Мендосы
 country: country_argentina
 destination: destination_argentina_mendoza
-themes: [nature, mountains, adventure]
 duration: 6 часов
 format: "Групповая экскурсия"
 language:
@@ -55,6 +54,7 @@ updatedAt: 2026-10-02
 relatedDestinations:
   - destination_argentina_akonkagua
   - destination_argentina_uspalyata
+themes: ["theme_wildlife"]
 ---
 
 Горная экскурсия из Мендосы проходит через долину реки Мендоса к Андам и Аконкагуа. За шесть часов в программе соединяются виды на Кордон-дель-Плата и Потрерильос, историческая Успальята, горные поселения, мост Инков и смотровая площадка у Аконкагуа.

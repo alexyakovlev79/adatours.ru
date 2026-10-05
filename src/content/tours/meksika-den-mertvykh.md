@@ -14,7 +14,6 @@ destinations:
 - destination_mexico_uakechula
 - destination_mexico_atliksko
 - destination_mexico_mikskik
-themes: []
 audiences: []
 route:
 - Мехико
@@ -200,6 +199,8 @@ routeDestinations:
 - destination_mexico_uakechula
 - destination_mexico_atliksko
 - destination_mexico_mikskik
+primaryThemes: ["theme_events","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 9 дней / 8 ночей, с 27 октября по 4 ноября 2026 года  

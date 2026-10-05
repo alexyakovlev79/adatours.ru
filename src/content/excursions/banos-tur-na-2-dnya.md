@@ -9,7 +9,6 @@ country: "country_ecuador"
 destination: "destination_ecuador_banos"
 destinationName: "Баньос"
 relatedDestinations: []
-themes: []
 duration: "2 дня / 1 ночь"
 language:
   - "Русский"
@@ -44,6 +43,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/banos-tur-na-2-dnya"
 sourceSnapshot: "https://drive.google.com/file/d/1I8yfLQNxzo-r6zP-U45WyHscH1hKpcRd/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 ## Баньос — это рай для любителей природы и искателей острых ощущений!

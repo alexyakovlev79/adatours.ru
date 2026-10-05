@@ -19,7 +19,6 @@ destinations:
 - destination_brazil_reka_sukuri
 - destination_brazil_vodopady_reki_mimozo
 - destination_brazil_peschera_abismo_anhumas
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (4 ночи)
@@ -391,6 +390,8 @@ routeDestinations:
 - destination_brazil_golubaya_peschera_bonito
 - destination_brazil_reka_sukuri
 - destination_brazil_vodopady_reki_mimozo
+primaryThemes: ["theme_events","theme_wildlife"]
+themes: ["theme_beach","theme_culture"]
 ---
 
 **Длительность:** 16 дней / 15 ночей  

@@ -19,7 +19,6 @@ destinations:
 - destination_mexico_chichen_ica
 - destination_mexico_senot_ik_kil
 - destination_mexico_rivera_majya
-themes: []
 audiences: []
 route:
 - Канкун
@@ -178,6 +177,8 @@ routeDestinations:
 - destination_mexico_chichen_ica
 - destination_mexico_senot_ik_kil
 - destination_mexico_rivera_majya
+primaryThemes: ["theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 6 дней / 5 ночей  

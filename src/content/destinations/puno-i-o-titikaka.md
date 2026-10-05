@@ -30,7 +30,6 @@ gallery:
     alt: "На фото: город Пуно в Перу"
   - src: "https://brasiltours.ru/image/catalog/category/9/0/904991188_e3b474c3fd_o.jpg"
     alt: "На фото: город Пуно в Перу"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -39,6 +38,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ozero-titikaka-i-puno-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1oHNNkrMFj1j7DkWF7Zkc_mgLVH5dFHvm/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 ## Плавучие острова Урос и лодки из тоторы: что посмотреть на озере Титикака

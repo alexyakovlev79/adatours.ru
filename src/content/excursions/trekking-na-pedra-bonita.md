@@ -7,7 +7,6 @@ title: Треккинг на Педра-Бонита
 country: country_brazil
 lead: Педра-Бонита находится в районе леса Тижука. Подъем занимает около **40 минут** и относится к сравнительно легким треккинговым
   маршрутам.
-themes: []
 language: []
 route: []
 included: []
@@ -17,6 +16,7 @@ updatedAt: '2026-10-02'
 destination: destination_brazil_rio
 destinationName: Рио-де-Жанейро
 sourceSnapshot: https://drive.google.com/file/d/13cWCvwZ-eLhD15Eoqb4sq4ApQpOnz-G5/view?usp=drivesdk
+themes: ["theme_adventure","theme_wildlife"]
 ---
 
 Педра-Бонита находится в районе леса Тижука. Подъем занимает около **40 минут** и относится к сравнительно легким треккинговым маршрутам.

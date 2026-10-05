@@ -9,7 +9,6 @@ countries:
 destinations:
 - destination_brazil_rio
 - destination_brazil_angra_dos_reis
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (4 ночи)
@@ -270,6 +269,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_angra_dos_reis
+primaryThemes: ["theme_events","theme_beach"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 12 дней / 11 ночей  

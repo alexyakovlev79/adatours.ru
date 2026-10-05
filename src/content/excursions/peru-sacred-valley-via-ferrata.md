@@ -7,7 +7,6 @@ title: Виа Феррата в Священной долине
 country: country_peru
 lead: Маршрут проходит по отвесной скале высотой около **300 метров**. На скале установлены металлические лестницы и стальные
   анкеры, страховка фиксируется на каждом участке.
-themes: []
 language: []
 route: []
 included: []
@@ -18,6 +17,7 @@ destination: destination_peru_svyaschennaya_dolina_inkov
 destinationName: Священная долина инков
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1BtRjZQrP4rvdwc5mscbeOgdGRzkHCjWx/view?usp=drivesdk
+themes: ["theme_adventure"]
 ---
 
 Маршрут проходит по отвесной скале высотой около **300 метров**. На скале установлены металлические лестницы и стальные анкеры, страховка фиксируется на каждом участке.

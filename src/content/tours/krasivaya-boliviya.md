@@ -18,7 +18,6 @@ destinations:
 - destination_bolivia_ostrov_inka_huasi
 - destination_bolivia_kokesa
 - destination_bolivia_vulkan_tunupa
-themes: []
 audiences: []
 route:
 - Ла-Пас
@@ -195,6 +194,8 @@ routeDestinations:
 - destination_bolivia_ostrov_inka_huasi
 - destination_bolivia_kokesa
 - destination_bolivia_vulkan_tunupa
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 7 дней / 6 ночей  

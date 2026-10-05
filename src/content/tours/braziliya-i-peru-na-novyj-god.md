@@ -30,7 +30,6 @@ destinations:
 - destination_peru_pukara
 - destination_peru_andaguaililyas
 - destination_peru_pereval_la_raya
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -383,6 +382,8 @@ routeDestinations:
 - destination_peru_pukara
 - destination_peru_andaguaililyas
 - destination_peru_pereval_la_raya
+primaryThemes: ["theme_events","theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 15 дней / 14 ночей  

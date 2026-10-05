@@ -11,7 +11,6 @@ searchAliases:
 country: country_uruguay
 destination: destination_uruguay_montevideo
 destinationName: "Монтевидео"
-themes: [culture, city]
 duration: 4 часа
 language:
   - английский
@@ -47,6 +46,7 @@ notes:
 sourceUrl: https://brasiltours.ru/peshij-tur-po-istoricheskomu-tsentru
 sourceSnapshot: page_texts_newstep/Excursions/peshij-tur-po-istoricheskomu-tsentru__86badd59.md
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Прогулка начинается в центральной части Монтевидео и проходит через исторические площади и улицы Старого города.

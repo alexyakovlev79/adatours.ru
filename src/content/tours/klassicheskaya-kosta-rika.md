@@ -13,7 +13,6 @@ destinations:
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_zapovednik_kano_negro
 - destination_costa_rica_monteverde_santa_elena
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -128,6 +127,8 @@ routeDestinations:
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_zapovednik_kano_negro
 - destination_costa_rica_monteverde_santa_elena
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_gastronomy_wine"]
 ---
 
 **Длительность:** 6 дней / 5 ночей  

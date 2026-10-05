@@ -28,7 +28,6 @@ destinations:
 - destination_peru_arekipa
 - destination_peru_linii_naska_i_ostrova_balestas
 - destination_peru_parakas
-themes: []
 audiences: []
 route:
 - Лима
@@ -391,6 +390,8 @@ routeDestinations:
 - destination_peru_arekipa
 - destination_peru_linii_naska_i_ostrova_balestas
 - destination_peru_parakas
+primaryThemes: ["theme_events","theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 Отдельная часть путешествия посвящена празднику Святой Канделярии в Пуно. В начале февраля город наполняют процессии, музыка, костюмированный парад и традиционный танец дьявола.

@@ -9,22 +9,6 @@ summary: >-
 hero:
   src: /media/themes/plyazhnyj-otdyh/hero-enhanced-20261001.webp
   alt: Пляж на побережье Латинской Америки
-featuredCountries:
-  - country_brazil
-  - country_venezuela
-  - country_honduras
-  - country_dominican_republic
-  - country_colombia
-  - country_costa_rica
-  - country_cuba
-  - country_mexico
-  - country_nicaragua
-  - country_panama
-  - country_suriname
-  - country_uruguay
-  - country_french_guiana
-  - country_el_salvador
-
 sourceUrl: https://brasiltours.ru/plyazhnye-tury
 sourceSnapshot: page_texts_original/plyazhnye-tury__bc5e8bbc.md
 updatedAt: 2026-10-02

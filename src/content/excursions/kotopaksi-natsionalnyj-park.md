@@ -9,7 +9,6 @@ country: "country_ecuador"
 destination: "destination_ecuador_kito_vulkan_kotopahi"
 destinationName: "Кито & вулкан Котопахи"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language:
   - "Русский"
@@ -43,6 +42,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/kotopaksi-natsionalnyj-park"
 sourceSnapshot: "https://drive.google.com/file/d/1OAumLZcrcO23lwaTk7VRA8uAFBzzEBHF/view?usp=drivesdk"
 updatedAt: 2026-10-02
+themes: ["theme_wildlife"]
 ---
 
 ## Национальный парк Котопакси

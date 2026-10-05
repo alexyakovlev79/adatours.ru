@@ -9,7 +9,6 @@ searchAliases:
   - Прогулка на лодке по Бузиосу
 country: country_brazil
 destination: destination_brazil_buzios
-themes: []
 language: []
 hero:
   src: /media/excursions/morskaya-progulka-po-buziosu/hero-enhanced-20261001.webp
@@ -22,6 +21,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-10-01
+themes: ["theme_beach"]
 ---
 
 Лодка проходит мимо островов и закрытых бухт, к которым трудно добраться с суши.

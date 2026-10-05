@@ -14,7 +14,6 @@ destinations:
 - destination_brazil_praia_do_forte
 - destination_brazil_iguacu
 - destination_argentina_buenos_aires
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -278,6 +277,8 @@ routeDestinations:
 - destination_brazil_praia_do_forte
 - destination_brazil_iguacu
 - destination_argentina_buenos_aires
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 14 дней / 13 ночей  

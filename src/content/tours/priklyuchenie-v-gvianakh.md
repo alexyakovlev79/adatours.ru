@@ -25,7 +25,6 @@ destinations:
 - destination_suriname_atoni
 - destination_suriname_vodopady_ferullasi
 - destination_suriname_niv_avrora
-themes: []
 audiences: []
 route:
 - Гайана
@@ -227,6 +226,8 @@ routeDestinations:
 - destination_suriname_atoni
 - destination_suriname_vodopady_ferullasi
 - destination_suriname_niv_avrora
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 9 дней / 8 ночей  

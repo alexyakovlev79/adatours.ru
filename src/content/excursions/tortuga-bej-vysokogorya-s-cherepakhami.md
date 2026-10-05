@@ -9,7 +9,6 @@ country: "country_ecuador"
 destination: "destination_ecuador_galapagosskie_ostrova"
 destinationName: "Галапагосские острова"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language:
   - "Английский"
@@ -51,6 +50,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/tortuga-bej-vysokogorya-s-cherepakhami"
 sourceSnapshot: "https://drive.google.com/file/d/1TE5gnqEnJJm4PjlraebiykNQw82c03Pj/view?usp=drivesdk"
 updatedAt: 2026-10-02
+themes: ["theme_wildlife","theme_beach"]
 ---
 
 ## Бухта Тортуга

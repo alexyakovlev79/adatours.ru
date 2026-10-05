@@ -13,9 +13,6 @@ countries:
 destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_tigre
-themes:
-  - mice
-  - culture
 audiences:
   - corporate
   - mice
@@ -128,6 +125,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/kongress-v-argentine
 sourceSnapshot: page_texts_original/kongress-v-argentine__03250e94.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 ## Деловая программа и Буэнос-Айрес

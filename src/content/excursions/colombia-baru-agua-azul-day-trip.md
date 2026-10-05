@@ -7,7 +7,6 @@ title: 'Остров Бару: пляжный день в Agua Azul'
 country: country_colombia
 lead: Можно отправиться на остров Бару, расположенный примерно в 40 минутах от Картахены. Здесь золотистый песок, теплая прозрачная
   вода и спокойный пляжный отдых после насыщенной экскурсионной части.
-themes: []
 language: []
 route: []
 included: []
@@ -19,6 +18,7 @@ destinationName: Остров Бару
 relatedDestinations:
 - destination_colombia_kartahena
 sourceSnapshot: https://drive.google.com/file/d/1UjKSHFGvWbdcPhH-fjK43diBaEf3DFDy/view?usp=drivesdk
+themes: ["theme_beach"]
 ---
 
 Можно отправиться на остров Бару, расположенный примерно в 40 минутах от Картахены. Здесь золотистый песок, теплая прозрачная вода и спокойный пляжный отдых после насыщенной экскурсионной части.

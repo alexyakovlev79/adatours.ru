@@ -10,7 +10,6 @@ searchAliases:
   - Quito city tour
 country: country_ecuador
 destination: destination_ecuador_kito_vulkan_kotopahi
-themes: []
 duration: 8 часов
 language:
   - русский
@@ -49,6 +48,7 @@ notes:
 sourceUrl: https://brasiltours.ru/kito-siti-tur-na-ves-den
 sourceSnapshot: page_texts_newstep/Excursions/kito-siti-tur-na-ves-den__65c239a5.md
 updatedAt: 2026-09-30
+themes: ["theme_culture"]
 ---
 
 Пешеходная часть начинается на площади Независимости, которую также называют Пласа-Гранде. Здесь находятся Президентский дворец, Кафедральный собор Кито и муниципальное здание.

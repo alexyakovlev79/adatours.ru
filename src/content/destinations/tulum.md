@@ -8,7 +8,6 @@ countryId: "country_mexico"
 destinationType: "resort"
 summary: "Руины города майя над Карибским морем, поселок Тулум Пуэбло и пляжи восточного побережья Юкатана с отелями и подводным миром."
 searchAliases: []
-themes: []
 hero: {"src":/media/countries/mexico/featureBands-2-enhanced-20261002.webp,"alt":"На фото: морской курорт Тулум в Мексике"}
 gallery: [{"src":"/media/destinations/tulum/gallery-1-enhanced-20261004.webp","alt":"На фото: морской курорт Тулум в Мексике"},{"src":"/media/destinations/tulum/gallery-2-enhanced-20261004.webp","alt":"На фото: морской курорт Тулум в Мексике"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-morskoj-kurort-tulum-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1iCbTN_dLNkCztJVBRLKu8QzEclZFWNn8/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_beach","theme_wildlife"]
 ---
 
 ## Тулум - лучший туристический центр Юкатана!

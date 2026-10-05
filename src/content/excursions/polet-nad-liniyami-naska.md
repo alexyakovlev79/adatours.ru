@@ -10,7 +10,6 @@ searchAliases:
 country: country_peru
 destination: destination_peru_linii_naska_i_ostrova_balestas
 destinationName: "Линии Наска и острова Бальестас"
-themes: [culture, adventure]
 duration: 35 минут
 language: []
 hero:
@@ -24,6 +23,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-09-30
+themes: ["theme_culture"]
 ---
 
 Канделябр Паракаса часто связывают с линиями Наска. После морской прогулки маршрут продолжается к аэродрому. На небольшом самолете вы подниметесь над пустыней Наска.

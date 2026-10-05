@@ -8,7 +8,6 @@ countryId: "country_mexico"
 destinationType: "island"
 summary: "Косумель находится к востоку от полуострова Юкатан. Остров известен коралловыми рифами и дайвингом; отели и дайвинг-клубы сосредоточены на его западном побережье."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/cozumel/hero-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"}
 gallery: [{"src":"/media/destinations/cozumel/gallery-1-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-2-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-3-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-4-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-5-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-6-enhanced-20261005.webp","alt":"На фото: остров Косумель в Мексике"},{"src":"/media/destinations/cozumel/gallery-7-enhanced-20261004.webp","alt":"На фото: остров Косумель в Мексике"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-morskoj-kurort-kosumel-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1YPiGZDs0yvv8stZu4w28vGBowvy8OzFN/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_diving"]
 ---
 
 ## Косумель - остров - курорт Мексики!

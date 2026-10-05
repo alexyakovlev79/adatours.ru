@@ -14,7 +14,6 @@ destinations:
 - destination_mexico_kabah
 - destination_mexico_chichen_ica
 - destination_mexico_kankun
-themes: []
 audiences: []
 route:
 - Мехико
@@ -185,6 +184,8 @@ routeDestinations:
 - destination_mexico_kabah
 - destination_mexico_chichen_ica
 - destination_mexico_kankun
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

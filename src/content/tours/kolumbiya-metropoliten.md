@@ -11,7 +11,6 @@ destinations:
 - destination_colombia_sipakira
 - destination_colombia_medelin
 - destination_colombia_guatape
-themes: []
 audiences: []
 route:
 - Богота
@@ -142,6 +141,8 @@ routeDestinations:
 - destination_colombia_sipakira
 - destination_colombia_medelin
 - destination_colombia_guatape
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

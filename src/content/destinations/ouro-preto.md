@@ -12,9 +12,6 @@ hero:
   src: /media/destinations/ouro-preto/hero-enhanced-20261001.webp
   alt: Исторический центр Ору-Прету в штате Минас-Жерайс
 gallery: []
-themes:
-  - culture
-  - history
 relatedDestinations:
   - destination_brazil_gold_route
   - destination_brazil_rio
@@ -45,6 +42,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya__226a4f58.md
 updatedAt: 2026-09-25
+themes: ["theme_culture"]
 ---
 
 Ору-Прету находится в штате Минас-Жерайс и тесно связан с эпохой добычи золота. В старом центре сохранились барочные церкви, музеи, площади и плотная застройка на холмистом рельефе.

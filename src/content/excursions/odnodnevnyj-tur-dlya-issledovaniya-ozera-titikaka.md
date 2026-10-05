@@ -9,7 +9,6 @@ country: "country_peru"
 destination: "destination_peru_puno_i_o_titikaka"
 destinationName: "Пуно и о.Титикака"
 relatedDestinations: []
-themes: []
 duration: "Тур на весь день"
 language:
   - "Английский"
@@ -45,6 +44,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka"
 sourceSnapshot: "https://drive.google.com/file/d/1MFwiljj72VAgw-NwEEN-x-9qBNWJLJVT/view?usp=drivesdk"
 updatedAt: 2026-10-02
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 ## Однодневный тур на озеро Титикака

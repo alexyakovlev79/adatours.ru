@@ -1,4 +1,5 @@
 import { isActiveEntity, archiveById, archiveEntries, activeReplacementId } from './archive.mjs';
+import { validateInterestContent } from './interest-model.mjs';
 import { getCollection } from 'astro:content';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { extname, join, resolve, sep } from 'node:path';
@@ -40,7 +41,7 @@ async function validateContent(): Promise<void> {
     getCollection('excursions'), getCollection('themes'), getCollection('cases'),
     getCollection('people'), getCollection('articles'),
   ]);
-  const errors: string[] = [];
+  const errors: string[] = validateInterestContent({ countries, destinations, tours, excursions, themes });
   const rows = [...countries, ...destinations, ...tours, ...excursions, ...themes, ...cases, ...people, ...articles];
   const publishedRouteById = new Map<string, string>();
   for (const { data } of countries.filter(({ data }) => isPublished(data))) publishedRouteById.set(data.id, countryPath(data));

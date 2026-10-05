@@ -10,7 +10,6 @@ searchAliases:
   - Дегустация колумбийского кофе
 country: country_colombia
 destination: destination_colombia_pereira
-themes: [gastronomy, coffee]
 duration: 5 часов
 language:
   - английский
@@ -44,6 +43,7 @@ notes:
 sourceUrl: https://brasiltours.ru/kofejnyj-tur-v-perejra
 sourceSnapshot: page_texts_newstep/Excursions/kofejnyj-tur-v-perejra__c83cd958.md
 updatedAt: 2026-10-02
+themes: ["theme_gastronomy_wine"]
 ---
 
 Эта экскурсия посвящена колумбийскому кофе — его вкусу, аромату и способам приготовления. За пять часов вы посетите кофейную ферму в районе Перейры, познакомитесь с тем, как оценивают баланс, полноту, аромат и кислотность напитка, и завершите знакомство дегустацией.

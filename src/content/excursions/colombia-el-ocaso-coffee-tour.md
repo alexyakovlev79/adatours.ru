@@ -19,6 +19,7 @@ hero:
 included:
 - Знакомство с производством кофе и дегустация по программе.
 notIncluded: []
+themes: ["theme_gastronomy_wine"]
 ---
 
 

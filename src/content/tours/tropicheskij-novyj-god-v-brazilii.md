@@ -14,7 +14,6 @@ destinations:
 - destination_brazil_jericoacoara
 - destination_brazil_porto_seguro
 - destination_brazil_salvador
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (3 ночи)
@@ -208,6 +207,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_buzios
+primaryThemes: ["theme_events","theme_beach"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 10 дней / 9 ночей  

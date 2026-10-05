@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_belo_horizonte"
 destinationName: "Белу-Оризонти"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 200
 currency: "USD"
@@ -27,6 +26,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/siti-tur-po-belu-orizonti"
 sourceSnapshot: "https://drive.google.com/file/d/1gU_rpfqL-M3GA-LqqZHp3NaQdXd6BQrb/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Стоимость экскурсии — $200 на человека.

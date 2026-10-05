@@ -30,7 +30,6 @@ gallery:
     alt: "На фото: столица Чили. город Сантьяго-де-Чили"
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN13826_3.jpg"
     alt: "На фото: столица Чили. город Сантьяго-де-Чили"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -39,6 +38,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-chili-gorod-santyago-de-chili"
 sourceSnapshot: "https://drive.google.com/file/d/1PPhm9bIJmkatTpBtRFi2cvY7opZ1Wman/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture","theme_gastronomy_wine"]
 ---
 
 ## Пласа-де-Армас и дворец Ла-Монеда: что посмотреть в Сантьяго, Чили

@@ -9,7 +9,6 @@ country: "country_chile"
 destination: "destination_chile_punta_arenas"
 destinationName: "Пунта Аренас"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 61
 currency: "USD"
@@ -35,6 +34,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/punta-arenas-mnogoobrazie-krasot-jetogo-kraja"
 sourceSnapshot: "https://drive.google.com/file/d/1PTh4be4zEvqBlaoL4WTF2pAO4GUo2cKe/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Стоимость экскурсии — $61 на человека.

@@ -33,7 +33,6 @@ destinations:
 - destination_peru_uaka_rahada
 - destination_peru_parakas
 - destination_peru_linii_naska_i_ostrova_balestas
-themes: []
 audiences: []
 route:
 - Лима
@@ -435,6 +434,8 @@ routeDestinations:
 - destination_peru_uanchako
 - destination_peru_chiklajo
 - destination_peru_uaka_rahada
+primaryThemes: ["theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 14 дней / 13 ночей  

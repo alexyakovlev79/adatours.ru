@@ -24,7 +24,6 @@ gallery:
     alt: "На фото: город Гватемала-Сити (столица страны)"
   - src: "/media/destinations/guatemala-city/gallery-6-enhanced-20261003.webp"
     alt: "На фото: город Гватемала-Сити (столица страны)"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -33,6 +32,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-gvatemala-siti-stolica-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1W5cRUODYUcD8HkzEJWl7LyxZxYVuth26/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ### Гватемала-Сити- визитная карточка Гватемалы!

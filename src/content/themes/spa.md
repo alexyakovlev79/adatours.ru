@@ -9,12 +9,6 @@ summary: >-
 hero:
   src: /media/themes/spa/hero-enhanced-20261002-v2.webp
   alt: SPA и wellness отдых
-featuredCountries:
-  - country_brazil
-  - country_argentina
-  - country_peru
-  - country_uruguay
-  - country_el_salvador
 sourceUrl: https://brasiltours.ru/spa-zdorove
 sourceSnapshot: page_texts_original/spa-zdorove__f65becfb.md
 updatedAt: 2026-10-02

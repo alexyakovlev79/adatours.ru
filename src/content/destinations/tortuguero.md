@@ -10,7 +10,6 @@ summary: "Тортугуэро, Земля черепах, охраняет ме
 searchAliases: []
 hero: {"src":"/media/destinations/tortuguero/hero-enhanced-20261004.webp","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"}
 gallery: [{"src":"/media/destinations/tortuguero/gallery-1-enhanced-20261004.webp","alt":"На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике"},{"src":"/media/destinations/tortuguero/gallery-2-enhanced-20261004.webp","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"},{"src":"/media/destinations/tortuguero/gallery-3-enhanced-20261004.webp","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/tury-v-nacionalnyj-park-torgurego-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1KuhWnwXaFuagtKCCM7ZxUgTFSq4OnWBe/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 ## Черепахи, каналы и туканы: что посмотреть в Тортугеро

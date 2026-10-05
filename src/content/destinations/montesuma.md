@@ -10,7 +10,6 @@ summary: "Монтесума, деревушка на берегу океана,
 searchAliases: []
 hero: {"src":"/media/destinations/montezuma/hero-enhanced-20261003.webp","alt":"На фото: обезьяны капуцины в Монтесума в Коста-Рике"}
 gallery: [{"src":"/media/destinations/montezuma/gallery-1-enhanced-20261003.webp","alt":"На фото: пляж в Монтесума в Коста-Рике"},{"src":"/media/destinations/montezuma/gallery-2-enhanced-20261003.webp","alt":"На фото: пляж в Монтесума в Коста-Рике"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-montesuma-v-kosta-rike-poluostrov-nikoya"
 sourceSnapshot: "https://drive.google.com/file/d/1l__E6-3qQ1OCnBJ1NSfGYb3o_t-T67Tm/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_wildlife"]
 ---
 
 ## Монтесума -живописная деревушка в Коста Рике

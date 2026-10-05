@@ -8,7 +8,6 @@ countryId: "country_nicaragua"
 destinationType: "city"
 summary: "Бывшая столица Никарагуа: руины старого города, собор Катедраль-де-ла-Асунсьон, музеи Рубена Дарио и коллекции религиозной живописи."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/leon/hero-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"}
 gallery: [{"src":"/media/destinations/leon/gallery-1-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-2-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-3-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-4-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-5-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-6-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-7-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_23_29.jpg","alt":"На фото: город Леон в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_25_9.jpg","alt":"На фото: город Леон в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_24_14.jpg","alt":"На фото: город Леон в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_27_6.jpg","alt":"На фото: город Леон в Никарагуа"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-leon-v-nikaragua"
 sourceSnapshot: "https://drive.google.com/file/d/1tOlJhzWK0-xRv5r-sQmNOBighpqNSziU/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Леон -старый и новый город

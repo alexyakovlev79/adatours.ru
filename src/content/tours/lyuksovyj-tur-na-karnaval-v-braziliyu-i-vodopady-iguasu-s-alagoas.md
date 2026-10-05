@@ -14,7 +14,6 @@ destinations:
 - destination_brazil_masejo
 - destination_brazil_alagoas
 - destination_brazil_angra_dos_reis
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро, 5 ночей
@@ -383,6 +382,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_masejo
 - destination_brazil_alagoas
+primaryThemes: ["theme_events","theme_beach"]
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 **Длительность:** 11 дней / 10 ночей

@@ -29,11 +29,6 @@ destinations:
   - destination_argentina_ozero_argentino
   - destination_argentina_puerto_iguasu
   - destination_brazil_iguacu
-themes:
-  - adventure
-  - nature
-  - culture
-  - wildlife
 audiences: []
 format: "Тур по Аргентине"
 durationDays: 16
@@ -341,6 +336,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/issledovanie-argentiny
 sourceSnapshot: https://drive.google.com/file/d/1M-N5pDW1zOoSxMsohNrV1sg2OReyt2rZ/view?usp=drivesdk
 updatedAt: 2026-10-02
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 Буэнос-Айрес знакомит с аргентинской историей, танго и европейской архитектурой. В программе есть Пласа-де-Майо, Ла-Бока и Каминито, Сан-Тельмо, Пуэрто-Мадеро, Реколета и Палермо. Город открывает путешествие постепенно: от старых кварталов и портовой истории до современных набережных, широких проспектов и зеленых районов.

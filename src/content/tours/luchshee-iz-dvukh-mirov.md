@@ -15,7 +15,6 @@ destinations:
 - destination_belize_karakol
 - destination_belize_peschera_aktun_tunichil_muknal
 - destination_belize_peschera_barton_krik
-themes: []
 audiences: []
 route:
 - Сан-Игнасио
@@ -137,6 +136,8 @@ routeDestinations:
 - destination_belize_karakol
 - destination_belize_peschera_aktun_tunichil_muknal
 - destination_belize_peschera_barton_krik
+primaryThemes: ["theme_adventure","theme_culture"]
+themes: ["theme_beach","theme_wildlife"]
 ---
 
 **Длительность:** 9 дней / 8 ночей  

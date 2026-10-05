@@ -10,9 +10,6 @@ searchAliases:
   - "Ужин в пещере Эль-Калафате"
 country: country_argentina
 destination: destination_argentina_el_calafate
-themes:
-  - adventure
-  - culture
 language: []
 hero:
   src: https://brasiltours.ru/image/countries/argentina/el-calafate-adatours.jpg
@@ -29,6 +26,7 @@ sourceSnapshot: page_texts_original/prostory-patagonii-chili-i-argentina-v-odnom
 updatedAt: 2026-10-02
 relatedDestinations:
   - destination_argentina_ozero_argentino
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 Экскурсия проходит вдоль берега озера Архентино и посвящена истории региона. По пути гид рассказывает о коренных народах и первых поселенцах, которые осваивали Патагонию.

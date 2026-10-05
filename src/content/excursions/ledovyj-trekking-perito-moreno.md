@@ -9,9 +9,6 @@ searchAliases:
   - "Треккинг по леднику Перито Морено"
 country: country_argentina
 destination: destination_argentina_el_calafate
-themes:
-  - adventure
-  - nature
 language: []
 priceFrom: 500
 currency: USD
@@ -31,6 +28,7 @@ sourceSnapshot: page_texts_original/argentina-buenos-ajres-kalafate-iguasu__2214
 updatedAt: 2026-10-02
 relatedDestinations:
   - destination_argentina_lednik_perito_moreno
+themes: ["theme_adventure","theme_wildlife"]
 ---
 
 Можно дополнить день у Перито-Морено прогулкой по поверхности ледника.

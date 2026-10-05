@@ -9,7 +9,6 @@ searchAliases:
 country: country_uruguay
 destination: destination_uruguay_koloniya_del_sakramento
 destinationName: "Колония-дель-Сакраменто"
-themes: []
 language: []
 hero:
   src: https://brasiltours.ru/image/countries/uruguay/montevideo-1680.jpg
@@ -26,6 +25,7 @@ included:
 notIncluded: []
 notes: []
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Колония-дель-Сакраменто - бывший португальский город XVII века, включенный в список Всемирного наследия ЮНЕСКО благодаря своей архитектуре. Поездка начинается с переправы через Рио-де-ла-Плата.

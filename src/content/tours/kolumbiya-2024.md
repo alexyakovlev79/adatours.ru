@@ -17,7 +17,6 @@ destinations:
 - destination_colombia_guatape
 - destination_colombia_kartahena
 - destination_colombia_islas_rosario
-themes: []
 audiences: []
 route:
 - Богота, 3 ночи
@@ -294,6 +293,8 @@ routeDestinations:
 - destination_colombia_guatape
 - destination_colombia_kartahena
 - destination_colombia_islas_rosario
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_gastronomy_wine","theme_wildlife"]
 ---
 
 **Длительность:** 14 дней / 13 ночей

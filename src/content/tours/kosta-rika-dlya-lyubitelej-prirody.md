@@ -11,7 +11,6 @@ destinations:
 - destination_costa_rica_nacionalnyj_park_braulio_karrilo
 - destination_costa_rica_tortuguero
 - destination_costa_rica_la_fortuna_vulkan_arenal
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -132,6 +131,8 @@ routeDestinations:
 - destination_costa_rica_nacionalnyj_park_braulio_karrilo
 - destination_costa_rica_tortuguero
 - destination_costa_rica_la_fortuna_vulkan_arenal
+primaryThemes: ["theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

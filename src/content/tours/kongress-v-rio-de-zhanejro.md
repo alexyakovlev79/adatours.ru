@@ -8,7 +8,6 @@ countries:
 - country_brazil
 destinations:
 - destination_brazil_rio
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -146,6 +145,8 @@ routeCountries:
 - country_brazil
 routeDestinations:
 - destination_brazil_rio
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 **Длительность:** 5 дней / 4 ночи

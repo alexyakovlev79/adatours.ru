@@ -33,9 +33,6 @@ bestTime: Сезон дождей — с мая по октябрь; в оста
 currency: CUP
 languages:
   - испанский
-relatedThemes:
-  - theme_beach
-  - theme_adventure
 featureBands:
   - eyebrow: Город и история
     title: Гавана и кубинские города

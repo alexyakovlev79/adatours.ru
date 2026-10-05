@@ -8,7 +8,6 @@ countryId: "country_panama"
 destinationType: "city"
 summary: "Город на берегу океана с пляжами, барами и окружающими тропическими лесами. Колон предлагает спокойный отдых и вечерние развлечения."
 searchAliases: []
-themes: []
 hero: {"src":"https://brasiltours.ru/image/countries/panama/5.jpg","alt":"На фото: город Колон в Панаме"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN7007_8_1.jpg","alt":"На фото: город Колон в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN4156_8_1.jpg","alt":"На фото: город Колон в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN3170_10_1.jpg","alt":"На фото: город Колон в Панаме"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kolon-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1A6wfGcpW-l3ubodUTT-Ww_MM1XPgM2p4/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_wildlife"]
 ---
 
 ## Колон- колониальное очарование Панамы!

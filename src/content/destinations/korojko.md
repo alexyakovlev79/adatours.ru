@@ -18,7 +18,6 @@ gallery:
   alt: 'На фото: город Коройко в Боливии'
 - src: /media/destinations/korojko/gallery-3-enhanced-20261003.webp
   alt: 'На фото: Коройко в Боливии'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -27,6 +26,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-korojko-v-bolivii-i-doroga-smerti
 sourceSnapshot: https://drive.google.com/file/d/17_lWe09tBj77iqwT8WoFK20gGh3jTnIW/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_wildlife","theme_gastronomy_wine"]
 ---
 
 Это самый большой город в регионе Юнгас, где высокие Анды спускаются к бассейну реки Амазонка. Коройко имеет прекрасный климат. Здесь дни теплые, а ночи комфортно прохладные. В городе нет почти никакой разницы между сухим сезоном (с мая по декабрь) и дождливым сезоном (с января по апрель). Во время сезона дождей, дождь идет почти каждую ночь, утром солнце пробивается через облака и небо синеет. Это создает прекрасные условия для прогулок в городе и окрестностях.

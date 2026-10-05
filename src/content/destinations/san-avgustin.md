@@ -10,7 +10,6 @@ summary: "Археологический парк Сан-Августин хра
 searchAliases: []
 hero: {"src":"/media/destinations/san-agustin/hero-enhanced-20261003.webp","alt":"На фото: река Магдалена и Сан Августин в Колумбии"}
 gallery: []
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-arheologicheskij-gorod-san-avgustin-v-kolumbii"
 sourceSnapshot: "https://drive.google.com/file/d/1pAa7S6ZJ6pSa4xm_4O_C75brTaMUec1W/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Археологический парк и древние статуи: что посмотреть в Сан-Августине

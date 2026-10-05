@@ -25,11 +25,6 @@ bestTime: Сезон зависит от региона и маршрута
 currency: ARS
 languages:
   - испанский
-relatedThemes:
-  - theme_luxury
-  - theme_fishing
-  - theme_motorcycle
-  - theme_gastronomy_wine
 featureBands:
   - eyebrow: Столица
     title: Буэнос-Айрес

@@ -9,7 +9,6 @@ country: "country_peru"
 destination: "destination_peru_cusco"
 destinationName: "Куско"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 format: "Групповой тур"
 language:
@@ -50,6 +49,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/svyashchennaya-dolina-premium-gruppovoj-tur"
 sourceSnapshot: "https://drive.google.com/file/d/17KxquG3PoU-27m9BvGIt9Ye1gWiDdsBN/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Чинчеро, Морай и Оллантайтамбо

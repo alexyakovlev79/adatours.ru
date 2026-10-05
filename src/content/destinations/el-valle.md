@@ -8,7 +8,6 @@ countryId: "country_panama"
 destinationType: "city"
 summary: "Город в кратере потухшего вулкана, окруженный лесами и горами. В Эль Валле приезжают ради пеших маршрутов, верховой езды и водопадов."
 searchAliases: []
-themes: []
 hero: {"src":"https://brasiltours.ru/image/countries/panama/7.jpg","alt":"На фото: горный курорт Эль Валле в Панаме"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/9/3/93845615_d1f31e31af_o_1.jpg","alt":"На фото: горный курорт Эль Валле в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/1/0/1005159996_a59d820711_b_1.jpg","alt":"На фото: горный курорт Эль Валле в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/1/0/1004372412_ad3ee2ecdc_b_1.jpg","alt":"На фото: горный курорт Эль Валле в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/3/2302014521_a10ba027cc_b_1.jpg","alt":"На фото: горный курорт Эль Валле в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/0/2093114174_f9f962280e_b_1.jpg","alt":"На фото: горный курорт Эль Валле в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/4/9/498912502_fec52d13a8_b_1.jpg","alt":"На фото: горный курорт Эль Валле в Панаме"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-ehl-valle-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1xv7Pzs-WJPo02iOF0dPj3A3cQBD-mDcs/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_adventure"]
 ---
 
 ## Кальдера вулкана и золотые лягушки: что посмотреть в Эль-Валле, Панама

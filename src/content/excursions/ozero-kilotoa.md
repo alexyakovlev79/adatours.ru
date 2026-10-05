@@ -9,7 +9,6 @@ country: "country_ecuador"
 destination: "destination_ecuador_kito_vulkan_kotopahi"
 destinationName: "Кито & вулкан Котопахи"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language:
   - "Русский"
@@ -38,6 +37,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/ozero-kilotoa"
 sourceSnapshot: "https://drive.google.com/file/d/1hQ3FBIun3D_lhOyhi7MOJIPsq8imZt9Z/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 ## Озеро Килотоа — это вулканическое озеро, расположенное в западных Андах!

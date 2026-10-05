@@ -17,7 +17,6 @@ destinations:
 - destination_chile_lednik_pia
 - destination_chile_buhta_vulajya
 - destination_chile_buhta_bruks
-themes: []
 audiences: []
 route:
 - Пунта-Аренас
@@ -152,6 +151,8 @@ routeDestinations:
 - destination_chile_lednik_pia
 - destination_chile_buhta_vulajya
 - destination_chile_buhta_bruks
+primaryThemes: ["theme_cruises","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 5 дней / 4 ночи  

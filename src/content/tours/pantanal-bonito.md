@@ -14,7 +14,6 @@ destinations:
 - destination_brazil_golubaya_peschera_bonito
 - destination_brazil_reka_sukuri
 - destination_brazil_peschera_abismo_anhumas
-themes: []
 audiences: []
 route:
 - Пантанал, 2 ночи
@@ -154,6 +153,8 @@ routeDestinations:
 - destination_brazil_bonito
 - destination_brazil_golubaya_peschera_bonito
 - destination_brazil_reka_sukuri
+primaryThemes: ["theme_wildlife","theme_adventure"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

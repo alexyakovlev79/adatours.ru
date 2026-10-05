@@ -9,9 +9,6 @@ searchAliases:
 country: country_argentina
 destination: destination_argentina_ushuajya
 destinationName: "Ушуайя"
-themes:
-  - nature
-  - wildlife
 language:
   - "английский"
 priceFrom: 350
@@ -29,6 +26,7 @@ notes:
   - "Стоимость указана $350 с человека."
 sourceSnapshot: page_texts_original/vsya-argentina__2bb3b633.md
 updatedAt: 2026-10-02
+themes: ["theme_wildlife"]
 ---
 
 Дополнительно можно заказать групповую прогулку с пингвинами с англоязычным гидом. Стоимость этой опции - $350 с человека.

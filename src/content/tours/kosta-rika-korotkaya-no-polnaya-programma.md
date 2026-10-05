@@ -15,7 +15,6 @@ destinations:
 - destination_costa_rica_rio_seleste
 - destination_costa_rica_nacionalnyj_park_tenorio
 - destination_costa_rica_plajya_tamarindo
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -225,6 +224,8 @@ routeDestinations:
 - destination_costa_rica_rio_seleste
 - destination_costa_rica_nacionalnyj_park_tenorio
 - destination_costa_rica_plajya_tamarindo
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: []
 ---
 
 **Длительность:** 7 дней / 6 ночей

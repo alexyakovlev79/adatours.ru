@@ -12,7 +12,6 @@ hero:
   src: "/media/destinations/las-terrenas/hero-enhanced-20261003.webp"
   alt: "На фото: курорт Лас Терренас на Доминикане"
 gallery: []
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -21,6 +20,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/plyazhnye-tury-na-morskoj-kurort-las-terrenas-v-dominikane"
 sourceSnapshot: "https://drive.google.com/file/d/1tI-qSuzDAMNj1JcPw7QZOlPdy5EH0N2A/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_diving"]
 ---
 
 ### Лас-Терренас - курортная деревушка в Доминикане

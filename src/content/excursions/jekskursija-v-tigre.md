@@ -10,7 +10,6 @@ searchAliases:
   - Аргентинская Венеция
 country: country_argentina
 destination: destination_argentina_buenos_aires
-themes: [culture, nature]
 duration: 4 часа
 language: []
 priceFrom: 100
@@ -47,6 +46,7 @@ updatedAt: 2026-10-01
 relatedDestinations:
   - destination_argentina_san_isidro_buenos_ajres
   - destination_argentina_tigre
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 Тигре расположен примерно в 40 км от Буэнос-Айреса среди островов и протоков дельты Рио-де-ла-Плата.

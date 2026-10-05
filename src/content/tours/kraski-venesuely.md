@@ -12,7 +12,6 @@ destinations:
 - destination_venezuela_nacionalnyj_park_avila
 - destination_venezuela_kanon_kavak
 - destination_venezuela_tepuj_kuravajna
-themes: []
 audiences: []
 route:
 - Каракас
@@ -251,6 +250,8 @@ routeCountries:
 routeDestinations:
 - destination_venezuela_karakas
 - destination_venezuela_kanajma_i_vodopad_anhel
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_adventure"]
 ---
 
 **Длительность:** 6 дней / 5 ночей  

@@ -24,10 +24,6 @@ bestTime: Сезоны противоположны Северному полу�
 currency: CLP
 languages:
   - испанский
-relatedThemes:
-  - theme_adventure
-  - theme_gastronomy_wine
-  - theme_motorcycle
 featureBands:
   - eyebrow: Север Чили
     title: Сан-Педро-де-Атакама

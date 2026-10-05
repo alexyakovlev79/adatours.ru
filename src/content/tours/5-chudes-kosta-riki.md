@@ -12,7 +12,6 @@ destinations:
 - destination_costa_rica_rio_seleste
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_monteverde_santa_elena
-themes: []
 audiences: []
 route:
 - Либерия
@@ -176,6 +175,8 @@ routeDestinations:
 - destination_costa_rica_rio_seleste
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_monteverde_santa_elena
+primaryThemes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 9 дней / 8 ночей

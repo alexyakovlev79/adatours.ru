@@ -7,7 +7,6 @@ title: Винная экскурсия в долину Майпо
 country: country_chile
 lead: Вы посетите винодельню, виноградники и погреба, познакомитесь с местными сортами и продегустируете премиальные вина
   на фоне Анд.
-themes: []
 language: []
 route: []
 included: []
@@ -19,6 +18,7 @@ relatedDestinations:
 - destination_chile_santyago_de_chili
 destinationName: Долина Майпо
 sourceSnapshot: https://drive.google.com/file/d/1Ishh33VjYfqp8WOQwnpgPzhCxE8drOpI/view?usp=drivesdk
+themes: ["theme_gastronomy_wine"]
 ---
 
 Вы посетите винодельню, виноградники и погреба, познакомитесь с местными сортами и продегустируете премиальные вина на фоне Анд.

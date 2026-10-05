@@ -8,7 +8,6 @@ countries:
 - country_brazil
 destinations:
 - destination_brazil_amazon
-themes: []
 audiences: []
 route:
 - Манаус
@@ -114,6 +113,8 @@ routeCountries:
 - country_brazil
 routeDestinations:
 - destination_brazil_amazon
+primaryThemes: ["theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 4 дня / 3 ночи  

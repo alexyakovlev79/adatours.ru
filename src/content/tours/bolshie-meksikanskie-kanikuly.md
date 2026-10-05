@@ -17,7 +17,6 @@ destinations:
 - destination_mexico_chichen_ica
 - destination_mexico_kankun
 - destination_mexico_rivera_majya
-themes: []
 audiences: []
 route:
 - Мехико-Сити
@@ -195,6 +194,8 @@ routeDestinations:
 - destination_mexico_chichen_ica
 - destination_mexico_kankun
 - destination_mexico_rivera_majya
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей

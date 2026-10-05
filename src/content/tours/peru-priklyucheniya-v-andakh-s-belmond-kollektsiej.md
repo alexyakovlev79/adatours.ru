@@ -14,7 +14,6 @@ destinations:
 - destination_peru_moraj
 - destination_peru_olyantajtambo
 - destination_peru_machu_picchu
-themes: []
 audiences: []
 route:
 - Лима
@@ -142,6 +141,8 @@ routeDestinations:
 - destination_peru_moraj
 - destination_peru_olyantajtambo
 - destination_peru_machu_picchu
+primaryThemes: ["theme_culture","theme_gastronomy_wine"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

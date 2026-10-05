@@ -16,9 +16,6 @@ gallery:
     alt: Природа национального парка Ленсойс-Мараньенсес
   - src: /media/destinations/lencois-maranhenses/gallery-2-enhanced-20261001.webp
     alt: Дюны и лагуны Ленсойс-Мараньенсес
-themes:
-  - nature
-  - adventure
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -45,6 +42,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-pustynyu-lensojc-maranenses-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-pustynyu-lensojc-maranenses-v-brazilii__de947896.md
 updatedAt: 2026-09-26
+themes: ["theme_wildlife","theme_adventure"]
 ---
 
 Ленсойс-Мараньенсес запоминается почти сразу: белые дюны тянутся до горизонта, а после дождей между ними появляются пресноводные лагуны. Именно за этим сочетанием песка и воды сюда и едут.

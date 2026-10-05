@@ -9,7 +9,6 @@ searchAliases:
   - Танго с ужином
 country: country_argentina
 destination: destination_argentina_buenos_aires
-themes: []
 language: []
 hero:
   src: /media/excursions/tango-shou-s-uzhinom-v-buenos-ajrese/hero-enhanced-20261001.webp
@@ -25,6 +24,7 @@ notIncluded:
   - Услуги гида
 notes: []
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Вечером проходит танго-шоу с ужином, без гида.

@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_iguacu"
 destinationName: "Фоз-ду-Игуасу"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language: []
 priceFrom: 80
@@ -38,6 +37,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/brazilskaya-storona-vodopadov-iguasu"
 sourceSnapshot: "https://drive.google.com/file/d/1xNu26mn3zHJqxOUJ6b7l-gkhl4xDtCP9/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 ## Водопады Игуасу — вся мощь природы

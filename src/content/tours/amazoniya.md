@@ -9,7 +9,6 @@ countries:
 destinations:
 - destination_brazil_amazon
 - destination_brazil_derevnya_akazhatuba
-themes: []
 audiences: []
 route:
 - Манаус (1 ночь)
@@ -107,6 +106,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_derevnya_akazhatuba
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 4 дня / 3 ночи  

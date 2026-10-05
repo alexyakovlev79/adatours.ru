@@ -10,7 +10,6 @@ summary: "Столица Колумбии с колониальным район
 searchAliases: []
 hero: {"src":"/media/destinations/bogota/hero-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"}
 gallery: [{"src":"/media/destinations/bogota/gallery-1-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-2-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-3-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-4-enhanced-20261003.webp","alt":"На фото: колумбийский кофе"},{"src":"/media/destinations/bogota/gallery-5-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-6-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-7-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-8-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-kolumbii-gorod-bogotu"
 sourceSnapshot: "https://drive.google.com/file/d/1naj3TIYHjkN2MWbqyMlH-MoL2tyrw3_M/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Ла-Канделария и Музей золота: что посмотреть в Боготе, Колумбия

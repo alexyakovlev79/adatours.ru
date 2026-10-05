@@ -11,7 +11,6 @@ searchAliases:
 country: country_bolivia
 destination: destination_bolivia_la_pas
 destinationName: "Ла-Пас"
-themes: [culture, city]
 duration: "4–5 часов"
 language:
   - русский
@@ -49,6 +48,7 @@ notes:
 sourceUrl: https://brasiltours.ru/la-pas-siti-tur
 sourceSnapshot: page_texts_newstep/Excursions/la-pas-siti-tur__a4d06df7.md
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Ла-Пас в этой экскурсии раскрывается с разных сторон: через традиционные рынки, панорамы с канатной дороги, исторический центр и андские традиции. За несколько часов вы увидите повседневную жизнь города, его колониальную архитектуру и политический центр, а завершите маршрут на смотровой площадке Килли-Килли.

@@ -35,11 +35,6 @@ routeDestinations:
   - destination_argentina_puerto_iguasu
   - destination_argentina_lednik_perito_moreno
   - destination_argentina_nacionalnyj_park_terra_del_fuego
-themes:
-  - culture
-  - nature
-  - adventure
-  - wildlife
 audiences:
   - private
 format: "Индивидуальный тур"
@@ -290,6 +285,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/argentina-buenos-ajres-kalafate-ushuaja-iguasu
 sourceSnapshot: page_texts_original/argentina-buenos-ajres-kalafate-ushuaja-iguasu__026be0aa.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 Поездка соединяет городскую культуру, ледники, горы, озера, морское побережье Огненной Земли и субтропический лес. В свободный день в Буэнос-Айресе можно добавить Тигре, Монтевидео или программу «Фиеста Гаучо». В Ушуайе доступна отдельная поездка к колонии пингвинов на острове Мартильо.

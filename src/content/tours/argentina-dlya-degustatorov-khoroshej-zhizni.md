@@ -14,8 +14,6 @@ destinations:
   - destination_argentina_buenos_aires
   - destination_argentina_mendoza
   - destination_argentina_kanon_atuel
-themes:
-  - theme_gastronomy_wine
 audiences:
   - private
 format: "Индивидуальный гастрономический тур"
@@ -155,6 +153,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/argentina-dlya-degustatorov-khoroshej-zhizni
 sourceSnapshot: page_texts_original/argentina-dlya-degustatorov-khoroshej-zhizni__361c7748.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_gastronomy_wine"]
+themes: ["theme_culture"]
 ---
 
 ## Танго, гаучо, аргентинские стейки и вина Мендосы

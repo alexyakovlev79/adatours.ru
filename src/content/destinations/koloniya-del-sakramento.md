@@ -22,7 +22,6 @@ gallery:
     alt: "На фото: город Колония дель Сакраменто в Уругвае"
   - src: "https://brasiltours.ru/image/catalog/category/3/2/322366419_2d880995dd_b.jpg"
     alt: "На фото: город Колония дель Сакраменто в Уругвае"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -31,6 +30,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-koliniya-del-sakramento-v-urugvae"
 sourceSnapshot: "https://drive.google.com/file/d/1fjcY80qkxh7uRv0zpMw6AufXDv_pV4Wt/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 ### Колония дель Сакраменто -романтика Уругвая!

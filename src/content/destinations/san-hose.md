@@ -10,7 +10,6 @@ summary: "Сан-Хосе, столица Коста-Рики, знакомит 
 searchAliases: []
 hero: {"src":"/media/destinations/san-jose/hero-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"}
 gallery: [{"src":"/media/destinations/san-jose/gallery-1-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-2-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-3-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-4-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-5-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-6-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-7-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-8-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-hose-stolicu-kosta-riki"
 sourceSnapshot: "https://drive.google.com/file/d/105Xdj4lmpqMSIezWtP8eUQiTYP1YzJsa/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_gastronomy_wine","theme_wildlife"]
 ---
 
 ## Театры, музеи и колониальные здания: что посмотреть в Сан-Хосе

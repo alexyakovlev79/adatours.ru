@@ -17,7 +17,6 @@ destinations:
 - destination_brazil_maringa_viskondi_de_maua
 - destination_brazil_vila_da_maromba
 - destination_brazil_nacionalnyj_park_serra_da_bokajna
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро, 3 ночи
@@ -250,6 +249,8 @@ routeDestinations:
 - destination_brazil_maringa_viskondi_de_maua
 - destination_brazil_vila_da_maromba
 - destination_brazil_nacionalnyj_park_serra_da_bokajna
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 10 дней / 9 ночей  

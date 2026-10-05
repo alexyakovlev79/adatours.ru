@@ -18,7 +18,6 @@ gallery:
   alt: 'На фото: Солнечный остров в Боливии'
 - src: /media/destinations/isla-del-sol/gallery-3-enhanced-20261003.webp
   alt: 'На фото: Солнечный остров в Боливии'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -27,6 +26,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-solnechnyj-ostrov-boliviya
 sourceSnapshot: https://drive.google.com/file/d/1PpYMcMdVku0Wy2gTfibboRuVJOrAc83P/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 Солнечный остров – где находится впечатляющий Дворец Инков Пилкокайна с которого открывается вид на остров Луна.

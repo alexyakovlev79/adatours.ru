@@ -29,7 +29,6 @@ destinations:
 - destination_bolivia_nacionalnyj_park_madidi
 - destination_bolivia_kopakabana
 - destination_bolivia_ozero_titikaka_boliviya
-themes: []
 audiences: []
 route:
 - Ла-Пас
@@ -263,6 +262,8 @@ routeDestinations:
 - destination_bolivia_nacionalnyj_park_madidi
 - destination_bolivia_kopakabana
 - destination_bolivia_ozero_titikaka_boliviya
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 10 дней / 9 ночей  

@@ -22,7 +22,6 @@ gallery:
     alt: ""
   - src: "https://brasiltours.ru/image/catalog/category/a/u/autour_du_monde.1041867660.dscn0488_1.jpg"
     alt: ""
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -31,6 +30,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-takna-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/10EJFBlna8xNo-3XKAKGQcEuCktVKc3pd/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 ### Такна - южный город Перу!

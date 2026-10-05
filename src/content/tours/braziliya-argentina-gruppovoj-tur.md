@@ -15,7 +15,6 @@ destinations:
 - destination_brazil_iguacu
 - destination_argentina_buenos_aires
 - destination_brazil_derevnya_akazhatuba
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро, 3 ночи
@@ -264,6 +263,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_buenos_aires
 - destination_brazil_derevnya_akazhatuba
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 14 дней / 13 ночей

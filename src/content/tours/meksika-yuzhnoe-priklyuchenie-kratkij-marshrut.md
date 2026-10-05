@@ -21,7 +21,6 @@ destinations:
 - destination_mexico_kankun
 - destination_mexico_rivera_majya
 - destination_mexico_tulum
-themes: []
 audiences: []
 route:
 - Тустла
@@ -180,6 +179,8 @@ routeDestinations:
 - destination_mexico_merida
 - destination_mexico_chichen_ica
 - destination_mexico_kankun
+primaryThemes: ["theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 Поездка построена как последовательное движение с юга Мексики к полуострову Юкатан. Горы и облачные леса Чьяпаса сменяются джунглями вокруг Паленке, затем маршрут выходит к укрепленному Кампече и дальше идет к майянским городам Ушмаль и Чичен-Ица. Каждый день дает новую среду: лодка в глубоком каньоне, высокогорные поселения, водопады, древние руины в лесу, колониальные улицы и церемониальные центры майя.

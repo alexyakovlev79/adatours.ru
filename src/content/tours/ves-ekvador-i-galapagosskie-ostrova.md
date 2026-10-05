@@ -20,7 +20,6 @@ destinations:
 - destination_ecuador_ostrov_plasa_sur
 - destination_ecuador_mys_karrion
 - destination_ecuador_guayakil
-themes: []
 audiences: []
 route:
 - Кито
@@ -345,6 +344,8 @@ routeDestinations:
 - destination_ecuador_ostrov_plasa_sur
 - destination_ecuador_mys_karrion
 - destination_ecuador_guayakil
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 8 дней / 7 ночей  

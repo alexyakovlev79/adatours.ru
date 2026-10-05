@@ -30,7 +30,6 @@ gallery:
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
   - src: /media/destinations/bariloche/gallery-7-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -57,6 +56,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-argentinskij-kurort-bariloche
 sourceSnapshot: https://drive.google.com/file/d/1uxXs54TV0fZmXC_ac_WQI9MEEKrGzEox/view?usp=drivesdk
 updatedAt: 2026-10-02
+themes: ["theme_adventure","theme_wildlife","theme_gastronomy_wine"]
 ---
 
 Барилоче, полное название Сан-Карлос-де-Барилоче, расположен на берегу озера Науэль-Уапи в центральной части Патагонских Анд. Вокруг города находятся горные вершины, озера и леса национального парка Науэль-Уапи.

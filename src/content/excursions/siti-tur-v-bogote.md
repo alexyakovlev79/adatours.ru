@@ -11,7 +11,6 @@ searchAliases:
 country: country_colombia
 destination: destination_colombia_bogota
 destinationName: "Богота"
-themes: [culture, city]
 duration: 5 часов
 language:
   - английский
@@ -54,6 +53,7 @@ notes:
 sourceUrl: https://brasiltours.ru/siti-tur-v-bogote
 sourceSnapshot: page_texts_newstep/Excursions/siti-tur-v-bogote__0e7f6910.md
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Выезд из отеля запланирован на 9:00. Экскурсия начинается в Ла-Канделарии, историческом и культурном центре Боготы.

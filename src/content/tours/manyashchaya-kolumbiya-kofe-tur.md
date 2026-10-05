@@ -14,7 +14,6 @@ destinations:
 - destination_colombia_medelin
 - destination_colombia_guatape
 - destination_colombia_kartahena
-themes: []
 audiences: []
 route:
 - Богота
@@ -192,6 +191,8 @@ routeDestinations:
 - destination_colombia_medelin
 - destination_colombia_guatape
 - destination_colombia_kartahena
+primaryThemes: ["theme_culture","theme_gastronomy_wine"]
+themes: []
 ---
 
 **Длительность:** 10 дней / 9 ночей  

@@ -8,7 +8,6 @@ countryId: "country_mexico"
 destinationType: "resort"
 summary: "Акапулько предлагает пляжи, морские прогулки и вечерние шоу. Здесь можно увидеть форт Сан-Диего, площадь Сокало и ныряльщиков со скалы Ла-Кебрада."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/acapulco/hero-enhanced-20261004.webp","alt":"На фото: город Акапулько в Мексике"}
 gallery: [{"src":"/media/destinations/acapulco/gallery-1-enhanced-20261004.webp","alt":"На фото: город Акапулько в Мексике"},{"src":"/media/destinations/acapulco/gallery-2-enhanced-20261004.webp","alt":"На фото: город Акапулько в Мексике"},{"src":"/media/destinations/acapulco/gallery-3-enhanced-20261004.webp","alt":"На фото: город Акапулько в Мексике"},{"src":"/media/destinations/acapulco/gallery-4-enhanced-20261004.webp","alt":"На фото: город Акапулько в Мексике"},{"src":"/media/destinations/acapulco/gallery-5-enhanced-20261004.webp","alt":"На фото: город Акапулько в Мексике"},{"src":"/media/destinations/acapulco/gallery-6-enhanced-20261004.webp","alt":"На фото: город Акапулько в Мексике"},{"src":"/media/destinations/acapulco/gallery-7-enhanced-20261004.webp","alt":"На фото: город Акапулько в Мексике"},{"src":"/media/destinations/acapulco/gallery-8-enhanced-20261004.webp","alt":"На фото: город Акапулько в Мексике"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-akapulko-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1PUHD0aM9wUq6b-1wpJndMhVLIEqk_yTz/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_culture"]
 ---
 
 ## Акапулько - туристический центр Мексики

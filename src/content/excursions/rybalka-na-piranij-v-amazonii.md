@@ -7,7 +7,6 @@ title: Рыбалка на пираний в Амазонии
 country: country_brazil
 lead: В зависимости от сезона можно попробовать поймать пиранью или другие виды рыб. Гид показывает, как ведет себя пиранья
   на приманке и какие приемы помогают ее поймать.
-themes: []
 language: []
 route: []
 included: []
@@ -17,6 +16,7 @@ updatedAt: '2026-10-02'
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/19F4BDJyl8i3hIsLQVW7t8gO-cN7UNakx/view?usp=drivesdk
+themes: ["theme_fishing"]
 ---
 
 В зависимости от сезона можно попробовать поймать пиранью или другие виды рыб. Гид показывает, как ведет себя пиранья на приманке и какие приемы помогают ее поймать.

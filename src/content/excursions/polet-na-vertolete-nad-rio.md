@@ -9,7 +9,6 @@ searchAliases:
   - Вертолетная экскурсия Рио
 country: country_brazil
 destination: destination_brazil_rio
-themes: [adventure, city]
 language: []
 hero:
   src: /media/excursions/polet-na-vertolete-nad-rio/hero-enhanced-20261001.webp
@@ -29,6 +28,7 @@ notes:
 sourceUrl: https://brasiltours.ru/polet-na-vertolete-nad-rio
 sourceSnapshot: page_texts_newstep/Excursions/polet-na-vertolete-nad-rio__88f23ce0.md
 updatedAt: 2026-09-30
+themes: ["theme_culture"]
 ---
 
 Вертолетная экскурсия начинается у Сахарной Головы. После короткого инструктажа вы поднимаетесь над побережьем.

@@ -11,7 +11,6 @@ searchAliases:
 country: country_bolivia
 destination: destination_bolivia_uyuni
 destinationName: "Уюни"
-themes: [nature, adventure]
 duration: "2 дня / 1 ночь"
 format: "Джип-тур 4x4"
 language:
@@ -62,6 +61,7 @@ updatedAt: 2026-10-02
 relatedDestinations:
   - destination_bolivia_laguna_verde
   - destination_bolivia_laguna_kolorada
+themes: ["theme_wildlife","theme_adventure"]
 ---
 
 Это двухдневный маршрут на джипе 4x4 по высокогорным ландшафтам юго-западной Боливии. В программе — цветные лагуны, вулканы, термальные источники, активные гейзеры и финал на Салар де Уюни, где в сухой сезон открывается белая соляная равнина, а в сезон дождей поверхность превращается в огромное зеркало.

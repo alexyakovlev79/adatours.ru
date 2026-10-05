@@ -17,10 +17,6 @@ destinations:
   - destination_peru_machu_picchu
   - destination_argentina_puerto_iguasu
   - destination_peru_puno_i_o_titikaka
-themes:
-  - multi-country
-  - nature
-  - culture
 audiences:
   - couples
   - private
@@ -339,6 +335,8 @@ notes:
 sourceUrl: https://brasiltours.ru/3-strany-latinskoj-ameriki
 sourceSnapshot: page_texts_original/3-strany-latinskoj-ameriki__7610ce8f.md
 updatedAt: 2026-09-30
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 За 14 дней маршрут проходит через 3 страны и очень разные пейзажи. В Бразилии вы увидите Рио с Корковадо и Сахарной головой, затем проведете 2 дня у Игуасу. После Буэнос-Айреса с его старым центром и вечерним танго путешествие продолжится в Перу: Лима, Куско, Мачу-Пикчу и высокогорное озеро Титикака.

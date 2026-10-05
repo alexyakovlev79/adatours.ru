@@ -10,7 +10,6 @@ searchAliases:
   - Восковые пальмы Колумбия
 country: country_colombia
 destination: destination_colombia_pereira
-themes: [nature, culture, adventure]
 duration: 5 часов
 language:
   - английский
@@ -56,6 +55,7 @@ updatedAt: 2026-10-02
 relatedDestinations:
   - destination_colombia_dolina_kokora
   - destination_colombia_salento
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 Главная часть этой пятичасовой экскурсии — долина Кокора с облачным лесом и знаменитыми восковыми пальмами. После природной части маршрут продолжается в Саленто: здесь можно пройтись по колониальным улицам, посмотреть местные ремесла и увидеть долину со смотровой площадки.

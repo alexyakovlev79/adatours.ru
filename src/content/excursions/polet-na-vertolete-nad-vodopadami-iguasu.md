@@ -9,9 +9,6 @@ searchAliases:
   - "Полет над водопадами Игуасу"
 country: country_brazil
 destination: destination_brazil_iguacu
-themes:
-  - adventure
-  - nature
 language: []
 hero:
   src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
@@ -27,6 +24,7 @@ notes:
   - "Активность оплачивается отдельно."
 sourceSnapshot: page_texts_original/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej__374153d4.md
 updatedAt: 2026-10-02
+themes: ["theme_wildlife"]
 ---
 
 Дополнительный полет позволяет увидеть всю систему каскадов сверху.

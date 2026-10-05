@@ -10,7 +10,6 @@ destinations:
 - destination_brazil_pantanal
 - destination_brazil_kuyaba
 - destination_brazil_portu_zhofri
-themes: []
 audiences: []
 route:
 - Porto Jofre Lodge
@@ -82,6 +81,8 @@ routeDestinations:
 - destination_brazil_pantanal
 - destination_brazil_kuyaba
 - destination_brazil_portu_zhofri
+primaryThemes: ["theme_fishing"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 2-7 дней  

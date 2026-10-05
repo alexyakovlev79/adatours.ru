@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 duration: "3 часа"
 language: []
 priceFrom: 269
@@ -37,6 +36,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe"
 sourceSnapshot: "https://drive.google.com/file/d/1jPxpGmuGKZ91W5zrZs5UwS-bqO0ikBnG/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 ## Тижука - крупный тропический лес в Рио.

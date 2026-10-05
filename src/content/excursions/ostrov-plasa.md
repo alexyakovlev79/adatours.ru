@@ -9,7 +9,6 @@ country: "country_ecuador"
 destination: "destination_ecuador_galapagosskie_ostrova"
 destinationName: "Галапагосские острова"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language:
   - "Английский"
@@ -43,6 +42,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/ostrov-plasa"
 sourceSnapshot: "https://drive.google.com/file/d/1dyOO0-N-9WLybYl6Y60bSA6iCu0UFZZf/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 ## Остров Пласа -это:

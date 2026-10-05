@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 duration: "12 часов"
 language: []
 priceFrom: 1350
@@ -43,6 +42,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/okeanicheskaya-rybalka-v-rio-de-zhanejro"
 sourceSnapshot: "https://drive.google.com/file/d/1su1wbWgfIlMpiiLg0ULWp84Rnrypw8xd/view?usp=drivesdk"
 updatedAt: 2026-10-02
+themes: ["theme_fishing"]
 ---
 
 ## Океаническая рыбалка

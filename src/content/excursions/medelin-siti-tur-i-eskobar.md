@@ -11,7 +11,6 @@ searchAliases:
 country: country_colombia
 destination: destination_colombia_medelin
 destinationName: "Медельин"
-themes: [culture, city, history]
 duration: "Весь день"
 language:
   - английский
@@ -59,6 +58,7 @@ notes:
 sourceUrl: https://brasiltours.ru/medelin-siti-tur-i-eskobar
 sourceSnapshot: page_texts_newstep/Excursions/medelin-siti-tur-i-eskobar__2ad45221.md
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Медельин в этой экскурсии раскрывается через искусство, городские районы и память о сложном прошлом. В одной программе соединены скульптуры Фернандо Ботеро, Пьеблито-Пайса и Побладо, а также места, связанные с Пабло Эскобаром и последствиями наркоторговли для города и его жителей.

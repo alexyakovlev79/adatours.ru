@@ -26,7 +26,6 @@ gallery:
     alt: "На фото: город Кесальтенанго в Гватемале"
   - src: "/media/destinations/quetzaltenango/gallery-7-enhanced-20261003.webp"
     alt: "На фото: город Кесальтенанго в Гватемале"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -35,6 +34,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kesaltenango-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1-5wgGCKpSKYy3A9v81S-kK2156EK1vnA/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_spa"]
 ---
 
 Кесальтенанго - очень симпатичный городок, основанный в 1524 году. Город расположен на высокогорье, между вулканами. Кесальтенанго является базой для экскурсий в горы, к горячим источникам или в деревни местных ремесленников. Отсюда начинаются восхождения на вулканы. Сюда приезжают желающие изучать испанский язык или добровольцы волонтеры, которые оказывают содействие местным общинам майя в их развитии.

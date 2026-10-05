@@ -1,75 +1,103 @@
 ---
-import { isActiveEntity } from '../lib/archive.mjs';
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
-import EditorialStatement from '../components/editorial/EditorialStatement.astro';
-import DestinationBand from '../components/editorial/DestinationBand.astro';
+import InterestCard from '../components/editorial/InterestCard.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
-import { countryPath, themePath } from '../lib/routes';
-import { buildCountryTourCounts, compareCountriesByPopularity } from '../lib/country-popularity';
-
+import { destinationPath, excursionPath, themePath, tourPath } from '../lib/routes';
+import { withBase } from '../lib/paths';
+import { buildInterestHub, countLabel, interestTourCatalogPath, themeRelevance } from '../lib/interest-model.mjs';
 const { entry } = Astro.props;
 const d = entry.data;
-
-const [countries, tours] = await Promise.all([
-  getCollection('countries', ({ data }) =>
-    data.locale === 'ru' && isActiveEntity(data)
-  ),
-  getCollection('tours', ({ data }) =>
-    data.locale === 'ru' && isActiveEntity(data)
-  ),
+const [countries, tours, destinations, excursions, themes] = await Promise.all([
+  getCollection('countries'), getCollection('tours'), getCollection('destinations'), getCollection('excursions'), getCollection('themes'),
 ]);
-
-const countryTourCounts = buildCountryTourCounts(tours);
-const featuredCountries = d.featuredCountries
-  .map((id) => countries.find((country) => country.data.id === id))
-  .filter((country) => country !== undefined)
-  .sort(compareCountriesByPopularity(countryTourCounts));
+const hub = buildInterestHub(d.id, { countries, tours, destinations, excursions, themes });
+const countryNames = new Map(countries.map((row) => [row.data.id, row.data.name]));
+const excerpt = (text = '', max = 220) => text.length > max ? `${text.slice(0, max).replace(/\s+\S*$/, '')}…` : text;
+const experienceProps = (row) => ({
+  entityId: row.id, title: row.entry.data.name ?? row.entry.data.title,
+  text: excerpt(row.entry.data.summary ?? row.entry.data.lead), image: row.entry.data.hero?.src,
+  imageTextAlign: row.entry.data.imageTextAlign,
+  href: row.kind === 'destination' ? destinationPath(row.entry.data) : excursionPath(row.entry.data),
+  eyebrow: `${row.kind === 'destination' ? 'Место' : 'Экскурсия'} · ${countryNames.get(row.countryId) ?? ''}`,
+  meta: row.tourCount ? `${countLabel(row.tourCount)} с этим интересом` : 'Для индивидуального маршрута',
+});
+const tourCatalog = interestTourCatalogPath(d);
 ---
-
-<BaseLayout
-  title={`${d.name} по Бразилии и Латинской Америке`}
-  description={d.summary}
-  image={d.hero?.src}
-  canonical={themePath(d)}
-  hideCurrentBreadcrumbLabel={true}
-  breadcrumbs={[{ label: 'По интересам', href: '/interests/' }, { label: d.name, href: themePath(d) }]}
->
-  <Hero
-    eyebrow="По интересам"
-    title={d.name}
-    intro={d.summary}
-    image={d.hero?.src}
-    imageTextAlign={d.imageTextAlign}
-    ctaLabel="Собрать маршрут"
-  />
-
-  <EditorialStatement eyebrow="Формат поездки" text={d.summary} />
-
-  <section class="theme-copy section--tight">
-    <div class="container prose">
-      <slot />
-    </div>
-  </section>
-
-  {featuredCountries.map((country, index) => country && (
-    <DestinationBand
-      eyebrow="Страна"
-      title={country.data.name}
-      text={country.data.summary}
-      image={country.data.hero?.src}
-      imageTextAlign={country.data.imageTextAlign}
-      href={countryPath(country.data)}
-      align={index % 2 === 1 ? 'right' : 'left'}
-    />
-  ))}
-
-  <LeadForm title={`Собрать поездку: ${d.name}`} entityId={d.id} />
+<BaseLayout title={`${d.name} — туры и впечатления | Ada Tours`} description={d.summary} image={d.hero?.src}
+  canonical={themePath(d)} hideCurrentBreadcrumbLabel={true}
+  breadcrumbs={[{ label: 'По интересам', href: '/interests/' }, { label: d.name, href: themePath(d) }]}>
+  <Hero eyebrow="По интересам" title={d.name} intro={d.summary} image={d.hero?.src} imageTextAlign={d.imageTextAlign}
+    ctaLabel="Собрать поездку" ctaHref={`${themePath(d)}#request`} />
+  <div class="theme-hub" data-interest-hub={d.id} data-interest-total-tours={hub.allTours.length}>
+    {hub.stories.length > 0 && <section class="section" data-interest-section="stories">
+      <div class="container">
+        <header class="theme-heading"><p class="eyebrow">Ради этих впечатлений</p><h2>Начните с места, которое вас увлекает</h2></header>
+        <div class="theme-grid">{hub.stories.map((row, index) => <InterestCard {...experienceProps(row)} large={index === 0} />)}</div>
+      </div>
+    </section>}
+    <section class="section theme-tours" data-interest-section="tours">
+      <div class="container">
+        <header class="theme-heading"><p class="eyebrow">Готовые маршруты · {countLabel(hub.allTours.length)}</p><h2>Туры: {d.name}</h2>
+          <p>Сначала — путешествия, для которых этот интерес является главным. Затем — маршруты, где ему посвящена существенная часть программы.</p></header>
+        {hub.tours.length > 0 ? <div class="theme-grid">{hub.tours.map((tour) => <InterestCard
+          entityId={tour.data.id} title={tour.data.title} text={excerpt(tour.data.lead)} image={tour.data.hero?.src} href={tourPath(tour.data)}
+          eyebrow={themeRelevance(tour, d.id) === 2 ? 'Главный интерес поездки' : 'Часть программы'}
+          meta={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', ...(tour.data.routeCountries ?? tour.data.countries).map((id) => countryNames.get(id)).filter(Boolean)].join(' · ')}
+        />)}</div> : <p class="theme-empty">Готового тура с этим интересом в действующем каталоге пока нет. Расскажите, что для вас важно: подберём программу индивидуально.</p>}
+        {hub.allTours.length > 0 && <a class="theme-more" href={withBase(tourCatalog)}>Все туры: {d.name} <span aria-hidden="true">→</span></a>}
+      </div>
+    </section>
+    {hub.countries.length > 0 && <section class="section" data-interest-section="countries">
+      <div class="container">
+        <header class="theme-heading"><p class="eyebrow">География путешествий</p><h2>Куда поехать</h2><p>Страны, которые встречаются в действующих турах этого интереса. Каждая ссылка открывает тематическую подборку, а не общий каталог страны.</p></header>
+        <div class="theme-countries">{hub.countries.map((row) => <a class="theme-country" data-interest-item={row.entry.data.id} href={withBase(interestTourCatalogPath(d, row.entry.data))}>
+          <h3>{row.entry.data.name} <span aria-hidden="true">↗</span></h3><p>{countLabel(row.tourCount)}{row.optionalCount > 0 && ` · ${row.optionalCount} с дополнительным посещением`}</p>
+          {row.places.length > 0 && <p class="theme-country__places">{row.places.join(' · ')}</p>}
+        </a>)}</div>
+      </div>
+    </section>}
+    {hub.experiences.length > 0 && <section class="section theme-experiences" data-interest-section="experiences">
+      <div class="container"><header class="theme-heading"><p class="eyebrow">Продолжение путешествия</p><h2>Другие места и впечатления</h2></header>
+        <div class="theme-grid">{hub.experiences.map((row) => <InterestCard {...experienceProps(row)} />)}</div>
+      </div>
+    </section>}
+    {hub.relatedThemes.length > 0 && <section class="section--tight" data-interest-section="related">
+      <div class="container"><header class="theme-heading"><p class="eyebrow">Что можно совместить</p><h2>Близкие интересы</h2></header>
+        <div class="theme-related">{hub.relatedThemes.map((row) => <a data-interest-item={row.entry.data.id} href={withBase(themePath(row.entry.data))}>
+          <span>{row.entry.data.name}</span><small>{countLabel(row.tourCount)} объединяют эти интересы</small><span aria-hidden="true">↗</span>
+        </a>)}</div>
+      </div>
+    </section>}
+    <section class="section--tight theme-copy"><div class="container prose"><slot /></div></section>
+    <div id="request" data-interest-section="cta"><LeadForm title={`Собрать поездку: ${d.name}`} entityId={d.id} /></div>
+  </div>
 </BaseLayout>
-
 <style>
-  .theme-copy {
-    background: var(--color-bg);
+  .theme-hub { background: var(--color-bg); }
+  .theme-heading { max-width: 850px; margin-bottom: clamp(32px, 5vw, 64px); }
+  .theme-heading h2 { margin: 0; font: 400 clamp(2.25rem, 4.6vw, 4.4rem)/1.08 var(--font-display); overflow-wrap: anywhere; }
+  .theme-heading > p:not(.eyebrow) { font-size: 1.08rem; line-height: 1.7; margin: 24px 0 0; max-width: 700px; }
+  .theme-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(38px, 6vw, 80px) clamp(24px, 4vw, 58px); }
+  .theme-tours, .theme-experiences { background: var(--color-surface); }
+  .theme-more { display: flex; justify-content: space-between; gap: 20px; margin-top: 40px; padding-block: 22px; border-block: 1px solid var(--color-line); text-decoration: none; color: var(--color-ink); font-size: 1.15rem; }
+  .theme-more:hover, .theme-related a:hover { text-decoration: underline; text-underline-offset: .25em; }
+  .theme-countries { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 40px; }
+  .theme-country { display: block; padding-block: 28px; border-top: 1px solid var(--color-line); text-decoration: none; color: var(--color-ink); }
+  .theme-country h3 { font: 400 clamp(1.65rem, 2.8vw, 2.5rem)/1.15 var(--font-display); margin: 0 0 16px; }
+  .theme-country h3 span { font-size: .6em; }
+  .theme-country p { margin: 8px 0 0; font-size: .94rem; line-height: 1.6; }
+  .theme-country__places { color: var(--color-muted); }
+  .theme-related { border-top: 1px solid var(--color-line); }
+  .theme-related a { display: grid; grid-template-columns: 1fr auto auto; align-items: baseline; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--color-line); text-decoration: none; color: var(--color-ink); font-size: clamp(1.3rem, 2.3vw, 2rem); }
+  .theme-related small { color: var(--color-muted); font-size: .87rem; }
+  .theme-empty { max-width: 700px; font-size: 1.15rem; line-height: 1.7; }
+  #request { scroll-margin-top: 100px; }
+  @media (max-width: 759px) {
+    .theme-grid, .theme-countries { grid-template-columns: 1fr; }
+    .theme-related a { grid-template-columns: 1fr auto; gap: 12px; }
+    .theme-related small { grid-row: 2; }
+    .theme-related a > span:last-child { grid-column: 2; grid-row: 1; }
   }
 </style>

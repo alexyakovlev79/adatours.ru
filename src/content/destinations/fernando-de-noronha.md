@@ -12,11 +12,6 @@ hero:
   src: /media/destinations/fernando-de-noronha/hero-enhanced-20261001.webp
   alt: Архипелаг Фернанду-ди-Норонья в Бразилии
 gallery: []
-themes:
-  - diving
-  - beach
-  - nature
-  - wildlife
 relatedDestinations:
   - destination_brazil_recife
   - destination_brazil_porto_de_galinhas
@@ -35,6 +30,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/tury-v-fernandu-di-noronya-arhipelag-v-brazilii
 sourceSnapshot: page_texts_original/tury-v-fernandu-di-noronya-arhipelag-v-brazilii__981f2035.md
 updatedAt: 2026-09-26
+themes: ["theme_diving","theme_beach","theme_wildlife"]
 ---
 
 Фернанду-ди-Норонья стоит выделить несколько отдельных дней. Здесь большая часть поездки проходит у воды: дайвинг, снорклинг, пляжи и прогулки с видами на Атлантику.

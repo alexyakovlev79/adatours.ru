@@ -11,7 +11,6 @@ destinations:
 - destination_suriname_reka_surinam
 - destination_suriname_ruchej_varappa
 - destination_suriname_plantaciya_bakki
-themes: []
 audiences: []
 route:
 - Суринам, Парамарибо, Kabalebo Nature Resort, Верхний Суринам
@@ -132,6 +131,8 @@ routeDestinations:
 - destination_suriname_reka_surinam
 - destination_suriname_ruchej_varappa
 - destination_suriname_plantaciya_bakki
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 12 дней / 11 ночей

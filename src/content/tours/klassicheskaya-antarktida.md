@@ -17,7 +17,6 @@ destinations:
 - destination_antarctica_antarkticheskij_proliv
 - destination_antarctica_proliv_gerlashe
 - destination_antarctica_proliv_penola
-themes: []
 audiences: []
 route:
 - Пунта-Аренас
@@ -153,6 +152,8 @@ routeDestinations:
 - destination_antarctica_antarkticheskij_proliv
 - destination_antarctica_proliv_gerlashe
 - destination_antarctica_proliv_penola
+primaryThemes: ["theme_cruises","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 8 дней / 7 ночей  

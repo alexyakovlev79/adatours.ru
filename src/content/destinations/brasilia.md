@@ -12,10 +12,6 @@ hero:
   src: /media/destinations/brasilia/hero-enhanced-20261001.webp
   alt: Архитектура Бразилиа, столицы Бразилии
 gallery: []
-themes:
-  - culture
-  - architecture
-  - history
 relatedDestinations:
   - destination_brazil_sao_paulo
   - destination_brazil_rio
@@ -34,6 +30,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/brasilia-brazil
 sourceSnapshot: page_texts_original/brasilia-brazil__83d89e80.md
 updatedAt: 2026-09-25
+themes: ["theme_culture"]
 ---
 
 Бразилиа находится в центральной части страны на Центральном плоскогорье. Город был создан в XX веке как новая столица Бразилии и известен своей модернистской архитектурой и продуманной планировкой.

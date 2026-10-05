@@ -6,7 +6,6 @@ status: published
 title: 'Тропические острова: морская прогулка из Итакурусы'
 country: country_brazil
 lead: Итакуруса находится примерно в 1,5 часах от Рио-де-Жанейро, в районе Мангаратиба.
-themes: []
 language: []
 route: []
 included: []
@@ -18,6 +17,7 @@ destinationName: Итакуруса
 relatedDestinations:
 - destination_brazil_rio
 sourceSnapshot: https://drive.google.com/file/d/1krMKz4X0Ls4AyhJchoT4xa-dRG0Qo3jC/view?usp=drivesdk
+themes: ["theme_beach"]
 ---
 
 Итакуруса находится примерно в 1,5 часах от Рио-де-Жанейро, в районе Мангаратиба.

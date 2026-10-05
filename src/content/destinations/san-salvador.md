@@ -31,7 +31,6 @@ gallery:
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN22468_45.jpg
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -56,6 +55,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/tury-i-ehkskursii-v-stolicu-ehl-salvadora-gorod-san-salvador
 sourceSnapshot: https://drive.google.com/file/d/1FU8AOKNp2ik21xrWHXmtwFdHYjg9NVKU/view?usp=drivesdk
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Сан-Сальвадор — столица Эль-Сальвадора. Город основал Гонсало де Альварадо в 1546 году. Он расположен в долине Валье-де-лас-Амакас, у подножия вулкана Кетцальтепек, и за свою историю неоднократно страдал от землетрясений.

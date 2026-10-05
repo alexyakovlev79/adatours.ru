@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_iguacu"
 destinationName: "Фоз-ду-Игуасу"
 relatedDestinations: []
-themes: []
 duration: "5 часов"
 language: []
 priceFrom: 138
@@ -36,6 +35,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/rafain-shou"
 sourceSnapshot: "https://drive.google.com/file/d/1pFcKlVSMMsx07Exot3IzQ448lFw-ttBu/view?usp=drivesdk"
 updatedAt: 2026-10-02
+themes: ["theme_culture","theme_gastronomy_wine"]
 ---
 
 ## Rafain Grill Place и латиноамериканское шоу

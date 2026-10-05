@@ -12,7 +12,6 @@ hero:
   src: /media/countries/french-guiana/featureBands-3-enhanced-20261002.webp
   alt: "На фото: парк Гвианская Амазония во Французской Гвиане"
 gallery: []
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -21,6 +20,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-park-gvianskaya-amazoniya"
 sourceSnapshot: "https://drive.google.com/file/d/1Cri43PRjUmLjCqjJxdH9IxP-knu4ygCk/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_wildlife"]
 ---
 
 ## Парк Гвианская Амазония — самый большой парк во Французской Гвиане

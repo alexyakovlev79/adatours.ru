@@ -10,7 +10,6 @@ searchAliases:
 country: country_argentina
 destination: destination_uruguay_montevideo
 destinationName: "Монтевидео"
-themes: [culture, multi-country]
 duration: весь день
 language:
   - английский
@@ -35,6 +34,7 @@ notes: []
 sourceUrl: https://brasiltours.ru/ekskursiya-po-montevideo
 sourceSnapshot: page_texts_newstep/Excursions/ekskursiya-po-montevideo__5352ad0f.md
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Рано утром предусмотрен трансфер в порт Буэнос-Айреса. На пароме вы пересечете залив Ла-Плата и прибудете в Монтевидео, где экскурсия начинается прямо от порта.

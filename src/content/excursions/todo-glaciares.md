@@ -9,8 +9,6 @@ searchAliases:
   - "Ледники Упсала и Спегаццини"
 country: country_argentina
 destination: destination_argentina_el_calafate
-themes:
-  - nature
 duration: "полный день"
 language: []
 priceFrom: 336
@@ -33,6 +31,7 @@ sourceSnapshot: page_texts_original/neveroyatnaya-argentina__b36cf7e0.md
 updatedAt: 2026-10-02
 relatedDestinations:
   - destination_argentina_ozero_argentino
+themes: ["theme_wildlife"]
 ---
 
 Полнодневная навигация начинается в порту Пунта-Бандера примерно в 47 км от Эль-Калафате. Судно идет по северной части озера Аргентино через Бока-дель-Дьябло к каналу Упсала среди айсбергов, отколовшихся от ледника.

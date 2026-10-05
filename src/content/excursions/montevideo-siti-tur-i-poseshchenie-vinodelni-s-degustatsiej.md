@@ -11,7 +11,6 @@ searchAliases:
 country: country_uruguay
 destination: destination_uruguay_montevideo
 destinationName: "Монтевидео"
-themes: [culture, city, gastronomy, wine]
 duration: 8 часов
 language:
   - английский
@@ -54,6 +53,7 @@ notes:
 sourceUrl: https://brasiltours.ru/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej
 sourceSnapshot: page_texts_newstep/Excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej__50ac524d.md
 updatedAt: 2026-10-02
+themes: ["theme_culture","theme_gastronomy_wine"]
 ---
 
 За один день эта экскурсия соединяет две стороны Уругвая: Монтевидео с его набережной, площадями и городскими достопримечательностями — и знакомство с местным виноделием на винодельне недалеко от столицы. В программу входят обзорная часть по городу, обед в Mercado Puerto и дегустация уругвайских вин.

@@ -28,7 +28,6 @@ destinations:
 - destination_peru_arekipa
 - destination_peru_parakas
 - destination_peru_linii_naska_i_ostrova_balestas
-themes: []
 audiences: []
 route:
 - Лима
@@ -342,6 +341,8 @@ routeDestinations:
 - destination_peru_kanon_kolka
 - destination_peru_chivaj
 - destination_peru_arekipa
+primaryThemes: ["theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 12 дней / 11 ночей  

@@ -9,7 +9,6 @@ country: "country_argentina"
 destination: "destination_argentina_buenos_aires"
 destinationName: "Буэнос-Айрес"
 relatedDestinations: []
-themes: []
 duration: "3 часа"
 language:
   - "Русский"
@@ -57,6 +56,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/buenos-ajres-sochetanie-istorii-i-iskusstva"
 sourceSnapshot: "https://drive.google.com/file/d/1XkF3mbQyzzUgVoSm2_3cTRjT0jTZNRAh/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Обзорная экскурсия по городу с русскоговорящим гидом

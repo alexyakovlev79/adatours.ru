@@ -32,11 +32,6 @@ gallery:
     alt: Достопримечательности Арекипы
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN22579_72.jpg
     alt: Арекипа в Перу
-themes:
-  - city
-  - culture
-  - gastronomy
-  - nature
 relatedDestinations:
   - destination_peru_lima
   - destination_peru_cusco
@@ -67,6 +62,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-arekipa-v-peru__e7ff1886.md
 updatedAt: 2026-10-02
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 Арекипа получила прозвище «Белый город» благодаря светлому вулканическому камню, который широко использовали в местной архитектуре. Исторический центр соединяет колониальные здания, церкви, монастыри и площади.

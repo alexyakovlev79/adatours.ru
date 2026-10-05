@@ -24,7 +24,6 @@ destinations:
 - destination_argentina_los_penitentes
 - destination_argentina_gajman
 - destination_argentina_zapovednik_san_lorenso
-themes: []
 audiences: []
 route:
 - Буэнос-Айрес
@@ -320,6 +319,8 @@ routeDestinations:
 - destination_argentina_los_penitentes
 - destination_argentina_gajman
 - destination_argentina_zapovednik_san_lorenso
+primaryThemes: ["theme_wildlife","theme_gastronomy_wine"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 13 дней / 12 ночей

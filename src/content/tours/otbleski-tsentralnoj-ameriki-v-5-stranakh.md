@@ -37,7 +37,6 @@ destinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_san_hose
-themes: []
 audiences: []
 route:
 - Гватемала
@@ -381,6 +380,8 @@ routeDestinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_san_hose
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 19 дней / 18 ночей  

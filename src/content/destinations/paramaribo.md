@@ -26,7 +26,6 @@ gallery:
     alt: "На фото: столица Суринама город Парамарибо"
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN20143_2.jpg"
     alt: "На фото: столица Суринама город Парамарибо"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -35,6 +34,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-paramaribo-v-suriname"
 sourceSnapshot: "https://drive.google.com/file/d/1Hbh-6XuiwlGWOU12lZldRvKk8G9SgtW8/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 ### Парамарибо-яркий город Суринама!

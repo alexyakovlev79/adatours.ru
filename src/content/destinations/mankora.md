@@ -20,7 +20,6 @@ gallery:
     alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
   - src: "https://brasiltours.ru/image/catalog/category/m/a/mancorabeachhor05_1.jpg"
     alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -29,6 +28,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-mankora-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1fmvj8OcntwWBO-yzbOQQzutP6jQ34_xi/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_beach","theme_adventure"]
 ---
 
 ## Серфинг, волны и ночная жизнь: что посмотреть в Манкоре, Перу

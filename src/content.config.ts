@@ -85,7 +85,8 @@ const countries = defineCollection({
     entryNotes: z.string().optional(),
     currency: z.string().optional(),
     languages: z.array(z.string()).default([]),
-    relatedThemes: z.array(z.string()).default([]),
+    relatedThemes: z.never().optional(), // Derived from active thematic tours; never curated.
+    themes: z.never().optional(),
     featuredTours: z.array(z.string()).default([]),
     featuredExcursions: z.array(z.string()).default([]),
     featureBands: z.array(editorialBand).default([]),
@@ -133,6 +134,7 @@ const tours = defineCollection({
     imageTextAlign,
     destinations: z.array(z.string()).default([]),
     routeDestinations: z.array(z.string()).min(1).optional(),
+    primaryThemes: z.array(z.string()).default([]),
     themes: z.array(z.string()).default([]),
     audiences: z.array(z.string()).default([]),
     format: z.string().optional(),
@@ -227,9 +229,10 @@ const themes = defineCollection({
     summary: z.string(),
     imageTextAlign,
     hero: media,
-    featuredCountries: z.array(z.string()).default([]),
-    featuredDestinations: z.array(z.string()).default([]),
-    featuredTours: z.array(z.string()).default([]),
+    relatedThemes: z.never().optional(),
+    featuredCountries: z.never().optional(), // Theme hubs are projections, not manual lists.
+    featuredDestinations: z.never().optional(), // Theme hubs are projections, not manual lists.
+    featuredTours: z.never().optional(), // Theme hubs are projections, not manual lists.
   }),
 });
 

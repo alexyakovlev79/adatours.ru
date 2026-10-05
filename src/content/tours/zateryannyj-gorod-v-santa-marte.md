@@ -12,7 +12,6 @@ destinations:
 - destination_colombia_mutanzi
 - destination_colombia_zateryannyj_gorod
 - destination_colombia_nacionalnyj_park_tajrona
-themes: []
 audiences: []
 route:
 - Санта-Марта
@@ -165,6 +164,8 @@ routeDestinations:
 - destination_colombia_mutanzi
 - destination_colombia_zateryannyj_gorod
 - destination_colombia_nacionalnyj_park_tajrona
+primaryThemes: ["theme_adventure","theme_culture"]
+themes: ["theme_wildlife","theme_beach"]
 ---
 
 **Маршрут:** Санта-Марта - Мамей - кемп Кабана-де-Адан 1 - Затерянный город - природный парк Тайрона

@@ -26,7 +26,6 @@ destinations:
 - destination_peru_pisak
 - destination_peru_moraj
 - destination_peru_aguas_kalentes
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -356,6 +355,8 @@ routeDestinations:
 - destination_peru_pisak
 - destination_peru_moraj
 - destination_peru_aguas_kalentes
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 15 дней / 14 ночей

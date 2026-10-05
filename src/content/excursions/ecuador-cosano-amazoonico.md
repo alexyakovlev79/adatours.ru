@@ -7,7 +7,6 @@ title: Лес Cosano и центр спасения животных AmaZoonico
 country: country_ecuador
 lead: Около 20 минут на лодке отделяют лодж от частной территории с девственным лесом на реке Арахуно. Здесь есть маршруты
   продолжительностью примерно от 1 до 3 часов.
-themes: []
 language: []
 route: []
 included: []
@@ -21,6 +20,7 @@ relatedDestinations:
 - destination_ecuador_reka_arahuno
 duration: 1–3 часа
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
+themes: ["theme_wildlife"]
 ---
 
 Около 20 минут на лодке отделяют лодж от частной территории с девственным лесом на реке Арахуно. Здесь есть маршруты продолжительностью примерно от 1 до 3 часов.

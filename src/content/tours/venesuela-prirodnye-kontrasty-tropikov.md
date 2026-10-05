@@ -14,7 +14,6 @@ destinations:
 - destination_venezuela_ostrov_margarita
 - destination_venezuela_kanon_kavak
 - destination_venezuela_tepuj_kuravajna
-themes: []
 audiences: []
 route:
 - Каракас, Лос-Рокес, национальный парк Канайма, Сальто-Анхель, дельта Ориноко, остров Маргарита
@@ -197,6 +196,8 @@ routeDestinations:
 - destination_venezuela_kanajma_i_vodopad_anhel
 - destination_venezuela_delta_reki_orinoko
 - destination_venezuela_ostrov_margarita
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_culture","theme_adventure"]
 ---
 
 **Длительность:** 12 дней / 11 ночей

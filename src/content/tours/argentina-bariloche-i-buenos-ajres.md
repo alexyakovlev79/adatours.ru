@@ -9,7 +9,6 @@ countries:
 destinations:
 - destination_argentina_bariloche
 - destination_argentina_buenos_aires
-themes: []
 audiences: []
 route:
 - Барилоче
@@ -124,6 +123,8 @@ routeCountries:
 routeDestinations:
 - destination_argentina_bariloche
 - destination_argentina_buenos_aires
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей, 2026 год

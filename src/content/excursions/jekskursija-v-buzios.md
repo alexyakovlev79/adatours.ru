@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_buzios"
 destinationName: "Бузиос"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 format: "Групповая экскурсия"
 language: []
@@ -26,6 +25,7 @@ notes: ["После прогулки — возвращение в отель.",
 sourceUrl: "https://brasiltours.ru/jekskursija-v-buzios"
 sourceSnapshot: "https://drive.google.com/file/d/18bqafxQHucjlPOJI-Vq1O5g8kJP5FRQy/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach"]
 ---
 
 В 177 км к северу от Рио-де-Жанейро, в двух часах на машине, расположено одно из красивейших мест мира. Бузиос — это рыбацкая деревушка. Неповторимое очарование придают причудливый ландшафт, экзотическая растительность, живописные пляжи. Климат — сухой умеренный. Средняя температура: максимальная — 30 градусов, минимальная — 20.

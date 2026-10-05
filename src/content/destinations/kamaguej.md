@@ -10,7 +10,6 @@ summary: "Камагуэй известен площадями, лабиринт
 searchAliases: []
 hero: {"src":"/media/destinations/camaguey/hero-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"}
 gallery: [{"src":"/media/destinations/camaguey/gallery-1-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"},{"src":"/media/destinations/camaguey/gallery-2-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"},{"src":"/media/destinations/camaguey/gallery-3-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"},{"src":"/media/destinations/camaguey/gallery-4-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2206500791_ed22a517ea_o.jpg","alt":"На фото: город Камагуэй на острове Куба"},{"src":"https://brasiltours.ru/image/catalog/category/4/5/455544769_aa66e18641_o.jpg","alt":"На фото: город Камагуэй на острове Куба"},{"src":"/media/destinations/camaguey/gallery-7-enhanced-20261004.webp","alt":"На фото: город Камагуэй на острове Куба"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kamaguehj-na-ostrove-kuba"
 sourceSnapshot: "https://drive.google.com/file/d/1FajpM3vODpWC_Egq433Yvoeqbv3DoHAo/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Камагуэй -красивый уголок Кубы

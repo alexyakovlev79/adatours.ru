@@ -9,7 +9,6 @@ country: "country_argentina"
 destination: "destination_argentina_salta"
 destinationName: "Сальта"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 105
 currency: "USD"
@@ -24,6 +23,7 @@ notes: ["Возможны скидки для более чем одного ч�
 sourceUrl: "https://brasiltours.ru/jekskursija-v-zhivopisnuju-sal-tu"
 sourceSnapshot: "https://drive.google.com/file/d/1e2K6uJKw16J1Q5CsBe3AHihH_uvG-cWC/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Экскурсия в живописную Сальту.

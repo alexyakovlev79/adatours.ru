@@ -12,7 +12,6 @@ hero:
   src: "/media/countries/dominican-republic/featureBands-1-enhanced-20261002.webp"
   alt: "На фото: курорт Пунта-Кана в Доминиканской Республике"
 gallery: []
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -21,6 +20,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/plyazhnye-tury-na-morskoj-kurort-punta-kana-v-dominikane"
 sourceSnapshot: "https://drive.google.com/file/d/17qLiAQp_UzjkVbbuCndil1Wp7vG2-nJP/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_family"]
 ---
 
 ### Пунта-Кана — райское наслаждение!

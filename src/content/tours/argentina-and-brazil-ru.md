@@ -15,7 +15,6 @@ destinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
 - destination_brazil_rio
-themes: []
 audiences: []
 route:
 - Буэнос-Айрес (2 ночи)
@@ -187,6 +186,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
 - destination_brazil_rio
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 10 дней / 9 ночей

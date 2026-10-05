@@ -28,7 +28,6 @@ currency: USD
 languages:
   - испанский
   - кечуа
-relatedThemes: []
 featuredTours: []
 featuredExcursions: []
 featureBands:

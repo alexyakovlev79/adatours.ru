@@ -17,7 +17,6 @@ destinations:
 - destination_brazil_arhipelag_anavianas
 - destination_brazil_santu_antoniu_amazoniya
 - destination_brazil_tiririka_amazoniya
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -391,6 +390,8 @@ routeDestinations:
 - destination_brazil_arhipelag_anavianas
 - destination_brazil_santu_antoniu_amazoniya
 - destination_brazil_tiririka_amazoniya
+primaryThemes: ["theme_events","theme_wildlife"]
+themes: ["theme_beach","theme_culture"]
 ---
 
 **Длительность:** 16 дней / 15 ночей  

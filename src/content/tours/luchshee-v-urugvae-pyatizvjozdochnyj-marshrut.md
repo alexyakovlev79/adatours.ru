@@ -12,7 +12,6 @@ destinations:
 - destination_uruguay_punta_balena
 - destination_uruguay_vinodelnya_bouza
 - destination_uruguay_vinodelnya_garson
-themes: []
 audiences: []
 route:
 - Монтевидео, 3 ночи
@@ -148,6 +147,8 @@ routeDestinations:
 - destination_uruguay_punta_balena
 - destination_uruguay_vinodelnya_bouza
 - destination_uruguay_vinodelnya_garson
+primaryThemes: ["theme_gastronomy_wine","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

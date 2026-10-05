@@ -10,7 +10,6 @@ destinations:
 - destination_brazil_rio
 - destination_brazil_angra_dos_reis
 - destination_brazil_ilha_grande
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -122,6 +121,8 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_angra_dos_reis
 - destination_brazil_ilha_grande
+primaryThemes: ["theme_culture","theme_beach"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

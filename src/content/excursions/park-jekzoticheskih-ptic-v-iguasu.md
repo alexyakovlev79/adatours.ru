@@ -9,7 +9,6 @@ searchAliases:
   - Парк птиц Игуасу
 country: country_brazil
 destination: destination_brazil_iguacu
-themes: []
 duration: 6 часов
 language: []
 priceFrom: 51
@@ -42,6 +41,7 @@ notes:
 sourceUrl: https://brasiltours.ru/park-jekzoticheskih-ptic-v-iguasu
 sourceSnapshot: page_texts_newstep/Excursions/park-jekzoticheskih-ptic-v-iguasu__c7aa2f3e.md
 updatedAt: 2026-09-30
+themes: ["theme_wildlife"]
 ---
 
 Прогулка проходит по тропическому лесу и знакомит с разнообразием местных птиц. Здесь можно увидеть попугаев, туканов, колибри, цапель и другие виды, а также местных насекомых.

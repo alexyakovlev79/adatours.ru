@@ -28,9 +28,6 @@ bestTime: Сезон зависит от региона и маршрута
 currency: BRL
 languages:
   - португальский
-relatedThemes:
-  - theme_luxury
-  - theme_nature
 featuredTours:
   - tour_luxury_brazil_11d
 featureBands:

@@ -13,7 +13,6 @@ destinations:
 - destination_suriname_bigi_pan
 - destination_suriname_jodensavanna
 - destination_suriname_redi_doti
-themes: []
 audiences: []
 route:
 - Парамарибо
@@ -142,6 +141,8 @@ routeDestinations:
 - destination_suriname_bigi_pan
 - destination_suriname_jodensavanna
 - destination_suriname_redi_doti
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 8 дней / 7 ночей  

@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 format: "Урок серфинга"
 language:
@@ -41,6 +40,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/urok-serfinga-rio-de-zhanejro"
 sourceSnapshot: "https://drive.google.com/file/d/1UIWaO1MOanpcoCCt5yW9xN5Px5DE0GmN/view?usp=drivesdk"
 updatedAt: 2026-10-02
+themes: ["theme_adventure"]
 ---
 
 ## Покорение первой волны на Атлантике

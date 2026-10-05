@@ -23,8 +23,6 @@ gallery:
     alt: Город Манта на побережье
   - src: https://brasiltours.ru/image/catalog/category/1/3/136165665_0606431873.jpg
     alt: Манта, провинция Манаби
-themes:
-  - beach
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -51,6 +49,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/plyazhnye-tury-i-ehkskursii-na-morskoj-kurort-manta-v-ehkvadore
 sourceSnapshot: page_texts_original/plyazhnye-tury-i-ehkskursii-na-morskoj-kurort-manta-v-ehkvadore__59ad41cb.md
 updatedAt: 2026-10-02
+themes: ["theme_beach"]
 ---
 
 Манта, или Сан-Пабло-де-Манта, находится в провинции Манаби. Город существовал еще в доколумбовы времена и сегодня остается крупным морским центром страны: Манта считается вторым портом Эквадора.

@@ -9,7 +9,6 @@ country: "country_ecuador"
 destination: "destination_ecuador_galapagosskie_ostrova"
 destinationName: "Галапагосские острова"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language:
   - "Английский"
@@ -45,6 +44,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/ostrov-severnyj-sejmur"
 sourceSnapshot: "https://drive.google.com/file/d/1tuuBr4nIWPhHHBS_lftDpldVpcDfxu0q/view?usp=drivesdk"
 updatedAt: 2026-10-02
+themes: ["theme_wildlife"]
 ---
 
 ## Остров Северный Сеймур и пляжи Бачас

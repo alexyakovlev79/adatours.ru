@@ -10,7 +10,6 @@ searchAliases:
   - Винодельни Мендосы
 country: country_argentina
 destination: destination_argentina_mendoza
-themes: [gastronomy, wine]
 duration: 6 часов
 language: []
 priceFrom: 250
@@ -41,6 +40,7 @@ notes:
 sourceUrl: https://brasiltours.ru/mendoza-tur-v-vinnuyu-dolinu
 sourceSnapshot: page_texts_newstep/Excursions/mendoza-tur-v-vinnuyu-dolinu__89039ecd.md
 updatedAt: 2026-10-02
+themes: ["theme_gastronomy_wine"]
 ---
 
 Эта шестичасовая экскурсия посвящена винной стороне Мендосы. Вы отправитесь из города к винодельням, а главной частью программы станет дегустация вина. Здесь нет перегруженного списка остановок: смысл поездки — провести время на винодельнях и познакомиться с местным вином.

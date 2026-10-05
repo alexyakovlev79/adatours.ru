@@ -9,7 +9,6 @@ searchAliases:
   - Абисму-Аньюмас
 country: country_brazil
 destination: destination_brazil_bonito
-themes: [adventure, nature]
 language: []
 hero:
   src: /media/tours/brazil-adventure-17d/highlights/07-abismo-anhumas-enhanced-20260930.webp
@@ -23,6 +22,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-09-30
+themes: ["theme_adventure","theme_wildlife","theme_diving"]
 ---
 
 Дополнительно можно заказать спуск в пещеру Abismo Anhumas, примерно в 20 км к западу от Бонито. За узкой расщелиной открывается огромная подземная полость. Спуск по тросовой системе идет примерно на 72 м вниз.

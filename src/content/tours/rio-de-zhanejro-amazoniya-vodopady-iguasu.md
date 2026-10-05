@@ -12,7 +12,6 @@ destinations:
 - destination_brazil_amazon
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -174,6 +173,8 @@ routeDestinations:
 - destination_brazil_amazon
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 8 дней / 7 ночей  

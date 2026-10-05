@@ -26,10 +26,6 @@ bestTime: Наиболее комфортный период обычно дли
 currency: PAB
 languages:
   - испанский
-relatedThemes:
-  - theme_adventure
-  - theme_beach
-  - theme_diving
 featureBands:
   - eyebrow: Столица и канал
     title: Панама-Сити и Панамский канал

@@ -15,7 +15,6 @@ destinations:
 - destination_brazil_porto_de_galinhas
 - destination_brazil_fernando_de_noronha
 - destination_argentina_puerto_iguasu
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро, 3 ночи
@@ -273,6 +272,8 @@ routeDestinations:
 - destination_brazil_olinda
 - destination_brazil_porto_de_galinhas
 - destination_brazil_fernando_de_noronha
+primaryThemes: ["theme_beach","theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 13 дней / 12 ночей  

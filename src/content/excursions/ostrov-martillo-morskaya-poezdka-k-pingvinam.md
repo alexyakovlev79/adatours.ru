@@ -10,9 +10,6 @@ searchAliases:
 country: country_argentina
 destination: destination_argentina_ushuajya
 destinationName: "Ушуайя"
-themes:
-  - nature
-  - wildlife
 language: []
 hero:
   src: https://brasiltours.ru/image/countries/argentina/new-photos/patagonia/sander-crombach-589765-unsplash.jpg
@@ -31,6 +28,7 @@ sourceSnapshot: page_texts_original/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-pa
 updatedAt: 2026-10-02
 relatedDestinations:
   - destination_argentina_ostrov_martilo
+themes: ["theme_wildlife"]
 ---
 
 Можно заказать морскую поездку к колонии пингвинов.

@@ -10,7 +10,6 @@ searchAliases:
   - Музей Ларко
 country: country_peru
 destination: destination_peru_lima
-themes: []
 language: []
 priceFrom: 50
 currency: USD
@@ -27,6 +26,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Музей Ларко был основан в начале XX века и расположен в доме вице-короля Перу, построенном в XVIII веке в колониальном стиле.

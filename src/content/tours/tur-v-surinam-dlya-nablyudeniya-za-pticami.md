@@ -16,7 +16,6 @@ destinations:
   - destination_suriname_niv_amsterdam
   - destination_suriname_prirodnyj_park_peperpot
   - destination_suriname_reka_saramakka
-themes: [nature, wildlife]
 audiences: [private]
 format: Частный
 durationDays: 8
@@ -174,6 +173,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/tur-v-surinam-dlya-nablyudeniya-za-pticami
 sourceSnapshot: tur-v-surinam-dlya-nablyudeniya-za-pticami__a3c5eee3.md
 updatedAt: 2026-09-29
+primaryThemes: ["theme_wildlife"]
+themes: []
 ---
 
 ## 8 дней наблюдения за птицами в Суринаме

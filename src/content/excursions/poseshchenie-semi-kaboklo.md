@@ -6,7 +6,6 @@ status: published
 title: Посещение семьи кабокло в Амазонии
 country: country_brazil
 lead: Поездка на лодке или каноэ к местной семье кабокло.
-themes: []
 language: []
 route: []
 included: []
@@ -16,6 +15,7 @@ updatedAt: '2026-10-02'
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/1HQQThKxYsgHoUkh7BEEU7noQF9DzgQD1/view?usp=drivesdk
+themes: ["theme_culture"]
 ---
 
 Поездка на лодке или каноэ к местной семье кабокло.

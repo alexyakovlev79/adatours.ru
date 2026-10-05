@@ -29,7 +29,6 @@ destinations:
 - destination_chile_peschera_milodona
 - destination_chile_dolina_majpo
 - destination_chile_valparaiso_i_vinya_del_mar
-themes: []
 audiences: []
 route:
 - Сантьяго
@@ -299,6 +298,8 @@ routeDestinations:
 - destination_chile_peschera_milodona
 - destination_chile_dolina_majpo
 - destination_chile_valparaiso_i_vinya_del_mar
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 10 дней / 9 ночей  

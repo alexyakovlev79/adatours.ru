@@ -11,7 +11,6 @@ searchAliases:
 country: country_ecuador
 destination: destination_ecuador_galapagosskie_ostrova
 destinationName: "Галапагосские острова"
-themes: [nature, wildlife]
 duration: 6 часов
 language:
   - английский
@@ -51,6 +50,7 @@ relatedDestinations:
   - destination_ecuador_ostrov_santa_krus_galapagosy
   - destination_ecuador_ostrov_florena_galapagosy
   - destination_ecuador_puerto_ajora
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 Экскурсия начинается в Пуэрто-Айоре на острове Санта-Крус и продолжается поездкой на остров Флорена.

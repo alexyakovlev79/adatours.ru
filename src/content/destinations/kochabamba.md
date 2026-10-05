@@ -24,7 +24,6 @@ gallery:
   alt: 'На фото: город Кочабамба в Боливии'
 - src: /media/destinations/kochabamba/gallery-6-enhanced-20261003.webp
   alt: 'На фото: город Кочабамба в Боливии'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -33,6 +32,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kochabamba-v-bolivii
 sourceSnapshot: https://drive.google.com/file/d/1K0qXc1axWiuf08vb2c8KvsJaWPh23GsR/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 Этот город в центральной Боливия, расположен в одноименной долине в области Анд. Он является столицей штата Кочабамба и третьим по величине городом в Боливии. Кочабамба известен как "Город вечной весны" из-за его круглогодичной весенней температуры.

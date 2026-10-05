@@ -15,7 +15,6 @@ destinations:
 - destination_antarctica_villa_las_estrellas
 - destination_antarctica_stanciya_bellinsgauzen
 - destination_antarctica_stanciya_velikaya_stena
-themes: []
 audiences: []
 route:
 - Пунта-Аренас (3 ночи)
@@ -100,6 +99,8 @@ routeDestinations:
 - destination_antarctica_villa_las_estrellas
 - destination_antarctica_stanciya_bellinsgauzen
 - destination_antarctica_stanciya_velikaya_stena
+primaryThemes: ["theme_cruises","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 5 дней / 4 ночи  

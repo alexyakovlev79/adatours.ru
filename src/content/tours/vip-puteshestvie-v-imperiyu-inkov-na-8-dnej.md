@@ -15,7 +15,6 @@ destinations:
 - destination_peru_maras
 - destination_peru_aguas_kalentes
 - destination_peru_machu_picchu
-themes: []
 audiences: []
 route:
 - Лима
@@ -250,6 +249,8 @@ routeDestinations:
 - destination_peru_maras
 - destination_peru_aguas_kalentes
 - destination_peru_machu_picchu
+primaryThemes: ["theme_culture","theme_gastronomy_wine"]
+themes: []
 ---
 
 **Длительность:** 8 дней / 7 ночей  

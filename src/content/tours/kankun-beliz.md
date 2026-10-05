@@ -18,7 +18,6 @@ destinations:
 - destination_belize_morskoj_zapovednik_hol_chan
 - destination_belize_bolshaya_golubaya_dyra
 - destination_mexico_park_shel_ha
-themes: []
 audiences: []
 route:
 - Канкун, 6 ночей
@@ -217,6 +216,8 @@ routeDestinations:
 - destination_mexico_senot_ik_kil
 - destination_mexico_koba
 - destination_belize_morskoj_zapovednik_hol_chan
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 11 дней / 10 ночей  

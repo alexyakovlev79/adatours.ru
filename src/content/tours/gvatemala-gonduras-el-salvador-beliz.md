@@ -31,7 +31,6 @@ destinations:
 - destination_el_salvador_tasumal
 - destination_guatemala_yaksha
 - destination_belize_karakol
-themes: []
 audiences: []
 route:
 - Антигуа
@@ -271,6 +270,8 @@ routeDestinations:
 - destination_el_salvador_tasumal
 - destination_guatemala_yaksha
 - destination_belize_karakol
+primaryThemes: ["theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Маршрут:** Антигуа - Чичикастенанго - озеро Атитлан - Сан-Сальвадор - Копан, Гондурас - Рио-Дульсе - Тикаль - Белиз.

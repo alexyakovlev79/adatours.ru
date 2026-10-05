@@ -10,7 +10,6 @@ searchAliases:
   - Пириаполис и Пунта-дель-Эсте
 country: country_uruguay
 destination: destination_uruguay_montevideo
-themes: [culture, nature]
 duration: 8 часов
 language:
   - английский
@@ -50,6 +49,7 @@ updatedAt: 2026-10-01
 relatedDestinations:
   - destination_uruguay_piriapolis
   - destination_uruguay_punta_balena
+themes: ["theme_culture","theme_beach"]
 ---
 
 Экскурсия начинается в Монтевидео и идет вдоль побережья к Пириаполису, одному из старейших курортов Уругвая. Вы проедете по Рамбла Костанера, увидите исторический Gran Hotel Argentino и подниметесь на холм Сан-Антонио, откуда открывается панорама города и побережья.

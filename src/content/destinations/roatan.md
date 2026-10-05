@@ -22,7 +22,6 @@ gallery:
     alt: "На фото: остров Роатан в Гондурасе"
   - src: "/media/destinations/roatan/gallery-5-enhanced-20261003.webp"
     alt: "На фото: остров Роатан в Гондурасе"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -31,6 +30,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-roatan-v-gondurase"
 sourceSnapshot: "https://drive.google.com/file/d/1zLkY1NDE4eyVF3FdEN3J_uIyavbgP3t0/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_diving","theme_adventure"]
 ---
 
 ### Остров Роатан

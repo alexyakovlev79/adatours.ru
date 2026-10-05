@@ -28,7 +28,6 @@ destinations:
 - destination_ecuador_mys_karrion
 - destination_ecuador_plyazhi_bachas
 - destination_ecuador_guayakil
-themes: []
 audiences: []
 route:
 - Лима
@@ -331,6 +330,8 @@ routeDestinations:
 - destination_ecuador_mys_karrion
 - destination_ecuador_plyazhi_bachas
 - destination_ecuador_guayakil
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_cruises","theme_adventure"]
 ---
 
 **Длительность:** 18 дней / 17 ночей  

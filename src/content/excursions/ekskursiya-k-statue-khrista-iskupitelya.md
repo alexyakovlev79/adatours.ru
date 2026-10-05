@@ -10,7 +10,6 @@ searchAliases:
   - Корковаду
 country: country_brazil
 destination: destination_brazil_rio
-themes: [culture, city, nature]
 duration: 4 часа
 language: []
 priceFrom: 359
@@ -47,6 +46,7 @@ notes:
 sourceUrl: https://brasiltours.ru/ekskursiya-k-statue-khrista-iskupitelya
 sourceSnapshot: page_texts_newstep/Excursions/ekskursiya-k-statue-khrista-iskupitelya__43ec4de6.md
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Статуя Христа-Искупителя высотой 38 метров стоит на вершине Корковаду, на высоте 710 метров над уровнем моря. Монумент открыли в 1931 году после пяти лет строительства. Проект подготовил бразильский инженер Эйтор да Силва Кошта, а скульптурную часть выполнил французский мастер Поль Ландовски. В 2012 году монумент вошел в объект Всемирного наследия ЮНЕСКО как часть культурного ландшафта Рио-де-Жанейро.

@@ -10,7 +10,6 @@ searchAliases:
   - Сахарная Голова и город
 country: country_brazil
 destination: destination_brazil_rio
-themes: [culture, city]
 duration: 6 часов
 language: []
 priceFrom: 394
@@ -52,6 +51,7 @@ notes:
 sourceUrl: https://brasiltours.ru/ekskursiya-na-sakharnuyu-golovu
 sourceSnapshot: page_texts_newstep/Excursions/ekskursiya-na-sakharnuyu-golovu__f808dc85.md
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Гид встречает вас в отеле, после чего вы отправляетесь на Красный пляж — Praia Vermelha. Отсюда канатная дорога поднимается сначала на гору Урка, а затем на Сахарную Голову.

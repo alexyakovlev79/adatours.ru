@@ -10,7 +10,6 @@ searchAliases:
   - Мачу Пикчу из Куско
 country: country_peru
 destination: destination_peru_cusco
-themes: [culture, history, adventure]
 duration: "Весь день"
 language:
   - английский
@@ -49,6 +48,7 @@ notes:
 sourceUrl: https://brasiltours.ru/ekskursiya-v-zateryannyj-gorod-machu-pikchu
 sourceSnapshot: page_texts_newstep/Excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu__e835b712.md
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Маршрут из Куско ведет к Мачу-Пикчу. Поездка включает железнодорожный переезд и автобусный подъем по извилистой дороге к древнему городу с видами на реку Урубамба и ее каньон.

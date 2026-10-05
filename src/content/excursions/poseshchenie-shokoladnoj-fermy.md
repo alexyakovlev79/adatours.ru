@@ -10,7 +10,6 @@ searchAliases:
   - Дегустация шоколада Колумбия
 country: country_colombia
 destination: destination_colombia_pereira
-themes: [gastronomy]
 duration: 5 часов
 language:
   - английский
@@ -50,6 +49,7 @@ notes:
 sourceUrl: https://brasiltours.ru/poseshchenie-shokoladnoj-fermy
 sourceSnapshot: page_texts_newstep/Excursions/poseshchenie-shokoladnoj-fermy__99a9dd4d.md
 updatedAt: 2026-10-02
+themes: ["theme_gastronomy_wine"]
 ---
 
 Эта экскурсия посвящена пути какао от сырья до готового шоколада. На шоколадной ферме в районе Перейры вы увидите основные этапы производства, познакомитесь с историей и культурным значением какао и завершите программу дегустацией шоколада и традиционного напитка из какао.

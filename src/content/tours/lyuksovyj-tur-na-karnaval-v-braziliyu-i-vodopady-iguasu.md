@@ -12,7 +12,6 @@ destinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_angra_dos_reis
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро, 5 ночей
@@ -284,6 +283,8 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+primaryThemes: ["theme_events"]
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 **Длительность:** 8 дней / 7 ночей

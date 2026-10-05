@@ -11,7 +11,6 @@ searchAliases:
   - Росинья
 country: country_brazil
 destination: destination_brazil_rio
-themes: [culture, city]
 duration: 6 часов
 language: []
 priceFrom: 165
@@ -46,6 +45,7 @@ notes:
 sourceUrl: https://brasiltours.ru/favela-tur
 sourceSnapshot: page_texts_newstep/Excursions/favela-tur__fb4f0980.md
 updatedAt: 2026-10-01
+themes: ["theme_culture","theme_adventure"]
 ---
 
 Экскурсия начинается в Видигале, расположенном на склоне горы Два Брата. На мото-такси вы поднимаетесь к верхней части района, после чего маршрут продолжается пешком через тропический лес.

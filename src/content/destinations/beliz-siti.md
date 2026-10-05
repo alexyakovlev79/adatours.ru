@@ -20,7 +20,6 @@ gallery:
   alt: 'На фото: город Белиз-Сити, в Белизе'
 - src: /media/destinations/beliz-siti/gallery-4-enhanced-20261002.webp
   alt: 'На фото: город Белиз-Сити, в Белизе'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -29,6 +28,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-beliz-siti-na-karibskom-more-beliz
 sourceSnapshot: https://drive.google.com/file/d/1213HD373pk3gN-8MGs3PmOxo8vpJhaR_/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 Красочная старая столица страны, Белиз-Сити, была основана английскими поселенцами в конце XVIII века, в устье ручья Оуловер, в том месте, где Белиз-Ривер впадает в Карибское море. На месте города в то время была обширная болотистая местность, превращенная руками людей в первый крупный европейский город на территории страны, которая тогда называлась Британский Гондурас.

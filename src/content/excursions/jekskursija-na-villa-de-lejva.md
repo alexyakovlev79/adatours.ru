@@ -9,7 +9,6 @@ country: "country_colombia"
 destination: "destination_colombia_vilya_de_lejva"
 destinationName: "Вилья-де-Лейва"
 relatedDestinations: []
-themes: []
 duration: "12 часов"
 language: []
 priceFrom: 276
@@ -43,6 +42,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/jekskursija-na-villa-de-lejva"
 sourceSnapshot: "https://drive.google.com/file/d/1SXLmgcGLtomLOq9-nchsl8JAPOG8xzwQ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Очарование Вилья-де-Лейва

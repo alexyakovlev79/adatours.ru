@@ -15,7 +15,6 @@ destinations:
 - destination_costa_rica_reka_tarkoles
 - destination_costa_rica_manuel_antonio
 - destination_costa_rica_nacionalnyj_park_marino_ballena
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -284,6 +283,8 @@ routeDestinations:
 - destination_costa_rica_reka_tarkoles
 - destination_costa_rica_manuel_antonio
 - destination_costa_rica_nacionalnyj_park_marino_ballena
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_adventure","theme_gastronomy_wine"]
 ---
 
 **Длительность:** 8 дней / 7 ночей

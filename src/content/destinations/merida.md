@@ -28,7 +28,6 @@ gallery:
     alt: "На фото: окрестности города Мерида в Венесуэле"
   - src: "/media/destinations/merida/gallery-8-enhanced-20261003.webp"
     alt: "На фото: город Мерида в Венесуэле"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -37,6 +36,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-merida-v-venesuehle"
 sourceSnapshot: "https://drive.google.com/file/d/1e8fxVb64fsMmEHT429lPv8DsWsI5_H2r/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 ### Мерида -город студентов!

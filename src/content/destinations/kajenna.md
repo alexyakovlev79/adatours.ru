@@ -20,7 +20,6 @@ gallery:
     alt: "На фото: столица Французской Гвианы. город Кайенна"
   - src: "https://brasiltours.ru/image/catalog/category/1/3/1313651999_e233bd95e8.jpg"
     alt: "Цветок лотоса во Французской Гвиане"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -29,6 +28,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gorod-kajenna-vo-francuzskoj-gviane"
 sourceSnapshot: "https://drive.google.com/file/d/1R7sO0ZEskmNTvQuviLHwvysuv3fhjOdY/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 ### Кайенна - город с многовековой историей

@@ -26,7 +26,6 @@ gallery:
     alt: "На фото: город Трухильо в Перу"
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN4062_19.jpg"
     alt: "На фото: город Трухильо в Перу"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -35,6 +34,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-truhilo-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1ldwmxI9HJSP-cdel3_tNeXs0M6h5iM7U/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture","theme_adventure"]
 ---
 
 ### Трухильо - курорт в Перу!

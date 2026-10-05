@@ -12,10 +12,6 @@ hero:
   src: /media/destinations/mendoza/hero-enhanced-20260930.webp
   alt: Мендоса и винный регион Аргентины
 gallery: []
-themes:
-  - gastronomy
-  - wine
-  - luxury
 relatedDestinations:
   - destination_argentina_buenos_aires
   - destination_argentina_el_calafate
@@ -44,6 +40,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/gorod-i-vinnyj-region-mendosa-v-argentine
 sourceSnapshot: page_texts_original/gorod-i-vinnyj-region-mendosa-v-argentine__ac7f8b41.md
 updatedAt: 2026-09-24
+themes: ["theme_gastronomy_wine","theme_culture"]
 ---
 
 Мендоса находится на западе Аргентины у подножия Анд. В городской программе можно соединить Plaza Independencia, Plaza España, административный центр и большой парк Сан-Мартин.

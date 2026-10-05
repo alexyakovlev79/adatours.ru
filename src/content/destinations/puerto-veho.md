@@ -10,7 +10,6 @@ summary: "Пуэрто Вьехо находится на Карибском п�
 searchAliases: []
 hero: {"src":"/media/destinations/puerto-viejo/hero-enhanced-20261003.webp","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"}
 gallery: [{"src":"/media/destinations/puerto-viejo/gallery-1-enhanced-20261004.webp","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"/media/destinations/puerto-viejo/gallery-2-enhanced-20261004.webp","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"/media/destinations/puerto-viejo/gallery-3-enhanced-20261004.webp","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"/media/destinations/puerto-viejo/gallery-4-enhanced-20261004.webp","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"/media/destinations/puerto-viejo/gallery-5-enhanced-20261004.webp","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"/media/destinations/puerto-viejo/gallery-6-enhanced-20261004.webp","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"},{"src":"/media/destinations/puerto-viejo/gallery-7-enhanced-20261004.webp","alt":"На фото: Пуэрто-Вьехо де Таламанка в Коста-Рике"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-puehrto-vekho-de-talamanka-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1EOUDtlg6srhAEg8ytT8luCPY-PXE2rCB/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_wildlife","theme_diving","theme_adventure"]
 ---
 
 ## Курорт Карибского побережья

@@ -20,7 +20,6 @@ destinations:
 - destination_chile_sokajre
 - destination_chile_gejzery_el_tatio
 - destination_chile_machuka
-themes: []
 audiences: []
 route:
 - Сантьяго
@@ -183,6 +182,8 @@ routeDestinations:
 - destination_chile_sokajre
 - destination_chile_gejzery_el_tatio
 - destination_chile_machuka
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 6 дней / 5 ночей / 2026  

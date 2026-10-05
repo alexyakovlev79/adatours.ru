@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 duration: "3 часа"
 format: "Групповой джип-тур"
 language: []
@@ -37,6 +36,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/corcovado-tijuca-forest-half-day-tour-lunch"
 sourceSnapshot: "https://drive.google.com/file/d/1-oxgEk6XJ69I7mX9Cfm6WEoaH-L1C6UC/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 ## Корковадо и тропический лес Тижука

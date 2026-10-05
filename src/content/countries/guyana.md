@@ -20,8 +20,6 @@ bestTime: Осадки особенно часты в апреле–авгус�
 currency: GYD
 languages:
   - английский
-relatedThemes:
-  - theme_adventure
 featureBands:
   - eyebrow: Природа Гайаны
     title: Водопад Кайетур и тропический лес

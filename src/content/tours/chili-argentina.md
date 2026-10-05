@@ -23,7 +23,6 @@ destinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
-themes: []
 audiences: []
 route:
 - Сантьяго-де-Чили (3 ночи)
@@ -331,6 +330,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 14 дней / 13 ночей  

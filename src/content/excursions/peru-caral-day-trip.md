@@ -6,7 +6,6 @@ status: published
 title: Древний город Караль
 country: country_peru
 lead: Древний город Караль
-themes: []
 language: []
 route: []
 included: []
@@ -17,6 +16,7 @@ destination: destination_peru_karal
 destinationName: Караль
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/14g9D9z3HEkt3Lx1O7W-pvn45NKMRrdkq/view?usp=drivesdk
+themes: ["theme_culture"]
 ---
 
 Древний город Караль

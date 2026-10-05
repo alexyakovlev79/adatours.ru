@@ -16,7 +16,6 @@ destinations:
 - destination_costa_rica_zapovednik_kano_negro
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_manuel_antonio
-themes: []
 audiences: []
 route:
 - Панама-Сити
@@ -155,6 +154,8 @@ routeDestinations:
 - destination_costa_rica_zapovednik_kano_negro
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_manuel_antonio
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 10 дней / 9 ночей  

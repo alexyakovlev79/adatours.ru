@@ -29,7 +29,6 @@ destinations:
 - destination_chile_ozero_grej
 - destination_chile_peschera_milodona
 - destination_chile_rio_serrano
-themes: []
 audiences: []
 route:
 - Сантьяго
@@ -243,6 +242,8 @@ routeDestinations:
 - destination_chile_ozero_grej
 - destination_chile_peschera_milodona
 - destination_chile_rio_serrano
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 7 дней / 6 ночей  

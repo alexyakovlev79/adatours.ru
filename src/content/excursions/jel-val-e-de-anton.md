@@ -9,7 +9,6 @@ country: "country_panama"
 destination: "destination_panama_el_valle"
 destinationName: "Эль Валле"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 250
 currency: "USD"
@@ -28,6 +27,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/jel-val-e-de-anton"
 sourceSnapshot: "https://drive.google.com/file/d/1tyxn8FFdiaHDwBpahYEgkI4Wn6w8EKgr/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 Эль-Валье-де-Антон — долина с прохладным климатом, лежащая на крупнейшем спящем вулкане в Центральной Америке.

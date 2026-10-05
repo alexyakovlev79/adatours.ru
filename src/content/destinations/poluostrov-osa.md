@@ -10,7 +10,6 @@ summary: "Полуостров Оса находится на тихоокеан
 searchAliases: []
 hero: {"src":"/media/destinations/osa-peninsula/hero-enhanced-20261003.webp","alt":"На фото: эко туры на полуостров Оса в Коста-Рике"}
 gallery: [{"src":"/media/destinations/osa-peninsula/gallery-1-enhanced-20261003.webp","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"/media/destinations/osa-peninsula/gallery-2-enhanced-20261003.webp","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"/media/destinations/osa-peninsula/gallery-3-enhanced-20261003.webp","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"/media/destinations/osa-peninsula/gallery-4-enhanced-20261003.webp","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"},{"src":"/media/destinations/osa-peninsula/gallery-5-enhanced-20261003.webp","alt":"На фото: эко-туризм на полуострове Оса в Коста-Рике"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-poluostrov-osa-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1KWLiXjmqA8LiGwW5XCBTs7vT_gYnTfZN/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_beach"]
 ---
 
 На южном побережье Тихого океана Коста-Рики расположен один из самых красивых и экзотических уголков нашей планеты – полуостров Оса. Природа полуострова является самой биологически насыщенной из всех известных мировых экосистем. Уникальные климатические и географические условия не имеют аналогов не только в странах Центральной Америки, но и во всем мире.

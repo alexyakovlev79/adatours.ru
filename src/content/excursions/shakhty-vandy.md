@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_iguacu"
 destinationName: "Фоз-ду-Игуасу"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language: []
 priceFrom: 160
@@ -42,6 +41,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/shakhty-vandy"
 sourceSnapshot: "https://drive.google.com/file/d/1akghlRLdYEQ-C3Gr9rxn4gyFxkbsN_ec/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 ## Рудники Ванды

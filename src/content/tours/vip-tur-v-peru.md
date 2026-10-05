@@ -33,7 +33,6 @@ destinations:
 - destination_peru_moraj
 - destination_peru_lima
 - destination_chile_dolina_majpo
-themes: []
 audiences: []
 route:
 - Сантьяго-де-Чили
@@ -309,6 +308,8 @@ routeDestinations:
 - destination_peru_urubamba
 - destination_peru_moraj
 - destination_peru_lima
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 12 дней / 11 ночей  

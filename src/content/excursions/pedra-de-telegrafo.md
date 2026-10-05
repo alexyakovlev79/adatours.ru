@@ -10,7 +10,6 @@ searchAliases:
   - Pedra do Telegrafo
 country: country_brazil
 destination: destination_brazil_rio
-themes: []
 duration: 6 часов
 language: []
 priceFrom: 205
@@ -41,6 +40,7 @@ notes:
 sourceUrl: https://brasiltours.ru/pedra-de-telegrafo
 sourceSnapshot: page_texts_newstep/Excursions/pedra-de-telegrafo__288d52b5.md
 updatedAt: 2026-09-30
+themes: ["theme_adventure","theme_wildlife"]
 ---
 
 Поход начинается с прогулки по пляжу. Затем предстоит около часа подъема на высоту 350 метров.

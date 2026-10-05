@@ -25,7 +25,6 @@ destinations:
 - destination_ecuador_vodopad_kotel_dyavola_banos
 - destination_ecuador_severnyj_ilinisa
 - destination_ecuador_kanon_pastasa
-themes: []
 audiences: []
 route:
 - Кито
@@ -267,6 +266,8 @@ routeDestinations:
 - destination_ecuador_vodopad_agoyan
 - destination_ecuador_vodopad_fata_nevesty_banos
 - destination_ecuador_vodopad_kotel_dyavola_banos
+primaryThemes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 13 дней / 12 ночей

@@ -17,7 +17,6 @@ destinations:
 - destination_panama_almirante
 - destination_panama_ostrov_kolon
 - destination_panama_bokas_del_toro
-themes: []
 audiences: []
 route:
 - Панама-Сити
@@ -234,6 +233,8 @@ routeDestinations:
 - destination_panama_almirante
 - destination_panama_ostrov_kolon
 - destination_panama_bokas_del_toro
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_culture","theme_gastronomy_wine","theme_adventure"]
 ---
 
 **Длительность:** 11 дней / 10 ночей.

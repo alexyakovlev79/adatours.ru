@@ -15,7 +15,6 @@ destinations:
 - destination_belize_peschera_barton_krik
 - destination_belize_morskoj_zapovednik_hol_chan
 - destination_belize_bolshaya_golubaya_dyra
-themes: []
 audiences: []
 route:
 - Пайн-Ридж
@@ -177,6 +176,8 @@ routeDestinations:
 - destination_belize_karakol
 - destination_belize_peschera_barton_krik
 - destination_belize_morskoj_zapovednik_hol_chan
+primaryThemes: ["theme_adventure","theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 6 дней / 5 ночей  

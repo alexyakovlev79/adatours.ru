@@ -17,7 +17,6 @@ destinations:
 - destination_venezuela_los_lyanos
 - destination_venezuela_kanon_kavak
 - destination_venezuela_tepuj_kuravajna
-themes: []
 audiences: []
 route:
 - Каракас
@@ -374,6 +373,8 @@ routeDestinations:
 - destination_venezuela_la_asulita
 - destination_venezuela_barinas
 - destination_venezuela_los_lyanos
+primaryThemes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 12 дней / 11 ночей

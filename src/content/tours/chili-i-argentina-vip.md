@@ -41,7 +41,6 @@ destinations:
 - destination_argentina_tigre
 - destination_argentina_san_isidro_buenos_ajres
 - destination_uruguay_montevideo
-themes: []
 audiences: []
 route:
 - Сантьяго-де-Чили
@@ -539,6 +538,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_buenos_aires
 - destination_argentina_ukiya
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 26 дней / 25 ночей  

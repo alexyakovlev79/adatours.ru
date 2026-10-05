@@ -28,7 +28,6 @@ gallery:
     alt: "На фото: остров Утила в Гондурасе"
   - src: "/media/destinations/utila/gallery-8-enhanced-20261003.webp"
     alt: "На фото: остров Утила в Гондурасе"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -37,6 +36,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-utila-v-gondurase"
 sourceSnapshot: "https://drive.google.com/file/d/11mgOBS1wMNIdW1MOBnthhk_pCt0M9U6s/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_diving"]
 ---
 
 ### Остров Утила

@@ -29,7 +29,6 @@ destinations:
 - destination_peru_tumbes
 - destination_peru_parakas
 - destination_peru_linii_naska_i_ostrova_balestas
-themes: []
 audiences: []
 route:
 - Лима
@@ -430,6 +429,8 @@ routeDestinations:
 - destination_peru_chivaj
 - destination_peru_arekipa
 - destination_peru_tumbes
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 16 дней / 15 ночей  

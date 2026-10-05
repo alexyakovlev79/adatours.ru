@@ -9,7 +9,6 @@ searchAliases:
   - Экскурсия по Сан-Луису
 country: country_brazil
 destination: destination_brazil_sao_luis
-themes: []
 duration: около 3 часов
 language:
   - Английский
@@ -24,6 +23,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Город известен площадями, фонтанами и колониальными зданиями, связанными с эпохой хлопковых плантаций.

@@ -17,7 +17,6 @@ destinations:
 - destination_ecuador_tena
 - destination_ecuador_reka_zhatunyaku
 - destination_ecuador_papayakta
-themes: []
 audiences: []
 route:
 - Кито
@@ -182,6 +181,8 @@ routeDestinations:
 - destination_ecuador_tena
 - destination_ecuador_reka_zhatunyaku
 - destination_ecuador_papayakta
+primaryThemes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 9 дней / 8 ночей.  

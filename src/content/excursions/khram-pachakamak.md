@@ -10,7 +10,6 @@ searchAliases:
   - Пачакамак из Лимы
 country: country_peru
 destination: destination_peru_lima
-themes: [culture, history]
 duration: 4 часа
 language:
   - английский
@@ -49,6 +48,7 @@ sourceSnapshot: page_texts_newstep/Excursions/khram-pachakamak__17318c31.md
 updatedAt: 2026-10-01
 relatedDestinations:
   - destination_peru_pachakamak
+themes: ["theme_culture"]
 ---
 
 Утром вы отправитесь из Лимы в археологический комплекс Пачакамак, расположенный примерно в 30 км к югу от города. Построенный из глины комплекс возвышается над Тихим океаном и долиной реки Лурин. Более 1000 лет это место было важным религиозным центром и местом паломничества для культур, населявших Перу.

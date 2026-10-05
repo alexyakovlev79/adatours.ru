@@ -17,10 +17,6 @@ destinations:
   - destination_argentina_puerto_iguasu
   - destination_brazil_atins
   - destination_brazil_barrejrinyas
-themes:
-  - nature
-  - adventure
-  - beach
 audiences:
   - private
   - couples
@@ -169,6 +165,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/zagadochnye-dyuny-s-ozerami-vodopadami-i-plyazhami-brazilii
 sourceSnapshot: page_texts_original/zagadochnye-dyuny-s-ozerami-vodopadami-i-plyazhami-brazilii__0881a3e3.md
 updatedAt: 2026-09-29
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_culture"]
 ---
 
 Бразилия в этой программе меняется почти каждый день. В Рио маршрут проходит через Корковадо, лес Тижука, Сахарную Голову и историческую часть города. В Игуасу запланированы обе стороны водопадов и Парк птиц. Затем путешествие уходит на северо-восток страны: после Сан-Луиса вы переезжаете в район Ленсойс-Мараньенсис, где белые песчаные дюны окружают прозрачные пресные озера. Поездка продолжается по реке Прегуиса через Вассурас и Атинс, а завершается на побережье Пипы, примерно в 70 км к югу от Натала.

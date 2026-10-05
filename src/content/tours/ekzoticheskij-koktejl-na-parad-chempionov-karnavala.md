@@ -18,7 +18,6 @@ destinations:
 - destination_brazil_vodopady_reki_mimozo
 - destination_brazil_golubaya_peschera_bonito
 - destination_brazil_peschera_abismo_anhumas
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -339,6 +338,8 @@ routeDestinations:
 - destination_brazil_buzios
 - destination_brazil_vodopady_reki_mimozo
 - destination_brazil_golubaya_peschera_bonito
+primaryThemes: ["theme_events","theme_beach"]
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 **Длительность:** 13 дней / 12 ночей  

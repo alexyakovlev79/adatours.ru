@@ -29,8 +29,6 @@ languages:
   - испанский
   - кечуа
   - гуарани
-relatedThemes:
-  - theme_adventure
 featureBands:
   - eyebrow: Альтиплано
     title: Солончак Уюни и высокогорные лагуны

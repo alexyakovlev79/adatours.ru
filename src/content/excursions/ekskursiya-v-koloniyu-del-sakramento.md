@@ -8,7 +8,6 @@ searchAliases: []
 country: country_uruguay
 destination: destination_uruguay_koloniya_del_sakramento
 destinationName: "Колония дель Сакраменто"
-themes: []
 duration: 8 часов
 language:
   - английский
@@ -50,6 +49,7 @@ notes:
 sourceUrl: https://brasiltours.ru/ekskursiya-v-koloniyu-del-sakramento
 sourceSnapshot: https://drive.google.com/file/d/1VE963GOd0kNppgZ_JNNIF7EPPhO2JO7u/view?usp=drivesdk
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Колония-дель-Сакраменто была основана португальцами в 1680 году и включена в список Всемирного наследия ЮНЕСКО. Город долго оставался предметом спора между Португалией и Испанией, а в 1777 году окончательно перешел под власть Испании.

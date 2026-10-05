@@ -1,4 +1,4 @@
-name: ChatGPT photo audit temporary
+name: ChatGPT photo registry sync temporary
 
 on:
   push:
@@ -8,10 +8,10 @@ on:
       - '.github/workflows/photo-audit-chatgpt.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  audit:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,29 +19,228 @@ jobs:
         with:
           node-version: 24
       - run: npm install --no-save --ignore-scripts js-yaml@4.3.2
-      - name: Exact relevant queue
+      - name: Generate complete active photo-slot registry
         shell: bash
         run: |
           set -euo pipefail
+          rm -rf tmp/photo-registry-sync
+          mkdir -p tmp/photo-registry-sync
           node --input-type=module <<'NODE'
-          import { readPhotoInputs, buildPhotoQueue } from './scripts/photo-queue.mjs';
-          import { isPhotoEligible } from './src/lib/archive.mjs';
-          const input = readPhotoInputs();
+          import fs from 'node:fs';
+          import { readPhotoInputs } from './scripts/photo-queue.mjs';
+          import { isPhotoEligible, activeReplacementId, isActiveEntity } from './src/lib/archive.mjs';
+
+          const HOST='https://alexyakovlev79.github.io/adatours.ru';
+          const { entries, contents, enhancements } = readPhotoInputs();
           const relevantTypes = new Set(['tour','destination','excursion']);
-          const relevantEntries = input.entries.filter((e) => relevantTypes.has(e.type));
-          const q = buildPhotoQueue({...input, entries: relevantEntries, all:true});
-          const countryQ = buildPhotoQueue({...input, type:'country', all:true});
-          const activeCounts = {};
-          for (const type of ['tour','destination','excursion','country']) {
-            activeCounts[type] = input.entries.filter((e)=>e.type===type && isPhotoEligible(e,input.contents.get(e.id))).length;
+          const selected = entries.filter(e => relevantTypes.has(e.type) && isPhotoEligible(e, contents.get(e.id)));
+          const entryById = new Map(entries.map(e => [e.id,e]));
+          const byEnhanced = new Map(enhancements.map(r => [r.enhanced,r]));
+          const bySource = new Map(enhancements.map(r => [r.source,r]));
+          const enhancedURLs = new Set(enhancements.map(r => r.enhanced));
+          const slotSeen = new Set();
+          const slots = [];
+          const queueSourceOrder = new Map();
+          let queueSeq = 0;
+
+          const typeRu = (type) => type === 'tour' ? 'Тур' : type === 'destination' ? 'Место' : 'Экскурсия';
+          const gcd=(a,b)=>{while(b){[a,b]=[b,a%b]}return a||1};
+          const ratio=(w,h)=>{ if(!w||!h) return ''; const g=gcd(w,h); return (w/g)+':'+(h/g); };
+          const safe = s => String(s ?? '').trim();
+
+          function metaForSlot(data, slot) {
+            let m;
+            if (slot === 'hero.src') return {component:'Hero', displaySlot:'hero', order:1, alt:data.hero?.alt ?? '', media:data.hero ?? {}};
+            if ((m = slot.match(/^gallery\[(\d+)\]\.src$/))) {
+              const i=Number(m[1]), media=data.gallery?.[i] ?? {};
+              return {component:'MediaGallery', displaySlot:'gallery:'+(i+1), order:i+1, alt:media.alt ?? '', media};
+            }
+            if ((m = slot.match(/^featureBands\[(\d+)\]\.image$/))) {
+              const i=Number(m[1]), band=data.featureBands?.[i] ?? {};
+              return {component:'StoryPair', displaySlot:'feature:'+(i+1), order:i+1, alt:band.title ?? '', media:{replacementReason:band.imageReplacementReason}};
+            }
+            if ((m = slot.match(/^highlights\[(\d+)\]\.image\.src$/))) {
+              const i=Number(m[1]), item=data.highlights?.[i] ?? {}, media=item.image ?? {};
+              return {component:'Highlights', displaySlot:'highlight:'+(i+1), order:i+1, alt:media.alt ?? item.title ?? '', media};
+            }
+            if ((m = slot.match(/^itinerary\[(\d+)\]\.image(?:\.src)?$/))) {
+              const i=Number(m[1]), item=data.itinerary?.[i] ?? {};
+              const media=typeof item.image==='object' ? item.image : {};
+              const label=item.day ? 'day-'+item.day : 'item-'+(i+1);
+              return {component:'Itinerary', displaySlot:'itinerary:'+label, order:item.day ?? i+1, alt:media.alt ?? item.title ?? item.places?.join(', ') ?? '', media, itemIndex:i, imageIndex:null};
+            }
+            if ((m = slot.match(/^itinerary\[(\d+)\]\.images\[(\d+)\]\.src$/))) {
+              const i=Number(m[1]), j=Number(m[2]), item=data.itinerary?.[i] ?? {}, media=item.images?.[j] ?? {};
+              const label=item.day ? 'day-'+item.day : 'item-'+(i+1);
+              const suffix=j===0 && !item.image ? '' : ':images.'+j;
+              return {component:'Itinerary', displaySlot:'itinerary:'+label+suffix, order:item.day ?? i+1, alt:media.alt ?? item.title ?? item.places?.join(', ') ?? '', media, itemIndex:i, imageIndex:j};
+            }
+            if ((m = slot.match(/^body\.image\[(\d+)\]$/))) {
+              const i=Number(m[1]);
+              return {component:'Body', displaySlot:'body:image:'+(i+1), order:i+1, alt:'', media:{}};
+            }
+            return {component:'Media', displaySlot:slot, order:0, alt:'', media:{}};
           }
-          console.log('PHOTO_AUDIT_RELEVANT=' + JSON.stringify({
-            activeCounts,
-            relevantSelectedEntities:q.selectedEntityIds.length,
-            relevantPendingUniqueSources:q.totalPendingSources,
-            relevantReuseGroups:q.reuse.length,
-            countryPendingUniqueSources:countryQ.totalPendingSources,
-            countryReuseGroups:countryQ.reuse.length
-          }));
-          console.log('PHOTO_AUDIT_RELEVANT_FIRST50=' + JSON.stringify(q.photos.slice(0,50)));
+
+          function photoId(ownerId, slot, data) {
+            let m;
+            if (slot==='hero.src') return ownerId+'__hero';
+            if ((m=slot.match(/^gallery\[(\d+)\]\.src$/))) return ownerId+'__gallery_'+(Number(m[1])+1);
+            if ((m=slot.match(/^featureBands\[(\d+)\]\.image$/))) return ownerId+'__feature_'+(Number(m[1])+1);
+            if ((m=slot.match(/^highlights\[(\d+)\]\.image\.src$/))) return ownerId+'__highlight_'+(Number(m[1])+1);
+            if ((m=slot.match(/^itinerary\[(\d+)\]\.image(?:\.src)?$/))) {
+              const i=Number(m[1]), item=data.itinerary?.[i] ?? {};
+              const label=item.day ? 'day-'+item.day : 'item-'+(i+1);
+              return ownerId+'__itinerary_'+label;
+            }
+            if ((m=slot.match(/^itinerary\[(\d+)\]\.images\[(\d+)\]\.src$/))) {
+              const i=Number(m[1]), j=Number(m[2]), item=data.itinerary?.[i] ?? {};
+              const label=item.day ? 'day-'+item.day : 'item-'+(i+1);
+              if (j===0 && !item.image) return ownerId+'__itinerary_'+label;
+              return ownerId+'__itinerary_'+label+'__images_'+j;
+            }
+            if ((m=slot.match(/^body\.image\[(\d+)\]$/))) return ownerId+'__body_image_'+(Number(m[1])+1);
+            return ownerId+'__'+slot.replace(/\.src$/,'').replace(/[^a-zA-Z0-9]+/g,'_').replace(/^_|_$/g,'');
+          }
+
+          function addSlot(ownerId, slot, current) {
+            const owner=entryById.get(ownerId), data=contents.get(ownerId);
+            if(!owner || !isPhotoEligible(owner,data) || !current || typeof current!=='string') return;
+            const key=ownerId+':'+slot;
+            if(slotSeen.has(key)) return;
+            slotSeen.add(key);
+
+            const enhancedRecord=byEnhanced.get(current);
+            const sourceRecord=bySource.get(current);
+            const isEnhanced=current.includes('-enhanced-') || enhancedURLs.has(current);
+            const state=isEnhanced ? 'REPLACED' : 'NEEDS_REPLACEMENT';
+            const action=isEnhanced ? 'done' : sourceRecord ? 'reuse' : 'enhance';
+
+            if(!isEnhanced && !queueSourceOrder.has(current)) queueSourceOrder.set(current, ++queueSeq);
+
+            const meta=metaForSlot(data,slot);
+            let sourcePhoto=current;
+            let record=enhancedRecord;
+            if(isEnhanced && enhancedRecord) {
+              if(enhancedRecord.source===enhancedRecord.enhanced && enhancedRecord.method==='gpt-image') sourcePhoto='generated / GPT Image';
+              else sourcePhoto=enhancedRecord.source;
+            } else if(sourceRecord) {
+              record=sourceRecord;
+              sourcePhoto=current;
+            }
+
+            const currentLocal=current.startsWith('/media/');
+            const githubPath=currentLocal ? 'public'+current : '';
+            const productionUrl=currentLocal ? HOST+current : '';
+            const w=meta.media?.sourceWidth ?? '';
+            const h=meta.media?.sourceHeight ?? '';
+
+            let todo='';
+            let comment='';
+            if(action==='enhance') {
+              todo='Улучшить через GPT Image по docs/workflows/photo-enhancement.md; после замены обновить эту строку.';
+              comment='Полный активный реестр 05.10.2026. Очередь уникального исходника #'+queueSourceOrder.get(current)+'. Канонический слот: '+slot+'.';
+            } else if(action==='reuse') {
+              todo='Подставить готовую улучшенную версию из photo-enhancements.json; GPT Image не вызывать: '+sourceRecord.enhanced;
+              comment='Полный активный реестр 05.10.2026. Очередь уникального исходника #'+queueSourceOrder.get(current)+'. Готовая версия уже есть в реестре. Канонический слот: '+slot+'.';
+            } else {
+              comment='Полный активный реестр 05.10.2026. Текущий слот уже улучшен.';
+              if(record) comment+=' method='+record.method+'; revision='+(record.revision ?? 1)+'; enhancedAt='+record.enhancedAt+'.';
+              comment+=' Канонический слот: '+slot+'.';
+            }
+
+            slots.push({
+              photo_record_id:photoId(ownerId,slot,data),
+              entity_id:ownerId,
+              new_url:owner.url ?? '',
+              source_page_url:owner.sourceUrl ?? '',
+              page_type:typeRu(owner.type),
+              page_name:data.title ?? data.name ?? owner.name ?? ownerId,
+              component:meta.component,
+              slot:meta.displaySlot,
+              order:meta.order,
+              current_url:current,
+              alt:safe(meta.alt),
+              source_photo:sourcePhoto,
+              source_width:w,
+              source_height:h,
+              source_ratio:ratio(w,h),
+              desktop_ratio:'',
+              desktop_size:'',
+              mobile_ratio:'',
+              mobile_size:'',
+              status:state,
+              replacement_reason:meta.media?.replacementReason ?? '',
+              todo,
+              github_path:githubPath,
+              production_url:productionUrl,
+              checked_date:'',
+              replaced_date:record?.enhancedAt ? record.enhancedAt.split('-').reverse().join('.') : '',
+              updated_by:isEnhanced ? 'Реестр GitHub / синхронизация' : '',
+              comment,
+              canonical_slot:slot,
+              queue_source_order:!isEnhanced ? queueSourceOrder.get(current) : null,
+              action
+            });
+          }
+
+          function addExcursion(id) {
+            const replacement=activeReplacementId(id);
+            if(!replacement) return;
+            const data=contents.get(replacement);
+            if(!data || !isActiveEntity(data)) return;
+            addSlot(replacement,'hero.src',typeof data.hero==='string' ? data.hero : data.hero?.src);
+          }
+
+          function walk(value,ownerId,slot) {
+            if(Array.isArray(value)){ value.forEach((item,index)=>walk(item,ownerId,slot+'['+index+']')); return; }
+            if(!value || typeof value!=='object') return;
+            if(value.excursionRef){
+              addExcursion(value.excursionRef);
+              for(const [key,nested] of Object.entries(value)) if(!['src','image','images','excursionRef'].includes(key)) walk(nested,ownerId,slot+'.'+key);
+              return;
+            }
+            for(const [key,nested] of Object.entries(value)){
+              const location=slot ? slot+'.'+key : key;
+              if(typeof nested==='string' && ['src','image'].includes(key)) addSlot(ownerId,location,nested);
+              else walk(nested,ownerId,location);
+            }
+          }
+
+          for(const entry of selected){
+            const data=contents.get(entry.id);
+            for(const key of ['hero','gallery','featureBands','highlights','itinerary']) walk(data[key],entry.id,key);
+            let i=0;
+            for(const match of (data._body ?? '').matchAll(/!\[[^\]]*\]\(([^\s)]+)(?:\s+[^)]*)?\)/g)) addSlot(entry.id,'body.image['+(i++)+']',match[1]);
+          }
+
+          const pending=slots.filter(s=>s.status==='NEEDS_REPLACEMENT').sort((a,b)=>(a.queue_source_order-b.queue_source_order)||a.entity_id.localeCompare(b.entity_id)||a.canonical_slot.localeCompare(b.canonical_slot));
+          const replaced=slots.filter(s=>s.status==='REPLACED');
+          const ordered=[...pending,...replaced];
+          const summary={
+            activeEntities:selected.length,
+            activeSlots:slots.length,
+            pendingSlots:pending.length,
+            pendingUniqueSources:new Set(pending.map(s=>s.current_url)).size,
+            reuseSlots:pending.filter(s=>s.action==='reuse').length,
+            reuseUniqueSources:new Set(pending.filter(s=>s.action==='reuse').map(s=>s.current_url)).size,
+            replaceSlots:replaced.length,
+            featureBandSlots:slots.filter(s=>s.canonical_slot.startsWith('featureBands[')).length
+          };
+          fs.writeFileSync('tmp/photo-registry-sync/summary.json',JSON.stringify(summary,null,2));
+          const chunkSize=500;
+          for(let i=0;i<ordered.length;i+=chunkSize){
+            fs.writeFileSync('tmp/photo-registry-sync/chunk-'+String(i/chunkSize+1).padStart(2,'0')+'.json',JSON.stringify(ordered.slice(i,i+chunkSize)));
+          }
+          console.log(JSON.stringify(summary));
           NODE
+      - name: Commit generated registry chunks to temporary branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tmp/photo-registry-sync
+          git diff --cached --quiet && exit 0
+          git commit -m 'chore: generate complete photo registry sync data [skip ci]'
+          git push

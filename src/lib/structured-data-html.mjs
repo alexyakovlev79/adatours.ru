@@ -91,6 +91,11 @@ export function inspectHtml(html, { root, pageUrl, fullDocument = false } = {}) 
     priceVisible: elements.some((n) => /(?:^|\s)(?:tour-pricing|pricing)(?:\s|$)/.test(attr(n, 'class') || '')) },
     metadata: { canonical: attr(all.find((n) => n.tagName === 'link' && attr(n, 'rel') === 'canonical'), 'href'),
       robots: attr(all.find((n) => n.tagName === 'meta' && attr(n, 'name') === 'robots'), 'content') || '',
+      ogUrl: attr(all.find((n) => n.tagName === 'meta' && attr(n, 'property') === 'og:url'), 'content') || '',
+      ogTitle: attr(all.find((n) => n.tagName === 'meta' && attr(n, 'property') === 'og:title'), 'content') || '',
+      ogLocale: attr(all.find((n) => n.tagName === 'meta' && attr(n, 'property') === 'og:locale'), 'content') || '',
+      twitterCard: attr(all.find((n) => n.tagName === 'meta' && attr(n, 'name') === 'twitter:card'), 'content') || '',
+      twitterTitle: attr(all.find((n) => n.tagName === 'meta' && attr(n, 'name') === 'twitter:title'), 'content') || '',
       redirect: all.some((n) => n.tagName === 'meta' && (attr(n, 'http-equiv') || '').toLowerCase() === 'refresh'),
       scripts: ldNodes.length } };
 }

@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 duration: "4 часа"
 format: "Групповая экскурсия"
 language: []
@@ -40,6 +39,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/dzhip-tur-na-santa-terezu-i-korkovado"
 sourceSnapshot: "https://drive.google.com/file/d/1LkW7YJ8GPUr4Ws98ky3vWxG6hEnCtSLb/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Санта-Тереза — богемный район Рио-де-Жанейро

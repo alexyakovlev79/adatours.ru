@@ -14,7 +14,6 @@ destinations:
 - destination_antarctica_lednik_kollinz
 - destination_antarctica_villa_las_estrellas
 - destination_antarctica_stanciya_bellinsgauzen
-themes: []
 audiences: []
 route:
 - Пунта-Аренас
@@ -95,6 +94,8 @@ routeDestinations:
 - destination_antarctica_lednik_kollinz
 - destination_antarctica_villa_las_estrellas
 - destination_antarctica_stanciya_bellinsgauzen
+primaryThemes: ["theme_cruises","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 2 дня / 1 ночь  

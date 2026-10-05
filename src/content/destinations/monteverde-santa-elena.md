@@ -10,7 +10,6 @@ summary: "Монтеверде известен облачным лесом, т�
 searchAliases: []
 hero: {"src":"/media/countries/costa-rica/featureBands-2-enhanced-20261002.webp","alt":"На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)"}
 gallery: [{"src":"/media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp","alt":"На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)"},{"src":"/media/destinations/monteverde-santa-elena/gallery-2-enhanced-20261003.webp","alt":"На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)"},{"src":"/media/destinations/monteverde-santa-elena/gallery-3-enhanced-20261003.webp","alt":"На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)"},{"src":"/media/destinations/monteverde-santa-elena/gallery-4-enhanced-20261003.webp","alt":"На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)"},{"src":"/media/destinations/monteverde-santa-elena/gallery-5-enhanced-20261003.webp","alt":"На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)"},{"src":"/media/destinations/monteverde-santa-elena/gallery-6-enhanced-20261003.webp","alt":"На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)"},{"src":"/media/destinations/monteverde-santa-elena/gallery-7-enhanced-20261003.webp","alt":"На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-monteverde-oblachnye-lesa-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/144kNfv-7h6eiMElu3WL_b7VkaUjDdfNh/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 ## Облачный лес и птица кетцаль: что посмотреть в Монтеверде, Коста-Рика

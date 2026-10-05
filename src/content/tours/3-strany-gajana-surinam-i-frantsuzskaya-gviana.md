@@ -17,7 +17,6 @@ destinations:
 - destination_french_guiana_kajenna
 - destination_guyana_dzhordzhtaun
 - destination_guyana_nacionalnyj_park_kajetur
-themes: []
 audiences: []
 route:
 - Парамарибо
@@ -196,6 +195,8 @@ routeDestinations:
 - destination_french_guiana_kajenna
 - destination_guyana_dzhordzhtaun
 - destination_guyana_nacionalnyj_park_kajetur
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 7 дней / 6 ночей

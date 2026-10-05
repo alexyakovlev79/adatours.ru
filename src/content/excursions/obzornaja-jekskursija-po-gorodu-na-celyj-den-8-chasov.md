@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_sao_paulo"
 destinationName: "Сан-Паулу"
 relatedDestinations: []
-themes: []
 duration: "8 часов"
 language: []
 priceFrom: 183
@@ -34,6 +33,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov"
 sourceSnapshot: "https://drive.google.com/file/d/1zBaIn5ihjvdNYYJvRib_RV8oLmdo2gPn/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Стоимость экскурсии — $183 на человека.

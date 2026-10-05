@@ -10,7 +10,6 @@ summary: "Медельин окружен холмами и зелеными г�
 searchAliases: []
 hero: {"src":"/media/destinations/medellin/hero-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"}
 gallery: [{"src":"/media/destinations/medellin/gallery-1-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"},{"src":"/media/destinations/medellin/gallery-2-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"},{"src":"/media/destinations/medellin/gallery-3-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"},{"src":"/media/destinations/medellin/gallery-4-enhanced-20261003.webp","alt":""},{"src":"/media/destinations/medellin/gallery-5-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"},{"src":"/media/destinations/medellin/gallery-6-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-medelin-v-kolumbii"
 sourceSnapshot: "https://drive.google.com/file/d/1xh3HAFPJm24o-ExoWHsWTbcnF5bR-XVQ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Фестиваль цветов и скульптуры Ботеро: что посмотреть в Медельине

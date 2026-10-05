@@ -39,11 +39,6 @@ destinations:
   - destination_argentina_salinas_grandes
   - destination_argentina_tilkara
   - destination_argentina_gorod_umauaka
-themes:
-  - adventure
-  - culture
-  - nature
-  - wine
 audiences:
   - private
 format: "Большое путешествие"
@@ -727,6 +722,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/vsya-argentina
 sourceSnapshot: page_texts_original/vsya-argentina__2bb3b633.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_adventure","theme_gastronomy_wine"]
 ---
 
 Маршрут построен как большое путешествие через несколько климатических и природных зон. Сначала вас ждет ритм мегаполиса и культура Буэнос-Айреса, затем тропики Игуасу. После этого программа уходит на северо-запад, где появляются виноградники, высокогорные долины и разноцветные склоны Анд. Вторая половина путешествия посвящена Патагонии: озерам Барилоче, ледникам, горным тропам, степям и природе Огненной Земли.

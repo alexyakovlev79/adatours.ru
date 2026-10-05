@@ -12,11 +12,6 @@ hero:
   src: /media/destinations/itacare/hero-enhanced-20261001.webp
   alt: Побережье Итакаре в штате Баия
 gallery: []
-themes:
-  - beach
-  - nature
-  - adventure
-  - culture
 relatedDestinations:
   - destination_brazil_salvador
   - destination_brazil_praia_do_forte
@@ -45,6 +40,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/plyazhnye-tury-v-braziliyu-na-morskoj-kurort-itakare
 sourceSnapshot: page_texts_original/plyazhnye-tury-v-braziliyu-na-morskoj-kurort-itakare__2bb91022.md
 updatedAt: 2026-09-25
+themes: ["theme_beach","theme_wildlife"]
 ---
 
 Итакаре находится на побережье штата Баия. Его окрестности соединяют океан, атлантический лес и водопады, поэтому пляжные дни легко чередовать с короткими поездками в природу.

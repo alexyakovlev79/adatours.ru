@@ -15,7 +15,6 @@ destinations:
 - destination_venezuela_merida
 - destination_venezuela_kanon_kavak
 - destination_venezuela_tepuj_kuravajna
-themes: []
 audiences: []
 route:
 - Каракас, Чорони, национальный парк Канайма, Лос-Льянос, Анды, Мерида
@@ -220,6 +219,8 @@ routeDestinations:
 - destination_venezuela_los_lyanos
 - destination_venezuela_laguna_mukumbahi
 - destination_venezuela_merida
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture","theme_beach"]
 ---
 
 **Длительность:** 12 дней / 11 ночей

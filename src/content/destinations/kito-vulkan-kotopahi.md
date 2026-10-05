@@ -35,10 +35,6 @@ gallery:
     alt: Город Кито среди Анд
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN17724_15.jpg
     alt: Окрестности Кито и Дорога вулканов
-themes:
-  - culture
-  - nature
-  - adventure
 relatedDestinations:
   - destination_ecuador_kuenka
 featuredTours: []
@@ -69,6 +65,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/tury-i-ehkskursii-v-kito-vulkan-kotopaksi-v-ehkvadore
 sourceSnapshot: page_texts_original/tury-i-ehkskursii-v-kito-vulkan-kotopaksi-v-ehkvadore__9359a33c.md
 updatedAt: 2026-10-02
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 Кито расположен в андской долине на высоте 2850 м. Старый город сохраняет колониальную архитектуру, церкви и монастыри, а современная часть столицы развивается среди гор и вулканических массивов.

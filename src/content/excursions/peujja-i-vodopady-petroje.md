@@ -7,7 +7,6 @@ status: "approved"
 searchAliases: []
 country: "country_chile"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 103
 currency: "USD"
@@ -27,6 +26,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/peujja-i-vodopady-petroje"
 sourceSnapshot: "https://drive.google.com/file/d/1slH__xwXXODhxHXErIS4fZlxp3Zgsms5/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 Стоимость экскурсии — $103 на человека.

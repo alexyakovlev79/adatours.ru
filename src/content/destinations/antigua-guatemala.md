@@ -26,7 +26,6 @@ gallery:
     alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
   - src: "/media/destinations/antigua-guatemala/gallery-7-enhanced-20261003.webp"
     alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -35,6 +34,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1BaqnC-yCVnS4Jc2pu8xTltCaaaGlS_MG/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ### Антигуа Гватемала - свидетель колониального величия!

@@ -12,7 +12,6 @@ destinations:
 - destination_costa_rica_zaliv_drejk
 - destination_costa_rica_nacionalnyj_park_korkovado
 - destination_costa_rica_ostrov_kano
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -122,6 +121,8 @@ routeDestinations:
 - destination_costa_rica_zaliv_drejk
 - destination_costa_rica_nacionalnyj_park_korkovado
 - destination_costa_rica_ostrov_kano
+primaryThemes: ["theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 5 дней / 4 ночи  

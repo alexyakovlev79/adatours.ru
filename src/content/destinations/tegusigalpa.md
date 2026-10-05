@@ -22,7 +22,6 @@ gallery:
     alt: "На фото: город Тегусигальпа в Гондурасе"
   - src: "/media/destinations/tegucigalpa/gallery-5-enhanced-20261003.webp"
     alt: "На фото: город Тегусигальпа в Гондурасе"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -31,6 +30,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-tegusigalpa-v-gondurase"
 sourceSnapshot: "https://drive.google.com/file/d/1_j8eZxScTJAoXysO8vb2wsy1EIWBlVLK/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ### Тегусигальпа - столица Гондураса

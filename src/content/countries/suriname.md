@@ -19,10 +19,6 @@ currency: SRD
 languages:
   - нидерландский
   - сранан-тонго
-relatedThemes:
-  - theme_adventure
-  - theme_fishing
-  - theme_beach
 featureBands:
   - eyebrow: Столица и культура
     title: Парамарибо

@@ -1,0 +1,40 @@
+---
+import { withBase } from '../../lib/paths';
+interface Props {
+  entityId: string; title: string; text?: string; href: string; image?: string;
+  eyebrow?: string; meta?: string; imageTextAlign?: 'left' | 'right'; large?: boolean;
+}
+const { entityId, title, text, href, image, eyebrow, meta, imageTextAlign = 'left', large = false } = Astro.props;
+---
+<article class:list={['interest-card', { 'interest-card--large': large }]} data-interest-item={entityId}>
+  <a href={withBase(href)} class="interest-card__link">
+    {image && <div class="interest-card__image"><img src={withBase(image)} alt="" loading="lazy" decoding="async" /></div>}
+    <div class="interest-card__copy" data-text-align={imageTextAlign}>
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      <h3>{title}<span aria-hidden="true"> ↗</span></h3>
+      {meta && <p class="interest-card__meta">{meta}</p>}
+      {text && <p class="interest-card__text">{text}</p>}
+    </div>
+  </a>
+</article>
+<style>
+  .interest-card { min-width: 0; }
+  .interest-card__link { display: block; color: var(--color-ink); text-decoration: none; height: 100%; }
+  .interest-card__link:focus-visible { outline: 2px solid currentColor; outline-offset: 7px; }
+  .interest-card__image { overflow: hidden; aspect-ratio: 16 / 10; background: var(--color-line); }
+  .interest-card__image img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+  @media (prefers-reduced-motion: no-preference) { .interest-card__link:hover img { transform: scale(1.025); } }
+  .interest-card__copy { padding-block: 22px 12px; }
+  .interest-card__copy .eyebrow { margin: 0 0 10px; }
+  h3 { font: 400 clamp(1.5rem, 2.35vw, 2.6rem)/1.12 var(--font-display); margin: 0; overflow-wrap: anywhere; }
+  h3 span { font-size: .62em; white-space: nowrap; }
+  .interest-card__meta { font-size: .83rem; line-height: 1.5; color: var(--color-muted); margin: 12px 0 0; }
+  .interest-card__text { font-size: .98rem; line-height: 1.65; margin: 12px 0 0; }
+  .interest-card--large { grid-column: 1 / -1; }
+  @media (min-width: 760px) {
+    .interest-card--large .interest-card__link { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+    .interest-card--large .interest-card__image { aspect-ratio: 5 / 4; }
+    .interest-card--large h3 { font-size: clamp(2.4rem, 4vw, 4rem); }
+    .interest-card--large .interest-card__text { font-size: 1.08rem; }
+  }
+</style>

@@ -16,7 +16,6 @@ destinations:
 - destination_panama_bokete
 - destination_panama_vulkan_baru
 - destination_panama_bokas_del_toro
-themes: []
 audiences: []
 route:
 - Панама-Сити - Бока-Чика - Бокете - вулкан Бару - Бокас-дель-Торо - Панама-Сити
@@ -363,6 +362,8 @@ routeDestinations:
 - destination_panama_bokete
 - destination_panama_vulkan_baru
 - destination_panama_bokas_del_toro
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_culture","theme_gastronomy_wine"]
 ---
 
 **Длительность:** 12 дней / 11 ночей

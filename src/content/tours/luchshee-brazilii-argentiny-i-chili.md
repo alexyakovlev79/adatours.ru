@@ -26,7 +26,6 @@ destinations:
 - destination_chile_ozero_pehoe
 - destination_chile_ozero_grej
 - destination_chile_lednik_grej
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -420,6 +419,8 @@ routeDestinations:
 - destination_chile_lunnaya_dolina_atakama
 - destination_chile_ozero_pehoe
 - destination_chile_ozero_grej
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_gastronomy_wine"]
 ---
 
 **Длительность:** 13 дней / 12 ночей

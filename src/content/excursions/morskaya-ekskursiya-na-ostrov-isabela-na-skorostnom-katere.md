@@ -9,7 +9,6 @@ country: "country_ecuador"
 destination: "destination_ecuador_galapagosskie_ostrova"
 destinationName: "Галапагосские острова"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language:
   - "Английский"
@@ -48,6 +47,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere"
 sourceSnapshot: "https://drive.google.com/file/d/1VsTK5aW78KOHFMroKh6RQNHSeOq_V3YT/view?usp=drivesdk"
 updatedAt: 2026-10-02
+themes: ["theme_wildlife"]
 ---
 
 ## Остров Исабела

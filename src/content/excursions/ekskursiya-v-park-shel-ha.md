@@ -6,7 +6,6 @@ status: published
 title: Экскурсия в парк Шель-Ха
 country: country_mexico
 lead: Можно заказать групповую экскурсию в парк Шель-Ха продолжительностью около 10 часов.
-themes: []
 language: []
 route: []
 included: []
@@ -16,6 +15,7 @@ updatedAt: '2026-10-02'
 destination: destination_mexico_park_shel_ha
 destinationName: Парк Шель-Ха
 sourceSnapshot: https://drive.google.com/file/d/18G8HRqdBeCLdg4zKxhTb8tS7EmXKlpMb/view?usp=drivesdk
+themes: ["theme_wildlife"]
 ---
 
 Можно заказать групповую экскурсию в парк Шель-Ха продолжительностью около 10 часов.

@@ -6,7 +6,6 @@ status: published
 title: 'Острова Росарио: групповой день в San Pedro de Majagua'
 country: country_colombia
 lead: В программе рекомендован групповой тур в San Pedro de Majagua на островах Росарио.
-themes: []
 language: []
 route: []
 included: []
@@ -17,6 +16,7 @@ destination: destination_colombia_islas_rosario
 destinationName: Острова Росарио
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1QUrrbWMwMcdLm33srgCTL2nU8T2lZO7x/view?usp=drivesdk
+themes: ["theme_beach"]
 ---
 
 В программе рекомендован групповой тур в San Pedro de Majagua на островах Росарио.

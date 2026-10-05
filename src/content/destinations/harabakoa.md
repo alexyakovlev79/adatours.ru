@@ -10,7 +10,6 @@ summary: "Харабакоа находится в горной долине р�
 searchAliases: []
 hero: {"src":"/media/destinations/jarabacoa/hero-enhanced-20261003.webp","alt":"На фото: курорт Харабакоа в Доминикане"}
 gallery: []
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-harabakoa-v-dominikane"
 sourceSnapshot: "https://drive.google.com/file/d/1OKZStXCXIwG2oTruSTAmCdSlpjT9Zhcd/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_adventure","theme_wildlife"]
 ---
 
 ## Харабакоа - место приключений!

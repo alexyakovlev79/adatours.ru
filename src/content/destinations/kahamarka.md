@@ -8,7 +8,6 @@ countryId: "country_peru"
 destinationType: "city"
 summary: "Город в горной долине на высоте 2720 м. Археологические памятники и термальные источники Баньос де Инка знакомят с историей Кахамарки."
 searchAliases: []
-themes: []
 hero: {"src":"https://brasiltours.ru/image/countries/peru/444.jpg","alt":"На фото: женщина-перуанка"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/c/a/cajamarcaperu.png","alt":"На фото: город Кахамарка в Перу"},{"src":"https://brasiltours.ru/image/catalog/category/o/t/otuzco_0.jpg","alt":"На фото: город Кахамарка в Перу"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kahamarka-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1eGYxUlIvJ1KY0rwHOzEhYm6A1ahGMdrK/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_spa"]
 ---
 
 ## Кахамарка- зеленая жемчужина Перу!

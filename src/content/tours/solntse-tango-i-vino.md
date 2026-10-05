@@ -20,7 +20,6 @@ destinations:
 - destination_argentina_san_isidro_buenos_ajres
 - destination_uruguay_montevideo
 - destination_chile_dolina_majpo
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (3 ночи)
@@ -257,6 +256,8 @@ routeDestinations:
 - destination_argentina_buenos_aires
 - destination_chile_santyago_de_chili
 - destination_chile_valparaiso_i_vinya_del_mar
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 12 дней / 11 ночей  

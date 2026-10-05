@@ -14,7 +14,6 @@ destinations:
 - destination_colombia_guatape
 - destination_colombia_kartahena
 - destination_colombia_ostrov_baru
-themes: []
 audiences: []
 route:
 - Богота
@@ -215,6 +214,8 @@ routeDestinations:
 - destination_colombia_guatape
 - destination_colombia_kartahena
 - destination_colombia_ostrov_baru
+primaryThemes: ["theme_culture","theme_beach"]
+themes: []
 ---
 
 **Длительность:** 12 дней / 11 ночей  

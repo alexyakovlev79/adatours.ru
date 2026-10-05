@@ -9,17 +9,6 @@ summary: >-
 hero:
   src: /media/themes/dajving/hero-enhanced-20261001.webp
   alt: Дайвинг в тропическом море
-featuredCountries:
-  - country_brazil
-  - country_honduras
-  - country_dominican_republic
-  - country_colombia
-  - country_costa_rica
-  - country_mexico
-  - country_nicaragua
-  - country_panama
-  - country_el_salvador
-
 sourceUrl: https://brasiltours.ru/dajving
 sourceSnapshot: page_texts_original/dajving__b833d7b0.md
 updatedAt: 2026-10-02

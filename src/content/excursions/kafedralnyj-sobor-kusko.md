@@ -9,7 +9,6 @@ searchAliases:
   - Кафедральный собор города Куско
 country: country_peru
 destination: destination_peru_cusco
-themes: []
 duration: около 40 минут
 language: []
 priceFrom: 20
@@ -26,6 +25,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Дополнительно можно посетить кафедральный собор Куско.

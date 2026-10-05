@@ -11,7 +11,6 @@ searchAliases:
 country: country_colombia
 destination: destination_colombia_kartahena
 destinationName: "Картахена"
-themes: [culture]
 duration: 5 часов
 language:
   - английский
@@ -53,6 +52,7 @@ notes:
 sourceUrl: https://brasiltours.ru/siti-tur-po-kartakhene
 sourceSnapshot: page_texts_newstep/Excursions/siti-tur-po-kartakhene__c9ec27fb.md
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 За 5 часов экскурсия соединяет разные стороны Картахены: прибрежные жилые районы, панорамные виды с холма, колониальные укрепления и ремесленный центр Лас-Боведас. В маршрут входят Бокагранде, Кастильогранде, Манга, монастырь и церковь Сима-де-ла-Попа, крепость Сан-Фелипе-де-Барахас и городские стены.

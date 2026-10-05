@@ -12,7 +12,6 @@ countries:
   - country_brazil
 destinations:
   - destination_brazil_rio
-themes: [romance]
 audiences: [couples, private]
 format: Свадебный пакет
 durationDays: 1
@@ -40,6 +39,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/wedding-ceremony-tropical-package
 sourceSnapshot: wedding-ceremony-tropical-package__8833b41a.md
 updatedAt: 2026-09-30
+primaryThemes: ["theme_weddings_romance"]
+themes: []
 ---
 
 ## Свадебный пакет «Тропическая церемония»

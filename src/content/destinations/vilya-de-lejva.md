@@ -10,7 +10,6 @@ summary: "Вилья-де-Лейва сохранила побеленные д�
 searchAliases: []
 hero: {"src":"/media/destinations/villa-de-leyva/hero-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"}
 gallery: [{"src":"/media/destinations/villa-de-leyva/gallery-1-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-2-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-3-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-4-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-5-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-6-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-villa-de-lejva-v-kolumbii"
 sourceSnapshot: "https://drive.google.com/file/d/1N1tUDC7LNzZeA5YqxEminJzZgLKkiJ3X/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Беленые дома и мощеные улицы: что посмотреть в Вилья-де-Лейве

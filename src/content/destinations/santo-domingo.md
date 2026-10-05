@@ -12,7 +12,6 @@ hero:
   src: "/media/countries/dominican-republic/featureBands-3-enhanced-20261002.webp"
   alt: "На фото: город Санто-Доминго в Доминиканской Республике"
 gallery: []
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -21,6 +20,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gorod-santo-domingo-v-dominikane"
 sourceSnapshot: "https://drive.google.com/file/d/1Fz3jufIcfEE_85bor_9c5NOY-R33nuXg/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ### Санто Доминго - ворота в Карибское море!

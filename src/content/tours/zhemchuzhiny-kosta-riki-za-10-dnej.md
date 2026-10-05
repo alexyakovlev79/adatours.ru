@@ -18,7 +18,6 @@ destinations:
 - destination_costa_rica_reka_tarkoles
 - destination_costa_rica_kepos
 - destination_costa_rica_manuel_antonio
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -221,6 +220,8 @@ routeDestinations:
 - destination_costa_rica_reka_tarkoles
 - destination_costa_rica_kepos
 - destination_costa_rica_manuel_antonio
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_adventure","theme_beach","theme_gastronomy_wine"]
 ---
 
 **Маршрут:** Сан-Хосе - кофейная плантация Doka - вулкан Поас - Ла-Пас - Тортугеро - Ареналь - Монтеверде - Мануэль-Антонио

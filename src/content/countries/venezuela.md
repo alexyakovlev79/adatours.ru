@@ -24,9 +24,6 @@ regions:
 bestTime: Сухой сезон — с декабря по апрель, влажный — с мая по ноябрь
 languages:
   - испанский
-relatedThemes:
-  - theme_adventure
-  - theme_beach
 featureBands:
   - eyebrow: Национальный парк Канайма
     title: Водопад Анхель и тепуи

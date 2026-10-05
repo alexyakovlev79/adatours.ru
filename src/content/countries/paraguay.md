@@ -21,10 +21,6 @@ currency: PYG
 languages:
   - испанский
   - гуарани
-relatedThemes:
-  - theme_adventure
-  - theme_fishing
-  - theme_gastronomy_wine
 featureBands:
   - eyebrow: Столица и культура
     title: Асунсьон

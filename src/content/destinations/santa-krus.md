@@ -18,7 +18,6 @@ gallery:
   alt: 'На фото: в городе Санта-Круз в Боливии'
 - src: /media/destinations/santa-krus/gallery-3-enhanced-20261003.webp
   alt: 'На фото: в городе Санта-Круз в Боливии'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -27,6 +26,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-santa-kruz-v-bolivii
 sourceSnapshot: https://drive.google.com/file/d/1XuU1_qVu9BgZ7YvHmfqV1dU7sDYsN5vk/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 Санта-Крус-де-ла-Сьерра, более известный, как Санта-Крус, является столицей департамента Санта-Крус на востоке Боливии. Основан город, в основном, выходцами из Испании и стал важным перевалочным пунктом в течение следующих двух столетий для иезуитов и других христианских миссий в Чикитос Moxos. В первой половине 20 века он начал играть важную роль в истории страны.

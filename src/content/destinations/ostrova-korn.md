@@ -8,7 +8,6 @@ countryId: "country_nicaragua"
 destinationType: "island"
 summary: "Карибские острова у побережья Никарагуа: белые песчаные пляжи, рыбалка и рифы с подводной жизнью вокруг Биг Корн и Литл Корн."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/corn-islands/hero-enhanced-20261005.webp","alt":"На фото: остров Корн Никарагуа и дайвинг"}
 gallery: [{"src":"/media/destinations/corn-islands/gallery-1-enhanced-20261005.webp","alt":"На фото: остров Корн Никарагуа"},{"src":"/media/destinations/corn-islands/gallery-2-enhanced-20261005.webp","alt":"На фото: остров Корн Никарагуа"},{"src":"/media/destinations/corn-islands/gallery-3-enhanced-20261005.webp","alt":"На фото: остров Корн Никарагуа"},{"src":"/media/destinations/corn-islands/gallery-4-enhanced-20261005.webp","alt":"На фото: остров Корн Никарагуа"},{"src":"/media/destinations/corn-islands/gallery-5-enhanced-20261005.webp","alt":"На фото: остров Корн Никарагуа"},{"src":"/media/destinations/corn-islands/gallery-6-enhanced-20261005.webp","alt":"На фото: остров Корн Никарагуа"},{"src":"/media/destinations/corn-islands/gallery-7-enhanced-20261005.webp","alt":"На фото: остров Корн Никарагуа"},{"src":"/media/destinations/corn-islands/gallery-8-enhanced-20261005.webp","alt":"На фото: остров Корн Никарагуа"},{"src":"/media/destinations/corn-islands/gallery-9-enhanced-20261005.webp","alt":"На фото: остров Корн Никарагуа"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua"
 sourceSnapshot: "https://drive.google.com/file/d/1HifBGSSBCHExrIa--_Us9Kr_9rqRNVHd/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_wildlife","theme_fishing"]
 ---
 
 ## Острова Корн- в Карибском море

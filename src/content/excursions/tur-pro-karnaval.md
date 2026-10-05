@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 duration: "4 часа"
 language: []
 priceFrom: 180
@@ -25,6 +24,7 @@ notes: ["Возможны скидки для более чем одного ч�
 sourceUrl: "https://brasiltours.ru/tur-pro-karnaval"
 sourceSnapshot: "https://drive.google.com/file/d/1U9Cx_a9FSC_vngZv3Jp4hvSnTIoc5Rcj/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Как готовятся к Карнавалу

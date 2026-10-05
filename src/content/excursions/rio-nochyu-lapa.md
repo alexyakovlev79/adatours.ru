@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 duration: "4 часа"
 language:
   - "Русский"
@@ -37,6 +36,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/rio-nochyu-lapa"
 sourceSnapshot: "https://drive.google.com/file/d/1MYOOD9b5zZiY2rZCfKJ2nSpWe8904z7i/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Лапа — это сердце ночной жизни Рио-де-Жанейро, где царят сумасшедшие ритмы, огни и бесконечное веселье. Этот район известен как главная обитель карнавального духа, где ночи превращаются в нескончаемый праздник.

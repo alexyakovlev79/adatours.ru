@@ -20,7 +20,6 @@ destinations:
 - destination_nicaragua_ozero_nikaragua
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_managua
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -225,6 +224,8 @@ routeDestinations:
 - destination_nicaragua_ozero_nikaragua
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_managua
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 13 дней / 12 ночей  

@@ -9,7 +9,6 @@ country: "country_chile"
 destination: "destination_chile_puerto_natales_torres_del_pajne"
 destinationName: "Пуэрто Наталес & Торрес дель Пайне"
 relatedDestinations: []
-themes: []
 format: "Групповой тур"
 language: []
 priceFrom: 188
@@ -25,6 +24,7 @@ notes: ["Возможны скидки для более чем одного ч�
 sourceUrl: "https://brasiltours.ru/torres-del-pejn-gruppovoj-tur"
 sourceSnapshot: "https://drive.google.com/file/d/1ATJfIemDa3Gnv4VWmNryrVRk75gsGpdM/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 Групповой тур в национальный парк Торрес дель Пейн.

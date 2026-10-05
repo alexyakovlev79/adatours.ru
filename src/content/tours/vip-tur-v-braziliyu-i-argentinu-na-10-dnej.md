@@ -15,7 +15,6 @@ destinations:
 - destination_argentina_buenos_aires
 - destination_brazil_angra_dos_reis
 - destination_uruguay_montevideo
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -328,6 +327,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 10 дней / 9 ночей  

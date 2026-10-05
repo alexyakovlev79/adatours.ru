@@ -6,7 +6,6 @@ status: published
 title: Обзорная экскурсия по Сан-Луису на 4 часа
 country: country_brazil
 lead: Продолжительность около 4 часов.
-themes: []
 language: []
 route: []
 included: []
@@ -19,6 +18,7 @@ sourceSnapshot: https://drive.google.com/file/d/1IDFSVXvO7ggxj3FVSY3gp50CRWS4eBe
 hero:
   src: /media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp
   alt: Сан-Луис
+themes: ["theme_culture"]
 ---
 
 Продолжительность около 4 часов.

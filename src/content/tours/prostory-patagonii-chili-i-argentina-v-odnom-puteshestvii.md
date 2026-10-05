@@ -19,10 +19,6 @@ destinations:
   - destination_argentina_lednik_perito_moreno
   - destination_argentina_nacionalnyj_park_los_glasyares
   - destination_argentina_ozero_argentino
-themes:
-  - adventure
-  - culture
-  - nature
 audiences:
   - private
 format: "Индивидуальный тур"
@@ -280,6 +276,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/prostory-patagonii-chili-i-argentina-v-odnom-puteshestvii
 sourceSnapshot: page_texts_original/prostory-patagonii-chili-i-argentina-v-odnom-puteshestvii__a75a97ce.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 ## Аргентина, Чили и Патагония в одном маршруте

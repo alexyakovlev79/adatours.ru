@@ -33,8 +33,6 @@ languages:
   - кекчи
   - какчикел
   - мам
-relatedThemes:
-  - theme_adventure
 featureBands:
   - eyebrow: Колониальное наследие
     title: Антигуа-Гуатемала и вулканы

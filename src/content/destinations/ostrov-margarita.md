@@ -44,7 +44,6 @@ gallery:
     alt: "На фото: остров Маргариты в Венесуэле"
   - src: "/media/destinations/margarita-island/gallery-16-enhanced-20261003.webp"
     alt: "На фото: остров Маргариты в Венесуэле"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -53,6 +52,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venesuehle"
 sourceSnapshot: "https://drive.google.com/file/d/1xh_nMMcvzRw-sNi6HA3cw-m44N3peUZg/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_adventure"]
 ---
 
 ### Остров Маргарита -жемчужина Венесуэлы!

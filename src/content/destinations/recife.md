@@ -12,10 +12,6 @@ hero:
   src: /media/destinations/recife/hero-enhanced-20261001.webp
   alt: Ресифи, столица штата Пернамбуку в Бразилии
 gallery: []
-themes:
-  - culture
-  - beach
-  - gastronomy
 relatedDestinations:
   - destination_brazil_olinda
   - destination_brazil_porto_de_galinhas
@@ -35,6 +31,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-resife-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-resife-braziliya__2a4f3544.md
 updatedAt: 2026-09-24
+themes: ["theme_culture","theme_beach"]
 ---
 
 Ресифи вырос у воды. Река Капибариби, каналы и мосты делят центральную часть города на отдельные участки, за что его часто сравнивают с Венецией. К городской прогулке легко добавить атлантическое побережье.

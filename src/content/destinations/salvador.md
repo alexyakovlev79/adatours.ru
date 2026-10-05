@@ -16,10 +16,6 @@ gallery:
     alt: Церковь в Сальвадоре, Баия
   - src: /media/destinations/salvador/gallery-2-enhanced-20261001.webp
     alt: Городская сцена Сальвадора
-themes:
-  - culture
-  - gastronomy
-  - beach
 relatedDestinations:
   - destination_brazil_rio
 featuredTours: []
@@ -47,6 +43,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-salvador-de-baiya-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-salvador-de-baiya-braziliya__78c919ac.md
 updatedAt: 2026-09-24
+themes: ["theme_culture","theme_beach"]
 ---
 
 

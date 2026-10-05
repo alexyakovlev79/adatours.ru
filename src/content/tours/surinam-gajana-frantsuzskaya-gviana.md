@@ -31,7 +31,6 @@ destinations:
 - destination_suriname_porog_kilo_3
 - destination_suriname_jodensavanna
 - destination_suriname_redi_doti
-themes: []
 audiences: []
 route:
 - Гайана
@@ -292,6 +291,8 @@ routeDestinations:
 - destination_suriname_porog_kilo_3
 - destination_suriname_jodensavanna
 - destination_suriname_redi_doti
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 14 дней / 13 ночей  

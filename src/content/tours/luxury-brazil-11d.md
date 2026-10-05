@@ -14,10 +14,6 @@ destinations:
   - destination_brazil_angra_dos_reis
   - destination_brazil_ilha_grande
   - destination_argentina_puerto_iguasu
-themes:
-  - luxury
-  - nature
-  - beach
 audiences:
   - couples
   - private
@@ -216,6 +212,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/roskoshnaya-braziliya
 sourceSnapshot: page_texts_original/roskoshnaya-braziliya__7b56b4e6.md
 updatedAt: 2026-09-29
+primaryThemes: ["theme_beach","theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 ## Индивидуальное путешествие по 3 регионам Бразилии

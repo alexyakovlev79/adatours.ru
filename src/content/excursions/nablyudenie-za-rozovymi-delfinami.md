@@ -6,7 +6,6 @@ status: published
 title: Наблюдение за розовыми дельфинами в Амазонии
 country: country_brazil
 lead: Поездка позволяет увидеть розовых речных дельфинов, которые живут в амазонских водах.
-themes: []
 language: []
 route: []
 included: []
@@ -19,6 +18,7 @@ sourceSnapshot: https://drive.google.com/file/d/1HQQThKxYsgHoUkh7BEEU7noQF9DzgQD
 hero:
   src: https://brasiltours.ru/image/countries/brazil/dolphin-p.png
   alt: ''
+themes: ["theme_wildlife"]
 ---
 
 Поездка позволяет увидеть розовых речных дельфинов, которые живут в амазонских водах.

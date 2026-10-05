@@ -6,7 +6,6 @@ status: published
 title: Поездка к лагуне Сакайка
 country: country_venezuela
 lead: лагуна Сакайка, 3 часа.
-themes: []
 language: []
 route: []
 included: []
@@ -17,6 +16,7 @@ destination: destination_venezuela_kanajma_i_vodopad_anhel
 destinationName: Канайма и водопад Анхель
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1NwKWeRwfRs2h6WlEadgXDdGIFaDH2hCK/view?usp=drivesdk
+themes: ["theme_wildlife"]
 ---
 
 лагуна Сакайка, 3 часа.

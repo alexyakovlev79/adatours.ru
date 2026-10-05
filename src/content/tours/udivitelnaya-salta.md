@@ -16,7 +16,6 @@ destinations:
 - destination_argentina_tilkara
 - destination_argentina_salinas_grandes
 - destination_argentina_ukiya
-themes: []
 audiences: []
 route:
 - Сальта
@@ -147,6 +146,8 @@ routeDestinations:
 - destination_argentina_tilkara
 - destination_argentina_salinas_grandes
 - destination_argentina_ukiya
+primaryThemes: ["theme_wildlife","theme_gastronomy_wine"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 5 дней / 4 ночи  

@@ -12,7 +12,6 @@ hero:
   src: "/media/countries/guyana/featureBands-2-enhanced-20261002.webp"
   alt: "На фото: Саванны Рупунуни в Гайане"
 gallery: []
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -21,6 +20,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-savanny-rupununi-v-gajane"
 sourceSnapshot: "https://drive.google.com/file/d/1YUz0BX6kj3kQy8Cuwrd8rsundbuSxDqx/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 Саванны Рупунуни занимают практически всю юго-западную часть Гайаны, простираясь от древних экваториальных лесов Гвианского плато до тропических джунглей Амазонии.

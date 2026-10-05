@@ -32,7 +32,6 @@ destinations:
 - destination_bolivia_kopakabana
 - destination_bolivia_ozero_titikaka_boliviya
 - destination_bolivia_lunnaya_dolina_la_pas
-themes: []
 audiences: []
 route:
 - Санта-Крус
@@ -267,6 +266,8 @@ routeDestinations:
 - destination_bolivia_kopakabana
 - destination_bolivia_ozero_titikaka_boliviya
 - destination_bolivia_lunnaya_dolina_la_pas
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 12 дней / 11 ночей  

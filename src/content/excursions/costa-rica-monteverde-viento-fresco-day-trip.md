@@ -6,7 +6,6 @@ status: published
 title: Облачный лес Монтеверде и водопады Viento Fresco
 country: country_costa_rica
 lead: Экскурсия рассчитана примерно на 12 часов и начинается рано утром.
-themes: []
 language: []
 route: []
 included: []
@@ -21,6 +20,7 @@ sourceSnapshot: https://drive.google.com/file/d/1rwIPfMqcXTTB1gUsIevIdvvUEq0ASXT
 hero:
   src: https://brasiltours.ru/image/costa%20rica%20monteverde%20cloud%20forest.png
   alt: 'на фото: Облачный лес Монтеверде в Коста-Рике'
+themes: ["theme_wildlife"]
 ---
 
 Экскурсия рассчитана примерно на 12 часов и начинается рано утром.

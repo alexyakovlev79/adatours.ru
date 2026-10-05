@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language: []
 priceFrom: 170
@@ -38,6 +37,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/royal-petropolis-private-tour-full-day"
 sourceSnapshot: "https://drive.google.com/file/d/1MXzcSWkoK2IfMSfZNiB_Fb-bKsLdpDSH/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Петрополис — это очаровательный, живописный городок, известный как «Имперский город»,

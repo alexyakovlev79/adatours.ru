@@ -6,7 +6,6 @@ status: published
 title: Полет на вертолете над Ушуайей
 country: country_argentina
 lead: Предусмотрена возможность полета на вертолете над Ушуайей или заливом Дрейка продолжительностью около **10 минут**.
-themes: []
 language: []
 route: []
 included: []
@@ -19,6 +18,7 @@ sourceSnapshot: https://drive.google.com/file/d/1J5MJHHhSev7vjEDYzyO5nN_KFCu16ec
 hero:
   src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg
   alt: Ушуайя
+themes: ["theme_wildlife"]
 ---
 
 Предусмотрена возможность полета на вертолете над Ушуайей или заливом Дрейка продолжительностью около **10 минут**.

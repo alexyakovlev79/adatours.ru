@@ -9,7 +9,6 @@ countries:
 destinations:
 - destination_brazil_rio
 - destination_brazil_buzios
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -125,6 +124,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_buzios
+primaryThemes: ["theme_beach","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

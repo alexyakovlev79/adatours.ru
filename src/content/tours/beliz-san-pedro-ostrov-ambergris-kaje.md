@@ -9,7 +9,6 @@ countries:
 destinations:
 - destination_belize_ambergris_kaje
 - destination_belize_morskoj_zapovednik_hol_chan
-themes: []
 audiences: []
 route:
 - Сан-Педро
@@ -117,6 +116,8 @@ routeCountries:
 routeDestinations:
 - destination_belize_ambergris_kaje
 - destination_belize_morskoj_zapovednik_hol_chan
+primaryThemes: ["theme_beach"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 5 дней / 4 ночи  

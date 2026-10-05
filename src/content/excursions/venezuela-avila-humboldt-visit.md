@@ -6,7 +6,6 @@ status: published
 title: Гора Авила и исторический отель Humboldt
 country: country_venezuela
 lead: Подъем на фуникулере или автомобилях 4x4 на гору Авила, около 2170 м над уровнем моря.
-themes: []
 language: []
 route: []
 included: []
@@ -17,6 +16,7 @@ destination: destination_venezuela_nacionalnyj_park_avila
 destinationName: Национальный парк Авила
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1XH92Fy0Amt9ucbzA6OjA_kW6lI_bkN8I/view?usp=drivesdk
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 Подъем на фуникулере или автомобилях 4x4 на гору Авила, около 2170 м над уровнем моря.

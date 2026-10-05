@@ -22,7 +22,6 @@ gallery:
     alt: "На фото: город Чиклайо в Перу"
   - src: "https://brasiltours.ru/image/catalog/category/f/i/file_9.jpg"
     alt: "На фото: город Чиклайо в Перу"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -31,6 +30,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-chiklajo-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1db2YPcc2uF7jZpP_4CZM4FX9cC1JGE0i/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 Город в Перу, расположен в 13 километрах от тихоокеанского побережья.Чиклайо основан в основан в 1720 году францисканскими монахами.

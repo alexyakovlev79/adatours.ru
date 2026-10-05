@@ -22,7 +22,6 @@ gallery:
   alt: 'На фото: соленое озеро (солончак) Уюни'
 - src: /media/destinations/uyuni/gallery-5-enhanced-20261003.webp
   alt: 'На фото: Джип тур на соленое озеро (солончак) Уюни'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -31,6 +30,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-solenoe-ozero-solonchak-uyuni-v-bolivii
 sourceSnapshot: https://drive.google.com/file/d/11bguP55_TE3vs4I70f3tiZK26ZtZQO3j/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_wildlife"]
 ---
 
 Высохшее соляное озеро Уюни - главная достопримечательность Боливии. Это самое большое в мире высохшее соляное озеро, поверхность его блестит и мерцает на солнце. В сезон дождей, с ноября по март, озеро-солончак Уюни превращается в огромное зеркало - соляные соты покрываются тончайшим слоем прозрачной воды, в которой отражается небо. В сухой сезон поверхность озера превращается в огромную, плоскую, слепяще-белую пустыню. И круглый год оно поражает своей неземной красотой!

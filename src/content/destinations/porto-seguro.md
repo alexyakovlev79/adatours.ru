@@ -12,10 +12,6 @@ hero:
   src: /media/destinations/porto-seguro/hero-enhanced-20261001.webp
   alt: Порту-Сегуру на побережье штата Баия
 gallery: []
-themes:
-  - beach
-  - culture
-  - history
 relatedDestinations:
   - destination_brazil_itacare
   - destination_brazil_morro_de_sao_paulo
@@ -35,6 +31,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-v-portu-seguru-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-plyazhnye-tury-v-portu-seguru-braziliya__ec39380d.md
 updatedAt: 2026-09-25
+themes: ["theme_beach","theme_culture"]
 ---
 
 Порту-Сегуру находится на юге штата Баия, на Атлантическом побережье. Здесь легко соединить прогулки по исторической части города с отдыхом у океана.

@@ -8,7 +8,6 @@ countryId: "country_mexico"
 destinationType: "city"
 summary: "Столица штата Халиско знакомит с колониальными церквями, музеями и традициями Мексики. Гвадалахару называют «Городом Роз» за ее парки и сады."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/guadalajara/hero-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"}
 gallery: [{"src":"/media/destinations/guadalajara/gallery-1-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-2-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-3-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-4-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-5-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-6-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-7-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-8-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-gvadalahara-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1Jfjc1pGwW1J0Qdqu-tN6unUMX_hZBjw8/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Гвадалахара - "город роз" Мексики

@@ -10,7 +10,6 @@ summary: "Национальный парк Ринкон-де-ла-Вьеха н
 searchAliases: []
 hero: {"src":"/media/destinations/rincon-de-la-vieja/hero-enhanced-20261004.webp","alt":"На фото: Ринкон-де-ла-Вьехо в Коста-Рике"}
 gallery: []
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-vulkan-rinkon-de-la-vekho-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1Z33ouUu6HOntofe3_uwGQuAWUsyDiFbE/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_adventure"]
 ---
 
 ## Вулкан, грязи и рафтинг: что посмотреть в Ринкон-де-ла-Вьеха, Коста-Рика

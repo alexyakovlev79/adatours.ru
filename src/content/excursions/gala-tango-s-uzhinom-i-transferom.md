@@ -9,7 +9,6 @@ searchAliases:
   - "Гала Танго"
 country: country_argentina
 destination: destination_argentina_buenos_aires
-themes: []
 language: []
 hero:
   src: https://brasiltours.ru/image/countries/argentina/new-photos/daniel-tong-vtjtaz-rxxi-unsplash.jpg
@@ -27,6 +26,7 @@ notes:
   - "Возможна замена на аналогичный ресторан."
 sourceSnapshot: page_texts_original/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej__374153d4.md
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Вечером предусмотрено Gala Tango.

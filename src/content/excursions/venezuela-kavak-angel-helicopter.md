@@ -6,7 +6,6 @@ status: published
 title: Каньон Кавак и Сальто-Анхель на вертолете
 country: country_venezuela
 lead: вертолетная программа к Сальто-Анхелю и каньону Кавак, 3,5 часа, минимум 4 человека;
-themes: []
 language: []
 route: []
 included: []
@@ -21,6 +20,7 @@ sourceSnapshot: https://drive.google.com/file/d/1NwKWeRwfRs2h6WlEadgXDdGIFaDH2hC
 hero:
   src: https://brasiltours.ru/image/canaima%20nat%20park4.png
   alt: 'На фото: водопад Сальта-Анхель в Венесуэле'
+themes: ["theme_wildlife"]
 ---
 
 вертолетная программа к Сальто-Анхелю и каньону Кавак, 3,5 часа, минимум 4 человека;

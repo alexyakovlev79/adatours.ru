@@ -6,7 +6,6 @@ status: published
 title: Обзорная экскурсия по Лиме и Музей золота
 country: country_peru
 lead: Сити-тур по Лиме и Музей золота
-themes: []
 language: []
 route: []
 included: []
@@ -20,6 +19,7 @@ sourceSnapshot: https://drive.google.com/file/d/14g9D9z3HEkt3Lx1O7W-pvn45NKMRrdk
 hero:
   src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
   alt: ''
+themes: ["theme_culture"]
 ---
 
 Сити-тур по Лиме и Музей золота

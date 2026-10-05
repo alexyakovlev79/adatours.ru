@@ -16,7 +16,6 @@ destinations:
 - destination_argentina_tigre
 - destination_argentina_san_isidro_buenos_ajres
 - destination_uruguay_montevideo
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро, 4 ночи
@@ -258,6 +257,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
+primaryThemes: ["theme_events"]
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 **Длительность:** 10 дней / 9 ночей, 05.02 - 14.02  

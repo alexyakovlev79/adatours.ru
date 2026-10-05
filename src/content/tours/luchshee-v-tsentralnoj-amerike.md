@@ -43,7 +43,6 @@ destinations:
 - destination_panama_david
 - destination_panama_panama_siti
 - destination_panama_nacionalnyj_park_chagres
-themes: []
 audiences: []
 route:
 - Гватемала
@@ -719,6 +718,8 @@ routeDestinations:
 - destination_panama_david
 - destination_panama_panama_siti
 - destination_panama_nacionalnyj_park_chagres
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 24 дня / 23 ночи

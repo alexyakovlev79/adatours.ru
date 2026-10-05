@@ -24,7 +24,6 @@ destinations:
 - destination_chile_ahu_vajhu
 - destination_chile_ahu_hanga_pukure
 - destination_chile_tahai
-themes: []
 audiences: []
 route:
 - Сантьяго
@@ -208,6 +207,8 @@ routeDestinations:
 - destination_chile_ahu_vajhu
 - destination_chile_ahu_hanga_pukure
 - destination_chile_tahai
+primaryThemes: ["theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 6 дней / 5 ночей  

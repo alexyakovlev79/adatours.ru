@@ -9,14 +9,6 @@ summary: >-
 hero:
   src: /media/themes/semejnye-tury/hero-enhanced-20261001.webp
   alt: Семейное путешествие
-featuredCountries:
-  - country_brazil
-  - country_argentina
-  - country_peru
-  - country_dominican_republic
-  - country_mexico
-  - country_nicaragua
-
 sourceUrl: https://brasiltours.ru/semejnyj-otdykh
 sourceSnapshot: page_texts_original/semejnyj-otdykh__12a9f6fe.md
 updatedAt: 2026-10-02

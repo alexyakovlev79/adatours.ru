@@ -13,10 +13,6 @@ destinations:
   - destination_brazil_lencois_maranhenses
   - destination_brazil_barrejrinyas
   - destination_brazil_kampo_grande
-themes:
-  - wildlife
-  - nature
-  - adventure
 audiences:
   - private
   - couples
@@ -186,6 +182,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/chudesnaya-tajna-brazilii
 sourceSnapshot: page_texts_original/chudesnaya-tajna-brazilii__72837379.md
 updatedAt: 2026-09-29
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 ## Пантанал, Бонито, Ленсойс-Мараньенсис и Сан-Луис

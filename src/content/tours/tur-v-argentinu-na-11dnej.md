@@ -35,11 +35,6 @@ routeDestinations:
   - destination_argentina_puerto_iguasu
   - destination_argentina_lednik_perito_moreno
   - destination_argentina_nacionalnyj_park_terra_del_fuego
-themes:
-  - luxury
-  - culture
-  - nature
-  - wildlife
 audiences:
   - private
   - luxury
@@ -300,6 +295,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/tur-v-argentinu-na-11dnej
 sourceSnapshot: page_texts_original/tur-v-argentinu-na-11dnej__b1e0208b.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 Программа собрана в формате VIP-путешествия. В Буэнос-Айресе предусмотрено размещение в Four Seasons Buenos Aires, в Эль-Калафате - Eolo Patagonias Spirit Lodge с полным пансионом, в Ушуайе - Arakur Ushuaia, а у водопадов - Belmond das Cataratas. Включены индивидуальные трансферы, экскурсии с гидом и входные билеты в национальные парки.

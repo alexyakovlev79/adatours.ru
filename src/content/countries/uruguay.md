@@ -20,11 +20,6 @@ bestTime: Климат субтропический; самый жаркий м�
 currency: UYU
 languages:
   - испанский
-relatedThemes:
-  - theme_beach
-  - theme_fishing
-  - theme_spa
-  - theme_gastronomy_wine
 featureBands:
   - eyebrow: Столица и культура
     title: Монтевидео

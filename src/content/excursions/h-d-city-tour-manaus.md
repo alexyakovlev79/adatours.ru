@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_amazon"
 destinationName: "Манаус и Амазония"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 190
 currency: "USD"
@@ -29,6 +28,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/h-d-city-tour-manaus"
 sourceSnapshot: "https://drive.google.com/file/d/1eHIbFo469JaL2g4WuIsHnszpyBzAhbBM/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Стоимость экскурсии — $190 на человека.

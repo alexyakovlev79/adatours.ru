@@ -1,4 +1,5 @@
 ---
+import { INTERESTS, themeRelevance, countLabel } from '../../lib/interest-model.mjs';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -7,44 +8,31 @@ import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
 
-const themes = (await getCollection('themes', ({ data }) =>
-  data.locale === 'ru' && isActiveEntity(data)
-)).sort((a, b) => (a.data.slug > b.data.slug ? 1 : -1));
+const [entries, tours] = await Promise.all([getCollection('themes'), getCollection('tours')]);
+const themes = INTERESTS.map((interest) => entries.find((entry) => entry.data.id === interest.id && entry.data.locale === 'ru' && isActiveEntity(entry))).filter(Boolean);
+const tourCount = (id) => tours.filter((entry) => entry.data.locale === 'ru' && isActiveEntity(entry) && themeRelevance(entry, id)).length;
 
-const spaIndex = themes.findIndex((theme) => theme.data.slug === 'spa');
-const weddingsIndex = themes.findIndex((theme) => theme.data.slug === 'svadby-i-romantika');
-
-if (spaIndex !== -1 && weddingsIndex !== -1) {
-  [themes[spaIndex], themes[weddingsIndex]] = [themes[weddingsIndex], themes[spaIndex]];
-}
-
-const adventuresIndex = themes.findIndex((theme) => theme.data.slug === 'priklyucheniya');
-const fishingIndex = themes.findIndex((theme) => theme.data.slug === 'rybalka');
-
-if (adventuresIndex !== -1 && fishingIndex !== -1) {
-  [themes[adventuresIndex], themes[fishingIndex]] = [themes[fishingIndex], themes[adventuresIndex]];
-}
 ---
 
 <BaseLayout
   title="Туры по интересам в Бразилию и Латинскую Америку"
-  description="Рыбалка, мото-туры, гастрономия и вино, семейные поездки, пляжи, приключения, дайвинг, SPA, свадьбы и романтические путешествия."
+  description="13 интересов: природа и животные, культура и история, круизы и экспедиции, события и праздники, приключения, пляжи, гастрономия, рыбалка, дайвинг, мото-туры, семейные поездки, SPA и романтика."
 >
   <Hero
     eyebrow="По интересам"
     title="Начните с того, ради чего едете"
-    intro="Рыбалка, вино, пляжи, дайвинг, семейная поездка или путешествие вдвоем. Мы подберем географию и программу под ваш интерес."
+    intro="Животные, древние города, океан, экспедиция, праздник или путешествие вдвоем. Мы подберем географию и программу под ваш интерес."
     image="/media/pages/po-interesam/hero-enhanced-20261001.webp"
   />
 
   <EditorialStatement
-    eyebrow="9 направлений"
+    eyebrow={`${themes.length} интересов`}
     text="Одна тема может задать всю поездку или стать ее лучшей частью."
   />
 
   {themes.map((theme, index) => (
     <DestinationBand
-      eyebrow="По интересам"
+      eyebrow={countLabel(tourCount(theme.data.id))}
       title={theme.data.name}
       text={theme.data.summary}
       image={theme.data.hero?.src}

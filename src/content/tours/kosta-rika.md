@@ -11,7 +11,6 @@ destinations:
 - destination_costa_rica_nacionalnyj_park_braulio_karrilo
 - destination_costa_rica_tortuguero
 - destination_costa_rica_vodopady_la_pas
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -177,6 +176,8 @@ routeDestinations:
 - destination_costa_rica_nacionalnyj_park_braulio_karrilo
 - destination_costa_rica_tortuguero
 - destination_costa_rica_vodopady_la_pas
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_gastronomy_wine"]
 ---
 
 **Длительность:** 5 дней / 4 ночи

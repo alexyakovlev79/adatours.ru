@@ -9,7 +9,6 @@ country: "country_chile"
 destination: "destination_chile_santyago_de_chili"
 destinationName: "Сантьяго-де-Чили"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 80
 currency: "USD"
@@ -31,6 +30,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/obzornaja-jekskursija-po-sant-jago"
 sourceSnapshot: "https://drive.google.com/file/d/1v41hiMl-VuzYEC5D1qG-mK-W1DOl69Pe/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Стоимость экскурсии — $80 на человека.

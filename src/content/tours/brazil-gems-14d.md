@@ -18,11 +18,6 @@ destinations:
   - destination_brazil_kongonyas
   - destination_brazil_mariana
   - destination_brazil_petropolis
-themes:
-  - culture
-  - history
-  - beach
-  - nature
 audiences:
   - private
   - couples
@@ -356,6 +351,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/v-poiskakh-dragotsennostej
 sourceSnapshot: page_texts_original/v-poiskakh-dragotsennostej__01475926.md
 updatedAt: 2026-09-29
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_wildlife"]
 ---
 
 Поездка сочетает большие города, колониальную архитектуру, историю золотой добычи, современное искусство, пляжный отдых и 2 стороны одного из главных природных объектов Южной Америки.

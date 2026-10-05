@@ -18,7 +18,6 @@ gallery:
     alt: "На фото: курорт Пунта дель Эсте в Уругвае"
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN19637_6.jpg"
     alt: "На фото: курорт Пунта дель Эсте в Уругвае"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -27,6 +26,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-punta-del-ehste-v-urugvae"
 sourceSnapshot: "https://drive.google.com/file/d/1j4hteqGcwQ9DrWN-TWLRc1N611u-RjBf/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_beach"]
 ---
 
 ### Пунта дель Эсте- город-курорт Уругвая!

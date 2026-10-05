@@ -8,7 +8,6 @@ countries:
 - country_brazil
 destinations:
 - destination_brazil_amazon
-themes: []
 audiences: []
 route:
 - Манаус
@@ -81,6 +80,8 @@ routeCountries:
 - country_brazil
 routeDestinations:
 - destination_brazil_amazon
+primaryThemes: ["theme_fishing"]
+themes: ["theme_wildlife"]
 ---
 
 **Базовая программа:** 3 дня / 2 ночи  

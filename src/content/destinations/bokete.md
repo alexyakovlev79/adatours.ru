@@ -8,7 +8,6 @@ countryId: "country_panama"
 destinationType: "city"
 summary: "Горный город среди кофейных и цитрусовых плантаций. Из Бокете отправляются к вулкану Бару, водопадам и парку Ла Амистад."
 searchAliases: []
-themes: []
 hero: {"src":/media/countries/panama/featureBands-2-enhanced-20261002.webp,"alt":"На фото: горный курорт Бокете в Панаме"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/1/4/1472538871_beedad6983_o.jpg","alt":"На фото: горный курорт Бокете в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/b/o/boquete_2.jpg","alt":"На фото: горный курорт Бокете в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/a/n/antigua-cathedral-ruins.jpg","alt":"На фото: горный курорт Бокете в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/c/h/ch-boquete-29.jpg","alt":"На фото: горный курорт Бокете в Панаме"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-gornyj-kurort-bokete-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1VXp3p7fEX-mlAdSlumUN9pZ110WDsAGY/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_gastronomy_wine","theme_wildlife"]
 ---
 
 ## Вулкан Бару и заповедник Ла-Амистад: что посмотреть в Бокете, Панама

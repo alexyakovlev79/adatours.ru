@@ -38,9 +38,6 @@ regions:
   - Остров Десепшен
   - Пролив Дрейка
 bestTime: Круизный сезон зависит от маршрута и даты экспедиции
-relatedThemes:
-  - theme_luxury
-  - theme_adventure
 featureBands:
   - eyebrow: Экспедиция
     title: Айсберги и высадки с воды

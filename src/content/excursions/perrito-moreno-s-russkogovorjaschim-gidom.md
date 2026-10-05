@@ -9,7 +9,6 @@ searchAliases:
   - Перито Морено с русским гидом
 country: country_argentina
 destination: destination_argentina_el_calafate
-themes: []
 language:
   - русский
 priceFrom: 188
@@ -32,6 +31,7 @@ sourceSnapshot: page_texts_newstep/Excursions/perrito-moreno-s-russkogovorjaschi
 updatedAt: 2026-09-30
 relatedDestinations:
   - destination_argentina_lednik_perito_moreno
+themes: ["theme_wildlife"]
 ---
 
 Экскурсия проходит в районе Эль-Калафате. Сопровождение — русскоговорящий гид.

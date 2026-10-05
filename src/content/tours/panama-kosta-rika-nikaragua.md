@@ -23,7 +23,6 @@ destinations:
 - destination_nicaragua_managua
 - destination_nicaragua_masaya
 - destination_nicaragua_ostrov_zopango
-themes: []
 audiences: []
 route:
 - Панама-Сити
@@ -228,6 +227,8 @@ routeDestinations:
 - destination_nicaragua_managua
 - destination_nicaragua_masaya
 - destination_nicaragua_ostrov_zopango
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 13 дней  

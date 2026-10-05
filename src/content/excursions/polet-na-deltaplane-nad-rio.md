@@ -10,7 +10,6 @@ searchAliases:
   - Hang gliding Rio
 country: country_brazil
 destination: destination_brazil_rio
-themes: []
 duration: 6 часов
 language:
   - английский
@@ -46,6 +45,7 @@ notes:
 sourceUrl: https://brasiltours.ru/polet-na-deltaplane-nad-rio
 sourceSnapshot: page_texts_newstep/Excursions/polet-na-deltaplane-nad-rio__e29d3472.md
 updatedAt: 2026-09-30
+themes: ["theme_adventure"]
 ---
 
 Экскурсия начинается с трансфера из отеля к горе Педра-Бонита в лесу Тижука. Со стартовой площадки открывается широкий вид на Рио-де-Жанейро, зеленые склоны и Атлантический океан.

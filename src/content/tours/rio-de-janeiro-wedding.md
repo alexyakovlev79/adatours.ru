@@ -12,7 +12,6 @@ countries:
   - country_brazil
 destinations:
   - destination_brazil_rio
-themes: [romance]
 audiences: [couples, private]
 route:
   - Рио-де-Жанейро
@@ -39,6 +38,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/rio-de-janeiro-wedding
 sourceSnapshot: rio-de-janeiro-wedding__b75c3322.md
 updatedAt: 2026-09-30
+primaryThemes: ["theme_weddings_romance"]
+themes: []
 ---
 
 ## Свадебная церемония в Рио-де-Жанейро

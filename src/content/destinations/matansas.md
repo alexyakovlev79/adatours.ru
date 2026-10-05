@@ -10,7 +10,6 @@ summary: "Матансас называют Кубинской Венецией 
 searchAliases: []
 hero: {"src":"/media/destinations/matanzas/hero-enhanced-20261004.webp","alt":"На фото: карстовые пещеры в городе Матансас на острове Куба"}
 gallery: [{"src":"/media/destinations/matanzas/gallery-1-enhanced-20261004.webp","alt":"На фото: в городе Матансас на острове Куба"},{"src":"/media/destinations/matanzas/gallery-2-enhanced-20261004.webp","alt":"На фото: в городе Матансас на острове Куба"},{"src":"/media/destinations/matanzas/gallery-3-enhanced-20261004.webp","alt":"На фото: в городе Матансас на острове Куба"},{"src":"/media/destinations/matanzas/gallery-4-enhanced-20261004.webp","alt":"На фото: в городе Матансас на острове Куба"},{"src":"/media/destinations/matanzas/gallery-5-enhanced-20261004.webp","alt":"На фото: в городе Матансас на острове Куба"},{"src":"/media/destinations/matanzas/gallery-6-enhanced-20261004.webp","alt":"На фото: в городе Матансас на острове Куба"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-matansas-na-ostrove-kuba"
 sourceSnapshot: "https://drive.google.com/file/d/10T-tS-MgLPuIJITIsptBpN0cHj_V7GKI/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 ## Матантас - "Кубинская Венеция"

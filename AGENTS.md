@@ -6,6 +6,8 @@
 
 | Задача | Workflow |
 |---|---|
+| Разметка интересов / тематические страницы | `docs/workflows/interests.md` |
+
 | Страна | `docs/workflows/countries.md` |
 | Известное место с готовой записью источников | `docs/workflows/destinations.md` |
 | Новое место встретилось в туре/экскурсии, материалов места ещё нет | `docs/workflows/destination-reservations.md`: сопоставление и резерв |
@@ -18,6 +20,8 @@
 | Перенести текст сущности на фото влево / вправо | `docs/workflows/master.md`, раздел 8.4: только `imageTextAlign` в целевом MD |
 
 `docs/workflows/urls.md` — единый контракт английских URL: общие каталоги `/country/`, `/places/`, `/tours/`, `/excursions/`, `/interests/`; country-first иерархия объектов сохраняется. Русская транслитерация для новых slug запрещена. Существующие stable ID и точные `contentPath` не переименовываются. Для действительно нового резерва нужен явный `slug` либо латинское `englishName`; существующее место переиспользуется без этих полей.
+
+**Интересы:** закрытый справочник из 13 ID в `src/data/interest-registry.json`. Активный Tour: 1–2 `primaryThemes` + непересекающиеся дополнительные `themes`; Excursion/Destination: собственные `themes`, без наследования. `Country.relatedThemes` и ручные списки Theme запрещены. Метки production MD и точных source-index entry/catalog обновляются вместе. Полный контракт: `docs/workflows/interests.md`.
 
 `docs/workflows/master.md` — общий контракт и справочник, не обязательное полное чтение перед каждой сущностью. Исторические handoff и прежние версии workflow не задают действия.
 

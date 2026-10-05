@@ -9,7 +9,6 @@ country: "country_argentina"
 destination: "destination_argentina_ushuajya"
 destinationName: "Ушуайя"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 76
 currency: "USD"
@@ -31,6 +30,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/argentina-ushuaia-tierra-del-fuego-national-park"
 sourceSnapshot: "https://drive.google.com/file/d/1jyurF_X1XtNpSL1mAfKStw7uf51xJrkE/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 Стоимость экскурсии — $76 на человека.

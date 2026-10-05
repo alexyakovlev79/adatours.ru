@@ -7,7 +7,6 @@ title: Вечерняя прогулка по Амазонии с наблюде
 country: country_brazil
 lead: Отправление из лоджа на каноэ или моторной лодке. В темноте можно услышать ночные джунгли и увидеть аллигаторов или
   других животных.
-themes: []
 language: []
 route: []
 included: []
@@ -17,6 +16,7 @@ updatedAt: '2026-10-02'
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/1HQQThKxYsgHoUkh7BEEU7noQF9DzgQD1/view?usp=drivesdk
+themes: ["theme_wildlife"]
 ---
 
 Отправление из лоджа на каноэ или моторной лодке. В темноте можно услышать ночные джунгли и увидеть аллигаторов или других животных.

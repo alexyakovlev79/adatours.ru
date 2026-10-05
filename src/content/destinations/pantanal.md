@@ -12,10 +12,6 @@ hero:
   src: /media/destinations/pantanal/hero-enhanced-20261001.webp
   alt: Природа Пантанала в Бразилии
 gallery: []
-themes:
-  - nature
-  - wildlife
-  - luxury
 relatedDestinations:
   - destination_brazil_amazon
   - destination_brazil_rio
@@ -46,6 +42,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii
 sourceSnapshot: page_texts_original/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii__a1533a1e.md
 updatedAt: 2026-09-24
+themes: ["theme_wildlife","theme_fishing"]
 ---
 
 Пантанал – это огромные затопляемые равнины, реки и богатая живая природа. Сюда едут наблюдать за птицами, кайманами, капибарами, гигантскими выдрами, муравьедами, анакондами и ягуарами.

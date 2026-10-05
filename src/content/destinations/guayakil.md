@@ -20,7 +20,6 @@ gallery:
     alt: "На фото: город Гуаякиль в Зквадоре"
   - src: "https://brasiltours.ru/image/catalog/category/8/8/889871385_a1bfd0c886.jpg"
     alt: "На фото: город Гуаякиль в Зквадоре"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -29,6 +28,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gorod-guayakil-v-ehkvadore"
 sourceSnapshot: "https://drive.google.com/file/d/1V27NT_iuWZdGRq4sqyjLobmMHNjGzHBo/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 ## Малекон 2000 и Лас-Пеньяс: что посмотреть в Гуаякиле, Эквадор

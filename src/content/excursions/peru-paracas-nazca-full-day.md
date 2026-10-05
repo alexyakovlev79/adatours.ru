@@ -6,7 +6,6 @@ status: published
 title: Паракас, острова Бальестас и полет над линиями Наска
 country: country_peru
 lead: Рано утром выезд из Лимы в Паракас. В 8:00 из порта начинается морская экскурсия к Андскому Канделябру и островам Бальестас.
-themes: []
 language: []
 route: []
 included: []
@@ -23,6 +22,7 @@ sourceSnapshot: https://drive.google.com/file/d/1RQrUA0MJJcXtAk5TRTJ1qsLE7KBHUf3
 hero:
   src: /media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp
   alt: 'на фото: Полет над Наска в Перу'
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 Рано утром выезд из Лимы в Паракас. В 8:00 из порта начинается морская экскурсия к Андскому Канделябру и островам Бальестас.

@@ -14,7 +14,6 @@ destinations:
 - destination_brazil_tiradentis
 - destination_brazil_kapitolio
 - destination_brazil_ozero_furnash
-themes: []
 audiences: []
 route:
 - Сан-Паулу
@@ -216,6 +215,8 @@ routeDestinations:
 - destination_brazil_tiradentis
 - destination_brazil_kapitolio
 - destination_brazil_ozero_furnash
+primaryThemes: ["theme_motorcycle"]
+themes: ["theme_adventure","theme_culture"]
 ---
 
 **Длительность:** 12 дней / 11 ночей  

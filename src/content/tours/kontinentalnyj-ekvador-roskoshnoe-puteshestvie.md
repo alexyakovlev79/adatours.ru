@@ -16,7 +16,6 @@ destinations:
 - destination_ecuador_ozero_panyakocha
 - destination_ecuador_biologicheskij_zapovednik_limonkocha
 - destination_ecuador_ozero_limpiopungo
-themes: []
 audiences: []
 route:
 - Кито
@@ -307,6 +306,8 @@ routeDestinations:
 - destination_ecuador_ozero_panyakocha
 - destination_ecuador_biologicheskij_zapovednik_limonkocha
 - destination_ecuador_ozero_limpiopungo
+primaryThemes: ["theme_wildlife","theme_cruises"]
+themes: ["theme_culture","theme_spa"]
 ---
 
 **Длительность:** 9 дней / 8 ночей

@@ -20,7 +20,6 @@ destinations:
 - destination_argentina_tigre
 - destination_argentina_san_isidro_buenos_ajres
 - destination_uruguay_montevideo
-themes: []
 audiences: []
 route:
 - Буэнос-Айрес
@@ -267,6 +266,8 @@ routeDestinations:
 - destination_argentina_nacionalnyj_park_los_glasyares
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
+primaryThemes: ["theme_wildlife","theme_gastronomy_wine"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 12 дней / 11 ночей

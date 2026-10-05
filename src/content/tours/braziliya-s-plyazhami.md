@@ -13,7 +13,6 @@ destinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_recife
 - destination_brazil_porto_de_galinhas
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (3 ночи)
@@ -207,6 +206,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_recife
 - destination_brazil_porto_de_galinhas
+primaryThemes: ["theme_beach"]
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 **Длительность:** 8 дней / 7 ночей  

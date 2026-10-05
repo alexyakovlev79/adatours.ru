@@ -9,7 +9,6 @@ country: "country_argentina"
 destination: "destination_argentina_salta"
 destinationName: "Сальта"
 relatedDestinations: []
-themes: []
 duration: "8 часов"
 language: ["Английский"]
 priceFrom: 371
@@ -25,6 +24,7 @@ notes: ["Вечером — возвращение в Сальту.","Прини
 sourceUrl: "https://brasiltours.ru/jekskursija-v-kafazhate"
 sourceSnapshot: "https://drive.google.com/file/d/1MZ_PV5_o3r5lmxmMD4TO1xg6RtBmCt8V/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_gastronomy_wine","theme_wildlife","theme_culture"]
 ---
 
 Экскурсия на целый день с англоговорящим гидом и частным трансфером в симпатичный городок Кафажате, расположенный в долине Кальчакес в окружении живописных рек и виноградников.

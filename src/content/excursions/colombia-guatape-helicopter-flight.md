@@ -6,7 +6,6 @@ status: published
 title: Вертолетная прогулка над долиной Гуатапе
 country: country_colombia
 lead: Можно заказать вертолетную прогулку над долиной.
-themes: []
 language: []
 route: []
 included: []
@@ -17,6 +16,7 @@ destination: destination_colombia_guatape
 destinationName: Гуатапе
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1qY85mKDod9WRGJeTpJZPYPD6j-F48v7n/view?usp=drivesdk
+themes: ["theme_wildlife"]
 ---
 
 Можно заказать вертолетную прогулку над долиной.

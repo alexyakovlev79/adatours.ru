@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 85
 currency: "USD"
@@ -24,6 +23,7 @@ notes: ["Возможны скидки для более чем одного ч�
 sourceUrl: "https://brasiltours.ru/buzios-full-day-tour-with-boat"
 sourceSnapshot: "https://drive.google.com/file/d/1O6zyfMVyWwLDWHAo7ncZfXeGY9l-YNtF/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach"]
 ---
 
 Тур в Бузиос с морской прогулкой.

@@ -18,7 +18,6 @@ gallery:
     alt: "На фото: петроглиф Канделябр в Перу"
   - src: "https://brasiltours.ru/image/catalog/category/P/a/Paracas_Peru_vista_foto_6_DLQ.jpg"
     alt: "На фото: остров Паракас в Перу"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -27,6 +26,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-poluostrov-parakas-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1yk7W5_DSVG2Bsj1s8yn6ev7pJwoPhA9-/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_wildlife"]
 ---
 
 ## Острова Бальестас и морские львы: что посмотреть на полуострове Паракас

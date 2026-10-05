@@ -12,7 +12,6 @@ hero:
   src: "/media/countries/dominican-republic/featureBands-2-enhanced-20261002.webp"
   alt: "На фото: Национальный парк Лос-Айтисес в Доминикане"
 gallery: []
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -21,6 +20,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/tury-v-nacionalnyj-park-los-ajtises-v-dominikane"
 sourceSnapshot: "https://drive.google.com/file/d/12qrL1aY6XorftgAkWvppyRm6KNzA6RhH/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 ### Национальный парк Лос-Айтисес- рай экотуризма!

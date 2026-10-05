@@ -16,7 +16,6 @@ destinations:
 - destination_brazil_viskondi_de_maua
 - destination_brazil_maringa_viskondi_de_maua
 - destination_brazil_vila_da_maromba
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (2 ночи)
@@ -198,6 +197,8 @@ routeDestinations:
 - destination_brazil_viskondi_de_maua
 - destination_brazil_maringa_viskondi_de_maua
 - destination_brazil_vila_da_maromba
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_beach"]
 ---
 
 В поездке много природы и воды: океанские пляжи Рио, водопады Игуасу, горные реки и естественные бассейны Висконде-де-Мауа, бухты и пляжи побережья возле Парати. При этом маршрут оставляет место для истории, старых городов и неспешных прогулок. За 9 дней пейзаж меняется несколько раз: от большого прибрежного мегаполиса к тропическому лесу Игуасу, затем к прохладным горным долинам и, наконец, к историческому порту на океане. Именно это сочетание делает программу насыщенной, хотя в ней остаются спокойные вечера и время просто посмотреть вокруг.

@@ -22,7 +22,6 @@ gallery:
   alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 - src: /media/destinations/canaima-and-angel-falls/gallery-5-enhanced-20261003.webp
   alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -31,6 +30,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle
 sourceSnapshot: https://drive.google.com/file/d/195WVrDm2PS5iiteMuM63CsbnilbvZDJb/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_wildlife"]
 ---
 
 Канайма - это самый известный национальный парк Венесуэлы, в котором находится одно из природных чудес света- водопад Анхель.

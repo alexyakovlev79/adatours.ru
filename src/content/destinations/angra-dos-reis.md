@@ -16,10 +16,6 @@ gallery:
     alt: Острова и бухты у Ангра-дус-Рейс
   - src: /media/destinations/angra-dos-reis/gallery-2-enhanced-20261001.webp
     alt: Атлантическое побережье Ангра-дус-Рейс
-themes:
-  - beach
-  - luxury
-  - family
 relatedDestinations:
   - destination_brazil_rio
   - destination_brazil_ilha_grande
@@ -49,6 +45,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii__37f42b69.md
 updatedAt: 2026-09-24
+themes: ["theme_beach","theme_wildlife"]
 ---
 
 Ангра-дус-Рейс находится на атлантическом побережье штата Рио-де-Жанейро, примерно в 155 км к югу от Рио. Сюда едут ради Коста-Верде: зеленые склоны подходят к морю, а в заливе много островов и небольших бухт.

@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 duration: "5–6 часов"
 language: []
 priceFrom: 284
@@ -51,6 +50,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/tur-v-niteroj"
 sourceSnapshot: "https://drive.google.com/file/d/1omO8aYspyIH12YQrEjPG09kWEn7Q57j3/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Нитерой, часто называемый «улыбающимся городом», — это скрытая жемчужина прямо через залив от Рио-де-Жанейро, предлагающая потрясающие прибрежные виды, культовую архитектуру Оскара Нимейера и уютную атмосферу, идеально сочетающую культуру, природу и морское спокойствие.

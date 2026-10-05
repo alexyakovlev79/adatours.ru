@@ -27,7 +27,6 @@ destinations:
 - destination_chile_gejzery_el_tatio
 - destination_chile_tokonao
 - destination_chile_machuka
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (3 ночи)
@@ -312,6 +311,8 @@ routeDestinations:
 - destination_chile_gejzery_el_tatio
 - destination_chile_tokonao
 - destination_chile_machuka
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_gastronomy_wine"]
 ---
 
 **Длительность:** 15 дней / 14 ночей  

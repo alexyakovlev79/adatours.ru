@@ -20,7 +20,6 @@ destinations:
 - destination_bolivia_laguna_verde
 - destination_venezuela_kanon_kavak
 - destination_venezuela_tepuj_kuravajna
-themes: []
 audiences: []
 route:
 - Каракас
@@ -271,6 +270,8 @@ routeDestinations:
 - destination_bolivia_gejzery_sol_de_manyana
 - destination_bolivia_pustynya_salvadora_dali
 - destination_bolivia_laguna_verde
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 12 дней / 11 ночей  

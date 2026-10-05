@@ -9,17 +9,6 @@ summary: >-
 hero:
   src: /media/themes/gastronomiya-i-vino/hero-enhanced-20261001.webp
   alt: Вино и гастрономия в путешествии
-featuredCountries:
-  - country_argentina
-  - country_brazil
-  - country_peru
-  - country_colombia
-  - country_mexico
-  - country_paraguay
-  - country_uruguay
-  - country_french_guiana
-  - country_chile
-  - country_el_salvador
 sourceUrl: https://brasiltours.ru/vinnyi-tury
 sourceSnapshot: page_texts_original/vinnyi-tury__d73d99b5.md
 updatedAt: 2026-10-02

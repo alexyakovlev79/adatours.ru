@@ -192,6 +192,8 @@ destinations: &id001
 routeDestinations: *id001
 routeCountries:
 - country_brazil
+primaryThemes: ["theme_weddings_romance","theme_beach"]
+themes: ["theme_culture"]
 ---
 
 

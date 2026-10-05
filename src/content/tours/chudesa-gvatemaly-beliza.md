@@ -25,7 +25,6 @@ destinations:
 - destination_belize_peschera_aktun_tunichil_muknal
 - destination_belize_morskoj_zapovednik_hol_chan
 - destination_belize_bolshaya_golubaya_dyra
-themes: []
 audiences: []
 route:
 - Антигуа
@@ -311,6 +310,8 @@ routeDestinations:
 - destination_belize_karakol
 - destination_belize_peschera_aktun_tunichil_muknal
 - destination_belize_morskoj_zapovednik_hol_chan
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_wildlife","theme_adventure"]
 ---
 
 **Длительность:** 11 дней / 10 ночей  

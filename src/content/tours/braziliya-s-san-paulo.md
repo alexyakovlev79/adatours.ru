@@ -13,7 +13,6 @@ destinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
-themes: []
 audiences: []
 route:
 - Сан-Паулу
@@ -284,6 +283,8 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 12 дней / 11 ночей  

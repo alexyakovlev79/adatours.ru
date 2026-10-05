@@ -16,7 +16,6 @@ destinations:
 - destination_guatemala_santyago_atitlan
 - destination_guatemala_peten
 - destination_guatemala_tikal_flores
-themes: []
 audiences: []
 route:
 - Гватемала-Сити
@@ -166,6 +165,8 @@ routeDestinations:
 - destination_guatemala_santyago_atitlan
 - destination_guatemala_peten
 - destination_guatemala_tikal_flores
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

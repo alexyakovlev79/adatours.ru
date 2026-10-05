@@ -8,7 +8,6 @@ countryId: "country_panama"
 destinationType: "city"
 summary: "Город Панамы, откуда начинаются туристические маршруты. В Давиде соседствуют старые кварталы и современная часть с магазинами, кафе и ресторанами."
 searchAliases: []
-themes: []
 hero: {"src":"https://brasiltours.ru/image/countries/panama/6.jpg","alt":"На фото: город Давид в Панаме"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/3/5/358738904_c9a70ba3fd_o.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/1/3/1360881041_242ec5b0e3_o.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN20162_15.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/1/2192858437_f721139f22_b.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22200_1.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/1/2193619956_65c743c7e0_b.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN20162_30.jpg","alt":"На фото: город Давид в Панаме"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-david-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1FoaM45CbloAG8rki3O25TMir9k1wk38T/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Город Давид

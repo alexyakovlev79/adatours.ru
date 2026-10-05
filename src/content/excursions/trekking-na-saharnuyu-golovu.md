@@ -9,7 +9,6 @@ searchAliases:
   - Пеший подъем на Сахарную голову
 country: country_brazil
 destination: destination_brazil_rio
-themes: [adventure, nature]
 language: []
 hero:
   src: /media/excursions/trekking-na-saharnuyu-golovu/hero-enhanced-20261001.webp
@@ -23,6 +22,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-09-30
+themes: ["theme_adventure","theme_wildlife"]
 ---
 
 Маршрут начинается с горы Урка и проходит по тропе среди тропической растительности. Основной участок занимает около 30 минут. По желанию можно продолжить подъем на Сахарную Голову с инструктором и страховкой.

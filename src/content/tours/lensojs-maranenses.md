@@ -14,7 +14,6 @@ destinations:
 - destination_brazil_laguna_azul_lensojs_maranenses
 - destination_brazil_vassuoras_lensojs_maranenses
 - destination_brazil_mayak_pergula
-themes: []
 audiences: []
 route:
 - Сан-Луис
@@ -179,6 +178,8 @@ routeDestinations:
 - destination_brazil_laguna_azul_lensojs_maranenses
 - destination_brazil_vassuoras_lensojs_maranenses
 - destination_brazil_mayak_pergula
+primaryThemes: ["theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 4 дня / 3 ночи

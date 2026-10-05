@@ -12,7 +12,6 @@ searchAliases:
 country: country_colombia
 destination: destination_colombia_bogota
 destinationName: "Богота"
-themes: [culture, history]
 duration: 8 часов
 language:
   - английский
@@ -51,6 +50,7 @@ sourceSnapshot: page_texts_newstep/Excursions/colombia-bogota-zipaquira-con-guat
 updatedAt: 2026-10-02
 relatedDestinations:
   - destination_colombia_sipakira
+themes: ["theme_culture"]
 ---
 
 Главная точка этой экскурсии — Соляной собор Сипакиры, устроенный внутри соляной шахты на глубине около 180 метров. Вторая часть маршрута связана с Гуатавитой — местом, которое в исходной программе связано с легендой об Эльдорадо.

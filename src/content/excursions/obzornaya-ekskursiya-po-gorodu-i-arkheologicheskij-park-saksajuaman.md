@@ -10,7 +10,6 @@ searchAliases:
   - Археологический парк Саксайуаман
 country: country_peru
 destination: destination_peru_cusco
-themes: [culture, history]
 duration: "4–5 часов"
 language:
   - английский
@@ -51,6 +50,7 @@ notes:
 sourceUrl: https://brasiltours.ru/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman
 sourceSnapshot: page_texts_newstep/Excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman__682e4cc7.md
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Эта экскурсия посвящена инкскому наследию вокруг Куско. За 4–5 часов вы увидите массивные стены Саксайуамана, святилище Кенко, Пука-Пукару и Тамбомачай — археологические объекты, которые показывают разные стороны инженерных и религиозных традиций инков.

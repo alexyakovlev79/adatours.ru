@@ -27,7 +27,6 @@ destinations:
 - destination_peru_chinchero
 - destination_peru_urubamba
 - destination_peru_karal
-themes: []
 audiences: []
 route:
 - Лима
@@ -282,6 +281,8 @@ routeDestinations:
 - destination_peru_ostrov_takile
 - destination_peru_huliaka
 - destination_peru_ikitos
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 11 дней / 10 ночей  

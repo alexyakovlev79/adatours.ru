@@ -7,7 +7,6 @@ title: Кито и линия экватора за 6 часов
 country: country_ecuador
 lead: Можно заказать обзорную экскурсию по Кито с посещением линии экватора. Экскурсионный день вместе с переездами занимает
   около 6 часов.
-themes: []
 language: []
 route: []
 included: []
@@ -22,6 +21,7 @@ sourceSnapshot: https://drive.google.com/file/d/12M2KOTd8tf1CGIQ1K29HawmjrhdTzVi
 hero:
   src: https://brasiltours.ru/image/catalog/product/Q/u/Quito_6.jpg
   alt: ''
+themes: ["theme_culture"]
 ---
 
 Можно заказать обзорную экскурсию по Кито с посещением линии экватора. Экскурсионный день вместе с переездами занимает около 6 часов.

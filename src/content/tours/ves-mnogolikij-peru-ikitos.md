@@ -29,7 +29,6 @@ destinations:
 - destination_peru_ikitos
 - destination_peru_parakas
 - destination_peru_linii_naska_i_ostrova_balestas
-themes: []
 audiences: []
 route:
 - Лима
@@ -431,6 +430,8 @@ routeDestinations:
 - destination_peru_chivaj
 - destination_peru_arekipa
 - destination_peru_ikitos
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 15 дней / 14 ночей  

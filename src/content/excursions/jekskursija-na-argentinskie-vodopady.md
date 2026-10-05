@@ -9,7 +9,6 @@ country: "country_argentina"
 destination: "destination_argentina_puerto_iguasu"
 destinationName: "Пуэрто Игуасу"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language: []
 priceFrom: 123
@@ -44,6 +43,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/jekskursija-na-argentinskie-vodopady"
 sourceSnapshot: "https://drive.google.com/file/d/1Q3qXdRkpvb3vciHP4WZfNCr-9lTBDlbo/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 Экскурсия на аргентинские водопады проходит в сопровождении гида. В отеле вас будет ожидать гид, который на высоком профессиональном уровне расскажет о национальном парке.

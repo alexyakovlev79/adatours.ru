@@ -19,7 +19,6 @@ destinations:
 - destination_brazil_kanon_itaimbezinyu
 - destination_brazil_kanon_fortaleza
 - destination_brazil_peschera_abismo_anhumas
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -251,6 +250,8 @@ routeDestinations:
 - destination_brazil_kanon_itaimbezinyu
 - destination_brazil_kanon_fortaleza
 - destination_brazil_peschera_abismo_anhumas
+primaryThemes: ["theme_wildlife","theme_adventure"]
+themes: ["theme_gastronomy_wine","theme_culture"]
 ---
 
 **Длительность:** 13 дней / 12 ночей  

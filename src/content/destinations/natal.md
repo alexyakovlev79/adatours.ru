@@ -12,10 +12,6 @@ hero:
   src: /media/destinations/natal/hero-enhanced-20261001.webp
   alt: Натал на северо-восточном побережье Бразилии
 gallery: []
-themes:
-  - beach
-  - adventure
-  - diving
 relatedDestinations:
   - destination_brazil_praia_de_pipa
   - destination_brazil_recife
@@ -35,6 +31,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya__f8409995.md
 updatedAt: 2026-09-25
+themes: ["theme_beach","theme_wildlife"]
 ---
 
 Натал находится на северо-востоке Бразилии и является столицей штата Риу-Гранди-ду-Норти. Океанское побережье здесь соседствует с песчаными дюнами, рифами и озерами.

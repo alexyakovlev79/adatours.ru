@@ -12,9 +12,6 @@ hero:
   src: /media/destinations/zolotoj-put-brazilii/hero-enhanced-20261001.webp
   alt: Исторический город Ору-Прету на Золотом пути Бразилии
 gallery: []
-themes:
-  - culture
-  - history
 relatedDestinations:
   - destination_brazil_ouro_preto
   - destination_brazil_belo_horizonte
@@ -46,6 +43,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/zolotoj-put-brazilii
 sourceSnapshot: page_texts_original/zolotoj-put-brazilii__7e6b89a6.md
 updatedAt: 2026-09-25
+themes: ["theme_culture"]
 ---
 
 Золотой путь Бразилии - исторический маршрут по штату Минас-Жерайс, который вырос вокруг старых центров добычи золота и драгоценных камней. Для путешествия важнее всего не отдельная дорога, а связка городов и мест, где история региона читается в архитектуре, музеях и шахтах.

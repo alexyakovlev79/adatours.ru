@@ -8,7 +8,6 @@ countryId: "country_panama"
 destinationType: "city"
 summary: "Старинный испанский порт с колониальной архитектурой и фортами в окрестностях. В одной из церквей Портобело хранится статуя «черного Иисуса»."
 searchAliases: []
-themes: []
 hero: {"src":"https://brasiltours.ru/image/countries/panama/11.jpg","alt":"На фото: город Портобело в Панаме"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/8/6/868677836_554fdbbf9f_b.jpg","alt":"На фото: город Портобело в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/4/242920413_0a768c3d1e_o.jpg","alt":"На фото: город Портобело в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/9/1/919054634_9bcb079d40_o.jpg","alt":"На фото: город Портобело в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/5/2593194143_fd046bc502_o.jpg","alt":"На фото: город Портобело в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/4/7/476839733_06f17403c4_b.jpg","alt":"На фото: город Портобело в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/2/2200154323_ebfeb1aa9b_o.jpg","alt":"На фото: город Портобело в Панаме"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-portobelo-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1W5Z6v5O_H5ASSAezTwIpozm_wiQsaZNi/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Портобело - образец колониальной эпохи в Панаме!

@@ -9,7 +9,6 @@ country: "country_panama"
 destination: "destination_panama_panama_siti"
 destinationName: "Панама-Сити"
 relatedDestinations: []
-themes: []
 language:
   - "Русский"
 priceFrom: 188
@@ -49,6 +48,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/jekskursija-po-panama-siti"
 sourceSnapshot: "https://drive.google.com/file/d/14a3DZbeKdTvFKVbVE9k5IBSKRYiOj09V/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Экскурсия с русскоговорящим гидом. От 2 человек.

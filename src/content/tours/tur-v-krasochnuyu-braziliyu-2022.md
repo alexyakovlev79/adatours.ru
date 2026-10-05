@@ -13,7 +13,6 @@ destinations:
 - destination_brazil_recife
 - destination_brazil_olinda
 - destination_brazil_porto_de_galinhas
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (3 ночи)
@@ -267,6 +266,8 @@ routeDestinations:
 - destination_brazil_recife
 - destination_brazil_olinda
 - destination_brazil_porto_de_galinhas
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 14 дней / 13 ночей  

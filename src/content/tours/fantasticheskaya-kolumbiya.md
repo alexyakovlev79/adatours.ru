@@ -20,7 +20,6 @@ destinations:
 - destination_colombia_zateryannyj_gorod
 - destination_colombia_kartahena
 - destination_colombia_islas_rosario
-themes: []
 audiences: []
 route:
 - Богота
@@ -295,6 +294,8 @@ routeDestinations:
 - destination_colombia_zateryannyj_gorod
 - destination_colombia_kartahena
 - destination_colombia_islas_rosario
+primaryThemes: ["theme_culture","theme_adventure"]
+themes: ["theme_wildlife","theme_beach","theme_gastronomy_wine"]
 ---
 
 ## Колумбия за 15 дней

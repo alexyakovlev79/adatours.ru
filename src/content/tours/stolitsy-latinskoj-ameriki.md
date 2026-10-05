@@ -16,7 +16,6 @@ destinations:
 - destination_uruguay_koloniya_del_sakramento
 - destination_uruguay_montevideo
 - destination_uruguay_punta_del_este
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -248,6 +247,8 @@ routeDestinations:
 - destination_uruguay_koloniya_del_sakramento
 - destination_uruguay_montevideo
 - destination_uruguay_punta_del_este
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 13 дней / 12 ночей  

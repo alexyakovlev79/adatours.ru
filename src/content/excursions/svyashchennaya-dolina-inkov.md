@@ -9,7 +9,6 @@ searchAliases:
   - Священная долина из Куско
 country: country_peru
 destination: destination_peru_cusco
-themes: [culture, nature]
 language: []
 priceFrom: 225
 currency: USD
@@ -34,6 +33,7 @@ relatedDestinations:
   - destination_peru_svyaschennaya_dolina_inkov
   - destination_peru_urubamba
   - destination_peru_chinchero
+themes: ["theme_culture"]
 ---
 
 Священная долина считалась колыбелью цивилизации инков. Плодородные земли и мягкий климат позволяли развивать земледелие, а вдоль долины строились города и церемониальные центры.

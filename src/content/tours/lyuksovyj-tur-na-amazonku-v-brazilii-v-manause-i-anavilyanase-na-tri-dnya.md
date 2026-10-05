@@ -9,7 +9,6 @@ countries:
 destinations:
 - destination_brazil_amazon
 - destination_brazil_arhipelag_anavianas
-themes: []
 audiences: []
 route:
 - Манаус
@@ -196,6 +195,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_arhipelag_anavianas
+primaryThemes: ["theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 3 дня / 2 ночи

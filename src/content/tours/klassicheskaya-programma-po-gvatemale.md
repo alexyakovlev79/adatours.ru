@@ -14,7 +14,6 @@ destinations:
 - destination_guatemala_panahachel
 - destination_guatemala_san_huan_la_laguna
 - destination_guatemala_santyago_atitlan
-themes: []
 audiences: []
 route:
 - Антигуа
@@ -144,6 +143,8 @@ routeDestinations:
 - destination_guatemala_panahachel
 - destination_guatemala_san_huan_la_laguna
 - destination_guatemala_santyago_atitlan
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 **Длительность:** 4 дня / 3 ночи  

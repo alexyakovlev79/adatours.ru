@@ -8,7 +8,6 @@ countryId: "country_mexico"
 destinationType: "resort"
 summary: "Канкун на полуострове Юкатан предлагает отдых у Карибского моря, песчаные пляжи и развитую туристическую инфраструктуру. Из курорта можно отправиться к памятникам майя в Чичен-Итце."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/cancun/hero-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"}
 gallery: [{"src":"/media/destinations/cancun/gallery-1-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-2-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-3-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-4-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-5-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-6-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-7-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-8-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-9-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-10-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-11-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"},{"src":"/media/destinations/cancun/gallery-12-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-morskoj-kurort-kankun-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1DptxxcJ36YOfDvqtflFQyarYqjHRwXN3/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_culture"]
 ---
 
 ## Канкун -один из лучших курортов Мексики

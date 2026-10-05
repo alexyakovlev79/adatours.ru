@@ -22,7 +22,6 @@ gallery:
   alt: 'На фото: город  Сальта в Аргентине'
 - src: /media/destinations/salta/gallery-5-enhanced-20261002.webp
   alt: 'На фото: город  Сальта в Аргентине'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -31,6 +30,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-v-gorod-i-provinciyu-salta-v-argentine
 sourceSnapshot: https://drive.google.com/file/d/1rmd0HDzxEb0PNGI2-D1p0hiGK3EUF-0q/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 Сальта - один из ярких курортных городов, расположенный на северо-западе Аргентины, скрывает под кроной экзотических деревьев незабываемые по своей живописности и красоте места. Город был основан еще в 1582 году, а его история сквозит в стенах старых зданий, давно ставших объектами культурного наследия. Вы можете посетить собор Сан-Франциско и увидеть статуи Девы Марии и Христа. Эти статуи, согласно преданиям, лечат болезни.

@@ -28,7 +28,6 @@ destinations:
 - destination_uruguay_montevideo
 - destination_uruguay_koloniya_del_sakramento
 - destination_brazil_petropolis
-themes: []
 audiences: []
 route:
 - Сантьяго-де-Чили
@@ -366,6 +365,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_brazil_rio
 - destination_chile_peschera_milodona
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 15 дней / 14 ночей  

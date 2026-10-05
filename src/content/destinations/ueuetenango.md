@@ -22,7 +22,6 @@ gallery:
     alt: "На фото: провинция Уэуэтенанго в Гватемале"
   - src: "/media/destinations/huehuetenango/gallery-5-enhanced-20261003.webp"
     alt: "На фото: провинция Уэуэтенанго в Гватемале"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -31,6 +30,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-uehuehtenango-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/114WEXhEOAOu-LRflQ0B6GTFKuM7R3UlC/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_gastronomy_wine","theme_wildlife"]
 ---
 
 ### Уэуэтенанго - туристический центр Гватемалы

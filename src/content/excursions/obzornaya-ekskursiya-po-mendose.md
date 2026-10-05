@@ -6,7 +6,6 @@ status: published
 title: Обзорная экскурсия по Мендосе
 country: country_argentina
 lead: Продолжительность около 3 часов.
-themes: []
 language: []
 route: []
 included: []
@@ -16,6 +15,7 @@ updatedAt: '2026-10-02'
 destination: destination_argentina_mendoza
 destinationName: Мендоса
 sourceSnapshot: https://drive.google.com/file/d/15CAtJqQ2j1KpQopAOZeaH9YgcEVhKnWY/view?usp=drivesdk
+themes: ["theme_culture"]
 ---
 
 Продолжительность около 3 часов.

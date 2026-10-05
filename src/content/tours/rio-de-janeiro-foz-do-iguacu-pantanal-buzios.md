@@ -14,7 +14,6 @@ destinations:
 - destination_brazil_buzios
 - destination_brazil_angra_dos_reis
 - destination_brazil_petropolis
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (3 ночи)
@@ -256,6 +255,8 @@ routeDestinations:
 - destination_brazil_kampo_grande
 - destination_brazil_pantanal
 - destination_brazil_buzios
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 12 дней / 11 ночей  

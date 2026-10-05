@@ -19,11 +19,6 @@ destinations:
   - destination_antarctica_yuzhnye_shetlandskie_ostrova
   - destination_chile_mys_gorn
   - destination_chile_puerto_vilyams
-themes:
-  - adventure
-  - nature
-  - wildlife
-  - cruise
 audiences:
   - private
 format: "Воздушный экспедиционный круиз"
@@ -162,6 +157,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/antarktida-ekspress-vozdushnyj-kruiz
 sourceSnapshot: page_texts_original/antarktida-ekspress-vozdushnyj-kruiz__5646eb1c.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_cruises","theme_wildlife"]
+themes: []
 ---
 
 Главная часть поездки - знакомство с Антарктидой с воды и с берега. Вы проходите среди айсбергов и ледников, выходите на лодках Zodiac, наблюдаете за пингвинами, тюленями, китами и морскими птицами. Летом вдоль Антарктического полуострова особенно много животных, которые приходят сюда для размножения и питания.

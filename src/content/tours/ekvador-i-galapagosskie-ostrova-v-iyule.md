@@ -19,7 +19,6 @@ destinations:
 - destination_ecuador_ostrov_isabela
 - destination_ecuador_puerto_vilyamil
 - destination_ecuador_ostrov_tintoreras
-themes: []
 audiences: []
 route:
 - Кито
@@ -216,6 +215,8 @@ routeDestinations:
 - destination_ecuador_ostrov_isabela
 - destination_ecuador_puerto_vilyamil
 - destination_ecuador_ostrov_tintoreras
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 8 дней / 7 ночей  

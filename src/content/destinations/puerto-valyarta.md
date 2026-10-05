@@ -8,7 +8,6 @@ countryId: "country_mexico"
 destinationType: "resort"
 summary: "Пуэрто Вальярта расположен на берегу залива Бандерас в штате Халиско. Здесь сочетаются колониальные улицы и пляжный отдых, а с декабря по март можно увидеть горбатых китов."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/puerto-vallarta/hero-enhanced-20261004.webp","alt":"На фото: курорт Пуэрто Вальярта в Мексике"}
 gallery: [{"src":"/media/destinations/puerto-vallarta/gallery-1-enhanced-20261004.webp","alt":"На фото: курорт Пуэрто Вальярта в Мексике"},{"src":"/media/destinations/puerto-vallarta/gallery-2-enhanced-20261004.webp","alt":"На фото: курорт Пуэрто Вальярта в Мексике"},{"src":"/media/destinations/puerto-vallarta/gallery-3-enhanced-20261004.webp","alt":"На фото: курорт Пуэрто Вальярта в Мексике"},{"src":"/media/destinations/puerto-vallarta/gallery-4-enhanced-20261004.webp","alt":"На фото: курорт Пуэрто Вальярта в Мексике"},{"src":"/media/destinations/puerto-vallarta/gallery-5-enhanced-20261004.webp","alt":"На фото: курорт Пуэрто Вальярта в Мексике"},{"src":"/media/destinations/puerto-vallarta/gallery-6-enhanced-20261004.webp","alt":"На фото: курорт Пуэрто Вальярта в Мексике"},{"src":"/media/destinations/puerto-vallarta/gallery-7-enhanced-20261004.webp","alt":"На фото: курорт Пуэрто Вальярта в Мексике"},{"src":"/media/destinations/puerto-vallarta/gallery-8-enhanced-20261004.webp","alt":"На фото: курорт Пуэрто Вальярта в Мексике"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-puehrto-valyarta-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/12VNbdpDdC2BsUNwQ2sAezUbWfAZPlfiT/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_culture","theme_wildlife"]
 ---
 
 ## Пуэрто-Вальярта - город-курорт!

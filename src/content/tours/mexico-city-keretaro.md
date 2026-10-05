@@ -13,7 +13,6 @@ destinations:
 - destination_mexico_dolores_idalgo
 - destination_mexico_guanahuato
 - destination_mexico_gvadalahara
-themes: []
 audiences: []
 route:
 - Мехико
@@ -132,6 +131,8 @@ routeDestinations:
 - destination_mexico_dolores_idalgo
 - destination_mexico_guanahuato
 - destination_mexico_gvadalahara
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 Здесь почти каждый город дает отдельную тему. Керетаро запоминается акведуком и барочной архитектурой, Сан-Мигель-де-Альенде - улицами из розового камня и художественными галереями, Долорес Идальго - историей мексиканской независимости, Гуанахуато - яркой застройкой и театром Хуарес, а Гвадалахара - собором, площадями, фресками Ороско и большим городским рынком.

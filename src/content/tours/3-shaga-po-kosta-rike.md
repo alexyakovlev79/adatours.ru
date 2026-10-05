@@ -11,7 +11,6 @@ destinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_la_fortuna_vulkan_arenal
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -190,6 +189,8 @@ routeDestinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_la_fortuna_vulkan_arenal
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: []
 ---
 
 **Длительность:** 10 дней / 9 ночей

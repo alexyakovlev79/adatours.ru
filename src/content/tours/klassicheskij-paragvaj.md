@@ -17,7 +17,6 @@ destinations:
 - destination_paraguay_hesus
 - destination_paraguay_syudad_del_este
 - destination_paraguay_itajpu
-themes: []
 audiences: []
 route:
 - Асунсьон
@@ -210,6 +209,8 @@ routeDestinations:
 - destination_paraguay_hesus
 - destination_paraguay_syudad_del_este
 - destination_paraguay_itajpu
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 **Длительность:** 8 дней / 7 ночей  

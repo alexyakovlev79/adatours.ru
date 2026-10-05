@@ -11,7 +11,6 @@ searchAliases:
 country: country_colombia
 destination: destination_colombia_islas_rosario
 destinationName: "Острова Росарио"
-themes: [nature, beach]
 duration: 5 часов
 language:
   - английский
@@ -47,6 +46,7 @@ notes:
 sourceUrl: https://brasiltours.ru/ostrov-rosario
 sourceSnapshot: page_texts_newstep/Excursions/ostrov-rosario__8654da30.md
 updatedAt: 2026-10-02
+themes: ["theme_beach"]
 ---
 
 Острова Росарио — это морская экскурсия из Картахены к прозрачной карибской воде, пляжам и коралловым рифам архипелага. За пять часов вы пересечете залив Картахены на скоростном катере, увидите Бокачику и старые форты, а затем проведете свободное время у моря на главном острове архипелага.

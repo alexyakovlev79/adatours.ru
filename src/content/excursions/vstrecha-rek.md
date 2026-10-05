@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_amazon"
 destinationName: "Манаус и Амазония"
 relatedDestinations: []
-themes: []
 duration: "9 часов"
 language: []
 priceFrom: 313
@@ -39,6 +38,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/vstrecha-rek"
 sourceSnapshot: "https://drive.google.com/file/d/1cKDXahlgcRCeYbILvB6recQN8pygpDVp/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 ## Свадьба рек

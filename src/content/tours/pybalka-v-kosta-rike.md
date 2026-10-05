@@ -9,7 +9,6 @@ countries:
 destinations:
 - destination_costa_rica_san_hose
 - destination_costa_rica_flamingo
-themes: []
 audiences: []
 route:
 - Сан-Хосе
@@ -149,6 +148,8 @@ routeCountries:
 routeDestinations:
 - destination_costa_rica_san_hose
 - destination_costa_rica_flamingo
+primaryThemes: ["theme_fishing"]
+themes: []
 ---
 
 **Длительность:** 7 дней / 6 ночей  

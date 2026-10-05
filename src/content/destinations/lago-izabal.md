@@ -14,7 +14,6 @@ hero:
 gallery:
   - src: "/media/destinations/lake-izabal/gallery-1-enhanced-20261003.webp"
     alt: "На фото: озеро Исабаль в Гватемале"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -23,6 +22,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ozero-isabal-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/15MtpGMW6F3w6pmcnhCY9yYkg_19zyBCs/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Эта небольшая деревушка, находящаяся на южном берегу озера Изабал, была в свое время основным гватемальским портом на тихоокеанском берегу. Деревенька привлекает туристов необычайно красивой природой и возможностью совершать сплав по реке, вытекающей из озера до Тихого океана.

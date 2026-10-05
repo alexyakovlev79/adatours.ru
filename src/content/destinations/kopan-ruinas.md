@@ -24,7 +24,6 @@ gallery:
     alt: "На фото: руины Копана в Гондурасе"
   - src: "/media/destinations/copan-ruinas/gallery-6-enhanced-20261003.webp"
     alt: "На фото: руины Копана в Гондурасе"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -33,6 +32,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gondurase-na-ruiny-goroda-kopan"
 sourceSnapshot: "https://drive.google.com/file/d/1k1Mr1HWSg3w8bLmS7_oaa1DF6aJXD3Th/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ### Копан- один из красивых городов Майя!

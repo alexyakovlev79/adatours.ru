@@ -8,7 +8,6 @@ countryId: "country_cuba"
 destinationType: "city"
 summary: "Сантьяго де Куба знакомит с карнавалами, крепостью Кастильо-дель-Моро и площадью Сеспедес. Город стоит на холмах; из окрестностей можно отправиться к базилике Эль-Кобре и в парк Баконао."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/santiago-de-cuba/hero-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"}
 gallery: [{"src":"/media/destinations/santiago-de-cuba/gallery-1-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"/media/destinations/santiago-de-cuba/gallery-2-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"/media/destinations/santiago-de-cuba/gallery-3-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"/media/destinations/santiago-de-cuba/gallery-4-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"},{"src":"/media/destinations/santiago-de-cuba/gallery-5-enhanced-20261004.webp","alt":"На фото: город Сантьяго-де-Куба на острове Куба"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-santyago-de-kuba-na-ostrove-kuba"
 sourceSnapshot: "https://drive.google.com/file/d/1YaERS5Na29yeB8RW2bnvbTzU971s1WrZ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_events"]
 ---
 
 ## Сантьяго де Куба - город карнавалов!

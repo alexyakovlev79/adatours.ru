@@ -9,7 +9,6 @@ country: "country_bolivia"
 destination: "destination_bolivia_potosi"
 destinationName: "Потоси"
 relatedDestinations: []
-themes: []
 duration: "4 часа"
 language:
   - "Английский"
@@ -37,6 +36,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/potosi-tur"
 sourceSnapshot: "https://drive.google.com/file/d/1fHEcxjlTA-6zxR4B5XHsVdNGAnWFbFAp/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Главные этапы тура:

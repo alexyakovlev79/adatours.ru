@@ -8,7 +8,6 @@ searchAliases: []
 country: country_bolivia
 destination: destination_bolivia_la_pas
 destinationName: "Ла Пас"
-themes: []
 duration: "8 часов"
 language:
   - Русский
@@ -44,6 +43,7 @@ notes:
 sourceUrl: https://brasiltours.ru/la-pas-tiuanako-i-desaguadero-tur
 sourceSnapshot: https://drive.google.com/file/d/1dwYrnC7l_Oxl_CjA5KlSGAz7y5JPV6QN/view?usp=drivesdk
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Экскурсия начинается с выезда из отеля в 08:00. Из Ла-Паса вы отправитесь в Тиуанако, один из важнейших доинкских археологических комплексов региона. В декабре 2000 года Тиуанако был включен в список Всемирного наследия ЮНЕСКО. По дороге открываются виды на Кордильеру Королевы Анд, заснеженные вершины и широкие долины Альтиплано.

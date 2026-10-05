@@ -42,7 +42,6 @@ destinations:
 - destination_chile_poluostrov_pojke
 - destination_chile_ahu_te_pito_kura
 - destination_chile_ahu_nau_nau
-themes: []
 audiences: []
 route:
 - Сантьяго
@@ -353,6 +352,8 @@ routeDestinations:
 - destination_chile_poluostrov_pojke
 - destination_chile_ahu_te_pito_kura
 - destination_chile_ahu_nau_nau
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 12 дней / 11 ночей  

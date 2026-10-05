@@ -9,7 +9,6 @@ country: "country_peru"
 destination: "destination_peru_parakas"
 destinationName: "Паракас"
 relatedDestinations: []
-themes: []
 duration: "Весь день"
 language:
   - "Английский"
@@ -46,6 +45,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/ballestas-islands-tour"
 sourceSnapshot: "https://drive.google.com/file/d/1ks68v5vBxT_HCwjQ1E2RCDF71u_PQL-e/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 ## Многообразие тура на Островах Бальестас !

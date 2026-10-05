@@ -15,7 +15,6 @@ destinations:
 - destination_argentina_buenos_aires
 - destination_chile_santyago_de_chili
 - destination_chile_dolina_majpo
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (3 ночи)
@@ -291,6 +290,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
 - destination_chile_santyago_de_chili
+primaryThemes: ["theme_events"]
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 **Длительность:** 10 дней / 9 ночей  

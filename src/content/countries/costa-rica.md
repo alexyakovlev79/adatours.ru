@@ -31,11 +31,6 @@ bestTime: Сухой сезон — с декабря по апрель; сез�
 currency: CRC
 languages:
   - испанский
-relatedThemes:
-  - theme_adventure
-  - theme_beach
-  - theme_diving
-  - theme_motorcycle
 featureBands:
   - eyebrow: Вулканы и термальные источники
     title: Ареналь, Поас и горные районы

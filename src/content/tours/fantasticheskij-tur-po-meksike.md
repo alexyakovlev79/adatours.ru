@@ -20,7 +20,6 @@ destinations:
 - destination_mexico_kanon_sumidero
 - destination_mexico_tustla_guterres
 - destination_mexico_kankun
-themes: []
 audiences: []
 route:
 - Мехико-Сити
@@ -251,6 +250,8 @@ routeDestinations:
 - destination_mexico_kanon_sumidero
 - destination_mexico_tustla_guterres
 - destination_mexico_kankun
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_wildlife"]
 ---
 
 ## Мексика за 12 дней

@@ -29,7 +29,6 @@ destinations:
 - destination_argentina_tigre
 - destination_argentina_san_isidro_buenos_ajres
 - destination_uruguay_montevideo
-themes: []
 audiences: []
 route:
 - Буэнос-Айрес (3 ночи)
@@ -318,6 +317,8 @@ routeDestinations:
 - destination_argentina_gorod_umauaka
 - destination_argentina_salinas_grandes
 - destination_argentina_ukiya
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_gastronomy_wine"]
 ---
 
 **Длительность:** 15 дней / 14 ночей

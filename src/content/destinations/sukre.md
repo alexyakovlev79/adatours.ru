@@ -20,7 +20,6 @@ gallery:
   alt: 'На фото: город Сукре в Боливии'
 - src: /media/destinations/sucre/gallery-4-enhanced-20261003.webp
   alt: 'На фото: город Сукре в Боливии'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -29,6 +28,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-sukre-sucre-v-bolivii
 sourceSnapshot: https://drive.google.com/file/d/1ovZKl9LG2IZ-N1aBEuJf0AWN0CZXpEPr/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 Сукре - cамый красивый боливийский город, официальная столица страны, хотя все правительственные здания расположены во второй столице — Ла-Пасе. Здесь очень много колониальных зданий белого цвета, поэтому Сукре называют Белым городом.

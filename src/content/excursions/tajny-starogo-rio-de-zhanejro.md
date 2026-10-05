@@ -10,7 +10,6 @@ searchAliases:
   - Старый Рио экскурсия
 country: country_brazil
 destination: destination_brazil_rio
-themes: [culture, history, city]
 duration: 4 часа
 language: []
 priceFrom: 160
@@ -54,6 +53,7 @@ notes:
 sourceUrl: https://brasiltours.ru/tajny-starogo-rio-de-zhanejro
 sourceSnapshot: page_texts_newstep/Excursions/tajny-starogo-rio-de-zhanejro__bc5a6464.md
 updatedAt: 2026-10-01
+themes: ["theme_culture"]
 ---
 
 Гид заберет вас из отеля и отвезет в исторический центр Рио-де-Жанейро. Экскурсия посвящена колониальному прошлому города, королевской истории, религиозным традициям и архитектуре старого Рио. Название Рио-де-Жанейро связывают с январем 1502 года, когда бухту Гуанабара приняли за устье реки; сам город был основан в 1565 году.

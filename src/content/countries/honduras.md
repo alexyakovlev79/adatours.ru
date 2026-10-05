@@ -22,10 +22,6 @@ bestTime: Сухой сезон — с ноября по апрель; на Ка
 currency: HNL
 languages:
   - испанский
-relatedThemes:
-  - theme_diving
-  - theme_beach
-  - theme_adventure
 featureBands:
   - eyebrow: Мир майя
     title: Копан и наследие майя

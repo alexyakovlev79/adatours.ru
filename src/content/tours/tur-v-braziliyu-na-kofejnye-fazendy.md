@@ -12,7 +12,6 @@ destinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_dolina_kofe_rio_de_zhanejro
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (5 ночей)
@@ -206,6 +205,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_dolina_kofe_rio_de_zhanejro
+primaryThemes: ["theme_gastronomy_wine","theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 Программа соединяет знаменитые символы страны с местами, которые обычно остаются за пределами короткого знакомства с Бразилией. В свободный день в Рио можно выбрать морскую прогулку по заливу Гуанабара, полет на вертолете, Ботанический сад, экскурсию по фавеле или вечер в Лапе. На Игуасу дополнительно доступны Макуко-сафари, Парк птиц и ужин с шоу в Rafain Grill Place. Получается путешествие, в котором городские панорамы постоянно сменяются природой: океанскими пляжами, тропическим лесом, гигантскими водопадами и зелеными холмами Кофейной долины. При этом историческая часть остается заметной, от старого центра Рио до домов и хозяйственных построек кофейных фазенд.

@@ -22,7 +22,6 @@ gallery:
     alt: "На фото: город Сучитото в Эль-Сальвадоре"
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN17640_1.jpg
     alt: "На фото: город Сучитото в Эль-Сальвадоре"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -47,6 +46,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-suchitoto-v-ehl-salvadore
 sourceSnapshot: https://drive.google.com/file/d/1QnBEEZfYn-fh7v10m_oF2T-bq8JVDP_q/view?usp=drivesdk
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Сучитото считается одним из самых красивых городов Эль-Сальвадора. Его название на языке аборигенов означает «город птиц и цветов». Город расположен среди сельских пейзажей на берегу озера Лаго-де-Сучитлан и имеет статус Национального культурного наследия.

@@ -16,7 +16,6 @@ destinations:
 - destination_colombia_dolina_kokora
 - destination_colombia_salento
 - destination_colombia_kartahena
-themes: []
 audiences: []
 route:
 - Богота
@@ -235,6 +234,8 @@ routeDestinations:
 - destination_colombia_dolina_kokora
 - destination_colombia_salento
 - destination_colombia_kartahena
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: ["theme_gastronomy_wine"]
 ---
 
 **Длительность:** 10 дней / 9 ночей  

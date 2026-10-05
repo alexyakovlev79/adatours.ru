@@ -16,7 +16,6 @@ gallery:
   alt: 'На фото: Ориндж Уолк (Холпатин) в Белизе'
 - src: /media/destinations/orindzh-uolk/gallery-2-enhanced-20261002.webp
   alt: 'На фото: Ориндж Уолк (Холпатин) в Белизе'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -25,6 +24,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-orindzh-uolk-holpatin-v-belize
 sourceSnapshot: https://drive.google.com/file/d/1hvHgkDlqsV_Qm_0sqKQ3o7en8gsT3SBC/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 Ориндж-Уолк - один из 6 округов Белиза с населением чуть более сорока тысяч человек, ласково называют "сахарный город". Этот округ также хорошо известен своим скотоводством и производством рома.

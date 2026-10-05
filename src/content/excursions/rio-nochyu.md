@@ -10,7 +10,6 @@ searchAliases:
   - Шоу мулаток
 country: country_brazil
 destination: destination_brazil_rio
-themes: [culture]
 language: []
 hero:
   src: /media/excursions/rio-nochyu/hero-enhanced-20261001.webp
@@ -26,6 +25,7 @@ notes:
 sourceUrl: https://brasiltours.ru/rio-nochyu
 sourceSnapshot: page_texts_newstep/Excursions/rio-nochyu__b0ece2dc.md
 updatedAt: 2026-09-30
+themes: ["theme_culture"]
 ---
 
 Вечером можно отправиться на шоу с живой музыкой и танцами. Гид забирает вас из отеля и сопровождает на площадку, где выступают танцоры в ярких костюмах под живую музыку и барабаны.

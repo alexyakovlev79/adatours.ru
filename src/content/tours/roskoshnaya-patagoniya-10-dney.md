@@ -21,10 +21,6 @@ destinations:
   - destination_argentina_nacionalnyj_park_los_glasyares
   - destination_chile_dolina_majpo
   - destination_chile_ostrov_marta_magellanov_proliv
-themes:
-  - luxury
-  - multi-country
-  - nature
 audiences:
   - private
   - couples
@@ -491,6 +487,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/roskoshnaya-patagoniya-10-dney
 sourceSnapshot: page_texts_original/roskoshnaya-patagoniya-10-dney__d238558e.md
 updatedAt: 2026-10-01
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture","theme_gastronomy_wine"]
 ---
 
 ## Патагония через Аргентину и Чили

@@ -11,7 +11,6 @@ searchAliases:
 country: country_bolivia
 destination: destination_bolivia_santa_krus
 destinationName: "Санта-Крус"
-themes: [culture, history]
 duration: 8 часов
 language:
   - английский
@@ -47,6 +46,7 @@ sourceSnapshot: page_texts_newstep/Excursions/samaipata-tur__b865455c.md
 updatedAt: 2026-10-01
 relatedDestinations:
   - destination_bolivia_samaipata
+themes: ["theme_culture"]
 ---
 
 Из Санта-Круса вы отправитесь примерно на 120 км к Самаипате, колониальному городку в предгорьях Анд на высоте около 1650 м. По дороге открываются зеленые долины, холмы и горные хребты.

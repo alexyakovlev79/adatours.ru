@@ -8,7 +8,6 @@ countryId: "country_mexico"
 destinationType: "resort"
 summary: "Плайя дель Кармен находится в центре Ривьеры-Майя у Карибского моря. Здесь есть пляжи, коралловые рифы и оживленная Пятая авеню, а поблизости находятся Шкарет, Шель-Ха и Тулум."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/playa-del-carmen/hero-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"}
 gallery: [{"src":"/media/destinations/playa-del-carmen/gallery-1-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"/media/destinations/playa-del-carmen/gallery-2-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"/media/destinations/playa-del-carmen/gallery-3-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"/media/destinations/playa-del-carmen/gallery-4-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"},{"src":"/media/destinations/playa-del-carmen/gallery-5-enhanced-20261004.webp","alt":"На фото: морской курорт Плайя-дель-Кармен в Мексике"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-plajya-del-karmen-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1VSGFhIQoAnhV4Ahwz7JwrydEgah1Syds/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_culture"]
 ---
 
 ## Плайя дель Кармен - курортный городок!

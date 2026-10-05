@@ -8,7 +8,6 @@ countryId: "country_nicaragua"
 destinationType: "city"
 summary: "Горные ландшафты Никарагуа, кофейная Хинотега и реликтовые леса Сельва-Негра. Матагальпа и ее окрестности знакомят с природой и историей региона."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/matagalpa/hero-enhanced-20261005.webp","alt":"На фото: страна Никарагуа"}
 gallery: [{"src":"/media/destinations/matagalpa/gallery-1-enhanced-20261005.webp","alt":"На фото: город Матагальпа (Matagalpa) в Никарагуа"},{"src":"/media/destinations/matagalpa/gallery-2-enhanced-20261005.webp","alt":"На фото: город Матагальпа (Matagalpa) в Никарагуа"},{"src":"/media/destinations/matagalpa/gallery-3-enhanced-20261005.webp","alt":"На фото: город Матагальпа (Matagalpa) в Никарагуа"},{"src":"/media/destinations/matagalpa/gallery-4-enhanced-20261005.webp","alt":"На фото: город Матагальпа (Matagalpa) в Никарагуа"},{"src":"/media/destinations/matagalpa/gallery-5-enhanced-20261005.webp","alt":"На фото: город Матагальпа (Matagalpa) в Никарагуа"},{"src":"/media/destinations/matagalpa/gallery-6-enhanced-20261005.webp","alt":"На фото: город Матагальпа (Matagalpa) в Никарагуа"},{"src":"/media/destinations/matagalpa/gallery-7-enhanced-20261005.webp","alt":"На фото: город Матагальпа (Matagalpa) в Никарагуа"},{"src":"/media/destinations/matagalpa/gallery-8-enhanced-20261005.webp","alt":"На фото: город Матагальпа (Matagalpa) в Никарагуа"},{"src":"/media/destinations/matagalpa/gallery-9-enhanced-20261005.webp","alt":"На фото: город Матагальпа (Matagalpa) в Никарагуа"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-gorod-matagalpa-v-nikaragua"
 sourceSnapshot: "https://drive.google.com/file/d/1B12l1p2Z1_uSKkWdL0MaqeH_cLIxyvcm/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_gastronomy_wine","theme_culture"]
 ---
 
 ## Матагальпа в Никарагуа!

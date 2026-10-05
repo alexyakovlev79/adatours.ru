@@ -12,9 +12,6 @@ hero:
   src: /media/destinations/sao-paulo/hero-enhanced-20261001.webp
   alt: Панорама Сан-Паулу, Бразилия
 gallery: []
-themes:
-  - culture
-  - gastronomy
 relatedDestinations:
   - destination_brazil_rio
   - destination_brazil_iguacu
@@ -33,6 +30,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-paulu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-san-paulu-braziliya__f2082e1c.md
 updatedAt: 2026-09-24
+themes: ["theme_culture","theme_gastronomy_wine","theme_events"]
 ---
 
 Сан-Паулу заслуживает отдельной остановки в маршруте по Бразилии. Это огромный деловой мегаполис с музеями, ресторанами, магазинами и насыщенной культурной жизнью.

@@ -10,7 +10,6 @@ summary: "Сьюдад-Пердида, или Затерянный город, �
 searchAliases: []
 hero: {"src":"/media/destinations/ciudad-perdida/hero-enhanced-20261003.webp","alt":"На фото: затерянный город в Колумбии (Lost City)"}
 gallery: [{"src":"/media/destinations/ciudad-perdida/gallery-1-enhanced-20261003.webp","alt":"На фото: затерянный город в Колумбии (Lost City)"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/tury-v-syudad-perdida-zateryannyj-gorod-v-kolumbii"
 sourceSnapshot: "https://drive.google.com/file/d/1qLwvu233iDeVJhG1TcT2fXgh4vrgV44o/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_adventure"]
 ---
 
 ## Треккинг и древние руины: что посмотреть в Сьюдад-Пердида, Колумбия

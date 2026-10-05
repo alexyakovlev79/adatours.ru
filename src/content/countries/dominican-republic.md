@@ -24,11 +24,6 @@ bestTime: Сезон дождей — с мая по ноябрь; в остал
 currency: DOP
 languages:
   - испанский
-relatedThemes:
-  - theme_beach
-  - theme_diving
-  - theme_family
-  - theme_weddings_romance
 featureBands:
   - eyebrow: Карибское побережье
     title: Пунта-Кана, Баваро и спокойные пляжи

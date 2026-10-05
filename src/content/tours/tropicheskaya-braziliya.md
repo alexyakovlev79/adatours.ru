@@ -11,7 +11,6 @@ destinations:
 - destination_brazil_buzios
 - destination_brazil_petropolis
 - destination_brazil_itakurusa
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (4 ночи)
@@ -260,6 +259,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_buzios
+primaryThemes: ["theme_beach","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 12 дней / 11 ночей  

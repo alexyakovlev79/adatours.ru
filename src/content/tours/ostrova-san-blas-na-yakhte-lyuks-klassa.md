@@ -16,7 +16,6 @@ destinations:
 - destination_panama_arhipelag_holandes
 - destination_panama_isla_perro
 - destination_panama_cherepashij_ostrov
-themes: []
 audiences: []
 route:
 - остров Фламенко
@@ -139,6 +138,8 @@ routeDestinations:
 - destination_panama_arhipelag_holandes
 - destination_panama_isla_perro
 - destination_panama_cherepashij_ostrov
+primaryThemes: ["theme_cruises","theme_beach"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 8 дней / 7 ночей

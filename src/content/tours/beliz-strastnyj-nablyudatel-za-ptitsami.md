@@ -21,7 +21,6 @@ destinations:
 - destination_belize_zapovednik_koksskomb_bejsin
 - destination_belize_zoopark_beliza
 - destination_belize_morskoj_zapovednik_hol_chan
-themes: []
 audiences: []
 route:
 - Белиз-Сити
@@ -284,6 +283,8 @@ routeDestinations:
 - destination_belize_zapovednik_koksskomb_bejsin
 - destination_belize_zoopark_beliza
 - destination_belize_morskoj_zapovednik_hol_chan
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture","theme_beach"]
 ---
 
 **Длительность:** 14 дней / 13 ночей  

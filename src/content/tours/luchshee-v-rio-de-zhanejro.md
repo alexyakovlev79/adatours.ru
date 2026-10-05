@@ -148,6 +148,8 @@ highlights:
 routeDestinations: *id001
 routeCountries:
 - country_brazil
+primaryThemes: ["theme_culture"]
+themes: ["theme_beach"]
 ---
 
 

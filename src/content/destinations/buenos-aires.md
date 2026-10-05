@@ -14,10 +14,6 @@ hero:
 gallery:
   - src: /media/home/buenos-aires-enhanced-20260930.webp
     alt: Улица Буэнос-Айреса
-themes:
-  - city
-  - culture
-  - gastronomy
 relatedDestinations:
   - destination_argentina_el_calafate
   - destination_argentina_mendoza
@@ -46,6 +42,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/stolica-argentiny-gorod-buehnos-ajres
 sourceSnapshot: page_texts_original/stolica-argentiny-gorod-buehnos-ajres__3e2ffb79.md
 updatedAt: 2026-09-24
+themes: ["theme_culture"]
 ---
 
 Буэнос-Айрес лучше смотреть по районам. Ла-Бока и Сан-Тельмо, Пласа-де-Майо и Каса-Росада, Обелиск и Корриентес, музеи, галереи и театры легко распределить на 2–3 дня в зависимости от интересов.

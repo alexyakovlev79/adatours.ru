@@ -24,7 +24,6 @@ destinations:
 - destination_peru_ostrova_uros
 - destination_bolivia_kopakabana
 - destination_bolivia_la_pas
-themes: []
 audiences: []
 route:
 - Лима
@@ -224,6 +223,8 @@ routeDestinations:
 - destination_peru_ostrova_uros
 - destination_bolivia_kopakabana
 - destination_bolivia_la_pas
+primaryThemes: ["theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 Путешествие соединяет колониальные города, археологические комплексы инков, высокогорные дороги и традиционные андские поселения. В Перу программа проходит через Лиму, Куско и Священную долину, затем поднимается к озеру Титикака. После переезда через Копакабану маршрут завершается в Ла-Пасе.

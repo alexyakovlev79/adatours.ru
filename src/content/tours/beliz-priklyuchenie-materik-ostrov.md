@@ -14,7 +14,6 @@ destinations:
 - destination_belize_shunaantunich
 - destination_belize_jaguar_paw
 - destination_belize_morskoj_zapovednik_hol_chan
-themes: []
 audiences: []
 route:
 - Белиз-Сити
@@ -171,6 +170,8 @@ routeDestinations:
 - destination_belize_shunaantunich
 - destination_belize_jaguar_paw
 - destination_belize_morskoj_zapovednik_hol_chan
+primaryThemes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_culture","theme_beach"]
 ---
 
 **Длительность:** 8 дней / 7 ночей

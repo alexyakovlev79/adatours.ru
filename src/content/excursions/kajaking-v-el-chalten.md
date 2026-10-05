@@ -9,9 +9,6 @@ searchAliases:
 country: country_argentina
 destination: destination_argentina_el_chalten
 destinationName: "Эль-Чалтен"
-themes:
-  - adventure
-  - nature
 language: []
 priceFrom: 300
 currency: USD
@@ -28,6 +25,7 @@ notes:
   - "Стоимость указана от $300 за человека."
 sourceSnapshot: page_texts_original/vsya-argentina__2bb3b633.md
 updatedAt: 2026-10-02
+themes: ["theme_adventure","theme_wildlife"]
 ---
 
 Можно продолжить треккинг или выбрать каякинг, который оплачивается отдельно - от $300 за человека.

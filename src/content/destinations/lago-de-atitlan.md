@@ -24,7 +24,6 @@ gallery:
     alt: "На фото: озеро Атитлан в Гватемале"
   - src: "/media/destinations/lake-atitlan/gallery-6-enhanced-20261003.webp"
     alt: "На фото: озеро Атитлан в Гватемале"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -33,6 +32,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ozero-atitlan-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1CKQm86edIHSKtWPay8IvPtPl_m8Fg693/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 ### Атитлан - самое красивое озеро Гватемалы

@@ -13,7 +13,6 @@ destinations:
 - destination_brazil_ilha_grande
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (4 ночи)
@@ -150,6 +149,8 @@ routeDestinations:
 - destination_brazil_ilha_grande
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 7 дней / 6 ночей  

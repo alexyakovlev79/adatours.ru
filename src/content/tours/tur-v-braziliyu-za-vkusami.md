@@ -11,7 +11,6 @@ destinations:
 - destination_brazil_angra_dos_reis
 - destination_brazil_ilha_grande
 - destination_brazil_paraty
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -187,6 +186,8 @@ routeDestinations:
 - destination_brazil_angra_dos_reis
 - destination_brazil_ilha_grande
 - destination_brazil_paraty
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 8 дней / 7 ночей  

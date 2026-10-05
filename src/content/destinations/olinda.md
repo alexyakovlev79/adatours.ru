@@ -16,8 +16,6 @@ gallery:
     alt: Колониальная архитектура Олинды
   - src: /media/destinations/olinda/gallery-2-enhanced-20261001.webp
     alt: Историческая застройка Олинды
-themes:
-  - culture
 relatedDestinations:
   - destination_brazil_recife
   - destination_brazil_porto_de_galinhas
@@ -46,6 +44,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/recife-brazil
 sourceSnapshot: page_texts_original/recife-brazil__a111f363.md
 updatedAt: 2026-09-24
+themes: ["theme_culture","theme_events"]
 ---
 
 Олинда находится рядом с Ресифи на северо-востоке Бразилии. Город был основан в 1535 году, а его исторический центр включен в список Всемирного наследия UNESCO. Здесь сохранилась плотная старая застройка на холмах, церкви, монастыри и небольшие площади.

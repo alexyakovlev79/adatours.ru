@@ -9,7 +9,6 @@ searchAliases:
   - Fiesta Gaucho
 country: country_argentina
 destination: destination_argentina_buenos_aires
-themes: []
 duration: 8 часов
 language: []
 priceFrom: 320
@@ -46,6 +45,7 @@ notes:
 sourceUrl: https://brasiltours.ru/fiesta-gaucho
 sourceSnapshot: page_texts_newstep/Excursions/fiesta-gaucho__1ce1697d.md
 updatedAt: 2026-09-30
+themes: ["theme_culture","theme_gastronomy_wine"]
 ---
 
 Экскурсия «Фиеста Гаучо» проходит на ранчо примерно в 80 км от Буэнос-Айреса и знакомит с жизнью и традициями аргентинских гаучо. Когда-то они вели кочевой образ жизни, затем многие занялись фермерством и скотоводством.

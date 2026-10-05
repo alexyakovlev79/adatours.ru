@@ -8,7 +8,6 @@ countryId: "country_mexico"
 destinationType: "resort"
 summary: "Курорт в штате Оахака привлекает серферов пляжами и бухтами с волнами разной сложности. Для спокойного отдыха здесь есть тихая лагуна, а на Авениде Перес Гасга работают бары, кафе и магазины."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/puerto-escondido/hero-enhanced-20261004.webp","alt":"На фото: морской курорт Пуэрто Эскандидо в Мексике"}
 gallery: [{"src":"/media/destinations/puerto-escondido/gallery-1-enhanced-20261004.webp","alt":"На фото: морской курорт Пуэрто Эскандидо в Мексике"},{"src":"/media/destinations/puerto-escondido/gallery-2-enhanced-20261004.webp","alt":"На фото: морской курорт Пуэрто Эскандидо в Мексике"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-puerto-escondido-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1Euc0lIWoG6I64WxN72vvpoNsftRUcaaK/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_adventure"]
 ---
 
 ## Пуэрто Эскандидо - городок уютных пляжей!

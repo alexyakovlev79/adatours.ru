@@ -14,9 +14,6 @@ countries:
 destinations:
   - destination_argentina_ushuajya
   - destination_argentina_puerto_almansa
-themes:
-  - theme_fishing
-  - theme_adventure
 audiences:
   - private
 format: "Однодневная рыбалка"
@@ -59,6 +56,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/rybalka-v-ushuajya
 sourceSnapshot: page_texts_original/rybalka-v-ushuajya__dc9303d0.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_fishing","theme_gastronomy_wine"]
+themes: []
 ---
 
 ## Как проходит день

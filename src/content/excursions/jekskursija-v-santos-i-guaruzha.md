@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_sao_paulo"
 destinationName: "Сан-Паулу"
 relatedDestinations: []
-themes: []
 duration: "Весь день"
 language:
   - "Русский"
@@ -36,6 +35,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/jekskursija-v-santos-i-guaruzha"
 sourceSnapshot: "https://drive.google.com/file/d/1ESEE8vBKTnH4uC9CdzWKvMlClzNOjkMp/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: []
 ---
 
 Экскурсия в Сантос и Гуаружа с русскоговорящим гидом на весь день.

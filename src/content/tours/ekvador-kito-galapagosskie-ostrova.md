@@ -17,7 +17,6 @@ destinations:
 - destination_ecuador_ostrov_tintoreras
 - destination_ecuador_issledovatelskaya_stanciya_charlza_darvina
 - destination_ecuador_plyazh_tortuga_bej
-themes: []
 audiences: []
 route:
 - Кито
@@ -167,6 +166,8 @@ routeDestinations:
 - destination_ecuador_ostrov_tintoreras
 - destination_ecuador_issledovatelskaya_stanciya_charlza_darvina
 - destination_ecuador_plyazh_tortuga_bej
+primaryThemes: ["theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 5 дней / 4 ночи  

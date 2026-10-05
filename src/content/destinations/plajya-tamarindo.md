@@ -10,7 +10,6 @@ summary: "Плайя Тамариндо предлагает пляжный от
 searchAliases: []
 hero: {"src":"/media/destinations/playa-tamarindo/hero-enhanced-20261003.webp","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"}
 gallery: [{"src":"/media/destinations/playa-tamarindo/gallery-1-enhanced-20261003.webp","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"},{"src":"/media/destinations/playa-tamarindo/gallery-2-enhanced-20261003.webp","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"},{"src":"/media/destinations/playa-tamarindo/gallery-3-enhanced-20261003.webp","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"},{"src":"/media/destinations/playa-tamarindo/gallery-4-enhanced-20261003.webp","alt":"На фото: пляж Плайя Тамариндо в Коста-Рике"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-plyazh-tamarindo-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1j05Yf_2pgat9-yywdlMG1Om7-4NxasdQ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_adventure","theme_fishing"]
 ---
 
 ## Серфинг, дайвинг и ночная жизнь: что посмотреть в Тамариндо, Коста-Рика

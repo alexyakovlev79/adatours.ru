@@ -14,7 +14,6 @@ destinations:
 - destination_mexico_koba
 - destination_mexico_tulum
 - destination_mexico_gran_senot
-themes: []
 audiences: []
 route:
 - Мехико-Сити
@@ -202,6 +201,8 @@ routeDestinations:
 - destination_mexico_koba
 - destination_mexico_tulum
 - destination_mexico_gran_senot
+primaryThemes: ["theme_gastronomy_wine","theme_culture"]
+themes: ["theme_beach"]
 ---
 
 **Длительность:** 9 дней / 8 ночей  

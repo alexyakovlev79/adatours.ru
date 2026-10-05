@@ -18,7 +18,6 @@ destinations:
 - destination_colombia_santa_rosa_de_kabal
 - destination_colombia_kartahena
 - destination_colombia_islas_rosario
-themes: []
 audiences: []
 route:
 - Богота
@@ -325,6 +324,8 @@ routeDestinations:
 - destination_colombia_santa_rosa_de_kabal
 - destination_colombia_kartahena
 - destination_colombia_islas_rosario
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_gastronomy_wine"]
 ---
 
 **Длительность:** 12 дней / 11 ночей

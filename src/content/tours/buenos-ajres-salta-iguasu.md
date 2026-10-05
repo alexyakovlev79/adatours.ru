@@ -40,10 +40,6 @@ routeDestinations:
   - destination_argentina_purmamarka
   - destination_argentina_salinas_grandes
   - destination_argentina_tilkara
-themes:
-  - culture
-  - nature
-  - wine
 audiences:
   - private
 format: Частный
@@ -274,6 +270,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/buenos-ajres-salta-iguasu
 sourceSnapshot: page_texts_original/buenos-ajres-salta-iguasu__6feef4b7.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: ["theme_gastronomy_wine"]
 ---
 
 ## Буэнос-Айрес, Сальта и Игуасу в одной поездке

@@ -10,7 +10,6 @@ summary: "Мануэль Антонио объединяет пляжный ку
 searchAliases: []
 hero: {"src":"/media/countries/costa-rica/featureBands-3-enhanced-20261002.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"}
 gallery: [{"src":"/media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-3-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-4-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-5-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-6-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-manuehl-antonio-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1gI1u4yZtz3_WnnRag163KUF7yglf80tT/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_wildlife"]
 ---
 
 ## Пляжи, джунгли и ленивцы: что посмотреть в Мануэль-Антонио, Коста-Рика

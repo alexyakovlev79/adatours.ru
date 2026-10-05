@@ -10,7 +10,6 @@ summary: "Гавана соединяет колониальную архите�
 searchAliases: []
 hero: {"src":/media/countries/cuba/featureBands-1-enhanced-20261002.webp,"alt":"На фото: ретро-машина на улицах острова Куба"}
 gallery: [{"src":"/media/destinations/havana/gallery-1-enhanced-20261004.webp","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"/media/destinations/havana/gallery-2-enhanced-20261004.webp","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"/media/destinations/havana/gallery-3-enhanced-20261004.webp","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"/media/destinations/havana/gallery-4-enhanced-20261004.webp","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"/media/destinations/havana/gallery-5-enhanced-20261004.webp","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"/media/destinations/havana/gallery-6-enhanced-20261004.webp","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"/media/destinations/havana/gallery-7-enhanced-20261004.webp","alt":"На фото: столица острова Кубы, город Гавана"},{"src":"/media/destinations/havana/gallery-8-enhanced-20261004.webp","alt":"На фото: столица острова Кубы, город Гавана"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-v-stolicu-ostrova-kuby-gorod-gavanu"
 sourceSnapshot: "https://drive.google.com/file/d/1uOAnotQ5X-8IqgN2TIyR2mH2yT6r3Glv/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Гавана - столица Острова Свободы!

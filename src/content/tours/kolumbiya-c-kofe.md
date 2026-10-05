@@ -12,7 +12,6 @@ destinations:
 - destination_colombia_pereira
 - destination_colombia_salento
 - destination_colombia_dolina_kokora
-themes: []
 audiences: []
 route:
 - Богота
@@ -125,6 +124,8 @@ routeDestinations:
 - destination_colombia_pereira
 - destination_colombia_salento
 - destination_colombia_dolina_kokora
+primaryThemes: ["theme_gastronomy_wine","theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 6 дней / 5 ночей  

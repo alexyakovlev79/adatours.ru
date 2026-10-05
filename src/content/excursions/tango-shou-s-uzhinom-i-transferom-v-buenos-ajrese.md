@@ -9,7 +9,6 @@ searchAliases:
   - "Танго с ужином и трансфером"
 country: country_argentina
 destination: destination_argentina_buenos_aires
-themes: []
 language: []
 hero:
   src: https://brasiltours.ru/image/tango%20buenos.11png.png
@@ -26,6 +25,7 @@ notIncluded: []
 notes: []
 sourceSnapshot: page_texts_original/tur-v-argentinu-na-11dnej__b1e0208b.md
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Вечером проходит танго-шоу с ужином. Представление сопровождается аргентинским вином и традиционными блюдами.

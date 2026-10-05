@@ -9,25 +9,6 @@ summary: >-
 hero:
   src: /media/themes/priklyucheniya/hero-enhanced-20261001.webp
   alt: Активное путешествие в Латинской Америке
-featuredCountries:
-  - country_brazil
-  - country_argentina
-  - country_peru
-  - country_bolivia
-  - country_venezuela
-  - country_guyana
-  - country_guatemala
-  - country_honduras
-  - country_colombia
-  - country_costa_rica
-  - country_cuba
-  - country_nicaragua
-  - country_panama
-  - country_paraguay
-  - country_suriname
-  - country_french_guiana
-  - country_chile
-  - country_el_salvador
 sourceUrl: https://brasiltours.ru/priklyucheniya
 sourceSnapshot: page_texts_original/priklyucheniya__9d8e52e1.md
 updatedAt: 2026-10-02

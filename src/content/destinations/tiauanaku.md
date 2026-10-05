@@ -12,7 +12,6 @@ hero:
   src: /media/countries/bolivia/featureBands-3-enhanced-20261002.webp
   alt: 'На фото: город Тиванку в Боливии'
 gallery: []
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -21,6 +20,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-tivanaku-tiauanaku-v-bolivii
 sourceSnapshot: https://drive.google.com/file/d/1N7aAcLPUJXWl4BWveZ5NIg9_vi3WR9yp/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 Тиванаку(Тиауанаку) – это руины одного из самых загадочных городов расположенных в Андах. До сих пор не смолкают споры о его назначении. Здесь Вы увидите единственные в своем роде знаменитые Ворота Солнца, пирамиду Акапана, "стоячий камень" Каласасайя и многие другие свидетельства древней культуры.

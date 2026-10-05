@@ -9,7 +9,6 @@ country: "country_chile"
 destination: "destination_chile_ostrov_pashi"
 destinationName: "Остров Пасхи"
 relatedDestinations: []
-themes: []
 language: ["Русский"]
 priceFrom: 83
 currency: "USD"
@@ -24,6 +23,7 @@ notes: ["Возможны скидки для более чем одного ч�
 sourceUrl: "https://brasiltours.ru/transfer-s-russkim-gidom-na-ostrov-pashi"
 sourceSnapshot: "https://drive.google.com/file/d/15Bh_0TE3vKQWTd2dhaDy13vxozhE5BTk/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: []
 ---
 
 Трансфер на Остров Пасхи с русским гидом.

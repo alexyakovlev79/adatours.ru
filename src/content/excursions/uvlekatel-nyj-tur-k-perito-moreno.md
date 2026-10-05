@@ -9,7 +9,6 @@ country: "country_argentina"
 destination: "destination_argentina_el_calafate"
 destinationName: "Эль-Калафате"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language: ["Английский"]
 priceFrom: 165
@@ -25,6 +24,7 @@ notes: ["Принимающая сторона оставляет за собо�
 sourceUrl: "https://brasiltours.ru/uvlekatel-nyj-tur-k-perito-moreno"
 sourceSnapshot: "https://drive.google.com/file/d/1gZmt7IK3JeQvKEzj-c1iKuMMl7odXmxc/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 ## Ледник Перито Морено

@@ -9,7 +9,6 @@ country: "country_peru"
 destination: "destination_peru_arekipa"
 destinationName: "Арекипа"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language:
   - "Английский"
@@ -45,6 +44,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/arekipa-tur-v-belom-gorode"
 sourceSnapshot: "https://drive.google.com/file/d/1lXSXkaRKNirAZ8uCMhVCe4MOkOhbE6L_/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Арекипа раскрыта:

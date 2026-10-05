@@ -9,7 +9,6 @@ country: "country_colombia"
 destination: "destination_colombia_medelin"
 destinationName: "Медельин"
 relatedDestinations: []
-themes: []
 duration: "5 часов"
 language:
   - "Английский"
@@ -39,6 +38,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/penol-i-guatape"
 sourceSnapshot: "https://drive.google.com/file/d/1F10fSD8JKcvN7P7BXAeW475VjVsHIijM/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 Приготовьтесь к захватывающему однодневному путешествию, которое сочетает в себе историю, культуру и потрясающую природную красоту!

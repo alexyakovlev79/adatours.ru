@@ -9,7 +9,6 @@ searchAliases:
   - Ужин-шведский стол в Лиме
 country: country_peru
 destination: destination_peru_lima
-themes: []
 duration: 19:00–22:00
 language: []
 hero:
@@ -26,6 +25,7 @@ included:
 notIncluded: []
 notes: []
 updatedAt: 2026-10-01
+themes: ["theme_culture","theme_gastronomy_wine"]
 ---
 
 В Лиме можно заказать вечернюю программу с ужином-шведским столом национальной кухни и фольклорным шоу.

@@ -16,11 +16,6 @@ gallery:
     alt: Побережье Порту-ди-Галиньяш
   - src: /media/destinations/porto-de-galinhas/gallery-2-enhanced-20261001.webp
     alt: Пляж и рифы Порту-ди-Галиньяш
-themes:
-  - beach
-  - family
-  - diving
-  - adventure
 relatedDestinations:
   - destination_brazil_recife
   - destination_brazil_olinda
@@ -50,6 +45,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-v-portu-de-galinyas-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-plyazhnye-tury-v-portu-de-galinyas-braziliya__5f1b3787.md
 updatedAt: 2026-09-24
+themes: ["theme_beach","theme_adventure","theme_wildlife"]
 ---
 
 Порту-ди-Галиньяш находится на побережье штата Пернамбуку к югу от Ресифи. Главная особенность этого направления связана с рифами: во время отлива у берега образуются природные бассейны, где можно купаться и наблюдать морскую жизнь.

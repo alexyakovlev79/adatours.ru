@@ -23,7 +23,6 @@ gallery:
     alt: "На фото: город Риобамба в Эквадоре"
   - src: https://brasiltours.ru/image/catalog/category/R/i/Riobamba_ParqueSucre.jpg
     alt: "На фото: город Риобамба в Эквадоре"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -38,6 +37,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/tury-i-ehkskursii-v-gorod-riobamba-v-andah-v-ehkvadore
 sourceSnapshot: page_texts_original/tury-i-ehkskursii-v-gorod-riobamba-v-andah-v-ehkvadore__25236aef.md
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Риобамба находится в центральной части Эквадора, в Андах, у подножия вулкана Чимборасо. Город расположен на высоте 2750 м над уровнем моря. Долина была заселена задолго до прихода испанцев и входила в территорию империи инков.

@@ -10,7 +10,6 @@ summary: "Из Ла-Фортуны открываются виды на вулк
 searchAliases: []
 hero: {"src":/media/countries/costa-rica/featureBands-1-enhanced-20261002.webp,"alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"}
 gallery: [{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-3-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-4-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-s-vulkanom-arenal-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1QNrLpMXGzmlJQkFExWEbb7E_cXN3w1yc/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 ## Вулкан Ареналь и водопад: что посмотреть в Ла-Фортуне, Коста-Рика

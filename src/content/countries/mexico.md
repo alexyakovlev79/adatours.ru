@@ -39,12 +39,6 @@ bestTime: На Тихоокеанском побережье сезон дожд
 currency: MXN
 languages:
   - испанский
-relatedThemes:
-  - theme_beach
-  - theme_diving
-  - theme_family
-  - theme_gastronomy_wine
-  - theme_motorcycle
 featureBands:
   - eyebrow: Археология
     title: Теотиуакан, Чичен-Ица и Паленке

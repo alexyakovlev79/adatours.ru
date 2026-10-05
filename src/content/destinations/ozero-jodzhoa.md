@@ -16,7 +16,6 @@ gallery:
     alt: "На фото: на озере Йоджоа в Гондурасе"
   - src: "/media/destinations/lake-yojoa/gallery-2-enhanced-20261003.webp"
     alt: "На фото: на озере Йоджоа в Гондурасе"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -25,6 +24,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ozero-jodzhoa-johoa-v-gondurase"
 sourceSnapshot: "https://drive.google.com/file/d/1mUQZ0H29HUzPI8F4uCXskXSuIjXUzgtO/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife"]
 ---
 
 ### Озеро Йоджоа - самое большое озеро в Гондурасе!

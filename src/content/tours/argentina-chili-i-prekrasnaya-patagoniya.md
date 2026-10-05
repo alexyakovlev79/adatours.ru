@@ -24,10 +24,6 @@ destinations:
   - destination_argentina_ozero_eskondido_ognennaya_zemlya
   - destination_argentina_ostrov_martilo
   - destination_chile_dolina_majpo
-themes:
-  - multi-country
-  - nature
-  - adventure
 audiences:
   - private
 format: Частный
@@ -296,6 +292,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/argentina-chili-i-prekrasnaya-patagoniya
 sourceSnapshot: page_texts_original/argentina-chili-i-prekrasnaya-patagoniya__c5ba6894.md
 updatedAt: 2026-10-01
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 ## Патагония от Огненной Земли до Фицроя и Торрес-дель-Пайне

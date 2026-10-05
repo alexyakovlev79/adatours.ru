@@ -9,7 +9,6 @@ country: "country_paraguay"
 destination: "destination_paraguay_asunson"
 destinationName: "Асунсьон"
 relatedDestinations: []
-themes: []
 language: []
 priceNote: "Цена указана на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
@@ -38,6 +37,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/siti-tur-v-asunsone"
 sourceSnapshot: "https://drive.google.com/file/d/1L7UgS7dgSNWYGi1H_DWjQGX7mb4lm7ic/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 Обзорная экскурсия по Асунсьону.

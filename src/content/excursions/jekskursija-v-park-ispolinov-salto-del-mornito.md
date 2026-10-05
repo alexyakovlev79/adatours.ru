@@ -9,7 +9,6 @@ country: "country_colombia"
 destination: "destination_colombia_san_avgustin"
 destinationName: "Сан-Августин"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 143
 currency: "USD"
@@ -24,6 +23,7 @@ notes: ["Возможны скидки для более чем одного ч�
 sourceUrl: "https://brasiltours.ru/jekskursija-v-park-ispolinov-salto-del-mornito"
 sourceSnapshot: "https://drive.google.com/file/d/1XxGQyQgseBhlxv5bHQxsD-803KYEXvJn/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: []
 ---
 
 Экскурсия в Парк Исполинов — Салто дель Морнито.

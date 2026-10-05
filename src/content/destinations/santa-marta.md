@@ -10,7 +10,6 @@ summary: "Санта-Марта находится на Карибском по�
 searchAliases: []
 hero: {"src":"/media/destinations/santa-marta/hero-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"}
 gallery: [{"src":"/media/destinations/santa-marta/gallery-1-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-2-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-3-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-4-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-5-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-6-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-na-kurort-santa-marta-v-kolumbii"
 sourceSnapshot: "https://drive.google.com/file/d/1cq88YjJfzJPuEQ9-cktZ5oO-Tf1hQECD/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_diving"]
 ---
 
 ## Парк Тайрона и Затерянный город: что посмотреть в Санта-Марте

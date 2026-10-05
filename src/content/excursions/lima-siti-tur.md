@@ -9,7 +9,6 @@ searchAliases:
   - Экскурсия по Лиме
 country: country_peru
 destination: destination_peru_lima
-themes: [culture, city]
 duration: 4 часа
 language:
   - английский
@@ -36,6 +35,7 @@ notes: []
 sourceUrl: https://brasiltours.ru/lima-siti-tur
 sourceSnapshot: page_texts_newstep/Excursions/lima-siti-tur__1abb46fa.md
 updatedAt: 2026-09-30
+themes: ["theme_culture"]
 ---
 
 Экскурсия начинается в Парке Любви в районе Мирафлорес, откуда открывается вид на Тихий океан. Затем маршрут продолжается к Уака-Пукльяне, церемониальному центру культуры Лимы.

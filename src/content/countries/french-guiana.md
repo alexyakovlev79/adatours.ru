@@ -22,10 +22,6 @@ currency: EUR
 languages:
   - французский
   - креольский
-relatedThemes:
-  - theme_adventure
-  - theme_beach
-  - theme_gastronomy_wine
 featureBands:
   - eyebrow: Столица и культура
     title: Кайенна

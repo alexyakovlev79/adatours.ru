@@ -7,7 +7,6 @@ status: "approved"
 searchAliases: []
 country: "country_brazil"
 relatedDestinations: []
-themes: []
 duration: "7–8 часов"
 language: []
 hero:
@@ -39,6 +38,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/fazendy-kofejnykh-baronov"
 sourceSnapshot: "https://drive.google.com/file/d/1FeWErnZbE1KcImHbjeIvWUzidIEN_2sm/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_gastronomy_wine"]
 ---
 
 Маршрут экскурсии «Фазенды кофейных баронов» проходит по Долине Кофе штата Рио-де-Жанейро. Продолжительность — 7–8 часов.

@@ -19,10 +19,6 @@ hero:
 gallery:
   - src: /media/catalog/tury/hero-enhanced-20260930.webp
     alt: Панорама Рио-де-Жанейро
-themes:
-  - city
-  - culture
-  - luxury
 relatedDestinations:
   - destination_brazil_iguacu
   - destination_brazil_amazon
@@ -54,6 +50,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii__7f36c92d.md
 updatedAt: 2026-09-25
+themes: ["theme_culture","theme_beach","theme_events"]
 ---
 
 Ada Tours организует поездки в Рио-де-Жанейро от короткого знакомства с городом до полноценного индивидуального тура. В программу можно включить отель, встречу в аэропорту, частного или группового гида, трансферы, билеты, морскую прогулку, вертолет и дополнительные дни в других регионах Бразилии.

@@ -22,7 +22,6 @@ destinations:
 - destination_uruguay_koloniya_del_sakramento
 - destination_chile_dolina_majpo
 - destination_chile_valparaiso_i_vinya_del_mar
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро, 4 ночи
@@ -319,6 +318,8 @@ routeDestinations:
 - destination_argentina_tigre
 - destination_argentina_san_isidro_buenos_ajres
 - destination_chile_santyago_de_chili
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 15 дней / 14 ночей

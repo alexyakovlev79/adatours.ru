@@ -9,7 +9,6 @@ searchAliases:
   - Кайпиринья в Рио
 country: country_brazil
 destination: destination_brazil_rio
-themes: [gastronomy, culture]
 language: []
 hero:
   src: /media/excursions/master-klass-po-prigotovleniyu-kajpirini/hero-enhanced-20261001.webp
@@ -22,6 +21,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-09-30
+themes: ["theme_gastronomy_wine"]
 ---
 
 Мастер-класс проходит на крыше прибрежного отеля с видом на океан. Вы познакомитесь с разными видами кашасы, в том числе выдержанной и прозрачной, а затем приготовите кайпиринью с сахаром и льдом.

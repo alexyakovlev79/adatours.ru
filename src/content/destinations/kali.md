@@ -10,7 +10,6 @@ summary: "Кали известен колониальной архитекту�
 searchAliases: []
 hero: {"src":"/media/destinations/cali/hero-enhanced-20261003.webp","alt":"На фото: город Кали, Колумбия"}
 gallery: [{"src":"/media/destinations/cali/gallery-1-enhanced-20261003.webp","alt":"На фото: город Кали, Колумбия"},{"src":"/media/destinations/cali/gallery-2-enhanced-20261003.webp","alt":"На фото: город Кали, Колумбия"},{"src":"/media/destinations/cali/gallery-3-enhanced-20261003.webp","alt":"На фото: город Кали, Колумбия"},{"src":"/media/destinations/cali/gallery-4-enhanced-20261003.webp","alt":"На фото: город Кали, Колумбия"},{"src":"/media/destinations/cali/gallery-5-enhanced-20261003.webp","alt":"На фото: город Кали, Колумбия"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kali-v-kolumbii"
 sourceSnapshot: "https://drive.google.com/file/d/1pvvml_DUe-oY3U90M6OPL5yVsEgB0cP3/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Кали -город сальси, музеев и колониальной архитектуры

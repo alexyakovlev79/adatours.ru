@@ -11,7 +11,6 @@ searchAliases:
 country: country_bolivia
 destination: destination_bolivia_santa_krus
 destinationName: "Санта-Крус"
-themes: [nature, adventure]
 duration: 8 часов
 language:
   - английский
@@ -48,6 +47,7 @@ sourceSnapshot: page_texts_newstep/Excursions/amboro-park-tur__99127ec5.md
 updatedAt: 2026-10-02
 relatedDestinations:
   - destination_bolivia_park_amboro
+themes: ["theme_wildlife"]
 ---
 
 Амборо — это день среди облачного леса Боливии: высоких папоротников, густой зелени, птиц и природных троп. После лесной части маршрут продолжается у водопадов Куэвас.

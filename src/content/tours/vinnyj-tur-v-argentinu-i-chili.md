@@ -18,10 +18,6 @@ destinations:
   - destination_chile_valparaiso_i_vinya_del_mar
   - destination_argentina_dolina_uko
   - destination_argentina_luhan_de_kujo
-themes:
-  - multi-country
-  - wine
-  - culture
 audiences:
   - private
 format: Частный
@@ -427,6 +423,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/vinnyj-tur-v-argentinu-i-chili
 sourceSnapshot: page_texts_original/vinnyj-tur-v-argentinu-i-chili__fef8d4f5.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_gastronomy_wine","theme_culture"]
+themes: []
 ---
 
 ## Главное в путешествии

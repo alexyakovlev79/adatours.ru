@@ -10,7 +10,6 @@ searchAliases:
   - Машпи Эквадор
 country: country_ecuador
 destination: destination_ecuador_kito_vulkan_kotopahi
-themes: [nature, luxury, adventure]
 duration: "2 дня / 1 ночь"
 language:
   - английский
@@ -55,6 +54,7 @@ notes:
 sourceUrl: https://brasiltours.ru/mashpi-lodzh
 sourceSnapshot: page_texts_newstep/Excursions/mashpi-lodzh__5acfa719.md
 updatedAt: 2026-10-02
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 Машпи Лодж находится в заповеднике площадью около 1300 гектаров, среди тропического леса Эквадора. Два дня здесь строятся вокруг природы: прогулок по лесу, наблюдения за птицами, вечерних выходов после ужина и ранних утренних активностей, когда лес особенно оживлен.

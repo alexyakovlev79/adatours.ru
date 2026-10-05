@@ -28,7 +28,6 @@ gallery:
     alt: "На фото: город Вальпараисо в Чили"
   - src: "https://brasiltours.ru/image/catalog/category/v/a/valparaiso_232.jpg"
     alt: "На фото: город Вальпараисо в Чили"
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -37,6 +36,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-goroda-valparaiso-i-vinya-del-mar-v-chili"
 sourceSnapshot: "https://drive.google.com/file/d/1_LzuaUko7o8fuwaMfQb42yBABL4ogKwP/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture","theme_beach"]
 ---
 
 ## Фуникулеры и цветные дома: что посмотреть в Вальпараисо и Винья-дель-Мар, Чили

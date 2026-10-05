@@ -22,7 +22,6 @@ gallery:
   alt: 'На фото: Пуэрто-Мадрин в Аргентине'
 - src: /media/destinations/puerto-madrin/gallery-5-enhanced-20261002.webp
   alt: 'На фото: Пуэрто-Мадрин в Аргентине'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -31,6 +30,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/gorod-puehrto-madrin-v-argentine
 sourceSnapshot: https://drive.google.com/file/d/1gbr9seq6EOKruLi6Z20ArgCSTihZausG/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_wildlife"]
 ---
 
 Пуэрто-Мадрин - один из самых оживленных городов с населением около 80 тысяч, расположенный на северо-востоке Патагонии, поражает туриста с первого взгляда. Он привлекает красивой набережной, выходящей на огромный природный амфитеатр залива Нуэво. В городе Пуэрто-Мадрин вдоль набережной можно посетить один из множества ресторанов, где необычайно вкусно готовят рыбу и морепродукты. Не забудьте также попробовать знаменитое аргентинское мясо и насладиться вином!

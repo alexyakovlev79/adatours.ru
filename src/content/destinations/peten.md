@@ -16,7 +16,6 @@ gallery:
     alt: "На фото: пирамиды Эль-Петен в Гватемале"
   - src: "/media/destinations/peten/gallery-2-enhanced-20261003.webp"
     alt: "На фото: пирамиды Эль-Петен в Гватемале"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -25,6 +24,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-majya-ehl-peten-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1JYuBsakTihAlAv0DeHLFqfhVYn_-Qbst/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 ### Петен-остров с городом Флорес

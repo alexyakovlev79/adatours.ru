@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_iguacu"
 destinationName: "Фоз-ду-Игуасу"
 relatedDestinations: []
-themes: []
 format: "Групповая экскурсия"
 language: []
 priceFrom: 178
@@ -37,6 +36,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/makuko-safari-he"
 sourceSnapshot: "https://drive.google.com/file/d/1wSJPu96aJvwN9CeOQZBzpEzqsXgdrIeM/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_adventure","theme_wildlife"]
 ---
 
 ## Макуко Сафари

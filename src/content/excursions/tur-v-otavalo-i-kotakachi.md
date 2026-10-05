@@ -9,7 +9,6 @@ country: "country_ecuador"
 destination: "destination_ecuador_otavalo"
 destinationName: "Отавало"
 relatedDestinations: []
-themes: []
 duration: "8 часов"
 language:
   - "Русский"
@@ -46,6 +45,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/tur-v-otavalo-i-kotakachi"
 sourceSnapshot: "https://drive.google.com/file/d/1kWUTtxUofUjrEmZOuxSKsqXjXFtnmlJY/view?usp=drivesdk"
 updatedAt: 2026-10-02
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 ## Главные моменты тура

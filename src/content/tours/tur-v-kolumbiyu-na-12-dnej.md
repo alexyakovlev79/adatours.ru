@@ -17,7 +17,6 @@ destinations:
 - destination_colombia_guatape
 - destination_colombia_ozero_guatavita
 - destination_colombia_sipakira
-themes: []
 audiences: []
 route:
 - Богота
@@ -282,6 +281,8 @@ routeDestinations:
 - destination_colombia_guatape
 - destination_colombia_ozero_guatavita
 - destination_colombia_sipakira
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_gastronomy_wine","theme_wildlife"]
 ---
 
 **Длительность:** 12 дней / 11 ночей  

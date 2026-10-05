@@ -11,7 +11,6 @@ destinations:
 - destination_brazil_sao_paulo
 - destination_brazil_salvador
 - destination_brazil_praia_do_forte
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -287,6 +286,8 @@ routeDestinations:
 - destination_brazil_sao_paulo
 - destination_brazil_salvador
 - destination_brazil_praia_do_forte
+primaryThemes: ["theme_culture","theme_beach"]
+themes: []
 ---
 
 **Длительность:** 11 дней / 10 ночей

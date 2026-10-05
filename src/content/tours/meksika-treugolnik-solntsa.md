@@ -12,7 +12,6 @@ destinations:
 - destination_mexico_kuernavaka
 - destination_mexico_tasko
 - destination_mexico_akapulko
-themes: []
 audiences: []
 route:
 - Мехико
@@ -163,6 +162,8 @@ routeDestinations:
 - destination_mexico_kuernavaka
 - destination_mexico_tasko
 - destination_mexico_akapulko
+primaryThemes: ["theme_culture","theme_beach"]
+themes: []
 ---
 
 **Длительность:** 8 дней / 7 ночей  

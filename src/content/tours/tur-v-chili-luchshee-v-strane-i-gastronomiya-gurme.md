@@ -28,7 +28,6 @@ destinations:
 - destination_chile_lednik_grej
 - destination_chile_ozero_grej
 - destination_chile_dolina_majpo
-themes: []
 audiences: []
 route:
 - Сантьяго
@@ -232,6 +231,8 @@ routeDestinations:
 - destination_chile_ozero_sarmento
 - destination_chile_lednik_grej
 - destination_chile_ozero_grej
+primaryThemes: ["theme_wildlife","theme_gastronomy_wine"]
+themes: ["theme_culture"]
 ---
 
 **Длительность:** 7 дней / 6 ночей  

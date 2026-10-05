@@ -9,7 +9,6 @@ searchAliases:
   - Jardim Botânico
 country: country_brazil
 destination: destination_brazil_rio
-themes: [nature, city]
 duration: около 4 часов
 language: []
 hero:
@@ -27,6 +26,7 @@ notes:
 sourceUrl: https://brasiltours.ru/botanical-garden
 sourceSnapshot: page_texts_newstep/Excursions/botanical-garden__657bef16.md
 updatedAt: 2026-09-30
+themes: ["theme_wildlife"]
 ---
 
 Ботанический сад Рио занимает 137 гектаров у подножия Корковадо. Его основал король Жуан VI в 1808 году. В саду собрано более 7000 видов растений.

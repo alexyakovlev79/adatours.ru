@@ -14,7 +14,6 @@ destinations:
 - destination_belize_lamanaj
 - destination_belize_morskoj_zapovednik_hol_chan
 - destination_belize_peschera_aktun_tunichil_muknal
-themes: []
 audiences: []
 route:
 - Белиз
@@ -213,6 +212,8 @@ routeDestinations:
 - destination_belize_lamanaj
 - destination_belize_morskoj_zapovednik_hol_chan
 - destination_belize_peschera_aktun_tunichil_muknal
+primaryThemes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_culture","theme_beach"]
 ---
 
 **Длительность:** 13 дней / 12 ночей  

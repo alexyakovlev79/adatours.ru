@@ -30,7 +30,6 @@ destinations:
 - destination_peru_chinchero
 - destination_peru_urubamba
 - destination_colombia_ostrov_baru
-themes: []
 audiences: []
 route:
 - Лима
@@ -326,6 +325,8 @@ routeDestinations:
 - destination_colombia_ozero_guatavita
 - destination_colombia_sipakira
 - destination_colombia_kartahena
+primaryThemes: ["theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 14 дней / 13 ночей  

@@ -8,7 +8,6 @@ countryId: "country_nicaragua"
 destinationType: "resort"
 summary: "Городок у тихоокеанских пляжей с видами с окружающих холмов. В Сан Хуан дель Сур приезжают ради серфинга, рыбалки и спокойного отдыха."
 searchAliases: []
-themes: []
 hero: {"src":/media/countries/nicaragua/featureBands-3-enhanced-20261002.webp,"alt":"На фото: пляжный отдых в Никарагуа"}
 gallery: [{"src":"/media/destinations/san-juan-del-sur/gallery-1-enhanced-20261005.webp","alt":"На фото: морской курорт Сан-Хуан-дель-Сур в Никарагуа"},{"src":"/media/destinations/san-juan-del-sur/gallery-2-enhanced-20261005.webp","alt":"На фото: морской курорт Сан-Хуан-дель-Сур в Никарагуа"},{"src":"/media/destinations/san-juan-del-sur/gallery-3-enhanced-20261005.webp","alt":"На фото: морской курорт Сан-Хуан-дель-Сур в Никарагуа"},{"src":"/media/destinations/san-juan-del-sur/gallery-4-enhanced-20261005.webp","alt":"На фото: морской курорт Сан-Хуан-дель-Сур в Никарагуа"},{"src":"/media/destinations/san-juan-del-sur/gallery-5-enhanced-20261005.webp","alt":"На фото: морской курорт Сан-Хуан-дель-Сур в Никарагуа"},{"src":"/media/destinations/san-juan-del-sur/gallery-6-enhanced-20261005.webp","alt":"На фото: морской курорт Сан-Хуан-дель-Сур в Никарагуа"},{"src":"/media/destinations/san-juan-del-sur/gallery-7-enhanced-20261005.webp","alt":"На фото: морской курорт Сан-Хуан-дель-Сур в Никарагуа"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-huan-del-sur-v-nikaragua"
 sourceSnapshot: "https://drive.google.com/file/d/1DjcbAD-LQ0M_1xZsM5U_4-BvcgkKy8Pv/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_beach","theme_adventure","theme_fishing"]
 ---
 
 Сан Хуан дель Сур – это местечко для наслаждения спокойным отдыхом.

@@ -9,7 +9,6 @@ countries:
 destinations:
 - destination_brazil_kampo_grande
 - destination_brazil_pantanal
-themes: []
 audiences: []
 route:
 - Пантанал
@@ -110,6 +109,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_kampo_grande
 - destination_brazil_pantanal
+primaryThemes: ["theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 4 дня / 3 ночи  

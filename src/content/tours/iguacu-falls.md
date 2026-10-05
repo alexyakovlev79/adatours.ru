@@ -12,7 +12,6 @@ countries:
   - country_brazil
 destinations:
   - destination_brazil_iguacu
-themes: [romance]
 audiences: [couples, private]
 format: Частный
 durationDays: 3
@@ -87,6 +86,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/iguacu-falls
 sourceSnapshot: iguacu-falls__36488c0b.md
 updatedAt: 2026-09-30
+primaryThemes: ["theme_weddings_romance"]
+themes: []
 ---
 
 ## Церемония для двоих у водопадов Игуасу

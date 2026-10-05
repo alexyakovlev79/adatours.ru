@@ -14,7 +14,6 @@ destinations:
 - destination_venezuela_kanajma_i_vodopad_anhel
 - destination_venezuela_kanon_kavak
 - destination_venezuela_tepuj_kuravajna
-themes: []
 audiences: []
 route:
 - Каракас, Сан-Франциско-де-Юруани, Рорайма, Пуэрто-Ордас, национальный парк Канайма, остров Ратон, водопад Сальто-Анхель
@@ -208,6 +207,8 @@ routeDestinations:
 - destination_venezuela_rorajma
 - destination_venezuela_puerto_ordas
 - destination_venezuela_kanajma_i_vodopad_anhel
+primaryThemes: ["theme_adventure","theme_wildlife"]
+themes: []
 ---
 
 **Длительность:** 12 дней / 11 ночей  

@@ -16,10 +16,6 @@ gallery:
     alt: Прозрачная вода в окрестностях Бонито
   - src: /media/destinations/bonito/gallery-2-enhanced-20261001.webp
     alt: Активный отдых на воде в Бонито
-themes:
-  - nature
-  - adventure
-  - wildlife
 relatedDestinations:
   - destination_brazil_pantanal
 featuredTours: []
@@ -47,6 +43,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-bonito-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-bonito-v-brazilii__fe15cf30.md
 updatedAt: 2026-09-24
+themes: ["theme_adventure","theme_wildlife"]
 ---
 
 

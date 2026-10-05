@@ -23,7 +23,6 @@ destinations:
 - destination_brazil_rio
 - destination_brazil_buzios
 - destination_chile_peschera_milodona
-themes: []
 audiences: []
 route:
 - Чили
@@ -387,6 +386,8 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_buzios
 - destination_chile_peschera_milodona
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 17 дней / 16 ночей  

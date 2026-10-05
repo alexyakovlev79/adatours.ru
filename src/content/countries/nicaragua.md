@@ -26,13 +26,6 @@ currency: NIO
 languages:
   - испанский
   - мискито
-relatedThemes:
-  - theme_adventure
-  - theme_beach
-  - theme_diving
-  - theme_fishing
-  - theme_family
-  - theme_weddings_romance
 featureBands:
   - eyebrow: Вулканы и озёра
     title: Момбачо, Масая и остров Ометепе

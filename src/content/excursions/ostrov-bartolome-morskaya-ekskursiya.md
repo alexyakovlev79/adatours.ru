@@ -9,7 +9,6 @@ country: "country_ecuador"
 destination: "destination_ecuador_galapagosskie_ostrova"
 destinationName: "Галапагосские острова"
 relatedDestinations: []
-themes: []
 duration: "6 часов"
 language:
   - "Английский"
@@ -46,6 +45,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/ostrov-bartolome-morskaya-ekskursiya"
 sourceSnapshot: "https://drive.google.com/file/d/1YD-e620JhkEzWZ1KDNraG4GCgzBXlynT/view?usp=drivesdk"
 updatedAt: 2026-10-02
+themes: ["theme_wildlife","theme_beach"]
 ---
 
 ## Панорамы Бартоломе

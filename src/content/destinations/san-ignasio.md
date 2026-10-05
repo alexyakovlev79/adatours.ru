@@ -24,7 +24,6 @@ gallery:
   alt: 'На фото: город Сан-Игнасио в Белизе'
 - src: /media/destinations/san-ignasio/gallery-6-enhanced-20261002.webp
   alt: 'На фото: город Сан-Игнасио в Белизе'
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -33,6 +32,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-ignasio-v-belize
 sourceSnapshot: https://drive.google.com/file/d/1wgq6ZxX_W37EN75Cp5lc3mli8axaHLp7/view?usp=drivesdk
 updatedAt: '2026-10-02'
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 Расположен на левом берегу реки Макал у подножия гор и является отправной точкой для путешествий и базой изучения по раскиданным в горной местности древним городам племени Майя, культовым сооружениям, захоронениям. Несмотря на свои небольшие размеры, город поражает разнообразием природного ландшафта - густая сельва и плодородные долины, горы и водные каскады.

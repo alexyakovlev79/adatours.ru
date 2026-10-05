@@ -9,7 +9,6 @@ country: "country_chile"
 destination: "destination_chile_valparaiso_i_vinya_del_mar"
 destinationName: "Вальпараисо и Винья дель Мар"
 relatedDestinations: []
-themes: []
 duration: "9 часов"
 language: []
 priceFrom: 138
@@ -48,6 +47,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/vin-ja-del-mar-i-val-paraiso"
 sourceSnapshot: "https://drive.google.com/file/d/1SJM9xdMd3p9Ig-c3asaIiNGkNlfGL4X8/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Вальпараисо и Винья дель Мар

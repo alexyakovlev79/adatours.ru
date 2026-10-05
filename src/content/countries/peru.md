@@ -26,10 +26,6 @@ bestTime: Сезон зависит от региона и состава мар
 currency: PEN
 languages:
   - испанский
-relatedThemes:
-  - theme_adventure
-  - theme_gastronomy_wine
-  - theme_family
 featureBands:
   - eyebrow: Анды
     title: Куско и Священная долина

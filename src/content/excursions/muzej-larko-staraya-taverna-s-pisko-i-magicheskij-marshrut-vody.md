@@ -10,7 +10,6 @@ searchAliases:
   - Парк-де-ла-Ресерва
 country: country_peru
 destination: destination_peru_lima
-themes: [culture, city]
 duration: 6 часов
 language:
   - английский
@@ -54,6 +53,7 @@ notes:
 sourceUrl: https://brasiltours.ru/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody
 sourceSnapshot: page_texts_newstep/Excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody__1c3984e7.md
 updatedAt: 2026-09-30
+themes: ["theme_culture"]
 ---
 
 В Музее Ларко собраны коллекции, посвященные древним культурам Перу, включая керамику и изделия из золота.

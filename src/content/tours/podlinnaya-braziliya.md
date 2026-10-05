@@ -14,7 +14,6 @@ destinations:
 - destination_brazil_praia_do_forte
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро (4 ночи)
@@ -232,6 +231,8 @@ routeDestinations:
 - destination_brazil_praia_do_forte
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+primaryThemes: ["theme_wildlife","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 13 дней / 12 ночей  

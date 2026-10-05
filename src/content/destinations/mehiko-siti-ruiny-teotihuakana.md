@@ -8,7 +8,6 @@ countryId: "country_mexico"
 destinationType: "route_cluster"
 summary: "Мехико знакомит с музеями, Национальным дворцом и наследием ацтеков. В 50 км от столицы находятся руины Теотиуакана, а в окрестностях можно увидеть вулканы и места зимовки бабочек."
 searchAliases: []
-themes: []
 hero: {"src":"/media/destinations/mexico-city-and-teotihuacan/hero-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"}
 gallery: [{"src":"/media/destinations/mexico-city-and-teotihuacan/gallery-1-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"},{"src":"/media/destinations/mexico-city-and-teotihuacan/gallery-2-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"},{"src":"/media/destinations/mexico-city-and-teotihuacan/gallery-3-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"},{"src":"/media/destinations/mexico-city-and-teotihuacan/gallery-4-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"},{"src":"/media/destinations/mexico-city-and-teotihuacan/gallery-5-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"},{"src":"/media/destinations/mexico-city-and-teotihuacan/gallery-6-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"},{"src":"/media/destinations/mexico-city-and-teotihuacan/gallery-7-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"},{"src":"/media/destinations/mexico-city-and-teotihuacan/gallery-8-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"},{"src":"/media/destinations/mexico-city-and-teotihuacan/gallery-9-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"},{"src":"/media/destinations/mexico-city-and-teotihuacan/gallery-10-enhanced-20261004.webp","alt":"На фото: столица, город Мехико Сити в Мексике"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-mekhiko-siti-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1GvrAEiziITM3-7ETCYTA3yNxXI1-T81X/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 ## Мехико — город контрастов!

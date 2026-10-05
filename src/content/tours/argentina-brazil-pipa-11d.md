@@ -28,11 +28,6 @@ routeDestinations:
   - destination_brazil_natal
   - destination_brazil_praia_de_pipa
   - destination_argentina_puerto_iguasu
-themes:
-  - multi-country
-  - nature
-  - beach
-  - culture
 audiences:
   - private
   - couples
@@ -286,6 +281,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/tur-v-argentinu-i-braziliyu-s-plyazhnym-otdykhom
 sourceSnapshot: page_texts_original/tur-v-argentinu-i-braziliyu-s-plyazhnym-otdykhom__4ee83d7d.md
 updatedAt: 2026-09-29
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_culture"]
 ---
 
 Маршрут построен на резкой смене впечатлений. В Буэнос-Айресе можно гулять по Ла-Боке и Сан-Тельмо, смотреть танго и при желании отправиться в Тигре, на ранчо гаучо или даже на день в Монтевидео. В Эль-Калафате главной точкой станет ледник Перито-Морено. После Игуасу дорога ведет на северо-восточное побережье Бразилии, где финальные дни проходят среди пляжей, скал, тропической зелени и теплого океана.

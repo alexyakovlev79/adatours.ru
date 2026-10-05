@@ -12,9 +12,6 @@ hero:
   src: /media/destinations/sao-luis/hero-enhanced-20261001.webp
   alt: Сан-Луис в штате Мараньян, Бразилия
 gallery: []
-themes:
-  - culture
-  - gastronomy
 relatedDestinations:
   - destination_brazil_lencois_maranhenses
 featuredTours: []
@@ -32,6 +29,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-luis-maranyan-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-san-luis-maranyan-braziliya__3266825b.md
 updatedAt: 2026-09-24
+themes: ["theme_culture"]
 ---
 
 Сан-Луис добавляет к природному маршруту по Мараньяну городскую и историческую часть. Старый центр сохранил улицы, площади и здания разных периодов, а многие фасады покрыты португальской керамической плиткой азулежу.

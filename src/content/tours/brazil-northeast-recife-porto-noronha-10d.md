@@ -11,11 +11,6 @@ destinations:
   - destination_brazil_olinda
   - destination_brazil_porto_de_galinhas
   - destination_brazil_fernando_de_noronha
-themes:
-  - beach
-  - diving
-  - culture
-  - nature
 audiences:
   - private
   - couples
@@ -149,6 +144,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/recife-porto-de-galinhas
 sourceSnapshot: page_texts_original/recife-porto-de-galinhas__8bcbd545.md
 updatedAt: 2026-09-30
+primaryThemes: ["theme_beach"]
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 Маршрут постепенно уводит от города к океану. Сначала Ресифи и Олинда: каналы, мосты, исторические кварталы, старые церкви и виды с холмов на побережье. Затем 2 дня в Порту-де-Галиньяс, где пляжи и рифы во время отлива превращаются в природные бассейны с прозрачной теплой водой.

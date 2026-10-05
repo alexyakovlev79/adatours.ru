@@ -7,7 +7,6 @@ title: 'Семья кичуа: чича и традиционные ремесл
 country: country_ecuador
 lead: Короткое плавание вниз по течению приводит к семье индейцев кичуа. Гостям показывают, как готовят традиционный напиток
   чича, и предлагают его попробовать.
-themes: []
 language: []
 route: []
 included: []
@@ -18,6 +17,7 @@ destination: destination_ecuador_reka_napo
 destinationName: Река Напо
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
+themes: ["theme_culture","theme_gastronomy_wine"]
 ---
 
 Короткое плавание вниз по течению приводит к семье индейцев кичуа. Гостям показывают, как готовят традиционный напиток чича, и предлагают его попробовать.

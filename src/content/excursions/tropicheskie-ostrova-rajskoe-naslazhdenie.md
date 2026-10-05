@@ -10,7 +10,6 @@ searchAliases:
   - Илья-Гранди
 country: country_brazil
 destination: destination_brazil_angra_dos_reis
-themes: [nature, beach]
 duration: около 8 часов
 language: []
 priceFrom: 400
@@ -33,6 +32,7 @@ notes:
 sourceUrl: https://brasiltours.ru/tropicheskie-ostrova-rajskoe-naslazhdenie
 sourceSnapshot: page_texts_newstep/Excursions/tropicheskie-ostrova-rajskoe-naslazhdenie__edb3416d.md
 updatedAt: 2026-09-30
+themes: ["theme_beach","theme_wildlife"]
 ---
 
 После завтрака вы отправитесь в Ангра-дус-Рейс и на остров Илья-Гранди. После трансфера начинается прогулка на шхуне среди островов и бухт. Вода здесь прозрачная, с зеленовато-бирюзовым оттенком, а берег покрыт тропической растительностью.

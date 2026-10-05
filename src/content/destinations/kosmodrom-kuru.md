@@ -20,7 +20,6 @@ gallery:
     alt: ""
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN6532_7.jpg"
     alt: ""
-themes: []
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -29,6 +28,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-na-kosmodrom-kuru-vo-francuzskoj-gviane"
 sourceSnapshot: "https://drive.google.com/file/d/1kpdmYEvTMcwRNep-fLhk62_5LaTlwEEG/view?usp=drivesdk"
 updatedAt: '2026-10-02'
+themes: ["theme_culture"]
 ---
 
 ### Космодром Куру - туристический объект Французской Гвианы

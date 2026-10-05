@@ -23,7 +23,6 @@ destinations:
 - destination_chile_ahu_te_pito_kura
 - destination_chile_ahu_nau_nau
 - destination_chile_dolina_majpo
-themes: []
 audiences: []
 route:
 - Сантьяго
@@ -217,6 +216,8 @@ routeDestinations:
 - destination_chile_ahu_te_pito_kura
 - destination_chile_ahu_nau_nau
 - destination_chile_dolina_majpo
+primaryThemes: ["theme_culture"]
+themes: ["theme_wildlife","theme_gastronomy_wine"]
 ---
 
 **Длительность:** 10 дней / 9 ночей / 2026  

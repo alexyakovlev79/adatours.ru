@@ -12,7 +12,6 @@ destinations:
 - destination_brazil_rio
 - destination_brazil_paraty
 - destination_brazil_kapitolio
-themes: []
 audiences: []
 route:
 - Сан-Паулу
@@ -196,6 +195,8 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_paraty
 - destination_brazil_kapitolio
+primaryThemes: ["theme_motorcycle"]
+themes: ["theme_adventure","theme_culture"]
 ---
 
 **Длительность:** 10 дней / 9 ночей  

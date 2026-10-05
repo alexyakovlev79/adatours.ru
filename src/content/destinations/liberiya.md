@@ -10,7 +10,6 @@ summary: "Либерию называют Белым городом за дом�
 searchAliases: []
 hero: {"src":"/media/destinations/liberia/hero-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"}
 gallery: [{"src":"/media/destinations/liberia/gallery-1-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"},{"src":"/media/destinations/liberia/gallery-2-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"},{"src":"/media/destinations/liberia/gallery-3-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"},{"src":"/media/destinations/liberia/gallery-4-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"},{"src":"/media/destinations/liberia/gallery-5-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"},{"src":"/media/destinations/liberia/gallery-6-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"}]
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -19,6 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-liberiya-v-kosta-rike-guanakaste"
 sourceSnapshot: "https://drive.google.com/file/d/1xNU7XbKu8PQYb6jer-RDM_BaPA1MeCZZ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture","theme_wildlife","theme_beach"]
 ---
 
 ## Белый город и сухой тропический рай: что посмотреть в Либерии, Коста-Рика

@@ -9,7 +9,6 @@ country: "country_colombia"
 destination: "destination_colombia_santa_marta"
 destinationName: "Санта-Марта"
 relatedDestinations: []
-themes: []
 duration: "5 часов"
 language: []
 hero:
@@ -37,6 +36,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/colombia-santa-marta-parque-tayrona-playa-crystal"
 sourceSnapshot: "https://drive.google.com/file/d/1oT0OUDR54bswibIFSSZlCFQh9cnWRabQ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_beach","theme_culture"]
 ---
 
 ## Тайрона: погружение в сердце Карибского рая

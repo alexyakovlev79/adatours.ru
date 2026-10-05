@@ -24,7 +24,6 @@ gallery:
     alt: "На фото: рынок в городе Чичикастенанго в Гватемале"
   - src: "/media/destinations/chichicastenango/gallery-6-enhanced-20261003.webp"
     alt: "На фото: в городе Чичикастенанго в Гватемале"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -33,6 +32,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-chichikastenango-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1bvsZFVET7q-LzTYbOlxHMOkqTO0uVfZi/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ### Чичикастенанго - торговый городок с рынком!

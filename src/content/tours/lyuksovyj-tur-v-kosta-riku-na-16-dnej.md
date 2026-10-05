@@ -24,10 +24,6 @@ destinations:
   - destination_costa_rica_ostrov_kano
   - destination_costa_rica_plajya_konchal
   - destination_costa_rica_rio_seleste
-themes:
-  - luxury
-  - nature
-  - beach
 audiences:
   - private
 format: Частный
@@ -839,6 +835,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/lyuksovyj-tur-v-kosta-riku-na-16-dnej
 sourceSnapshot: page_texts_original/lyuksovyj-tur-v-kosta-riku-na-16-dnej__1385cfb2.md
 updatedAt: 2026-10-01
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_adventure"]
 ---
 
 ## Главное в путешествии

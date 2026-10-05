@@ -19,7 +19,6 @@ destinations:
 - destination_brazil_fazenda_florenca
 - destination_brazil_petropolis
 - destination_brazil_itakurusa
-themes: []
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -273,6 +272,8 @@ routeDestinations:
 - destination_brazil_fazenda_ponte_alta
 - destination_brazil_fazenda_taquara
 - destination_brazil_fazenda_florenca
+primaryThemes: ["theme_gastronomy_wine"]
+themes: ["theme_culture","theme_wildlife"]
 ---
 
 **Длительность:** 9 дней / 8 ночей  

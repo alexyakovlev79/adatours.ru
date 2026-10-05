@@ -8,7 +8,6 @@ countryId: "country_panama"
 destinationType: "city"
 summary: "Столица Панамы с колониальными кварталами и небоскребами. Панама-Вьехо, Сан-Фелип, Авенида-Бальбоа и парки входят в знакомство с городом."
 searchAliases: []
-themes: []
 hero: {"src":/media/countries/panama/featureBands-1-enhanced-20261002.webp,"alt":"На фото: столица Панамы, город Панама-Сити"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN3170_13.jpg","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN3648_33.jpg","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN3648_42.jpg","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN3648_39.jpg","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22200_13.jpg","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN3648_41.jpg","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN4156_2.jpg","alt":"На фото: столица Панамы, город Панама-Сити"}]
 facts: []
@@ -19,6 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1Cja5HlpAedVZWLOrUCZokTdU1FAcv2x4/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_culture"]
 ---
 
 ## Панамский канал и Casco Viejo: что посмотреть в столице Панамы

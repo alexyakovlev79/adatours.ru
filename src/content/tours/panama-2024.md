@@ -17,7 +17,6 @@ destinations:
 - destination_panama_vulkan_baru
 - destination_panama_almirante
 - destination_panama_bokas_del_toro
-themes: []
 audiences: []
 route:
 - Панама-Сити, 5 ночей
@@ -248,6 +247,8 @@ routeDestinations:
 - destination_panama_vulkan_baru
 - destination_panama_almirante
 - destination_panama_bokas_del_toro
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: ["theme_culture","theme_gastronomy_wine"]
 ---
 
 **Длительность:** 16 дней / 15 ночей  

@@ -32,10 +32,6 @@ routeDestinations:
   - destination_argentina_puerto_iguasu
   - destination_argentina_lednik_perito_moreno
   - destination_argentina_nacionalnyj_park_los_glasyares
-themes:
-  - culture
-  - nature
-  - adventure
 audiences:
   - private
 format: "Индивидуальный тур"
@@ -257,6 +253,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/argentina-ot-lda-k-vodopadam
 sourceSnapshot: https://drive.google.com/file/d/1lUNpPSwfe0uvcJDfgWIAkIVgOd-qC5d3/view?usp=drivesdk
 updatedAt: 2026-10-02
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: []
 ---
 
 За 10 дней маршрут соединяет 3 главных впечатления от Аргентины. Первые дни проходят в Буэнос-Айресе, где вы увидите исторические районы, Пласа-де-Майо и Каса-Росада, а вечером попадете на танго-шоу. Затем путешествие уходит на юг, в Эль-Калафате, к леднику Перито-Морено. Финальная часть проходит в субтропическом Игуасу, где одну систему водопадов можно увидеть с 2 сторон.

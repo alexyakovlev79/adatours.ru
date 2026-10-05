@@ -1,4 +1,5 @@
 ---
+import { themeNames } from '../../lib/interest-model.mjs';
 interface Props {
   title: string;
   summary: string;
@@ -29,7 +30,7 @@ const {
   {typeof tourDurationDays === 'number' && <span data-pagefind-meta="tour_duration_days">{tourDurationDays}</span>}
   {aliases.length > 0 && <span data-pagefind-meta="aliases">{aliases.join(' | ')}</span>}
   {geography.length > 0 && <span data-pagefind-meta="geography">{geography.join(' | ')}</span>}
-  {themes.length > 0 && <span data-pagefind-meta="themes">{themes.join(' | ')}</span>}
+  {themes.length > 0 && <span data-pagefind-meta="themes">{[...new Set([...themeNames(themes), ...themes])].join(' | ')}</span>}
   {image && <img src={image} alt="" data-pagefind-meta="image[src]" />}
 </section>
 <style>

@@ -15,7 +15,6 @@ destinations:
 - destination_el_salvador_zaliv_fonseka_salvador
 - destination_el_salvador_kuevas_de_la_barranka
 - destination_el_salvador_ostrov_meangera_del_golfo
-themes: []
 audiences: []
 route:
 - Сан-Сальвадор
@@ -150,6 +149,8 @@ routeDestinations:
 - destination_el_salvador_zaliv_fonseka_salvador
 - destination_el_salvador_kuevas_de_la_barranka
 - destination_el_salvador_ostrov_meangera_del_golfo
+primaryThemes: ["theme_culture"]
+themes: []
 ---
 
 **Длительность:** 6 дней / 5 ночей  

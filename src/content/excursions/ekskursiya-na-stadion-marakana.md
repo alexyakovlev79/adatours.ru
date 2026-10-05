@@ -7,7 +7,6 @@ title: Экскурсия на стадион «Маракана»
 country: country_brazil
 lead: Экскурсия особенно подойдет детям, которые любят футбол. Вы познакомитесь с историей строительства и открытия знаменитого
   стадиона, побываете в музее с фотографиями игроков и матчей, вошедших в историю.
-themes: []
 language: []
 route: []
 included: []
@@ -20,6 +19,7 @@ sourceSnapshot: https://drive.google.com/file/d/1oe_MGXzmP19QpDhd3_pXXXlyd4VVYqY
 hero:
   src: https://brasiltours.ru/image/countries/brazil/new-pics/marakana-2.jpg
   alt: Стадион Маракана
+themes: ["theme_culture","theme_family"]
 ---
 
 Экскурсия особенно подойдет детям, которые любят футбол. Вы познакомитесь с историей строительства и открытия знаменитого стадиона, побываете в музее с фотографиями игроков и матчей, вошедших в историю.

@@ -17,8 +17,6 @@ hero:
   src: https://brasiltours.ru/image/countries/equador/new/7.jpg
   alt: Рынок в городе Отавало, Эквадор
 gallery: []
-themes:
-  - culture
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -33,6 +31,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore
 sourceSnapshot: page_texts_original/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore__72b5115d.md
 updatedAt: 2026-10-02
+themes: ["theme_culture"]
 ---
 
 Отавало — столица одноименного кантона в Эквадоре. В городе живет более 60 тыс. человек. Коренные народы населяли эти земли еще около 10 тыс. лет назад, задолго до испанской колонизации.

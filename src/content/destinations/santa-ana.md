@@ -23,7 +23,6 @@ gallery:
     alt: "На фото: Санта Ана в Эль-Сальвадоре"
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN17713_3.jpg
     alt: "На фото: Санта Ана в Эль-Сальвадоре"
-themes: []
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
@@ -48,6 +47,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-santa-anna-i-gorodishche-tasumal-v-salvadore
 sourceSnapshot: https://drive.google.com/file/d/1foGNT7LOk3wYjzPY0O43Oq_7wNl4ddSa/view?usp=drivesdk
 updatedAt: 2026-10-02
+themes: ["theme_culture","theme_gastronomy_wine","theme_wildlife"]
 ---
 
 Санта Ана основана в 1569 году как Чиуатеуакан, что переводится как «место святой женщины». Под современным названием город известен с 1708 года.

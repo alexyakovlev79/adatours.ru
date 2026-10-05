@@ -24,7 +24,6 @@ destinations:
 - destination_guatemala_rio_dulse
 - destination_guatemala_livingston
 - destination_honduras_kopan_ruinas
-themes: []
 audiences: []
 route:
 - Гватемала-Сити
@@ -373,6 +372,8 @@ routeDestinations:
 - destination_guatemala_rio_dulse
 - destination_guatemala_livingston
 - destination_honduras_kopan_ruinas
+primaryThemes: ["theme_culture","theme_wildlife"]
+themes: ["theme_adventure"]
 ---
 
 **Длительность:** 14 дней / 13 ночей.

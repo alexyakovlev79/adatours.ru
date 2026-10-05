@@ -14,7 +14,6 @@ destinations:
 - destination_uruguay_fraj_bentos
 - destination_uruguay_koloniya_del_sakramento
 - destination_argentina_buenos_aires
-themes: []
 audiences: []
 route:
 - Монтевидео
@@ -133,6 +132,8 @@ routeDestinations:
 - destination_uruguay_fraj_bentos
 - destination_uruguay_koloniya_del_sakramento
 - destination_argentina_buenos_aires
+primaryThemes: ["theme_gastronomy_wine","theme_culture"]
+themes: []
 ---
 
 **Длительность:** 4 дня / 3 ночи  

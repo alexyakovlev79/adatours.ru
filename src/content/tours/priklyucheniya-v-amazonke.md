@@ -9,7 +9,6 @@ countries:
 destinations:
 - destination_brazil_amazon
 - destination_brazil_derevnya_akazhatuba
-themes: []
 audiences: []
 route:
 - Амазония
@@ -82,6 +81,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_derevnya_akazhatuba
+primaryThemes: ["theme_adventure"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 4 дня / 3 ночи  

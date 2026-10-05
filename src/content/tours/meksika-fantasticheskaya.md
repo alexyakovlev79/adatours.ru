@@ -20,7 +20,6 @@ destinations:
 - destination_mexico_bonampak
 - destination_mexico_vilyaermosa
 - destination_mexico_kankun
-themes: []
 audiences: []
 route:
 - Мехико
@@ -261,6 +260,8 @@ routeDestinations:
 - destination_mexico_bonampak
 - destination_mexico_vilyaermosa
 - destination_mexico_kankun
+primaryThemes: ["theme_culture","theme_beach"]
+themes: ["theme_wildlife"]
 ---
 
 **Длительность:** 12 дней / 11 ночей  

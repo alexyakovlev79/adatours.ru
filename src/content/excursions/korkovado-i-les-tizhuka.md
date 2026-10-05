@@ -9,7 +9,6 @@ country: "country_brazil"
 destination: "destination_brazil_rio"
 destinationName: "Рио-де-Жанейро"
 relatedDestinations: []
-themes: []
 language: []
 priceFrom: 53
 currency: "USD"
@@ -33,6 +32,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/korkovado-i-les-tizhuka"
 sourceSnapshot: "https://drive.google.com/file/d/1-X9q8AgH9yI-Lki33C4JliQWgomYWW06/view?usp=drivesdk"
 updatedAt: "2026-10-02"
+themes: ["theme_wildlife","theme_culture"]
 ---
 
 Экскурсия посвящена Корковадо и лесу Тижука в Рио-де-Жанейро.

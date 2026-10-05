@@ -12,7 +12,6 @@ destinations:
 - destination_venezuela_ostrov_margarita
 - destination_venezuela_kanon_kavak
 - destination_venezuela_tepuj_kuravajna
-themes: []
 audiences: []
 route:
 - Каракас
@@ -259,6 +258,8 @@ routeDestinations:
 - destination_venezuela_karakas
 - destination_venezuela_kanajma_i_vodopad_anhel
 - destination_venezuela_ostrov_margarita
+primaryThemes: ["theme_wildlife","theme_beach"]
+themes: []
 ---
 
 **Длительность:** 12 дней / 11 ночей  

@@ -20,10 +20,6 @@ destinations:
   - destination_chile_nacionalnyj_park_san_rafael
   - destination_chile_puerto_sisnes
   - destination_chile_ford_garibaldi
-themes:
-  - adventure
-  - nature
-  - wildlife
 audiences:
   - private
 format: "Экспедиционный круиз"
@@ -203,6 +199,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/patagoniya-i-chilijskie-fordy
 sourceSnapshot: page_texts_original/patagoniya-i-chilijskie-fordy__5b05c890.md
 updatedAt: 2026-10-02
+primaryThemes: ["theme_cruises","theme_wildlife"]
+themes: []
 ---
 
 ## Программа 2025-2026

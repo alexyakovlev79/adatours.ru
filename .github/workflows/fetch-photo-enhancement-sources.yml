@@ -60,6 +60,13 @@ jobs:
           curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN6530_4.jpg' -o "$dir/asuncion-gallery-1.jpg"
           curl -fL --retry 2 --connect-timeout 20 'https://brasiltours.ru/image/catalog/category/B/N/BN6530_1.jpg' -o "$dir/asuncion-gallery-2.jpg"
           file "$dir"/*
+      - name: Upload exact-source artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: photo-enhancement-sources-20261005-next40
+          path: tmp/photo-enhancement-inputs/20261005-next40
+          if-no-files-found: error
+          retention-days: 1
       - name: Commit temporary source files
         shell: bash
         run: |

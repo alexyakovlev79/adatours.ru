@@ -1,0 +1,246 @@
+name: Cleanup duplicate itinerary headings
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cleanup-duplicate-itinerary-headings.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove duplicate headings from itinerary content
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+
+          const normalize = (value = '') =>
+            value
+              .normalize('NFKD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .toLowerCase()
+              .replace(/ё/g, 'е')
+              .replace(/[*_~#«»"'.,:;!?()[\]{}<>/\\|–—-]+/g, ' ')
+              .replace(/\s+/g, ' ')
+              .trim();
+
+          const scalar = (value = '') => {
+            const v = value.trim();
+            if (v.startsWith('"') && v.endsWith('"')) {
+              try { return JSON.parse(v); } catch {}
+            }
+            if (v.startsWith("'") && v.endsWith("'")) {
+              return v.slice(1, -1).replace(/''/g, "'");
+            }
+            return v;
+          };
+
+          const splitMd = (text) => {
+            const match = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+            return match ? { frontmatter: match[1], body: match[2] } : null;
+          };
+
+          const titleFromFrontmatter = (frontmatter) => {
+            const match = frontmatter.match(/^title:\s*(.+)$/m);
+            return match ? scalar(match[1]) : '';
+          };
+
+          const stripLeadingHeading = (body, title) => {
+            let current = body;
+            let removed = 0;
+
+            while (true) {
+              let match = current.match(/^\s*#{1,6}[ \t]+(.+?)[ \t]*(?:\r?\n|$)(?:[ \t]*\r?\n)?/);
+              if (match && normalize(match[1]) === normalize(title)) {
+                current = current.slice(match[0].length);
+                removed += 1;
+                continue;
+              }
+
+              match = current.match(/^\s*(.+?)\r?\n[ \t]*(?:={3,}|-{3,})[ \t]*\r?\n(?:[ \t]*\r?\n)?/);
+              if (match && normalize(match[1]) === normalize(title)) {
+                current = current.slice(match[0].length);
+                removed += 1;
+                continue;
+              }
+
+              match = current.match(/^\s*<h([1-6])(?:\s[^>]*)?>([\s\S]*?)<\/h\1>\s*/i);
+              if (match && normalize(match[2].replace(/<[^>]+>/g, ' ')) === normalize(title)) {
+                current = current.slice(match[0].length);
+                removed += 1;
+                continue;
+              }
+
+              break;
+            }
+
+            return { body: current, removed };
+          };
+
+          const excursionDir = 'src/content/excursions';
+          const tourDir = 'src/content/tours';
+          let excursionFilesChanged = 0;
+          let excursionHeadingsRemoved = 0;
+          let tourFilesChanged = 0;
+          let tourHeadingsRemoved = 0;
+
+          for (const name of fs.readdirSync(excursionDir).filter((x) => x.endsWith('.md'))) {
+            const file = path.join(excursionDir, name);
+            const original = fs.readFileSync(file, 'utf8');
+            const parts = splitMd(original);
+            if (!parts) continue;
+
+            const title = titleFromFrontmatter(parts.frontmatter);
+            if (!title) continue;
+
+            const cleaned = stripLeadingHeading(parts.body, title);
+            if (!cleaned.removed) continue;
+
+            const newline = original.includes('\r\n') ? '\r\n' : '\n';
+            const output =
+              '---' + newline +
+              parts.frontmatter + newline +
+              '---' + newline +
+              cleaned.body;
+
+            fs.writeFileSync(file, output);
+            excursionFilesChanged += 1;
+            excursionHeadingsRemoved += cleaned.removed;
+          }
+
+          const cleanTourFrontmatter = (frontmatter) => {
+            const lines = frontmatter.split(/\r?\n/);
+            const itineraryLine = lines.findIndex((line) => line === 'itinerary:');
+            if (itineraryLine < 0) return { frontmatter, removed: 0 };
+
+            let itineraryEnd = lines.length;
+            for (let i = itineraryLine + 1; i < lines.length; i += 1) {
+              if (/^[A-Za-z][A-Za-z0-9_-]*:/.test(lines[i])) {
+                itineraryEnd = i;
+                break;
+              }
+            }
+
+            let removed = 0;
+            let i = itineraryLine + 1;
+
+            while (i < itineraryEnd) {
+              if (!/^- day:\s*\d+\s*$/.test(lines[i])) {
+                i += 1;
+                continue;
+              }
+
+              let blockEnd = i + 1;
+              while (
+                blockEnd < itineraryEnd &&
+                !/^- (?:day:\s*\d+|excursionRef:)/.test(lines[blockEnd])
+              ) {
+                blockEnd += 1;
+              }
+
+              let title = '';
+              let textLine = -1;
+
+              for (let j = i + 1; j < blockEnd; j += 1) {
+                const titleMatch = lines[j].match(/^  title:\s*(.+)$/);
+                if (titleMatch && !title) title = scalar(titleMatch[1]);
+                if (/^  text:\s*\|[-+]?\s*$/.test(lines[j])) textLine = j;
+              }
+
+              if (title && textLine >= 0) {
+                let first = textLine + 1;
+                while (first < blockEnd && /^\s*$/.test(lines[first])) first += 1;
+
+                const atx = first < blockEnd
+                  ? lines[first].match(/^\s{4,}#{1,6}[ \t]+(.+?)[ \t]*$/)
+                  : null;
+
+                if (atx && normalize(atx[1]) === normalize(title)) {
+                  lines.splice(first, 1);
+                  itineraryEnd -= 1;
+                  blockEnd -= 1;
+                  removed += 1;
+                  if (first < blockEnd && /^\s*$/.test(lines[first])) {
+                    lines.splice(first, 1);
+                    itineraryEnd -= 1;
+                    blockEnd -= 1;
+                  }
+                } else if (first + 1 < blockEnd) {
+                  const setextTitle = lines[first].match(/^\s{4,}(.+?)\s*$/);
+                  const setextRule = /^\s{4,}(?:={3,}|-{3,})\s*$/.test(lines[first + 1]);
+                  if (setextTitle && setextRule && normalize(setextTitle[1]) === normalize(title)) {
+                    lines.splice(first, 2);
+                    itineraryEnd -= 2;
+                    blockEnd -= 2;
+                    removed += 1;
+                    if (first < blockEnd && /^\s*$/.test(lines[first])) {
+                      lines.splice(first, 1);
+                      itineraryEnd -= 1;
+                      blockEnd -= 1;
+                    }
+                  }
+                }
+              }
+
+              i = blockEnd;
+            }
+
+            return { frontmatter: lines.join('\n'), removed };
+          };
+
+          for (const name of fs.readdirSync(tourDir).filter((x) => x.endsWith('.md'))) {
+            const file = path.join(tourDir, name);
+            const original = fs.readFileSync(file, 'utf8');
+            const parts = splitMd(original);
+            if (!parts) continue;
+
+            const cleaned = cleanTourFrontmatter(parts.frontmatter);
+            if (!cleaned.removed) continue;
+
+            const newline = original.includes('\r\n') ? '\r\n' : '\n';
+            const output =
+              '---' + newline +
+              cleaned.frontmatter.replace(/\n/g, newline) + newline +
+              '---' + newline +
+              parts.body;
+
+            fs.writeFileSync(file, output);
+            tourFilesChanged += 1;
+            tourHeadingsRemoved += cleaned.removed;
+          }
+
+          const summary = [
+            `excursion files changed: ${excursionFilesChanged}`,
+            `excursion duplicate headings removed: ${excursionHeadingsRemoved}`,
+            `tour files changed: ${tourFilesChanged}`,
+            `tour-day duplicate headings removed: ${tourHeadingsRemoved}`,
+          ].join('; ');
+
+          fs.writeFileSync('/tmp/cleanup-summary.txt', summary + '\n');
+          console.log(summary);
+          NODE
+
+      - name: Commit cleanup as one repository change
+        shell: bash
+        run: |
+          set -euo pipefail
+          summary="$(cat /tmp/cleanup-summary.txt)"
+          rm -f .github/workflows/cleanup-duplicate-itinerary-headings.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/content/tours src/content/excursions .github/workflows/cleanup-duplicate-itinerary-headings.yml
+          git commit -m 'Remove duplicate itinerary headings across content' -m "$summary"
+          git pull --rebase origin main
+          npm ci
+          npm run build
+          git push

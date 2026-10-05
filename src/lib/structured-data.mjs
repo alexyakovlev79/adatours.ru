@@ -1,7 +1,7 @@
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
  * Facts come from the content model and the rendered page, never SEO inventions.
  */
-export const SCHEMA_VERSION = '2026-10-05.1';
+export const SCHEMA_VERSION = '2026-10-05.2';
 export const types = (node) => [node?.['@type'] ?? []].flat();
 export const hasType = (node, type) => types(node).includes(type);
 export const ref = (id) => ({ '@id': id });
@@ -70,7 +70,6 @@ export function buildStructuredData({ root, organization, records, page, documen
   const byPath = new Map(records.map((r) => [r.path, r]));
   const byId = new Map(records.map((r) => [r.data.id, r]));
   const current = byPath.get(page.path);
-  const archived = Boolean(current?.archived);
   const nodes = new Map();
   const add = (node) => {
     const n = compact(node);
@@ -89,7 +88,6 @@ export function buildStructuredData({ root, organization, records, page, documen
     email: organization.email, telephone: organization.telephone,
     identifier: organization.cnpj ? { '@type': 'PropertyValue', propertyID: 'CNPJ', value: organization.cnpj } : undefined,
     address: organization.address,
-    // Only explicitly curated identity URLs; directory/category URLs are not identities.
     sameAs: organization.sameAs?.filter((url) => /^https?:\/\//.test(url)),
     contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', email: organization.email,
       telephone: organization.telephone, availableLanguage: organization.languages },
@@ -100,14 +98,14 @@ export function buildStructuredData({ root, organization, records, page, documen
   const imageRef = imageUrl ? add({ '@type': 'ImageObject', '@id': `${page.url}#primaryimage`, contentUrl: imageUrl, url: imageUrl,
     caption: cleanText(visibleImage?.alt || current?.data.hero?.alt || current?.data.photo?.alt) || undefined,
     width: visibleImage?.width, height: visibleImage?.height, inLanguage: page.lang }) : undefined;
-  let pageType = current?.kind === 'person' ? 'ProfilePage'
+  const pageType = current?.kind === 'person' ? 'ProfilePage'
     : current && ['country', 'destination', 'theme'].includes(current.kind) ? 'CollectionPage'
     : collectionPaths.has(page.path) || document.catalog ? 'CollectionPage'
     : page.path === '/about/' ? 'AboutPage' : page.path === '/contacts/' ? 'ContactPage' : 'WebPage';
   const webPage = { '@type': pageType, '@id': pageId, url: page.url, name: cleanText(page.title),
     description: cleanText(page.description), inLanguage: page.lang,
     isPartOf: ref(siteId), publisher: ref(orgId), primaryImageOfPage: imageRef,
-    dateModified: dateValue(current?.data.updatedAt), hasPart: [] };
+    dateModified: dateValue(current?.data.updatedAt), hasPart: [], mentions: [] };
   add(webPage);
   const publicRecord = (record) => record && !record.archived && record.data.status !== 'draft';
   function ensureRecord(record, full = false) {
@@ -217,7 +215,7 @@ export function buildStructuredData({ root, organization, records, page, documen
       const url = absoluteUrl(link.href, root);
       if (!url || new URL(url).origin !== new URL(root).origin) continue;
       const path = logicalPath(url, root);
-      let record = byPath.get(path) || byId.get(link.entityId);
+      const record = byPath.get(path) || byId.get(link.entityId);
       if (record && !publicRecord(record)) continue;
       if (!record && !link.catalog) continue;
       if (path === page.path || seen.has(url) || group.fallback && listedUrls.has(url)) continue;
@@ -235,7 +233,8 @@ export function buildStructuredData({ root, organization, records, page, documen
     // Preserve an explicitly empty catalog's itemListElement (valid, also checked in CI).
     if (!items.length) nodes.get(list['@id']).itemListElement = [];
     if (group.catalog || (!webPage.mainEntity && pageType === 'CollectionPage')) webPage.mainEntity = list;
-    else webPage.hasPart.push(list);
+    // ItemList is Intangible, not CreativeWork: hasPart is reserved for page content.
+    else webPage.mentions.push(list);
   }
   // Keep authored reviews only when their text and author are actually on this page.
   const authored = [extra].flat().flatMap((n) => n?.['@graph'] || [n]).filter(Boolean);

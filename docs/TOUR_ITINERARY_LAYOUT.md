@@ -42,6 +42,20 @@ The **bottom edges of the media blocks stay aligned on one horizontal line**. A 
 
 The invariant is: **row height is governed by the smaller photograph count; equal counts reserve that full number of photograph slots; media bottoms align; mobile is unaffected**.
 
+## Desktop paired toggle behavior
+
+At desktop width, the two itinerary cards occupying one visual row behave as one accordion pair when both cards have photographs and therefore show active plus/cross controls.
+
+- clicking the plus on either card opens both cards in that row;
+- clicking the cross on either card closes both cards in that row;
+- day/day, excursion/excursion and day/excursion pairs follow the same rule;
+- an incomplete final row continues to toggle its single card normally;
+- the user's viewport must stay anchored on the summary that was clicked: opening or closing a pair must not jump the page to the next row;
+- desktop scroll anchoring is disabled inside the itinerary and the clicked summary position is restored during the row-size recalculation;
+- mobile keeps the existing independent single-card accordion behavior.
+
+A no-photo desktop card remains in its existing static-text mode. If such a card shares a row with an interactive photo card, that special no-photo behavior is preserved rather than forcing it into the paired accordion.
+
 ## Required DOM structure
 
 Each itinerary item must keep this structure conceptually:

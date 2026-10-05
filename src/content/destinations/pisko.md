@@ -12,13 +12,13 @@ hero:
   src: "/media/destinations/pisko/hero-enhanced-20261005.webp"
   alt: "На фото: город Писко в Перу"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/h/i/historia9.jpg"
+  - src: "/media/destinations/pisko/gallery-1-enhanced-20261005.webp"
     alt: "На фото: город Писко в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/P/i/Pisco-high-rise.jpg"
+  - src: "/media/destinations/pisko/gallery-2-enhanced-20261005.webp"
     alt: "На фото: город Писко в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/p/h/photo-10683-11-04-07-11-25-40.jpg"
+  - src: "/media/destinations/pisko/gallery-3-enhanced-20261005.webp"
     alt: "На фото: город Писко в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/c/i/ciudad-de-pucallpa.jpg"
+  - src: "/media/destinations/pisko/gallery-4-enhanced-20261005.webp"
     alt: "На фото: город Писко в Перу"
 facts: []
 featureBands: []

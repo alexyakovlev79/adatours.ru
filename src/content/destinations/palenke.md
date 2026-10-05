@@ -9,8 +9,8 @@ destinationType: "region"
 summary: "Паленке в штате Чьяпас объединяет современный город и руины древнего города майя. Рядом с археологическим памятником находятся природные зоны и водопад Мисоль-Ха."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/7980940712-4e388768b1-k.jpg","alt":"На фото: древний город майя Паленке в Мексике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/p/a/palace-astronomical-observatory-500.jpg","alt":"На фото: древний город майя Паленке в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/P/a/Palenque_temple_1.jpg","alt":"На фото: древний город майя Паленке в Мексике"}]
+hero: {"src":"/media/destinations/palenque/hero-enhanced-20261004.webp","alt":"На фото: древний город майя Паленке в Мексике"}
+gallery: [{"src":"/media/destinations/palenque/gallery-1-enhanced-20261004.webp","alt":"На фото: древний город майя Паленке в Мексике"},{"src":"/media/destinations/palenque/gallery-2-enhanced-20261004.webp","alt":"На фото: древний город майя Паленке в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

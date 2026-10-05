@@ -55,6 +55,10 @@ const favicon16Url = withBase('/favicon-16x16.png');
 const faviconIcoUrl = withBase('/favicon.ico');
 const appleTouchIconUrl = withBase('/apple-touch-icon.png');
 const ogImageUrl = image ? new URL(withBase(image), Astro.site ?? SITE.url).toString() : undefined;
+const robotsContent = (isPreview || noindex)
+  ? 'noindex, nofollow'
+  : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+const ogLocale = lang === 'ru' ? 'ru_RU' : lang === 'en' ? 'en_US' : lang === 'cn' ? 'zh_CN' : lang;
 
 const base = import.meta.env.BASE_URL || '/';
 const normalizedBase = base.endsWith('/') ? base : `${base}/`;
@@ -77,6 +81,9 @@ const breadcrumbLabels: Record<string, string> = {
   mendoza: 'Мендоса', cusco: 'Куско', 'machu-picchu': 'Мачу-Пикчу', lima: 'Лима',
 };
 const pageTitle = title.replace(/\s*[|–—-]\s*Ada Tours.*$/i, '').trim();
+const ogType = /^\/(?:articles|cases)\/[^/]+\/$/.test(logicalPath)
+  ? 'article'
+  : /^\/team\/[^/]+\/$/.test(logicalPath) ? 'profile' : 'website';
 const breadcrumbItems = [
   { name: 'Главная', url: rootUrl },
   ...segments.map((segment, index) => ({
@@ -118,13 +125,18 @@ const schema = await pageStructuredData({
     <link rel="icon" type="image/png" sizes="16x16" href={favicon16Url} />
     <link rel="shortcut icon" href={faviconIcoUrl} />
     <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIconUrl} />
-    {(isPreview || noindex) && <meta name="robots" content="noindex, nofollow" />}
-    <meta property="og:type" content="website" />
+    <meta name="robots" content={robotsContent} />
+    <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content={ogLocale} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+    <meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
     <meta name="theme-color" content="#131412" />
     <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />
   </head>

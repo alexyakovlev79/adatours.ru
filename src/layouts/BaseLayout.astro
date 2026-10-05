@@ -11,8 +11,9 @@ import Breadcrumbs from '../components/global/Breadcrumbs.astro';
 import { SITE } from '../lib/site';
 import { withBase } from '../lib/paths';
 import { expandBreadcrumbTrails, type BreadcrumbItem } from '../lib/routes';
-import { ORG } from '../data/organization/ada-tours';
 import { validateSiteContent } from '../lib/content-validation';
+import { pageStructuredData } from '../lib/page-schema';
+import { safeJsonLd, SCHEMA_VERSION } from '../lib/structured-data.mjs';
 
 await validateSiteContent();
 
@@ -34,20 +35,12 @@ interface Props {
 }
 
 const {
-  leadTitle,
-  leadEntityId,
-  leadTourId,
+  leadTitle, leadEntityId, leadTourId,
   title = SITE.defaultTitle,
   description = SITE.defaultDescription,
-  canonical,
-  image,
-  lang = SITE.locale,
-  headerTheme = 'light',
-  noindex = false,
-  showBreadcrumbs = true,
-  hideCurrentBreadcrumbLabel = false,
-  breadcrumbs,
-  pageSchema,
+  canonical, image, lang = SITE.locale,
+  headerTheme = 'light', noindex = false, showBreadcrumbs = true,
+  hideCurrentBreadcrumbLabel = false, breadcrumbs, pageSchema,
 } = Astro.props;
 
 const canonicalUrl = canonical
@@ -70,126 +63,46 @@ if (normalizedBase !== '/' && logicalPath.startsWith(normalizedBase)) {
   logicalPath = `/${logicalPath.slice(normalizedBase.length)}`;
 }
 if (!logicalPath.startsWith('/')) logicalPath = `/${logicalPath}`;
-
+const rootUrl = new URL(withBase('/'), Astro.site ?? SITE.url).toString();
 const segments = logicalPath.split('/').filter(Boolean);
 const breadcrumbLabels: Record<string, string> = {
-  country: 'Страны',
-  tours: 'Туры',
-  excursions: 'Экскурсии',
-  places: 'Направления',
-  'interests': 'По интересам',
-  dmc: 'Для агентств',
-  'travel-agencies': 'Для турагентств',
-  'terms': 'Условия работы',
-  mice: 'MICE',
-  'business-delegations': 'Деловые делегации',
-  vip: 'VIP',
-  'multi-country': 'Multi-country',
-  about: 'О нас',
-  team: 'Команда',
-  contacts: 'Контакты',
-  cases: 'Кейсы',
-  reviews: 'Отзывы',
-  articles: 'Статьи',
-  brazil: 'Бразилия',
-  argentina: 'Аргентина',
-  peru: 'Перу',
-  'rio-de-janeiro': 'Рио-де-Жанейро',
-  'foz-do-iguacu': 'Игуасу',
-  'manaus-amazon': 'Амазония',
-  pantanal: 'Пантанал',
-  'buenos-aires': 'Буэнос-Айрес',
-  'el-calafate': 'Эль-Калафате',
-  mendoza: 'Мендоса',
-  cusco: 'Куско',
-  'machu-picchu': 'Мачу-Пикчу',
-  lima: 'Лима',
+  country: 'Страны', tours: 'Туры', excursions: 'Экскурсии', places: 'Направления',
+  interests: 'По интересам', dmc: 'Для агентств', 'travel-agencies': 'Для турагентств',
+  terms: 'Условия работы', mice: 'MICE', 'business-delegations': 'Деловые делегации',
+  vip: 'VIP', 'multi-country': 'Multi-country', about: 'О нас', team: 'Команда',
+  contacts: 'Контакты', cases: 'Кейсы', reviews: 'Отзывы', articles: 'Статьи',
+  brazil: 'Бразилия', argentina: 'Аргентина', peru: 'Перу',
+  'rio-de-janeiro': 'Рио-де-Жанейро', 'foz-do-iguacu': 'Игуасу', 'manaus-amazon': 'Амазония',
+  pantanal: 'Пантанал', 'buenos-aires': 'Буэнос-Айрес', 'el-calafate': 'Эль-Калафате',
+  mendoza: 'Мендоса', cusco: 'Куско', 'machu-picchu': 'Мачу-Пикчу', lima: 'Лима',
 };
-
 const pageTitle = title.replace(/\s*[|–—-]\s*Ada Tours.*$/i, '').trim();
 const breadcrumbItems = [
-  { name: 'Главная', url: new URL(withBase('/'), Astro.site ?? SITE.url).toString() },
+  { name: 'Главная', url: rootUrl },
   ...segments.map((segment, index) => ({
     name: breadcrumbLabels[segment] ?? (index === segments.length - 1 ? pageTitle : segment.replace(/-/g, ' ')),
-    url: new URL(
-      withBase(`/${segments.slice(0, index + 1).join('/')}/`),
-      Astro.site ?? SITE.url,
-    ).toString(),
+    url: new URL(withBase(`/${segments.slice(0, index + 1).join('/')}/`), Astro.site ?? SITE.url).toString(),
   })),
 ];
-
 const schemaBreadcrumbTrails = breadcrumbs?.length
   ? expandBreadcrumbTrails(breadcrumbs).map((trail) => trail.map((item) => ({
-      name: item.label,
-      url: new URL(withBase(item.href), Astro.site ?? SITE.url).toString(),
+      name: item.label, url: new URL(withBase(item.href), Astro.site ?? SITE.url).toString(),
     })))
   : [breadcrumbItems];
-
-const organizationSchema = {
-  '@type': ['Organization', 'TravelAgency'],
-  '@id': `${SITE.url}/#organization`,
-  name: ORG.brand,
-  legalName: ORG.legal.name,
-  url: SITE.url,
-  email: ORG.contacts.email,
-  telephone: ORG.contacts.phoneDisplay,
-  sameAs: Object.values(ORG.externalProfiles),
-  identifier: {
-    '@type': 'PropertyValue',
-    propertyID: 'CNPJ',
-    value: ORG.legal.cnpj,
-  },
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: ORG.legal.streetAddress,
-    addressLocality: ORG.legal.addressLocality,
-    addressRegion: ORG.legal.addressRegion,
-    postalCode: ORG.legal.postalCode,
-    addressCountry: ORG.legal.addressCountry,
-  },
-};
-
-const webSiteSchema = {
-  '@type': 'WebSite',
-  '@id': `${SITE.url}/#website`,
-  url: SITE.url,
-  name: SITE.name,
-  inLanguage: lang,
-  publisher: { '@id': `${SITE.url}/#organization` },
-};
-
-const webPageSchema = {
-  '@type': 'WebPage',
-  '@id': `${canonicalUrl}#webpage`,
-  url: canonicalUrl,
-  name: fullTitle,
-  description,
-  inLanguage: lang,
-  isPartOf: { '@id': `${SITE.url}/#website` },
-  about: { '@id': `${SITE.url}/#organization` },
-};
-
-const breadcrumbSchemas = (segments.length > 0 || Boolean(breadcrumbs?.length)) ? schemaBreadcrumbTrails.map((trail, trailIndex) => ({
+const breadcrumbSchemas = !noindex && showBreadcrumbs && (segments.length > 0 || Boolean(breadcrumbs?.length)) ? schemaBreadcrumbTrails.map((trail, trailIndex) => ({
   '@type': 'BreadcrumbList',
   '@id': `${canonicalUrl}#breadcrumb${trailIndex ? `-${trailIndex + 1}` : ''}`,
-  itemListElement: trail.map((item, index) => ({
-    '@type': 'ListItem',
-    position: index + 1,
-    name: item.name,
-    item: item.url,
-  })),
+  itemListElement: trail.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: item.url })),
 })) : [];
 
-const extraSchemas = !pageSchema ? [] : (Array.isArray(pageSchema) ? pageSchema : [pageSchema]);
-const graph = [
-  organizationSchema,
-  webSiteSchema,
-  webPageSchema,
-  ...breadcrumbSchemas,
-  ...extraSchemas,
-];
+// Render exactly once. The graph describes this same HTML, including current card slices.
+// Legacy child JSON-LD is consumed and removed, preventing duplicate Person/Trip graphs.
+const schema = await pageStructuredData({
+  root: rootUrl, html: await Astro.slots.render('default'), path: logicalPath,
+  url: canonicalUrl, title: fullTitle, description, lang, image: ogImageUrl,
+  breadcrumbs: breadcrumbSchemas, extra: pageSchema,
+});
 ---
-
 <!doctype html>
 <html lang={lang}>
   <head>
@@ -213,22 +126,17 @@ const graph = [
     <meta property="og:url" content={canonicalUrl} />
     {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
     <meta name="theme-color" content="#131412" />
-    <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
+    <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />
   </head>
   <body>
     <SiteHeader theme={headerTheme} />
     <SearchOverlay />
     {showBreadcrumbs && !noindex && segments.length > 0 && (
-      <Breadcrumbs
-        pathname={Astro.url.pathname}
-        title={title}
-        theme={headerTheme}
-        items={breadcrumbs}
-        hideCurrentLabel={hideCurrentBreadcrumbLabel}
-      />
+      <Breadcrumbs pathname={Astro.url.pathname} title={title} theme={headerTheme}
+        items={breadcrumbs} hideCurrentLabel={hideCurrentBreadcrumbLabel} />
     )}
     <main>
-      <slot />
+      <Fragment set:html={schema.html} />
       <div id="request" data-lead-location="footer" data-interest-section={leadEntityId?.startsWith('theme_') ? 'cta' : undefined} data-pagefind-ignore>
         <LeadForm title={leadTitle} entityId={leadEntityId || logicalPath} tourId={leadTourId} pageUrl={canonicalUrl} locale={lang} />
       </div>
@@ -236,7 +144,6 @@ const graph = [
     <SiteFooter />
   </body>
 </html>
-
 <style>
   #request { scroll-margin-top: 100px; }
 </style>

@@ -26,10 +26,32 @@ jobs:
       - name: Lifecycle and unit tests
         run: |
           node scripts/sync-archives.mjs
-          node --test tests/*.test.mjs
+          node --test tests/*.test.mjs > /tmp/unit-tests.log 2>&1 || { tail -60 /tmp/unit-tests.log; exit 1; }
+          tail -12 /tmp/unit-tests.log
 
       - name: Build Astro and Pagefind
-        run: npm run build
+        shell: bash
+        run: |
+          if npm run build > /tmp/astro-build.log 2>&1; then
+            tail -20 /tmp/astro-build.log
+          else
+            tail -35 /tmp/astro-build.log
+            if test -f dist/schema-coverage.json; then
+              node --input-type=module -e "import fs from 'node:fs'; const r=JSON.parse(fs.readFileSync('dist/schema-coverage.json')); console.log(JSON.stringify({...r,pages:undefined,errors:r.errors.slice(0,30)},null,2));"
+            fi
+            exit 1
+          fi
+
+      - name: Save schema acceptance diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: schema-acceptance
+          path: |
+            dist/schema-coverage.json
+            /tmp/astro-build.log
+            /tmp/unit-tests.log
+          if-no-files-found: ignore
 
       - name: Search index smoke checks
         shell: bash

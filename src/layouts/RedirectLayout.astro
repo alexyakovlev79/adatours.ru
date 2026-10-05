@@ -1,11 +1,19 @@
 ---
 import { withBase } from '../lib/paths';
 import { SITE } from '../lib/site';
-
+import { safeJsonLd, SCHEMA_VERSION } from '../lib/structured-data.mjs';
 interface Props { to: string; title?: string; }
 const { to, title = 'Страница перемещена' } = Astro.props;
 const target = withBase(to);
 const canonical = new URL(target, Astro.site ?? SITE.url).toString();
+const aliasUrl = new URL(Astro.url.pathname, Astro.site ?? SITE.url).toString();
+const root = new URL(withBase('/'), Astro.site ?? SITE.url).toString();
+// A redirect is a technical WebPage, not another copy of the destination's product.
+const graph = { '@context': 'https://schema.org', '@graph': [
+  { '@type': 'WebSite', '@id': `${root}#website`, name: SITE.name, url: root, inLanguage: 'ru' },
+  { '@type': 'WebPage', '@id': `${aliasUrl}#webpage`, url: aliasUrl, name: `Страница перемещена: ${title}`,
+    inLanguage: 'ru', isPartOf: { '@id': `${root}#website` }, about: { '@id': `${canonical}#webpage` } },
+] };
 ---
 <!doctype html>
 <html lang="ru">
@@ -16,6 +24,7 @@ const canonical = new URL(target, Astro.site ?? SITE.url).toString();
     <meta http-equiv="refresh" content={`0;url=${target}`} />
     <link rel="canonical" href={canonical} />
     <title>{title} | Ada Tours</title>
+    <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(graph)} />
     <script is:inline define:vars={{ target }}>
       window.location.replace(target + window.location.search + window.location.hash);
     </script>

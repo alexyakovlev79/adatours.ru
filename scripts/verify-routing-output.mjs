@@ -46,6 +46,26 @@ const definitions = [
 let details = 0;
 let parallelCountryTrails = 0;
 const catalogues = new Set();
+const catalogueAnchorCache = new Map();
+function catalogueAnchors(path) {
+  if (catalogueAnchorCache.has(path)) return catalogueAnchorCache.get(path);
+  const anchors = new Set();
+  // A catalogue's first page intentionally does not contain every entity.
+  // Inspect every built page, and require a real navigation link to each next page.
+  const pages = [path];
+  for (let page = 2; existsSync(fileFor(`${path}page/${page}/`)); page++) pages.push(`${path}page/${page}/`);
+  for (let index = 0; index < pages.length; index++) {
+    const current = pages[index];
+    const source = html(current);
+    assert.equal(canonical(source), absolute(current), `catalogue page canonical: ${current}`);
+    const links = [...source.matchAll(/<a\b[^>]*>/g)].map((match) => attr(match[0], 'href'));
+    if (index + 1 < pages.length) assert.ok(links.includes(href(pages[index + 1])), `catalogue pagination is not reachable: ${current}`);
+    links.forEach((value) => anchors.add(value));
+    catalogues.add(current);
+  }
+  catalogueAnchorCache.set(path, anchors);
+  return anchors;
+}
 const redirectTargets = new Map();
 function verifyRedirect(from, to) {
   const previous = redirectTargets.get(from);
@@ -95,8 +115,6 @@ for (const definition of definitions) {
     assert.ok(nav, `visible breadcrumbs missing: ${entry.id}`);
     const levels = [...nav.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/g)].map((match) => match[1]);
     assert.equal(levels.length, crumbs.length, `visual breadcrumb levels: ${entry.id}`);
-    // A multi-country trail ends with parallel parent links after the current
-    // object's label was deliberately removed from the visible breadcrumbs.
     if (!('links' in crumbs.at(-1))) assert.ok(levels.at(-1).includes('aria-current="page"'), `current breadcrumb missing: ${entry.id}`);
     crumbs.forEach((crumb, index) => {
       const links = 'links' in crumb ? crumb.links : [crumb];
@@ -108,24 +126,18 @@ for (const definition of definitions) {
       if (index === crumbs.length - 1) return;
       for (const link of links) {
         assert.ok(existsSync(fileFor(link.href)), `breadcrumb links to missing page: ${entry.id} → ${link.href}`);
-        const catalogue = html(link.href);
-        const anchors = [...catalogue.matchAll(/<a\b[^>]*>/g)].map((match) => attr(match[0], 'href'));
-        assert.ok(anchors.includes(href(path)), `catalogue missing its entity: ${link.href} → ${entry.id}`);
-        catalogues.add(link.href);
+        assert.ok(catalogueAnchors(link.href).has(href(path)), `catalogue missing its entity across all pages: ${link.href} → ${entry.id}`);
       }
     });
     details++;
 
-    for (const legacy of aliasesForEntity(definition.type, entry, path)) {
-      verifyRedirect(legacy, path);
-    }
+    for (const legacy of aliasesForEntity(definition.type, entry, path)) verifyRedirect(legacy, path);
   }
 }
 const entityAliases = redirectTargets.size;
 for (const { from, to } of pageAliases) verifyRedirect(from, to);
 
 // Check all rendered canonical pages, including static pages and catalogue pages.
-// Old spellings may survive as redirect locations, but never as internal navigation.
 let canonicalPages = 0;
 let internalLinks = 0;
 const pageFiles = readdirSync(output, { recursive: true }).filter((name) => name === 'index.html' || name.endsWith('/index.html'));

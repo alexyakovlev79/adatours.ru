@@ -119,6 +119,12 @@ They use the same visual card structure as ordinary days, may have their own pho
 
 Additional-excursion cards have no visible numeric/day label. Do not render «ДОП.» or any other gold label in the number column; keep that position visually empty.
 
+## Duplicate headings inside descriptions
+
+The itinerary card already renders the day or excursion title in its summary row. Therefore a day description or canonical Excursion Markdown body must not begin with another Markdown/HTML heading that repeats that same title.
+
+Content maintenance removes such leading duplicates from source MD. The shared itinerary renderer also strips a matching leading rendered heading from canonical excursion HTML as a defensive fallback, so a repeated source heading can never become a second oversized title inside a tour.
+
 ## Inline bold
 
 Structured text may contain Markdown-style `**bold text**`.

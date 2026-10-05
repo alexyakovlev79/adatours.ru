@@ -349,6 +349,23 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
   const syncMultiImageRows = () => {
     itineraryCards.forEach(clearRowSizing);
+
+    itineraryCards.forEach((card) => {
+      if (!desktop.matches || imageCount(card) === 0) {
+        card.style.removeProperty('--itinerary-collapsed-media-height');
+        return;
+      }
+
+      const cardWidth = card.getBoundingClientRect().width;
+      if (cardWidth <= 0) return;
+
+      const collapsedMediaHeight = Math.min(cardWidth * 9 / 16, desktopPhotoMax);
+      card.style.setProperty(
+        '--itinerary-collapsed-media-height',
+        collapsedMediaHeight + 'px',
+      );
+    });
+
     if (!desktop.matches || !itineraryDays) return;
 
     for (let index = 0; index < itineraryCards.length; index += 2) {
@@ -691,8 +708,13 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
     .day[open] + .day__media {
       flex: 1 1 320px;
-      min-height: 260px;
-      max-height: 660px;
+      /*
+       * Opening a card must never make its media block shorter than the same
+       * card's collapsed 16:9 media. Otherwise the whole grid row can shrink
+       * and the next pair of days jumps upward when content is revealed.
+       */
+      min-height: calc(var(--itinerary-collapsed-media-height, 260px) + 40px);
+      max-height: 700px;
       margin-top: auto;
       padding-top: 40px;
       aspect-ratio: auto;

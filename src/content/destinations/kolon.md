@@ -8,8 +8,8 @@ countryId: "country_panama"
 destinationType: "city"
 summary: "Город на берегу океана с пляжами, барами и окружающими тропическими лесами. Колон предлагает спокойный отдых и вечерние развлечения."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/panama/5.jpg","alt":"На фото: город Колон в Панаме"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN7007_8_1.jpg","alt":"На фото: город Колон в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN4156_8_1.jpg","alt":"На фото: город Колон в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN3170_10_1.jpg","alt":"На фото: город Колон в Панаме"}]
+hero: {"src":"/media/destinations/colon/hero-enhanced-20261005.webp","alt":"На фото: город Колон в Панаме"}
+gallery: [{"src":"/media/destinations/colon/gallery-1-enhanced-20261005.webp","alt":"На фото: город Колон в Панаме"},{"src":"/media/destinations/colon/gallery-2-enhanced-20261005.webp","alt":"На фото: город Колон в Панаме"},{"src":"/media/destinations/colon/gallery-3-enhanced-20261005.webp","alt":"На фото: город Колон в Панаме"}]
 facts: []
 featureBands: []
 relatedDestinations: []

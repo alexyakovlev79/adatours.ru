@@ -8,8 +8,8 @@ countryId: "country_panama"
 destinationType: "city"
 summary: "Город Панамы, откуда начинаются туристические маршруты. В Давиде соседствуют старые кварталы и современная часть с магазинами, кафе и ресторанами."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/panama/6.jpg","alt":"На фото: город Давид в Панаме"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/3/5/358738904_c9a70ba3fd_o.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/1/3/1360881041_242ec5b0e3_o.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN20162_15.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/1/2192858437_f721139f22_b.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN22200_1.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/2/1/2193619956_65c743c7e0_b.jpg","alt":"На фото: город Давид в Панаме"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN20162_30.jpg","alt":"На фото: город Давид в Панаме"}]
+hero: {"src":"/media/destinations/david/hero-enhanced-20261005.webp","alt":"На фото: город Давид в Панаме"}
+gallery: [{"src":"/media/destinations/david/gallery-1-enhanced-20261005.webp","alt":"На фото: город Давид в Панаме"},{"src":"/media/destinations/david/gallery-2-enhanced-20261005.webp","alt":"На фото: город Давид в Панаме"},{"src":"/media/destinations/david/gallery-3-enhanced-20261005.webp","alt":"На фото: город Давид в Панаме"},{"src":"/media/destinations/david/gallery-4-enhanced-20261005.webp","alt":"На фото: город Давид в Панаме"},{"src":"/media/destinations/david/gallery-5-enhanced-20261005.webp","alt":"На фото: город Давид в Панаме"},{"src":"/media/destinations/david/gallery-6-enhanced-20261005.webp","alt":"На фото: город Давид в Панаме"},{"src":"/media/destinations/david/gallery-7-enhanced-20261005.webp","alt":"На фото: город Давид в Панаме"}]
 facts: []
 featureBands: []
 relatedDestinations: []

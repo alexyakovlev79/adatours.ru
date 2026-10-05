@@ -8,7 +8,7 @@ countryId: "country_panama"
 destinationType: "island"
 summary: "Острова Панамы с белым песком и бирюзовой водой. На Контадоре и в водах архипелага доступны рыбалка, дайвинг и подводное плавание."
 searchAliases: []
-hero: {"src":"https://brasiltours.ru/image/countries/panama/8.jpg","alt":"На фото: пляжный отдых в Панаме на Жемчужных островах"}
+hero: {"src":"/media/destinations/pearl-islands/hero-enhanced-20261005.webp","alt":"На фото: пляжный отдых в Панаме на Жемчужных островах"}
 gallery: []
 facts: []
 featureBands: []

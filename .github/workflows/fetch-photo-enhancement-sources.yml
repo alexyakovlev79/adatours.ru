@@ -22,7 +22,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           from PIL import Image, ImageEnhance, ImageFilter, ImageOps, ImageFile
-ImageFile.LOAD_TRUNCATED_IMAGES = True
+          ImageFile.LOAD_TRUNCATED_IMAGES = True
           import json
           
           root = Path(".")

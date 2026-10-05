@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Город премиальных сигар и археологических памятников. В окрестностях Эстели находятся наскальные рисунки Лас Пинтас и водопад La Estanzuela."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/nikaragua/9.jpg","alt":"На фото: премиальные сигары из Никарагуа (город Эстели)"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/D/S/DS052.jpg","alt":"На фото: город Эстели в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/9/5/9571.jpg","alt":"На фото: город Эстели в Никарагуа"},{"src":"https://brasiltours.ru/image/catalog/category/1/4/1417.jpg","alt":"На фото: город Эстели в Никарагуа"}]
+hero: {"src":"/media/destinations/esteli/hero-enhanced-20261005.webp","alt":"На фото: премиальные сигары из Никарагуа (город Эстели)"}
+gallery: [{"src":"/media/destinations/esteli/gallery-1-enhanced-20261005.webp","alt":"На фото: город Эстели в Никарагуа"},{"src":"/media/destinations/esteli/gallery-2-enhanced-20261005.webp","alt":"На фото: город Эстели в Никарагуа"},{"src":"/media/destinations/esteli/gallery-3-enhanced-20261005.webp","alt":"На фото: город Эстели в Никарагуа"}]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -9,14 +9,14 @@ destinationType: "resort"
 summary: "Полуостров Паракас: скалистое побережье, морские львы, птицы и прогулки на моторных лодках к островам Баллестас."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/peru/676.jpg"
+  src: "/media/destinations/parakas/hero-enhanced-20261005.webp"
   alt: "На фото: остров Паракас в Перу"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/p/a/paracas_peru.jpg"
+  - src: "/media/destinations/parakas/gallery-1-enhanced-20261005.webp"
     alt: "На фото: остров Паракас в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/C/a/Candelabro_de_Paracas.jpg"
+  - src: "/media/destinations/parakas/gallery-2-enhanced-20261005.webp"
     alt: "На фото: петроглиф Канделябр в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/P/a/Paracas_Peru_vista_foto_6_DLQ.jpg"
+  - src: "/media/destinations/parakas/gallery-3-enhanced-20261005.webp"
     alt: "На фото: остров Паракас в Перу"
 facts: []
 featureBands: []

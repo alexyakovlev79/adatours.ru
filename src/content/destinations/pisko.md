@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Писко на побережье Перу известен виноградным напитком и расположен в 22 км от национального заповедника Паракас."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/peru/887.jpg"
+  src: "/media/destinations/pisko/hero-enhanced-20261005.webp"
   alt: "На фото: город Писко в Перу"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/h/i/historia9.jpg"

@@ -9,12 +9,12 @@ destinationType: "route_cluster"
 summary: "Вальпараисо с фуникулерами и домами на холмах и пляжный Винья дель Мар: морское побережье Чили, музеи, парки и ботанический сад."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/chile/valparaiso-1.jpg"
+  src: "/media/destinations/valparaiso-i-vinya-del-mar/hero-enhanced-20261005.webp"
   alt: "На фото: город Вальпараисо в Чили"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/5/8/58-chile-valparaiso-walking-stairs-pathways.jpg"
+  - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-1-enhanced-20261005.webp"
     alt: "На фото: город Вальпараисо в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN4210_18.jpg"
+  - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-2-enhanced-20261005.webp"
     alt: "На фото: город Вальпараисо в Чили"
   - src: "https://brasiltours.ru/image/catalog/category/B/N/BN17765_35.jpg"
     alt: "На фото: город Вальпараисо в Чили"

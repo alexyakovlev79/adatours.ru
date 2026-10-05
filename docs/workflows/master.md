@@ -607,9 +607,9 @@ Pagefind строит единый статический индекс Country /
 
 ### 13.1. SEO/GEO
 
-Общие шаблоны обеспечивают title/description, canonical, один H1, breadcrumbs, OG, semantic HTML, alt и внутренние ссылки. Sitemap генерируется без draft, noindex, фильтров, поиска, технических страниц и 404. Robots не блокирует полезные поисковые и AI crawlers без отдельной команды.
+Общие шаблоны обеспечивают title/description, canonical, один H1, breadcrumbs, Open Graph, Twitter Cards, semantic HTML, alt и внутренние ссылки. На production индексируемые страницы получают `index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1`; preview и явно закрытые/архивные страницы сохраняют `noindex`. Sitemap генерируется без draft, noindex, фильтров, поиска, технических страниц и 404. Robots не блокирует полезные поисковые и AI crawlers без отдельной команды.
 
-Структурированные данные определяются общими компонентами: Organization / TravelAgency, WebSite, BreadcrumbList, Person, TouristDestination / Place, применимые Offer, реальные Review, видимый FAQ и Article. Не добавлять выдуманный AggregateRating, цену, отзыв или компанию ради разметки.
+Структурированные данные определяются общими компонентами: Organization / TravelAgency, WebSite, BreadcrumbList, Person, TouristDestination / Place, TouristTrip, применимые Offer, Service, реальные Review, видимый FAQ и Article. Organization использует только подтвержденные identity-сигналы: юридическое имя, CNPJ как identifier/taxID, адрес, область работы, BCP-47 языки и точные `sameAs`; каталоги или упоминания, которые не являются профилем компании, в `sameAs` не попадают. Tour/Excursion/Destination используют существующую разметку интересов как `touristType`, без скрытого ключевого текста. Не добавлять выдуманный AggregateRating, цену, availability, отзыв, foundingDate или компанию ради разметки.
 
 Обычное наполнение не требует изучать Schema.org или менять schema-renderer. Это отдельная техническая задача при изменении общей реализации.
 

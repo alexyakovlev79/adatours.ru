@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Монтеррей окружен горами Сьерра-Мадре. В городе работают музеи, рестораны и торговые центры, а близлежащие горы, каньоны и пещеры подходят для активного отдыха."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/monterrey-2.jpg","alt":"На фото: город Монтеррей в Мексике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/8/0/800px-Obispado_Monterrey_Mexico.jpg","alt":"На фото: город Монтеррей в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/M/o/Monterrey_Mexico_Cathedral.jpg","alt":"На фото: город Монтеррей в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/M/o/Monterrey.jpg","alt":"На фото: город Монтеррей в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/M/o/Monterrey-Mexico_01-360a032707.jpg","alt":"На фото: город Монтеррей в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_2.jpg","alt":"На фото: город Монтеррей в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/8/8/88341355_NAjzmSj5_MonterreyExpressway.jpg","alt":"На фото: город Монтеррей в Мексике"}]
+hero: {"src":"/media/destinations/monterrey/hero-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"}
+gallery: [{"src":"/media/destinations/monterrey/gallery-1-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-2-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-3-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"/media/destinations/monterrey/gallery-4-enhanced-20261004.webp","alt":"На фото: город Монтеррей в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/f/i/file_2.jpg","alt":"На фото: город Монтеррей в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/8/8/88341355_NAjzmSj5_MonterreyExpressway.jpg","alt":"На фото: город Монтеррей в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

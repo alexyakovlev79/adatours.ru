@@ -146,6 +146,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
           class:list={['day-card', { 'day-card--image': visibleImage }]}
           data-excursion-ref={day.excursion?.id}
           data-image-text-align={day.excursion?.imageTextAlign}
+          data-itinerary-image-count={day.dayImages.length}
         >
           <details class="day">
             <summary>
@@ -292,6 +293,115 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
     desktop.addEventListener('change', syncLayout);
     syncLayout();
   });
+
+  const itineraryDays = document.querySelector<HTMLElement>('.itinerary .itinerary__days');
+  const itineraryCards = itineraryDays
+    ? Array.from(itineraryDays.querySelectorAll<HTMLElement>(':scope > .day-card'))
+    : [];
+
+  const desktopPhotoMax = 660;
+  const mediaGap = 16;
+  const collapsedMediaGap = 18;
+  const expandedMediaGap = 40;
+  const cardBottomGap = 18;
+
+  const imageCount = (card: HTMLElement) =>
+    Number.parseInt(card.dataset.itineraryImageCount ?? '0', 10) || 0;
+
+  const summaryHeight = (card: HTMLElement) =>
+    card.querySelector<HTMLElement>(':scope > .day > summary')?.getBoundingClientRect().height ?? 0;
+
+  const measureExpandedDetailsHeight = (card: HTMLElement) => {
+    if (!itineraryDays) return 0;
+
+    const clone = card.cloneNode(true) as HTMLElement;
+    const width = card.getBoundingClientRect().width;
+    clone.removeAttribute('data-row-coordinated');
+    clone.style.removeProperty('--itinerary-row-height');
+    clone.style.removeProperty('--itinerary-row-media-height');
+    clone.style.position = 'absolute';
+    clone.style.visibility = 'hidden';
+    clone.style.pointerEvents = 'none';
+    clone.style.width = width + 'px';
+    clone.style.height = 'auto';
+    clone.style.minHeight = '0';
+    clone.style.maxHeight = 'none';
+    clone.style.inset = '0 auto auto 0';
+    clone.style.zIndex = '-1';
+
+    const details = clone.querySelector<HTMLDetailsElement>(':scope > .day');
+    const media = clone.querySelector<HTMLElement>(':scope > .day__media');
+    media?.remove();
+    if (!details) return 0;
+
+    details.open = true;
+    itineraryDays.appendChild(clone);
+    const height = details.getBoundingClientRect().height;
+    clone.remove();
+    return height;
+  };
+
+  const clearRowSizing = (card: HTMLElement) => {
+    card.removeAttribute('data-row-coordinated');
+    card.style.removeProperty('--itinerary-row-height');
+    card.style.removeProperty('--itinerary-row-media-height');
+  };
+
+  const syncMultiImageRows = () => {
+    itineraryCards.forEach(clearRowSizing);
+    if (!desktop.matches || !itineraryDays) return;
+
+    for (let index = 0; index < itineraryCards.length; index += 2) {
+      const pair = itineraryCards.slice(index, index + 2);
+      const counts = pair.map(imageCount);
+      if (counts.some((count) => count === 0)) continue;
+
+      const maxCount = Math.max(...counts);
+      if (maxCount <= 1) continue;
+
+      const rowSlots = Math.min(...counts);
+      const governingCards = pair.filter((card) => imageCount(card) === rowSlots);
+      const anyOpen = pair.some(
+        (card) => card.querySelector<HTMLDetailsElement>(':scope > .day')?.open,
+      );
+
+      const cardWidth = Math.min(...pair.map((card) => card.getBoundingClientRect().width));
+      if (cardWidth <= 0) continue;
+
+      const onePhotoHeight = Math.min(cardWidth * 9 / 16, desktopPhotoMax);
+      const rowMediaHeight =
+        rowSlots * onePhotoHeight + Math.max(0, rowSlots - 1) * mediaGap;
+
+      const governingDetailsHeight = anyOpen
+        ? Math.max(...governingCards.map(measureExpandedDetailsHeight))
+        : Math.max(...governingCards.map(summaryHeight));
+
+      const mediaTopGap = anyOpen ? expandedMediaGap : collapsedMediaGap;
+      const rowHeight = Math.ceil(
+        governingDetailsHeight + mediaTopGap + rowMediaHeight + cardBottomGap,
+      );
+
+      pair.forEach((card) => {
+        card.setAttribute('data-row-coordinated', '');
+        card.style.setProperty('--itinerary-row-height', rowHeight + 'px');
+        card.style.setProperty('--itinerary-row-media-height', rowMediaHeight + 'px');
+      });
+    }
+  };
+
+  let rowSyncFrame = 0;
+  const scheduleRowSync = () => {
+    window.cancelAnimationFrame(rowSyncFrame);
+    rowSyncFrame = window.requestAnimationFrame(syncMultiImageRows);
+  };
+
+  itineraryCards.forEach((card) => {
+    card.querySelector<HTMLDetailsElement>(':scope > .day')?.addEventListener('toggle', scheduleRowSync);
+  });
+
+  desktop.addEventListener('change', scheduleRowSync);
+  window.addEventListener('resize', scheduleRowSync);
+  scheduleRowSync();
 </script>
 
 <style>
@@ -531,6 +641,34 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
       margin-top: 18px;
       padding-top: 0;
       aspect-ratio: 16 / 9;
+    }
+
+    /*
+     * Rows containing multiple itinerary photographs use a shared media budget.
+     * Different counts are governed by the card with fewer photographs; equal
+     * counts reserve one full desktop photo slot for every photograph.
+     */
+    .day-card[data-row-coordinated] {
+      height: var(--itinerary-row-height);
+      min-height: var(--itinerary-row-height);
+      max-height: var(--itinerary-row-height);
+    }
+
+    .day-card[data-row-coordinated] .day[open] + .day__media,
+    .day-card[data-row-coordinated] .day:not([open]) + .day__media {
+      flex: 1 1 var(--itinerary-row-media-height);
+      min-height: 0;
+      max-height: var(--itinerary-row-media-height);
+      margin-top: auto;
+      aspect-ratio: auto;
+    }
+
+    .day-card[data-row-coordinated] .day[open] + .day__media {
+      padding-top: 40px;
+    }
+
+    .day-card[data-row-coordinated] .day:not([open]) + .day__media {
+      padding-top: 0;
     }
 
     .day__media img {

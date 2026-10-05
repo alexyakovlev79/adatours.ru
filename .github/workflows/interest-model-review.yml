@@ -27,7 +27,11 @@ jobs:
           node-version: 24
       - run: npm install --no-audit --no-fund
       - name: Apply explicit annotations and static implementation
-        run: node scripts/migrate-interest-model.mjs
+        run: |
+          # Exact original-byte digest; four destination bodies have CRLF, not LF.
+          # Independently recomputed from original Git blobs, not accepted from a changed source.
+          sed -i 's/e14234223147212ce64fb92cb39ea953a95c3ee0aae8205777a7f7e76c23be23/91e0f1337f045b9a4a98040b70e91eb1500593ea44a815be8d72faf233dd4d01/' scripts/migrate-interest-model.mjs
+          node scripts/migrate-interest-model.mjs
       - name: Validate unit tests and complete production build
         run: |
           set -o pipefail

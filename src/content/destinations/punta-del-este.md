@@ -12,11 +12,11 @@ hero:
   src: /media/countries/uruguay/featureBands-3-enhanced-20261002.webp
   alt: "На фото: курорт Пунта дель Эсте в Уругвае"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22634_50.jpg"
+  - src: "/media/destinations/punta-del-este/gallery-1-enhanced-20261005.webp"
     alt: "На фото: курорт Пунта дель Эсте в Уругвае"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22634_47.jpg"
+  - src: "/media/destinations/punta-del-este/gallery-2-enhanced-20261005.webp"
     alt: "На фото: курорт Пунта дель Эсте в Уругвае"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN19637_6.jpg"
+  - src: "/media/destinations/punta-del-este/gallery-3-enhanced-20261005.webp"
     alt: "На фото: курорт Пунта дель Эсте в Уругвае"
 facts: []
 featureBands: []

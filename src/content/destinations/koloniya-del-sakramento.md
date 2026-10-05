@@ -12,15 +12,15 @@ hero:
   src: /media/countries/uruguay/featureBands-2-enhanced-20261002.webp
   alt: "На фото: город Колония дель Сакраменто в Уругвае"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22634_8.jpg"
+  - src: "/media/destinations/koloniya-del-sakramento/gallery-1-enhanced-20261005.webp"
     alt: "На фото: город Колония дель Сакраменто в Уругвае"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22634_10.jpg"
+  - src: "/media/destinations/koloniya-del-sakramento/gallery-2-enhanced-20261005.webp"
     alt: "На фото: город Колония дель Сакраменто в Уругвае"
-  - src: "https://brasiltours.ru/image/catalog/category/8/2/829659338_4fcf88b6a3_b.jpg"
+  - src: "/media/destinations/koloniya-del-sakramento/gallery-3-enhanced-20261005.webp"
     alt: "На фото: город Колония дель Сакраменто в Уругвае"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN22634_14.jpg"
+  - src: "/media/destinations/koloniya-del-sakramento/gallery-4-enhanced-20261005.webp"
     alt: "На фото: город Колония дель Сакраменто в Уругвае"
-  - src: "https://brasiltours.ru/image/catalog/category/3/2/322366419_2d880995dd_b.jpg"
+  - src: "/media/destinations/koloniya-del-sakramento/gallery-5-enhanced-20261005.webp"
     alt: "На фото: город Колония дель Сакраменто в Уругвае"
 facts: []
 featureBands: []

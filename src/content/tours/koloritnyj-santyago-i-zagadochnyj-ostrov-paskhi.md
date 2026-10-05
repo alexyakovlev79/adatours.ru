@@ -67,7 +67,7 @@ itinerary:
 
     Ночь в отеле в Сантьяго.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/valparaiso-1.jpg
+  - src: /media/destinations/valparaiso-i-vinya-del-mar/hero-enhanced-20261005.webp
     alt: Вальпараисо
 - day: 3
   title: Сантьяго - остров Пасхи - Оронго

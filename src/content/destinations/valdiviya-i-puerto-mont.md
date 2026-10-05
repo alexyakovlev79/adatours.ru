@@ -9,20 +9,20 @@ destinationType: "route_cluster"
 summary: "Вальдивия, Пуэрто Варас и Пуэрто Монт: озерный район Чили, речные прогулки, водные лыжи и рафтинг. В Вальдивии сохранились испанские форты."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/chile/puerto-mont.jpg"
+  src: "/media/destinations/valdiviya-i-puerto-mont/hero-enhanced-20261005.webp"
   alt: "На фото: Пуэрто Монт в Чили"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN23434_7.jpg"
+  - src: "/media/destinations/valdiviya-i-puerto-mont/gallery-1-enhanced-20261005.webp"
     alt: "На фото: Вальдивия в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN23434_1.jpg"
+  - src: "/media/destinations/valdiviya-i-puerto-mont/gallery-2-enhanced-20261005.webp"
     alt: "На фото: Вальдивия в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/n/o/normal_chile_valdivia_2523_0.jpg"
+  - src: "/media/destinations/valdiviya-i-puerto-mont/gallery-3-enhanced-20261005.webp"
     alt: "На фото: Вальдивия в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/v/a/valparaiso.jpg"
+  - src: "/media/destinations/valdiviya-i-puerto-mont/gallery-4-enhanced-20261005.webp"
     alt: "На фото: Вальдивия в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN23434_4.jpg"
+  - src: "/media/destinations/valdiviya-i-puerto-mont/gallery-5-enhanced-20261005.webp"
     alt: "На фото: Вальдивия в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/v/a/valdivia.jpg"
+  - src: "/media/destinations/valdiviya-i-puerto-mont/gallery-6-enhanced-20261005.webp"
     alt: "На фото: Вальдивия в Чили"
 facts: []
 featureBands: []

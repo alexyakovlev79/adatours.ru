@@ -1,0 +1,52 @@
+name: Interest model review
+on:
+  push:
+    branches: [feat/interest-model-20261005]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: interest-model-review
+  cancel-in-progress: false
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: feat/interest-model-20261005
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Apply and validate migration when present
+        run: |
+          if test -f scripts/migrate-interest-model.mjs; then
+            node scripts/migrate-interest-model.mjs
+            npm run build
+            if test -f scripts/test-interest-model.mjs; then node scripts/test-interest-model.mjs; fi
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add src data docs AGENTS.md scripts package.json
+            if ! git diff --cached --quiet; then
+              git commit -m 'Apply explicit interest annotations and validate thematic hubs'
+              git push origin HEAD:feat/interest-model-20261005
+            fi
+          fi
+        env:
+          SITE_ORIGIN: https://alexyakovlev79.github.io
+          SITE_BASE: /adatours.ru
+      - name: Export source snapshot for review
+        if: always()
+        run: |
+          mkdir -p /tmp/interest-snapshot
+          git rev-parse HEAD > /tmp/interest-snapshot/COMMIT.txt
+          tar --exclude='.git' --exclude='public' --exclude='dist' --exclude='node_modules' --exclude='.astro' -czf /tmp/interest-snapshot/source.tar.gz .
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: interest-source-snapshot
+          path: /tmp/interest-snapshot/
+          retention-days: 3

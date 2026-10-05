@@ -18,11 +18,11 @@ gallery:
     alt: "На фото: город Тумбес в Перу"
   - src: "/media/destinations/tumbes/gallery-3-enhanced-20261005.webp"
     alt: "На фото: город Тумбес в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/3/3/330px-Puerto_pizarro_tumbes.jpg"
+  - src: "/media/destinations/tumbes/gallery-4-enhanced-20261005.webp"
     alt: "На фото: город Тумбес в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/h/o/hotel-punta-sal-club-view.jpg"
+  - src: "/media/destinations/tumbes/gallery-5-enhanced-20261005.webp"
     alt: "На фото: город Тумбес в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/t/u/tumbes_in_chile.jpg"
+  - src: "/media/destinations/tumbes/gallery-6-enhanced-20261005.webp"
     alt: "На фото: город Тумбес в Перу"
 facts: []
 featureBands: []

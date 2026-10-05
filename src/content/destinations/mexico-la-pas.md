@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Ла Пас расположен на берегу Калифорнийского залива. Город привлекает пляжами, набережной и спортивной рыбалкой, а рядом находятся Пуэрто Баландра и заповедник Сьерра-де-ла-Лагуна."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/la-paz.jpg","alt":"На фото: город Ла Пас в Мексике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/m/e/mexico-baja-la-paz-malecon-boats.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/I/M/IMG_2698.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_19.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_4.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_5.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_7.jpg","alt":"На фото: город Ла Пас в Мексике"}]
+hero: {"src":"/media/destinations/la-paz/hero-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"}
+gallery: [{"src":"/media/destinations/la-paz/gallery-1-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"},{"src":"/media/destinations/la-paz/gallery-2-enhanced-20261004.webp","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_19.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_4.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_5.jpg","alt":"На фото: город Ла Пас в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN19045_7.jpg","alt":"На фото: город Ла Пас в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

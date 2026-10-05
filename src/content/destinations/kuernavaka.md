@@ -9,8 +9,8 @@ destinationType: "city"
 summary: "Куэрнавака сочетает колониальные улочки, цветущие балконы и субтропические сады. Здесь можно посетить музеи, Кафедральный собор, монастырь францисканцев и старинные асьенды."
 searchAliases: []
 themes: []
-hero: {"src":"https://brasiltours.ru/image/countries/mexico/cuernavaca-2.jpg","alt":"На фото: город Куэрнавака в Мексике"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17884_62.jpg","alt":"На фото: город Куэрнавака в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN5066_6.jpg","alt":"На фото: город Куэрнавака в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/8/0/800px-Mexico_cuernavaca_zocalo.jpg","alt":"На фото: город Куэрнавака в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/B/N/BN17883_62.jpg","alt":"На фото: город Куэрнавака в Мексике"},{"src":"https://brasiltours.ru/image/catalog/category/s/o/socorro_cuernavaca.jpg","alt":"На фото: город Куэрнавака в Мексике"}]
+hero: {"src":"/media/destinations/cuernavaca/hero-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"}
+gallery: [{"src":"/media/destinations/cuernavaca/gallery-1-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"},{"src":"/media/destinations/cuernavaca/gallery-2-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"},{"src":"/media/destinations/cuernavaca/gallery-3-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"},{"src":"/media/destinations/cuernavaca/gallery-4-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"},{"src":"/media/destinations/cuernavaca/gallery-5-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"}]
 facts: []
 featureBands: []
 relatedDestinations: []

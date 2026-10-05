@@ -389,18 +389,79 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
     }
   };
 
-  let rowSyncFrame = 0;
-  const scheduleRowSync = () => {
-    window.cancelAnimationFrame(rowSyncFrame);
-    rowSyncFrame = window.requestAnimationFrame(syncMultiImageRows);
+  type ViewportAnchor = {
+    element: HTMLElement;
+    top: number;
   };
 
-  itineraryCards.forEach((card) => {
-    card.querySelector<HTMLDetailsElement>(':scope > .day')?.addEventListener('toggle', scheduleRowSync);
+  let rowSyncFrame = 0;
+  let viewportAnchor: ViewportAnchor | null = null;
+  let viewportAnchorFrames = 0;
+
+  const restoreViewportAnchor = () => {
+    if (!viewportAnchor || !desktop.matches) return;
+    const delta = viewportAnchor.element.getBoundingClientRect().top - viewportAnchor.top;
+    if (Math.abs(delta) > 0.5) window.scrollBy(0, delta);
+  };
+
+  const scheduleRowSync = (anchor?: ViewportAnchor) => {
+    if (anchor) {
+      viewportAnchor = anchor;
+      viewportAnchorFrames = 4;
+    }
+
+    window.cancelAnimationFrame(rowSyncFrame);
+
+    const run = () => {
+      syncMultiImageRows();
+      restoreViewportAnchor();
+
+      if (viewportAnchor && viewportAnchorFrames > 1) {
+        viewportAnchorFrames -= 1;
+        rowSyncFrame = window.requestAnimationFrame(run);
+      } else {
+        viewportAnchor = null;
+        viewportAnchorFrames = 0;
+      }
+    };
+
+    rowSyncFrame = window.requestAnimationFrame(run);
+  };
+
+  itineraryCards.forEach((card, cardIndex) => {
+    const day = card.querySelector<HTMLDetailsElement>(':scope > .day');
+    const summary = day?.querySelector<HTMLElement>(':scope > summary');
+    if (!day || !summary) return;
+
+    day.addEventListener('toggle', () => scheduleRowSync());
+
+    summary.addEventListener('click', (event) => {
+      if (!desktop.matches || !card.classList.contains('day-card--image')) return;
+
+      event.preventDefault();
+
+      const pairStart = Math.floor(cardIndex / 2) * 2;
+      const pair = itineraryCards.slice(pairStart, pairStart + 2);
+      const pairIsInteractive =
+        pair.length === 2 && pair.every((item) => item.classList.contains('day-card--image'));
+      const targets = pairIsInteractive ? pair : [card];
+      const targetOpen = !day.open;
+      const anchor = {
+        element: summary,
+        top: summary.getBoundingClientRect().top,
+      };
+
+      targets.forEach((targetCard) => {
+        const targetDay = targetCard.querySelector<HTMLDetailsElement>(':scope > .day');
+        if (targetDay) targetDay.open = targetOpen;
+      });
+
+      scheduleRowSync(anchor);
+    });
   });
 
-  desktop.addEventListener('change', scheduleRowSync);
-  window.addEventListener('resize', scheduleRowSync);
+  desktop.addEventListener('change', () => scheduleRowSync());
+  window.addEventListener('resize', () => scheduleRowSync());
   scheduleRowSync();
 </script>
 
@@ -411,6 +472,10 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   }
 
   @media (min-width: 1100px) {
+    .itinerary {
+      overflow-anchor: none;
+    }
+
     .itinerary__container {
       width: 100%;
       max-width: none;

@@ -22,18 +22,25 @@ The collapsed summary must sit visually halfway between the photograph above and
 
 There are no horizontal divider lines above or below itinerary cards. The always-visible photographs themselves separate one itinerary item from the next, on both desktop and mobile.
 
-When an item is opened, its media leaves the fixed collapsed ratio and returns to the flexible desktop behavior below.
+Desktop rows with multiple itinerary photographs use a shared media budget.
 
-For every pair of neighboring **opened** cards in one grid row:
+One full desktop photo slot is the normal 16:9 height of the current itinerary column, capped by the established 660 px opened-media maximum. The 16 px gaps between photographs are added on top of those slots.
 
-- the **bottom edges of the photographs must align on one horizontal line**;
-- the distance from both photographs to the next pair of cards must be the same;
-- the text blocks above the photographs may have different heights;
-- if one card has less text, its photograph may be taller and extend farther upward to occupy part of the spare vertical space;
-- photographs do **not** need equal heights;
-- photographs must **not** be forced to a common desktop aspect ratio such as 16:9 merely to make the pair look aligned.
+For every desktop grid row:
 
-The invariant is **equal bottom alignment of the media blocks, not equal image height and not equal top alignment**.
+- if both cards have photographs and the counts differ, the row media budget is based on the **smaller photograph count**;
+- if both cards have the same count and that count is greater than 1, reserve one full slot for **every** photograph: 2 + 2 reserves 2 slots, 5 + 5 reserves 5 slots;
+- an unpaired final card with more than 1 photograph uses its own photograph count;
+- rows where both cards have only 1 photograph keep the ordinary existing behavior;
+- a row containing a card without photographs keeps the text-card behavior and is not forced into the multi-photo calculation.
+
+When the row is collapsed, its height is the governing summary height plus the shared media budget. When either card is opened, the row expands up to the fully opened content height of the governing card with the smaller photograph count, plus that same shared media budget. If the counts are equal, the larger fully opened text height of the two cards governs.
+
+The card with more photographs must fit its text and photographs **inside that same row height**. Its media area shrinks as necessary and divides the available height across its additional photographs instead of making the whole row taller.
+
+The **bottom edges of the media blocks stay aligned on one horizontal line**. A governing card is allowed to show each photograph at its full desktop slot height; a neighboring card with more photographs may show each individual photograph shorter. This is intentional.
+
+The invariant is: **row height is governed by the smaller photograph count; equal counts reserve that full number of photograph slots; media bottoms align; mobile is unaffected**.
 
 ## Required DOM structure
 
@@ -59,12 +66,13 @@ The `.day-card` itself is the object that stretches to the full height of its CS
 Desktop:
 
 - every item is collapsed by default;
-- collapsed media remains visible and uses the same 16:9 size across cards;
+- collapsed media remains visible;
+- a single full photo slot uses the normal 16:9 column height, capped at 660 px;
+- rows with multiple photographs use the photograph-count rule above instead of squeezing every count into one 16:9 media block;
 - opening an item reveals places/direction, text, and subsections;
-- opened image height may vary from the image in the neighboring opened card;
-- opened media should fill the remaining card height within the established min/max bounds;
+- the governing card may show its photographs at the full slot height, while a neighboring card with more photographs divides the same media budget among them;
 - use `object-fit: cover`;
-- keep the bottom edge aligned with the neighboring opened card where the pair is expanded.
+- keep the bottom edge aligned across the desktop row.
 
 Mobile:
 

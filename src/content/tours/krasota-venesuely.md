@@ -69,7 +69,7 @@ itinerary:
 
     В районе встречаются морские птицы и морские звезды, иногда можно увидеть зеленую черепаху.
   images:
-  - src: https://brasiltours.ru/image/venez3.png
+  - src: "/media/tours/krasota-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы город Каракас'
 - day: 2
   title: 'Вторник: Чорони'
@@ -97,7 +97,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/venez3.png
+  - src: "/media/tours/krasota-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы город Каракас'
 - day: 4
   title: 'Четверг: Канайма, лагуна и водопад Эль-Сапо'
@@ -179,7 +179,7 @@ itinerary:
 
     В сухой сезон с февраля по апрель дополнительно предлагаются остров Орхидей, водопады Юри и Юрилу и природные джакузи у водопада Голондрина.
   images:
-  - src: https://brasiltours.ru/image/canaima%20nat%20park2.png
+  - src: "/media/tours/krasota-venesuely/itinerary-5-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: водопад Сальто Ангель парка Канайма'
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []
@@ -200,7 +200,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/venez3.png
+  - src: "/media/tours/krasota-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы город Каракас'
 - day: 8
   title: 'Понедельник: озеро Маракайбо и молнии Кататумбо'
@@ -284,7 +284,7 @@ itinerary:
 
     Включены завтрак, обед и ужин.
   images:
-  - src: https://brasiltours.ru/image/Los%20Llanos.jpg
+  - src: "/media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: животный мир Лос Льянос в Венесуэле'
 - day: 11
   title: 'Четверг: сафари по Лос-Льянос'
@@ -313,7 +313,7 @@ itinerary:
 
     Включены завтрак, обед и ужин.
   images:
-  - src: https://brasiltours.ru/image/Los%20Llanos.jpg
+  - src: "/media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: животный мир Лос Льянос в Венесуэле'
 - day: 12
   title: 'Пятница: возвращение в Каракас'
@@ -328,7 +328,7 @@ itinerary:
 
     По желанию можно добавить экскурсию по Каракасу.
   images:
-  - src: https://brasiltours.ru/image/venez3.png
+  - src: "/media/tours/krasota-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы город Каракас'
 included:
 - Проживание в отелях по программе.
@@ -360,7 +360,7 @@ priceFrom: 5290
 currency: USD
 priceNote: $5290
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/cuyagua-aragua-venezuela.jpg
+  src: "/media/tours/krasota-venesuely/hero-src-enhanced-20261007.webp"
   alt: 'На фото: Куягуа и побережье венесуэльского штата Арагуа'
 routeCountries:
 - country_venezuela

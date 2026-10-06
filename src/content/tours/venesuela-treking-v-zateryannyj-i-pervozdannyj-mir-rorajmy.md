@@ -114,7 +114,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/canaima%20nat%20park2.png
+  - src: "/media/tours/krasota-venesuely/itinerary-5-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Национальный парк Канайма в Венесуэеле'
 - day: 10
   title: ', среда: водопад Сальто-Анхель'
@@ -197,7 +197,7 @@ priceFrom: 3305
 currency: USD
 priceNote: $3305
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/arturo-anez-pktt5owir1o-unsplash.jpg
+  src: "/media/tours/venesuela-treking-v-zateryannyj-i-pervozdannyj-mir-rorajmy/hero-src-enhanced-20261007.webp"
   alt: 'На фото: сосуды из Венесуэлы'
 routeCountries:
 - country_venezuela

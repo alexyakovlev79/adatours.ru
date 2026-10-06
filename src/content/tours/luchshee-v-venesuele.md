@@ -50,7 +50,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas2_7.png
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы город Каракас'
 - day: 3
   title: ', вторник - среда. Свободные дни в Каракасе'
@@ -67,7 +67,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas_8.png
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы город Каракас'
 - excursionRef: excursion_venezuela_avila_humboldt_visit
   places: []
@@ -167,7 +167,7 @@ itinerary:
   images:
   - src: "/media/tours/luchshee-v-venesuele/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы город Каракас'
-  - src: https://brasiltours.ru/image/Isla%20Margarita.png
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-14-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: пляжный отдых в Венесуэле'
 - day: 8
   title: ', понедельник - четверг. Остров Маргарита'
@@ -178,7 +178,7 @@ itinerary:
 
     По желанию можно заказать дополнительную обзорную экскурсию по острову Маргарита.
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.png
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-14-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: пляжный отдых в Венесуэле'
 - day: 9
   title: ', понедельник - четверг. Остров Маргарита'
@@ -189,7 +189,7 @@ itinerary:
 
     По желанию можно заказать дополнительную обзорную экскурсию по острову Маргарита.
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.png
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-14-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: пляжный отдых в Венесуэле'
 - day: 10
   title: ', понедельник - четверг. Остров Маргарита'
@@ -200,7 +200,7 @@ itinerary:
 
     По желанию можно заказать дополнительную обзорную экскурсию по острову Маргарита.
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.png
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-14-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: пляжный отдых в Венесуэле'
 - day: 11
   title: ', понедельник - четверг. Остров Маргарита'
@@ -211,7 +211,7 @@ itinerary:
 
     По желанию можно заказать дополнительную обзорную экскурсию по острову Маргарита.
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.png
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-14-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: пляжный отдых в Венесуэле'
 - day: 12
   title: ', пятница. Каракас'
@@ -219,7 +219,7 @@ itinerary:
   - Каракас
   text: Завтрак. Трансфер в аэропорт и регистрация на рейс в Москву.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas2_7.png
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы город Каракас'
 included:
 - Проживание в отелях
@@ -250,7 +250,7 @@ priceFrom: 3390
 currency: USD
 priceNote: $3390
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/martha-dominguez-de-gouveia-oswovjnnbrs-unsplash.jpg
+  src: "/media/tours/luchshee-v-venesuele/hero-src-enhanced-20261007.webp"
   alt: 'На фото: пляжный отдых в Венесуэле'
 routeCountries:
 - country_venezuela

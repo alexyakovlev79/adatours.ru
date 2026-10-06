@@ -141,6 +141,7 @@ const schema = await pageStructuredData({
     <meta name="twitter:description" content={description} />
     {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
     <meta name="theme-color" content="#131412" />
+    <script is:inline src={withBase('/form-config.js')}></script>
     <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />
   </head>
   <body>

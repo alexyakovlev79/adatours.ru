@@ -117,6 +117,18 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     return output;
   };
 
+  const caretAfterDigitCount = (value, digitCount) => {
+    if (digitCount <= 0) return 0;
+    let seen = 0;
+    for (let index = 0; index < value.length; index += 1) {
+      if (/\d/.test(value[index])) {
+        seen += 1;
+        if (seen === digitCount) return index + 1;
+      }
+    }
+    return value.length;
+  };
+
   const placeholderFromMask = (mask, dial) => {
     return maskParts(mask, dial).pattern.replace(/9/g, '0').trim();
   };
@@ -202,11 +214,50 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       option.addEventListener('click', () => applyCountry(option));
     });
 
+    input.addEventListener('keydown', (event) => {
+      if (event.key !== 'Backspace') return;
+
+      const start = input.selectionStart == null ? 0 : input.selectionStart;
+      const end = input.selectionEnd == null ? start : input.selectionEnd;
+      if (start !== end || start <= 0) return;
+      if (/\d/.test(input.value.charAt(start - 1))) return;
+
+      let previousDigitPosition = start - 1;
+      while (previousDigitPosition >= 0 && !/\d/.test(input.value.charAt(previousDigitPosition))) {
+        previousDigitPosition -= 1;
+      }
+      if (previousDigitPosition < 0) return;
+
+      event.preventDefault();
+      const digitsBefore = (input.value.slice(0, previousDigitPosition + 1).match(/\d/g) || []).length;
+      let digits = input.value.replace(/\D/g, '');
+      const removeAt = digitsBefore - 1;
+      digits = digits.slice(0, removeAt) + digits.slice(removeAt + 1);
+
+      const mask = input.dataset.mask || '+7(999) 999-99-99';
+      const countryDial = input.dataset.dial || '+7';
+      const formatted = formatNational(digits, mask, countryDial);
+      input.value = formatted;
+
+      const caret = caretAfterDigitCount(formatted, digitsBefore - 1);
+      input.setSelectionRange(caret, caret);
+    });
+
     input.addEventListener('input', () => {
       const mask = input.dataset.mask || '+7(999) 999-99-99';
       const countryDial = input.dataset.dial || '+7';
-      const formatted = formatNational(input.value, mask, countryDial);
+      const raw = input.value;
+      const currentCaret = input.selectionStart == null ? raw.length : input.selectionStart;
+      const digitsBeforeCaret = (raw.slice(0, currentCaret).match(/\d/g) || []).length;
+      const formatted = formatNational(raw, mask, countryDial);
       if (input.value !== formatted) input.value = formatted;
+
+      const nextCaret = caretAfterDigitCount(formatted, digitsBeforeCaret);
+      try {
+        input.setSelectionRange(nextCaret, nextCaret);
+      } catch (_) {
+        // Some browser/input states do not expose a mutable selection.
+      }
     });
 
     document.addEventListener('click', (event) => {

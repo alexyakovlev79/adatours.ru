@@ -1,5 +1,6 @@
 ---
 import PhoneField from './PhoneField.astro';
+import { withBase } from '../../lib/paths';
 
 interface Props {
   title?: string;
@@ -15,6 +16,9 @@ const {
   pageUrl = Astro.url.toString(),
   locale = 'ru',
 } = Astro.props;
+
+const privacyHref = withBase('/privacy/');
+const personalDataHref = withBase('/personal-data/');
 ---
 
 <section class="lead section">
@@ -24,19 +28,29 @@ const {
       <h2>{title}</h2>
     </div>
 
-    <form class="form" data-lead-form action="#" method="post" onsubmit="return false;">
+    <form class="form" data-lead-form data-lead-form-version="2" method="post" novalidate>
       <input type="hidden" name="entity_id" value={entityId} />
       <input type="hidden" name="tour_id" value={tourId} />
       <input type="hidden" name="page_url" value={pageUrl} />
       <input type="hidden" name="locale" value={locale} />
+
+      <div class="form-hp" aria-hidden="true">
+        <label>
+          <span>Website</span>
+          <input name="company_website" type="text" tabindex="-1" autocomplete="off" />
+        </label>
+      </div>
+
       <label>
         <span>Имя</span>
-        <input name="name" type="text" autocomplete="name" placeholder="Ваше имя" />
+        <input name="name" type="text" autocomplete="name" maxlength="180" placeholder="Ваше имя" />
       </label>
+
       <div class="form-field">
         <span class="form-field__label">Номер для связи</span>
         <PhoneField />
       </div>
+
       <label>
         <span>Email</span>
         <input
@@ -47,12 +61,19 @@ const {
           autocapitalize="none"
           autocorrect="off"
           spellcheck="false"
+          maxlength="254"
           placeholder="name@example.com"
         />
       </label>
+
       <label>
         <span>Комментарий</span>
-        <textarea name="comment" rows="3" placeholder="Даты, состав группы, пожелания"></textarea>
+        <textarea
+          name="comment"
+          rows="3"
+          maxlength="3000"
+          placeholder="Даты, состав группы, пожелания"
+        ></textarea>
       </label>
 
       <fieldset class="contact-method">
@@ -78,9 +99,262 @@ const {
       </fieldset>
 
       <button type="submit">Оставить заявку <span aria-hidden="true">↗</span></button>
+
+      <p class="form__status" data-lead-status role="status" aria-live="polite"></p>
+      <p class="form__consent">
+        Нажимая «Оставить заявку», вы соглашаетесь с
+        <a href={privacyHref}>политикой конфиденциальности</a>
+        и <a href={personalDataHref}>обработкой персональных данных</a>.
+      </p>
     </form>
   </div>
 </section>
+
+<script>
+  const FORM_ENDPOINT = String((window as any).ADATOURS_FORM_ENDPOINT || '').trim();
+  const TRACKING_KEYS = [
+    'utm_source',
+    'utm_medium',
+    'utm_campaign',
+    'utm_content',
+    'utm_term',
+    'utm_id',
+    'gclid',
+    'yclid',
+    'ysclid',
+  ];
+
+  const readTracking = () => {
+    const query = new URLSearchParams(window.location.search);
+    const tracking = {};
+    for (const key of TRACKING_KEYS) {
+      const value = query.get(key);
+      if (value) tracking[key] = value;
+    }
+    return tracking;
+  };
+
+  const showSuccessNotice = () => {
+    document.querySelector('.adatours-success-toast')?.remove();
+
+    const notice = document.createElement('div');
+    notice.className = 'adatours-success-toast';
+    notice.setAttribute('role', 'status');
+    notice.setAttribute('aria-live', 'polite');
+    notice.textContent = 'Спасибо! Заявка отправлена. Мы свяжемся с вами.';
+    document.body.appendChild(notice);
+
+    window.setTimeout(() => {
+      if (notice.isConnected) notice.remove();
+    }, 3500);
+  };
+
+  const phoneMeta = (input, dialInput) => {
+    const mask = input.dataset.mask || '';
+    const dial = dialInput.value || input.dataset.dial || '';
+    const pattern = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
+    return {
+      expectedDigits: (pattern.match(/9/g) || []).length,
+      dialDigits: dial.replace(/\D/g, ''),
+    };
+  };
+
+  document.querySelectorAll('[data-lead-form]').forEach((form) => {
+    if (!(form instanceof HTMLFormElement) || form.dataset.leadBound === 'true') return;
+    form.dataset.leadBound = 'true';
+
+    const nameInput = form.querySelector('input[name="name"]');
+    const phoneInput = form.querySelector('[data-phone-input]');
+    const phoneCountryInput = form.querySelector('[data-phone-country]');
+    const phoneDialInput = form.querySelector('[data-phone-dial-hidden]');
+    const emailInput = form.querySelector('input[name="email"]');
+    const commentInput = form.querySelector('textarea[name="comment"]');
+    const honeypotInput = form.querySelector('input[name="company_website"]');
+    const entityInput = form.querySelector('input[name="entity_id"]');
+    const tourInput = form.querySelector('input[name="tour_id"]');
+    const pageInput = form.querySelector('input[name="page_url"]');
+    const localeInput = form.querySelector('input[name="locale"]');
+    const submit = form.querySelector('button[type="submit"]');
+    const status = form.querySelector('[data-lead-status]');
+    const phoneControl = form.querySelector('.phone-field__control');
+
+    if (!(nameInput instanceof HTMLInputElement) ||
+        !(phoneInput instanceof HTMLInputElement) ||
+        !(phoneCountryInput instanceof HTMLInputElement) ||
+        !(phoneDialInput instanceof HTMLInputElement) ||
+        !(emailInput instanceof HTMLInputElement) ||
+        !(commentInput instanceof HTMLTextAreaElement) ||
+        !(honeypotInput instanceof HTMLInputElement) ||
+        !(entityInput instanceof HTMLInputElement) ||
+        !(tourInput instanceof HTMLInputElement) ||
+        !(pageInput instanceof HTMLInputElement) ||
+        !(localeInput instanceof HTMLInputElement) ||
+        !(submit instanceof HTMLButtonElement) ||
+        !(status instanceof HTMLElement)) return;
+
+    const startedAt = Date.now();
+
+    const setStatus = (message, type = '') => {
+      status.textContent = message;
+      status.classList.toggle('is-error', type === 'error');
+      status.classList.toggle('is-success', type === 'success');
+    };
+
+    const finishSuccess = () => {
+      setStatus('Спасибо! Заявка отправлена. Мы свяжемся с вами.', 'success');
+      showSuccessNotice();
+      window.setTimeout(() => {
+        form.hidden = true;
+      }, 650);
+    };
+
+    const resetValidation = () => {
+      nameInput.setAttribute('aria-invalid', 'false');
+      phoneInput.setAttribute('aria-invalid', 'false');
+      emailInput.setAttribute('aria-invalid', 'false');
+      phoneControl?.classList.remove('is-invalid');
+      setStatus('');
+    };
+
+    const validate = () => {
+      resetValidation();
+
+      if (!nameInput.value.trim()) {
+        nameInput.setAttribute('aria-invalid', 'true');
+        nameInput.focus();
+        setStatus('Укажите имя.', 'error');
+        return false;
+      }
+
+      const hasPhone = Boolean(phoneInput.value.trim());
+      const hasEmail = Boolean(emailInput.value.trim());
+
+      if (!hasPhone && !hasEmail) {
+        phoneInput.setAttribute('aria-invalid', 'true');
+        emailInput.setAttribute('aria-invalid', 'true');
+        phoneControl?.classList.add('is-invalid');
+        phoneInput.focus();
+        setStatus('Укажите телефон или email.', 'error');
+        return false;
+      }
+
+      if (hasPhone) {
+        const { expectedDigits } = phoneMeta(phoneInput, phoneDialInput);
+        const actualDigits = (phoneInput.value.match(/\d/g) || []).length;
+        if (!expectedDigits || actualDigits !== expectedDigits) {
+          phoneInput.setAttribute('aria-invalid', 'true');
+          phoneControl?.classList.add('is-invalid');
+          phoneInput.focus();
+          setStatus('Проверьте номер телефона.', 'error');
+          return false;
+        }
+      }
+
+      if (hasEmail && !emailInput.validity.valid) {
+        emailInput.setAttribute('aria-invalid', 'true');
+        emailInput.focus();
+        setStatus('Проверьте email.', 'error');
+        return false;
+      }
+
+      const method = form.querySelector('input[name="contact_method"]:checked');
+      if (!(method instanceof HTMLInputElement)) {
+        setStatus('Выберите способ связи.', 'error');
+        return false;
+      }
+
+      if (method.value === 'email' && !hasEmail) {
+        emailInput.setAttribute('aria-invalid', 'true');
+        emailInput.focus();
+        setStatus('Для связи по email укажите email.', 'error');
+        return false;
+      }
+
+      if (['phone', 'whatsapp', 'telegram'].includes(method.value) && !hasPhone) {
+        phoneInput.setAttribute('aria-invalid', 'true');
+        phoneControl?.classList.add('is-invalid');
+        phoneInput.focus();
+        setStatus('Для выбранного способа связи укажите телефон.', 'error');
+        return false;
+      }
+
+      return true;
+    };
+
+    nameInput.addEventListener('input', () => nameInput.setAttribute('aria-invalid', 'false'));
+    emailInput.addEventListener('input', () => emailInput.setAttribute('aria-invalid', 'false'));
+    phoneInput.addEventListener('input', () => {
+      phoneInput.setAttribute('aria-invalid', 'false');
+      phoneControl?.classList.remove('is-invalid');
+    });
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!validate()) return;
+
+      if (honeypotInput.value) {
+        finishSuccess();
+        return;
+      }
+
+      if (!FORM_ENDPOINT) {
+        setStatus('Отправка заявки пока не подключена. Попробуйте связаться с нами напрямую.', 'error');
+        return;
+      }
+
+      const method = form.querySelector('input[name="contact_method"]:checked');
+      const { dialDigits } = phoneMeta(phoneInput, phoneDialInput);
+      const localDigits = phoneInput.value.replace(/\D/g, '');
+      const normalizedPhone = localDigits ? `+${dialDigits}${localDigits}` : '';
+
+      const payload = {
+        site: 'adatours',
+        lang: localeInput.value || 'ru',
+        full_name: nameInput.value.trim(),
+        phone: normalizedPhone,
+        phone_country: phoneCountryInput.value,
+        email: emailInput.value.trim(),
+        comment: commentInput.value.trim(),
+        contact_method: method instanceof HTMLInputElement ? method.value : '',
+        entity_id: entityInput.value,
+        tour_id: tourInput.value,
+        company_website: honeypotInput.value,
+        page_url: window.location.href,
+        canonical_url: pageInput.value,
+        referrer: document.referrer || '',
+        utm: readTracking(),
+        form_started_at: new Date(startedAt).toISOString(),
+        submitted_at: new Date().toISOString(),
+      };
+
+      submit.disabled = true;
+      form.setAttribute('aria-busy', 'true');
+      setStatus('Отправляем заявку…');
+
+      let sent = false;
+      try {
+        const response = await fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'omit',
+          body: JSON.stringify(payload),
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        sent = true;
+        document.dispatchEvent(new CustomEvent('adatours:lead-success', {
+          detail: { lang: payload.lang, entityId: payload.entity_id, tourId: payload.tour_id },
+        }));
+        finishSuccess();
+      } catch (_) {
+        setStatus('Не удалось отправить заявку. Попробуйте еще раз чуть позже.', 'error');
+      } finally {
+        form.setAttribute('aria-busy', 'false');
+        if (!sent) submit.disabled = false;
+      }
+    });
+  });
+</script>
 
 <style>
   .lead {
@@ -100,9 +374,14 @@ const {
   }
 
   .form {
+    position: relative;
     display: grid;
     gap: 28px;
     padding-top: 6px;
+  }
+
+  .form[hidden] {
+    display: none;
   }
 
   .form label,
@@ -135,6 +414,15 @@ const {
   .form input:focus,
   .form textarea:focus {
     border-bottom-color: var(--color-gold);
+  }
+
+  .form input[aria-invalid="true"],
+  .form textarea[aria-invalid="true"] {
+    border-bottom-color: #e79683;
+  }
+
+  .form :global(.phone-field__control.is-invalid) {
+    border-bottom-color: #e79683;
   }
 
   .contact-method {
@@ -214,6 +502,70 @@ const {
     font-weight: 600;
     letter-spacing: .08em;
     text-transform: uppercase;
+  }
+
+  .form button:disabled {
+    opacity: .62;
+    cursor: wait;
+  }
+
+  .form__status {
+    min-height: 20px;
+    margin: -12px 0 0;
+    color: rgba(255,255,255,.68);
+    font-size: .8rem;
+    line-height: 1.5;
+  }
+
+  .form__status.is-error {
+    color: #ffc1b2;
+  }
+
+  .form__status.is-success {
+    color: #9be2b8;
+  }
+
+  .form__consent {
+    margin: -14px 0 0;
+    color: rgba(255,255,255,.55);
+    font-size: .75rem;
+    line-height: 1.55;
+  }
+
+  .form__consent a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .form-hp {
+    position: absolute !important;
+    left: -10000px !important;
+    top: auto !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  :global(.adatours-success-toast) {
+    position: fixed;
+    left: 50%;
+    top: 24px;
+    z-index: 1400;
+    transform: translateX(-50%);
+    max-width: min(560px, calc(100vw - 32px));
+    padding: 14px 18px;
+    border: 1px solid rgba(155,226,184,.4);
+    border-radius: 6px;
+    color: #0d5b34;
+    background: #fff;
+    box-shadow: 0 14px 32px rgba(0,0,0,.22);
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
   }
 
   @media (max-width: 800px) {

@@ -73,7 +73,11 @@ for(const file of readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.ht
   const footerStart=html.indexOf('data-lead-location="footer"');
   assert.ok(footerStart>=0&&footerStart<html.indexOf('<footer'),`form before footer: ${file}`);
   const form=html.slice(footerStart).match(/<form\b[\s\S]*?<\/form>/)?.[0]??'';
-  for(const name of ['name','phone','email','comment','contact_method','entity_id','page_url','locale']) assert.ok(form.includes(`name="${name}"`),`${file}: ${name}`);
+  for(const name of ['name','phone','phone_country','phone_dial','email','comment','contact_method','entity_id','tour_id','page_url','locale','company_website']) assert.ok(form.includes(`name="${name}"`),`${file}: ${name}`);
+  assert.ok(form.includes('data-lead-status'),`${file}: lead status region`);
+  assert.ok(form.includes('/privacy/'),`${file}: privacy link`);
+  assert.ok(form.includes('/personal-data/'),`${file}: personal data link`);
+  assert.ok(!form.includes('onsubmit="return false;"'),`${file}: old submission blocker removed`);
   assert.ok(html.includes('class="footer__request" href="#request"'));
   pages++;
 }

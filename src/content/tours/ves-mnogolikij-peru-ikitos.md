@@ -199,7 +199,7 @@ itinerary:
 
       **Доплата:** $250 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/puno.png
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp"
     alt: 'На фото: озеро Титикака в Перу'
 - day: 7
   title: Пуно и озеро Титикака

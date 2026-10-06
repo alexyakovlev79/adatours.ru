@@ -101,7 +101,7 @@ itinerary:
   images:
   - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
     alt: Куско
-  - src: https://brasiltours.ru/image/lima%20plaza.png
+  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-day-3-images-1-enhanced-20261007.webp"
     alt: Лима
 - excursionRef: excursion_cusco_cathedral_visit
   places: []

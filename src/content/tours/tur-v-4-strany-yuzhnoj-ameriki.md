@@ -73,7 +73,7 @@ itinerary:
 
     По прибытии вас отвезут на автобусную станцию. Далее вы отправитесь на автобусе в Пуэрто-Наталес. После приезда предусмотрен трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/puerto%20natales1.png
+  - src: "/media/tours/tur-v-4-strany-yuzhnoj-ameriki/itinerary-day-3-enhanced-20261007.webp"
     alt: 'На фото: порт Пуэрто Наталес в Патагонии. Чили'
   - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: 'На фото: столица Чили, Сантьяго -де-Чили'
@@ -113,7 +113,7 @@ itinerary:
   images:
   - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: ледники Эль Калафате, Патагония, Аргентина'
-  - src: https://brasiltours.ru/image/puerto%20natales1.png
+  - src: "/media/tours/tur-v-4-strany-yuzhnoj-ameriki/itinerary-day-3-enhanced-20261007.webp"
     alt: 'На фото: порт Пуэрто Наталес в Патагонии. Чили'
 - day: 6
   title: Эль-Калафате и ледник Перито-Морено
@@ -185,7 +185,7 @@ itinerary:
     - **15:00** - выступление гаучо и демонстрация мастерства наездников.
     - **16:30** - возвращение в Буэнос-Айрес.
   images:
-  - src: https://brasiltours.ru/image/rancho%20gaucho111.png
+  - src: "/media/tours/tur-v-4-strany-yuzhnoj-ameriki/itinerary-day-9-enhanced-20261007.webp"
     alt: 'На фото: Фиеста Гауча'
 - day: 10
   title: Буэнос-Айрес - Монтевидео, Уругвай
@@ -365,7 +365,7 @@ priceFrom: 5823
 currency: USD
 priceNote: $5823
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-patagonia-argentina.jpeg
+  src: "/media/tours/tur-v-4-strany-yuzhnoj-ameriki/hero-enhanced-20261007.webp"
   alt: 'На фото: ледник Перито Морено, Патагония'
 routeCountries:
 - country_chile

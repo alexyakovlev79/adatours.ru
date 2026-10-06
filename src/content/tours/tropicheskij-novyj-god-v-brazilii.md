@@ -200,7 +200,7 @@ priceFrom: 2988
 currency: USD
 priceNote: $2988
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny.jpg
+  src: "/media/tours/tropicheskij-novyj-god-v-brazilii/hero-enhanced-20261007.webp"
   alt: Новогодний салют на пляже Копакабана в Рио-де-Жанейро, встреча Нового года в Бразилии, праздничный фейерверк
 routeCountries:
 - country_brazil

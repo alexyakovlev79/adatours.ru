@@ -175,7 +175,7 @@ itinerary:
 
     Поздним днем возвращение в Пуно.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/puno.png
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp"
     alt: 'на фото: Озеро Титикака'
 - day: 10
   title: Пуно - Куско по Дороге Солнца

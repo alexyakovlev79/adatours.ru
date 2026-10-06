@@ -243,7 +243,7 @@ priceFrom: 3806
 currency: USD
 priceNote: $3806
 hero:
-  src: https://brasiltours.ru/image/BRA%20RIO%206.png
+  src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/hero-enhanced-20261007.webp"
   alt: 'на фото: Карнавал в Рио'
 routeCountries:
 - country_brazil

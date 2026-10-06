@@ -268,7 +268,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/lima%20plaza.png
+  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-day-3-images-1-enhanced-20261007.webp"
     alt: 'на фото: город Лима, столица Перу'
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []

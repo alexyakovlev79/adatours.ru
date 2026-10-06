@@ -18,7 +18,7 @@ hero:
   alt: "На фото: Ночной вид на район Лапа в Рио-де-Жанейро, Бразилия"
 gallery:
   -
-    src: "https://brasiltours.ru/image/lapa%20at%20ni.png"
+    src: "/media/excursions/rio-nochyu-lapa/gallery-1-enhanced-20261007.webp"
     alt: "На фото: Район Лапа ночью, Рио-де-Жанейро"
 route:
   - "Рио-де-Жанейро"

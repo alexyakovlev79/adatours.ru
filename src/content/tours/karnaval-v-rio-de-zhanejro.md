@@ -32,7 +32,7 @@ itinerary:
 
     С наступлением сумерек загораются огни на склонах и вдоль побережья. В дни Карнавала ожидание праздника чувствуется практически во всем городе: появляется больше музыки, украшений и людей на улицах, а обычный вечер у океана постепенно превращается в преддверие большого события.
   images:
-  - src: https://brasiltours.ru/image/BRA%20RIO%206.png
+  - src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/hero-enhanced-20261007.webp"
     alt: Парад школ самбы на Самбадроме, Рио
 - day: 2
   title: Сахарная Голова, панорамы Рио и исторический центр
@@ -61,7 +61,7 @@ itinerary:
 
     После экскурсионного дня можно продолжить вечер в городе. Один из вариантов - ресторан Fogo de Chao с видом на Сахарную Голову, где подают бразильское мясо. Стоимость - USD 75.
   images:
-  - src: https://brasiltours.ru/image/BRA%20RIO%206.png
+  - src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/hero-enhanced-20261007.webp"
     alt: Парад школ самбы на Самбадроме, Рио
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -116,7 +116,7 @@ itinerary:
 
     После Карнавала особенно хорошо запоминается контраст между шумной ночной ареной и спокойными утрами у океана. Именно этот переход от большого городского праздника к пляжам, лесу и горам делает программу насыщенной даже при небольшой продолжительности.
   images:
-  - src: https://brasiltours.ru/image/BRA%20RIO%206.png
+  - src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/hero-enhanced-20261007.webp"
     alt: Парад школ самбы на Самбадроме, Рио
 included:
 - Проживание в выбранных отелях на базе завтраков.
@@ -145,7 +145,7 @@ priceFrom: 2200
 currency: USD
 priceNote: $2200
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/twisted-photo-1203084-unsplash-3.jpg
+  src: "/media/tours/karnaval-v-rio-de-zhanejro/hero-enhanced-20261007.webp"
   alt: Девушка на карнавале в Рио, Бразилия
 routeCountries:
 - country_brazil

@@ -91,9 +91,9 @@ itinerary:
 
     После экскурсии возвращение в гостиницу. Ночь в Куско.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.jpg
+  - src: "/media/tours/tur-v-peru-i-braziliyu/itinerary-day-3-enhanced-20261007.webp"
     alt: 'На фото: город Куско, Перу'
-  - src: https://brasiltours.ru/image/lima%20plaza.png
+  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-day-3-images-1-enhanced-20261007.webp"
     alt: 'На фото: столица Перу, город Лима'
 - day: 4
   title: Мачу-Пикчу
@@ -151,7 +151,7 @@ itinerary:
   images:
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'На фото: город Лима, Перу'
-  - src: https://brasiltours.ru/image/countries/peru/puno.png
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp"
     alt: 'На фото: Озеро Титикака и плавучие острова Урос  в Перу'
 - day: 7
   title: Лима - Фоз-де-Игуасу
@@ -220,7 +220,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: 'НА фото: водопады Фоз Игуасу в Аргентине и Бразилии'
-  - src: https://brasiltours.ru/image/lapa%20at%20ni.png
+  - src: "/media/excursions/rio-nochyu-lapa/gallery-1-enhanced-20261007.webp"
     alt: 'На фото: Лапа, Рио, Бразилия'
 - day: 10
   title: 'Рио-де-Жанейро: Корковадо'
@@ -257,7 +257,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии и пляжный отдых'
-  - src: https://brasiltours.ru/image/lapa%20at%20ni.png
+  - src: "/media/excursions/rio-nochyu-lapa/gallery-1-enhanced-20261007.webp"
     alt: 'На фото: Лапа, Рио, Бразилия'
 - day: 12
   title: Бузиос

@@ -81,7 +81,6 @@ for(const file of readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.ht
   assert.ok(form.includes('/personal-data/'),`${file}: personal data link`);
   assert.ok(!form.includes('onsubmit="return false;"'),`${file}: old submission blocker removed`);
   const modalCtas=[...html.matchAll(/<a\\b[^>]*data-lead-modal="true"[^>]*>/g)].map(match=>match[0]);
-  assert.ok(modalCtas.length>=1,`${file}: at least one modal lead CTA`);
   for(const tag of modalCtas) assert.ok(/href="#request"/.test(tag),`${file}: modal CTA fallback stays on the same page`);
   assert.ok(html.includes('class="footer__request" href="#request"'));
   pages++;

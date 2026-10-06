@@ -241,7 +241,7 @@ priceNote: $5330.
 durationDays: 11
 durationNights: 10
 hero:
-  src: https://brasiltours.ru/image/Guatemala%20City.png
+  src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
   alt: Гватемала - Гондурас- Эль Сальвадор - Белиз
 routeCountries:
 - country_guatemala

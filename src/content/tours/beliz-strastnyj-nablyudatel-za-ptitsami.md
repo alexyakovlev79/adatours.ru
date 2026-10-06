@@ -265,7 +265,7 @@ priceFrom: 5460
 currency: USD
 priceNote: $5460
 hero:
-  src: https://brasiltours.ru/image/countries/belize/dawin-rizzo.jpg
+  src: /media/tours/beliz-strastnyj-nablyudatel-za-ptitsami/hero-enhanced-20261006.webp
   alt: 'Белиз: Страстный Наблюдатель за птицами'
 routeCountries:
 - country_belize

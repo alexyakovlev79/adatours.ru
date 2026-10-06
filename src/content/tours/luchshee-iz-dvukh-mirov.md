@@ -124,7 +124,7 @@ priceFrom: 4914
 currency: USD
 priceNote: $4914
 hero:
-  src: https://brasiltours.ru/image/countries/belize/beliz.jpg
+  src: /media/tours/luchshee-iz-dvukh-mirov/hero-enhanced-20261006.webp
   alt: 'Белиз: Лучшее Из Двух Миров'
 routeCountries:
 - country_belize

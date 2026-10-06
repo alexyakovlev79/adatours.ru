@@ -115,7 +115,7 @@ itinerary:
   images:
   - src: /media/countries/chile/hero-enhanced-20261002.webp
     alt: Торрес-дель-Пайне
-  - src: https://brasiltours.ru/image/santiago.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-13-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 5
   title: Национальный парк Торрес-дель-Пайне
@@ -168,7 +168,7 @@ itinerary:
 
     Смотровые площадки и мостики позволяют наблюдать ледник с разных высот. В течение дня слышны треск и грохот падающего льда.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/perito-moreno-13.jpg
+  - src: /media/tours/chili-i-argentina-vip/itinerary-day-7-enhanced-20261006.webp
     alt: Ледник Перито-Морено
 - day: 8
   title: Эль-Калафате - Ушуайя
@@ -383,7 +383,7 @@ itinerary:
 
     После основной прогулки предусмотрено **Макуко-сафари**, примерно **1 час**.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bird-parki.png
+  - src: /media/tours/chili-i-argentina-vip/itinerary-day-21-enhanced-20261006.webp
     alt: Парк птиц Игуасу
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -504,7 +504,7 @@ priceFrom: 22500
 currency: USD
 priceNote: $22500
 hero:
-  src: https://brasiltours.ru/image/countries/chile/kopiya-5-chile-torres-del-paine.jpg
+  src: /media/tours/chili-i-argentina-vip/hero-enhanced-20261006.webp
   alt: Чили  и Аргентина ВИП
 routeCountries:
 - country_chile
@@ -583,4 +583,3 @@ themes: []
 Самые длинные наземные участки приходятся на Патагонию и северо-запад Аргентины. Переезд Пуэрто-Наталес - Эль-Калафате занимает около 4-5 часов, поездки к Умауаке и солончакам - по 2-3 часа в одну сторону по горным дорогам. Между ними маршрут использует внутренние перелеты, чтобы сохранить время на экскурсии.
 
 На нескольких этапах прямо указана длительность трансферов: около 40 минут до аэропорта в Сантьяго, около 2 часов от Пуэрто-Наталеса к Торрес-дель-Пайне, около 40 минут от аэропорта Ушуайи к Arakur, около часа от Трелью к полуострову Вальдес и около 40 минут от аэропорта Буэнос-Айреса к Four Seasons. Эти переезды являются частью общей программы и помогают понимать реальную загрузку каждого дня.
-

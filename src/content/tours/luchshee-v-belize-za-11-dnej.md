@@ -155,7 +155,7 @@ priceFrom: 3636
 currency: USD
 priceNote: $3636
 hero:
-  src: https://brasiltours.ru/image/countries/belize/beliz.jpg
+  src: /media/tours/luchshee-iz-dvukh-mirov/hero-enhanced-20261006.webp
   alt: Лучшее в Белизе за 11 дней
 routeCountries:
 - country_belize

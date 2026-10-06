@@ -54,7 +54,7 @@ itinerary:
 
     По прибытии трансфер в отель. Остаток дня свободный: можно гулять по острову, отдыхать у моря или провести время в местных кафе.
   images:
-  - src: https://brasiltours.ru/image/Belize%20City.png
+  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: Белиз-сити
 - day: 4
   title: Сноркелинг у Кей-Колкера
@@ -88,7 +88,7 @@ itinerary:
 
     Дальше едем в Западный Белиз, в район Сан-Игнасио. Дорога проходит через тропические леса. После прибытия остается свободное время.
   images:
-  - src: https://brasiltours.ru/image/Belize%20City.png
+  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: Белиз-сити
 - day: 7
   title: Пещера Актун-Туничиль-Мукналь

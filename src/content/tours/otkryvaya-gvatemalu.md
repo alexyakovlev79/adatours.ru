@@ -41,7 +41,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Antigua_HillView.png
     alt: 'На фото: Антигуа-Гуатемала столица Гватемалы'
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: 'На фото: Вид на Гватемала сити'
 - day: 2
   title: Антигуа - рынок Чичикастенанго - озеро Атитлан
@@ -97,7 +97,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/guatemala%20flores.png
     alt: 'На фото: Вид свеху на Флорес'
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: 'На фото: Вид на Гватемала сити'
 - day: 5
   title: Тикаль - Гватемала-Сити
@@ -118,7 +118,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/tikal%20png.png
     alt: 'На фото: Тикаль в провинции Эль-Петен'
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: 'На фото: Вид на Гватемала сити'
 - day: 6
   title: Гватемала-Сити
@@ -126,7 +126,7 @@ itinerary:
   - Гватемала-Сити
   text: "Трансфер в международный аэропорт.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: 'На фото: Вид на Гватемала сити'
 included:
 - Проживание в отелях на базе завтраков.

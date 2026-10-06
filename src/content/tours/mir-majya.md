@@ -39,7 +39,7 @@ itinerary:
     \ примерно 1 час. В этот день проводится вводная информация о предстоящем маршруте.\n\n**Отель:** Villa Colonial.  \n\
     Ночь в Антигуа."
   images:
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
   - src: https://brasiltours.ru/image/antigua.png
     alt: Антигуа-Гуатемала
@@ -118,7 +118,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Chichicastenango.png
     alt: Чичикастенанго
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 - day: 6
   title: Гватемала-Сити - Копан, Гондурас
@@ -132,7 +132,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Copn%20Ruinas.png
     alt: Копан Руинас
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 - day: 7
   title: Копан
@@ -181,7 +181,7 @@ itinerary:
     \ дня трансфер в аэропорт Флореса и внутренний перелет в Гватемала-Сити.\n\n**Отель:** Barceló Guatemala City.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 - day: 10
   title: Вылет из Гватемала-Сити
@@ -192,7 +192,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 included:
 - Русскоговорящий гид.

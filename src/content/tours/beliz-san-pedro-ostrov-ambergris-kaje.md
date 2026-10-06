@@ -29,7 +29,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/S/u/Sunset02.jpg
+  - src: /media/tours/beliz-san-pedro-ostrov-ambergris-kaje/hero-enhanced-20261006.webp
     alt: Белиз:Сан-Педро, Остров Амбергрис Кайе
 - day: 2
   title: Хол-Чан и Shark Ray Alley
@@ -76,7 +76,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/S/u/Sunset02.jpg
+  - src: /media/tours/beliz-san-pedro-ostrov-ambergris-kaje/hero-enhanced-20261006.webp
     alt: Белиз:Сан-Педро, Остров Амбергрис Кайе
 included:
 - Встреча и сопровождение.
@@ -109,7 +109,7 @@ priceFrom: 1674
 currency: USD
 priceNote: $1674
 hero:
-  src: https://brasiltours.ru/image/catalog/product/S/u/Sunset02.jpg
+  src: /media/tours/beliz-san-pedro-ostrov-ambergris-kaje/hero-enhanced-20261006.webp
   alt: Белиз:Сан-Педро, Остров Амбергрис Кайе
 routeCountries:
 - country_belize

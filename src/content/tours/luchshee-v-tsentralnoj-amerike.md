@@ -71,7 +71,7 @@ itinerary:
 
     Размещение в Villa Colonial.
   images:
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
   - src: https://brasiltours.ru/image/guatemala%20antigu.png
     alt: Антигуа-Гуатемала
@@ -238,7 +238,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/catalog/product/t/i/tikal-11_1_2row_sb.jpg
     alt: Тикаль
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 - day: 7
   title: Flores - Rio Dulce - Livingston

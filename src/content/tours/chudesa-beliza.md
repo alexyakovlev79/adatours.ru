@@ -78,7 +78,7 @@ itinerary:
 
     **Размещение:** Las Terrazas Resort, Deluxe Room. Питание не включено.
   images:
-  - src: https://brasiltours.ru/image/Belize%20City.png
+  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Вид с на город с высоты, Белиз'
 - day: 4
   title: Сан-Педро и морской заповедник Хол-Чан
@@ -131,7 +131,7 @@ itinerary:
 
     После экскурсии трансфер в международный аэропорт Белиза к вашему вылету домой.
   images:
-  - src: https://brasiltours.ru/image/Belize%20City.png
+  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Вид с на город с высоты, Белиз'
 included:
 - проживание в отелях 5*;

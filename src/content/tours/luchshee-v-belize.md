@@ -121,7 +121,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Belize%20City.png
+  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: Белиз-сити
   - src: https://brasiltours.ru/image/beliz%20ambergris.png
     alt: Амбергрис-Кайе

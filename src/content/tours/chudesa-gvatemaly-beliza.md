@@ -59,7 +59,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Antigua%20Guatemala.png
     alt: Антигуа-Гуатемала
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 - day: 2
   title: Антигуа - Панахачель
@@ -126,7 +126,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/guatemala%20flores.png
     alt: Флорес
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 - day: 5
   title: Якша - граница Белиза - Пайн-Ридж
@@ -191,7 +191,7 @@ itinerary:
 
     Здесь песчаные пляжи соседствуют с лагунами, мангровыми зарослями, тропической саванной и бирюзовой водой Карибского моря.
   images:
-  - src: https://brasiltours.ru/image/Belize%20City.png
+  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: Белиз-сити
   - src: /media/destinations/kajo/hero-enhanced-20261002.webp
     alt: Кайо
@@ -234,7 +234,7 @@ itinerary:
 
     После обеда трансфер на водном такси в Белиз-Сити, затем трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Belize%20City.png
+  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: Белиз-сити
 - excursionRef: excursion_belize_blue_hole_scenic_flight
   places: []
@@ -253,7 +253,7 @@ itinerary:
 
     После экскурсии трансфер в международный аэропорт Белиза к вылету домой.
   images:
-  - src: https://brasiltours.ru/image/Belize%20City.png
+  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: Белиз-сити
 included:
 - проживание в отелях 3-4*, стандартный номер;

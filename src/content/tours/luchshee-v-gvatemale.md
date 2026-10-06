@@ -62,7 +62,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Antigua%20Guatemala.png
     alt: Антигуа-Гуатемала
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 - day: 2
   title: Антигуа
@@ -183,7 +183,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 - day: 7
   title: Кобан - Семук-Чампей - Кобан
@@ -312,7 +312,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Copn%20Ruinas.png
     alt: Копан Руинас
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 - day: 14
   title: Гватемала-Сити
@@ -323,7 +323,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/Guatemala%20City.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
 included:
 - Услуги русскоговорящего гида.

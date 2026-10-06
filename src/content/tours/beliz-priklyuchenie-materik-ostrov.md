@@ -35,7 +35,7 @@ itinerary:
 
     Ночь в **Best Western Biltmore Plaza**.
   images:
-  - src: https://brasiltours.ru/image/Belize%20City.png
+  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: Белиз-сити
 - day: 2
   title: Зоопарк Белиза и Шунаантуньич
@@ -79,7 +79,7 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/Belize%20City.png
+  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: Белиз-сити
 - day: 5
   title: Hol Chan и Shark Ray Alley
@@ -158,7 +158,7 @@ priceFrom: 2955
 currency: USD
 priceNote: $2955
 hero:
-  src: https://brasiltours.ru/image/countries/belize/beliz-1200-1200.jpg
+  src: /media/tours/beliz-priklyuchenie-materik-ostrov/hero-enhanced-20261006.webp
   alt: 'Белиз: Приключение «Материк / Остров»'
 routeCountries:
 - country_belize

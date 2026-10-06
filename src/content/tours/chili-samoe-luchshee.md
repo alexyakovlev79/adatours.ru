@@ -111,7 +111,7 @@ itinerary:
 
     **Включено:** входные билеты в Чаксу и к высокогорным лагунам, обед.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-atacama-right.jpg
+  - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/hero-enhanced-20261006.webp
     alt: 'На фото: пустыня Атакама в Чили'
 - day: 4
   title: Гейзеры Татио и Мачука

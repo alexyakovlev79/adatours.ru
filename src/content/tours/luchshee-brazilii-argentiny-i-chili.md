@@ -297,7 +297,7 @@ itinerary:
 
     После программы размещение в районе Атакамы.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-atacama-right.jpg
+  - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/hero-enhanced-20261006.webp
     alt: Сан-Педро-де-Атакама
   - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
@@ -323,7 +323,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/san-pedro-de-atacama-3.jpg
+  - src: /media/tours/chili-santyago-pustynya-atakama-torres-del-pajne/hero-enhanced-20261006.webp
     alt: Сан-Педро-де-Атакама
 - day: 12
   title: Атакама - Сантьяго
@@ -339,7 +339,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-atacama-right.jpg
+  - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/hero-enhanced-20261006.webp
     alt: Сан-Педро-де-Атакама
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили

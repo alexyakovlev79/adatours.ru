@@ -54,7 +54,7 @@ itinerary:
 
     Возвращение в отель и отдых.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'На фото: Рио-де-Жанейро, Бразилия'
 - day: 3
   title: Корковадо и статуя Христа Искупителя
@@ -131,7 +131,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'На фото: Рио-де-Жанейро, Бразилия'
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -259,7 +259,7 @@ itinerary:
   - Бузиос
   text: Завтрак в отеле. Выезд из Бузиоса в Рио-де-Жанейро и трансфер в аэропорт для международного вылета домой.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'На фото: Рио-де-Жанейро, Бразилия'
   - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
     alt: 'На фото: курорт Бузиос и пляжный отдых в Бразилии'

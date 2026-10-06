@@ -43,7 +43,7 @@ itinerary:
 
     Первый день проходит без обязательной экскурсии, чтобы после перелета можно было выбрать собственный темп.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'на фото: Центр Рио'
 - day: 2
   title: Сахарная Голова и старый Рио
@@ -72,7 +72,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'на фото: Центр Рио'
 - day: 3
   title: Корковадо и Христос-Искупитель
@@ -99,7 +99,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/r/i/rio_12.jpg
+  - src: /media/tours/luchshee-v-brazilii-rio-iguasu-buzios/itinerary-day-3-enhanced-20261006.webp
     alt: 'на фото: Статуя Христа'
 - day: 4
   title: Рио-де-Жанейро - Игуасу и бразильская сторона водопадов
@@ -147,7 +147,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'на фото: Центр Рио'
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -206,7 +206,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
-  - src: https://brasiltours.ru/image/catalog/product/I/g/Iguazu-Gorge-du-diable.jpg
+  - src: /media/tours/luchshee-v-brazilii-rio-iguasu-buzios/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: 'на фото: Водопады Игуасу'
 - day: 7
   title: Бузиос
@@ -235,7 +235,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'на фото: Центр Рио'
 included:
 - Проживание в отелях.
@@ -264,7 +264,7 @@ priceFrom: 2703
 currency: USD
 priceNote: $2703
 hero:
-  src: https://brasiltours.ru/image/catalog/product/r/i/rio-incentive_2.jpg
+  src: /media/tours/luchshee-v-brazilii-rio-iguasu-buzios/hero-enhanced-20261006.webp
   alt: 'на фото: Статуя Иисуса Христа в Рио-де-Жанейро (Христа Спасителя) в Бразилии'
 routeCountries:
 - country_brazil

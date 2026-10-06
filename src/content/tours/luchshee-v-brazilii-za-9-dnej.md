@@ -41,7 +41,7 @@ itinerary:
 
     Можно отправиться на прогулку по городу, провести время у океана или отдохнуть после перелета.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Сахарная Голова и старый Рио
@@ -237,7 +237,7 @@ itinerary:
   images:
   - src: /media/tours/luchshee-v-brazilii-za-9-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: Бузиос
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 included:
 - Проживание в отелях.

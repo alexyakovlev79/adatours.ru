@@ -215,7 +215,7 @@ priceFrom: 3730
 currency: USD
 priceNote: $3730
 hero:
-  src: https://brasiltours.ru/image/countries/chile/san-pedro-de-atacama-3.jpg
+  src: /media/tours/chili-santyago-pustynya-atakama-torres-del-pajne/hero-enhanced-20261006.webp
   alt: 'На фото: пустыня Сан Педро де Атакама в Чили'
 routeCountries:
 - country_chile

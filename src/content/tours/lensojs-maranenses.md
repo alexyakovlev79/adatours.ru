@@ -95,7 +95,7 @@ itinerary:
 
     Размещение в Porto Preguiças Resort.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20230303-wa0013.jpg
+  - src: /media/tours/lensojs-maranenses/hero-enhanced-20261006.webp
     alt: Ленсойс-Мараньенсес
   - src: /media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp
     alt: Сан-Луис
@@ -166,7 +166,7 @@ priceFrom: 1315
 currency: USD
 priceNote: $1315
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/img-20230303-wa0013.jpg
+  src: /media/tours/lensojs-maranenses/hero-enhanced-20261006.webp
   alt: Ленсойс-Мараньенсес
 routeCountries:
 - country_brazil

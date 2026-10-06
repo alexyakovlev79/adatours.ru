@@ -45,7 +45,7 @@ itinerary:
 
     Первый день остается спокойным: размещение и отдых после дороги.
   images:
-  - src: https://brasiltours.ru/image/rio%20cocos.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи в Рио-де-Жанейро, Бразилия'
 - day: 2
   title: 'Рио-де-Жанейро: Сахарная Голова'
@@ -60,7 +60,7 @@ itinerary:
 
     После спуска поездка по Рио продолжается. По пути вы увидите городскую архитектуру, в том числе здания колониального периода. Если позволит время, возможно посещение Кафедрального собора в Сан-Себастьяне и фотосессия на лестнице Селарона.
   images:
-  - src: https://brasiltours.ru/image/rio%20cocos.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи в Рио-де-Жанейро, Бразилия'
 - day: 3
   title: 'Рио-де-Жанейро: Корковадо'
@@ -91,7 +91,7 @@ itinerary:
 
     Остаток дня можно посвятить морю и отдыху.
   images:
-  - src: https://brasiltours.ru/image/rio%20cocos.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи в Рио-де-Жанейро, Бразилия'
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/ilha-grande-rj.jpg
     alt: 'На фото: пляжи Илья Гранди. Бразилия'
@@ -152,7 +152,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/paraty2.png
     alt: 'На фото: город Парати. Бразилия'
-  - src: https://brasiltours.ru/image/rio%20cocos.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи в Рио-де-Жанейро, Бразилия'
 included:
 - Проживание в отелях на базе завтраков.

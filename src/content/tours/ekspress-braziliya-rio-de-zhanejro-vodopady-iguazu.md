@@ -32,7 +32,7 @@ itinerary:
 
     Оставшаяся часть дня свободна. Можно сразу отправиться на прогулку и почувствовать жизнь Рио или провести несколько часов у океана, среди пальм, песка и волн.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
 - day: 2
   title: Сахарная Голова и пляжи
@@ -47,7 +47,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
 - day: 3
   title: Корковадо и Росинья
@@ -86,7 +86,7 @@ itinerary:
 
     Пешеходные дорожки и мосты выводят к смотровым точкам очень близко к воде. Мелкая водяная пыль ощущается прямо на маршруте, а шум становится сильнее по мере приближения к главным каскадам.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
@@ -105,7 +105,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
 - day: 6
   title: Вылет
@@ -115,7 +115,7 @@ itinerary:
 
     Перелет в Рио-де-Жанейро или Сан-Пауло, где вас ждет стыковка на международный рейс домой.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
 included:
 - Проживание в отелях по программе на базе завтраков
@@ -139,7 +139,7 @@ priceFrom: 1845
 currency: USD
 priceNote: $1845
 hero:
-  src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
   alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
 routeCountries:
 - country_brazil

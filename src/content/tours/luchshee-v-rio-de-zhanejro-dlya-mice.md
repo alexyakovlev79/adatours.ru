@@ -127,7 +127,7 @@ itinerary:
 
     Вечером ужин в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/sugarloaf-mountain-rio-de-janeiro.jpg
+  - src: /media/tours/luchshee-v-rio-de-zhanejro-dlya-mice/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: Фуникулёр поднимается на гору Сахарная голова'
 - day: 4
   title: Ангра-дус-Рейс и тропические острова
@@ -169,7 +169,7 @@ itinerary:
 
     Он расположен с видом на Сахарную Голову и работает в формате традиционной бразильской шураскарии.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/sugarloaf-mountain-rio-de-janeiro.jpg
+  - src: /media/tours/luchshee-v-rio-de-zhanejro-dlya-mice/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: Фуникулёр поднимается на гору Сахарная голова'
 - day: 6
   title: Завершение программы

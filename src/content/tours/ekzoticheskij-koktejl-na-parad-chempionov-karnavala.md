@@ -65,7 +65,7 @@ itinerary:
 
     После размещения свободное время. Можно выйти к пляжу, пройтись вдоль океана, попробовать фруктовые напитки в кафе или просто отдохнуть после перелета.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'на фото: Центр города в Рио-де-Жанейро, Бразилия'
 - day: 2
   title: Рио-де-Жанейро, Сахарная Голова и Парад чемпионов
@@ -270,7 +270,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
     alt: 'На фото: курорт Бузиос в Бразилии'
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'на фото: Центр города в Рио-де-Жанейро, Бразилия'
 - day: 12
   title: Бузиос

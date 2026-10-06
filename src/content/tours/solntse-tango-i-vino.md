@@ -53,7 +53,7 @@ itinerary:
 
     Статуя высотой 38 м стоит здесь с 1931 года. Со смотровой площадки открывается панорама Рио, океана, бухт, гор и городской застройки. После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'На фото: город Рио-де-Жанейро, Бразилия'
 - day: 3
   title: 'Рио-де-Жанейро: Сахарная Голова и город'
@@ -83,7 +83,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-13-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
-  - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
+  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'На фото: город Рио-де-Жанейро, Бразилия'
 - day: 5
   title: Бразильская сторона водопадов Игуасу

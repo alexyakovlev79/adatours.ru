@@ -40,7 +40,7 @@ itinerary:
 
     После экскурсии трансфер в отель. Вечером остается свободное время для отдыха после насыщенного дня в Рио.
   images:
-  - src: https://brasiltours.ru/image/rio%20cocos.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Корковадо и Христос Искупитель
@@ -112,7 +112,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/rio%20cocos.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: Аргентинская сторона водопадов Игуасу
@@ -171,7 +171,7 @@ itinerary:
 
     Возвращение в Рио-де-Жанейро.
   images:
-  - src: https://brasiltours.ru/image/rio%20cocos.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 8
   title: Рио-де-Жанейро
@@ -203,7 +203,7 @@ priceFrom: 3130
 currency: USD
 priceNote: $3130
 hero:
-  src: https://brasiltours.ru/image/coffe.png
+  src: /media/tours/brazil-coffee-tour-ru/hero-enhanced-20261006.webp
   alt: Кофе Тур в Бразилии на 8 дней
 routeCountries:
 - country_brazil

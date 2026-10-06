@@ -164,7 +164,7 @@ priceFrom: 3538
 currency: USD
 priceNote: $3538
 hero:
-  src: https://brasiltours.ru/image/countries/chile/chi-atacama-right.jpg
+  src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/hero-enhanced-20261006.webp
   alt: 'Чили: Космическое путешествие на Земле'
 routeCountries:
 - country_chile

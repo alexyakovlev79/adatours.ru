@@ -334,7 +334,7 @@ sourceSnapshot: https://drive.google.com/file/d/1ozD7edaQyeLkIvL2bogVR2EoB1OuOYA
 durationDays: 18
 durationNights: 17
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/kachi-lodge/oblozhka.jpg
+  src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/hero-enhanced-20261006.webp
   alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
 routeCountries:
 - country_peru

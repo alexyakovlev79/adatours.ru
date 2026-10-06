@@ -45,7 +45,7 @@ itinerary:
 
     После перелета можно остаться в отеле или выйти к океану. Вечером на холмах загораются огни домов, а вдоль пляжа тянется освещенная набережная. Прогулка по Авенида Атлантика позволяет без отдельной экскурсии почувствовать Рио: шум волн смешивается с городом, рядом работают кафе и рестораны, а океан остается буквально через дорогу от отеля.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/copacabana-palace/novyj-god.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/hero-enhanced-20261006.webp
     alt: Новогодний салют на пляже Копакабана в Рио, фейерверк над океаном
 - day: 2
   title: Сахарная Голова и исторический центр Рио
@@ -129,7 +129,7 @@ itinerary:
 
     В полночь с платформ в море запускают новогодний салют. Фейерверки поднимаются над Атлантикой, отражаются на воде и освещают берег. Бесплатные концерты продолжаются после полуночи, и пляж остается заполненным людьми до утра.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/copacabana-palace/novyj-god.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/hero-enhanced-20261006.webp
     alt: Новогодний салют на пляже Копакабана в Рио, фейерверк над океаном
 - day: 6
   title: Рио-де-Жанейро - Фоз-ду-Игуасу. Hotel das Cataratas
@@ -374,7 +374,7 @@ priceFrom: 35306
 currency: USD
 priceNote: $35306
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/copacabana-palace/novyj-god.jpg
+  src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/hero-enhanced-20261006.webp
   alt: Новогодний салют на пляже Копакабана в Рио, фейерверк над океаном
 routeCountries:
 - country_brazil

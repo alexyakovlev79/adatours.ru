@@ -18,9 +18,9 @@ hero:
   src: /media/excursions/royal-petropolis-private-tour-full-day/hero-enhanced-20261006.webp
   alt: "На фото: Королевский Петрополис в Бразилии"
 gallery:
-  - src: "https://brasiltours.ru/image/petro11.png"
+  - src: /media/excursions/royal-petropolis-private-tour-full-day/gallery-1-enhanced-20261006.webp
     alt: "На фото: Дворец в Петрополисе, Бразилия"
-  - src: "https://brasiltours.ru/image/petropol.png"
+  - src: /media/excursions/royal-petropolis-private-tour-full-day/gallery-2-enhanced-20261006.webp
     alt: "На фото: Кристалл-палас в Петрополисе"
   - src: "https://brasiltours.ru/image/catalog/product/r/i/rio_crown.jpg"
     alt: "На фото: Корона в музее Петрополиса"

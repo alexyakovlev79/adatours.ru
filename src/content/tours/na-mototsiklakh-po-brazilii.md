@@ -55,7 +55,7 @@ itinerary:
     \ конечные города, но и сама дорога через внутренние районы Бразилии, горные виды и смена небольших населенных пунктов.\n\
     \n**Примерное расстояние:** 460 км.  \n**Отель:** Recanto do Turvo."
   images:
-  - src: https://brasiltours.ru/image/sao-paulo-brazil_1800x1000.png
+  - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сан-Пауло в Бразилии'
 - day: 3
   title: Капитолио
@@ -71,7 +71,7 @@ itinerary:
   text: "После завтрака переезд в Петрополис. Дорога снова проходит по горным районам и занимает большую часть дня.\n\n**Примерное\
     \ расстояние:** 580 км.  \n**Отель:** Solar do Império."
   images:
-  - src: https://brasiltours.ru/image/petro11.png
+  - src: /media/excursions/royal-petropolis-private-tour-full-day/gallery-1-enhanced-20261006.webp
     alt: 'На фото: Петрополис в Бразилии'
 - day: 5
   title: Петрополис - Рио-де-Жанейро
@@ -88,9 +88,9 @@ itinerary:
     \ ней гастрономическую остановку. После экскурсии переезд в Рио-де-Жанейро.\n\n**Примерное расстояние:** 260 км.  \n**Отель:**\
     \ Arena Copacabana."
   images:
-  - src: https://brasiltours.ru/image/cable%20rio.png
+  - src: /media/tours/na-mototsiklakh-po-brazilii/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото:  в Рио-де-Жанейро в Бразилии'
-  - src: https://brasiltours.ru/image/petro11.png
+  - src: /media/excursions/royal-petropolis-private-tour-full-day/gallery-1-enhanced-20261006.webp
     alt: 'На фото: Петрополис в Бразилии'
 - day: 6
   title: Рио-де-Жанейро
@@ -103,7 +103,7 @@ itinerary:
 
     После спуска переезд к Praia Vermelha, Красному пляжу. Канатная дорога поднимает сначала на Урку, затем на Сахарную Голову. Название горы связывают с ее формой, напоминающей сахарную голову; также существует версия происхождения от местного Pau-nh-acuqua, «Высокий холм». С вершины хорошо видны город, море и горные массивы вокруг бухты, а со стороны Копакабаны особенно заметна береговая линия. По окончании экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/cable%20rio.png
+  - src: /media/tours/na-mototsiklakh-po-brazilii/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото:  в Рио-де-Жанейро в Бразилии'
 - day: 7
   title: Рио-де-Жанейро - Парати
@@ -120,7 +120,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: 'На фото: город Парати в Бразилии'
-  - src: https://brasiltours.ru/image/cable%20rio.png
+  - src: /media/tours/na-mototsiklakh-po-brazilii/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото:  в Рио-де-Жанейро в Бразилии'
 - day: 8
   title: Парати
@@ -156,7 +156,7 @@ itinerary:
   text: После завтрака трансфер в аэропорт. Обязательных экскурсий в этот день нет, программа завершается после возвращения
     в Сан-Паулу и сдачи мотоциклов накануне.
   images:
-  - src: https://brasiltours.ru/image/sao-paulo-brazil_1800x1000.png
+  - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сан-Пауло в Бразилии'
 included:
 - Проживание по маршруту в формате TWIN BB.
@@ -185,7 +185,7 @@ priceFrom: 8315
 currency: USD
 priceNote: $8315
 hero:
-  src: https://brasiltours.ru/image/countries/thematic-tours/harley-davidson-xahtayihlpi-unsplash.jpg
+  src: /media/tours/na-mototsiklakh-po-brazilii/hero-enhanced-20261006.webp
   alt: 'На фото: на мотоцикле по Бразилии'
 routeCountries:
 - country_brazil

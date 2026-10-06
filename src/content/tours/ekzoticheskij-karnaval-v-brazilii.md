@@ -216,7 +216,7 @@ itinerary:
 
     Экскурсия дает возможность увидеть Игуасу с другой точки и сравнить 2 стороны одного природного комплекса. После программы возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-2.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-7-enhanced-20261006.webp
     alt: Панорама джунглей и каскадов Игуасу на границе Бразилии и Аргентины
 - day: 8
   title: Фос-ду-Игуасу - Манаус - Амазония

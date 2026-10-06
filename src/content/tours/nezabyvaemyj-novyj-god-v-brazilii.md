@@ -66,7 +66,7 @@ itinerary:
 
     У Копакабаны новогодняя традиция соединяет массовый городской праздник и личные ритуалы. Кто-то приходит ради концертов и салюта, кто-то подходит к воде с цветами и небольшими дарами для Иеманжи. Белый цвет, музыка, океан и фейерверки существуют здесь одновременно, поэтому эта ночь сильно отличается от обычной вечеринки в отеле или ресторане.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-25.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/itinerary-day-4-enhanced-20261006.webp
     alt: Статуя Христа и Панорамный вид в Рио-де -Жанейро, Бразилия
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny7.jpg
     alt: Празднование Нового года на пляже Копакабана, Бразилия

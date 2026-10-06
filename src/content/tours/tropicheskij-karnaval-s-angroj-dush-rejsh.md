@@ -121,7 +121,7 @@ itinerary:
 
     Один из вечеров можно посвятить местной кухне и заказать рыбу или морепродукты. В остальные дни можно вообще ничего не планировать заранее: система «все включено» позволяет оставаться в отеле, а свободный график дает возможность менять планы в зависимости от погоды и желания ехать на острова.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/uzkaya-oblozhka.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/hero-enhanced-20261006.webp
     alt: Юная участница карнавала в Рио-де-Жанейро
 - day: 7
   title: Пляжный отдых в Ангра-душ-Рейш
@@ -161,7 +161,7 @@ itinerary:
 
     Один из вечеров можно посвятить местной кухне и заказать рыбу или морепродукты. В остальные дни можно вообще ничего не планировать заранее: система «все включено» позволяет оставаться в отеле, а свободный график дает возможность менять планы в зависимости от погоды и желания ехать на острова.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/uzkaya-oblozhka.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/hero-enhanced-20261006.webp
     alt: Юная участница карнавала в Рио-де-Жанейро
 - day: 9
   title: Пляжный отдых в Ангра-душ-Рейш
@@ -201,7 +201,7 @@ itinerary:
 
     Один из вечеров можно посвятить местной кухне и заказать рыбу или морепродукты. В остальные дни можно вообще ничего не планировать заранее: система «все включено» позволяет оставаться в отеле, а свободный график дает возможность менять планы в зависимости от погоды и желания ехать на острова.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/uzkaya-oblozhka.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/hero-enhanced-20261006.webp
     alt: Юная участница карнавала в Рио-де-Жанейро
 - day: 11
   title: Пляжный отдых в Ангра-душ-Рейш

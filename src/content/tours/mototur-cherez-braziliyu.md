@@ -65,7 +65,7 @@ itinerary:
   images:
   - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-enhanced-20261006.webp
     alt: на фото:Парати
-  - src: https://brasiltours.ru/image/sao-paulo-brazil_1800x1000.png
+  - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: 'на фото: Сан Паулу'
 - day: 4
   title: Парати
@@ -131,7 +131,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: Рио де Жанейро'
-  - src: https://brasiltours.ru/image/petropol.png
+  - src: /media/excursions/royal-petropolis-private-tour-full-day/gallery-2-enhanced-20261006.webp
     alt: 'на фото: Королевский Петрополис'
 - day: 9
   title: Тирадентис - Капитолио

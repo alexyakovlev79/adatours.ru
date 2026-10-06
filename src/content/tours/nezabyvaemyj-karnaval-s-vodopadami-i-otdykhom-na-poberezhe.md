@@ -83,7 +83,7 @@ itinerary:
 
     Парад продолжается всю ночь. После окончания организован трансфер обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/daniel-lloyd-blunk-fernandez-epyozwdtzv0-unsplash.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/itinerary-day-3-enhanced-20261006.webp
     alt: Парад школ самбы, карнавал в Рио, Бразилия
 - day: 4
   title: Корковадо, Христос Спаситель и Арпоадор
@@ -98,7 +98,7 @@ itinerary:
 
     К закату можно выйти на Арпоадор, каменный мыс между Копакабаной и Ипанемой. Вечером можно поужинать в ресторане морепродуктов Marius. **Стоимость:** $130 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-25.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/itinerary-day-4-enhanced-20261006.webp
     alt: Статуя Христа Искупителя на горе Корковадо, Рио
 - day: 5
   title: Рио-де-Жанейро - Фоз-ду-Игуасу
@@ -175,7 +175,7 @@ itinerary:
 
     Аргентинская сторона воспринимается более близкой к самой воде. На нижнем круге каскады находятся выше посетителя, на верхнем дорожки идут почти по краю реки, а путь к Горлу дьявола проходит по настилам через широкое русло. Разница с предыдущим днем становится очевидной: бразильский берег показывает общую панораму, аргентинский разбирает ее на отдельные водопады и позволяет подойти к ним значительно ближе.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-2.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-7-enhanced-20261006.webp
     alt: Мощные потоки водопадов Игуасу, Бразилия
 - day: 8
   title: Игуасу - Рио-де-Жанейро - Ангра-душ-Рейш
@@ -250,7 +250,7 @@ itinerary:
 
     Можно ограничиться территорией отеля и пляжем, а можно каждый день выбирать новую морскую программу. Вокруг Ангры много небольших островов, заповедных берегов, прозрачных бухт и старых фортов. Поездка на Илья-Гранди позволяет увидеть более уединенные места, а прогулка по воде показывает побережье с той стороны, которая недоступна с автомобильной дороги.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-2.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-7-enhanced-20261006.webp
     alt: Мощные потоки водопадов Игуасу, Бразилия
 - day: 12
   title: Ангра-душ-Рейш - Рио-де-Жанейро
@@ -295,7 +295,7 @@ priceFrom: 4089
 currency: USD
 priceNote: $4089
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/uzkaya-oblozhka.jpg
+  src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/hero-enhanced-20261006.webp
   alt: Девушка в карнавальном наряде в Рио, Бразилия
 routeCountries:
 - country_brazil

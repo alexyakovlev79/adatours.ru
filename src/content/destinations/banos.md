@@ -12,11 +12,11 @@ hero:
   src: /media/countries/ekvador/featureBands-3-enhanced-20261002.webp
   alt: "На фото: город Баньос в Эквадоре в Андах"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/8/0/800px-Ecuador_landscapenear_Banos.JPG"
+  - src: "/media/destinations/banos/gallery-1-enhanced-20261006.webp"
     alt: "На фото: город Баньос в Эквадоре в Андах"
-  - src: "https://brasiltours.ru/image/catalog/category/5/_/5_21_ecuador_volcano.jpg"
+  - src: "/media/destinations/banos/gallery-2-enhanced-20261006.webp"
     alt: "На фото: город Баньос в Эквадоре в Андах"
-  - src: "https://brasiltours.ru/image/catalog/category/p/o/posada.jpg"
+  - src: "/media/destinations/banos/gallery-3-enhanced-20261006.webp"
     alt: "На фото: город Баньос в Эквадоре в Андах"
   - src: "https://brasiltours.ru/image/catalog/category/f/i/file_4.jpg"
     alt: "На фото: город Баньос в Эквадоре в Андах"

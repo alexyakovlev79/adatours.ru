@@ -92,7 +92,7 @@ const listSchema = pagination ? {
   <FactStrip
     wideFirst
     facts={[
-      { value: String(multiCountryTours.length), label: countLabel(multiCountryTours.length, ['готовый маршрут', 'готовых маршрута', 'готовых маршрутов']) },
+      { value: String(multiCountryTours.length), label: 'готовых маршрутов по нескольким странам' },
       { value: String(countryCounts.size), label: 'стран в текущей подборке' },
       { value: durationValue, label: 'длительность готовых программ' },
       { value: 'Под вас', label: 'можно менять даты, отели и состав поездки' },
@@ -103,7 +103,7 @@ const listSchema = pagination ? {
     <div class="container multi-tours__head">
       <p class="eyebrow">Выбрать путешествие</p>
       <h2 id="multi-tours-title">Multi-country туры</h2>
-      <p>Первые 10 маршрутов собраны здесь. Дальше можно перейти по страницам каталога или подгрузить следующую десятку без потери текущего списка.</p>
+      <p>Сравните страны, длительность и формат. Любой готовый маршрут можно адаптировать под ваши даты, отели и состав поездки.</p>
     </div>
 
     {pagination && (

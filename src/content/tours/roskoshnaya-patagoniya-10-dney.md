@@ -220,7 +220,7 @@ itinerary:
       
       Переезд из Эль-Калафате в Пуэрто-Наталес проходит через границу Аргентины и Чили. В дороге постепенно меняется и сам пейзаж: аргентинская степь уходит к предгорьям, а ближе к Пуэрто-Наталесу все чаще появляются вода и фьорды. Эти 4 часа становятся частью путешествия, а не обычным техническим трансфером между отелями.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/torres-del-paine-11.jpg
+      - src: /media/tours/roskoshnaya-patagoniya-10-dney/itinerary-day-5-enhanced-20261006.webp
         alt: "Патагония на пути в Пуэрто-Наталес"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -276,7 +276,7 @@ itinerary:
       
       Этот день дает одну из самых узнаваемых картин Патагонии: гранитные пики, открытая степь, голубые ледниковые озера и почти постоянный ветер. Гуанако держатся на открытых пространствах, где хищнику труднее приблизиться незаметно, а над парком можно увидеть андского кондора. Погода меняется быстро, поэтому один и тот же склон в течение дня выглядит по-разному.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/puerto-natales-chile-2.jpg
+      - src: /media/tours/roskoshnaya-patagoniya-10-dney/itinerary-day-6-enhanced-20261006.webp
         alt: "Гранитные башни Торрес-дель-Пайне"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -314,7 +314,7 @@ itinerary:
       
       После прибытия размещение в Hotel Dreams del Estrecho с видом на пролив и южное побережье Чили.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/angel-silva-538036-unsplash.jpg
+      - src: /media/tours/roskoshnaya-patagoniya-10-dney/itinerary-day-7-enhanced-20261006.webp
         alt: "Магелланов пролив, Чилийская Патагония"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -418,7 +418,7 @@ itinerary:
       
       Сантьяго завершает поездку заметно мягче по климату и по темпу. После Магелланова пролива и открытой патагонской степи здесь появляются городские террасы, винные бары и виды на Анды из центра. При желании последний полный день можно оставить только под город или добавить выезд в Майпо и закончить путешествие дегустацией вина у подножия гор.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+      - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
         alt: "Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -463,7 +463,7 @@ itinerary:
       
       Отдельная особенность маршрута - сочетание наземных наблюдений и навигации. В Торрес-дель-Пайне вы путешествуете по дорогам и тропам национального парка, у Перито-Морено наблюдаете ледник со смотровых площадок, а в Магеллановом проливе переходите на лодку. За счет этого Патагония раскрывается не только через разные страны, но и через разные способы движения по региону.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/santiago-2.jpg
+      - src: /media/tours/roskoshnaya-patagoniya-10-dney/itinerary-day-10-enhanced-20261006.webp
         alt: "Панорама Сантьяго с видом на Анды"
         intendedSlot: "itinerary:day-10"
 included:

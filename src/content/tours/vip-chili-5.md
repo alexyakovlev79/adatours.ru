@@ -70,7 +70,7 @@ itinerary:
 
     На вечер можно выбрать **Borago, Ambrosia, Peumayen** или **Aquí está Coco**. Среди этих ресторанов есть варианты с акцентом на морепродукты и современную чилийскую кухню.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 3
   title: Сантьяго - Калама - Сан-Педро-де-Атакама
@@ -147,7 +147,7 @@ itinerary:
 
     После экскурсии трансфер в Каламу, перелет в Сантьяго и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 6
   title: Сантьяго - Пуэрто-Наталес
@@ -204,7 +204,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/puerto%20natales2.png
     alt: Пуэрто-Наталес
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 9
   title: Вальпараисо и Винья-дель-Мар
@@ -307,3 +307,4 @@ themes: ["theme_culture"]
 **Стоимость:** $10749
 
 Маршрут построен на контрастах. В Сантьяго вы увидите исторический центр, современные кварталы и винодельческую долину Майпо. В Атакаме городская программа сменяется пустыней, вулканами, солончаком, фламинго и звездным небом. В Патагонии вас ждут ледник Грей, озера, горные массивы и водопады. В конце путешествия появятся портовый Вальпараисо и курортный Винья-дель-Мар.
+

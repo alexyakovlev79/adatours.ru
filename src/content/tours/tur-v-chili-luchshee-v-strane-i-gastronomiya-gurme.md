@@ -125,7 +125,7 @@ itinerary:
 
     **Включено:** входной билет к гейзерам Татио.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: 'На фото: фуникулер-подъемник в столице Чили - городе Сантьяго'
 - day: 5
   title: перелет в Патагонию
@@ -179,7 +179,7 @@ itinerary:
 
     Перелет в Сантьяго и прибытие к международному рейсу.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/santiago-2.jpg
+  - src: /media/tours/roskoshnaya-patagoniya-10-dney/itinerary-day-10-enhanced-20261006.webp
     alt: 'На фото: столица Чили, город Сантьяго'
 included:
 - проживание в отелях 5* и бутик-лоджах;
@@ -252,3 +252,4 @@ themes: ["theme_culture"]
 У гейзеров Татио день начинается очень рано. На высоте около 4000 метров из трещин поднимаются столбы пара, а на холодном воздухе особенно кстати теплый завтрак.
 
 В Торрес-дель-Пайне катер проходит по озеру Грей мимо айсбергов и подходит к леднику. Дальше маршрут ведет к озерам, лагунам, смотровым площадкам и 18-метровому водопаду Сальто-Гранде.
+

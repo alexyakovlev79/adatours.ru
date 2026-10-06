@@ -33,7 +33,7 @@ priceFrom: 3500
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
+  src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
   alt: "Патагония"
 gallery: []
 featured: false
@@ -129,7 +129,7 @@ itinerary:
       
       Возвращение в Эль-Калафате.
     images:
-      - src: https://brasiltours.ru/image/ARG%20Patagonia%20Argentina.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-5-enhanced-20261006.webp
         alt: "Патагония и ледник Перито-Морено"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -251,7 +251,7 @@ itinerary:
       
       После экскурсии трансфер в аэропорт для вылета домой.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+      - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
         alt: "Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-8"
 included:
@@ -287,3 +287,4 @@ themes: []
 
 
 Дальше начинается Патагония. В Эль-Калафате предусмотрены джип-тур вдоль озера Архентино и поездка к Перито-Морено. После переезда через Патагонскую степь маршрут пересекает границу с Чили и приходит в Пуэрто-Наталес, откуда начинается экскурсия в Торрес-дель-Пайне. В финале - Сантьяго-де-Чили, его исторический центр и площадь Ла-Монеда.
+

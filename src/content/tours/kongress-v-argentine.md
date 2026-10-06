@@ -44,7 +44,7 @@ itinerary:
       
       Для участников предусмотрен приветственный напиток. Вечером трансфер на ужин в ресторан La Cabaña.
     images:
-      - src: https://brasiltours.ru/image/Arg%20Buenos%20obelisk.png
+      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-1-enhanced-20261006.webp
         alt: "Обелиск в Буэнос-Айресе"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -106,7 +106,7 @@ itinerary:
     text: |-
       После завтрака предусмотрен трансфер в аэропорт. На этом корпоративная программа в Аргентине завершается.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/bue.jpg
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-5"
 included:
@@ -139,3 +139,4 @@ themes: []
 
 
 Буэнос-Айрес представлен как MICE-направление с конференц-центрами, отелями, транспортными связями и возможностями для incentive-программ. Среди вариантов досуга упоминаются частные танго-шоу, гастрономические программы и винные туры. В этой конкретной программе после деловых встреч группа выезжает за пределы столицы: поездка в Тигре добавляет прогулку на частной лодке, острова и спокойные водные каналы дельты Параны.
+

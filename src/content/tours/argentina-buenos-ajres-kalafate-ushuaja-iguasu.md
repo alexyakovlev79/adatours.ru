@@ -50,7 +50,7 @@ priceFrom: 3375
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg
+  src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
   alt: "Ушуайя и пролив Бигль в аргентинской Патагонии"
 gallery: []
 featured: false
@@ -154,7 +154,7 @@ itinerary:
     text: |-
       Трансфер в аэропорт Эль-Калафате и перелет в Ушуайю. По прибытии трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg
+      - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
         alt: "Ушуайя"
         intendedSlot: "itinerary:day-6"
 
@@ -290,3 +290,4 @@ themes: ["theme_culture"]
 ---
 
 Поездка соединяет городскую культуру, ледники, горы, озера, морское побережье Огненной Земли и субтропический лес. В свободный день в Буэнос-Айресе можно добавить Тигре, Монтевидео или программу «Фиеста Гаучо». В Ушуайе доступна отдельная поездка к колонии пингвинов на острове Мартильо.
+

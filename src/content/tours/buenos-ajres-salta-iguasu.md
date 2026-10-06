@@ -53,7 +53,7 @@ priceFrom: 5745
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/bue.jpg
+  src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-2-enhanced-20261006.webp
   alt: "Буэнос-Айрес, Аргентина"
 gallery: []
 featured: false

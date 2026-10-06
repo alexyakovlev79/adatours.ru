@@ -381,7 +381,7 @@ itinerary:
       
       После экскурсии возвращение в Сантьяго.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+      - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
         alt: "Виноградники Чили"
         intendedSlot: "itinerary:day-8"
   - day: 9

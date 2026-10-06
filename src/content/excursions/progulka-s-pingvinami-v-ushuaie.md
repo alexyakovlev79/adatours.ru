@@ -14,7 +14,7 @@ language:
 priceFrom: 350
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg
+  src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
   alt: "Пингвины в Ушуайе"
 gallery: []
 route:
@@ -30,3 +30,4 @@ themes: ["theme_wildlife"]
 ---
 
 Дополнительно можно заказать групповую прогулку с пингвинами с англоязычным гидом. Стоимость этой опции - $350 с человека.
+

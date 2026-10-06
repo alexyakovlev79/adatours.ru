@@ -41,7 +41,7 @@ priceFrom: 7013
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
+  src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
   alt: "Патагония, Аргентина"
 gallery: []
 featured: false
@@ -60,7 +60,7 @@ itinerary:
       
       В первый день можно просто гулять, наблюдать за городом, зайти в кафе или оставить вечер для отдыха после перелета. Буэнос-Айрес здесь нужен еще и как мягкое начало перед более активной частью поездки: уже через 2 дня маршрут уйдет далеко на юг, где основные впечатления будут связаны с природой и длинными переездами.
     images:
-      - src: https://brasiltours.ru/image/Arg%20Buenos%20obelisk.png
+      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-1-enhanced-20261006.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -78,7 +78,7 @@ itinerary:
       
       Вечером предусмотрено танго-шоу с ужином. Танго появилось в портовой среде среди бедных иммигрантов и гаучо. Поначалу его танцевали иначе, позднее появились оркестры и более сложная сценическая форма. Сегодня танго остается одним из главных культурных символов Аргентины. В ресторане подают традиционные блюда и аргентинские вина.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/bue.jpg
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -111,7 +111,7 @@ itinerary:
       
       Озеро Фаньяно впечатляет размером и открытыми видами. Затем маршрут продолжается через его окрестности к внутренней дороге и ведет к озеру Эскондидо. Оно меньше, но окружено лесом и горами. Этот день показывает Огненную Землю с более активной стороны, вдали от обычных автомобильных маршрутов. Часть удовольствия здесь именно в дороге: 4x4 проходит по старым лесным тропам, где поверхность постоянно меняется от камня к грязи и обратно.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg
+      - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
         alt: "Ушуайя, Аргентина"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -129,7 +129,7 @@ itinerary:
       
       После экскурсии трансфер в аэропорт, перелет в Эль-Калафате. По прилете вас встретит водитель и отвезет в отель. Переход от морского побережья Огненной Земли к озерам и ледникам Эль-Калафате происходит за один день, но природная среда заметно меняется.
     images:
-      - src: https://brasiltours.ru/image/ARG%20Patagonia%20Argentina.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-5-enhanced-20261006.webp
         alt: "Патагония между Ушуайей и Эль-Калафате"
         intendedSlot: "itinerary:day-5"
   - day: 6

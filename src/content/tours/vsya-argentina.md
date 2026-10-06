@@ -521,7 +521,7 @@ itinerary:
     text: |-
       После завтрака трансфер на автобусную станцию и переезд в Эль-Чалтен. По прибытии - трансфер в отель. Вечер свободный.
     images:
-      - src: https://brasiltours.ru/image/ARG%20Patagonia%20Argentina.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-5-enhanced-20261006.webp
         alt: "Эль-Чалтен, Патагония"
         intendedSlot: "itinerary:day-19"
   - day: 20
@@ -656,7 +656,7 @@ itinerary:
       
       Озеро Фаньяно впечатляет масштабом и суровым ландшафтом. После него маршрут продолжается к более компактному озеру Эскондидо, окруженному горами и лесами. Весь день построен как активное знакомство с внутренними районами Огненной Земли, вдали от обычных городских маршрутов.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg
+      - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
         alt: "Огненная Земля и Ушуайя"
         intendedSlot: "itinerary:day-24"
   - day: 25
@@ -747,3 +747,4 @@ themes: ["theme_adventure","theme_gastronomy_wine"]
 
 
 Отдельные дни дают возможность увидеть соседние страны и пограничные регионы. Из Буэнос-Айреса запланирована поездка в Монтевидео, район водопадов Игуасу знакомит сразу с бразильской и аргентинской сторонами природного комплекса, а из Патагонии маршрут приводит в чилийский Торрес-дель-Пайне.
+

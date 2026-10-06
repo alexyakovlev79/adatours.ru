@@ -264,7 +264,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
   - src: https://brasiltours.ru/image/puerto%20natales2.png
     alt: Пуэрто-Наталес
@@ -341,7 +341,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/chile/chi-atacama-right.jpg
     alt: Сан-Педро-де-Атакама
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 13
   title: Сантьяго и долина Майпо
@@ -476,3 +476,4 @@ themes: ["theme_gastronomy_wine"]
 Калафате переносит маршрут в холодную Патагонию. Здесь основным объектом становится лед, а масштаб пространства задают озеро Argentino, горы и ледник Perito Moreno. Дальше, в Torres del Paine, добавляются травянистые равнины, гранитные массивы, ледниковые озера и дикая фауна.
 
 Атакама представляет противоположный тип природы: сухая высокогорная пустыня, соляные образования, дюны и ясное ночное небо. Высокогорные лагуны находятся уже выше 4000 м, поэтому этот день заметно отличается по условиям от тропического начала поездки.
+

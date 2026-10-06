@@ -231,7 +231,7 @@ itinerary:
 
     По прибытии встреча с водителем и трансфер.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: Буэнос-Айрес
@@ -271,7 +271,7 @@ itinerary:
 
     Завершить день предлагается в районе Плайя-Анча с видом на закат над Тихим океаном.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 15
   title: Сантьяго-де-Чили
@@ -335,3 +335,4 @@ themes: []
 Последние дни проходят в Сантьяго-де-Чили. Основная программа включает обзорную экскурсию по столице, а дополнительно можно отправиться в винную долину Майпо и Вальпараисо.
 
 За 15 дней маршрут несколько раз меняет темп. Рио сочетает пляжи, горы и старый центр, Игуасу переводит путешествие в природный блок, Буэнос-Айрес дает больше времени на город и дополнительные поездки, а Сантьяго становится финальной точкой с видом на Анды и возможностью выбрать винодельческое или прибрежное продолжение.
+

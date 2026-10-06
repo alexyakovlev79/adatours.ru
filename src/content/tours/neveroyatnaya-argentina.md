@@ -85,7 +85,7 @@ itinerary:
     text: |-
       Регулярный трансфер в аэропорт и перелет Aerolineas Argentinas в Ушуайю. По прибытии встреча и регулярный трансфер в отель Fueguino.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg
+      - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
         alt: "Ушуайя"
         intendedSlot: "itinerary:day-3"
 
@@ -144,7 +144,7 @@ itinerary:
 
       По прибытии встреча и регулярный трансфер. Размещение, в зависимости от наличия, в Calafate Parque или Kosten Aike.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
         alt: "Патагония"
         intendedSlot: "itinerary:day-6"
 
@@ -297,3 +297,4 @@ themes: []
 ---
 
 В программу входят внутренние перелеты Aerolineas Argentinas, трансферы, основные экскурсии и входные билеты в национальные парки. В Ушуайе маршрут сочетает национальный парк, канал Бигль и полный день на внедорожниках. В Эль-Калафате основная экскурсия посвящена Перито-Морено, а свободный день можно дополнить одной из двух ледниковых навигаций. В Игуасу предусмотрены обе стороны водопадов и дополнительная лодочная программа.
+

@@ -86,7 +86,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
+  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
     alt: 'на фото: Эль Калафате'
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: Буэнос-Айрес
@@ -108,7 +108,7 @@ itinerary:
 
     После экскурсии возвращение в Калафате.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
+  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
     alt: 'на фото: Эль Калафате'
 - day: 5
   title: Калафате - Ушуайя
@@ -124,7 +124,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
+  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
     alt: 'на фото: Эль Калафате'
   - src: https://brasiltours.ru/image/ushuaia.png
     alt: Ушуайя
@@ -299,7 +299,7 @@ priceFrom: 3761
 currency: USD
 priceNote: $3761
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
+  src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
   alt: 'на фото: Эль Калафате'
 routeCountries:
 - country_argentina
@@ -331,3 +331,4 @@ themes: []
 Затем маршрут уходит на юг Аргентины. В Калафате вы отправитесь к Перито-Морено, а в Ушуайе увидите Национальный парк Огненная Земля. Дополнительно можно заказать поездку к колонии пингвинов на острове Мартильо.
 
 После Патагонии начинается тропическая часть. В Фоз-де-Игуасу предусмотрены экскурсии с аргентинской и бразильской сторон водопадов. Завершение путешествия проходит в Рио с Сахарной Головой, историческим центром и Корковадо.
+

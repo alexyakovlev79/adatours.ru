@@ -36,7 +36,7 @@ priceFrom: 5995
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
+  src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
   alt: "Патагония и Чилийские фьорды"
 gallery: []
 featured: false
@@ -55,7 +55,7 @@ itinerary:
       
       После обязательного инструктажа судно выходит в залив Корковадо и берет курс на юг.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
         alt: "Патагония и Чилийские фьорды"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -72,7 +72,7 @@ itinerary:
       
       По пути есть шанс увидеть дельфинов, китов, бакланов, морских львов и речных выдр.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg
+      - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
         alt: "Каналы и фьорды Патагонии"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -128,7 +128,7 @@ itinerary:
       
       В программе - бирюзовый лед, айсберги и заснеженные пики. В этих местах можно увидеть дельфинов, бакланов, кондоров и выдр.
     images:
-      - src: https://brasiltours.ru/image/ARG%20Patagonia%20Argentina.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-5-enhanced-20261006.webp
         alt: "Ледники национального парка Бернардо О’Хиггинс"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -210,3 +210,4 @@ themes: []
 
 
 Экспедиция начинается у причала для конкретного рейса. Посадка проходит с 15:00 до 16:00. В последний день высадка запланирована утром и завершается у причала для этого рейса.
+

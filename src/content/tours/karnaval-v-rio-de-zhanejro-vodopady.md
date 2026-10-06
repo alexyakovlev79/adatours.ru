@@ -102,7 +102,7 @@ itinerary:
 
     Внутренний перелет Рио-де-Жанейро - Игуасу оплачивается отдельно. Стоимость - от USD 250.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/henrique-felix-7hralhqan4s-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-6-enhanced-20261006.webp
     alt: Смотровые мостики над водопадами Игуасу в Аргентине и Бразилии
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-12.jpg
     alt: Полет на вертолете над Рио-де-Жанейро
@@ -155,7 +155,7 @@ itinerary:
 
     В памяти остаются не только главные достопримечательности, но и переходы между ними: теплый ветер у Копакабаны, вид на город с Урки, поезд через Тижуку, ночь среди барабанов, влажный воздух Игуасу и настилы, по которым подходишь к ревущей воде почти вплотную.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/henrique-felix-7hralhqan4s-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-6-enhanced-20261006.webp
     alt: Смотровые мостики над водопадами Игуасу в Аргентине и Бразилии
 included:
 - Проживание в выбранных отелях на базе завтраков.

@@ -40,7 +40,7 @@ itinerary:
 
     Для ужина рекомендован ресторан **Cipriani** в отеле, отмеченный звездой Michelin.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-16.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро, Бразилия'
 - day: 2
   title: Сахарная Голова, исторический центр и обед Fogo de Chao
@@ -61,7 +61,7 @@ itinerary:
 
     Для вечернего ужина можно выбрать **Al Mare** на набережной Копакабаны в отеле Fasano. Специализация ресторана - морепродукты.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/5.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: Полет на вертолете над Рио-де-Жанейро, вид на пляж Копакабана и Сахарную голову
 - day: 3
   title: Корковадо, Христос Искупитель и Confeitaria Colombo
@@ -135,7 +135,7 @@ itinerary:
       - **Satyricon**, Ipanema - морепродукты
       - **Aprazivel**, Santa Teresa - бразильская кухня и открытые террасы с видом на город
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-16.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро, Бразилия'
 - excursionRef: excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie
   places: []
@@ -164,9 +164,9 @@ itinerary:
 
     Для ужина подойдет ресторан **Itaipu** в Belmond Hotel das Cataratas с бразильской и европейской кухней.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/henrique-felix-7hralhqan4s-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-6-enhanced-20261006.webp
     alt: Водопады Игуасу с бразильской стороны, панорама каскадов и радуга в брызгах
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-16.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро, Бразилия'
 - day: 6
   title: Бразильская сторона Игуасу
@@ -191,7 +191,7 @@ itinerary:
 
     По желанию можно заказать видеозапись поездки.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/henrique-felix-7hralhqan4s-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-6-enhanced-20261006.webp
     alt: Водопады Игуасу с бразильской стороны, панорама каскадов и радуга в брызгах
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -215,9 +215,9 @@ itinerary:
 
     После экскурсии трансфер в аэропорт и перелет в Буэнос-Айрес. По прилете встреча и размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba12.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-10-enhanced-20261006.webp
     alt: 'На фото: столица Буэнос-Айрес, Аргентина'
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/henrique-felix-7hralhqan4s-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-6-enhanced-20261006.webp
     alt: Водопады Игуасу с бразильской стороны, панорама каскадов и радуга в брызгах
 - day: 8
   title: Буэнос-Айрес и танго-шоу
@@ -276,7 +276,7 @@ itinerary:
       - **Piegari**, Puerto Madero - итальянская, европейская и аргентинская кухня
       - **Crystal Bar**, Puerto Madero, 35-й этаж Alvear Icon - бар с видом на город
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba12.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-10-enhanced-20261006.webp
     alt: 'На фото: столица Буэнос-Айрес, Аргентина'
 - excursionRef: excursion_source_fiesta_gaucho
   places: []
@@ -317,7 +317,7 @@ priceFrom: 7873
 currency: USD
 priceNote: $7873
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/11-1.jpg
+  src: /media/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej/hero-enhanced-20261006.webp
   alt: 'На фото: люксовый отдых в Бразилии'
 routeCountries:
 - country_brazil

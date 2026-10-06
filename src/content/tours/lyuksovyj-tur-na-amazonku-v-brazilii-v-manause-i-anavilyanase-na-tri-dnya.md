@@ -65,9 +65,9 @@ itinerary:
 
     В первый день включен ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/1.jpg
+  - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-1-enhanced-20261006.webp
     alt: Mirante do Gavião лодж на Амазонке в Бразилии
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/su-san-lee-g3pyxo4a0yc-unsplash.jpg
+  - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/hero-enhanced-20261006.webp
     alt: Пальмовые листья - отдых в Амазонии (Манаус) в Бразилии
 - day: 2
   title: Anavilhanas, местные общины и джунгли
@@ -158,7 +158,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/su-san-lee-g3pyxo4a0yc-unsplash.jpg
+  - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/hero-enhanced-20261006.webp
     alt: Пальмовые листья - отдых в Амазонии (Манаус) в Бразилии
 included:
 - Индивидуальные экскурсии и трансферы по программе.
@@ -188,7 +188,7 @@ priceFrom: 4270
 currency: USD
 priceNote: $4270
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/su-san-lee-g3pyxo4a0yc-unsplash.jpg
+  src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/hero-enhanced-20261006.webp
   alt: Пальмовые листья - отдых в Амазонии (Манаус) в Бразилии
 routeCountries:
 - country_brazil

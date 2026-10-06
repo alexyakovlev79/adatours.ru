@@ -85,7 +85,7 @@ itinerary:
 
     Включено: 1 ночь в Hotel Tayka de Sal, частный транспорт 4x4, двуязычный гид на английском и испанском языках, входные билеты и трансферы по маршруту. Питание: обед и ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/trevor-mckinnon-y-z-ltvmjdg-unsplash-3.jpg
+  - src: /media/tours/prirodnye-chudesa-bolivii/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: солончак Уюни в Боливии'
 - day: 3
   title: Тахуа - пустыня Силоли
@@ -117,7 +117,7 @@ itinerary:
 
     Включено: 1 ночь в Jardines de Uyuni Hotel или отеле той же категории, частный транспорт 4x4, двуязычный гид, входные билеты. Питание: завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/trevor-mckinnon-y-z-ltvmjdg-unsplash-3.jpg
+  - src: /media/tours/prirodnye-chudesa-bolivii/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: солончак Уюни в Боливии'
 - day: 5
   title: Уюни - Ла-Пас - Рурренабак - Сан-Мигель-дель-Бала
@@ -137,7 +137,7 @@ itinerary:
   images:
   - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: город Ла Пас, столица Боливии'
-  - src: https://brasiltours.ru/image/countries/bolivia/trevor-mckinnon-y-z-ltvmjdg-unsplash-3.jpg
+  - src: /media/tours/prirodnye-chudesa-bolivii/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: солончак Уюни в Боливии'
 - day: 6
   title: Сан-Мигель-дель-Бала
@@ -235,7 +235,7 @@ priceFrom: 4728
 currency: USD
 priceNote: $4728
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/katharina-ernst-ezmpcfzmyrw-unsplash.jpg
+  src: /media/tours/prirodnye-chudesa-bolivii/hero-enhanced-20261006.webp
   alt: 'На фото: ламы в Боливии'
 routeCountries:
 - country_bolivia

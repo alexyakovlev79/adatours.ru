@@ -149,7 +149,7 @@ itinerary:
 
     2 дня у Игуасу дополняют друг друга. Бразильский берег нужен для общей панорамы, аргентинский для близкого контакта с водой. После первого дня вы уже знаете форму ущелья и расположение основных каскадов, поэтому на втором особенно заметно, насколько близко настилы подходят к реке и насколько по-разному воспринимается одно и то же место.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba12.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-10-enhanced-20261006.webp
     alt: Купол Дворца Конгресса в Буэнос-Айресе, 80-метровый зеленый купол и бронзовая квадрига
   - src: /media/tours/luxury-brazil-11d/gallery-1-src-enhanced-20261001.webp
     alt: Мощные водопады Игуасу в Бразилии и Аргентине, каскады и джунгли на границе
@@ -166,7 +166,7 @@ itinerary:
 
     Ла-Бока и Сан-Тельмо сохраняют связь с портовой историей города, тогда как Реколета выглядит намного спокойнее и параднее. Пуэрто-Мадеро, наоборот, показывает современный Буэнос-Айрес с новыми зданиями и набережными. Такой маршрут за несколько часов собирает очень разные районы, поэтому обзорная экскурсия дает хорошую основу для свободного дня.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba12.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-10-enhanced-20261006.webp
     alt: Купол Дворца Конгресса в Буэнос-Айресе, 80-метровый зеленый купол и бронзовая квадрига
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -201,7 +201,7 @@ itinerary:
 
     **Стоимость:** USD 250 с человека, обед включен.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba12.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-10-enhanced-20261006.webp
     alt: Купол Дворца Конгресса в Буэнос-Айресе, 80-метровый зеленый купол и бронзовая квадрига
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places: []
@@ -218,7 +218,7 @@ itinerary:
 
     За 10 дней маршрут успевает несколько раз полностью поменять обстановку. Рио останется в памяти океаном, видами с гор и ночным Самбадромом. Игуасу - водой, шумом и влажной одеждой у настилов. Буэнос-Айрес - старым портом, широкими проспектами и танго.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba12.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-10-enhanced-20261006.webp
     alt: Купол Дворца Конгресса в Буэнос-Айресе, 80-метровый зеленый купол и бронзовая квадрига
 included:
 - Проживание в выбранных отелях на базе завтраков.

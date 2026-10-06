@@ -123,7 +123,7 @@ itinerary:
     \ в отель.\n\nУжин включен.\n\n**Транспорт:** Toyota Land Cruiser 4x4.  \n**Максимальная вместимость:** 4 пассажира +\
     \ водитель + гид."
   images:
-  - src: https://brasiltours.ru/image/solar%20de%20uyuni.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-5-enhanced-20261006.webp
     alt: 'на фото: Солончак Уюни в Боливии'
   - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Ла-Пас, столица Боливии'
@@ -139,7 +139,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/solar%20de%20uyuni.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-5-enhanced-20261006.webp
     alt: 'на фото: Солончак Уюни в Боливии'
   - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Ла-Пас, столица Боливии'

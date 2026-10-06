@@ -241,7 +241,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/1.jpg
+  - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-1-enhanced-20261006.webp
     alt: Экотуры по Амазонке из Манауса, наблюдение за дикой природой и флора Бразилии
 - excursionRef: excursion_source_vstrecha_rek
   places: []
@@ -319,7 +319,7 @@ itinerary:
 
     После Рио, Игуасу и Амазонии эти 4 дня позволяют провести время без новых перелетов и переездов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/su-san-lee-g3pyxo4a0yc-unsplash.jpg
+  - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/hero-enhanced-20261006.webp
     alt: Джунгли Амазонии в Бразилии, тропический лес и дикая природа
 - day: 15
   title: Отдых в Nannai Muro Alto
@@ -337,7 +337,7 @@ itinerary:
 
     После Рио, Игуасу и Амазонии эти 4 дня позволяют провести время без новых перелетов и переездов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/1.jpg
+  - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-1-enhanced-20261006.webp
     alt: Экотуры по Амазонке из Манауса, наблюдение за дикой природой и флора Бразилии
 - day: 16
   title: Ресифи - Рио-де-Жанейро и международный вылет

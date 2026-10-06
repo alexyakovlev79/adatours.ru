@@ -205,7 +205,7 @@ itinerary:
 
     В назначенное время вы вернетесь на пароме в Буэнос-Айрес.
   images:
-  - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
     alt: 'На фото: город Монтевидео, Уругвай'
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, Буэнос -Айрес'

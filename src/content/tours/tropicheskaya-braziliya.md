@@ -33,7 +33,7 @@ itinerary:
 
     Первый день оставлен без обязательных экскурсий, чтобы после перелета спокойно познакомиться с городом у океана.
   images:
-  - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
+  - src: "/media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp"
     alt: Пляж Копокабана в Рио-де-Жанейро, Бразилия
 - day: 2
   title: Сахарная Голова и город
@@ -109,7 +109,7 @@ itinerary:
   images:
   - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: пляжный отдых на курорте Бузиос в Бразилии'
-  - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
+  - src: "/media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp"
     alt: Пляж Копокабана в Рио-де-Жанейро, Бразилия
 - day: 6
   title: Пляжный отдых в Бузиосе
@@ -229,7 +229,7 @@ itinerary:
   images:
   - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'На фото: пляжный отдых на курорте Бузиос в Бразилии'
-  - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
+  - src: "/media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp"
     alt: Пляж Копокабана в Рио-де-Жанейро, Бразилия
 included:
 - Проживание в отелях.

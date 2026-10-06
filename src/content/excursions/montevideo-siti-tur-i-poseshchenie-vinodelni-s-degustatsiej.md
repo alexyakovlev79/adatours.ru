@@ -18,7 +18,7 @@ priceFrom: 703
 currency: USD
 priceNote: "Основная стоимость — $703. Для группы из 2–4 человек в исходной программе отдельно указано $352 на человека."
 hero:
-  src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
+  src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
   alt: Монтевидео, Уругвай
 gallery:
   - src: https://brasiltours.ru/image/montevid11.png

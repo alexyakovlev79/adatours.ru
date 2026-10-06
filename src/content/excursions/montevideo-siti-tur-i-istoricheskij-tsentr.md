@@ -27,7 +27,7 @@ gallery:
     alt: Монтевидео и побережье Рио-де-ла-Плата
   - src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
     alt: Исторический центр Монтевидео
-  - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
     alt: Монтевидео, Уругвай
 route:
   - набережная Рамбла

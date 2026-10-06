@@ -23,7 +23,7 @@ hero:
 gallery:
   - src: https://brasiltours.ru/image/montevid11.png
     alt: Монтевидео, столица Уругвая
-  - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
     alt: Архитектура исторического центра Монтевидео
   - src: https://brasiltours.ru/image/montevideo3jpg.png
     alt: Улицы Монтевидео

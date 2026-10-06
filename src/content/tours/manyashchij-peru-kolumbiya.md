@@ -58,7 +58,7 @@ itinerary:
 
     Лима станет первой точкой большого маршрута и позже еще раз появится в программе между Перу и Колумбией. В первый день обязательных экскурсий нет, поэтому можно спокойно отдохнуть или выйти на короткую прогулку.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima-plaza-de-armas.png
+  - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp"
     alt: Лима
 - day: 2
   title: 'Лима: колониальный центр, Casa Aliaga и Музей золота'
@@ -175,7 +175,7 @@ itinerary:
   images:
   - src: /media/tours/peru-8d/itinerary/day-06-enhanced-20261001.webp
     alt: Озеро Титикака
-  - src: https://brasiltours.ru/image/countries/peru/lima-plaza-de-armas.png
+  - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp"
     alt: Лима
 - day: 8
   title: Лима - Богота

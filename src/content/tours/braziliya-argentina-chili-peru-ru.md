@@ -269,7 +269,7 @@ itinerary:
 
     Во второй половине дня предусмотрен обед, затем возвращение в Куско на поезде и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Machu%20Picchu.png
+  - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-13-enhanced-20261006.webp"
     alt: 'На фото: Вид сверху на Мачу-Пикчу, Перу'
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Вид на город Куско, Перу'
@@ -293,7 +293,7 @@ itinerary:
 
     После экскурсии трансфер в аэропорт и перелет в Лиму. По прибытии встреча и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima-plaza-de-armas.png
+  - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp"
     alt: 'На фото: Кафедральный собор Лимы, Перу'
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Вид на город Куско, Перу'
@@ -331,7 +331,7 @@ priceFrom: 6146
 currency: USD
 priceNote: $6146
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/red-bch.png
+  src: "/media/tours/braziliya-argentina-chili-peru-ru/hero-enhanced-20261006.webp"
   alt: 'На фото: Пляж в Рио-де-Жанейро'
 routeCountries:
 - country_brazil

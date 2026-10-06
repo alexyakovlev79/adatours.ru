@@ -143,9 +143,9 @@ itinerary:
 
     Обед на центральной площади не включен. После свободного времени трансфер в Монтевидео и размещение на 2 ночи.
   images:
-  - src: https://brasiltours.ru/image/URUGUAY%20-%20Colonia%20del%20Sacramento.jpg
+  - src: "/media/tours/stolitsy-latinskoj-ameriki/itinerary-day-7-enhanced-20261006.webp"
     alt: 'на фото: Колония-дель -Сакраменто'
-  - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
     alt: 'на фото: Монтевидео'
 - day: 8
   title: Монтевидео
@@ -160,7 +160,7 @@ itinerary:
 
     Во второй половине дня свободное время.
   images:
-  - src: https://brasiltours.ru/image/montevideo4.png
+  - src: "/media/tours/stolitsy-latinskoj-ameriki/itinerary-day-8-enhanced-20261006.webp"
     alt: 'на фото: Монтевидео'
 - day: 9
   title: Монтевидео - Пунта-дель-Эсте
@@ -169,9 +169,9 @@ itinerary:
   - Пунта дель Эсте
   text: Завтрак, трансфер в Пунта-дель-Эсте, прибытие и размещение на 4 ночи.
   images:
-  - src: https://brasiltours.ru/image/punta-del-este_1_orig.png
+  - src: "/media/tours/stolitsy-latinskoj-ameriki/itinerary-day-10-enhanced-20261006.webp"
     alt: 'на фото: Пунта-дель-Эсте'
-  - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
     alt: 'на фото: Монтевидео'
 - day: 10
   title: Пунта-дель-Эсте
@@ -179,21 +179,21 @@ itinerary:
   - Пунта дель Эсте
   text: Пляжный отдых. Питание - завтраки.
   images:
-  - src: https://brasiltours.ru/image/punta-del-este_1_orig.png
+  - src: "/media/tours/stolitsy-latinskoj-ameriki/itinerary-day-10-enhanced-20261006.webp"
     alt: 'на фото: Пунта-дель-Эсте'
 - day: 11
   title: Пунта-дель-Эсте
   places: []
   text: Пляжный отдых. Питание - завтраки.
   images:
-  - src: https://brasiltours.ru/image/punta-del-este_1_orig.png
+  - src: "/media/tours/stolitsy-latinskoj-ameriki/itinerary-day-10-enhanced-20261006.webp"
     alt: 'на фото: Пунта-дель-Эсте'
 - day: 12
   title: Пунта-дель-Эсте
   places: []
   text: Пляжный отдых. Питание - завтраки.
   images:
-  - src: https://brasiltours.ru/image/punta-del-este_1_orig.png
+  - src: "/media/tours/stolitsy-latinskoj-ameriki/itinerary-day-10-enhanced-20261006.webp"
     alt: 'на фото: Пунта-дель-Эсте'
 - day: 13
   title: Пунта-дель-Эсте - Буэнос-Айрес
@@ -204,7 +204,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Буэнос Айрес'
-  - src: https://brasiltours.ru/image/punta-del-este_1_orig.png
+  - src: "/media/tours/stolitsy-latinskoj-ameriki/itinerary-day-10-enhanced-20261006.webp"
     alt: 'на фото: Пунта-дель-Эсте'
 included:
 - 12 ночей в отелях выбранной категории на базе завтраков.

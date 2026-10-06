@@ -243,7 +243,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
+  - src: "/media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp"
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -281,7 +281,7 @@ itinerary:
 
     Со смотровой площадки видны мост Нитерой, залив Гуанабара, Ботанический сад, стадион Маракана, Сахарная Голова и большая часть города.
   images:
-  - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
+  - src: "/media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp"
     alt: Рио-де-Жанейро
 - day: 14
   title: 'Рио-де-Жанейро: свободный день и дополнительные программы'
@@ -316,7 +316,7 @@ itinerary:
   - Рио-де-Жанейро
   text: Завтрак в отеле. Трансфер с водителем в аэропорт Рио-де-Жанейро к международному рейсу.
   images:
-  - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
+  - src: "/media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp"
     alt: Рио-де-Жанейро
 included:
 - Проживание в отелях 4*, стандартная категория, с завтраком.

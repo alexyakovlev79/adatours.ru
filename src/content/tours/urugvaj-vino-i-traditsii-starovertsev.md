@@ -43,7 +43,7 @@ itinerary:
 
     Возвращение в отель. Ночь в Монтевидео.
   images:
-  - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
     alt: Монтевидео
 - day: 2
   title: Монтевидео и винодельня Спиноглио
@@ -59,7 +59,7 @@ itinerary:
 
     Возвращение в отель. Ночь в Монтевидео.
   images:
-  - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
     alt: Монтевидео
 - day: 3
   title: Монтевидео - Сан-Хавьер - Фрай-Бентос
@@ -76,7 +76,7 @@ itinerary:
 
     Ночь в Фрай-Бентосе.
   images:
-  - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
     alt: Монтевидео
 - day: 4
   title: Музей Англо и Колония-дель-Сакраменто
@@ -95,7 +95,7 @@ itinerary:
 
     После экскурсии - трансфер на причал Колонии и посадка на паром до Буэнос-Айреса. На этом включенные услуги заканчиваются.
   images:
-  - src: https://brasiltours.ru/image/URUGUAY%20-%20Colonia%20del%20Sacramento.jpg
+  - src: "/media/tours/stolitsy-latinskoj-ameriki/itinerary-day-7-enhanced-20261006.webp"
     alt: Колония дель Сакраменто
 included:
 - Проживание в отелях по указанным вариантам.

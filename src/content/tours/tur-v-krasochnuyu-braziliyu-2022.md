@@ -91,7 +91,7 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bird-park.jpg
+  - src: "/media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-5-enhanced-20261006.webp"
     alt: 'на фото: Парк птиц в Игуасу'
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -142,7 +142,7 @@ itinerary:
 
     Город сочетает пляжи и историческую застройку, сохранившую следы португальского и голландского периода. Здесь много ресторанов, кафе и клубов, поэтому вечер можно провести по своему вкусу.
   images:
-  - src: https://brasiltours.ru/image/bra-recife-1.jpg
+  - src: "/media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-9-enhanced-20261006.webp"
     alt: 'на фото: город Ресифе'
   - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: 'на фото: Сан Салвадор Бразилия'
@@ -162,7 +162,7 @@ itinerary:
 
     Возвращение в Ресифи.
   images:
-  - src: https://brasiltours.ru/image/bra-recife-1.jpg
+  - src: "/media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-9-enhanced-20261006.webp"
     alt: 'на фото: город Ресифе'
 - day: 10
   title: Ресифи - Порту-де-Галиньяс
@@ -176,7 +176,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'на фото:  город Порту де Галиньяс'
-  - src: https://brasiltours.ru/image/bra-recife-1.jpg
+  - src: "/media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-9-enhanced-20261006.webp"
     alt: 'на фото: город Ресифе'
 - day: 11
   title: Порту-де-Галиньяс
@@ -228,7 +228,7 @@ itinerary:
   - Порту-ди-Галиньяш
   text: В назначенное время трансфер в аэропорт Ресифи для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/bra-recife-1.jpg
+  - src: "/media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-9-enhanced-20261006.webp"
     alt: 'на фото: город Ресифе'
   - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'на фото:  город Порту де Галиньяс'

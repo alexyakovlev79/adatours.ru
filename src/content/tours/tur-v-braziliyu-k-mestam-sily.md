@@ -38,7 +38,7 @@ itinerary:
 
     Уже по дороге начинается знакомство с городом: зеленые горы, высокие пальмы и океан появляются между кварталами Рио. К вечеру на склонах и вдоль побережья зажигаются огни. После дороги можно просто отдохнуть, пройтись к пляжу или заглянуть в одно из кафе, где подают напитки из свежих тропических фруктов.
   images:
-  - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
+  - src: "/media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp"
     alt: 'На фото: Рио на закате'
 - day: 2
   title: Сахарная Голова и Рио-де-Жанейро
@@ -105,7 +105,7 @@ itinerary:
   images:
   - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Водопады Игуасу (Фоз Игуасу) в Аргентине и Бразилии'
-  - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
+  - src: "/media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp"
     alt: 'На фото: Рио на закате'
 - day: 6
   title: Висконде-де-Мауа, Маринга и Вила-да-Маромба

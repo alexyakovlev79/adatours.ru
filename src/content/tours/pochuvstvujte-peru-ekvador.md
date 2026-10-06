@@ -128,7 +128,7 @@ itinerary:
 
     Размещение в Belmond Palacio Nazarenas, Junior Suite, питание BB.
   images:
-  - src: https://brasiltours.ru/image/Machu%20Picchu.png
+  - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-13-enhanced-20261006.webp"
     alt: Мачу-Пикчу
 - day: 9
   title: Радужная гора Виникунка

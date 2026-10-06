@@ -197,7 +197,7 @@ itinerary:
 
     После экскурсии предусмотрен обед. Затем возвращение в Куско на поезде, встреча и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Machu%20Picchu.png
+  - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-13-enhanced-20261006.webp"
     alt: Мачу-Пикчу
 - day: 10
   title: Священная долина

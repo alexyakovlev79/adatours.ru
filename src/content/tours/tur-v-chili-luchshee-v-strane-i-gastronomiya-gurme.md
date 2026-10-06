@@ -103,7 +103,7 @@ itinerary:
 
     **Включено:** входные билеты в Чаксу и к высокогорным лагунам, обед.
   images:
-  - src: https://brasiltours.ru/image/san%20pedro%20do%20atacama.png
+  - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: Высокогорные лагуны Атакамы, фламинго, гастрономический ланч'
 - day: 4
   title: гейзеры Татио и возвращение в Сантьяго

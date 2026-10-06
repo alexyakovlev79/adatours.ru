@@ -146,7 +146,7 @@ itinerary:
 
     Гид покажет базовые приемы выживания в джунглях, объяснит, как отличать ядовитые растения от съедобных, и научит пользоваться традиционными ядовитыми стрелами.
   images:
-  - src: https://brasiltours.ru/image/MANAUS.png
+  - src: /media/tours/rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp
     alt: Манаус
 - day: 10
   title: Манаус - Сан-Луис

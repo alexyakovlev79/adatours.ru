@@ -103,7 +103,7 @@ itinerary:
 
     Возвращение в Сан-Педро-де-Атакама. Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/san%20pedro%20do%20atacama.png
+  - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/itinerary-day-4-enhanced-20261006.webp
     alt: Сан-Педро-де-Атакама
 - day: 5
   title: Гейзеры Татио - Мачука - Сантьяго

@@ -128,7 +128,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/riogid/buenosaires.png
+  - src: /media/tours/solntse-tango-vino-i-atakama/itinerary-day-8-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 7
   title: Буэнос-Айрес и танго-шоу
@@ -154,7 +154,7 @@ itinerary:
 
     Гаучо исторически вели кочевой образ жизни, затем многие осели и занялись скотоводством и фермерством. На ранчо показывают навыки, которые выросли из этой повседневной работы: управление лошадью, бросок лассо и болеадорас, обращение со скотом и приготовление мяса.
   images:
-  - src: https://brasiltours.ru/image/riogid/buenosaires.png
+  - src: /media/tours/solntse-tango-vino-i-atakama/itinerary-day-8-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 9
   title: Буэнос-Айрес - Сантьяго-де-Чили
@@ -165,7 +165,7 @@ itinerary:
   images:
   - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
-  - src: https://brasiltours.ru/image/riogid/buenosaires.png
+  - src: /media/tours/solntse-tango-vino-i-atakama/itinerary-day-8-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 10
   title: Сантьяго-де-Чили
@@ -210,7 +210,7 @@ itinerary:
 
     Долина Луны находится всего в нескольких километрах от Сан-Педро-де-Атакама, поэтому переход от небольшого поселка к почти безжизненному ландшафту происходит очень быстро. Острые скалы Кордильера-де-ла-Саль, сухие впадины и длинные тени к вечеру меняют форму и цвет, а за ними остается линия вулканов Анд.
   images:
-  - src: https://brasiltours.ru/image/san%20pedro%20de%20atacama.png
+  - src: /media/tours/solntse-tango-vino-i-atakama/itinerary-day-12-enhanced-20261006.webp
     alt: Сан-Педро-де-Атакама
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-13-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
@@ -233,7 +233,7 @@ itinerary:
 
     Затем поездка в Токонао с посещением церкви Сан-Лукас и башни Кампанарио. После экскурсии возвращение в Сан-Педро.
   images:
-  - src: https://brasiltours.ru/image/san%20pedro%20do%20atacama.png
+  - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/itinerary-day-4-enhanced-20261006.webp
     alt: Сан-Педро-де-Атакама
 - day: 14
   title: Гейзеры Эль-Татио - Калама - Сантьяго

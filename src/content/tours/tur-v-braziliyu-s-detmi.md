@@ -58,7 +58,7 @@ itinerary:
 
     После экскурсии возвращение в отель и отдых.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/o/corcovado_10.png
+  - src: /media/tours/tur-v-braziliyu-s-detmi/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: статуя Христа в Рио-де-Жанейро, Бразилия'
 - day: 4
   title: 'Рио-де-Жанейро: свободный день и дополнительные экскурсии'
@@ -91,7 +91,7 @@ itinerary:
 
     **Продолжительность:** 4 часа.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/img-7577.jpg
+  - src: /media/tours/tur-v-braziliyu-s-detmi/itinerary-day-12-images-1-enhanced-20261006.webp
     alt: 'На фото: семейный тур в Бразилию (отдых с детьми) - вид со смотровой площадки в Рио'
 - excursionRef: excursion_source_botanical_garden
   places: []
@@ -151,7 +151,7 @@ itinerary:
 
     Дорога проходит через зеленые пейзажи тропического побережья. По прибытии трансфер в отель и отдых.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос, Бразилия'
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу (Фоз Игуазу) в Аргентине и Бразилии'
@@ -166,7 +166,7 @@ itinerary:
 
     Обязательной экскурсионной программы на эти 4 дня нет, поэтому семья может сама выбирать темп отдыха и чередовать море, прогулки и водные развлечения.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос, Бразилия'
 - day: 9
   title: Бузиос
@@ -178,7 +178,7 @@ itinerary:
 
     Обязательной экскурсионной программы на эти 4 дня нет, поэтому семья может сама выбирать темп отдыха и чередовать море, прогулки и водные развлечения.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос, Бразилия'
 - day: 10
   title: Бузиос
@@ -190,7 +190,7 @@ itinerary:
 
     Обязательной экскурсионной программы на эти 4 дня нет, поэтому семья может сама выбирать темп отдыха и чередовать море, прогулки и водные развлечения.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос, Бразилия'
 - day: 11
   title: Бузиос
@@ -202,7 +202,7 @@ itinerary:
 
     Обязательной экскурсионной программы на эти 4 дня нет, поэтому семья может сама выбирать темп отдыха и чередовать море, прогулки и водные развлечения.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос, Бразилия'
 - day: 12
   title: Бузиос - Рио-де-Жанейро
@@ -211,9 +211,9 @@ itinerary:
   - Бузиос
   text: Завтрак в отеле. Выезд из Бузиоса и трансфер в аэропорт Рио-де-Жанейро для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос, Бразилия'
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/img-7577.jpg
+  - src: /media/tours/tur-v-braziliyu-s-detmi/itinerary-day-12-images-1-enhanced-20261006.webp
     alt: 'На фото: семейный тур в Бразилию (отдых с детьми) - вид со смотровой площадки в Рио'
 included:
 - Проживание в отелях на базе завтраков.

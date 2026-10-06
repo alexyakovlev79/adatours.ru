@@ -17,7 +17,7 @@ destination: destination_brazil_rio
 destinationName: Рио-де-Жанейро
 sourceSnapshot: https://drive.google.com/file/d/1oe_MGXzmP19QpDhd3_pXXXlyd4VVYqYw/view?usp=drivesdk
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/marakana-2.jpg
+  src: /media/excursions/ekskursiya-na-stadion-marakana/hero-enhanced-20261006.webp
   alt: Стадион Маракана
 themes: ["theme_culture","theme_family"]
 ---

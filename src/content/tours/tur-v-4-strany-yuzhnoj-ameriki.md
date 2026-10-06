@@ -297,7 +297,7 @@ itinerary:
 
     После экскурсии по Рио предусмотрен трансфер в Бузиос. Курорт расположен примерно в 2 часах езды от города. Дорога проходит через тропические пейзажи. По прибытии - трансфер в отель на побережье.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: Бузиос
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: 'На фото: город Рио- де-Жанейро в Бразилии'
@@ -328,7 +328,7 @@ itinerary:
 
     Эти 2 дня остаются свободными для отдыха на побережье. Можно выбрать разные пляжи полуострова, провести день у воды или добавить активность по настроению. После длинного маршрута через 4 страны Бузиос дает несколько дней без переездов и экскурсионной нагрузки.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: Бузиос
 - day: 17
   title: Бузиос - Рио-де-Жанейро

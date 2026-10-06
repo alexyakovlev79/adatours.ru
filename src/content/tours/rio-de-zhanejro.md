@@ -28,7 +28,7 @@ itinerary:
     \ и регистрация заезда.\n\nВ полдень - обед.  \nВ 02:00 - знакомство с местностью и подготовка снастей.  \nВ 03:00 - рыбалка.\
     \  \nВ 07:00 - ужин и свободное время."
   images:
-  - src: https://brasiltours.ru/image/MANAUS.png
+  - src: /media/tours/rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp
     alt: Манаус
 - day: 2
   title: День 2
@@ -43,7 +43,7 @@ itinerary:
   text: "В 07:00 - завтрак.  \nВ 08:30 - выписка из лоджа.  \nВ 09:00 - возвращение в Манаус.\n\nРасчетное время прибытия:\
     \ в 11:00 в отель и в 11:30 в аэропорт."
   images:
-  - src: https://brasiltours.ru/image/MANAUS.png
+  - src: /media/tours/rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp
     alt: Манаус
 included:
 - 'Все трансферы туда и обратно: аэропорт / порт, пересечение рек Негро и Солимоэнс на скоростном катере, речной трансфер
@@ -74,7 +74,7 @@ priceFrom: 850
 currency: USD
 priceNote: $850
 hero:
-  src: https://brasiltours.ru/image/fishing%201.png
+  src: /media/tours/rio-de-zhanejro/hero-enhanced-20261006.webp
   alt: Спортивная рыбалка – Pousada Mamori
 routeCountries:
 - country_brazil

@@ -77,7 +77,7 @@ itinerary:
 
     **Включено:** входной билет в Лунную долину и коктейль.
   images:
-  - src: https://brasiltours.ru/image/san%20pedro%20do%20atacama.png
+  - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: пустыня Сан Педро де Атакама в Чили'
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-13-enhanced-20261006.webp
     alt: 'На фото: столица Чили, Сантьяго-де-Чили'
@@ -102,7 +102,7 @@ itinerary:
 
     **Включено:** входные билеты в Чаксу и к высокогорным лагунам, обед.
   images:
-  - src: https://brasiltours.ru/image/san%20pedro%20do%20atacama.png
+  - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: пустыня Сан Педро де Атакама в Чили'
 - day: 4
   title: Гейзеры Татио и Мачука

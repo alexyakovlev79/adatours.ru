@@ -268,7 +268,7 @@ itinerary:
 
     Размещение в отеле на побережье. Остаток дня свободный.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии'
   - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'на фото: Центр города в Рио-де-Жанейро, Бразилия'
@@ -294,7 +294,7 @@ itinerary:
   - Бузиос
   text: Завтрак в отеле. Трансфер в аэропорт Рио-де-Жанейро для международного вылета. Окончание услуг.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии'
   - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: Канатная дорога в Рио-де-Жанейро, Бразилия'

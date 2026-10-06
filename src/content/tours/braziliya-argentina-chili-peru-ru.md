@@ -104,7 +104,7 @@ itinerary:
 
     Самый высокий каскад, «Глотка дьявола», достигает примерно 70 м. Помимо прогулочных дорожек, в районе водопадов доступны рафтинг и поездки на лодках.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguazu-adatours.jpg
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: Водопады Фоз ду Игуасу'
   - src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
     alt: 'На фото: Вид на гору Пан-ди-Асукар, Рио-де-Жанейро'
@@ -147,7 +147,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос-Айрес, Аргентине'
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguazu-adatours.jpg
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: Водопады Фоз ду Игуасу'
 - day: 7
   title: Буэнос-Айрес

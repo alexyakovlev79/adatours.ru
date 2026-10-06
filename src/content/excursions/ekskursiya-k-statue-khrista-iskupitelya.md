@@ -23,7 +23,7 @@ gallery:
     alt: Панорама Рио-де-Жанейро
   - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1-1920.jpg
     alt: Вид на Рио-де-Жанейро с высоты
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро и горы Тижуки
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/bra-rio-right.jpg
     alt: Панорамный вид на Рио-де-Жанейро

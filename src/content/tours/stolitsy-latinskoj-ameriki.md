@@ -53,7 +53,7 @@ itinerary:
 
     Затем маршрут подходит к району Урка и Сахарной Голове. С вершины открывается панорама Рио, его пляжей, парков и исторических районов.
   images:
-  - src: https://brasiltours.ru/image/rio-de-janeiro-aerial.png
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-4-images-1-enhanced-20261006.webp
     alt: на фото:Рио де Жанейро
 - day: 3
   title: Рио-де-Жанейро - Игуасу

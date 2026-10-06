@@ -21,7 +21,7 @@ hero:
 gallery:
   - src: "https://brasiltours.ru/image/Rio_de_Janeiro_from_Corcovado_mountain.png"
     alt: ""
-  - src: "https://brasiltours.ru/image/countries/brazil/rio.jpg"
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: ""
 route:
   - "Санта-Тереза"

@@ -192,7 +192,7 @@ itinerary:
     \ небольшие пляжи и спокойные участки прозрачной воды. На суше можно взять багги и проехать по полуострову, а вечером\
     \ выбрать ресторан, бар или просто гулять по городку у океана."
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/tadeu-jnr-wijh1xipfxc-unsplash.jpg
+  - src: /media/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios/itinerary-day-10-enhanced-20261006.webp
     alt: Закат в Бузиосе, лодки в гавани
 - day: 11
   title: Свободные дни в Бузиосе
@@ -204,7 +204,7 @@ itinerary:
     \ небольшие пляжи и спокойные участки прозрачной воды. На суше можно взять багги и проехать по полуострову, а вечером\
     \ выбрать ресторан, бар или просто гулять по городку у океана."
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/tadeu-jnr-wijh1xipfxc-unsplash.jpg
+  - src: /media/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios/itinerary-day-10-enhanced-20261006.webp
     alt: Закат в Бузиосе, лодки в гавани
 - excursionRef: excursion_buzios_coastal_boat_trip
   places: []
@@ -220,7 +220,7 @@ itinerary:
   images:
   - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Вертолетная экскурсия над Рио, Бразилия
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/tadeu-jnr-wijh1xipfxc-unsplash.jpg
+  - src: /media/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios/itinerary-day-10-enhanced-20261006.webp
     alt: Закат в Бузиосе, лодки в гавани
 included:
 - Проживание в отелях с завтраками.

@@ -17,7 +17,7 @@ priceFrom: 438
 currency: USD
 priceNote: "Основная стоимость — $438. Для 2 человек — $219 на человека, для 3 человек — $188 на человека, для 4 человек — $148 на человека."
 hero:
-  src: https://brasiltours.ru/image/cofee%20beans.png
+  src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
   alt: Кофейные зерна колумбийского кофе
 gallery:
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0159.jpg

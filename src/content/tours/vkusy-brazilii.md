@@ -33,7 +33,7 @@ itinerary:
 
     Рио живет рядом с океаном. Копакабана и Ипанема встречают широкими пляжами, черно-белой плиткой на набережных и кафе, которые работают до глубокой ночи. Здесь можно выпить холодную кокосовую воду и провести остаток дня у моря после перелета.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Сахарная Голова и старый Рио
@@ -48,7 +48,7 @@ itinerary:
 
     После спуска поездка продолжается в центральных районах старого Рио. Вы увидите старинные церкви, монастыри и колониальные здания. Если позволит время, программа включает Кафедральный собор Сан-Себастьян и лестницу Селарона.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: Корковадо и Христос Искупитель
@@ -73,9 +73,9 @@ itinerary:
 
     Илья-Гранде находится недалеко от Рио. На острове нет автомобилей. Здесь много пляжей, тропической зелени и мест для отдыха у воды, а лодки остаются одним из главных способов увидеть побережье.
   images:
-  - src: https://brasiltours.ru/image/Ilha%20Grande.png
+  - src: /media/tours/vkusy-brazilii/itinerary-day-4-enhanced-20261006.webp
     alt: Илья-Гранди
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: Морская прогулка по Илья-Гранде
@@ -88,7 +88,7 @@ itinerary:
 
     День почти полностью проходит на воде. После насыщенной программы Рио здесь нет городских экскурсий: главными становятся море, пляжи и небольшие бухты Илья-Гранде.
   images:
-  - src: https://brasiltours.ru/image/Ilha%20Grande.png
+  - src: /media/tours/vkusy-brazilii/itinerary-day-4-enhanced-20261006.webp
     alt: Илья-Гранди
 - day: 6
   title: Илья-Гранде - Парати
@@ -104,7 +104,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: Парати
-  - src: https://brasiltours.ru/image/Ilha%20Grande.png
+  - src: /media/tours/vkusy-brazilii/itinerary-day-4-enhanced-20261006.webp
     alt: Илья-Гранди
 - day: 7
   title: Исторический центр Парати
@@ -128,7 +128,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: Парати
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 included:
 - Проживание в отелях с завтраками
@@ -154,7 +154,7 @@ priceFrom: 3480
 currency: USD
 priceNote: $3480
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/tadeu-jnr-wijh1xipfxc-unsplash.jpg
+  src: /media/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios/itinerary-day-10-enhanced-20261006.webp
   alt: Вкусы Бразилии
 routeCountries:
 - country_brazil

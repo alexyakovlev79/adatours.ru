@@ -57,7 +57,7 @@ itinerary:
 
     Вечером предусмотрен ужин в Rio Scenarium, известном танцевальной программой.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: 'На фото: Статуя Христа Искупителя в Рио-де-Жанейро'
 - day: 3
   title: Конгресс, Сахарная Голова и обзорная экскурсия

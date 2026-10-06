@@ -396,7 +396,7 @@ priceFrom: 9235
 currency: USD
 priceNote: $9235
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
+  src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
   alt: Лучшее  Бразилии, Аргентины и Чили
 routeCountries:
 - country_brazil

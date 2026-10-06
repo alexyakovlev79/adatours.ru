@@ -47,7 +47,7 @@ itinerary:
 
     После экскурсии трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Рио-де-Жанейро - Корковадо и Христос-Искупитель
@@ -62,7 +62,7 @@ itinerary:
 
     Со смотровой площадки открывается панорама Рио и окрестностей: мост Нитерой, залив Гуанабара, Ботанический сад, стадион Маракана, Сахарная Голова и другие районы города.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: Рио-де-Жанейро - свободный день и дополнительные экскурсии
@@ -123,7 +123,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/rio-de-janeiro-aerial.png
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-4-images-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: Фос-ду-Игуасу - аргентинская сторона водопадов
@@ -215,7 +215,7 @@ itinerary:
 
       Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 8
   title: Висконди-де-Мауа
@@ -234,7 +234,7 @@ itinerary:
   - Висконди-де-Мауа
   text: После завтрака трансфер обратно в Рио-де-Жанейро к вылету домой.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 included:
 - отели по программе;
@@ -258,7 +258,7 @@ priceFrom: 4805
 currency: USD
 priceNote: $4805
 hero:
-  src: https://brasiltours.ru/image/cofee%20beans.png
+  src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
   alt: 'На фото: Бразильский кофе'
 routeCountries:
 - country_brazil

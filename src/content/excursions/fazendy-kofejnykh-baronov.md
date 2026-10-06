@@ -17,7 +17,7 @@ gallery:
     alt: ""
   - src: "https://brasiltours.ru/image/coffee.png"
     alt: ""
-  - src: "https://brasiltours.ru/image/cofee%20beans.png"
+  - src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
     alt: ""
   - src: "https://brasiltours.ru/image/coffee%20plant%20in%20costar.png"
     alt: ""

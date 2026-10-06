@@ -51,7 +51,7 @@ itinerary:
 
     После спуска знакомство с городом продолжается на автомобиле. Вы увидите кварталы с колониальной архитектурой и главные городские пейзажи. Если позволит время, можно посетить Кафедральный собор в Сан-Себастьяне и сделать фотографии на яркой лестнице Селарона.
   images:
-  - src: https://brasiltours.ru/image/rio-de-janeiro-aerial.png
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-4-images-1-enhanced-20261006.webp
     alt: 'На фото: Рио де Жанейро, Бразилия'
 - day: 3
   title: Рио-де-Жанейро - Игуасу, бразильская сторона
@@ -158,7 +158,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: 'На фото: город Парати в Бразилии'
-  - src: https://brasiltours.ru/image/rio-de-janeiro-aerial.png
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-4-images-1-enhanced-20261006.webp
     alt: 'На фото: Рио де Жанейро, Бразилия'
 included:
 - Проживание в отелях на базе завтраков.

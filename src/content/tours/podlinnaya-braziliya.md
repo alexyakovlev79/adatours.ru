@@ -48,7 +48,7 @@ itinerary:
 
     Экскурсия рассчитана примерно на 6 часов. После Корковадо предусмотрен обед в типичном бразильском ресторане, он включен в программу.
   images:
-  - src: https://brasiltours.ru/image/rio-de-janeiro-aerial.png
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-4-images-1-enhanced-20261006.webp
     alt: 'На фото: Вид с высоты птичьего полёта над Рио-де-Жанейро'
 - day: 3
   title: 'Рио-де-Жанейро: Сахарная голова'
@@ -183,7 +183,7 @@ itinerary:
   - Пуэрто Игуасу
   text: После завтрака трансфер в аэропорт и перелет в Рио-де-Жанейро. По прибытии вас встретит водитель и доставит в отель.
   images:
-  - src: https://brasiltours.ru/image/rio-de-janeiro-aerial.png
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-4-images-1-enhanced-20261006.webp
     alt: 'На фото: Вид с высоты птичьего полёта над Рио-де-Жанейро'
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'

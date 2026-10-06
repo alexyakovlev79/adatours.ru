@@ -140,7 +140,7 @@ itinerary:
 
     Затем прогулка по узким улицам с пастельными фасадами. В программу входит церковь Сан-Франсиску с барочным интерьером и позолотой и площадь Пелуринью, сердце старого города.
   images:
-  - src: https://brasiltours.ru/image/salvador%20de%20bahi2.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-7-enhanced-20261006.webp
     alt: Сальвадор
 - day: 8
   title: Сальвадор - Прайя-ду-Форте
@@ -166,7 +166,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/salvador%20de%20bahi2.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-7-enhanced-20261006.webp
     alt: Сальвадор
 - day: 10
   title: Бразильская сторона Игуасу
@@ -204,7 +204,7 @@ itinerary:
 
     По прибытии встреча с водителем и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/iguazu%20argentina%20side.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-12-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
   - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро

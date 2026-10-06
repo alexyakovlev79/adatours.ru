@@ -150,7 +150,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguazu-adatours.jpg
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-4-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
 - day: 7
   title: Фоз-ду-Игуасу
@@ -186,7 +186,7 @@ priceFrom: 2951
 currency: USD
 priceNote: $2951
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-1.jpg
+  src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-8-enhanced-20261006.webp
   alt: Важное  Бразилии
 routeCountries:
 - country_brazil

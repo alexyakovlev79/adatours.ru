@@ -60,6 +60,9 @@ const usedBackdropImages = new Set([
   pageHeroTour.data.hero.src,
   proofCoverTour.data.hero.src,
 ]);
+const countryBackdropExclusions = new Map([
+  ['country_chile', new Set(['tour_source_fordy_ognennoj_zemli'])],
+]);
 const countryBands = popularCountries.map(({ country, count }) => {
   let coverTour;
   for (let index = multiCountryTours.length - 1; index >= 0; index--) {
@@ -68,6 +71,7 @@ const countryBands = popularCountries.map(({ country, count }) => {
     if (!image
       || usedBackdropTourIds.has(candidate.data.id)
       || usedBackdropImages.has(image)
+      || countryBackdropExclusions.get(country.id)?.has(candidate.data.id)
       || !mainTourCountries(candidate.data).some((item) => item.id === country.id)) continue;
     coverTour = candidate;
     break;

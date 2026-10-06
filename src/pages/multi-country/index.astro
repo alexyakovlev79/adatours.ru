@@ -1,86 +1,185 @@
 ---
+import { createHash } from 'node:crypto';
+import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../../lib/archive.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
+import CatalogPagination from '../../components/catalog/CatalogPagination.astro';
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
+import { countLabel } from '../../lib/interest-model.mjs';
+import { paginateCatalog } from '../../lib/catalog-pagination';
+import { compareToursBySalesFit } from '../../lib/tour-ranking';
+import { countryPath, mainTourCountries, tourPath } from '../../lib/routes';
 import { withBase } from '../../lib/paths';
+
+const multiCountryTours = (await getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data)))
+  .filter((entry) => mainTourCountries(entry.data).length > 1)
+  .sort(compareToursBySalesFit);
+
+const catalogPages = paginateCatalog(multiCountryTours, '/multi-country/');
+const firstCatalogPage = catalogPages[0];
+const visibleTours = firstCatalogPage?.entries ?? [];
+const pagination = firstCatalogPage?.pagination;
+const catalogVersion = createHash('sha256')
+  .update(JSON.stringify(multiCountryTours.map((entry) => entry.data.id)))
+  .digest('hex')
+  .slice(0, 20);
+
+const countryCounts = new Map();
+for (const entry of multiCountryTours) {
+  for (const country of mainTourCountries(entry.data)) {
+    countryCounts.set(country.id, { country, count: (countryCounts.get(country.id)?.count ?? 0) + 1 });
+  }
+}
+const popularCountries = [...countryCounts.values()]
+  .sort((a, b) => b.count - a.count || a.country.name.localeCompare(b.country.name, 'ru'))
+  .slice(0, 5);
+
+const durations = multiCountryTours
+  .map((entry) => entry.data.durationDays)
+  .filter((value): value is number => typeof value === 'number' && Number.isFinite(value));
+const minDuration = durations.length ? Math.min(...durations) : undefined;
+const maxDuration = durations.length ? Math.max(...durations) : undefined;
+const durationValue = minDuration && maxDuration
+  ? minDuration === maxDuration ? countLabel(minDuration, ['день', 'дня', 'дней']) : `${minDuration}–${maxDuration} дней`
+  : 'Гибко';
+
+const hero = multiCountryTours[0]?.data.hero?.src ?? '/media/home/buenos-aires-enhanced-20260930.webp';
+const proofImage = multiCountryTours[1]?.data.hero?.src ?? '/media/home/patagonia-enhanced-20260930.webp';
+const absoluteUrl = (path: string) => new URL(withBase(path), Astro.site ?? 'https://adatours.ru/').toString();
+const listSchema = pagination ? {
+  '@type': 'ItemList',
+  '@id': `${absoluteUrl('/multi-country/')}#catalog`,
+  name: 'Multi-country туры по Латинской Америке',
+  numberOfItems: visibleTours.length,
+  itemListElement: visibleTours.map((entry, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: entry.data.title,
+    url: absoluteUrl(tourPath(entry.data)),
+  })),
+} : undefined;
 ---
 
-<BaseLayout leadTitle="Собрать маршрут по нескольким странам" leadEntityId="multi_country"
-  title="Multi-country туры по Латинской Америке"
-  description="Индивидуальные маршруты по нескольким странам Латинской Америки: Бразилия, Аргентина, Перу и другие сочетания с единой координацией."
+<BaseLayout
+  leadTitle="Собрать маршрут по нескольким странам"
+  leadEntityId="multi_country"
+  title="Туры по нескольким странам Латинской Америки"
+  description="Готовые и индивидуальные multi-country маршруты Ada Tours по Бразилии, Аргентине, Перу и другим странам Латинской Америки. Перелеты, трансферы, отели, гиды и экскурсии в одной программе."
+  canonical="/multi-country/"
+  image={hero}
+  breadcrumbs={[{ label: 'Multi-country', href: '/multi-country/' }]}
+  pageSchema={listSchema}
 >
   <Hero
     eyebrow="Multi-country"
-    title="Латинская Америка в одном путешествии"
-    intro="Бразилию, Аргентину, Перу и другие страны можно соединить в одну программу с согласованными перелетами, трансферами, отелями и гидами."
-    image="/media/home/buenos-aires-enhanced-20260930.webp"
-    ctaLabel="Собрать маршрут"
+    title="Несколько стран. Один маршрут по Латинской Америке"
+    intro="Выберите готовую программу по нескольким странам или возьмите ее за основу. Даты, длительность, отели и состав поездки можно адаптировать под вас."
+    image={hero}
+    ctaHref="#request"
+    ctaLabel="Собрать свой маршрут"
   />
 
   <EditorialStatement
-    eyebrow="Латинская Америка"
-    text="Чем больше стран, тем важнее точные стыковки и разумное время в каждой точке."
+    eyebrow="Готовые маршруты"
+    text="Начните с сильной основы, а дальше оставьте только те страны, города и впечатления, ради которых хочется лететь через океан."
   />
 
   <FactStrip
     wideFirst
     facts={[
-      { value: 'Бразилия', label: 'ключевое направление Ada Tours' },
-      { value: 'Аргентина', label: 'часть многих комбинированных маршрутов' },
-      { value: 'Перу', label: 'Анды, Куско и Мачу-Пикчу' },
-      { value: '1 маршрут', label: 'единая программа поездки' },
+      { value: String(multiCountryTours.length), label: countLabel(multiCountryTours.length, ['готовый маршрут', 'готовых маршрута', 'готовых маршрутов']) },
+      { value: String(countryCounts.size), label: 'стран в текущей подборке' },
+      { value: durationValue, label: 'длительность готовых программ' },
+      { value: 'Под вас', label: 'можно менять даты, отели и состав поездки' },
     ]}
   />
 
-  <EditorialProof
-    eyebrow="Популярное сочетание"
-    title="Бразилия + Аргентина + Перу"
-    text="Такой маршрут может соединить Рио и Игуасу, Буэнос-Айрес и Патагонию, Лиму, Куско и Мачу-Пикчу. Состав точек меняется под длительность, сезон и ваши приоритеты."
-    image="/media/home/patagonia-enhanced-20260930.webp"
-    facts={[
-      'Единая последовательность перелетов и наземных переездов',
-      'Размещение под реальное время прибытия и выезда',
-      'Локальные гиды и трансферы в каждой стране',
-      'Запас времени на сложные стыковки и изменения',
-    ]}
-  />
+  <section class="multi-tours section" aria-labelledby="multi-tours-title">
+    <div class="container multi-tours__head">
+      <p class="eyebrow">Выбрать путешествие</p>
+      <h2 id="multi-tours-title">Multi-country туры</h2>
+      <p>Первые 10 маршрутов собраны здесь. Дальше можно перейти по страницам каталога или подгрузить следующую десятку без потери текущего списка.</p>
+    </div>
+
+    {pagination && (
+      <div
+        data-catalog-root
+        data-catalog-key={pagination.rootPath}
+        data-catalog-version={catalogVersion}
+        data-catalog-page={pagination.currentPage}
+        data-catalog-from={pagination.from}
+        data-catalog-to={pagination.to}
+        data-catalog-total={pagination.totalItems}
+      >
+        <div id="catalog-items" data-catalog-items>
+          {visibleTours.map((entry, index) => {
+            const data = entry.data;
+            const countries = mainTourCountries(data).map((country) => country.name).join(' + ');
+            const meta = [
+              countries,
+              data.durationDays ? countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',
+              data.format,
+            ].filter(Boolean).join(' · ');
+            return (
+              <div data-catalog-item={data.id}>
+                <DestinationBand
+                  headingTag="h3"
+                  eyebrow={meta}
+                  title={data.title}
+                  text={data.lead}
+                  image={data.hero?.src}
+                  imageTextAlign={data.imageTextAlign}
+                  mediaStatus={data.hero?.status}
+                  replacementReason={data.hero?.replacementReason}
+                  href={tourPath(data)}
+                  align={index % 2 === 1 ? 'right' : 'left'}
+                />
+              </div>
+            );
+          })}
+        </div>
+        <CatalogPagination pagination={pagination} />
+      </div>
+    )}
+  </section>
 
   <EditorialProof
-    eyebrow="Координация"
-    title="Одна поездка, одна последовательность"
-    text="Перенос рейса, смена отеля или дополнительный день могут затронуть весь путь. Поэтому все подтверждения и изменения сводятся в одну программу."
-    image="/media/home/lencois-enhanced-20260930.webp"
+    eyebrow="Единая координация"
+    title="Сложный маршрут должен ощущаться как одна поездка"
+    text="Перелет между странами влияет на трансфер, заселение, экскурсии и следующий выезд. Поэтому весь путь собирается как единая последовательность, а изменения проходят через одну программу."
+    image={proofImage}
     facts={[
       'Международные и региональные перелеты',
-      'Наземные трансферы',
-      'Отели и экскурсионная программа',
-      'Багаж и время на стыковки',
+      'Трансферы и отели под реальное время прибытия',
+      'Локальные гиды и экскурсии в каждой стране',
+      'Запас времени на длинные и сложные стыковки',
     ]}
-    reverse
   />
 
   <ProcessSteps
-    eyebrow="Как собирается маршрут"
-    title="От первой посадки до возвращения домой"
+    eyebrow="Как собрать свой вариант"
+    title="От готового тура к вашей поездке"
     steps={[
       {
-        title: 'Каркас',
-        text: 'Фиксируем страны, обязательные места, даты и общую длительность.',
+        title: 'Выберите основу',
+        text: 'Отметьте маршрут, который ближе всего по странам, длительности и набору впечатлений.',
       },
       {
-        title: 'Стыковки',
-        text: 'Проверяем последовательность перелетов и реальное время между точками.',
+        title: 'Расставьте приоритеты',
+        text: 'Оставьте обязательные места и добавьте то, ради чего едете именно вы.',
       },
       {
-        title: 'Наземная часть',
-        text: 'Добавляем отели, трансферы, гидов, экскурсии и свободные дни.',
+        title: 'Соберем логистику',
+        text: 'Свяжем перелеты, трансферы, отели, гидов и экскурсии в рабочую последовательность.',
       },
       {
-        title: 'Подтверждение',
-        text: 'Все бронирования и изменения сводятся в одну программу поездки.',
+        title: 'Подтвердим программу',
+        text: 'Вы получите один маршрут со всеми ключевыми бронированиями и деталями поездки.',
       },
     ]}
     dark
@@ -88,18 +187,54 @@ import { withBase } from '../../lib/paths';
 
   <section class="multi-links section--tight">
     <div class="container multi-links__grid">
-      <p class="eyebrow">Продолжить</p>
-      <nav aria-label="Связанные разделы">
-        <a href={withBase('/brazil/')}>Бразилия <span aria-hidden="true">↗</span></a>
-        <a href={withBase('/tours/')}>Все туры <span aria-hidden="true">↗</span></a>
-        <a href={withBase('/dmc/')}>DMC для партнеров <span aria-hidden="true">↗</span></a>
+      <div>
+        <p class="eyebrow">Продолжить выбор</p>
+        <h2>Страны, которые чаще встречаются в multi-country маршрутах</h2>
+      </div>
+      <nav aria-label="Популярные страны в multi-country маршрутах">
+        {popularCountries.map(({ country, count }) => (
+          <a href={withBase(countryPath(country))}>
+            <span>{country.name}</span>
+            <small>{countLabel(count, ['маршрут', 'маршрута', 'маршрутов'])}</small>
+            <span aria-hidden="true">↗</span>
+          </a>
+        ))}
+        <a href={withBase('/tours/')}>
+          <span>Все туры Ada Tours</span>
+          <small>Полный каталог</small>
+          <span aria-hidden="true">↗</span>
+        </a>
       </nav>
     </div>
   </section>
-
 </BaseLayout>
 
+<script>
+  import '../../scripts/catalog-load-more';
+</script>
+
 <style>
+  .multi-tours {
+    padding-bottom: 0;
+  }
+
+  .multi-tours__head {
+    padding-bottom: clamp(44px, 7vw, 84px);
+  }
+
+  .multi-tours__head h2,
+  .multi-links h2 {
+    max-width: 980px;
+    margin: 12px 0 22px;
+  }
+
+  .multi-tours__head > p:last-child {
+    max-width: 760px;
+    margin: 0;
+    color: color-mix(in srgb, var(--color-ink) 72%, transparent);
+    font-size: var(--text-lg);
+  }
+
   .multi-links {
     border-top: 1px solid var(--color-line);
     border-bottom: 1px solid var(--color-line);
@@ -107,7 +242,7 @@ import { withBase } from '../../lib/paths';
 
   .multi-links__grid {
     display: grid;
-    grid-template-columns: .7fr 1.3fr;
+    grid-template-columns: .9fr 1.1fr;
     gap: clamp(40px, 8vw, 120px);
     align-items: start;
   }
@@ -118,18 +253,41 @@ import { withBase } from '../../lib/paths';
   }
 
   .multi-links nav a {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: baseline;
+    gap: 18px;
     padding: 22px 0;
     border-bottom: 1px solid var(--color-line);
     font-family: var(--font-display);
     font-size: var(--text-lg);
   }
 
+  .multi-links nav small {
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: .78rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
   @media (max-width: 760px) {
     .multi-links__grid {
       grid-template-columns: 1fr;
+    }
+
+    .multi-links nav a {
+      grid-template-columns: 1fr auto;
+    }
+
+    .multi-links nav small {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .multi-links nav a > span:last-child {
+      grid-column: 2;
+      grid-row: 1 / span 2;
     }
   }
 </style>

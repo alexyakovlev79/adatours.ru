@@ -1,0 +1,48 @@
+---
+import { createHash } from 'node:crypto';
+import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../../../lib/archive.mjs';
+import EntityCatalogLayout from '../../../layouts/EntityCatalogLayout.astro';
+import { paginateCatalog } from '../../../lib/catalog-pagination';
+import { compareToursBySalesFit } from '../../../lib/tour-ranking';
+import { mainTourCountries } from '../../../lib/routes';
+
+export async function getStaticPaths() {
+  const tours = (await getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data)))
+    .filter((entry) => mainTourCountries(entry.data).length > 1)
+    .sort(compareToursBySalesFit);
+  const pages = paginateCatalog(tours, '/multi-country/');
+  const catalogVersion = createHash('sha256')
+    .update(JSON.stringify(tours.map((entry) => entry.data.id)))
+    .digest('hex')
+    .slice(0, 20);
+  const hero = tours[0]?.data.hero?.src ?? '/media/home/buenos-aires-enhanced-20260930.webp';
+
+  return pages.slice(1).map((page) => ({
+    params: { page: String(page.pagination.currentPage) },
+    props: {
+      entries: page.entries,
+      pagination: page.pagination,
+      catalogVersion,
+      hero,
+    },
+  }));
+}
+
+const { entries, pagination, catalogVersion, hero } = Astro.props;
+---
+
+<EntityCatalogLayout
+  leadTitle="Собрать маршрут по нескольким странам"
+  leadEntityId="multi_country"
+  kind="tour"
+  entries={entries}
+  title="Multi-country туры по Латинской Америке"
+  description="Готовые маршруты Ada Tours по нескольким странам Латинской Америки. Выберите программу и адаптируйте даты, длительность, отели и состав поездки."
+  canonical={pagination.canonical}
+  breadcrumbs={[{ label: 'Multi-country', href: '/multi-country/' }]}
+  hero={hero}
+  pagination={pagination}
+  catalogVersion={catalogVersion}
+  variant="multi-country-tours"
+/>

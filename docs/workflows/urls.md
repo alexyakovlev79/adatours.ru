@@ -23,7 +23,8 @@
 | Туры с факультативным посещением места | `/<country-slug>/place/<destination-slug>/optional-tours/` |
 | Общий каталог туров | `/tours/` |
 | Туры одной основной страны | `/<country-slug>/tour/`, `/<country-slug>/tour/<tour-slug>/` |
-| Туры нескольких основных стран | `/multi-country/tour/`, `/multi-country/tour/<tour-slug>/` |
+| Multi-country хаб и каталог | `/multi-country/`, продолжения `/multi-country/page/<n>/` |
+| Туры нескольких основных стран | `/multi-country/tour/<tour-slug>/` |
 | Общий каталог экскурсий | `/excursions/` |
 | Экскурсии страны | `/<country-slug>/excursion/` |
 | Экскурсии места | `/<country-slug>/<destination-slug>/` |

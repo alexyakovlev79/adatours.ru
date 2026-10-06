@@ -200,13 +200,14 @@ export async function getStaticPaths() {
     }
   }
   const multiCountryTours = tours.filter((entry) => mainTourCountries(entry.data).length > 1);
-  if (multiCountryTours.length) add('/multi-country/tour/', {
-    mode: 'catalog', kind: 'tour', entries: multiCountryTours, canonical: '/multi-country/tour/',
-    title: 'Туры по нескольким странам',
-    description: 'Маршруты Ada Tours с путешествием по нескольким странам.',
-    breadcrumbs: [{ label: 'Туры', href: '/tours/' }, { label: 'Несколько стран', href: '/multi-country/tour/' }],
-    hero: '/media/catalog/tury/hero-enhanced-20260930.webp',
+  add('/multi-country/tour/', {
+    mode: 'redirect', to: '/multi-country/', title: 'Multi-country туры',
   });
+  for (const page of paginateCatalog(multiCountryTours, '/multi-country/').slice(1)) {
+    add(`/multi-country/tour/page/${page.pagination.currentPage}/`, {
+      mode: 'redirect', to: page.pagination.canonical, title: `Multi-country туры — страница ${page.pagination.currentPage}`,
+    });
+  }
   for (const { country, entries } of excursionCountries.values()) {
     entries.sort(compareExcursionsByPopularity(excursionTourCounts));
     const canonical = excursionCountryPath(country);

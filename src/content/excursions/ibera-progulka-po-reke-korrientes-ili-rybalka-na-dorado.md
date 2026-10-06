@@ -12,7 +12,7 @@ destination: destination_argentina_ibera
 destinationName: "Ибера"
 language: []
 hero:
-  src: https://brasiltours.ru/image/ibera-wetlands-argentina.png
+  src: /media/excursions/ibera-progulka-po-reke-korrientes-ili-rybalka-na-dorado/hero-enhanced-20261006.webp
   alt: "Водоемы заповедника Ибера"
 gallery: []
 route:
@@ -29,3 +29,4 @@ themes: ["theme_fishing","theme_wildlife"]
 ---
 
 По желанию и за дополнительную плату можно организовать прогулку по реке Корриентес или рыбалку на дорадо.
+

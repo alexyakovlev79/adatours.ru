@@ -21,7 +21,7 @@ hero:
 gallery:
   - src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp"
     alt: "На фото: Городской пейзаж Буэнос-Айреса"
-  - src: "https://brasiltours.ru/image/buenos-aires.png"
+  - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
     alt: "На фото: Архитектура Буэнос-Айреса, аргентина"
   - src: "https://brasiltours.ru/image/catalog/product/f/i/file_18_8.png"
     alt: "На фото: Площадь конгресса в Буэнос-Айресе"
@@ -80,4 +80,5 @@ themes: ["theme_culture"]
 Также Вы посетите элегантный квартал ла Реколетта со знаменитым кладбищем, церковью Эль Пилар в колониальном стиле и близлежащим культурным и коммерческим центром.
 
 В программу тура включено и посещение современных районов города: Пуэрто Мадеро и парков Лезама и имени 3 Февраля.
+
 

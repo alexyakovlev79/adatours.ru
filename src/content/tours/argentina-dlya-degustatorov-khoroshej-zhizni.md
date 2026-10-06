@@ -26,7 +26,7 @@ priceFrom: 2518
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/jeremy-stewardson-iiiy5yl-04-unsplash.jpg
+  src: /media/tours/argentina-dlya-degustatorov-khoroshej-zhizni/hero-enhanced-20261006.webp
   alt: "Уличное кафе в Буэнос-Айресе"
 gallery: []
 featured: false
@@ -59,7 +59,7 @@ itinerary:
       
       Буэнос-Айрес известен музеями, галереями, театрами и архитектурой, поэтому обзорная экскурсия дает только первое представление о городе.
     images:
-      - src: https://brasiltours.ru/image/buenos%20aires5.png
+      - src: /media/tours/argentina-dlya-degustatorov-khoroshej-zhizni/itinerary-day-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-2"
   - excursionRef: excursion_buenos_aires_tango_show_dinner
@@ -78,7 +78,7 @@ itinerary:
       
       В экскурсию входит традиционный аргентинский обед.
     images:
-      - src: https://brasiltours.ru/image/buenos-aires.png
+      - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -91,7 +91,7 @@ itinerary:
       
       Дополнительно можно выбрать одну из активностей: поездку в винную долину с дегустациями, верховую езду, рафтинг или треккинг в районе Аконкагуа, самой высокой горы Южного полушария. Такой день удобно настроить под собственные интересы: сделать его полностью гастрономическим или добавить больше движения и природы.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/rancho-gaucho11.png
+      - src: /media/tours/argentina-dlya-degustatorov-khoroshej-zhizni/itinerary-day-4-enhanced-20261006.webp
         alt: "Аргентинская эстансия и гаучо"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -117,7 +117,7 @@ itinerary:
       
       Дополнительно можно отправиться на винодельни другой долины с дегустацией в англоговорящей группе или выбрать другую активность: верховую езду, рафтинг либо поездку в каньон Атуэль.
     images:
-      - src: https://brasiltours.ru/image/Mendoza.png
+      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-4-enhanced-20261006.webp
         alt: "Винный регион Мендоса"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -164,4 +164,5 @@ themes: ["theme_culture"]
 Поездка подойдет тем, кому интересна гастрономическая сторона страны: аргентинское мясо, вино, традиционный обед на эстансии и дегустации. При этом программа остается полноценным путешествием, а не только гастрономическим туром: есть обзорная экскурсия по столице, свободные дни и выбор активностей в Мендосе.
 
 Буэнос-Айрес дает культурное начало маршруту: архитектура, старые кварталы, городская история и танго. Мендоса меняет настроение поездки. Здесь меньше плотной городской среды, больше открытого пространства, виноградников и близости Анд. В свободный день можно продолжить винную тему или, наоборот, выбрать активную программу и добавить к поездке рафтинг, верховую езду либо поездку в горы.
+
 

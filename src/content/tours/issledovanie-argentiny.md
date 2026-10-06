@@ -77,7 +77,7 @@ itinerary:
 
       Финальная часть экскурсии проходит в Палермо, большом зеленом районе Буэнос-Айреса, который часто называют легкими города. После программы - возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-puerto-madero.jpg
+      - src: /media/tours/issledovanie-argentiny/itinerary-day-2-enhanced-20261006.webp
         alt: "На фото: Вид на Пуэрто-Мадрин"
         intendedSlot: "itinerary:day-2"
 

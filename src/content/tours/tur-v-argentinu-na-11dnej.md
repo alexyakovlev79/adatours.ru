@@ -51,7 +51,7 @@ priceFrom: 3858
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/miriam-duran-1084491-unsplash.jpg
+  src: /media/tours/tur-v-argentinu-na-11dnej/hero-enhanced-20261006.webp
   alt: "Аргентина Делюкс"
 gallery: []
 featured: false

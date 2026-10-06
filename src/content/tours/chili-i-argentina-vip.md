@@ -466,7 +466,7 @@ itinerary:
 
     Билеты на паром включены.
   images:
-  - src: https://brasiltours.ru/image/buenos-aires.png
+  - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places: []

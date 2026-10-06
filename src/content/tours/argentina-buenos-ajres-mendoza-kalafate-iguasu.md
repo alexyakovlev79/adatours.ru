@@ -78,7 +78,7 @@ itinerary:
 
     Билеты на паром включены.
   images:
-  - src: https://brasiltours.ru/image/buenos-aires.png
+  - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places: []
@@ -100,7 +100,7 @@ itinerary:
 
     Продолжительность около 3 часов.
   images:
-  - src: https://brasiltours.ru/image/Mendoza.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-4-enhanced-20261006.webp
     alt: 'на фото: винный регион Мендоса (Мендоза) в Аргентине'
   - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
@@ -226,7 +226,7 @@ itinerary:
   - Буэнос-Айрес
   text: Завтрак в отеле. В назначенное время трансфер в аэропорт Буэнос-Айреса для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/buenos-aires.png
+  - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
 included:
 - Размещение в отелях 4* на базе завтраков.

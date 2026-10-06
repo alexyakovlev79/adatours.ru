@@ -224,7 +224,7 @@ itinerary:
     text: |-
       Завтрак в отеле. В назначенное время трансфер в аэропорт Буэнос-Айреса.
     images:
-      - src: https://brasiltours.ru/image/buenos-aires.png
+      - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
         alt: "на фото: столица Аргентины, город Буэнос Айрес"
         intendedSlot: "itinerary:day-10"
 

@@ -32,7 +32,7 @@ priceFrom: 3270
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/ibera-wetlands-argentina.png
+  src: /media/excursions/ibera-progulka-po-reke-korrientes-ili-rybalka-na-dorado/hero-enhanced-20261006.webp
   alt: "Болота и лагуны заповедника Ибера"
 gallery: []
 featured: false
@@ -76,7 +76,7 @@ itinerary:
       
       **Продолжительность экскурсии:** 4 часа.
     images:
-      - src: https://brasiltours.ru/image/buenos-aires.png
+      - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -189,7 +189,7 @@ itinerary:
       
       **Продолжительность:** весь день.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-puerto-madero.jpg
+      - src: /media/tours/issledovanie-argentiny/itinerary-day-2-enhanced-20261006.webp
         alt: "Полуостров Вальдес"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -227,7 +227,7 @@ itinerary:
       
       После длинного переезда можно разместиться в лодже и начать знакомство с природой Иберы уже рядом с местом проживания.
     images:
-      - src: https://brasiltours.ru/image/ibera1.png
+      - src: /media/tours/tur-v-argentinu-na-dikuyu-prirodu/itinerary-day-5-enhanced-20261006.webp
         alt: "Заповедник Ибера"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -252,7 +252,7 @@ itinerary:
       
       **Прогулка на катере.** Днем больше возможностей увидеть животных и сфотографировать пейзажи. Можно также устроить ночную прогулку перед ужином: над водой видны звезды, а в темноте иногда отражаются глаза аллигаторов.
     images:
-      - src: https://brasiltours.ru/image/ibera-wetlands-argentina.png
+      - src: /media/excursions/ibera-progulka-po-reke-korrientes-ili-rybalka-na-dorado/hero-enhanced-20261006.webp
         alt: "Болота и лагуны Иберы"
         intendedSlot: "itinerary:day-6"
   - excursionRef: excursion_ibera_corrientes_river_or_dorado_fishing
@@ -276,7 +276,7 @@ itinerary:
       
       За несколько дней в заповеднике появляется возможность увидеть разные состояния природы: раннее утро, дневную жару и вечер над водоемами. Именно здесь маршрут сильнее всего отличается от обычной экскурсионной поездки по Аргентине.
     images:
-      - src: https://brasiltours.ru/image/Argentina.jpg
+      - src: /media/tours/tur-v-argentinu-na-dikuyu-prirodu/itinerary-day-7-enhanced-20261006.webp
         alt: "Дикая природа Иберы"
         intendedSlot: "itinerary:day-7"
   - day: 8

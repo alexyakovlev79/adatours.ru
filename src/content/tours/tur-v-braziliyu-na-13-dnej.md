@@ -55,7 +55,7 @@ itinerary:
 
     На пляжах работают кафе с напитками из свежих фруктов. После размещения свободное время.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/2/0/2015-02-02_134748_2_3.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-1-enhanced-20261006.webp
     alt: На фото:Рио
 - day: 2
   title: Сахарная Голова и обзорная экскурсия по Рио
@@ -70,7 +70,7 @@ itinerary:
 
     После спуска начинается обзорная экскурсия по Рио. Вы проедете по центральным районам, увидите здания колониального периода. Возможно посещение кафедрального собора Сан-Себастьян и остановка у лестницы Селарона.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/2/0/2015-02-05_140921_6.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: город Рио-де-Жанейро в Бразилии'
 - day: 3
   title: Корковадо и статуя Христа
@@ -105,7 +105,7 @@ itinerary:
   images:
   - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: водопады Игуасу (Фоз Игуазу) в Бразилии и Аргентине'
-  - src: https://brasiltours.ru/image/catalog/product/2/0/2015-02-02_134748_2_3.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-1-enhanced-20261006.webp
     alt: На фото:Рио
 - day: 5
   title: Бразильская сторона водопадов Игуасу
@@ -154,7 +154,7 @@ itinerary:
   images:
   - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: заповедник Пантанал в Бразилии'
-  - src: https://brasiltours.ru/image/macuca%20safari%20%20iguacu.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: 'На фото: водное сафари и водопады Игуасу (Фоз Игуазу) в Бразилии и Аргентине'
 - day: 7
   title: Пантанал
@@ -173,7 +173,7 @@ itinerary:
 
     Обед и ужин включены.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/p/a/pantanal_1.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-7-enhanced-20261006.webp
     alt: 'На фото: заповедник Пантанал в Бразилии'
 - day: 8
   title: Пантанал - Бонито
@@ -195,7 +195,7 @@ itinerary:
 
     Прибытие в Бонито и размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Bonito%201%20(1).png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-8-enhanced-20261006.webp
     alt: 'На фото: подземная пещера в Бонито Бразилия'
   - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: заповедник Пантанал в Бразилии'
@@ -211,7 +211,7 @@ itinerary:
 
     Пещера интересна и ученым. Во время экспедиции 1992 года здесь обнаружили останки гигантского ленивца и саблезубого тигра.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Bonito.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: На фото:Бонито
 - day: 10
   title: Снорклинг на Рио-да-Прата
@@ -236,7 +236,7 @@ itinerary:
 
     Ежедневно эту экскурсию могут пройти только 2 группы по 8 человек.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/2/0/2015-02-05_140921_6.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: город Рио-де-Жанейро в Бразилии'
 - excursionRef: excursion_brazil_bonito_abismo_anhumas
   places: []
@@ -258,7 +258,7 @@ itinerary:
   images:
   - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: пляжи в Бузиос Бразилия'
-  - src: https://brasiltours.ru/image/Bonito.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: подземная пещера в Бонито Бразилия'
 - day: 12
   title: Бузиос
@@ -283,7 +283,7 @@ itinerary:
   images:
   - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: пляжи в Бузиос Бразилия'
-  - src: https://brasiltours.ru/image/catalog/product/2/0/2015-02-02_134748_2_3.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-1-enhanced-20261006.webp
     alt: На фото:Рио
 included:
 - Проживание в отелях категории 4*.
@@ -307,7 +307,7 @@ priceFrom: 6326
 currency: USD
 priceNote: $6326
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/papagayo-huge-for-site.jpg
+  src: /media/tours/tur-v-braziliyu-na-13-dnej/hero-enhanced-20261006.webp
   alt: 'На фото: попугай из Бразиии'
 routeCountries:
 - country_brazil

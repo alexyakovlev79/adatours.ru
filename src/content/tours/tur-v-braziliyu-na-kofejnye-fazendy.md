@@ -36,7 +36,7 @@ itinerary:
 
     Вечером поездка продолжается по Рио. Если останется время, можно посетить Кафедральный собор в Сан-Себастьяне и сделать фотографии на лестнице Селарона.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-10.jpg
+  - src: /media/tours/tur-v-braziliyu-na-kofejnye-fazendy/itinerary-day-1-enhanced-20261006.webp
     alt: Смотровая площадка Рио-де-Жанейро, Бразилия
 - day: 2
   title: Исторический центр Рио и Христос Искупитель
@@ -162,7 +162,7 @@ itinerary:
 
     После экскурсии возвращение в Рио. Поездка в Кофейную долину сильно отличается от предыдущих дней: здесь нет городских смотровых площадок или огромных потоков туристов у водопадов. Вместо этого день проходит среди сельских дорог, исторических поместий и плантаций. Старые фазенды помогают связать чашку бразильского кофе с конкретным местом, хозяйством и историей страны.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-10.jpg
+  - src: /media/tours/tur-v-braziliyu-na-kofejnye-fazendy/itinerary-day-1-enhanced-20261006.webp
     alt: Смотровая площадка Рио-де-Жанейро, Бразилия
 - day: 8
   title: Рио-де-Жанейро, вылет домой
@@ -196,7 +196,7 @@ priceFrom: 3590
 currency: USD
 priceNote: $3590
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/clint-mckoy-h28p96icizo-unsplash.jpg
+  src: /media/tours/tur-v-braziliyu-na-kofejnye-fazendy/hero-enhanced-20261006.webp
   alt: Кофейные плантации Висконди-ди-Мауа, Бразилия
 routeCountries:
 - country_brazil

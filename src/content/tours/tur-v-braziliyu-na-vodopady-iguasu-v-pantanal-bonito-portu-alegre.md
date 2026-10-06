@@ -122,7 +122,7 @@ itinerary:
 
     Также в Cabanas предлагается канопи-тур: путь над верхушками деревьев с последовательным прохождением препятствий.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Bonito.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: На фото:Бонито
   - src: https://brasiltours.ru/image/countries/brazil/snorcling.jpg
     alt: На фото:снорклинг в реке Рио Сукури
@@ -138,7 +138,7 @@ itinerary:
 
     Посещение строго ограничено: в день сюда допускаются только 2 группы по 8 человек.
   images:
-  - src: https://brasiltours.ru/image/Bonito.png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: пещера в Бонито, Бразилия'
 - day: 8
   title: Бонито - Игуасу

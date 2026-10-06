@@ -14,7 +14,7 @@ format: "Урок серфинга"
 language:
   - "Английский"
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/bra-rio-copacabana.jpg"
+  src: "/media/excursions/urok-serfinga-rio-de-zhanejro/hero-enhanced-20261006.webp"
   alt: "Урок серфинга Рио -де- Жанейро"
 gallery:
   - src: "https://brasiltours.ru/image/countries/brazil/img-20211017-wa0003.jpg"

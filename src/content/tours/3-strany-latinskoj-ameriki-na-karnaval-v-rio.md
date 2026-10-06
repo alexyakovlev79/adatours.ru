@@ -61,7 +61,7 @@ itinerary:
 
     Из-за карнавальной загруженности города и перекрытий улиц маршрут экскурсии может меняться.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-234.jpg
+  - src: "/media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-2-enhanced-20261006.webp"
     alt: Фуникулер на Сахарную Голову в Рио-де-Жанейро
 - day: 3
   title: Свободный день и Парад Чемпионов на Самбадроме

@@ -47,7 +47,7 @@ itinerary:
 
     Размещение и отдых после перелета.
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'На фото: город Лима, Перу'
 - day: 2
   title: 'Лима: исторический центр, Мирафлорес и музей Ларко'
@@ -149,7 +149,7 @@ itinerary:
 
     В Лиме вас встретит русскоговорящий гид и отвезет в отель.
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'На фото: город Лима, Перу'
   - src: https://brasiltours.ru/image/countries/peru/puno.png
     alt: 'На фото: Озеро Титикака и плавучие острова Урос  в Перу'
@@ -270,7 +270,7 @@ itinerary:
 
     В течение дня можно попробовать кайпиринью, пообедать в одном из местных ресторанов или провести несколько часов у океана без программы.
   images:
-  - src: https://brasiltours.ru/image/_Buzios_2.png
+  - src: "/media/tours/tropicheskaya-braziliya/itinerary-day-7-enhanced-20261006.webp"
     alt: 'На фото: пляжи курорта Бузиос, Бразилия'
 - day: 13
   title: Бузиос - аэропорт

@@ -41,7 +41,7 @@ itinerary:
 
     Этот первый день нужен без плотной программы: можно спокойно выйти к океану, пройтись по Копакабане и привыкнуть к городу перед двумя насыщенными экскурсионными днями.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-copacabana.jpg
+  - src: "/media/excursions/urok-serfinga-rio-de-zhanejro/hero-enhanced-20261006.webp"
     alt: 'На фото: пляж Ипанема в Рио-де-Жанейро'
 - day: 2
   title: Корковаду и Христос-Искупитель
@@ -98,7 +98,7 @@ itinerary:
 
     После лодочной части вы продолжите путь на автобусе в Парати.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/angra-dos-reis/39150559340-6d790e52ba-o-easy-resize-com.jpg
+  - src: "/media/tours/brazilskaya-mechta/itinerary-day-4-enhanced-20261006.webp"
     alt: 'На фото: Катера у берега в Ангра-дус-Рейс'
 - day: 5
   title: Парати и джип-тур по Серра-да-Бокайна
@@ -172,7 +172,7 @@ priceFrom: 1615
 currency: USD
 priceNote: $1615
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/angra-dos-reis/guilherme-bustamante-qszvoylthc4-1920.jpg
+  src: "/media/tours/brazilskaya-mechta/hero-enhanced-20261006.webp"
   alt: 'На фото: Катер в море у берегов Ангра-дус-Рейс'
 routeCountries:
 - country_brazil

@@ -149,7 +149,7 @@ itinerary:
 
     По воде вы отправитесь в Eco Lodge Evolution, расположенный в джунглях. Это начало амазонской части маршрута, рассчитанной на близкое знакомство с лесом и жизнью у реки. После Рио и Игуасу здесь полностью меняется темп: вместо городских трансферов и смотровых площадок основным транспортом становятся лодки и каноэ, а экскурсии проходят среди леса и небольших поселений.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Amazonia%202.png
+  - src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-7-enhanced-20261006.webp"
     alt: 'на фото: Амазонка'
   - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
@@ -189,7 +189,7 @@ itinerary:
   images:
   - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
-  - src: https://brasiltours.ru/image/BRA%20Amazonia%202.png
+  - src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-7-enhanced-20261006.webp"
     alt: 'на фото: Амазонка'
 - excursionRef: excursion_source_vstrecha_rek
   places: []

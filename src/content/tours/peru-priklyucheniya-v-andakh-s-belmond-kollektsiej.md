@@ -40,7 +40,7 @@ itinerary:
 
     Вечером запланирован романтический ужин в ресторане Casa Moreyra знаменитого шеф-повара Гастона Акурио. Ресторан находится в старом доме поместья Сан-Исидро. Гастон Акурио стал одним из людей, благодаря которым перуанская кухня получила международную известность.
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'На фото: столица Перу, город Лима'
 - day: 2
   title: Куско, столица империи инков
@@ -97,7 +97,7 @@ itinerary:
   - Лима
   text: Трансфер в аэропорт. Вылет в Лиму и далее домой.
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'На фото: столица Перу, город Лима'
 included:
 - Индивидуальные трансферы из аэропорта в отели.

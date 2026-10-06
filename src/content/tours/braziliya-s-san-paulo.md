@@ -273,7 +273,7 @@ priceFrom: 4323
 currency: USD
 priceNote: $4323
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/bruno-thethe-nxkink7hhok-unsplash.jpg
+  src: "/media/tours/braziliya-s-san-paulo/hero-enhanced-20261006.webp"
   alt: 'На фото: Мост Октавио Фриас де Оливейра, Сан-Паулу'
 routeCountries:
 - country_brazil

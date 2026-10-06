@@ -52,7 +52,7 @@ itinerary:
 
     Размещение в Belmond Miraflores Park, категория Ocean View Junior Suite, питание BB. Ночь в Лиме.
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: Лима
 - day: 2
   title: Лима

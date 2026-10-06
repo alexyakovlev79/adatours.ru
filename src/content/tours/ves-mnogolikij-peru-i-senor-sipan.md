@@ -61,7 +61,7 @@ itinerary:
 
     Лима расположена у Тихого океана. Здесь колониальная архитектура соседствует с памятниками доинкских культур. После перелета экскурсионной программы нет, поэтому первый день можно оставить для отдыха и короткой самостоятельной прогулки.
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'на фото: Тихоокеанское побережье Лимы в Перу'
 - day: 2
   title: Лима
@@ -306,7 +306,7 @@ itinerary:
 
     По желанию
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'на фото: Тихоокеанское побережье Лимы в Перу'
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []

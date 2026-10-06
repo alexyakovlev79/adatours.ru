@@ -184,7 +184,7 @@ priceFrom: 3000
 currency: USD
 priceNote: $3000
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/visconde-de-maua.jpg
+  src: "/media/tours/tur-v-braziliyu-k-mestam-sily/hero-enhanced-20261006.webp"
   alt: 'На фото: регион Висконде де Мауа в Бразилии (Кофейный регион)'
 routeCountries:
 - country_brazil

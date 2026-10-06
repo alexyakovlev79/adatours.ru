@@ -60,7 +60,7 @@ itinerary:
 
     Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'на фото: Лима'
 - day: 3
   title: Лима - Паракас - Ика
@@ -339,7 +339,7 @@ itinerary:
 
     По прибытии встреча с водителем и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'на фото: Лима'
   - src: https://brasiltours.ru/image/puerto%20maldonado%20peru.jpg
     alt: 'на фото: Пуэрто Мальдонадо'
@@ -360,7 +360,7 @@ itinerary:
 
     Обратный рейс домой.
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'на фото: Лима'
 included:
 - Проживание в отелях 4 звезды с завтраками.

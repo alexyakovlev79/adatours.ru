@@ -53,7 +53,7 @@ itinerary:
 
     Экскурсионный день завершается в музее Ларко. Здесь собрана богатая коллекция золотых и керамических изделий, связанных с древними культурами Перу. После осмотра залов и галерей - возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/Lima.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: Лима
 - day: 3
   title: Лима - Куско

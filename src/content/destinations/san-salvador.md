@@ -21,15 +21,15 @@ gallery:
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
   - src: /media/destinations/san-salvador/gallery-3-enhanced-20261006.webp
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN22333_10.jpg
+  - src: /media/destinations/san-salvador/gallery-4-enhanced-20261006.webp
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN22332_13.jpg
+  - src: /media/destinations/san-salvador/gallery-5-enhanced-20261006.webp
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN22332_16.jpg
+  - src: /media/destinations/san-salvador/gallery-6-enhanced-20261006.webp
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN22333_14.jpg
+  - src: /media/destinations/san-salvador/gallery-7-enhanced-20261006.webp
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN22468_45.jpg
+  - src: /media/destinations/san-salvador/gallery-8-enhanced-20261006.webp
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
 relatedDestinations: []
 featuredTours: []

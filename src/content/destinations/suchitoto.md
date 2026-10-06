@@ -14,7 +14,7 @@ hero:
   src: /media/countries/el-salvador/featureBands-2-enhanced-20261002.webp
   alt: "На фото: город Сучитото в Эль-Сальвадоре"
 gallery:
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN17640_18.jpg
+  - src: /media/destinations/suchitoto/featureBands-1-enhanced-20261006.webp
     alt: "На фото: город Сучитото в Эль-Сальвадоре"
   - src: https://brasiltours.ru/image/catalog/category/S/u/Suchitoto41.jpg
     alt: "На фото: город Сучитото в Эль-Сальвадоре"
@@ -37,7 +37,7 @@ featureBands:
     title: Колониальные дома и мощеные улицы
     text: >-
       Сучитото сохранил исторический облик: вдоль мощеных улиц стоят дома колониальной эпохи. Город считается одним из самых красивых в Эль-Сальвадоре.
-    image: https://brasiltours.ru/image/catalog/category/B/N/BN17640_18.jpg
+    image: /media/destinations/suchitoto/featureBands-1-enhanced-20261006.webp
   - eyebrow: Озеро и культура
     title: Лаго-де-Сучитлан и городские фестивали
     text: >-
@@ -54,3 +54,4 @@ themes: ["theme_culture"]
 Исторический облик Сучитото сохранился в колониальной линии домов и мощеных улицах. Период расцвета города связан с торговлей индиго.
 
 Сегодня в Сучитото проходят красочные культурные фестивали. Озеро, историческая застройка и окружающая сельская местность делают город самостоятельным направлением для поездки по Эль-Сальвадору.
+

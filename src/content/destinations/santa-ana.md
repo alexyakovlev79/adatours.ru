@@ -15,13 +15,13 @@ hero:
   src: /media/countries/el-salvador/featureBands-1-enhanced-20261002.webp
   alt: "На фото: руины Тасумаля в Эль-Сальвадоре (Чальчуапа)"
 gallery:
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN22644_2.jpg
+  - src: /media/destinations/santa-ana/featureBands-1-enhanced-20261006.webp
     alt: "На фото: Санта Ана в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN17640_14.jpg
+  - src: /media/destinations/santa-ana/gallery-2-enhanced-20261006.webp
     alt: "На фото: Санта Ана в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/S/a/SantaAna.jpg
+  - src: /media/destinations/santa-ana/featureBands-2-enhanced-20261006.webp
     alt: "На фото: Санта Ана в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN17713_3.jpg
+  - src: /media/destinations/santa-ana/gallery-4-enhanced-20261006.webp
     alt: "На фото: Санта Ана в Эль-Сальвадоре"
 relatedDestinations: []
 featuredTours: []
@@ -38,12 +38,12 @@ featureBands:
     title: Культурный центр западной части страны
     text: >-
       Среди основных достопримечательностей Санта Аны — собор в неоготическом стиле и церковь Эль-Кальварио, связанные с исторической архитектурой города.
-    image: https://brasiltours.ru/image/catalog/category/B/N/BN22644_2.jpg
+    image: /media/destinations/santa-ana/featureBands-1-enhanced-20261006.webp
   - eyebrow: Окрестности
     title: Озеро Коатепеке и Тасумаль
     text: >-
       К югу от города находится озеро Коатепеке с летним курортом. В западной части региона можно посетить развалины древнего индейского города Тасумаль, расположенные в Чальчуапе.
-    image: https://brasiltours.ru/image/catalog/category/S/a/SantaAna.jpg
+    image: /media/destinations/santa-ana/featureBands-2-enhanced-20261006.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-santa-anna-i-gorodishche-tasumal-v-salvadore
 sourceSnapshot: https://drive.google.com/file/d/1foGNT7LOk3wYjzPY0O43Oq_7wNl4ddSa/view?usp=drivesdk
 updatedAt: 2026-10-02
@@ -57,3 +57,4 @@ themes: ["theme_culture","theme_gastronomy_wine","theme_wildlife"]
 Среди основных достопримечательностей города — собор в неоготическом стиле и церковь Эль-Кальварио. К югу находится озеро Коатепеке с летним курортом. В западной части региона расположен Тасумаль — комплекс руин древнего индейского города в современной Чальчуапе.
 
 Санта Ана подходит и как самостоятельное место для отдыха, и как отправная точка для поездок по западным районам Эль-Сальвадора.
+

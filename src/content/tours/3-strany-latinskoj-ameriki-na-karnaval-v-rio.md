@@ -91,7 +91,7 @@ itinerary:
 
     Наверху находится статуя Христа Искупителя и одна из главных смотровых площадок города. Отсюда видны залив Гуанабара, острова, Сахарная голова, пляжи, Ботанический сад и стадион Маракана.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-22.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-4-enhanced-20261006.webp
     alt: Статуя Христа-Искупителя в Рио-де-Жанейро
 - day: 5
   title: Перелет Рио - Фоз-ду-Игуасу

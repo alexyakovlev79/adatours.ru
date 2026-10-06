@@ -44,7 +44,7 @@ itinerary:
 
     Отель позволяет провести первый день без дополнительных переездов: бассейн, рестораны и Копакабана находятся рядом.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/copacabana-palace/33.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/hero-enhanced-20261006.webp
     alt: Вечерний закат на Копакабане, пляжный отдых в Рио-де-Жанейро, Бразилия
 - day: 2
   title: Сахарная Голова и исторический центр Рио
@@ -61,7 +61,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-12.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-1-enhanced-20261006.webp
     alt: Полёт на вертолете над Рио, залив Гуанабара, Сахарная Голова и океан
 - day: 3
   title: Корковадо и статуя Христа
@@ -88,7 +88,7 @@ itinerary:
 
     Полет выполняется при наборе группы **от 4 человек**, поэтому к вам могут присоединиться другие пассажиры.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-22.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-4-enhanced-20261006.webp
     alt: Статуя Христа-Искупителя на фоне синего неба в Рио-де-Жанейро
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -121,7 +121,7 @@ itinerary:
 
     После салюта многие подходят к воде и перепрыгивают через **7 волн**, загадывая желания. Празднование продолжается у концертных сцен до утра.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/copacabana-palace/33.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/hero-enhanced-20261006.webp
     alt: Вечерний закат на Копакабане, пляжный отдых в Рио-де-Жанейро, Бразилия
 - day: 6
   title: Рио - Фоз-ду-Игуасу и Belmond Hotel das Cataratas
@@ -138,7 +138,7 @@ itinerary:
 
     Основная экскурсия запланирована на следующий день. После перелета свободное время.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/belmond/belmond2.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-8-enhanced-20261006.webp
     alt: Бар и гостиная Belmond на водопадах Игуасу, колониальный стиль и эксклюзивный сервис
 - day: 7
   title: Бразильская сторона Игуасу
@@ -158,7 +158,7 @@ itinerary:
     title: Дополнительно. Макуко-сафари, Парк птиц и вертолет над Игуасу
     text: ''
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1250999-unsplash.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Тропический лес и каскады Игуасу в Аргентине и Бразилии
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -199,9 +199,9 @@ itinerary:
 
       **Стоимость гидросамолета - USD 1500 за всех.** Этот же маршрут можно пролететь на обычном самолете за **USD 800 за всех**.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/belmond/belmond2.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-8-enhanced-20261006.webp
     alt: Бар и гостиная Belmond на водопадах Игуасу, колониальный стиль и эксклюзивный сервис
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/premium-5.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-8-images-1-enhanced-20261006.webp
     alt: Эко-лодж Mirante do Gavião в Амазонке, роскошные бунгало и наблюдение за дикой природой
 - day: 9
   title: Национальный парк Анавильянас
@@ -262,9 +262,9 @@ itinerary:
 
     В центре курорта работают кафе и магазины. Во время отлива от берега отправляются **жангады**, плоские местные лодки, к природным бассейнам между рифами.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/porto-de-galinhas/porto-de-galinhas-3.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-11-enhanced-20261006.webp
     alt: Море и парусники на курорте Порту-де-Галиньяш в Бразилии
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/amazon.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-8-enhanced-20261006.webp
     alt: Река Амазонка в Манаусе, слияние рек и джунгли Бразилии, экскурсия на лодке
 - day: 12
   title: Отдых в Nannai Muro Alto
@@ -283,7 +283,7 @@ itinerary:
 
     После Рио, Игуасу и Амазонии эти 4 дня позволяют провести время без новых перелетов и переездов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/amazonka-3.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-12-enhanced-20261006.webp
     alt: Эко-туры в Манаус, Амазония, наблюдение за дикой природой
 - day: 13
   title: Отдых в Nannai Muro Alto
@@ -301,7 +301,7 @@ itinerary:
 
     После Рио, Игуасу и Амазонии эти 4 дня позволяют провести время без новых перелетов и переездов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/nadia-a-maia-03wzmzw5wtw-unsplash.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-13-enhanced-20261006.webp
     alt: Цветущая кувшинка Виктория амазонская на реке Амазонке в Бразилии
 - day: 14
   title: Отдых в Nannai Muro Alto
@@ -375,7 +375,7 @@ priceFrom: 38291
 currency: USD
 priceNote: $38291
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/copacabana-palace/33.jpg
+  src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/hero-enhanced-20261006.webp
   alt: Вечерний закат на Копакабане, пляжный отдых в Рио-де-Жанейро, Бразилия
 routeCountries:
 - country_brazil

@@ -83,7 +83,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny7.jpg
     alt: Фейерверки над пляжем Копакабана
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-22.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-4-enhanced-20261006.webp
     alt: Статуя Христа в Рио-де-Жанейро. Бразилия
 - day: 3
   title: Сахарная Голова и исторический центр Рио

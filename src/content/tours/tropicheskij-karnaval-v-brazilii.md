@@ -81,7 +81,7 @@ itinerary:
     у океана вместе с горожанами. Еще один вариант - ужин в ресторане Marius со свежими морепродуктами. Стоимость ужина -
     USD 130 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-12.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-1-enhanced-20261006.webp
     alt: Вертолетная экскурсия в Рио-де-Жанейро, панорама статуи Христа и Копакабаны
 - day: 5
   title: Рио-де-Жанейро - Бузиос

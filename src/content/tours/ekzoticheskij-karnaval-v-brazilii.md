@@ -231,7 +231,7 @@ itinerary:
 
     Лодж предназначен для отдыха в тесном контакте с природой Амазонии. После размещения можно отдохнуть и подготовиться к следующему дню, когда начнется программа в джунглях.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/amazon.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-8-enhanced-20261006.webp
     alt: Амазонка в Манаусе, круиз по реке и тропические леса Бразилии
   - src: /media/tours/luxury-brazil-11d/gallery-1-src-enhanced-20261001.webp
     alt: Мощные потоки воды на водопадах Игуасу в Бразилии и Аргентине, каскады и брызги

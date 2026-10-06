@@ -65,7 +65,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-adventure-17d/itinerary/day-17-enhanced-20260930.webp
     alt: Дети гоняют мяч на лучших пляжах Рио, Копакабана и футбол у океана в Бразилии
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-22.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-4-enhanced-20261006.webp
     alt: Статуя Христа в Рио-де-Жанейро в Бразилии
 - day: 3
   title: ', 01.01. Сахарная Голова и старый центр Рио'
@@ -171,7 +171,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba2.jpg
     alt: Ночной вид на деловой центр Буэнос-Айреса в Аргентине
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1250999-unsplash.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Джунгли и водопады Игуасу на границе Аргентины и Бразилии, субтропический лес
 - day: 8
   title: ', 06.01. Буэнос-Айрес и танго-шоу'

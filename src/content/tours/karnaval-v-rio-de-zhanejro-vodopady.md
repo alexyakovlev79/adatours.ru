@@ -35,7 +35,7 @@ itinerary:
 
     В карнавальные дни Рио особенно оживлен. На улицах становится больше музыки, яркой одежды и украшений, в магазинах появляются детали костюмов. Первый день оставлен свободным специально, чтобы спокойно восстановиться после перелета и начать знакомство с городом без жесткого графика.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-12.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-1-enhanced-20261006.webp
     alt: Полет на вертолете над Рио-де-Жанейро
 - day: 2
   title: Сахарная Голова и старый Рио
@@ -52,7 +52,7 @@ itinerary:
 
     Карнавал влияет на движение в Рио, отдельные улицы могут быть перекрыты. Поэтому гид при необходимости корректирует последовательность городского маршрута, сохраняя основную экскурсионную программу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-12.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-1-enhanced-20261006.webp
     alt: Полет на вертолете над Рио-де-Жанейро
 - day: 3
   title: Свободный день и Карнавал на Самбадроме
@@ -83,7 +83,7 @@ itinerary:
 
     После экскурсии остается возможность провести вечер самостоятельно. Можно вернуться к океану, пройтись по набережной или выбрать одно из городских кафе. После ночного Самбадрома этот день воспринимается спокойнее и позволяет еще раз увидеть город уже без карнавальной спешки.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-22.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-4-enhanced-20261006.webp
     alt: Крупный план статуи Христа в Рио-де-Жанейро
 - day: 5
   title: Рио-де-Жанейро - Фос-ду-Игуасу
@@ -104,7 +104,7 @@ itinerary:
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-6-enhanced-20261006.webp
     alt: Смотровые мостики над водопадами Игуасу в Аргентине и Бразилии
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-12.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-1-enhanced-20261006.webp
     alt: Полет на вертолете над Рио-де-Жанейро
 - day: 6
   title: Бразильская сторона водопадов Игуасу

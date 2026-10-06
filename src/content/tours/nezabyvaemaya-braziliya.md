@@ -94,7 +94,7 @@ itinerary:
 
     **Продолжительность:** около 4 часов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0001.jpg
+  - src: /media/tours/nezabyvaemaya-braziliya/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: Полет на вертолете над Рио'
 - excursionRef: excursion_source_botanical_garden
   places: []
@@ -124,9 +124,9 @@ itinerary:
 
     Дополнительно можно заказать Парк птиц и Macuco Safari.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/I/g/Iguazu_13.jpg
+  - src: /media/tours/nezabyvaemaya-braziliya/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'
-  - src: https://brasiltours.ru/image/rios%20bay11.png
+  - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Набережная Рио-де-Жанейро'
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -165,9 +165,9 @@ itinerary:
 
     Дорога проходит через тропические районы. По прибытии трансфер в отель на побережье и начало пляжной части программы.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%2012.png
+  - src: /media/tours/luchshee-v-brazilii-za-9-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: Бузиос'
-  - src: https://brasiltours.ru/image/catalog/product/I/g/Iguazu_13.jpg
+  - src: /media/tours/nezabyvaemaya-braziliya/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'
 - day: 8
   title: Бузиос
@@ -184,7 +184,7 @@ itinerary:
 
     Перед финальным днем у вас остается несколько свободных вечеров на побережье. Бузиос в этой программе нужен именно как отдых после насыщенной первой недели: сначала 4 ночи в большом городе, затем 2 экскурсионных дня у Игуасу, после чего расписание освобождается. Можно отказаться от активностей и провести все время на пляже или, наоборот, использовать бухты для водных видов спорта и прогулок.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/B/u/Buzios_1_8.jpg
+  - src: /media/tours/nezabyvaemaya-braziliya/itinerary-day-8-enhanced-20261006.webp
     alt: 'На фото: Пляж в Бузиосе'
 - day: 9
   title: Бузиос
@@ -200,7 +200,7 @@ itinerary:
 
     Перед финальным днем у вас остается несколько свободных вечеров на побережье. Бузиос в этой программе нужен именно как отдых после насыщенной первой недели: сначала 4 ночи в большом городе, затем 2 экскурсионных дня у Игуасу, после чего расписание освобождается. Можно отказаться от активностей и провести все время на пляже или, наоборот, использовать бухты для водных видов спорта и прогулок.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%2012.png
+  - src: /media/tours/luchshee-v-brazilii-za-9-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: Бузиос'
 - day: 10
   title: Бузиос
@@ -216,7 +216,7 @@ itinerary:
 
     Перед финальным днем у вас остается несколько свободных вечеров на побережье. Бузиос в этой программе нужен именно как отдых после насыщенной первой недели: сначала 4 ночи в большом городе, затем 2 экскурсионных дня у Игуасу, после чего расписание освобождается. Можно отказаться от активностей и провести все время на пляже или, наоборот, использовать бухты для водных видов спорта и прогулок.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/B/u/Buzios_1_8.jpg
+  - src: /media/tours/nezabyvaemaya-braziliya/itinerary-day-8-enhanced-20261006.webp
     alt: 'На фото: Пляж в Бузиосе'
 - day: 11
   title: Бузиос
@@ -232,7 +232,7 @@ itinerary:
 
     Перед финальным днем у вас остается несколько свободных вечеров на побережье. Бузиос в этой программе нужен именно как отдых после насыщенной первой недели: сначала 4 ночи в большом городе, затем 2 экскурсионных дня у Игуасу, после чего расписание освобождается. Можно отказаться от активностей и провести все время на пляже или, наоборот, использовать бухты для водных видов спорта и прогулок.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%2012.png
+  - src: /media/tours/luchshee-v-brazilii-za-9-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: Бузиос'
 - day: 12
   title: Бузиос - Рио-де-Жанейро
@@ -241,7 +241,7 @@ itinerary:
   - Бузиос
   text: После завтрака выезд из Бузиоса в Рио-де-Жанейро. Трансфер в аэропорт для международного вылета.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/B/u/Buzios_1_8.jpg
+  - src: /media/tours/nezabyvaemaya-braziliya/itinerary-day-8-enhanced-20261006.webp
     alt: 'На фото: Пляж в Бузиосе'
   - src: /media/tours/kongress-v-rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Полет на дельтаплане над Рио'

@@ -63,7 +63,7 @@ itinerary:
 
     По прибытии в лодж вас встретят приветственным напитком. После размещения состоится водная прогулка по окрестностям. После ужина запланирована ночная прогулка под небом южного полушария.
   images:
-  - src: https://brasiltours.ru/image/pantanal%20new1.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Обитатели заповедника в Пантанале'
 - day: 4
   title: Порту-Жофре, наблюдение за ягуарами
@@ -100,7 +100,7 @@ priceFrom: 4016
 currency: USD
 priceNote: $4016
 hero:
-  src: https://brasiltours.ru/image/Pantanal.png
+  src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
   alt: 'На фото: Заповедник в Пантанале'
 routeCountries:
 - country_brazil

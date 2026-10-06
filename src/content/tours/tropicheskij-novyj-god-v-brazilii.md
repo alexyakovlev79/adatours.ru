@@ -36,7 +36,7 @@ itinerary:
 
     После размещения можно отдохнуть после перелета и настроиться на следующие дни.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/raphael-nogueira-espuilpsruw-1920.jpg
+  - src: /media/tours/luchshee-v-rio-de-zhanejro-dlya-mice/hero-enhanced-20261006.webp
     alt: Канатная дорогая, Рио-де-Жанейро, Бразилия
 - day: 2
   title: 31 декабря. Корковадо и встреча Нового года на Копакабане
@@ -68,7 +68,7 @@ itinerary:
 
     В праздничные даты маршрут может корректироваться из-за загруженности города.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/raphael-nogueira-espuilpsruw-1920.jpg
+  - src: /media/tours/luchshee-v-rio-de-zhanejro-dlya-mice/hero-enhanced-20261006.webp
     alt: Канатная дорогая, Рио-де-Жанейро, Бразилия
 - day: 4
   title: 2 января. Переезд в Бузиос
@@ -175,7 +175,7 @@ itinerary:
 
     За эти 10 дней останутся очень разные картины Бразилии: фейерверки над морем на Копакабане, люди в белом у воды, вид на город с Корковадо, канатная дорога к Сахарной Голове и спокойные дни на пляжах Бузиоса.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/raphael-nogueira-espuilpsruw-1920.jpg
+  - src: /media/tours/luchshee-v-rio-de-zhanejro-dlya-mice/hero-enhanced-20261006.webp
     alt: Канатная дорогая, Рио-де-Жанейро, Бразилия
 included:
 - Проживание в отелях.

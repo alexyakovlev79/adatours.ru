@@ -36,7 +36,7 @@ itinerary:
 
     Ночь в Pousada Aguape.
   images:
-  - src: https://brasiltours.ru/image/Pantanal.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
     alt: Пантанал
 - day: 2
   title: Верховая прогулка и фотосафари
@@ -55,7 +55,7 @@ itinerary:
 
     После экскурсии возвращение в лодж и ужин.
   images:
-  - src: https://brasiltours.ru/image/pantanal%20new1.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-2-enhanced-20261006.webp
     alt: Пантанал
 - day: 3
   title: Каякинг и рыбалка на пиранью

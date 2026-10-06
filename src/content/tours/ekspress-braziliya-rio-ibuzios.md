@@ -32,7 +32,7 @@ itinerary:
 
     На пляжах работают открытые кафе с холодной кокосовой водой, свежевыжатыми соками и другими напитками. Здесь же проходят выступления музыкантов разных направлений.
   images:
-  - src: https://brasiltours.ru/image/rios%20bay11.png
+  - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи Рио-де-Жанейро в Бразилии'
 - day: 2
   title: Рио-де-Жанейро
@@ -45,7 +45,7 @@ itinerary:
 
     На высоте 710 м над уровнем моря стоит статуя Христа Спасителя высотой 38 м, возведенная в 1931 году. Со смотровой площадки открывается панорама Рио и окрестностей: мост в Нитерой, залив Гуанабара, Ботанический сад, стадион Маракана, Сахарная Голова и другие районы города.
   images:
-  - src: https://brasiltours.ru/image/rios%20bay11.png
+  - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи Рио-де-Жанейро в Бразилии'
 - day: 3
   title: Рио-де-Жанейро
@@ -58,7 +58,7 @@ itinerary:
 
     Первая остановка - гора Урка с просторной смотровой площадкой, рестораном и баром. Затем вы подниметесь на Сахарную Голову. С верхней площадки видны Рио, Копакабана, залив, окружающие горы, острова в океане, мост Нитерой и статуя Христа.
   images:
-  - src: https://brasiltours.ru/image/rios%20bay11.png
+  - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи Рио-де-Жанейро в Бразилии'
 - day: 4
   title: Рио-де-Жанейро - Бузиос
@@ -69,7 +69,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
     alt: 'На фото: морской курорт Бузиос в Бразилии'
-  - src: https://brasiltours.ru/image/rios%20bay11.png
+  - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи Рио-де-Жанейро в Бразилии'
 - day: 5
   title: Бузиос
@@ -94,7 +94,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
     alt: 'На фото: морской курорт Бузиос в Бразилии'
-  - src: https://brasiltours.ru/image/rios%20bay11.png
+  - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи Рио-де-Жанейро в Бразилии'
 included:
 - проживание в отелях по программе на базе завтраков;

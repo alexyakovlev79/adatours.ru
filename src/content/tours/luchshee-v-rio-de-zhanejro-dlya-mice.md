@@ -41,7 +41,7 @@ itinerary:
 
     Это ресторан морепродуктов с интерьером в стиле затонувшего корабля.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/kamni-v-rio.jpg
+  - src: /media/tours/luchshee-v-rio-de-zhanejro-dlya-mice/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: люди наблюдают закат в Рио'
 - day: 2
   title: Корковадо, исторический центр и Cidade do Samba
@@ -207,7 +207,7 @@ priceFrom: 3340
 currency: USD
 priceNote: $3340
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/raphael-nogueira-espuilpsruw-1920.jpg
+  src: /media/tours/luchshee-v-rio-de-zhanejro-dlya-mice/hero-enhanced-20261006.webp
   alt: 'На фото: Рио-де-Жанейро с высоты птичьего полёта'
 routeCountries:
 - country_brazil

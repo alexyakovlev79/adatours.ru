@@ -81,7 +81,7 @@ itinerary:
 
     Обед и ужин проходят в отеле. Вечером возможна прогулка на каноэ.
   images:
-  - src: https://brasiltours.ru/image/pantanal%20new1.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-2-enhanced-20261006.webp
     alt: Пантанал
 - day: 6
   title: Пантанал - Бонито
@@ -232,7 +232,7 @@ priceNote: $7001.
 durationDays: 14
 durationNights: 13
 hero:
-  src: https://brasiltours.ru/image/Pantanal.png
+  src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
   alt: Удивительная Бразилия
 routeCountries:
 - country_brazil

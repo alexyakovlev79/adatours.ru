@@ -194,7 +194,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%2012.png
+  - src: /media/tours/luchshee-v-brazilii-za-9-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: Бузиос
   - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
@@ -235,7 +235,7 @@ itinerary:
 
     На этом программа заканчивается.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%2012.png
+  - src: /media/tours/luchshee-v-brazilii-za-9-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: Бузиос
   - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
     alt: Рио-де-Жанейро

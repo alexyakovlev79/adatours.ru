@@ -152,7 +152,7 @@ itinerary:
 
     Для туристов работают лоджи со всеми необходимыми удобствами. После дороги размещение и отдых.
   images:
-  - src: https://brasiltours.ru/image/Pantanal.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: заповедник Пантанал в Бразилии'
   - src: https://brasiltours.ru/image/macuca%20safari%20%20iguacu.png
     alt: 'На фото: водное сафари и водопады Игуасу (Фоз Игуазу) в Бразилии и Аргентине'
@@ -197,7 +197,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/BRA%20Bonito%201%20(1).png
     alt: 'На фото: подземная пещера в Бонито Бразилия'
-  - src: https://brasiltours.ru/image/pantanal%20new1.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: заповедник Пантанал в Бразилии'
 - day: 9
   title: Бонито и Голубая пещера

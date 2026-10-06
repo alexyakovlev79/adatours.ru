@@ -65,7 +65,7 @@ itinerary:
 
     По прибытии в лодж вас встретят приветственным напитком. После размещения состоится водная прогулка по окрестностям. После ужина - ночная прогулка под небом южного полушария.
   images:
-  - src: https://brasiltours.ru/image/Pantanal.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Леопард в Пантанале'
 - day: 4
   title: Порту-Жофре, наблюдение за ягуарами

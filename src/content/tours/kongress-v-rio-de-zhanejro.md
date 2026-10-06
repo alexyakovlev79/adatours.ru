@@ -139,7 +139,7 @@ priceFrom: 1845
 currency: USD
 priceNote: $1845
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/mike-swigunski-tygzvg-ozh4-1920.jpg
+  src: /media/tours/kongress-v-rio-de-zhanejro/hero-enhanced-20261006.webp
   alt: 'На фото: Рио-де-Жанейро'
 routeCountries:
 - country_brazil

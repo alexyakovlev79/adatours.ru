@@ -90,9 +90,9 @@ itinerary:
 
     По прибытии в лодж вас ждет ужин. **Обед и ужин включены.** Ночь в **Pousada Porto Jofre**.
   images:
-  - src: https://brasiltours.ru/image/Pantanal.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: заповедник Пантанал в Бразиии'
-  - src: https://brasiltours.ru/image/rios%20bay11.png
+  - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи Рио-де-Жанейро'
 - day: 5
   title: Пантанал - Бонито

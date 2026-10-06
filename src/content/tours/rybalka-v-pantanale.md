@@ -73,7 +73,7 @@ priceFrom: 1061
 currency: USD
 priceNote: $1061
 hero:
-  src: https://brasiltours.ru/image/Pantanal.png
+  src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
   alt: Рыбалка в Пантанале
 routeCountries:
 - country_brazil

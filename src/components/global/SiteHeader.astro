@@ -275,9 +275,9 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       position: fixed;
       inset: 0;
       display: grid;
-      align-content: start;
-      gap: 28px;
-      padding: calc(var(--header-h) + 28px) var(--gutter) 32px;
+      align-content: safe end;
+      gap: 30px;
+      padding: calc(var(--header-h) + 24px) var(--gutter) 36px;
       overflow-y: auto;
       overscroll-behavior: contain;
       color: var(--color-bg);
@@ -299,7 +299,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
 
     .mobile-menu nav {
       display: grid;
-      gap: 5px;
+      gap: clamp(9px, 1.25vh, 13px);
     }
 
     .mobile-menu nav a {

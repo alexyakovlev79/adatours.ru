@@ -95,7 +95,7 @@ itinerary:
   text: "Возвращение в Гватемала-Сити. Во второй половине дня трансфер в аэропорт и внутренний перелет во Флорес.\n\nНочь\
     \ в отеле Villa Maya.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20flores.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: Вид свеху на Флорес'
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: 'На фото: Вид на Гватемала сити'

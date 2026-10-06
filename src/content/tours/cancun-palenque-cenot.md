@@ -45,7 +45,7 @@ itinerary:
   - Канкун
   text: Прибытие в аэропорт Канкуна. Трансфер в отель Omni Cancun Hotel and Villas All Inclusive.
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: пляжный отдых в Мексике'
 - day: 2
   title: Канкун - Тулум - лагуна Бакалар - Шпухиль

@@ -176,7 +176,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/bolivia/img-20230307-wa0000.jpg
     alt: 'На фото: солончак Уюни в Боливии'
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-middle.jpg
+  - src: /media/excursions/la-pas-siti-tur/hero-enhanced-20261006.webp
     alt: 'На фото: рынок в Ла-Пасе в Боливии'
 - day: 10
   title: Копакабана - Ла-Пас
@@ -188,7 +188,7 @@ itinerary:
 
     Возвращение в Ла-Пас на общественном туристическом транспорте. Сбор пассажиров около 13:30 в холле Rosario Lago Titicaca, отправление в 14:00.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-middle.jpg
+  - src: /media/excursions/la-pas-siti-tur/hero-enhanced-20261006.webp
     alt: 'На фото: рынок в Ла-Пасе в Боливии'
 - day: 11
   title: Ла-Пас и Долина Луны
@@ -201,7 +201,7 @@ itinerary:
 
     На обратном пути поездка по желтой линии городской канатной дороги с видом на Ла-Пас и заснеженную гору Ильимани. Затем рынок Ведьм с предметами для традиционных андских ритуалов, рынки ремесел и церковь Сан-Франсиско в стиле местисо-барокко. Этот день показывает Ла-Пас одновременно сверху и с уровня улиц: сначала панорама склонов и плотной застройки, затем площади, рынки и исторические здания. Возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-middle.jpg
+  - src: /media/excursions/la-pas-siti-tur/hero-enhanced-20261006.webp
     alt: 'На фото: рынок в Ла-Пасе в Боливии'
 - day: 12
   title: Ла-Пас
@@ -209,7 +209,7 @@ itinerary:
   - Ла Пас
   text: Трансфер из отеля в аэропорт.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-middle.jpg
+  - src: /media/excursions/la-pas-siti-tur/hero-enhanced-20261006.webp
     alt: 'На фото: рынок в Ла-Пасе в Боливии'
 included:
 - 'Проживание: 2 ночи в Санта-Крусе, 1 ночь в Самаипате в El Pueblito, 2 ночи в Сукре, 2 ночи в Уюни, 1 ночь в Los Flamencos,

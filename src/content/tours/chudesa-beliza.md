@@ -40,7 +40,7 @@ itinerary:
 
     **Размещение:** Blancaneaux Lodge, Gardenview Cabana.
   images:
-  - src: https://brasiltours.ru/image/San%20Ignacio.png
+  - src: /media/tours/chudesa-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Сан Игнасио в Белизе'
 - day: 2
   title: Караколь

@@ -60,7 +60,7 @@ itinerary:
 
     Ночь в отеле **Villa Colonial**.
   images:
-  - src: https://brasiltours.ru/image/Antigua%20Guatemala.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: Антигуа-Гуатемала
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
@@ -160,7 +160,7 @@ itinerary:
   images:
   - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: Чичикастенанго
-  - src: https://brasiltours.ru/image/Antigua%20Guatemala.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: Антигуа-Гуатемала
 - day: 6
   title: Гватемала-Сити - заповедник Кетцаля - Кобан

@@ -18,10 +18,10 @@ priceFrom: 435
 currency: USD
 priceNote: "Основная стоимость — $435. Для 2 человек — $220 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-middle.jpg
+  src: /media/excursions/la-pas-siti-tur/hero-enhanced-20261006.webp
   alt: Панорама Ла-Паса в Боливии
 gallery:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-left.jpg
+  - src: /media/excursions/la-pas-siti-tur/gallery-1-enhanced-20261006.webp
     alt: Канатная дорога Ла-Паса
   - src: https://brasiltours.ru/image/la%20paz.png
     alt: Ла-Пас, Боливия

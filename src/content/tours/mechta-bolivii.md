@@ -50,7 +50,7 @@ itinerary:
 
     Ночь в Ла-Пасе.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-left.jpg
+  - src: /media/excursions/la-pas-siti-tur/gallery-1-enhanced-20261006.webp
     alt: Ла Пас
 - day: 2
   title: Ла-Пас - Копакабана - остров Солнца - Ла-Пас
@@ -77,7 +77,7 @@ itinerary:
 
     Возвращение в Ла-Пас, трансфер и ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-middle.jpg
+  - src: /media/excursions/la-pas-siti-tur/hero-enhanced-20261006.webp
     alt: Ла Пас
 - day: 3
   title: Ла-Пас - Уюни - Колчани
@@ -213,7 +213,7 @@ priceFrom: 2998
 currency: USD
 priceNote: $2998
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/bolivia-1200x1200.jpg
+  src: /media/tours/mechta-bolivii/hero-enhanced-20261006.webp
   alt: Мечта Боливии
 routeCountries:
 - country_bolivia

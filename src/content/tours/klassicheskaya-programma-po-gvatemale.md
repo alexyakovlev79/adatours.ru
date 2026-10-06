@@ -39,7 +39,7 @@ itinerary:
 
     Ночь в Villa Colonial.
   images:
-  - src: https://brasiltours.ru/image/Antigua%20Guatemala.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Арка Святой Каталины, Антигуа-Гватемала'
 - day: 2
   title: Антигуа - Чичикастенанго - озеро Атитлан
@@ -83,7 +83,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan.png
     alt: 'На фото: Озеро Атитлан в Гватемале'
-  - src: https://brasiltours.ru/image/Antigua%20Guatemala.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Арка Святой Каталины, Антигуа-Гватемала'
 - day: 4
   title: Антигуа - Гватемала-Сити

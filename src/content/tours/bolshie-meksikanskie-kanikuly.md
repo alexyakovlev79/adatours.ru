@@ -136,7 +136,7 @@ itinerary:
 
     Затем переезд в Канкун или на Ривьеру Майя и размещение в отеле согласно предварительному бронированию.
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: Канкун
 included:
 - Размещение в отелях 4*.
@@ -179,7 +179,7 @@ priceFrom: 2093
 currency: USD
 priceNote: $2093
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/cancun-1680.jpg
+  src: /media/tours/bolshie-meksikanskie-kanikuly/hero-enhanced-20261006.webp
   alt: Большие Мексиканские Каникулы
 routeCountries:
 - country_mexico

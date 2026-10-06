@@ -61,7 +61,7 @@ itinerary:
 
     **Ночь:** Villa Colonial.
   images:
-  - src: https://brasiltours.ru/image/Antigua%20Guatemala.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: город Антигуа в Гватемале'
 - day: 2
   title: Антигуа
@@ -92,7 +92,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan1.png
     alt: 'На фото: озеро Атитлан в Гватемале'
-  - src: https://brasiltours.ru/image/Antigua%20Guatemala.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: город Антигуа в Гватемале'
 - day: 4
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан
@@ -146,7 +146,7 @@ itinerary:
     \ майя.\n\nСегодня национальный парк Тикаль занимает 575 кв. км. В 1979 году он был включен в список Всемирного наследия\
     \ ЮНЕСКО как культурный и природный объект.\n\n**Ночь:** Villa Maya.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20flores.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: город Флорес'
 - day: 7
   title: Флорес - Рио-Дульсе - Ливингстон
@@ -165,7 +165,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Livingston.png
     alt: 'На фото: Ливингстон в Гватемале'
-  - src: https://brasiltours.ru/image/guatemala%20flores.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: город Флорес'
 - day: 8
   title: Рио-Дульсе - Киригуа - Копан, Гондурас

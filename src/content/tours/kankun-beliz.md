@@ -35,7 +35,7 @@ itinerary:
   - Канкун
   text: Прибытие в аэропорт Канкуна. Трансфер в отель Omni Cancun Hotel and Villas All Inclusive.
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: Вид на океан с пляжа Канкуна'
 - day: 2
   title: Канкун - Чичен-Ица и сенот Ик-Киль
@@ -52,7 +52,7 @@ itinerary:
 
     После экскурсии предусмотрено купание в карстовом сеноте Ик-Киль. Прохладная вода дает возможность отдохнуть после прогулки по археологической зоне.
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: Вид на океан с пляжа Канкуна'
 - day: 3
   title: Канкун - Тулум и Коба
@@ -69,7 +69,7 @@ itinerary:
 
     Здесь сохранились белые дороги «сак бэ», площадки для игры Пок-та-пок и высокие пирамиды. Маршрут включает подъем на Нохоч-Муль, пирамиду высотой 42 м.
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: Вид на океан с пляжа Канкуна'
 - day: 4
   title: Канкун
@@ -86,7 +86,7 @@ itinerary:
 
     Экскурсия проходит в формате «все включено».
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: Вид на океан с пляжа Канкуна'
 - day: 5
   title: Канкун
@@ -102,7 +102,7 @@ itinerary:
 
     Экскурсия проходит в формате «все включено».
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: Вид на океан с пляжа Канкуна'
 - day: 6
   title: Канкун
@@ -118,7 +118,7 @@ itinerary:
 
     Экскурсия проходит в формате «все включено».
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: Вид на океан с пляжа Канкуна'
 - excursionRef: excursion_cancun_xelha_day_trip
   places: []
@@ -135,7 +135,7 @@ itinerary:
 
     Размещение в Sunbreeze Suites.
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: Вид на океан с пляжа Канкуна'
 - day: 8
   title: Сан-Педро, Амбергрис-Кайе - Hol Chan Marine Reserve
@@ -202,7 +202,7 @@ priceFrom: 5530
 currency: USD
 priceNote: $5530
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/cancun-1680.jpg
+  src: /media/tours/bolshie-meksikanskie-kanikuly/hero-enhanced-20261006.webp
   alt: 'На фото: Пляж в Канкуне, Мексика'
 routeCountries:
 - country_mexico

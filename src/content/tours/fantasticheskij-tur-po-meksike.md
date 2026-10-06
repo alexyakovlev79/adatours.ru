@@ -180,7 +180,7 @@ itinerary:
   - Канкун
   text: Завтрак в отеле.День на отдыхе для наслаждения пляжем и морем./
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: Канкун
 - day: 11
   title: Канкун ()
@@ -196,7 +196,7 @@ itinerary:
   - Канкун
   text: Завтрак в отеле.В установленное время трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: Канкун
 included:
 - 'Включено:'

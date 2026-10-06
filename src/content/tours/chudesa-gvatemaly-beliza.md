@@ -57,7 +57,7 @@ itinerary:
 
     В 1979 году Антигуа была включена в список Всемирного наследия ЮНЕСКО. Сейчас это один из главных туристических центров Гватемалы.
   images:
-  - src: https://brasiltours.ru/image/Antigua%20Guatemala.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: Антигуа-Гуатемала
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
@@ -81,7 +81,7 @@ itinerary:
 
     Во второй половине дня трансфер в Панахачель. Дорога занимает около 1 часа.
   images:
-  - src: https://brasiltours.ru/image/guatemala%20antigu.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-2-enhanced-20261006.webp
     alt: Антигуа-Гуатемала
 - day: 3
   title: Озеро Атитлан
@@ -124,7 +124,7 @@ itinerary:
 
     Тикаль — один из важнейших городов мира майя и место, где особенно хорошо видно сочетание истории и природы.
   images:
-  - src: https://brasiltours.ru/image/guatemala%20flores.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: Флорес
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
@@ -218,7 +218,7 @@ itinerary:
 
     Во время выхода в море можно увидеть множество тропических рыб, скатов, морских черепах и кораллов.
   images:
-  - src: https://brasiltours.ru/image/beliz%20ambergris2.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-9-enhanced-20261006.webp
     alt: Амбергрис-Кайе
 - day: 10
   title: Сан-Педро - Голубая дыра - Белиз-Сити

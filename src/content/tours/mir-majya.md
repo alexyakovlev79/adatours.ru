@@ -161,7 +161,7 @@ itinerary:
     \ стороны современной границы.\n\nПосле экскурсии продолжение пути во Флорес. Этот переезд готовит финальную археологическую\
     \ часть маршрута, посвященную Тикалю и северному региону Петен.\n\n**Отель:** Villa Maya.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20flores.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: Флорес
   - src: https://brasiltours.ru/image/Copn%20Ruinas.png
     alt: Копан Руинас
@@ -220,7 +220,7 @@ priceFrom: 5086
 currency: USD
 priceNote: $5086
 hero:
-  src: https://brasiltours.ru/image/Antigua%20Guatemala.png
+  src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
   alt: Мир Майя
 routeCountries:
 - country_guatemala

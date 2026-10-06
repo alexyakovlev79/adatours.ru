@@ -73,7 +73,7 @@ itinerary:
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
-  - src: https://brasiltours.ru/image/guatemala%20antigu.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-2-enhanced-20261006.webp
     alt: Антигуа-Гуатемала
 - day: 2
   title: Antigua
@@ -94,7 +94,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/guatemala%20antigu.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-2-enhanced-20261006.webp
     alt: Антигуа-Гуатемала
 - day: 3
   title: Antigua - вулкан Pacaya - озеро Atitlan
@@ -124,7 +124,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan2.png
     alt: Лаго де Атитлан
-  - src: https://brasiltours.ru/image/guatemala%20antigu.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-2-enhanced-20261006.webp
     alt: Антигуа-Гуатемала
 - day: 4
   title: San Juan La Laguna - Santiago Atitlan

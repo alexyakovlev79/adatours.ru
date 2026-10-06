@@ -309,7 +309,10 @@ for (const { from, to } of pageAliases) {
   if (aliasRegistry.isLegacyRedirectPath(to)) throw new Error(`Page alias must target a final canonical URL: ${from} → ${to}`);
 }
 export function isLegacyRedirectPath(pathname: string, base = '/'): boolean {
-  return pageAliasPaths.has(logicalPath(pathname, base)) || aliasRegistry.isLegacyRedirectPath(pathname, base);
+  const logical = logicalPath(pathname, base);
+  const legacyMultiCountryCatalog = logical === '/multi-country/tour/'
+    || /^\/multi-country\/tour\/page\/(?:[2-9]|[1-9]\d+)\/$/.test(logical);
+  return legacyMultiCountryCatalog || pageAliasPaths.has(logical) || aliasRegistry.isLegacyRedirectPath(pathname, base);
 }
 
 export function countryBreadcrumbs(country: { name: string; slug: string }): BreadcrumbItem[] {

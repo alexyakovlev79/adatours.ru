@@ -193,7 +193,7 @@ itinerary:
 
     Эта часть путешествия заметно отличается от предыдущей недели. Вместо ранних выездов и насыщенных экскурсий появляются спокойные бухты, лодки у пирсов и возможность самим решать, чем заполнить день. Вода меняет оттенок от темно-зеленого на глубине до почти прозрачного у берега. Мягкий климат и большое количество островов делают морские прогулки одним из естественных вариантов отдыха.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-7.jpg
+  - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-10-enhanced-20261006.webp
     alt: Водопады Игуасу крупным планом, мощь воды
   - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
     alt: Вид на статую Христа с обзорной площадки, Рио

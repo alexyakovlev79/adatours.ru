@@ -140,7 +140,7 @@ itinerary:
     text: |-
       Регулярный трансфер в аэропорт и перелет Aerolineas Argentinas. По прибытии вас встретят и доставят регулярным трансфером в отель Fueguino.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-middle.jpg
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-7-enhanced-20261006.webp
         alt: "На фото: Ушуайя, Аргентина"
         intendedSlot: "itinerary:day-6"
 

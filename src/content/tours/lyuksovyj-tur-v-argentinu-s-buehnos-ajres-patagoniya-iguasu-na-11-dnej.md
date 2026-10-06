@@ -101,7 +101,7 @@ itinerary:
       
       Отдельно упоминается Avenida 9 de Julio и масштаб центральных кварталов.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/four-seasons-hotel/bue-1338-original.jpg
+      - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-1-enhanced-20261006.webp
         alt: "Four Seasons Buenos Aires"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -131,7 +131,7 @@ itinerary:
       
       Следующая крупная точка - Plaza de Mayo и Casa Rosada.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/daniel-tong-vtjtaz-rxxi-unsplash.jpg
+      - src: /media/excursions/gala-tango-s-uzhinom-i-transferom/hero-enhanced-20261006.webp
         alt: "Буэнос-Айрес и танго"
         intendedSlot: "itinerary:day-2"
   - excursionRef: excursion_buenos_aires_gala_tango_dinner_transfer
@@ -149,7 +149,7 @@ itinerary:
       
       Можно отдыхать в городе или выбрать одну из дополнительных экскурсий.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/ba10.jpg
+      - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-3-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-3"
   - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
@@ -256,7 +256,7 @@ itinerary:
       
       После экскурсии возвращение в лодж.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/patagonia/florian-delee-sgq-0qddxs4-unsplash.jpg
+      - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-5-enhanced-20261006.webp
         alt: "Ледник Перито-Морено"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -302,7 +302,7 @@ itinerary:
       
       После размещения остается свободное время.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-middle.jpg
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-7-enhanced-20261006.webp
         alt: "Ушуайя, Аргентина"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -338,7 +338,7 @@ itinerary:
       
       После основной экскурсии возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/patagonia/ushuajya-12.jpg
+      - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-7-enhanced-20261006.webp
         alt: "Национальный парк Огненная Земля"
         intendedSlot: "itinerary:day-7"
   - excursionRef: excursion_ushuaia_martillo_penguin_boat
@@ -388,7 +388,7 @@ itinerary:
       
       Оставшаяся часть дня проходит у Игуасу.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/belmond/belmond.jpg
+      - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-8-enhanced-20261006.webp
         alt: "Belmond das Cataratas, Игуасу"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -493,7 +493,7 @@ itinerary:
       
       По прибытии встреча и трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-7.jpg
+      - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-10-enhanced-20261006.webp
         alt: "Аргентинская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -513,7 +513,7 @@ itinerary:
       
       На этом программа завершается.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/four-seasons-hotel/bue-459-original.jpg
+      - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-11-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-11"
 included:

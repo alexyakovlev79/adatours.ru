@@ -11,7 +11,7 @@ country: country_argentina
 destination: destination_argentina_buenos_aires
 language: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/daniel-tong-vtjtaz-rxxi-unsplash.jpg
+  src: /media/excursions/gala-tango-s-uzhinom-i-transferom/hero-enhanced-20261006.webp
   alt: "Танго в Буэнос-Айресе"
 gallery: []
 route:

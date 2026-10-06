@@ -146,7 +146,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
     alt: Гигантская кувшинк (Виктория Амазонская), Пантанал, Бразилия
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-7.jpg
+  - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-10-enhanced-20261006.webp
     alt: Водопады Игуасу, Фос-ду-Игуасу, Бразилия и Аргентина
 - day: 7
   title: Дни 7-8. Сафари в Пантанале

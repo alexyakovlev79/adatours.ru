@@ -168,7 +168,7 @@ itinerary:
 
       Во время экскурсии маршрут проходит мимо реки Пипо, горы Сусана, залива Энсенада и острова Редонда. Вы увидите озеро Рока, залив Лапатайя, лагуны, плотину бобров и лесной домик. Здесь рядом находятся скалистые горы, реки, долины, озера и морское побережье.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-middle.jpg
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-7-enhanced-20261006.webp
         alt: "Ушуайя и Огненная Земля"
         intendedSlot: "itinerary:day-7"
 

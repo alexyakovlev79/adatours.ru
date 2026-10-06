@@ -12,7 +12,7 @@ destination: destination_argentina_ushuajya
 destinationName: "Ушуайя"
 language: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/patagonia/sander-crombach-589765-unsplash.jpg
+  src: /media/excursions/ostrov-martillo-morskaya-poezdka-k-pingvinam/hero-enhanced-20261006.webp
   alt: "Пингвины у острова Мартильо"
 gallery: []
 route:

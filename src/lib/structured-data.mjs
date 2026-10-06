@@ -1,7 +1,9 @@
+import { selectVipTours } from './vip-tours.mjs';
+
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
  * Facts come from the content model and the rendered page, never SEO inventions.
  */
-export const SCHEMA_VERSION = '2026-10-05.3';
+export const SCHEMA_VERSION = '2026-10-06.1';
 export const types = (node) => [node?.['@type'] ?? []].flat();
 export const hasType = (node, type) => types(node).includes(type);
 export const ref = (id) => ({ '@id': id });
@@ -50,7 +52,6 @@ const servicePages = {
   '/dmc/travel-agencies/': 'Принимающее обслуживание для турагентств',
   '/mice/': 'Организация MICE и корпоративных поездок',
   '/mice/business-delegations/': 'Организация поездок деловых делегаций',
-  '/vip/': 'Организация индивидуальных VIP-путешествий',
 };
 const collectionPaths = new Set(['/country/', '/tours/', '/places/', '/excursions/', '/interests/', '/team/', '/cases/', '/reviews/', '/articles/']);
 const dateValue = (value) => {
@@ -215,6 +216,8 @@ export function buildStructuredData({ root, organization, records, page, documen
   }
   const isMultiCountryCatalog = page.path === '/multi-country/'
     || /^\/multi-country\/page\/(?:[2-9]|[1-9]\d+)\/$/.test(page.path);
+  const isVipCatalog = page.path === '/vip/'
+    || /^\/vip\/page\/(?:[2-9]|[1-9]\d+)\/$/.test(page.path);
   if (current) {
     webPage.mainEntity = ensureRecord(current, true);
     webPage.about = webPage.mainEntity;
@@ -232,6 +235,18 @@ export function buildStructuredData({ root, organization, records, page, documen
       name: 'Multi-country туры по Латинской Америке',
       description: 'Организация путешествий по нескольким странам Латинской Америки: единая программа, перелеты, трансферы, отели, гиды и экскурсии.',
       serviceType: 'Организация путешествий по нескольким странам',
+      url: serviceUrl, provider: ref(orgId), areaServed: coverage.length ? coverage : organization.areaServed });
+    webPage.about = service;
+    if (coverage.length) webPage.spatialCoverage = coverage;
+  } else if (isVipCatalog) {
+    const vipTours = selectVipTours(records.filter((record) => publicRecord(record) && record.kind === 'tour')).entries;
+    const vipCountryIds = [...new Set(vipTours.flatMap((record) => record.data.routeCountries || record.data.countries || []))];
+    const coverage = vipCountryIds.map((id) => byId.get(id)).filter(publicRecord).map((record) => ensureRecord(record));
+    const serviceUrl = absoluteUrl('/vip/', root);
+    const service = add({ '@type': 'Service', '@id': `${serviceUrl}#service`,
+      name: 'VIP и Luxury туры по Латинской Америке',
+      description: 'Организация индивидуальных VIP и Luxury путешествий по Бразилии и Латинской Америке с персональной адаптацией маршрута.',
+      serviceType: 'Организация индивидуальных VIP-путешествий',
       url: serviceUrl, provider: ref(orgId), areaServed: coverage.length ? coverage : organization.areaServed });
     webPage.about = service;
     if (coverage.length) webPage.spatialCoverage = coverage;

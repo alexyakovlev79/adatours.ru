@@ -92,9 +92,12 @@ const breadcrumbItems = [
   })),
 ];
 const schemaBreadcrumbTrails = breadcrumbs?.length
-  ? expandBreadcrumbTrails(breadcrumbs).map((trail) => trail.map((item) => ({
-      name: item.label, url: new URL(withBase(item.href), Astro.site ?? SITE.url).toString(),
-    })))
+  ? expandBreadcrumbTrails(breadcrumbs).map((trail) => {
+      const items = trail.map((item) => ({
+        name: item.label, url: new URL(withBase(item.href), Astro.site ?? SITE.url).toString(),
+      }));
+      return items[0]?.url === rootUrl ? items : [{ name: 'Главная', url: rootUrl }, ...items];
+    })
   : [breadcrumbItems];
 const breadcrumbSchemas = !noindex && showBreadcrumbs && (segments.length > 0 || Boolean(breadcrumbs?.length)) ? schemaBreadcrumbTrails.map((trail, trailIndex) => ({
   '@type': 'BreadcrumbList',

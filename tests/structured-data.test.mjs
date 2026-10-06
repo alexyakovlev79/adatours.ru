@@ -16,7 +16,8 @@ const adventure = record('theme', 'adventure', '/interests/adventure/', { name: 
 const rio = record('destination', 'rio', '/brazil/place/rio/', { name: 'Рио', countryId: 'br', destinationType: 'city', themes: ['adventure'] });
 const tour = record('tour', 'trip', '/brazil/tour/trip/', { name: undefined, title: 'Рио за 3 дня', lead: 'Поездка в Рио.', durationDays: 3, durationNights: 2, countries: ['br'], destinations: ['rio', 'reserved'], primaryThemes: ['adventure'], audiences: ['Частные путешественники'], route: ['Рио', 'Будущее место'], priceFrom: 1200.6, currency: 'USD', itinerary: [{ day: 1, title: 'Прибытие', text: 'Встреча в аэропорту' }, { title: 'Дополнительная экскурсия', text: 'Не отдельный день' }] });
 const multiTour = record('tour', 'multi', '/multi-country/tour/multi/', { name: undefined, title: 'Бразилия и Аргентина', lead: 'Маршрут по двум странам.', durationDays: 10, countries: ['br', 'ar'], routeCountries: ['br', 'ar'], destinations: ['rio'], primaryThemes: ['adventure'] });
-const all = [brazil, argentina, adventure, rio, tour, multiTour];
+const vipTour = record('tour', 'vip', '/brazil/tour/vip/', { name: undefined, title: 'VIP Бразилия', lead: 'Частный VIP-маршрут.', durationDays: 8, countries: ['br'], routeCountries: ['br'], destinations: ['rio'], priceFrom: 5000, currency: 'USD' });
+const all = [brazil, argentina, adventure, rio, tour, multiTour, vipTour];
 function build(path = tour.path, options = {}) {
   return buildStructuredData({ root, organization, records: all, page: { path, url: absoluteUrl(path, root), title: 'Страница', description: 'Описание', lang: 'ru' }, ...options });
 }
@@ -86,6 +87,21 @@ test('multi-country root and pagination share a Service, dynamic coverage and pa
     assert.equal(list.itemListElement[0].item['@id'], `${root}multi-country/tour/multi/#tour`);
   }
 });
+test('VIP root and pagination share one Service and dynamic VIP geography', () => {
+  for (const path of ['/vip/', '/vip/page/2/']) {
+    const graph = build(path, { document: { catalog: true, groups: [{ catalog: true, offset: path.includes('/page/2/') ? 10 : 0, links: [{ href: vipTour.path }] }] } });
+    const page = nodes(graph, 'CollectionPage')[0];
+    const service = graph['@graph'].find((node) => node['@id'] === `${root}vip/#service`);
+    assert.ok(service && hasType(service, 'Service'));
+    assert.equal(service.url, `${root}vip/`);
+    assert.equal(service.serviceType, 'Организация индивидуальных VIP-путешествий');
+    assert.equal(page.about['@id'], service['@id']);
+    assert.deepEqual(page.spatialCoverage.map((item) => item['@id']), [`${root}brazil/#country`]);
+    assert.deepEqual(service.areaServed.map((item) => item['@id']), page.spatialCoverage.map((item) => item['@id']));
+    assert.equal(page.mainEntity['@id'], `${absoluteUrl(path, root)}#catalog`);
+  }
+});
+
 test('archives and drafts are excluded from visible catalogs even when linked', () => {
   const graph = build('/tours/', { records: [{ ...tour, archived: true }, { ...rio, data: { ...rio.data, status: 'draft' } }], document: { catalog: true, groups: [{ catalog: true, links: [{ href: tour.path }, { href: rio.path }] }] } });
   assert.equal(nodes(graph, 'ItemList')[0].numberOfItems, 0);

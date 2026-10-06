@@ -97,6 +97,26 @@ for (const file of files.sort()) {
         assert.ok(page.spatialCoverage?.length >= 2, 'Multi-country dynamic spatial coverage');
         assert.deepEqual(service.areaServed?.map((item) => item['@id']).sort(), page.spatialCoverage.map((item) => item['@id']).sort(), 'Service and page share dynamic country coverage');
       }
+      if (logicalCanonical === '/vip/' || /^\/vip\/page\/(?:[2-9]|[1-9]\d+)\/$/.test(logicalCanonical)) {
+        assert.ok(hasType(page, 'CollectionPage'), 'VIP series uses CollectionPage');
+        const serviceUrl = new URL(`${base}/vip/`, origin).href;
+        const service = byId.get(`${serviceUrl}#service`);
+        assert.ok(service && hasType(service, 'Service'), 'VIP shared Service');
+        assert.equal(service.url, serviceUrl, 'VIP Service canonical root');
+        assert.equal(page.about?.['@id'], service['@id'], 'VIP page is about shared Service');
+        assert.ok(page.spatialCoverage?.length >= 1, 'VIP dynamic spatial coverage');
+        assert.deepEqual(service.areaServed?.map((item) => item['@id']).sort(), page.spatialCoverage.map((item) => item['@id']).sort(), 'VIP Service and page share dynamic country coverage');
+        const breadcrumb = nodes.find((node) => hasType(node, 'BreadcrumbList'));
+        const expectedLength = logicalCanonical === '/vip/' ? 2 : 3;
+        assert.ok(breadcrumb?.itemListElement?.length >= expectedLength, 'VIP BreadcrumbList contains Home, VIP and page number when applicable');
+        assert.equal(breadcrumb.itemListElement[0].item, root, 'VIP BreadcrumbList starts from Home');
+        assert.equal(breadcrumb.itemListElement[1].item, serviceUrl, 'VIP BreadcrumbList links to VIP root');
+        if (logicalCanonical !== '/vip/') assert.equal(breadcrumb.itemListElement.at(-1).item, canonical, 'VIP pagination breadcrumb ends on self canonical');
+        if (logicalCanonical !== '/vip/') {
+          assert.match(page.name, new RegExp(`страница \\d+ из \\d+`, 'i'), 'VIP numbered page title includes total pages');
+          assert.match(page.description, /страны на этой странице:/i, 'VIP numbered meta description includes page geography');
+        }
+      }
       report.contentPages++;
     }
     for (const node of objects(graph)) {

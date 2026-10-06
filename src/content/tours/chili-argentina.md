@@ -97,7 +97,7 @@ itinerary:
   images:
   - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 5
   title: Национальный парк Торрес-дель-Пайне
@@ -282,7 +282,7 @@ itinerary:
   - Буэнос-Айрес
   text: После завтрака трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/buenos%20aires.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-1-enhanced-20261006.webp
     alt: Буэнос-Айрес
 included:
 - Услуги гида на протяжении программы.

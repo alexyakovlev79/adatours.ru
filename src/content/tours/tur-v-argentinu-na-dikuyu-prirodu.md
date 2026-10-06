@@ -111,7 +111,7 @@ itinerary:
       
       Во второй половине дня остается свободное время.
     images:
-      - src: https://brasiltours.ru/image/buen.png
+      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-3-enhanced-20261006.webp
         alt: "Ранчо гаучо рядом с Буэнос-Айресом"
         intendedSlot: "itinerary:day-2"
   - excursionRef: excursion_buenos_aires_tango_show_dinner

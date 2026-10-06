@@ -65,7 +65,7 @@ itinerary:
     text: |-
       Прибытие в аэропорт EZE. Встреча и трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/buenos%20aires.png
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-1-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-1"
 

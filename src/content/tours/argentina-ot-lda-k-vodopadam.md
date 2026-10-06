@@ -123,7 +123,7 @@ itinerary:
 
       Эль-Калафате расположен в Патагонии и служит главной отправной точкой к Национальному парку Лос-Гласьярес и леднику Перито-Морено.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/el-calafate-adatours.jpg
+      - src: /media/excursions/nativo-experience-el-calafate/hero-enhanced-20261006.webp
         alt: "на фото: ледник Перито-Морено в Эль-Калафате, Аргентина, Патагония"
         intendedSlot: "itinerary:day-4"
 

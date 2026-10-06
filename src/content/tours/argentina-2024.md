@@ -131,7 +131,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/mendoza%20valley.png
     alt: 'На фото: Долина в Мендосе, Аргентина'
-  - src: https://brasiltours.ru/image/ARG%20Patagonia%201.png
+  - src: /media/tours/argentina-2024/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: 'На фото: горы в Эль Калафате, Аргентина'
 - day: 7
   title: Эль-Калафате и ледник Перито-Морено
@@ -165,7 +165,7 @@ itinerary:
   images:
   - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Водопад Фоз-де-Игуасу, Аргентина'
-  - src: https://brasiltours.ru/image/ARG%20Patagonia%201.png
+  - src: /media/tours/argentina-2024/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: 'На фото: горы в Эль Калафате, Аргентина'
 - day: 9
   title: Аргентинская сторона водопадов Игуасу

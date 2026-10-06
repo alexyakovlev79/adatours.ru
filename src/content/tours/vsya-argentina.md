@@ -472,7 +472,7 @@ itinerary:
     text: |-
       После завтрака трансфер в аэропорт и перелет в Эль-Калафате. По прибытии - трансфер в отель. Остаток дня и вечер свободны.
     images:
-      - src: https://brasiltours.ru/image/ARG%20Patagonia%201.png
+      - src: /media/tours/argentina-2024/itinerary-day-6-images-1-enhanced-20261006.webp
         alt: "Патагония по пути в Эль-Калафате"
         intendedSlot: "itinerary:day-17"
   - day: 18

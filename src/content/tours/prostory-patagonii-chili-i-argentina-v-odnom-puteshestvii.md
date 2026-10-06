@@ -158,7 +158,7 @@ itinerary:
       
       Остаток дня свободен. Можно прогуляться по набережной, зайти в местные кафе или отдохнуть перед следующим днем.
     images:
-      - src: https://brasiltours.ru/image/ARG%20Patagonia%201.png
+      - src: /media/tours/argentina-2024/itinerary-day-6-images-1-enhanced-20261006.webp
         alt: "Патагония между Эль-Калафате и Пуэрто-Наталес"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -226,7 +226,7 @@ itinerary:
       
       Остаток дня - по программе размещения.
     images:
-      - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+      - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
         alt: "Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-7"
   - day: 8

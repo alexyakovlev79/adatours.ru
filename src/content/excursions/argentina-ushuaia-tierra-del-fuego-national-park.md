@@ -17,7 +17,7 @@ hero:
   src: "https://brasiltours.ru/image/terres%20del%20fuego.png"
   alt: "Национальный парк Огненная земля"
 gallery:
-  - src: "https://brasiltours.ru/image/ushuaia.png"
+  - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
     alt: ""
   - src: "https://brasiltours.ru/image/terres%20del%20f.png"
     alt: ""

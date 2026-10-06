@@ -120,7 +120,7 @@ itinerary:
 
     После экскурсии трансфер в аэропорт и перелет в Сантьяго. По прибытии трансфер в отель, размещение и ночь в Сантьяго.
   images:
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 6
   title: Сантьяго

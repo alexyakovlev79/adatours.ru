@@ -64,7 +64,7 @@ itinerary:
       
       Дальше вы проедете по Авенида-де-Майо и Авенида-Корриентес, увидите Ла-Боку и Сан-Тельмо, а затем более современные и престижные районы Палермо, Реколета и Пуэрто-Мадеро с ресторанами и прогулочными зонами.
     images:
-      - src: https://brasiltours.ru/image/buenos%20aires.png
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-1-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-2"
   - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
@@ -78,7 +78,7 @@ itinerary:
     text: |-
       После завтрака трансфер в аэропорт и перелет в Сантьяго. По прибытии вас встретит водитель и доставит в отель или на винодельню недалеко от города.
     images:
-      - src: https://brasiltours.ru/image/buen.png
+      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-3-enhanced-20261006.webp
         alt: "Перелет из Буэнос-Айреса в Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -154,7 +154,7 @@ itinerary:
       
       Обратная дорога проходит мимо Рио-Серрано и озер Торо и Портеньо. Ночь в отеле.
     images:
-      - src: https://brasiltours.ru/image/torres%20del%20paine%204.png
+      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-6-enhanced-20261006.webp
         alt: "Национальный парк Торрес-дель-Пайне"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -170,7 +170,7 @@ itinerary:
       
       Это самый активный патагонский день маршрута: сначала ледник и вода, затем пешая часть среди горных и озерных пейзажей.
     images:
-      - src: https://brasiltours.ru/image/torres%20del%20paine%204.png
+      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-6-enhanced-20261006.webp
         alt: "Торрес-дель-Пайне и ледник Грей"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -233,7 +233,7 @@ itinerary:
       
       Далее вы посетите церемониальный комплекс Тахаи. Он включает 3 основные платформы с моаи: Ко-Те-Рику с восстановленными глазами, Тахаи и Вай-Ури. Комплекс входит в Национальный парк Рапа-Нуи, признанный объектом Всемирного наследия ЮНЕСКО.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/stephanie-morcinek-exbnticqtrs-unsplash.jpg
+      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-11-enhanced-20261006.webp
         alt: "Моаи на острове Пасхи"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -254,7 +254,7 @@ itinerary:
       
       Затем маршрут продолжается в церемониальную деревню Оронго. Здесь проходил традиционный выбор вождя острова через рискованное соревнование. Весной представители кланов собирались в каменных домах и ждали появления священной птицы манутара, чтобы определить Тангата-Ману, человека-птицу.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/chi-ilha-de-pascoa-right.jpg
+      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-10-enhanced-20261006.webp
         alt: "Оронго и остров Пасхи"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -288,7 +288,7 @@ itinerary:
       
       Возвращение в Ханга-Роа, трансфер в аэропорт, перелет в Сантьяго и трансфер после прибытия.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/stephanie-morcinek-exbnticqtrs-unsplash.jpg
+      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-11-enhanced-20261006.webp
         alt: "Рано-Рараку, Тонгарики и Анакена"
         intendedSlot: "itinerary:day-11"
   - day: 12

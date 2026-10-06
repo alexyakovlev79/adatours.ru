@@ -126,7 +126,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
     alt: 'на фото: Эль Калафате'
-  - src: https://brasiltours.ru/image/ushuaia.png
+  - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
     alt: Ушуайя
 - day: 6
   title: Ушуайя и Национальный парк Огненная Земля
@@ -172,7 +172,7 @@ itinerary:
 
     По прилете встреча и трансфер с водителем в отель.
   images:
-  - src: https://brasiltours.ru/image/ushuaia.png
+  - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
     alt: Ушуайя
 - day: 8
   title: Аргентинская сторона водопадов Игуасу

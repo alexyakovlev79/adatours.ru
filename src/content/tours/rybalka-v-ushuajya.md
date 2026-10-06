@@ -27,7 +27,7 @@ priceFrom: 1000
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/ushuaia.png
+  src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
   alt: "Ушуайя и Огненная Земля"
 gallery: []
 featured: false

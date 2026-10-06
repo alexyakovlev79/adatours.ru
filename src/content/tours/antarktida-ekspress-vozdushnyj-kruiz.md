@@ -53,7 +53,7 @@ itinerary:
       
       Судно направляется к Пуэрто-Вильямсу в Чили, который называют самым южным городом мира. После знакомства с окрестностями маршрут продолжается в сторону мыса Горн.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/f/i/file_60_93.png
+      - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-1-enhanced-20261006.webp
         alt: "Пролив Бигль и Ушуайя"
         intendedSlot: "itinerary:day-1"
   - day: 2

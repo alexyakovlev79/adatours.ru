@@ -180,7 +180,7 @@ itinerary:
 
     Финальная часть экскурсии проходит через современные районы Витакура, Лас-Кондес и Провиденсия, вдоль реки Мапочо и главных городских проспектов.
   images:
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 11
   title: Вальпараисо и Винья-дель-Мар
@@ -261,7 +261,7 @@ itinerary:
   - Сантьяго-де-Чили
   text: Завтрак. Трансфер в аэропорт к международному рейсу.
   images:
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 included:
 - Проживание в отелях 4* или аналогичных, с завтраками.

@@ -67,7 +67,7 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили'
 - day: 2
   title: Сантьяго - Калама - Сан-Педро-де-Атакама
@@ -90,7 +90,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/chile/chi-atacama-left.jpg
     alt: 'На фото: пустыня Атакама в Чили'
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили'
 - day: 3
   title: 'Сан-Педро-де-Атакама: лагуны, Салар-де-Атакама и Токонао'
@@ -155,7 +155,7 @@ itinerary:
   images:
   - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: город Пуэрто Наталес в чилийской Патагонии'
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили'
 - day: 6
   title: Торрес-дель-Пайне и пещера Милодона
@@ -197,7 +197,7 @@ itinerary:
   images:
   - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: город Пуэрто Наталес в чилийской Патагонии'
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили'
 - day: 8
   title: Сантьяго - остров Пасхи
@@ -209,7 +209,7 @@ itinerary:
 
     После прибытия трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили'
   - src: https://brasiltours.ru/image/easter%20island.png
     alt: 'На фото: истуканы Моа с острова Пасха в Чили'
@@ -269,7 +269,7 @@ itinerary:
 
     Опционально можно отправиться на виноградники или в Винья-дель-Мар.
   images:
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили'
   - src: https://brasiltours.ru/image/easter%20island.png
     alt: 'На фото: истуканы Моа с острова Пасха в Чили'
@@ -279,7 +279,7 @@ itinerary:
   - Сантьяго-де-Чили
   text: Трансфер в аэропорт к вашему вылету домой.
   images:
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили'
 included:
 - размещение в указанных или аналогичных отелях на базе завтраков;

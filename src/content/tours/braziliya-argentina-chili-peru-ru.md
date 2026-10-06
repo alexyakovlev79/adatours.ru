@@ -224,7 +224,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Cuzco.png
     alt: 'На фото: Вид на город Куско, Перу'
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: Архитектура Сантьяго де Чили'
 - day: 12
   title: Священная долина

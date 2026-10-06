@@ -94,7 +94,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/easter%20island.png
     alt: 'На фото: истуканы острова Пасхи в Чили'
-  - src: https://brasiltours.ru/image/santiago%20de%20ch.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили - столица Чили'
 - day: 5
   title: 'Остров Пасхи: Анакена и главные археологические зоны'

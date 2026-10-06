@@ -12,7 +12,7 @@ country: country_argentina
 destination: destination_argentina_el_calafate
 language: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/el-calafate-adatours.jpg
+  src: /media/excursions/nativo-experience-el-calafate/hero-enhanced-20261006.webp
   alt: "Патагония у Эль-Калафате"
 gallery: []
 route:

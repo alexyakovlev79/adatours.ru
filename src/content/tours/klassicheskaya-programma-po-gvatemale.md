@@ -59,7 +59,7 @@ itinerary:
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: Вид на озеро Атитлан'
-  - src: https://brasiltours.ru/image/antigua_archhorz_33.png
+  - src: "/media/tours/klassicheskaya-programma-po-gvatemale/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: Арка Санта-Каталина, Антигуа-Гватемала'
 - day: 3
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан - Антигуа
@@ -105,7 +105,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/antigua_archhorz_33.png
+  - src: "/media/tours/klassicheskaya-programma-po-gvatemale/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: Арка Санта-Каталина, Антигуа-Гватемала'
 included:
 - русскоговорящий гид;

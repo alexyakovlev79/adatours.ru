@@ -40,7 +40,7 @@ itinerary:
 
     Размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Парамарибо
 - day: 2
   title: Парамарибо и историческая плантация
@@ -59,7 +59,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Парамарибо
 - day: 3
   title: Суринам - Французская Гвиана - Куру
@@ -76,7 +76,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Kourou.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Космодром Куру
 - day: 4
   title: Остров Дьявола
@@ -95,7 +95,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Kourou.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Космодром Куру
 - day: 5
   title: Кайенна - Сен-Лоран-дю-Марони - Парамарибо
@@ -116,7 +116,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Парамарибо
 - day: 6
   title: Джорджтаун и водопад Кайетур
@@ -139,9 +139,9 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Georgetown.png
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-5-images-0-src-enhanced-20261007.webp"
     alt: Джорджтаун
-  - src: https://brasiltours.ru/image/gayana%20waterfalls%20kaentur.png
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-5-images-1-src-enhanced-20261007.webp"
     alt: Национальный парк Кайетур
 - day: 7
   title: Отъезд из Гайаны
@@ -180,7 +180,7 @@ priceFrom: 4014
 currency: USD
 priceNote: $4014
 hero:
-  src: https://brasiltours.ru/image/countries/surinam/34.jpg
+  src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/hero-src-enhanced-20261007.webp"
   alt: 'На фото:'
 routeCountries:
 - country_suriname

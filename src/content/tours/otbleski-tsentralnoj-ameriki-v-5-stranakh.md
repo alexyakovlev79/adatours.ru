@@ -74,7 +74,7 @@ itinerary:
     \ Гватемала.\n\nЭкскурсия начнется на главной площади исторического центра и продолжится у основных памятников города.\n\
     \n**Ночь:** Villa Colonial.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Antigua_HillView.png
+  - src: "/media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp"
     alt: 'На фото: город Антигуа Гватемала'
 - day: 3
   title: Антигуа - вулкан Пакайя - озеро Атитлан
@@ -179,7 +179,7 @@ itinerary:
     \ лицом. Монолитные скульптуры весом до 65 тонн были высечены без железных орудий.\n\nПосле экскурсии трансфер в Гондурас.\n\
     \n**Ночь:** Clarion Copan Ruinas.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Copn%20Ruinas.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: пирамиды и руины Копана в Гватемале'
 - day: 9
   title: Копан - Сан-Сальвадор
@@ -193,7 +193,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/San%20Salvador.png
     alt: 'На фото: Сан-Сальвадор - столица Сальвадора'
-  - src: https://brasiltours.ru/image/Copn%20Ruinas.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: пирамиды и руины Копана в Гватемале'
 - day: 10
   title: Сан-Сальвадор - Сан-Андрес - Хойя-де-Серен

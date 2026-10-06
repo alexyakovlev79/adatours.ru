@@ -86,7 +86,7 @@ itinerary:
     \ Дорога занимает около 3,5 часов.\n\nВ Кайенне программа знакомит с рынками, историческими местами и креольской кухней\
     \ региона.\n\nВечером прибытие в Куру и ночевка.\n\n**Питание:** завтрак.  \n**Формат:** экскурсия на целый день с гидом."
   images:
-  - src: https://brasiltours.ru/image/Kourou.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Космодром Куру
 - day: 5
   title: Острова бывшей тюремной колонии
@@ -122,7 +122,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Kourou.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Космодром Куру
 - day: 7
   title: Парамарибо - Атьони и джунгли Суринама

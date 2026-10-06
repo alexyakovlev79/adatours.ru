@@ -81,7 +81,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/Antigua_HillView.png
+  - src: "/media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp"
     alt: Антигуа-Гуатемала
 - day: 3
   title: Антигуа - вулкан Пакайя - озеро Атитлан
@@ -104,7 +104,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/antigua.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Антигуа-Гуатемала
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
     alt: Лучшее в Гватемале
@@ -296,7 +296,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/Copn%20Ruinas.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Копан Руинас
 - day: 13
   title: Копан - Гватемала-Сити
@@ -310,7 +310,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/Copn%20Ruinas.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Копан Руинас
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити

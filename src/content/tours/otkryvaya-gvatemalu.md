@@ -39,7 +39,7 @@ itinerary:
 
     После переезда размещение и ночь в отеле Villa Colonial.
   images:
-  - src: https://brasiltours.ru/image/Antigua_HillView.png
+  - src: "/media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp"
     alt: 'На фото: Антигуа-Гуатемала столица Гватемалы'
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: 'На фото: Вид на Гватемала сити'
@@ -63,7 +63,7 @@ itinerary:
   images:
   - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Люди на рынке Чичикастенанго'
-  - src: https://brasiltours.ru/image/Antigua_HillView.png
+  - src: "/media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp"
     alt: 'На фото: Антигуа-Гуатемала столица Гватемалы'
 - day: 3
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан

@@ -39,7 +39,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Суринама, город Парамарибо'
 - day: 3
   title: 'Дни 3-6: джунгли и наблюдение за животными'
@@ -75,7 +75,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Суринама, город Парамарибо'
 - day: 11
   title: мангровые заросли, болота и старые плантации

@@ -129,7 +129,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/Canaima%20National%20Park%20Angel%20Falls%201.png
+  - src: "/media/tours/venesuela-treking-v-zateryannyj-i-pervozdannyj-mir-rorajmy/itinerary-9-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: водопад Сальта-Анхель в Венесуэле'
 - day: 11
   title: ', четверг: свободный день в Канайме'

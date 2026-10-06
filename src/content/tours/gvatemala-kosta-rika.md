@@ -15,7 +15,7 @@ lead: 'Пятнадцать дней в Гватемале и Коста-Рик�
 durationDays: 15
 durationNights: 14
 hero:
-  src: https://brasiltours.ru/image/Antigua_HillView.png
+  src: "/media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp"
   alt: Гватемала - Коста-Рика
 currency: USD
 priceFrom: null

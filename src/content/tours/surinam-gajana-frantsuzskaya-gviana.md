@@ -91,7 +91,7 @@ itinerary:
 
     Отдельная ценность дня - сочетание городской прогулки и возвращения в Парамарибо по воде.
   images:
-  - src: https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Парамарибо
 - day: 4
   title: Суринам - Французская Гвиана
@@ -126,7 +126,7 @@ itinerary:
 
     Завтрак включен. Экскурсия с гидом на целый день.
   images:
-  - src: https://brasiltours.ru/image/Kourou.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Космодром Куру
 - day: 6
   title: Космический центр Куру и возвращение в Суринам
@@ -143,7 +143,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/Kourou.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Космодром Куру
 - day: 7
   title: Из Парамарибо в джунгли и к маронам
@@ -156,7 +156,7 @@ itinerary:
 
     Ночь проходит в домиках у реки. Все приемы пищи и безалкогольные напитки включены. Экскурсия проводится с гидом.
   images:
-  - src: https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Парамарибо
 - day: 8
   title: Деревня Ньив-Аврора и культура маронов
@@ -169,7 +169,7 @@ itinerary:
 
     Вечером предусмотрены ужин и культурное танцевальное представление при условии, что в группе будет не менее 8 человек. Следующим утром остается время для купания, прогулки или повторного визита в деревню, после чего маршрут возвращается на лодке в Атжони и далее на автобусе в Парамарибо.
   images:
-  - src: https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Парамарибо
 - day: 9
   title: Перелет в Kabalebo и знакомство с джунглями
@@ -232,7 +232,7 @@ itinerary:
 
     Поездка завершается снова в Парамарибо перед международным вылетом. Последний трансфер в аэропорт организуется по времени рейса.
   images:
-  - src: https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Парамарибо
 included:
 - Размещение в отеле 3* с завтраками; апгрейд возможен при бронировании.

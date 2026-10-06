@@ -41,7 +41,7 @@ itinerary:
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
-  - src: https://brasiltours.ru/image/antigua.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Антигуа-Гуатемала
 - day: 2
   title: Антигуа, Сан-Антонио-Агуас-Кальентес и Сантьяго-Самора
@@ -60,7 +60,7 @@ itinerary:
     \ с группой женщин-ремесленниц «Иксоки ай киема». Они используют традиционные техники и изготавливают изделия ручной работы,\
     \ прежде всего текстиль.\n\n**Отель:** Villa Colonial.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/antigua_archhorz_33.png
+  - src: "/media/tours/klassicheskaya-programma-po-gvatemale/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Антигуа-Гуатемала
 - day: 3
   title: Антигуа - Ишимче - озеро Атитлан
@@ -76,7 +76,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan2.png
     alt: Лаго де Атитлан
-  - src: https://brasiltours.ru/image/antigua.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Антигуа-Гуатемала
 - day: 4
   title: Сан-Хуан-ла-Лагуна и Сантьяго-Атитлан
@@ -130,7 +130,7 @@ itinerary:
     \ зон путешествия. После музея в Гватемала-Сити часть увиденных артефактов получает контекст уже непосредственно среди\
     \ руин и стел Копана.\n\n**Отель:** Clarion Copan Ruinas.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Copn%20Ruinas.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Копан Руинас
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
@@ -163,7 +163,7 @@ itinerary:
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: Флорес
-  - src: https://brasiltours.ru/image/Copn%20Ruinas.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Копан Руинас
 - day: 9
   title: Тикаль - Гватемала-Сити

@@ -290,7 +290,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/Copn%20Ruinas.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Копан Руинас
 - day: 9
   title: Copan - San Salvador
@@ -316,7 +316,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/Copn%20Ruinas.png
+  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Копан Руинас
 - day: 10
   title: San Salvador - San Andres - Joya de Ceren

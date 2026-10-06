@@ -64,7 +64,7 @@ itinerary:
 
     На 3-й день ночевка проходит в комфортабельном лодже с собственной ванной и туалетом. На 4-й день вы возвращаетесь в отель в Парамарибо.
   images:
-  - src: https://brasiltours.ru/image/SURINAME%20-%20Paramaribo.jpg
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Парамарибо
 - day: 5
   title: и 6. Биги Пан

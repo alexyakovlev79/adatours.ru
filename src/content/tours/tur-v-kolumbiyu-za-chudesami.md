@@ -41,7 +41,7 @@ itinerary:
 
     После перелета размещение в гостинице и отдых.
   images:
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: На фото:Богота
 - day: 2
   title: Богота
@@ -89,7 +89,7 @@ itinerary:
 
     **Включено:** услуги двуязычного гида, частный транспорт и карта местной медицинской помощи.
   images:
-  - src: https://brasiltours.ru/image/bogota2.png
+  - src: "/media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Богота'
   - src: https://brasiltours.ru/image/columbia%20villa%20de%20leyva.png
     alt: 'На фото: Вилья-де-Лейва'

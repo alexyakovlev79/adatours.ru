@@ -122,7 +122,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan2.png
+  - src: "/media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Лаго де Атитлан
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-2-enhanced-20261006.webp
     alt: Антигуа-Гуатемала
@@ -166,7 +166,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan2.png
+  - src: "/media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Лаго де Атитлан
 - day: 5
   title: Chichicastenango - Guatemala City

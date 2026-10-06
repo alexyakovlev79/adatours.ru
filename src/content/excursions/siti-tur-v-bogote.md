@@ -25,7 +25,7 @@ gallery:
     alt: Музей Ботеро в Боготе
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0034.jpg
     alt: Уличная жизнь Боготы
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: Исторический центр Боготы
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0333.jpg
     alt: Музеи Боготы

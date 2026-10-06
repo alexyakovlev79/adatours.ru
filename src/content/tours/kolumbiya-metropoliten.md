@@ -30,7 +30,7 @@ itinerary:
 
     Встреча в международном аэропорту Эль-Дорадо, трансфер в отель и размещение.
   images:
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: Богота
 - day: 2
   title: Богота - Ла-Канделария и Монсеррат
@@ -55,7 +55,7 @@ itinerary:
     \nПосле экскурсии возвращаемся в Боготу.\n\n**Продолжительность:** около 5 часов.  \n**Включено:** профессиональный англоязычный\
     \ гид, частный транспорт и вход в Соляной собор."
   images:
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: Богота
 - day: 4
   title: Богота - Медельин - обзорная экскурсия и Коммуна 13

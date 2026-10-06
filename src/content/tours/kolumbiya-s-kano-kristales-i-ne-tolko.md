@@ -39,7 +39,7 @@ itinerary:
 
     Далее предусмотрен трансфер в отель и размещение. Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: Богота
 - day: 2
   title: 'Вторник или четверг: обзорная экскурсия по Боготе'
@@ -149,7 +149,7 @@ itinerary:
 
     По прибытии в Боготу вас встретят в аэропорту Эль-Дорадо и доставят в отель. Размещение в Боготе.
   images:
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: Богота
 - day: 7
   title: 'Воскресенье или вторник: Богота - Перейра'

@@ -51,7 +51,7 @@ itinerary:
 
     Завершит визит типичный обед этого региона. Затем возвращение в Боготу и в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Богота'
 - day: 3
   title: 'Богота: Ла-Канделария, музеи и Монсеррат'
@@ -101,7 +101,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/guatavita.png
     alt: 'На фото: страна Колумбия и озеро Гуатавита'
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Богота'
 - day: 5
   title: Богота - Медельин - Эль-Пеньон-де-Гуатапе

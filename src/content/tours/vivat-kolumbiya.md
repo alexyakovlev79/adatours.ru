@@ -38,7 +38,7 @@ itinerary:
 
     После заселения свободное время. Можно отдохнуть после перелета или самостоятельно выйти на прогулку и впервые увидеть город.
   images:
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: Богота
 - day: 2
   title: Исторический центр Боготы, Музей золота, Монсеррате и музей Ботеро
@@ -57,7 +57,7 @@ itinerary:
 
     По окончании экскурсии трансфер обратно в гостиницу. Отдых.
   images:
-  - src: https://brasiltours.ru/image/bogota2.png
+  - src: "/media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 3
   title: Озеро Гуатавита и Сипакира
@@ -99,7 +99,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Medellin.png
     alt: Медельин
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: Богота
 - day: 5
   title: Медельин
@@ -140,7 +140,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Medellin.png
     alt: Медельин
-  - src: https://brasiltours.ru/image/countries/colombia/cocora-valley1.jpg
+  - src: "/media/tours/vivat-kolumbiya/hero-src-enhanced-20261007.webp"
     alt: Виват Колумбия
 - day: 7
   title: Кофейная плантация Hacienda Venecia
@@ -220,7 +220,7 @@ priceFrom: 4866
 currency: USD
 priceNote: $4866
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/cocora-valley1.jpg
+  src: "/media/tours/vivat-kolumbiya/hero-src-enhanced-20261007.webp"
   alt: Виват Колумбия
 routeCountries:
 - country_colombia

@@ -68,7 +68,7 @@ itinerary:
     10 часовВключено: входной билет в Музей золота, в Каса-де-Ла-Монеда и коллекцию Ботеро, вход в Сипакиру, обед, услуги
     гида, частный трансфер.Примечание: Музей Золота закрыт по понедельникам, Каса-де-Ла-Монеда и Ботеро закрыты по вторникам.'
   images:
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: 'на фото: Богота'
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0301.jpg
     alt: 'на фото: Собор Сипакира'

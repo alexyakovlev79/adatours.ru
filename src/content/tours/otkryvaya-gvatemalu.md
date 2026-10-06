@@ -84,7 +84,7 @@ itinerary:
     \ Там можно увидеть старейшин города в традиционной одежде: белых полосатых шортах с вышитыми по низу птицами.\n\nПосле\
     \ экскурсии возвращение в Панахачель. Ночь в отеле Villa Santa Catarina.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_47_32.png
+  - src: "/media/tours/otkryvaya-gvatemalu/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Озеро атитлан'
 - day: 4
   title: Озеро Атитлан - Гватемала-Сити - Флорес
@@ -116,7 +116,7 @@ itinerary:
     \nВо второй половине дня трансфер в аэропорт Флореса и внутренний перелет в Гватемала-Сити. Ночь в отеле Barcelo Guatemala\
     \ City.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/tikal%20png.png
+  - src: "/media/tours/otkryvaya-gvatemalu/itinerary-4-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Тикаль в провинции Эль-Петен'
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: 'На фото: Вид на Гватемала сити'
@@ -151,7 +151,7 @@ priceFrom: 3420
 currency: USD
 priceNote: $3420
 hero:
-  src: https://brasiltours.ru/image/countries/guatemala/1686838647-happylove-top-p-gvatemala-priroda-krasivo-1920.jpg
+  src: "/media/tours/otkryvaya-gvatemalu/hero-src-enhanced-20261007.webp"
   alt: 'На фото: Озеро Атитлан, Гватемала'
 routeCountries:
 - country_guatemala

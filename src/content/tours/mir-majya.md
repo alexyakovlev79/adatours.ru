@@ -74,7 +74,7 @@ itinerary:
     \ испанского присутствия в Гватемале и историей народа какчикель.\n\n**Отель:** Villa Santa Catarina.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan2.png
+  - src: "/media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Лаго де Атитлан
   - src: "/media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Антигуа-Гуатемала
@@ -99,7 +99,7 @@ itinerary:
     \ увидеть старейшин города в традиционной одежде.\n\nВозвращение к Антигуа.\n\n**Отель:** Villa Santa Colonial.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan2.png
+  - src: "/media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Лаго де Атитлан
 - day: 5
   title: Чичикастенанго - Гватемала-Сити
@@ -145,7 +145,7 @@ itinerary:
     \ одним из важнейших мест для изучения истории и искусства майя.\n\n**Отель:** Clarion Copan Ruinas.  \n**Питание:** завтрак.\n\
     \nКопан занимает полный экскурсионный день."
   images:
-  - src: https://brasiltours.ru/image/copan%20gonduras.png
+  - src: "/media/tours/mir-majya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Копан Руинас
 - day: 8
   title: Копан - Киригуа - Флорес

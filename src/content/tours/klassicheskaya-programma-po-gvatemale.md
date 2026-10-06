@@ -81,7 +81,7 @@ itinerary:
     \ традиционной одежде.\n\nПосле экскурсии возвращаемся в Панахачель и переезжаем в Антигуа.\n\nНочь в Villa Colonial.\
     \  \nПитание: завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan.png
+  - src: "/media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Озеро Атитлан в Гватемале'
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Арка Святой Каталины, Антигуа-Гватемала'
@@ -131,7 +131,7 @@ priceFrom: 1939
 currency: USD
 priceNote: $1939
 hero:
-  src: https://brasiltours.ru/image/countries/guatemala/antigua-hillview-waifu2x-photo-noise1-scale-waifu2x-photo-noise1-scale.jpg
+  src: "/media/tours/klassicheskaya-programma-po-gvatemale/hero-src-enhanced-20261007.webp"
   alt: 'На фото: Антигуа-Гуатемала в Гватемале'
 routeCountries:
 - country_guatemala

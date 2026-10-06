@@ -67,7 +67,7 @@ itinerary:
 
     Вечером - ужин, также включенный в стоимость.
   images:
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: 'на фото: Богота- столица Колумбии'
 - day: 3
   title: Река Гуаяберо и источник Cajuche
@@ -133,7 +133,7 @@ itinerary:
 
     В назначенное время трансфер в международный аэропорт Эль-Дорадо для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/bogota%20colombia.png
+  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: 'на фото: Богота- столица Колумбии'
 included:
 - Чартерный авиабилет Богота - Ла-Макарена - Богота.

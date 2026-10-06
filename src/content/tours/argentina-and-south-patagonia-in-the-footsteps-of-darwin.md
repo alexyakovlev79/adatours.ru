@@ -49,7 +49,7 @@ itinerary:
       
       Гиды проверят личное снаряжение каждого участника и помогут при необходимости арендовать или купить недостающее в местных магазинах. Вечером состоится встреча группы и разговор о предстоящей экспедиции.
     images:
-      - src: https://brasiltours.ru/image/acungauaa2.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
         alt: "Аконкагуа и горный маршрут в Андах"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -64,7 +64,7 @@ itinerary:
       
       Питание: завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/mendoza1.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
         alt: "Мендоса и Анды"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -81,7 +81,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: https://brasiltours.ru/image/acungau3.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-enhanced-20261006.webp
         alt: "Горный маршрут на Аконкагуа"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -113,7 +113,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: https://brasiltours.ru/image/acungauaa2.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
         alt: "Аконкагуа и горный маршрут в Андах"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -125,7 +125,7 @@ itinerary:
       
       Питание: завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/mendoza1.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
         alt: "Мендоса и Анды"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -140,7 +140,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: https://brasiltours.ru/image/acungau3.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-enhanced-20261006.webp
         alt: "Горный маршрут на Аконкагуа"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -153,7 +153,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: https://brasiltours.ru/image/mendoza1.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
         alt: "Мендоса и Анды"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -165,7 +165,7 @@ itinerary:
       
       Питание: завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/mendoza1.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
         alt: "Мендоса и Анды"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -180,7 +180,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: https://brasiltours.ru/image/acungauaa2.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
         alt: "Аконкагуа и горный маршрут в Андах"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -195,7 +195,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: https://brasiltours.ru/image/acungauaa2.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
         alt: "Аконкагуа и горный маршрут в Андах"
         intendedSlot: "itinerary:day-11"
   - day: 12
@@ -205,7 +205,7 @@ itinerary:
     text: |-
       День отдыха и дальнейшей акклиматизации.
     images:
-      - src: https://brasiltours.ru/image/mendoza1.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
         alt: "Мендоса и Анды"
         intendedSlot: "itinerary:day-12"
   - day: 13
@@ -220,7 +220,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: https://brasiltours.ru/image/acungau3.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-enhanced-20261006.webp
         alt: "Горный маршрут на Аконкагуа"
         intendedSlot: "itinerary:day-13"
   - day: 14
@@ -233,7 +233,7 @@ itinerary:
       
       Личное снаряжение каждый участник переносит сам. Групповое снаряжение поднимают портеры.
     images:
-      - src: https://brasiltours.ru/image/acungauaa2.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
         alt: "Аконкагуа и горный маршрут в Андах"
         intendedSlot: "itinerary:day-14"
   - day: 15
@@ -246,7 +246,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: https://brasiltours.ru/image/mendoza1.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
         alt: "Мендоса и Анды"
         intendedSlot: "itinerary:day-15"
   - day: 16
@@ -261,7 +261,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: https://brasiltours.ru/image/acungau3.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-enhanced-20261006.webp
         alt: "Горный маршрут на Аконкагуа"
         intendedSlot: "itinerary:day-16"
   - day: 17
@@ -277,7 +277,7 @@ itinerary:
       
       Питание: завтрак, обед.
     images:
-      - src: https://brasiltours.ru/image/acungauaa2.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
         alt: "Аконкагуа и горный маршрут в Андах"
         intendedSlot: "itinerary:day-17"
   - day: 18
@@ -287,7 +287,7 @@ itinerary:
     text: |-
       Завтрак. Трансфер в аэропорт или на автовокзал.
     images:
-      - src: https://brasiltours.ru/image/acungau3.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-enhanced-20261006.webp
         alt: "Горный маршрут на Аконкагуа"
         intendedSlot: "itinerary:day-18"
   - day: 19
@@ -299,7 +299,7 @@ itinerary:
       
       Команда придерживается этого маршрута как базовой схемы. Погодные условия и форс-мажор могут потребовать изменений.
     images:
-      - src: https://brasiltours.ru/image/mendoza1.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
         alt: "Мендоса и Анды"
         intendedSlot: "itinerary:day-19"
   - day: 20
@@ -311,7 +311,7 @@ itinerary:
       
       Команда придерживается этого маршрута как базовой схемы. Погодные условия и форс-мажор могут потребовать изменений.
     images:
-      - src: https://brasiltours.ru/image/mendoza1.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
         alt: "Мендоса и Анды"
         intendedSlot: "itinerary:day-20"
 included:

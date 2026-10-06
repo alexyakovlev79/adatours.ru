@@ -128,7 +128,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/El%20Calafate%20ADA.png
     alt: 'на фото: Эль Калафате в Аргентине'
-  - src: https://brasiltours.ru/image/mendoza1.png
+  - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: винный регион Мендоса (Мендоза) в Аргентине'
 - day: 7
   title: Калафате и ледник Перито-Морено

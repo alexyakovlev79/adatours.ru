@@ -85,7 +85,7 @@ itinerary:
       
       Этот район является биосферным заповедником и воротами к Северному Ледяному полю Патагонии. Помимо самого парка, маршрут проходит через окружающие фьорды, каналы, острова и бухты.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-left.jpg
+      - src: /media/tours/issledovanie-argentiny/itinerary-day-5-enhanced-20261006.webp
         alt: "Национальный парк Сан-Рафаэль"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -98,7 +98,7 @@ itinerary:
       
       Во время морского дня открываются виды на горные хребты, а экспедиционная команда проводит лекции и презентации. Темы программы связаны с коренными народами региона, первыми испанскими колонизаторами, исследователями Патагонии, в том числе Чарльзом Дарвином, Фицроем и Альберто де Агостини, а также с местной флорой и фауной.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-geral-middle.jpg
+      - src: /media/tours/patagoniya-i-chilijskie-fordy/itinerary-day-4-enhanced-20261006.webp
         alt: "Залив Пеньяс, Патагония"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -142,7 +142,7 @@ itinerary:
       
       Маршрут включает побережье морского парка Франсиско Колоане, охраняемого места кормления китов. Возможны встречи с горбатыми китами или сейвалами, а также с дельфинами, морскими львами, пингвинами, альбатросами и буревестниками.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-left.jpg
+      - src: /media/tours/issledovanie-argentiny/itinerary-day-5-enhanced-20261006.webp
         alt: "Пролив Магеллана и Огненная Земля"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -159,7 +159,7 @@ itinerary:
       
       Цель дня - исследование фьорда Гарибальди, если позволяют условия.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/3787424-original.jpg
+      - src: /media/tours/patagoniya-i-chilijskie-fordy/itinerary-day-8-enhanced-20261006.webp
         alt: "Пролив Бигль и фьорд Гарибальди"
         intendedSlot: "itinerary:day-8"
   - day: 9

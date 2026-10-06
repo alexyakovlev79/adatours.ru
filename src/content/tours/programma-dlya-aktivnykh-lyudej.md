@@ -29,7 +29,7 @@ route:
 priceFrom: null
 dates: []
 hero:
-  src: https://brasiltours.ru/image/patagonia.png
+  src: /media/tours/programma-dlya-aktivnykh-lyudej/hero-enhanced-20261006.webp
   alt: "Патагония"
 gallery: []
 featured: false

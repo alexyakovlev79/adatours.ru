@@ -38,7 +38,7 @@ itinerary:
   text: Прибытие в Буэнос-Айрес. В международном аэропорту вас встретит водитель. Частный трансфер доставит в отель в центре
     города.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
     alt: 'на фото: Буэнос Айрес, Аргентина'
 - day: 2
   title: Буэнос-Айрес и танго-шоу
@@ -115,7 +115,7 @@ itinerary:
 
     По прибытии трансфер из аэропорта в отель в центре города.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
     alt: 'на фото: Буэнос Айрес, Аргентина'
 - day: 8
   title: Буэнос-Айрес - Сальта
@@ -244,7 +244,7 @@ itinerary:
   - Буэнос-Айрес
   text: Частный трансфер из отеля в аэропорт.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
     alt: 'на фото: Буэнос Айрес, Аргентина'
 included:
 - Проживание в отелях 4-5* на базе завтраков

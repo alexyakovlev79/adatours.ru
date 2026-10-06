@@ -478,7 +478,7 @@ itinerary:
   - Буэнос-Айрес
   text: Трансфер в аэропорт, около **40 минут**.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
     alt: Буэнос-Айрес
 included:
 - Проживание в отелях по программе на базе завтраков.

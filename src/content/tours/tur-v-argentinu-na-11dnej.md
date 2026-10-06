@@ -183,7 +183,7 @@ itinerary:
 
       Во время экскурсии пейзажи постоянно меняются: скалистые горы, серые реки, долины и голубые озера. Вы прогуляетесь вдоль реки Пипо, увидите гору Сусана, остров Редонда, залив Энсенада и озеро Рока.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-left.jpg
+      - src: /media/tours/issledovanie-argentiny/itinerary-day-5-enhanced-20261006.webp
         alt: "Национальный парк Огненная Земля"
         intendedSlot: "itinerary:day-7"
 

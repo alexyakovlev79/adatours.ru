@@ -113,7 +113,7 @@ itinerary:
 
       Возвращение в отель после морской экскурсии, трансфер не включен.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg
+      - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
         alt: "Ушуайя и Огненная Земля"
         intendedSlot: "itinerary:day-4"
 

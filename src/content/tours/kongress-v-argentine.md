@@ -26,7 +26,7 @@ priceFrom: 1285
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/sasha-stories-vynkvknewja-1200.jpg
+  src: /media/tours/kongress-v-argentine/hero-enhanced-20261006.webp
   alt: "Улица Буэнос-Айреса"
 gallery: []
 featured: false
@@ -63,7 +63,7 @@ itinerary:
       
       Экскурсия проходит с гидом и на комфортном транспорте. Вечером запланированы ужин и танго-шоу в Michelangelo Tango. Частные трансферы на вечернюю программу включены.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg
+      - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
         alt: "Каса-Росада в Буэнос-Айресе"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -83,7 +83,7 @@ itinerary:
       
       Вечером запланирован ужин в итальянском ресторане Piegari Carnes, меню Diamond.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/excursiya-tigre-2.jpg
+      - src: /media/tours/kongress-v-argentine/itinerary-day-3-enhanced-20261006.webp
         alt: "Тигре и дельта Параны"
         intendedSlot: "itinerary:day-3"
   - day: 4

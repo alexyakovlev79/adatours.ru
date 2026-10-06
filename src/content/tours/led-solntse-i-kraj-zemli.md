@@ -68,7 +68,7 @@ itinerary:
 
     Это групповая программа без отдельного гида.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []

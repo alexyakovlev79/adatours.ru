@@ -116,7 +116,7 @@ priceFrom: 1650
 currency: USD
 priceNote: $1650
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg
+  src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
   alt: 'На фото: Резиденция Каса Росада, Аргентина'
 routeCountries:
 - country_argentina

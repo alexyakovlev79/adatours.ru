@@ -127,7 +127,7 @@ itinerary:
 
       Эстансия Эль-Педраль расположена в месте, где суровая береговая линия, ветер и море задают всему дню особое настроение. Это полноценная природная экскурсия, а не короткая остановка у колонии. После программы - возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-left.jpg
+      - src: /media/tours/issledovanie-argentiny/itinerary-day-5-enhanced-20261006.webp
         alt: "На фото: Пингвины в Аргентине"
         intendedSlot: "itinerary:day-5"
 
@@ -301,7 +301,7 @@ itinerary:
     text: |-
       Регулярный трансфер в аэропорт и перелет Aerolineas Argentinas. В Буэнос-Айресе вас встретят и доставят частным трансфером в отель Dazzler.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg
+      - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
         alt: "На фото: Резиденция Каса Росада, Аргентина"
         intendedSlot: "itinerary:day-15"
 

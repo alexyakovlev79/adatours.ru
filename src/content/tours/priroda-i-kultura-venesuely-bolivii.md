@@ -43,7 +43,7 @@ itinerary:
 
     Обед запланирован в традиционном ресторане и оплачивается отдельно. После экскурсии возвращение в отель и ночевка.
   images:
-  - src: https://brasiltours.ru/image/Caracas.png
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp"
     alt: Каракас
 - day: 2
   title: Вторник - архипелаг Лос-Рокес
@@ -144,7 +144,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Caracas.png
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp"
     alt: Каракас
 - day: 8
   title: Понедельник - Каракас - Ла-Пас
@@ -222,7 +222,7 @@ itinerary:
   images:
   - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
     alt: Ла Пас
-  - src: https://brasiltours.ru/image/Caracas.png
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp"
     alt: Каракас
 included:
 - проживание в отелях 4*, кампаменто и посадах;

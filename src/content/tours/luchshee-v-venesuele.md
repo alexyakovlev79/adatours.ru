@@ -102,7 +102,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/Canaima%20National%20Park%201.png
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-9-enhanced-20261007.webp"
     alt: 'На фото: водопад Сальта-Анхель в Венесуэле'
 - day: 6
   title: ', суббота. Канайма'

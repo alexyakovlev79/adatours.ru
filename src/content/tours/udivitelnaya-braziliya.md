@@ -96,7 +96,7 @@ itinerary:
 
     После обеда можно отдохнуть в гамаках или искупаться в естественных водоемах. Затем продолжаем путь в Бонито. По прибытии предусмотрен рафтинг.
   images:
-  - src: https://brasiltours.ru/image/bonito%20neew1.png
+  - src: "/media/tours/udivitelnaya-braziliya/itinerary-day-6-enhanced-20261007.webp"
     alt: Бонито
   - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
     alt: Пантанал
@@ -119,7 +119,7 @@ itinerary:
 
     Ночь в отеле Бонито.
   images:
-  - src: https://brasiltours.ru/image/bonito1.png
+  - src: "/media/tours/udivitelnaya-braziliya/itinerary-day-7-enhanced-20261007.webp"
     alt: Бонито
 - day: 8
   title: Бонито - Манаус
@@ -133,7 +133,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Манаус
-  - src: https://brasiltours.ru/image/countries/brazil/bonito-riding.jpg
+  - src: "/media/tours/udivitelnaya-braziliya/itinerary-day-8-images-1-enhanced-20261007.webp"
     alt: Бонито
 - day: 9
   title: Манаус

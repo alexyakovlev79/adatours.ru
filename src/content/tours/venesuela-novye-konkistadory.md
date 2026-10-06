@@ -72,7 +72,7 @@ itinerary:
 
     Питание: обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/nacionalnyi-park-kanaima.jpg
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp"
     alt: Канайма
 - day: 5
   title: ', пятница: Сальто-Анхель'
@@ -87,7 +87,7 @@ itinerary:
 
     Важно: экскурсия занимает весь день и рассчитана на активных туристов. Вас ждут поездка в моторной лодке, переход и небольшой трекинг. Нужны удобная обувь, сменная одежда и дождевик.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/nacionalnyi-park-kanaima.jpg
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp"
     alt: Канайма
 - day: 6
   title: ', суббота: свободное время в Канайме'
@@ -100,7 +100,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/nacionalnyi-park-kanaima.jpg
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp"
     alt: Канайма
 - day: 7
   title: ', воскресенье: Каракас'
@@ -156,7 +156,7 @@ itinerary:
 
     Дополнительно в Мериде можно посетить фуникулер Мукумбари протяженностью 12,5 км с максимальной высотой 4765 м, дом-музей игрушек, ботанический сад или андийский рынок. Билет на фуникулер оплачивается на месте.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/venezuela-merida.jpg
+  - src: "/media/tours/venesuela-novye-konkistadory/itinerary-day-11-enhanced-20261007.webp"
     alt: Мерида
 - day: 12
   title: ', пятница: Мерида, Каракас'
@@ -168,7 +168,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/venezuela-merida.jpg
+  - src: "/media/tours/venesuela-novye-konkistadory/itinerary-day-11-enhanced-20261007.webp"
     alt: Мерида
 included:
 - 'проживание по программе: отели 4*, посада, кампаменто и поместье;'

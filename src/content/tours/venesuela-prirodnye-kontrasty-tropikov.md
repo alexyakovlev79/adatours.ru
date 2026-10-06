@@ -70,7 +70,7 @@ itinerary:
 
     Питание: легкий завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/nacionalnyi-park-kanaima.jpg
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp"
     alt: Канайма
 - day: 5
   title: ', пятница: Сальто-Анхель на целый день'
@@ -98,7 +98,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/nacionalnyi-park-kanaima.jpg
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp"
     alt: Канайма
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []

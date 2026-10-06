@@ -35,7 +35,7 @@ itinerary:
 
     **Питание:** ужин.
   images:
-  - src: https://brasiltours.ru/image/Caracas.png
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp"
     alt: Каракас
 - day: 2
   title: ', вторник. Сан-Франциско-де-Юруани'
@@ -125,7 +125,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/Canaima%20National%20Park%201.png
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-9-enhanced-20261007.webp"
     alt: Канайма
 - day: 10
   title: ', среда. Сальто Анхель, Сапо и лагуна Канайма'
@@ -144,7 +144,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/nacionalnyi-park-kanaima.jpg
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp"
     alt: Канайма
 - day: 11
   title: ', четверг. Каракас'
@@ -155,7 +155,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas_3.png
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-11-enhanced-20261007.webp"
     alt: Каракас
 - day: 12
   title: ', пятница. Каракас'
@@ -166,7 +166,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Caracas.png
+  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp"
     alt: Каракас
 included:
 - 'Проживание по программе: отели 4*, посады, кампаменто, палатки и гамаки.'
@@ -199,7 +199,7 @@ priceFrom: 3955
 currency: USD
 priceNote: $3955.
 hero:
-  src: https://brasiltours.ru/image/catalog/product/f/i/file_72_11.png
+  src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/hero-enhanced-20261007.webp"
   alt: 'Активная Венесуэла: Аквапарк Юрского периода'
 routeCountries:
 - country_venezuela

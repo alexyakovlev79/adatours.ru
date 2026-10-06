@@ -51,7 +51,7 @@ itinerary:
 
     По желанию можно забронировать новогодний ужин или вечеринку в одном из отелей на набережной Копакабаны. Стоимость - по запросу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/roan-lavery-qr-8dl0ji3w-unsplash.jpg
+  - src: "/media/tours/tropicheskij-novyj-god-v-brazilii/itinerary-day-2-enhanced-20261007.webp"
     alt: Шампанское и встреча Нового года в Бразилии на пляже Копакабана
   - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
     alt: Статуя Христа Искупителя на горе Корковадо, Рио-де-Жанейро

@@ -1,6 +1,7 @@
 ---
 import PrimaryCTA from './PrimaryCTA.astro';
 import SearchTrigger from './SearchTrigger.astro';
+import ContactActions from './ContactActions.astro';
 import { MOBILE_NAV_LINKS, NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
 
@@ -53,6 +54,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     </nav>
     <div class="mobile-menu__contact">
       <PrimaryCTA href="/contacts/" label="Оставить заявку" />
+      <ContactActions light />
     </div>
   </div>
 </header>
@@ -304,18 +306,24 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
 
     .mobile-menu nav a {
       font-family: var(--font-display);
-      font-size: clamp(1.25rem, 4.6vw, 2rem);
-      line-height: 1.08;
+      font-size: clamp(1.48rem, 5.4vw, 2.35rem);
+      line-height: 1.06;
       letter-spacing: -0.025em;
     }
 
     .mobile-menu__contact {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 14px 22px;
-      padding-top: 4px;
+      display: grid;
+      gap: 18px;
+      padding-top: 6px;
       font-size: 0.82rem;
+    }
+
+    .mobile-menu__contact :global(.cta) {
+      width: min(100%, 360px);
+    }
+
+    .mobile-menu__contact :global(.contact-actions) {
+      gap: 10px 18px;
     }
   }
 </style>

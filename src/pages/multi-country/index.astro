@@ -16,9 +16,13 @@ import { compareToursBySalesFit } from '../../lib/tour-ranking';
 import { countryPath, mainTourCountries, tourPath } from '../../lib/routes';
 import { withBase } from '../../lib/paths';
 
-const multiCountryTours = (await getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data)))
-  .filter((entry) => mainTourCountries(entry.data).length > 1)
-  .sort(compareToursBySalesFit);
+const [tourEntries, countryEntries] = await Promise.all([
+  getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
+  getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
+]);
+const allTours = [...tourEntries].sort(compareToursBySalesFit);
+const multiCountryTours = allTours.filter((entry) => mainTourCountries(entry.data).length > 1);
+const countryEntryById = new Map(countryEntries.map((entry) => [entry.data.id, entry]));
 
 const catalogPages = paginateCatalog(multiCountryTours, '/multi-country/');
 const firstCatalogPage = catalogPages[0];
@@ -38,6 +42,41 @@ for (const entry of multiCountryTours) {
 const popularCountries = [...countryCounts.values()]
   .sort((a, b) => b.count - a.count || a.country.name.localeCompare(b.country.name, 'ru'))
   .slice(0, 5);
+
+const usedBackdropTourIds = new Set(visibleTours.map((entry) => entry.data.id));
+const usedBackdropImages = new Set(visibleTours.map((entry) => entry.data.hero?.src).filter(Boolean));
+const countryBands = popularCountries.map(({ country, count }) => {
+  let coverTour;
+  for (let index = multiCountryTours.length - 1; index >= 0; index--) {
+    const candidate = multiCountryTours[index];
+    const image = candidate.data.hero?.src;
+    if (!image
+      || usedBackdropTourIds.has(candidate.data.id)
+      || usedBackdropImages.has(image)
+      || !mainTourCountries(candidate.data).some((item) => item.id === country.id)) continue;
+    coverTour = candidate;
+    break;
+  }
+  if (!coverTour?.data.hero?.src) {
+    throw new Error(`No unique off-page multi-country cover found for ${country.name}`);
+  }
+  usedBackdropTourIds.add(coverTour.data.id);
+  usedBackdropImages.add(coverTour.data.hero.src);
+  return {
+    country,
+    count,
+    image: coverTour.data.hero.src,
+    coverTourId: coverTour.data.id,
+    imageTextAlign: countryEntryById.get(country.id)?.data.imageTextAlign,
+  };
+});
+
+const allToursCover = allTours.find((entry) => {
+  const image = entry.data.hero?.src;
+  return mainTourCountries(entry.data).length === 1 && Boolean(image) && !usedBackdropImages.has(image);
+});
+if (!allToursCover?.data.hero?.src) throw new Error('No unique single-country cover found for the all-tours band');
+usedBackdropImages.add(allToursCover.data.hero.src);
 
 const durations = multiCountryTours
   .map((entry) => entry.data.durationDays)
@@ -185,26 +224,36 @@ const listSchema = pagination ? {
     dark
   />
 
-  <section class="multi-links section--tight">
-    <div class="container multi-links__grid">
-      <div>
-        <p class="eyebrow">Продолжить выбор</p>
-        <h2>Страны, которые чаще встречаются в multi-country маршрутах</h2>
+  <section class="multi-links">
+    <div class="container section--tight multi-links__intro">
+      <p class="eyebrow">Продолжить выбор</p>
+      <h2>Страны, которые чаще встречаются в multi-country маршрутах</h2>
+    </div>
+
+    {countryBands.map(({ country, count, image, coverTourId, imageTextAlign }, index) => (
+      <div data-country-band={country.id} data-cover-tour={coverTourId}>
+        <DestinationBand
+          headingTag="h3"
+          eyebrow={countLabel(count, ['маршрут', 'маршрута', 'маршрутов'])}
+          title={country.name}
+          image={image}
+          imageTextAlign={imageTextAlign}
+          href={countryPath(country)}
+          align={index % 2 === 1 ? 'right' : 'left'}
+        />
       </div>
-      <nav aria-label="Популярные страны в multi-country маршрутах">
-        {popularCountries.map(({ country, count }) => (
-          <a href={withBase(countryPath(country))}>
-            <span>{country.name}</span>
-            <small>{countLabel(count, ['маршрут', 'маршрута', 'маршрутов'])}</small>
-            <span aria-hidden="true">↗</span>
-          </a>
-        ))}
-        <a href={withBase('/tours/')}>
-          <span>Все туры Ada Tours</span>
-          <small>Полный каталог</small>
-          <span aria-hidden="true">↗</span>
-        </a>
-      </nav>
+    ))}
+
+    <div data-all-tours-cover={allToursCover.data.id}>
+      <DestinationBand
+        headingTag="h3"
+        eyebrow="Полный каталог"
+        title="Все туры Ada Tours"
+        text="Все готовые маршруты по Латинской Америке"
+        image={allToursCover.data.hero.src}
+        href="/tours/"
+        align={countryBands.length % 2 === 1 ? 'right' : 'left'}
+      />
     </div>
   </section>
 </BaseLayout>
@@ -223,7 +272,7 @@ const listSchema = pagination ? {
   }
 
   .multi-tours__head h2,
-  .multi-links h2 {
+  .multi-links__intro h2 {
     max-width: 980px;
     margin: 12px 0 22px;
   }
@@ -237,57 +286,9 @@ const listSchema = pagination ? {
 
   .multi-links {
     border-top: 1px solid var(--color-line);
-    border-bottom: 1px solid var(--color-line);
   }
 
-  .multi-links__grid {
-    display: grid;
-    grid-template-columns: .9fr 1.1fr;
-    gap: clamp(40px, 8vw, 120px);
-    align-items: start;
-  }
-
-  .multi-links nav {
-    display: grid;
-    border-top: 1px solid var(--color-line);
-  }
-
-  .multi-links nav a {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    align-items: baseline;
-    gap: 18px;
-    padding: 22px 0;
-    border-bottom: 1px solid var(--color-line);
-    font-family: var(--font-display);
-    font-size: var(--text-lg);
-  }
-
-  .multi-links nav small {
-    color: var(--color-muted);
-    font-family: var(--font-body);
-    font-size: .78rem;
-    letter-spacing: .06em;
-    text-transform: uppercase;
-  }
-
-  @media (max-width: 760px) {
-    .multi-links__grid {
-      grid-template-columns: 1fr;
-    }
-
-    .multi-links nav a {
-      grid-template-columns: 1fr auto;
-    }
-
-    .multi-links nav small {
-      grid-column: 1;
-      grid-row: 2;
-    }
-
-    .multi-links nav a > span:last-child {
-      grid-column: 2;
-      grid-row: 1 / span 2;
-    }
+  .multi-links__intro {
+    padding-bottom: clamp(44px, 7vw, 84px);
   }
 </style>

@@ -2,7 +2,7 @@
 import PrimaryCTA from './PrimaryCTA.astro';
 import SearchTrigger from './SearchTrigger.astro';
 import ContactActions from './ContactActions.astro';
-import { MOBILE_NAV_LINKS, NAV_LINKS } from '../../lib/site';
+import { DMC_NAV_LINKS, MOBILE_NAV_LINKS, NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
 
 interface Props {
@@ -12,6 +12,12 @@ interface Props {
 const { theme = 'light' } = Astro.props;
 const logoWhite = withBase('/brand/adatours-logo-white.svg');
 const logoBlack = withBase('/brand/adatours-logo-black.svg');
+const dmcChildLinks = DMC_NAV_LINKS.slice(1);
+const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) =>
+  link.href === '/dmc/'
+    ? [link, ...dmcChildLinks.map((child) => ({ href: child.href, label: child.label, nested: true }))]
+    : [link]
+);
 ---
 
 <header class:list={['site-header', `site-header--${theme}`]} data-site-header>
@@ -22,7 +28,20 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     </a>
 
     <nav class="desktop-nav" aria-label="Основная навигация">
-      {NAV_LINKS.map((link) => <a href={withBase(link.href)}>{link.label}</a>)}
+      {NAV_LINKS.map((link) => (
+        link.href === '/dmc/' ? (
+          <div class="desktop-nav__group">
+            <a class="desktop-nav__parent" href={withBase(link.href)}>{link.label}</a>
+            <div class="desktop-nav__submenu" aria-label="Для агентств">
+              {dmcChildLinks.map((child) => (
+                <a href={withBase(child.href)}>{child.label}</a>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <a href={withBase(link.href)}>{link.label}</a>
+        )
+      ))}
     </nav>
 
     <div class="desktop-cta">
@@ -50,7 +69,9 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
 
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
     <nav aria-label="Мобильная навигация">
-      {MOBILE_NAV_LINKS.map((link) => <a href={withBase(link.href)}>{link.label}</a>)}
+      {mobileNavItems.map((link) => (
+        <a class:list={{ 'mobile-menu__subitem': 'nested' in link && link.nested }} href={withBase(link.href)}>{link.label}</a>
+      ))}
     </nav>
     <div class="mobile-menu__contact">
       <PrimaryCTA href="/contacts/" label="Оставить заявку" />
@@ -185,11 +206,14 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
   .desktop-nav {
     display: flex;
     flex-wrap: nowrap;
+    align-self: stretch;
+    align-items: center;
     justify-content: center;
     gap: clamp(16px, 2vw, 30px);
   }
 
-  .desktop-nav a {
+  .desktop-nav > a,
+  .desktop-nav__parent {
     white-space: nowrap;
     font-family: var(--font-display);
     font-size: 0.74rem;
@@ -199,8 +223,58 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     opacity: 0.95;
   }
 
-  .desktop-nav a:hover {
+  .desktop-nav > a:hover,
+  .desktop-nav__parent:hover {
     opacity: 0.62;
+  }
+
+  .desktop-nav__group {
+    position: relative;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+  }
+
+  .desktop-nav__submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    display: grid;
+    min-width: 230px;
+    padding: 9px 0;
+    color: var(--color-ink);
+    background: rgb(255 252 248 / 98%);
+    border: 1px solid var(--color-line);
+    box-shadow: 0 14px 30px rgb(19 20 18 / 12%);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -6px);
+    transition:
+      opacity 180ms var(--ease-out),
+      transform 180ms var(--ease-out),
+      visibility 180ms;
+  }
+
+  .desktop-nav__submenu a {
+    padding: 12px 18px;
+    white-space: nowrap;
+    font-family: var(--font-display);
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .055em;
+    text-transform: uppercase;
+  }
+
+  .desktop-nav__submenu a:hover,
+  .desktop-nav__submenu a:focus-visible {
+    background: color-mix(in srgb, var(--color-gold) 18%, transparent);
+  }
+
+  .desktop-nav__group:hover .desktop-nav__submenu,
+  .desktop-nav__group:focus-within .desktop-nav__submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
   }
 
   .desktop-cta {
@@ -309,6 +383,13 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       font-size: clamp(1.48rem, 5.4vw, 2.35rem);
       line-height: 1.06;
       letter-spacing: -0.025em;
+    }
+
+    .mobile-menu nav a.mobile-menu__subitem {
+      margin-left: clamp(18px, 5vw, 34px);
+      color: rgba(255,255,255,.72);
+      font-size: clamp(1.08rem, 4.1vw, 1.65rem);
+      line-height: 1.08;
     }
 
     .mobile-menu__contact {

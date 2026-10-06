@@ -12,15 +12,15 @@ hero:
   src: /media/countries/chile/featureBands-1-enhanced-20261002.webp
   alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/t/r/tree_jpg.jpg"
+  - src: "/media/destinations/san-pedro-de-atakama/gallery-1-enhanced-20261006.webp"
     alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/0/1/015v.jpg"
+  - src: "/media/destinations/san-pedro-de-atakama/gallery-2-enhanced-20261006.webp"
     alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN5920_35.jpg"
+  - src: "/media/destinations/san-pedro-de-atakama/gallery-3-enhanced-20261006.webp"
     alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN3987_10.jpg"
+  - src: "/media/destinations/san-pedro-de-atakama/gallery-4-enhanced-20261006.webp"
     alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/I/M/IMG_5330.jpg"
+  - src: "/media/destinations/san-pedro-de-atakama/gallery-5-enhanced-20261006.webp"
     alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
 facts: []
 featureBands: []

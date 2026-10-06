@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Сантьяго-де-Чили: площадь Пласа-де-Армас, дворец Ла-Монеда, городские музеи и район Беллависта. Из столицы можно поехать к виноградникам Конча Торо."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/chile/santyago.jpg"
+  src: "/media/destinations/santyago-de-chili/hero-enhanced-20261006.webp"
   alt: "На фото: столица Чили. город Сантьяго-де-Чили"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/category/p/h/photo_lg_santiago.jpg"

@@ -18,9 +18,9 @@ gallery:
     alt: "На фото: парк Торрес дель Пайне в Чили"
   - src: "/media/destinations/puerto-natales-torres-del-pajne/gallery-3-enhanced-20261005.webp"
     alt: "На фото: парк Торрес дель Пайне в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN17764_15.jpg"
+  - src: "/media/destinations/puerto-natales-torres-del-pajne/gallery-4-enhanced-20261006.webp"
     alt: "На фото: парк Торрес дель Пайне в Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/n/o/normal_97673_photo.jpg"
+  - src: "/media/destinations/puerto-natales-torres-del-pajne/gallery-5-enhanced-20261006.webp"
     alt: "На фото: парк Торрес дель Пайне в Чили"
 facts: []
 featureBands: []

@@ -22,7 +22,7 @@ gallery:
     alt: ""
   - src: "https://brasiltours.ru/image/lapa%20at%20ni.11png.png"
     alt: ""
-  - src: "https://brasiltours.ru/image/countries/brazil/bohemian-lapa.png"
+  - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp"
     alt: ""
 route:
   - "Рио-де-Жанейро"

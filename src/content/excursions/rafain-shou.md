@@ -15,7 +15,7 @@ priceFrom: 138
 currency: "USD"
 priceNote: "Стоимость — $150. Тарифы: 1 PAX — $247; 2 PAX — $138; 3 PAX — $150."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/rafain-show-in-inguazu-waifu2x-noise1-1920.jpg"
+  src: "/media/excursions/rafain-shou/hero-enhanced-20261006.webp"
   alt: "На фото: Танцоры на Рафаин-шоу"
 gallery:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp

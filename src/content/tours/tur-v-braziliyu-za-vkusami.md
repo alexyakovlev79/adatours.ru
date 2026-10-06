@@ -93,7 +93,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи в Рио-де-Жанейро, Бразилия'
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/ilha-grande-rj.jpg
+  - src: /media/tours/tur-v-braziliyu-za-vkusami/hero-enhanced-20261006.webp
     alt: 'На фото: пляжи Илья Гранди. Бразилия'
 - day: 5
   title: 'Илья-Гранди: морская прогулка'
@@ -108,7 +108,7 @@ itinerary:
 
     Этот день почти полностью посвящен морю и островной природе.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/ilha-grande-rj.jpg
+  - src: /media/tours/tur-v-braziliyu-za-vkusami/hero-enhanced-20261006.webp
     alt: 'На фото: пляжи Илья Гранди. Бразилия'
 - day: 6
   title: Илья-Гранди - Парати
@@ -126,7 +126,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: 'На фото: город Парати. Бразилия'
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/ilha-grande-rj.jpg
+  - src: /media/tours/tur-v-braziliyu-za-vkusami/hero-enhanced-20261006.webp
     alt: 'На фото: пляжи Илья Гранди. Бразилия'
 - day: 7
   title: Парати
@@ -141,7 +141,7 @@ itinerary:
 
     После экскурсии останется время, чтобы еще раз пройти по историческому центру и спокойно посмотреть на город без группы.
   images:
-  - src: https://brasiltours.ru/image/paraty%201.png
+  - src: /media/tours/tur-v-braziliyu-za-vkusami/itinerary-day-7-enhanced-20261006.webp
     alt: 'На фото: город Парати. Бразилия'
 - day: 8
   title: Парати - Рио-де-Жанейро
@@ -177,7 +177,7 @@ priceFrom: 1509
 currency: USD
 priceNote: $1509
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/ilha-grande-rj.jpg
+  src: /media/tours/tur-v-braziliyu-za-vkusami/hero-enhanced-20261006.webp
   alt: 'На фото: пляжи Илья Гранди. Бразилия'
 routeCountries:
 - country_brazil

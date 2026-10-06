@@ -32,7 +32,7 @@ itinerary:
 
     После размещения свободный день. По дороге в город видны зеленые холмы, скалистые горы, пальмы и бухты. Вечером склоны загораются огнями. Копакабана и Ипанема дают первое знакомство с пляжной частью Рио: черно-белые набережные, океан и открытые кафе.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bohemian-lapa.png
+  - src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp
     alt: 'На фото: район Лапа в Рио-де-Жанейро в Бразилии'
 - day: 2
   title: Сахарная Голова
@@ -45,7 +45,7 @@ itinerary:
 
     Продолжительность экскурсии - 4 часа.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-0589.JPG
+  - src: /media/tours/special-noe-predlozhenie-rio-and-vodopa-dy-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Королевский Петрополис в Рио-де-Жанейро в Бразилии'
 - day: 3
   title: Исторический Рио и Корковадо
@@ -60,7 +60,7 @@ itinerary:
 
     Продолжительность экскурсии - 4 часа.
   images:
-  - src: https://brasiltours.ru/image/christ%20rio.png
+  - src: /media/tours/special-noe-predlozhenie-rio-and-vodopa-dy-iguasu/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: статуя Христа в Рио-де-Жанейро в Бразилии'
 - day: 4
   title: Свободный день в Рио
@@ -93,7 +93,7 @@ itinerary:
 
     Предусмотрен групповой вариант с англоговорящим гидом и индивидуальный вариант с русскоговорящим гидом, минимум 2 человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bohemian-lapa.png
+  - src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp
     alt: 'На фото: район Лапа в Рио-де-Жанейро в Бразилии'
 - excursionRef: excursion_source_rio_nochyu
   places: []
@@ -126,7 +126,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
-  - src: https://brasiltours.ru/image/countries/brazil/img-0589.JPG
+  - src: /media/tours/special-noe-predlozhenie-rio-and-vodopa-dy-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Королевский Петрополис в Рио-де-Жанейро в Бразилии'
 - excursionRef: excursion_source_rafain_shou
   places: []
@@ -195,7 +195,7 @@ priceFrom: 1865
 currency: USD
 priceNote: $1865
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/guilherme-madaleno-1139415-unsplash.jpg
+  src: /media/tours/special-noe-predlozhenie-rio-and-vodopa-dy-iguasu/hero-enhanced-20261006.webp
   alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
 routeCountries:
 - country_brazil

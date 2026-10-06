@@ -25,7 +25,7 @@ gallery:
     alt: Городской театр Рио-де-Жанейро
   - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-24-12-49-54-294.jpg
     alt: Историческая архитектура центра Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/bohemian-lapa.png
+  - src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp
     alt: Район Лапа в Рио-де-Жанейро
   - src: https://brasiltours.ru/image/lapa%20at%20ni.11png.png
     alt: Лапа в вечернем Рио-де-Жанейро

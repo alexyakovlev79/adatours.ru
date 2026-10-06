@@ -222,7 +222,7 @@ priceFrom: 2775
 currency: USD
 priceNote: $2775
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/joshua-woroniecki-qpoyy5irdy-unsplash-33.jpg
+  src: /media/tours/mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej/hero-enhanced-20261006.webp
   alt: Бутылка на песке, приключения в Латинской Америке
 routeCountries:
 - country_brazil

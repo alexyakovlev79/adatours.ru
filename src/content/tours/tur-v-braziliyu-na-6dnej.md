@@ -75,7 +75,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/christ%20rio.png
+  - src: /media/tours/special-noe-predlozhenie-rio-and-vodopa-dy-iguasu/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: статуя Христа Спасителя с городе Рио-де-Жанейро, Бразилия'
 - day: 4
   title: Рио-де-Жанейро - Игуасу

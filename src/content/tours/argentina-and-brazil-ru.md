@@ -139,7 +139,7 @@ itinerary:
 
     На высоте около 700 м над уровнем моря находится статуя Христа-Искупителя высотой 38 м, возведенная в 1931 году. С вершины открывается панорама Рио: залив Гуанабара, мост Нитерой, Ботанический сад, стадион Маракана, Сахарная Голова и городские районы. Отсюда особенно хорошо видно, как город располагается между океаном, заливами и гранитными вершинами.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/corcovado.png
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: Статуя Христа-Искупителя, Рио-де-Жанейро'
 - day: 10
   title: Рио-де-Жанейро
@@ -147,7 +147,7 @@ itinerary:
   - Рио-де-Жанейро
   text: Завтрак в отеле. Трансфер с водителем в аэропорт Рио-де-Жанейро для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/red-beach-2.png
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-10-enhanced-20261006.webp
     alt: 'На фото: Вид на гору Пан-ди-Асукар в Рио'
 included:
 - Проживание в отелях по программе

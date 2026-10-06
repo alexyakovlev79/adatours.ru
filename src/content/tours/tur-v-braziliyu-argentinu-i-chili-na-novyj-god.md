@@ -77,9 +77,9 @@ itinerary:
 
     Главная часть праздника проходит непосредственно у океана. Фейерверки запускают с воды, поэтому свет отражается в волнах и визуально соединяет море и небо. Концертные площадки работают вдоль пляжа, а вся Копакабана становится одной большой праздничной зоной.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-4.jpg
+  - src: /media/excursions/ekskursiya-k-statue-khrista-iskupitelya/hero-enhanced-20261006.webp
     alt: Статуя Христа Искупителя на горе Корковадо
-  - src: https://brasiltours.ru/image/new_year_3.png
+  - src: /media/tours/tur-v-braziliyu-argentinu-i-chili-na-novyj-god/itinerary-day-2-images-1-enhanced-20261006.webp
     alt: Люди в белых одеждах на пляже Копакабана
 - day: 3
   title: ', 1 января. Сахарная Голова и обзорная экскурсия по Рио'
@@ -178,7 +178,7 @@ itinerary:
   images:
   - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Панорама водопадов Игуасу с бразильской стороны
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/8.jpg
+  - src: /media/tours/tur-v-braziliyu-argentinu-i-chili-na-novyj-god/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: Исторические здания и район Сан-Тельмо в Аргентине,  Буэнос-Айрес
 - day: 7
   title: ', 5 января. Буэнос-Айрес и танго-шоу'
@@ -278,7 +278,7 @@ priceFrom: 4568
 currency: USD
 priceNote: $4568
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny8.jpg
+  src: /media/tours/tur-v-braziliyu-argentinu-i-chili-na-novyj-god/hero-enhanced-20261006.webp
   alt: Новогодний салют на пляже Копакабана
 routeCountries:
 - country_brazil

@@ -16,7 +16,7 @@ priceFrom: 359
 currency: USD
 priceNote: "Стоимость — $359 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-4.jpg
+  src: /media/excursions/ekskursiya-k-statue-khrista-iskupitelya/hero-enhanced-20261006.webp
   alt: Статуя Христа-Искупителя над Рио-де-Жанейро
 gallery:
   - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp

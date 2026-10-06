@@ -90,7 +90,7 @@ itinerary:
 
     После размещения день остается свободным. Можно выйти к Копакабане или Ипанеме, попробовать свежие фруктовые соки в пляжных кафе, пройтись вдоль океана или просто отдохнуть после перелета. Впереди несколько очень насыщенных дней, поэтому первый вечер удобно оставить без жесткого графика.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Дети плещутся в океане на пляже Рио-де-Жанейро, летний отдых и счастье
 - day: 2
   title: Рио-де-Жанейро и Корковадо
@@ -105,7 +105,7 @@ itinerary:
 
     Вечером можно самостоятельно отправиться к Арпоадору. На камнях у океана собираются люди, чтобы встретить закат. Когда солнце уходит за горизонт, зрители часто аплодируют. Это спокойный контраст с тем, что ждет на следующий вечер.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Дети плещутся в океане на пляже Рио-де-Жанейро, летний отдых и счастье
 - day: 3
   title: Рио-де-Жанейро и Карнавал на Самбадроме
@@ -120,7 +120,7 @@ itinerary:
 
     Парад продолжается всю ночь. После его окончания предусмотрен трансфер обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Дети плещутся в океане на пляже Рио-де-Жанейро, летний отдых и счастье
 - day: 4
   title: Сахарная Голова и старый Рио
@@ -141,7 +141,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Дети плещутся в океане на пляже Рио-де-Жанейро, летний отдых и счастье
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -162,7 +162,7 @@ itinerary:
   images:
   - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
     alt: Джунгли и водопады Игуасу в Бразилии и Аргентине, каскады и тропический лес
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Дети плещутся в океане на пляже Рио-де-Жанейро, летний отдых и счастье
 - day: 6
   title: Бразильская сторона водопадов Игуасу
@@ -277,7 +277,7 @@ itinerary:
   images:
   - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-10-enhanced-20261006.webp
     alt: Пляжный отдых на курорте Бузиос в Бразилии, белый песок и бирюзовая вода
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Дети плещутся в океане на пляже Рио-де-Жанейро, летний отдых и счастье
 - day: 11
   title: Бузиос
@@ -301,7 +301,7 @@ itinerary:
   images:
   - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-10-enhanced-20261006.webp
     alt: Пляжный отдых на курорте Бузиос в Бразилии, белый песок и бирюзовая вода
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Дети плещутся в океане на пляже Рио-де-Жанейро, летний отдых и счастье
 included:
 - При желании пляжную часть в Бузиосе можно заменить отдыхом в Ангра-дус-Рейс по системе «все включено». Минимальная продолжительность

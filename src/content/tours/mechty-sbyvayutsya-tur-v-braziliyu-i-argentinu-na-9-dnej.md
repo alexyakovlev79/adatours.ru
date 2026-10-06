@@ -142,7 +142,7 @@ itinerary:
 
     На аргентинской стороне можно выбрать маршруты разной длины и увидеть каскады сверху и снизу. По переходам вы подходите к тем участкам реки, которые с бразильской стороны были видны только издалека. В лесу вокруг водопадов встречаются птицы и коати, а густая растительность подходит вплотную к дорожкам.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba2.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-9-enhanced-20261006.webp
     alt: Ночной Буэнос-Айрес, небоскребы столицы Аргентины
   - src: /media/tours/luxury-brazil-11d/itinerary/extra-macuco-safari-enhanced-20260930.webp
     alt: Экскурсия на лодке под водопадами Игуасу
@@ -176,7 +176,7 @@ itinerary:
 
     Свободный день можно оставить и без выезда. В таком случае удобно вернуться туда, где во время обзорной экскурсии хотелось задержаться дольше, пройтись по набережной Пуэрто-Мадеро или выбрать ресторан с аргентинским мясом и местным вином. Дополнительные программы рассчитаны на тех, кто хочет добавить к столице еще одну часть региона.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba2.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-9-enhanced-20261006.webp
     alt: Ночной Буэнос-Айрес, небоскребы столицы Аргентины
 - day: 9
   title: Вылет

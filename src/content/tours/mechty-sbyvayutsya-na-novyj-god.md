@@ -169,7 +169,7 @@ itinerary:
 
     После экскурсии трансфер в аэропорт и перелет в Буэнос-Айрес. В аэропорту вас встретит водитель и доставит в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba2.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-9-enhanced-20261006.webp
     alt: Ночной вид на деловой центр Буэнос-Айреса в Аргентине
   - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Джунгли и водопады Игуасу на границе Аргентины и Бразилии, субтропический лес
@@ -242,7 +242,7 @@ itinerary:
 
     Вы увидите 2 страны, встретите начало года у океана и пройдете маршруты по обеим сторонам Игуасу. При этом в программе остаются свободные дни, поэтому путешествие не превращается в непрерывную череду ранних выездов и экскурсий.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba2.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-9-enhanced-20261006.webp
     alt: Ночной вид на деловой центр Буэнос-Айреса в Аргентине
 included:
 - Проживание в отелях по программе.

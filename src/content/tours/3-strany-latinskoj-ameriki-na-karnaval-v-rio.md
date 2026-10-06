@@ -154,7 +154,7 @@ itinerary:
 
     Вечер свободный.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba2.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-9-enhanced-20261006.webp
     alt: Ночной вид на деловой центр Буэнос-Айреса
   - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Граница Аргентины и Бразилии у водопадов Игуасу, каскады и облако брызг над рекой
@@ -202,7 +202,7 @@ itinerary:
 
     Индивидуальная программа с русскоговорящим гидом: **USD 850 с человека**, группа от 2 участников.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba2.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-9-enhanced-20261006.webp
     alt: Ночной вид на деловой центр Буэнос-Айреса
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places: []

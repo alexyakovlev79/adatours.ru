@@ -34,7 +34,7 @@ itinerary:
 
     Можно выйти к океану, посидеть в кафе, заказать холодный сок или кайпиринью и посмотреть, как пляж постепенно превращается в огромное праздничное пространство. У встречи Нового года в Рио есть 3 характерные детали: ночь на пляже, белая одежда и дары богине моря Иемаже.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/3.jpg
+  - src: /media/tours/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu/itinerary-day-1-enhanced-20261006.webp
     alt: Мальчики на пляже в Рио-де-Жанейро, Бразилия – отдых на Копакабане, океан и солнечный день
 - day: 2
   title: 31 декабря, Корковадо и главная новогодняя ночь
@@ -65,7 +65,7 @@ itinerary:
 
     В новогодние дни улицы особенно загружены, поэтому порядок и состав городского маршрута могут корректироваться.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-3.jpg
+  - src: /media/tours/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu/itinerary-day-3-enhanced-20261006.webp
     alt: Канатная дорога на Сахарную голову в Рио-де-Жанейро, подъём к смотровой площадке
 - day: 4
   title: 2 января, перелет в Фос-ду-Игуасу
@@ -171,7 +171,7 @@ priceFrom: 1791
 currency: USD
 priceNote: $1791
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny6.jpg
+  src: /media/tours/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu/hero-enhanced-20261006.webp
   alt: Новогодний салют на пляже Копакабана в Рио-де-Жанейро, встреча Нового года в Бразилии, тысячи людей в белых одеждах,
     праздничный фейерверк
 routeCountries:

@@ -38,7 +38,7 @@ itinerary:
 
     Рио не заканчивается на пляжах. В городе есть старый центр, Ботанический сад, музеи, футбольные матчи и районы, где интереснее просто смотреть на обычную жизнь. В свободное время можно выбрать одну из этих прогулок, а вечером вернуться к океану. Такой первый день дает возможность увидеть город без обязательной экскурсионной схемы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Отдых на лучших пляжах Рио в Бразилии
 - day: 2
   title: Сахарная Голова и старый центр Рио
@@ -55,7 +55,7 @@ itinerary:
 
     После спуска экскурсия продолжается в старом центре. Здесь современные высотки уступают место колониальным фасадам, церквям, монастырям и главному городскому собору. Утром вокруг были ветер и открытая панорама, через несколько часов маршрут идет по более тесным улицам исторического Рио.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Отдых на лучших пляжах Рио в Бразилии
 - day: 3
   title: Свободное время и Карнавал на Самбадроме
@@ -114,7 +114,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Настил над каскадами Игуасу, смотровой мостик к Глотке Дьявола и брызги водопадов
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Отдых на лучших пляжах Рио в Бразилии
 - day: 6
   title: Бразильская сторона водопадов Игуасу

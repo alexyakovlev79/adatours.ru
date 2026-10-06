@@ -58,7 +58,7 @@ itinerary:
 
     До главной новогодней ночи город успевает показать себя в обычном дневном свете. На Копакабане и Ипанеме продолжают готовить площадки, в магазинах и уличных киосках появляется все больше белой одежды, а рестораны заранее собирают праздничные бронирования. Поэтому даже свободное время между экскурсиями воспринимается как часть подготовки к 31 декабря.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Пляжный отдых в Рио-де-Жанейро. Бразилия
 - day: 2
   title: Корковадо, Христос Искупитель и Новый год на Копакабане
@@ -194,7 +194,7 @@ priceFrom: 2056
 currency: USD
 priceNote: $2056
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/daniel-krithinas-9qit7slgnwo-unsplash.jpg
+  src: /media/tours/nezabyvaemyj-novyj-god-v-rio/hero-enhanced-20261006.webp
   alt: 'На фото: празднование Нового Года на берегу океана в Рио-де-Жанейро. Бразилия'
 routeCountries:
 - country_brazil

@@ -169,7 +169,7 @@ itinerary:
 
     Маршрут продолжится через Ла-Боку, Сан-Тельмо, Реколету, район Обелиска и современный Пуэрто-Мадеро. Старые кварталы постепенно сменяются широкими проспектами и стеклянной застройкой деловых районов.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba4.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: Купол Дворца Конгресса на закате в Буэнос-Айресе
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -226,7 +226,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
     alt: Панорама Сантьяго на фоне заснеженных Анд, столица Чили и горные вершины
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba4.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: Купол Дворца Конгресса на закате в Буэнос-Айресе
 - day: 11
   title: Сантьяго - исторический центр и холм Санта-Лючия
@@ -381,3 +381,4 @@ themes: []
 Во время Карнавала транспорт и экскурсионные маршруты в Рио могут зависеть от перекрытий улиц. Поэтому во второй день порядок проезда по городу может меняться из-за карнавальной загруженности.
 
 Сам Парад Чемпионов проходит ночью. Поэтому день перед ним свободный, а трансфер на Самбадром включен отдельно. Если вы решите уехать до окончания парада, возвращение в отель возможно раньше. Такой формат позволяет не привязывать всех участников к одному времени завершения ночи.
+

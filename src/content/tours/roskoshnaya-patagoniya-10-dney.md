@@ -37,7 +37,7 @@ priceFrom: 8520
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/patagonia/perito-moreno-3.jpg
+  src: /media/tours/roskoshnaya-patagoniya-10-dney/hero-enhanced-20261006.webp
   alt: "Голубые льды ледника Перито-Морено"
 gallery: []
 featured: false
@@ -61,7 +61,7 @@ itinerary:
       
       Оставшаяся часть дня свободная. Можно пройтись по Сан-Тельмо, заглянуть в Палермо с его ресторанами или отправиться в Реколету. Город сочетает европейские фасады, старые бары, рынки, граффити, винные заведения и поздние ужины. Вечером улицы становятся особенно живыми: в одних кварталах звучит танго, в других работают мясные рестораны и небольшие винные бары. Гид может порекомендовать рестораны с аргентинской, итальянской или европейской кухней, а также бары с видом на город.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/alvear-hotel/2-close-roof-bar.jpg
+      - src: /media/tours/roskoshnaya-patagoniya-10-dney/itinerary-day-1-enhanced-20261006.webp
         alt: "Alvear Palace в Буэнос-Айресе"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -89,7 +89,7 @@ itinerary:
       
       Вечером танго-шоу. Приглушенный свет, оркестр с бандонеоном и танцоры создают тот самый образ Буэнос-Айреса, с которым танго связано во всем мире. Каблуки отбивают ритм по деревянной сцене, музыка становится то резкой, то почти тихой. Во время вечера подают аргентинское вино, мясо на гриле и мате.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba4.jpg
+      - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-images.1-enhanced-20261006.webp
         alt: "Вечерний Буэнос-Айрес"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -118,7 +118,7 @@ itinerary:
       
       Главная причина остановки здесь - ледник Перито-Морено. Национальный парк Лос-Гласиарес получил статус объекта Всемирного наследия ЮНЕСКО в 1987 году. В Калафате уже чувствуется близость ледовых полей: воздух холоднее, над озером почти постоянно идет ветер, а свет быстро меняется вместе с облаками.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/patagonia/el-kalafate.jpg
+      - src: /media/tours/roskoshnaya-patagoniya-10-dney/itinerary-day-3-enhanced-20261006.webp
         alt: "Пейзаж по дороге в Эль-Калафате"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -165,7 +165,7 @@ itinerary:
       
       Именно здесь особенно хорошо видно, что патагонский ландшафт продолжает меняться буквально на глазах: вода, лед и ветер постоянно перестраивают пространство. На смотровых площадках можно долго наблюдать за ледяной стеной, потому что звук часто предупреждает об отколе раньше, чем сам кусок льда становится виден. После глухого треска глыба падает в воду и поднимает волну.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/patagonia/perito-moreno-14.jpg
+      - src: /media/tours/roskoshnaya-patagoniya-10-dney/itinerary-day-4-enhanced-20261006.webp
         alt: "Ледник Перито-Морено"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -554,3 +554,4 @@ themes: ["theme_culture","theme_gastronomy_wine"]
 
 
 Буэнос-Айрес и Сантьяго работают как 2 городских рамки маршрута. В начале путешествия Буэнос-Айрес дает танго, архитектуру и рестораны, а в финале Сантьяго возвращает к более городскому темпу после нескольких дней среди ледников, степей и Магелланова пролива.
+

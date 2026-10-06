@@ -692,7 +692,7 @@ itinerary:
       
       Включены завтрак, обед и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/the-westin-reserva-concal/1.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-12-enhanced-20261006.webp
         alt: "Побережье у The Westin Reserva Conchal"
         intendedSlot: "itinerary:day-12"
   - day: 13
@@ -752,7 +752,7 @@ itinerary:
       
       Включены завтрак, обед и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/the-westin-reserva-concal/3.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-13-enhanced-20261006.webp
         alt: "Территория The Westin Reserva Conchal"
         intendedSlot: "itinerary:day-13"
   - day: 14
@@ -768,7 +768,7 @@ itinerary:
       
       Включены завтрак, обед и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/the-westin-reserva-concal/4.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-14-enhanced-20261006.webp
         alt: "Бассейн The Westin Reserva Conchal"
         intendedSlot: "itinerary:day-14"
   - day: 15
@@ -784,7 +784,7 @@ itinerary:
       
       Включены завтрак, обед и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/arenal/samuel-charron-7c7jwyznvlg-unsplash.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-15-enhanced-20261006.webp
         alt: "Закат на Тихоокеанском побережье Коста-Рики"
         intendedSlot: "itinerary:day-15"
   - day: 16
@@ -804,7 +804,7 @@ itinerary:
       
       За время маршрута вы увидите облачные леса Монтеверде, каналы Тортугеро, вулканы Ареналь и Поас, Рио-Селесте, Тихоокеанское побережье, Корковадо и Плайя-Кончаль.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/the-westin-reserva-concal/5.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-16-enhanced-20261006.webp
         alt: "Лобби The Westin Reserva Conchal"
         intendedSlot: "itinerary:day-16"
 included:
@@ -1066,4 +1066,5 @@ Manatus Hotel связан с природной частью маршрута �
 
 
 Финальные 3 дня у Плайя-Кончаль позволяют снизить нагрузку: можно выбирать каяки, снорклинг, спа или просто отдых у океана.
+
 

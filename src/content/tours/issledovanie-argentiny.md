@@ -227,7 +227,7 @@ itinerary:
     text: |-
       Завтрак и свободный день. Можно выбрать одну из 2 дополнительных экскурсий.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/el-calafate.jpg
+      - src: /media/tours/argentina-2024/itinerary-day-7-enhanced-20261006.webp
         alt: "На фото: Ледник Перито Морено"
         intendedSlot: "itinerary:day-11"
 
@@ -289,7 +289,7 @@ itinerary:
 
       Основной пешеходный маршрут имеет длину около 950 м и проходит вдоль берега реки Игуасу. С него открывается широкая панорама каскадов, поэтому бразильская сторона дополняет близкие ракурсы предыдущего дня общим видом на водопады. Экскурсия заканчивается на смотровой площадке у Глотки Дьявола. После посещения - возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/cataratas-do-iguau2.jpg
+      - src: /media/excursions/velikoe-priklyuchenie-iguasu/hero-enhanced-20261006.webp
         alt: "На фото: Водопады Игуасу, Аргентина"
         intendedSlot: "itinerary:day-14"
 

@@ -11,7 +11,7 @@ country: country_argentina
 destination: destination_argentina_buenos_aires
 language: []
 hero:
-  src: https://brasiltours.ru/image/tango%20buenos.11png.png
+  src: /media/excursions/tango-shou-s-uzhinom-i-transferom-v-buenos-ajrese/hero-enhanced-20261006.webp
   alt: "Танго-шоу в Буэнос-Айресе"
 gallery: []
 route:
@@ -31,3 +31,4 @@ themes: ["theme_culture"]
 Вечером проходит танго-шоу с ужином. Представление сопровождается аргентинским вином и традиционными блюдами.
 
 Трансфер на вечернюю программу включен.
+

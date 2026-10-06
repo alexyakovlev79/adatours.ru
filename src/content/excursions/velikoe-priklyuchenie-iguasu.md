@@ -14,7 +14,7 @@ language: []
 priceFrom: 96
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/cataratas-do-iguau2.jpg
+  src: /media/excursions/velikoe-priklyuchenie-iguasu/hero-enhanced-20261006.webp
   alt: "Водопады Игуасу, Аргентина"
 gallery: []
 route:
@@ -34,3 +34,4 @@ themes: ["theme_adventure","theme_wildlife"]
 На лодке Zodiac маршрут проходит около 6 км по нижнему течению реки Игуасу через пороги и каньон, затем программа продолжается на открытых полноприводных автомобилях через джунгли.
 
 По дороге можно увидеть местную флору и, если повезет, животных. Для этой экскурсии рекомендуются средство от насекомых, кроссовки и удобная одежда.
+

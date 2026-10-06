@@ -74,7 +74,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/tango%20buenos.11png.png
+  - src: /media/excursions/tango-shou-s-uzhinom-i-transferom-v-buenos-ajrese/hero-enhanced-20261006.webp
     alt: 'на фото: Аргентинское танго'
 - excursionRef: excursion_buenos_aires_porteno_tango_dinner_transfer
   places: []

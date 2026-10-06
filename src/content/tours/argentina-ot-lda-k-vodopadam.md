@@ -46,7 +46,7 @@ priceFrom: 2563
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/hans-jurgen-weinhardt-fb8aa00lefk-unsplash.jpg
+  src: /media/excursions/glaciares-gourmet/hero-enhanced-20261006.webp
   alt: "на фото: ледник Перито-Морено в Эль-Калафате, Аргентина, Патагония"
 gallery: []
 featured: false

@@ -111,7 +111,7 @@ itinerary:
 
     После переезда остается время, чтобы отдохнуть и прогуляться по городу перед экскурсией к леднику.
   images:
-  - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
+  - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: ледники Эль Калафате, Патагония, Аргентина'
   - src: https://brasiltours.ru/image/puerto%20natales1.png
     alt: 'На фото: порт Пуэрто Наталес в Патагонии. Чили'
@@ -149,7 +149,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, Буэнос -Айрес'
-  - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
+  - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: ледники Эль Калафате, Патагония, Аргентина'
 - day: 8
   title: Буэнос-Айрес и танго-шоу

@@ -14,7 +14,7 @@ language: []
 priceFrom: 388
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/hans-jurgen-weinhardt-fb8aa00lefk-unsplash.jpg
+  src: /media/excursions/glaciares-gourmet/hero-enhanced-20261006.webp
   alt: "Ледник Перито-Морено в Эль-Калафате"
 gallery: []
 route:
@@ -48,3 +48,4 @@ themes: ["theme_wildlife","theme_gastronomy_wine"]
 На борту ланч-бокс: бутерброд с бараниной и гарниром, десерт и безалкогольный напиток. После возвращения трансфер в отель.
 
 Можно выбрать вариант Glaciares Gourmet Premium с доплатой $153. В него входит расширенный обед: закуска, первое блюдо, основное блюдо, десерт, алкогольные и безалкогольные напитки.
+

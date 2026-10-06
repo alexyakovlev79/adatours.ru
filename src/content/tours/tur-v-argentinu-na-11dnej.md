@@ -98,7 +98,7 @@ itinerary:
     text: |-
       После завтрака день остается свободным. При желании его можно дополнить одной из нескольких экскурсий.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/f/i/file_204_38.jpg
+      - src: /media/tours/tur-v-argentinu-na-11dnej/itinerary-day-3-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-3"
 
@@ -129,7 +129,7 @@ itinerary:
 
       Эль-Калафате становится отправной точкой для знакомства с ледниками Патагонии. После переезда можно отдохнуть в лодже и подготовиться к экскурсии следующего дня.
     images:
-      - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
+      - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
         alt: "Эль-Калафате"
         intendedSlot: "itinerary:day-4"
 
@@ -149,7 +149,7 @@ itinerary:
 
       Дополнительно можно заказать ледовый треккинг: прогулку по леднику и коктейль со льдом, взятым прямо с ледника.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/el-calafate.jpg
+      - src: /media/tours/argentina-2024/itinerary-day-7-enhanced-20261006.webp
         alt: "Ледник Перито-Морено"
         intendedSlot: "itinerary:day-5"
 
@@ -259,7 +259,7 @@ itinerary:
 
       После экскурсии предусмотрен трансфер в аэропорт для вылета в Буэнос-Айрес. По прибытии вас встретят и отвезут в гостиницу.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/o/b/obeliscoblanco.jpg
+      - src: /media/tours/tur-v-argentinu-na-11dnej/itinerary-day-10-enhanced-20261006.webp
         alt: "Аргентинская сторона Игуасу и Буэнос-Айрес"
         intendedSlot: "itinerary:day-10"
 
@@ -270,7 +270,7 @@ itinerary:
     text: |-
       В назначенное время предусмотрен индивидуальный трансфер из гостиницы в аэропорт для вылета домой.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/f/i/file_199_68.jpg
+      - src: /media/tours/tur-v-argentinu-na-11dnej/itinerary-day-11-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-11"
 

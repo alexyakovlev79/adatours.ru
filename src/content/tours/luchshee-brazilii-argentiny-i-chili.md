@@ -200,7 +200,7 @@ itinerary:
 
     После программы размещение в Калафате.
   images:
-  - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
+  - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: Эль-Калафате
   - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
@@ -222,7 +222,7 @@ itinerary:
   images:
   - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
-  - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
+  - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: Эль-Калафате
 - day: 8
   title: Национальный парк Торрес-дель-Пайне
@@ -476,4 +476,5 @@ themes: ["theme_gastronomy_wine"]
 Калафате переносит маршрут в холодную Патагонию. Здесь основным объектом становится лед, а масштаб пространства задают озеро Argentino, горы и ледник Perito Moreno. Дальше, в Torres del Paine, добавляются травянистые равнины, гранитные массивы, ледниковые озера и дикая фауна.
 
 Атакама представляет противоположный тип природы: сухая высокогорная пустыня, соляные образования, дюны и ясное ночное небо. Высокогорные лагуны находятся уже выше 4000 м, поэтому этот день заметно отличается по условиям от тропического начала поездки.
+
 

@@ -93,7 +93,7 @@ itinerary:
     text: |-
       Завтрак в отеле. День свободный для самостоятельных прогулок или одной из дополнительных поездок.
     images:
-      - src: https://brasiltours.ru/image/buenos%20,obelisk.png
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-3-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-3"
 

@@ -163,7 +163,7 @@ itinerary:
 
       Затем начинается «Водное сафари» по бухте Рико на озере Аргентино. Навигация длится около 1 часа. Судно подходит к стене ледника и делает остановку для осмотра. После экскурсии возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/argentina1-small.jpg
+      - src: /media/tours/neveroyatnaya-argentina/itinerary-day-7-enhanced-20261006.webp
         alt: "Эль-Калафате"
         intendedSlot: "itinerary:day-7"
 
@@ -174,7 +174,7 @@ itinerary:
     text: |-
       После завтрака свободный день. Можно выбрать одну из дополнительных экскурсий.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/hans-jurgen-weinhardt-fb8aa00lefk-unsplash.jpg
+      - src: /media/excursions/glaciares-gourmet/hero-enhanced-20261006.webp
         alt: "Ледник Перито-Морено в Эль-Калафате"
         intendedSlot: "itinerary:day-8"
 
@@ -217,7 +217,7 @@ itinerary:
 
       После национального парка запланировано знакомство с культурой и историей йерба-мате на рынке дождевых лесов Yabuticaba. Этот блок добавляет к природной экскурсии местную традицию, связанную с одним из самых характерных напитков региона Мисьонес.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/cataratas-do-iguau2.jpg
+      - src: /media/excursions/velikoe-priklyuchenie-iguasu/hero-enhanced-20261006.webp
         alt: "Водопады Игуасу, Аргентина"
         intendedSlot: "itinerary:day-10"
 

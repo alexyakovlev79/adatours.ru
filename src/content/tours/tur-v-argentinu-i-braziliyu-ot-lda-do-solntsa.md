@@ -65,7 +65,7 @@ itinerary:
 
     По прибытии вас встретят в аэропорту. Далее предусмотрен индивидуальный трансфер с водителем в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
+  - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Эль Калафате. Патагония, Аргентина'
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'На фото: город Буэнос - Айрес, столица Аргентины'
@@ -98,7 +98,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу (Фоз Игуазу) Бразилия и Аргентина'
-  - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
+  - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Эль Калафате. Патагония, Аргентина'
 - day: 6
   title: Аргентинская сторона водопадов Игуасу
@@ -223,3 +223,4 @@ themes: []
 **Стоимость:** $2563
 
 Путешествие начинается в Буэнос-Айресе. После знакомства с городом и вечера танго вы перелетите в Калафате, чтобы увидеть Перито-Морено. Затем маршрут меняет холодные пейзажи на субтропики Игуасу. Водопады вы увидите с аргентинской и бразильской сторон, а последние дни пройдут в Рио-де-Жанейро.
+

@@ -6,7 +6,7 @@ const defaultCountry = PHONE_COUNTRIES.find((country) => country.iso2 === DEFAUL
 const flagUrl = (iso2: string) => `https://flagcdn.com/24x18/${iso2}.png`;
 const placeholderFromMask = (country: { mask: string; dial: string }) => {
   const rest = country.mask.startsWith(country.dial) ? country.mask.slice(country.dial.length) : country.mask;
-  const pattern = rest.replace(/^[\\s-]+/, '');
+  const pattern = rest.replace(/^[\s-]+/, '');
   return pattern.replace(/9/g, '0').trim();
 };
 ---
@@ -90,7 +90,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
   const flagUrl = (iso2) => `https://flagcdn.com/24x18/${iso2}.png`;
   const maskParts = (mask, dial) => {
     const rest = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
-    const pattern = rest.replace(/^[\\s-]+/, '');
+    const pattern = rest.replace(/^[\s-]+/, '');
     return {
       pattern,
       digits: (pattern.match(/9/g) || []).length,

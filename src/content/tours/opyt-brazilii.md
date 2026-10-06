@@ -235,7 +235,7 @@ priceFrom: 3395
 currency: USD
 priceNote: $3395
 hero:
-  src: https://brasiltours.ru/image/BRA%20Rio%20Ipanema.png
+  src: /media/tours/opyt-brazilii/hero-enhanced-20261006.webp
   alt: Опыт Бразилии
 routeCountries:
 - country_brazil

@@ -83,7 +83,7 @@ itinerary:
 
     Дополнительный день особенно полезен для фотографов и тех, кто хочет увеличить шансы на встречи с животными в естественной среде. Пантанал меняется в зависимости от времени суток, поэтому даже знакомый маршрут утром и ближе к вечеру выглядит по-разному.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/pantanal-tub.jpg
+  - src: /media/tours/pantanal-za-5-dnej/itinerary-day-4-enhanced-20261006.webp
     alt: Пантанал
 - day: 5
   title: Отъезд

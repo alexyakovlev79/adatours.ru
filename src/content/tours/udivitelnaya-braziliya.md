@@ -65,7 +65,7 @@ itinerary:
 
     Размещение в отеле или лодже. Здесь можно переключиться с городских впечатлений на природу: слушать звуки леса, наблюдать за птицами и бабочками, фотографировать животных и просто отдыхать вдали от крупных городов.
   images:
-  - src: https://brasiltours.ru/image/pantanal%20new.png
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
     alt: Пантанал
 - day: 4
   title: Дни 4-5. Пантанал
@@ -98,7 +98,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/bonito%20neew1.png
     alt: Бонито
-  - src: https://brasiltours.ru/image/pantanal%20new.png
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
     alt: Пантанал
 - day: 7
   title: Бонито

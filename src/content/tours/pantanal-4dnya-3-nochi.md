@@ -102,7 +102,7 @@ priceFrom: 3809
 currency: USD
 priceNote: $3809
 hero:
-  src: https://brasiltours.ru/image/pantanal%20new.png
+  src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
   alt: Пантанал  4дня/ 3 ночи
 routeCountries:
 - country_brazil

@@ -32,7 +32,7 @@ itinerary:
 
     По дороге к отелю вы увидите зеленые горы, высокие пальмы и океан. С наступлением сумерек вокруг Рио загораются огни. На известных пляжах работают кафе, где готовят напитки из свежих тропических фруктов. Для детей это хороший первый день без плотной экскурсионной программы: можно отдохнуть после дороги и постепенно привыкнуть к городу и климату.
   images:
-  - src: https://brasiltours.ru/image/brazil%20logo.png
+  - src: /media/tours/prazdnik-gordosti-v-rio-de-zhanejro/hero-enhanced-20261006.webp
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро, Бразилия'
 - day: 2
   title: 'Рио-де-Жанейро: Сахарная Голова'
@@ -45,7 +45,7 @@ itinerary:
 
     После спуска поездка по главным местам Рио продолжается. По маршруту можно увидеть здания колониальной архитектуры. Если позволит время, программа допускает посещение Кафедрального собора в Сан-Себастьяне и фотосессию на яркой лестнице Селарона.
   images:
-  - src: https://brasiltours.ru/image/cab.png
+  - src: /media/tours/tur-v-braziliyu-s-detmi/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Сахарная Голова в Рио-де-Жанейро, Бразилия'
 - day: 3
   title: 'Рио-де-Жанейро: Корковадо и лес Тижука'
@@ -117,7 +117,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу (Фоз Игуазу) в Аргентине и Бразилии'
-  - src: https://brasiltours.ru/image/brazil%20logo.png
+  - src: /media/tours/prazdnik-gordosti-v-rio-de-zhanejro/hero-enhanced-20261006.webp
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро, Бразилия'
 - day: 6
   title: 'Игуасу: водопады, «Макуко Сафари» и Парк птиц'
@@ -238,7 +238,7 @@ priceFrom: 3656
 currency: USD
 priceNote: $3656
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/20210331-171022.jpg
+  src: /media/tours/tur-v-braziliyu-s-detmi/hero-enhanced-20261006.webp
   alt: 'На фото: семейный тур в Бразилию (отдых с детьми) - макуко сафари'
 routeCountries:
 - country_brazil

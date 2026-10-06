@@ -16,7 +16,7 @@ priceFrom: 274
 currency: "USD"
 priceNote: "Стоимость — $274."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/new-pics/bay.jpg"
+  src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
   alt: "На фото: Залив Гуанабара, Рио-де-Жанейро"
 gallery:
   - src: "https://brasiltours.ru/image/guanabara-1.jpg"

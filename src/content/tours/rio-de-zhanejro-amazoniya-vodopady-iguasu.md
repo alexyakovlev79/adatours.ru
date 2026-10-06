@@ -34,7 +34,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bay.jpg
+  - src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро - Амазония - Водопады Игуасу
 - excursionRef: excursion_rio_zona_sul_bike_tour
   places: []
@@ -55,7 +55,7 @@ itinerary:
 
     Вылет с горы Сахарная Голова, продолжительность 10-30 минут.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bay.jpg
+  - src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро - Амазония - Водопады Игуасу
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -73,7 +73,7 @@ itinerary:
 
     Для регулярного трансфера в лодж нужно прилететь в аэропорт Манауса рейсом до 13:00. Вылет из Манауса рекомендуется планировать после 14:00. При другом расписании взимается доплата за частный трансфер от лоджа.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bay.jpg
+  - src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро - Амазония - Водопады Игуасу
 - excursionRef: excursion_source_vstrecha_rek
   places: []
@@ -88,7 +88,7 @@ itinerary:
 
     После ужина состоится ночное сафари по реке. Берега исследуют с фонарями, чтобы увидеть кайманов Тинга и Асу. Иногда встречаются ночные ястребы, змеи и лягушки. Днем джунгли воспринимаются через зелень и влажный воздух, а вечером внимание переключается на звуки и движения у самой воды. Фонари выхватывают отдельные участки берега, поэтому даже знакомый после дневной прогулки лес выглядит иначе.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bay.jpg
+  - src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро - Амазония - Водопады Игуасу
 - day: 5
   title: Манаус - Фоз-ду-Игуасу
@@ -101,7 +101,7 @@ itinerary:
     региона: после низкой линии рек и густой Амазонии маршрут переносится на юг страны, к субтропическому лесу и базальтовому
     каньону Игуасу.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bay.jpg
+  - src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро - Амазония - Водопады Игуасу
 - day: 6
   title: Аргентинская сторона водопадов Игуасу
@@ -116,7 +116,7 @@ itinerary:
 
     Сначала около 3 км на открытом джипе по джунглям с рассказом гида о местной природе, затем спуск к реке Игуасу и поездка на моторной лодке вплотную к водопадам.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bay.jpg
+  - src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро - Амазония - Водопады Игуасу
 - excursionRef: excursion_iguazu_gran_aventura
   places: []
@@ -131,7 +131,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bay.jpg
+  - src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро - Амазония - Водопады Игуасу
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -164,7 +164,7 @@ priceFrom: 3644
 currency: USD
 priceNote: $3644
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/bay.jpg
+  src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
   alt: Рио-де-Жанейро - Амазония - Водопады Игуасу
 routeCountries:
 - country_brazil

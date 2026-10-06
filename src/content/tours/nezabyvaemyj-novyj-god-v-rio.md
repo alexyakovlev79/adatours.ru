@@ -143,7 +143,7 @@ itinerary:
 
     **Стоимость:** USD 350 на человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/confeitariacolombo.jpg
+  - src: /media/tours/nezabyvaemyj-novyj-god-v-rio/itinerary-day-4-enhanced-20261006.webp
     alt: Кофейня Колумбия в Рио в Бразилии
 - excursionRef: excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie
   places: []
@@ -168,7 +168,7 @@ itinerary:
 
     Пять дней проходят без смены отеля, поэтому маршрут остается компактным. Утренние экскурсии чередуются с вечерним праздником и свободным днем, а дополнительные программы можно добавить без перестройки всей поездки.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/davi-costa-vtecdsflxsi-unsplash.jpg
+  - src: /media/tours/nezabyvaemyj-novyj-god-v-rio/itinerary-day-5-enhanced-20261006.webp
     alt: Панорамный вид над Рио-де-Жанейро. Бразилия
 included:
 - Проживание в отеле.

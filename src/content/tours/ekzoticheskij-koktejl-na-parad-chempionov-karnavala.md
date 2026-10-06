@@ -195,7 +195,7 @@ itinerary:
 
     На территории лоджа доступны конные прогулки по низменностям, пешие маршруты и другие экскурсии, позволяющие наблюдать животных и фотографировать их в естественной среде.
   images:
-  - src: https://brasiltours.ru/image/pantanal%20new.png
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
     alt: 'На фото: лотосы в заповеднике Пантанал  в Бразилии'
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу в Бразилии'
@@ -210,7 +210,7 @@ itinerary:
 
     Экскурсионная программа и питание включены. Конкретный набор активностей определяется на месте в рамках программы лоджа.
   images:
-  - src: https://brasiltours.ru/image/pantanal%20new.png
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
     alt: 'На фото: лотосы в заповеднике Пантанал  в Бразилии'
 - day: 9
   title: Пантанал - Estancia Mimosa - Бонито
@@ -231,7 +231,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/bonito.jpg
     alt: 'на фото: Голубая пещера в Бонито, Бразилия'
-  - src: https://brasiltours.ru/image/pantanal%20new.png
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
     alt: 'На фото: лотосы в заповеднике Пантанал  в Бразилии'
 - day: 10
   title: Бонито

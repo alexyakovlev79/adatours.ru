@@ -80,6 +80,14 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
     }
   }
 
+  @media (min-width: 901px) {
+    .fact strong {
+      display: flex;
+      min-height: 1.9em;
+      align-items: flex-end;
+    }
+  }
+
   .fact span {
     display: block;
     margin-top: 12px;

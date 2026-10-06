@@ -6,20 +6,21 @@ import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
 import DmcNav from '../../components/commercial/DmcNav.astro';
+import DmcFaq from '../../components/commercial/DmcFaq.astro';
 import { ORG } from '../../data/organization/ada-tours';
 ---
 
 <BaseLayout
   leadTitle="Запросить B2B-предложение"
   leadEntityId="dmc"
-  title="DMC в Бразилии и Латинской Америке для турагентств"
-  description="Ada Tours - DMC для турагентств и туроператоров: FIT, группы, VIP, MICE и multi-country маршруты по Бразилии и Латинской Америке."
+  title="DMC в Бразилии и Латинской Америке для туроператоров"
+  description="Ada Tours — принимающий туроператор и DMC в Бразилии: FIT, группы, VIP, MICE и multi-country программы для турагентств и туроператоров по Латинской Америке."
   image="/media/home/rio-night-enhanced-20260930.webp"
 >
   <Hero
     eyebrow="DMC · B2B"
-    title="DMC для туроператоров и турагентств в Бразилии и Латинской Америке"
-    intro="Ada Tours собирает наземную программу: маршруты, отели, трансферы, гидов, экскурсии, MICE и сложные multi-country поездки."
+    title="DMC в Бразилии и Латинской Америке для туроператоров и турагентств"
+    intro="Ada Tours как принимающий партнер собирает наземную программу: маршруты, отели, трансферы, гидов, экскурсии, MICE и multi-country поездки."
     image="/media/home/rio-night-enhanced-20260930.webp"
     ctaHref="#request"
     ctaLabel="Запросить предложение"
@@ -93,5 +94,27 @@ import { ORG } from '../../data/organization/ada-tours';
       { title: 'На месте', text: 'Локальная команда координирует подрядчиков и изменения по ходу поездки.' },
     ]}
     dark
+  />
+
+  <DmcFaq
+    title="DMC в Бразилии: коротко о работе"
+    items={[
+      {
+        question: 'Что входит в DMC-обслуживание Ada Tours?',
+        answer: 'Маршрут, размещение, трансферы и транспорт, гиды, экскурсии и локальная координация. Для MICE и VIP состав услуг дополняется под конкретный запрос.',
+      },
+      {
+        question: 'С какими форматами поездок работает Ada Tours?',
+        answer: 'FIT, групповые программы, VIP, MICE и multi-country маршруты по Бразилии и другим странам Латинской Америки.',
+      },
+      {
+        question: 'Какая география у DMC Ada Tours?',
+        answer: 'Ключевое направление — Бразилия. Также Ada Tours собирает программы по Аргентине, Перу и другим странам Латинской Америки.',
+      },
+      {
+        question: 'На каких языках можно вести B2B-запрос?',
+        answer: `Ada Tours обрабатывает заявки на ${ORG.service.languages.length} языках: ${ORG.service.languages.join(', ')}.`,
+      },
+    ]}
   />
 </BaseLayout>

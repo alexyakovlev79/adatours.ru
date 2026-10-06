@@ -81,6 +81,14 @@ const { eyebrow, title, steps, dark = false } = Astro.props;
     color: color-mix(in srgb, currentColor 68%, transparent);
   }
 
+  @media (min-width: 901px) {
+    .step h3 {
+      display: flex;
+      min-height: 2.16em;
+      align-items: flex-end;
+    }
+  }
+
   @media (max-width: 900px) {
     .process__steps {
       grid-template-columns: repeat(2,minmax(0,1fr));

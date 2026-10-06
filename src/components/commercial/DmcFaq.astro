@@ -1,0 +1,79 @@
+---
+interface Item {
+  question: string;
+  answer: string;
+}
+interface Props {
+  title?: string;
+  items: Item[];
+}
+const { title = 'Вопросы о работе с Ada Tours', items } = Astro.props;
+---
+
+<section class="dmc-faq section" aria-labelledby="dmc-faq-title">
+  <div class="container">
+    <p class="eyebrow">Вопросы и ответы</p>
+    <h2 id="dmc-faq-title">{title}</h2>
+    <div class="dmc-faq__list">
+      {items.map((item) => (
+        <details>
+          <summary>
+            <span>{item.question}</span>
+            <b aria-hidden="true">+</b>
+          </summary>
+          <p>{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .dmc-faq h2 {
+    max-width: 900px;
+    margin: 12px 0 clamp(40px, 6vw, 72px);
+    font-size: clamp(2.35rem, 1.6rem + 3.2vw, 4.5rem);
+  }
+
+  .dmc-faq__list {
+    border-top: 1px solid var(--color-line);
+  }
+
+  .dmc-faq details {
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .dmc-faq summary {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 24px;
+    align-items: center;
+    padding: 24px 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 1rem + .8vw, 1.75rem);
+    line-height: 1.2;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .dmc-faq summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .dmc-faq summary b {
+    color: var(--color-gold-deep);
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: transform 200ms var(--ease-out);
+  }
+
+  .dmc-faq details[open] summary b {
+    transform: rotate(45deg);
+  }
+
+  .dmc-faq details p {
+    max-width: 820px;
+    margin: -4px 0 28px;
+    color: color-mix(in srgb, var(--color-ink) 72%, transparent);
+  }
+</style>

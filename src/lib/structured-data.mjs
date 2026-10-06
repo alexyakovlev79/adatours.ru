@@ -48,10 +48,30 @@ export function logicalPath(value, root) {
 const fragments = { country: 'country', destination: 'place', tour: 'tour', excursion: 'excursion', theme: 'topic', person: 'person', case: 'article', article: 'article' };
 export const recordId = (record, root) => `${absoluteUrl(record.path, root)}#${fragments[record.kind]}`;
 const servicePages = {
-  '/dmc/': 'Принимающий туроператор и DMC',
-  '/dmc/travel-agencies/': 'Принимающее обслуживание для турагентств',
-  '/mice/': 'Организация MICE и корпоративных поездок',
-  '/mice/business-delegations/': 'Организация поездок деловых делегаций',
+  '/dmc/': {
+    serviceType: 'DMC и принимающее обслуживание в Бразилии и Латинской Америке',
+    category: 'B2B DMC',
+    keywords: ['DMC в Бразилии', 'DMC в Латинской Америке', 'принимающий туроператор Бразилия', 'DMC для туроператоров', 'DMC для турагентств', 'MICE Бразилия', 'multi-country Латинская Америка'],
+    audience: ['Туроператоры', 'Турагентства', 'Luxury travel advisors', 'MICE-агентства'],
+  },
+  '/dmc/travel-agencies/': {
+    serviceType: 'Принимающее обслуживание для турагентств и туроператоров',
+    category: 'B2B DMC для туристических компаний',
+    keywords: ['DMC для турагентств', 'DMC для туроператоров', 'принимающая компания Бразилия', 'наземное обслуживание Бразилия', 'туры по Бразилии для агентств', 'multi-country DMC'],
+    audience: ['Турагентства', 'Туроператоры', 'Luxury travel advisors', 'MICE-агентства'],
+  },
+  '/dmc/terms/': {
+    serviceType: 'Условия B2B-сотрудничества с DMC',
+    category: 'B2B условия DMC',
+    keywords: ['условия работы с DMC', 'договор с DMC', 'вознаграждение турагентствам', 'B2B условия туроператоров', 'DMC Бразилия условия'],
+    audience: ['Турагентства', 'Туроператоры'],
+  },
+  '/mice/': {
+    serviceType: 'Организация MICE и корпоративных поездок',
+  },
+  '/mice/business-delegations/': {
+    serviceType: 'Организация поездок деловых делегаций',
+  },
 };
 const collectionPaths = new Set(['/country/', '/tours/', '/places/', '/excursions/', '/interests/', '/team/', '/cases/', '/reviews/', '/articles/']);
 const dateValue = (value) => {
@@ -118,8 +138,10 @@ export function buildStructuredData({ root, organization, records, page, documen
     : current && ['country', 'destination', 'theme'].includes(current.kind) ? 'CollectionPage'
     : collectionPaths.has(page.path) || document.catalog ? 'CollectionPage'
     : page.path === '/about/' ? 'AboutPage' : page.path === '/contacts/' ? 'ContactPage' : 'WebPage';
+  const serviceConfig = servicePages[page.path];
   const webPage = { '@type': pageType, '@id': pageId, url: page.url, name: cleanText(page.title),
     description: cleanText(page.description), inLanguage: page.lang,
+    keywords: serviceConfig?.keywords,
     isPartOf: ref(siteId), publisher: ref(orgId), primaryImageOfPage: imageRef,
     dateModified: dateValue(current?.data.updatedAt), hasPart: [], mentions: [] };
   add(webPage);
@@ -250,14 +272,16 @@ export function buildStructuredData({ root, organization, records, page, documen
       url: serviceUrl, provider: ref(orgId), areaServed: coverage.length ? coverage : organization.areaServed });
     webPage.about = service;
     if (coverage.length) webPage.spatialCoverage = coverage;
-  } else if (servicePages[page.path]) {
+  } else if (serviceConfig) {
     const service = add({ '@type': 'Service', '@id': `${page.url}#service`, name: cleanText(document.h1 || page.title),
-      description: cleanText(page.description), serviceType: servicePages[page.path], url: page.url, provider: ref(orgId),
-      areaServed: organization.areaServed, mainEntityOfPage: ref(pageId), image: imageRef });
+      description: cleanText(page.description), serviceType: serviceConfig.serviceType, category: serviceConfig.category,
+      audience: serviceConfig.audience?.map((audienceType) => ({ '@type': 'BusinessAudience', audienceType })),
+      url: page.url, provider: ref(orgId), areaServed: organization.areaServed,
+      mainEntityOfPage: ref(pageId), image: imageRef });
     webPage.mainEntity = service; webPage.about = service;
   } else if (['/', '/about/', '/contacts/'].includes(page.path)) {
     webPage.mainEntity = ref(orgId); webPage.about = ref(orgId);
-  } else if (['/team/', '/reviews/', '/dmc/terms/', '/privacy/', '/personal-data/'].includes(page.path)) {
+  } else if (['/team/', '/reviews/', '/privacy/', '/personal-data/'].includes(page.path)) {
     webPage.about = ref(orgId);
   }
   if (breadcrumbs.length) {

@@ -6,20 +6,21 @@ import FactStrip from '../../../components/proof/FactStrip.astro';
 import EditorialProof from '../../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../../components/proof/ProcessSteps.astro';
 import DmcNav from '../../../components/commercial/DmcNav.astro';
+import DmcFaq from '../../../components/commercial/DmcFaq.astro';
 import { ORG } from '../../../data/organization/ada-tours';
 ---
 
 <BaseLayout
   leadTitle="Запросить предложение для клиента"
   leadEntityId="dmc_for_agencies"
-  title="DMC для турагентств и туроператоров по Бразилии и Латинской Америке"
-  description="Ada Tours как принимающий партнер для турагентств и туроператоров: маршруты, отели, трансферы, гиды, FIT, группы, VIP, MICE и multi-country."
+  title="DMC для турагентств и туроператоров в Бразилии"
+  description="Принимающее обслуживание Ada Tours для турагентств и туроператоров: маршруты, отели, трансферы, гиды, FIT, группы и multi-country по Латинской Америке."
   image="/media/home/lencois-enhanced-20260930.webp"
 >
   <Hero
     eyebrow="DMC · Для турагентств"
-    title="Одна локальная команда для всей наземной программы"
-    intro="Вы присылаете даты, географию и требования клиента. Ada Tours собирает маршрут, размещение, транспорт, гидов и координацию на месте."
+    title="DMC для турагентств и туроператоров"
+    intro="Одна локальная команда собирает наземную программу по Бразилии и Латинской Америке: маршрут, размещение, транспорт, гидов и координацию на месте."
     image="/media/home/lencois-enhanced-20260930.webp"
     ctaHref="#request"
     ctaLabel="Запросить предложение"
@@ -87,5 +88,27 @@ import { ORG } from '../../../data/organization/ada-tours';
       { title: 'Координация', text: 'Во время поездки локальная команда ведет подрядчиков и изменения по маршруту.' },
     ]}
     dark
+  />
+
+  <DmcFaq
+    title="Что нужно турагентству для работы с DMC"
+    items={[
+      {
+        question: 'Что прислать для первого расчета?',
+        answer: 'Даты или диапазон дат, количество путешественников, страны и города, уровень размещения, бюджет и специальные требования.',
+      },
+      {
+        question: 'Можно ли собрать multi-country маршрут через Ada Tours?',
+        answer: 'Да. Ada Tours связывает наземную программу по нескольким странам Латинской Америки в один маршрут с размещением, транспортом и локальными услугами.',
+      },
+      {
+        question: 'С какими B2B-партнерами работает Ada Tours?',
+        answer: `Ada Tours работает с турагентствами и туроператорами, включая ${ORG.business.b2bPartnerTypes.join(', ')}.`,
+      },
+      {
+        question: 'С группами какого размера работает Ada Tours?',
+        answer: `Обычные группы — ${ORG.service.groups.standard.display} человек. Для крупных событий подтвержден диапазон ${ORG.service.groups.largeEvents.display} участников.`,
+      },
+    ]}
   />
 </BaseLayout>

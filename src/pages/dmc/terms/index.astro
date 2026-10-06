@@ -6,20 +6,21 @@ import FactStrip from '../../../components/proof/FactStrip.astro';
 import EditorialProof from '../../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../../components/proof/ProcessSteps.astro';
 import DmcNav from '../../../components/commercial/DmcNav.astro';
+import DmcFaq from '../../../components/commercial/DmcFaq.astro';
 import { ORG } from '../../../data/organization/ada-tours';
 ---
 
 <BaseLayout
   leadTitle="Отправить B2B-запрос"
   leadEntityId="dmc_terms"
-  title="Условия работы с DMC Ada Tours для турагентств и туроператоров"
-  description="Договор, вознаграждение, состав предложения и порядок подтверждения B2B-запросов Ada Tours по Бразилии и Латинской Америке."
+  title="Условия работы с DMC Ada Tours для турагентств"
+  description="Условия B2B-сотрудничества с Ada Tours: договор, процентное вознаграждение, состав предложения и порядок подтверждения бронирований в Бразилии и Латинской Америке."
   image="/media/home/buenos-aires-enhanced-20260930.webp"
 >
   <Hero
     eyebrow="DMC · Условия работы"
-    title="B2B-условия под конкретную поездку"
-    intro="Сначала фиксируем маршрут и состав услуг. Затем согласуем коммерческие условия и подтверждаем их для конкретного бронирования."
+    title="Условия работы с DMC Ada Tours"
+    intro="Договор, вознаграждение и состав услуг согласуются под конкретную поездку. Финальные условия фиксируются для подтвержденного бронирования."
     image="/media/home/buenos-aires-enhanced-20260930.webp"
     ctaHref="#request"
     ctaLabel="Отправить B2B-запрос"
@@ -90,5 +91,27 @@ import { ORG } from '../../../data/organization/ada-tours';
       },
     ]}
     dark
+  />
+
+  <DmcFaq
+    title="Условия B2B-сотрудничества"
+    items={[
+      {
+        question: 'Как оформляется работа с туроператором?',
+        answer: 'Для туроператоров используется договор. Коммерческие условия фиксируются для конкретного бронирования.',
+      },
+      {
+        question: 'Как согласуется вознаграждение партнера?',
+        answer: ORG.b2b.commissionModel,
+      },
+      {
+        question: 'Когда фиксируются коммерческие условия?',
+        answer: 'После согласования маршрута и состава услуг финальные условия закрепляются для конкретного бронирования.',
+      },
+      {
+        question: 'Возможна ли повторная работа по договору?',
+        answer: 'Да. С постоянными партнерами возможны повторные договоры.',
+      },
+    ]}
   />
 </BaseLayout>

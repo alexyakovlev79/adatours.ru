@@ -58,7 +58,7 @@ itinerary:
 
     **Питание:** обед в формате ланч-бокса, ужин.
   images:
-  - src: https://brasiltours.ru/image/Los%20Roques.png
+  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лос Рокес
 - day: 3
   title: Среда - Лос-Рокес и возвращение в Каракас
@@ -74,9 +74,9 @@ itinerary:
 
     Дополнительно предлагаются поездка на дальние острова, в том числе Кае Эль Агуа, посещение станции по охране морских черепах, натурального бассейна с морскими звездами и рыбалка с катера на барракуду.
   images:
-  - src: https://brasiltours.ru/image/caracas1.png
+  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Каракас
-  - src: https://brasiltours.ru/image/countries/venezuela/venez-los-roques.png
+  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: Лос Рокес
 - day: 4
   title: Четверг - Канайма, остров Анатолия, водопады Сапо и Ача
@@ -91,7 +91,7 @@ itinerary:
 
     **Питание:** обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/canaima%20nat%20park.png
+  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Канайма
 - day: 5
   title: Пятница - Сальто-Анхель на целый день
@@ -164,7 +164,7 @@ itinerary:
   images:
   - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
     alt: Ла Пас
-  - src: https://brasiltours.ru/image/caracas1.png
+  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Каракас
 - day: 9
   title: Вторник - солончак Уюни и остров Инка-Хуаси
@@ -182,7 +182,7 @@ itinerary:
 
     **Питание:** легкий завтрак, обед-пикник.
   images:
-  - src: https://brasiltours.ru/image/Uyuni.png
+  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-9-images-0-src-enhanced-20261007.webp"
     alt: Уюни
 - day: 10
   title: Среда - Кладбище поездов, Долина Скал и малые лагуны

@@ -31,7 +31,7 @@ itinerary:
     экскурсия по столице. Программу можно составить с учетом ваших интересов. Обед в традиционном ресторане оплачивается отдельно.
     Возвращение в отель, ночь в Каракасе.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/C/a/Caracas.jpg
+  - src: "/media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы, город Каракас'
 - day: 2
   title: ', вторник: архипелаг Лос-Рокес'
@@ -46,7 +46,7 @@ itinerary:
 
     Питание: ланч-бокс, ужин.
   images:
-  - src: https://brasiltours.ru/image/Los%20Roques.jpg
+  - src: "/media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лос Рокес
 - day: 3
   title: ', среда: Лос-Рокес'
@@ -57,7 +57,7 @@ itinerary:
 
     Питание: завтрак, ланч-бокс.
   images:
-  - src: https://brasiltours.ru/image/Los%20Roques.jpg
+  - src: "/media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лос Рокес
 - day: 4
   title: ', четверг: национальный парк Канайма, остров Анатолия, водопады Сапо и Ача'
@@ -87,7 +87,7 @@ itinerary:
 
     **Важно:** экскурсия рассчитана на активных путешественников и занимает весь день. В программе длительная поездка в моторной лодке, переход и небольшой трекинг. Нужны удобная обувь, кроссовки или треккинговые ботинки, сменная одежда и дождевик.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_50_63.jpg
+  - src: "/media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-4-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: водопад Сальта-Ангель в Венесуэле'
 - day: 6
   title: ', суббота: национальный парк Канайма'
@@ -186,7 +186,7 @@ priceFrom: 4518
 currency: USD
 priceNote: $4518
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/jorge-salvador-2n-dsx59jo0-unsplash.jpg
+  src: "/media/tours/venesuela-prirodnye-kontrasty-tropikov/hero-src-enhanced-20261007.webp"
   alt: 'На фото: тропические леса Венесуэлы'
 routeCountries:
 - country_venezuela

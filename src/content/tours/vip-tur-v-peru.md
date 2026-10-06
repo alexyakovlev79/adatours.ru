@@ -96,7 +96,7 @@ itinerary:
 
     Этот день проходит на большой высоте и почти полностью посвящен природным объектам. Лагуна-Верде, вулкан Ликанкабур, пустыня Дали и горячие источники Полкес сменяют друг друга по мере движения к Боливии. В Соль-де-Маньяна можно увидеть активные фумаролы и гейзеры, а Лагуна-Колорада становится одной из главных точек маршрута благодаря необычному цвету воды и колониям фламинго.
   images:
-  - src: https://brasiltours.ru/image/Uyuni.png
+  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-9-images-0-src-enhanced-20261007.webp"
     alt: Уюни
 - day: 4
   title: Уюни
@@ -115,7 +115,7 @@ itinerary:
 
     По дороге ландшафт остается почти безлюдным. В пустыне Силоли время предусмотрено специально для остановки и фотографий. В заповеднике Эдуардо-Авароа маршрут проходит через несколько лагун, где можно наблюдать фламинго и викуний. На горизонте появляется вулкан Ольягуэ, а завершение дня в соляном отеле логично продолжает тему самого Уюни.
   images:
-  - src: https://brasiltours.ru/image/Uyuni.png
+  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-9-images-0-src-enhanced-20261007.webp"
     alt: Уюни
 - day: 5
   title: Уюни - Ла-Пас
@@ -137,7 +137,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-right.jpg
     alt: Ла Пас
-  - src: https://brasiltours.ru/image/Uyuni.png
+  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-9-images-0-src-enhanced-20261007.webp"
     alt: Уюни
 - day: 6
   title: Ла-Пас - Тиуанако - озеро Титикака

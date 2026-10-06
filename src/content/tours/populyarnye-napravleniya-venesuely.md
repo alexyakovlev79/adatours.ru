@@ -227,7 +227,7 @@ itinerary:
 
     Вечером возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/margarita-isl-venezula.png
+  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-12-images-1-src-enhanced-20261007.webp"
     alt: Остров Маргарита
 - day: 10
   title: Остров Маргарита
@@ -275,7 +275,7 @@ itinerary:
   images:
   - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Каракас
-  - src: https://brasiltours.ru/image/countries/venezuela/margarita-isl-venezula.png
+  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-12-images-1-src-enhanced-20261007.webp"
     alt: Остров Маргарита
 included:
 - Проживание в отелях 4* и кампаменто.

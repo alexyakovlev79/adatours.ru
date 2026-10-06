@@ -74,7 +74,7 @@ itinerary:
 
     Парад продолжается всю ночь. После окончания предусмотрен трансфер обратно в отель. После такого количества света, музыки и движения уснуть сразу получается далеко не у всех.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/kvadraty/ben-iwara-utxtjlwi64-unsplash.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-3-enhanced-20261006.webp
     alt: Карнавал в Рио, бразильские танцовщицы в ярких костюмах с перьями на параде
 - day: 4
   title: Корковадо и Христос Спаситель
@@ -131,7 +131,7 @@ itinerary:
 
     Чем ближе тропа подходит к Горлу дьявола, тем сильнее гул. На финальных настилах водяная пыль оседает на одежде, над водой появляются короткие радуги, а разговаривать становится трудно.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1328947-unsplash.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-6-enhanced-20261006.webp
     alt: Водопады Игуасу среди джунглей и реки
 - day: 7
   title: Аргентинская сторона Игуасу - Буэнос-Айрес
@@ -247,7 +247,7 @@ priceFrom: 3725
 currency: USD
 priceNote: $3725
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/venus-major-mebzqxkv80y-unsplash.jpg
+  src: /media/tours/mechty-sbyvayutsya-na-karnaval/hero-enhanced-20261006.webp
   alt: Девушки в костюмах на карнавале в Рио, яркие перья и бразильский самба-дром
 routeCountries:
 - country_brazil

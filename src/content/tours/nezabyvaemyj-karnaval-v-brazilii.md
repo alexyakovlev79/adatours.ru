@@ -38,7 +38,7 @@ itinerary:
 
     Первый вечер помогает привыкнуть к масштабу Рио. Пляжная линия тянется рядом с плотной городской застройкой, а за домами сразу поднимаются холмы. Даже без экскурсии хорошо видно, что природа здесь не вынесена за пределы мегаполиса. Океан, скалы и зеленые массивы постоянно появляются между улицами, поэтому уже обычная поездка из аэропорта становится частью знакомства с городом.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/11-1.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Вечерний закат на пляже Рио-де-Жанейро
 - day: 2
   title: Сахарная Голова и старый Рио
@@ -63,7 +63,7 @@ itinerary:
 
     **Стоимость:** от $250.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-16.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-2-enhanced-20261006.webp
     alt: Сёрфинг на пляжах Рио, океан, волны и песок в Бразилии
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -124,7 +124,7 @@ itinerary:
   images:
   - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Закат над водопадами Игуасу, золотой час и оранжевое небо над Глоткой Дьявола
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-23.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-5-images-1-enhanced-20261006.webp
     alt: Панорама Рио-де-Жанейро со смотровой площадки
 - day: 6
   title: Бразильская сторона Игуасу
@@ -198,7 +198,7 @@ itinerary:
 
     Бузиос предлагает несколько вариантов отдыха даже без дальних поездок. Феррадура и Жуан-Фернандес подходят для более спокойной воды, Жериба больше открыта океану и известна волнами. Между пляжами можно перемещаться по полуострову и каждый день выбирать новый берег. После шумного Самбадрома и мощных потоков Игуасу эта часть маршрута дает совсем другое ощущение Бразилии.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-2.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-8-enhanced-20261006.webp
     alt: Пляжный отдых на океане в Бузиосе, Бразилия, белый песок и бирюзовая вода Атлантики
   - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-8-images-1-enhanced-20261006.webp
     alt: Экзотические водопады Игуасу в Бразилии и Аргентине, каскады и джунгли
@@ -219,7 +219,7 @@ itinerary:
 
     Если хочется провести день совсем спокойно, достаточно выбрать одну бухту и остаться там до вечера. Если хочется движения, багги дает возможность проехать по нескольким точкам полуострова, а лодочная прогулка показывает небольшие пляжи и скалистые участки с воды. Поэтому свободные дни можно сделать как полностью пляжными, так и довольно активными без изменения основной программы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-2.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-8-enhanced-20261006.webp
     alt: Пляжный отдых на океане в Бузиосе, Бразилия, белый песок и бирюзовая вода Атлантики
 - day: 10
   title: Бузиос
@@ -237,7 +237,7 @@ itinerary:
 
     Если хочется провести день совсем спокойно, достаточно выбрать одну бухту и остаться там до вечера. Если хочется движения, багги дает возможность проехать по нескольким точкам полуострова, а лодочная прогулка показывает небольшие пляжи и скалистые участки с воды. Поэтому свободные дни можно сделать как полностью пляжными, так и довольно активными без изменения основной программы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-2.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-8-enhanced-20261006.webp
     alt: Пляжный отдых на океане в Бузиосе, Бразилия, белый песок и бирюзовая вода Атлантики
 - day: 11
   title: Бузиос
@@ -255,7 +255,7 @@ itinerary:
 
     Если хочется провести день совсем спокойно, достаточно выбрать одну бухту и остаться там до вечера. Если хочется движения, багги дает возможность проехать по нескольким точкам полуострова, а лодочная прогулка показывает небольшие пляжи и скалистые участки с воды. Поэтому свободные дни можно сделать как полностью пляжными, так и довольно активными без изменения основной программы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-2.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-8-enhanced-20261006.webp
     alt: Пляжный отдых на океане в Бузиосе, Бразилия, белый песок и бирюзовая вода Атлантики
 - day: 12
   title: Бузиос - Рио-де-Жанейро и вылет
@@ -269,9 +269,9 @@ itinerary:
 
     Первые дни требуют больше энергии: экскурсии идут подряд и карнавальный парад продолжается ночью. Игуасу тоже предполагает много ходьбы по настилам национальных парков. Поэтому несколько финальных дней в Бузиосе имеют практический смысл, а не только пляжную составляющую. Они позволяют завершить путешествие без новых длинных переездов и ранних экскурсий перед возвращением домой.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/11-1.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Вечерний закат на пляже Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-2.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-8-enhanced-20261006.webp
     alt: Пляжный отдых на океане в Бузиосе, Бразилия, белый песок и бирюзовая вода Атлантики
 included:
 - Проживание в выбранных отелях на базе завтраков.
@@ -303,7 +303,7 @@ priceFrom: 4056
 currency: USD
 priceNote: $4056
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/quinten-de-graaf-kb0ipylp7dc-unsplash.jpg
+  src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/hero-enhanced-20261006.webp
   alt: Счастливые девушки на карнавале в Рио, карнавальные костюмы
 routeCountries:
 - country_brazil

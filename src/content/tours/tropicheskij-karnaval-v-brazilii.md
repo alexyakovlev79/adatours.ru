@@ -67,7 +67,7 @@ itinerary:
     Билеты на Карнавал и трансфер отель - Самбадром - отель входят в программу. После завершения парада вас отвезут обратно
     в отель.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/ben-iwara-qbsrw9mpl8a-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/hero-enhanced-20261006.webp
     alt: Девушка танцует в синем костюме с перьями на карнавале в Рио-де-Жанейро
 - day: 4
   title: Корковадо и статуя Христа Искупителя
@@ -115,7 +115,7 @@ itinerary:
     дни оставить пляжам и прогулкам. Такой запас времени важен после ночного парада: отдых не приходится втискивать между
     ранними выездами и новыми обязательными экскурсиями.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/tadeu-jnr-wijh1xipfxc-unsplash.jpg
+  - src: /media/tours/tropicheskij-karnaval-v-brazilii/itinerary-day-12-enhanced-20261006.webp
     alt: Спокойный океан и яхты на закате в Бузиосе, романтический вечер в Бразилии
 - day: 7
   title: Пляжный отдых в Бузиосе
@@ -153,7 +153,7 @@ itinerary:
     дни оставить пляжам и прогулкам. Такой запас времени важен после ночного парада: отдых не приходится втискивать между
     ранними выездами и новыми обязательными экскурсиями.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/tadeu-jnr-wijh1xipfxc-unsplash.jpg
+  - src: /media/tours/tropicheskij-karnaval-v-brazilii/itinerary-day-12-enhanced-20261006.webp
     alt: Спокойный океан и яхты на закате в Бузиосе, романтический вечер в Бразилии
 - day: 9
   title: Пляжный отдых в Бузиосе
@@ -191,7 +191,7 @@ itinerary:
     дни оставить пляжам и прогулкам. Такой запас времени важен после ночного парада: отдых не приходится втискивать между
     ранними выездами и новыми обязательными экскурсиями.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/tadeu-jnr-wijh1xipfxc-unsplash.jpg
+  - src: /media/tours/tropicheskij-karnaval-v-brazilii/itinerary-day-12-enhanced-20261006.webp
     alt: Спокойный океан и яхты на закате в Бузиосе, романтический вечер в Бразилии
 - day: 11
   title: Пляжный отдых в Бузиосе
@@ -222,7 +222,7 @@ itinerary:
     кварталы и шум большого города. В Бузиосе - небольшие бухты, лодки, пляжи и спокойные вечера у океана. В аэропорту вы
     зарегистрируетесь на международный рейс. На этом программа тура заканчивается.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/tadeu-jnr-wijh1xipfxc-unsplash.jpg
+  - src: /media/tours/tropicheskij-karnaval-v-brazilii/itinerary-day-12-enhanced-20261006.webp
     alt: Спокойный океан и яхты на закате в Бузиосе, романтический вечер в Бразилии
 included:
 - Проживание в выбранных отелях на базе завтраков.

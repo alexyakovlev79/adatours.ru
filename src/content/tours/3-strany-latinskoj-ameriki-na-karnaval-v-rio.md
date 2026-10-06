@@ -290,7 +290,7 @@ priceFrom: 4639
 currency: USD
 priceNote: $4639
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/ben-iwara-qbsrw9mpl8a-unsplash.jpg
+  src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/hero-enhanced-20261006.webp
   alt: Девушка в синем карнавальном костюме на карнавале в Рио
 routeCountries:
 - country_brazil

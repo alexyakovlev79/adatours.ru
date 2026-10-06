@@ -43,7 +43,7 @@ itinerary:
 
     После размещения оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 2
   title: Буэнос-Айрес

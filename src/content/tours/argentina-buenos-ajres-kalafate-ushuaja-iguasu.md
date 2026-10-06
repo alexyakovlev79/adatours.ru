@@ -78,7 +78,7 @@ itinerary:
 
       Улицы Буэнос-Айреса связаны с историей иммиграции, ростом богатых районов в конце XIX и начале XX века и появлением танго. Старые кварталы соседствуют с современной набережной и широкими проспектами.
     images:
-      - src: https://brasiltours.ru/image/buenos%20aires4.png
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-2"
 
@@ -119,7 +119,7 @@ itinerary:
     text: |-
       Трансфер в аэропорт и перелет в Эль-Калафате. По прибытии встреча и трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/argentina-calafate-adatours.jpg
+      - src: /media/excursions/todo-glaciares/hero-enhanced-20261006.webp
         alt: "Эль-Калафате"
         intendedSlot: "itinerary:day-4"
 

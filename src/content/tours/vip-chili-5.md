@@ -161,7 +161,7 @@ itinerary:
 
     По прилете трансфер в отель и размещение.
   images:
-  - src: https://brasiltours.ru/image/puerto%20natales2.png
+  - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
   - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
     alt: Сантьяго-де-Чили
@@ -188,7 +188,7 @@ itinerary:
 
     **Включено:** входные билеты в парк Торрес-дель-Пайне, навигация к леднику, обед.
   images:
-  - src: https://brasiltours.ru/image/torres%20del%20paine.png
+  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-10-enhanced-20261006.webp
     alt: Торрес-дель-Пайне
 - day: 8
   title: Пуэрто-Наталес - Сантьяго
@@ -202,7 +202,7 @@ itinerary:
 
     По прилете трансфер и размещение.
   images:
-  - src: https://brasiltours.ru/image/puerto%20natales2.png
+  - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили

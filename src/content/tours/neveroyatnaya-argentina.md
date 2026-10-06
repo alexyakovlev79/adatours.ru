@@ -199,7 +199,7 @@ itinerary:
 
       По прибытии встреча и регулярный трансфер в Mercure Iguazú Irú. Этот день почти полностью занят перемещением между Патагонией и северо-востоком страны. После ледников Эль-Калафате окружающий пейзаж меняется на влажные субтропические леса Мисьонеса. Активная экскурсионная программа у водопадов начинается на следующее утро.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/argentina-calafate-adatours.jpg
+      - src: /media/excursions/todo-glaciares/hero-enhanced-20261006.webp
         alt: "Эль-Калафате и Игуасу"
         intendedSlot: "itinerary:day-9"
 

@@ -95,7 +95,7 @@ itinerary:
 
     По прилете трансфер в отель и размещение. Здесь начинается патагонская часть путешествия: с открытой степью, холодным ветром, большими озерами и гранитными массивами.
   images:
-  - src: https://brasiltours.ru/image/puerto%20natales2.png
+  - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
   - src: https://brasiltours.ru/image/santiago%20de%20ch.png
     alt: Сантьяго-де-Чили
@@ -140,7 +140,7 @@ itinerary:
 
     Эль-Калафате сам по себе остается небольшим и спокойным городом. После большого дня в дороге здесь приятно пройтись по набережной, заглянуть в небольшие магазины и рестораны. Озеро и открытый патагонский горизонт постоянно напоминают, что город возник рядом с огромным ледниковым районом. Вечерняя Nativo Experience добавляет к природной теме человеческую историю: наскальные следы, рассказы о первых жителях, колонизации и ужин в необычном месте.
   images:
-  - src: https://brasiltours.ru/image/puerto%20natales2.png
+  - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
 - day: 7
   title: Ледник Перито-Морено

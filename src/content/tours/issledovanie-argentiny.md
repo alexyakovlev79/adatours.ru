@@ -196,7 +196,7 @@ itinerary:
     text: |-
       Регулярный трансфер в аэропорт и перелет Aerolineas Argentinas. По прибытии - встреча и регулярный трансфер в выбранный отель Calafate Parque.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/argentina-calafate-adatours.jpg
+      - src: /media/excursions/todo-glaciares/hero-enhanced-20261006.webp
         alt: "На фото: Ледник Перито Морено"
         intendedSlot: "itinerary:day-9"
 

@@ -109,7 +109,7 @@ itinerary:
       
       После городских дней маршрут уходит далеко на юг Чили, в Патагонию. Впереди 2 насыщенных дня среди гранитных башен, озер, рек и ледников.
     images:
-      - src: https://brasiltours.ru/image/puerto%20natales2.png
+      - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
         alt: "Пунта-Наталес и Патагония"
         intendedSlot: "itinerary:day-5"
   - day: 6

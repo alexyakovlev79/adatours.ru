@@ -68,7 +68,7 @@ itinerary:
     text: |-
       Прибытие в Буэнос-Айрес. Частный трансфер из международного аэропорта в отель в центре города.
     images:
-      - src: https://brasiltours.ru/image/buenos%20aires4.png
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -84,7 +84,7 @@ itinerary:
       
       Вечером вас ждет ужин и танго-шоу в Tango Porteño. Представление проходит в старом театральном зале и посвящено золотому веку танго 1940-х годов. Перед шоу подают ужин из блюд аргентинской кухни, аргентинские вина, безалкогольные напитки и воду. На сцене выступают профессиональные танцоры, певцы и музыканты, а декорации и костюмы воссоздают атмосферу той эпохи. Трансфер включен.
     images:
-      - src: https://brasiltours.ru/image/Arg%20Buenos.png
+      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-2"
   - day: 3

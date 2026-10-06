@@ -148,7 +148,7 @@ itinerary:
       
       Дополнительно можно заказать айс-трекинг по леднику, $500 на человека. Во время программы можно пройти по льду и попробовать коктейль со льдом Перито-Морено.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/argentina-calafate-adatours.jpg
+      - src: /media/excursions/todo-glaciares/hero-enhanced-20261006.webp
         alt: "Эль-Калафате и ледник Перито-Морено"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -168,7 +168,7 @@ itinerary:
       
       Неподалеку от площадки тропа раздваивается, и одно ответвление ведет к Лагуне Капри. Озеро окружено лесом, рядом расположен кемпинг. Обратная дорога в Эль-Чалтен проходит в основном на спуск.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/el-chalten-adatours-2.jpg
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-7-enhanced-20261006.webp
         alt: "Эль-Чалтен, Патагония"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -189,7 +189,7 @@ itinerary:
       
       После отдыха и обеда начинается спуск в Эль-Чалтен. Обратный маршрут проходит через смотровую площадку Лагуна Капри.
     images:
-      - src: https://brasiltours.ru/image/El%20Chalten%20Adatours.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-8-enhanced-20261006.webp
         alt: "Эль-Чалтен и Фицрой"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -202,7 +202,7 @@ itinerary:
       
       После прохождения границы прибытие в Пуэрто-Наталес и размещение.
     images:
-      - src: https://brasiltours.ru/image/puerto%20natales2.png
+      - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
         alt: "Пуэрто-Наталес, Чили"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -225,7 +225,7 @@ itinerary:
       
       К водопаду Сальто-Гранде ведет прогулка примерно на 15 минут. Водопад соединяет озера Норденскхолд и Пеоэ. На обратном пути маршрут проходит мимо реки Рио-Серрано и озер Торо и Портеньо. Возвращение в Пуэрто-Наталес. Ночь в отеле.
     images:
-      - src: https://brasiltours.ru/image/torres%20del%20paine.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-10-enhanced-20261006.webp
         alt: "Торрес-дель-Пайне, Чили"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -238,7 +238,7 @@ itinerary:
       
       После нескольких дней Патагонии большой город становится резкой сменой обстановки: плотная застройка, другой климат и городской темп. Сантьяго дает спокойный финал после длинных пеших маршрутов и поездок по национальным паркам.
     images:
-      - src: https://brasiltours.ru/image/santiago%20de%20chile1.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-11-enhanced-20261006.webp
         alt: "Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-11"
   - day: 12
@@ -257,7 +257,7 @@ itinerary:
       
       После городской части программа продолжается на винодельнях долины Майпо. Предусмотрена дегустация. Это еще одна заметная смена обстановки: после центра Сантьяго маршрут выходит в винодельческую долину, где уже нет плотной городской застройки и основное внимание переходит к виноградникам и местному вину.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/chile-food.jpg
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-12-enhanced-20261006.webp
         alt: "Чилийская кухня в Сантьяго"
         intendedSlot: "itinerary:day-12"
   - day: 13
@@ -267,7 +267,7 @@ itinerary:
     text: |-
       Завтрак в отеле. В назначенное время трансфер в аэропорт для вылета домой. На этом большая патагонская часть путешествия и городской финал в Чили завершаются, оставляя в маршруте и природу, и 2 разные столицы.
     images:
-      - src: https://brasiltours.ru/image/santiago%20de%20chile3.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-13-enhanced-20261006.webp
         alt: "Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-13"
 included:

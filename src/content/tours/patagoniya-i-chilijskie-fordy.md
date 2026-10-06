@@ -115,7 +115,7 @@ itinerary:
       
       После этого судно продолжает путь на юг через канал Мессье и проходит узкий участок Английской Протоки шириной около 18 м. Отсюда открываются виды на ледники Южного Ледяного поля Патагонии.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/argentina-calafate-adatours.jpg
+      - src: /media/excursions/todo-glaciares/hero-enhanced-20261006.webp
         alt: "Калета Тортель и канал Мессье"
         intendedSlot: "itinerary:day-5"
   - day: 6

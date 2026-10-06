@@ -150,7 +150,7 @@ itinerary:
 
     После прибытия встреча и трансфер в отель. Свободное время.
   images:
-  - src: https://brasiltours.ru/image/santiago%20de%20chile3.png
+  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-13-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили - столица Чили'
   - src: https://brasiltours.ru/image/easter%20island.png
     alt: 'На фото: истуканы острова Пасхи в Чили'

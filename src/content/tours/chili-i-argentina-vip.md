@@ -83,7 +83,7 @@ itinerary:
 
     После исторического центра вы подниметесь на холм Санта-Лючия, откуда открывается панорама города. Затем экскурсия продолжится в современных районах Витакура, Лас-Кондес и Провиденсия. Вы проедете вдоль реки Мапочо и увидите архитектуру главных проспектов Сантьяго.
   images:
-  - src: https://brasiltours.ru/image/santiago%20de%20chile1.png
+  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-11-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 3
   title: Вальпараисо и Винья-дель-Мар
@@ -134,7 +134,7 @@ itinerary:
 
     Обратная дорога проходит мимо реки Рио-Серрано и озер Торо и Портеньо. Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/torres%20del%20paine.png
+  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-10-enhanced-20261006.webp
     alt: Торрес-дель-Пайне
 - day: 6
   title: Пуэрто-Наталес - Эль-Калафате
@@ -418,7 +418,7 @@ itinerary:
 
     Буэнос-Айрес завершает большой природный маршрут городской частью: архитектурой, старинными кварталами, ресторанами и танго.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
   - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
     alt: Фоз-ду-Игуасу

@@ -103,7 +103,7 @@ itinerary:
       
       Экскурсия продолжается в элегантном районе Реколета, где находится известное кладбище и церковь Эль-Пилар в колониальном стиле. Также маршрут проходит через современные районы, в том числе Пуэрто-Мадеро, и городские парки. Таким образом, за одну экскурсию можно увидеть несколько совершенно разных слоев города: старые портовые кварталы, парадный центр, аристократические районы и современную застройку.
     images:
-      - src: https://brasiltours.ru/image/Arg%20Buenos.png
+      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-2"
   - excursionRef: excursion_buenos_aires_tango_show_dinner
@@ -696,7 +696,7 @@ itinerary:
     text: |-
       После завтрака свободное время в Ушуайе. В назначенное время - трансфер в аэропорт и перелет в Буэнос-Айрес. Далее предусмотрена самостоятельная пересадка на международный рейс домой.
     images:
-      - src: https://brasiltours.ru/image/Arg%20Buenos.png
+      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
         alt: "Возвращение в Буэнос-Айрес"
         intendedSlot: "itinerary:day-26"
 included:

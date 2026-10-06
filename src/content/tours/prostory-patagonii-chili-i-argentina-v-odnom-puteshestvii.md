@@ -93,7 +93,7 @@ itinerary:
       
       Перелет в Эль-Калафате. По прилете встреча и трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/torres%20del%20paine.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-10-enhanced-20261006.webp
         alt: "Патагония"
         intendedSlot: "itinerary:day-3"
   - excursionRef: excursion_el_calafate_nativo_experience
@@ -206,7 +206,7 @@ itinerary:
       
       Возвращение в отель и ночь в Пуэрто-Наталесе.
     images:
-      - src: https://brasiltours.ru/image/torres%20del%20paine.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-10-enhanced-20261006.webp
         alt: "Национальный парк Торрес-дель-Пайне"
         intendedSlot: "itinerary:day-6"
   - day: 7

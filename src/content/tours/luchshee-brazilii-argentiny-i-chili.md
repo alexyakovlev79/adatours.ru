@@ -154,7 +154,7 @@ itinerary:
 
     В Буэнос-Айресе европейская архитектура сочетается с латиноамериканской городской жизнью, ресторанами, вином, танго и современными культурными площадками.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 5
   title: Буэнос-Айрес и танго-шоу
@@ -171,7 +171,7 @@ itinerary:
 
     После шоу возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_buenos_aires_tango_show_dinner_transfer
   places: []
@@ -202,7 +202,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
     alt: Эль-Калафате
-  - src: https://brasiltours.ru/image/Arg%20Buenos.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 7
   title: Калафате - Пуэрто-Наталес
@@ -220,7 +220,7 @@ itinerary:
 
     В регионе доступны дополнительные приключенческие программы, включая ледовые маршруты и лодочные поездки к удаленным островам.
   images:
-  - src: https://brasiltours.ru/image/puerto%20natales2.png
+  - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
   - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
     alt: Эль-Калафате
@@ -266,7 +266,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
-  - src: https://brasiltours.ru/image/puerto%20natales2.png
+  - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
 - day: 10
   title: Сантьяго - Атакама, звезды и Долина Луны

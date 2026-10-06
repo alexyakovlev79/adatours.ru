@@ -153,7 +153,7 @@ itinerary:
 
     После прибытия встреча и трансфер в отель. Размещение и отдых.
   images:
-  - src: https://brasiltours.ru/image/puerto%20natales2.png
+  - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: город Пуэрто Наталес в чилийской Патагонии'
   - src: https://brasiltours.ru/image/santiago%20de%20ch.png
     alt: 'На фото: город Сантьяго-де-Чили'
@@ -183,7 +183,7 @@ itinerary:
 
     **Включено:** входные билеты в Торрес-дель-Пайне и пещеру Куэва-дель-Милодон, обед.
   images:
-  - src: https://brasiltours.ru/image/torres%20del%20paine.png
+  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-10-enhanced-20261006.webp
     alt: 'На фото: парк Торрес-дель-Пайне в Чили'
 - day: 7
   title: Пуэрто-Наталес - Сантьяго
@@ -195,7 +195,7 @@ itinerary:
 
     После прибытия трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/puerto%20natales2.png
+  - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: город Пуэрто Наталес в чилийской Патагонии'
   - src: https://brasiltours.ru/image/santiago%20de%20ch.png
     alt: 'На фото: город Сантьяго-де-Чили'
@@ -365,3 +365,4 @@ themes: []
 Маршрут соединяет несколько самых известных регионов Чили. Сантьяго показывает современную столицу у подножия Анд. На севере находится Атакама, самая засушливая и старая пустыня мира. Здесь вас ждут Лунная долина, солончак, высокогорные лагуны и гейзеры.
 
 В Патагонии главным становится Торрес-дель-Пайне: гранитные пики, ледники, реки, озера, тундра и леса. После юга страны путешествие продолжается на острове Пасхи, где сохранились моаи, церемониальные площадки и археологические памятники Рапа-Нуи.
+

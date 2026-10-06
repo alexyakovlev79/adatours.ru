@@ -53,7 +53,7 @@ itinerary:
 
     Маршрут продолжается к Пласа-де-Майо и Каса-Росада, «Розовому дому», связанному с важными страницами аргентинской истории и именем Эвиты Перон. Гид расскажет о развитии города, его районах и людях, которые формировали современный Буэнос-Айрес. В старых кварталах особенно заметно, как в одном городе соединились европейская архитектура, портовая культура, эмигрантские традиции и южноамериканская повседневность.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -216,7 +216,7 @@ itinerary:
   - Пуэрто Игуасу
   text: Завтрак в отеле. В назначенное время трансфер в аэропорт Игуасу и перелет в Буэнос-Айрес. По прибытии трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
   - src: https://brasiltours.ru/image/countries/argentina/vodopady-iguasu-3.jpg
     alt: 'на фото: Водопады Игуасу в Аргентине и Бразилии'

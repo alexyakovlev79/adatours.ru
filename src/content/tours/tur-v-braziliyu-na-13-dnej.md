@@ -256,7 +256,7 @@ itinerary:
 
     В центре работают рестораны, бары и сувенирные магазины.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: пляжи в Бузиос Бразилия'
   - src: https://brasiltours.ru/image/Bonito.png
     alt: 'На фото: подземная пещера в Бонито Бразилия'
@@ -281,7 +281,7 @@ itinerary:
 
     Вылет домой.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: пляжи в Бузиос Бразилия'
   - src: https://brasiltours.ru/image/catalog/product/2/0/2015-02-02_134748_2_3.png
     alt: На фото:Рио

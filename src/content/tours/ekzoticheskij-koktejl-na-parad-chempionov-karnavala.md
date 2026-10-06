@@ -229,7 +229,7 @@ itinerary:
 
     Бонито считается одним из важных центров экотуризма Бразилии. Здесь сохранились прозрачные реки, подземные пещеры и лесные территории.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bonito.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Голубая пещера в Бонито, Бразилия'
   - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
     alt: 'На фото: лотосы в заповеднике Пантанал  в Бразилии'
@@ -324,7 +324,7 @@ priceFrom: 4230
 currency: USD
 priceNote: $4230
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/davi-costa-vtecdsflxsi-unsplash.jpg
+  src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/hero-enhanced-20261006.webp
   alt: 'На фото: залив Гуанабара в Рио-де-Жанейро, Бразилия'
 routeCountries:
 - country_brazil

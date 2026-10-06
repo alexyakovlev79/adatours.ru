@@ -29,7 +29,7 @@ itinerary:
 
     Можно выйти к океану, пройти по пляжу, прогуляться по городу или просто отдохнуть после перелета. Первый вечер специально оставлен без обязательных экскурсий, чтобы каждый выбрал удобный темп начала путешествия. Уже в первые часы можно заметить, что Рио готовится к главному событию года, а у пляжей и на улицах становится все больше музыки, людей и движения.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/dele-oluwayomi-rhy09otimle-unsplash.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/hero-enhanced-20261006.webp
     alt: Девушка в карнавальном костюме в Рио, перья и блёстки на Самбадроме в Бразилии
 - day: 2
   title: Сахарная Голова и старый Рио
@@ -71,7 +71,7 @@ itinerary:
 
     После окончания парада группа возвращается в отель. Этот вечер становится эмоциональной вершиной первой части маршрута: днем у вас почти нет обязательной программы, а ночью вся поездка сосредоточена вокруг одного события. На следующий день экскурсионный темп возвращается, но уже без карнавальной суеты.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/itay-peer-cz0m3r8-5fu-unsplash.jpg
+  - src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/itinerary-day-11-enhanced-20261006.webp
     alt: Бразильский карнавал в Рио-де-Жанейро, самба, костюмы и парад
 - day: 4
   title: Корковадо и статуя Христа
@@ -86,7 +86,7 @@ itinerary:
 
     Вечером можно отправиться на Арпоадор наблюдать закат, а затем выбрать ресторан Marius. Стоимость ужина - USD 130 с человека. На Арпоадоре люди собираются на камнях у океана и аплодируют последним лучам солнца. Так экскурсионный день заканчивается уже без организованной программы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-24.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-4-enhanced-20261006.webp
     alt: Вид на Христа-Искупителя с высоты, Корковаду и Атлантический океан в Бразилии
 - day: 5
   title: Рио-де-Жанейро - Ангра-душ-Рейш
@@ -100,7 +100,7 @@ itinerary:
 
     Вторая часть путешествия проходит на тропическом побережье со спокойными бухтами, густой зеленью, океаном и возможностью отдыхать без жесткого расписания.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/dele-oluwayomi-rhy09otimle-unsplash.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/hero-enhanced-20261006.webp
     alt: Девушка в карнавальном костюме в Рио, перья и блёстки на Самбадроме в Бразилии
 - day: 6
   title: Пляжный отдых в Ангра-душ-Рейш
@@ -141,7 +141,7 @@ itinerary:
 
     Один из вечеров можно посвятить местной кухне и заказать рыбу или морепродукты. В остальные дни можно вообще ничего не планировать заранее: система «все включено» позволяет оставаться в отеле, а свободный график дает возможность менять планы в зависимости от погоды и желания ехать на острова.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/itay-peer-cz0m3r8-5fu-unsplash.jpg
+  - src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/itinerary-day-11-enhanced-20261006.webp
     alt: Бразильский карнавал в Рио-де-Жанейро, самба, костюмы и парад
 - day: 8
   title: Пляжный отдых в Ангра-душ-Рейш
@@ -181,7 +181,7 @@ itinerary:
 
     Один из вечеров можно посвятить местной кухне и заказать рыбу или морепродукты. В остальные дни можно вообще ничего не планировать заранее: система «все включено» позволяет оставаться в отеле, а свободный график дает возможность менять планы в зависимости от погоды и желания ехать на острова.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/itay-peer-cz0m3r8-5fu-unsplash.jpg
+  - src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/itinerary-day-11-enhanced-20261006.webp
     alt: Бразильский карнавал в Рио-де-Жанейро, самба, костюмы и парад
 - day: 10
   title: Пляжный отдых в Ангра-душ-Рейш
@@ -221,7 +221,7 @@ itinerary:
 
     Один из вечеров можно посвятить местной кухне и заказать рыбу или морепродукты. В остальные дни можно вообще ничего не планировать заранее: система «все включено» позволяет оставаться в отеле, а свободный график дает возможность менять планы в зависимости от погоды и желания ехать на острова.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/itay-peer-cz0m3r8-5fu-unsplash.jpg
+  - src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/itinerary-day-11-enhanced-20261006.webp
     alt: Бразильский карнавал в Рио-де-Жанейро, самба, костюмы и парад
 - day: 12
   title: Ангра-душ-Рейш - Рио-де-Жанейро
@@ -237,7 +237,7 @@ itinerary:
 
     За счет такого построения маршрут дает и обязательные впечатления Карнавала, и полноценное время на восстановление после него. Последняя неделя не превращается в череду переездов: основная база остается в Ангре, а все морские активности можно выбирать по желанию уже на месте.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/dele-oluwayomi-rhy09otimle-unsplash.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/hero-enhanced-20261006.webp
     alt: Девушка в карнавальном костюме в Рио, перья и блёстки на Самбадроме в Бразилии
 included:
 - Проживание в выбранных отелях на базе завтраков.
@@ -262,7 +262,7 @@ priceFrom: 6149
 currency: USD
 priceNote: $6149
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/venus-major-bmo6kkzarm-unsplash.jpg
+  src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/hero-enhanced-20261006.webp
   alt: Грандиозный карнавал в Рио, музыка, танцы и яркие перья
 routeCountries:
 - country_brazil

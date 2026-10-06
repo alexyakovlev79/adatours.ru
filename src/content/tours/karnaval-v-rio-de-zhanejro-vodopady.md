@@ -182,7 +182,7 @@ priceFrom: 2981
 currency: USD
 priceNote: $2981
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/dele-oluwayomi-rhy09otimle-unsplash.jpg
+  src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/hero-enhanced-20261006.webp
   alt: Яркий карнавальный костюм с перьями на девушке в Рио-де-Жанейро
 routeCountries:
 - country_brazil

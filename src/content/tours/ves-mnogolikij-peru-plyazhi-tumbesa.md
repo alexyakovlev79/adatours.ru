@@ -55,7 +55,7 @@ itinerary:
 
     Лима расположена на берегу Тихого океана. В городе европейская колониальная архитектура соседствует с памятниками доинкской эпохи. После перелета экскурсионной программы нет, можно отдохнуть и самостоятельно выйти на первую прогулку.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/prezind-palace-lima.png
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Лима
 - day: 2
   title: Лима
@@ -283,7 +283,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/peru/arekipa.jpg
     alt: Арекипа
-  - src: https://brasiltours.ru/image/countries/peru/prezind-palace-lima.png
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Лима
 - day: 11
   title: Лима. Свободный день
@@ -354,7 +354,7 @@ itinerary:
 
     По прилете встреча и трансфер в отель **Casa Andina** или отель той же категории.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/prezind-palace-lima.png
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Лима
   - src: https://brasiltours.ru/image/Tumbes.jpg
     alt: Тумбес

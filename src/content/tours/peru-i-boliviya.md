@@ -201,7 +201,7 @@ priceFrom: 2236
 currency: USD
 priceNote: $2236
 hero:
-  src: https://brasiltours.ru/image/countries/peru/jeison-higuita-1464814-unsplash.jpg
+  src: /media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp
   alt: Перу и Боливия
 routeCountries:
 - country_peru

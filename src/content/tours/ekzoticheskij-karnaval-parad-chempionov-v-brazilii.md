@@ -187,7 +187,7 @@ itinerary:
 
     Стоимость - $100 нетто с человека.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
   - src: https://brasiltours.ru/image/BRA%20Amazonia%202.png
     alt: 'на фото: Амазонка'
@@ -204,7 +204,7 @@ itinerary:
     чтобы провести день у моря в собственном темпе. Полуостров известен множеством пляжей и небольших бухт, поэтому даже без
     организованной экскурсии можно менять места отдыха в течение дня.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
 - day: 11
   title: Бузиос - Рио-де-Жанейро
@@ -217,7 +217,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'на фото: Закат над Рио'
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
 included:
 - Проживание в выбранных отелях на базе завтраков.

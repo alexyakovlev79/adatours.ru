@@ -85,7 +85,7 @@ itinerary:
 
     После вечерней программы возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/prezind-palace-lima.png
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'НА фото: город Лима, столица Перу'
 - day: 3
   title: Лима - Куско
@@ -357,7 +357,7 @@ itinerary:
 
     Размещение в отеле **Britania 3*** или отеле той же категории.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/prezind-palace-lima.png
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'НА фото: город Лима, столица Перу'
 - day: 15
   title: Лима и вылет

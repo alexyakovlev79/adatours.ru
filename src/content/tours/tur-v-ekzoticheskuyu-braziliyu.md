@@ -223,7 +223,7 @@ itinerary:
 
     В Бузиосе трансфер в отель. После нескольких насыщенных дней начинается спокойная пляжная часть путешествия.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос и пляжный отдых в Бразилии'
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: романтический закат на смотровой площадке в Рио-де-Жанейро, Бразилия'
@@ -238,7 +238,7 @@ itinerary:
 
     Эти 2 дня оставлены без плотной экскурсионной программы, чтобы после Рио, Игуасу и Амазонии можно было спокойно отдохнуть у океана.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос и пляжный отдых в Бразилии'
 - day: 11
   title: Бузиос
@@ -250,7 +250,7 @@ itinerary:
 
     Эти 2 дня оставлены без плотной экскурсионной программы, чтобы после Рио, Игуасу и Амазонии можно было спокойно отдохнуть у океана.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос и пляжный отдых в Бразилии'
 - day: 12
   title: Бузиос - Рио-де-Жанейро
@@ -261,7 +261,7 @@ itinerary:
   images:
   - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
     alt: 'На фото: Рио-де-Жанейро, Бразилия'
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос и пляжный отдых в Бразилии'
 included:
 - проживание в отелях;

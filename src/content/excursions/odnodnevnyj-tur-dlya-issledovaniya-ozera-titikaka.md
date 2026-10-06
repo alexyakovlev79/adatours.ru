@@ -20,7 +20,7 @@ hero:
   src: "https://brasiltours.ru/image/Puno.jpg"
   alt: "на фото: озеро Титикака и  плавающие острова Урос в Перу"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/peru/jeison-higuita-1464814-unsplash.jpg"
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp"
     alt: "на фото: озеро Титикака и  плавающие острова Урос в Перу"
   - src: "https://brasiltours.ru/image/puno2.png"
     alt: "на фото: озеро Титикака и  плавающие острова Урос в Перу"

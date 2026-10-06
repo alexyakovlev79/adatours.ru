@@ -161,7 +161,7 @@ itinerary:
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско, Перу
-  - src: https://brasiltours.ru/image/countries/peru/prezind-palace-lima.png
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Лима, столица Перу
 - day: 8
   title: '04.01 - Священная долина: Чинчеро, Марас и Морай'
@@ -204,7 +204,7 @@ itinerary:
 
     Поездка на Hiram Bingham занимает значительную часть дня и сама включена в впечатление от маршрута. В вагонах подают еду, а за окнами постепенно меняется пейзаж вдоль Урубамбы. После прибытия вы пересаживаетесь на автобус и поднимаетесь по серпантину к археологическому комплексу. Весь день построен так, чтобы посещение Мачу-Пикчу сочеталось с комфортной дорогой туда и обратно, обедом и ужином в поезде и чаепитием у входа в комплекс.
   images:
-  - src: https://brasiltours.ru/image/Machu%20Picchu.jpg
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-14-enhanced-20261006.webp
     alt: Мачу Пикчу в Перу
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско, Перу
@@ -270,7 +270,7 @@ itinerary:
 
     Урос и Такиле сильно отличаются друг от друга. На Урос главная особенность - сами искусственные острова из тростника и жизнь, связанная с озером. Такиле расположен значительно выше, требует подъема в горную часть острова и известен сохраненными общественными и ремесленными традициями. Поэтому один день на Титикаке дает 2 разных знакомства с местными сообществами.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/jeison-higuita-1464814-unsplash.jpg
+  - src: /media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp
     alt: Озеро Титикака
 - day: 13
   title: 09.01 - Пуно - Лима - Паракас
@@ -318,7 +318,7 @@ itinerary:
 
     Паракас завершает путешествие совершенно другим пейзажем. После зеленых долин и высокогорья появляется сухое тихоокеанское побережье, где пустыня подходит почти к океану. Утренний выход к островам посвящен животному миру, а вторая половина дня - археологической загадке Наска. Сначала вы видите морских птиц, пингвинов и морских котиков, затем садитесь в самолет и смотрите сверху на огромные рисунки пустынного плато.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/prezind-palace-lima.png
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Лима, столица Перу
   - src: /media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp
     alt: Линии Назка

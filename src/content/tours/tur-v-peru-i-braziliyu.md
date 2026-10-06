@@ -108,7 +108,7 @@ itinerary:
 
     Затем спуск на автобусе в поселок, обед и возвращение на железнодорожную станцию. Обратная дорога на поезде снова проходит через горные долины. По прибытии трансфер в гостиницу в Куско.
   images:
-  - src: https://brasiltours.ru/image/Machu%20Picchu.jpg
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-14-enhanced-20261006.webp
     alt: 'На фото: город инков Мачу Пикчу в Перу'
 - day: 5
   title: Куско - Пуно

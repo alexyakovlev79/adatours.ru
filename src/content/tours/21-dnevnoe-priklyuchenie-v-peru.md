@@ -156,7 +156,7 @@ itinerary:
 
     Ночь в Пуно.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/jeison-higuita-1464814-unsplash.jpg
+  - src: /media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp
     alt: 'на фото: Озеро Титикака и Пуно'
 - day: 9
   title: Озеро Титикака - острова Урос и Такуиле
@@ -259,7 +259,7 @@ itinerary:
 
     По прибытии в Куско свободное время.
   images:
-  - src: https://brasiltours.ru/image/Machu%20Picchu.jpg
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-14-enhanced-20261006.webp
     alt: 'на фото: Мачу Пикчу'
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: Куско'

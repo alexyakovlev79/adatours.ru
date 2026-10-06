@@ -16,17 +16,27 @@ export async function getStaticPaths() {
     .update(JSON.stringify(tours.map((entry) => entry.data.id)))
     .digest('hex')
     .slice(0, 20);
-  const hero = tours[0]?.data.hero?.src ?? '/media/home/buenos-aires-enhanced-20260930.webp';
+  return pages.slice(1).map((page) => {
+    const pageImages = new Set(page.entries.map((entry) => entry.data.hero?.src).filter(Boolean));
+    const afterPage = tours.slice(page.pagination.to);
+    const beforePage = tours.slice(0, page.pagination.offset);
+    const coverTour = [...afterPage, ...beforePage].find((entry) =>
+      Boolean(entry.data.hero?.src) && !pageImages.has(entry.data.hero?.src)
+    );
+    if (!coverTour?.data.hero?.src) {
+      throw new Error(`No off-page hero available for multi-country page ${page.pagination.currentPage}`);
+    }
 
-  return pages.slice(1).map((page) => ({
-    params: { page: String(page.pagination.currentPage) },
-    props: {
-      entries: page.entries,
-      pagination: page.pagination,
-      catalogVersion,
-      hero,
-    },
-  }));
+    return {
+      params: { page: String(page.pagination.currentPage) },
+      props: {
+        entries: page.entries,
+        pagination: page.pagination,
+        catalogVersion,
+        hero: coverTour.data.hero.src,
+      },
+    };
+  });
 }
 
 const { entries, pagination, catalogVersion, hero } = Astro.props;

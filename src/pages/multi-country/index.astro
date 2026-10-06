@@ -28,6 +28,14 @@ const catalogPages = paginateCatalog(multiCountryTours, '/multi-country/');
 const firstCatalogPage = catalogPages[0];
 const visibleTours = firstCatalogPage?.entries ?? [];
 const pagination = firstCatalogPage?.pagination;
+const pageHeroTour = multiCountryTours[10];
+const proofCoverTour = multiCountryTours[11];
+if (!pageHeroTour?.data.hero?.src || !proofCoverTour?.data.hero?.src) {
+  throw new Error('Multi-country page requires hero images for tours 11 and 12');
+}
+if (pageHeroTour.data.hero.src === proofCoverTour.data.hero.src) {
+  throw new Error('Multi-country tours 11 and 12 must have different hero images');
+}
 const catalogVersion = createHash('sha256')
   .update(JSON.stringify(multiCountryTours.map((entry) => entry.data.id)))
   .digest('hex')
@@ -43,8 +51,16 @@ const popularCountries = [...countryCounts.values()]
   .sort((a, b) => b.count - a.count || a.country.name.localeCompare(b.country.name, 'ru'))
   .slice(0, 5);
 
-const usedBackdropTourIds = new Set(visibleTours.map((entry) => entry.data.id));
-const usedBackdropImages = new Set(visibleTours.map((entry) => entry.data.hero?.src).filter(Boolean));
+const usedBackdropTourIds = new Set([
+  ...visibleTours.map((entry) => entry.data.id),
+  pageHeroTour.data.id,
+  proofCoverTour.data.id,
+]);
+const usedBackdropImages = new Set([
+  ...visibleTours.map((entry) => entry.data.hero?.src).filter(Boolean),
+  pageHeroTour.data.hero.src,
+  proofCoverTour.data.hero.src,
+]);
 const countryBands = popularCountries.map(({ country, count }) => {
   let coverTour;
   for (let index = multiCountryTours.length - 1; index >= 0; index--) {
@@ -87,8 +103,8 @@ const durationValue = minDuration && maxDuration
   ? minDuration === maxDuration ? countLabel(minDuration, ['день', 'дня', 'дней']) : `${minDuration}–${maxDuration} дней`
   : 'Гибко';
 
-const hero = multiCountryTours[0]?.data.hero?.src ?? '/media/home/buenos-aires-enhanced-20260930.webp';
-const proofImage = multiCountryTours[1]?.data.hero?.src ?? '/media/home/patagonia-enhanced-20260930.webp';
+const hero = pageHeroTour.data.hero.src;
+const proofImage = proofCoverTour.data.hero.src;
 const absoluteUrl = (path: string) => new URL(withBase(path), Astro.site ?? 'https://adatours.ru/').toString();
 const listSchema = pagination ? {
   '@type': 'ItemList',
@@ -170,7 +186,6 @@ const listSchema = pagination ? {
                   headingTag="h3"
                   eyebrow={meta}
                   title={data.title}
-                  text={data.lead}
                   image={data.hero?.src}
                   imageTextAlign={data.imageTextAlign}
                   mediaStatus={data.hero?.status}

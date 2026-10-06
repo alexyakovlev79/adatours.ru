@@ -52,7 +52,7 @@ const pageBreadcrumbs: BreadcrumbItem[] = p.currentPage > 1
 const cards = entries.map((entry) => {
   if (kind === 'tour') {
     const d = (entry as CollectionEntry<'tours'>).data;
-    return { data: d, title: d.title, text: d.lead, href: tourPath(d), meta: [variant === 'multi-country-tours' ? mainTourCountries(d).map((country) => country.name).join(' + ') : '', d.durationDays ? countLabel(d.durationDays, ['день', 'дня', 'дней']) : '', d.format, countryContextId && countryMembership(d, countryContextId) < 1 ? 'Дополнительное посещение страны' : ''].filter(Boolean).join(' · ') };
+    return { data: d, title: d.title, text: variant === 'multi-country-tours' ? undefined : d.lead, href: tourPath(d), meta: [variant === 'multi-country-tours' ? mainTourCountries(d).map((country) => country.name).join(' + ') : '', d.durationDays ? countLabel(d.durationDays, ['день', 'дня', 'дней']) : '', d.format, countryContextId && countryMembership(d, countryContextId) < 1 ? 'Дополнительное посещение страны' : ''].filter(Boolean).join(' · ') };
   }
   if (kind === 'excursion') {
     const d = (entry as CollectionEntry<'excursions'>).data;

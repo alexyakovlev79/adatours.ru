@@ -21,7 +21,7 @@ hero:
 gallery:
   - src: "https://brasiltours.ru/image/buenosaires7.11png.png"
     alt: "На фото: Флоралис Хенерика Буэнос-Айрес, Аргентина"
-  - src: "https://brasiltours.ru/image/countries/argentina/argentinian-meat.png"
+  - src: "/media/excursions/nezabyvaemoe-tango-shou/gallery-2-enhanced-20261006.webp"
     alt: "На фото: Блюда аргентинской кухни"
   - src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_51.png"
     alt: "На фото: Обелиск в Буэнос-Айресе"
@@ -51,4 +51,5 @@ themes: ["theme_culture"]
 ## Танго-шоу в доме «Ла Вентана»
 
 Посещение незабываемого танго-шоу с ужином в доме танго «Ла Вентана». Очаровательные ритмы самого страстного танца и танцующие пары оставят незабывамое впечатление, также как и традиционный аргентинский ужин (напитки включены). Частный трансфер и услуги русскоговорящего гида включены. Расписание: с 20:00 до 23:45
+
 

@@ -83,7 +83,7 @@ itinerary:
 
       Вы увидите памятную стелу, прогуляетесь по Ла-Боке и Сан-Тельмо с кафе и ресторанами. На Пласа-Доррего можно посмотреть антиквариат. Затем маршрут проходит через Пласа-де-Майо и Каса-Росада, «Розовый дом». Гид расскажет об истории города и Эвите Перон.
     images:
-      - src: https://brasiltours.ru/image/Arg%20Buenos%20Aires.png
+      - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
         alt: "Обзорная экскурсия по Буэнос-Айресу"
         intendedSlot: "itinerary:day-2"
 

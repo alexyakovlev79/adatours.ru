@@ -96,7 +96,7 @@ itinerary:
       
       Вечером участники отправляются на ужин в ресторан Fervor.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/argentinian-meat.png
+      - src: /media/excursions/nezabyvaemoe-tango-shou/gallery-2-enhanced-20261006.webp
         alt: "Аргентинская кухня"
         intendedSlot: "itinerary:day-4"
   - day: 5

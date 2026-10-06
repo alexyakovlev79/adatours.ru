@@ -75,7 +75,7 @@ itinerary:
     text: |-
       Прибытие в Буэнос-Айрес. В аэропорту вас встречает гид, после чего следует трансфер в отель. Остаток дня или вечера, в зависимости от времени прилета, остается свободным. Это возможность отдохнуть после дороги и самостоятельно начать знакомство со столицей Аргентины.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg
+      - src: /media/tours/argentina-2024/itinerary-day-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2

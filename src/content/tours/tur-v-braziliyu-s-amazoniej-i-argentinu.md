@@ -192,7 +192,7 @@ itinerary:
 
     Водопады расположены в Национальном парке с богатой тропической флорой и фауной. Экскурсия проходит на групповой основе с гидом.
   images:
-  - src: https://brasiltours.ru/image/Puerto%20Iguazu.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
 - day: 11
   title: Фоз-ду-Игуасу - Буэнос-Айрес

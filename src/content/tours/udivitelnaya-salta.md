@@ -42,7 +42,7 @@ itinerary:
 
     Ночь в винном отеле.
   images:
-  - src: https://brasiltours.ru/image/salta.jpg
+  - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
     alt: Удивительная Сальта
   - src: https://brasiltours.ru/image/20130830.Tour-Salta-Cafayate.upd.jpg
     alt: Кафаяте
@@ -60,7 +60,7 @@ itinerary:
 
     Возвращение в Сальту.
   images:
-  - src: https://brasiltours.ru/image/salta.jpg
+  - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
     alt: Удивительная Сальта
   - src: https://brasiltours.ru/image/20130830.Tour-Salta-Cafayate.upd.jpg
     alt: Кафаяте
@@ -80,7 +80,7 @@ itinerary:
 
     Следующая остановка - поселок Умауака на берегу реки Гранде. Здесь можно пройти по старым узким мощеным улицам и увидеть памятники колониальной эпохи.
   images:
-  - src: https://brasiltours.ru/image/salta.jpg
+  - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
     alt: Удивительная Сальта
   - src: https://brasiltours.ru/image/purmamarka.png
     alt: Пурмамарка
@@ -94,7 +94,7 @@ itinerary:
 
     После экскурсии - возвращение в Сальту с остановками в живописных деревнях. Дорога занимает около 4 часов.
   images:
-  - src: https://brasiltours.ru/image/salta.jpg
+  - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
     alt: Удивительная Сальта
   - src: https://brasiltours.ru/image/purmamarka.png
     alt: Пурмамарка
@@ -104,7 +104,7 @@ itinerary:
   - Сальта
   text: После завтрака в отеле трансфер в аэропорт для вылета.
   images:
-  - src: https://brasiltours.ru/image/salta.jpg
+  - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
     alt: Удивительная Сальта
 included:
 - Проживание в отелях.
@@ -132,7 +132,7 @@ priceFrom: 3110
 currency: USD
 priceNote: $3110
 hero:
-  src: https://brasiltours.ru/image/salta.jpg
+  src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
   alt: Удивительная Сальта
 routeCountries:
 - country_argentina
@@ -161,3 +161,4 @@ themes: ["theme_culture"]
 В Кафаяте вы познакомитесь с производством аргентинского вина и проведете ночь в винном отеле. Дальше маршрут проходит через национальный парк Los Cardones, где растут кактусы возрастом 200-300 лет.
 
 В районе Пурмамарки вас ждут Семицветная гора и Кебрада-де-Умауака, культурно-пейзажный объект Всемирного наследия ЮНЕСКО. Здесь сохранились индейские крепости, доколумбовые и колониальные поселения, старые храмы и мощеные улицы. Еще одна природная точка программы - солончаки Salinas Grandes.
+

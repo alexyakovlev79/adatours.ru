@@ -160,7 +160,7 @@ itinerary:
   - Пуэрто Игуасу
   text: Трансфер в аэропорт Калафате. Перелет в Игуасу с пересадкой в Буэнос-Айресе. По прибытии встреча и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Puerto%20Iguazu.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
     alt: 'на фото: Водопады Игуасу в Аргентине и Бразилии'
   - src: https://brasiltours.ru/image/El%20Calafate%20ADA.png
     alt: 'на фото: Эль Калафате в Аргентине'
@@ -202,7 +202,7 @@ itinerary:
 
     После тура трансфер в отель. Вечером можно отдохнуть после насыщенного дня у водопадов и спокойно завершить эту часть путешествия.
   images:
-  - src: https://brasiltours.ru/image/Puerto%20Iguazu.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
     alt: 'на фото: Водопады Игуасу в Аргентине и Бразилии'
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []

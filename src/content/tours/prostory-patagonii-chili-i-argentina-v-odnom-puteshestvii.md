@@ -76,7 +76,7 @@ itinerary:
       
       Экскурсия продолжится по нескольким районам Буэнос-Айреса. Ла-Бока и Сан-Тельмо показывают старый, яркий и исторический город. Палермо и Реколета связаны с более респектабельной частью столицы. Пуэрто-Мадеро - современный район с ресторанами, прогулочными зонами и развлечениями.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos.jpg
+      - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-3-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-2"
   - excursionRef: excursion_source_tango_shou_v_buenos_ajrese

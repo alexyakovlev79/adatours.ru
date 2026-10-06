@@ -184,7 +184,7 @@ itinerary:
 
       В этой обстановке готовят барбекю в аргентинских традициях с вином Мальбек. Есть время отдохнуть, пообщаться и восстановить силы перед обратной дорогой. После обеда - возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/argentinian-meat.png
+      - src: /media/excursions/nezabyvaemoe-tango-shou/gallery-2-enhanced-20261006.webp
         alt: "На фото: Блюда аргентинской кухни"
         intendedSlot: "itinerary:day-8"
 

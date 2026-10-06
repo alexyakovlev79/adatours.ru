@@ -185,7 +185,7 @@ itinerary:
     text: |-
       Трансфер в аэропорт и перелет в Игуасу с пересадкой в Буэнос-Айресе. По прибытии трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/Puerto%20Iguazu.png
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
         alt: "Игуасу"
         intendedSlot: "itinerary:day-8"
 

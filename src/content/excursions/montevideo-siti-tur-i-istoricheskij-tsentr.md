@@ -25,7 +25,7 @@ gallery:
     alt: Городской пейзаж Монтевидео
   - src: https://brasiltours.ru/image/montevideo%20urug.png
     alt: Монтевидео и побережье Рио-де-ла-Плата
-  - src: https://brasiltours.ru/image/countries/uruguay/montevideo-1680.jpg
+  - src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
     alt: Исторический центр Монтевидео
   - src: https://brasiltours.ru/image/Uruguay%20Montevideo.jpg
     alt: Монтевидео, Уругвай
@@ -64,3 +64,4 @@ themes: ["theme_culture"]
 Затем экскурсия продолжается в Старом городе. Через сохранившуюся арку старых ворот вы выйдете к узким улицам исторического центра, пройдете по пешеходной улице Саранди, увидите Кафедраль Матрис и памятник основателю Монтевидео Бруно Маурисио де Забала.
 
 Обед включен и проходит в Mercado Puerto, известном местной кухней.
+

@@ -142,7 +142,7 @@ itinerary:
 
     Стыковка на международный рейс домой.
   images:
-  - src: https://brasiltours.ru/image/Puerto%20Iguazu.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
     alt: 'На фото: Водопады Игуасу (Фоз Игуазу), Бразилия и Аргентина'
   - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер на гору в Рио-де-Жанейро, Бразилия'
@@ -184,3 +184,4 @@ themes: []
 **Стоимость:** $1135
 
 За 6 дней вы подниметесь на Сахарную Голову и Корковадо, увидите Копакабану, Ипанему и залив Гуанабара, а затем отправитесь к водопадам с бразильской и аргентинской сторон.
+

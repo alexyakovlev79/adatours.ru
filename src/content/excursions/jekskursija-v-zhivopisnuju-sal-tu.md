@@ -13,7 +13,7 @@ language: []
 priceFrom: 105
 currency: "USD"
 priceNote: "Стоимость — $105 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
-hero: {"src":"https://brasiltours.ru/image/Salta.png","alt":"Экскурсия в живописную Сальту"}
+hero: {"src":"/media/excursions/jekskursija-v-zhivopisnuju-sal-tu/hero-enhanced-20261006.webp","alt":"Экскурсия в живописную Сальту"}
 gallery: [{"src":"https://brasiltours.ru/image/catalog/product/f/i/file_47_57.png","alt":""},{"src":"https://brasiltours.ru/image/catalog/product/f/i/file_54_11.png","alt":""}]
 route: []
 lead: "Экскурсия в живописную Сальту."
@@ -29,4 +29,5 @@ themes: ["theme_culture"]
 Экскурсия в живописную Сальту.
 
 Стоимость — $105 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения.
+
 

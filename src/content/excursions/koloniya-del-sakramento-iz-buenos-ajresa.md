@@ -11,7 +11,7 @@ destination: destination_uruguay_koloniya_del_sakramento
 destinationName: "Колония-дель-Сакраменто"
 language: []
 hero:
-  src: https://brasiltours.ru/image/countries/uruguay/montevideo-1680.jpg
+  src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
   alt: "Колония-дель-Сакраменто, Уругвай"
 gallery: []
 route:
@@ -33,3 +33,4 @@ themes: ["theme_culture"]
 После прибытия можно пообедать, затем пройти экскурсионный маршрут по городу на туристическом автобусе. Вы увидите парки и сады, тихие улицы, береговую линию и Реаль-де-Сан-Карлос с ареной для боя быков. После экскурсии остается свободное время.
 
 В программу входят трансфер от отеля до порта Buquebus, прогулка по Колонии и билеты на паром Буэнос-Айрес - Колония - Буэнос-Айрес.
+

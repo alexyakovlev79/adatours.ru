@@ -155,7 +155,7 @@ itinerary:
 
     Маршрут проходит через Ла-Боку и Сан-Тельмо, затем через Палермо, Реколету и современный Пуэрто-Мадеро. За несколько часов можно сравнить портовые кварталы, старый центр, более парадные районы и новую набережную.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg
+  - src: /media/tours/argentina-2024/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -219,7 +219,7 @@ itinerary:
   images:
   - src: /media/excursions/jekskursija-v-tigre/gallery-2-enhanced-20261001.webp
     alt: Тигре
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg
+  - src: /media/tours/argentina-2024/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 12
   title: Буэнос-Айрес - Сантьяго-де-Чили

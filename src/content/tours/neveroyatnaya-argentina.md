@@ -54,7 +54,7 @@ itinerary:
 
       После размещения свободное время. Буэнос-Айрес станет первой и последней точкой маршрута: после Патагонии и Игуасу вы вернетесь сюда перед международным вылетом.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos.jpg
+      - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-3-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-1"
 
@@ -260,7 +260,7 @@ itinerary:
     text: |-
       Частный трансфер в аэропорт для международного рейса в Азию, Европу или США.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos.jpg
+      - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-3-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-13"
 

@@ -94,7 +94,7 @@ itinerary:
     text: |-
       Завтрак в отеле. День свободный. Можно выбрать одну из дополнительных экскурсий.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos.jpg
+      - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-3-enhanced-20261006.webp
         alt: "Буэнос-Айрес, свободный день"
         intendedSlot: "itinerary:day-3"
   - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
@@ -122,7 +122,7 @@ itinerary:
       
       Обед на центральной площади города оплачивается отдельно. Также вы посетите винный музей. Ночевка в винном отеле.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg
+      - src: /media/tours/argentina-2024/itinerary-day-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес перед перелетом в Сальту"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -136,7 +136,7 @@ itinerary:
       
       По дороге предусмотрены остановки для фотографий и покупки региональных сувениров. Возвращение в Сальту. Ночевка в отеле.
     images:
-      - src: https://brasiltours.ru/image/salta.jpg
+      - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
         alt: "Сальта и северо-запад Аргентины"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -160,7 +160,7 @@ itinerary:
       
       Ночевка в отеле в Пурмамарке.
     images:
-      - src: https://brasiltours.ru/image/Salta.png
+      - src: /media/excursions/jekskursija-v-zhivopisnuju-sal-tu/hero-enhanced-20261006.webp
         alt: "Пурмамарка и Кебрада-дель-Хумауака"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -171,7 +171,7 @@ itinerary:
     text: |-
       Поездка к солончакам Салинас-Грандес по дороге N 9. После экскурсии возвращение в Сальту с остановками в живописных деревнях. Дорога занимает около 4 часов. Ночевка в Сальте.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/argentinian-meat.png
+      - src: /media/excursions/nezabyvaemoe-tango-shou/gallery-2-enhanced-20261006.webp
         alt: "Сальта, Аргентина"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -208,7 +208,7 @@ itinerary:
       
       Дополнительно можно заказать водные приключения и фотосафари в Национальном парке. Эти экскурсии в стоимость не входят.
     images:
-      - src: https://brasiltours.ru/image/Puerto%20Iguazu.png
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
         alt: "Водопады Игуасу, аргентинская сторона"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -225,7 +225,7 @@ itinerary:
       
       В конце маршрута можно подняться на панорамном лифте. Затем автобус доставит вас обратно в отель.
     images:
-      - src: https://brasiltours.ru/image/Arg%20Buenos%20Aires.png
+      - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
         alt: "Водопады Игуасу, бразильская сторона"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -236,7 +236,7 @@ itinerary:
     text: |-
       Трансфер в аэропорт и вылет в Буэнос-Айрес. После прибытия - частный трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/argentinian%20tango.png
+      - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-11-enhanced-20261006.webp
         alt: "Возвращение в Буэнос-Айрес"
         intendedSlot: "itinerary:day-11"
   - day: 12
@@ -246,7 +246,7 @@ itinerary:
     text: |-
       Частный трансфер из отеля в аэропорт.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/pexels-joaquin-carfagna-14899674.jpg
+      - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-12-enhanced-20261006.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-12"
 included:

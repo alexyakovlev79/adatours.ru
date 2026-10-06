@@ -3,7 +3,7 @@ import { selectVipTours } from './vip-tours.mjs';
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
  * Facts come from the content model and the rendered page, never SEO inventions.
  */
-export const SCHEMA_VERSION = '2026-10-06.1';
+export const SCHEMA_VERSION = '2026-10-06.2';
 export const types = (node) => [node?.['@type'] ?? []].flat();
 export const hasType = (node, type) => types(node).includes(type);
 export const ref = (id) => ({ '@id': id });
@@ -52,19 +52,16 @@ const servicePages = {
     serviceType: 'DMC и принимающее обслуживание в Бразилии и Латинской Америке',
     category: 'B2B DMC',
     keywords: ['DMC в Бразилии', 'DMC в Латинской Америке', 'принимающий туроператор Бразилия', 'DMC для туроператоров', 'DMC для турагентств', 'MICE Бразилия', 'multi-country Латинская Америка'],
-    audience: ['Туроператоры', 'Турагентства', 'Luxury travel advisors', 'MICE-агентства'],
   },
   '/dmc/travel-agencies/': {
     serviceType: 'Принимающее обслуживание для турагентств и туроператоров',
     category: 'B2B DMC для туристических компаний',
     keywords: ['DMC для турагентств', 'DMC для туроператоров', 'принимающая компания Бразилия', 'наземное обслуживание Бразилия', 'туры по Бразилии для агентств', 'multi-country DMC'],
-    audience: ['Турагентства', 'Туроператоры', 'Luxury travel advisors', 'MICE-агентства'],
   },
   '/dmc/terms/': {
     serviceType: 'Условия B2B-сотрудничества с DMC',
     category: 'B2B условия DMC',
     keywords: ['условия работы с DMC', 'договор с DMC', 'вознаграждение турагентствам', 'B2B условия туроператоров', 'DMC Бразилия условия'],
-    audience: ['Турагентства', 'Туроператоры'],
   },
   '/mice/': {
     serviceType: 'Организация MICE и корпоративных поездок',
@@ -275,7 +272,6 @@ export function buildStructuredData({ root, organization, records, page, documen
   } else if (serviceConfig) {
     const service = add({ '@type': 'Service', '@id': `${page.url}#service`, name: cleanText(document.h1 || page.title),
       description: cleanText(page.description), serviceType: serviceConfig.serviceType, category: serviceConfig.category,
-      audience: serviceConfig.audience?.map((audienceType) => ({ '@type': 'Audience', audienceType })),
       url: page.url, provider: ref(orgId), areaServed: organization.areaServed,
       mainEntityOfPage: ref(pageId), image: imageRef });
     webPage.mainEntity = service; webPage.about = service;

@@ -181,7 +181,7 @@ itinerary:
 
     После экскурсии трансфер в гостиницу. За день вы увидите водопады с трех принципиально разных точек: снизу, с верхней кромки и у самого мощного каскада. Поэтому аргентинская сторона дает особенно подробное знакомство с Игуасу.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/vodopady-iguasu-3.jpg
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Водопады Игуасу в Аргентине и Бразилии'
 - day: 10
   title: Бразильская сторона водопадов Игуасу
@@ -218,7 +218,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
-  - src: https://brasiltours.ru/image/countries/argentina/vodopady-iguasu-3.jpg
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Водопады Игуасу в Аргентине и Бразилии'
 - day: 12
   title: Буэнос-Айрес

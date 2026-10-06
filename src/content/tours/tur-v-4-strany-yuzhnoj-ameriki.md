@@ -277,7 +277,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер в Рио-де-Жанейро Бразилия'
-  - src: https://brasiltours.ru/image/iguasu%20national%20park.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: тропические Водопады Игуасу  в Аргентине и Бразилии'
 - day: 14
   title: Рио-де-Жанейро, Корковадо, Сахарная Голова и переезд в Бузиос

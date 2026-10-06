@@ -251,7 +251,7 @@ itinerary:
 
     После экскурсии трансфер в аэропорт и перелет в Буэнос-Айрес. По прилете трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/buen%20air.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: Буэнос-Айрес
   - src: /media/tours/brazil-gems-14d/itinerary/day-13-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу

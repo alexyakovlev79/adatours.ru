@@ -108,7 +108,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/iguasu%20national%20park.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-11-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -289,3 +289,4 @@ themes: ["theme_culture"]
 Далее маршрут идет на северо-восток Бразилии. Ресифи известен каналами, мостами и колониальной архитектурой, а соседняя Олинда - историческими церквями и панорамными видами. Порту-де-Галиньяс - это белый песок, бирюзовая вода, рифы и природные бассейны.
 
 Финальная часть путешествия проходит на Фернанду-ди-Норонья. Архипелаг известен прозрачной водой, пляжами, дельфинами, морскими черепахами и богатым подводным миром.
+

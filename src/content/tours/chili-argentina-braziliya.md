@@ -152,7 +152,7 @@ itinerary:
 
     По прибытии трансфер в отель. Оставшееся время можно использовать для отдыха или самостоятельной прогулки.
   images:
-  - src: https://brasiltours.ru/image/buen%20air.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: Буэнос-Айрес
   - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: Эль-Калафате
@@ -169,7 +169,7 @@ itinerary:
 
     Далее экскурсия проходит через районы с совершенно разной застройкой и историей: Ла-Бока, Сан-Тельмо, Палермо, Реколета и современный Пуэрто-Мадеро. В старых кварталах сохранились небольшие улицы и традиционные здания, а Пуэрто-Мадеро стал одним из главных гастрономических и развлекательных районов.
   images:
-  - src: https://brasiltours.ru/image/buenos-aires%20(1).png
+  - src: /media/tours/argentina-2024/itinerary-day-1-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -219,7 +219,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/buen%20air.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 11
   title: Бразильская сторона Игуасу - Рио-де-Жанейро

@@ -63,7 +63,7 @@ itinerary:
 
       Остаток дня свободный. Можно отдохнуть после перелета или начать знакомство с городом самостоятельно.
     images:
-      - src: https://brasiltours.ru/image/buenos-aires%20(1).png
+      - src: /media/tours/argentina-2024/itinerary-day-1-enhanced-20261006.webp
         alt: "на фото: столица Аргентины, город Буэнос Айрес"
         intendedSlot: "itinerary:day-1"
 
@@ -95,7 +95,7 @@ itinerary:
     text: |-
       Завтрак в гостинице. День свободный. При желании можно заказать дополнительную экскурсию.
     images:
-      - src: https://brasiltours.ru/image/buen%20air.png
+      - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
         alt: "на фото: столица Аргентины, город Буэнос Айрес"
         intendedSlot: "itinerary:day-3"
 
@@ -143,7 +143,7 @@ itinerary:
 
       Рекомендуется взять ланч-бокс. Также можно пообедать в ресторане парка.
     images:
-      - src: https://brasiltours.ru/image/Argentina%20Calafate%20Adatours.png
+      - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-5-enhanced-20261006.webp
         alt: "на фото: ледник Перито-Морено в Эль-Калафате, Аргентина, Патагония"
         intendedSlot: "itinerary:day-5"
 

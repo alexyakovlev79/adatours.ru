@@ -45,7 +45,7 @@ priceFrom: 6638
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-waifu2x-photo-noise1-scale.jpg
+  src: /media/tours/issledovanie-argentiny/hero-enhanced-20261006.webp
   alt: "На фото: Район Ла Бока в Буэнос Айресе"
 gallery: []
 featured: false
@@ -271,7 +271,7 @@ itinerary:
 
       После программы - возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/vodopady-iguasu-3.jpg
+      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-9-enhanced-20261006.webp
         alt: "На фото: Водопады Игуасу"
         intendedSlot: "itinerary:day-13"
 

@@ -178,7 +178,7 @@ itinerary:
 
     Высота падения воды составляет около 72 м.
   images:
-  - src: https://brasiltours.ru/image/iguasu%20national%20park.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-11-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
 - day: 11
   title: Фос-ду-Игуасу - Буэнос-Айрес
@@ -190,7 +190,7 @@ itinerary:
 
     По прибытии встреча с водителем и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/buen%20air.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: Буэнос-Айрес
   - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
@@ -218,7 +218,7 @@ itinerary:
 
     Можно самостоятельно гулять по городу или заказать дополнительные экскурсии.
   images:
-  - src: https://brasiltours.ru/image/buen%20air.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 14
   title: Буэнос-Айрес

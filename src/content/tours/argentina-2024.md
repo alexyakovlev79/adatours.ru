@@ -49,7 +49,7 @@ itinerary:
   text: Прибытие в аэропорт EZE. В аэропорту вас встретят и отвезут в отель. Остаток дня можно посвятить отдыху после перелета
     и первой самостоятельной прогулке по Буэнос-Айресу.
   images:
-  - src: https://brasiltours.ru/image/buenos-aires%20(1).png
+  - src: /media/tours/argentina-2024/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Буэнос-Айрес, Аргентина'
 - day: 2
   title: Буэнос-Айрес
@@ -85,7 +85,7 @@ itinerary:
 
     Продолжительность экскурсии около 8 часов.
   images:
-  - src: https://brasiltours.ru/image/buenos-aires%20(1).png
+  - src: /media/tours/argentina-2024/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Буэнос-Айрес, Аргентина'
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places: []
@@ -105,7 +105,7 @@ itinerary:
 
     Дополнительно можно заказать индивидуальную обзорную экскурсию по Мендосе минимум для 2 человек с англоговорящим гидом, $200 на человека.
   images:
-  - src: https://brasiltours.ru/image/mendoza%20valley.png
+  - src: /media/tours/argentina-2024/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: Долина в Мендосе, Аргентина'
   - src: /media/tours/argentina-2024/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Обелиск в Буэнос-Айресе'
@@ -129,7 +129,7 @@ itinerary:
   - Мендоса
   text: Трансфер в аэропорт и перелет в Эль-Калафате. По прибытии вас встретят и отвезут в отель.
   images:
-  - src: https://brasiltours.ru/image/mendoza%20valley.png
+  - src: /media/tours/argentina-2024/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: Долина в Мендосе, Аргентина'
   - src: /media/tours/argentina-2024/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: 'На фото: горы в Эль Калафате, Аргентина'
@@ -218,7 +218,7 @@ itinerary:
 
     Обед на центральной площади оплачивается отдельно. Также вы посетите музей вина. Ночь пройдет в винном отеле.
   images:
-  - src: https://brasiltours.ru/image/salta%20argen.png
+  - src: /media/tours/argentina-2024/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Город Сальта на северо-западе Аргентины'
   - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: Водопад Фоз-де-Игуасу, Аргентина'
@@ -232,7 +232,7 @@ itinerary:
 
     Гид расскажет о легендах этого места и о высокогорной природе региона. Дорога проходит среди сухих пейзажей и гигантских кардонов. По пути предусмотрены остановки для отдыха, фотографий и покупки региональных сувениров. После поездки возвращение в Сальту.
   images:
-  - src: https://brasiltours.ru/image/salta%20argen.png
+  - src: /media/tours/argentina-2024/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Город Сальта на северо-западе Аргентины'
 - day: 13
   title: Сальта - Пурмамарка
@@ -248,7 +248,7 @@ itinerary:
 
     По дороге вы также увидите Укию и ее церковь с коллекцией знаменитых «Ангелов Аркабусерос». Далее поездка ведет в поселок Умауака на берегу реки Гранде. Здесь можно пройти по старым узким мощеным улицам и увидеть памятники колониальной эпохи.
   images:
-  - src: https://brasiltours.ru/image/salta%20argen.png
+  - src: /media/tours/argentina-2024/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Город Сальта на северо-западе Аргентины'
 - day: 14
   title: Пурмамарка - Salinas Grandes - Сальта
@@ -258,7 +258,7 @@ itinerary:
   text: Сегодня вы отправитесь к солончакам Salinas Grandes по дороге №9. После экскурсии маршрут возвращается в Сальту с
     остановками в живописных деревнях. Переезд занимает около 4 часов.
   images:
-  - src: https://brasiltours.ru/image/salta%20argen.png
+  - src: /media/tours/argentina-2024/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Город Сальта на северо-западе Аргентины'
 - day: 15
   title: Сальта
@@ -266,7 +266,7 @@ itinerary:
   - Сальта
   text: Завтрак в отеле. Затем трансфер в аэропорт для дальнейшего вылета.
   images:
-  - src: https://brasiltours.ru/image/salta%20argen.png
+  - src: /media/tours/argentina-2024/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Город Сальта на северо-западе Аргентины'
 included:
 - 'Размещение в отелях 4* на базе завтраков: Design Suites Buenos, Sheraton Mendoza, Alto Calafate Hotel, Viale Cataratas
@@ -295,7 +295,7 @@ priceFrom: 5700
 currency: USD
 priceNote: $5700
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/buenos-aires-waifu2x-photo-noise1.jpg
+  src: /media/tours/argentina-2024/hero-enhanced-20261006.webp
   alt: 'На фото: Столица Аргентины Буэнос Айрес'
 routeCountries:
 - country_argentina

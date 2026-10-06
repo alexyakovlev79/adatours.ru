@@ -239,7 +239,7 @@ itinerary:
     text: |-
       Завтрак в отеле. В назначенное время трансфер в аэропорт IGR и перелет в Буэнос-Айрес. По прибытии трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/iguasu%20national%20park.png
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-11-enhanced-20261006.webp
         alt: "Игуасу"
         intendedSlot: "itinerary:day-11"
 
@@ -250,7 +250,7 @@ itinerary:
     text: |-
       Завтрак в отеле. В назначенное время трансфер в аэропорт Буэнос-Айреса.
     images:
-      - src: https://brasiltours.ru/image/San-Telmo.jpg
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-12-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-12"
 

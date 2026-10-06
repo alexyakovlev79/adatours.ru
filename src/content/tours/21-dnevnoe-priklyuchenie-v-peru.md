@@ -191,7 +191,7 @@ itinerary:
 
     После остановок дорога продолжается в Куско. Во второй половине дня вы прибываете в бывшую столицу империи инков, где колониальная архитектура стоит рядом с гораздо более древними каменными основаниями и стенами.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: Куско'
 - day: 11
   title: Куско
@@ -206,7 +206,7 @@ itinerary:
 
     Затем программа продолжается у археологических памятников вокруг города. Саксайуаман известен огромными каменными блоками, подогнанными друг к другу без раствора. Кенко связывают с церемониями, ритуалами и возможными астрономическими наблюдениями. Тамбомачай известен системой источников и почитанием воды.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: Куско'
 - day: 12
   title: Куско - Морай - Марас - Салинас - Священная долина
@@ -226,7 +226,7 @@ itinerary:
 
     Ночь в Священной долине.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: Куско'
 - day: 13
   title: Священная долина - Ольянтайтамбо - Агуас-Кальентес
@@ -261,7 +261,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Machu%20Picchu.jpg
     alt: 'на фото: Мачу Пикчу'
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: Куско'
 - day: 15
   title: Куско - Пуэрто-Мальдонадо
@@ -277,7 +277,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/puerto%20maldonado%20peru.jpg
     alt: 'на фото: Пуэрто Мальдонадо'
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: Куско'
 - day: 16
   title: Пуэрто-Мальдонадо

@@ -51,7 +51,7 @@ itinerary:
 
     Танго-шоу проводится как групповой тур без гида.
   images:
-  - src: https://brasiltours.ru/image/buenosaires7.11png.png
+  - src: /media/excursions/nezabyvaemoe-tango-shou/gallery-1-enhanced-20261006.webp
     alt: 'На фото: город Буэнос - Айрес, столица Аргентины'
 - excursionRef: excursion_buenos_aires_tango_show_dinner_transfer
   places: []
@@ -201,7 +201,7 @@ priceFrom: 2563
 currency: USD
 priceNote: $2563
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/perito-moreno-3.jpg
+  src: /media/tours/tur-v-argentinu-i-braziliyu-ot-lda-do-solntsa/hero-enhanced-20261006.webp
   alt: 'На фото: ледник Перито Моррено Эль Калафате, Патагония'
 routeCountries:
 - country_argentina

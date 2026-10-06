@@ -111,7 +111,7 @@ itinerary:
 
     После прибытия в Куско предусмотрен трансфер в Belmond Rio Sagrado. Размещение в Terrace Room, питание BB. Ночь в Священной долине.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско
   - src: https://brasiltours.ru/image/Iquitos.png
     alt: Икитос
@@ -171,7 +171,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/quito%202.png
     alt: Кито
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско
 - day: 12
   title: Кито - Mashpi Lodge

@@ -19,7 +19,7 @@ hero:
   src: "https://brasiltours.ru/image/countries/brazil/tango-buenos-1920.jpg"
   alt: "На фото: Танго шоу в Аргентине"
 gallery:
-  - src: "https://brasiltours.ru/image/buenosaires7.11png.png"
+  - src: "/media/excursions/nezabyvaemoe-tango-shou/gallery-1-enhanced-20261006.webp"
     alt: "На фото: Флоралис Хенерика Буэнос-Айрес, Аргентина"
   - src: "/media/excursions/nezabyvaemoe-tango-shou/gallery-2-enhanced-20261006.webp"
     alt: "На фото: Блюда аргентинской кухни"

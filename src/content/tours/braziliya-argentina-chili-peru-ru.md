@@ -222,7 +222,7 @@ itinerary:
 
     По прибытии встреча и трансфер в отель в Священной долине.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Вид на город Куско, Перу'
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: Архитектура Сантьяго де Чили'
@@ -271,7 +271,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Machu%20Picchu.png
     alt: 'На фото: Вид сверху на Мачу-Пикчу, Перу'
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Вид на город Куско, Перу'
 - day: 14
   title: Куско - Лима
@@ -295,7 +295,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/peru/lima-plaza-de-armas.png
     alt: 'На фото: Кафедральный собор Лимы, Перу'
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Вид на город Куско, Перу'
 - day: 15
   title: Лима

@@ -68,7 +68,7 @@ itinerary:
 
     Финал экскурсии - Пласа-де-Армас и собор Куско с коллекцией колониального искусства.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско
 - day: 3
   title: Археологический парк Саксайуаман

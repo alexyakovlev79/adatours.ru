@@ -82,7 +82,7 @@ itinerary:
 
     Корковадо отличается от предыдущего подъема. Поезд идет через лес Тижука, поэтому дорога к смотровой площадке становится частью экскурсии. На вершине город виден шире: в одной панораме соединяются залив, пляжи, Сахарная Голова, Ботанический сад и плотная городская застройка между холмами. После 2 дней с главными видами Рио уже легче понимать, где находятся разные районы и как они связаны между собой.
   images:
-  - src: https://brasiltours.ru/image/christ-the-redeemer-raphael-nogueira-cerddu-jwkw-unsplash-sq-opt.jpg
+  - src: /media/tours/mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej/itinerary-day-3-enhanced-20261006.webp
     alt: Христос Искупитель на горе Корковадо, Рио
 - day: 4
   title: Рио-де-Жанейро - Игуасу
@@ -159,7 +159,7 @@ itinerary:
 
     В течение дня Буэнос-Айрес несколько раз меняется визуально. Ла-Бока и Сан-Тельмо напоминают о портовой истории, центр вокруг Пласа-де-Майо связан с политической жизнью страны, Реколета выглядит спокойнее и параднее. После обзорной поездки уже проще самостоятельно выбрать район для свободного дня.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba8.jpg
+  - src: /media/tours/mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej/itinerary-day-7-enhanced-20261006.webp
     alt: Буэнос-Айрес, столица Аргентины
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []

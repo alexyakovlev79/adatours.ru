@@ -54,7 +54,7 @@ itinerary:
 
     Размещение в **Fairmont Copacabana**, номер **Fairmont Room, City View**.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio1.jpg
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
     alt: Оживленный город Рио де Жанейро
 - day: 2
   title: 29.12 - Корковадо, статуя Христа и лес Тижука
@@ -67,7 +67,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/%D1%80%D0%B8%D0%BE.jpg
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-2-enhanced-20261006.webp
     alt: Статуя Христа и Корковадо
 - day: 3
   title: 30.12 - Сахарная Голова и исторический центр Рио
@@ -88,7 +88,7 @@ itinerary:
 
     Вечером можно посетить ресторан **Marius Degustare**, специализирующийся на морепродуктах. Его интерьер оформлен как затонувший корабль с сокровищами.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio1.jpg
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
     alt: Оживленный город Рио де Жанейро
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -103,7 +103,7 @@ itinerary:
 
     Новый год в Рио собирает на побережье и туристов, и местных жителей. Знаменитый салют запускают с платформ, установленных в воде. Многие бразильцы встречают праздник в белой одежде. Верующие приносят дары богине воды Иеманже, складывают их в маленькие лодочки и отправляют в океан. На пляже работают сцены, где выступают известные артисты, концерт доступен всем желающим. Праздник продолжается всю ночь.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio1.jpg
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
     alt: Оживленный город Рио де Жанейро
 - excursionRef: excursion_source_botanical_garden
   places: []
@@ -122,7 +122,7 @@ itinerary:
 
     Вечером можно поужинать в ресторане **Cipriani** в Belmond Copacabana Palace, отмеченном звездой Мишлен. При желании в этот день также можно заказать дополнительные экскурсии.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio1.jpg
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
     alt: Оживленный город Рио де Жанейро
 - day: 6
   title: 02.01 - Рио-де-Жанейро - Лима
@@ -140,7 +140,7 @@ itinerary:
   images:
   - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
     alt: Лима, столица Перу
-  - src: https://brasiltours.ru/image/countries/brazil/rio1.jpg
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
     alt: Оживленный город Рио де Жанейро
 - day: 7
   title: 03.01 - Лима - Куско - Священная долина
@@ -159,7 +159,7 @@ itinerary:
 
     Размещение в **Belmond Rio Sagrado**, номер **Deluxe Room**.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско, Перу
   - src: https://brasiltours.ru/image/countries/peru/prezind-palace-lima.png
     alt: Лима, столица Перу
@@ -206,7 +206,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Machu%20Picchu.jpg
     alt: Мачу Пикчу в Перу
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско, Перу
 - day: 10
   title: 06.01 - Куско
@@ -227,7 +227,7 @@ itinerary:
 
     Экскурсия показывает, как в Куско сосуществуют инкские и колониальные пласты города. Массивная каменная кладка древних комплексов, священные места и позднейшие испанские постройки здесь находятся очень близко друг к другу. День посвящен именно этому историческому переходу: от крепостей и ритуальных площадок к храму Кориканча и сооружениям, появившимся после прихода испанцев.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско, Перу
 - day: 11
   title: 07.01 - Куско - Пуно по Дороге Солнца
@@ -247,7 +247,7 @@ itinerary:
 
     Размещение в **GHL Hotel Lago Titicaca**, номер **Superior Room**.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско, Перу
 - day: 12
   title: 08.01 - Озеро Титикака, Урос и Такиле
@@ -354,7 +354,7 @@ priceFrom: 17550
 currency: USD
 priceNote: $17550
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/vernon-raineil-cenzon-hnsgkm0hr10-unsplash.jpg
+  src: /media/tours/braziliya-i-peru-na-novyj-god/hero-enhanced-20261006.webp
   alt: Новый Год в Рио
 routeCountries:
 - country_brazil

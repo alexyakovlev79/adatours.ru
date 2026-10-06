@@ -180,7 +180,7 @@ itinerary:
 
     По прибытии вас встретят и отвезут в отель.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско
   - src: https://brasiltours.ru/image/Puno.png
     alt: Пуно

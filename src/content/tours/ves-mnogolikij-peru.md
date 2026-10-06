@@ -103,7 +103,7 @@ itinerary:
 
     Дополнительно можно посетить кафедральный собор Куско перед обзорной экскурсией. Продолжительность около 40 минут, стоимость $25.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: город Куско в Перу'
   - src: https://brasiltours.ru/image/lima%201.png
     alt: 'на фото: город Лима, столица Перу'
@@ -129,7 +129,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Machu%20Picchu.jpg
     alt: 'на фото: Мачу Пикчу в Перу'
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: город Куско в Перу'
 - day: 5
   title: Куско - Священная долина
@@ -151,7 +151,7 @@ itinerary:
 
     Возвращение в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: город Куско в Перу'
 - day: 6
   title: Куско - Пуно
@@ -175,7 +175,7 @@ itinerary:
 
     Доплата за поезд - $250 на человека.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.png
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: город Куско в Перу'
 - day: 7
   title: Пуно - озеро Титикака

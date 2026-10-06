@@ -152,7 +152,7 @@ itinerary:
 
     Вы посетите церковь Сан-Франсиско с барочным интерьером, покрытым золотом, и площадь Пелуриньо, сердце старого города.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-left.jpg
+  - src: /media/tours/tur-v-braziliyu-s-amazoniej-i-argentinu/itinerary-day-7-enhanced-20261006.webp
     alt: Сальвадор
 - day: 8
   title: Салвадор - Прайя-до-Форте
@@ -177,7 +177,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-left.jpg
+  - src: /media/tours/tur-v-braziliyu-s-amazoniej-i-argentinu/itinerary-day-7-enhanced-20261006.webp
     alt: Сальвадор
 - day: 10
   title: 'Фоз-ду-Игуасу: бразильская сторона водопадов'

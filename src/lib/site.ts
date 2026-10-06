@@ -10,6 +10,7 @@ export const SITE = {
 export const NAV_LINKS = [
   { href: '/country/', label: 'Страны' },
   { href: '/tours/', label: 'Туры' },
+  { href: '/multi-country/', label: 'Multi-country' },
   { href: '/interests/', label: 'По интересам' },
   { href: '/vip/', label: 'VIP' },
   { href: '/mice/', label: 'MICE' },
@@ -17,3 +18,17 @@ export const NAV_LINKS = [
   { href: '/about/', label: 'О нас' },
   { href: '/contacts/', label: 'Контакты' },
 ];
+
+const SECONDARY_NAV_LINKS = [
+  { href: '/cases/', label: 'Кейсы' },
+  { href: '/reviews/', label: 'Отзывы' },
+  { href: '/team/', label: 'Команда' },
+];
+
+export const MOBILE_NAV_LINKS = [
+  ...NAV_LINKS.slice(0, -1),
+  ...SECONDARY_NAV_LINKS,
+  NAV_LINKS[NAV_LINKS.length - 1],
+];
+
+export const FOOTER_NAV_LINKS = MOBILE_NAV_LINKS;

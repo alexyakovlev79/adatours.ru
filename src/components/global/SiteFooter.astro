@@ -1,5 +1,5 @@
 ---
-import { NAV_LINKS, SITE } from '../../lib/site';
+import { FOOTER_NAV_LINKS, SITE } from '../../lib/site';
 import { withBase } from '../../lib/paths';
 import { ORG } from '../../data/organization/ada-tours';
 ---
@@ -15,12 +15,7 @@ import { ORG } from '../../data/organization/ada-tours';
 
   <div class="footer__grid">
     <nav aria-label="Навигация в подвале">
-      {NAV_LINKS.map((link) => <a href={withBase(link.href)}>{link.label}</a>)}
-      <a href={withBase('/multi-country/')}>Multi-country</a>
-      <a href={withBase('/cases/')}>Кейсы</a>
-      <a href={withBase('/reviews/')}>Отзывы</a>
-      <a href={withBase('/team/')}>Команда</a>
-      <a href={withBase('/contacts/')}>Контакты</a>
+      {FOOTER_NAV_LINKS.map((link) => <a href={withBase(link.href)}>{link.label}</a>)}
     </nav>
 
     <div class="footer__meta">

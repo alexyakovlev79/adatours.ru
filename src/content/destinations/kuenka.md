@@ -17,9 +17,9 @@ hero:
 gallery:
   - src: /media/destinations/playa-del-carmen/gallery-2-enhanced-20261004.webp
     alt: Колониальная застройка Куэнки
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN4417_17.jpg
+  - src: /media/destinations/kuenka/gallery-2-enhanced-20261006.webp
     alt: Улицы Куэнки в Эквадоре
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN15881_36.jpg
+  - src: /media/destinations/kuenka/gallery-3-enhanced-20261006.webp
     alt: Исторический центр Куэнки
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN6533_1.jpg
     alt: Городской пейзаж Куэнки

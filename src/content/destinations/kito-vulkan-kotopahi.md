@@ -21,19 +21,19 @@ hero:
 gallery:
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN1169_2.jpg
     alt: Исторический центр Кито
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN6533_2.jpg
+  - src: /media/destinations/kito-vulkan-kotopahi/gallery-2-enhanced-20261006.webp
     alt: Городской пейзаж Кито
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN15468_23.jpg
+  - src: /media/destinations/kito-vulkan-kotopahi/gallery-3-enhanced-20261006.webp
     alt: Архитектура Кито
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN15468_6.jpg
+  - src: /media/destinations/kito-vulkan-kotopahi/gallery-4-enhanced-20261006.webp
     alt: Кито в Андах
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN15881_20.jpg
+  - src: /media/destinations/kito-vulkan-kotopahi/gallery-5-enhanced-20261006.webp
     alt: Панорама Кито
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN15468_10.jpg
+  - src: /media/destinations/kito-vulkan-kotopahi/gallery-6-enhanced-20261006.webp
     alt: Кито, Эквадор
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN15468_24.jpg
+  - src: /media/destinations/kito-vulkan-kotopahi/gallery-7-enhanced-20261006.webp
     alt: Город Кито среди Анд
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN17724_15.jpg
+  - src: /media/destinations/kito-vulkan-kotopahi/featureBands-2-enhanced-20261006.webp
     alt: Окрестности Кито и Дорога вулканов
 relatedDestinations:
   - destination_ecuador_kuenka
@@ -61,7 +61,7 @@ featureBands:
     title: Экватор, Пулулахуа и Дорога вулканов
     text: >-
       К северу от Кито находится линия экватора и район Пулулахуа. Южнее города маршрут продолжается по Дороге вулканов к высокогорным районам, Котопахи и кратерному озеру Килотоа.
-    image: https://brasiltours.ru/image/catalog/category/B/N/BN17724_15.jpg
+    image: /media/destinations/kito-vulkan-kotopahi/featureBands-2-enhanced-20261006.webp
 sourceUrl: https://brasiltours.ru/tury-i-ehkskursii-v-kito-vulkan-kotopaksi-v-ehkvadore
 sourceSnapshot: page_texts_original/tury-i-ehkskursii-v-kito-vulkan-kotopaksi-v-ehkvadore__9359a33c.md
 updatedAt: 2026-10-02

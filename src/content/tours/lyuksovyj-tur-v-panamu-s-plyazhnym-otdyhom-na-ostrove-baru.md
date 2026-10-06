@@ -348,7 +348,7 @@ priceFrom: 12098
 currency: USD
 priceNote: $12098
 hero:
-  src: https://brasiltours.ru/image/countries/panama/new-photos/bokas-del-toro/3.jpg
+  src: /media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/hero-enhanced-20261006.webp
   alt: Архипелаг Бокас-дель-Торо, Панама - карибские острова, пляжи
 routeCountries:
 - country_panama

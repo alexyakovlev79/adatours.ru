@@ -206,7 +206,7 @@ priceFrom: 10133
 currency: USD
 priceNote: $10133
 hero:
-  src: https://brasiltours.ru/image/countries/chile/5-chile-torres-del-paine-dark.jpg
+  src: /media/tours/tur-v-chili-luchshee-v-strane-i-gastronomiya-gurme/hero-enhanced-20261006.webp
   alt: 'На фото: национальный заповедник Торрес-дель-Пайне в Чили (Чилийская Патгония)'
 routeCountries:
 - country_chile

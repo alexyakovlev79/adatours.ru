@@ -15,7 +15,7 @@ lead: 'Десять дней в Колумбии: музеи и историче
 durationDays: 10
 durationNights: 9
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/oblozhka.jpg
+  src: /media/tours/tur-v-kolumbiyu-na-10-dnej/hero-enhanced-20261006.webp
   alt: 'Тур в Колумбию vip: кофе, Картахена и остров Бару | 10 дней'
 currency: USD
 priceFrom: null

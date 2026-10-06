@@ -304,7 +304,7 @@ priceFrom: 16250
 currency: USD
 priceNote: $16250
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/james-gildart-0sxa6b3k7uw-unsplash.jpg
+  src: /media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/hero-enhanced-20261006.webp
   alt: Морская игуана на камнях на Галапагосских островах в Эквадоре
 routeCountries:
 - country_peru

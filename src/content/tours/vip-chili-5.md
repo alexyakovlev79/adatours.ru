@@ -271,7 +271,7 @@ priceFrom: 10749
 currency: USD
 priceNote: $10749
 hero:
-  src: https://brasiltours.ru/image/countries/chile/chi-atacama-left.jpg
+  src: /media/tours/vip-chili-5/hero-enhanced-20261006.webp
   alt: VIP Чили  5*
 routeCountries:
 - country_chile

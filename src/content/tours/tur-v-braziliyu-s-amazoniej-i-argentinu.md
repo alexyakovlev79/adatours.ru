@@ -120,7 +120,7 @@ itinerary:
 
     Продолжительность - около 8 часов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/kiyoshi-etw2cygqqcq-unsplash.jpg
+  - src: /media/tours/tur-v-braziliyu-s-amazoniej-i-argentinu/hero-enhanced-20261006.webp
     alt: 'На фото: река Амазонка, Бразилия'
 - excursionRef: excursion_source_vstrecha_rek
   places: []
@@ -265,7 +265,7 @@ priceFrom: 3260
 currency: USD
 priceNote: $3260
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/kiyoshi-etw2cygqqcq-unsplash.jpg
+  src: /media/tours/tur-v-braziliyu-s-amazoniej-i-argentinu/hero-enhanced-20261006.webp
   alt: 'На фото: река Амазонка, Бразилия'
 routeCountries:
 - country_brazil

@@ -68,7 +68,7 @@ itinerary:
 
     После спуска маршрут продолжается по старому центру Рио. Вы увидите исторические церкви, монастыри, главный собор города и здания колониального периода.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/sugarloaf-mountain-rio-de-janeiro-1.jpg
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-3-enhanced-20261006.webp
     alt: Сахарная Голова
 - day: 4
   title: Рио-де-Жанейро - Манаус
@@ -88,7 +88,7 @@ itinerary:
 
     В 19:00 ужин и свободный вечер.
   images:
-  - src: https://brasiltours.ru/image/manaus,,.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-4-enhanced-20261006.webp
     alt: Манаус
   - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
@@ -109,7 +109,7 @@ itinerary:
 
     В 20:00 начинается вечернее исследование берега с прожекторами. Можно увидеть кайманов Тинга и Асу, а иногда ночных ястребов, змей и лягушек.
   images:
-  - src: https://brasiltours.ru/image/manaus,,.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-4-enhanced-20261006.webp
     alt: Манаус
 - day: 6
   title: Манаус - Сальвадор
@@ -125,7 +125,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
-  - src: https://brasiltours.ru/image/manaus,,.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-4-enhanced-20261006.webp
     alt: Манаус
 - day: 7
   title: Сальвадор
@@ -238,7 +238,7 @@ priceFrom: 4070
 currency: USD
 priceNote: $4070
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/brazil-21.jpeg
+  src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/hero-enhanced-20261006.webp
   alt: 'Бразилия: групповой тур на 13 дней'
 routeCountries:
 - country_brazil

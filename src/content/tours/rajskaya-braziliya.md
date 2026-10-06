@@ -54,7 +54,7 @@ itinerary:
 
     После спуска поездка по историческому центру Рио. Вы увидите старые церкви, монастыри, главный собор и здания колониальной архитектуры.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: Рио-де-Жанейро - Корковадо и Христос Искупитель

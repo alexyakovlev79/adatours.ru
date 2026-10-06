@@ -88,7 +88,7 @@ itinerary:
 
     **Примерное расстояние:** 250 км.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: Рио де Жанейро'
   - src: https://brasiltours.ru/image/paraty2.png
     alt: на фото:Парати
@@ -103,7 +103,7 @@ itinerary:
 
     После спуска предусмотрен обед в ресторане традиционной кухни. Далее переезд к Красному пляжу и подъем по канатной дороге на Урку. С площадки открывается вид на Рио и залив. Этот день специально собран как полный обзор города: утром исторический центр и Корковадо, затем обед и еще одна высокая смотровая точка. После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: Рио де Жанейро'
 - day: 7
   title: Рио-де-Жанейро
@@ -113,7 +113,7 @@ itinerary:
   text: Свободный день. Обязательной экскурсионной программы нет. Его можно использовать для отдыха после большой обзорной
     экскурсии и перед следующим длинным мото-переездом через Петрополис к Тирадентису.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: Рио де Жанейро'
 - day: 8
   title: Рио-де-Жанейро - Петрополис - Тирадентис
@@ -129,7 +129,7 @@ itinerary:
 
     **Примерное расстояние:** 360 км.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: Рио де Жанейро'
   - src: https://brasiltours.ru/image/petropol.png
     alt: 'на фото: Королевский Петрополис'

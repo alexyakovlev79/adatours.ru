@@ -255,7 +255,7 @@ priceFrom: 3589
 currency: USD
 priceNote: $3589
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/salvador.jpg
+  src: /media/tours/braziliya-argentina-gruppovoj-tur/itinerary-day-8-enhanced-20261006.webp
   alt: 'на фото: город Ресифе Бразилия'
 routeCountries:
 - country_brazil

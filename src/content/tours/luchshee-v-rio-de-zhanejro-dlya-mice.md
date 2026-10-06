@@ -94,7 +94,7 @@ itinerary:
 
     Вечером ужин в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/cristo-redentor-rio-de-janeiro-1.jpg
+  - src: /media/tours/little-mix-ru/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Статуя Христа Искупителя, Рио-де-Жанейро'
 - day: 3
   title: Сахарная Голова и фавела

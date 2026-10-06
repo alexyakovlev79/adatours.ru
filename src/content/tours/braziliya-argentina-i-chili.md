@@ -60,7 +60,7 @@ itinerary:
 
     После спуска программа продолжается в старом городе. Вы увидите колониальную архитектуру и действующие исторические церкви, в том числе Канделарию. Мощеные улицы и старые фасады заметно отличаются от пляжных районов Ипанемы и Копакабаны. В этой части экскурсии особенно хорошо видно, как рядом существуют туристический Рио у океана и старый торговый город португальского периода.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: 'Рио-де-Жанейро: Корковадо'
@@ -73,7 +73,7 @@ itinerary:
 
     На высоте около 700 м находится статуя Христа Искупителя высотой 38 м. С площадки открывается панорама Рио: залив Гуанабара, Маракана, Сахарная Голова, Копакабана, Ипанема и гора Гавеа.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 4
   title: Рио-де-Жанейро
@@ -106,7 +106,7 @@ itinerary:
 
     По прибытии встреча с водителем и трансфер.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 6
   title: Бразильская сторона Игуасу, Парк птиц и Макуко
@@ -140,7 +140,7 @@ itinerary:
 
     После экскурсии трансфер в аэропорт, перелет в Буэнос-Айрес, встреча и трансфер в отель. За один день вы успеваете увидеть водопады с аргентинской стороны и затем полностью сменить природную программу на городской этап путешествия.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires-left.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-1-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 8
   title: Буэнос-Айрес
@@ -201,7 +201,7 @@ itinerary:
 
     Примерное расписание: 11:00 встреча с эмпанадас и вином, 11:30 свободные активности, 13:00 обед и шоу, 15:00 выступление гаучо, 16:30 возвращение в Буэнос-Айрес.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires-left.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-1-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_source_fiesta_gaucho
   places: []

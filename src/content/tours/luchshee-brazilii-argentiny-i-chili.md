@@ -57,7 +57,7 @@ itinerary:
 
     Можно прогуляться по Копакабане и посмотреть повседневную жизнь кариок: футбол на песке, кайпиринья, океанские волны и вечерние прогулки вдоль набережной.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Корковадо и Сахарная Голова
@@ -84,7 +84,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/cristo-redentor-rio-de-janeiro-1.jpg
+  - src: /media/tours/little-mix-ru/itinerary-day-2-enhanced-20261006.webp
     alt: Статуя Христа и Корковадо
 - day: 3
   title: Рио-де-Жанейро - Фоз-ду-Игуасу
@@ -120,7 +120,7 @@ itinerary:
 
     После экскурсий размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_makuko_safari
   places: []

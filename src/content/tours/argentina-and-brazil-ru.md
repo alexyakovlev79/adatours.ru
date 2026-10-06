@@ -31,7 +31,7 @@ itinerary:
   - Буэнос-Айрес
   text: Прибытие в аэропорт Буэнос-Айреса. Индивидуальный трансфер с водителем в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires-left.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Обелиск в Буэнос-Айресе'
 - day: 2
   title: Буэнос-Айрес

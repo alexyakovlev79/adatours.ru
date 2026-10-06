@@ -75,7 +75,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Закатный вид на Рио'
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: 'На фото: Река Амазонка'
 - day: 5
   title: Амазония
@@ -102,7 +102,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: 'На фото: Встреча туристов в Сальвадоре'
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: 'На фото: Река Амазонка'
 - day: 7
   title: 'Сальвадор: Пелуриньо и Кандомбле'

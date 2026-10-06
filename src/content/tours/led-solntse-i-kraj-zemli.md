@@ -237,7 +237,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 11
   title: Рио-де-Жанейро и Корковадо
@@ -260,7 +260,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 12
   title: Рио-де-Жанейро

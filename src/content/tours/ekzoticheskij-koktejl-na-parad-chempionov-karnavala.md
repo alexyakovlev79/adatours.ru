@@ -105,7 +105,7 @@ itinerary:
 
     Вечером можно посетить ресторан морепродуктов Marius, ориентировочная стоимость — USD 130 с человека.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: Панорамный вид на Рио-де-Жанейро, Бразилия'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []

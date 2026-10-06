@@ -74,7 +74,7 @@ itinerary:
 
     **Важно:** в Манаус нужно прилететь до 16:00, а обратный вылет планировать после 14:30. При другом расписании потребуется индивидуальный трансфер в лодж или из лоджа. Он оплачивается отдельно и в стоимость программы не входит.
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: 'На фото: Река Амазонка'
   - src: https://brasiltours.ru/image/So%20Paulo.png
     alt: 'На фото: Мост Октавио Фриас де Оливейра в Сан-Паулу'
@@ -123,7 +123,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Заказ в Рио-де-Жанейро'
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: 'На фото: Река Амазонка'
 - day: 6
   title: Сахарная голова и старый Рио

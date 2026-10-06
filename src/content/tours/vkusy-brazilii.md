@@ -61,7 +61,7 @@ itinerary:
 
     С Корковадо открывается широкая панорама города и его окрестностей. Отсюда видны мост Нитерой, залив Гуанабара, Ботанический сад, стадион Маракана и Сахарная Голова. После вчерашнего подъема на Сахарную Голову Рио предстает с другой стороны и с другой высоты.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/cristo-redentor-rio-de-janeiro-1.jpg
+  - src: /media/tours/little-mix-ru/itinerary-day-2-enhanced-20261006.webp
     alt: Статуя Христа и Корковадо
 - day: 4
   title: Рио-де-Жанейро - Илья-Гранде

@@ -177,7 +177,7 @@ itinerary:
   - Рио-де-Жанейро
   text: Завтрак в отеле. В назначенное время водитель отвезет вас в аэропорт Рио-де-Жанейро для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: 'На фото: Лестница Селерона в городе Рио-де-Жанейро, Бразилия'
 included:
 - Проживание в отелях.

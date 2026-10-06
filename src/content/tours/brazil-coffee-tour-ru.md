@@ -82,7 +82,7 @@ itinerary:
 
     Продолжительность полета около 8-9 минут.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_botanical_garden
   places: []
@@ -145,7 +145,7 @@ itinerary:
 
     По прибытии трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
   - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
@@ -179,7 +179,7 @@ itinerary:
   - Рио-де-Жанейро
   text: Трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 included:
 - Отели по маршруту.

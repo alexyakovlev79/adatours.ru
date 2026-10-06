@@ -65,7 +65,7 @@ itinerary:
 
     После спуска экскурсия продолжается по старому Рио. В маршрут входят исторические кварталы, церкви, монастыри и колониальные здания. Если позволяет время, можно посетить Кафедральный собор Сан-Себастьян и лестницу Селарона.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: 'Рио-де-Жанейро: Корковадо'
@@ -91,7 +91,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-13-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: Бразильская сторона водопадов Игуасу

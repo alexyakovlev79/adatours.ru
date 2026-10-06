@@ -131,7 +131,7 @@ itinerary:
 
     Ужин. Вечером предусмотрена поездка на каноэ для наблюдения за аллигаторами.
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Манаус
   - src: https://brasiltours.ru/image/countries/brazil/bonito-riding.jpg
     alt: Бонито
@@ -166,7 +166,7 @@ itinerary:
 
     Размещение в Сан-Луисе.
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Манаус
 - day: 11
   title: Сан-Луис - Баррейриньяс

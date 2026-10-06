@@ -89,9 +89,9 @@ itinerary:
 
     По прибытии встреча и трансфер в лодж, расположенный в джунглях. Лодж предлагает современные удобства, полный пансион и программу активностей и экскурсий. После дороги можно отдохнуть и привыкнуть к совершенно другой обстановке: влажному лесу, реке и звукам джунглей.
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Манаус
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: 'Амазония: джунгли, кабокло и вечерняя река'
@@ -137,7 +137,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
-  - src: https://brasiltours.ru/image/manaus,,.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-4-enhanced-20261006.webp
     alt: Манаус
 - day: 7
   title: 'Салвадор: Пелуриньо и исторический центр'

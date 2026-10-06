@@ -32,7 +32,7 @@ itinerary:
 
     Вечером город загорается огнями, особенно хорошо заметными на склонах холмов. Свободное время можно провести у океана или в городе.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Вид на Рио'
 - day: 2
   title: Сахарная Голова, исторический центр и Парад Чемпионов
@@ -94,7 +94,7 @@ itinerary:
 
     Трансфер в аэропорт Рио-де-Жанейро для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/rio%202.png
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Вид на Рио'
 included:
 - Проживание в отелях.

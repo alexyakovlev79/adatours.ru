@@ -96,7 +96,7 @@ itinerary:
 
       Экскурсии проходят небольшими группами до 8 человек в сопровождении гидов-натуралистов. Для выездов в лес и на протоки используются частные катера, которыми управляют капитан и команда судна.
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Амазония
   - src: https://brasiltours.ru/image/Iquitos.png
     alt: Икитос

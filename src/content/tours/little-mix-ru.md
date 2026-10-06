@@ -42,7 +42,7 @@ itinerary:
 
     В первый день вы знакомитесь с пляжной жизнью Рио: футболом и волейболом на песке, океаном, кафе и привычным городским отдыхом жителей-кариок.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio5.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-3-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Корковадо и Христос-Искупитель
@@ -63,7 +63,7 @@ itinerary:
 
     После экскурсии трансфер обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/cristo-redentor-rio-de-janeiro-1.jpg
+  - src: /media/tours/little-mix-ru/itinerary-day-2-enhanced-20261006.webp
     alt: Статуя Христа и Корковадо
 - day: 3
   title: Сахарная Голова
@@ -88,7 +88,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio5.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-3-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 4
   title: Рио-де-Жанейро - Сан-Паулу
@@ -106,7 +106,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-1-enhanced-20261006.webp
     alt: Сан-Паулу
-  - src: https://brasiltours.ru/image/countries/brazil/rio5.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-3-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: Архитектурный Сан-Паулу

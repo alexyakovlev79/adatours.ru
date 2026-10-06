@@ -62,7 +62,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/cristo-redentor-rio-de-janeiro-1.jpg
+  - src: /media/tours/little-mix-ru/itinerary-day-2-enhanced-20261006.webp
     alt: Статуя Христа и Корковадо
 - day: 3
   title: Рио-де-Жанейро - Манаус
@@ -86,7 +86,7 @@ itinerary:
 
     Продолжительность от 40 минут до 1 часа.
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Манаус
 - excursionRef: excursion_amazon_night_caiman_boat_trip
   places: []
@@ -105,7 +105,7 @@ itinerary:
 
     Проживание и питание продолжаются по условиям лоджа с полным пансионом.
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Манаус
 - day: 5
   title: Манаус - Фоз-ду-Игуасу
@@ -131,7 +131,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Манаус
 - day: 6
   title: Аргентинская сторона Игуасу

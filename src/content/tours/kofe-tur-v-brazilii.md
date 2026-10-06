@@ -91,7 +91,7 @@ itinerary:
 
     **Продолжительность:** около 8-9 минут.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio5.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-3-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_botanical_garden
   places: []
@@ -170,7 +170,7 @@ itinerary:
 
     По прибытии трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу

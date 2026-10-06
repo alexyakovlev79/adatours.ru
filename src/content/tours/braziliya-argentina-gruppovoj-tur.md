@@ -87,7 +87,7 @@ itinerary:
 
     В 19:00 ужин и свободное время.
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Бразилия-Аргентина:групповой тур
 - day: 5
   title: Манаус
@@ -106,7 +106,7 @@ itinerary:
 
     В 20:00 начинается вечернее исследование береговой линии с прожекторами. Можно увидеть кайманов Тинга и Асу, а иногда ночных ястребов, змей и лягушек.
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Бразилия-Аргентина:групповой тур
 - day: 6
   title: Манаус - Сальвадор
@@ -122,7 +122,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Бразилия-Аргентина:групповой тур
 - day: 7
   title: Сальвадор
@@ -149,7 +149,7 @@ itinerary:
 
     День посвящен отдыху и купанию.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/salvador.jpg
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/itinerary-day-8-enhanced-20261006.webp
     alt: Сальвадор
 - day: 9
   title: Сальвадор - Фос-ду-Игуасу
@@ -250,7 +250,7 @@ priceFrom: 4195
 currency: USD
 priceNote: $4195
 hero:
-  src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
   alt: Бразилия-Аргентина:групповой тур
 routeCountries:
 - country_brazil

@@ -44,7 +44,7 @@ itinerary:
   images:
   - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
     alt: Удивительная Сальта
-  - src: https://brasiltours.ru/image/20130830.Tour-Salta-Cafayate.upd.jpg
+  - src: /media/tours/udivitelnaya-salta/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Кафаяте
 - day: 2
   title: Кафаяте - Сальта
@@ -62,7 +62,7 @@ itinerary:
   images:
   - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
     alt: Удивительная Сальта
-  - src: https://brasiltours.ru/image/20130830.Tour-Salta-Cafayate.upd.jpg
+  - src: /media/tours/udivitelnaya-salta/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Кафаяте
 - day: 3
   title: Сальта - Пурмамарка
@@ -82,7 +82,7 @@ itinerary:
   images:
   - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
     alt: Удивительная Сальта
-  - src: https://brasiltours.ru/image/purmamarka.png
+  - src: /media/tours/udivitelnaya-salta/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: Пурмамарка
 - day: 4
   title: Пурмамарка - Salinas Grandes - Сальта
@@ -96,7 +96,7 @@ itinerary:
   images:
   - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
     alt: Удивительная Сальта
-  - src: https://brasiltours.ru/image/purmamarka.png
+  - src: /media/tours/udivitelnaya-salta/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: Пурмамарка
 - day: 5
   title: Сальта
@@ -161,4 +161,5 @@ themes: ["theme_culture"]
 В Кафаяте вы познакомитесь с производством аргентинского вина и проведете ночь в винном отеле. Дальше маршрут проходит через национальный парк Los Cardones, где растут кактусы возрастом 200-300 лет.
 
 В районе Пурмамарки вас ждут Семицветная гора и Кебрада-де-Умауака, культурно-пейзажный объект Всемирного наследия ЮНЕСКО. Здесь сохранились индейские крепости, доколумбовые и колониальные поселения, старые храмы и мощеные улицы. Еще одна природная точка программы - солончаки Salinas Grandes.
+
 

@@ -36,7 +36,7 @@ itinerary:
     Мерцающие огни Пунта-Аренаса постепенно растворятся в темноте, когда корабль войдет в канал Уайтсайд между островом Дарвина
     и островом Огненная Земля.
   images:
-  - src: https://brasiltours.ru/image/Punta%20arenas.png
+  - src: /media/tours/antarktida-programma-s-nochevkoj/itinerary-day-1-enhanced-20261006.webp
     alt: Пунта Аренас
 - day: 2
   title: Бухта Эйнсворт / Островки Такерс
@@ -99,7 +99,7 @@ itinerary:
   text: Сегодня утром мы войдем в аргентинские территориальные воды и пришвартуемся в Ушуае - самом южном городе планеты.
     Прибытие судна запланировано на 8:30 или 9:30 утра в зависимости от даты отправления.
   images:
-  - src: https://brasiltours.ru/image/ARG%20USHUAIA%20right.png
+  - src: /media/tours/fordy-ognennoj-zemli/itinerary-day-5-enhanced-20261006.webp
     alt: Ушуайя
 included:
 - 'Включено:'
@@ -136,7 +136,7 @@ priceFrom: 3415
 currency: USD
 priceNote: $3415
 hero:
-  src: https://brasiltours.ru/image/countries/antarctica/antarktida-949x949.jpg
+  src: /media/tours/fordy-ognennoj-zemli/hero-enhanced-20261006.webp
   alt: Фьорды Огненной Земли
 routeCountries:
 - country_chile
@@ -160,3 +160,4 @@ themes: []
 **Стоимость:** $3415
 
 Маршрут тура
+

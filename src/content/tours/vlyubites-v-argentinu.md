@@ -168,7 +168,7 @@ itinerary:
 
     Ночь в Сальте.
   images:
-  - src: https://brasiltours.ru/image/salta.png
+  - src: /media/tours/vlyubites-v-argentinu/itinerary-day-10-enhanced-20261006.webp
     alt: 'на фото: Салта, Аргентина'
 - day: 11
   title: Сальта - Игуасу

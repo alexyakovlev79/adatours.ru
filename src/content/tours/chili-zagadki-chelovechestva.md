@@ -80,7 +80,7 @@ itinerary:
 
     Возвращение в Сантьяго. Общая продолжительность поездки - около 9 часов. По дороге предусмотрена остановка на обед, обед оплачивается отдельно.
   images:
-  - src: https://brasiltours.ru/image/valparaiso1.png
+  - src: /media/tours/chili-argentina/itinerary-day-3-enhanced-20261006.webp
     alt: На фото6 город Вальпараисо в Чили
 - day: 4
   title: Сантьяго - остров Пасхи

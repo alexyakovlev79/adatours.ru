@@ -83,7 +83,7 @@ itinerary:
 
     После экскурсии возвращение в Сантьяго.
   images:
-  - src: https://brasiltours.ru/image/valparaiso1.png
+  - src: /media/tours/chili-argentina/itinerary-day-3-enhanced-20261006.webp
     alt: Вальпараисо
 - day: 4
   title: Сантьяго - Пуэрто-Наталес
@@ -118,7 +118,7 @@ itinerary:
 
     За день пейзаж меняется несколько раз. В начале маршрута преобладает сухая патагонская степь, затем появляются лесные участки, ледниковые озера и массивы, которые поднимаются почти отвесно. Именно такое сочетание открытых пространств, воды и гранита делает Торрес-дель-Пайне центральной природной частью чилийского отрезка поездки. Во время остановок можно спокойно рассмотреть озера, водопады и животных, а короткая прогулка к Сальто-Гранде дает возможность выйти из автомобиля и почувствовать ветер и пространство парка.
   images:
-  - src: https://brasiltours.ru/image/torres%20del%20paine2.png
+  - src: /media/tours/chili-argentina/itinerary-day-5-enhanced-20261006.webp
     alt: Торрес-дель-Пайне
 - day: 6
   title: Пуэрто-Наталес - Эль-Калафате
@@ -179,7 +179,7 @@ itinerary:
 
     Навигация по Науэль-Уапи показывает Барилоче со стороны воды. Берега здесь покрыты лесом, за ними поднимаются горы, а остров Виктория воспринимается как отдельный природный мир внутри огромного озера. Миртовый лес запоминается прежде всего цветом гладких стволов и плотностью деревьев. Это спокойная экскурсия после перелета из Эль-Калафате, без длинных автомобильных переходов.
   images:
-  - src: https://brasiltours.ru/image/ARG%20BARILOCHE%20right.png
+  - src: /media/tours/chili-argentina/itinerary-day-8-enhanced-20261006.webp
     alt: Барилоче
 - day: 9
   title: 'Барилоче: маршрут «7 озер»'
@@ -310,7 +310,7 @@ priceFrom: 9818
 currency: USD
 priceNote: $9818
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/argentina-1200x1200.jpg
+  src: /media/tours/chili-argentina/hero-enhanced-20261006.webp
   alt: Чили & Аргентина Делюкс
 routeCountries:
 - country_chile

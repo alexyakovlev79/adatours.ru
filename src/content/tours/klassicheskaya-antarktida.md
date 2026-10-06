@@ -41,7 +41,7 @@ itinerary:
 
     Позже состоится приветственный ужин с региональным меню и знакомство с другими участниками экспедиции.
   images:
-  - src: https://brasiltours.ru/image/Punta%20arenas.png
+  - src: /media/tours/antarktida-programma-s-nochevkoj/itinerary-day-1-enhanced-20261006.webp
     alt: Пунта Аренас
 - day: 2
   title: Перелет в Антарктиду - остров Кинг-Джордж
@@ -89,7 +89,7 @@ itinerary:
 
     Питание в Пунта-Аренасе в этот день предоставляется по вашему выбору и в программу не включено.
   images:
-  - src: https://brasiltours.ru/image/Punta%20arenas.png
+  - src: /media/tours/antarktida-programma-s-nochevkoj/itinerary-day-1-enhanced-20261006.webp
     alt: Пунта Аренас
 - day: 8
   title: Завершение воздушного круиза
@@ -97,7 +97,7 @@ itinerary:
   - Пунта Аренас
   text: После завтрака групповой трансфер в аэропорт Пунта-Аренас для дальнейшего перелета.
   images:
-  - src: https://brasiltours.ru/image/Punta%20arenas.png
+  - src: /media/tours/antarktida-programma-s-nochevkoj/itinerary-day-1-enhanced-20261006.webp
     alt: Пунта Аренас
 included:
 - 1 ночь с завтраком в Пунта-Аренас в отеле в день запланированного обратного рейса из Антарктиды;
@@ -161,3 +161,4 @@ themes: []
 **Стоимость:** $11495
 
 В программе - ледовые фьорды, айсберги, высадки на «Зодиаках», наблюдение за морскими птицами, пингвинами, тюленями и китами. Точный экспедиционный маршрут зависит от погоды, льда и других природных условий.
+

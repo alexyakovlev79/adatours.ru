@@ -51,7 +51,7 @@ itinerary:
 
     После окончания парада трансфер обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/cable%20car.png
+  - src: "/media/tours/parad-chempionov-karnavala-v-rio/itinerary-day-2-enhanced-20261006.webp"
     alt: 'на фото: Канатная дорога на Сахарную Голову'
 - day: 3
   title: Корковадо и Христос-Спаситель
@@ -81,7 +81,7 @@ itinerary:
 
      Также можно посетить ресторан Fogo de Chao с видом на Сахарную Голову; стоимость - $75 с человека.
   images:
-  - src: https://brasiltours.ru/image/cable%20car.png
+  - src: "/media/tours/parad-chempionov-karnavala-v-rio/itinerary-day-2-enhanced-20261006.webp"
     alt: 'на фото: Канатная дорога на Сахарную Голову'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -122,7 +122,7 @@ priceFrom: 2170
 currency: USD
 priceNote: от $2170 с человека, в зависимости от категории отеля и типа размещения
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/ryan-wallace-x1ok9of41ho-unsplash.jpg
+  src: "/media/tours/parad-chempionov-karnavala-v-rio/hero-enhanced-20261006.webp"
   alt: 'На фото: Мужчина на карнавале в Рио'
 routeCountries:
 - country_brazil

@@ -27,7 +27,7 @@ gallery:
     alt: Историческая архитектура центра Рио-де-Жанейро
   - src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp
     alt: Район Лапа в Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/lapa%20at%20ni.11png.png
+  - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-2-enhanced-20261006.webp"
     alt: Лапа в вечернем Рио-де-Жанейро
   - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-25-11-49-25-590.jpg
     alt: Чай и кофе в кафе «Коломбо»

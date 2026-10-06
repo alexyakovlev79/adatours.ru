@@ -117,7 +117,7 @@ priceFrom: 2225
 currency: USD
 priceNote: $2225
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/shot-by-cerqueira-8qh4gsybisa-unsplash.jpg
+  src: "/media/tours/ekspress-braziliya-rio-ibuzios/hero-enhanced-20261006.webp"
   alt: 'На фото: пляжи Рио-де-Жанейро в Бразилии'
 routeCountries:
 - country_brazil

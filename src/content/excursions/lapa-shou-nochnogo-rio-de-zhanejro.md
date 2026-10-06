@@ -20,7 +20,7 @@ hero:
 gallery:
   - src: "https://brasiltours.ru/image/caipirinha.png"
     alt: ""
-  - src: "https://brasiltours.ru/image/lapa%20at%20ni.11png.png"
+  - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-2-enhanced-20261006.webp"
     alt: ""
   - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp"
     alt: ""

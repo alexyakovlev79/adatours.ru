@@ -15,7 +15,7 @@ lead: Рио-де-Жанейро и его панорамы, бразильск�
 durationDays: 12
 durationNights: 11
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/ben-ostrower-3v-4rd3e7ia-unsplash.jpg
+  src: "/media/tours/romanticheskaya-braziliya/hero-enhanced-20261006.webp"
   alt: Тур в Бразилию с пляжным отдыхом в Коста ду Сауипе
 currency: USD
 priceFrom: null

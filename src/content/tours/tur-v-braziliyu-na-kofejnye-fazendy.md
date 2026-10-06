@@ -143,7 +143,7 @@ itinerary:
 
     Оставшаяся часть дня свободна. Можно вернуться на Ипанему или Копакабану, взять урок самбы, поиграть в футбол или просто провести время на пляже. После насыщенных дней у водопадов этот день оставлен без обязательной экскурсионной программы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio-lapa.jpg
+  - src: "/media/tours/tur-v-braziliyu-na-kofejnye-fazendy/itinerary-day-6-enhanced-20261006.webp"
     alt: Акведук Кариока в районе Лапа, Рио, Бразилия
   - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
     alt: Водопады Игуасу на границе Бразилии и Аргентины

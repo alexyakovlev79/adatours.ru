@@ -45,7 +45,7 @@ itinerary:
 
     Размещение в **Fairmont Copacabana** и отдых после перелета.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/snorcling.jpg
+  - src: "/media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-1-enhanced-20261006.webp"
     alt: На фото:снорклинг в реке Рио Сукури
 - day: 2
   title: 'Рио-де-Жанейро: Сахарная Голова'
@@ -62,7 +62,7 @@ itinerary:
 
     Дополнительно можно заказать полет над Рио на вертолете продолжительностью от 10 до 30 минут.
   images:
-  - src: https://brasiltours.ru/image/lapa%20at%20ni.11png.png
+  - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-2-enhanced-20261006.webp"
     alt: 'На фото: район Лапа в Рио'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -74,7 +74,7 @@ itinerary:
     Искупителя. Монумент открыт с 1931 года и давно стал главным символом Рио. С верхней площадки город, залив и океан видны
     с большой высоты.
   images:
-  - src: https://brasiltours.ru/image/helicopter.11png.png
+  - src: "/media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-3-enhanced-20261006.webp"
     alt: 'На фото: вертолетная экскурсия к статуе Христа Спасителя в Рио в Бразилии'
 - excursionRef: excursion_rio_caipirinha_masterclass
   places: []
@@ -104,9 +104,9 @@ itinerary:
 
     Бонито окружен девственными лесами, водопадами, пещерами и прозрачными реками, в которых хорошо видны яркие рыбы. Это один из известных центров экотуризма Бразилии, и следующие дни маршрута посвящены активностям на воде, в лесу и под землей.
   images:
-  - src: https://brasiltours.ru/image/BRA%20BONITO%202.png
+  - src: "/media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-5-enhanced-20261006.webp"
     alt: 'На фото: круиз по реке в Бонито, Бразилия'
-  - src: https://brasiltours.ru/image/brazil-pantanal.jpg
+  - src: "/media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-5-images-1-enhanced-20261006.webp"
     alt: 'На фото: озеро с лотосами в Пантанале'
 - day: 6
   title: 'Бонито: Рио-Сукури, тюбинг и зиплайн'
@@ -124,7 +124,7 @@ itinerary:
   images:
   - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: На фото:Бонито
-  - src: https://brasiltours.ru/image/countries/brazil/snorcling.jpg
+  - src: "/media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-1-enhanced-20261006.webp"
     alt: На фото:снорклинг в реке Рио Сукури
 - day: 7
   title: 'Бонито: Abismo Anhumas'
@@ -156,7 +156,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: водопады Игуасу, Бразилия'
-  - src: https://brasiltours.ru/image/BRA%20BONITO%202.png
+  - src: "/media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-5-enhanced-20261006.webp"
     alt: 'На фото: круиз по реке в Бонито, Бразилия'
 - day: 9
   title: Фоз-ду-Игуасу и «Макуко Сафари»

@@ -15,11 +15,11 @@ hero:
   src: /media/countries/el-salvador/featureBands-3-enhanced-20261002.webp
   alt: "На фото: вулкан на фоне Сан-Сальвадора в Эль-Сальвадоре"
 gallery:
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN4975_7.jpg
+  - src: /media/destinations/san-salvador/featureBands-1-enhanced-20261006.webp
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN3190_12.jpg
+  - src: /media/destinations/san-salvador/featureBands-2-enhanced-20261006.webp
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN3190_10.jpg
+  - src: /media/destinations/san-salvador/gallery-3-enhanced-20261006.webp
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
   - src: https://brasiltours.ru/image/catalog/category/B/N/BN22333_10.jpg
     alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
@@ -46,12 +46,12 @@ featureBands:
     title: Колониальная архитектура и современная застройка
     text: >-
       В Сан-Сальвадоре сохранились образцы колониальной архитектуры, рядом с которыми появились современные высотные здания. Среди основных достопримечательностей города — собор Катедраль-Метрополитана и церковь Эль-Росарио.
-    image: https://brasiltours.ru/image/catalog/category/B/N/BN4975_7.jpg
+    image: /media/destinations/san-salvador/featureBands-1-enhanced-20261006.webp
   - eyebrow: Городская жизнь
     title: Музеи, театры, кафе и рынки
     text: >-
       В столице работают музеи, культурные центры, театры, бары и кафе. В городе также есть несколько крупных рынков.
-    image: https://brasiltours.ru/image/catalog/category/B/N/BN3190_12.jpg
+    image: /media/destinations/san-salvador/featureBands-2-enhanced-20261006.webp
 sourceUrl: https://brasiltours.ru/tury-i-ehkskursii-v-stolicu-ehl-salvadora-gorod-san-salvador
 sourceSnapshot: https://drive.google.com/file/d/1FU8AOKNp2ik21xrWHXmtwFdHYjg9NVKU/view?usp=drivesdk
 updatedAt: 2026-10-02
@@ -63,3 +63,4 @@ themes: ["theme_culture"]
 Сан-Сальвадор является главным промышленным центром страны. В городской застройке сохранились образцы колониальной архитектуры, рядом стоят современные высотные здания. Среди основных достопримечательностей города — собор Катедраль-Метрополитана и церковь Эль-Росарио.
 
 В Сан-Сальвадоре работают музеи, культурные центры, театры, бары и кафе. В городе также есть несколько крупных рынков.
+

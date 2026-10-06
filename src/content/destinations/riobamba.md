@@ -10,18 +10,18 @@ destinationType: city
 summary: >-
   Риобамба — город в центральных Андах Эквадора на высоте 2750 м у подножия вулкана Чимборасо. В центре сохранились колониальная архитектура, просторные площади и исторические храмы.
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/8.jpg
+  src: /media/destinations/riobamba/hero-enhanced-20261006.webp
   alt: "На фото: город Риобамба в Эквадоре"
 gallery:
-  - src: https://brasiltours.ru/image/catalog/category/r/i/riobamba05.jpg
+  - src: /media/destinations/riobamba/gallery-1-enhanced-20261006.webp
     alt: "На фото: город Риобамба в Эквадоре"
-  - src: https://brasiltours.ru/image/catalog/category/p/2/p253939-Riobamba-Riobamba.jpg
+  - src: /media/destinations/riobamba/gallery-2-enhanced-20261006.webp
     alt: "На фото: город Риобамба в Эквадоре"
-  - src: https://brasiltours.ru/image/catalog/category/r/i/riobamba-6-45-am.jpg
+  - src: /media/destinations/riobamba/gallery-3-enhanced-20261006.webp
     alt: "На фото: город Риобамба в Эквадоре"
-  - src: https://brasiltours.ru/image/catalog/category/R/I/RIO0010A_Riobamba_Chimborazo_Ecuador.jpg
+  - src: /media/destinations/riobamba/gallery-4-enhanced-20261006.webp
     alt: "На фото: город Риобамба в Эквадоре"
-  - src: https://brasiltours.ru/image/catalog/category/R/i/Riobamba_ParqueSucre.jpg
+  - src: /media/destinations/riobamba/gallery-5-enhanced-20261006.webp
     alt: "На фото: город Риобамба в Эквадоре"
 relatedDestinations: []
 featuredTours: []
@@ -49,3 +49,4 @@ themes: ["theme_culture"]
 В нескольких кварталах к северу расположен Monasterio de las Conceptas — музей религиозного искусства в здании монастыря XVII века. В его коллекции есть иконы и расшитые золотом и серебром церковные облачения.
 
 В районе Авенида Даниэль Леон Борха работают рестораны, кафе, бары, магазины, художественные галереи и сувенирные лавки. В старой части города сохранились просторные площади, исторические здания и улицы, мощенные камнем.
+

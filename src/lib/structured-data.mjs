@@ -275,7 +275,7 @@ export function buildStructuredData({ root, organization, records, page, documen
   } else if (serviceConfig) {
     const service = add({ '@type': 'Service', '@id': `${page.url}#service`, name: cleanText(document.h1 || page.title),
       description: cleanText(page.description), serviceType: serviceConfig.serviceType, category: serviceConfig.category,
-      audience: serviceConfig.audience?.map((audienceType) => ({ '@type': 'BusinessAudience', audienceType })),
+      audience: serviceConfig.audience?.map((audienceType) => ({ '@type': 'Audience', audienceType })),
       url: page.url, provider: ref(orgId), areaServed: organization.areaServed,
       mainEntityOfPage: ref(pageId), image: imageRef });
     webPage.mainEntity = service; webPage.about = service;

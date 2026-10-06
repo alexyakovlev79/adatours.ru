@@ -44,7 +44,7 @@ priceFrom: 12075
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/oblozhki/la-fortuna.jpg
+  src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/hero-enhanced-20261006.webp
   alt: "Горячие источники Табакон у вулкана Ареналь, Коста-Рика"
 gallery: []
 featured: false
@@ -79,7 +79,7 @@ itinerary:
       
       Сан-Хосе становится отправной точкой поездки по вулканам, карибским каналам, облачным лесам и Тихоокеанскому побережью.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/san-khose/depositphotos-42249027-xl-2015-san-khose.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-1-enhanced-20261006.webp
         alt: "Сан-Хосе, столица Коста-Рики"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -1066,3 +1066,4 @@ Manatus Hotel связан с природной частью маршрута �
 
 
 Финальные 3 дня у Плайя-Кончаль позволяют снизить нагрузку: можно выбирать каяки, снорклинг, спа или просто отдых у океана.
+

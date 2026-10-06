@@ -16,11 +16,11 @@ hero:
 gallery:
   - src: /media/destinations/suchitoto/featureBands-1-enhanced-20261006.webp
     alt: "На фото: город Сучитото в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/S/u/Suchitoto41.jpg
+  - src: /media/destinations/suchitoto/featureBands-2-enhanced-20261006.webp
     alt: "На фото: город Сучитото в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN17640_8.jpg
+  - src: /media/destinations/suchitoto/gallery-3-enhanced-20261006.webp
     alt: "На фото: город Сучитото в Эль-Сальвадоре"
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN17640_1.jpg
+  - src: /media/destinations/suchitoto/gallery-4-enhanced-20261006.webp
     alt: "На фото: город Сучитото в Эль-Сальвадоре"
 relatedDestinations: []
 featuredTours: []
@@ -42,7 +42,7 @@ featureBands:
     title: Лаго-де-Сучитлан и городские фестивали
     text: >-
       Сучитото расположен у озера Лаго-де-Сучитлан среди сельских пейзажей. Период расцвета города связан с торговлей индиго, а сегодня здесь проходят красочные культурные фестивали.
-    image: https://brasiltours.ru/image/catalog/category/S/u/Suchitoto41.jpg
+    image: /media/destinations/suchitoto/featureBands-2-enhanced-20261006.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-suchitoto-v-ehl-salvadore
 sourceSnapshot: https://drive.google.com/file/d/1QnBEEZfYn-fh7v10m_oF2T-bq8JVDP_q/view?usp=drivesdk
 updatedAt: 2026-10-02

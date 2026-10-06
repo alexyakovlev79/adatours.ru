@@ -68,7 +68,7 @@ itinerary:
   images:
   - src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/itinerary-day-4-enhanced-20261006.webp
     alt: Статуя Христа и Панорамный вид в Рио-де -Жанейро, Бразилия
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny7.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
     alt: Празднование Нового года на пляже Копакабана, Бразилия
 - day: 3
   title: 1 января. Сахарная Голова и исторический центр
@@ -175,9 +175,9 @@ itinerary:
 
     Бузиос после Игуасу воспринимается почти как пауза. Здесь уже нет обязательной смены смотровых площадок и экскурсионного расписания. Утро можно начать с пляжа, днем переехать в другую бухту, а вечером выйти к ресторанам и прогулочным улицам. Такой переход от насыщенной программы к свободным дням специально оставляет финал путешествия более спокойным.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-5.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-10-enhanced-20261006.webp
     alt: Курорт Бузиос в Бразилии на берегу океана
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-5.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-8-images-1-enhanced-20261006.webp
     alt: Водопады Игуасу в Аргентине и Бразилии
 - day: 8
   title: 6-7 января. Свободные дни в Бузиосе
@@ -194,7 +194,7 @@ itinerary:
 
     Еще один вариант - курорты северо-востока Бразилии, до которых из Рио обычно требуется перелет около 2-3 часов: Порту-де-Галиньяс, Пипа, Сальвадор, Жерикоакоара, Акираз, Порту-Сегуру и Транкозу. Эти места подойдут тем, кто хочет провести финальные дни на длинных тропических пляжах с прозрачной водой.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-5.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-10-enhanced-20261006.webp
     alt: Курорт Бузиос в Бразилии на берегу океана
 - day: 9
   title: 6-7 января. Свободные дни в Бузиосе
@@ -210,7 +210,7 @@ itinerary:
 
     Еще один вариант - курорты северо-востока Бразилии, до которых из Рио обычно требуется перелет около 2-3 часов: Порту-де-Галиньяс, Пипа, Сальвадор, Жерикоакоара, Акираз, Порту-Сегуру и Транкозу. Эти места подойдут тем, кто хочет провести финальные дни на длинных тропических пляжах с прозрачной водой.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-5.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-10-enhanced-20261006.webp
     alt: Курорт Бузиос в Бразилии на берегу океана
 - day: 10
   title: 8 января. Возвращение в Рио и вылет домой
@@ -247,7 +247,7 @@ priceFrom: 3193
 currency: USD
 priceNote: $3193
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny7.jpg
+  src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
   alt: Празднование Нового года на пляже Копакабана, Бразилия
 routeCountries:
 - country_brazil

@@ -275,7 +275,7 @@ itinerary:
 
     Дорога выводит к тропическому побережью. После Рио, Игуасу и Амазонии темп путешествия становится спокойнее. Размещение в отеле и отдых.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-5.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-10-enhanced-20261006.webp
     alt: Пляжный отдых на курорте Бузиос в Бразилии, белый песок и бирюзовая вода
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
     alt: Дети плещутся в океане на пляже Рио-де-Жанейро, летний отдых и счастье
@@ -299,7 +299,7 @@ itinerary:
   - Бузиос
   text: Завтрак в отеле. Трансфер в аэропорт Рио-де-Жанейро и регистрация на международный рейс. Окончание программы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-5.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-10-enhanced-20261006.webp
     alt: Пляжный отдых на курорте Бузиос в Бразилии, белый песок и бирюзовая вода
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/3.jpg
     alt: Дети плещутся в океане на пляже Рио-де-Жанейро, летний отдых и счастье

@@ -81,7 +81,7 @@ itinerary:
 
     Поездка на Корковадо дает еще одно важное впечатление от Рио: между городской застройкой и вершиной лежит настоящий тропический лес. Поезд проходит через Тижуку, где город на несколько минут исчезает за плотной зеленью, а потом снова появляется между деревьями. Этот переход от улиц к лесу делает подъем заметно интереснее простой поездки на смотровую площадку.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny7.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
     alt: Фейерверки над пляжем Копакабана
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-4-enhanced-20261006.webp
     alt: Статуя Христа в Рио-де-Жанейро. Бразилия

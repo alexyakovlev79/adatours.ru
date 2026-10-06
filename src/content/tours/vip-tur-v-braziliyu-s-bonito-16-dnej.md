@@ -89,7 +89,7 @@ itinerary:
 
     Вариант с облетом статуи Христа длится **9-10 минут** и стоит **USD 250 с человека**.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-25.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-3-enhanced-20261006.webp
     alt: Статуя Христа-Искупителя над Рио-де-Жанейро, символ Бразилии, вид с горы Корковаду
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -149,7 +149,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Туристы на мостике над водопадами Игуасу в Бразилии
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bonito/bonito-3.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-9-images-1-enhanced-20261006.webp
     alt: Подводное плавание в Бонито, Рио-да-Прата и Сукури, экотуризм и природа Бразилии
 - day: 7
   title: Бразильская сторона водопадов Игуасу и Горло дьявола
@@ -196,7 +196,7 @@ itinerary:
 
     После дороги свободное время и отдых. Знакомство с природой Бонито начинается утром.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bonito/bonito-7.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-8-enhanced-20261006.webp
     alt: Речной пейзаж в Бонито, прозрачная вода и зелень вокруг, экотуризм в Бразилии
   - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Туристы на мостике над водопадами Игуасу в Бразилии
@@ -224,7 +224,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-adventure-17d/itinerary/day-10-enhanced-20260930.webp
     alt: Голубая пещера Грута-ду-Лагу-Азул в Бонито, карстовое озеро и сталактиты Бразилии
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bonito/bonito-3.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-9-images-1-enhanced-20261006.webp
     alt: Подводное плавание в Бонито, Рио-да-Прата и Сукури, экотуризм и природа Бразилии
 - excursionRef: excursion_brazil_bonito_abismo_anhumas
   places: []
@@ -266,9 +266,9 @@ itinerary:
 
     После перелета и трансфера остаток дня свободный.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bonito/oblozhka-2.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-11-enhanced-20261006.webp
     alt: Подземное озеро в Голубой пещере Бонито в Бразилии
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/porto-de-galinhas/nannai-hotel/kvadraty/10.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: Пляжный отдых в NANNAI Muro Alto, Порту-де-Галиньяш, бассейн, спа и ресторан у океана
 - day: 12
   title: Порто-де-Галиньяс. Пляжный отдых
@@ -285,7 +285,7 @@ itinerary:
 
     Можно провести дни и без дополнительных поездок: отдыхать у бассейна, гулять по Муро-Альто, возвращаться к морю утром и вечером, когда песок прохладнее. После плотной программы Рио, Игуасу и Бонито этот участок дает несколько спокойных дней без постоянной смены отелей.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/porto-de-galinhas/nannai-hotel/kvadraty/7.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-12-enhanced-20261006.webp
     alt: Приватный романтический ужин в NANNAI Muro Alto в Порту-де-Галиньяш
 - day: 13
   title: Порто-де-Галиньяс. Пляжный отдых
@@ -301,7 +301,7 @@ itinerary:
 
     Можно провести дни и без дополнительных поездок: отдыхать у бассейна, гулять по Муро-Альто, возвращаться к морю утром и вечером, когда песок прохладнее. После плотной программы Рио, Игуасу и Бонито этот участок дает несколько спокойных дней без постоянной смены отелей.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/porto-de-galinhas/nannai-hotel/kvadraty/10.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: Пляжный отдых в NANNAI Muro Alto, Порту-де-Галиньяш, бассейн, спа и ресторан у океана
 - day: 14
   title: Порто-де-Галиньяс. Пляжный отдых
@@ -317,7 +317,7 @@ itinerary:
 
     Можно провести дни и без дополнительных поездок: отдыхать у бассейна, гулять по Муро-Альто, возвращаться к морю утром и вечером, когда песок прохладнее. После плотной программы Рио, Игуасу и Бонито этот участок дает несколько спокойных дней без постоянной смены отелей.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/porto-de-galinhas/nannai-hotel/kvadraty/7.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-12-enhanced-20261006.webp
     alt: Приватный романтический ужин в NANNAI Muro Alto в Порту-де-Галиньяш
 - day: 15
   title: Порто-де-Галиньяс. Пляжный отдых
@@ -333,7 +333,7 @@ itinerary:
 
     Можно провести дни и без дополнительных поездок: отдыхать у бассейна, гулять по Муро-Альто, возвращаться к морю утром и вечером, когда песок прохладнее. После плотной программы Рио, Игуасу и Бонито этот участок дает несколько спокойных дней без постоянной смены отелей.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/porto-de-galinhas/nannai-hotel/kvadraty/10.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: Пляжный отдых в NANNAI Muro Alto, Порту-де-Галиньяш, бассейн, спа и ресторан у океана
 - day: 16
   title: Ресифи - Рио-де-Жанейро и международный вылет
@@ -347,7 +347,7 @@ itinerary:
 
     За время поездки вы встретили Новый год у океана, увидели Рио с Корковадо и Сахарной Головы, прошли вдоль Игуасу, плыли по прозрачной Рио-Сукури, спускались в пещеры Бонито и провели несколько дней у теплого моря в Пернамбуку. Вода на каждом этапе была разной: океанской, бурной у водопадов, прозрачной в известняковых реках, подземной и спокойной за рифами.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bonito/bonito-3.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-9-images-1-enhanced-20261006.webp
     alt: Подводное плавание в Бонито, Рио-да-Прата и Сукури, экотуризм и природа Бразилии
 included:
 - Проживание в отелях на базе завтраков

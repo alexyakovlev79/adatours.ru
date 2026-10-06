@@ -40,7 +40,7 @@ itinerary:
 
     В конце декабря и начале января в Рио жарко и влажно, поэтому после перелета приятно выйти к океану. Копакабана встречает черно-белой мозаикой набережной, шумом прибоя и киосками, где продают охлажденную кокосовую воду. Чуть дальше находится Ипанема. Первый вечер свободный, можно пройти вдоль берега, поужинать рядом с пляжем или просто отдохнуть.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny7.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
     alt: Новый год в Рио-де-Жанейро, огни над океаном и салют на Копакабане
 - day: 2
   title: ', 31.12. Корковадо и Новый год на Копакабане'
@@ -99,7 +99,7 @@ itinerary:
 
     Если хочется спокойного дня, можно остаться ближе к Копакабане или Ипанеме, пройтись вдоль набережной, выпить кофе с видом на океан и вернуться в отель без плотного расписания.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny7.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
     alt: Новый год в Рио-де-Жанейро, огни над океаном и салют на Копакабане
 - excursionRef: excursion_source_favela_tur
   places: []
@@ -273,7 +273,7 @@ priceFrom: 4373
 currency: USD
 priceNote: $4373
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/5-5.jpg
+  src: /media/tours/mechty-sbyvayutsya-na-novyj-god/hero-enhanced-20261006.webp
   alt: Новый год в Рио на Копакабане, салют и толпы у океана в Бразилии
 routeCountries:
 - country_brazil

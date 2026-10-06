@@ -200,7 +200,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-2.jpg
     alt: Пляжный отдых на океане в Бузиосе, Бразилия, белый песок и бирюзовая вода Атлантики
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-5.jpg
+  - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-8-images-1-enhanced-20261006.webp
     alt: Экзотические водопады Игуасу в Бразилии и Аргентине, каскады и джунгли
 - day: 9
   title: Бузиос

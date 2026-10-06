@@ -57,7 +57,7 @@ itinerary:
 
     Вечером можно продолжить знакомство со страной через гастрономию. Среди вариантов - Boragó, Ambrosia, Peumayen и Aquí está Coco. Здесь можно попробовать авторские блюда и свежие морепродукты.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: 'На фото: столица Чили, город Сантьяго'
 - day: 2
   title: Атакама, Долина Луны и звездное небо

@@ -314,7 +314,7 @@ itinerary:
 
     Эти 2 дня остаются свободными для отдыха на побережье. Можно выбрать разные пляжи полуострова, провести день у воды или добавить активность по настроению. После длинного маршрута через 4 страны Бузиос дает несколько дней без переездов и экскурсионной нагрузки.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос и пляжный отдых в Бразилии'
 - day: 16
   title: Бузиос
@@ -337,7 +337,7 @@ itinerary:
   - Бузиос
   text: Завтрак в гостинице. В назначенное время выезд из Бузиоса в Рио-де-Жанейро и трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос и пляжный отдых в Бразилии'
   - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: фуникулер в Рио-де-Жанейро Бразилия'

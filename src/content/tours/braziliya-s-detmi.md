@@ -149,7 +149,7 @@ itinerary:
 
     Игуасу дает совершенно другое впечатление после Рио. Здесь почти нет городской среды, вокруг густая растительность, влажный воздух и постоянный шум воды. Ребенок видит водопады не с одной точки, а постепенно приближается к ним по дорожкам, мостикам и смотровым площадкам.
   images:
-  - src: https://brasiltours.ru/image/bird%20park%202.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-6-enhanced-20261006.webp
     alt: Парк птиц Игуасу
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -205,7 +205,7 @@ itinerary:
 
     По прибытии размещение в отеле и отдых.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: Бузиос
   - src: /media/tours/amazoniya/hero-enhanced-20261006.webp
     alt: Амазония
@@ -226,7 +226,7 @@ itinerary:
 
     Бузиос в этой программе нужен именно как спокойная концовка. После насыщенных переездов и экскурсий здесь нет обязательной гонки по достопримечательностям: можно выбирать пляж по погоде, менять планы в течение дня и просто проводить время вместе у моря.
   images:
-  - src: https://brasiltours.ru/image/buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-10-enhanced-20261006.webp
     alt: Бузиос
 - day: 11
   title: Бузиос
@@ -244,7 +244,7 @@ itinerary:
 
     Бузиос в этой программе нужен именно как спокойная концовка. После насыщенных переездов и экскурсий здесь нет обязательной гонки по достопримечательностям: можно выбирать пляж по погоде, менять планы в течение дня и просто проводить время вместе у моря.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: Бузиос
 - day: 12
   title: Бузиос - Рио-де-Жанейро
@@ -253,7 +253,7 @@ itinerary:
   - Бузиос
   text: После завтрака трансфер в аэропорт Рио-де-Жанейро к международному рейсу.
   images:
-  - src: https://brasiltours.ru/image/buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-10-enhanced-20261006.webp
     alt: Бузиос
   - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: Рио-де-Жанейро
@@ -278,7 +278,7 @@ priceFrom: 4009
 currency: USD
 priceNote: $4009
 hero:
-  src: https://brasiltours.ru/image/brazil.png
+  src: /media/tours/braziliya-s-detmi/hero-enhanced-20261006.webp
   alt: Бразилия с детьми
 routeCountries:
 - country_brazil

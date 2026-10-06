@@ -138,7 +138,7 @@ itinerary:
   images:
   - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/Recife.png
+  - src: /media/tours/braziliya-s-plyazhami/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: Ресифи
 - day: 7
   title: Порту-де-Галиньяс
@@ -170,7 +170,7 @@ itinerary:
   - Порту-ди-Галиньяш
   text: Трансфер в аэропорт Ресифи к обратному рейсу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-recife-1.jpg
+  - src: /media/tours/braziliya-s-plyazhami/itinerary-day-8-enhanced-20261006.webp
     alt: Ресифи
   - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: Бразилия с пляжами

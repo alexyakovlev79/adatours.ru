@@ -128,7 +128,7 @@ itinerary:
 
     В Ресифи сохранились памятники португальского и голландского периода: храмы, особняки и исторические здания. В окрестностях много пляжей. В самом городе работают кафе, рестораны и магазины, активна ночная жизнь. Каналы и мосты проходят прямо через центральные районы, поэтому вода остается частью городского пейзажа даже вдали от океанского берега. После Игуасу этот день возвращает в городскую среду, но уже с другим климатом, архитектурой и культурой северо-востока страны.
   images:
-  - src: https://brasiltours.ru/image/Recife.png
+  - src: /media/tours/braziliya-s-plyazhami/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: Ресифи
   - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
@@ -148,7 +148,7 @@ itinerary:
 
     Олинда входит в список Всемирного природного и культурного наследия ЮНЕСКО.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-recife-1.jpg
+  - src: /media/tours/braziliya-s-plyazhami/itinerary-day-8-enhanced-20261006.webp
     alt: Ресифи
 - day: 8
   title: Ресифи - Порту-де-Галиньяс
@@ -237,7 +237,7 @@ itinerary:
 
     Во время поездки на Фернанду-ди-Норонья можно плавать среди морской фауны, исследовать коралловые рифы и наблюдать природу архипелага.
   images:
-  - src: https://brasiltours.ru/image/Recife.png
+  - src: /media/tours/braziliya-s-plyazhami/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: Ресифи
 included:
 - проживание в отелях 4* с завтраком;

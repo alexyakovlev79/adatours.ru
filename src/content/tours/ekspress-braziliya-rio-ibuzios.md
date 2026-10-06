@@ -80,7 +80,7 @@ itinerary:
 
     Свободный день и отдых на тропическом побережье.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: морской курорт Бузиос в Бразилии'
 - day: 6
   title: Бузиос - Рио-де-Жанейро

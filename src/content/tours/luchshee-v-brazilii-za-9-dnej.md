@@ -209,7 +209,7 @@ itinerary:
 
     На эти дни обязательные экскурсии не предусмотрены.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: Бузиос
 - day: 8
   title: Бузиос
@@ -221,7 +221,7 @@ itinerary:
 
     На эти дни обязательные экскурсии не предусмотрены.
   images:
-  - src: https://brasiltours.ru/image/buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-10-enhanced-20261006.webp
     alt: Бузиос
 - day: 9
   title: Бузиос - Рио-де-Жанейро

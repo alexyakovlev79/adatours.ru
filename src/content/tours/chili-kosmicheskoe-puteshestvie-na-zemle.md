@@ -43,7 +43,7 @@ itinerary:
 
     Вечер свободный. Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 2
   title: Вальпараисо и Винья-дель-Мар
@@ -128,7 +128,7 @@ itinerary:
   - Сантьяго-де-Чили
   text: Завтрак в отеле. В назначенное время трансфер в аэропорт и вылет домой.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 included:
 - трансферы по программе с водителем;

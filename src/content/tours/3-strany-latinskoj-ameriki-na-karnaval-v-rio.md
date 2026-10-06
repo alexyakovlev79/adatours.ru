@@ -224,7 +224,7 @@ itinerary:
 
     Сантьяго выглядит сдержаннее Рио и Буэнос-Айреса. В ясную погоду над городом видны Анды. Остаток дня свободный.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Панорама Сантьяго на фоне заснеженных Анд, столица Чили и горные вершины
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: Купол Дворца Конгресса на закате в Буэнос-Айресе
@@ -245,7 +245,7 @@ itinerary:
 
     **Стоимость:** USD 230 с человека, минимум 2 гостя.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Панорама Сантьяго на фоне заснеженных Анд, столица Чили и горные вершины
 - day: 12
   title: Вылет из Сантьяго
@@ -260,7 +260,7 @@ itinerary:
 
     Вся поездка построена вокруг заметной смены среды: океан и карнавальный Рио, тропический Игуасу, вечерний Буэнос-Айрес и сухой воздух Сантьяго у подножия Анд.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Панорама Сантьяго на фоне заснеженных Анд, столица Чили и горные вершины
 included:
 - Проживание в отелях по программе.

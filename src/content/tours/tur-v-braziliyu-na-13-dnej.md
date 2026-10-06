@@ -269,7 +269,7 @@ itinerary:
 
     Можно провести его на пляже, выбрать водные активности, прогулку по городу или морскую поездку.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: пляж на курорте Бузиос Бразилия'
 - day: 13
   title: Бузиос - Рио-де-Жанейро, вылет домой

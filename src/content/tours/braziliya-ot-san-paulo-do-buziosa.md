@@ -182,7 +182,7 @@ itinerary:
 
     По прибытии трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo5.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-11-enhanced-20261006.webp
     alt: Сан-Паулу
   - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
     alt: Бузиос

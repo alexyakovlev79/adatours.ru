@@ -204,7 +204,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
   - src: https://brasiltours.ru/image/catalog/product/I/g/Iguazu-Gorge-du-diable.jpg
     alt: 'на фото: Водопады Игуасу'
@@ -219,7 +219,7 @@ itinerary:
 
     Обязательной экскурсионной программы в этот день нет.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
 - day: 8
   title: Бузиос - Рио-де-Жанейро
@@ -233,7 +233,7 @@ itinerary:
 
     На этом программа заканчивается.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
   - src: https://brasiltours.ru/image/R%C3%ADo_de_Janeiro%20teatre.png
     alt: 'на фото: Центр Рио'

@@ -15,7 +15,7 @@ priceFrom: 170
 currency: "USD"
 priceNote: "Стоимость — $170."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/mauro-lima-tjekvoz4obq-1920.jpg"
+  src: /media/excursions/royal-petropolis-private-tour-full-day/hero-enhanced-20261006.webp
   alt: "На фото: Королевский Петрополис в Бразилии"
 gallery:
   - src: "https://brasiltours.ru/image/petro11.png"

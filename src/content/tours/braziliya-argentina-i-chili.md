@@ -45,7 +45,7 @@ itinerary:
 
     Рио сочетает зеленые холмы, океан, пляжи и современную городскую застройку. На Копакабане легко увидеть обычную жизнь кариокас: футбол на песке, пляжные кафе, прогулки по мозаичной набережной. Уже во время снижения самолета видны зеленые склоны, бухты и плотная городская застройка, а дорога из аэропорта проходит мимо районов с совершенно разным обликом.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/plyazh-urka-v-rio.jpg
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: 'Рио-де-Жанейро: Сахарная Голова и старый центр'
@@ -92,7 +92,7 @@ itinerary:
 
     Экскурсия также включает готический собор, где похоронены принцесса Изабел, Педру II и его супруга, и Королевский музей.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/plyazh-urka-v-rio.jpg
+  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_royal_petropolis_private_tour_full_day
   places: []
@@ -304,7 +304,7 @@ priceFrom: 4743
 currency: USD
 priceNote: $4743
 hero:
-  src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
   alt: Бразилия, Аргентина и Чили
 routeCountries:
 - country_brazil

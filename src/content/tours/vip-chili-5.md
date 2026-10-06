@@ -52,7 +52,7 @@ itinerary:
 
     Остаток дня свободный. После перелета можно отдохнуть или самостоятельно выйти на прогулку по городу.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 2
   title: Сантьяго и долина Майпо
@@ -99,7 +99,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/san-pedro-de-atakama-vinicius-henrique-photography-ztmwunoxxqc-unsplash-sq-opt.jpg
     alt: Сан-Педро-де-Атакама
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 4
   title: Солончак Атакамы и высокогорные лагуны
@@ -163,7 +163,7 @@ itinerary:
   images:
   - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 7
   title: Торрес-дель-Пайне, ледник Грей и Пещера Милодона
@@ -242,7 +242,7 @@ itinerary:
 
     В назначенное время трансфер в аэропорт для международного вылета.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 included:
 - Проживание в указанных отелях или аналогичных отелях уровня 5*, включая завтраки

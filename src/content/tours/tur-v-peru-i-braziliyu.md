@@ -255,7 +255,7 @@ itinerary:
 
     Размещение и отдых.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии и пляжный отдых'
   - src: https://brasiltours.ru/image/lapa%20at%20ni.png
     alt: 'На фото: Лапа, Рио, Бразилия'
@@ -281,7 +281,7 @@ itinerary:
 
     Трансфер в аэропорт без гида и международный перелет.
   images:
-  - src: https://brasiltours.ru/image/Buzios.png
+  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии и пляжный отдых'
 included:
 - Проживание в стандартных номерах в отелях по программе.

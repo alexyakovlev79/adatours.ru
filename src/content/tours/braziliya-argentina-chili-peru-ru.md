@@ -193,7 +193,7 @@ itinerary:
 
     После исторического центра маршрут продолжается в восточной части Сантьяго, где находятся современные здания, офисы, жилые комплексы, торговые центры и рестораны. Эта часть дня показывает современную столицу уже после колониального и административного центра, поэтому Сантьяго раскрывается сразу в нескольких эпохах.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: 'На фото: Вид на город Сантьяго, Чили'
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос-Айрес, Аргентине'

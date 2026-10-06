@@ -216,7 +216,7 @@ itinerary:
 
     Сантьяго заметно отличается от Буэнос-Айреса и Рио. Здесь меньше тропической пышности, зато сильнее ощущаются сухой воздух, яркий солнечный свет и постоянное присутствие гор на горизонте. Старый центр сохраняет строгие здания и площади, а современные районы выглядят значительно спокойнее и просторнее.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Вид на Сантьяго с холма Санта-Лючия
 - day: 9
   title: ', 7 января. Обзорная экскурсия по Сантьяго'
@@ -239,7 +239,7 @@ itinerary:
 
     Стоимость - $230 с человека при группе от 2 человек.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Вид на Сантьяго с холма Санта-Лючия
 - excursionRef: excursion_santiago_maipo_wine_tour
   places: []
@@ -252,7 +252,7 @@ itinerary:
 
     На этом путешествие по Бразилии, Аргентине и Чили завершается.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Вид на Сантьяго с холма Санта-Лючия
 included:
 - Проживание в отелях.

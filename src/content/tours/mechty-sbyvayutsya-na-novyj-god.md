@@ -223,7 +223,7 @@ itinerary:
 
     **Стоимость:** USD 250 с человека, обед включен.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba7.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-9-enhanced-20261006.webp
     alt: Панорама Сити в Буэнос-Айресе, столице Аргентины
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places: []

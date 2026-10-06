@@ -15,7 +15,7 @@ priceFrom: 313
 currency: "USD"
 priceNote: "Стоимость — $313."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_48_38.png"
+  src: /media/excursions/vstrecha-rek/hero-enhanced-20261006.webp
   alt: "Встреча рек!!!"
 gallery:
   - src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_44.png"

@@ -32,7 +32,7 @@ itinerary:
   text: Прибытие в аэропорт Сан-Паулу. Водитель встретит вас с табличкой с логотипом компании и вашими фамилиями. Трансфер
     в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo2.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-1-enhanced-20261006.webp
     alt: Сан-Паулу
 - day: 2
   title: Сан-Паулу
@@ -47,7 +47,7 @@ itinerary:
 
     В завершение - элитные районы, современная архитектура и район, известный граффити.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo3.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-2-enhanced-20261006.webp
     alt: Сан-Паулу
 - day: 3
   title: Сан-Паулу - Игуасу
@@ -71,7 +71,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo4.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: Сан-Паулу
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -100,9 +100,9 @@ itinerary:
   - Пуэрто Игуасу
   text: Завтрак в отеле. Трансфер в аэропорт и перелет в Рио-де-Жанейро. По прилете трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vodopady-iguasu-8.jpg
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
 - day: 6
   title: 'Рио-де-Жанейро: Сахарная Голова и старый город'
@@ -115,7 +115,7 @@ itinerary:
 
     После спуска поездка продолжается по центральным районам старого Рио. Вы увидите старинные церкви, монастыри, главный собор города и здания колониальной архитектуры.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 7
   title: 'Рио-де-Жанейро: Корковадо и статуя Христа'
@@ -132,7 +132,7 @@ itinerary:
 
     Дополнительно можно заказать полет над Рио на вертолете, стоимость указана **от 200 USD на человека**.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -143,9 +143,9 @@ itinerary:
   - Бузиос
   text: Завтрак в отеле. Трансфер в Бузиос. Размещение в отеле на тропическом побережье.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-buzios.jpg
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
     alt: Бузиос
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 9
   title: Бузиос
@@ -158,7 +158,7 @@ itinerary:
 
     После насыщенной экскурсионной части в Сан-Паулу, Игуасу и Рио эти 2 дня оставлены для спокойного отдыха у моря, прогулок и собственного плана.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-buzios.jpg
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
     alt: Бузиос
 - day: 10
   title: Бузиос
@@ -170,7 +170,7 @@ itinerary:
 
     После насыщенной экскурсионной части в Сан-Паулу, Игуасу и Рио эти 2 дня оставлены для спокойного отдыха у моря, прогулок и собственного плана.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-buzios.jpg
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
     alt: Бузиос
 - day: 11
   title: Бузиос - Сан-Паулу
@@ -184,7 +184,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/sao-paolo5.png
     alt: Сан-Паулу
-  - src: https://brasiltours.ru/image/countries/brazil/bra-buzios.jpg
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
     alt: Бузиос
 - day: 12
   title: Сан-Паулу
@@ -192,7 +192,7 @@ itinerary:
   - Сан-Паулу
   text: Завтрак. Трансфер в аэропорт для международного перелета.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo2.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-1-enhanced-20261006.webp
     alt: Сан-Паулу
 included:
 - Проживание в отелях на базе завтраков.

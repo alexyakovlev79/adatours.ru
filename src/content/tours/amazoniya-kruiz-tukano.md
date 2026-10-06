@@ -49,7 +49,7 @@ itinerary:
 
     После обеда поездка на каноэ по реке Аруау. Вечером после ужина запланировано наблюдение за ночной фауной и сенсорная программа, посвященная звукам и жизни Амазонии после наступления темноты.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
+  - src: /media/tours/amazoniya/hero-enhanced-20261006.webp
     alt: 'Амазония: Круиз Тукано'
 - day: 4
   title: Розовые дельфины и культура Туюка
@@ -89,7 +89,7 @@ priceFrom: 6225
 currency: USD
 priceNote: $6225
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
+  src: /media/tours/amazoniya/hero-enhanced-20261006.webp
   alt: 'Амазония: Круиз Тукано'
 routeCountries:
 - country_brazil

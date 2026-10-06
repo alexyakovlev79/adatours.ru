@@ -104,7 +104,7 @@ itinerary:
 
     Оставшаяся часть дня свободна для отдыха или самостоятельного знакомства с городом.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo2.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-1-enhanced-20261006.webp
     alt: Сан-Паулу
   - src: https://brasiltours.ru/image/countries/brazil/rio5.jpg
     alt: Рио-де-Жанейро
@@ -139,7 +139,7 @@ itinerary:
 
     Продолжительность экскурсии около 6 часов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo4.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: Сан-Паулу
 - day: 6
   title: Обзорная экскурсия по Сан-Паулу
@@ -166,7 +166,7 @@ itinerary:
 
     Продолжительность около 4 часов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo2.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-1-enhanced-20261006.webp
     alt: Сан-Паулу
 - day: 7
   title: Сан-Паулу - Салвадор
@@ -189,7 +189,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo4.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: Сан-Паулу
 - day: 8
   title: Салвадор - Прайя-ду-Форте

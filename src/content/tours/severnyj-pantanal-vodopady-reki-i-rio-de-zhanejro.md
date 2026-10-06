@@ -108,7 +108,7 @@ itinerary:
 
     Вторая половина дня свободна. Ее можно провести в городе, встретить закат или выбрать дополнительную экскурсию по фавелам с посещением местного района.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: 'На фото: Статуя Христа Искупителя в Бразилии'
 - day: 8
   title: Рио-де-Жанейро, вылет

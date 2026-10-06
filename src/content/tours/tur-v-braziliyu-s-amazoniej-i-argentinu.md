@@ -77,7 +77,7 @@ itinerary:
 
     Сверху открывается панорама Рио: Копакабана, Ипанема, залив Гуанабара, мост Нитерой и Корковадо со статуей Христа. После прогулки по смотровым площадкам возвращение в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 4
   title: Рио-де-Жанейро - Манаус

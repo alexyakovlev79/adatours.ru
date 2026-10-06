@@ -151,7 +151,7 @@ itinerary:
 
     Нижний и верхний маршруты показывают водопады с разных высот. На нижнем круге вы оказываетесь ближе к основанию каскадов, на верхнем проходите над участками реки перед падением воды. Горло дьявола становится кульминацией дня: еще до площадки слышен сильный гул, а над ущельем постоянно висит водяное облако.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vodopady-iguasu-8.jpg
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото:  Вид на Водопады Игуасу'
 - day: 7
   title: Игуасу - Рио-де-Жанейро - Бузиос
@@ -267,7 +267,7 @@ priceFrom: 4009
 currency: USD
 priceNote: $4009
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/bra-buzios.jpg
+  src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
   alt: 'На фото: Бухта в Бузиосе'
 routeCountries:
 - country_brazil

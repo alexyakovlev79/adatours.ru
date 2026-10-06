@@ -121,7 +121,7 @@ itinerary:
 
     После экскурсии трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vodopady-iguasu-8.jpg
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/rio-de-janeiro-aerial.png
     alt: Рио-де-Жанейро
@@ -172,7 +172,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/stairs%20rio.png
     alt: Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vodopady-iguasu-8.jpg
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
 - day: 7
   title: Рио-де-Жанейро - Долина кофе - Висконди-де-Мауа

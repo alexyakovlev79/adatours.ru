@@ -171,7 +171,7 @@ itinerary:
 
     Амазония здесь не сводится к одной прогулке по реке. Уже сам переезд в лодж показывает масштаб воды и леса. После Рио и Игуасу семья оказывается в месте, где почти вся жизнь связана с рекой, лодками и джунглями.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
+  - src: /media/tours/amazoniya/hero-enhanced-20261006.webp
     alt: Амазония
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
@@ -207,7 +207,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Buzios.png
     alt: Бузиос
-  - src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
+  - src: /media/tours/amazoniya/hero-enhanced-20261006.webp
     alt: Амазония
 - day: 10
   title: Бузиос

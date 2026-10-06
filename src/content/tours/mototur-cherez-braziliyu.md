@@ -203,7 +203,7 @@ priceFrom: 8745
 currency: USD
 priceNote: $8745
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/sao-paolo4.png
+  src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-3-images-1-enhanced-20261006.webp
   alt: 'на фото: Сан Паулу'
 routeCountries:
 - country_brazil

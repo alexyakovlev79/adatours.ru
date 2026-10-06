@@ -15,7 +15,7 @@ priceFrom: 313
 currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_48_36.png"
+  src: /media/excursions/plavanie-s-rozovymi-del-finami/hero-enhanced-20261006.webp
   alt: "Плавание с розовыми дельфинами"
 gallery:
   - src: "https://brasiltours.ru/image/countries/brazil/amazon1.png"

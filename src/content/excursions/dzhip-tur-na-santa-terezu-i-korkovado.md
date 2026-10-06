@@ -16,7 +16,7 @@ priceFrom: 135
 currency: "USD"
 priceNote: "Стоимость — $135."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg"
+  src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
   alt: "Джип тур на Санта-Терезу и Корковадо"
 gallery:
   - src: "https://brasiltours.ru/image/Rio_de_Janeiro_from_Corcovado_mountain.png"

@@ -121,7 +121,7 @@ itinerary:
 
     После экскурсии гид отвезет вас обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vodopady-iguasu-8.jpg
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Вид сверху на водопады Игуасу'
 - day: 6
   title: Аргентинская сторона Игуасу - Буэнос-Айрес

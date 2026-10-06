@@ -74,7 +74,7 @@ priceFrom: 4225
 currency: USD
 priceNote: '$4225 с человека**. Минимальная группа: 4 человека.'
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
+  src: /media/tours/amazoniya/hero-enhanced-20261006.webp
   alt: Приключенческий тур-выживание в Амазонских джунглях
 routeCountries:
 - country_brazil

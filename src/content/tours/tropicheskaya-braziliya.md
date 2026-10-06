@@ -63,7 +63,7 @@ itinerary:
 
     После экскурсии возвращение в отель и отдых.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: 'На фото: город Рио-де-Жанейро в Бразилии, статуя Христа'
 - day: 4
   title: Свободный день и дополнительные экскурсии

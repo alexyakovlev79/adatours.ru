@@ -236,7 +236,7 @@ itinerary:
 
     Живой оркестр сопровождает танцоров, а в программу вечера включен ужин с традиционными блюдами и аргентинским вином.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba7.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: столица Буэнос-Айрес, Аргентина'
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -291,7 +291,7 @@ itinerary:
 
     В назначенное время трансфер в аэропорт для международного перелета.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/buenos-ajres/ba7.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: столица Буэнос-Айрес, Аргентина'
 included:
 - Проживание в отелях

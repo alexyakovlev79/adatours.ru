@@ -285,7 +285,7 @@ itinerary:
 
     В городе много ресторанов и баров, где можно попробовать кайпиринью и свежевыжатые соки.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-buzios.jpg
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии'
 - day: 13
   title: Бузиос - Рио-де-Жанейро

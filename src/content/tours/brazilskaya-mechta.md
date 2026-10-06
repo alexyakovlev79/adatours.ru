@@ -58,7 +58,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: 'На фото: статуя Христа-Искупителя в Рио'
 - day: 3
   title: Сахарная голова и старый Рио

@@ -99,7 +99,7 @@ priceFrom: 1571
 currency: USD
 priceNote: $1571
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
+  src: /media/tours/amazoniya/hero-enhanced-20261006.webp
   alt: Амазония
 routeCountries:
 - country_brazil

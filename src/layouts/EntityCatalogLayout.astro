@@ -8,6 +8,7 @@ import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../components/catalog/CatalogPagination.astro';
 import { countryRoute, destinationPath, excursionPath, mainTourCountries, tourPath, type BreadcrumbItem } from '../lib/routes';
 import { withBase } from '../lib/paths';
+import { vipTourPriceLabel } from '../lib/vip-tours.mjs';
 import type { CatalogPagination as PaginationData } from '../lib/catalog-pagination';
 
 interface Props {
@@ -23,11 +24,11 @@ interface Props {
   pagination: PaginationData;
   catalogVersion: string;
   countryContextId?: string;
-  variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours';
+  variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours';
 }
 
 const { leadTitle, leadEntityId, kind, entries, title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId } = Astro.props;
-const eyebrow = kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : 'Направления';
+const eyebrow = variant === 'vip-tours' ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : 'Направления';
 const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
 const multiCountryPageCountries = variant === 'multi-country-tours'
   ? [...new Map(entries.flatMap((entry) => mainTourCountries((entry as CollectionEntry<'tours'>).data)).map((country) => [country.id, country])).values()]
@@ -66,7 +67,20 @@ const pageBreadcrumbs: BreadcrumbItem[] = p.currentPage > 1
 const cards = entries.map((entry) => {
   if (kind === 'tour') {
     const d = (entry as CollectionEntry<'tours'>).data;
-    return { data: d, title: d.title, text: variant === 'multi-country-tours' ? undefined : d.lead, href: tourPath(d), meta: [variant === 'multi-country-tours' ? mainTourCountries(d).map((country) => country.name).join(' + ') : '', d.durationDays ? countLabel(d.durationDays, ['день', 'дня', 'дней']) : '', d.format, countryContextId && countryMembership(d, countryContextId) < 1 ? 'Дополнительное посещение страны' : ''].filter(Boolean).join(' · ') };
+    const curatedTour = variant === 'multi-country-tours' || variant === 'vip-tours';
+    return {
+      data: d,
+      title: d.title,
+      text: curatedTour ? undefined : d.lead,
+      href: tourPath(d),
+      meta: [
+        curatedTour ? mainTourCountries(d).map((country) => country.name).join(' + ') : '',
+        d.durationDays ? countLabel(d.durationDays, ['день', 'дня', 'дней']) : '',
+        variant === 'vip-tours' ? vipTourPriceLabel(d) : '',
+        d.format,
+        countryContextId && countryMembership(d, countryContextId) < 1 ? 'Дополнительное посещение страны' : '',
+      ].filter(Boolean).join(' · '),
+    };
   }
   if (kind === 'excursion') {
     const d = (entry as CollectionEntry<'excursions'>).data;

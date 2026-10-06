@@ -18,6 +18,7 @@ import { excursionDestinationIds } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsForTour } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { compareToursBySalesFit } from '../lib/tour-ranking';
+import { selectVipTours } from '../lib/vip-tours.mjs';
 import { tourHasMainCountry, tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-relations';
 import { paginateCatalog, type CatalogPagination } from '../lib/catalog-pagination';
 
@@ -30,7 +31,8 @@ type CatalogInput = {
   mode: 'catalog'; kind: 'tour' | 'excursion' | 'destination';
   entries: Array<CollectionEntry<'tours'> | CollectionEntry<'excursions'> | CollectionEntry<'destinations'>>;
   canonical: string; title: string; description: string; breadcrumbs: BreadcrumbItem[]; hero?: string;
-  variant?: 'global-tours' | 'global-places' | 'global-excursions';
+  leadTitle?: string; leadEntityId?: string;
+  variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours';
 };
 type CatalogProps = CatalogInput & { pagination: CatalogPagination; catalogVersion: string };
 type RedirectProps = { mode: 'redirect'; to: string; title: string };
@@ -48,6 +50,7 @@ export async function getStaticPaths() {
   const excursionTourCounts = buildExcursionTourCounts(tours);
   const destinationTourCounts = buildDestinationTourCounts(tours);
   const globalTours = [...tours].sort(compareToursBySalesFit);
+  const vipTours = selectVipTours(tours).entries;
   destinations.sort(compareDestinationsByPopularity(destinationTourCounts));
   tours.sort(compareToursBySalesFit);
   excursions.sort(compareExcursionsByPopularity(excursionTourCounts));
@@ -207,6 +210,32 @@ export async function getStaticPaths() {
     add(`/multi-country/tour/page/${page.pagination.currentPage}/`, {
       mode: 'redirect', to: page.pagination.canonical, title: `Multi-country туры — страница ${page.pagination.currentPage}`,
     });
+  }
+  const vipPages = paginateCatalog(vipTours, '/vip/');
+  if (vipPages.length > 1) {
+    const vipCatalogVersion = createHash('sha256')
+      .update(JSON.stringify(vipTours.map((entry) => entry.data.id)))
+      .digest('hex')
+      .slice(0, 20);
+    const vipHero = vipTours.find((entry) => entry.data.hero?.src)?.data.hero?.src
+      ?? '/media/home/rio-night-enhanced-20260930.webp';
+    for (const page of vipPages.slice(1)) {
+      addRaw(page.pagination.canonical, {
+        mode: 'catalog',
+        kind: 'tour',
+        entries: page.entries,
+        canonical: page.pagination.canonical,
+        pagination: page.pagination,
+        catalogVersion: vipCatalogVersion,
+        title: 'VIP и Luxury туры по Латинской Америке',
+        description: 'Готовые VIP и Luxury маршруты Ada Tours по Бразилии и Латинской Америке с частным форматом и персональной адаптацией программы.',
+        breadcrumbs: [{ label: 'VIP / Luxury', href: '/vip/' }],
+        hero: vipHero,
+        variant: 'vip-tours',
+        leadTitle: 'Собрать индивидуальный VIP-маршрут',
+        leadEntityId: 'vip',
+      });
+    }
   }
   for (const { country, entries } of excursionCountries.values()) {
     entries.sort(compareExcursionsByPopularity(excursionTourCounts));

@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "node --test tests/catalog-pagination.test.mjs tests/interest-model.test.mjs tests/interest-copy.test.mjs tests/structured-data.test.mjs tests/structured-data-html.test.mjs && astro build && node scripts/check-catalog-pagination.mjs && node scripts/check-interest-model.mjs && node scripts/check-interest-presentation.mjs && node scripts/check-schema.mjs && pagefind --site dist",
+    "build": "node --test tests/catalog-pagination.test.mjs tests/vip-tours.test.mjs tests/interest-model.test.mjs tests/interest-copy.test.mjs tests/structured-data.test.mjs tests/structured-data-html.test.mjs && astro build && node scripts/check-catalog-pagination.mjs && node scripts/check-interest-model.mjs && node scripts/check-interest-presentation.mjs && node scripts/check-schema.mjs && pagefind --site dist",
     "preview": "astro preview",
     "reserve:destination": "node scripts/reserve-destination.mjs",
     "test:destination-reservations": "node --test tests/destination-reservations.test.mjs",
     "test:catalog-pagination": "node --test tests/catalog-pagination.test.mjs",
     "test:schema": "node --test tests/structured-data.test.mjs tests/structured-data-html.test.mjs",
-    "check:schema": "node scripts/check-schema.mjs"
+    "check:schema": "node scripts/check-schema.mjs",
+    "test:vip": "node --test tests/vip-tours.test.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

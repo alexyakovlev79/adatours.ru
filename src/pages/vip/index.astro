@@ -1,39 +1,145 @@
 ---
+import { createHash } from 'node:crypto';
+import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../../lib/archive.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
+import CatalogPagination from '../../components/catalog/CatalogPagination.astro';
+import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
+import { countLabel } from '../../lib/interest-model.mjs';
+import { paginateCatalog } from '../../lib/catalog-pagination';
+import { mainTourCountries, tourPath } from '../../lib/routes';
+import { withBase } from '../../lib/paths';
+import { selectVipTours, vipTourPriceLabel } from '../../lib/vip-tours.mjs';
+
+const allTours = await getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data));
+const vipSelection = selectVipTours(allTours);
+const vipTours = vipSelection.entries;
+if (!vipTours.length) throw new Error('VIP page requires at least one qualifying active tour');
+
+const catalogPages = paginateCatalog(vipTours, '/vip/');
+const firstCatalogPage = catalogPages[0];
+const visibleTours = firstCatalogPage.entries;
+const pagination = firstCatalogPage.pagination;
+const catalogVersion = createHash('sha256')
+  .update(JSON.stringify(vipTours.map((entry) => entry.data.id)))
+  .digest('hex')
+  .slice(0, 20);
+
+const heroTour = vipTours.find((entry) => entry.data.hero?.src);
+const hero = heroTour?.data.hero?.src ?? '/media/home/rio-night-enhanced-20260930.webp';
+const countryIds = new Set(vipTours.flatMap((entry) => mainTourCountries(entry.data).map((country) => country.id)));
+const durations = vipTours.map((entry) => entry.data.durationDays)
+  .filter((value): value is number => typeof value === 'number' && Number.isFinite(value));
+const minDuration = durations.length ? Math.min(...durations) : undefined;
+const maxDuration = durations.length ? Math.max(...durations) : undefined;
+const durationValue = minDuration && maxDuration
+  ? minDuration === maxDuration ? countLabel(minDuration, ['день', 'дня', 'дней']) : `${minDuration}–${maxDuration} дней`
+  : 'Гибко';
+
+const absoluteUrl = (path: string) => new URL(withBase(path), Astro.site ?? 'https://adatours.ru/').toString();
+const listSchema = {
+  '@type': 'ItemList',
+  '@id': `${absoluteUrl('/vip/')}#catalog`,
+  name: 'VIP и Luxury туры по Латинской Америке',
+  numberOfItems: visibleTours.length,
+  itemListElement: visibleTours.map((entry, index) => ({
+    '@type': 'ListItem', position: index + 1, name: entry.data.title, url: absoluteUrl(tourPath(entry.data)),
+  })),
+};
 ---
 
-<BaseLayout leadTitle="Собрать индивидуальный VIP-маршрут" leadEntityId="vip"
-  title="VIP и Luxury путешествия по Бразилии и Латинской Америке"
-  description="Индивидуальные VIP и luxury маршруты по Бразилии и Латинской Америке с персональной сборкой программы."
+<BaseLayout
+  leadTitle="Собрать индивидуальный VIP-маршрут"
+  leadEntityId="vip"
+  title="VIP и Luxury туры по Бразилии и Латинской Америке"
+  description="VIP и Luxury путешествия Ada Tours по Бразилии и Латинской Америке: готовые премиальные маршруты, частный формат и персональная адаптация программы."
+  canonical="/vip/"
+  image={hero}
+  breadcrumbs={[{ label: 'VIP / Luxury', href: '/vip/' }]}
+  pageSchema={listSchema}
 >
   <Hero
     eyebrow="VIP / Luxury"
     title="Путешествие, устроенное вокруг вас"
-    intro="Персональный маршрут, приватные трансферы, тщательно подобранное размещение и свободный график. Детали берет на себя Ada Tours."
-    image="/media/home/rio-night-enhanced-20260930.webp"
+    intro="Готовый маршрут можно взять за основу и перестроить под ваши даты, темп, отели и личные предпочтения. Частные трансферы, гиды и логистику связываем в одну программу."
+    image={hero}
+    ctaHref="#request"
     ctaLabel="Собрать VIP-маршрут"
   />
 
   <EditorialStatement
     eyebrow="Private travel"
-    text="Приватность, свободное время и возможность менять планы по ходу поездки."
+    text="Приватность, свободное время и возможность менять планы по ходу поездки так же важны, как выбранные города, отели и впечатления."
   />
+
+  <FactStrip
+    wideFirst
+    facts={[
+      { value: String(vipTours.length), label: 'готовых VIP и Luxury маршрутов' },
+      { value: String(countryIds.size), label: 'стран в текущей VIP-подборке' },
+      { value: durationValue, label: 'длительность готовых программ' },
+      { value: 'Под вас', label: 'можно менять даты, отели и состав поездки' },
+    ]}
+  />
+
+  <section class="vip-tours section" aria-labelledby="vip-tours-title">
+    <div class="container vip-tours__head">
+      <p class="eyebrow">Выбрать путешествие</p>
+      <h2 id="vip-tours-title">VIP-туры Ada Tours</h2>
+      <p>Здесь собраны готовые маршруты премиального сегмента. Сравните географию, длительность и бюджет, а затем адаптируйте выбранную программу под себя.</p>
+    </div>
+
+    <div
+      data-catalog-root
+      data-catalog-key={pagination.rootPath}
+      data-catalog-version={catalogVersion}
+      data-catalog-page={pagination.currentPage}
+      data-catalog-from={pagination.from}
+      data-catalog-to={pagination.to}
+      data-catalog-total={pagination.totalItems}
+    >
+      <div id="catalog-items" data-catalog-items>
+        {visibleTours.map((entry, index) => {
+          const data = entry.data;
+          const countries = mainTourCountries(data).map((country) => country.name).join(' + ');
+          const meta = [
+            countries,
+            data.durationDays ? countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',
+            vipTourPriceLabel(data),
+            data.format,
+          ].filter(Boolean).join(' · ');
+          return (
+            <div data-catalog-item={data.id}>
+              <DestinationBand
+                headingTag="h3"
+                eyebrow={meta}
+                title={data.title}
+                image={data.hero?.src}
+                imageTextAlign={data.imageTextAlign}
+                mediaStatus={data.hero?.status}
+                replacementReason={data.hero?.replacementReason}
+                href={tourPath(data)}
+                align={index % 2 === 1 ? 'right' : 'left'}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <CatalogPagination pagination={pagination} />
+    </div>
+  </section>
 
   <EditorialProof
     eyebrow="Бразилия"
     title="Бразилия в частном формате"
     text="Рио, Игуасу и побережье соединяем с частными трансферами, хорошими гидами, подходящими отелями и временем для себя."
     image="/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp"
-    facts={[
-      'Индивидуальная логистика',
-      'Частные гиды и трансферы',
-      'Подбор размещения под маршрут',
-      'Дополнительные активности под запрос',
-    ]}
+    facts={['Индивидуальная логистика','Частные гиды и трансферы','Подбор размещения под маршрут','Дополнительные активности под запрос']}
   />
 
   <EditorialProof
@@ -48,12 +154,24 @@ import ProcessSteps from '../../components/proof/ProcessSteps.astro';
     eyebrow="Как собирается VIP-маршрут"
     title="Собираем поездку вокруг ваших привычек"
     steps={[
-      { title: 'Пожелания', text: 'Интересы, привычки, приватность и обязательные условия.' },
-      { title: 'Маршрут', text: 'Выбираем места, которым действительно стоит отдать время.' },
-      { title: 'Детали', text: 'Размещение, транспорт, гиды, рестораны и активности.' },
-      { title: 'Свобода', text: 'Оставляем в программе место для отдыха и изменений.' },
+      { title: 'Пожелания', text: 'Фиксируем интересы, привычный темп, уровень приватности и обязательные условия.' },
+      { title: 'Маршрут', text: 'Выбираем места и впечатления, которым действительно стоит отдать время.' },
+      { title: 'Детали', text: 'Связываем размещение, транспорт, гидов, рестораны и дополнительные активности.' },
+      { title: 'Свобода', text: 'Оставляем в программе время для отдыха и возможность менять планы по ходу поездки.' },
     ]}
     dark
   />
-
 </BaseLayout>
+
+<script>
+  import '../../scripts/catalog-load-more';
+</script>
+
+<style>
+  .vip-tours { padding-bottom: 0; }
+  .vip-tours__head { padding-bottom: clamp(44px, 7vw, 84px); }
+  .vip-tours__head h2 { max-width: 980px; margin: 12px 0 22px; }
+  .vip-tours__head > p:last-child {
+    max-width: 780px; margin: 0; color: color-mix(in srgb, var(--color-ink) 72%, transparent); font-size: var(--text-lg);
+  }
+</style>

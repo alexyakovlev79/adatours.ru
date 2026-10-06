@@ -107,7 +107,7 @@ priceFrom: 1298
 currency: USD
 priceNote: $1298
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/bra-amazonia-3.jpg
+  src: /media/tours/manaus-4-dnya-3-nochi/hero-enhanced-20261006.webp
   alt: 'Манаус: 4 дня / 3 ночи'
 routeCountries:
 - country_brazil

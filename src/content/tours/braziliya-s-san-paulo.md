@@ -37,7 +37,7 @@ itinerary:
 
     Сан-Паулу сразу дает совершенно другое впечатление, чем курортная Бразилия. Это плотный, огромный мегаполис, где деловые районы, исторические площади, иммигрантские кварталы и современная архитектура собраны в одном городе.
   images:
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: 'На фото: Мост Октавио Фриас де Оливейра в Сан-Паулу'
 - day: 2
   title: Сан-Паулу
@@ -76,7 +76,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: 'На фото: Река Амазонка'
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: 'На фото: Мост Октавио Фриас де Оливейра в Сан-Паулу'
 - day: 4
   title: Амазония
@@ -245,7 +245,7 @@ itinerary:
   - Сан-Паулу
   text: После завтрака трансфер в аэропорт к международному рейсу.
   images:
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: 'На фото: Мост Октавио Фриас де Оливейра в Сан-Паулу'
 included:
 - Проживание в отелях на базе завтраков.

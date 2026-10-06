@@ -36,7 +36,7 @@ itinerary:
   text: Прибытие в Сан-Паулу. В аэропорту встреча с русскоговорящим гидом и трансфер в гостиницу. После размещения свободное
     время и отдых перед началом мото-маршрута.
   images:
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: 'на фото: Сан Паулу'
 - day: 2
   title: Сан-Паулу и получение мотоциклов
@@ -49,7 +49,7 @@ itinerary:
 
     После этого маршрут проходит через Либердаде, крупнейший японский район за пределами Японии. Его название переводится с португальского как «свобода». Здесь живет много семей японского, китайского и корейского происхождения, работают азиатские рестораны и магазины, а улицы заметно отличаются от остального центра. Затем вы увидите современный Сан-Паулу: Авеню Паулиста, престижные кварталы и район граффити. В один день программа соединяет исторический центр, рынок, азиатский квартал и современную часть крупнейшего города страны.
   images:
-  - src: https://brasiltours.ru/image/san%20paolo.png
+  - src: /media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-enhanced-20261006.webp
     alt: 'на фото: Сан Паулу'
 - day: 3
   title: Сан-Паулу - Парати
@@ -63,7 +63,7 @@ itinerary:
 
     **Примерное расстояние:** 350 км.
   images:
-  - src: https://brasiltours.ru/image/paraty2.png
+  - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-enhanced-20261006.webp
     alt: на фото:Парати
   - src: https://brasiltours.ru/image/sao-paulo-brazil_1800x1000.png
     alt: 'на фото: Сан Паулу'
@@ -76,7 +76,7 @@ itinerary:
 
     Вечером экскурсия по историческому центру. Парати сохранил заметный ансамбль португальской колониальной архитектуры XVIII века. В конце 1700-х годов через город перевозили золото из Минас-Жерайс для дальнейшей отправки в Португалию. Позже основной путь переместился через Рио, благодаря чему старый Парати сохранил значительную часть прежней застройки.
   images:
-  - src: https://brasiltours.ru/image/paraty2.png
+  - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-enhanced-20261006.webp
     alt: на фото:Парати
 - day: 5
   title: Парати - Рио-де-Жанейро
@@ -90,7 +90,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: Рио де Жанейро'
-  - src: https://brasiltours.ru/image/paraty2.png
+  - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-enhanced-20261006.webp
     alt: на фото:Парати
 - day: 6
   title: Рио-де-Жанейро
@@ -161,7 +161,7 @@ itinerary:
 
     **Примерное расстояние:** 360 км.
   images:
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: 'на фото: Сан Паулу'
 - day: 12
   title: Сан-Паулу
@@ -172,7 +172,7 @@ itinerary:
 
     Дополнительные сутки проживания при необходимости оплачиваются отдельно.
   images:
-  - src: https://brasiltours.ru/image/san%20paolo.png
+  - src: /media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-enhanced-20261006.webp
     alt: 'на фото: Сан Паулу'
 included:
 - Проживание в отелях категории 3-4* по маршруту, размещение с 2 раздельными кроватями, завтраки.

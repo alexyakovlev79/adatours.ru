@@ -275,7 +275,7 @@ priceFrom: 26780
 currency: USD
 priceNote: $26780
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/markus-kammermann-7y3-tvfi0k-unsplash.jpg
+  src: /media/tours/ekzoticheskij-karnaval-v-brazilii/hero-enhanced-20261006.webp
   alt: Грандиозный Парад чемпионов на карнавале в Рио, лучшие школы самбы на Самбадроме
 routeCountries:
 - country_brazil

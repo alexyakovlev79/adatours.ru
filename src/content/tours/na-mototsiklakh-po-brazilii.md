@@ -41,7 +41,7 @@ itinerary:
 
     После этого можно увидеть современный Сан-Паулу: Авеню Паулиста, парк Ибирапуэра, водные каналы и озера парка, спортивные площадки и велосипедные дорожки. Здесь же находятся Обелиск в память о героях революции 1932 года и монумент «Бандейрас», посвященный экспедициям за золотом и драгоценными камнями. В завершение предусмотрены современные кварталы и район граффити. Экскурсия показывает город от старого железнодорожного и торгового центра до делового проспекта и больших зеленых зон. Либердаде в этой программе выделен отдельно как крупнейший японский квартал за пределами Японии.
   images:
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: 'На фото: город Сан-Пауло в Бразилии'
 - excursionRef: excursion_sao_paulo_city_tour_six_hours
   places: []
@@ -131,7 +131,7 @@ itinerary:
 
     Во время остановок желающие смогут поплавать. Морская прогулка занимает основную часть дня и показывает Парати уже с воды: береговая линия, острова и зеленые склоны становятся главным фоном после вечерней прогулки по колониальному центру накануне.
   images:
-  - src: https://brasiltours.ru/image/paraty2.png
+  - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: город Парати в Бразилии'
 - day: 9
   title: Парати - Сан-Паулу
@@ -147,7 +147,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: 'На фото: город Парати в Бразилии'
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: 'На фото: город Сан-Пауло в Бразилии'
 - day: 10
   title: Сан-Паулу

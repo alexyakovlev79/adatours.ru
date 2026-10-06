@@ -54,7 +54,7 @@ itinerary:
 
     Он включает встречу у борта, приоритетный досмотр, помощь с регистрацией и багажом, электрическую тележку и услуги носильщика.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/copacabana-palace/7.jpg
+  - src: /media/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu-s-alagoas/itinerary-day-1-enhanced-20261006.webp
     alt: Лучшие отели Бразилии, люксовый Belmond Copacabana Palace в Рио-де-Жанейро
 - day: 2
   title: Корковадо, исторический центр и Карнавальный бал
@@ -91,7 +91,7 @@ itinerary:
 
     Программа сочетает музыку, танцы, высокую кухню и сервис отеля.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/copacabana-palace/lblozhka-so-cnnetq.jpg
+  - src: /media/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu-s-alagoas/itinerary-day-2-enhanced-20261006.webp
     alt: Статуя Христа в Рио и панорама залива Гуанабара, вид с горы Корковаду на город и океан
 - day: 3
   title: Свободное утро, вертолет над Рио и Самбадром
@@ -120,7 +120,7 @@ itinerary:
 
     Время возвращения в отель можно выбрать самостоятельно, не обязательно оставаться до завершения всей ночной программы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/markus-kammermann-7y3-tvfi0k-unsplash.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/hero-enhanced-20261006.webp
     alt: Грандиозный Парад чемпионов на карнавале в Рио, лучшие школы самбы на Самбадроме
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -217,7 +217,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Глотка Дьявола и панорама водопадов Игуасу, каскады и туман над рекой в Южной Америке
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/ugur-arpaci-u18v0toiofu-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-1-enhanced-20261006.webp
     alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио, яркие перья и улыбка
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -248,7 +248,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-3.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-6-enhanced-20261006.webp
     alt: Эпические виды на водопады Игуасу  - мощь воды и брызги на границе Аргентины и Бразилии
 - day: 8
   title: Игуасу - Масейо, Алагоас
@@ -299,7 +299,7 @@ itinerary:
 
     Размещение продолжается в Kenoa Exclusive Beach Spa & Resort.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-3.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-6-enhanced-20261006.webp
     alt: Эпические виды на водопады Игуасу  - мощь воды и брызги на границе Аргентины и Бразилии
 - day: 10
   title: Алагоас
@@ -332,7 +332,7 @@ itinerary:
 
     На этом программа заканчивается.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/ugur-arpaci-u18v0toiofu-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-1-enhanced-20261006.webp
     alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио, яркие перья и улыбка
 included:
 - Проживание в отелях на базе завтраков.
@@ -372,7 +372,7 @@ priceFrom: 30350
 currency: USD
 priceNote: $30350
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/ugur-arpaci-u18v0toiofu-unsplash.jpg
+  src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-1-enhanced-20261006.webp
   alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио, яркие перья и улыбка
 routeCountries:
 - country_brazil

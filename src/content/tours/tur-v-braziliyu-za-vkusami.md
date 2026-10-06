@@ -150,7 +150,7 @@ itinerary:
   - Парати
   text: После завтрака трансфер из Парати в аэропорт Рио-де-Жанейро для международного перелета.
   images:
-  - src: https://brasiltours.ru/image/paraty2.png
+  - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: город Парати. Бразилия'
   - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи в Рио-де-Жанейро, Бразилия'

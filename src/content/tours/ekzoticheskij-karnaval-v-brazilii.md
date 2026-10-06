@@ -330,7 +330,7 @@ priceFrom: 4806
 currency: USD
 priceNote: $4806
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/markus-kammermann-7y3-tvfi0k-unsplash.jpg
+  src: /media/tours/ekzoticheskij-karnaval-v-brazilii/hero-enhanced-20261006.webp
   alt: Шествие школ самбы на карнавале в Рио, яркие костюмы и барабаны на Самбадроме
 routeCountries:
 - country_brazil

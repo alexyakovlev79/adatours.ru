@@ -20,7 +20,7 @@ hero:
 gallery:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
     alt: ""
-  - src: "https://brasiltours.ru/image/san%20paolo.png"
+  - src: /media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-enhanced-20261006.webp
     alt: ""
   - src: "https://brasiltours.ru/image/catalog/product/s/a/saopaulo_3.jpg"
     alt: ""

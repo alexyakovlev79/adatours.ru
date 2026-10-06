@@ -123,7 +123,7 @@ itinerary:
 
     Бразильская сторона дает возможность увидеть водопады почти целиком. Благодаря этому на следующий день, когда маршрут пройдет уже по аргентинским настилам, вы будете лучше понимать размеры ущелья и расположение отдельных каскадов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-3.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-6-enhanced-20261006.webp
     alt: Панорама каскадов Игуасу на границе Бразилии и Аргентины, водопады и Глотка Дьявола
 - day: 7
   title: Аргентинская сторона водопадов Игуасу

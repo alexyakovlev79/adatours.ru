@@ -42,7 +42,7 @@ itinerary:
 
     Вторая половина дня свободна. Можно отдохнуть после перелета или выйти к океану, пройти по набережной и спокойно привыкнуть к городу перед насыщенной программой следующих дней.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/ugur-arpaci-u18v0toiofu-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-1-enhanced-20261006.webp
     alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио
 - day: 2
   title: Рио - Сахарная голова и Старый город
@@ -107,7 +107,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Граница Аргентины и Бразилии у водопадов Игуасу, каскады и облако брызг над рекой
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/ugur-arpaci-u18v0toiofu-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-1-enhanced-20261006.webp
     alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио
 - day: 6
   title: Бразильская сторона Игуасу

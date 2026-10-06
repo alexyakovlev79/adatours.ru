@@ -18,7 +18,7 @@ destination: destination_brazil_sao_paulo
 destinationName: Сан-Паулу
 sourceSnapshot: https://drive.google.com/file/d/1wdoT4bUsTp4hUeirLM67k8049wKzZKCN/view?usp=drivesdk
 hero:
-  src: https://brasiltours.ru/image/So%20Paulo.png
+  src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
   alt: 'На фото: город Сан-Пауло в Бразилии'
 themes: ["theme_culture"]
 ---

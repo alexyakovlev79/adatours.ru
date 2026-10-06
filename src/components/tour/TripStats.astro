@@ -139,6 +139,11 @@ const { stats, variant = 'default' } = Astro.props;
       grid-template-columns: repeat(2, minmax(0,1fr));
     }
 
+    .stats__inner[data-count="3"],
+    .stats__inner[data-count="4"] {
+      grid-auto-rows: 1fr;
+    }
+
     .stats__inner::before,
     .stats__inner::after {
       content: '';
@@ -169,6 +174,13 @@ const { stats, variant = 'default' } = Astro.props;
       min-height: 130px;
       padding: 26px 18px;
       border: 0;
+    }
+
+    .stats__inner[data-count="3"] .stat strong,
+    .stats__inner[data-count="4"] .stat strong {
+      display: flex;
+      min-height: 1.9em;
+      align-items: flex-end;
     }
 
     .stats__inner[data-count="1"] {

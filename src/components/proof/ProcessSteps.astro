@@ -95,6 +95,14 @@ const { eyebrow, title, steps, dark = false } = Astro.props;
     }
   }
 
+  @media (min-width: 561px) and (max-width: 900px) {
+    .step h3 {
+      display: flex;
+      min-height: 2.16em;
+      align-items: flex-end;
+    }
+  }
+
   @media (max-width: 560px) {
     .process__steps {
       grid-template-columns: 1fr;

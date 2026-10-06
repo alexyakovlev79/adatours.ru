@@ -116,6 +116,11 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
       grid-template-columns: repeat(2, minmax(0,1fr));
     }
 
+    .fact-strip__inner[data-count="3"],
+    .fact-strip__inner[data-count="4"] {
+      grid-auto-rows: 1fr;
+    }
+
     .fact-strip__inner::before,
     .fact-strip__inner::after {
       content: '';
@@ -151,6 +156,13 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
       min-height: 132px;
       padding: 26px 16px;
       border: 0;
+    }
+
+    .fact-strip__inner[data-count="3"] .fact strong,
+    .fact-strip__inner[data-count="4"] .fact strong {
+      display: flex;
+      min-height: 1.9em;
+      align-items: flex-end;
     }
   }
 </style>

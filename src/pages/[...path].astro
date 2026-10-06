@@ -217,9 +217,16 @@ export async function getStaticPaths() {
       .update(JSON.stringify(vipTours.map((entry) => entry.data.id)))
       .digest('hex')
       .slice(0, 20);
-    const vipHero = vipTours.find((entry) => entry.data.hero?.src)?.data.hero?.src
-      ?? '/media/home/rio-night-enhanced-20260930.webp';
     for (const page of vipPages.slice(1)) {
+      const pageImages = new Set(page.entries.map((entry) => entry.data.hero?.src).filter(Boolean));
+      const afterPage = vipTours.slice(page.pagination.to);
+      const beforePage = vipTours.slice(0, page.pagination.offset);
+      const coverTour = [...afterPage, ...beforePage].find((entry) =>
+        Boolean(entry.data.hero?.src) && !pageImages.has(entry.data.hero?.src)
+      );
+      if (!coverTour?.data.hero?.src) {
+        throw new Error(`No off-page hero available for VIP page ${page.pagination.currentPage}`);
+      }
       addRaw(page.pagination.canonical, {
         mode: 'catalog',
         kind: 'tour',
@@ -230,7 +237,7 @@ export async function getStaticPaths() {
         title: 'VIP и Luxury туры по Латинской Америке',
         description: 'Готовые VIP и Luxury маршруты Ada Tours по Бразилии и Латинской Америке с частным форматом и персональной адаптацией программы.',
         breadcrumbs: [{ label: 'VIP / Luxury', href: '/vip/' }],
-        hero: vipHero,
+        hero: coverTour.data.hero.src,
         variant: 'vip-tours',
         leadTitle: 'Собрать индивидуальный VIP-маршрут',
         leadEntityId: 'vip',

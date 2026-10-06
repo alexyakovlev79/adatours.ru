@@ -30,8 +30,14 @@ const catalogVersion = createHash('sha256')
   .digest('hex')
   .slice(0, 20);
 
-const heroTour = vipTours.find((entry) => entry.data.hero?.src);
-const hero = heroTour?.data.hero?.src ?? '/media/home/rio-night-enhanced-20260930.webp';
+const pageImages = new Set(visibleTours.map((entry) => entry.data.hero?.src).filter(Boolean));
+const heroTour = vipTours.slice(pagination.to).find((entry) =>
+  Boolean(entry.data.hero?.src) && !pageImages.has(entry.data.hero?.src)
+);
+if (!heroTour?.data.hero?.src) {
+  throw new Error('No off-page hero available for VIP page 1');
+}
+const hero = heroTour.data.hero.src;
 const countryIds = new Set(vipTours.flatMap((entry) => mainTourCountries(entry.data).map((country) => country.id)));
 const durations = vipTours.map((entry) => entry.data.durationDays)
   .filter((value): value is number => typeof value === 'number' && Number.isFinite(value));

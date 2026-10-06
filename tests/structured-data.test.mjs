@@ -11,10 +11,12 @@ const organization = {
 };
 const record = (kind, id, path, data = {}, archived = false) => ({ kind, path, archived, data: { id, status: 'published', slug: id, name: id, ...data } });
 const brazil = record('country', 'br', '/brazil/', { name: 'Бразилия' });
+const argentina = record('country', 'ar', '/argentina/', { name: 'Аргентина' });
 const adventure = record('theme', 'adventure', '/interests/adventure/', { name: 'Приключения' });
 const rio = record('destination', 'rio', '/brazil/place/rio/', { name: 'Рио', countryId: 'br', destinationType: 'city', themes: ['adventure'] });
 const tour = record('tour', 'trip', '/brazil/tour/trip/', { name: undefined, title: 'Рио за 3 дня', lead: 'Поездка в Рио.', durationDays: 3, durationNights: 2, countries: ['br'], destinations: ['rio', 'reserved'], primaryThemes: ['adventure'], audiences: ['Частные путешественники'], route: ['Рио', 'Будущее место'], priceFrom: 1200.6, currency: 'USD', itinerary: [{ day: 1, title: 'Прибытие', text: 'Встреча в аэропорту' }, { title: 'Дополнительная экскурсия', text: 'Не отдельный день' }] });
-const all = [brazil, adventure, rio, tour];
+const multiTour = record('tour', 'multi', '/multi-country/tour/multi/', { name: undefined, title: 'Бразилия и Аргентина', lead: 'Маршрут по двум странам.', durationDays: 10, countries: ['br', 'ar'], routeCountries: ['br', 'ar'], destinations: ['rio'], primaryThemes: ['adventure'] });
+const all = [brazil, argentina, adventure, rio, tour, multiTour];
 function build(path = tour.path, options = {}) {
   return buildStructuredData({ root, organization, records: all, page: { path, url: absoluteUrl(path, root), title: 'Страница', description: 'Описание', lang: 'ru' }, ...options });
 }
@@ -67,6 +69,22 @@ test('page-two catalog describes only visible cards with global positions', () =
   assert.equal(list.numberOfItems, 2);
   assert.deepEqual(list.itemListElement.map((n) => n.position), [11, 12]);
   assert.equal(nodes(graph, 'CollectionPage')[0].mainEntity['@id'], list['@id']);
+});
+test('multi-country root and pagination share a Service, dynamic coverage and page-local ItemList', () => {
+  for (const path of ['/multi-country/', '/multi-country/page/2/']) {
+    const graph = build(path, { document: { catalog: true, groups: [{ catalog: true, offset: path.includes('/page/2/') ? 10 : 0, links: [{ href: multiTour.path }] }] } });
+    const page = nodes(graph, 'CollectionPage')[0];
+    const service = graph['@graph'].find((node) => node['@id'] === `${root}multi-country/#service`);
+    const list = graph['@graph'].find((node) => node['@id'] === `${absoluteUrl(path, root)}#catalog`);
+    assert.ok(service && hasType(service, 'Service'));
+    assert.equal(service.url, `${root}multi-country/`);
+    assert.equal(page.about['@id'], service['@id']);
+    assert.deepEqual(page.spatialCoverage.map((item) => item['@id']).sort(), [`${root}argentina/#country`, `${root}brazil/#country`]);
+    assert.deepEqual(service.areaServed.map((item) => item['@id']).sort(), page.spatialCoverage.map((item) => item['@id']).sort());
+    assert.equal(page.mainEntity['@id'], list['@id']);
+    assert.equal(list.itemListElement[0].position, path.includes('/page/2/') ? 11 : 1);
+    assert.equal(list.itemListElement[0].item['@id'], `${root}multi-country/tour/multi/#tour`);
+  }
 });
 test('archives and drafts are excluded from visible catalogs even when linked', () => {
   const graph = build('/tours/', { records: [{ ...tour, archived: true }, { ...rio, data: { ...rio.data, status: 'draft' } }], document: { catalog: true, groups: [{ catalog: true, links: [{ href: tour.path }, { href: rio.path }] }] } });

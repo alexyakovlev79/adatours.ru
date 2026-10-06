@@ -86,6 +86,17 @@ for (const file of files.sort()) {
         report.archives++;
       }
       if (base) assert.ok(/noindex/.test(inspected.metadata.robots), 'Preview stays noindex');
+      const logicalCanonical = logicalPath(canonical, root);
+      if (logicalCanonical === '/multi-country/' || /^\/multi-country\/page\/(?:[2-9]|[1-9]\d+)\/$/.test(logicalCanonical)) {
+        assert.ok(hasType(page, 'CollectionPage'), 'Multi-country series uses CollectionPage');
+        const serviceUrl = new URL(`${base}/multi-country/`, origin).href;
+        const service = byId.get(`${serviceUrl}#service`);
+        assert.ok(service && hasType(service, 'Service'), 'Multi-country Service');
+        assert.equal(service.url, serviceUrl, 'Multi-country Service canonical root');
+        assert.equal(page.about?.['@id'], service['@id'], 'Multi-country page is about shared Service');
+        assert.ok(page.spatialCoverage?.length >= 2, 'Multi-country dynamic spatial coverage');
+        assert.deepEqual(service.areaServed?.map((item) => item['@id']).sort(), page.spatialCoverage.map((item) => item['@id']).sort(), 'Service and page share dynamic country coverage');
+      }
       report.contentPages++;
     }
     for (const node of objects(graph)) {

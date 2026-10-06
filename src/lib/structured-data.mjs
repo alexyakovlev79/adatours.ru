@@ -51,7 +51,6 @@ const servicePages = {
   '/mice/': 'Организация MICE и корпоративных поездок',
   '/mice/business-delegations/': 'Организация поездок деловых делегаций',
   '/vip/': 'Организация индивидуальных VIP-путешествий',
-  '/multi-country/': 'Организация путешествий по нескольким странам',
 };
 const collectionPaths = new Set(['/country/', '/tours/', '/places/', '/excursions/', '/interests/', '/team/', '/cases/', '/reviews/', '/articles/']);
 const dateValue = (value) => {
@@ -214,6 +213,8 @@ export function buildStructuredData({ root, organization, records, page, documen
     }
     return add(node);
   }
+  const isMultiCountryCatalog = page.path === '/multi-country/'
+    || /^\/multi-country\/page\/(?:[2-9]|[1-9]\d+)\/$/.test(page.path);
   if (current) {
     webPage.mainEntity = ensureRecord(current, true);
     webPage.about = webPage.mainEntity;
@@ -221,6 +222,19 @@ export function buildStructuredData({ root, organization, records, page, documen
       : current.kind === 'excursion' ? [current.data.country] : current.kind === 'destination' ? [current.data.countryId] : [];
     webPage.spatialCoverage = [...new Set(countryIds)].map((id) => byId.get(id)).filter(publicRecord).map((r) => ensureRecord(r));
     if (current.archived) webPage.description = `${webPage.description} Архивная программа; не предлагается к бронированию.`;
+  } else if (isMultiCountryCatalog) {
+    const multiCountryTours = records.filter((record) => publicRecord(record) && record.kind === 'tour'
+      && new Set(record.data.routeCountries || record.data.countries || []).size > 1);
+    const multiCountryCountryIds = [...new Set(multiCountryTours.flatMap((record) => record.data.routeCountries || record.data.countries || []))];
+    const coverage = multiCountryCountryIds.map((id) => byId.get(id)).filter(publicRecord).map((record) => ensureRecord(record));
+    const serviceUrl = absoluteUrl('/multi-country/', root);
+    const service = add({ '@type': 'Service', '@id': `${serviceUrl}#service`,
+      name: 'Multi-country туры по Латинской Америке',
+      description: 'Организация путешествий по нескольким странам Латинской Америки: единая программа, перелеты, трансферы, отели, гиды и экскурсии.',
+      serviceType: 'Организация путешествий по нескольким странам',
+      url: serviceUrl, provider: ref(orgId), areaServed: coverage.length ? coverage : organization.areaServed });
+    webPage.about = service;
+    if (coverage.length) webPage.spatialCoverage = coverage;
   } else if (servicePages[page.path]) {
     const service = add({ '@type': 'Service', '@id': `${page.url}#service`, name: cleanText(document.h1 || page.title),
       description: cleanText(page.description), serviceType: servicePages[page.path], url: page.url, provider: ref(orgId),

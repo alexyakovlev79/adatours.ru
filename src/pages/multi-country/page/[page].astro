@@ -50,7 +50,10 @@ const { entries, pagination, catalogVersion, hero } = Astro.props;
   title="Multi-country туры по Латинской Америке"
   description="Готовые маршруты Ada Tours по нескольким странам Латинской Америки. Выберите программу и адаптируйте даты, длительность, отели и состав поездки."
   canonical={pagination.canonical}
-  breadcrumbs={[{ label: 'Multi-country', href: '/multi-country/' }]}
+  breadcrumbs={[
+    { label: 'Главная', href: '/' },
+    { label: 'Multi-country', href: '/multi-country/' },
+  ]}
   hero={hero}
   pagination={pagination}
   catalogVersion={catalogVersion}

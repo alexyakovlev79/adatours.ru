@@ -39,6 +39,9 @@ for (const path of files) {
   const expectedPath = catalogPagePath(key, page);
   const expectedURL = absolute(expectedPath);
   const context = `${key} page ${page}`;
+  const titleText = (html.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  const metaDescriptionTag = [...html.matchAll(/<meta\b[^>]*>/g)].map((match) => match[0]).find((tag) => attr(tag, 'name') === 'description');
+  const metaDescription = attr(metaDescriptionTag || '', 'content');
   assert.ok(total > 0 && page >= 1 && page <= last, context);
   assert.equal(relative(output, path).replaceAll('\\', '/'), `${expectedPath.slice(1)}index.html`, context);
   const canonicals = [...html.matchAll(/<link\b[^>]*>/g)].map((match) => match[0]).filter((tag) => attr(tag, 'rel') === 'canonical');
@@ -48,13 +51,22 @@ for (const path of files) {
   assert.ok(og, context);
   assert.equal(attr(og, 'content'), expectedURL, `OG URL: ${context}`);
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1, `one H1: ${context}`);
+  if (key === '/multi-country/') {
+    assert.ok(titleText.includes('Multi-country туры по Латинской Америке'), `multi-country title: ${context}`);
+    assert.ok(metaDescription.includes(String(total)), `multi-country description has total: ${context}`);
+    if (page === 1) {
+      assert.ok(titleText.includes(String(total)), `multi-country root title has dynamic total: ${context}`);
+    } else {
+      assert.ok(titleText.includes(`страница ${page} из ${last}`), `multi-country numbered SEO title: ${context}`);
+      assert.ok(metaDescription.includes(`Маршруты ${from}–${to} из ${total}`), `multi-country range description: ${context}`);
+    }
+  }
   const links = [...html.matchAll(/<a\b[^>]*>/g)].map((match) => match[0]);
   const hrefs = new Set(links.map((tag) => attr(tag, 'href')).filter(Boolean).map((href) => new URL(href, expectedURL).href));
   if (page > 1) {
     assert.ok(hrefs.has(absolute(key)), `first page link: ${context}`);
     assert.ok(hrefs.has(absolute(catalogPagePath(key, page - 1))), `previous page link: ${context}`);
-    const title = html.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? '';
-    assert.ok(title.includes(`страница ${page}`), `numbered title: ${context}`);
+    assert.ok(titleText.includes(`страница ${page}`), `numbered title: ${context}`);
   }
   const more = links.find((tag) => /\bdata-catalog-load-more\b/.test(tag));
   if (page < last) {

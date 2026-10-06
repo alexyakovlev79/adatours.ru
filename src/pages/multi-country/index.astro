@@ -14,7 +14,6 @@ import { countLabel } from '../../lib/interest-model.mjs';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { compareToursBySalesFit } from '../../lib/tour-ranking';
 import { countryPath, mainTourCountries, tourPath } from '../../lib/routes';
-import { withBase } from '../../lib/paths';
 
 const [tourEntries, countryEntries] = await Promise.all([
   getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
@@ -105,34 +104,27 @@ const durationValue = minDuration && maxDuration
 
 const hero = pageHeroTour.data.hero.src;
 const proofImage = proofCoverTour.data.hero.src;
-const absoluteUrl = (path: string) => new URL(withBase(path), Astro.site ?? 'https://adatours.ru/').toString();
-const listSchema = pagination ? {
-  '@type': 'ItemList',
-  '@id': `${absoluteUrl('/multi-country/')}#catalog`,
-  name: 'Multi-country туры по Латинской Америке',
-  numberOfItems: visibleTours.length,
-  itemListElement: visibleTours.map((entry, index) => ({
-    '@type': 'ListItem',
-    position: index + 1,
-    name: entry.data.title,
-    url: absoluteUrl(tourPath(entry.data)),
-  })),
-} : undefined;
+const countryExamples = popularCountries.map(({ country }) => country.name);
+const countryExampleText = `${countryExamples.join(', ')}${countryCounts.size > countryExamples.length ? ' и другие' : ''}`;
+const seoTitle = `Multi-country туры по Латинской Америке — ${countLabel(multiCountryTours.length, ['маршрут', 'маршрута', 'маршрутов'])}`;
+const seoDescription = `${countLabel(multiCountryTours.length, ['тур', 'тура', 'туров'])} по нескольким странам Латинской Америки: ${countryExampleText}. Готовые маршруты Ada Tours можно адаптировать под даты и длительность.`;
 ---
 
 <BaseLayout
   leadTitle="Собрать маршрут по нескольким странам"
   leadEntityId="multi_country"
-  title="Туры по нескольким странам Латинской Америки"
-  description="Готовые и индивидуальные multi-country маршруты Ada Tours по Бразилии, Аргентине, Перу и другим странам Латинской Америки. Перелеты, трансферы, отели, гиды и экскурсии в одной программе."
+  title={seoTitle}
+  description={seoDescription}
   canonical="/multi-country/"
   image={hero}
-  breadcrumbs={[{ label: 'Multi-country', href: '/multi-country/' }]}
-  pageSchema={listSchema}
+  breadcrumbs={[
+    { label: 'Главная', href: '/' },
+    { label: 'Multi-country', href: '/multi-country/' },
+  ]}
 >
   <Hero
     eyebrow="Multi-country"
-    title="Несколько стран. Один маршрут по Латинской Америке"
+    title="Туры по нескольким странам Латинской Америки"
     intro="Выберите готовую программу по нескольким странам или возьмите ее за основу. Даты, длительность, отели и состав поездки можно адаптировать под вас."
     image={hero}
     ctaHref="#request"

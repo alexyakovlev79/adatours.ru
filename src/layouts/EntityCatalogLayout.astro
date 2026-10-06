@@ -29,10 +29,20 @@ interface Props {
 const { leadTitle, leadEntityId, kind, entries, title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId } = Astro.props;
 const eyebrow = kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : 'Направления';
 const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
-const metaTitle = `${title}${pageSuffix}`;
-const metaDescription = p.currentPage > 1
-  ? `${description} Страница ${p.currentPage} из ${p.totalPages}, объекты ${p.from}–${p.to} из ${p.totalItems}.`
-  : description;
+const multiCountryPageCountries = variant === 'multi-country-tours'
+  ? [...new Map(entries.flatMap((entry) => mainTourCountries((entry as CollectionEntry<'tours'>).data)).map((country) => [country.id, country])).values()]
+  : [];
+const multiCountryCountryText = multiCountryPageCountries.length
+  ? `${multiCountryPageCountries.slice(0, 6).map((country) => country.name).join(', ')}${multiCountryPageCountries.length > 6 ? ' и другие' : ''}`
+  : 'Латинская Америка';
+const metaTitle = variant === 'multi-country-tours'
+  ? `${title} — страница ${p.currentPage} из ${p.totalPages}`
+  : `${title}${pageSuffix}`;
+const metaDescription = variant === 'multi-country-tours'
+  ? `Multi-country туры Ada Tours — страница ${p.currentPage} из ${p.totalPages}. Маршруты ${p.from}–${p.to} из ${p.totalItems}; страны на этой странице: ${multiCountryCountryText}.`
+  : p.currentPage > 1
+    ? `${description} Страница ${p.currentPage} из ${p.totalPages}, объекты ${p.from}–${p.to} из ${p.totalItems}.`
+    : description;
 const presentation = variant === 'global-tours' ? {
   title: 'Путешествия по Латинской Америке',
   intro: 'Готовые маршруты Ada Tours можно взять за основу и изменить под ваши даты, длительность, отели и состав программы.',
@@ -44,6 +54,10 @@ const presentation = variant === 'global-tours' ? {
 } : variant === 'global-excursions' ? {
   title: 'Экскурсии по Латинской Америке',
   intro: 'Город, природа, вода, гастрономия или день за пределами столицы. Выберите программу, а Ada Tours поможет встроить ее в путешествие.',
+  editorial: undefined,
+} : variant === 'multi-country-tours' ? {
+  title: 'Multi-country туры по Латинской Америке',
+  intro: `Продолжение каталога: маршруты ${p.from}–${p.to} из ${p.totalItems}. На этой странице: ${multiCountryCountryText}.`,
   editorial: undefined,
 } : { title, intro: description, editorial: undefined };
 const pageBreadcrumbs: BreadcrumbItem[] = p.currentPage > 1

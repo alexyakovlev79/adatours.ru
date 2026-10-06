@@ -194,7 +194,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/puerto%20madrin%20argentina.png
+  - src: /media/tours/argentina-puteshestvie-v-doistoricheskij-mir/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: город Пуэрто Мадрин в Аргентине'
 - day: 10
   title: Пуэрто-Мадрин и полуостров Вальдес
@@ -218,7 +218,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Puerto%20Madryn.png
+  - src: /media/tours/argentina-puteshestvie-v-doistoricheskij-mir/itinerary-day-10-enhanced-20261006.webp
     alt: 'на фото: Киты в Пуэрто Мадрин в Аргентине'
 - day: 11
   title: Пуэрто-Мадрин - Гайман
@@ -238,7 +238,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/puerto%20madrin%20argentina.png
+  - src: /media/tours/argentina-puteshestvie-v-doistoricheskij-mir/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: город Пуэрто Мадрин в Аргентине'
 - day: 12
   title: Пуэрто-Мадрин - Буэнос-Айрес
@@ -254,7 +254,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
-  - src: https://brasiltours.ru/image/puerto%20madrin%20argentina.png
+  - src: /media/tours/argentina-puteshestvie-v-doistoricheskij-mir/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: город Пуэрто Мадрин в Аргентине'
 - day: 13
   title: Буэнос-Айрес
@@ -297,7 +297,7 @@ priceFrom: 2219
 currency: USD
 priceNote: $2219
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/56.jpg
+  src: /media/tours/argentina-puteshestvie-v-doistoricheskij-mir/hero-enhanced-20261006.webp
   alt: 'На фото: Аргентина'
 routeCountries:
 - country_argentina

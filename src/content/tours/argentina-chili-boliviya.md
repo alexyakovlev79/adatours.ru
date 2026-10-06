@@ -16,7 +16,7 @@ lead: Буэнос-Айрес, ледник Перито-Морено и Тор�
 durationDays: 12
 durationNights: 11
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/solar-de-uyuni-waifu2x-photo-noise1-scale.jpg
+  src: /media/tours/argentina-chili-boliviya/hero-enhanced-20261006.webp
   alt: Тур в Аргентину, Чили и Боливию на 12 дней с Патагонией
 currency: USD
 priceFrom: 7198
@@ -273,3 +273,4 @@ themes: []
 | 3 | 8087 | 6228 | 6278 |
 
 Авиабилеты не включены. Тарифы на перелеты рассчитываются для фактических дат и последовательности маршрута, а не по чужому списку рейсов через Рио.
+

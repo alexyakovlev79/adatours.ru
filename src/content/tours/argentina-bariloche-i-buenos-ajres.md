@@ -25,7 +25,7 @@ itinerary:
   - Барилоче
   text: Прибытие в отель. Остальная часть дня свободна. Размещение в Барилоче.
   images:
-  - src: https://brasiltours.ru/image/Bariloche.png
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Сан-Карлос-де-Барилоче, Аргентина'
 - day: 2
   title: Барилоче
@@ -54,7 +54,7 @@ itinerary:
 
     По прибытии встреча и частный трансфер в выбранный отель. Остаток дня свободен. Размещение в Буэнос-Айресе.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-bariloche-waifu2x-photo-noise1-s.jpg
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: Радуга на фоне домов в Барилоче'
   - src: /media/excursions/jekskursija-v-tigre/gallery-1-enhanced-20261001.webp
     alt: 'На фото: Президентский дворец, Буэнос-Айресе'

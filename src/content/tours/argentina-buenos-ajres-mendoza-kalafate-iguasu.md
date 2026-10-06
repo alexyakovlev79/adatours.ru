@@ -126,7 +126,7 @@ itinerary:
   - Мендоса
   text: Трансфер в аэропорт для перелета в Калафате. По прибытии встреча и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/El%20Calafate%20ADA.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-6-enhanced-20261006.webp
     alt: 'на фото: Эль Калафате в Аргентине'
   - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: винный регион Мендоса (Мендоза) в Аргентине'
@@ -162,7 +162,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
     alt: 'на фото: Водопады Игуасу в Аргентине и Бразилии'
-  - src: https://brasiltours.ru/image/El%20Calafate%20ADA.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-6-enhanced-20261006.webp
     alt: 'на фото: Эль Калафате в Аргентине'
 - day: 9
   title: Аргентинская сторона водопадов Игуасу
@@ -253,7 +253,7 @@ priceFrom: 3213
 currency: USD
 priceNote: $3213
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/2.jpg
+  src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/hero-enhanced-20261006.webp
   alt: 'на фото: регион Сальта в Аргентине'
 routeCountries:
 - country_argentina

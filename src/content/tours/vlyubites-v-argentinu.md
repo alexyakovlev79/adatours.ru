@@ -61,7 +61,7 @@ itinerary:
 
     После ужина начинается шоу Tango Porteño, посвященное 1940-м годам, периоду расцвета танго. На сцене выступают профессиональные танцоры, певцы и музыканты. Декорации и костюмы воспроизводят атмосферу той эпохи. Трансферы туда и обратно включены на регулярной основе.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/argentinian-tango.png
+  - src: /media/tours/vlyubites-v-argentinu/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: Буэнос Айрес, танго шоу,  Аргентина'
 - excursionRef: excursion_buenos_aires_tango_show_dinner_transfer
   places: []
@@ -276,7 +276,7 @@ priceFrom: 4981
 currency: USD
 priceNote: $4981
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/argentina-calafata2.jpg
+  src: /media/tours/vlyubites-v-argentinu/hero-enhanced-20261006.webp
   alt: 'на фото: Перито морено ледник, Аргентина'
 routeCountries:
 - country_argentina

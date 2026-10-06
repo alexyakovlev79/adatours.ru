@@ -131,7 +131,7 @@ itinerary:
     \ американские доллары и кредитные карты.\n\nПосле посещения рынка возвращение в Гватемала-Сити.\n\n**Ночь:** Barceló\
     \ Guatemala City.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Chichicastenango.png
+  - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Рынок Чичикастаненго'
 - day: 6
   title: Гватемала-Сити - Флорес - Тикаль

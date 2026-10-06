@@ -102,7 +102,7 @@ itinerary:
 
     Вечером трансфер в Гватемала-Сити.
   images:
-  - src: https://brasiltours.ru/image/Lake%20Atitln.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
     alt: Лаго де Атитлан
 - day: 4
   title: Гватемала-Сити - Флорес - Тикаль
@@ -288,7 +288,7 @@ priceFrom: 6575
 currency: USD
 priceNote: $6575
 hero:
-  src: https://brasiltours.ru/image/Ambergris%20Caye.png
+  src: /media/tours/chudesa-gvatemaly-beliza/hero-enhanced-20261006.webp
   alt: Чудеса Гватемалы & Белиза
 routeCountries:
 - country_guatemala

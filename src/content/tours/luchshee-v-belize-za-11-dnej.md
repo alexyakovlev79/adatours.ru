@@ -82,7 +82,7 @@ itinerary:
 
     После прибытия свободное время у моря.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/placencia-3.jpg
+  - src: /media/tours/issleduya-beliz/itinerary-day-11-enhanced-20261006.webp
     alt: Пласенсия
 - day: 7
   title: Полнодневный снорклинг
@@ -99,7 +99,7 @@ itinerary:
   - Пласенсия
   text: Свободный день для пляжного отдыха, водных развлечений или отдыха на курорте.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/placencia-3.jpg
+  - src: /media/tours/issleduya-beliz/itinerary-day-11-enhanced-20261006.webp
     alt: Пласенсия
 - day: 9
   title: Парусный круиз на закате
@@ -114,7 +114,7 @@ itinerary:
   - Пласенсия
   text: Последний свободный день для пляжного отдыха или дополнительных экскурсий.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/placencia-3.jpg
+  - src: /media/tours/issleduya-beliz/itinerary-day-11-enhanced-20261006.webp
     alt: Пласенсия
 - day: 11
   title: Пласенсия - международный аэропорт Белиза
@@ -125,7 +125,7 @@ itinerary:
 
     Местный перелет Пласенсия - BZE к международному рейсу.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/placencia-3.jpg
+  - src: /media/tours/issleduya-beliz/itinerary-day-11-enhanced-20261006.webp
     alt: Пласенсия
 included:
 - '**Вариант Standard, средний уровень:**'

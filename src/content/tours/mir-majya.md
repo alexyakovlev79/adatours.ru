@@ -116,7 +116,7 @@ itinerary:
     \ к кладбищу находится еще одна католическая церковь, Голгофа или Кальварио.\n\nПосле посещения рынка возвращение в Гватемала-Сити.\n\
     \n**Отель:** Barceló Guatemala City.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Chichicastenango.png
+  - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: Чичикастенанго
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити

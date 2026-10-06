@@ -86,7 +86,7 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/Ambergris%20Caye.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/hero-enhanced-20261006.webp
     alt: Амбергрис-Кайе
 - day: 6
   title: Сан-Педро и морские экскурсии
@@ -97,7 +97,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/beliz%20ambergris.png
+  - src: /media/tours/chudesa-beliza/itinerary-day-5-enhanced-20261006.webp
     alt: Амбергрис-Кайе
 - day: 7
   title: Отдых на Амбергрис-Кайе
@@ -109,7 +109,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Ambergris%20Caye.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/hero-enhanced-20261006.webp
     alt: Амбергрис-Кайе
 - day: 8
   title: Сан-Педро - Белиз-Сити - аэропорт
@@ -123,7 +123,7 @@ itinerary:
   images:
   - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
     alt: Белиз-сити
-  - src: https://brasiltours.ru/image/beliz%20ambergris.png
+  - src: /media/tours/chudesa-beliza/itinerary-day-5-enhanced-20261006.webp
     alt: Амбергрис-Кайе
 included:
 - Встреча и помощь по прибытии.
@@ -161,7 +161,7 @@ priceFrom: 3888
 currency: USD
 priceNote: $3888
 hero:
-  src: https://brasiltours.ru/image/belize.png
+  src: /media/tours/luchshee-v-belize/hero-enhanced-20261006.webp
   alt: Лучшее в Белизе
 routeCountries:
 - country_belize

@@ -60,9 +60,9 @@ itinerary:
 
     После экскурсии трансфер к озеру Атитлан и размещение в отеле Casa Palopo.
   images:
-  - src: https://brasiltours.ru/image/Chichicastenango.png
+  - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: Чичикастенанго
-  - src: https://brasiltours.ru/image/Lake%20Atitln.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
     alt: Лаго де Атитлан
 - day: 3
   title: Озеро Атитлан - Гватемала-Сити
@@ -76,7 +76,7 @@ itinerary:
 
     После экскурсии трансфер в отель Westin Camino Real.
   images:
-  - src: https://brasiltours.ru/image/Lake%20Atitln.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
     alt: Лаго де Атитлан
 - day: 4
   title: Гватемала-Сити - Копан, Гондурас
@@ -127,7 +127,7 @@ itinerary:
 
     После экскурсии возвращаемся в отель Bolontiku, где проводим ночь.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/t/i/tikal1_2.png
+  - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-8-enhanced-20261006.webp
     alt: Тикаль
 - day: 9
   title: Флорес - Белиз - Амбергрис Кей
@@ -141,7 +141,7 @@ itinerary:
 
     Ночь в Coco Beach Resort.
   images:
-  - src: https://brasiltours.ru/image/beliz%20ambergris.png
+  - src: /media/tours/chudesa-beliza/itinerary-day-5-enhanced-20261006.webp
     alt: Амбергрис-Кайе
 - day: 10
   title: Плавание с акулами
@@ -171,7 +171,7 @@ itinerary:
   - Амбергрис-Кайе
   text: Путешествие заканчивается трансфером с Амбергрис Кей. На лодке возвращаемся в город Белиз к вылету домой.
   images:
-  - src: https://brasiltours.ru/image/beliz%20ambergris.png
+  - src: /media/tours/chudesa-beliza/itinerary-day-5-enhanced-20261006.webp
     alt: Амбергрис-Кайе
 included:
 - проживание в указанных отелях;

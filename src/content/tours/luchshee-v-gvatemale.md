@@ -106,7 +106,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/antigua.png
     alt: Антигуа-Гуатемала
-  - src: https://brasiltours.ru/image/Lake%20Atitln.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
     alt: Лучшее в Гватемале
 - day: 4
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан
@@ -133,7 +133,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/Lake%20Atitln.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
     alt: Лучшее в Гватемале
 - day: 5
   title: Антигуа - рынок Чичикастенанго - Гватемала-Сити
@@ -158,7 +158,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/Chichicastenango.png
+  - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: Чичикастенанго
   - src: https://brasiltours.ru/image/Antigua%20Guatemala.png
     alt: Антигуа-Гуатемала
@@ -350,7 +350,7 @@ priceFrom: 5748
 currency: USD
 priceNote: $5748.
 hero:
-  src: https://brasiltours.ru/image/Lake%20Atitln.png
+  src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
   alt: Лучшее в Гватемале
 routeCountries:
 - country_guatemala

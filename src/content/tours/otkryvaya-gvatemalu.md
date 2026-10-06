@@ -61,7 +61,7 @@ itinerary:
     \ Атитлан. На последнем спуске из Сололы открывается вид на озеро.\n\nНочь в отеле Villa Santa Catarina.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: https://brasiltours.ru/image/Chichicastenango.png
+  - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Люди на рынке Чичикастенанго'
   - src: https://brasiltours.ru/image/Antigua_HillView.png
     alt: 'На фото: Антигуа-Гуатемала столица Гватемалы'

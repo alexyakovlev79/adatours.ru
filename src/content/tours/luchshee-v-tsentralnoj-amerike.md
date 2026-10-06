@@ -202,7 +202,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/Chichicastenango.png
+  - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: Чичикастенанго
   - src: /media/destinations/guatemala-city/hero-enhanced-20261003.webp
     alt: Гватемала-Сити

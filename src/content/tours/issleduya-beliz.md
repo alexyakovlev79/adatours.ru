@@ -69,7 +69,7 @@ itinerary:
 
     Обед во время экскурсии включен. Возвращение во второй половине дня.
   images:
-  - src: https://brasiltours.ru/image/beliz%20hol%20chan%20.jpg
+  - src: /media/tours/issleduya-beliz/itinerary-day-4-enhanced-20261006.webp
     alt: Хол-Чан
 - day: 5
   title: Свободный день на Кей-Колкере
@@ -125,7 +125,7 @@ itinerary:
 
     После прибытия остается свободное время для отдыха на пляже.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/placencia-3.jpg
+  - src: /media/tours/issleduya-beliz/itinerary-day-11-enhanced-20261006.webp
     alt: Пласенсия
 - day: 11
   title: Сноркелинг в Южном Белизе
@@ -137,7 +137,7 @@ itinerary:
 
     Возвращение во второй половине дня.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/placencia-3.jpg
+  - src: /media/tours/issleduya-beliz/itinerary-day-11-enhanced-20261006.webp
     alt: Пласенсия
 - day: 12
   title: Свободный день в Пласенсии
@@ -148,7 +148,7 @@ itinerary:
 
     Континентальный завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/placencia-3.jpg
+  - src: /media/tours/issleduya-beliz/itinerary-day-11-enhanced-20261006.webp
     alt: Пласенсия
 - day: 13
   title: Вылет
@@ -159,7 +159,7 @@ itinerary:
 
     На этом обслуживание заканчивается.
   images:
-  - src: https://brasiltours.ru/image/countries/belize/placencia-3.jpg
+  - src: /media/tours/issleduya-beliz/itinerary-day-11-enhanced-20261006.webp
     alt: Пласенсия
 included:
 - Программа рассчитана на вариант **Mid-Range, средний уровень**.
@@ -200,7 +200,7 @@ priceFrom: 4169
 currency: USD
 priceNote: $4169
 hero:
-  src: https://brasiltours.ru/image/countries/belize/belize-1200.jpg
+  src: /media/tours/issleduya-beliz/hero-enhanced-20261006.webp
   alt: Исследуя Белиз
 routeCountries:
 - country_belize

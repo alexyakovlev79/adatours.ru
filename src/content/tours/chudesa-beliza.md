@@ -110,7 +110,7 @@ itinerary:
 
     **Размещение:** Las Terrazas Resort, Deluxe Room. Питание не включено.
   images:
-  - src: https://brasiltours.ru/image/beliz%20ambergris.png
+  - src: /media/tours/chudesa-beliza/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Амбергрис Кайе, Белиз'
 - excursionRef: excursion_belize_blue_hole_scenic_flight
   places: []
@@ -164,7 +164,7 @@ priceFrom: 4566
 currency: USD
 priceNote: $4566
 hero:
-  src: https://brasiltours.ru/image/countries/belize/belize-1680.jpg
+  src: /media/tours/chudesa-beliza/hero-enhanced-20261006.webp
   alt: 'На фото: Пляж Белиза'
 routeCountries:
 - country_belize

@@ -57,7 +57,7 @@ itinerary:
     \ в Панахачель на берегу озера Атитлан. Во время спуска из Сололы открывается широкий вид на озеро.\n\nНочь в Villa Santa\
     \ Catarina.  \nПитание: завтрак."
   images:
-  - src: https://brasiltours.ru/image/Lake%20Atitln.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: Вид на озеро Атитлан'
   - src: https://brasiltours.ru/image/antigua_archhorz_33.png
     alt: 'На фото: Арка Санта-Каталина, Антигуа-Гватемала'

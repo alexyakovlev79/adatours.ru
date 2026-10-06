@@ -5,111 +5,93 @@ import EditorialStatement from '../../components/editorial/EditorialStatement.as
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
-import { withBase } from '../../lib/paths';
+import DmcNav from '../../components/commercial/DmcNav.astro';
+import { ORG } from '../../data/organization/ada-tours';
 ---
 
-<BaseLayout leadTitle="Запросить B2B-предложение" leadEntityId="dmc"
-  title="DMC по Бразилии и Латинской Америке"
-  description="Ada Tours как принимающий партнер для турагентств и туроператоров по Бразилии и странам Латинской Америки."
+<BaseLayout
+  leadTitle="Запросить B2B-предложение"
+  leadEntityId="dmc"
+  title="DMC в Бразилии и Латинской Америке для турагентств"
+  description="Ada Tours - DMC для турагентств и туроператоров: FIT, группы, VIP, MICE и multi-country маршруты по Бразилии и Латинской Америке."
+  image="/media/home/rio-night-enhanced-20260930.webp"
 >
   <Hero
-    eyebrow="DMC / B2B"
-    title="Ваш DMC-партнер в Бразилии и Латинской Америке"
-    intro="Маршруты, отели, трансферы, гиды и локальная координация для FIT, групп, VIP и MICE."
+    eyebrow="DMC · B2B"
+    title="DMC для туроператоров и турагентств в Бразилии и Латинской Америке"
+    intro="Ada Tours собирает наземную программу: маршруты, отели, трансферы, гидов, экскурсии, MICE и сложные multi-country поездки."
     image="/media/home/rio-night-enhanced-20260930.webp"
+    ctaHref="#request"
     ctaLabel="Запросить предложение"
   />
 
+  <DmcNav active="overview" />
+
   <EditorialStatement
-    eyebrow="Для агентств"
-    text="Вы общаетесь с одной командой. Мы собираем наземную часть поездки на месте."
+    eyebrow="Партнерская работа"
+    text="Один запрос превращается в связанную программу с маршрутом, размещением, транспортом и локальной координацией."
   />
 
   <FactStrip
+    wideFirst
     facts={[
-      { value: 'FIT', label: 'индивидуальные путешествия' },
-      { value: 'Groups', label: 'групповые программы' },
-      { value: 'MICE', label: 'деловые и корпоративные поездки' },
-      { value: 'VIP', label: 'сложные частные запросы' },
+      { value: 'Бразилия', label: 'ключевое направление Ada Tours' },
+      { value: String(ORG.service.languages.length), label: 'языков коммуникации' },
+      { value: ORG.service.groups.standard.display, label: ORG.service.groups.standard.label },
+      { value: ORG.service.groups.largeEvents.display, label: ORG.service.groups.largeEvents.label },
     ]}
   />
 
   <EditorialProof
-    eyebrow="География"
-    title="Бразилия и маршруты по всему региону"
-    text="Бразилия остается ключевым направлением Ada Tours. Для поездок по региону мы связываем перелеты, наземную часть и локальных партнеров в одну программу."
-    image="/media/home/lencois-enhanced-20260930.webp"
+    eyebrow="Что берем на себя"
+    title="Наземная программа от аэропорта до последнего трансфера"
+    text="Собираем последовательность поездки и связываем услуги так, чтобы партнер работал с одной программой, а не с набором отдельных подрядчиков."
+    image="/media/home/buenos-aires-enhanced-20260930.webp"
     facts={[
-      'Наземная программа и логистика',
-      'Локальные гиды и транспорт',
-      'Размещение и специальные запросы',
-      'Координация multi-country маршрутов',
+      'Маршрут и наземная логистика',
+      'Отели, трансферы и транспорт',
+      'Гиды, экскурсии и локальная координация',
+      'MICE, VIP и специальные запросы',
+    ]}
+  />
+
+  <EditorialProof
+    eyebrow="Форматы"
+    title="От FIT до крупных групп и маршрутов по нескольким странам"
+    text="Ada Tours работает с индивидуальными поездками, группами, VIP и MICE. Для multi-country программ связываем страны региона в одну последовательность."
+    image="/media/home/patagonia-enhanced-20260930.webp"
+    facts={[
+      'FIT и индивидуальные путешествия',
+      'Групповые программы',
+      'VIP и сложные частные запросы',
+      'MICE и деловые поездки',
+      'Multi-country маршруты',
+    ]}
+    reverse
+  />
+
+  <EditorialProof
+    eyebrow="Коммерческая работа"
+    title="Договор и условия под конкретное бронирование"
+    text="Для туроператоров используется договор, а вознаграждение обычно согласуется как процент. Финальные коммерческие условия фиксируются для конкретной поездки."
+    image="/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp"
+    facts={[
+      'Договор для работы с туроператором',
+      'Вознаграждение обычно согласуется как процент',
+      'Состав и стоимость услуг подтверждаются под конкретную поездку',
+      'С постоянными партнерами возможны повторные договоры',
     ]}
   />
 
   <ProcessSteps
     eyebrow="Как строится запрос"
-    title="Запрос. Расчет. Подтверждение. Поездка."
+    title="Бриф. Маршрут. Предложение. Координация."
     steps={[
-      { title: 'Запрос', text: 'Даты, география, состав группы, бюджет и обязательные элементы.' },
-      { title: 'Маршрут', text: 'Города, перелеты, трансферы и наземная часть в одной схеме.' },
-      { title: 'Предложение', text: 'Программа и расчет с четкими включениями после сверки доступности.' },
-      { title: 'На месте', text: 'Одна команда координирует подрядчиков и изменения по ходу поездки.' },
+      { title: 'Бриф', text: 'Даты, география, состав группы, бюджет и обязательные элементы.' },
+      { title: 'Маршрут', text: 'Связываем города, перелеты, трансферы, размещение и программу.' },
+      { title: 'Предложение', text: 'Фиксируем состав услуг и расчет после проверки доступности.' },
+      { title: 'На месте', text: 'Локальная команда координирует подрядчиков и изменения по ходу поездки.' },
     ]}
     dark
   />
-
-  <section class="dmc-paths section--tight">
-    <div class="container dmc-paths__grid">
-      <div>
-        <p class="eyebrow">B2B</p>
-        <h2>Для партнеров</h2>
-      </div>
-      <nav aria-label="Разделы DMC">
-        <a href={withBase("/dmc/travel-agencies/")}>Для турагентств и туроператоров <span aria-hidden="true">↗</span></a>
-        <a href={withBase("/dmc/terms/")}>Условия работы <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </section>
-
 </BaseLayout>
-
-
-<style>
-  .dmc-paths {
-    border-top: 1px solid var(--color-line);
-    border-bottom: 1px solid var(--color-line);
-  }
-
-  .dmc-paths__grid {
-    display: grid;
-    grid-template-columns: .8fr 1.2fr;
-    gap: clamp(40px, 8vw, 120px);
-    align-items: start;
-  }
-
-  .dmc-paths h2 {
-    margin: 12px 0 0;
-  }
-
-  .dmc-paths nav {
-    display: grid;
-    border-top: 1px solid var(--color-line);
-  }
-
-  .dmc-paths nav a {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    padding: 22px 0;
-    border-bottom: 1px solid var(--color-line);
-    font-family: var(--font-display);
-    font-size: var(--text-lg);
-  }
-
-  @media (max-width: 760px) {
-    .dmc-paths__grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>

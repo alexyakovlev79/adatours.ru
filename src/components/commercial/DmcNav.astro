@@ -1,0 +1,100 @@
+---
+import { DMC_NAV_LINKS } from '../../lib/site';
+import { withBase } from '../../lib/paths';
+
+interface Props {
+  active: (typeof DMC_NAV_LINKS)[number]['id'];
+}
+
+const { active } = Astro.props;
+---
+
+<div class="dmc-nav-shell" data-pagefind-ignore>
+  <nav class="dmc-nav" aria-label="Раздел для агентств">
+    {DMC_NAV_LINKS.map((link) => (
+      <a
+        href={withBase(link.href)}
+        aria-current={active === link.id ? 'page' : undefined}
+      >
+        {link.label}
+      </a>
+    ))}
+  </nav>
+</div>
+
+<style>
+  .dmc-nav-shell {
+    border-bottom: 1px solid var(--color-line);
+    background: var(--color-bg);
+  }
+
+  .dmc-nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+  }
+
+  .dmc-nav a {
+    position: relative;
+    display: grid;
+    min-height: 72px;
+    padding: 16px 24px;
+    place-items: center;
+    border-right: 1px solid var(--color-line);
+    color: color-mix(in srgb, var(--color-ink) 62%, transparent);
+    font-family: var(--font-display);
+    font-size: .78rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: .06em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color 180ms ease;
+  }
+
+  .dmc-nav a:first-child {
+    border-left: 1px solid var(--color-line);
+  }
+
+  .dmc-nav a:hover,
+  .dmc-nav a[aria-current='page'] {
+    color: var(--color-ink);
+  }
+
+  .dmc-nav a[aria-current='page']::after {
+    content: '';
+    position: absolute;
+    right: 24px;
+    bottom: -1px;
+    left: 24px;
+    height: 3px;
+    background: var(--color-gold);
+  }
+
+  @media (max-width: 620px) {
+    .dmc-nav {
+      width: 100%;
+    }
+
+    .dmc-nav a {
+      min-height: 64px;
+      padding: 14px 8px;
+      font-size: .69rem;
+      letter-spacing: .035em;
+    }
+
+    .dmc-nav a:first-child {
+      border-left: 0;
+    }
+
+    .dmc-nav a:last-child {
+      border-right: 0;
+    }
+
+    .dmc-nav a[aria-current='page']::after {
+      right: 10px;
+      left: 10px;
+    }
+  }
+</style>

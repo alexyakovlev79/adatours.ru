@@ -7,6 +7,12 @@ export const SITE = {
     'Ada Tours — принимающий туроператор и DMC по Бразилии и Латинской Америке: индивидуальные путешествия, VIP, MICE и программы для турагентств.',
 };
 
+export const DMC_NAV_LINKS = [
+  { id: 'overview', href: '/dmc/', label: 'DMC / B2B' },
+  { id: 'agencies', href: '/dmc/travel-agencies/', label: 'Турагентствам' },
+  { id: 'terms', href: '/dmc/terms/', label: 'Условия работы' },
+] as const;
+
 export const NAV_LINKS = [
   { href: '/country/', label: 'Страны' },
   { href: '/tours/', label: 'Туры' },
@@ -31,4 +37,6 @@ export const MOBILE_NAV_LINKS = [
   NAV_LINKS[NAV_LINKS.length - 1],
 ];
 
-export const FOOTER_NAV_LINKS = MOBILE_NAV_LINKS;
+export const FOOTER_NAV_LINKS = MOBILE_NAV_LINKS.flatMap((link) =>
+  link.href === '/dmc/' ? [link, ...DMC_NAV_LINKS.slice(1)] : [link]
+);

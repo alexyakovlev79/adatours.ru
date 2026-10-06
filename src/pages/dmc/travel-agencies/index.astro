@@ -5,55 +5,76 @@ import EditorialStatement from '../../../components/editorial/EditorialStatement
 import FactStrip from '../../../components/proof/FactStrip.astro';
 import EditorialProof from '../../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../../components/proof/ProcessSteps.astro';
+import DmcNav from '../../../components/commercial/DmcNav.astro';
 import { ORG } from '../../../data/organization/ada-tours';
 ---
 
-<BaseLayout leadTitle="Запросить предложение для клиента" leadEntityId="dmc_for_agencies"
-  title="DMC для турагентств по Бразилии и Латинской Америке"
-  description="Ada Tours как принимающий партнер для турагентств и туроператоров: FIT, группы, VIP, MICE и multi-country маршруты по Бразилии и Латинской Америке."
+<BaseLayout
+  leadTitle="Запросить предложение для клиента"
+  leadEntityId="dmc_for_agencies"
+  title="DMC для турагентств и туроператоров по Бразилии и Латинской Америке"
+  description="Ada Tours как принимающий партнер для турагентств и туроператоров: маршруты, отели, трансферы, гиды, FIT, группы, VIP, MICE и multi-country."
+  image="/media/home/lencois-enhanced-20260930.webp"
 >
   <Hero
     eyebrow="DMC · Для турагентств"
-    title="Один принимающий партнер для всей наземной части"
-    intro="Ada Tours собирает маршрут, размещение, трансферы, гидов и локальную координацию для турагентств и туроператоров."
-    image="/media/catalog/tury/hero-enhanced-20260930.webp"
+    title="Одна локальная команда для всей наземной программы"
+    intro="Вы присылаете даты, географию и требования клиента. Ada Tours собирает маршрут, размещение, транспорт, гидов и координацию на месте."
+    image="/media/home/lencois-enhanced-20260930.webp"
+    ctaHref="#request"
     ctaLabel="Запросить предложение"
   />
 
+  <DmcNav active="agencies" />
+
   <EditorialStatement
-    eyebrow="B2B"
-    text="Вы передаете задачу и требования клиента. Ada Tours собирает маршрут, подрядчиков и сопровождение на месте."
+    eyebrow="Рабочая схема"
+    text="Для первого расчета достаточно нормального агентского брифа. Дальше запрос превращается в программу, которую можно согласовывать по пунктам."
   />
 
   <FactStrip
     facts={[
+      { value: String(ORG.business.b2bPartnerTypes.length), label: 'основных типа B2B-партнеров' },
+      { value: String(ORG.service.languages.length), label: 'языков коммуникации' },
       { value: 'FIT', label: 'индивидуальные путешествия' },
-      { value: 'Groups', label: ORG.service.groups.standard.label },
-      { value: 'MICE', label: 'деловые и корпоративные поездки' },
-      { value: 'VIP', label: 'частные сложные маршруты' },
+      { value: ORG.service.groups.standard.display, label: ORG.service.groups.standard.label },
     ]}
   />
 
   <EditorialProof
     eyebrow="Кому подходит"
     title="Туроператоры, luxury travel advisors и MICE-агентства"
-    text="Для туроператоров, турагентств, luxury travel advisors и MICE-агентств, которым нужен DMC по Бразилии или маршрут по нескольким странам региона."
-    image="/media/home/lencois-enhanced-20260930.webp"
+    text="Работаем с партнерами, которым нужен DMC по Бразилии или связанная программа по нескольким странам Латинской Америки."
+    image="/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp"
     facts={ORG.business.b2bPartnerTypes}
   />
 
   <EditorialProof
+    eyebrow="Что можно поручить"
+    title="Маршрут, размещение и исполнение на месте"
+    text="Собираем наземную часть поездки и держим ее как одну программу: от прилета и размещения до экскурсий, деловой части и финального трансфера."
+    image="/media/home/rio-night-enhanced-20260930.webp"
+    facts={[
+      'Маршрут и наземные переезды',
+      'Отели и размещение',
+      'Трансферы, транспорт и гиды',
+      'Экскурсии, MICE и специальные запросы',
+    ]}
+    reverse
+  />
+
+  <EditorialProof
     eyebrow="Что прислать"
-    title="Рабочего брифа достаточно для первого расчета"
-    text="Даты, география, состав группы, бюджет и обязательные условия дают достаточно информации для первого предложения."
+    title="5 пунктов для содержательного первого расчета"
+    text="Чем точнее исходный бриф, тем меньше итераций уходит на маршрут и состав услуг."
     image="/media/home/buenos-aires-enhanced-20260930.webp"
     facts={[
       'Даты или диапазон дат',
-      'Количество путешественников',
+      'Количество путешественников и состав группы',
       'Страны, города и обязательные точки',
-      'Уровень размещения, бюджет и специальные требования',
+      'Уровень размещения и бюджет',
+      'VIP, MICE и другие специальные требования',
     ]}
-    reverse
   />
 
   <ProcessSteps
@@ -67,5 +88,4 @@ import { ORG } from '../../../data/organization/ada-tours';
     ]}
     dark
   />
-
 </BaseLayout>

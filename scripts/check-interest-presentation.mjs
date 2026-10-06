@@ -75,9 +75,14 @@ for(const file of readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.ht
   const form=html.slice(footerStart).match(/<form\b[\s\S]*?<\/form>/)?.[0]??'';
   for(const name of ['name','phone','phone_country','phone_dial','email','comment','contact_method','entity_id','tour_id','page_url','locale','company_website']) assert.ok(form.includes(`name="${name}"`),`${file}: ${name}`);
   assert.ok(form.includes('data-lead-status'),`${file}: lead status region`);
+  assert.ok(form.includes('data-lead-title='),`${file}: modal title context`);
+  assert.ok(form.includes('data-phone-option-flag-src='),`${file}: real country flag sources`);
   assert.ok(form.includes('/privacy/'),`${file}: privacy link`);
   assert.ok(form.includes('/personal-data/'),`${file}: personal data link`);
   assert.ok(!form.includes('onsubmit="return false;"'),`${file}: old submission blocker removed`);
+  const modalCtas=[...html.matchAll(/<a\\b[^>]*data-lead-modal="true"[^>]*>/g)].map(match=>match[0]);
+  assert.ok(modalCtas.length>=1,`${file}: at least one modal lead CTA`);
+  for(const tag of modalCtas) assert.ok(/href="#request"/.test(tag),`${file}: modal CTA fallback stays on the same page`);
   assert.ok(html.includes('class="footer__request" href="#request"'));
   pages++;
 }

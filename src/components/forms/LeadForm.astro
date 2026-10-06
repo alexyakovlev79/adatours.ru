@@ -28,7 +28,14 @@ const personalDataHref = withBase('/personal-data/');
       <h2>{title}</h2>
     </div>
 
-    <form class="form" data-lead-form data-lead-form-version="2" method="post" novalidate>
+    <form
+      class="form"
+      data-lead-form
+      data-lead-form-version="3"
+      data-lead-title={title}
+      method="post"
+      novalidate
+    >
       <input type="hidden" name="entity_id" value={entityId} />
       <input type="hidden" name="tour_id" value={tourId} />
       <input type="hidden" name="page_url" value={pageUrl} />
@@ -66,6 +73,28 @@ const personalDataHref = withBase('/personal-data/');
         />
       </label>
 
+      <fieldset class="contact-method">
+        <legend>Как с вами связаться</legend>
+        <div class="contact-method__options">
+          <label class="contact-method__option">
+            <input type="radio" name="contact_method" value="phone" disabled />
+            <span>Телефон</span>
+          </label>
+          <label class="contact-method__option">
+            <input type="radio" name="contact_method" value="whatsapp" disabled />
+            <span>WhatsApp</span>
+          </label>
+          <label class="contact-method__option">
+            <input type="radio" name="contact_method" value="telegram" disabled />
+            <span>Telegram</span>
+          </label>
+          <label class="contact-method__option">
+            <input type="radio" name="contact_method" value="email" disabled />
+            <span>Email</span>
+          </label>
+        </div>
+      </fieldset>
+
       <label>
         <span>Комментарий</span>
         <textarea
@@ -75,28 +104,6 @@ const personalDataHref = withBase('/personal-data/');
           placeholder="Даты, состав группы, пожелания"
         ></textarea>
       </label>
-
-      <fieldset class="contact-method">
-        <legend>Как с вами связаться</legend>
-        <div class="contact-method__options">
-          <label class="contact-method__option">
-            <input type="radio" name="contact_method" value="phone" checked />
-            <span>Телефон</span>
-          </label>
-          <label class="contact-method__option">
-            <input type="radio" name="contact_method" value="whatsapp" />
-            <span>WhatsApp</span>
-          </label>
-          <label class="contact-method__option">
-            <input type="radio" name="contact_method" value="telegram" />
-            <span>Telegram</span>
-          </label>
-          <label class="contact-method__option">
-            <input type="radio" name="contact_method" value="email" />
-            <span>Email</span>
-          </label>
-        </div>
-      </fieldset>
 
       <button type="submit">Оставить заявку <span aria-hidden="true">↗</span></button>
 
@@ -152,17 +159,148 @@ const personalDataHref = withBase('/personal-data/');
   const phoneMeta = (input, dialInput) => {
     const mask = input.dataset.mask || '';
     const dial = dialInput.value || input.dataset.dial || '';
-    const pattern = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
+    const rest = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
+    const pattern = rest.replace(/^[\s-]+/, '');
     return {
       expectedDigits: (pattern.match(/9/g) || []).length,
       dialDigits: dial.replace(/\D/g, ''),
     };
   };
 
-  document.querySelectorAll('[data-lead-form]').forEach((form) => {
-    if (!(form instanceof HTMLFormElement) || form.dataset.leadBound === 'true') return;
-    form.dataset.leadBound = 'true';
+  const form = document.querySelector('[data-lead-form]');
+  let overlay = null;
+  let lastOpener = null;
+  let homeMarker = null;
 
+  const restoreFormHome = () => {
+    if (!(form instanceof HTMLFormElement) || !(homeMarker instanceof Comment) || !homeMarker.parentNode) return;
+    form.classList.remove('form--modal');
+    homeMarker.parentNode.insertBefore(form, homeMarker.nextSibling);
+  };
+
+  const closeModal = () => {
+    if (!(overlay instanceof HTMLElement)) return;
+    const oldOverlay = overlay;
+    overlay = null;
+    restoreFormHome();
+    oldOverlay.remove();
+    document.body.classList.remove('lead-modal-open');
+    document.removeEventListener('keydown', onModalKeydown);
+    if (lastOpener instanceof HTMLElement) lastOpener.focus();
+    lastOpener = null;
+  };
+
+  const onModalKeydown = (event) => {
+    if (!(overlay instanceof HTMLElement)) return;
+
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      closeModal();
+      return;
+    }
+
+    if (event.key !== 'Tab') return;
+    const focusable = Array.from(
+      overlay.querySelectorAll('button:not([disabled]),input:not([disabled]),textarea:not([disabled]),a[href]')
+    ).filter((element) => element instanceof HTMLElement && element.offsetParent !== null);
+
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  };
+
+  const openModal = (opener) => {
+    if (!(form instanceof HTMLFormElement) || overlay) return;
+
+    if (!(homeMarker instanceof Comment)) {
+      homeMarker = document.createComment('adatours-lead-form-home');
+      form.parentNode?.insertBefore(homeMarker, form);
+    }
+
+    lastOpener = opener instanceof HTMLElement ? opener : document.activeElement;
+
+    const nextOverlay = document.createElement('div');
+    nextOverlay.className = 'adatours-modal-overlay';
+    nextOverlay.setAttribute('data-lead-modal-overlay', '');
+
+    const dialog = document.createElement('div');
+    dialog.className = 'adatours-modal';
+    dialog.setAttribute('role', 'dialog');
+    dialog.setAttribute('aria-modal', 'true');
+    dialog.setAttribute('aria-labelledby', 'adatours-modal-title');
+
+    const close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'adatours-modal-close';
+    close.setAttribute('aria-label', 'Закрыть форму');
+
+    const head = document.createElement('div');
+    head.className = 'adatours-modal-head';
+
+    const heading = document.createElement('h2');
+    heading.className = 'adatours-modal-title';
+    heading.id = 'adatours-modal-title';
+    heading.textContent = form.dataset.leadTitle || 'Оставить заявку';
+
+    const lead = document.createElement('p');
+    lead.className = 'adatours-modal-lead';
+    lead.textContent = 'Оставьте контакты и коротко опишите поездку. Мы свяжемся с вами и уточним детали.';
+
+    head.append(heading, lead);
+    dialog.append(close, head);
+
+    form.hidden = false;
+    form.classList.add('form--modal');
+    dialog.appendChild(form);
+    nextOverlay.appendChild(dialog);
+    document.body.appendChild(nextOverlay);
+    overlay = nextOverlay;
+    document.body.classList.add('lead-modal-open');
+
+    const status = form.querySelector('[data-lead-status]');
+    if (status instanceof HTMLElement && !form.dataset.leadSent) {
+      status.textContent = '';
+      status.classList.remove('is-error', 'is-success');
+    }
+
+    close.addEventListener('click', closeModal);
+    nextOverlay.addEventListener('mousedown', (event) => {
+      if (event.target === nextOverlay) closeModal();
+    });
+    document.addEventListener('keydown', onModalKeydown);
+
+    const nameInput = form.querySelector('input[name="name"]');
+    window.setTimeout(() => {
+      if (nameInput instanceof HTMLInputElement) nameInput.focus();
+    }, 0);
+  };
+
+  const isLeadTrigger = (anchor) => {
+    if (!(anchor instanceof HTMLAnchorElement)) return false;
+    if (anchor.dataset.leadModal === 'true') return true;
+    const label = (anchor.textContent || '').replace(/↗/g, '').replace(/\s+/g, ' ').trim().toLocaleLowerCase('ru');
+    return label === 'оставить заявку';
+  };
+
+  document.addEventListener('click', (event) => {
+    if (!(event.target instanceof Element)) return;
+    const anchor = event.target.closest('a[href]');
+    if (!(anchor instanceof HTMLAnchorElement) || !isLeadTrigger(anchor)) return;
+    if (event instanceof MouseEvent && (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)) return;
+
+    event.preventDefault();
+    openModal(anchor);
+  });
+
+  if (form instanceof HTMLFormElement) {
     const nameInput = form.querySelector('input[name="name"]');
     const phoneInput = form.querySelector('[data-phone-input]');
     const phoneCountryInput = form.querySelector('[data-phone-country]');
@@ -177,183 +315,195 @@ const personalDataHref = withBase('/personal-data/');
     const submit = form.querySelector('button[type="submit"]');
     const status = form.querySelector('[data-lead-status]');
     const phoneControl = form.querySelector('.phone-field__control');
+    const contactChoices = Array.from(form.querySelectorAll('input[name="contact_method"]'));
 
-    if (!(nameInput instanceof HTMLInputElement) ||
-        !(phoneInput instanceof HTMLInputElement) ||
-        !(phoneCountryInput instanceof HTMLInputElement) ||
-        !(phoneDialInput instanceof HTMLInputElement) ||
-        !(emailInput instanceof HTMLInputElement) ||
-        !(commentInput instanceof HTMLTextAreaElement) ||
-        !(honeypotInput instanceof HTMLInputElement) ||
-        !(entityInput instanceof HTMLInputElement) ||
-        !(tourInput instanceof HTMLInputElement) ||
-        !(pageInput instanceof HTMLInputElement) ||
-        !(localeInput instanceof HTMLInputElement) ||
-        !(submit instanceof HTMLButtonElement) ||
-        !(status instanceof HTMLElement)) return;
+    if (nameInput instanceof HTMLInputElement &&
+        phoneInput instanceof HTMLInputElement &&
+        phoneCountryInput instanceof HTMLInputElement &&
+        phoneDialInput instanceof HTMLInputElement &&
+        emailInput instanceof HTMLInputElement &&
+        commentInput instanceof HTMLTextAreaElement &&
+        honeypotInput instanceof HTMLInputElement &&
+        entityInput instanceof HTMLInputElement &&
+        tourInput instanceof HTMLInputElement &&
+        pageInput instanceof HTMLInputElement &&
+        localeInput instanceof HTMLInputElement &&
+        submit instanceof HTMLButtonElement &&
+        status instanceof HTMLElement) {
+      const startedAt = Date.now();
 
-    const startedAt = Date.now();
-
-    const setStatus = (message, type = '') => {
-      status.textContent = message;
-      status.classList.toggle('is-error', type === 'error');
-      status.classList.toggle('is-success', type === 'success');
-    };
-
-    const finishSuccess = () => {
-      setStatus('Спасибо! Заявка отправлена. Мы свяжемся с вами.', 'success');
-      showSuccessNotice();
-      window.setTimeout(() => {
-        form.hidden = true;
-      }, 650);
-    };
-
-    const resetValidation = () => {
-      nameInput.setAttribute('aria-invalid', 'false');
-      phoneInput.setAttribute('aria-invalid', 'false');
-      emailInput.setAttribute('aria-invalid', 'false');
-      phoneControl?.classList.remove('is-invalid');
-      setStatus('');
-    };
-
-    const validate = () => {
-      resetValidation();
-
-      if (!nameInput.value.trim()) {
-        nameInput.setAttribute('aria-invalid', 'true');
-        nameInput.focus();
-        setStatus('Укажите имя.', 'error');
-        return false;
-      }
-
-      const hasPhone = Boolean(phoneInput.value.trim());
-      const hasEmail = Boolean(emailInput.value.trim());
-
-      if (!hasPhone && !hasEmail) {
-        phoneInput.setAttribute('aria-invalid', 'true');
-        emailInput.setAttribute('aria-invalid', 'true');
-        phoneControl?.classList.add('is-invalid');
-        phoneInput.focus();
-        setStatus('Укажите телефон или email.', 'error');
-        return false;
-      }
-
-      if (hasPhone) {
-        const { expectedDigits } = phoneMeta(phoneInput, phoneDialInput);
-        const actualDigits = (phoneInput.value.match(/\d/g) || []).length;
-        if (!expectedDigits || actualDigits !== expectedDigits) {
-          phoneInput.setAttribute('aria-invalid', 'true');
-          phoneControl?.classList.add('is-invalid');
-          phoneInput.focus();
-          setStatus('Проверьте номер телефона.', 'error');
-          return false;
-        }
-      }
-
-      if (hasEmail && !emailInput.validity.valid) {
-        emailInput.setAttribute('aria-invalid', 'true');
-        emailInput.focus();
-        setStatus('Проверьте email.', 'error');
-        return false;
-      }
-
-      const method = form.querySelector('input[name="contact_method"]:checked');
-      if (!(method instanceof HTMLInputElement)) {
-        setStatus('Выберите способ связи.', 'error');
-        return false;
-      }
-
-      if (method.value === 'email' && !hasEmail) {
-        emailInput.setAttribute('aria-invalid', 'true');
-        emailInput.focus();
-        setStatus('Для связи по email укажите email.', 'error');
-        return false;
-      }
-
-      if (['phone', 'whatsapp', 'telegram'].includes(method.value) && !hasPhone) {
-        phoneInput.setAttribute('aria-invalid', 'true');
-        phoneControl?.classList.add('is-invalid');
-        phoneInput.focus();
-        setStatus('Для выбранного способа связи укажите телефон.', 'error');
-        return false;
-      }
-
-      return true;
-    };
-
-    nameInput.addEventListener('input', () => nameInput.setAttribute('aria-invalid', 'false'));
-    emailInput.addEventListener('input', () => emailInput.setAttribute('aria-invalid', 'false'));
-    phoneInput.addEventListener('input', () => {
-      phoneInput.setAttribute('aria-invalid', 'false');
-      phoneControl?.classList.remove('is-invalid');
-    });
-
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      if (!validate()) return;
-
-      if (honeypotInput.value) {
-        finishSuccess();
-        return;
-      }
-
-      if (!FORM_ENDPOINT) {
-        setStatus('Отправка заявки пока не подключена. Попробуйте связаться с нами напрямую.', 'error');
-        return;
-      }
-
-      const method = form.querySelector('input[name="contact_method"]:checked');
-      const { dialDigits } = phoneMeta(phoneInput, phoneDialInput);
-      const localDigits = phoneInput.value.replace(/\D/g, '');
-      const normalizedPhone = localDigits ? `+${dialDigits}${localDigits}` : '';
-
-      const payload = {
-        site: 'adatours',
-        lang: localeInput.value || 'ru',
-        full_name: nameInput.value.trim(),
-        phone: normalizedPhone,
-        phone_country: phoneCountryInput.value,
-        email: emailInput.value.trim(),
-        comment: commentInput.value.trim(),
-        contact_method: method instanceof HTMLInputElement ? method.value : '',
-        entity_id: entityInput.value,
-        tour_id: tourInput.value,
-        company_website: honeypotInput.value,
-        page_url: window.location.href,
-        canonical_url: pageInput.value,
-        referrer: document.referrer || '',
-        utm: readTracking(),
-        form_started_at: new Date(startedAt).toISOString(),
-        submitted_at: new Date().toISOString(),
+      const setStatus = (message, type = '') => {
+        status.textContent = message;
+        status.classList.toggle('is-error', type === 'error');
+        status.classList.toggle('is-success', type === 'success');
       };
 
-      submit.disabled = true;
-      form.setAttribute('aria-busy', 'true');
-      setStatus('Отправляем заявку…');
+      const updateContactMethods = () => {
+        const hasPhone = Boolean(phoneInput.value.trim());
+        const hasEmail = Boolean(emailInput.value.trim());
 
-      let sent = false;
-      try {
-        const response = await fetch(FORM_ENDPOINT, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          credentials: 'omit',
-          body: JSON.stringify(payload),
-        });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        for (const choice of contactChoices) {
+          if (!(choice instanceof HTMLInputElement)) continue;
+          const available = choice.value === 'email' ? hasEmail : hasPhone;
+          choice.disabled = !available;
+          if (!available && choice.checked) choice.checked = false;
+        }
+      };
 
-        sent = true;
-        document.dispatchEvent(new CustomEvent('adatours:lead-success', {
-          detail: { lang: payload.lang, entityId: payload.entity_id, tourId: payload.tour_id },
-        }));
-        finishSuccess();
-      } catch (_) {
-        setStatus('Не удалось отправить заявку. Попробуйте еще раз чуть позже.', 'error');
-      } finally {
-        form.setAttribute('aria-busy', 'false');
-        if (!sent) submit.disabled = false;
-      }
-    });
-  });
+      const finishSuccess = () => {
+        form.dataset.leadSent = 'true';
+        setStatus('Спасибо! Заявка отправлена. Мы свяжемся с вами.', 'success');
+        showSuccessNotice();
+
+        if (overlay instanceof HTMLElement) {
+          window.setTimeout(closeModal, 650);
+        } else {
+          window.setTimeout(() => {
+            form.hidden = true;
+          }, 650);
+        }
+      };
+
+      const resetValidation = () => {
+        nameInput.setAttribute('aria-invalid', 'false');
+        phoneInput.setAttribute('aria-invalid', 'false');
+        emailInput.setAttribute('aria-invalid', 'false');
+        phoneControl?.classList.remove('is-invalid');
+        setStatus('');
+      };
+
+      const validate = () => {
+        resetValidation();
+
+        if (!nameInput.value.trim()) {
+          nameInput.setAttribute('aria-invalid', 'true');
+          nameInput.focus();
+          setStatus('Укажите имя.', 'error');
+          return false;
+        }
+
+        const hasPhone = Boolean(phoneInput.value.trim());
+        const hasEmail = Boolean(emailInput.value.trim());
+
+        if (!hasPhone && !hasEmail) {
+          phoneInput.setAttribute('aria-invalid', 'true');
+          emailInput.setAttribute('aria-invalid', 'true');
+          phoneControl?.classList.add('is-invalid');
+          phoneInput.focus();
+          setStatus('Укажите телефон или email.', 'error');
+          return false;
+        }
+
+        if (hasPhone) {
+          const { expectedDigits } = phoneMeta(phoneInput, phoneDialInput);
+          const actualDigits = (phoneInput.value.match(/\d/g) || []).length;
+          if (!expectedDigits || actualDigits !== expectedDigits) {
+            phoneInput.setAttribute('aria-invalid', 'true');
+            phoneControl?.classList.add('is-invalid');
+            phoneInput.focus();
+            setStatus('Проверьте номер телефона.', 'error');
+            return false;
+          }
+        }
+
+        if (hasEmail && !emailInput.validity.valid) {
+          emailInput.setAttribute('aria-invalid', 'true');
+          emailInput.focus();
+          setStatus('Проверьте email.', 'error');
+          return false;
+        }
+
+        const method = form.querySelector('input[name="contact_method"]:checked');
+        if (!(method instanceof HTMLInputElement)) {
+          setStatus('Выберите способ связи.', 'error');
+          return false;
+        }
+
+        return true;
+      };
+
+      nameInput.addEventListener('input', () => nameInput.setAttribute('aria-invalid', 'false'));
+      phoneInput.addEventListener('input', () => {
+        phoneInput.setAttribute('aria-invalid', 'false');
+        phoneControl?.classList.remove('is-invalid');
+        updateContactMethods();
+      });
+      emailInput.addEventListener('input', () => {
+        emailInput.setAttribute('aria-invalid', 'false');
+        updateContactMethods();
+      });
+
+      updateContactMethods();
+      window.setTimeout(updateContactMethods, 0);
+      window.addEventListener('pageshow', updateContactMethods);
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        if (!validate()) return;
+
+        if (honeypotInput.value) {
+          finishSuccess();
+          return;
+        }
+
+        if (!FORM_ENDPOINT) {
+          setStatus('Отправка заявки пока не подключена. Попробуйте связаться с нами напрямую.', 'error');
+          return;
+        }
+
+        const method = form.querySelector('input[name="contact_method"]:checked');
+        const { dialDigits } = phoneMeta(phoneInput, phoneDialInput);
+        const localDigits = phoneInput.value.replace(/\D/g, '');
+        const normalizedPhone = localDigits ? `+${dialDigits}${localDigits}` : '';
+
+        const payload = {
+          site: 'adatours',
+          lang: localeInput.value || 'ru',
+          full_name: nameInput.value.trim(),
+          phone: normalizedPhone,
+          phone_country: phoneCountryInput.value,
+          email: emailInput.value.trim(),
+          comment: commentInput.value.trim(),
+          contact_method: method instanceof HTMLInputElement ? method.value : '',
+          entity_id: entityInput.value,
+          tour_id: tourInput.value,
+          company_website: honeypotInput.value,
+          page_url: window.location.href,
+          canonical_url: pageInput.value,
+          referrer: document.referrer || '',
+          utm: readTracking(),
+          form_started_at: new Date(startedAt).toISOString(),
+          submitted_at: new Date().toISOString(),
+        };
+
+        submit.disabled = true;
+        form.setAttribute('aria-busy', 'true');
+        setStatus('Отправляем заявку…');
+
+        let sent = false;
+        try {
+          const response = await fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'omit',
+            body: JSON.stringify(payload),
+          });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+          sent = true;
+          document.dispatchEvent(new CustomEvent('adatours:lead-success', {
+            detail: { lang: payload.lang, entityId: payload.entity_id, tourId: payload.tour_id },
+          }));
+          finishSuccess();
+        } catch (_) {
+          setStatus('Не удалось отправить заявку. Попробуйте еще раз чуть позже.', 'error');
+        } finally {
+          form.setAttribute('aria-busy', 'false');
+          if (!sent) submit.disabled = false;
+        }
+      });
+    }
+  }
 </script>
 
 <style>
@@ -469,7 +619,7 @@ const personalDataHref = withBase('/personal-data/');
     line-height: 1.2;
     letter-spacing: .01em;
     text-transform: none;
-    transition: color 180ms ease, border-color 180ms ease;
+    transition: color 180ms ease, border-color 180ms ease, opacity 180ms ease;
     border-bottom: 2px solid transparent;
   }
 
@@ -480,6 +630,12 @@ const personalDataHref = withBase('/personal-data/');
   .form .contact-method__option input:checked + span {
     color: var(--color-gold);
     border-bottom-color: var(--color-gold);
+  }
+
+  .form .contact-method__option input:disabled + span {
+    color: rgba(255,255,255,.28);
+    cursor: not-allowed;
+    opacity: .72;
   }
 
   .form .contact-method__option input:focus-visible + span {
@@ -549,6 +705,214 @@ const personalDataHref = withBase('/personal-data/');
     pointer-events: none !important;
   }
 
+  :global(body.lead-modal-open) {
+    overflow: hidden;
+  }
+
+  :global(.adatours-modal-overlay) {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(19,20,18,.72);
+    animation: adatours-fade-in 140ms ease-out;
+  }
+
+  :global(.adatours-modal) {
+    position: relative;
+    width: min(760px, 100%);
+    max-height: calc(100dvh - 48px);
+    overflow: auto;
+    padding: 30px 44px;
+    border-radius: 12px;
+    color: var(--color-ink);
+    background: var(--color-bg);
+    box-shadow: 0 28px 80px rgba(0,0,0,.28);
+    animation: adatours-modal-in 160ms ease-out;
+  }
+
+  :global(.adatours-modal-close) {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    color: #6f6a62;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  :global(.adatours-modal-close)::before,
+  :global(.adatours-modal-close)::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 22px;
+    height: 1.5px;
+    background: currentColor;
+  }
+
+  :global(.adatours-modal-close)::before {
+    transform: rotate(45deg);
+  }
+
+  :global(.adatours-modal-close)::after {
+    transform: rotate(-45deg);
+  }
+
+  :global(.adatours-modal-head) {
+    padding-right: 44px;
+    margin-bottom: 18px;
+  }
+
+  :global(.adatours-modal-title) {
+    margin: 0;
+    color: var(--color-ink-deep);
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 1.7rem + 1vw, 2.75rem);
+    line-height: 1.02;
+    letter-spacing: -.025em;
+  }
+
+  :global(.adatours-modal-lead) {
+    max-width: 590px;
+    margin: 8px 0 0;
+    color: #6f6a62;
+    font-size: .9rem;
+    line-height: 1.55;
+  }
+
+  :global(.adatours-modal) .form {
+    gap: 12px;
+    padding-top: 0;
+    color: var(--color-ink);
+  }
+
+  :global(.adatours-modal) .form label,
+  :global(.adatours-modal) .form-field {
+    gap: 6px;
+  }
+
+  :global(.adatours-modal) .form label span,
+  :global(.adatours-modal) .form-field__label,
+  :global(.adatours-modal) .contact-method legend {
+    color: #6f6a62;
+  }
+
+  :global(.adatours-modal) .form > label > input,
+  :global(.adatours-modal) .form > label > textarea {
+    padding: 12px 14px;
+    border: 1px solid #c9c5bd;
+    color: var(--color-ink);
+    background: #fff;
+  }
+
+  :global(.adatours-modal) .form > label > input:focus,
+  :global(.adatours-modal) .form > label > textarea:focus {
+    border-color: var(--color-gold-deep);
+    box-shadow: 0 0 0 2px rgba(200,154,32,.12);
+  }
+
+  :global(.adatours-modal) .form > label > textarea {
+    height: 104px;
+    min-height: 104px;
+    resize: vertical;
+  }
+
+  :global(.adatours-modal) .form :global(.phone-field__control) {
+    min-height: 52px;
+    border: 1px solid #c9c5bd;
+    background: #fff;
+  }
+
+  :global(.adatours-modal) .form :global(.phone-field__control:focus-within) {
+    border-color: var(--color-gold-deep);
+    box-shadow: 0 0 0 2px rgba(200,154,32,.12);
+  }
+
+  :global(.adatours-modal) .form :global(.phone-field__country-toggle),
+  :global(.adatours-modal) .form :global(.phone-field__input) {
+    color: var(--color-ink);
+    background: #fff;
+  }
+
+  :global(.adatours-modal) .form :global(.phone-field__country-toggle) {
+    padding-left: 10px;
+    border-right-color: #e4dfd5;
+  }
+
+  :global(.adatours-modal) .form :global(.phone-field__input::placeholder) {
+    color: #8b857c;
+  }
+
+  :global(.adatours-modal) .contact-method legend {
+    margin-bottom: 8px;
+  }
+
+  :global(.adatours-modal) .contact-method__options {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 8px;
+  }
+
+  :global(.adatours-modal) .form .contact-method__option {
+    display: block;
+  }
+
+  :global(.adatours-modal) .form .contact-method__option span {
+    display: flex;
+    min-height: 42px;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 10px;
+    border: 1px solid #c9c5bd;
+    color: #514c45;
+    background: #fff;
+    font-size: .78rem;
+    font-weight: 600;
+  }
+
+  :global(.adatours-modal) .form .contact-method__option input:checked + span {
+    border-color: var(--color-gold-deep);
+    color: var(--color-ink-deep);
+    background: var(--color-gold-soft);
+  }
+
+  :global(.adatours-modal) .form .contact-method__option input:disabled + span {
+    border-color: #e6e1d9;
+    color: #a6a096;
+    background: #f4f1ec;
+    opacity: .62;
+  }
+
+  :global(.adatours-modal) .form button[type="submit"] {
+    min-height: 50px;
+    margin-top: 2px;
+  }
+
+  :global(.adatours-modal) .form__status {
+    margin: -2px 0 0;
+    color: #6f6a62;
+  }
+
+  :global(.adatours-modal) .form__status.is-error {
+    color: #9f2d1e;
+  }
+
+  :global(.adatours-modal) .form__status.is-success {
+    color: #147a45;
+  }
+
+  :global(.adatours-modal) .form__consent {
+    margin: -2px 0 0;
+    color: #807970;
+  }
+
   :global(.adatours-success-toast) {
     position: fixed;
     left: 50%;
@@ -557,9 +921,9 @@ const personalDataHref = withBase('/personal-data/');
     transform: translateX(-50%);
     max-width: min(560px, calc(100vw - 32px));
     padding: 14px 18px;
-    border: 1px solid rgba(155,226,184,.4);
-    border-radius: 6px;
-    color: #0d5b34;
+    border: 1px solid rgba(20,122,69,.28);
+    border-radius: 8px;
+    color: #147a45;
     background: #fff;
     box-shadow: 0 14px 32px rgba(0,0,0,.22);
     font-size: .9rem;
@@ -568,15 +932,65 @@ const personalDataHref = withBase('/personal-data/');
     text-align: center;
   }
 
+  @keyframes adatours-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes adatours-modal-in {
+    from { opacity: 0; transform: translateY(8px) scale(.99); }
+    to { opacity: 1; transform: none; }
+  }
+
   @media (max-width: 800px) {
     .lead__grid {
       grid-template-columns: 1fr;
+    }
+
+    :global(.adatours-modal-overlay) {
+      align-items: flex-start;
+      padding: 12px;
+      overflow: auto;
+    }
+
+    :global(.adatours-modal) {
+      width: 100%;
+      max-height: none;
+      margin: auto 0;
+      padding: 26px 20px 24px;
+      border-radius: 10px;
+    }
+
+    :global(.adatours-modal-head) {
+      padding-right: 34px;
+      margin-bottom: 18px;
+    }
+
+    :global(.adatours-modal-title) {
+      font-size: 2rem;
+    }
+
+    :global(.adatours-modal) .contact-method__options {
+      grid-template-columns: repeat(2, minmax(0,1fr));
     }
   }
 
   @media (max-width: 420px) {
     .contact-method__options {
       gap: 16px 22px;
+    }
+
+    :global(.adatours-modal-overlay) {
+      padding: 8px;
+    }
+
+    :global(.adatours-modal) {
+      padding: 24px 16px 22px;
+      border-radius: 8px;
+    }
+
+    :global(.adatours-modal) .contact-method__options {
+      gap: 8px;
     }
   }
 </style>

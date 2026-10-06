@@ -4,10 +4,9 @@ import { PHONE_COUNTRIES } from '../../data/phone-countries';
 const DEFAULT_ISO = 'ru';
 const defaultCountry = PHONE_COUNTRIES.find((country) => country.iso2 === DEFAULT_ISO) ?? PHONE_COUNTRIES[0];
 const flagUrl = (iso2: string) => `https://flagcdn.com/24x18/${iso2}.png`;
-const flagEmoji = (iso2: string) =>
-  iso2.toUpperCase().replace(/[A-Z]/g, (char) => String.fromCodePoint(127397 + char.charCodeAt(0)));
 const placeholderFromMask = (country: { mask: string; dial: string }) => {
-  const pattern = country.mask.startsWith(country.dial) ? country.mask.slice(country.dial.length) : country.mask;
+  const rest = country.mask.startsWith(country.dial) ? country.mask.slice(country.dial.length) : country.mask;
+  const pattern = rest.replace(/^[\\s-]+/, '');
   return pattern.replace(/9/g, '0').trim();
 };
 ---
@@ -22,7 +21,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       aria-label={`Выбрать страну: ${defaultCountry.name} ${defaultCountry.dial}`}
     >
       <span class="phone-field__flag-wrap" aria-hidden="true">
-        <span class="phone-field__flag-fallback" data-phone-flag-fallback>{flagEmoji(defaultCountry.iso2)}</span>
+        <span class="phone-field__flag-fallback" data-phone-flag-fallback>🌐</span>
         <img
           class="phone-field__flag"
           src={flagUrl(defaultCountry.iso2)}
@@ -64,7 +63,17 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
           data-mask={country.mask}
         >
           <span class="phone-field__flag-wrap" aria-hidden="true">
-            <span class="phone-field__flag-fallback">{flagEmoji(country.iso2)}</span>
+            <span class="phone-field__flag-fallback">🌐</span>
+            <img
+              class="phone-field__flag"
+              alt=""
+              width="24"
+              height="18"
+              referrerpolicy="no-referrer"
+              data-phone-option-flag
+              data-phone-option-flag-src={flagUrl(country.iso2)}
+              hidden
+            />
           </span>
           <span class="phone-field__country-name">{country.name}</span>
           <span class="phone-field__option-code">{country.dial}</span>
@@ -79,13 +88,9 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
 
 <script>
   const flagUrl = (iso2) => `https://flagcdn.com/24x18/${iso2}.png`;
-  const flagEmoji = (iso2) =>
-    String(iso2 || '')
-      .toUpperCase()
-      .replace(/[A-Z]/g, (char) => String.fromCodePoint(127397 + char.charCodeAt(0)));
-
   const maskParts = (mask, dial) => {
-    const pattern = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
+    const rest = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
+    const pattern = rest.replace(/^[\\s-]+/, '');
     return {
       pattern,
       digits: (pattern.match(/9/g) || []).length,
@@ -179,7 +184,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       if (!(option instanceof HTMLButtonElement)) return;
       const { iso2 = 'ru', dial: countryDial = '+7', mask = '+7(999) 999-99-99', name = 'Russia (Россия)' } = option.dataset;
 
-      flagFallback.textContent = flagEmoji(iso2);
+      flagFallback.textContent = '🌐';
       flag.hidden = true;
       flag.src = flagUrl(iso2);
       if (flag.complete && flag.naturalWidth > 0) flag.hidden = false;
@@ -197,7 +202,30 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       if (focusInput) input.focus();
     };
 
+    let optionFlagsHydrated = false;
+    const hydrateOptionFlags = () => {
+      if (optionFlagsHydrated) return;
+      optionFlagsHydrated = true;
+      menu.querySelectorAll('[data-phone-option-flag]').forEach((image) => {
+        if (!(image instanceof HTMLImageElement)) return;
+        const source = image.dataset.phoneOptionFlagSrc;
+        if (!source) return;
+
+        const showFallback = () => {
+          image.hidden = true;
+        };
+        const showImage = () => {
+          image.hidden = false;
+        };
+        image.addEventListener('error', showFallback, { once: true });
+        image.addEventListener('load', showImage, { once: true });
+        image.src = source;
+        if (image.complete && image.naturalWidth > 0) showImage();
+      });
+    };
+
     toggle.addEventListener('click', () => {
+      hydrateOptionFlags();
       const open = !menu.classList.contains('is-open');
       menu.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');

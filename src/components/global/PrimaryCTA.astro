@@ -13,10 +13,16 @@ const {
   variant = 'gold',
 } = Astro.props;
 
-const resolvedHref = withBase(href);
+const normalizedLabel = label.trim().toLocaleLowerCase('ru');
+const opensLeadModal = href === '/contacts/' || normalizedLabel === 'оставить заявку';
+const resolvedHref = opensLeadModal ? '#request' : withBase(href);
 ---
 
-<a class:list={['cta', `cta--${variant}`]} href={resolvedHref}>
+<a
+  class:list={['cta', `cta--${variant}`]}
+  href={resolvedHref}
+  data-lead-modal={opensLeadModal ? 'true' : undefined}
+>
   <span>{label}</span>
   <span aria-hidden="true">↗</span>
 </a>

@@ -151,7 +151,7 @@ itinerary:
   - Сантьяго-де-Чили
   text: После завтрака трансфер в аэропорт и перелет в Сантьяго-де-Чили. По прибытии встреча с водителем и трансфер в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/santiago-de-chile.png
+  - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: 'На фото: Сантьяго де Чили'
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, город Буэнос Айрес'
@@ -166,7 +166,7 @@ itinerary:
 
     С холма Санта-Люсия открывается вид на центр города. Затем экскурсия продолжается через современные районы Витакура, Лас-Кондес и Провиденсия, вдоль реки Мапочо и главных городских проспектов.
   images:
-  - src: https://brasiltours.ru/image/santiago-de-chile.png
+  - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: 'На фото: Сантьяго де Чили'
 - day: 11
   title: Вальпараисо и Винья-дель-Мар
@@ -191,7 +191,7 @@ itinerary:
   - Сантьяго-де-Чили
   text: Завтрак. Трансфер в аэропорт к международному рейсу.
   images:
-  - src: https://brasiltours.ru/image/santiago-de-chile.png
+  - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: 'На фото: Сантьяго де Чили'
 - excursionRef: excursion_source_rio_nochyu
   places: []
@@ -395,3 +395,4 @@ themes: []
 В основной стоимости уже есть внутренние перелеты между Рио-де-Жанейро, Игуасу, Буэнос-Айресом и Сантьяго. Основные экскурсии проходят в группе с русскоговорящим гидом, кроме поездки в Вальпараисо с англоговорящим гидом. Трансферы также групповые.
 
 Дополнительные экскурсии оплачиваются отдельно. Для части из них действуют 2 цены на одну и ту же услугу; обе цены сохранены.
+

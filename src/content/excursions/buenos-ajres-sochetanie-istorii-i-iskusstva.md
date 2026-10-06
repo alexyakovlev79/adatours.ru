@@ -19,7 +19,7 @@ hero:
   src: "https://brasiltours.ru/image/countries/brazil/buenosaires7-waifu2x-noise1-1920x.jpg"
   alt: "На фото: Флоралис Хенерика, в парке Национального Единства Буэнос-Айреса"
 gallery:
-  - src: "https://brasiltours.ru/image/buenos.png"
+  - src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp"
     alt: "На фото: Городской пейзаж Буэнос-Айреса"
   - src: "https://brasiltours.ru/image/buenos-aires.png"
     alt: "На фото: Архитектура Буэнос-Айреса, аргентина"
@@ -80,3 +80,4 @@ themes: ["theme_culture"]
 Также Вы посетите элегантный квартал ла Реколетта со знаменитым кладбищем, церковью Эль Пилар в колониальном стиле и близлежащим культурным и коммерческим центром.
 
 В программу тура включено и посещение современных районов города: Пуэрто Мадеро и парков Лезама и имени 3 Февраля.
+

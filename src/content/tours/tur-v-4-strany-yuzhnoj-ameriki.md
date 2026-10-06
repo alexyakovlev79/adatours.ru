@@ -46,7 +46,7 @@ itinerary:
 
     Сантьяго известен зелеными парками, галереями и музеями. В городе много отелей и ресторанов, поэтому первый день можно использовать для спокойной прогулки и отдыха после перелета.
   images:
-  - src: https://brasiltours.ru/image/santiago-de-chile.png
+  - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: 'На фото: столица Чили, Сантьяго -де-Чили'
 - day: 2
   title: Сантьяго-де-Чили
@@ -75,7 +75,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/puerto%20natales1.png
     alt: 'На фото: порт Пуэрто Наталес в Патагонии. Чили'
-  - src: https://brasiltours.ru/image/santiago-de-chile.png
+  - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: 'На фото: столица Чили, Сантьяго -де-Чили'
 - day: 4
   title: Пуэрто-Наталес и Торрес-дель-Пайне

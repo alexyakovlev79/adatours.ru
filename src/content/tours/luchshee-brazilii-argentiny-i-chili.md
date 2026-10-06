@@ -299,7 +299,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/chile/chi-atacama-right.jpg
     alt: Сан-Педро-де-Атакама
-  - src: https://brasiltours.ru/image/santiago-de-chile.png
+  - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 11
   title: Высокогорные лагуны Атакамы
@@ -367,7 +367,7 @@ itinerary:
 
     После завершения экскурсии предусмотрен трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/santiago-de-chile.png
+  - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 included:
 - Билеты на все включенные экскурсии.

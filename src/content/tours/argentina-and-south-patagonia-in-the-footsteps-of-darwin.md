@@ -32,7 +32,7 @@ priceFrom: 5870
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/Acunga1.png
+  src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/hero-enhanced-20261006.webp
   alt: "Аконкагуа, Аргентина"
 gallery: []
 featured: false
@@ -96,7 +96,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: https://brasiltours.ru/image/Acunga1.png
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/hero-enhanced-20261006.webp
         alt: "Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -409,3 +409,4 @@ themes: ["theme_wildlife"]
 ## Поддержка в Мендосе
 
 После возвращения из экспедиции служба поддержки может помочь с изменением или покупкой билетов, возвратом арендованного снаряжения, хранением багажа и общей информацией.
+

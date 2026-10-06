@@ -68,7 +68,7 @@ itinerary:
 
     Оставшееся время можно посвятить отдыху после перелета и первой самостоятельной прогулке по столице.
   images:
-  - src: https://brasiltours.ru/image/santiag.png
+  - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 2
   title: Сантьяго-де-Чили

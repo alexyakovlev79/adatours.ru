@@ -64,7 +64,7 @@ itinerary:
 
     За один день Сантьяго раскрывается в 2 временных пластах. В центре остаются следы колониальной и республиканской истории, а восточные районы показывают современный деловой город у подножия Анд.
   images:
-  - src: https://brasiltours.ru/image/santiag.png
+  - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 3
   title: Вальпараисо и Винья-дель-Мар

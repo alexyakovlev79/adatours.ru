@@ -81,7 +81,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/chile/chi-atacama-left.jpg
     alt: Сан-Педро-де-Атакама
-  - src: https://brasiltours.ru/image/santiag.png
+  - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - excursionRef: excursion_chile_atacama_astronomy_tour
   places: []
@@ -195,3 +195,4 @@ themes: ["theme_culture"]
 Чили вытянулась вдоль Анд и Тихого океана, поэтому даже короткий маршрут позволяет увидеть очень разные ландшафты. Сначала вы познакомитесь с Сантьяго и приморскими городами, затем перелетите на север, в район Сан-Педро-де-Атакама.
 
 Атакама находится у границ с Боливией и Аргентиной. Здесь сухие долины сменяются солончаками, вулканическими пейзажами, высокогорными озерами и гейзерами. Ночью небо можно наблюдать через профессиональные телескопы.
+

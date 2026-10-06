@@ -61,7 +61,7 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/santiag.png
+  - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили - столица Чили'
 - day: 3
   title: Вальпараисо и Винья-дель-Мар

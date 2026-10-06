@@ -231,7 +231,7 @@ itinerary:
 
     **Продолжительность экскурсии:** около 9 часов, предусмотрена остановка на обед.
   images:
-  - src: https://brasiltours.ru/image/valparaiso%20chil.png
+  - src: /media/tours/solntse-tango-vino-i-atakama/itinerary-day-11-enhanced-20261006.webp
     alt: Вальпараисо
 - day: 10
   title: Сантьяго

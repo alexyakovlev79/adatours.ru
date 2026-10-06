@@ -16,12 +16,12 @@ priceFrom: 250
 currency: USD
 priceNote: "Стоимость — $250 на человека. Для компании из нескольких человек возможна скидка; конкретный размер в исходной программе не указан."
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/mendoza-sm.jpg
+  src: /media/excursions/mendoza-tur-v-vinnuyu-dolinu/hero-enhanced-20261006.webp
   alt: Винный регион Мендосы в Аргентине
 gallery:
   - src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
     alt: Мендоса, Аргентина
-  - src: https://brasiltours.ru/image/wine%20tour.png
+  - src: /media/excursions/mendoza-tur-v-vinnuyu-dolinu/gallery-2-enhanced-20261006.webp
     alt: Дегустация вина на винодельне в Мендосе
 route:
   - Мендоса
@@ -46,3 +46,4 @@ themes: ["theme_gastronomy_wine"]
 Эта шестичасовая экскурсия посвящена винной стороне Мендосы. Вы отправитесь из города к винодельням, а главной частью программы станет дегустация вина. Здесь нет перегруженного списка остановок: смысл поездки — провести время на винодельнях и познакомиться с местным вином.
 
 Маршрут начинается в Мендосе и продолжается на винодельнях. Дегустация входит в программу вместе с трансфером и услугами гида; обед оплачивается отдельно.
+

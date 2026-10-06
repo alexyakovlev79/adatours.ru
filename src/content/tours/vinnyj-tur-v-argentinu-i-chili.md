@@ -31,7 +31,7 @@ priceFrom: 1650
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/sergey-mikheev-bztskecromg-unsplash-oblozhka.jpg
+  src: /media/tours/vinnyj-tur-v-argentinu-i-chili/hero-enhanced-20261006.webp
   alt: "Вино и танго: Аргентина и Чили"
 gallery: []
 featured: false
@@ -76,7 +76,7 @@ itinerary:
       
       После экскурсии возвращение в гостиницу.
     images:
-      - src: https://brasiltours.ru/image/buenos.png
+      - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -131,7 +131,7 @@ itinerary:
       
       **Расписание:** примерно с 20:00 до 23:45.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-geral-right.jpg
+      - src: /media/tours/vinnyj-tur-v-argentinu-i-chili/itinerary-day-2-enhanced-20261006.webp
         alt: "Аргентинская пампа и ранчо гаучо"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -172,7 +172,7 @@ itinerary:
       
       С холма открывается панорамный вид на город.
     images:
-      - src: https://brasiltours.ru/image/mendoza%20cerro%20delaglori.png
+      - src: /media/tours/argentina-puteshestvie-v-doistoricheskij-mir/itinerary-day-6-enhanced-20261006.webp
         alt: "Мендоса, Аргентина"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -213,7 +213,7 @@ itinerary:
       
       Продолжительность экскурсии - весь день.
     images:
-      - src: https://brasiltours.ru/image/wine%20tour.png
+      - src: /media/excursions/mendoza-tur-v-vinnuyu-dolinu/gallery-2-enhanced-20261006.webp
         alt: "Винодельни Мендосы"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -238,7 +238,7 @@ itinerary:
       
       Для активного отдыха в программе предложены рафтинг по реке, конные прогулки или поездка на велосипеде.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/mendoza-sm.jpg
+      - src: /media/excursions/mendoza-tur-v-vinnuyu-dolinu/hero-enhanced-20261006.webp
         alt: "Мендоса и Анды"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -289,7 +289,7 @@ itinerary:
       
       Возвращение в гостиницу.
     images:
-      - src: https://brasiltours.ru/image/santiag.png
+      - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
         alt: "Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -345,7 +345,7 @@ itinerary:
       
       После экскурсии возвращение в Сантьяго.
     images:
-      - src: https://brasiltours.ru/image/valparaiso%20chil.png
+      - src: /media/tours/solntse-tango-vino-i-atakama/itinerary-day-11-enhanced-20261006.webp
         alt: "Вальпараисо, Чили"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -396,7 +396,7 @@ itinerary:
       
       В назначенное время трансфер в аэропорт для международного перелета.
     images:
-      - src: https://brasiltours.ru/image/santiago-de-chile.png
+      - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
         alt: "Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-9"
 included:

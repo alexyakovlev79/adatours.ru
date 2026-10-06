@@ -43,7 +43,7 @@ itinerary:
       
       Остаток дня свободный. Можно отдохнуть после перелета или начать знакомство с городом самостоятельно.
     images:
-      - src: https://brasiltours.ru/image/buenos.png
+      - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -127,7 +127,7 @@ itinerary:
     text: |-
       Трансфер в аэропорт для дальнейшего вылета.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/mendoza-sm.jpg
+      - src: /media/excursions/mendoza-tur-v-vinnuyu-dolinu/hero-enhanced-20261006.webp
         alt: "Мендоса, Аргентина"
         intendedSlot: "itinerary:day-7"
 included:

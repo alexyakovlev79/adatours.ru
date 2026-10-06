@@ -346,7 +346,7 @@ priceFrom: 4763
 currency: USD
 priceNote: $4763
 hero:
-  src: https://brasiltours.ru/image/santiag.png
+  src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
   alt: Чили-Аргентина- Бразилия
 routeCountries:
 - country_chile

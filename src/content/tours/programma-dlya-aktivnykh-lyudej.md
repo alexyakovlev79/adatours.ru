@@ -204,7 +204,7 @@ itinerary:
       
       На Рапа-Нуи археологические объекты расположены в разных частях острова, и каждый день собирается вокруг отдельной темы. Аху-Акиви знакомит с восстановленными статуями и каменоломней Пуна-Пау, Оронго рассказывает о культе человека-птицы, а Рано-Рараку и Тонгарики показывают самый большой массив моаи. Завершение на Анакена добавляет пляж и время у океана после нескольких дней среди вулканических склонов и церемониальных платформ.
     images:
-      - src: https://brasiltours.ru/image/santiago-de-chile.png
+      - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
         alt: "Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -299,7 +299,7 @@ itinerary:
     text: |-
       Трансфер в аэропорт, перелет в Буэнос-Айрес и дальнейший вылет домой.
     images:
-      - src: https://brasiltours.ru/image/buenos.png
+      - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-12"
 included:

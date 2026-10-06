@@ -9,16 +9,16 @@ destinationType: "city"
 summary: "Гуаякиль: колониальная архитектура, ботанические сады, фонтаны и исторический парк с зоопарком и этнографическим музеем."
 searchAliases: []
 hero:
-  src: "https://brasiltours.ru/image/countries/equador/new/3.jpg"
+  src: "/media/destinations/guayakil/hero-enhanced-20261006.webp"
   alt: "На фото: город Гуаякиль в Зквадоре"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN15924_6.jpg"
+  - src: "/media/destinations/guayakil/gallery-1-enhanced-20261006.webp"
     alt: "На фото: город Гуаякиль в Зквадоре"
-  - src: "https://brasiltours.ru/image/catalog/category/2/8/282421283_62c2a58454.jpg"
+  - src: "/media/destinations/guayakil/gallery-2-enhanced-20261006.webp"
     alt: "На фото: город Гуаякиль в Зквадоре"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN17724_4.jpg"
+  - src: "/media/destinations/guayakil/gallery-3-enhanced-20261006.webp"
     alt: "На фото: город Гуаякиль в Зквадоре"
-  - src: "https://brasiltours.ru/image/catalog/category/8/8/889871385_a1bfd0c886.jpg"
+  - src: "/media/destinations/guayakil/gallery-4-enhanced-20261006.webp"
     alt: "На фото: город Гуаякиль в Зквадоре"
 facts: []
 featureBands: []

@@ -18,9 +18,9 @@ gallery:
     alt: "На фото: город Баньос в Эквадоре в Андах"
   - src: "/media/destinations/banos/gallery-3-enhanced-20261006.webp"
     alt: "На фото: город Баньос в Эквадоре в Андах"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_4.jpg"
+  - src: "/media/destinations/banos/gallery-4-enhanced-20261006.webp"
     alt: "На фото: город Баньос в Эквадоре в Андах"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_5.jpg"
+  - src: "/media/destinations/veracruz/gallery-4-enhanced-20261004.webp"
     alt: "На фото: город Баньос в Эквадоре в Андах"
 facts: []
 featureBands: []

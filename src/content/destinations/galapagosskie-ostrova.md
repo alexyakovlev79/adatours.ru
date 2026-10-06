@@ -12,11 +12,11 @@ hero:
   src: /media/countries/ekvador/featureBands-2-enhanced-20261002.webp
   alt: "На фото: Галапагосские острова в Эквадоре"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/g/a/galapagos-islands-bE.jpg"
+  - src: "/media/destinations/galapagosskie-ostrova/gallery-1-enhanced-20261006.webp"
     alt: "На фото: Галапагосские острова в Эквадоре"
-  - src: "https://brasiltours.ru/image/catalog/category/o/-/o-GALAPAGOS-ISLANDS-facebook.jpg"
+  - src: "/media/destinations/galapagosskie-ostrova/gallery-2-enhanced-20261006.webp"
     alt: "На фото: Галапагосские острова в Эквадоре"
-  - src: "https://brasiltours.ru/image/catalog/category/f/i/file_53_5.jpg"
+  - src: "/media/destinations/galapagosskie-ostrova/gallery-3-enhanced-20261006.webp"
     alt: "На фото: Галапагосские острова в Эквадоре"
 facts: []
 featureBands: []

@@ -82,7 +82,7 @@ itinerary:
   images:
   - src: /media/destinations/santa-krus/hero-enhanced-20261003.webp
     alt: 'На фото: Санта Крус в Боливии'
-  - src: https://brasiltours.ru/image/countries/bolivia/12.jpg
+  - src: /media/tours/krasivaya-boliviya/hero-enhanced-20261006.webp
     alt: 'На фото: парк Амборо в Боливии'
 - day: 4
   title: Санта-Крус - Сукре
@@ -96,7 +96,7 @@ itinerary:
   images:
   - src: /media/destinations/santa-krus/hero-enhanced-20261003.webp
     alt: 'На фото: Санта Крус в Боливии'
-  - src: https://brasiltours.ru/image/countries/bolivia/tatio-geyzer.png
+  - src: /media/tours/sokrovishcha-bolivii/itinerary-day-4-images-1-enhanced-20261006.webp
     alt: 'На фото: Сукре Боливия'
 - day: 5
   title: Сукре
@@ -107,7 +107,7 @@ itinerary:
 
     Вы посетите Пласа-де-Армас, собор, базилику Сан-Франсиско-Хавьера, Дом Свободы, текстильный музей ASUR и музей Реколета. С холма Чурукелла открывается вид на город. Затем возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/valley-of-the-moon-bolivia.png
+  - src: /media/tours/sokrovishcha-bolivii/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Сукре в Боливии'
 - day: 6
   title: Сукре - Потоси - Уюни
@@ -122,9 +122,9 @@ itinerary:
 
     После возвращения в Потоси переезд на автобусе в Уюни, около 4 часов. По прибытии трансфер в Palacio de Sal или Luna Salada.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-salar-left.jpg
+  - src: /media/excursions/uyuni-na-2-dnya/gallery-1-enhanced-20261006.webp
     alt: 'На фото: солончак Уюни в Боливии'
-  - src: https://brasiltours.ru/image/countries/bolivia/tatio-geyzer.png
+  - src: /media/tours/sokrovishcha-bolivii/itinerary-day-4-images-1-enhanced-20261006.webp
     alt: 'На фото: Сукре Боливия'
 - day: 7
   title: Уюни - Кольчани - Инкаваси - высокогорные лагуны
@@ -141,7 +141,7 @@ itinerary:
 
     После пересечения солончака с севера на юг дорога идет вдоль цепи вулканов к Липесу с видом на вулкан Ольягуэ. В этой части маршрута белая поверхность Уюни сменяется сухими пустынными ландшафтами, вулканами и высокогорными озерами, поэтому пейзаж заметно меняется буквально в течение одного дня. Далее - национальный резерват Эдуардо-Авароа и озера Каньяпа, Эдионда и Онда, где встречаются 3 вида фламинго Андского региона. Ночевка в Los Flamencos, ужин в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/img-20230307-wa0000.jpg
+  - src: /media/excursions/uyuni-na-2-dnya/gallery-2-enhanced-20261006.webp
     alt: 'На фото: солончак Уюни в Боливии'
 - day: 8
   title: Пустыня Силоли, Красная и Зеленая лагуны
@@ -156,7 +156,7 @@ itinerary:
 
     Прибытие в Уюни примерно в 18:00. Ночевка в Luna Salada.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-salar-left.jpg
+  - src: /media/excursions/uyuni-na-2-dnya/gallery-1-enhanced-20261006.webp
     alt: 'На фото: солончак Уюни в Боливии'
 - day: 9
   title: Уюни - Ла-Пас - Копакабана - Солнечный остров
@@ -174,7 +174,7 @@ itinerary:
 
     Возвращение в Копакабану. Вечер проходит уже на берегу озера, после длинного дня с переездами и лодкой. Ночевка в Rosario del Lago, ужин в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/img-20230307-wa0000.jpg
+  - src: /media/excursions/uyuni-na-2-dnya/gallery-2-enhanced-20261006.webp
     alt: 'На фото: солончак Уюни в Боливии'
   - src: /media/excursions/la-pas-siti-tur/hero-enhanced-20261006.webp
     alt: 'На фото: рынок в Ла-Пасе в Боливии'
@@ -236,7 +236,7 @@ priceFrom: 4953
 currency: USD
 priceNote: $4953
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/bolivia.jpg
+  src: /media/excursions/uyuni-na-2-dnya/hero-enhanced-20261006.webp
   alt: 'На фото: солончак Уюни в Боливии'
 routeCountries:
 - country_bolivia

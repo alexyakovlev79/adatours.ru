@@ -104,9 +104,9 @@ itinerary:
 
     Возвращение в Колчани.
   images:
-  - src: https://brasiltours.ru/image/la%20paz.png
+  - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
     alt: Ла Пас
-  - src: https://brasiltours.ru/image/uyuni.png
+  - src: /media/tours/mechta-bolivii/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: Уюни
 - day: 4
   title: Колчани - лагуны - пустыня Силоли
@@ -149,7 +149,7 @@ itinerary:
 
     Размещение и ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/uyuni1.png
+  - src: /media/tours/mechta-bolivii/itinerary-day-5-enhanced-20261006.webp
     alt: Уюни
 - day: 6
   title: Уюни - Ла-Пас
@@ -175,9 +175,9 @@ itinerary:
 
     Размещение и ночь в Ла-Пасе.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: Ла Пас
-  - src: https://brasiltours.ru/image/uyuni.png
+  - src: /media/tours/mechta-bolivii/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: Уюни
 - day: 7
   title: Вылет

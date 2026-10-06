@@ -65,7 +65,7 @@ itinerary:
 
     Включено: 1 ночь в La Casona Hotel Boutique или отеле той же категории, частный трансфер, двуязычный гид на английском и испанском языках, билеты на канатную дорогу, трансфер аэропорт - отель. Питание не включено.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: город Ла Пас, столица Боливии'
 - day: 2
   title: Уюни - солончак Уюни - Тахуа
@@ -135,7 +135,7 @@ itinerary:
 
     Включено: 1 ночь в Ecolodge San Miguel del Bala, общая комната и ванная, трансферы по маршруту, лодка и запланированный поход. Питание: ужин.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: город Ла Пас, столица Боливии'
   - src: https://brasiltours.ru/image/countries/bolivia/trevor-mckinnon-y-z-ltvmjdg-unsplash-3.jpg
     alt: 'На фото: солончак Уюни в Боливии'
@@ -177,7 +177,7 @@ itinerary:
 
     Включено: 1 ночь в La Casona Hotel Boutique или отеле той же категории, лодочный трансфер, включенные походы, услуги местного гида и трансферы. Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: город Ла Пас, столица Боливии'
 - day: 9
   title: Ла-Пас - Копакабана - остров Солнца - Ла-Пас
@@ -196,7 +196,7 @@ itinerary:
 
     Включено: 1 ночь в La Casona Hotel Boutique или отеле той же категории, частный трансфер Ла-Пас - Копакабана - Ла-Пас, общий туристический катер, двуязычный гид, входные билеты. Питание: завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: город Ла Пас, столица Боливии'
 - day: 10
   title: Ла-Пас
@@ -207,7 +207,7 @@ itinerary:
 
     Программа может меняться без предварительного уведомления из-за погодных условий.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: город Ла Пас, столица Боливии'
 included:
 - проживание с завтраком в выбранных отелях;

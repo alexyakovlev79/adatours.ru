@@ -23,7 +23,7 @@ hero:
 gallery:
   - src: /media/excursions/la-pas-siti-tur/gallery-1-enhanced-20261006.webp
     alt: Канатная дорога Ла-Паса
-  - src: https://brasiltours.ru/image/la%20paz.png
+  - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
     alt: Ла-Пас, Боливия
   - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-right.jpg
     alt: Городской пейзаж Ла-Паса

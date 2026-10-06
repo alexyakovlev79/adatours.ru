@@ -44,7 +44,7 @@ itinerary:
 
     Отдельный символ города — система канатных дорог Teleférico протяженностью 30 км.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Ла-Пас, столица Боливии'
 - day: 2
   title: Тиванаку - Лунная долина - Ла-Пас
@@ -71,7 +71,7 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Ла-Пас, столица Боливии'
 - day: 3
   title: Ла-Пас - Копакабана - Исла-дель-Соль - Копакабана
@@ -93,7 +93,7 @@ itinerary:
 
     Возвращение на скоростном катере в Копакабану, затем трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Ла-Пас, столица Боливии'
 - day: 4
   title: Копакабана - Ла-Пас
@@ -105,7 +105,7 @@ itinerary:
 
     Во второй половине дня возвращаемся в Ла-Пас и размещаемся в отеле.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Ла-Пас, столица Боливии'
 - day: 5
   title: Ла-Пас - Уюни
@@ -125,7 +125,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/solar%20de%20uyuni.png
     alt: 'на фото: Солончак Уюни в Боливии'
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Ла-Пас, столица Боливии'
 - day: 6
   title: Уюни - Ла-Пас
@@ -141,7 +141,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/solar%20de%20uyuni.png
     alt: 'на фото: Солончак Уюни в Боливии'
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Ла-Пас, столица Боливии'
 - day: 7
   title: Ла-Пас - вылет домой
@@ -149,7 +149,7 @@ itinerary:
   - Ла Пас
   text: После завтрака трансфер из отеля в аэропорт.
   images:
-  - src: https://brasiltours.ru/image/la%20paz1.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Ла-Пас, столица Боливии'
 included:
 - трансферы в Ла-Пасе, на Исла-дель-Соль и в Уюни;
@@ -178,7 +178,7 @@ priceFrom: 2414
 currency: USD
 priceNote: $2414
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/12.jpg
+  src: /media/tours/krasivaya-boliviya/hero-enhanced-20261006.webp
   alt: 'на фото: Лунная Долина в Боливии'
 routeCountries:
 - country_bolivia

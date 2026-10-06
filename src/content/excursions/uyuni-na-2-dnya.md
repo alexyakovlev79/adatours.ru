@@ -19,12 +19,12 @@ priceFrom: 3578
 currency: USD
 priceNote: "Основная стоимость — $3578. При группе из 2 человек в исходной программе отдельно указана стоимость $1781 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/bolivia.jpg
+  src: /media/excursions/uyuni-na-2-dnya/hero-enhanced-20261006.webp
   alt: Солончак Уюни в Боливии
 gallery:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-salar-left.jpg
+  - src: /media/excursions/uyuni-na-2-dnya/gallery-1-enhanced-20261006.webp
     alt: Джип на Салар де Уюни
-  - src: https://brasiltours.ru/image/countries/bolivia/img-20230307-wa0000.jpg
+  - src: /media/excursions/uyuni-na-2-dnya/gallery-2-enhanced-20261006.webp
     alt: Высокогорные пейзажи Боливии на маршруте к Уюни
   - src: https://brasiltours.ru/image/countries/bolivia/bolivia-1.jpg
     alt: Солончак Уюни и горы Боливии

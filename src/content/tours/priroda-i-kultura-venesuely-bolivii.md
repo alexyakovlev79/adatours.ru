@@ -162,7 +162,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/la%20paz.png
+  - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
     alt: Ла Пас
   - src: https://brasiltours.ru/image/caracas1.png
     alt: Каракас
@@ -220,7 +220,7 @@ itinerary:
 
     По прибытии в Каракас встреча в аэропорту и трансфер в отель для отдыха. Затем повторный трансфер в аэропорт и регистрация на рейс в Москву.
   images:
-  - src: https://brasiltours.ru/image/la%20paz.png
+  - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
     alt: Ла Пас
   - src: https://brasiltours.ru/image/Caracas.png
     alt: Каракас

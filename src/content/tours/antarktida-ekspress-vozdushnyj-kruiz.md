@@ -68,7 +68,7 @@ itinerary:
       
       После возвращения на борт начинается переход к Антарктиде через пролив Дрейка, названный в честь английского мореплавателя Фрэнсиса Дрейка.
     images:
-      - src: https://brasiltours.ru/image/puerto%20natales.png
+      - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-2-enhanced-20261006.webp
         alt: "Мыс Горн и пролив Дрейка"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -80,7 +80,7 @@ itinerary:
       
       На борту проходят лекции и презентации. Вместе с опытными гидами можно наблюдать за природой из лаунджа и с открытых палуб. На маршруте встречаются альбатросы, буревестники и разные виды китов, идущих на юг к Антарктиде.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/f/i/file_199_192.jpg
+      - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-3-enhanced-20261006.webp
         alt: "Пролив Дрейка"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -95,7 +95,7 @@ itinerary:
       
       На лодках Zodiac запланирован выход на берег в районе колоний пингвинов. Благодаря длинному антарктическому дню исследования могут продолжаться до вечера.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/S/H/SHETland.png
+      - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-4-enhanced-20261006.webp
         alt: "Южные Шетландские острова и Антарктида"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -122,7 +122,7 @@ itinerary:
       
       **Отдельный вариант маршрута:** отправление 2-8 января 2021 года (HEB06-AE) на борту Hebridean Sky было рассчитано на 1 день дольше: маршрут начинался в Пунта-Аренасе и завершался в Ушуайе.
     images:
-      - src: https://brasiltours.ru/image/catalog/product/f/i/file_76_48.png
+      - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-6-enhanced-20261006.webp
         alt: "Антарктический круиз и Пунта-Аренас"
         intendedSlot: "itinerary:day-6"
 included:

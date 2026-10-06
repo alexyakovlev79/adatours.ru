@@ -206,7 +206,7 @@ itinerary:
 
       Отель находится рядом с водопадами, поэтому после южных пейзажей Огненной Земли маршрут сразу переносит в субтропическую природу Игуасу.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+      - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
         alt: "Игуасу"
         intendedSlot: "itinerary:day-8"
 
@@ -221,7 +221,7 @@ itinerary:
 
       На бразильской стороне проложены пешеходные дорожки общей длиной около 1200 метров. Отсюда открывается широкая панорама всего комплекса. Одна из главных точек - Глотка дьявола, где вода падает огромной массой, а воздух наполнен мелкими брызгами.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+      - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
         alt: "Водопады Игуасу, бразильская сторона"
         intendedSlot: "itinerary:day-9"
 

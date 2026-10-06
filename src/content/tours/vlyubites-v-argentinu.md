@@ -71,7 +71,7 @@ itinerary:
   - Буэнос-Айрес
   text: Завтрак в отеле. Свободный день.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires1.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-2-enhanced-20261006.webp
     alt: на фото:Буэнос Айрес, Аргентина
 - day: 4
   title: Буэнос-Айрес - Эль-Калафате
@@ -127,9 +127,9 @@ itinerary:
 
     После прибытия трансфер из аэропорта в отель в центре города.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-salta-right.jpg
+  - src: /media/tours/chili-i-argentina-vip/itinerary-day-16-enhanced-20261006.webp
     alt: 'на фото: Салта, Аргентина'
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires1.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-2-enhanced-20261006.webp
     alt: на фото:Буэнос Айрес, Аргентина
 - day: 9
   title: Сальта - Пурмамарка, Гора семи цветов и Умауака
@@ -183,7 +183,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Игуасу водопады'
-  - src: https://brasiltours.ru/image/countries/argentina/arg-salta-right.jpg
+  - src: /media/tours/chili-i-argentina-vip/itinerary-day-16-enhanced-20261006.webp
     alt: 'на фото: Салта, Аргентина'
 - day: 12
   title: Аргентинская сторона водопадов Игуасу
@@ -208,7 +208,7 @@ itinerary:
 
     По желанию день можно дополнить морскими прогулками и фото-сафари в национальном парке. Эти дополнительные экскурсии в стоимость не включены.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
     alt: 'на фото: Игуасу водопады'
 - day: 13
   title: Бразильская сторона водопадов Игуасу
@@ -236,7 +236,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: на фото:Буэнос Айрес, Аргентина
-  - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
     alt: 'на фото: Игуасу водопады'
 - day: 15
   title: Буэнос-Айрес

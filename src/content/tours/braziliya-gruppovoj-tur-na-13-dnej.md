@@ -164,7 +164,7 @@ itinerary:
 
     По прибытии встреча с водителем, трансфер в отель и свободное время. День можно использовать для отдыха перед основными экскурсиями к водопадам Игуасу в национальном парке.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/iguasu-ff.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
   - src: https://brasiltours.ru/image/salvador%20de%20bahi2.png
     alt: Сальвадор

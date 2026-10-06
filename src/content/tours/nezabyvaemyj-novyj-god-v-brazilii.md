@@ -101,7 +101,7 @@ itinerary:
 
     Уже по дороге к водопадам меняется сама среда путешествия. После плотной городской застройки Рио вокруг становится больше зелени и влажного воздуха. Игуасу невозможно увидеть из одной точки: одни смотровые площадки дают общую панораму, другие подводят к воде ближе, поэтому 2 стороны границы дополняют друг друга.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/012-cataratas-do-iguacu-1.jpg
+  - src: /media/tours/nezabyvaemyj-novyj-god-v-brazilii/itinerary-day-4-enhanced-20261006.webp
     alt: Водопады Игуасу в Аргентине и Бразилии
   - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-03-enhanced-20260930.webp
     alt: Улицы Рио-де -Жанейро, Бразилия

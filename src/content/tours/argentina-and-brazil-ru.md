@@ -44,7 +44,7 @@ itinerary:
 
     Маршрут также проходит через финансовый и коммерческий центр города и включает футбольный стадион. В течение дня вы увидите, как старые портовые районы, широкие проспекты и престижные кварталы складываются в очень разный по настроению Буэнос-Айрес.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires1.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Буэнос–Айрес'
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -80,7 +80,7 @@ itinerary:
   - Пуэрто Игуасу
   text: Завтрак в отеле. Индивидуальный трансфер с водителем в аэропорт для вылета в Игуасу. После прилета трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Аргентинская сторона водопадов Игуасу'
 - day: 6
   title: Аргентинская сторона водопадов Игуасу
@@ -95,7 +95,7 @@ itinerary:
 
     Площадь национального парка, указанная в программе, составляет 55 500 гектаров. Здесь сохраняются характерные для региона растения и животные.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Аргентинская сторона водопадов Игуасу'
 - day: 7
   title: Бразильская сторона Игуасу - Рио-де-Жанейро
@@ -109,7 +109,7 @@ itinerary:
 
     После экскурсии трансфер в аэропорт, перелет в Рио-де-Жанейро и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Аргентинская сторона водопадов Игуасу'
   - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0016.jpg
     alt: 'На фото: Гора Пан-ди-Асукар в Рио-де-Жанейро'

@@ -144,7 +144,7 @@ itinerary:
       
       В завершение маршрут проходит через районы Карраско и Пунта-Горда и по набережной Рамбла вдоль пляжей. После экскурсии возвращение в Буэнос-Айрес.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires1.jpg
+      - src: /media/tours/argentina-and-brazil-ru/itinerary-day-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес и поездка в Монтевидео"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -155,7 +155,7 @@ itinerary:
     text: |-
       Трансфер в аэропорт и перелет в Игуасу. После прибытия в Фоз-де-Игуасу вас встречают и отвозят в отель. Оставшееся время можно использовать для отдыха перед насыщенной программой у водопадов.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/012-cataratas-do-iguacu-1.jpg
+      - src: /media/tours/nezabyvaemyj-novyj-god-v-brazilii/itinerary-day-4-enhanced-20261006.webp
         alt: "Водопады Игуасу"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -174,7 +174,7 @@ itinerary:
       
       Комплекс Игуасу включает 275 водопадов. Прогулочные дорожки позволяют увидеть их с разных ракурсов, а в солнечную погоду над облаками брызг появляются радуги. Пейзаж дополняют густая тропическая растительность и обитатели национального парка. Бразильская сторона особенно удобна для широких панорам: отсюда хорошо воспринимается масштаб всей системы Игуасу.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+      - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
         alt: "Бразильская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-5"
   - excursionRef: excursion_source_makuko_safari
@@ -199,7 +199,7 @@ itinerary:
       
       Если с бразильской стороны водопады лучше воспринимаются как единая панорама, то аргентинская часть позволяет приблизиться к потокам сверху и снизу. Система настилов, троп и переходов выводит к разным каскадам и дает возможность увидеть район «Горла дьявола» с близкого расстояния. Большая часть дня проходит среди тропического леса и воды, поэтому впечатление от двух сторон Игуасу получается совершенно разным.
     images:
-      - src: https://brasiltours.ru/image/countries/brazil/iguasu-ff.png
+      - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-9-enhanced-20261006.webp
         alt: "Аргентинская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -250,7 +250,7 @@ itinerary:
       
       По дороге гид расскажет о природе и легендах региона. Запланированы остановки для отдыха, фотографий и покупки местных сувениров. После поездки возвращение в Сальту.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-salta-1.jpg
+      - src: /media/tours/vsya-argentina/itinerary-day-8-enhanced-20261006.webp
         alt: "Национальный парк Лос-Кардонес"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -290,7 +290,7 @@ itinerary:
       
       Далее маршрут ведет в Тилькару, где находится древняя индейская крепость. По пути предусмотрены Укия и ее церковь с известной коллекцией изображений «Ангелов Аркабусерос». В поселке Умауака можно прогуляться по старым мощеным улицам и увидеть архитектуру колониального периода. Ночь в регионе Пурмамарки.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-salta-right.jpg
+      - src: /media/tours/chili-i-argentina-vip/itinerary-day-16-enhanced-20261006.webp
         alt: "Пурмамарка и Семицветная гора"
         intendedSlot: "itinerary:day-9"
   - day: 10

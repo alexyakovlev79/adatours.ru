@@ -307,7 +307,7 @@ itinerary:
 
     После экскурсии трансфер в аэропорт, около **40 минут**, перелет в Сальту и трансфер в отель, около **30 минут**.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-salta-right.jpg
+  - src: /media/tours/chili-i-argentina-vip/itinerary-day-16-enhanced-20261006.webp
     alt: Сальта
   - src: https://brasiltours.ru/image/countries/argentina/arg-bariloche-right.jpg
     alt: Барилоче
@@ -337,7 +337,7 @@ itinerary:
 
     День построен вокруг высокогорного ландшафта и длинной дороги через северо-запад Аргентины.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-salta-right.jpg
+  - src: /media/tours/chili-i-argentina-vip/itinerary-day-16-enhanced-20261006.webp
     alt: Сальта
 - day: 19
   title: Национальный парк Los Cardones
@@ -364,9 +364,9 @@ itinerary:
 
     После сухих высокогорных пейзажей северо-запада Аргентины начинается совсем другая природная зона: влажный субтропический лес и огромная река.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/countries/argentina/arg-salta-right.jpg
+  - src: /media/tours/chili-i-argentina-vip/itinerary-day-16-enhanced-20261006.webp
     alt: Сальта
 - day: 21
   title: Бразильская сторона Игуасу, Макуко, Парк птиц и вертолет
@@ -403,7 +403,7 @@ itinerary:
 
     Один из главных участков - поездка на экологическом поезде и пешая прогулка к смотровой площадке «Глотка дьявола». Здесь открывается вид на самый мощный каскад комплекса.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
 - day: 23
   title: Игуасу - Буэнос-Айрес
@@ -420,7 +420,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
-  - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
 - day: 24
   title: Обзорная экскурсия по Буэнос-Айресу и танго

@@ -250,7 +250,7 @@ itinerary:
     text: |-
       Завтрак. Регулярный трансфер в аэропорт и перелет Aerolineas Argentinas. По прибытии - встреча и регулярный трансфер в Mercure Iguazu Iru.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/iguazu-adatours.jpg
+      - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
         alt: "На фото: Вид на водопад Игуасу, Аргентина"
         intendedSlot: "itinerary:day-12"
 

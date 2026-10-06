@@ -217,7 +217,7 @@ priceFrom: 3889
 currency: USD
 priceNote: $3889
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/iguasu-ff.png
+  src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-9-enhanced-20261006.webp
   alt: Бразилия от Сан Пауло до Бузиоса
 routeCountries:
 - country_brazil

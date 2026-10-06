@@ -7,7 +7,7 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
 <section class:list={['fact-strip', { 'fact-strip--dark': dark, 'fact-strip--wide-first': wideFirst }]}>
   <div class="fact-strip__inner" data-count={facts.length}>
     {facts.map((fact) => (
-      <div class:list={['fact', { 'fact--long': fact.value.length > 9 }]}>
+      <div class="fact">
         <strong>{fact.value}</strong>
         <span>{fact.label}</span>
       </div>
@@ -26,6 +26,7 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
   }
 
   .fact-strip__inner {
+    --fact-value-size: clamp(1.8rem, 2.5vw, 3.3rem);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
@@ -54,7 +55,7 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
     display: block;
     max-width: 100%;
     font-family: var(--font-display);
-    font-size: clamp(2.2rem, 3.4vw, 4.8rem);
+    font-size: var(--fact-value-size);
     font-weight: 500;
     line-height: .95;
     letter-spacing: -.045em;
@@ -63,26 +64,19 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
     hyphens: none;
   }
 
-  .fact--long strong {
-    font-size: clamp(1.8rem, 2.5vw, 3.3rem);
-  }
-
   /*
    * Keep three-column fact rows stable once the container reaches its max width:
    * the text should not become larger while the available cell width is fixed.
    */
   @media (min-width: 681px) {
+    .fact-strip__inner[data-count="3"] {
+      --fact-value-size: clamp(1.8rem, 1.85vw, 2rem);
+    }
+
     .fact-strip__inner[data-count="3"] .fact strong {
       display: flex;
       align-items: flex-end;
       min-height: clamp(2.09rem, 3.23vw, 4.56rem);
-    }
-
-    .fact-strip__inner[data-count="3"] .fact--long strong {
-      font-size: clamp(1.8rem, 1.85vw, 2rem);
-      overflow-wrap: normal;
-      word-break: normal;
-      hyphens: none;
     }
   }
 
@@ -109,6 +103,7 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
   @media (max-width: 680px) {
     .fact-strip__inner,
     .fact-strip--wide-first .fact-strip__inner {
+      --fact-value-size: clamp(1.65rem, 7vw, 2rem);
       position: relative;
       grid-template-columns: repeat(2, minmax(0,1fr));
     }
@@ -148,14 +143,6 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
       min-height: 132px;
       padding: 26px 16px;
       border: 0;
-    }
-
-    .fact--long strong {
-      font-size: clamp(1.65rem, 7vw, 2.15rem);
-    }
-
-    .fact-strip--wide-first .fact:first-child strong {
-      font-size: clamp(1.65rem, 7vw, 2rem);
     }
   }
 </style>

@@ -13,7 +13,7 @@ const { stats, variant = 'default' } = Astro.props;
 <section class="stats" data-variant={variant}>
   <div class="stats__inner" data-count={stats.length} style={`--stats-count: ${stats.length}`}>
     {stats.map((stat) => (
-      <div class:list={['stat', { 'stat--long': stat.value.length > 9 }]}>
+      <div class="stat">
         <strong>{stat.value}</strong>
         <span>{stat.label}</span>
       </div>
@@ -28,6 +28,7 @@ const { stats, variant = 'default' } = Astro.props;
   }
 
   .stats__inner {
+    --stat-value-size: clamp(1.8rem, 2.5vw, 3.3rem);
     display: grid;
     grid-template-columns: repeat(var(--stats-count, 4), minmax(0, 1fr));
     width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
@@ -49,7 +50,7 @@ const { stats, variant = 'default' } = Astro.props;
     max-width: 100%;
     margin-bottom: 10px;
     font-family: var(--font-display);
-    font-size: clamp(2.2rem, 3vw, 4.8rem);
+    font-size: var(--stat-value-size);
     font-weight: 500;
     line-height: .95;
     letter-spacing: -.04em;
@@ -57,26 +58,19 @@ const { stats, variant = 'default' } = Astro.props;
     hyphens: auto;
   }
 
-  .stat--long strong {
-    font-size: clamp(1.8rem, 2.5vw, 3.3rem);
-  }
-
   /*
    * Three-column rows stop growing at --container-max, so long values must not
    * keep scaling with the viewport after their cells have stopped getting wider.
    */
   @media (min-width: 761px) {
+    .stats__inner[data-count="3"] {
+      --stat-value-size: clamp(1.8rem, 1.85vw, 2rem);
+    }
+
     .stats__inner[data-count="3"] .stat strong {
       display: flex;
       align-items: flex-end;
       min-height: clamp(2.09rem, 2.85vw, 4.56rem);
-    }
-
-    .stats__inner[data-count="3"] .stat--long strong {
-      font-size: clamp(1.8rem, 1.85vw, 2rem);
-      overflow-wrap: normal;
-      word-break: normal;
-      hyphens: none;
     }
   }
 
@@ -140,6 +134,7 @@ const { stats, variant = 'default' } = Astro.props;
     }
 
     .stats__inner {
+      --stat-value-size: clamp(1.65rem, 7vw, 2rem);
       position: relative;
       grid-template-columns: repeat(2, minmax(0,1fr));
     }
@@ -176,10 +171,6 @@ const { stats, variant = 'default' } = Astro.props;
       border: 0;
     }
 
-    .stat--long strong {
-      font-size: clamp(1.65rem, 7vw, 2.15rem);
-    }
-
     .stats__inner[data-count="1"] {
       display: block;
     }
@@ -199,8 +190,7 @@ const { stats, variant = 'default' } = Astro.props;
       border: 0;
     }
 
-    .stats__inner[data-count="1"] .stat strong,
-    .stats__inner[data-count="1"] .stat--long strong {
+    .stats__inner[data-count="1"] .stat strong {
       margin: 0;
       font-size: clamp(1.9rem, 8.5vw, 2.55rem);
       line-height: 1;
@@ -237,8 +227,7 @@ const { stats, variant = 'default' } = Astro.props;
       border-bottom: 0;
     }
 
-    .stats__inner[data-count="2"] .stat strong,
-    .stats__inner[data-count="2"] .stat--long strong {
+    .stats__inner[data-count="2"] .stat strong {
       margin: 0;
       font-size: clamp(1.9rem, 8.5vw, 2.55rem);
       line-height: 1;
@@ -255,8 +244,7 @@ const { stats, variant = 'default' } = Astro.props;
       text-align: left;
     }
 
-    .stats[data-variant="excursion"] .stats__inner[data-count="2"] .stat strong,
-    .stats[data-variant="excursion"] .stats__inner[data-count="2"] .stat--long strong {
+    .stats[data-variant="excursion"] .stats__inner[data-count="2"] .stat strong {
       font-size: clamp(1.35rem, 5.6vw, 1.65rem);
       line-height: 1.08;
       text-align: left;

@@ -158,7 +158,7 @@ itinerary:
 
     Во время поездки встречаются альбатросы, бакланы, буревестники, грифы и южноамериканские крачки.
   images:
-  - src: https://brasiltours.ru/image/ushuaia1.png
+  - src: /media/tours/led-solntse-i-kraj-zemli/itinerary-day-6-enhanced-20261006.webp
     alt: Ушуайя
 - day: 7
   title: Ушуайя - Фоз-де-Игуасу

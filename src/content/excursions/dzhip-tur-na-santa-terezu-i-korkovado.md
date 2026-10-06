@@ -19,7 +19,7 @@ hero:
   src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
   alt: "Джип тур на Санта-Терезу и Корковадо"
 gallery:
-  - src: "https://brasiltours.ru/image/Rio_de_Janeiro_from_Corcovado_mountain.png"
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-1-enhanced-20261006.webp
     alt: ""
   - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: ""

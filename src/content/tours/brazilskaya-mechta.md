@@ -75,7 +75,7 @@ itinerary:
 
     Так за один день панорамный Рио с высоты сменяется улицами исторического центра, где лучше читается городская история.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0016.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'На фото: Сахарная голова в Рио-де-Жанейро'
 - day: 4
   title: Рио-де-Жанейро - Ангра-дус-Рейс - Парати

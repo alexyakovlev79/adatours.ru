@@ -69,7 +69,7 @@ itinerary:
 
     С вершины открывается панорама Рио и окрестностей: мост Нитерой, залив Гуанабара, Ботанический сад, стадион Маракана, Сахарная голова и другие районы города.
   images:
-  - src: https://brasiltours.ru/image/Rio_de_Janeiro_from_Corcovado_mountain.png
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-1-enhanced-20261006.webp
     alt: Статуя Христа и Корковадо
 - day: 4
   title: Рио-де-Жанейро - Игуасу
@@ -164,7 +164,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'На фото: Порту-де-Галиньяс'
-  - src: https://brasiltours.ru/image/recife.png
+  - src: /media/tours/rajskaya-braziliya/itinerary-day-8-images-1-enhanced-20261006.webp
     alt: Ресифи
 - day: 9
   title: Порту-де-Галиньяс

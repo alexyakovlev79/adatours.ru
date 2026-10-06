@@ -54,7 +54,7 @@ itinerary:
 
     Гиды по ходу сафари рассказывают о поведении животных и экологии Пантанала. После экскурсии возвращение в лодж и ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
+  - src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: Пантанал
 - day: 3
   title: Каякинг и рыбалка на пиранью

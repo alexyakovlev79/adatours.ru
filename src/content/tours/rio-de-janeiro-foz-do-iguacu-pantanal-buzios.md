@@ -67,7 +67,7 @@ itinerary:
 
     После основной экскурсии можно выбрать дополнительные программы по Рио.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bra-rio-corcovado.jpg
+  - src: /media/tours/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: Статуя Христа Искупителя  в Рио-де-Жанейро
 - excursionRef: excursion_source_lapa_shou_nochnogo_rio_de_zhanejro
   places: []
@@ -144,7 +144,7 @@ itinerary:
 
     Пантанал особенно интересен фотографам, любителям природы и рыбалки. Здесь животные часто оказываются рядом с маршрутом без привычной дистанции зоопарка или закрытого вольера: птицы поднимаются из травы, кайманы лежат у воды, а протоки и открытые пространства постоянно меняют картину вокруг.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
+  - src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: Гигантская кувшинк (Виктория Амазонская), Пантанал, Бразилия
   - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-10-enhanced-20261006.webp
     alt: Водопады Игуасу, Фос-ду-Игуасу, Бразилия и Аргентина
@@ -160,7 +160,7 @@ itinerary:
 
     Если погода мешает прогулкам, возможна рыбалка на пираний. Еще один вариант - прогулка на каноэ по тихим протокам. Для желающих также предусмотрена возможность поплавать в реке с крокодилами.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
+  - src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: Гигантская кувшинк (Виктория Амазонская), Пантанал, Бразилия
 - day: 9
   title: Пантанал - Рио-де-Жанейро - Бузиос
@@ -177,7 +177,7 @@ itinerary:
 
     Здесь можно заниматься дайвингом, серфингом, водными лыжами, кататься на байдарках, взять багги и проехать по пляжам или выйти в море на паруснике. Вечером работают рестораны, бары и дискотеки.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
+  - src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: Гигантская кувшинк (Виктория Амазонская), Пантанал, Бразилия
   - src: /media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp
     alt: Вертолетная экскурсия над Рио, Бразилия
@@ -245,7 +245,7 @@ priceFrom: 4159
 currency: USD
 priceNote: $4159
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/pantanal.jpg
+  src: /media/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios/hero-enhanced-20261006.webp
   alt: Болота Пантанал, Бразилия, дикая природа
 routeCountries:
 - country_brazil

@@ -111,7 +111,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Аргентинская сторона водопадов Игуасу'
-  - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0016.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'На фото: Гора Пан-ди-Асукар в Рио-де-Жанейро'
 - day: 8
   title: Рио-де-Жанейро - Сахарная Голова и старый центр

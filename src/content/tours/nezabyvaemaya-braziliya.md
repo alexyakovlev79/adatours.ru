@@ -36,7 +36,7 @@ itinerary:
 
     Рио расположен между горами и Атлантическим океаном, поэтому море и рельеф сопровождают почти каждую поездку по городу. На пляжах работают кафе и киоски с напитками из свежих фруктов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/deltap.jpg
+  - src: /media/tours/kongress-v-rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Полет на дельтаплане над Рио'
 - day: 2
   title: Сахарная Голова и центр Рио
@@ -53,7 +53,7 @@ itinerary:
 
     После экскурсии возвращение в отель и отдых.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0016.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'На фото: Гора Сахарная Голова'
 - day: 3
   title: Корковадо и Христос Спаситель
@@ -243,7 +243,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/catalog/product/B/u/Buzios_1_8.jpg
     alt: 'На фото: Пляж в Бузиосе'
-  - src: https://brasiltours.ru/image/countries/brazil/deltap.jpg
+  - src: /media/tours/kongress-v-rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Полет на дельтаплане над Рио'
 included:
 - Проживание в отелях по программе.

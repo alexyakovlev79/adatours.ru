@@ -15,7 +15,7 @@ priceFrom: 135
 currency: "USD"
 priceNote: "Цена — $135 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/riogid/gid-images/580/Scenario.jpg"
+  src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/hero-enhanced-20261006.webp
   alt: "Лапа--шоу ночного Рио-де-Жанейро"
 gallery:
   - src: "https://brasiltours.ru/image/caipirinha.png"

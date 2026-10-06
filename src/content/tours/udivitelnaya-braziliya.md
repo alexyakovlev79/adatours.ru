@@ -51,7 +51,7 @@ itinerary:
 
     Со смотровой площадки открывается один из самых известных видов на Рио-де-Жанейро. После экскурсии возвращение в отель в сопровождении гида.
   images:
-  - src: https://brasiltours.ru/image/Rio_de_Janeiro_from_Corcovado_mountain.png
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-1-enhanced-20261006.webp
     alt: Статуя Христа и Корковадо
 - day: 3
   title: Рио-де-Жанейро - Пантанал

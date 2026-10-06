@@ -16,7 +16,7 @@ priceFrom: 160
 currency: USD
 priceNote: "Стоимость — $160 на человека. Минимум — 2 человека. Для групп возможны скидки."
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/starij-rio1920.jpg
+  src: /media/excursions/tajny-starogo-rio-de-zhanejro/hero-enhanced-20261006.webp
   alt: Исторический центр Рио-де-Жанейро
 gallery:
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp

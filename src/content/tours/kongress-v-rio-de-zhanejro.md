@@ -36,7 +36,7 @@ itinerary:
 
     Для группы предусмотрен приветственный напиток.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/deltap.jpg
+  - src: /media/tours/kongress-v-rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Полёт на дельтаплане над Рио'
 - day: 2
   title: Конгресс, Корковадо и вечерняя программа
@@ -78,7 +78,7 @@ itinerary:
 
     Вечером запланирован ужин в Marius Seafood. Интерьер ресторана напоминает затонувший корабль и дополнен аметистовыми элементами.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0016.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'На фото: Сахарная голова в Рио-де-Жанейро'
 - day: 4
   title: Конгресс и дополнительная программа
@@ -102,7 +102,7 @@ itinerary:
 
     Такой день позволяет адаптировать корпоративную программу под состав группы: выбрать природу, гастрономию или морскую прогулку после деловой части.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/deltap.jpg
+  - src: /media/tours/kongress-v-rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Полёт на дельтаплане над Рио'
 - day: 5
   title: Завершение поездки
@@ -114,7 +114,7 @@ itinerary:
 
     За 5 дней участники успевают провести несколько деловых сессий, увидеть 2 главные панорамные точки Рио, пройти обзорную экскурсию и выбрать дополнительную активность, не меняя базовый город проживания.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/deltap.jpg
+  - src: /media/tours/kongress-v-rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Полёт на дельтаплане над Рио'
 included:
 - Проживание на условиях BB, завтрак включен.

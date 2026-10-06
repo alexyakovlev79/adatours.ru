@@ -31,8 +31,7 @@ const { active } = Astro.props;
   .dmc-nav {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
-    margin-inline: auto;
+    width: 100%;
   }
 
   .dmc-nav a {
@@ -41,7 +40,6 @@ const { active } = Astro.props;
     min-height: 72px;
     padding: 16px 24px;
     place-items: center;
-    border-right: 1px solid var(--color-line);
     color: color-mix(in srgb, var(--color-ink) 62%, transparent);
     font-family: var(--font-display);
     font-size: .78rem;
@@ -53,7 +51,7 @@ const { active } = Astro.props;
     transition: color 180ms ease;
   }
 
-  .dmc-nav a:first-child {
+  .dmc-nav a + a {
     border-left: 1px solid var(--color-line);
   }
 
@@ -65,31 +63,19 @@ const { active } = Astro.props;
   .dmc-nav a[aria-current='page']::after {
     content: '';
     position: absolute;
-    right: 24px;
+    right: 8%;
     bottom: -1px;
-    left: 24px;
+    left: 8%;
     height: 3px;
     background: var(--color-gold);
   }
 
   @media (max-width: 620px) {
-    .dmc-nav {
-      width: 100%;
-    }
-
     .dmc-nav a {
       min-height: 64px;
       padding: 14px 8px;
       font-size: .69rem;
       letter-spacing: .035em;
-    }
-
-    .dmc-nav a:first-child {
-      border-left: 0;
-    }
-
-    .dmc-nav a:last-child {
-      border-right: 0;
     }
 
     .dmc-nav a[aria-current='page']::after {

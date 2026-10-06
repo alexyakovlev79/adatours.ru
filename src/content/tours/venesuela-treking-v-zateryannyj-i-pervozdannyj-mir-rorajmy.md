@@ -30,7 +30,7 @@ itinerary:
   text: Прибытие в Каракас. Встреча и трансфер в национальный аэропорт для перелета в Пуэрто-Ордас. После прилета трансфер
     в отель-посаду и отдых.
   images:
-  - src: https://brasiltours.ru/image/caracas.png
+  - src: "/media/tours/kraski-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы. город Каракас'
 - day: 2
   title: ', вторник: Сан-Франциско-де-Юруани'
@@ -163,7 +163,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/caracas2.png
+  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы. город Каракас'
 included:
 - 'проживание: отели 3*, посада, кампаменто, палатки и гамаки;'

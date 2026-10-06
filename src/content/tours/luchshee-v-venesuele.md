@@ -33,7 +33,7 @@ itinerary:
 
     Размещение в отеле Altamira Continental и отдых. По желанию можно съездить на смотровую площадку Мирадор и поужинать в традиционном ресторане.
   images:
-  - src: https://brasiltours.ru/image/Caracas.jpg
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы город Каракас'
 - day: 2
   title: ', вторник - среда. Свободные дни в Каракасе'
@@ -165,7 +165,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Caracas.jpg
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Венесуэлы город Каракас'
   - src: https://brasiltours.ru/image/Isla%20Margarita.png
     alt: 'На фото: пляжный отдых в Венесуэле'

@@ -110,7 +110,7 @@ itinerary:
 
     **Важно:** это активная экскурсия на целый день с поездкой на моторной лодке, переходом и небольшим трекингом. Нужны удобная обувь, кроссовки или треккинговая обувь, сменная удобная одежда и дождевик.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/canaima-national-park-angel-falls-1-waifu2x-photo-noise1-scale.jpg
+  - src: "/media/excursions/venezuela-angel-airplane-flight/hero-src-enhanced-20261007.webp"
     alt: Природа и Культура  Венесуэлы & Боливии
 - day: 6
   title: Суббота - национальный парк Канайма
@@ -123,7 +123,7 @@ itinerary:
 
     Дополнительно на выбор предлагаются полет на вертолете или самолете над Сальто-Анхель, поездка в каньон Кавак с полетом над водопадом, трекинг на тепуй Куравайна, Голубая лагуна, лагуна Сакайка, каяки и велосипеды.
   images:
-  - src: https://brasiltours.ru/image/canaima%20nat%20park4.png
+  - src: "/media/excursions/venezuela-kavak-angel-helicopter/hero-src-enhanced-20261007.webp"
     alt: Канайма
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []
@@ -254,7 +254,7 @@ priceFrom: 5598
 currency: USD
 priceNote: $5598
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/canaima-national-park-angel-falls-1-waifu2x-photo-noise1-scale.jpg
+  src: "/media/excursions/venezuela-angel-airplane-flight/hero-src-enhanced-20261007.webp"
   alt: Природа и Культура  Венесуэлы & Боливии
 routeCountries:
 - country_venezuela

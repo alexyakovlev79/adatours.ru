@@ -54,7 +54,7 @@ itinerary:
 
     **Стоимость:** $45 с человека, оплата на месте.
   images:
-  - src: https://brasiltours.ru/image/caracas.png
+  - src: "/media/tours/kraski-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Каракас
 - excursionRef: excursion_venezuela_avila_humboldt_visit
   places: []
@@ -83,7 +83,7 @@ itinerary:
 
     **Питание:** обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/C/a/Canaima_5.jpg
+  - src: "/media/tours/kraski-venesuely/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Канайма
 - day: 3
   title: Сальто-Анхель
@@ -118,7 +118,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/canaima-national-park-angel-falls-1-waifu2x-photo-noise1-scale.jpg
+  - src: "/media/excursions/venezuela-angel-airplane-flight/hero-src-enhanced-20261007.webp"
     alt: Водопад Анхель
 - day: 4
   title: Свободное время в Канайме
@@ -151,7 +151,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/C/a/Canaima_5.jpg
+  - src: "/media/tours/kraski-venesuely/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Канайма
 - day: 5
   title: Свободное время в Канайме
@@ -184,7 +184,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/C/a/Canaima_5.jpg
+  - src: "/media/tours/kraski-venesuely/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Канайма
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []
@@ -211,7 +211,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/C/a/Caracas_7.jpg
+  - src: "/media/tours/kraski-venesuely/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: Каракас
 included:
 - проживание в отелях по программе;
@@ -243,7 +243,7 @@ priceFrom: 3998
 currency: USD
 priceNote: $3998
 hero:
-  src: https://brasiltours.ru/image/catalog/product/f/i/file_204_62.jpg
+  src: "/media/tours/kraski-venesuely/hero-src-enhanced-20261007.webp"
   alt: Краски Венесуэлы
 routeCountries:
 - country_venezuela

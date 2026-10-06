@@ -41,7 +41,7 @@ itinerary:
 
     Возвращение в отель и ночь в Каракасе.
   images:
-  - src: https://brasiltours.ru/image/Caracas.jpg
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Каракас
 - day: 2
   title: Исторический Каракас и национальный парк Авила
@@ -75,7 +75,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/caracas2.png
+  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Каракас
 - day: 3
   title: Колония Товар
@@ -96,7 +96,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Caracas.jpg
+  - src: "/media/tours/luchshee-v-venesuele/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Каракас
 - day: 4
   title: Канайма, лагуна и водопады Сапо и Ача
@@ -119,7 +119,7 @@ itinerary:
 
     **Питание:** легкий завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/canaima%20nat%20park4.png
+  - src: "/media/excursions/venezuela-kavak-angel-helicopter/hero-src-enhanced-20261007.webp"
     alt: Канайма
 - day: 5
   title: Сальто-Анхель
@@ -152,7 +152,7 @@ itinerary:
 
     **Важно:** экскурсия рассчитана на активных туристов и включает длинную поездку в моторной лодке, переход и небольшой треккинг. Нужны удобные кроссовки или треккинговая обувь, сменная одежда и дождевик.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/canaima-national-park-angel-falls-1-waifu2x-photo-noise1-scale.jpg
+  - src: "/media/excursions/venezuela-angel-airplane-flight/hero-src-enhanced-20261007.webp"
     alt: Водопад Анхель
 - day: 6
   title: Канайма
@@ -165,7 +165,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/canaima%20nat%20park4.png
+  - src: "/media/excursions/venezuela-kavak-angel-helicopter/hero-src-enhanced-20261007.webp"
     alt: Канайма
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []
@@ -185,9 +185,9 @@ itinerary:
 
     **Питание:** завтрак, ужин.
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.jpg
+  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Остров Маргарита
-  - src: https://brasiltours.ru/image/canaima%20nat%20park4.png
+  - src: "/media/excursions/venezuela-kavak-angel-helicopter/hero-src-enhanced-20261007.webp"
     alt: Канайма
 - day: 8
   title: Остров Маргарита
@@ -198,7 +198,7 @@ itinerary:
 
     Отель работает по системе «все включено».
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/margarita-isl-venezuela.png
+  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Остров Маргарита
 - day: 9
   title: Обзорная экскурсия по острову Маргарита
@@ -235,7 +235,7 @@ itinerary:
   - Остров Маргарита
   text: Пляжный отдых в отеле по системе «все включено».
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.jpg
+  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Остров Маргарита
 - day: 11
   title: Остров Маргарита
@@ -243,7 +243,7 @@ itinerary:
   - Остров Маргарита
   text: Пляжный отдых в отеле по системе «все включено».
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/margarita-isl-venezuela.png
+  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Остров Маргарита
 - day: 12
   title: Остров Маргарита - Каракас и поместье Санта-Тереза
@@ -273,7 +273,7 @@ itinerary:
 
     После экскурсии возвращение в аэропорт и регистрация на рейс.
   images:
-  - src: https://brasiltours.ru/image/caracas2.png
+  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Каракас
   - src: https://brasiltours.ru/image/countries/venezuela/margarita-isl-venezula.png
     alt: Остров Маргарита

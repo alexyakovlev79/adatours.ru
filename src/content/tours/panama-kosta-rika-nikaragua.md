@@ -206,7 +206,7 @@ priceFrom: 8624
 currency: USD
 priceNote: $8624
 hero:
-  src: https://brasiltours.ru/image/countries/nikaragua/nery-montenegro-kb-i7b-fvai-unsplash.jpg
+  src: /media/tours/panama-kosta-rika-nikaragua/hero-rainforest-enhanced-20261006.webp
   alt: Панама – Коста Рика- Никарагуа
 routeCountries:
 - country_panama

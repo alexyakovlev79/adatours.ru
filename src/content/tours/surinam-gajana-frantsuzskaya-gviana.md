@@ -55,7 +55,7 @@ itinerary:
   text: После пересадочного рейса вы прилетаете в международный аэропорт имени Чедди Джагана. В аэропорту встречает водитель
     и отвозит в отель в Джорджтауне. Дорога занимает от 30 до 70 минут в зависимости от трафика.
   images:
-  - src: https://brasiltours.ru/image/gayana%20georgetown11.png
+  - src: /media/tours/surinam-gajana-frantsuzskaya-gviana/hero-enhanced-20261006.webp
     alt: Суринам, Гайана, Французская Гвиана
 - day: 2
   title: Водопад Кайетур, Джорджтаун и перелет в Суринам
@@ -72,7 +72,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/gayana%20waterfalls%20kaentur.11png.png
     alt: Национальный парк Кайетур
-  - src: https://brasiltours.ru/image/gayana%20georgetown11.png
+  - src: /media/tours/surinam-gajana-frantsuzskaya-gviana/hero-enhanced-20261006.webp
     alt: Суринам, Гайана, Французская Гвиана
 - day: 3
   title: Парамарибо, плантация Пеперпот и река Суринам
@@ -262,7 +262,7 @@ priceFrom: 10760
 currency: USD
 priceNote: $10760
 hero:
-  src: https://brasiltours.ru/image/gayana%20georgetown11.png
+  src: /media/tours/surinam-gajana-frantsuzskaya-gviana/hero-enhanced-20261006.webp
   alt: Суринам, Гайана, Французская Гвиана
 routeCountries:
 - country_guyana

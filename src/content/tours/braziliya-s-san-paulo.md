@@ -101,7 +101,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/BRA%20Amazonia%201.png
+  - src: /media/tours/braziliya-s-san-paulo/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: Дети индейцев Амазонии'
 - excursionRef: excursion_source_vstrecha_rek
   places: []

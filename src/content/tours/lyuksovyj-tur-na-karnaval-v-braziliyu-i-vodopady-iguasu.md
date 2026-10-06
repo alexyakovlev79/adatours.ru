@@ -51,7 +51,7 @@ itinerary:
 
     Этот Fast Track первого дня оплачивается отдельно.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/copacabana-palace/10.jpg
+  - src: /media/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu/itinerary-day-1-enhanced-20261006.webp
     alt: Копакабана, главный пляж Рио-де-Жанейр
 - day: 2
   title: '06.02: Корковадо, исторический центр и Карнавальный бал'
@@ -94,7 +94,7 @@ itinerary:
 
     Карнавальный бал сочетает танцы, высокую кухню и сервис Copacabana Palace.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/copacabana-palace/55.jpg
+  - src: /media/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu/itinerary-day-2-enhanced-20261006.webp
     alt: Эксклюзивная VIP вертолетная прогулка над Рио, панорама Копакабаны и статуи Христа
 - day: 3
   title: '07.02: вертолет над Рио и Парад Чемпионов на Самбадроме'
@@ -111,7 +111,7 @@ itinerary:
 
     Индивидуальный трансфер с гидом включен.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/quinten-de-graaf-kb0ipylp7dc-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-3-enhanced-20261006.webp
     alt: Карнавальные костюмы девушек в Бразилии, яркие перья и блестки на Самбадроме в Рио
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -138,7 +138,7 @@ itinerary:
 
     После экскурсии остается свободное время.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/quinten-de-graaf-kb0ipylp7dc-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-3-enhanced-20261006.webp
     alt: Карнавальные костюмы девушек в Бразилии, яркие перья и блестки на Самбадроме в Рио
 - day: 5
   title: '09.02: свободный день и опциональная Ангра-дус-Рейс'
@@ -237,7 +237,7 @@ itinerary:
 
     На этом программа завершается.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/quinten-de-graaf-kb0ipylp7dc-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-3-enhanced-20261006.webp
     alt: Карнавальные костюмы девушек в Бразилии, яркие перья и блестки на Самбадроме в Рио
 included:
 - Проживание в отелях на базе завтраков.

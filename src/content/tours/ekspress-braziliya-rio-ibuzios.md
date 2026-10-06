@@ -67,7 +67,7 @@ itinerary:
   - Бузиос
   text: Трансфер из Рио-де-Жанейро в Бузиос. Размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'На фото: морской курорт Бузиос в Бразилии'
   - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи Рио-де-Жанейро в Бразилии'
@@ -92,7 +92,7 @@ itinerary:
 
     Трансфер в аэропорт Рио-де-Жанейро для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'На фото: морской курорт Бузиос в Бразилии'
   - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: пляжи Рио-де-Жанейро в Бразилии'

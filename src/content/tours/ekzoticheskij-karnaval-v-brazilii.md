@@ -256,7 +256,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/amazonka-5.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: Река Амазонка в Манаусе, Бразилия, встреча рек и джунгли
 - excursionRef: excursion_source_vstrecha_rek
   places: []
@@ -290,7 +290,7 @@ itinerary:
 
     После плотной экскурсионной части маршрута этот день специально оставлен без обязательной программы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/hernan-molinari-5lk0vbt2juc-unsplash.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-11-enhanced-20261006.webp
     alt: Набережная в Бузиосе, Бразилия, яхты и океан, вечерние огни курорта
 - day: 12
   title: Бузиос - Рио-де-Жанейро

@@ -140,7 +140,7 @@ itinerary:
 
     Именно 2 экскурсии подряд позволяют увидеть Игуасу полноценно. Сначала вы понимаете размеры комплекса, затем буквально заходите внутрь этой панорамы. Один и тот же участок реки выглядит по-разному в зависимости от расстояния, высоты и направления взгляда.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/vodopady-iguasu-6.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-7-enhanced-20261006.webp
     alt: Каскады водопадов Игуасу в Бразилии и Аргентине, мощь воды и тропический лес
 - day: 8
   title: Завершение тура

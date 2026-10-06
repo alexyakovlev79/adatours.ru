@@ -78,7 +78,7 @@ itinerary:
 
     При желании можно уехать раньше окончания парада. Трансфер вернет вас в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/quinten-de-graaf-kb0ipylp7dc-unsplash.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-3-enhanced-20261006.webp
     alt: Финал карнавала в Рио, парад лучших школ самбы и победное шествие в Бразилии
 - day: 4
   title: Корковадо и Христос Искупитель

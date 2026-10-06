@@ -181,7 +181,7 @@ itinerary:
 
     **Важно по перелетам:** в Манаус нужно прилететь до 16:00, а вылет планировать после 14:30. Во всех остальных случаях индивидуальный трансфер в лодж или из лоджа оплачивается дополнительно и в стоимость программы не входит.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/iguasu.jpg
+  - src: /media/tours/tur-v-ekzoticheskuyu-braziliyu/itinerary-day-7-enhanced-20261006.webp
     alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
 - day: 8
   title: Амазония
@@ -204,7 +204,7 @@ itinerary:
 
     **Стоимость:** $100 нетто на человека.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Amazonia%201.png
+  - src: /media/tours/braziliya-s-san-paulo/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: индейцы из Амазонии, Бразилия'
 - excursionRef: excursion_source_vstrecha_rek
   places: []
@@ -287,7 +287,7 @@ priceFrom: 4053
 currency: USD
 priceNote: $4053
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/danilo-alvesd-sf0jdtyxc-y-unsplash.jpg
+  src: /media/tours/tur-v-ekzoticheskuyu-braziliyu/hero-enhanced-20261006.webp
   alt: 'На фото: птицы в лесах реки Амазонка в Бразилии'
 routeCountries:
 - country_brazil

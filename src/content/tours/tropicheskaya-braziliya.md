@@ -128,7 +128,7 @@ itinerary:
 
     Если хочется активности, можно выбрать снорклинг или виндсерфинг. Если нужен спокойный день, программа позволяет остаться на пляже, гулять по курорту и обедать в местных ресторанах. Такой свободный формат сохраняется до самого выезда в Рио.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'На фото: пляжный отдых на курорте Бузиос в Бразилии'
 - day: 7
   title: Пляжный отдых в Бузиосе
@@ -182,7 +182,7 @@ itinerary:
 
     Если хочется активности, можно выбрать снорклинг или виндсерфинг. Если нужен спокойный день, программа позволяет остаться на пляже, гулять по курорту и обедать в местных ресторанах. Такой свободный формат сохраняется до самого выезда в Рио.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'На фото: пляжный отдых на курорте Бузиос в Бразилии'
 - day: 10
   title: Пляжный отдых в Бузиосе
@@ -227,7 +227,7 @@ itinerary:
   - Бузиос
   text: После завтрака выезд из Бузиоса в Рио-де-Жанейро и трансфер в аэропорт для международного вылета.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'На фото: пляжный отдых на курорте Бузиос в Бразилии'
   - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
     alt: Пляж Копокабана в Рио-де-Жанейро, Бразилия

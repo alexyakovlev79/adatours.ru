@@ -147,7 +147,7 @@ itinerary:
       
       Включены завтрак и обед.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/vulkan-poas.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-2-enhanced-20261006.webp
         alt: "Кратер вулкана Поас в Коста-Рике"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -198,7 +198,7 @@ itinerary:
       
       Включены завтрак, обед и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/tortugero/45923605524-d9c5401dae-k.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-3-enhanced-20261006.webp
         alt: "Дикая природа национального парка Тортугеро"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -250,7 +250,7 @@ itinerary:
       
       Включены завтрак и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/arenal/costa-rica-2580657.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-4-enhanced-20261006.webp
         alt: "Панорама вулкана Ареналь"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -306,7 +306,7 @@ itinerary:
       
       Завтрак включен.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/rio-celeste-2.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-5-enhanced-20261006.webp
         alt: "Бирюзовый водопад Рио-Селесте"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -362,7 +362,7 @@ itinerary:
       
       Завтрак включен.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/monteverde/fabio-fistarol-wuq-lu8ror4-unsplash.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-6-enhanced-20261006.webp
         alt: "Облачный лес Монтеверде"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -429,7 +429,7 @@ itinerary:
       
       Включены завтрак и обед.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/drake-bay.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-7-enhanced-20261006.webp
         alt: "Колибри в тропических лесах Коста-Рики"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -500,7 +500,7 @@ itinerary:
           
           Также гидроплан обходит марина «Пес-Вела», пляж Эспадилья и Национальный парк Мануэль-Антонио.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/manuel-antonio/manuel-antonio.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-8-enhanced-20261006.webp
         alt: "Вид на полуостров Мануэль-Антонио"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -553,7 +553,7 @@ itinerary:
       
       Включены завтрак, обед и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/korkovado-i-osa/filip-mroz-zk049ofp4ui-unsplash.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-9-enhanced-20261006.webp
         alt: "Природа полуострова Оса и Корковадо"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -593,7 +593,7 @@ itinerary:
       
       Включены завтрак, обед и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/bejdzhik.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-10-enhanced-20261006.webp
         alt: "Алый попугай в джунглях Коста-Рики"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -649,7 +649,7 @@ itinerary:
       
       Включены завтрак, обед и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/costa-rica/novye-foto/korkovado-i-osa/cesar-badilla-miranda-gkcxxfkytxy-unsplash.jpg
+      - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-11-enhanced-20261006.webp
         alt: "Полуостров Оса и залив Дрейк"
         intendedSlot: "itinerary:day-11"
   - day: 12

@@ -198,7 +198,7 @@ itinerary:
 
     Маршрут «7 озер» занимает целый день именно из-за множества остановок. Панорамные площадки чередуются с небольшими поселками, берегами озер и участками дороги между лесистыми склонами. В Вижа-Трафуль можно сделать паузу на обед, чай, шоколад или домашние сладости. После этого дорога снова уходит к озерам и приводит в Вижа-Ла-Ангостура. Здесь день строится вокруг самой дороги и постоянно меняющихся видов, а не одной отдельной достопримечательности.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-bariloche-right.jpg
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/itinerary-day-2-enhanced-20261006.webp
     alt: Барилоче
 - day: 10
   title: Барилоче - Фоз-де-Игуасу
@@ -214,7 +214,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-13-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/countries/argentina/bariloche-header-8490.jpg
+  - src: /media/tours/chili-argentina/itinerary-day-10-images-1-enhanced-20261006.webp
     alt: Барилоче
 - day: 11
   title: 'Фоз-де-Игуасу: бразильская сторона, Макуко, Парк птиц и вертолет'

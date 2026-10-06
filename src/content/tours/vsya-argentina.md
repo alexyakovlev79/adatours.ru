@@ -311,7 +311,7 @@ itinerary:
       
       После экскурсии возвращение в Сальту с остановками в живописных деревнях. Продолжительность обратного переезда - около четырех часов.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/bariloche-header-8490.jpg
+      - src: /media/tours/chili-argentina/itinerary-day-10-images-1-enhanced-20261006.webp
         alt: "Салинас-Грандес"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -342,7 +342,7 @@ itinerary:
       
       Регион особенно известен сортом мальбек. На винодельнях расскажут о местных условиях выращивания винограда, сборе урожая, выдержке и производстве вина. На третьей винодельне предусмотрен обед с видом на Анды. Экскурсия проводится в составе группы с англоязычным гидом.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-mendoza-left.jpg
+      - src: /media/tours/vsya-argentina/itinerary-day-12-enhanced-20261006.webp
         alt: "Винодельни долины Лужан"
         intendedSlot: "itinerary:day-12"
   - day: 13
@@ -362,7 +362,7 @@ itinerary:
       
       В программу включен обед с видом на Анды. Экскурсия проводится в составе группы с англоязычным гидом. Возвращение в Мендосу.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/uco-valley.jpg
+      - src: /media/tours/vsya-argentina/itinerary-day-13-enhanced-20261006.webp
         alt: "Долина Уко"
         intendedSlot: "itinerary:day-13"
   - day: 14
@@ -393,7 +393,7 @@ itinerary:
       
       Вторая важная точка - миртовый лес Арражанес, известный плотными зарослями деревьев с характерной корой. После экскурсии возвращение в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/bariloche4.png
+      - src: /media/tours/vsya-argentina/itinerary-day-14-enhanced-20261006.webp
         alt: "Барилоче и озеро Науэль-Уапи"
         intendedSlot: "itinerary:day-14"
   - day: 15
@@ -432,7 +432,7 @@ itinerary:
       
       Затем дорога проходит вдоль песчаного пляжа и ведет в Вилья-Ла-Ангостура, окруженную озерами и горами. По пути можно увидеть озеро Коррентосо и типичные для северной Патагонии лесные пейзажи. После знакомства с районом возвращение в Барилоче.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/bariloche-header-8490.jpg
+      - src: /media/tours/chili-argentina/itinerary-day-10-images-1-enhanced-20261006.webp
         alt: "Большое кольцо Барилоче"
         intendedSlot: "itinerary:day-15"
   - day: 16
@@ -461,7 +461,7 @@ itinerary:
       
       Со смотровой площадки открываются виды на озера Морено и Науэль-Уапи, лагуну Эль-Треболь, полуострова Сан-Педро и Льяо-Льяо, остров Виктория, вершины Отто, Лопес, Гойе и Серро-Катедраль, а также на Барилоче. Этот день дополняет водную экскурсию предыдущих дней широкими панорамами озерного края.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-bariloche-right.jpg
+      - src: /media/tours/argentina-bariloche-i-buenos-ajres/itinerary-day-2-enhanced-20261006.webp
         alt: "Барилоче и Серро-Кампанарио"
         intendedSlot: "itinerary:day-16"
   - day: 17
@@ -510,7 +510,7 @@ itinerary:
       
       Для наблюдения оборудованы многочисленные дорожки и балконы. Можно провести у ледника достаточно времени, переходя между разными точками и наблюдая за его фронтом с нескольких ракурсов. Рекомендуется взять с собой ланч-бокс. Также предусмотрена возможность пообедать в ресторане на территории парка.
     images:
-      - src: https://brasiltours.ru/image/el%20cala1.png
+      - src: /media/excursions/ledovyj-trekking-perito-moreno/hero-enhanced-20261006.webp
         alt: "Ледник Перито-Морено"
         intendedSlot: "itinerary:day-18"
   - day: 19
@@ -531,7 +531,7 @@ itinerary:
     text: |-
       Свободный день для самостоятельных треккингов по подготовленным маршрутам в окрестностях Эль-Чалтена. Регион известен горными тропами и видами на патагонские вершины, поэтому можно выбрать прогулку в соответствии со своей подготовкой и погодой.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/el-chalten-adatours.jpg
+      - src: /media/tours/vsya-argentina/itinerary-day-20-enhanced-20261006.webp
         alt: "Горы Эль-Чалтена"
         intendedSlot: "itinerary:day-20"
   - day: 21
@@ -544,7 +544,7 @@ itinerary:
       
       Во второй половине дня трансфер на автобусную станцию и переезд обратно в Эль-Калафате. По прибытии - трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-calafate-3.jpg
+      - src: /media/excursions/kajaking-v-el-chalten/hero-enhanced-20261006.webp
         alt: "Каякинг и горные пейзажи Эль-Чалтена"
         intendedSlot: "itinerary:day-21"
   - excursionRef: excursion_el_chalten_kayaking
@@ -612,7 +612,7 @@ itinerary:
       
       Обратная дорога проходит вдоль реки Рио-Серрано и озер Торо и Портеньо. После экскурсии - возвращение и ночь в отеле.
     images:
-      - src: https://brasiltours.ru/image/El%20Calafate%20Adatours.png
+      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-7-enhanced-20261006.webp
         alt: "Национальный парк Торрес-дель-Пайне"
         intendedSlot: "itinerary:day-22"
   - day: 23

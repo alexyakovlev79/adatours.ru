@@ -13,7 +13,7 @@ language: []
 priceFrom: 300
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-calafate-3.jpg
+  src: /media/excursions/kajaking-v-el-chalten/hero-enhanced-20261006.webp
   alt: "Каякинг в Патагонии"
 gallery: []
 route:

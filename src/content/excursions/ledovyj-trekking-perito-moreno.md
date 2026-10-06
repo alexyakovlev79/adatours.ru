@@ -13,7 +13,7 @@ language: []
 priceFrom: 500
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/el%20cala1.png
+  src: /media/excursions/ledovyj-trekking-perito-moreno/hero-enhanced-20261006.webp
   alt: "Ледник Перито-Морено"
 gallery: []
 route:

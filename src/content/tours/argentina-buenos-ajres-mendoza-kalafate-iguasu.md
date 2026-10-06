@@ -148,7 +148,7 @@ itinerary:
 
     Дополнительно предлагается айс-трекинг по леднику с коктейлем со льдом Перито-Морено, $360 на человека.
   images:
-  - src: https://brasiltours.ru/image/El%20Calafate%20Adatours.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-7-enhanced-20261006.webp
     alt: 'на фото: Эль Калафате в Аргентине'
 - excursionRef: excursion_el_calafate_ice_trekking_perito_moreno
   places: []

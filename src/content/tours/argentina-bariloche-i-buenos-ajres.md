@@ -42,7 +42,7 @@ itinerary:
 
     По берегу Морено маршрут продолжается к мосту через озеро, затем вдоль Эль-Треболь возвращается к основной дороге и ведет обратно в Барилоче. Вторая половина дня свободна. Размещение.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-bariloche-right.jpg
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Вид на озеро в Барилоче'
 - day: 3
   title: Барилоче - Буэнос-Айрес

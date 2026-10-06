@@ -265,7 +265,7 @@ itinerary:
 
     Зимой Барилоче работает как горнолыжный курорт, летом и весной здесь популярны экскурсии, рыбалка и прогулки по озерам.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-bariloche-right.jpg
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/itinerary-day-2-enhanced-20261006.webp
     alt: Барилоче
 - day: 14
   title: Остров Виктория и лес Арраянес
@@ -291,7 +291,7 @@ itinerary:
 
     Особенно заметно меняется пейзаж осенью, когда буковые леса становятся красными, оранжевыми и светло-коричневыми.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/bariloche-header-8490.jpg
+  - src: /media/tours/chili-argentina/itinerary-day-10-images-1-enhanced-20261006.webp
     alt: Барилоче
 - day: 16
   title: Малое кольцо Барилоче - Сальта
@@ -309,7 +309,7 @@ itinerary:
   images:
   - src: /media/tours/chili-i-argentina-vip/itinerary-day-16-enhanced-20261006.webp
     alt: Сальта
-  - src: https://brasiltours.ru/image/countries/argentina/arg-bariloche-right.jpg
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/itinerary-day-2-enhanced-20261006.webp
     alt: Барилоче
 - day: 17
   title: Ущелье Умауака и Семицветная гора

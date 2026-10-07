@@ -120,12 +120,12 @@ const nestedGroups = NAV_LINKS
       <PrimaryCTA href="/contacts/" label="Оставить заявку" />
     </div>
 
-    <div class="mobile-cta">
-      <PrimaryCTA href="/contacts/" label="Оставить заявку" />
-    </div>
-
     <div class="mobile-search">
       <SearchTrigger compact />
+    </div>
+
+    <div class="mobile-cta">
+      <PrimaryCTA href="/contacts/" label="Оставить заявку" />
     </div>
 
     <button
@@ -486,6 +486,7 @@ const nestedGroups = NAV_LINKS
   .desktop-cta :global(.cta) {
     min-width: auto;
     padding: 12px 15px;
+    white-space: nowrap;
   }
 
   .mobile-cta,
@@ -515,11 +516,19 @@ const nestedGroups = NAV_LINKS
       margin-right: 6px;
     }
 
+    .mobile-cta {
+      min-width: max-content;
+    }
+
     .mobile-cta :global(.cta) {
-      min-width: auto;
+      min-width: max-content;
       gap: 16px;
       padding: 10px 13px;
       font-size: .72rem;
+      white-space: nowrap;
+    }
+
+    .mobile-cta :global(.cta span:first-child) {
       white-space: nowrap;
     }
 

@@ -144,7 +144,7 @@ priceFrom: 136
 currency: USD
 priceNote: $136
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/juan-camilo-guarin-p-57shazuaotq-unsplash.jpg
+  src: /media/tours/kolumbiya-bogota-ekhe-kafetero-kartakhena/hero-src-enhanced-20261007.webp
   alt: 'На фото: попугай в джунглях Колумбии'
 routeCountries:
 - country_colombia

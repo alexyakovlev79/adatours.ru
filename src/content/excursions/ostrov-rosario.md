@@ -18,7 +18,7 @@ priceFrom: 171
 currency: USD
 priceNote: "Стоимость экскурсии — $171."
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0180.jpg
+  src: /media/excursions/ostrov-rosario/hero-src-enhanced-20261007.webp
   alt: Острова Росарио в Карибском море, Колумбия
 gallery:
   - src: https://brasiltours.ru/image/countries/colombia/new-photos/kartakhena-22.jpg

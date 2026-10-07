@@ -70,7 +70,7 @@ itinerary:
   images:
   - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: 'на фото: Богота'
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0301.jpg
+  - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: 'на фото: Собор Сипакира'
 - day: 3
   title: Богота - Медельин
@@ -254,7 +254,7 @@ itinerary:
   images:
   - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Картахена'
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0180.jpg
+  - src: /media/excursions/ostrov-rosario/hero-src-enhanced-20261007.webp
     alt: 'на фото: Острова Росарио'
 - day: 15
   title: Картахена
@@ -276,7 +276,7 @@ priceFrom: 4643
 currency: USD
 priceNote: $4643
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/121.jpg
+  src: /media/tours/fantasticheskaya-kolumbiya/hero-src-enhanced-20261007.webp
   alt: 'на фото: Картахена'
 routeCountries:
 - country_colombia

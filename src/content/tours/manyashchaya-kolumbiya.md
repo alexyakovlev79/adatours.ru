@@ -52,7 +52,7 @@ itinerary:
   images:
   - src: "/media/tours/manyashchaya-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Озеро Гуатавита, Колумбия'
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0301.jpg
+  - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: 'На фото: собор Сипакира, Колумбия'
 - day: 3
   title: Историческая Богота и Монсеррат
@@ -168,7 +168,7 @@ priceFrom: 3663
 currency: USD
 priceNote: $3663
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/20220412-082105-anna.jpg
+  src: /media/tours/manyashchaya-kolumbiya/hero-src-enhanced-20261007.webp
   alt: 'На фото: граффити в одном из колумбийских городов'
 routeCountries:
 - country_colombia

@@ -30,7 +30,7 @@ itinerary:
 
     Встреча в международном аэропорту Эль-Дорадо, трансфер в отель и размещение.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/b/o/bogota_1_1.png
+  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: город Богота в Колумбии'
 - day: 2
   title: Богота - Ла-Канделария и Монсеррат
@@ -45,7 +45,7 @@ itinerary:
     \ Botero, подъем на Монсеррат.\n\nМузей золота закрыт по понедельникам. Casa de la Moneda и Donación Botero закрыты по\
     \ вторникам."
   images:
-  - src: https://brasiltours.ru/image/catalog/product/b/o/bogota_1_1.png
+  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: город Богота в Колумбии'
 - day: 3
   title: Богота - Соляной собор Сипакиры
@@ -56,7 +56,7 @@ itinerary:
     \ возвращаемся в Боготу.\n\n**Продолжительность:** 5 часов.  \n**Включено:** профессиональный англоязычный гид, частный\
     \ транспорт и вход в Соляной собор Сипакиры."
   images:
-  - src: https://brasiltours.ru/image/catalog/product/b/o/bogota_1_1.png
+  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: город Богота в Колумбии'
 - day: 4
   title: Богота - Картахена
@@ -72,7 +72,7 @@ itinerary:
     \  \n**Дни проведения:** ежедневно.  \n**Включено:** профессиональный англоязычный гид, частный транспорт и входные билеты\
     \ в указанные места."
   images:
-  - src: https://brasiltours.ru/image/catalog/product/b/o/bogota_1_1.png
+  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: город Богота в Колумбии'
   - src: https://brasiltours.ru/image/catalog/product/f/i/file_49_19.png
     alt: 'На фото: город Картахена в Колумбии'
@@ -133,7 +133,7 @@ priceFrom: 1120
 currency: USD
 priceNote: $1120
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/kartakhena.jpg
+  src: /media/tours/kolumbiya-2024-kulturnaya/hero-src-enhanced-20261007.webp
   alt: 'На фото: граффити в Картахене Колумбия'
 routeCountries:
 - country_colombia

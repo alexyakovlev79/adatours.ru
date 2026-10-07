@@ -152,7 +152,7 @@ itinerary:
     \nВозвращение в отель.\n\n**Продолжительность:** около 4 часов.  \n**Дни проведения:** ежедневно.\n\n**Включено:** профессиональный\
     \ англоговорящий гид, частный транспорт и входные билеты в указанные места."
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0220.jpg
+  - src: /media/tours/colombia-bogota-cultural-ru/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: На улицах Картахены, Колумбия
 - day: 7
   title: Картахена - острова Росарио
@@ -169,7 +169,7 @@ itinerary:
   images:
   - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: пляжи островов Росарио в Колумбии'
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0220.jpg
+  - src: /media/tours/colombia-bogota-cultural-ru/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: На улицах Картахены, Колумбия
 - day: 8
   title: Картахена
@@ -182,7 +182,7 @@ itinerary:
 
     Перелет в стоимость не включен.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0220.jpg
+  - src: /media/tours/colombia-bogota-cultural-ru/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: На улицах Картахены, Колумбия
 included:
 - 3 ночи проживания в Боготе;
@@ -222,7 +222,7 @@ priceFrom: 1725
 currency: USD
 priceNote: $1725
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/kartakhena-2.jpg
+  src: /media/tours/colombia-bogota-cultural-ru/hero-src-enhanced-20261007.webp
   alt: 'На фото: город Картахена в Колумбии'
 routeCountries:
 - country_colombia

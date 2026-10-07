@@ -211,7 +211,7 @@ priceFrom: 3729
 currency: USD
 priceNote: $3729
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0120.jpg
+  src: /media/excursions/salento-i-dolina-kokora/gallery-5-src-enhanced-20261007.webp
   alt: 'На фото: страна Колумбия, город Богота'
 routeCountries:
 - country_colombia

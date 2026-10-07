@@ -30,7 +30,7 @@ gallery:
     alt: Долина Кокора и облачный лес
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0156.jpg
     alt: Экологическая тропа в долине Кокора
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0120.jpg
+  - src: /media/excursions/salento-i-dolina-kokora/gallery-5-src-enhanced-20261007.webp
     alt: Улицы Саленто, Колумбия
 route:
   - Перейра

@@ -51,7 +51,7 @@ itinerary:
 
     Завершает экскурсию посещение Музея Ларко. После этого возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima-pacific.png
+  - src: "/media/tours/peru-i-boliviya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Лима
 - day: 2
   title: Лима - Куско

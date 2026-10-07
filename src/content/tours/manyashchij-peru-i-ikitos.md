@@ -50,7 +50,7 @@ itinerary:
 
     Размещение в гостинице категории 4*. Остаток дня свободный, чтобы отдохнуть после перелета и подготовиться к следующему этапу путешествия. Лима в этой программе служит связующим пунктом между несколькими частями маршрута: сюда вы вернетесь после Титикаки и еще раз после Амазонии.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/l/i/lima4_1_3.png
+  - src: "/media/tours/manyashchij-peru-i-ikitos/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Лима
 - day: 2
   title: Лима - Куско и обзорная экскурсия
@@ -124,7 +124,7 @@ itinerary:
 
     Около 18:00 прибытие в Пуно. Город расположен на высоте примерно 3860 метров у озера Титикака, одного из самых известных высокогорных судоходных озер мира. Размещение в гостинице. Вечер можно посвятить отдыху после длинного высокогорного переезда.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/p/u/puno2_1_3.png
+  - src: "/media/tours/manyashchij-peru-i-ikitos/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Пуно
 - day: 6
   title: Озеро Титикака, Урос и Такиле
@@ -141,7 +141,7 @@ itinerary:
 
     Обед на острове. После возвращения в Пуно трансфер в аэропорт и перелет в Лиму. Встреча в аэропорту Лимы и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/p/u/puno2_1_3.png
+  - src: "/media/tours/manyashchij-peru-i-ikitos/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Пуно
 - day: 7
   title: Лима - Икитос - Heliconia Amazon River Lodge
@@ -157,9 +157,9 @@ itinerary:
 
     К вечеру предусмотрено наблюдение за закатом. После возвращения в лодж ужин и отдых. Вечером местные гиды рассказывают истории и легенды Амазонии.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/i/q/iquitos.png
+  - src: "/media/tours/manyashchij-peru-i-ikitos/hero-src-enhanced-20261007.webp"
     alt: Манящий Перу и Икитос
-  - src: https://brasiltours.ru/image/catalog/product/l/i/lima4_1_3.png
+  - src: "/media/tours/manyashchij-peru-i-ikitos/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Лима
 - day: 8
   title: 'Амазония: птицы, рыбалка и розовые дельфины'
@@ -189,7 +189,7 @@ itinerary:
 
     В назначенное время трансфер в аэропорт и перелет в Лиму. По прибытии встреча, трансфер в гостиницу и размещение.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/i/q/iquitos.png
+  - src: "/media/tours/manyashchij-peru-i-ikitos/hero-src-enhanced-20261007.webp"
     alt: Манящий Перу и Икитос
   - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
     alt: Лима
@@ -218,7 +218,7 @@ itinerary:
 
     Ночь в отеле в Лиме. Этот свободный день оставляет возможность самостоятельно выбрать темп перед международным вылетом и при желании добавить одну из перечисленных экскурсий.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/l/i/lima4_1_3.png
+  - src: "/media/tours/manyashchij-peru-i-ikitos/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Лима
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []
@@ -262,7 +262,7 @@ priceFrom: 3335
 currency: USD
 priceNote: $3335
 hero:
-  src: https://brasiltours.ru/image/catalog/product/i/q/iquitos.png
+  src: "/media/tours/manyashchij-peru-i-ikitos/hero-src-enhanced-20261007.webp"
   alt: Манящий Перу и Икитос
 routeCountries:
 - country_peru
@@ -290,3 +290,4 @@ themes: []
 **Стоимость:** $3335
 
 Путешествие несколько раз полностью меняет обстановку. При этом каждая часть маршрута получает достаточно времени: Куско и Мачу-Пикчу идут отдельными днями, переезд в Пуно превращен в экскурсионный маршрут с остановками, Титикаке посвящен полноценный день, а Амазония занимает 3 дня с проживанием в лодже и выездами по реке. После столицы и перелета в Куско начинаются высоты более 3000 метров, археологические комплексы и каменная архитектура инков. Затем дорога ведет к Титикаке, где жизнь связана с водой и традициями местных общин. Финальная большая часть проходит в Heliconia Amazon River Lodge: лодки, тропический лес, птицы, розовые дельфины, виктория регия и ночная прогулка по джунглям.
+

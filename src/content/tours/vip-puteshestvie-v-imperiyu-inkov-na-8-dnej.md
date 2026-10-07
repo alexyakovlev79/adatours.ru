@@ -72,7 +72,7 @@ itinerary:
 
       Лима рассматривается в программе и как гастрономический город: холодное севиче, морепродукты и дегустационные сеты дополняют историческую экскурсию.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima/spencer-arquimedes-7s4psg9huei-unsplash.jpg
+  - src: "/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Закат над столицей Перу, городом Лима
 - day: 3
   title: Перелет в Куско и переезд в Священную долину
@@ -90,7 +90,7 @@ itinerary:
 
     Священная долина лежит между Куско и Мачу-Пикчу. Здесь находятся Ольянтайтамбо, соляные поля Марас и кольцевые террасы Морай.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/kusko/cusco-3.jpg
+  - src: "/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Город Куско - древняя столица инков, Перу
 - day: 4
   title: Ольянтайтамбо, Морай, Марас и Mil Centro
@@ -172,7 +172,7 @@ itinerary:
 
     Финальная точка - **Кориканча**, Золотой храм, главная святыня империи инков. Стены и интерьер храма были покрыты золотом, а на алтаре находился большой золотой диск с изображением бога солнца Инти.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/kusko/cusco-3.jpg
+  - src: "/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Город Куско - древняя столица инков, Перу
 - day: 7
   title: Куско - Лима
@@ -194,7 +194,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-09-enhanced-20260930.webp
     alt: Город Лима - вид с океана, столица Перу
-  - src: https://brasiltours.ru/image/countries/peru/kusko/cusco-3.jpg
+  - src: "/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Город Куско - древняя столица инков, Перу
 - excursionRef: excursion_lima_larco_museum_visit
   places: []
@@ -236,7 +236,7 @@ priceFrom: 8474
 currency: USD
 priceNote: $8474
 hero:
-  src: https://brasiltours.ru/image/countries/peru/hiram-bingham-train/oblozhka.jpg
+  src: "/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/hero-src-enhanced-20261007.webp"
   alt: Люксовый поезд в Мачу-Пикчу «Хирам Бингхэм» (Бельмонд) в Перу
 routeCountries:
 - country_peru
@@ -278,3 +278,4 @@ themes: []
 После поездки в Мачу-Пикчу вы возвращаетесь уже не в долину, а в Куско и заселяетесь в **Belmond Palacio Nazarenas**. Таким образом, отели следуют логике самого маршрута: океанская Лима, затем долина, затем исторический центр Куско.
 
 Переезды распределены так, чтобы основные достопримечательности не стояли подряд без пауз. После международного прилета свободный вечер, после перелета в Куско - день на адаптацию к высоте, после насыщенного Мачу-Пикчу - возвращение в комфортный отель в Куско. Внутренние перелеты Лима - Куско - Лима оплачиваются отдельно, а поезд Hiram Bingham уже входит в стоимость программы.
+

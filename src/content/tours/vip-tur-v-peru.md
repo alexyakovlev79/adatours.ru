@@ -168,7 +168,7 @@ itinerary:
 
     Поездка на Урос дает возможность увидеть, как тотора используется буквально во всех частях быта: из тростника делают сами острова и лодки, часть растения употребляют в пищу. Традиционные занятия здесь соседствуют с приемом путешественников и продажей изделий ручной работы.
   images:
-  - src: https://brasiltours.ru/image/Puno.png
+  - src: "/media/tours/vip-tur-v-peru/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Пуно
 - day: 8
   title: Пуно - Куско
@@ -182,7 +182,7 @@ itinerary:
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско
-  - src: https://brasiltours.ru/image/Puno.png
+  - src: "/media/tours/vip-tur-v-peru/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Пуно
 - day: 9
   title: Мачу-Пикчу
@@ -248,7 +248,7 @@ itinerary:
 
     В конце дня трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/P/l/Plaza-de-Armas-de-Lima.jpg
+  - src: "/media/tours/vip-tur-v-peru/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Лима
 included:
 - Проживание в отелях

@@ -71,7 +71,7 @@ itinerary:
 
     Вечером предусмотрен трансфер с испаноговорящим водителем в ресторан Rafael с 19:30 до 20:45, столик забронирован на 21:00. Стоимость ужина не включена. После ужина водитель отвезет вас обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima-pacific.png
+  - src: "/media/tours/peru-i-boliviya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Лима
 - day: 3
   title: Икитос и Амазония

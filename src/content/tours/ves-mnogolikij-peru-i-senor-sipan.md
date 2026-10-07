@@ -405,7 +405,7 @@ priceFrom: 4220
 currency: USD
 priceNote: $4220
 hero:
-  src: https://brasiltours.ru/image/countries/peru/jeison-higuita-kd9assbyz3q-unsplash.jpg
+  src: "/media/tours/ves-mnogolikij-peru-i-senor-sipan/hero-src-enhanced-20261007.webp"
   alt: 'на фото: город инков Мачу-Пикчу в Перу'
 routeCountries:
 - country_peru

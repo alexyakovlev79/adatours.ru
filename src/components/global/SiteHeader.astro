@@ -400,14 +400,6 @@ const nestedGroups = NAV_LINKS
     opacity: 0.95;
   }
 
-  .desktop-nav__parent::after {
-    content: '⌄';
-    display: inline-block;
-    margin-left: 5px;
-    font-size: .72em;
-    transform: translateY(-1px);
-  }
-
   .desktop-nav > a:hover,
   .desktop-nav__parent:hover {
     opacity: 0.62;
@@ -446,6 +438,12 @@ const nestedGroups = NAV_LINKS
   .desktop-nav__submenu--wide {
     grid-template-columns: repeat(2, minmax(190px, 1fr));
     min-width: min(520px, calc(100vw - 40px));
+  }
+
+  .desktop-nav__submenu--wide a {
+    min-width: 0;
+    white-space: normal;
+    line-height: 1.3;
   }
 
   .desktop-nav__submenu a {
@@ -682,19 +680,32 @@ const nestedGroups = NAV_LINKS
       padding-bottom: 28px;
     }
 
+    .mobile-menu__panel[data-mobile-panel='countries'] nav,
+    .mobile-menu__panel[data-mobile-panel='interests'] nav {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: clamp(18px, 5vw, 28px);
+    }
+
     .mobile-menu__panel--submenu nav a {
       max-width: 100%;
+      min-width: 0;
       padding: 13px 0;
       border-bottom: 1px solid rgba(255,255,255,.14);
       color: rgba(255,255,255,.78);
       font-size: clamp(1.08rem, 4vw, 1.55rem);
       line-height: 1.15;
-      overflow-wrap: anywhere;
+      white-space: normal;
+      overflow-wrap: break-word;
     }
 
     .mobile-menu__panel--submenu nav a.mobile-menu__overview {
       color: var(--color-bg);
       font-weight: 600;
+    }
+
+    .mobile-menu__panel[data-mobile-panel='countries'] .mobile-menu__overview,
+    .mobile-menu__panel[data-mobile-panel='interests'] .mobile-menu__overview {
+      grid-column: 1 / -1;
     }
 
     .mobile-menu__contact {

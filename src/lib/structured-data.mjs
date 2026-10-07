@@ -215,6 +215,7 @@ export function buildStructuredData({ root, organization, records, page, documen
       node.jobTitle = cleanText(d.role);
       node.worksFor = ref(orgId);
       if (full) {
+        node.description ||= cleanText(page.description);
         node.knowsAbout = d.expertise;
         node.knowsLanguage = d.languages?.map(languageCode);
         node.sameAs = d.externalProfiles?.filter((v) => /^https?:\/\//.test(v));
@@ -232,6 +233,10 @@ export function buildStructuredData({ root, organization, records, page, documen
       }
     }
     return add(node);
+  }
+  const founder = byId.get('person_anna');
+  if (publicRecord(founder) && founder.kind === 'person') {
+    add({ '@type': ['Organization', 'TravelAgency'], '@id': orgId, founder: ensureRecord(founder) });
   }
   const isMultiCountryCatalog = page.path === '/multi-country/'
     || /^\/multi-country\/page\/(?:[2-9]|[1-9]\d+)\/$/.test(page.path);

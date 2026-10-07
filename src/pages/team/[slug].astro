@@ -6,7 +6,6 @@ import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
 import AboutNav from '../../components/commercial/AboutNav.astro';
-import { SITE } from '../../lib/site';
 
 export async function getStaticPaths() {
   const people = await getCollection('people', ({ data }) =>
@@ -22,34 +21,15 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const isAnna = entry.data.id === 'person_anna';
-
-const personSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: entry.data.name,
-  jobTitle: entry.data.role,
-  worksFor: {
-    '@type': 'Organization',
-    name: 'Ada Tours',
-    url: SITE.url,
-  },
-  url: new URL(`/team/${entry.data.slug}/`, Astro.site ?? SITE.url).toString(),
-  image: entry.data.photo?.src
-    ? new URL(entry.data.photo.src, Astro.site ?? SITE.url).toString()
-    : undefined,
-  knowsAbout: entry.data.expertise,
-  sameAs: entry.data.externalProfiles,
-};
 ---
 
 <BaseLayout leadTitle="Обсудить маршрут с Ada Tours" leadEntityId={entry.data.id}
-  title={isAnna ? 'Анна Аванесова - основатель и CEO Ada Tours' : `${entry.data.name} - ${entry.data.role}`}
+  title={isAnna ? 'Анна Аванесова: основатель и CEO Ada Tours' : `${entry.data.name}: ${entry.data.role}`}
   description={isAnna
-    ? 'Анна Аванесова, основатель и CEO Ada Tours: Бразилия и Латинская Америка, сложные индивидуальные маршруты, VIP, MICE и multi-country.'
+    ? 'Анна Аванесова, основатель и CEO Ada Tours. Индивидуальные маршруты по Бразилии и Латинской Америке, VIP, MICE и multi-country программы.'
     : `${entry.data.name}, ${entry.data.role}. Экспертиза: ${entry.data.expertise.join(', ')}.`}
+  image={entry.data.photo?.src}
 >
-  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
-
   <Hero
     eyebrow={isAnna ? 'Основатель Ada Tours' : 'Команда Ada Tours'}
     title={entry.data.name}

@@ -2,7 +2,7 @@
 import PrimaryCTA from './PrimaryCTA.astro';
 import SearchTrigger from './SearchTrigger.astro';
 import ContactActions from './ContactActions.astro';
-import { DMC_NAV_LINKS, MOBILE_NAV_LINKS, NAV_LINKS } from '../../lib/site';
+import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, MOBILE_NAV_LINKS, NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
 
 interface Props {
@@ -13,11 +13,18 @@ const { theme = 'light' } = Astro.props;
 const logoWhite = withBase('/brand/adatours-logo-white.svg');
 const logoBlack = withBase('/brand/adatours-logo-black.svg');
 const dmcChildLinks = DMC_NAV_LINKS.slice(1);
-const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) =>
-  link.href === '/dmc/'
-    ? [link, ...dmcChildLinks.map((child) => ({ href: child.href, label: child.label, nested: true }))]
-    : [link]
-);
+const aboutChildLinks = ABOUT_NAV_LINKS.slice(1);
+const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
+  const children = link.href === '/dmc/'
+    ? dmcChildLinks
+    : link.href === '/about/'
+      ? aboutChildLinks
+      : [];
+
+  return children.length
+    ? [link, ...children.map((child) => ({ href: child.href, label: child.label, nested: true }))]
+    : [link];
+});
 ---
 
 <header class:list={['site-header', `site-header--${theme}`]} data-site-header>
@@ -29,11 +36,11 @@ const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) =>
 
     <nav class="desktop-nav" aria-label="Основная навигация">
       {NAV_LINKS.map((link) => (
-        link.href === '/dmc/' ? (
+        link.href === '/dmc/' || link.href === '/about/' ? (
           <div class="desktop-nav__group">
             <a class="desktop-nav__parent" href={withBase(link.href)}>{link.label}</a>
-            <div class="desktop-nav__submenu" aria-label="Для агентств">
-              {dmcChildLinks.map((child) => (
+            <div class="desktop-nav__submenu" aria-label={link.label}>
+              {(link.href === '/dmc/' ? dmcChildLinks : aboutChildLinks).map((child) => (
                 <a href={withBase(child.href)}>{child.label}</a>
               ))}
             </div>

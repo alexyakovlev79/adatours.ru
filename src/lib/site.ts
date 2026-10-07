@@ -13,6 +13,14 @@ export const DMC_NAV_LINKS = [
   { id: 'terms', href: '/dmc/terms/', label: 'Условия работы' },
 ] as const;
 
+export const ABOUT_NAV_LINKS = [
+  { id: 'overview', href: '/about/', label: 'О компании' },
+  { id: 'anna', href: '/team/anna-avanesova/', label: 'Анна Аванесова' },
+  { id: 'team', href: '/team/', label: 'Команда' },
+  { id: 'reviews', href: '/reviews/', label: 'Отзывы' },
+  { id: 'cases', href: '/cases/', label: 'Кейсы' },
+] as const;
+
 export const NAV_LINKS = [
   { href: '/country/', label: 'Страны' },
   { href: '/tours/', label: 'Туры' },
@@ -25,18 +33,10 @@ export const NAV_LINKS = [
   { href: '/contacts/', label: 'Контакты' },
 ];
 
-const SECONDARY_NAV_LINKS = [
-  { href: '/cases/', label: 'Кейсы' },
-  { href: '/reviews/', label: 'Отзывы' },
-  { href: '/team/', label: 'Команда' },
-];
+export const MOBILE_NAV_LINKS = NAV_LINKS;
 
-export const MOBILE_NAV_LINKS = [
-  ...NAV_LINKS.slice(0, -1),
-  ...SECONDARY_NAV_LINKS,
-  NAV_LINKS[NAV_LINKS.length - 1],
-];
-
-export const FOOTER_NAV_LINKS = MOBILE_NAV_LINKS.flatMap((link) =>
-  link.href === '/dmc/' ? [link, ...DMC_NAV_LINKS.slice(1)] : [link]
-);
+export const FOOTER_NAV_LINKS = MOBILE_NAV_LINKS.flatMap((link) => {
+  if (link.href === '/dmc/') return [link, ...DMC_NAV_LINKS.slice(1)];
+  if (link.href === '/about/') return [link, ...ABOUT_NAV_LINKS.slice(1)];
+  return [link];
+});

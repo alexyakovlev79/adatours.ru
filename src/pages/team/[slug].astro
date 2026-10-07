@@ -3,6 +3,7 @@ import { isActiveEntity } from '../../lib/archive.mjs';
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
+import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
 import { SITE } from '../../lib/site';
 
@@ -19,6 +20,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const isAnna = entry.data.id === 'person_anna';
 
 const personSchema = {
   '@context': 'https://schema.org',
@@ -39,26 +41,37 @@ const personSchema = {
 };
 ---
 
-<BaseLayout leadTitle="Обсудить поездку с Ada Tours" leadEntityId={entry.data.id}
-  title={`${entry.data.name} - ${entry.data.role}`}
-  description={`${entry.data.name}, ${entry.data.role}. Экспертиза: ${entry.data.expertise.join(', ')}.`}
+<BaseLayout leadTitle="Обсудить маршрут с Ada Tours" leadEntityId={entry.data.id}
+  title={isAnna ? 'Анна Аванесова - основатель и CEO Ada Tours' : `${entry.data.name} - ${entry.data.role}`}
+  description={isAnna
+    ? 'Анна Аванесова, основатель и CEO Ada Tours: Бразилия и Латинская Америка, сложные индивидуальные маршруты, VIP, MICE и multi-country.'
+    : `${entry.data.name}, ${entry.data.role}. Экспертиза: ${entry.data.expertise.join(', ')}.`}
 >
   <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 
   <Hero
-    eyebrow="Команда Ada Tours"
+    eyebrow={isAnna ? 'Основатель Ada Tours' : 'Команда Ada Tours'}
     title={entry.data.name}
-    intro={entry.data.role}
+    intro={isAnna
+      ? 'Латинская Америка для Анны началась задолго до Ada Tours: с самостоятельных путешествий, бумажной карты и сложных наземных маршрутов.'
+      : entry.data.role}
     compact
     ctaLabel="Обсудить маршрут"
   />
+
+  {isAnna && (
+    <EditorialStatement
+      eyebrow="Личный опыт"
+      text="Анна исследовала Латинскую Америку с рюкзаком и бумажной картой, ездила автостопом, ходила пешком и верхом, ночевала в гамаке и на парусной лодке. Этот опыт стал основой ее подхода к маршрутам Ada Tours."
+    />
+  )}
 
   <PersonProfile
     name={entry.data.name}
     role={entry.data.role}
     photo={entry.data.photo}
     expertise={entry.data.expertise}
-    eyebrow="Профиль"
+    eyebrow={isAnna ? 'Чем занимается Анна' : 'Профиль'}
   >
     <Content />
   </PersonProfile>

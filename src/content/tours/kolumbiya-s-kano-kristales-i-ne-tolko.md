@@ -58,7 +58,7 @@ itinerary:
 
     Продолжительность около 4 часов. Включены билеты в Музей золота, Дом монеты и коллекцию Ботеро, англоговорящий гид, частный транспорт и местная медицинская карта.
   images:
-  - src: https://brasiltours.ru/image/bogota.png
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 3
   title: 'Среда или пятница: Сипакира и Гуатавита'
@@ -103,7 +103,7 @@ itinerary:
 
     Эта часть маршрута должна начинаться в четверг или субботу, поскольку программа привязана к авиаперелетам и стыковкам.
   images:
-  - src: https://brasiltours.ru/image/bogota1.png
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 5
   title: 'Пятница или воскресенье: Каньо-Кристалес'
@@ -163,7 +163,7 @@ itinerary:
 
     По прибытии вас встретят в аэропорту Матеканья и доставят в отель. Размещение.
   images:
-  - src: https://brasiltours.ru/image/bogota.png
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 8
   title: 'Понедельник или среда: Саленто и долина Кокора'
@@ -234,7 +234,7 @@ itinerary:
 
     Для одноместного размещения экскурсия по городу может проходить в общем формате. В этом варианте также предусмотрены панорама бухты, причал Пегаса, Часовая башня, район Манга, крепость Сан-Фелипе, прогулка по историческим улицам, церковь Сан-Педро-Клавер и бастион Санто-Доминго.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena1.jpg
+  - src: "/media/tours/kolumbiya-s-kano-kristales-i-ne-tolko/itinerary-9-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 11
   title: 'Четверг или суббота: острова Росарио'
@@ -308,7 +308,7 @@ priceFrom: 4621
 currency: USD
 priceNote: $4621
 hero:
-  src: https://brasiltours.ru/image/macaren%20colombia.png
+  src: "/media/tours/kolumbiya-s-kano-kristales-i-ne-tolko/hero-src-enhanced-20261007.webp"
   alt: Колумбия с «Каньо-Кристалес» и не только
 routeCountries:
 - country_colombia

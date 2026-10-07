@@ -26,7 +26,7 @@ gallery:
     alt: Какао и шоколад на ферме в Колумбии
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0158.jpg
     alt: Посещение шоколадной фермы в Перейре
-  - src: https://brasiltours.ru/image/countries/colombia/coffee-in-farm.jpg
+  - src: "/media/destinations/pereira/featureBands-0-image-enhanced-20261007.webp"
     alt: Напиток на ферме в Колумбии
 route:
   - Перейра

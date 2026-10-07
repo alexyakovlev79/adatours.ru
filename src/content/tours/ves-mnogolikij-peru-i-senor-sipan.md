@@ -200,7 +200,7 @@ itinerary:
 
       **Доплата:** $250 с человека.
   images:
-  - src: https://brasiltours.ru/image/puno2.png
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: 'на фото: Пуно в Перу'
   - src: https://brasiltours.ru/image/cusco%202.png
     alt: 'на фото: Куско в Перу'
@@ -221,7 +221,7 @@ itinerary:
 
     После экскурсии возвращение в Пуно. Ночь в отеле 3*.
   images:
-  - src: https://brasiltours.ru/image/puno2.png
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: 'на фото: Пуно в Перу'
 - day: 8
   title: Пуно - Колка
@@ -246,7 +246,7 @@ itinerary:
   images:
   - src: /media/destinations/isla-del-sol/hero-enhanced-20261003.webp
     alt: 'на фото: Каньон Колка в Перу'
-  - src: https://brasiltours.ru/image/puno2.png
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: 'на фото: Пуно в Перу'
 - day: 9
   title: Колка - Арекипа

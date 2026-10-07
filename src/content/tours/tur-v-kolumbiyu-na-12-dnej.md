@@ -230,7 +230,7 @@ itinerary:
     \ могут увидеть зал с озером, музей минералогии, кинотеатр и сувенирные магазины.\n\nПосле экскурсии возвращение в Боготу.\n\
     \n**Трансфер Сипакира - Богота:** около 1,5 часа."
   images:
-  - src: https://brasiltours.ru/image/guatavita.png
+  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Озеро Гуатавита в Колумбии'
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0302.jpg
     alt: 'На фото: Соляной собор  Сипакира в Колумбии'

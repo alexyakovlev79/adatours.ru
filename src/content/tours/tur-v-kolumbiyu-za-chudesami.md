@@ -66,7 +66,7 @@ itinerary:
 
     **Включено:** подъем на Монсеррат, вход в Музей золота, дегустация мороженого Paila, услуги гида, частный транспорт и карта местной медицинской помощи.
   images:
-  - src: https://brasiltours.ru/image/bogota.png
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: На фото:Богота
 - day: 3
   title: Богота - Сипакира - Вилья-де-Лейва

@@ -53,7 +53,7 @@ itinerary:
 
     После размещения остается время для первого знакомства с городом.
   images:
-  - src: https://brasiltours.ru/image/lima%203.png
+  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лима
 - day: 2
   title: Лима - Куско
@@ -161,7 +161,7 @@ itinerary:
 
     Доплата за этот вариант - $250 на человека.
   images:
-  - src: https://brasiltours.ru/image/puno2.png
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: Пуно
   - src: https://brasiltours.ru/image/cusco%202.png
     alt: Куско
@@ -184,7 +184,7 @@ itinerary:
 
     Ночь в гостинице Sol Plaza 3* или отеле той же категории.
   images:
-  - src: https://brasiltours.ru/image/puno2.png
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: Пуно
 - day: 7
   title: Пуно - озеро Титикака
@@ -223,7 +223,7 @@ itinerary:
 
     По желанию можно посетить горячие источники. Также предусмотрено время на обед.
   images:
-  - src: https://brasiltours.ru/image/puno2.png
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: Пуно
 - day: 9
   title: Колка - Арекипа
@@ -339,7 +339,7 @@ itinerary:
 
     При музее работает ресторан национальной кухни Café del Museo.
   images:
-  - src: https://brasiltours.ru/image/lima%203.png
+  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лима
 included:
 - Внутренний авиаперелет Лима - Куско.

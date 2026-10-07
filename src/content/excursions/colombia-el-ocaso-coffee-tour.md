@@ -14,7 +14,7 @@ updatedAt: '2026-10-04'
 priceFrom: null
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/coffee-in-farm.jpg
+  src: "/media/destinations/pereira/featureBands-0-image-enhanced-20261007.webp"
   alt: Дегустация свежесваренного колумбийского кофе на плантации
 included:
 - Знакомство с производством кофе и дегустация по программе.

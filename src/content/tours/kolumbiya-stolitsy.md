@@ -223,7 +223,7 @@ priceFrom: 1560
 currency: USD
 priceNote: $1560
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0032.jpg
+  src: "/media/tours/kolumbiya-stolitsy/hero-src-enhanced-20261007.webp"
   alt: Колумбия- столицы
 routeCountries:
 - country_colombia

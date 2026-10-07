@@ -33,7 +33,7 @@ itinerary:
 
     Размещение.
   images:
-  - src: https://brasiltours.ru/image/bogota.png
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Колумбии, город Богота'
 - day: 2
   title: 'Богота: Ла-Канделария и Монсеррат'
@@ -60,7 +60,7 @@ itinerary:
 
     Музей золота закрыт по понедельникам. Casa de la Moneda и Donación Botero закрыты по вторникам.
   images:
-  - src: https://brasiltours.ru/image/bogota1.png
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Колумбии, город Богота'
 - day: 3
   title: Богота - Соляной собор Сипакиры
@@ -81,7 +81,7 @@ itinerary:
 
     **Включено:** профессиональный англоговорящий гид, частный транспорт, вход в Соляной собор Сипакиры.
   images:
-  - src: https://brasiltours.ru/image/bogota.png
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Колумбии, город Богота'
 - day: 4
   title: 'Богота - Медельин: сити-тур и Коммуна 13'
@@ -113,7 +113,7 @@ itinerary:
 
     **Включено:** профессиональный англоговорящий гид, частный транспорт, проезд в метро и граффити-тур по Коммуне 13.
   images:
-  - src: https://brasiltours.ru/image/bogota1.png
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Колумбии, город Богота'
 - day: 5
   title: Медельин - Пьедра-дель-Пеньоль и Гуатапе

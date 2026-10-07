@@ -82,7 +82,7 @@ itinerary:
     \ гид с экологической интерпретацией, индивидуальный транспорт, ритуал восковой пальмы и дегустация канелазо.  \n**Дополнительно:**\
     \ обед, $30 с человека."
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cocora-palms.jpg
+  - src: "/media/destinations/pereira/featureBands-1-image-enhanced-20261007.webp"
     alt: Долина Кокора
 - day: 6
   title: Перейра - вылет

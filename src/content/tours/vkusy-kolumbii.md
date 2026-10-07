@@ -99,7 +99,7 @@ itinerary:
 
     После экскурсии возвращение в Боготу. Дорога Сипакира - Богота занимает примерно 1,5 часа. Обед в ресторане включен в программу дня.
   images:
-  - src: https://brasiltours.ru/image/guatavita.png
+  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия и озеро Гуатавита'
   - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Богота'

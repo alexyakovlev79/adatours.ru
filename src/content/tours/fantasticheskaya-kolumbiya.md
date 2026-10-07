@@ -138,7 +138,7 @@ itinerary:
     частный транспорт, местная карта медицинской помощи, дегустация Канелазо. Дополнительно оплачивается обед: 25 долларов
     США на человека.'
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cocora-palms.jpg
+  - src: "/media/destinations/pereira/featureBands-1-image-enhanced-20261007.webp"
     alt: 'на фото: Кокора -Долина Пальм'
 - day: 7
   title: Перейра-посещение кофейной фермы

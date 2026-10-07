@@ -24,12 +24,12 @@ featureBands:
     title: Кофейные фермы региона
     text: >-
       В программах из Перейры можно увидеть путь кофе от посадки и ручного сбора до сушки, обработки, помола, обжарки и дегустации. Кофейные фермы — одна из основных причин включить Перейру в маршрут по Колумбии.
-    image: https://brasiltours.ru/image/countries/colombia/coffee-in-farm.jpg
+    image: "/media/destinations/pereira/featureBands-0-image-enhanced-20261007.webp"
   - eyebrow: Природа
     title: Саленто и долина Кокора
     text: >-
       Из Перейры удобно отправиться в долину Кокора, пройти по экологической тропе среди восковых пальм, а затем продолжить день в Саленто с его колониальными улицами и ремесленными мастерскими.
-    image: https://brasiltours.ru/image/countries/colombia/cocora-palms.jpg
+    image: "/media/destinations/pereira/featureBands-1-image-enhanced-20261007.webp"
 facts:
   - value: Кофейный треугольник
     label: Перейра — один из трех его городов

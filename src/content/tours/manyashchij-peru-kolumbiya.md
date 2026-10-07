@@ -73,7 +73,7 @@ itinerary:
 
     В историческом центре вы увидите Пласа-де-Армас, Муниципалитет, Дворец правительства и кафедральный собор с гробницей Франсиско Писарро. Еще одна важная остановка - Музей золота с большой частной коллекцией золотых и серебряных украшений, изделий из драгоценных камней, текстиля и керамики. После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/lima%203.png
+  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лима
 - day: 3
   title: Лима - Куско
@@ -153,7 +153,7 @@ itinerary:
 
     Обед, шведский стол, проходит в Сикуани. Далее остановка на перевале Ла-Рая на высоте около 4400 метров и посещение Пукары с местным музеем. Примерно в 18:00 прибытие в Пуно. Город расположен на высоте около 3860 метров у озера Титикака. Размещение в гостинице.
   images:
-  - src: https://brasiltours.ru/image/puno2.png
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: Пуно
   - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
     alt: Куско
@@ -187,7 +187,7 @@ itinerary:
 
     По прибытии в аэропорт Эль-Дорадо встреча, трансфер и размещение в гостинице. Оставшаяся часть дня свободная. После высокогорного Перу начинается совсем другая часть путешествия, сначала столица Колумбии, затем Карибское побережье.
   images:
-  - src: https://brasiltours.ru/image/lima%203.png
+  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лима
 - day: 9
   title: 'Богота: исторический центр, Музей золота и Монсеррат'
@@ -216,7 +216,7 @@ itinerary:
 
     Вечером возвращение в Боготу, размещение и отдых в отеле.
   images:
-  - src: https://brasiltours.ru/image/guatavita.png
+  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Озеро Гуатавита
 - day: 11
   title: Богота - Картахена

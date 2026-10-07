@@ -22,7 +22,7 @@ hero:
 gallery:
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp"
     alt: "на фото: озеро Титикака и  плавающие острова Урос в Перу"
-  - src: "https://brasiltours.ru/image/puno2.png"
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: озеро Титикака и  плавающие острова Урос в Перу"
   - src: "https://brasiltours.ru/image/countries/peru/alexander-schimmeck-mrafxv3v7ts-unsplash.jpg"
     alt: "на фото: озеро Титикака и девочки перуанки с ламой"

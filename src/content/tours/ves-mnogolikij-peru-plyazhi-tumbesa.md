@@ -108,7 +108,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/cusco%202.png
     alt: Куско
-  - src: https://brasiltours.ru/image/lima%203.png
+  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лима
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
@@ -215,7 +215,7 @@ itinerary:
 
     После экскурсии возвращение в Пуно. Ночь в отеле 3*.
   images:
-  - src: https://brasiltours.ru/image/puno2.png
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: Пуно
 - day: 8
   title: Пуно - Колка
@@ -316,7 +316,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Tumbes.jpg
     alt: Тумбес
-  - src: https://brasiltours.ru/image/lima%203.png
+  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лима
 - day: 13
   title: Тумбес

@@ -44,7 +44,7 @@ itinerary:
     \ Музей золота, Casa de la Moneda и Donación Botero, подъем на Монсеррат.\n\nМузей золота закрыт по понедельникам. Casa\
     \ de la Moneda и Donación Botero закрыты по вторникам."
   images:
-  - src: https://brasiltours.ru/image/bogota1.png
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 3
   title: Богота - Соляной собор Сипакиры
@@ -74,7 +74,7 @@ itinerary:
   images:
   - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
-  - src: https://brasiltours.ru/image/bogota1.png
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 5
   title: Медельин - Эль-Пеньоль и Гуатапе

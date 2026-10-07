@@ -9,6 +9,7 @@ summary: >-
 hero:
   src: /media/themes/gastronomiya-i-vino/hero-enhanced-20261001.webp
   alt: Вино и гастрономия в путешествии
+imageTextAlign: left
 sourceUrl: https://brasiltours.ru/vinnyi-tury
 sourceSnapshot: page_texts_original/vinnyi-tury__d73d99b5.md
 updatedAt: 2026-10-02

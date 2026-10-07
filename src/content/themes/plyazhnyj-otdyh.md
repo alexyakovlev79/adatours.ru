@@ -9,6 +9,7 @@ summary: >-
 hero:
   src: /media/themes/plyazhnyj-otdyh/hero-enhanced-20261001.webp
   alt: Пляж на побережье Латинской Америки
+imageTextAlign: left
 sourceUrl: https://brasiltours.ru/plyazhnye-tury
 sourceSnapshot: page_texts_original/plyazhnye-tury__bc5e8bbc.md
 updatedAt: 2026-10-02

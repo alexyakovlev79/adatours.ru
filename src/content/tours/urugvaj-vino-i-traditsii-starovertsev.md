@@ -121,7 +121,7 @@ priceFrom: 2475
 currency: USD
 priceNote: $2475
 hero:
-  src: https://brasiltours.ru/image/countries/uruguay/montevideo-1200.jpg
+  src: "/media/tours/luchshee-v-urugvae-pyatizvjozdochnyj-marshrut/hero-src-enhanced-20261007.webp"
   alt: 'Уругвай: Вино и Традиции Староверцев'
 routeCountries:
 - country_uruguay

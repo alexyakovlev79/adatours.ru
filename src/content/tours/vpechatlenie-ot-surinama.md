@@ -45,7 +45,7 @@ itinerary:
 
     Финал дня проходит на реке Суринам. На традиционной палубной лодке вы отправитесь наблюдать за розовыми дельфинами в естественной среде. После речной прогулки водитель встретит вас на причале Леонсберг и отвезет обратно в отель. Ночь в том же отеле. Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/Paramaribo_2455.png
+  - src: "/media/tours/velikolepnyj-surinam/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Парамарибо
 - day: 3
   title: и 4. Верхний Суринам и культура марунов
@@ -130,7 +130,7 @@ priceFrom: 3745
 currency: USD
 priceNote: $3745
 hero:
-  src: https://brasiltours.ru/image/countries/surinam/diego-allen-7kctqmivuki-unsplash.jpg
+  src: "/media/tours/vpechatlenie-ot-surinama/hero-src-enhanced-20261007.webp"
   alt: Впечатление от Суринама
 routeCountries:
 - country_suriname

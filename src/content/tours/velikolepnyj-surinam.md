@@ -26,7 +26,7 @@ itinerary:
   - Парамарибо
   text: Прибытие в Суринам. Встреча с гидом и трансфер в отель в Парамарибо.
   images:
-  - src: https://brasiltours.ru/image/Paramaribo_2455.png
+  - src: "/media/tours/velikolepnyj-surinam/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Суринама, город Парамарибо'
 - day: 2
   title: Парамарибо и закат с дельфинами
@@ -56,7 +56,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/Paramaribo_2455.png
+  - src: "/media/tours/velikolepnyj-surinam/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Суринама, город Парамарибо'
 - day: 7
   title: 'Дни 7-10: культура маронов в Верхнем Суринаме'
@@ -122,7 +122,7 @@ priceFrom: 3860
 currency: USD
 priceNote: $3860
 hero:
-  src: https://brasiltours.ru/image/countries/surinam/55.jpg
+  src: "/media/tours/velikolepnyj-surinam/hero-src-enhanced-20261007.webp"
   alt: 'На фото: листья лотоса в Суринаме'
 routeCountries:
 - country_suriname

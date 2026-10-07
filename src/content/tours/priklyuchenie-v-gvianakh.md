@@ -203,7 +203,7 @@ priceFrom: 5563
 currency: USD
 priceNote: $5563
 hero:
-  src: https://brasiltours.ru/image/Cayenne.png
+  src: "/media/tours/priklyuchenie-v-gvianakh/hero-src-enhanced-20261007.webp"
   alt: Приключение в Гвианах
 routeCountries:
 - country_guyana

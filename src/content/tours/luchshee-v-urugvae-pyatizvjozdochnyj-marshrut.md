@@ -48,7 +48,7 @@ itinerary:
 
     Возвращение в отель. Ночлег.
   images:
-  - src: https://brasiltours.ru/image/montevideo%20urug.png
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-1-src-enhanced-20261007.webp"
     alt: Монтевидео
 - day: 3
   title: Монтевидео
@@ -61,7 +61,7 @@ itinerary:
 
     Возвращение в отель в согласованное время. Ночлег.
   images:
-  - src: https://brasiltours.ru/image/montevideo1.png
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-0-src-enhanced-20261007.webp"
     alt: Монтевидео
 - day: 4
   title: Монтевидео - Пунта-дель-Эсте
@@ -81,7 +81,7 @@ itinerary:
 
     Возвращение в отель. Ночлег в Пунта-дель-Эсте.
   images:
-  - src: https://brasiltours.ru/image/punta-del-este-18072018-339787.png
+  - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"
     alt: Пунта дель Эсте
   - src: /media/excursions/ekskursiya-po-montevideo/hero-enhanced-20261001.webp
     alt: Монтевидео
@@ -96,7 +96,7 @@ itinerary:
 
     Возвращение в отель. Ночлег.
   images:
-  - src: https://brasiltours.ru/image/punta-del-este-18072018-339787.png
+  - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"
     alt: Пунта дель Эсте
 - day: 6
   title: Пунта-дель-Эсте - Монтевидео
@@ -108,9 +108,9 @@ itinerary:
 
     В назначенное время частный трансфер в аэропорт или порт Монтевидео.
   images:
-  - src: https://brasiltours.ru/image/montevideo%20urug.png
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-1-src-enhanced-20261007.webp"
     alt: Монтевидео
-  - src: https://brasiltours.ru/image/punta-del-este-18072018-339787.png
+  - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"
     alt: Пунта дель Эсте
 included:
 - Индивидуальный трансфер из аэропорта или порта Монтевидео в Hyatt Centric
@@ -137,7 +137,7 @@ priceFrom: 2418
 currency: USD
 priceNote: $2418
 hero:
-  src: https://brasiltours.ru/image/countries/uruguay/montevideo-1200.jpg
+  src: "/media/tours/luchshee-v-urugvae-pyatizvjozdochnyj-marshrut/hero-src-enhanced-20261007.webp"
   alt: 'Лучшее в Уругвае: пятизвёздочный маршрут'
 routeCountries:
 - country_uruguay

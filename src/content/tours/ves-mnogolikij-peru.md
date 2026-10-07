@@ -317,7 +317,7 @@ priceFrom: 2979
 currency: USD
 priceNote: $2979
 hero:
-  src: https://brasiltours.ru/image/countries/peru/23.jpg
+  src: "/media/tours/ves-mnogolikij-peru/hero-src-enhanced-20261007.webp"
   alt: 'на фото: город Лима, столица Перу'
 routeCountries:
 - country_peru

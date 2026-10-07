@@ -337,7 +337,7 @@ itinerary:
   images:
   - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: Ночная Лима в Перу'
-  - src: https://brasiltours.ru/image/Trujilo.jpg
+  - src: "/media/tours/ves-mnogolikij-peru-i-senor-sipan/itinerary-13-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: город Трухильо  в Перу'
 - day: 13
   title: Чиклайо и Сеньор Сипан - Лима

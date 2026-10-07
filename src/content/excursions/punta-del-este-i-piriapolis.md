@@ -24,7 +24,7 @@ gallery:
     alt: Пириаполис, Уругвай
   - src: https://brasiltours.ru/image/countries/uruguay/castelo-pirapol.jpg
     alt: Пириаполис и его историческая архитектура
-  - src: https://brasiltours.ru/image/punta-del-este-18072018-339787.png
+  - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"
     alt: Побережье Пунта-дель-Эсте
 route:
   - Монтевидео

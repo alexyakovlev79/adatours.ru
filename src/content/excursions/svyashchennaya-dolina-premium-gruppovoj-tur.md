@@ -18,17 +18,17 @@ priceFrom: 75
 currency: "USD"
 priceNote: "Стоимость — $75. При 2 участниках — $244 на человека; при 3 участниках — $175 на человека; при 4 участниках — $141 на человека."
 hero:
-  src: "https://brasiltours.ru/image/countries/peru/chichero-peru.jpg"
+  src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/hero-src-enhanced-20261008.webp"
   alt: "на фото: Чичеро. Перу"
 gallery:
   -
-    src: "https://brasiltours.ru/image/countries/peru/chinchero-2023.jpg"
+    src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-0-src-enhanced-20261008.webp"
     alt: "На фото: Священная Долина инков из города Куско"
   -
-    src: "https://brasiltours.ru/image/countries/peru/moray.jpg"
+    src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-1-src-enhanced-20261008.webp"
     alt: "На фото: Священная Долина инков из города Куско"
   -
-    src: "https://brasiltours.ru/image/countries/peru/ollambay.jpg"
+    src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-2-src-enhanced-20261008.webp"
     alt: "На фото: Священная Долина инков из города Куско"
 route:
   - "Куско"

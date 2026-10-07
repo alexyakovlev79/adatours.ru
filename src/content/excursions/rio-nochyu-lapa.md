@@ -14,7 +14,7 @@ language:
   - "Русский"
 priceNote: "Цена указана на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/bohemian-lapa-new.jpg"
+  src: "/media/excursions/rio-nochyu-lapa/hero-src-enhanced-20261008.webp"
   alt: "На фото: Ночной вид на район Лапа в Рио-де-Жанейро, Бразилия"
 gallery:
   -

@@ -12,7 +12,7 @@ relatedDestinations: []
 language: []
 priceNote: "Цена указана на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/assuncion.png"
+  src: "/media/excursions/siti-tur-v-asunsone/hero-src-enhanced-20261008.webp"
   alt: "Сити тур в Асунсьоне"
 gallery:
   -

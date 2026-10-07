@@ -15,14 +15,14 @@ priceFrom: 284
 currency: "USD"
 priceNote: "Стоимость — $284. Дополнительные посещения оплачиваются отдельно."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/new-pics/most.jpg"
+  src: "/media/excursions/tur-v-niteroj/hero-src-enhanced-20261008.webp"
   alt: "Тур в Нитерой"
 gallery:
   -
     src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
     alt: ""
   -
-    src: "https://brasiltours.ru/image/countries/brazil/new-pics/niteroj.jpg"
+    src: "/media/excursions/tur-v-niteroj/gallery-1-src-enhanced-20261008.webp"
     alt: ""
 route:
   - "Рио-де-Жанейро"

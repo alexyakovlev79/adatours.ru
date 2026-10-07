@@ -16,14 +16,14 @@ priceFrom: 203
 currency: "USD"
 priceNote: "Стоимость — $578. При группе из 2 человек — $293 USD на человека; из 3 человек — $248 USD на человека; из 4 человек — $203 USD на человека."
 hero:
-  src: "https://brasiltours.ru/image/countries/equador/cotacanchi-town.jpg"
+  src: "/media/excursions/tur-v-otavalo-i-kotakachi/hero-src-enhanced-20261007.webp"
   alt: "на фото: город Котапачи, Эквадор"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/equador/cotacachi.jpg"
+  - src: "/media/excursions/tur-v-otavalo-i-kotakachi/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: город Котапачи, Эквадор"
-  - src: "https://brasiltours.ru/image/countries/equador/imbabuarra.jpg"
+  - src: "/media/excursions/tur-v-otavalo-i-kotakachi/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: город Котапачи, Эквадор"
-  - src: "https://brasiltours.ru/image/countries/equador/geopark-ecuador.jpg"
+  - src: "/media/excursions/tur-v-otavalo-i-kotakachi/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: город Котапачи, Эквадор"
 route:
   - "Отавало"

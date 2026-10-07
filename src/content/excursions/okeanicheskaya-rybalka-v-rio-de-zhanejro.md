@@ -22,7 +22,7 @@ gallery:
     alt: "На фото: Океаническая рыбалка в Рио"
   - src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Мужчина с рыбой на рыбалке в Рио-де-Жанейро"
-  - src: "https://brasiltours.ru/image/fih1.png"
+  - src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/gallery-2-src-enhanced-20261007.webp"
     alt: "На фото: Океаническая рыбалка в Рио-де-Жанейро"
 route:
   - "Рио-де-Жанейро"

@@ -10,18 +10,18 @@ relatedDestinations: []
 duration: "7–8 часов"
 language: []
 hero:
-  src: "https://brasiltours.ru/image/riogid/fazendatacuara.png"
+  src: "/media/excursions/fazendy-kofejnykh-baronov/hero-src-enhanced-20261007.webp"
   alt: "Фазенды кофейных баронов"
 gallery:
-  - src: "https://brasiltours.ru/image/rabinya%20izaura.png"
+  - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-0-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/coffee.png"
+  - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-1-src-enhanced-20261007.webp"
     alt: ""
   - src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
     alt: ""
-  - src: "https://brasiltours.ru/image/coffee%20plant%20in%20costar.png"
+  - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-3-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/countries/colombia/img-20220726-wa0078.jpg"
+  - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-4-src-enhanced-20261007.webp"
     alt: ""
 route:
   - "Долина Кофе штата Рио-де-Жанейро"

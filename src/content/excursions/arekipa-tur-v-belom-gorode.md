@@ -20,11 +20,11 @@ hero:
   src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3-enhanced-20261001.webp
   alt: "на фото: Арекипа, белый город в Перу"
 gallery:
-  - src: "https://brasiltours.ru/image/arequipa.png"
+  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: Арекипа, белый город в Перу"
   - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: Арекипа, белый город в Перу"
-  - src: "https://brasiltours.ru/image/Arequipa.png"
+  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: Арекипа, белый город в Перу"
   - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-3-src-enhanced-20261007.webp"
     alt: "на фото: Арекипа, белый город в Перу"

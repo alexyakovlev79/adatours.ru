@@ -97,7 +97,7 @@ itinerary:
 
     Ночь в Наске.
   images:
-  - src: https://brasiltours.ru/image/Ica.png
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Ика'
   - src: /media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261005.webp
     alt: 'на фото: Линии Наска'
@@ -111,7 +111,7 @@ itinerary:
 
     После полета поездка на автобусе в Арекипу. Дорога занимает около 9 часов. По пути пейзажи постепенно меняются, а к вечеру вы прибываете в колониальный город, окруженный горами.
   images:
-  - src: https://brasiltours.ru/image/arequipa.png
+  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-0-src-enhanced-20261007.webp"
     alt: 'на фото: Арекипа'
   - src: /media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261005.webp
     alt: 'на фото: Линии Наска'
@@ -241,7 +241,7 @@ itinerary:
 
     После прибытия в Агуас-Кальентес свободное время. Можно прогуляться по улицам городка, посмотреть местные рынки и отдохнуть перед главным днем путешествия.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/ollantaytambo-5.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-12-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Древние поселения  Перу'
 - day: 14
   title: Мачу-Пикчу - Куско
@@ -275,7 +275,7 @@ itinerary:
 
     После ужина ночная прогулка с гидом. В темное время суток тропический лес меняется: активными становятся насекомые, амфибии и ночные животные. Во время прогулки можно увидеть часть этой ночной жизни в естественной среде.
   images:
-  - src: https://brasiltours.ru/image/puerto%20maldonado%20peru.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-14-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Пуэрто Мальдонадо'
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: Куско'
@@ -292,7 +292,7 @@ itinerary:
 
     После возвращения в лодж традиционный ужин Амазонии и спокойный вечер в общей зоне отдыха.
   images:
-  - src: https://brasiltours.ru/image/puerto-maldonado.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-15-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Пуэрто Мальдонадо'
 - day: 17
   title: Пуэрто-Мальдонадо
@@ -307,7 +307,7 @@ itinerary:
 
     Вечером традиционный ужин. После него программа может продолжиться ночной прогулкой или наблюдением за звездами.
   images:
-  - src: https://brasiltours.ru/image/puerto%20maldonado%20peru.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-14-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Пуэрто Мальдонадо'
 - day: 18
   title: Пуэрто-Мальдонадо - озеро Трес Чимбадас
@@ -323,7 +323,7 @@ itinerary:
 
     После возвращения в лодж ужин. Вечером возможно местное выступление или рассказы о мифах и легендах Амазонии.
   images:
-  - src: https://brasiltours.ru/image/puerto-maldonado.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-15-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Пуэрто Мальдонадо'
 - day: 19
   title: Пуэрто-Мальдонадо - Лима
@@ -341,7 +341,7 @@ itinerary:
   images:
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
     alt: 'на фото: Лима'
-  - src: https://brasiltours.ru/image/puerto%20maldonado%20peru.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-14-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Пуэрто Мальдонадо'
 - day: 20
   title: Лима
@@ -383,7 +383,7 @@ priceFrom: 4913
 currency: USD
 priceNote: $4913
 hero:
-  src: https://brasiltours.ru/image/countries/peru/chichero-p.png
+  src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/hero-src-enhanced-20261007.webp"
   alt: 'на фото: Перу'
 routeCountries:
 - country_peru

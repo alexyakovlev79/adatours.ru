@@ -265,7 +265,7 @@ itinerary:
 
     Прибытие в Арекипу, размещение в гостинице 3*. Свободное время.
   images:
-  - src: https://brasiltours.ru/image/Arequipa.png
+  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-2-src-enhanced-20261007.webp"
     alt: 'на фото: Арекипа, белый город в Перу'
   - src: /media/destinations/isla-del-sol/hero-enhanced-20261003.webp
     alt: 'на фото: Каньон Колка в Перу'
@@ -293,7 +293,7 @@ itinerary:
   images:
   - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
     alt: 'на фото: Лима, столица Перу'
-  - src: https://brasiltours.ru/image/Arequipa.png
+  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-2-src-enhanced-20261007.webp"
     alt: 'на фото: Арекипа, белый город в Перу'
 - day: 11
   title: Лима. Свободный день

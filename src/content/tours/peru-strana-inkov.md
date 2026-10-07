@@ -87,7 +87,7 @@ itinerary:
   images:
   - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Куско
-  - src: https://brasiltours.ru/image/machu%20pichu%202.png
+  - src: "/media/tours/peru-strana-inkov/itinerary-3-images-1-src-enhanced-20261007.webp"
     alt: Мачу-Пикчу
 - day: 5
   title: Священная долина инков

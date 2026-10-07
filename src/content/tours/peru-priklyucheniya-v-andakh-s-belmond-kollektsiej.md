@@ -76,7 +76,7 @@ itinerary:
 
     После экскурсии предусмотрено чаепитие в Sanctuary Lodge. Затем спуск и обратная поездка в Куско на поезде высшего класса. На борту вас ждет гастрономический ужин. По прибытии - трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_51_15.png
+  - src: "/media/tours/peru-priklyucheniya-v-andakh-s-belmond-kollektsiej/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: 'НА фото: город инков в Перу, Мачу Пикчу'
 - day: 5
   title: Археологический парк Саксайуаман
@@ -129,7 +129,7 @@ priceFrom: 4720
 currency: USD
 priceNote: $4720
 hero:
-  src: https://brasiltours.ru/image/countries/peru/2.jpg
+  src: "/media/tours/peru-priklyucheniya-v-andakh-s-belmond-kollektsiej/hero-src-enhanced-20261007.webp"
   alt: 'На фото: поезд Belmond Hiram Bingham в Перу до Мачу Пикчу'
 routeCountries:
 - country_peru

@@ -118,8 +118,12 @@ test('every published old URL is an excluded alias while the new URLs and catalo
     assert.equal(isLegacyRedirectPath(canonical), false, canonical);
     assert.equal(isLegacyRedirectPath(`/adatours.ru${canonical}`, '/adatours.ru'), false, canonical);
   }
-  for (const path of ['/country/', '/places/', '/tours/', '/excursions/', '/multi-country/', '/multi-country/tour/', '/brazil/place/', '/brazil/tour/', '/brazil/excursion/', '/brazil/rio-de-janeiro/']) {
+  for (const path of ['/country/', '/places/', '/tours/', '/excursions/', '/multi-country/', '/multi-country/page/2/', '/brazil/place/', '/brazil/tour/', '/brazil/excursion/', '/brazil/rio-de-janeiro/']) {
     assert.equal(isLegacyRedirectPath(path), false, path);
+  }
+  for (const path of ['/multi-country/tour/', '/multi-country/tour/page/2/']) {
+    assert.equal(isLegacyRedirectPath(path), true, path);
+    assert.equal(isLegacyRedirectPath(`/adatours.ru${path}`, '/adatours.ru'), true, path);
   }
 });
 

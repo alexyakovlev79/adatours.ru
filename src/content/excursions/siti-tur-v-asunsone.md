@@ -16,16 +16,16 @@ hero:
   alt: "Сити тур в Асунсьоне"
 gallery:
   -
-    src: "https://brasiltours.ru/image/asuncion-3.png"
+    src: "/media/excursions/siti-tur-v-asunsone/gallery-0-src-enhanced-20261007.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/asuncion%20at%20night.png"
+    src: "/media/excursions/siti-tur-v-asunsone/gallery-1-src-enhanced-20261007.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/asuncion.png"
+    src: "/media/excursions/siti-tur-v-asunsone/gallery-2-src-enhanced-20261007.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/asuncion-Paraguay-city.png"
+    src: "/media/excursions/siti-tur-v-asunsone/gallery-3-src-enhanced-20261007.webp"
     alt: ""
 route: []
 lead: "Обзорная экскурсия по Асунсьону."

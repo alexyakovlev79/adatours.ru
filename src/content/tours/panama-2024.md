@@ -103,7 +103,7 @@ itinerary:
 
     По прибытии трансфер в регион Бока-Чика и размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/boca-chica.jpg
+  - src: "/media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp"
     alt: Boca Chica
   - src: "/media/tours/panama-2024/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
@@ -114,7 +114,7 @@ itinerary:
   text: 2 дня отдыха на побережье. Дополнительно можно отправиться на необитаемые острова Бока-Чика с белым песком и бирюзовой
     водой.
   images:
-  - src: https://brasiltours.ru/image/boca-chica.jpg
+  - src: "/media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp"
     alt: Boca Chica
 - day: 8
   title: Бока-Чика
@@ -123,7 +123,7 @@ itinerary:
   text: 2 дня отдыха на побережье. Дополнительно можно отправиться на необитаемые острова Бока-Чика с белым песком и бирюзовой
     водой.
   images:
-  - src: https://brasiltours.ru/image/boca-chica.jpg
+  - src: "/media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp"
     alt: Boca Chica
 - day: 9
   title: Бока-Чика - Бокете
@@ -134,7 +134,7 @@ itinerary:
   images:
   - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Бокете
-  - src: https://brasiltours.ru/image/boca-chica.jpg
+  - src: "/media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp"
     alt: Boca Chica
 - day: 10
   title: Вулкан Бару

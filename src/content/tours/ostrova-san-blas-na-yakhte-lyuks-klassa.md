@@ -124,7 +124,7 @@ priceFrom: 432000
 currency: USD
 priceNote: $432000
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/stephan-van-de-schootbrugge-8m1-4qjyync-unsplash.jpg
+  src: "/media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/hero-src-enhanced-20261007.webp"
   alt: 'На фото: Острова Сан Блас в Панаме'
 routeCountries:
 - country_panama

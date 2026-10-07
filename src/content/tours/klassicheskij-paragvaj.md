@@ -48,7 +48,7 @@ itinerary:
 
     Экскурсия завершается на колоритном рынке Mercado Pettirossi.
   images:
-  - src: https://brasiltours.ru/image/asuncion%20at%20night.png
+  - src: "/media/excursions/siti-tur-v-asunsone/gallery-1-src-enhanced-20261007.webp"
     alt: 'на фото: Асунсьон'
 - day: 2
   title: Асунсьон - Чако - Филадельфия
@@ -67,7 +67,7 @@ itinerary:
 
     Вечером прибытие в Филадельфию и размещение в отеле 3* с завтраком.
   images:
-  - src: https://brasiltours.ru/image/asuncion-Paraguay-city.png
+  - src: "/media/excursions/siti-tur-v-asunsone/gallery-3-src-enhanced-20261007.webp"
     alt: на фото:Асунсьон
 - day: 3
   title: Чако
@@ -95,7 +95,7 @@ itinerary:
 
     Вечером возвращаемся в Асунсьон и размещаемся в отеле 4*.
   images:
-  - src: https://brasiltours.ru/image/asuncion.png
+  - src: "/media/excursions/siti-tur-v-asunsone/gallery-2-src-enhanced-20261007.webp"
     alt: на фото:Асунсьон
 - day: 5
   title: Асунсьон - Каапуку - Сан-Игнасио-Гуасу - Энкарнасьон
@@ -114,7 +114,7 @@ itinerary:
 
     Вечером прибытие в Энкарнасьон, столицу департамента Итапуа, и размещение в отеле 4* с завтраком.
   images:
-  - src: https://brasiltours.ru/image/asuncion1.png
+  - src: "/media/tours/klassicheskij-paragvaj/itinerary-4-images-0-src-enhanced-20261007.webp"
     alt: на фото:Асунсьон
 - day: 6
   title: Энкарнасьон - Хесус - Тринидад - Сьюдад-дель-Эсте
@@ -151,7 +151,7 @@ itinerary:
 
     После посещения плотины возвращаемся в Асунсьон и едем в отель 4*/5* с завтраком.
   images:
-  - src: https://brasiltours.ru/image/asuncion%20at%20night.png
+  - src: "/media/excursions/siti-tur-v-asunsone/gallery-1-src-enhanced-20261007.webp"
     alt: 'на фото: Асунсьон'
 - day: 8
   title: Асунсьон
@@ -159,7 +159,7 @@ itinerary:
   - Асунсьон
   text: В соответствии со временем вылета трансфер в аэропорт Асунсьона.
   images:
-  - src: https://brasiltours.ru/image/asuncion-Paraguay-city.png
+  - src: "/media/excursions/siti-tur-v-asunsone/gallery-3-src-enhanced-20261007.webp"
     alt: на фото:Асунсьон
 included:
 - трансфер аэропорт - отель в Асунсьоне;
@@ -194,7 +194,7 @@ priceFrom: 3903
 currency: USD
 priceNote: $3903
 hero:
-  src: https://brasiltours.ru/image/asuncion-3.png
+  src: "/media/excursions/siti-tur-v-asunsone/gallery-0-src-enhanced-20261007.webp"
   alt: 'на фото: Асунсьон, столица Парагвая'
 routeCountries:
 - country_paraguay

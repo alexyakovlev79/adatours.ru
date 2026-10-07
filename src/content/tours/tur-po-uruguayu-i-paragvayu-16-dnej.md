@@ -82,7 +82,7 @@ itinerary:
     Южной Америки. Еще одна остановка - Mercado del Puerto. Старая рыночная галерея превратилась в гастрономический центр
     с ресторанами, грилями и барами, где запах мяса на огне остается под металлической крышей до позднего обеда.
   images:
-  - src: https://brasiltours.ru/image/countries/uruguay/montevideo/montevideo-22.jpg
+  - src: "/media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Дворец Сальво на площади Независимости, башня-символ Монтевидео
 - day: 2
   title: Колония-дель-Сакраменто, наследие ЮНЕСКО
@@ -94,7 +94,7 @@ itinerary:
     увидите яркие низкие дома, старые переулки и остатки португальской крепости. Отсюда открываются виды на Рио-де-ла-Плата.
     **Обед включен.**'
   images:
-  - src: https://brasiltours.ru/image/countries/uruguay/colonia-del-sacramento/colonia-del-sacramento-3-jpg.jpg
+  - src: "/media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Колония-дель-Сакраменто, Уругвай, колониальная архитектура
 - day: 3
   title: Канелонес, дегустация танната и переезд в Пунта-дель-Эсте
@@ -135,7 +135,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/uruguay/punta-del-este/punta-del-este-5.jpg
     alt: Вид на марину Пунта-дель-Эсте, яхты и залив, панорама Атлантического побережья Уругвая
-  - src: https://brasiltours.ru/image/countries/uruguay/montevideo/montevideo-22.jpg
+  - src: "/media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Дворец Сальво на площади Независимости, башня-символ Монтевидео
 - day: 6
   title: Перелет в Асунсьон
@@ -282,7 +282,7 @@ itinerary:
     горные тропы и водопады Кордильеры-дель-Йбитурусу. Финал проходит у Игуасу: сначала широкая панорама бразильской стороны,
     затем аргентинские настилы и Глотка дьявола.'
   images:
-  - src: https://brasiltours.ru/image/countries/uruguay/colonia-del-sacramento/colonia-del-sacramento-3-jpg.jpg
+  - src: "/media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Колония-дель-Сакраменто, Уругвай, колониальная архитектура
 included:
 - Проживание в отелях по программе.
@@ -307,7 +307,7 @@ priceFrom: 6336
 currency: USD
 priceNote: $6336
 hero:
-  src: https://brasiltours.ru/image/countries/uruguay/oblozhki/oblozhka-3.jpg
+  src: "/media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/hero-src-enhanced-20261007.webp"
   alt: Закат на побережье Уругвая, пляжи Атлантики, золотой песок и волны
 routeCountries:
 - country_uruguay

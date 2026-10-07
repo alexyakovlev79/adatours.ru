@@ -13,8 +13,8 @@ language: []
 priceFrom: 50
 currency: "USD"
 priceNote: "Стоимость — $50."
-hero: {"src":"https://brasiltours.ru/image/catalog/product/f/i/file_52_79.jpg","alt":"Экскурсия в Парк птиц."}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/product/f/i/file_6_7.JPG","alt":""}]
+hero: {"src":"/media/excursions/jekskursija-v-park-ptic/hero-src-enhanced-20261008.webp","alt":"Экскурсия в Парк птиц."}
+gallery: [{"src":"/media/excursions/jekskursija-v-park-ptic/gallery-0-src-enhanced-20261008.webp","alt":""}]
 route: ["Парк птиц"]
 lead: "Экскурсия в Парк птиц рядом с Национальным парком Игуассу: прогулка по субтропическому лесу и огромным вольерам с экзотическими птицами."
 included: []

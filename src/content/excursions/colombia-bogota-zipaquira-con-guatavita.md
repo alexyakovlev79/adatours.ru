@@ -28,7 +28,7 @@ gallery:
     alt: Соляной собор Сипакиры
   - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-2-src-enhanced-20261008.webp
     alt: Подземные пространства Соляного собора
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_18.jpeg
+  - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-3-src-enhanced-20261008.webp
     alt: Сипакира, Колумбия
   - src: "/media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-4-src-enhanced-20261007.webp"
     alt: Богота, Колумбия

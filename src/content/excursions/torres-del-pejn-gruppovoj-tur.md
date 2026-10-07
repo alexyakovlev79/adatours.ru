@@ -14,7 +14,7 @@ language: []
 priceFrom: 188
 currency: "USD"
 priceNote: "Стоимость — $188 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
-hero: {"src":"https://brasiltours.ru/image/catalog/product/f/i/file_113_45.jpg","alt":"Торрес дель Пейн (групповой тур)"}
+hero: {"src":"/media/excursions/torres-del-pejn-gruppovoj-tur/hero-src-enhanced-20261007.webp","alt":"Торрес дель Пейн (групповой тур)"}
 gallery: []
 route: []
 lead: "Групповой тур в национальный парк Торрес дель Пейн."
@@ -30,4 +30,5 @@ themes: ["theme_wildlife"]
 Групповой тур в национальный парк Торрес дель Пейн.
 
 Стоимость — $188 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения.
+
 

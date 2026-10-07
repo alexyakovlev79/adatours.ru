@@ -13,8 +13,8 @@ language: ["Русский"]
 priceFrom: 83
 currency: "USD"
 priceNote: "Стоимость — $83 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
-hero: {"src":"https://brasiltours.ru/image/catalog/product/t/r/transfer_12.png","alt":"Трансфер с русским гидом на Остров Пасхи"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/product/f/i/file_47_107.png","alt":""}]
+hero: {"src":"/media/excursions/transfer-s-russkim-gidom-na-ostrov-pashi/hero-src-enhanced-20261007.webp","alt":"Трансфер с русским гидом на Остров Пасхи"}
+gallery: [{"src":"/media/excursions/transfer-s-russkim-gidom-na-ostrov-pashi/gallery-0-src-enhanced-20261007.webp","alt":""}]
 route: []
 lead: "Трансфер на Остров Пасхи с русским гидом."
 included: []
@@ -29,4 +29,5 @@ themes: []
 Трансфер на Остров Пасхи с русским гидом.
 
 Стоимость — $83 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения.
+
 

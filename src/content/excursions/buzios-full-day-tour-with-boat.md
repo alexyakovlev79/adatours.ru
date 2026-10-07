@@ -13,7 +13,7 @@ language: []
 priceFrom: 85
 currency: "USD"
 priceNote: "Стоимость — $85 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
-hero: {"src":"https://brasiltours.ru/image/catalog/product/B/u/Buzios_3.jpg","alt":"Тур в Бузиос-с морской прогулкой"}
+hero: {"src":"/media/excursions/buzios-full-day-tour-with-boat/hero-src-enhanced-20261007.webp","alt":"Тур в Бузиос-с морской прогулкой"}
 gallery: []
 route: []
 lead: "Тур в Бузиос с морской прогулкой."
@@ -29,4 +29,5 @@ themes: ["theme_beach"]
 Тур в Бузиос с морской прогулкой.
 
 Стоимость — $85 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения.
+
 

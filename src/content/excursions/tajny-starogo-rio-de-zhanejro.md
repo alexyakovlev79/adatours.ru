@@ -21,9 +21,9 @@ hero:
 gallery:
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp
     alt: Панорама Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/Río_de_Janeiro%20teatre.png
+  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-1-src-enhanced-20261008.webp
     alt: Городской театр Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-24-12-49-54-294.jpg
+  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-2-src-enhanced-20261008.webp
     alt: Историческая архитектура центра Рио-де-Жанейро
   - src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp
     alt: Район Лапа в Рио-де-Жанейро

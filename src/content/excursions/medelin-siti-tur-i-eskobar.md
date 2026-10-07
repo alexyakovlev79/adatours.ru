@@ -21,7 +21,7 @@ hero:
   src: /media/destinations/medellin/hero-enhanced-20261003.webp
   alt: Медельин, Колумбия
 gallery:
-  - src: https://brasiltours.ru/image/countries/colombia/botero.jpg
+  - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-0-src-enhanced-20261008.webp
     alt: Скульптуры Фернандо Ботеро в Медельине
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0205.jpg
     alt: Городской пейзаж Медельина

@@ -21,13 +21,13 @@ hero:
   src: "/media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-4-src-enhanced-20261007.webp"
   alt: Панорама Боготы, Колумбия
 gallery:
-  - src: https://brasiltours.ru/image/countries/colombia/botero.jpg
+  - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-0-src-enhanced-20261008.webp
     alt: Музей Ботеро в Боготе
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0034.jpg
+  - src: /media/excursions/siti-tur-v-bogote/gallery-1-src-enhanced-20261008.webp
     alt: Уличная жизнь Боготы
   - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: Исторический центр Боготы
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0333.jpg
+  - src: /media/excursions/siti-tur-v-bogote/gallery-3-src-enhanced-20261008.webp
     alt: Музеи Боготы
   - src: "/media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp"
     alt: Колумбия

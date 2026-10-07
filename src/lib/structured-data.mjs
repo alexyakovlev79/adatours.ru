@@ -215,6 +215,7 @@ export function buildStructuredData({ root, organization, records, page, documen
       node.jobTitle = cleanText(d.role);
       node.worksFor = ref(orgId);
       if (full) {
+        node.description ||= cleanText(page.description);
         node.knowsAbout = d.expertise;
         node.knowsLanguage = d.languages?.map(languageCode);
         node.sameAs = d.externalProfiles?.filter((v) => /^https?:\/\//.test(v));
@@ -232,6 +233,10 @@ export function buildStructuredData({ root, organization, records, page, documen
       }
     }
     return add(node);
+  }
+  const founder = byId.get('person_anna');
+  if (publicRecord(founder) && founder.kind === 'person') {
+    add({ '@type': ['Organization', 'TravelAgency'], '@id': orgId, founder: ensureRecord(founder) });
   }
   const isMultiCountryCatalog = page.path === '/multi-country/'
     || /^\/multi-country\/page\/(?:[2-9]|[1-9]\d+)\/$/.test(page.path);
@@ -326,6 +331,20 @@ export function buildStructuredData({ root, organization, records, page, documen
     const list = add({ '@type': 'ItemList', '@id': `${page.url}#reviews`, name: 'Отзывы', numberOfItems: refs.length,
       itemListElement: refs.map((item, i) => ({ '@type': 'ListItem', position: i + 1, item })) });
     webPage.mainEntity = list;
+
+    const authoredAggregate = authored.find((n) => hasType(n, 'AggregateRating'));
+    if (authoredAggregate) {
+      const aggregate = add({
+        '@type': 'AggregateRating',
+        '@id': `${page.url}#aggregate-rating`,
+        itemReviewed: ref(orgId),
+        ratingValue: authoredAggregate.ratingValue,
+        bestRating: authoredAggregate.bestRating,
+        worstRating: authoredAggregate.worstRating,
+        reviewCount: authoredAggregate.reviewCount,
+      });
+      add({ '@type': ['Organization', 'TravelAgency'], '@id': orgId, aggregateRating: aggregate });
+    }
   }
   // FAQ is extracted from actual readable questions/answers, not unused frontmatter fields.
   const extraFaq = authored.filter((n) => hasType(n, 'FAQPage')).flatMap((n) => n.mainEntity || [])

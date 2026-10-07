@@ -22,7 +22,7 @@ function* objects(value) {
   else if (value && typeof value === 'object') { yield value; for (const v of Object.values(value)) yield* objects(v); }
 }
 const pageTypes = new Set(['WebPage', 'CollectionPage', 'AboutPage', 'ContactPage', 'ProfilePage', 'FAQPage']);
-const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'Country', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'Review', 'Question', 'Answer']);
+const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'Country', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'Review', 'AggregateRating', 'Question', 'Answer']);
 const report = { schemaVersion: SCHEMA_VERSION, root, totalHtml: 0, contentPages: 0, redirects: 0, archives: 0, withSchema: 0, catalogPages: 0, faqPages: 0, offerPages: 0, pageTypes: {}, mainEntityTypes: {}, errors: [], pages: [] };
 const definitions = new Set();
 const references = [];
@@ -141,8 +141,18 @@ for (const file of files.sort()) {
         assert.ok(inspected.facts.text.includes(cleanText(q.acceptedAnswer?.text)), `Visible FAQ answer: ${q.name}`);
       }
       if (hasType(node, 'Review')) assert.ok(inspected.facts.text.includes(cleanText(node.reviewBody)), 'Visible review');
+      if (hasType(node, 'AggregateRating')) {
+        assert.equal(inferredPath, '/reviews/', 'AggregateRating is limited to the reviews page');
+        assert.ok(Number(node.ratingValue) > 0, 'AggregateRating has a positive ratingValue');
+        assert.ok(Number(node.bestRating) >= Number(node.ratingValue), 'AggregateRating stays within bestRating');
+        assert.ok(Number(node.reviewCount) > 0, 'AggregateRating has reviewCount');
+      }
       if (hasType(node, 'ItemList')) assert.equal(node.numberOfItems, node.itemListElement?.length, 'ItemList count equals rendered items');
-      for (const key of ['reviewRating', 'aggregateRating', 'foundingDate']) assert.equal(node[key], undefined, `No unsupported claim ${key}`);
+      for (const key of ['reviewRating', 'foundingDate']) assert.equal(node[key], undefined, `No unsupported claim ${key}`);
+      if (node.aggregateRating !== undefined) {
+        assert.equal(inferredPath, '/reviews/', 'aggregateRating relation is limited to the reviews page');
+        assert.ok(node.aggregateRating?.['@id'] === `${canonical}#aggregate-rating`, 'Organization links to the page AggregateRating');
+      }
     }
     if (inspected.facts.catalog) {
       const group = inspected.facts.groups.find((g) => g.catalog);

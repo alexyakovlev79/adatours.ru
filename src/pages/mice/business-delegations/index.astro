@@ -1,51 +1,95 @@
 ---
+import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../../../lib/archive.mjs';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Hero from '../../../components/editorial/Hero.astro';
 import EditorialStatement from '../../../components/editorial/EditorialStatement.astro';
+import FactStrip from '../../../components/proof/FactStrip.astro';
 import EditorialProof from '../../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../../components/proof/ProcessSteps.astro';
+import DestinationBand from '../../../components/editorial/DestinationBand.astro';
+import MiceNav from '../../../components/commercial/MiceNav.astro';
+
+const delegationCase = (await getCollection('cases', ({ data }) =>
+  data.locale === 'ru'
+  && isActiveEntity(data)
+  && data.id === 'case_mice_business_delegation_sao_paulo_2026'
+))[0];
 ---
 
-<BaseLayout leadTitle="Запросить программу делегации" leadEntityId="mice_business_delegations"
+<BaseLayout
+  leadTitle="Запросить программу делегации"
+  leadEntityId="mice_business_delegations"
   title="Деловые делегации в Бразилию и Латинскую Америку"
-  description="Организация деловых делегаций: логистика, встречи, транспорт, переводчики и программа в Бразилии и Латинской Америке."
+  description="Ada Tours организует деловые делегации: встречи, транспорт, размещение, переводчиков, сопровождение и свободную программу вокруг рабочего графика."
 >
   <Hero
     eyebrow="MICE · Деловые делегации"
-    title="Деловая программа задает весь маршрут"
-    intro="Встречи стоят в центре программы. Перелеты, размещение, транспорт, питание и свободное время собираются вокруг них."
+    title="Когда встреча сдвигается, должна перестроиться вся программа"
+    intro="Машина, переводчик, следующий переезд, ресторан и свободное время связаны с деловым расписанием. Ada Tours координирует эту цепочку на месте."
     image="/media/home/rio-night-enhanced-20260930.webp"
+    ctaHref="#request"
     ctaLabel="Обсудить делегацию"
   />
 
+  <MiceNav active="delegations" />
+
   <EditorialStatement
-    eyebrow="На месте"
-    text="Участники успевают на встречи, транспорт приходит вовремя, а изменения быстро отражаются на всей программе."
+    eyebrow="Деловая логистика"
+    text="У делегации есть точки, которые нельзя пропустить: переговоры, визиты на предприятия, конференции и встречи с партнерами. Остальная поездка должна подстраиваться под них, а не мешать."
   />
 
+  {delegationCase && (
+    <FactStrip
+      facts={[
+        { value: delegationCase.data.groupSize ?? '7–8 человек', label: 'реальный кейс делегации Ada Tours' },
+        { value: String(delegationCase.data.cities.length), label: 'города в программе кейса' },
+        { value: '3', label: 'языка переводчика: русский, португальский, английский' },
+        { value: String(delegationCase.data.year ?? 2026), label: 'год проекта' },
+      ]}
+    />
+  )}
+
   <EditorialProof
-    eyebrow="На месте"
-    title="Один координатор видит всю программу"
-    text="Маршрут строится так, чтобы деловые встречи, перемещения и вечерняя часть не конкурировали друг с другом. Если график меняется, корректируется не один трансфер, а вся связанная цепочка."
+    eyebrow="Координация"
+    title="Рабочий день не заканчивается одной встречей"
+    text="Мы считаем реальные переезды между точками, выбираем размещение под географию встреч, связываем транспорт и сопровождение, а свободную часть оставляем там, где она не создает риск для деловой программы."
     image="/media/home/buenos-aires-enhanced-20260930.webp"
     facts={[
       'Аэропорт и городские трансферы',
-      'Районы размещения рядом с деловой программой',
-      'Переводчики и сопровождающие по запросу',
-      'Рестораны, мероприятия и экскурсии после встреч',
+      'Автомобили и микроавтобусы на длинные рабочие дни',
+      'Переводчики и русскоязычное сопровождение',
+      'Рестораны, экскурсии и свободная программа между встречами',
     ]}
     reverse
   />
 
+  {delegationCase && (
+    <>
+      <EditorialStatement
+        eyebrow="Кейс"
+        text="В поездке по Сан-Паулу, Кампинасу и Гуаружа время переговоров могло меняться уже по ходу дня. Вместе с ним сдвигались транспорт, переводчик, следующий переезд и свободная часть."
+      />
+      <DestinationBand
+        eyebrow={delegationCase.data.segment}
+        title={delegationCase.data.title}
+        text={[delegationCase.data.groupSize, delegationCase.data.cities.join(' · ')].filter(Boolean).join(' · ')}
+        image={delegationCase.data.hero?.src}
+        href={`/cases/${delegationCase.data.slug}/`}
+      />
+    </>
+  )}
+
   <ProcessSteps
     eyebrow="Подготовка"
-    title="Встречи, время, сервис и свободная программа"
+    title="Как собирается программа делегации"
     steps={[
-      { title: 'Встречи', text: 'Фиксируем обязательную деловую сетку и точные адреса.' },
-      { title: 'Время', text: 'Считаем реальное время дорог и резерв между точками.' },
-      { title: 'Сервис', text: 'Добавляем транспорт, сопровождающих, питание и размещение.' },
-      { title: 'Свободная часть', text: 'Заполняем оставшееся время без риска для деловой программы.' },
+      { title: 'Встречи', text: 'Фиксируем обязательную деловую сетку, адреса и временные окна.' },
+      { title: 'Переезды', text: 'Считаем дороги, резерв времени, аэропорты и транспорт между городами.' },
+      { title: 'Сопровождение', text: 'Подключаем переводчиков, гидов, размещение и питание под рабочий график.' },
+      { title: 'Свободная часть', text: 'Добавляем рестораны, экскурсии и отдых туда, где они не рискуют обязательными встречами.' },
     ]}
+    dark
   />
 
 </BaseLayout>

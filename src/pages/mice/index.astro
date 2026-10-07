@@ -1,60 +1,98 @@
 ---
+import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../../lib/archive.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
+import MiceNav from '../../components/commercial/MiceNav.astro';
+import { ORG } from '../../data/organization/ada-tours';
+
+const caseOrder = [
+  'case_mice_corporate_group_rio_angra_2026',
+  'case_mice_business_delegation_sao_paulo_2026',
+];
+
+const caseById = new Map(
+  (await getCollection('cases', ({ data }) => data.locale === 'ru' && isActiveEntity(data)))
+    .map((entry) => [entry.data.id, entry])
+);
+const miceCases = caseOrder.map((id) => caseById.get(id)).filter(Boolean);
 ---
 
-<BaseLayout leadTitle="Рассчитать MICE или деловую поездку" leadEntityId="mice"
-  title="MICE и корпоративные поездки в Латинской Америке"
-  description="MICE, деловые делегации, incentive и корпоративные группы по Бразилии и Латинской Америке."
+<BaseLayout
+  leadTitle="Рассчитать MICE или корпоративную поездку"
+  leadEntityId="mice"
+  title="MICE и корпоративные поездки в Бразилии и Латинской Америке"
+  description="Ada Tours организует MICE, incentive, корпоративные группы и деловые делегации: транспорт, размещение, площадки, питание, переводчиков и программу на месте."
 >
   <Hero
-    eyebrow="MICE"
-    title="MICE в Латинской Америке под одной координацией"
-    intro="Встречи, транспорт, площадки, размещение и программа для группы. Ada Tours связывает все на месте."
+    eyebrow="MICE · Бразилия и Латинская Америка"
+    title="Корпоративная поездка, где все сходится по времени"
+    intro="Встречи, трансферы, площадки, питание, экскурсии и вечерняя программа работают как одна система. Ada Tours собирает ее и координирует на месте."
     image="/media/catalog/tury/hero-enhanced-20260930.webp"
+    ctaHref="#request"
     ctaLabel="Обсудить группу"
   />
 
+  <MiceNav active="overview" />
+
   <EditorialStatement
-    eyebrow="Корпоративные группы"
-    text="Бизнес-программа идет по времени. Транспорт, размещение и события должны ей помогать."
+    eyebrow="MICE на месте"
+    text="Главная задача начинается там, где пересекаются десятки деталей: группа должна вовремя приехать, разместиться, попасть на встречу или площадку, поесть, продолжить программу и спокойно пережить изменения расписания."
   />
 
   <FactStrip
     wideFirst
     facts={[
-      { value: 'Бразилия', label: 'ключевое направление MICE' },
-      { value: 'Группы', label: 'корпоративные и incentive поездки' },
-      { value: 'DMC', label: 'локальная координация программы' },
-      { value: 'Multi', label: 'маршруты по нескольким странам' },
+      { value: ORG.service.groups.miceVip.display, label: ORG.service.groups.miceVip.label },
+      { value: ORG.service.groups.largeEvents.display, label: ORG.service.groups.largeEvents.label },
+      { value: String(ORG.service.languages.length), label: 'языков коммуникации' },
+      { value: 'Рио-де-Жанейро', label: 'база локальной команды Ada Tours' },
     ]}
   />
 
   <EditorialProof
-    eyebrow="Деловые делегации"
-    title="Один план для встреч, транспорта и вечера в городе"
-    text="Аэропорт, переезды, питание, переводчики и вечерняя программа собираются вокруг делового расписания группы."
+    eyebrow="Одна программа"
+    title="От аэропорта до финального мероприятия"
+    text="Ada Tours связывает размещение, транспорт, гидов, переводчиков, площадки, рестораны, экскурсии и события в одну рабочую последовательность. Если меняется один пункт, команда перестраивает связанные части программы."
     image="/media/home/rio-night-enhanced-20260930.webp"
     facts={[
-      'Трансферы и транспорт на протяжении программы',
-      'Гиды и переводческое сопровождение по запросу',
-      'Площадки, рестораны и вечерние активности',
-      'Резервные сценарии при изменении графика',
+      'Корпоративные и incentive-поездки',
+      'Деловые делегации и визиты к партнерам',
+      'Групповой транспорт и сопровождение',
+      'Площадки, питание и вечерние мероприятия',
+      'Программа до и после деловой части',
     ]}
   />
 
+  <EditorialStatement
+    eyebrow="Реальные проекты"
+    text="В MICE лучше всего говорят выполненные программы. Ниже два проекта Ada Tours 2026 года: корпоративная группа примерно на 30 человек и делегация 7–8 человек с деловыми визитами и переводом."
+  />
+
+  {miceCases.map((item, index) => (
+    <DestinationBand
+      eyebrow={item.data.segment}
+      title={item.data.title}
+      text={[item.data.groupSize, item.data.cities.join(' · ')].filter(Boolean).join(' · ')}
+      image={item.data.hero?.src}
+      href={`/cases/${item.data.slug}/`}
+      align={index % 2 === 1 ? 'right' : 'left'}
+    />
+  ))}
+
   <ProcessSteps
-    eyebrow="Организация"
-    title="От брифа до работы группы на месте"
+    eyebrow="Как строим MICE"
+    title="Сначала обязательная часть, затем вся программа вокруг нее"
     steps={[
-      { title: 'Задача', text: 'Формат, участники, обязательные встречи и ограничения по времени.' },
-      { title: 'Логистика', text: 'Перелеты, транспорт, размещение и последовательность деловой программы.' },
-      { title: 'Программа', text: 'Рестораны, экскурсии и мероприятия без конфликта с расписанием.' },
-      { title: 'Координация', text: 'На месте одна команда держит расписание и изменения.' },
+      { title: 'Бриф', text: 'Формат поездки, количество участников, даты, обязательные встречи и требования к сервису.' },
+      { title: 'Каркас', text: 'Размещение, транспорт, площадки и реальные интервалы между точками.' },
+      { title: 'Программа', text: 'Питание, экскурсии, события и свободное время встраиваются без конфликта с обязательной частью.' },
+      { title: 'На месте', text: 'Локальная команда ведет подрядчиков, расписание и изменения по ходу поездки.' },
     ]}
     dark
   />

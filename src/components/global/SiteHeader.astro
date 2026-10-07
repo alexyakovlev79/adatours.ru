@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import PrimaryCTA from './PrimaryCTA.astro';
 import SearchTrigger from './SearchTrigger.astro';
 import ContactActions from './ContactActions.astro';
-import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, NAV_LINKS } from '../../lib/site';
+import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, MICE_NAV_LINKS, NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
 import { countryPath, themePath } from '../../lib/routes';
 import { isActiveEntity } from '../../lib/archive.mjs';
@@ -43,12 +43,14 @@ const interestChildLinks: NavChild[] = buildInterestIndex(themeEntries, tourEntr
     label: entry.data.name,
   }));
 
+const miceChildLinks: NavChild[] = MICE_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 const dmcChildLinks: NavChild[] = DMC_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 const aboutChildLinks: NavChild[] = ABOUT_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 
 const childLinksFor = (href: string): NavChild[] => {
   if (href === '/country/') return countryChildLinks;
   if (href === '/interests/') return interestChildLinks;
+  if (href === '/mice/') return miceChildLinks;
   if (href === '/dmc/') return dmcChildLinks;
   if (href === '/about/') return aboutChildLinks;
   return [];
@@ -57,6 +59,7 @@ const childLinksFor = (href: string): NavChild[] => {
 const groupIdFor = (href: string) => {
   if (href === '/country/') return 'countries';
   if (href === '/interests/') return 'interests';
+  if (href === '/mice/') return 'mice';
   if (href === '/dmc/') return 'dmc';
   if (href === '/about/') return 'about';
   return '';
@@ -65,6 +68,7 @@ const groupIdFor = (href: string) => {
 const overviewLabelFor = (href: string, label: string) => {
   if (href === '/country/') return 'Все страны';
   if (href === '/interests/') return 'Все интересы';
+  if (href === '/mice/') return 'MICE и корпоративные поездки';
   if (href === '/dmc/') return 'DMC / B2B';
   if (href === '/about/') return 'О компании';
   return label;

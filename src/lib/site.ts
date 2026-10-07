@@ -13,6 +13,11 @@ export const DMC_NAV_LINKS = [
   { id: 'terms', href: '/dmc/terms/', label: 'Условия работы' },
 ] as const;
 
+export const MICE_NAV_LINKS = [
+  { id: 'overview', href: '/mice/', label: 'MICE и корпоративные поездки' },
+  { id: 'delegations', href: '/mice/business-delegations/', label: 'Деловые делегации' },
+] as const;
+
 export const ABOUT_NAV_LINKS = [
   { id: 'overview', href: '/about/', label: 'О компании' },
   { id: 'anna', href: '/team/anna-avanesova/', label: 'Анна Аванесова' },
@@ -36,6 +41,7 @@ export const NAV_LINKS = [
 export const MOBILE_NAV_LINKS = NAV_LINKS;
 
 export const FOOTER_NAV_LINKS = MOBILE_NAV_LINKS.flatMap((link) => {
+  if (link.href === '/mice/') return [link, ...MICE_NAV_LINKS.slice(1)];
   if (link.href === '/dmc/') return [link, ...DMC_NAV_LINKS.slice(1)];
   if (link.href === '/about/') return [link, ...ABOUT_NAV_LINKS.slice(1)];
   return [link];

@@ -17,9 +17,9 @@ hero:
   src: "/media/excursions/korkovado-i-les-tizhuka/hero-src-enhanced-20261007.webp"
   alt: "Корковадо и лес Тижука"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_79.png"
+  - src: "/media/excursions/korkovado-i-les-tizhuka/gallery-0-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_48_62.png"
+  - src: "/media/excursions/korkovado-i-les-tizhuka/gallery-1-src-enhanced-20261007.webp"
     alt: ""
 route:
   - "Корковадо"
@@ -38,5 +38,6 @@ themes: ["theme_wildlife","theme_culture"]
 Экскурсия посвящена Корковадо и лесу Тижука в Рио-де-Жанейро.
 
 Стоимость — $53 на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения.
+
 
 

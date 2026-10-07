@@ -14,12 +14,12 @@ priceFrom: 76
 currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/terres%20del%20fuego.png"
+  src: "/media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/hero-src-enhanced-20261007.webp"
   alt: "Национальный парк Огненная земля"
 gallery:
   - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
     alt: ""
-  - src: "https://brasiltours.ru/image/terres%20del%20f.png"
+  - src: "/media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-src-enhanced-20261007.webp"
     alt: ""
 route: []
 lead: "Экскурсия в национальный парк «Огненная земля» в Аргентине."
@@ -36,3 +36,4 @@ themes: ["theme_wildlife"]
 Стоимость экскурсии — $76 на человека.
 
 Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения.
+

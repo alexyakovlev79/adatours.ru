@@ -18,9 +18,9 @@ hero:
   src: "/media/excursions/macuco-safari-group-add-on/hero-enhanced-20261005.webp"
   alt: "На фото: Люди в лодке на Макуко -Сафари"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/product/m/a/macuco_safari_45191.jpg"
+  - src: "/media/excursions/makuko-safari-he/gallery-0-src-enhanced-20261007.webp"
     alt: "На фото: Экскурсия Макуко -Сафари"
-  - src: "https://brasiltours.ru/image/catalog/product/r/i/rio-iguazu-in-brazil-macuco-by_blumar.jpg"
+  - src: "/media/excursions/makuko-safari-he/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Макуко -Сафари, лодка подплывает к водопаду"
 route:
   - "Джунгли национального парка"
@@ -49,4 +49,5 @@ themes: ["theme_adventure","theme_wildlife"]
 Можно заказать DVD диск и потом Вы будете долго его пересматривать!
 
 Групповой тур. Используйте удобную обувь и одежду.
+
 

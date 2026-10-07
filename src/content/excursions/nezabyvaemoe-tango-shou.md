@@ -16,14 +16,14 @@ priceFrom: 101
 currency: "USD"
 priceNote: "Стоимость — $101."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/tango-buenos-1920.jpg"
+  src: "/media/excursions/nezabyvaemoe-tango-shou/hero-src-enhanced-20261007.webp"
   alt: "На фото: Танго шоу в Аргентине"
 gallery:
   - src: "/media/excursions/nezabyvaemoe-tango-shou/gallery-1-enhanced-20261006.webp"
     alt: "На фото: Флоралис Хенерика Буэнос-Айрес, Аргентина"
   - src: "/media/excursions/nezabyvaemoe-tango-shou/gallery-2-enhanced-20261006.webp"
     alt: "На фото: Блюда аргентинской кухни"
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_51.png"
+  - src: "/media/excursions/nezabyvaemoe-tango-shou/gallery-2-src-enhanced-20261007.webp"
     alt: "На фото: Обелиск в Буэнос-Айресе"
   - src: "https://brasiltours.ru/image/catalog/product/t/a/tango.png"
     alt: "На фото: Пара танцует танго на улице Буэнос-Айреса"
@@ -51,5 +51,6 @@ themes: ["theme_culture"]
 ## Танго-шоу в доме «Ла Вентана»
 
 Посещение незабываемого танго-шоу с ужином в доме танго «Ла Вентана». Очаровательные ритмы самого страстного танца и танцующие пары оставят незабывамое впечатление, также как и традиционный аргентинский ужин (напитки включены). Частный трансфер и услуги русскоговорящего гида включены. Расписание: с 20:00 до 23:45
+
 
 

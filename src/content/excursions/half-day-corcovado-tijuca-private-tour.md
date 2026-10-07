@@ -15,10 +15,10 @@ priceFrom: 188
 currency: "USD"
 priceNote: "Стоимость — $188 на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/r/i/rio_jeep.jpg"
+  src: "/media/excursions/half-day-corcovado-tijuca-private-tour/hero-src-enhanced-20261007.webp"
   alt: "Индивидуальный тур на Корковадо& Тижука"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/product/r/i/rio_jeep2.jpg"
+  - src: "/media/excursions/half-day-corcovado-tijuca-private-tour/gallery-0-src-enhanced-20261007.webp"
     alt: ""
 route:
   - "Корковадо"
@@ -37,4 +37,5 @@ themes: ["theme_wildlife","theme_culture"]
 Экскурсия на Корковадо и в лес Тижука рассчитана на полдня.
 
 Стоимость — $188 на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения.
+
 

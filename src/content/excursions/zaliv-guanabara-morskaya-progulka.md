@@ -19,9 +19,9 @@ hero:
   src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
   alt: "На фото: Залив Гуанабара, Рио-де-Жанейро"
 gallery:
-  - src: "https://brasiltours.ru/image/guanabara-1.jpg"
+  - src: "/media/excursions/zaliv-guanabara-morskaya-progulka/gallery-0-src-enhanced-20261007.webp"
     alt: "На фото: Пляж Рио-де-Жанейро"
-  - src: "https://brasiltours.ru/image/rio%20at%20night.11png.png"
+  - src: "/media/excursions/zaliv-guanabara-morskaya-progulka/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Ночной вид на залив Гуанабара в Рио"
 route:
   - "Рио-де-Жанейро"
@@ -58,4 +58,5 @@ themes: ["theme_culture"]
 Почувствуйте океанский бриз и наблюдайте, как Рио-де-Жанейро сияет, пока вы плывёте по исторической и живописной бухте Гуанабара.
 
 С палубы вашей лодки откройте для себя красоту Рио в движении: величественные вершины, тропические леса и оживлённая набережная самой пленительной бухты в мире.
+
 

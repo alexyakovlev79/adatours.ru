@@ -22,9 +22,9 @@ gallery:
     alt: ""
   - src: "/media/excursions/vin-ja-del-mar-i-val-paraiso/gallery-1-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_57_28.png"
+  - src: "/media/excursions/vin-ja-del-mar-i-val-paraiso/gallery-2-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_58_15.png"
+  - src: "/media/excursions/vin-ja-del-mar-i-val-paraiso/gallery-3-src-enhanced-20261007.webp"
     alt: ""
 route:
   - "Сантьяго"
@@ -61,4 +61,5 @@ themes: ["theme_culture"]
 Переезд в город Винья дель Мар, который называют «городом-садом», его береговая линия - это красивые пляжи и могучие скалы. Главными достопримечательностями города являются цветочные часы, пляж Реньяка, набережная и музей Фонк.
 
 По окончании экскурсии возвращение в Сантьяго, длительность – 9 часов с остановкой на обед (не включен в стоимость).
+
 

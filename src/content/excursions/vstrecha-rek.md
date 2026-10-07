@@ -18,9 +18,9 @@ hero:
   src: /media/excursions/vstrecha-rek/hero-enhanced-20261006.webp
   alt: "Встреча рек!!!"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_44.png"
+  - src: "/media/excursions/vstrecha-rek/gallery-0-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_49_29.png"
+  - src: "/media/excursions/vstrecha-rek/gallery-1-src-enhanced-20261007.webp"
     alt: ""
 route:
   - "Манаус"
@@ -54,4 +54,5 @@ themes: ["theme_wildlife"]
 Цвет воды объяснить довольно просто: Солимойнс на своем пути вымывает довольно много желтого грунта, который и придает ей цвет, а Рио-Негро течет по более скалистой местности и вымывает в основном породы черного цвета, которые ее и окрашивают.
 
 Завораживающая картина встречи вод двух рек. Потрясающее природное чудо. Классно когда рукой ведешь по воде и чувствуется перепад температуры воды.
+
 

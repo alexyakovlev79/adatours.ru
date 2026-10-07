@@ -19,7 +19,7 @@ hero:
   src: "https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1-1920.jpg"
   alt: "Джип тур на Корковадо и тропический лес Тижука"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/product/j/e/jeep.jpg"
+  - src: "/media/excursions/corcovado-tijuca-forest-half-day-tour-lunch/gallery-0-src-enhanced-20261007.webp"
     alt: ""
 route:
   - "Тропический лес Тижука"
@@ -50,4 +50,5 @@ themes: ["theme_wildlife","theme_culture"]
 Возвращение на джипе в отель.
 
 Групповой тур. Минимальное количество участников — 2. Время начала — 09:00 и 14:00. Продолжительность — 3 часа.
+
 

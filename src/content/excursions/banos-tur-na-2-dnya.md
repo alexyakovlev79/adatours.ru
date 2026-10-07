@@ -16,12 +16,12 @@ priceFrom: 495
 currency: "USD"
 priceNote: "Стоимость — $1065. Группа из 2 человек — $585 на человека. Группа из 3 человек — $548 на человека. Группа из 4 человек — $495 на человека."
 hero:
-  src: "https://brasiltours.ru/image/countries/equador/banos.jpg"
+  src: "/media/excursions/banos-tur-na-2-dnya/hero-src-enhanced-20261007.webp"
   alt: "на фото: город-курорт Баньос. Эквадор (Восточные Анды)"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/equador/agoyan.jpg"
+  - src: "/media/excursions/banos-tur-na-2-dnya/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: город-курорт Баньос. Эквадор (Восточные Анды)"
-  - src: "https://brasiltours.ru/image/Baos.png"
+  - src: "/media/excursions/banos-tur-na-2-dnya/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: город-курорт Баньос. Эквадор (Восточные Анды)"
   - src: "/media/excursions/banos-tur-na-2-dnya/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: город-курорт Баньос. Эквадор (Восточные Анды)"
@@ -67,4 +67,5 @@ themes: ["theme_wildlife"]
 | Группа из 2 человек | $585 на человека |
 | Группа из 3 человек | $548 на человека |
 | Группа из 4 человек | $495 на человека |
+
 

@@ -21,7 +21,7 @@ hero:
 gallery:
   - src: "/media/excursions/potosi-tur/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: Потоси, Боливия"
-  - src: "https://brasiltours.ru/image/countries/bolivia/licensed-image.jpg"
+  - src: "/media/excursions/potosi-tur/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: Потоси, Боливия"
 route:
   - "Потоси"
@@ -55,5 +55,6 @@ themes: ["theme_culture"]
 |---|---|
 | 2 участника | $55 на человека |
 | 3 участника | $50 на человека |
+
 
 

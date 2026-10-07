@@ -16,12 +16,12 @@ priceFrom: 141
 currency: "USD"
 priceNote: "Стоимость — $359. 2 участника — $203 на человека. 3 участника — $180 на человека. 4 участника — $141 на человека."
 hero:
-  src: "https://brasiltours.ru/image/Col%20El%20penyon%20.png"
+  src: "/media/excursions/penol-i-guatape/hero-src-enhanced-20261007.webp"
   alt: "На фото: Эль Пеньолa и Гуатапе (Колумбия)"
 gallery:
   - src: "/media/excursions/penol-i-guatape/gallery-0-src-enhanced-20261007.webp"
     alt: "На фото: Эль Пеньолa и Гуатапе (Колумбия)"
-  - src: "https://brasiltours.ru/image/gua2.png"
+  - src: "/media/excursions/penol-i-guatape/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Эль Пеньолa и Гуатапе (Колумбия)"
 route:
   - "Медельин"
@@ -60,4 +60,5 @@ themes: ["theme_culture","theme_wildlife"]
 | 2 участника | $203 на человека |
 | 3 участника | $180 на человека |
 | 4 участника | $141 на человека |
+
 

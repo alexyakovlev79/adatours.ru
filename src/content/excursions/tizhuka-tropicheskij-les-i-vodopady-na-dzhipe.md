@@ -15,14 +15,14 @@ priceFrom: 269
 currency: "USD"
 priceNote: "Стоимость — $269 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/tijuka-waifu2x-noise1-1920.jpg"
+  src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/hero-src-enhanced-20261007.webp"
   alt: "На фото: Экскурсия в лес Тижука, Бразилия"
 gallery:
-  - src: "https://brasiltours.ru/image/riogid/gid-images/584/tijuca1.jpg"
+  - src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-0-src-enhanced-20261007.webp"
     alt: "На фото: Водопад Каскатинья в лесу Тижука"
-  - src: "https://brasiltours.ru/image/Tijuka.png"
+  - src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Водопад Monkey, Бразилия"
-  - src: "https://brasiltours.ru/image/riogid/gid-images/584/tijuca.jpg"
+  - src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-2-src-enhanced-20261007.webp"
     alt: "На фото: Национальный парк Тижука"
 route:
   - "Рио-де-Жанейро"
@@ -50,4 +50,5 @@ themes: ["theme_wildlife"]
 Стоимость — $269 на человека.
 
 Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения.
+
 

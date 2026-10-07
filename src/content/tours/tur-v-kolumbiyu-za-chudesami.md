@@ -91,7 +91,7 @@ itinerary:
   images:
   - src: "/media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Богота'
-  - src: https://brasiltours.ru/image/columbia%20villa%20de%20leyva.png
+  - src: "/media/tours/kolumbiya-live/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Вилья-де-Лейва'
 - day: 4
   title: Вилья-де-Лейва - Армения

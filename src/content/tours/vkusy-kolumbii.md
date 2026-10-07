@@ -153,7 +153,7 @@ itinerary:
 
     Встреча по прибытии, трансфер и размещение в гостинице.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Картахена'
   - src: https://brasiltours.ru/image/medelin%20colombia1.png
     alt: 'На фото: страна Колумбия, город Медельин'
@@ -178,7 +178,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Картахена'
 - day: 9
   title: Картахена
@@ -186,7 +186,7 @@ itinerary:
   - Картахена
   text: Завтрак. В назначенное время трансфер в аэропорт для стыковки с международным рейсом.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Картахена'
 included:
 - Внутренние авиаперелеты Богота - Медельин - Картахена

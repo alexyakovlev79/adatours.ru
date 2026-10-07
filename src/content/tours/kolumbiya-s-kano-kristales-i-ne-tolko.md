@@ -265,7 +265,7 @@ itinerary:
 
     Перелет домой в стоимость не включен.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena2.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp"
     alt: Картахена
 included:
 - Трансферы аэропорт - отель - аэропорт в каждом городе.

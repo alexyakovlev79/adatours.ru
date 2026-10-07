@@ -132,7 +132,7 @@ priceFrom: 1156
 currency: USD
 priceNote: $1156
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/cartaghena2.jpg
+  src: "/media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp"
   alt: Колумбия Метрополитен
 routeCountries:
 - country_colombia

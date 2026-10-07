@@ -129,7 +129,7 @@ itinerary:
 
     Отдельно оплачиваются обед, вход на Пьедра-дель-Пеньоль, прогулка на лодке и ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 6
   title: Картахена, Ла-Попа и Сан-Фелипе
@@ -152,7 +152,7 @@ itinerary:
 
     Обед и ужин оплачиваются отдельно.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 7
   title: Свободный день в Картахене
@@ -171,7 +171,7 @@ itinerary:
 
     Ужин в стоимость не включен.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp"
     alt: Картахена
 - excursionRef: excursion_colombia_san_pedro_majagua_day_trip
   places: []
@@ -184,7 +184,7 @@ itinerary:
 
     Авиаперелет в стоимость не включен.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp"
     alt: Картахена
 included:
 - Трансфер аэропорт - отель - аэропорт.

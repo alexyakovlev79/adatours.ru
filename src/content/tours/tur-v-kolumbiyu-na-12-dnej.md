@@ -81,7 +81,7 @@ itinerary:
 
     Трансфер и размещение в **Movich Hotel de Pereira**.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cocora-horseriding.jpg
+  - src: "/media/excursions/salento-i-dolina-kokora/hero-src-enhanced-20261007.webp"
     alt: 'На фото: конная прогулка в долине Кокора'
   - src: https://brasiltours.ru/image/pereira-colombia-25397287.png
     alt: 'На фото: Перейра в Колумбии'

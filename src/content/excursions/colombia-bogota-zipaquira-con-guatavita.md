@@ -30,7 +30,7 @@ gallery:
     alt: Подземные пространства Соляного собора
   - src: https://brasiltours.ru/image/catalog/product/f/i/file_18.jpeg
     alt: Сипакира, Колумбия
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0018.jpg
+  - src: "/media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-4-src-enhanced-20261007.webp"
     alt: Богота, Колумбия
 route:
   - Богота

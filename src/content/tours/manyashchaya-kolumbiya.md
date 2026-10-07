@@ -108,7 +108,7 @@ itinerary:
 
     По прибытии вас встретят и отвезут в гостиницу. Размещение и отдых.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Картахена, Колумбия'
   - src: https://brasiltours.ru/image/medelin%20colombia1.png
     alt: 'На фото: город Медельин, Колумбия'
@@ -136,7 +136,7 @@ itinerary:
   text: Завтрак в гостинице. Свободный день в Картахене. Его можно провести у моря, вернуться в Старый город или выбрать дополнительные
     активности.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Картахена, Колумбия'
 - day: 9
   title: Вылет

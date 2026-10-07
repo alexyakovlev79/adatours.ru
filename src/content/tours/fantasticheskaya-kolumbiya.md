@@ -108,7 +108,7 @@ itinerary:
     дополнительную плату) и насладиться чудесным пейзажем. Продолжительность: 8 часовДни проведения тура: ежедневноВключено:
     такси-мотоцикл, услуги двуязычного гида, транспорт, местная медкарта.'
   images:
-  - src: https://brasiltours.ru/image/medelin%20colombia.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Медельин'
 - day: 5
   title: Медельин - Перейра
@@ -168,7 +168,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Santa%20Marta.png
     alt: 'на фото: Санта Марта'
-  - src: https://brasiltours.ru/image/medelin%20colombia.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Медельин'
 - day: 9
   title: Санта-Марта - Мамей - Кемп Кабана де Адан 1

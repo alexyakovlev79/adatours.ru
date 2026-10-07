@@ -18,7 +18,7 @@ priceFrom: 280
 currency: USD
 priceNote: "Основная стоимость — $280. Для 2 человек — $156 на человека, для 3 человек — $148 на человека, для 4 человек — $117 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/cartaghena.jpg
+  src: "/media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp"
   alt: Картахена в Колумбии
 gallery:
   - src: "/media/excursions/siti-tur-po-kartakhene/gallery-0-src-enhanced-20261007.webp"
@@ -29,7 +29,7 @@ gallery:
     alt: Картахена, Колумбия
   - src: https://brasiltours.ru/image/countries/colombia/cartaghena5.jpg
     alt: Картахена, Колумбия
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena2.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp"
     alt: Картахена, Колумбия
   - src: https://brasiltours.ru/image/catalog/product/f/i/file_48.jpg
     alt: Картахена, Колумбия

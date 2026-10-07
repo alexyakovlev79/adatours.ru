@@ -108,7 +108,7 @@ itinerary:
 
     Затем вы отправитесь в сам Саленто. Пешеходная экскурсия проходит по колониальным улицам, ремесленным мастерским и выводит к смотровой площадке Кокора. В назначенное время - трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cocora-horseriding.jpg
+  - src: "/media/excursions/salento-i-dolina-kokora/hero-src-enhanced-20261007.webp"
     alt: Долина Кокора
 - day: 6
   title: Перейра - Медельин
@@ -130,7 +130,7 @@ itinerary:
 
     Завершает экскурсию Замковый музей, построенный в 1930 году. Он известен художественными коллекциями и садами.
   images:
-  - src: https://brasiltours.ru/image/medelin%20colombia.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Медельин
 - day: 7
   title: Гуатапе и Эль-Пеньон-де-Гуатапе
@@ -180,9 +180,9 @@ itinerary:
 
     После окончания экскурсии - размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Картахена
-  - src: https://brasiltours.ru/image/medelin%20colombia.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Медельин
 - day: 9
   title: Картахена - острова Росарио
@@ -204,7 +204,7 @@ itinerary:
 
     После программы - трансфер в отель на острове.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena4.jpg
+  - src: "/media/tours/kolumbiya-2024/itinerary-9-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 10
   title: Острова Росарио
@@ -241,7 +241,7 @@ itinerary:
 
     Далее вы отправитесь в аэропорт на рейс в Боготу. По прибытии в столицу - размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 14
   title: Богота

@@ -230,7 +230,7 @@ itinerary:
 
     Вы увидите старый город, католические церкви и монастыри, Дворец инквизиции и колониальные особняки с балконами. Одна из главных крепостей - Сан-Фелипе, крупное фортификационное сооружение испанской эпохи. После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 12
   title: Картахена
@@ -243,7 +243,7 @@ itinerary:
 
     После экскурсии возвращение в гостиницу и отдых.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 13
   title: Картахена или остров Бару
@@ -259,7 +259,7 @@ itinerary:
 
     На территории отеля Agua Azul предусмотрено дневное размещение с лежаками и пляжными полотенцами. Обед включен. Напитки в ресторане и баре оплачиваются отдельно. В 17:00 возвращение на скоростной лодке в Картахену и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - excursionRef: excursion_colombia_baru_agua_azul_day_trip
   places: []
@@ -273,7 +273,7 @@ itinerary:
 
     Перелет Картахена - Богота и стыковка с международным рейсом.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 included:
 - Внутренние авиаперелеты Лима - Куско, Хулиака - Лима, Богота - Картахена - Богота.

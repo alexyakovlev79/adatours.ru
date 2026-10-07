@@ -37,7 +37,7 @@ itinerary:
   - Богота
   text: Прибытие в Боготу. В аэропорту Эль-Дорадо вас встретят и доставят в отель. После размещения оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/B/o/Bogota_3.jpeg
+  - src: "/media/tours/kolumbiya-live/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 2
   title: Богота, сити-тур и дегустация кофе
@@ -56,7 +56,7 @@ itinerary:
 
     Музей золота закрыт по понедельникам. Casa de la Moneda и Donacion Botero закрыты по вторникам.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/B/o/Bogota_3.jpeg
+  - src: "/media/tours/kolumbiya-live/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 3
   title: Богота - Сипакира - Вилья-де-Лейва
@@ -75,9 +75,9 @@ itinerary:
 
     Продолжительность программы около 12 часов. Включены вход в соляной собор, типичный обед, частный транспорт и услуги профессионального англоговорящего гида. Ночь в Вилья-де-Лейве.
   images:
-  - src: https://brasiltours.ru/image/columbia%20villa%20de%20leyva.png
+  - src: "/media/tours/kolumbiya-live/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Вилья-де-Лейва
-  - src: https://brasiltours.ru/image/catalog/product/B/o/Bogota_3.jpeg
+  - src: "/media/tours/kolumbiya-live/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 4
   title: Вилья-де-Лейва - Богота - Перейра
@@ -98,9 +98,9 @@ itinerary:
 
     По прилете в Международный аэропорт Матеканья вас встретят и доставят в отель.
   images:
-  - src: https://brasiltours.ru/image/columbia%20villa%20de%20leyva.png
+  - src: "/media/tours/kolumbiya-live/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Вилья-де-Лейва
-  - src: https://brasiltours.ru/image/catalog/product/B/o/Bogota_3.jpeg
+  - src: "/media/tours/kolumbiya-live/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 5
   title: Перейра - Филандия - Саленто - долина Кокора
@@ -126,7 +126,7 @@ itinerary:
 
     Смотровая площадка Квиндио закрыта по понедельникам. Если понедельник является праздничным днем, площадка закрывается во вторник.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cocora-horseriding.jpg
+  - src: "/media/excursions/salento-i-dolina-kokora/hero-src-enhanced-20261007.webp"
     alt: Долина Кокора
 - day: 6
   title: Кофейная ферма в Санта-Роса-де-Кабаль
@@ -224,7 +224,7 @@ itinerary:
 
     После программы - возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 12
   title: Рыбалка и гастрономическая программа в Картахене
@@ -239,7 +239,7 @@ itinerary:
 
     Продолжительность около 7 часов. Включены англоговорящий гид, частный транспорт и типичный обед из пойманных в этот день морепродуктов.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 13
   title: Картахена
@@ -250,7 +250,7 @@ itinerary:
 
     Перелет домой в стоимость не включен.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena2.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp"
     alt: Картахена
 included:
 - Трансферы аэропорт - отель - аэропорт - отель.
@@ -295,7 +295,7 @@ priceFrom: 3315
 currency: USD
 priceNote: $3315
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0115.jpg
+  src: "/media/tours/kolumbiya-live/hero-src-enhanced-20261007.webp"
   alt: Колумбия Live
 routeCountries:
 - country_colombia

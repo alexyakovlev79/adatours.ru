@@ -95,7 +95,7 @@ itinerary:
     \n**Продолжительность:** 7 часов.  \n**Включено:** профессиональный англоязычный гид, частный транспорт, вход в метро,\
     \ поездка по канатной дороге и граффити-тур по Коммуне 13."
   images:
-  - src: https://brasiltours.ru/image/medelin%20colombia.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Медельин
 - day: 6
   title: Медельин - Пеньоль - Гуатапе
@@ -127,7 +127,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/pereira%20col.%20jpg.png
     alt: Перейра
-  - src: https://brasiltours.ru/image/medelin%20colombia.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Медельин
 - day: 8
   title: Перейра - Саленто - долина Кокора
@@ -188,7 +188,7 @@ itinerary:
     \ групповой тур по островам, трансфер отель - пристань - отель, типичный карибский обед.  \n**Не включено:** сборы за\
     \ парусный поход и Coralia, $10 с человека, а также вход в океанариум, $10 с человека."
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena-square.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 12
   title: Картахена - Санта-Марта - обзорная экскурсия

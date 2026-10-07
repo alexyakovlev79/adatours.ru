@@ -22,13 +22,13 @@ hero:
 gallery:
   - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-2-src-enhanced-20261007.webp"
     alt: Саленто, Колумбия
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0173.jpg
+  - src: "/media/excursions/salento-i-dolina-kokora/gallery-1-src-enhanced-20261007.webp"
     alt: Восковые пальмы в долине Кокора
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0090.jpg
+  - src: "/media/excursions/salento-i-dolina-kokora/gallery-2-src-enhanced-20261007.webp"
     alt: Пейзаж долины Кокора
-  - src: https://brasiltours.ru/image/countries/colombia/coco-v.jpg
+  - src: "/media/destinations/pereira/hero-src-enhanced-20261007.webp"
     alt: Долина Кокора и облачный лес
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0156.jpg
+  - src: "/media/excursions/salento-i-dolina-kokora/gallery-4-src-enhanced-20261007.webp"
     alt: Экологическая тропа в долине Кокора
   - src: /media/excursions/salento-i-dolina-kokora/gallery-5-src-enhanced-20261007.webp
     alt: Улицы Саленто, Колумбия
@@ -67,3 +67,4 @@ themes: ["theme_wildlife","theme_culture"]
 После долины маршрут продолжается в Саленто. Здесь предусмотрена прогулка по колониальным улицам, знакомство с местными мастерскими и ремеслами, а также виды со смотровой площадки Кокора.
 
 Трансфер из отеля запланирован на 9:00.
+

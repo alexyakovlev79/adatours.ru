@@ -23,9 +23,9 @@ hero:
 gallery:
   - src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-0-src-enhanced-20261007.webp"
     alt: Саксайуаман в Куско, Перу
-  - src: https://brasiltours.ru/image/countries/peru/puca-pucara.jpg
+  - src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-1-src-enhanced-20261007.webp"
     alt: Пука-Пукара рядом с Куско
-  - src: https://brasiltours.ru/image/countries/peru/qenqo-2.jpg
+  - src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-2-src-enhanced-20261007.webp"
     alt: Археологический комплекс Кенко в Перу
 route:
   - Куско
@@ -60,3 +60,4 @@ themes: ["theme_culture"]
 Затем маршрут продолжается к Кенко. В исходной программе это место описано как древний храм Пумы с лабиринтными проходами и каменным алтарем, связанным с ритуалами.
 
 Следующие точки — Пука-Пукара и Тамбомачай. Пука-Пукара расположена на возвышенности и в исходном материале описывается как укрепление, связанное с контролем путей. Тамбомачай включен как еще один памятник инкской архитектуры. После обеда предусмотрено свободное время для самостоятельного знакомства с Куско.
+

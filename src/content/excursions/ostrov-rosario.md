@@ -21,9 +21,9 @@ hero:
   src: /media/excursions/ostrov-rosario/hero-src-enhanced-20261007.webp
   alt: Острова Росарио в Карибском море, Колумбия
 gallery:
-  - src: https://brasiltours.ru/image/countries/colombia/new-photos/kartakhena-22.jpg
+  - src: "/media/excursions/ostrov-rosario/gallery-0-src-enhanced-20261007.webp"
     alt: Побережье Картахены на пути к островам Росарио
-  - src: https://brasiltours.ru/image/countries/colombia/new-photos/ostrova-rosario-kvadrat.jpg
+  - src: "/media/excursions/ostrov-rosario/gallery-1-src-enhanced-20261007.webp"
     alt: Острова Росарио, Колумбия
 route:
   - Картахена
@@ -56,3 +56,4 @@ themes: ["theme_beach"]
 Катер проходит вдоль острова Бару и затем прибывает на главный остров архипелага Росарио. Здесь предусмотрено свободное время, чтобы провести его у воды и воспользоваться островной инфраструктурой.
 
 В исходной программе отдельно отмечены коралловые рифы, разноцветные рыбы и морские черепахи как часть природного мира архипелага.
+

@@ -20,9 +20,9 @@ hero:
   src: "/media/excursions/kofejnyj-tur-v-perejra/gallery-0-src-enhanced-20261007.webp"
   alt: Напиток из какао на шоколадной ферме в Колумбии
 gallery:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0223.jpg
+  - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-0-src-enhanced-20261007.webp"
     alt: Шоколадная ферма в районе Перейры
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0112.jpg
+  - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-1-src-enhanced-20261007.webp"
     alt: Какао и шоколад на ферме в Колумбии
   - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-2-src-enhanced-20261007.webp"
     alt: Посещение шоколадной фермы в Перейре
@@ -57,3 +57,4 @@ themes: ["theme_gastronomy_wine"]
 Во время экскурсии покажут, как какао собирают, сушат и измельчают перед дальнейшей переработкой. Отдельная часть программы посвящена происхождению какао и традиционным способам его использования.
 
 Также в программе — знакомство с традиционным напитком из какао и дегустация органического шоколада. Трансфер из отеля запланирован на 9:00.
+

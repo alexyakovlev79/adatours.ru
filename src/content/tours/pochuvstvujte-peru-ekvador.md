@@ -160,7 +160,7 @@ itinerary:
 
     Завершает экскурсию главная площадь Куско и собор с ценными произведениями колониального искусства.
   images:
-  - src: https://brasiltours.ru/image/cuzco.png
+  - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Куско
 - day: 11
   title: Куско - Кито

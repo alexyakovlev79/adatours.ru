@@ -132,7 +132,7 @@ itinerary:
   images:
   - src: /media/tours/peru-8d/itinerary/day-04-enhanced-20261001.webp
     alt: Куско
-  - src: https://brasiltours.ru/image/Puno.jpg
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
     alt: 'Перу: Энергия Предков'
 - day: 7
   title: 'Озеро Титикака: Урос и Такиле'
@@ -151,7 +151,7 @@ itinerary:
 
     Ближе к закату возвращение на лодке к причалу в Пуно. Ночь в Пуно.
   images:
-  - src: https://brasiltours.ru/image/Puno.jpg
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
     alt: 'Перу: Энергия Предков'
 - day: 8
   title: Пуно - аэропорт Хулиака
@@ -160,7 +160,7 @@ itinerary:
   - Хулиака
   text: После завтрака трансфер в аэропорт Хулиака. Дорога из Пуно занимает около 1 часа.
   images:
-  - src: https://brasiltours.ru/image/Puno.jpg
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
     alt: 'Перу: Энергия Предков'
 included:
 - Включенное питание и напитки.
@@ -195,7 +195,7 @@ priceFrom: 1245
 currency: USD
 priceNote: $1245
 hero:
-  src: https://brasiltours.ru/image/Puno.jpg
+  src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
   alt: 'Перу: Энергия Предков'
 routeCountries:
 - country_peru

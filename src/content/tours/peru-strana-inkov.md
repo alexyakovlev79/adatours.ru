@@ -85,7 +85,7 @@ itinerary:
 
     Затем автобус спускается в поселок, где предусмотрен обед в ресторане «Ayasqa». После обеда - переезд на станцию, обратная поездка на поезде и трансфер в гостиницу в Куско.
   images:
-  - src: https://brasiltours.ru/image/cuzco.png
+  - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Куско
   - src: https://brasiltours.ru/image/machu%20pichu%202.png
     alt: Мачу-Пикчу

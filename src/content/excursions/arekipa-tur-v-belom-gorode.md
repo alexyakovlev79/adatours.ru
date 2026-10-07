@@ -26,7 +26,7 @@ gallery:
     alt: "на фото: Арекипа, белый город в Перу"
   - src: "https://brasiltours.ru/image/Arequipa.png"
     alt: "на фото: Арекипа, белый город в Перу"
-  - src: "https://brasiltours.ru/image/a-Arequipa.png"
+  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-3-src-enhanced-20261007.webp"
     alt: "на фото: Арекипа, белый город в Перу"
 route:
   - "Арекипа"

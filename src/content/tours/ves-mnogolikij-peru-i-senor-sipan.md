@@ -84,7 +84,7 @@ itinerary:
 
     После вечерней программы возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/lima%20pacific.png
+  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: Ночная Лима в Перу'
 - day: 3
   title: Лима - Куско
@@ -138,7 +138,7 @@ itinerary:
   images:
   - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: 'на фото: Куско в Перу'
-  - src: https://brasiltours.ru/image/image-01-large.jpg
+  - src: "/media/tours/ves-mnogolikij-peru-i-senor-sipan/itinerary-4-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: Мачу Пикчу в Перу'
 - day: 5
   title: Священная долина
@@ -335,7 +335,7 @@ itinerary:
 
     Размещение в отеле **Costa del Sol 4*** или гостинице той же категории.
   images:
-  - src: https://brasiltours.ru/image/lima%20pacific.png
+  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: Ночная Лима в Перу'
   - src: https://brasiltours.ru/image/Trujilo.jpg
     alt: 'на фото: город Трухильо  в Перу'

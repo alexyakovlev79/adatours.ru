@@ -89,7 +89,7 @@ itinerary:
   images:
   - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: Куско
-  - src: https://brasiltours.ru/image/lima%20pacific.png
+  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Лима
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
@@ -242,7 +242,7 @@ itinerary:
 
     Прибытие в Арекипу и размещение в гостинице Conde de Lemos Inn 3*. Свободное время для знакомства с городом.
   images:
-  - src: https://brasiltours.ru/image/a-Arequipa.png
+  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-3-src-enhanced-20261007.webp"
     alt: Арекипа
 - day: 10
   title: Арекипа - Наска
@@ -268,7 +268,7 @@ itinerary:
 
     По прибытии встреча на станции и трансфер в гостиницу Alegria 3* или отель той же категории.
   images:
-  - src: https://brasiltours.ru/image/Nazca.png
+  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Линии Наска
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp"
     alt: Арекипа
@@ -296,9 +296,9 @@ itinerary:
 
     По прибытии размещение в гостинице Residencial Los Frayles 3*. Свободное время.
   images:
-  - src: https://brasiltours.ru/image/paracas-peru..png
+  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Паракас
-  - src: https://brasiltours.ru/image/Nazca.png
+  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Линии Наска
 - day: 12
   title: Паракас - Лима
@@ -320,7 +320,7 @@ itinerary:
   images:
   - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
     alt: Лима
-  - src: https://brasiltours.ru/image/paracas2.png
+  - src: "/media/excursions/ballestas-islands-tour/gallery-0-src-enhanced-20261007.webp"
     alt: Паракас
 - day: 13
   title: Лима
@@ -364,7 +364,7 @@ priceFrom: 3174
 currency: USD
 priceNote: $3174
 hero:
-  src: https://brasiltours.ru/image/paracas1.png
+  src: "/media/excursions/ballestas-islands-tour/gallery-2-src-enhanced-20261007.webp"
   alt: 'Перу: Иcтория Великой Империи   и праздник Святой  Канделярии'
 routeCountries:
 - country_peru

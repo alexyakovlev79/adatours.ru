@@ -73,7 +73,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/peru/lima-park-of-love.png
     alt: Лима
-  - src: https://brasiltours.ru/image/cuzco.png
+  - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Куско
 - day: 3
   title: Куско - Мачу-Пикчу - Куско
@@ -91,7 +91,7 @@ itinerary:
 
     **Питание:** обед включен.
   images:
-  - src: https://brasiltours.ru/image/cuzco.png
+  - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Куско
 - day: 4
   title: Священная долина инков
@@ -131,9 +131,9 @@ itinerary:
 
     Пуно расположен на высоте более 3800 м на берегу озера Титикака. Главная роль города в маршруте - отправная точка к плавучим островам на перуанской стороне озера.
   images:
-  - src: https://brasiltours.ru/image/Puno.jpg
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
     alt: Пуно
-  - src: https://brasiltours.ru/image/cuzco.png
+  - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Куско
 - day: 6
   title: Пуно - озеро Титикака - Копакабана - Ла-Пас
@@ -152,7 +152,7 @@ itinerary:
   images:
   - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
     alt: Ла Пас
-  - src: https://brasiltours.ru/image/Puno.jpg
+  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
     alt: Пуно
 - day: 7
   title: Ла-Пас

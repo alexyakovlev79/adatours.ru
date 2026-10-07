@@ -20,11 +20,11 @@ hero:
   src: /media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp
   alt: "на фото: Линии Наска в Перу"
 gallery:
-  - src: "https://brasiltours.ru/image/paracas2.png"
+  - src: "/media/excursions/ballestas-islands-tour/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: Острова Бальестас (Islas Ballestas) в Перу"
   - src: "https://brasiltours.ru/image/paracas%20peru.png"
     alt: "на фото: Острова Бальестас (Islas Ballestas) в Перу"
-  - src: "https://brasiltours.ru/image/paracas1.png"
+  - src: "/media/excursions/ballestas-islands-tour/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: Острова Бальестас (Islas Ballestas) в Перу"
   - src: "https://brasiltours.ru/image/naska%20peru.png"
     alt: "на фото: Линии Наска в Перу"
@@ -67,4 +67,5 @@ themes: ["theme_wildlife","theme_culture"]
 | 2 участника | $855 на человека |
 | 3 участника | $733 на человека |
 | 4 участника | $672 на человека |
+
 

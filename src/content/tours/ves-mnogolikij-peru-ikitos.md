@@ -218,7 +218,7 @@ itinerary:
 
     После экскурсии возвращение в Пуно. Ночь в гостинице 3*.
   images:
-  - src: https://brasiltours.ru/image/titikaka.png
+  - src: "/media/tours/ves-mnogolikij-peru-ikitos/itinerary-7-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: озеро Титикака в Перу'
 - day: 8
   title: Пуно - Колка

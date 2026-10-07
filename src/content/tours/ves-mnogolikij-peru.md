@@ -253,7 +253,7 @@ itinerary:
 
     В назначенное время трансфер в аэропорт и перелет в Лиму. По прибытии встреча, трансфер и размещение в гостинице.
   images:
-  - src: https://brasiltours.ru/image/lima%20pacific.png
+  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: город Лима, столица Перу'
   - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3-enhanced-20261001.webp
     alt: 'на фото: Белый город Арекипа в Перу'

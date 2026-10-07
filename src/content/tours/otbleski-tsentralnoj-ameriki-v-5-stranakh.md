@@ -90,7 +90,7 @@ itinerary:
     \ начинается примерно с 1900 м и продолжается до отметки около 2300 м. После спуска трансфер к озеру Атитлан.\n\n**Ночь:**\
     \ Villa Santa Catarina.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan1.png
+  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: озеро Атитлан в Гватемале'
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: город Антигуа в Гватемале'
@@ -113,7 +113,7 @@ itinerary:
     \ увидеть городских старейшин в традиционной одежде. После экскурсии возвращение к Атитлану.\n\n**Ночь:** Villa Santa\
     \ Catarina.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan1.png
+  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: озеро Атитлан в Гватемале'
 - day: 5
   title: Чичикастенанго - Гватемала-Сити
@@ -163,7 +163,7 @@ itinerary:
     \ только по воде. Культура гарифуна здесь сочетает африканские, карибские и европейские элементы.\n\n**Ночь:** Villa Caribe.\
     \  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Livingston.png
+  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Ливингстон в Гватемале'
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: город Флорес'
@@ -191,7 +191,7 @@ itinerary:
     \ периода. Каждая из ее 63 ступеней украшена письменами, а по сторонам расположены балюстрады с изображениями змей и птиц.\n\
     \nПосле осмотра комплекса переезд в Сан-Сальвадор.\n\n**Ночь:** Barceló San Salvador.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/San%20Salvador.png
+  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Сан-Сальвадор - столица Сальвадора'
   - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: пирамиды и руины Копана в Гватемале'
@@ -207,7 +207,7 @@ itinerary:
     \ свидетельства жизни майя и то, как извержения одновременно разрушали и сохраняли следы древней культуры.\n\n**Ночь:**\
     \ Barceló San Salvador.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/San%20Salvador.png
+  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Сан-Сальвадор - столица Сальвадора'
 - day: 11
   title: Сан-Сальвадор - Ла-Уньон - Леон - Манагуа
@@ -222,7 +222,7 @@ itinerary:
     \ музей Ортиса Гурдиана и увидите революционные фрески.\n\nПосле экскурсии переезд в Манагуа.\n\n**Ночь:** Real Intercontinental\
     \ Metrocento Managua.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/San%20Salvador.png
+  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Сан-Сальвадор - столица Сальвадора'
   - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-1-src-enhanced-20261007.webp
     alt: 'На фото: столица Никарагуа город Манагуа'
@@ -277,7 +277,7 @@ itinerary:
     Далее поездка на лодке через озеро Ареналь. В районе Монтеверде также живет сельское сообщество квакеров и тико.\n\n**Ночь:**\
     \ Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-right.jpg
+  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-15-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: вулкан Ареналь в Коста-Рике'
 - day: 17
   title: Ареналь - заповедник Каньо-Негро
@@ -289,7 +289,7 @@ itinerary:
     \ комфортабельном судне. Основная часть экскурсии посвящена наблюдению за природой с воды.\n\n**Ночь:** Arenal Paraíso\
     \ Resort & Spa.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-right.jpg
+  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-15-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: вулкан Ареналь в Коста-Рике'
 - day: 18
   title: Ареналь - вулкан Поас - Ла-Пас - Сан-Хосе
@@ -305,7 +305,7 @@ itinerary:
     \ галерею колибри, серпентарий, дом птиц, сад бабочек и экспозицию лягушек. После экскурсии трансфер в Сан-Хосе.\n\n**Ночь:**\
     \ Barceló San Jose Palacio.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-right.jpg
+  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-15-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: вулкан Ареналь в Коста-Рике'
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
@@ -345,7 +345,7 @@ priceFrom: 10780
 currency: USD
 priceNote: $10780
 hero:
-  src: https://brasiltours.ru/image/countries/gonduras/honduras.jpg
+  src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/hero-src-enhanced-20261007.webp"
   alt: 'На фото: Антигуа в Гватемале'
 routeCountries:
 - country_guatemala

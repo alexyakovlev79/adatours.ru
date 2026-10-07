@@ -79,7 +79,7 @@ itinerary:
 
     **Обед:** в стоимость экскурсии не входит. Ресторан можно выбрать по рекомендации гида.
   images:
-  - src: https://brasiltours.ru/image/panama%20chagres%20national%20park.png
+  - src: "/media/tours/panama-2024/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Национальный парк Чагрес
 - day: 4
   title: Обзорная экскурсия по Панама-Сити

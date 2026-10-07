@@ -51,7 +51,7 @@ itinerary:
 
     После экскурсии трансфер в отель. Ночь в Панаме.
   images:
-  - src: https://brasiltours.ru/image/Panama%20City.png
+  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
   - src: /media/tours/luchshee-v-paname/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Панамский канал
@@ -66,7 +66,7 @@ itinerary:
 
     Эмбера известны резьбой по дереву и ремеслами. В деревне можно купить изделия из красного дерева коко-боло, небольшие скульптуры из орехов и кости, плетеные корзины из листьев пальмы чунга. После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/panama%20chagres%20national%20park.png
+  - src: "/media/tours/panama-2024/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Национальный парк Чагрес
 - day: 4
   title: Архипелаг Сан-Блас
@@ -196,7 +196,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Panam%C3%A1-y-Bocas-del-Toro.png
     alt: Бокас-дель-Торо
-  - src: https://brasiltours.ru/image/Panama%20City.png
+  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
 - day: 16
   title: Панама-Сити

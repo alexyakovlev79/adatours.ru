@@ -40,7 +40,7 @@ itinerary:
 
     Размещение в выбранном отеле. Остаток дня свободный.
   images:
-  - src: https://brasiltours.ru/image/Panama%20City.png
+  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
 - day: 2
   title: Большая обзорная экскурсия по Панама-Сити
@@ -63,7 +63,7 @@ itinerary:
 
     Завершит экскурсию Коса Амадор. Раньше на этом месте находились 3 отдельных острова: Наос, Перико и Фламенко.
   images:
-  - src: https://brasiltours.ru/image/Panama%20City.png
+  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
 - day: 3
   title: Национальный парк Чагрес и деревня индейцев Эмбера
@@ -82,7 +82,7 @@ itinerary:
 
     Для этой экскурсии нужна спортивная обувь на шнуровке и с задником, которую можно намочить. В зависимости от сезона к водопаду приходится идти по тропе в джунглях и переходить речку вброд. Вода может доходить до колена.
   images:
-  - src: https://brasiltours.ru/image/panama%20chagres%20national%20park.png
+  - src: "/media/tours/panama-2024/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Национальный парк Чагрес
 - day: 4
   title: Остров Табога
@@ -105,7 +105,7 @@ itinerary:
 
     После отдыха возвращение в Панама-Сити на пароме и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Panama%20City.png
+  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
 - day: 5
   title: Собераниа, озеро Гатун, крепость Сан-Лоренсо и шлюзы Агуа-Клара
@@ -154,7 +154,7 @@ itinerary:
     \nОбед в этот день не включен. Гид порекомендует рестораны на месте. Канопи-тур оплачивается дополнительно.\n\nПо окончании\
     \ экскурсии - трансфер в отель."
   images:
-  - src: https://brasiltours.ru/image/Panama%20City.png
+  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
 - excursionRef: excursion_panama_chorro_del_macho_canopy
   places: []
@@ -167,7 +167,7 @@ itinerary:
 
     Свободное время. Затем трансфер из отеля в аэропорт.
   images:
-  - src: https://brasiltours.ru/image/Panama%20City.png
+  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
 included:
 - Трансфер аэропорт - отель - аэропорт.
@@ -197,7 +197,7 @@ priceFrom: 1648
 currency: USD
 priceNote: $1648
 hero:
-  src: https://brasiltours.ru/image/%D1%81%D1%82%D0%B0%D1%801.png
+  src: "/media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/hero-src-enhanced-20261007.webp"
   alt: 'Вся Панама: Национальные парки, острова и долины'
 routeCountries:
 - country_panama

@@ -41,7 +41,7 @@ itinerary:
 
     Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/panama%20coast.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Тихоокеанское побережье Панама- Сити'
 - day: 2
   title: Панама-Сити и Панамский канал
@@ -92,7 +92,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/panama%20coast.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Тихоокеанское побережье Панама- Сити'
 - day: 5
   title: 'Бокете: канопи и кофейная плантация'
@@ -218,7 +218,7 @@ priceFrom: 2461
 currency: USD
 priceNote: $2461.
 hero:
-  src: https://brasiltours.ru/image/new%20panama.jpg
+  src: "/media/tours/luchshee-v-paname/hero-src-enhanced-20261007.webp"
   alt: на фото:Панама - Сити
 routeCountries:
 - country_panama

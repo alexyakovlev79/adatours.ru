@@ -133,7 +133,7 @@ itinerary:
 
       Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/new/quito12.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/hero-src-enhanced-20261007.webp"
     alt: Кито
 - day: 3
   title: Кито - Килотоа - Баньос
@@ -557,7 +557,7 @@ priceFrom: 3965
 currency: USD
 priceNote: $3965
 hero:
-  src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
   alt: 'Лучшее в Эквадоре: Гарантированные заезды'
 routeCountries:
 - country_ecuador

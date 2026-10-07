@@ -42,7 +42,7 @@ itinerary:
     \ В день прилета программа оставляет время на размещение и отдых после перелета.\n\n**Размещение:** Plaza Grande 5*, Royal\
     \ Suite.  \n**Питание:** не указано."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Кито - столица Эквадора'
 - day: 2
   title: Кито и линия экватора
@@ -131,7 +131,7 @@ itinerary:
     \ дней в Кито, Котопакси и Машпи маршрут переходит к островной части. Следующим утром предстоит перелет на Галапагосы.\n\
     \n**Размещение:** Plaza Grande 5*, Royal Suite.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Кито - столица Эквадора'
 - day: 6
   title: Перелет на Галапагосские острова и Санта-Крус

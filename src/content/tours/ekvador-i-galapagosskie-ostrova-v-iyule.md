@@ -37,7 +37,7 @@ itinerary:
   - Кито & вулкан Котопахи
   text: Прибытие в столицу Эквадора. В аэропорту вас встретит гид, после чего состоится трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Архитектура Кито, Эквадор'
 - day: 2
   title: Кито и линия экватора
@@ -106,7 +106,7 @@ itinerary:
     \ посещения Килотоа возвращение в Кито и свободный вечер.\n\n**Остановки:** плантация роз, смотровые площадки, галерея\
     \ индейской живописи, кратерное озеро Килотоа.  \n**Размещение:** Ikala 3*.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Архитектура Кито, Эквадор'
 - day: 5
   title: Перелет на Галапагосские острова и Санта-Крус

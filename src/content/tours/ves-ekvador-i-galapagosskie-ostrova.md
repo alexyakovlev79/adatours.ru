@@ -133,7 +133,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/new/mindo.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Мindo
 - day: 4
   title: Кратерное озеро Килотоа

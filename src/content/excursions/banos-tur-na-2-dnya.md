@@ -23,7 +23,7 @@ gallery:
     alt: "на фото: город-курорт Баньос. Эквадор (Восточные Анды)"
   - src: "https://brasiltours.ru/image/Baos.png"
     alt: "на фото: город-курорт Баньос. Эквадор (Восточные Анды)"
-  - src: "https://brasiltours.ru/image/countries/equador/banos1.jpg"
+  - src: "/media/excursions/banos-tur-na-2-dnya/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: город-курорт Баньос. Эквадор (Восточные Анды)"
 route:
   - "Кито"

@@ -55,7 +55,7 @@ itinerary:
     \ возможность привыкнуть к высоте перед насыщенной экскурсионной программой.\n\n**Размещение:** Plaza Grande 5*, Royal\
     \ Suite.  \n**Питание:** не указано."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Площадь города Кито'
 - day: 2
   title: Кито и линия экватора
@@ -100,7 +100,7 @@ itinerary:
     \ кролик. Во время экскурсии предусмотрена прогулка вдоль соснового леса и посещение озера.\n\nПосле программы переезд\
     \ и свободный вечер.\n\n**Размещение:** La Cienega 4*.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Площадь города Кито'
   - src: https://brasiltours.ru/image/countries/equador/ecuador-right.jpg
     alt: 'На фото: Вулкан Котопахи, Эквадор'
@@ -158,7 +158,7 @@ itinerary:
     \ входят шкаф, сейф, ванная комната, фен, стол, стулья, мебель, халаты и тапочки.\n\n**Размещение:** Mashpi Lodge, Wayra\
     \ Room.  \n**Питание:** завтрак, обед, ужин."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Площадь города Кито'
 - day: 7
   title: Машпи

@@ -55,7 +55,7 @@ itinerary:
     \ высоте 2800 м над уровнем моря, поэтому первый день лучше провести спокойно и дать организму привыкнуть к высоте перед\
     \ активной частью путешествия.\n\n**Размещение:** Finlandia 4*.  \n**Трансфер:** около 1 часа.  \n**Заселение:** с 14:00."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито
 - day: 2
   title: Кито - Миндо - Кито
@@ -74,9 +74,9 @@ itinerary:
     \ Сплав проходит с профессиональным гидом.\n\nВечером возвращение в Кито и свободное время.\n\n**Размещение:** Finlandia\
     \ 4*.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-right.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Кито
-  - src: https://brasiltours.ru/image/countries/equador/new/mindo.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Мindo
 - day: 3
   title: Кито, Телеферико и Руко-Пичинча
@@ -177,7 +177,7 @@ itinerary:
     \ водопадами и традиционной melcocha - тягучей карамелью из сахарного тростника, которую здесь готовят вручную. В окрестностях\
     \ доступны пешие и конные прогулки, велосипеды и квадроциклы.\n\n**Размещение:** Sangay 4*.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/banos1.jpg
+  - src: "/media/excursions/banos-tur-na-2-dnya/gallery-2-src-enhanced-20261007.webp"
     alt: Баньос
 - day: 11
   title: Баньос и водопады
@@ -193,7 +193,7 @@ itinerary:
     \ городские термальные источники, которые можно посетить самостоятельно.\n\n**Размещение:** Sangay 4*.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/banos1.jpg
+  - src: "/media/excursions/banos-tur-na-2-dnya/gallery-2-src-enhanced-20261007.webp"
     alt: Баньос
 - day: 12
   title: Баньос - Кито
@@ -204,9 +204,9 @@ itinerary:
     \ даст гид. Затем возвращение в Кито, дорога занимает около 4 часов. Вечер свободный.\n\n**Размещение:** Finlandia 4*.\
     \  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито
-  - src: https://brasiltours.ru/image/countries/equador/banos1.jpg
+  - src: "/media/excursions/banos-tur-na-2-dnya/gallery-2-src-enhanced-20261007.webp"
     alt: Баньос
 - day: 13
   title: Кито и вылет
@@ -217,7 +217,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-right.jpg
+  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Кито
 included:
 - Индивидуальные трансферы и экскурсии по программе, кроме группового рафтинга.
@@ -245,7 +245,7 @@ priceFrom: 5805
 currency: USD
 priceNote: $5805
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/quito12.jpg
+  src: "/media/tours/aktivnyj-ekvador-i-trekking/hero-src-enhanced-20261007.webp"
   alt: Активный Эквадор и Треккинг
 routeCountries:
 - country_ecuador

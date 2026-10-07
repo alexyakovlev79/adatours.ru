@@ -23,7 +23,7 @@ hero:
 gallery:
   - src: https://brasiltours.ru/image/cusco%202.png
     alt: Куско, Перу
-  - src: https://brasiltours.ru/image/machu%20pichu3.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp"
     alt: Мачу-Пикчу, Перу
   - src: https://brasiltours.ru/image/peru.png
     alt: Жительница Перу
@@ -56,3 +56,4 @@ themes: ["theme_culture"]
 В Мачу-Пикчу вы увидите террасы, лестницы, церемониальные пространства и жилые районы инкского города. Каменные сооружения расположены среди горных склонов и высокогорной растительности.
 
 В назначенное время начинается обратная дорога: возвращение на поезде и трансфер в Куско.
+

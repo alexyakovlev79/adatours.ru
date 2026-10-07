@@ -61,7 +61,7 @@ itinerary:
 
     Для этого маршрута понадобится одежда для очень разных условий. В Лиме пригодятся легкие вещи и защита от солнца. В Амазонии влажно, одежда быстрее намокает, поэтому нужен запас сменных вещей и закрытая одежда на вечер. Для воды и джунглей удобна легкая обувь с надежной фиксацией. В Куско и Священной долине прохладнее, особенно утром и вечером, поэтому понадобится теплый слой.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima/aarom-ore-yrqyn1gb80k-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лима - столица Перу, вид с берега
 - day: 2
   title: 'Лима: Парк Любви, Уака Пукльяна, Санто-Доминго и музей Ларко'
@@ -82,7 +82,7 @@ itinerary:
 
     После ужина возвращение в отель, дорога занимает около 5 минут пешком. Ночь в Лиме.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima/eduardo-garcia-crhwrtxodcw-unsplash.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Колониальная архитектура старых зданий Лимы столицы Перу
 - day: 3
   title: Икитос и круиз Aria Amazon по Амазонке
@@ -99,7 +99,7 @@ itinerary:
 
     День 4 посвящен исследованию джунглей и наблюдению за дикой природой. В день 5 предусмотрены экскурсии на каяках и рыбалка на пираний.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/amazon/amazon5.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Индеец в джунглях Амазонии, Икитос Перу
 - day: 4
   title: Икитос и круиз Aria Amazon по Амазонке
@@ -116,7 +116,7 @@ itinerary:
 
     День 4 посвящен исследованию джунглей и наблюдению за дикой природой. В день 5 предусмотрены экскурсии на каяках и рыбалка на пираний.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/amazon/aria-amazon-4.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Круиз по Амазонке в Перу (Икитос) с Aqua Expedition
 - day: 5
   title: Икитос и круиз Aria Amazon по Амазонке
@@ -133,7 +133,7 @@ itinerary:
 
     День 4 посвящен исследованию джунглей и наблюдению за дикой природой. В день 5 предусмотрены экскурсии на каяках и рыбалка на пираний.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/amazon/amazon5.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Индеец в джунглях Амазонии, Икитос Перу
 - day: 6
   title: Возвращение в Икитос, перелет в Куско и Explora Sacred Valley
@@ -149,9 +149,9 @@ itinerary:
 
     Священная долина известна мягким климатом, древними террасами и археологическими памятниками инков. Здесь проходит акклиматизация перед дальнейшими поездками по Андам.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/cusco-3.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Город Куско, Перу - древняя столица империи инков
-  - src: https://brasiltours.ru/image/countries/peru/amazon/aria-amazon-4.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Круиз по Амазонке в Перу (Икитос) с Aqua Expedition
 - day: 7
   title: 'Священная долина: экскурсии Explora на выбор'
@@ -178,7 +178,7 @@ itinerary:
 
     В 20:36 трансфер в Куско, в Belmond Palacio Nazarenas. Переезд на Volkswagen Crafter занимает около 1,5 часа. Размещение в номере City View Studio Suite.
   images:
-  - src: https://brasiltours.ru/image/machu%20pichu3.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp"
     alt: Мачу Пикчу в Перу - затерянный город инков
 - day: 10
   title: Вертолет над Виникункой
@@ -193,7 +193,7 @@ itinerary:
 
     После полета возвращение в Куско. Размещение в Belmond Palacio Nazarenas, City View Studio Suite. Ночь в городе.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/cusco-3.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Город Куско, Перу - древняя столица империи инков
 - day: 11
   title: 'Куско: Саксайуаман, Кенко, Кориканча и собор'
@@ -212,7 +212,7 @@ itinerary:
 
     В 19:00 забронирован ужин в ресторане TUPAY. Ужин не включен. Ночь в Куско.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/cusco-3.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Город Куско, Перу - древняя столица империи инков
 - day: 12
   title: Перелет в Пуно и Titilaka на озере Титикака
@@ -286,7 +286,7 @@ itinerary:
 
     По прилете встреча и переезд в Belmond Miraflores Park. Размещение в Ocean View Club Junior Suite. Ночь в Лиме.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima/aarom-ore-yrqyn1gb80k-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лима - столица Перу, вид с берега
 - day: 17
   title: Линии Наски и острова Бальестас на частном самолете и яхте
@@ -313,7 +313,7 @@ itinerary:
 
     К этому моменту за 18 дней маршрут успевает пройти через Амазонию, Анды, озеро Титикака, солончак Уюни и пустыню Наска. Это путешествие построено на резкой смене природных зон и форматов: круиз сменяется горными дорогами, затем поездом к Мачу-Пикчу, полетами над Виникункой и Наской, высокогорным озером и белой равниной Уюни.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima/eduardo-garcia-crhwrtxodcw-unsplash.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Колониальная архитектура старых зданий Лимы столицы Перу
 included:
 - Размещение.
@@ -431,3 +431,4 @@ themes: ["theme_cruises","theme_gastronomy_wine"]
 - Побережье Лимы.
 - Круиз Aqua Expeditions по Амазонке.
 - Жители Амазонии.
+

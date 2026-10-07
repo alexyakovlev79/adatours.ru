@@ -31,7 +31,7 @@ itinerary:
 
     После заселения свободное время.
   images:
-  - src: https://brasiltours.ru/image/panama%20city2.png
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
     alt: Панама-Сити
 - day: 2
   title: Долина Антон
@@ -53,7 +53,7 @@ itinerary:
     \ также посетите частный зоосад и ботанический сад «Эль Нисперо».\n\n**Обед:** в стоимость экскурсии не входит. Гид подскажет\
     \ рестораны на месте.  \n**Канопи-тур:** оплачивается дополнительно."
   images:
-  - src: https://brasiltours.ru/image/panama%20city2.png
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
     alt: Панама-Сити
 - excursionRef: excursion_panama_chorro_del_macho_canopy
   places: []
@@ -108,7 +108,7 @@ itinerary:
 
     После окончания экскурсии трансфер в аэропорт и вылет далее по маршруту.
   images:
-  - src: https://brasiltours.ru/image/panama%20city2.png
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
     alt: Панама-Сити
 included:
 - Налоги.

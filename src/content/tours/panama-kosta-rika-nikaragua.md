@@ -93,9 +93,9 @@ itinerary:
     \ Вечером запланирован круиз на закате. Во время прогулки на яхте можно отдыхать, пробовать тропические фрукты, слушать\
     \ живую музыку и смотреть на побережье с воды.\n\nНочь в отеле Parador Resort & Spa.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Boquete.png
+  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Бокете
-  - src: https://brasiltours.ru/image/Manuel%20Antnio.png
+  - src: /media/tours/panama-kosta-rika-nikaragua/itinerary-5-images-1-src-enhanced-20261007.webp
     alt: Мануэль Антонио
 - day: 7
   title: Национальный парк Мануэль-Антонио
@@ -108,7 +108,7 @@ itinerary:
     \ петуха. В парке также живет множество насекомых, змей и ящериц.\n\nПосле прогулки можно провести время на пляжах Мануэль-Антонио,\
     \ позагорать или пройтись вдоль берега.\n\nНочь в отеле Parador Resort & Spa.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Manuel%20Antnio.png
+  - src: /media/tours/panama-kosta-rika-nikaragua/itinerary-5-images-1-src-enhanced-20261007.webp
     alt: Мануэль Антонио
 - day: 8
   title: Мануэль-Антонио - Монтеверде
@@ -120,7 +120,7 @@ itinerary:
     \ от лодки, игуан и множество птиц. Здесь можно увидеть до 50 видов птиц, среди которых попугаи ара.\n\nНочь в отеле El\
     \ Establo Mountain Resort.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/Manuel%20Antnio.png
+  - src: /media/tours/panama-kosta-rika-nikaragua/itinerary-5-images-1-src-enhanced-20261007.webp
     alt: Мануэль Антонио
 - day: 9
   title: Монтеверде - Ареналь
@@ -149,7 +149,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/nicaragua%20granada1.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-8-images-0-src-enhanced-20261007.webp
     alt: Гранада
 - day: 12
   title: Гранада - Манагуа - Масая
@@ -167,7 +167,7 @@ itinerary:
     \ парк страны. Здесь можно увидеть вулкан Масая и его активный кратер. Завершает день посещение ремесленного рынка Масая.\n\
     \nВозвращение в Гранаду. Ночь в отеле La Gran Francia.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/nicaragua%20granada1.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-8-images-0-src-enhanced-20261007.webp
     alt: Гранада
 - day: 13
   title: Гранада - остров Зопанго
@@ -180,7 +180,7 @@ itinerary:
     \ наблюдать за птицами или отдыхать в гамаке с видом на вулкан.\n\nНа острове запланирован обед на гриле из свежей местной\
     \ рыбы. После обеда возвращение в порт и трансфер в отель.\n\nНочь в отеле La Gran Francia.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/nicaragua%20granada1.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-8-images-0-src-enhanced-20261007.webp
     alt: Гранада
 included:
 - Русскоговорящий гид.

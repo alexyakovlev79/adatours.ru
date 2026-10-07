@@ -198,7 +198,7 @@ itinerary:
 
     Размещение в бутик-отеле Hotel Mukul Nicaragua.
   images:
-  - src: https://brasiltours.ru/image/Mangua.png
+  - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-1-src-enhanced-20261007.webp
     alt: 'на фото: Манагуа, Никарагуа'
 - day: 8
   title: Гранада, озеро Никарагуа, вулкан Масая и лагуна Апойо
@@ -226,7 +226,7 @@ itinerary:
 
     У воды можно отдохнуть, поплавать, покататься на каяке или заняться серфингом.
   images:
-  - src: https://brasiltours.ru/image/Granada.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Гранада, Никарагуа'
 - day: 9
   title: Отдых у лагуны-де-Апойо
@@ -285,7 +285,7 @@ priceFrom: 17500
 currency: USD
 priceNote: $17500
 hero:
-  src: https://brasiltours.ru/image/countries/nikaragua/2.jpg
+  src: /media/tours/vip-kosta-rika-nikaragua/hero-src-enhanced-20261007.webp
   alt: 'На фото: вулкан в Никарагуа'
 routeCountries:
 - country_costa_rica

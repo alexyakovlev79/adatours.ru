@@ -107,7 +107,7 @@ itinerary:
 
     После экскурсии трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Boquete.png
+  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Бокет'
 - day: 6
   title: Вулкан Бару
@@ -139,7 +139,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Bocas%20del%20Toro.png
     alt: 'на фото: Бокас -дель-Торо'
-  - src: https://brasiltours.ru/image/Boquete.png
+  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Бокет'
 - day: 8
   title: Бокас-дель-Торо

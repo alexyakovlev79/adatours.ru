@@ -132,7 +132,7 @@ itinerary:
   - Бокете
   text: Завтрак в отеле и трансфер в регион Бокете. По дороге предусмотрена экскурсия в дождевой лес.
   images:
-  - src: https://brasiltours.ru/image/Boquete.png
+  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Бокете
   - src: https://brasiltours.ru/image/boca-chica.jpg
     alt: Boca Chica
@@ -153,7 +153,7 @@ itinerary:
 
     В 13:00 поездка на кофейную плантацию с дегустацией кофе сорта Geisha, самого дорогого кофе, экспортируемого Панамой.
   images:
-  - src: https://brasiltours.ru/image/Boquete.png
+  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Бокете
 - day: 12
   title: Бокете - Бокас-дель-Торо
@@ -169,7 +169,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Bocas%20del%20Toro.png
     alt: Бокас-дель-Торо
-  - src: https://brasiltours.ru/image/Boquete.png
+  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Бокете
 - day: 13
   title: Бокас-дель-Торо

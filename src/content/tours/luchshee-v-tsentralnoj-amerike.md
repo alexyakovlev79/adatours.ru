@@ -236,7 +236,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/t/i/tikal-11_1_2row_sb.jpg
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Тикаль
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
@@ -363,7 +363,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/nicaragua%20leon1.png
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Леон
 - day: 12
   title: Managua - Masaya - Granada
@@ -398,7 +398,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/Granada.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Гранада
 - day: 13
   title: Granada - Costa Rica - Arenal
@@ -420,7 +420,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/granada.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-7-images-0-src-enhanced-20261007.webp
     alt: Гранада
 - day: 14
   title: Arenal - Caño Negro
@@ -522,7 +522,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/Boquete.png
+  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Лучшее в Центральной Америке
 - day: 19
   title: Вулкан Baru
@@ -578,9 +578,9 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/panama%20city2.png
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
     alt: Панама-Сити
-  - src: https://brasiltours.ru/image/Boquete.png
+  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Лучшее в Центральной Америке
 - day: 21
   title: Национальный парк Chagres - Embera - Тихоокеанская Ривьера
@@ -647,7 +647,7 @@ itinerary:
 
     На этом большое путешествие по Центральной Америке завершается.
   images:
-  - src: https://brasiltours.ru/image/panama%20city2.png
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
     alt: Панама-Сити
 included:
 - Русскоговорящий гид.
@@ -677,7 +677,7 @@ priceFrom: 13655
 currency: USD
 priceNote: $13655
 hero:
-  src: https://brasiltours.ru/image/Boquete.png
+  src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
   alt: Лучшее в Центральной Америке
 routeCountries:
 - country_guatemala

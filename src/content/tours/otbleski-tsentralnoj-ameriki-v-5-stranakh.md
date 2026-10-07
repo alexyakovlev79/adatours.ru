@@ -224,7 +224,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/San%20Salvador.png
     alt: 'На фото: Сан-Сальвадор - столица Сальвадора'
-  - src: https://brasiltours.ru/image/Mangua.png
+  - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-1-src-enhanced-20261007.webp
     alt: 'На фото: столица Никарагуа город Манагуа'
 - day: 12
   title: Манагуа - Масайя - Гранада
@@ -243,9 +243,9 @@ itinerary:
     \ монастырь Сан-Франциско, музей керамики, церковь Ла-Мерсед и улицу Ла-Кальсада.\n\n**Ночь:** La Gran Francia.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: https://brasiltours.ru/image/Granada.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: 'На фото: город Гранада в Никарагуа'
-  - src: https://brasiltours.ru/image/Mangua.png
+  - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-1-src-enhanced-20261007.webp
     alt: 'На фото: столица Никарагуа город Манагуа'
 - day: 13
   title: Гранада - Тихоокеанское побережье Коста-Рики
@@ -254,7 +254,7 @@ itinerary:
   text: "Переезд к границе Коста-Рики, затем на тихоокеанское побережье. После дороги время для отдыха на пляже.\n\n**Ночь:**\
     \ Wyndham Tamarindo.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Granada.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: 'На фото: город Гранада в Никарагуа'
 - day: 14
   title: Тихоокеанское побережье

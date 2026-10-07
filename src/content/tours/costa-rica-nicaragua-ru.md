@@ -119,7 +119,7 @@ itinerary:
     \ индейцев майя, находящуюся на грани исчезновения.\n\nПосле экскурсий переезд в Гранаду.\n\n**Ночь:** La Gran Francia.\
     \  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Granada.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Гранада
 - day: 8
   title: Гранада - Масая
@@ -134,7 +134,7 @@ itinerary:
     \ активный кратер.\n\nПосле вулкана посещение ремесленного рынка Масая.\n\n**Ночь:** La Gran Francia.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: https://brasiltours.ru/image/granada.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-7-images-0-src-enhanced-20261007.webp
     alt: Гранада
 - day: 9
   title: Гранада - остров Зопанго
@@ -147,7 +147,7 @@ itinerary:
     \ за птицами или отдыхать в гамаке с видом на вулкан.\n\nНа обед подают свежеприготовленную местную рыбу на гриле.\n\n\
     После обеда возвращение в отель.\n\n**Ночь:** La Gran Francia.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/nicaragua%20granada1.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-8-images-0-src-enhanced-20261007.webp
     alt: Гранада
 - day: 10
   title: Гранада - тихоокеанское побережье
@@ -156,7 +156,7 @@ itinerary:
   text: "Переезд к границе с Коста-Рикой, затем на тихоокеанское побережье.\n\nОтдых на пляже.\n\n**Ночь:** Wyndham Tamarindo.\
     \  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/Granada.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Гранада
 - day: 11
   title: Тихоокеанское побережье

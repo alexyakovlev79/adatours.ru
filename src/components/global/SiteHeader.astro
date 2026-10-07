@@ -1,30 +1,83 @@
 ---
+import { getCollection } from 'astro:content';
 import PrimaryCTA from './PrimaryCTA.astro';
 import SearchTrigger from './SearchTrigger.astro';
 import ContactActions from './ContactActions.astro';
-import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, MOBILE_NAV_LINKS, NAV_LINKS } from '../../lib/site';
+import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
+import { countryPath, themePath } from '../../lib/routes';
+import { isActiveEntity } from '../../lib/archive.mjs';
+import { buildCountryTourCounts, compareCountriesByPopularity } from '../../lib/country-popularity';
+import { buildInterestIndex } from '../../lib/interest-model.mjs';
 
 interface Props {
   theme?: 'light' | 'dark';
 }
 
+interface NavChild {
+  href: string;
+  label: string;
+}
+
 const { theme = 'light' } = Astro.props;
 const logoWhite = withBase('/brand/adatours-logo-white.svg');
 const logoBlack = withBase('/brand/adatours-logo-black.svg');
-const dmcChildLinks = DMC_NAV_LINKS.slice(1);
-const aboutChildLinks = ABOUT_NAV_LINKS.slice(1);
-const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
-  const children = link.href === '/dmc/'
-    ? dmcChildLinks
-    : link.href === '/about/'
-      ? aboutChildLinks
-      : [];
 
-  return children.length
-    ? [link, ...children.map((child) => ({ href: child.href, label: child.label, nested: true }))]
-    : [link];
-});
+const [countryEntries, tourEntries, themeEntries] = await Promise.all([
+  getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
+  getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
+  getCollection('themes', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
+]);
+
+const countryTourCounts = buildCountryTourCounts(tourEntries);
+const countryChildLinks: NavChild[] = countryEntries
+  .sort(compareCountriesByPopularity(countryTourCounts))
+  .map((country) => ({
+    href: countryPath(country.data),
+    label: country.data.name,
+  }));
+
+const interestChildLinks: NavChild[] = buildInterestIndex(themeEntries, tourEntries)
+  .map(({ entry }) => ({
+    href: themePath(entry.data),
+    label: entry.data.name,
+  }));
+
+const dmcChildLinks: NavChild[] = DMC_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
+const aboutChildLinks: NavChild[] = ABOUT_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
+
+const childLinksFor = (href: string): NavChild[] => {
+  if (href === '/country/') return countryChildLinks;
+  if (href === '/interests/') return interestChildLinks;
+  if (href === '/dmc/') return dmcChildLinks;
+  if (href === '/about/') return aboutChildLinks;
+  return [];
+};
+
+const groupIdFor = (href: string) => {
+  if (href === '/country/') return 'countries';
+  if (href === '/interests/') return 'interests';
+  if (href === '/dmc/') return 'dmc';
+  if (href === '/about/') return 'about';
+  return '';
+};
+
+const overviewLabelFor = (href: string, label: string) => {
+  if (href === '/country/') return 'Все страны';
+  if (href === '/interests/') return 'Все интересы';
+  if (href === '/dmc/') return 'DMC / B2B';
+  if (href === '/about/') return 'О компании';
+  return label;
+};
+
+const nestedGroups = NAV_LINKS
+  .map((link) => ({
+    ...link,
+    groupId: groupIdFor(link.href),
+    children: childLinksFor(link.href),
+    overviewLabel: overviewLabelFor(link.href, link.label),
+  }))
+  .filter((group) => group.children.length > 0);
 ---
 
 <header class:list={['site-header', `site-header--${theme}`]} data-site-header>
@@ -35,20 +88,27 @@ const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
     </a>
 
     <nav class="desktop-nav" aria-label="Основная навигация">
-      {NAV_LINKS.map((link) => (
-        link.href === '/dmc/' || link.href === '/about/' ? (
+      {NAV_LINKS.map((link) => {
+        const children = childLinksFor(link.href);
+        return children.length > 0 ? (
           <div class="desktop-nav__group">
             <a class="desktop-nav__parent" href={withBase(link.href)}>{link.label}</a>
-            <div class="desktop-nav__submenu" aria-label={link.label}>
-              {(link.href === '/dmc/' ? dmcChildLinks : aboutChildLinks).map((child) => (
+            <div
+              class:list={[
+                'desktop-nav__submenu',
+                { 'desktop-nav__submenu--wide': children.length > 8 },
+              ]}
+              aria-label={link.label}
+            >
+              {children.map((child) => (
                 <a href={withBase(child.href)}>{child.label}</a>
               ))}
             </div>
           </div>
         ) : (
           <a href={withBase(link.href)}>{link.label}</a>
-        )
-      ))}
+        );
+      })}
     </nav>
 
     <div class="desktop-cta">
@@ -75,14 +135,58 @@ const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
   </div>
 
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
-    <nav aria-label="Мобильная навигация">
-      {mobileNavItems.map((link) => (
-        <a class:list={{ 'mobile-menu__subitem': 'nested' in link && link.nested }} href={withBase(link.href)}>{link.label}</a>
+    <div class="mobile-menu__stage">
+      <section class="mobile-menu__panel mobile-menu__panel--main" data-mobile-panel="main">
+        <nav aria-label="Мобильная навигация">
+          {NAV_LINKS.map((link) => {
+            const children = childLinksFor(link.href);
+            const groupId = groupIdFor(link.href);
+
+            return children.length > 0 ? (
+              <button
+                class="mobile-menu__parent"
+                type="button"
+                aria-expanded="false"
+                aria-controls={`mobile-submenu-${groupId}`}
+                data-submenu-open={groupId}
+              >
+                <span>{link.label}</span>
+                <span class="mobile-menu__arrow" aria-hidden="true">›</span>
+              </button>
+            ) : (
+              <a href={withBase(link.href)}>{link.label}</a>
+            );
+          })}
+        </nav>
+
+        <div class="mobile-menu__contact">
+          <PrimaryCTA href="/contacts/" label="Оставить заявку" />
+          <ContactActions light />
+        </div>
+      </section>
+
+      {nestedGroups.map((group) => (
+        <section
+          class="mobile-menu__panel mobile-menu__panel--submenu"
+          id={`mobile-submenu-${group.groupId}`}
+          data-mobile-panel={group.groupId}
+          aria-hidden="true"
+        >
+          <button class="mobile-menu__back" type="button" data-submenu-back>
+            <span aria-hidden="true">‹</span>
+            Назад
+          </button>
+
+          <p class="mobile-menu__title">{group.label}</p>
+
+          <nav aria-label={group.label}>
+            <a class="mobile-menu__overview" href={withBase(group.href)}>{group.overviewLabel}</a>
+            {group.children.map((child) => (
+              <a href={withBase(child.href)}>{child.label}</a>
+            ))}
+          </nav>
+        </section>
       ))}
-    </nav>
-    <div class="mobile-menu__contact">
-      <PrimaryCTA href="/contacts/" label="Оставить заявку" />
-      <ContactActions light />
     </div>
   </div>
 </header>
@@ -103,16 +207,74 @@ const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
   }
 
   if (header && toggle instanceof HTMLButtonElement && menu instanceof HTMLElement) {
+    const mainPanel = menu.querySelector<HTMLElement>('[data-mobile-panel="main"]');
+    const submenuPanels = Array.from(menu.querySelectorAll<HTMLElement>('[data-mobile-panel]:not([data-mobile-panel="main"])'));
+    const submenuButtons = Array.from(menu.querySelectorAll<HTMLButtonElement>('[data-submenu-open]'));
+    const backButtons = Array.from(menu.querySelectorAll<HTMLButtonElement>('[data-submenu-back]'));
+    let activeSubmenu = '';
+    let submenuOpener: HTMLButtonElement | null = null;
+
+    const setSubmenu = (groupId = '') => {
+      activeSubmenu = groupId;
+      const hasSubmenu = Boolean(groupId);
+
+      if (mainPanel) {
+        mainPanel.classList.toggle('is-shifted', hasSubmenu);
+        mainPanel.setAttribute('aria-hidden', String(hasSubmenu));
+        mainPanel.inert = hasSubmenu;
+      }
+
+      submenuPanels.forEach((panel) => {
+        const isActive = panel.dataset.mobilePanel === groupId;
+        panel.classList.toggle('is-active', isActive);
+        panel.setAttribute('aria-hidden', String(!isActive));
+        panel.inert = !isActive;
+        if (isActive) panel.scrollTop = 0;
+      });
+
+      submenuButtons.forEach((button) => {
+        button.setAttribute('aria-expanded', String(button.dataset.submenuOpen === groupId));
+      });
+    };
+
+    submenuPanels.forEach((panel) => {
+      panel.inert = true;
+    });
+
     const setOpen = (open: boolean) => {
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
       menu.setAttribute('aria-hidden', String(!open));
       document.body.classList.toggle('menu-open', open);
       header.classList.toggle('is-open', open);
+
+      if (!open) {
+        setSubmenu('');
+        submenuOpener = null;
+      }
     };
 
     toggle.addEventListener('click', () => {
       setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    submenuButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const groupId = button.dataset.submenuOpen;
+        if (!groupId) return;
+        submenuOpener = button;
+        setSubmenu(groupId);
+        const panel = menu.querySelector<HTMLElement>(`[data-mobile-panel="${groupId}"]`);
+        requestAnimationFrame(() => panel?.querySelector<HTMLButtonElement>('[data-submenu-back]')?.focus());
+      });
+    });
+
+    backButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const opener = submenuOpener;
+        setSubmenu('');
+        requestAnimationFrame(() => opener?.focus());
+      });
     });
 
     menu.querySelectorAll('a').forEach((link) => {
@@ -122,7 +284,15 @@ const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
     window.addEventListener('ada:search-open', () => setOpen(false));
 
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') setOpen(false);
+      if (event.key !== 'Escape') return;
+
+      if (activeSubmenu) {
+        const opener = submenuOpener;
+        setSubmenu('');
+        requestAnimationFrame(() => opener?.focus());
+      } else {
+        setOpen(false);
+      }
     });
   }
 </script>
@@ -230,6 +400,14 @@ const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
     opacity: 0.95;
   }
 
+  .desktop-nav__parent::after {
+    content: '⌄';
+    display: inline-block;
+    margin-left: 5px;
+    font-size: .72em;
+    transform: translateY(-1px);
+  }
+
   .desktop-nav > a:hover,
   .desktop-nav__parent:hover {
     opacity: 0.62;
@@ -248,7 +426,10 @@ const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
     left: 50%;
     display: grid;
     min-width: 230px;
+    max-height: calc(100vh - var(--header-h) - 24px);
     padding: 9px 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     color: var(--color-ink);
     background: rgb(255 252 248 / 98%);
     border: 1px solid var(--color-line);
@@ -260,6 +441,11 @@ const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
       opacity 180ms var(--ease-out),
       transform 180ms var(--ease-out),
       visibility 180ms;
+  }
+
+  .desktop-nav__submenu--wide {
+    grid-template-columns: repeat(2, minmax(190px, 1fr));
+    min-width: min(520px, calc(100vw - 40px));
   }
 
   .desktop-nav__submenu a {
@@ -357,12 +543,8 @@ const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
     .mobile-menu {
       position: fixed;
       inset: 0;
-      display: grid;
-      align-content: safe end;
-      gap: 30px;
-      padding: calc(var(--header-h) + 24px) var(--gutter) 36px;
-      overflow-y: auto;
-      overscroll-behavior: contain;
+      display: block;
+      overflow: hidden;
       color: var(--color-bg);
       background: var(--color-ink-deep);
       opacity: 0;
@@ -380,23 +562,118 @@ const mobileNavItems = MOBILE_NAV_LINKS.flatMap((link) => {
       transform: translateY(0);
     }
 
-    .mobile-menu nav {
+    .mobile-menu__stage {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .mobile-menu__panel {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 30px;
+      padding: calc(var(--header-h) + 24px) var(--gutter) 36px;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      transition: transform 300ms var(--ease-out);
+    }
+
+    .mobile-menu__panel--main {
+      transform: translateX(0);
+    }
+
+    .mobile-menu__panel--main.is-shifted {
+      transform: translateX(-100%);
+    }
+
+    .mobile-menu__panel--submenu {
+      justify-content: flex-start;
+      gap: 18px;
+      transform: translateX(100%);
+    }
+
+    .mobile-menu__panel--submenu.is-active {
+      transform: translateX(0);
+    }
+
+    .mobile-menu__panel nav {
       display: grid;
       gap: clamp(9px, 1.25vh, 13px);
     }
 
-    .mobile-menu nav a {
+    .mobile-menu__panel nav a,
+    .mobile-menu__parent {
+      width: 100%;
+      padding: 0;
+      border: 0;
+      color: inherit;
+      background: transparent;
       font-family: var(--font-display);
       font-size: clamp(1.48rem, 5.4vw, 2.35rem);
       line-height: 1.06;
       letter-spacing: -0.025em;
+      text-align: left;
+      cursor: pointer;
     }
 
-    .mobile-menu nav a.mobile-menu__subitem {
-      margin-left: clamp(18px, 5vw, 34px);
+    .mobile-menu__parent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .mobile-menu__arrow {
+      flex: 0 0 auto;
+      color: rgba(255,255,255,.62);
+      font-size: .9em;
+      line-height: 1;
+    }
+
+    .mobile-menu__back {
+      display: inline-flex;
+      width: fit-content;
+      padding: 0;
+      gap: 9px;
+      align-items: center;
+      border: 0;
       color: rgba(255,255,255,.72);
-      font-size: clamp(1.08rem, 4.1vw, 1.65rem);
-      line-height: 1.08;
+      background: transparent;
+      font-family: var(--font-display);
+      font-size: .82rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .mobile-menu__title {
+      margin: 8px 0 10px;
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 7vw, 3rem);
+      line-height: 1;
+      letter-spacing: -.035em;
+    }
+
+    .mobile-menu__panel--submenu nav {
+      gap: 0;
+      padding-bottom: 28px;
+    }
+
+    .mobile-menu__panel--submenu nav a {
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(255,255,255,.14);
+      color: rgba(255,255,255,.78);
+      font-size: clamp(1.08rem, 4vw, 1.55rem);
+      line-height: 1.15;
+    }
+
+    .mobile-menu__panel--submenu nav a.mobile-menu__overview {
+      color: var(--color-bg);
+      font-weight: 600;
     }
 
     .mobile-menu__contact {

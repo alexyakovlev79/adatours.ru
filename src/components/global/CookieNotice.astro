@@ -1,0 +1,110 @@
+---
+import { withBase } from '../../lib/paths';
+
+const privacyUrl = withBase('/privacy/');
+---
+
+<div
+  class="cookie-notice"
+  data-cookie-notice
+  data-pagefind-ignore
+  hidden
+  role="status"
+  aria-label="Уведомление об использовании cookie"
+>
+  <p>
+    Мы используем cookie, чтобы сайт запоминал ваши настройки.
+    <a href={privacyUrl}>Подробнее</a>
+  </p>
+  <button type="button" data-cookie-accept>Понятно</button>
+</div>
+
+<script>
+  const notice = document.querySelector('[data-cookie-notice]');
+
+  if (notice instanceof HTMLElement) {
+    const cookieName = 'adatours_cookie_notice';
+    const accepted = document.cookie
+      .split('; ')
+      .some((row) => row === `${cookieName}=accepted`);
+
+    if (!accepted) {
+      notice.hidden = false;
+    }
+
+    notice.querySelector('[data-cookie-accept]')?.addEventListener('click', () => {
+      document.cookie = `${cookieName}=accepted; Max-Age=31536000; Path=/; SameSite=Lax; Secure`;
+      notice.hidden = true;
+    });
+  }
+</script>
+
+<style>
+  .cookie-notice {
+    position: fixed;
+    right: max(18px, env(safe-area-inset-right));
+    bottom: max(18px, env(safe-area-inset-bottom));
+    z-index: 1200;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 14px;
+    align-items: center;
+    width: min(390px, calc(100vw - 36px));
+    padding: 16px 16px 16px 18px;
+    color: var(--color-bg);
+    background: rgb(19 20 18 / 96%);
+    border: 1px solid rgb(255 255 255 / 14%);
+    box-shadow: 0 16px 40px rgb(0 0 0 / 24%);
+    backdrop-filter: blur(10px);
+  }
+
+  .cookie-notice[hidden] {
+    display: none;
+  }
+
+  .cookie-notice p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .cookie-notice a {
+    color: var(--color-gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .cookie-notice button {
+    min-height: 40px;
+    padding: 9px 14px;
+    color: var(--color-ink);
+    background: var(--color-gold);
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background var(--motion-fast, 200ms) ease;
+  }
+
+  .cookie-notice button:hover {
+    background: var(--color-gold-hover);
+  }
+
+  @media (max-width: 520px) {
+    .cookie-notice {
+      right: max(12px, env(safe-area-inset-right));
+      bottom: max(12px, env(safe-area-inset-bottom));
+      width: calc(100vw - 24px);
+      padding: 14px;
+      gap: 12px;
+    }
+
+    .cookie-notice p {
+      font-size: 13px;
+    }
+
+    .cookie-notice button {
+      min-height: 38px;
+      padding-inline: 12px;
+    }
+  }
+</style>

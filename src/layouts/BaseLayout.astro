@@ -5,6 +5,7 @@ import '../styles/global.css';
 import '../styles/image-text-align.css';
 import SiteHeader from '../components/global/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
+import CookieNotice from '../components/global/CookieNotice.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
 import SearchOverlay from '../components/global/SearchOverlay.astro';
 import Breadcrumbs from '../components/global/Breadcrumbs.astro';
@@ -157,6 +158,7 @@ const schema = await pageStructuredData({
         <LeadForm title={leadTitle} entityId={leadEntityId || logicalPath} tourId={leadTourId} pageUrl={canonicalUrl} locale={lang} />
       </div>
     </main>
+    <CookieNotice />
     <SiteFooter />
   </body>
 </html>

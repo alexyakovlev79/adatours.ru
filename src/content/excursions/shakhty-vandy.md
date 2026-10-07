@@ -15,18 +15,18 @@ priceFrom: 160
 currency: "USD"
 priceNote: "Стоимость — $160."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/new-pics/shaxta-amet.jpg"
+  src: "/media/excursions/shakhty-vandy/hero-src-enhanced-20261007.webp"
   alt: "На фото: Фиолетовый Аметист в рудниках Ванда"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/brazil/new-pics/shaxta-ig.jpg"
+  - src: "/media/excursions/shakhty-vandy/gallery-0-src-enhanced-20261007.webp"
     alt: "На фото: Шахты Ванда"
-  - src: "https://brasiltours.ru/image/countries/brazil/new-pics/shaxta-vandy.jpg"
+  - src: "/media/excursions/shakhty-vandy/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Шахты Ванда, Пуэрто-Игуасу"
-  - src: "https://brasiltours.ru/image/countries/brazil/new-pics/shaxta-igu.jpg"
+  - src: "/media/excursions/shakhty-vandy/gallery-2-src-enhanced-20261007.webp"
     alt: "На фото: Вход в шахты Ванда"
-  - src: "https://brasiltours.ru/image/countries/brazil/new-pics/shaxta-vandy1.jpg"
+  - src: "/media/excursions/shakhty-vandy/gallery-3-src-enhanced-20261007.webp"
     alt: "На фото: Аметист из рудников Ванда"
-  - src: "https://brasiltours.ru/image/catalog/product/2/5/254675992_5f18006916_1.jpg"
+  - src: "/media/excursions/shakhty-vandy/gallery-4-src-enhanced-20261007.webp"
     alt: "На фото: Водопады Игуасу в Бразилии"
 route:
   - "Игуасу"
@@ -53,4 +53,5 @@ themes: ["theme_culture","theme_wildlife"]
 ## Стоимость
 
 Стоимость — $160.
+
 

@@ -16,10 +16,10 @@ priceFrom: 218
 currency: "USD"
 priceNote: "Стоимость — $503. Группа из 2 человек — $263 на человека. Группа из 3 человек — $255 на человека. Группа из 4 человек — $218 на человека."
 hero:
-  src: "https://brasiltours.ru/image/countries/equador/cilotoa.jpg"
+  src: "/media/excursions/ozero-kilotoa/hero-src-enhanced-20261007.webp"
   alt: "на фото: озеро Килотоа, Эквадор"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/equador/new/dayan-quinteros-ko-g1ijt9nm-unsplash.jpg"
+  - src: "/media/excursions/ozero-kilotoa/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: озеро Килотоа, Эквадор"
 route:
   - "Кито"
@@ -61,4 +61,5 @@ themes: ["theme_wildlife","theme_culture"]
 | Группа из 2 человек | $263 на человека |
 | Группа из 3 человек | $255 на человека |
 | Группа из 4 человек | $218 на человека |
+
 

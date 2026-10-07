@@ -21,11 +21,11 @@ hero:
   src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
   alt: Исторический центр Монтевидео, Уругвай
 gallery:
-  - src: https://brasiltours.ru/image/montevid11.png
+  - src: /media/excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej/gallery-0-src-enhanced-20261007.webp
     alt: Монтевидео, столица Уругвая
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
     alt: Архитектура исторического центра Монтевидео
-  - src: https://brasiltours.ru/image/montevideo3jpg.png
+  - src: /media/excursions/peshij-tur-po-istoricheskomu-tsentru/gallery-2-src-enhanced-20261007.webp
     alt: Улицы Монтевидео
 route:
   - Монтевидео

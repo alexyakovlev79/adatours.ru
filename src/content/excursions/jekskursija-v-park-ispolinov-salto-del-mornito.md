@@ -13,8 +13,8 @@ language: []
 priceFrom: 143
 currency: "USD"
 priceNote: "Стоимость — $143 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
-hero: {"src":"https://brasiltours.ru/image/catalog/product/f/i/file_57_35.png","alt":"Экскурсия в Парк Исполинов- Салто дель Морнито"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/product/f/i/file_47_141.png","alt":""},{"src":"https://brasiltours.ru/image/catalog/product/f/i/file_54_67.png","alt":""}]
+hero: {"src":"/media/excursions/jekskursija-v-park-ispolinov-salto-del-mornito/hero-src-enhanced-20261008.webp","alt":"Экскурсия в Парк Исполинов- Салто дель Морнито"}
+gallery: [{"src":"/media/excursions/jekskursija-v-park-ispolinov-salto-del-mornito/gallery-0-src-enhanced-20261008.webp","alt":""},{"src":"/media/excursions/jekskursija-v-park-ispolinov-salto-del-mornito/gallery-1-src-enhanced-20261008.webp","alt":""}]
 route: []
 lead: "Экскурсия в Парк Исполинов — Салто дель Морнито."
 included: []

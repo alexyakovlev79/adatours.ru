@@ -16,7 +16,7 @@ priceFrom: 313
 currency: "USD"
 priceNote: "$313 на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_57_121.png"
+  src: "/media/excursions/jekskursija-v-santos-i-guaruzha/hero-src-enhanced-20261008.webp"
   alt: "Экскурсия в Сантос и Гуаружа"
 gallery:
   -

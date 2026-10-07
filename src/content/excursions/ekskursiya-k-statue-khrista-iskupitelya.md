@@ -21,13 +21,13 @@ hero:
 gallery:
   - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
     alt: Панорама Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1-1920.jpg
+  - src: /media/excursions/corcovado-tijuca-forest-half-day-tour-lunch/hero-src-enhanced-20261008.webp
     alt: Вид на Рио-де-Жанейро с высоты
   - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро и горы Тижуки
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bra-rio-right.jpg
+  - src: /media/excursions/ekskursiya-k-statue-khrista-iskupitelya/gallery-3-src-enhanced-20261008.webp
     alt: Панорамный вид на Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/bra-rio-left-photoshop.jpg
+  - src: /media/excursions/ekskursiya-k-statue-khrista-iskupitelya/gallery-4-src-enhanced-20261008.webp
     alt: Рио-де-Жанейро с вершины Корковаду
 route:
   - экологический поезд

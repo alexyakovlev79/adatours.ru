@@ -16,7 +16,7 @@ priceFrom: 284
 currency: "USD"
 priceNote: "Стоимость — $284."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1-1920.jpg"
+  src: "/media/excursions/corcovado-tijuca-forest-half-day-tour-lunch/hero-src-enhanced-20261008.webp"
   alt: "Джип тур на Корковадо и тропический лес Тижука"
 gallery:
   - src: "/media/excursions/corcovado-tijuca-forest-half-day-tour-lunch/gallery-0-src-enhanced-20261007.webp"

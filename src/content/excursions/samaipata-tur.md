@@ -18,12 +18,12 @@ priceFrom: 621
 currency: USD
 priceNote: "Основная стоимость — $621. Для 2 человек — $311 на человека, для 3 человек — $264 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/el-fluerte.jpg
+  src: /media/excursions/samaipata-tur/hero-src-enhanced-20261008.webp
   alt: Фуэрте-де-Самайпата в Боливии
 gallery:
-  - src: https://brasiltours.ru/image/countries/bolivia/sapaita.jpg
+  - src: /media/excursions/samaipata-tur/gallery-0-src-enhanced-20261008.webp
     alt: Самаипата в предгорьях Анд
-  - src: https://brasiltours.ru/image/countries/bolivia/sapaita1.jpg
+  - src: /media/excursions/samaipata-tur/gallery-1-src-enhanced-20261008.webp
     alt: Пейзаж Самаипаты в Боливии
 route:
   - Санта-Крус

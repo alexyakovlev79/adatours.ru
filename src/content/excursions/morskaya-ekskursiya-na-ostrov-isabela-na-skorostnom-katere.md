@@ -22,7 +22,7 @@ hero:
 gallery:
   - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: олуши и Галапагосские острова (остров Исабела) в Эквадоре"
-  - src: "https://brasiltours.ru/image/countries/equador/ecu-galapagos-middle.jpg"
+  - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-1-src-enhanced-20261007.webp"
     alt: ""
   - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: Галапагосские острова (остров Исабела) в Эквадоре"

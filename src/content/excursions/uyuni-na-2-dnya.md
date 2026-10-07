@@ -26,7 +26,7 @@ gallery:
     alt: Джип на Салар де Уюни
   - src: /media/excursions/uyuni-na-2-dnya/gallery-2-enhanced-20261006.webp
     alt: Высокогорные пейзажи Боливии на маршруте к Уюни
-  - src: https://brasiltours.ru/image/countries/bolivia/bolivia-1.jpg
+  - src: /media/excursions/uyuni-na-2-dnya/gallery-2-src-enhanced-20261008.webp
     alt: Солончак Уюни и горы Боливии
 route:
   - Лагуна Верде

@@ -18,16 +18,16 @@ priceFrom: 1004
 currency: USD
 priceNote: "Стоимость программы — $1004. При размещении в одноместном номере — $1752."
 hero:
-  src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0035.jpg
+  src: /media/excursions/mashpi-lodzh/hero-src-enhanced-20261008.webp
   alt: Машпи Лодж среди тропического леса Эквадора
 gallery:
-  - src: https://brasiltours.ru/image/countries/equador/mashpi-5.jpg
+  - src: /media/excursions/mashpi-lodzh/gallery-0-src-enhanced-20261008.webp
     alt: Машпи Лодж в облачном лесу Эквадора
-  - src: https://brasiltours.ru/image/countries/equador/mashpi-2.jpg
+  - src: /media/excursions/mashpi-lodzh/gallery-1-src-enhanced-20261008.webp
     alt: Природа заповедника Машпи
-  - src: https://brasiltours.ru/image/countries/equador/mashpi-1.jpg
+  - src: /media/excursions/mashpi-lodzh/gallery-2-src-enhanced-20261008.webp
     alt: Тропический лес вокруг Машпи Лодж
-  - src: https://brasiltours.ru/image/countries/equador/mashpi-3.jpg
+  - src: /media/excursions/mashpi-lodzh/gallery-3-src-enhanced-20261008.webp
     alt: Машпи Лодж в Эквадоре
 route:
   - Кито

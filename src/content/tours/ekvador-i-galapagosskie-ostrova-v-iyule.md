@@ -130,7 +130,7 @@ itinerary:
     \ и отдых. Оставшееся время можно провести в Пуэрто-Айоре, прогуляться по набережной, заглянуть в рестораны и сувенирные\
     \ магазины.\n\n**Размещение:** Lobo de Mar 3*.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-galapagos-middle.jpg
+  - src: /media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-1-src-enhanced-20261007.webp
     alt: 'На фото: Пляж с морскими котиками, Галапагосы'
 - day: 6
   title: Морская экскурсия на остров Исабела
@@ -165,7 +165,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-galapagos-middle.jpg
+  - src: /media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-1-src-enhanced-20261007.webp
     alt: 'На фото: Пляж с морскими котиками, Галапагосы'
 included:
 - Групповые трансферы и экскурсии.

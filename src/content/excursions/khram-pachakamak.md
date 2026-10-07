@@ -18,12 +18,12 @@ priceFrom: 230
 currency: USD
 priceNote: "Основная стоимость — $230. Для 2 человек — $119 на человека, для 3 человек — $83 на человека, для 4 человек — $77 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/peru/pachacamac-temple.jpg
+  src: /media/excursions/khram-pachakamak/hero-src-enhanced-20261008.webp
   alt: Археологический комплекс Пачакамак в Перу
 gallery:
-  - src: https://brasiltours.ru/image/countries/peru/pachacamac-the-largest-archaeol.jpg
+  - src: /media/excursions/khram-pachakamak/gallery-0-src-enhanced-20261008.webp
     alt: Руины археологического комплекса Пачакамак
-  - src: https://brasiltours.ru/image/countries/peru/lima-2.png
+  - src: /media/excursions/khram-pachakamak/gallery-1-src-enhanced-20261008.webp
     alt: Лима, столица Перу
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/hero-enhanced-20261001.webp
     alt: Вид на Лиму

@@ -20,9 +20,9 @@ hero:
   src: /media/countries/uruguay/featureBands-3-enhanced-20261002.webp
   alt: Пунта-дель-Эсте, Уругвай
 gallery:
-  - src: https://brasiltours.ru/image/countries/uruguay/pirapolis.jpg
+  - src: /media/excursions/punta-del-este-i-piriapolis/gallery-0-src-enhanced-20261008.webp
     alt: Пириаполис, Уругвай
-  - src: https://brasiltours.ru/image/countries/uruguay/castelo-pirapol.jpg
+  - src: /media/excursions/punta-del-este-i-piriapolis/gallery-1-src-enhanced-20261008.webp
     alt: Пириаполис и его историческая архитектура
   - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"
     alt: Побережье Пунта-дель-Эсте

@@ -99,3 +99,136 @@ main {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Global secondary heading scale: 2026-10-07 */
+:root {
+  --text-h2: clamp(2.295rem, 1.445rem + 3.4vw, 4.4625rem);
+  --text-h3: clamp(1.445rem, 1.0625rem + 1.445vw, 2.55rem);
+}
+
+/* Heading-like display text with component-local sizes: -15%. */
+.statement__text {
+  font-size: clamp(1.785rem, 1.0625rem + 2.55vw, 3.825rem) !important;
+}
+
+.proof h2 {
+  font-size: clamp(1.9125rem, 1.258rem + 2.72vw, 3.7825rem) !important;
+}
+
+.story h2 {
+  font-size: clamp(1.9975rem, 2.89vw, 3.4rem) !important;
+}
+
+.process .step h3 {
+  font-size: clamp(1.3175rem, 1.7vw, 2.125rem) !important;
+}
+
+.dmc-faq h2 {
+  font-size: clamp(1.9975rem, 1.36rem + 2.72vw, 3.825rem) !important;
+}
+
+.included h2 {
+  font-size: clamp(1.87rem, 2.295vw, 2.7625rem) !important;
+}
+
+.included__notes h3 {
+  font-size: clamp(1.275rem, 1.7vw, 1.87rem) !important;
+}
+
+.pricing h2 {
+  font-size: clamp(2.55rem, 1.7rem + 2.72vw, 4.675rem) !important;
+}
+
+.theme-heading h2 {
+  font-size: clamp(1.9125rem, 3.91vw, 3.74rem) !important;
+}
+
+.team-member h3 {
+  font-size: clamp(1.19rem, 2.125vw, 1.7rem) !important;
+}
+
+.highlight__title,
+.day__title {
+  font-size: clamp(1.2325rem, .935rem + .85vw, 1.955rem) !important;
+}
+
+.search-result h3 {
+  font-size: clamp(1.3175rem, 1.02rem + .85vw, 1.9975rem) !important;
+}
+
+.interest-card h3 {
+  font-size: clamp(1.275rem, 1.9975vw, 2.21rem) !important;
+}
+
+.interest-card--large h3 {
+  font-size: clamp(2.04rem, 3.4vw, 3.4rem) !important;
+}
+
+.destination-card__title,
+.entity-poster:not(.entity-poster--wide) strong {
+  font-size: clamp(1.53rem, 2.2525vw, 2.55rem) !important;
+}
+
+.destination-card--wide .destination-card__title,
+.entity-poster strong {
+  font-size: clamp(1.7rem, 2.89vw, 3.4rem) !important;
+}
+
+.band-card__title {
+  font-size: clamp(1.8275rem, 2.55vw, 3.1025rem) !important;
+}
+
+:global(.adatours-modal-title),
+.adatours-modal-title {
+  font-size: clamp(1.7rem, 1.445rem + .85vw, 2.3375rem) !important;
+}
+
+/* Tour names in any tour collection/catalogue: -20%. */
+.band[href*="/tour/"] .band__title {
+  font-size: clamp(2.16rem, 1.36rem + 3.2vw, 4.2rem) !important;
+}
+
+.band-card[href*="/tour/"] .band-card__title {
+  font-size: clamp(1.72rem, 2.4vw, 2.92rem) !important;
+}
+
+.interest-card__link[href*="/tour/"] h3 {
+  font-size: clamp(1.2rem, 1.88vw, 2.08rem) !important;
+}
+
+.interest-card--large .interest-card__link[href*="/tour/"] h3 {
+  font-size: clamp(1.92rem, 3.2vw, 3.2rem) !important;
+}
+
+@media (max-width: 820px) {
+  .country-linked__heading--tours h2 {
+    font-size: clamp(2.0825rem, 10.2vw, 2.975rem) !important;
+  }
+
+  .destination-card__title,
+  .destination-card--wide .destination-card__title,
+  .entity-poster strong,
+  .entity-poster:not(.entity-poster--wide) strong {
+    font-size: clamp(1.7rem, 7.65vw, 2.55rem) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .included__column--extra h2 {
+    font-size: clamp(1.87rem, 8.5vw, 2.7625rem) !important;
+  }
+
+  .band-card__title {
+    font-size: clamp(1.445rem, 6.12vw, 1.9975rem) !important;
+  }
+
+  .band-card[href*="/tour/"] .band-card__title {
+    font-size: clamp(1.36rem, 5.76vw, 1.88rem) !important;
+  }
+
+  :global(.adatours-modal-title),
+  .adatours-modal-title {
+    font-size: 1.7rem !important;
+  }
+}

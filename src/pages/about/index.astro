@@ -1,5 +1,5 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
@@ -11,7 +11,6 @@ import { ORG } from '../../data/organization/ada-tours';
 
 const people = await getCollection('people', ({ data }) => data.id === 'person_anna' && data.locale === 'ru');
 const anna = people[0];
-const AnnaContent = anna ? (await render(anna)).Content : null;
 ---
 
 <BaseLayout leadTitle="Обсудить поездку или партнерство" leadEntityId="about"
@@ -73,7 +72,7 @@ const AnnaContent = anna ? (await render(anna)).Content : null;
     text="В основе подхода Ada Tours - личный опыт Анны Аванесовой в Латинской Америке: от самостоятельных наземных маршрутов до работы с VIP, группами, MICE и международными партнерами."
   />
 
-  {anna && AnnaContent && (
+  {anna && (
     <PersonProfile
       name={anna.data.name}
       role={anna.data.role}
@@ -82,7 +81,7 @@ const AnnaContent = anna ? (await render(anna)).Content : null;
       href={`/team/${anna.data.slug}/`}
       eyebrow="Основатель"
     >
-      <AnnaContent />
+      <p>Анна Аванесова основала Ada Tours. Ее личный опыт путешествий по Латинской Америке сформировал подход компании: маршрут собирается вокруг конкретного человека, его дат, интересов и темпа поездки.</p>
     </PersonProfile>
   )}
 

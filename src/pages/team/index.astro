@@ -102,7 +102,9 @@ const colleagues = [
       expertise={entry.data.expertise}
       href={`/team/${entry.data.slug}/`}
     >
-      <Content />
+      {entry.data.id === 'person_anna'
+        ? <p>Анна основала Ada Tours и руководит командой. Она задает подход к сложным индивидуальным маршрутам, VIP, MICE и multi-country поездкам и подключается к ключевым запросам клиентов и партнеров.</p>
+        : <Content />}
     </PersonProfile>
   ))}
 

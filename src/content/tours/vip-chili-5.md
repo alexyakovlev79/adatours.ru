@@ -97,7 +97,7 @@ itinerary:
 
     **Включено:** вход в Долину Луны, коктейль.
   images:
-  - src: https://brasiltours.ru/image/san-pedro-de-atakama-vinicius-henrique-photography-ztmwunoxxqc-unsplash-sq-opt.jpg
+  - src: "/media/tours/vip-chili-5/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Сан-Педро-де-Атакама
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
@@ -121,7 +121,7 @@ itinerary:
 
     **Включено:** входные билеты в лагуну Чакса и высокогорные лагуны, обед.
   images:
-  - src: https://brasiltours.ru/image/san-pedro-de-atakama-vinicius-henrique-photography-ztmwunoxxqc-unsplash-sq-opt.jpg
+  - src: "/media/tours/vip-chili-5/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Сан-Педро-де-Атакама
 - day: 5
   title: Гейзеры Татио и деревня Мачука

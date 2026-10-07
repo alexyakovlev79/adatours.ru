@@ -92,7 +92,7 @@ itinerary:
 
     После прибытия трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/easter%20island.png
+  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: истуканы острова Пасхи в Чили'
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили - столица Чили'
@@ -111,7 +111,7 @@ itinerary:
     \nОстается время для прогулки и купания.\n\nВозвращение в поселок Ханга-Роа по дороге через центральную часть острова.\n\
     \n**Продолжительность:** целый день.  \n**Питание:** завтрак и обед, бокс-ланч включен."
   images:
-  - src: https://brasiltours.ru/image/easter%20island.png
+  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: истуканы острова Пасхи в Чили'
 - day: 6
   title: 'Остров Пасхи: Оронго и Рано-Као'
@@ -125,7 +125,7 @@ itinerary:
     \ собирались весной в каменных домах и ждали прибытия священной птицы Манутара, чтобы выбрать Тангата-Ману, человека-птицу.\n\
     \n**Продолжительность:** около 4 часов.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/easter%20island.png
+  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: истуканы острова Пасхи в Чили'
 - day: 7
   title: 'Остров Пасхи: Аху-Акиви и Пуна-Пау'
@@ -138,7 +138,7 @@ itinerary:
     \ Пуна-Пау, небольшого холма, где добывали красный камень для головных уборов моаи.\n\nЗдесь находится смотровая площадка\
     \ на поселок Ханга-Роа.\n\n**Продолжительность:** около 4 часов.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/easter%20island.png
+  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: истуканы острова Пасхи в Чили'
 - day: 8
   title: Остров Пасхи - Сантьяго
@@ -152,7 +152,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-13-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили - столица Чили'
-  - src: https://brasiltours.ru/image/easter%20island.png
+  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: истуканы острова Пасхи в Чили'
 - day: 9
   title: Долина Майпо
@@ -195,7 +195,7 @@ priceFrom: 3419
 currency: USD
 priceNote: $3419
 hero:
-  src: https://brasiltours.ru/image/countries/chile/22.jpg
+  src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
   alt: 'На фото: истуканы острова Пасхи в Чили'
 routeCountries:
 - country_chile

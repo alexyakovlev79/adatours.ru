@@ -211,7 +211,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили'
-  - src: https://brasiltours.ru/image/easter%20island.png
+  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: истуканы Моа с острова Пасха в Чили'
 - day: 9
   title: 'Остров Пасхи: Анакена и основные археологические зоны'
@@ -228,7 +228,7 @@ itinerary:
     \nОстается время для прогулки и купания.\n\nВозвращение в поселок Ханга-Роа по дороге через центральную часть острова.\n\
     \n**Продолжительность:** целый день.  \n**Питание:** завтрак и обед, бокс-ланч включен."
   images:
-  - src: https://brasiltours.ru/image/easter%20island.png
+  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: истуканы Моа с острова Пасха в Чили'
 - day: 10
   title: 'Остров Пасхи: Оронго, Рано-Као, Аху-Акиви и Пуна-Пау'
@@ -255,7 +255,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/easter%20island.png
+  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: истуканы Моа с острова Пасха в Чили'
 - day: 11
   title: Остров Пасхи - Сантьяго
@@ -271,7 +271,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили'
-  - src: https://brasiltours.ru/image/easter%20island.png
+  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: истуканы Моа с острова Пасха в Чили'
 - day: 12
   title: Сантьяго

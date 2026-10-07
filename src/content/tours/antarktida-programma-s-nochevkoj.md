@@ -87,7 +87,7 @@ priceFrom: 8220
 currency: USD
 priceNote: $8220
 hero:
-  src: https://brasiltours.ru/image/punta%20arenas1.png
+  src: "/media/tours/antarktida-programma-s-nochevkoj/hero-src-enhanced-20261007.webp"
   alt: 'Антарктида: программа с ночевкой'
 routeCountries:
 - country_antarctica

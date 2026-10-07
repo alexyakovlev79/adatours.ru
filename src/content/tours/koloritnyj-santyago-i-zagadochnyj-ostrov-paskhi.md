@@ -50,7 +50,7 @@ itinerary:
 
     Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/22.jpg
+  - src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
     alt: Колоритный Сантьяго и загадочный остров Пасхи
 - day: 2
   title: Вальпараисо и Винья-дель-Мар
@@ -88,7 +88,7 @@ itinerary:
 
     Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/22.jpg
+  - src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
     alt: Колоритный Сантьяго и загадочный остров Пасхи
 - day: 4
   title: Остров Пасхи - Рано-Рараку, Тонгарики и Анакена
@@ -116,7 +116,7 @@ itinerary:
 
     Возвращение в Ханга-Роа через центральную часть острова, затем в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/22.jpg
+  - src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
     alt: Колоритный Сантьяго и загадочный остров Пасхи
 - day: 5
   title: Остров Пасхи - Аху-Акиви, Пуна-Пау и Тахаи - Сантьяго
@@ -143,7 +143,7 @@ itinerary:
 
     По прибытии трансфер в отель, размещение и ночь в Сантьяго.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/22.jpg
+  - src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
     alt: Колоритный Сантьяго и загадочный остров Пасхи
 - day: 6
   title: Сантьяго - вылет домой
@@ -154,7 +154,7 @@ itinerary:
 
     Международный вылет домой.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/22.jpg
+  - src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
     alt: Колоритный Сантьяго и загадочный остров Пасхи
 included:
 - трансферы с водителем;
@@ -185,7 +185,7 @@ priceFrom: 2255
 currency: USD
 priceNote: $2255
 hero:
-  src: https://brasiltours.ru/image/countries/chile/22.jpg
+  src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
   alt: Колоритный Сантьяго и загадочный остров Пасхи
 routeCountries:
 - country_chile

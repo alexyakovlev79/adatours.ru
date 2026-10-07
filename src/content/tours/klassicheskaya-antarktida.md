@@ -54,7 +54,7 @@ itinerary:
 
     На берегу группа садится на «Зодиак», который доставляет пассажиров на экспедиционное судно.
   images:
-  - src: https://brasiltours.ru/image/countries/antarctica/dylan-shaw-de6z6lz4-v8-unsplash.jpg
+  - src: "/media/tours/klassicheskaya-antarktida/hero-src-enhanced-20261007.webp"
     alt: Классическая Антарктида
 - day: 3
   title: Дни 3-6. Исследование Антарктиды
@@ -74,7 +74,7 @@ itinerary:
 
     Точный набор мест отличается от рейса к рейсу. Программа может включать Южные Шетландские острова, Антарктический пролив, пролив Герлаше и пролив Пенола.
   images:
-  - src: https://brasiltours.ru/image/countries/antarctica/dylan-shaw-de6z6lz4-v8-unsplash.jpg
+  - src: "/media/tours/klassicheskaya-antarktida/hero-src-enhanced-20261007.webp"
     alt: Классическая Антарктида
 - day: 7
   title: Обратный перелет в Пунта-Аренас
@@ -138,7 +138,7 @@ priceFrom: 11495
 currency: USD
 priceNote: $11495
 hero:
-  src: https://brasiltours.ru/image/countries/antarctica/dylan-shaw-de6z6lz4-v8-unsplash.jpg
+  src: "/media/tours/klassicheskaya-antarktida/hero-src-enhanced-20261007.webp"
   alt: Классическая Антарктида
 routeCountries:
 - country_antarctica

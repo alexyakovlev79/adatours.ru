@@ -38,7 +38,7 @@ itinerary:
 
     Прибыть в Пунта-Аренас необходимо за день до поездки не позднее 17:00, чтобы успеть на брифинг. Пассажиры, которые не участвовали в брифинге, к полету не допускаются.
   images:
-  - src: https://brasiltours.ru/image/punta%20arenas.png
+  - src: "/media/tours/antarktida-programma-na-ves-den/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Пунта-Аренас'
 - day: 2
   title: Антарктида
@@ -58,7 +58,7 @@ itinerary:
 
     **Вся программа зависит от погоды.** В Антарктиде именно условия на месте определяют возможность вылета, высадки и выполнения отдельных пунктов маршрута.
   images:
-  - src: https://brasiltours.ru/image/antarct.png
+  - src: "/media/tours/antarktida-programma-na-ves-den/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: круиз в Антарктиду'
 included:
 - 4 ночи подряд в отеле в рамках подготовки к поездке в Антарктиду.
@@ -83,7 +83,7 @@ priceFrom: 6956
 currency: USD
 priceNote: $6956
 hero:
-  src: https://brasiltours.ru/image/countries/antarctica/123.jpg
+  src: "/media/tours/antarktida-programma-na-ves-den/hero-src-enhanced-20261007.webp"
   alt: 'На фото: тур в Антарктиду'
 routeCountries:
 - country_antarctica

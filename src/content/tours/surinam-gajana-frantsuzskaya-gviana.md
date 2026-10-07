@@ -70,7 +70,7 @@ itinerary:
 
     Завтрак включен. Экскурсионная программа рассчитана на целый день.
   images:
-  - src: https://brasiltours.ru/image/gayana%20waterfalls%20kaentur.11png.png
+  - src: "/media/tours/surinam-gajana-frantsuzskaya-gviana/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Национальный парк Кайетур
   - src: /media/tours/surinam-gajana-frantsuzskaya-gviana/hero-enhanced-20261006.webp
     alt: Суринам, Гайана, Французская Гвиана
@@ -111,7 +111,7 @@ itinerary:
 
     Завтрак включен, программа с гидом на целый день.
   images:
-  - src: https://brasiltours.ru/image/Cayenne.jpg
+  - src: "/media/tours/surinam-gajana-frantsuzskaya-gviana/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Кайенна
 - day: 5
   title: Острова бывшей каторжной системы

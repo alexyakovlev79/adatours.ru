@@ -19,7 +19,7 @@ relatedDestinations: []
 duration: 6 часов
 sourceSnapshot: https://drive.google.com/file/d/12M2KOTd8tf1CGIQ1K29HawmjrhdTzViK/view?usp=drivesdk
 hero:
-  src: https://brasiltours.ru/image/catalog/product/Q/u/Quito_6.jpg
+  src: /media/excursions/quito-equator-six-hour-tour/hero-src-enhanced-20261007.webp
   alt: ''
 themes: ["theme_culture"]
 ---

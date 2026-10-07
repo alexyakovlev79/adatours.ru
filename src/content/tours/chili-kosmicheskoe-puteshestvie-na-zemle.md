@@ -79,7 +79,7 @@ itinerary:
 
     Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-atacama-left.jpg
+  - src: /media/tours/vip-chili-5/hero-enhanced-20261006.webp
     alt: Сан-Педро-де-Атакама
   - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
     alt: Сантьяго-де-Чили

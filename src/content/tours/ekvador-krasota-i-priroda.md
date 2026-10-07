@@ -91,7 +91,7 @@ itinerary:
     \ природа по мере набора высоты и приближения к вулкану.\n\nВо второй половине дня возвращение в Кито. Свободный вечер.\n\
     \n**Размещение:** Plaza Grande 5*, Royal Suite.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/cotopaxi.jpg
+  - src: /media/tours/ekvador-krasota-i-priroda/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Вулкан Котопахи в Эквадоре'
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-3-enhanced-20261001.webp
     alt: 'На фото: Кафедральный собор Кито'

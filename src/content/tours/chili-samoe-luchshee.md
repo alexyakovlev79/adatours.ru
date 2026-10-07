@@ -88,7 +88,7 @@ itinerary:
 
     **Включено:** входной билет в Лунную долину и коктейль.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-atacama-left.jpg
+  - src: /media/tours/vip-chili-5/hero-enhanced-20261006.webp
     alt: 'На фото: пустыня Атакама в Чили'
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили'
@@ -141,7 +141,7 @@ itinerary:
 
     После экскурсии групповой трансфер в Каламу и перелет в Сантьяго.
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-atacama-left.jpg
+  - src: /media/tours/vip-chili-5/hero-enhanced-20261006.webp
     alt: 'На фото: пустыня Атакама в Чили'
 - day: 5
   title: Сантьяго - Пуэрто-Наталес

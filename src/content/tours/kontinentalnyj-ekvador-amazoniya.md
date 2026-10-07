@@ -16,7 +16,7 @@ lead: Большое путешествие по континентальном�
 durationDays: 15
 durationNights: 14
 hero:
-  src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0029-waifu2x-phot.jpg
+  src: /media/excursions/kotopaksi-natsionalnyj-park/gallery-0-src-enhanced-20261007.webp
   alt: Тур по континентальному Эквадору и Амазонии на 15 дней
 currency: USD
 priceFrom: null

@@ -43,7 +43,7 @@ itinerary:
 
     Экскурсионный день вместе с переездами занимает около 6 часов.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0033.jpg
+  - src: /media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp
     alt: 'Эквадор: Кито – Галапагосские Острова'
 - excursionRef: excursion_quito_equator_six_hour_tour
   places: []
@@ -67,9 +67,9 @@ itinerary:
 
     Питание: завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0033.jpg
+  - src: /media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp
     alt: 'Эквадор: Кито – Галапагосские Острова'
-  - src: https://brasiltours.ru/image/catalog/product/Q/u/Quito_6.jpg
+  - src: /media/excursions/quito-equator-six-hour-tour/hero-src-enhanced-20261007.webp
     alt: Кито
 - day: 3
   title: Морская экскурсия на остров Исабела
@@ -105,7 +105,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0033.jpg
+  - src: /media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp
     alt: 'Эквадор: Кито – Галапагосские Острова'
 - day: 5
   title: Галапагосские острова - Кито или Гуаякиль
@@ -117,9 +117,9 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0033.jpg
+  - src: /media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp
     alt: 'Эквадор: Кито – Галапагосские Острова'
-  - src: https://brasiltours.ru/image/catalog/product/q/u/quito1_4.png
+  - src: /media/tours/ekvador-kito-galapagosskie-ostrova/itinerary-5-images-1-src-enhanced-20261007.webp
     alt: Кито
 included:
 - Трансферы и экскурсии на материковой части Эквадора в индивидуальном формате.
@@ -151,7 +151,7 @@ priceFrom: 1699
 currency: USD
 priceNote: $1699
 hero:
-  src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0033.jpg
+  src: /media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp
   alt: 'Эквадор: Кито – Галапагосские Острова'
 routeCountries:
 - country_ecuador

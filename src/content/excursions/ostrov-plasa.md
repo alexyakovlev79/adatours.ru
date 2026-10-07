@@ -20,9 +20,9 @@ hero:
   src: "/media/excursions/ostrov-plasa/hero-src-enhanced-20261007.webp"
   alt: "на фото: Галапагосские острова- остров Пласа в Эквадоре"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/equador/ecu-galapagos-middle.jpg"
+  - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: Галапагосские острова- остров Пласа в Эквадоре"
-  - src: "https://brasiltours.ru/image/countries/equador/img-20210923-wa0033.jpg"
+  - src: "/media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: Галапагосские острова- остров Пласа в Эквадоре"
   - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: Галапагосские острова- остров Пласа в Эквадоре"

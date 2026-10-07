@@ -37,7 +37,7 @@ itinerary:
 
     Ночь в отеле Barceló San Salvador.
   images:
-  - src: https://brasiltours.ru/image/countries/el-salvador/san-salvador-waifu2x-photo-noise1-scale-waifu2x-photo-noise1-scale.jpg
+  - src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
     alt: 'На фото: Сан-Сальвадор столица Сальвадора'
 - day: 2
   title: Сан-Андрес и Хоя-де-Серен
@@ -55,7 +55,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/el-salvador/san-salvador-waifu2x-photo-noise1-scale-waifu2x-photo-noise1-scale.jpg
+  - src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
     alt: 'На фото: Сан-Сальвадор столица Сальвадора'
 - day: 3
   title: Сучитото
@@ -83,7 +83,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/el-salvador/san-salvador-waifu2x-photo-noise1-scale-waifu2x-photo-noise1-scale.jpg
+  - src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
     alt: 'На фото: Сан-Сальвадор столица Сальвадора'
 - day: 5
   title: Залив Фонсека
@@ -110,7 +110,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/el-salvador/san-salvador-waifu2x-photo-noise1-scale-waifu2x-photo-noise1-scale.jpg
+  - src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
     alt: 'На фото: Сан-Сальвадор столица Сальвадора'
 included:
 - Русскоговорящий гид
@@ -136,7 +136,7 @@ priceFrom: 2700
 currency: USD
 priceNote: $2700
 hero:
-  src: https://brasiltours.ru/image/countries/el-salvador/san-salvador-waifu2x-photo-noise1-scale-waifu2x-photo-noise1-scale.jpg
+  src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
   alt: 'На фото: Сан-Сальвадор столица Сальвадора'
 routeCountries:
 - country_el_salvador

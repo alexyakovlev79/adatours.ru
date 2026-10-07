@@ -21,7 +21,7 @@ hero:
   src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
   alt: Монтевидео, Уругвай
 gallery:
-  - src: https://brasiltours.ru/image/montevid11.png
+  - src: /media/excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej/gallery-0-src-enhanced-20261007.webp
     alt: Городской пейзаж Монтевидео
   - src: "/media/excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej/gallery-1-src-enhanced-20261007.webp"
     alt: Монтевидео и побережье Рио-де-ла-Плата

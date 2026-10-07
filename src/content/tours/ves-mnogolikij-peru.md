@@ -105,7 +105,7 @@ itinerary:
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: 'на фото: город Куско в Перу'
-  - src: https://brasiltours.ru/image/lima%201.png
+  - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: город Лима, столица Перу'
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
@@ -350,3 +350,4 @@ themes: ["theme_wildlife"]
 **Стоимость:** $2979
 
 В этом маршруте соединены древние города инков, колониальная архитектура, высокогорные дороги, озеро Титикака, вулканы и Тихий океан. Отдельные дни можно дополнить поездом Titicaca train, экскурсией в кафедральный собор Куско, поездкой в Паракас и Наску или посещением музея Larco Herrera.
+

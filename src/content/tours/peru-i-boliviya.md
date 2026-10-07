@@ -150,7 +150,7 @@ itinerary:
 
     По прибытии в Ла-Пас встреча с водителем и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-right.jpg
+  - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
     alt: Ла Пас
   - src: https://brasiltours.ru/image/Puno.jpg
     alt: Пуно
@@ -169,7 +169,7 @@ itinerary:
 
     Завершает день Лунная долина, расположенная примерно в 10 км от центра города. Ее необычные формы возникли под воздействием ветра и сильных дождей.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-right.jpg
+  - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
     alt: Ла Пас
 - day: 8
   title: Ла-Пас
@@ -177,7 +177,7 @@ itinerary:
   - Ла Пас
   text: В заранее согласованное время трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-right.jpg
+  - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
     alt: Ла Пас
 included:
 - Трансферы аэропорт - отель - аэропорт.
@@ -242,3 +242,4 @@ themes: ["theme_wildlife"]
 Священная долина показывает другую сторону наследия инков. В Чинчеро сохранились ткацкие традиции, в Морае расположены концентрические террасы, а Оллантайтамбо был важным военным, религиозным и сельскохозяйственным центром.
 
 Далее дорога идет через высокогорье к Пуно и озеру Титикака. На плавучих островах Урос дома и лодки делают из тростника тотора. После этого программа пересекает границу Боливии через Копакабану и заканчивается в Ла-Пасе.
+

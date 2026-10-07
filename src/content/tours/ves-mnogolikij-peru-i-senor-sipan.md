@@ -110,7 +110,7 @@ itinerary:
 
     **Дополнительно:** посещение Кафедрального собора Куско перед основной экскурсией, около **40 минут**, доплата **$25**.
   images:
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: 'на фото: Куско в Перу'
   - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
     alt: 'на фото: Лима, столица Перу'
@@ -136,7 +136,7 @@ itinerary:
 
     После обеда возвращение на станцию, поезд обратно и трансфер в гостиницу в Куско.
   images:
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: 'на фото: Куско в Перу'
   - src: https://brasiltours.ru/image/image-01-large.jpg
     alt: 'на фото: Мачу Пикчу в Перу'
@@ -202,7 +202,7 @@ itinerary:
   images:
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: 'на фото: Пуно в Перу'
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: 'на фото: Куско в Перу'
 - day: 7
   title: Пуно и озеро Титикака
@@ -443,3 +443,4 @@ themes: ["theme_wildlife"]
 **Стоимость:** $4220
 
 Это один из самых насыщенных маршрутов по Перу. Сначала вы увидите столицу у Тихого океана и основные памятники Лимы, затем подниметесь в Анды к наследию инков. После Мачу-Пикчу программа ведет через озеро Титикака, Колку и Арекипу. Северный участок добавляет совсем другую историческую линию: цивилизацию чиму, гигантский глиняный город Чан-Чан, пирамиды Солнца и Луны, Уака-Рахаду и музей Сеньора Сипана.
+

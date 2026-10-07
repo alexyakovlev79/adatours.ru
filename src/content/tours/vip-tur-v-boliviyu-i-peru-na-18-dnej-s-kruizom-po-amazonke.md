@@ -247,7 +247,7 @@ itinerary:
 
     Преимущество размещения непосредственно у солончака состоит в возможности выйти на него в часы, когда людей мало, и увидеть пространство без постоянного потока транспорта и групп.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/kachi-lodge/021kac-im0301-kachi-lodge.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
 - day: 15
   title: Солончак Уюни, Колчани, «Глаза воды» и Инкауаси
@@ -266,7 +266,7 @@ itinerary:
 
     К полудню вы доберетесь до острова Инкауаси в центре Уюни. На острове есть известняковые скальные образования, крупные кактусы и местная фауна. С верхней части острова открывается круговой вид на солончак.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/kachi-lodge/021sdu-im02-kachi-lodge.jpg
+  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-14-images-0-src-enhanced-20261007.webp"
     alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
 - day: 16
   title: 'Альтиплано: лагуны, фламинго, Оллагуе и Чигуана, опционально'

@@ -87,7 +87,7 @@ itinerary:
 
     Дополнительно можно посетить кафедральный собор Куско. Стоимость - $20, продолжительность экскурсии около 40 минут до начала сити-тура.
   images:
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: Куско
   - src: https://brasiltours.ru/image/lima%20pacific.png
     alt: Лима
@@ -113,7 +113,7 @@ itinerary:
 
     После экскурсии возвращение в Куско, в гостиницу Siete Ventanas 3*.
   images:
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: Куско
 - day: 4
   title: Куско - Мачу-Пикчу - Куско
@@ -133,7 +133,7 @@ itinerary:
   images:
   - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp"
     alt: Мачу Пикчу
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: Куско
 - day: 5
   title: Куско - Пуно
@@ -163,7 +163,7 @@ itinerary:
   images:
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     alt: Пуно
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: Куско
 - day: 6
   title: Пуно и праздник Святой Канделярии
@@ -270,7 +270,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Nazca.png
     alt: Линии Наска
-  - src: https://brasiltours.ru/image/countries/peru/arekipa.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp"
     alt: Арекипа
 - day: 11
   title: Наска - Паракас

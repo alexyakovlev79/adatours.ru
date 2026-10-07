@@ -21,7 +21,7 @@ hero:
   src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
   alt: Мачу-Пикчу в горах Перу
 gallery:
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: Куско, Перу
   - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp"
     alt: Мачу-Пикчу, Перу

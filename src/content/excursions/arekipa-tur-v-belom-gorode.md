@@ -22,7 +22,7 @@ hero:
 gallery:
   - src: "https://brasiltours.ru/image/arequipa.png"
     alt: "на фото: Арекипа, белый город в Перу"
-  - src: "https://brasiltours.ru/image/arequipa-catedral.png"
+  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: Арекипа, белый город в Перу"
   - src: "https://brasiltours.ru/image/Arequipa.png"
     alt: "на фото: Арекипа, белый город в Перу"
@@ -67,4 +67,5 @@ themes: ["theme_culture"]
 | 3 участника | $75 на человека |
 | 4 участника | $72 на человека |
 | Групповой тур | $69 на человека |
+
 

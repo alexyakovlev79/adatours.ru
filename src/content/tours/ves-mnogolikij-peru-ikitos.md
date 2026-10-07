@@ -111,7 +111,7 @@ itinerary:
 
     **Дополнительно:** Кафедральный собор Куско перед основной экскурсией, около 40 минут, **$25**.
   images:
-  - src: https://brasiltours.ru/image/lima%201.png
+  - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: 'НА фото: город Лима, столица Перу'
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
@@ -380,7 +380,7 @@ itinerary:
 
     После посещения продолжение трансфера в аэропорт.
   images:
-  - src: https://brasiltours.ru/image/lima%201.png
+  - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: 'НА фото: город Лима, столица Перу'
 included:
 - Внутренние авиаперелеты Лима - Куско, Арекипа - Лима, Лима - Икитос - Лима

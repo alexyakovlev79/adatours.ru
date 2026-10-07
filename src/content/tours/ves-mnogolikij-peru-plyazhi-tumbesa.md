@@ -80,7 +80,7 @@ itinerary:
 
     После вечерней программы возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/lima%201.png
+  - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: Лима
 - day: 3
   title: Лима - Куско
@@ -106,7 +106,7 @@ itinerary:
 
     **Дополнительно:** посещение Кафедрального собора Куско перед основной экскурсией, около 40 минут, **$25**.
   images:
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: Куско
   - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лима
@@ -194,9 +194,9 @@ itinerary:
 
       **Доплата:** $250 с человека.
   images:
-  - src: https://brasiltours.ru/image/puno.png
+  - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Пуно
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: Куско
 - day: 7
   title: Пуно и озеро Титикака
@@ -238,7 +238,7 @@ itinerary:
 
     По желанию можно посетить горячие источники. Предусмотрено время на обед.
   images:
-  - src: https://brasiltours.ru/image/puno.png
+  - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Пуно
 - day: 9
   title: Колка - Арекипа
@@ -257,7 +257,7 @@ itinerary:
 
     Прибытие в Арекипу, размещение в гостинице 3*. Свободное время.
   images:
-  - src: https://brasiltours.ru/image/arequipa-catedral.png
+  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-enhanced-20261007.webp"
     alt: Арекипа
 - day: 10
   title: Арекипа - Лима
@@ -281,7 +281,7 @@ itinerary:
 
     По прилете встреча, трансфер в гостиницу и размещение.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/arekipa.jpg
+  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp"
     alt: Арекипа
   - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Лима
@@ -296,7 +296,7 @@ itinerary:
 
     По желанию
   images:
-  - src: https://brasiltours.ru/image/lima%201.png
+  - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: Лима
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []
@@ -314,7 +314,7 @@ itinerary:
 
     Отдых. Вечером ужин на берегу Тихого океана.
   images:
-  - src: https://brasiltours.ru/image/Tumbes.jpg
+  - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: Тумбес
   - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Лима
@@ -329,7 +329,7 @@ itinerary:
 
     Эти 2 дня проходят без обязательной экскурсионной программы. После горных переездов, Титикаки, Колки и Арекипы маршрут становится спокойнее и позволяет провести время у моря.
   images:
-  - src: https://brasiltours.ru/image/Tumbes.jpg
+  - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: Тумбес
 - day: 14
   title: Тумбес
@@ -342,7 +342,7 @@ itinerary:
 
     Эти 2 дня проходят без обязательной экскурсионной программы. После горных переездов, Титикаки, Колки и Арекипы маршрут становится спокойнее и позволяет провести время у моря.
   images:
-  - src: https://brasiltours.ru/image/Tumbes.jpg
+  - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: Тумбес
 - day: 15
   title: Тумбес - Лима
@@ -356,7 +356,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Лима
-  - src: https://brasiltours.ru/image/Tumbes.jpg
+  - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: Тумбес
 - day: 16
   title: Лима и вылет
@@ -379,7 +379,7 @@ itinerary:
 
     После посещения продолжение трансфера в аэропорт и международный вылет.
   images:
-  - src: https://brasiltours.ru/image/lima%201.png
+  - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: Лима
 included:
 - Внутренние авиаперелеты Лима - Куско, Арекипа - Лима, Лима - Тумбес - Лима
@@ -448,3 +448,4 @@ themes: ["theme_wildlife"]
 Путь из Куско в Пуно сам становится отдельной экскурсией. По дороге предусмотрены остановки в Андагуаилильясе, Ракчи, Сикуани, Ла-Райя и Пукаре. Вместо автобуса можно выбрать поезд Titicaca Train.
 
 Дальше маршрут проходит через озеро Титикака и плавучие острова Урос, затем к каньону Колка, кондорам и Арекипе. После возвращения в Лиму начинается более спокойная часть: при желании Паракас и Наска, затем перелет в Тумбес и несколько дней на побережье.
+

@@ -135,7 +135,7 @@ itinerary:
 
     Возвращение в отель. Ночь в Ла-Пасе.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-right.jpg
+  - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
     alt: Ла Пас
   - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-9-images-0-src-enhanced-20261007.webp"
     alt: Уюни
@@ -149,9 +149,9 @@ itinerary:
 
     После посещения археологического комплекса маршрут продолжается к озеру Титикака, которое называют самым высоким озером в мире.
   images:
-  - src: https://brasiltours.ru/image/countries/bolivia/tiwanaku-bolivia.png
+  - src: "/media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-2-src-enhanced-20261007.webp"
     alt: Тиауанаку
-  - src: https://brasiltours.ru/image/countries/bolivia/bol-la-paz-right.jpg
+  - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
     alt: Ла Пас
 - day: 7
   title: Пуно - озеро Титикака - Пуно
@@ -237,7 +237,7 @@ itinerary:
   images:
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
     alt: Лима
-  - src: https://brasiltours.ru/image/cusco%202.png
+  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: Куско
 - day: 12
   title: Лима
@@ -314,4 +314,5 @@ themes: []
 
 **Длительность:** 12 дней / 11 ночей  
 **Маршрут:** Сантьяго-де-Чили - Сан-Педро-де-Атакама - Уюни - Ла-Пас - озеро Титикака - Куско - Лима
+
 

@@ -18,7 +18,7 @@ relatedDestinations:
 - destination_costa_rica_vodopady_vento_fresko
 sourceSnapshot: https://drive.google.com/file/d/1rwIPfMqcXTTB1gUsIevIdvvUEq0ASXTw/view?usp=drivesdk
 hero:
-  src: https://brasiltours.ru/image/costa%20rica%20monteverde%20cloud%20forest.png
+  src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
   alt: 'на фото: Облачный лес Монтеверде в Коста-Рике'
 themes: ["theme_wildlife"]
 ---

@@ -96,7 +96,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/costa%20rica%20monteverde%20cloud%20forest.png
+  - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
     alt: Монтеверде
 - day: 6
   title: Национальный парк Мануэль-Антонио
@@ -121,7 +121,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa1.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - транспорт;

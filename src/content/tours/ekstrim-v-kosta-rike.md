@@ -38,7 +38,7 @@ itinerary:
 
     **Размещение:** Barceló San Jose Palacio.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa1.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Сан-Хосе - Тортугеро
@@ -54,7 +54,7 @@ itinerary:
   images:
   - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
-  - src: https://brasiltours.ru/image/san%20jose%20costa1.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 3
   title: Тортугеро
@@ -128,7 +128,7 @@ itinerary:
     \nЗатем путь продолжится в Монтеверде. В активной части дня запланирован банджи-прыжок с высоты 140 м и полет в стиле\
     \ «Супермен» по тросу длиной 1000 м.\n\n**Размещение:** El Establo.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/costa%20rica%20monteverde%20cloud%20forest.png
+  - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
     alt: Монтеверде
   - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
@@ -139,7 +139,7 @@ itinerary:
   text: "Переезд к Тихому океану. После нескольких насыщенных дней этот день оставлен для пляжа и отдыха без обязательной\
     \ экскурсионной программы.\n\n**Размещение:** Wyndham Tamarindo.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/costa%20rica%20monteverde%20cloud%20forest.png
+  - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
     alt: Монтеверде
 - day: 10
   title: Спортивная рыбалка у Фламинго
@@ -175,7 +175,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa1.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - Услуги русскоговорящего гида.

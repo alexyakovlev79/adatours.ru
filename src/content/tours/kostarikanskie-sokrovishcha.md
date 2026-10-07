@@ -43,7 +43,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa1.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Плантация Doka - вулкан Поас - Ла-Пас - Ареналь
@@ -270,7 +270,7 @@ priceFrom: 5638
 currency: USD
 priceNote: $5638
 hero:
-  src: https://brasiltours.ru/image/CostaRicaJungle11.png
+  src: /media/tours/kostarikanskie-sokrovishcha/hero-src-enhanced-20261007.webp
   alt: Костариканские сокровища
 routeCountries:
 - country_costa_rica

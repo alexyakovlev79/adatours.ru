@@ -110,7 +110,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/arenal%20volcano%20costa.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 5
   title: Заповедник Каньо-Негро
@@ -162,7 +162,7 @@ itinerary:
 
     Включены завтрак и ужин.
   images:
-  - src: https://brasiltours.ru/image/arenal%20volcano%20costa.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 7
   title: Ареналь - Монтеверде и ферма Trapiche
@@ -186,7 +186,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/costa%20rica%20monteverde%20cloud%20forest.png
+  - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
     alt: Монтеверде
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
@@ -213,7 +213,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/costa%20rica%20monteverde%20cloud%20forest.png
+  - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
     alt: Монтеверде
 - day: 9
   title: Монтеверде - север Тихого океана
@@ -226,7 +226,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/costa%20rica%20monteverde%20cloud%20forest.png
+  - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
     alt: Монтеверде
 - day: 10
   title: Северное побережье Тихого океана
@@ -325,7 +325,7 @@ priceFrom: 5345
 currency: USD
 priceNote: $5345
 hero:
-  src: https://brasiltours.ru/image/countries/costa-rica/samuel-charron-7c7jwyznvlg-unsplash.jpg
+  src: /media/tours/3-shaga-po-kosta-rike/hero-src-enhanced-20261007.webp
   alt: Красивая Коста Рика
 routeCountries:
 - country_costa_rica

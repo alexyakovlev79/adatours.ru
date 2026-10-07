@@ -12,10 +12,10 @@ priceFrom: 103
 currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_54_43.png"
+  src: "/media/excursions/peujja-i-vodopady-petroje/hero-src-enhanced-20261007.webp"
   alt: "Пеуйла и Водопады  Петроэ"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_112.png"
+  - src: "/media/excursions/peujja-i-vodopady-petroje/gallery-0-src-enhanced-20261007.webp"
     alt: ""
 route: []
 lead: "Экскурсия в Пеуйлу и к водопадам Петроэ в Чили."
@@ -32,3 +32,4 @@ themes: ["theme_wildlife"]
 Стоимость экскурсии — $103 на человека.
 
 Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения.
+

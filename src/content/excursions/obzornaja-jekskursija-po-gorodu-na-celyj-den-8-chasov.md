@@ -15,14 +15,14 @@ priceFrom: 183
 currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_57_122.png"
+  src: "/media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/hero-src-enhanced-20261007.webp"
   alt: "Обзорная экскурсия по Сан Пауло"
 gallery:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
     alt: ""
   - src: /media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-enhanced-20261006.webp
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/s/a/saopaulo_3.jpg"
+  - src: "/media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-src-enhanced-20261007.webp"
     alt: ""
 route: []
 lead: "Обзорная экскурсия по Сан-Паулу на целый день продолжительностью 8 часов."
@@ -39,3 +39,4 @@ themes: ["theme_culture"]
 Стоимость экскурсии — $183 на человека.
 
 Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения.
+

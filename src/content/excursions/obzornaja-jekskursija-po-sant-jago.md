@@ -14,12 +14,12 @@ priceFrom: 80
 currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_54_54.png"
+  src: "/media/excursions/obzornaja-jekskursija-po-sant-jago/hero-src-enhanced-20261007.webp"
   alt: "Обзорная экскурсия по Сантьяго"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_124.png"
+  - src: "/media/excursions/obzornaja-jekskursija-po-sant-jago/gallery-0-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_57_27.png"
+  - src: "/media/excursions/obzornaja-jekskursija-po-sant-jago/gallery-1-src-enhanced-20261007.webp"
     alt: ""
 route: []
 lead: "Обзорная экскурсия по Сантьяго в Чили."
@@ -36,3 +36,4 @@ themes: ["theme_culture"]
 Стоимость экскурсии — $80 на человека.
 
 Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения.
+

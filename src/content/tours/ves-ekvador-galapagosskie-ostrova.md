@@ -14,8 +14,8 @@ lead: Кито и линия экватора, озеро Килотоа, вод
 durationDays: 11
 durationNights: 10
 hero:
-  src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp"
-  alt: Эквадор + Галапагосские острова
+  src: "/media/tours/ves-ekvador-galapagosskie-ostrova/hero-bartolome-generated-enhanced-20261007.webp"
+  alt: "Панорама острова Бартоломе на Галапагосах: скала Пиннакл, вулканический берег и две бухты"
 currency: USD
 priceFrom: 4260
 priceNote: 'Тариф программы 2027 года: 4260 USD на человека при двухместном размещении. Международные и внутренние

@@ -37,7 +37,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Сан-Хосе - Национальный парк Тортугеро
@@ -71,9 +71,9 @@ itinerary:
 
     В этот день включены завтрак, обед и ужин.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20cost1.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 3
   title: Национальный парк Тортугеро
@@ -98,7 +98,7 @@ itinerary:
 
     В этот день включены завтрак, обед и ужин.
   images:
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 4
   title: Тортугеро - Сан-Хосе - плантация Doka - Ла-Пас
@@ -128,7 +128,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/san%20jose%20costa.png
     alt: Сан Хосе
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 5
   title: Сан-Хосе
@@ -139,7 +139,7 @@ itinerary:
 
     На этом программа заканчивается.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - Все трансферы.
@@ -167,7 +167,7 @@ priceFrom: 1709
 currency: USD
 priceNote: $1709
 hero:
-  src: https://brasiltours.ru/image/sanjose06.jpg
+  src: /media/tours/costa-rica/itinerary-1-images-0-src-enhanced-20261007.webp
   alt: Базовая Коста-Рика
 routeCountries:
 - country_costa_rica

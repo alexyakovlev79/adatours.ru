@@ -45,7 +45,7 @@ itinerary:
 
     Ночь в отеле **Barceló San Jose Palacio**.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Кофейная плантация Doka, вулкан Поас и Ла-Пас

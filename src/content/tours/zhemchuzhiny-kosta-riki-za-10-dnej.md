@@ -89,7 +89,7 @@ itinerary:
 
     Питание: завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/arenal%20volcano%20costa%20r.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 5
   title: Ареналь и Рио-Селесте
@@ -107,7 +107,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/arenal%20volcano%20costa%20r.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 6
   title: Ареналь - Монтеверде
@@ -123,7 +123,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/arenal%20volcano%20costa%20r.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 7
   title: Монтеверде - Мануэль-Антонио
@@ -204,7 +204,7 @@ priceNote: $5605.
 durationDays: 10
 durationNights: 9
 hero:
-  src: https://brasiltours.ru/image/costa%20ric1.png
+  src: /media/tours/5-chudes-kosta-riki/hero-src-enhanced-20261007.webp
   alt: Жемчужины Коста-Рики за 10 дней
 routeCountries:
 - country_costa_rica

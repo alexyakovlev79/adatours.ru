@@ -307,7 +307,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-right.jpg
     alt: 'На фото: вулкан Ареналь в Коста-Рике'
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 19
   title: Сан-Хосе
@@ -318,7 +318,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - Русскоговорящий гид.

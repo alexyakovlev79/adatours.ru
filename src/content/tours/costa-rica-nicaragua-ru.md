@@ -48,7 +48,7 @@ itinerary:
 
     **Ночь:** Barceló San Jose Palacio.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20cost1.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Кофейная плантация Doka - вулкан Поас - Ла-Пас
@@ -84,7 +84,7 @@ itinerary:
     \ продолжается к северному подножию вулкана Ареналь и городу Ла-Фортуна.\n\nПо прибытии отдых в термальных источниках.\n\
     \n**Ночь:** Arenal Paraíso Resort & SPA.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 5
   title: Ареналь
@@ -108,7 +108,7 @@ itinerary:
     \ на лошадях.\n\nПосле прогулки традиционный коста-риканский обед.\n\nЗатем переезд в Монтеверде.\n\n**Ночь:** El Establo.\
     \  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 7
   title: Монтеверде - Гранада
@@ -206,7 +206,7 @@ priceFrom: 6688
 currency: USD
 priceNote: $6688
 hero:
-  src: https://brasiltours.ru/image/costa%20ric1.png
+  src: /media/tours/5-chudes-kosta-riki/hero-src-enhanced-20261007.webp
   alt: Коста Рика и  Никарагуа
 routeCountries:
 - country_costa_rica

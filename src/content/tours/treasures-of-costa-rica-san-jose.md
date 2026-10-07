@@ -32,7 +32,7 @@ itinerary:
 
     В этот день вам подробно расскажут о предстоящем путешествии и последовательности переездов. Ночь в отеле.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Сан-Хосе - Сьерпе - Корковадо
@@ -47,7 +47,7 @@ itinerary:
 
     Размещение в Casa Corcovado. Включены завтрак, обед и ужин.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 3
   title: Национальный парк Корковадо
@@ -84,7 +84,7 @@ itinerary:
 
     Последний день полностью посвящен обратной дороге после нескольких дней на тихоокеанском побережье.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - Русскоговорящий гид.
@@ -111,7 +111,7 @@ priceFrom: 3836
 currency: USD
 priceNote: $3836
 hero:
-  src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
   alt: Настоящие Сокровища Коста-Рики
 routeCountries:
 - country_costa_rica

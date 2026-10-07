@@ -52,7 +52,7 @@ itinerary:
     \ Тортугеро. При желании можно посетить Музей Зеленых Черепах.\n\nПосле прогулки возвращение в лодж.\n\n**Размещение:**\
     \ Mawamba Lodge Tortuguero.  \n**Питание:** завтрак, обед, ужин."
   images:
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
   - src: https://brasiltours.ru/image/san%20jose%20costa1.png
     alt: Сан Хосе
@@ -65,7 +65,7 @@ itinerary:
     \ и птицами, для которых эти каналы служат естественной средой обитания.\n\nПосле экскурсии возвращение в лодж.\n\n**Размещение:**\
     \ Mawamba Lodge Tortuguero.  \n**Питание:** завтрак, обед, ужин."
   images:
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 4
   title: Тортугеро - рафтинг по реке Пакуаре
@@ -80,7 +80,7 @@ itinerary:
     \ столовой открывается вид на реку. Вечером предусмотрены бесплатные алкогольные напитки в формате happy hour и ужин.\n\
     \n**Размещение:** Ríos Tropicales Lodge.  \n**Питание:** завтрак, обед, ужин."
   images:
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 5
   title: Пакуаре
@@ -202,7 +202,7 @@ priceFrom: 8610
 currency: USD
 priceNote: $8610
 hero:
-  src: https://brasiltours.ru/image/San%20Jos.png
+  src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
   alt: Экстремальная Коста-Рика
 routeCountries:
 - country_costa_rica

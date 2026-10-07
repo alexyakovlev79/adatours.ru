@@ -51,7 +51,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/san%20jose.png
     alt: Сан Хосе
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 3
   title: Национальный парк Тортугеро
@@ -62,7 +62,7 @@ itinerary:
     \ прогулка по природным тропам.\n\nВозвращение в лодж.\n\n**Размещение:** Pachira Lodge Tortuguero.  \n**Питание:** завтрак,\
     \ обед, ужин."
   images:
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 4
   title: Тортугеро - Сан-Хосе - вулкан Поас - Ла-Пас - Сан-Хосе
@@ -79,7 +79,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/san%20jose%20costa111.png
     alt: Сан Хосе
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 5
   title: Сан-Хосе

@@ -69,9 +69,9 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/sanjose06.jpg
+  - src: /media/tours/costa-rica/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 3
   title: Национальный парк Тортугеро
@@ -90,7 +90,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 4
   title: Тортугеро - вулкан Ареналь
@@ -106,7 +106,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 5
   title: Вулкан Ареналь

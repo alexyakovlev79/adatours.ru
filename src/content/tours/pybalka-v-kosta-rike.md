@@ -31,7 +31,7 @@ itinerary:
 
     Ночь в **Barceló San Jose Palacio**.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Сан-Хосе - тихоокеанское побережье
@@ -48,7 +48,7 @@ itinerary:
 
     Питание: завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 3
   title: Тихоокеанское побережье
@@ -115,7 +115,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - англоговорящий гид;
@@ -141,7 +141,7 @@ priceFrom: 3825
 currency: USD
 priceNote: $3825
 hero:
-  src: https://brasiltours.ru/image/argentina-fly-fishing_fish_1000x667.jpg
+  src: /media/tours/pybalka-v-kosta-rike/hero-src-enhanced-20261007.webp
   alt: Pыбалка в Коста-Рике
 routeCountries:
 - country_costa_rica

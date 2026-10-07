@@ -33,7 +33,7 @@ itinerary:
 
     **Размещение:** Barceló San Jose Palacio.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20cost1.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Сан-Хосе - Тортугеро
@@ -49,7 +49,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/san%20jose%20costa111.png
     alt: Сан Хосе
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 3
   title: Национальный парк Тортугеро
@@ -60,7 +60,7 @@ itinerary:
     \ предусмотрена пешая прогулка по лесу.\n\nВозвращение в лодж.\n\n**Размещение:** Pachira Lodge Tortuguero.  \n**Питание:**\
     \ завтрак, обед, ужин."
   images:
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 4
   title: Тортугеро - Ареналь
@@ -70,9 +70,9 @@ itinerary:
   text: "Продолжаем путешествие к северному подножию вулкана Ареналь и городу Ла-Фортуна.\n\nПосле прибытия можно отдохнуть\
     \ в термальных источниках.\n\n**Размещение:** Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 5
   title: Ареналь
@@ -83,7 +83,7 @@ itinerary:
     \nТропа Los Tucanes проходит по юго-западному сектору вулкана и через участки застывшей лавы, оставшейся после извержения\
     \ 1968 года.\n\n**Размещение:** Arenal Paraíso.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 6
   title: Сан-Хосе

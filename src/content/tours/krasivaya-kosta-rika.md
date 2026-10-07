@@ -85,7 +85,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
   - src: https://brasiltours.ru/image/san%20jose%20costa11.png
     alt: Сан Хосе
@@ -133,7 +133,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 6
   title: Шоколадная ферма и термальные источники Baldi
@@ -188,7 +188,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/costa%20rica%20monteverde%20cloud%20forest.png
     alt: Монтеверде
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 8
   title: Монтеверде и облачный лес Selvatura

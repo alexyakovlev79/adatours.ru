@@ -74,7 +74,7 @@ itinerary:
   images:
   - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: город Богота в Колумбии'
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_49_19.png
+  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-3-images-1-src-enhanced-20261007.webp
     alt: 'На фото: город Картахена в Колумбии'
 - day: 5
   title: Картахена - острова Росарио
@@ -89,7 +89,7 @@ itinerary:
     \  \n**Включено:** групповая поездка на острова, трансфер отель - пристань - отель и типичный карибский обед.  \n**Не\
     \ включено:** налог Coralia $10 с человека и вход в океанариум $10 с человека."
   images:
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_49_19.png
+  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-3-images-1-src-enhanced-20261007.webp
     alt: 'На фото: город Картахена в Колумбии'
 - day: 6
   title: Картахена - вылет домой
@@ -100,7 +100,7 @@ itinerary:
 
     Перелет домой в стоимость программы не включен.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_49_19.png
+  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-3-images-1-src-enhanced-20261007.webp
     alt: 'На фото: город Картахена в Колумбии'
 included:
 - 3 ночи проживания в Боготе;

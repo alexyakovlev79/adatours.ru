@@ -35,7 +35,7 @@ itinerary:
 
     Ночь в отеле Barceló San Jose Palacio.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Doka - вулкан Поас - Ла-Пас - Ареналь
@@ -59,7 +59,7 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 3
   title: Ареналь
@@ -76,7 +76,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/arenal%20volcano%20costa%20r.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 4
   title: Ареналь - Тихоокеанское побережье
@@ -89,7 +89,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 5
   title: Тихоокеанское побережье
@@ -145,7 +145,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20cost1.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - Русскоговорящий гид.
@@ -172,7 +172,7 @@ priceFrom: 3721
 currency: USD
 priceNote: $3721
 hero:
-  src: https://brasiltours.ru/image/costa%20rica11.png
+  src: /media/tours/3-vzglyada-na-kosta-riku/hero-src-enhanced-20261007.webp
   alt: 3 Взгляда на Коста Рику
 routeCountries:
 - country_costa_rica

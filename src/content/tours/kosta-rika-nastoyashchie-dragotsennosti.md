@@ -32,7 +32,7 @@ itinerary:
   - Сан Хосе
   text: Прибытие в Международный аэропорт Хуана Сантамарии. Встреча в аэропорту и трансфер в отель Palma Real. Ночь в Сан-Хосе.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Сан-Хосе - Национальный парк Корковадо
@@ -48,7 +48,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20cost1.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 3
   title: Национальный парк Корковадо и станция Сирена
@@ -85,7 +85,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/sanjose06.jpg
+  - src: /media/tours/costa-rica/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - Все трансферы.

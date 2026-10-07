@@ -54,7 +54,7 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/arenal%20volcano%20costa%20r.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Вулкан Ареналь в Коста-Рике'
   - src: https://brasiltours.ru/image/san%20jose%20costa11.png
     alt: 'на фото: столица - город Сан Хосе в Коста-Рике'
@@ -75,7 +75,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/arenal%20volcano%20costa%20r.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Вулкан Ареналь в Коста-Рике'
 - day: 4
   title: Ареналь - северное побережье Тихого океана
@@ -88,7 +88,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/arenal%20volcano%20costa%20r.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Вулкан Ареналь в Коста-Рике'
 - day: 5
   title: Северное побережье Тихого океана

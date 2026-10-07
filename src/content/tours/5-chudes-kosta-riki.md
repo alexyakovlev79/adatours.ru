@@ -165,7 +165,7 @@ priceFrom: 5389
 currency: USD
 priceNote: $5389
 hero:
-  src: https://brasiltours.ru/image/costa%20ric1.png
+  src: /media/tours/5-chudes-kosta-riki/hero-src-enhanced-20261007.webp
   alt: 5 Чудес Коста Рики
 routeCountries:
 - country_costa_rica

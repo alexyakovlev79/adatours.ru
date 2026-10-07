@@ -88,7 +88,7 @@ itinerary:
 
     Отдых после перелета.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Сан Хосе, столица Коста Рики'
 - day: 2
   title: Ареналь и заповедник Каньо-Негро
@@ -106,7 +106,7 @@ itinerary:
 
     После завершения тура - обед и возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Национальный Парк Вулкан Ареналь в Коста-Рике'
 - day: 3
   title: Шоколадный тур и прогулка у вулкана Ареналь
@@ -127,7 +127,7 @@ itinerary:
 
     Экскурсия рассчитана примерно на 12 часов и начинается рано утром.
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Национальный Парк Вулкан Ареналь в Коста-Рике'
 - excursionRef: excursion_costa_rica_monteverde_viento_fresco_day_trip
   places: []
@@ -165,7 +165,7 @@ itinerary:
 
     Возвращение в Hotel el Silencio Relais & Chateaux.
   images:
-  - src: https://brasiltours.ru/image/arenal%20park%20costa.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Национальный Парк Вулкан Ареналь в Коста-Рике'
 - day: 6
   title: Кофейная плантация Дока, вулкан Поас и водопады Ла-Пас
@@ -261,7 +261,7 @@ itinerary:
 
     После прибытия - вылет домой.
   images:
-  - src: https://brasiltours.ru/image/San%20Jos.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Сан Хосе, столица Коста Рики'
 included:
 - Проживание в отелях на базе завтраков или на отдельно оговоренных условиях.

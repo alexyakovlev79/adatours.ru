@@ -32,7 +32,7 @@ itinerary:
   - Сан Хосе
   text: Прибытие в международный аэропорт Хуан Сантамарии. В аэропорту вас встретят и отвезут в отель. Ночь в Palma Real.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20cost1.png
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Сан-Хосе - Национальный парк Тортугеро
@@ -50,7 +50,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/san%20jose%20costa.png
     alt: Сан Хосе
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 3
   title: Национальный парк Тортугеро - вулкан Аренал
@@ -66,7 +66,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/tortugoero%20national%20park.png
+  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
 - day: 4
   title: Вулкан Аренал

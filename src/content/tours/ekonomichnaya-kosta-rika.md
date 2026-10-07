@@ -48,7 +48,7 @@ itinerary:
     \ Тортугеро. Около 17:30 возвращение в лодж. До ужина можно отдохнуть у бассейна или провести время в баре. Ужин подают\
     \ с 19:30 до 21:00. После него свободный вечер.\n\nНочь в отеле.  \n**Питание:** завтрак, обед, ужин."
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa.png
+  - src: /media/tours/costa-rica/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
   - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро

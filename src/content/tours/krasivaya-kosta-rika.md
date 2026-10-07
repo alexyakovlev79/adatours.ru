@@ -39,7 +39,7 @@ itinerary:
 
     После размещения оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa11.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Сан-Хосе
@@ -56,7 +56,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/san%20jose.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 3
   title: Сан-Хосе - вулкан Поас - Ла-Пас - Ареналь
@@ -87,7 +87,7 @@ itinerary:
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
-  - src: https://brasiltours.ru/image/san%20jose%20costa11.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 4
   title: Вулкан Ареналь и подвесные мосты Mistico

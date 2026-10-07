@@ -61,7 +61,7 @@ itinerary:
 
     Включен обед.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa11.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Заповедник Каньо-Негро
@@ -88,7 +88,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 3
   title: Рио-Селесте
@@ -117,7 +117,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/16-costa-rica-celeste-river.jpg
+  - src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: Рио-Селесте
 - day: 4
   title: Аренал - висячие мосты Mistico - Тамариндо
@@ -184,7 +184,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa111.png
+  - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - Транспорт.
@@ -211,7 +211,7 @@ priceFrom: 2498
 currency: USD
 priceNote: $2498
 hero:
-  src: https://brasiltours.ru/image/countries/costa-rica/12.jpg
+  src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/hero-src-enhanced-20261007.webp
   alt: 'Коста Рика: Короткая, но полная программа'
 routeCountries:
 - country_costa_rica

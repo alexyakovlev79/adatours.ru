@@ -56,7 +56,7 @@ itinerary:
   images:
   - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Вулкан Ареналь в Коста-Рике'
-  - src: https://brasiltours.ru/image/san%20jose%20costa11.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: 'на фото: столица - город Сан Хосе в Коста-Рике'
 - day: 3
   title: Вулкан Ареналь
@@ -154,7 +154,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/san%20jose.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: 'на фото: столица - город Сан Хосе в Коста-Рике'
 included:
 - Трансферы и транспорт.

@@ -75,7 +75,7 @@ itinerary:
 
     В этот день включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 3
   title: Заповедник Каньо-Негро
@@ -100,7 +100,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 4
   title: 'Вулкан Ареналь: Mistico, Ecoglide и тропа 1968'
@@ -145,7 +145,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 5
   title: Ареналь - река Тарколес - Мануэль-Антонио
@@ -172,7 +172,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 6
   title: Национальный парк Мануэль-Антонио
@@ -244,7 +244,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa111.png
+  - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - Индивидуальный трансфер и транспорт по программе.

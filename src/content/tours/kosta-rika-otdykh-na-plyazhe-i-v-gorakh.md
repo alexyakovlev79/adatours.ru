@@ -42,7 +42,7 @@ itinerary:
 
     Этот день оставлен без обязательной экскурсионной программы после прибытия.
   images:
-  - src: https://brasiltours.ru/image/Liberia.png
+  - src: /media/tours/kosta-rika-otdykh-na-plyazhe-i-v-gorakh/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Либерия
 - day: 2
   title: 'Ринкон-де-ла-Вьеха: приключенческий день'
@@ -99,7 +99,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/16-costa-rica-celeste-river.jpg
+  - src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: 'Коста Рика: Отдых на пляже и в горах'
 - day: 4
   title: Деревня Малеку - вулкан Ареналь
@@ -128,7 +128,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 5
   title: 'Вулкан Ареналь: Mistico и Arenal Volcano 1968'
@@ -157,7 +157,7 @@ itinerary:
 
     Во время прогулки гид также постарается показать птиц, обезьян и других животных.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 6
   title: Ареналь - Монтеверде
@@ -181,7 +181,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 7
   title: Монтеверде - северное Тихоокеанское побережье
@@ -217,7 +217,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/Liberia.png
+  - src: /media/tours/kosta-rika-otdykh-na-plyazhe-i-v-gorakh/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Либерия
 included:
 - Трансферы.
@@ -243,7 +243,7 @@ priceFrom: 3001
 currency: USD
 priceNote: $3001
 hero:
-  src: https://brasiltours.ru/image/countries/costa-rica/16-costa-rica-celeste-river.jpg
+  src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
   alt: 'Коста Рика: Отдых на пляже и в горах'
 routeCountries:
 - country_costa_rica

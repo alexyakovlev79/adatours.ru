@@ -35,7 +35,7 @@ itinerary:
 
     **Размещение:** Barceló San Jose Palacio.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa111.png
+  - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
   title: Сан-Хосе - Тортугеро
@@ -49,7 +49,7 @@ itinerary:
     \ Музей зеленых черепах.\n\nПосле прогулки возвращение в отель.\n\n**Размещение:** Pachira Lodge Tortuguero.  \n**Питание:**\
     \ завтрак, обед, ужин."
   images:
-  - src: https://brasiltours.ru/image/san%20jose.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
   - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
@@ -77,7 +77,7 @@ itinerary:
     \ можно посетить галерею колибри, серпентарий, дом птиц, сад бабочек и экспозицию лягушек.\n\nПосле экскурсии трансфер\
     \ обратно в Сан-Хосе.\n\n**Размещение:** Barceló San José Palacio.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa111.png
+  - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
   - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро
@@ -90,7 +90,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/san%20jose.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - услуги русскоговорящего гида;
@@ -118,7 +118,7 @@ priceFrom: 2226
 currency: USD
 priceNote: $2226
 hero:
-  src: https://brasiltours.ru/image/countries/costa-rica/16-costa-rica-celeste-river.jpg
+  src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
   alt: Коста Рика за 5 дней
 routeCountries:
 - country_costa_rica

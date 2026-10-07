@@ -99,7 +99,7 @@ itinerary:
     \ к северному подножию вулкана Ареналь и городу Ла-Фортуна. Здесь можно восстановиться после реки в термальных источниках.\n\
     \n**Размещение:** Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 7
   title: 'Ареналь: каньонинг и квадроциклы'
@@ -114,7 +114,7 @@ itinerary:
     \ У реки Ареналь будет время для небольшого перекуса и купания. Затем возвращение на базу и в отель.\n\n**Размещение:**\
     \ Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 8
   title: Ареналь - Монтеверде
@@ -130,7 +130,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/costa%20rica%20monteverde%20cloud%20forest.png
     alt: Монтеверде
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 9
   title: Монтеверде - Тихоокеанское побережье

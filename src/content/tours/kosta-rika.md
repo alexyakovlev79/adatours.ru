@@ -126,7 +126,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa.png
+  - src: /media/tours/costa-rica/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
   - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Тортугуэро

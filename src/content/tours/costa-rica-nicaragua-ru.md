@@ -72,7 +72,7 @@ itinerary:
     \ Тортугеро к отелю.\n\nПосле обеда прогулка по поселку Тортугеро. Здесь можно посетить Музей зеленых черепах.\n\nВозвращение\
     \ в отель.\n\n**Ночь:** Pachira Lodge Tortuguero.  \n**Питание:** завтрак, обед, ужин."
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa.png
+  - src: /media/tours/costa-rica/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 4
   title: Тортугеро - Ареналь
@@ -175,7 +175,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/san%20jose.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - русскоговорящий гид;

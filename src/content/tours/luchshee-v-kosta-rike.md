@@ -89,7 +89,7 @@ itinerary:
 
     Питание: завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 5
   title: Ареналь
@@ -104,7 +104,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 6
   title: Ареналь - Монтеверде
@@ -120,7 +120,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-left.jpg
+  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 7
   title: Монтеверде
@@ -207,7 +207,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa2.png
+  - src: /media/tours/luchshee-v-kosta-rike/itinerary-12-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 14
   title: Сан-Хосе
@@ -218,7 +218,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/san%20jose.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 included:
 - Услуги русскоговорящего гида.

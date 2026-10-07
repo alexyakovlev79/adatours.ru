@@ -20,7 +20,7 @@ hero:
   src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
   alt: "на фото: Остров Северный Сеймур на Галапагосских острова Эквадора"
 gallery:
-  - src: "https://brasiltours.ru/image/galapagos%20baltra1.png"
+  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: Остров Северный Сеймур на Галапагосских острова Эквадора"
   - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: Остров Северный Сеймур на Галапагосских острова Эквадора"

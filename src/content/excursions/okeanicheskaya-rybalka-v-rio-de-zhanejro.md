@@ -15,12 +15,12 @@ priceFrom: 1350
 currency: "USD"
 priceNote: "Цена — $1350 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/ribalka-v-rio.jpg"
+  src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/hero-src-enhanced-20261007.webp"
   alt: "На фото: Рыбак с пойманной рыбой, Рио-де-Жанейро"
 gallery:
-  - src: "https://brasiltours.ru/image/fish2.png"
+  - src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/gallery-0-src-enhanced-20261007.webp"
     alt: "На фото: Океаническая рыбалка в Рио"
-  - src: "https://brasiltours.ru/image/fishing.png"
+  - src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Мужчина с рыбой на рыбалке в Рио-де-Жанейро"
   - src: "https://brasiltours.ru/image/fih1.png"
     alt: "На фото: Океаническая рыбалка в Рио-де-Жанейро"

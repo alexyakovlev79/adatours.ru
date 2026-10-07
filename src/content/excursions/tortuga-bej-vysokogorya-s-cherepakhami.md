@@ -17,14 +17,14 @@ priceFrom: 240
 currency: "USD"
 priceNote: "Стоимость — $660. При группе из 2 человек — $375 на человека; из 3 человек — $278 на человека; из 4 человек — $240 на человека."
 hero:
-  src: "https://brasiltours.ru/image/galapagos-sea-turtle.jpg"
+  src: "/media/excursions/tortuga-bej-vysokogorya-s-cherepakhami/hero-src-enhanced-20261007.webp"
   alt: "на фото: Галапагосские острова и галапагосская черепаха"
 gallery:
-  - src: "https://brasiltours.ru/image/galapagos%20baltra1.png"
+  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: Галапагосские острова в Эквадоре"
-  - src: "https://brasiltours.ru/image/countries/equador/img-20210923-wa0030.jpg"
+  - src: "/media/excursions/tortuga-bej-vysokogorya-s-cherepakhami/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: черепаха на Галапагосских островах"
-  - src: "https://brasiltours.ru/image/countries/equador/img-20210923-wa0037.jpg"
+  - src: "/media/excursions/tortuga-bej-vysokogorya-s-cherepakhami/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: лавовые туннели,  Галапагосские острова в Эквадоре"
   - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
     alt: "на фото: Черепахи на Галапагосских  островах"

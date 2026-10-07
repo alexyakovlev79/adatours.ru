@@ -17,10 +17,10 @@ priceFrom: 300
 currency: "USD"
 priceNote: "Стоимость — $300."
 hero:
-  src: "https://brasiltours.ru/image/countries/equador/new/ecuador-galapagos.jpg"
+  src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/hero-src-enhanced-20261007.webp"
   alt: "на фото: Галапагосские острова (остров Исабела) в Эквадоре"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/equador/galap-islands.jpg"
+  - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: олуши и Галапагосские острова (остров Исабела) в Эквадоре"
   - src: "https://brasiltours.ru/image/countries/equador/ecu-galapagos-middle.jpg"
     alt: ""

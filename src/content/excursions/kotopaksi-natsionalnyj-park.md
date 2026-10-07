@@ -21,7 +21,7 @@ hero:
 gallery:
   - src: "https://brasiltours.ru/image/countries/equador/img-20210923-wa0029-waifu2x-phot.jpg"
     alt: "на фото:вулкан Котопакси (Котопахи) в Эквадоре"
-  - src: "https://brasiltours.ru/image/countries/equador/equador-national-park-cotopaxi.png"
+  - src: "/media/excursions/kotopaksi-natsionalnyj-park/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото:вулкан Котопакси (Котопахи) в Эквадоре"
 route:
   - "Кито"

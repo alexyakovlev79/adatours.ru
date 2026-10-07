@@ -20,9 +20,9 @@ hero:
   src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
   alt: Кофейные зерна колумбийского кофе
 gallery:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0159.jpg
+  - src: "/media/excursions/kofejnyj-tur-v-perejra/gallery-0-src-enhanced-20261007.webp"
     alt: Кофейные напитки в Колумбии
-  - src: https://brasiltours.ru/image/choco.png
+  - src: "/media/excursions/kofejnyj-tur-v-perejra/gallery-1-src-enhanced-20261007.webp"
     alt: Продукты на основе кофе
 route:
   - Перейра

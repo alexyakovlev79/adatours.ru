@@ -23,11 +23,11 @@ hero:
 gallery:
   - src: https://brasiltours.ru/image/montevid11.png
     alt: Городской пейзаж Монтевидео
-  - src: https://brasiltours.ru/image/montevideo2.png
+  - src: "/media/excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej/gallery-1-src-enhanced-20261007.webp"
     alt: Монтевидео и побережье Рио-де-ла-Плата
   - src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
     alt: Монтевидео, столица Уругвая
-  - src: https://brasiltours.ru/image/montevid.png
+  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/hero-src-enhanced-20261007.webp"
     alt: Панорама Монтевидео
 route:
   - набережная Рамбла

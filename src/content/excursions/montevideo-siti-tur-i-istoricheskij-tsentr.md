@@ -18,7 +18,7 @@ priceFrom: 625
 currency: USD
 priceNote: "Основная стоимость — $625. Для группы из 2–4 человек в исходной программе отдельно указано $313 на человека."
 hero:
-  src: https://brasiltours.ru/image/montevid.png
+  src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/hero-src-enhanced-20261007.webp"
   alt: Монтевидео, столица Уругвая
 gallery:
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-0-src-enhanced-20261007.webp"

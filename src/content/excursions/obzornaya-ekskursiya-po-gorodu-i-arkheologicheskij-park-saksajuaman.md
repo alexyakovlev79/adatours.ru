@@ -18,10 +18,10 @@ priceFrom: 223
 currency: USD
 priceNote: "Основная стоимость — $223. Для 2 человек — $144 на человека, для 3 человек — $119 на человека, для 4 человек — $105 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/peru/qenqo-peru.jpg
+  src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/hero-src-enhanced-20261007.webp"
   alt: Кенко рядом с Куско, Перу
 gallery:
-  - src: https://brasiltours.ru/image/countries/peru/sacsaumen-peru.jpg
+  - src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-0-src-enhanced-20261007.webp"
     alt: Саксайуаман в Куско, Перу
   - src: https://brasiltours.ru/image/countries/peru/puca-pucara.jpg
     alt: Пука-Пукара рядом с Куско

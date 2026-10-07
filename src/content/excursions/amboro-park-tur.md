@@ -18,14 +18,14 @@ priceFrom: 733
 currency: USD
 priceNote: "Основная стоимость — $733. Для 2 человек — $389 на человека, для 3 человек — $289 на человека."
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/amboro-national-park.jpg
+  src: "/media/excursions/amboro-park-tur/hero-src-enhanced-20261007.webp"
   alt: Облачный лес национального парка Амборо в Боливии
 gallery:
-  - src: https://brasiltours.ru/image/countries/bolivia/rock-formation-in-amboro-national-park.jpg
+  - src: "/media/excursions/amboro-park-tur/gallery-0-src-enhanced-20261007.webp"
     alt: Скальные образования в парке Амборо
-  - src: https://brasiltours.ru/image/countries/bolivia/amboro-national-park-waterfall.jpg
+  - src: "/media/excursions/amboro-park-tur/gallery-1-src-enhanced-20261007.webp"
     alt: Водопад в национальном парке Амборо
-  - src: https://brasiltours.ru/image/countries/bolivia/rock-face-of-mountain-in-amboro-national-park.jpg
+  - src: "/media/excursions/amboro-park-tur/gallery-2-src-enhanced-20261007.webp"
     alt: Горные склоны парка Амборо
 route:
   - Санта-Крус

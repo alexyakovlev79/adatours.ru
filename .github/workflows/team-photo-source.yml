@@ -1,0 +1,21 @@
+name: Fetch official team photo
+on:
+  push:
+    branches: [work/team-photo-20261007]
+    paths: [.github/workflows/team-photo-source.yml]
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download official team image
+        run: |
+          mkdir -p source
+          curl -fL --connect-timeout 20 --max-time 90 'https://adatours.com/assets/fastweb/img/adatoursTeam.webp' -o source/team-original.webp
+          test -s source/team-original.webp
+      - uses: actions/upload-artifact@v4
+        with:
+          name: official-team-photo
+          path: source/team-original.webp
+          retention-days: 1

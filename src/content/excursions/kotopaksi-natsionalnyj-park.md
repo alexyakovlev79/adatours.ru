@@ -16,7 +16,7 @@ priceFrom: 188
 currency: "USD"
 priceNote: "Стоимость — $563. Для группы от 2 человек — $285 на человека; от 3 человек — $240 на человека; от 4 человек — $188 на человека."
 hero:
-  src: "https://brasiltours.ru/image/countries/equador/equador-quito-waifu2x-photo-noise1-scale-waifu2x-photo-noise1-scale.jpg"
+  src: "/media/excursions/kotopaksi-natsionalnyj-park/hero-src-enhanced-20261007.webp"
   alt: "на фото:вулкан Котопакси (Котопахи) в Эквадоре"
 gallery:
   - src: "https://brasiltours.ru/image/countries/equador/img-20210923-wa0029-waifu2x-phot.jpg"
@@ -58,4 +58,5 @@ themes: ["theme_wildlife"]
 ## Котопакси — сердце Эквадора
 
 Котопакси — это величественный вулкан, чья заснеженная вершина словно венчает небо, вызывая восхищение своей непоколебимой силой и природным великолепием. Подняться на склоны Котопакси — значит прикоснуться к вечности, где каждый шаг открывает панорамы на бескрайние равнины и суровые горные пейзажи.
+
 

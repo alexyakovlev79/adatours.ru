@@ -20,9 +20,9 @@ hero:
 gallery:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: "На фото: Буэнос-Айрес Аргентина"
-  - src: "https://brasiltours.ru/image/countries/argentina/bue-a.jpg"
+  - src: "/media/excursions/rafain-shou/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Мясное блюдо ресторана Rafain Grill Place"
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_73_56.png"
+  - src: "/media/excursions/rafain-shou/gallery-2-src-enhanced-20261007.webp"
     alt: "На фото: Блюда ресторана Rafain Grill Place"
 route: []
 lead: "Пятичасовое посещение ресторана Rafain Grill Place с разнообразным меню, шведским столом и шоу латиноамериканских артистов. Сбор — у вашего отеля."
@@ -43,4 +43,5 @@ themes: ["theme_culture","theme_gastronomy_wine"]
 Rafain Grill Place — это огромный ресторан на 1200 мест с кондиционером и автостоянкой. Меню ресторана очень разнообразно, и вы можете попробовать множество мясных блюд, приготовленных из свежайшей говядины и свинины. Шведский стол в изобилии представлен овощами, фруктами и вкусным десертом.
 
 Обед сопровождается шоу латиноамериканских артистов, которые представляют и фольклорные песнопения, и современные танцы. Посещение ресторана ежедневно в 19:50. Сбор — у вашего отеля.
+
 

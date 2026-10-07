@@ -18,7 +18,7 @@ hero:
   src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/hero-enhanced-20261006.webp
   alt: "Лапа--шоу ночного Рио-де-Жанейро"
 gallery:
-  - src: "https://brasiltours.ru/image/caipirinha.png"
+  - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-0-src-enhanced-20261007.webp"
     alt: ""
   - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-2-enhanced-20261006.webp"
     alt: ""
@@ -47,4 +47,5 @@ themes: ["theme_culture"]
 Рио-де-Жанейро — богемная Лапа. Продолжительность экскурсии — 6 часов.
 
 В стоимость входят транспорт и услуги гида. Напитки оплачиваются дополнительно.
+
 

@@ -22,7 +22,7 @@ gallery:
     alt: "На фото: Дворец в Петрополисе, Бразилия"
   - src: /media/excursions/royal-petropolis-private-tour-full-day/gallery-2-enhanced-20261006.webp
     alt: "На фото: Кристалл-палас в Петрополисе"
-  - src: "https://brasiltours.ru/image/catalog/product/r/i/rio_crown.jpg"
+  - src: "/media/excursions/royal-petropolis-private-tour-full-day/gallery-2-src-enhanced-20261007.webp"
     alt: "На фото: Корона в музее Петрополиса"
 route:
   - "Рио-де-Жанейро"
@@ -47,4 +47,5 @@ themes: ["theme_culture"]
 ## Стоимость
 
 Стоимость — $170.
+
 

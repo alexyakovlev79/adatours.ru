@@ -17,13 +17,13 @@ hero:
   src: "/media/excursions/urok-serfinga-rio-de-zhanejro/hero-enhanced-20261006.webp"
   alt: "Урок серфинга Рио -де- Жанейро"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/brazil/img-20211017-wa0003.jpg"
+  - src: "/media/excursions/urok-serfinga-rio-de-zhanejro/gallery-0-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/countries/brazil/surfing.jpg"
+  - src: "/media/excursions/urok-serfinga-rio-de-zhanejro/gallery-1-src-enhanced-20261007.webp"
     alt: ""
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp
     alt: ""
-  - src: "https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-11-16-2-53-57.jpg"
+  - src: "/media/excursions/urok-serfinga-rio-de-zhanejro/gallery-3-src-enhanced-20261007.webp"
     alt: ""
 route:
   - "Рио-де-Жанейро"
@@ -48,4 +48,5 @@ themes: ["theme_adventure"]
 А не желаете покорить свою первую волну на Атлантике? Вас ждет яркое приключение во время урока серфинга, который будет проходить на знаменитом пляже Арпоадор (Ипанема), который считается одним из культовых мест для серферов Рио. Здесь открываются замечательные виды на пляжи Ипанема, Леблон, на горы Два брата.
 
 Уроки серфинга можно взять и непрофессионалам, так как англоговорящие инструкторы (русскоязычное сопровождение по запросу) подробно объяснят на берегу все навыки серфинга, а затем уже в океане пройдет практика. В стоимость входит необходимое оборудование: доска для серфинга. Атлантика ждет своих покорителей!
+
 

@@ -17,7 +17,7 @@ priceFrom: 448
 currency: "USD"
 priceNote: "Стоимость — $448."
 hero:
-  src: "https://brasiltours.ru/image/countries/peru/vicunca.jpg"
+  src: "/media/excursions/ekskursiya-na-raduzhnuyu-goru-vinikunka/hero-src-enhanced-20261007.webp"
   alt: "на фото: Виникунка, Радужная Гора, Перу"
 gallery:
   - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-14-enhanced-20260930.webp
@@ -54,4 +54,5 @@ themes: ["theme_adventure","theme_wildlife"]
 ## Стоимость
 
 Стоимость — $448.
+
 

@@ -147,7 +147,7 @@ priceFrom: 2081
 currency: USD
 priceNote: $2081
 hero:
-  src: https://brasiltours.ru/image/countries/costa-rica/filip-mroz-169103-unsplash.jpg
+  src: /media/tours/ekonomichnaya-kosta-rika/hero-src-enhanced-20261007.webp
   alt: Экономичная Коста Рика
 routeCountries:
 - country_costa_rica

@@ -35,7 +35,7 @@ itinerary:
 
     Оставшаяся часть дня свободная. Можно отдохнуть после перелета или начать самостоятельное знакомство со столицей.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 2
   title: Исторический центр и Национальный музей антропологии
@@ -52,7 +52,7 @@ itinerary:
 
     Вечером возвращение в отель и ночевка.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 3
   title: Базилика Гваделупе и Теотиуакан
@@ -83,7 +83,7 @@ itinerary:
 
     Размещение в Agua Escondida 3*, стандартный номер, 1 ночь.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 5
   title: Таско - Акапулько
@@ -152,7 +152,7 @@ priceFrom: 753
 currency: USD
 priceNote: $753
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/mexico-city.png
+  src: /media/tours/meksika-den-mertvykh/hero-src-enhanced-20261007.webp
   alt: 'Мексика: Треугольник Солнца'
 routeCountries:
 - country_mexico

@@ -41,7 +41,7 @@ itinerary:
 
     Размещение в Presidente Intercontinental Polanco 5*, номер Polanco View. Всего в Мехико запланировано 3 ночи.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 2
   title: Мехико-Сити - Сочимилько - гастрономический тур по Койоакану
@@ -54,7 +54,7 @@ itinerary:
 
     Затем вы отправитесь в Койоакан. Гастрономическая прогулка пройдет через рынки, уличные ларьки, семейные рестораны и современные заведения. По дороге гид будет рассказывать истории и местные анекдоты, связанные с кварталом. В результате Койоакан раскрывается одновременно через улицы, людей и еду, которую здесь готовят каждый день.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 3
   title: Мехико-Сити - Теотиуакан - тур по тако и мескалю
@@ -72,7 +72,7 @@ itinerary:
   images:
   - src: /media/countries/mexico/featureBands-1-enhanced-20261002.webp
     alt: Теотиуакан
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 4
   title: Исторический центр Мехико - рынки - перелет в Канкун
@@ -94,7 +94,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/mexico%20cancun.png
     alt: Канкун
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 5
   title: Канкун - Чичен-Ица - сенот

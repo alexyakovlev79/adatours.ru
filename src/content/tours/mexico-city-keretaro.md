@@ -44,7 +44,7 @@ itinerary:
 
     Ночевка в Сан-Мигель-де-Альенде.
   images:
-  - src: https://brasiltours.ru/image/MEXICOCITY-PYRAMIDSSHIREOFGUADALIPE1-770X400.png
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 2
   title: Сан-Мигель-де-Альенде - Долорес Идальго - Гуанахуато

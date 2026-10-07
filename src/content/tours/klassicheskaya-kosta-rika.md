@@ -68,7 +68,7 @@ itinerary:
     \ увидеть кетцаля, священную птицу майя, которая находится на грани исчезновения.\n\nНочь в El Establo Mountain Resort.\
     \  \nПитание: завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/zdenek-machacek-1440919-unsplash.jpg
+  - src: /media/tours/klassicheskaya-kosta-rika/hero-src-enhanced-20261007.webp
     alt: 'на фото: флора и фауна Коста-Рики, Монтеверде'
 - day: 5
   title: Облачный лес Монтеверде
@@ -79,7 +79,7 @@ itinerary:
     \ леса.\n\nТерритория заповедника составляет около 10 000 гектаров. Он входит в сеть охраняемых лесов Коста-Рики и считается\
     \ одним из главных мест страны для наблюдения за природой.\n\nНочь в El Establo Mountain Resort.  \nПитание: завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/zdenek-machacek-1440919-unsplash.jpg
+  - src: /media/tours/klassicheskaya-kosta-rika/hero-src-enhanced-20261007.webp
     alt: 'на фото: флора и фауна Коста-Рики, Монтеверде'
 - day: 6
   title: Сан-Хосе
@@ -116,7 +116,7 @@ priceFrom: 3550
 currency: USD
 priceNote: $3550
 hero:
-  src: https://brasiltours.ru/image/countries/costa-rica/zdenek-machacek-1440919-unsplash.jpg
+  src: /media/tours/klassicheskaya-kosta-rika/hero-src-enhanced-20261007.webp
   alt: 'на фото: флора и фауна Коста-Рики, Монтеверде'
 routeCountries:
 - country_costa_rica

@@ -2,32 +2,94 @@
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Hero from '../../components/editorial/Hero.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
+import { withBase } from '../../lib/paths';
 
+const teamPhoto = '/media/people/team/team-group-enhanced-20261007.webp';
 const people = await getCollection('people', ({ data }) =>
   data.locale === 'ru' && isActiveEntity(data)
 );
-
 const renderedPeople = await Promise.all(
   people.map(async (entry) => {
     const { Content } = await render(entry);
     return { entry, Content };
   })
 );
+
+// Names and responsibilities from the official Ada Tours team introduction.
+const colleagues = [
+  {
+    name: 'Александра',
+    role: 'Менеджер по путешествиям',
+    text: 'Живет в Бразилии. Организует поездки по стране и другим направлениям Латинской Америки, любит исследовать новые места.',
+  },
+  {
+    name: 'Наталия',
+    role: 'Карибы, Доминикана, Куба и Мексика',
+    text: 'Занимается маршрутами по Карибскому региону и Латинской Америке, в том числе поездками со сложной программой.',
+  },
+  {
+    name: 'Иона Алвес',
+    role: 'Координатор поездок',
+    text: 'Работает в туризме с 2009 года. Любит знакомиться с разными культурами и путешествовать активно.',
+  },
+  {
+    name: 'Никита',
+    role: 'Операционный менеджер',
+    text: 'Родом из Москвы, живет и работает с командой в Рио-де-Жанейро. Увлекается мотопутешествиями, дайвингом и сноубордом.',
+  },
+  {
+    name: 'Джована',
+    role: 'Помощник координатора',
+    text: 'Родом из Рио-де-Жанейро. Выбрала туризм, чтобы знакомить людей с любимым городом и помогать воплощать мечты о путешествиях.',
+  },
+  {
+    name: 'Армине',
+    role: 'Контент и разработка туров',
+    text: 'Из Армении. Вместе с Ada Tours открыла для себя Бразилию и Латинскую Америку и освоила работу в туризме.',
+  },
+  {
+    name: 'Ольга',
+    role: 'Маркетинг',
+    text: 'Живет в Нидерландах, много путешествовала по Латинской Америке. Среди ее поездок был 5-дневный поход к Затерянному городу в Колумбии.',
+  },
+  {
+    name: 'Даниэль',
+    role: 'Финансовый директор',
+    text: 'Занимается финансами Ada Tours. В жизни особенно ценит семью и свободу, интересуется новыми технологиями.',
+  },
+];
 ---
 
 <BaseLayout
-  title="Люди, которые собирают ваши поездки"
-  description="Команда Ada Tours: эксперты по Бразилии, Латинской Америке, индивидуальным путешествиям, VIP, MICE и сложным маршрутам."
+  title="Команда Ada Tours: люди, которые организуют ваше путешествие"
+  description="Познакомьтесь с Анной Аванесовой и командой Ada Tours: организаторами путешествий по Бразилии, Латинской Америке и Карибам."
+  image={teamPhoto}
+  headerTheme="dark"
+  leadTitle="Обсудим ваше путешествие с командой Ada Tours"
 >
-  <Hero
-    eyebrow="Ada Tours"
-    title="Команда Ada Tours"
-    intro="Команда Ada Tours в Рио-де-Жанейро работает с частными маршрутами, VIP, группами и MICE по Бразилии и Латинской Америке."
-    compact
-    ctaLabel="Обсудить поездку"
-  />
+  <section class="team-intro section">
+    <p class="eyebrow">Знакомьтесь, Ada Tours</p>
+    <h1>Команда, с которой начинается ваше путешествие</h1>
+    <div class="team-intro__copy">
+      <p class="team-intro__lead">Мы живем в разных странах, путешествуем по Латинской Америке и вместе организуем ваши поездки. Наш офис находится в Рио-де-Жанейро.</p>
+      <div>
+        <p>За каждым маршрутом стоят люди: кто-то помогает выбрать направление, кто-то разрабатывает программу, а кто-то координирует ее на месте. Мы соединяем эту работу в одно путешествие, от первого разговора до возвращения домой.</p>
+        <a class="team-link" href="#request">Обсудить поездку <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <figure class="team-photo">
+      <img
+        src={withBase(teamPhoto)}
+        alt="Групповая фотография команды Ada Tours"
+        width="1536"
+        height="1024"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <figcaption>Команда Ada Tours</figcaption>
+    </figure>
+  </section>
 
   {renderedPeople.map(({ entry, Content }) => (
     <PersonProfile
@@ -40,4 +102,130 @@ const renderedPeople = await Promise.all(
       <Content />
     </PersonProfile>
   ))}
+
+  <section class="team-colleagues section" aria-labelledby="colleagues-title">
+    <div class="team-colleagues__heading">
+      <p class="eyebrow">Люди Ada Tours</p>
+      <h2 id="colleagues-title">Кто помогает вашей поездке состояться</h2>
+      <p>У каждого в команде своя работа и свой опыт путешествий. Вместе мы готовим программы для частных гостей, семей, групп и деловых поездок.</p>
+    </div>
+    <div class="team-grid">
+      {colleagues.map((person) => (
+        <article class="team-member">
+          <h3>{person.name}</h3>
+          <p class="team-member__role">{person.role}</p>
+          <p>{person.text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .team-intro,
+  .team-colleagues {
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+  }
+
+  .team-intro {
+    padding-top: calc(var(--header-h) + clamp(64px, 9vw, 128px));
+  }
+
+  .team-intro h1 {
+    max-width: 1120px;
+    margin: 16px 0 clamp(32px, 5vw, 64px);
+  }
+
+  .team-intro__copy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(32px, 7vw, 100px);
+    align-items: start;
+  }
+
+  .team-intro__copy p {
+    margin: 0;
+  }
+
+  .team-intro__lead {
+    font-size: var(--text-lg);
+  }
+
+  .team-link {
+    display: inline-flex;
+    gap: 24px;
+    margin-top: 24px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid currentColor;
+    font-family: var(--font-display);
+    font-size: .82rem;
+  }
+
+  .team-photo {
+    margin: clamp(40px, 6vw, 80px) 0 0;
+    padding: clamp(16px, 4vw, 56px);
+    background: var(--color-gold-soft);
+  }
+
+  .team-photo img {
+    display: block;
+    width: min(100%, 1120px);
+    height: auto;
+    margin-inline: auto;
+    object-fit: contain;
+  }
+
+  .team-photo figcaption {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--color-muted);
+    font-size: .85rem;
+  }
+
+  .team-colleagues__heading {
+    max-width: 820px;
+    margin-bottom: 48px;
+  }
+
+  .team-colleagues__heading h2 {
+    margin: 16px 0 24px;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 clamp(32px, 7vw, 100px);
+  }
+
+  .team-member {
+    padding: 32px 0;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .team-member h3 {
+    margin: 0 0 10px;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+  }
+
+  .team-member__role {
+    color: var(--color-muted);
+    margin: 0 0 18px;
+  }
+
+  .team-member p:last-child {
+    margin: 0;
+    max-width: 600px;
+  }
+
+  @media (max-width: 720px) {
+    .team-intro__copy,
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .team-photo {
+      padding: 16px 8px;
+    }
+  }
+</style>

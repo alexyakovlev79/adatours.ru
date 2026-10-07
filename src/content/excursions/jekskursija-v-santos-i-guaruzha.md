@@ -20,10 +20,10 @@ hero:
   alt: "Экскурсия в Сантос и Гуаружа"
 gallery:
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_60_76.png"
+    src: "/media/excursions/jekskursija-v-santos-i-guaruzha/gallery-0-src-enhanced-20261008.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_72_50.png"
+    src: "/media/excursions/jekskursija-v-santos-i-guaruzha/gallery-1-src-enhanced-20261008.webp"
     alt: ""
 route: []
 lead: "Экскурсия в Сантос и Гуаружа с русскоговорящим гидом на весь день."

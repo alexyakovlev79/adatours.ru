@@ -14,17 +14,17 @@ priceFrom: 64
 currency: "USD"
 priceNote: "$64 на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_73_44.png"
+  src: "/media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/hero-src-enhanced-20261008.webp"
   alt: "Экскурсия на Бразильскую сторону водопадов"
 gallery:
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_57_118.png"
+    src: "/media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/gallery-0-src-enhanced-20261008.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_60_73.png"
+    src: "/media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/gallery-1-src-enhanced-20261008.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_72_48.png"
+    src: "/media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/gallery-2-src-enhanced-20261008.webp"
     alt: ""
 route: []
 lead: "Экскурсия на бразильскую сторону водопадов."

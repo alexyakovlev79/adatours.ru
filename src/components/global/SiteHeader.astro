@@ -116,7 +116,11 @@ const nestedGroups = NAV_LINKS
     </nav>
 
     <div class="desktop-cta">
-      <SearchTrigger />
+      <SearchTrigger compact />
+      <PrimaryCTA href="/contacts/" label="Оставить заявку" />
+    </div>
+
+    <div class="mobile-cta">
       <PrimaryCTA href="/contacts/" label="Оставить заявку" />
     </div>
 
@@ -484,25 +488,39 @@ const nestedGroups = NAV_LINKS
     padding: 12px 15px;
   }
 
+  .mobile-cta,
   .mobile-search,
   .menu-toggle,
   .mobile-menu {
     display: none;
   }
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1240px) {
     .brand {
       width: 120px;
     }
 
     .site-header__inner {
-      grid-template-columns: 1fr auto auto;
+      grid-template-columns: 1fr auto auto auto;
       gap: 4px;
     }
 
     .desktop-nav,
     .desktop-cta {
       display: none;
+    }
+
+    .mobile-cta {
+      display: block;
+      margin-right: 6px;
+    }
+
+    .mobile-cta :global(.cta) {
+      min-width: auto;
+      gap: 16px;
+      padding: 10px 13px;
+      font-size: .72rem;
+      white-space: nowrap;
     }
 
     .mobile-search {
@@ -734,6 +752,17 @@ const nestedGroups = NAV_LINKS
 
     .mobile-menu__contact :global(.contact-actions) {
       gap: 10px 18px;
+    }
+
+
+    @media (max-width: 620px) {
+      .site-header__inner {
+        grid-template-columns: 1fr auto auto;
+      }
+
+      .mobile-cta {
+        display: none;
+      }
     }
   }
 </style>

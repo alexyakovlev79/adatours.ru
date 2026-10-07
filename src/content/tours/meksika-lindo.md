@@ -41,7 +41,7 @@ itinerary:
 
     **Включено:** групповой трансфер из аэропорта и ночь в отеле в Мехико.
   images:
-  - src: https://brasiltours.ru/image/mexico%20city11.png
+  - src: /media/tours/meksika-lindo/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: столица Мексики, город Мехико'
 - day: 2
   title: Исторический центр и Национальный музей антропологии
@@ -66,7 +66,7 @@ itinerary:
 
     **Включено:** завтрак, групповой трансфер, пешеходная экскурсия с двуязычным англо-испанским гидом по историческому центру и музею, входной билет в Национальный музей антропологии, ночь в Мехико.
   images:
-  - src: https://brasiltours.ru/image/mexico%20city11.png
+  - src: /media/tours/meksika-lindo/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: столица Мексики, город Мехико'
 - day: 3
   title: Теотиуакан и базилика Девы Гваделупской
@@ -101,7 +101,7 @@ itinerary:
     \ групповые трансферы в Мехико и Мериде, обзорная экскурсия с двуязычным англо-испанским гидом, ночь в отеле в Мериде.\n\
     \n**Перелет Мехико - Мерида:** не включен.  \n**Продолжительность экскурсии по Мериде:** около 2 часов."
   images:
-  - src: https://brasiltours.ru/image/mexico%20city11.png
+  - src: /media/tours/meksika-lindo/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: столица Мексики, город Мехико'
 - day: 5
   title: Ушмаль и Кабах
@@ -141,7 +141,7 @@ itinerary:
 
     **Время в пути:** Мерида - Чичен-Ица около 2 часов; Чичен-Ица - Канкун около 3 часов.
   images:
-  - src: https://brasiltours.ru/image/chichen%20itza.png
+  - src: /media/tours/meksika-lindo/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: 'На фото: пирамида Чичен Ица в Мексике'
 included:
 - 5 ночей проживания в стандартных номерах в указанных или аналогичных отелях.

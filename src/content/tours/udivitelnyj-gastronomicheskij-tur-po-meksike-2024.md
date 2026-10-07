@@ -92,7 +92,7 @@ itinerary:
 
     По прибытии встреча и частный трансфер в Presidente Intercontinental Cancún 5*.
   images:
-  - src: https://brasiltours.ru/image/mexico%20cancun.png
+  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Канкун
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
@@ -110,7 +110,7 @@ itinerary:
 
     Затем поездка продолжится в сенот на территории Hacienda Selva Maya. Здесь можно искупаться, пообедать и отдохнуть перед возвращением в Канкун.
   images:
-  - src: https://brasiltours.ru/image/mexico%20cancun.png
+  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Канкун
 - day: 6
   title: Канкун
@@ -118,7 +118,7 @@ itinerary:
   - Канкун
   text: Завтрак. Свободный день.
   images:
-  - src: https://brasiltours.ru/image/mexico%20cancun.png
+  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Канкун
 - day: 7
   title: Канкун - Коба - Тулум - Гран-Сенот
@@ -136,9 +136,9 @@ itinerary:
 
     После археологических памятников вы отправитесь в Гран-Сенот. Здесь можно искупаться в прозрачной воде и увидеть природные образования подземной водной системы.
   images:
-  - src: https://brasiltours.ru/image/Tulum.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Тулум
-  - src: https://brasiltours.ru/image/mexico%20cancun.png
+  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Канкун
 - day: 8
   title: Канкун
@@ -146,7 +146,7 @@ itinerary:
   - Канкун
   text: Завтрак. Свободный день.
   images:
-  - src: https://brasiltours.ru/image/mexico%20cancun.png
+  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Канкун
 - day: 9
   title: Канкун
@@ -154,7 +154,7 @@ itinerary:
   - Канкун
   text: Завтрак. В назначенное время трансфер в аэропорт Канкуна для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/mexico%20cancun.png
+  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Канкун
 included:
 - Проживание в указанном или аналогичном отеле категории 4*/5* в стандартных номерах, включая налоги.
@@ -189,7 +189,7 @@ priceFrom: 3275
 currency: USD
 priceNote: $3275
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/7980940712-4e388768b1-k.jpg
+  src: /media/destinations/palenque/hero-enhanced-20261004.webp
   alt: Удивительный Гастрономический Тур по Мексике
 routeCountries:
 - country_mexico

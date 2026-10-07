@@ -133,7 +133,7 @@ itinerary:
 
     После Чичен-Ицы продолжение пути в Канкун и трансфер в отель. За дополнительную плату $30 США с человека возможен трансфер в отель на Ривьере-Майя или в Тулуме.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/mexico-chichen-itza.png
+  - src: /media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Чичен-Ица
 included:
 - 5 ночей в стандартных номерах в отелях маршрута или аналогичных.

@@ -232,7 +232,7 @@ priceFrom: 6629
 currency: USD
 priceNote: $6629
 hero:
-  src: https://brasiltours.ru/image/countries/panama/8.jpg
+  src: /media/destinations/pearl-islands/hero-enhanced-20261005.webp
   alt: Панама
 routeCountries:
 - country_panama

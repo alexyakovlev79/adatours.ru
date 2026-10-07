@@ -65,9 +65,9 @@ itinerary:
 
     Размещение и ночь в отеле 4* недалеко от руин.
   images:
-  - src: https://brasiltours.ru/image/Tulum.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'На фото: пляжный отдых в Мексике'
-  - src: https://brasiltours.ru/image/cancun-beaches.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: 'На фото: пляжный отдых в Мексике'
 - day: 3
   title: Калакмуль - Паленке
@@ -130,9 +130,9 @@ itinerary:
 
     Далее трансфер в отель в Канкуне или на Ривьере-Майя. Можно продолжить пляжный отдых либо отправиться в международный аэропорт.
   images:
-  - src: https://brasiltours.ru/image/mexico%20chichen%20itza.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: 'На фото: пирамида в Мексике'
-  - src: https://brasiltours.ru/image/cancun.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-5-images-1-src-enhanced-20261007.webp
     alt: 'На фото: пляжный отдых в Мексике'
 included:
 - русскоговорящий гид;
@@ -160,7 +160,7 @@ priceFrom: 3846
 currency: USD
 priceNote: $3846
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/cozumel.jpg
+  src: /media/destinations/cozumel/hero-enhanced-20261005.webp
   alt: 'На фото: курорт Косумель в Мексике'
 routeCountries:
 - country_mexico

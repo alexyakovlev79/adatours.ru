@@ -96,7 +96,7 @@ itinerary:
   images:
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
-  - src: https://brasiltours.ru/image/countries/mexico/san-cristobal-de-las-casas.jpg
+  - src: /media/destinations/san-cristobal-de-las-casas/hero-enhanced-20261004.webp
     alt: Сан Кристобал де Лас Касас
 - day: 5
   title: Паленке
@@ -110,7 +110,7 @@ itinerary:
     был обнаружен только в 1952 году.Среди других зданий, которые вы можете посетить, это "Здание с летучими мышами", "Храм
     Солнца", "Храм Лиственного Креста", "Шаровая игра", среди прочих.Свободное время во второй половине дня.
   images:
-  - src: https://brasiltours.ru/image/Palenque-Chiapas-11.png
+  - src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
     alt: Фантастический Тур по Мексике
 - day: 6
   title: Паленке - Якшилан и Бонампак – Паленке (З)
@@ -124,7 +124,7 @@ itinerary:
     своими яркими фресками, изображающими майскую жизнь и церемонии. Сайт предоставляет взгляд на художественные и культурные
     достижения древних майя.По завершении посещений возвращение в Паленке.
   images:
-  - src: https://brasiltours.ru/image/Palenque-Chiapas-11.png
+  - src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
     alt: Фантастический Тур по Мексике
 - day: 7
   title: Паленке – Агуа-Асул – Сан-Кристобал (Завтрак)
@@ -140,7 +140,7 @@ itinerary:
   images:
   - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Сан Кристобал де Лас Касас
-  - src: https://brasiltours.ru/image/Palenque-Chiapas-11.png
+  - src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
     alt: Фантастический Тур по Мексике
 - day: 8
   title: Сан-Кристобал + Чамула И Зинакантан (Завтрак)
@@ -158,7 +158,7 @@ itinerary:
     - это коренное сообщество, известное своей уникальной духовностью, где божественное сливается с языческим; одной из особенностей
     является церковь Сан-Хуана, где проводятся обряды, сочетающие католические верования с наследственными традициями.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/san-cristobal-de-las-casas.jpg
+  - src: /media/destinations/san-cristobal-de-las-casas/hero-enhanced-20261004.webp
     alt: Сан Кристобал де Лас Касас
 - day: 9
   title: Сан-Кристобал - Сумидеро - Тустла- Кун (З)
@@ -188,7 +188,7 @@ itinerary:
   - Канкун
   text: Завтрак в отеле.День на отдыхе для наслаждения пляжем и морем./
   images:
-  - src: https://brasiltours.ru/image/Cancun-wedding.png
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Канкун
 - day: 12
   title: Канкун (З)
@@ -232,7 +232,7 @@ priceFrom: 4356
 currency: USD
 priceNote: $4356
 hero:
-  src: https://brasiltours.ru/image/Palenque-Chiapas-11.png
+  src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
   alt: Фантастический Тур по Мексике
 routeCountries:
 - country_mexico

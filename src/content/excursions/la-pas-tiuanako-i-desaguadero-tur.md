@@ -20,7 +20,7 @@ hero:
 gallery:
   - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: Ла Пас, столица Боливии"
-  - src: https://brasiltours.ru/image/countries/bolivia/tiwanaku-bolivia1.png
+  - src: "/media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото:Тиуанако, Боливия"
   - src: "/media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото:Тиуанако, Боливия"
@@ -55,4 +55,5 @@ themes: ["theme_culture"]
 Далее вы посетите главные памятники археологического комплекса: пирамиду Акапана, Полуземный храм, храм Каласасайя, монолит Понсе и Ворота Солнца. В Полуземном храме сохранились высеченные каменные головы, а Ворота Солнца украшены сложной резьбой и изображениями, связанными с религиозными представлениями Тиуанако.
 
 После осмотра комплекса маршрут продолжается к Десагуадеро, на границу Боливии и Перу. По прибытии вас встретит перуанский гид для продолжения путешествия на перуанской стороне.
+
 

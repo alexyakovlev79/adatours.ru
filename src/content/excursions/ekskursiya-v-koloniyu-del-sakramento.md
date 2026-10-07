@@ -18,11 +18,11 @@ hero:
   src: /media/countries/uruguay/featureBands-1-enhanced-20261002.webp
   alt: "на фото: Колония-дель-Сакраменто в Уругвае"
 gallery:
-  - src: https://brasiltours.ru/image/colonia%20sacramento.png
+  - src: "/media/excursions/ekskursiya-v-koloniyu-del-sakramento/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: Колония-дель-Сакраменто в Уругвае"
-  - src: https://brasiltours.ru/image/colonia%20del%20sacramento.png
+  - src: "/media/excursions/ekskursiya-v-koloniyu-del-sakramento/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: Колония-дель-Сакраменто в Уругвае"
-  - src: https://brasiltours.ru/image/Colonia%20del%20Sacramento.png
+  - src: "/media/excursions/ekskursiya-v-koloniyu-del-sakramento/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: Колония-дель-Сакраменто в Уругвае"
 route:
   - Монтевидео
@@ -59,3 +59,4 @@ themes: ["theme_culture"]
 По желанию можно посетить Музей Азулехо, Археологический музей и другие местные музеи. В программу также входят Реал-де-Сан-Карлос, Часовня Святого Бенедикта Пальермского и Ферма Арена с коллекцией карандашей, занесенной в Книгу рекордов Гиннесса.
 
 После основной части предусмотрено свободное время. Можно купить сувениры, пообедать, прогуляться по набережной и улицам исторического центра.
+

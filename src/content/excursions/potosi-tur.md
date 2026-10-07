@@ -16,10 +16,10 @@ priceFrom: 50
 currency: "USD"
 priceNote: "Стоимость — $84. 2 участника — $55 на человека. 3 участника — $50 на человека."
 hero:
-  src: "https://brasiltours.ru/image/countries/bolivia/potosi-1.jpg"
+  src: "/media/excursions/potosi-tur/hero-src-enhanced-20261007.webp"
   alt: "на фото: Потоси, Боливия"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/bolivia/potosi-mine.jpg"
+  - src: "/media/excursions/potosi-tur/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: Потоси, Боливия"
   - src: "https://brasiltours.ru/image/countries/bolivia/licensed-image.jpg"
     alt: "на фото: Потоси, Боливия"
@@ -55,4 +55,5 @@ themes: ["theme_culture"]
 |---|---|
 | 2 участника | $55 на человека |
 | 3 участника | $50 на человека |
+
 

@@ -23,15 +23,15 @@ hero:
 gallery:
   - src: "/media/excursions/siti-tur-po-kartakhene/gallery-0-src-enhanced-20261007.webp"
     alt: Картахена, Колумбия
-  - src: https://brasiltours.ru/image/countries/colombia/cartag5.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/gallery-1-src-enhanced-20261007.webp"
     alt: Картахена, Колумбия
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghen-2.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/gallery-2-src-enhanced-20261007.webp"
     alt: Картахена, Колумбия
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena5.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/gallery-3-src-enhanced-20261007.webp"
     alt: Картахена, Колумбия
   - src: "/media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp"
     alt: Картахена, Колумбия
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_48.jpg
+  - src: "/media/excursions/siti-tur-po-kartakhene/gallery-5-src-enhanced-20261007.webp"
     alt: Картахена, Колумбия
 route:
   - Картахена
@@ -62,3 +62,4 @@ themes: ["theme_culture"]
 Следующая часть экскурсии посвящена крепости Сан-Фелипе-де-Барахас. Здесь можно увидеть стены и туннели оборонительного комплекса, который в колониальную эпоху защищал город от нападений.
 
 Маршрут продолжается вдоль улицы Сантандера и старых городских укреплений. В ремесленном центре Лас-Боведас можно посмотреть изделия местных мастеров: украшения, керамику и ткани.
+

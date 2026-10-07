@@ -14,7 +14,7 @@ priceFrom: 250
 currency: "USD"
 priceNote: "$250 на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_114_68.jpg"
+  src: "/media/excursions/jel-val-e-de-anton/hero-src-enhanced-20261008.webp"
   alt: "Эль-Валье-де-Антон"
 gallery: []
 route: []

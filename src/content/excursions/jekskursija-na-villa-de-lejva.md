@@ -15,17 +15,17 @@ priceFrom: 276
 currency: "USD"
 priceNote: "$276 на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_58_21.png"
+  src: "/media/excursions/jekskursija-na-villa-de-lejva/hero-src-enhanced-20261008.webp"
   alt: "Экскурсия на Вилла де Лейва"
 gallery:
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_149.png"
+    src: "/media/excursions/jekskursija-na-villa-de-lejva/gallery-0-src-enhanced-20261008.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_57_39.png"
+    src: "/media/excursions/jekskursija-na-villa-de-lejva/gallery-1-src-enhanced-20261008.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_54_74.png"
+    src: "/media/excursions/jekskursija-na-villa-de-lejva/gallery-2-src-enhanced-20261008.webp"
     alt: ""
 route:
   - "Вилья-де-Лейва"

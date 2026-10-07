@@ -15,20 +15,20 @@ priceFrom: 188
 currency: "USD"
 priceNote: "Стоимость — $188. Экскурсия проводится от 2 человек."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/p/a/panama1.png"
+  src: "/media/excursions/jekskursija-po-panama-siti/hero-src-enhanced-20261008.webp"
   alt: "Экскурсия по Панама- Сити"
 gallery:
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_73.png"
+    src: "/media/excursions/jekskursija-po-panama-siti/gallery-0-src-enhanced-20261008.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_48_57.png"
+    src: "/media/excursions/jekskursija-po-panama-siti/gallery-1-src-enhanced-20261008.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/catalog/product/f/i/file_54_18.png"
+    src: "/media/excursions/jekskursija-po-panama-siti/gallery-2-src-enhanced-20261008.webp"
     alt: ""
   -
-    src: "https://brasiltours.ru/image/catalog/product/p/a/panama2.png"
+    src: "/media/excursions/jekskursija-po-panama-siti/gallery-3-src-enhanced-20261008.webp"
     alt: ""
 route:
   - "Панама-Виехо"

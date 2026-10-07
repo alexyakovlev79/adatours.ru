@@ -25,7 +25,7 @@ gallery:
     alt: Куско, Перу
   - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp"
     alt: Мачу-Пикчу, Перу
-  - src: https://brasiltours.ru/image/peru.png
+  - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-2-src-enhanced-20261008.webp
     alt: Жительница Перу
 route:
   - Куско

@@ -29,9 +29,9 @@ gallery:
     alt: Район Лапа в Рио-де-Жанейро
   - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-2-enhanced-20261006.webp"
     alt: Лапа в вечернем Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-25-11-49-25-590.jpg
+  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-5-src-enhanced-20261008.webp
     alt: Чай и кофе в кафе «Коломбо»
-  - src: https://brasiltours.ru/image/riogid/gid-images/9/file_6.jpg
+  - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-6-src-enhanced-20261008.webp
     alt: Церковь Канделария в Рио-де-Жанейро
 route:
   - Рио-де-Жанейро

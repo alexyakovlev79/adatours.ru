@@ -5,6 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
+import AboutNav from '../../components/commercial/AboutNav.astro';
 import { SITE } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -58,6 +59,8 @@ const personSchema = {
     compact
     ctaLabel="Обсудить маршрут"
   />
+
+  <AboutNav active={isAnna ? 'anna' : 'team'} />
 
   {isAnna && (
     <EditorialStatement

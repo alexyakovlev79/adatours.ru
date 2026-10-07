@@ -1,0 +1,113 @@
+---
+import { ABOUT_NAV_LINKS } from '../../lib/site';
+import { withBase } from '../../lib/paths';
+
+interface Props {
+  active: (typeof ABOUT_NAV_LINKS)[number]['id'];
+}
+
+const { active } = Astro.props;
+---
+
+<div class="about-nav-shell" data-pagefind-ignore>
+  <nav class="about-nav" aria-label="Раздел о компании">
+    {ABOUT_NAV_LINKS.map((link) => (
+      <a
+        href={withBase(link.href)}
+        aria-current={active === link.id ? 'page' : undefined}
+      >
+        {link.label}
+      </a>
+    ))}
+  </nav>
+</div>
+
+<style>
+  .about-nav-shell {
+    background: var(--color-bg);
+  }
+
+  .about-nav {
+    display: flex;
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+    padding: 0 clamp(4px, 1vw, 16px);
+    justify-content: center;
+    gap: clamp(28px, 4.5vw, 78px);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .about-nav a {
+    position: relative;
+    display: inline-flex;
+    min-height: 68px;
+    padding: 0 2px;
+    align-items: center;
+    justify-content: center;
+    color: color-mix(in srgb, var(--color-ink) 62%, transparent);
+    font-family: var(--font-display);
+    font-size: .78rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: .06em;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: color 180ms ease;
+  }
+
+  .about-nav a:hover,
+  .about-nav a[aria-current='page'] {
+    color: var(--color-ink);
+  }
+
+  .about-nav a[aria-current='page']::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 3px;
+    background: var(--color-gold);
+  }
+
+  @media (max-width: 760px) {
+    .about-nav-shell {
+      border-bottom: 1px solid var(--color-line);
+      overflow: hidden;
+    }
+
+    .about-nav {
+      width: 100%;
+      padding: 0;
+      justify-content: flex-start;
+      gap: 0;
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      scrollbar-width: none;
+      border: 0;
+    }
+
+    .about-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .about-nav a {
+      flex: 0 0 auto;
+      min-width: 132px;
+      min-height: 64px;
+      padding: 14px 18px;
+      font-size: .69rem;
+      letter-spacing: .035em;
+    }
+
+    .about-nav a + a {
+      border-left: 1px solid var(--color-line);
+    }
+
+    .about-nav a[aria-current='page']::after {
+      right: 14px;
+      left: 14px;
+    }
+  }
+</style>

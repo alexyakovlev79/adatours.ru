@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import ReviewQuote from '../../components/proof/ReviewQuote.astro';
+import AboutNav from '../../components/commercial/AboutNav.astro';
 import { ADA_REVIEWS } from '../../data/reviews/ada-tours';
 
 const heroImage = '/media/catalog/tury/hero-enhanced-20260930.webp';
@@ -34,6 +35,8 @@ const reviewSchemas = ADA_REVIEWS.map((review) => ({
     image={heroImage}
     compact
   />
+
+  <AboutNav active="reviews" />
 
   <EditorialStatement
     eyebrow="Что видно по отзывам"

@@ -3,6 +3,7 @@ import { isActiveEntity } from '../../lib/archive.mjs';
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
+import AboutNav from '../../components/commercial/AboutNav.astro';
 import { withBase } from '../../lib/paths';
 
 const teamPhoto = '/media/people/team/team-group-enhanced-20261007.webp';
@@ -90,6 +91,8 @@ const colleagues = [
       <figcaption>Команда Ada Tours</figcaption>
     </figure>
   </section>
+
+  <AboutNav active="team" />
 
   {renderedPeople.map(({ entry, Content }) => (
     <PersonProfile

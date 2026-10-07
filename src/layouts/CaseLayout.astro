@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
 import TripStats from '../components/tour/TripStats.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
+import AboutNav from '../components/commercial/AboutNav.astro';
 import { withBase } from '../lib/paths';
 
 const { entry } = Astro.props;
@@ -33,6 +34,8 @@ const serviceLabels: Record<string, string> = {
     image={d.hero?.src}
     ctaLabel="Обсудить похожую задачу"
   />
+
+  <AboutNav active="cases" />
 
   {stats.length > 0 && <TripStats stats={stats} />}
 

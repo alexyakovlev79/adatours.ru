@@ -6,6 +6,7 @@ import EditorialStatement from '../../components/editorial/EditorialStatement.as
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
+import AboutNav from '../../components/commercial/AboutNav.astro';
 import { ORG } from '../../data/organization/ada-tours';
 
 const people = await getCollection('people', ({ data }) => data.id === 'person_anna' && data.locale === 'ru');
@@ -24,6 +25,8 @@ const AnnaContent = anna ? (await render(anna)).Content : null;
     image="/media/catalog/tury/hero-enhanced-20260930.webp"
     ctaLabel="Обсудить поездку"
   />
+
+  <AboutNav active="overview" />
 
   <EditorialStatement
     eyebrow="Где мы работаем"

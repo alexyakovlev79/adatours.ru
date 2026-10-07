@@ -98,7 +98,7 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Амазония
-  - src: https://brasiltours.ru/image/Iquitos.png
+  - src: "/media/tours/pochuvstvujte-peru-ekvador/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: Икитос
 - day: 7
   title: Икитос - Куско - Священная долина
@@ -113,7 +113,7 @@ itinerary:
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско
-  - src: https://brasiltours.ru/image/Iquitos.png
+  - src: "/media/tours/pochuvstvujte-peru-ekvador/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: Икитос
 - day: 8
   title: Мачу-Пикчу
@@ -247,7 +247,7 @@ itinerary:
 
     Размещение в Finch Bay. Питание: завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/galapagos1.png
+  - src: "/media/tours/pochuvstvujte-peru-ekvador/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Галапагосские острова
 - day: 16
   title: 'Галапагосы: остров Бартоломе'
@@ -268,7 +268,7 @@ itinerary:
 
     Размещение в отеле. Питание: завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/galapagos%20baltra.png
+  - src: "/media/tours/pochuvstvujte-peru-ekvador/itinerary-12-images-0-src-enhanced-20261007.webp"
     alt: Галапагосские острова
 - day: 17
   title: 'Галапагосы: Сеймур-Норте или Пласа-Сур'
@@ -288,7 +288,7 @@ itinerary:
 
     После экскурсии - возвращение в отель. Питание: завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/galapagos%20seimur.png
+  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp"
     alt: Галапагосские острова
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []
@@ -303,7 +303,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/galapagos2.png
+  - src: "/media/excursions/ostrov-bartolome-morskaya-ekskursiya/hero-src-enhanced-20261007.webp"
     alt: Галапагосские острова
 included:
 - Проживание в указанных отелях.
@@ -327,7 +327,7 @@ priceFrom: 17980
 currency: USD
 priceNote: $17980
 hero:
-  src: https://brasiltours.ru/image/Galpagos%20Islands.png
+  src: "/media/tours/pochuvstvujte-peru-ekvador/hero-src-enhanced-20261007.webp"
   alt: Почувствуйте Перу-Эквадор
 routeCountries:
 - country_peru

@@ -134,7 +134,7 @@ itinerary:
 
       Включены завтрак, обед и ужин.
   images:
-  - src: https://brasiltours.ru/image/amazon%20jungle.png
+  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: джунгли Амазонии в Эквадоре'
   - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора. город Кито'
@@ -292,7 +292,7 @@ priceFrom: 7319
 currency: USD
 priceNote: $7319
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/154.jpg
+  src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/hero-src-enhanced-20261007.webp"
   alt: 'На фото: вулканы в Эквадоре'
 routeCountries:
 - country_ecuador

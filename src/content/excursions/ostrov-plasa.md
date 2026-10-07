@@ -24,7 +24,7 @@ gallery:
     alt: "на фото: Галапагосские острова- остров Пласа в Эквадоре"
   - src: "https://brasiltours.ru/image/countries/equador/img-20210923-wa0033.jpg"
     alt: "на фото: Галапагосские острова- остров Пласа в Эквадоре"
-  - src: "https://brasiltours.ru/image/countries/equador/ecu-galapagos-right1.jpg"
+  - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: Галапагосские острова- остров Пласа в Эквадоре"
 route:
   - "Санта-Крус"

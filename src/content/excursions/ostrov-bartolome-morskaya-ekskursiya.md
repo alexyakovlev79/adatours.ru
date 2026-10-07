@@ -17,7 +17,7 @@ priceFrom: 525
 currency: "USD"
 priceNote: "Стоимость — $525."
 hero:
-  src: "https://brasiltours.ru/image/galapagos2.png"
+  src: "/media/excursions/ostrov-bartolome-morskaya-ekskursiya/hero-src-enhanced-20261007.webp"
   alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
 gallery:
   - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp

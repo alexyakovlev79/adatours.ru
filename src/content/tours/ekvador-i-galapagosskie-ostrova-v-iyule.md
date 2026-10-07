@@ -154,7 +154,7 @@ itinerary:
   text: "Свободный день для отдыха в отеле или самостоятельного знакомства с островами. Гид в Кито подскажет, какие дополнительные\
     \ занятия и экскурсии можно выбрать.\n\n**Размещение:** Lobo de Mar 3*.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/galapagos.png
+  - src: "/media/tours/ekvador-i-galapagosskie-ostrova-v-iyule/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Галапагосские острова'
 - day: 8
   title: Вылет с Галапагосских островов

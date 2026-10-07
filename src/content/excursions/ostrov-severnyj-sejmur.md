@@ -22,7 +22,7 @@ hero:
 gallery:
   - src: "https://brasiltours.ru/image/galapagos%20baltra1.png"
     alt: "на фото: Остров Северный Сеймур на Галапагосских острова Эквадора"
-  - src: "https://brasiltours.ru/image/galapagos%20seimur.png"
+  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: Остров Северный Сеймур на Галапагосских острова Эквадора"
 route:
   - "Галапагосские острова"

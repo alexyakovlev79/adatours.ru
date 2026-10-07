@@ -413,7 +413,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-galapagos-right1.jpg
+  - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-2-src-enhanced-20261007.webp"
     alt: Галапагосские острова
 - day: 9
   title: 'Галапагосы: остров Бартоломе'
@@ -460,7 +460,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/galapagos.png
+  - src: "/media/tours/ekvador-i-galapagosskie-ostrova-v-iyule/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Галапагосские острова
 - day: 10
   title: 'Галапагосы: Сеймур-Норте или Пласа-Сур'
@@ -494,7 +494,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-galapagos-right1.jpg
+  - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-2-src-enhanced-20261007.webp"
     alt: Галапагосские острова
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []
@@ -515,7 +515,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/galapagos.png
+  - src: "/media/tours/ekvador-i-galapagosskie-ostrova-v-iyule/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Галапагосские острова
   - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито

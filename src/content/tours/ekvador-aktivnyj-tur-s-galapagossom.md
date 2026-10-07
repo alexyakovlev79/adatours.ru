@@ -335,7 +335,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/galapagos2.png
+  - src: "/media/excursions/ostrov-bartolome-morskaya-ekskursiya/hero-src-enhanced-20261007.webp"
     alt: 'На фото: на Галапагосских островах Эквадора'
 included:
 - 'Трансферы и экскурсии: индивидуальные на материковой части Эквадора, кроме группового рафтинга; групповые на Галапагосских

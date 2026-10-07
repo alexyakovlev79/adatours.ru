@@ -152,7 +152,7 @@ itinerary:
     \ включен. После экскурсии трансфер в Пуэрто-Айору, размещение в отеле и свободное время. Можно прогуляться по городу,\
     \ набережной и сувенирным магазинам.\n\n**Размещение:** Solymar 4*, Ocean View Room.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/galapagos%20seimur.png
+  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp"
     alt: 'На фото: Океан на Галапагосских островах'
 - day: 7
   title: Морская экскурсия на остров Бартоломе
@@ -171,7 +171,7 @@ itinerary:
     \ К вечеру яхта возвращается, после чего остается свободное время для прогулки по Пуэрто-Айоре.\n\n**Размещение:** Solymar\
     \ 4*, Ocean View Room.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/galapagos%20seimur.png
+  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp"
     alt: 'На фото: Океан на Галапагосских островах'
 - day: 8
   title: Сеймур-Норте или Пласа-Сур
@@ -199,7 +199,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/galapagos%20seimur.png
+  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp"
     alt: 'На фото: Океан на Галапагосских островах'
 included:
 - Групповые трансферы только с водителем между Кито и Mashpi Lodge.

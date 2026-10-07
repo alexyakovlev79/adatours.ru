@@ -14,7 +14,7 @@ lead: Кито и линия экватора, озеро Килотоа, вод
 durationDays: 11
 durationNights: 10
 hero:
-  src: https://brasiltours.ru/image/galapagos%20seimur.png
+  src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp"
   alt: Эквадор + Галапагосские острова
 currency: USD
 priceFrom: 4260

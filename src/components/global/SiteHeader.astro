@@ -479,7 +479,7 @@ const nestedGroups = NAV_LINKS
 
   .desktop-cta {
     display: flex;
-    gap: 18px;
+    gap: 8px;
     align-items: center;
   }
 
@@ -753,16 +753,15 @@ const nestedGroups = NAV_LINKS
     .mobile-menu__contact :global(.contact-actions) {
       gap: 10px 18px;
     }
+  }
 
+  @media (max-width: 620px) {
+    .site-header__inner {
+      grid-template-columns: 1fr auto auto;
+    }
 
-    @media (max-width: 620px) {
-      .site-header__inner {
-        grid-template-columns: 1fr auto auto;
-      }
-
-      .mobile-cta {
-        display: none;
-      }
+    .mobile-cta {
+      display: none;
     }
   }
 </style>

@@ -36,7 +36,7 @@ itinerary:
   - Панама-Сити
   text: Прибытие в Панаму, встреча и трансфер в отель. Свободный вечер после дороги.
   images:
-  - src: https://brasiltours.ru/image/Panama%20City%201.png
+  - src: "/media/tours/panama-2024/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
 - day: 2
   title: Панама-Сити и Панамский канал
@@ -75,7 +75,7 @@ itinerary:
   text: Выезд из отеля в 05:00. Поездка на Сан-Блас, архипелаг из 365 островов в Карибском море. День пройдет среди белых
     песчаных пляжей и бирюзовой воды. Вечером возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/-San-Blas-Islands-002.png
+  - src: "/media/tours/panama-2024/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Архипелаг Сан-Блас
 - day: 5
   title: Карибские форты Панамы
@@ -105,7 +105,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/boca-chica.jpg
     alt: Boca Chica
-  - src: https://brasiltours.ru/image/Panama%20City%201.png
+  - src: "/media/tours/panama-2024/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
 - day: 7
   title: Бока-Чика
@@ -167,7 +167,7 @@ itinerary:
 
     В Альмиранте водитель доставит вас к причалу. Далее водное такси на острова архипелага Бокас-дель-Торо.
   images:
-  - src: https://brasiltours.ru/image/Bocas%20del%20Toro.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Бокас-дель-Торо
   - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Бокете
@@ -177,7 +177,7 @@ itinerary:
   - Бокас-дель-Торо
   text: Свободные дни на островах.
   images:
-  - src: https://brasiltours.ru/image/Panam%C3%A1-y-Bocas-del-Toro.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-7-images-0-src-enhanced-20261007.webp"
     alt: Бокас-дель-Торо
 - day: 14
   title: Бокас-дель-Торо
@@ -185,7 +185,7 @@ itinerary:
   - Бокас-дель-Торо
   text: Свободные дни на островах.
   images:
-  - src: https://brasiltours.ru/image/Bocas%20del%20Toro.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Бокас-дель-Торо
 - day: 15
   title: Бокас-дель-Торо - Панама-Сити
@@ -194,7 +194,7 @@ itinerary:
   - Бокас-дель-Торо
   text: После завтрака трансфер в аэропорт Альмиранте и перелет в Панаму. По прибытии трансфер в отель и свободный вечер.
   images:
-  - src: https://brasiltours.ru/image/Panam%C3%A1-y-Bocas-del-Toro.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-7-images-0-src-enhanced-20261007.webp"
     alt: Бокас-дель-Торо
   - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
@@ -204,7 +204,7 @@ itinerary:
   - Панама-Сити
   text: В назначенное время трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/Panama%20City%201.png
+  - src: "/media/tours/panama-2024/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Панама-Сити
 included:
 - Трансферы.

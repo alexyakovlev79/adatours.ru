@@ -60,7 +60,7 @@ itinerary:
 
     Гид рекомендует ресторан на месте.
   images:
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/panama/zdenek-machacek-0loy9xzgkai-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Туман в Панама-сити, Панама - рассвет над заливом
 - day: 2
   title: Озеро Гатун, остров обезьян и крепость Сан-Лоренцо
@@ -90,7 +90,7 @@ itinerary:
 
     День проходит с русскоговорящим гидом, если такое сопровождение подтверждено под запрос.
   images:
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/panama/panamskij-kanal/alex-pagliuca-vo64g7kwneo-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Панамский канал, Панама - шлюзы и проходящий корабль
 - day: 3
   title: Национальный парк Чагрес и деревня Эмбера
@@ -142,9 +142,9 @@ itinerary:
 
     После размещения остается свободное время.
   images:
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/aljoscha-laschgari-icmdenriina-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Остров Бока-Чика, Панама - люксовый пляж, белый песок
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/panama/zdenek-machacek-0loy9xzgkai-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Туман в Панама-сити, Панама - рассвет над заливом
 - day: 5
   title: Отдых на частном острове Boca Chica
@@ -163,7 +163,7 @@ itinerary:
 
     Из напитков включены местное пиво, вина и коктейли.
   images:
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/aljoscha-laschgari-zrelillxqbs-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-4-images-0-src-enhanced-20261007.webp"
     alt: Бока-Чика, Панама - элитный пляжный отдых на острове
 - day: 6
   title: Отдых на частном острове Boca Chica
@@ -182,7 +182,7 @@ itinerary:
 
     Из напитков включены местное пиво, вина и коктейли.
   images:
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/aljoscha-laschgari-icmdenriina-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Остров Бока-Чика, Панама - люксовый пляж, белый песок
 - day: 7
   title: Boca Chica - Boquete и кофейная плантация
@@ -210,7 +210,7 @@ itinerary:
 
     Язык проведения - английский.
   images:
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/aljoscha-laschgari-zrelillxqbs-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-4-images-0-src-enhanced-20261007.webp"
     alt: Бока-Чика, Панама - элитный пляжный отдых на острове
 - day: 8
   title: Вулкан Бару и подвесные мосты
@@ -260,7 +260,7 @@ itinerary:
 
     Размещение в Azul Paradise Bastimentos Island Punta Vieja.
   images:
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/bokas-del-toro/26668530771-4e740606b4-k.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Бокас-дель-Торо, Панама - коралловые рифы и бирюзовая вода
 - day: 10
   title: Свободный день в Бокас-дель-Торо
@@ -283,7 +283,7 @@ itinerary:
 
     Обязательной экскурсионной программы на этот день нет.
   images:
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/bokas-del-toro/26668530771-4e740606b4-k.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Бокас-дель-Торо, Панама - коралловые рифы и бирюзовая вода
 - day: 11
   title: Bocas del Toro - Panama City
@@ -303,9 +303,9 @@ itinerary:
 
     После островов и джунглей возвращение в современную городскую среду становится финальной сменой обстановки перед вылетом.
   images:
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/bokas-del-toro/26668530771-4e740606b4-k.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Бокас-дель-Торо, Панама - коралловые рифы и бирюзовая вода
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/panama/zdenek-machacek-0loy9xzgkai-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Туман в Панама-сити, Панама - рассвет над заливом
 - day: 12
   title: Вылет из Панама-Сити
@@ -316,7 +316,7 @@ itinerary:
 
     На этом 12-дневная программа завершается.
   images:
-  - src: https://brasiltours.ru/image/countries/panama/new-photos/panama/zdenek-machacek-0loy9xzgkai-unsplash.jpg
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Туман в Панама-сити, Панама - рассвет над заливом
 included:
 - Гид в дни 1-3, русский гид под запрос.

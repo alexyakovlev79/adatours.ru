@@ -60,7 +60,7 @@ itinerary:
   images:
   - src: /media/tours/luchshee-v-paname/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: на фото:Панамский канал
-  - src: https://brasiltours.ru/image/panama11.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: Панама - Сити'
 - day: 3
   title: Национальный парк Чагрес и община Эмбера
@@ -137,7 +137,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/Bocas%20del%20Toro.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Бокас -дель-Торо'
   - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Бокет'
@@ -150,7 +150,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/Panam%C3%A1-y-Bocas-del-Toro.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-7-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Бокас -дель-Торо'
 - day: 9
   title: Бокас-дель-Торо
@@ -163,7 +163,7 @@ itinerary:
 
     Вечером предусмотрены вылет в Панама-Сити и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Bocas%20del%20Toro.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Бокас -дель-Торо'
 - day: 10
   title: Бокас-дель-Торо
@@ -176,7 +176,7 @@ itinerary:
 
     Вечером предусмотрены вылет в Панама-Сити и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Panam%C3%A1-y-Bocas-del-Toro.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-7-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Бокас -дель-Торо'
 - day: 11
   title: Бокас-дель-Торо - Панама
@@ -188,7 +188,7 @@ itinerary:
 
     Трансфер в аэропорт.
   images:
-  - src: https://brasiltours.ru/image/Bocas%20del%20Toro.png
+  - src: "/media/tours/luchshee-v-paname/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Бокас -дель-Торо'
 included:
 - Услуги русскоговорящего гида на 2-й и 3-й дни.

@@ -14,8 +14,8 @@ language: ["Английский"]
 priceFrom: 371
 currency: "USD"
 priceNote: "Стоимость — $371."
-hero: {"src":"https://brasiltours.ru/image/catalog/product/f/i/file_48_54.png","alt":"Экскурсия в  Кафажате"}
-gallery: [{"src":"https://brasiltours.ru/image/catalog/product/f/i/file_47_69.png","alt":""},{"src":"https://brasiltours.ru/image/catalog/product/f/i/file_54_16.png","alt":""},{"src":"https://brasiltours.ru/image/catalog/product/f/i/file_55_7.png","alt":""}]
+hero: {"src":"/media/excursions/jekskursija-v-kafazhate/hero-src-enhanced-20261007.webp","alt":"Экскурсия в  Кафажате"}
+gallery: [{"src":"/media/excursions/jekskursija-v-kafazhate/gallery-0-src-enhanced-20261007.webp","alt":""},{"src":"/media/excursions/jekskursija-v-kafazhate/gallery-1-src-enhanced-20261007.webp","alt":""},{"src":"/media/excursions/jekskursija-v-kafazhate/gallery-2-src-enhanced-20261007.webp","alt":""}]
 route: ["Сальта","Долина Кальчакес","Кебрада де лас Кончас","Кафажате","Сальта"]
 lead: "Экскурсия на целый день с англоговорящим гидом и частным трансфером в Кафажате: долина и ущелье Кебрада де лас Кончас, главная площадь и винный погребок с дегустацией национальных вин."
 included: ["Услуги англоговорящего гида","Частный трансфер","Посещение главной площади","Посещение винного погребка с дегустацией национальных вин"]

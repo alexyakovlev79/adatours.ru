@@ -15,7 +15,7 @@ language: []
 priceFrom: 44
 currency: "USD"
 priceNote: "Стоимость — $44."
-hero: {"src":"https://brasiltours.ru/image/catalog/product/b/u/buz_14.png","alt":"Экскурсия в Бузиос"}
+hero: {"src":"/media/excursions/jekskursija-v-buzios/hero-src-enhanced-20261007.webp","alt":"Экскурсия в Бузиос"}
 gallery: [{"src":"https://brasiltours.ru/image/buzi%204.png","alt":""},{"src":"/media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp","alt":""},{"src":"https://brasiltours.ru/image/catalog/product/f/i/file_57_134.png","alt":""}]
 route: ["Рио-де-Жанейро","Бузиос"]
 lead: "Групповая экскурсия из Рио-де-Жанейро в Бузиос — рыбацкую деревушку с живописными пляжами, экзотической растительностью и видами на океан и горы."

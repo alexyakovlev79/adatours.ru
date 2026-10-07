@@ -15,12 +15,12 @@ priceFrom: 80
 currency: "USD"
 priceNote: "Стоимость — $80."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_240_4.jpg"
+  src: "/media/excursions/brazilskaya-storona-vodopadov-iguasu/hero-src-enhanced-20261007.webp"
   alt: "Бразильская сторона водопадов Игуасу"
 gallery:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_113_26.jpg"
+  - src: "/media/excursions/brazilskaya-storona-vodopadov-iguasu/gallery-1-src-enhanced-20261007.webp"
     alt: ""
 route:
   - "Игуасу"

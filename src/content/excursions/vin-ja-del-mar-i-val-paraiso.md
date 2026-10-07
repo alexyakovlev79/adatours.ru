@@ -15,12 +15,12 @@ priceFrom: 138
 currency: "USD"
 priceNote: "Стоимость — $138."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_59_11.png"
+  src: "/media/excursions/vin-ja-del-mar-i-val-paraiso/hero-src-enhanced-20261007.webp"
   alt: "Винья дель Мар и Вальпараисо"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_125.png"
+  - src: "/media/excursions/vin-ja-del-mar-i-val-paraiso/gallery-0-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_54_55.png"
+  - src: "/media/excursions/vin-ja-del-mar-i-val-paraiso/gallery-1-src-enhanced-20261007.webp"
     alt: ""
   - src: "https://brasiltours.ru/image/catalog/product/f/i/file_57_28.png"
     alt: ""

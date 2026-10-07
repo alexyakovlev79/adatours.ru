@@ -69,7 +69,7 @@ itinerary:
 
     **Размещение:** Mercure 4*.
   images:
-  - src: https://brasiltours.ru/image/quito%20ecuad.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора, город Кито'
 - day: 2
   title: 'Кито: Телеферико и Руко-Пичинча'
@@ -84,7 +84,7 @@ itinerary:
     \ В ясную погоду различимы Котопакси, Антисана, Каямбе и другие вершины.\n\nНа маршруте предусмотрен ланч-бокс. Во второй\
     \ половине дня возвращение в отель.\n\n**Размещение:** Mercure 4*.  \n**Питание:** завтрак, ланч-бокс."
   images:
-  - src: https://brasiltours.ru/image/quito.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора, город Кито'
 - day: 3
   title: Кито - Миндо - Кито
@@ -104,7 +104,7 @@ itinerary:
     \ между собой камеры, группу сопровождает профессиональный гид. Эта активность является опциональной.\n\nВечером возвращение\
     \ в Кито и свободное время.\n\n**Размещение:** Mercure 4*.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/quito%20ecuad.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора, город Кито'
 - excursionRef: excursion_ecuador_mindo_river_tubing
   places: []

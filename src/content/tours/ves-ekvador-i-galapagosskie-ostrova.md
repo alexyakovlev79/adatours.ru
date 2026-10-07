@@ -47,7 +47,7 @@ itinerary:
 
     Остаток дня свободный.
   images:
-  - src: https://brasiltours.ru/image/quito%202.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито
 - day: 2
   title: Кито и «Середина мира»
@@ -96,7 +96,7 @@ itinerary:
 
       **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/quito%20ecuad.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: Кито
 - day: 3
   title: Миндо
@@ -164,7 +164,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/quito1.png
+  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито
 - day: 5
   title: Кито - Галапагосские острова, Балтра и Санта-Крус
@@ -204,9 +204,9 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0036.jpg
+  - src: "/media/tours/ves-ekvador-i-galapagosskie-ostrova/hero-src-enhanced-20261007.webp"
     alt: Весь Эквадор и Галапагосские острова
-  - src: https://brasiltours.ru/image/quito%202.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито
 - day: 6
   title: Остров Бартоломе
@@ -247,7 +247,7 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0036.jpg
+  - src: "/media/tours/ves-ekvador-i-galapagosskie-ostrova/hero-src-enhanced-20261007.webp"
     alt: Весь Эквадор и Галапагосские острова
 - day: 7
   title: Северный Сеймур или Южный Пласа
@@ -293,7 +293,7 @@ itinerary:
 
     На этом программа путешествия заканчивается.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0036.jpg
+  - src: "/media/tours/ves-ekvador-i-galapagosskie-ostrova/hero-src-enhanced-20261007.webp"
     alt: Весь Эквадор и Галапагосские острова
 included:
 - Индивидуальные трансферы и экскурсии на материковой части Эквадора
@@ -326,7 +326,7 @@ priceFrom: 3439
 currency: USD
 priceNote: $3439
 hero:
-  src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0036.jpg
+  src: "/media/tours/ves-ekvador-i-galapagosskie-ostrova/hero-src-enhanced-20261007.webp"
   alt: Весь Эквадор и Галапагосские острова
 routeCountries:
 - country_ecuador

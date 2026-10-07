@@ -68,7 +68,7 @@ itinerary:
 
     Ужин включен.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/new/quito-23.jpg
+  - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито
 - day: 2
   title: Кито и линия экватора
@@ -269,7 +269,7 @@ itinerary:
 
     Включены завтрак и ланч-бокс.
   images:
-  - src: https://brasiltours.ru/image/Cuenca.png
+  - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-4-images-0-src-enhanced-20261007.webp"
     alt: Куэнка
 - day: 6
   title: Куэнка
@@ -304,7 +304,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/Cuenca.png
+  - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-4-images-0-src-enhanced-20261007.webp"
     alt: Куэнка
 - day: 7
   title: Куэнка - Кахас - какао-асьенда - Гуаякиль
@@ -359,7 +359,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/Cuenca.png
+  - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-4-images-0-src-enhanced-20261007.webp"
     alt: Куэнка
 - day: 8
   title: Гуаякиль - Галапагосские острова - Санта-Крус
@@ -517,7 +517,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/equador/galapagos.png
     alt: Галапагосские острова
-  - src: https://brasiltours.ru/image/countries/equador/new/quito-23.jpg
+  - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито
 included:
 - Групповые трансферы и экскурсии.

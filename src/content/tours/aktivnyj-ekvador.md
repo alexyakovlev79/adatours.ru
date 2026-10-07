@@ -41,7 +41,7 @@ itinerary:
 
     Первый день остается свободным. Кито расположен на высоте около 2800 м, поэтому после перелета лучше дать организму время привыкнуть к высоте и отдохнуть перед активной частью программы.
   images:
-  - src: https://brasiltours.ru/image/quito%202.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Кито на фоне Анд'
 - day: 2
   title: Кито и Середина Мира
@@ -60,7 +60,7 @@ itinerary:
 
     Вечером возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/quito%20ecuad.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Кито, столица Эквадора'
 - day: 3
   title: Вулкан Руку-Пичинча
@@ -73,7 +73,7 @@ itinerary:
 
     На вершине будет время для отдыха и фотографий. Затем спуск к канатной дороге и возвращение в сторону Кито. Во второй половине дня переезд в Мачачи.
   images:
-  - src: https://brasiltours.ru/image/quito.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Кито, столица Эквадора'
 - day: 4
   title: Национальный парк Котопакси
@@ -86,7 +86,7 @@ itinerary:
 
     Для тех, кому хочется более сложной нагрузки, можно организовать дополнительный подъем к парковке вулкана на высоте около 4600 м. Оттуда пешком примерно 1,5 часа до убежища Хосе Риваса, которое находится примерно на 200 м выше по крутому склону.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/e/c/ecuador_1.jpg
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: на фото:Котопакси
 - day: 5
   title: Лагуна Килотоа
@@ -131,7 +131,7 @@ itinerary:
 
     Далее переезд в Кито.
   images:
-  - src: https://brasiltours.ru/image/quito%202.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Кито на фоне Анд'
 - day: 9
   title: Отъезд

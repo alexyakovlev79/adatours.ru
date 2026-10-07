@@ -198,7 +198,7 @@ priceFrom: 1986
 currency: USD
 priceNote: $1986
 hero:
-  src: https://brasiltours.ru/image/countries/equador/10-equador-galapagos1.jpg
+  src: "/media/excursions/ostrov-plasa/hero-src-enhanced-20261007.webp"
   alt: 'На фото: Морские котики на Галапагосских островах'
 routeCountries:
 - country_ecuador

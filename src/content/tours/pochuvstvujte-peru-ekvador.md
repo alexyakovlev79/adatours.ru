@@ -169,7 +169,7 @@ itinerary:
   - Кито & вулкан Котопахи
   text: Трансфер в аэропорт, перелет со стыковкой и прибытие в Кито. Трансфер в отель Casa Gangotena.
   images:
-  - src: https://brasiltours.ru/image/quito%202.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско
@@ -183,7 +183,7 @@ itinerary:
 
     Вокруг растут папоротники, бромелиевые и сотни видов орхидей, часть которых была обнаружена сравнительно недавно. Здесь встречается около 500 видов птиц, включая 36 эндемичных. В лесу также обитают обезьяны, пекари и пумы, а по склонам и долинам проходят реки и водопады.
   images:
-  - src: https://brasiltours.ru/image/quito.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: Кито
 - day: 13
   title: Mashpi Lodge, групповая программа 3 дня / 2 ночи
@@ -224,7 +224,7 @@ itinerary:
 
     После экскурсии - возвращение в отель и свободное время.
   images:
-  - src: https://brasiltours.ru/image/quito%202.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито
 - day: 15
   title: Галапагосские острова и Санта-Крус

@@ -116,7 +116,7 @@ itinerary:
     \ шкаф и сейф, ванная комната, фен, столы, стулья, мебель, халаты и тапочки.\n\n**Размещение:** Mashpi Lodge, Wayra Room.\
     \  \n**Питание:** завтрак, обед, ужин."
   images:
-  - src: https://brasiltours.ru/image/quito%20ecuad.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Столица Эквадора, город Кито'
 - day: 5
   title: Машпи - Кито
@@ -234,7 +234,7 @@ priceFrom: 4986
 currency: USD
 priceNote: $4986
 hero:
-  src: https://brasiltours.ru/image/countries/equador/10-equador-galapagos1.jpg
+  src: "/media/excursions/ostrov-plasa/hero-src-enhanced-20261007.webp"
   alt: 'На фото: Морские котики на пляже Эквадора'
 routeCountries:
 - country_ecuador

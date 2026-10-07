@@ -44,7 +44,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: https://brasiltours.ru/image/quito1.png
+  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора. город Кито'
 - day: 2
   title: 'Дни 2-5. Среда-суббота: Кито - Амазония, круиз M/V Anaconda'
@@ -136,7 +136,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/amazon%20jungle.png
     alt: 'На фото: джунгли Амазонии в Эквадоре'
-  - src: https://brasiltours.ru/image/quito1.png
+  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора. город Кито'
 - day: 6
   title: 'Воскресенье: возвращение в Кито и Папаякта'
@@ -170,7 +170,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/quito1.png
+  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора. город Кито'
 - day: 7
   title: 'Понедельник: Папаякта - регион Котопакси'
@@ -243,7 +243,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: https://brasiltours.ru/image/quito1.png
+  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора. город Кито'
   - src: https://brasiltours.ru/image/equador%20national%20park%20cotopaxi.png
     alt: 'На фото: вулканы в Эквадоре'
@@ -260,7 +260,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/quito1.png
+  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора. город Кито'
 included:
 - Групповые трансферы и экскурсии в Амазонии.

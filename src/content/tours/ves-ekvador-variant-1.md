@@ -36,7 +36,7 @@ itinerary:
 
     После перелета свободное время.
   images:
-  - src: https://brasiltours.ru/image/quito%202.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора, город Кито'
 - day: 2
   title: Кито и линия экватора
@@ -97,7 +97,7 @@ itinerary:
 
       Размещение в **Mercure 4***. Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/quito%20ecuad.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора, город Кито'
 - day: 3
   title: Тропический лес Миндо
@@ -180,7 +180,7 @@ itinerary:
 
     Размещение в **Mercure 4***. Завтрак включен.
   images:
-  - src: https://brasiltours.ru/image/quito.png
+  - src: "/media/tours/aktivnyj-ekvador/itinerary-2-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора, город Кито'
 - day: 5
   title: Вылет из Кито
@@ -193,7 +193,7 @@ itinerary:
 
     Международный перелет.
   images:
-  - src: https://brasiltours.ru/image/quito1.png
+  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора, город Кито'
 included:
 - Индивидуальные трансферы и экскурсии
@@ -220,7 +220,7 @@ priceFrom: 1483
 currency: USD
 priceNote: $1483
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/mauricio-munoz-5pwbfs01np8-unsplash.jpg
+  src: "/media/tours/ves-ekvador-variant-1/hero-src-enhanced-20261007.webp"
   alt: 'На фото: континентальный Эквадор и Анды'
 routeCountries:
 - country_ecuador

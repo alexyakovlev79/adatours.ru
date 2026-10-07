@@ -17,7 +17,7 @@ priceFrom: 488
 currency: "USD"
 priceNote: "Стоимость — $488."
 hero:
-  src: "https://brasiltours.ru/image/countries/equador/10-equador-galapagos1.jpg"
+  src: "/media/excursions/ostrov-plasa/hero-src-enhanced-20261007.webp"
   alt: "на фото: Галапагосские острова- остров Пласа в Эквадоре"
 gallery:
   - src: "https://brasiltours.ru/image/countries/equador/ecu-galapagos-middle.jpg"

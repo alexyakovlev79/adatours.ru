@@ -20,13 +20,23 @@ const reviewSchemas = ADA_REVIEWS.map((review) => ({
   inLanguage: 'ru',
   citation: review.sourceUrl,
 }));
+
+const aggregateRatingSchema = {
+  '@type': 'AggregateRating',
+  '@id': `${reviewPageUrl}#aggregate-rating`,
+  itemReviewed: { '@id': 'https://adatours.ru/#organization' },
+  ratingValue: 5,
+  bestRating: 5,
+  worstRating: 1,
+  reviewCount: ADA_REVIEWS.length,
+};
 ---
 
 <BaseLayout leadTitle="Обсудить поездку или партнерство" leadEntityId="reviews"
   title="Отзывы об Ada Tours: туристы, агентства и партнеры"
   description="Отзывы туристов, турагентств и партнеров о работе Ada Tours: поездки по Бразилии и Латинской Америке, группы, VIP и multi-country маршруты."
   image={heroImage}
-  pageSchema={reviewSchemas}
+  pageSchema={[...reviewSchemas, aggregateRatingSchema]}
 >
   <Hero
     eyebrow="Отзывы"

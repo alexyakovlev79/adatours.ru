@@ -125,12 +125,15 @@ test('FAQ is not generated from unused tour frontmatter or invisible legacy data
   const visible = build(tour.path, { document: { faq: [{ question: 'Видимый вопрос?', answer: 'Видимый ответ.' }] } });
   assert.equal(nodes(visible, 'FAQPage')[0].mainEntity[0].acceptedAnswer.text, 'Видимый ответ.');
 });
-test('reviews keep displayed authors/text without invented ratings', () => {
+test('reviews keep displayed authors/text and an explicitly supplied aggregate rating', () => {
   const review = { '@type': 'Review', author: { name: 'Анна' }, reviewBody: 'Спасибо за поездку!', reviewRating: { ratingValue: 5 } };
-  const graph = build('/reviews/', { extra: [review], document: { text: 'Анна Спасибо за поездку!' } });
+  const aggregate = { '@type': 'AggregateRating', ratingValue: 5, bestRating: 5, worstRating: 1, reviewCount: 8 };
+  const graph = build('/reviews/', { extra: [review, aggregate], document: { text: 'Анна Спасибо за поездку!' } });
   assert.equal(nodes(graph, 'Review').length, 1);
   assert.equal(nodes(graph, 'Review')[0].reviewRating, undefined);
-  assert.equal(nodes(graph, 'AggregateRating').length, 0);
+  assert.equal(nodes(graph, 'AggregateRating').length, 1);
+  assert.equal(nodes(graph, 'AggregateRating')[0].ratingValue, 5);
+  assert.equal(nodes(graph, 'Organization')[0].aggregateRating['@id'], `${root}reviews/#aggregate-rating`);
 });
 test('people, static services and geography get distinct semantic types', () => {
   const person = record('person', 'person_anna', '/team/anna-avanesova/', {

@@ -91,7 +91,7 @@ itinerary:
 
     После каньона переезд в Сан-Кристобаль-де-лас-Касас. Для категории 4* предусмотрен Mansion del Valle, 2 ночи в стандартном номере. Для категории 5* - Casa del Alma, 2 ночи в номере Suite.
   images:
-  - src: https://brasiltours.ru/image/san%20cristobal.jpg
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Сан Кристобал де Лас Касас
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
@@ -110,7 +110,7 @@ itinerary:
 
     Еще одна остановка - Сан-Хуан-Чамула. Здесь особое значение имеет церковь Святого Иоанна, где католические элементы сочетаются с местными обрядами и более древними верованиями.
   images:
-  - src: https://brasiltours.ru/image/san%20cristobal.jpg
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Сан Кристобал де Лас Касас
 - day: 6
   title: Сан-Кристобаль - Агуа-Асуль - Паленке
@@ -125,9 +125,9 @@ itinerary:
 
     После экскурсии продолжение пути в Паленке и размещение. В категории 4* предусмотрен Tulija Palenque, 3 ночи в стандартном номере. В категории 5* - Quinta Chanabnal, 3 ночи в Junior Suite.
   images:
-  - src: https://brasiltours.ru/image/Palenque-Chiapas-Mexico-1200x843.png
+  - src: /media/tours/meksika-fantasticheskaya/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Паленке
-  - src: https://brasiltours.ru/image/san%20cristobal.jpg
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Сан Кристобал де Лас Касас
 - day: 7
   title: Яшчилан и Бонампак
@@ -143,7 +143,7 @@ itinerary:
 
     Во второй половине дня возвращение в Паленке и ночевка в отеле.
   images:
-  - src: https://brasiltours.ru/image/Palenque.png
+  - src: /media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Паленке
 - day: 8
   title: Паленке
@@ -156,7 +156,7 @@ itinerary:
 
     Также в комплексе можно увидеть Здание Летучих мышей, Храм Солнца, Храм Лиственного Креста, площадку для игры в мяч и другие сооружения. После нескольких дней поездок к удаленным памятникам этот день полностью посвящен самому Паленке.
   images:
-  - src: https://brasiltours.ru/image/Palenque-Chiapas-Mexico-1200x843.png
+  - src: /media/tours/meksika-fantasticheskaya/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Паленке
 - day: 9
   title: Паленке - Вильяэрмоса - Канкун
@@ -173,9 +173,9 @@ itinerary:
 
     Трансферы в Канкуне выполняются с испаноговорящим водителем, без гида и отдельного сопровождения.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/cancun-1200.jpg
+  - src: /media/tours/meksika-fantasticheskaya/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Канкун
-  - src: https://brasiltours.ru/image/Palenque.png
+  - src: /media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Паленке
 - day: 10
   title: Канкун
@@ -186,7 +186,7 @@ itinerary:
 
     После Мехико, гор Чьяпаса, длительных переездов и археологических комплексов маршрут специально заканчивается несколькими спокойными днями на побережье.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/mex-cancun-3-1.jpg
+  - src: /media/tours/meksika-fantasticheskaya/itinerary-11-images-0-src-enhanced-20261007.webp
     alt: Канкун
 - day: 11
   title: Канкун
@@ -197,7 +197,7 @@ itinerary:
 
     После Мехико, гор Чьяпаса, длительных переездов и археологических комплексов маршрут специально заканчивается несколькими спокойными днями на побережье.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/cancun-1200.jpg
+  - src: /media/tours/meksika-fantasticheskaya/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Канкун
 - day: 12
   title: Вылет из Канкуна
@@ -205,7 +205,7 @@ itinerary:
   - Канкун
   text: После завтрака в назначенное время трансфер в аэропорт Канкуна для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/mex-cancun-3-1.jpg
+  - src: /media/tours/meksika-fantasticheskaya/itinerary-11-images-0-src-enhanced-20261007.webp
     alt: Канкун
 included:
 - 11 ночей проживания в отелях маршрута или аналогичных.
@@ -242,7 +242,7 @@ priceFrom: 2561
 currency: USD
 priceNote: $2561 на человека при размещении DBL в отелях 4* и группе из 6 человек
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/teoutiakan.jpg
+  src: /media/tours/meksika-fantasticheskaya/hero-src-enhanced-20261007.webp
   alt: Мексика Фантастическая
 routeCountries:
 - country_mexico

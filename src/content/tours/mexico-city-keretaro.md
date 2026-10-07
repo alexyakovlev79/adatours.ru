@@ -78,7 +78,7 @@ itinerary:
 
     После экскурсии размещение и ночевка в Гвадалахаре.
   images:
-  - src: https://brasiltours.ru/image/Guadalajara.png
+  - src: /media/tours/mexico-city-keretaro/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: Гвадалахара
 - day: 4
   title: Гвадалахара - вылет
@@ -86,7 +86,7 @@ itinerary:
   - Гвадалахара
   text: После завтрака в отеле в назначенное время трансфер в аэропорт. Завершение программы.
   images:
-  - src: https://brasiltours.ru/image/Guadalajara.png
+  - src: /media/tours/mexico-city-keretaro/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: Гвадалахара
 included:
 - 3 ночи проживания в указанных или аналогичных отелях, стандартные номера.
@@ -120,7 +120,7 @@ priceFrom: 1010
 currency: USD
 priceNote: $1010
 hero:
-  src: https://brasiltours.ru/image/mexico11%20chichen%20itza.png
+  src: /media/tours/mexico-city-keretaro/hero-src-enhanced-20261007.webp
   alt: Колониальные Сокровища Мексики
 routeCountries:
 - country_mexico

@@ -138,7 +138,7 @@ itinerary:
     природное зрелище, с кристально чистой водой, которая приобретает бирюзовый оттенок из-за высокого содержания минералов.Поздно
     днем вы прибудете в замечательный колониальный город Сан-Кристобаль.Casa del Alma Sp Cat www.casadelalma.mx 2 ночи / Юниор-люкс
   images:
-  - src: https://brasiltours.ru/image/san%20cristobal.jpg
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Сан Кристобал де Лас Касас
   - src: https://brasiltours.ru/image/Palenque-Chiapas-11.png
     alt: Фантастический Тур по Мексике
@@ -172,7 +172,7 @@ itinerary:
     впечатляющий ландшафт.Прибытие в аэропорт Канкун. Встреча и трансфер в ваш отель.Presidente Intercontinental 5* www.presidenteiccancun.com
     3 ночи / Классический номер с видом на океан.
   images:
-  - src: https://brasiltours.ru/image/san%20cristobal.jpg
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Сан Кристобал де Лас Касас
 - day: 10
   title: Канкун ()

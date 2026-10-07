@@ -50,7 +50,7 @@ itinerary:
 
     После экскурсии переезд в Сан-Кристобаль-де-лас-Касас и размещение в Mansión del Valle 4* на 2 ночи в стандартном номере.
   images:
-  - src: https://brasiltours.ru/image/san%20cristobal.jpg
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Сан Кристобал де Лас Касас
 - day: 2
   title: Сан-Кристобаль, Зинакантан и Сан-Хуан-Чамула
@@ -69,7 +69,7 @@ itinerary:
 
     Возвращение в Сан-Кристобаль и ночевка.
   images:
-  - src: https://brasiltours.ru/image/san%20cristobal.jpg
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Сан Кристобал де Лас Касас
 - day: 3
   title: Сан-Кристобаль - Агуа-Азуль - Паленке
@@ -84,7 +84,7 @@ itinerary:
 
     После посещения водопадов продолжение пути в Паленке. Размещение в Villa Mercedes 4*, 1 ночь в стандартном номере.
   images:
-  - src: https://brasiltours.ru/image/san%20cristobal.jpg
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Сан Кристобал де Лас Касас
 - day: 4
   title: Паленке - Кампече
@@ -114,7 +114,7 @@ itinerary:
 
     После Ушмаля маршрут продолжается в Мериду. Город сочетает майянское и испанское наследие, колониальные здания и мощеные улицы. В центре находится Пласа-де-ла-Индипенденсия, рядом с которой расположены собор Мериды и белоснежная церковь Ла-Терсерра Орден. Размещение в Gamma El Castellano 4*, 1 ночь в стандартном номере.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/mexico-uxmal.png
+  - src: /media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Ушмаль
 - day: 6
   title: Мерида - Чичен-Ица - Канкун
@@ -162,7 +162,7 @@ priceFrom: 2655
 currency: USD
 priceNote: $2655 на человека при двухместном размещении
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/mexico-city2.png
+  src: /media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/hero-src-enhanced-20261007.webp
   alt: 'Мексика: «Южное Приключение — Краткий маршрут»'
 routeCountries:
 - country_mexico

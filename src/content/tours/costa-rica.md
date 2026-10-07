@@ -209,7 +209,7 @@ priceFrom: 5561
 currency: USD
 priceNote: $5561
 hero:
-  src: https://brasiltours.ru/image/catalog/product/f/i/file_38.jpeg
+  src: /media/tours/costa-rica/hero-src-enhanced-20261007.webp
   alt: На машине по Коста Рике 2024
 routeCountries:
 - country_costa_rica

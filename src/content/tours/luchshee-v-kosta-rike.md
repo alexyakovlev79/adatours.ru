@@ -245,7 +245,7 @@ priceFrom: 9629
 currency: USD
 priceNote: $9629.
 hero:
-  src: https://brasiltours.ru/image/san-Gerardo-de-Dota-Savegre3.png
+  src: /media/tours/luchshee-v-kosta-rike/hero-src-enhanced-20261007.webp
   alt: Тур в  Коста-Рику- лучшее в Коста Рике
 routeCountries:
 - country_costa_rica

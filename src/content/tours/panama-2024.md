@@ -53,7 +53,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Panama%20City.png
     alt: Панама-Сити
-  - src: https://brasiltours.ru/image/panama%20canal.png
+  - src: /media/tours/luchshee-v-paname/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Панамский канал
 - day: 3
   title: Национальный парк Чагрес и деревня эмбера
@@ -91,7 +91,7 @@ itinerary:
 
     Следующая часть программы проходит в Портобело. Здесь вы увидите крепости и руины Сан-Херонимо, Сантьяго-де-ла-Глория, Сан-Фернандо и Сан-Фернандин, Королевский таможенный дом и церковь Святого Филиппа, которую часто называют церковью Черного Христа.
   images:
-  - src: https://brasiltours.ru/image/panama%20chagres%20national%20park1.png
+  - src: /media/tours/panama-2024/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Национальный парк Чагрес
 - day: 6
   title: Панама-Сити - Бока-Чика

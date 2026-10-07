@@ -43,7 +43,7 @@ itinerary:
 
     После экскурсии возвращение в отель в Панама-Сити.
   images:
-  - src: https://brasiltours.ru/image/panama%20chagres%20national%20park1.png
+  - src: /media/tours/panama-2024/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Национальный парк Чагрес
 - day: 3
   title: Панама-Сити и Панамский канал
@@ -54,7 +54,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/panama%20canal.png
+  - src: /media/tours/luchshee-v-paname/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Панамский канал
 - day: 4
   title: 'Коста-Рика: вулкан Поас и La Paz Waterfall Gardens'
@@ -140,7 +140,7 @@ priceFrom: 8624
 currency: USD
 priceNote: $8624
 hero:
-  src: https://brasiltours.ru/image/catalog/product/f/i/file_169_45.jpg
+  src: /media/tours/panama-i-kosta-rika/hero-src-enhanced-20261007.webp
   alt: Панама и Коста Рика
 routeCountries:
 - country_panama

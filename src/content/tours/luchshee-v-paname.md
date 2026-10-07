@@ -58,7 +58,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/panama%20canal.png
+  - src: /media/tours/luchshee-v-paname/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: на фото:Панамский канал
   - src: https://brasiltours.ru/image/panama11.png
     alt: 'на фото: Панама - Сити'

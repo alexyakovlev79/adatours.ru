@@ -31,7 +31,7 @@ itinerary:
 
     Сан-Хосе находится в центральной части Коста-Рики, среди гор и долин. Город сочетает оживленную торговлю, яркую природу и выразительную архитектуру. После дороги можно отдохнуть в отеле или начать самостоятельное знакомство со столицей.
   images:
-  - src: https://brasiltours.ru/image/san%20jose%20costa1.png
+  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'на фото: столица - город Сан Хосе в Коста-Рике'
 - day: 2
   title: Сан-Хосе - вулкан Поас - Ла-Пас - Ареналь
@@ -180,7 +180,7 @@ priceFrom: 2136
 currency: USD
 priceNote: $2136
 hero:
-  src: https://brasiltours.ru/image/countries/costa-rica/samuel-charron-7c7jwyznvlg-unsplash.jpg
+  src: /media/tours/3-shaga-po-kosta-rike/hero-src-enhanced-20261007.webp
   alt: 'На фото: пляжный отдых в Коста-Рике'
 routeCountries:
 - country_costa_rica

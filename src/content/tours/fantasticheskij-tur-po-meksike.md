@@ -65,7 +65,7 @@ itinerary:
     Президента и приоритетов правительства. В результате доступ к зданию, включая его исторические фрески и другие зоны, может
     быть ограничен или недоступен для публики в любое время.По окончании экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/MEXICOCITY-PYRAMIDSSHIREOFGUADALIPE1-770X400.png
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 3
   title: Гвадалупе – Теотиуакан (З)
@@ -94,7 +94,7 @@ itinerary:
     каменные головы и древние артефакты одной из древнейших цивилизаций Мезоамерики. Затем переезд в Паленке.Quinta Chanabnal
     www.quintachanabnal.com 3 ночи / Deluxe Suite King
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
   - src: https://brasiltours.ru/image/countries/mexico/san-cristobal-de-las-casas.jpg
     alt: Сан Кристобал де Лас Касас

@@ -44,7 +44,7 @@ itinerary:
 
     После заселения оставшаяся часть дня свободная. Это время можно использовать для отдыха после перелета или первой самостоятельной прогулки по столице.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 2
   title: Исторический центр Мехико и Национальный музей антропологии
@@ -61,7 +61,7 @@ itinerary:
 
     **Важно:** посещение Национального дворца не гарантируется. Это официальная резиденция президента Мексики и охраняемое государственное здание. Во время официальных мероприятий, совещаний и других государственных событий доступ может быть ограничен частично или полностью, включая помещения с историческими фресками.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/mexico-city.png
+  - src: /media/tours/meksika-den-mertvykh/hero-src-enhanced-20261007.webp
     alt: Мехико
 - day: 3
   title: Базилика Гваделупе и Теотиуакан
@@ -93,7 +93,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/san%20cristobal.jpg
     alt: Сан Кристобал де Лас Касас
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 5
   title: Сан-Кристобаль, Синакантан и Сан-Хуан-Чамула

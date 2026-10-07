@@ -44,7 +44,7 @@ itinerary:
 
     Вечер свободный для отдыха после перелета.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 2
   title: Мехико-Сити - Теотиуакан - Базилика Девы Гваделупы - обзорная экскурсия, 140 км
@@ -62,9 +62,9 @@ itinerary:
 
     Вы посетите Кафедральный собор и, если он будет открыт для посещения, Национальный дворец с фресками Диего Риверы.
   images:
-  - src: https://brasiltours.ru/image/Teotihuacan.JPG
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Теотиуакан
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 3
   title: Мехико-Сити - Вильяэрмоса - Паленке, 145 км
@@ -79,7 +79,7 @@ itinerary:
 
     По прибытии вас встретит водитель. Переезд в Паленке и размещение в отеле 4*.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 4
   title: Паленке - Кампече, 365 км
@@ -99,7 +99,7 @@ itinerary:
 
     Размещение в отеле 4*.
   images:
-  - src: https://brasiltours.ru/image/Campeche.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Кампече
 - day: 5
   title: Кампече - Ушмаль, 160 км - Мерида, 85 км
@@ -116,7 +116,7 @@ itinerary:
 
     После осмотра Ушмаля переезд в Мериду и размещение в отеле 4*.
   images:
-  - src: https://brasiltours.ru/image/Campeche.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Кампече
 - day: 6
   title: Мерида - Чичен-Ица, 130 км - сенот - Канкун / Ривьера Майя, 220-280 км

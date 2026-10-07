@@ -39,7 +39,7 @@ itinerary:
 
     Остаток дня можно посвятить отдыху после перелета и первому самостоятельному знакомству с городом.
   images:
-  - src: https://brasiltours.ru/image/MEXICOCITY-PYRAMIDSSHIREOFGUADALIPE1-770X400.png
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 2
   title: ', 28 октября. Исторический центр Мехико'
@@ -58,7 +58,7 @@ itinerary:
 
     **Важное условие:** посещение Национального дворца не гарантируется. Это официальная резиденция президента Мексики, поэтому доступ для посетителей может ограничиваться из-за государственных мероприятий и текущего рабочего графика.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 3
   title: ', 29 октября. Койоакан, Голубой дом и Анахуака́лли'
@@ -115,7 +115,7 @@ itinerary:
 
     После программы размещение в Royal Reforma на 3 ночи, стандартный номер. День получается длинным: утром Атликско, затем возвращение в столицу и вечернее посещение Микскика. Именно поэтому он относится к центральным дням всего маршрута.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/mexico-city-zocalo.png
+  - src: /media/tours/meksika-den-mertvykh/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 7
   title: ', 2 ноября. Сан-Анхель, Университетский городок и Сочимилько'
@@ -132,7 +132,7 @@ itinerary:
 
     Во второй половине дня возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/mexico-city1.png
+  - src: /media/tours/meksika-den-mertvykh/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 8
   title: ', 3 ноября. Чапультепек, музеи и Луча Либре'
@@ -187,7 +187,7 @@ priceFrom: 2015
 currency: USD
 priceNote: $2015 на человека при группе 6 человек и размещении DBL
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/mexico-city.png
+  src: /media/tours/meksika-den-mertvykh/hero-src-enhanced-20261007.webp
   alt: Мексика & День Мертвых
 routeCountries:
 - country_mexico

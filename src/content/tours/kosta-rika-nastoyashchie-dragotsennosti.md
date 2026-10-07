@@ -111,7 +111,7 @@ priceFrom: 4210
 currency: USD
 priceNote: $4210 на 1 человека при размещении DBL
 hero:
-  src: https://brasiltours.ru/image/catalog/product/b/f/bfcb23352fc80068582011fdbd8acf17.jpg
+  src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/hero-src-enhanced-20261007.webp
   alt: 'Коста-Рика: Настоящие  Драгоценности'
 routeCountries:
 - country_costa_rica

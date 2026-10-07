@@ -95,7 +95,7 @@ itinerary:
     \ вулкана, по тропе Los Tucanes, через поля застывшей лавы, оставшиеся после извержения 1968 года.\n\n**Ночь:** Arenal\
     \ Paraíso.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/arenal%20volcano%20costa.png
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Вулкан Ареналь
 - day: 6
   title: Ареналь - Монтеверде

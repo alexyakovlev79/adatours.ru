@@ -137,7 +137,7 @@ priceFrom: 933
 currency: USD
 priceNote: $933
 hero:
-  src: https://brasiltours.ru/image/panama%20canal.png
+  src: /media/tours/luchshee-v-paname/itinerary-1-images-0-src-enhanced-20261007.webp
   alt: 'Панама: Панама-Сити - Долина Антон-Крепость Сан-Лоренсо'
 routeCountries:
 - country_panama

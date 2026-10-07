@@ -572,17 +572,24 @@ const nestedGroups = NAV_LINKS
     .mobile-menu__panel {
       position: absolute;
       inset: 0;
+      box-sizing: border-box;
       display: flex;
+      width: 100%;
+      height: 100%;
+      min-width: 0;
       flex-direction: column;
       justify-content: flex-end;
       gap: 30px;
       padding: calc(var(--header-h) + 24px) var(--gutter) 36px;
+      overflow-x: hidden;
       overflow-y: auto;
       overscroll-behavior: contain;
+      background: var(--color-ink-deep);
       transition: transform 300ms var(--ease-out);
     }
 
     .mobile-menu__panel--main {
+      z-index: 1;
       transform: translateX(0);
     }
 
@@ -591,12 +598,24 @@ const nestedGroups = NAV_LINKS
     }
 
     .mobile-menu__panel--submenu {
+      z-index: 2;
       justify-content: flex-start;
       gap: 18px;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
       transform: translateX(100%);
+      transition:
+        transform 300ms var(--ease-out),
+        opacity 120ms ease,
+        visibility 300ms;
     }
 
     .mobile-menu__panel--submenu.is-active {
+      z-index: 3;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
       transform: translateX(0);
     }
 
@@ -664,11 +683,13 @@ const nestedGroups = NAV_LINKS
     }
 
     .mobile-menu__panel--submenu nav a {
+      max-width: 100%;
       padding: 13px 0;
       border-bottom: 1px solid rgba(255,255,255,.14);
       color: rgba(255,255,255,.78);
       font-size: clamp(1.08rem, 4vw, 1.55rem);
       line-height: 1.15;
+      overflow-wrap: anywhere;
     }
 
     .mobile-menu__panel--submenu nav a.mobile-menu__overview {

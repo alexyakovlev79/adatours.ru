@@ -14,16 +14,16 @@ priceFrom: 61
 currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_132.png"
+  src: "/media/excursions/punta-arenas-mnogoobrazie-krasot-jetogo-kraja/hero-src-enhanced-20261007.webp"
   alt: "Пунта Аренас-  многообразие красот этого края"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_54_59.png"
+  - src: "/media/excursions/punta-arenas-mnogoobrazie-krasot-jetogo-kraja/gallery-0-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_57_31.png"
+  - src: "/media/excursions/punta-arenas-mnogoobrazie-krasot-jetogo-kraja/gallery-1-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_47_133.png"
+  - src: "/media/excursions/punta-arenas-mnogoobrazie-krasot-jetogo-kraja/gallery-2-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_54_60.png"
+  - src: "/media/excursions/punta-arenas-mnogoobrazie-krasot-jetogo-kraja/gallery-3-src-enhanced-20261007.webp"
     alt: ""
 route: []
 lead: "Экскурсия по Пунта-Аренасу в Чили."
@@ -40,3 +40,4 @@ themes: ["theme_culture"]
 Стоимость экскурсии — $61 на человека.
 
 Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения.
+

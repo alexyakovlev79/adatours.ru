@@ -15,9 +15,9 @@ hero:
   src: /media/destinations/santa-marta/hero-enhanced-20261003.webp
   alt: "Санта Марта - Парк Тайрона и Плайя Кристал"
 gallery:
-  - src: "https://brasiltours.ru/image/countries/colombia/img-20220726-wa0188.jpg"
+  - src: "/media/excursions/colombia-santa-marta-parque-tayrona-playa-crystal/gallery-0-src-enhanced-20261007.webp"
     alt: ""
-  - src: "https://brasiltours.ru/image/catalog/product/f/i/file_1_13.jpg"
+  - src: "/media/excursions/colombia-santa-marta-parque-tayrona-playa-crystal/gallery-1-src-enhanced-20261007.webp"
     alt: ""
 route:
   - "Санта-Марта"
@@ -48,4 +48,5 @@ themes: ["theme_wildlife","theme_beach","theme_culture"]
 ## Ощутите дух приключений
 
 Откройте тайны прошлого: Археологические памятники Тайрона: Познакомьтесь с наследием древней цивилизации Тайрона, посетив руины их поселений, храмы и другие археологические объекты. Живописные тропические тропы: Пройдитесь по живописным тропам, ведущим к водопадам, затерянным лагунам и уединенным пляжам. Погружайтесь в культуру: Познакомьтесь с местными традициями и насладитесь блюдами традиционной колумбийской кухни. Прикоснитесь к природе: Почувствуйте единение с природой, наслаждаясь красотой тропического леса и умиротворенностью морского побережья. Тайрона — это не просто парк, это место, где история переплетается с природой, а дух приключений встречается с духом покоя.
+
 

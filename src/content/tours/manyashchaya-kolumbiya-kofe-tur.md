@@ -94,7 +94,7 @@ itinerary:
 
     После экскурсии возвращение в Медельин, размещение в отеле и отдых.
   images:
-  - src: https://brasiltours.ru/image/Col%20Guatape.png
+  - src: "/media/excursions/penol-i-guatape/gallery-0-src-enhanced-20261007.webp"
     alt: 'На фото: отдых в Колумбии'
 - day: 6
   title: Медельин
@@ -109,7 +109,7 @@ itinerary:
 
     Финальная часть дня - Замковый музей, построенный в 1930 году. Он известен коллекцией произведений искусства и садами. После экскурсии возвращение в гостиницу и отдых. Вечером можно самостоятельно выйти в город, прогуляться рядом с гостиницей или остаться в отеле.
   images:
-  - src: https://brasiltours.ru/image/medelin%20colombia1.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
     alt: 'На фото: отдых в Колумбии'
 - day: 7
   title: Медельин - Картахена
@@ -121,9 +121,9 @@ itinerary:
 
     По прибытии встреча, трансфер в гостиницу, размещение и отдых.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/new-photos/jonny-james-iolq-zmtita-unsplash.jpg
+  - src: "/media/tours/manyashchaya-kolumbiya-kofe-tur/hero-src-enhanced-20261007.webp"
     alt: 'На фото: улочки Картахены, Колумбия'
-  - src: https://brasiltours.ru/image/medelin%20colombia1.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
     alt: 'На фото: отдых в Колумбии'
 - day: 8
   title: Картахена
@@ -136,7 +136,7 @@ itinerary:
 
     Картахена стоит на берегу Карибского моря и сочетает укрепленный старый город, колониальную архитектуру и современную курортную жизнь. После экскурсии возвращение в гостиницу и отдых.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/new-photos/jonny-james-iolq-zmtita-unsplash.jpg
+  - src: "/media/tours/manyashchaya-kolumbiya-kofe-tur/hero-src-enhanced-20261007.webp"
     alt: 'На фото: улочки Картахены, Колумбия'
 - day: 9
   title: Картахена
@@ -147,7 +147,7 @@ itinerary:
 
     Можно снова пройтись по историческому центру, провести время у моря или выбрать дополнительные активности.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/new-photos/jonny-james-iolq-zmtita-unsplash.jpg
+  - src: "/media/tours/manyashchaya-kolumbiya-kofe-tur/hero-src-enhanced-20261007.webp"
     alt: 'На фото: улочки Картахены, Колумбия'
 - day: 10
   title: Вылет
@@ -155,7 +155,7 @@ itinerary:
   - Картахена
   text: Завтрак. В назначенное время трансфер в аэропорт Картахены и стыковка с международным рейсом.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/new-photos/jonny-james-iolq-zmtita-unsplash.jpg
+  - src: "/media/tours/manyashchaya-kolumbiya-kofe-tur/hero-src-enhanced-20261007.webp"
     alt: 'На фото: улочки Картахены, Колумбия'
 included:
 - Внутренние авиаперелеты Богота - Медельин и Медельин - Картахена.
@@ -179,7 +179,7 @@ priceFrom: 4111
 currency: USD
 priceNote: $4111
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/jonny-james-iolq-zmtita-unsplash.jpg
+  src: "/media/tours/manyashchaya-kolumbiya-kofe-tur/hero-src-enhanced-20261007.webp"
   alt: 'На фото: улочки Картахены, Колумбия'
 routeCountries:
 - country_colombia

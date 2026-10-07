@@ -19,7 +19,7 @@ hero:
   src: "https://brasiltours.ru/image/Col%20El%20penyon%20.png"
   alt: "На фото: Эль Пеньолa и Гуатапе (Колумбия)"
 gallery:
-  - src: "https://brasiltours.ru/image/Col%20Guatape.png"
+  - src: "/media/excursions/penol-i-guatape/gallery-0-src-enhanced-20261007.webp"
     alt: "На фото: Эль Пеньолa и Гуатапе (Колумбия)"
   - src: "https://brasiltours.ru/image/gua2.png"
     alt: "На фото: Эль Пеньолa и Гуатапе (Колумбия)"

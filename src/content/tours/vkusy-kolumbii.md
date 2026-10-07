@@ -120,7 +120,7 @@ itinerary:
 
     После посещения скалы вы отправитесь в деревню Гуатапе, где будет время на прогулку и обед. Затем возвращение в Медельин.
   images:
-  - src: https://brasiltours.ru/image/medelin%20colombia1.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Медельин'
   - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Богота'
@@ -141,7 +141,7 @@ itinerary:
 
     Возвращение в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/medelin%20colombia1.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Медельин'
 - day: 7
   title: Медельин - Картахена
@@ -155,7 +155,7 @@ itinerary:
   images:
   - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Картахена'
-  - src: https://brasiltours.ru/image/medelin%20colombia1.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Медельин'
 - day: 8
   title: Картахена

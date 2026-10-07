@@ -29,9 +29,9 @@ gallery:
     alt: Искусство Фернандо Ботеро в Медельине
   - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Панорама Медельина
-  - src: https://brasiltours.ru/image/countries/colombia/new-photos/kolumbiya-devushka.jpg
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-4-src-enhanced-20261007.webp"
     alt: Жительница Колумбии
-  - src: https://brasiltours.ru/image/medelin%20colombia1.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
     alt: Медельин, Колумбия
 route:
   - Медельин

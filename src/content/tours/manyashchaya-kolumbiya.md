@@ -81,7 +81,7 @@ itinerary:
 
     После экскурсии поездка продолжится в Гуатапе. Здесь будет время прогуляться и пообедать. Небольшой город резко отличается от мегаполисов в начале маршрута: прогулка дает возможность спокойно рассмотреть улицы и сделать паузу после переезда и экскурсии к скале. Затем возвращение в Медельин.
   images:
-  - src: https://brasiltours.ru/image/medelin%20colombia1.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
     alt: 'На фото: город Медельин, Колумбия'
 - day: 5
   title: Медельин
@@ -96,7 +96,7 @@ itinerary:
 
     Завершит день Замковый музей. Здание построено в 1930 году в готическом стиле и напоминает французский замок. Сначала дом принадлежал врачу Урибе, затем его приобрел Диего Мисас, собравший здесь произведения декоративно-прикладного искусства. Позже особняк стал музеем и культурным центром. После экскурсии - возвращение в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/medelin%20colombia1.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
     alt: 'На фото: город Медельин, Колумбия'
 - day: 6
   title: Медельин - Картахена
@@ -110,7 +110,7 @@ itinerary:
   images:
   - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Картахена, Колумбия'
-  - src: https://brasiltours.ru/image/medelin%20colombia1.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
     alt: 'На фото: город Медельин, Колумбия'
 - day: 7
   title: Картахена

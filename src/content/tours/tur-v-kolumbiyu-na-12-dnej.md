@@ -83,7 +83,7 @@ itinerary:
   images:
   - src: "/media/excursions/salento-i-dolina-kokora/hero-src-enhanced-20261007.webp"
     alt: 'На фото: конная прогулка в долине Кокора'
-  - src: https://brasiltours.ru/image/pereira-colombia-25397287.png
+  - src: "/media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: Перейра в Колумбии'
 - excursionRef: excursion_source_kofejnyj_tur_v_perejra
   places: []
@@ -97,7 +97,7 @@ itinerary:
 
     После канопи предусмотрена конная прогулка по кофейной долине. Это отдельная возможность увидеть плантации и сельские пейзажи региона с более близкого расстояния.
   images:
-  - src: https://brasiltours.ru/image/pereira-colombia-25397287.png
+  - src: "/media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: Перейра в Колумбии'
 - day: 4
   title: Перейра - Картахена
@@ -123,7 +123,7 @@ itinerary:
   images:
   - src: "/media/tours/manyashchaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Картахена в Колумбии'
-  - src: https://brasiltours.ru/image/pereira-colombia-25397287.png
+  - src: "/media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: Перейра в Колумбии'
 - day: 5
   title: Картахена - Сан-Андрес
@@ -139,7 +139,7 @@ itinerary:
   images:
   - src: "/media/tours/manyashchaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Картахена в Колумбии'
-  - src: https://brasiltours.ru/image/countries/colombia/isla-san.jpg
+  - src: "/media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-5-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: Остров Сан Андрес в Колумбии'
 - day: 6
   title: отдых на Сан-Андресе
@@ -232,7 +232,7 @@ itinerary:
   images:
   - src: "/media/tours/manyashchaya-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Озеро Гуатавита в Колумбии'
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0302.jpg
+  - src: "/media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-11-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: Соляной собор  Сипакира в Колумбии'
 - day: 12
   title: Богота
@@ -266,7 +266,7 @@ priceFrom: 5135
 currency: USD
 priceNote: $5135
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/10.jpg
+  src: "/media/tours/tur-v-kolumbiyu-na-12-dnej/hero-src-enhanced-20261007.webp"
   alt: 'На фото: шоппинг в Колумбии'
 routeCountries:
 - country_colombia

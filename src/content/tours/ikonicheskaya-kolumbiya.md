@@ -125,7 +125,7 @@ itinerary:
     \n**Продолжительность:** 4 часа.  \n**Включено:** профессиональный англоязычный гид, частный транспорт, интерактивная\
     \ программа по приготовлению кофе, сопровождение персонала фермы и традиционный обед."
   images:
-  - src: https://brasiltours.ru/image/pereira%20col.%20jpg.png
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Перейра
   - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: Медельин
@@ -143,9 +143,9 @@ itinerary:
     \ 7 часов.  \n**Включено:** профессиональный англоязычный гид, частный транспорт, ритуал восковой пальмы и дегустация\
     \ канелазо.  \n**Дополнительно:** обед - $25 с человека."
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cocora-palm.jpg
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-7-images-0-src-enhanced-20261007.webp"
     alt: Долина Кокора
-  - src: https://brasiltours.ru/image/pereira%20col.%20jpg.png
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Перейра
 - day: 9
   title: Перейра - Картахена - закат в бухте
@@ -161,7 +161,7 @@ itinerary:
   images:
   - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp"
     alt: Картахена
-  - src: https://brasiltours.ru/image/pereira%20col.%20jpg.png
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: Перейра
 - day: 10
   title: 'Картахена: обзорная экскурсия'
@@ -254,7 +254,7 @@ priceFrom: 4054
 currency: USD
 priceNote: $4054
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/kolumbiya-devushka.jpg
+  src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-4-src-enhanced-20261007.webp"
   alt: Иконическая Колумбия
 routeCountries:
 - country_colombia

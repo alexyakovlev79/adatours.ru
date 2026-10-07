@@ -245,7 +245,7 @@ priceFrom: 5805
 currency: USD
 priceNote: $5805
 hero:
-  src: "/media/tours/aktivnyj-ekvador-i-trekking/hero-src-enhanced-20261007.webp"
+  src: "/media/tours/aktivnyj-ekvador-i-trekking/hero-src-enhanced-20261007-v2.webp"
   alt: Активный Эквадор и Треккинг
 routeCountries:
 - country_ecuador

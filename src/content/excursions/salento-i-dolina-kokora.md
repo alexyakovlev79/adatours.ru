@@ -20,7 +20,7 @@ hero:
   src: "/media/excursions/salento-i-dolina-kokora/hero-src-enhanced-20261007.webp"
   alt: Долина Кокора в Колумбии
 gallery:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0158.jpg
+  - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-2-src-enhanced-20261007.webp"
     alt: Саленто, Колумбия
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0173.jpg
     alt: Восковые пальмы в долине Кокора

@@ -108,7 +108,7 @@ itinerary:
 
     По прибытии встреча, трансфер в гостиницу, размещение и отдых.
   images:
-  - src: https://brasiltours.ru/image/cartagena4.png
+  - src: "/media/tours/manyashchaya-kolumbiya-baru/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: тур по Колумбии и лучшее в стране'
   - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: 'На фото: тур по Колумбии и лучшее в стране'
@@ -123,7 +123,7 @@ itinerary:
 
     Картахена сочетает старую архитектуру, морские виды и современную городскую жизнь. Во время прогулки особенно заметен переход между укрепленной колониальной частью и открытым современным городом у моря. После экскурсии возвращение в гостиницу и отдых.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena6.jpg
+  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: тур по Колумбии и лучшее в стране'
 - day: 8
   title: Картахена - Бару
@@ -135,7 +135,7 @@ itinerary:
 
     В этот день включены завтрак, обед и ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0182.jpg
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: пляжный отдых на острове Бару в Колумбии'
 - day: 9
   title: Отдых на Бару
@@ -146,7 +146,7 @@ itinerary:
 
     В оба дня включены завтрак, обед и ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0182.jpg
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: пляжный отдых на острове Бару в Колумбии'
 - day: 10
   title: Отдых на Бару
@@ -157,7 +157,7 @@ itinerary:
 
     В оба дня включены завтрак, обед и ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0182.jpg
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: пляжный отдых на острове Бару в Колумбии'
 - day: 11
   title: Бару - Картахена
@@ -169,7 +169,7 @@ itinerary:
 
     Оставшаяся часть дня свободная. Можно самостоятельно прогуляться по городу, вернуться в исторический центр или провести вечер у моря. После нескольких спокойных дней на Бару возвращение в Картахену снова меняет обстановку: вместо пляжа вокруг появляются крепостные стены, площади, узкие улицы и городские кафе.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0182.jpg
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: пляжный отдых на острове Бару в Колумбии'
 - day: 12
   title: Вылет из Картахены
@@ -177,7 +177,7 @@ itinerary:
   - Картахена
   text: Завтрак. В назначенное время трансфер в аэропорт Картахены и стыковка с международным рейсом.
   images:
-  - src: https://brasiltours.ru/image/cartagena4.png
+  - src: "/media/tours/manyashchaya-kolumbiya-baru/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: тур по Колумбии и лучшее в стране'
 included:
 - Проживание в отелях по маршруту с завтраками.
@@ -202,7 +202,7 @@ priceFrom: 4768
 currency: USD
 priceNote: $4768
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0158.jpg
+  src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-2-src-enhanced-20261007.webp"
   alt: 'На фото: тур по Колумбии и лучшее в стране'
 routeCountries:
 - country_colombia

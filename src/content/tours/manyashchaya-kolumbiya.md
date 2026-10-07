@@ -127,7 +127,7 @@ itinerary:
 
     Вы также увидите отель Santa Clara, который раньше был монастырем в районе Сан-Диего. После экскурсии - возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena6.jpg
+  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Картахена, Колумбия'
 - day: 8
   title: Картахена
@@ -144,7 +144,7 @@ itinerary:
   - Картахена
   text: После завтрака в назначенное время трансфер в аэропорт Картахены. Стыковка с международным рейсом и завершение программы.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena6.jpg
+  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Картахена, Колумбия'
 included:
 - Внутренние авиаперелеты Богота - Медельин - Картахена

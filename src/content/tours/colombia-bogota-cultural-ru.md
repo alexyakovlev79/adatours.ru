@@ -167,7 +167,7 @@ itinerary:
     \ на острова, трансфер отель - пристань - отель, типичный карибский обед.\n\n**Не включено:** налог Coralia $10 с человека,\
     \ вход в океанариум $10 с человека."
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0182.jpg
+  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: пляжи островов Росарио в Колумбии'
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0220.jpg
     alt: На улицах Картахены, Колумбия

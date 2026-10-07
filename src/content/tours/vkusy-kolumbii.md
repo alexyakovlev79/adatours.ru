@@ -36,7 +36,7 @@ itinerary:
 
     Богота была основана испанцами в XVI веке на месте индейских поселений. Название города связывают с именем вождя племени чибча. Сегодня это крупный мегаполис с историческими кварталами, музеями, ресторанами, кафе и современными туристическими районами.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Богота'
 - day: 2
   title: Богота - Асиенда Колома
@@ -74,7 +74,7 @@ itinerary:
 
     После обеда в ресторане возвращение в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Богота'
 - day: 4
   title: Богота - озеро Гуатавита - Сипакира
@@ -122,7 +122,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/medelin%20colombia1.png
     alt: 'На фото: страна Колумбия, город Медельин'
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: страна Колумбия, город Богота'
 - day: 6
   title: Медельин

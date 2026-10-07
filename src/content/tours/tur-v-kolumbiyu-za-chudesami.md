@@ -117,7 +117,7 @@ itinerary:
 
     **Включено:** входные билеты по маршруту, услуги двуязычного гида, частный транспорт и карта местной медицинской помощи.
   images:
-  - src: https://brasiltours.ru/image/columbia%20villa%20de%20leyva1.png
+  - src: "/media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: На фото:Вилья-де-Лейва
 - day: 5
   title: долина Кокора и кофейная ферма
@@ -144,7 +144,7 @@ itinerary:
 
     **Включено:** входные билеты в указанные места, услуги двуязычного гида, частный транспорт, карта местной медицинской помощи и дегустация канелазо.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0142.jpg
+  - src: "/media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-4-images-0-src-enhanced-20261007.webp"
     alt: На фото:Долина Кокора
 - day: 6
   title: Армения - Санта-Марта
@@ -172,7 +172,7 @@ itinerary:
 
     **Включено:** входные билеты, услуги двуязычного гида, частный транспорт и карта местной медицинской помощи.
   images:
-  - src: https://brasiltours.ru/image/Santa%20Marta.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: Санта Марта'
 - day: 7
   title: национальный парк Тайрона
@@ -219,9 +219,9 @@ itinerary:
 
     **Включено:** входные билеты, услуги двуязычного гида, частный транспорт и карта местной медицинской помощи.
   images:
-  - src: https://brasiltours.ru/image/cartagena%201.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Картахена'
-  - src: https://brasiltours.ru/image/Santa%20Marta.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: Санта Марта'
 - day: 9
   title: рыбацкая деревня под Картахеной

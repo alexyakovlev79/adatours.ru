@@ -45,7 +45,7 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: столица Колумбии, город Богота'
 - day: 2
   title: Богота - Ла-Макарена
@@ -122,7 +122,7 @@ itinerary:
 
     По прибытии в международный аэропорт Эль-Дорадо встреча и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: столица Колумбии, город Богота'
 - day: 6
   title: Богота
@@ -169,7 +169,7 @@ priceFrom: 1655
 currency: USD
 priceNote: $1655
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/new-photos/1234.jpg
+  src: "/media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/hero-src-enhanced-20261007.webp"
   alt: 'на фото: Каньо Кристалес - радужная река в Колумбии'
 routeCountries:
 - country_colombia

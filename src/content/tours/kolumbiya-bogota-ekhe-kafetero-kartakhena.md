@@ -34,7 +34,7 @@ itinerary:
   text: Прибытие в аэропорт «Дорадо» в Боготе. Встреча с русскоговорящим гидом, трансфер и размещение в отеле «*****». После
     заселения остается свободное время для самостоятельной прогулки и отдыха.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Колумбии, город Богота'
 - day: 2
   title: Богота и обзорная экскурсия
@@ -49,7 +49,7 @@ itinerary:
 
     Следующая часть программы проходит в музее колумбийского художника и скульптора Фернандо Ботеро. В течение дня предусмотрен обед в ресторане. После экскурсии трансфер в гостиницу и отдых.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Колумбии, город Богота'
 - day: 3
   title: Озеро Гуатавита и Сипакира
@@ -120,7 +120,7 @@ itinerary:
   text: 'После завтрака в назначенное время трансфер в аэропорт и стыковка на международный рейс. Путешествие завершается
     после трех основных частей маршрута: Боготы и окрестностей, Кофейного региона и Картахены на Карибском побережье.'
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Колумбии, город Богота'
 included:
 - Внутренние авиаперелеты Богота - Перейра и Перейра - Картахена.

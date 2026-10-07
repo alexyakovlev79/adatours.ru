@@ -43,7 +43,7 @@ itinerary:
     испанцами на том месте, где когда - то были поселения индейцев. Название Богота осталось от имени индейского вождя племени
     чибча. Сегодня Богота – мегаполис с разными туристическими районами, многочисленными музеями, модными ресторанами и кафе.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Богота'
 - day: 2
   title: Богота-Сити тур +Сипакира
@@ -93,7 +93,7 @@ itinerary:
   images:
   - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: 'на фото: Медельин'
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Богота'
 - day: 4
   title: Медельин - Пеньоль и Гуатапе
@@ -166,7 +166,7 @@ itinerary:
     в музее золота. Возвращение в гостиницу.Продолжительность: 4 часаВключено: входные билеты, услуги гида, индивидуальный
     транспорт, местная карта медицинской помощи'
   images:
-  - src: https://brasiltours.ru/image/Santa%20Marta.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: Санта Марта'
   - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Медельин'
@@ -235,9 +235,9 @@ itinerary:
     Здесь расположены сувенирные лавочки и магазины, где можно купить все - от безделушек до гамаков.Продолжительность: 4
     часа. Дни проведения тура: ежедневноВключено: транспорт, услуги гида, входные билеты и местная карта медицинской помощи.'
   images:
-  - src: https://brasiltours.ru/image/cartagena%201.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Картахена'
-  - src: https://brasiltours.ru/image/Santa%20Marta.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: Санта Марта'
 - day: 14
   title: Картахена - Исла дель Росарио

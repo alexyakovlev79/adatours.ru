@@ -37,7 +37,7 @@ itinerary:
   - Богота
   text: Прибытие в Боготу. Встреча в международном аэропорту Эль-Дорадо, трансфер в отель и размещение.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 2
   title: 'Богота: исторический центр и Монсеррат'
@@ -52,7 +52,7 @@ itinerary:
     \ транспорт, профессиональный англоязычный гид, вход в Музей золота, Casa de la Moneda и Donación Botero, подъем на Монсеррат.\n\
     \nМузей золота закрыт по понедельникам. Casa de la Moneda и Donación Botero закрыты по вторникам."
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 3
   title: Богота - Сипакира - Гуатавита
@@ -66,7 +66,7 @@ itinerary:
     \ дня возвращаемся в отель.\n\n**Продолжительность:** 10 часов.  \n**Включено:** профессиональный англоязычный гид, частный\
     \ транспорт, вход в Соляной собор Сипакиры, вход к лагуне Гуатавита и типичный обед."
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 4
   title: Богота - Медельин
@@ -80,7 +80,7 @@ itinerary:
   images:
   - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Богота
 - day: 5
   title: Медельин и Коммуна 13
@@ -159,7 +159,7 @@ itinerary:
     \ лимонадом, водой и содовой.  \n**Не включено:** продукты премиум-класса и закуски на борту, а также причальный сбор\
     \ $5 с человека.  \n**Дни проведения:** со среды по понедельник."
   images:
-  - src: https://brasiltours.ru/image/cartagena%201.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp"
     alt: Картахена
   - src: https://brasiltours.ru/image/pereira%20col.%20jpg.png
     alt: Перейра
@@ -206,7 +206,7 @@ itinerary:
   images:
   - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Санта-Марта
-  - src: https://brasiltours.ru/image/cartagena%201.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 13
   title: Санта-Марта - национальный парк Тайрона - Кабо-Сан-Хуан-дель-Гиа

@@ -57,7 +57,7 @@ itinerary:
 
     **Примечание:** Музей золота закрыт по понедельникам. Каса-де-Ла-Монеда и музей Ботеро закрыты по вторникам.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Богота в Колумбии'
 - day: 2
   title: Богота - Перейра, Саленто и долина Кокора
@@ -121,7 +121,7 @@ itinerary:
 
     После экскурсии возвращение в отель по проспекту Сантандер.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena6.jpg
+  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Картахена в Колумбии'
   - src: https://brasiltours.ru/image/pereira-colombia-25397287.png
     alt: 'На фото: Перейра в Колумбии'
@@ -137,7 +137,7 @@ itinerary:
 
     По прибытии встреча, трансфер и размещение в **Decameron Isleño ALL IN**.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena6.jpg
+  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Картахена в Колумбии'
   - src: https://brasiltours.ru/image/countries/colombia/isla-san.jpg
     alt: 'На фото: Остров Сан Андрес в Колумбии'
@@ -150,7 +150,7 @@ itinerary:
 
     Плотной экскурсионной части нет. Можно наслаждаться карибскими пейзажами, морем, пляжами и инфраструктурой отеля. После Боготы, кофейного региона и Картахены эта часть маршрута оставлена для спокойного отдыха у воды.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Богота в Колумбии'
 - day: 7
   title: отдых на Сан-Андресе
@@ -161,7 +161,7 @@ itinerary:
 
     Плотной экскурсионной части нет. Можно наслаждаться карибскими пейзажами, морем, пляжами и инфраструктурой отеля. После Боготы, кофейного региона и Картахены эта часть маршрута оставлена для спокойного отдыха у воды.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Богота в Колумбии'
 - day: 8
   title: отдых на Сан-Андресе
@@ -172,7 +172,7 @@ itinerary:
 
     Плотной экскурсионной части нет. Можно наслаждаться карибскими пейзажами, морем, пляжами и инфраструктурой отеля. После Боготы, кофейного региона и Картахены эта часть маршрута оставлена для спокойного отдыха у воды.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena6.jpg
+  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Картахена в Колумбии'
 - day: 9
   title: Медельин
@@ -240,7 +240,7 @@ itinerary:
   - Богота
   text: В назначенное время трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Богота в Колумбии'
 included:
 - проживание в отелях;

@@ -192,7 +192,7 @@ itinerary:
 
     Включены завтрак и ужин.
   images:
-  - src: https://brasiltours.ru/image/equador%20national%20park%20cotopaxi.png
+  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: вулканы в Эквадоре'
 - day: 8
   title: 'Вторник: Национальный парк Котопакси и возвращение в Кито'
@@ -245,7 +245,7 @@ itinerary:
   images:
   - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: столица Эквадора. город Кито'
-  - src: https://brasiltours.ru/image/equador%20national%20park%20cotopaxi.png
+  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: вулканы в Эквадоре'
 - day: 9
   title: 'Среда: вылет из Кито'

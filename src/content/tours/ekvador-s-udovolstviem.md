@@ -102,7 +102,7 @@ itinerary:
   images:
   - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Площадь города Кито'
-  - src: https://brasiltours.ru/image/countries/equador/ecuador-right.jpg
+  - src: "/media/tours/ekvador-s-udovolstviem/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: Вулкан Котопахи, Эквадор'
 - day: 4
   title: Котопакси - Килотоа - Баньос
@@ -120,7 +120,7 @@ itinerary:
     \ из холодного высокогорья к более мягкому климату долины у вулкана Тунгурауа.\n\n**Размещение:** Samari 5*.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/lake-limpiongo.jpg
+  - src: "/media/tours/ekvador-s-udovolstviem/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Национальный парк Котопахи, Эквадор'
 - day: 5
   title: Баньос - Кито
@@ -200,7 +200,7 @@ itinerary:
     \ трансфер в Пуэрто-Айору, размещение и свободный вечер.\n\n**Размещение:** Solymar 4*, Ocean View Room.  \n**Питание:**\
     \ завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/simon-matzinger-347343-unsplash-2.jpg
+  - src: "/media/tours/ekvador-s-udovolstviem/itinerary-8-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Игуана на Галапагосах'
 - day: 10
   title: Остров Бартоломе
@@ -217,7 +217,7 @@ itinerary:
     \ и пеликанов.\n\nОбед подается на борту. К вечеру возвращение в Пуэрто-Айору и свободное время.\n\n**Размещение:** Solymar\
     \ 4*, Ocean View Room.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/simon-matzinger-347343-unsplash-2.jpg
+  - src: "/media/tours/ekvador-s-udovolstviem/itinerary-8-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Игуана на Галапагосах'
 - day: 11
   title: Сеймур-Норте или Пласа-Сур
@@ -308,7 +308,7 @@ priceFrom: 8236
 currency: USD
 priceNote: $8236
 hero:
-  src: https://brasiltours.ru/image/countries/equador/cuenca2.jpg
+  src: "/media/tours/ekvador-s-udovolstviem/hero-src-enhanced-20261007.webp"
   alt: 'На фото: Город Куэнка в Эквадоре'
 routeCountries:
 - country_ecuador

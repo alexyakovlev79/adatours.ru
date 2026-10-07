@@ -218,7 +218,7 @@ itinerary:
     \ над каньоном Пастаса предлагается отдельно и не входит в стоимость. Цена — $15 на человека.\n\nВо второй половине дня\
     \ переезд в Риобамбу и свободный вечер.\n\n**Размещение:** Abraspungo 4*.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Riobamba.png
+  - src: "/media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: вулкан Риобамба в Эквадоре'
 - day: 12
   title: Риобамба - Чимборасо - Ингапирка - Куэнка
@@ -240,9 +240,9 @@ itinerary:
     \ считающаяся самым старым сооружением Ингапирки и состоящая из ряда прямоугольных помещений.\n\nПосле экскурсии переезд\
     \ в Куэнку и свободный вечер.\n\n**Размещение:** Santa Lucia 4*.  \n**Питание:** завтрак, ланч-бокс."
   images:
-  - src: https://brasiltours.ru/image/ecuador%20cuenca.png
+  - src: "/media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-12-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Куэнка в Эквадоре'
-  - src: https://brasiltours.ru/image/Riobamba.png
+  - src: "/media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: вулкан Риобамба в Эквадоре'
 - day: 13
   title: Куэнка - Национальный парк Кахас - Гуаякиль
@@ -261,9 +261,9 @@ itinerary:
     \ ланч-бокс.\n\nВо второй половине дня переезд в Гуаякиль, дорога занимает около 2,5 часов. По прибытии гиды сопроводят\
     \ вас в отель. Вечер свободный.\n\n**Размещение:** Wyndham 4+*.  \n**Питание:** завтрак, ланч-бокс."
   images:
-  - src: https://brasiltours.ru/image/ecuad%20guayaquil.png
+  - src: "/media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Гуаякиль в Эквадоре'
-  - src: https://brasiltours.ru/image/ecuador%20cuenca1.png
+  - src: "/media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-13-images-1-src-enhanced-20261007.webp"
     alt: 'На фото: город Куэнка в Эквадоре'
 - day: 14
   title: Гуаякиль - Балтра - Санта-Крус
@@ -289,7 +289,7 @@ itinerary:
     \ отель и размещение. Оставшееся время можно провести в Пуэрто-Айоре и прогуляться по портовому городу.\n\n**Размещение:**\
     \ Villa Laguna 4*.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/ecuador%20guayaquil1.png
+  - src: "/media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-14-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: город Гуаякиль в Эквадоре'
 - day: 15
   title: Морская экскурсия на остров Бартоломе

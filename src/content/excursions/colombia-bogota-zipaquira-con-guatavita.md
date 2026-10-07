@@ -22,11 +22,11 @@ hero:
   src: "/media/excursions/colombia-bogota-zipaquira-con-guatavita/hero-src-enhanced-20261007.webp"
   alt: Соляной собор в Сипакире, Колумбия
 gallery:
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0298.jpg
+  - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-0-src-enhanced-20261008.webp
     alt: Интерьер Соляного собора в Сипакире
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_192_119.jpg
+  - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-1-src-enhanced-20261008.webp
     alt: Соляной собор Сипакиры
-  - src: https://brasiltours.ru/image/catalog/product/f/i/file_193_100.jpg
+  - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-2-src-enhanced-20261008.webp
     alt: Подземные пространства Соляного собора
   - src: https://brasiltours.ru/image/catalog/product/f/i/file_18.jpeg
     alt: Сипакира, Колумбия

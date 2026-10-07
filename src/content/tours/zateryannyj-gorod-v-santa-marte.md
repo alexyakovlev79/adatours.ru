@@ -36,7 +36,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/santa%20marta%20colom..png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-8-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Санта Марта'
 - day: 2
   title: Санта-Марта - Мамей - кемп Кабана-де-Адан 1
@@ -52,7 +52,7 @@ itinerary:
 
     Продолжительность перехода: 3 часа. Расстояние: 7,6 км. Высота: 450 м.
   images:
-  - src: https://brasiltours.ru/image/santa%20marta%20colombia.png
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Санта Марта'
 - day: 3
   title: Кемп 1 - Мутанзи - кемп 2/3
@@ -85,7 +85,7 @@ itinerary:
 
     Продолжительность: 7 часов. Расстояние: 9 км. Высота: 470 м.
   images:
-  - src: https://brasiltours.ru/image/santa%20mart%20colom..png
+  - src: "/media/tours/zateryannyj-gorod-v-santa-marte/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Затерянный город Санта Марта'
 - day: 5
   title: Кемп 2 - Мамей - Санта-Марта
@@ -101,7 +101,7 @@ itinerary:
 
     Общая продолжительность дня: 10 часов. Расстояние: 7 км. Высота: 0 м.
   images:
-  - src: https://brasiltours.ru/image/santa%20marta%20colombia2.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Санта Марта'
 - day: 6
   title: Природный парк Тайрона
@@ -124,7 +124,7 @@ itinerary:
 
     Затем частный трансфер в международный аэропорт имени Симона Боливара в Санта-Марте для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/santa%20marta%20colom..png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-8-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Санта Марта'
 included:
 - 1 ночь в Санта-Марте;
@@ -154,7 +154,7 @@ priceNote: $1390.
 durationDays: 7
 durationNights: 6
 hero:
-  src: https://brasiltours.ru/image/columbia%20lost%20city.png
+  src: "/media/tours/zateryannyj-gorod-v-santa-marte/hero-src-enhanced-20261007.webp"
   alt: 'на фото: Затерянный город Санта Марта'
 routeCountries:
 - country_colombia

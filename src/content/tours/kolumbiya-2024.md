@@ -278,7 +278,7 @@ priceFrom: 6250
 currency: USD
 priceNote: $6250
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0305.jpg
+  src: "/media/excursions/colombia-bogota-zipaquira-con-guatavita/hero-src-enhanced-20261007.webp"
   alt: Колумбия
 routeCountries:
 - country_colombia

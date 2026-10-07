@@ -68,7 +68,7 @@ itinerary:
 
     Обед и ужин оплачиваются отдельно.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
 - day: 4
   title: Медельин и Коммуна 13
@@ -97,7 +97,7 @@ itinerary:
 
     Обед и ужин оплачиваются отдельно.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
 - day: 5
   title: Гуатапе и Пьедра-дель-Пеньоль, затем перелет в Картахену

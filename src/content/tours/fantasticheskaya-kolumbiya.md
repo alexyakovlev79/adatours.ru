@@ -91,7 +91,7 @@ itinerary:
     наркобарона и уличным граффити. Продолжительность: 6 часов Включено: транспорт, услуги двуязычного гида, оплата в метро
     и на канатную дорогу.Остановка в парках: Barefoot/ Sculpture Park/ Wish Park/Pueblito Paisa.'
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: 'на фото: Медельин'
   - src: https://brasiltours.ru/image/Bogota.png
     alt: 'на фото: Богота'
@@ -118,7 +118,7 @@ itinerary:
   text: После завтрака - трансфер в международный аэропорт Рионегро для вылета в город Перейра (не входит в стоимость). Прибытие
     в Перейру, встреча в международном аэропорту Матеканья и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: 'на фото: Медельин'
 - day: 6
   title: Перейра – Саленто и Валье-дель-Кокора
@@ -182,7 +182,7 @@ itinerary:
     нас ждут ужин(входит в стоимость) и ночь в гамаках. Продолжительность: 3 часа. Расстояние: 7,6 км. Высота: 450 м.Примечание:
     Размещение в гамаках/кроватях/шатрах с москитными сетками и одеяламиДополнительно: Мулы для перевозки багажа'
   images:
-  - src: https://brasiltours.ru/image/santa%20marta%20colom..png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-8-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Санта Марта'
 - day: 10
   title: Кемп 1 - Мутанзи - Кемп 2/3
@@ -218,7 +218,7 @@ itinerary:
     а в лагере Maмея - вкусный обед (входит в стоимость). Время (30 мин) расслабиться и принять душ. Частный трансфер на пикапе-4X4
     до Агуакатеро (20 мин). Возвращение в отель в Санта Марту.
   images:
-  - src: https://brasiltours.ru/image/santa%20marta%20colombia2.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Санта Марта'
 - day: 13
   title: Санта Марта – Картахена
@@ -252,7 +252,7 @@ itinerary:
     по архипелагу, типичный обед и карточка медпомощи. Трансфер отель-порт-отель Дни проведения: ежедневноНе включено: налоги
     на причале/дока и Коралия налоги $10 на человека, вход в океанариум $10 на человека'
   images:
-  - src: https://brasiltours.ru/image/cartagena%202.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Картахена'
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0180.jpg
     alt: 'на фото: Острова Росарио'
@@ -262,7 +262,7 @@ itinerary:
   - Картахена
   text: Завтрак в отеле, свободное утро, далее трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/cartagena2.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-14-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Картахена'
 included: []
 notIncluded: []

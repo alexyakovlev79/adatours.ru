@@ -203,7 +203,7 @@ itinerary:
 
     Экскурсия проводится со среды по понедельник.
   images:
-  - src: https://brasiltours.ru/image/Cartagena.png
+  - src: "/media/excursions/siti-tur-po-kartakhene/gallery-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 11
   title: Картахена, сити-тур

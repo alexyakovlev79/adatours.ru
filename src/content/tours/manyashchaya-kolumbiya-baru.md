@@ -81,7 +81,7 @@ itinerary:
 
     Возвращение в Медельин, размещение в отеле и отдых.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: 'На фото: тур по Колумбии и лучшее в стране'
 - day: 5
   title: Медельин
@@ -96,7 +96,7 @@ itinerary:
 
     Далее посещение Замкового музея. Здание было построено в 1930 году и известно коллекцией декоративно-прикладного искусства и садами. После экскурсии возвращение в гостиницу и отдых.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: 'На фото: тур по Колумбии и лучшее в стране'
 - day: 6
   title: Медельин - Картахена
@@ -110,7 +110,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/cartagena4.png
     alt: 'На фото: тур по Колумбии и лучшее в стране'
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: 'На фото: тур по Колумбии и лучшее в стране'
 - day: 7
   title: Картахена

@@ -191,7 +191,7 @@ itinerary:
 
     **Включено:** вход в парк Тайрона, услуги двуязычного гида, частный транспорт и карта местной медицинской помощи.
   images:
-  - src: https://brasiltours.ru/image/santa%20marta%20colom..png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-8-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Санта Марта'
 - day: 8
   title: Санта-Марта - Картахена
@@ -246,7 +246,7 @@ itinerary:
 
     Если в указанных отелях не будет свободных мест, размещение подтверждается в отеле аналогичной категории.
   images:
-  - src: https://brasiltours.ru/image/cartagena%202.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: 'На фото: Картахена'
 included:
 - 2 ночи в Боготе;

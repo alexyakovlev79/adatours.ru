@@ -97,7 +97,7 @@ itinerary:
 
     Возвращение в Медельин, размещение в отеле и отдых.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
   - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
     alt: Богота
@@ -118,7 +118,7 @@ itinerary:
 
     По окончании экскурсии прибытие в гостиницу 5*, отдых.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
 - day: 6
   title: Медельин - Перейра - долина Кокора и Саленто
@@ -138,7 +138,7 @@ itinerary:
 
     Также включен национальный обед. После экскурсии возвращение в город Армения, размещение в гостинице и ночевка.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
   - src: "/media/tours/vivat-kolumbiya/hero-src-enhanced-20261007.webp"
     alt: Виват Колумбия
@@ -167,7 +167,7 @@ itinerary:
 
     По прилете встреча, трансфер и размещение в гостинице. Отдых.
   images:
-  - src: https://brasiltours.ru/image/Cartagena.png
+  - src: "/media/excursions/siti-tur-po-kartakhene/gallery-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 9
   title: Картахена
@@ -186,7 +186,7 @@ itinerary:
 
     Возвращение в гостиницу 5*. Отдых.
   images:
-  - src: https://brasiltours.ru/image/cartagena%202.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 10
   title: Картахена
@@ -194,7 +194,7 @@ itinerary:
   - Картахена
   text: Завтрак. В назначенное время трансфер в аэропорт для стыковки с международным рейсом.
   images:
-  - src: https://brasiltours.ru/image/cartagena2.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-14-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 included:
 - Внутренние авиаперелеты Богота - Медельин, Медельин - Перейра, Перейра - Картахена

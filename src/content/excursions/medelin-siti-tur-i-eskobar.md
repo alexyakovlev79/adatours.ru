@@ -27,7 +27,7 @@ gallery:
     alt: Городской пейзаж Медельина
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0334.jpg
     alt: Искусство Фернандо Ботеро в Медельине
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Панорама Медельина
   - src: https://brasiltours.ru/image/countries/colombia/new-photos/kolumbiya-devushka.jpg
     alt: Жительница Колумбии

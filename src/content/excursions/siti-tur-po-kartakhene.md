@@ -21,7 +21,7 @@ hero:
   src: https://brasiltours.ru/image/countries/colombia/cartaghena.jpg
   alt: Картахена в Колумбии
 gallery:
-  - src: https://brasiltours.ru/image/Cartagena.png
+  - src: "/media/excursions/siti-tur-po-kartakhene/gallery-0-src-enhanced-20261007.webp"
     alt: Картахена, Колумбия
   - src: https://brasiltours.ru/image/countries/colombia/cartag5.jpg
     alt: Картахена, Колумбия

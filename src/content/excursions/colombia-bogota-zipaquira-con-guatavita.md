@@ -19,7 +19,7 @@ priceFrom: 280
 currency: USD
 priceNote: "Стоимость экскурсии — $280."
 hero:
-  src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0305.jpg
+  src: "/media/excursions/colombia-bogota-zipaquira-con-guatavita/hero-src-enhanced-20261007.webp"
   alt: Соляной собор в Сипакире, Колумбия
 gallery:
   - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0298.jpg

@@ -191,7 +191,7 @@ itinerary:
 
     Экскурсия завершается в Замковом музее. Здание было построено в 1930 году в готическом стиле и напоминает французские замки. Дом принадлежал врачу Урибе, затем был продан филантропу Диего Мисасу, который украсил его произведениями искусства. Позднее особняк стал музеем и культурным центром с коллекцией декоративно-прикладного искусства.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: 'На фото: город Медельин в Колумбии'
 - day: 10
   title: Медельин - Эль-Пеньон-де-Гуатапе
@@ -207,7 +207,7 @@ itinerary:
 
     После экскурсии вечером перелет в Боготу. По прибытии трансфер и размещение в **Hotel Novotel Bogota Parque 93**.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: 'На фото: город Медельин в Колумбии'
 - day: 11
   title: Гуатавита и Сипакира

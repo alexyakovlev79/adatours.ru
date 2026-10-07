@@ -78,7 +78,7 @@ itinerary:
 
     По прибытии встреча в международном аэропорту Хосе Марии Кордова, трансфер в отель и размещение.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
   - src: https://brasiltours.ru/image/Bogota.png
     alt: Богота
@@ -109,7 +109,7 @@ itinerary:
     \ 8 часов.  \n**Включено:** профессиональный англоязычный гид, транспорт, поездка на мототакси, типичный обед в местном\
     \ ресторане.  \n**Не включено:** подъем на Пьедра-дель-Пеньоль и прогулка на лодке по водохранилищу Пеньоль-Гуатапе."
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
 - day: 7
   title: Медельин - Перейра - кофейная ферма
@@ -174,7 +174,7 @@ itinerary:
     \ Санто-Доминго.\n\nВозвращение в отель.\n\n**Продолжительность:** 4 часа.  \n**Дни проведения:** ежедневно.  \n**Включено:**\
     \ профессиональный англоязычный гид, частный транспорт и входные билеты в указанные объекты."
   images:
-  - src: https://brasiltours.ru/image/cartagena%202.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-13-images-0-src-enhanced-20261007.webp"
     alt: Картахена
 - day: 11
   title: Картахена - острова Росарио
@@ -204,7 +204,7 @@ itinerary:
     \ сектор Эль-Родадеро.\n\nВозвращение в отель.\n\n**Продолжительность экскурсии:** 4 часа.  \n**Включено:** частный трансфер,\
     \ профессиональный англоязычный гид и входные билеты в указанные туристические объекты."
   images:
-  - src: https://brasiltours.ru/image/santa%20marta%20colombia.png
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Санта-Марта
   - src: https://brasiltours.ru/image/cartagena%201.png
     alt: Картахена
@@ -221,7 +221,7 @@ itinerary:
     \ в отель.\n\n**Продолжительность:** 10 часов.  \n**Включено:** частный транспорт, профессиональный испаноязычный гид,\
     \ вход в национальный парк Тайрона и типичный региональный обед."
   images:
-  - src: https://brasiltours.ru/image/santa%20marta%20colombia2.png
+  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Санта-Марта
 - day: 14
   title: Санта-Марта
@@ -230,7 +230,7 @@ itinerary:
   text: После завтрака трансфер в международный аэропорт Симона Боливара для вылета домой. **Авиабилет в стоимость тура не
     включен.**
   images:
-  - src: https://brasiltours.ru/image/santa%20marta%20colombia.png
+  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp"
     alt: Санта-Марта
 included: []
 notIncluded:

@@ -72,7 +72,7 @@ itinerary:
     \ у знаменитых эскалаторов Коммуны 13.\n\nВозвращение в отель.\n\n**Продолжительность:** около 7 часов.  \n**Включено:**\
     \ профессиональный англоязычный гид, частный транспорт, вход в метро и граффити-тур по Коммуне 13."
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
   - src: https://brasiltours.ru/image/bogota1.png
     alt: Богота
@@ -88,7 +88,7 @@ itinerary:
     \ профессиональный англоязычный гид, транспорт, поездка на мототакси и типичный обед в местном ресторане.  \n**Не включено:**\
     \ подъем на Пьедра-дель-Пеньоль и прогулка на лодке по водохранилищу."
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
 - day: 6
   title: Медельин - вылет домой
@@ -99,7 +99,7 @@ itinerary:
 
     Перелет домой в стоимость программы не включен.
   images:
-  - src: https://brasiltours.ru/image/Medellin.png
+  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Медельин
 included:
 - 3 ночи проживания в Боготе;

@@ -109,7 +109,7 @@ for (const definition of definitions) {
     assert.equal(actualTrails.length, expectedTrails.length, `breadcrumb trail count: ${entry.id}`);
     expectedTrails.forEach((trail, index) => {
       assert.deepEqual(actualTrails[index].itemListElement.map((item) => [item.position, item.name, item.item]),
-        trail.map((item, position) => [position + 1, item.label, absolute(item.href)]), `JSON-LD trail: ${entry.id}`);
+        [{ label: 'Главная', href: '/' }, ...trail].map((item, position) => [position + 1, item.label, absolute(item.href)]), `JSON-LD trail: ${entry.id}`);
     });
     const nav = source.match(/<nav\b[^>]*aria-label="Хлебные крошки"[^>]*>([\s\S]*?)<\/nav>/)?.[1];
     assert.ok(nav, `visible breadcrumbs missing: ${entry.id}`);

@@ -53,8 +53,8 @@ itinerary:
 
     Со смотровой площадки открывается панорама города: мост Нитерой, залив Гуанабара, Ботанический сад, стадион Маракана и Сахарная Голова.
   images:
-  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
-    alt: Рио-де-Жанейро
+  - src: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
+    alt: Панорамы Корковаду и Сахарной головы
 - day: 3
   title: 'Рио-де-Жанейро: Сахарная Голова и старый центр'
   places:
@@ -90,8 +90,6 @@ itinerary:
   images:
   - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-4-enhanced-20261006.webp
     alt: Манаус
-  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
-    alt: Рио-де-Жанейро
 - day: 5
   title: Манаус
   places:
@@ -109,8 +107,8 @@ itinerary:
 
     В 20:00 начинается вечернее исследование берега с прожекторами. Можно увидеть кайманов Тинга и Асу, а иногда ночных ястребов, змей и лягушек.
   images:
-  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-4-enhanced-20261006.webp
-    alt: Манаус
+  - src: /media/destinations/manaus-amazonia/hero-enhanced-20261001.webp
+    alt: Амазония в Бразилии
 - day: 6
   title: Манаус - Сальвадор
   places:
@@ -125,8 +123,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
-  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-4-enhanced-20261006.webp
-    alt: Манаус
 - day: 7
   title: Сальвадор
   places:
@@ -152,8 +148,8 @@ itinerary:
 
     День отведен отдыху и купанию. После экскурсионных дней в Рио, Амазонии и Сальвадоре это более спокойная часть программы, когда можно провести время у океана перед перелетом к Игуасу.
   images:
-  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
-    alt: Сальвадор
+  - src: /media/destinations/praia-do-forte/hero-enhanced-20261001.webp
+    alt: Побережье Прайя-ду-Форте в штате Баия
 - day: 9
   title: Сальвадор - Фос-ду-Игуасу
   places:
@@ -166,8 +162,6 @@ itinerary:
   images:
   - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-9-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
-  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-7-enhanced-20261006.webp
-    alt: Сальвадор
 - day: 10
   title: Бразильская сторона Игуасу
   places:
@@ -206,16 +200,14 @@ itinerary:
   images:
   - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-12-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
-  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
-    alt: Рио-де-Жанейро
 - day: 13
   title: Рио-де-Жанейро
   places:
   - Рио-де-Жанейро
   text: После завтрака трансфер в аэропорт для международного вылета домой.
   images:
-  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
-    alt: Рио-де-Жанейро
+  - src: /media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp
+    alt: Рио-де-Жанейро вечером
 included:
 - Проживание в указанных или аналогичных отелях с завтраком.
 - Экскурсии по программе в групповом формате с англоговорящим гидом.

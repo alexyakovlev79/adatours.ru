@@ -219,7 +219,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
         imageTextAlign={mainTour.data.imageTextAlign}
       />
     )}
-    <div class="container">
+    <div class="container home-tours__cards">
       <div class="home-tour-grid">
         {smallTours.map((entry) => (
           <a class="home-poster home-poster--tour" href={withBase(tourPath(entry.data))} data-image-text-align={entry.data.imageTextAlign}>
@@ -466,6 +466,13 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   }
   @media (max-width: 760px) {
     .home-country-grid { grid-template-columns: 1fr; }
+    /* Mobile featured tours: edge-to-edge photography with no lead text overlay. */
+    .home-tours__cards { width: 100%; max-width: none; }
+    .home-tours :global(.band) { min-height: clamp(360px, 105vw, 460px); }
+    .home-tours :global(.band__text) { display: none; }
+    .home-tour-grid { gap: 0; margin-top: 0; }
+    .home-tour-grid .home-poster--tour { min-height: clamp(360px, 105vw, 460px); }
+    .home-tours__cards .home-all-link { margin-inline: var(--gutter); }
     .home-heading { grid-template-columns: 1fr; gap: 16px; }
     .home-heading > p { max-width: 650px; }
     .home-start__links { grid-template-columns: 1fr; }

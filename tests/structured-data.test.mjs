@@ -127,14 +127,50 @@ test('FAQ is not generated from unused tour frontmatter or invisible legacy data
 });
 test('reviews keep displayed authors/text and an explicitly supplied aggregate rating', () => {
   const review = { '@type': 'Review', author: { name: 'Анна' }, reviewBody: 'Спасибо за поездку!', reviewRating: { ratingValue: 5 } };
-  const aggregate = { '@type': 'AggregateRating', ratingValue: 5, bestRating: 5, worstRating: 1, reviewCount: 8 };
+  const aggregate = { '@type': 'AggregateRating', ratingValue: 5, bestRating: 5, worstRating: 1, reviewCount: 1 };
   const graph = build('/reviews/', { extra: [review, aggregate], document: { text: 'Анна Спасибо за поездку!' } });
   assert.equal(nodes(graph, 'Review').length, 1);
   assert.equal(nodes(graph, 'Review')[0].reviewRating, undefined);
   assert.equal(nodes(graph, 'AggregateRating').length, 1);
   assert.equal(nodes(graph, 'AggregateRating')[0].ratingValue, 5);
-  assert.equal(nodes(graph, 'Organization')[0].aggregateRating['@id'], `${root}reviews/#aggregate-rating`);
+  assert.equal(nodes(graph, 'AggregateRating')[0].reviewCount, 1);
+  assert.equal(nodes(graph, 'Organization')[0].aggregateRating['@id'], `${root}#aggregate-rating`);
+  assert.equal(nodes(graph, 'CollectionPage')[0].mainEntity['@id'], `${root}reviews/#reviews`);
 });
+test('homepage describes visible sections, services, catalogs and customer reviews', () => {
+  const review = { '@type': 'Review', author: { name: 'Мария' }, reviewBody: 'Спасибо за поездку!' };
+  const aggregate = { '@type': 'AggregateRating', ratingValue: 5, bestRating: 5, worstRating: 1, reviewCount: 1 };
+  const links = ['/country/', '/interests/', '/tours/', '/places/', '/excursions/', '/multi-country/', '/vip/', '/mice/', '/dmc/'];
+  const graph = build('/', {
+    extra: [review, aggregate],
+    document: {
+      text: 'Мария Спасибо за поездку! Анна Аванесова Оценка клиентов: 5,0 из 5 · Отзывов: 1',
+      sections: [
+        { id: 'home-countries', name: 'Куда поедем?' },
+        { id: 'home-interests', name: 'Ради чего хочется лететь?' },
+        { id: 'home-tours', name: 'Маршруты, с которых удобно начать' },
+        { id: 'home-services', name: 'От частного путешествия до деловой делегации' },
+        { id: 'home-reviews', name: 'Отзывы об Ada Tours' },
+      ],
+      groups: [
+        { name: 'Куда поедем?', links: [{ href: `${root}brazil/` }, { href: `${root}country/` }] },
+        { fallback: true, links: links.map((path) => ({ href: absoluteUrl(path, root) })) },
+      ],
+    },
+  });
+  const page = nodes(graph, 'WebPage')[0];
+  const org = nodes(graph, 'Organization')[0];
+  assert.equal(page.mainEntity['@id'], `${root}#organization`);
+  assert.equal(org.aggregateRating['@id'], `${root}#aggregate-rating`);
+  assert.equal(nodes(graph, 'Review').length, 1);
+  assert.equal(nodes(graph, 'AggregateRating')[0].reviewCount, 1);
+  assert.equal(nodes(graph, 'WebPageElement').length, 5);
+  assert.equal(nodes(graph, 'Service').length, 4);
+  assert.ok(nodes(graph, 'CollectionPage').some((node) => node['@id'] === `${root}country/#webpage`));
+  assert.ok(page.hasPart.some((part) => part['@id'] === `${root}#section-home-reviews`));
+  assert.ok(page.mentions.some((item) => item['@id'] === `${root}#reviews`));
+});
+
 test('people, static services and geography get distinct semantic types', () => {
   const person = record('person', 'person_anna', '/team/anna-avanesova/', {
     name: 'Анна Аванесова', role: 'Основатель и CEO Ada Tours',

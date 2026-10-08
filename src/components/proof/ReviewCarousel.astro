@@ -1,5 +1,5 @@
 ---
-import type { AdaReview } from '../../data/reviews/ada-tours';
+import { ADA_REVIEW_RATING, type AdaReview } from '../../data/reviews/ada-tours';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 import { withBase } from '../../lib/paths';
 
@@ -17,6 +17,7 @@ const { reviews } = Astro.props;
         <div>
           <p class="eyebrow">Опыт наших гостей и партнеров</p>
           <h2 id="home-reviews-title">Отзывы об Ada Tours</h2>
+          <p class="reviews-carousel__rating">Оценка клиентов: <strong>{ADA_REVIEW_RATING.toFixed(1).replace('.', ',')} из 5</strong> · Отзывов: {reviews.length}</p>
         </div>
         <div class="reviews-carousel__controls" aria-label="Прокрутка отзывов">
           <button type="button" data-review-prev aria-label="Предыдущие отзывы" aria-controls="home-reviews-track" disabled>←</button>
@@ -91,6 +92,8 @@ const { reviews } = Astro.props;
   .reviews-carousel__heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 30px; }
   .reviews-carousel__heading .eyebrow { margin: 0 0 12px; }
   .reviews-carousel__heading h2 { max-width: 800px; margin: 0; font-size: var(--text-h2); line-height: 1.07; }
+  .reviews-carousel__rating { margin: 12px 0 0; font-size: .9rem; color: color-mix(in srgb, var(--color-ink) 80%, transparent); }
+  .reviews-carousel__rating strong { font-weight: 700; }
   .reviews-carousel__controls { display: flex; gap: 10px; flex: 0 0 auto; }
   .reviews-carousel__controls button { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid currentColor; border-radius: 0; background: transparent; color: var(--color-ink); font: inherit; font-size: 1.55rem; cursor: pointer; transition: background 180ms ease, color 180ms ease; }
   .reviews-carousel__controls button:hover:not(:disabled) { background: var(--color-ink); color: white; }

@@ -159,3 +159,25 @@ export const ADA_REVIEWS: AdaReview[] = [
     text: 'Новогодняя поездка стала одним из самых ярких путешествий: праздник на Копакабане, водопады Игуасу, ледники Патагонии и Буэнос-Айрес. Расписание позволило совместить утренние экскурсии и свободное время для отдыха.',
   },
 ];
+
+// Confirmed overall company score; individual testimonial star scores are unknown.
+export const ADA_REVIEW_RATING = 5;
+
+export const adaReviewPageSchema = (reviews: AdaReview[]) => [
+  ...reviews.map((review) => ({
+    '@type': 'Review',
+    author: { '@type': 'Person', name: review.author },
+    itemReviewed: { '@id': 'https://adatours.ru/#organization' },
+    reviewBody: review.text,
+    inLanguage: 'ru',
+    citation: review.sourceUrl,
+  })),
+  {
+    '@type': 'AggregateRating',
+    itemReviewed: { '@id': 'https://adatours.ru/#organization' },
+    ratingValue: ADA_REVIEW_RATING,
+    bestRating: 5,
+    worstRating: 1,
+    reviewCount: reviews.length,
+  },
+];

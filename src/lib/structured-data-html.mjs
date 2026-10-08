@@ -59,6 +59,8 @@ export function inspectHtml(html, { root, pageUrl, fullDocument = false } = {}) 
     // Flat indexes (team/reviews/countries) may use a div rather than section.
     groups.push({ fallback: true, name: text(elements.find((n) => n.tagName === 'h1')), links: linksFor(content) });
   }
+  const sections = elements.filter((n) => n.tagName === 'section' && /^home-[a-z0-9-]+$/.test(attr(n, 'id') || ''))
+    .map((n) => ({ id: attr(n, 'id'), name: text(heading(n)) })).filter((n) => n.name);
   const images = elements.filter((n) => n.tagName === 'img').map((n) => ({
     src: absoluteUrl(attr(n, 'src'), root), alt: attr(n, 'alt'), width: positive(attr(n, 'width')), height: positive(attr(n, 'height')),
   })).filter((n) => n.src);
@@ -87,7 +89,7 @@ export function inspectHtml(html, { root, pageUrl, fullDocument = false } = {}) 
   }
   const uniqueFaq = [...new Map(faq.map((q) => [q.question, q])).values()];
   return { dom, legacy, html: cleanHtml, facts: { text: text(content), h1: text(elements.find((n) => n.tagName === 'h1')),
-    images, primaryImage: images[0], catalog: Boolean(catalog), groups, faq: uniqueFaq,
+    images, primaryImage: images[0], catalog: Boolean(catalog), groups, sections, faq: uniqueFaq,
     priceVisible: elements.some((n) => /(?:^|\s)(?:tour-pricing|pricing)(?:\s|$)/.test(attr(n, 'class') || '')) },
     metadata: { canonical: attr(all.find((n) => n.tagName === 'link' && attr(n, 'rel') === 'canonical'), 'href'),
       robots: attr(all.find((n) => n.tagName === 'meta' && attr(n, 'name') === 'robots'), 'content') || '',

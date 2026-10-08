@@ -35,3 +35,11 @@ test('full-document inspection finds canonical, robots, social metadata and redi
   assert.equal(result.metadata.twitterTitle, 'Бразилия | Ada Tours');
   assert.equal(result.metadata.redirect, true); assert.equal(result.metadata.robots, 'noindex,follow');
 });
+
+test('home sections are extracted only from visible named section anchors', () => {
+  const result = inspectHtml('<section id="home-countries"><h2>Куда поедем?</h2></section><section id="home-reviews"><h2>Отзывы об Ada Tours</h2></section><section id="home-hidden" hidden><h2>Скрыто</h2></section>', options);
+  assert.deepEqual(result.facts.sections, [
+    { id: 'home-countries', name: 'Куда поедем?' },
+    { id: 'home-reviews', name: 'Отзывы об Ada Tours' },
+  ]);
+});

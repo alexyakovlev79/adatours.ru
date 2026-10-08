@@ -13,7 +13,7 @@ import DestinationBand from '../components/editorial/DestinationBand.astro';
 import InterestCard from '../components/editorial/InterestCard.astro';
 import PersonProfile from '../components/proof/PersonProfile.astro';
 import ReviewCarousel from '../components/proof/ReviewCarousel.astro';
-import { ADA_REVIEWS } from '../data/reviews/ada-tours';
+import { ADA_REVIEWS, adaReviewPageSchema } from '../data/reviews/ada-tours';
 import FactStrip from '../components/proof/FactStrip.astro';
 import SearchTrigger from '../components/global/SearchTrigger.astro';
 
@@ -74,6 +74,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   title="Путешествия по Бразилии и Латинской Америке | Ada Tours"
   description="Выбирайте путешествия по странам, интересам и готовым маршрутам. Индивидуальные и VIP-туры, экскурсии, MICE и DMC по Бразилии и Латинской Америке."
   image="/media/home/hero-rio-generated-20261008-v2.webp"
+  pageSchema={adaReviewPageSchema(ADA_REVIEWS)}
 >
   <Hero
     home
@@ -245,7 +246,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     align="right"
   />
 
-  <section class="home-discover home-section" aria-labelledby="home-discover-title">
+  <section id="home-discover" class="home-discover home-section" aria-labelledby="home-discover-title">
     <div class="container">
       <div class="home-heading">
         <div>
@@ -326,7 +327,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     </div>
   </section>
 
-  <section class="home-team home-section" aria-labelledby="home-team-title">
+  <section id="home-team" class="home-team home-section" aria-labelledby="home-team-title">
     <div class="container home-heading">
       <div>
         <p class="eyebrow">Люди и опыт</p>
@@ -362,14 +363,14 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
 
   <ReviewCarousel reviews={ADA_REVIEWS} />
 
-  <div class="home-final">
+  <section id="home-final" class="home-final">
     <div class="container">
       <p class="eyebrow">Ваше путешествие</p>
       <h2>Есть идея поездки? Давайте соберем маршрут.</h2>
       <p>Расскажите о датах, странах и людях, с которыми едете. Обсудим, с чего начать и какие программы подойдут.</p>
       <a href="#request">Перейти к запросу <span aria-hidden="true">↗</span></a>
     </div>
-  </div>
+  </section>
 </BaseLayout>
 
 <style>

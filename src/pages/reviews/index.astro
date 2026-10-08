@@ -4,39 +4,17 @@ import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import ReviewQuote from '../../components/proof/ReviewQuote.astro';
 import AboutNav from '../../components/commercial/AboutNav.astro';
-import { ADA_REVIEWS } from '../../data/reviews/ada-tours';
+import { ADA_REVIEWS, ADA_REVIEW_RATING, adaReviewPageSchema } from '../../data/reviews/ada-tours';
 
 const heroImage = '/media/catalog/tury/hero-enhanced-20260930.webp';
-const reviewPageUrl = new URL(Astro.url.pathname, Astro.site ?? 'https://adatours.ru').toString();
-const reviewSchemas = ADA_REVIEWS.map((review) => ({
-  '@type': 'Review',
-  '@id': `${reviewPageUrl}#${review.id}`,
-  itemReviewed: { '@id': 'https://adatours.ru/#organization' },
-  author: {
-    '@type': 'Person',
-    name: review.author,
-  },
-  reviewBody: review.text,
-  inLanguage: 'ru',
-  citation: review.sourceUrl,
-}));
 
-const aggregateRatingSchema = {
-  '@type': 'AggregateRating',
-  '@id': `${reviewPageUrl}#aggregate-rating`,
-  itemReviewed: { '@id': 'https://adatours.ru/#organization' },
-  ratingValue: 5,
-  bestRating: 5,
-  worstRating: 1,
-  reviewCount: ADA_REVIEWS.length,
-};
 ---
 
 <BaseLayout leadTitle="Обсудить поездку или партнерство" leadEntityId="reviews"
   title="Отзывы об Ada Tours: туристы, агентства и партнеры"
   description="Отзывы туристов, турагентств и партнеров о работе Ada Tours: поездки по Бразилии и Латинской Америке, группы, VIP и multi-country маршруты."
   image={heroImage}
-  pageSchema={[...reviewSchemas, aggregateRatingSchema]}
+  pageSchema={adaReviewPageSchema(ADA_REVIEWS)}
 >
   <Hero
     eyebrow="Отзывы"
@@ -53,8 +31,17 @@ const aggregateRatingSchema = {
     text="Чаще всего клиенты отмечают работу гидов и водителей, точность организации, помощь на месте и персональный подход."
   />
 
+  <div class="container reviews-rating">
+    <p>Оценка клиентов: <strong>{ADA_REVIEW_RATING.toFixed(1).replace('.', ',')} из 5</strong> · Отзывов: {ADA_REVIEWS.length}</p>
+  </div>
+
   <div class="reviews">
     {ADA_REVIEWS.map((review, index) => <ReviewQuote review={review} index={index} />)}
   </div>
 
 </BaseLayout>
+<style>
+  .reviews-rating { padding-block: 26px 38px; border-top: 1px solid var(--color-line); }
+  .reviews-rating p { margin: 0; font-size: 1rem; color: var(--color-ink); }
+  .reviews-rating strong { font-family: var(--font-display); font-size: 1.3rem; }
+</style>

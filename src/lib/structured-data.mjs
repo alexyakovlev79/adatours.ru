@@ -3,7 +3,7 @@ import { selectVipTours } from './vip-tours.mjs';
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
  * Facts come from the content model and the rendered page, never SEO inventions.
  */
-export const SCHEMA_VERSION = '2026-10-06.2';
+export const SCHEMA_VERSION = '2026-10-08.1';
 export const types = (node) => [node?.['@type'] ?? []].flat();
 export const hasType = (node, type) => types(node).includes(type);
 export const ref = (id) => ({ '@id': id });
@@ -330,20 +330,81 @@ export function buildStructuredData({ root, organization, records, page, documen
       reviewBody: cleanText(n.reviewBody), inLanguage: n.inLanguage || page.lang, citation: n.citation }));
     const list = add({ '@type': 'ItemList', '@id': `${page.url}#reviews`, name: 'Отзывы', numberOfItems: refs.length,
       itemListElement: refs.map((item, i) => ({ '@type': 'ListItem', position: i + 1, item })) });
-    webPage.mainEntity = list;
+    if (page.path === '/reviews/') webPage.mainEntity = list;
+    else webPage.mentions.push(list);
 
     const authoredAggregate = authored.find((n) => hasType(n, 'AggregateRating'));
     if (authoredAggregate) {
       const aggregate = add({
         '@type': 'AggregateRating',
-        '@id': `${page.url}#aggregate-rating`,
+        '@id': `${organization.url.replace(/\/$/, '')}/#aggregate-rating`,
         itemReviewed: ref(orgId),
         ratingValue: authoredAggregate.ratingValue,
         bestRating: authoredAggregate.bestRating,
         worstRating: authoredAggregate.worstRating,
-        reviewCount: authoredAggregate.reviewCount,
+        reviewCount: reviews.length,
       });
       add({ '@type': ['Organization', 'TravelAgency'], '@id': orgId, aggregateRating: aggregate });
+    }
+  }
+  // Homepage sections and the actual linked collections/services share canonical IDs.
+  if (page.path === '/') {
+    const visiblePaths = new Set(groupData.flatMap((group) => group.links || [])
+      .map((link) => absoluteUrl(link.href, root))
+      .filter((url) => url && new URL(url).origin === new URL(root).origin)
+      .map((url) => logicalPath(url, root)));
+    const catalogRefs = new Map();
+    for (const [path, name] of [
+      ['/country/', 'Страны путешествий'],
+      ['/interests/', 'Интересы путешественников'],
+      ['/tours/', 'Туры Ada Tours'],
+      ['/places/', 'Места Латинской Америки'],
+      ['/excursions/', 'Экскурсии'],
+    ]) {
+      if (!visiblePaths.has(path)) continue;
+      const url = absoluteUrl(path, root);
+      const item = add({ '@type': 'CollectionPage', '@id': `${url}#webpage`,
+        name, url, isPartOf: ref(siteId) });
+      catalogRefs.set(path, item);
+      webPage.mentions.push(item);
+    }
+    const serviceRefs = new Map();
+    for (const [path, name, serviceType] of [
+      ['/multi-country/', 'Multi-country туры по Латинской Америке', 'Организация путешествий по нескольким странам'],
+      ['/vip/', 'VIP и Luxury туры по Латинской Америке', 'Организация индивидуальных VIP-путешествий'],
+      ['/mice/', 'MICE и деловые поездки', 'Организация MICE и корпоративных поездок'],
+      ['/dmc/', 'DMC / B2B', 'DMC и принимающее обслуживание в Бразилии и Латинской Америке'],
+    ]) {
+      if (!visiblePaths.has(path)) continue;
+      const url = absoluteUrl(path, root);
+      const service = add({ '@type': 'Service', '@id': `${url}#service`,
+        name, serviceType, url, provider: ref(orgId), areaServed: organization.areaServed });
+      serviceRefs.set(path, service);
+      webPage.mentions.push(service);
+    }
+    const sectionTopics = {
+      'home-start': [...catalogRefs.values(), ...serviceRefs.values()],
+      'home-countries': [catalogRefs.get('/country/')],
+      'home-interests': [catalogRefs.get('/interests/')],
+      'home-tours': [catalogRefs.get('/tours/')],
+      'home-discover': [catalogRefs.get('/places/'), catalogRefs.get('/excursions/')],
+      'home-services': ['/vip/', '/mice/', '/dmc/'].map((path) => serviceRefs.get(path)),
+      'home-team': publicRecord(founder) && document.text?.includes(recordName(founder)) ? [ensureRecord(founder)] : [],
+      'home-reviews': [nodes.has(`${page.url}#reviews`) ? ref(`${page.url}#reviews`) : undefined],
+      'home-final': [ref(orgId)],
+    };
+    for (const section of document.sections || []) {
+      if (!/^home-[a-z0-9-]+$/.test(section.id) || !cleanText(section.name)) continue;
+      const groupIndex = groupData.findIndex((group) => cleanText(group.name) === cleanText(section.name));
+      const listId = `${page.url}#list-${groupIndex + 1}`;
+      const topics = [...(sectionTopics[section.id] || []),
+        groupIndex >= 0 && nodes.has(listId) ? ref(listId) : undefined].filter(Boolean);
+      webPage.hasPart.push(add({ '@type': 'WebPageElement',
+        '@id': `${page.url}#section-${section.id}`,
+        name: cleanText(section.name), url: `${page.url}#${section.id}`,
+        isPartOf: ref(pageId),
+        mentions: [...new Map(topics.map((item) => [item['@id'], item])).values()],
+      }));
     }
   }
   // FAQ is extracted from actual readable questions/answers, not unused frontmatter fields.

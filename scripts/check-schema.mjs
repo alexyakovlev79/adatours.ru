@@ -22,7 +22,7 @@ function* objects(value) {
   else if (value && typeof value === 'object') { yield value; for (const v of Object.values(value)) yield* objects(v); }
 }
 const pageTypes = new Set(['WebPage', 'CollectionPage', 'AboutPage', 'ContactPage', 'ProfilePage', 'FAQPage']);
-const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'Country', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'Review', 'AggregateRating', 'Question', 'Answer']);
+const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'Country', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'Review', 'AggregateRating', 'WebPageElement', 'Question', 'Answer']);
 const report = { schemaVersion: SCHEMA_VERSION, root, totalHtml: 0, contentPages: 0, redirects: 0, archives: 0, withSchema: 0, catalogPages: 0, faqPages: 0, offerPages: 0, pageTypes: {}, mainEntityTypes: {}, errors: [], pages: [] };
 const definitions = new Set();
 const references = [];
@@ -142,7 +142,7 @@ for (const file of files.sort()) {
       }
       if (hasType(node, 'Review')) assert.ok(inspected.facts.text.includes(cleanText(node.reviewBody)), 'Visible review');
       if (hasType(node, 'AggregateRating')) {
-        assert.equal(inferredPath, '/reviews/', 'AggregateRating is limited to the reviews page');
+        assert.ok(['/', '/reviews/'].includes(inferredPath), 'AggregateRating only when reviews are visible');
         assert.ok(Number(node.ratingValue) > 0, 'AggregateRating has a positive ratingValue');
         assert.ok(Number(node.bestRating) >= Number(node.ratingValue), 'AggregateRating stays within bestRating');
         assert.ok(Number(node.reviewCount) > 0, 'AggregateRating has reviewCount');
@@ -150,9 +150,25 @@ for (const file of files.sort()) {
       if (hasType(node, 'ItemList')) assert.equal(node.numberOfItems, node.itemListElement?.length, 'ItemList count equals rendered items');
       for (const key of ['reviewRating', 'foundingDate']) assert.equal(node[key], undefined, `No unsupported claim ${key}`);
       if (node.aggregateRating !== undefined) {
-        assert.equal(inferredPath, '/reviews/', 'aggregateRating relation is limited to the reviews page');
-        assert.ok(node.aggregateRating?.['@id'] === `${canonical}#aggregate-rating`, 'Organization links to the page AggregateRating');
+        assert.ok(['/', '/reviews/'].includes(inferredPath), 'Rating relation only on reviewed pages');
+        assert.equal(node.aggregateRating?.['@id'], 'https://adatours.ru/#aggregate-rating', 'Single canonical company rating');
       }
+    }
+    if (['/', '/reviews/'].includes(inferredPath) && !inspected.metadata.redirect) {
+      const publishedReviews = nodes.filter((node) => hasType(node, 'Review'));
+      const aggregate = byId.get('https://adatours.ru/#aggregate-rating');
+      const org = byId.get('https://adatours.ru/#organization');
+      assert.ok(publishedReviews.length > 0, 'Published review texts are marked up');
+      assert.ok(aggregate && hasType(aggregate, 'AggregateRating'), 'Company aggregate rating exists');
+      assert.equal(Number(aggregate.ratingValue), 5, 'Confirmed 5.0 rating');
+      assert.equal(aggregate.reviewCount, publishedReviews.length, 'Only actually displayed reviews counted');
+      assert.equal(org.aggregateRating?.['@id'], aggregate['@id'], 'Rating linked to Ada Tours');
+      assert.ok(inspected.facts.text.includes('Оценка клиентов:') && inspected.facts.text.includes('Отзывов:') && inspected.facts.text.includes(String(publishedReviews.length)), 'Rating and count visible');
+      if (inferredPath === '/') {
+        assert.equal(page.mainEntity?.['@id'], org['@id'], 'Homepage main entity stays Organization');
+        assert.ok(nodes.filter((n) => hasType(n, 'WebPageElement')).length >= 7, 'Editorial home sections represented');
+        assert.equal(nodes.filter((n) => hasType(n, 'Service')).length, 4, 'Home references four service areas');
+      } else assert.equal(page.mainEntity?.['@id'], `${canonical}#reviews`, 'Reviews main entity is the reviews list');
     }
     if (inspected.facts.catalog) {
       const group = inspected.facts.groups.find((g) => g.catalog);

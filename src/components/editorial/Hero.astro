@@ -13,6 +13,7 @@ interface Props {
   ctaLabel?: string;
   compact?: boolean;
   tour?: boolean;
+  contentSized?: boolean;
   meta?: string;
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
@@ -28,6 +29,7 @@ const {
   ctaLabel = 'Оставить заявку',
   compact = false,
   tour = false,
+  contentSized = false,
   meta,
   mediaStatus,
   replacementReason,
@@ -38,7 +40,7 @@ const resolvedImage = image ? withBase(image) : undefined;
 ---
 
 <section
-  class:list={['hero', { 'hero--compact': compact, 'hero--image': image, 'hero--tour': tour }]}
+  class:list={['hero', { 'hero--compact': compact, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized }]}
   data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
@@ -188,9 +190,15 @@ const resolvedImage = image ? withBase(image) : undefined;
     gap: 28px;
   }
 
-  /* Keep desktop tour photography panoramic; long titles can still expand the hero. */
-  .hero--tour {
+  /* Detail-page heroes have bounded minimums, but grow for longer content. */
+  .hero--tour,
+  .hero--content-sized {
     min-height: clamp(600px, 40vw, 650px);
+  }
+
+  .hero--content-sized .hero__bottom :global(.cta) {
+    max-width: 100%;
+    white-space: nowrap;
   }
 
   /* Tour-detail hero: an editorial title group centered within the photograph. */
@@ -265,10 +273,9 @@ const resolvedImage = image ? withBase(image) : undefined;
   }
 
   @media (max-width: 720px) {
-    /* Tour cards show a 320px image on phones. Give the detailed tour hero
-       a little extra height for its title and CTA, but never force 100svh.
-       min-height rather than height allows long titles to grow naturally. */
-    .hero--tour {
+    /* Keep detail-page photography compact on phones, with room to grow for text. */
+    .hero--tour,
+    .hero--content-sized {
       min-height: clamp(460px, 125vw, 560px);
     }
 

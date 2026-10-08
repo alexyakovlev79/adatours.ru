@@ -148,6 +148,7 @@ const excursionSchema = {
   {archived && <ArchiveNotice id={d.id} kind="excursion" />}
 
   <Hero
+    contentSized
     eyebrow={archived ? "Архивная экскурсия" : "Экскурсия"}
     title={d.title}
     intro={d.lead}

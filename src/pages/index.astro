@@ -143,7 +143,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
         imageTextAlign={leadingCountry.data.imageTextAlign}
       />
     )}
-    <div class="container">
+    <div class="container home-countries__cards">
       <div class="home-country-grid">
         {otherCountries.map((country) => (
           <a class="home-poster" href={withBase(countryPath(country.data))} data-image-text-align={country.data.imageTextAlign}>
@@ -465,7 +465,13 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     .home-interest-list a > span:last-child { grid-column: 2; grid-row: 1; }
   }
   @media (max-width: 760px) {
-    .home-country-grid { grid-template-columns: 1fr; }
+    .home-country-grid { grid-template-columns: 1fr; gap: 0; margin-top: 0; }
+    /* Match the mobile tour bands: full-bleed country photos, no lead or gaps. */
+    .home-countries__cards { width: 100%; max-width: none; }
+    .home-countries :global(.band) { min-height: clamp(360px, 105vw, 460px); }
+    .home-countries :global(.band__text) { display: none; }
+    .home-country-grid .home-poster { min-height: clamp(360px, 105vw, 460px); }
+    .home-countries__cards .home-all-link { margin-inline: var(--gutter); }
     /* Mobile featured tours: edge-to-edge photography with no lead text overlay. */
     .home-tours__cards { width: 100%; max-width: none; }
     .home-tours :global(.band) { min-height: clamp(360px, 105vw, 460px); }
@@ -489,7 +495,6 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     .home-proof-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   @media (max-width: 480px) {
-    .home-country-grid { gap: 10px; }
     .home-poster { min-height: 275px; }
     .home-poster__content { padding: 16px 12px; }
     .home-poster__content h3 { font-size: clamp(1.35rem, 5.4vw, 1.85rem); }

@@ -259,9 +259,17 @@ const resolvedImage = image ? withBase(image) : undefined;
   }
 
   @media (max-width: 720px) {
+    /* Tour cards show a 320px image on phones. Give the detailed tour hero
+       a little extra height for its title and CTA, but never force 100svh.
+       min-height rather than height allows long titles to grow naturally. */
+    .hero--tour {
+      min-height: clamp(460px, 125vw, 560px);
+    }
+
     .hero--tour .hero__content {
-      padding-top: calc(var(--header-h) + clamp(58px, 9svh, 90px));
-      padding-bottom: clamp(42px, 7svh, 64px);
+      justify-content: flex-end;
+      padding-top: calc(var(--header-h) + 100px);
+      padding-bottom: 32px;
     }
 
     .hero--tour .hero__head {
@@ -278,6 +286,17 @@ const resolvedImage = image ? withBase(image) : undefined;
       margin-bottom: 28px;
       font-size: clamp(2.2rem, 9.5vw, 2.75rem);
       line-height: 1.08;
+    }
+
+    /* Keep the existing compact button without wrapping its label. */
+    .hero--tour .hero__bottom :global(.cta) {
+      gap: 10px;
+      font-size: .74rem;
+      letter-spacing: .05em;
+    }
+
+    .hero--tour .hero__bottom :global(.cta span:first-child) {
+      white-space: nowrap;
     }
 
     .hero--tour .hero__overlay,

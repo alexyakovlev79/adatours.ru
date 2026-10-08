@@ -33,7 +33,7 @@ itinerary:
 
     Если прилет приходится на светлое время суток, уже по дороге будут видны зеленые холмы, скалистые горы, пальмы по обе стороны дороги и бухты. Вечером на склонах загораются огни фавел. У океана начинается другая жизнь Рио: Копакабана и Ипанема, черно-белая плитка набережных, кафе, которые работают допоздна, прохладная кокосовая вода, песок и шум волн.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/p2170104.JPG
+  - src: /media/tours/braziliya-i-argentina-v-sentyabre/archive-51-src-enhanced-20261008.webp
     alt: 'На фото: Вид на Рио-де-Жанейро сверху'
 - day: 2
   title: 'Рио-де-Жанейро: Сахарная Голова и старый центр'
@@ -74,9 +74,9 @@ itinerary:
 
     Здесь проложены тропы, переходы и смотровые площадки, откуда каскады можно видеть с очень близкого расстояния. Самая известная часть комплекса - ущелье «Горло дьявола». Грохот воды слышен издалека, а на площадках постоянно висит водяная пыль. В следующие 2 дня вы увидите водопады с обеих сторон границы.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/braziliya-i-argentina-v-sentyabre/archive-52-src-enhanced-20261008.webp
     alt: 'На фото: Фоз де Игуасу, Бразилия'
-  - src: https://brasiltours.ru/image/countries/brazil/p2170104.JPG
+  - src: /media/tours/braziliya-i-argentina-v-sentyabre/archive-51-src-enhanced-20261008.webp
     alt: 'На фото: Вид на Рио-де-Жанейро сверху'
 - day: 5
   title: 'Игуасу: бразильская сторона водопадов'
@@ -107,7 +107,7 @@ itinerary:
   images:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос Айрес, Аргентина'
-  - src: https://brasiltours.ru/image/countries/argentina/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/braziliya-i-argentina-v-sentyabre/archive-52-src-enhanced-20261008.webp
     alt: 'На фото: Фоз де Игуасу, Бразилия'
 - day: 7
   title: Буэнос-Айрес и танго-шоу
@@ -167,7 +167,7 @@ priceFrom: 1915
 currency: USD
 priceNote: $1915
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/rafael-hoyos-weht-nw3ygj4kd74-1920.jpg
+  src: /media/tours/braziliya-i-argentina-v-sentyabre/archive-53-src-enhanced-20261008.webp
   alt: 'На фото: водопады Фоз де Игуасу'
 routeCountries:
 - country_brazil

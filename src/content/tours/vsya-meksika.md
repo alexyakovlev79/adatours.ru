@@ -93,7 +93,7 @@ itinerary:
 
     Размещение в отеле 4*.
   images:
-  - src: https://brasiltours.ru/image/Oaxaca%20City.png
+  - src: /media/tours/vsya-meksika/archive-54-src-enhanced-20261008.webp
     alt: Оахака
   - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Мехико
@@ -112,7 +112,7 @@ itinerary:
 
     Размещение в отеле 3*, лучшем отеле региона.
   images:
-  - src: https://brasiltours.ru/image/Oaxaca%20City.png
+  - src: /media/tours/vsya-meksika/archive-54-src-enhanced-20261008.webp
     alt: Оахака
 - day: 5
   title: Теуантепек - каньон Сумидеро - Сан-Кристобаль-де-лас-Касас, 435 км
@@ -131,7 +131,7 @@ itinerary:
 
     Размещение в отеле 4* в Сан-Кристобаль-де-лас-Касас.
   images:
-  - src: https://brasiltours.ru/image/san%20cristobal%20de%20las%20casas.png
+  - src: /media/tours/vsya-meksika/archive-55-src-enhanced-20261008.webp
     alt: Сан Кристобал де Лас Касас
 - day: 6
   title: Сан-Кристобаль-де-лас-Касас - Сан-Хуан-Чамула - Паленке, 465 км
@@ -150,7 +150,7 @@ itinerary:
   images:
   - src: /media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Паленке
-  - src: https://brasiltours.ru/image/san%20cristobal%20de%20las%20casas.png
+  - src: /media/tours/vsya-meksika/archive-55-src-enhanced-20261008.webp
     alt: Сан Кристобал де Лас Касас
 - day: 7
   title: Паленке - Кампече, 365 км

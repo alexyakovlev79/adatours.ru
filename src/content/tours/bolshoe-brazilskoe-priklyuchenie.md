@@ -94,7 +94,7 @@ itinerary:
 
     После экскурсий возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/bonito%20ecotourizmg.png
+  - src: /media/tours/bolshoe-brazilskoe-priklyuchenie/archive-56-src-enhanced-20261008.webp
     alt: Бонито
 - day: 5
   title: Водопады реки Мимозо - Кампу-Гранди
@@ -182,7 +182,7 @@ itinerary:
 
     После экскурсии возвращение в отель в Баррейриньясе, размещение и отдых.
   images:
-  - src: https://brasiltours.ru/image/BRA%20LENCOIS%20right.jpg
+  - src: /media/tours/bolshoe-brazilskoe-priklyuchenie/archive-57-src-enhanced-20261008.webp
     alt: Ленсойс-Мараньенсес
 - day: 11
   title: Река Прегиас

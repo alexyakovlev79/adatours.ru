@@ -233,7 +233,7 @@ itinerary:
     \ монастырь Сан-Франциско, музей керамики, церковь Ла-Мерсед и улицу Ла-Кальсада.\n\n**Ночь:** La Gran Francia.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: https://brasiltours.ru/image/granada%20nic.png
+  - src: /media/tours/otbleski-tsentralnoj-ameriki/archive-58-src-enhanced-20261008.webp
     alt: 'На фото: Гранада в Никарагуа'
 - day: 13
   title: Гранада - Тихоокеанское побережье Коста-Рики
@@ -242,7 +242,7 @@ itinerary:
   text: "Переезд к границе Коста-Рики, затем на тихоокеанское побережье. После дороги время для отдыха на пляже.\n\n**Ночь:**\
     \ Wyndham Tamarindo.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/granada%20nic.png
+  - src: /media/tours/otbleski-tsentralnoj-ameriki/archive-58-src-enhanced-20261008.webp
     alt: 'На фото: Гранада в Никарагуа'
 - day: 14
   title: Тихоокеанское побережье
@@ -328,7 +328,7 @@ priceFrom: 10780
 currency: USD
 priceNote: $10780
 hero:
-  src: https://brasiltours.ru/image/countries/costa-rica/antigua-1.jpg
+  src: /media/tours/otbleski-tsentralnoj-ameriki/archive-59-src-enhanced-20261008.webp
   alt: 'На фото: Антигуа и Барбуда, Верфь Нельсона'
 routeCountries:
 - country_guatemala

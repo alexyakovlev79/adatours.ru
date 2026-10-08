@@ -39,7 +39,7 @@ itinerary:
 
     Отель находится на знаменитой Копакабане, поэтому уже в первый вечер можно выйти к океану и увидеть пляж в предновогодние дни, когда город постепенно готовится к главной ночи года.
   images:
-  - src: https://brasiltours.ru/image/NEW%20YEAR.png
+  - src: /media/tours/braziliya-s-vodopadami-na-novyj-god/archive-60-src-enhanced-20261008.webp
     alt: 'На фото: На пляже в Рио-де-Жанейро'
 - day: 2
   title: 31.12. Корковаду и новогодний бал
@@ -92,7 +92,7 @@ itinerary:
     \ полет над Рио продолжительностью от 10 до 30 минут.\n\nВечером можно посетить ресторан **Marius Degustare**, специализирующийся\
     \ на морепродуктах. Его интерьер стилизован под затонувший корабль с сокровищами."
   images:
-  - src: https://brasiltours.ru/image/NEW%20YEAR.png
+  - src: /media/tours/braziliya-s-vodopadami-na-novyj-god/archive-60-src-enhanced-20261008.webp
     alt: 'На фото: На пляже в Рио-де-Жанейро'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []

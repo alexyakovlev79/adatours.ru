@@ -18,7 +18,7 @@ const { price = 'По запросу', ctaLabel = 'Заказать этот т�
       <h2>{price}</h2>
     </div>
     <div class="pricing__copy">
-      <PrimaryCTA href="/contacts/" label={ctaLabel} />
+      <PrimaryCTA href="/contacts/" label={ctaLabel} variant="dark" />
     </div>
   </div>
 </section>
@@ -48,8 +48,6 @@ const { price = 'По запросу', ctaLabel = 'Заказать этот т�
 
   .pricing :global(.cta) {
     margin-top: 0;
-    border-color: var(--color-ink-deep);
-    background: transparent;
   }
 
   @media (max-width: 760px) {

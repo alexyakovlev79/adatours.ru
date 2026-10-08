@@ -4,7 +4,7 @@ import { withBase } from '../../lib/paths';
 interface Props {
   href?: string;
   label?: string;
-  variant?: 'gold' | 'light' | 'ghost';
+  variant?: 'gold' | 'light' | 'ghost' | 'dark';
 }
 
 const {
@@ -64,5 +64,22 @@ const resolvedHref = opensLeadModal ? '#request' : withBase(href);
   .cta--ghost {
     border-color: currentColor;
     background: transparent;
+  }
+
+  /* Inverse primary CTA for saturated golden surfaces (e.g. tour pricing). */
+  .cta--dark {
+    border-color: var(--color-ink-deep);
+    background: var(--color-ink-deep);
+    color: var(--color-bg);
+  }
+
+  .cta--dark:hover {
+    border-color: color-mix(in srgb, var(--color-ink-deep) 84%, var(--color-bg));
+    background: color-mix(in srgb, var(--color-ink-deep) 84%, var(--color-bg));
+  }
+
+  .cta--dark:focus-visible {
+    outline: 3px solid var(--color-ink-deep);
+    outline-offset: 4px;
   }
 </style>

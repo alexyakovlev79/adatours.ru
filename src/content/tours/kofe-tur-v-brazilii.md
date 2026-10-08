@@ -252,6 +252,9 @@ itinerary:
 
 
     Здесь есть небольшие гостиницы, бары, рестораны и ремесленные магазины. День можно провести у водопадов, гуляя по окрестностям и отдыхая у воды.'
+  image:
+    src: /media/destinations/destination_brazil_viskondi_de_maua/hero-generated-20261008-resumed.webp
+    alt: Висконди-де-Мауа — Бразилия
 - day: 9
   title: Висконди-де-Мауа - Рио-де-Жанейро
   places:

@@ -39,6 +39,9 @@ itinerary:
 
 
     Во второй половине дня предусмотрен отдых на пляже Риу-Негру, где можно купаться. Вечером коктейли у реки на закате и ужин на борту.'
+  image:
+    src: /media/destinations/destination_brazil_tumbira/hero-generated-20261008-resumed.webp
+    alt: Тумбира — Бразилия
 - day: 3
   title: Прибрежная деревня и река Аруау
   places:

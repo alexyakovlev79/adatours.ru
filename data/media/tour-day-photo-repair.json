@@ -7843,7 +7843,7 @@
       "tourId": "tour_source_braziliya_argentina_gruppovoj_tur",
       "contentPath": "src/content/tours/braziliya-argentina-gruppovoj-tur.md",
       "sourceBlobSha": "2fff30510e664f8857595f9c9cb152e5810a18a1",
-      "status": "partial",
+      "status": "completed",
       "published": false,
       "workflowVersion": "1.4",
       "sheetRow": 356,
@@ -7918,8 +7918,12 @@
       "destinationSync": [
         {
           "destinationId": "destination_brazil_derevnya_akazhatuba",
-          "status": "pending",
-          "remaining": "Publish independent destination page with a verified photo; no such approved photo in this tour's available destination media"
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_derevnya_akazhatuba/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
         }
       ],
       "dayPhotosStatus": "completed"
@@ -7928,7 +7932,7 @@
       "tourId": "tour_source_braziliya_gruppovoj_tur_na_13_dnej",
       "contentPath": "src/content/tours/braziliya-gruppovoj-tur-na-13-dnej.md",
       "sourceBlobSha": "31ea4f3a14f0da4a6a42183e6d6cbdada04922fd",
-      "status": "partial",
+      "status": "completed",
       "published": false,
       "workflowVersion": "1.4",
       "sheetRow": 359,
@@ -8008,8 +8012,12 @@
       "destinationSync": [
         {
           "destinationId": "destination_brazil_derevnya_akazhatuba",
-          "status": "pending",
-          "remaining": "Destination page and specific photographic material have not been created"
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_derevnya_akazhatuba/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
         }
       ],
       "dayPhotosStatus": "completed"
@@ -8018,7 +8026,7 @@
       "tourId": "tour_source_braziliya_argentina_i_chili",
       "contentPath": "src/content/tours/braziliya-argentina-i-chili.md",
       "sourceBlobSha": "4c1089ec0f12123636550616f6a8abd7515dc96f",
-      "status": "partial",
+      "status": "completed",
       "published": false,
       "workflowVersion": "1.4",
       "sheetRow": 355,
@@ -8272,7 +8280,7 @@
       "tourId": "tour_source_nezabyvaemaya_braziliya",
       "contentPath": "src/content/tours/nezabyvaemaya-braziliya.md",
       "sourceBlobSha": "9d69d2421e59fb70eb6af9b90910e995a5252b65",
-      "status": "partial",
+      "status": "completed",
       "dayPhotosStatus": "completed",
       "published": false,
       "workflowVersion": "1.4",
@@ -8342,11 +8350,6 @@
       "remainingDuplicateGroups": [],
       "destinationSync": [
         {
-          "destinationId": "destination_brazil_itakurusa",
-          "status": "pending",
-          "remaining": "Missing independent page with confirmed image"
-        },
-        {
           "destinationId": "destination_brazil_petropolis",
           "status": "completed",
           "created": true,
@@ -8355,6 +8358,15 @@
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-1-enhanced-20261006.webp",
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-2-enhanced-20261006.webp",
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-2-src-enhanced-20261007.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_itakurusa",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_itakurusa/hero-generated-20261008-resumed.webp"
           ],
           "remaining": null
         }
@@ -8443,8 +8455,33 @@
       "tourId": "tour_source_amazoniya",
       "contentPath": "src/content/tours/amazoniya.md",
       "sheetRow": 347,
-      "completedAssets": [],
-      "destinationSync": [],
+      "completedAssets": [
+        {
+          "key": "destination_brazil_derevnya_akazhatuba",
+          "destinationId": "destination_brazil_derevnya_akazhatuba",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_amazoniya",
+          "src": "/media/destinations/destination_brazil_derevnya_akazhatuba/hero-generated-20261008-resumed.webp",
+          "alt": "Деревня Акажатуба — Бразилия",
+          "prompt": "Generate ONE standalone photorealistic travel photograph, one continuous full-frame scene. Exact location: Acajatuba riverside village on the Rio Negro near Manaus, Amazonas, BRAZIL. View from a small boat toward modest wooden riverside houses, palms and humid tropical forest, dark Rio Negro water in the foreground. This is a visit to the caboclo community during an Amazon itinerary. Depict a credible quiet Amazonian village without inventing prominent landmark architecture. Natural morning daylight, detailed wood, water and tropical vegetation, landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, labels, text, logo, watermark, frames, inset images or route map.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-1b030b9b-bc79-4ad4-b443-c270f56aef8b.png",
+          "accepted": true,
+          "acceptance": "Single continuous scene, requested regional setting, no collage or labels.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
+      "destinationSync": [
+        {
+          "destinationId": "destination_brazil_derevnya_akazhatuba",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_derevnya_akazhatuba/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        }
+      ],
       "removedDuplicates": [],
       "reusedAssets": [
         {
@@ -8460,21 +8497,16 @@
           "src": "/media/destinations/manaus-amazonia/hero-enhanced-20261001.webp",
           "alt": "Амазония в Бразилии",
           "destinationId": "destination_brazil_amazon"
-        }
-      ],
-      "pendingGeneratedSlots": [
+        },
         {
           "day": 3,
           "itineraryIndex": 4,
-          "title": "Evolution Eco Lodge - джунгли, дом Кабокло и Acajatuba",
-          "places": [
-            "Деревня Акажатуба"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_derevnya_akazhatuba"
-          ],
-          "text": "После завтрака вы отправитесь на прогулку по джунглям. Здесь важны сами детали леса: влажный воздух, звуки птиц и насекомых, река рядом и густая растительность, которая окружает тропы.\n\nВ программу входит посещение дома Кабокло. Вы познакомитесь с бытом, традициями и обычаями местных жителей и узнаете, как готовят муку из маниока.\n\nПосле обеда состоится поездка в деревню Acajatuba. Жители занимаются рыболовством и сельским хозяйством, выращивают маниок, тукуму, асаи, пальмы, каучуковые деревья и бразильский орех. Местные ремесленники делают изделия из натуральных семян, и во время визита вам расскажут об этой работе.\n\nПосле возвращения в лодж вас ждет прощальный ужин.\n\nВ 20:00 начинается ночная прогулка вдоль берегов реки с фонарями. Во время нее можно увидеть кайманов Tinga и Acu, а при удаче - ночных ястребов, змей и лягушек. Ночью джунгли воспринимаются совсем иначе: темная вода, короткие лучи фонарей и множество звуков, которые днем почти не замечаешь.\n\nНочь в Evolution Eco Lodge."
-        },
+          "src": "/media/destinations/destination_brazil_derevnya_akazhatuba/hero-generated-20261008-resumed.webp",
+          "alt": "Деревня Акажатуба — Бразилия",
+          "destinationId": "destination_brazil_derevnya_akazhatuba"
+        }
+      ],
+      "pendingGeneratedSlots": [
         {
           "day": 4,
           "itineraryIndex": 5,
@@ -8497,8 +8529,79 @@
       "tourId": "tour_source_amazoniya_kruiz_tukano",
       "contentPath": "src/content/tours/amazoniya-kruiz-tukano.md",
       "sheetRow": 348,
-      "completedAssets": [],
-      "destinationSync": [],
+      "completedAssets": [
+        {
+          "key": "destination_brazil_ekologicheskij_park_zhanauari",
+          "destinationId": "destination_brazil_ekologicheskij_park_zhanauari",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_amazoniya_kruiz_tukano",
+          "src": "/media/destinations/destination_brazil_ekologicheskij_park_zhanauari/hero-generated-20261008-resumed.webp",
+          "alt": "Экологический парк Жанауари — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Janauari Ecological Park near Manaus, Amazonas. Scene: a wooden boardwalk above calm floodplain water and dense Amazonian forest; giant water lily leaves near the water surface. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-370873d7-e683-404b-869f-cd73e075a5db.png",
+          "accepted": true,
+          "acceptance": "Single continuous scene, requested regional setting, no collage or labels.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_tumbira",
+          "destinationId": "destination_brazil_tumbira",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_amazoniya_kruiz_tukano",
+          "src": "/media/destinations/destination_brazil_tumbira/hero-generated-20261008-resumed.webp",
+          "alt": "Тумбира — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Tumbira community beside the Rio Negro, Amazonas. Scene: small riverside wooden houses and a modest landing pier, dark river water and dense forest, view from the river. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-da0a7801-a752-4fbd-a090-ecf4b8091a32.png",
+          "accepted": true,
+          "acceptance": "Single continuous scene, requested regional setting, no collage or labels.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_reka_aruau",
+          "destinationId": "destination_brazil_reka_aruau",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_amazoniya_kruiz_tukano",
+          "src": "/media/destinations/destination_brazil_reka_aruau/hero-generated-20261008-resumed.webp",
+          "alt": "Река Аруау — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Aruau river in the Rio Negro region, Amazonas. Scene: narrow dark-water Amazonian channel between dense humid tropical forest, seen at water level from a canoe. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-5884683d-6e98-4c5a-a2a1-5d2a65d90e60.png",
+          "accepted": true,
+          "acceptance": "Single continuous scene, requested regional setting, no collage or labels.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
+      "destinationSync": [
+        {
+          "destinationId": "destination_brazil_ekologicheskij_park_zhanauari",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_ekologicheskij_park_zhanauari/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_tumbira",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_tumbira/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_reka_aruau",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_reka_aruau/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        }
+      ],
       "removedDuplicates": [],
       "reusedAssets": [
         {
@@ -8514,24 +8617,18 @@
           "src": "/media/destinations/manaus-amazonia/hero-enhanced-20261001.webp",
           "alt": "Амазония в Бразилии",
           "destinationId": "destination_brazil_amazon"
-        }
-      ],
-      "pendingGeneratedSlots": [
+        },
         {
           "day": 2,
           "itineraryIndex": 1,
-          "title": "Серингал, Тумбира и пляж Риу-Негру",
-          "places": [
-            "Тумбира"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_tumbira"
-          ],
-          "text": "После завтрака экскурсия в музей каучуковой плантации Серингал. Затем посещение общины RDS Тумбира вместе с гидом.\n\nВо второй половине дня предусмотрен отдых на пляже Риу-Негру, где можно купаться. Вечером коктейли у реки на закате и ужин на борту."
+          "src": "/media/destinations/destination_brazil_tumbira/hero-generated-20261008-resumed.webp",
+          "alt": "Тумбира — Бразилия",
+          "destinationId": "destination_brazil_tumbira"
         }
       ],
-      "dayPhotosStatus": "partial",
-      "status": "partial",
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
       "workflowVersion": "1.4",
       "published": false
     },
@@ -8539,7 +8636,22 @@
       "tourId": "tour_source_braziliya_s_detmi",
       "contentPath": "src/content/tours/braziliya-s-detmi.md",
       "sheetRow": 353,
-      "completedAssets": [],
+      "completedAssets": [
+        {
+          "key": "destination_brazil_itakurusa",
+          "destinationId": "destination_brazil_itakurusa",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_braziliya_s_detmi",
+          "src": "/media/destinations/destination_brazil_itakurusa/hero-generated-20261008-resumed.webp",
+          "alt": "Итакуруса — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Itacuruca in the Mangaratiba coastal region of Rio de Janeiro state. Scene: sheltered blue-green coastal bay, small excursion boats, forested coastal hills and modest waterfront buildings. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-7cd79be9-6d41-49d8-95e4-a934bdec938c.png",
+          "accepted": true,
+          "acceptance": "Accepted one continuous photographic scene; requested setting, no collage, labels or inset.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
       "destinationSync": [
         {
           "destinationId": "destination_brazil_petropolis",
@@ -8550,6 +8662,15 @@
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-1-enhanced-20261006.webp",
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-2-enhanced-20261006.webp",
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-2-src-enhanced-20261007.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_itakurusa",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_itakurusa/hero-generated-20261008-resumed.webp"
           ],
           "remaining": null
         }
@@ -8780,7 +8901,78 @@
       "tourId": "tour_source_kofe_tur_v_brazilii",
       "contentPath": "src/content/tours/kofe-tur-v-brazilii.md",
       "sheetRow": 364,
-      "completedAssets": [],
+      "completedAssets": [
+        {
+          "key": "destination_brazil_viskondi_de_maua",
+          "destinationId": "destination_brazil_viskondi_de_maua",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_kofe_tur_v_brazilii",
+          "src": "/media/destinations/destination_brazil_viskondi_de_maua/hero-generated-20261008-resumed.webp",
+          "alt": "Висконди-де-Мауа — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Visconde de Maua mountain region on the Rio de Janeiro and Minas Gerais border. Scene: a clear mountain river forming natural pools among rounded rocks, lush Atlantic forest and green mountain slopes. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-8dc24820-3e33-48dc-b570-c20f172f7718.png",
+          "accepted": true,
+          "acceptance": "Accepted one continuous photographic scene; requested setting, no collage, labels or inset.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_dolina_kofe_rio_de_zhanejro",
+          "destinationId": "destination_brazil_dolina_kofe_rio_de_zhanejro",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_kofe_tur_v_brazilii",
+          "src": "/media/destinations/destination_brazil_dolina_kofe_rio_de_zhanejro/hero-generated-20261008-resumed.webp",
+          "alt": "Долина кофе (Рио-де-Жанейро) — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Vale do Cafe, Rio de Janeiro state. Scene: rolling green hills with coffee plants in cultivated rows and scattered trees, rural Brazilian coffee landscape. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-3b9297b6-0001-41cc-970d-5766092afdd4.png",
+          "accepted": true,
+          "acceptance": "Accepted one continuous photographic scene; requested setting, no collage, labels or inset.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_rio_das_flores",
+          "destinationId": "destination_brazil_rio_das_flores",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_kofe_tur_v_brazilii",
+          "src": "/media/destinations/destination_brazil_rio_das_flores/hero-generated-20261008-resumed.webp",
+          "alt": "Рио-дас-Флорес — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Rio das Flores in Rio de Janeiro state. Scene: quiet small-town street with modest traditional low-rise houses and green inland hills, no invented landmark. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-f49c9f35-fc3a-44d0-ad7c-5b9bd35abfde.png",
+          "accepted": true,
+          "acceptance": "Accepted one continuous photographic scene; requested setting, no collage, labels or inset.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_fazenda_ponte_alta",
+          "destinationId": "destination_brazil_fazenda_ponte_alta",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_kofe_tur_v_brazilii",
+          "src": "/media/destinations/destination_brazil_fazenda_ponte_alta/hero-generated-20261008-resumed.webp",
+          "alt": "Fazenda Ponte Alta — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Fazenda Ponte Alta, Barra do Pirai, Rio de Janeiro state. Scene: close foreground of ripe coffee cherries on living coffee plants, cultivated rows receding into a green rural coffee estate, no invented historic facade. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-aced85ef-f48e-445f-85dc-0c944c1f4371.png",
+          "accepted": true,
+          "acceptance": "Accepted one continuous photographic scene; requested setting, no collage, labels or inset.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_fazenda_taquara",
+          "destinationId": "destination_brazil_fazenda_taquara",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_kofe_tur_v_brazilii",
+          "src": "/media/destinations/destination_brazil_fazenda_taquara/hero-generated-20261008-resumed.webp",
+          "alt": "Fazenda Taquara — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Fazenda Taquara coffee estate, Barra do Pirai, Rio de Janeiro state. Scene: a detailed living coffee branch with ripe cherries, soft background of coffee bushes and bamboo at a rural plantation, no invented building facade. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-cd3378f5-499d-4999-a9df-22e8e46c1e1b.png",
+          "accepted": true,
+          "acceptance": "Accepted one continuous photographic scene; requested setting, no collage, labels or inset.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
       "destinationSync": [
         {
           "destinationId": "destination_brazil_petropolis",
@@ -8791,6 +8983,60 @@
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-1-enhanced-20261006.webp",
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-2-enhanced-20261006.webp",
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-2-src-enhanced-20261007.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_itakurusa",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_itakurusa/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_viskondi_de_maua",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_viskondi_de_maua/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_dolina_kofe_rio_de_zhanejro",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_dolina_kofe_rio_de_zhanejro/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_rio_das_flores",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_rio_das_flores/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_fazenda_ponte_alta",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_fazenda_ponte_alta/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_fazenda_taquara",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_fazenda_taquara/hero-generated-20261008-resumed.webp"
           ],
           "remaining": null
         }
@@ -8829,24 +9075,18 @@
           "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
           "alt": "Рио-де-Жанейро вечером",
           "destinationId": "destination_brazil_rio"
-        }
-      ],
-      "pendingGeneratedSlots": [
+        },
         {
           "day": 8,
           "itineraryIndex": 12,
-          "title": "Висконди-де-Мауа",
-          "places": [
-            "Висконди-де-Мауа"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_viskondi_de_maua"
-          ],
-          "text": "День посвящен региону Висконди-де-Мауа.\n\nОн известен горными тропами, реками, водопадами и естественными бассейнами с чистой водой.\n\nЗдесь есть небольшие гостиницы, бары, рестораны и ремесленные магазины. День можно провести у водопадов, гуляя по окрестностям и отдыхая у воды."
+          "src": "/media/destinations/destination_brazil_viskondi_de_maua/hero-generated-20261008-resumed.webp",
+          "alt": "Висконди-де-Мауа — Бразилия",
+          "destinationId": "destination_brazil_viskondi_de_maua"
         }
       ],
-      "dayPhotosStatus": "partial",
-      "status": "partial",
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
       "workflowVersion": "1.4",
       "published": false
     },

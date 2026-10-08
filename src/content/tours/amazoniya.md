@@ -80,6 +80,9 @@ itinerary:
 
 
     Ночь в Evolution Eco Lodge.'
+  image:
+    src: /media/destinations/destination_brazil_derevnya_akazhatuba/hero-generated-20261008-resumed.webp
+    alt: Деревня Акажатуба — Бразилия
 - day: 4
   title: Evolution Eco Lodge - Манаус - Рио-де-Жанейро
   places:

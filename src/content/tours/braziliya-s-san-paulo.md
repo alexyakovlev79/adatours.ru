@@ -76,8 +76,6 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: 'На фото: Река Амазонка'
-  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
-    alt: 'На фото: Мост Октавио Фриас де Оливейра в Сан-Паулу'
 - day: 4
   title: Амазония
   places:
@@ -123,8 +121,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Заказ в Рио-де-Жанейро'
-  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    alt: 'На фото: Река Амазонка'
 - day: 6
   title: Сахарная голова и старый Рио
   places:
@@ -178,8 +174,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу'
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
-    alt: 'На фото: Заказ в Рио-де-Жанейро'
 - day: 9
   title: Бразильская сторона Игуасу
   places:
@@ -222,8 +216,8 @@ itinerary:
 
     Здесь хорошо видно, как река собирается в мощный поток и исчезает в каньоне. После панорамной бразильской стороны эта часть позволяет рассмотреть Игуасу гораздо ближе.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
-    alt: 'На фото: Водопады Игуасу'
+  - src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
+    alt: Водопады Игуасу
 - day: 11
   title: Игуасу - Сан-Паулу
   places:
@@ -235,18 +229,16 @@ itinerary:
 
     Перелет в Сан-Паулу и трансфер в отель.
   images:
-  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
-    alt: 'На фото: Смотровая площадка на водопадах Игуасу'
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
-    alt: 'На фото: Собор Сан-Паулу'
+  - src: /media/destinations/destination_brazil_sao_paulo/sao-paulo-departure-generated-20261008.webp
+    alt: Городская улица Сан-Паулу
 - day: 12
   title: Сан-Паулу
   places:
   - Сан-Паулу
   text: После завтрака трансфер в аэропорт к международному рейсу.
   images:
-  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
-    alt: 'На фото: Мост Октавио Фриас де Оливейра в Сан-Паулу'
+  - src: /media/destinations/sao-paulo/hero-enhanced-20261001.webp
+    alt: Панорама Сан-Паулу, Бразилия
 included:
 - Проживание в отелях на базе завтраков.
 - Трансферы с водителем по программе.

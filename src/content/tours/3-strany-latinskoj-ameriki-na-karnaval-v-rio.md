@@ -107,8 +107,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Граница Аргентины и Бразилии у водопадов Игуасу, каскады и облако брызг над рекой
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-1-enhanced-20261006.webp
-    alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио
 - day: 6
   title: Бразильская сторона Игуасу
   places:
@@ -156,8 +154,6 @@ itinerary:
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-9-enhanced-20261006.webp
     alt: Ночной вид на деловой центр Буэнос-Айреса
-  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
-    alt: Граница Аргентины и Бразилии у водопадов Игуасу, каскады и облако брызг над рекой
 - day: 8
   title: Буэнос-Айрес и танго-шоу
   places:
@@ -202,8 +198,8 @@ itinerary:
 
     Индивидуальная программа с русскоговорящим гидом: **USD 850 с человека**, группа от 2 участников.
   images:
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-9-enhanced-20261006.webp
-    alt: Ночной вид на деловой центр Буэнос-Айреса
+  - src: /media/home/buenos-aires-enhanced-20260930.webp
+    alt: Улица Буэнос-Айреса
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places: []
 - excursionRef: excursion_source_fiesta_gaucho
@@ -226,8 +222,6 @@ itinerary:
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: Панорама Сантьяго на фоне заснеженных Анд, столица Чили и горные вершины
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-images.1-enhanced-20261006.webp
-    alt: Купол Дворца Конгресса на закате в Буэнос-Айресе
 - day: 11
   title: Сантьяго - исторический центр и холм Санта-Лючия
   places:
@@ -245,8 +239,8 @@ itinerary:
 
     **Стоимость:** USD 230 с человека, минимум 2 гостя.
   images:
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
-    alt: Панорама Сантьяго на фоне заснеженных Анд, столица Чили и горные вершины
+  - src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
+    alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
 - day: 12
   title: Вылет из Сантьяго
   places:
@@ -260,8 +254,8 @@ itinerary:
 
     Вся поездка построена вокруг заметной смены среды: океан и карнавальный Рио, тропический Игуасу, вечерний Буэнос-Айрес и сухой воздух Сантьяго у подножия Анд.
   images:
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
-    alt: Панорама Сантьяго на фоне заснеженных Анд, столица Чили и горные вершины
+  - src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
+    alt: Водопады Игуасу
 included:
 - Проживание в отелях по программе.
 - Экскурсии по программе в группе.

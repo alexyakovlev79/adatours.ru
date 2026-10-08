@@ -49,8 +49,8 @@ itinerary:
 
     После экскурсии возвращение в отель и отдых.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
-    alt: 'на фото: Рио-де-Жанейро на закате'
+  - src: /media/catalog/tury/hero-enhanced-20260930.webp
+    alt: Панорама Рио-де-Жанейро
 - day: 3
   title: 'Рио-де-Жанейро: Сахарная Голова и город'
   places:
@@ -64,8 +64,8 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
-    alt: 'на фото: Рио-де-Жанейро на закате'
+  - src: /media/destinations/destination_brazil_rio/rio-free-street-generated-20261008.webp
+    alt: Улица Рио-де-Жанейро с кафе и деревьями
 - day: 4
   title: Рио-де-Жанейро - Фоз-ду-Игуасу
   places:
@@ -78,8 +78,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
-    alt: 'на фото: Рио-де-Жанейро на закате'
 - day: 5
   title: 'Фоз-ду-Игуасу: водопады, Макуко-сафари и Парк птиц'
   places:
@@ -110,8 +108,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу  в Бразилии и Аргентине'
-  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
-    alt: 'на фото: Сан Салвадор Бразилия'
 - day: 7
   title: Салвадор
   places:
@@ -142,10 +138,8 @@ itinerary:
 
     Город сочетает пляжи и историческую застройку, сохранившую следы португальского и голландского периода. Здесь много ресторанов, кафе и клубов, поэтому вечер можно провести по своему вкусу.
   images:
-  - src: "/media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-9-enhanced-20261006.webp"
+  - src: /media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: город Ресифе'
-  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
-    alt: 'на фото: Сан Салвадор Бразилия'
 - day: 9
   title: Ресифи и Олинда
   places:
@@ -162,8 +156,8 @@ itinerary:
 
     Возвращение в Ресифи.
   images:
-  - src: "/media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-9-enhanced-20261006.webp"
-    alt: 'на фото: город Ресифе'
+  - src: /media/destinations/recife/hero-enhanced-20261001.webp
+    alt: Ресифи, столица штата Пернамбуку в Бразилии
 - day: 10
   title: Ресифи - Порту-де-Галиньяс
   places:
@@ -176,8 +170,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
     alt: 'на фото:  город Порту де Галиньяс'
-  - src: "/media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-9-enhanced-20261006.webp"
-    alt: 'на фото: город Ресифе'
 - day: 11
   title: Порту-де-Галиньяс
   places:
@@ -191,8 +183,8 @@ itinerary:
 
     В самом городке работают рестораны, бары и клубы. Вечером можно вернуться с пляжа, поужинать и прогуляться по улицам курорта.
   images:
-  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
-    alt: 'на фото:  город Порту де Галиньяс'
+  - src: /media/destinations/porto-de-galinhas/gallery-1-enhanced-20261001.webp
+    alt: Побережье Порту-ди-Галиньяш
 - day: 12
   title: Порту-де-Галиньяс
   places: []
@@ -204,9 +196,7 @@ itinerary:
     Доступны серфинг, виндсерфинг, дайвинг и водные лыжи. Благодаря прозрачной воде особенно интересно наблюдать за подводной жизнью в природных бассейнах у берега.
 
     В самом городке работают рестораны, бары и клубы. Вечером можно вернуться с пляжа, поужинать и прогуляться по улицам курорта.
-  images:
-  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
-    alt: 'на фото:  город Порту де Галиньяс'
+  images: []
 - day: 13
   title: Порту-де-Галиньяс
   places: []
@@ -218,9 +208,7 @@ itinerary:
     Доступны серфинг, виндсерфинг, дайвинг и водные лыжи. Благодаря прозрачной воде особенно интересно наблюдать за подводной жизнью в природных бассейнах у берега.
 
     В самом городке работают рестораны, бары и клубы. Вечером можно вернуться с пляжа, поужинать и прогуляться по улицам курорта.
-  images:
-  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
-    alt: 'на фото:  город Порту де Галиньяс'
+  images: []
 - day: 14
   title: Порту-де-Галиньяс - Ресифи
   places:
@@ -228,10 +216,8 @@ itinerary:
   - Порту-ди-Галиньяш
   text: В назначенное время трансфер в аэропорт Ресифи для вылета домой.
   images:
-  - src: "/media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-9-enhanced-20261006.webp"
-    alt: 'на фото: город Ресифе'
-  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
-    alt: 'на фото:  город Порту де Галиньяс'
+  - src: /media/destinations/porto-de-galinhas/gallery-2-enhanced-20261001.webp
+    alt: Пляж и рифы Порту-ди-Галиньяш
 included:
 - Проживание в отелях 4* на базе завтраков.
 - Частные трансферы с водителем.

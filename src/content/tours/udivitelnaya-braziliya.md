@@ -36,6 +36,9 @@ itinerary:
   places:
   - Рио-де-Жанейро
   text: Добро пожаловать в Рио. По прибытии в аэропорт вас встретит водитель. Трансфер в отель, размещение и отдых после перелета.
+  images:
+  - src: /media/catalog/tury/hero-enhanced-20260930.webp
+    alt: Панорама Рио-де-Жанейро
 - day: 2
   title: Рио-де-Жанейро
   places:
@@ -96,10 +99,8 @@ itinerary:
 
     После обеда можно отдохнуть в гамаках или искупаться в естественных водоемах. Затем продолжаем путь в Бонито. По прибытии предусмотрен рафтинг.
   images:
-  - src: "/media/tours/udivitelnaya-braziliya/itinerary-day-6-enhanced-20261007.webp"
+  - src: /media/tours/udivitelnaya-braziliya/itinerary-day-6-enhanced-20261007.webp
     alt: Бонито
-  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
-    alt: Пантанал
 - day: 7
   title: Бонито
   places:
@@ -131,9 +132,7 @@ itinerary:
 
     Ужин. Вечером предусмотрена поездка на каноэ для наблюдения за аллигаторами.
   images:
-  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    alt: Манаус
-  - src: "/media/tours/udivitelnaya-braziliya/itinerary-day-8-images-1-enhanced-20261007.webp"
+  - src: /media/tours/udivitelnaya-braziliya/itinerary-day-8-images-1-enhanced-20261007.webp
     alt: Бонито
 - day: 9
   title: Манаус
@@ -182,6 +181,9 @@ itinerary:
     В 14:00 отправляемся на джипах вглубь Ленсойса. Прогуляемся в районе Голубого озера и искупаемся в лагунах. В дюнах останемся до позднего вечера, чтобы встретить закат.
 
     После возвращения в Баррейриньяс можно искупаться в бассейне отеля, пройтись по тихим улицам или провести вечер в ресторане у реки.
+  images:
+  - src: /media/destinations/destination_brazil_sao_luis/sao-luis-departure-generated-20261008.webp
+    alt: Исторический центр Сан-Луиса
 - day: 12
   title: Баррейриньяс
   places:
@@ -192,6 +194,9 @@ itinerary:
     Первая остановка - Васоурас, которую называют маленьким Ленсойсом. Здесь можно выпить кокосовой воды, сфотографироваться с обезьянками и посетить рыбацкую деревню.
 
     Затем предстоит подъем по 160 ступеням к маяку Прегисас. С высоты открывается вид сразу на дюны, реку, океан и густую растительность.
+  images:
+  - src: /media/destinations/destination_brazil_barrejrinyas/destination_brazil_barrejrinyas-generated-20261008.webp
+    alt: Баррейриньяс - Бразилия
 - day: 13
   title: Баррейриньяс - Сан-Луис
   places:
@@ -203,11 +208,15 @@ itinerary:
     На обратном пути будет остановка на обед в ресторане Louise, где можно попробовать креветки. Обед и креветки в стоимость тура не входят.
 
     После обеда трансфер в Сан-Луис.
+  images:
+  - src: /media/destinations/sao-luis/hero-enhanced-20261001.webp
+    alt: Сан-Луис в штате Мараньян, Бразилия
 - day: 14
   title: Сан-Луис
   places:
   - Сан-Луис
   text: Завтрак в отеле. В назначенное время трансфер в аэропорт для вылета домой.
+  images: []
 included:
 - проживание в отелях;
 - питание по маршруту;

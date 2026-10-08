@@ -96,8 +96,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: "/media/tours/luchshee-v-venesuele/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Каракас
+  - src: /media/destinations/caracas/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: столица Венесуэлы, город Каракас'
 - day: 4
   title: Канайма, лагуна и водопады Сапо и Ача
   places:
@@ -165,8 +165,8 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: "/media/excursions/venezuela-kavak-angel-helicopter/hero-src-enhanced-20261007.webp"
-    alt: Канайма
+  - src: /media/destinations/canaima-and-angel-falls/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []
 - day: 7
@@ -185,10 +185,8 @@ itinerary:
 
     **Питание:** завтрак, ужин.
   images:
-  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Остров Маргарита
-  - src: "/media/excursions/venezuela-kavak-angel-helicopter/hero-src-enhanced-20261007.webp"
-    alt: Канайма
 - day: 8
   title: Остров Маргарита
   places:
@@ -235,16 +233,16 @@ itinerary:
   - Остров Маргарита
   text: Пляжный отдых в отеле по системе «все включено».
   images:
-  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Остров Маргарита
+  - src: /media/destinations/margarita-island/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: остров Маргариты в Венесуэле'
 - day: 11
   title: Остров Маргарита
   places:
   - Остров Маргарита
   text: Пляжный отдых в отеле по системе «все включено».
   images:
-  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-11-images-0-src-enhanced-20261007.webp"
-    alt: Остров Маргарита
+  - src: /media/destinations/margarita-island/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: остров Маргариты в Венесуэле'
 - day: 12
   title: Остров Маргарита - Каракас и поместье Санта-Тереза
   places:
@@ -273,10 +271,8 @@ itinerary:
 
     После экскурсии возвращение в аэропорт и регистрация на рейс.
   images:
-  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Каракас
-  - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-12-images-1-src-enhanced-20261007.webp"
-    alt: Остров Маргарита
+  - src: /media/destinations/caracas/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: столица Венесуэлы, город Каракас'
 included:
 - Проживание в отелях 4* и кампаменто.
 - Индивидуальные трансферы и групповые трансферы в Канайме.

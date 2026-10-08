@@ -151,8 +151,8 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: "/media/tours/kraski-venesuely/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Канайма
+  - src: /media/destinations/canaima-and-angel-falls/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 - day: 5
   title: Свободное время в Канайме
   places:
@@ -184,8 +184,8 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: "/media/tours/kraski-venesuely/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Канайма
+  - src: /media/destinations/canaima-and-angel-falls/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []
 - excursionRef: excursion_venezuela_angel_helicopter_flight

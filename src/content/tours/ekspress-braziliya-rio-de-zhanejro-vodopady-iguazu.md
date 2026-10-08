@@ -47,8 +47,8 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
-    alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
+  - src: /media/catalog/tury/hero-enhanced-20260930.webp
+    alt: Панорама Рио-де-Жанейро
 - day: 3
   title: Корковадо и Росинья
   places:
@@ -86,8 +86,6 @@ itinerary:
 
     Пешеходные дорожки и мосты выводят к смотровым точкам очень близко к воде. Мелкая водяная пыль ощущается прямо на маршруте, а шум становится сильнее по мере приближения к главным каскадам.
   images:
-  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
-    alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 5
@@ -105,8 +103,8 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
-    alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
+  - src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
+    alt: Водопады Игуасу
 - day: 6
   title: Вылет
   places: []
@@ -115,8 +113,8 @@ itinerary:
 
     Перелет в Рио-де-Жанейро или Сан-Пауло, где вас ждет стыковка на международный рейс домой.
   images:
-  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
-    alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
+  - src: /media/destinations/destination_brazil_rio/rio-free-street-generated-20261008.webp
+    alt: Улица Рио-де-Жанейро с кафе и деревьями
 included:
 - Проживание в отелях по программе на базе завтраков
 - Экскурсии по программе с англоговорящими группами

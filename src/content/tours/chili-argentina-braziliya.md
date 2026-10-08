@@ -89,8 +89,8 @@ itinerary:
 
     С этого дня начинается патагонская часть маршрута. Город служит удобной отправной точкой для поездок к Торрес-дель-Пайне и другим природным районам юга Чили.
   images:
-  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-13-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+  - src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
+    alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
 - day: 4
   title: Пуэрто-Наталес и Торрес-дель-Пайне
   places:
@@ -109,6 +109,9 @@ itinerary:
     Затем маршрут продолжается по самому национальному парку, площадь которого превышает **242 000 гектаров**. Пейзаж меняется: появляются озера, большие горы, водопады и ледяные вершины. К Сальто-Гранде, водопаду между озерами Норденскхолд и Пэоэ, ведет примерно 15-минутная прогулка.
 
     Возвращение пройдет по дороге мимо реки Серрано и озер Торо и Портеньо. Ночь в отеле.
+  images:
+  - src: /media/destinations/puerto-natales-torres-del-pajne/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: город порт Пуэрто Наталес в Чили'
 - day: 5
   title: Пуэрто-Наталес - Эль-Калафате
   places:
@@ -154,8 +157,6 @@ itinerary:
   images:
   - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: Буэнос-Айрес
-  - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
-    alt: Эль-Калафате
 - day: 8
   title: Буэнос-Айрес и танго
   places:
@@ -219,8 +220,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
-    alt: Буэнос-Айрес
 - day: 11
   title: Бразильская сторона Игуасу - Рио-де-Жанейро
   places:
@@ -243,8 +242,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: "/media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp"
-    alt: Рио-де-Жанейро
 - excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_iguazu_helicopter_falls
@@ -302,8 +299,8 @@ itinerary:
 
     Продолжительность - около **8-9 минут**.
   images:
-  - src: /media/tours/rio-de-janeiro-wedding/hero-enhanced-20260930.webp
-    alt: Рио-де-Жанейро
+  - src: /media/catalog/tury/hero-enhanced-20260930.webp
+    alt: Панорама Рио-де-Жанейро
 - excursionRef: excursion_source_botanical_garden
   places: []
 - excursionRef: excursion_source_royal_petropolis_private_tour_full_day
@@ -316,8 +313,8 @@ itinerary:
   - Рио-де-Жанейро
   text: Завтрак в отеле. Трансфер с водителем в аэропорт Рио-де-Жанейро к международному рейсу.
   images:
-  - src: "/media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp"
-    alt: Рио-де-Жанейро
+  - src: /media/destinations/destination_brazil_rio/rio-free-street-generated-20261008.webp
+    alt: Улица Рио-де-Жанейро с кафе и деревьями
 included:
 - Проживание в отелях 4*, стандартная категория, с завтраком.
 - Все трансферы по программе с водителем.

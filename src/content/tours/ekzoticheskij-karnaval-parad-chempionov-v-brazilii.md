@@ -86,8 +86,6 @@ itinerary:
   - Пуэрто Игуасу
   text: Завтрак в отеле. Трансфер в аэропорт и перелет в Фоз-де-Игуасу. По прибытии встреча и трансфер в выбранный отель.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
-    alt: 'на фото: Водопады Игуасу'
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: 'на фото: Вид на Рио'
 - day: 5
@@ -149,10 +147,8 @@ itinerary:
 
     По воде вы отправитесь в Eco Lodge Evolution, расположенный в джунглях. Это начало амазонской части маршрута, рассчитанной на близкое знакомство с лесом и жизнью у реки. После Рио и Игуасу здесь полностью меняется темп: вместо городских трансферов и смотровых площадок основным транспортом становятся лодки и каноэ, а экскурсии проходят среди леса и небольших поселений.
   images:
-  - src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-7-enhanced-20261006.webp"
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-7-enhanced-20261006.webp
     alt: 'на фото: Амазонка'
-  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
-    alt: 'на фото: Водопады Игуасу'
 - day: 8
   title: Eco Lodge Evolution
   places:
@@ -189,8 +185,6 @@ itinerary:
   images:
   - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
-  - src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-7-enhanced-20261006.webp"
-    alt: 'на фото: Амазонка'
 - excursionRef: excursion_source_vstrecha_rek
   places: []
 - excursionRef: excursion_source_plavanie_s_rozovymi_del_finami
@@ -204,8 +198,8 @@ itinerary:
     чтобы провести день у моря в собственном темпе. Полуостров известен множеством пляжей и небольших бухт, поэтому даже без
     организованной экскурсии можно менять места отдыха в течение дня.
   images:
-  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
-    alt: 'на фото: Бузиос'
+  - src: /media/destinations/buzios/gallery-1-enhanced-20261001.webp
+    alt: Бухта и пляж в Бузиосе
 - day: 11
   title: Бузиос - Рио-де-Жанейро
   places:
@@ -215,10 +209,8 @@ itinerary:
     возвращает вас из курортного Бузиоса в Рио, где начиналось путешествие 10 дней назад. На этом заканчивается маршрут, объединивший
     Карнавал, 2 стороны Игуасу, Амазонию и отдых на Атлантическом побережье.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
-    alt: 'на фото: Закат над Рио'
-  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
-    alt: 'на фото: Бузиос'
+  - src: /media/catalog/tury/hero-enhanced-20260930.webp
+    alt: Панорама Рио-де-Жанейро
 included:
 - Проживание в выбранных отелях на базе завтраков.
 - Экскурсии по программе с русскоговорящим гидом; в Манаусе работает англоговорящий гид.

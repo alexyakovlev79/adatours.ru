@@ -149,9 +149,7 @@ itinerary:
 
     В Лиме вас встретит русскоговорящий гид и отвезет в отель.
   images:
-  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
-    alt: 'На фото: город Лима, Перу'
-  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp"
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp
     alt: 'На фото: Озеро Титикака и плавучие острова Урос  в Перу'
 - day: 7
   title: Лима - Фоз-де-Игуасу
@@ -169,8 +167,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: 'НА фото: водопады Фоз Игуасу в Аргентине и Бразилии'
-  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/hero-enhanced-20261001.webp
-    alt: На фото6 дворец в Лиме, Перу
 - day: 8
   title: Бразильская сторона Игуасу
   places:
@@ -218,9 +214,7 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
-    alt: 'НА фото: водопады Фоз Игуасу в Аргентине и Бразилии'
-  - src: "/media/excursions/rio-nochyu-lapa/gallery-1-enhanced-20261007.webp"
+  - src: /media/excursions/rio-nochyu-lapa/gallery-1-enhanced-20261007.webp
     alt: 'На фото: Лапа, Рио, Бразилия'
 - day: 10
   title: 'Рио-де-Жанейро: Корковадо'
@@ -257,8 +251,6 @@ itinerary:
   images:
   - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии и пляжный отдых'
-  - src: "/media/excursions/rio-nochyu-lapa/gallery-1-enhanced-20261007.webp"
-    alt: 'На фото: Лапа, Рио, Бразилия'
 - day: 12
   title: Бузиос
   places:
@@ -281,8 +273,8 @@ itinerary:
 
     Трансфер в аэропорт без гида и международный перелет.
   images:
-  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
-    alt: 'На фото: курорт Бузиос в Бразилии и пляжный отдых'
+  - src: /media/destinations/buzios/gallery-1-enhanced-20261001.webp
+    alt: Бухта и пляж в Бузиосе
 included:
 - Проживание в стандартных номерах в отелях по программе.
 - Экскурсии с русскоговорящим гидом в Лиме, Куско, Рио-де-Жанейро и Игуасу.
@@ -338,4 +330,3 @@ themes: ["theme_wildlife"]
 Путешествие начинается у Тихого океана и постепенно поднимается в Анды. В Лиме вы увидите колониальный центр, монастыри и музейные коллекции. В Куско знакомство с историей инков продолжается среди храмов, крепостных стен и горных дорог. Затем туристический поезд ведет к Мачу-Пикчу, а дорога в Пуно проходит через высокогорные поселения и археологические комплексы.
 
 После озера Титикака маршрут резко меняется. Вместо холодного высокогорья появляются влажный тропический воздух Игуасу и рев воды в каньоне. Затем Рио показывает другую Бразилию: канатная дорога на Сахарную Голову, поезд на Корковадо, пляжи и широкие виды на залив Гуанабара. Финальные дни в Бузиосе оставлены для моря и свободного отдыха.
-

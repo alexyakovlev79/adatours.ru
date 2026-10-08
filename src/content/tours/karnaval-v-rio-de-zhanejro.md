@@ -61,8 +61,8 @@ itinerary:
 
     После экскурсионного дня можно продолжить вечер в городе. Один из вариантов - ресторан Fogo de Chao с видом на Сахарную Голову, где подают бразильское мясо. Стоимость - USD 75.
   images:
-  - src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/hero-enhanced-20261007.webp"
-    alt: Парад школ самбы на Самбадроме, Рио
+  - src: /media/catalog/tury/hero-enhanced-20260930.webp
+    alt: Панорама Рио-де-Жанейро
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
 - day: 3
@@ -116,8 +116,8 @@ itinerary:
 
     После Карнавала особенно хорошо запоминается контраст между шумной ночной ареной и спокойными утрами у океана. Именно этот переход от большого городского праздника к пляжам, лесу и горам делает программу насыщенной даже при небольшой продолжительности.
   images:
-  - src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/hero-enhanced-20261007.webp"
-    alt: Парад школ самбы на Самбадроме, Рио
+  - src: /media/destinations/destination_brazil_rio/rio-free-street-generated-20261008.webp
+    alt: Улица Рио-де-Жанейро с кафе и деревьями
 included:
 - Проживание в выбранных отелях на базе завтраков.
 - Экскурсии с русскоговорящим гидом.

@@ -73,8 +73,6 @@ itinerary:
 
     Еще один яркий опыт - купание с розовыми речными дельфинами. Можно зайти в воду по пояс и кормить дельфинов рыбой с рук. После этого маршрут продолжается по Амазонии: вы снова увидите гигантские листья виктории-регии, побываете в местном сообществе и познакомитесь с тем, как здесь живут люди у большой реки. В местном сообществе можно увидеть животных, среди которых анаконда или ленивец, а затем попробовать ловить пираний прямо с лодки. После насыщенного дня вас доставят в амазонский лодж. Экскурсия проводится на лодках примерно по 10 человек.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
-    alt: 'На фото: Закатный вид на Рио'
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: 'На фото: Река Амазонка'
 - day: 5
@@ -102,8 +100,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: 'На фото: Встреча туристов в Сальвадоре'
-  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    alt: 'На фото: Река Амазонка'
 - day: 7
   title: 'Сальвадор: Пелуриньо и Кандомбле'
   places:
@@ -115,8 +111,8 @@ itinerary:
 
     Вечером запланировано посещение дома Кандомбле. Вы услышите барабанный бой, увидите танцы и традиционную церемонию в честь Ориша, африканских божеств. Это религиозное событие, поэтому проведение зависит от календаря общины.
   images:
-  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
-    alt: 'На фото: Встреча туристов в Сальвадоре'
+  - src: /media/destinations/salvador/gallery-1-enhanced-20261001.webp
+    alt: Церковь в Сальвадоре, Баия
 - day: 8
   title: Сальвадор - Прайя-ду-Форте
   places:
@@ -126,8 +122,8 @@ itinerary:
     Сальвадора программа специально оставляет время без экскурсий. Можно провести его у океана и отдохнуть перед перелетом
     к водопадам Игуасу.
   images:
-  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
-    alt: 'На фото: Встреча туристов в Сальвадоре'
+  - src: /media/destinations/salvador/gallery-2-enhanced-20261001.webp
+    alt: Городская сцена Сальвадора
 - day: 9
   title: Сальвадор - Фос-ду-Игуасу
   places:
@@ -143,8 +139,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'
-  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
-    alt: 'На фото: Встреча туристов в Сальвадоре'
 - excursionRef: excursion_source_rafain_shou
   places: []
 - day: 10
@@ -156,8 +150,8 @@ itinerary:
 
     Особенно сильное впечатление дает контраст: выше водопадов река кажется спокойной, почти ленивой, а у края вода мгновенно превращается в белый кипящий поток. Вокруг водопадов лежит национальный парк с тропической флорой и фауной. Рельеф региона сформирован древними вулканическими процессами и смещениями земной коры.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
-    alt: 'На фото: Водопады Фос-ду-Игуасу'
+  - src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
+    alt: Водопады Игуасу
 - excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
@@ -173,8 +167,8 @@ itinerary:
 
     Площадь Национального парка составляет около 55 500 гектаров. Помимо самих водопадов, здесь сохраняется характерная для региона флора и фауна, поэтому весь день проходит внутри большого природного пространства, а не только возле одной смотровой площадки.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
-    alt: 'На фото: Водопады Фос-ду-Игуасу'
+  - src: /media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp
+    alt: Водопады Игуасу со стороны Бразилии
 - day: 12
   title: Фос-ду-Игуасу - Рио-де-Жанейро
   places:
@@ -183,18 +177,16 @@ itinerary:
   - Пуэрто Игуасу
   text: После завтрака трансфер в аэропорт и перелет в Рио-де-Жанейро. По прибытии вас встретит водитель и доставит в отель.
   images:
-  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-4-images-1-enhanced-20261006.webp
-    alt: 'На фото: Вид с высоты птичьего полёта над Рио-де-Жанейро'
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
-    alt: 'На фото: Водопады Фос-ду-Игуасу'
+  - src: /media/catalog/tury/hero-enhanced-20260930.webp
+    alt: Панорама Рио-де-Жанейро
 - day: 13
   title: Рио-де-Жанейро
   places:
   - Рио-де-Жанейро
   text: После завтрака трансфер в аэропорт к международному рейсу домой.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
-    alt: 'На фото: Закатный вид на Рио'
+  - src: /media/destinations/destination_brazil_rio/rio-free-street-generated-20261008.webp
+    alt: Улица Рио-де-Жанейро с кафе и деревьями
 included:
 - проживание в отелях 4* с завтраком;
 - экскурсии с гидом;

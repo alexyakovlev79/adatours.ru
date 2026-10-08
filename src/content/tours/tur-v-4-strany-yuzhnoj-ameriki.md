@@ -73,10 +73,8 @@ itinerary:
 
     По прибытии вас отвезут на автобусную станцию. Далее вы отправитесь на автобусе в Пуэрто-Наталес. После приезда предусмотрен трансфер в отель.
   images:
-  - src: "/media/tours/tur-v-4-strany-yuzhnoj-ameriki/itinerary-day-3-enhanced-20261007.webp"
+  - src: /media/tours/tur-v-4-strany-yuzhnoj-ameriki/itinerary-day-3-enhanced-20261007.webp
     alt: 'На фото: порт Пуэрто Наталес в Патагонии. Чили'
-  - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
-    alt: 'На фото: столица Чили, Сантьяго -де-Чили'
 - day: 4
   title: Пуэрто-Наталес и Торрес-дель-Пайне
   places:
@@ -113,8 +111,6 @@ itinerary:
   images:
   - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: ледники Эль Калафате, Патагония, Аргентина'
-  - src: "/media/tours/tur-v-4-strany-yuzhnoj-ameriki/itinerary-day-3-enhanced-20261007.webp"
-    alt: 'На фото: порт Пуэрто Наталес в Патагонии. Чили'
 - day: 6
   title: Эль-Калафате и ледник Перито-Морено
   places:
@@ -149,8 +145,6 @@ itinerary:
   images:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, Буэнос -Айрес'
-  - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
-    alt: 'На фото: ледники Эль Калафате, Патагония, Аргентина'
 - day: 8
   title: Буэнос-Айрес и танго-шоу
   places:
@@ -205,10 +199,8 @@ itinerary:
 
     В назначенное время вы вернетесь на пароме в Буэнос-Айрес.
   images:
-  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
+  - src: /media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp
     alt: 'На фото: город Монтевидео, Уругвай'
-  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
-    alt: 'На фото: столица Аргентины, Буэнос -Айрес'
 - day: 11
   title: Буэнос-Айрес - Фоз-ду-Игуасу, аргентинская сторона водопадов
   places:
@@ -235,8 +227,6 @@ itinerary:
   images:
   - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: 'На фото: тропические Водопады Игуасу  в Аргентине и Бразилии'
-  - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
-    alt: 'На фото: столица Аргентины, Буэнос -Айрес'
 - day: 12
   title: Фоз-ду-Игуасу, бразильская сторона
   places:
@@ -297,8 +287,6 @@ itinerary:
 
     После экскурсии по Рио предусмотрен трансфер в Бузиос. Курорт расположен примерно в 2 часах езды от города. Дорога проходит через тропические пейзажи. По прибытии - трансфер в отель на побережье.
   images:
-  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
-    alt: Бузиос
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: 'На фото: город Рио- де-Жанейро в Бразилии'
 - day: 15
@@ -337,10 +325,8 @@ itinerary:
   - Бузиос
   text: Завтрак в гостинице. В назначенное время выезд из Бузиоса в Рио-де-Жанейро и трансфер в аэропорт для вылета домой.
   images:
-  - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
-    alt: 'На фото: курорт Бузиос и пляжный отдых в Бразилии'
-  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
-    alt: 'На фото: фуникулер в Рио-де-Жанейро Бразилия'
+  - src: /media/catalog/tury/hero-enhanced-20260930.webp
+    alt: Панорама Рио-де-Жанейро
 included:
 - Проживание в отелях 4* с завтраком.
 - 'Частные экскурсии с русскоговорящим гидом: обзорные программы в Сантьяго, Буэнос-Айресе и Рио-де-Жанейро, а также экскурсии

@@ -144,8 +144,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp"
-    alt: Каракас
+  - src: /media/destinations/caracas/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: столица Венесуэлы, город Каракас'
 - day: 8
   title: Понедельник - Каракас - Ла-Пас
   places:
@@ -164,8 +164,6 @@ itinerary:
   images:
   - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
     alt: Ла Пас
-  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Каракас
 - day: 9
   title: Вторник - солончак Уюни и остров Инка-Хуаси
   places:
@@ -195,6 +193,7 @@ itinerary:
     Размещение в отеле на высоте около 4400 метров, ужин и отдых.
 
     **Питание:** завтрак, обед, ужин.
+  images: []
 - day: 11
   title: Четверг - Каменное дерево, Термас-де-Полкес, гейзеры и Зеленая лагуна
   places: []
@@ -210,6 +209,7 @@ itinerary:
     Возвращение в Кольчани и отдых в отеле.
 
     **Питание:** завтрак, обед.
+  images: []
 - day: 12
   title: Пятница - Ла-Пас и Каракас
   places:
@@ -220,10 +220,8 @@ itinerary:
 
     По прибытии в Каракас встреча в аэропорту и трансфер в отель для отдыха. Затем повторный трансфер в аэропорт и регистрация на рейс в Москву.
   images:
-  - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
-    alt: Ла Пас
-  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp"
-    alt: Каракас
+  - src: /media/destinations/caracas/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: столица Венесуэлы, город Каракас'
 included:
 - проживание в отелях 4*, кампаменто и посадах;
 - транспорт и трансферы;

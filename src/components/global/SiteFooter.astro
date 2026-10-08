@@ -10,7 +10,7 @@ import { ORG } from '../../data/organization/ada-tours';
       <p class="eyebrow">Ada Tours</p>
       <h2>Бразилия и Латинская Америка</h2>
     </div>
-    <a class="footer__request" href="#request">Обсудить поездку <span aria-hidden="true">↗</span></a>
+    <a class="footer__request" href="#request" aria-label="Обсудить поездку — перейти к форме заявки">Обсудить поездку <span aria-hidden="true">↑</span></a>
   </div>
 
   <div class="footer__grid">
@@ -51,16 +51,34 @@ import { ORG } from '../../data/organization/ada-tours';
     margin: 12px 0 0;
   }
 
+  /* Primary conversion action on the dark footer, styled as a real CTA. */
   .footer__request {
-    display: flex;
-    gap: 30px;
+    display: inline-flex;
     align-items: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid currentColor;
+    justify-content: space-between;
+    gap: 28px;
+    min-width: 275px;
+    min-height: 58px;
+    padding: 18px 24px;
+    border: 1px solid var(--color-gold);
+    color: var(--color-ink-deep);
+    background: var(--color-gold);
     font-family: var(--font-display);
-    text-transform: uppercase;
+    font-size: 0.86rem;
+    font-weight: 600;
     letter-spacing: 0.08em;
-    font-size: 0.78rem;
+    text-transform: uppercase;
+    transition: background 200ms var(--ease-out), border-color 200ms var(--ease-out);
+  }
+
+  .footer__request:hover {
+    border-color: var(--color-gold-hover);
+    background: var(--color-gold-hover);
+  }
+
+  .footer__request:focus-visible {
+    outline: 2px solid var(--color-bg);
+    outline-offset: 4px;
   }
 
   .footer__grid {
@@ -97,6 +115,15 @@ import { ORG } from '../../data/organization/ada-tours';
     .footer__top,
     .footer__grid {
       grid-template-columns: 1fr;
+    }
+
+    .footer__top {
+      gap: 32px;
+    }
+
+    .footer__request {
+      width: 100%;
+      min-width: 0;
     }
 
     .footer__meta {

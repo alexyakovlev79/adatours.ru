@@ -48,7 +48,7 @@ priceFrom: 2675
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/florian-delee-sgq-0qddxs4-unsplash.jpg
+  src: /media/destinations/el-calafate/hero-enhanced-20260930.webp
   alt: "Ледник Перито-Морено в Патагонии"
 gallery: []
 featured: false
@@ -63,7 +63,7 @@ itinerary:
     text: |-
       Прибытие в аэропорт EZE. Встреча и трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/buenos%20aires.png
+      - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-1-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-1"
 
@@ -76,7 +76,7 @@ itinerary:
 
       Прогулка по городу знакомит с историей иммиграции, аристократическими кварталами конца XIX века и культурой танго. Старые улицы хранят память о людях, которые приезжали сюда из разных стран, о богатстве Аргентины начала XX века и о музыке, выросшей в портовых районах.
     images:
-      - src: https://brasiltours.ru/image/Arg%20Buenos.png
+      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
         alt: "Обзорная экскурсия по Буэнос-Айресу"
         intendedSlot: "itinerary:day-2"
 
@@ -91,7 +91,7 @@ itinerary:
     text: |-
       Завтрак в отеле. День свободный: его можно посвятить самостоятельным прогулкам или дополнительным экскурсиям.
     images:
-      - src: https://brasiltours.ru/image/buen%20air.png
+      - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-3"
 
@@ -117,7 +117,7 @@ itinerary:
     text: |-
       Трансфер в аэропорт и перелет в Эль-Калафате. По прибытии встреча и трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/Argentina%20Calafate%20Adatours.png
+      - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-5-enhanced-20261006.webp
         alt: "Эль-Калафате"
         intendedSlot: "itinerary:day-4"
 
@@ -135,7 +135,7 @@ itinerary:
 
       Рекомендуется взять ланч-бокс. Пообедать также можно в ресторане парка.
     images:
-      - src: https://brasiltours.ru/image/el%20cala1.png
+      - src: /media/excursions/ledovyj-trekking-perito-moreno/hero-enhanced-20261006.webp
         alt: "Ледник Перито-Морено"
         intendedSlot: "itinerary:day-5"
 
@@ -152,7 +152,7 @@ itinerary:
     text: |-
       Трансфер в аэропорт. Перелет в Игуасу с пересадкой в Буэнос-Айресе. По прибытии трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
+      - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
         alt: "Патагония"
         intendedSlot: "itinerary:day-6"
 
@@ -166,7 +166,7 @@ itinerary:
 
       Главная точка маршрута, Гарганта-дель-Дьябло, или «Глотка дьявола», высотой 72 м. Водопады находятся внутри национального парка с богатой флорой и фауной, поэтому дорога между каскадами проходит среди густой растительности. По территории парка вы будете перемещаться на экологическом поезде, затем пройдете по смотровым площадкам Верхнего и Нижнего маршрутов. С разных участков вода видна сверху, сбоку и почти с уровня нижних каскадов.
     images:
-      - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+      - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
         alt: "Аргентинская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-7"
 
@@ -186,7 +186,7 @@ itinerary:
     text: |-
       Экскурсия на полдня. С бразильской стороны открывается широкая панорама системы водопадов. Маршрут проходит по мосткам, откуда видны каскады Флориано, Дэодоро, Бенжамин Констант и Гарганта-дель-Дьябло.
     images:
-      - src: https://brasiltours.ru/image/iguacu%20new.png
+      - src: /media/tours/south-brazil-12d/itinerary/day-05-enhanced-20260930.webp
         alt: "Бразильская сторона водопадов Игуасу"
         intendedSlot: "itinerary:day-8"
 
@@ -206,7 +206,7 @@ itinerary:
     text: |-
       Завтрак в отеле. В назначенное время трансфер в аэропорт IGR и перелет в Буэнос-Айрес. По прибытии трансфер в отель.
     images:
-      - src: https://brasiltours.ru/image/iguazu%20argentina%20side.png
+      - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-12-enhanced-20261006.webp
         alt: "Игуасу"
         intendedSlot: "itinerary:day-9"
 
@@ -217,7 +217,7 @@ itinerary:
     text: |-
       Завтрак в отеле. В назначенное время трансфер в аэропорт Буэнос-Айреса.
     images:
-      - src: https://brasiltours.ru/image/buenos-aires.png
+      - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
         alt: "Буэнос-Айрес"
         intendedSlot: "itinerary:day-10"
 

@@ -43,7 +43,7 @@ itinerary:
 
     К вечеру Рио зажигает огни. На знаменитых пляжах работают небольшие кафе, где можно попробовать напитки из свежих фруктов, выйти к океану и почувствовать предновогоднее настроение города.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-11-16-2-53-57.jpg
+  - src: /media/excursions/urok-serfinga-rio-de-zhanejro/gallery-3-src-enhanced-20261007.webp
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро в Бразилии'
 - day: 2
   title: 30.12. Рио-де-Жанейро
@@ -54,7 +54,7 @@ itinerary:
 
     38-метровая статуя Христа стоит здесь с 1931 года. Со смотровой площадки открывается панорама города, гор и океана. Это один из тех дней, когда Рио впервые предстает целиком, с высоты Корковадо.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-11-16-2-53-57.jpg
+  - src: /media/excursions/urok-serfinga-rio-de-zhanejro/gallery-3-src-enhanced-20261007.webp
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро в Бразилии'
 - day: 3
   title: 31.12. Новый год на Копакабане
@@ -82,7 +82,7 @@ itinerary:
 
     Из-за высокой загрузки города в новогодние праздники маршрут сити-тура может быть скорректирован.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-11-16-2-53-57.jpg
+  - src: /media/excursions/urok-serfinga-rio-de-zhanejro/gallery-3-src-enhanced-20261007.webp
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро в Бразилии'
 - day: 5
   title: 02.01. Рио-де-Жанейро - Пантанал
@@ -98,9 +98,9 @@ itinerary:
 
     Размещение в **Pousada Aguape**, полный пансион.
   images:
-  - src: https://brasiltours.ru/image/Pantanal.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: заповедник Пантанал в Бразилии'
-  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-11-16-2-53-57.jpg
+  - src: /media/excursions/urok-serfinga-rio-de-zhanejro/gallery-3-src-enhanced-20261007.webp
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро в Бразилии'
 - day: 6
   title: 03.01. Пантанал
@@ -111,7 +111,7 @@ itinerary:
 
     Все экскурсии и питание в этот день включены.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
+  - src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: заповедник Пантанал в Бразилии'
 - day: 7
   title: 04.01. Пантанал - Бонито
@@ -128,9 +128,9 @@ itinerary:
 
     После отдыха состоится трансфер в отель в Бонито. Этот район известен подземными пещерами, вековыми лесами и прозрачными озерами.
   images:
-  - src: https://brasiltours.ru/image/BRA%20BONITO%202.png
+  - src: /media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: романтический круиз в Бонито, Бразилия'
-  - src: https://brasiltours.ru/image/Pantanal.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: заповедник Пантанал в Бразилии'
 - day: 8
   title: 05.01. Бонито
@@ -151,7 +151,7 @@ itinerary:
 
     **Стоимость:** 350 USD на 1 человека.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Bonito%201%20(1).png
+  - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-8-enhanced-20261006.webp
     alt: 'На фото: голубая пещера в Бонито, Бразилия'
 - excursionRef: excursion_brazil_bonito_abismo_anhumas
   places: []
@@ -168,9 +168,9 @@ itinerary:
 
     После прибытия в Бузиос предусмотрен трансфер в отель на побережье. Остаток дня можно посвятить отдыху.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии'
-  - src: https://brasiltours.ru/image/countries/brazil/bonito-blue-cave.jpg
+  - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
     alt: 'На фото: голубая пещера в Бонито, Бразилия'
 - day: 10
   title: 07.01-08.01. Бузиос
@@ -196,7 +196,7 @@ itinerary:
 
     Курорты северо-востока находятся примерно в 2-3 часах перелета от Рио-де-Жанейро и подходят тем, кто хочет провести несколько дней на тропических пляжах.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии'
 - day: 11
   title: 07.01-08.01. Бузиос
@@ -221,7 +221,7 @@ itinerary:
 
     Курорты северо-востока находятся примерно в 2-3 часах перелета от Рио-де-Жанейро и подходят тем, кто хочет провести несколько дней на тропических пляжах.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии'
 - day: 12
   title: 09.01. Бузиос - Рио-де-Жанейро
@@ -230,9 +230,9 @@ itinerary:
   - Бузиос
   text: Завтрак в отеле. В назначенное время состоится трансфер в аэропорт Рио-де-Жанейро для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'На фото: курорт Бузиос в Бразилии'
-  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-11-16-2-53-57.jpg
+  - src: /media/excursions/urok-serfinga-rio-de-zhanejro/gallery-3-src-enhanced-20261007.webp
     alt: 'На фото: лучшие пляжи Рио-де-Жанейро в Бразилии'
 included:
 - проживание в отелях;
@@ -259,7 +259,7 @@ priceFrom: 4595
 currency: USD
 priceNote: $4595
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/david-waite-hy1zhwmhl8m-unsplash.jpg
+  src: /media/destinations/pantanal/hero-enhanced-20261001.webp
   alt: 'На фото: ягуар в заповеднике Пантанал, Бразилия'
 routeCountries:
 - country_brazil

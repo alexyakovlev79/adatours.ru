@@ -50,7 +50,7 @@ itinerary:
 
     После окончания парада трансфер обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0016.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'на фото: Канатная дорога на Сахарную Голову'
 - day: 3
   title: Корковадо и Христос-Спаситель
@@ -92,7 +92,7 @@ itinerary:
 
     Трансфер в аэропорт и перелет в Фоз-де-Игуасу. По прибытии встреча и трансфер в выбранный отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
 - day: 5
   title: Бразильская сторона водопадов Игуасу
@@ -125,7 +125,7 @@ itinerary:
 
     Стоимость - $170 на человека.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -148,7 +148,7 @@ itinerary:
 
     Площадь парка составляет 55 500 гектаров. Здесь сохраняется характерная для региона флора и фауна.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
 - day: 7
   title: Фоз-де-Игуасу
@@ -160,7 +160,7 @@ itinerary:
 
     Трансфер в аэропорт. После тура можно продолжить отдых на тропическом побережье.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: 'на фото: Водопады Игуасу'
 included:
 - Проживание в выбранных отелях на базе завтраков.

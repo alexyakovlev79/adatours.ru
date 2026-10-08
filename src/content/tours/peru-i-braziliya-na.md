@@ -47,7 +47,7 @@ itinerary:
 
     Свободное время можно провести в городе или отправиться на ярмарку народных ремесел, где продаются местные сувениры.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima-plaza-de-armas.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
     alt: Лима
 - day: 2
   title: Лима
@@ -70,7 +70,7 @@ itinerary:
 
     Продолжительность экскурсии около 4 часов. После возвращения в отель вторая половина дня остается свободной.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima-plaza-de-armas.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
     alt: Лима
 - day: 3
   title: Лима - Куско
@@ -95,9 +95,9 @@ itinerary:
 
     В программу включены билеты в Археологический парк, объединяющий 4 руины, и в Кориканчу.
   images:
-  - src: https://brasiltours.ru/image/Cuzco.jpg
+  - src: /media/tours/tur-v-peru-i-braziliyu/itinerary-day-3-enhanced-20261007.webp
     alt: Куско
-  - src: https://brasiltours.ru/image/countries/peru/lima-plaza-de-armas.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
     alt: Лима
 - day: 4
   title: Мачу-Пикчу
@@ -118,7 +118,7 @@ itinerary:
 
     После обеда возвращение на железнодорожную станцию, поездка на поезде и трансфер обратно в Куско. Прибытие и размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/Machu%20Picchu.jpg
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-14-enhanced-20261006.webp
     alt: Мачу-Пикчу
 - day: 5
   title: Куско - Пуно
@@ -147,9 +147,9 @@ itinerary:
 
     Трансфер в отель с англоговорящим сопровождающим. Ночь в Пуно на высоте 3827 м.
   images:
-  - src: https://brasiltours.ru/image/Puno.jpg
+  - src: /media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp
     alt: Пуно
-  - src: https://brasiltours.ru/image/Cuzco.jpg
+  - src: /media/tours/tur-v-peru-i-braziliyu/itinerary-day-3-enhanced-20261007.webp
     alt: Куско
 - day: 6
   title: Острова Урос и озеро Титикака - Лима
@@ -170,9 +170,9 @@ itinerary:
 
     По прибытии встреча с русскоговорящим гидом и трансфер в отель в Лиме.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/jeison-higuita-1464814-unsplash.jpg
+  - src: /media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp
     alt: 'на фото: Озеро Титикака'
-  - src: https://brasiltours.ru/image/countries/peru/lima-plaza-de-armas.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
     alt: Лима
 - day: 7
   title: Лима - Фоз-де-Игуасу
@@ -192,9 +192,9 @@ itinerary:
 
     Водопады находятся на территории национального парка с богатой флорой и фауной. Их происхождение связывают с вулканическими процессами и смещением земных пластов.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/countries/peru/lima-plaza-de-armas.png
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
     alt: Лима
 - day: 8
   title: Бразильская сторона водопадов Игуасу
@@ -219,7 +219,7 @@ itinerary:
 
     Стоимость - $170 на человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-foz-right.jpg
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -245,9 +245,9 @@ itinerary:
 
     После экскурсии гид сопровождает вас в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 10
   title: Рио-де-Жанейро
@@ -272,7 +272,7 @@ itinerary:
 
     Вечером можно посетить ресторан морепродуктов Marius. Стоимость - $130 на человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -292,9 +292,9 @@ itinerary:
 
     После размещения остается время для отдыха.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: Бузиос
-  - src: https://brasiltours.ru/image/countries/brazil/bra-rio-left-photoshop1.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 12
   title: Бузиос
@@ -311,7 +311,7 @@ itinerary:
 
     Вечером работают рестораны, бары и дискотеки. Главная пешеходная улица особенно оживлена после захода солнца.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-buzios.jpg
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
     alt: Бузиос
 - day: 13
   title: Бузиос
@@ -322,7 +322,7 @@ itinerary:
 
     В назначенное время трансфер в аэропорт без гида для международного перелета домой.
   images:
-  - src: https://brasiltours.ru/image/Bra%20buzios%203.jpg
+  - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-11-enhanced-20261006.webp
     alt: Бузиос
 included:
 - Проживание в стандартных номерах в отелях.
@@ -348,7 +348,7 @@ priceFrom: 5529
 currency: USD
 priceNote: $5529
 hero:
-  src: https://brasiltours.ru/image/countries/peru/jeison-higuita-1464814-unsplash.jpg
+  src: /media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp
   alt: 'на фото: Озеро Титикака'
 routeCountries:
 - country_peru

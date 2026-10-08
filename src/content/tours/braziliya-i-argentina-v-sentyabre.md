@@ -46,7 +46,7 @@ itinerary:
 
     Обед в местном ресторане. После обеда поездка продолжится по центральным районам старого Рио. Вы увидите старинные церкви, монастыри и здания колониального периода. Если позволит время, программа включает Кафедральный собор Сан-Себастьян и лестницу Селарона.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0016.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'На фото: Фуникулёр поднимается на гору Сахарная голова'
 - day: 3
   title: 'Рио-де-Жанейро: Корковадо и статуя Христа'
@@ -59,7 +59,7 @@ itinerary:
 
     После экскурсии - обед в местном ресторане.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: 'На фото: статуя Христа Искупителя в Рио-де-Жанейро'
 - day: 4
   title: Рио-де-Жанейро - Игуасу
@@ -89,7 +89,7 @@ itinerary:
 
     Тропа ведет к самой мощной части водопадов, «Глотке дьявола». Чем ближе смотровые площадки, тем сильнее шум и облако брызг. Обед включен в ресторане на территории парка.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0025.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-12-enhanced-20261001.webp
     alt: 'На фото: Игуасу, Аргентина'
 - day: 6
   title: Аргентинская сторона Игуасу - Буэнос-Айрес
@@ -105,7 +105,7 @@ itinerary:
 
     Обед в ресторане внутри парка. После экскурсии трансфер в аэропорт, перелет в Буэнос-Айрес. По прилете водитель встретит вас с табличкой с фамилиями и отвезет в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос Айрес, Аргентина'
   - src: https://brasiltours.ru/image/countries/argentina/guilherme-madaleno-1139415-unsplash.jpg
     alt: 'На фото: Фоз де Игуасу, Бразилия'
@@ -122,7 +122,7 @@ itinerary:
 
     Буэнос-Айрес известен большим количеством музеев, галерей, театров и памятников архитектуры. Во время обзорной поездки старые кварталы сменяются современными районами, а широкие центральные проспекты соседствуют с более камерными улицами Сан-Тельмо и Ла-Боки. Реколета показывает другую сторону города: здесь сосредоточены историческое кладбище, церковь Эль-Пилар и культурные пространства. В Пуэрто-Мадеро уже совсем иная застройка и ощущение современного делового города.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/new-photos/argentinian-tango.png
+  - src: /media/tours/vlyubites-v-argentinu/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Танцоры танго в Аргентине'
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -132,7 +132,7 @@ itinerary:
   - Буэнос-Айрес
   text: Завтрак в отеле. Свободный день для самостоятельных прогулок по городу или дополнительных экскурсий.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос Айрес, Аргентина'
 - day: 9
   title: Буэнос-Айрес
@@ -140,7 +140,7 @@ itinerary:
   - Буэнос-Айрес
   text: Завтрак. Трансфер в аэропорт.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос Айрес, Аргентина'
 included:
 - Проживание в отелях 5* по программе.

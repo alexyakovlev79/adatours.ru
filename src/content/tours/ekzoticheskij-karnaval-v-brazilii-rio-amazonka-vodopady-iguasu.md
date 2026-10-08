@@ -90,7 +90,7 @@ itinerary:
   - Пуэрто Игуасу
   text: Завтрак в отеле; Трансфер в аэропорт для вылета в Фос-ду-Игуасу, где вас встретят и отвезут в ваш отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу, Бразилия'
   - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0003.jpg
     alt: 'На фото: Полёт на вертолёте над Рио'
@@ -114,7 +114,7 @@ itinerary:
 
     По желанию
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vodopady-iguasu-8.jpg
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Вид на водопады Фос-ду-Игуасу'
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -135,7 +135,7 @@ itinerary:
     72 метра, обрушивающимся в пропасть. Вы можете стоять часами, не переставая, наблюдая за этим зрелищем и размышляя о величии
     вселенной и вечности. Трансфер обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу, Бразилия'
 - day: 8
   title: Фос-де-Игуасу - Манаус
@@ -153,7 +153,7 @@ itinerary:
     Лодж Эволюшн на моторной лодке. Эко Лодж Эволюшн - это отель в джунглях для любителей экотуризма, предпочитающих отдыхать
     в близком контакте с природной красотой амазонских джунглей.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vodopady-iguasu-8.jpg
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Вид на водопады Фос-ду-Игуасу'
 - day: 9
   title: Амазонка
@@ -167,7 +167,7 @@ itinerary:
     на каноэ. Вы посетите игапо (затопленные джунгли) и попробуете ловлю пираньи.После ужина вы отправитесь на прогулку с
     фонариками для исследования берегов реки. Во время прогулки вы увидите кайманов тинга и лягушек.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
+  - src: /media/tours/amazoniya/hero-enhanced-20261006.webp
     alt: 'На фото: Вид сверху на Амазонку, Бразилия'
 - day: 10
   title: Амазонка - Рио-де-Жанейро
@@ -177,7 +177,7 @@ itinerary:
   text: После завтрака свободное время для купания и отдыха.Трансфер в аэропорт для вашего рейса в Рио-де-Жанейро, встреча
     в аэропорту, трансфер в отель, свободное время.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
+  - src: /media/tours/amazoniya/hero-enhanced-20261006.webp
     alt: 'На фото: Вид сверху на Амазонку, Бразилия'
   - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0003.jpg
     alt: 'На фото: Полёт на вертолёте над Рио'

@@ -34,7 +34,7 @@ itinerary:
 
     Ночь в Pousada Aguape.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
+  - src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: Секреты Пантанала
 - day: 2
   title: Верховая езда и фотосафари
@@ -51,7 +51,7 @@ itinerary:
 
     После экскурсии - возвращение в лодж и ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
+  - src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: Секреты Пантанала
 - day: 3
   title: Каякинг и рыбалка на пиранью
@@ -95,7 +95,7 @@ priceFrom: 1365
 currency: USD
 priceNote: $1365
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
+  src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
   alt: Секреты Пантанала
 routeCountries:
 - country_brazil

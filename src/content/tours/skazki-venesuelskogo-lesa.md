@@ -73,7 +73,7 @@ itinerary:
 
     **Питание:** обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/Canaima%20National%20Park%201.png
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-9-enhanced-20261007.webp
     alt: Канайма
 - day: 5
   title: ', пятница. Сальто-Анхель'
@@ -92,7 +92,7 @@ itinerary:
 
     Экскурсия рассчитана на активных туристов. В течение дня будут поездки на моторной лодке, пешие переходы и небольшой треккинг. Нужны удобные кроссовки или треккинговая обувь, сменная одежда и дождевик.
   images:
-  - src: https://brasiltours.ru/image/Canaima%20National%20Park%201.png
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-9-enhanced-20261007.webp
     alt: Канайма
 - day: 6
   title: ', суббота. Голубая лагуна и деревня Пемон'
@@ -116,7 +116,7 @@ itinerary:
 
     **Питание:** завтрак, ужин.
   images:
-  - src: https://brasiltours.ru/image/Canaima%20National%20Park%201.png
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-9-enhanced-20261007.webp
     alt: Канайма
 - day: 8
   title: ', понедельник. Лос-Рокес'
@@ -148,7 +148,7 @@ itinerary:
 
     **Питание:** завтрак, ланч-бокс.
   images:
-  - src: https://brasiltours.ru/image/Caracas.png
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp
     alt: Каракас
 - day: 11
   title: ', четверг. Санта-Тереза и Колония Товар'

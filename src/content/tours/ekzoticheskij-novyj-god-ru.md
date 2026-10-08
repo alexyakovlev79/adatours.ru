@@ -64,9 +64,9 @@ itinerary:
 
     При желании можно отдельно забронировать новогодний ужин или вечеринку в одном из отелей на набережной Копакабаны. Цены по запросу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/3.jpg
+  - src: /media/tours/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu/itinerary-day-1-enhanced-20261006.webp
     alt: Пляжный отдых на лучших пляжах Бразилии, Копакабана, Ипанема и Леблон в Рио
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/rio-25.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-3-enhanced-20261006.webp
     alt: Статуя Христа Искупителя в Рио-де-Жанейро, Бразилия
 - day: 3
   title: 1 января 2026. Сахарная Голова и старый Рио
@@ -81,7 +81,7 @@ itinerary:
 
     Из-за новогодних праздников и плотного движения порядок остановок во время сити-тура может меняться.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/rio/davi-costa-1229343-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-03-enhanced-20260930.webp
     alt: Фуникулер на Сахарную Голову в Рио, канатная дорога и панорама залива Гуанабара
 - day: 4
   title: 2 января 2026. Свободный день в Рио
@@ -109,7 +109,7 @@ itinerary:
 
     Следующие дни посвящены Игуасу. Каскады образовались на базальтовом плато, которое река постепенно прорезала по трещинам и уступам. Самая мощная часть комплекса - «Горло дьявола».
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Туристы на мостике над водой у водопадов Игуасу, близкий вид на каскады
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/6.jpg
     alt: Встреча Нового Года в Рио-де-Жанейро, Бразилия
@@ -134,7 +134,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1250999-unsplash.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Водопады Игуасу в Бразилии и Аргентине, вид сверху на каскады и джунгли
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -153,7 +153,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/guilherme-madaleno-1139415-unsplash.jpg
+  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Туристы на мостике над водой у водопадов Игуасу, близкий вид на каскады
 - day: 8
   title: 6 января 2026. Игуасу - Манаус - Амазония
@@ -174,7 +174,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/amazonka.jpg
     alt: Эко-отдых в Манаусе на Амазонке в Бразилии, джунгли, наблюдение за дикой природой
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/iguasu/jonatan-lewczuk-1250999-unsplash.jpg
+  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Водопады Игуасу в Бразилии и Аргентине, вид сверху на каскады и джунгли
 - day: 9
   title: 7 января 2026. Амазонка, пираньи и деревня Кабокло
@@ -195,7 +195,7 @@ itinerary:
 
     и плавание с розовыми дельфинами за USD 100 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/nadia-a-maia-03wzmzw5wtw-unsplash.jpg
+  - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-13-enhanced-20261006.webp
     alt: Цветущая кувшинка Виктория амазонская на реке Амазонке в Бразилии, тропики
 - excursionRef: excursion_source_vstrecha_rek
   places: []
@@ -214,7 +214,7 @@ itinerary:
 
     Бузиос находится на полуострове с множеством бухт и небольших пляжей. После Рио, Игуасу и Амазонии здесь начинается спокойная часть путешествия.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Спокойный отдых на курорте Бузиос в Бразилии, бухты и уединённые пляжи у океана
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/amazonka.jpg
     alt: Эко-отдых в Манаусе на Амазонке в Бразилии, джунгли, наблюдение за дикой природой
@@ -231,7 +231,7 @@ itinerary:
 
     Вместо Бузиоса можно выбрать другой курорт Бразилии: Ангра-дус-Рейс, Порту-де-Галиньяс, Сальвадор, Пипу, Жерикоакоару, Акираз, Порту-Сегуру или Транкозу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Спокойный отдых на курорте Бузиос в Бразилии, бухты и уединённые пляжи у океана
 - day: 12
   title: 10 января 2026. Бузиос - Рио-де-Жанейро
@@ -243,7 +243,7 @@ itinerary:
 
     Программа завершается там же, где начиналась, у океана. За 12 дней между 2 встречами с побережьем проходят Новый год в Рио, обе стороны Игуасу и несколько дней в Амазонии.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/buzios/buzios-4.jpg
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Спокойный отдых на курорте Бузиос в Бразилии, бухты и уединённые пляжи у океана
   - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/6.jpg
     alt: Встреча Нового Года в Рио-де-Жанейро, Бразилия

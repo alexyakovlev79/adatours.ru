@@ -93,7 +93,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/quito1.png
+  - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Кито
 - day: 3
   title: Кито - Килотоа - Баньос
@@ -162,7 +162,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/quito1.png
+  - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Кито
 - day: 5
   title: Кито - Галапагосские острова, Санта-Крус
@@ -196,7 +196,7 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-galapagos-middle.jpg
+  - src: /media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-1-src-enhanced-20261007.webp
     alt: Галапагосские острова
   - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy1.jpg
     alt: Кито
@@ -229,7 +229,7 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/galapagos%20seimur.png
+  - src: /media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp
     alt: Галапагосские острова
 - day: 7
   title: Северный Сеймур или Южный Пласа
@@ -275,7 +275,7 @@ itinerary:
 
     Здесь насыщенная экскурсионная часть сменяется отдыхом. Отель работает по системе **all inclusive**, поэтому после перелета и переезда обязательной программы нет.
   images:
-  - src: https://brasiltours.ru/image/galapagos.png
+  - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
     alt: Галапагосские острова
 - day: 9
   title: Punta Centinela

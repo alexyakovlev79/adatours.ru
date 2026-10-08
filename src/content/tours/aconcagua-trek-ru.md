@@ -64,7 +64,7 @@ itinerary:
       **Проживание:** двух- или трехместный номер в отеле.  
       **Транспорт:** аэропорт - отель в Мендосе.
     images:
-      - src: https://brasiltours.ru/image/mendoza.jpg
+      - src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
         alt: "Мендоса, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -80,7 +80,7 @@ itinerary:
       **Транспорт:** Мендоса - Пуэнте-де-Инка.  
       **Питание:** завтрак и ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/mendoza.jpg
+      - src: /media/destinations/mendoza/hero-enhanced-20260930.webp
         alt: "Дорога из Мендосы к Пуэнте-де-Инка"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -183,7 +183,7 @@ itinerary:
       **Проживание:** двухместная палатка.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/mendoza.jpg
+      - src: /media/destinations/mendoza/hero-enhanced-20260930.webp
         alt: "Плаза Канада"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -211,7 +211,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/pexels-joaquin-carfagna-14899674.jpg
+      - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-12-enhanced-20261006.webp
         alt: "Высотный лагерь Аконкагуа"
         intendedSlot: "itinerary:day-11"
   - day: 12
@@ -298,7 +298,7 @@ itinerary:
       **Питание:** завтрак, упакованный обед.  
       **Транспорт:** Хорконес - Пенитентес - Мендоса.
     images:
-      - src: https://brasiltours.ru/image/mendoza.jpg
+      - src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
         alt: "Возвращение в Мендосу"
         intendedSlot: "itinerary:day-17"
   - day: 18
@@ -311,7 +311,7 @@ itinerary:
       **Проживание:** не включено.  
       **Питание:** завтрак.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/mendoza.jpg
+      - src: /media/destinations/mendoza/hero-enhanced-20260930.webp
         alt: "Мендоса"
         intendedSlot: "itinerary:day-18"
 included:

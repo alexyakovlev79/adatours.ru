@@ -56,7 +56,7 @@ itinerary:
     \ включенный ужин вместе с гидом. Это время отведено для обсуждения предстоящей программы и ответов на вопросы перед началом\
     \ экскурсионной части.\n\n**Размещение:** Finlandia 3+*.  \n**Питание:** ужин."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: /media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Столица Эквадора, город Кито'
 - day: 2
   title: Четверг, 5 сентября 2024. Кито и линия экватора
@@ -87,7 +87,7 @@ itinerary:
     \ музей Интиньян и «Середина мира».\n\nПосле экскурсии возвращение в отель и свободный вечер.\n\n**Размещение:** Finlandia\
     \ 3+*.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/quito.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
     alt: 'На фото: Площадь города Кито'
 - day: 3
   title: Пятница, 6 сентября 2024. Кито - Килотоа - Баньос
@@ -109,7 +109,7 @@ itinerary:
     \ роз, смотровые площадки, галерея индейской живописи и кратерное озеро Килотоа.\n\nПосле Килотоа переезд в Баньос. Свободный\
     \ вечер.\n\n**Размещение:** La Floresta 3*.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: /media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Столица Эквадора, город Кито'
 - day: 4
   title: Суббота, 7 сентября 2024. Баньос и маршрут водопадов
@@ -193,7 +193,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/countries/equador/galapagos-islands.jpg
     alt: 'На фото: Вид на Галапагосские острова'
-  - src: https://brasiltours.ru/image/countries/equador/quito.png
+  - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
     alt: 'На фото: Площадь города Кито'
 - day: 9
   title: Четверг, 12 сентября 2024. Морская экскурсия на Бартоломе
@@ -240,7 +240,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: /media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Столица Эквадора, город Кито'
   - src: https://brasiltours.ru/image/countries/equador/galapagos-islands.jpg
     alt: 'На фото: Вид на Галапагосские острова'
@@ -276,7 +276,7 @@ priceFrom: 4044
 currency: USD
 priceNote: $4044
 hero:
-  src: https://brasiltours.ru/image/countries/equador/10-equador-galapagos1.jpg
+  src: /media/excursions/ostrov-plasa/hero-src-enhanced-20261007.webp
   alt: 'На фото: Морские котики на пляже, Эквадор'
 routeCountries:
 - country_ecuador

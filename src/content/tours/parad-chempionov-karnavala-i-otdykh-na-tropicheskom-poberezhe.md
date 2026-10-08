@@ -30,7 +30,7 @@ itinerary:
 
     Если прилет проходит засветло, уже по дороге из аэропорта можно увидеть зеленые холмы, скалистые горы, пальмы и бухты. Вечером город меняется: на склонах загораются огни фавел. Свободное время можно провести в городе или у океана.
   images:
-  - src: https://brasiltours.ru/image/brazil%20logo.png
+  - src: /media/tours/prazdnik-gordosti-v-rio-de-zhanejro/hero-enhanced-20261006.webp
     alt: 'на фото: Пляжи Рио'
 - day: 2
   title: Сахарная Голова и Парад Чемпионов
@@ -49,7 +49,7 @@ itinerary:
 
     После окончания парада трансфер обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20211017-wa0016.jpg
+  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'на фото: Канатная дорога на Сахарную Голову'
 - day: 3
   title: Корковадо и Христос-Спаситель
@@ -76,7 +76,7 @@ itinerary:
 
     Вечером можно посетить ресторан морепродуктов Marius. Стоимость - $130 на человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sokhranennoe-izobrazhenie-2014-12-11-16-2-53-57.jpg
+  - src: /media/excursions/urok-serfinga-rio-de-zhanejro/gallery-3-src-enhanced-20261007.webp
     alt: 'на фото: Пляжи Рио'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -90,9 +90,9 @@ itinerary:
 
     Размещение в отеле на тропическом побережье.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
-  - src: https://brasiltours.ru/image/countries/brazil/tild3663-3466-4362-b062-643262633065-pexels-matheus-berte.jpg
+  - src: /media/excursions/pedra-de-telegrafo/gallery-2-enhanced-20261001.webp
     alt: 'на фото: Вид на Рио'
 - day: 5
   title: Бузиос
@@ -103,7 +103,7 @@ itinerary:
 
     В Бузиосе можно провести дни на пляжах полуострова, отправиться на лодочную прогулку или прокатиться на багги. В эти дни нет обязательной экскурсионной программы, поэтому время остается для отдыха.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-buzios.jpg
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
 - day: 6
   title: Бузиос
@@ -113,7 +113,7 @@ itinerary:
 
     В Бузиосе можно провести дни на пляжах полуострова, отправиться на лодочную прогулку или прокатиться на багги. В эти дни нет обязательной экскурсионной программы, поэтому время остается для отдыха.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
 - day: 7
   title: Бузиос
@@ -123,7 +123,7 @@ itinerary:
 
     В Бузиосе можно провести дни на пляжах полуострова, отправиться на лодочную прогулку или прокатиться на багги. В эти дни нет обязательной экскурсионной программы, поэтому время остается для отдыха.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-buzios.jpg
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
 - day: 8
   title: Бузиос
@@ -133,7 +133,7 @@ itinerary:
 
     В Бузиосе можно провести дни на пляжах полуострова, отправиться на лодочную прогулку или прокатиться на багги. В эти дни нет обязательной экскурсионной программы, поэтому время остается для отдыха.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
 - day: 9
   title: Бузиос
@@ -143,7 +143,7 @@ itinerary:
 
     В Бузиосе можно провести дни на пляжах полуострова, отправиться на лодочную прогулку или прокатиться на багги. В эти дни нет обязательной экскурсионной программы, поэтому время остается для отдыха.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-buzios.jpg
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
 - day: 10
   title: Бузиос - Рио-де-Жанейро
@@ -155,9 +155,9 @@ itinerary:
 
     Трансфер в аэропорт Рио-де-Жанейро, регистрация на международный рейс. Окончание услуг.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: 'на фото: Бузиос'
-  - src: https://brasiltours.ru/image/brazil%20logo.png
+  - src: /media/tours/prazdnik-gordosti-v-rio-de-zhanejro/hero-enhanced-20261006.webp
     alt: 'на фото: Пляжи Рио'
 included:
 - Проживание в выбранных отелях на базе завтраков.

@@ -57,7 +57,7 @@ itinerary:
 
     После окончания шоу организован трансфер обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
     alt: Мечты сбываются на Парад Чемпионов Карнавала
 - day: 3
   title: Корковадо и Христос Спаситель
@@ -76,7 +76,7 @@ itinerary:
 
     Вечером при желании можно поужинать в ресторане морепродуктов Marius. Стоимость указана как **$130 с человека**.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: Статуя Христа и Корковадо
 - day: 4
   title: Рио-де-Жанейро - Фоз-де-Игуасу
@@ -89,7 +89,7 @@ itinerary:
 
     По прибытии встреча и трансфер в выбранный отель. Остаток дня можно посвятить отдыху перед экскурсиями к водопадам.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%201.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-13-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 5
   title: Бразильская сторона водопадов Игуасу
@@ -116,7 +116,7 @@ itinerary:
 
     **Стоимость:** $170 с человека.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -142,9 +142,9 @@ itinerary:
 
     После завершения экскурсии трансфер в аэропорт и перелет в Буэнос-Айрес. По прибытии вас встретит водитель. Далее трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/buen%20air.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: Буэнос-Айрес
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 7
   title: Буэнос-Айрес и танго-шоу
@@ -161,7 +161,7 @@ itinerary:
 
     Вечером включено танго-шоу с ужином, без гида.
   images:
-  - src: https://brasiltours.ru/image/buenosaires7.11png.png
+  - src: /media/excursions/nezabyvaemoe-tango-shou/gallery-1-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_buenos_aires_tango_show_dinner
   places: []
@@ -174,7 +174,7 @@ itinerary:
 
     Можно вернуться в понравившийся район, провести больше времени в центре, пройтись по набережной или выбрать отдельную поездку за пределы города.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: Буэнос-Айрес
 - day: 9
   title: Вылет
@@ -185,7 +185,7 @@ itinerary:
 
     Вылет домой. За 9 дней вы успеете увидеть праздник в Рио, водопады с двух берегов и аргентинскую столицу.
   images:
-  - src: https://brasiltours.ru/image/buen%20air.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: Буэнос-Айрес
 included:
 - Проживание в выбранных отелях на базе завтраков.
@@ -215,7 +215,7 @@ priceFrom: 3600
 currency: USD
 priceNote: $3600
 hero:
-  src: https://brasiltours.ru/image/BRA%20Rio%20de%20Janeiro%20Panoramic%202.png
+  src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
   alt: Мечты сбываются на Парад Чемпионов Карнавала
 routeCountries:
 - country_brazil

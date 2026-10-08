@@ -38,7 +38,7 @@ itinerary:
 
     После наступления темноты предусмотрена ночная прогулка. В джунглях слушают звуки леса и ищут кайманов. Вечером на яхте подают ужин. Ночевка на борту.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
+  - src: /media/tours/amazoniya/hero-enhanced-20261006.webp
     alt: Эксклюзивное Приключение в Амазонии
 - day: 2
   title: Архипелаг Анавианас и община Татуиос
@@ -89,7 +89,7 @@ priceFrom: 118750
 currency: USD
 priceNote: $118 750 за всю яхту, до 16 пассажиров
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-2.jpg
+  src: /media/tours/amazoniya/hero-enhanced-20261006.webp
   alt: Эксклюзивное Приключение в Амазонии
 routeCountries:
 - country_brazil

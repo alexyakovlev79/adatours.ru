@@ -41,7 +41,7 @@ itinerary:
 
     Размещение в Рио рассчитано на спокойный старт поездки: после перелета не нужно сразу включаться в плотную экскурсионную программу. Belmond Copacabana Palace стоит у самой Копакабаны, поэтому вечером можно остаться в отеле или выйти к океану и пройтись по набережной без дополнительного трансфера.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Сахарная Голова и старый Рио
@@ -56,7 +56,7 @@ itinerary:
 
     Для обеда можно выбрать Fogo do Chao с бразильским шураско и видом на Сахарную голову. Вечером - Al Mare на набережной Копакабаны в отеле Fasano.
   images:
-  - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
+  - src: /media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: Корковадо и статуя Христа Искупителя
@@ -69,7 +69,7 @@ itinerary:
 
     После экскурсии можно зайти на кофе и бразильские сладости в историческую Confeitaria Colombo. Это одна из самых известных исторических кондитерских города, поэтому остановка здесь продолжает тему старого Рио уже через интерьер и гастрономию. Для ужина рекомендован Marius Degustare с морепродуктами и интерьером, напоминающим затонувший корабль.
   images:
-  - src: https://brasiltours.ru/image/corcovado1.png
+  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: Статуя Христа и Корковадо
 - day: 4
   title: Свободный день в Рио и дополнительные экскурсии
@@ -102,7 +102,7 @@ itinerary:
 
       По желанию
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie
   places: []
@@ -129,9 +129,9 @@ itinerary:
 
     Для ужина рекомендован Itaipu в Belmond das Cataratas с бразильской и европейской кухней.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/rio%20at%20nigh11.png
+  - src: /media/tours/chili-argentina-braziliya/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 6
   title: Бразильская сторона Игуасу
@@ -148,7 +148,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/Foz%20do%20Iguau.png
+  - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -170,9 +170,9 @@ itinerary:
 
     Буэнос-Айрес в финале путешествия меняет и архитектуру, и темп. После тропического Рио и влажного леса Игуасу здесь появляются широкие проспекты, европейские фасады, старые кварталы, театры и рестораны. Поэтому последние 3 дня строятся вокруг города: сначала обзорная экскурсия и танго, затем свободный день с выбором между кухней, ранчо гаучо или поездкой в Уругвай.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg
+  - src: /media/tours/argentina-2024/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 8
   title: Буэнос-Айрес и танго-шоу
@@ -191,7 +191,7 @@ itinerary:
 
     Ужин включен.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -218,7 +218,7 @@ itinerary:
 
     В Буэнос-Айресе можно выбрать Fogon Asado и La Carniceria в Палермо, Cabana Las Lilas, La Cabana и Piegari в Пуэрто-Мадеро, а также Crystal Bar на 35 этаже Alvear Icon.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires-copy.jpg
+  - src: /media/tours/argentina-2024/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_buenos_aires_gastronomic_tour
   places: []
@@ -232,7 +232,7 @@ itinerary:
   - Буэнос-Айрес
   text: Завтрак в отеле. В назначенное время трансфер в аэропорт для международного перелета.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: Буэнос-Айрес
 included:
 - Проживание в отелях.

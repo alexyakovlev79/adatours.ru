@@ -64,7 +64,7 @@ itinerary:
 
     **Питание:** ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: /media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Кито
 - day: 2
   title: Воскресенье, 31 декабря 2023 года. Кито, линия экватора и встреча Нового года
@@ -125,7 +125,7 @@ itinerary:
 
       **Питание:** завтрак, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: /media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Кито
 - day: 3
   title: Понедельник, 1 января 2024 года. Кито - Килотоа - Баньос
@@ -156,7 +156,7 @@ itinerary:
 
     **Питание:** завтрак, ланч-бокс.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy.jpg
+  - src: /media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Кито
 - day: 4
   title: Вторник, 2 января 2024 года. Баньос - Риобамба
@@ -190,7 +190,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Riobamba.png
+  - src: /media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-11-images-0-src-enhanced-20261007.webp
     alt: Риобамба
 - day: 5
   title: Среда, 3 января 2024 года. Риобамба - Чимборасо - Ингапирка - Куэнка
@@ -232,9 +232,9 @@ itinerary:
 
     **Питание:** завтрак, ланч-бокс.
   images:
-  - src: https://brasiltours.ru/image/ecuador%20cuenca.png
+  - src: /media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-12-images-0-src-enhanced-20261007.webp
     alt: Куэнка
-  - src: https://brasiltours.ru/image/Riobamba.png
+  - src: /media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-11-images-0-src-enhanced-20261007.webp
     alt: Риобамба
 - day: 6
   title: Четверг, 4 января 2024 года. Куэнка
@@ -265,7 +265,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/ecuador%20cuenca1.png
+  - src: /media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-13-images-1-src-enhanced-20261007.webp
     alt: Куэнка
 - day: 7
   title: Пятница, 5 января 2024 года. Куэнка - Кахас - Гуаякиль
@@ -310,9 +310,9 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/ecuador%20guayaquil1.png
+  - src: /media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-14-images-0-src-enhanced-20261007.webp
     alt: Гуаякиль
-  - src: https://brasiltours.ru/image/ecuador%20cuenca.png
+  - src: /media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-12-images-0-src-enhanced-20261007.webp
     alt: Куэнка
 - day: 8
   title: Гуаякиль - Балтра - Санта-Крус
@@ -357,7 +357,7 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/ecuador%20guayaquil1.png
+  - src: /media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-14-images-0-src-enhanced-20261007.webp
     alt: Гуаякиль
 - day: 9
   title: Морская экскурсия на остров Бартоломе
@@ -396,7 +396,7 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-galapagos-middle.jpg
+  - src: /media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-1-src-enhanced-20261007.webp
     alt: Галапагосские острова
 - day: 10
   title: Северный Сеймур или Южный Пласа
@@ -470,7 +470,7 @@ priceFrom: 3960
 currency: USD
 priceNote: $3960
 hero:
-  src: https://brasiltours.ru/image/galapagos-sea-turtle.jpg
+  src: /media/excursions/tortuga-bej-vysokogorya-s-cherepakhami/hero-src-enhanced-20261007.webp
   alt: Весь Эквадор на Новый Год!
 routeCountries:
 - country_ecuador

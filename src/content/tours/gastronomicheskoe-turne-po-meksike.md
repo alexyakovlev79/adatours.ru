@@ -44,7 +44,7 @@ itinerary:
     - 4*: Emporio Reforma, www.hotelesemporio.com, 3 ночи, стандартный номер.
     - 5*: Presidente Intercontinental, www.presidenteicmexico.com, 3 ночи, стандартный номер.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 2
   title: Мехико-Сити - Сочимилко - культурно-гастрономический тур по Койоакану (З)
@@ -57,7 +57,7 @@ itinerary:
 
     Затем маршрут продолжится в Койоакане. Гастрономическая прогулка пройдет через рынки, уличные точки, семейные рестораны и современные заведения. Еда здесь становится частью рассказа о районе: гид познакомит вас с местными вкусами и историями, которые сформировали Койоакан.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 3
   title: Мехико-Сити - Теотиуакан - тур по тако и мескалю (З)
@@ -73,7 +73,7 @@ itinerary:
 
     После возвращения в Мехико-Сити начнется гастрономическая часть дня. Вы познакомитесь с разнообразием тако, посетите традиционные такерии и вечерние заведения столицы, а также попробуете мескаль.
   images:
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 4
   title: Мехико-Сити - исторический центр - аэропорт - Канкун (З)
@@ -98,9 +98,9 @@ itinerary:
     - 4*: Emporio Cancun, www.hotelesemporio.com, 4 ночи, стандартный номер.
     - 5*: Presidente Intercontinental, www.presidenteiccancun.com, 4 ночи, стандартный номер с видом на сад.
   images:
-  - src: https://brasiltours.ru/image/cancun-beaches.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Канкун
-  - src: https://brasiltours.ru/image/Mexico%20City.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 5
   title: Канкун - Чичен-Ица - сенот (З/У)
@@ -116,9 +116,9 @@ itinerary:
 
     После экскурсии вы отправитесь в сенот Hacienda Selva Maya. Здесь можно поплавать, пообедать и отдохнуть перед возвращением в Канкун.
   images:
-  - src: https://brasiltours.ru/image/mexico11%20chichen%20itza.png
+  - src: /media/tours/mexico-city-keretaro/hero-src-enhanced-20261007.webp
     alt: Чичен-Ица
-  - src: https://brasiltours.ru/image/cancun-beaches.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Канкун
 - day: 6
   title: Канкун (З)
@@ -129,7 +129,7 @@ itinerary:
 
     Свободный день для отдыха в Канкуне.
   images:
-  - src: https://brasiltours.ru/image/cancun-beaches.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Канкун
 - day: 7
   title: Канкун - Коба - Тулум - Гран-Сенот (З)
@@ -147,7 +147,7 @@ itinerary:
 
     После экскурсии вы отправитесь к Гран-Сеноту. Здесь можно поплавать в кристально чистой прохладной воде и рассмотреть природные образования подземной системы.
   images:
-  - src: https://brasiltours.ru/image/cancun-beaches.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Канкун
 - day: 8
   title: Канкун (З)
@@ -158,7 +158,7 @@ itinerary:
 
     Свободный день.
   images:
-  - src: https://brasiltours.ru/image/cancun-beaches.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Канкун
 - day: 9
   title: Канкун - аэропорт (З)
@@ -166,7 +166,7 @@ itinerary:
   - Канкун
   text: После завтрака в удобное время состоится трансфер в аэропорт Канкуна для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/cancun-beaches.png
+  - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Канкун
 included:
 - 8 ночей проживания в указанных отелях или аналогичных.
@@ -209,7 +209,7 @@ priceNote: $2181.
 durationDays: 9
 durationNights: 8
 hero:
-  src: https://brasiltours.ru/image/countries/mexico/cancun-1200.jpg
+  src: /media/tours/meksika-fantasticheskaya/itinerary-10-images-0-src-enhanced-20261007.webp
   alt: Гастрономическое турне по Мексике
 routeCountries:
 - country_mexico

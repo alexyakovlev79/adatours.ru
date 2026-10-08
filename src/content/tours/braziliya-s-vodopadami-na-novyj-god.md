@@ -62,7 +62,7 @@ itinerary:
 
     Одновременно на пляже проходят бесплатные концерты. Музыка, океан и фейерверк создают совершенно особую новогоднюю ночь, ради которой в Рио приезжают со всего мира.
   images:
-  - src: https://brasiltours.ru/image/%D1%80%D0%B8%D0%BE.jpg
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Вид с высоты на статую Христа-Искупителя'
 - day: 3
   title: 01.01. Рио-де-Жанейро
@@ -113,7 +113,7 @@ itinerary:
 
     Главное преимущество проживания здесь в том, что отель находится прямо внутри Национального парка. После перелета не нужно снова возвращаться в город, а на следующий день вы уже оказываетесь рядом с водопадами. Вечером слышен постоянный шум воды и чувствуется влажный воздух тропического леса.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Вид сверху на водопады Фос-ду-Игуасу'
   - src: https://brasiltours.ru/image/New%20Year%20Brazil.png
     alt: 'На фото: Новогодние салюты в Рио, вид с пляжа'
@@ -142,7 +142,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу, Бразилия'
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -167,7 +167,7 @@ itinerary:
 
     Этот день завершает экскурсионную часть поездки перед обратным перелетом.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Вид сверху на водопады Фос-ду-Игуасу'
 - day: 8
   title: 06.01. Фос-ду-Игуасу
@@ -179,7 +179,7 @@ itinerary:
 
     Перелет в Рио-де-Жанейро или Сан-Паулу для стыковки с международным рейсом.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу, Бразилия'
 included:
 - Проживание в отелях по программе.

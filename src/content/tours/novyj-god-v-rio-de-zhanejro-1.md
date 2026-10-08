@@ -30,7 +30,7 @@ itinerary:
 
     Размещение в **Belmond Copacabana Palace**. После заселения свободное время. Можно отдохнуть после перелета, выйти к океану или прогуляться по Копакабане перед насыщенным следующим днем.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: Канатная дорога в Рио-де-Жанейро'
 - day: 2
   title: 31 декабря. Корковадо, Христос Спаситель и новогодний бал
@@ -49,7 +49,7 @@ itinerary:
 
     Новогодняя ночь сочетает официальный формат бала в отеле и атмосферу Копакабаны за его пределами. Именно поэтому днем программа оставляет паузу после экскурсии: можно спокойно вернуться, переодеться и подготовиться к вечеру. Белая одежда, цветы у воды, музыка и фейерверк существуют здесь одновременно, а океан становится частью самого праздника. Для многих местных жителей важен ритуал подношений Иеманже, поэтому у кромки воды можно увидеть маленькие лодочки и дары, которые отправляют в море.
   images:
-  - src: https://brasiltours.ru/image/%D1%80%D0%B8%D0%BE.jpg
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Статуя Христа-Искупителя, Рио-де-Жанейро'
 - day: 3
   title: 1 января. Сахарная Голова и исторический центр
@@ -130,7 +130,7 @@ itinerary:
   - Рио-де-Жанейро
   text: После завтрака трансфер в аэропорт для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/Rio%20cable%20car.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-02-enhanced-20260930.webp
     alt: 'На фото: Канатная дорога в Рио-де-Жанейро'
 included:
 - Проживание в отелях по программе.
@@ -160,7 +160,7 @@ priceFrom: 1975
 currency: USD
 priceNote: $1975
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/vernon-raineil-cenzon-hnsgkm0hr10-unsplash.jpg
+  src: /media/tours/braziliya-i-peru-na-novyj-god/hero-enhanced-20261006.webp
   alt: Новый Год в Рио де Жанейро
 routeCountries:
 - country_brazil

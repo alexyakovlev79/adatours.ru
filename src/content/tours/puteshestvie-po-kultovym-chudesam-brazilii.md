@@ -35,7 +35,7 @@ itinerary:
 
     Тем, кто любит активный отдых, город предлагает серфинг, теннис, гольф, рафтинг, дайвинг, дельтапланеризм и другие занятия. На пляжах часто играют местные музыканты, поэтому даже обычная прогулка вдоль океана быстро превращается в первое знакомство с жизнью Рио.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Сахарная голова и старый Рио
@@ -48,7 +48,7 @@ itinerary:
 
     После панорамы маршрут продолжается на автомобиле по центральным районам старого Рио. Вы увидите церкви, монастыри, главный собор и здания колониальной архитектуры. За один день город раскрывается с 2 сторон: сначала как огромная панорама между горами и океаном, затем на уровне улиц исторического центра.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: Корковадо и Христос-Искупитель
@@ -61,7 +61,7 @@ itinerary:
 
     Экскурсия рассчитана примерно на 4 часа. После Сахарной головы предыдущего дня эта точка дает другой угол обзора и помогает лучше понять географию города.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/cristo-redentor-rio-de-janeiro-1.jpg
+  - src: /media/tours/little-mix-ru/itinerary-day-2-enhanced-20261006.webp
     alt: Статуя Христа и Корковадо
 - day: 4
   title: Тропические острова
@@ -73,7 +73,7 @@ itinerary:
 
     С 10:00 до 16:00 пройдет морская часть программы в районе Ангра-дус-Рейс или острова Илья-Гранде. День посвящен лодочной прогулке, островам, пляжам и отдыху у воды. После экскурсии вас доставят обратно в отель в Рио.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
+  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: Рио-де-Жанейро - Фос-ду-Игуасу
@@ -96,9 +96,9 @@ itinerary:
 
     Стоимость дополнительного посещения - **$65**.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-foz-right.jpg
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_makuko_safari
   places: []
@@ -115,7 +115,7 @@ itinerary:
 
     Бразильская сторона дает широкий панорамный вид, а аргентинская позволяет рассматривать отдельные потоки и находиться почти на одном уровне с ними.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-foz-right.jpg
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 7
   title: Фос-ду-Игуасу
@@ -124,7 +124,7 @@ itinerary:
   - Пуэрто Игуасу
   text: В назначенное время водитель доставит вас в аэропорт для перелета в Сан-Паулу и дальнейшего возвращения домой.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-foz-right.jpg
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-04-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 included:
 - проживание в выбранных отелях;

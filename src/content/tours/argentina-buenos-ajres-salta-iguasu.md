@@ -47,7 +47,7 @@ itinerary:
 
     Столица встречает сочетанием европейской архитектуры, зеленых парков и больших проспектов. Остаток дня можно посвятить отдыху после перелета и самостоятельной прогулке.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos%20Aires.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
 - day: 2
   title: Буэнос-Айрес
@@ -58,7 +58,7 @@ itinerary:
 
     Гид расскажет о развитии Буэнос-Айреса, его районах и истории Эвиты Перон. В старых кварталах особенно заметно, как европейская архитектура соединилась с портовой культурой, традициями иммигрантов и южноамериканской повседневностью. Сан-Тельмо сохраняет старые фасады, небольшие кафе и ощущение исторического центра, а Ла-Бока выглядит ярче и свободнее. Эти районы хорошо показывают, насколько разным может быть один город.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos%20obelisk.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Обелиск, столица Аргентины, город Буэнос Айрес'
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -83,7 +83,7 @@ itinerary:
 
     Билеты на паром включены.
   images:
-  - src: https://brasiltours.ru/image/buen%20air.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: 'на фото: Обелиск в Буэнос Айресе в Аргентине'
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places: []
@@ -110,7 +110,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/argentina%20salta.png
     alt: 'на фото: цветные горы региона Сальта в Аргентине'
-  - src: https://brasiltours.ru/image/Arg%20Buenos%20Aires.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
 - day: 5
   title: Сальта и Национальный парк Los Cardones
@@ -124,7 +124,7 @@ itinerary:
 
     По дороге предусмотрены остановки для фотографий и покупки сувениров. На открытых участках парка особенно заметна высота местности и редкая растительность: огромные кактусы стоят на фоне сухих склонов, а между ними появляются викуньи и другие животные. Затем возвращение в Сальту и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-salta-right.jpg
+  - src: /media/tours/chili-i-argentina-vip/itinerary-day-16-enhanced-20261006.webp
     alt: 'на фото: кактусы в регионе Сальта  в Аргентине'
 - day: 6
   title: Сальта - Пурмамарка
@@ -169,9 +169,9 @@ itinerary:
   - Сальта
   text: В назначенное время трансфер в аэропорт. Перелет в Игуасу с пересадкой в Буэнос-Айресе. По прибытии трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: на водопадах Игуасу в Бразилии и Аргентине'
-  - src: https://brasiltours.ru/image/countries/argentina/arg-salta-right.jpg
+  - src: /media/tours/chili-i-argentina-vip/itinerary-day-16-enhanced-20261006.webp
     alt: 'на фото: кактусы в регионе Сальта  в Аргентине'
 - day: 9
   title: Аргентинская сторона водопадов Игуасу
@@ -190,7 +190,7 @@ itinerary:
 
     После экскурсии трансфер в гостиницу. За день вы увидите одну систему водопадов с трех разных уровней, поэтому аргентинская сторона дает особенно подробное представление о форме и силе Игуасу.
   images:
-  - src: https://brasiltours.ru/image/Puerto%20Iguazu.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
     alt: 'на фото: на водопадах Игуасу в Бразилии и Аргентине'
 - day: 10
   title: Бразильская сторона водопадов Игуасу
@@ -216,9 +216,9 @@ itinerary:
   text: После завтрака в назначенное время трансфер в аэропорт и перелет в Буэнос-Айрес. По прибытии встреча и трансфер в
     отель.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos%20obelisk.png
+  - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-1-enhanced-20261006.webp
     alt: 'на фото: Обелиск, столица Аргентины, город Буэнос Айрес'
-  - src: https://brasiltours.ru/image/BRA%20FOZ%206.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: 'на фото: на водопадах Игуасу в Бразилии и Аргентине'
 - day: 12
   title: Буэнос-Айрес
@@ -226,7 +226,7 @@ itinerary:
   - Буэнос-Айрес
   text: Завтрак в отеле. В назначенное время трансфер в аэропорт Буэнос-Айреса для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/buen%20air.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: 'на фото: Обелиск в Буэнос Айресе в Аргентине'
 included:
 - Размещение в отелях 4* на базе завтраков.

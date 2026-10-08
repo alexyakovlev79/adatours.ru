@@ -149,7 +149,7 @@ itinerary:
 
     **Питание:** легкий завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/Los%20Llanos.jpg
+  - src: /media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Лос Льянос
 - day: 11
   title: ', четверг. Лос-Льянос'
@@ -162,7 +162,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/Los%20Llanos.jpg
+  - src: /media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Лос Льянос
 - day: 12
   title: ', пятница. Лос-Льянос - Каракас'
@@ -176,7 +176,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/catalog/product/c/a/caracas_1.png
     alt: Каракас
-  - src: https://brasiltours.ru/image/Los%20Llanos.jpg
+  - src: /media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Лос Льянос
 included:
 - 'Проживание: отели 4*, лодж и поместье.'

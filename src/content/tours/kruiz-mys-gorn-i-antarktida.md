@@ -64,7 +64,7 @@ itinerary:
       
       После знакомства с окрестностями судно продолжает путь к мысу Горн.
     images:
-      - src: https://brasiltours.ru/image/countries/antarctica/antarktida-949x949.jpg
+      - src: /media/tours/fordy-ognennoj-zemli/hero-enhanced-20261006.webp
         alt: "Экспедиционный круиз к Антарктиде"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -97,7 +97,7 @@ itinerary:
       
       В море встречаются альбатросы, буревестники и другие морские птицы. Также есть возможность увидеть китов, направляющихся к Антарктиде.
     images:
-      - src: https://brasiltours.ru/image/countries/antarctica/123.jpg
+      - src: /media/tours/antarktida-programma-na-ves-den/hero-src-enhanced-20261007.webp
         alt: "Пролив Дрейка"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -118,7 +118,7 @@ itinerary:
       
       Благодаря продолжительному антарктическому световому дню программа может продолжаться до вечера.
     images:
-      - src: https://brasiltours.ru/image/countries/antarctica/dylan-shaw-de6z6lz4-v8-unsplash.jpg
+      - src: /media/tours/klassicheskaya-antarktida/hero-src-enhanced-20261007.webp
         alt: "Антарктида и айсберги"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -137,7 +137,7 @@ itinerary:
       
       **Важно:** питание в Пунта-Аренасе в этот день оплачивается самостоятельно и в программу не входит.
     images:
-      - src: https://brasiltours.ru/image/countries/antarctica/antarktida-949x949.jpg
+      - src: /media/tours/fordy-ognennoj-zemli/hero-enhanced-20261006.webp
         alt: "Остров Кинг-Джордж, Антарктида"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -147,7 +147,7 @@ itinerary:
     text: |-
       После завтрака групповой трансфер в аэропорт Пунта-Аренас для дальнейшего перелета.
     images:
-      - src: https://brasiltours.ru/image/countries/antarctica/antarktida-949x949.jpg
+      - src: /media/tours/fordy-ognennoj-zemli/hero-enhanced-20261006.webp
         alt: "Антарктический круиз"
         intendedSlot: "itinerary:day-6"
 included:

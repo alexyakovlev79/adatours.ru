@@ -84,7 +84,7 @@ itinerary:
 
     После завершения программы предусмотрен трансфер от Самбадрома обратно в отель.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/file-117-27.jpg
+  - src: /media/tours/karnaval-v-rio-de-zhanejro/carnival-day-3-src-enhanced-20261008.webp
     alt: Танцоры в костюмах на карнавале в Рио
 - day: 4
   title: Корковадо, Христос Искупитель и закат на Арпоадоре

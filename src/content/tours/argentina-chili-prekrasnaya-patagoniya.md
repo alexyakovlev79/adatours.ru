@@ -45,7 +45,7 @@ priceFrom: 6378
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/arg-perito-moreno.jpg
+  src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
   alt: "Ледник Перито-Морено, Аргентина"
 gallery: []
 featured: false
@@ -64,7 +64,7 @@ itinerary:
       
       Остаток дня свободный. Можно прогуляться, заняться шопингом, посидеть в кафе или просто отдохнуть перед началом программы. Это спокойный старт перед южной частью путешествия, где свободного времени будет меньше, а природных и активных дней заметно больше.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-buenos-aires.jpg
+      - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2
@@ -82,7 +82,7 @@ itinerary:
       
       Вечером предусмотрено танго-шоу с ужином. Танго родилось в портовой среде среди иммигрантов и гаучо. Позднее появились оркестры, танец стал медленнее и сложнее, а затем превратился в один из главных символов Аргентины. В ресторане подают традиционные блюда и местные вина.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/tigre-argentina1.png
+      - src: /media/excursions/ekskursiya-v-tigre-i-po-severnym-provintsiyam-buenos-ajresa/hero-enhanced-20261001.webp
         alt: "Буэнос-Айрес и Тигре, Аргентина"
         intendedSlot: "itinerary:day-2"
   - day: 3
@@ -97,7 +97,7 @@ itinerary:
       
       Ушуайя стоит у пролива Бигль в окружении гор и лесов. После Буэнос-Айреса смена обстановки чувствуется сразу: прохладнее воздух, меньше городская застройка, ближе вода и горные склоны.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
         alt: "Буэнос-Айрес перед перелетом в Ушуайю"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -115,7 +115,7 @@ itinerary:
       
       Фаньяно впечатляет размером и открытой водой. Затем маршрут продолжается к озеру Эскондидо, которое меньше по площади, но окружено лесом и горами. В течение дня сама дорога становится частью приключения, поскольку пейзажи и поверхность постоянно меняются.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg
+      - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
         alt: "Ушуайя, Аргентина"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -133,7 +133,7 @@ itinerary:
       
       После экскурсии трансфер в аэропорт и перелет в Эль-Калафате. По прилете трансфер в отель. За один день вы успеваете увидеть побережье Огненной Земли и затем переместиться к озерам и ледникам центральной Патагонии.
     images:
-      - src: https://brasiltours.ru/image/ushuaia.png
+      - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
         alt: "Ушуайя и Огненная Земля"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -152,7 +152,7 @@ itinerary:
       
       Дополнительно доступен айс-трекинг, $500 на человека. Во время прогулки по леднику можно попробовать коктейль со льдом Перито-Морено.
     images:
-      - src: https://brasiltours.ru/image/El%20Calafate%20ADA.png
+      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-6-enhanced-20261006.webp
         alt: "Эль-Калафате, Патагония"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -172,7 +172,7 @@ itinerary:
       
       Возвращение в Эль-Чалтен проходит преимущественно на спуск.
     images:
-      - src: https://brasiltours.ru/image/ARG%20Patagonia%201.png
+      - src: /media/tours/argentina-2024/itinerary-day-6-images-1-enhanced-20261006.webp
         alt: "Патагония по дороге в Эль-Чалтен"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -193,7 +193,7 @@ itinerary:
       
       После отдыха и обеда начинается спуск. Обратная дорога проходит через смотровую площадку Лагуна Капри и заканчивается в Эль-Чалтене. Этот день требует больше физической подготовки, чем предыдущий маршрут к Капри, зато дает самый близкий вид на Фицрой во всей программе.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/el-chalten-adatours-2.jpg
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-7-enhanced-20261006.webp
         alt: "Эль-Чалтен и Фицрой"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -206,7 +206,7 @@ itinerary:
       
       После пересечения границы прибытие в Пуэрто-Наталес и размещение. Сам переезд занимает значительную часть дня, но дорога позволяет увидеть открытые пространства Патагонии без экскурсионных остановок и почувствовать расстояния между отдельными точками маршрута.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-patogonia.jpg
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
         alt: "Патагония на пути в Пуэрто-Наталес"
         intendedSlot: "itinerary:day-9"
   - day: 10
@@ -229,7 +229,7 @@ itinerary:
       
       До водопада Сальто-Гранде нужно пройти около 15 минут. Он соединяет озера Норденскхолд и Пеоэ. Обратная дорога проходит мимо реки Рио-Серрано и озер Торо и Портеньо. Ночь в Пуэрто-Наталес.
     images:
-      - src: https://brasiltours.ru/image/ARG%20Patagonia%201.png
+      - src: /media/tours/argentina-2024/itinerary-day-6-images-1-enhanced-20261006.webp
         alt: "Торрес-дель-Пайне и патагонские пейзажи"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -261,7 +261,7 @@ itinerary:
       
       Городская экскурсия продолжается поездкой на винодельни долины Майпо с дегустацией. Так последний полноценный день объединяет исторический центр Сантьяго, современную часть города и винодельческий регион. После длинной серии природных маршрутов это более спокойный финал, который возвращает путешествие к городской культуре и гастрономии.
     images:
-      - src: https://brasiltours.ru/image/countries/chile/chi-santiago-right.jpg
+      - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
         alt: "Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-12"
   - day: 13
@@ -271,7 +271,7 @@ itinerary:
     text: |-
       Завтрак в отеле. В назначенное время трансфер в аэропорт для вылета домой. На этом 13-дневный маршрут через аргентинскую и чилийскую Патагонию завершается, соединяя в одной поездке 2 столицы, Огненную Землю, ледники, горные тропы и национальные парки обеих стран в Патагонии.
     images:
-      - src: https://brasiltours.ru/image/santiago%20de%20chile3.png
+      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-13-enhanced-20261006.webp
         alt: "Сантьяго-де-Чили"
         intendedSlot: "itinerary:day-13"
 included:

@@ -32,7 +32,7 @@ itinerary:
   text: Прибытие в аэропорт Сан-Паулу. Водитель встретит вас с табличкой с логотипом компании и вашими фамилиями. Трансфер
     в отель.
   images:
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: Вся Бразилия от Сан Пауло до Бузиоса
 - day: 2
   title: Сан-Паулу
@@ -43,7 +43,7 @@ itinerary:
 
     Затем программа продолжится в современной части Сан-Паулу. Вы проедете по проспекту Паулиста, посетите парк Ибирапуэра с озерами, каналами, раскидистыми деревьями, спортивными площадками и велосипедными дорожками. Здесь же находятся обелиск в честь героев революции 1932 года и монумент «Бандейрас», посвященный экспедициям, отправлявшимся вглубь страны в поисках золота и драгоценных камней. В завершение экскурсии - элитные районы, современная архитектура и район граффити.
   images:
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: Вся Бразилия от Сан Пауло до Бузиоса
 - day: 3
   title: Сан-Паулу - Игуасу
@@ -63,9 +63,9 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: Вся Бразилия от Сан Пауло до Бузиоса
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -81,7 +81,7 @@ itinerary:
 
     Одна из главных частей программы - поездка на экологическом поезде и пеший переход к смотровой площадке «Глотка дьявола», откуда открывается вид на самый мощный и полноводный каскад Игуасу. Бразильская и аргентинская стороны дают разные точки обзора, поэтому 2 дня у водопадов дополняют друг друга.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 5
   title: Игуасу - Рио-де-Жанейро
@@ -91,9 +91,9 @@ itinerary:
   - Пуэрто Игуасу
   text: Завтрак, трансфер в аэропорт и перелет в Рио-де-Жанейро. По прибытии - трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/iguazu%20argentina%20side.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-12-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 6
   title: Рио-де-Жанейро
@@ -104,7 +104,7 @@ itinerary:
 
     Со смотровых площадок видны Копакабана, залив, острова, мост Нитерой и Корковадо со статуей Христа. После спуска программа продолжается в старом центре Рио со старинными церквями, монастырями, кафедральным собором и колониальной архитектурой.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 7
   title: Рио-де-Жанейро
@@ -123,7 +123,7 @@ itinerary:
 
     Полет длится 8-10 минут, площадка находится на Сахарной Голове или в районе Лагоа.
   images:
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -135,9 +135,9 @@ itinerary:
   text: Завтрак и трансфер в Бузиос. Размещение в отеле на тропическом побережье. Дорога выводит из большого города к более
     спокойному побережью с невысокой застройкой, зелеными холмами и многочисленными бухтами.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: Бузиос
-  - src: https://brasiltours.ru/image/stairs%20rio.png
+  - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 9
   title: Бузиос
@@ -148,7 +148,7 @@ itinerary:
     и пляжами с прозрачной водой бирюзового оттенка. Эти 2 дня специально оставлены свободными, чтобы после насыщенной первой
     части путешествия можно было выбрать собственный темп отдыха.
   images:
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: Бузиос
 - day: 10
   title: Бузиос
@@ -158,7 +158,7 @@ itinerary:
     и пляжами с прозрачной водой бирюзового оттенка. Эти 2 дня специально оставлены свободными, чтобы после насыщенной первой
     части путешествия можно было выбрать собственный темп отдыха.
   images:
-  - src: https://brasiltours.ru/image/BRA%20Buzios%2011.png
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
     alt: Бузиос
 - day: 11
   title: Бузиос - Сан-Паулу
@@ -167,9 +167,9 @@ itinerary:
   - Сан-Паулу
   text: Завтрак. Трансфер в аэропорт Рио-де-Жанейро, перелет в Сан-Паулу и трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: Вся Бразилия от Сан Пауло до Бузиоса
-  - src: https://brasiltours.ru/image/BUZIOS%20NEW.png
+  - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
     alt: Бузиос
 - day: 12
   title: Сан-Паулу
@@ -177,7 +177,7 @@ itinerary:
   - Сан-Паулу
   text: Завтрак и трансфер в аэропорт для международного перелета.
   images:
-  - src: https://brasiltours.ru/image/So%20Paulo.png
+  - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: Вся Бразилия от Сан Пауло до Бузиоса
 included:
 - Проживание в отелях на базе завтраков.
@@ -202,7 +202,7 @@ priceFrom: 3765
 currency: USD
 priceNote: $3765
 hero:
-  src: https://brasiltours.ru/image/So%20Paulo.png
+  src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
   alt: Вся Бразилия от Сан Пауло до Бузиоса
 routeCountries:
 - country_brazil

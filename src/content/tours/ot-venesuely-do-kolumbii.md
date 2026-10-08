@@ -86,7 +86,7 @@ itinerary:
 
     **Питание:** обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/nacionalnyi-park-kanaima.jpg
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp
     alt: Канайма
 - day: 5
   title: ', пятница. Сальто-Анхель на целый день'
@@ -101,7 +101,7 @@ itinerary:
 
     **Важно:** экскурсия рассчитана на активных туристов и занимает целый день. В программе длительная поездка в моторной лодке, переход и небольшой трекинг. Нужны удобные кроссовки или треккинговая обувь, сменная одежда и дождевик.
   images:
-  - src: https://brasiltours.ru/image/Canaima%20National%20Park%20Angel%20Falls%201.png
+  - src: /media/tours/venesuela-treking-v-zateryannyj-i-pervozdannyj-mir-rorajmy/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Водопад Анхель
 - day: 6
   title: ', суббота. Национальный парк Канайма'
@@ -114,7 +114,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/nacionalnyi-park-kanaima.jpg
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp
     alt: Канайма
 - day: 7
   title: ', воскресенье. Каракас - поместье Санта-Тереза'
@@ -144,9 +144,9 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Богота
-  - src: https://brasiltours.ru/image/countries/colombia/cocora-palms.jpg
+  - src: /media/destinations/pereira/featureBands-1-image-enhanced-20261007.webp
     alt: Долина Кокора
 - day: 9
   title: ', вторник. Кофейное поместье - Картахена'
@@ -159,7 +159,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena1.jpg
+  - src: /media/tours/kolumbiya-s-kano-kristales-i-ne-tolko/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Картахена
 - day: 10
   title: ', среда. Картахена'
@@ -174,7 +174,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/colombia/cartaghena2.jpg
+  - src: /media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp
     alt: Картахена
 - day: 11
   title: ', четверг. Богота - Зипакира и Соляной собор'
@@ -187,7 +187,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Богота
 - day: 12
   title: ', пятница. Богота - Каракас'
@@ -199,7 +199,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/Bogota.png
+  - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Богота
   - src: https://brasiltours.ru/image/catalog/product/c/a/caracas2_2.png
     alt: Каракас

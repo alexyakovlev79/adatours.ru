@@ -35,7 +35,7 @@ itinerary:
 
     Далее поездка к мемориалу Лос-Просерес, посвященному героям войны за независимость. Прогулка по парку, могила Неизвестного солдата, Аллея Славы и Почетный двор, где проходят военные парады в дни национальных праздников. Обед в традиционном ресторане оплачивается отдельно. Возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/Caracas.png
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp
     alt: Каракас
 - day: 2
   title: ', вторник: Каракас, Эль-Авила и отель Humboldt'
@@ -51,7 +51,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/caracas.png
+  - src: /media/tours/kraski-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Каракас
 - day: 3
   title: ', среда: Колония Товар'
@@ -64,7 +64,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: https://brasiltours.ru/image/caracas2.png
+  - src: /media/tours/populyarnye-napravleniya-venesuely/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Каракас
 - day: 4
   title: ', четверг: Канайма, лагуна, водопады Сапо и Ача'
@@ -77,7 +77,7 @@ itinerary:
 
     Питание: легкий завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/canaima%20nat%20park2.png
+  - src: /media/tours/krasota-venesuely/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Канайма
 - day: 5
   title: ', пятница: Сальто-Анхель'
@@ -92,7 +92,7 @@ itinerary:
 
     Важно: программа рассчитана на активных туристов и занимает весь день. Нужны удобная обувь, кроссовки или треккинговая обувь, сменная одежда и дождевик.
   images:
-  - src: https://brasiltours.ru/image/Canaima%20National%20Park%20Angel%20Falls%201.png
+  - src: /media/tours/venesuela-treking-v-zateryannyj-i-pervozdannyj-mir-rorajmy/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Водопад Анхель
 - day: 6
   title: ', суббота: свободное время в Канайме'
@@ -103,7 +103,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/canaima%20nat%20park2.png
+  - src: /media/tours/krasota-venesuely/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Канайма
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []
@@ -119,9 +119,9 @@ itinerary:
 
     Питание: завтрак, ужин.
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.jpg
+  - src: /media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Остров Маргарита
-  - src: https://brasiltours.ru/image/canaima%20nat%20park2.png
+  - src: /media/tours/krasota-venesuely/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Канайма
 - day: 8
   title: ', понедельник: остров Маргарита'
@@ -129,7 +129,7 @@ itinerary:
   - Остров Маргарита
   text: Отдых в отеле на пляже по системе «все включено».
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.jpg
+  - src: /media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Остров Маргарита
 - day: 9
   title: ', вторник: обзорная экскурсия по острову Маргарита'
@@ -142,7 +142,7 @@ itinerary:
 
     Следующая остановка, крепость Сан-Карлос-де-Борромео 1622 года в Пампатаре, гастрономическом районе острова с галереями, художественными салонами, кафе и ресторанами. Обед на городском пляже с традиционными рыбными блюдами. После обеда прогулка по заливу, главный маяк острова, розовые озера солончака и виды на архипелаг Лос-Фрайлес. Вечером возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.jpg
+  - src: /media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Остров Маргарита
 - day: 10
   title: ', среда и четверг: остров Маргарита'
@@ -150,7 +150,7 @@ itinerary:
   - Остров Маргарита
   text: Отдых на пляже в отеле по системе «все включено».
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.jpg
+  - src: /media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Остров Маргарита
 - day: 11
   title: ', среда и четверг: остров Маргарита'
@@ -158,7 +158,7 @@ itinerary:
   - Остров Маргарита
   text: Отдых на пляже в отеле по системе «все включено».
   images:
-  - src: https://brasiltours.ru/image/Isla%20Margarita.jpg
+  - src: /media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Остров Маргарита
 - day: 12
   title: ', пятница: Каракас и поместье Санта-Тереза'
@@ -171,7 +171,7 @@ itinerary:
 
     Вы проедете по плантациям сахарного тростника и старым корпусам завода, посетите дом-музей семьи Товар, погреб Criadero de Solera и современную часть производства. Предусмотрена дегустация рома и время для сувенирного магазина. Рекомендуются Santa Teresa 1796 и кофейный ром Arakú. Затем возвращение в аэропорт и регистрация на рейс.
   images:
-  - src: https://brasiltours.ru/image/Caracas.png
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp
     alt: Каракас
 included:
 - 'проживание: отели 4* и кампаменто;'

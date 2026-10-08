@@ -59,7 +59,7 @@ itinerary:
 
     После экскурсии можно поужинать в ресторане Fogo de Chao с видом на Сахарную Голову. Ориентировочная стоимость — около $75 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -122,7 +122,7 @@ itinerary:
   text: Свободный день в Рио-де-Жанейро. Можно провести его на пляже, вернуться в понравившийся район города или выбрать дополнительную
     программу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 8
   title: Вылет

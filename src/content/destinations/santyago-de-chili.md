@@ -12,9 +12,9 @@ hero:
   src: "/media/destinations/santyago-de-chili/hero-enhanced-20261006.webp"
   alt: "На фото: столица Чили. город Сантьяго-де-Чили"
 gallery:
-  - src: "https://brasiltours.ru/image/catalog/category/p/h/photo_lg_santiago.jpg"
+  - src: "/media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp"
     alt: "На фото: столица Чили. город Сантьяго-де-Чили"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN2089_24.jpg"
+  - src: "/media/destinations/santyago-de-chili/gallery-2-enhanced-20261006.webp"
     alt: "На фото: столица Чили. город Сантьяго-де-Чили"
   - src: "/media/destinations/santyago-de-chili/gallery-3-enhanced-20261006.webp"
     alt: "На фото: столица Чили. город Сантьяго-де-Чили"

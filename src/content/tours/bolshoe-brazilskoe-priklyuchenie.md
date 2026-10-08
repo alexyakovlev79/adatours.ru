@@ -45,7 +45,7 @@ itinerary:
 
     Сан-Паулу - крупнейший город Бразилии, ее финансовый и гастрономический центр. Здесь современные небоскребы соседствуют с историческими кварталами, музеями, галереями, ресторанами и насыщенной городской жизнью.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo4.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: Сан-Паулу
 - day: 2
   title: Экскурсия по Сан-Паулу
@@ -58,7 +58,7 @@ itinerary:
 
     Экскурсия даст представление об истории, современной жизни и архитектуре мегаполиса. По маршруту предусмотрены остановки для фотографий.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/sao-paolo5.png
+  - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-11-enhanced-20261006.webp
     alt: Сан-Паулу
 - day: 3
   title: Сан-Паулу - Бонито
@@ -74,9 +74,9 @@ itinerary:
 
     После размещения свободное время.
   images:
-  - src: https://brasiltours.ru/image/BRA%20BONITO%202.png
+  - src: /media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-5-enhanced-20261006.webp
     alt: Бонито
-  - src: https://brasiltours.ru/image/sao-paulo-brazil_1800x1000.png
+  - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: Сан-Паулу
 - day: 4
   title: Голубая пещера и река Сукури
@@ -123,7 +123,7 @@ itinerary:
 
     Проживание в лодже позволяет проводить больше времени непосредственно в природной зоне.
   images:
-  - src: https://brasiltours.ru/image/Pantanal.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
     alt: Пантанал
 - day: 7
   title: Частное лодочное сафари в Пантанале
@@ -138,7 +138,7 @@ itinerary:
 
     После сафари возвращение в лодж и отдых.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
+  - src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: Пантанал
 - day: 8
   title: Второе сафари в Пантанале
@@ -151,7 +151,7 @@ itinerary:
 
     После возвращения в лодж - обед и свободное время.
   images:
-  - src: https://brasiltours.ru/image/Pantanal.png
+  - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
     alt: Пантанал
 - day: 9
   title: Пантанал - Сан-Луис
@@ -165,7 +165,7 @@ itinerary:
 
     Сан-Луис известен колониальной архитектурой, португальским наследием и историческим центром. Город также служит одной из отправных точек для путешествий в Ленсойс-Мараньенсис.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/brazil-pantanal.jpg
+  - src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
     alt: Пантанал
 - day: 10
   title: Сан-Луис - Баррейриньяс - Ленсойс-Мараньенсис
@@ -209,7 +209,7 @@ itinerary:
 
     После размещения отдых.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 - day: 13
   title: Корковаду и Сахарная голова
@@ -226,7 +226,7 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/sugar%20loaf%2011.png
+  - src: /media/tours/podlinnaya-braziliya/itinerary-day-3-enhanced-20261006.webp
     alt: Сахарная Голова
 - day: 14
   title: Фавела Рио-де-Жанейро и вылет
@@ -239,7 +239,7 @@ itinerary:
 
     После экскурсии - трансфер в аэропорт.
   images:
-  - src: https://brasiltours.ru/image/rio%2011.png
+  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
     alt: Рио-де-Жанейро
 included:
 - Проживание в отелях 4* по программе.
@@ -268,7 +268,7 @@ priceFrom: 6450
 currency: USD
 priceNote: $6450 на человека при размещении 1/2 DBL и группе 10 человек
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/vista-cristo-rio-de-janeiro.jpg
+  src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
   alt: Большое бразильское приключение
 routeCountries:
 - country_brazil

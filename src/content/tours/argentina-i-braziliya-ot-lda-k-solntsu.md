@@ -40,7 +40,7 @@ itinerary:
 
     Остаток дня свободный. Можно отдохнуть после перелета или начать знакомство со столицей самостоятельно. Это единственный совсем свободный стартовый день, поэтому его удобно оставить без дополнительных планов и использовать для восстановления после международного перелета.
   images:
-  - src: https://brasiltours.ru/image/Buenos%20Aires.png
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
     alt: Буэнос-Айрес
 - day: 2
   title: Буэнос-Айрес
@@ -57,7 +57,7 @@ itinerary:
 
     Трансфер включен, шоу проходит в группе без гида.
   images:
-  - src: https://brasiltours.ru/image/buen%20air.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_buenos_aires_tango_show_dinner_transfer
   places: []
@@ -71,9 +71,9 @@ itinerary:
 
     Эль-Калафате находится в Патагонии и служит отправной точкой к Национальному парку Лос-Гласьярес и леднику Перито-Морено.
   images:
-  - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
+  - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: Эль-Калафате
-  - src: https://brasiltours.ru/image/buenos-aires%20(1).png
+  - src: /media/tours/argentina-2024/itinerary-day-1-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 4
   title: Калафате и ледник Перито-Морено
@@ -89,7 +89,7 @@ itinerary:
 
     Возвращение в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/Argentina%20Calafate%20Adatours.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-5-enhanced-20261006.webp
     alt: Эль-Калафате
 - day: 5
   title: Калафате - Ушуайя
@@ -101,9 +101,9 @@ itinerary:
 
     Ушуайя находится на Огненной Земле у пролива Бигль. После Калафате здесь меняется сам пейзаж: горы подходят ближе к воде, вокруг больше леса и чувствуется морское побережье.
   images:
-  - src: https://brasiltours.ru/image/ARG%20USHUAIA%20right.png
+  - src: /media/tours/fordy-ognennoj-zemli/itinerary-day-5-enhanced-20261006.webp
     alt: Ушуайя
-  - src: https://brasiltours.ru/image/2%20Argentina%20-%20El%20Calafate.png
+  - src: /media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp
     alt: Эль-Калафате
 - day: 6
   title: Ушуайя и Национальный парк «Тьерра-дель-Фуего»
@@ -123,7 +123,7 @@ itinerary:
 
     Магелланские пингвины собираются здесь в конце сентября для рождения потомства. Кроме них можно увидеть пингвинов Папуа с красным клювом, а также альбатросов, бакланов, буревестников, грифов и южноамериканских крачек.
   images:
-  - src: https://brasiltours.ru/image/ARG%20USHUAIA%20right.png
+  - src: /media/tours/fordy-ognennoj-zemli/itinerary-day-5-enhanced-20261006.webp
     alt: Ушуайя
 - excursionRef: excursion_ushuaia_martillo_penguin_boat
   places: []
@@ -138,9 +138,9 @@ itinerary:
 
     После прохладной Огненной Земли климат меняется почти мгновенно: Игуасу встречает влажным субтропическим воздухом и густой растительностью.
   images:
-  - src: https://brasiltours.ru/image/Puerto%20Iguazu.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/ARG%20USHUAIA%20right.png
+  - src: /media/tours/fordy-ognennoj-zemli/itinerary-day-5-enhanced-20261006.webp
     alt: Ушуайя
 - day: 8
   title: Аргентинская сторона водопадов Игуасу
@@ -159,7 +159,7 @@ itinerary:
 
     После экскурсии трансфер по программе.
   images:
-  - src: https://brasiltours.ru/image/iguas%20nat.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 9
   title: Бразильская сторона Игуасу - Рио-де-Жанейро
@@ -175,9 +175,9 @@ itinerary:
 
     Рио связан с океаном даже в обычной городской жизни. На известных пляжах работают кафе, где можно попробовать напитки из свежих тропических фруктов.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
-  - src: https://brasiltours.ru/image/iguasu%20national%20park.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-11-enhanced-20261006.webp
     alt: Фоз-ду-Игуасу
 - day: 10
   title: 'Рио-де-Жанейро: Сахарная Голова'
@@ -190,7 +190,7 @@ itinerary:
 
     Затем канатная дорога поднимается на Сахарную Голову. С вершины открывается панорама Рио: Копакабана, Ипанема, залив Гуанабара, мост Нитерой и Корковадо со статуей Христа Искупителя. Это одна из лучших точек, чтобы увидеть сразу и береговую линию, и городскую застройку, и окружающие Рио зеленые горы.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 11
   title: 'Рио-де-Жанейро: город и Корковадо'
@@ -203,7 +203,7 @@ itinerary:
 
     От станции открытый поезд поднимается через густой лес к главному символу города, 38-метровой статуе Христа Искупителя. Статуя установлена в 1931 году. С горы открывается одна из самых известных панорам Рио-де-Жанейро: город, залив, пляжи и зеленые склоны одновременно оказываются в поле зрения.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 - day: 12
   title: Рио-де-Жанейро
@@ -212,7 +212,7 @@ itinerary:
   text: Завтрак в отеле. Трансфер с водителем в аэропорт Рио-де-Жанейро для вылета домой. На этом контрастное путешествие
     от патагонского льда к тропическому побережью завершается.
   images:
-  - src: https://brasiltours.ru/image/Rio%20de%20Janeiro.png
+  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Рио-де-Жанейро
 included:
 - Проживание в отелях по программе.
@@ -237,7 +237,7 @@ priceFrom: 3130
 currency: USD
 priceNote: $3130
 hero:
-  src: https://brasiltours.ru/image/el%20cala1.png
+  src: /media/excursions/ledovyj-trekking-perito-moreno/hero-enhanced-20261006.webp
   alt: 'Аргентина и Бразилия: От Льда к Солнцу'
 routeCountries:
 - country_argentina

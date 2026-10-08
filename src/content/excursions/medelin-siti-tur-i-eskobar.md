@@ -25,7 +25,7 @@ gallery:
     alt: Скульптуры Фернандо Ботеро в Медельине
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-1-src-enhanced-20261008.webp
     alt: Городской пейзаж Медельина
-  - src: https://brasiltours.ru/image/countries/colombia/img-20220726-wa0334.jpg
+  - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261008.webp
     alt: Искусство Фернандо Ботеро в Медельине
   - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
     alt: Панорама Медельина

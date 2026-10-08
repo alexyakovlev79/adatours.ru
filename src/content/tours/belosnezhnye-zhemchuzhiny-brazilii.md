@@ -35,7 +35,7 @@ itinerary:
 
     Средняя температура воздуха составляет 28-30 °C. Несмотря на быстрый рост, Ресифи сохранил здания, связанные с португальским и голландским периодами: храмы, особняки и исторические кварталы. В городе много кафе, ресторанов и магазинов, а побережье вокруг него известно пляжами и активной ночной жизнью.
   images:
-  - src: https://brasiltours.ru/image/Recife.png
+  - src: /media/tours/braziliya-s-plyazhami/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: 'на фото: Пляж Ресифи'
 - day: 2
   title: Ресифи и Олинда
@@ -191,7 +191,7 @@ priceFrom: 4448
 currency: USD
 priceNote: $4448
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/bra-recife-1.jpg
+  src: /media/tours/braziliya-s-plyazhami/itinerary-day-8-enhanced-20261006.webp
   alt: 'на фото: Ресифи'
 routeCountries:
 - country_brazil

@@ -43,7 +43,7 @@ itinerary:
     кокосовую воду, свежевыжатые соки и другие напитки. На пляже также можно увидеть выступления местных музыкантов, исполняющих
     разные стили музыки.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Рио-де-Жанейро
@@ -56,7 +56,7 @@ itinerary:
     (38 м), построенная в 1931 году. С вершины открывается завораживающая панорама мегаполиса и его окрестностей: мост Нитерой,
     залив Гуанабара, Ботанический сад, стадион Маракана, гора Сахарная Голова и многое другое.'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 3
   title: Рио-де-Жанейро
@@ -69,7 +69,7 @@ itinerary:
     в исторический центр старого Рио, где увидите старинные церкви, монастыри, главный кафедральный собор и здания, построенные
     в колониальном стиле.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 4
   title: Рио-де-Жанейро – Манаус
@@ -81,9 +81,9 @@ itinerary:
     минут) до эколоджа Evolução, приветственный напиток и размещение. 12:00 – обед. 15:00 – начнем экскурсии на каноэ: посещение
     Игапо (затопленный лес), рыбалка на пираний. 19:00 – ужин и свободное время.'
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Манаус
-  - src: https://brasiltours.ru/image/countries/brazil/rio.jpg
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: Манаус
@@ -95,7 +95,7 @@ itinerary:
     как они производят ремесленные изделия из природных семян джунглей. 19:00 – прощальный ужин. 20:00 – ночная прогулка вдоль
     берега реки с прожекторами: наблюдение кайманов Тинга и Асу, а иногда козодоев, змей и лягушек.'
   images:
-  - src: https://brasiltours.ru/image/manaus,,.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-4-enhanced-20261006.webp
     alt: Манаус
 - day: 6
   title: Манаус – Сальвадор
@@ -110,9 +110,9 @@ itinerary:
     жареные в масле денде) или стать свидетелем ритуала кандомбле, когда последователя одолевает дух африканского божества.
     А еще - здесь находятся лучшие в Бразилии отели «все включено» на великолепных пляжах рядом с Салвадором!
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: Манаус
 - day: 7
   title: Сальвадор
@@ -127,7 +127,7 @@ itinerary:
     города. Мы посетим церковь Сан-Франсиску с ее роскошным интерьером, украшенным золотой лепниной, и площадь Пелуринью -
     сердце старого города.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
     alt: Сальвадор
 - day: 8
   title: Сальвадор – Прайя-ду-Форти
@@ -135,7 +135,7 @@ itinerary:
   - Сальвадор
   text: После завтрака - поездка на целый день к расслабляющим пляжам Прайя-ду-Форти (групповая экскурсия SIB).
   images:
-  - src: https://brasiltours.ru/image/salvador%20de%20bahi2.png
+  - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-7-enhanced-20261006.webp
     alt: Сальвадор
 - day: 9
   title: Сальвадор – Фос-ду-Игуасу
@@ -145,9 +145,9 @@ itinerary:
   text: После завтрака трансфер в аэропорт на рейс до Фос-ду-Игуасу, где вас встретят и доставят в отель. Оставшаяся часть
     дня - свободное время.
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: https://brasiltours.ru/image/countries/brazil/bra-salvador-1.jpg
+  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
 - day: 10
   title: Фос-ду-Игуасу
@@ -162,7 +162,7 @@ itinerary:
     и смотреть на это величие, размышляя о красоте вселенной и вечности. Экскурсия проводится в составе группы с англоязычным
     гидом.'
   images:
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 11
   title: Фос-ду-Игуасу – Буэнос-Айрес
@@ -171,9 +171,9 @@ itinerary:
   - Буэнос-Айрес
   text: В назначенное время - трансфер в аэропорт и перелет в Буэнос-Айрес. По прибытии - трансфер в отель.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos%20Aires.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
-  - src: https://brasiltours.ru/image/BRA%20FOZ%204.png
+  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
 - day: 12
   title: Буэнос-Айрес
@@ -185,7 +185,7 @@ itinerary:
     Обелиск и здание Национального конгресса. Экскурсия включает посещение района Ла-Бока (родины аргентинского танго), пешеходной
     улицы Каминито, площади Сан-Мартин и района Реколета.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos%20Aires.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
@@ -195,7 +195,7 @@ itinerary:
   - Буэнос-Айрес
   text: После завтрака - свободный день для самостоятельного знакомства с городом или выбора дополнительных экскурсий.
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos%20Aires.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 - day: 14
   title: Буэнос-Айрес
@@ -219,7 +219,7 @@ itinerary:
     - Личные расходы
     *При необходимости Ada Tours может заменить указанные отели на другие отели той же категории. Ada Tours может изменить порядок экскурсий, сохранив программу тура. Ada Tours не несет ответственности за пропущенные завтраки в отелях при раннем выселении из-за раннего перелета или экскурсии.*
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos%20Aires.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
     alt: Буэнос-Айрес
 included: []
 notIncluded: []
@@ -233,7 +233,7 @@ priceFrom: 4195
 currency: USD
 priceNote: $4195
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/bra-salvador-left.jpg
+  src: /media/tours/tur-v-braziliyu-s-amazoniej-i-argentinu/itinerary-day-7-enhanced-20261006.webp
   alt: Бразилия и Аргентина Фан
 routeCountries:
 - country_brazil

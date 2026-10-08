@@ -53,7 +53,7 @@ itinerary:
 
     Белая одежда в новогоднюю ночь, подарки Иманже, фейерверк над водой и бесплатные концерты на пляже формируют отдельную часть программы, ради которой даты тура жестко привязаны к концу декабря и началу января. Тур рассчитан на конкретные даты 30 декабря 2024 года - 8 января 2025 года.
   images:
-  - src: https://brasiltours.ru/image/Rio_de_Janeiro_from_Corcovado_mountain.png
+  - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-1-enhanced-20261006.webp
     alt: 'На фото: Вид с высоты на Рио-де-Жанейро'
 - day: 3
   title: 1 января. Свободный день в Рио
@@ -64,7 +64,7 @@ itinerary:
 
     При желании можно заказать дополнительные экскурсии.
   images:
-  - src: https://brasiltours.ru/image/lapa%20at%20ni.png
+  - src: /media/excursions/rio-nochyu-lapa/gallery-1-enhanced-20261007.webp
     alt: 'На фото: Район Лапа в Рио-де-Жанейро'
 - day: 4
   title: 2 января. Сахарная Голова и исторический центр
@@ -83,7 +83,7 @@ itinerary:
 
     На вечер рекомендован Marius Degustare с морепродуктами.
   images:
-  - src: https://brasiltours.ru/image/guanabara11.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Гора Сахарная голова в Рио-де-Жанейро'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -100,7 +100,7 @@ itinerary:
 
     Для ужина рекомендован ресторан Itaipu в отеле.
   images:
-  - src: https://brasiltours.ru/image/iguacu%20national%20park.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу, Бразилия'
   - src: https://brasiltours.ru/image/new%20year%20in%20brazili.png
     alt: 'На фото: Новогодняя ёлка в Рио-де-Жанейро'
@@ -125,7 +125,7 @@ itinerary:
 
     Дополнительно
   images:
-  - src: https://brasiltours.ru/image/iguasu%20national%20park.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
@@ -146,7 +146,7 @@ itinerary:
 
     На Игуасу предусмотрено 3 ночи, поэтому водопады можно увидеть без спешки: сначала бразильскую сторону, затем аргентинскую, а между ними при желании добавить Парк птиц или Макуко Сафари. Размещение в Belmond das Cataratas сокращает переезды, потому что отель находится непосредственно на территории национального парка.
   images:
-  - src: https://brasiltours.ru/image/iguacu%20national%20park.11png.png
+  - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу, Бразилия'
 - day: 8
   title: 6 января. Фоз-ду-Игуасу - Манаус
@@ -163,9 +163,9 @@ itinerary:
 
     Вечером можно отправиться на катере наблюдать за аллигаторами и другими ночными животными в национальном парке Anavilhanas.
   images:
-  - src: https://brasiltours.ru/image/iguasu%20national%20park.png
+  - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-11-enhanced-20261006.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'
-  - src: https://brasiltours.ru/image/countries/brazil/bra-amazonia-1.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-8-enhanced-20261006.webp
     alt: 'На фото: Манаус, Амазонка в Бразилии'
 - day: 9
   title: 7 января. Anavilhanas и традиционные общины
@@ -184,7 +184,7 @@ itinerary:
 
     Амазонская часть маршрута устроена так, чтобы показать и лес, и жизнь местных общин, и большие реки. Один день меняется в зависимости от сухого или дождливого сезона, а финальный переезд в Манаус превращается в отдельную экскурсию со Встречей вод, Victoria Regia и розовыми дельфинами.
   images:
-  - src: https://brasiltours.ru/image/Amazon,%20Manaus.png
+  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
     alt: 'На фото: Река Амазонка в Бразилии'
 - day: 10
   title: 8 января. Встреча вод и розовые дельфины
@@ -231,7 +231,7 @@ priceFrom: 22844
 currency: USD
 priceNote: $22844
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/daniel-krithinas-9qit7slgnwo-unsplash.jpg
+  src: /media/tours/nezabyvaemyj-novyj-god-v-rio/hero-enhanced-20261006.webp
   alt: 'На фото: Новогодние фейерверки в Рио'
 routeCountries:
 - country_brazil

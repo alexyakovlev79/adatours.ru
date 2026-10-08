@@ -54,7 +54,7 @@ itinerary:
 
     Свободный вечер для отдыха.
   images:
-  - src: https://brasiltours.ru/image/MEXICOCITY-PYRAMIDSSHIREOFGUADALIPE1-770X400.png
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 2
   title: Теотиуакан, Базилика Девы Гваделупы и Мехико-Сити, 140 км
@@ -70,9 +70,9 @@ itinerary:
 
     Еще одна точка дня - Базилика Девы Гваделупы, покровительницы Мексики, с которой связано множество местных легенд.
   images:
-  - src: https://brasiltours.ru/image/countries/mexico/teotihuacan.jpg
+  - src: /media/countries/mexico/featureBands-1-enhanced-20261002.webp
     alt: Теотиуакан
-  - src: https://brasiltours.ru/image/MEXICOCITY-PYRAMIDSSHIREOFGUADALIPE1-770X400.png
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 3
   title: Мехико-Сити - Пуэбла - Оахака, 475 км
@@ -95,7 +95,7 @@ itinerary:
   images:
   - src: https://brasiltours.ru/image/Oaxaca%20City.png
     alt: Оахака
-  - src: https://brasiltours.ru/image/MEXICOCITY-PYRAMIDSSHIREOFGUADALIPE1-770X400.png
+  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Мехико
 - day: 4
   title: Оахака - Монте-Альбан - дегустация мескаля - Теуантепек, 255 км
@@ -148,7 +148,7 @@ itinerary:
 
     Размещение в отеле 4* в Паленке.
   images:
-  - src: https://brasiltours.ru/image/Palenque.png
+  - src: /media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Паленке
   - src: https://brasiltours.ru/image/san%20cristobal%20de%20las%20casas.png
     alt: Сан Кристобал де Лас Касас
@@ -168,9 +168,9 @@ itinerary:
 
     Размещение в отеле 4*.
   images:
-  - src: https://brasiltours.ru/image/Campeche.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Кампече
-  - src: https://brasiltours.ru/image/Palenque.png
+  - src: /media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Паленке
 - day: 8
   title: Кампече - Ушмаль - Мерида, 160 км
@@ -189,7 +189,7 @@ itinerary:
 
     Размещение в отеле.
   images:
-  - src: https://brasiltours.ru/image/Campeche.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Кампече
 - day: 9
   title: Мерида - Чичен-Ица - сенот - Канкун
@@ -206,7 +206,7 @@ itinerary:
 
     После экскурсии - купание в кристально чистом карстовом озере, сеноте. Подземным водам здесь приписывают целебные свойства. Затем переезд в Канкун или на Ривьеру Майя и размещение в заранее забронированном отеле.
   images:
-  - src: https://brasiltours.ru/image/Cancn.png
+  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
     alt: Канкун
 included:
 - Транспорт по маршруту. Для группы 1-3 человека используется легковой автомобиль, для большего количества участников - минивэн.
@@ -241,7 +241,7 @@ priceFrom: 2701
 currency: USD
 priceNote: $2701
 hero:
-  src: https://brasiltours.ru/image/Mexico%20City.png
+  src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
   alt: Вся Мексика
 routeCountries:
 - country_mexico

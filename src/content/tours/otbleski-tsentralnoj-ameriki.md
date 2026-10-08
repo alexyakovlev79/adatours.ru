@@ -63,7 +63,7 @@ itinerary:
 
     **Ночь:** Villa Colonial.
   images:
-  - src: https://brasiltours.ru/image/Antigua_HillView.png
+  - src: /media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp
     alt: 'Ну фото: Улица Антигуа-Гуатемала'
 - day: 2
   title: Антигуа
@@ -76,7 +76,7 @@ itinerary:
     \ Гватемала.\n\nЭкскурсия начнется на главной площади исторического центра и продолжится у основных памятников города.\n\
     \n**Ночь:** Villa Colonial.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Antigua_HillView.png
+  - src: /media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp
     alt: 'Ну фото: Улица Антигуа-Гуатемала'
 - day: 3
   title: Антигуа - вулкан Пакайя - озеро Атитлан
@@ -92,9 +92,9 @@ itinerary:
     \ начинается примерно с 1900 м и продолжается до отметки около 2300 м. После спуска трансфер к озеру Атитлан.\n\n**Ночь:**\
     \ Villa Santa Catarina.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/Lake%20Atitln.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: Вид на озеро Атитлан'
-  - src: https://brasiltours.ru/image/Antigua_HillView.png
+  - src: /media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp
     alt: 'Ну фото: Улица Антигуа-Гуатемала'
 - day: 4
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан
@@ -115,7 +115,7 @@ itinerary:
     \ увидеть городских старейшин в традиционной одежде. После экскурсии возвращение к Атитлану.\n\n**Ночь:** Villa Santa\
     \ Catarina.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20lake%20atitlan.png
+  - src: /media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Озеро Атитлан, Гватемала'
 - day: 5
   title: Чичикастенанго - Гватемала-Сити
@@ -145,7 +145,7 @@ itinerary:
     \ майя.\n\nСегодня национальный парк Тикаль занимает 575 кв. км. В 1979 году он был включен в список Всемирного наследия\
     \ ЮНЕСКО как культурный и природный объект.\n\n**Ночь:** Villa Maya.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20flores.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: Флорес, Гватемала'
 - day: 7
   title: Флорес - Рио-Дульсе - Ливингстон
@@ -162,7 +162,7 @@ itinerary:
     \ только по воде. Культура гарифуна здесь сочетает африканские, карибские и европейские элементы.\n\n**Ночь:** Villa Caribe.\
     \  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/guatemala%20flores.png
+  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: Флорес, Гватемала'
 - day: 8
   title: Рио-Дульсе - Киригуа - Копан, Гондурас
@@ -176,7 +176,7 @@ itinerary:
     \ лицом. Монолитные скульптуры весом до 65 тонн были высечены без железных орудий.\n\nПосле экскурсии трансфер в Гондурас.\n\
     \n**Ночь:** Clarion Copan Ruinas.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/copan%20gonduras.png
+  - src: /media/tours/mir-majya/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Копан в Гондурасе'
 - day: 9
   title: Копан - Сан-Сальвадор
@@ -188,7 +188,7 @@ itinerary:
     \ периода. Каждая из ее 63 ступеней украшена письменами, а по сторонам расположены балюстрады с изображениями змей и птиц.\n\
     \nПосле осмотра комплекса переезд в Сан-Сальвадор.\n\n**Ночь:** Barceló San Salvador.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/copan%20gonduras.png
+  - src: /media/tours/mir-majya/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Копан в Гондурасе'
 - day: 10
   title: Сан-Сальвадор - Сан-Андрес - Хойя-де-Серен
@@ -214,7 +214,7 @@ itinerary:
     \ музей Ортиса Гурдиана и увидите революционные фрески.\n\nПосле экскурсии переезд в Манагуа.\n\n**Ночь:** Real Intercontinental\
     \ Metrocento Managua.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/nicaragua%20leon1.png
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Город Леон, Никарагуа'
 - day: 12
   title: Манагуа - Масая - Гранада
@@ -265,7 +265,7 @@ itinerary:
     Далее поездка на лодке через озеро Ареналь. В районе Монтеверде также живет сельское сообщество квакеров и тико.\n\n**Ночь:**\
     \ Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак."
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-middle.jpg
+  - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/hero-src-enhanced-20261007.webp
     alt: 'На фото: Люди в каное на озере Ареналь'
 - day: 17
   title: Ареналь - заповедник Каньо-Негро
@@ -277,7 +277,7 @@ itinerary:
     \ комфортабельном судне. Основная часть экскурсии посвящена наблюдению за природой с воды.\n\n**Ночь:** Arenal Paraíso\
     \ Resort & Spa.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-middle.jpg
+  - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/hero-src-enhanced-20261007.webp
     alt: 'На фото: Люди в каное на озере Ареналь'
 - day: 18
   title: Ареналь - вулкан Поас - Ла-Пас - Сан-Хосе
@@ -293,7 +293,7 @@ itinerary:
     \ галерею колибри, серпентарий, дом птиц, сад бабочек и экспозицию лягушек. После экскурсии трансфер в Сан-Хосе.\n\n**Ночь:**\
     \ Barceló San Jose Palacio.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/costa-rica/costa-rica-arenal-middle.jpg
+  - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/hero-src-enhanced-20261007.webp
     alt: 'На фото: Люди в каное на озере Ареналь'
 - day: 19
   title: Сан-Хосе

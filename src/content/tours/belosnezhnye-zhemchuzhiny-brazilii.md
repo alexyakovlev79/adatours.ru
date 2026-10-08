@@ -51,7 +51,7 @@ itinerary:
 
     Затем маршрут продолжается в Олинде. Вы увидите церковь Милосердия, монастырь Святого Бенедикта и церковь Спасителя на холме Алту-да-Се. Отсюда открывается вид на Олинду и Ресифи. Олинда входит в список Всемирного культурного наследия ЮНЕСКО.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/bra-recife-left.jpg
+  - src: /media/tours/belosnezhnye-zhemchuzhiny-brazilii/archive-28-src-enhanced-20261008.webp
     alt: 'на фото: Улочки Ресифи'
 - day: 3
   title: Порту-де-Галиньяс
@@ -62,7 +62,7 @@ itinerary:
 
     Курорт находится примерно в 60 км к югу от Ресифи. Он известен прозрачной бирюзовой водой, белым песком и пальмами вдоль берега. Пляжная зона считается одной из самых известных в Бразилии.
   images:
-  - src: https://brasiltours.ru/image/porto%20de%20ga1.png
+  - src: /media/tours/belosnezhnye-zhemchuzhiny-brazilii/archive-29-src-enhanced-20261008.webp
     alt: 'на фото: Пляж Порту де Галиньяс'
 - day: 4
   title: Порту-де-Галиньяс
@@ -81,7 +81,7 @@ itinerary:
 
     На курорте много ресторанов и кафе со свежей рыбой. Вечером работают бары, дискотеки и традиционные шоу.
   images:
-  - src: https://brasiltours.ru/image/porto%20de%20ga1.png
+  - src: /media/tours/belosnezhnye-zhemchuzhiny-brazilii/archive-29-src-enhanced-20261008.webp
     alt: 'на фото: Пляж Порту де Галиньяс'
 - day: 5
   title: Порту-де-Галиньяс - Фернанду-ди-Норонья
@@ -93,9 +93,9 @@ itinerary:
 
     По прибытии встреча и трансфер в отель. Время для отдыха.
   images:
-  - src: https://brasiltours.ru/image/Fernando_de_Noronha_-_Pernambuco_-_Brasil(5).jpg
+  - src: /media/tours/belosnezhnye-zhemchuzhiny-brazilii/archive-30-src-enhanced-20261008.webp
     alt: 'на фото: Фернанду ди Норонья'
-  - src: https://brasiltours.ru/image/porto%20de%20ga1.png
+  - src: /media/tours/belosnezhnye-zhemchuzhiny-brazilii/archive-29-src-enhanced-20261008.webp
     alt: 'на фото: Пляж Порту де Галиньяс'
 - day: 6
   title: 'Фернанду-ди-Норонья: остров на 4x4'
@@ -116,7 +116,7 @@ itinerary:
 
     В конце дня предусмотрены еще несколько пляжей: Cacimba do Padre, известный серфингом, Baia dos Porcos и Praia do Bode. После экскурсии возвращение в отель.
   images:
-  - src: https://brasiltours.ru/image/Fernando_de_Noronha_-_Pernambuco_-_Brasil(5).jpg
+  - src: /media/tours/belosnezhnye-zhemchuzhiny-brazilii/archive-30-src-enhanced-20261008.webp
     alt: 'на фото: Фернанду ди Норонья'
 - day: 7
   title: Дайвинг
@@ -137,7 +137,7 @@ itinerary:
 
     Продолжительность программы около 3-4 часов. Продолжительность одного погружения около 30-40 минут.
   images:
-  - src: https://brasiltours.ru/image/Fernando_de_Noronha_-_Pernambuco_-_Brasil(5).jpg
+  - src: /media/tours/belosnezhnye-zhemchuzhiny-brazilii/archive-30-src-enhanced-20261008.webp
     alt: 'на фото: Фернанду ди Норонья'
 - day: 8
   title: Фернанду-ди-Норонья
@@ -148,7 +148,7 @@ itinerary:
 
     Можно отдыхать на пляжах или выбрать дополнительные погружения, прогулку на лодке либо один из треккинговых маршрутов.
   images:
-  - src: https://brasiltours.ru/image/Fernando_de_Noronha_-_Pernambuco_-_Brasil(5).jpg
+  - src: /media/tours/belosnezhnye-zhemchuzhiny-brazilii/archive-30-src-enhanced-20261008.webp
     alt: 'на фото: Фернанду ди Норонья'
 - day: 9
   title: Фернанду-ди-Норонья
@@ -158,7 +158,7 @@ itinerary:
 
     Можно отдыхать на пляжах или выбрать дополнительные погружения, прогулку на лодке либо один из треккинговых маршрутов.
   images:
-  - src: https://brasiltours.ru/image/Fernando_de_Noronha_-_Pernambuco_-_Brasil(5).jpg
+  - src: /media/tours/belosnezhnye-zhemchuzhiny-brazilii/archive-30-src-enhanced-20261008.webp
     alt: 'на фото: Фернанду ди Норонья'
 - day: 10
   title: Фернанду-ди-Норонья
@@ -166,7 +166,7 @@ itinerary:
   - Фернанду-ди-Норонья
   text: Завтрак в отеле. В назначенное время трансфер в аэропорт и перелет в Ресифи.
   images:
-  - src: https://brasiltours.ru/image/Fernando_de_Noronha_-_Pernambuco_-_Brasil(5).jpg
+  - src: /media/tours/belosnezhnye-zhemchuzhiny-brazilii/archive-30-src-enhanced-20261008.webp
     alt: 'на фото: Фернанду ди Норонья'
 included:
 - Перелет Ресифи - Фернанду-ди-Норонья - Ресифи.

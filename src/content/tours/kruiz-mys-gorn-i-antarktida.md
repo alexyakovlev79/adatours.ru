@@ -40,7 +40,7 @@ priceFrom: 5995
 currency: USD
 dates: []
 hero:
-  src: https://brasiltours.ru/image/pinguins.png
+  src: /media/tours/kruiz-mys-gorn-i-antarktida/archive-24-src-enhanced-20261008.webp
   alt: "Пингвины в Антарктиде"
 gallery: []
 featured: false
@@ -81,7 +81,7 @@ itinerary:
       
       Пролив получил название в честь британского мореплавателя XVI века сэра Фрэнсиса Дрейка.
     images:
-      - src: https://brasiltours.ru/image/ushuaia2.png
+      - src: /media/tours/kruiz-mys-gorn-i-antarktida/archive-25-src-enhanced-20261008.webp
         alt: "Мыс Горн и пролив Дрейка"
         intendedSlot: "itinerary:day-2"
   - day: 3

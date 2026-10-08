@@ -45,7 +45,7 @@ itinerary:
 
     Остаток дня свободный.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/6.jpg
+  - src: /media/tours/ekzoticheskij-novyj-god-ru/archive-22-src-enhanced-20261008.webp
     alt: Встреча Нового Года в Рио-де-Жанейро, Бразилия
 - day: 2
   title: 31 декабря 2025. Корковадо и Новый год на Копакабане
@@ -94,7 +94,7 @@ itinerary:
 
     Также можно попробовать местную кухню: фейжоаду, блюда из рыбы и креветок. Вечером набережные снова заполняются людьми, в кафе готовят кайпиринью.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/6.jpg
+  - src: /media/tours/ekzoticheskij-novyj-god-ru/archive-22-src-enhanced-20261008.webp
     alt: Встреча Нового Года в Рио-де-Жанейро, Бразилия
 - day: 5
   title: 3 января 2026. Рио-де-Жанейро - Фос-ду-Игуасу
@@ -111,7 +111,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
     alt: Туристы на мостике над водой у водопадов Игуасу, близкий вид на каскады
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/6.jpg
+  - src: /media/tours/ekzoticheskij-novyj-god-ru/archive-22-src-enhanced-20261008.webp
     alt: Встреча Нового Года в Рио-де-Жанейро, Бразилия
 - day: 6
   title: 4 января 2026. Бразильская сторона Игуасу
@@ -172,7 +172,7 @@ itinerary:
 
     В программу отдыха в лодже входят прогулки по лесу, рыбалка и вечерние наблюдения. Во время ночного выхода гид ищет животных с фонарем, в том числе кайманов.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/amazonka.jpg
+  - src: /media/tours/ekzoticheskij-novyj-god-ru/archive-23-src-enhanced-20261008.webp
     alt: Эко-отдых в Манаусе на Амазонке в Бразилии, джунгли, наблюдение за дикой природой
   - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Водопады Игуасу в Бразилии и Аргентине, вид сверху на каскады и джунгли
@@ -216,7 +216,7 @@ itinerary:
   images:
   - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Спокойный отдых на курорте Бузиос в Бразилии, бухты и уединённые пляжи у океана
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/amazonia/amazonka.jpg
+  - src: /media/tours/ekzoticheskij-novyj-god-ru/archive-23-src-enhanced-20261008.webp
     alt: Эко-отдых в Манаусе на Амазонке в Бразилии, джунгли, наблюдение за дикой природой
 - day: 11
   title: 9 января 2026. Бузиос
@@ -245,7 +245,7 @@ itinerary:
   images:
   - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
     alt: Спокойный отдых на курорте Бузиос в Бразилии, бухты и уединённые пляжи у океана
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/6.jpg
+  - src: /media/tours/ekzoticheskij-novyj-god-ru/archive-22-src-enhanced-20261008.webp
     alt: Встреча Нового Года в Рио-де-Жанейро, Бразилия
 included:
 - Проживание в отелях по программе.
@@ -273,7 +273,7 @@ priceFrom: 6401
 currency: USD
 priceNote: $6401
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/6.jpg
+  src: /media/tours/ekzoticheskij-novyj-god-ru/archive-22-src-enhanced-20261008.webp
   alt: Встреча Нового Года в Рио-де-Жанейро, Бразилия
 routeCountries:
 - country_brazil

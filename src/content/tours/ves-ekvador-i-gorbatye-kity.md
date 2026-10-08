@@ -58,7 +58,7 @@ itinerary:
 
     **Питание:** ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy1.jpg
+  - src: /media/tours/ves-ekvador-i-gorbatye-kity/archive-26-src-enhanced-20261008.webp
     alt: Кито
 - day: 2
   title: Кито и линия экватора
@@ -128,7 +128,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy1.jpg
+  - src: /media/tours/ves-ekvador-i-gorbatye-kity/archive-26-src-enhanced-20261008.webp
     alt: Кито
 - day: 4
   title: Баньос, Проспект водопадов и возвращение в Кито
@@ -198,7 +198,7 @@ itinerary:
   images:
   - src: /media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-1-src-enhanced-20261007.webp
     alt: Галапагосские острова
-  - src: https://brasiltours.ru/image/countries/equador/ecu-quito-copy1.jpg
+  - src: /media/tours/ves-ekvador-i-gorbatye-kity/archive-26-src-enhanced-20261008.webp
     alt: Кито
 - day: 6
   title: Морская экскурсия на остров Бартоломе
@@ -352,7 +352,7 @@ priceFrom: 3715
 currency: USD
 priceNote: $3715
 hero:
-  src: https://brasiltours.ru/image/countries/equador/img-20210923-wa0029.jpg
+  src: /media/tours/ves-ekvador-i-gorbatye-kity/archive-27-src-enhanced-20261008.webp
   alt: Лучшее из Эквадора + Галапагосы и горбатые киты!
 routeCountries:
 - country_ecuador

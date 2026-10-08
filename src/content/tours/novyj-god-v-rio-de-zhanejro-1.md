@@ -72,7 +72,7 @@ itinerary:
 
     Вечером можно поужинать в ресторане морепродуктов **Marius Degustare**, интерьер которого оформлен в стиле затонувшего корабля с сокровищами.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/jaime-dantas-sp4cvudiy5u-unsplash-2.jpg
+  - src: /media/tours/novyj-god-v-rio-de-zhanejro-1/archive-21-src-enhanced-20261008.webp
     alt: 'На фото: Вид с берега на гору Сахарная голова'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []

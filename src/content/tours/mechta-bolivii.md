@@ -51,7 +51,7 @@ itinerary:
     Ночь в Ла-Пасе.
   images:
   - src: /media/excursions/la-pas-siti-tur/gallery-1-enhanced-20261006.webp
-    alt: Ла Пас
+    alt: "Ла Пас"
 - day: 2
   title: Ла-Пас - Копакабана - остров Солнца - Ла-Пас
   places:
@@ -78,7 +78,7 @@ itinerary:
     Возвращение в Ла-Пас, трансфер и ночь в отеле.
   images:
   - src: /media/excursions/la-pas-siti-tur/hero-enhanced-20261006.webp
-    alt: Ла Пас
+    alt: "Ла Пас"
 - day: 3
   title: Ла-Пас - Уюни - Колчани
   places:
@@ -105,9 +105,9 @@ itinerary:
     Возвращение в Колчани.
   images:
   - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
-    alt: Ла Пас
+    alt: "Ла Пас"
   - src: /media/tours/mechta-bolivii/itinerary-day-3-images-1-enhanced-20261006.webp
-    alt: Уюни
+    alt: "Уюни"
 - day: 4
   title: Колчани - лагуны - пустыня Силоли
   places:
@@ -125,6 +125,9 @@ itinerary:
     Прибытие в пустыню Силоли.
 
     Размещение и ночь в пустынном отеле.
+  images:
+  - src: /media/destinations/laguna-canapa/hero-generated-20261008.webp
+    alt: "Лагуна Каньяпа"
 - day: 5
   title: Пустыня Силоли - Зеленая лагуна - Уюни
   places:
@@ -150,7 +153,7 @@ itinerary:
     Размещение и ночь в отеле.
   images:
   - src: /media/tours/mechta-bolivii/itinerary-day-5-enhanced-20261006.webp
-    alt: Уюни
+    alt: "Уюни"
 - day: 6
   title: Уюни - Ла-Пас
   places:
@@ -176,13 +179,14 @@ itinerary:
     Размещение и ночь в Ла-Пасе.
   images:
   - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: Ла Пас
-  - src: /media/tours/mechta-bolivii/itinerary-day-3-images-1-enhanced-20261006.webp
-    alt: Уюни
+    alt: "Ла Пас"
 - day: 7
   title: Вылет
   places: []
   text: После завтрака трансфер в аэропорт.
+  images:
+  - src: /media/destinations/la-pas/gallery-1-enhanced-20261003.webp
+    alt: "На фото: столица Боливии город Ла Пас"
 included:
 - 3 ночи в Ла-Пасе, Rosario Sur
 - 1 ночь на солончаке Уюни

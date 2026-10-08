@@ -44,7 +44,7 @@ const tourCatalog = interestTourCatalogPath(d);
         <header class="theme-heading"><p class="eyebrow">Готовые маршруты · {countLabel(hub.allTours.length)}</p><h2>{copy.toursTitle}</h2>
           <p>{copy.tourIntro}</p></header>
         {hub.tours.length > 0 ? <div class="theme-grid">{hub.tours.map((tour) => <InterestCard
-          entityId={tour.data.id} title={tour.data.title} text={excerpt(tour.data.lead)} image={tour.data.hero?.src} href={tourPath(tour.data)}
+          entityId={tour.data.id} title={tour.data.title} image={tour.data.hero?.src} href={tourPath(tour.data)}
           eyebrow={d.name}
           meta={[tour.data.durationDays ? countLabel(tour.data.durationDays, ['день', 'дня', 'дней']) : '', ...(tour.data.routeCountries ?? tour.data.countries).map((id) => countryNames.get(id)).filter(Boolean)].join(' · ')}
         />)}</div> : <p class="theme-empty">Готового тура с этим интересом в действующем каталоге пока нет. Расскажите, что для вас важно: подберём программу индивидуально.</p>}

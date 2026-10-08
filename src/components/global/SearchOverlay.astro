@@ -223,7 +223,10 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         const subtitle = String(data.meta?.subtitle ?? '').trim();
         metaTail.textContent = subtitle ? ` · ${subtitle}` : '';
       }
-      if (summary instanceof HTMLElement) summary.textContent = data.meta?.summary ?? '';
+      if (summary instanceof HTMLElement) {
+        if (data.meta?.entity_type === 'tour') summary.remove();
+        else summary.textContent = data.meta?.summary ?? '';
+      }
       return fragment;
     };
 

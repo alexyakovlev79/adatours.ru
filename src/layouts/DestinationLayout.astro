@@ -182,7 +182,6 @@ const destinationSchema = {
         <DestinationBand
           eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
           title={tour.data.title}
-          text={tour.data.lead}
           image={tour.data.hero?.src}
           imageTextAlign={tour.data.imageTextAlign}
           mediaStatus={tour.data.hero?.status}
@@ -204,7 +203,6 @@ const destinationSchema = {
         <DestinationBand
           eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
           title={tour.data.title}
-          text={tour.data.lead}
           image={tour.data.hero?.src}
           imageTextAlign={tour.data.imageTextAlign}
           mediaStatus={tour.data.hero?.status}

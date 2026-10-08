@@ -83,7 +83,7 @@ const cards = entries.map((entry) => {
     return {
       data: d,
       title: d.title,
-      text: curatedTour ? undefined : d.lead,
+      text: undefined,
       href: tourPath(d),
       meta: [
         curatedTour ? mainTourCountries(d).map((country) => country.name).join(' + ') : '',

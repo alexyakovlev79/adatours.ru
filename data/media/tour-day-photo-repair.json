@@ -7,15 +7,15 @@
     "tourIds": [
       "tour_source_braziliya_argentina_chili_peru_ru"
     ],
-    "cursor": 0
+    "cursor": 1
   },
   "tours": [
     {
       "tourId": "tour_source_braziliya_argentina_chili_peru_ru",
       "contentPath": "src/content/tours/braziliya-argentina-chili-peru-ru.md",
       "sourceBlobSha": "cbfa771a5ca42ae8871e3b219cc1a6f7177148ee",
-      "status": "content_ready_for_deploy",
-      "published": false,
+      "status": "completed",
+      "published": true,
       "selectedDays": 15,
       "removedDuplicates": [
         {
@@ -206,9 +206,7 @@
           "acceptance": "Accepted: one independent continuous photograph, correct country and requested location, distinct scene, no panels or labels."
         }
       ],
-      "remainingTasks": [
-        "Verify Actions build/deploy and synchronize addressed spreadsheet rows"
-      ],
+      "remainingTasks": [],
       "previousStatus": "blocked_image_generation",
       "currentPassGeneration": {
         "calls": 7,
@@ -230,7 +228,7 @@
           "id": "destination_peru_moraj",
           "contentPath": "src/content/destinations/moray.md",
           "url": "/peru/place/moray/",
-          "status": "prepared"
+          "status": "published"
         }
       ],
       "itineraryFingerprint": "e9ec9428bdfd30db388992b7b5d52c5a5b8c5ca854ccdb1415582922976ad742",
@@ -240,7 +238,47 @@
         "textAndOrderPreserved": true,
         "allScenesVisuallyCompared": true,
         "webpDecoded": true,
-        "newImagesSingleScene": true
+        "newImagesSingleScene": true,
+        "production": {
+          "days": 15,
+          "images": 16,
+          "uniqueImagePaths": 16,
+          "allImagesLoaded": true,
+          "morayPageAndHeroLoaded": true,
+          "screenshot": "docs/reports/tour-photo-repair-1791444493957.jpg"
+        }
+      },
+      "publication": {
+        "contentCommit": "20665f86f5012ca12bda90ab5908ffef507b4a0f",
+        "deployedCommit": "d1d413f55ebe985a566b7522d6b56bba21367713",
+        "workflowRunId": 37742924428,
+        "conclusion": "success",
+        "verifiedAt": "2026-10-08",
+        "url": "https://alexyakovlev79.github.io/adatours.ru/multi-country/tour/brazil-argentina-chile-peru-15-days/"
+      },
+      "spreadsheetSync": {
+        "status": "completed",
+        "date": "2026-10-08",
+        "photoRows": [
+          621,
+          623,
+          624,
+          626,
+          627,
+          628,
+          2392,
+          2511,
+          2877,
+          2878,
+          4781,
+          4782,
+          4783
+        ],
+        "pageRow": 808,
+        "queueRow": 136,
+        "protectedAcceptancePreserved": true,
+        "existingQueueTourReferencesPreserved": true,
+        "readAfterWriteVerified": true
       }
     }
   ],

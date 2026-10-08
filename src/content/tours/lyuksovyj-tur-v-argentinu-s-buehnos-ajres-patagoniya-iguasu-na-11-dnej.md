@@ -388,8 +388,8 @@ itinerary:
       
       Оставшаяся часть дня проходит у Игуасу.
     images:
-      - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-8-enhanced-20261006.webp
-        alt: "Belmond das Cataratas, Игуасу"
+      - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-08-generated-20261008-v1.webp
+        alt: "Отель Belmond Hotel das Cataratas в бразильском национальном парке Игуасу"
         intendedSlot: "itinerary:day-8"
   - day: 9
     title: "Бразильская сторона Игуасу"

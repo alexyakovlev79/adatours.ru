@@ -298,8 +298,8 @@ itinerary:
       
       Размещение на 1 ночь в выбранном отеле. Оставшееся время свободно, поэтому вечер можно провести самостоятельно после нескольких дней в Ибере.
     images:
-      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
-        alt: "Возвращение в Буэнос-Айрес"
+      - src: /media/tours/tur-v-argentinu-na-dikuyu-prirodu/itinerary-day-08-generated-20261008-v1.webp
+        alt: "Панорама Буэнос-Айреса после возвращения из Иберы"
         intendedSlot: "itinerary:day-8"
   - day: 9
     title: "Буэнос-Айрес, вылет домой"

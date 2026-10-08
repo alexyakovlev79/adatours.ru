@@ -86,8 +86,6 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
-    alt: 'на фото: Эль Калафате'
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: Буэнос-Айрес
 - day: 4
@@ -124,8 +122,6 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
-    alt: 'на фото: Эль Калафате'
   - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
     alt: Ушуайя
 - day: 6
@@ -172,8 +168,8 @@ itinerary:
 
     По прилете встреча и трансфер с водителем в отель.
   images:
-  - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
-    alt: Ушуайя
+  - src: /media/destinations/ushuajya/gallery-1-enhanced-20261002.webp
+    alt: На фото: город Ушуайя в Патагонии, Аргентина
 - day: 8
   title: Аргентинская сторона водопадов Игуасу
   places:
@@ -192,6 +188,9 @@ itinerary:
     На территории сохраняются характерные для региона флора и фауна.
 
     После экскурсии возвращение в отель.
+  images:
+  - src: /media/destinations/puerto-iguasu/gallery-2-enhanced-20261002.webp
+    alt: на фото: Водопады Игуасу
 - day: 9
   title: Бразильская сторона Игуасу - Рио-де-Жанейро
   places:
@@ -271,8 +270,8 @@ itinerary:
 
     Международный вылет домой.
   images:
-  - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
-    alt: Рио-де-Жанейро
+  - src: /media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp
+    alt: Рио-де-Жанейро вечером
 included:
 - Проживание в отелях по программе.
 - Экскурсии по программе.

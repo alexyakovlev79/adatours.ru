@@ -6,31 +6,35 @@ slug: fernando-de-noronha
 status: approved
 countryId: country_brazil
 destinationType: island
-summary: >-
-  Фернанду-ди-Норонья - архипелаг в Атлантике с вулканическими берегами, прозрачной водой и богатой морской жизнью. Сюда едут на несколько дней ради дайвинга, снорклинга, пляжей и океана.
+summary: Фернанду-ди-Норонья - архипелаг в Атлантике с вулканическими берегами, прозрачной водой и богатой морской жизнью. Сюда едут на несколько дней ради дайвинга, снорклинга, пляжей и океана.
 hero:
   src: /media/destinations/fernando-de-noronha/hero-enhanced-20261001.webp
   alt: Архипелаг Фернанду-ди-Норонья в Бразилии
-gallery: []
+gallery:
+- src: /media/destinations/destination_brazil_fernando_de_noronha/noronha-v2-generated-20261008.webp
+  alt: Фернанду-ди-Норонья - Бразилия
 relatedDestinations:
-  - destination_brazil_recife
-  - destination_brazil_porto_de_galinhas
+- destination_brazil_recife
+- destination_brazil_porto_de_galinhas
 featuredTours: []
 featuredExcursions: []
 facts:
-  - value: UNESCO 2001
-    label: охраняемый природный комплекс архипелага
-  - value: Вулканический
-    label: происхождение островов
-  - value: Дайвинг
-    label: один из главных форматов поездки
-  - value: Морская жизнь
-    label: черепахи, дельфины, рыбы и другие виды
+- value: UNESCO 2001
+  label: охраняемый природный комплекс архипелага
+- value: Вулканический
+  label: происхождение островов
+- value: Дайвинг
+  label: один из главных форматов поездки
+- value: Морская жизнь
+  label: черепахи, дельфины, рыбы и другие виды
 featureBands: []
 sourceUrl: https://brasiltours.ru/tury-v-fernandu-di-noronya-arhipelag-v-brazilii
 sourceSnapshot: page_texts_original/tury-v-fernandu-di-noronya-arhipelag-v-brazilii__981f2035.md
 updatedAt: 2026-09-26
-themes: ["theme_diving","theme_beach","theme_wildlife"]
+themes:
+- theme_diving
+- theme_beach
+- theme_wildlife
 ---
 
 Фернанду-ди-Норонья стоит выделить несколько отдельных дней. Здесь большая часть поездки проходит у воды: дайвинг, снорклинг, пляжи и прогулки с видами на Атлантику.

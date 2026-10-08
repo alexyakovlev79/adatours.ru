@@ -7718,7 +7718,8 @@
       "emptyDays": [],
       "remainingDuplicateGroups": [],
       "destinationSync": [],
-      "dayPhotosStatus": "completed"
+      "dayPhotosStatus": "completed",
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej",
@@ -7796,7 +7797,8 @@
       "emptyDays": [],
       "remainingDuplicateGroups": [],
       "destinationSync": [],
-      "dayPhotosStatus": "completed"
+      "dayPhotosStatus": "completed",
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_braziliya_s_plyazhami",
@@ -7837,7 +7839,8 @@
       "emptyDays": [],
       "remainingDuplicateGroups": [],
       "destinationSync": [],
-      "dayPhotosStatus": "completed"
+      "dayPhotosStatus": "completed",
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_braziliya_argentina_gruppovoj_tur",
@@ -7926,7 +7929,8 @@
           "remaining": null
         }
       ],
-      "dayPhotosStatus": "completed"
+      "dayPhotosStatus": "completed",
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_braziliya_gruppovoj_tur_na_13_dnej",
@@ -8020,7 +8024,8 @@
           "remaining": null
         }
       ],
-      "dayPhotosStatus": "completed"
+      "dayPhotosStatus": "completed",
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_braziliya_argentina_i_chili",
@@ -8131,13 +8136,14 @@
           "remaining": null
         }
       ],
-      "dayPhotosStatus": "completed"
+      "dayPhotosStatus": "completed",
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_led_solntse_i_kraj_zemli",
       "contentPath": "src/content/tours/led-solntse-i-kraj-zemli.md",
       "sourceBlobSha": "76a56d159f6ddea0eb47e1df1feb1368ab8160c7",
-      "status": "partial",
+      "status": "completed",
       "dayPhotosStatus": "completed",
       "published": false,
       "workflowVersion": "1.4",
@@ -8185,17 +8191,37 @@
           "slot": "itinerary[11].images[0]"
         }
       ],
-      "completedAssets": [],
+      "completedAssets": [
+        {
+          "key": "destination_argentina_ostrov_martilo",
+          "destinationId": "destination_argentina_ostrov_martilo",
+          "countryId": "country_argentina",
+          "tourId": "tour_source_led_solntse_i_kraj_zemli",
+          "src": "/media/destinations/destination_argentina_ostrov_martilo/hero-generated-20261008-resumed.webp",
+          "alt": "Остров Мартильо — Аргентина",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: ARGENTINA. Exact place: Martillo Island in the Beagle Channel, Tierra del Fuego, ARGENTINA. Scene: Magellanic penguins on the island low pebbly shore with cold Beagle Channel water and distant Fuegian mountains. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-cbb9e689-5fd8-4d4f-a148-c6c985ac0faf.png",
+          "accepted": true,
+          "acceptance": "Accepted single photograph, requested scene and country, no panels or labels.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
       "pendingGeneratedSlots": [],
       "emptyDays": [],
       "remainingDuplicateGroups": [],
       "destinationSync": [
         {
           "destinationId": "destination_argentina_ostrov_martilo",
-          "status": "pending",
-          "remaining": "Independent published place page/photo unavailable"
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_argentina_ostrov_martilo/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
         }
-      ]
+      ],
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_vkusy_brazilii",
@@ -8274,7 +8300,8 @@
       "emptyDays": [],
       "remainingDuplicateGroups": [],
       "destinationSync": [],
-      "dayPhotosStatus": "completed"
+      "dayPhotosStatus": "completed",
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_nezabyvaemaya_braziliya",
@@ -8370,7 +8397,8 @@
           ],
           "remaining": null
         }
-      ]
+      ],
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_braziliya_ot_san_paulo_do_buziosa",
@@ -8449,7 +8477,8 @@
       "emptyDays": [],
       "remainingDuplicateGroups": [],
       "destinationSync": [],
-      "dayPhotosStatus": "completed"
+      "dayPhotosStatus": "completed",
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_amazoniya",
@@ -8504,26 +8533,21 @@
           "src": "/media/destinations/destination_brazil_derevnya_akazhatuba/hero-generated-20261008-resumed.webp",
           "alt": "Деревня Акажатуба — Бразилия",
           "destinationId": "destination_brazil_derevnya_akazhatuba"
-        }
-      ],
-      "pendingGeneratedSlots": [
+        },
         {
           "day": 4,
           "itineraryIndex": 5,
-          "title": "Evolution Eco Lodge - Манаус - Рио-де-Жанейро",
-          "places": [
-            "Манаус и Амазония"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_amazon"
-          ],
-          "text": "После завтрака трансфер доставит вас из лоджа в Манаус, затем в аэропорт. Далее - обратный перелет в Рио-де-Жанейро."
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
         }
       ],
-      "dayPhotosStatus": "partial",
-      "status": "partial",
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
       "workflowVersion": "1.4",
-      "published": false
+      "published": false,
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_amazoniya_kruiz_tukano",
@@ -8630,7 +8654,8 @@
       "dayPhotosStatus": "completed",
       "status": "completed",
       "workflowVersion": "1.4",
-      "published": false
+      "published": false,
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_braziliya_s_detmi",
@@ -8741,28 +8766,54 @@
           "src": "/media/home/rio-night-enhanced-20260930.webp",
           "alt": "Лапа и культурная жизнь Рио",
           "destinationId": "destination_brazil_rio"
-        }
-      ],
-      "pendingGeneratedSlots": [
+        },
         {
           "day": 8,
           "itineraryIndex": 14,
-          "title": "Затопленный лес, пираньи и деревня кабокло",
-          "places": [],
-          "candidateDestinationIds": [],
-          "text": "После завтрака вы отправитесь по игапо, затопленному тропическому лесу.\n\nВо время высокого уровня воды лес превращается в сеть каналов, и лодка проходит между стволами деревьев. Здесь можно увидеть водные растения и разных обитателей джунглей.\n\nСледующая часть программы - рыбалка на пиранью. Гид покажет снасти и объяснит, как ловят этих рыб.\n\nЗатем вы отправитесь в сообщество кабокло, жителей смешанного индейского и европейского происхождения. Вы узнаете об их истории, увидите приготовление маниоковой муки и познакомитесь с растениями джунглей. Гид покажет, какие виды используют в быту и чем ядовитые растения отличаются от безопасных.\n\nТакже вы познакомитесь с изготовлением отравленных стрел как частью традиционных знаний местных жителей.\n\nЭтот день построен на постоянной смене впечатлений. Сначала тихое движение лодки между деревьями, затем азарт рыбалки, потом деревня и разговор о том, как люди живут в лесу, готовят продукты и используют растения. Для детей природоведение здесь превращается в реальное путешествие.\n\nПосле 2 дней в джунглях дети уже узнают Амазонию совсем не по картинкам. Они видят, как уровень воды меняет лес, как люди перемещаются по реке и как продукты, растения и рыбалка встроены в повседневную жизнь местных семей."
+          "src": "/media/home/amazon-enhanced-20260930.webp",
+          "destinationId": "destination_brazil_amazon",
+          "reason": "Regional place confirmed by surrounding Amazon itinerary and day program"
         }
       ],
-      "dayPhotosStatus": "partial",
-      "status": "partial",
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
       "workflowVersion": "1.4",
-      "published": false
+      "published": false,
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_little_mix_ru",
       "contentPath": "src/content/tours/little-mix-ru.md",
       "sheetRow": 357,
-      "completedAssets": [],
+      "completedAssets": [
+        {
+          "key": "praia-beach",
+          "destinationId": "destination_brazil_praia_do_forte",
+          "prompt": "Create ONE full-frame photorealistic travel photograph. Country and exact scene: BRAZIL, Praia do Forte, Bahia. A quiet palm-lined beach, pale sand and turquoise Atlantic water, natural morning daylight, relaxing seaside day. Wide eye-level shoreline view. Natural textures and proportions. Landscape 16:9 at least 1536 pixels wide. No collage, grid, panels, captions, text, watermark, logos, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-fdd15194-83f4-4177-a2f1-79a51ba71c59.png",
+          "accepted": true,
+          "acceptance": "Single full-frame photograph; requested place and scene, plausible local terrain and animal anatomy, no text or panels.",
+          "tourId": "tour_source_little_mix_ru",
+          "src": "/media/destinations/destination_brazil_praia_do_forte/praia-beach-generated-20261008.webp",
+          "alt": "Прайя-ду-Форте - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "praia-departure",
+          "destinationId": "destination_brazil_praia_do_forte",
+          "prompt": "Create ONE full-frame photorealistic travel photograph. Country and exact scene: BRAZIL, Praia do Forte village, Bahia. Close street view of low village buildings and palms on a calm pedestrian lane in early morning, authentic small Brazilian beach village. No invented landmark. Natural textures and proportions. Landscape 16:9 at least 1536 pixels wide. No collage, grid, panels, captions, text, watermark, logos, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-6d04d248-3304-4ee0-8dbe-c0ee632598b2.png",
+          "accepted": true,
+          "acceptance": "Single full-frame photograph; requested place and scene, plausible local terrain and animal anatomy, no text or panels.",
+          "tourId": "tour_source_little_mix_ru",
+          "src": "/media/destinations/destination_brazil_praia_do_forte/praia-departure-generated-20261008.webp",
+          "alt": "Прайя-ду-Форте - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
       "destinationSync": [],
       "removedDuplicates": [
         {
@@ -8811,36 +8862,28 @@
           "src": "/media/destinations/praia-do-forte/hero-enhanced-20261001.webp",
           "alt": "Побережье Прайя-ду-Форте в штате Баия",
           "destinationId": "destination_brazil_praia_do_forte"
-        }
-      ],
-      "pendingGeneratedSlots": [
+        },
         {
           "day": 10,
           "itineraryIndex": 9,
-          "title": "Прайя-ду-Форте",
-          "places": [],
-          "candidateDestinationIds": [
-            "destination_brazil_praia_do_forte"
-          ],
-          "text": "Два свободных дня у моря.\n\nОбязательной экскурсионной программы нет.\n\nМожно отдыхать на пляже, пользоваться инфраструктурой выбранного отеля или самостоятельно выбирать дополнительные активности.\n\nРазмещение продолжается в Pousada Casa do Forte."
+          "src": "/media/destinations/destination_brazil_praia_do_forte/praia-beach-generated-20261008.webp",
+          "alt": "Прайя-ду-Форте - Бразилия",
+          "destinationId": "destination_brazil_praia_do_forte"
         },
         {
           "day": 11,
           "itineraryIndex": 10,
-          "title": "Прайя-ду-Форте - аэропорт",
-          "places": [
-            "Прайя-ду-Форте"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_praia_do_forte"
-          ],
-          "text": "После завтрака предусмотрен трансфер в аэропорт.\n\nВылет домой.\n\nНа этом программа завершается."
+          "src": "/media/destinations/destination_brazil_praia_do_forte/praia-departure-generated-20261008.webp",
+          "alt": "Прайя-ду-Форте - Бразилия",
+          "destinationId": "destination_brazil_praia_do_forte"
         }
       ],
-      "dayPhotosStatus": "partial",
-      "status": "partial",
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
       "workflowVersion": "1.4",
-      "published": false
+      "published": false,
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_vazhnoe_brazilii",
@@ -8895,7 +8938,8 @@
       "dayPhotosStatus": "completed",
       "status": "completed",
       "workflowVersion": "1.4",
-      "published": false
+      "published": false,
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_kofe_tur_v_brazilii",
@@ -8971,6 +9015,20 @@
           "acceptance": "Accepted one continuous photographic scene; requested setting, no collage, labels or inset.",
           "generatedAt": "2026-10-08",
           "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_fazenda_florenca",
+          "destinationId": "destination_brazil_fazenda_florenca",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_kofe_tur_v_brazilii",
+          "src": "/media/destinations/destination_brazil_fazenda_florenca/hero-generated-20261008-resumed.webp",
+          "alt": "Fazenda Florença — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Fazenda Florenca coffee estate, Conservatoria, Rio de Janeiro state. Scene: coffee plant rows on green gently sloping land with a tree-lined plantation path, morning light, no invented historic facade. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-22884963-5a0e-4d5a-8f49-bfb0943788a5.png",
+          "accepted": true,
+          "acceptance": "Accepted single photograph, requested scene and country, no panels or labels.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
         }
       ],
       "destinationSync": [
@@ -9039,6 +9097,15 @@
             "/media/destinations/destination_brazil_fazenda_taquara/hero-generated-20261008-resumed.webp"
           ],
           "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_fazenda_florenca",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_fazenda_florenca/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
         }
       ],
       "removedDuplicates": [
@@ -9088,13 +9155,29 @@
       "dayPhotosStatus": "completed",
       "status": "completed",
       "workflowVersion": "1.4",
-      "published": false
+      "published": false,
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios",
       "contentPath": "src/content/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios.md",
       "sheetRow": 366,
-      "completedAssets": [],
+      "completedAssets": [
+        {
+          "key": "destination_brazil_kampo_grande",
+          "destinationId": "destination_brazil_kampo_grande",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios",
+          "src": "/media/destinations/destination_brazil_kampo_grande/hero-generated-20261008-resumed.webp",
+          "alt": "Кампо-Гранде — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Campo Grande, Mato Grosso do Sul. Scene: a broad urban avenue with low city buildings, palms and leafy trees under the inland tropical sky, authentic ordinary city scene without invented landmarks. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-c6cd6cac-7992-4817-9b2a-e4ae850ab18d.png",
+          "accepted": true,
+          "acceptance": "Accepted single photograph, requested scene and country, no panels or labels.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
       "destinationSync": [
         {
           "destinationId": "destination_brazil_petropolis",
@@ -9105,6 +9188,15 @@
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-1-enhanced-20261006.webp",
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-2-enhanced-20261006.webp",
             "/media/excursions/royal-petropolis-private-tour-full-day/gallery-2-src-enhanced-20261007.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_kampo_grande",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_kampo_grande/hero-generated-20261008-resumed.webp"
           ],
           "remaining": null
         }
@@ -9194,13 +9286,28 @@
       "dayPhotosStatus": "completed",
       "status": "completed",
       "workflowVersion": "1.4",
-      "published": false
+      "published": false,
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_rajskaya_braziliya",
       "contentPath": "src/content/tours/rajskaya-braziliya.md",
       "sheetRow": 367,
-      "completedAssets": [],
+      "completedAssets": [
+        {
+          "key": "noronha-v2",
+          "destinationId": "destination_brazil_fernando_de_noronha",
+          "prompt": "Create ONE full-frame photorealistic travel photograph. BRAZIL, Fernando de Noronha, Baia do Sancho beach. Close eye-level view from sandy beach towards clear turquoise Atlantic water and gentle surf, small volcanic rocks at one edge, green vegetation on near cliff edge. Avoid distant famous rock formations or invented cliff geometry: focus on water, sand and small shore rocks. Natural daylight and detailed textures. Landscape 16:9 at least 1536px wide. No collage, grid, panels, text, watermark, logos, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-b86fefbe-85f8-4a62-8106-cbb7834c4275.png",
+          "accepted": true,
+          "acceptance": "Single photograph; plausible requested local scene; no text, panels or invented prominent landmark.",
+          "tourId": "tour_source_rajskaya_braziliya",
+          "src": "/media/destinations/destination_brazil_fernando_de_noronha/noronha-v2-generated-20261008.webp",
+          "alt": "Фернанду-ди-Норонья - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
       "destinationSync": [],
       "removedDuplicates": [
         {
@@ -9262,98 +9369,333 @@
           "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
           "alt": "Панорама Рио-де-Жанейро",
           "destinationId": "destination_brazil_rio"
-        }
-      ],
-      "pendingGeneratedSlots": [
+        },
         {
           "day": 12,
           "itineraryIndex": 13,
-          "title": "Фернанду-ди-Норонья",
-          "places": [
-            "Фернанду-ди-Норонья"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_fernando_de_noronha"
-          ],
-          "text": "Свободный день.\n\nМожно провести его на пляжах или выбрать дополнительные активности: дайвинг, прогулку на лодке либо один из треккинговых маршрутов. Свободный день особенно уместен после длинной экскурсии 4x4: можно вернуться в понравившуюся бухту, провести больше времени в воде или выбрать маршрут, который позволяет увидеть архипелаг с моря."
+          "src": "/media/destinations/destination_brazil_fernando_de_noronha/noronha-v2-generated-20261008.webp",
+          "alt": "Фернанду-ди-Норонья - Бразилия",
+          "destinationId": "destination_brazil_fernando_de_noronha"
         }
       ],
-      "dayPhotosStatus": "partial",
-      "status": "partial",
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
       "workflowVersion": "1.4",
-      "published": false
+      "published": false,
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_severnyj_pantanal_vodopady_reki",
       "contentPath": "src/content/tours/severnyj-pantanal-vodopady-reki.md",
       "sheetRow": 372,
-      "completedAssets": [],
-      "destinationSync": [],
+      "completedAssets": [
+        {
+          "key": "destination_brazil_kuyaba",
+          "destinationId": "destination_brazil_kuyaba",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_severnyj_pantanal_vodopady_reki",
+          "src": "/media/destinations/destination_brazil_kuyaba/hero-generated-20261008-resumed.webp",
+          "alt": "Куяба — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Cuiaba, Mato Grosso. Scene: an ordinary daytime city street with modest Brazilian urban buildings, leafy tropical trees and warm daylight, no invented landmark. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-7bc44978-fcd6-4afb-b312-ec05c484e0e0.png",
+          "accepted": true,
+          "acceptance": "Accepted single photograph, requested scene and country, no panels or labels.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_bom_zhardim",
+          "destinationId": "destination_brazil_bom_zhardim",
+          "countryId": "country_brazil",
+          "tourId": "tour_source_severnyj_pantanal_vodopady_reki",
+          "src": "/media/destinations/destination_brazil_bom_zhardim/hero-generated-20261008-resumed.webp",
+          "alt": "Бом-Жардим — Бразилия",
+          "prompt": "Create ONE standalone photorealistic travel photograph. Country: BRAZIL. Exact place: Bom Jardim district near Nobres, Mato Grosso. Scene: clear freshwater surrounded by dense vegetation, small fish visible below the water surface, a modest wooden visitor walkway beside the pool. Credible local geography, realistic natural textures and proportions, natural daylight, one continuous landscape full-bleed 16:9 photograph at least 1536 pixels wide. No collage, grid, panels, labels, text, infographic, logo, watermark, border, frame or inset.",
+          "original": "/workspace/scratch/459022b59a6c/generated_images/exec-eaf25f7e-5b88-4e09-9f75-4c21f1b94e23.png",
+          "accepted": true,
+          "acceptance": "Accepted single photograph, requested scene and country, no panels or labels.",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "chapada-town",
+          "destinationId": "destination_brazil_gorod_shapada_dus_gimarajns",
+          "prompt": "Brazil, Chapada dos Guimaraes town, Mato Grosso, close street view of modest low colourful houses and leafy tree, no cliffs or invented monuments.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-ee4d2d62-8bd3-40b3-b8b4-3652ee0f7627.png",
+          "accepted": true,
+          "acceptance": "Single full-frame photograph; requested place and scene, plausible local terrain and animal anatomy, no text or panels.",
+          "tourId": "tour_source_severnyj_pantanal_vodopady_reki",
+          "src": "/media/destinations/destination_brazil_gorod_shapada_dus_gimarajns/chapada-town-generated-20261008.webp",
+          "alt": "Город Шапада-дус-Гимарайнс - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "chapada-park",
+          "destinationId": "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns",
+          "prompt": "Brazil, Chapada dos Guimaraes National Park, Veu de Noiva waterfall in red sandstone forested gorge.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-c61dcb5c-f2f3-4f14-86f6-fd80ff159b87.png",
+          "accepted": true,
+          "acceptance": "Single full-frame photograph; requested place and scene, plausible local terrain and animal anatomy, no text or panels.",
+          "tourId": "tour_source_severnyj_pantanal_vodopady_reki",
+          "src": "/media/destinations/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns/chapada-park-generated-20261008.webp",
+          "alt": "Национальный парк Шапада-дус-Гимарайнс - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "porto-jofre",
+          "destinationId": "destination_brazil_portu_zhofri",
+          "prompt": "Brazil, Porto Jofre, northern Pantanal, wild jaguar walking on sandy Cuiaba riverbank.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-d41d44d8-2109-4174-9ab5-81ca14003559.png",
+          "accepted": true,
+          "acceptance": "Single full-frame photograph; requested place and scene, plausible local terrain and animal anatomy, no text or panels.",
+          "tourId": "tour_source_severnyj_pantanal_vodopady_reki",
+          "src": "/media/destinations/destination_brazil_portu_zhofri/porto-jofre-generated-20261008.webp",
+          "alt": "Порту-Жофри - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "salobra",
+          "destinationId": "destination_brazil_reka_salobra",
+          "prompt": "Create ONE full-frame photorealistic travel photograph. Country and exact scene: BRAZIL, Salobra river near Bom Jardim and Nobres, Mato Grosso. Single split-level photograph of crystal-clear shallow river with small freshwater fish and submerged plants above a sandy bottom, forest-lined riverbanks. Realistic local vegetation, natural proportions and textures. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, captions, text, watermark, logos, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-983e3cbd-cba1-42e1-80af-4d2c474864f5.png",
+          "accepted": true,
+          "acceptance": "Single full-frame photograph; requested place and scene, plausible local terrain and animal anatomy, no text or panels.",
+          "tourId": "tour_source_severnyj_pantanal_vodopady_reki",
+          "src": "/media/destinations/destination_brazil_reka_salobra/salobra-generated-20261008.webp",
+          "alt": "Река Салобра - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "aquario",
+          "destinationId": "destination_brazil_zacharovannyj_akvarium",
+          "prompt": "Create ONE full-frame photorealistic travel photograph. Country and exact scene: BRAZIL, Aquario Encantado natural freshwater pool near Bom Jardim, Nobres, Mato Grosso. Single underwater photograph of a school of freshwater fish in clear spring water, pale sandy bottom, submerged logs and natural light. Realistic local vegetation, natural proportions and textures. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, captions, text, watermark, logos, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-9d16e36c-2508-4685-9aab-67fdf61190f2.png",
+          "accepted": true,
+          "acceptance": "Single full-frame photograph; requested place and scene, plausible local terrain and animal anatomy, no text or panels.",
+          "tourId": "tour_source_severnyj_pantanal_vodopady_reki",
+          "src": "/media/destinations/destination_brazil_zacharovannyj_akvarium/aquario-generated-20261008.webp",
+          "alt": "Зачарованный Аквариум - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "jaguar-morning",
+          "destinationId": "destination_brazil_portu_zhofri",
+          "prompt": "Create ONE full-frame photorealistic travel photograph. Country and exact scene: BRAZIL, Porto Jofre northern Pantanal, Mato Grosso. One wild jaguar resting on a natural fallen log near Cuiaba river under dense riverbank vegetation, early morning light, realistic telephoto wildlife photograph from safari boat. Natural textures and proportions. Landscape 16:9 at least 1536 pixels wide. No collage, grid, panels, captions, text, watermark, logos, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-306fac51-f599-442c-adc9-49dee7ed6d21.png",
+          "accepted": true,
+          "acceptance": "Single full-frame photograph; requested place and scene, plausible local terrain and animal anatomy, no text or panels.",
+          "tourId": "tour_source_severnyj_pantanal_vodopady_reki",
+          "src": "/media/destinations/destination_brazil_portu_zhofri/jaguar-morning-generated-20261008.webp",
+          "alt": "Порту-Жофри - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "pocone-v2",
+          "destinationId": "destination_brazil_pokone",
+          "prompt": "Create ONE full-frame photorealistic travel photograph. BRAZIL, Pocone town, Mato Grosso, northern Pantanal lowland. Close street-level composition of a modest single-storey house facade, shade tree and pavement. Flat lowland terrain, sky and trees behind roofs, no hills or mountains. Ordinary quiet town daylight, no invented landmark. Landscape 16:9 at least 1536px wide. No collage, grid, panels, text, watermark, logos, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-93d2e1a2-8fb1-47d5-9ca5-f04167bcce36.png",
+          "accepted": true,
+          "acceptance": "Single photograph; plausible requested local scene; no text, panels or invented prominent landmark.",
+          "tourId": "tour_source_severnyj_pantanal_vodopady_reki",
+          "src": "/media/destinations/destination_brazil_pokone/pocone-v2-generated-20261008.webp",
+          "alt": "Поконе - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
+      "destinationSync": [
+        {
+          "destinationId": "destination_brazil_kuyaba",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_kuyaba/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_bom_zhardim",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_bom_zhardim/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_gorod_shapada_dus_gimarajns",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_gorod_shapada_dus_gimarajns/chapada-town-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns/chapada-park-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_portu_zhofri",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_portu_zhofri/porto-jofre-generated-20261008.webp",
+            "/media/destinations/destination_brazil_portu_zhofri/jaguar-morning-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_reka_salobra",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_reka_salobra/salobra-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_zacharovannyj_akvarium",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_zacharovannyj_akvarium/aquario-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_pokone",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_pokone/pocone-v2-generated-20261008.webp"
+          ],
+          "remaining": null
+        }
+      ],
       "removedDuplicates": [],
-      "reusedAssets": [],
-      "pendingGeneratedSlots": [
+      "reusedAssets": [
         {
           "day": 1,
           "itineraryIndex": 0,
-          "title": "Бом-Жардим, снорклинг и переезд в Шапада-дус-Гимарайнс",
-          "places": [
-            "Бом-Жардим",
-            "Город Шапада-дус-Гимарайнс",
-            "Национальный парк Шапада-дус-Гимарайнс"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_bom_zhardim",
-            "destination_brazil_gorod_shapada_dus_gimarajns",
-            "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns"
-          ],
-          "text": "Ранний выезд в 07:00 в деревню Бом-Жардим, расположенную примерно в 162 км от аэропорта Куябы, в переходной зоне между саванной и амазонским дождевым лесом. Район известен реками с прозрачной водой, озерами и пещерами.\n\nПосле прибытия предстоит прогулка около 1 км к Зачарованному Аквариуму и реке Салобра. Здесь запланировано около 2 часов снорклинга среди рыб и водной растительности.\n\nПосле обеда вы отправитесь в Шапада-дус-Гимарайнс. По пути начинаются характерные для региона каменные формации, а затем программа продолжится знакомством с историческим центром города Чапада и Геодезической меткой Южной Америки. Размещение в Park Eco Lodge, ужин и ночевка."
-        },
-        {
-          "day": 2,
-          "itineraryIndex": 1,
-          "title": "Национальный парк Шапада-дус-Гимарайнс",
-          "places": [
-            "Город Шапада-дус-Гимарайнс",
-            "Национальный парк Шапада-дус-Гимарайнс"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_gorod_shapada_dus_gimarajns",
-            "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns"
-          ],
-          "text": "После завтрака начинается экскурсия по водопадам национального парка. Маршрут проходит среди песчаниковых скал, тропической растительности и каньонов. Вода и ветер сформировали здесь необычные формы рельефа, а вдоль троп постоянно слышны птицы и шум водопадов.\n\nПрогулка завершается у водопада «Белая невеста». Затем обед в местном ресторане и переезд в Куябу. Ночевка в городе."
+          "src": "/media/destinations/destination_brazil_bom_zhardim/hero-generated-20261008-resumed.webp",
+          "alt": "Бом-Жардим — Бразилия",
+          "destinationId": "destination_brazil_bom_zhardim"
         },
         {
           "day": 4,
           "itineraryIndex": 3,
-          "title": "Порту-Жофре, наблюдение за ягуарами",
-          "places": [
-            "Порту-Жофри"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_portu_zhofri"
-          ],
-          "text": "Полный день посвящен поиску и наблюдению за ягуарами. В программу включен обед. Экскурсия проходит по местам, где чаще всего встречаются эти животные, с наблюдением за берегами, тропами и участками вдоль воды."
+          "src": "/media/destinations/destination_brazil_portu_zhofri/jaguar-morning-generated-20261008.webp",
+          "alt": "Порту-Жофри - Бразилия",
+          "destinationId": "destination_brazil_portu_zhofri"
         },
         {
-          "day": 5,
-          "itineraryIndex": 4,
-          "title": "Утреннее сафари и трансфер в аэропорт",
-          "places": [],
-          "candidateDestinationIds": [],
-          "text": "Утром состоится еще одно сафари на поиски ягуаров. После завершения программы - трансфер в аэропорт."
+          "day": 2,
+          "itineraryIndex": 1,
+          "src": "/media/destinations/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns/chapada-park-generated-20261008.webp",
+          "alt": "Национальный парк Шапада-дус-Гимарайнс - Бразилия",
+          "destinationId": "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns"
         }
       ],
-      "dayPhotosStatus": "partial",
-      "status": "partial",
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
       "workflowVersion": "1.4",
-      "published": false
+      "published": false,
+      "remainingWork": []
     },
     {
       "tourId": "tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro",
       "contentPath": "src/content/tours/severnyj-pantanal-vodopady-reki-i-rio-de-zhanejro.md",
       "sheetRow": 373,
       "completedAssets": [],
-      "destinationSync": [],
+      "destinationSync": [
+        {
+          "destinationId": "destination_brazil_kuyaba",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_kuyaba/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_bom_zhardim",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_bom_zhardim/hero-generated-20261008-resumed.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_gorod_shapada_dus_gimarajns",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_gorod_shapada_dus_gimarajns/chapada-town-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns/chapada-park-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_portu_zhofri",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_portu_zhofri/porto-jofre-generated-20261008.webp",
+            "/media/destinations/destination_brazil_portu_zhofri/jaguar-morning-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_reka_salobra",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_reka_salobra/salobra-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_zacharovannyj_akvarium",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_zacharovannyj_akvarium/aquario-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_pokone",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_pokone/pocone-v2-generated-20261008.webp"
+          ],
+          "remaining": null
+        }
+      ],
       "removedDuplicates": [
         {
           "day": 8,
@@ -9369,54 +9711,1632 @@
           "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
           "alt": "Панорама Рио-де-Жанейро",
           "destinationId": "destination_brazil_rio"
-        }
-      ],
-      "pendingGeneratedSlots": [
+        },
         {
           "day": 1,
           "itineraryIndex": 0,
-          "title": "Бом-Жардим, снорклинг и Шапада-дус-Гимарайнс",
-          "places": [
-            "Бом-Жардим",
-            "Город Шапада-дус-Гимарайнс",
-            "Национальный парк Шапада-дус-Гимарайнс"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_bom_zhardim",
-            "destination_brazil_gorod_shapada_dus_gimarajns",
-            "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns"
-          ],
-          "text": "Ранний выезд в 07:00 в деревню Бом-Жардим, расположенную примерно в 162 км от аэропорта Куябы, в переходной зоне между саванной и амазонским дождевым лесом. Здесь много прозрачных рек, озер и пещер.\n\nПосле прибытия предстоит прогулка около 1 км к Зачарованному Аквариуму и реке Салобра. В воде вы проведете примерно 2 часа, наблюдая за рыбами и подводной растительностью.\n\nПосле обеда выезд в Шапада-дус-Гимарайнс. По дороге начинаются характерные для региона каменные формации, которые станут главной темой следующего дня. Затем запланировано посещение исторического центра города и Геодезической метки Южной Америки. Размещение в Park Eco Lodge, ужин и ночевка.\n\nБом-Жардим известен прозрачной водой именно поэтому снорклинг занимает около 2 часов. Перед входом в воду маршрут включает пеший участок примерно 1 км до Зачарованного Аквариума и реки Салобра. В воде хорошо видны рыбы и растения, а после водной части путешествие продолжается уже по суше, к плато Шапада-дус-Гимарайнс."
-        },
-        {
-          "day": 2,
-          "itineraryIndex": 1,
-          "title": "Водопады и каньоны Шапада-дус-Гимарайнс",
-          "places": [
-            "Город Шапада-дус-Гимарайнс",
-            "Национальный парк Шапада-дус-Гимарайнс"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_gorod_shapada_dus_gimarajns",
-            "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns"
-          ],
-          "text": "После завтрака начинается экскурсия по национальному парку. Маршрут проходит среди песчаниковых скал, растительности и водопадов, формы которых создавались ветром и дождем.\n\nПрогулка завершается у водопада «Белая невеста». На маршруте песчаниковые формы сочетаются с густой растительностью, а звук воды и пение птиц сопровождают большую часть прогулки. Этот день дает возможность увидеть Шапада-дус-Гимарайнс именно как сочетание каньонов, водопадов и саванны, а не как отдельную остановку между переездами. Затем обед в местном ресторане и переезд в Куябу. Ночевка в городе."
+          "src": "/media/destinations/destination_brazil_bom_zhardim/hero-generated-20261008-resumed.webp",
+          "alt": "Бом-Жардим — Бразилия",
+          "destinationId": "destination_brazil_bom_zhardim"
         },
         {
           "day": 4,
           "itineraryIndex": 3,
-          "title": "Порту-Жофре, наблюдение за ягуарами",
-          "places": [
-            "Порту-Жофри"
-          ],
-          "candidateDestinationIds": [
-            "destination_brazil_portu_zhofri"
-          ],
-          "text": "Полный день посвящен поиску и наблюдению за ягуарами. В программу включен обед. Экскурсия проходит по местам, где чаще всего встречаются эти животные, с наблюдением за берегами, тропами и участками вдоль воды. Задача дня - следовать по маршрутам, которыми пользуются ягуары, и попытаться заметить их в естественной среде. Наблюдение зависит от поведения диких животных, поэтому большую часть времени группа проводит в поиске и ожидании."
+          "src": "/media/destinations/destination_brazil_portu_zhofri/jaguar-morning-generated-20261008.webp",
+          "alt": "Порту-Жофри - Бразилия",
+          "destinationId": "destination_brazil_portu_zhofri"
+        },
+        {
+          "day": 2,
+          "itineraryIndex": 1,
+          "src": "/media/destinations/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns/chapada-park-generated-20261008.webp",
+          "alt": "Национальный парк Шапада-дус-Гимарайнс - Бразилия",
+          "destinationId": "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false,
+      "remainingWork": []
+    },
+    {
+      "tourId": "tour_source_kongress_v_rio_de_zhanejro",
+      "contentPath": "src/content/tours/kongress-v-rio-de-zhanejro.md",
+      "sheetRow": 375,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/tours/kongress-v-rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 5,
+          "itineraryIndex": 4,
+          "src": "/media/tours/kongress-v-rio-de-zhanejro/itinerary-day-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "itineraryIndex": 4,
+          "day": 5,
+          "destinationId": "destination_brazil_rio",
+          "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
+          "alt": "Рио-де-Жанейро вечером"
+        }
+      ],
+      "pendingGeneratedSlots": [
+        {
+          "day": 5,
+          "itineraryIndex": 4,
+          "title": "Завершение поездки",
+          "places": [],
+          "candidateDestinationIds": [],
+          "text": "После завтрака предусмотрен трансфер в аэропорт.\n\nКорпоративная программа завершается.\n\nЗа 5 дней участники успевают провести несколько деловых сессий, увидеть 2 главные панорамные точки Рио, пройти обзорную экскурсию и выбрать дополнительную активность, не меняя базовый город проживания."
         }
       ],
       "dayPhotosStatus": "partial",
       "status": "partial",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_luchshee_v_rio_de_zhanejro_dlya_mice",
+      "contentPath": "src/content/tours/luchshee-v-rio-de-zhanejro-dlya-mice.md",
+      "sheetRow": 376,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 5,
+          "itineraryIndex": 4,
+          "src": "/media/tours/luchshee-v-rio-de-zhanejro-dlya-mice/itinerary-day-3-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "itineraryIndex": 4,
+          "day": 5,
+          "destinationId": "destination_brazil_rio",
+          "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
+          "alt": "Рио-де-Жанейро вечером"
+        }
+      ],
+      "pendingGeneratedSlots": [
+        {
+          "day": 5,
+          "itineraryIndex": 4,
+          "title": "Свободный день и прощальный ужин",
+          "places": [],
+          "candidateDestinationIds": [],
+          "text": "День остается свободным.\n\nОбязательной экскурсионной программы нет.\n\nУчастники могут отдыхать, самостоятельно гулять по городу или использовать время для дополнительных встреч и активностей.\n\nВечером предусмотрен прощальный ужин.\n\nРесторан — Fogo de Chao.\n\nОн расположен с видом на Сахарную Голову и работает в формате традиционной бразильской шураскарии."
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 5,
+          "title": "Завершение программы",
+          "places": [],
+          "candidateDestinationIds": [],
+          "text": "В назначенное время предусмотрен трансфер в аэропорт.\n\nВ последний день трансфер проходит только с водителем.\n\nДалее международный вылет."
+        }
+      ],
+      "dayPhotosStatus": "partial",
+      "status": "partial",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_brazil_coffee_tour_ru",
+      "contentPath": "src/content/tours/brazil-coffee-tour-ru.md",
+      "sheetRow": 377,
+      "completedAssets": [
+        {
+          "key": "destination_brazil_barra_du_pirai",
+          "destinationId": "destination_brazil_barra_du_pirai",
+          "tourId": "tour_source_brazil_coffee_tour_ru",
+          "prompt": "Create ONE standalone full-frame photorealistic travel photograph. Country, place and scene: BRAZIL, Barra do Pirai, Rio de Janeiro state. Ordinary close street view with modest low-rise town houses, leafy trees and pavement, green inland town setting, no invented monument. Realistic local geography, textures and natural proportions. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, text, captions, logo, watermark, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-762f61a0-6811-40f9-b1af-3ba2e4f5a621.png",
+          "accepted": true,
+          "acceptance": "Single photograph; requested scene and plausible geography, no collage, text or invented prominent landmark.",
+          "src": "/media/destinations/destination_brazil_barra_du_pirai/destination_brazil_barra_du_pirai-generated-20261008.webp",
+          "alt": "Барра-ду-Пираи - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
+      "destinationSync": [
+        {
+          "destinationId": "destination_brazil_barra_du_pirai",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_barra_du_pirai/destination_brazil_barra_du_pirai-generated-20261008.webp"
+          ],
+          "remaining": null
+        }
+      ],
+      "removedDuplicates": [
+        {
+          "day": 4,
+          "itineraryIndex": 8,
+          "src": "/media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 5,
+          "itineraryIndex": 9,
+          "src": "/media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 10,
+          "src": "/media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 10,
+          "src": "/media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 11,
+          "src": "/media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 12,
+          "src": "/media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 5,
+          "itineraryIndex": 9,
+          "src": "/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 10,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 11,
+          "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
+          "alt": "Рио-де-Жанейро вечером",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 12,
+          "src": "/media/home/rio-night-enhanced-20260930.webp",
+          "alt": "Лапа и культурная жизнь Рио",
+          "destinationId": "destination_brazil_rio"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_lensojs_maranenses",
+      "contentPath": "src/content/tours/lensojs-maranenses.md",
+      "sheetRow": 378,
+      "completedAssets": [
+        {
+          "key": "destination_brazil_barrejrinyas",
+          "destinationId": "destination_brazil_barrejrinyas",
+          "tourId": "tour_source_lensojs_maranenses",
+          "prompt": "Create ONE standalone full-frame photorealistic travel photograph. Country, place and scene: BRAZIL, Barreirinhas town on Preguicas river, Maranhao. Modest riverside buildings and small motorboats, palms and quiet river water, view from river level, no invented landmark. Realistic local geography, textures and natural proportions. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, text, captions, logo, watermark, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-23d88bfa-b406-4975-a9de-cb2423af3e9d.png",
+          "accepted": true,
+          "acceptance": "Single photograph; requested scene and plausible geography, no collage, text or invented prominent landmark.",
+          "src": "/media/destinations/destination_brazil_barrejrinyas/destination_brazil_barrejrinyas-generated-20261008.webp",
+          "alt": "Баррейриньяс - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_reka_pregias",
+          "destinationId": "destination_brazil_reka_pregias",
+          "tourId": "tour_source_lensojs_maranenses",
+          "prompt": "Create ONE standalone full-frame photorealistic travel photograph. Country, place and scene: BRAZIL, Preguicas river near Barreirinhas, Maranhao. Calm wide river bend with green mangrove and palm vegetation along low flat banks, boat-level view, natural daylight. Realistic local geography, textures and natural proportions. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, text, captions, logo, watermark, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-a3c3628d-2685-4f68-8541-b95196fec125.png",
+          "accepted": true,
+          "acceptance": "Single photograph; requested scene and plausible geography, no collage, text or invented prominent landmark.",
+          "src": "/media/destinations/destination_brazil_reka_pregias/destination_brazil_reka_pregias-generated-20261008.webp",
+          "alt": "Река Прегиас - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_laguna_azul_lensojs_maranenses",
+          "destinationId": "destination_brazil_laguna_azul_lensojs_maranenses",
+          "tourId": "tour_source_lensojs_maranenses",
+          "prompt": "Create ONE standalone full-frame photorealistic travel photograph. Country, place and scene: BRAZIL, Lagoa Azul in Lencois Maranhenses, Maranhao. Clear blue seasonal freshwater lagoon between smooth white sand dunes, no palm trees inside dunes, wide natural daylight view. Realistic local geography, textures and natural proportions. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, text, captions, logo, watermark, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-aac8ec0c-4cf2-421f-bea6-d453f1157777.png",
+          "accepted": true,
+          "acceptance": "Single photograph; requested scene and plausible geography, no collage, text or invented prominent landmark.",
+          "src": "/media/destinations/destination_brazil_laguna_azul_lensojs_maranenses/destination_brazil_laguna_azul_lensojs_maranenses-generated-20261008.webp",
+          "alt": "Лагуна Азул (Ленсойс-Мараньенсес) - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_vassuoras_lensojs_maranenses",
+          "destinationId": "destination_brazil_vassuoras_lensojs_maranenses",
+          "tourId": "tour_source_lensojs_maranenses",
+          "prompt": "Create ONE standalone full-frame photorealistic travel photograph. Country, place and scene: BRAZIL, Vassouras on Preguicas river, Pequenos Lencois, Maranhao. Low white sand dunes beside green coastal scrub and palms at river edge, natural daylight, realistic sand landscape. Realistic local geography, textures and natural proportions. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, text, captions, logo, watermark, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-fcb7b083-1133-4caf-b90d-273cef22fe5f.png",
+          "accepted": true,
+          "acceptance": "Single photograph; requested scene and plausible geography, no collage, text or invented prominent landmark.",
+          "src": "/media/destinations/destination_brazil_vassuoras_lensojs_maranenses/destination_brazil_vassuoras_lensojs_maranenses-generated-20261008.webp",
+          "alt": "Вассуорас (Ленсойс-Мараньенсес) - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_mayak_pergula",
+          "destinationId": "destination_brazil_mayak_pergula",
+          "tourId": "tour_source_lensojs_maranenses",
+          "prompt": "Create ONE standalone full-frame photorealistic travel photograph. Country, place and scene: BRAZIL, view from Preguicas lighthouse lookout at Mandacaru, Maranhao. Elevated wide landscape of flat green coastal vegetation, Preguicas river winding toward sandy coast and Atlantic horizon. Photograph is the lookout view, lighthouse itself outside frame. Realistic local geography, textures and natural proportions. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, text, captions, logo, watermark, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-c64ad2ed-cf36-40db-b27a-2bfa47ab20bb.png",
+          "accepted": true,
+          "acceptance": "Single photograph; requested scene and plausible geography, no collage, text or invented prominent landmark.",
+          "src": "/media/destinations/destination_brazil_mayak_pergula/destination_brazil_mayak_pergula-generated-20261008.webp",
+          "alt": "Маяк Пергула - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
+      "destinationSync": [
+        {
+          "destinationId": "destination_brazil_barrejrinyas",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_barrejrinyas/destination_brazil_barrejrinyas-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_reka_pregias",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_reka_pregias/destination_brazil_reka_pregias-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_laguna_azul_lensojs_maranenses",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_laguna_azul_lensojs_maranenses/destination_brazil_laguna_azul_lensojs_maranenses-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_vassuoras_lensojs_maranenses",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_vassuoras_lensojs_maranenses/destination_brazil_vassuoras_lensojs_maranenses-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_mayak_pergula",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_mayak_pergula/destination_brazil_mayak_pergula-generated-20261008.webp"
+          ],
+          "remaining": null
+        }
+      ],
+      "removedDuplicates": [
+        {
+          "day": 2,
+          "itineraryIndex": 2,
+          "src": "/media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 3,
+          "itineraryIndex": 3,
+          "src": "/media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 4,
+          "itineraryIndex": 4,
+          "src": "/media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 3,
+          "itineraryIndex": 3,
+          "src": "/media/destinations/sao-luis/hero-enhanced-20261001.webp",
+          "alt": "Сан-Луис в штате Мараньян, Бразилия",
+          "destinationId": "destination_brazil_sao_luis"
+        }
+      ],
+      "pendingGeneratedSlots": [
+        {
+          "day": 4,
+          "itineraryIndex": 4,
+          "title": "Сан-Луис",
+          "places": [
+            "Сан-Луис"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_sao_luis"
+          ],
+          "text": "После завтрака трансфер в аэропорт.\n\nНа этом программа заканчивается."
+        }
+      ],
+      "dayPhotosStatus": "partial",
+      "status": "partial",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_luchshee_brazilii_argentiny_i_chili",
+      "contentPath": "src/content/tours/luchshee-brazilii-argentiny-i-chili.md",
+      "sheetRow": 379,
+      "completedAssets": [
+        {
+          "key": "destination_chile_lunnaya_dolina_atakama",
+          "destinationId": "destination_chile_lunnaya_dolina_atakama",
+          "tourId": "tour_source_luchshee_brazilii_argentiny_i_chili",
+          "prompt": "Create ONE standalone full-frame photorealistic travel photograph. Country, place and scene: CHILE, Valle de la Luna near San Pedro de Atacama. Dry ochre eroded rock ridges, white salt deposits and sweeping sand dune under late afternoon light, completely arid desert, no vegetation, realistic landscape. Realistic local geography, textures and natural proportions. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, text, captions, logo, watermark, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-d4c867bc-a6bf-4f83-9b39-f7d46381a0f6.png",
+          "accepted": true,
+          "acceptance": "Single photograph; requested scene and plausible geography, no collage, text or invented prominent landmark.",
+          "src": "/media/destinations/destination_chile_lunnaya_dolina_atakama/destination_chile_lunnaya_dolina_atakama-generated-20261008.webp",
+          "alt": "Лунная долина (Атакама) - Чили",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
+      "destinationSync": [
+        {
+          "destinationId": "destination_chile_lunnaya_dolina_atakama",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_chile_lunnaya_dolina_atakama/destination_chile_lunnaya_dolina_atakama-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_chile_ozero_grej",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-07-generated-20261008-v1.webp"
+          ],
+          "remaining": null
+        }
+      ],
+      "removedDuplicates": [
+        {
+          "day": 5,
+          "itineraryIndex": 7,
+          "src": "/media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 9,
+          "src": "/media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 10,
+          "src": "/media/tours/chili-argentina-braziliya/itinerary-day-5-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 12,
+          "src": "/media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 12,
+          "itineraryIndex": 15,
+          "src": "/media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/hero-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 12,
+          "itineraryIndex": 15,
+          "src": "/media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 13,
+          "itineraryIndex": 16,
+          "src": "/media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 5,
+          "itineraryIndex": 7,
+          "src": "/media/home/buenos-aires-enhanced-20260930.webp",
+          "alt": "Улица Буэнос-Айреса",
+          "destinationId": "destination_argentina_buenos_aires"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 11,
+          "src": "/media/destinations/puerto-natales-torres-del-pajne/gallery-1-enhanced-20261005.webp",
+          "alt": "На фото: город порт Пуэрто Наталес в Чили",
+          "destinationId": "destination_chile_puerto_natales_torres_del_pajne"
+        },
+        {
+          "day": 12,
+          "itineraryIndex": 15,
+          "src": "/media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp",
+          "alt": "На фото: столица Чили. город Сантьяго-де-Чили",
+          "destinationId": "destination_chile_santyago_de_chili"
+        },
+        {
+          "day": 13,
+          "itineraryIndex": 16,
+          "src": "/media/destinations/santyago-de-chili/gallery-2-enhanced-20261006.webp",
+          "alt": "На фото: столица Чили. город Сантьяго-де-Чили",
+          "destinationId": "destination_chile_santyago_de_chili"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_luchshee_v_brazilii_rio_iguasu_buzios",
+      "contentPath": "src/content/tours/luchshee-v-brazilii-rio-iguasu-buzios.md",
+      "sheetRow": 380,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 2,
+          "itineraryIndex": 1,
+          "src": "/media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 9,
+          "src": "/media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 10,
+          "src": "/media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 10,
+          "src": "/media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 2,
+          "itineraryIndex": 1,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 9,
+          "src": "/media/destinations/buzios/gallery-1-enhanced-20261001.webp",
+          "alt": "Бухта и пляж в Бузиосе",
+          "destinationId": "destination_brazil_buzios"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 10,
+          "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
+          "alt": "Рио-де-Жанейро вечером",
+          "destinationId": "destination_brazil_rio"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_luchshee_v_brazilii_za_9_dnej",
+      "contentPath": "src/content/tours/luchshee-v-brazilii-za-9-dnej.md",
+      "sheetRow": 381,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 9,
+          "itineraryIndex": 10,
+          "src": "/media/tours/luchshee-v-brazilii-za-9-dnej/itinerary-day-9-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 10,
+          "src": "/media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 9,
+          "itineraryIndex": 10,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_luchshee_v_rio_de_zhanejro",
+      "contentPath": "src/content/tours/luchshee-v-rio-de-zhanejro.md",
+      "sheetRow": 382,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [],
+      "reusedAssets": [
+        {
+          "day": 1,
+          "itineraryIndex": 0,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 2,
+          "itineraryIndex": 1,
+          "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
+          "alt": "Рио-де-Жанейро вечером",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 3,
+          "itineraryIndex": 2,
+          "src": "/media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp",
+          "alt": "Корковаду и Сахарная голова",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/home/rio-night-enhanced-20260930.webp",
+          "alt": "Лапа и культурная жизнь Рио",
+          "destinationId": "destination_brazil_rio"
+        }
+      ],
+      "pendingGeneratedSlots": [
+        {
+          "day": 5,
+          "itineraryIndex": 4,
+          "title": "Свободный день в Рио-де-Жанейро",
+          "places": [
+            "Рио-де-Жанейро"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_rio"
+          ],
+          "text": "День для самостоятельного отдыха и знакомства с Рио-де-Жанейро. Можно расслабиться на пляже, прогуляться по городу или провести время в отеле. Обязательных экскурсий на этот день нет."
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 5,
+          "title": "Свободный день в Рио-де-Жанейро",
+          "places": [
+            "Рио-де-Жанейро"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_rio"
+          ],
+          "text": "День для самостоятельного отдыха и знакомства с Рио-де-Жанейро. Можно расслабиться на пляже, прогуляться по городу или провести время в отеле. Обязательных экскурсий на этот день нет."
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 6,
+          "title": "Рио-де-Жанейро",
+          "places": [
+            "Рио-де-Жанейро"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_rio"
+          ],
+          "text": "Трансфер в аэропорт с водителем для вылета домой."
+        }
+      ],
+      "dayPhotosStatus": "partial",
+      "status": "partial",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+      "contentPath": "src/content/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej.md",
+      "sheetRow": 383,
+      "completedAssets": [
+        {
+          "key": "destination_brazil_santu_antoniu_amazoniya",
+          "destinationId": "destination_brazil_santu_antoniu_amazoniya",
+          "tourId": "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+          "prompt": "Create ONE standalone full-frame photorealistic travel photograph. Country, place and scene: BRAZIL, Santo Antonio riverside community in Rio Negro and Anavilhanas Amazon region. Modest wooden community house and small river landing among palms and dense humid forest, river-level viewpoint, no invented landmark. Realistic local geography, textures and natural proportions. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, text, captions, logo, watermark, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-59e916b5-3fab-40e4-a963-388b11952d48.png",
+          "accepted": true,
+          "acceptance": "Single photograph; requested scene and plausible geography, no collage, text or invented prominent landmark.",
+          "src": "/media/destinations/destination_brazil_santu_antoniu_amazoniya/destination_brazil_santu_antoniu_amazoniya-generated-20261008.webp",
+          "alt": "Санту-Антониу (Амазония) - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        },
+        {
+          "key": "destination_brazil_tiririka_amazoniya",
+          "destinationId": "destination_brazil_tiririka_amazoniya",
+          "tourId": "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+          "prompt": "Create ONE standalone full-frame photorealistic travel photograph. Country, place and scene: BRAZIL, Tiririca river beach in Rio Negro Anavilhanas region, Amazonas. Pale natural sand river beach beside dark calm river water with dense Amazon forest behind, no ocean surf or mountain terrain. Realistic local geography, textures and natural proportions. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, text, captions, logo, watermark, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-57289f3c-58d6-4f45-a2b4-ca3d936ac086.png",
+          "accepted": true,
+          "acceptance": "Single photograph; requested scene and plausible geography, no collage, text or invented prominent landmark.",
+          "src": "/media/destinations/destination_brazil_tiririka_amazoniya/destination_brazil_tiririka_amazoniya-generated-20261008.webp",
+          "alt": "Тиририка (Амазония) - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
+      "destinationSync": [
+        {
+          "destinationId": "destination_brazil_santu_antoniu_amazoniya",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_santu_antoniu_amazoniya/destination_brazil_santu_antoniu_amazoniya-generated-20261008.webp"
+          ],
+          "remaining": null
+        },
+        {
+          "destinationId": "destination_brazil_tiririka_amazoniya",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_tiririka_amazoniya/destination_brazil_tiririka_amazoniya-generated-20261008.webp"
+          ],
+          "remaining": null
+        }
+      ],
+      "removedDuplicates": [
+        {
+          "day": 5,
+          "itineraryIndex": 5,
+          "src": "/media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/hero-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 11,
+          "src": "/media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-8-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 15,
+          "itineraryIndex": 19,
+          "src": "/media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 4,
+          "itineraryIndex": 4,
+          "src": "/media/destinations/angra-dos-reis/gallery-1-enhanced-20261001.webp",
+          "alt": "Острова и бухты у Ангра-дус-Рейс",
+          "destinationId": "destination_brazil_angra_dos_reis"
+        },
+        {
+          "day": 5,
+          "itineraryIndex": 5,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 12,
+          "src": "/media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-02-generated-20261008-v1.webp",
+          "alt": "Лесные острова архипелага Анавианас на Рио-Негро в Бразилии",
+          "destinationId": "destination_brazil_arhipelag_anavianas"
+        },
+        {
+          "day": 15,
+          "itineraryIndex": 19,
+          "src": "/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 16,
+          "itineraryIndex": 20,
+          "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
+          "alt": "Рио-де-Жанейро вечером",
+          "destinationId": "destination_brazil_rio"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas",
+      "contentPath": "src/content/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu-s-alagoas.md",
+      "sheetRow": 384,
+      "completedAssets": [
+        {
+          "key": "destination_brazil_masejo",
+          "destinationId": "destination_brazil_masejo",
+          "tourId": "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas",
+          "prompt": "Create ONE standalone full-frame photorealistic travel photograph. Country, place and scene: BRAZIL, Maceio, Alagoas. Ponta Verde urban seafront with turquoise Atlantic water, pale sandy beach, palms and distant modern apartment buildings, natural daylight, authentic tropical coastline. Realistic local geography, textures and natural proportions. Landscape 16:9, at least 1536 pixels wide. No collage, grid, panels, text, captions, logo, watermark, border or inset.",
+          "original": "/workspace/scratch/0a5caebb8b03/generated_images/exec-dad4ff5f-5139-4ccd-bd94-4f5fca7670ed.png",
+          "accepted": true,
+          "acceptance": "Single photograph; requested scene and plausible geography, no collage, text or invented prominent landmark.",
+          "src": "/media/destinations/destination_brazil_masejo/destination_brazil_masejo-generated-20261008.webp",
+          "alt": "Масейо - Бразилия",
+          "generatedAt": "2026-10-08",
+          "slot": "destination.hero"
+        }
+      ],
+      "destinationSync": [
+        {
+          "destinationId": "destination_brazil_masejo",
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/destinations/destination_brazil_masejo/destination_brazil_masejo-generated-20261008.webp"
+          ],
+          "remaining": null
+        }
+      ],
+      "removedDuplicates": [
+        {
+          "day": 8,
+          "itineraryIndex": 11,
+          "src": "/media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 12,
+          "src": "/media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-6-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 13,
+          "src": "/media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 11,
+          "itineraryIndex": 14,
+          "src": "/media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 8,
+          "itineraryIndex": 11,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 12,
+          "src": "/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 13,
+          "src": "/media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу со стороны Бразилии",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 11,
+          "itineraryIndex": 14,
+          "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
+          "alt": "Рио-де-Жанейро вечером",
+          "destinationId": "destination_brazil_rio"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_manaus_4_dnya_3_nochi",
+      "contentPath": "src/content/tours/manaus-4-dnya-3-nochi.md",
+      "sheetRow": 385,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [],
+      "reusedAssets": [
+        {
+          "day": 1,
+          "itineraryIndex": 0,
+          "src": "/media/home/amazon-enhanced-20260930.webp",
+          "alt": "Река и тропический лес Амазонии",
+          "destinationId": "destination_brazil_amazon"
+        },
+        {
+          "day": 2,
+          "itineraryIndex": 4,
+          "src": "/media/destinations/manaus-amazonia/hero-enhanced-20261001.webp",
+          "alt": "Амазония в Бразилии",
+          "destinationId": "destination_brazil_amazon"
+        }
+      ],
+      "pendingGeneratedSlots": [
+        {
+          "day": 3,
+          "itineraryIndex": 5,
+          "title": "Игапо, пираньи и сообщество кабокло",
+          "places": [
+            "Манаус и Амазония"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_amazon"
+          ],
+          "text": "После завтрака экскурсия по Игапо, затопленному лесу.\n\nВ сезон дождей вода полностью скрывает часть суши, и лодка проходит между деревьями. По дороге можно увидеть водные растения и животных, характерных для этой экосистемы.\n\nПозже гид приведет вас к участку, где можно попробовать ловлю пираний.\n\nЗатем поездка в сообщество кабокло, жителей смешанного коренного и европейского происхождения. Вы узнаете об их истории, увидите приготовление муки из маниока и познакомитесь с техникой изготовления отравленных стрел.\n\nДетям важно внимательно слушать объяснения гида о ядовитых и неядовитых растениях."
+        },
+        {
+          "day": 4,
+          "itineraryIndex": 6,
+          "title": "Вылет",
+          "places": [
+            "Манаус и Амазония"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_amazon"
+          ],
+          "text": "После завтрака трансфер в аэропорт."
+        }
+      ],
+      "dayPhotosStatus": "partial",
+      "status": "partial",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_mototur_cherez_braziliyu",
+      "contentPath": "src/content/tours/mototur-cherez-braziliyu.md",
+      "sheetRow": 387,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/tours/mototur-cherez-braziliyu/itinerary-day-3-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 5,
+          "itineraryIndex": 4,
+          "src": "/media/tours/mototur-cherez-braziliyu/itinerary-day-3-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 5,
+          "src": "/media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 6,
+          "src": "/media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 7,
+          "src": "/media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 11,
+          "itineraryIndex": 10,
+          "src": "/media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 12,
+          "itineraryIndex": 11,
+          "src": "/media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/destinations/paraty/gallery-1-enhanced-20261001.webp",
+          "alt": "Колониальная архитектура Парати",
+          "destinationId": "destination_brazil_paraty"
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 5,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 6,
+          "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
+          "alt": "Рио-де-Жанейро вечером",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 11,
+          "itineraryIndex": 10,
+          "src": "/media/destinations/sao-paulo/hero-enhanced-20261001.webp",
+          "alt": "Панорама Сан-Паулу, Бразилия",
+          "destinationId": "destination_brazil_sao_paulo"
+        }
+      ],
+      "pendingGeneratedSlots": [
+        {
+          "day": 9,
+          "itineraryIndex": 8,
+          "title": "Тирадентис - Капитолио",
+          "places": [
+            "Тирадентис",
+            "Капитолио"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_tiradentis",
+            "destination_brazil_kapitolio"
+          ],
+          "text": "После завтрака обзорная экскурсия по Тирадентису. Затем мото-переезд через внутренние районы штата Минас-Жерайс к Капитолио, известному как «Море Минаса».\n\nРазмещение в районе озера Фурнаш. Озеро связано с гидроэлектростанцией Фурнаш и находится в регионе Серра-да-Канастра.\n\n**Примерное расстояние:** 320 км."
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 9,
+          "title": "Капитолио",
+          "places": [
+            "Капитолио",
+            "Озеро Фурнаш"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_kapitolio",
+            "destination_brazil_ozero_furnash"
+          ],
+          "text": "Лодочная прогулка по водоему Фурнаш. Во время экскурсии вы увидите каньоны и сможете поплавать рядом с водопадами. После нескольких длинных дорожных дней этот этап проходит без большого мото-переезда и целиком посвящен природным видам Капитолио."
+        },
+        {
+          "day": 12,
+          "itineraryIndex": 11,
+          "title": "Сан-Паулу",
+          "places": [
+            "Сан-Паулу"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_sao_paulo"
+          ],
+          "text": "В 09:00 возврат мотоциклов. Затем трансфер в международный аэропорт.\n\nДополнительные сутки проживания при необходимости оплачиваются отдельно."
+        }
+      ],
+      "dayPhotosStatus": "partial",
+      "status": "partial",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_na_mototsiklakh_po_brazilii",
+      "contentPath": "src/content/tours/na-mototsiklakh-po-brazilii.md",
+      "sheetRow": 388,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 5,
+          "itineraryIndex": 5,
+          "src": "/media/excursions/royal-petropolis-private-tour-full-day/gallery-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 6,
+          "src": "/media/tours/na-mototsiklakh-po-brazilii/itinerary-day-5-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 7,
+          "src": "/media/tours/na-mototsiklakh-po-brazilii/itinerary-day-5-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 9,
+          "src": "/media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 9,
+          "src": "/media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 10,
+          "src": "/media/tours/mototur-cherez-braziliyu/itinerary-day-3-images-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 6,
+          "itineraryIndex": 6,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 9,
+          "src": "/media/destinations/sao-paulo/hero-enhanced-20261001.webp",
+          "alt": "Панорама Сан-Паулу, Бразилия",
+          "destinationId": "destination_brazil_sao_paulo"
+        }
+      ],
+      "pendingGeneratedSlots": [
+        {
+          "day": 3,
+          "itineraryIndex": 3,
+          "title": "Капитолио",
+          "places": [
+            "Капитолио"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_kapitolio"
+          ],
+          "text": "После завтрака лодочная прогулка по озеру. Предусмотрен отдых и купание у водопадов. Горное озеро и каскады становятся главным содержанием дня, поэтому группа остается в районе Капитолио. Этот день проходит без длинного мото-переезда и позволяет сделать паузу после первого дорожного этапа."
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 10,
+          "title": "Сан-Паулу",
+          "places": [
+            "Сан-Паулу"
+          ],
+          "candidateDestinationIds": [
+            "destination_brazil_sao_paulo"
+          ],
+          "text": "После завтрака трансфер в аэропорт. Обязательных экскурсий в этот день нет, программа завершается после возвращения в Сан-Паулу и сдачи мотоциклов накануне."
+        }
+      ],
+      "dayPhotosStatus": "partial",
+      "status": "partial",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe",
+      "contentPath": "src/content/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe.md",
+      "sheetRow": 389,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 5,
+          "itineraryIndex": 5,
+          "src": "/media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 11,
+          "src": "/media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 12,
+          "src": "/media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 13,
+          "src": "/media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 11,
+          "itineraryIndex": 14,
+          "src": "/media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-7-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 12,
+          "itineraryIndex": 15,
+          "src": "/media/tours/luxury-brazil-11d/itinerary/extra-helicopter-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 9,
+          "itineraryIndex": 12,
+          "src": "/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 13,
+          "src": "/media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу со стороны Бразилии",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 11,
+          "itineraryIndex": 14,
+          "src": "/media/destinations/puerto-iguasu/gallery-1-enhanced-20261002.webp",
+          "alt": "на фото: Водопады Игуасу",
+          "destinationId": "destination_argentina_puerto_iguasu"
+        },
+        {
+          "day": 12,
+          "itineraryIndex": 15,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej",
+      "contentPath": "src/content/tours/vip-tur-v-braziliyu-s-bonito-16-dnej.md",
+      "sheetRow": 390,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 5,
+          "itineraryIndex": 5,
+          "src": "/media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/hero-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 7,
+          "src": "/media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 11,
+          "src": "/media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 12,
+          "src": "/media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-9-images-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 13,
+          "itineraryIndex": 17,
+          "src": "/media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-11-images-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 14,
+          "itineraryIndex": 18,
+          "src": "/media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-12-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 15,
+          "itineraryIndex": 19,
+          "src": "/media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-11-images-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 16,
+          "itineraryIndex": 20,
+          "src": "/media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-9-images-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 5,
+          "itineraryIndex": 5,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 7,
+          "src": "/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 14,
+          "src": "/media/destinations/bonito/gallery-1-enhanced-20261001.webp",
+          "alt": "Прозрачная вода в окрестностях Бонито",
+          "destinationId": "destination_brazil_bonito"
+        },
+        {
+          "day": 13,
+          "itineraryIndex": 17,
+          "src": "/media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу со стороны Бразилии",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 14,
+          "itineraryIndex": 18,
+          "src": "/media/destinations/bonito/gallery-2-enhanced-20261001.webp",
+          "alt": "Активный отдых на воде в Бонито",
+          "destinationId": "destination_brazil_bonito"
+        },
+        {
+          "day": 15,
+          "itineraryIndex": 19,
+          "src": "/media/destinations/bonito/hero-enhanced-20261001.webp",
+          "alt": "Грот Голубого озера в Бонито, Бразилия",
+          "destinationId": "destination_brazil_bonito"
+        },
+        {
+          "day": 16,
+          "itineraryIndex": 20,
+          "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
+          "alt": "Рио-де-Жанейро вечером",
+          "destinationId": "destination_brazil_rio"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_nezabyvaemyj_novyj_god_v_brazilii",
+      "contentPath": "src/content/tours/nezabyvaemyj-novyj-god-v-brazilii.md",
+      "sheetRow": 391,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/tours/brazil-argentina-peru-14d/itinerary/day-03-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 8,
+          "itineraryIndex": 9,
+          "src": "/media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-10-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 10,
+          "src": "/media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-10-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 11,
+          "src": "/media/tours/brazil-argentina-peru-14d/itinerary/day-03-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 8,
+          "itineraryIndex": 9,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 10,
+          "src": "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp",
+          "alt": "Рио-де-Жанейро вечером",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 11,
+          "src": "/media/home/rio-night-enhanced-20260930.webp",
+          "alt": "Лапа и культурная жизнь Рио",
+          "destinationId": "destination_brazil_rio"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_mechty_sbyvayutsya_na_novyj_god",
+      "contentPath": "src/content/tours/mechty-sbyvayutsya-na-novyj-god.md",
+      "sheetRow": 392,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-1-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 16,
+          "src": "/media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-9-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 16,
+          "src": "/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу",
+          "destinationId": "destination_brazil_iguacu"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god",
+      "contentPath": "src/content/tours/tur-v-braziliyu-argentinu-i-chili-na-novyj-god.md",
+      "sheetRow": 393,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 3,
+          "itineraryIndex": 2,
+          "src": "/media/tours/brazil-argentina-peru-14d/itinerary/day-01-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 4,
+          "itineraryIndex": 3,
+          "src": "/media/tours/brazil-argentina-peru-14d/itinerary/day-01-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 5,
+          "itineraryIndex": 4,
+          "src": "/media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 7,
+          "src": "/media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 11,
+          "src": "/media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 13,
+          "src": "/media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 3,
+          "itineraryIndex": 2,
+          "src": "/media/catalog/tury/hero-enhanced-20260930.webp",
+          "alt": "Панорама Рио-де-Жанейро",
+          "destinationId": "destination_brazil_rio"
+        },
+        {
+          "day": 5,
+          "itineraryIndex": 4,
+          "src": "/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 9,
+          "itineraryIndex": 11,
+          "src": "/media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp",
+          "alt": "На фото: столица Чили. город Сантьяго-де-Чили",
+          "destinationId": "destination_chile_santyago_de_chili"
+        },
+        {
+          "day": 10,
+          "itineraryIndex": 13,
+          "src": "/media/destinations/santyago-de-chili/gallery-2-enhanced-20261006.webp",
+          "alt": "На фото: столица Чили. город Сантьяго-де-Чили",
+          "destinationId": "destination_chile_santyago_de_chili"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu",
+      "contentPath": "src/content/tours/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu.md",
+      "sheetRow": 395,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [
+        {
+          "day": 5,
+          "itineraryIndex": 4,
+          "src": "/media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 7,
+          "src": "/media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp",
+          "reason": "duplicate_frame"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 8,
+          "src": "/media/tours/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu/itinerary-day-2-enhanced-20261006.webp",
+          "reason": "duplicate_frame"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 5,
+          "itineraryIndex": 4,
+          "src": "/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 6,
+          "itineraryIndex": 7,
+          "src": "/media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp",
+          "alt": "Водопады Игуасу со стороны Бразилии",
+          "destinationId": "destination_brazil_iguacu"
+        },
+        {
+          "day": 7,
+          "itineraryIndex": 8,
+          "src": "/media/destinations/puerto-iguasu/gallery-1-enhanced-20261002.webp",
+          "alt": "на фото: Водопады Игуасу",
+          "destinationId": "destination_argentina_puerto_iguasu"
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
+      "workflowVersion": "1.4",
+      "published": false
+    },
+    {
+      "tourId": "tour_source_nezabyvaemyj_novyj_god_v_rio",
+      "contentPath": "src/content/tours/nezabyvaemyj-novyj-god-v-rio.md",
+      "sheetRow": 396,
+      "completedAssets": [],
+      "destinationSync": [],
+      "removedDuplicates": [],
+      "reusedAssets": [],
+      "pendingGeneratedSlots": [],
+      "dayPhotosStatus": "completed",
+      "status": "completed",
       "workflowVersion": "1.4",
       "published": false
     }
@@ -9585,5 +11505,34 @@
     "stagedAssetDriveUrl": "https://drive.google.com/file/d/1Dghb_VlpqTod-19NoFE2Do81si0Y7ihO/view",
     "resumedBy": "20261008-2009",
     "resumedFromCommit": "f58ad91e2c963ac19699ec8d9dd24bc7baddcffe"
+  },
+  "resumedBatchCompleted": {
+    "tourIds": [
+      "tour_source_vip_tur_v_braziliyu_i_argentinu_na_10_dnej",
+      "tour_source_amazoniya",
+      "tour_source_amazoniya_kruiz_tukano",
+      "tour_source_braziliya_ot_san_paulo_do_buziosa",
+      "tour_source_braziliya_s_detmi",
+      "tour_source_braziliya_s_plyazhami",
+      "tour_source_braziliya_argentina_i_chili",
+      "tour_source_braziliya_argentina_gruppovoj_tur",
+      "tour_source_little_mix_ru",
+      "tour_source_braziliya_gruppovoj_tur_na_13_dnej",
+      "tour_source_vazhnoe_brazilii",
+      "tour_source_vkusy_brazilii",
+      "tour_source_kofe_tur_v_brazilii",
+      "tour_source_led_solntse_i_kraj_zemli",
+      "tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios",
+      "tour_source_rajskaya_braziliya",
+      "tour_source_nezabyvaemaya_braziliya",
+      "tour_source_rio_i_iguasu_puteshestvie_po_kultovym_chudesam_brazilii",
+      "tour_source_severnyj_pantanal_vodopady_reki",
+      "tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro"
+    ],
+    "completedTours": 20,
+    "newAcceptedPhotos": 10,
+    "nextTourId": "tour_source_kongress_v_rio_de_zhanejro",
+    "spreadsheetStatus": "pending",
+    "published": false
   }
 }

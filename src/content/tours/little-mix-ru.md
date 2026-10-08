@@ -296,6 +296,9 @@ itinerary:
 
 
     Размещение продолжается в Pousada Casa do Forte.'
+  image:
+    src: /media/destinations/destination_brazil_praia_do_forte/praia-beach-generated-20261008.webp
+    alt: Прайя-ду-Форте - Бразилия
 - day: 11
   title: Прайя-ду-Форте - аэропорт
   places:
@@ -307,6 +310,9 @@ itinerary:
 
 
     На этом программа завершается.'
+  image:
+    src: /media/destinations/destination_brazil_praia_do_forte/praia-departure-generated-20261008.webp
+    alt: Прайя-ду-Форте - Бразилия
 included:
 - Проживание в указанных отелях.
 - Услуги англоговорящего гида.

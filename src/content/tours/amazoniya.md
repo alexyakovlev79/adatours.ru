@@ -9,6 +9,7 @@ countries:
 destinations:
 - destination_brazil_amazon
 - destination_brazil_derevnya_akazhatuba
+- destination_brazil_rio
 audiences: []
 route:
 - Манаус (1 ночь)
@@ -88,6 +89,9 @@ itinerary:
   places:
   - Манаус и Амазония
   text: После завтрака трансфер доставит вас из лоджа в Манаус, затем в аэропорт. Далее - обратный перелет в Рио-де-Жанейро.
+  image:
+    src: /media/catalog/tury/hero-enhanced-20260930.webp
+    alt: Панорама Рио-де-Жанейро
 included:
 - Трансферы по программе.
 - 1 ночь в Манаусе и 2 ночи в Evolution Eco Lodge.
@@ -119,6 +123,7 @@ routeCountries:
 routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_derevnya_akazhatuba
+- destination_brazil_rio
 primaryThemes:
 - theme_wildlife
 themes:

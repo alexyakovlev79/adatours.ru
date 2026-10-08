@@ -66,7 +66,7 @@ itinerary:
     Включено: 1 ночь в La Casona Hotel Boutique или отеле той же категории, частный трансфер, двуязычный гид на английском и испанском языках, билеты на канатную дорогу, трансфер аэропорт - отель. Питание не включено.
   images:
   - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: город Ла Пас, столица Боливии'
+    alt: "На фото: город Ла Пас, столица Боливии"
 - day: 2
   title: Уюни - солончак Уюни - Тахуа
   places:
@@ -86,7 +86,7 @@ itinerary:
     Включено: 1 ночь в Hotel Tayka de Sal, частный транспорт 4x4, двуязычный гид на английском и испанском языках, входные билеты и трансферы по маршруту. Питание: обед и ужин.
   images:
   - src: /media/tours/prirodnye-chudesa-bolivii/itinerary-day-2-enhanced-20261006.webp
-    alt: 'На фото: солончак Уюни в Боливии'
+    alt: "На фото: солончак Уюни в Боливии"
 - day: 3
   title: Тахуа - пустыня Силоли
   places:
@@ -100,6 +100,9 @@ itinerary:
     К вечеру вы доберетесь до пустыни Силоли. Предусмотрены остановки для фотографий и ночь в отеле среди пустынного высокогорья.
 
     Включено: 1 ночь в Hotel Tayka del Desierto, частный транспорт 4x4, двуязычный гид на английском и испанском языках, входные билеты. Питание: завтрак, обед и ужин.
+  images:
+  - src: /media/destinations/laguna-canapa/hero-generated-20261008.webp
+    alt: "Лагуна Каньяпа"
 - day: 4
   title: Пустыня Силоли - Лагуна-Верде - Уюни
   places:
@@ -117,8 +120,8 @@ itinerary:
 
     Включено: 1 ночь в Jardines de Uyuni Hotel или отеле той же категории, частный транспорт 4x4, двуязычный гид, входные билеты. Питание: завтрак и обед.
   images:
-  - src: /media/tours/prirodnye-chudesa-bolivii/itinerary-day-2-enhanced-20261006.webp
-    alt: 'На фото: солончак Уюни в Боливии'
+  - src: /media/destinations/laguna-verde/hero-generated-20261008.webp
+    alt: "Лагуна Верде"
 - day: 5
   title: Уюни - Ла-Пас - Рурренабак - Сан-Мигель-дель-Бала
   places:
@@ -135,10 +138,8 @@ itinerary:
 
     Включено: 1 ночь в Ecolodge San Miguel del Bala, общая комната и ванная, трансферы по маршруту, лодка и запланированный поход. Питание: ужин.
   images:
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: город Ла Пас, столица Боливии'
-  - src: /media/tours/prirodnye-chudesa-bolivii/itinerary-day-2-enhanced-20261006.webp
-    alt: 'На фото: солончак Уюни в Боливии'
+  - src: /media/destinations/uyuni/gallery-1-enhanced-20261003.webp
+    alt: "На фото: Лес кактусов и соленое озеро (солончак) Уюни"
 - day: 6
   title: Сан-Мигель-дель-Бала
   places:
@@ -177,8 +178,8 @@ itinerary:
 
     Включено: 1 ночь в La Casona Hotel Boutique или отеле той же категории, лодочный трансфер, включенные походы, услуги местного гида и трансферы. Питание: завтрак.
   images:
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: город Ла Пас, столица Боливии'
+  - src: /media/destinations/la-pas/gallery-1-enhanced-20261003.webp
+    alt: "На фото: столица Боливии город Ла Пас"
 - day: 9
   title: Ла-Пас - Копакабана - остров Солнца - Ла-Пас
   places:
@@ -196,8 +197,8 @@ itinerary:
 
     Включено: 1 ночь в La Casona Hotel Boutique или отеле той же категории, частный трансфер Ла-Пас - Копакабана - Ла-Пас, общий туристический катер, двуязычный гид, входные билеты. Питание: завтрак и обед.
   images:
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: город Ла Пас, столица Боливии'
+  - src: /media/destinations/isla-del-sol/gallery-1-enhanced-20261003.webp
+    alt: "На фото: Солнечный остров в Боливии"
 - day: 10
   title: Ла-Пас
   places:
@@ -207,8 +208,8 @@ itinerary:
 
     Программа может меняться без предварительного уведомления из-за погодных условий.
   images:
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: город Ла Пас, столица Боливии'
+  - src: /media/destinations/la-pas/gallery-2-enhanced-20261003.webp
+    alt: "На фото: столица Боливии город Ла Пас"
 included:
 - проживание с завтраком в выбранных отелях;
 - частные туры;

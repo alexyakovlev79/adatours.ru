@@ -13,7 +13,7 @@ hero:
 gallery: []
 themes:
 - theme_culture
-- theme_food
+- theme_gastronomy_wine
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -7,6 +7,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { canonicalPath } from '../src/lib/routes.ts';
+import { validateGeneratedSourceMaterials } from '../src/lib/generated-source-materials.mjs';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sourceRoot = path.join(repoRoot, 'data', 'source-index');
@@ -15,6 +16,8 @@ const compactKeys = ['id', 'type', 'name', 'url', 'slug', 'contentPath', 'countr
 const files = fs.readdirSync(path.join(sourceRoot, 'entries')).filter(name => name.endsWith('.json')).sort();
 const records = files.map(filename => {
   const record = JSON.parse(fs.readFileSync(path.join(sourceRoot, 'entries', filename), 'utf8'));
+  const generatedErrors = validateGeneratedSourceMaterials(record, { repoRoot });
+  if (generatedErrors.length) throw new Error(generatedErrors.join('\n'));
   if (filename !== `${record.id}.json` || !collections[record.type]) throw new Error(`Invalid source entry: ${filename}`);
   for (const key of compactKeys) {
     if (!(key in record)) throw new Error(`Missing ${key}: ${filename}`);
@@ -78,3 +81,4 @@ for (const [type, collection] of Object.entries(collections)) {
   });
 }
 console.log(JSON.stringify({ entries: entries.length, catalogs: 4, networkRequests: 0, counts }, null, 2));
+

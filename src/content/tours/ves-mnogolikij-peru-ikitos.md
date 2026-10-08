@@ -58,7 +58,7 @@ itinerary:
 
     После перелета экскурсионной программы нет. Можно отдохнуть в отеле или самостоятельно выйти на первую прогулку.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima-park.png
+  - src: /media/tours/ves-mnogolikij-peru-ikitos/lima-park-src-enhanced-20261008.webp
     alt: 'НА фото: город Лима, столица Перу'
 - day: 2
   title: Лима
@@ -315,7 +315,7 @@ itinerary:
 
     После возвращения в лодж ужин, музыка и рассказы местных гидов.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima-park.png
+  - src: /media/tours/ves-mnogolikij-peru-ikitos/lima-park-src-enhanced-20261008.webp
     alt: 'НА фото: город Лима, столица Перу'
 - day: 13
   title: Икитос и Амазония

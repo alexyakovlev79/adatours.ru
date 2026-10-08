@@ -16,7 +16,7 @@ priceFrom: 400
 currency: "USD"
 priceNote: "Стоимость — $400."
 hero:
-  src: "https://brasiltours.ru/image/countries/brazil/buenosaires7-waifu2x-noise1-1920x.jpg"
+  src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/hero-src-enhanced-20261008.webp"
   alt: "На фото: Флоралис Хенерика, в парке Национального Единства Буэнос-Айреса"
 gallery:
   - src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp"

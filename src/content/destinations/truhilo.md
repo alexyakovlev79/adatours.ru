@@ -14,7 +14,7 @@ hero:
 gallery:
   - src: "/media/destinations/truhilo/gallery-1-enhanced-20261005.webp"
     alt: "На фото: город Трухильо в Перу"
-  - src: "https://brasiltours.ru/image/catalog/category/B/N/BN18637_51.jpg"
+  - src: "/media/destinations/truhilo/gallery-2-src-enhanced-20261008.webp"
     alt: "На фото: город Трухильо в Перу"
   - src: "/media/destinations/truhilo/gallery-3-enhanced-20261005.webp"
     alt: "На фото: город Трухильо в Перу"

@@ -19,7 +19,7 @@ hero:
   src: /media/countries/ekvador/featureBands-1-enhanced-20261002.webp
   alt: Кито и вулкан Котопахи в Эквадоре
 gallery:
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN1169_2.jpg
+  - src: /media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp
     alt: Исторический центр Кито
   - src: /media/destinations/kito-vulkan-kotopahi/gallery-2-enhanced-20261006.webp
     alt: Городской пейзаж Кито
@@ -56,7 +56,7 @@ featureBands:
     title: Колониальный центр и Эль-Панесильо
     text: >-
       В Кито колониальная архитектура соседствует с современными кварталами. Среди заметных точек старого города — Архиепископский дворец и монастырь Сан-Франциско, а с Эль-Панесильо открывается вид на город и окружающие горы.
-    image: https://brasiltours.ru/image/catalog/category/B/N/BN1169_2.jpg
+    image: /media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp
   - eyebrow: За городом
     title: Экватор, Пулулахуа и Дорога вулканов
     text: >-

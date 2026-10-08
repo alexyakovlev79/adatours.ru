@@ -71,7 +71,7 @@ itinerary:
   images:
   - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     alt: Куско
-  - src: https://brasiltours.ru/image/lima%20park.png
+  - src: /media/tours/peru-strana-inkov/lima-park-src-enhanced-20261008.webp
     alt: Лима
 - day: 4
   title: Куско - Мачу-Пикчу - Куско

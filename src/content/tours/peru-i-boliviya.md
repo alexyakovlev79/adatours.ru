@@ -71,7 +71,7 @@ itinerary:
 
     Возвращение в Куско и отель.
   images:
-  - src: https://brasiltours.ru/image/countries/peru/lima-park-of-love.png
+  - src: /media/tours/peru-i-boliviya/lima-park-of-love-src-enhanced-20261008.webp
     alt: Лима
   - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: Куско

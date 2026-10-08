@@ -36,7 +36,7 @@ itinerary:
   text: Прибытие в аэропорт Канкуна. Трансфер в отель Omni Cancun Hotel and Villas All Inclusive.
   images:
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
-    alt: 'На фото: Вид на океан с пляжа Канкуна'
+    alt: "'На фото: Вид на океан с пляжа Канкуна'"
 - day: 2
   title: Канкун - Чичен-Ица и сенот Ик-Киль
   places:
@@ -52,8 +52,8 @@ itinerary:
 
     После экскурсии предусмотрено купание в карстовом сеноте Ик-Киль. Прохладная вода дает возможность отдохнуть после прогулки по археологической зоне.
   images:
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
-    alt: 'На фото: Вид на океан с пляжа Канкуна'
+  - src: /media/destinations/cancun/gallery-1-enhanced-20261005.webp
+    alt: "На фото: курорт Канкун в Мексике"
 - day: 3
   title: Канкун - Тулум и Коба
   places:
@@ -69,8 +69,8 @@ itinerary:
 
     Здесь сохранились белые дороги «сак бэ», площадки для игры Пок-та-пок и высокие пирамиды. Маршрут включает подъем на Нохоч-Муль, пирамиду высотой 42 м.
   images:
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
-    alt: 'На фото: Вид на океан с пляжа Канкуна'
+  - src: /media/destinations/tulum/gallery-1-enhanced-20261004.webp
+    alt: "На фото: морской курорт Тулум в Мексике"
 - day: 4
   title: Канкун
   places:
@@ -86,8 +86,8 @@ itinerary:
 
     Экскурсия проходит в формате «все включено».
   images:
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
-    alt: 'На фото: Вид на океан с пляжа Канкуна'
+  - src: /media/destinations/cancun/gallery-2-enhanced-20261005.webp
+    alt: "На фото: курорт Канкун в Мексике"
 - day: 5
   title: Канкун
   places: []
@@ -102,8 +102,8 @@ itinerary:
 
     Экскурсия проходит в формате «все включено».
   images:
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
-    alt: 'На фото: Вид на океан с пляжа Канкуна'
+  - src: /media/destinations/cancun/gallery-3-enhanced-20261005.webp
+    alt: "На фото: курорт Канкун в Мексике"
 - day: 6
   title: Канкун
   places: []
@@ -118,8 +118,8 @@ itinerary:
 
     Экскурсия проходит в формате «все включено».
   images:
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
-    alt: 'На фото: Вид на океан с пляжа Канкуна'
+  - src: /media/destinations/cancun/gallery-4-enhanced-20261005.webp
+    alt: "На фото: курорт Канкун в Мексике"
 - excursionRef: excursion_cancun_xelha_day_trip
   places: []
 - day: 7
@@ -135,8 +135,8 @@ itinerary:
 
     Размещение в Sunbreeze Suites.
   images:
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
-    alt: 'На фото: Вид на океан с пляжа Канкуна'
+  - src: /media/destinations/ambergris-kaje/gallery-1-enhanced-20261002.webp
+    alt: "На фото: остров Амбергрис-Кайе, Белиз"
 - day: 8
   title: Сан-Педро, Амбергрис-Кайе - Hol Chan Marine Reserve
   places:
@@ -146,6 +146,9 @@ itinerary:
     Сегодня проходит морская экскурсия в Hol Chan Marine Reserve.
 
     Название Hol Chan с языка майя переводится как «маленький канал». В морском парке находится Shark Ray Alley, Аллея акул. Здесь можно увидеть акул-нянек вблизи и поплавать рядом с ними.
+  images:
+  - src: /media/destinations/hol-chan-marine-reserve/hero-generated-20261008.webp
+    alt: "Коралловый риф и акула-нянька в морском заповеднике Хол-Чан, Белиз"
 - day: 9
   title: Сан-Педро, Амбергрис-Кайе
   places:
@@ -154,6 +157,9 @@ itinerary:
     Еще один день сноркелинга у Амбергрис-Кайе.
 
     Во время погружений с маской и трубкой можно увидеть разноцветных тропических рыб, скатов, черепах и кораллы.
+  images:
+  - src: /media/destinations/ambergris-kaje/gallery-2-enhanced-20261002.webp
+    alt: "На фото: остров Амбергрис Кей, Белиз"
 - day: 10
   title: Амбергрис-Кайе - Голубая Дыра - Белиз-Сити
   places:
@@ -167,6 +173,9 @@ itinerary:
     **Стоимость:** $360 NET с человека.
 
     После обеда трансфер на водном такси в Белиз-Сити, затем трансфер в Radisson Fort George Hotel and Marina.
+  images:
+  - src: /media/destinations/great-blue-hole/hero-generated-20261008.webp
+    alt: "Большая голубая дыра в рифе Лайтхаус, Белиз"
 - excursionRef: excursion_belize_blue_hole_scenic_flight
   places: []
 - day: 11
@@ -177,6 +186,9 @@ itinerary:
     Утром проходит обзорная экскурсия по Белиз-Сити.
 
     После нее трансфер в международный аэропорт Белиза к вылету домой.
+  images:
+  - src: /media/destinations/beliz-siti/gallery-1-enhanced-20261002.webp
+    alt: "На фото: город Белиз-Сити, в Белизе"
 included:
 - размещение в отелях 4*, стандартные номера;
 - трансферы с водителем;

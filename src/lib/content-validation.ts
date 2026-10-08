@@ -7,6 +7,7 @@ import destinationRecords from '../data/catalog/destinations.json';
 import destinationReservations from '../data/catalog/destination-reservations.json';
 import { validateDestinationReservations } from './destination-reservations.mjs';
 import { validateSourceTextPointer, validateProvidedMedia, isNonemptyUtf8 } from './provided-materials.mjs';
+import { validateGeneratedSourceMaterials } from './generated-source-materials.mjs';
 import { canonicalPath, countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
 
 export interface CatalogDestination {
@@ -202,22 +203,32 @@ async function validateContent(): Promise<void> {
       const publishedExcursion = excursionById.get(key('ru', entry.id));
       if (publishedExcursion && JSON.stringify(extraDestinations) !== JSON.stringify(publishedExcursion.data.relatedDestinations)) errors.push(`source-index/${name}: дополнительные места не совпадают с опубликованной экскурсией.`);
       const completingReservation = publishedReservations.has(entry.id);
-      if (completingReservation && entry.text?.selected?.kind !== 'provided_materials') errors.push(`source-index/${name}: заполненному резерву нужен text.selected.kind: provided_materials.`);
-      for (const field of ['selected', 'original']) {
-        const pointer = entry.text?.[field];
-        if (!completingReservation && pointer?.kind !== 'provided_materials' && pointer?.repositoryPath === undefined) continue;
-        const pointerErrors = validateSourceTextPointer(pointer, entry.id);
-        errors.push(...pointerErrors.map((error) => `source-index/${name} text.${field}: ${error}`));
-        if (!pointerErrors.length && pointer.repositoryPath && !await validProvidedTextFile(pointer.repositoryPath)) errors.push(`source-index/${name}: предоставленный текст ${pointer.repositoryPath} отсутствует, пуст или не является UTF-8.`);
-      }
-      if (completingReservation || entry.media?.status === 'provided_originals') {
-        const mediaErrors = validateProvidedMedia(entry.media);
-        errors.push(...mediaErrors.map((error) => `source-index/${name}: ${error}`));
-        for (const image of mediaErrors.length ? [] : entry.media.images) {
-          if (image.url.startsWith('/media/')) {
-            const relative = decodeURIComponent(new URL(image.url, 'https://adatours.ru').pathname);
-            const path = resolve(publicRoot, `.${relative}`);
-            if (!path.startsWith(`${publicRoot}${sep}`) || !await stat(path).then((file) => file.isFile() && file.size > 0, () => false)) errors.push(`source-index/${name}: предоставленная фотография ${image.url} отсутствует или пуста.`);
+      const generatedMaterials = entry.text?.selected?.kind === 'editorial_generated'
+        || entry.media?.status === 'generated'
+        || entry.media?.provenance?.kind === 'gpt_image';
+      if (generatedMaterials) {
+        // Tour-day photo repair has its own strict provenance rules. Do not
+        // mislabel editorial text and GPT Image assets as user-provided files.
+        errors.push(...validateGeneratedSourceMaterials(entry, { repoRoot: process.cwd() })
+          .map((error) => `source-index/${name}: ${error}`));
+      } else {
+        if (completingReservation && entry.text?.selected?.kind !== 'provided_materials') errors.push(`source-index/${name}: заполненному резерву нужен text.selected.kind: provided_materials.`);
+        for (const field of ['selected', 'original']) {
+          const pointer = entry.text?.[field];
+          if (!completingReservation && pointer?.kind !== 'provided_materials' && pointer?.repositoryPath === undefined) continue;
+          const pointerErrors = validateSourceTextPointer(pointer, entry.id);
+          errors.push(...pointerErrors.map((error) => `source-index/${name} text.${field}: ${error}`));
+          if (!pointerErrors.length && pointer.repositoryPath && !await validProvidedTextFile(pointer.repositoryPath)) errors.push(`source-index/${name}: предоставленный текст ${pointer.repositoryPath} отсутствует, пуст или не является UTF-8.`);
+        }
+        if (completingReservation || entry.media?.status === 'provided_originals') {
+          const mediaErrors = validateProvidedMedia(entry.media);
+          errors.push(...mediaErrors.map((error) => `source-index/${name}: ${error}`));
+          for (const image of mediaErrors.length ? [] : entry.media.images) {
+            if (image.url.startsWith('/media/')) {
+              const relative = decodeURIComponent(new URL(image.url, 'https://adatours.ru').pathname);
+              const path = resolve(publicRoot, `.${relative}`);
+              if (!path.startsWith(`${publicRoot}${sep}`) || !await stat(path).then((file) => file.isFile() && file.size > 0, () => false)) errors.push(`source-index/${name}: предоставленная фотография ${image.url} отсутствует или пуста.`);
+            }
           }
         }
       }

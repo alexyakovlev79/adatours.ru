@@ -208,7 +208,7 @@ priceFrom: 18025
 currency: USD
 priceNote: $18025
 hero:
-  src: https://brasiltours.ru/image/new_year5.png
+  src: /media/tours/braziliya-s-vodopadami-na-novyj-god/archive-61-src-enhanced-20261008.webp
   alt: 'На фото: Новогодний салют на пляже в Рио-де-Жанейро'
 routeCountries:
 - country_brazil

@@ -209,7 +209,9 @@ itinerary:
     Возвращение в Кольчани и отдых в отеле.
 
     **Питание:** завтрак, обед.
-  images: []
+  images:
+  - src: /media/destinations/laguna-verde/hero-generated-20261008.webp
+    alt: Лагуна Верде
 - day: 12
   title: Пятница - Ла-Пас и Каракас
   places:

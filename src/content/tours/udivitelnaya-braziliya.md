@@ -216,7 +216,9 @@ itinerary:
   places:
   - Сан-Луис
   text: Завтрак в отеле. В назначенное время трансфер в аэропорт для вылета домой.
-  images: []
+  images:
+  - src: /media/tours/udivitelnaya-braziliya/itinerary-day-14-generated-20261008-next20.webp
+    alt: Исторические улицы Сан-Луиса, Бразилия
 included:
 - проживание в отелях;
 - питание по маршруту;

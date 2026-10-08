@@ -45,7 +45,9 @@ itinerary:
     После завтрака начинается длительный трансфер. По дороге предусмотрена остановка на обед. По прибытии - размещение в кампаменто и подготовка к восхождению на Рорайму.
 
     **Питание:** завтрак, обед в пути, ужин.
-  images: []
+  images:
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-02-generated-20261008-next20.webp
+    alt: Саванна у Сан-Франциско-де-Юруани, Венесуэла
 - day: 3
   title: ', среда. Начало треккинга на Рорайму'
   places:
@@ -58,7 +60,9 @@ itinerary:
     Дальше тропа поднимается через долину к основанию Рораймы. Ночевка в палатках в низменной части, где встречаются тропические птицы и светлячки. Перед лагерем открывается вид на огромную кварцевую стену тепуя.
 
     **Питание:** завтрак, сухой паек на обед, ужин.
-  images: []
+  images:
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-03-generated-20261008-next20.webp
+    alt: Рорайма и саванна на подходе к горе, Венесуэла
 - day: 4
   title: ', четверг. Подъем на плато Рораймы'
   places:
@@ -73,7 +77,9 @@ itinerary:
     Вечером - ужин с ромом и ночь в палатках.
 
     **Питание:** завтрак, сухой паек на обед, ужин.
-  images: []
+  images:
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-04-generated-20261008-next20.webp
+    alt: Тропа у скальной стены Рораймы, Венесуэла
 - day: 5
   title: ', пятница. Плато Рораймы'
   places:
@@ -86,7 +92,9 @@ itinerary:
     Возвращение в лагерь, ужин и ночь в палатках.
 
     **Питание:** завтрак, обед, ужин.
-  images: []
+  images:
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-05-generated-20261008-next20.webp
+    alt: Скалы и небольшие водоемы на плато Рораймы, Венесуэла
 - day: 6
   title: ', суббота. Спуск с Рораймы'
   places:
@@ -95,7 +103,9 @@ itinerary:
     После завтрака начинается спуск с плато к подножию горы. По дороге предусмотрен отдых. Лагерь разбивается у реки Рио-Тек. Вечером - прощальный ужин после горной части маршрута.
 
     **Питание:** завтрак, сухой паек на обед, ужин.
-  images: []
+  images:
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-06-generated-20261008-next20.webp
+    alt: Рорайма со стороны реки Тек, Венесуэла
 - day: 7
   title: ', воскресенье. Рорайма - Сан-Франциско-де-Юруани'
   places:
@@ -107,7 +117,9 @@ itinerary:
     Размещение в посаде в Сан-Франциско-де-Юруани, отдых и ужин.
 
     **Питание:** завтрак, сухой паек на обед, ужин.
-  images: []
+  images:
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-07-generated-20261008-next20.webp
+    alt: Путь от Рораймы к Парай-Тепуй, Венесуэла
 - day: 8
   title: ', понедельник. Пуэрто-Ордас'
   places:
@@ -116,7 +128,9 @@ itinerary:
     После завтрака выезд в Пуэрто-Ордас. Переезд занимает около 8 часов. По прибытии - размещение в отеле-посаде и отдых.
 
     **Питание:** завтрак, обед в пути.
-  images: []
+  images:
+  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-08-generated-20261008-next20.webp
+    alt: Река Карони у Пуэрто-Ордаса, Венесуэла
 - day: 9
   title: ', вторник. Национальный парк Канайма - остров Ратон'
   places:

@@ -182,7 +182,7 @@ priceFrom: 2715
 currency: USD
 priceNote: $2715
 hero:
-  src: https://brasiltours.ru/image/catalog/product/h/t/htmlimage_3.png
+  src: /media/tours/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe/archive-46-src-enhanced-20261008.webp
   alt: 'на фото: Карнавал в Рио'
 routeCountries:
 - country_brazil

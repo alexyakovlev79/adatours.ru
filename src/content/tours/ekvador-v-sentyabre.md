@@ -191,7 +191,7 @@ itinerary:
     \ размещение и свободное время для прогулки по портовому городу, набережной, магазинам и ресторанам.\n\n**Размещение:**\
     \ Fiesta 4*.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/galapagos-islands.jpg
+  - src: /media/tours/ekvador-v-sentyabre/archive-45-src-enhanced-20261008.webp
     alt: 'На фото: Вид на Галапагосские острова'
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
     alt: 'На фото: Площадь города Кито'
@@ -211,7 +211,7 @@ itinerary:
     \ К вечеру возвращение в отель. Оставшаяся часть дня свободна для прогулки по Пуэрто-Айоре.\n\n**Размещение:** Fiesta\
     \ 4*.  \n**Питание:** завтрак, обед."
   images:
-  - src: https://brasiltours.ru/image/countries/equador/galapagos-islands.jpg
+  - src: /media/tours/ekvador-v-sentyabre/archive-45-src-enhanced-20261008.webp
     alt: 'На фото: Вид на Галапагосские острова'
 - day: 10
   title: Пятница, 13 сентября 2024. Сеймур-Норте или Пласа-Сур
@@ -242,7 +242,7 @@ itinerary:
   images:
   - src: /media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Столица Эквадора, город Кито'
-  - src: https://brasiltours.ru/image/countries/equador/galapagos-islands.jpg
+  - src: /media/tours/ekvador-v-sentyabre/archive-45-src-enhanced-20261008.webp
     alt: 'На фото: Вид на Галапагосские острова'
 included:
 - Групповые трансферы и экскурсии по программе.

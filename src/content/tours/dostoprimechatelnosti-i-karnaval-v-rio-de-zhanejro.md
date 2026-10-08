@@ -32,7 +32,7 @@ itinerary:
 
     В свободное время можно выйти к Копакабане. Набережная известна мозаичной плиткой, рядом играют в пляжный волейбол, а на песке и у воды проходит повседневная жизнь кариок, жителей Рио. Можно заказать кайпиринью, послушать океан и провести первый вечер без экскурсионной программы.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio-de-janeiro1.jpg
+  - src: /media/tours/dostoprimechatelnosti-i-karnaval-v-rio-de-zhanejro/archive-47-src-enhanced-20261008.webp
     alt: Рио-де-Жанейро
 - day: 2
   title: Корковадо и Христос-Искупитель
@@ -73,7 +73,7 @@ itinerary:
 
     Карнавал длится всю ночь. На трибунах слышны барабаны и песни школ, публика поддерживает участников, а представления идут одно за другим. Перед зрителями проходят танцоры и музыканты в ярких костюмах, крупные платформы и целые постановки, которые каждая школа готовит специально для парада. Можно оставаться до конца программы или вернуться в отель раньше. Трансфер обратно доступен после выступления любой школы, если вы решите закончить вечер до завершения всего шоу.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/carnaval-do-rio-de-janeiro-2006-a-t-fotografia-006022712.jpg
+  - src: /media/tours/dostoprimechatelnosti-i-karnaval-v-rio-de-zhanejro/archive-48-src-enhanced-20261008.webp
     alt: Достопримечательности и Карнавал в Рио-де-Жанейро
 - day: 4
   title: Сахарная Голова и пляжи Рио
@@ -88,7 +88,7 @@ itinerary:
 
     Вечером можно попробовать морепродукты в ресторане Marius с видом на океан. Ориентировочная стоимость — около $130 с человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio-de-janeiro1.jpg
+  - src: /media/tours/dostoprimechatelnosti-i-karnaval-v-rio-de-zhanejro/archive-47-src-enhanced-20261008.webp
     alt: Рио-де-Жанейро
 - day: 5
   title: Ангра-дус-Рейс и Илья-Гранде
@@ -130,7 +130,7 @@ itinerary:
   - Рио-де-Жанейро
   text: Завтрак в отеле. Трансфер в аэропорт Рио-де-Жанейро.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/rio-de-janeiro1.jpg
+  - src: /media/tours/dostoprimechatelnosti-i-karnaval-v-rio-de-zhanejro/archive-47-src-enhanced-20261008.webp
     alt: Рио-де-Жанейро
 included:
 - Проживание в отелях по программе на базе завтраков
@@ -156,7 +156,7 @@ priceFrom: 4116
 currency: USD
 priceNote: $4116
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/carnaval-do-rio-de-janeiro-2006-a-t-fotografia-006022712.jpg
+  src: /media/tours/dostoprimechatelnosti-i-karnaval-v-rio-de-zhanejro/archive-48-src-enhanced-20261008.webp
   alt: Достопримечательности и Карнавал в Рио-де-Жанейро
 routeCountries:
 - country_brazil

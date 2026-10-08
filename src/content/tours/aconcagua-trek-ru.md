@@ -157,7 +157,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка либо Dorm Dome.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/risunok6.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-41-src-enhanced-20261008.webp
         alt: "Высотный маршрут Аконкагуа"
         intendedSlot: "itinerary:day-7"
   - day: 8
@@ -170,7 +170,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка либо Dorm Dome.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/slide-1588829555-aconcagua.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-42-src-enhanced-20261008.webp
         alt: "Аконкагуа"
         intendedSlot: "itinerary:day-8"
   - day: 9
@@ -198,7 +198,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/risunok3.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-43-src-enhanced-20261008.webp
         alt: "Нидо-де-Кондорес"
         intendedSlot: "itinerary:day-10"
   - day: 11
@@ -226,7 +226,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/risunok4.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-44-src-enhanced-20261008.webp
         alt: "Плаза Колера"
         intendedSlot: "itinerary:day-12"
   - day: 13
@@ -282,7 +282,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка либо Dorm Dome.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/risunok4.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-44-src-enhanced-20261008.webp
         alt: "Возвращение в Плаза-де-Мулас"
         intendedSlot: "itinerary:day-16"
   - day: 17

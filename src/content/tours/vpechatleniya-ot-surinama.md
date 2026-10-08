@@ -142,7 +142,7 @@ priceFrom: 3745
 currency: USD
 priceNote: $3745
 hero:
-  src: https://brasiltours.ru/image/Suriname-PZ5W-DXNews.jpg
+  src: /media/tours/vpechatleniya-ot-surinama/archive-50-src-enhanced-20261008.webp
   alt: Впечатления от Суринама
 routeCountries:
 - country_suriname

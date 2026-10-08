@@ -92,8 +92,8 @@ itinerary:
 
     Экскурсия также включает готический собор, где похоронены принцесса Изабел, Педру II и его супруга, и Королевский музей.
   images:
-  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-1-enhanced-20261006.webp
-    alt: Рио-де-Жанейро
+  - src: /media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp
+    alt: Рио-де-Жанейро вечером
 - excursionRef: excursion_source_royal_petropolis_private_tour_full_day
   places: []
 - day: 5
@@ -106,8 +106,8 @@ itinerary:
 
     По прибытии встреча с водителем и трансфер.
   images:
-  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
-    alt: Рио-де-Жанейро
+  - src: /media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp
+    alt: Водопады Игуасу со стороны Бразилии
 - day: 6
   title: Бразильская сторона Игуасу, Парк птиц и Макуко
   places:
@@ -126,6 +126,9 @@ itinerary:
   places: []
 - excursionRef: excursion_source_makuko_safari
   places: []
+  images:
+  - src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
+    alt: Водопады Игуасу
 - day: 7
   title: Аргентинская сторона Игуасу - Буэнос-Айрес
   places:
@@ -201,8 +204,8 @@ itinerary:
 
     Примерное расписание: 11:00 встреча с эмпанадас и вином, 11:30 свободные активности, 13:00 обед и шоу, 15:00 выступление гаучо, 16:30 возвращение в Буэнос-Айрес.
   images:
-  - src: /media/tours/argentina-and-brazil-ru/itinerary-day-1-enhanced-20261006.webp
-    alt: Буэнос-Айрес
+  - src: /media/home/buenos-aires-enhanced-20260930.webp
+    alt: Улица Буэнос-Айреса
 - excursionRef: excursion_source_fiesta_gaucho
   places: []
 - day: 11
@@ -219,8 +222,6 @@ itinerary:
   images:
   - src: /media/excursions/jekskursija-v-tigre/gallery-2-enhanced-20261001.webp
     alt: Тигре
-  - src: /media/tours/argentina-2024/itinerary-day-2-enhanced-20261006.webp
-    alt: Буэнос-Айрес
 - day: 12
   title: Буэнос-Айрес - Сантьяго-де-Чили
   places:
@@ -233,8 +234,6 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
-  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
-    alt: Буэнос-Айрес
 - day: 13
   title: Сантьяго-де-Чили
   places:
@@ -271,8 +270,8 @@ itinerary:
 
     Завершить день предлагается в районе Плайя-Анча с видом на закат над Тихим океаном.
   images:
-  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+  - src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
+    alt: Сантьяго-де-Чили, городская панорама
 - day: 15
   title: Сантьяго-де-Чили
   places:
@@ -280,8 +279,8 @@ itinerary:
   text: После завтрака трансфер в аэропорт для вылета. На этом 15-дневное путешествие по 3 странам Южной Америки и ее столицам
     окончательно завершается здесь сегодня.
   images:
-  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-13-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+  - src: /media/destinations/santyago-de-chili/gallery-2-enhanced-20261006.webp
+    alt: Сантьяго-де-Чили, городская панорама
 included:
 - Проживание в указанных отелях или аналогичных.
 - Экскурсии по программе с англоговорящим гидом.

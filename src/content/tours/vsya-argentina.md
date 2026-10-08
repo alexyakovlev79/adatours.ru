@@ -432,8 +432,8 @@ itinerary:
       
       Затем дорога проходит вдоль песчаного пляжа и ведет в Вилья-Ла-Ангостура, окруженную озерами и горами. По пути можно увидеть озеро Коррентосо и типичные для северной Патагонии лесные пейзажи. После знакомства с районом возвращение в Барилоче.
     images:
-      - src: /media/tours/chili-argentina/itinerary-day-10-images-1-enhanced-20261006.webp
-        alt: "Большое кольцо Барилоче"
+      - src: /media/tours/vsya-argentina/itinerary-day-15-generated-20261008-v1.webp
+        alt: "Озеро Трафуль и горы у Вилья-Трафуль на маршруте Большого кольца"
         intendedSlot: "itinerary:day-15"
   - day: 16
     title: "Барилоче и Серро-Кампанарио"
@@ -531,8 +531,8 @@ itinerary:
     text: |-
       Свободный день для самостоятельных треккингов по подготовленным маршрутам в окрестностях Эль-Чалтена. Регион известен горными тропами и видами на патагонские вершины, поэтому можно выбрать прогулку в соответствии со своей подготовкой и погодой.
     images:
-      - src: /media/tours/vsya-argentina/itinerary-day-20-enhanced-20261006.webp
-        alt: "Горы Эль-Чалтена"
+      - src: /media/tours/vsya-argentina/itinerary-day-20-generated-20261008-v1.webp
+        alt: "Треккинговая тропа у Эль-Чалтена с видом на Фицрой"
         intendedSlot: "itinerary:day-20"
   - day: 21
     title: "Эль-Чалтен - Эль-Калафате"
@@ -696,8 +696,8 @@ itinerary:
     text: |-
       После завтрака свободное время в Ушуайе. В назначенное время - трансфер в аэропорт и перелет в Буэнос-Айрес. Далее предусмотрена самостоятельная пересадка на международный рейс домой.
     images:
-      - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
-        alt: "Возвращение в Буэнос-Айрес"
+      - src: /media/tours/vsya-argentina/itinerary-day-26-generated-20261008-v1.webp
+        alt: "Ушуайя и канал Бигль перед вылетом в Буэнос-Айрес"
         intendedSlot: "itinerary:day-26"
 included:
   - "Размещение в отелях."

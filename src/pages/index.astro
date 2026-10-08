@@ -1,88 +1,487 @@
 ---
-import { isActiveEntity } from '../lib/archive.mjs';
 import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../lib/archive.mjs';
+import { buildCountryTourCounts, compareCountriesByPopularity } from '../lib/country-popularity';
+import { buildInterestIndex, countLabel } from '../lib/interest-model.mjs';
+import { interestTourCount } from '../lib/interest-copy.mjs';
+import { compareToursBySalesFit } from '../lib/tour-ranking';
+import { countryPath, mainTourCountries, themePath, tourPath } from '../lib/routes';
+import { withBase } from '../lib/paths';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
-import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
-import StoryPair from '../components/editorial/StoryPair.astro';
+import InterestCard from '../components/editorial/InterestCard.astro';
+import PersonProfile from '../components/proof/PersonProfile.astro';
+import FactStrip from '../components/proof/FactStrip.astro';
+import SearchTrigger from '../components/global/SearchTrigger.astro';
 
-const [brazil] = await getCollection('countries', ({ data }) =>
-  data.id === 'country_brazil' && data.locale === 'ru' && isActiveEntity(data)
-);
+const activeRu = ({ data }) => data.locale === 'ru' && isActiveEntity(data);
+const [countryEntries, tourEntries, themeEntries, destinationEntries, excursionEntries, people] = await Promise.all([
+  getCollection('countries', activeRu),
+  getCollection('tours', activeRu),
+  getCollection('themes', activeRu),
+  getCollection('destinations', activeRu),
+  getCollection('excursions', activeRu),
+  getCollection('people', activeRu),
+]);
+
+const tours = [...tourEntries].sort(compareToursBySalesFit);
+const countryCounts = buildCountryTourCounts(tours);
+const countries = [...countryEntries].sort(compareCountriesByPopularity(countryCounts));
+const brazil = countries.find((country) => country.data.id === 'country_brazil');
+const leadingCountry = brazil ?? countries[0];
+const otherCountries = countries.filter((country) => country.data.id !== leadingCountry?.data.id).slice(0, 4);
+const interests = buildInterestIndex(themeEntries, tours);
+const visualInterests = interests.filter(({ entry }) => Boolean(entry.data.hero?.src)).slice(0, 4);
+const visualInterestIds = new Set(visualInterests.map(({ entry }) => entry.data.id));
+const otherInterests = interests.filter(({ entry }) => !visualInterestIds.has(entry.data.id));
+
+const featuredTours: typeof tours = [];
+const tourSelectors = [
+  (entry: (typeof tours)[number]) => mainTourCountries(entry.data).length === 1 && mainTourCountries(entry.data)[0].id === 'country_brazil',
+  (entry: (typeof tours)[number]) => mainTourCountries(entry.data).length === 1 && mainTourCountries(entry.data)[0].id === 'country_argentina',
+  (entry: (typeof tours)[number]) => mainTourCountries(entry.data).length > 1,
+];
+for (const selector of tourSelectors) {
+  const match = tours.find((entry) => entry.data.hero?.src && !featuredTours.some((item) => item.data.id === entry.data.id) && selector(entry));
+  if (match) featuredTours.push(match);
+}
+for (const entry of tours) {
+  if (featuredTours.length >= 3) break;
+  if (entry.data.hero?.src && !featuredTours.some((item) => item.data.id === entry.data.id)) featuredTours.push(entry);
+}
+const mainTour = featuredTours[0];
+const smallTours = featuredTours.slice(1);
+const tourDescription = (entry: (typeof tours)[number]) => [
+  mainTourCountries(entry.data).map((country) => country.name).join(' · '),
+  entry.data.durationDays ? countLabel(entry.data.durationDays, ['день', 'дня', 'дней']) : '',
+].filter(Boolean).join(' · ');
+
+const placeCover = destinationEntries.find((entry) => entry.data.countryId === 'country_brazil' && entry.data.hero?.src)?.data.hero?.src
+  ?? destinationEntries.find((entry) => entry.data.hero?.src)?.data.hero?.src
+  ?? '/media/home/lencois-enhanced-20260930.webp';
+const excursionCover = excursionEntries.find((entry) => entry.data.country === 'country_brazil' && entry.data.hero?.src)?.data.hero?.src
+  ?? excursionEntries.find((entry) => entry.data.hero?.src)?.data.hero?.src
+  ?? '/media/home/rio-night-enhanced-20260930.webp';
+const anna = people.find((entry) => entry.data.id === 'person_anna');
 ---
 
-<BaseLayout leadTitle="Расскажите, какой маршрут нужен" leadEntityId="home"
-  title="Ada Tours — путешествия по Бразилии и Латинской Америке"
-  description="Индивидуальные путешествия, VIP, MICE и DMC по Бразилии и Латинской Америке."
+<BaseLayout
+  leadTitle="Расскажите, какое путешествие вы планируете"
+  leadEntityId="home"
+  title="Путешествия по Бразилии и Латинской Америке | Ada Tours"
+  description="Выбирайте путешествия по странам, интересам и готовым маршрутам. Индивидуальные и VIP-туры, экскурсии, MICE и DMC по Бразилии и Латинской Америке."
+  image="/media/catalog/tury/hero-enhanced-20260930.webp"
 >
   <Hero
     home
     eyebrow="Ada Tours · Brazil & Latin America"
-    title="Латинская Америка, собранная под вас"
-    intro="Индивидуальные маршруты по Бразилии и Латинской Америке, VIP-поездки, MICE и работа с турагентствами. Локальную часть программы координирует Ada Tours."
+    title="Латинская Америка. Ваша история путешествия"
+    intro="Выберите страну, впечатления или готовый маршрут. Мы поможем соединить интересные вам места в одну поездку с продуманной логистикой и сервисом."
     image="/media/catalog/tury/hero-enhanced-20260930.webp"
-    ctaLabel="Обсудить поездку"
+    ctaHref="#home-start"
+    ctaLabel="Выбрать путешествие"
   />
 
-  <EditorialStatement
-    eyebrow="Путешествия"
-    text="От Рио до Патагонии. Маршрут строится вокруг ваших дат, интересов и желаемого уровня сервиса."
-  />
+  <section id="home-start" class="home-start section--tight" aria-labelledby="home-start-title">
+    <div class="container">
+      <p class="eyebrow">С чего начать</p>
+      <h2 id="home-start-title">У каждого путешествия своя точка отправления</h2>
+      <nav class="home-start__links" aria-label="Как выбрать путешествие">
+        <a href="#home-countries">
+          <span class="home-start__num">01</span>
+          <span class="home-start__label">Знаю страну</span>
+          <span class="home-start__desc">Бразилия, Аргентина, Перу и другие направления</span>
+          <span class="home-start__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="#home-interests">
+          <span class="home-start__num">02</span>
+          <span class="home-start__label">Выбираю впечатления</span>
+          <span class="home-start__desc">Природа, культура, приключения, океан и другое</span>
+          <span class="home-start__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="#home-tours">
+          <span class="home-start__num">03</span>
+          <span class="home-start__label">Хочу готовый маршрут</span>
+          <span class="home-start__desc">Программы по одной или нескольким странам</span>
+          <span class="home-start__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="#home-services">
+          <span class="home-start__num">04</span>
+          <span class="home-start__label">Нужна особая организация</span>
+          <span class="home-start__desc">VIP, корпоративные поездки, делегации и DMC</span>
+          <span class="home-start__arrow" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+      <div class="home-start__search">
+        <p>Уже знаете название города, места или тура?</p>
+        <SearchTrigger label="Найти на сайте" />
+      </div>
+    </div>
+  </section>
 
-  <DestinationBand
-    eyebrow="Направление №1"
-    title="Бразилия"
-    text="Рио, Игуасу, Амазония, Пантанал и побережье в десятках сочетаний."
-    href="/brazil/"
-    image="/media/home/lencois-enhanced-20260930.webp"
-    imageTextAlign={brazil?.data.imageTextAlign}
-  />
+  <section id="home-countries" class="home-countries home-section" aria-labelledby="home-countries-title">
+    <div class="container home-heading">
+      <div>
+        <p class="eyebrow">География поездок</p>
+        <h2 id="home-countries-title">Куда поедем?</h2>
+      </div>
+      <p>Начните с одной страны. Из нее можно отправиться дальше по региону или посвятить все путешествие ее городам, природе и побережью.</p>
+    </div>
+    {leadingCountry && (
+      <DestinationBand
+        headingTag="h3"
+        eyebrow={countryCounts.get(leadingCountry.data.id) ? countLabel(countryCounts.get(leadingCountry.data.id)!, ['тур', 'тура', 'туров']) : 'Направление Ada Tours'}
+        title={leadingCountry.data.name}
+        text={leadingCountry.data.id === 'country_brazil'
+          ? 'Рио-де-Жанейро, Игуасу, Амазония, Пантанал и океан. Выберите свой маршрут по Бразилии.'
+          : leadingCountry.data.summary}
+        href={countryPath(leadingCountry.data)}
+        image={leadingCountry.data.hero?.src}
+        imageTextAlign={leadingCountry.data.imageTextAlign}
+      />
+    )}
+    <div class="container">
+      <div class="home-country-grid">
+        {otherCountries.map((country) => (
+          <a class="home-poster" href={withBase(countryPath(country.data))} data-image-text-align={country.data.imageTextAlign}>
+            {country.data.hero?.src && <img src={withBase(country.data.hero.src)} loading="lazy" alt="" />}
+            <span class="home-poster__shade" aria-hidden="true"></span>
+            <span class="home-poster__content">
+              <span class="eyebrow">{countLabel(countryCounts.get(country.data.id) ?? 0, ['тур', 'тура', 'туров'])}</span>
+              <h3>{country.data.name}</h3>
+              <span class="home-poster__arrow">Смотреть страну <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+        ))}
+      </div>
+      <a class="home-all-link" href={withBase('/country/')}>Все страны Латинской Америки <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
 
-  <StoryPair
-    eyebrow="Аргентина"
-    title="Город, вино и Патагония"
-    text="Буэнос-Айрес можно соединить с Мендосой, ледниками, Ушуайей или продолжением маршрута в Чили."
-    image="/media/home/patagonia-enhanced-20260930.webp"
-    reverse
-  />
+  <section id="home-interests" class="home-interests home-section" aria-labelledby="home-interests-title">
+    <div class="container">
+      <div class="home-heading">
+        <div>
+          <p class="eyebrow">13 интересов</p>
+          <h2 id="home-interests-title">Ради чего хочется лететь?</h2>
+        </div>
+        <p>Выберите, что хочется увидеть или попробовать. Мы покажем страны и маршруты, где это впечатление становится частью путешествия.</p>
+      </div>
+      <div class="home-interest-grid">
+        {visualInterests.map(({ entry, tourCount }, index) => (
+          <InterestCard
+            entityId={entry.data.id}
+            title={entry.data.name}
+            text={index === 0 ? entry.data.summary : undefined}
+            meta={interestTourCount(entry.data.id, tourCount)}
+            image={entry.data.hero?.src}
+            href={themePath(entry.data)}
+            large={index === 0}
+          />
+        ))}
+      </div>
+      {otherInterests.length > 0 && (
+        <ul class="home-interest-list">
+          {otherInterests.map(({ entry, tourCount }) => (
+            <li>
+              <a href={withBase(themePath(entry.data))}>
+                <span>{entry.data.name}</span>
+                <small>{interestTourCount(entry.data.id, tourCount)}</small>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+      <a class="home-all-link" href={withBase('/interests/')}>Открыть все 13 интересов <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section id="home-tours" class="home-tours home-section" aria-labelledby="home-tours-title">
+    <div class="container home-heading">
+      <div>
+        <p class="eyebrow">Готовые программы</p>
+        <h2 id="home-tours-title">Маршруты, с которых удобно начать</h2>
+      </div>
+      <p>Посмотрите последовательность поездки, длительность и основные остановки. Готовый тур можно взять за основу и адаптировать под ваши даты.</p>
+    </div>
+    {mainTour && (
+      <DestinationBand
+        headingTag="h3"
+        eyebrow={tourDescription(mainTour)}
+        title={mainTour.data.title}
+        text={mainTour.data.lead}
+        href={tourPath(mainTour.data)}
+        image={mainTour.data.hero?.src}
+        imageTextAlign={mainTour.data.imageTextAlign}
+      />
+    )}
+    <div class="container">
+      <div class="home-tour-grid">
+        {smallTours.map((entry) => (
+          <a class="home-poster home-poster--tour" href={withBase(tourPath(entry.data))} data-image-text-align={entry.data.imageTextAlign}>
+            {entry.data.hero?.src && <img src={withBase(entry.data.hero.src)} loading="lazy" alt="" />}
+            <span class="home-poster__shade" aria-hidden="true"></span>
+            <span class="home-poster__content">
+              <span class="eyebrow">{tourDescription(entry)}</span>
+              <h3>{entry.data.title}</h3>
+              <span class="home-poster__arrow">Посмотреть тур <span aria-hidden="true">↗</span></span>
+            </span>
+          </a>
+        ))}
+      </div>
+      <a class="home-all-link" href={withBase('/tours/')}>Все туры Ada Tours <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
 
   <DestinationBand
     eyebrow="Multi-country"
-    title="Несколько стран в одной поездке"
-    text="Перелеты, трансферы и отели соединяем так, чтобы больше времени осталось на саму поездку."
+    title="Одна поездка. Несколько стран"
+    text="Аргентина и Бразилия, Перу и Боливия, Патагония и водопады Игуасу. Сравните готовые маршруты по нескольким странам."
     href="/multi-country/"
     image="/media/home/buenos-aires-enhanced-20260930.webp"
     align="right"
   />
 
-  <StoryPair
-    eyebrow="Природа"
-    title="Амазония требует времени"
-    text="В Амазонии дорога сама становится частью путешествия. Здесь особенно ценны несколько спокойных дней."
-    image="/media/home/amazon-enhanced-20260930.webp"
-  />
+  <section class="home-discover home-section" aria-labelledby="home-discover-title">
+    <div class="container">
+      <div class="home-heading">
+        <div>
+          <p class="eyebrow">Города, природа, впечатления</p>
+          <h2 id="home-discover-title">Исследуйте места и экскурсии</h2>
+        </div>
+        <p>Иногда путешествие начинается с одного места: водопада, национального парка, города или экскурсии, ради которой стоит изменить маршрут.</p>
+      </div>
+      <div class="home-discover__grid">
+        <a class="home-discover__tile" href={withBase('/places/')}>
+          <img src={withBase(placeCover)} alt="" loading="lazy" />
+          <span class="home-discover__shade" aria-hidden="true"></span>
+          <span class="home-discover__copy">
+            <span class="eyebrow">Путеводитель</span>
+            <h3>Места</h3>
+            <span>Города, регионы и природные территории <span aria-hidden="true">↗</span></span>
+          </span>
+        </a>
+        <a class="home-discover__tile" href={withBase('/excursions/')}>
+          <img src={withBase(excursionCover)} alt="" loading="lazy" />
+          <span class="home-discover__shade" aria-hidden="true"></span>
+          <span class="home-discover__copy">
+            <span class="eyebrow">Впечатления в поездке</span>
+            <h3>Экскурсии</h3>
+            <span>Прогулки, выезды и занятия, которые можно добавить к маршруту <span aria-hidden="true">↗</span></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-  <DestinationBand
-    eyebrow="MICE"
-    title="Деловые поездки и группы"
-    text="Встречи, транспорт, площадки и программа вне деловой части под одной координацией."
-    href="/mice/"
-    image="/media/home/rio-night-enhanced-20260930.webp"
-  />
+  <section id="home-services" class="home-services home-section" aria-labelledby="home-services-title">
+    <div class="container">
+      <div class="home-heading">
+        <div>
+          <p class="eyebrow">Как мы работаем</p>
+          <h2 id="home-services-title">От частного путешествия до деловой делегации</h2>
+        </div>
+        <p>Ada Tours организует индивидуальные поездки, корпоративные программы и наземное обслуживание для зарубежных туроператоров.</p>
+      </div>
+      <div class="home-services__grid">
+        <a class="home-service home-service--vip" href={withBase('/vip/')}>
+          <img src={withBase('/media/home/patagonia-enhanced-20260930.webp')} loading="lazy" alt="" />
+          <span class="home-service__shade" aria-hidden="true"></span>
+          <span class="home-service__content">
+            <span class="eyebrow">Private travel</span>
+            <h3>VIP и Luxury</h3>
+            <span>Частные маршруты, индивидуальные гиды, комфорт и свобода в программе.</span>
+            <strong>Подробнее <span aria-hidden="true">↗</span></strong>
+          </span>
+        </a>
+        <a class="home-service" href={withBase('/mice/')}>
+          <img src={withBase('/media/home/rio-night-enhanced-20260930.webp')} loading="lazy" alt="" />
+          <span class="home-service__shade" aria-hidden="true"></span>
+          <span class="home-service__content">
+            <span class="eyebrow">Для компаний</span>
+            <h3>MICE и деловые поездки</h3>
+            <span>Группы, встречи, мероприятия и сопровождение на месте.</span>
+            <strong>Подробнее <span aria-hidden="true">↗</span></strong>
+          </span>
+        </a>
+        <a class="home-service" href={withBase('/dmc/')}>
+          <img src={withBase('/media/home/amazon-enhanced-20260930.webp')} loading="lazy" alt="" />
+          <span class="home-service__shade" aria-hidden="true"></span>
+          <span class="home-service__content">
+            <span class="eyebrow">Партнерам</span>
+            <h3>DMC / B2B</h3>
+            <span>Наземные программы по Бразилии и Латинской Америке для турагентств и туроператоров.</span>
+            <strong>Подробнее <span aria-hidden="true">↗</span></strong>
+          </span>
+        </a>
+      </div>
+      <div class="home-services__links">
+        <a href={withBase('/mice/business-delegations/')}>Деловые делегации <span aria-hidden="true">↗</span></a>
+        <a href={withBase('/dmc/travel-agencies/')}>Для турагентств <span aria-hidden="true">↗</span></a>
+        <a href={withBase('/dmc/terms/')}>Условия сотрудничества <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
 
-  <EditorialStatement
-    eyebrow="DMC / B2B"
-    text="Для турагентств Ada Tours собирает наземную часть поездки и ведет маршрут на месте одной командой."
-  />
+  <section class="home-team home-section" aria-labelledby="home-team-title">
+    <div class="container home-heading">
+      <div>
+        <p class="eyebrow">Люди и опыт</p>
+        <h2 id="home-team-title">Путешествия ведут люди, которые знают регион</h2>
+      </div>
+      <p>Команда Ada Tours работает из Рио-де-Жанейро и координирует маршруты с местными партнерами.</p>
+    </div>
+    <FactStrip
+      facts={[
+        { value: String(countries.length), label: 'стран в каталоге' },
+        { value: String(tours.length), label: 'действующих туров' },
+        { value: String(interests.length), label: 'интересов для поездки' },
+        { value: 'Рио-де-Жанейро', label: 'база команды Ada Tours' },
+      ]}
+    />
+    {anna && (
+      <PersonProfile
+        name={anna.data.name}
+        role={anna.data.role}
+        photo={anna.data.photo}
+        href={'/team/' + anna.data.slug + '/'}
+        expertise={anna.data.expertise?.slice(0, 4)}
+        eyebrow="Основатель Ada Tours"
+      >
+        <p>Анна Аванесова руководит Ada Tours и работает с индивидуальными, VIP и multi-country маршрутами, а также запросами туристических компаний и корпоративных групп.</p>
+      </PersonProfile>
+    )}
+    <nav class="container home-proof-links" aria-label="Больше об Ada Tours">
+      <a href={withBase('/cases/')}>Кейсы <span aria-hidden="true">↗</span></a>
+      <a href={withBase('/reviews/')}>Отзывы <span aria-hidden="true">↗</span></a>
+      <a href={withBase('/team/')}>Команда <span aria-hidden="true">↗</span></a>
+      <a href={withBase('/about/')}>О компании <span aria-hidden="true">↗</span></a>
+    </nav>
+  </section>
 
-  <DestinationBand
-    eyebrow="Для партнеров"
-    title="DMC по Бразилии и Латинской Америке"
-    text="FIT, группы, VIP и MICE. Один принимающий партнер для сложных маршрутов."
-    href="/dmc/"
-    image="/media/catalog/tury/hero-enhanced-20260930.webp"
-    align="right"
-  />
-
+  <div class="home-final">
+    <div class="container">
+      <p class="eyebrow">Ваше путешествие</p>
+      <h2>Есть идея поездки? Давайте соберем маршрут.</h2>
+      <p>Расскажите о датах, странах и людях, с которыми едете. Обсудим, с чего начать и какие программы подойдут.</p>
+      <a href="#request">Перейти к запросу <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
 </BaseLayout>
+
+<style>
+  :global(#home-start), :global(#home-countries), :global(#home-interests),
+  :global(#home-tours), :global(#home-services) { scroll-margin-top: 94px; }
+
+  .home-section { padding-block: clamp(74px, 9vw, 132px); }
+  .home-heading { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr); align-items: end; gap: clamp(24px, 6vw, 110px); margin-bottom: clamp(34px, 5vw, 72px); }
+  .home-heading .eyebrow { margin: 0 0 14px; }
+  .home-heading h2 { max-width: 850px; margin: 0; font-size: var(--text-h2); line-height: 1.05; text-wrap: balance; }
+  .home-heading > p { max-width: 480px; margin: 0; color: color-mix(in srgb, var(--color-ink) 73%, transparent); font-size: var(--text-lg); line-height: 1.5; }
+
+  .home-start { background: var(--color-gold-soft); }
+  .home-start .eyebrow { margin: 0 0 16px; }
+  .home-start h2 { max-width: 1050px; margin: 0 0 clamp(34px, 5vw, 72px); font-size: var(--text-h2); line-height: 1.04; }
+  .home-start__links { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(28px, 5vw, 72px); }
+  .home-start__links a { display: grid; grid-template-columns: 36px minmax(0, 1fr) 22px; column-gap: 14px; padding: 24px 0; border-top: 1px solid rgb(26 26 26 / 30%); transition: opacity 180ms ease; }
+  .home-start__links a:hover { opacity: .65; }
+  .home-start__num { grid-row: 1 / 3; padding-top: 5px; font-size: .79rem; }
+  .home-start__label { display: block; font-family: var(--font-display); font-size: clamp(1.45rem, 2.15vw, 2.45rem); line-height: 1.16; }
+  .home-start__desc { grid-column: 2; grid-row: 2; padding-top: 9px; font-size: .92rem; color: rgb(26 26 26 / 70%); }
+  .home-start__arrow { grid-column: 3; grid-row: 1; justify-self: end; font-size: 1.4rem; }
+  .home-start__search { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin-top: 34px; padding-top: 28px; border-top: 1px solid rgb(26 26 26 / 30%); }
+  .home-start__search p { margin: 0; }
+  .home-start__search :global(.search-trigger) { padding: 12px 18px; border: 1px solid currentColor; font-size: .8rem; }
+
+  .home-country-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+  .home-poster { position: relative; display: flex; align-items: flex-end; min-width: 0; min-height: clamp(310px, 34vw, 470px); overflow: hidden; isolation: isolate; color: #fff; background: linear-gradient(140deg, #343c36, #151713); }
+  .home-poster img, .home-discover__tile img, .home-service img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; max-width: none; object-fit: cover; transition: transform 700ms var(--ease-out); }
+  .home-poster:hover img, .home-discover__tile:hover img, .home-service:hover img { transform: scale(1.035); }
+  .home-poster__shade, .home-discover__shade, .home-service__shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgb(0 0 0 / 5%) 12%, rgb(0 0 0 / 70%) 100%); }
+  .home-poster__content { display: block; width: 100%; padding: clamp(18px, 2.5vw, 34px); }
+  .home-poster__content .eyebrow { display: block; margin-bottom: 14px; color: rgb(255 255 255 / 85%); }
+  .home-poster__content h3 { margin: 0 0 18px; font-size: clamp(1.6rem, 2.3vw, 2.9rem); line-height: 1.08; overflow-wrap: anywhere; }
+  .home-poster__arrow { display: inline-flex; gap: 14px; align-items: center; padding-bottom: 6px; border-bottom: 1px solid rgb(255 255 255 / 80%); font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; }
+  .home-poster[data-image-text-align="right"] .home-poster__content { text-align: right; }
+  .home-all-link { display: flex; justify-content: space-between; gap: 24px; width: fit-content; max-width: 100%; margin-top: clamp(32px, 4vw, 54px); padding-bottom: 12px; border-bottom: 1px solid currentColor; font-family: var(--font-display); font-size: clamp(1rem, 1.6vw, 1.3rem); }
+  .home-all-link:hover { opacity: .65; }
+
+  .home-interests { background: #f6f2eb; }
+  .home-interest-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3.5vw, 46px); }
+  .home-interest-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 44px; margin: clamp(32px, 5vw, 62px) 0 0; padding: 0; list-style: none; }
+  .home-interest-list li { min-width: 0; border-top: 1px solid var(--color-line); }
+  .home-interest-list a { display: grid; grid-template-columns: minmax(0, 1fr) auto 20px; align-items: center; gap: 12px; min-height: 86px; padding: 18px 0; }
+  .home-interest-list a:hover { opacity: .65; }
+  .home-interest-list a > span:first-child { font-family: var(--font-display); font-size: clamp(1.05rem, 1.55vw, 1.45rem); line-height: 1.2; }
+  .home-interest-list small { color: var(--color-muted); font-size: .75rem; white-space: nowrap; }
+  .home-interest-list a > span:last-child { justify-self: end; }
+
+  .home-tour-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+  .home-poster--tour { min-height: clamp(350px, 37vw, 510px); }
+  .home-poster--tour h3 { max-width: 680px; font-size: clamp(1.5rem, 2.35vw, 2.8rem); }
+  .home-poster--tour .eyebrow { font-size: .78rem; }
+
+  .home-discover { background: #f6f2eb; }
+  .home-discover__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .home-discover__tile { position: relative; display: flex; align-items: flex-end; min-height: clamp(360px, 42vw, 570px); overflow: hidden; isolation: isolate; color: white; background: #222c2b; }
+  .home-discover__copy { display: block; width: 100%; padding: clamp(24px, 4vw, 58px); }
+  .home-discover__copy h3 { margin: 12px 0 18px; font-size: clamp(2.3rem, 4vw, 4.6rem); line-height: 1; }
+  .home-discover__copy > span:last-child { display: block; max-width: 420px; color: rgb(255 255 255 / 88%); line-height: 1.5; }
+
+  .home-services__grid { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, .84fr); grid-template-rows: repeat(2, minmax(270px, 1fr)); gap: 18px; min-height: 750px; }
+  .home-service { position: relative; display: flex; align-items: flex-end; min-height: 300px; overflow: hidden; isolation: isolate; color: white; background: #222c2b; }
+  .home-service--vip { grid-row: 1 / 3; }
+  .home-service__content { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: clamp(26px, 4vw, 58px); }
+  .home-service__content h3 { margin: 0; font-size: clamp(2rem, 3.3vw, 4rem); line-height: 1.04; }
+  .home-service__content > span:not(.eyebrow) { max-width: 450px; font-size: .98rem; line-height: 1.5; color: rgb(255 255 255 / 87%); }
+  .home-service__content strong { display: inline-flex; gap: 16px; margin-top: 10px; padding-bottom: 8px; border-bottom: 1px solid currentColor; font-family: var(--font-display); font-size: .75rem; letter-spacing: .075em; text-transform: uppercase; }
+  .home-services__links { display: flex; flex-wrap: wrap; gap: 16px 34px; margin-top: 28px; }
+  .home-services__links a { padding-bottom: 6px; border-bottom: 1px solid currentColor; font-size: .86rem; }
+
+  .home-team { padding-bottom: clamp(68px, 8vw, 120px); }
+  .home-team :global(.person) { padding-bottom: 0; }
+  .home-proof-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
+  .home-proof-links a { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 24px 0; border-top: 1px solid var(--color-line); font-family: var(--font-display); font-size: clamp(1.05rem, 1.6vw, 1.4rem); }
+  .home-proof-links a:hover { opacity: .65; }
+  .home-final { padding-block: clamp(70px, 9vw, 130px); color: #fff; background: var(--color-ink-deep); }
+  .home-final h2 { max-width: 970px; margin: 12px 0 25px; font-size: var(--text-h2); line-height: 1.04; }
+  .home-final p:not(.eyebrow) { max-width: 640px; color: rgb(255 255 255 / 78%); font-size: var(--text-lg); }
+  .home-final a { display: inline-flex; gap: 25px; margin-top: 22px; padding: 14px 0; border-bottom: 1px solid var(--color-gold); color: var(--color-gold); }
+
+  @media (max-width: 980px) {
+    .home-country-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .home-services__grid { min-height: 670px; }
+    .home-interest-list { column-gap: 24px; }
+    .home-interest-list a { grid-template-columns: minmax(0, 1fr) 20px; }
+    .home-interest-list small { grid-column: 1; grid-row: 2; }
+    .home-interest-list a > span:last-child { grid-column: 2; grid-row: 1; }
+  }
+  @media (max-width: 760px) {
+    .home-heading { grid-template-columns: 1fr; gap: 16px; }
+    .home-heading > p { max-width: 650px; }
+    .home-start__links { grid-template-columns: 1fr; }
+    .home-start__links a { grid-template-columns: 28px minmax(0, 1fr) 22px; padding-block: 20px; }
+    .home-start__search { align-items: flex-start; flex-direction: column; gap: 18px; }
+    .home-interest-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .home-interest-grid :global(.interest-card--large) { grid-column: 1 / -1; }
+    .home-interest-list { grid-template-columns: 1fr; }
+    .home-tour-grid, .home-discover__grid { grid-template-columns: 1fr; }
+    .home-services__grid { grid-template-columns: 1fr; grid-template-rows: auto; min-height: 0; }
+    .home-service--vip { grid-row: auto; }
+    .home-service { min-height: 360px; }
+    .home-service--vip { min-height: 480px; }
+    .home-proof-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  @media (max-width: 480px) {
+    .home-country-grid { gap: 10px; }
+    .home-poster { min-height: 275px; }
+    .home-poster__content { padding: 16px 12px; }
+    .home-poster__content h3 { font-size: clamp(1.35rem, 5.4vw, 1.85rem); }
+    .home-poster__content .eyebrow { font-size: .65rem; }
+    .home-interest-grid { grid-template-columns: 1fr; }
+    .home-discover__tile { min-height: 360px; }
+    .home-proof-links { gap: 0 18px; }
+  }
+</style>

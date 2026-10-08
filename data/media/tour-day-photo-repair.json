@@ -6159,24 +6159,22 @@
           "slot": "itinerary[6].images[0]"
         }
       ],
-      "completedAssets": [],
-      "status": "partial",
+      "completedAssets": [
+        {
+          "day": 2,
+          "src": "/media/tours/luchshee-v-belize/itinerary-day-02-generated-20261008-v1.webp",
+          "destinationId": "destination_belize_lamanaj",
+          "prompt": "Create ONE full-frame photorealistic travel photograph. Country Belize, Lamanai rainforest on the bank of a calm river. Scene: small guided walk along tropical jungle trail, trees and lush greenery, natural daylight, 16:9. No collage or text.",
+          "slot": "itinerary[1].images[0]"
+        }
+      ],
+      "status": "completed",
       "published": false,
       "workflowVersion": "1.4",
       "sheetRow": 333,
       "selectedDays": 8,
       "commit": "31c4dceb7b6d200b9b9a8e2e8cf250448e99eaf5",
-      "pendingGeneratedSlots": [
-        {
-          "tourId": "tour_source_luchshee_v_belize",
-          "day": 2,
-          "title": "Ламанай: природа и культура",
-          "destinations": [
-            "destination_belize_lamanaj"
-          ],
-          "text": "На каждую ночь проживания Lamanai Outpost Lodge предлагает выбрать 2 стандартные активности. Среди вариантов есть экскурсия к руинам Ламанай, знакомство с лекарственными растениями джунглей и жизнью местной деревни, прогулка по тропическому лесу с гидом и наблюдением за местной флорой и фауной.\n\nВечером можно отправиться в круиз на закате с коктейлями. После наступления темноты лодж предлагает ночное сафари с прожекторами или пешую прогулку по джунглям, когда особенно заметна жизнь ночных животных.\n\n**Питание:** завтрак, обед, ужин."
-        }
-      ],
+      "pendingGeneratedSlots": [],
       "destinationSync": [
         {
           "destinationId": "destination_belize_beliz_siti",
@@ -6253,7 +6251,8 @@
           "status": "completed",
           "created": false,
           "paths": [
-            "/media/destinations/lamanai/hero-generated-20261008.webp"
+            "/media/destinations/lamanai/hero-generated-20261008.webp",
+            "/media/tours/luchshee-v-belize/itinerary-day-02-generated-20261008-v1.webp"
           ],
           "remaining": null
         },
@@ -6289,12 +6288,13 @@
         {
           "day": 2,
           "destinationId": "destination_belize_lamanaj",
-          "status": "generated_not_committed",
+          "status": "committed",
           "fileName": "Lamanai-day-02-generated-20261008.png",
           "driveFileId": "1Dghb_VlpqTod-19NoFE2Do81si0Y7ihO",
           "driveUrl": "https://drive.google.com/file/d/1Dghb_VlpqTod-19NoFE2Do81si0Y7ihO/view",
           "generationDate": "2026-10-08",
-          "note": "Approved single photorealistic scene of jungle hike at Lamanai; convert to WebP and commit asset with day slot. Do not regenerate."
+          "note": "Approved single photorealistic scene of jungle hike at Lamanai; convert to WebP and commit asset with day slot. Do not regenerate.",
+          "finalPath": "/media/tours/luchshee-v-belize/itinerary-day-02-generated-20261008-v1.webp"
         }
       ]
     },
@@ -7465,15 +7465,10 @@
     "spreadsheetPending": true,
     "updatedAt": "2026-10-08",
     "processedTourCount": 20,
-    "photoReadyCount": 16,
-    "photoPartialCount": 4,
+    "photoReadyCount": 17,
+    "photoPartialCount": 3,
     "stage": "photo_slots_and_destinations_blocked",
     "blockedPhotoSlots": [
-      {
-        "tourId": "tour_source_luchshee_v_belize",
-        "day": 2,
-        "destinationId": "destination_belize_lamanaj"
-      },
       {
         "tourId": "tour_source_sokrovishcha_bolivii",
         "day": 2,

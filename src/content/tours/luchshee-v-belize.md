@@ -56,6 +56,9 @@ itinerary:
 
 
     **Питание:** завтрак, обед, ужин.'
+  images:
+  - src: /media/tours/luchshee-v-belize/itinerary-day-02-generated-20261008-v1.webp
+    alt: "Прогулка с гидом по тропическому лесу у реки Ламанай, Белиз"
 - day: 3
   title: Ламанай - Шунантунтич - Сан-Игнасио
   places:

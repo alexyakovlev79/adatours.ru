@@ -19,6 +19,8 @@ hero:
 gallery:
 - src: /media/destinations/destination_brazil_portu_zhofri/jaguar-morning-generated-20261008.webp
   alt: Порту-Жофри - Бразилия
+- src: /media/tours/rybalka-v-pantanale/itinerary-day-04-generated-20261008.webp
+  alt: Утренний причал на реке Куяба у Порту-Жофри
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

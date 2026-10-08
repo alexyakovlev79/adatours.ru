@@ -14,8 +14,7 @@ audiences: []
 route:
 - Porto Jofre Lodge
 dates: []
-lead: Пантанал подходит и тем, кто впервые отправляется на спортивную рыбалку, и опытным рыбакам. Здесь день проходит на воде
-  среди рек, протоков и открытых пространств, а поездки за рыбой одновременно становятся наблюдением за дикой природой региона.
+lead: Пантанал подходит и тем, кто впервые отправляется на спортивную рыбалку, и опытным рыбакам. Здесь день проходит на воде среди рек, протоков и открытых пространств, а поездки за рыбой одновременно становятся наблюдением за дикой природой региона.
 highlights: []
 itinerary:
 - day: 1
@@ -24,28 +23,40 @@ itinerary:
   - Порту-Жофри
   - Пантанал
   - Куяба
-  text: |-
-    **Рыбалка 2 дня**
+  text: '**Рыбалка 2 дня**
 
-    Заезд после 18:00.
+
+    Заезд после 18:00.'
+  image:
+    src: /media/destinations/pantanal/hero-enhanced-20261001.webp
+    alt: Природа Пантанала в Бразилии
 - day: 2
   title: Рыбалка
   places:
   - Порту-Жофри
   - Пантанал
   text: Рыбалка в течение всего дня.
+  image:
+    src: /media/destinations/destination_brazil_portu_zhofri/jaguar-morning-generated-20261008.webp
+    alt: Порту-Жофри - Бразилия
 - day: 3
   title: Рыбалка
   places:
   - Порту-Жофри
   - Пантанал
   text: Еще один полный день на воде.
+  image:
+    src: /media/destinations/destination_brazil_portu_zhofri/porto-jofre-generated-20261008.webp
+    alt: Порту-Жофри - Бразилия
 - day: 4
   title: Отъезд
   places:
   - Порту-Жофри
   - Пантанал
   text: Выезд до 09:00.
+  image:
+    src: /media/tours/rybalka-v-pantanale/itinerary-day-04-generated-20261008.webp
+    alt: Утренний причал на реке Куяба у Порту-Жофри
 included:
 - 'Двухместное проживание с полным пансионом: завтрак, обед и ужин.'
 - Гид по рыбалке, пилотейро.
@@ -81,8 +92,10 @@ routeDestinations:
 - destination_brazil_pantanal
 - destination_brazil_kuyaba
 - destination_brazil_portu_zhofri
-primaryThemes: ["theme_fishing"]
-themes: ["theme_wildlife"]
+primaryThemes:
+- theme_fishing
+themes:
+- theme_wildlife
 ---
 
 **Длительность:** 2-7 дней  

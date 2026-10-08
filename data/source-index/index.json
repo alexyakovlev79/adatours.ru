@@ -1,72 +1,4 @@
 {
-  "metadata": {
-    "schemaVersion": 1,
-    "preparedAt": "2026-10-02",
-    "entityCount": 800,
-    "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
-    "sheet": {
-      "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
-      "sheetName": "Страницы"
-    },
-    "folders": {
-      "original": {
-        "id": "1zbcua6J4CzYyay9kYMGQeyvHQ_gGj1Vl",
-        "path": "page_texts_original"
-      },
-      "cleanedTours": {
-        "id": "1qJ4nY892iSINyc4E2b394H3xmnLRaEDU",
-        "path": "page_texts_newstep"
-      },
-      "cleanedExcursions": {
-        "id": "1qtRfOWgew62WFk9IsCDGPVD_giO8Pcvh",
-        "path": "page_texts_newstep/Excursions"
-      },
-      "rewriteV2": {
-        "id": "1-9mtF_QMc3oFgRiwmNU8ZNo8lWFEA0Rs",
-        "path": "page_texts_rewrite_v2"
-      },
-      "unversionedExcursionRewrite": {
-        "id": "1RgV9IvknAKOqwvJyrl_kg-LwRSUDRFuZ",
-        "path": "page_texts_rewrite_excursions"
-      },
-      "rewriteV1Archive": {
-        "id": "1HQsgzuoIPDMFQAQ8QXQGX0h_kLWtdJbC",
-        "path": "page_texts_rewrite"
-      }
-    },
-    "counts": {
-      "types": {
-        "country": 24,
-        "destination": 245,
-        "tour": 342,
-        "excursion": 189
-      },
-      "media": {
-        "ready": 761,
-        "existing_enhanced_preserved": 10,
-        "generated": 8,
-        "provided_originals": 21
-      },
-      "rawDonorUrls": 694,
-      "activeTypes": {
-        "country": 24,
-        "destination": 245,
-        "tour": 298,
-        "excursion": 188
-      },
-      "archivedTypes": {
-        "tour": 44,
-        "excursion": 1
-      }
-    },
-    "indexingScope": "Constants prepared on this date. Current publication existence and successful enhanced media remain authoritative in the exact contentPath and photo registry; these indexes do not require status maintenance for each new page.",
-    "inputsSha256": {
-      "textSources": "bc2aac0e1b4349b4499c64e7b43fd4de4a264963518364b0e51d399f07b16892",
-      "rawMedia": "d99fee377cc268cdf6dce4597260c556e82025897a84b0acdfce552053a208f3",
-      "excursionGeography": "bfce404ae957145add3fdfbec6bf849cc9115794a3c666a0d9d47d655af7be72"
-    },
-    "destinationCatalogSha256": "4e8f6b8e53d6fd6a6d2ce05f6a9f9865b5dfce9bba86fc5630ee21ac6606d65f"
-  },
   "entries": [
     {
       "id": "country_brazil",
@@ -25855,6 +25787,1133 @@
         "theme_culture"
       ],
       "entryPath": "data/source-index/entries/destination_brazil_inhotim.json"
+    },
+    {
+      "id": "destination_argentina_treleu",
+      "type": "destination",
+      "name": "Трелеу",
+      "url": "/argentina/place/trelew/",
+      "slug": "trelew",
+      "contentPath": "src/content/destinations/trelew.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_treleu"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "treleu"
+      ],
+      "legacyUrls": [
+        "/argentina/place/treleu/",
+        "/napravleniya/argentina/treleu/"
+      ],
+      "themes": [
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_treleu.json"
+    },
+    {
+      "id": "destination_argentina_poluostrov_valdes",
+      "type": "destination",
+      "name": "Полуостров Вальдес",
+      "url": "/argentina/place/valdes-peninsula/",
+      "slug": "valdes-peninsula",
+      "contentPath": "src/content/destinations/valdes-peninsula.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_poluostrov_valdes"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "poluostrov-valdes"
+      ],
+      "legacyUrls": [
+        "/argentina/place/poluostrov-valdes/",
+        "/napravleniya/argentina/poluostrov-valdes/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_poluostrov_valdes.json"
+    },
+    {
+      "id": "destination_argentina_puerto_piramides",
+      "type": "destination",
+      "name": "Пуэрто-Пирамидес",
+      "url": "/argentina/place/puerto-piramides/",
+      "slug": "puerto-piramides",
+      "contentPath": "src/content/destinations/puerto-piramides.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_puerto_piramides"
+      ],
+      "sourceUrl": null,
+      "aliases": [],
+      "legacyUrls": [
+        "/napravleniya/argentina/puerto-piramides/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_puerto_piramides.json"
+    },
+    {
+      "id": "destination_argentina_el_pedral",
+      "type": "destination",
+      "name": "Эль-Педраль",
+      "url": "/argentina/place/el-pedral/",
+      "slug": "el-pedral",
+      "contentPath": "src/content/destinations/el-pedral.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_el_pedral"
+      ],
+      "sourceUrl": null,
+      "aliases": [],
+      "legacyUrls": [
+        "/napravleniya/argentina/el-pedral/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_el_pedral.json"
+    },
+    {
+      "id": "destination_argentina_kanal_bigl",
+      "type": "destination",
+      "name": "Канал Бигль",
+      "url": "/argentina/place/beagle-channel/",
+      "slug": "beagle-channel",
+      "contentPath": "src/content/destinations/beagle-channel.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_kanal_bigl"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "kanal-bigl"
+      ],
+      "legacyUrls": [
+        "/argentina/place/kanal-bigl/",
+        "/napravleniya/argentina/kanal-bigl/"
+      ],
+      "themes": [
+        "theme_cruises",
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_kanal_bigl.json"
+    },
+    {
+      "id": "destination_argentina_ozero_fagnano",
+      "type": "destination",
+      "name": "Озеро Фагнано",
+      "url": "/argentina/place/lake-fagnano/",
+      "slug": "lake-fagnano",
+      "contentPath": "src/content/destinations/lake-fagnano.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_ozero_fagnano"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "ozero-fagnano"
+      ],
+      "legacyUrls": [
+        "/argentina/place/ozero-fagnano/",
+        "/napravleniya/argentina/ozero-fagnano/"
+      ],
+      "themes": [
+        "theme_adventure",
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_ozero_fagnano.json"
+    },
+    {
+      "id": "destination_argentina_tigre",
+      "type": "destination",
+      "name": "Тигре",
+      "url": "/argentina/place/tigre/",
+      "slug": "tigre",
+      "contentPath": "src/content/destinations/tigre.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_tigre"
+      ],
+      "sourceUrl": null,
+      "aliases": [],
+      "legacyUrls": [
+        "/napravleniya/argentina/tigre/"
+      ],
+      "themes": [
+        "theme_culture",
+        "theme_cruises"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_tigre.json"
+    },
+    {
+      "id": "destination_argentina_tilkara",
+      "type": "destination",
+      "name": "Тилькара",
+      "url": "/argentina/place/tilcara/",
+      "slug": "tilcara",
+      "contentPath": "src/content/destinations/tilcara.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_tilkara"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "tilkara"
+      ],
+      "legacyUrls": [
+        "/argentina/place/tilkara/",
+        "/napravleniya/argentina/tilkara/"
+      ],
+      "themes": [
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_tilkara.json"
+    },
+    {
+      "id": "destination_argentina_salinas_grandes",
+      "type": "destination",
+      "name": "Салинас-Грандес",
+      "url": "/argentina/place/salinas-grandes/",
+      "slug": "salinas-grandes",
+      "contentPath": "src/content/destinations/salinas-grandes.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_salinas_grandes"
+      ],
+      "sourceUrl": null,
+      "aliases": [],
+      "legacyUrls": [
+        "/napravleniya/argentina/salinas-grandes/"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_adventure"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_salinas_grandes.json"
+    },
+    {
+      "id": "destination_argentina_ukiya",
+      "type": "destination",
+      "name": "Укия",
+      "url": "/argentina/place/uquia/",
+      "slug": "uquia",
+      "contentPath": "src/content/destinations/uquia.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_ukiya"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "ukiya"
+      ],
+      "legacyUrls": [
+        "/argentina/place/ukiya/",
+        "/napravleniya/argentina/ukiya/"
+      ],
+      "themes": [
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_ukiya.json"
+    },
+    {
+      "id": "destination_argentina_san_isidro_buenos_ajres",
+      "type": "destination",
+      "name": "Сан-Исидро (Буэнос-Айрес)",
+      "url": "/argentina/place/san-isidro-buenos-aires/",
+      "slug": "san-isidro-buenos-aires",
+      "contentPath": "src/content/destinations/san-isidro-buenos-aires.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_san_isidro_buenos_ajres"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "san-isidro-buenos-ajres"
+      ],
+      "legacyUrls": [
+        "/argentina/place/san-isidro-buenos-ajres/",
+        "/napravleniya/argentina/san-isidro-buenos-ajres/"
+      ],
+      "themes": [
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_san_isidro_buenos_ajres.json"
+    },
+    {
+      "id": "destination_chile_peschera_milodona",
+      "type": "destination",
+      "name": "Пещера Милодона",
+      "url": "/chile/place/mylodon-cave/",
+      "slug": "mylodon-cave",
+      "contentPath": "src/content/destinations/mylodon-cave.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_peschera_milodona"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "Куэва-дель-Милодон",
+        "peschera-milodona"
+      ],
+      "legacyUrls": [
+        "/chili/place/peschera-milodona/",
+        "/napravleniya/chili/peschera-milodona/"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_peschera_milodona.json"
+    },
+    {
+      "id": "destination_chile_ozero_pehoe",
+      "type": "destination",
+      "name": "Озеро Пехоэ",
+      "url": "/chile/place/lake-pehoe/",
+      "slug": "lake-pehoe",
+      "contentPath": "src/content/destinations/lake-pehoe.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_ozero_pehoe"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "Lago Pehoe",
+        "Озеро Пехо",
+        "Озеро Пеоэ",
+        "Озеро Пэоэ",
+        "ozero-pehoe"
+      ],
+      "legacyUrls": [
+        "/chili/place/ozero-pehoe/",
+        "/napravleniya/chili/ozero-pehoe/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_ozero_pehoe.json"
+    },
+    {
+      "id": "destination_chile_ozero_nordensheld",
+      "type": "destination",
+      "name": "Озеро Норденшельд",
+      "url": "/chile/place/lake-nordenskjold/",
+      "slug": "lake-nordenskjold",
+      "contentPath": "src/content/destinations/lake-nordenskjold.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_ozero_nordensheld"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "ozero-nordensheld"
+      ],
+      "legacyUrls": [
+        "/chili/place/ozero-nordensheld/",
+        "/napravleniya/chili/ozero-nordensheld/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_ozero_nordensheld.json"
+    },
+    {
+      "id": "destination_chile_vodopad_salto_grande",
+      "type": "destination",
+      "name": "Водопад Сальто-Гранде",
+      "url": "/chile/place/salto-grande-waterfall/",
+      "slug": "salto-grande-waterfall",
+      "contentPath": "src/content/destinations/salto-grande-waterfall.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_vodopad_salto_grande"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "vodopad-salto-grande"
+      ],
+      "legacyUrls": [
+        "/chili/place/vodopad-salto-grande/",
+        "/napravleniya/chili/vodopad-salto-grande/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_vodopad_salto_grande.json"
+    },
+    {
+      "id": "destination_chile_rio_serrano",
+      "type": "destination",
+      "name": "Рио-Серрано",
+      "url": "/chile/place/rio-serrano/",
+      "slug": "rio-serrano",
+      "contentPath": "src/content/destinations/rio-serrano.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_rio_serrano"
+      ],
+      "sourceUrl": null,
+      "aliases": [],
+      "legacyUrls": [
+        "/chili/place/rio-serrano/",
+        "/napravleniya/chili/rio-serrano/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_rio_serrano.json"
+    },
+    {
+      "id": "destination_chile_kalama",
+      "type": "destination",
+      "name": "Калама",
+      "url": "/chile/place/calama/",
+      "slug": "calama",
+      "contentPath": "src/content/destinations/calama.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_kalama"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "kalama"
+      ],
+      "legacyUrls": [
+        "/chili/place/kalama/",
+        "/napravleniya/chili/kalama/"
+      ],
+      "themes": [
+        "theme_adventure"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_kalama.json"
+    },
+    {
+      "id": "destination_chile_dolina_majpo",
+      "type": "destination",
+      "name": "Долина Майпо",
+      "url": "/chile/place/maipo-valley/",
+      "slug": "maipo-valley",
+      "contentPath": "src/content/destinations/maipo-valley.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_dolina_majpo"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "dolina-majpo"
+      ],
+      "legacyUrls": [
+        "/chili/place/dolina-majpo/",
+        "/napravleniya/chili/dolina-majpo/"
+      ],
+      "themes": [
+        "theme_food"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_dolina_majpo.json"
+    },
+    {
+      "id": "destination_bolivia_laguna_verde",
+      "type": "destination",
+      "name": "Лагуна Верде",
+      "url": "/bolivia/place/laguna-verde/",
+      "slug": "laguna-verde",
+      "contentPath": "src/content/destinations/laguna-verde.md",
+      "countryIds": [
+        "country_bolivia"
+      ],
+      "destinationIds": [
+        "destination_bolivia_laguna_verde"
+      ],
+      "sourceUrl": null,
+      "aliases": [],
+      "legacyUrls": [
+        "/boliviya/place/laguna-verde/",
+        "/napravleniya/boliviya/laguna-verde/"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_adventure"
+      ],
+      "entryPath": "data/source-index/entries/destination_bolivia_laguna_verde.json"
+    },
+    {
+      "id": "destination_bolivia_laguna_kolorada",
+      "type": "destination",
+      "name": "Лагуна Колорада",
+      "url": "/bolivia/place/laguna-colorada/",
+      "slug": "laguna-colorada",
+      "contentPath": "src/content/destinations/laguna-colorada.md",
+      "countryIds": [
+        "country_bolivia"
+      ],
+      "destinationIds": [
+        "destination_bolivia_laguna_kolorada"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "laguna-kolorada"
+      ],
+      "legacyUrls": [
+        "/boliviya/place/laguna-kolorada/",
+        "/napravleniya/boliviya/laguna-kolorada/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_bolivia_laguna_kolorada.json"
+    },
+    {
+      "id": "destination_bolivia_laguna_chiarkota",
+      "type": "destination",
+      "name": "Лагуна Чиаркота",
+      "url": "/bolivia/place/laguna-chiar-khota-potosi/",
+      "slug": "laguna-chiar-khota-potosi",
+      "contentPath": "src/content/destinations/laguna-chiar-khota-potosi.md",
+      "countryIds": [
+        "country_bolivia"
+      ],
+      "destinationIds": [
+        "destination_bolivia_laguna_chiarkota"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "Чиаркхота",
+        "Хиар-Кота",
+        "Лагуна Чьяркота",
+        "laguna-chiarkota"
+      ],
+      "legacyUrls": [
+        "/boliviya/place/laguna-chiarkota/",
+        "/napravleniya/boliviya/laguna-chiarkota/"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_adventure"
+      ],
+      "entryPath": "data/source-index/entries/destination_bolivia_laguna_chiarkota.json"
+    },
+    {
+      "id": "destination_bolivia_laguna_kanyapa",
+      "type": "destination",
+      "name": "Лагуна Каньяпа",
+      "url": "/bolivia/place/laguna-canapa/",
+      "slug": "laguna-canapa",
+      "contentPath": "src/content/destinations/laguna-canapa.md",
+      "countryIds": [
+        "country_bolivia"
+      ],
+      "destinationIds": [
+        "destination_bolivia_laguna_kanyapa"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "Канапа",
+        "Cañapa",
+        "laguna-kanyapa"
+      ],
+      "legacyUrls": [
+        "/boliviya/place/laguna-kanyapa/",
+        "/napravleniya/boliviya/laguna-kanyapa/"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_adventure"
+      ],
+      "entryPath": "data/source-index/entries/destination_bolivia_laguna_kanyapa.json"
+    },
+    {
+      "id": "destination_bolivia_ostrov_inka_huasi",
+      "type": "destination",
+      "name": "Остров Инка-Хуаси",
+      "url": "/bolivia/place/incahuasi-island/",
+      "slug": "incahuasi-island",
+      "contentPath": "src/content/destinations/incahuasi-island.md",
+      "countryIds": [
+        "country_bolivia"
+      ],
+      "destinationIds": [
+        "destination_bolivia_ostrov_inka_huasi"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "Инкауаси",
+        "Инкаваси",
+        "Incahuasi",
+        "ostrov-inka-huasi"
+      ],
+      "legacyUrls": [
+        "/boliviya/place/ostrov-inka-huasi/",
+        "/napravleniya/boliviya/ostrov-inka-huasi/"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_adventure"
+      ],
+      "entryPath": "data/source-index/entries/destination_bolivia_ostrov_inka_huasi.json"
+    },
+    {
+      "id": "destination_bolivia_pustynya_salvadora_dali",
+      "type": "destination",
+      "name": "Пустыня Сальвадора Дали",
+      "url": "/bolivia/place/salvador-dali-desert/",
+      "slug": "salvador-dali-desert",
+      "contentPath": "src/content/destinations/salvador-dali-desert.md",
+      "countryIds": [
+        "country_bolivia"
+      ],
+      "destinationIds": [
+        "destination_bolivia_pustynya_salvadora_dali"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "Пустыня Дали",
+        "Долина Сальвадора Дали",
+        "pustynya-salvadora-dali"
+      ],
+      "legacyUrls": [
+        "/boliviya/place/pustynya-salvadora-dali/",
+        "/napravleniya/boliviya/pustynya-salvadora-dali/"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_adventure"
+      ],
+      "entryPath": "data/source-index/entries/destination_bolivia_pustynya_salvadora_dali.json"
+    },
+    {
+      "id": "destination_bolivia_gejzery_sol_de_manyana",
+      "type": "destination",
+      "name": "Гейзеры Соль-де-Маньяна",
+      "url": "/bolivia/place/sol-de-manana-geysers/",
+      "slug": "sol-de-manana-geysers",
+      "contentPath": "src/content/destinations/sol-de-manana-geysers.md",
+      "countryIds": [
+        "country_bolivia"
+      ],
+      "destinationIds": [
+        "destination_bolivia_gejzery_sol_de_manyana"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "Sol de Mañana",
+        "gejzery-sol-de-manyana"
+      ],
+      "legacyUrls": [
+        "/boliviya/place/gejzery-sol-de-manyana/",
+        "/napravleniya/boliviya/gejzery-sol-de-manyana/"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_adventure"
+      ],
+      "entryPath": "data/source-index/entries/destination_bolivia_gejzery_sol_de_manyana.json"
+    },
+    {
+      "id": "destination_bolivia_termalnye_istochniki_polkes",
+      "type": "destination",
+      "name": "Термальные источники Полкес",
+      "url": "/bolivia/place/polques-hot-springs/",
+      "slug": "polques-hot-springs",
+      "contentPath": "src/content/destinations/polques-hot-springs.md",
+      "countryIds": [
+        "country_bolivia"
+      ],
+      "destinationIds": [
+        "destination_bolivia_termalnye_istochniki_polkes"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "termalnye-istochniki-polkes"
+      ],
+      "legacyUrls": [
+        "/boliviya/place/termalnye-istochniki-polkes/",
+        "/napravleniya/boliviya/termalnye-istochniki-polkes/"
+      ],
+      "themes": [
+        "theme_spa",
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_bolivia_termalnye_istochniki_polkes.json"
+    },
+    {
+      "id": "destination_argentina_uspalyata",
+      "type": "destination",
+      "name": "Успальята",
+      "url": "/argentina/place/uspallata/",
+      "slug": "uspallata",
+      "contentPath": "src/content/destinations/uspallata.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_uspalyata"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "uspalyata"
+      ],
+      "legacyUrls": [
+        "/argentina/place/uspalyata/",
+        "/napravleniya/argentina/uspalyata/"
+      ],
+      "themes": [
+        "theme_adventure",
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_uspalyata.json"
+    },
+    {
+      "id": "destination_argentina_san_huan",
+      "type": "destination",
+      "name": "Сан-Хуан",
+      "url": "/argentina/place/san-juan/",
+      "slug": "san-juan",
+      "contentPath": "src/content/destinations/san-juan.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_san_huan"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "san-huan"
+      ],
+      "legacyUrls": [
+        "/argentina/place/san-huan/",
+        "/napravleniya/argentina/san-huan/"
+      ],
+      "themes": [
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_san_huan.json"
+    },
+    {
+      "id": "destination_argentina_ischigualyasto",
+      "type": "destination",
+      "name": "Исчигуалясто",
+      "url": "/argentina/place/ischigualasto/",
+      "slug": "ischigualasto",
+      "contentPath": "src/content/destinations/ischigualasto.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_ischigualyasto"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "ischigualyasto"
+      ],
+      "legacyUrls": [
+        "/argentina/place/ischigualyasto/",
+        "/napravleniya/argentina/ischigualyasto/"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_ischigualyasto.json"
+    },
+    {
+      "id": "destination_argentina_nacionalnyj_park_talampajya",
+      "type": "destination",
+      "name": "Национальный парк Талампайя",
+      "url": "/argentina/place/talampaya-national-park/",
+      "slug": "talampaya-national-park",
+      "contentPath": "src/content/destinations/talampaya-national-park.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_nacionalnyj_park_talampajya"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "nacionalnyj-park-talampajya"
+      ],
+      "legacyUrls": [
+        "/argentina/place/nacionalnyj-park-talampajya/",
+        "/napravleniya/argentina/nacionalnyj-park-talampajya/"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_nacionalnyj_park_talampajya.json"
+    },
+    {
+      "id": "destination_argentina_las_kuevas",
+      "type": "destination",
+      "name": "Лас-Куэвас",
+      "url": "/argentina/place/las-cuevas/",
+      "slug": "las-cuevas",
+      "contentPath": "src/content/destinations/las-cuevas.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_las_kuevas"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "las-kuevas"
+      ],
+      "legacyUrls": [
+        "/argentina/place/las-kuevas/",
+        "/napravleniya/argentina/las-kuevas/"
+      ],
+      "themes": [
+        "theme_adventure"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_las_kuevas.json"
+    },
+    {
+      "id": "destination_argentina_los_penitentes",
+      "type": "destination",
+      "name": "Лос-Пенитентес",
+      "url": "/argentina/place/los-penitentes/",
+      "slug": "los-penitentes",
+      "contentPath": "src/content/destinations/los-penitentes.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_los_penitentes"
+      ],
+      "sourceUrl": null,
+      "aliases": [],
+      "legacyUrls": [
+        "/napravleniya/argentina/los-penitentes/"
+      ],
+      "themes": [
+        "theme_adventure"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_los_penitentes.json"
+    },
+    {
+      "id": "destination_argentina_gajman",
+      "type": "destination",
+      "name": "Гайман",
+      "url": "/argentina/place/gaiman/",
+      "slug": "gaiman",
+      "contentPath": "src/content/destinations/gaiman.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_gajman"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "gajman"
+      ],
+      "legacyUrls": [
+        "/argentina/place/gajman/",
+        "/napravleniya/argentina/gajman/"
+      ],
+      "themes": [
+        "theme_culture",
+        "theme_food"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_gajman.json"
+    },
+    {
+      "id": "destination_argentina_zapovednik_san_lorenso",
+      "type": "destination",
+      "name": "Заповедник Сан-Лоренсо",
+      "url": "/argentina/place/san-lorenzo-nature-reserve/",
+      "slug": "san-lorenzo-nature-reserve",
+      "contentPath": "src/content/destinations/san-lorenzo-nature-reserve.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_zapovednik_san_lorenso"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "zapovednik-san-lorenso"
+      ],
+      "legacyUrls": [
+        "/argentina/place/zapovednik-san-lorenso/",
+        "/napravleniya/argentina/zapovednik-san-lorenso/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_zapovednik_san_lorenso.json"
+    },
+    {
+      "id": "destination_chile_mys_gorn",
+      "type": "destination",
+      "name": "Мыс Горн",
+      "url": "/chile/place/cape-horn/",
+      "slug": "cape-horn",
+      "contentPath": "src/content/destinations/cape-horn.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_mys_gorn"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "mys-gorn"
+      ],
+      "legacyUrls": [
+        "/chili/place/mys-gorn/",
+        "/napravleniya/chili/mys-gorn/"
+      ],
+      "themes": [
+        "theme_cruises",
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_mys_gorn.json"
+    },
+    {
+      "id": "destination_chile_buhta_ejnsvort",
+      "type": "destination",
+      "name": "Бухта Эйнсворт",
+      "url": "/chile/place/ainsworth-bay/",
+      "slug": "ainsworth-bay",
+      "contentPath": "src/content/destinations/ainsworth-bay.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_buhta_ejnsvort"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "buhta-ejnsvort"
+      ],
+      "legacyUrls": [
+        "/chili/place/buhta-ejnsvort/",
+        "/napravleniya/chili/buhta-ejnsvort/"
+      ],
+      "themes": [
+        "theme_cruises",
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_buhta_ejnsvort.json"
+    },
+    {
+      "id": "destination_chile_ostrova_taker",
+      "type": "destination",
+      "name": "Острова Такер",
+      "url": "/chile/place/tucker-islets/",
+      "slug": "tucker-islets",
+      "contentPath": "src/content/destinations/tucker-islets.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_ostrova_taker"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "ostrova-taker"
+      ],
+      "legacyUrls": [
+        "/chili/place/ostrova-taker/",
+        "/napravleniya/chili/ostrova-taker/"
+      ],
+      "themes": [
+        "theme_cruises",
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_ostrova_taker.json"
+    },
+    {
+      "id": "destination_chile_lednik_pia",
+      "type": "destination",
+      "name": "Ледник Пиа",
+      "url": "/chile/place/pia-glacier/",
+      "slug": "pia-glacier",
+      "contentPath": "src/content/destinations/pia-glacier.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_lednik_pia"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "lednik-pia"
+      ],
+      "legacyUrls": [
+        "/chili/place/lednik-pia/",
+        "/napravleniya/chili/lednik-pia/"
+      ],
+      "themes": [
+        "theme_cruises",
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_lednik_pia.json"
+    },
+    {
+      "id": "destination_chile_buhta_vulajya",
+      "type": "destination",
+      "name": "Бухта Вулайя",
+      "url": "/chile/place/wulaia-bay/",
+      "slug": "wulaia-bay",
+      "contentPath": "src/content/destinations/wulaia-bay.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_buhta_vulajya"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "buhta-vulajya"
+      ],
+      "legacyUrls": [
+        "/chili/place/buhta-vulajya/",
+        "/napravleniya/chili/buhta-vulajya/"
+      ],
+      "themes": [
+        "theme_culture",
+        "theme_cruises"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_buhta_vulajya.json"
+    },
+    {
+      "id": "destination_chile_buhta_bruks",
+      "type": "destination",
+      "name": "Бухта Брукс",
+      "url": "/chile/place/brookes-bay/",
+      "slug": "brookes-bay",
+      "contentPath": "src/content/destinations/brookes-bay.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_buhta_bruks"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "buhta-bruks"
+      ],
+      "legacyUrls": [
+        "/chili/place/buhta-bruks/",
+        "/napravleniya/chili/buhta-bruks/"
+      ],
+      "themes": [
+        "theme_cruises",
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_buhta_bruks.json"
     }
-  ]
+  ],
+  "metadata": {
+    "schemaVersion": 1,
+    "counts": {
+      "types": {
+        "country": 24,
+        "destination": 245,
+        "tour": 342,
+        "excursion": 189
+      },
+      "media": {
+        "ready": 761,
+        "existing_enhanced_preserved": 10,
+        "generated": 8,
+        "provided_originals": 21
+      },
+      "rawDonorUrls": 694,
+      "activeTypes": {
+        "country": 24,
+        "destination": 245,
+        "tour": 298,
+        "excursion": 188
+      },
+      "archivedTypes": {
+        "tour": 44,
+        "excursion": 1
+      }
+    },
+    "preparedAt": "2026-10-02",
+    "inputsSha256": {
+      "textSources": "bc2aac0e1b4349b4499c64e7b43fd4de4a264963518364b0e51d399f07b16892",
+      "rawMedia": "d99fee377cc268cdf6dce4597260c556e82025897a84b0acdfce552053a208f3",
+      "excursionGeography": "bfce404ae957145add3fdfbec6bf849cc9115794a3c666a0d9d47d655af7be72"
+    },
+    "sheet": {
+      "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
+      "sheetName": "Страницы"
+    },
+    "indexingScope": "Constants prepared on this date. Current publication existence and successful enhanced media remain authoritative in the exact contentPath and photo registry; these indexes do not require status maintenance for each new page.",
+    "destinationCatalogSha256": "4e8f6b8e53d6fd6a6d2ce05f6a9f9865b5dfce9bba86fc5630ee21ac6606d65f",
+    "folders": {
+      "original": {
+        "id": "1zbcua6J4CzYyay9kYMGQeyvHQ_gGj1Vl",
+        "path": "page_texts_original"
+      },
+      "cleanedTours": {
+        "id": "1qJ4nY892iSINyc4E2b394H3xmnLRaEDU",
+        "path": "page_texts_newstep"
+      },
+      "cleanedExcursions": {
+        "id": "1qtRfOWgew62WFk9IsCDGPVD_giO8Pcvh",
+        "path": "page_texts_newstep/Excursions"
+      },
+      "rewriteV2": {
+        "id": "1-9mtF_QMc3oFgRiwmNU8ZNo8lWFEA0Rs",
+        "path": "page_texts_rewrite_v2"
+      },
+      "unversionedExcursionRewrite": {
+        "id": "1RgV9IvknAKOqwvJyrl_kg-LwRSUDRFuZ",
+        "path": "page_texts_rewrite_excursions"
+      },
+      "rewriteV1Archive": {
+        "id": "1HQsgzuoIPDMFQAQ8QXQGX0h_kLWtdJbC",
+        "path": "page_texts_rewrite"
+      }
+    },
+    "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
+    "entityCount": 840
+  }
 }

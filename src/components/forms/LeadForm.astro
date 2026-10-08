@@ -986,12 +986,74 @@ const personalDataHref = withBase('/personal-data/');
     }
 
     :global(.adatours-modal) {
-      padding: 24px 16px 22px;
+      max-height: calc(100dvh - 16px);
+      overflow-y: auto;
+      padding: 16px 16px 12px;
       border-radius: 8px;
     }
 
-    :global(.adatours-modal) .contact-method__options {
+    :global(.adatours-modal-head) {
+      padding-right: 32px;
+      margin-bottom: 10px;
+    }
+
+    :global(.adatours-modal-lead) {
+      margin-top: 6px;
+      font-size: .85rem;
+      line-height: 1.4;
+    }
+
+    :global(.adatours-modal) .form {
       gap: 8px;
+    }
+
+    :global(.adatours-modal) .form label,
+    :global(.adatours-modal) .form-field {
+      gap: 4px;
+    }
+
+    :global(.adatours-modal) .form > label > input {
+      min-height: 44px;
+      padding: 9px 12px;
+    }
+
+    :global(.adatours-modal) .form > label > textarea {
+      height: 78px;
+      min-height: 78px;
+      padding: 9px 12px;
+    }
+
+    :global(.adatours-modal) .form :global(.phone-field__control) {
+      min-height: 44px;
+    }
+
+    :global(.adatours-modal) .contact-method legend {
+      margin-bottom: 5px;
+    }
+
+    :global(.adatours-modal) .contact-method__options {
+      gap: 6px;
+    }
+
+    :global(.adatours-modal) .form .contact-method__option span {
+      min-height: 40px;
+      padding: 7px 8px;
+    }
+
+    :global(.adatours-modal) .form button[type="submit"] {
+      min-height: 46px;
+      margin-top: 0;
+      padding: 12px 16px;
+    }
+
+    /* An empty live status must not reserve space between CTA and consent. */
+    :global(.adatours-modal) .form__status:empty {
+      display: none;
+    }
+
+    :global(.adatours-modal) .form__consent {
+      margin: 0;
+      line-height: 1.45;
     }
   }
 </style>

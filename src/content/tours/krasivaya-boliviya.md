@@ -45,7 +45,7 @@ itinerary:
     Отдельный символ города — система канатных дорог Teleférico протяженностью 30 км.
   images:
   - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'на фото: Ла-Пас, столица Боливии'
+    alt: "на фото: Ла-Пас, столица Боливии"
 - day: 2
   title: Тиванаку - Лунная долина - Ла-Пас
   places:
@@ -71,8 +71,8 @@ itinerary:
 
     Возвращение в отель.
   images:
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'на фото: Ла-Пас, столица Боливии'
+  - src: /media/countries/bolivia/featureBands-3-enhanced-20261002.webp
+    alt: "На фото: город Тиванку в Боливии"
 - day: 3
   title: Ла-Пас - Копакабана - Исла-дель-Соль - Копакабана
   places:
@@ -93,8 +93,8 @@ itinerary:
 
     Возвращение на скоростном катере в Копакабану, затем трансфер в отель.
   images:
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'на фото: Ла-Пас, столица Боливии'
+  - src: /media/destinations/isla-del-sol/gallery-1-enhanced-20261003.webp
+    alt: "На фото: Солнечный остров в Боливии"
 - day: 4
   title: Копакабана - Ла-Пас
   places:
@@ -105,8 +105,8 @@ itinerary:
 
     Во второй половине дня возвращаемся в Ла-Пас и размещаемся в отеле.
   images:
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'на фото: Ла-Пас, столица Боливии'
+  - src: /media/destinations/la-pas/gallery-1-enhanced-20261003.webp
+    alt: "На фото: столица Боливии город Ла Пас"
 - day: 5
   title: Ла-Пас - Уюни
   places:
@@ -124,9 +124,7 @@ itinerary:
     \ водитель + гид."
   images:
   - src: /media/tours/krasivaya-boliviya/itinerary-day-5-enhanced-20261006.webp
-    alt: 'на фото: Солончак Уюни в Боливии'
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'на фото: Ла-Пас, столица Боливии'
+    alt: "на фото: Солончак Уюни в Боливии"
 - day: 6
   title: Уюни - Ла-Пас
   places:
@@ -139,18 +137,16 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-5-enhanced-20261006.webp
-    alt: 'на фото: Солончак Уюни в Боливии'
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'на фото: Ла-Пас, столица Боливии'
+  - src: /media/destinations/uyuni/gallery-1-enhanced-20261003.webp
+    alt: "На фото: Лес кактусов и соленое озеро (солончак) Уюни"
 - day: 7
   title: Ла-Пас - вылет домой
   places:
   - Ла Пас
   text: После завтрака трансфер из отеля в аэропорт.
   images:
-  - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: 'на фото: Ла-Пас, столица Боливии'
+  - src: /media/destinations/la-pas/gallery-2-enhanced-20261003.webp
+    alt: "На фото: столица Боливии город Ла Пас"
 included:
 - трансферы в Ла-Пасе, на Исла-дель-Соль и в Уюни;
 - '6 ночей проживания с завтраками: 4 ночи в Ла-Пасе, 1 ночь в Копакабане, 1 ночь в Уюни;'

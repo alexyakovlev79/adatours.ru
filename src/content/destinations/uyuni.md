@@ -22,6 +22,8 @@ gallery:
   alt: 'На фото: соленое озеро (солончак) Уюни'
 - src: /media/destinations/uyuni/gallery-5-enhanced-20261003.webp
   alt: 'На фото: Джип тур на соленое озеро (солончак) Уюни'
+  - src: /media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-day-10-generated-20261008-next20.webp
+    alt: Кладбище поездов у Уюни, Боливия
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

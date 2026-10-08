@@ -193,7 +193,9 @@ itinerary:
     Размещение в отеле на высоте около 4400 метров, ужин и отдых.
 
     **Питание:** завтрак, обед, ужин.
-  images: []
+  images:
+  - src: /media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-day-10-generated-20261008-next20.webp
+    alt: Кладбище поездов у Уюни, Боливия
 - day: 11
   title: Четверг - Каменное дерево, Термас-де-Полкес, гейзеры и Зеленая лагуна
   places: []

@@ -16,6 +16,8 @@ gallery:
     alt: Побережье Порту-ди-Галиньяш
   - src: /media/destinations/porto-de-galinhas/gallery-2-enhanced-20261001.webp
     alt: Пляж и рифы Порту-ди-Галиньяш
+  - src: /media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-13-generated-20261008-next20.webp
+    alt: Пальмы и пляж Порту-ди-Галиньяш, Бразилия
 relatedDestinations:
   - destination_brazil_recife
   - destination_brazil_olinda

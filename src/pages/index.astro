@@ -542,10 +542,6 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     }
     .home-interest-grid :global(.interest-card__text) { display: none; }
     .home-interest-list { grid-template-columns: 1fr; }
-    /* Team portrait fills the width; biography keeps readable gutters. */
-    .home-team :global(.person) { width: 100%; max-width: none; }
-    .home-team :global(.person__media) { width: 100%; max-width: none; }
-    .home-team :global(.person__copy) { padding-inline: var(--gutter); }
     .home-tour-grid, .home-discover__grid { grid-template-columns: 1fr; }
     .home-discover { padding-bottom: 0; }
     .home-services__grid { grid-template-columns: 1fr; grid-template-rows: auto; min-height: 0; }

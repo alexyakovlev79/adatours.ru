@@ -69,18 +69,10 @@ const colleagues = [
   headerTheme="dark"
   leadTitle="Обсудим ваше путешествие с командой Ada Tours"
 >
-  <section class="team-intro section">
-    <p class="eyebrow">Знакомьтесь, Ada Tours</p>
-    <h1>Команда Ada Tours в Бразилии и Латинской Америке</h1>
-    <div class="team-intro__copy">
-      <p class="team-intro__lead">Мы живем в разных странах, путешествуем по Латинской Америке и вместе организуем ваши поездки. Наш офис находится в Рио-де-Жанейро.</p>
-      <div>
-        <p>За каждым маршрутом стоят люди: кто-то помогает выбрать направление, кто-то разрабатывает программу, а кто-то координирует ее на месте. Мы соединяем эту работу в одно путешествие, от первого разговора до возвращения домой.</p>
-        <a class="team-link" href="#request">Обсудить поездку <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-    <figure class="team-photo">
+  <section class="team-hero" aria-labelledby="team-hero-title">
+    <div class="team-hero__visual">
       <img
+        class="team-hero__photo"
         src={withBase(teamPhoto)}
         alt="Групповая фотография команды Ada Tours"
         width="1536"
@@ -88,8 +80,21 @@ const colleagues = [
         loading="eager"
         fetchpriority="high"
       />
-      <figcaption>Команда Ada Tours</figcaption>
-    </figure>
+    </div>
+    <div class="team-hero__heading">
+      <p class="eyebrow">Знакомьтесь, Ada Tours</p>
+      <h1 id="team-hero-title">Команда Ada Tours в Бразилии и Латинской Америке</h1>
+    </div>
+  </section>
+
+  <section class="team-intro section">
+    <div class="team-intro__copy">
+      <p class="team-intro__lead">Мы живем в разных странах, путешествуем по Латинской Америке и вместе организуем ваши поездки. Наш офис находится в Рио-де-Жанейро.</p>
+      <div>
+        <p>За каждым маршрутом стоят люди: кто-то помогает выбрать направление, кто-то разрабатывает программу, а кто-то координирует ее на месте. Мы соединяем эту работу в одно путешествие, от первого разговора до возвращения домой.</p>
+        <a class="team-link" href="#request">Обсудить поездку <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
   </section>
 
   <AboutNav active="team" />
@@ -133,14 +138,23 @@ const colleagues = [
     margin-inline: auto;
   }
 
-  .team-intro {
-    padding-top: calc(var(--header-h) + clamp(64px, 9vw, 128px));
+  /* Keep the complete group portrait visible in the page hero on every screen. */
+  .team-hero { background: var(--color-bg); }
+  .team-hero__visual { background: var(--color-gold-soft); }
+  .team-hero__photo {
+    display: block;
+    width: min(100%, var(--container-max));
+    height: auto;
+    margin-inline: auto;
   }
-
-  .team-intro h1 {
-    max-width: 1120px;
-    margin: 16px 0 clamp(32px, 5vw, 64px);
+  .team-hero__heading {
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+    padding-block: clamp(28px, 4vw, 52px) clamp(52px, 7vw, 94px);
   }
+  .team-hero__heading .eyebrow { margin: 0 0 16px; }
+  .team-hero__heading h1 { max-width: 1120px; margin: 0; }
+  .team-intro { padding-top: clamp(24px, 4vw, 64px); }
 
   .team-intro__copy {
     display: grid;
@@ -165,27 +179,6 @@ const colleagues = [
     border-bottom: 1px solid currentColor;
     font-family: var(--font-display);
     font-size: .82rem;
-  }
-
-  .team-photo {
-    margin: clamp(40px, 6vw, 80px) 0 0;
-    padding: clamp(16px, 4vw, 56px);
-    background: var(--color-gold-soft);
-  }
-
-  .team-photo img {
-    display: block;
-    width: min(100%, 1120px);
-    height: auto;
-    margin-inline: auto;
-    object-fit: contain;
-  }
-
-  .team-photo figcaption {
-    margin-top: 20px;
-    text-align: center;
-    color: var(--color-muted);
-    font-size: .85rem;
   }
 
   .team-colleagues__heading {
@@ -229,8 +222,5 @@ const colleagues = [
       grid-template-columns: 1fr;
     }
 
-    .team-photo {
-      padding: 16px 8px;
-    }
   }
 </style>

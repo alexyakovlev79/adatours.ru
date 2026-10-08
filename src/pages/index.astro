@@ -146,15 +146,14 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     <div class="container home-countries__cards">
       <div class="home-country-grid">
         {otherCountries.map((country) => (
-          <a class="home-poster" href={withBase(countryPath(country.data))} data-image-text-align={country.data.imageTextAlign}>
-            {country.data.hero?.src && <img src={withBase(country.data.hero.src)} loading="lazy" alt="" />}
-            <span class="home-poster__shade" aria-hidden="true"></span>
-            <span class="home-poster__content">
-              <span class="eyebrow">{countLabel(countryCounts.get(country.data.id) ?? 0, ['тур', 'тура', 'туров'])}</span>
-              <h3>{country.data.name}</h3>
-              <span class="home-poster__arrow">Смотреть страну <span aria-hidden="true">↗</span></span>
-            </span>
-          </a>
+          <DestinationBand
+            headingTag="h3"
+            eyebrow={countLabel(countryCounts.get(country.data.id) ?? 0, ['тур', 'тура', 'туров'])}
+            title={country.data.name}
+            href={countryPath(country.data)}
+            image={country.data.hero?.src}
+            imageTextAlign={country.data.imageTextAlign}
+          />
         ))}
       </div>
       <a class="home-all-link" href={withBase('/country/')}>Все страны Латинской Америки <span aria-hidden="true">↗</span></a>
@@ -400,7 +399,9 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   .home-start__search :global(.search-trigger) { padding: 12px 18px; border: 1px solid currentColor; font-size: .8rem; }
 
   .home-country-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
-  .home-country-grid h3 { overflow-wrap: normal; word-break: normal; }
+  .home-country-grid :global(.band) { min-width: 0; min-height: clamp(310px, 34vw, 470px); }
+  .home-country-grid :global(.band__content) { padding-block: clamp(30px, 3vw, 46px); }
+  .home-country-grid :global(.band__title) { font-size: clamp(2rem, 3.5vw, 3.65rem); overflow-wrap: anywhere; }
   .home-poster { position: relative; display: flex; align-items: flex-end; min-width: 0; min-height: clamp(310px, 34vw, 470px); overflow: hidden; isolation: isolate; color: #fff; background: linear-gradient(140deg, #343c36, #151713); }
   .home-poster img, .home-discover__tile img, .home-service img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; max-width: none; object-fit: cover; transition: transform 700ms var(--ease-out); }
   .home-poster:hover img, .home-discover__tile:hover img, .home-service:hover img { transform: scale(1.035); }
@@ -470,7 +471,9 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     .home-countries__cards { width: 100%; max-width: none; }
     .home-countries :global(.band) { min-height: clamp(360px, 105vw, 460px); }
     .home-countries :global(.band__text) { display: none; }
-    .home-country-grid .home-poster { min-height: clamp(360px, 105vw, 460px); }
+    .home-country-grid :global(.band) { min-height: clamp(360px, 105vw, 460px); }
+    .home-country-grid :global(.band__content) { padding-block: clamp(48px, 6vw, 86px); }
+    .home-country-grid :global(.band__title) { font-size: var(--text-h2); line-height: 1.02; }
     .home-countries__cards .home-all-link { margin-inline: var(--gutter); }
     /* Mobile featured tours: edge-to-edge photography with no lead text overlay. */
     .home-tours__cards { width: 100%; max-width: none; }
@@ -544,6 +547,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     .home-team :global(.person__media) { width: 100%; max-width: none; }
     .home-team :global(.person__copy) { padding-inline: var(--gutter); }
     .home-tour-grid, .home-discover__grid { grid-template-columns: 1fr; }
+    .home-discover { padding-bottom: 0; }
     .home-services__grid { grid-template-columns: 1fr; grid-template-rows: auto; min-height: 0; }
     .home-service--vip { grid-row: auto; }
     .home-service { min-height: 360px; }

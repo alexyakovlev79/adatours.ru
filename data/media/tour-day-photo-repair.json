@@ -6907,6 +6907,13 @@
           "destinationId": "destination_bolivia_la_pas",
           "kind": "reused_existing_asset",
           "slot": "itinerary.day.12.images"
+        },
+        {
+          "day": 2,
+          "src": "/media/excursions/samaipata-tur/hero-src-enhanced-20261008.webp",
+          "destinationId": "destination_bolivia_samaipata",
+          "slot": "itinerary[1].images[0]",
+          "sourceExcursionId": "excursion_source_samaipata_tur"
         }
       ],
       "completedAssets": [],
@@ -6916,22 +6923,18 @@
       "sheetRow": 341,
       "selectedDays": 12,
       "commit": "2d6a39c3b806f6e4657b6e9640bac38cab09d621",
-      "pendingGeneratedSlots": [
-        {
-          "day": 2,
-          "destinationId": "destination_bolivia_samaipata",
-          "reason": "Place image missing; separate full frame required",
-          "failedGeneratedAttempts": 2,
-          "attemptNote": "Two outputs rejected: one was a fabricated project report, one depicted a tropical bay, neither depicts archaeological Samaipata. No image uploaded or connected. Regenerate in a precise image workflow."
-        }
-      ],
+      "pendingGeneratedSlots": [],
       "destinationSync": [
         {
           "destinationId": "destination_bolivia_samaipata",
-          "status": "pending",
-          "created": false,
-          "paths": [],
-          "remaining": "Destination page requires standalone material and a verified image"
+          "status": "completed",
+          "created": true,
+          "paths": [
+            "/media/excursions/samaipata-tur/gallery-0-src-enhanced-20261008.webp",
+            "/media/excursions/samaipata-tur/hero-src-enhanced-20261008.webp",
+            "/media/excursions/samaipata-tur/gallery-1-src-enhanced-20261008.webp"
+          ],
+          "remaining": null
         },
         {
           "destinationId": "destination_bolivia_park_amboro",
@@ -7017,7 +7020,10 @@
           "paths": [],
           "remaining": "Destination page requires standalone material and a verified image"
         }
-      ]
+      ],
+      "emptyDays": [],
+      "dayPhotosStatus": "completed",
+      "remainingDuplicateGroups": []
     },
     {
       "tourId": "tour_source_prirodnye_chudesa_bolivii",

@@ -28,7 +28,7 @@ import { withBase } from '../lib/paths';
   .not-found {
     position: relative;
     display: grid;
-    min-height: 100svh;
+    min-height: clamp(480px, 34vw, 600px);
     color: var(--color-bg);
     background:
       radial-gradient(circle at 70% 20%, rgba(242,204,103,.26), transparent 30%),
@@ -66,5 +66,11 @@ import { withBase } from '../lib/paths';
     gap: 24px 34px;
     align-items: center;
     margin-top: 34px;
+  }
+
+  @media (max-width: 720px) {
+    .not-found {
+      min-height: clamp(380px, 110vw, 500px);
+    }
   }
 </style>

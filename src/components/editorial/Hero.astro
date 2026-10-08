@@ -12,6 +12,7 @@ interface Props {
   ctaHref?: string;
   ctaLabel?: string;
   compact?: boolean;
+  home?: boolean;
   tour?: boolean;
   contentSized?: boolean;
   meta?: string;
@@ -28,6 +29,7 @@ const {
   ctaHref = '/contacts/',
   ctaLabel = 'Оставить заявку',
   compact = false,
+  home = false,
   tour = false,
   contentSized = false,
   meta,
@@ -40,7 +42,7 @@ const resolvedImage = image ? withBase(image) : undefined;
 ---
 
 <section
-  class:list={['hero', { 'hero--compact': compact, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized }]}
+  class:list={['hero', { 'hero--compact': compact, 'hero--home': home, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized }]}
   data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
@@ -83,8 +85,13 @@ const resolvedImage = image ? withBase(image) : undefined;
     isolation: isolate;
   }
 
+  /* Catalogues have a shorter cover; the homepage has a stronger visual opening. */
   .hero--compact {
-    min-height: min(84svh, 820px);
+    min-height: clamp(460px, 36vw, 540px);
+  }
+
+  .hero--home {
+    min-height: clamp(650px, 44vw, 700px);
   }
 
   .hero__media {
@@ -155,6 +162,19 @@ const resolvedImage = image ? withBase(image) : undefined;
   }
 
   @media (max-width: 720px) {
+    /* Height follows available width and content, never the screen's height. */
+    .hero {
+      min-height: clamp(460px, 125vw, 560px);
+    }
+
+    .hero--compact {
+      min-height: clamp(400px, 110vw, 500px);
+    }
+
+    .hero--home {
+      min-height: clamp(500px, 135vw, 600px);
+    }
+
     .hero__content {
       padding-bottom: 34px;
     }

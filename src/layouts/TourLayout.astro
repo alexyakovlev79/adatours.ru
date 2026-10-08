@@ -12,6 +12,7 @@ import TourPricing from '../components/tour/TourPricing.astro';
 import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
+import InlineMarkdown from '../components/global/InlineMarkdown.astro';
 import { withBase } from '../lib/paths';
 import { destinationCatalogById } from '../lib/content-validation';
 import { destinationPath, tourBreadcrumbs, tourPath } from '../lib/routes';
@@ -97,6 +98,14 @@ const heroMetaParts = [
   durationLabel,
   d.route.join(' · '),
 ].filter(Boolean);
+
+// Treat the lead as the opening paragraph of the description, not hero text.
+// Only move its display position; do not edit the authored body or deduplicate.
+const tourBodyHtml = await Astro.slots.render('default');
+const firstHeadingMatch = tourBodyHtml.match(/^(\s*(?:<!--[\s\S]*?-->\s*)*<h2\b[^>]*>[\s\S]*?<\/h2>)/i);
+const firstHeadingHtml = firstHeadingMatch?.[1] ?? '';
+const remainingBodyHtml = firstHeadingHtml ? tourBodyHtml.slice(firstHeadingHtml.length) : tourBodyHtml;
+const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 ---
 
 <BaseLayout leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={d.title} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
@@ -118,7 +127,6 @@ const heroMetaParts = [
   <Hero
     eyebrow={archived ? "Архивный тур" : "Индивидуальный тур"}
     title={d.title}
-    intro={d.lead}
     image={d.hero?.src}
     imageTextAlign={d.imageTextAlign}
     mediaStatus={d.hero?.status}
@@ -130,9 +138,15 @@ const heroMetaParts = [
 
   {d.durationDays && <TripStats stats={stats} />}
 
-  <section class="tour-copy">
-    <div class="container prose"><slot /></div>
-  </section>
+  {hasTourDescription && (
+    <section class="tour-copy">
+      <div class="container prose">
+        {firstHeadingHtml && <Fragment set:html={firstHeadingHtml} />}
+        {d.lead?.trim() && <p class="tour-lead"><InlineMarkdown text={d.lead} /></p>}
+        {remainingBodyHtml && <Fragment set:html={remainingBodyHtml} />}
+      </div>
+    </section>
+  )}
 
   {routeDestinations.length > 0 && (
     <nav class="tour-destinations container" aria-label="Места маршрута">
@@ -183,6 +197,12 @@ const heroMetaParts = [
   .tour-copy { background: var(--color-bg); padding: 0 0 clamp(28px, 4vw, 56px); }
   .tour-copy :global(.prose) { padding-top: 0; padding-bottom: 0; }
   .tour-copy :global(.prose:empty) { display: none; }
+  .tour-copy .tour-lead {
+    color: var(--color-ink);
+    font-size: clamp(1.125rem, 1.08rem + .35vw, 1.375rem);
+    font-weight: 600;
+    line-height: 1.55;
+  }
   .tour-destinations { padding-block: 0 clamp(28px, 4vw, 56px); }
   .tour-destinations ul { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 0; padding: 0; list-style: none; }
   .tour-destinations a { text-decoration: underline; text-underline-offset: .2em; }

@@ -12,7 +12,7 @@ hero:
   alt: Долина Майпо
 gallery: []
 themes:
-- theme_food
+- theme_gastronomy_wine
 facts: []
 featureBands: []
 relatedDestinations: []

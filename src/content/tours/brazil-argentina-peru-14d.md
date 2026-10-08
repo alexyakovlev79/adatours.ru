@@ -112,8 +112,8 @@ itinerary:
       
       Экскурсия проходит с русскоговорящим гидом.
     images:
-      - src: /media/tours/luxury-brazil-11d/itinerary/extra-sugarloaf-trekking-enhanced-20260930.webp
-        alt: "Канатная дорога на Сахарную голову в Рио-де-Жанейро"
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary-day-02-generated-20261008-v1.webp
+        alt: "Статуя Христа-Искупителя на вершине Корковадо, Рио-де-Жанейро, Бразилия"
         intendedSlot: "itinerary:day-2"
   - day: 3
     title: "Рио - Сахарная голова и исторический центр"
@@ -157,8 +157,8 @@ itinerary:
       
       В Национальном парке также доступны дополнительные активности, включая лодочную поездку среди водопадов и рафтинг.
     images:
-      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-05-enhanced-20260930.webp
-        alt: "Парк птиц в Игуасу"
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary-day-05-generated-20261008-v1.webp
+        alt: "Панорама водопадов Игуасу с тропы бразильского национального парка"
         intendedSlot: "itinerary:day-5"
   - day: 6
     title: "Аргентинская сторона Игуасу - Буэнос-Айрес"
@@ -174,8 +174,8 @@ itinerary:
       
       После экскурсии трансфер в аэропорт и перелет в Буэнос-Айрес. По прибытии встреча с водителем и трансфер в отель.
     images:
-      - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp
-        alt: "Макуко-сафари у водопадов Игуасу"
+      - src: /media/tours/brazil-argentina-peru-14d/itinerary-day-06-generated-20261008-v1.webp
+        alt: "Глотка дьявола со смотровой площадки аргентинского парка Игуасу"
         intendedSlot: "itinerary:day-6"
   - day: 7
     title: "Буэнос-Айрес"

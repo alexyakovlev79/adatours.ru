@@ -197,10 +197,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   .tour-copy :global(.prose) { padding-top: 0; padding-bottom: 0; }
   .tour-copy :global(.prose:empty) { display: none; }
   .tour-copy .tour-lead {
-    color: var(--color-ink);
-    font-size: clamp(1.125rem, 1.08rem + .35vw, 1.375rem);
     font-weight: 600;
-    line-height: 1.55;
   }
   .tour-destinations { padding-block: 0 clamp(28px, 4vw, 56px); }
   .tour-destinations ul { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 0; padding: 0; list-style: none; }

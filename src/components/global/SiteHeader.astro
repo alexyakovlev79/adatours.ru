@@ -210,8 +210,22 @@ const nestedGroups = NAV_LINKS
       header.classList.toggle('is-scrolled', window.scrollY > 12);
     };
 
+    // Browsers can restore focus to a navigation link from their back/forward cache.
+    // Clear only desktop navigation focus, so :focus-visible cannot reopen a stale submenu.
+    const clearDesktopNavFocus = () => {
+      const focused = document.activeElement;
+      if (focused instanceof HTMLElement && header.querySelector('.desktop-nav')?.contains(focused)) {
+        focused.blur();
+      }
+    };
+
     setScrolled();
     window.addEventListener('scroll', setScrolled, { passive: true });
+    window.addEventListener('pagehide', clearDesktopNavFocus);
+    window.addEventListener('pageshow', () => {
+      clearDesktopNavFocus();
+      setScrolled();
+    });
   }
 
   if (header && toggle instanceof HTMLButtonElement && menu instanceof HTMLElement) {
@@ -290,6 +304,15 @@ const nestedGroups = NAV_LINKS
     });
 
     window.addEventListener('ada:search-open', () => setOpen(false));
+
+    // The mobile menu can also survive history navigation in the browser cache.
+    const resetMenuOnNavigation = () => {
+      const focused = document.activeElement;
+      if (focused instanceof HTMLElement && menu.contains(focused)) focused.blur();
+      setOpen(false);
+    };
+    window.addEventListener('pagehide', resetMenuOnNavigation);
+    window.addEventListener('pageshow', resetMenuOnNavigation);
 
     document.addEventListener('keydown', (event) => {
       if (event.key !== 'Escape') return;
@@ -471,7 +494,7 @@ const nestedGroups = NAV_LINKS
   }
 
   .desktop-nav__group:hover .desktop-nav__submenu,
-  .desktop-nav__group:focus-within .desktop-nav__submenu {
+  .desktop-nav__group:has(a:focus-visible) .desktop-nav__submenu {
     opacity: 1;
     visibility: visible;
     transform: translate(-50%, 0);

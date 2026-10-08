@@ -80,6 +80,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     let activeFilter = 'all';
     let pagefindPromise: Promise<any> | null = null;
     let debounceId = 0;
+    let hideTimerId = 0;
     let requestId = 0;
     let previousFocus: HTMLElement | null = null;
 
@@ -347,6 +348,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     const openSearch = () => {
       previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
       window.dispatchEvent(new CustomEvent('ada:search-open'));
+      window.clearTimeout(hideTimerId);
       overlay.hidden = false;
       overlay.setAttribute('aria-hidden', 'false');
       document.body.classList.add('search-open');
@@ -359,9 +361,27 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       overlay.classList.remove('is-open');
       overlay.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('search-open');
-      window.setTimeout(() => { overlay.hidden = true; }, 220);
+      window.clearTimeout(hideTimerId);
+      hideTimerId = window.setTimeout(() => { overlay.hidden = true; }, 220);
       previousFocus?.focus();
     };
+
+    // Search state is cached too: close it before leaving and after history restoration.
+    const resetSearchOnNavigation = () => {
+      ++requestId;
+      window.clearTimeout(debounceId);
+      window.clearTimeout(hideTimerId);
+      const focused = document.activeElement;
+      if (focused instanceof HTMLElement && overlay.contains(focused)) focused.blur();
+      overlay.classList.remove('is-open');
+      overlay.hidden = true;
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('search-open');
+      results.setAttribute('aria-busy', 'false');
+      previousFocus = null;
+    };
+    window.addEventListener('pagehide', resetSearchOnNavigation);
+    window.addEventListener('pageshow', resetSearchOnNavigation);
 
     openButtons.forEach((button) => button.addEventListener('click', (event) => {
       event.preventDefault();

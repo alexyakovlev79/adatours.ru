@@ -30,6 +30,20 @@ import { ORG } from '../../data/organization/ada-tours';
   </div>
 </footer>
 
+<script>
+  // The footer CTA leads to the page's existing form, ready for typing.
+  // The #request href remains a working fallback without JavaScript.
+  document.querySelector<HTMLAnchorElement>('.footer__request')?.addEventListener('click', (event) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const nameInput = document.querySelector<HTMLInputElement>('#request [data-lead-form] input[name="name"]');
+    if (!nameInput || nameInput.closest('form')?.hidden || nameInput.disabled) return;
+
+    event.preventDefault();
+    if (window.location.hash !== '#request') window.history.pushState(null, '', '#request');
+    nameInput.focus();
+  });
+</script>
+
 <style>
   .footer {
     padding: var(--section-y-tight) var(--gutter) 36px;

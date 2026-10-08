@@ -509,6 +509,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   .itinerary {
     color: var(--color-bg);
     background: var(--color-ink-deep);
+    /* The pricing section starts directly after the final itinerary row. */
+    padding-bottom: 0;
   }
 
   @media (min-width: 1100px) {
@@ -804,6 +806,10 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
     .day-card {
       padding-bottom: 10px;
+    }
+
+    .day-card:last-child {
+      padding-bottom: 0;
     }
 
     .day__content {

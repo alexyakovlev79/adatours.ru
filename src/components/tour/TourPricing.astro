@@ -18,15 +18,17 @@ const { price = 'По запросу', ctaLabel = 'Заказать этот т�
       <h2>{price}</h2>
     </div>
     <div class="pricing__copy">
-      <PrimaryCTA href="/contacts/" label={ctaLabel} variant="dark" />
+      <PrimaryCTA href="/contacts/" label={ctaLabel} variant="gold" />
     </div>
   </div>
 </section>
 
 <style>
   .pricing {
-    background: var(--color-gold);
-    color: var(--color-ink-deep);
+    /* Inverse of the previous gold block: dark surface, golden primary action. */
+    background: var(--color-ink-deep);
+    color: var(--color-bg);
+    padding-top: clamp(32px, 4vw, 56px);
   }
 
   .pricing__grid {

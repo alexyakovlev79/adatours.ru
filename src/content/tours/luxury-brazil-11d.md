@@ -66,7 +66,7 @@ itinerary:
       Днем можно посетить Fogo de Chão, а вечером - Al Mare на Копакабане в отеле Fasano.
     images:
       - src: /media/tours/luxury-brazil-11d/itinerary/day-02-enhanced-20260930.webp
-        alt: "Поезд к Корковаду через лес Тижука"
+        alt: "Сахарная Голова и канатная дорога с горы Урка, Рио-де-Жанейро"
         intendedSlot: "itinerary:day-2"
   - day: 3
     title: "Корковадо и статуя Христа Искупителя"

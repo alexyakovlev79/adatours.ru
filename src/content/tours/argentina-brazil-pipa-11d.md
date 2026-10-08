@@ -259,8 +259,8 @@ itinerary:
     text: |-
       После завтрака предусмотрен трансфер без гида в аэропорт Натала для вылета домой.
     images:
-      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-10-enhanced-20261001.webp
-        alt: "Прайя-де-Пипа перед вылетом из Натала"
+      - src: /media/tours/argentina-brazil-pipa-11d/itinerary-day-11-generated-20261008-v1.webp
+        alt: "Вылет домой из международного аэропорта Натала, Бразилия"
         intendedSlot: "itinerary:day-11"
 included:
   - Проживание в отелях на базе завтраков.

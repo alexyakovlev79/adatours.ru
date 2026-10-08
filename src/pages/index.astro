@@ -484,9 +484,65 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     .home-start__links { grid-template-columns: 1fr; }
     .home-start__links a { grid-template-columns: 28px minmax(0, 1fr) 22px; padding-block: 20px; }
     .home-start__search { align-items: flex-start; flex-direction: column; gap: 18px; }
-    .home-interest-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    /* All single-column home photography reaches both viewport edges. */
+    .home-interest-grid,
+    .home-discover__grid,
+    .home-services__grid {
+      width: calc(100% + 2 * var(--gutter));
+      margin-inline: calc(-1 * var(--gutter));
+      gap: 0;
+    }
+    /* Interest tiles use the same full-bleed photo + overlay as tours. */
+    .home-interest-grid { grid-template-columns: 1fr; }
     .home-interest-grid :global(.interest-card--large) { grid-column: 1 / -1; }
+    .home-interest-grid :global(.interest-card__link) {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      min-height: clamp(360px, 105vw, 460px);
+      overflow: hidden;
+      color: #fff;
+      background: #222c2b;
+    }
+    .home-interest-grid :global(.interest-card__image) {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: auto;
+    }
+    .home-interest-grid :global(.interest-card__image)::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgb(0 0 0 / 5%) 15%, rgb(0 0 0 / 70%) 100%);
+      pointer-events: none;
+    }
+    .home-interest-grid :global(.interest-card__image img) {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .home-interest-grid :global(.interest-card__copy) {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding: 24px var(--gutter) 30px;
+    }
+    .home-interest-grid :global(.interest-card__copy h3) {
+      color: #fff;
+      font-size: clamp(1.75rem, 6.5vw, 2.35rem);
+      line-height: 1.08;
+    }
+    .home-interest-grid :global(.interest-card__meta) {
+      color: rgb(255 255 255 / 85%);
+    }
+    .home-interest-grid :global(.interest-card__text) { display: none; }
     .home-interest-list { grid-template-columns: 1fr; }
+    /* Team portrait fills the width; biography keeps readable gutters. */
+    .home-team :global(.person) { width: 100%; max-width: none; }
+    .home-team :global(.person__media) { width: 100%; max-width: none; }
+    .home-team :global(.person__copy) { padding-inline: var(--gutter); }
     .home-tour-grid, .home-discover__grid { grid-template-columns: 1fr; }
     .home-services__grid { grid-template-columns: 1fr; grid-template-rows: auto; min-height: 0; }
     .home-service--vip { grid-row: auto; }

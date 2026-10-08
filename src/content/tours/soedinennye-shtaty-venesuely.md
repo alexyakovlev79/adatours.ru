@@ -40,7 +40,7 @@ itinerary:
   text: Прилет в Каракас. Встреча с гидом и переход в национальный аэропорт. Далее перелет на остров Маргарита, трансфер в
     отель и отдых. По дороге гид расскажет об острове и его особенностях.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas1.png
+  - src: /media/tours/soedinennye-shtaty-venesuely/archive-09-src-enhanced-20261008.webp
     alt: Каракас
 - day: 2
   title: ', вторник-среда. Остров Маргарита'
@@ -107,7 +107,7 @@ itinerary:
 
     **Питание:** легкий завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/canaima-national-park-venezuela.jpg
+  - src: /media/tours/soedinennye-shtaty-venesuely/archive-10-src-enhanced-20261008.webp
     alt: Канайма
 - day: 8
   title: ', понедельник. Сальто-Анхель'

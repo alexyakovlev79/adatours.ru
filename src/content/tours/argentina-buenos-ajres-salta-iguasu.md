@@ -108,7 +108,7 @@ itinerary:
 
     После винного тура предусмотрен обед на центральной площади, он оплачивается отдельно, затем посещение музея винограда и вина. Ночь в винном отеле.
   images:
-  - src: https://brasiltours.ru/image/argentina%20salta.png
+  - src: /media/tours/argentina-buenos-ajres-salta-iguasu/archive-02-src-enhanced-20261008.webp
     alt: 'на фото: цветные горы региона Сальта в Аргентине'
   - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
     alt: 'на фото: столица Аргентины, город Буэнос Айрес'
@@ -144,7 +144,7 @@ itinerary:
 
     Ночь в отеле в Пурмамарке.
   images:
-  - src: https://brasiltours.ru/image/salta%20argentina.png
+  - src: /media/tours/argentina-buenos-ajres-salta-iguasu/archive-03-src-enhanced-20261008.webp
     alt: 'на фото: регион Сальта в Аргентине'
 - day: 7
   title: Пурмамарка - Салинас-Грандес - Сальта
@@ -159,7 +159,7 @@ itinerary:
 
     По дороге предусмотрены остановки в небольших живописных деревнях. После экскурсии возвращение в Сальту. Ночь в Сальте.
   images:
-  - src: https://brasiltours.ru/image/argentina%20salta.png
+  - src: /media/tours/argentina-buenos-ajres-salta-iguasu/archive-02-src-enhanced-20261008.webp
     alt: 'на фото: цветные горы региона Сальта в Аргентине'
 - day: 8
   title: Сальта - Игуасу
@@ -205,7 +205,7 @@ itinerary:
 
     После тура трансфер в отель. Вечером можно спокойно отдохнуть после дня у водопадов и вернуться к впечатлениям от маршрута.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/i/g/iguazu_1.png
+  - src: /media/tours/argentina-buenos-ajres-salta-iguasu/archive-04-src-enhanced-20261008.webp
     alt: 'на фото: на водопадах Игуасу в Бразилии и Аргентине'
 - day: 11
   title: Игуасу - Буэнос-Айрес
@@ -253,7 +253,7 @@ priceFrom: 5745
 currency: USD
 priceNote: $5745
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/sonia-nadales-8utniizfacc-unsplash.jpg
+  src: /media/tours/argentina-buenos-ajres-salta-iguasu/archive-05-src-enhanced-20261008.webp
   alt: 'на фото: цветные горы региона Сальта в Аргентине'
 routeCountries:
 - country_argentina

@@ -202,7 +202,7 @@ priceFrom: 3395
 currency: USD
 priceNote: $3395
 hero:
-  src: https://brasiltours.ru/image/catalog/product/C/a/Caracas_1.jpg
+  src: /media/tours/venesuela-populyarnye-napravleniya/archive-01-src-enhanced-20261008.webp
   alt: 'Венесуэла: Популярные направления'
 routeCountries:
 - country_venezuela

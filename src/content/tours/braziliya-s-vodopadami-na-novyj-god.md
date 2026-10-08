@@ -75,7 +75,7 @@ itinerary:
 
     Вечером можно посетить ресторан **Cipriani** в Belmond Copacabana Palace, отмеченный звездой Michelin.
   images:
-  - src: https://brasiltours.ru/image/New%20Year%20Brazil.png
+  - src: /media/tours/novogodnie-priklyucheniya-v-brazilii/archive-08-src-enhanced-20261008.webp
     alt: 'На фото: Новогодние салюты в Рио, вид с пляжа'
 - day: 4
   title: 02.01. Сахарная голова и исторический центр Рио
@@ -115,7 +115,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Вид сверху на водопады Фос-ду-Игуасу'
-  - src: https://brasiltours.ru/image/New%20Year%20Brazil.png
+  - src: /media/tours/novogodnie-priklyucheniya-v-brazilii/archive-08-src-enhanced-20261008.webp
     alt: 'На фото: Новогодние салюты в Рио, вид с пляжа'
 - day: 6
   title: 04.01. Бразильская сторона Игуасу

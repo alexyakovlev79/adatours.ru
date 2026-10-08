@@ -67,7 +67,7 @@ itinerary:
 
     При желании можно отдельно забронировать новогодний ужин или билет на вечеринку в одном из отелей на набережной Копакабаны.
   images:
-  - src: https://brasiltours.ru/image/New%20Year%20Brazil.png
+  - src: /media/tours/novogodnie-priklyucheniya-v-brazilii/archive-08-src-enhanced-20261008.webp
     alt: 'На фото: празднование Нового года на пляже Копакабана в Рио-де-Жанейро в Бразилии'
 - day: 4
   title: 01.01. Рио-де-Жанейро

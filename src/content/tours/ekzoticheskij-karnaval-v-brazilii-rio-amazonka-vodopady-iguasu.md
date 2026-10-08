@@ -37,7 +37,7 @@ itinerary:
     и другие напитки. Вы можете полностью насладиться всем этим, так как вы приехали в рай, вы в Рио-де-Жанейро, одном из
     самых красивых и экзотических городов в мире!
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0003.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu/archive-06-src-enhanced-20261008.webp
     alt: 'На фото: Полёт на вертолёте над Рио'
 - day: 2
   title: Рио-де-Жанейро
@@ -54,7 +54,7 @@ itinerary:
 
     Мы рекомендуем вам попробовать знаменитое бразильское мясо в ресторане Fogo de Chao с видом на Сахарную голову (75 долларов США).
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0003.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu/archive-06-src-enhanced-20261008.webp
     alt: 'На фото: Полёт на вертолёте над Рио'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -66,7 +66,7 @@ itinerary:
     ждет фантастический вечер - знаменитый карнавал Рио! Вас заберут из вашего отеля и отвезут в Самбадром. Вы увидите представителей
     лучших школ Самба в Бразилии, танцующих и поющих перед вами,
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0003.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu/archive-06-src-enhanced-20261008.webp
     alt: 'На фото: Полёт на вертолёте над Рио'
 - day: 4
   title: Рио-де-Жанейро
@@ -80,7 +80,7 @@ itinerary:
     сад, самый большой в мире футбольный стадион, Сахарную голову и многое другое.Вечером мы рекомендуем вам попробовать морские
     деликатесы в ресторане морепродуктов Marius (130 долларов США/человек).'
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0003.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu/archive-06-src-enhanced-20261008.webp
     alt: 'На фото: Полёт на вертолёте над Рио'
 - day: 5
   title: Рио-де-Жанейро - Фос-ду-Игуасу
@@ -92,7 +92,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу, Бразилия'
-  - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0003.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu/archive-06-src-enhanced-20261008.webp
     alt: 'На фото: Полёт на вертолёте над Рио'
 - day: 6
   title: Фос-ду-Игуасу
@@ -179,7 +179,7 @@ itinerary:
   images:
   - src: /media/tours/amazoniya/hero-enhanced-20261006.webp
     alt: 'На фото: Вид сверху на Амазонку, Бразилия'
-  - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0003.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu/archive-06-src-enhanced-20261008.webp
     alt: 'На фото: Полёт на вертолёте над Рио'
 - day: 11
   title: Рио-де-Жанейро
@@ -187,7 +187,7 @@ itinerary:
   - Рио-де-Жанейро
   text: Завтрак в отеле, трансфер в аэропорт Рио-де-Жанейро на ваш рейс домой.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/img-20221105-wa0003.jpg
+  - src: /media/tours/ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu/archive-06-src-enhanced-20261008.webp
     alt: 'На фото: Полёт на вертолёте над Рио'
 included: []
 notIncluded:
@@ -210,7 +210,7 @@ priceFrom: 4585
 currency: USD
 priceNote: $4585
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/carnival3-waifu2x-photo-noise1-scale.jpg
+  src: /media/tours/ekzoticheskij-karnaval-v-brazilii-rio-amazonka-vodopady-iguasu/archive-07-src-enhanced-20261008.webp
   alt: 'На фото: Карнавал в Рио-де-Жанейро'
 routeCountries:
 - country_brazil

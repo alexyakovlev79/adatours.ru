@@ -188,6 +188,11 @@ const resolvedImage = image ? withBase(image) : undefined;
     gap: 28px;
   }
 
+  /* Keep desktop tour photography panoramic; long titles can still expand the hero. */
+  .hero--tour {
+    min-height: clamp(600px, 40vw, 650px);
+  }
+
   /* Tour-detail hero: an editorial title group centered within the photograph. */
   .hero--tour .hero__overlay {
     background:
@@ -243,9 +248,10 @@ const resolvedImage = image ? withBase(image) : undefined;
 
   .hero--tour .hero__bottom :global(.cta) {
     flex: 0 0 auto;
-    width: 238px;
+    width: 292px;
     min-width: 0;
     max-width: 100%;
+    white-space: nowrap;
   }
 
   .hero--tour[data-image-text-align] .hero__head {

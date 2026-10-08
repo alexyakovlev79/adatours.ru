@@ -249,8 +249,8 @@ itinerary:
 
       По прибытии встреча и частный трансфер в отель Dazzler. Возвращение в столицу завершает внутренний круг маршрута: Буэнос-Айрес - Ушуайя - Эль-Калафате - Игуасу - Буэнос-Айрес. На следующий день остается только международный трансфер в аэропорт.
     images:
-      - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
-        alt: "Буэнос-Айрес"
+      - src: /media/tours/neveroyatnaya-argentina/itinerary-day-12-generated-20261008-v1.webp
+        alt: "Буэнос-Айрес: набережная Пуэрто-Мадеро после возвращения из Игуасу"
         intendedSlot: "itinerary:day-12"
 
   - day: 13
@@ -260,8 +260,8 @@ itinerary:
     text: |-
       Частный трансфер в аэропорт для международного рейса в Азию, Европу или США.
     images:
-      - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-3-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+      - src: /media/tours/neveroyatnaya-argentina/itinerary-day-13-generated-20261008-v1.webp
+        alt: "Международный аэропорт Эсейса в Буэнос-Айресе перед вылетом"
         intendedSlot: "itinerary:day-13"
 
 included:

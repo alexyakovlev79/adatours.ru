@@ -183,8 +183,8 @@ itinerary:
 
       Во время экскурсии пейзажи постоянно меняются: скалистые горы, серые реки, долины и голубые озера. Вы прогуляетесь вдоль реки Пипо, увидите гору Сусана, остров Редонда, залив Энсенада и озеро Рока.
     images:
-      - src: /media/tours/issledovanie-argentiny/itinerary-day-5-enhanced-20261006.webp
-        alt: "Национальный парк Огненная Земля"
+      - src: /media/tours/tur-v-argentinu-na-11dnej/itinerary-day-07-generated-20261008-v1.webp
+        alt: "Залив Энсенада в национальном парке Огненная Земля"
         intendedSlot: "itinerary:day-7"
 
   - excursionRef: excursion_ushuaia_martillo_penguin_boat
@@ -221,8 +221,8 @@ itinerary:
 
       На бразильской стороне проложены пешеходные дорожки общей длиной около 1200 метров. Отсюда открывается широкая панорама всего комплекса. Одна из главных точек - Глотка дьявола, где вода падает огромной массой, а воздух наполнен мелкими брызгами.
     images:
-      - src: /media/tours/argentina-and-brazil-ru/itinerary-day-5-enhanced-20261006.webp
-        alt: "Водопады Игуасу, бразильская сторона"
+      - src: /media/tours/tur-v-argentinu-na-11dnej/itinerary-day-09-generated-20261008-v1.webp
+        alt: "Панорама водопадов Игуасу с бразильской стороны"
         intendedSlot: "itinerary:day-9"
 
   - excursionRef: excursion_source_makuko_safari

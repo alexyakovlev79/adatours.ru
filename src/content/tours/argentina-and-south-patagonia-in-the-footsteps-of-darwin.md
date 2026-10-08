@@ -246,8 +246,8 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
-        alt: "Мендоса и Анды"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-15-generated-20261008-v1.webp
+        alt: "Вершина Аконкагуа и панорама Анд, Аргентина"
         intendedSlot: "itinerary:day-15"
   - day: 16
     title: "Берлин-Колера - Пласа-де-Мулас, 4260 м"
@@ -261,8 +261,8 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-enhanced-20261006.webp
-        alt: "Горный маршрут на Аконкагуа"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-16-generated-20261008-v1.webp
+        alt: "Спуск по склону Аконкагуа к Пласа-де-Мулас, Аргентина"
         intendedSlot: "itinerary:day-16"
   - day: 17
     title: "Пласа-де-Мулас - Пуэнте-дель-Инка - Мендоса"
@@ -277,8 +277,8 @@ itinerary:
       
       Питание: завтрак, обед.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
-        alt: "Аконкагуа и горный маршрут в Андах"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-17-generated-20261008-v1.webp
+        alt: "Спуск по долине Хорконес с караваном мулов, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-17"
   - day: 18
     title: "Мендоса"
@@ -287,8 +287,8 @@ itinerary:
     text: |-
       Завтрак. Трансфер в аэропорт или на автовокзал.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-enhanced-20261006.webp
-        alt: "Горный маршрут на Аконкагуа"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-18-generated-20261008-v1.webp
+        alt: "Вылет из аэропорта Мендосы после экспедиции, Аргентина"
         intendedSlot: "itinerary:day-18"
   - day: 19
     title: "Резервный день"
@@ -299,8 +299,8 @@ itinerary:
       
       Команда придерживается этого маршрута как базовой схемы. Погодные условия и форс-мажор могут потребовать изменений.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
-        alt: "Мендоса и Анды"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-19-generated-20261008-v1.webp
+        alt: "Облачность над Аконкагуа в резервный день экспедиции, Аргентина"
         intendedSlot: "itinerary:day-19"
   - day: 20
     title: "Резервный день"
@@ -311,8 +311,8 @@ itinerary:
       
       Команда придерживается этого маршрута как базовой схемы. Погодные условия и форс-мажор могут потребовать изменений.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
-        alt: "Мендоса и Анды"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-20-generated-20261008-v1.webp
+        alt: "Ожидание погодного окна в высотном лагере Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-20"
 included:
   - "Помощь при взаимодействии с авиакомпаниями в случае потери багажа"

@@ -170,8 +170,8 @@ itinerary:
       
       Это самый активный патагонский день маршрута: сначала ледник и вода, затем пешая часть среди горных и озерных пейзажей.
     images:
-      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-6-enhanced-20261006.webp
-        alt: "Торрес-дель-Пайне и ледник Грей"
+      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-07-generated-20261008-v1.webp
+        alt: "Ледник Грей с воды, Торрес-дель-Пайне, Чили"
         intendedSlot: "itinerary:day-7"
   - day: 8
     title: "Сантьяго-де-Чили"
@@ -233,8 +233,8 @@ itinerary:
       
       Далее вы посетите церемониальный комплекс Тахаи. Он включает 3 основные платформы с моаи: Ко-Те-Рику с восстановленными глазами, Тахаи и Вай-Ури. Комплекс входит в Национальный парк Рапа-Нуи, признанный объектом Всемирного наследия ЮНЕСКО.
     images:
-      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-11-enhanced-20261006.webp
-        alt: "Моаи на острове Пасхи"
+      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-09-generated-20261008-v1.webp
+        alt: "Семь моаи на платформе Аху-Акиви, остров Пасхи, Чили"
         intendedSlot: "itinerary:day-9"
   - day: 10
     title: "Рано-Као и Оронго"
@@ -288,8 +288,8 @@ itinerary:
       
       Возвращение в Ханга-Роа, трансфер в аэропорт, перелет в Сантьяго и трансфер после прибытия.
     images:
-      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-11-enhanced-20261006.webp
-        alt: "Рано-Рараку, Тонгарики и Анакена"
+      - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-11-generated-20261008-v1.webp
+        alt: "Моаи на склонах каменоломни Рано-Рараку, остров Пасхи, Чили"
         intendedSlot: "itinerary:day-11"
   - day: 12
     title: "Буэнос-Айрес и вылет домой"

@@ -85,8 +85,8 @@ itinerary:
       
       Этот район является биосферным заповедником и воротами к Северному Ледяному полю Патагонии. Помимо самого парка, маршрут проходит через окружающие фьорды, каналы, острова и бухты.
     images:
-      - src: /media/tours/issledovanie-argentiny/itinerary-day-5-enhanced-20261006.webp
-        alt: "Национальный парк Сан-Рафаэль"
+      - src: /media/tours/patagoniya-i-chilijskie-fordy/itinerary-day-03-generated-20261008-v1.webp
+        alt: "Ледник Сан-Рафаэль и лагуна в Чилийской Патагонии"
         intendedSlot: "itinerary:day-3"
   - day: 4
     title: "День в море, залив Пеньяс"
@@ -142,8 +142,8 @@ itinerary:
       
       Маршрут включает побережье морского парка Франсиско Колоане, охраняемого места кормления китов. Возможны встречи с горбатыми китами или сейвалами, а также с дельфинами, морскими львами, пингвинами, альбатросами и буревестниками.
     images:
-      - src: /media/tours/issledovanie-argentiny/itinerary-day-5-enhanced-20261006.webp
-        alt: "Пролив Магеллана и Огненная Земля"
+      - src: /media/tours/patagoniya-i-chilijskie-fordy/itinerary-day-07-generated-20261008-v1.webp
+        alt: "Горбатый кит в морском парке Франсиско Колоане, Чили"
         intendedSlot: "itinerary:day-7"
   - day: 8
     title: "Пролив Бигль и фьорд Гарибальди"

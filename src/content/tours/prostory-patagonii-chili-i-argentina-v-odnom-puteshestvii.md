@@ -206,8 +206,8 @@ itinerary:
       
       Возвращение в отель и ночь в Пуэрто-Наталесе.
     images:
-      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-10-enhanced-20261006.webp
-        alt: "Национальный парк Торрес-дель-Пайне"
+      - src: /media/tours/prostory-patagonii-chili-i-argentina-v-odnom-puteshestvii/itinerary-day-06-generated-20261008-v1.webp
+        alt: "Водопад Сальто-Гранде и горы Торрес-дель-Пайне, Чили"
         intendedSlot: "itinerary:day-6"
   - day: 7
     title: "Пуэрто-Наталес - Сантьяго-де-Чили"

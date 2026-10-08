@@ -69,8 +69,8 @@ itinerary:
 
     После экскурсии возвращение в отель.
   images:
-  - src: /media/tours/brazil-gems-14d/itinerary/day-03-enhanced-20261001.webp
-    alt: Рио-де-Жанейро
+  - src: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
+    alt: Панорамы Корковаду и Сахарной головы в Рио-де-Жанейро
 - day: 4
   title: Рио-де-Жанейро - Фос-ду-Игуасу
   places:
@@ -97,8 +97,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: /media/tours/rio-de-janeiro-wedding/hero-enhanced-20260930.webp
-    alt: Рио-де-Жанейро
 - excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
@@ -172,8 +170,6 @@ itinerary:
   images:
   - src: /media/tours/braziliya-s-plyazhami/itinerary-day-8-enhanced-20261006.webp
     alt: Ресифи
-  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
-    alt: Бразилия с пляжами
 included:
 - Проживание в выбранных отелях или аналогичных.
 - Экскурсии по маршруту.

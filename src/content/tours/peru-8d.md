@@ -176,6 +176,10 @@ itinerary:
     places: ["Лима"]
     text: |-
       Завтрак. В назначенное время - трансфер в аэропорт к вылету домой.
+    images:
+      - src: /media/tours/peru-8d/itinerary-day-08-generated-20261008-v1.webp
+        alt: "Тихоокеанское побережье и набережная Мирафлореса, Лима, Перу"
+        intendedSlot: "itinerary:day-8"
   - excursionRef: excursion_lima_larco_museum_visit
     places: ["Лима"]
 included:

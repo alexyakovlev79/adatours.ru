@@ -58,9 +58,9 @@ itinerary:
     В 1979 году Антигуа была включена в список Всемирного наследия ЮНЕСКО. Сейчас это один из главных туристических центров Гватемалы.
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
-    alt: Антигуа-Гуатемала
+    alt: "Антигуа-Гуатемала"
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
+    alt: "Гватемала-Сити"
 - day: 2
   title: Антигуа - Панахачель
   places:
@@ -82,7 +82,7 @@ itinerary:
     Во второй половине дня трансфер в Панахачель. Дорога занимает около 1 часа.
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-2-enhanced-20261006.webp
-    alt: Антигуа-Гуатемала
+    alt: "Антигуа-Гуатемала"
 - day: 3
   title: Озеро Атитлан
   places:
@@ -103,7 +103,7 @@ itinerary:
     Вечером трансфер в Гватемала-Сити.
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
-    alt: Лаго де Атитлан
+    alt: "Лаго де Атитлан"
 - day: 4
   title: Гватемала-Сити - Флорес - Тикаль
   places:
@@ -125,9 +125,7 @@ itinerary:
     Тикаль — один из важнейших городов мира майя и место, где особенно хорошо видно сочетание истории и природы.
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
-    alt: Флорес
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
+    alt: "Флорес"
 - day: 5
   title: Якша - граница Белиза - Пайн-Ридж
   places:
@@ -151,6 +149,9 @@ itinerary:
     Лодж расположен на территории заповедника Mountain Pine Ridge Forest. В распоряжении гостей открытый бассейн, сад с экологически чистыми продуктами и 2 ресторана.
 
     Из бунгало и вилл открывается вид на реку. На территории есть аллея с орхидеями. По запросу сотрудники лоджа помогают организовать прогулки к ближайшему водопаду и пещерам.
+  images:
+  - src: /media/destinations/yaxha/hero-generated-20261008.webp
+    alt: "На фото: yaxha"
 - day: 6
   title: Караколь
   places:
@@ -169,6 +170,9 @@ itinerary:
     Более 100 церемониальных захоронений VI-VIII веков дали археологам образцы иероглифической письменности, рассказывающей о войне между Караколем и Тикалем.
 
     В окружающих лесах обитают тапиры, ягуары, оцелоты и множество птиц, включая редких оранжевогрудых соколов и орлов-гарпий.
+  images:
+  - src: /media/destinations/caracol/hero-generated-20261008.webp
+    alt: "На фото: caracol"
 - day: 7
   title: Кайо - Пещера каменного гроба - Белиз-Сити - Сан-Педро
   places:
@@ -191,10 +195,8 @@ itinerary:
 
     Здесь песчаные пляжи соседствуют с лагунами, мангровыми зарослями, тропической саванной и бирюзовой водой Карибского моря.
   images:
-  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
-    alt: Белиз-сити
   - src: /media/destinations/kajo/hero-enhanced-20261002.webp
-    alt: Кайо
+    alt: "Кайо"
 - day: 8
   title: Сан-Педро и морской заповедник Хол-Чан
   places:
@@ -208,6 +210,9 @@ itinerary:
     Еще одна известная природная достопримечательность — Большая голубая дыра, круглая известняковая воронка глубиной до 122 м. В ее водах встречаются разные виды акул, включая рыбу-молот, а также коралловые рыбы.
 
     Глубина Хол-Чан достигает примерно 30 м. Здесь отмечено более 150 видов экзотических рыб и 40 разновидностей кораллов. Также встречаются морские черепахи и акулы.
+  images:
+  - src: /media/destinations/hol-chan-marine-reserve/hero-generated-20261008.webp
+    alt: "На фото: holChan"
 - day: 9
   title: Сан-Педро, Амбергрис-Кайе
   places:
@@ -219,7 +224,7 @@ itinerary:
     Во время выхода в море можно увидеть множество тропических рыб, скатов, морских черепах и кораллов.
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-9-enhanced-20261006.webp
-    alt: Амбергрис-Кайе
+    alt: "Амбергрис-Кайе"
 - day: 10
   title: Сан-Педро - Голубая дыра - Белиз-Сити
   places:
@@ -235,7 +240,7 @@ itinerary:
     После обеда трансфер на водном такси в Белиз-Сити, затем трансфер в отель.
   images:
   - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
-    alt: Белиз-сити
+    alt: "Белиз-сити"
 - excursionRef: excursion_belize_blue_hole_scenic_flight
   places: []
 - day: 11
@@ -253,8 +258,8 @@ itinerary:
 
     После экскурсии трансфер в международный аэропорт Белиза к вылету домой.
   images:
-  - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
-    alt: Белиз-сити
+  - src: /media/destinations/beliz-siti/gallery-1-enhanced-20261002.webp
+    alt: "На фото: belizeCity"
 included:
 - проживание в отелях 3-4*, стандартный номер;
 - весь наземный транспорт во время экскурсий и трансферов по программе;

@@ -80,10 +80,11 @@ for(const file of readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.ht
   assert.ok(form.includes('/privacy/'),`${file}: privacy link`);
   assert.ok(form.includes('/personal-data/'),`${file}: personal data link`);
   assert.ok(!form.includes('onsubmit="return false;"'),`${file}: old submission blocker removed`);
-  const modalCtas=[...html.matchAll(/<a\\b[^>]*data-lead-modal="true"[^>]*>/g)].map(match=>match[0]);
-  for(const tag of modalCtas) assert.ok(/href="#request"/.test(tag),`${file}: modal CTA fallback stays on the same page`);
+  const modalCtas=[...html.matchAll(/<a\b[^>]*data-lead-modal="true"[^>]*>/g)].map(match=>match[0]);
   const footerCta=html.match(/<a\b[^>]*class="footer__request"[^>]*>/)?.[0]??'';
   assert.ok(/data-lead-modal="true"/.test(footerCta)&&/href="[^"]*\/contacts\/"/.test(footerCta),`${file}: footer CTA opens modal with contacts fallback`);
+  assert.ok(modalCtas.includes(footerCta),`${file}: footer CTA is a modal trigger`);
+  for(const tag of modalCtas.filter(tag=>tag!==footerCta)) assert.ok(/href="#request"/.test(tag),`${file}: other modal CTA fallback stays on the same page`);
   pages++;
 }
 assert.ok(pages>700,'all real site pages are checked, not just a handful of examples');

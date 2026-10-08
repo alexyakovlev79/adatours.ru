@@ -179,7 +179,7 @@ itinerary:
 
     После экскурсии - трансфер в аэропорт и регистрация на рейс в Москву. Так маршрут заканчивается уже в городской части Венесуэлы после нескольких дней в джунглях, на реках, у водопадов и на островах Карибского моря.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas1_4.png
+  - src: /media/tours/skazki-venesuelskogo-lesa/archive-33-src-enhanced-20261008.webp
     alt: Каракас
 - excursionRef: excursion_venezuela_avila_humboldt_visit
   places: []
@@ -212,7 +212,7 @@ priceFrom: 5920
 currency: USD
 priceNote: $5920
 hero:
-  src: https://brasiltours.ru/image/catalog/product/f/i/file_77_6.png
+  src: /media/tours/skazki-venesuelskogo-lesa/archive-34-src-enhanced-20261008.webp
   alt: Сказки Венесуэльского  Леса
 routeCountries:
 - country_venezuela

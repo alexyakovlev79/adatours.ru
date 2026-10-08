@@ -242,7 +242,7 @@ itinerary:
       
       После длинной природной части маршрута Сантьяго возвращает вас к большому городу и совсем другому темпу.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/arg-patogonia1.jpg
+      - src: /media/tours/argentina-chili-prekrasnaya-patagoniya/archive-35-src-enhanced-20261008.webp
         alt: "Патагония перед перелетом в Сантьяго"
         intendedSlot: "itinerary:day-11"
   - day: 12

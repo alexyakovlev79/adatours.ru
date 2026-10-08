@@ -46,7 +46,7 @@ dates:
   - "10 февраля - 27 февраля 2026"
   - "13 февраля - 2 марта 2026"
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/the-summit-of-aconcagua.jpg
+  src: /media/tours/aconcagua-trek-ru/archive-36-src-enhanced-20261008.webp
   alt: "Вершина Аконкагуа"
 gallery: []
 featured: false
@@ -97,7 +97,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка либо Dorm Dome.  
       **Питание:** завтрак, упакованный обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/risunok2.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-37-src-enhanced-20261008.webp
         alt: "Маршрут к Конфлуенсии"
         intendedSlot: "itinerary:day-3"
   - day: 4
@@ -113,7 +113,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка либо Dorm Dome.  
       **Питание:** завтрак, упакованный обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/photo-2024-01-10-14-08-58.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-38-src-enhanced-20261008.webp
         alt: "Аконкагуа и Плаза Франсия"
         intendedSlot: "itinerary:day-4"
   - day: 5
@@ -128,7 +128,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка либо Dorm Dome.  
       **Питание:** завтрак, упакованный обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/risunok5.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-39-src-enhanced-20261008.webp
         alt: "Плаза-де-Мулас"
         intendedSlot: "itinerary:day-5"
   - day: 6
@@ -141,7 +141,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка либо Dorm Dome.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/mendoza-puente-del-inca-en-invierno.JPG
+      - src: /media/tours/aconcagua-trek-ru/archive-40-src-enhanced-20261008.webp
         alt: "Горный лагерь Аконкагуа"
         intendedSlot: "itinerary:day-6"
   - day: 7
@@ -243,7 +243,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/the-summit-of-aconcagua.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-36-src-enhanced-20261008.webp
         alt: "Вершина Аконкагуа"
         intendedSlot: "itinerary:day-13"
   - day: 14
@@ -256,7 +256,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/risunok2.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-37-src-enhanced-20261008.webp
         alt: "Аконкагуа, резервный день"
         intendedSlot: "itinerary:day-14"
   - day: 15
@@ -269,7 +269,7 @@ itinerary:
       **Проживание:** двух- или трехместная палатка.  
       **Питание:** завтрак, обед, ужин.
     images:
-      - src: https://brasiltours.ru/image/countries/argentina/new-photos/risunok2.jpg
+      - src: /media/tours/aconcagua-trek-ru/archive-37-src-enhanced-20261008.webp
         alt: "Аконкагуа, резервный день"
         intendedSlot: "itinerary:day-15"
   - day: 16

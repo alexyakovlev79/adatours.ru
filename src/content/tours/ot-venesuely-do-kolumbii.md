@@ -45,7 +45,7 @@ itinerary:
 
     Обед пройдет в традиционном ресторане и оплачивается отдельно. После экскурсии возвращение в отель и ночь в Каракасе.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas2_2.png
+  - src: /media/tours/ot-venesuely-do-kolumbii/archive-31-src-enhanced-20261008.webp
     alt: Каракас
 - day: 2
   title: ', вторник. Архипелаг Лос-Рокес'
@@ -71,7 +71,7 @@ itinerary:
 
     **Питание:** завтрак, ланч-бокс.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas2_2.png
+  - src: /media/tours/ot-venesuely-do-kolumbii/archive-31-src-enhanced-20261008.webp
     alt: Каракас
 - day: 4
   title: ', четверг. Канайма: остров Анатолия, водопады Сапо и Ача'
@@ -129,7 +129,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas2_2.png
+  - src: /media/tours/ot-venesuely-do-kolumbii/archive-31-src-enhanced-20261008.webp
     alt: Каракас
 - day: 8
   title: ', понедельник. Богота - долина Кокора - Саленто'
@@ -201,7 +201,7 @@ itinerary:
   images:
   - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Богота
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas2_2.png
+  - src: /media/tours/ot-venesuely-do-kolumbii/archive-31-src-enhanced-20261008.webp
     alt: Каракас
 included:
 - Проживание.
@@ -233,7 +233,7 @@ priceFrom: 6871
 currency: USD
 priceNote: $6871
 hero:
-  src: https://brasiltours.ru/image/countries/venezuela/venezuela-1680.jpg
+  src: /media/tours/ot-venesuely-do-kolumbii/archive-32-src-enhanced-20261008.webp
   alt: 'На фото: Национальный парк Моррокой в Венесуэле'
 routeCountries:
 - country_venezuela

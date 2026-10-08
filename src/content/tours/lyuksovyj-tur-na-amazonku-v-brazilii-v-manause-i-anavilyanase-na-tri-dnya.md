@@ -67,8 +67,6 @@ itinerary:
   images:
   - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-1-enhanced-20261006.webp
     alt: Mirante do Gavião лодж на Амазонке в Бразилии
-  - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/hero-enhanced-20261006.webp
-    alt: Пальмовые листья - отдых в Амазонии (Манаус) в Бразилии
 - day: 2
   title: Anavilhanas, местные общины и джунгли
   places:

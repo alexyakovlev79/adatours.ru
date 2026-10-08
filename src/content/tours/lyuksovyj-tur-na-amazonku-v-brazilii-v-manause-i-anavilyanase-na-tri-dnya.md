@@ -199,11 +199,6 @@ primaryThemes: ["theme_wildlife"]
 themes: []
 ---
 
-**Длительность:** 3 дня / 2 ночи
-
-**Маршрут:** Манаус - Rio Negro - Национальный парк Anavilhanas - Mirante do Gavião Amazon Lodge - Манаус
-
-**Стоимость:** $4270
 
 ## Главное в путешествии
 

@@ -297,9 +297,6 @@ primaryThemes: ["theme_culture","theme_wildlife"]
 themes: ["theme_gastronomy_wine","theme_beach"]
 ---
 
-**Длительность:** 10 дней / 9 ночей  
-**Маршрут:** Богота - Вилья-де-Лейва - Армения - Санта-Марта - Картахена  
-**Стоимость:** $2803
 
 ## Лучшее в туре
 

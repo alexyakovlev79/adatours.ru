@@ -227,6 +227,3 @@ primaryThemes: ["theme_culture"]
 themes: ["theme_gastronomy_wine","theme_wildlife"]
 ---
 
-**Длительность:** 9 дней / 8 ночей  
-**Маршрут:** Богота - Асиенда Колома - Медельин - Картахена  
-**Стоимость:** $3729

@@ -324,6 +324,3 @@ primaryThemes: ["theme_wildlife","theme_beach"]
 themes: ["theme_adventure","theme_culture"]
 ---
 
-**Длительность:** 13 дней / 12 ночей  
-**Маршрут:** Рио-де-Жанейро - Фоз-де-Игуасу - Пантанал - Бонито - Бузиос  
-**Стоимость:** $6326

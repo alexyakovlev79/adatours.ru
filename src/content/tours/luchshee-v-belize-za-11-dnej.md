@@ -170,6 +170,3 @@ primaryThemes: ["theme_adventure","theme_culture"]
 themes: ["theme_beach","theme_wildlife"]
 ---
 
-**Длительность:** 11 дней / 10 ночей  
-**Маршрут:** Западный Белиз - Каракол - Рио-Фрио - Рио-Он - Actun Tunichil Muknal - Пласенсия  
-**Стоимость:** $3636

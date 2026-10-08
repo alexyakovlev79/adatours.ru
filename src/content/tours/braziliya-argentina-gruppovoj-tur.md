@@ -69,8 +69,8 @@ itinerary:
 
     После спуска маршрут продолжается на автомобиле по старому центру Рио. Вы увидите исторические церкви, монастыри, главный кафедральный собор и здания колониального периода.
   images:
-  - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
-    alt: Статуя Христа и Корковадо
+  - src: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
+    alt: Панорамы Корковаду и Сахарной головы
 - day: 4
   title: Рио-де-Жанейро - Манаус
   places:
@@ -106,8 +106,8 @@ itinerary:
 
     В 20:00 начинается вечернее исследование береговой линии с прожекторами. Можно увидеть кайманов Тинга и Асу, а иногда ночных ястребов, змей и лягушек.
   images:
-  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    alt: Бразилия-Аргентина:групповой тур
+  - src: /media/destinations/manaus-amazonia/hero-enhanced-20261001.webp
+    alt: Амазония в Бразилии
 - day: 6
   title: Манаус - Сальвадор
   places:
@@ -122,8 +122,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
-  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    alt: Бразилия-Аргентина:групповой тур
 - day: 7
   title: Сальвадор
   places:
@@ -163,8 +161,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
-  - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
-    alt: Сальвадор
 - day: 10
   title: Бразильская сторона водопадов Игуасу
   places:
@@ -192,8 +188,6 @@ itinerary:
   images:
   - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
     alt: Буэнос-Айрес
-  - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
-    alt: Фоз-ду-Игуасу
 - day: 12
   title: Буэнос-Айрес
   places:
@@ -218,16 +212,16 @@ itinerary:
 
     Можно самостоятельно гулять по городу или заказать дополнительные экскурсии.
   images:
-  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
-    alt: Буэнос-Айрес
+  - src: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
+    alt: Буэнос-Айрес, Аргентина
 - day: 14
   title: Буэнос-Айрес
   places:
   - Буэнос-Айрес
   text: После завтрака трансфер в аэропорт для международного вылета домой.
   images:
-  - src: /media/tours/argentina-dlya-degustatorov-khoroshej-zhizni/itinerary-day-2-enhanced-20261006.webp
-    alt: Буэнос-Айрес
+  - src: /media/home/buenos-aires-enhanced-20260930.webp
+    alt: Улица Буэнос-Айреса
 included:
 - Проживание в выбранных отелях с завтраком или в аналогичных.
 - Групповые экскурсии с англоговорящим гидом.

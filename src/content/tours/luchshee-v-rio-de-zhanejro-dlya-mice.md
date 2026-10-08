@@ -233,6 +233,9 @@ itinerary:
 
 
     Далее международный вылет.'
+  image:
+    src: /media/destinations/destination_brazil_rio/rio-departure-bay-v2-generated-20261008.webp
+    alt: Залив Гуанабара в Рио-де-Жанейро
 included:
 - Экскурсии с русскоговорящим гидом.
 - Входные билеты.

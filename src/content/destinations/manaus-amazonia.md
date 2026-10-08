@@ -6,44 +6,46 @@ slug: manaus-amazon
 status: approved
 countryId: country_brazil
 destinationType: natural_area
-summary: >-
-  Манаус можно соединить с несколькими днями в джунглях Амазонии: театр Амазонас, встреча вод, лодж, лодочные маршруты, рыбалка, ночное сафари и природные программы.
+summary: 'Манаус можно соединить с несколькими днями в джунглях Амазонии: театр Амазонас, встреча вод, лодж, лодочные маршруты, рыбалка, ночное сафари и природные программы.'
 hero:
   src: /media/destinations/manaus-amazonia/hero-enhanced-20261001.webp
   alt: Амазония в Бразилии
 gallery:
-  - src: /media/home/amazon-enhanced-20260930.webp
-    alt: Река и тропический лес Амазонии
+- src: /media/home/amazon-enhanced-20260930.webp
+  alt: Река и тропический лес Амазонии
+- src: /media/destinations/destination_brazil_amazon/amazon-igapo-generated-20261008.webp
+  alt: Затопленный лес игапо в Амазонии
 relatedDestinations:
-  - destination_brazil_rio
-  - destination_brazil_pantanal
+- destination_brazil_rio
+- destination_brazil_pantanal
 featuredTours:
-  - tour_luxury_brazil_11d
+- tour_luxury_brazil_11d
 featuredExcursions: []
 facts:
-  - value: XIX
-    label: век резинового бума Манауса
-  - value: Амазонас
-    label: исторический театр города
-  - value: Встреча вод
-    label: Негро и Амазонка
-  - value: Лодж
-    label: база для программы в джунглях
+- value: XIX
+  label: век резинового бума Манауса
+- value: Амазонас
+  label: исторический театр города
+- value: Встреча вод
+  label: Негро и Амазонка
+- value: Лодж
+  label: база для программы в джунглях
 featureBands:
-  - eyebrow: Манаус
-    title: Город перед джунглями
-    text: >-
-      В Манаусе сохранился театр Амазонас, связанный с периодом резинового бума. Город становится отправной точкой для дальнейшей природной программы.
-    image: /media/destinations/manaus-amazonia/hero-enhanced-20261001.webp
-  - eyebrow: Амазония
-    title: Встреча вод и жизнь на реке
-    text: >-
-      Одна из главных природных точек рядом с Манаусом – встреча темных вод Рио-Негро и более светлых вод Амазонки. Дальше путешествие продолжается на лодках и в джунглях.
-    image: /media/home/amazon-enhanced-20260930.webp
+- eyebrow: Манаус
+  title: Город перед джунглями
+  text: В Манаусе сохранился театр Амазонас, связанный с периодом резинового бума. Город становится отправной точкой для дальнейшей природной программы.
+  image: /media/destinations/manaus-amazonia/hero-enhanced-20261001.webp
+- eyebrow: Амазония
+  title: Встреча вод и жизнь на реке
+  text: Одна из главных природных точек рядом с Манаусом – встреча темных вод Рио-Негро и более светлых вод Амазонки. Дальше путешествие продолжается на лодках и в джунглях.
+  image: /media/home/amazon-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-brazilskuyu-amazonku-i-v-gorod-manaus
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-na-brazilskuyu-amazonku-i-v-gorod-manaus__791a2ef7.md
 updatedAt: 2026-09-24
-themes: ["theme_wildlife","theme_fishing","theme_culture"]
+themes:
+- theme_wildlife
+- theme_fishing
+- theme_culture
 ---
 
 Манаус вырос в XIX веке во время резинового бума. Один из самых заметных памятников этого периода – театр Амазонас с неоклассической архитектурой и цветным куполом.

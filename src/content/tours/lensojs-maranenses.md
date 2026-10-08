@@ -164,6 +164,9 @@ itinerary:
 
 
     На этом программа заканчивается.'
+  image:
+    src: /media/destinations/destination_brazil_sao_luis/sao-luis-departure-generated-20261008.webp
+    alt: Исторический центр Сан-Луиса
 included:
 - Проживание в указанных или аналогичных отелях.
 - Завтраки в отелях.

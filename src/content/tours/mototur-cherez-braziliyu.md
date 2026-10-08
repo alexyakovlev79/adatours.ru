@@ -142,12 +142,18 @@ itinerary:
 
 
     **Примерное расстояние:** 320 км.'
+  image:
+    src: /media/destinations/destination_brazil_tiradentis/destination_brazil_tiradentis-generated-20261008.webp
+    alt: Тирадентис - Бразилия
 - day: 10
   title: Капитолио
   places:
   - Капитолио
   - Озеро Фурнаш
   text: Лодочная прогулка по водоему Фурнаш. Во время экскурсии вы увидите каньоны и сможете поплавать рядом с водопадами. После нескольких длинных дорожных дней этот этап проходит без большого мото-переезда и целиком посвящен природным видам Капитолио.
+  image:
+    src: /media/destinations/destination_brazil_kapitolio/destination_brazil_kapitolio-generated-20261008.webp
+    alt: Капитолио - Бразилия
 - day: 11
   title: Капитолио - Сан-Паулу
   places:
@@ -167,6 +173,9 @@ itinerary:
 
 
     Дополнительные сутки проживания при необходимости оплачиваются отдельно.'
+  image:
+    src: /media/destinations/destination_brazil_sao_paulo/sao-paulo-departure-generated-20261008.webp
+    alt: Городская улица Сан-Паулу
 included:
 - Проживание в отелях категории 3-4* по маршруту, размещение с 2 раздельными кроватями, завтраки.
 - Экскурсии.

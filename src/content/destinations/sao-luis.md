@@ -6,30 +6,32 @@ slug: sao-luis
 status: approved
 countryId: country_brazil
 destinationType: city
-summary: >-
-  Сан-Луис, столица штата Мараньян, подходит для культурной остановки перед Ленсойс-Мараньенсес: исторический центр UNESCO, колониальная архитектура, фасады с азулежу, рынки и атлантическое побережье.
+summary: 'Сан-Луис, столица штата Мараньян, подходит для культурной остановки перед Ленсойс-Мараньенсес: исторический центр UNESCO, колониальная архитектура, фасады с азулежу, рынки и атлантическое побережье.'
 hero:
   src: /media/destinations/sao-luis/hero-enhanced-20261001.webp
   alt: Сан-Луис в штате Мараньян, Бразилия
-gallery: []
+gallery:
+- src: /media/destinations/destination_brazil_sao_luis/sao-luis-departure-generated-20261008.webp
+  alt: Исторический центр Сан-Луиса
 relatedDestinations:
-  - destination_brazil_lencois_maranhenses
+- destination_brazil_lencois_maranhenses
 featuredTours: []
 featuredExcursions: []
 facts:
-  - value: UNESCO 1997
-    label: исторический центр в списке Всемирного наследия
-  - value: Азулежу
-    label: характерная плитка на старых фасадах
-  - value: Мараньян
-    label: столица северо-восточного штата
-  - value: Ленсойс
-    label: удобная связка с национальным парком
+- value: UNESCO 1997
+  label: исторический центр в списке Всемирного наследия
+- value: Азулежу
+  label: характерная плитка на старых фасадах
+- value: Мараньян
+  label: столица северо-восточного штата
+- value: Ленсойс
+  label: удобная связка с национальным парком
 featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-luis-maranyan-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-san-luis-maranyan-braziliya__3266825b.md
 updatedAt: 2026-09-24
-themes: ["theme_culture"]
+themes:
+- theme_culture
 ---
 
 Сан-Луис добавляет к природному маршруту по Мараньяну городскую и историческую часть. Старый центр сохранил улицы, площади и здания разных периодов, а многие фасады покрыты португальской керамической плиткой азулежу.

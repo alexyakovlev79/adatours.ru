@@ -84,11 +84,17 @@ itinerary:
 
 
     Детям важно внимательно слушать объяснения гида о ядовитых и неядовитых растениях.'
+  image:
+    src: /media/destinations/destination_brazil_amazon/amazon-igapo-generated-20261008.webp
+    alt: Затопленный лес игапо в Амазонии
 - day: 4
   title: Вылет
   places:
   - Манаус и Амазония
   text: После завтрака трансфер в аэропорт.
+  image:
+    src: /media/tours/manaus-4-dnya-3-nochi/manaus-airport-transfer-generated-20261008.webp
+    alt: 'Завершение поездки: трансфер в аэропорт Манауса'
 - excursionRef: excursion_amazon_pink_dolphin_observation
   places: []
 - excursionRef: excursion_source_vstrecha_rek

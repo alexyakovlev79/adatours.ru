@@ -169,7 +169,7 @@ itinerary:
     По прилете встреча и трансфер с водителем в отель.
   images:
   - src: /media/destinations/ushuajya/gallery-1-enhanced-20261002.webp
-    alt: На фото: город Ушуайя в Патагонии, Аргентина
+    alt: "На фото: город Ушуайя в Патагонии, Аргентина"
 - day: 8
   title: Аргентинская сторона водопадов Игуасу
   places:
@@ -190,7 +190,7 @@ itinerary:
     После экскурсии возвращение в отель.
   images:
   - src: /media/destinations/puerto-iguasu/gallery-2-enhanced-20261002.webp
-    alt: на фото: Водопады Игуасу
+    alt: "на фото: Водопады Игуасу"
 - day: 9
   title: Бразильская сторона Игуасу - Рио-де-Жанейро
   places:

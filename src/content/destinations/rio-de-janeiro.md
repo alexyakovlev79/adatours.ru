@@ -5,52 +5,58 @@ name: Рио-де-Жанейро
 slug: rio-de-janeiro
 status: approved
 searchAliases:
-  - Рио
-  - Rio
-  - Rio de Janeiro
-  - Рио де Жанейро
+- Рио
+- Rio
+- Rio de Janeiro
+- Рио де Жанейро
 countryId: country_brazil
 destinationType: city
-summary: >-
-  Рио-де-Жанейро можно сделать поездкой на 3–7 дней или первой частью большого маршрута по Бразилии: Корковаду, Сахарная голова, исторический центр, пляжи, Санта-Тереза, Лапа и свободное время.
+summary: 'Рио-де-Жанейро можно сделать поездкой на 3–7 дней или первой частью большого маршрута по Бразилии: Корковаду, Сахарная голова, исторический центр, пляжи, Санта-Тереза, Лапа и свободное время.'
 hero:
   src: /media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp
   alt: Рио-де-Жанейро вечером
 gallery:
-  - src: /media/catalog/tury/hero-enhanced-20260930.webp
-    alt: Панорама Рио-де-Жанейро
+- src: /media/catalog/tury/hero-enhanced-20260930.webp
+  alt: Панорама Рио-де-Жанейро
+- src: /media/destinations/destination_brazil_rio/rio-free-street-generated-20261008.webp
+  alt: Улица Рио-де-Жанейро с кафе и деревьями
+- src: /media/destinations/destination_brazil_rio/rio-free-beach-v2-generated-20261008.webp
+  alt: Набережная и пляж Копакабана в Рио-де-Жанейро
+- src: /media/destinations/destination_brazil_rio/rio-departure-bay-v2-generated-20261008.webp
+  alt: Залив Гуанабара в Рио-де-Жанейро
 relatedDestinations:
-  - destination_brazil_iguacu
-  - destination_brazil_amazon
-  - destination_brazil_pantanal
+- destination_brazil_iguacu
+- destination_brazil_amazon
+- destination_brazil_pantanal
 featuredTours:
-  - tour_luxury_brazil_11d
-  - tour_brazil_south_12d
+- tour_luxury_brazil_11d
+- tour_brazil_south_12d
 featuredExcursions: []
 facts:
-  - value: 3–7
-    label: дней на городской маршрут
-  - value: Карнавал
-    label: отдельный формат поездки
-  - value: Новый год
-    label: отдельная программа
-  - value: VIP
-    label: приватный формат
+- value: 3–7
+  label: дней на городской маршрут
+- value: Карнавал
+  label: отдельный формат поездки
+- value: Новый год
+  label: отдельная программа
+- value: VIP
+  label: приватный формат
 featureBands:
-  - eyebrow: Панорамы
-    title: Корковаду и Сахарная голова
-    text: >-
-      Корковаду и Сахарная голова дают два разных взгляда на город, бухты, горы и океан. Их можно соединить с историческим центром, пляжами и Санта-Терезой.
-    image: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
-  - eyebrow: Вечер
-    title: Лапа и культурная жизнь Рио
-    text: >-
-      После дневных экскурсий программу можно продолжить Лапой, самбой и форро, концертом или спокойным вечером у океана.
-    image: /media/home/rio-night-enhanced-20260930.webp
+- eyebrow: Панорамы
+  title: Корковаду и Сахарная голова
+  text: Корковаду и Сахарная голова дают два разных взгляда на город, бухты, горы и океан. Их можно соединить с историческим центром, пляжами и Санта-Терезой.
+  image: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
+- eyebrow: Вечер
+  title: Лапа и культурная жизнь Рио
+  text: После дневных экскурсий программу можно продолжить Лапой, самбой и форро, концертом или спокойным вечером у океана.
+  image: /media/home/rio-night-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-rio-de-zhanejro-v-brazilii__7f36c92d.md
 updatedAt: 2026-09-25
-themes: ["theme_culture","theme_beach","theme_events"]
+themes:
+- theme_culture
+- theme_beach
+- theme_events
 ---
 
 Ada Tours организует поездки в Рио-де-Жанейро от короткого знакомства с городом до полноценного индивидуального тура. В программу можно включить отель, встречу в аэропорту, частного или группового гида, трансферы, билеты, морскую прогулку, вертолет и дополнительные дни в других регионах Бразилии.

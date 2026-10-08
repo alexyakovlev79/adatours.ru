@@ -48,8 +48,8 @@ itinerary:
 
     После спуска поездка продолжается в центральных районах старого Рио. Вы увидите старинные церкви, монастыри и колониальные здания. Если позволит время, программа включает Кафедральный собор Сан-Себастьян и лестницу Селарона.
   images:
-  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
-    alt: Рио-де-Жанейро
+  - src: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
+    alt: Панорамы Корковаду и Сахарной головы
 - day: 3
   title: Корковадо и Христос Искупитель
   places:
@@ -75,8 +75,6 @@ itinerary:
   images:
   - src: /media/tours/vkusy-brazilii/itinerary-day-4-enhanced-20261006.webp
     alt: Илья-Гранди
-  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
-    alt: Рио-де-Жанейро
 - day: 5
   title: Морская прогулка по Илья-Гранде
   places:
@@ -88,8 +86,8 @@ itinerary:
 
     День почти полностью проходит на воде. После насыщенной программы Рио здесь нет городских экскурсий: главными становятся море, пляжи и небольшие бухты Илья-Гранде.
   images:
-  - src: /media/tours/vkusy-brazilii/itinerary-day-4-enhanced-20261006.webp
-    alt: Илья-Гранди
+  - src: /media/destinations/ilha-grande/gallery-2-enhanced-20261001.webp
+    alt: Побережье и бухта острова Илья-Гранди
 - day: 6
   title: Илья-Гранде - Парати
   places:
@@ -104,8 +102,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
     alt: Парати
-  - src: /media/tours/vkusy-brazilii/itinerary-day-4-enhanced-20261006.webp
-    alt: Илья-Гранди
 - day: 7
   title: Исторический центр Парати
   places:
@@ -117,8 +113,8 @@ itinerary:
 
     Город давно привлекает художников, скульпторов и других представителей творческой среды. Их сюда приводят историческая застройка и природа окрестностей. Парати признан ЮНЕСКО одним из важнейших памятников португальской колониальной архитектуры. Исторический центр воспринимается как большой музей под открытым небом, где обычная прогулка проходит среди домов и улиц, сохранивших облик прошлых столетий.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
-    alt: Парати
+  - src: /media/destinations/paraty/hero-enhanced-20261001.webp
+    alt: Исторический центр Парати в Бразилии
 - day: 8
   title: Парати - Рио-де-Жанейро
   places:
@@ -126,10 +122,8 @@ itinerary:
   - Парати
   text: Завтрак. Трансфер в аэропорт Рио-де-Жанейро для международного перелета.
   images:
-  - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-11-enhanced-20261001.webp
-    alt: Парати
-  - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
-    alt: Рио-де-Жанейро
+  - src: /media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp
+    alt: Рио-де-Жанейро вечером
 included:
 - Проживание в отелях с завтраками
 - Трансферы с водителем

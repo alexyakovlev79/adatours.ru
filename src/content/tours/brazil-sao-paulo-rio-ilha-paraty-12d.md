@@ -149,8 +149,8 @@ itinerary:
       
       На острове нет автомобилей. Основная часть территории покрыта тропической растительностью, а вдоль побережья находятся пляжи и небольшие бухты. Передвижение строится вокруг лодок и пеших маршрутов, поэтому после Рио темп путешествия заметно меняется. Здесь меньше городского шума, а основными ориентирами становятся причалы, лесные склоны, пляжи и вода между островами.
     images:
-      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
-        alt: "Рио-де-Жанейро перед переездом на Илья-Гранди"
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary-day-08-generated-20261008-v1.webp
+        alt: "Прибытие на Илья-Гранди: лодка и причал в бухте Абраан, Бразилия"
         intendedSlot: "itinerary:day-8"
   - day: 9
     title: "Илья-Гранде"
@@ -210,8 +210,8 @@ itinerary:
     text: |-
       Завтрак и трансфер в аэропорт Сан-Паулу для международного перелета.
     images:
-      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
-        alt: "Сан-Паулу, Бразилия"
+      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary-day-12-generated-20261008-v1.webp
+        alt: "Самолёт у терминала аэропорта Гуарульюс, Сан-Паулу, Бразилия"
         intendedSlot: "itinerary:day-12"
 included:
   - Проживание в отелях на базе завтраков.

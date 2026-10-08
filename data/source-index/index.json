@@ -2,7 +2,7 @@
   "metadata": {
     "schemaVersion": 1,
     "preparedAt": "2026-10-02",
-    "entityCount": 793,
+    "entityCount": 800,
     "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
     "sheet": {
       "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -37,20 +37,20 @@
     "counts": {
       "types": {
         "country": 24,
-        "destination": 238,
+        "destination": 245,
         "tour": 342,
         "excursion": 189
       },
       "media": {
         "ready": 761,
         "existing_enhanced_preserved": 10,
-        "generated": 1,
+        "generated": 8,
         "provided_originals": 21
       },
       "rawDonorUrls": 694,
       "activeTypes": {
         "country": 24,
-        "destination": 238,
+        "destination": 245,
         "tour": 298,
         "excursion": 188
       },
@@ -1167,7 +1167,8 @@
         "destination_argentina_puerto_iguasu",
         "destination_brazil_kongonyas",
         "destination_brazil_mariana",
-        "destination_brazil_petropolis"
+        "destination_brazil_petropolis",
+        "destination_brazil_inhotim"
       ],
       "sourceUrl": "https://brasiltours.ru/v-poiskakh-dragotsennostej",
       "entryPath": "data/source-index/entries/tour_brazil_gems_14d.json",
@@ -6086,7 +6087,10 @@
         "destination_argentina_buenos_aires",
         "destination_chile_santyago_de_chili",
         "destination_chile_ostrov_pashi",
-        "destination_chile_puerto_natales_torres_del_pajne"
+        "destination_chile_puerto_natales_torres_del_pajne",
+        "destination_chile_lednik_grej",
+        "destination_chile_ahu_akivi",
+        "destination_chile_vulkan_rano_raraku"
       ],
       "sourceUrl": "https://brasiltours.ru/programma-dlya-aktivnykh-lyudej",
       "entryPath": "data/source-index/entries/tour_source_programma_dlya_aktivnykh_lyudej.json",
@@ -25670,6 +25674,187 @@
         "theme_wildlife",
         "theme_adventure"
       ]
+    },
+    {
+      "id": "destination_argentina_el_chalten",
+      "type": "destination",
+      "name": "Эль-Чалтен",
+      "url": "/argentina/place/el-chalten/",
+      "slug": "el-chalten",
+      "contentPath": "src/content/destinations/el-chalten.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_el_chalten"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "El Chaltén",
+        "Эль Чальтен"
+      ],
+      "legacyUrls": [
+        "/napravleniya/argentina/el-chalten/"
+      ],
+      "themes": [
+        "theme_adventure",
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_argentina_el_chalten.json"
+    },
+    {
+      "id": "destination_chile_nacionalnyj_park_san_rafael",
+      "type": "destination",
+      "name": "Национальный парк Сан-Рафаэль",
+      "url": "/chile/place/laguna-san-rafael-national-park/",
+      "slug": "laguna-san-rafael-national-park",
+      "contentPath": "src/content/destinations/laguna-san-rafael-national-park.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_nacionalnyj_park_san_rafael"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "nacionalnyj-park-san-rafael"
+      ],
+      "legacyUrls": [
+        "/chili/place/nacionalnyj-park-san-rafael/",
+        "/napravleniya/chili/nacionalnyj-park-san-rafael/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_nacionalnyj_park_san_rafael.json"
+    },
+    {
+      "id": "destination_chile_morskoj_park_fransisko_koloane",
+      "type": "destination",
+      "name": "Морской парк Франсиско Колоане",
+      "url": "/chile/place/francisco-coloane-marine-park/",
+      "slug": "francisco-coloane-marine-park",
+      "contentPath": "src/content/destinations/francisco-coloane-marine-park.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_morskoj_park_fransisko_koloane"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "Франсиско Колоане",
+        "morskoj-park-fransisko-koloane"
+      ],
+      "legacyUrls": [
+        "/chili/place/morskoj-park-fransisko-koloane/",
+        "/napravleniya/chili/morskoj-park-fransisko-koloane/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_morskoj_park_fransisko_koloane.json"
+    },
+    {
+      "id": "destination_chile_lednik_grej",
+      "type": "destination",
+      "name": "Ледник Грей",
+      "url": "/chile/place/grey-glacier/",
+      "slug": "grey-glacier",
+      "contentPath": "src/content/destinations/grey-glacier.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_lednik_grej"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "Glaciar Grey",
+        "lednik-grej"
+      ],
+      "legacyUrls": [
+        "/chili/place/lednik-grej/",
+        "/napravleniya/chili/lednik-grej/"
+      ],
+      "themes": [
+        "theme_wildlife"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_lednik_grej.json"
+    },
+    {
+      "id": "destination_chile_ahu_akivi",
+      "type": "destination",
+      "name": "Аху-Акиви",
+      "url": "/chile/place/ahu-akivi/",
+      "slug": "ahu-akivi",
+      "contentPath": "src/content/destinations/ahu-akivi.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_ahu_akivi"
+      ],
+      "sourceUrl": null,
+      "aliases": [],
+      "legacyUrls": [
+        "/chili/place/ahu-akivi/",
+        "/napravleniya/chili/ahu-akivi/"
+      ],
+      "themes": [
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_ahu_akivi.json"
+    },
+    {
+      "id": "destination_chile_vulkan_rano_raraku",
+      "type": "destination",
+      "name": "Вулкан Рано-Рараку",
+      "url": "/chile/place/rano-raraku-volcano/",
+      "slug": "rano-raraku-volcano",
+      "contentPath": "src/content/destinations/rano-raraku-volcano.md",
+      "countryIds": [
+        "country_chile"
+      ],
+      "destinationIds": [
+        "destination_chile_vulkan_rano_raraku"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "vulkan-rano-raraku"
+      ],
+      "legacyUrls": [
+        "/chili/place/vulkan-rano-raraku/",
+        "/napravleniya/chili/vulkan-rano-raraku/"
+      ],
+      "themes": [
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_chile_vulkan_rano_raraku.json"
+    },
+    {
+      "id": "destination_brazil_inhotim",
+      "type": "destination",
+      "name": "Иньотим",
+      "url": "/brazil/place/inhotim/",
+      "slug": "inhotim",
+      "contentPath": "src/content/destinations/inhotim.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_inhotim"
+      ],
+      "sourceUrl": null,
+      "aliases": [
+        "Inhotim",
+        "Инхотим"
+      ],
+      "legacyUrls": [],
+      "themes": [
+        "theme_culture"
+      ],
+      "entryPath": "data/source-index/entries/destination_brazil_inhotim.json"
     }
   ]
 }

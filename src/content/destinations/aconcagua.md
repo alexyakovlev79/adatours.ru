@@ -10,7 +10,27 @@ summary: "Аконкагуа - высочайшая вершина Южной А
 searchAliases: ["akonkagua"]
 themes: ["theme_adventure", "theme_wildlife"]
 hero: {"src": "/media/destinations/destination_argentina_akonkagua/original-01.jpg", "alt": "Аконкагуа"}
-gallery: [{"src": "/media/destinations/destination_argentina_akonkagua/original-02.jpg", "alt": "Аконкагуа"}, {"src": "/media/destinations/destination_argentina_akonkagua/original-03.jpg", "alt": "Аконкагуа"}, {"src": "/media/destinations/destination_argentina_akonkagua/original-04.jpg", "alt": "Аконкагуа"}]
+gallery:
+- src: /media/destinations/destination_argentina_akonkagua/original-02.jpg
+  alt: Аконкагуа
+- src: /media/destinations/destination_argentina_akonkagua/original-03.jpg
+  alt: Аконкагуа
+- src: /media/destinations/destination_argentina_akonkagua/original-04.jpg
+  alt: Аконкагуа
+- src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-05-generated-20261008-v1.webp
+  alt: Переход к базовому лагерю Пласа-де-Мулас, Аконкагуа, Аргентина
+- src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-06-generated-20261008-v1.webp
+  alt: Практика ходьбы в кошках у ледника Хорконес, Аконкагуа, Аргентина
+- src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-07-generated-20261008-v1.webp
+  alt: Акклиматизационный выход на пик Бонете, Аконкагуа, Аргентина
+- src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-10-generated-20261008-v1.webp
+  alt: Установка палаток в первом высотном лагере Канада, Аконкагуа, Аргентина
+- src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-11-generated-20261008-v1.webp
+  alt: Переход в лагерь Нидо-де-Кондорес, Аконкагуа, Аргентина
+- src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-15-generated-20261008-v1.webp
+  alt: Вершина Аконкагуа и панорама Анд, Аргентина
+- src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-17-generated-20261008-v1.webp
+  alt: Спуск по долине Хорконес с караваном мулов, Аконкагуа, Аргентина
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -30,3 +50,4 @@ updatedAt: "2026-10-08"
 Особое впечатление производит дорога к Аконкагуа, проходящая через высокогорные пейзажи Анд. По пути открываются виды на разноцветные скальные образования, заснеженные хребты и широкие долины, где чувствуется настоящий масштаб природы.
 
 Аконкагуа — это величие Анд, воплощённое в одной вершине. Место, где земля поднимается к небу, а каждый взгляд на горные просторы напоминает о силе природы и стремлении человека к новым горизонтам.
+

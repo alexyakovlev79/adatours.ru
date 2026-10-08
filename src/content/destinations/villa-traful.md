@@ -10,7 +10,13 @@ summary: "Вилья-Трафуль — небольшой горный посё
 searchAliases: ["vilya-traful"]
 themes: ["theme_wildlife", "theme_adventure"]
 hero: {"src": "/media/destinations/destination_argentina_vilya_traful/original-01.jpg", "alt": "Вилья-Трафуль"}
-gallery: [{"src": "/media/destinations/destination_argentina_vilya_traful/original-02.jpg", "alt": "Вилья-Трафуль"}, {"src": "/media/destinations/destination_argentina_vilya_traful/original-03.jpg", "alt": "Вилья-Трафуль"}]
+gallery:
+- src: /media/destinations/destination_argentina_vilya_traful/original-02.jpg
+  alt: Вилья-Трафуль
+- src: /media/destinations/destination_argentina_vilya_traful/original-03.jpg
+  alt: Вилья-Трафуль
+- src: /media/tours/vsya-argentina/itinerary-day-15-generated-20261008-v1.webp
+  alt: Озеро Трафуль и горы у Вилья-Трафуль на маршруте Большого кольца
 facts: []
 featureBands: []
 relatedDestinations: []
@@ -30,3 +36,4 @@ updatedAt: "2026-10-08"
 Сам посёлок сохраняет атмосферу уединённого патагонского убежища. Небольшие гостиницы, уютные домики, местные рестораны и неспешный уклад жизни позволяют почувствовать особый характер этого региона. Здесь нет суеты больших курортов — только шелест леса, свежесть горного воздуха и спокойствие озёрных пейзажей.
 
 Вилья-Трафуль — это Патагония, открывающаяся не спеша: мир кристальных озёр, вековых лесов и горных горизонтов, где каждый поворот дороги обещает новую встречу с природой.
+

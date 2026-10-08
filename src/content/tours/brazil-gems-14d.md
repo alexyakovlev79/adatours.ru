@@ -18,6 +18,7 @@ destinations:
   - destination_brazil_kongonyas
   - destination_brazil_mariana
   - destination_brazil_petropolis
+  - destination_brazil_inhotim
 audiences:
   - private
   - couples
@@ -356,3 +357,4 @@ themes: ["theme_wildlife"]
 ---
 
 Поездка сочетает большие города, колониальную архитектуру, историю золотой добычи, современное искусство, пляжный отдых и 2 стороны одного из главных природных объектов Южной Америки.
+

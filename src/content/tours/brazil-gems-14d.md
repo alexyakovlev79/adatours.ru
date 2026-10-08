@@ -187,8 +187,8 @@ itinerary:
       
       По прибытии встреча, трансфер и размещение в отеле.
     images:
-      - src: /media/tours/brazil-gems-14d/itinerary/day-04-enhanced-20261001.webp
-        alt: "Ору-Прету перед поездкой в Иньотим"
+      - src: /media/tours/brazil-gems-14d/itinerary-day-06-generated-20261008-v1.webp
+        alt: "Сады и озеро Иньотима, Брумадинью, Минас-Жерайс, Бразилия"
         intendedSlot: "itinerary:day-6"
   - day: 7
     title: "Салвадор - Прайя-ду-Форте"
@@ -234,8 +234,8 @@ itinerary:
       
       С июня по октябрь у побережья иногда видны киты.
     images:
-      - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
-        alt: "Прайя-ду-Форте, Бразилия"
+      - src: /media/tours/brazil-gems-14d/itinerary-day-09-generated-20261008-v1.webp
+        alt: "Морская черепаха в центре сохранения черепах, Прайя-ду-Форте, Баия"
         intendedSlot: "itinerary:day-9"
   - day: 10
     title: "Прайя-ду-Форте"
@@ -247,8 +247,8 @@ itinerary:
       
       Эти дни оставлены без жесткой экскурсионной программы, чтобы можно было отдыхать у океана, купаться и самостоятельно выбирать занятия.
     images:
-      - src: /media/tours/brazil-gems-14d/itinerary/day-08-enhanced-20261001.webp
-        alt: "Пляжный отдых в Прайя-ду-Форте"
+      - src: /media/tours/brazil-gems-14d/itinerary-day-10-generated-20261008-v1.webp
+        alt: "Улица рыбацкого посёлка Прайя-ду-Форте, Баия, Бразилия"
         intendedSlot: "itinerary:day-10"
   - day: 11
     title: "Прайя-ду-Форте - Салвадор - Фоз-ду-Игуасу"

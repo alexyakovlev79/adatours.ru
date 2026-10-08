@@ -347,8 +347,6 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
         name={anna.data.name}
         role={anna.data.role}
         photo={anna.data.photo}
-        href={'/team/' + anna.data.slug + '/'}
-        expertise={anna.data.expertise?.slice(0, 4)}
         eyebrow="Основатель Ada Tours"
       >
         <p>Анна Аванесова руководит Ada Tours и работает с индивидуальными, VIP и multi-country маршрутами, а также запросами туристических компаний и корпоративных групп.</p>
@@ -416,12 +414,13 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
 
   .home-interests { background: #f6f2eb; }
   .home-interest-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3.5vw, 46px); }
+  .home-interest-grid :global(.interest-card__meta) { text-decoration: underline; text-underline-offset: .22em; text-decoration-thickness: 1px; }
   .home-interest-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 44px; margin: clamp(32px, 5vw, 62px) 0 0; padding: 0; list-style: none; }
   .home-interest-list li { min-width: 0; border-top: 1px solid var(--color-line); }
   .home-interest-list a { display: grid; grid-template-columns: minmax(0, 1fr) auto 20px; align-items: center; gap: 12px; min-height: 86px; padding: 18px 0; }
   .home-interest-list a:hover { opacity: .65; }
   .home-interest-list a > span:first-child { font-family: var(--font-display); font-size: clamp(1.05rem, 1.55vw, 1.45rem); line-height: 1.2; }
-  .home-interest-list small { color: var(--color-muted); font-size: .75rem; white-space: nowrap; }
+  .home-interest-list small { color: var(--color-muted); font-size: .75rem; white-space: nowrap; text-decoration: underline; text-underline-offset: .22em; text-decoration-thickness: 1px; }
   .home-interest-list a > span:last-child { justify-self: end; }
 
   .home-tour-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
@@ -541,7 +540,8 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
       color: rgb(255 255 255 / 85%);
     }
     .home-interest-grid :global(.interest-card__text) { display: none; }
-    .home-interest-list { grid-template-columns: 1fr; }
+    .home-interest-list { grid-template-columns: 1fr; margin-top: 0; }
+    .home-interest-list li:first-child { border-top: 0; }
     .home-tour-grid, .home-discover__grid { grid-template-columns: 1fr; }
     .home-discover { padding-bottom: 0; }
     .home-services__grid { grid-template-columns: 1fr; grid-template-rows: auto; min-height: 0; }

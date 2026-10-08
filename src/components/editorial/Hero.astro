@@ -12,6 +12,7 @@ interface Props {
   ctaHref?: string;
   ctaLabel?: string;
   compact?: boolean;
+  tour?: boolean;
   meta?: string;
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
@@ -26,6 +27,7 @@ const {
   ctaHref = '/contacts/',
   ctaLabel = 'Оставить заявку',
   compact = false,
+  tour = false,
   meta,
   mediaStatus,
   replacementReason,
@@ -36,7 +38,7 @@ const resolvedImage = image ? withBase(image) : undefined;
 ---
 
 <section
-  class:list={['hero', { 'hero--compact': compact, 'hero--image': image }]}
+  class:list={['hero', { 'hero--compact': compact, 'hero--image': image, 'hero--tour': tour }]}
   data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
@@ -184,5 +186,105 @@ const resolvedImage = image ? withBase(image) : undefined;
     grid-template-columns: minmax(0, 1fr);
     justify-items: var(--image-text-inline);
     gap: 28px;
+  }
+
+  /* Tour-detail hero: an editorial title group centered within the photograph. */
+  .hero--tour .hero__overlay {
+    background:
+      linear-gradient(90deg, rgb(10 20 24 / 43%) 0%, rgb(10 20 24 / 19%) 60%, transparent 100%),
+      linear-gradient(180deg, rgb(15 16 14 / 12%) 0%, rgb(15 16 14 / 10%) 38%, rgb(15 16 14 / 39%) 100%);
+  }
+
+  .hero--tour[data-image-text-align="right"] .hero__overlay {
+    background:
+      linear-gradient(270deg, rgb(10 20 24 / 43%) 0%, rgb(10 20 24 / 19%) 60%, transparent 100%),
+      linear-gradient(180deg, rgb(15 16 14 / 12%) 0%, rgb(15 16 14 / 10%) 38%, rgb(15 16 14 / 39%) 100%);
+  }
+
+  .hero--tour .hero__content {
+    justify-content: center;
+    padding-top: calc(var(--header-h) + clamp(64px, 10svh, 112px));
+    padding-bottom: clamp(48px, 8svh, 92px);
+  }
+
+  .hero--tour .hero__head {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    margin-bottom: clamp(20px, 2.5vw, 30px);
+  }
+
+  .hero--tour .hero__head .eyebrow { margin: 0; }
+
+  .hero--tour .hero__meta {
+    padding-left: 18px;
+    border-left: 1px solid rgb(255 255 255 / 55%);
+    color: rgb(255 255 255 / 87%);
+    white-space: nowrap;
+  }
+
+  .hero--tour h1 {
+    max-width: 1000px;
+    margin: 0 0 clamp(28px, 3.8vw, 48px);
+    font-size: clamp(2.4rem, 4.6vw, 4.7rem);
+    line-height: 1.075;
+    text-wrap: balance;
+  }
+
+  .hero--tour .hero__bottom {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .hero--tour .hero__bottom :global(.cta) {
+    flex: 0 0 auto;
+    width: 238px;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero--tour[data-image-text-align] .hero__head {
+    justify-content: var(--image-text-flex);
+  }
+
+  .hero--tour[data-image-text-align] .hero__bottom {
+    display: flex;
+    width: 100%;
+    justify-content: var(--image-text-flex);
+  }
+
+  @media (max-width: 720px) {
+    .hero--tour .hero__content {
+      padding-top: calc(var(--header-h) + clamp(58px, 9svh, 90px));
+      padding-bottom: clamp(42px, 7svh, 64px);
+    }
+
+    .hero--tour .hero__head {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px 14px;
+      margin-bottom: 20px;
+    }
+
+    .hero--tour .hero__meta { padding-left: 14px; }
+
+    .hero--tour h1 {
+      max-width: 100%;
+      margin-bottom: 28px;
+      font-size: clamp(2.2rem, 9.5vw, 2.75rem);
+      line-height: 1.08;
+    }
+
+    .hero--tour .hero__overlay,
+    .hero--tour[data-image-text-align="right"] .hero__overlay {
+      background:
+        linear-gradient(90deg, rgb(10 20 24 / 30%), rgb(10 20 24 / 15%)),
+        linear-gradient(180deg, rgb(15 16 14 / 9%) 0%, rgb(15 16 14 / 36%) 48%, rgb(15 16 14 / 29%) 100%);
+    }
   }
 </style>

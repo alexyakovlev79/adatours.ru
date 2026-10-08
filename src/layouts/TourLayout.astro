@@ -94,10 +94,8 @@ const subtitleParts = [
   durationLabel,
   countryNames.join(', '),
 ].filter(Boolean);
-const heroMetaParts = [
-  durationLabel,
-  d.route.join(' · '),
-].filter(Boolean);
+// Keep the full itinerary in tour data; hero shows only the trip duration.
+const heroMeta = durationLabel || undefined;
 
 // Treat the lead as the opening paragraph of the description, not hero text.
 // Only move its display position; do not edit the authored body or deduplicate.
@@ -125,13 +123,14 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   {archived && <ArchiveNotice id={d.id} kind="tour" />}
 
   <Hero
+    tour
     eyebrow={archived ? "Архивный тур" : "Индивидуальный тур"}
     title={d.title}
     image={d.hero?.src}
     imageTextAlign={d.imageTextAlign}
     mediaStatus={d.hero?.status}
     replacementReason={d.hero?.replacementReason}
-    meta={heroMetaParts.length > 0 ? heroMetaParts.join(' · ') : undefined}
+    meta={heroMeta}
     ctaLabel={archived ? "Актуальные туры" : "Получить программу"}
     ctaHref={archived ? "/tours/" : "/contacts/"}
   />

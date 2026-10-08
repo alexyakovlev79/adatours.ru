@@ -122,7 +122,7 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: https://brasiltours.ru/image/countries/venezuela/canaima-national-park-angel-falls-1-waifu2x-photo-noise1-scale-small.jpg
+  - src: /media/tours/soedinennye-shtaty-venesuely/archive-11-src-enhanced-20261008.webp
     alt: Водопад Анхель
 - day: 9
   title: ', вторник. Каракас'
@@ -133,7 +133,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas2_1.png
+  - src: /media/tours/soedinennye-shtaty-venesuely/archive-12-src-enhanced-20261008.webp
     alt: Каракас
 - day: 10
   title: ', среда. Баринас - Лос-Льянос'
@@ -174,7 +174,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: https://brasiltours.ru/image/catalog/product/c/a/caracas_1.png
+  - src: /media/tours/soedinennye-shtaty-venesuely/archive-13-src-enhanced-20261008.webp
     alt: Каракас
   - src: /media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
     alt: Лос Льянос
@@ -209,7 +209,7 @@ priceFrom: 4748
 currency: USD
 priceNote: $4748
 hero:
-  src: https://brasiltours.ru/image/catalog/product/f/i/file_47_183.png
+  src: /media/tours/soedinennye-shtaty-venesuely/archive-14-src-enhanced-20261008.webp
   alt: Соединенные Штаты Венесуэлы
 routeCountries:
 - country_venezuela

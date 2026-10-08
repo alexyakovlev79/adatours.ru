@@ -77,7 +77,7 @@ itinerary:
 
     Вечером можно посетить ресторан морепродуктов Marius. Стоимость - $130 на человека.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/christ-the-redeemer.jpg
+  - src: /media/tours/parad-chempionov-v-rio-de-zhanejro-vodopady/archive-15-src-enhanced-20261008.webp
     alt: 'на фото: Статуя Христа на Корковадо'
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
@@ -186,7 +186,7 @@ priceFrom: 2123
 currency: USD
 priceNote: $2123
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/52720969382-0a2be09285-b-easy-resize-com.jpg
+  src: /media/tours/parad-chempionov-v-rio-de-zhanejro-vodopady/archive-16-src-enhanced-20261008.webp
   alt: 'на фото: Карнавал в Рио'
 routeCountries:
 - country_brazil

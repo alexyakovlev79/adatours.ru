@@ -34,7 +34,7 @@ itinerary:
 
     По дороге гид расскажет о городе, ответит на вопросы, поможет с обменом валюты или покупкой местной SIM-карты. Размещение в Belmond Copacabana Palace.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/new-pics/davi-costa-vtecdsflxsi-unsplash-2.jpg
+  - src: /media/tours/roskoshnyj-novyj-god-v-brazilii/archive-18-src-enhanced-20261008.webp
     alt: 'На фото: Вид на побережье Рио-де-Жанейро'
 - day: 2
   title: 31 декабря. Корковадо и новогодний бал
@@ -102,7 +102,7 @@ itinerary:
   images:
   - src: /media/tours/brazil-dunes-13d/itinerary/day-05-enhanced-20261001.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу, Бразилия'
-  - src: https://brasiltours.ru/image/new%20year%20in%20brazili.png
+  - src: /media/tours/roskoshnyj-novyj-god-v-brazilii/archive-19-src-enhanced-20261008.webp
     alt: 'На фото: Новогодняя ёлка в Рио-де-Жанейро'
 - day: 6
   title: 4 января. Бразильская сторона Игуасу
@@ -201,7 +201,7 @@ itinerary:
 
     Обед в плавучем ресторане. Затем трансфер в аэропорт Манауса и перелет в Сан-Паулу или Рио-де-Жанейро. Программу можно продолжить отдыхом на одном из пляжных курортов Бразилии.
   images:
-  - src: https://brasiltours.ru/image/countries/brazil/the-meeting-of-the-waters.jpg
+  - src: /media/tours/roskoshnyj-novyj-god-v-brazilii/archive-20-src-enhanced-20261008.webp
     alt: 'На фото: Река Риу-Негру в Бразилии'
 - excursionRef: excursion_source_plavanie_s_rozovymi_del_finami
   places: []

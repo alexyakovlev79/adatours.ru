@@ -256,7 +256,7 @@ priceFrom: 7620
 currency: USD
 priceNote: $7620
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/waterfall.jpg
+  src: /media/tours/roskoshnaya-braziliya-i-argentina/archive-17-src-enhanced-20261008.webp
   alt: Роскошная Бразилия и Аргентина
 routeCountries:
 - country_brazil

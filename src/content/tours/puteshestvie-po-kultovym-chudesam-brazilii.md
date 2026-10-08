@@ -149,7 +149,7 @@ priceFrom: 2343
 currency: USD
 priceNote: $2343
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/davi-costa-vtecdsflxsi-unsplash-2.jpg
+  src: /media/tours/roskoshnyj-novyj-god-v-brazilii/archive-18-src-enhanced-20261008.webp
   alt: Путешествие по культовым чудесам Бразилии
 routeCountries:
 - country_brazil

@@ -26,7 +26,7 @@ export const ORG = {
   },
 
   contacts: {
-    email: 'info@adatours.com',
+    email: 'info@adatours.ru',
     phoneDisplay: '+55 21 3435-6408',
     phoneHref: 'tel:+552134356408',
     whatsappDisplay: '+55 21 98848-4456',
@@ -128,7 +128,7 @@ export const ORG = {
   checkedAt: '2026-09-24',
 
   // Compatibility aliases used by existing global components.
-  email: 'info@adatours.com',
+  email: 'info@adatours.ru',
   phoneDisplay: '+55 21 3435-6408',
   phoneHref: 'tel:+552134356408',
   whatsappDisplay: '+55 21 98848-4456',

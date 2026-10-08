@@ -135,8 +135,8 @@ itinerary:
       - **Satyricon**, Ipanema - морепродукты
       - **Aprazivel**, Santa Teresa - бразильская кухня и открытые террасы с видом на город
   images:
-  - src: /media/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: лучшие пляжи Рио-де-Жанейро, Бразилия'
+  - src: /media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp
+    alt: Рио-де-Жанейро вечером
 - excursionRef: excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie
   places: []
 - excursionRef: excursion_source_rio_nochyu
@@ -164,10 +164,8 @@ itinerary:
 
     Для ужина подойдет ресторан **Itaipu** в Belmond Hotel das Cataratas с бразильской и европейской кухней.
   images:
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-6-enhanced-20261006.webp
-    alt: Водопады Игуасу с бразильской стороны, панорама каскадов и радуга в брызгах
-  - src: /media/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: лучшие пляжи Рио-де-Жанейро, Бразилия'
+  - src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
+    alt: Водопады Игуасу
 - day: 6
   title: Бразильская сторона Игуасу
   places:
@@ -215,10 +213,8 @@ itinerary:
 
     После экскурсии трансфер в аэропорт и перелет в Буэнос-Айрес. По прилете встреча и размещение в отеле.
   images:
-  - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-10-enhanced-20261006.webp
-    alt: 'На фото: столица Буэнос-Айрес, Аргентина'
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-6-enhanced-20261006.webp
-    alt: Водопады Игуасу с бразильской стороны, панорама каскадов и радуга в брызгах
+  - src: /media/destinations/puerto-iguasu/gallery-2-enhanced-20261002.webp
+    alt: на фото: Водопады Игуасу
 - day: 8
   title: Буэнос-Айрес и танго-шоу
   places:
@@ -291,8 +287,8 @@ itinerary:
 
     В назначенное время трансфер в аэропорт для международного перелета.
   images:
-  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-9-enhanced-20261006.webp
-    alt: 'На фото: столица Буэнос-Айрес, Аргентина'
+  - src: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
+    alt: Буэнос-Айрес, Аргентина
 included:
 - Проживание в отелях
 - Экскурсии с русскоговорящим гидом

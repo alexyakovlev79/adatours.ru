@@ -12,6 +12,8 @@ import Hero from '../components/editorial/Hero.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import InterestCard from '../components/editorial/InterestCard.astro';
 import PersonProfile from '../components/proof/PersonProfile.astro';
+import ReviewCarousel from '../components/proof/ReviewCarousel.astro';
+import { ADA_REVIEWS } from '../data/reviews/ada-tours';
 import FactStrip from '../components/proof/FactStrip.astro';
 import SearchTrigger from '../components/global/SearchTrigger.astro';
 
@@ -71,14 +73,14 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   leadEntityId="home"
   title="Путешествия по Бразилии и Латинской Америке | Ada Tours"
   description="Выбирайте путешествия по странам, интересам и готовым маршрутам. Индивидуальные и VIP-туры, экскурсии, MICE и DMC по Бразилии и Латинской Америке."
-  image="/media/home/hero-rio-generated-20261008-v1.webp"
+  image="/media/home/hero-rio-generated-20261008-v2.webp"
 >
   <Hero
     home
     eyebrow="Ada Tours · Brazil & Latin America"
     title="Латинская Америка. Ваша история путешествия"
     intro="Выберите страну, впечатления или готовый маршрут. Мы поможем соединить интересные вам места в одну поездку с продуманной логистикой и сервисом."
-    image="/media/home/hero-rio-generated-20261008-v1.webp"
+    image="/media/home/hero-rio-generated-20261008-v2.webp"
     ctaHref="#home-start"
     ctaLabel="Выбрать путешествие"
   />
@@ -360,6 +362,8 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
       <a href={withBase('/about/')}>О компании <span aria-hidden="true">↗</span></a>
     </nav>
   </section>
+
+  <ReviewCarousel reviews={ADA_REVIEWS} />
 
   <div class="home-final">
     <div class="container">

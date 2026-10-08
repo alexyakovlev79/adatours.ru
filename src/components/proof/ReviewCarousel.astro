@@ -1,0 +1,122 @@
+---
+import type { AdaReview } from '../../data/reviews/ada-tours';
+import InlineMarkdown from '../global/InlineMarkdown.astro';
+import { withBase } from '../../lib/paths';
+
+interface Props {
+  reviews: AdaReview[];
+}
+
+const { reviews } = Astro.props;
+---
+
+{reviews.length > 0 && (
+  <section class="reviews-carousel" id="home-reviews" aria-labelledby="home-reviews-title" data-review-carousel>
+    <div class="container">
+      <div class="reviews-carousel__heading">
+        <div>
+          <p class="eyebrow">Опыт наших гостей и партнеров</p>
+          <h2 id="home-reviews-title">Отзывы об Ada Tours</h2>
+        </div>
+        <div class="reviews-carousel__controls" aria-label="Прокрутка отзывов">
+          <button type="button" data-review-prev aria-label="Предыдущие отзывы" aria-controls="home-reviews-track" disabled>←</button>
+          <button type="button" data-review-next aria-label="Следующие отзывы" aria-controls="home-reviews-track">→</button>
+        </div>
+      </div>
+      <div id="home-reviews-track" class="reviews-carousel__viewport" data-review-track role="region" aria-roledescription="карусель" aria-label="Отзывы клиентов и партнеров" tabindex="0">
+        <ol class="reviews-carousel__list">
+          {reviews.map((review, index) => (
+            <li class="reviews-carousel__item">
+              <article class="reviews-carousel__review">
+                <div class="reviews-carousel__meta">
+                  <span>{review.segment}</span>
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                </div>
+                <blockquote>«<InlineMarkdown text={review.text} />»</blockquote>
+                <div class="reviews-carousel__bottom">
+                  <div class="reviews-carousel__author">
+                    <strong>{review.author}</strong>
+                    {review.organization && <span>{review.organization}</span>}
+                    {review.route && <span>{review.route}</span>}
+                  </div>
+                  <a href={review.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={`Источник отзыва: ${review.author}`}>Источник ↗</a>
+                </div>
+              </article>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <a class="reviews-carousel__all" href={withBase('/reviews/')}>Читать все отзывы <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+)}
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-review-carousel]').forEach((carousel) => {
+    const viewport = carousel.querySelector<HTMLElement>('[data-review-track]');
+    const previous = carousel.querySelector<HTMLButtonElement>('[data-review-prev]');
+    const next = carousel.querySelector<HTMLButtonElement>('[data-review-next]');
+    const list = carousel.querySelector<HTMLElement>('.reviews-carousel__list');
+    const item = list?.querySelector<HTMLElement>('.reviews-carousel__item');
+    if (!viewport || !previous || !next || !list || !item) return;
+
+    const updateButtons = () => {
+      const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+      previous.disabled = viewport.scrollLeft <= 2;
+      next.disabled = viewport.scrollLeft >= maxScroll - 2;
+    };
+    const step = (direction: number) => {
+      const gap = Number.parseFloat(getComputedStyle(list).gap) || 0;
+      const distance = item.getBoundingClientRect().width + gap;
+      viewport.scrollBy({ left: direction * distance, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    };
+
+    previous.addEventListener('click', () => step(-1));
+    next.addEventListener('click', () => step(1));
+    viewport.addEventListener('keydown', (event) => {
+      if (event.target !== viewport) return;
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        step(event.key === 'ArrowRight' ? 1 : -1);
+      }
+    });
+    viewport.addEventListener('scroll', updateButtons, { passive: true });
+    window.addEventListener('resize', updateButtons, { passive: true });
+    updateButtons();
+  });
+</script>
+
+<style>
+  .reviews-carousel { padding-block: clamp(66px, 7vw, 100px); background: #f6f2eb; }
+  .reviews-carousel__heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 30px; }
+  .reviews-carousel__heading .eyebrow { margin: 0 0 12px; }
+  .reviews-carousel__heading h2 { max-width: 800px; margin: 0; font-size: var(--text-h2); line-height: 1.07; }
+  .reviews-carousel__controls { display: flex; gap: 10px; flex: 0 0 auto; }
+  .reviews-carousel__controls button { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid currentColor; border-radius: 0; background: transparent; color: var(--color-ink); font: inherit; font-size: 1.55rem; cursor: pointer; transition: background 180ms ease, color 180ms ease; }
+  .reviews-carousel__controls button:hover:not(:disabled) { background: var(--color-ink); color: white; }
+  .reviews-carousel__controls button:disabled { cursor: default; opacity: .24; }
+  .reviews-carousel__controls button:focus-visible, .reviews-carousel__viewport:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
+  .reviews-carousel__viewport { overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x mandatory; scrollbar-color: #c89a20 transparent; scrollbar-width: thin; padding-bottom: 14px; }
+  .reviews-carousel__list { display: flex; align-items: stretch; gap: 22px; margin: 0; padding: 0; list-style: none; }
+  .reviews-carousel__item { min-width: 0; flex: 0 0 calc((100% - 44px) / 3); scroll-snap-align: start; }
+  .reviews-carousel__review { display: flex; flex-direction: column; height: 100%; min-height: 272px; border-top: 1px solid var(--color-ink); border-bottom: 1px solid var(--color-line); padding: 17px 0 20px; }
+  .reviews-carousel__meta { display: flex; align-items: start; justify-content: space-between; gap: 18px; font-size: .75rem; color: color-mix(in srgb, var(--color-ink) 65%, transparent); }
+  .reviews-carousel__meta span:last-child { font-family: var(--font-display); font-size: 1.45rem; color: var(--color-gold-deep); }
+  .reviews-carousel__review blockquote { flex: 1 0 auto; margin: 20px 0 26px; font-family: var(--font-display); font-size: clamp(1.15rem, 1.65vw, 1.46rem); line-height: 1.32; }
+  .reviews-carousel__bottom { display: flex; align-items: end; justify-content: space-between; gap: 14px; }
+  .reviews-carousel__author { display: flex; flex-direction: column; align-items: start; gap: 4px; font-size: .8rem; line-height: 1.3; }
+  .reviews-carousel__author strong { font-size: .92rem; }
+  .reviews-carousel__author span { color: color-mix(in srgb, var(--color-ink) 65%, transparent); }
+  .reviews-carousel__bottom a { flex: 0 0 auto; border-bottom: 1px solid currentColor; font-size: .72rem; white-space: nowrap; }
+  .reviews-carousel__all { display: inline-flex; align-items: center; gap: 18px; margin-top: 22px; padding-bottom: 8px; border-bottom: 1px solid currentColor; font-family: var(--font-display); font-size: 1.05rem; }
+  .reviews-carousel__all:hover, .reviews-carousel__bottom a:hover { opacity: .68; }
+  @media (max-width: 1000px) { .reviews-carousel__item { flex-basis: calc((100% - 22px) / 2); } }
+  @media (max-width: 680px) {
+    .reviews-carousel__heading { align-items: end; gap: 14px; }
+    .reviews-carousel__controls { gap: 6px; }
+    .reviews-carousel__controls button { width: 42px; height: 42px; }
+    .reviews-carousel__item { flex-basis: min(86%, 360px); }
+    .reviews-carousel__review { min-height: 286px; }
+    .reviews-carousel__review blockquote { font-size: 1.2rem; }
+  }
+</style>

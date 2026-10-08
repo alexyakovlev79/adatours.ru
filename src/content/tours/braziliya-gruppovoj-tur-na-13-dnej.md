@@ -238,7 +238,7 @@ priceFrom: 4070
 currency: USD
 priceNote: $4070
 hero:
-  src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/hero-enhanced-20261006.webp
+  src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/hero-enhanced-20261008-v2.webp
   alt: 'Бразилия: групповой тур на 13 дней'
 routeCountries:
 - country_brazil

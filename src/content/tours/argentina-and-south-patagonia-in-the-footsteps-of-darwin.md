@@ -113,8 +113,8 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
-        alt: "Аконкагуа и горный маршрут в Андах"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-05-generated-20261008-v1.webp
+        alt: "Переход к базовому лагерю Пласа-де-Мулас, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-5"
   - day: 6
     title: "Пласа-де-Мулас, 4260 м"
@@ -125,8 +125,8 @@ itinerary:
       
       Питание: завтрак, обед, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
-        alt: "Мендоса и Анды"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-06-generated-20261008-v1.webp
+        alt: "Практика ходьбы в кошках у ледника Хорконес, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-6"
   - day: 7
     title: "Пласа-де-Мулас - пик Бонете, 5091 м - Пласа-де-Мулас"
@@ -140,8 +140,8 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-enhanced-20261006.webp
-        alt: "Горный маршрут на Аконкагуа"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-07-generated-20261008-v1.webp
+        alt: "Акклиматизационный выход на пик Бонете, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-7"
   - day: 8
     title: "Пласа-де-Мулас - лагерь Канада, 4910 м - Пласа-де-Мулас"
@@ -153,8 +153,8 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
-        alt: "Мендоса и Анды"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-08-generated-20261008-v1.webp
+        alt: "Заброска снаряжения в лагерь Канада, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-8"
   - day: 9
     title: "Пласа-де-Мулас, 4260 м"
@@ -165,8 +165,8 @@ itinerary:
       
       Питание: завтрак, обед, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
-        alt: "Мендоса и Анды"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-09-generated-20261008-v1.webp
+        alt: "Проверка снаряжения в Пласа-де-Мулас, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-9"
   - day: 10
     title: "Пласа-де-Мулас - лагерь 1 Канада, 4910 м"
@@ -180,8 +180,8 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
-        alt: "Аконкагуа и горный маршрут в Андах"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-10-generated-20261008-v1.webp
+        alt: "Установка палаток в первом высотном лагере Канада, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-10"
   - day: 11
     title: "Канада - Нидо-де-Кондорес, 5250 м"
@@ -195,8 +195,8 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
-        alt: "Аконкагуа и горный маршрут в Андах"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-11-generated-20261008-v1.webp
+        alt: "Переход в лагерь Нидо-де-Кондорес, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-11"
   - day: 12
     title: "Нидо-де-Кондорес"
@@ -205,8 +205,8 @@ itinerary:
     text: |-
       День отдыха и дальнейшей акклиматизации.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
-        alt: "Мендоса и Анды"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-12-generated-20261008-v1.webp
+        alt: "День акклиматизации в Нидо-де-Кондорес, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-12"
   - day: 13
     title: "Нидо-де-Кондорес - Берлин-Колера, 5900 м - Нидо-де-Кондорес"
@@ -220,8 +220,8 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-enhanced-20261006.webp
-        alt: "Горный маршрут на Аконкагуа"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-generated-20261008-v1.webp
+        alt: "Заброска еды и кухонного снаряжения в Берлин-Колера, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-13"
   - day: 14
     title: "Нидо-де-Кондорес - Берлин-Колера, около 6000 м"
@@ -233,8 +233,8 @@ itinerary:
       
       Личное снаряжение каждый участник переносит сам. Групповое снаряжение поднимают портеры.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-1-enhanced-20261006.webp
-        alt: "Аконкагуа и горный маршрут в Андах"
+      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-14-generated-20261008-v1.webp
+        alt: "Подготовка к восхождению в лагере Берлин-Колера, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-14"
   - day: 15
     title: "Берлин-Колера - вершина Аконкагуа, 6962 м - Берлин-Колера"

@@ -464,12 +464,12 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
   .search-overlay__content{padding:clamp(24px,3.5vw,52px) 0 clamp(80px,10vw,140px)}
   .search-overlay__label{display:block;margin-bottom:14px;font-family:var(--font-display);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
   .search-overlay__input{width:100%;padding:0 0 20px;border:0;border-bottom:2px solid var(--color-ink);border-radius:0;color:var(--color-ink);background:transparent;font-family:var(--font-display);font-size:clamp(2.25rem,2rem + 3.2vw,5.25rem);line-height:1.02;letter-spacing:-.04em;outline:0}
-  .search-overlay__input::placeholder{color:color-mix(in srgb,var(--color-ink) 28%,transparent)}
+  .search-overlay__input::placeholder{color:color-mix(in srgb,var(--color-ink) 28%,transparent);font-size:clamp(1.125rem,2vw,1.75rem);letter-spacing:normal}
   .search-overlay__input:focus{border-bottom-color:var(--color-gold-deep)}
   .search-overlay__help{margin:12px 0 0;font-size:.82rem;color:color-mix(in srgb,var(--color-ink) 58%,transparent)}
   .search-filters{display:flex;flex-wrap:wrap;gap:6px 24px;margin-top:clamp(28px,4vw,48px)}
   .search-filters button{padding:8px 0 7px;border:0;border-bottom:1px solid transparent;color:color-mix(in srgb,var(--color-ink) 58%,transparent);background:transparent;font-family:var(--font-display);font-size:.9rem;cursor:pointer}
   .search-filters button:hover,.search-filters button.is-active{color:var(--color-ink)}
   .search-filters button.is-active{border-bottom-color:var(--color-gold-deep)}
-  @media(max-width:640px){.search-overlay__content{padding-top:20px}.search-overlay__input{padding-bottom:16px;font-size:clamp(2rem,10vw,3.2rem)}.search-filters{gap-inline:18px}}
+  @media(max-width:640px){.search-overlay__content{padding-top:20px}.search-overlay__input{padding-bottom:16px;font-size:clamp(2rem,10vw,3.2rem)}.search-overlay__input::placeholder{font-size:clamp(.94rem,3.8vw,1.125rem)}.search-filters{gap-inline:18px}}
 </style>

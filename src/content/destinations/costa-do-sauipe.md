@@ -6,31 +6,40 @@ slug: costa-do-sauipe
 status: approved
 countryId: country_brazil
 destinationType: resort
-summary: >-
-  Коста-ду-Сауипе в штате Баия находится примерно в 70 км от Сальвадора. Курортный формат строится вокруг пляжей, дюн и кокосовых рощ, а активную часть можно дополнить гольфом, теннисом, верховой ездой, велосипедом, водными видами спорта и SPA.
+summary: Коста-ду-Сауипе в штате Баия находится примерно в 70 км от Сальвадора. Курортный формат строится вокруг пляжей, дюн и кокосовых рощ, а активную часть можно дополнить гольфом, теннисом, верховой ездой, велосипедом, водными видами спорта и SPA.
 hero:
   src: /media/destinations/costa-do-sauipe/hero-enhanced-20261001.webp
   alt: Побережье Коста-ду-Сауипе в штате Баия
-gallery: []
+gallery:
+- src: /media/tours/romanticheskaya-braziliya/sauipe-9-generated-20261008.webp
+  alt: Коста-ду-Сауипе — Бразилия
+- src: /media/tours/romanticheskaya-braziliya/sauipe-10-generated-20261008.webp
+  alt: Коста-ду-Сауипе — Бразилия
+- src: /media/tours/romanticheskaya-braziliya/sauipe-11-generated-20261008.webp
+  alt: Коста-ду-Сауипе — Бразилия
+- src: /media/tours/romanticheskaya-braziliya/sauipe-12-generated-20261008.webp
+  alt: Коста-ду-Сауипе — Бразилия
 relatedDestinations:
-  - destination_brazil_salvador
-  - destination_brazil_praia_do_forte
+- destination_brazil_salvador
+- destination_brazil_praia_do_forte
 featuredTours: []
 featuredExcursions: []
 facts:
-  - value: "70 км"
-    label: примерно от Сальвадора
-  - value: Баия
-    label: штат на Атлантическом побережье
-  - value: Гольф и теннис
-    label: варианты активного отдыха
-  - value: SPA
-    label: спокойный курортный формат
+- value: 70 км
+  label: примерно от Сальвадора
+- value: Баия
+  label: штат на Атлантическом побережье
+- value: Гольф и теннис
+  label: варианты активного отдыха
+- value: SPA
+  label: спокойный курортный формат
 featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-kosta-du-sauipe-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-kosta-du-sauipe-braziliya__ebee207a.md
 updatedAt: 2026-09-25
-themes: ["theme_beach","theme_spa"]
+themes:
+- theme_beach
+- theme_spa
 ---
 
 Коста-ду-Сауипе находится в штате Баия, примерно в 70 км от Сальвадора. Здесь длинные пляжи соседствуют с песчаными дюнами, кокосовыми рощами, небольшими озерами и тропической растительностью.

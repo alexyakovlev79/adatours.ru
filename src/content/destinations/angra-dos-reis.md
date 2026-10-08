@@ -6,46 +6,49 @@ slug: angra-dos-reis
 status: approved
 countryId: country_brazil
 destinationType: resort
-summary: >-
-  Ангра-дус-Рейс на Коста-Верде подходит для отдыха у моря после Рио: острова и бухты, пляжи, катамараны, небольшие катера и яхты, спокойные отели и поездки по побережью.
+summary: 'Ангра-дус-Рейс на Коста-Верде подходит для отдыха у моря после Рио: острова и бухты, пляжи, катамараны, небольшие катера и яхты, спокойные отели и поездки по побережью.'
 hero:
   src: /media/destinations/angra-dos-reis/hero-enhanced-20261001.webp
   alt: Побережье Ангра-дус-Рейс, Бразилия
 gallery:
-  - src: /media/destinations/angra-dos-reis/gallery-1-enhanced-20261001.webp
-    alt: Острова и бухты у Ангра-дус-Рейс
-  - src: /media/destinations/angra-dos-reis/gallery-2-enhanced-20261001.webp
-    alt: Атлантическое побережье Ангра-дус-Рейс
+- src: /media/destinations/angra-dos-reis/gallery-1-enhanced-20261001.webp
+  alt: Острова и бухты у Ангра-дус-Рейс
+- src: /media/destinations/angra-dos-reis/gallery-2-enhanced-20261001.webp
+  alt: Атлантическое побережье Ангра-дус-Рейс
+- src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/angra-10-generated-20261008.webp
+  alt: Ангра-дус-Рейс — Бразилия
+- src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/angra-11-generated-20261008.webp
+  alt: Ангра-дус-Рейс — Бразилия
 relatedDestinations:
-  - destination_brazil_rio
-  - destination_brazil_ilha_grande
-  - destination_brazil_paraty
+- destination_brazil_rio
+- destination_brazil_ilha_grande
+- destination_brazil_paraty
 featuredTours: []
 featuredExcursions: []
 facts:
-  - value: 155 км
-    label: к югу от Рио-де-Жанейро
-  - value: Коста-Верде
-    label: зеленое атлантическое побережье
-  - value: Катамараны
-    label: морские маршруты к островам
-  - value: Яхты
-    label: формат частной прогулки по заливу
+- value: 155 км
+  label: к югу от Рио-де-Жанейро
+- value: Коста-Верде
+  label: зеленое атлантическое побережье
+- value: Катамараны
+  label: морские маршруты к островам
+- value: Яхты
+  label: формат частной прогулки по заливу
 featureBands:
-  - eyebrow: Побережье
-    title: Острова, бухты и морские маршруты
-    text: >-
-      Из Ангра-дус-Рейс можно выходить к островам на катамаране, небольшом катере или яхте. Такой день легко сделать спокойным пляжным маршрутом или частью частной программы по Коста-Верде.
-    image: /media/destinations/angra-dos-reis/gallery-1-enhanced-20261001.webp
-  - eyebrow: Отдых
-    title: Несколько дней между Рио и островами
-    text: >-
-      Ангра подходит для паузы после насыщенной городской программы: море, отель, пляж и короткие поездки по побережью. Формат можно адаптировать для пары, семьи или небольшой частной группы.
-    image: /media/destinations/angra-dos-reis/gallery-2-enhanced-20261001.webp
+- eyebrow: Побережье
+  title: Острова, бухты и морские маршруты
+  text: Из Ангра-дус-Рейс можно выходить к островам на катамаране, небольшом катере или яхте. Такой день легко сделать спокойным пляжным маршрутом или частью частной программы по Коста-Верде.
+  image: /media/destinations/angra-dos-reis/gallery-1-enhanced-20261001.webp
+- eyebrow: Отдых
+  title: Несколько дней между Рио и островами
+  text: 'Ангра подходит для паузы после насыщенной городской программы: море, отель, пляж и короткие поездки по побережью. Формат можно адаптировать для пары, семьи или небольшой частной группы.'
+  image: /media/destinations/angra-dos-reis/gallery-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii__37f42b69.md
 updatedAt: 2026-09-24
-themes: ["theme_beach","theme_wildlife"]
+themes:
+- theme_beach
+- theme_wildlife
 ---
 
 Ангра-дус-Рейс находится на атлантическом побережье штата Рио-де-Жанейро, примерно в 155 км к югу от Рио. Сюда едут ради Коста-Верде: зеленые склоны подходят к морю, а в заливе много островов и небольших бухт.

@@ -106,8 +106,6 @@ itinerary:
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: Водопады Фоз ду Игуасу'
-  - src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
-    alt: 'На фото: Вид на гору Пан-ди-Асукар, Рио-де-Жанейро'
 - day: 5
   title: Бразильская сторона Игуасу
   places:
@@ -147,8 +145,6 @@ itinerary:
   images:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Буэнос-Айрес, Аргентине'
-  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-4-enhanced-20261006.webp
-    alt: 'На фото: Водопады Фоз ду Игуасу'
 - day: 7
   title: Буэнос-Айрес
   places:
@@ -195,8 +191,6 @@ itinerary:
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: 'На фото: Вид на город Сантьяго, Чили'
-  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
-    alt: 'На фото: Буэнос-Айрес, Аргентине'
 - day: 10
   title: Винья-дель-Мар и Вальпараисо
   places:
@@ -271,8 +265,6 @@ itinerary:
   images:
   - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-13-enhanced-20261006.webp"
     alt: 'На фото: Вид сверху на Мачу-Пикчу, Перу'
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: 'На фото: Вид на город Куско, Перу'
 - day: 14
   title: Куско - Лима
   places:
@@ -295,8 +287,6 @@ itinerary:
   images:
   - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp"
     alt: 'На фото: Кафедральный собор Лимы, Перу'
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: 'На фото: Вид на город Куско, Перу'
 - day: 15
   title: Лима
   places:

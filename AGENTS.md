@@ -15,6 +15,7 @@
 | Известная экскурсия | `docs/workflows/excursions.md` |
 | Тур | `docs/workflows/tours.md` и нужный раздел `tour-excursion-linking.md` |
 | Улучшение фото в Work | `docs/workflows/photo-enhancement.md` |
+| Исправить дубли и заполнить фото дней тура | `docs/workflows/tour-day-photo-repair.md` |
 | Явная генерация highlights | `docs/workflows/highlights.md` |
 | Отдельная редактура | `docs/workflows/rewrite.md` |
 | Перенести текст сущности на фото влево / вправо | `docs/workflows/master.md`, раздел 8.4: только `imageTextAlign` в целевом MD |

@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "description": "Targeted tour itinerary photo repairs. Incomplete tasks are never marked finished.",
+  "updatedAt": "2026-10-08",
+  "queue": {
+    "scope": "explicit",
+    "tourIds": [
+      "tour_source_braziliya_argentina_chili_peru_ru"
+    ],
+    "cursor": 0
+  },
+  "tours": [
+    {
+      "tourId": "tour_source_braziliya_argentina_chili_peru_ru",
+      "contentPath": "src/content/tours/braziliya-argentina-chili-peru-ru.md",
+      "sourceBlobSha": "cbfa771a5ca42ae8871e3b219cc1a6f7177148ee",
+      "status": "blocked_image_generation",
+      "published": false,
+      "selectedDays": 15,
+      "removedDuplicates": [
+        {
+          "day": 4,
+          "src": "/media/tours/brazil-gems-14d/hero-enhanced-20260930.webp",
+          "why": "duplicate of day 3; day 4 retains Iguazu photo"
+        },
+        {
+          "day": 6,
+          "src": "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-4-enhanced-20261006.webp",
+          "why": "duplicate of day 4; day 6 retains Buenos Aires pending replacement"
+        },
+        {
+          "day": 9,
+          "src": "/media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp",
+          "why": "duplicate of day 7; day 9 retains Santiago photo"
+        },
+        {
+          "day": 13,
+          "src": "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp",
+          "why": "duplicate of day 11; day 13 retains Machu Picchu"
+        },
+        {
+          "day": 14,
+          "src": "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp",
+          "why": "duplicate of day 11; day 14 retains Lima"
+        }
+      ],
+      "pendingGeneratedSlots": [
+        {
+          "day": 1,
+          "country": "Бразилия",
+          "place": "Рио-де-Жанейро",
+          "scene": "Пляж Копакабана и черно-белая мозаичная набережная, первая свободная прогулка после прибытия",
+          "reference": "/media/tours/brazil-gems-14d/hero-enhanced-20260930.webp",
+          "avoid": "Сахарная Голова крупным планом из дня 3"
+        },
+        {
+          "day": 6,
+          "country": "Аргентина",
+          "place": "Пуэрто-Игуасу, аргентинская сторона водопадов Игуасу",
+          "scene": "Верхние дорожки и Глотка дьявола у каскадов аргентинского парка, после экскурсии перелет в Буэнос-Айрес",
+          "reference": "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-4-enhanced-20261006.webp",
+          "avoid": "Бразильский общий план из дней 4 и 5"
+        },
+        {
+          "day": 8,
+          "country": "Аргентина",
+          "place": "Буэнос-Айрес",
+          "scene": "Свободный день в Буэнос-Айресе, набережная Пуэрто-Мадеро или городская прогулка",
+          "reference": "/media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp",
+          "avoid": "Имеющийся городской вид дня 7"
+        },
+        {
+          "day": 10,
+          "country": "Чили",
+          "place": "Вальпараисо",
+          "scene": "Фуникулер Эль-Пераль, разноцветные исторические дома на холмах Вальпараисо",
+          "reference": null,
+          "avoid": "Сантьяго из дня 9"
+        },
+        {
+          "day": 12,
+          "country": "Перу",
+          "place": "Морай, Священная долина инков",
+          "destinationId": "destination_peru_moraj",
+          "scene": "Круговые концентрические земледельческие террасы Морая в Священной долине, поездка к археологическим объектам",
+          "reference": null,
+          "avoid": "Мачу-Пикчу дня 13, городской Куско дня 11"
+        }
+      ],
+      "emptyDays": [
+        10,
+        12
+      ],
+      "remainingDuplicateGroups": [
+        {
+          "src": "/media/tours/brazil-gems-14d/hero-enhanced-20260930.webp",
+          "days": [
+            1,
+            3
+          ]
+        },
+        {
+          "src": "/media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp",
+          "days": [
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "imageGenerationAttempt": {
+        "date": "2026-10-08",
+        "tool": "gpt-image",
+        "calls": 2,
+        "result": "rejected",
+        "reason": "Both outputs were full-route infographics/collages containing incorrect itinerary locations, not independent location-specific landscape photographs; not approved for publication"
+      },
+      "completedAssets": [],
+      "remainingTasks": [
+        "Generate, accept and upload five distinct single-scene WebP photos",
+        "Create planned Moray destination page when correct Moray photo is accepted",
+        "Register each generated asset in photo-enhancements.json",
+        "Update tour MD and photo spreadsheet rows",
+        "Verify build/deploy and mark this tour completed"
+      ]
+    }
+  ]
+}

@@ -125,7 +125,7 @@ try {
   report.uploaded = uploaded;
   report.alreadyMatching = unchanged;
   report.failed = failures;
-  report.incomplete = report.files.filter((row) => !row || row.result === 'failed').length;
+  report.incomplete = files.length - (uploaded + unchanged);
   report.verifiedBytes = verifiedBytes;
   await fs.writeFile(manifestName, JSON.stringify(report, null, 2) + '\n');
   console.log('SUMMARY: total=' + files.length + ', uploaded=' + uploaded +

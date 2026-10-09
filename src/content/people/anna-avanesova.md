@@ -6,7 +6,7 @@ slug: anna-avanesova
 status: approved
 role: Основатель и CEO Ada Tours
 photo:
-  src: /media/people/anna-avanesova/photo-src-enhanced-20261001.webp
+  src: /media/people/anna-avanesova/photo-provided-20261009-v1.jpg
   alt: Анна Аванесова, основатель и CEO Ada Tours
 languages: []
 expertise:
@@ -19,7 +19,7 @@ expertise:
 externalProfiles:
   - https://www.xing.com/profile/Anna_Avanesova2
 sourceUrl: https://adatours.com/about-us
-updatedAt: 2026-10-07
+updatedAt: 2026-10-09
 ---
 
 Анна Аванесова основала Ada Tours и руководит компанией. Сегодня она работает со сложными маршрутами по Бразилии и Латинской Америке, VIP-поездками, группами, MICE и запросами зарубежных турагентств и туроператоров.

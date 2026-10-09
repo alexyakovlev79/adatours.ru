@@ -1,0 +1,73 @@
+name: Issue encrypted short-lived media upload token
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/media/upload-session-request.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: adatours-media-session-token
+  cancel-in-progress: false
+
+jobs:
+  issue:
+    name: Seal temporary S3 token for one Work session
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v6
+      - name: Node.js 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Validate short-lived upload request
+        run: |
+          test -n "${YC_SA_ID:-}" || { echo "::error::Missing YC_MEDIA_SA_ID"; exit 1; }
+          node --input-type=module -e "
+            import fs from 'node:fs';
+            import {validateSessionRequest} from './scripts/lib/media-token-envelope.mjs';
+            validateSessionRequest(JSON.parse(fs.readFileSync('data/media/upload-session-request.json', 'utf8')));
+            console.log('One-time X25519 Work session verified.');
+          "
+      - name: Exchange GitHub OIDC token and seal temporary credential
+        shell: bash
+        run: |
+          set -euo pipefail
+          oidc_json="$(curl --fail --silent --show-error --get \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            --data-urlencode "audience=https://github.com/alexyakovlev79" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
+          oidc_token="$(jq -er '.value' <<< "$oidc_json")"
+          echo "::add-mask::$oidc_token"
+
+          auth_json="$(curl --fail --silent --show-error \
+            -X POST 'https://auth.yandex.cloud/oauth/token' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
+            --data-urlencode "audience=${YC_SA_ID}" \
+            --data-urlencode "subject_token=${oidc_token}" \
+            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          iam_token="$(jq -er '.access_token' <<< "$auth_json")"
+          echo "::add-mask::$iam_token"
+
+          MEDIA_ENVELOPE_OUTPUT=media-upload-session-envelope.json \
+            YC_MEDIA_IAM_TOKEN="$iam_token" \
+            node scripts/issue-media-token.mjs data/media/upload-session-request.json
+
+      - name: Downloadable encrypted token packet, never plaintext
+        uses: actions/upload-artifact@v4
+        with:
+          name: encrypted-media-session-${{ github.run_id }}
+          path: media-upload-session-envelope.json
+          if-no-files-found: error
+          retention-days: 1

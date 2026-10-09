@@ -1,4 +1,72 @@
 {
+  "metadata": {
+    "schemaVersion": 1,
+    "counts": {
+      "types": {
+        "country": 24,
+        "destination": 575,
+        "tour": 342,
+        "excursion": 193
+      },
+      "media": {
+        "ready": 785,
+        "existing_enhanced_preserved": 10,
+        "generated": 318,
+        "provided_originals": 21
+      },
+      "rawDonorUrls": 694,
+      "activeTypes": {
+        "country": 24,
+        "destination": 575,
+        "tour": 299,
+        "excursion": 192
+      },
+      "archivedTypes": {
+        "tour": 43,
+        "excursion": 1
+      }
+    },
+    "preparedAt": "2026-10-02",
+    "inputsSha256": {
+      "textSources": "bc2aac0e1b4349b4499c64e7b43fd4de4a264963518364b0e51d399f07b16892",
+      "rawMedia": "d99fee377cc268cdf6dce4597260c556e82025897a84b0acdfce552053a208f3",
+      "excursionGeography": "bfce404ae957145add3fdfbec6bf849cc9115794a3c666a0d9d47d655af7be72"
+    },
+    "sheet": {
+      "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
+      "sheetName": "Страницы"
+    },
+    "indexingScope": "Constants prepared on this date. Current publication existence and successful enhanced media remain authoritative in the exact contentPath and photo registry; these indexes do not require status maintenance for each new page.",
+    "destinationCatalogSha256": "4e8f6b8e53d6fd6a6d2ce05f6a9f9865b5dfce9bba86fc5630ee21ac6606d65f",
+    "folders": {
+      "original": {
+        "id": "1zbcua6J4CzYyay9kYMGQeyvHQ_gGj1Vl",
+        "path": "page_texts_original"
+      },
+      "cleanedTours": {
+        "id": "1qJ4nY892iSINyc4E2b394H3xmnLRaEDU",
+        "path": "page_texts_newstep"
+      },
+      "cleanedExcursions": {
+        "id": "1qtRfOWgew62WFk9IsCDGPVD_giO8Pcvh",
+        "path": "page_texts_newstep/Excursions"
+      },
+      "rewriteV2": {
+        "id": "1-9mtF_QMc3oFgRiwmNU8ZNo8lWFEA0Rs",
+        "path": "page_texts_rewrite_v2"
+      },
+      "unversionedExcursionRewrite": {
+        "id": "1RgV9IvknAKOqwvJyrl_kg-LwRSUDRFuZ",
+        "path": "page_texts_rewrite_excursions"
+      },
+      "rewriteV1Archive": {
+        "id": "1HQsgzuoIPDMFQAQ8QXQGX0h_kLWtdJbC",
+        "path": "page_texts_rewrite"
+      }
+    },
+    "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
+    "entityCount": 1134
+  },
   "entries": [
     {
       "id": "country_brazil",
@@ -19370,7 +19438,7 @@
     {
       "id": "tour_source_ves_ekvador_na_novyj_god",
       "type": "tour",
-      "name": "Весь Эквадор",
+      "name": "Весь Эквадор на Новый год: Анды и Галапагосы",
       "url": "/ecuador/tour/complete-ecuador-new-year/",
       "slug": "complete-ecuador-new-year",
       "contentPath": "src/content/tours/ves-ekvador-na-novyj-god.md",
@@ -19400,13 +19468,14 @@
         "destination_ecuador_ostrov_plasa_sur",
         "destination_ecuador_mys_karrion",
         "destination_ecuador_plyazhi_bachas",
-        "destination_ecuador_kanon_pastasa"
+        "destination_ecuador_kanon_pastasa",
+        "destination_ecuador_mitad_del_mundo",
+        "destination_ecuador_intinan_museum",
+        "destination_ecuador_casa_del_arbol"
       ],
       "sourceUrl": "https://brasiltours.ru/ves-ekvador-na-novyj-god",
       "entryPath": "data/source-index/entries/tour_source_ves_ekvador_na_novyj_god.json",
-      "status": "archived",
-      "archivedAt": "2026-10-03",
-      "archiveReason": "expired_dates",
+      "status": "approved",
       "aliases": [
         "ves-ekvador-na-novyj-god"
       ],
@@ -19435,7 +19504,10 @@
         "destination_ecuador_ostrov_sejmur_norte",
         "destination_ecuador_ostrov_plasa_sur",
         "destination_ecuador_mys_karrion",
-        "destination_ecuador_plyazhi_bachas"
+        "destination_ecuador_plyazhi_bachas",
+        "destination_ecuador_mitad_del_mundo",
+        "destination_ecuador_intinan_museum",
+        "destination_ecuador_casa_del_arbol"
       ],
       "legacyUrls": [
         "/tury/ves-ekvador-na-novyj-god/",
@@ -34048,74 +34120,504 @@
         "theme_culture",
         "theme_gastronomy_wine"
       ]
+    },
+    {
+      "id": "destination_ecuador_casa_del_arbol",
+      "type": "destination",
+      "name": "Качели «Конец света» — Casa del Árbol",
+      "url": "/ecuador/place/casa-del-arbol/",
+      "slug": "casa-del-arbol",
+      "contentPath": "src/content/destinations/casa-del-arbol.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_casa_del_arbol"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_casa_del_arbol.json",
+      "status": "approved"
+    },
+    {
+      "id": "destination_ecuador_ingapirka",
+      "type": "destination",
+      "name": "Ингапирка",
+      "url": "/ecuador/place/ingapirca/",
+      "slug": "ingapirca",
+      "contentPath": "src/content/destinations/ingapirca.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_ingapirka"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_ingapirka.json",
+      "status": "approved",
+      "aliases": [
+        "Ingapirca",
+        "ingapirka"
+      ]
+    },
+    {
+      "id": "destination_ecuador_intinan_museum",
+      "type": "destination",
+      "name": "Музей Интиньян",
+      "url": "/ecuador/place/intinan-museum/",
+      "slug": "intinan-museum",
+      "contentPath": "src/content/destinations/intinan-museum.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_intinan_museum"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_intinan_museum.json",
+      "status": "approved"
+    },
+    {
+      "id": "destination_ecuador_kanon_pastasa",
+      "type": "destination",
+      "name": "Каньон Пастаса",
+      "url": "/ecuador/place/pastaza-canyon/",
+      "slug": "pastaza-canyon",
+      "contentPath": "src/content/destinations/pastaza-canyon.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_kanon_pastasa"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_kanon_pastasa.json",
+      "status": "approved",
+      "aliases": [
+        "Pastaza",
+        "kanon-pastasa"
+      ]
+    },
+    {
+      "id": "destination_ecuador_mitad_del_mundo",
+      "type": "destination",
+      "name": "Митад-дель-Мундо",
+      "url": "/ecuador/place/mitad-del-mundo/",
+      "slug": "mitad-del-mundo",
+      "contentPath": "src/content/destinations/mitad-del-mundo.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_mitad_del_mundo"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_mitad_del_mundo.json",
+      "status": "approved"
+    },
+    {
+      "id": "destination_ecuador_mys_karrion",
+      "type": "destination",
+      "name": "Мыс Каррион",
+      "url": "/ecuador/place/punta-carrion/",
+      "slug": "punta-carrion",
+      "contentPath": "src/content/destinations/punta-carrion.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_mys_karrion"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_mys_karrion.json",
+      "status": "approved",
+      "aliases": [
+        "Carrion",
+        "mys-karrion"
+      ]
+    },
+    {
+      "id": "destination_ecuador_nacionalnyj_park_kahas",
+      "type": "destination",
+      "name": "Национальный парк Кахас",
+      "url": "/ecuador/place/cajas-national-park/",
+      "slug": "cajas-national-park",
+      "contentPath": "src/content/destinations/cajas-national-park.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_nacionalnyj_park_kahas"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_nacionalnyj_park_kahas.json",
+      "status": "approved",
+      "aliases": [
+        "Cajas",
+        "nacionalnyj-park-kahas"
+      ]
+    },
+    {
+      "id": "destination_ecuador_ostrov_baltra",
+      "type": "destination",
+      "name": "Остров Балтра",
+      "url": "/ecuador/place/baltra-island/",
+      "slug": "baltra-island",
+      "contentPath": "src/content/destinations/baltra-island.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_ostrov_baltra"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_ostrov_baltra.json",
+      "status": "approved",
+      "aliases": [
+        "Балтра",
+        "ostrov-baltra"
+      ]
+    },
+    {
+      "id": "destination_ecuador_ostrov_bartolome",
+      "type": "destination",
+      "name": "Остров Бартоломе",
+      "url": "/ecuador/place/bartolome-island/",
+      "slug": "bartolome-island",
+      "contentPath": "src/content/destinations/bartolome-island.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_ostrov_bartolome"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_ostrov_bartolome.json",
+      "status": "approved",
+      "aliases": [
+        "Bartolome",
+        "ostrov-bartolome"
+      ]
+    },
+    {
+      "id": "destination_ecuador_ostrov_plasa_sur",
+      "type": "destination",
+      "name": "Остров Пласа-Сур",
+      "url": "/ecuador/place/south-plaza-island/",
+      "slug": "south-plaza-island",
+      "contentPath": "src/content/destinations/south-plaza-island.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_ostrov_plasa_sur"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_ostrov_plasa_sur.json",
+      "status": "approved",
+      "aliases": [
+        "Plaza Sur",
+        "Пласа-Сур",
+        "Южный Пласа",
+        "South Plaza",
+        "ostrov-plasa-sur"
+      ]
+    },
+    {
+      "id": "destination_ecuador_ostrov_santa_krus_galapagosy",
+      "type": "destination",
+      "name": "Остров Санта-Крус (Галапагосы)",
+      "url": "/ecuador/place/santa-cruz-island/",
+      "slug": "santa-cruz-island",
+      "contentPath": "src/content/destinations/santa-cruz-island.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_ostrov_santa_krus_galapagosy"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_ostrov_santa_krus_galapagosy.json",
+      "status": "approved",
+      "aliases": [
+        "остров Санта-Крус",
+        "ostrov-santa-krus-galapagosy"
+      ]
+    },
+    {
+      "id": "destination_ecuador_ostrov_sejmur_norte",
+      "type": "destination",
+      "name": "Остров Сеймур-Норте",
+      "url": "/ecuador/place/north-seymour-island/",
+      "slug": "north-seymour-island",
+      "contentPath": "src/content/destinations/north-seymour-island.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_ostrov_sejmur_norte"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_ostrov_sejmur_norte.json",
+      "status": "approved",
+      "aliases": [
+        "Seymour Norte",
+        "Сеймур-Норте",
+        "Северный Сеймур",
+        "North Seymour",
+        "ostrov-sejmur-norte"
+      ]
+    },
+    {
+      "id": "destination_ecuador_ozero_kilotoa",
+      "type": "destination",
+      "name": "Озеро Килотоа",
+      "url": "/ecuador/place/quilotoa-lake/",
+      "slug": "quilotoa-lake",
+      "contentPath": "src/content/destinations/quilotoa-lake.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_ozero_kilotoa"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_ozero_kilotoa.json",
+      "status": "approved",
+      "aliases": [
+        "Quilotoa",
+        "ozero-kilotoa"
+      ]
+    },
+    {
+      "id": "destination_ecuador_plyazhi_bachas",
+      "type": "destination",
+      "name": "Пляжи Бачас",
+      "url": "/ecuador/place/bachas-beaches/",
+      "slug": "bachas-beaches",
+      "contentPath": "src/content/destinations/bachas-beaches.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_plyazhi_bachas"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_plyazhi_bachas.json",
+      "status": "approved",
+      "aliases": [
+        "Bachas",
+        "plyazhi-bachas"
+      ]
+    },
+    {
+      "id": "destination_ecuador_puerto_ajora",
+      "type": "destination",
+      "name": "Пуэрто-Айора",
+      "url": "/ecuador/place/puerto-ayora/",
+      "slug": "puerto-ayora",
+      "contentPath": "src/content/destinations/puerto-ayora.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_puerto_ajora"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_puerto_ajora.json",
+      "status": "approved",
+      "aliases": [
+        "puerto-ajora"
+      ]
+    },
+    {
+      "id": "destination_ecuador_tigua",
+      "type": "destination",
+      "name": "Тигуа",
+      "url": "/ecuador/place/tigua/",
+      "slug": "tigua",
+      "contentPath": "src/content/destinations/tigua.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_tigua"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_tigua.json",
+      "status": "approved",
+      "aliases": [
+        "Tigua"
+      ]
+    },
+    {
+      "id": "destination_ecuador_vodopad_agoyan",
+      "type": "destination",
+      "name": "Водопад Агоян",
+      "url": "/ecuador/place/agoyan-waterfall/",
+      "slug": "agoyan-waterfall",
+      "contentPath": "src/content/destinations/agoyan-waterfall.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_vodopad_agoyan"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_vodopad_agoyan.json",
+      "status": "approved",
+      "aliases": [
+        "Agoyan",
+        "vodopad-agoyan"
+      ]
+    },
+    {
+      "id": "destination_ecuador_vodopad_fata_nevesty_banos",
+      "type": "destination",
+      "name": "Водопад Фата Невесты (Баньос)",
+      "url": "/ecuador/place/manto-de-la-novia-waterfall/",
+      "slug": "manto-de-la-novia-waterfall",
+      "contentPath": "src/content/destinations/manto-de-la-novia-waterfall.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_vodopad_fata_nevesty_banos"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_vodopad_fata_nevesty_banos.json",
+      "status": "approved",
+      "aliases": [
+        "Manto de la Novia",
+        "vodopad-fata-nevesty-banos"
+      ]
+    },
+    {
+      "id": "destination_ecuador_vodopad_kotel_dyavola_banos",
+      "type": "destination",
+      "name": "Водопад Котел Дьявола (Баньос)",
+      "url": "/ecuador/place/pailon-del-diablo-waterfall/",
+      "slug": "pailon-del-diablo-waterfall",
+      "contentPath": "src/content/destinations/pailon-del-diablo-waterfall.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_vodopad_kotel_dyavola_banos"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_vodopad_kotel_dyavola_banos.json",
+      "status": "approved",
+      "aliases": [
+        "Pailon del Diablo",
+        "Пайлон-дель-Дьябло",
+        "Сковорода дьявола",
+        "vodopad-kotel-dyavola-banos"
+      ]
+    },
+    {
+      "id": "destination_ecuador_zapovednik_chimboraso",
+      "type": "destination",
+      "name": "Заповедник Чимборасо",
+      "url": "/ecuador/place/chimborazo-reserve/",
+      "slug": "chimborazo-reserve",
+      "contentPath": "src/content/destinations/chimborazo-reserve.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_zapovednik_chimboraso"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_ecuador_zapovednik_chimboraso.json",
+      "status": "approved",
+      "aliases": [
+        "zapovednik-chimboraso"
+      ]
+    },
+    {
+      "id": "excursion_ecuador_banos_waterfalls_day",
+      "type": "excursion",
+      "name": "Баньос: Дорога водопадов и качели «Конец света»",
+      "url": "/ecuador/banos/banos-waterfalls-and-swing/",
+      "slug": "banos-waterfalls-and-swing",
+      "contentPath": "src/content/excursions/banos-waterfalls-and-swing.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_banos"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/excursion_ecuador_banos_waterfalls_day.json",
+      "status": "approved",
+      "relatedDestinationIds": [
+        "destination_ecuador_vodopad_agoyan",
+        "destination_ecuador_vodopad_fata_nevesty_banos",
+        "destination_ecuador_vodopad_kotel_dyavola_banos",
+        "destination_ecuador_riobamba",
+        "destination_ecuador_kanon_pastasa",
+        "destination_ecuador_casa_del_arbol"
+      ]
+    },
+    {
+      "id": "excursion_ecuador_cajas_cacao_day",
+      "type": "excursion",
+      "name": "Кахас и плантация какао: высокогорные озёра и шоколад",
+      "url": "/ecuador/cajas-national-park/cajas-and-cacao-workshop/",
+      "slug": "cajas-and-cacao-workshop",
+      "contentPath": "src/content/excursions/cajas-and-cacao-workshop.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_nacionalnyj_park_kahas"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/excursion_ecuador_cajas_cacao_day.json",
+      "status": "approved",
+      "relatedDestinationIds": [
+        "destination_ecuador_kuenka",
+        "destination_ecuador_guayakil"
+      ]
+    },
+    {
+      "id": "excursion_ecuador_chimborazo_ingapirca_day",
+      "type": "excursion",
+      "name": "Чимборасо и Ингапирка: высокогорье и наследие инков",
+      "url": "/ecuador/chimborazo-reserve/chimborazo-and-ingapirca/",
+      "slug": "chimborazo-and-ingapirca",
+      "contentPath": "src/content/excursions/chimborazo-and-ingapirca.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_zapovednik_chimboraso"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/excursion_ecuador_chimborazo_ingapirca_day.json",
+      "status": "approved",
+      "relatedDestinationIds": [
+        "destination_ecuador_riobamba",
+        "destination_ecuador_ingapirka",
+        "destination_ecuador_kuenka"
+      ]
+    },
+    {
+      "id": "excursion_ecuador_cuenca_city_hats",
+      "type": "excursion",
+      "name": "Куэнка: исторический центр и панамские шляпы",
+      "url": "/ecuador/cuenca/cuenca-city-and-panama-hats/",
+      "slug": "cuenca-city-and-panama-hats",
+      "contentPath": "src/content/excursions/cuenca-city-and-panama-hats.md",
+      "countryIds": [
+        "country_ecuador"
+      ],
+      "destinationIds": [
+        "destination_ecuador_kuenka"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/excursion_ecuador_cuenca_city_hats.json",
+      "status": "approved"
     }
-  ],
-  "metadata": {
-    "schemaVersion": 1,
-    "counts": {
-      "types": {
-        "country": 24,
-        "destination": 245,
-        "tour": 342,
-        "excursion": 189
-      },
-      "media": {
-        "ready": 761,
-        "existing_enhanced_preserved": 10,
-        "generated": 8,
-        "provided_originals": 21
-      },
-      "rawDonorUrls": 694,
-      "activeTypes": {
-        "country": 24,
-        "destination": 245,
-        "tour": 298,
-        "excursion": 188
-      },
-      "archivedTypes": {
-        "tour": 44,
-        "excursion": 1
-      }
-    },
-    "preparedAt": "2026-10-02",
-    "inputsSha256": {
-      "textSources": "bc2aac0e1b4349b4499c64e7b43fd4de4a264963518364b0e51d399f07b16892",
-      "rawMedia": "d99fee377cc268cdf6dce4597260c556e82025897a84b0acdfce552053a208f3",
-      "excursionGeography": "bfce404ae957145add3fdfbec6bf849cc9115794a3c666a0d9d47d655af7be72"
-    },
-    "sheet": {
-      "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
-      "sheetName": "Страницы"
-    },
-    "indexingScope": "Constants prepared on this date. Current publication existence and successful enhanced media remain authoritative in the exact contentPath and photo registry; these indexes do not require status maintenance for each new page.",
-    "destinationCatalogSha256": "4e8f6b8e53d6fd6a6d2ce05f6a9f9865b5dfce9bba86fc5630ee21ac6606d65f",
-    "folders": {
-      "original": {
-        "id": "1zbcua6J4CzYyay9kYMGQeyvHQ_gGj1Vl",
-        "path": "page_texts_original"
-      },
-      "cleanedTours": {
-        "id": "1qJ4nY892iSINyc4E2b394H3xmnLRaEDU",
-        "path": "page_texts_newstep"
-      },
-      "cleanedExcursions": {
-        "id": "1qtRfOWgew62WFk9IsCDGPVD_giO8Pcvh",
-        "path": "page_texts_newstep/Excursions"
-      },
-      "rewriteV2": {
-        "id": "1-9mtF_QMc3oFgRiwmNU8ZNo8lWFEA0Rs",
-        "path": "page_texts_rewrite_v2"
-      },
-      "unversionedExcursionRewrite": {
-        "id": "1RgV9IvknAKOqwvJyrl_kg-LwRSUDRFuZ",
-        "path": "page_texts_rewrite_excursions"
-      },
-      "rewriteV1Archive": {
-        "id": "1HQsgzuoIPDMFQAQ8QXQGX0h_kLWtdJbC",
-        "path": "page_texts_rewrite"
-      }
-    },
-    "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
-    "entityCount": 967
-  }
+  ]
 }

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "node --test tests/generated-source-materials.test.mjs tests/commissioned-source-materials.test.mjs tests/catalog-pagination.test.mjs tests/vip-tours.test.mjs tests/interest-model.test.mjs tests/interest-copy.test.mjs tests/structured-data.test.mjs tests/structured-data-html.test.mjs tests/prepare-pages-media.test.mjs tests/direct-s3-ingestion.test.mjs && astro build && node scripts/check-catalog-pagination.mjs && node scripts/check-interest-model.mjs && node scripts/check-interest-presentation.mjs && node scripts/check-schema.mjs && node scripts/prepare-pages-media.mjs && pagefind --site dist",
+    "build": "node --test tests/generated-source-materials.test.mjs tests/commissioned-source-materials.test.mjs tests/catalog-pagination.test.mjs tests/vip-tours.test.mjs tests/interest-model.test.mjs tests/interest-copy.test.mjs tests/seo-meta.test.mjs tests/structured-data.test.mjs tests/structured-data-html.test.mjs tests/prepare-pages-media.test.mjs tests/direct-s3-ingestion.test.mjs && astro build && node scripts/check-catalog-pagination.mjs && node scripts/check-interest-model.mjs && node scripts/check-interest-presentation.mjs && node scripts/check-schema.mjs && node scripts/prepare-pages-media.mjs && pagefind --site dist",
     "preview": "astro preview",
     "reserve:destination": "node scripts/reserve-destination.mjs",
     "test:destination-reservations": "node --test tests/destination-reservations.test.mjs",

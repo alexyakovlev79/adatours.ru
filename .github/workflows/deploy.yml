@@ -6,6 +6,9 @@ on:
     paths-ignore:
       - data/media/upload-session-request.json
   workflow_dispatch:
+  schedule:
+    # December 31 at 21:05 UTC = January 1 at 00:05 Moscow time.
+    - cron: '5 21 31 12 *'
 
 permissions:
   contents: read

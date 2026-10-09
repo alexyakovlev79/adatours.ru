@@ -1,5 +1,6 @@
 ---
 import { interestsForCountry } from '../lib/interest-model.mjs';
+import { SEO, seoFill } from '../lib/seo-meta.mjs';
 import { isActiveEntity } from '../lib/archive.mjs';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
@@ -104,7 +105,7 @@ const featureBandImageTextAlign = (href: string) => {
 ---
 
 <BaseLayout leadTitle={`Собрать путешествие по стране: ${d.name}`} leadEntityId={d.id}
-  title={`${d.name}: туры и путешествия`}
+  title={seoFill(SEO.country.title, { country: d.name, numbers: [destinationEntries.length, excursionEntries.length, tourEntries.length] })}
   description={d.summary}
   image={d.hero?.src}
   canonical={countryPath(d)}

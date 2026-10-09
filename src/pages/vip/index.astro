@@ -1,5 +1,6 @@
 ---
 import { createHash } from 'node:crypto';
+import { SEO, seoFill, seoPopularCountriesAfterPo } from '../../lib/seo-meta.mjs';
 import { getCollection } from 'astro:content';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -17,6 +18,7 @@ import { withBase } from '../../lib/paths';
 import { selectVipTours, vipTourPriceLabel } from '../../lib/vip-tours.mjs';
 
 const allTours = await getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data));
+const allCountries = await getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data));
 const vipSelection = selectVipTours(allTours);
 const vipTours = vipSelection.entries;
 if (!vipTours.length) throw new Error('VIP page requires at least one qualifying active tour');
@@ -39,6 +41,17 @@ if (!heroTour?.data.hero?.src) {
 }
 const hero = heroTour.data.hero.src;
 const countryIds = new Set(vipTours.flatMap((entry) => mainTourCountries(entry.data).map((country) => country.id)));
+const vipCountryCounts = new Map();
+for (const tour of vipTours) {
+  for (const country of mainTourCountries(tour.data)) {
+    const prior = vipCountryCounts.get(country.id);
+    vipCountryCounts.set(country.id, { name: country.name, count: (prior?.count ?? 0) + 1 });
+  }
+}
+const vipPopularCountries = [...vipCountryCounts.values()]
+  .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'ru'))
+  .slice(0, 5).map((entry) => entry.name);
+const vipCountryListAfterPo = seoPopularCountriesAfterPo(vipPopularCountries, vipCountryCounts.size > 5);
 const durations = vipTours.map((entry) => entry.data.durationDays)
   .filter((value): value is number => typeof value === 'number' && Number.isFinite(value));
 const minDuration = durations.length ? Math.min(...durations) : undefined;
@@ -62,8 +75,8 @@ const listSchema = {
 <BaseLayout
   leadTitle="Собрать индивидуальный VIP-маршрут"
   leadEntityId="vip"
-  title="VIP и Luxury туры по Бразилии и Латинской Америке"
-  description="VIP и Luxury путешествия Ada Tours по Бразилии и Латинской Америке: готовые премиальные маршруты, частный формат и персональная адаптация программы."
+  title={seoFill(SEO.vip.title, { numbers: [vipTours.length], countries: allCountries.length })}
+  description={seoFill(SEO.vip.description, { popularCountriesAfterPo: vipCountryListAfterPo })}
   canonical="/vip/"
   image={hero}
   breadcrumbs={[{ label: 'VIP / Luxury', href: '/vip/' }]}

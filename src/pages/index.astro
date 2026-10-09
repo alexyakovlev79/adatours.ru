@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { SEO, seoFill } from '../lib/seo-meta.mjs';
 import { isActiveEntity } from '../lib/archive.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../lib/country-popularity';
 import { buildInterestIndex, countLabel } from '../lib/interest-model.mjs';
@@ -71,8 +72,8 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
 <BaseLayout
   leadTitle="Расскажите, какое путешествие вы планируете"
   leadEntityId="home"
-  title="Путешествия по Бразилии и Латинской Америке | Ada Tours"
-  description="Выбирайте путешествия по странам, интересам и готовым маршрутам. Индивидуальные и VIP-туры, экскурсии, MICE и DMC по Бразилии и Латинской Америке."
+  title={seoFill(SEO.home.title, { numbers: [tours.length], countries: countries.length })}
+  description={SEO.home.description}
   image="/media/home/hero-rio-generated-20261008-v2.webp"
   pageSchema={adaReviewPageSchema(ADA_REVIEWS)}
 >

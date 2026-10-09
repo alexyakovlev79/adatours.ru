@@ -1,5 +1,6 @@
 ---
 import { createHash } from 'node:crypto';
+import { SEO, seoFill, seoCountLabel } from '../../lib/seo-meta.mjs';
 import { getCollection } from 'astro:content';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -110,8 +111,8 @@ const hero = pageHeroTour.data.hero.src;
 const proofImage = proofCoverTour.data.hero.src;
 const countryExamples = popularCountries.map(({ country }) => country.name);
 const countryExampleText = `${countryExamples.join(', ')}${countryCounts.size > countryExamples.length ? ' и другие' : ''}`;
-const seoTitle = `Multi-country туры по Латинской Америке — ${countLabel(multiCountryTours.length, ['маршрут', 'маршрута', 'маршрутов'])}`;
-const seoDescription = `${countLabel(multiCountryTours.length, ['тур', 'тура', 'туров'])} по нескольким странам Латинской Америки: ${countryExampleText}. Готовые маршруты Ada Tours можно адаптировать под даты и длительность.`;
+const seoTitle = seoFill(SEO.multiCountry.title, { numbers: [multiCountryTours.length] });
+const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: seoCountLabel(multiCountryTours.length, ['тур','тура','туров']), popularCountries: countryExampleText });
 ---
 
 <BaseLayout

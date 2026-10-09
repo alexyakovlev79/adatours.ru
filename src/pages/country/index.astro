@@ -1,6 +1,7 @@
 ---
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { getCollection } from 'astro:content';
+import { SEO, seoFill } from '../../lib/seo-meta.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { countryPath } from '../../lib/routes';
 import Hero from '../../components/editorial/Hero.astro';
@@ -27,8 +28,8 @@ const countryAlignments = new Map([
 ---
 
 <BaseLayout
-  title="Страны Латинской Америки | Путешествия с Ada Tours"
-  description="Бразилия, Аргентина, Перу и другие направления Латинской Америки. Страны, города, маршруты и тематические поездки с локальной координацией Ada Tours."
+  title={seoFill(SEO.countriesIndex.title, { numbers: [tours.length], countries: countries.length })}
+  description={SEO.countriesIndex.description}
 >
   <Hero
     eyebrow="Страны"

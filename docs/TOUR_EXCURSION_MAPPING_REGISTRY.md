@@ -1326,7 +1326,9 @@ Commit определяется по изменению, содержащему 
 
 | День | Excursion ID | Статус данных |
 |---|---|---|
-| 4 | `excursion_ecuador_banos_waterfalls_day` | Подготовлено; deploy ожидается |
-| 5 | `excursion_ecuador_chimborazo_ingapirca_day` | Подготовлено; deploy ожидается |
-| 6 | `excursion_ecuador_cuenca_city_hats` | Подготовлено; deploy ожидается |
-| 7 | `excursion_ecuador_cajas_cacao_day` | Подготовлено; deploy ожидается |
+| 4 | `excursion_ecuador_banos_waterfalls_day` | Опубликовано; Word сверён |
+| 5 | `excursion_ecuador_chimborazo_ingapirca_day` | Опубликовано; Word сверён |
+| 6 | `excursion_ecuador_cuenca_city_hats` | Опубликовано; Word сверён |
+| 7 | `excursion_ecuador_cajas_cacao_day` | Опубликовано; Word сверён |
+
+Публикация P030 и всех четырёх модулей подтверждена: https://github.com/alexyakovlev79/adatours.ru/actions/runs/37923090452; commit `f71ddd03163de98106b1edaa632e6e137765e81d`. Реестр страниц: строки 974–977.

@@ -230,7 +230,8 @@ currency: USD
 priceNote: $1560
 hero:
   src: "/media/tours/kolumbiya-stolitsy/hero-src-enhanced-20261007.webp"
-  alt: Колумбия- столицы
+  hover: "Богота в Колумбии: посетители у городской надписи на смотровой площадке"
+  alt: "Смотровая площадка с белой надписью BOGOTA, Колумбия"
 routeCountries:
 - country_colombia
 routeDestinations:

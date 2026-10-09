@@ -357,7 +357,8 @@ itinerary:
     После программы размещение в районе Атакамы.'
   images:
   - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/hero-enhanced-20261006.webp
-    alt: Сан-Педро-де-Атакама
+    hover: "Атакама в Чили: скалы и горные вершины в закатном свете"
+    alt: "Красные горы и каменистый пейзаж Атакамы на закате, Чили"
   - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 11

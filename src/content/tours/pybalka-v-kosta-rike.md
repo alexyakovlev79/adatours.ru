@@ -154,7 +154,8 @@ currency: USD
 priceNote: $3825
 hero:
   src: /media/tours/pybalka-v-kosta-rike/hero-src-enhanced-20261007.webp
-  alt: Pыбалка в Коста-Рике
+  hover: "Пойманная форель в руках рыболова над рекой"
+  alt: "Рыболов держит форель над водой рядом с удочкой"
 routeCountries:
 - country_costa_rica
 routeDestinations:

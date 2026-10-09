@@ -198,7 +198,8 @@ currency: USD
 priceNote: $1648
 hero:
   src: "/media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/hero-src-enhanced-20261007.webp"
-  alt: 'Вся Панама: Национальные парки, острова и долины'
+  hover: "Морская звезда на мокром песке в набегающей волне"
+  alt: "Сине-оранжевая морская звезда у кромки волны"
 routeCountries:
 - country_panama
 routeDestinations:

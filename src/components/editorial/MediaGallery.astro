@@ -1,9 +1,11 @@
 ---
 import { withBase } from '../../lib/paths';
+import { imageCaption } from '../../lib/image-captions.mjs';
 
 interface MediaItem {
   src: string;
   alt?: string;
+  hover?: string;
   caption?: string;
   status?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
@@ -52,7 +54,7 @@ const orientation = layout === 'orientation';
                 : undefined
             }
           >
-            <img src={withBase(item.src)} alt={item.alt ?? ''} loading="lazy" />
+            <img src={withBase(item.src)} alt={imageCaption(item.src, item).alt} title={imageCaption(item.src, item).hover} loading="lazy" />
             {item.caption && <figcaption>{item.caption}</figcaption>}
           </figure>
         ))}

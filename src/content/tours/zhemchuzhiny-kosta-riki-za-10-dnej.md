@@ -220,7 +220,8 @@ durationDays: 10
 durationNights: 9
 hero:
   src: /media/tours/5-chudes-kosta-riki/hero-src-enhanced-20261007.webp
-  alt: Жемчужины Коста-Рики за 10 дней
+  hover: "Коста-Рика: водопад и ярко-бирюзовая вода у зеленого склона"
+  alt: "Водопад в бирюзовом водоеме среди тропического леса, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

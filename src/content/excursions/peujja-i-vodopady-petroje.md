@@ -16,7 +16,8 @@ hero:
   alt: "Пеуйла и Водопады  Петроэ"
 gallery:
   - src: "/media/excursions/peujja-i-vodopady-petroje/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Чили: речные пороги на фоне леса и снежной вершины вулкана"
+    alt: "Бурная река у леса и заснеженного вулкана, Чили"
 route: []
 lead: "Экскурсия в Пеуйлу и к водопадам Петроэ в Чили."
 included: []

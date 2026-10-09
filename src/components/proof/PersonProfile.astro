@@ -1,10 +1,11 @@
 ---
 import { withBase } from '../../lib/paths';
+import { imageCaption } from '../../lib/image-captions.mjs';
 
 interface Props {
   name: string;
   role: string;
-  photo?: { src: string; alt?: string };
+  photo?: { src: string; alt?: string; hover?: string };
   expertise?: string[];
   href?: string;
   eyebrow?: string;
@@ -25,7 +26,7 @@ const resolvedPhoto = photo?.src ? withBase(photo.src) : undefined;
 <section class="person section">
   <div class="person__media">
     {resolvedPhoto ? (
-      <img src={resolvedPhoto} alt={photo?.alt || name} loading="lazy" />
+      <img src={resolvedPhoto} alt={imageCaption(photo.src, { ...photo, alt: photo.alt || name }).alt} title={imageCaption(photo.src, photo).hover} loading="lazy" />
     ) : (
       <div class="person__placeholder" aria-hidden="true"></div>
     )}

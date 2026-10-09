@@ -118,7 +118,8 @@ itinerary:
     Размещение в Porto Preguiças Resort.'
   image:
     src: /media/tours/lensojs-maranenses/hero-enhanced-20261006.webp
-    alt: Ленсойс-Мараньенсес
+    hover: "Ленсойс-Мараньенсес в Бразилии: белый песок и голубые лагуны"
+    alt: "Туристы на песчаной косе среди лагун Ленсойс-Мараньенсес, Бразилия"
 - day: 3
   title: Баррейриньяс - река Прегисас - Сан-Луис
   places:
@@ -194,7 +195,8 @@ currency: USD
 priceNote: $1315
 hero:
   src: /media/tours/lensojs-maranenses/hero-enhanced-20261006.webp
-  alt: Ленсойс-Мараньенсес
+  hover: "Ленсойс-Мараньенсес в Бразилии: белый песок и голубые лагуны"
+  alt: "Туристы на песчаной косе среди лагун Ленсойс-Мараньенсес, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

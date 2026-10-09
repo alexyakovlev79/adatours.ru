@@ -226,7 +226,8 @@ currency: USD
 priceNote: $8624
 hero:
   src: /media/tours/panama-kosta-rika-nikaragua/hero-rainforest-enhanced-20261006.webp
-  alt: Панама – Коста Рика- Никарагуа
+  hover: "Попугай крупным планом на фоне зеленой тропической растительности"
+  alt: "Зеленый попугай с красным лбом и черным клювом среди листвы"
 routeCountries:
 - country_panama
 - country_costa_rica

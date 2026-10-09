@@ -144,7 +144,8 @@ currency: USD
 priceNote: $4914
 hero:
   src: /media/tours/luchshee-iz-dvukh-mirov/hero-enhanced-20261006.webp
-  alt: 'Белиз: Лучшее Из Двух Миров'
+  hover: "Коралловый риф с рыбами, скатами, черепахой и пловцом в маске"
+  alt: "Пловец с маской над кораллами среди рыб, скатов и морской черепахи"
 routeCountries:
 - country_belize
 routeDestinations:

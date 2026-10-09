@@ -18,9 +18,11 @@ hero:
   alt: "Корковадо и лес Тижука"
 gallery:
   - src: "/media/excursions/korkovado-i-les-tizhuka/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Рио-де-Жанейро в Бразилии: побережье и город среди зеленых гор"
+    alt: "Горные склоны, город и океан, Рио-де-Жанейро, Бразилия"
   - src: "/media/excursions/korkovado-i-les-tizhuka/gallery-1-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Рио-де-Жанейро в Бразилии: вид на город и море над лесом"
+    alt: "Панорама Рио-де-Жанейро за тропическим лесом Тижука, Бразилия"
 route:
   - "Корковадо"
   - "Лес Тижука"

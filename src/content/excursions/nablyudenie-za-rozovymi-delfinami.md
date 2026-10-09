@@ -17,7 +17,8 @@ destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/1HQQThKxYsgHoUkh7BEEU7noQF9DzgQD1/view?usp=drivesdk
 hero:
   src: /media/excursions/nablyudenie-za-rozovymi-delfinami/hero-enhanced-20261006.webp
-  alt: ''
+  hover: "Амазония в Бразилии: прыжок розового дельфина над водой"
+  alt: "Розовый речной дельфин выпрыгивает из воды, Амазония, Бразилия"
 themes: ["theme_wildlife"]
 ---
 

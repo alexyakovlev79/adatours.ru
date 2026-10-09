@@ -221,7 +221,8 @@ currency: USD
 priceNote: $3955.
 hero:
   src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/hero-enhanced-20261007.webp"
-  alt: 'Активная Венесуэла: Аквапарк Юрского периода'
+  hover: "Венесуэла: плоская вершина горы над лесистыми склонами"
+  alt: "Столовая гора с отвесными стенами среди зеленых холмов, Венесуэла"
 routeCountries:
 - country_venezuela
 routeDestinations:

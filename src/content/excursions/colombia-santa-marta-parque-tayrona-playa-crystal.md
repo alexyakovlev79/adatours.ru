@@ -16,9 +16,11 @@ hero:
   alt: "Санта Марта - Парк Тайрона и Плайя Кристал"
 gallery:
   - src: "/media/excursions/colombia-santa-marta-parque-tayrona-playa-crystal/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Колумбия: женщины в цветных платьях и корзина фруктов"
+    alt: "Две женщины в ярких платьях, одна с фруктами на голове, Колумбия"
   - src: "/media/excursions/colombia-santa-marta-parque-tayrona-playa-crystal/gallery-1-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Парк Тайрона в Колумбии: море, пляж и зеленый мыс"
+    alt: "Песчаный пляж у лесистого мыса, парк Тайрона, Колумбия"
 route:
   - "Санта-Марта"
   - "Парк Тайрона"

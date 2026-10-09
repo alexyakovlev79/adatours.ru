@@ -20,7 +20,8 @@ gallery:
   - src: "/media/excursions/urok-serfinga-rio-de-zhanejro/gallery-0-src-enhanced-20261007.webp"
     alt: ""
   - src: "/media/excursions/urok-serfinga-rio-de-zhanejro/gallery-1-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Рио-де-Жанейро в Бразилии: серфер скользит в изгибе волны"
+    alt: "Серфер на доске внутри высокой волны, Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp
     alt: ""
   - src: "/media/excursions/urok-serfinga-rio-de-zhanejro/gallery-3-src-enhanced-20261007.webp"

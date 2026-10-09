@@ -46,7 +46,8 @@ itinerary:
       Непрофессиональная рыбалка продолжительностью от 40 минут до 1 часа.'
   image:
     src: /media/home/amazon-enhanced-20260930.webp
-    alt: Река и тропический лес Амазонии
+    hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
+    alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
 - excursionRef: excursion_amazon_night_caiman_boat_trip
   places: []
 - excursionRef: excursion_amazon_caboclo_family_visit
@@ -125,7 +126,8 @@ currency: USD
 priceNote: $1298
 hero:
   src: /media/tours/manaus-4-dnya-3-nochi/hero-enhanced-20261006.webp
-  alt: 'Манаус: 4 дня / 3 ночи'
+  hover: "Дети в ярких перьевых головных уборах с рисунками на лицах"
+  alt: "Улыбающиеся дети с раскрашенными лицами и головными уборами из перьев"
 routeCountries:
 - country_brazil
 routeDestinations:

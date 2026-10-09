@@ -13,9 +13,11 @@ hero:
   alt: "На фото: озеро Атитлан в Гватемале"
 gallery:
 - src: /media/destinations/lake-atitlan/gallery-1-enhanced-20261003.webp
-  alt: ''
+  hover: "Гватемала: площадь перед храмом с двумя башнями"
+  alt: "Храм с двумя колокольнями на городской площади, Гватемала"
 - src: /media/destinations/lake-atitlan/gallery-2-enhanced-20261003.webp
-  alt: ''
+  hover: "Гватемальский рынок рядом с башней церкви"
+  alt: "Рынок под тентами у церковной башни, Гватемала"
 - src: /media/destinations/lake-atitlan/gallery-3-enhanced-20261003.webp
   alt: 'На фото: озеро Атитлан в Гватемале'
 - src: /media/destinations/lake-atitlan/gallery-4-enhanced-20261003.webp

@@ -20,7 +20,8 @@ hero:
   alt: "Джип тур на Санта-Терезу и Корковадо"
 gallery:
   - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-1-enhanced-20261006.webp
-    alt: ""
+    hover: "Рио-де-Жанейро в Бразилии: панорама города и побережья с горы"
+    alt: "Город, ипподром и океан с высоты, Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: ""
 route:

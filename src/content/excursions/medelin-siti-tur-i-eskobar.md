@@ -19,7 +19,8 @@ currency: USD
 priceNote: "Основная стоимость — $258. Для 2 человек — $156 на человека, для 3 человек — $141 на человека, для 4 человек — $102 на человека."
 hero:
   src: /media/destinations/medellin/hero-enhanced-20261003.webp
-  alt: Медельин, Колумбия
+  hover: "Медельин в Колумбии: городская застройка на фоне гор"
+  alt: "Панорама Медельина с высотными домами и горами, Колумбия"
 gallery:
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-0-src-enhanced-20261008.webp
     alt: Скульптуры Фернандо Ботеро в Медельине

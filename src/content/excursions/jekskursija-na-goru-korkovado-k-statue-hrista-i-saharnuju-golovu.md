@@ -19,9 +19,11 @@ hero:
   alt: "Сити Тур+ Корковадо + Сахарная Голова"
 gallery:
   - src: "/media/excursions/jekskursija-na-goru-korkovado-k-statue-hrista-i-saharnuju-golovu/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Рио-де-Жанейро в Бразилии: канатная дорога перед скалой Сахарная Голова"
+    alt: "Кабина канатной дороги у Сахарной Головы, Рио-де-Жанейро, Бразилия"
   - src: "/media/excursions/jekskursija-na-goru-korkovado-k-statue-hrista-i-saharnuju-golovu/gallery-1-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Рио-де-Жанейро в Бразилии: конусообразный кафедральный собор"
+    alt: "Конусообразный кафедральный собор Рио-де-Жанейро, Бразилия"
 route:
   - "Рио-де-Жанейро"
   - "Корковадо и статуя Христа Спасителя"

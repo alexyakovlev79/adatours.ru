@@ -80,7 +80,8 @@ itinerary:
     Ночь в Панахачеле, Porta Hotel del Lago.'
   images:
   - src: /media/destinations/lake-atitlan/gallery-1-enhanced-20261003.webp
-    alt: ''
+    hover: "Гватемала: площадь перед храмом с двумя башнями"
+    alt: "Храм с двумя колокольнями на городской площади, Гватемала"
 - day: 3
   title: Озеро Атитлан - Гватемала-Сити
   places:

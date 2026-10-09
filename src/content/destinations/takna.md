@@ -13,15 +13,20 @@ hero:
   alt: "На фото: Такна - самый южный город Перу"
 gallery:
   - src: "/media/destinations/takna/gallery-1-enhanced-20261005.webp"
-    alt: ""
+    hover: "Такна в Перу: фонтан и пальмы на площади перед собором"
+    alt: "Фонтан с фигурами перед собором, Такна, Перу"
   - src: "/media/destinations/takna/gallery-2-enhanced-20261005.webp"
-    alt: ""
+    hover: "Такна в Перу: арка и памятники среди городской застройки"
+    alt: "Высокая арка с памятниками на городской улице, Такна, Перу"
   - src: "/media/destinations/takna/gallery-3-enhanced-20261005.webp"
-    alt: ""
+    hover: "Такна в Перу: белая мечеть у дороги"
+    alt: "Белое здание мечети с куполом и минаретом, Такна, Перу"
   - src: "/media/destinations/takna/gallery-4-enhanced-20261005.webp"
-    alt: ""
+    hover: "Такна в Перу: вход в собор между двумя колокольнями"
+    alt: "Фасад собора с двумя башнями, Такна, Перу"
   - src: "/media/destinations/takna/gallery-5-enhanced-20261005.webp"
-    alt: ""
+    hover: "Песчаная дюна с извилистым гребнем на фоне гор"
+    alt: "Длинный гребень песчаной дюны среди пустынных гор"
 facts: []
 featureBands: []
 relatedDestinations: []

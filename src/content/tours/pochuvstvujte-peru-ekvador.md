@@ -97,7 +97,8 @@ itinerary:
       Экскурсии проходят небольшими группами до 8 человек в сопровождении гидов-натуралистов. Для выездов в лес и на протоки используются частные катера, которыми управляют капитан и команда судна.
   images:
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    alt: Амазония
+    hover: "Амазония в Бразилии: река петляет среди густого тропического леса"
+    alt: "Изгиб реки среди тропического леса, Амазония, Бразилия"
   - src: "/media/tours/pochuvstvujte-peru-ekvador/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: Икитос
 - day: 7
@@ -328,7 +329,8 @@ currency: USD
 priceNote: $17980
 hero:
   src: "/media/tours/pochuvstvujte-peru-ekvador/hero-src-enhanced-20261007.webp"
-  alt: Почувствуйте Перу-Эквадор
+  hover: "Галапагосские острова в Эквадоре: скалы и песчаная бухта у бирюзовой воды"
+  alt: "Вулканические холмы, скальный шпиль и бухта, Галапагосы, Эквадор"
 routeCountries:
 - country_peru
 - country_ecuador

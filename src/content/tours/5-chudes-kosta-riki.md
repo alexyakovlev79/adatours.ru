@@ -194,7 +194,8 @@ currency: USD
 priceNote: $5389
 hero:
   src: /media/tours/5-chudes-kosta-riki/hero-src-enhanced-20261007.webp
-  alt: 5 Чудес Коста Рики
+  hover: "Коста-Рика: водопад и ярко-бирюзовая вода у зеленого склона"
+  alt: "Водопад в бирюзовом водоеме среди тропического леса, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

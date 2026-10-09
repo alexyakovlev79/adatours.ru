@@ -21,7 +21,8 @@ gallery:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: ""
   - src: "/media/excursions/brazilskaya-storona-vodopadov-iguasu/gallery-1-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Водопады Игуасу: потоки воды с нескольких скальных уступов"
+    alt: "Каскады водопадов Игуасу среди тропической зелени"
 route:
   - "Игуасу"
   - "Глотка Дьявола"

@@ -15,7 +15,8 @@ priceFrom: null
 currency: USD
 hero:
   src: "/media/destinations/pereira/featureBands-0-image-enhanced-20261007.webp"
-  alt: Дегустация свежесваренного колумбийского кофе на плантации
+  hover: "Колумбия: плод какао рядом с чашкой напитка и выпечкой"
+  alt: "Раскрытый плод какао, чашка напитка и выпечка, Колумбия"
 included:
 - Знакомство с производством кофе и дегустация по программе.
 notIncluded: []

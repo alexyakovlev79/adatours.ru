@@ -16,7 +16,8 @@ currency: USD
 priceNote: "Стоимость — $664. При 2 участниках — $331 на человека; при 3 участниках — $253 на человека."
 hero:
   src: /media/countries/bolivia/featureBands-3-enhanced-20261002.webp
-  alt: "на фото: Тиуанако, Боливия"
+  hover: "Тиуанако в Боливии: каменная стена с резными головами"
+  alt: "Каменные головы в стене комплекса Тиуанако, Боливия"
 gallery:
   - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: Ла Пас, столица Боливии"

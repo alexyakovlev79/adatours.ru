@@ -16,7 +16,8 @@ currency: USD
 priceNote: "Основная стоимость — $953. Для группы из 2–4 человек — $477."
 hero:
   src: /media/countries/uruguay/featureBands-1-enhanced-20261002.webp
-  alt: "на фото: Колония-дель-Сакраменто в Уругвае"
+  hover: "Уругвай: здание с башнями и арочными окнами"
+  alt: "Здание с арочными окнами и зубчатыми башнями, Уругвай"
 gallery:
   - src: "/media/excursions/ekskursiya-v-koloniyu-del-sakramento/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: Колония-дель-Сакраменто в Уругвае"

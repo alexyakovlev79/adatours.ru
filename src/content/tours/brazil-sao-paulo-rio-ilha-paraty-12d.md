@@ -33,7 +33,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/hero-enhanced-20260930.webp
-  alt: Сан-Паулу, начало маршрута по Бразилии
+  hover: "Сан-Паулу в Бразилии: городские огни под вечерним небом"
+  alt: "Ночной Сан-Паулу с освещенными башнями и месяцем, Бразилия"
 gallery:
   - src: /media/destinations/ilha-grande/hero-enhanced-20261001.webp
     alt: Побережье острова Илья-Гранди
@@ -52,7 +53,8 @@ itinerary:
       Прибытие в аэропорт Сан-Паулу. Водитель встретит вас с табличкой с логотипом компании и вашими фамилиями. Трансфер в отель.
     images:
       - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/hero-enhanced-20260930.webp
-        alt: "Сан-Паулу, Бразилия"
+        hover: "Сан-Паулу в Бразилии: городские огни под вечерним небом"
+        alt: "Ночной Сан-Паулу с освещенными башнями и месяцем, Бразилия"
         intendedSlot: "itinerary:day-1"
   - day: 2
     title: "Сан-Паулу"

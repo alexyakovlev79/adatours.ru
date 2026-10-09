@@ -2,12 +2,14 @@
 import { isActiveEntity, activeReplacementId } from '../../lib/archive.mjs';
 import { getCollection } from 'astro:content';
 import { withBase } from '../../lib/paths';
+import { imageCaption } from '../../lib/image-captions.mjs';
 import { excursionPath } from '../../lib/routes';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface MediaItem {
   src: string;
   alt?: string;
+  hover?: string;
   status?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
   intendedSlot?: string;
@@ -229,7 +231,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
                           <div class="day__embedded-excursion__media">
                             <img
                               src={withBase(excursion.hero.src)}
-                              alt={excursion.hero.alt ?? excursion.title}
+                              alt={imageCaption(excursion.hero.src, excursion.hero).alt}
+                              title={imageCaption(excursion.hero.src, excursion.hero).hover}
                               loading="lazy"
                               data-media-status={excursion.hero.status ?? 'legacy'}
                               data-replacement-reason={excursion.hero.replacementReason}
@@ -261,7 +264,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
               {day.dayImages.map((item) => (
                 <img
                   src={withBase(item.src)}
-                  alt={item.alt ?? ''}
+                  alt={imageCaption(item.src, item).alt}
+                  title={imageCaption(item.src, item).hover}
                   loading="lazy"
                   data-media-status={item.status ?? 'legacy'}
                   data-replacement-reason={item.replacementReason}

@@ -32,7 +32,8 @@ itinerary:
   text: "В 06:00 - завтрак.  \nВ 07:00 - выезд на рыбалку на весь день.  \nОбед проходит во время рыбалки.  \nВ 07:00 вечера - ужин и свободное время."
   image:
     src: /media/home/amazon-enhanced-20260930.webp
-    alt: Река и тропический лес Амазонии
+    hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
+    alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
 - day: 3
   title: День 3
   places:
@@ -70,7 +71,8 @@ currency: USD
 priceNote: $850
 hero:
   src: /media/tours/rio-de-zhanejro/hero-enhanced-20261006.webp
-  alt: Спортивная рыбалка – Pousada Mamori
+  hover: "Большая полосатая рыба в руках рыболова на фоне лесистого берега"
+  alt: "Рыболов на лодке держит крупную желтую рыбу с темными полосами"
 routeCountries:
 - country_brazil
 routeDestinations:

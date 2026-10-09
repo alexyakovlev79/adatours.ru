@@ -149,7 +149,8 @@ itinerary:
     части путешествия можно было выбрать собственный темп отдыха.
   images:
   - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
-    alt: Бузиос
+    hover: "Бузиос в Бразилии: лодки в спокойной бухте у песчаного берега"
+    alt: "Лодки в спокойной бухте у песчаного берега, Бузиос, Бразилия"
 - day: 10
   title: Бузиос
   places: []
@@ -170,7 +171,8 @@ itinerary:
   - src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
     alt: Вся Бразилия от Сан Пауло до Бузиоса
   - src: /media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp
-    alt: Бузиос
+    hover: "Бузиос в Бразилии: лодки в спокойной бухте у песчаного берега"
+    alt: "Лодки в спокойной бухте у песчаного берега, Бузиос, Бразилия"
 - day: 12
   title: Сан-Паулу
   places:

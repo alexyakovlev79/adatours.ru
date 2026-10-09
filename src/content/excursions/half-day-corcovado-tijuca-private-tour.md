@@ -19,7 +19,8 @@ hero:
   alt: "Индивидуальный тур на Корковадо& Тижука"
 gallery:
   - src: "/media/excursions/half-day-corcovado-tijuca-private-tour/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Пассажиры открытого внедорожника на дороге в тропическом лесу"
+    alt: "Открытый внедорожник с пассажирами на лесной дороге"
 route:
   - "Корковадо"
   - "Лес Тижука"

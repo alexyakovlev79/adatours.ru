@@ -11,19 +11,26 @@ searchAliases: []
 hero: {"src":"/media/destinations/iquitos/hero-enhanced-20261005.webp","alt":"На фото: ленивец из Амазонии в Икитос Перу"}
 gallery:
 - src: /media/destinations/iquitos/gallery-1-enhanced-20261005.webp
-  alt: ''
+  hover: "Икитос в Перу: лодки у домов с соломенными крышами"
+  alt: "Дома с соломенными крышами и лодки на воде, Икитос, Перу"
 - src: /media/destinations/iquitos/gallery-2-enhanced-20261005.webp
-  alt: ''
+  hover: "Бабочка с расправленными узорчатыми крыльями среди листьев"
+  alt: "Крупная оранжево-коричневая бабочка на фоне листвы"
 - src: /media/destinations/iquitos/gallery-3-enhanced-20261005.webp
-  alt: ''
+  hover: "Икитос в Перу: городская площадь и башня церкви"
+  alt: "Площадь с пальмами и церковной башней, Икитос, Перу"
 - src: /media/destinations/iquitos/gallery-4-enhanced-20261005.webp
-  alt: ''
+  hover: "Река в Перу: вид из лодки на зеленые берега"
+  alt: "Нос лодки на реке среди тропического леса, Перу"
 - src: /media/destinations/iquitos/gallery-5-enhanced-20261005.webp
-  alt: ''
+  hover: "Икитос в Перу: оживленная улица с моторикшами"
+  alt: "Моторикши и мотоциклы на улице Икитоса, Перу"
 - src: /media/destinations/iquitos/gallery-6-enhanced-20261005.webp
-  alt: ''
+  hover: "Икитос в Перу: деревянная лодка с мальчиком у берега"
+  alt: "Мальчик в деревянной лодке у причала, Икитос, Перу"
 - src: /media/destinations/iquitos/gallery-7-enhanced-20261005.webp
-  alt: ''
+  hover: "Рынок Икитоса в Перу: прилавок с фруктами и овощами"
+  alt: "Прилавок с фруктами и овощами на рынке, Икитос, Перу"
 - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-2-images-0-src-enhanced-20261007.webp
   alt: Индеец в джунглях Амазонии, Икитос Перу
 - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp

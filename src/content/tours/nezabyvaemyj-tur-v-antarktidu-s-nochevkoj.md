@@ -79,7 +79,8 @@ currency: USD
 priceNote: $8221
 hero:
   src: /media/tours/antarctica-overnight-adventure/hero-seal-user-20261005.webp
-  alt: Незабываемый тур в Антарктиду(с ночевкой)
+  hover: "Антарктида: тюлень на плавучем льду перед снежным побережьем"
+  alt: "Тюлень на льдине среди заснеженных гор, Антарктида"
 routeCountries:
 - country_antarctica
 routeDestinations:

@@ -16,7 +16,8 @@ hero:
   alt: Куэнка, Эквадор
 gallery:
   - src: /media/destinations/playa-del-carmen/gallery-2-enhanced-20261004.webp
-    alt: Колониальная застройка Куэнки
+    hover: "Плайя-дель-Кармен в Мексике: прохожие на улице с магазинами"
+    alt: "Оживленная торговая улица у моря, Плайя-дель-Кармен, Мексика"
   - src: /media/destinations/kuenka/gallery-2-enhanced-20261006.webp
     alt: Улицы Куэнки в Эквадоре
   - src: /media/destinations/kuenka/gallery-3-enhanced-20261006.webp

@@ -184,7 +184,8 @@ currency: USD
 priceNote: $4014
 hero:
   src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/hero-src-enhanced-20261007.webp"
-  alt: 'На фото:'
+  hover: "Суринам: внутренний двор кирпичного комплекса с пальмами"
+  alt: "Двор с пальмами среди кирпичных зданий, Суринам"
 routeCountries:
 - country_suriname
 - country_french_guiana

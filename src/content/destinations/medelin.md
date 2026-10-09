@@ -8,7 +8,7 @@ countryId: "country_colombia"
 destinationType: "city"
 summary: "Медельин окружен холмами и зелеными горными склонами. Здесь можно увидеть старинные базилики, коллекцию орхидей в ботаническом саду и скульптуры Ботеро."
 searchAliases: []
-hero: {"src":"/media/destinations/medellin/hero-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"}
+hero: {"src":"/media/destinations/medellin/hero-enhanced-20261003.webp","alt":"Панорама Медельина с высотными домами и горами, Колумбия", hover: "Медельин в Колумбии: городская застройка на фоне гор"}
 gallery:
 - src: /media/destinations/medellin/gallery-1-enhanced-20261003.webp
   alt: 'На фото: город Медельин в Колумбии'
@@ -17,7 +17,8 @@ gallery:
 - src: /media/destinations/medellin/gallery-3-enhanced-20261003.webp
   alt: 'На фото: город Медельин в Колумбии'
 - src: /media/destinations/medellin/gallery-4-enhanced-20261003.webp
-  alt: ''
+  hover: "Медельин в Колумбии: высотное здание с заостренной белой башней"
+  alt: "Высотное здание с заостренной белой башней, Медельин, Колумбия"
 - src: /media/destinations/medellin/gallery-5-enhanced-20261003.webp
   alt: 'На фото: город Медельин в Колумбии'
 - src: /media/destinations/medellin/gallery-6-enhanced-20261003.webp

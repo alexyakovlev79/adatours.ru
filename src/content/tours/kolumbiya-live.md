@@ -304,7 +304,8 @@ currency: USD
 priceNote: $3315
 hero:
   src: "/media/tours/kolumbiya-live/hero-src-enhanced-20261007.webp"
-  alt: Колумбия Live
+  hover: "Колумбия: рисунок девушки и цветные узоры на небольшой постройке"
+  alt: "Яркое граффити с женским лицом и цветами, Колумбия"
 routeCountries:
 - country_colombia
 routeDestinations:

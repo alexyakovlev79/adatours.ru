@@ -105,7 +105,8 @@ currency: USD
 priceNote: $3415
 hero:
   src: /media/tours/fordy-ognennoj-zemli/hero-enhanced-20261006.webp
-  alt: Фьорды Огненной Земли
+  hover: "Антарктида: группа на каяках среди айсбергов перед снежными горами"
+  alt: "Каякеры у айсбергов на фоне заснеженных гор, Антарктида"
 routeCountries:
 - country_chile
 - country_argentina

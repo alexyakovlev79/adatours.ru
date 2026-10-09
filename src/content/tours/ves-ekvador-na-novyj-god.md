@@ -550,7 +550,8 @@ primaryThemes:
 - theme_wildlife
 gallery:
 - src: /media/tours/complete-ecuador-new-year/word-04-20261009-v1.webp
-  alt: Митад-дель-Мундо
+  hover: "Митад-дель-Мундо в Эквадоре: пара перед памятником с шаром на вершине"
+  alt: "Пара у монумента Митад-дель-Мундо, Эквадор"
 - src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1.webp
   alt: Озеро Килотоа
 - src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1.webp

@@ -119,7 +119,8 @@ itinerary:
     **Питание:** завтрак, обед, ужин.
   images:
   - src: "/media/excursions/venezuela-angel-airplane-flight/hero-src-enhanced-20261007.webp"
-    alt: Водопад Анхель
+    hover: "Венесуэла: высокий водопад Анхель на отвесной скальной стене"
+    alt: "Водопад Анхель падает со столовой горы среди облаков, Венесуэла"
 - day: 4
   title: Свободное время в Канайме
   places:
@@ -244,7 +245,8 @@ currency: USD
 priceNote: $3998
 hero:
   src: "/media/tours/kraski-venesuely/hero-src-enhanced-20261007.webp"
-  alt: Краски Венесуэлы
+  hover: "Венесуэла: речной пейзаж с зелеными островами и порогами"
+  alt: "Широкая река с островками и каменистыми порогами, Венесуэла"
 routeCountries:
 - country_venezuela
 routeDestinations:

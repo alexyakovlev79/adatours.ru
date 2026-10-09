@@ -182,7 +182,8 @@ currency: USD
 priceNote: $2955
 hero:
   src: /media/tours/beliz-priklyuchenie-materik-ostrov/hero-enhanced-20261006.webp
-  alt: 'Белиз: Приключение «Материк / Остров»'
+  hover: "Белиз: мальчик в маске для плавания с морской звездой"
+  alt: "Мальчик в маске для плавания держит морскую звезду, Белиз"
 routeCountries:
 - country_belize
 routeDestinations:

@@ -10,7 +10,8 @@ summary: "Монтевидео: площадь Независимости, ст�
 searchAliases: []
 hero:
   src: /media/countries/uruguay/featureBands-1-enhanced-20261002.webp
-  alt: "На фото: древний форт в столице Уругвая городе Монтевидео"
+  hover: "Уругвай: здание с башнями и арочными окнами"
+  alt: "Здание с арочными окнами и зубчатыми башнями, Уругвай"
 gallery:
 - src: /media/destinations/montevideo/gallery-1-enhanced-20261005.webp
   alt: 'На фото: в столице Уругвая городе Монтевидео'

@@ -221,7 +221,8 @@ currency: USD
 priceNote: $2498
 hero:
   src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/hero-src-enhanced-20261007.webp
-  alt: 'Коста Рика: Короткая, но полная программа'
+  hover: "Коста-Рика: пляж с пальмой и волнами у тропического берега"
+  alt: "Пальма над песчаным берегом и океанскими волнами, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

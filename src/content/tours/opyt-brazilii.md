@@ -259,7 +259,8 @@ currency: USD
 priceNote: $3395
 hero:
   src: /media/tours/opyt-brazilii/hero-enhanced-20261006.webp
-  alt: Опыт Бразилии
+  hover: "Ипанема в Рио-де-Жанейро, Бразилия: люди у волн на фоне горы"
+  alt: "Игроки на песчаном пляже Ипанема, Рио-де-Жанейро, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

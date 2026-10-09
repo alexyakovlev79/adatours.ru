@@ -343,7 +343,8 @@ currency: USD
 priceNote: $5460
 hero:
   src: /media/tours/beliz-strastnyj-nablyudatel-za-ptitsami/hero-enhanced-20261006.webp
-  alt: 'Белиз: Страстный Наблюдатель за птицами'
+  hover: "Белиз: колибри на зеленом фоне у тонкой ветки"
+  alt: "Колибри у тонкой ветки на зеленом фоне, Белиз"
 routeCountries:
 - country_belize
 routeDestinations:

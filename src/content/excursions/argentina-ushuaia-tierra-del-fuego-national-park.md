@@ -20,7 +20,8 @@ gallery:
   - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
     alt: ""
   - src: "/media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Огненная Земля в Аргентине: водоем и горы за деревянным ограждением"
+    alt: "Бирюзовая вода и лесистые горы в парке Огненная Земля, Аргентина"
 route: []
 lead: "Экскурсия в национальный парк «Огненная земля» в Аргентине."
 included: []

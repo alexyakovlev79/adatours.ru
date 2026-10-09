@@ -18,9 +18,11 @@ hero:
   alt: "Обзорная экскурсия по Сантьяго"
 gallery:
   - src: "/media/excursions/obzornaja-jekskursija-po-sant-jago/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Сантьяго в Чили: освещенные высотные здания перед горным хребтом"
+    alt: "Небоскребы Сантьяго на фоне гор и розового заката, Чили"
   - src: "/media/excursions/obzornaja-jekskursija-po-sant-jago/gallery-1-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Сантьяго в Чили: мосты, река и дорожные огни вечером"
+    alt: "Вечерний Сантьяго с рекой, мостами и огнями дорог, Чили"
 route: []
 lead: "Обзорная экскурсия по Сантьяго в Чили."
 included: []

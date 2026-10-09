@@ -165,7 +165,8 @@ currency: USD
 priceNote: $8624
 hero:
   src: /media/tours/panama-i-kosta-rika/hero-src-enhanced-20261007.webp
-  alt: Панама и Коста Рика
+  hover: "Тропический остров с пальмами и лодкой на прозрачной бирюзовой воде"
+  alt: "Деревянная лодка у острова с пальмами и хижинами"
 routeCountries:
 - country_panama
 - country_costa_rica

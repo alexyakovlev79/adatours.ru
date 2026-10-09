@@ -131,7 +131,8 @@ itinerary:
     Дополнительно можно заказать полет над Рио на вертолете, стоимость указана **от 200 USD на человека**.
   images:
   - src: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
-    alt: Панорамы Корковаду и Сахарной головы
+    hover: "Рио-де-Жанейро в Бразилии: закат над заливом с яхтами"
+    alt: "Лодки и яхты в заливе на закате, Рио-де-Жанейро, Бразилия"
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
 - day: 8

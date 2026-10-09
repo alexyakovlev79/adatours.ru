@@ -225,7 +225,8 @@ currency: USD
 priceNote: $3130
 hero:
   src: /media/tours/brazil-coffee-tour-ru/hero-enhanced-20261006.webp
-  alt: Кофе Тур в Бразилии на 8 дней
+  hover: "Ветви кофейного растения с красными ягодами среди листьев"
+  alt: "Красные кофейные ягоды на ветках среди листьев"
 routeCountries:
 - country_brazil
 routeDestinations:

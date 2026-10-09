@@ -80,7 +80,8 @@ itinerary:
     Ночь в отеле.
   images:
   - src: /media/tours/vip-chili-5/hero-enhanced-20261006.webp
-    alt: Сан-Педро-де-Атакама
+    hover: "Атакама в Чили: женщина на скальном уступе под закатным небом"
+    alt: "Женщина на скальном уступе Атакамы под закатным небом, Чили"
   - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - excursionRef: excursion_chile_atacama_astronomy_tour
@@ -165,7 +166,8 @@ currency: USD
 priceNote: $3538
 hero:
   src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/hero-enhanced-20261006.webp
-  alt: 'Чили: Космическое путешествие на Земле'
+  hover: "Атакама в Чили: скалы и горные вершины в закатном свете"
+  alt: "Красные горы и каменистый пейзаж Атакамы на закате, Чили"
 routeCountries:
 - country_chile
 routeDestinations:

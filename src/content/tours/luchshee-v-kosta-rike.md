@@ -270,7 +270,8 @@ currency: USD
 priceNote: $9629.
 hero:
   src: /media/tours/luchshee-v-kosta-rike/hero-src-enhanced-20261007.webp
-  alt: Тур в  Коста-Рику- лучшее в Коста Рике
+  hover: "Коста-Рика: поток воды в узком скальном проходе среди леса"
+  alt: "Водопад между покрытыми зеленью скалами, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

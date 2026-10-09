@@ -240,7 +240,8 @@ currency: USD
 priceNote: $2561 на человека при размещении DBL в отелях 4* и группе из 6 человек
 hero:
   src: /media/tours/meksika-fantasticheskaya/hero-src-enhanced-20261007.webp
-  alt: Мексика Фантастическая
+  hover: "Теотиуакан в Мексике: пирамида среди каменных ступенчатых построек"
+  alt: "Пирамида и каменные ступенчатые сооружения Теотиуакана, Мексика"
 routeCountries:
 - country_mexico
 routeDestinations:

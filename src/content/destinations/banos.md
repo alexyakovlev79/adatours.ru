@@ -21,7 +21,8 @@ gallery:
   - src: "/media/destinations/banos/gallery-4-enhanced-20261006.webp"
     alt: "На фото: город Баньос в Эквадоре в Андах"
   - src: "/media/destinations/veracruz/gallery-4-enhanced-20261004.webp"
-    alt: "На фото: город Баньос в Эквадоре в Андах"
+    hover: "Веракрус в Мексике: набережная и краны морского порта"
+    alt: "Портовая набережная с пальмой и грузовыми кранами, Веракрус, Мексика"
 facts: []
 featureBands: []
 relatedDestinations: []

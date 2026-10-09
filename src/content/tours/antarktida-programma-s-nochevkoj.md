@@ -88,7 +88,8 @@ currency: USD
 priceNote: $8220
 hero:
   src: "/media/tours/antarktida-programma-s-nochevkoj/hero-src-enhanced-20261007.webp"
-  alt: 'Антарктида: программа с ночевкой'
+  hover: "Пунта-Аренас в Чили: крыши домов и улица на фоне морского берега"
+  alt: "Городская улица к морю, Пунта-Аренас, Чили"
 routeCountries:
 - country_antarctica
 routeDestinations:

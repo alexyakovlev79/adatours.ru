@@ -166,7 +166,8 @@ currency: USD
 priceNote: $2655 на человека при двухместном размещении
 hero:
   src: /media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/hero-src-enhanced-20261007.webp
-  alt: 'Мексика: «Южное Приключение — Краткий маршрут»'
+  hover: "Мехико в Мексике: цветные праздничные композиции на фасаде здания"
+  alt: "Здание с праздничными украшениями и флагами, Мехико, Мексика"
 routeCountries:
 - country_mexico
 routeDestinations:

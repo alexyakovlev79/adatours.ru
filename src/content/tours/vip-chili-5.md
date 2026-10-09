@@ -272,7 +272,8 @@ currency: USD
 priceNote: $10749
 hero:
   src: /media/tours/vip-chili-5/hero-enhanced-20261006.webp
-  alt: VIP Чили  5*
+  hover: "Атакама в Чили: женщина на скальном уступе под закатным небом"
+  alt: "Женщина на скальном уступе Атакамы под закатным небом, Чили"
 routeCountries:
 - country_chile
 routeDestinations:

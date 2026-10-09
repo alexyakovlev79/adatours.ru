@@ -204,7 +204,8 @@ currency: USD
 priceNote: $5563
 hero:
   src: "/media/tours/priklyuchenie-v-gvianakh/hero-src-enhanced-20261007.webp"
-  alt: Приключение в Гвианах
+  hover: "Фонтан и цветник на площади перед зданием с башенками"
+  alt: "Городская площадь с фонтаном, пальмами и нарядным фасадом"
 routeCountries:
 - country_guyana
 - country_suriname

@@ -13,13 +13,17 @@ hero:
   alt: "На фото: запуск ракеты с космодрома Куру во Французской Гвиане"
 gallery:
 - src: /media/destinations/kosmodrom-kuru/gallery-1-enhanced-20261005.webp
-  alt: ''
+  hover: "Французская Гвиана: прибрежные дома в окружении пальм"
+  alt: "Дома среди пальм на берегу, Французская Гвиана"
 - src: /media/destinations/kosmodrom-kuru/gallery-2-enhanced-20261005.webp
-  alt: ''
+  hover: "Песчаное побережье с пальмами во Французской Гвиане"
+  alt: "Пальмы на песчаном берегу у воды, Французская Гвиана"
 - src: /media/destinations/kosmodrom-kuru/gallery-3-enhanced-20261005.webp
-  alt: ''
+  hover: "Французская Гвиана: старое кирпичное здание в тропической зелени"
+  alt: "Кирпичное здание с арочными окнами среди пальм, Французская Гвиана"
 - src: /media/destinations/kosmodrom-kuru/gallery-4-enhanced-20261005.webp
-  alt: ''
+  hover: "Морское побережье Французской Гвианы с пальмами и островом"
+  alt: "Пальмы у моря и зеленый остров, Французская Гвиана"
 - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp
   alt: Космодром Куру
 facts: []

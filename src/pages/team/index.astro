@@ -5,6 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
 import AboutNav from '../../components/commercial/AboutNav.astro';
 import { withBase } from '../../lib/paths';
+import { imageCaption } from '../../lib/image-captions.mjs';
 
 const teamPhoto = '/media/people/team/team-group-enhanced-20261007.webp';
 const people = await getCollection('people', ({ data }) =>
@@ -74,7 +75,8 @@ const colleagues = [
       <img
         class="team-hero__photo"
         src={withBase(teamPhoto)}
-        alt="Групповая фотография команды Ada Tours"
+        alt={imageCaption(teamPhoto).alt}
+        title={imageCaption(teamPhoto).hover}
         width="1536"
         height="1024"
         loading="eager"

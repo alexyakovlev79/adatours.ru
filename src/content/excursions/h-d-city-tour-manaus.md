@@ -18,7 +18,8 @@ hero:
   alt: "Манаус-сити тур"
 gallery:
   - src: "/media/excursions/h-d-city-tour-manaus/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Песчаный пляж с птицами и высотным зданием на закате"
+    alt: "Закат над песчаным пляжем с птицами и высотным зданием"
 route: []
 lead: "Сити-тур по Манаусу в бразильской Амазонии."
 included: []

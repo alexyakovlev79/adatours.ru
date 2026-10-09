@@ -23,7 +23,8 @@ gallery:
   - src: /media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-enhanced-20261006.webp
     alt: ""
   - src: "/media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Сан-Паулу в Бразилии: плотная городская застройка с высоты"
+    alt: "Высотные здания в центре Сан-Паулу, Бразилия"
 route: []
 lead: "Обзорная экскурсия по Сан-Паулу на целый день продолжительностью 8 часов."
 included: []

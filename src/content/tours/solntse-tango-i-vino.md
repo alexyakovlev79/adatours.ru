@@ -251,7 +251,8 @@ currency: USD
 priceNote: $4150
 hero:
   src: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
-  alt: 'На фото: город Рио-де-Жанейро, Бразилия'
+  hover: "Рио-де-Жанейро в Бразилии: закат над заливом с яхтами"
+  alt: "Лодки и яхты в заливе на закате, Рио-де-Жанейро, Бразилия"
 routeCountries:
 - country_brazil
 - country_argentina

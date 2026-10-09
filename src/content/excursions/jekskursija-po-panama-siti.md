@@ -20,16 +20,20 @@ hero:
 gallery:
   -
     src: "/media/excursions/jekskursija-po-panama-siti/gallery-0-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Панама-Сити: собор с темным центральным фасадом и белыми башнями"
+    alt: "Собор с двумя белыми башнями, Панама-Сити, Панама"
   -
     src: "/media/excursions/jekskursija-po-panama-siti/gallery-1-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Панама: озеро в окружении густого тропического леса"
+    alt: "Озеро среди густого тропического леса, Панама"
   -
     src: "/media/excursions/jekskursija-po-panama-siti/gallery-2-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Панама: мост над водой у портовых причалов с высоты"
+    alt: "Мост над водным путём и портовыми причалами, Панама"
   -
     src: "/media/excursions/jekskursija-po-panama-siti/gallery-3-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Панамский канал: лайнер рядом со шлюзами и зелеными берегами"
+    alt: "Круизный лайнер в Панамском канале у шлюзов"
 route:
   - "Панама-Виехо"
   - "Каско-Антигуо"

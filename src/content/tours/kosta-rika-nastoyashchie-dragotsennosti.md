@@ -118,7 +118,8 @@ currency: USD
 priceNote: $4210 на 1 человека при размещении DBL
 hero:
   src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/hero-src-enhanced-20261007.webp
-  alt: 'Коста-Рика: Настоящие  Драгоценности'
+  hover: "Участники в ярких юбках и белых рубашках поднимают шляпы"
+  alt: "Группа в костюмах с разноцветными юбками и соломенными шляпами"
 routeCountries:
 - country_costa_rica
 routeDestinations:

@@ -27,7 +27,8 @@ gallery:
   - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-2-src-enhanced-20261007.webp"
     alt: Посещение шоколадной фермы в Перейре
   - src: "/media/destinations/pereira/featureBands-0-image-enhanced-20261007.webp"
-    alt: Напиток на ферме в Колумбии
+    hover: "Колумбия: плод какао рядом с чашкой напитка и выпечкой"
+    alt: "Раскрытый плод какао, чашка напитка и выпечка, Колумбия"
 route:
   - Перейра
   - шоколадная ферма

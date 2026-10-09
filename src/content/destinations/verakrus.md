@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Портовый город на берегу Мексиканского залива известен историческим центром, кофейнями и карнавалом. У порта можно заглянуть в старинное Gran Cafe del Portal."
 searchAliases: []
 hero: {"src":"/media/destinations/veracruz/hero-enhanced-20261004.webp","alt":"На фото: город порт Веракрус в Мексике"}
-gallery: [{"src":"/media/destinations/veracruz/gallery-1-enhanced-20261004.webp","alt":"На фото: мексиканское блюдо"},{"src":"/media/destinations/veracruz/gallery-2-enhanced-20261004.webp","alt":"На фото: город порт Веракрус в Мексике"},{"src":"/media/destinations/veracruz/gallery-3-enhanced-20261004.webp","alt":"На фото: рыба в городе Веракрус в Мексике"},{"src":"/media/destinations/veracruz/gallery-4-enhanced-20261004.webp","alt":"На фото: город порт Веракрус в Мексике"}]
+gallery: [{"src":"/media/destinations/veracruz/gallery-1-enhanced-20261004.webp","alt":"На фото: мексиканское блюдо"},{"src":"/media/destinations/veracruz/gallery-2-enhanced-20261004.webp","alt":"На фото: город порт Веракрус в Мексике"},{"src":"/media/destinations/veracruz/gallery-3-enhanced-20261004.webp","alt":"На фото: рыба в городе Веракрус в Мексике"},{"src":"/media/destinations/veracruz/gallery-4-enhanced-20261004.webp","alt":"Портовая набережная с пальмой и грузовыми кранами, Веракрус, Мексика", hover: "Веракрус в Мексике: набережная и краны морского порта"}]
 facts: []
 featureBands: []
 relatedDestinations: []

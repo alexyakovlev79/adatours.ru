@@ -19,13 +19,16 @@ hero:
 gallery:
   -
     src: "/media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/gallery-0-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Игуасу: панорама водопадов среди зеленых склонов"
+    alt: "Водопады Игуасу с облаком брызг и лесистыми берегами"
   -
     src: "/media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/gallery-1-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Водопады Игуасу: радуга в брызгах над лесистыми уступами"
+    alt: "Радуга над каскадами Игуасу среди тропического леса"
   -
     src: "/media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/gallery-2-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Водопады Игуасу крупным планом: широкий поток с высокого уступа"
+    alt: "Широкий поток Игуасу падает с высокого уступа"
 route: []
 lead: "Экскурсия на бразильскую сторону водопадов."
 included: []

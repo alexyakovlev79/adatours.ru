@@ -15,7 +15,7 @@ priceFrom: 371
 currency: "USD"
 priceNote: "Стоимость — $371."
 hero: {"src":"/media/excursions/jekskursija-v-kafazhate/hero-src-enhanced-20261007.webp","alt":"Экскурсия в  Кафажате"}
-gallery: [{"src":"/media/excursions/jekskursija-v-kafazhate/gallery-0-src-enhanced-20261007.webp","alt":""},{"src":"/media/excursions/jekskursija-v-kafazhate/gallery-1-src-enhanced-20261007.webp","alt":""},{"src":"/media/excursions/jekskursija-v-kafazhate/gallery-2-src-enhanced-20261007.webp","alt":""}]
+gallery: [{"src":"/media/excursions/jekskursija-v-kafazhate/gallery-0-src-enhanced-20261007.webp","alt":"Узкий проход между красными слоистыми скалами, Аргентина", hover: "Аргентина: скальный проход с высокими красными стенами"},{"src":"/media/excursions/jekskursija-v-kafazhate/gallery-1-src-enhanced-20261007.webp","alt":"Виноградники перед белым зданием и горами, Кафайяте, Аргентина", hover: "Кафайяте в Аргентине: ряды виноградной лозы на фоне гор"},{"src":"/media/excursions/jekskursija-v-kafazhate/gallery-2-src-enhanced-20261007.webp","alt":"Туристы среди высоких красных стен каньона, Аргентина", hover: "Аргентина: люди на дне узкого каньона с красными скалами"}]
 route: ["Сальта","Долина Кальчакес","Кебрада де лас Кончас","Кафажате","Сальта"]
 lead: "Экскурсия на целый день с англоговорящим гидом и частным трансфером в Кафажате: долина и ущелье Кебрада де лас Кончас, главная площадь и винный погребок с дегустацией национальных вин."
 included: ["Услуги англоговорящего гида","Частный трансфер","Посещение главной площади","Посещение винного погребка с дегустацией национальных вин"]

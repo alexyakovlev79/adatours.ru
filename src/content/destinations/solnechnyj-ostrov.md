@@ -10,7 +10,8 @@ summary: На Солнечном острове находятся Дворец 
 searchAliases: []
 hero:
   src: /media/destinations/isla-del-sol/hero-enhanced-20261003.webp
-  alt: 'На фото: Солнечный остров в Боливии'
+  hover: "Каньон Колка в Перу: река среди горных склонов и террас"
+  alt: "Глубокий каньон с рекой и зелеными террасами, Колка, Перу"
 gallery:
 - src: /media/destinations/isla-del-sol/gallery-1-enhanced-20261003.webp
   alt: 'На фото: Солнечный остров в Боливии'

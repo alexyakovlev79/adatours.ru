@@ -82,7 +82,8 @@ itinerary:
     Игапо (затопленный лес), рыбалка на пираний. 19:00 – ужин и свободное время.'
   images:
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    alt: Манаус
+    hover: "Амазония в Бразилии: река петляет среди густого тропического леса"
+    alt: "Изгиб реки среди тропического леса, Амазония, Бразилия"
   - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
     alt: Рио-де-Жанейро
 - day: 5
@@ -113,7 +114,8 @@ itinerary:
   - src: /media/tours/brazil-gems-14d/itinerary/day-07-enhanced-20261001.webp
     alt: Сальвадор
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    alt: Манаус
+    hover: "Амазония в Бразилии: река петляет среди густого тропического леса"
+    alt: "Изгиб реки среди тропического леса, Амазония, Бразилия"
 - day: 7
   title: Сальвадор
   places:

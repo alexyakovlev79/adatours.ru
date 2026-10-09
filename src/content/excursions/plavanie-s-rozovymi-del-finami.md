@@ -19,11 +19,13 @@ hero:
   alt: "Плавание с розовыми дельфинами"
 gallery:
   - src: "/media/excursions/plavanie-s-rozovymi-del-finami/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Бразильская Амазония: речные петли в зеленом лесном массиве"
+    alt: "Извилистая река среди тропического леса, Амазония, Бразилия"
   - src: "/media/excursions/plavanie-s-rozovymi-del-finami/gallery-1-src-enhanced-20261007.webp"
     alt: ""
   - src: "/media/excursions/plavanie-s-rozovymi-del-finami/gallery-2-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Розовый дельфин крупным планом: голова над водой"
+    alt: "Розовый речной дельфин крупным планом над водой"
 route:
   - "Манаус"
   - "Амазония"

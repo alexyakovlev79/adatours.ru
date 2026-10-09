@@ -20,7 +20,8 @@ gallery:
   - src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
     alt: ""
   - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-3-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Мужчина собирает кофейные ягоды на плантации"
+    alt: "Сборщик с корзиной у куста с красными кофейными ягодами"
   - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-4-src-enhanced-20261007.webp"
     alt: ""
 route:

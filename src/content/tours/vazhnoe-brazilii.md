@@ -105,7 +105,8 @@ itinerary:
     Продолжительность от 40 минут до 1 часа.'
   images:
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    alt: Манаус
+    hover: "Амазония в Бразилии: река петляет среди густого тропического леса"
+    alt: "Изгиб реки среди тропического леса, Амазония, Бразилия"
 - excursionRef: excursion_amazon_night_caiman_boat_trip
   places: []
 - excursionRef: excursion_amazon_caboclo_family_visit
@@ -125,7 +126,8 @@ itinerary:
     Проживание и питание продолжаются по условиям лоджа с полным пансионом.'
   image:
     src: /media/home/amazon-enhanced-20260930.webp
-    alt: Река и тропический лес Амазонии
+    hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
+    alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
 - day: 5
   title: Манаус - Фоз-ду-Игуасу
   places:

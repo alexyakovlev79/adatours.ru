@@ -34,7 +34,8 @@ itinerary:
     Ночь в Манаусе.'
   image:
     src: /media/home/amazon-enhanced-20260930.webp
-    alt: Река и тропический лес Амазонии
+    hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
+    alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
 - day: 2
   title: Манаус - встреча рек - розовые дельфины - Evolution Eco Lodge
   places:
@@ -117,7 +118,8 @@ currency: USD
 priceNote: $1571
 hero:
   src: /media/tours/amazoniya/hero-enhanced-20261006.webp
-  alt: Амазония
+  hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
+  alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

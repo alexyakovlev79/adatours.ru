@@ -21,10 +21,12 @@ hero:
 gallery:
   -
     src: "/media/excursions/jekskursija-v-santos-i-guaruzha/gallery-0-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Бразилия: автомобильный виадук среди зеленых холмов"
+    alt: "Длинный виадук над тропическим лесом, Бразилия"
   -
     src: "/media/excursions/jekskursija-v-santos-i-guaruzha/gallery-1-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Гуаружа в Бразилии: пляж и зеленые холмы у моря"
+    alt: "Песчаная бухта и прибрежная застройка, Гуаружа, Бразилия"
 route: []
 lead: "Экскурсия в Сантос и Гуаружа с русскоговорящим гидом на весь день."
 included: []

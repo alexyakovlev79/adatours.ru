@@ -20,7 +20,8 @@ hero:
   alt: "Джип тур на Корковадо и тропический лес Тижука"
 gallery:
   - src: "/media/excursions/corcovado-tijuca-forest-half-day-tour-lunch/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Зеленый открытый внедорожник рядом с тропическим лесом"
+    alt: "Открытый зеленый внедорожник у тропического леса"
 route:
   - "Тропический лес Тижука"
   - "Корковадо"

@@ -277,7 +277,8 @@ currency: USD
 priceNote: $5638
 hero:
   src: /media/tours/kostarikanskie-sokrovishcha/hero-src-enhanced-20261007.webp
-  alt: Костариканские сокровища
+  hover: "Коста-Рика: речные потоки между валунами и зелеными берегами"
+  alt: "Каменистая река среди густого тропического леса, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

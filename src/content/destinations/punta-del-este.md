@@ -10,7 +10,8 @@ summary: "Пунта дель Эсте: пляжный и активный от�
 searchAliases: []
 hero:
   src: /media/countries/uruguay/featureBands-3-enhanced-20261002.webp
-  alt: "На фото: курорт Пунта дель Эсте в Уругвае"
+  hover: "Скалистый берег и белые террасы здания в Уругвае"
+  alt: "Белое здание с террасами на скалистом берегу, Уругвай"
 gallery:
 - src: /media/destinations/punta-del-este/gallery-1-enhanced-20261005.webp
   alt: 'На фото: курорт Пунта дель Эсте в Уругвае'

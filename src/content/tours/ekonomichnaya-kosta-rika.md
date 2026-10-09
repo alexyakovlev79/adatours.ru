@@ -152,7 +152,8 @@ currency: USD
 priceNote: $2081
 hero:
   src: /media/tours/ekonomichnaya-kosta-rika/hero-src-enhanced-20261007.webp
-  alt: Экономичная Коста Рика
+  hover: "Каяк с девушкой на спокойной воде между зелеными берегами"
+  alt: "Девушка в каяке на реке среди тропического леса"
 routeCountries:
 - country_costa_rica
 routeDestinations:

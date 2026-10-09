@@ -18,7 +18,8 @@ currency: USD
 priceNote: "Основная стоимость — $953. Для группы из 2–4 человек — $477 на человека."
 hero:
   src: /media/countries/uruguay/featureBands-3-enhanced-20261002.webp
-  alt: Пунта-дель-Эсте, Уругвай
+  hover: "Скалистый берег и белые террасы здания в Уругвае"
+  alt: "Белое здание с террасами на скалистом берегу, Уругвай"
 gallery:
   - src: /media/excursions/punta-del-este-i-piriapolis/gallery-0-src-enhanced-20261008.webp
     alt: Пириаполис, Уругвай

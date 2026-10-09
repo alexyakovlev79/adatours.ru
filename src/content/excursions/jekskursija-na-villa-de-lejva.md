@@ -20,13 +20,16 @@ hero:
 gallery:
   -
     src: "/media/excursions/jekskursija-na-villa-de-lejva/gallery-0-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Вилья-де-Лейва в Колумбии: внутренний двор с арками и цветами"
+    alt: "Двор с аркадой и цветущим садом, Вилья-де-Лейва, Колумбия"
   -
     src: "/media/excursions/jekskursija-na-villa-de-lejva/gallery-1-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Вилья-де-Лейва в Колумбии: ярко-бирюзовая вода у песчаного берега"
+    alt: "Бирюзовый водоем среди сухой земли, Вилья-де-Лейва, Колумбия"
   -
     src: "/media/excursions/jekskursija-na-villa-de-lejva/gallery-2-src-enhanced-20261008.webp"
-    alt: ""
+    hover: "Вечерняя площадь Вилья-де-Лейва с каменной мостовой, Колумбия"
+    alt: "Вечерняя площадь с каменной мостовой, Вилья-де-Лейва, Колумбия"
 route:
   - "Вилья-де-Лейва"
   - "Исторический мост Бояка"

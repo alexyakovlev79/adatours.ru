@@ -226,7 +226,8 @@ currency: USD
 priceNote: $4169
 hero:
   src: /media/tours/issleduya-beliz/hero-enhanced-20261006.webp
-  alt: Исследуя Белиз
+  hover: "Белиз: прозрачная морская вода у зонтов и деревянного кресла"
+  alt: "Бирюзовое море, соломенные зонты и кресло у берега, Белиз"
 routeCountries:
 - country_belize
 routeDestinations:

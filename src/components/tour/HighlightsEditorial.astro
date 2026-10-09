@@ -1,10 +1,12 @@
 ---
 import { withBase } from '../../lib/paths';
+import { imageCaption } from '../../lib/image-captions.mjs';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 
 interface HighlightMedia {
   src: string;
   alt?: string;
+  hover?: string;
   status?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
 }
@@ -45,7 +47,8 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
                 <div class="highlight__media">
                   <img
                     src={withBase(image.src)}
-                    alt={image.alt ?? ''}
+                    alt={imageCaption(image.src, image).alt}
+                    title={imageCaption(image.src, image).hover}
                     width="1200"
                     height="675"
                     loading="lazy"

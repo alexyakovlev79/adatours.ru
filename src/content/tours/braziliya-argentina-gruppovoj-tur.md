@@ -70,7 +70,8 @@ itinerary:
     После спуска маршрут продолжается на автомобиле по старому центру Рио. Вы увидите исторические церкви, монастыри, главный кафедральный собор и здания колониального периода.
   images:
   - src: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
-    alt: Панорамы Корковаду и Сахарной головы
+    hover: "Рио-де-Жанейро в Бразилии: закат над заливом с яхтами"
+    alt: "Лодки и яхты в заливе на закате, Рио-де-Жанейро, Бразилия"
 - day: 4
   title: Рио-де-Жанейро - Манаус
   places:
@@ -88,7 +89,8 @@ itinerary:
     В 19:00 ужин и свободное время.
   images:
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    alt: Бразилия-Аргентина:групповой тур
+    hover: "Амазония в Бразилии: река петляет среди густого тропического леса"
+    alt: "Изгиб реки среди тропического леса, Амазония, Бразилия"
 - day: 5
   title: Манаус
   places:
@@ -245,7 +247,8 @@ currency: USD
 priceNote: $4195
 hero:
   src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-  alt: Бразилия-Аргентина:групповой тур
+  hover: "Амазония в Бразилии: река петляет среди густого тропического леса"
+  alt: "Изгиб реки среди тропического леса, Амазония, Бразилия"
 routeCountries:
 - country_brazil
 - country_argentina

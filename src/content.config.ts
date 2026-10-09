@@ -16,6 +16,7 @@ const imageTextAlign = z.enum(['left', 'right']).optional();
 const mediaObject = z.object({
   src: z.string(),
   alt: z.string().default(''),
+  hover: z.string().optional(),
   caption: z.string().optional(),
   status: z.enum(['approved', 'needs_replacement', 'replaced']).optional(),
   replacementReason: z.enum([

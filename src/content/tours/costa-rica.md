@@ -226,7 +226,8 @@ currency: USD
 priceNote: $5561
 hero:
   src: /media/tours/costa-rica/hero-src-enhanced-20261007.webp
-  alt: На машине по Коста Рике 2024
+  hover: "Тропический водопад падает в бирюзовый водоем у скал"
+  alt: "Водопад и бирюзовая вода среди тропической зелени"
 routeCountries:
 - country_costa_rica
 routeDestinations:

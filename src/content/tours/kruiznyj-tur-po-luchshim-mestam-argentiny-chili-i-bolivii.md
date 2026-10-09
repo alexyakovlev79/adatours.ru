@@ -356,6 +356,9 @@ itinerary:
 
 
     Ночь в отеле в Пуэрто-Наталесе.'
+  images:
+  - src: /media/destinations/puerto-natales-torres-del-pajne/gallery-1-enhanced-20261005.webp
+    alt: "Разноцветные дома на берегу Пуэрто-Наталеса на фоне гор, Чили"
 - day: 7
   title: '26.12: Пуэрто-Наталес - Пунта-Аренас - начало круиза'
   places:
@@ -424,6 +427,9 @@ itinerary:
 
     В сентябре и апреле пингвинов здесь обычно нет. В таком случае вместо островов предлагается прогулка к леднику
     в соседнем заливе Brooks.'
+  images:
+  - src: /media/destinations/ainsworth-bay/hero-generated-20261008.webp
+    alt: "Бухта Эйнсворт"
 - day: 9
   title: '28.12: ледник Пиа и Ледниковая аллея'
   places:
@@ -456,6 +462,9 @@ itinerary:
 
 
     Название связано с многочисленными ледниками, спускающимися с гор Darwin.'
+  images:
+  - src: /media/destinations/beagle-channel/hero-generated-20261008.webp
+    alt: "Канал Бигль"
 - day: 10
   title: '29.12: Вулайя и мыс Горн'
   places:
@@ -502,6 +511,9 @@ itinerary:
 
 
     На острове действует постоянный маяк ВМС Чили.'
+  images:
+  - src: /media/destinations/wulaia-bay/hero-generated-20261008.webp
+    alt: "Бухта Вулайя"
 - day: 11
   title: '30.12: Ушуайя и Огненная Земля'
   places:
@@ -703,6 +715,9 @@ itinerary:
 
 
     После экскурсии возвращение в Барилоче.'
+  images:
+  - src: /media/destinations/nahuel-huapi-lake/hero-generated-20261009-followup-v1.webp
+    alt: "Озеро Науэль-Уапи с каменистого берега, Аргентина"
 - day: 17
   title: '05.01: Барилоче - Буэнос-Айрес'
   places:
@@ -728,6 +743,9 @@ itinerary:
 
 
     Вылет домой.'
+  images:
+  - src: /media/home/buenos-aires-enhanced-20260930.webp
+    alt: "Розовое здание Каса-Росада за цветочной клумбой в Буэнос-Айресе, Аргентина"
 included:
 - Проживание в отелях по программе.
 - Круизный корабль с полным пансионом и экскурсиями по программе, каюта AA.

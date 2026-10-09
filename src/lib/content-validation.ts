@@ -8,6 +8,7 @@ import destinationReservations from '../data/catalog/destination-reservations.js
 import { validateDestinationReservations } from './destination-reservations.mjs';
 import { validateSourceTextPointer, validateProvidedMedia, isNonemptyUtf8 } from './provided-materials.mjs';
 import { validateGeneratedSourceMaterials } from './generated-source-materials.mjs';
+import { validateCommissionedSourceMaterials } from './commissioned-source-materials.mjs';
 import { validateDirectAssetLedger } from '../../scripts/lib/direct-media-ledger.mjs';
 import { canonicalPath, countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
 
@@ -211,7 +212,10 @@ async function validateContent(): Promise<void> {
       const generatedMaterials = entry.text?.selected?.kind === 'editorial_generated'
         || entry.media?.status === 'generated'
         || entry.media?.provenance?.kind === 'gpt_image';
-      if (generatedMaterials) {
+      if (entry.text?.selected?.kind === 'commissioned_editorial') {
+        errors.push(...validateCommissionedSourceMaterials(entry, { repoRoot: process.cwd(), directAssets: verifiedCloudFiles })
+          .map((error) => `source-index/${name}: ${error}`));
+      } else if (generatedMaterials) {
         // Tour-day photo repair has its own strict provenance rules. Do not
         // mislabel editorial text and GPT Image assets as user-provided files.
         errors.push(...validateGeneratedSourceMaterials(entry, { repoRoot: process.cwd(), directAssets: verifiedCloudFiles })

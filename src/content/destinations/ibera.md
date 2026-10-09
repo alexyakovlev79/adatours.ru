@@ -10,7 +10,7 @@ summary: "Ибера — один из крупнейших и наиболее 
 searchAliases: ["Iberá", "Esteros del Iberá"]
 themes: ["theme_wildlife"]
 hero: {"src": "/media/destinations/destination_argentina_ibera/original-01.jpg", "alt": "Ибера"}
-gallery: [{"src": "/media/destinations/destination_argentina_ibera/original-02.jpg", "alt": "Ибера"}]
+gallery: [{"src": "/media/destinations/destination_argentina_ibera/original-02.jpg", "alt": "Олень с ветвистыми рогами среди травы и воды в Ибере, Аргентина", hover: "Ибера: олень в зелёных зарослях водно-болотных угодий"}]
 facts: []
 featureBands: []
 relatedDestinations: []

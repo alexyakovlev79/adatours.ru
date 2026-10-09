@@ -13,11 +13,13 @@ hero:
   alt: "На фото: остров Паракас в Перу"
 gallery:
   - src: "/media/destinations/parakas/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: остров Паракас в Перу"
+    alt: "Красноватый пляж и жёлтые скалы побережья Паракаса, Перу"
+    hover: "Паракас: волны у красного песка и жёлтых прибрежных скал"
   - src: "/media/destinations/parakas/gallery-2-enhanced-20261005.webp"
     alt: "На фото: петроглиф Канделябр в Перу"
   - src: "/media/destinations/parakas/gallery-3-enhanced-20261005.webp"
-    alt: "На фото: остров Паракас в Перу"
+    alt: "Высокие прибрежные обрывы и прибой в Паракасе, Перу"
+    hover: "Паракас: протяжённый скалистый берег и полоса прибоя"
 facts: []
 featureBands: []
 relatedDestinations: []

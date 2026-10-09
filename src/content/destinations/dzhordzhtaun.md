@@ -13,7 +13,8 @@ hero:
   alt: "На фото: столица страны Гайана - город Джорджтаун"
 gallery:
 - src: /media/destinations/georgetown/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: столица страны Гайана - город Джорджтаун'
+  alt: "Уличные торговые ряды под зонтиками в Джорджтауне, Гайана"
+  hover: "Джорджтаун: торговля у здания с красной крышей"
 - src: /media/destinations/georgetown/gallery-2-enhanced-20261003.webp
   alt: 'На фото: столица страны Гайана - город Джорджтаун'
 - src: /media/destinations/georgetown/gallery-3-enhanced-20261003.webp

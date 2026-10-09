@@ -29,9 +29,11 @@ gallery:
   - src: "/media/destinations/puno-i-o-titikaka/gallery-7-enhanced-20261005.webp"
     alt: "На фото: город Пуно в Перу и озеро Титикака"
   - src: "/media/destinations/puno-i-o-titikaka/gallery-8-enhanced-20261005.webp"
-    alt: "На фото: город Пуно в Перу"
+    alt: "Два человека в лодке из тростника на озере Титикака у Пуно, Перу"
+    hover: "Титикака у Пуно: тростниковая лодка с двумя людьми"
   - src: "/media/destinations/puno-i-o-titikaka/gallery-9-enhanced-20261005.webp"
-    alt: "На фото: город Пуно в Перу"
+    alt: "Синяя гладь озера Титикака с маленькой лодкой и холмами вдали, Перу"
+    hover: "Озеро Титикака: лодка на воде и далёкие холмы"
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -10,7 +10,7 @@ summary: "Лагуна Эсмеральда — одно из самых кра�
 searchAliases: []
 themes: ["theme_wildlife", "theme_adventure"]
 hero: {"src": "/media/destinations/destination_argentina_laguna_esmeralda/original-01.jpg", "alt": "Лагуна Эсмеральда"}
-gallery: [{"src": "/media/destinations/destination_argentina_laguna_esmeralda/original-02.jpg", "alt": "Лагуна Эсмеральда"}]
+gallery: [{"src": "/media/destinations/destination_argentina_laguna_esmeralda/original-02.jpg", "alt": "Бирюзовая Лагуна-Эсмеральда с отражением скалистых гор, Аргентина", hover: "Лагуна-Эсмеральда: горы отражаются в бирюзовой воде"}]
 facts: []
 featureBands: []
 relatedDestinations: []

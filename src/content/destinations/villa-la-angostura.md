@@ -10,7 +10,7 @@ summary: "Вилья-Ла-Ангостура — живописный горны
 searchAliases: ["vilya-la-angostura"]
 themes: ["theme_wildlife", "theme_adventure"]
 hero: {"src": "/media/destinations/destination_argentina_vilya_la_angostura/original-01.jpg", "alt": "Вилья-Ла-Ангостура"}
-gallery: [{"src": "/media/destinations/destination_argentina_vilya_la_angostura/original-02.jpg", "alt": "Вилья-Ла-Ангостура"}, {"src": "/media/destinations/destination_argentina_vilya_la_angostura/original-03.jpg", "alt": "Вилья-Ла-Ангостура"}, {"src": "/media/destinations/destination_argentina_vilya_la_angostura/original-04.jpg", "alt": "Вилья-Ла-Ангостура"}]
+gallery: [{"src": "/media/destinations/destination_argentina_vilya_la_angostura/original-02.jpg", "alt": "Озеро и лесистые горы сквозь ветви деревьев у Вилья-Ла-Ангостуры, Аргентина", hover: "Вилья-Ла-Ангостура: озеро и горы за ветвями деревьев"}, {"src": "/media/destinations/destination_argentina_vilya_la_angostura/original-03.jpg", "alt": "Лесистые полуострова и озёра у Вилья-Ла-Ангостуры, Аргентина", hover: "Вилья-Ла-Ангостура: панорама озёр среди лесов и гор"}, {"src": "/media/destinations/destination_argentina_vilya_la_angostura/original-04.jpg", "alt": "Бирюзовая река, мост и здания у Вилья-Ла-Ангостуры, Аргентина", hover: "Вилья-Ла-Ангостура: мост через реку среди лесистых берегов"}]
 facts: []
 featureBands: []
 relatedDestinations: []

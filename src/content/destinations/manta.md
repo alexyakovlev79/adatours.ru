@@ -24,7 +24,8 @@ gallery:
     alt: "Рыболовные суда у песчаного берега Манты, Эквадор"
     hover: "Манта в Эквадоре: суда на воде и человек у берега"
   - src: /media/destinations/manta/gallery-3-enhanced-20261006.webp
-    alt: Манта, провинция Манаби
+    alt: "Небольшая голубая лодка с рисунком рыбы у мастерской в Манте, Эквадор"
+    hover: "Манта: голубая лодка на подставке перед мастерской"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

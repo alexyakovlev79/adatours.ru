@@ -22,7 +22,8 @@ gallery:
   - src: /media/destinations/bariloche/gallery-2-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
   - src: /media/destinations/bariloche/gallery-3-enhanced-20261002.webp
-    alt: "На фото: аргентинский курорт Барилоче в Патагонии"
+    alt: "Площадь с каменными зданиями и часовой башней в Барилоче, Аргентина"
+    hover: "Барилоче: каменные здания и башня с часами у площади"
   - src: /media/destinations/bariloche/gallery-4-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
   - src: /media/destinations/bariloche/gallery-5-enhanced-20261002.webp

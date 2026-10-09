@@ -12,11 +12,14 @@ themes: ["theme_adventure", "theme_wildlife"]
 hero: {"src": "/media/destinations/destination_argentina_akonkagua/original-01.jpg", "alt": "Аконкагуа"}
 gallery:
 - src: /media/destinations/destination_argentina_akonkagua/original-02.jpg
-  alt: Аконкагуа
+  alt: "Заснеженная Аконкагуа над горной долиной с цветами, Аргентина"
+  hover: "Аконкагуа: снежная вершина и цветущая долина"
 - src: /media/destinations/destination_argentina_akonkagua/original-03.jpg
-  alt: Аконкагуа
+  alt: "Указатель тропы к смотровой площадке Аконкагуа на фоне гор, Аргентина"
+  hover: "Аконкагуа: деревянный указатель маршрута среди гор"
 - src: /media/destinations/destination_argentina_akonkagua/original-04.jpg
-  alt: Аконкагуа
+  alt: "Утки на небольшом озере перед заснеженной Аконкагуа, Аргентина"
+  hover: "Аконкагуа: горное озеро с утками у подножия снежной вершины"
 - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-05-generated-20261008-v1.webp
   alt: Переход к базовому лагерю Пласа-де-Мулас, Аконкагуа, Аргентина
 - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-06-generated-20261008-v1.webp

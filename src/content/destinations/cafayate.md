@@ -10,7 +10,7 @@ summary: "Кафайяте — живописный городок на севе
 searchAliases: ["kafayate"]
 themes: ["theme_gastronomy_wine", "theme_culture"]
 hero: {"src": "/media/destinations/destination_argentina_kafayate/original-01.jpg", "alt": "Кафаяте"}
-gallery: [{"src": "/media/destinations/destination_argentina_kafayate/original-02.jpg", "alt": "Кафаяте"}]
+gallery: [{"src": "/media/destinations/destination_argentina_kafayate/original-02.jpg", "alt": "Слоистые скалы и туристы в ущелье у Кафаяте, Аргентина", hover: "Кафаяте: туристы среди разноцветных слоистых скал"}]
 facts: []
 featureBands: []
 relatedDestinations: []

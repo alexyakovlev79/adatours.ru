@@ -15,9 +15,11 @@ gallery:
 - src: /media/destinations/korojko/gallery-1-enhanced-20261002.webp
   alt: 'На фото: Коройко в Боливии (Дорога Смерти)'
 - src: /media/destinations/korojko/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: город Коройко в Боливии'
+  alt: "Дома Коройко на зелёном горном склоне в вечернем свете, Боливия"
+  hover: "Коройко: разноцветные дома на фоне гор"
 - src: /media/destinations/korojko/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: Коройко в Боливии'
+  alt: "Водопад на каменистом склоне среди зелени у Коройко, Боливия"
+  hover: "Коройко: каскад воды по каменистому лесному склону"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

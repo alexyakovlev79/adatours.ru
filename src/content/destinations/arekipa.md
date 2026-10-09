@@ -26,15 +26,18 @@ gallery:
   alt: "Светлая церковь с двумя башнями в Арекипе, Перу"
   hover: "Арекипа: белый фасад церкви с двумя высокими башнями"
 - src: /media/destinations/arequipa/gallery-4-enhanced-20261005.webp
-  alt: Архитектура Арекипы
+  alt: "Красная стена с каменной надписью и растением в нише в Арекипе, Перу"
+  hover: "Арекипа: каменная надпись над нишей в красной стене"
 - src: /media/destinations/arequipa/gallery-5-enhanced-20261005.webp
   alt: Городской пейзаж Арекипы
 - src: /media/destinations/arequipa/gallery-6-enhanced-20261005.webp
-  alt: Арекипа и окрестности
+  alt: "Продавщица за прилавком с разноцветными фруктами в Арекипе, Перу"
+  hover: "Арекипа: фруктовый прилавок с продавщицей"
 - src: /media/destinations/arequipa/gallery-7-enhanced-20261005.webp
   alt: Достопримечательности Арекипы
 - src: /media/destinations/arequipa/gallery-8-enhanced-20261005.webp
-  alt: Арекипа в Перу
+  alt: "Расписная статуя Христа в терновом венце рядом с другими религиозными фигурками"
+  hover: "Фигурка Христа в терновом венце крупным планом"
 - src: /media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-enhanced-20261007.webp
   alt: Арекипа
 - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp

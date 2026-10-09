@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Город на берегу океана с пляжами, барами и окружающими тропическими лесами. Колон предлагает спокойный отдых и вечерние развлечения."
 searchAliases: []
 hero: {"src":"/media/destinations/colon/hero-enhanced-20261005.webp","alt":"На фото: город Колон в Панаме"}
-gallery: [{"src":"/media/destinations/colon/gallery-1-enhanced-20261005.webp","alt":"На фото: город Колон в Панаме"},{"src":"/media/destinations/colon/gallery-2-enhanced-20261005.webp","alt":"На фото: город Колон в Панаме"},{"src":"/media/destinations/colon/gallery-3-enhanced-20261005.webp","alt":"На фото: город Колон в Панаме"}]
+gallery: [{"src":"/media/destinations/colon/gallery-1-enhanced-20261005.webp","alt":"Прибрежный посёлок у залива с лодками и зелёными островами", hover: "Посёлок у синей воды залива среди лесистых берегов"},{"src":"/media/destinations/colon/gallery-2-enhanced-20261005.webp","alt":"Женщина на велосипеде едет по дорожке у тропического леса", hover: "Велосипедная прогулка по дорожке среди густой зелени"},{"src":"/media/destinations/colon/gallery-3-enhanced-20261005.webp","alt":"Старинные каменные укрепления с башенкой у морского берега", hover: "Руины прибрежных укреплений на фоне зелени и моря"}]
 facts: []
 featureBands: []
 relatedDestinations: []

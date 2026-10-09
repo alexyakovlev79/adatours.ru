@@ -16,7 +16,8 @@ gallery:
   alt: "Крупная змея, свернувшаяся на земле среди листьев"
   hover: "Свернувшаяся змея среди сухих и зелёных листьев"
 - src: /media/destinations/los-llanos/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
+  alt: "Бетонная церковь с высокой колокольней в регионе Лос-Льянос, Венесуэла"
+  hover: "Лос-Льянос, Венесуэла: церковь с бетонной колокольней"
 - src: /media/destinations/los-llanos/gallery-3-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
 - src: /media/destinations/los-llanos/gallery-4-enhanced-20261003.webp

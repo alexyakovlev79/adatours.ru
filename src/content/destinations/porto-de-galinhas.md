@@ -19,7 +19,8 @@ gallery:
     alt: "Бирюзовое море, рифы и песчаный пляж Порту-ди-Галиньяш, Бразилия"
     hover: "Порту-ди-Галиньяш: пляж с пальмами и рифы в прозрачной воде"
   - src: /media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-13-generated-20261008-next20.webp
-    alt: Пальмы и пляж Порту-ди-Галиньяш, Бразилия
+    alt: "Песчаный пляж с пальмами и прозрачной водой в Порту-ди-Галиньяше, Бразилия"
+    hover: "Порту-ди-Галиньяш: пальмы вдоль берега и прозрачное море"
 relatedDestinations:
   - destination_brazil_recife
   - destination_brazil_olinda

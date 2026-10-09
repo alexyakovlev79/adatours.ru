@@ -20,7 +20,8 @@ gallery:
 - src: /media/destinations/copan-ruinas/gallery-3-enhanced-20261003.webp
   alt: 'На фото: руины Копана в Гондурасе'
 - src: /media/destinations/copan-ruinas/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: город Копан в Гондурасе'
+  alt: "Мощёная улица с цветными домами и балконами в Копан-Руинасе, Гондурас"
+  hover: "Копан-Руинас: цветные фасады вдоль мощёной улицы"
 - src: /media/destinations/copan-ruinas/gallery-5-enhanced-20261003.webp
   alt: 'На фото: руины Копана в Гондурасе'
 - src: /media/destinations/copan-ruinas/gallery-6-enhanced-20261003.webp

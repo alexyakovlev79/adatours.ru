@@ -11,9 +11,11 @@ searchAliases: []
 hero: {"src":"/media/destinations/san-andres/hero-enhanced-20261003.webp","alt":"На фото: остров  Сан-Андрес-и-Провиденсия в Колумбии"}
 gallery:
 - src: /media/destinations/san-andres/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
+  alt: "Деревянный причал с разноцветными перилами у Сан-Андреса, Колумбия"
+  hover: "Сан-Андрес: яркие перила деревянного причала над бирюзовой водой"
 - src: /media/destinations/san-andres/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
+  alt: "Пальма и отдыхающие на белом пляже Сан-Андреса, Колумбия"
+  hover: "Сан-Андрес, Колумбия: белый песок, пальма и бирюзовое море"
 - src: /media/destinations/san-andres/gallery-3-enhanced-20261003.webp
   alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
 - src: /media/destinations/san-andres/gallery-4-enhanced-20261003.webp

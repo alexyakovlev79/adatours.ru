@@ -23,7 +23,8 @@ gallery:
   - src: "/media/destinations/ostrov-pashi/gallery-4-enhanced-20261005.webp"
     alt: "На фото: истуканы острова Пасхи в Чили"
   - src: "/media/destinations/ostrov-pashi/gallery-5-enhanced-20261005.webp"
-    alt: "На фото: остров Пасхи в Чили"
+    alt: "Скальный склон с каменными статуями моаи на острове Пасхи, Чили"
+    hover: "Остров Пасхи: моаи среди травы у скального склона"
   - src: "/media/destinations/ostrov-pashi/gallery-6-enhanced-20261005.webp"
     alt: "На фото: истуканы острова Пасхи в Чили"
 facts: []

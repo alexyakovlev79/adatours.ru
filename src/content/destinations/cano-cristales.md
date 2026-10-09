@@ -12,7 +12,8 @@ hero:
   alt: Колумбия с «Каньо-Кристалес» и не только
 gallery:
 - src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/hero-src-enhanced-20261007.webp
-  alt: 'на фото: Каньо Кристалес - радужная река в Колумбии'
+  alt: "Розовые водные растения между камнями реки Каньо-Кристалес, Колумбия"
+  hover: "Каньо-Кристалес: розовые растения в прозрачной воде среди камней"
 themes:
 - theme_wildlife
 - theme_adventure

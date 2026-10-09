@@ -27,7 +27,8 @@ gallery:
   hover: "Куско: городские крыши и церковные башни на фоне гор"
   alt: "Куско с церковными башнями, красными крышами и зелёными горами, Перу"
 - src: /media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: Город Куско - древняя столица инков, Перу
+  alt: "Панорама Куско с черепичными крышами, площадью и церковными башнями, Перу"
+  hover: "Куско, Перу: площадь и церковные башни среди черепичных крыш"
 relatedDestinations:
   - destination_peru_lima
   - destination_peru_machu_picchu

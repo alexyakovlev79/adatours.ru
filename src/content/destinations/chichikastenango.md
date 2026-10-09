@@ -13,7 +13,8 @@ hero:
   alt: "На фото: рынок в городе Чичикастенанго в Гватемале"
 gallery:
 - src: /media/destinations/chichicastenango/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: рынок в городе Чичикастенанго в Гватемале'
+  alt: "Стопки ярких полосатых тканей на рынке Чичикастенанго, Гватемала"
+  hover: "Рынок Чичикастенанго: разноцветные полосатые ткани"
 - src: /media/destinations/chichicastenango/gallery-2-enhanced-20261003.webp
   alt: 'На фото: рынок в городе Чичикастенанго в Гватемале'
 - src: /media/destinations/chichicastenango/gallery-3-enhanced-20261003.webp

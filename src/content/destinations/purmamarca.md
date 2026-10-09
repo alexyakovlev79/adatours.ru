@@ -10,7 +10,7 @@ summary: "Пурмамарка — небольшой городок на сев
 searchAliases: ["purmamarka"]
 themes: ["theme_wildlife", "theme_culture"]
 hero: {"src": "/media/destinations/destination_argentina_purmamarka/original-01.jpg", "alt": "Пурмамарка"}
-gallery: [{"src": "/media/destinations/destination_argentina_purmamarka/original-02.jpg", "alt": "Пурмамарка"}]
+gallery: [{"src": "/media/destinations/destination_argentina_purmamarka/original-02.jpg", "alt": "Разноцветные горные склоны у Пурмамарки, Аргентина", hover: "Пурмамарка: красные и охристые склоны под облаками"}]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -10,7 +10,7 @@ summary: "Ледник спускается со склонов Анд к озе
 searchAliases: ["lednik-perito-moreno"]
 themes: ["theme_wildlife"]
 hero: {"src": "/media/destinations/destination_argentina_lednik_perito_moreno/original-01.jpg", "alt": "Ледник Перито-Морено"}
-gallery: [{"src": "/media/destinations/destination_argentina_lednik_perito_moreno/original-02.jpg", "alt": "Ледник Перито-Морено"}, {"src": "/media/destinations/destination_argentina_lednik_perito_moreno/original-03.jpg", "alt": "Ледник Перито-Морено"}, {"src": "/media/destinations/destination_argentina_lednik_perito_moreno/original-04.jpg", "alt": "Ледник Перито-Морено"}, {"src": "/media/destinations/destination_argentina_lednik_perito_moreno/original-05.jpg", "alt": "Ледник Перито-Морено"}]
+gallery: [{"src": "/media/destinations/destination_argentina_lednik_perito_moreno/original-02.jpg", "alt": "Ледяная стена Перито-Морено и отколовшиеся льдины у берега, Аргентина", hover: "Перито-Морено: льдины у подножия высокой ледяной стены"}, {"src": "/media/destinations/destination_argentina_lednik_perito_moreno/original-03.jpg", "alt": "Ледник Перито-Морено за водной гладью и каменистым берегом, Аргентина", hover: "Перито-Морено: общий вид ледника и озера с берега"}, {"src": "/media/destinations/destination_argentina_lednik_perito_moreno/original-04.jpg", "alt": "Неровные голубые ледяные гребни Перито-Морено на фоне снежных гор, Аргентина", hover: "Перито-Морено: голубые гребни льда перед заснеженными горами"}, {"src": "/media/destinations/destination_argentina_lednik_perito_moreno/original-05.jpg", "alt": "Вертикальные голубые разломы ледяной стены Перито-Морено у воды, Аргентина", hover: "Перито-Морено: высокая стена льда с голубыми разломами"}]
 facts: []
 featureBands: []
 relatedDestinations: []

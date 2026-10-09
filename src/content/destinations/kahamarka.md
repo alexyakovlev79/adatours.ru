@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Город в горной долине на высоте 2720 м. Археологические памятники и термальные источники Баньос де Инка знакомят с историей Кахамарки."
 searchAliases: []
 hero: {"src":"/media/destinations/cajamarca/hero-enhanced-20261005.webp","alt":"На фото: женщина-перуанка"}
-gallery: [{"src":"/media/destinations/cajamarca/gallery-1-enhanced-20261005.webp","alt":"На фото: город Кахамарка в Перу"},{"src":"/media/destinations/cajamarca/gallery-2-enhanced-20261005.webp","alt":"На фото: город Кахамарка в Перу"}]
+gallery: [{"src":"/media/destinations/cajamarca/gallery-1-enhanced-20261005.webp","alt":"Площадь Кахамарки с фонтаном, зелёными газонами и собором, Перу", hover: "Кахамарка: городская площадь и собор на фоне гор"},{"src":"/media/destinations/cajamarca/gallery-2-enhanced-20261005.webp","alt":"Многочисленные прямоугольные ниши в скале у Кахамарки, Перу", hover: "Кахамарка: ряды высеченных в скале ниш"}]
 facts: []
 featureBands: []
 relatedDestinations: []

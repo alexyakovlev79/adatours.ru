@@ -16,7 +16,8 @@ gallery:
   alt: "Пальмы у залива на фоне зелёной остроконечной горы"
   hover: "Синяя вода, пальмы и высокая зелёная гора у берега"
 - src: /media/destinations/kajo/gallery-2-enhanced-20261002.webp
-  alt: 'На фото: округ Кайо в Белизе'
+  alt: "Торговая улица с пешеходами, магазинами и машинами в округе Кайо, Белиз"
+  hover: "Округ Кайо: магазины и пешеходы вдоль городской улицы"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

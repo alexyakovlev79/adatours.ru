@@ -15,7 +15,8 @@ gallery:
   hover: "Сан-Луис: старинные дома с узорчатой плиткой и синими арочными дверями"
   alt: "Мощёная улица Сан-Луиса с плиточными фасадами, синими дверями и балконами, Бразилия"
 - src: /media/tours/udivitelnaya-braziliya/itinerary-day-14-generated-20261008-next20.webp
-  alt: Исторические улицы Сан-Луиса, Бразилия
+  alt: "Мощёная улица с фасадами в синих изразцах в Сан-Луисе, Бразилия"
+  hover: "Сан-Луис: изразцовые фасады вдоль мощёной улицы"
 relatedDestinations:
 - destination_brazil_lencois_maranhenses
 featuredTours: []

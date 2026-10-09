@@ -102,7 +102,8 @@ itinerary:
     Ночь в Hotel Porto Antigua, двухместный номер Standard, завтрак включен.'
   images:
   - src: /media/destinations/chichicastenango/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: рынок в городе Чичикастенанго в Гватемале'
+    alt: "Стопки ярких полосатых тканей на рынке Чичикастенанго, Гватемала"
+    hover: "Рынок Чичикастенанго: разноцветные полосатые ткани"
 - day: 4
   title: Антигуа
   places: []

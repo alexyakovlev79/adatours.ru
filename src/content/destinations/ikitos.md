@@ -32,7 +32,8 @@ gallery:
   hover: "Рынок Икитоса в Перу: прилавок с фруктами и овощами"
   alt: "Прилавок с фруктами и овощами на рынке, Икитос, Перу"
 - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: Индеец в джунглях Амазонии, Икитос Перу
+  alt: "Человек с головным убором из перьев у лесной реки в районе Икитоса, Перу"
+  hover: "Икитос, Перу: человек у реки среди тропической зелени"
 - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp
   alt: Круиз по Амазонке в Перу (Икитос) с Aqua Expedition
 - src: /media/tours/manyashchij-peru-i-ikitos/hero-src-enhanced-20261007.webp

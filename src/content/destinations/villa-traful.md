@@ -12,9 +12,11 @@ themes: ["theme_wildlife", "theme_adventure"]
 hero: {"src": "/media/destinations/destination_argentina_vilya_traful/original-01.jpg", "alt": "Вилья-Трафуль"}
 gallery:
 - src: /media/destinations/destination_argentina_vilya_traful/original-02.jpg
-  alt: Вилья-Трафуль
+  alt: "Деревянный причал с навесом на озере Трафуль среди гор, Аргентина"
+  hover: "Озеро Трафуль: причал с навесом на фоне гор"
 - src: /media/destinations/destination_argentina_vilya_traful/original-03.jpg
-  alt: Вилья-Трафуль
+  alt: "Белый катер на озере Трафуль у лесистого берега, Аргентина"
+  hover: "Трафуль: катер на воде у покрытого лесом склона"
 - src: /media/tours/vsya-argentina/itinerary-day-15-generated-20261008-v1.webp
   alt: Озеро Трафуль и горы у Вилья-Трафуль на маршруте Большого кольца
 facts: []

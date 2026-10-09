@@ -23,7 +23,8 @@ gallery:
   alt: "Старый бирюзовый пикап у моря в Пунта-дель-Эсте, Уругвай"
   hover: "Пунта-дель-Эсте: винтажный пикап на фоне моря"
 - src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: Пальцы Ла-Мано в Пунта-дель-Эсте, Уругвай
+  alt: "Скульптура пальцев Ла-Мано на пляже Пунта-дель-Эсте на закате, Уругвай"
+  hover: "Пунта-дель-Эсте: пальцы Ла-Мано на песке в закатном свете"
 - src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-3-images-0-src-enhanced-20261007.webp
   alt: Белые каситы на пляже Манса в Пунта-дель-Эсте, курортный колорит Уругвая
 - src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-4-images-0-src-enhanced-20261007.webp

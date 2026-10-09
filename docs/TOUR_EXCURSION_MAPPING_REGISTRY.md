@@ -1366,3 +1366,12 @@ Commit определяется по изменению, содержащему 
 - `tour_source_kruiznyj_tur_po_luchshim_mestam_argentiny_chili_i_bolivii`: 18 дней, 42 канонических мест, 2 самостоятельных экскурсионных вставок. Пакет подготовлен к штатному deploy.
 - `tour_source_solonchak_uyuni`: 3 дней, 18 канонических мест, 0 самостоятельных экскурсионных вставок. Пакет подготовлен к штатному deploy.
 - `tour_source_5_stran_latinskoj_ameriki`: 18 дней, 41 канонических мест, 3 самостоятельных экскурсионных вставок. Пакет подготовлен к штатному deploy.
+
+
+## Ответы Анны — вторая тройка, 09.10.2026
+
+Исторический вопрос «остров Рыб» снят: Инкауаси.
+
+- `tour_source_karnaval_5_stran`: 19 дней; канонические вставки: `excursion_source_park_jekzoticheskih_ptic_v_iguasu`, `excursion_source_makuko_safari_he`, `excursion_santiago_maipo_wine_tour`.
+- `tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god`: 19 дней; канонические вставки: `excursion_source_park_jekzoticheskih_ptic_v_iguasu`, `excursion_source_makuko_safari_he`, `excursion_santiago_maipo_wine_tour`, `excursion_chile_atacama_astronomy_tour`.
+- `tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala`: 18 дней; канонические вставки: `excursion_source_park_jekzoticheskih_ptic_v_iguasu`, `excursion_source_makuko_safari_he`, `excursion_santiago_maipo_wine_tour`, `excursion_chile_atacama_astronomy_tour`.

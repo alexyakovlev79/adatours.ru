@@ -60,15 +60,14 @@ jobs:
             YC_MEDIA_IAM_TOKEN="$iam" \
             node scripts/issue-media-token.mjs "$request_file" >/dev/null
 
-          printf 'Direct S3 upload via keyless envelope, run %s\n' "${GITHUB_RUN_ID}" > "$dir/test.txt"
+          # Use a real minimal WebP so the smoke exercises image/webp delivery.
           node -e '
-            const fs=require("fs");
-            const dir=process.argv[1];
-            const id=process.env.GITHUB_RUN_ID;
-            fs.writeFileSync(dir+"/batch.json",JSON.stringify([{file:dir+"/test.txt",
-              key:"media/tech/direct-s3-smoke-"+id+"-20261009.txt"}]));
+            const fs = require("fs");
+            const dir = process.argv[1], id = process.env.GITHUB_RUN_ID;
+            fs.writeFileSync(dir+"/test.webp", Buffer.from("UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoCAAIAAUAiJaACdLoB+AADsAD+795f/yU1/jblq/+bArmufc0AAA==", "base64"));
+            fs.writeFileSync(dir+"/batch.json", JSON.stringify([{file:dir+"/test.webp",
+              key:"media/tech/direct-s3-smoke-"+id+"-20261009.webp"}]));
           ' "$dir"
-
           packet="$(base64 -w 0 "$dir/envelope.json")"
           node scripts/media-work-session.mjs upload \
             --request "$request_file" \
@@ -93,7 +92,7 @@ jobs:
           SMOKE_OUTCOME: ${{ steps.direct_upload.outcome }}
         run: |
           if [[ "$SMOKE_OUTCOME" == "success" ]]; then
-            summary="PASS: direct keyless S3 upload, HTTPS readback and SHA-256 verification"
+            summary="PASS: direct keyless WebP upload, HTTPS readback and SHA-256 verification"
           else
             summary="FAIL: direct S3 smoke test ($SMOKE_OUTCOME)"
           fi

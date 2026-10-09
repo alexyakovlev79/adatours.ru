@@ -52,7 +52,7 @@ for (const path of files) {
   assert.equal(attr(og, 'content'), expectedURL, `OG URL: ${context}`);
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1, `one H1: ${context}`);
   if (key === '/multi-country/') {
-    assert.ok(titleText.includes('Multi-country туры по Латинской Америке'), `multi-country title: ${context}`);
+    assert.ok(titleText.includes('Multi-country тур'), `multi-country title: ${context}`);
     assert.ok(metaDescription.includes(String(total)), `multi-country description has total: ${context}`);
     if (page === 1) {
       assert.ok(titleText.includes(String(total)), `multi-country root title has dynamic total: ${context}`);

@@ -120,7 +120,7 @@ route:
 priceFrom: 14534.0
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/trevor-mckinnon-y-z-ltvmjdg-unsplash-2.jpg
+  src: /media/countries/bolivia/featureBands-1-enhanced-20261002.webp
   alt: 'на фото: Тур на джипах в Солар -де Уюни'
 lead: 'Большой маршрут по 3 странам Южной Америки соединяет Сантьяго-де-Чили, высокогорные пустыни и солончак Уюни,
   Торрес-дель-Пайне, круиз по фьордам Южной Патагонии и Огненной Земле, Ушуайю, Буэнос-Айрес и Барилоче. За 18 дней
@@ -167,7 +167,7 @@ itinerary:
     Дополнительно можно заказать винную экскурсию с дегустацией в долину Майпо. Стоимость указана как 230 USD на
     человека при минимуме 2 участника.'
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/buenos-aires.jpg
+  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: столица Аргентины, город Буэнос-Айрес'
 - excursionRef: excursion_santiago_maipo_wine_tour
   places:
@@ -215,7 +215,7 @@ itinerary:
 
     После экскурсии трансфер в Tayka del Desierto.'
   images:
-  - src: https://brasiltours.ru/image/san%20pedro%20do%20atacama.png
+  - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: пустыня Сан Педро де Атакама'
 - day: 3
   title: '22.12: Уюни'
@@ -272,7 +272,7 @@ itinerary:
 
     Ночь в отеле, построенном из соли.'
   images:
-  - src: https://brasiltours.ru/image/solar%20de%20uyuni.png
+  - src: /media/tours/krasivaya-boliviya/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Солар -де -Уюни'
 - day: 4
   title: '23.12: возвращение в Сантьяго'
@@ -291,7 +291,7 @@ itinerary:
 
     Размещение в The Singular Hotel.'
   images:
-  - src: https://brasiltours.ru/image/countries/chile/chi-santiago-left.jpg
+  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
     alt: 'На фото: столица Чили. город Сантьяго-де -Чили'
 - day: 5
   title: '24.12: Сантьяго - Пуэрто-Наталес'
@@ -311,7 +311,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.'
   images:
-  - src: https://brasiltours.ru/image/puerto%20natales2.png
+  - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: Пуэрто Наталес, Чили, Патагония'
 - day: 6
   title: '25.12: Торрес-дель-Пайне'
@@ -381,7 +381,7 @@ itinerary:
 
     Ночь на борту.'
   images:
-  - src: https://brasiltours.ru/image/Punta%20arenas.png
+  - src: /media/tours/antarktida-programma-s-nochevkoj/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: Пунта Аренас, Чили. Патагония'
 - day: 8
   title: '27.12: бухта Эйнсворт и острова Такер'
@@ -539,7 +539,7 @@ itinerary:
 
     После экскурсии размещение в Arakur Hotel, Valley View Room.'
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-ushuaia-right.jpg
+  - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
     alt: 'На фото: город Ушуайя, Патагония. Аргентина'
 - day: 12
   title: '31.12: Ушуайя - Буэнос-Айрес и Новый год'
@@ -566,7 +566,7 @@ itinerary:
 
     Размещение в Alvear Art Hotel.'
   images:
-  - src: https://brasiltours.ru/image/buenos-aires.png
+  - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
     alt: 'На фото: столица Аргентины, город Буэнос-Айрес'
 - day: 13
   title: '01.01: Буэнос-Айрес и гастрономический тур'
@@ -592,7 +592,7 @@ itinerary:
 
     После экскурсии возвращение в отель.'
   images:
-  - src: https://brasiltours.ru/image/Arg%20Buenos%20Aires.png
+  - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: столица Аргентины, город Буэнос-Айрес'
 - excursionRef: excursion_buenos_aires_gastronomic_tour
   places:

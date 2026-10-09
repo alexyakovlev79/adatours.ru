@@ -5,3 +5,11 @@ dist/
 .env.*
 !.env.example
 .DS_Store
+
+# New binary assets go directly to Yandex S3; historical Git-tracked objects stay untouched.
+/public/media/
+
+# Ephemeral encrypted media-upload sessions (never commit private keys).
+*.private.pem
+media-upload-session-envelope.json
+.adatours-media-session/

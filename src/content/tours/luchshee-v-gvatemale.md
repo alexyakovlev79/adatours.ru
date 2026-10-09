@@ -61,7 +61,8 @@ itinerary:
     Ночь в отеле **Villa Colonial**.
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
-    alt: Антигуа-Гуатемала
+    hover: "Антигуа-Гуатемала: арка между цветными фасадами на фоне вулкана"
+    alt: "Жёлтая арка с часами на улице Антигуа-Гуатемалы, вулкан на заднем плане, Гватемала"
 - day: 2
   title: Антигуа
   places:
@@ -80,7 +81,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: "/media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp"
-    alt: Антигуа-Гуатемала
+    hover: "Антигуа-Гуатемала: старинные фасады и вулкан за городской улицей"
+    alt: "Мощёная улица и исторические здания Антигуа-Гуатемалы на фоне вулкана, Гватемала"
 - day: 3
   title: Антигуа - вулкан Пакайя - озеро Атитлан
   places:
@@ -103,7 +105,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
-    alt: Антигуа-Гуатемала
+    hover: "Каменный канал перед зелёным берегом, пальмами и парусными лодками"
+    alt: "Старинные каменные стены и узкий водный канал у гавани с яхтами и пальмами"
 - day: 4
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан
   places:
@@ -130,7 +133,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
-    alt: Лучшее в Гватемале
+    hover: "Бирюзовое озеро среди зелени на фоне высокой вулканической вершины"
+    alt: "Озеро у подножия конусообразного вулкана, окружённое деревьями и цветами"
 - day: 5
   title: Антигуа - рынок Чичикастенанго - Гватемала-Сити
   places:
@@ -155,7 +159,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
-    alt: Чичикастенанго
+    hover: "Чичикастенанго: люди и торговые ряды у украшенной белой церкви"
+    alt: "Рынок перед белой церковью с цветными украшениями в Чичикастенанго, Гватемала"
 - day: 6
   title: Гватемала-Сити - заповедник Кетцаля - Кобан
   places:
@@ -178,7 +183,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
+    hover: "Гватемала-Сити: городская застройка перед цепью вулканических вершин"
+    alt: "Городские кварталы и высотные дома на фоне вулканов в Гватемала-Сити, Гватемала"
 - day: 7
   title: Кобан - Семук-Чампей - Кобан
   places:
@@ -242,7 +248,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/destinations/tikal-and-flores/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Тикаль и Флорес в гватемале'
+    hover: "Флорес: лодка и солнечная дорожка на озере"
+    alt: "Лодка на озере в оранжевом свете низкого солнца у Флореса, Гватемала"
 - day: 10
   title: Флорес - Рио-Дульсе - Ливингстон
   places:
@@ -269,7 +276,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/destinations/tikal-and-flores/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: Тикаль и Флорес в гватемале'
+    hover: "Флорес: ступени с белыми краями и разноцветные флажки перед церковью"
+    alt: "Широкая жёлто-белая лестница к церкви во Флоресе, Гватемала"
 - day: 11
   title: Ливингстон
   places:
@@ -306,7 +314,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
-    alt: Копан Руинас
+    hover: "Копан: древние каменные постройки и лестницы на зелёной территории"
+    alt: "Каменная ступенчатая платформа среди зелёных лужаек в Копане, Гондурас"
 - day: 13
   title: Копан - Гватемала-Сити
   places:
@@ -320,7 +329,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: город Гватемала-Сити (столица страны)'
+    hover: "Гватемала-Сити: длинный каменный фасад с башнями и арочными окнами"
+    alt: "Монументальное каменное здание с башнями у улицы Гватемала-Сити, Гватемала"
 - day: 14
   title: Гватемала-Сити
   places:
@@ -358,7 +368,8 @@ currency: USD
 priceNote: $5748.
 hero:
   src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
-  alt: Лучшее в Гватемале
+  hover: "Бирюзовое озеро среди зелени на фоне высокой вулканической вершины"
+  alt: "Озеро у подножия конусообразного вулкана, окружённое деревьями и цветами"
 routeCountries:
 - country_guatemala
 - country_honduras

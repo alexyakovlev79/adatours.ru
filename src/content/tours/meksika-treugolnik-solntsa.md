@@ -53,7 +53,8 @@ itinerary:
     Вечером возвращение в отель и ночевка.
   images:
   - src: /media/destinations/mexico-city-and-teotihuacan/gallery-1-enhanced-20261004.webp
-    alt: 'На фото: столица, город Мехико Сити в Мексике'
+    hover: "Мехико: жёлтый Volkswagen-такси в городском движении"
+    alt: "Жёлтое такси Volkswagen Beetle на улице Мехико, Мексика"
 - day: 3
   title: Базилика Гваделупе и Теотиуакан
   places:
@@ -68,7 +69,8 @@ itinerary:
     После экскурсии возвращение в гостиницу и ночевка.
   images:
   - src: /media/destinations/teotihuacan/gallery-1-enhanced-20261004.webp
-    alt: 'На фото: пирамида Солнца в Теотиуакане в Мексике'
+    hover: "Теотиуакан: древние ступенчатые постройки и пирамида на фоне гор"
+    alt: "Пирамида и каменные платформы вдоль широкой дороги в Теотиуакане, Мексика"
 - day: 4
   title: Мехико - Куэрнавака - Таско
   places:
@@ -87,7 +89,8 @@ itinerary:
     Размещение в Agua Escondida 3*, стандартный номер, 1 ночь.
   images:
   - src: /media/destinations/mexico-city-and-teotihuacan/gallery-2-enhanced-20261004.webp
-    alt: 'На фото: столица, город Мехико Сити в Мексике'
+    hover: "Мехико: рыночный прилавок с рядами товаров и продавцом"
+    alt: "Продавец за прилавком с высокими стопками товаров на рынке Мехико, Мексика"
 - day: 5
   title: Таско - Акапулько
   places:

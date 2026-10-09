@@ -13,7 +13,8 @@ hero:
   alt: Исторический центр Сальвадора в Бразилии
 gallery:
   - src: /media/destinations/salvador/gallery-1-enhanced-20261001.webp
-    alt: Церковь в Сальвадоре, Баия
+    hover: "Сальвадор: цветные дома и украшенный церковный фасад на городской улице"
+    alt: "Церковь и яркие колониальные фасады вдоль мощёной улицы Сальвадора, Бразилия"
   - src: /media/destinations/salvador/gallery-2-enhanced-20261001.webp
     alt: Городская сцена Сальвадора
 relatedDestinations:

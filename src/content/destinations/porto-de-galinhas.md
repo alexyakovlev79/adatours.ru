@@ -13,7 +13,8 @@ hero:
   alt: Пляж Порту-ди-Галиньяш в Пернамбуку, Бразилия
 gallery:
   - src: /media/destinations/porto-de-galinhas/gallery-1-enhanced-20261001.webp
-    alt: Побережье Порту-ди-Галиньяш
+    hover: "Порту-ди-Галиньяш: вид сверху на прибрежные рифы, пляж и поселение"
+    alt: "Рифы и бирюзовые естественные бассейны у пляжа Порту-ди-Галиньяш, Бразилия"
   - src: /media/destinations/porto-de-galinhas/gallery-2-enhanced-20261001.webp
     alt: Пляж и рифы Порту-ди-Галиньяш
   - src: /media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-13-generated-20261008-next20.webp

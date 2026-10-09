@@ -17,13 +17,17 @@ hero:
   alt: Рио-де-Жанейро вечером
 gallery:
 - src: /media/catalog/tury/hero-enhanced-20260930.webp
-  alt: Панорама Рио-де-Жанейро
+  hover: "Рио-де-Жанейро: залив и Сахарная Голова среди городских кварталов"
+  alt: "Панорама Рио-де-Жанейро с заливом, горой Сахарная Голова и городской застройкой, Бразилия"
 - src: /media/destinations/destination_brazil_rio/rio-free-street-generated-20261008.webp
-  alt: Улица Рио-де-Жанейро с кафе и деревьями
+  hover: "Рио-де-Жанейро: уличное кафе на тротуаре под деревьями"
+  alt: "Тенистая улица с деревьями и столиками кафе в Рио-де-Жанейро, Бразилия"
 - src: /media/destinations/destination_brazil_rio/rio-free-beach-v2-generated-20261008.webp
-  alt: Набережная и пляж Копакабана в Рио-де-Жанейро
+  hover: "Копакабана в Рио-де-Жанейро: узорчатая набережная, пальмы и море в золотом свете"
+  alt: "Мозаичная набережная и пляж Копакабаны с пальмами в золотом свете, Рио-де-Жанейро, Бразилия"
 - src: /media/destinations/destination_brazil_rio/rio-departure-bay-v2-generated-20261008.webp
-  alt: Залив Гуанабара в Рио-де-Жанейро
+  hover: "Залив Гуанабара в Рио-де-Жанейро: спокойная вода, парусники и камни у берега"
+  alt: "Каменистый берег и парусники в заливе Гуанабара, Рио-де-Жанейро, Бразилия"
 relatedDestinations:
 - destination_brazil_iguacu
 - destination_brazil_amazon

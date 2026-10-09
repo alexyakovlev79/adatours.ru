@@ -13,7 +13,8 @@ hero:
   alt: Грот Голубого озера в Бонито, Бразилия
 gallery:
   - src: /media/destinations/bonito/gallery-1-enhanced-20261001.webp
-    alt: Прозрачная вода в окрестностях Бонито
+    hover: "Бонито: подводное плавание в прозрачной воде у зелёного берега"
+    alt: "Аквалангисты в прозрачном зелёном водоёме среди скал и леса у Бонито, Бразилия"
   - src: /media/destinations/bonito/gallery-2-enhanced-20261001.webp
     alt: Активный отдых на воде в Бонито
 relatedDestinations:

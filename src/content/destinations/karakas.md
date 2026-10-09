@@ -13,9 +13,11 @@ hero:
   alt: 'На фото: столица Венесуэлы, город Каракас'
 gallery:
 - src: /media/destinations/caracas/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: столица Венесуэлы, город Каракас'
+  hover: "Каракас: жилые дома и узкая улица на холмистом склоне"
+  alt: "Плотная застройка краснокирпичных домов на склонах Каракаса, Венесуэла"
 - src: /media/destinations/caracas/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: столица Венесуэлы, город Каракас'
+  hover: "Каракас: высотные здания и жилые кварталы у горного склона"
+  alt: "Панорама густой городской застройки Каракаса на фоне гор, Венесуэла"
 - src: /media/destinations/caracas/gallery-3-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
 - src: /media/destinations/caracas/gallery-4-enhanced-20261003.webp

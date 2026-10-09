@@ -87,7 +87,8 @@ itinerary:
     Включены завтрак и обед.
   images:
   - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
-    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+    hover: "Сан-Хосе: красно-белый автобус на улице города"
+    alt: "Красно-белый автобус перед городскими зданиями в Сан-Хосе, Коста-Рика"
 - day: 4
   title: Вулкан Ареналь и подвесные мосты Mistico
   places:
@@ -110,7 +111,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/costa-rica-nicaragua-ru/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+    hover: "Ареналь: раскалённая лава на вулканическом склоне"
+    alt: "Вулкан Ареналь с ярким потоком лавы на склоне над лесом, Коста-Рика"
 - day: 5
   title: Заповедник Каньо-Негро
   places:
@@ -133,7 +135,8 @@ itinerary:
     Включены завтрак и обед.
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+    hover: "Район Ареналя: небольшие бассейны и водные каскады в зелёном саду"
+    alt: "Каскадные бассейны среди пальм и тропической зелени в районе Ареналя, Коста-Рика"
 - day: 6
   title: Шоколадная ферма и термальные источники Baldi
   places:
@@ -162,7 +165,8 @@ itinerary:
     Включены завтрак и ужин.
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    hover: "Ла-Фортуна в Коста-Рике: прогулка по подвесному мосту в зелёном лесу"
+    alt: "Посетители на подвесном мосту среди тропического леса у Ла-Фортуны, Коста-Рика"
 - day: 7
   title: Ареналь - Монтеверде и ферма Trapiche
   places:
@@ -186,7 +190,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    hover: "Ла-Фортуна: зелёная лесная долина и высокие пальмы"
+    alt: "Пальмы и густой тропический лес в районе Ла-Фортуны, Коста-Рика"
 - day: 8
   title: Монтеверде и облачный лес Selvatura
   places:
@@ -316,7 +321,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: фасад церкви с парными шпилями и пальмы"
+    alt: "Церковь с двумя высокими шпилями среди пальм в Сан-Хосе, Коста-Рика"
 included:
 - Транспорт по программе.
 - Входные билеты.

@@ -11,21 +11,27 @@ searchAliases: []
 hero: {"src":/media/countries/costa-rica/featureBands-1-enhanced-20261002.webp,"alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"}
 gallery:
 - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+  hover: "Ла-Фортуна в Коста-Рике: прогулка по подвесному мосту в зелёном лесу"
+  alt: "Посетители на подвесном мосту среди тропического леса у Ла-Фортуны, Коста-Рика"
 - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+  hover: "Ла-Фортуна: зелёная лесная долина и высокие пальмы"
+  alt: "Пальмы и густой тропический лес в районе Ла-Фортуны, Коста-Рика"
 - src: /media/destinations/la-fortuna-arenal-volcano/gallery-3-enhanced-20261003.webp
   alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - src: /media/destinations/la-fortuna-arenal-volcano/gallery-4-enhanced-20261003.webp
   alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Вулкан Ареналь
+  hover: "Район Ареналя: небольшие бассейны и водные каскады в зелёном саду"
+  alt: "Каскадные бассейны среди пальм и тропической зелени в районе Ареналя, Коста-Рика"
 - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Вулкан Ареналь
+  hover: "Ареналь: вулканическая вершина с крутыми склонами на фоне облаков"
+  alt: "Конус вулкана Ареналь над зелёным лесом в Коста-Рике"
 - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-  alt: Вулкан Ареналь
+  hover: "Ареналь в Коста-Рике: водопад, бурная река и посетители на скалистом берегу"
+  alt: "Посетители у реки и водопада среди леса в районе Ареналя, Коста-Рика"
 - src: /media/tours/costa-rica-nicaragua-ru/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: Вулкан Ареналь
+  hover: "Ареналь: раскалённая лава на вулканическом склоне"
+  alt: "Вулкан Ареналь с ярким потоком лавы на склоне над лесом, Коста-Рика"
 - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-15-images-0-src-enhanced-20261007.webp
   alt: 'На фото: вулкан Ареналь в Коста-Рике'
 relatedDestinations: []

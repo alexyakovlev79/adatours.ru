@@ -13,7 +13,8 @@ hero:
   alt: Исторический центр Парати в Бразилии
 gallery:
   - src: /media/destinations/paraty/gallery-1-enhanced-20261001.webp
-    alt: Колониальная архитектура Парати
+    hover: "Парати: старинный угловой фасад с арочными дверями и балконом"
+    alt: "Белый колониальный дом с длинным кованым балконом и цветной отделкой в Парати, Бразилия"
   - src: /media/destinations/paraty/gallery-2-enhanced-20261001.webp
     alt: Море и острова у Парати
 relatedDestinations:

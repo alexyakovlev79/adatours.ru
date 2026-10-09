@@ -18,7 +18,8 @@ hero:
   alt: Порту-Жофри - Бразилия
 gallery:
 - src: /media/destinations/destination_brazil_portu_zhofri/jaguar-morning-generated-20261008.webp
-  alt: Порту-Жофри - Бразилия
+  hover: "Порту-Жофри: ягуар на бревне у зелёного речного берега"
+  alt: "Ягуар лежит на поваленном стволе у воды в Порту-Жофри, Бразилия"
 - src: /media/tours/rybalka-v-pantanale/itinerary-day-04-generated-20261008.webp
   alt: Утренний причал на реке Куяба у Порту-Жофри
 relatedDestinations: []

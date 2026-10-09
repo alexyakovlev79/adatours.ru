@@ -13,9 +13,11 @@ hero:
   alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 gallery:
 - src: /media/destinations/canaima-and-angel-falls/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
+  hover: "Канайма: пассажиры в лодках на воде перед широким водопадом"
+  alt: "Длинные лодки с пассажирами на лагуне у водопада в Канайме, Венесуэла"
 - src: /media/destinations/canaima-and-angel-falls/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
+  hover: "Канайма: пальмы на песчаном берегу и широкий водопад за водой"
+  alt: "Песчаный берег с пальмами и водопадом за лагуной Канаймы, Венесуэла"
 - src: /media/destinations/canaima-and-angel-falls/gallery-3-enhanced-20261003.webp
   alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 - src: /media/destinations/canaima-and-angel-falls/gallery-4-enhanced-20261003.webp

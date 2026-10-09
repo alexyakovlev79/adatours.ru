@@ -22,9 +22,11 @@ hero:
   alt: Мачу-Пикчу в горах Перу
 gallery:
   - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
-    alt: Куско, Перу
+    hover: "Куско: церковный фасад и цветники у оживлённой площади"
+    alt: "Площадь Куско с каменной церковью, цветниками и туристическим автобусом, Перу"
   - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp"
-    alt: Мачу-Пикчу, Перу
+    hover: "Мачу-Пикчу: древние стены и зелёные террасы на фоне гор"
+    alt: "Каменные террасы и руины Мачу-Пикчу под высокой горной вершиной, Перу"
   - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-2-src-enhanced-20261008.webp
     alt: Жительница Перу
 route:

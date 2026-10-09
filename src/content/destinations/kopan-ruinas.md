@@ -13,7 +13,8 @@ hero:
   alt: "На фото: руины Копана в Гондурасе"
 gallery:
 - src: /media/destinations/copan-ruinas/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: руины Копана в Гондурасе'
+  hover: "Копан: древний рельеф из разноцветных каменных блоков"
+  alt: "Резной каменный рельеф с фигурой на стене руин Копана, Гондурас"
 - src: /media/destinations/copan-ruinas/gallery-2-enhanced-20261003.webp
   alt: 'На фото: руины Копана в Гондурасе'
 - src: /media/destinations/copan-ruinas/gallery-3-enhanced-20261003.webp
@@ -25,7 +26,8 @@ gallery:
 - src: /media/destinations/copan-ruinas/gallery-6-enhanced-20261003.webp
   alt: 'На фото: руины Копана в Гондурасе'
 - src: /media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp
-  alt: Копан Руинас
+  hover: "Копан: древние каменные постройки и лестницы на зелёной территории"
+  alt: "Каменная ступенчатая платформа среди зелёных лужаек в Копане, Гондурас"
 - src: /media/tours/mir-majya/itinerary-6-images-0-src-enhanced-20261007.webp
   alt: Копан Руинас
 relatedDestinations: []

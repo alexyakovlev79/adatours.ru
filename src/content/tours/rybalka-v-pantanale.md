@@ -38,7 +38,8 @@ itinerary:
   text: Рыбалка в течение всего дня.
   image:
     src: /media/destinations/destination_brazil_portu_zhofri/jaguar-morning-generated-20261008.webp
-    alt: Порту-Жофри - Бразилия
+    hover: "Порту-Жофри: ягуар на бревне у зелёного речного берега"
+    alt: "Ягуар лежит на поваленном стволе у воды в Порту-Жофри, Бразилия"
 - day: 3
   title: Рыбалка
   places:

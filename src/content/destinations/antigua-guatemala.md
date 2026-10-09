@@ -27,11 +27,14 @@ gallery:
 - src: /media/destinations/antigua-guatemala/gallery-7-enhanced-20261003.webp
   alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
 - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
-  alt: Антигуа-Гуатемала
+  hover: "Антигуа-Гуатемала: арка между цветными фасадами на фоне вулкана"
+  alt: "Жёлтая арка с часами на улице Антигуа-Гуатемалы, вулкан на заднем плане, Гватемала"
 - src: /media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp
-  alt: Антигуа-Гуатемала
+  hover: "Антигуа-Гуатемала: старинные фасады и вулкан за городской улицей"
+  alt: "Мощёная улица и исторические здания Антигуа-Гуатемалы на фоне вулкана, Гватемала"
 - src: /media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: Антигуа-Гуатемала
+  hover: "Каменный канал перед зелёным берегом, пальмами и парусными лодками"
+  alt: "Старинные каменные стены и узкий водный канал у гавани с яхтами и пальмами"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

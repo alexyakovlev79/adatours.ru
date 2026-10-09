@@ -12,7 +12,8 @@ hero:
   alt: 'На фото: Соляной собор  Сипакира в Колумбии'
 gallery:
 - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-1-images-1-src-enhanced-20261007.webp
-  alt: 'На фото: собор Сипакира, Колумбия'
+  hover: "Сипакира: подсвеченные стены и скульптурные элементы подземного зала"
+  alt: "Подземный зал соляного собора Сипакиры с сине-зелёной подсветкой, Колумбия"
 themes:
 - theme_culture
 searchAliases:

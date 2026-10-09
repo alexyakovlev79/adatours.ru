@@ -13,7 +13,8 @@ hero:
   alt: "На фото: город Пуно в Перу и озеро Титикака"
 gallery:
   - src: "/media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: город Пуно в Перу и озеро Титикака"
+    hover: "Пуно в Перу: женщина с ребёнком в разноцветной переноске"
+    alt: "Женщина в чёрной шляпе несёт ребёнка в яркой тканевой переноске, район Пуно, Перу"
   - src: "/media/destinations/puno-i-o-titikaka/gallery-2-enhanced-20261005.webp"
     alt: "На фото: город Пуно в Перу и озеро Титикака"
   - src: "/media/destinations/puno-i-o-titikaka/gallery-3-enhanced-20261005.webp"

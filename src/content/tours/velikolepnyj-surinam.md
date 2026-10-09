@@ -40,7 +40,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Суринама, город Парамарибо'
+    hover: "Парамарибо: городская набережная с белыми фасадами и башней"
+    alt: "Белые дома и башня на набережной Парамарибо, Суринам"
 - day: 3
   title: 'Дни 3-6: джунгли и наблюдение за животными'
   places: []
@@ -76,7 +77,8 @@ itinerary:
     Питание: завтрак, обед, ужин.
   images:
   - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Суринама, город Парамарибо'
+    hover: "Парамарибо: городская набережная с белыми фасадами и башней"
+    alt: "Белые дома и башня на набережной Парамарибо, Суринам"
 - day: 11
   title: мангровые заросли, болота и старые плантации
   places:

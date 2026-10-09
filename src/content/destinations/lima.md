@@ -12,21 +12,28 @@ hero:
   alt: Лима, столица Перу
 gallery:
 - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
-  alt: Лима — Перу
+  hover: "Лима: подъездная дорога, аэропортовый терминал и башня управления"
+  alt: "Дорога к аэропорту с терминалом и диспетчерской башней в Лиме, Перу"
 - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
-  alt: Лима
+  hover: "Лима: собор, пальмы и фонари на городской площади"
+  alt: "Кафедральный собор Лимы с двумя башнями у просторной площади, Перу"
 - src: /media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Лима
+  hover: "Лима: освещённые башни собора и фасады у вечерней площади"
+  alt: "Ночная подсветка собора и соседних исторических зданий в Лиме, Перу"
 - src: /media/tours/manyashchij-peru-kolumbiya/itinerary-day-3-images-1-enhanced-20261007.webp
-  alt: Лима
+  hover: "Лима: исторические здания с тёмными балконами, пальмы и цветники"
+  alt: "Жёлтые фасады с балконами у зелёной площади Лимы, Перу"
 - src: /media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
   alt: Лима - столица Перу, вид с берега
 - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
-  alt: Лима
+  hover: "Лима: струи фонтана и подсвеченные башни собора"
+  alt: "Освещённый фонтан перед собором Лимы ночью, Перу"
 - src: /media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp
-  alt: Лима
+  hover: "Лима: вид на центральную площадь и собор под флагом Перу"
+  alt: "Перуанский флаг над площадью и собором Лимы, Перу"
 - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
-  alt: Лима
+  hover: "Лима: пляж и прибрежная дорога под обрывом с городской застройкой"
+  alt: "Океанское побережье Лимы с высоким обрывом, дорогой и высотными домами, Перу"
 - src: /media/tours/vip-tur-v-peru/itinerary-11-images-0-src-enhanced-20261007.webp
   alt: Лима
 - src: /media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-1-images-0-src-enhanced-20261007.webp

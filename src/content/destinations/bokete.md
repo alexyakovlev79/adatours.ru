@@ -11,7 +11,8 @@ searchAliases: []
 hero: {"src":/media/countries/panama/featureBands-2-enhanced-20261002.webp,"alt":"На фото: горный курорт Бокете в Панаме"}
 gallery:
 - src: /media/destinations/boquete/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: горный курорт Бокете в Панаме'
+  hover: "Бокете: пара ярких попугаев ара на земле среди растений"
+  alt: "Два красных попугая ара с жёлто-синими крыльями среди зелени в районе Бокете, Панама"
 - src: /media/destinations/boquete/gallery-2-enhanced-20261005.webp
   alt: 'На фото: горный курорт Бокете в Панаме'
 - src: /media/destinations/boquete/gallery-3-enhanced-20261005.webp
@@ -19,7 +20,8 @@ gallery:
 - src: /media/destinations/boquete/gallery-4-enhanced-20261005.webp
   alt: 'На фото: горный курорт Бокете в Панаме'
 - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: Лучшее в Центральной Америке
+  hover: "Бокете: водопад и человек у его подножия среди тропической растительности"
+  alt: "Высокий водопад среди густой зелени в районе Бокете, Панама"
 facts: []
 featureBands: []
 relatedDestinations: []

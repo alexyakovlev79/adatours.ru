@@ -12,7 +12,8 @@ hero:
   alt: 'Тур в Колумбию vip: кофе, Картахена и остров Бару | 10 дней'
 gallery:
 - src: /media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp
-  alt: 'На фото: пляжный отдых на острове Бару в Колумбии'
+  hover: "Колумбия: бирюзовая вода перед островным берегом с деревьями"
+  alt: "Прозрачное бирюзовое море у низкого островного берега, Колумбия"
 - src: /media/tours/manyashchaya-kolumbiya-baru/baru-beach-generated-20261009-v1.webp
   alt: Песчаный карибский берег острова Бару
 - src: /media/tours/manyashchaya-kolumbiya-baru/baru-water-generated-20261009-v1.webp

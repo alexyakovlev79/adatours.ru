@@ -48,7 +48,8 @@ itinerary:
     Свободное время можно провести в городе или отправиться на ярмарку народных ремесел, где продаются местные сувениры.
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
-    alt: Лима
+    hover: "Лима: собор, пальмы и фонари на городской площади"
+    alt: "Кафедральный собор Лимы с двумя башнями у просторной площади, Перу"
 - day: 2
   title: Лима
   places:
@@ -71,7 +72,8 @@ itinerary:
     Продолжительность экскурсии около 4 часов. После возвращения в отель вторая половина дня остается свободной.
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
-    alt: Лима
+    hover: "Лима: собор, пальмы и фонари на городской площади"
+    alt: "Кафедральный собор Лимы с двумя башнями у просторной площади, Перу"
 - day: 3
   title: Лима - Куско
   places:
@@ -98,7 +100,8 @@ itinerary:
   - src: /media/tours/tur-v-peru-i-braziliyu/itinerary-day-3-enhanced-20261007.webp
     alt: Куско
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
-    alt: Лима
+    hover: "Лима: собор, пальмы и фонари на городской площади"
+    alt: "Кафедральный собор Лимы с двумя башнями у просторной площади, Перу"
 - day: 4
   title: Мачу-Пикчу
   places:
@@ -173,7 +176,8 @@ itinerary:
   - src: /media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp
     alt: 'на фото: Озеро Титикака'
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
-    alt: Лима
+    hover: "Лима: собор, пальмы и фонари на городской площади"
+    alt: "Кафедральный собор Лимы с двумя башнями у просторной площади, Перу"
 - day: 7
   title: Лима - Фоз-де-Игуасу
   places:
@@ -195,7 +199,8 @@ itinerary:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
-    alt: Лима
+    hover: "Лима: собор, пальмы и фонари на городской площади"
+    alt: "Кафедральный собор Лимы с двумя башнями у просторной площади, Перу"
 - day: 8
   title: Бразильская сторона водопадов Игуасу
   places:

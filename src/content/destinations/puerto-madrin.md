@@ -13,7 +13,8 @@ hero:
   alt: 'На фото: наблюдение за китами в Пуэрто-Мадрин в Аргентине'
 gallery:
 - src: /media/destinations/puerto-madrin/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: Пуэрто-Мадрин в Аргентине'
+  hover: "Пуэрто-Мадрин: морской лев у поверхности прозрачной воды"
+  alt: "Морской лев в бирюзовой воде у Пуэрто-Мадрина, Аргентина"
 - src: /media/destinations/puerto-madrin/gallery-2-enhanced-20261002.webp
   alt: 'На фото: Пуэрто-Мадрин в Аргентине'
 - src: /media/destinations/puerto-madrin/gallery-3-enhanced-20261002.webp

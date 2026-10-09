@@ -12,7 +12,8 @@ hero:
   alt: Побережье Ангра-дус-Рейс, Бразилия
 gallery:
 - src: /media/destinations/angra-dos-reis/gallery-1-enhanced-20261001.webp
-  alt: Острова и бухты у Ангра-дус-Рейс
+  hover: "Ангра-дус-Рейс: лодки у причала и дома на зелёном склоне"
+  alt: "Цветные рыбацкие лодки в гавани Ангра-дус-Рейс на фоне прибрежных домов, Бразилия"
 - src: /media/destinations/angra-dos-reis/gallery-2-enhanced-20261001.webp
   alt: Атлантическое побережье Ангра-дус-Рейс
 - src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/angra-10-generated-20261008.webp

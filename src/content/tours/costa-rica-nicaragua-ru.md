@@ -50,7 +50,8 @@ itinerary:
     **Ночь:** Barceló San Jose Palacio.
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: фасад церкви с парными шпилями и пальмы"
+    alt: "Церковь с двумя высокими шпилями среди пальм в Сан-Хосе, Коста-Рика"
 - day: 2
   title: Кофейная плантация Doka - вулкан Поас - Ла-Пас
   places:
@@ -89,7 +90,8 @@ itinerary:
     \n**Ночь:** Arenal Paraíso Resort & SPA.  \n**Питание:** завтрак, обед."
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+    hover: "Район Ареналя: небольшие бассейны и водные каскады в зелёном саду"
+    alt: "Каскадные бассейны среди пальм и тропической зелени в районе Ареналя, Коста-Рика"
 - day: 5
   title: Ареналь
   places:
@@ -100,7 +102,8 @@ itinerary:
     \ Paraíso.  \n**Питание:** завтрак, обед."
   images:
   - src: /media/tours/costa-rica-nicaragua-ru/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+    hover: "Ареналь: раскалённая лава на вулканическом склоне"
+    alt: "Вулкан Ареналь с ярким потоком лавы на склоне над лесом, Коста-Рика"
 - day: 6
   title: Ареналь - Монтеверде
   places:
@@ -113,7 +116,8 @@ itinerary:
     \  \n**Питание:** завтрак, обед."
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    hover: "Ла-Фортуна в Коста-Рике: прогулка по подвесному мосту в зелёном лесу"
+    alt: "Посетители на подвесном мосту среди тропического леса у Ла-Фортуны, Коста-Рика"
 - day: 7
   title: Монтеверде - Гранада
   places:
@@ -161,14 +165,16 @@ itinerary:
     \  \n**Питание:** завтрак, обед."
   images:
   - src: /media/destinations/granada/gallery-1-enhanced-20261004.webp
-    alt: 'На фото: город Гранада в Никарагуа'
+    hover: "Гранада: яркий прогулочный паровозик рядом с велосипедистом"
+    alt: "Разноцветный туристический паровозик и велосипедист на улице Гранады, Никарагуа"
 - day: 11
   title: Тихоокеанское побережье
   places: []
   text: "Свободные дни для пляжного отдыха.\n\n**Ночь:** Wyndham Tamarindo.  \n**Питание:** завтрак."
   images:
   - src: /media/destinations/playa-tamarindo/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: пляж Плайя Тамариндо в Коста-Рике'
+    hover: "Тамариндо: тенистый песчаный участок с деревьями и деревянным домиком"
+    alt: "Деревья с открытыми корнями и деревянная постройка у пляжа Тамариндо, Коста-Рика"
 - day: 12
   title: Тихоокеанское побережье
   places: []

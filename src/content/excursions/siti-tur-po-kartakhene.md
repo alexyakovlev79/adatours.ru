@@ -22,7 +22,8 @@ hero:
   alt: Картахена в Колумбии
 gallery:
   - src: "/media/excursions/siti-tur-po-kartakhene/gallery-0-src-enhanced-20261007.webp"
-    alt: Картахена, Колумбия
+    hover: "Картахена: разноцветные дома и зелень вдоль узкой улицы"
+    alt: "Узкая улица Картахены с яркими фасадами, балконами и растениями, Колумбия"
   - src: "/media/excursions/siti-tur-po-kartakhene/gallery-1-src-enhanced-20261007.webp"
     alt: Картахена, Колумбия
   - src: "/media/excursions/siti-tur-po-kartakhene/gallery-2-src-enhanced-20261007.webp"

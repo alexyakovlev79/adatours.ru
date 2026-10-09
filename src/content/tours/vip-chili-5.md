@@ -71,7 +71,8 @@ itinerary:
     На вечер можно выбрать **Borago, Ambrosia, Peumayen** или **Aquí está Coco**. Среди этих ресторанов есть варианты с акцентом на морепродукты и современную чилийскую кухню.
   images:
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+    hover: "Сантьяго: кабины канатной дороги на фоне высотных зданий и гор"
+    alt: "Красная и синяя кабины канатной дороги над городом Сантьяго, Чили"
 - day: 3
   title: Сантьяго - Калама - Сан-Педро-де-Атакама
   places:
@@ -148,7 +149,8 @@ itinerary:
     После экскурсии трансфер в Каламу, перелет в Сантьяго и трансфер в отель.
   images:
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+    hover: "Сантьяго: кабины канатной дороги на фоне высотных зданий и гор"
+    alt: "Красная и синяя кабины канатной дороги над городом Сантьяго, Чили"
 - day: 6
   title: Сантьяго - Пуэрто-Наталес
   places:
@@ -205,7 +207,8 @@ itinerary:
   - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+    hover: "Сантьяго: кабины канатной дороги на фоне высотных зданий и гор"
+    alt: "Красная и синяя кабины канатной дороги над городом Сантьяго, Чили"
 - day: 9
   title: Вальпараисо и Винья-дель-Мар
   places:

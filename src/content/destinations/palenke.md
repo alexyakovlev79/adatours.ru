@@ -11,7 +11,8 @@ searchAliases: []
 hero: {"src":"/media/destinations/palenque/hero-enhanced-20261004.webp","alt":"На фото: древний город майя Паленке в Мексике"}
 gallery:
 - src: /media/destinations/palenque/gallery-1-enhanced-20261004.webp
-  alt: 'На фото: древний город майя Паленке в Мексике'
+  hover: "Паленке: древние каменные платформы, лестницы и башня"
+  alt: "Каменные ступенчатые сооружения и башня среди зелени Паленке, Мексика"
 - src: /media/destinations/palenque/gallery-2-enhanced-20261004.webp
   alt: 'На фото: древний город майя Паленке в Мексике'
 - src: /media/tours/meksika-fantasticheskaya/itinerary-5-images-0-src-enhanced-20261007.webp

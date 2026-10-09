@@ -153,7 +153,8 @@ itinerary:
     **Питание:** завтрак, обед, ужин.
   images:
   - src: /media/destinations/canaima-and-angel-falls/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
+    hover: "Канайма: пассажиры в лодках на воде перед широким водопадом"
+    alt: "Длинные лодки с пассажирами на лагуне у водопада в Канайме, Венесуэла"
 - day: 5
   title: Свободное время в Канайме
   places:
@@ -186,7 +187,8 @@ itinerary:
     **Питание:** завтрак, обед, ужин.
   images:
   - src: /media/destinations/canaima-and-angel-falls/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
+    hover: "Канайма: пальмы на песчаном берегу и широкий водопад за водой"
+    alt: "Песчаный берег с пальмами и водопадом за лагуной Канаймы, Венесуэла"
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []
 - excursionRef: excursion_venezuela_angel_helicopter_flight

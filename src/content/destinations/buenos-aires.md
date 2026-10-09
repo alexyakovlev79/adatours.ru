@@ -13,7 +13,8 @@ hero:
   alt: Буэнос-Айрес, Аргентина
 gallery:
   - src: /media/home/buenos-aires-enhanced-20260930.webp
-    alt: Улица Буэнос-Айреса
+    hover: "Буэнос-Айрес: фасад Каса-Росада и цветы на переднем плане"
+    alt: "Розовое здание Каса-Росада за цветочной клумбой в Буэнос-Айресе, Аргентина"
 relatedDestinations:
   - destination_argentina_el_calafate
   - destination_argentina_mendoza

@@ -73,7 +73,8 @@ itinerary:
     Размещение в Villa Colonial.
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
+    hover: "Гватемала-Сити: городская застройка перед цепью вулканических вершин"
+    alt: "Городские кварталы и высотные дома на фоне вулканов в Гватемала-Сити, Гватемала"
 - day: 2
   title: Antigua
   places:
@@ -164,7 +165,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: "/media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Лаго де Атитлан
+    hover: "Атитлан: широкая озёрная панорама на фоне вулканов"
+    alt: "Озеро Атитлан между горными склонами и вулканическими вершинами, Гватемала"
 - day: 5
   title: Chichicastenango - Guatemala City
   places:
@@ -200,7 +202,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
-    alt: Чичикастенанго
+    hover: "Чичикастенанго: люди и торговые ряды у украшенной белой церкви"
+    alt: "Рынок перед белой церковью с цветными украшениями в Чичикастенанго, Гватемала"
   - src: /media/destinations/guatemala-city/hero-enhanced-20261003.webp
     alt: Гватемала-Сити
 - day: 6
@@ -264,7 +267,8 @@ itinerary:
     Размещение в Villa Caribe.
   images:
   - src: /media/destinations/tikal-and-flores/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Тикаль и Флорес в гватемале'
+    hover: "Флорес: лодка и солнечная дорожка на озере"
+    alt: "Лодка на озере в оранжевом свете низкого солнца у Флореса, Гватемала"
 - day: 8
   title: Rio Dulce - Quirigua - Copan, Honduras
   places:
@@ -289,7 +293,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
-    alt: Копан Руинас
+    hover: "Копан: древние каменные постройки и лестницы на зелёной территории"
+    alt: "Каменная ступенчатая платформа среди зелёных лужаек в Копане, Гондурас"
 - day: 9
   title: Copan - San Salvador
   places:
@@ -315,7 +320,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/destinations/copan-ruinas/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: руины Копана в Гондурасе'
+    hover: "Копан: древний рельеф из разноцветных каменных блоков"
+    alt: "Резной каменный рельеф с фигурой на стене руин Копана, Гондурас"
 - day: 10
   title: San Salvador - San Andres - Joya de Ceren
   places:
@@ -336,7 +342,8 @@ itinerary:
     Размещение в Barcelo San Salvador.
   images:
   - src: /media/destinations/san-salvador/featureBands-2-enhanced-20261006.webp
-    alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+    hover: "Сан-Сальвадор: конная статуя на постаменте под синим небом"
+    alt: "Бронзовый памятник всаднику на коне в Сан-Сальвадоре, Эль-Сальвадор"
 - day: 11
   title: San Salvador - La Union - Nicaragua - Leon - Managua
   places:
@@ -444,7 +451,8 @@ itinerary:
     Включены завтрак и обед.
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    hover: "Ла-Фортуна в Коста-Рике: прогулка по подвесному мосту в зелёном лесу"
+    alt: "Посетители на подвесном мосту среди тропического леса у Ла-Фортуны, Коста-Рика"
 - day: 15
   title: Arenal - Monteverde
   places:
@@ -466,7 +474,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    hover: "Ла-Фортуна: зелёная лесная долина и высокие пальмы"
+    alt: "Пальмы и густой тропический лес в районе Ла-Фортуны, Коста-Рика"
 - day: 16
   title: Monteverde - Tarcoles - Manuel Antonio
   places:
@@ -520,7 +529,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+    hover: "Мануэль-Антонио: тропический пляж у зелёного мыса"
+    alt: "Песчаный пляж с пальмами и лесистым мысом в Мануэль-Антонио, Коста-Рика"
 - day: 18
   title: Manuel Antonio - Panama - Boquete
   places:
@@ -536,7 +546,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Лучшее в Центральной Америке
+    hover: "Бокете: водопад и человек у его подножия среди тропической растительности"
+    alt: "Высокий водопад среди густой зелени в районе Бокете, Панама"
 - day: 19
   title: Вулкан Baru
   places:
@@ -595,7 +606,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/destinations/boquete/gallery-1-enhanced-20261005.webp
-    alt: 'На фото: горный курорт Бокете в Панаме'
+    hover: "Бокете: пара ярких попугаев ара на земле среди растений"
+    alt: "Два красных попугая ара с жёлто-синими крыльями среди зелени в районе Бокете, Панама"
 - day: 21
   title: Национальный парк Chagres - Embera - Тихоокеанская Ривьера
   places:
@@ -671,7 +683,8 @@ itinerary:
     На этом большое путешествие по Центральной Америке завершается.
   images:
   - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
-    alt: Панама-Сити
+    hover: "Панама-Сити: современная застройка и башня со спиральным фасадом"
+    alt: "Высотные здания Панама-Сити с зелёной спиральной башней, Панама"
 included:
 - Русскоговорящий гид.
 - Трансферы по программе.
@@ -701,7 +714,8 @@ currency: USD
 priceNote: $13655
 hero:
   src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: Лучшее в Центральной Америке
+  hover: "Бокете: водопад и человек у его подножия среди тропической растительности"
+  alt: "Высокий водопад среди густой зелени в районе Бокете, Панама"
 routeCountries:
 - country_guatemala
 - country_honduras

@@ -13,9 +13,11 @@ hero:
   alt: 'На фото: цветные скалы в Сальте Аргентина'
 gallery:
 - src: /media/destinations/salta/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: город  Сальта в Аргентине'
+  hover: "Сальта: белый фасад с двумя рядами арок и башней"
+  alt: "Белое историческое здание с аркадами и башней в Сальте, Аргентина"
 - src: /media/destinations/salta/gallery-2-enhanced-20261002.webp
-  alt: 'На фото: город  Сальта в Аргентине'
+  hover: "Сальта: протяжённый исторический фасад у улицы перед горными склонами"
+  alt: "Невысокие старинные дома на улице Сальты на фоне гор, Аргентина"
 - src: /media/destinations/salta/gallery-3-enhanced-20261002.webp
   alt: 'На фото: город  Сальта в Аргентине'
 - src: /media/destinations/salta/gallery-4-enhanced-20261002.webp

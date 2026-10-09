@@ -46,7 +46,8 @@ itinerary:
     Ночь в отеле **Barceló San Jose Palacio**.
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: вечерняя подсветка фасада и фонтан на площади"
+    alt: "Освещённое историческое здание за фонтаном вечером в Сан-Хосе, Коста-Рика"
 - day: 2
   title: Кофейная плантация Doka, вулкан Поас и Ла-Пас
   places:
@@ -96,7 +97,8 @@ itinerary:
     Питание: завтрак, обед.
   images:
   - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+    hover: "Ареналь в Коста-Рике: водопад, бурная река и посетители на скалистом берегу"
+    alt: "Посетители у реки и водопада среди леса в районе Ареналя, Коста-Рика"
 - day: 5
   title: Ареналь
   places:
@@ -111,7 +113,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    hover: "Ла-Фортуна в Коста-Рике: прогулка по подвесному мосту в зелёном лесу"
+    alt: "Посетители на подвесном мосту среди тропического леса у Ла-Фортуны, Коста-Рика"
 - day: 6
   title: Ареналь - Монтеверде
   places:
@@ -127,7 +130,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    hover: "Ла-Фортуна: зелёная лесная долина и высокие пальмы"
+    alt: "Пальмы и густой тропический лес в районе Ла-Фортуны, Коста-Рика"
 - day: 7
   title: Монтеверде
   places:
@@ -173,7 +177,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+    hover: "Мануэль-Антонио: тропический пляж у зелёного мыса"
+    alt: "Песчаный пляж с пальмами и лесистым мысом в Мануэль-Антонио, Коста-Рика"
 - day: 10
   title: Мануэль Антонио - Корковадо
   places:
@@ -187,7 +192,8 @@ itinerary:
     Питание: завтрак, обед, ужин.
   images:
   - src: /media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+    hover: "Мануэль-Антонио: человек с доской для сёрфинга у лесистого побережья"
+    alt: "Сёрфер с доской у волн на пляже Мануэль-Антонио, Коста-Рика"
 - day: 11
   title: Корковадо
   places:

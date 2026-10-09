@@ -21,15 +21,19 @@ gallery:
 - src: /media/destinations/asuncion/gallery-5-enhanced-20261005.webp
   alt: 'На фото: город Асунсьон - столица Парагвая'
 - src: /media/excursions/siti-tur-v-asunsone/gallery-1-src-enhanced-20261007.webp
-  alt: 'на фото: Асунсьон'
+  hover: "Асунсьон: огни городских улиц на фоне оранжевого неба"
+  alt: "Высотные здания и освещённые улицы Асунсьона под оранжевым небом, Парагвай"
 - src: /media/excursions/siti-tur-v-asunsone/gallery-3-src-enhanced-20261007.webp
-  alt: на фото:Асунсьон
+  hover: "Асунсьон: старинный фасад с башней и парагвайским флагом"
+  alt: "Розовое историческое здание с башней, флагом и пальмами в Асунсьоне, Парагвай"
 - src: /media/excursions/siti-tur-v-asunsone/gallery-2-src-enhanced-20261007.webp
-  alt: на фото:Асунсьон
+  hover: "Асунсьон: городская надпись на газоне перед старинным зданием"
+  alt: "Крупные буквы ASUnción перед историческим зданием и пальмами в Асунсьоне, Парагвай"
 - src: /media/tours/klassicheskij-paragvaj/itinerary-4-images-0-src-enhanced-20261007.webp
   alt: на фото:Асунсьон
 - src: /media/excursions/siti-tur-v-asunsone/gallery-0-src-enhanced-20261007.webp
-  alt: 'на фото: Асунсьон, столица Парагвая'
+  hover: "Асунсьон: городская панорама у широкого водного берега"
+  alt: "Вид сверху на прибрежные кварталы и высотные здания Асунсьона, Парагвай"
 facts: []
 featureBands: []
 relatedDestinations: []

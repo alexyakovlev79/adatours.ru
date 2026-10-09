@@ -27,7 +27,8 @@ gallery:
 - src: /media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-13-images-0-src-enhanced-20261007.webp
   alt: Тумбес
 - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
-  alt: Весь Многоликий Перу  + Пляжи Тумбеса
+  hover: "Лима: цветочная надпись у площади с пальмами и старинными фасадами"
+  alt: "Цветники с надписью Lima и исторические здания на площади Лимы, Перу"
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -41,7 +41,8 @@ itinerary:
     Размещение в отеле.
   images:
   - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Парамарибо
+    hover: "Парамарибо: городская набережная с белыми фасадами и башней"
+    alt: "Белые дома и башня на набережной Парамарибо, Суринам"
 - day: 2
   title: Парамарибо и историческая плантация
   places:
@@ -77,7 +78,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Космодром Куру
+    hover: "Космодром Куру: ракета и башни стартового комплекса"
+    alt: "Ракета на стартовой площадке между металлическими башнями космодрома Куру, Французская Гвиана"
 - day: 4
   title: Остров Дьявола
   places:

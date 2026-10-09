@@ -27,9 +27,11 @@ gallery:
 - src: /media/destinations/lake-atitlan/gallery-6-enhanced-20261003.webp
   alt: 'На фото: озеро Атитлан в Гватемале'
 - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: Лаго де Атитлан
+  hover: "Атитлан: широкая озёрная панорама на фоне вулканов"
+  alt: "Озеро Атитлан между горными склонами и вулканическими вершинами, Гватемала"
 - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
-  alt: 'На фото: Вид на озеро Атитлан'
+  hover: "Бирюзовое озеро среди зелени на фоне высокой вулканической вершины"
+  alt: "Озеро у подножия конусообразного вулкана, окружённое деревьями и цветами"
 - src: /media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
   alt: 'На фото: Озеро Атитлан в Гватемале'
 - src: /media/tours/otkryvaya-gvatemalu/itinerary-2-images-0-src-enhanced-20261007.webp

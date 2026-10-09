@@ -66,7 +66,8 @@ itinerary:
     Размещение и ночь в отеле 4* недалеко от руин.
   images:
   - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: пляжный отдых в Мексике'
+    hover: "Тулум: древние постройки на скалистом берегу над пляжем"
+    alt: "Каменные руины над обрывом и пляжем Тулума у бирюзового моря, Мексика"
   - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: 'На фото: пляжный отдых в Мексике'
 - day: 3
@@ -84,7 +85,8 @@ itinerary:
     После посещения руин переезд в Паленке. Размещение в отеле 4*. Ночь в Паленке.
   images:
   - src: /media/destinations/palenque/gallery-1-enhanced-20261004.webp
-    alt: 'На фото: древний город майя Паленке в Мексике'
+    hover: "Паленке: древние каменные платформы, лестницы и башня"
+    alt: "Каменные ступенчатые сооружения и башня среди зелени Паленке, Мексика"
 - day: 4
   title: Паленке - Кампече
   places:

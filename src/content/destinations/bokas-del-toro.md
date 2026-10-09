@@ -27,9 +27,11 @@ gallery:
 - src: /media/destinations/bocas-del-toro/gallery-8-enhanced-20261005.webp
   alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
 - src: /media/tours/luchshee-v-paname/itinerary-10-images-0-src-enhanced-20261007.webp
-  alt: 'на фото: Бокас -дель-Торо'
+  hover: "Бокас-дель-Торо: прибрежные домики и настилы над бирюзовой водой"
+  alt: "Домики с соломенными крышами на сваях над прозрачной водой в Бокас-дель-Торо, Панама"
 - src: /media/tours/luchshee-v-paname/itinerary-7-images-0-src-enhanced-20261007.webp
-  alt: 'на фото: Бокас -дель-Торо'
+  hover: "Бирюзовая вода у отвесных зелёных скал с арочными проёмами"
+  alt: "Скалы с природными арками и густой зеленью над бирюзовым морем"
 facts: []
 featureBands: []
 relatedDestinations: []

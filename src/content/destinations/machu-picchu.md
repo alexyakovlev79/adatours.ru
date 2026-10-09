@@ -13,11 +13,14 @@ hero:
   alt: Мачу-Пикчу, Перу
 gallery:
 - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp
-  alt: Мачу Пикчу в Перу - затерянный город инков
+  hover: "Мачу-Пикчу: древние стены и зелёные террасы на фоне гор"
+  alt: "Каменные террасы и руины Мачу-Пикчу под высокой горной вершиной, Перу"
 - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-13-enhanced-20261006.webp
-  alt: Мачу-Пикчу
+  hover: "Мачу-Пикчу: зелёные террасы и каменные руины в горной панораме"
+  alt: "Вид на террасы Мачу-Пикчу и окружающие горные вершины, Перу"
 - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-12-enhanced-20260930.webp
-  alt: Затерянный город инков - Мачу-Пикчу, Перу
+  hover: "Мачу-Пикчу: вид через каменное окно на террасы и горы"
+  alt: "Каменные руины Мачу-Пикчу и горная вершина через проём древней стены, Перу"
 - src: /media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/hero-src-enhanced-20261007.webp
   alt: Люксовый поезд в Мачу-Пикчу «Хирам Бингхэм» (Бельмонд) в Перу
 relatedDestinations:

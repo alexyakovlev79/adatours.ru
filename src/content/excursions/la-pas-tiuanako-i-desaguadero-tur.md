@@ -20,11 +20,13 @@ hero:
   alt: "Каменные головы в стене комплекса Тиуанако, Боливия"
 gallery:
   - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
-    alt: "на фото: Ла Пас, столица Боливии"
+    hover: "Ла-Пас: украшенный фасад с куполом и боливийскими флагами"
+    alt: "Жёлто-белое историческое здание с куполом и флагами в Ла-Пасе, Боливия"
   - src: "/media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото:Тиуанако, Боливия"
   - src: "/media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-2-src-enhanced-20261007.webp"
-    alt: "на фото:Тиуанако, Боливия"
+    hover: "Тиуанако: древняя каменная кладка и ступени перед проходом"
+    alt: "Каменные стены, лестницы и прямоугольный проход в Тиуанако, Боливия"
 route:
   - Ла Пас
   - Тиуанако

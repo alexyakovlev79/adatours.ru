@@ -18,7 +18,8 @@ currency: USD
 priceNote: "Основная стоимость — $445. Для 2 человек — $234 на человека, для 3 человек — $203 на человека, для 4 человек — $156 на человека."
 hero:
   src: "/media/excursions/salento-i-dolina-kokora/hero-src-enhanced-20261007.webp"
-  alt: Долина Кокора в Колумбии
+  hover: "Долина Кокора: конная прогулка по зелёным холмам"
+  alt: "Всадники на лошадях среди зелёных холмов долины Кокора, Колумбия"
 gallery:
   - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-2-src-enhanced-20261007.webp"
     alt: Саленто, Колумбия

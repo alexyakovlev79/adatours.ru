@@ -120,7 +120,8 @@ itinerary:
     Ночь в Сан-Сальвадоре, отель La-Terraza.'
   images:
   - src: /media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: город Гватемала-Сити (столица страны)'
+    hover: "Гватемала-Сити: длинный каменный фасад с башнями и арочными окнами"
+    alt: "Монументальное каменное здание с башнями у улицы Гватемала-Сити, Гватемала"
 - day: 5
   title: Хойя-де-Серен - Сан-Андрес - Тасумаль
   places:
@@ -142,7 +143,8 @@ itinerary:
     Ночь в отеле La-Terraza.'
   images:
   - src: /media/destinations/san-salvador/featureBands-2-enhanced-20261006.webp
-    alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+    hover: "Сан-Сальвадор: конная статуя на постаменте под синим небом"
+    alt: "Бронзовый памятник всаднику на коне в Сан-Сальвадоре, Эль-Сальвадор"
 - day: 6
   title: Сан-Сальвадор - Копан, Гондурас
   places:
@@ -163,7 +165,8 @@ itinerary:
     Ночь в Копане, отель Marina Copan.'
   images:
   - src: /media/destinations/copan-ruinas/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: руины Копана в Гондурасе'
+    hover: "Копан: древний рельеф из разноцветных каменных блоков"
+    alt: "Резной каменный рельеф с фигурой на стене руин Копана, Гондурас"
 - day: 7
   title: Копан - Киригуа - Ливингстон
   places:
@@ -220,7 +223,8 @@ itinerary:
     Ночь во Флоресе, отель Касона-дель-Лаго.'
   images:
   - src: /media/destinations/tikal-and-flores/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Тикаль и Флорес в гватемале'
+    hover: "Флорес: лодка и солнечная дорожка на озере"
+    alt: "Лодка на озере в оранжевом свете низкого солнца у Флореса, Гватемала"
 - day: 10
   title: Якса - Сан-Игнасио, Белиз
   places:
@@ -244,7 +248,8 @@ itinerary:
     Ночь в Сан-Игнасио, Midas Resort.'
   images:
   - src: /media/destinations/san-ignasio/gallery-1-enhanced-20261002.webp
-    alt: 'На фото: город Сан-Игнасио в Белизе'
+    hover: "Сан-Игнасио в Белизе: глиняные сосуды среди пещерных скал"
+    alt: "Керамические сосуды у входа в пещерный проход в районе Сан-Игнасио, Белиз"
 - day: 11
   title: Караколь
   places:
@@ -300,7 +305,8 @@ durationDays: 11
 durationNights: 10
 hero:
   src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-  alt: Гватемала - Гондурас- Эль Сальвадор - Белиз
+  hover: "Гватемала-Сити: городская застройка перед цепью вулканических вершин"
+  alt: "Городские кварталы и высотные дома на фоне вулканов в Гватемала-Сити, Гватемала"
 routeCountries:
 - country_guatemala
 - country_honduras

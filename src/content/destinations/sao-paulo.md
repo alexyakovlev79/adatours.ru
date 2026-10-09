@@ -12,7 +12,8 @@ hero:
   alt: Панорама Сан-Паулу, Бразилия
 gallery:
 - src: /media/destinations/destination_brazil_sao_paulo/sao-paulo-departure-generated-20261008.webp
-  alt: Городская улица Сан-Паулу
+  hover: "Сан-Паулу: деревья, пешеходы и автомобили у городских высоток"
+  alt: "Тенистый тротуар и оживлённая улица среди высотных зданий Сан-Паулу, Бразилия"
 relatedDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu

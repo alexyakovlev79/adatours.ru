@@ -11,9 +11,11 @@ searchAliases: []
 hero: {"src":/media/countries/panama/featureBands-1-enhanced-20261002.webp,"alt":"На фото: столица Панамы, город Панама-Сити"}
 gallery:
 - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: столица Панамы, город Панама-Сити'
+  hover: "Панама-Сити: освещённый фасад собора между двумя белыми башнями"
+  alt: "Ночная подсветка каменного собора с белыми башнями в Панама-Сити, Панама"
 - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
-  alt: 'На фото: столица Панамы, город Панама-Сити'
+  hover: "Панама-Сити: белый фасад с арками и балконными ограждениями"
+  alt: "Белое историческое здание с балконами и арочным входом в Панама-Сити, Панама"
 - src: /media/destinations/panama-city/gallery-3-enhanced-20261005.webp
   alt: 'На фото: столица Панамы, город Панама-Сити'
 - src: /media/destinations/panama-city/gallery-4-enhanced-20261005.webp
@@ -25,9 +27,11 @@ gallery:
 - src: /media/destinations/panama-city/gallery-7-enhanced-20261005.webp
   alt: 'На фото: столица Панамы, город Панама-Сити'
 - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
-  alt: Панама-Сити
+  hover: "Панама-Сити: современная застройка и башня со спиральным фасадом"
+  alt: "Высотные здания Панама-Сити с зелёной спиральной башней, Панама"
 - src: /media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Панама-Сити
+  hover: "Панама-Сити: освещённые высотки и зелёная спиральная башня в сумерках"
+  alt: "Панорама Панама-Сити со спиральной башней и городскими огнями в сумерках, Панама"
 - src: /media/tours/luchshee-v-paname/itinerary-0-images-0-src-enhanced-20261007.webp
   alt: 'на фото: Тихоокеанское побережье Панама- Сити'
 facts: []

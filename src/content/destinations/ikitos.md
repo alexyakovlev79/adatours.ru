@@ -36,7 +36,8 @@ gallery:
 - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp
   alt: Круиз по Амазонке в Перу (Икитос) с Aqua Expedition
 - src: /media/tours/manyashchij-peru-i-ikitos/hero-src-enhanced-20261007.webp
-  alt: Манящий Перу и Икитос
+  hover: "Икитос: лодки у берега на фоне старинных городских фасадов"
+  alt: "Речные лодки у набережной Икитоса с историческими зданиями, Перу"
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -18,7 +18,8 @@ gallery:
 - src: /media/destinations/san-salvador/featureBands-1-enhanced-20261006.webp
   alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
 - src: /media/destinations/san-salvador/featureBands-2-enhanced-20261006.webp
-  alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+  hover: "Сан-Сальвадор: конная статуя на постаменте под синим небом"
+  alt: "Бронзовый памятник всаднику на коне в Сан-Сальвадоре, Эль-Сальвадор"
 - src: /media/destinations/san-salvador/gallery-3-enhanced-20261006.webp
   alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
 - src: /media/destinations/san-salvador/gallery-4-enhanced-20261006.webp

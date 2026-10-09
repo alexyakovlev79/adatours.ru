@@ -106,7 +106,8 @@ itinerary:
     Предусмотрен групповой вариант с англоговорящим гидом и индивидуальный вариант с русскоговорящим гидом, минимум 2 человека.'
   image:
     src: /media/catalog/tury/hero-enhanced-20260930.webp
-    alt: Панорама Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: залив и Сахарная Голова среди городских кварталов"
+    alt: "Панорама Рио-де-Жанейро с заливом, горой Сахарная Голова и городской застройкой, Бразилия"
 - excursionRef: excursion_source_rio_nochyu
   places: []
 - excursionRef: excursion_source_tajny_starogo_rio_de_zhanejro

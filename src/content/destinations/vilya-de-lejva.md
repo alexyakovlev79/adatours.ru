@@ -23,7 +23,8 @@ gallery:
 - src: /media/destinations/villa-de-leyva/gallery-6-enhanced-20261003.webp
   alt: 'На фото: город Вилья-де-Лейва в Колумбии'
 - src: /media/tours/kolumbiya-live/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: Вилья-де-Лейва
+  hover: "Вилья-де-Лейва: цветущий сад внутри двора с белыми арками"
+  alt: "Внутренний двор с аркадой, черепичными крышами и цветами в Вилья-де-Лейве, Колумбия"
 - src: /media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-3-images-0-src-enhanced-20261007.webp
   alt: На фото:Вилья-де-Лейва
 relatedDestinations: []

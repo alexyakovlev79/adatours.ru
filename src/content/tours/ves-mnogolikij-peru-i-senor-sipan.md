@@ -111,7 +111,8 @@ itinerary:
     **Дополнительно:** посещение Кафедрального собора Куско перед основной экскурсией, около **40 минут**, доплата **$25**.
   images:
   - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp
-    alt: 'на фото: Куско в Перу'
+    hover: "Куско: церковный фасад и цветники у оживлённой площади"
+    alt: "Площадь Куско с каменной церковью, цветниками и туристическим автобусом, Перу"
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
 - day: 4
@@ -286,7 +287,8 @@ itinerary:
     По прилете встреча, трансфер и размещение в гостинице.
   images:
   - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
-    alt: Лима — Перу
+    hover: "Лима: подъездная дорога, аэропортовый терминал и башня управления"
+    alt: "Дорога к аэропорту с терминалом и диспетчерской башней в Лиме, Перу"
 - day: 11
   title: Лима. Свободный день
   places:
@@ -299,7 +301,8 @@ itinerary:
     По желанию
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
-    alt: Лима
+    hover: "Лима: собор, пальмы и фонари на городской площади"
+    alt: "Кафедральный собор Лимы с двумя башнями у просторной площади, Перу"
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []
 - day: 12
@@ -348,7 +351,8 @@ itinerary:
     По прилете трансфер в отель **Britania** или отель той же категории.
   images:
   - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
-    alt: 'на фото: Лима, столица Перу'
+    hover: "Лима: цветочная надпись у площади с пальмами и старинными фасадами"
+    alt: "Цветники с надписью Lima и исторические здания на площади Лимы, Перу"
 - day: 14
   title: Лима и вылет
   places:

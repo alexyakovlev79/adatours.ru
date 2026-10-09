@@ -49,7 +49,8 @@ itinerary:
     Экскурсия завершается на колоритном рынке Mercado Pettirossi.
   images:
   - src: "/media/excursions/siti-tur-v-asunsone/gallery-1-src-enhanced-20261007.webp"
-    alt: 'на фото: Асунсьон'
+    hover: "Асунсьон: огни городских улиц на фоне оранжевого неба"
+    alt: "Высотные здания и освещённые улицы Асунсьона под оранжевым небом, Парагвай"
 - day: 2
   title: Асунсьон - Чако - Филадельфия
   places:
@@ -68,7 +69,8 @@ itinerary:
     Вечером прибытие в Филадельфию и размещение в отеле 3* с завтраком.
   images:
   - src: "/media/excursions/siti-tur-v-asunsone/gallery-3-src-enhanced-20261007.webp"
-    alt: на фото:Асунсьон
+    hover: "Асунсьон: старинный фасад с башней и парагвайским флагом"
+    alt: "Розовое историческое здание с башней, флагом и пальмами в Асунсьоне, Парагвай"
 - day: 3
   title: Чако
   places:
@@ -99,7 +101,8 @@ itinerary:
     Вечером возвращаемся в Асунсьон и размещаемся в отеле 4*.
   images:
   - src: "/media/excursions/siti-tur-v-asunsone/gallery-2-src-enhanced-20261007.webp"
-    alt: на фото:Асунсьон
+    hover: "Асунсьон: городская надпись на газоне перед старинным зданием"
+    alt: "Крупные буквы ASUnción перед историческим зданием и пальмами в Асунсьоне, Парагвай"
 - day: 5
   title: Асунсьон - Каапуку - Сан-Игнасио-Гуасу - Энкарнасьон
   places:
@@ -201,7 +204,8 @@ currency: USD
 priceNote: $3903
 hero:
   src: "/media/excursions/siti-tur-v-asunsone/gallery-0-src-enhanced-20261007.webp"
-  alt: 'на фото: Асунсьон, столица Парагвая'
+  hover: "Асунсьон: городская панорама у широкого водного берега"
+  alt: "Вид сверху на прибрежные кварталы и высотные здания Асунсьона, Парагвай"
 routeCountries:
 - country_paraguay
 routeDestinations:

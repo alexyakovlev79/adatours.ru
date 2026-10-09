@@ -11,11 +11,14 @@ searchAliases: []
 hero: {"src":"/media/destinations/bogota/hero-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"}
 gallery:
 - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: город Богота, столица Колумбии'
+  hover: "Богота: красные, белые и жёлтые автобусы на оживлённой улице"
+  alt: "Плотные ряды разноцветных автобусов на улице Боготы, Колумбия"
 - src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: город Богота, столица Колумбии'
+  hover: "Богота: артисты в ярких костюмах выступают на площади перед собором"
+  alt: "Уличные артисты на ходулях перед собором на площади Боготы, Колумбия"
 - src: /media/destinations/bogota/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: город Богота, столица Колумбии'
+  hover: "Богота: посетители площади у каменного фасада собора"
+  alt: "Люди перед собором с двумя башнями на площади Боготы, Колумбия"
 - src: /media/destinations/bogota/gallery-4-enhanced-20261003.webp
   alt: 'На фото: колумбийский кофе'
 - src: /media/destinations/bogota/gallery-5-enhanced-20261003.webp
@@ -27,9 +30,11 @@ gallery:
 - src: /media/destinations/bogota/gallery-8-enhanced-20261003.webp
   alt: 'На фото: город Богота, столица Колумбии'
 - src: /media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp
-  alt: Богота
+  hover: "Богота: каменные фасады собора и исторических зданий у площади"
+  alt: "Собор с двумя башнями и соседние здания на площади Боготы, Колумбия"
 - src: /media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: Богота
+  hover: "Богота: городской вид сверху на кварталы, высотки и дороги"
+  alt: "Панорама Боготы с высотными зданиями, дорогами и горными склонами, Колумбия"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

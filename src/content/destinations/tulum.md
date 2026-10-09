@@ -15,7 +15,8 @@ gallery:
 - src: /media/destinations/tulum/gallery-2-enhanced-20261004.webp
   alt: 'На фото: морской курорт Тулум в Мексике'
 - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Тулум
+  hover: "Тулум: древние постройки на скалистом берегу над пляжем"
+  alt: "Каменные руины над обрывом и пляжем Тулума у бирюзового моря, Мексика"
 facts: []
 featureBands: []
 relatedDestinations: []

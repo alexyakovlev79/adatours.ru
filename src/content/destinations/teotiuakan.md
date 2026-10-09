@@ -11,7 +11,8 @@ searchAliases: []
 hero: {"src":/media/countries/mexico/featureBands-1-enhanced-20261002.webp,"alt":"На фото: пирамида Солнца в Теотиуакане в Мексике"}
 gallery:
 - src: /media/destinations/teotihuacan/gallery-1-enhanced-20261004.webp
-  alt: 'На фото: пирамида Солнца в Теотиуакане в Мексике'
+  hover: "Теотиуакан: древние ступенчатые постройки и пирамида на фоне гор"
+  alt: "Пирамида и каменные платформы вдоль широкой дороги в Теотиуакане, Мексика"
 - src: /media/destinations/teotihuacan/gallery-2-enhanced-20261004.webp
   alt: 'На фото: пирамида Солнца в Теотиуакане в Мексике'
 - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-1-images-0-src-enhanced-20261007.webp

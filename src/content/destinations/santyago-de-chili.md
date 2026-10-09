@@ -13,9 +13,11 @@ hero:
   alt: "На фото: столица Чили. город Сантьяго-де-Чили"
 gallery:
 - src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
-  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+  hover: "Сантьяго: старинные фасады, башни и оживлённый перекрёсток"
+  alt: "Исторические здания с башнями и пешеходы на улице Сантьяго, Чили"
 - src: /media/destinations/santyago-de-chili/gallery-2-enhanced-20261006.webp
-  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+  hover: "Горное озеро с каменистым берегом и снегом на высоких вершинах"
+  alt: "Голубое озеро у каменистого берега среди гор со снежными вершинами"
 - src: /media/destinations/santyago-de-chili/gallery-3-enhanced-20261006.webp
   alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
 - src: /media/destinations/santyago-de-chili/gallery-4-enhanced-20261006.webp
@@ -31,7 +33,8 @@ gallery:
 - src: /media/destinations/santyago-de-chili/gallery-9-enhanced-20261006.webp
   alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
 - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
-  alt: Сантьяго-де-Чили
+  hover: "Сантьяго: кабины канатной дороги на фоне высотных зданий и гор"
+  alt: "Красная и синяя кабины канатной дороги над городом Сантьяго, Чили"
 facts: []
 featureBands: []
 relatedDestinations: []

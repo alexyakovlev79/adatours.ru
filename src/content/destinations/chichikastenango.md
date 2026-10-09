@@ -25,7 +25,8 @@ gallery:
 - src: /media/destinations/chichicastenango/gallery-6-enhanced-20261003.webp
   alt: 'На фото: в городе Чичикастенанго в Гватемале'
 - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
-  alt: Чичикастенанго
+  hover: "Чичикастенанго: люди и торговые ряды у украшенной белой церкви"
+  alt: "Рынок перед белой церковью с цветными украшениями в Чичикастенанго, Гватемала"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

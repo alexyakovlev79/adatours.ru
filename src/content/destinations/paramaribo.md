@@ -27,7 +27,8 @@ gallery:
 - src: /media/destinations/paramaribo/gallery-7-enhanced-20261005.webp
   alt: 'На фото: столица Суринама город Парамарибо'
 - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp
-  alt: Парамарибо
+  hover: "Парамарибо: городская набережная с белыми фасадами и башней"
+  alt: "Белые дома и башня на набережной Парамарибо, Суринам"
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -54,7 +54,8 @@ itinerary:
     \ Mawamba Lodge Tortuguero.  \n**Питание:** завтрак, обед, ужин."
   images:
   - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
-    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+    hover: "Сан-Хосе: красно-белый автобус на улице города"
+    alt: "Красно-белый автобус перед городскими зданиями в Сан-Хосе, Коста-Рика"
 - day: 3
   title: Тортугеро
   places:
@@ -65,7 +66,8 @@ itinerary:
     \ Mawamba Lodge Tortuguero.  \n**Питание:** завтрак, обед, ужин."
   images:
   - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
+    hover: "Тортугуэро: зелёные берега и облака отражаются в реке"
+    alt: "Спокойная река с отражениями тропического леса в Тортугуэро, Коста-Рика"
 - day: 4
   title: Тортугеро - рафтинг по реке Пакуаре
   places:
@@ -102,7 +104,8 @@ itinerary:
     \n**Размещение:** Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак, обед."
   images:
   - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+    hover: "Ареналь в Коста-Рике: водопад, бурная река и посетители на скалистом берегу"
+    alt: "Посетители у реки и водопада среди леса в районе Ареналя, Коста-Рика"
 - day: 7
   title: 'Ареналь: каньонинг и квадроциклы'
   places:
@@ -117,7 +120,8 @@ itinerary:
     \ Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак, обед."
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    hover: "Ла-Фортуна в Коста-Рике: прогулка по подвесному мосту в зелёном лесу"
+    alt: "Посетители на подвесном мосту среди тропического леса у Ла-Фортуны, Коста-Рика"
 - day: 8
   title: Ареналь - Монтеверде
   places:
@@ -131,7 +135,8 @@ itinerary:
     \ «Супермен» по тросу длиной 1000 м.\n\n**Размещение:** El Establo.  \n**Питание:** завтрак, обед."
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    hover: "Ла-Фортуна: зелёная лесная долина и высокие пальмы"
+    alt: "Пальмы и густой тропический лес в районе Ла-Фортуны, Коста-Рика"
 - day: 9
   title: Монтеверде - Тихоокеанское побережье
   places:
@@ -174,7 +179,8 @@ itinerary:
     \ Tamarindo.  \n**Питание:** завтрак."
   images:
   - src: /media/destinations/playa-tamarindo/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: пляж Плайя Тамариндо в Коста-Рике'
+    hover: "Тамариндо: тенистый песчаный участок с деревьями и деревянным домиком"
+    alt: "Деревья с открытыми корнями и деревянная постройка у пляжа Тамариндо, Коста-Рика"
 - day: 13
   title: Сан-Хосе
   places:
@@ -185,7 +191,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/destinations/san-jose/gallery-2-enhanced-20261004.webp
-    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+    hover: "Сан-Хосе: жёлтый фасад со множеством окон и лестницей"
+    alt: "Длинное жёлтое здание над каменной лестницей в Сан-Хосе, Коста-Рика"
 included:
 - Услуги русскоговорящего гида.
 - Трансферы по программе.
@@ -212,7 +219,8 @@ currency: USD
 priceNote: $8610
 hero:
   src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-  alt: Экстремальная Коста-Рика
+  hover: "Сан-Хосе: вечерняя подсветка фасада и фонтан на площади"
+  alt: "Освещённое историческое здание за фонтаном вечером в Сан-Хосе, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

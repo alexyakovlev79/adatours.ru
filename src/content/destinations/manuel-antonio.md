@@ -11,9 +11,11 @@ searchAliases: []
 hero: {"src":"/media/countries/costa-rica/featureBands-3-enhanced-20261002.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"}
 gallery:
 - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+  hover: "Мануэль-Антонио: тропический пляж у зелёного мыса"
+  alt: "Песчаный пляж с пальмами и лесистым мысом в Мануэль-Антонио, Коста-Рика"
 - src: /media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+  hover: "Мануэль-Антонио: человек с доской для сёрфинга у лесистого побережья"
+  alt: "Сёрфер с доской у волн на пляже Мануэль-Антонио, Коста-Рика"
 - src: /media/destinations/manuel-antonio/gallery-3-enhanced-20261003.webp
   alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - src: /media/destinations/manuel-antonio/gallery-4-enhanced-20261003.webp

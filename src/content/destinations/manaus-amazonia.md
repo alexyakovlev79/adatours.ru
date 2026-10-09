@@ -15,7 +15,8 @@ gallery:
   hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
   alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
 - src: /media/destinations/destination_brazil_amazon/amazon-igapo-generated-20261008.webp
-  alt: Затопленный лес игапо в Амазонии
+  hover: "Амазония: спокойная вода среди деревьев затопленного леса"
+  alt: "Стволы деревьев и их отражения в затопленном лесу игапо, Амазония, Бразилия"
 relatedDestinations:
 - destination_brazil_rio
 - destination_brazil_pantanal

@@ -252,7 +252,8 @@ itinerary:
       После экскурсии трансфер в аэропорт для вылета домой.
     images:
       - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
-        alt: "Сантьяго-де-Чили"
+        hover: "Сантьяго: кабины канатной дороги на фоне высотных зданий и гор"
+        alt: "Красная и синяя кабины канатной дороги над городом Сантьяго, Чили"
         intendedSlot: "itinerary:day-8"
 included:
   - "Услуги гида"

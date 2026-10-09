@@ -78,7 +78,8 @@ itinerary:
     По прибытии вас встретит водитель. Переезд в Паленке и размещение в отеле 4*.
   images:
   - src: /media/destinations/mexico-city-and-teotihuacan/gallery-1-enhanced-20261004.webp
-    alt: 'На фото: столица, город Мехико Сити в Мексике'
+    hover: "Мехико: жёлтый Volkswagen-такси в городском движении"
+    alt: "Жёлтое такси Volkswagen Beetle на улице Мехико, Мексика"
 - day: 4
   title: Паленке - Кампече, 365 км
   places:

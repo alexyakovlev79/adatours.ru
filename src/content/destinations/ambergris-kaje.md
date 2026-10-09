@@ -13,11 +13,14 @@ hero:
   alt: 'На фото: остров Амбергрис-Кайе, Белиз'
 gallery:
 - src: /media/destinations/ambergris-kaje/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: остров Амбергрис-Кайе, Белиз'
+  hover: "Амбергрис-Кайе: лодка под парусом в прозрачном бирюзовом море"
+  alt: "Парусная лодка на бирюзовой воде у Амбергрис-Кайе, Белиз"
 - src: /media/destinations/ambergris-kaje/gallery-2-enhanced-20261002.webp
-  alt: 'На фото: остров Амбергрис Кей, Белиз'
+  hover: "Амбергрис-Кайе: пассажиры с рюкзаками у билетной кассы водного такси"
+  alt: "Путешественники у кассы водного такси на Амбергрис-Кайе, Белиз"
 - src: /media/destinations/ambergris-kaje/gallery-3-enhanced-20261002.webp
-  alt: 'На фото: остров Амбергрис-Кайе, Белиз'
+  hover: "Амбергрис-Кайе: подводное плавание рядом с крупными рыбами"
+  alt: "Аквалангисты и крупные рыбы в прозрачной воде у Амбергрис-Кайе, Белиз"
 - src: /media/destinations/ambergris-kaje/gallery-4-enhanced-20261002.webp
   alt: 'На фото: остров Амбергрис-Кайе, Белиз'
 - src: /media/destinations/ambergris-kaje/gallery-5-enhanced-20261002.webp

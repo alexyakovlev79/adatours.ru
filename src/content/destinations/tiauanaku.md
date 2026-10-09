@@ -14,7 +14,8 @@ hero:
   alt: "Каменные головы в стене комплекса Тиуанако, Боливия"
 gallery:
 - src: /media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-2-src-enhanced-20261007.webp
-  alt: Тиауанаку
+  hover: "Тиуанако: древняя каменная кладка и ступени перед проходом"
+  alt: "Каменные стены, лестницы и прямоугольный проход в Тиуанако, Боливия"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

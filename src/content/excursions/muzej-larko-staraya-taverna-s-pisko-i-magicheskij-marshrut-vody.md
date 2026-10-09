@@ -24,11 +24,13 @@ gallery:
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-1-enhanced-20261001.webp
     alt: Волшебный круговорот воды в Парке-де-ла-Ресерва
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
-    alt: Лима, Перу
+    hover: "Лима: пляж и прибрежная дорога под обрывом с городской застройкой"
+    alt: "Океанское побережье Лимы с высоким обрывом, дорогой и высотными домами, Перу"
   - src: /media/tours/peru-8d/itinerary/day-08-enhanced-20261001.webp
     alt: Музей Ларко в Лиме
   - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
-    alt: Городской пейзаж Лимы
+    hover: "Лима: цветочная надпись у площади с пальмами и старинными фасадами"
+    alt: "Цветники с надписью Lima и исторические здания на площади Лимы, Перу"
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-5-enhanced-20261001.webp
     alt: Фонтаны Парка-де-ла-Ресерва
 route:

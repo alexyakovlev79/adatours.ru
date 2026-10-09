@@ -13,9 +13,11 @@ hero:
   alt: 'На фото: город Сан-Игнасио в Белизе'
 gallery:
 - src: /media/destinations/san-ignasio/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: город Сан-Игнасио в Белизе'
+  hover: "Сан-Игнасио в Белизе: глиняные сосуды среди пещерных скал"
+  alt: "Керамические сосуды у входа в пещерный проход в районе Сан-Игнасио, Белиз"
 - src: /media/destinations/san-ignasio/gallery-2-enhanced-20261002.webp
-  alt: 'На фото: город Сан-Игнасио в Белизе'
+  hover: "Сан-Игнасио: яркие фасады домов вдоль узкой улицы"
+  alt: "Улица Сан-Игнасио с разноцветными деревянными домами и автомобилями, Белиз"
 - src: /media/destinations/san-ignasio/gallery-3-enhanced-20261002.webp
   alt: 'На фото: город Сан-Игнасио в Белизе'
 - src: /media/destinations/san-ignasio/gallery-4-enhanced-20261002.webp

@@ -11,11 +11,14 @@ searchAliases: []
 hero: {"src":"/media/destinations/cartagena/hero-enhanced-20261003.webp","alt":"На фото: колумбийка из страны Колумбия"}
 gallery:
 - src: /media/destinations/cartagena/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: город Картахена в Колумбии'
+  hover: "Картахена: исторические дома с балконами вдоль городской улицы"
+  alt: "Улица Картахены с арочными входами и деревянными балконами, Колумбия"
 - src: /media/destinations/cartagena/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: город Картахена в Колумбии'
+  hover: "Картахена: вечерние огни у открытых ворот и аллеи"
+  alt: "Освещённые ворота и деревья с гирляндами вечером в Картахене, Колумбия"
 - src: /media/destinations/cartagena/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: город Картахена в Колумбии'
+  hover: "Картахена: ночная подсветка церковного фасада с часами"
+  alt: "Подсвеченный каменный фасад церкви с башнями и часами в Картахене, Колумбия"
 - src: /media/destinations/cartagena/gallery-4-enhanced-20261003.webp
   alt: 'На фото: город Картахена в Колумбии'
 - src: /media/destinations/cartagena/gallery-5-enhanced-20261003.webp
@@ -23,13 +26,17 @@ gallery:
 - src: /media/destinations/cartagena/gallery-6-enhanced-20261003.webp
   alt: 'На фото: город Картахена в Колумбии'
 - src: /media/excursions/siti-tur-po-kartakhene/gallery-0-src-enhanced-20261007.webp
-  alt: Картахена
+  hover: "Картахена: разноцветные дома и зелень вдоль узкой улицы"
+  alt: "Узкая улица Картахены с яркими фасадами, балконами и растениями, Колумбия"
 - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-13-images-0-src-enhanced-20261007.webp
-  alt: Картахена
+  hover: "Картахена: велосипедист у исторических фасадов и растений на площади"
+  alt: "Велосипедист на площади перед жёлтым зданием и церковью в Картахене, Колумбия"
 - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-14-images-0-src-enhanced-20261007.webp
-  alt: Картахена
+  hover: "Картахена: морская бухта и городская застройка вдоль пляжа"
+  alt: "Длинный городской пляж и высотные здания у моря в Картахене, Колумбия"
 - src: /media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp
-  alt: Картахена
+  hover: "Картахена: площадь перед длинным зданием с аркадой"
+  alt: "Широкая мощёная площадь с арочными галереями и пальмами в Картахене, Колумбия"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

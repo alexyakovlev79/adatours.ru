@@ -40,7 +40,8 @@ itinerary:
     Ночь в Антигуа."
   images:
   - src: /media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
-    alt: Антигуа-Гуатемала
+    hover: "Каменный канал перед зелёным берегом, пальмами и парусными лодками"
+    alt: "Старинные каменные стены и узкий водный канал у гавани с яхтами и пальмами"
 - day: 2
   title: Антигуа, Сан-Антонио-Агуас-Кальентес и Сантьяго-Самора
   places:
@@ -96,7 +97,8 @@ itinerary:
     \ завтрак."
   images:
   - src: "/media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Лаго де Атитлан
+    hover: "Атитлан: широкая озёрная панорама на фоне вулканов"
+    alt: "Озеро Атитлан между горными склонами и вулканическими вершинами, Гватемала"
 - day: 5
   title: Чичикастенанго - Гватемала-Сити
   places:
@@ -113,7 +115,8 @@ itinerary:
     \n**Отель:** Barceló Guatemala City.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
-    alt: Чичикастенанго
+    hover: "Чичикастенанго: люди и торговые ряды у украшенной белой церкви"
+    alt: "Рынок перед белой церковью с цветными украшениями в Чичикастенанго, Гватемала"
 - day: 6
   title: Гватемала-Сити - Копан, Гондурас
   places:
@@ -125,7 +128,8 @@ itinerary:
     \ руин и стел Копана.\n\n**Отель:** Clarion Copan Ruinas.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp
-    alt: Копан Руинас
+    hover: "Копан: древние каменные постройки и лестницы на зелёной территории"
+    alt: "Каменная ступенчатая платформа среди зелёных лужаек в Копане, Гондурас"
 - day: 7
   title: Копан
   places:
@@ -154,7 +158,8 @@ itinerary:
     \ часть маршрута, посвященную Тикалю и северному региону Петен.\n\n**Отель:** Villa Maya.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
-    alt: Флорес
+    hover: "Флорес: вид сверху на островной город и окружающее озеро"
+    alt: "Флорес с красными крышами на острове среди озёрной воды, Гватемала"
 - day: 9
   title: Тикаль - Гватемала-Сити
   places:
@@ -172,7 +177,8 @@ itinerary:
     \ завтрак."
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
+    hover: "Гватемала-Сити: городская застройка перед цепью вулканических вершин"
+    alt: "Городские кварталы и высотные дома на фоне вулканов в Гватемала-Сити, Гватемала"
 - day: 10
   title: Вылет из Гватемала-Сити
   places:
@@ -183,7 +189,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: город Гватемала-Сити (столица страны)'
+    hover: "Гватемала-Сити: длинный каменный фасад с башнями и арочными окнами"
+    alt: "Монументальное каменное здание с башнями у улицы Гватемала-Сити, Гватемала"
 included:
 - Русскоговорящий гид.
 - Трансферы по программе.
@@ -211,7 +218,8 @@ currency: USD
 priceNote: $5086
 hero:
   src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
-  alt: Мир Майя
+  hover: "Антигуа-Гуатемала: арка между цветными фасадами на фоне вулкана"
+  alt: "Жёлтая арка с часами на улице Антигуа-Гуатемалы, вулкан на заднем плане, Гватемала"
 routeCountries:
 - country_guatemala
 - country_honduras

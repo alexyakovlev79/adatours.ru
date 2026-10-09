@@ -35,7 +35,8 @@ gallery:
 - src: /media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-enhanced-20261007.webp
   alt: Арекипа
 - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp
-  alt: Арекипа
+  hover: "Арекипа: собор и пальмы у площади перед заснеженной вершиной"
+  alt: "Собор Арекипы с двумя башнями на фоне снежного вулкана, Перу"
 relatedDestinations:
   - destination_peru_lima
   - destination_peru_cusco

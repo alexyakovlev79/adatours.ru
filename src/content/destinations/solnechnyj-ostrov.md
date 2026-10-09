@@ -14,7 +14,8 @@ hero:
   alt: "Глубокий каньон с рекой и зелеными террасами, Колка, Перу"
 gallery:
 - src: /media/destinations/isla-del-sol/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: Солнечный остров в Боливии'
+  hover: "Солнечный остров: спокойная вода, редкая растительность и отражения неба"
+  alt: "Лодка на мелководье с отражениями облаков у Солнечного острова, Боливия"
 - src: /media/destinations/isla-del-sol/gallery-2-enhanced-20261003.webp
   alt: 'На фото: Солнечный остров в Боливии'
 - src: /media/destinations/isla-del-sol/gallery-3-enhanced-20261003.webp

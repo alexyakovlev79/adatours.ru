@@ -11,11 +11,14 @@ searchAliases: []
 hero: {"src":"/media/destinations/cancun/hero-enhanced-20261005.webp","alt":"На фото: курорт Канкун в Мексике"}
 gallery:
 - src: /media/destinations/cancun/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: курорт Канкун в Мексике'
+  hover: "Канкун: плавание над каменистым морским дном в бирюзовой воде"
+  alt: "Пловцы над подводными камнями и кораллами в прозрачной воде у Канкуна, Мексика"
 - src: /media/destinations/cancun/gallery-2-enhanced-20261005.webp
-  alt: 'На фото: курорт Канкун в Мексике'
+  hover: "Канкун: каменные стены и столб с рельефной резьбой"
+  alt: "Древние каменные руины и резной столб в Канкуне, Мексика"
 - src: /media/destinations/cancun/gallery-3-enhanced-20261005.webp
-  alt: 'На фото: курорт Канкун в Мексике'
+  hover: "Канкун: деревянная вышка на пляже под соломенной крышей"
+  alt: "Деревянная вышка с соломенной крышей у бирюзового моря в Канкуне, Мексика"
 - src: /media/destinations/cancun/gallery-4-enhanced-20261005.webp
   alt: 'На фото: курорт Канкун в Мексике'
 - src: /media/destinations/cancun/gallery-5-enhanced-20261005.webp

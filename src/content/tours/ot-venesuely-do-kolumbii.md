@@ -147,7 +147,8 @@ itinerary:
   - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Богота
   - src: /media/destinations/pereira/featureBands-1-image-enhanced-20261007.webp
-    alt: Долина Кокора
+    hover: "Долина Кокора: пальмы и яркие ограды на зелёном склоне"
+    alt: "Высокие пальмы и цветные ограды среди зелёных холмов долины Кокора, Колумбия"
 - day: 9
   title: ', вторник. Кофейное поместье - Картахена'
   places:

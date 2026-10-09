@@ -13,7 +13,8 @@ hero:
   alt: 'На фото: город Белиз-Сити, в Белизе'
 gallery:
 - src: /media/destinations/beliz-siti/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: город Белиз-Сити, в Белизе'
+  hover: "Белиз-Сити: яркий деревянный дом и велосипед у стены"
+  alt: "Велосипед у фиолетового деревянного дома с зелёной отделкой в Белиз-Сити, Белиз"
 - src: /media/destinations/beliz-siti/gallery-2-enhanced-20261002.webp
   alt: 'На фото: город Белиз-Сити, в Белизе'
 - src: /media/destinations/beliz-siti/gallery-3-enhanced-20261002.webp

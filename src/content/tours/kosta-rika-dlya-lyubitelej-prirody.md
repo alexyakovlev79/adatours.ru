@@ -34,7 +34,8 @@ itinerary:
     **Размещение:** Barceló San Jose Palacio.
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: фасад церкви с парными шпилями и пальмы"
+    alt: "Церковь с двумя высокими шпилями среди пальм в Сан-Хосе, Коста-Рика"
 - day: 2
   title: Сан-Хосе - Тортугеро
   places:
@@ -59,7 +60,8 @@ itinerary:
     \ завтрак, обед, ужин."
   images:
   - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
+    hover: "Тортугуэро: зелёные берега и облака отражаются в реке"
+    alt: "Спокойная река с отражениями тропического леса в Тортугуэро, Коста-Рика"
 - day: 4
   title: Тортугеро - Ареналь
   places:
@@ -80,7 +82,8 @@ itinerary:
     \ 1968 года.\n\n**Размещение:** Arenal Paraíso.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+    hover: "Район Ареналя: небольшие бассейны и водные каскады в зелёном саду"
+    alt: "Каскадные бассейны среди пальм и тропической зелени в районе Ареналя, Коста-Рика"
 - day: 6
   title: Сан-Хосе
   places:

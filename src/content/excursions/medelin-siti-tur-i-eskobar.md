@@ -29,11 +29,13 @@ gallery:
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261008.webp
     alt: Искусство Фернандо Ботеро в Медельине
   - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
-    alt: Панорама Медельина
+    hover: "Медельин: церковь у линии метро на фоне города и гор"
+    alt: "Готическая церковь и надземные пути метро среди зданий Медельина, Колумбия"
   - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-4-src-enhanced-20261007.webp"
     alt: Жительница Колумбии
   - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
-    alt: Медельин, Колумбия
+    hover: "Медельин: церковь с башнями рядом с метро и городской зеленью"
+    alt: "Каменная церковь у надземной линии метро и пальм в Медельине, Колумбия"
 route:
   - Медельин
   - парк Сан-Антонио

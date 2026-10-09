@@ -13,7 +13,8 @@ hero:
   alt: "На фото: парк Торрес дель Пайне в Чили"
 gallery:
   - src: "/media/destinations/puerto-natales-torres-del-pajne/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: город порт Пуэрто Наталес в Чили"
+    hover: "Пуэрто-Наталес: прибрежные дома, волны и горы под облачным небом"
+    alt: "Разноцветные дома на берегу Пуэрто-Наталеса на фоне гор, Чили"
   - src: "/media/destinations/puerto-natales-torres-del-pajne/gallery-2-enhanced-20261005.webp"
     alt: "На фото: парк Торрес дель Пайне в Чили"
   - src: "/media/destinations/puerto-natales-torres-del-pajne/gallery-3-enhanced-20261005.webp"

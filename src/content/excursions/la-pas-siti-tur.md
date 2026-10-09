@@ -26,7 +26,8 @@ gallery:
   - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
     alt: Ла-Пас, Боливия
   - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
-    alt: Городской пейзаж Ла-Паса
+    hover: "Ла-Пас: украшенный фасад с куполом и боливийскими флагами"
+    alt: "Жёлто-белое историческое здание с куполом и флагами в Ла-Пасе, Боливия"
 route:
   - традиционные рынки Ла-Паса
   - тюрьма Сан-Педро

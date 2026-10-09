@@ -12,7 +12,8 @@ hero:
   alt: Сан-Луис в штате Мараньян, Бразилия
 gallery:
 - src: /media/destinations/destination_brazil_sao_luis/sao-luis-departure-generated-20261008.webp
-  alt: Исторический центр Сан-Луиса
+  hover: "Сан-Луис: старинные дома с узорчатой плиткой и синими арочными дверями"
+  alt: "Мощёная улица Сан-Луиса с плиточными фасадами, синими дверями и балконами, Бразилия"
 - src: /media/tours/udivitelnaya-braziliya/itinerary-day-14-generated-20261008-next20.webp
   alt: Исторические улицы Сан-Луиса, Бразилия
 relatedDestinations:

@@ -36,7 +36,8 @@ priceNote: Стоимость на 23.09.2026 — от $2230. Точная су�
 dates: []
 hero:
   src: /media/tours/peru-8d/hero-enhanced-20260930.webp
-  alt: Лима на берегу Тихого океана, Перу
+  hover: "Лима: цветочная надпись у площади с пальмами и старинными фасадами"
+  alt: "Цветники с надписью Lima и исторические здания на площади Лимы, Перу"
 gallery: []
 featured: true
 priority: 90
@@ -100,7 +101,8 @@ itinerary:
       Затем вы спуститесь на автобусе в поселок. Обед пройдет в ресторане национальной кухни El MAPI. После обеда - поезд обратно и трансфер в гостиницу в Куско.
     images:
       - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
-        alt: "Мачу-Пикчу и Куско, Перу"
+        hover: "Мачу-Пикчу: древняя каменная кладка среди гор"
+        alt: "Каменные стены Мачу-Пикчу на фоне зелёных горных склонов, Перу"
         intendedSlot: "itinerary:day-3"
   - day: 4
     title: "Куско"
@@ -109,7 +111,8 @@ itinerary:
       Завтрак. Свободный день в Куско.
     images:
       - src: /media/tours/peru-8d/itinerary/day-04-enhanced-20261001.webp
-        alt: "Куско, Перу"
+        hover: "Куско: площадь, церковные башни и красные крыши в виде сверху"
+        alt: "Панорама центральной площади Куско с церковью и черепичными крышами, Перу"
         intendedSlot: "itinerary:day-4"
   - excursionRef: excursion_peru_sacred_valley_full_day
     places: ["Священная долина инков"]

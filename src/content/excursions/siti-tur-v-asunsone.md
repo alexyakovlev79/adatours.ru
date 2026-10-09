@@ -17,16 +17,20 @@ hero:
 gallery:
   -
     src: "/media/excursions/siti-tur-v-asunsone/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Асунсьон: городская панорама у широкого водного берега"
+    alt: "Вид сверху на прибрежные кварталы и высотные здания Асунсьона, Парагвай"
   -
     src: "/media/excursions/siti-tur-v-asunsone/gallery-1-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Асунсьон: огни городских улиц на фоне оранжевого неба"
+    alt: "Высотные здания и освещённые улицы Асунсьона под оранжевым небом, Парагвай"
   -
     src: "/media/excursions/siti-tur-v-asunsone/gallery-2-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Асунсьон: городская надпись на газоне перед старинным зданием"
+    alt: "Крупные буквы ASUnción перед историческим зданием и пальмами в Асунсьоне, Парагвай"
   -
     src: "/media/excursions/siti-tur-v-asunsone/gallery-3-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Асунсьон: старинный фасад с башней и парагвайским флагом"
+    alt: "Розовое историческое здание с башней, флагом и пальмами в Асунсьоне, Парагвай"
 route: []
 lead: "Обзорная экскурсия по Асунсьону."
 included: []

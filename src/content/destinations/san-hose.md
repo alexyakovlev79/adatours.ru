@@ -11,9 +11,11 @@ searchAliases: []
 hero: {"src":"/media/destinations/san-jose/hero-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"}
 gallery:
 - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
-  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+  hover: "Сан-Хосе: красно-белый автобус на улице города"
+  alt: "Красно-белый автобус перед городскими зданиями в Сан-Хосе, Коста-Рика"
 - src: /media/destinations/san-jose/gallery-2-enhanced-20261004.webp
-  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+  hover: "Сан-Хосе: жёлтый фасад со множеством окон и лестницей"
+  alt: "Длинное жёлтое здание над каменной лестницей в Сан-Хосе, Коста-Рика"
 - src: /media/destinations/san-jose/gallery-3-enhanced-20261004.webp
   alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 - src: /media/destinations/san-jose/gallery-4-enhanced-20261004.webp
@@ -27,9 +29,11 @@ gallery:
 - src: /media/destinations/san-jose/gallery-8-enhanced-20261004.webp
   alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-  alt: Сан Хосе
+  hover: "Сан-Хосе: вечерняя подсветка фасада и фонтан на площади"
+  alt: "Освещённое историческое здание за фонтаном вечером в Сан-Хосе, Коста-Рика"
 - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
-  alt: Сан Хосе
+  hover: "Сан-Хосе: фасад церкви с парными шпилями и пальмы"
+  alt: "Церковь с двумя высокими шпилями среди пальм в Сан-Хосе, Коста-Рика"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

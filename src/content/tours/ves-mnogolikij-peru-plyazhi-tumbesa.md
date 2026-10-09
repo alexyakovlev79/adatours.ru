@@ -56,7 +56,8 @@ itinerary:
     Лима расположена на берегу Тихого океана. В городе европейская колониальная архитектура соседствует с памятниками доинкской эпохи. После перелета экскурсионной программы нет, можно отдохнуть и самостоятельно выйти на первую прогулку.
   images:
   - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
-    alt: Лима
+    hover: "Лима: струи фонтана и подсвеченные башни собора"
+    alt: "Освещённый фонтан перед собором Лимы ночью, Перу"
 - day: 2
   title: Лима
   places:
@@ -81,7 +82,8 @@ itinerary:
     После вечерней программы возвращение в отель.
   images:
   - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
-    alt: Лима
+    hover: "Лима: вид на центральную площадь и собор под флагом Перу"
+    alt: "Перуанский флаг над площадью и собором Лимы, Перу"
 - day: 3
   title: Лима - Куско
   places:
@@ -107,7 +109,8 @@ itinerary:
     **Дополнительно:** посещение Кафедрального собора Куско перед основной экскурсией, около 40 минут, **$25**.
   images:
   - src: /media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Лима
+    hover: "Лима: освещённые башни собора и фасады у вечерней площади"
+    alt: "Ночная подсветка собора и соседних исторических зданий в Лиме, Перу"
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
 - day: 4
@@ -131,7 +134,8 @@ itinerary:
     Затем возвращение на станцию, поезд обратно и трансфер в гостиницу в Куско.
   images:
   - src: /media/tours/peru-8d/itinerary/day-04-enhanced-20261001.webp
-    alt: Куско
+    hover: "Куско: площадь, церковные башни и красные крыши в виде сверху"
+    alt: "Панорама центральной площади Куско с церковью и черепичными крышами, Перу"
 - day: 5
   title: Священная долина
   places:
@@ -196,7 +200,8 @@ itinerary:
       **Доплата:** $250 с человека.
   images:
   - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp
-    alt: Куско
+    hover: "Куско: церковный фасад и цветники у оживлённой площади"
+    alt: "Площадь Куско с каменной церковью, цветниками и туристическим автобусом, Перу"
 - day: 7
   title: Пуно и озеро Титикака
   places:
@@ -281,7 +286,8 @@ itinerary:
     По прилете встреча, трансфер в гостиницу и размещение.
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Арекипа
+    hover: "Арекипа: собор и пальмы у площади перед заснеженной вершиной"
+    alt: "Собор Арекипы с двумя башнями на фоне снежного вулкана, Перу"
 - day: 11
   title: Лима. Свободный день
   places:
@@ -294,7 +300,8 @@ itinerary:
     По желанию
   images:
   - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
-    alt: Лима — Перу
+    hover: "Лима: подъездная дорога, аэропортовый терминал и башня управления"
+    alt: "Дорога к аэропорту с терминалом и диспетчерской башней в Лиме, Перу"
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []
 - day: 12
@@ -373,7 +380,8 @@ itinerary:
     После посещения продолжение трансфера в аэропорт и международный вылет.
   images:
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
-    alt: Лима
+    hover: "Лима: пляж и прибрежная дорога под обрывом с городской застройкой"
+    alt: "Океанское побережье Лимы с высоким обрывом, дорогой и высотными домами, Перу"
 included:
 - Внутренние авиаперелеты Лима - Куско, Арекипа - Лима, Лима - Тумбес - Лима
 - Включенное питание
@@ -398,7 +406,8 @@ currency: USD
 priceNote: $4129
 hero:
   src: /media/tours/peru-8d/hero-enhanced-20260930.webp
-  alt: Весь Многоликий Перу  + Пляжи Тумбеса
+  hover: "Лима: цветочная надпись у площади с пальмами и старинными фасадами"
+  alt: "Цветники с надписью Lima и исторические здания на площади Лимы, Перу"
 routeCountries:
 - country_peru
 routeDestinations:

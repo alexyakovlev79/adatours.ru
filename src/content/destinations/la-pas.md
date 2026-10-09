@@ -13,13 +13,16 @@ hero:
   alt: 'На фото: столица Боливии город Ла Пас'
 gallery:
 - src: /media/destinations/la-pas/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: столица Боливии город Ла Пас'
+  hover: "Ла-Пас: оживлённая площадь с церковной башней и городскими зданиями"
+  alt: "Пешеходы на площади перед каменной церковью в Ла-Пасе, Боливия"
 - src: /media/destinations/la-pas/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: столица Боливии город Ла Пас'
+  hover: "Ла-Пас: городская улица, стеклянные фасады и пальмы"
+  alt: "Пешеходы на улице с современными зданиями и пальмами в Ла-Пасе, Боливия"
 - src: /media/destinations/la-pas/gallery-3-enhanced-20261003.webp
   alt: 'На фото: столица Боливии город Ла Пас'
 - src: /media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp
-  alt: Ла Пас
+  hover: "Ла-Пас: украшенный фасад с куполом и боливийскими флагами"
+  alt: "Жёлто-белое историческое здание с куполом и флагами в Ла-Пасе, Боливия"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

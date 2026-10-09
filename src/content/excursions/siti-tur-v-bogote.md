@@ -26,7 +26,8 @@ gallery:
   - src: /media/excursions/siti-tur-v-bogote/gallery-1-src-enhanced-20261008.webp
     alt: Уличная жизнь Боготы
   - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
-    alt: Исторический центр Боготы
+    hover: "Богота: каменные фасады собора и исторических зданий у площади"
+    alt: "Собор с двумя башнями и соседние здания на площади Боготы, Колумбия"
   - src: /media/excursions/siti-tur-v-bogote/gallery-3-src-enhanced-20261008.webp
     alt: Музеи Боготы
   - src: "/media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp"

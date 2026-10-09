@@ -14,7 +14,8 @@ gallery:
 - src: /media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-4-images-0-src-enhanced-20261007.webp
   alt: Бока-Чика, Панама - элитный пляжный отдых на острове
 - src: /media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp
-  alt: Boca Chica
+  hover: "Бока-Чика: панорама зелёных берегов, островов и воды"
+  alt: "Зелёные холмы и острова у морской бухты Бока-Чики, Панама"
 themes:
 - theme_beach
 - theme_wildlife

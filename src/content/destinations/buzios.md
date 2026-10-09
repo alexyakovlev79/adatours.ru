@@ -13,9 +13,11 @@ hero:
   alt: Побережье Бузиоса в Бразилии
 gallery:
   - src: /media/destinations/buzios/gallery-1-enhanced-20261001.webp
-    alt: Бухта и пляж в Бузиосе
+    hover: "Бузиос: разноцветные дома вдоль прохода к морю"
+    alt: "Узкий проход между яркими домами с видом на море в Бузиосе, Бразилия"
   - src: /media/destinations/buzios/gallery-2-enhanced-20261001.webp
-    alt: Океанское побережье Бузиоса
+    hover: "Бузиос: остатки красных стен у моря и пальма на берегу"
+    alt: "Пальма и разрушенное красное здание на морском берегу Бузиоса, Бразилия"
 relatedDestinations:
   - destination_brazil_rio
   - destination_brazil_paraty

@@ -382,7 +382,8 @@ itinerary:
       После экскурсии возвращение в Сантьяго.
     images:
       - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
-        alt: "Виноградники Чили"
+        hover: "Сантьяго: кабины канатной дороги на фоне высотных зданий и гор"
+        alt: "Красная и синяя кабины канатной дороги над городом Сантьяго, Чили"
         intendedSlot: "itinerary:day-8"
   - day: 9
     title: "Вылет из Сантьяго"

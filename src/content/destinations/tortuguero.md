@@ -17,7 +17,8 @@ gallery:
 - src: /media/destinations/tortuguero/gallery-3-enhanced-20261004.webp
   alt: 'На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике'
 - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-  alt: Тортугуэро
+  hover: "Тортугуэро: зелёные берега и облака отражаются в реке"
+  alt: "Спокойная река с отражениями тропического леса в Тортугуэро, Коста-Рика"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

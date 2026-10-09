@@ -13,7 +13,8 @@ hero:
   alt: "На фото: город Гватемала-Сити (столица страны)"
 gallery:
 - src: /media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: город Гватемала-Сити (столица страны)'
+  hover: "Гватемала-Сити: длинный каменный фасад с башнями и арочными окнами"
+  alt: "Монументальное каменное здание с башнями у улицы Гватемала-Сити, Гватемала"
 - src: /media/destinations/guatemala-city/gallery-2-enhanced-20261003.webp
   alt: 'На фото: город Гватемала-Сити (столица страны)'
 - src: /media/destinations/guatemala-city/gallery-3-enhanced-20261003.webp
@@ -25,7 +26,8 @@ gallery:
 - src: /media/destinations/guatemala-city/gallery-6-enhanced-20261003.webp
   alt: 'На фото: город Гватемала-Сити (столица страны)'
 - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-  alt: Гватемала-Сити
+  hover: "Гватемала-Сити: городская застройка перед цепью вулканических вершин"
+  alt: "Городские кварталы и высотные дома на фоне вулканов в Гватемала-Сити, Гватемала"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

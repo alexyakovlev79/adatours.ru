@@ -13,9 +13,11 @@ hero:
   alt: "На фото: остров Маргариты в Венесуэле"
 gallery:
   - src: "/media/destinations/margarita-island/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: остров Маргариты в Венесуэле"
+    hover: "Остров Маргарита: лестница к башне в окружении пальм"
+    alt: "Каменная лестница к башне среди пальм на острове Маргарита, Венесуэла"
   - src: "/media/destinations/margarita-island/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: остров Маргариты в Венесуэле"
+    hover: "Остров Маргарита: снасти на лодке перед бирюзовым морем"
+    alt: "Рыболовные удочки над прозрачной бирюзовой водой у острова Маргарита, Венесуэла"
   - src: "/media/destinations/margarita-island/gallery-3-enhanced-20261003.webp"
     alt: "На фото: остров Маргариты в Венесуэле"
   - src: "/media/destinations/margarita-island/gallery-4-enhanced-20261003.webp"

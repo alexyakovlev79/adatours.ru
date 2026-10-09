@@ -27,7 +27,8 @@ gallery:
 - src: /media/destinations/san-cristobal-de-las-casas/gallery-8-enhanced-20261004.webp
   alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
 - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
-  alt: Сан Кристобал де Лас Касас
+  hover: "Скалистое побережье с бирюзовой бухтой и островками"
+  alt: "Бирюзовая морская бухта среди сухих скалистых склонов"
 facts: []
 featureBands: []
 relatedDestinations: []

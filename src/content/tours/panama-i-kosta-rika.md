@@ -36,7 +36,8 @@ itinerary:
   text: Встреча в аэропорту и трансфер в Hilton Garden Inn Panama City. Размещение в 2 номерах категории standard.
   images:
   - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
-    alt: 'На фото: столица Панамы, город Панама-Сити'
+    hover: "Панама-Сити: освещённый фасад собора между двумя белыми башнями"
+    alt: "Ночная подсветка каменного собора с белыми башнями в Панама-Сити, Панама"
 - day: 2
   title: Национальный парк Чагрес и эмбера
   places:
@@ -116,7 +117,8 @@ itinerary:
     Возвращение в отель San Bada.
   images:
   - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+    hover: "Мануэль-Антонио: тропический пляж у зелёного мыса"
+    alt: "Песчаный пляж с пальмами и лесистым мысом в Мануэль-Антонио, Коста-Рика"
 - day: 9
   title: Мануэль-Антонио
   places:
@@ -124,14 +126,16 @@ itinerary:
   text: Завтрак. Свободный день.
   images:
   - src: /media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+    hover: "Мануэль-Антонио: человек с доской для сёрфинга у лесистого побережья"
+    alt: "Сёрфер с доской у волн на пляже Мануэль-Антонио, Коста-Рика"
 - day: 10
   title: Вылет
   places: []
   text: Завтрак. Трансфер в аэропорт в соответствии с временем международного рейса.
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: фасад церкви с парными шпилями и пальмы"
+    alt: "Церковь с двумя высокими шпилями среди пальм в Сан-Хосе, Коста-Рика"
 included:
 - 3 ночи в Hilton Garden Inn Panama City с завтраками.
 - 2 ночи в Los Lagos с завтраками.

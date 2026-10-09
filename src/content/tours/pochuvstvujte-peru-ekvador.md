@@ -113,7 +113,8 @@ itinerary:
     После прибытия в Куско предусмотрен трансфер в Belmond Rio Sagrado. Размещение в Terrace Room, питание BB. Ночь в Священной долине.
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: Куско
+    hover: "Куско: городские крыши и церковные башни на фоне гор"
+    alt: "Куско с церковными башнями, красными крышами и зелёными горами, Перу"
   - src: "/media/tours/pochuvstvujte-peru-ekvador/itinerary-2-images-1-src-enhanced-20261007.webp"
     alt: Икитос
 - day: 8
@@ -130,7 +131,8 @@ itinerary:
     Размещение в Belmond Palacio Nazarenas, Junior Suite, питание BB.
   images:
   - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-13-enhanced-20261006.webp"
-    alt: Мачу-Пикчу
+    hover: "Мачу-Пикчу: зелёные террасы и каменные руины в горной панораме"
+    alt: "Вид на террасы Мачу-Пикчу и окружающие горные вершины, Перу"
 - day: 9
   title: Радужная гора Виникунка
   places:
@@ -149,7 +151,8 @@ itinerary:
     Размещение в Belmond Palacio Nazarenas, Junior Suite, питание BB. Ночь в Куско.
   images:
   - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
-    alt: Куско
+    hover: "Куско: церковный фасад и цветники у оживлённой площади"
+    alt: "Площадь Куско с каменной церковью, цветниками и туристическим автобусом, Перу"
 - day: 10
   title: Куско
   places:
@@ -173,7 +176,8 @@ itinerary:
   - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
     alt: Кито
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: Куско
+    hover: "Куско: городские крыши и церковные башни на фоне гор"
+    alt: "Куско с церковными башнями, красными крышами и зелёными горами, Перу"
 - day: 12
   title: Кито - Mashpi Lodge
   places:

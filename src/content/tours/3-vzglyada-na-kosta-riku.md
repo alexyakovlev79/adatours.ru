@@ -37,7 +37,8 @@ itinerary:
     Ночь в отеле Barceló San Jose Palacio.
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: вечерняя подсветка фасада и фонтан на площади"
+    alt: "Освещённое историческое здание за фонтаном вечером в Сан-Хосе, Коста-Рика"
 - day: 2
   title: Doka - вулкан Поас - Ла-Пас - Ареналь
   places:
@@ -61,7 +62,8 @@ itinerary:
     **Питание:** завтрак, обед.
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+    hover: "Район Ареналя: небольшие бассейны и водные каскады в зелёном саду"
+    alt: "Каскадные бассейны среди пальм и тропической зелени в районе Ареналя, Коста-Рика"
 - day: 3
   title: Ареналь
   places:
@@ -78,7 +80,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+    hover: "Ареналь: вулканическая вершина с крутыми склонами на фоне облаков"
+    alt: "Конус вулкана Ареналь над зелёным лесом в Коста-Рике"
 - day: 4
   title: Ареналь - Тихоокеанское побережье
   places:
@@ -91,7 +94,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    hover: "Ла-Фортуна в Коста-Рике: прогулка по подвесному мосту в зелёном лесу"
+    alt: "Посетители на подвесном мосту среди тропического леса у Ла-Фортуны, Коста-Рика"
 - day: 5
   title: Тихоокеанское побережье
   places: []
@@ -162,7 +166,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: фасад церкви с парными шпилями и пальмы"
+    alt: "Церковь с двумя высокими шпилями среди пальм в Сан-Хосе, Коста-Рика"
 included:
 - Русскоговорящий гид.
 - Трансферы.

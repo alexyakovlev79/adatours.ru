@@ -54,7 +54,8 @@ itinerary:
     После размещения остается время для первого знакомства с городом.
   images:
   - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Лима
+    hover: "Лима: освещённые башни собора и фасады у вечерней площади"
+    alt: "Ночная подсветка собора и соседних исторических зданий в Лиме, Перу"
 - day: 2
   title: Лима - Куско
   places:
@@ -88,7 +89,8 @@ itinerary:
     Дополнительно можно посетить кафедральный собор Куско. Стоимость - $20, продолжительность экскурсии около 40 минут до начала сити-тура.
   images:
   - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp
-    alt: Куско
+    hover: "Куско: церковный фасад и цветники у оживлённой площади"
+    alt: "Площадь Куско с каменной церковью, цветниками и туристическим автобусом, Перу"
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
 - day: 3
@@ -130,7 +132,8 @@ itinerary:
     После обеда возвращение на железнодорожную станцию, поездка на поезде и трансфер обратно в Куско.
   images:
   - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp
-    alt: Мачу Пикчу
+    hover: "Мачу-Пикчу: древние стены и зелёные террасы на фоне гор"
+    alt: "Каменные террасы и руины Мачу-Пикчу под высокой горной вершиной, Перу"
 - day: 5
   title: Куско - Пуно
   places:
@@ -218,7 +221,8 @@ itinerary:
     По желанию можно посетить горячие источники. Также предусмотрено время на обед.
   images:
   - src: /media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp
-    alt: 'На фото: город Пуно в Перу и озеро Титикака'
+    hover: "Пуно в Перу: женщина с ребёнком в разноцветной переноске"
+    alt: "Женщина в чёрной шляпе несёт ребёнка в яркой тканевой переноске, район Пуно, Перу"
 - day: 9
   title: Колка - Арекипа
   places:
@@ -265,7 +269,8 @@ itinerary:
   - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-10-images-0-src-enhanced-20261007.webp"
     alt: Линии Наска
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp"
-    alt: Арекипа
+    hover: "Арекипа: собор и пальмы у площади перед заснеженной вершиной"
+    alt: "Собор Арекипы с двумя башнями на фоне снежного вулкана, Перу"
 - day: 11
   title: Наска - Паракас
   places:
@@ -311,7 +316,8 @@ itinerary:
     После экскурсии переезд на автобусе в Лиму. По прибытии трансфер и размещение в отеле Britania 3*.
   images:
   - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
-    alt: Лима
+    hover: "Лима: цветочная надпись у площади с пальмами и старинными фасадами"
+    alt: "Цветники с надписью Lima и исторические здания на площади Лимы, Перу"
   - src: "/media/excursions/ballestas-islands-tour/gallery-0-src-enhanced-20261007.webp"
     alt: Паракас
 - day: 13
@@ -332,7 +338,8 @@ itinerary:
     При музее работает ресторан национальной кухни Café del Museo.
   images:
   - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
-    alt: Лима — Перу
+    hover: "Лима: подъездная дорога, аэропортовый терминал и башня управления"
+    alt: "Дорога к аэропорту с терминалом и диспетчерской башней в Лиме, Перу"
 included:
 - Внутренний авиаперелет Лима - Куско.
 - Входной билет на праздник Канделярии и трансферы.

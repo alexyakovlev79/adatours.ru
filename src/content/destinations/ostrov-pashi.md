@@ -13,7 +13,8 @@ hero:
   alt: "На фото: истуканы острова Пасхи в Чили"
 gallery:
   - src: "/media/destinations/ostrov-pashi/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: остров Пасхи в Чили"
+    hover: "Остров Пасхи: зелёный берег и тёмные прибрежные скалы у океана"
+    alt: "Скалистый мыс, зелёные склоны и океан у острова Пасхи, Чили"
   - src: "/media/destinations/ostrov-pashi/gallery-2-enhanced-20261005.webp"
     alt: "На фото: остров Пасхи в Чили"
   - src: "/media/destinations/ostrov-pashi/gallery-3-enhanced-20261005.webp"

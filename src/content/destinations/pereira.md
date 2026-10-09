@@ -17,9 +17,11 @@ hero:
   alt: Долина Кокора рядом с Перейрой, Колумбия
 gallery:
 - src: /media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-1-images-1-src-enhanced-20261007.webp
-  alt: 'На фото: Перейра в Колумбии'
+  hover: "Перейра: каменный собор с высокими стрельчатыми окнами"
+  alt: "Большой собор с готическими окнами среди городской застройки Перейры, Колумбия"
 - src: /media/tours/ikonicheskaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp
-  alt: Перейра
+  hover: "Перейра: городские кварталы и огни в окружении холмов"
+  alt: "Вечерняя панорама Перейры среди зелёных горных склонов, Колумбия"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

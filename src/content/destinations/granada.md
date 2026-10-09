@@ -11,7 +11,8 @@ searchAliases: []
 hero: {"src":/media/countries/nicaragua/featureBands-2-enhanced-20261002.webp,"alt":"На фото: город Гранада в Никарагуа"}
 gallery:
 - src: /media/destinations/granada/gallery-1-enhanced-20261004.webp
-  alt: 'На фото: город Гранада в Никарагуа'
+  hover: "Гранада: яркий прогулочный паровозик рядом с велосипедистом"
+  alt: "Разноцветный туристический паровозик и велосипедист на улице Гранады, Никарагуа"
 - src: /media/destinations/granada/gallery-2-enhanced-20261004.webp
   alt: 'На фото: город Гранада в Никарагуа'
 - src: /media/destinations/granada/gallery-3-enhanced-20261004.webp

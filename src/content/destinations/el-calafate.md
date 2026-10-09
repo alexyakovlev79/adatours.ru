@@ -13,7 +13,8 @@ hero:
   alt: Патагония рядом с Эль-Калафате
 gallery:
   - src: /media/home/patagonia-enhanced-20260930.webp
-    alt: Горный пейзаж Патагонии
+    hover: "Патагония: озеро с зелёными берегами на фоне гор"
+    alt: "Бирюзовое озеро среди лесистых берегов и гор Патагонии, Аргентина"
 relatedDestinations:
   - destination_argentina_buenos_aires
   - destination_argentina_mendoza

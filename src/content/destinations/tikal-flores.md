@@ -13,9 +13,11 @@ hero:
   alt: "На фото: Тикаль и Флорес в Гватемале"
 gallery:
 - src: /media/destinations/tikal-and-flores/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: Тикаль и Флорес в гватемале'
+  hover: "Флорес: лодка и солнечная дорожка на озере"
+  alt: "Лодка на озере в оранжевом свете низкого солнца у Флореса, Гватемала"
 - src: /media/destinations/tikal-and-flores/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: Тикаль и Флорес в гватемале'
+  hover: "Флорес: ступени с белыми краями и разноцветные флажки перед церковью"
+  alt: "Широкая жёлто-белая лестница к церкви во Флоресе, Гватемала"
 - src: /media/destinations/tikal-and-flores/gallery-3-enhanced-20261003.webp
   alt: 'На фото: Тикаль и Флорес в гватемале'
 - src: /media/destinations/tikal-and-flores/gallery-4-enhanced-20261003.webp
@@ -27,7 +29,8 @@ gallery:
 - src: /media/destinations/tikal-and-flores/gallery-7-enhanced-20261003.webp
   alt: 'На фото: Тикаль и Флорес в гватемале'
 - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
-  alt: Флорес
+  hover: "Флорес: вид сверху на островной город и окружающее озеро"
+  alt: "Флорес с красными крышами на острове среди озёрной воды, Гватемала"
 - src: /media/tours/otkryvaya-gvatemalu/itinerary-4-images-0-src-enhanced-20261007.webp
   alt: 'На фото: Тикаль в провинции Эль-Петен'
 - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-5-images-0-src-enhanced-20261007.webp

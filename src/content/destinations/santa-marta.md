@@ -23,13 +23,16 @@ gallery:
 - src: /media/destinations/santa-marta/gallery-6-enhanced-20261003.webp
   alt: 'На фото: курорт Санта-Марта в Колумбии'
 - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-8-images-0-src-enhanced-20261007.webp
-  alt: 'на фото: Санта Марта'
+  hover: "Санта-Марта: тропический берег с пальмами и камнями у прозрачной воды"
+  alt: "Пляж с пальмами, прибрежными скалами и бирюзовой бухтой у Санта-Марты, Колумбия"
 - src: /media/tours/ikonicheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp
-  alt: 'на фото: Санта Марта'
+  hover: "Санта-Марта: прибрежная дорога, песчаный пляж и горы у моря"
+  alt: "Пляж и набережная с пальмами у гористого берега Санта-Марты, Колумбия"
 - src: /media/tours/zateryannyj-gorod-v-santa-marte/itinerary-3-images-0-src-enhanced-20261007.webp
   alt: 'на фото: Затерянный город Санта Марта'
 - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp
-  alt: 'на фото: Санта Марта'
+  hover: "Санта-Марта: морская панорама в золотом свете и бассейн на переднем плане"
+  alt: "Солнце над морем и бассейн перед пальмами в районе Санта-Марты, Колумбия"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

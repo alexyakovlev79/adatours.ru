@@ -15,7 +15,8 @@ gallery:
 - src: /media/destinations/plasensiya/gallery-1-enhanced-20261002.webp
   alt: 'На фото: курорт город Пласенсия в Белизе'
 - src: /media/destinations/plasensiya/gallery-2-enhanced-20261002.webp
-  alt: 'На фото: местные жители Белиза'
+  hover: "Пласенсия: две девочки на причале у спокойной воды"
+  alt: "Две девочки стоят на деревянном причале у лодок в Пласенсии, Белиз"
 - src: /media/destinations/plasensiya/gallery-3-enhanced-20261002.webp
   alt: 'На фото: курорт город Пласенсия в Белизе'
 - src: /media/destinations/plasensiya/gallery-4-enhanced-20261002.webp

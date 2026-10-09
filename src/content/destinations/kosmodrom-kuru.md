@@ -25,7 +25,8 @@ gallery:
   hover: "Морское побережье Французской Гвианы с пальмами и островом"
   alt: "Пальмы у моря и зеленый остров, Французская Гвиана"
 - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: Космодром Куру
+  hover: "Космодром Куру: ракета и башни стартового комплекса"
+  alt: "Ракета на стартовой площадке между металлическими башнями космодрома Куру, Французская Гвиана"
 facts: []
 featureBands: []
 relatedDestinations: []

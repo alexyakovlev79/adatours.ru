@@ -67,3 +67,31 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  report:
+    name: Publish deployment result as commit status
+    if: always()
+    needs: [media, build, deploy]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      statuses: write
+    steps:
+      - name: Record media, build and Pages result
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MEDIA_RESULT: ${{ needs.media.result }}
+          BUILD_RESULT: ${{ needs.build.result }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
+        run: |
+          if [[ "$MEDIA_RESULT" == "success" && "$BUILD_RESULT" == "success" && "$DEPLOY_RESULT" == "success" ]]; then
+            status="success"
+            note="S3 verification, Astro build and Pages deploy succeeded"
+          else
+            status="failure"
+            note="S3=$MEDIA_RESULT, build=$BUILD_RESULT, Pages=$DEPLOY_RESULT"
+          fi
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+            -f state="$status" -f context="ada/pages-deploy" -f description="$note" \
+            -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"

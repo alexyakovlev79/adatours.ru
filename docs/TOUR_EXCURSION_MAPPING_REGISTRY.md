@@ -1332,3 +1332,19 @@ Commit определяется по изменению, содержащему 
 | 7 | `excursion_ecuador_cajas_cacao_day` | Опубликовано; Word сверён |
 
 Публикация P030 и всех четырёх модулей подтверждена: https://github.com/alexyakovlev79/adatours.ru/actions/runs/37923090452; commit `f71ddd03163de98106b1edaa632e6e137765e81d`. Реестр страниц: строки 974–977.
+
+
+## P032 — восстановление из Word Анны, 09.10.2026
+
+Тур `tour_source_ves_ekvador_i_gorbatye_kity`; 11 дней. Источник: https://drive.google.com/file/d/18-m9Is7xIKzVM3aQSSt4y6qCBWtjoKuk/view. Перенесены 8 самостоятельных модулей: 4 новые экскурсии и 4 существующие. У Сеймура и Пласы альтернативные маршруты одного дня.
+
+| После дня | Excursion ID | Результат |
+|---|---|---|
+| 2 | `excursion_ecuador_quito_panecillo_equator` | Создана из Word |
+| 3 | `excursion_ecuador_quilotoa_tigua_banos` | Создана из Word |
+| 4 | `excursion_ecuador_banos_waterfalls_quito` | Создана из Word |
+| 5 | `excursion_source_ostrov_santa_krus` | Переиспользована каноническая экскурсия |
+| 6 | `excursion_source_ostrov_bartolome_morskaya_ekskursiya` | Переиспользована каноническая экскурсия |
+| 7 | `excursion_source_ostrov_severnyj_sejmur` | Переиспользована каноническая экскурсия |
+| 7 | `excursion_source_ostrov_plasa` | Переиспользована каноническая экскурсия |
+| 10 | `excursion_ecuador_punta_centinela_whales` | Создана из Word |

@@ -20,7 +20,17 @@ const gitArgs = baseline
 const files = execFileSync('git', gitArgs, {
   encoding: 'utf8', maxBuffer: 16 * 1024 * 1024,
 }).split('\0').filter(Boolean).sort();
-if (!files.length) throw new Error('No tracked files under public/media');
+if (!files.length) {
+  if (!baseline) throw new Error('No tracked files under public/media');
+  await fs.writeFile('media-sync-manifest.json', JSON.stringify({
+    version: 1, mode: 'incremental-no-changes',
+    sourceCommit: process.env.GITHUB_SHA || null,
+    baseline, bucket, totalFiles: 0, uploaded: 0,
+    alreadyMatching: 0, incomplete: 0, verifiedBytes: 0,
+  }, null, 2) + '\n');
+  console.log('No new or changed media since replicated baseline; S3 sync is complete.');
+  process.exit(0);
+}
 
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));

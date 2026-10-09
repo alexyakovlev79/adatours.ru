@@ -36,7 +36,7 @@ itinerary:
 
     После перелета свободное время.
   images:
-  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: столица Эквадора, город Кито'
 - day: 2
   title: Кито и линия экватора
@@ -97,7 +97,7 @@ itinerary:
 
       Размещение в **Mercure 4***. Завтрак включен.
   images:
-  - src: "/media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'На фото: столица Эквадора, город Кито'
 - day: 3
   title: Тропический лес Миндо
@@ -139,6 +139,9 @@ itinerary:
     Свободный вечер.
 
     Размещение в **Mercure 4***. Завтрак включен.
+  images:
+  - src: /media/destinations/mindo/hero-generated-20261009-root-v1.webp
+    alt: Лесная река среди влажной растительности Миндо
 - day: 4
   title: Кратерное озеро Килотоа
   places:
@@ -180,7 +183,7 @@ itinerary:
 
     Размещение в **Mercure 4***. Завтрак включен.
   images:
-  - src: "/media/tours/aktivnyj-ekvador/itinerary-2-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/aktivnyj-ekvador/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: 'На фото: столица Эквадора, город Кито'
 - day: 5
   title: Вылет из Кито
@@ -193,7 +196,7 @@ itinerary:
 
     Международный перелет.
   images:
-  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: столица Эквадора, город Кито'
 included:
 - Индивидуальные трансферы и экскурсии

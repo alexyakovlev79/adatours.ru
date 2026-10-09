@@ -52,7 +52,7 @@ itinerary:
 
     Размещение в Belmond Miraflores Park, категория Ocean View Junior Suite, питание BB. Ночь в Лиме.
   images:
-  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp
     alt: Лима
 - day: 2
   title: Лима
@@ -71,7 +71,7 @@ itinerary:
 
     Вечером предусмотрен трансфер с испаноговорящим водителем в ресторан Rafael с 19:30 до 20:45, столик забронирован на 21:00. Стоимость ужина не включена. После ужина водитель отвезет вас обратно в отель.
   images:
-  - src: "/media/tours/peru-i-boliviya/itinerary-0-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/peru-i-boliviya/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Лима
 - day: 3
   title: Икитос и Амазония
@@ -97,9 +97,9 @@ itinerary:
       Экскурсии проходят небольшими группами до 8 человек в сопровождении гидов-натуралистов. Для выездов в лес и на протоки используются частные катера, которыми управляют капитан и команда судна.
   images:
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    hover: "Амазония в Бразилии: река петляет среди густого тропического леса"
-    alt: "Изгиб реки среди тропического леса, Амазония, Бразилия"
-  - src: "/media/tours/pochuvstvujte-peru-ekvador/itinerary-2-images-1-src-enhanced-20261007.webp"
+    hover: 'Амазония в Бразилии: река петляет среди густого тропического леса'
+    alt: Изгиб реки среди тропического леса, Амазония, Бразилия
+  - src: /media/tours/pochuvstvujte-peru-ekvador/itinerary-2-images-1-src-enhanced-20261007.webp
     alt: Икитос
 - day: 7
   title: Икитос - Куско - Священная долина
@@ -113,10 +113,8 @@ itinerary:
     После прибытия в Куско предусмотрен трансфер в Belmond Rio Sagrado. Размещение в Terrace Room, питание BB. Ночь в Священной долине.
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    hover: "Куско: городские крыши и церковные башни на фоне гор"
-    alt: "Куско с церковными башнями, красными крышами и зелёными горами, Перу"
-  - src: "/media/tours/pochuvstvujte-peru-ekvador/itinerary-2-images-1-src-enhanced-20261007.webp"
-    alt: Икитос
+    hover: 'Куско: городские крыши и церковные башни на фоне гор'
+    alt: Куско с церковными башнями, красными крышами и зелёными горами, Перу
 - day: 8
   title: Мачу-Пикчу
   places:
@@ -130,9 +128,9 @@ itinerary:
 
     Размещение в Belmond Palacio Nazarenas, Junior Suite, питание BB.
   images:
-  - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-13-enhanced-20261006.webp"
-    hover: "Мачу-Пикчу: зелёные террасы и каменные руины в горной панораме"
-    alt: "Вид на террасы Мачу-Пикчу и окружающие горные вершины, Перу"
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-13-enhanced-20261006.webp
+    hover: 'Мачу-Пикчу: зелёные террасы и каменные руины в горной панораме'
+    alt: Вид на террасы Мачу-Пикчу и окружающие горные вершины, Перу
 - day: 9
   title: Радужная гора Виникунка
   places:
@@ -150,9 +148,9 @@ itinerary:
 
     Размещение в Belmond Palacio Nazarenas, Junior Suite, питание BB. Ночь в Куско.
   images:
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
-    hover: "Куско: церковный фасад и цветники у оживлённой площади"
-    alt: "Площадь Куско с каменной церковью, цветниками и туристическим автобусом, Перу"
+  - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp
+    hover: 'Куско: церковный фасад и цветники у оживлённой площади'
+    alt: Площадь Куско с каменной церковью, цветниками и туристическим автобусом, Перу
 - day: 10
   title: Куско
   places:
@@ -164,7 +162,7 @@ itinerary:
 
     Завершает экскурсию главная площадь Куско и собор с ценными произведениями колониального искусства.
   images:
-  - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
+  - src: /media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Куско
 - day: 11
   title: Куско - Кито
@@ -173,11 +171,8 @@ itinerary:
   - Кито & вулкан Котопахи
   text: Трансфер в аэропорт, перелет со стыковкой и прибытие в Кито. Трансфер в отель Casa Gangotena.
   images:
-  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Кито
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    hover: "Куско: городские крыши и церковные башни на фоне гор"
-    alt: "Куско с церковными башнями, красными крышами и зелёными горами, Перу"
 - day: 12
   title: Кито - Mashpi Lodge
   places:
@@ -188,7 +183,7 @@ itinerary:
 
     Вокруг растут папоротники, бромелиевые и сотни видов орхидей, часть которых была обнаружена сравнительно недавно. Здесь встречается около 500 видов птиц, включая 36 эндемичных. В лесу также обитают обезьяны, пекари и пумы, а по склонам и долинам проходят реки и водопады.
   images:
-  - src: "/media/tours/aktivnyj-ekvador/itinerary-2-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/aktivnyj-ekvador/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: Кито
 - day: 13
   title: Mashpi Lodge, групповая программа 3 дня / 2 ночи
@@ -198,6 +193,9 @@ itinerary:
     Программа отеля проходит с полным пансионом. Один из ее сюжетов - водопады и природные бассейны заповедника Машпи.
 
     Рядом с лоджем протекают несколько рек, образуются небольшие водопады и чаши с прохладной водой. После пеших маршрутов здесь можно искупаться. Температура воды составляет 18-20 °C.
+  images:
+  - src: /media/destinations/mashpi-reserve/hero-generated-20261009-root-v1.webp
+    alt: Облачный лес Машпи на влажных горных склонах
 - day: 14
   title: Кито и линия экватора
   places:
@@ -229,8 +227,8 @@ itinerary:
 
     После экскурсии - возвращение в отель и свободное время.
   images:
-  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Кито
+  - src: /media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp
+    alt: Исторический центр Кито
 - day: 15
   title: Галапагосские острова и Санта-Крус
   places:
@@ -252,7 +250,7 @@ itinerary:
 
     Размещение в Finch Bay. Питание: завтрак, обед, ужин.
   images:
-  - src: "/media/tours/pochuvstvujte-peru-ekvador/itinerary-11-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/pochuvstvujte-peru-ekvador/itinerary-11-images-0-src-enhanced-20261007.webp
     alt: Галапагосские острова
 - day: 16
   title: 'Галапагосы: остров Бартоломе'
@@ -273,7 +271,7 @@ itinerary:
 
     Размещение в отеле. Питание: завтрак, обед, ужин.
   images:
-  - src: "/media/tours/pochuvstvujte-peru-ekvador/itinerary-12-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/pochuvstvujte-peru-ekvador/itinerary-12-images-0-src-enhanced-20261007.webp
     alt: Галапагосские острова
 - day: 17
   title: 'Галапагосы: Сеймур-Норте или Пласа-Сур'
@@ -293,7 +291,7 @@ itinerary:
 
     После экскурсии - возвращение в отель. Питание: завтрак, обед, ужин.
   images:
-  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp"
+  - src: /media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp
     alt: Галапагосские острова
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []
@@ -308,7 +306,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/excursions/ostrov-bartolome-morskaya-ekskursiya/hero-src-enhanced-20261007.webp"
+  - src: /media/excursions/ostrov-bartolome-morskaya-ekskursiya/hero-src-enhanced-20261007.webp
     alt: Галапагосские острова
 included:
 - Проживание в указанных отелях.

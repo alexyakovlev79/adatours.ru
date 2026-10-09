@@ -67,10 +67,8 @@ itinerary:
 
     Питание: завтрак, обед.
   images:
-  - src: /media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp
-    alt: 'Эквадор: Кито – Галапагосские Острова'
-  - src: /media/excursions/quito-equator-six-hour-tour/hero-src-enhanced-20261007.webp
-    alt: Кито
+  - src: /media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp
+    alt: Исторический центр Кито
 - day: 3
   title: Морская экскурсия на остров Исабела
   places:
@@ -87,6 +85,9 @@ itinerary:
     Возвращение в Пуэрто-Айору около 17:00. Размещение в отеле Villa Laguna 4*.
 
     Питание: завтрак, обед.
+  images:
+  - src: /media/destinations/isabela-island/hero-generated-20261009-root-v1.webp
+    alt: Белый песок, чёрные вулканические камни и вода у острова Исабела
 - day: 4
   title: Станция Чарльза Дарвина и пляж Тортуга-Бэй
   places:
@@ -105,8 +106,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp
-    alt: 'Эквадор: Кито – Галапагосские Острова'
+  - src: /media/destinations/charles-darwin-research-station/hero-generated-20261009-root-v1.webp
+    alt: Галапагосская черепаха среди вулканических камней станции Чарльза Дарвина
 - day: 5
   title: Галапагосские острова - Кито или Гуаякиль
   places:
@@ -117,8 +118,6 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp
-    alt: 'Эквадор: Кито – Галапагосские Острова'
   - src: /media/tours/ekvador-kito-galapagosskie-ostrova/itinerary-5-images-1-src-enhanced-20261007.webp
     alt: Кито
 included:

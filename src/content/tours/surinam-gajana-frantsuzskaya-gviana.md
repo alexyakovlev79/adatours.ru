@@ -31,6 +31,7 @@ destinations:
 - destination_suriname_porog_kilo_3
 - destination_suriname_jodensavanna
 - destination_suriname_redi_doti
+- destination_suriname_kabalebo
 audiences: []
 route:
 - Гайана
@@ -42,18 +43,14 @@ route:
 - Куру
 - джунгли Суринама
 dates: []
-lead: 'Маршрут соединяет 3 территории на северо-востоке Южной Америки. В Гайане программа начинается с Джорджтауна и водопада
-  Кайетур. Затем путешествие продолжается в Суринаме: исторический Парамарибо, старые плантации, река Суринам, деревни маронов
-  и несколько дней в джунглях. Средняя часть поездки проходит во Французской Гвиане с Сен-Лоран-дю-Марони, Кайенной, Куру,
-  бывшей каторжной системой островов и космическим центром.'
+lead: 'Маршрут соединяет 3 территории на северо-востоке Южной Америки. В Гайане программа начинается с Джорджтауна и водопада Кайетур. Затем путешествие продолжается в Суринаме: исторический Парамарибо, старые плантации, река Суринам, деревни маронов и несколько дней в джунглях. Средняя часть поездки проходит во Французской Гвиане с Сен-Лоран-дю-Марони, Кайенной, Куру, бывшей каторжной системой островов и космическим центром.'
 highlights: []
 itinerary:
 - day: 1
   title: Прибытие в Гайану
   places:
   - Джорджтаун
-  text: После пересадочного рейса вы прилетаете в международный аэропорт имени Чедди Джагана. В аэропорту встречает водитель
-    и отвозит в отель в Джорджтауне. Дорога занимает от 30 до 70 минут в зависимости от трафика.
+  text: После пересадочного рейса вы прилетаете в международный аэропорт имени Чедди Джагана. В аэропорту встречает водитель и отвозит в отель в Джорджтауне. Дорога занимает от 30 до 70 минут в зависимости от трафика.
   images:
   - src: /media/tours/surinam-gajana-frantsuzskaya-gviana/hero-enhanced-20261006.webp
     alt: Суринам, Гайана, Французская Гвиана
@@ -70,10 +67,8 @@ itinerary:
 
     Завтрак включен. Экскурсионная программа рассчитана на целый день.
   images:
-  - src: "/media/tours/surinam-gajana-frantsuzskaya-gviana/itinerary-1-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/surinam-gajana-frantsuzskaya-gviana/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Национальный парк Кайетур
-  - src: /media/tours/surinam-gajana-frantsuzskaya-gviana/hero-enhanced-20261006.webp
-    alt: Суринам, Гайана, Французская Гвиана
 - day: 3
   title: Парамарибо, плантация Пеперпот и река Суринам
   places:
@@ -91,9 +86,9 @@ itinerary:
 
     Отдельная ценность дня - сочетание городской прогулки и возвращения в Парамарибо по воде.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    hover: "Парамарибо: городская набережная с белыми фасадами и башней"
-    alt: "Белые дома и башня на набережной Парамарибо, Суринам"
+  - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp
+    hover: 'Парамарибо: городская набережная с белыми фасадами и башней'
+    alt: Белые дома и башня на набережной Парамарибо, Суринам
 - day: 4
   title: Суринам - Французская Гвиана
   places:
@@ -112,7 +107,7 @@ itinerary:
 
     Завтрак включен, программа с гидом на целый день.
   images:
-  - src: "/media/tours/surinam-gajana-frantsuzskaya-gviana/itinerary-3-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/surinam-gajana-frantsuzskaya-gviana/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: Кайенна
 - day: 5
   title: Острова бывшей каторжной системы
@@ -127,9 +122,9 @@ itinerary:
 
     Завтрак включен. Экскурсия с гидом на целый день.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp"
-    hover: "Космодром Куру: ракета и башни стартового комплекса"
-    alt: "Ракета на стартовой площадке между металлическими башнями космодрома Куру, Французская Гвиана"
+  - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp
+    hover: 'Космодром Куру: ракета и башни стартового комплекса'
+    alt: Ракета на стартовой площадке между металлическими башнями космодрома Куру, Французская Гвиана
 - day: 6
   title: Космический центр Куру и возвращение в Суринам
   places:
@@ -145,9 +140,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp"
-    hover: "Космодром Куру: ракета и башни стартового комплекса"
-    alt: "Ракета на стартовой площадке между металлическими башнями космодрома Куру, Французская Гвиана"
+  - src: /media/destinations/guiana-space-centre/gallery-generated-20261009-root-v1.webp
+    alt: Статичная модель ракеты Ariane 5 у посетительского центра Куру
 - day: 7
   title: Из Парамарибо в джунгли и к маронам
   places:
@@ -159,9 +153,8 @@ itinerary:
 
     Ночь проходит в домиках у реки. Все приемы пищи и безалкогольные напитки включены. Экскурсия проводится с гидом.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    hover: "Парамарибо: городская набережная с белыми фасадами и башней"
-    alt: "Белые дома и башня на набережной Парамарибо, Суринам"
+  - src: /media/destinations/suriname-reka-surinam/hero-generated-20261009-v2.webp
+    alt: Река Суринам
 - day: 8
   title: Деревня Ньив-Аврора и культура маронов
   places:
@@ -173,9 +166,8 @@ itinerary:
 
     Вечером предусмотрены ужин и культурное танцевальное представление при условии, что в группе будет не менее 8 человек. Следующим утром остается время для купания, прогулки или повторного визита в деревню, после чего маршрут возвращается на лодке в Атжони и далее на автобусе в Парамарибо.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    hover: "Парамарибо: городская набережная с белыми фасадами и башней"
-    alt: "Белые дома и башня на набережной Парамарибо, Суринам"
+  - src: /media/destinations/nieuw-aurora/hero-generated-20261009-e9583a64.webp
+    alt: Деревянное каноэ у речного берега деревни Ньив-Аврора
 - day: 9
   title: Перелет в Kabalebo и знакомство с джунглями
   places:
@@ -186,6 +178,9 @@ itinerary:
     Курорт находится рядом с аэропортом. После регистрации и обеда начинается ознакомительная прогулка по одному из маршрутов: Beech Craft Trail, тропе к порогам BWKW или маршруту от подножья Туманной горы к реке Sand Creek.
 
     Прогулка может сочетаться с поездкой на каноэ по реке.
+  images:
+  - src: /media/destinations/kabalebo/hero-generated-20261009-root-v1.webp
+    alt: Деревянное каноэ на реке Кабалебо у лесного берега
 - day: 10
   title: Туманная гора и водопад Чарли
   places:
@@ -195,6 +190,9 @@ itinerary:
     День посвящен пешему маршруту через джунгли и подъему на Туманную гору. По дороге программа предполагает наблюдение за дикой природой.
 
     Обед проходит на вершине. На обратном пути предусмотрена остановка у водопада Чарли. После возвращения можно поплавать в бассейне и отдохнуть.
+  images:
+  - src: /media/destinations/misty-mountain/hero-generated-20261009-root-v1.webp
+    alt: Покрытая лесом Туманная гора в утренней дымке
 - day: 11
   title: Водопад Мой Мой
   places:
@@ -203,6 +201,9 @@ itinerary:
     Экскурсия с гидом ведет через джунгли к водопаду Мой Мой. Обед проходит у водопада. На обратном пути на лодке продолжается наблюдение за животными и птицами.
 
     Вечером можно отдыхать у бассейна или в гамаке.
+  images:
+  - src: /media/destinations/moi-moi-falls/hero-generated-20261009-root-v1.webp
+    alt: Речные каскады Мой Мой на тёмных каменных уступах
 - day: 12
   title: Порог Кило 3 и возвращение в город
   places:
@@ -215,6 +216,9 @@ itinerary:
     В эти дни основная ценность Kabalebo именно в длительном пребывании внутри леса. Между пешими маршрутами и лодочными выходами остается время слушать ночные звуки, отдыхать у воды и наблюдать животных. Рядом с лагерем можно встретить диких тапиров.
 
     По прилете организуется трансфер обратно в отель.
+  images:
+  - src: /media/destinations/kilo-3-rapids/hero-generated-20261009-root-v1.webp
+    alt: Небольшие пороги Кило 3 среди камней и тропического леса
 - day: 13
   title: Парк бабочек, Йодденсаванна и деревня Реди-Доти
   places:
@@ -228,6 +232,9 @@ itinerary:
     После этого посещается деревня Реди-Доти, название которой переводится как «деревня из красной глины».
 
     Завтрак и обед включены.
+  images:
+  - src: /media/destinations/suriname-jodensavanna/hero-generated-20261009-v2.webp
+    alt: Йоденсаванна
 - day: 14
   title: Отъезд из Суринама
   places:
@@ -237,9 +244,8 @@ itinerary:
 
     Поездка завершается снова в Парамарибо перед международным вылетом. Последний трансфер в аэропорт организуется по времени рейса.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    hover: "Парамарибо: городская набережная с белыми фасадами и башней"
-    alt: "Белые дома и башня на набережной Парамарибо, Суринам"
+  - src: /media/destinations/paramaribo/gallery-3-enhanced-20261005.webp
+    alt: 'На фото: столица Суринама город Парамарибо'
 included:
 - Размещение в отеле 3* с завтраками; апгрейд возможен при бронировании.
 - Наземные транспортные расходы на автомобилях с кондиционером или мини-автобусах.
@@ -297,7 +303,10 @@ routeDestinations:
 - destination_suriname_porog_kilo_3
 - destination_suriname_jodensavanna
 - destination_suriname_redi_doti
-primaryThemes: ["theme_culture","theme_wildlife"]
+- destination_suriname_kabalebo
+primaryThemes:
+- theme_culture
+- theme_wildlife
 themes: []
 ---
 

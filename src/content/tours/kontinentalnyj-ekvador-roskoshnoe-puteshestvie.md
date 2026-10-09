@@ -44,7 +44,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.
   images:
-  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: столица Эквадора. город Кито'
 - day: 2
   title: 'Дни 2-5. Среда-суббота: Кито - Амазония, круиз M/V Anaconda'
@@ -134,10 +134,8 @@ itinerary:
 
       Включены завтрак, обед и ужин.
   images:
-  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-1-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'На фото: джунгли Амазонии в Эквадоре'
-  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Эквадора. город Кито'
 - day: 6
   title: 'Воскресенье: возвращение в Кито и Папаякта'
   places:
@@ -170,8 +168,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Эквадора. город Кито'
+  - src: /media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp
+    alt: Исторический центр Кито
 - day: 7
   title: 'Понедельник: Папаякта - регион Котопакси'
   places:
@@ -192,7 +190,7 @@ itinerary:
 
     Включены завтрак и ужин.
   images:
-  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-3-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-3-images-0-src-enhanced-20261007.webp
     alt: 'На фото: вулканы в Эквадоре'
 - day: 8
   title: 'Вторник: Национальный парк Котопакси и возвращение в Кито'
@@ -243,10 +241,8 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Эквадора. город Кито'
-  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-3-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: вулканы в Эквадоре'
+  - src: /media/destinations/kito-vulkan-kotopahi/gallery-2-enhanced-20261006.webp
+    alt: Почётные караульные в синих мундирах у деревянных дверей в Кито, Эквадор
 - day: 9
   title: 'Среда: вылет из Кито'
   places:
@@ -260,8 +256,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Эквадора. город Кито'
+  - src: /media/destinations/kito-vulkan-kotopahi/gallery-5-enhanced-20261006.webp
+    alt: Ступени у каменного портала и площадь с флагом Эквадора в Кито
 included:
 - Групповые трансферы и экскурсии в Амазонии.
 - Индивидуальные трансферы и экскурсии в остальных частях программы.

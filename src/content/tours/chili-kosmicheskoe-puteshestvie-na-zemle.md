@@ -57,6 +57,9 @@ itinerary:
     Во время поездки можно пообедать за дополнительную плату в одном из рыбных ресторанов на побережье.
 
     Возвращение в Сантьяго. Ночь в отеле.
+  images:
+  - src: /media/destinations/valparaiso-i-vinya-del-mar/gallery-1-enhanced-20261005.webp
+    alt: Узкая лестница между домами на склоне Вальпараисо, Чили
 - day: 3
   title: Сантьяго - Сан-Педро-де-Атакама
   places:
@@ -80,8 +83,8 @@ itinerary:
     Ночь в отеле.
   images:
   - src: /media/tours/vip-chili-5/hero-enhanced-20261006.webp
-    hover: "Атакама в Чили: женщина на скальном уступе под закатным небом"
-    alt: "Женщина на скальном уступе Атакамы под закатным небом, Чили"
+    hover: 'Атакама в Чили: женщина на скальном уступе под закатным небом'
+    alt: Женщина на скальном уступе Атакамы под закатным небом, Чили
   - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - excursionRef: excursion_chile_atacama_astronomy_tour
@@ -129,8 +132,8 @@ itinerary:
   - Сантьяго-де-Чили
   text: Завтрак в отеле. В назначенное время трансфер в аэропорт и вылет домой.
   images:
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+  - src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
+    alt: Исторические здания с башнями и пешеходы на улице Сантьяго, Чили
 included:
 - трансферы по программе с водителем;
 - проживание в отелях 4* на базе завтраков;

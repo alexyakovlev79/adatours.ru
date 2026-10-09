@@ -11,13 +11,12 @@ destinations:
 - destination_suriname_reka_surinam
 - destination_suriname_ruchej_varappa
 - destination_suriname_plantaciya_bakki
+- destination_suriname_kabalebo
 audiences: []
 route:
 - Суринам, Парамарибо, Kabalebo Nature Resort, Верхний Суринам
 dates: []
-lead: 'За 12 дней вы увидите Суринам с разных сторон: колониальную архитектуру Парамарибо, мангровые заросли, реки и тропические
-  леса Амазонии. Несколько дней пройдут в Kabalebo Nature Resort, вдали от города, среди джунглей и дикой природы. Затем маршрут
-  продолжится в Верхнем Суринаме, где вы познакомитесь с культурой маронов и жизнью речных деревень.'
+lead: 'За 12 дней вы увидите Суринам с разных сторон: колониальную архитектуру Парамарибо, мангровые заросли, реки и тропические леса Амазонии. Несколько дней пройдут в Kabalebo Nature Resort, вдали от города, среди джунглей и дикой природы. Затем маршрут продолжится в Верхнем Суринаме, где вы познакомитесь с культурой маронов и жизнью речных деревень.'
 highlights: []
 itinerary:
 - day: 1
@@ -26,7 +25,7 @@ itinerary:
   - Парамарибо
   text: Прибытие в Суринам. Встреча с гидом и трансфер в отель в Парамарибо.
   images:
-  - src: "/media/tours/velikolepnyj-surinam/itinerary-0-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/velikolepnyj-surinam/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: 'На фото: столица Суринама, город Парамарибо'
 - day: 2
   title: Парамарибо и закат с дельфинами
@@ -39,9 +38,9 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    hover: "Парамарибо: городская набережная с белыми фасадами и башней"
-    alt: "Белые дома и башня на набережной Парамарибо, Суринам"
+  - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp
+    hover: 'Парамарибо: городская набережная с белыми фасадами и башней'
+    alt: Белые дома и башня на набережной Парамарибо, Суринам
 - day: 3
   title: 'Дни 3-6: джунгли и наблюдение за животными'
   places: []
@@ -57,8 +56,8 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: "/media/tours/velikolepnyj-surinam/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Суринама, город Парамарибо'
+  - src: /media/destinations/kabalebo/hero-generated-20261009-root-v1.webp
+    alt: Деревянное каноэ на реке Кабалебо у лесного берега
 - day: 7
   title: 'Дни 7-10: культура маронов в Верхнем Суринаме'
   places:
@@ -76,9 +75,8 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    hover: "Парамарибо: городская набережная с белыми фасадами и башней"
-    alt: "Белые дома и башня на набережной Парамарибо, Суринам"
+  - src: /media/destinations/suriname-reka-surinam/hero-generated-20261009-v2.webp
+    alt: Река Суринам
 - day: 11
   title: мангровые заросли, болота и старые плантации
   places:
@@ -89,6 +87,9 @@ itinerary:
     В программе посещение старой плантации Бакки и небольшого частного музея, где выставлены предметы, найденные на территории плантации и связанные с жизнью рабов. После экскурсии возвращение в отель.
 
     Питание: завтрак, обед.
+  images:
+  - src: /media/destinations/suriname-ruchej-varappa/hero-generated-20261009-v2.webp
+    alt: Ручей Вараппа
 - day: 12
   title: Суринам
   places:
@@ -97,6 +98,9 @@ itinerary:
     Днем, в 14:00, трансфер из отеля в аэропорт для вылета домой.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/paramaribo/gallery-2-enhanced-20261005.webp
+    alt: Небольшие лодки у деревянных причалов в Парамарибо, Суринам
 included:
 - все местные трансферы;
 - внутренний перелет в Kabalebo Nature Resort и обратно;
@@ -124,7 +128,7 @@ priceFrom: 3860
 currency: USD
 priceNote: $3860
 hero:
-  src: "/media/tours/velikolepnyj-surinam/hero-src-enhanced-20261007.webp"
+  src: /media/tours/velikolepnyj-surinam/hero-src-enhanced-20261007.webp
   alt: 'На фото: листья лотоса в Суринаме'
 routeCountries:
 - country_suriname
@@ -133,7 +137,10 @@ routeDestinations:
 - destination_suriname_reka_surinam
 - destination_suriname_ruchej_varappa
 - destination_suriname_plantaciya_bakki
-primaryThemes: ["theme_wildlife","theme_culture"]
+- destination_suriname_kabalebo
+primaryThemes:
+- theme_wildlife
+- theme_culture
 themes: []
 ---
 

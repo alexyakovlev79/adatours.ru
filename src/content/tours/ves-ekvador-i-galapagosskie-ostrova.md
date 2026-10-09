@@ -47,7 +47,7 @@ itinerary:
 
     Остаток дня свободный.
   images:
-  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Кито
 - day: 2
   title: Кито и «Середина мира»
@@ -96,7 +96,7 @@ itinerary:
 
       **Питание:** завтрак.
   images:
-  - src: "/media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Кито
 - day: 3
   title: Миндо
@@ -133,7 +133,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-1-images-1-src-enhanced-20261007.webp"
+  - src: /media/tours/aktivnyj-ekvador-i-trekking/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Мindo
 - day: 4
   title: Кратерное озеро Килотоа
@@ -164,7 +164,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Кито
 - day: 5
   title: Кито - Галапагосские острова, Балтра и Санта-Крус
@@ -204,10 +204,8 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: "/media/tours/ves-ekvador-i-galapagosskie-ostrova/hero-src-enhanced-20261007.webp"
+  - src: /media/tours/ves-ekvador-i-galapagosskie-ostrova/hero-src-enhanced-20261007.webp
     alt: Весь Эквадор и Галапагосские острова
-  - src: "/media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Кито
 - day: 6
   title: Остров Бартоломе
   places:
@@ -247,8 +245,8 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: "/media/tours/ves-ekvador-i-galapagosskie-ostrova/hero-src-enhanced-20261007.webp"
-    alt: Весь Эквадор и Галапагосские острова
+  - src: /media/tours/complete-ecuador-new-year/word-07-20261009-v1.webp
+    alt: Остров Бартоломе
 - day: 7
   title: Северный Сеймур или Южный Пласа
   places:
@@ -276,6 +274,9 @@ itinerary:
     Размещение в **Fiesta 3***.
 
     **Питание:** завтрак, обед.
+  images:
+  - src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1.webp
+    alt: Остров Сеймур-Норте
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []
 - excursionRef: excursion_source_ostrov_plasa
@@ -293,8 +294,8 @@ itinerary:
 
     На этом программа путешествия заканчивается.
   images:
-  - src: "/media/tours/ves-ekvador-i-galapagosskie-ostrova/hero-src-enhanced-20261007.webp"
-    alt: Весь Эквадор и Галапагосские острова
+  - src: /media/destinations/baltra-island/hero-generated-20261009-v1.webp
+    alt: Остров Балтра
 included:
 - Индивидуальные трансферы и экскурсии на материковой части Эквадора
 - Групповые трансферы и экскурсии на Галапагосских островах

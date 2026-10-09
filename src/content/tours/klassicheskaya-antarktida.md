@@ -54,7 +54,7 @@ itinerary:
 
     На берегу группа садится на «Зодиак», который доставляет пассажиров на экспедиционное судно.
   images:
-  - src: "/media/tours/klassicheskaya-antarktida/hero-src-enhanced-20261007.webp"
+  - src: /media/tours/klassicheskaya-antarktida/hero-src-enhanced-20261007.webp
     alt: Классическая Антарктида
 - day: 3
   title: Дни 3-6. Исследование Антарктиды
@@ -74,8 +74,8 @@ itinerary:
 
     Точный набор мест отличается от рейса к рейсу. Программа может включать Южные Шетландские острова, Антарктический пролив, пролив Герлаше и пролив Пенола.
   images:
-  - src: "/media/tours/klassicheskaya-antarktida/hero-src-enhanced-20261007.webp"
-    alt: Классическая Антарктида
+  - src: /media/destinations/antarctic-peninsula/hero-generated-20261009-root-v1.webp
+    alt: Айсберг у ледникового берега Антарктического полуострова
 - day: 7
   title: Обратный перелет в Пунта-Аренас
   places:
@@ -89,16 +89,16 @@ itinerary:
 
     Питание в Пунта-Аренасе в этот день предоставляется по вашему выбору и в программу не включено.
   images:
-  - src: /media/tours/antarktida-programma-s-nochevkoj/itinerary-day-1-enhanced-20261006.webp
-    alt: Пунта Аренас
+  - src: /media/destinations/punta-arenas/gallery-1-enhanced-20261005.webp
+    alt: Красные рыболовные суда у причала в Пунта-Аренасе, Чили
 - day: 8
   title: Завершение воздушного круиза
   places:
   - Пунта Аренас
   text: После завтрака групповой трансфер в аэропорт Пунта-Аренас для дальнейшего перелета.
   images:
-  - src: /media/tours/antarktida-programma-s-nochevkoj/itinerary-day-1-enhanced-20261006.webp
-    alt: Пунта Аренас
+  - src: /media/destinations/punta-arenas/gallery-2-enhanced-20261005.webp
+    alt: 'На фото: Пунта Аренас в Чили (Патагония)'
 included:
 - 1 ночь с завтраком в Пунта-Аренас в отеле в день запланированного обратного рейса из Антарктиды;
 - групповой трансфер аэропорт - отель в день запланированного обратного рейса из Антарктиды;

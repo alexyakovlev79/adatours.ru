@@ -55,8 +55,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
-    alt: 'На фото: Сан-Сальвадор столица Сальвадора'
+  - src: /media/destinations/joya-de-ceren/hero-generated-20261008.webp
+    alt: Раскопки древнего поселения Хойя-де-Серен, Сальвадор
 - day: 3
   title: Сучитото
   places:
@@ -69,6 +69,9 @@ itinerary:
     Ночь в отеле Barceló San Salvador.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/suchitoto/featureBands-1-enhanced-20261006.webp
+    alt: Узкая мощёная улица с белыми домами и цветами в Сучитото, Эль-Сальвадор
 - day: 4
   title: Сан-Сальвадор - Ла-Уньон
   places:
@@ -83,8 +86,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
-    alt: 'На фото: Сан-Сальвадор столица Сальвадора'
+  - src: /media/destinations/san-salvador/featureBands-1-enhanced-20261006.webp
+    alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
 - day: 5
   title: Залив Фонсека
   places:
@@ -101,6 +104,9 @@ itinerary:
     Ночь в отеле Comfort Inn.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/gulf-of-fonseca/hero-generated-20261009-root-v1.webp
+    alt: Зелёные острова и рыбацкая лодка в заливе Фонсека
 - day: 6
   title: Сан-Сальвадор
   places:
@@ -110,8 +116,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
-    alt: 'На фото: Сан-Сальвадор столица Сальвадора'
+  - src: /media/destinations/san-salvador/featureBands-2-enhanced-20261006.webp
+    alt: Бронзовый памятник всаднику на коне в Сан-Сальвадоре, Эль-Сальвадор
 included:
 - Русскоговорящий гид
 - Трансферы

@@ -17,7 +17,7 @@ POSTBOX_URL = "https://postbox.cloud.yandex.net/v2/email/outbound-emails"
 POSTBOX_FROM = os.getenv("POSTBOX_FROM", "form@gaeo.ru")
 POSTBOX_TO = [
     item.strip()
-    for item in os.getenv("POSTBOX_TO", "ya@gaeo.ru").split(",")
+    for item in os.getenv("POSTBOX_TO", "info@adatours.ru").split(",")
     if item.strip()
 ]
 ALLOWED_ORIGINS = {

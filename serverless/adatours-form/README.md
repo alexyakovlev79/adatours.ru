@@ -20,7 +20,7 @@ Test stage:
 
 ```text
 POSTBOX_FROM=form@gaeo.ru
-POSTBOX_TO=ya@gaeo.ru
+POSTBOX_TO=info@adatours.ru
 ALLOWED_ORIGINS=https://alexyakovlev79.github.io,https://adatours.ru,https://www.adatours.ru
 MAX_BODY_BYTES=32768
 MIN_FILL_SECONDS=1.5
@@ -28,13 +28,9 @@ MIN_FILL_SECONDS=1.5
 
 `form@gaeo.ru` is the safe default while the already verified GAEO Postbox sender is used. A dedicated Ada Tours sender can replace it after its domain is verified in Postbox.
 
-After the user separately confirms production recipients, change only the server-side environment variable:
+At launch, `info@adatours.ru` is the **only direct recipient** (To) configured in Postbox. Any forwarding from `info@adatours.ru` to other addresses is managed separately by the user in Yandex 360, not by this Cloud Function. Do not add `ya@gaeo.ru`, `Anna@adatours.com`, `Operations@adatours.com`, or any other direct recipients unless the user explicitly requests a later change.
 
-```text
-POSTBOX_TO=ya@gaeo.ru,Anna@adatours.com,Operations@adatours.com
-```
-
-Do not put recipients or secrets into the browser bundle.
+If the user later approves more direct recipients, update only the server-side `POSTBOX_TO` environment variable. Do not put recipients or secrets into the browser bundle.
 
 ## Frontend endpoint
 

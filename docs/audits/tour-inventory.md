@@ -11,13 +11,13 @@
 | № | Показатель | Сейчас |
 |---|---|---:|
 | 1 | Программы Drive без повторных копий файлов | 168 программ / 192 файлов |
-| 2 | Неархивные страницы туров | 298 |
-| 3 | Архивные страницы туров | 32 |
+| 2 | Неархивные страницы туров | 299 |
+| 3 | Архивные страницы туров | 31 |
 | 4 | Страницы без соответствия в снимке Drive | 180 активных + 18 архивных |
-| 5 | Программы Drive с архивным соответствием | 16: 1 только в архиве, 15 также с активной страницей |
+| 5 | Программы Drive с архивным соответствием | 15: 0 только в архиве, 15 также с активной страницей |
 | 6 | Программы Drive без активной страницы и без архива | 45; из них 1 уже имеют запись источников |
 
-**Очередь наличия страниц: 46 программ** — 1 из архива и 45 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
+**Очередь наличия страниц: 45 программ** — 0 из архива и 45 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
 
 Рабочая инструкция: [обновление описи](../workflows/tour-inventory.md). Редактируемый реестр: [JSON](../../data/audits/tour-inventory-drive-20261009.json). Этот Markdown генерируется, ручные пометки в нём будут перезаписаны.
 
@@ -75,7 +75,6 @@
 
 | ID программы | Программа / разделы Drive | Все файлы Drive | Соответствия сайта / реестра | Наличие | Работа с содержанием |
 |---|---|---|---|---|---|
-| `P136` | Exotic New Year 2027 Group RUS com 20%.docx; 12 дн.; New Year 2027 | [Exotic New Year 2027 Group RUS com 20%.docx](https://docs.google.com/document/d/1ZaAXBy_tbSigYKnqCeScyDRNE0qRri5d/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур в Бразилию на Новый год: Рио, Игуасу, Амазония](https://adatours.ru/brazil/tour/brazil-new-year-rio-iguazu-amazon/) — архив; `tour_source_ekzoticheskij_novyj_god_ru` | Только архив | Не начато |
 
 Новая версия на 2027 год не снимает архив автоматически. Перед восстановлением проверить программу и даты; действующий архивный workflow сохраняет stable ID, URL и историю. Эта опись сама ничего не восстанавливает.
 
@@ -180,6 +179,7 @@
 | `P133` | All Chile Atacama Patagonia Easter Island 2027 12d11n RUS com 20%.docx; 12 дн.; Chile | [All Chile Atacama Patagonia Easter Island 2027 12d11n RUS com 20%.docx](https://docs.google.com/document/d/1Z3JMZXFBlQgCxsUSj7YBy2e1skLA18iE/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур в Чили на 12 дней по лучшим местам страны с о.Пасха](https://adatours.ru/chile/tour/best-of-chile-easter-island-12-days/) — активный; `tour_source_chili_samoe_luchshee` | Активная страница есть | Не начато |
 | `P134` | 4 countries Chile, Argentina, Uruguay & Brazil 2027 17d16n RUS com 500$.docx; 17 дн.; Chile | [4 countries Chile, Argentina, Uruguay & Brazil 2027 17d16n RUS com 500$.docx](https://docs.google.com/document/d/1XFk5MV8FDfwJgD2M1fORsmetmakXt9c8/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур в страны Южной Америки: Бразилия, Аргентина, Чили, Уругвай](https://adatours.ru/multi-country/tour/brazil-argentina-chile-uruguay/) — активный; `tour_source_tur_v_4_strany_yuzhnoj_ameriki` | Активная страница есть | Не начато |
 | `P135` | Dreams Come True New Year 2027 Group RUS com 20%.docx; 10 дн.; New Year 2027 | [Dreams Come True New Year 2027 Group RUS com 20%.docx](https://docs.google.com/document/d/1Kjvbso56c2nJhFSZq5crWwga8anymdnP/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Новогодний тур в Бразилию и Аргентину: 10 дней с русским гидом](https://adatours.ru/multi-country/tour/brazil-argentina-new-year-10-days/) — активный; `tour_source_mechty_sbyvayutsya_na_novyj_god` | Активная страница есть | Не начато |
+| `P136` | Exotic New Year 2027 Group RUS com 20%.docx; 12 дн.; New Year 2027 | [Exotic New Year 2027 Group RUS com 20%.docx](https://docs.google.com/document/d/1ZaAXBy_tbSigYKnqCeScyDRNE0qRri5d/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур в Бразилию на Новый год: Рио, Игуасу, Амазония](https://adatours.ru/brazil/tour/brazil-new-year-rio-iguazu-amazon/) — активный; `tour_source_ekzoticheskij_novyj_god_ru` | Активная страница есть | В работе; Word P136 fully verified including locked table cells: 12d/11n, 30.12.2026–10.01.2027, six tariffs, all transfer and supplement terms. Prepared full restoration with 12 distinct day photos and 4 existing canonical excursions; waiting for deployment and registry sync. |
 | `P137` | Vip Brazil New year variantion with Manaus.docx; 16 дн.; New Year 2027 | [Vip Brazil New year variantion with Manaus.docx](https://docs.google.com/document/d/14Om_luOpwtBtqql7NxyZDRQ8xtjv4uTb/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Люксовый индивидуальный тур в Бразилию с Амазонией \| 16 дней](https://adatours.ru/brazil/tour/luxury-brazil-amazon-16-days/) — активный; `tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej` | Активная страница есть | Не начато |
 | `P138` | Vip Brazil New year variantion with Bonito.docx; 16 дн.; New Year 2027 | [Vip Brazil New year variantion with Bonito.docx](https://docs.google.com/document/d/1gaL9MHGLftE6Q3_O5tuZF3AkM3XDs8kH/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Новогодний VIP тур в Бразилию с Бонито: Рио, Игуасу \| 16 дней](https://adatours.ru/brazil/tour/brazil-new-year-vip-bonito-rio-iguazu-16-days/) — активный; `tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej` | Активная страница есть | Не начато |
 | `P139` | 5 Countries New Year 2027 Group RUS com 500$.docx; 19 дн.; New Year 2027 | [5 Countries New Year 2027 Group RUS com 500$.docx](https://docs.google.com/document/d/1FEYZGxUPKg8a6JrRkx_2FG0e7wwZ4JOU/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Новогодний тур по 5 странам Латинской Америки на 19 дней](https://adatours.ru/multi-country/tour/latin-america-5-countries-new-year-group-tour-19-days/) — активный; `tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god` | Активная страница есть | Нужно обновить содержание; 09.10.2026: опубликован точный выбранный V2 тура с уточнением Анны «Инкауаси». Полная сверка Word-варианта из этой описи не выполнялась; статус Word не закрывается автоматически. |
@@ -259,7 +259,7 @@
 
 ## 5. Полная опись сайта и источников
 
-В архивном реестре 37 туров; 5 без страниц. «Нет на Drive» относится только к указанной папке и её снимку, а не ко всему Google Drive. Этот факт не является причиной архивирования или удаления.
+В архивном реестре 36 туров; 5 без страниц. «Нет на Drive» относится только к указанной папке и её снимку, а не ко всему Google Drive. Этот факт не является причиной архивирования или удаления.
 
 | Tour ID | Тур / страница | Статус | Соответствующие программы Drive |
 |---|---|---|---|
@@ -429,7 +429,7 @@
 | `tour_source_mechty_sbyvayutsya_na_karnaval` | [Тур в Бразилию на Карнавал в Рио, Аргентина, Игуасу \| 10 дней](https://adatours.ru/multi-country/tour/brazil-argentina-rio-carnival-iguazu-10-days/) | Активная страница | `P156` |
 | `tour_source_nezabyvaemyj_karnaval_v_brazilii` | [Тур в Бразилию на Карнавал с пляжным отдыхом и водопадами Игуасу](https://adatours.ru/brazil/tour/brazil-carnival-iguazu-beaches/) | Активная страница | `P161` |
 | `tour_source_novogodnie_priklyucheniya_v_brazilii` | [Тур в Бразилию на Новый Год: Рио, Пантанал, Бонито, пляжи Бузиоса](https://adatours.ru/brazil/tour/brazil-new-year-rio-pantanal-bonito-buzios/) | Архивная страница | Нет подтверждённого соответствия в снимке Drive |
-| `tour_source_ekzoticheskij_novyj_god_ru` | [Тур в Бразилию на Новый год: Рио, Игуасу, Амазония](https://adatours.ru/brazil/tour/brazil-new-year-rio-iguazu-amazon/) | Архивная страница | `P136` |
+| `tour_source_ekzoticheskij_novyj_god_ru` | [Тур в Бразилию на Новый год: Рио, Игуасу, Амазония](https://adatours.ru/brazil/tour/brazil-new-year-rio-iguazu-amazon/) | Активная страница | `P136` |
 | `tour_source_tur_v_braziliyu_na_13_dnej` | [Тур в Бразилию на водопады Игуасу с пляжным отдыхом в Бузиос](https://adatours.ru/brazil/tour/brazil-iguazu-buzios-13-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_tur_v_braziliyu_na_kofejnye_fazendy` | [Тур в Бразилию на кофейные плантации и водопады Игуасу, 8 дней](https://adatours.ru/brazil/tour/brazil-coffee-plantations-iguazu-8-days/) | Активная страница | `P093` |
 | `tour_source_parad_chempionov_karnavala_v_rio` | [Тур в Бразилию на парад чемпионов карнавала в Рио](https://adatours.ru/brazil/tour/brazil-rio-carnival-champions-parade/) | Активная страница | `P152` |

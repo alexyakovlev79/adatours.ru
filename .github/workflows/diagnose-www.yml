@@ -70,3 +70,19 @@ jobs:
             if [ "$code" = 200 ] && [[ "$value" == *"|0" ]]; then state=success; else state=failure; fi
             report "ada/${prefix}-https" "$state" "HTTPS=${value:-NO_RESPONSE}"
           done
+          echo "=== Safe same-domain Pages settings refresh ==="
+          if [ "$page_name" = "adatours.ru" ]; then
+            echo "Requesting refresh for existing custom domain adatours.ru; no removal and no canonical switch."
+            if gh api --method PUT "repos/${GITHUB_REPOSITORY}/pages" -f cname="adatours.ru" > /tmp/pages-update.out 2>&1; then
+              echo "Domain re-save accepted by GitHub REST API."
+              report "ada/pages-refresh" success "Pages accepted re-save of existing adatours.ru; certificate provisioning may take time"
+            else
+              echo "Domain re-save unavailable with workflow permissions:"
+              head -c 700 /tmp/pages-update.out || true
+              echo
+              report "ada/pages-refresh" failure "Pages API denied same-domain update; manual GitHub Settings > Pages action needed"
+            fi
+          else
+            echo "Unexpected Pages canonical domain; no mutation attempted."
+            report "ada/pages-refresh" failure "Safe re-save skipped: current Pages cname=${page_name}"
+          fi

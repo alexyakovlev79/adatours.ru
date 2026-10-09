@@ -69,8 +69,6 @@ itinerary:
 
     Далее вы увидите Тамбомачай, связанный с водой и ритуальными омовениями. Вода здесь поступала в бассейны по специально устроенным каналам. Совсем рядом расположен Пука-Пукара, «Красный форт», который выполнял охранную функцию. После экскурсии - возвращение в гостиницу и ночь в Куско.
   images:
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
-    alt: Куско
   - src: /media/tours/peru-strana-inkov/lima-park-src-enhanced-20261008.webp
     alt: Лима
 - day: 4
@@ -85,10 +83,8 @@ itinerary:
 
     Затем автобус спускается в поселок, где предусмотрен обед в ресторане «Ayasqa». После обеда - переезд на станцию, обратная поездка на поезде и трансфер в гостиницу в Куско.
   images:
-  - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
+  - src: /media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: Куско
-  - src: "/media/tours/peru-strana-inkov/itinerary-3-images-1-src-enhanced-20261007.webp"
-    alt: Мачу-Пикчу
 - day: 5
   title: Священная долина инков
   places:
@@ -101,6 +97,9 @@ itinerary:
     Недалеко от Писака можно посетить ярмарку и выбрать изделия местных мастеров из серебра, керамики и кожи. В зоологическом центре «Ауанаканча» вы увидите лам, альпак и викуний, узнаете об их содержании и о традиционных способах окрашивания ценной шерсти.
 
     Ночь в Священной долине.
+  images:
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp
+    alt: Традиционный текстиль в мастерской Священной долины инков
 - day: 6
   title: Куско - аэропорт
   places:

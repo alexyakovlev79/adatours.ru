@@ -163,6 +163,9 @@ itinerary:
     Обед в ресторане национальной кухни **Inka House**, шведский стол.
 
     После экскурсии возвращение в гостиницу.
+  images:
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp
+    alt: Традиционный текстиль в мастерской Священной долины инков
 - day: 6
   title: Куско - Пуно
   places:
@@ -240,6 +243,9 @@ itinerary:
     В конце дня прибытие в **Чивай** и размещение в гостинице **Colca Llacta 3***.
 
     По желанию можно посетить горячие источники. В программе есть время на обед.
+  images:
+  - src: /media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: город Пуно в Перу и озеро Титикака'
 - day: 9
   title: Колка - Арекипа
   places:
@@ -256,6 +262,9 @@ itinerary:
     По пути предусмотрены остановки на смотровых площадках с видами на 3 вулкана.
 
     Прибытие и размещение в гостинице 3*. Свободное время в Арекипе.
+  images:
+  - src: /media/destinations/arequipa/gallery-1-enhanced-20261005.webp
+    alt: Арекипа, Перу
 - day: 10
   title: Арекипа - Лима
   places:
@@ -315,8 +324,8 @@ itinerary:
 
     После возвращения в лодж ужин, музыка и рассказы местных гидов.
   images:
-  - src: /media/tours/ves-mnogolikij-peru-ikitos/lima-park-src-enhanced-20261008.webp
-    alt: 'НА фото: город Лима, столица Перу'
+  - src: /media/destinations/iquitos/gallery-1-enhanced-20261005.webp
+    alt: ''
 - day: 13
   title: Икитос и Амазония
   places:
@@ -337,6 +346,9 @@ itinerary:
     Вечером можно встретить закат над Амазонкой.
 
     Ночная программа проходит на каноэ по озеру и притокам в джунглях. Главная цель - наблюдение за **кайманами**.
+  images:
+  - src: /media/destinations/iquitos/gallery-2-enhanced-20261005.webp
+    alt: ''
 - day: 14
   title: Икитос - Лима
   places:
@@ -357,8 +369,8 @@ itinerary:
 
     Размещение в отеле **Britania 3*** или отеле той же категории.
   images:
-  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
-    alt: 'НА фото: город Лима, столица Перу'
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: Лима — Перу
 - day: 15
   title: Лима и вылет
   places:
@@ -380,8 +392,8 @@ itinerary:
 
     После посещения продолжение трансфера в аэропорт.
   images:
-  - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
-    alt: 'НА фото: город Лима, столица Перу'
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
+    alt: Лима
 included:
 - Внутренние авиаперелеты Лима - Куско, Арекипа - Лима, Лима - Икитос - Лима
 - Включенное питание

@@ -169,8 +169,6 @@ itinerary:
 
     Остаток дня свободный. Основная экскурсия по Игуасу запланирована на завтра.'
   images:
-  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
-    alt: Туристы на мостике над водопадами Игуасу в Бразилии
   - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-9-images-1-enhanced-20261006.webp
     alt: Подводное плавание в Бонито, Рио-да-Прата и Сукури, экотуризм и природа Бразилии
 - day: 7

@@ -95,6 +95,10 @@ itinerary:
   - Сокало Мехико
   - Темпло-Майор
   - Чапультепек
+  images:
+  - src: "/media/destinations/mexico-city-and-teotihuacan/gallery-5-enhanced-20261004.webp"
+    alt: "Круглый рельеф с лицом в центре и орнаментами, Мехико, Мексика"
+    hover: "Мехико: древний каменный рельеф с орнаментами"
 - excursionRef: excursion_mexico_mexico_city_history_anthropology
   places:
   - Мехико Сити (руины Теотихуакана)
@@ -107,6 +111,10 @@ itinerary:
   - Теотиуакан
   - Мехико Сити (руины Теотихуакана)
   - Сантуарио Гваделупы
+  images:
+  - src: "/media/destinations/teotihuacan/gallery-1-enhanced-20261004.webp"
+    alt: "Пирамида и каменные платформы вдоль широкой дороги в Теотиуакане, Мексика"
+    hover: "Теотиуакан: пирамиды и древняя дорога"
 - excursionRef: excursion_mexico_teotihuacan_guadalupe
   places:
   - Теотиуакан
@@ -159,6 +167,10 @@ itinerary:
   text: Ночевка в Оахаке.
   places:
   - Оахака
+  images:
+  - src: "/media/destinations/oaxaca/gallery-6-enhanced-20261004.webp"
+    alt: "Вывеска ресторана El Sol y la Luna на охристой стене в Оахаке, Мексика"
+    hover: "Оахака: вывеска ресторана в историческом центре"
 - excursionRef: excursion_mexico_oaxaca_walking
   places:
   - Оахака
@@ -244,6 +256,10 @@ itinerary:
   - Чичен-Ица
   - Ривьера-Майя
   - Вальядолид
+  images:
+  - src: "/media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/itinerary-5-images-0-src-enhanced-20261007.webp"
+    alt: "Ступенчатая пирамида с храмом на вершине в Чичен-Ице, Мексика"
+    hover: "Чичен-Ица: ступенчатая пирамида майя"
 - excursionRef: excursion_mexico_chichen_itza_valladolid_caribbean
   places:
   - Чичен-Ица

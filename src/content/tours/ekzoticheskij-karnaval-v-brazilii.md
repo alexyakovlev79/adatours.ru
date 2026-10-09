@@ -201,9 +201,10 @@ itinerary:
 
     Стоимость: USD 170 с человека.'
   images:
-  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
-    alt: Мостики и Глотка Дьявола на водопадах Игуасу
-- excursionRef: excursion_source_makuko_safari
+  - src: "/media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp"
+    alt: "Водопады Игуасу со стороны Бразилии"
+
+    hover: "Игуасу: панорама водопадов с бразильской стороны"- excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []

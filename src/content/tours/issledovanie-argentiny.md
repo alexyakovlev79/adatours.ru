@@ -197,10 +197,11 @@ itinerary:
   - Эль-Калафате
   text: Регулярный трансфер в аэропорт и перелет Aerolineas Argentinas. По прибытии - встреча и регулярный трансфер в выбранный отель Calafate Parque.
   images:
-  - src: /media/excursions/todo-glaciares/hero-enhanced-20261006.webp
-    alt: 'На фото: Ледник Перито Морено'
+  - src: "/media/destinations/el-calafate/hero-enhanced-20260930.webp"
+    alt: "Патагония рядом с Эль-Калафате"
     intendedSlot: itinerary:day-9
-- day: 10
+
+    hover: "Эль-Калафате: пейзажи Патагонии"- day: 10
   title: Эль-Калафате и ледник Перито-Морено
   places:
   - Эль-Калафате
@@ -286,10 +287,11 @@ itinerary:
 
     Основной пешеходный маршрут имеет длину около 950 м и проходит вдоль берега реки Игуасу. С него открывается широкая панорама каскадов, поэтому бразильская сторона дополняет близкие ракурсы предыдущего дня общим видом на водопады. Экскурсия заканчивается на смотровой площадке у Глотки Дьявола. После посещения - возвращение в отель.'
   images:
-  - src: /media/excursions/velikoe-priklyuchenie-iguasu/hero-enhanced-20261006.webp
-    alt: 'На фото: Водопады Игуасу, Аргентина'
+  - src: "/media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp"
+    alt: "Водопады Игуасу со стороны Бразилии"
     intendedSlot: itinerary:day-14
-- day: 15
+
+    hover: "Бразильская сторона Игуасу: панорама каскадов"- day: 15
   title: Игуасу - Буэнос-Айрес
   places:
   - Игуасу

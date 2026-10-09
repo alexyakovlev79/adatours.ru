@@ -85,10 +85,11 @@ itinerary:
     text: |-
       Регулярный трансфер в аэропорт и перелет Aerolineas Argentinas в Ушуайю. По прибытии встреча и регулярный трансфер в отель Fueguino.
     images:
-      - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
-        alt: "Ушуайя"
+      - src: "/media/destinations/ushuajya/hero-enhanced-20261002.webp"
+        alt: "Город Ушуайя в Патагонии, Аргентина"
         intendedSlot: "itinerary:day-3"
 
+        hover: "Ушуайя: панорама города у пролива Бигль"
   - excursionRef: excursion_ushuaia_laguna_esmeralda_trekking
     places:
       - "Ушуайя"
@@ -174,10 +175,11 @@ itinerary:
     text: |-
       После завтрака свободный день. Можно выбрать одну из дополнительных экскурсий.
     images:
-      - src: /media/excursions/glaciares-gourmet/hero-enhanced-20261006.webp
-        alt: "Ледник Перито-Морено в Эль-Калафате"
+      - src: "/media/destinations/el-calafate/hero-enhanced-20260930.webp"
+        alt: "Патагония рядом с Эль-Калафате"
         intendedSlot: "itinerary:day-8"
 
+        hover: "Эль-Калафате: природа Патагонии"
   - excursionRef: excursion_el_calafate_glaciares_gourmet
     places:
       - "Эль-Калафате"
@@ -199,10 +201,11 @@ itinerary:
 
       По прибытии встреча и регулярный трансфер в Mercure Iguazú Irú. Этот день почти полностью занят перемещением между Патагонией и северо-востоком страны. После ледников Эль-Калафате окружающий пейзаж меняется на влажные субтропические леса Мисьонеса. Активная экскурсионная программа у водопадов начинается на следующее утро.
     images:
-      - src: /media/excursions/todo-glaciares/hero-enhanced-20261006.webp
-        alt: "Эль-Калафате и Игуасу"
+      - src: "/media/destinations/buenos-aires/hero-enhanced-20260930.webp"
+        alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-9"
 
+        hover: "Буэнос-Айрес: городской пейзаж"
   - day: 10
     title: "Аргентинская сторона водопадов Игуасу"
     places:
@@ -217,10 +220,11 @@ itinerary:
 
       После национального парка запланировано знакомство с культурой и историей йерба-мате на рынке дождевых лесов Yabuticaba. Этот блок добавляет к природной экскурсии местную традицию, связанную с одним из самых характерных напитков региона Мисьонес.
     images:
-      - src: /media/excursions/velikoe-priklyuchenie-iguasu/hero-enhanced-20261006.webp
-        alt: "Водопады Игуасу, Аргентина"
+      - src: "/media/destinations/puerto-iguasu/gallery-1-enhanced-20261002.webp"
+        alt: "Мощные каскады Игуасу среди скал и зелени, Аргентина"
         intendedSlot: "itinerary:day-10"
 
+        hover: "Аргентинская сторона Игуасу: панорама водопадов"
   - excursionRef: excursion_iguazu_gran_aventura
     places:
       - "Пуэрто-Игуасу"

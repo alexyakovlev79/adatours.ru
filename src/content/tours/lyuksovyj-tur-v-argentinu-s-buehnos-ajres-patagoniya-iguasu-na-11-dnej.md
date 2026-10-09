@@ -132,10 +132,11 @@ itinerary:
       
       Следующая крупная точка - Plaza de Mayo и Casa Rosada.
     images:
-      - src: /media/excursions/gala-tango-s-uzhinom-i-transferom/hero-enhanced-20261006.webp
-        alt: "Буэнос-Айрес и танго"
+      - src: "/media/destinations/buenos-aires/hero-enhanced-20260930.webp"
+        alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-2"
-  - excursionRef: excursion_buenos_aires_gala_tango_dinner_transfer
+
+        hover: "Буэнос-Айрес: городской пейзаж"  - excursionRef: excursion_buenos_aires_gala_tango_dinner_transfer
     places:
       - "Буэнос-Айрес"
   - day: 3

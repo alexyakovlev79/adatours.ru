@@ -252,10 +252,11 @@ itinerary:
       
       **Прогулка на катере.** Днем больше возможностей увидеть животных и сфотографировать пейзажи. Можно также устроить ночную прогулку перед ужином: над водой видны звезды, а в темноте иногда отражаются глаза аллигаторов.
     images:
-      - src: /media/excursions/ibera-progulka-po-reke-korrientes-ili-rybalka-na-dorado/hero-enhanced-20261006.webp
-        alt: "Болота и лагуны Иберы"
+      - src: "/media/destinations/destination_argentina_ibera/original-02.jpg"
+        alt: "Олень с ветвистыми рогами среди травы и воды в Ибере, Аргентина"
         intendedSlot: "itinerary:day-6"
-  - excursionRef: excursion_ibera_corrientes_river_or_dorado_fishing
+
+        hover: "Ибера: болотный олень среди травы и воды"  - excursionRef: excursion_ibera_corrientes_river_or_dorado_fishing
     places:
       - "Ибера"
       - "река Корриентес"

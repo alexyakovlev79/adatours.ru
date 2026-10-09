@@ -273,8 +273,6 @@ itinerary:
 
     В этом варианте программы Парк птиц включен в экскурсионный день, а не вынесен как дополнительная опция.'
   images:
-  - src: /media/tours/brazil-adventure-17d/itinerary/day-07-enhanced-20260930.webp
-    alt: Глотка Дьявола и панорама водопадов Игуасу, каскады и туман над рекой в Южной Америке
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-1-enhanced-20261006.webp
     alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио, яркие перья и улыбка
 - excursionRef: excursion_source_makuko_safari

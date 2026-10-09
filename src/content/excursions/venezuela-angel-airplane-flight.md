@@ -17,9 +17,9 @@ destinationName: Канайма и водопад Анхель
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1XH92Fy0Amt9ucbzA6OjA_kW6lI_bkN8I/view?usp=drivesdk
 hero:
-  src: "/media/excursions/venezuela-angel-airplane-flight/hero-src-enhanced-20261007.webp"
-  hover: "Венесуэла: высокий водопад Анхель на отвесной скальной стене"
-  alt: "Водопад Анхель падает со столовой горы среди облаков, Венесуэла"
+  src: "/media/destinations/canaima-and-angel-falls/gallery-3-enhanced-20261003.webp"
+  hover: "Канайма: высокий водопад Анхель среди облаков"
+  alt: "Высокий водопад падает с отвесной скалы среди облаков, Канайма, Венесуэла"
 themes: ["theme_wildlife"]
 ---
 

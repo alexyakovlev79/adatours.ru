@@ -542,10 +542,11 @@ itinerary:
       
       Во второй половине дня трансфер на автобусную станцию и переезд обратно в Эль-Калафате. По прибытии - трансфер в отель.
     images:
-      - src: /media/excursions/kajaking-v-el-chalten/hero-enhanced-20261006.webp
-        alt: "Каякинг и горные пейзажи Эль-Чалтена"
+      - src: "/media/destinations/el-calafate/hero-enhanced-20260930.webp"
+        alt: "Патагония рядом с Эль-Калафате"
         intendedSlot: "itinerary:day-21"
-  - excursionRef: excursion_el_chalten_kayaking
+
+        hover: "Эль-Калафате: пейзажи Патагонии"  - excursionRef: excursion_el_chalten_kayaking
     places:
       - "Эль-Чалтен"
   - day: 22
@@ -654,10 +655,11 @@ itinerary:
       
       Озеро Фаньяно впечатляет масштабом и суровым ландшафтом. После него маршрут продолжается к более компактному озеру Эскондидо, окруженному горами и лесами. Весь день построен как активное знакомство с внутренними районами Огненной Земли, вдали от обычных городских маршрутов.
     images:
-      - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
-        alt: "Огненная Земля и Ушуайя"
+      - src: "/media/destinations/ushuajya/gallery-4-enhanced-20261002.webp"
+        alt: "Спокойная вода между заснеженными горами, Огненная Земля, Аргентина"
         intendedSlot: "itinerary:day-24"
-  - day: 25
+
+        hover: "Огненная Земля: горное озеро у Ушуайи"  - day: 25
     title: "Ушуайя - национальный парк Тьерра-дель-Фуэго"
     places:
       - "Ушуайя"

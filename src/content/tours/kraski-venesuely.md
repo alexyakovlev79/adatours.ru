@@ -118,9 +118,9 @@ itinerary:
 
     **Питание:** завтрак, обед, ужин.
   images:
-  - src: "/media/excursions/venezuela-angel-airplane-flight/hero-src-enhanced-20261007.webp"
-    hover: "Венесуэла: высокий водопад Анхель на отвесной скальной стене"
-    alt: "Водопад Анхель падает со столовой горы среди облаков, Венесуэла"
+  - src: "/media/countries/venezuela/featureBands-1-enhanced-20261002.webp"
+    hover: "Венесуэла: водопад Анхель в национальном парке Канайма"
+    alt: "Канайма и водопад Анхель в Венесуэле"
 - day: 4
   title: Свободное время в Канайме
   places:

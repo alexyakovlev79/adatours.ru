@@ -66,9 +66,10 @@ itinerary:
 
     Экскурсия проходит по историческому центру, включенному в список Всемирного наследия ЮНЕСКО.'
   images:
-  - src: /media/tours/brazil-adventure-17d/itinerary/day-13-enhanced-20260930.webp
-    alt: Сан-Луис
-- excursionRef: excursion_sao_luis_city_tour_four_hours
+  - src: "/media/tours/udivitelnaya-braziliya/itinerary-day-14-generated-20261008-next20.webp"
+    alt: "Мощеная улица с фасадами в синих изразцах в Сан-Луисе, Бразилия"
+
+    hover: "Сан-Луис: улица с историческими фасадами и изразцами"- excursionRef: excursion_sao_luis_city_tour_four_hours
   places: []
 - day: 2
   title: Сан-Луис - Баррейриньяс - Ленсойс-Мараньенсес

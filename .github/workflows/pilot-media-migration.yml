@@ -1,0 +1,67 @@
+name: Pilot Ada Tours media migration
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "Media category (pilot only)"
+        required: true
+        default: countries
+        type: choice
+        options:
+          - countries
+          - destinations
+          - tours
+          - excursions
+          - themes
+      max_files:
+        description: "Number of images to verify/upload (1–10)"
+        required: true
+        default: '10'
+        type: string
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: adatours-media-pilot
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    name: Verify and upload first images
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exchange short-lived OIDC token and verify image uploads
+        shell: bash
+        env:
+          SCOPE: ${{ inputs.scope }}
+          MAX_FILES: ${{ inputs.max_files }}
+        run: |
+          set -euo pipefail
+          test -n "${YC_SA_ID:-}" || { echo "::error::Missing YC_MEDIA_SA_ID"; exit 1; }
+
+          oidc_response="$(curl --fail --silent --show-error --get \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            --data-urlencode "audience=https://github.com/alexyakovlev79" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
+          oidc_token="$(jq -er '.value' <<< "${oidc_response}")"
+          echo "::add-mask::${oidc_token}"
+
+          token_response="$(curl --fail --silent --show-error \
+            -X POST 'https://auth.yandex.cloud/oauth/token' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
+            --data-urlencode "audience=${YC_SA_ID}" \
+            --data-urlencode "subject_token=${oidc_token}" \
+            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          iam_token="$(jq -er '.access_token' <<< "${token_response}")"
+          echo "::add-mask::${iam_token}"
+
+          YC_IAM_TOKEN="${iam_token}" node scripts/pilot-media-to-object-storage.mjs "${SCOPE}" "${MAX_FILES}"

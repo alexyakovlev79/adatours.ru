@@ -12,6 +12,9 @@ summary: >-
 hero:
   src: /media/countries/brazil/hero-src-enhanced-20261001.webp
   alt: Панорама Рио-де-Жанейро
+heroVideo:
+  src: /media/countries/brazil/hero-video-original-20261009-v1.mp4
+  sourceUrl: https://www.pexels.com/pt-br/video/arquitetonico-arquitetura-praia-litoral-4875313/
 gallery:
   - src: /media/home/lencois-enhanced-20260930.webp
     alt: Дюны и лагуны Ленсойс-Мараньенсис

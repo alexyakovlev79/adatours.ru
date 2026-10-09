@@ -2,12 +2,14 @@
 import PrimaryCTA from '../global/PrimaryCTA.astro';
 import { withBase } from '../../lib/paths';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
+import HeroVideo from './HeroVideo.astro';
 
 interface Props {
   eyebrow?: string;
   title: string;
   intro?: string;
   image?: string;
+  video?: { src: string };
   imageTextAlign?: 'left' | 'right';
   ctaHref?: string;
   ctaLabel?: string;
@@ -25,6 +27,7 @@ const {
   title,
   intro,
   image,
+  video,
   imageTextAlign,
   ctaHref = '/contacts/',
   ctaLabel = 'Оставить заявку',
@@ -58,6 +61,7 @@ const resolvedImage = image ? withBase(image) : undefined;
       referrerpolicy="no-referrer"
     />
   )}
+  {video && image && <HeroVideo src={video.src} poster={image} />}
   <div class="hero__overlay"></div>
   <div class="hero__content">
     <div class="hero__head">

@@ -80,6 +80,7 @@ const countries = defineCollection({
     summary: z.string(),
     imageTextAlign,
     hero: media,
+    heroVideo: z.object({ src: z.string().regex(/^\/media\/.+\.mp4$/), sourceUrl: z.string().url() }).optional(),
     gallery: z.array(mediaObject).default([]),
     regions: z.array(z.string()).default([]),
     bestTime: z.string().optional(),

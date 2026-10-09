@@ -1,0 +1,125 @@
+---
+import { withBase } from '../../lib/paths';
+interface Props { src: string; poster: string }
+const { src, poster } = Astro.props;
+---
+
+<hero-background-video>
+  <video class="hero-video" data-src={withBase(src)} poster={withBase(poster)}
+    muted loop autoplay playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+  <button class="hero-video-toggle" type="button" hidden aria-label="Приостановить видео">
+    <span aria-hidden="true">Ⅱ</span>
+  </button>
+</hero-background-video>
+
+<script>
+  class HeroBackgroundVideo extends HTMLElement {
+    cleanup?: () => void;
+    connectedCallback() {
+      const video = this.querySelector('video');
+      const button = this.querySelector('button');
+      if (!video || !button) return;
+      const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const desktop = window.matchMedia('(min-width: 821px)');
+      const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+      let visible = true;
+      let pausedByUser = false;
+      let failed = false;
+      const updateButton = () => {
+        button.setAttribute('aria-label', video.paused ? 'Воспроизвести видео' : 'Приостановить видео');
+        button.firstElementChild!.textContent = video.paused ? '▶' : 'Ⅱ';
+      };
+      const play = () => {
+        if (failed || pausedByUser || !visible || document.hidden || !desktop.matches || motion.matches || connection?.saveData) return;
+        if (!video.src) video.src = video.dataset.src!;
+        video.muted = true;
+        void video.play().catch(() => {
+          button.hidden = false;
+          updateButton();
+        });
+      };
+      video.addEventListener('playing', () => {
+        video.classList.add('is-playing');
+        button.hidden = false;
+        updateButton();
+      });
+      video.addEventListener('pause', updateButton);
+      video.addEventListener('error', () => {
+        failed = true;
+        video.classList.remove('is-playing');
+        button.hidden = true;
+      });
+      button.addEventListener('click', () => {
+        if (!video.paused) { pausedByUser = true; video.pause(); }
+        else { pausedByUser = false; play(); }
+      });
+      const onVisibility = () => document.hidden ? video.pause() : play();
+      const onMotion = () => {
+        if (motion.matches || !desktop.matches) {
+          video.pause();
+          video.classList.remove('is-playing');
+          button.hidden = true;
+        } else play();
+      };
+      document.addEventListener('visibilitychange', onVisibility);
+      motion.addEventListener('change', onMotion);
+      desktop.addEventListener('change', onMotion);
+      const observer = new IntersectionObserver(([entry]) => {
+        visible = entry.isIntersecting;
+        if (visible) play(); else video.pause();
+      });
+      observer.observe(this.closest('.hero')!);
+      this.cleanup = () => {
+        observer.disconnect();
+        document.removeEventListener('visibilitychange', onVisibility);
+        motion.removeEventListener('change', onMotion);
+        desktop.removeEventListener('change', onMotion);
+        video.pause();
+      };
+    }
+    disconnectedCallback() { this.cleanup?.(); }
+  }
+  if (!customElements.get('hero-background-video')) customElements.define('hero-background-video', HeroBackgroundVideo);
+</script>
+
+<style>
+  hero-background-video { display: contents; }
+  .hero-video {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .hero-video.is-playing { opacity: 1; }
+  .hero-video-toggle {
+    position: absolute;
+    top: calc(var(--header-h) + 20px);
+    right: var(--gutter);
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid rgb(255 255 255 / 65%);
+    border-radius: 50%;
+    color: #fff;
+    background: rgb(15 16 14 / 50%);
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .hero-video-toggle[hidden] { display: none; }
+  .hero-video-toggle:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+  @media (max-width: 820px) {
+    .hero-video, .hero-video-toggle { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-video, .hero-video-toggle { display: none; }
+  }
+</style>

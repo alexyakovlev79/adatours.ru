@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { seoThemeHubTitle } from '../lib/seo-page.mjs';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
 import InterestCard from '../components/editorial/InterestCard.astro';
@@ -27,7 +28,7 @@ const experienceProps = (row) => ({
 });
 const tourCatalog = interestTourCatalogPath(d);
 ---
-<BaseLayout leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id} title={`${d.name} — туры и впечатления | Ada Tours`} description={d.summary} image={d.hero?.src}
+<BaseLayout leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id} title={seoThemeHubTitle(d.name,hub.allTours.length)} description={d.summary} image={d.hero?.src}
   canonical={themePath(d)} hideCurrentBreadcrumbLabel={true}
   breadcrumbs={[{ label: 'По интересам', href: '/interests/' }, { label: d.name, href: themePath(d) }]}>
   <Hero contentSized eyebrow="По интересам" title={d.name} intro={d.summary} image={d.hero?.src} imageTextAlign={d.imageTextAlign}

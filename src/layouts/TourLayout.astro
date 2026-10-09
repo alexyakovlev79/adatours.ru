@@ -1,5 +1,6 @@
 ---
 import { themeIds } from '../lib/interest-model.mjs';
+import { seoTourTitle } from '../lib/seo-page.mjs';
 import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
 import ArchiveNotice from '../components/global/ArchiveNotice.astro';
 import { getCollection } from 'astro:content';
@@ -106,7 +107,7 @@ const remainingBodyHtml = firstHeadingHtml ? tourBodyHtml.slice(firstHeadingHtml
 const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 ---
 
-<BaseLayout leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={d.title} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
+<BaseLayout leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={seoTourTitle(d)} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
   {!archived && <SearchIndexRecord
     title={d.title}
     summary={d.lead}

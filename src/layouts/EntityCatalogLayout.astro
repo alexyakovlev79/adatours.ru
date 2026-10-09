@@ -1,5 +1,6 @@
 ---
 import { countLabel, countryMembership } from '../lib/interest-model.mjs';
+import { seoPaginatedTitle } from '../lib/seo-page.mjs';
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
@@ -44,13 +45,13 @@ const vipCountryText = vipPageCountries.length
   : 'Латинская Америка';
 const metaTitle = variant === 'multi-country-tours' || variant === 'vip-tours'
   ? `${title} — страница ${p.currentPage} из ${p.totalPages}`
-  : `${title}${pageSuffix}`;
+  : seoPaginatedTitle(title,p.currentPage);
 const metaDescription = variant === 'multi-country-tours'
   ? `Multi-country туры Ada Tours — страница ${p.currentPage} из ${p.totalPages}. Маршруты ${p.from}–${p.to} из ${p.totalItems}; страны на этой странице: ${multiCountryCountryText}.`
   : variant === 'vip-tours'
     ? `VIP и Luxury туры Ada Tours — страница ${p.currentPage} из ${p.totalPages}. Маршруты ${p.from}–${p.to} из ${p.totalItems}; страны на этой странице: ${vipCountryText}. Частный формат и персональная адаптация программы.`
     : p.currentPage > 1
-      ? `${description} Страница ${p.currentPage} из ${p.totalPages}, объекты ${p.from}–${p.to} из ${p.totalItems}.`
+      ? `${description} Страница ${p.currentPage} из ${p.totalPages}, ${kind==='tour' && /^\/[a-z0-9-]+\/tour\/$/.test(p.rootPath) ? 'туры' : 'объекты'} ${p.from}–${p.to} из ${p.totalItems}.`
       : description;
 const presentation = variant === 'global-tours' ? {
   title: 'Путешествия по Латинской Америке',

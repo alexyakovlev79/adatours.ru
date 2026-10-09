@@ -1,5 +1,6 @@
 ---
 import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
+import { seoExcursionTitle } from '../lib/seo-page.mjs';
 import ArchiveNotice from '../components/global/ArchiveNotice.astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
@@ -126,7 +127,7 @@ const excursionSchema = {
 <BaseLayout leadTitle={archived ? "Подобрать другую поездку" : `Заказать экскурсию: ${d.title}`} leadEntityId={archived ? "" : d.id}
   headerTheme={archived ? 'dark' : 'light'}
   noindex={archived}
-  title={d.title}
+  title={seoExcursionTitle(d,geography.country.id,d.destination,destinationName)}
   description={d.lead}
   image={d.hero?.src}
   canonical={excursionPath(d)}

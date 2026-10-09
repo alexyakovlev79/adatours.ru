@@ -1,5 +1,6 @@
 ---
 import { isActiveEntity } from '../lib/archive.mjs';
+import { seoDestinationTitle } from '../lib/seo-page.mjs';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
@@ -113,7 +114,7 @@ const destinationSchema = {
 ---
 
 <BaseLayout leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id}
-  title={`${d.name}: туры и экскурсии`}
+  title={seoDestinationTitle(d.name,d.countryId,relatedExcursions.length,allRelatedTourEntries.length)}
   description={d.summary}
   image={d.hero?.src}
   canonical={destinationPath(d)}

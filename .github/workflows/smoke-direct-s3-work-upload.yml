@@ -10,6 +10,7 @@ on:
 permissions:
   contents: read
   id-token: write
+  issues: write
 
 concurrency:
   group: adatours-direct-s3-smoke
@@ -27,6 +28,7 @@ jobs:
         with:
           node-version: 24
       - name: Simulate ChatGPT Work key generation, encrypted exchange, direct upload
+        id: direct_upload
         shell: bash
         run: |
           set -euo pipefail
@@ -81,3 +83,19 @@ jobs:
               process.exit(1);
             console.log("Verified direct S3 upload without Git binary: "+receipt.assets[0].key);
           ' "$dir/receipt.json"
+
+      - name: Record smoke result for handoff
+        if: always()
+        continue-on-error: true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SMOKE_OUTCOME: ${{ steps.direct_upload.outcome }}
+        run: |
+          if [[ "$SMOKE_OUTCOME" == "success" ]]; then
+            summary="PASS: direct keyless S3 upload, HTTPS readback and SHA-256 verification"
+          else
+            summary="FAIL: direct S3 smoke test ($SMOKE_OUTCOME)"
+          fi
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/issues/17/comments" \
+            -f body="Automated S3 smoke result: **${summary}**. Run: https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"

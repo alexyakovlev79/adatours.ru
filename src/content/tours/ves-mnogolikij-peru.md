@@ -103,9 +103,7 @@ itinerary:
 
     Дополнительно можно посетить кафедральный собор Куско перед обзорной экскурсией. Продолжительность около 40 минут, стоимость $25.
   images:
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: 'на фото: город Куско в Перу'
-  - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
+  - src: /media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp
     alt: 'на фото: город Лима, столица Перу'
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
@@ -129,8 +127,6 @@ itinerary:
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-14-enhanced-20261006.webp
     alt: 'на фото: Мачу Пикчу в Перу'
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: 'на фото: город Куско в Перу'
 - day: 5
   title: Куско - Священная долина
   places:
@@ -175,8 +171,8 @@ itinerary:
 
     Доплата за поезд - $250 на человека.
   images:
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: 'на фото: город Куско в Перу'
+  - src: /media/destinations/cusco/hero-enhanced-20260930.webp
+    alt: Куско, Перу
 - day: 7
   title: Пуно - озеро Титикака
   places:
@@ -214,6 +210,9 @@ itinerary:
     Прибытие в Чивай и размещение в гостинице Colca Llacta 3*. По желанию можно посетить горячие источники.
 
     Время для обеда.
+  images:
+  - src: /media/countries/peru/featureBands-3-image-enhanced-20261001.webp
+    alt: 'На фото: город Пуно в Перу и озеро Титикака'
 - day: 9
   title: Колка - Арекипа
   places:
@@ -253,10 +252,8 @@ itinerary:
 
     В назначенное время трансфер в аэропорт и перелет в Лиму. По прибытии встреча, трансфер и размещение в гостинице.
   images:
-  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: 'на фото: город Лима, столица Перу'
-  - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3-enhanced-20261001.webp
-    alt: 'на фото: Белый город Арекипа в Перу'
+  - src: /media/destinations/lima/hero-enhanced-20260930.webp
+    alt: Лима, столица Перу
 - day: 11
   title: Лима
   places:
@@ -291,8 +288,8 @@ itinerary:
 
     При музее работает ресторан национальной кухни Café del Muzeo.
   images:
-  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
-    alt: 'на фото: город Лима, столица Перу'
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: Лима — Перу
 included:
 - Внутренние авиаперелеты Лима - Куско и Арекипа - Лима
 - Включенное питание

@@ -84,8 +84,8 @@ itinerary:
 
     После вечерней программы возвращение в отель.
   images:
-  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: 'на фото: Ночная Лима в Перу'
+  - src: /media/destinations/lima/hero-enhanced-20260930.webp
+    alt: Лима, столица Перу
 - day: 3
   title: Лима - Куско
   places:
@@ -110,10 +110,8 @@ itinerary:
 
     **Дополнительно:** посещение Кафедрального собора Куско перед основной экскурсией, около **40 минут**, доплата **$25**.
   images:
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
+  - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp
     alt: 'на фото: Куско в Перу'
-  - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
-    alt: 'на фото: Лима, столица Перу'
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
 - day: 4
@@ -136,9 +134,7 @@ itinerary:
 
     После обеда возвращение на станцию, поезд обратно и трансфер в гостиницу в Куско.
   images:
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Куско в Перу'
-  - src: "/media/tours/ves-mnogolikij-peru-i-senor-sipan/itinerary-4-images-1-src-enhanced-20261007.webp"
+  - src: /media/tours/ves-mnogolikij-peru-i-senor-sipan/itinerary-4-images-1-src-enhanced-20261007.webp
     alt: 'на фото: Мачу Пикчу в Перу'
 - day: 5
   title: Священная долина
@@ -164,6 +160,9 @@ itinerary:
     Обед проходит в ресторане национальной кухни **Inka House**, формат шведского стола.
 
     После экскурсии возвращение в гостиницу.
+  images:
+  - src: /media/tours/manyashchij-peru-kolumbiya/sacred-valley-place-generated-20261009-v1.webp
+    alt: Священная долина инков
 - day: 6
   title: Куско - Пуно
   places:
@@ -200,10 +199,8 @@ itinerary:
 
       **Доплата:** $250 с человека.
   images:
-  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
-    alt: 'на фото: Пуно в Перу'
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Куско в Перу'
+  - src: /media/destinations/cusco/hero-enhanced-20260930.webp
+    alt: Куско, Перу
 - day: 7
   title: Пуно и озеро Титикака
   places:
@@ -246,8 +243,6 @@ itinerary:
   images:
   - src: /media/destinations/isla-del-sol/hero-enhanced-20261003.webp
     alt: 'на фото: Каньон Колка в Перу'
-  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
-    alt: 'на фото: Пуно в Перу'
 - day: 9
   title: Колка - Арекипа
   places:
@@ -265,10 +260,8 @@ itinerary:
 
     Прибытие в Арекипу, размещение в гостинице 3*. Свободное время.
   images:
-  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-2-src-enhanced-20261007.webp"
+  - src: /media/excursions/arekipa-tur-v-belom-gorode/gallery-2-src-enhanced-20261007.webp
     alt: 'на фото: Арекипа, белый город в Перу'
-  - src: /media/destinations/isla-del-sol/hero-enhanced-20261003.webp
-    alt: 'на фото: Каньон Колка в Перу'
 - day: 10
   title: Арекипа - Лима
   places:
@@ -291,10 +284,8 @@ itinerary:
 
     По прилете встреча, трансфер и размещение в гостинице.
   images:
-  - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
-    alt: 'на фото: Лима, столица Перу'
-  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-2-src-enhanced-20261007.webp"
-    alt: 'на фото: Арекипа, белый город в Перу'
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: Лима — Перу
 - day: 11
   title: Лима. Свободный день
   places:
@@ -306,8 +297,8 @@ itinerary:
 
     По желанию
   images:
-  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
-    alt: 'на фото: Тихоокеанское побережье Лимы в Перу'
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
+    alt: Лима
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []
 - day: 12
@@ -335,9 +326,7 @@ itinerary:
 
     Размещение в отеле **Costa del Sol 4*** или гостинице той же категории.
   images:
-  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: 'на фото: Ночная Лима в Перу'
-  - src: "/media/tours/ves-mnogolikij-peru-i-senor-sipan/itinerary-13-images-1-src-enhanced-20261007.webp"
+  - src: /media/tours/ves-mnogolikij-peru-i-senor-sipan/itinerary-13-images-1-src-enhanced-20261007.webp
     alt: 'на фото: город Трухильо  в Перу'
 - day: 13
   title: Чиклайо и Сеньор Сипан - Лима

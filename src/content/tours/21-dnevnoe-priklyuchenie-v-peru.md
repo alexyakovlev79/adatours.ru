@@ -81,8 +81,6 @@ itinerary:
   images:
   - src: /media/tours/peru-8d/itinerary/day-07-enhanced-20261001.webp
     alt: 'на фото: Паракас'
-  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
-    alt: 'на фото: Лима'
 - day: 4
   title: Ика - Наска
   places:
@@ -111,10 +109,8 @@ itinerary:
 
     После полета поездка на автобусе в Арекипу. Дорога занимает около 9 часов. По пути пейзажи постепенно меняются, а к вечеру вы прибываете в колониальный город, окруженный горами.
   images:
-  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-0-src-enhanced-20261007.webp"
+  - src: /media/excursions/arekipa-tur-v-belom-gorode/gallery-0-src-enhanced-20261007.webp
     alt: 'на фото: Арекипа'
-  - src: /media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261005.webp
-    alt: 'на фото: Линии Наска'
 - day: 6
   title: Арекипа
   places:
@@ -206,8 +202,8 @@ itinerary:
 
     Затем программа продолжается у археологических памятников вокруг города. Саксайуаман известен огромными каменными блоками, подогнанными друг к другу без раствора. Кенко связывают с церемониями, ритуалами и возможными астрономическими наблюдениями. Тамбомачай известен системой источников и почитанием воды.
   images:
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: 'на фото: Куско'
+  - src: /media/destinations/cusco/hero-enhanced-20260930.webp
+    alt: Куско, Перу
 - day: 12
   title: Куско - Морай - Марас - Салинас - Священная долина
   places:
@@ -226,8 +222,8 @@ itinerary:
 
     Ночь в Священной долине.
   images:
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: 'на фото: Куско'
+  - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
+    alt: Куско
 - day: 13
   title: Священная долина - Ольянтайтамбо - Агуас-Кальентес
   places:
@@ -261,8 +257,6 @@ itinerary:
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-14-enhanced-20261006.webp
     alt: 'на фото: Мачу Пикчу'
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: 'на фото: Куско'
 - day: 15
   title: Куско - Пуэрто-Мальдонадо
   places:
@@ -275,10 +269,8 @@ itinerary:
 
     После ужина ночная прогулка с гидом. В темное время суток тропический лес меняется: активными становятся насекомые, амфибии и ночные животные. Во время прогулки можно увидеть часть этой ночной жизни в естественной среде.
   images:
-  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-14-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Пуэрто Мальдонадо'
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
-    alt: 'на фото: Куско'
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
+    alt: Город Куско, Перу - древняя столица империи инков
 - day: 16
   title: Пуэрто-Мальдонадо
   places:
@@ -323,8 +315,8 @@ itinerary:
 
     После возвращения в лодж ужин. Вечером возможно местное выступление или рассказы о мифах и легендах Амазонии.
   images:
-  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-15-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Пуэрто Мальдонадо'
+  - src: /media/destinations/puerto-maldonado/puerto-maldonado-place-generated-20261009-v1.webp
+    alt: Речной причал Пуэрто-Мальдонадо у тропического леса
 - day: 19
   title: Пуэрто-Мальдонадо - Лима
   places:
@@ -339,18 +331,16 @@ itinerary:
 
     По прибытии встреча с водителем и трансфер в отель.
   images:
-  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
-    alt: 'на фото: Лима'
-  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-14-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Пуэрто Мальдонадо'
+  - src: /media/destinations/lima/hero-enhanced-20260930.webp
+    alt: Лима, столица Перу
 - day: 20
   title: Лима
   places:
   - Лима
   text: Свободный день в Лиме.
   images:
-  - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
-    alt: 'на фото: Лима'
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: Лима — Перу
 - day: 21
   title: Лима
   places:
@@ -360,8 +350,8 @@ itinerary:
 
     Обратный рейс домой.
   images:
-  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
-    alt: 'на фото: Лима'
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
+    alt: Лима
 included:
 - Проживание в отелях 4 звезды с завтраками.
 - Групповые экскурсии и трансферы.

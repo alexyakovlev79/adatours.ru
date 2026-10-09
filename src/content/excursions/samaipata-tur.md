@@ -23,8 +23,6 @@ hero:
 gallery:
   - src: /media/excursions/samaipata-tur/gallery-0-src-enhanced-20261008.webp
     alt: Самаипата в предгорьях Анд
-  - src: /media/excursions/samaipata-tur/gallery-1-src-enhanced-20261008.webp
-    alt: Пейзаж Самаипаты в Боливии
 route:
   - Санта-Крус
   - Самаипата

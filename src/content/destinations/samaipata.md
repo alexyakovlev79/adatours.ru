@@ -16,8 +16,6 @@ hero:
 gallery:
   - src: /media/excursions/samaipata-tur/hero-src-enhanced-20261008.webp
     alt: Фуэрте-де-Самайпата в Боливии
-  - src: /media/excursions/samaipata-tur/gallery-1-src-enhanced-20261008.webp
-    alt: Пейзаж Самаипаты в Боливии
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -232,7 +232,7 @@ itinerary:
 
     Затем вы вернетесь в **Refúgio Nunatak** в долине Tierra Mayor. Пока готовится барбекю, останется время пройтись по окрестностям. После обеда возвращение в Ушуайю.'
   images:
-  - src: /media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-02.jpg
+  - src: /media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-02-enhanced-20261009-1776-v1.webp
     alt: "Озеро, лес и горы под облачным небом в парке Тьерра-дель-Фуэго, Аргентина"
     hover: "Тьерра-дель-Фуэго: спокойная вода у лесистых гор"
 - day: 10
@@ -253,7 +253,7 @@ itinerary:
 
     Дополнительно предусмотрена возможность полета на вертолете над Ушуайей или заливом Дрейка продолжительностью около **10 минут**.'
   images:
-  - src: /media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-03.jpg
+  - src: /media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-03-enhanced-20261009-5045-v1.webp
     alt: "Деревянный настил через прибрежную растительность в Тьерра-дель-Фуэго, Аргентина"
     hover: "Тьерра-дель-Фуэго: деревянная дорожка ведёт к озеру и горам"
 - excursionRef: excursion_ushuaia_helicopter_flight
@@ -383,7 +383,7 @@ itinerary:
 
     В поселке Умауака можно пройти по старым мощеным улицам и увидеть памятники колониальной эпохи. Поселение находится на берегу реки Гранде.'
   images:
-  - src: /media/destinations/destination_argentina_kebrada_de_umauaka/original-01.jpg
+  - src: /media/destinations/destination_argentina_kebrada_de_umauaka/original-01-enhanced-20261009-5048-v1.webp
     alt: Кебрада-де-Умауака
 - day: 18
   title: Солончаки и возвращение в Сальту
@@ -414,7 +414,7 @@ itinerary:
 
     Вечером возвращение в Сальту.'
   images:
-  - src: /media/destinations/destination_argentina_nacionalnyj_park_los_kardones/original-01.jpg
+  - src: /media/destinations/destination_argentina_nacionalnyj_park_los_kardones/original-01-enhanced-20261009-5049-v1.webp
     alt: Национальный парк Лос-Кардонес
 - day: 20
   title: Сальта - Игуасу

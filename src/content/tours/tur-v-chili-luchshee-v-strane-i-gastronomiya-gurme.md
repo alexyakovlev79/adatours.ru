@@ -166,8 +166,8 @@ itinerary:
 
     **Включено:** входные билеты в парк Торрес-дель-Пайне, навигация и обед.
   images:
-  - src: /media/countries/chile/hero-enhanced-20261002.webp
-    alt: Торрес-дель-Пайне на закате, Патагония, индивидуальный тур в Чили с Ada Tours.
+  - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-07-generated-20261008-v1.webp
+    alt: 'Ледник Грей с воды, Торрес-дель-Пайне, Чили'
 - day: 7
   title: возвращение в Сантьяго и вылет домой
   places:

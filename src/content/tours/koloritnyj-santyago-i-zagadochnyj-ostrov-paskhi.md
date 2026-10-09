@@ -88,8 +88,8 @@ itinerary:
 
     Ночь в отеле.
   images:
-  - src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
-    alt: Колоритный Сантьяго и загадочный остров Пасхи
+  - src: "/media/destinations/ostrov-pashi/gallery-1-enhanced-20261005.webp"
+    alt: 'Остров Пасхи, Чили'
 - day: 4
   title: Остров Пасхи - Рано-Рараку, Тонгарики и Анакена
   places:
@@ -116,8 +116,8 @@ itinerary:
 
     Возвращение в Ханга-Роа через центральную часть острова, затем в отель.
   images:
-  - src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
-    alt: Колоритный Сантьяго и загадочный остров Пасхи
+  - src: "/media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-11-generated-20261008-v1.webp"
+    alt: 'Моаи на склонах каменоломни Рано-Рараку, остров Пасхи, Чили'
 - day: 5
   title: Остров Пасхи - Аху-Акиви, Пуна-Пау и Тахаи - Сантьяго
   places:
@@ -143,8 +143,8 @@ itinerary:
 
     По прибытии трансфер в отель, размещение и ночь в Сантьяго.
   images:
-  - src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
-    alt: Колоритный Сантьяго и загадочный остров Пасхи
+  - src: "/media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-09-generated-20261008-v1.webp"
+    alt: 'Семь моаи на платформе Аху-Акиви, остров Пасхи, Чили'
 - day: 6
   title: Сантьяго - вылет домой
   places:
@@ -154,8 +154,8 @@ itinerary:
 
     Международный вылет домой.
   images:
-  - src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
-    alt: Колоритный Сантьяго и загадочный остров Пасхи
+  - src: "/media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp"
+    alt: 'Сантьяго-де-Чили, столица Чили'
 included:
 - трансферы с водителем;
 - проживание в отелях 4* с завтраками;

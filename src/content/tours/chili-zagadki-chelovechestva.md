@@ -111,8 +111,8 @@ itinerary:
     \nОстается время для прогулки и купания.\n\nВозвращение в поселок Ханга-Роа по дороге через центральную часть острова.\n\
     \n**Продолжительность:** целый день.  \n**Питание:** завтрак и обед, бокс-ланч включен."
   images:
-  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: истуканы острова Пасхи в Чили'
+  - src: "/media/destinations/ostrov-pashi/gallery-1-enhanced-20261005.webp"
+    alt: 'Остров Пасхи, Чили'
 - day: 6
   title: 'Остров Пасхи: Оронго и Рано-Као'
   places:
@@ -125,8 +125,8 @@ itinerary:
     \ собирались весной в каменных домах и ждали прибытия священной птицы Манутара, чтобы выбрать Тангата-Ману, человека-птицу.\n\
     \n**Продолжительность:** около 4 часов.  \n**Питание:** завтрак."
   images:
-  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: истуканы острова Пасхи в Чили'
+  - src: "/media/destinations/ostrov-pashi/gallery-2-enhanced-20261005.webp"
+    alt: 'Остров Пасхи, Чили'
 - day: 7
   title: 'Остров Пасхи: Аху-Акиви и Пуна-Пау'
   places:
@@ -138,8 +138,8 @@ itinerary:
     \ Пуна-Пау, небольшого холма, где добывали красный камень для головных уборов моаи.\n\nЗдесь находится смотровая площадка\
     \ на поселок Ханга-Роа.\n\n**Продолжительность:** около 4 часов.  \n**Питание:** завтрак."
   images:
-  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: истуканы острова Пасхи в Чили'
+  - src: "/media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-09-generated-20261008-v1.webp"
+    alt: 'Семь моаи на платформе Аху-Акиви, остров Пасхи, Чили'
 - day: 8
   title: Остров Пасхи - Сантьяго
   places:
@@ -152,13 +152,14 @@ itinerary:
   images:
   - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-13-enhanced-20261006.webp
     alt: 'На фото: город Сантьяго-де-Чили - столица Чили'
-  - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: истуканы острова Пасхи в Чили'
 - day: 9
   title: Долина Майпо
   places:
   - Долина Майпо
   text: Экскурсия в винную долину Майпо с дегустацией известных чилийских вин.
+  images:
+  - src: "/media/destinations/maipo-valley/hero-generated-20261008.webp"
+    alt: 'Долина Майпо, Чили'
 - day: 10
   title: Сантьяго
   places:

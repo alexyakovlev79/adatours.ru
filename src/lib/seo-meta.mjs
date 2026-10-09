@@ -72,6 +72,12 @@ export function seoFill(template, options = {}) {
   const count=key==="24"?countries:key==="22"?Math.max(0,countries-2):(numbers[cursor++] ?? 0);
   return "\uE000"+count+"\uE001";
  });
+ const hasZeroCount=text.includes('\uE0000\uE001');
+ // Remove zero-valued count and its noun before inflection makes the sentinel a literal "0".
+ // Include preceding "и"/"и еще" so a missing section does not leave an orphan conjunction.
+ if(hasZeroCount) text=text.replace(
+  /(?:\s+и(?:\s+еще)?)?\s*\uE0000\uE001(?:\s+(?:VIP и Luxury|Multi-country|интересных и красивых))?\s+(?:достопримечательност\[ей\]|экскурси\[й\]|экскурсий|тур\[ов\]|туров|маршрутов|стран\[ы\]|странам|стран|мест)/gu,''
+ );
  text=text.replace(
   /\uE000(\d+)\uE001([^\uE000.!?]{0,80}?)(достопримечательност\[ей\]|экскурси\[й\]|экскурсий|тур\[ов\]|туров|маршрутов|стран\[ы\]|странам|стран|мест)/gu,
   (_full,num,before,noun)=>{
@@ -80,12 +86,19 @@ export function seoFill(template, options = {}) {
    return num + before + nounForms[noun][idx];
   }
  );
- text=text.replace(/\uE0000\uE001(?:\s+(?:VIP и Luxury|Multi-country|интересных и красивых))?\s*(?:достопримечательност\[ей\]|экскурси\[й\]|экскурс\[ий\]|экскурсий|тур\[ов\]|туров|маршрутов|стран\[ы\]|странам|стран|мест)/gu,'');
  text=text.replace(/\uE000(\d+)\uE001/g,"$1");
  text=text.replace(/\[2026-2027\]/g,seoYearRange(options.date));
  text=text.replace(/\[страна\]/g,options.country || "");
  text=text.replace(/\[Количество туров с формой слова\]/g,options.tourCountLabel || "");
  text=text.replace(/\[Список популярных стран\]/g,options.popularCountries || "");
  text=text.replace(/\[списку популярных стран\]/g,options.popularCountriesAfterPo || "");
+ if(hasZeroCount) text=text
+  .replace(/(:\s*)и\s+(?=\d+\s)/gu,'$1')
+  .replace(/,\s*(?=[.;!?]|$)/gu,'')
+  .replace(/\s+([,.;:!?])/gu,'$1')
+  .replace(/:\./gu,':')
+  .replace(/ {2,}/gu,' ')
+  .trim();
  return text;
 }
+

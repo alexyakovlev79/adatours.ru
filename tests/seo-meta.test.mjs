@@ -89,3 +89,12 @@ test('directional case overrides for complicated geographical names',()=>{
  assert.equal(seoPlaceDirectionPhrase('', 'Галапагосские острова'),'на Галапагосские острова');
  assert.equal(seoPlaceDirectionPhrase('', 'Остров Пасхи'),'на остров Пасхи');
 });
+
+test('zero counts suppress the complete numbered phrase, not just its marker',()=>{
+ assert.equal(seoFill('[число] тур[ов]',{numbers:[0]}),'');
+ assert.equal(seoFill('Главная: [число] тур[ов] и [число] экскурси[й]',{numbers:[0,2]}),'Главная: 2 экскурсии');
+ assert.equal(seoFill('[число] достопримечательност[ей] и [число] экскурси[й]',{numbers:[2,0]}),'2 достопримечательности');
+ assert.equal(seoFill('Путешествия и [число] тур[ов] в Южную Америку',{numbers:[0]}),'Путешествия в Южную Америку');
+ assert.equal(seoFill('Бразилия, Аргентина и еще [22] стран[ы]',{countries:2}),'Бразилия, Аргентина');
+ assert.ok(!seoFill('[число] VIP и Luxury тур[ов] по Южной Америке',{numbers:[0]}).includes('0'));
+});

@@ -12,18 +12,12 @@ hero:
   src: "/media/destinations/santa-elena-de-uairen/hero-enhanced-20261003.webp"
   alt: "На фото: водопады Гран Сабана Боливар в Венесуэле"
 gallery:
-  - src: "/media/destinations/santa-elena-de-uairen/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-  - src: "/media/destinations/santa-elena-de-uairen/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-  - src: "/media/destinations/santa-elena-de-uairen/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-  - src: "/media/destinations/santa-elena-de-uairen/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-  - src: "/media/destinations/santa-elena-de-uairen/gallery-5-enhanced-20261003.webp"
-    alt: "На фото: Санта Елена де Уайрен в Венесуэле"
-  - src: "/media/destinations/santa-elena-de-uairen/gallery-6-enhanced-20261003.webp"
-    alt: "На фото: Санта Елена де Уайрен в Венесуэле"
+  - {"src":"/media/destinations/santa-elena-de-uairen/gallery-1-enhanced-20261003.webp","alt":"Гамаки под соломенным навесом над водой","hover":"Гамаки под соломенным навесом над водой"}
+  - {"src":"/media/destinations/santa-elena-de-uairen/gallery-2-enhanced-20261003.webp","alt":"Серая птица летит низко над водой","hover":"Серая птица летит низко над водой"}
+  - {"src":"/media/destinations/santa-elena-de-uairen/gallery-3-enhanced-20261003.webp","alt":"Каменная церковь с арками и колокольней, Санта-Елена-де-Уайрен, Венесуэла","hover":"Санта-Елена-де-Уайрен, Венесуэла: каменная церковь с арками и колокольней"}
+  - {"src":"/media/destinations/santa-elena-de-uairen/gallery-4-enhanced-20261003.webp","alt":"Улица с яркими одноэтажными домами, Санта-Елена-де-Уайрен, Венесуэла","hover":"Санта-Елена-де-Уайрен, Венесуэла: улица с яркими одноэтажными домами"}
+  - {"src":"/media/destinations/santa-elena-de-uairen/gallery-5-enhanced-20261003.webp","alt":"Широкая грунтовая улица с пальмами и низкими домами, Санта-Елена-де-Уайрен, Венесуэла","hover":"Санта-Елена-де-Уайрен, Венесуэла: широкая грунтовая улица с пальмами и низкими домами"}
+  - {"src":"/media/destinations/santa-elena-de-uairen/gallery-6-enhanced-20261003.webp","alt":"Каменная церковь с арочными входами у дороги, Санта-Елена-де-Уайрен, Венесуэла","hover":"Санта-Елена-де-Уайрен, Венесуэла: каменная церковь с арочными входами у дороги"}
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

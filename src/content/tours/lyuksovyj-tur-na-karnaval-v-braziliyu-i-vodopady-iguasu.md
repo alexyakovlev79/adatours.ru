@@ -251,8 +251,7 @@ itinerary:
 
     Дополнительно'
   images:
-  - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp
-    alt: VIP экскурсия на приватной лодке Макуко-Сафари к водопадам Игуасу в Бразилии
+  - {"src":"/media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp","alt":"Туристы в моторной лодке у мощных каскадов водопада, Игуасу, Бразилия","hover":"Игуасу, Бразилия: туристы в моторной лодке у мощных каскадов водопада"}
 - excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu

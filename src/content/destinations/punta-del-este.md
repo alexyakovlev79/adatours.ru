@@ -25,10 +25,8 @@ gallery:
 - src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-2-images-0-src-enhanced-20261007.webp
   alt: "Скульптура пальцев Ла-Мано на пляже Пунта-дель-Эсте на закате, Уругвай"
   hover: "Пунта-дель-Эсте: пальцы Ла-Мано на песке в закатном свете"
-- src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-3-images-0-src-enhanced-20261007.webp
-  alt: Белые каситы на пляже Манса в Пунта-дель-Эсте, курортный колорит Уругвая
-- src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: Вид на марину Пунта-дель-Эсте, яхты и залив, панорама Атлантического побережья Уругвая
+- {"src":"/media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-3-images-0-src-enhanced-20261007.webp","alt":"Белые здания с волнистыми стенами на прибрежном склоне, Пунта-дель-Эсте, Уругвай","hover":"Пунта-дель-Эсте, Уругвай: белые здания с волнистыми стенами на прибрежном склоне"}
+- {"src":"/media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-4-images-0-src-enhanced-20261007.webp","alt":"Яхты в бухте на фоне высотных зданий, Пунта-дель-Эсте, Уругвай","hover":"Пунта-дель-Эсте, Уругвай: яхты в бухте на фоне высотных зданий"}
 facts: []
 featureBands: []
 relatedDestinations: []

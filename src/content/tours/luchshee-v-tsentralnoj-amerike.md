@@ -122,8 +122,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+  - {"src":"/media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp","alt":"Старинная церковь с резным белым фасадом на фоне гор, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: старинная церковь с резным белым фасадом на фоне гор"}
 - day: 4
   title: San Juan La Laguna - Santiago Atitlan
   places:
@@ -502,8 +501,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
+  - {"src":"/media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp","alt":"Белка с рыжим брюшком сидит на ветке","hover":"Белка с рыжим брюшком сидит на ветке"}
 - day: 17
   title: Manuel Antonio
   places:
@@ -670,8 +668,7 @@ itinerary:
 
     Завтраки включены.
   images:
-  - src: /media/tours/luchshee-v-tsentralnoj-amerike/playa-blanca-shore-generated-20261009-v1.webp
-    alt: Волны Тихого океана у берега Плайя-Бланки
+  - {"src":"/media/tours/luchshee-v-tsentralnoj-amerike/playa-blanca-shore-generated-20261009-v1.webp","alt":"Небольшая пенная волна на светлом песчаном берегу, Плайя-Бланка, Панама","hover":"Плайя-Бланка, Панама: небольшая пенная волна на светлом песчаном берегу"}
 - day: 24
   title: Panama City
   places:

@@ -15,8 +15,7 @@ gallery:
 - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
   hover: "Мачу-Пикчу: древняя каменная кладка среди гор"
   alt: "Каменные стены Мачу-Пикчу на фоне зелёных горных склонов, Перу"
-- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
-  alt: Город Куско, Перу - древняя столица империи инков
+- {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp","alt":"Старинная церковь и черепичные крыши вокруг площади с высоты, Куско, Перу","hover":"Куско, Перу: старинная церковь и черепичные крыши вокруг площади с высоты"}
 - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp
   hover: "Куско: церковный фасад и цветники у оживлённой площади"
   alt: "Площадь Куско с каменной церковью, цветниками и туристическим автобусом, Перу"

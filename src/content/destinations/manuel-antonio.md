@@ -16,14 +16,10 @@ gallery:
 - src: /media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp
   hover: "Мануэль-Антонио: человек с доской для сёрфинга у лесистого побережья"
   alt: "Сёрфер с доской у волн на пляже Мануэль-Антонио, Коста-Рика"
-- src: /media/destinations/manuel-antonio/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
-- src: /media/destinations/manuel-antonio/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
-- src: /media/destinations/manuel-antonio/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
-- src: /media/destinations/manuel-antonio/gallery-6-enhanced-20261003.webp
-  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+- {"src":"/media/destinations/manuel-antonio/gallery-3-enhanced-20261003.webp","alt":"Красная рыба с жёлтой полосой над кораллами","hover":"Красная рыба с жёлтой полосой над кораллами"}
+- {"src":"/media/destinations/manuel-antonio/gallery-4-enhanced-20261003.webp","alt":"Лесистые мысы и песчаные бухты с высоты, Мануэль Антонио, Коста-Рика","hover":"Мануэль Антонио, Коста-Рика: лесистые мысы и песчаные бухты с высоты"}
+- {"src":"/media/destinations/manuel-antonio/gallery-5-enhanced-20261003.webp","alt":"Всадники на пляже под оранжевым закатным небом, Мануэль Антонио, Коста-Рика","hover":"Мануэль Антонио, Коста-Рика: всадники на пляже под оранжевым закатным небом"}
+- {"src":"/media/destinations/manuel-antonio/gallery-6-enhanced-20261003.webp","alt":"Статуя Христа над ночным Рио-де-Жанейро","hover":"Статуя Христа над ночным Рио-де-Жанейро"}
 - src: /media/tours/panama-kosta-rika-nikaragua/itinerary-5-images-1-src-enhanced-20261007.webp
   alt: "Песчаный перешеек между бухтами Мануэль-Антонио, Коста-Рика"
   hover: "Мануэль-Антонио: лесистый берег и два пляжа у бирюзового моря"

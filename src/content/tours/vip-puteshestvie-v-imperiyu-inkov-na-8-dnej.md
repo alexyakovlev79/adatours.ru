@@ -243,8 +243,7 @@ priceFrom: 8474
 currency: USD
 priceNote: $8474
 hero:
-  src: "/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/hero-src-enhanced-20261007.webp"
-  alt: Люксовый поезд в Мачу-Пикчу «Хирам Бингхэм» (Бельмонд) в Перу
+  {"src":"/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/hero-src-enhanced-20261007.webp","alt":"Пассажирский поезд на фоне гор в закатном свете, Перу","hover":"Перу: пассажирский поезд на фоне гор в закатном свете"}
 routeCountries:
 - country_peru
 routeDestinations:

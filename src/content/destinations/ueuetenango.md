@@ -12,16 +12,11 @@ hero:
   src: "/media/destinations/huehuetenango/hero-enhanced-20261003.webp"
   alt: "На фото: провинция Уэуэтенанго в Гватемале"
 gallery:
-  - src: "/media/destinations/huehuetenango/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: провинция Уэуэтенанго в Гватемале"
-  - src: "/media/destinations/huehuetenango/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: провинция Уэуэтенанго в Гватемале"
-  - src: "/media/destinations/huehuetenango/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: провинция Уэуэтенанго в Гватемале"
-  - src: "/media/destinations/huehuetenango/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: провинция Уэуэтенанго в Гватемале"
-  - src: "/media/destinations/huehuetenango/gallery-5-enhanced-20261003.webp"
-    alt: "На фото: провинция Уэуэтенанго в Гватемале"
+  - {"src":"/media/destinations/huehuetenango/gallery-1-enhanced-20261003.webp","alt":"Каменные ступенчатые руины на фоне гор, Уэуэтенанго, Гватемала","hover":"Уэуэтенанго, Гватемала: каменные ступенчатые руины на фоне гор"}
+  - {"src":"/media/destinations/huehuetenango/gallery-2-enhanced-20261003.webp","alt":"Дети и взрослые на сельской дороге, Уэуэтенанго, Гватемала","hover":"Уэуэтенанго, Гватемала: дети и взрослые на сельской дороге"}
+  - {"src":"/media/destinations/huehuetenango/gallery-3-enhanced-20261003.webp","alt":"Улица с магазинами и пикапами, Уэуэтенанго, Гватемала","hover":"Уэуэтенанго, Гватемала: улица с магазинами и пикапами"}
+  - {"src":"/media/destinations/huehuetenango/gallery-4-enhanced-20261003.webp","alt":"Церковь с колоннами на фоне закатного неба, Уэуэтенанго, Гватемала","hover":"Уэуэтенанго, Гватемала: церковь с колоннами на фоне закатного неба"}
+  - {"src":"/media/destinations/huehuetenango/gallery-5-enhanced-20261003.webp","alt":"Густой зелёный лес на склоне, Уэуэтенанго, Гватемала","hover":"Уэуэтенанго, Гватемала: густой зелёный лес на склоне"}
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

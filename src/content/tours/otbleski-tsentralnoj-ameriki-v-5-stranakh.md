@@ -93,8 +93,7 @@ itinerary:
     \ начинается примерно с 1900 м и продолжается до отметки около 2300 м. После спуска трансфер к озеру Атитлан.\n\n**Ночь:**\
     \ Villa Santa Catarina.  \n**Питание:** завтрак."
   images:
-  - src: /media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+  - {"src":"/media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp","alt":"Старинная церковь с резным белым фасадом на фоне гор, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: старинная церковь с резным белым фасадом на фоне гор"}
 - day: 4
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан
   places:
@@ -272,8 +271,7 @@ itinerary:
     \ священную птицу майя, которая находится на грани исчезновения.\n\n**Ночь:** El Establo Mountain Resort.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
+  - {"src":"/media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp","alt":"Белка с рыжим брюшком сидит на ветке","hover":"Белка с рыжим брюшком сидит на ветке"}
 - day: 16
   title: Монтеверде - Ареналь
   places:

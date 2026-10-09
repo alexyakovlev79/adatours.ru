@@ -501,8 +501,7 @@ itinerary:
 
     Трансфер в аэропорт и регистрация на международный рейс.'
   images:
-  - src: /media/destinations/santyago-de-chili/gallery-3-enhanced-20261006.webp
-    alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+  - {"src":"/media/destinations/santyago-de-chili/gallery-3-enhanced-20261006.webp","alt":"Большая каменная голова перед стеной с надписями, Сантьяго, Чили","hover":"Сантьяго, Чили: большая каменная голова перед стеной с надписями"}
 - excursionRef: excursion_easter_island_anakena_rano_raraku
   places:
   - Остров Пасхи

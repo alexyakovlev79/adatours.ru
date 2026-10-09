@@ -15,16 +15,11 @@ gallery:
 - src: /media/destinations/chichicastenango/gallery-1-enhanced-20261003.webp
   alt: "Стопки ярких полосатых тканей на рынке Чичикастенанго, Гватемала"
   hover: "Рынок Чичикастенанго: разноцветные полосатые ткани"
-- src: /media/destinations/chichicastenango/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: рынок в городе Чичикастенанго в Гватемале'
-- src: /media/destinations/chichicastenango/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: рынок в городе Чичикастенанго в Гватемале'
-- src: /media/destinations/chichicastenango/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: рынок в городе Чичикастенанго в Гватемале'
-- src: /media/destinations/chichicastenango/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: рынок в городе Чичикастенанго в Гватемале'
-- src: /media/destinations/chichicastenango/gallery-6-enhanced-20261003.webp
-  alt: 'На фото: в городе Чичикастенанго в Гватемале'
+- {"src":"/media/destinations/chichicastenango/gallery-2-enhanced-20261003.webp","alt":"Покупатели выбирают круглые сита на рынке, Чичикастенанго, Гватемала","hover":"Чичикастенанго, Гватемала: покупатели выбирают круглые сита на рынке"}
+- {"src":"/media/destinations/chichicastenango/gallery-3-enhanced-20261003.webp","alt":"Расписные деревянные маски на рыночном прилавке, Чичикастенанго, Гватемала","hover":"Чичикастенанго, Гватемала: расписные деревянные маски на рыночном прилавке"}
+- {"src":"/media/destinations/chichicastenango/gallery-4-enhanced-20261003.webp","alt":"Девушка с букетами белых цветов, Чичикастенанго, Гватемала","hover":"Чичикастенанго, Гватемала: девушка с букетами белых цветов"}
+- {"src":"/media/destinations/chichicastenango/gallery-5-enhanced-20261003.webp","alt":"Женщины в пёстрой традиционной одежде на рынке, Чичикастенанго, Гватемала","hover":"Чичикастенанго, Гватемала: женщины в пёстрой традиционной одежде на рынке"}
+- {"src":"/media/destinations/chichicastenango/gallery-6-enhanced-20261003.webp","alt":"Люди в традиционной одежде на ступенях белой церкви, Чичикастенанго, Гватемала","hover":"Чичикастенанго, Гватемала: люди в традиционной одежде на ступенях белой церкви"}
 - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
   hover: "Чичикастенанго: люди и торговые ряды у украшенной белой церкви"
   alt: "Рынок перед белой церковью с цветными украшениями в Чичикастенанго, Гватемала"

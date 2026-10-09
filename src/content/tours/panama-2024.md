@@ -132,8 +132,7 @@ itinerary:
   - Бокете
   text: Завтрак в отеле и трансфер в регион Бокете. По дороге предусмотрена экскурсия в дождевой лес.
   images:
-  - src: /media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Бока-Чика, Панама - элитный пляжный отдых на острове
+  - {"src":"/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-4-images-0-src-enhanced-20261007.webp","alt":"Кокосы и пальмовые листья над бирюзовым морем, Бока-Чика, Панама","hover":"Бока-Чика, Панама: кокосы и пальмовые листья над бирюзовым морем"}
 - day: 10
   title: Вулкан Бару
   places:

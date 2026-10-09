@@ -494,8 +494,7 @@ itinerary:
 
     После экскурсии трансфер в аэропорт, перелет в Лиму и трансфер в отель.'
   images:
-  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: "Город Куско, Перу - древняя столица империи инков"
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp","alt":"Старинная церковь и черепичные крыши вокруг площади с высоты, Куско, Перу","hover":"Куско, Перу: старинная церковь и черепичные крыши вокруг площади с высоты"}
 - day: 19
   title: 17 января. Лима
   places:

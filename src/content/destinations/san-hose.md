@@ -16,18 +16,12 @@ gallery:
 - src: /media/destinations/san-jose/gallery-2-enhanced-20261004.webp
   hover: "Сан-Хосе: жёлтый фасад со множеством окон и лестницей"
   alt: "Длинное жёлтое здание над каменной лестницей в Сан-Хосе, Коста-Рика"
-- src: /media/destinations/san-jose/gallery-3-enhanced-20261004.webp
-  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
-- src: /media/destinations/san-jose/gallery-4-enhanced-20261004.webp
-  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
-- src: /media/destinations/san-jose/gallery-5-enhanced-20261004.webp
-  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
-- src: /media/destinations/san-jose/gallery-6-enhanced-20261004.webp
-  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
-- src: /media/destinations/san-jose/gallery-7-enhanced-20261004.webp
-  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
-- src: /media/destinations/san-jose/gallery-8-enhanced-20261004.webp
-  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+- {"src":"/media/destinations/san-jose/gallery-3-enhanced-20261004.webp","alt":"Мужчина везёт тележку с металлическими чайниками, Сан-Хосе, Коста-Рика","hover":"Сан-Хосе, Коста-Рика: мужчина везёт тележку с металлическими чайниками"}
+- {"src":"/media/destinations/san-jose/gallery-4-enhanced-20261004.webp","alt":"Широкая лестница, памятник и жёлтое здание, Сан-Хосе, Коста-Рика","hover":"Сан-Хосе, Коста-Рика: широкая лестница, памятник и жёлтое здание"}
+- {"src":"/media/destinations/san-jose/gallery-5-enhanced-20261004.webp","alt":"Деревянный дом с башенкой на перекрёстке, Сан-Хосе, Коста-Рика","hover":"Сан-Хосе, Коста-Рика: деревянный дом с башенкой на перекрёстке"}
+- {"src":"/media/destinations/san-jose/gallery-6-enhanced-20261004.webp","alt":"Коричневая река среди густой тропической зелени, Коста-Рика","hover":"Коста-Рика: коричневая река среди густой тропической зелени"}
+- {"src":"/media/destinations/san-jose/gallery-7-enhanced-20261004.webp","alt":"Зелёная ящерица с гребнем и голубыми пятнами","hover":"Зелёная ящерица с гребнем и голубыми пятнами"}
+- {"src":"/media/destinations/san-jose/gallery-8-enhanced-20261004.webp","alt":"Красный попугай касается клювом козырька мужчины","hover":"Красный попугай касается клювом козырька мужчины"}
 - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
   hover: "Сан-Хосе: вечерняя подсветка фасада и фонтан на площади"
   alt: "Освещённое историческое здание за фонтаном вечером в Сан-Хосе, Коста-Рика"

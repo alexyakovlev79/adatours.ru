@@ -12,8 +12,7 @@ hero:
   src: /media/destinations/punta-gorda/hero-enhanced-20261002.webp
   alt: 'На фото: Пунта Горда в Белизе на Карибском море'
 gallery:
-- src: /media/destinations/punta-gorda/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: Пунта Горда в Белизе на Карибском море'
+- {"src":"/media/destinations/punta-gorda/gallery-1-enhanced-20261002.webp","alt":"Мягкая волна на песчаном берегу в закатном свете, Пунта-Горда, Белиз","hover":"Пунта-Горда, Белиз: мягкая волна на песчаном берегу в закатном свете"}
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

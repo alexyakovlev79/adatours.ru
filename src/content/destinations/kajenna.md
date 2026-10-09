@@ -12,14 +12,10 @@ hero:
   src: /media/countries/french-guiana/featureBands-1-enhanced-20261002.webp
   alt: "На фото: столица Французской Гвианы. город Кайенна"
 gallery:
-  - src: "/media/destinations/kajenna/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: столица Французской Гвианы. город Кайенна"
-  - src: "/media/destinations/kajenna/gallery-2-enhanced-20261005.webp"
-    alt: "На фото: столица Французской Гвианы. город Кайенна"
-  - src: "/media/destinations/kajenna/gallery-3-enhanced-20261005.webp"
-    alt: "На фото: столица Французской Гвианы. город Кайенна"
-  - src: "/media/destinations/kajenna/gallery-4-enhanced-20261005.webp"
-    alt: "Цветок лотоса во Французской Гвиане"
+  - {"src":"/media/destinations/kajenna/gallery-1-enhanced-20261005.webp","alt":"Музыканты с красными барабанами у старой стены, Кайенна, Французская Гвиана","hover":"Кайенна, Французская Гвиана: музыканты с красными барабанами у старой стены"}
+  - {"src":"/media/destinations/kajenna/gallery-2-enhanced-20261005.webp","alt":"Площадь с пальмами и высоким прямоугольным памятником, Кайенна, Французская Гвиана","hover":"Кайенна, Французская Гвиана: площадь с пальмами и высоким прямоугольным памятником"}
+  - {"src":"/media/destinations/kajenna/gallery-3-enhanced-20261005.webp","alt":"Старинный обветшавший дом рядом с деревом и фургоном, Кайенна, Французская Гвиана","hover":"Кайенна, Французская Гвиана: старинный обветшавший дом рядом с деревом и фургоном"}
+  - {"src":"/media/destinations/kajenna/gallery-4-enhanced-20261005.webp","alt":"Фиолетовый водный цветок с жёлтой серединой, Французская Гвиана","hover":"Французская Гвиана: фиолетовый водный цветок с жёлтой серединой"}
 facts: []
 featureBands: []
 relatedDestinations: []

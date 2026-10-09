@@ -11,14 +11,10 @@ hero:
   src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-1-generated-20261009-v1.webp
   alt: Песчаный пляж на Тихоокеанском побережье Коста-Рики
 gallery:
-- src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-2-generated-20261009-v1.webp
-  alt: Вечерний прибой на Тихоокеанском побережье Коста-Рики
-- src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-3-generated-20261009-v1.webp
-  alt: Тропические деревья над тихоокеанским пляжем Коста-Рики
-- src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-4-generated-20261009-v1.webp
-  alt: Скалистый участок тихоокеанского берега Коста-Рики
-- src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-5-generated-20261009-v1.webp
-  alt: Тихоокеанская бухта Коста-Рики среди тропической зелени
+- {"src":"/media/tours/3-vzglyada-na-kosta-riku/pacific-coast-2-generated-20261009-v1.webp","alt":"Оранжевый закат над прибоем и песчаным пляжем, Тихоокеанское побережье Коста-Рики","hover":"Тихоокеанское побережье Коста-Рики: оранжевый закат над прибоем и песчаным пляжем"}
+- {"src":"/media/tours/3-vzglyada-na-kosta-riku/pacific-coast-3-generated-20261009-v1.webp","alt":"Тенистые деревья над песчаным пляжем и синим океаном, Тихоокеанское побережье Коста-Рики","hover":"Тихоокеанское побережье Коста-Рики: тенистые деревья над песчаным пляжем и синим океаном"}
+- {"src":"/media/tours/3-vzglyada-na-kosta-riku/pacific-coast-4-generated-20261009-v1.webp","alt":"Волны и скалы на пляже у лесистого мыса в закатном свете, Тихоокеанское побережье Коста-Рики","hover":"Тихоокеанское побережье Коста-Рики: волны и скалы на пляже у лесистого мыса в закатном свете"}
+- {"src":"/media/tours/3-vzglyada-na-kosta-riku/pacific-coast-5-generated-20261009-v1.webp","alt":"Полукруглая песчаная бухта среди зелёных холмов, Тихоокеанское побережье Коста-Рики","hover":"Тихоокеанское побережье Коста-Рики: полукруглая песчаная бухта среди зелёных холмов"}
 themes:
 - theme_beach
 - theme_fishing

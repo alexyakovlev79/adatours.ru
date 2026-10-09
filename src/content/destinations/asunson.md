@@ -19,10 +19,8 @@ gallery:
 - src: /media/destinations/asuncion/gallery-3-enhanced-20261005.webp
   alt: "Белая церковь с остроконечными башнями за оградой в Асунсьоне, Парагвай"
   hover: "Асунсьон: светлые шпили церкви среди деревьев"
-- src: /media/destinations/asuncion/gallery-4-enhanced-20261005.webp
-  alt: 'На фото: город Асунсьон - столица Парагвая'
-- src: /media/destinations/asuncion/gallery-5-enhanced-20261005.webp
-  alt: 'На фото: город Асунсьон - столица Парагвая'
+- {"src":"/media/destinations/asuncion/gallery-4-enhanced-20261005.webp","alt":"Жёлтые стены памятника с рельефами и статуей, Асунсьон, Парагвай","hover":"Асунсьон, Парагвай: жёлтые стены памятника с рельефами и статуей"}
+- {"src":"/media/destinations/asuncion/gallery-5-enhanced-20261005.webp","alt":"Купол кирпичной церкви среди пальм, Асунсьон, Парагвай","hover":"Асунсьон, Парагвай: купол кирпичной церкви среди пальм"}
 - src: /media/excursions/siti-tur-v-asunsone/gallery-1-src-enhanced-20261007.webp
   hover: "Асунсьон: огни городских улиц на фоне оранжевого неба"
   alt: "Высотные здания и освещённые улицы Асунсьона под оранжевым небом, Парагвай"

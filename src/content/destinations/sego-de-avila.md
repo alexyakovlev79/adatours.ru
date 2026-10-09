@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Город и одноименная провинция находятся в центральной части Кубы. На островах у северного побережья устроены пляжные курорты, а в городе можно увидеть театр «Принсипаль» и Кафедральный собор."
 searchAliases: []
 hero: {"src":"/media/destinations/ciego-de-avila/hero-enhanced-20261004.webp","alt":"На фото: пляж Кайо Коко на острове Куба"}
-gallery: [{"src":"/media/destinations/ciego-de-avila/gallery-1-enhanced-20261004.webp","alt":"На фото: провинция Сьего де Авила на острове Куба"},{"src":"/media/destinations/ciego-de-avila/gallery-2-enhanced-20261004.webp","alt":"На фото: провинция Сьего де Авила на острове Куба"},{"src":"/media/destinations/ciego-de-avila/gallery-3-enhanced-20261004.webp","alt":"На фото: провинция Сьего де Авила на острове Куба"}]
+gallery: [{"src":"/media/destinations/ciego-de-avila/gallery-1-enhanced-20261004.webp","alt":"Площадь с белым памятником, пальмами и прохожими, Сьего-де-Авила, Куба","hover":"Сьего-де-Авила, Куба: площадь с белым памятником, пальмами и прохожими"},{"src":"/media/destinations/ciego-de-avila/gallery-2-enhanced-20261004.webp","alt":"Жёлтое здание с двумя ярусами аркад на мокрой улице, Сьего-де-Авила, Куба","hover":"Сьего-де-Авила, Куба: жёлтое здание с двумя ярусами аркад на мокрой улице"},{"src":"/media/destinations/ciego-de-avila/gallery-3-enhanced-20261004.webp","alt":"Конная повозка и велосипедисты у светлого здания, Сьего-де-Авила, Куба","hover":"Сьего-де-Авила, Куба: конная повозка и велосипедисты у светлого здания"}]
 facts: []
 featureBands: []
 relatedDestinations: []

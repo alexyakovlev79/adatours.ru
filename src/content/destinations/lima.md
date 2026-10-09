@@ -23,8 +23,7 @@ gallery:
 - src: /media/tours/manyashchij-peru-kolumbiya/itinerary-day-3-images-1-enhanced-20261007.webp
   hover: "Лима: исторические здания с тёмными балконами, пальмы и цветники"
   alt: "Жёлтые фасады с балконами у зелёной площади Лимы, Перу"
-- src: /media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Лима - столица Перу, вид с берега
+- {"src":"/media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp","alt":"Парапланы над зелёной прибрежной полосой и океаном, Лима, Перу","hover":"Лима, Перу: парапланы над зелёной прибрежной полосой и океаном"}
 - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
   hover: "Лима: струи фонтана и подсвеченные башни собора"
   alt: "Освещённый фонтан перед собором Лимы ночью, Перу"

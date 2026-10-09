@@ -18,20 +18,13 @@ gallery:
 - src: /media/destinations/santyago-de-chili/gallery-2-enhanced-20261006.webp
   hover: "Горное озеро с каменистым берегом и снегом на высоких вершинах"
   alt: "Голубое озеро у каменистого берега среди гор со снежными вершинами"
-- src: /media/destinations/santyago-de-chili/gallery-3-enhanced-20261006.webp
-  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
-- src: /media/destinations/santyago-de-chili/gallery-4-enhanced-20261006.webp
-  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
-- src: /media/destinations/santyago-de-chili/gallery-5-enhanced-20261006.webp
-  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
-- src: /media/destinations/santyago-de-chili/gallery-6-enhanced-20261006.webp
-  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
-- src: /media/destinations/santyago-de-chili/gallery-7-enhanced-20261006.webp
-  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
-- src: /media/destinations/santyago-de-chili/gallery-8-enhanced-20261006.webp
-  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
-- src: /media/destinations/santyago-de-chili/gallery-9-enhanced-20261006.webp
-  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+- {"src":"/media/destinations/santyago-de-chili/gallery-3-enhanced-20261006.webp","alt":"Большая каменная голова перед стеной с надписями, Сантьяго, Чили","hover":"Сантьяго, Чили: большая каменная голова перед стеной с надписями"}
+- {"src":"/media/destinations/santyago-de-chili/gallery-4-enhanced-20261006.webp","alt":"Театральный зал с золотистыми балконами, люстрой и росписью потолка, Сантьяго, Чили","hover":"Сантьяго, Чили: театральный зал с золотистыми балконами, люстрой и росписью потолка"}
+- {"src":"/media/destinations/santyago-de-chili/gallery-5-enhanced-20261006.webp","alt":"Крутая городская улица спускается к морской бухте, Чили","hover":"Чили: крутая городская улица спускается к морской бухте"}
+- {"src":"/media/destinations/santyago-de-chili/gallery-6-enhanced-20261006.webp","alt":"Граммофонная пластинка и металлический звукосниматель крупным планом","hover":"Граммофонная пластинка и металлический звукосниматель крупным планом"}
+- {"src":"/media/destinations/santyago-de-chili/gallery-7-enhanced-20261006.webp","alt":"Поезд на станции метро, Сантьяго, Чили","hover":"Сантьяго, Чили: поезд на станции метро"}
+- {"src":"/media/destinations/santyago-de-chili/gallery-8-enhanced-20261006.webp","alt":"Два всадника на сухом горном склоне, Чили","hover":"Чили: два всадника на сухом горном склоне"}
+- {"src":"/media/destinations/santyago-de-chili/gallery-9-enhanced-20261006.webp","alt":"Кабинки канатной дороги на фоне города и заснеженных гор, Сантьяго, Чили","hover":"Сантьяго, Чили: кабинки канатной дороги на фоне города и заснеженных гор"}
 - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
   hover: "Сантьяго: кабины канатной дороги на фоне высотных зданий и гор"
   alt: "Красная и синяя кабины канатной дороги над городом Сантьяго, Чили"

@@ -12,8 +12,7 @@ hero:
   src: /media/destinations/korojko/hero-enhanced-20261002.webp
   alt: 'На фото: Коройко в Боливии (Дорога Смерти)'
 gallery:
-- src: /media/destinations/korojko/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: Коройко в Боливии (Дорога Смерти)'
+- {"src":"/media/destinations/korojko/gallery-1-enhanced-20261002.webp","alt":"Путник с рюкзаком на каменистой тропе в горной долине","hover":"Путник с рюкзаком на каменистой тропе в горной долине"}
 - src: /media/destinations/korojko/gallery-2-enhanced-20261003.webp
   alt: "Дома Коройко на зелёном горном склоне в вечернем свете, Боливия"
   hover: "Коройко: разноцветные дома на фоне гор"

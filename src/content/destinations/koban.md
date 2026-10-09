@@ -12,14 +12,10 @@ hero:
   src: "/media/destinations/coban/hero-enhanced-20261003.webp"
   alt: "На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале"
 gallery:
-  - src: "/media/destinations/coban/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале"
-  - src: "/media/destinations/coban/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале"
-  - src: "/media/destinations/coban/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале"
-  - src: "/media/destinations/coban/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале"
+  - {"src":"/media/destinations/coban/gallery-1-enhanced-20261003.webp","alt":"Веранда с красными опорами среди цветов и зелени, Альта-Верапас, Гватемала","hover":"Альта-Верапас, Гватемала: веранда с красными опорами среди цветов и зелени"}
+  - {"src":"/media/destinations/coban/gallery-2-enhanced-20261003.webp","alt":"Поток воды падает в тёмный скальный проём, Альта-Верапас, Гватемала","hover":"Альта-Верапас, Гватемала: поток воды падает в тёмный скальный проём"}
+  - {"src":"/media/destinations/coban/gallery-3-enhanced-20261003.webp","alt":"Разноцветные надгробия на кладбище среди зелёных холмов, Альта-Верапас, Гватемала","hover":"Альта-Верапас, Гватемала: разноцветные надгробия на кладбище среди зелёных холмов"}
+  - {"src":"/media/destinations/coban/gallery-4-enhanced-20261003.webp","alt":"Река и густой зелёный лес у гор, Альта-Верапас, Гватемала","hover":"Альта-Верапас, Гватемала: река и густой зелёный лес у гор"}
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

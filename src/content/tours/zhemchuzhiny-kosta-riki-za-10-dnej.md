@@ -79,8 +79,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: /media/destinations/tortuguero/gallery-1-enhanced-20261004.webp
-    alt: 'На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике'
+  - {"src":"/media/destinations/tortuguero/gallery-1-enhanced-20261004.webp","alt":"Три морские черепахи на песчаном пляже, Тортугуэро, Коста-Рика","hover":"Тортугуэро, Коста-Рика: три морские черепахи на песчаном пляже"}
 - day: 4
   title: Тортугеро - Ареналь
   places:
@@ -152,8 +151,7 @@ itinerary:
 
     Питание: завтрак, обед.
   images:
-  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
+  - {"src":"/media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp","alt":"Белка с рыжим брюшком сидит на ветке","hover":"Белка с рыжим брюшком сидит на ветке"}
 - day: 8
   title: Мануэль-Антонио
   places:

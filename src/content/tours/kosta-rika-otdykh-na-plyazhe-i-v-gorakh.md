@@ -204,8 +204,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
+  - {"src":"/media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp","alt":"Белка с рыжим брюшком сидит на ветке","hover":"Белка с рыжим брюшком сидит на ветке"}
 - day: 8
   title: Северное Тихоокеанское побережье
   places: []
@@ -218,8 +217,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-2-generated-20261009-v1.webp
-    alt: Вечерний прибой на Тихоокеанском побережье Коста-Рики
+  - {"src":"/media/tours/3-vzglyada-na-kosta-riku/pacific-coast-2-generated-20261009-v1.webp","alt":"Оранжевый закат над прибоем и песчаным пляжем, Тихоокеанское побережье Коста-Рики","hover":"Тихоокеанское побережье Коста-Рики: оранжевый закат над прибоем и песчаным пляжем"}
 - day: 9
   title: Либерия
   places:
@@ -231,8 +229,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/destinations/liberia/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
+  - {"src":"/media/destinations/liberia/gallery-1-enhanced-20261003.webp","alt":"Здания курорта и бассейн на зелёном склоне над морем, Гуанакасте, Коста-Рика","hover":"Гуанакасте, Коста-Рика: здания курорта и бассейн на зелёном склоне над морем"}
 included:
 - Трансферы.
 - Входные билеты.

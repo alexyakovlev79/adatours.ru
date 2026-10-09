@@ -258,8 +258,7 @@ itinerary:
 
     Это время оставлено для отдыха у лагуны после насыщенного маршрута по Коста-Рике и экскурсионного дня в Никарагуа.
   images:
-  - src: /media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-shore-generated-20261009-v1.webp
-    alt: Лесистый берег и прозрачная вода лагуны Апойо
+  - {"src":"/media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-shore-generated-20261009-v1.webp","alt":"Прозрачная вода у галечного берега и лесистые склоны, Лагуна Апойо, Никарагуа","hover":"Лагуна Апойо, Никарагуа: прозрачная вода у галечного берега и лесистые склоны"}
 - day: 11
   title: Отдых у лагуны-де-Апойо
   places:
@@ -269,8 +268,7 @@ itinerary:
 
     Это время оставлено для отдыха у лагуны после насыщенного маршрута по Коста-Рике и экскурсионного дня в Никарагуа.
   images:
-  - src: /media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-panorama-generated-20261009-v1.webp
-    alt: Панорама лагуны Апойо с лесистого склона кратера
+  - {"src":"/media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-panorama-generated-20261009-v1.webp","alt":"Синее кратерное озеро среди лесистых склонов, Лагуна Апойо, Никарагуа","hover":"Лагуна Апойо, Никарагуа: синее кратерное озеро среди лесистых склонов"}
 - day: 12
   title: Частный перелет в Сан-Хосе и вылет домой
   places:

@@ -14,10 +14,8 @@ gallery:
 - src: /media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp
   hover: "Колумбия: бирюзовая вода перед островным берегом с деревьями"
   alt: "Прозрачное бирюзовое море у низкого островного берега, Колумбия"
-- src: /media/tours/manyashchaya-kolumbiya-baru/baru-beach-generated-20261009-v1.webp
-  alt: Песчаный карибский берег острова Бару
-- src: /media/tours/manyashchaya-kolumbiya-baru/baru-water-generated-20261009-v1.webp
-  alt: Карибская вода у песчаного берега острова Бару
+- {"src":"/media/tours/manyashchaya-kolumbiya-baru/baru-beach-generated-20261009-v1.webp","alt":"Пальмы вдоль песчаного берега с бирюзовым прибоем, Остров Бару, Колумбия","hover":"Остров Бару, Колумбия: пальмы вдоль песчаного берега с бирюзовым прибоем"}
+- {"src":"/media/tours/manyashchaya-kolumbiya-baru/baru-water-generated-20261009-v1.webp","alt":"Бирюзовая вода у низкого песчаного берега с деревьями, Остров Бару, Колумбия","hover":"Остров Бару, Колумбия: бирюзовая вода у низкого песчаного берега с деревьями"}
 themes:
 - theme_beach
 searchAliases:

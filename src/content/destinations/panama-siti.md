@@ -19,14 +19,10 @@ gallery:
 - src: /media/destinations/panama-city/gallery-3-enhanced-20261005.webp
   alt: "Разноцветные рыболовные лодки у берега Панама-Сити"
   hover: "Панама-Сити: рыболовные лодки на берегу рядом с домами"
-- src: /media/destinations/panama-city/gallery-4-enhanced-20261005.webp
-  alt: 'На фото: столица Панамы, город Панама-Сити'
-- src: /media/destinations/panama-city/gallery-5-enhanced-20261005.webp
-  alt: 'На фото: столица Панамы, город Панама-Сити'
-- src: /media/destinations/panama-city/gallery-6-enhanced-20261005.webp
-  alt: 'На фото: столица Панамы, город Панама-Сити'
-- src: /media/destinations/panama-city/gallery-7-enhanced-20261005.webp
-  alt: 'На фото: столица Панамы, город Панама-Сити'
+- {"src":"/media/destinations/panama-city/gallery-4-enhanced-20261005.webp","alt":"Высотные здания и гавань в сумерках, Панама-Сити, Панама","hover":"Панама-Сити, Панама: высотные здания и гавань в сумерках"}
+- {"src":"/media/destinations/panama-city/gallery-5-enhanced-20261005.webp","alt":"Участницы праздника с цветами в волосах, Панама-Сити, Панама","hover":"Панама-Сити, Панама: участницы праздника с цветами в волосах"}
+- {"src":"/media/destinations/panama-city/gallery-6-enhanced-20261005.webp","alt":"Борт ярко раскрашенного автобуса, Панама-Сити, Панама","hover":"Панама-Сити, Панама: борт ярко раскрашенного автобуса"}
+- {"src":"/media/destinations/panama-city/gallery-7-enhanced-20261005.webp","alt":"Мужчины играют в домино за столом, Панама-Сити, Панама","hover":"Панама-Сити, Панама: мужчины играют в домино за столом"}
 - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
   hover: "Панама-Сити: современная застройка и башня со спиральным фасадом"
   alt: "Высотные здания Панама-Сити с зелёной спиральной башней, Панама"

@@ -15,8 +15,7 @@ gallery:
 - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-04-generated-20261008-next20.webp
   alt: "Каменистая тропа вдоль отвесной стены Рораймы над облаками, Венесуэла"
   hover: "Рорайма: узкая тропа у скальной стены среди облаков"
-- src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-05-generated-20261008-next20.webp
-  alt: Скалы и небольшие водоемы на плато Рораймы, Венесуэла
+- {"src":"/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-05-generated-20261008-next20.webp","alt":"Каменные формы и небольшие водоёмы среди облаков, Плато Рораймы, Венесуэла","hover":"Плато Рораймы, Венесуэла: каменные формы и небольшие водоёмы среди облаков"}
 - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-06-generated-20261008-next20.webp
   alt: "Каменистая река Тек на фоне плоской вершины Рораймы, Венесуэла"
   hover: "Рорайма в Венесуэле: река с камнями перед столовой горой"

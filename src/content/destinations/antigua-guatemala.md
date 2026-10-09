@@ -12,20 +12,13 @@ hero:
   src: "/media/countries/guatemala/featureBands-1-enhanced-20261002.webp"
   alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
 gallery:
-- src: /media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
-- src: /media/destinations/antigua-guatemala/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
-- src: /media/destinations/antigua-guatemala/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
-- src: /media/destinations/antigua-guatemala/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
-- src: /media/destinations/antigua-guatemala/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
-- src: /media/destinations/antigua-guatemala/gallery-6-enhanced-20261003.webp
-  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
-- src: /media/destinations/antigua-guatemala/gallery-7-enhanced-20261003.webp
-  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+- {"src":"/media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp","alt":"Старинная церковь с резным белым фасадом на фоне гор, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: старинная церковь с резным белым фасадом на фоне гор"}
+- {"src":"/media/destinations/antigua-guatemala/gallery-2-enhanced-20261003.webp","alt":"Религиозная процессия на улице среди клубов дыма, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: религиозная процессия на улице среди клубов дыма"}
+- {"src":"/media/destinations/antigua-guatemala/gallery-3-enhanced-20261003.webp","alt":"Каменные руины с низкими арочными проёмами, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: каменные руины с низкими арочными проёмами"}
+- {"src":"/media/destinations/antigua-guatemala/gallery-4-enhanced-20261003.webp","alt":"Мальчики у красной стены, один держит барабан, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: мальчики у красной стены, один держит барабан"}
+- {"src":"/media/destinations/antigua-guatemala/gallery-5-enhanced-20261003.webp","alt":"Пожилой торговец сидит у небольшого прилавка, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: пожилой торговец сидит у небольшого прилавка"}
+- {"src":"/media/destinations/antigua-guatemala/gallery-6-enhanced-20261003.webp","alt":"Жёлтая церковь с куполом за красно-оранжевыми фасадами, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: жёлтая церковь с куполом за красно-оранжевыми фасадами"}
+- {"src":"/media/destinations/antigua-guatemala/gallery-7-enhanced-20261003.webp","alt":"Девушка в ярком полосатом платке перед аркой с часами, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: девушка в ярком полосатом платке перед аркой с часами"}
 - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
   hover: "Антигуа-Гуатемала: арка между цветными фасадами на фоне вулкана"
   alt: "Жёлтая арка с часами на улице Антигуа-Гуатемалы, вулкан на заднем плане, Гватемала"

@@ -61,8 +61,7 @@ itinerary:
 
     Для этого маршрута понадобится одежда для очень разных условий. В Лиме пригодятся легкие вещи и защита от солнца. В Амазонии влажно, одежда быстрее намокает, поэтому нужен запас сменных вещей и закрытая одежда на вечер. Для воды и джунглей удобна легкая обувь с надежной фиксацией. В Куско и Священной долине прохладнее, особенно утром и вечером, поэтому понадобится теплый слой.
   images:
-  - src: "/media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Лима - столица Перу, вид с берега
+  - {"src":"/media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp","alt":"Парапланы над зелёной прибрежной полосой и океаном, Лима, Перу","hover":"Лима, Перу: парапланы над зелёной прибрежной полосой и океаном"}
 - day: 2
   title: 'Лима: Парк Любви, Уака Пукльяна, Санто-Доминго и музей Ларко'
   places:
@@ -117,8 +116,7 @@ itinerary:
 
     День 4 посвящен исследованию джунглей и наблюдению за дикой природой. В день 5 предусмотрены экскурсии на каяках и рыбалка на пираний.
   images:
-  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp"
-    alt: Круиз по Амазонке в Перу (Икитос) с Aqua Expedition
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp","alt":"Палуба речного судна с лежаками под большим белым навесом, Амазонка, Перу","hover":"Амазонка, Перу: палуба речного судна с лежаками под большим белым навесом"}
 - day: 5
   title: Икитос и круиз Aria Amazon по Амазонке
   places:
@@ -168,8 +166,7 @@ itinerary:
   - Священная долина инков
   text: Продолжение программы в Священной долине. В этот день акцент сделан на знакомстве с андскими общинами и местными ремеслами.
   images:
-  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp
-    alt: Традиционный текстиль в мастерской Священной долины инков
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp","alt":"Мастерица ткёт полосатую ткань у окна с видом на горы, Священная долина инков, Перу","hover":"Священная долина инков, Перу: мастерица ткёт полосатую ткань у окна с видом на горы"}
 - day: 9
   title: Мачу-Пикчу на поезде Hiram Bingham
   places:
@@ -201,8 +198,7 @@ itinerary:
 
     После полета возвращение в Куско. Размещение в Belmond Palacio Nazarenas, City View Studio Suite. Ночь в городе.
   images:
-  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Город Куско, Перу - древняя столица империи инков
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp","alt":"Старинная церковь и черепичные крыши вокруг площади с высоты, Куско, Перу","hover":"Куско, Перу: старинная церковь и черепичные крыши вокруг площади с высоты"}
 - day: 11
   title: 'Куско: Саксайуаман, Кенко, Кориканча и собор'
   places:
@@ -263,8 +259,7 @@ itinerary:
 
     Преимущество размещения непосредственно у солончака состоит в возможности выйти на него в часы, когда людей мало, и увидеть пространство без постоянного потока транспорта и групп.
   images:
-  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-13-images-0-src-enhanced-20261007.webp"
-    alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-13-images-0-src-enhanced-20261007.webp","alt":"Высокие кактусы над белой соляной равниной, Уюни, Боливия","hover":"Уюни, Боливия: высокие кактусы над белой соляной равниной"}
 - day: 15
   title: Солончак Уюни, Колчани, «Глаза воды» и Инкауаси
   places:
@@ -282,8 +277,7 @@ itinerary:
 
     К полудню вы доберетесь до острова Инкауаси в центре Уюни. На острове есть известняковые скальные образования, крупные кактусы и местная фауна. С верхней части острова открывается круговой вид на солончак.
   images:
-  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-14-images-0-src-enhanced-20261007.webp"
-    alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-14-images-0-src-enhanced-20261007.webp","alt":"Два человека и облака отражаются в зеркальной воде солончака, Уюни, Боливия","hover":"Уюни, Боливия: два человека и облака отражаются в зеркальной воде солончака"}
 - day: 16
   title: 'Альтиплано: лагуны, фламинго, Оллагуе и Чигуана, опционально'
   places:
@@ -355,8 +349,7 @@ sourceSnapshot: https://drive.google.com/file/d/1ozD7edaQyeLkIvL2bogVR2EoB1OuOYA
 durationDays: 18
 durationNights: 17
 hero:
-  src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/hero-enhanced-20261006.webp
-  alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
+  {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/hero-enhanced-20261006.webp","alt":"Внедорожник под Млечным Путём отражается в воде, Уюни, Боливия","hover":"Уюни, Боливия: внедорожник под Млечным Путём отражается в воде"}
 routeCountries:
 - country_peru
 - country_bolivia

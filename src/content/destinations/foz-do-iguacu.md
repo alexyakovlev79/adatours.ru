@@ -18,8 +18,7 @@ gallery:
 - src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
   hover: "Игуасу: смотровой мостик над каскадами падающей воды"
   alt: "Посетители на смотровом мостике среди водопадов Игуасу"
-- src: /media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp
-  alt: Экскурсия Макуко-сафари на водопадах Игуасу, заплыв под каскады в Бразилии
+- {"src":"/media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp","alt":"Туристы в моторной лодке у мощных каскадов водопада, Игуасу, Бразилия","hover":"Игуасу, Бразилия: туристы в моторной лодке у мощных каскадов водопада"}
 relatedDestinations:
   - destination_brazil_rio
   - destination_argentina_buenos_aires

@@ -24,10 +24,8 @@ gallery:
 - src: /media/destinations/guatemala-city/gallery-4-enhanced-20261003.webp
   alt: "Старинный светлый фасад церкви с колоннами в Гватемала-Сити"
   hover: "Гватемала-Сити: каменные колонны и резные детали церковного фасада"
-- src: /media/destinations/guatemala-city/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: город Гватемала-Сити (столица страны)'
-- src: /media/destinations/guatemala-city/gallery-6-enhanced-20261003.webp
-  alt: 'На фото: город Гватемала-Сити (столица страны)'
+- {"src":"/media/destinations/guatemala-city/gallery-5-enhanced-20261003.webp","alt":"Силуэты гор под розовым закатным небом, Гватемала","hover":"Гватемала: силуэты гор под розовым закатным небом"}
+- {"src":"/media/destinations/guatemala-city/gallery-6-enhanced-20261003.webp","alt":"Торговцы у стенда с печатными изданиями перед старинным зданием, Гватемала-Сити, Гватемала","hover":"Гватемала-Сити, Гватемала: торговцы у стенда с печатными изданиями перед старинным зданием"}
 - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
   hover: "Гватемала-Сити: городская застройка перед цепью вулканических вершин"
   alt: "Городские кварталы и высотные дома на фоне вулканов в Гватемала-Сити, Гватемала"

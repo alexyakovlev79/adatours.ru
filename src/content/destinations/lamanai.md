@@ -11,8 +11,7 @@ hero:
   src: /media/destinations/lamanai/hero-generated-20261008.webp
   alt: Высокий храм Ламаная среди тропического леса, Белиз
 gallery:
-- src: /media/tours/luchshee-v-belize/itinerary-day-02-generated-20261008-v1.webp
-  alt: "Прогулка с гидом по тропическому лесу у реки Ламанай, Белиз"
+- {"src":"/media/tours/luchshee-v-belize/itinerary-day-02-generated-20261008-v1.webp","alt":"Небольшая группа идёт по тропической тропе у реки, Ламанай, Белиз","hover":"Ламанай, Белиз: небольшая группа идёт по тропической тропе у реки"}
 themes:
 - theme_culture
 - theme_wildlife

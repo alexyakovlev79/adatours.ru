@@ -149,8 +149,7 @@ itinerary:
     \ майя, которая находится на грани исчезновения.\n\nДалее поездка на лодке через озеро Ареналь. В районе Монтеверде также\
     \ живет сельское сообщество квакеров и тико.\n\nНочь в отеле Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак."
   images:
-  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
+  - {"src":"/media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp","alt":"Белка с рыжим брюшком сидит на ветке","hover":"Белка с рыжим брюшком сидит на ветке"}
 - day: 10
   title: Ареналь - заповедник Каньо-Негро
   places:

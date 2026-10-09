@@ -87,8 +87,7 @@ itinerary:
     \ леса.\n\nТерритория заповедника составляет около 10 000 гектаров. Он входит в сеть охраняемых лесов Коста-Рики и считается\
     \ одним из главных мест страны для наблюдения за природой.\n\nНочь в El Establo Mountain Resort.  \nПитание: завтрак."
   images:
-  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
+  - {"src":"/media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp","alt":"Белка с рыжим брюшком сидит на ветке","hover":"Белка с рыжим брюшком сидит на ветке"}
 - day: 6
   title: Сан-Хосе
   places:

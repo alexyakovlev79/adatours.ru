@@ -34,8 +34,7 @@ gallery:
 - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-2-images-0-src-enhanced-20261007.webp
   alt: "Человек с головным убором из перьев у лесной реки в районе Икитоса, Перу"
   hover: "Икитос, Перу: человек у реки среди тропической зелени"
-- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp
-  alt: Круиз по Амазонке в Перу (Икитос) с Aqua Expedition
+- {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp","alt":"Палуба речного судна с лежаками под большим белым навесом, Амазонка, Перу","hover":"Амазонка, Перу: палуба речного судна с лежаками под большим белым навесом"}
 - src: /media/tours/manyashchij-peru-i-ikitos/hero-src-enhanced-20261007.webp
   hover: "Икитос: лодки у берега на фоне старинных городских фасадов"
   alt: "Речные лодки у набережной Икитоса с историческими зданиями, Перу"

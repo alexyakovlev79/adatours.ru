@@ -167,8 +167,7 @@ itinerary:
 
     После экскурсии возвращение в гостиницу.
   images:
-  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp
-    alt: Традиционный текстиль в мастерской Священной долины инков
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp","alt":"Мастерица ткёт полосатую ткань у окна с видом на горы, Священная долина инков, Перу","hover":"Священная долина инков, Перу: мастерица ткёт полосатую ткань у окна с видом на горы"}
 - day: 6
   title: Куско - Пуно
   places:

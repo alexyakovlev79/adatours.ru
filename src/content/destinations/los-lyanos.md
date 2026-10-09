@@ -18,18 +18,12 @@ gallery:
 - src: /media/destinations/los-llanos/gallery-2-enhanced-20261003.webp
   alt: "Бетонная церковь с высокой колокольней в регионе Лос-Льянос, Венесуэла"
   hover: "Лос-Льянос, Венесуэла: церковь с бетонной колокольней"
-- src: /media/destinations/los-llanos/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: /media/destinations/los-llanos/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: /media/destinations/los-llanos/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: /media/destinations/los-llanos/gallery-6-enhanced-20261003.webp
-  alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: /media/destinations/los-llanos/gallery-7-enhanced-20261003.webp
-  alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
-- src: /media/destinations/los-llanos/gallery-8-enhanced-20261003.webp
-  alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
+- {"src":"/media/destinations/los-llanos/gallery-3-enhanced-20261003.webp","alt":"Белые птицы с чёрными крыльями на верхушке дерева, Лос-Льянос, Венесуэла","hover":"Лос-Льянос, Венесуэла: белые птицы с чёрными крыльями на верхушке дерева"}
+- {"src":"/media/destinations/los-llanos/gallery-4-enhanced-20261003.webp","alt":"Пятнистая дикая кошка крупным планом","hover":"Пятнистая дикая кошка крупным планом"}
+- {"src":"/media/destinations/los-llanos/gallery-5-enhanced-20261003.webp","alt":"Оранжевый фасад с волнистым фронтоном и декоративными фигурами","hover":"Оранжевый фасад с волнистым фронтоном и декоративными фигурами"}
+- {"src":"/media/destinations/los-llanos/gallery-6-enhanced-20261003.webp","alt":"Взрослая капибара и детёныш на траве, Лос-Льянос, Венесуэла","hover":"Лос-Льянос, Венесуэла: взрослая капибара и детёныш на траве"}
+- {"src":"/media/destinations/los-llanos/gallery-7-enhanced-20261003.webp","alt":"Зелёная игуана с длинным полосатым хвостом на земле, Лос-Льянос, Венесуэла","hover":"Лос-Льянос, Венесуэла: зелёная игуана с длинным полосатым хвостом на земле"}
+- {"src":"/media/destinations/los-llanos/gallery-8-enhanced-20261003.webp","alt":"Голова крокодила среди водных растений, Лос-Льянос, Венесуэла","hover":"Лос-Льянос, Венесуэла: голова крокодила среди водных растений"}
 - src: /media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
   alt: "Стая ярко-красных птиц над травянистой равниной Лос-Льяноса, Венесуэла"
   hover: "Лос-Льянос: красные птицы взлетают над зелёной равниной"

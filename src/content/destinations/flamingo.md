@@ -11,12 +11,9 @@ hero:
   src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-1-generated-20261009-v1.webp
   alt: Снасти на рыболовном катере у побережья Фламинго
 gallery:
-- src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-2-generated-20261009-v1.webp
-  alt: Рыболовный катер в тихоокеанской бухте Фламинго
-- src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-3-generated-20261009-v1.webp
-  alt: Морская рыбалка в открытых водах у Фламинго
-- src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-4-generated-20261009-v1.webp
-  alt: Выход рыболовного катера из бухты Фламинго
+- {"src":"/media/tours/pybalka-v-kosta-rike/flamingo-fishing-2-generated-20261009-v1.webp","alt":"Белый рыболовный катер на воде у песчаного берега, Фламинго, Коста-Рика","hover":"Фламинго, Коста-Рика: белый рыболовный катер на воде у песчаного берега"}
+- {"src":"/media/tours/pybalka-v-kosta-rike/flamingo-fishing-3-generated-20261009-v1.webp","alt":"Рыболовная катушка на борту катера над синим морем, Фламинго, Коста-Рика","hover":"Фламинго, Коста-Рика: рыболовная катушка на борту катера над синим морем"}
+- {"src":"/media/tours/pybalka-v-kosta-rike/flamingo-fishing-4-generated-20261009-v1.webp","alt":"Нос катера на фоне бухты и закатного неба, Фламинго, Коста-Рика","hover":"Фламинго, Коста-Рика: нос катера на фоне бухты и закатного неба"}
 themes:
 - theme_fishing
 searchAliases: []

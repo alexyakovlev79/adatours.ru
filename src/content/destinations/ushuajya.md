@@ -15,14 +15,10 @@ gallery:
 - src: /media/destinations/ushuajya/gallery-1-enhanced-20261002.webp
   alt: "Жёлтый деревянный дом с крутой крышей на фоне снежных гор Ушуайи, Аргентина"
   hover: "Ушуайя: жёлтый фасад под треугольной крышей перед заснеженными горами"
-- src: /media/destinations/ushuajya/gallery-2-enhanced-20261002.webp
-  alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
-- src: /media/destinations/ushuajya/gallery-3-enhanced-20261002.webp
-  alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
-- src: /media/destinations/ushuajya/gallery-4-enhanced-20261002.webp
-  alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
-- src: /media/destinations/ushuajya/gallery-5-enhanced-20261002.webp
-  alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
+- {"src":"/media/destinations/ushuajya/gallery-2-enhanced-20261002.webp","alt":"Разноцветные перчатки и шапки с ценниками на прилавке, Ушуайя, Аргентина","hover":"Ушуайя, Аргентина: разноцветные перчатки и шапки с ценниками на прилавке"}
+- {"src":"/media/destinations/ushuajya/gallery-3-enhanced-20261002.webp","alt":"Парусник у берега на фоне снежных гор и закатного неба, Ушуайя, Аргентина","hover":"Ушуайя, Аргентина: парусник у берега на фоне снежных гор и закатного неба"}
+- {"src":"/media/destinations/ushuajya/gallery-4-enhanced-20261002.webp","alt":"Спокойная вода между заснеженными горами, Огненная Земля, Аргентина","hover":"Огненная Земля, Аргентина: спокойная вода между заснеженными горами"}
+- {"src":"/media/destinations/ushuajya/gallery-5-enhanced-20261002.webp","alt":"Порт с судном, краном и городом у гор, Ушуайя, Аргентина","hover":"Ушуайя, Аргентина: порт с судном, краном и городом у гор"}
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -16,14 +16,10 @@ gallery:
 - src: /media/destinations/san-andres/gallery-2-enhanced-20261003.webp
   alt: "Пальма и отдыхающие на белом пляже Сан-Андреса, Колумбия"
   hover: "Сан-Андрес, Колумбия: белый песок, пальма и бирюзовое море"
-- src: /media/destinations/san-andres/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
-- src: /media/destinations/san-andres/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
-- src: /media/destinations/san-andres/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
-- src: /media/destinations/san-andres/gallery-6-enhanced-20261003.webp
-  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
+- {"src":"/media/destinations/san-andres/gallery-3-enhanced-20261003.webp","alt":"Светлая церковь с белыми окнами и круглым изображением святого, Сан-Андрес, Колумбия","hover":"Сан-Андрес, Колумбия: светлая церковь с белыми окнами и круглым изображением святого"}
+- {"src":"/media/destinations/san-andres/gallery-4-enhanced-20261003.webp","alt":"Люди под струями воды на открытом воздухе, Сан-Андрес, Колумбия","hover":"Сан-Андрес, Колумбия: люди под струями воды на открытом воздухе"}
+- {"src":"/media/destinations/san-andres/gallery-5-enhanced-20261003.webp","alt":"Улица с магазинами, велосипедистами и автомобилями, Сан-Андрес, Колумбия","hover":"Сан-Андрес, Колумбия: улица с магазинами, велосипедистами и автомобилями"}
+- {"src":"/media/destinations/san-andres/gallery-6-enhanced-20261003.webp","alt":"Пальмовый пляж вдоль бирюзового залива, Сан-Андрес, Колумбия","hover":"Сан-Андрес, Колумбия: пальмовый пляж вдоль бирюзового залива"}
 - src: /media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-5-images-1-src-enhanced-20261007.webp
   alt: "Прозрачная морская вода над каменистым дном у Сан-Андреса, Колумбия"
   hover: "Сан-Андрес: бирюзовая вода с видимыми камнями на дне"

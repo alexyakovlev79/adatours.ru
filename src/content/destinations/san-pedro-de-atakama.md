@@ -12,16 +12,11 @@ hero:
   src: /media/countries/chile/featureBands-1-enhanced-20261002.webp
   alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
 gallery:
-  - src: "/media/destinations/san-pedro-de-atakama/gallery-1-enhanced-20261006.webp"
-    alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
-  - src: "/media/destinations/san-pedro-de-atakama/gallery-2-enhanced-20261006.webp"
-    alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
-  - src: "/media/destinations/san-pedro-de-atakama/gallery-3-enhanced-20261006.webp"
-    alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
-  - src: "/media/destinations/san-pedro-de-atakama/gallery-4-enhanced-20261006.webp"
-    alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
-  - src: "/media/destinations/san-pedro-de-atakama/gallery-5-enhanced-20261006.webp"
-    alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
+  - {"src":"/media/destinations/san-pedro-de-atakama/gallery-1-enhanced-20261006.webp","alt":"Старое дерево у руин глинобитных стен, Сан-Педро-де-Атакама, Чили","hover":"Сан-Педро-де-Атакама, Чили: старое дерево у руин глинобитных стен"}
+  - {"src":"/media/destinations/san-pedro-de-atakama/gallery-2-enhanced-20261006.webp","alt":"Вечерняя улица с глинобитными домами и фонарями, Сан-Педро-де-Атакама, Чили","hover":"Сан-Педро-де-Атакама, Чили: вечерняя улица с глинобитными домами и фонарями"}
+  - {"src":"/media/destinations/san-pedro-de-atakama/gallery-3-enhanced-20261006.webp","alt":"Гора со снежной вершиной над пустынной равниной и водоёмом, Атакама, Чили","hover":"Атакама, Чили: гора со снежной вершиной над пустынной равниной и водоёмом"}
+  - {"src":"/media/destinations/san-pedro-de-atakama/gallery-4-enhanced-20261006.webp","alt":"Кладбище с крестами и глинобитными надгробиями, Сан-Педро-де-Атакама, Чили","hover":"Сан-Педро-де-Атакама, Чили: кладбище с крестами и глинобитными надгробиями"}
+  - {"src":"/media/destinations/san-pedro-de-atakama/gallery-5-enhanced-20261006.webp","alt":"Туристка на скальном выступе над пустынной долиной, Атакама, Чили","hover":"Атакама, Чили: туристка на скальном выступе над пустынной долиной"}
 facts: []
 featureBands: []
 relatedDestinations: []

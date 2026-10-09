@@ -72,8 +72,7 @@ itinerary:
 
     Питание: завтрак, сухой паек, ужин.
   images:
-  - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-05-generated-20261008-next20.webp
-    alt: Скалы и небольшие водоемы на плато Рораймы, Венесуэла
+  - {"src":"/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-05-generated-20261008-next20.webp","alt":"Каменные формы и небольшие водоёмы среди облаков, Плато Рораймы, Венесуэла","hover":"Плато Рораймы, Венесуэла: каменные формы и небольшие водоёмы среди облаков"}
 - day: 5
   title: ', пятница: плато Рораймы'
   places:

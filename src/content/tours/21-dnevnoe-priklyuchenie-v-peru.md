@@ -272,8 +272,7 @@ itinerary:
 
     После ужина ночная прогулка с гидом. В темное время суток тропический лес меняется: активными становятся насекомые, амфибии и ночные животные. Во время прогулки можно увидеть часть этой ночной жизни в естественной среде.
   images:
-  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: Город Куско, Перу - древняя столица империи инков
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp","alt":"Старинная церковь и черепичные крыши вокруг площади с высоты, Куско, Перу","hover":"Куско, Перу: старинная церковь и черепичные крыши вокруг площади с высоты"}
 - day: 16
   title: Пуэрто-Мальдонадо
   places:

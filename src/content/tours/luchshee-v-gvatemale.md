@@ -203,8 +203,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/destinations/coban/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале'
+  - {"src":"/media/destinations/coban/gallery-1-enhanced-20261003.webp","alt":"Веранда с красными опорами среди цветов и зелени, Альта-Верапас, Гватемала","hover":"Альта-Верапас, Гватемала: веранда с красными опорами среди цветов и зелени"}
 - day: 8
   title: Кобан - пещера Канделярия - Флорес
   places:
@@ -226,8 +225,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/destinations/coban/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале'
+  - {"src":"/media/destinations/coban/gallery-2-enhanced-20261003.webp","alt":"Поток воды падает в тёмный скальный проём, Альта-Верапас, Гватемала","hover":"Альта-Верапас, Гватемала: поток воды падает в тёмный скальный проём"}
 - day: 9
   title: Тикаль
   places:

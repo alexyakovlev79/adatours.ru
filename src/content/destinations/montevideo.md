@@ -22,18 +22,12 @@ gallery:
 - src: /media/destinations/montevideo/gallery-3-enhanced-20261005.webp
   alt: "Округлые башни и арочные окна здания в Монтевидео, Уругвай"
   hover: "Монтевидео: крупный план фасада с башнями и небольшими балконами"
-- src: /media/destinations/montevideo/gallery-4-enhanced-20261005.webp
-  alt: 'На фото: в столице Уругвая городе Монтевидео'
-- src: /media/destinations/montevideo/gallery-5-enhanced-20261005.webp
-  alt: 'На фото: в столице Уругвая городе Монтевидео'
-- src: /media/destinations/montevideo/gallery-6-enhanced-20261005.webp
-  alt: 'На фото: в столице Уругвая городе Монтевидео'
-- src: /media/destinations/montevideo/gallery-7-enhanced-20261005.webp
-  alt: 'На фото: в столице Уругвая городе Монтевидео'
-- src: /media/destinations/montevideo/gallery-8-enhanced-20261005.webp
-  alt: 'На фото: в столице Уругвая городе Монтевидео'
-- src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-0-images-0-src-enhanced-20261007.webp
-  alt: Дворец Сальво на площади Независимости, башня-символ Монтевидео
+- {"src":"/media/destinations/montevideo/gallery-4-enhanced-20261005.webp","alt":"Красный старинный автомобиль у здания со ставнями, Монтевидео, Уругвай","hover":"Монтевидео, Уругвай: красный старинный автомобиль у здания со ставнями"}
+- {"src":"/media/destinations/montevideo/gallery-5-enhanced-20261005.webp","alt":"Яркие настенные росписи у многоэтажного жилого дома, Монтевидео, Уругвай","hover":"Монтевидео, Уругвай: яркие настенные росписи у многоэтажного жилого дома"}
+- {"src":"/media/destinations/montevideo/gallery-6-enhanced-20261005.webp","alt":"Современное стеклянное здание рядом со старинным фасадом, Монтевидео, Уругвай","hover":"Монтевидео, Уругвай: современное стеклянное здание рядом со старинным фасадом"}
+- {"src":"/media/destinations/montevideo/gallery-7-enhanced-20261005.webp","alt":"Посетители за столиками освещённого ресторана, Монтевидео, Уругвай","hover":"Монтевидео, Уругвай: посетители за столиками освещённого ресторана"}
+- {"src":"/media/destinations/montevideo/gallery-8-enhanced-20261005.webp","alt":"Игра в пляжный волейбол у спасательной вышки, Монтевидео, Уругвай","hover":"Монтевидео, Уругвай: игра в пляжный волейбол у спасательной вышки"}
+- {"src":"/media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-0-images-0-src-enhanced-20261007.webp","alt":"Высокая резная башня дворца Сальво рядом с пальмой, Монтевидео, Уругвай","hover":"Монтевидео, Уругвай: высокая резная башня дворца Сальво рядом с пальмой"}
 facts: []
 featureBands: []
 relatedDestinations: []

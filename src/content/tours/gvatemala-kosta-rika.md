@@ -76,8 +76,7 @@ itinerary:
 
     Ночь в Hotel Atitlan. Питание: завтрак.'
   images:
-  - src: /media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+  - {"src":"/media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp","alt":"Старинная церковь с резным белым фасадом на фоне гор, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: старинная церковь с резным белым фасадом на фоне гор"}
 - day: 3
   title: Рынок Чичикастенанго, только в четверг или воскресенье
   places: []
@@ -122,8 +121,7 @@ itinerary:
 
     Ночь в отеле.'
   images:
-  - src: /media/destinations/antigua-guatemala/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+  - {"src":"/media/destinations/antigua-guatemala/gallery-2-enhanced-20261003.webp","alt":"Религиозная процессия на улице среди клубов дыма, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: религиозная процессия на улице среди клубов дыма"}
 - day: 5
   title: Гватемала-Сити - Флорес
   places: []

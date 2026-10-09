@@ -13,8 +13,7 @@ gallery:
 - src: /media/destinations/teotihuacan/gallery-1-enhanced-20261004.webp
   hover: "Теотиуакан: древние ступенчатые постройки и пирамида на фоне гор"
   alt: "Пирамида и каменные платформы вдоль широкой дороги в Теотиуакане, Мексика"
-- src: /media/destinations/teotihuacan/gallery-2-enhanced-20261004.webp
-  alt: 'На фото: пирамида Солнца в Теотиуакане в Мексике'
+- {"src":"/media/destinations/teotihuacan/gallery-2-enhanced-20261004.webp","alt":"Ступенчатая пирамида за каменными платформами, Теотихуакан, Мексика","hover":"Теотихуакан, Мексика: ступенчатая пирамида за каменными платформами"}
 - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-1-images-0-src-enhanced-20261007.webp
   alt: "Большая каменная пирамида Теотиуакана и ступенчатые платформы, Мексика"
   hover: "Теотиуакан: пирамида за древними каменными платформами"

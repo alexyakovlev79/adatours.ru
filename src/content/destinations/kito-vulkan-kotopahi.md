@@ -19,8 +19,7 @@ hero:
   src: /media/countries/ekvador/featureBands-1-enhanced-20261002.webp
   alt: Кито и вулкан Котопахи в Эквадоре
 gallery:
-  - src: /media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp
-    alt: Исторический центр Кито
+  - {"src":"/media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp","alt":"Церкви и крыши исторического центра на фоне холма и гор, Кито, Эквадор","hover":"Кито, Эквадор: церкви и крыши исторического центра на фоне холма и гор"}
   - src: /media/destinations/kito-vulkan-kotopahi/gallery-2-enhanced-20261006.webp
     alt: "Почётные караульные в синих мундирах у деревянных дверей в Кито, Эквадор"
     hover: "Кито: караул у больших деревянных дверей"

@@ -70,8 +70,7 @@ itinerary:
 
     Возвращение в Сан-Кристобаль и ночевка.
   images:
-  - src: /media/destinations/san-cristobal-de-las-casas/gallery-1-enhanced-20261004.webp
-    alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+  - {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-1-enhanced-20261004.webp","alt":"Большой крест на фоне жёлтого фасада церкви, Сан-Кристобаль-де-лас-Касас, Мексика","hover":"Сан-Кристобаль-де-лас-Касас, Мексика: большой крест на фоне жёлтого фасада церкви"}
 - day: 3
   title: Сан-Кристобаль - Агуа-Азуль - Паленке
   places:
@@ -85,8 +84,7 @@ itinerary:
 
     После посещения водопадов продолжение пути в Паленке. Размещение в Villa Mercedes 4*, 1 ночь в стандартном номере.
   images:
-  - src: /media/destinations/san-cristobal-de-las-casas/gallery-2-enhanced-20261004.webp
-    alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+  - {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-2-enhanced-20261004.webp","alt":"Панорама города с церковью среди лесистых холмов, Сан-Кристобаль-де-лас-Касас, Мексика","hover":"Сан-Кристобаль-де-лас-Касас, Мексика: панорама города с церковью среди лесистых холмов"}
 - day: 4
   title: Паленке - Кампече
   places:

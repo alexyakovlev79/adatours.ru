@@ -18,12 +18,9 @@ gallery:
 - src: /media/destinations/canaima-and-angel-falls/gallery-2-enhanced-20261003.webp
   hover: "Канайма: пальмы на песчаном берегу и широкий водопад за водой"
   alt: "Песчаный берег с пальмами и водопадом за лагуной Канаймы, Венесуэла"
-- src: /media/destinations/canaima-and-angel-falls/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
-- src: /media/destinations/canaima-and-angel-falls/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
-- src: /media/destinations/canaima-and-angel-falls/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
+- {"src":"/media/destinations/canaima-and-angel-falls/gallery-3-enhanced-20261003.webp","alt":"Высокий водопад падает с отвесной скалы среди облаков, Канайма, Венесуэла","hover":"Канайма, Венесуэла: высокий водопад падает с отвесной скалы среди облаков"}
+- {"src":"/media/destinations/canaima-and-angel-falls/gallery-4-enhanced-20261003.webp","alt":"Широкий водопад над тёмной рекой, Канайма, Венесуэла","hover":"Канайма, Венесуэла: широкий водопад над тёмной рекой"}
+- {"src":"/media/destinations/canaima-and-angel-falls/gallery-5-enhanced-20261003.webp","alt":"Два внедорожника на песчаной дороге среди кустарников, Канайма, Венесуэла","hover":"Канайма, Венесуэла: два внедорожника на песчаной дороге среди кустарников"}
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

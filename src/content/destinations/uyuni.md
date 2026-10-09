@@ -24,17 +24,13 @@ gallery:
 - src: /media/destinations/uyuni/gallery-4-enhanced-20261003.webp
   alt: "Автобус на белом солончаке Уюни с каменистой поверхностью на переднем плане, Боливия"
   hover: "Уюни: автобус вдали на белой равнине за тёмными камнями"
-- src: /media/destinations/uyuni/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: Джип тур на соленое озеро (солончак) Уюни'
+- {"src":"/media/destinations/uyuni/gallery-5-enhanced-20261003.webp","alt":"Человек и внедорожник отражаются в воде на закате, Уюни, Боливия","hover":"Уюни, Боливия: человек и внедорожник отражаются в воде на закате"}
 - src: /media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-day-10-generated-20261008-next20.webp
   alt: "Ржавый паровоз и вагоны на кладбище поездов у Уюни, Боливия"
   hover: "Уюни: старый паровоз среди песка и гор на горизонте"
-- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-13-images-0-src-enhanced-20261007.webp
-  alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
-- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-14-images-0-src-enhanced-20261007.webp
-  alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
-- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/hero-enhanced-20261006.webp
-  alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
+- {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-13-images-0-src-enhanced-20261007.webp","alt":"Высокие кактусы над белой соляной равниной, Уюни, Боливия","hover":"Уюни, Боливия: высокие кактусы над белой соляной равниной"}
+- {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-14-images-0-src-enhanced-20261007.webp","alt":"Два человека и облака отражаются в зеркальной воде солончака, Уюни, Боливия","hover":"Уюни, Боливия: два человека и облака отражаются в зеркальной воде солончака"}
+- {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/hero-enhanced-20261006.webp","alt":"Внедорожник под Млечным Путём отражается в воде, Уюни, Боливия","hover":"Уюни, Боливия: внедорожник под Млечным Путём отражается в воде"}
 - src: /media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-9-images-0-src-enhanced-20261007.webp
   hover: "Уюни: машина среди зеркальной поверхности солончака и отражённого неба"
   alt: "Автомобиль на покрытом водой солончаке Уюни с отражениями облаков, Боливия"

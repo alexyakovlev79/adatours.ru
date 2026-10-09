@@ -140,9 +140,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-07-generated-20261008-v1.webp
-        alt: "Акклиматизационный выход на пик Бонете, Аконкагуа, Аргентина"
-        intendedSlot: "itinerary:day-7"
+      - {"src":"/media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-07-generated-20261008-v1.webp","alt":"Туристы на каменистом склоне перед большой заснеженной горой, Район Аконкагуа, Аргентина","intendedSlot":"itinerary:day-7","hover":"Район Аконкагуа, Аргентина: туристы на каменистом склоне перед большой заснеженной горой"}
   - day: 8
     title: "Пласа-де-Мулас - лагерь Канада, 4910 м - Пласа-де-Мулас"
     places:
@@ -195,9 +193,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-11-generated-20261008-v1.webp
-        alt: "Переход в лагерь Нидо-де-Кондорес, Аконкагуа, Аргентина"
-        intendedSlot: "itinerary:day-11"
+      - {"src":"/media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-11-generated-20261008-v1.webp","alt":"Альпинисты идут к палаткам на каменистом высокогорном склоне, Нидо-де-Кондорес, Аконкагуа, Аргентина","intendedSlot":"itinerary:day-11","hover":"Нидо-де-Кондорес, Аконкагуа, Аргентина: альпинисты идут к палаткам на каменистом высокогорном склоне"}
   - day: 12
     title: "Нидо-де-Кондорес"
     places:
@@ -246,9 +242,7 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-15-generated-20261008-v1.webp
-        alt: "Вершина Аконкагуа и панорама Анд, Аргентина"
-        intendedSlot: "itinerary:day-15"
+      - {"src":"/media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-15-generated-20261008-v1.webp","alt":"Два альпиниста на каменистой вершине над панорамой гор, Аконкагуа, Аргентина","intendedSlot":"itinerary:day-15","hover":"Аконкагуа, Аргентина: два альпиниста на каменистой вершине над панорамой гор"}
   - day: 16
     title: "Берлин-Колера - Пласа-де-Мулас, 4260 м"
     places:

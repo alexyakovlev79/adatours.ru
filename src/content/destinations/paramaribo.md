@@ -18,16 +18,11 @@ gallery:
 - src: /media/destinations/paramaribo/gallery-2-enhanced-20261005.webp
   alt: "Небольшие лодки у деревянных причалов в Парамарибо, Суринам"
   hover: "Парамарибо: лодки на спокойной воде у свайных причалов"
-- src: /media/destinations/paramaribo/gallery-3-enhanced-20261005.webp
-  alt: 'На фото: столица Суринама город Парамарибо'
-- src: /media/destinations/paramaribo/gallery-4-enhanced-20261005.webp
-  alt: 'На фото: столица Суринама город Парамарибо'
-- src: /media/destinations/paramaribo/gallery-5-enhanced-20261005.webp
-  alt: 'На фото: столица Суринама город Парамарибо'
-- src: /media/destinations/paramaribo/gallery-6-enhanced-20261005.webp
-  alt: 'На фото: столица Суринама город Парамарибо'
-- src: /media/destinations/paramaribo/gallery-7-enhanced-20261005.webp
-  alt: 'На фото: столица Суринама город Парамарибо'
+- {"src":"/media/destinations/paramaribo/gallery-3-enhanced-20261005.webp","alt":"Мужчина несёт две клетки с птицами, Парамарибо, Суринам","hover":"Парамарибо, Суринам: мужчина несёт две клетки с птицами"}
+- {"src":"/media/destinations/paramaribo/gallery-4-enhanced-20261005.webp","alt":"Обезьяна с белой мордой на зелёном фоне, Парамарибо, Суринам","hover":"Парамарибо, Суринам: обезьяна с белой мордой на зелёном фоне"}
+- {"src":"/media/destinations/paramaribo/gallery-5-enhanced-20261005.webp","alt":"Длинный ряд деревянных столбов с замком на двери, Парамарибо, Суринам","hover":"Парамарибо, Суринам: длинный ряд деревянных столбов с замком на двери"}
+- {"src":"/media/destinations/paramaribo/gallery-6-enhanced-20261005.webp","alt":"Кирпичное здание с белой башней и наружными лестницами, Парамарибо, Суринам","hover":"Парамарибо, Суринам: кирпичное здание с белой башней и наружными лестницами"}
+- {"src":"/media/destinations/paramaribo/gallery-7-enhanced-20261005.webp","alt":"Старый деревянный дом с растениями на крыше, Парамарибо, Суринам","hover":"Парамарибо, Суринам: старый деревянный дом с растениями на крыше"}
 - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp
   hover: "Парамарибо: городская набережная с белыми фасадами и башней"
   alt: "Белые дома и башня на набережной Парамарибо, Суринам"

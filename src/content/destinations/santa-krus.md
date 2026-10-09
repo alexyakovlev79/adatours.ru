@@ -12,8 +12,7 @@ hero:
   src: /media/destinations/santa-krus/hero-enhanced-20261003.webp
   alt: 'На фото: кафедральный собор в городе Санта-Круз в Боливии'
 gallery:
-- src: /media/destinations/santa-krus/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: кафедральный собор в городе Санта-Круз в Боливии'
+- {"src":"/media/destinations/santa-krus/gallery-1-enhanced-20261003.webp","alt":"Кирпичный кафедральный собор с двумя башнями у площади с пальмами, Санта-Крус, Боливия","hover":"Санта-Крус, Боливия: кирпичный кафедральный собор с двумя башнями у площади с пальмами"}
 - src: /media/destinations/santa-krus/gallery-2-enhanced-20261003.webp
   alt: "Дерево у морского залива, белая стена и скалистая гора на противоположном берегу"
   hover: "Морской залив под ветвями дерева с видом на скалистую гору и белую стену"

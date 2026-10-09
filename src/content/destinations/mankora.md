@@ -12,14 +12,10 @@ hero:
   src: "/media/destinations/mankora/hero-enhanced-20261005.webp"
   alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
 gallery:
-  - src: "/media/destinations/mankora/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
-  - src: "/media/destinations/mankora/gallery-2-enhanced-20261005.webp"
-    alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
-  - src: "/media/destinations/mankora/gallery-3-enhanced-20261005.webp"
-    alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
-  - src: "/media/destinations/mankora/gallery-4-enhanced-20261005.webp"
-    alt: "На фото: курорт Манкора на берегу Тихого океана в Перу"
+  - {"src":"/media/destinations/mankora/gallery-1-enhanced-20261005.webp","alt":"Пальмы, соломенные зонты и всадники у моря, Манкора, Перу","hover":"Манкора, Перу: пальмы, соломенные зонты и всадники у моря"}
+  - {"src":"/media/destinations/mankora/gallery-2-enhanced-20261005.webp","alt":"Оживлённая улица с магазинами и пешеходным переходом, Манкора, Перу","hover":"Манкора, Перу: оживлённая улица с магазинами и пешеходным переходом"}
+  - {"src":"/media/destinations/mankora/gallery-3-enhanced-20261005.webp","alt":"Люди на широком песчаном пляже с пальмами, Манкора, Перу","hover":"Манкора, Перу: люди на широком песчаном пляже с пальмами"}
+  - {"src":"/media/destinations/mankora/gallery-4-enhanced-20261005.webp","alt":"Ровные линии прибоя у сухих скалистых мысов, Манкора, Перу","hover":"Манкора, Перу: ровные линии прибоя у сухих скалистых мысов"}
 facts: []
 featureBands: []
 relatedDestinations: []

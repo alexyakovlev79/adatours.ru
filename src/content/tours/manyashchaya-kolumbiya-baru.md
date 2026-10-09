@@ -159,8 +159,7 @@ itinerary:
 
     В оба дня включены завтрак, обед и ужин.
   images:
-  - src: /media/tours/manyashchaya-kolumbiya-baru/baru-beach-generated-20261009-v1.webp
-    alt: Песчаный карибский берег острова Бару
+  - {"src":"/media/tours/manyashchaya-kolumbiya-baru/baru-beach-generated-20261009-v1.webp","alt":"Пальмы вдоль песчаного берега с бирюзовым прибоем, Остров Бару, Колумбия","hover":"Остров Бару, Колумбия: пальмы вдоль песчаного берега с бирюзовым прибоем"}
 - day: 10
   title: Отдых на Бару
   places:
@@ -170,8 +169,7 @@ itinerary:
 
     В оба дня включены завтрак, обед и ужин.
   images:
-  - src: /media/tours/manyashchaya-kolumbiya-baru/baru-water-generated-20261009-v1.webp
-    alt: Карибская вода у песчаного берега острова Бару
+  - {"src":"/media/tours/manyashchaya-kolumbiya-baru/baru-water-generated-20261009-v1.webp","alt":"Бирюзовая вода у низкого песчаного берега с деревьями, Остров Бару, Колумбия","hover":"Остров Бару, Колумбия: бирюзовая вода у низкого песчаного берега с деревьями"}
 - day: 11
   title: Бару - Картахена
   places:

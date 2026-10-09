@@ -11,10 +11,8 @@ hero:
   src: /media/excursions/ostrov-rosario/hero-src-enhanced-20261007.webp
   alt: 'на фото: Острова Росарио'
 gallery:
-- src: /media/tours/kolumbiya-2024/itinerary-day-11-generated-20261008-v1.webp
-  alt: Бирюзовая вода и песчаный берег островов Росарио, Колумбия
-- src: /media/tours/kolumbiya-2024/itinerary-day-12-generated-20261008-v1.webp
-  alt: Морская прогулка среди низких коралловых островов Росарио
+- {"src":"/media/tours/kolumbiya-2024/itinerary-day-11-generated-20261008-v1.webp","alt":"Пальмы, песчаный берег и деревянный причал над бирюзовой водой, Острова Росарио, Колумбия","hover":"Острова Росарио, Колумбия: пальмы, песчаный берег и деревянный причал над бирюзовой водой"}
+- {"src":"/media/tours/kolumbiya-2024/itinerary-day-12-generated-20261008-v1.webp","alt":"Нос лодки над прозрачной водой между зелёными островками, Острова Росарио, Колумбия","hover":"Острова Росарио, Колумбия: нос лодки над прозрачной водой между зелёными островками"}
 themes:
 - theme_beach
 - theme_diving

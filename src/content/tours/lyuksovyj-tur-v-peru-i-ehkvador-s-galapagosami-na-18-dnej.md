@@ -70,8 +70,7 @@ itinerary:
 
     В 19:30-20:45 предусмотрен трансфер в ресторан Rafael с испаноговорящим водителем. Ужин оплачивается отдельно. После ужина возвращение в отель.
   images:
-  - src: /media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Панорамный вид на Лиму и Тихий океан, Перу, VIP тур по Южной Америке
+  - {"src":"/media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp","alt":"Парапланы над зелёной прибрежной полосой и океаном, Лима, Перу","hover":"Лима, Перу: парапланы над зелёной прибрежной полосой и океаном"}
 - day: 3
   title: Икитос и начало путешествия по Амазонке
   places:
@@ -163,8 +162,7 @@ itinerary:
 
     Прогулка продолжится в районе Сан-Блас, квартале ремесленников. По улице Хатун Румийок вы пройдете мимо дворца Инка Рока и увидите знаменитый камень с 12 углами. Завершение экскурсии - на главной площади Куско и в кафедральном соборе, где собрана коллекция колониального искусства.
   images:
-  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: Город Куско, Перу - древняя столица империи инков
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp","alt":"Старинная церковь и черепичные крыши вокруг площади с высоты, Куско, Перу","hover":"Куско, Перу: старинная церковь и черепичные крыши вокруг площади с высоты"}
 - day: 11
   title: Перелет в Кито
   places:
@@ -178,8 +176,7 @@ itinerary:
 
     После Куско высота уже знакома, но программа сознательно оставляет паузу. На следующий день предстоит переезд в другой климатический пояс, а затем возвращение в Кито для большой городской экскурсии и поездки к экватору.
   images:
-  - src: /media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp
-    alt: Исторический центр Кито
+  - {"src":"/media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp","alt":"Церкви и крыши исторического центра на фоне холма и гор, Кито, Эквадор","hover":"Кито, Эквадор: церкви и крыши исторического центра на фоне холма и гор"}
 - day: 12
   title: Дни 12-13. Облачный лес и Mashpi Lodge
   places:

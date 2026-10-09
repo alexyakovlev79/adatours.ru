@@ -129,8 +129,7 @@ itinerary:
 
     После экскурсии продолжение пути в Паленке и размещение. В категории 4* предусмотрен Tulija Palenque, 3 ночи в стандартном номере. В категории 5* - Quinta Chanabnal, 3 ночи в Junior Suite.
   images:
-  - src: /media/destinations/san-cristobal-de-las-casas/gallery-1-enhanced-20261004.webp
-    alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+  - {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-1-enhanced-20261004.webp","alt":"Большой крест на фоне жёлтого фасада церкви, Сан-Кристобаль-де-лас-Касас, Мексика","hover":"Сан-Кристобаль-де-лас-Касас, Мексика: большой крест на фоне жёлтого фасада церкви"}
 - day: 7
   title: Яшчилан и Бонампак
   places:

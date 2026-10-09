@@ -10,18 +10,12 @@ summary: "Либерию называют Белым городом за дом�
 searchAliases: []
 hero: {"src":"/media/destinations/liberia/hero-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"}
 gallery:
-- src: /media/destinations/liberia/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
-- src: /media/destinations/liberia/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
-- src: /media/destinations/liberia/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
-- src: /media/destinations/liberia/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
-- src: /media/destinations/liberia/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
-- src: /media/destinations/liberia/gallery-6-enhanced-20261003.webp
-  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
+- {"src":"/media/destinations/liberia/gallery-1-enhanced-20261003.webp","alt":"Здания курорта и бассейн на зелёном склоне над морем, Гуанакасте, Коста-Рика","hover":"Гуанакасте, Коста-Рика: здания курорта и бассейн на зелёном склоне над морем"}
+- {"src":"/media/destinations/liberia/gallery-2-enhanced-20261003.webp","alt":"Женщина и ребёнок с грязевыми масками смотрят в зеркало","hover":"Женщина и ребёнок с грязевыми масками смотрят в зеркало"}
+- {"src":"/media/destinations/liberia/gallery-3-enhanced-20261003.webp","alt":"Всадник гонит стадо коров по сельской дороге, Гуанакасте, Коста-Рика","hover":"Гуанакасте, Коста-Рика: всадник гонит стадо коров по сельской дороге"}
+- {"src":"/media/destinations/liberia/gallery-4-enhanced-20261003.webp","alt":"Ноги в сандалиях на грязной каменистой земле","hover":"Ноги в сандалиях на грязной каменистой земле"}
+- {"src":"/media/destinations/liberia/gallery-5-enhanced-20261003.webp","alt":"Игуана с гребнем сидит на древесине","hover":"Игуана с гребнем сидит на древесине"}
+- {"src":"/media/destinations/liberia/gallery-6-enhanced-20261003.webp","alt":"Светлое школьное здание с синими окнами и дверями, Либерия, Коста-Рика","hover":"Либерия, Коста-Рика: светлое школьное здание с синими окнами и дверями"}
 - src: /media/tours/kosta-rika-otdykh-na-plyazhe-i-v-gorakh/itinerary-0-images-0-src-enhanced-20261007.webp
   alt: "Песчаный пляж с пальмами у прозрачного бирюзового моря"
   hover: "Бирюзовое море у светлого пляжа с пальмами"

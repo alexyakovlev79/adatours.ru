@@ -12,18 +12,12 @@ hero:
   src: /media/countries/uruguay/featureBands-2-enhanced-20261002.webp
   alt: "На фото: город Колония дель Сакраменто в Уругвае"
 gallery:
-- src: /media/destinations/koloniya-del-sakramento/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: город Колония дель Сакраменто в Уругвае'
-- src: /media/destinations/koloniya-del-sakramento/gallery-2-enhanced-20261005.webp
-  alt: 'На фото: город Колония дель Сакраменто в Уругвае'
-- src: /media/destinations/koloniya-del-sakramento/gallery-3-enhanced-20261005.webp
-  alt: 'На фото: город Колония дель Сакраменто в Уругвае'
-- src: /media/destinations/koloniya-del-sakramento/gallery-4-enhanced-20261005.webp
-  alt: 'На фото: город Колония дель Сакраменто в Уругвае'
-- src: /media/destinations/koloniya-del-sakramento/gallery-5-enhanced-20261005.webp
-  alt: 'На фото: город Колония дель Сакраменто в Уругвае'
-- src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Колония-дель-Сакраменто, Уругвай, колониальная архитектура
+- {"src":"/media/destinations/koloniya-del-sakramento/gallery-1-enhanced-20261005.webp","alt":"Деревянная дверь старинного дома среди цветущих растений, Колония-дель-Сакраменто, Уругвай","hover":"Колония-дель-Сакраменто, Уругвай: деревянная дверь старинного дома среди цветущих растений"}
+- {"src":"/media/destinations/koloniya-del-sakramento/gallery-2-enhanced-20261005.webp","alt":"Яркий интерьер ресторана с картинами и разноцветными стульями, Колония-дель-Сакраменто, Уругвай","hover":"Колония-дель-Сакраменто, Уругвай: яркий интерьер ресторана с картинами и разноцветными стульями"}
+- {"src":"/media/destinations/koloniya-del-sakramento/gallery-3-enhanced-20261005.webp","alt":"Скамейки, фонари и цветочные вазоны вдоль набережной, Колония-дель-Сакраменто, Уругвай","hover":"Колония-дель-Сакраменто, Уругвай: скамейки, фонари и цветочные вазоны вдоль набережной"}
+- {"src":"/media/destinations/koloniya-del-sakramento/gallery-4-enhanced-20261005.webp","alt":"Парусные лодки у причала, Колония-дель-Сакраменто, Уругвай","hover":"Колония-дель-Сакраменто, Уругвай: парусные лодки у причала"}
+- {"src":"/media/destinations/koloniya-del-sakramento/gallery-5-enhanced-20261005.webp","alt":"Кафе с зонтами и красный автомобиль на мощёной улице, Колония-дель-Сакраменто, Уругвай","hover":"Колония-дель-Сакраменто, Уругвай: кафе с зонтами и красный автомобиль на мощёной улице"}
+- {"src":"/media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-1-images-0-src-enhanced-20261007.webp","alt":"Мощёная улица между старинными каменными стенами, Колония-дель-Сакраменто, Уругвай","hover":"Колония-дель-Сакраменто, Уругвай: мощёная улица между старинными каменными стенами"}
 facts: []
 featureBands: []
 relatedDestinations: []

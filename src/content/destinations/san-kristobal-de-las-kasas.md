@@ -10,22 +10,14 @@ summary: "Горный город в штате Чьяпас на высоте 2
 searchAliases: []
 hero: {"src":"/media/destinations/san-cristobal-de-las-casas/hero-enhanced-20261004.webp","alt":"На фото: на улицах города Сан Кристобал де Лас Касас в Мексике"}
 gallery:
-- src: /media/destinations/san-cristobal-de-las-casas/gallery-1-enhanced-20261004.webp
-  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
-- src: /media/destinations/san-cristobal-de-las-casas/gallery-2-enhanced-20261004.webp
-  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
-- src: /media/destinations/san-cristobal-de-las-casas/gallery-3-enhanced-20261004.webp
-  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
-- src: /media/destinations/san-cristobal-de-las-casas/gallery-4-enhanced-20261004.webp
-  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
-- src: /media/destinations/san-cristobal-de-las-casas/gallery-5-enhanced-20261004.webp
-  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
-- src: /media/destinations/san-cristobal-de-las-casas/gallery-6-enhanced-20261004.webp
-  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
-- src: /media/destinations/san-cristobal-de-las-casas/gallery-7-enhanced-20261004.webp
-  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
-- src: /media/destinations/san-cristobal-de-las-casas/gallery-8-enhanced-20261004.webp
-  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+- {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-1-enhanced-20261004.webp","alt":"Большой крест на фоне жёлтого фасада церкви, Сан-Кристобаль-де-лас-Касас, Мексика","hover":"Сан-Кристобаль-де-лас-Касас, Мексика: большой крест на фоне жёлтого фасада церкви"}
+- {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-2-enhanced-20261004.webp","alt":"Панорама города с церковью среди лесистых холмов, Сан-Кристобаль-де-лас-Касас, Мексика","hover":"Сан-Кристобаль-де-лас-Касас, Мексика: панорама города с церковью среди лесистых холмов"}
+- {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-3-enhanced-20261004.webp","alt":"Арочный вход белой церкви с ярко-синим декором, Сан-Кристобаль-де-лас-Касас, Мексика","hover":"Сан-Кристобаль-де-лас-Касас, Мексика: арочный вход белой церкви с ярко-синим декором"}
+- {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-4-enhanced-20261004.webp","alt":"Разноцветные ткани и куклы на сувенирном прилавке, Сан-Кристобаль-де-лас-Касас, Мексика","hover":"Сан-Кристобаль-де-лас-Касас, Мексика: разноцветные ткани и куклы на сувенирном прилавке"}
+- {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-5-enhanced-20261004.webp","alt":"Белая церковная башня среди разноцветных крестов кладбища, Чьяпас, Мексика","hover":"Чьяпас, Мексика: белая церковная башня среди разноцветных крестов кладбища"}
+- {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-6-enhanced-20261004.webp","alt":"Женщина ткёт яркую ткань на ручном станке, Чьяпас, Мексика","hover":"Чьяпас, Мексика: женщина ткёт яркую ткань на ручном станке"}
+- {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-7-enhanced-20261004.webp","alt":"Жёлто-красный фасад церкви с нишами и колоннами, Сан-Кристобаль-де-лас-Касас, Мексика","hover":"Сан-Кристобаль-де-лас-Касас, Мексика: жёлто-красный фасад церкви с нишами и колоннами"}
+- {"src":"/media/destinations/san-cristobal-de-las-casas/gallery-8-enhanced-20261004.webp","alt":"Россыпь оранжевых кукурузных початков крупным планом, Чьяпас, Мексика","hover":"Чьяпас, Мексика: россыпь оранжевых кукурузных початков крупным планом"}
 - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
   hover: "Скалистое побережье с бирюзовой бухтой и островками"
   alt: "Бирюзовая морская бухта среди сухих скалистых склонов"

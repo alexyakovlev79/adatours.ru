@@ -19,8 +19,7 @@ gallery:
 - src: /media/destinations/la-fortuna-arenal-volcano/gallery-3-enhanced-20261003.webp
   alt: "Лодки на озере под вулканом Ареналь, Коста-Рика"
   hover: "Ареналь в Коста-Рике: лодки у зелёного берега под вулканом"
-- src: /media/destinations/la-fortuna-arenal-volcano/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+- {"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-4-enhanced-20261003.webp","alt":"Вулкан с облаком над вершиной за тропическими деревьями, Ареналь, Коста-Рика","hover":"Ареналь, Коста-Рика: вулкан с облаком над вершиной за тропическими деревьями"}
 - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
   hover: "Район Ареналя: небольшие бассейны и водные каскады в зелёном саду"
   alt: "Каскадные бассейны среди пальм и тропической зелени в районе Ареналя, Коста-Рика"

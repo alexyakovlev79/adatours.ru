@@ -358,8 +358,7 @@ itinerary:
 
     По прилете встреча и трансфер в отель **Casa Andina** или отель той же категории.
   images:
-  - src: /media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Лима - столица Перу, вид с берега
+  - {"src":"/media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp","alt":"Парапланы над зелёной прибрежной полосой и океаном, Лима, Перу","hover":"Лима, Перу: парапланы над зелёной прибрежной полосой и океаном"}
 - day: 16
   title: Лима и вылет
   places:

@@ -12,14 +12,11 @@ hero:
   src: "/media/destinations/utila/hero-enhanced-20261003.webp"
   alt: "На фото: остров Утила в Гондурасе"
 gallery:
-  - src: "/media/destinations/utila/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: дайвинг на острове Утила в Гондурасе"
+  - {"src":"/media/destinations/utila/gallery-1-enhanced-20261003.webp","alt":"Дайверы и стая рыб над коралловым рифом, Утила, Гондурас","hover":"Утила, Гондурас: дайверы и стая рыб над коралловым рифом"}
   - src: "/media/destinations/utila/gallery-2-enhanced-20261003.webp"
     alt: "На фото: остров Утила в Гондурасе"
-  - src: "/media/destinations/utila/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: дайвинг на острове Утила в Гондурасе"
-  - src: "/media/destinations/utila/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: дайвинг на острове Утила в Гондурасе"
+  - {"src":"/media/destinations/utila/gallery-3-enhanced-20261003.webp","alt":"Дайвер плывёт над кораллами в прозрачной воде, Утила, Гондурас","hover":"Утила, Гондурас: дайвер плывёт над кораллами в прозрачной воде"}
+  - {"src":"/media/destinations/utila/gallery-4-enhanced-20261003.webp","alt":"Пятнистая китовая акула под водой, Утила, Гондурас","hover":"Утила, Гондурас: пятнистая китовая акула под водой"}
   - src: "/media/destinations/utila/gallery-5-enhanced-20261003.webp"
     alt: "На фото: остров Утила в Гондурасе"
   - src: "/media/destinations/utila/gallery-6-enhanced-20261003.webp"

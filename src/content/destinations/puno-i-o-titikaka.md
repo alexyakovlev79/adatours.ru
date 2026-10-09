@@ -18,16 +18,11 @@ gallery:
   - src: "/media/destinations/puno-i-o-titikaka/gallery-2-enhanced-20261005.webp"
     alt: "Музыканты с духовыми инструментами на многолюдной улице Пуно, Перу"
     hover: "Пуно: духовой оркестр и толпа на городской улице"
-  - src: "/media/destinations/puno-i-o-titikaka/gallery-3-enhanced-20261005.webp"
-    alt: "На фото: город Пуно в Перу и озеро Титикака"
-  - src: "/media/destinations/puno-i-o-titikaka/gallery-4-enhanced-20261005.webp"
-    alt: "На фото: город Пуно в Перу и озеро Титикака"
-  - src: "/media/destinations/puno-i-o-titikaka/gallery-5-enhanced-20261005.webp"
-    alt: "На фото: город Пуно в Перу и озеро Титикака"
-  - src: "/media/destinations/puno-i-o-titikaka/gallery-6-enhanced-20261005.webp"
-    alt: "На фото: город Пуно в Перу и озеро Титикака"
-  - src: "/media/destinations/puno-i-o-titikaka/gallery-7-enhanced-20261005.webp"
-    alt: "На фото: город Пуно в Перу и озеро Титикака"
+  - {"src":"/media/destinations/puno-i-o-titikaka/gallery-3-enhanced-20261005.webp","alt":"Прилавок с апельсинами и другими фруктами, Пуно, Перу","hover":"Пуно, Перу: прилавок с апельсинами и другими фруктами"}
+  - {"src":"/media/destinations/puno-i-o-titikaka/gallery-4-enhanced-20261005.webp","alt":"Девочка в платке у каменной стены, Пуно, Перу","hover":"Пуно, Перу: девочка в платке у каменной стены"}
+  - {"src":"/media/destinations/puno-i-o-titikaka/gallery-5-enhanced-20261005.webp","alt":"Пешеходная улица с флажками в вечернем свете, Пуно, Перу","hover":"Пуно, Перу: пешеходная улица с флажками в вечернем свете"}
+  - {"src":"/media/destinations/puno-i-o-titikaka/gallery-6-enhanced-20261005.webp","alt":"Красная мотоповозка с навесом на грунтовой улице, Пуно, Перу","hover":"Пуно, Перу: красная мотоповозка с навесом на грунтовой улице"}
+  - {"src":"/media/destinations/puno-i-o-titikaka/gallery-7-enhanced-20261005.webp","alt":"Силуэт человека в каменной арке над озером, Титикака, Перу","hover":"Титикака, Перу: силуэт человека в каменной арке над озером"}
   - src: "/media/destinations/puno-i-o-titikaka/gallery-8-enhanced-20261005.webp"
     alt: "Два человека в лодке из тростника на озере Титикака у Пуно, Перу"
     hover: "Титикака у Пуно: тростниковая лодка с двумя людьми"

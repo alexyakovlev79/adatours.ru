@@ -24,14 +24,11 @@ gallery:
   alt: Переход к базовому лагерю Пласа-де-Мулас, Аконкагуа, Аргентина
 - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-06-generated-20261008-v1.webp
   alt: Практика ходьбы в кошках у ледника Хорконес, Аконкагуа, Аргентина
-- src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-07-generated-20261008-v1.webp
-  alt: Акклиматизационный выход на пик Бонете, Аконкагуа, Аргентина
+- {"src":"/media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-07-generated-20261008-v1.webp","alt":"Туристы на каменистом склоне перед большой заснеженной горой, Район Аконкагуа, Аргентина","hover":"Район Аконкагуа, Аргентина: туристы на каменистом склоне перед большой заснеженной горой"}
 - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-10-generated-20261008-v1.webp
   alt: Установка палаток в первом высотном лагере Канада, Аконкагуа, Аргентина
-- src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-11-generated-20261008-v1.webp
-  alt: Переход в лагерь Нидо-де-Кондорес, Аконкагуа, Аргентина
-- src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-15-generated-20261008-v1.webp
-  alt: Вершина Аконкагуа и панорама Анд, Аргентина
+- {"src":"/media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-11-generated-20261008-v1.webp","alt":"Альпинисты идут к палаткам на каменистом высокогорном склоне, Нидо-де-Кондорес, Аконкагуа, Аргентина","hover":"Нидо-де-Кондорес, Аконкагуа, Аргентина: альпинисты идут к палаткам на каменистом высокогорном склоне"}
+- {"src":"/media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-15-generated-20261008-v1.webp","alt":"Два альпиниста на каменистой вершине над панорамой гор, Аконкагуа, Аргентина","hover":"Аконкагуа, Аргентина: два альпиниста на каменистой вершине над панорамой гор"}
 - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-17-generated-20261008-v1.webp
   alt: Спуск по долине Хорконес с караваном мулов, Аконкагуа, Аргентина
 facts: []

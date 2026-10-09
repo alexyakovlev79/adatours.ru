@@ -39,8 +39,7 @@ itinerary:
 
     Ночь в отеле Hacienda Guachipelin.
   images:
-  - src: /media/destinations/liberia/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
+  - {"src":"/media/destinations/liberia/gallery-1-enhanced-20261003.webp","alt":"Здания курорта и бассейн на зелёном склоне над морем, Гуанакасте, Коста-Рика","hover":"Гуанакасте, Коста-Рика: здания курорта и бассейн на зелёном склоне над морем"}
 - day: 2
   title: Ринкон-де-ла-Вьеха
   places:
@@ -146,8 +145,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
+  - {"src":"/media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp","alt":"Белка с рыжим брюшком сидит на ветке","hover":"Белка с рыжим брюшком сидит на ветке"}
 - day: 8
   title: Тихоокеанское побережье
   places: []
@@ -169,8 +167,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/destinations/liberia/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
+  - {"src":"/media/destinations/liberia/gallery-2-enhanced-20261003.webp","alt":"Женщина и ребёнок с грязевыми масками смотрят в зеркало","hover":"Женщина и ребёнок с грязевыми масками смотрят в зеркало"}
 included:
 - Русскоговорящий гид.
 - Трансферы.

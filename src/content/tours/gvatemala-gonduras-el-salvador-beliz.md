@@ -58,8 +58,7 @@ itinerary:
 
     Ночь в Антигуа, отель Meson de Maria.'
   images:
-  - src: /media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+  - {"src":"/media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp","alt":"Старинная церковь с резным белым фасадом на фоне гор, Антигуа-Гуатемала, Гватемала","hover":"Антигуа-Гуатемала, Гватемала: старинная церковь с резным белым фасадом на фоне гор"}
 - day: 2
   title: Рынок Чичикастенанго - озеро Атитлан
   places:

@@ -10,12 +10,9 @@ summary: "Тортугуэро, Земля черепах, охраняет ме
 searchAliases: []
 hero: {"src":"/media/destinations/tortuguero/hero-enhanced-20261004.webp","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"}
 gallery:
-- src: /media/destinations/tortuguero/gallery-1-enhanced-20261004.webp
-  alt: 'На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике'
-- src: /media/destinations/tortuguero/gallery-2-enhanced-20261004.webp
-  alt: 'На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике'
-- src: /media/destinations/tortuguero/gallery-3-enhanced-20261004.webp
-  alt: 'На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике'
+- {"src":"/media/destinations/tortuguero/gallery-1-enhanced-20261004.webp","alt":"Три морские черепахи на песчаном пляже, Тортугуэро, Коста-Рика","hover":"Тортугуэро, Коста-Рика: три морские черепахи на песчаном пляже"}
+- {"src":"/media/destinations/tortuguero/gallery-2-enhanced-20261004.webp","alt":"Красная пассажирская лодка у пальмового берега канала, Тортугуэро, Коста-Рика","hover":"Тортугуэро, Коста-Рика: красная пассажирская лодка у пальмового берега канала"}
+- {"src":"/media/destinations/tortuguero/gallery-3-enhanced-20261004.webp","alt":"Тропический лес отражается в спокойной воде канала, Тортугуэро, Коста-Рика","hover":"Тортугуэро, Коста-Рика: тропический лес отражается в спокойной воде канала"}
 - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
   hover: "Тортугуэро: зелёные берега и облака отражаются в реке"
   alt: "Спокойная река с отражениями тропического леса в Тортугуэро, Коста-Рика"

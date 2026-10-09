@@ -12,8 +12,7 @@ hero:
   src: /media/destinations/lencois-maranhenses/hero-enhanced-20261001.webp
   alt: Белые дюны и лагуны Ленсойс-Мараньенсес, Бразилия
 gallery:
-  - src: /media/destinations/lencois-maranhenses/gallery-1-enhanced-20261001.webp
-    alt: Природа национального парка Ленсойс-Мараньенсес
+  - {"src":"/media/destinations/lencois-maranhenses/gallery-1-enhanced-20261001.webp","alt":"Группа ярко-красных птиц среди деревьев и камней","hover":"Группа ярко-красных птиц среди деревьев и камней"}
   - src: /media/destinations/lencois-maranhenses/gallery-2-enhanced-20261001.webp
     alt: "Белые дюны и извилистые голубые лагуны Ленсойс-Мараньенсес, Бразилия"
     hover: "Ленсойс-Мараньенсес: озёра между светлыми песчаными дюнами"

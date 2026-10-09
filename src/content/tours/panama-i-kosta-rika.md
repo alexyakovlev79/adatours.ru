@@ -93,8 +93,7 @@ itinerary:
 
     Вечером состоится ночная экскурсия в парке Кинкаю, после которой вы вернетесь в отель.
   images:
-  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
-    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
+  - {"src":"/media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp","alt":"Белка с рыжим брюшком сидит на ветке","hover":"Белка с рыжим брюшком сидит на ветке"}
 - day: 7
   title: Монтеверде - Мануэль-Антонио
   places:
@@ -105,8 +104,7 @@ itinerary:
 
     После экскурсии трансфер на Тихоокеанское побережье, в район пляжа Мануэль-Антонио. Размещение в отеле San Bada, номер категории superior.
   images:
-  - src: /media/destinations/monteverde-santa-elena/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
+  - {"src":"/media/destinations/monteverde-santa-elena/gallery-2-enhanced-20261003.webp","alt":"Густая тропическая зелень с лианами и папоротниками, Монтеверде, Коста-Рика","hover":"Монтеверде, Коста-Рика: густая тропическая зелень с лианами и папоротниками"}
 - day: 8
   title: Национальный парк Мануэль-Антонио
   places:

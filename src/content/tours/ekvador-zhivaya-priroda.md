@@ -129,8 +129,7 @@ itinerary:
   - Кито & вулкан Котопахи
   - Вулкан Руко-Пичинча
   images:
-  - src: /media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp
-    alt: Исторический центр Кито
+  - {"src":"/media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp","alt":"Церкви и крыши исторического центра на фоне холма и гор, Кито, Эквадор","hover":"Кито, Эквадор: церкви и крыши исторического центра на фоне холма и гор"}
 - day: 3
   title: Кито-Отавало
   text: 'Завтрак в отеле. 

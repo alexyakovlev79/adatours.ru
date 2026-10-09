@@ -112,8 +112,7 @@ itinerary:
 
     В программу дополнительной поездки входит обед, шведский стол с блюдами национальной кухни.
   images:
-  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: Город Куско, Перу - древняя столица империи инков
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp","alt":"Старинная церковь и черепичные крыши вокруг площади с высоты, Куско, Перу","hover":"Куско, Перу: старинная церковь и черепичные крыши вокруг площади с высоты"}
 - excursionRef: excursion_peru_sacred_valley_full_day
   places: []
 - day: 5
@@ -246,8 +245,7 @@ itinerary:
   - Лима
   text: Завтрак. Трансфер в аэропорт для международного вылета.
   images:
-  - src: /media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Лима - столица Перу, вид с берега
+  - {"src":"/media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp","alt":"Парапланы над зелёной прибрежной полосой и океаном, Лима, Перу","hover":"Лима, Перу: парапланы над зелёной прибрежной полосой и океаном"}
 included:
 - Внутренние авиаперелеты Лима - Куско, Хулиака - Лима и Лима - Икитос - Лима.
 - Трансферы, переезды и включенное питание.

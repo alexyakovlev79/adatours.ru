@@ -17,8 +17,7 @@ gallery:
 - src: /media/destinations/destination_argentina_vilya_traful/original-03.jpg
   alt: "Белый катер на озере Трафуль у лесистого берега, Аргентина"
   hover: "Трафуль: катер на воде у покрытого лесом склона"
-- src: /media/tours/vsya-argentina/itinerary-day-15-generated-20261008-v1.webp
-  alt: Озеро Трафуль и горы у Вилья-Трафуль на маршруте Большого кольца
+- {"src":"/media/tours/vsya-argentina/itinerary-day-15-generated-20261008-v1.webp","alt":"Синее озеро среди лесистых склонов и скалистых гор, Трафуль, Аргентина","hover":"Трафуль, Аргентина: синее озеро среди лесистых склонов и скалистых гор"}
 facts: []
 featureBands: []
 relatedDestinations: []

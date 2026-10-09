@@ -362,8 +362,7 @@ itinerary:
 
     Ночь проходит в отеле в пустыне, в условиях, близких к экспедиционному формату.'
   images:
-  - src: /media/destinations/san-pedro-de-atakama/gallery-1-enhanced-20261006.webp
-    alt: "На фото: пустыня Сан-Педро-де-Атакама в Чили"
+  - {"src":"/media/destinations/san-pedro-de-atakama/gallery-1-enhanced-20261006.webp","alt":"Старое дерево у руин глинобитных стен, Сан-Педро-де-Атакама, Чили","hover":"Сан-Педро-де-Атакама, Чили: старое дерево у руин глинобитных стен"}
 - day: 13
   title: Уюни, лагуны и солончак
   places:
@@ -526,8 +525,7 @@ itinerary:
 
     После экскурсии - трансфер в аэропорт и перелет в Лиму. По прибытии встреча и трансфер в отель.'
   images:
-  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: "Город Куско, Перу - древняя столица империи инков"
+  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp","alt":"Старинная церковь и черепичные крыши вокруг площади с высоты, Куско, Перу","hover":"Куско, Перу: старинная церковь и черепичные крыши вокруг площади с высоты"}
 - day: 19
   title: Лима
   places:

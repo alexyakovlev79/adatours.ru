@@ -21,8 +21,7 @@ gallery:
 - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-12-enhanced-20260930.webp
   hover: "Мачу-Пикчу: вид через каменное окно на террасы и горы"
   alt: "Каменные руины Мачу-Пикчу и горная вершина через проём древней стены, Перу"
-- src: /media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/hero-src-enhanced-20261007.webp
-  alt: Люксовый поезд в Мачу-Пикчу «Хирам Бингхэм» (Бельмонд) в Перу
+- {"src":"/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/hero-src-enhanced-20261007.webp","alt":"Пассажирский поезд на фоне гор в закатном свете, Перу","hover":"Перу: пассажирский поезд на фоне гор в закатном свете"}
 relatedDestinations:
   - destination_peru_cusco
   - destination_peru_lima

@@ -39,8 +39,7 @@ itinerary:
 
     **Питание:** ужин.
   images:
-  - src: /media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp
-    alt: Исторический центр Кито
+  - {"src":"/media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp","alt":"Церкви и крыши исторического центра на фоне холма и гор, Кито, Эквадор","hover":"Кито, Эквадор: церкви и крыши исторического центра на фоне холма и гор"}
 - day: 2
   title: Кито и линия экватора
   places: []

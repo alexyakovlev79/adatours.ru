@@ -11,10 +11,8 @@ hero:
   src: /media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-place-generated-20261009-v1.webp
   alt: Озеро в вулканическом кратере лагуны Апойо
 gallery:
-- src: /media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-shore-generated-20261009-v1.webp
-  alt: Лесистый берег и прозрачная вода лагуны Апойо
-- src: /media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-panorama-generated-20261009-v1.webp
-  alt: Панорама лагуны Апойо с лесистого склона кратера
+- {"src":"/media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-shore-generated-20261009-v1.webp","alt":"Прозрачная вода у галечного берега и лесистые склоны, Лагуна Апойо, Никарагуа","hover":"Лагуна Апойо, Никарагуа: прозрачная вода у галечного берега и лесистые склоны"}
+- {"src":"/media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-panorama-generated-20261009-v1.webp","alt":"Синее кратерное озеро среди лесистых склонов, Лагуна Апойо, Никарагуа","hover":"Лагуна Апойо, Никарагуа: синее кратерное озеро среди лесистых склонов"}
 themes:
 - theme_wildlife
 searchAliases:

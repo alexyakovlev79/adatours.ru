@@ -19,19 +19,14 @@ gallery:
   - src: /media/destinations/bariloche/gallery-1-enhanced-20261002.webp
     alt: "Синее озеро, скалистые горы и дерево на берегу у Барилоче, Аргентина"
     hover: "Барилоче: озеро у лесистых гор и дерево на переднем плане"
-  - src: /media/destinations/bariloche/gallery-2-enhanced-20261002.webp
-    alt: "На фото: аргентинский курорт Барилоче в Патагонии"
+  - {"src":"/media/destinations/bariloche/gallery-2-enhanced-20261002.webp","alt":"Синие озёра среди лесистых холмов и гор, Барилоче, Аргентина","hover":"Барилоче, Аргентина: синие озёра среди лесистых холмов и гор"}
   - src: /media/destinations/bariloche/gallery-3-enhanced-20261002.webp
     alt: "Площадь с каменными зданиями и часовой башней в Барилоче, Аргентина"
     hover: "Барилоче: каменные здания и башня с часами у площади"
-  - src: /media/destinations/bariloche/gallery-4-enhanced-20261002.webp
-    alt: "На фото: аргентинский курорт Барилоче в Патагонии"
-  - src: /media/destinations/bariloche/gallery-5-enhanced-20261002.webp
-    alt: "На фото: аргентинский курорт Барилоче в Патагонии"
-  - src: /media/destinations/bariloche/gallery-6-enhanced-20261002.webp
-    alt: "На фото: аргентинский курорт Барилоче в Патагонии"
-  - src: /media/destinations/bariloche/gallery-7-enhanced-20261002.webp
-    alt: "На фото: аргентинский курорт Барилоче в Патагонии"
+  - {"src":"/media/destinations/bariloche/gallery-4-enhanced-20261002.webp","alt":"Белый катер у причала на фоне озера и гор, Барилоче, Аргентина","hover":"Барилоче, Аргентина: белый катер у причала на фоне озера и гор"}
+  - {"src":"/media/destinations/bariloche/gallery-5-enhanced-20261002.webp","alt":"Освещённый каменный комплекс с часовой башней в сумерках, Барилоче, Аргентина","hover":"Барилоче, Аргентина: освещённый каменный комплекс с часовой башней в сумерках"}
+  - {"src":"/media/destinations/bariloche/gallery-6-enhanced-20261002.webp","alt":"Острые снежные вершины и ледник в горной долине, Патагония, Аргентина","hover":"Патагония, Аргентина: острые снежные вершины и ледник в горной долине"}
+  - {"src":"/media/destinations/bariloche/gallery-7-enhanced-20261002.webp","alt":"Каменное здание с двумя арками и острыми крышами, Барилоче, Аргентина","hover":"Барилоче, Аргентина: каменное здание с двумя арками и острыми крышами"}
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

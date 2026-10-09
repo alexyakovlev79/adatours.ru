@@ -43,6 +43,7 @@ itinerary:
     alt: "Город Сан-Паулу в Бразилии"
 
     hover: "Сан-Паулу: городской пейзаж"
+- excursionRef: excursion_sao_paulo_city_tour_six_hours
   places: []
 - day: 2
   title: Сан-Паулу - Капитолио

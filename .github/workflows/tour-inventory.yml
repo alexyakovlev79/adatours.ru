@@ -1,0 +1,55 @@
+name: Update tour inventory
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/tours/**'
+      - 'data/catalog-archive.json'
+      - 'data/source-index/catalogs/tours.json'
+      - 'data/audits/tour-inventory-drive-20261009.json'
+      - 'scripts/sync-tour-inventory.mjs'
+      - '.github/workflows/tour-inventory.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tour-inventory
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Verify inventory status transitions
+        run: node --test tests/tour-inventory.test.mjs
+      - name: Recompute inventory and publish documentation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git switch -C inventory-sync origin/main
+            node scripts/sync-tour-inventory.mjs --apply
+            if git diff --quiet -- docs/audits/tour-inventory.md; then
+              exit 0
+            fi
+            git add docs/audits/tour-inventory.md
+            git commit -m 'docs: refresh tour inventory'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+          echo 'main changed during all three attempts; rerun the workflow.'
+          exit 1

@@ -23,7 +23,7 @@ featuredTours: []
 featuredExcursions: []
 featureBands: []
 facts: []
-sourceSnapshot: data/source-index/materials/destination_bolivia_samaipata-rewrite-20261009.md
+sourceSnapshot: data/source-index/materials/destination_bolivia_samaipata.md
 updatedAt: '2026-10-09'
 ---
 

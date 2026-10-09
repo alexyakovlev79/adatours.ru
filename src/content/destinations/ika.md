@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Город на юге Перу, откуда отправляются к рисункам Наска и оазису Уакачина. Озеро среди дюн и катание по песку дополняют поездку в Ику."
 searchAliases: []
 hero: {"src":"/media/destinations/ica/hero-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"}
-gallery: [{"src":"/media/destinations/ica/gallery-1-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"},{"src":"/media/destinations/ica/gallery-2-enhanced-20261005.webp","alt":"На фото: древние петроглифы Ика в Перу"},{"src":"/media/destinations/ica/gallery-3-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"},{"src":"/media/destinations/ica/gallery-4-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"}]
+gallery: [{"src":"/media/destinations/ica/gallery-1-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"},{"src":"/media/destinations/ica/gallery-2-enhanced-20261005.webp","alt":"Камни с выгравированными изображениями людей и животных, Ика, Перу", hover: "Ика: рисунки людей и животных на тёмных камнях"},{"src":"/media/destinations/ica/gallery-3-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"},{"src":"/media/destinations/ica/gallery-4-enhanced-20261005.webp","alt":"На фото: оазис Уакачина возле города Ика в Перу"}]
 facts: []
 featureBands: []
 relatedDestinations: []

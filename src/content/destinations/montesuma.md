@@ -9,7 +9,7 @@ destinationType: "resort"
 summary: "Монтесума, деревушка на берегу океана, известна пляжами, водопадами и богемной атмосферой. Ее старинные деревянные дома привлекают художников и путешественников."
 searchAliases: []
 hero: {"src":"/media/destinations/montezuma/hero-enhanced-20261003.webp","alt":"На фото: обезьяны капуцины в Монтесума в Коста-Рике"}
-gallery: [{"src":"/media/destinations/montezuma/gallery-1-enhanced-20261003.webp","alt":"На фото: пляж в Монтесума в Коста-Рике"},{"src":"/media/destinations/montezuma/gallery-2-enhanced-20261003.webp","alt":"На фото: пляж в Монтесума в Коста-Рике"}]
+gallery: [{"src":"/media/destinations/montezuma/gallery-1-enhanced-20261003.webp","alt":"Песчаный пляж с пальмой и бирюзовым морем в Монтесуме, Коста-Рика", hover: "Монтесума: пальма у песчаного берега и морские волны"},{"src":"/media/destinations/montezuma/gallery-2-enhanced-20261003.webp","alt":"Люди на пляже у каменистого прибоя и зелёного мыса в Монтесуме, Коста-Рика", hover: "Монтесума: берег с отдыхающими, пальмами и волнами у камней"}]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -9,7 +9,7 @@ destinationType: "resort"
 summary: "Варадеро находится на полуострове Икакос и известен песчаными пляжами. Здесь можно заниматься дайвингом, играть в гольф и посетить пещеру Амбросио."
 searchAliases: []
 hero: {"src":/media/countries/cuba/featureBands-3-enhanced-20261002.webp,"alt":"На фото: пляж Варадеро на острове Куба"}
-gallery: [{"src":"/media/destinations/varadero/gallery-1-enhanced-20261004.webp","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"/media/destinations/varadero/gallery-2-enhanced-20261004.webp","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"/media/destinations/varadero/gallery-3-enhanced-20261004.webp","alt":"На фото: пляж Варадеро на острове Куба"},{"src":"/media/destinations/varadero/gallery-4-enhanced-20261004.webp","alt":"На фото: пляж Варадеро на острове Куба"}]
+gallery: [{"src":"/media/destinations/varadero/gallery-1-enhanced-20261004.webp","alt":"Двухэтажный пляжный дом среди пальм на белом песке, Варадеро, Куба", hover: "Варадеро: дом с красными балконами за пальмами на пляже"},{"src":"/media/destinations/varadero/gallery-2-enhanced-20261004.webp","alt":"Соломенный пляжный зонт у бирюзового моря в Варадеро, Куба", hover: "Варадеро: песок, волны и соломенный зонт у берега"},{"src":"/media/destinations/varadero/gallery-3-enhanced-20261004.webp","alt":"Бирюзовое море у каменистого берега с пальмами в Варадеро, Куба", hover: "Варадеро: прибой у прибрежных скал и пальм"},{"src":"/media/destinations/varadero/gallery-4-enhanced-20261004.webp","alt":"Силуэты пальм у моря под оранжевым небом, Варадеро, Куба", hover: "Варадеро: тёмные пальмы на фоне моря и яркой полосы неба"}]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

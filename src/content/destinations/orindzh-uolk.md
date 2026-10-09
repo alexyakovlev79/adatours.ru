@@ -13,9 +13,11 @@ hero:
   alt: 'На фото: Ориндж Уолк (Холпатин) в Белизе'
 gallery:
 - src: /media/destinations/orindzh-uolk/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: Ориндж Уолк (Холпатин) в Белизе'
+  alt: "Низкое солнце отражается в реке среди тропической зелени, Ориндж-Уолк, Белиз"
+  hover: "Ориндж-Уолк: оранжевое небо и отражение солнца в спокойной воде"
 - src: /media/destinations/orindzh-uolk/gallery-2-enhanced-20261002.webp
-  alt: 'На фото: Ориндж Уолк (Холпатин) в Белизе'
+  alt: "Водяные лилии на спокойной воде у зелёного берега, Ориндж-Уолк, Белиз"
+  hover: "Ориндж-Уолк: листья и цветки водяных лилий у заросшего берега"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -15,9 +15,11 @@ gallery:
 - src: /media/destinations/santa-krus/gallery-1-enhanced-20261003.webp
   alt: 'На фото: кафедральный собор в городе Санта-Круз в Боливии'
 - src: /media/destinations/santa-krus/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: в городе Санта-Круз в Боливии'
+  alt: "Дерево у морского залива, белая стена и скалистая гора на противоположном берегу"
+  hover: "Морской залив под ветвями дерева с видом на скалистую гору и белую стену"
 - src: /media/destinations/santa-krus/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: в городе Санта-Круз в Боливии'
+  alt: "Зелёные морские утёсы и скалистый мыс над синим океаном"
+  hover: "Вид с высоты на зелёные прибрежные склоны и океан"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -9,7 +9,7 @@ destinationType: "island"
 summary: "Вулканы Концепсьон и Мадерас, панорамные виды и природа биосферного заповедника. Ометепе привлекает путешественников маршрутами восхождений."
 searchAliases: []
 hero: {"src":/media/countries/nicaragua/featureBands-1-enhanced-20261002.webp,"alt":"На фото: вулканы на острове Ометепе в Никарагуа"}
-gallery: [{"src":"/media/destinations/ometepe-island/gallery-1-enhanced-20261005.webp","alt":"На фото: вулканы на острове Ометепе в Никарагуа"},{"src":"/media/destinations/ometepe-island/gallery-2-enhanced-20261005.webp","alt":"На фото: вулканы на острове Ометепе в Никарагуа"},{"src":"/media/destinations/ometepe-island/gallery-3-enhanced-20261005.webp","alt":"На фото: на острове Ометепе в Никарагуа"},{"src":"/media/destinations/ometepe-island/gallery-4-enhanced-20261005.webp","alt":"На фото: на острове Ометепе в Никарагуа"}]
+gallery: [{"src":"/media/destinations/ometepe-island/gallery-1-enhanced-20261005.webp","alt":"На фото: вулканы на острове Ометепе в Никарагуа"},{"src":"/media/destinations/ometepe-island/gallery-2-enhanced-20261005.webp","alt":"На фото: вулканы на острове Ометепе в Никарагуа"},{"src":"/media/destinations/ometepe-island/gallery-3-enhanced-20261005.webp","alt":"Высокий водопад среди зелёных скал на острове Ометепе, Никарагуа", hover: "Ометепе: поток воды спускается по скале к небольшому водоёму"},{"src":"/media/destinations/ometepe-island/gallery-4-enhanced-20261005.webp","alt":"Пальма у воды и пришвартованные лодки на острове Ометепе, Никарагуа", hover: "Ометепе: лодки у берега под высокой пальмой"}]
 facts: []
 featureBands: []
 relatedDestinations: []

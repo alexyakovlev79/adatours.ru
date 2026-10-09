@@ -9,7 +9,7 @@ destinationType: "resort"
 summary: "Плайя Эсмеральда находится в провинции Ольгин, рядом с бухтой Наранхо. Белый песок, морские рифы и прозрачная вода подходят для пляжного отдыха, погружений и водного спорта."
 searchAliases: []
 hero: {"src":"/media/destinations/playa-esmeralda/hero-enhanced-20261004.webp","alt":"На фото: пляж Эсмеральда на острове Куба"}
-gallery: [{"src":"/media/destinations/playa-esmeralda/gallery-1-enhanced-20261004.webp","alt":"На фото: пляж Эсмеральда на острове Куба"},{"src":"/media/destinations/playa-esmeralda/gallery-2-enhanced-20261004.webp","alt":"На фото: пляж Эсмеральда на острове Куба"}]
+gallery: [{"src":"/media/destinations/playa-esmeralda/gallery-1-enhanced-20261004.webp","alt":"Песчаный пляж и пальмы у спокойного моря, Плайя-Эсмеральда, Куба", hover: "Плайя-Эсмеральда: длинный пальмовый берег вдоль морской бухты"},{"src":"/media/destinations/playa-esmeralda/gallery-2-enhanced-20261004.webp","alt":"Наклонённая пальма и небольшая лодка на пляже Плайя-Эсмеральда, Куба", hover: "Плайя-Эсмеральда: лодка на песке под нависающей пальмой"}]
 facts: []
 featureBands: []
 relatedDestinations: []

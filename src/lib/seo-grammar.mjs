@@ -29,9 +29,31 @@ export function seoPlacePhrase(id, fallbackName = '') {
  const name=fallbackName || table.destinations[id]?.name || '';
  return name?'в '+inflectLocative(name):'';
 }
+const GEO_DIRECTION_EXCEPTIONS=Object.freeze({
+ 'Гвианская Амазония':'в Гвианскую Амазонию',
+ 'Золотой путь Бразилии':'на Золотой путь Бразилии',
+ 'Дельта реки Ориноко':'в дельту реки Ориноко',
+ 'Солнечный остров':'на Солнечный остров',
+ 'Солончак Уюни':'на солончак Уюни',
+ 'Фернанду-ди-Норонья':'на Фернанду-ди-Норонья',
+ 'Канайма и водопад Анхель':'в Канайму и к водопаду Анхель',
+ 'Манаус и Амазония':'в Манаус и Амазонию',
+ 'Пуно и о.Титикака':'в Пуно и на озеро Титикака',
+ 'Тикаль & Флорес':'в Тикаль и Флорес',
+ 'Монтеверде & Санта Елена':'в Монтеверде и Санта-Елену',
+ 'Ла Фортуна & Вулкан Ареналь':'в Ла-Фортуну и к вулкану Ареналь',
+ 'Линии Наска и Острова Бальестас':'к линиям Наска и на острова Бальестас',
+ 'Вальпараисо и Винья дель Мар':'в Вальпараисо и Винья-дель-Мар',
+ 'Остров Пасхи':'на остров Пасхи',
+ 'Галапагосские острова':'на Галапагосские острова',
+ 'Лос Рокес':'на острова Лос-Рокес',
+ 'Плайя-дель-Кармен':'в Плайя-дель-Кармен',
+ 'Колония дель Сакраменто':'в Колонию-дель-Сакраменто'
+});
 export function seoPlaceDirectionPhrase(id,fallbackName='') {
  const name=fallbackName||table.destinations[id]?.name||'';
  if(!name)return '';
+ if(GEO_DIRECTION_EXCEPTIONS[name])return GEO_DIRECTION_EXCEPTIONS[name];
  if(/^Острова\s/iu.test(name))return 'на острова '+name.slice(8);
  if(/^Остров\s/iu.test(name))return 'на остров '+name.slice(7);
  if(/^Озеро\s/iu.test(name))return 'на озеро '+name.slice(6);
@@ -45,6 +67,18 @@ export function seoPlaceDirectionPhrase(id,fallbackName='') {
  if(/^Пляж\s/iu.test(name))return 'на пляж '+name.slice(5);
  if(/^Национальный парк\s/iu.test(name))return 'в национальный парк '+name.slice(19);
  if(/^Долина\s/iu.test(name))return 'в долину '+name.slice(7);
+ if(/^Солончак\s/iu.test(name))return 'на солончак '+name.slice(9);
+ if(/^Сенот\s/iu.test(name))return 'в сенот '+name.slice(6);
+ if(/^Архипелаг\s/iu.test(name))return 'на архипелаг '+name.slice(10);
+ if(/^Вулкан\s/iu.test(name))return 'на вулкан '+name.slice(7);
+ if(/^Каньон\s/iu.test(name))return 'в каньон '+name.slice(7);
+ if(/^Пещера\s/iu.test(name))return 'в пещеру '+name.slice(7);
+ if(/^Космодром\s/iu.test(name))return 'на космодром '+name.slice(10);
+ if(/^Парк\s/iu.test(name))return 'в парк '+name.slice(5);
+ if(/^Заповедник\s/iu.test(name))return 'в заповедник '+name.slice(11);
+ if(/^Плато\s/iu.test(name))return 'на плато '+name.slice(6);
+ if(/^Залив\s/iu.test(name))return 'в залив '+name.slice(6);
+ if(/^Мыс\s/iu.test(name))return 'на мыс '+name.slice(4);
  if(name==='Галапагосские острова')return 'на Галапагосские острова';
  if(name==='Самаипата')return 'в Самаипату';
  const parts=name.split(/\s+/);

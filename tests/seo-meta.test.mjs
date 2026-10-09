@@ -82,3 +82,10 @@ test('individual theme catalogue titles override the generic colon template',()=
  assert.match(seoThemeCatalogTitle('Приключения',5),/^Приключения — 5 туров на 2026-2027/);
  assert.match(seoThemeCatalogTitle('Приключения',5,'Бразилия'),/^Бразилия, Приключения: 5 туров 2026-2027/);
 });
+
+test('directional case overrides for complicated geographical names',()=>{
+ assert.equal(seoPlaceDirectionPhrase('', 'Солончак Уюни'),'на солончак Уюни');
+ assert.equal(seoPlaceDirectionPhrase('', 'Гвианская Амазония'),'в Гвианскую Амазонию');
+ assert.equal(seoPlaceDirectionPhrase('', 'Галапагосские острова'),'на Галапагосские острова');
+ assert.equal(seoPlaceDirectionPhrase('', 'Остров Пасхи'),'на остров Пасхи');
+});

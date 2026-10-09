@@ -2,6 +2,10 @@ name: Verify Ada Tours media OIDC
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-yandex-media-oidc.yml'
 
 permissions:
   contents: read
@@ -23,46 +27,77 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-
+          
           if [[ -z "${YC_SA_ID:-}" ]]; then
-            echo "::error::Set the Actions repository variable YC_MEDIA_SA_ID to the Yandex Cloud service account ID."
+            echo "::error::Missing GitHub Actions variable YC_MEDIA_SA_ID"
             exit 1
           fi
-
-          oidc_response="$(curl --fail --silent --show-error --get \
-            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
-            --data-urlencode "audience=https://github.com/alexyakovlev79" \
-            "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
-          oidc_token="$(jq -er '.value' <<<"${oidc_response}")"
-          echo "::add-mask::${oidc_token}"
-
-          token_response="$(curl --fail --silent --show-error \
-            -X POST 'https://auth.yandex.cloud/oauth/token' \
-            -H 'Content-Type: application/x-www-form-urlencoded' \
-            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
-            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
-            --data-urlencode "audience=${YC_SA_ID}" \
-            --data-urlencode "subject_token=${oidc_token}" \
-            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
-          iam_token="$(jq -er '.access_token' <<<"${token_response}")"
-          echo "::add-mask::${iam_token}"
-
+          
+          oidc_file="$(mktemp)"
+          oauth_file="$(mktemp)"
+          put_file="$(mktemp)"
+          get_file="$(mktemp)"
           test_file="$(mktemp)"
-          trap 'rm -f "${test_file}"' EXIT
-          printf 'Ada Tours media OIDC test\nGitHub run: %s\n' "${GITHUB_RUN_ID}" > "${test_file}"
-
-          curl --fail --silent --show-error \
-            -X PUT \
-            -H "Authorization: Bearer ${iam_token}" \
-            -H 'Content-Type: text/plain; charset=utf-8' \
-            -H 'Cache-Control: no-store' \
-            --upload-file "${test_file}" \
-            'https://storage.yandexcloud.net/img.adatours.ru/media/tech/oidc-smoke-test.txt' \
-            > /dev/null
-
-          curl --fail --silent --show-error \
-            -H 'Cache-Control: no-cache' \
-            'https://img.adatours.ru/media/tech/oidc-smoke-test.txt' \
-            | cmp - "${test_file}"
-
-          echo 'Success: GitHub OIDC → Yandex IAM → Object Storage → public HTTPS.'
+          trap 'rm -f "$oidc_file" "$oauth_file" "$put_file" "$get_file" "$test_file"' EXIT
+          
+          echo "1/4: Requesting GitHub OIDC JWT"
+          oidc_status="$(curl --silent --show-error --get \
+            -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            --data-urlencode "audience=https://github.com/alexyakovlev79" \
+            --output "$oidc_file" --write-out "%{http_code}" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL")"
+          if [[ "$oidc_status" != "200" ]]; then
+            echo "::error::GitHub OIDC request failed (HTTP $oidc_status)"
+            exit 1
+          fi
+          oidc_token="$(jq -er ".value" "$oidc_file")"
+          echo "::add-mask::$oidc_token"
+          echo "GitHub OIDC JWT acquired."
+          
+          echo "2/4: Exchanging JWT for Yandex IAM token"
+          token_status="$(curl --silent --show-error \
+            --request POST "https://auth.yandex.cloud/oauth/token" \
+            -H "Content-Type: application/x-www-form-urlencoded" \
+            --data-urlencode "grant_type=urn:ietf:params:oauth:grant-type:token-exchange" \
+            --data-urlencode "requested_token_type=urn:ietf:params:oauth:token-type:access_token" \
+            --data-urlencode "audience=$YC_SA_ID" \
+            --data-urlencode "subject_token=$oidc_token" \
+            --data-urlencode "subject_token_type=urn:ietf:params:oauth:token-type:id_token" \
+            --output "$oauth_file" --write-out "%{http_code}")"
+          if [[ "$token_status" != "200" ]]; then
+            err_code="$(jq -r '.error // .code // .error_code // "unknown" | if type == "string" then . else "unknown" end' "$oauth_file" 2>/dev/null || echo unknown)"
+            echo "::error::Yandex IAM token exchange failed (HTTP $token_status; error=$err_code)"
+            exit 1
+          fi
+          iam_token="$(jq -er ".access_token" "$oauth_file")"
+          echo "::add-mask::$iam_token"
+          echo "Yandex IAM token acquired."
+          
+          printf "Ada Tours OIDC smoke test\nGitHub run: %s\n" "$GITHUB_RUN_ID" > "$test_file"
+          echo "3/4: Uploading test file to Object Storage"
+          put_status="$(curl --silent --show-error \
+            --request PUT \
+            -H "Authorization: Bearer $iam_token" \
+            -H "Content-Type: text/plain; charset=utf-8" \
+            -H "Cache-Control: no-store" \
+            --upload-file "$test_file" \
+            --output "$put_file" --write-out "%{http_code}" \
+            "https://storage.yandexcloud.net/img.adatours.ru/media/tech/oidc-smoke-test.txt")"
+          if [[ "$put_status" != "200" && "$put_status" != "201" && "$put_status" != "204" ]]; then
+            xml_code="$(sed -n 's/.*<Code>\([^<]*\)<\/Code>.*/\1/p' "$put_file" | head -n 1)"
+            echo "::error::Object Storage upload failed (HTTP $put_status; S3 code=${xml_code:-unknown})"
+            exit 1
+          fi
+          echo "Object Storage upload succeeded."
+          
+          echo "4/4: Checking public HTTPS access"
+          get_status="$(curl --silent --show-error \
+            -H "Cache-Control: no-cache" \
+            --output "$get_file" --write-out "%{http_code}" \
+            "https://img.adatours.ru/media/tech/oidc-smoke-test.txt")"
+          if [[ "$get_status" != "200" ]]; then
+            echo "::error::Public HTTPS check failed (HTTP $get_status)"
+            exit 1
+          fi
+          cmp "$get_file" "$test_file" || { echo "::error::Downloaded content differs from uploaded test file"; exit 1; }
+          echo "Success: GitHub OIDC → Yandex IAM → Object Storage → public HTTPS."

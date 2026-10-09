@@ -2,6 +2,21 @@ name: Copy Ada Tours media to Object Storage
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: Full backup verification or incremental catch-up
+        required: true
+        type: choice
+        default: full
+        options:
+          - full
+          - delta
+  workflow_call:
+    inputs:
+      mode:
+        required: false
+        type: string
+        default: delta
 
 permissions:
   contents: read
@@ -18,9 +33,18 @@ jobs:
     timeout-minutes: 180
     env:
       YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+      MEDIA_BASELINE_COMMIT: ${{ inputs.mode == 'delta' && 'f542614802123ef6342c10683faf475ed1a7ba83' || '' }}
     steps:
       - name: Checkout current commit
         uses: actions/checkout@v6
+      - name: Load original replicated snapshot tree for incremental uploads
+        if: inputs.mode == 'delta'
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! git cat-file -e "${MEDIA_BASELINE_COMMIT}^{tree}" 2>/dev/null; then
+            git fetch --no-tags --filter=blob:none --depth=1 origin "${MEDIA_BASELINE_COMMIT}"
+          fi
       - name: Use Node.js 24
         uses: actions/setup-node@v5
         with:

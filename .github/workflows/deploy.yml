@@ -17,9 +17,19 @@ concurrency:
 env:
   SITE_ORIGIN: https://adatours.ru
   SITE_BASE: /
+  MEDIA_CDN_ORIGIN: https://img.adatours.ru
 
 jobs:
+  media:
+    uses: ./.github/workflows/sync-media-to-object-storage.yml
+    with:
+      mode: delta
+    permissions:
+      contents: read
+      id-token: write
+
   build:
+    needs: media
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

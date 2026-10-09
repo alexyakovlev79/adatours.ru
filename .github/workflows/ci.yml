@@ -11,6 +11,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      MEDIA_CDN_ORIGIN: https://img.adatours.ru
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -52,6 +54,12 @@ jobs:
             /tmp/astro-build.log
             /tmp/unit-tests.log
           if-no-files-found: ignore
+
+      - name: Verify media offload in build output
+        run: |
+          test -f dist/media-offload-report.json
+          test ! -d dist/media
+          grep -q 'https://img.adatours.ru/media/' dist/brazil/index.html
 
       - name: Search index smoke checks
         shell: bash

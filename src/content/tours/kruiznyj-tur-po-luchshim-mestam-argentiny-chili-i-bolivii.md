@@ -633,7 +633,7 @@ itinerary:
 
     Размещение в Llao Llao.'
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/bariloche-header-8490.jpg
+  - src: /media/tours/chili-argentina/itinerary-day-10-images-1-enhanced-20261006.webp
     alt: 'На фото: курорт Барилоче. Аргентина'
 - day: 15
   title: '03.01: Малое кольцо и остров Виктория'
@@ -676,7 +676,7 @@ itinerary:
 
     Также предлагается канопи среди крон деревьев за 130 USD на человека.'
   images:
-  - src: https://brasiltours.ru/image/Bariloche.png
+  - src: /media/tours/argentina-bariloche-i-buenos-ajres/itinerary-day-1-enhanced-20261006.webp
     alt: 'На фото: курорт Барилоче, Аргентина'
 - day: 16
   title: '04.01: остров Виктория и лес Arrayanes'
@@ -718,7 +718,7 @@ itinerary:
 
     Оставшаяся часть дня свободна.'
   images:
-  - src: https://brasiltours.ru/image/countries/argentina/arg-geral-right.jpg
+  - src: /media/tours/vinnyj-tur-v-argentinu-i-chili/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Аргентинское танго'
 - day: 18
   title: '06.01: завершение тура'

@@ -119,7 +119,7 @@ route:
 priceFrom: 8591.0
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/carnival3.jpg
+  src: /media/tours/karnaval-5-stran/hero-enhanced-20261009-v1.webp
   alt: 'На фото: Карнавал в Рио-де-Жанейро'
 lead: 'Большое путешествие по 5 странам Латинской Америки начинается в Рио-де-Жанейро во время Карнавала, проходит
   через водопады Игуасу, Буэнос-Айрес и Сантьяго, затем уходит в высокогорные пустыни Атакамы и Боливии, к солончаку

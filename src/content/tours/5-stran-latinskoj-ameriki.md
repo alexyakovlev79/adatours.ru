@@ -115,7 +115,7 @@ route:
 priceFrom: 7655.0
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/gabriel-santos-qgtm5lkqkgq-unsplash.jpg
+  src: /media/tours/5-stran-latinskoj-ameriki/hero-enhanced-20261009-v1.webp
   alt: Рио-де-Жанейро, залив Гуанабара, Бразилия
 lead: Большой групповой маршрут проходит через Бразилию, Аргентину, Чили, Боливию и Перу. За 18 дней вы увидите
   Рио-де-Жанейро и Игуасу, Буэнос-Айрес, Сантьяго и пустыню Атакама, высокогорные лагуны и солончак Уюни, Ла-Пас

@@ -111,7 +111,7 @@ route:
 priceFrom: 9563.0
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/karnaval/itay-peer-cz0m3r8-5fu-unsplash.jpg
+  src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/itinerary-day-11-enhanced-20261006.webp
   alt: Девушка в зеленых перьях на карнавале в Рио, яркий костюм и самба на параде в Бразилии
 lead: Этот маршрут объединяет Парад Чемпионов Карнавала в Рио и большое путешествие через Бразилию, Аргентину, Чили,
   Боливию и Перу. За 18 дней вы пройдете от Атлантики и водопадов Игуасу к Буэнос-Айресу, Сантьяго и пустыне Атакама,

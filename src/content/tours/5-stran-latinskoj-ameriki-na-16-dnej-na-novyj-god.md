@@ -119,7 +119,7 @@ route:
 priceFrom: 10355.0
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/brazil/new-pics/new-year/ny9.jpg
+  src: /media/tours/5-stran-latinskoj-ameriki-na-16-dnej-na-novyj-god/hero-enhanced-20261009-v1.webp
   alt: Новый год на Копакабане в Рио-де-Жанейро, салют над океаном
 lead: 19 дней через Бразилию, Аргентину, Чили, Боливию и Перу. Новый год вы встретите на Копакабане в Рио-де-Жанейро,
   затем увидите водопады Игуасу с 2 сторон, Буэнос-Айрес и Сантьяго, пересечете пустыню Атакама и боливийское альтиплано

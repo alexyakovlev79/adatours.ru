@@ -57,7 +57,7 @@ route:
 priceFrom: 440.0
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/sifan-liu-ry6imrao4he-unsplash.jpg
+  src: /media/tours/solonchak-uyuni/hero-enhanced-20261009-v1.webp
   alt: 'На фото: солончак Уюни в Боливии'
 lead: Этот групповой джип-тур проходит через юго-запад Боливии к солончаку Уюни. За 3 дня вы увидите Лагуна-Верде
   и вулкан Ликанкабур, Долину Сальвадора Дали, термальные источники Полкес, гейзеры Соль-де-Маньяна, Лагуна-Колорада,
@@ -136,7 +136,7 @@ itinerary:
 
     Около 18:00 прибытие в Уюни. Для варианта программы с окончанием в Чили предусмотрен трансфер в Сан-Педро-де-Атакама.'
   images:
-  - src: https://brasiltours.ru/image/catalog/product/s/a/salthotel.jpg
+  - src: /media/tours/solonchak-uyuni/itinerary-day-3-enhanced-20261009-v1.webp
     alt: 'На фото: солончак Уюни в Боливии'
 included:
 - 2 ночи проживания в двухместном номере с отдельной ванной комнатой и горячей водой.

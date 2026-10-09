@@ -563,7 +563,7 @@ Commit определяется по изменению, содержащему 
 | 365 | `tour_source_led_solntse_i_kraj_zemli` | Индивидуальный тур в Аргентину и Бразилию на 12 дней · `/multi-country/tour/argentina-brazil-private-tour-12-days/` | `src/content/tours/led-solntse-i-kraj-zemli.md` | 1 | `c7b2b94bab657ed9d728599edb77363186902d737f5cdcf780507cdfc8f970f8` |
 | 366 | `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | Индивидуальный тур в Бразилию на 12 дней: Рио, Игуасу, Пантанал и Бузиос · `/brazil/tour/brazil-rio-foz-do-iguacu-pantanal-buzios-12-days/` | `src/content/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios.md` | 11 | `cdaa589838a3b1b2fbc08ffe2971039e3d6a37c8ed3dcf8d7fa1759b38dd6797` |
 | 367 | `tour_source_rajskaya_braziliya` | Индивидуальный тур в Бразилию на 13 дней · `/brazil/tour/brazil-paradise-private-tour-13-days/` | `src/content/tours/rajskaya-braziliya.md` | 2 | `b32e966bcd55df6aa0aa3086aa657f3210150536f8644e6e403fc22233ee07f2` |
-| 369 | `tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe` | Индивидуальный тур в Бразилию на Парад Чемпионов · `/brazil/tour/brazil-champions-parade-tropical-coast/` | `src/content/tours/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe.md` | 1 | `95936c857c1edf3c506f9ebff1fb15d5cbfae177342609b48c709f5bb64272e3` |
+| 369 | `tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe` | Тропический Парад чемпионов 2027: Рио и Бузиос · `/brazil/tour/brazil-champions-parade-tropical-coast/` | `src/content/tours/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe.md` | 0 | `95936c857c1edf3c506f9ebff1fb15d5cbfae177342609b48c709f5bb64272e3` |
 | 370 | `tour_source_nezabyvaemaya_braziliya` | Индивидуальный тур в Бразилию, по лучшим местам за 12 дней · `/brazil/tour/unforgettable-brazil-private-tour-12-days/` | `src/content/tours/nezabyvaemaya-braziliya.md` | 7 | `7b7296d3d55c89493b9ca703ca25a40797043be20a4cefd9e2ebf043c1b7b56d` |
 | 371 | `tour_source_rio_i_iguasu_puteshestvie_po_kultovym_chudesam_brazilii` | Индивидуальный тур в Бразилию: Рио-де-Жанейро и Игуасу · `/brazil/tour/brazil-rio-iguazu-private-tour/` | `src/content/tours/rio-i-iguasu-puteshestvie-po-kultovym-chudesam-brazilii.md` | 2 | `7ef91f4c7222f4fbff445a98201ba2e620a01beca549263ea0116e69d5965c88` |
 | 372 | `tour_source_severnyj_pantanal_vodopady_reki` | Индивидуальный тур в Бразилию: Северный Пантанал – водопады и реки · `/brazil/tour/northern-pantanal-waterfalls-rivers/` | `src/content/tours/severnyj-pantanal-vodopady-reki.md` | 0 | `71411f448d0b78c3c6f14f24823ee13afa2aa04e9cc4ecfbb9ddb104defc4bfe` |
@@ -900,7 +900,6 @@ Commit определяется по изменению, содержащему 
 | `tour_source_rajskaya_braziliya` | 2 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
 | `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Word P149, 2027: существующая каноническая; стоимость сохранена в условиях тура |
 | `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 3 | `excursion_iguazu_helicopter_falls` | 5 | 6 | Word P149, 2027: существующая каноническая; стоимость сохранена в условиях тура |
-| `tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
 | `tour_source_nezabyvaemaya_braziliya` | 1 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
 | `tour_source_nezabyvaemaya_braziliya` | 2 | `excursion_source_royal_petropolis_private_tour_full_day` | 4 | 5 | Существующая каноническая |
 | `tour_source_nezabyvaemaya_braziliya` | 3 | `excursion_rio_itacuruca_tropical_islands` | 4 | 5 | Новая, подготовлена в пакете |
@@ -1346,3 +1345,4 @@ Commit определяется по изменению, содержащему 
 | 7 | `excursion_source_ostrov_plasa` | Переиспользована каноническая экскурсия |
 | 10 | `excursion_ecuador_punta_centinela_whales` | Создана из Word |
 
+09.10.2026: P146 восстановлен по свежему Word Анны 2027. Прежняя вертолетная экскурсия отсутствует в Word и удалена из этого тура; самостоятельных excursionRef в новой программе нет. Исходный hash в историческом списке относится к прежнему V2.

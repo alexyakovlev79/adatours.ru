@@ -314,6 +314,9 @@ itinerary:
     На этом программа завершается.
 
     Завтрак включен.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
+    alt: Сан Хосе
 included:
 - Транспорт по программе.
 - Входные билеты.

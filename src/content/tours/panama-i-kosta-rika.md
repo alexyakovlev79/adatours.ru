@@ -129,6 +129,9 @@ itinerary:
   title: Вылет
   places: []
   text: Завтрак. Трансфер в аэропорт в соответствии с временем международного рейса.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
+    alt: Сан Хосе
 included:
 - 3 ночи в Hilton Garden Inn Panama City с завтраками.
 - 2 ночи в Los Lagos с завтраками.

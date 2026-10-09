@@ -43,6 +43,7 @@ destinations:
 - destination_panama_david
 - destination_panama_panama_siti
 - destination_panama_nacionalnyj_park_chagres
+- destination_panama_playa_blanca
 audiences: []
 route:
 - Гватемала
@@ -639,6 +640,9 @@ itinerary:
     Размещение в Playa Blanca Beach Resort.
 
     Завтраки включены.
+  images:
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/playa-blanca-beach-generated-20261009-v1.webp
+    alt: Широкий пляж Плайя-Бланка на Тихоокеанском побережье Панамы
 - day: 23
   title: Тихоокеанская Ривьера
   places: []
@@ -652,6 +656,9 @@ itinerary:
     Размещение в Playa Blanca Beach Resort.
 
     Завтраки включены.
+  images:
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/playa-blanca-shore-generated-20261009-v1.webp
+    alt: Волны Тихого океана у берега Плайя-Бланки
 - day: 24
   title: Panama City
   places:
@@ -734,6 +741,7 @@ routeDestinations:
 - destination_panama_david
 - destination_panama_panama_siti
 - destination_panama_nacionalnyj_park_chagres
+- destination_panama_playa_blanca
 primaryThemes: ["theme_culture","theme_wildlife"]
 themes: ["theme_beach"]
 ---

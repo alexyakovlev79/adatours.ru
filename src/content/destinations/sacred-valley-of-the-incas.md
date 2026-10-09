@@ -11,7 +11,9 @@ summary: Священная долина инков в Перу объединя
 hero:
   src: /media/tours/manyashchij-peru-kolumbiya/sacred-valley-place-generated-20261009-v1.webp
   alt: Священная долина инков
-gallery: []
+gallery:
+- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp
+  alt: Традиционный текстиль в мастерской Священной долины инков
 themes:
 - theme_culture
 searchAliases:

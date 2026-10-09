@@ -5,6 +5,7 @@ import yaml from 'js-yaml';
 import { isActiveEntity } from '../src/lib/archive.mjs';
 import { INTERESTS, INTEREST_LIMITS, buildInterestHub, validateInterestContent, interestTourCatalogPath } from '../src/lib/interest-model.mjs';
 import { paginateCatalog } from '../src/lib/catalog-pagination.ts';
+import { compactCatalogById } from './lib/compact-catalog-map.mjs';
 const collections = {};
 for (const collection of ['tours', 'excursions', 'destinations', 'countries', 'themes']) {
   collections[collection] = readdirSync(`src/content/${collection}`).filter((file) => file.endsWith('.md')).map((file) => {
@@ -59,12 +60,7 @@ for (const interest of INTERESTS) {
 // Validate exact source pointers and compact catalog copies, not the historical annotation audit.
 for (const collection of ['tours', 'excursions', 'destinations']) {
   const rawCatalog = JSON.parse(readFileSync(`data/source-index/catalogs/${collection}.json`, 'utf8'));
-  const compact = new Map();
-  const visit = (value) => {
-    if (Array.isArray(value)) return value.forEach(visit);
-    if (value && typeof value === 'object') { if (value.id) compact.set(value.id, value); Object.values(value).forEach(visit); }
-  };
-  visit(rawCatalog);
+  const compact = compactCatalogById(rawCatalog);
   for (const entry of collections[collection].filter((entry) => entry.data.locale === 'ru' && isActiveEntity(entry))) {
     const d = entry.data;
     const source = JSON.parse(readFileSync(`data/source-index/entries/${d.id}.json`, 'utf8'));

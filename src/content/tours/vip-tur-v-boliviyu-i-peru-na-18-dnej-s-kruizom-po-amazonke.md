@@ -164,6 +164,9 @@ itinerary:
   places:
   - Священная долина инков
   text: Продолжение программы в Священной долине. В этот день акцент сделан на знакомстве с андскими общинами и местными ремеслами.
+  images:
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp
+    alt: Традиционный текстиль в мастерской Священной долины инков
 - day: 9
   title: Мачу-Пикчу на поезде Hiram Bingham
   places:

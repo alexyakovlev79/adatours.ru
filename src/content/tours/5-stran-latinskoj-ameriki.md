@@ -137,6 +137,9 @@ itinerary:
 
 
     Остаток дня свободный.'
+  images:
+  - src: /media/catalog/tury/hero-enhanced-20260930.webp
+    alt: "Панорама Рио-де-Жанейро с заливом, горой Сахарная Голова и городской застройкой, Бразилия"
 - day: 2
   title: Корковадо и Христос Искупитель
   places:
@@ -154,6 +157,9 @@ itinerary:
 
     Со смотровой площадки видны залив Гуанабара, мост в Нитерой, Ботанический сад, стадион Маракана, Сахарная голова
     и город между горами и океаном.'
+  images:
+  - src: /media/destinations/destination_brazil_rio/rio-free-street-generated-20261008.webp
+    alt: "Тенистая улица с деревьями и столиками кафе в Рио-де-Жанейро, Бразилия"
 - day: 3
   title: Сахарная голова и исторический центр Рио
   places:
@@ -171,6 +177,9 @@ itinerary:
 
     После спуска поездка продолжается в старые центральные районы. Вы увидите церкви, монастыри, главный городской
     собор и здания колониальной эпохи.'
+  images:
+  - src: /media/destinations/destination_brazil_rio/rio-free-beach-v2-generated-20261008.webp
+    alt: "Мозаичная набережная и пляж Копакабаны с пальмами в золотом свете, Рио-де-Жанейро, Бразилия"
 - day: 4
   title: Перелет в Фоз-ду-Игуасу
   places:
@@ -183,6 +192,9 @@ itinerary:
 
 
     По прибытии встреча с водителем и трансфер в отель.'
+  images:
+  - src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
+    alt: "Водопады Игуасу и радуга над рекой в окружении тропического леса, Бразилия"
 - day: 5
   title: Бразильская сторона Игуасу
   places:
@@ -200,6 +212,9 @@ itinerary:
 
     Дополнительно можно посетить Парк птиц или отправиться на Макуко-Сафари, которое сочетает поездку по джунглям
     и лодочную прогулку к каскадам.'
+  images:
+  - src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
+    alt: "Посетители на смотровом мостике среди водопадов Игуасу"
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places:
   - Фоз-ду-Игуасу
@@ -217,6 +232,9 @@ itinerary:
 
 
     После экскурсии трансфер в аэропорт, перелет в Буэнос-Айрес и трансфер в отель.'
+  images:
+  - src: /media/destinations/puerto-iguasu/gallery-1-enhanced-20261002.webp
+    alt: "Мощные каскады Игуасу среди скал и зелени, Аргентина"
 - day: 7
   title: Буэнос-Айрес и танго-шоу
   places:
@@ -230,6 +248,9 @@ itinerary:
 
 
     Вечером танго-шоу с ужином. Вас ждут традиционные аргентинские блюда, вина, живая музыка и танго.'
+  images:
+  - src: /media/home/buenos-aires-enhanced-20260930.webp
+    alt: "Розовое здание Каса-Росада за цветочной клумбой в Буэнос-Айресе, Аргентина"
 - day: 8
   title: Буэнос-Айрес - Сантьяго-де-Чили
   places:
@@ -242,6 +263,9 @@ itinerary:
 
 
     По прилете встреча и трансфер в отель.'
+  images:
+  - src: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
+    alt: "Буэнос-Айрес, Аргентина"
 - day: 9
   title: Сантьяго-де-Чили
   places:
@@ -264,6 +288,9 @@ itinerary:
 
 
     **Стоимость дополнительной поездки:** USD 230 с человека, минимум 2 участника.'
+  images:
+  - src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
+    alt: "Исторические здания с башнями и пешеходы на улице Сантьяго, Чили"
 - excursionRef: excursion_santiago_maipo_wine_tour
   places:
   - Долина Майпо
@@ -290,6 +317,9 @@ itinerary:
 
 
     Тур отменяют в даты ежемесячного лунного затмения.'
+  images:
+  - src: /media/destinations/calama/hero-generated-20261008.webp
+    alt: "Калама"
 - excursionRef: excursion_chile_atacama_astronomy_tour
   places:
   - Сан-Педро-де-Атакама
@@ -315,6 +345,9 @@ itinerary:
 
 
     Размещение в отеле посреди пустынного плато. Условия простые и близкие к экспедиционному лагерю.'
+  images:
+  - src: /media/destinations/laguna-verde/hero-generated-20261008.webp
+    alt: "Лагуна Верде"
 - day: 12
   title: Солончак Уюни
   places:
@@ -348,6 +381,9 @@ itinerary:
 
 
     В конце дня трансфер в Уюни.'
+  images:
+  - src: /media/destinations/destination_bolivia_laguna_honda/hero-generated-20261008.webp
+    alt: "Laguna Honda in the southwestern Bolivian Altiplano — Bolivia"
 - day: 13
   title: Уюни - Ла-Пас
   places:
@@ -365,6 +401,9 @@ itinerary:
 
     Затем поездка в Лунную долину рядом с Ла-Пасом. Здесь вода и ветер сформировали светлые каменные образования
     из песка, камня и соли.'
+  images:
+  - src: /media/destinations/la-pas/gallery-1-enhanced-20261003.webp
+    alt: "Пешеходы на площади перед каменной церковью в Ла-Пасе, Боливия"
 - day: 14
   title: Ла-Пас - Тиванаку - Пуно - Урос
   places:
@@ -383,6 +422,9 @@ itinerary:
 
     Во второй половине дня поездка на острова Урос с англоговорящим гидом. Плавучие острова построены из тростника.
     Здесь живут индейцы аймара, сохраняющие традиционный уклад, обычаи и национальную одежду.'
+  images:
+  - src: /media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-2-src-enhanced-20261007.webp
+    alt: "Каменные стены, лестницы и прямоугольный проход в Тиуанако, Боливия"
 - day: 15
   title: Пуно - Куско
   places:
@@ -408,6 +450,9 @@ itinerary:
 
 
     К вечеру прибытие в Куско и трансфер в отель.'
+  images:
+  - src: /media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp
+    alt: "Женщина в чёрной шляпе несёт ребёнка в яркой тканевой переноске, район Пуно, Перу"
 - day: 16
   title: Мачу-Пикчу
   places:
@@ -430,6 +475,9 @@ itinerary:
 
 
     Затем поезд обратно в Куско, встреча и трансфер в отель.'
+  images:
+  - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
+    alt: "Каменные стены Мачу-Пикчу на фоне зелёных горных склонов, Перу"
 - day: 17
   title: Куско - Лима
   places:
@@ -454,6 +502,9 @@ itinerary:
 
 
     После экскурсии трансфер в аэропорт и перелет в Лиму. По прибытии встреча и трансфер в отель.'
+  images:
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
+    alt: "Город Куско, Перу - древняя столица империи инков"
 - day: 18
   title: Лима и вылет домой
   places:
@@ -481,6 +532,9 @@ itinerary:
 
     Маршрут особенно разнообразен по природным условиям: от океанского побережья и тропического леса до пустыни,
     солончака и высокогорных районов Анд.'
+  images:
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: "Дорога к аэропорту с терминалом и диспетчерской башней в Лиме, Перу"
 included:
 - Проживание в отелях по программе, 17 ночей.
 - Завтраки в отелях и включенное питание.

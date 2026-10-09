@@ -44,7 +44,7 @@ export function seoThemeHubTitle(name,tourCount) {
 }
 export function seoThemeCatalogTitle(name,count,countryName='') {
  const title=countryName?countryName+', '+name:name;
- return title+': '+(count>0?quantity(count,'tour')+' ':'')+year()+' - '+merchant+' | Ada Tours';
+ return (countryName?title+': ':title+' — ')+(count>0?quantity(count,'tour')+' ':'')+(countryName?'':'на ')+year()+' - '+merchant+' | Ada Tours';
 }
 export function seoCountryTourCatalogTitle(countryId) {
  return 'Каталог туров '+year()+' по '+seoCountryCase(countryId,'dative')+' - '+merchant+' | Ada Tours';

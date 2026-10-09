@@ -77,3 +77,8 @@ test('theme substitutions, year, and pagination title position',()=>{
  assert.equal(seoPaginatedTitle('Приключения: 5 туров 2026-2027 | Ada Tours',3),'Приключения: 5 туров 2026-2027 — страница 3 | Ada Tours');
  assert.equal(seoPaginatedTitle('Каталог туров Ada Tours',3),'Каталог туров Ada Tours — страница 3');
 });
+
+test('individual theme catalogue titles override the generic colon template',()=>{
+ assert.match(seoThemeCatalogTitle('Приключения',5),/^Приключения — 5 туров на 2026-2027/);
+ assert.match(seoThemeCatalogTitle('Приключения',5,'Бразилия'),/^Бразилия, Приключения: 5 туров 2026-2027/);
+});

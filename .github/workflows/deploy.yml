@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - data/media/upload-session-request.json
   workflow_dispatch:
 
 permissions:
@@ -21,12 +23,26 @@ env:
 
 jobs:
   media:
-    uses: ./.github/workflows/sync-media-to-object-storage.yml
-    with:
-      mode: delta
-    permissions:
-      contents: read
-      id-token: write
+    name: Verify S3 receipts and enforce no new Git media
+    runs-on: ubuntu-latest
+    env:
+      MEDIA_LEGACY_CUTOFF: b09b6ba01316e888e871eac399d98eb9915d2bf7
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Load frozen Git media tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! git cat-file -e "${MEDIA_LEGACY_CUTOFF}^{tree}" 2>/dev/null; then
+            git fetch --no-tags --filter=blob:none --depth=1 origin "${MEDIA_LEGACY_CUTOFF}"
+          fi
+      - name: Verify no binary media was added to Git
+        run: node scripts/guard-no-new-git-media.mjs
+      - name: Verify every new direct-S3 object is present and matches its receipt
+        run: node scripts/verify-direct-s3-assets.mjs
 
   build:
     needs: media

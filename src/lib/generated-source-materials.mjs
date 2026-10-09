@@ -3,7 +3,7 @@ import path from 'node:path';
 
 // Narrow extension for destinations filled during the tour-day photo workflow.
 // Existing donor and user-provided modes keep their own schema restrictions.
-export function validateGeneratedSourceMaterials(entry, { repoRoot } = {}) {
+export function validateGeneratedSourceMaterials(entry, { repoRoot, directAssets = new Set() } = {}) {
   const selected = entry.text?.selected;
   const generated = entry.media?.status === 'generated';
   const editorial = selected?.kind === 'editorial_generated';
@@ -25,7 +25,7 @@ export function validateGeneratedSourceMaterials(entry, { repoRoot } = {}) {
   if (!Array.isArray(images) || !images.length || images.filter((item) => item.role === 'hero').length !== 1) fail('generated media requires exactly one hero');
   for (const item of images ?? []) {
     if (!/^\/media\/[a-zA-Z0-9_/-]+\.webp$/.test(item.url ?? '') || item.url.includes('..') || item.url.includes('/image/cache/') || !['hero', 'gallery'].includes(item.role) || !Number.isInteger(item.order) || item.order < 1 || !item.alt?.trim()) fail('generated images need a local WebP path, role, order and alt');
-    else if (repoRoot && !fs.existsSync(path.join(repoRoot, 'public', item.url))) fail(`missing generated asset ${item.url}`);
+    else if (repoRoot && !fs.existsSync(path.join(repoRoot, 'public', item.url)) && !directAssets.has(item.url)) fail(`missing generated asset ${item.url}`);
   }
   if (repoRoot && selected?.repositoryPath === expected) {
     const material = path.join(repoRoot, expected);

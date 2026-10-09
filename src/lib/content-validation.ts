@@ -8,6 +8,7 @@ import destinationReservations from '../data/catalog/destination-reservations.js
 import { validateDestinationReservations } from './destination-reservations.mjs';
 import { validateSourceTextPointer, validateProvidedMedia, isNonemptyUtf8 } from './provided-materials.mjs';
 import { validateGeneratedSourceMaterials } from './generated-source-materials.mjs';
+import { validateDirectAssetLedger } from '../../scripts/lib/direct-media-ledger.mjs';
 import { canonicalPath, countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
 
 export interface CatalogDestination {
@@ -43,6 +44,10 @@ async function validateContent(): Promise<void> {
     getCollection('people'), getCollection('articles'),
   ]);
   const errors: string[] = validateInterestContent({ countries, destinations, tours, excursions, themes });
+  const directLedger = JSON.parse(await readFile('src/data/media/direct-s3-uploads.json', 'utf8'));
+  const ledgerCheck = validateDirectAssetLedger(directLedger);
+  errors.push(...ledgerCheck.errors.map((message) => 'direct-s3-uploads.json: ' + message));
+  const verifiedCloudFiles = new Set(ledgerCheck.byPath.keys());
   const rows = [...countries, ...destinations, ...tours, ...excursions, ...themes, ...cases, ...people, ...articles];
   const publishedRouteById = new Map<string, string>();
   for (const { data } of countries.filter(({ data }) => isPublished(data))) publishedRouteById.set(data.id, countryPath(data));
@@ -168,7 +173,7 @@ async function validateContent(): Promise<void> {
       return;
     }
     const exists = await stat(path).then((item) => item.isFile(), () => false);
-    if (!exists) errors.push(`Отсутствует локальное изображение ${path.slice(publicRoot.length)}.`);
+    if (!exists && !verifiedCloudFiles.has(path.slice(publicRoot.length))) errors.push(`Отсутствует локальное или подтвержденное S3-изображение ${path.slice(publicRoot.length)}.`);
   }));
 
   // Source preparation is separate from page creation. Enforce the raw-source
@@ -209,7 +214,7 @@ async function validateContent(): Promise<void> {
       if (generatedMaterials) {
         // Tour-day photo repair has its own strict provenance rules. Do not
         // mislabel editorial text and GPT Image assets as user-provided files.
-        errors.push(...validateGeneratedSourceMaterials(entry, { repoRoot: process.cwd() })
+        errors.push(...validateGeneratedSourceMaterials(entry, { repoRoot: process.cwd(), directAssets: verifiedCloudFiles })
           .map((error) => `source-index/${name}: ${error}`));
       } else {
         if (completingReservation && entry.text?.selected?.kind !== 'provided_materials') errors.push(`source-index/${name}: заполненному резерву нужен text.selected.kind: provided_materials.`);
@@ -227,7 +232,7 @@ async function validateContent(): Promise<void> {
             if (image.url.startsWith('/media/')) {
               const relative = decodeURIComponent(new URL(image.url, 'https://adatours.ru').pathname);
               const path = resolve(publicRoot, `.${relative}`);
-              if (!path.startsWith(`${publicRoot}${sep}`) || !await stat(path).then((file) => file.isFile() && file.size > 0, () => false)) errors.push(`source-index/${name}: предоставленная фотография ${image.url} отсутствует или пуста.`);
+              if (!path.startsWith(`${publicRoot}${sep}`) || (!verifiedCloudFiles.has(relative) && !await stat(path).then((file) => file.isFile() && file.size > 0, () => false))) errors.push(`source-index/${name}: предоставленная фотография ${image.url} отсутствует или пуста.`);
             }
           }
         }

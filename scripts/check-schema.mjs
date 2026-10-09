@@ -5,6 +5,7 @@ import { join, relative } from 'node:path';
 import { inspectHtml } from '../src/lib/structured-data-html.mjs';
 import { hasType, types, logicalPath, cleanText, SCHEMA_VERSION } from '../src/lib/structured-data.mjs';
 import { isArchivedPath } from '../src/lib/archive.mjs';
+import { validateDirectAssetLedger } from './lib/direct-media-ledger.mjs';
 const output = 'dist';
 const origin = process.env.SITE_ORIGIN || 'https://adatours.ru';
 const base = `/${(process.env.SITE_BASE || '/').split('/').filter(Boolean).join('/')}`.replace(/\/$/, '');
@@ -27,6 +28,10 @@ const report = { schemaVersion: SCHEMA_VERSION, root, totalHtml: 0, contentPages
 const definitions = new Set();
 const references = [];
 const urlsChecked = new Set();
+const directLedger = JSON.parse(readFileSync('src/data/media/direct-s3-uploads.json', 'utf8'));
+const ledgerCheck = validateDirectAssetLedger(directLedger);
+assert.deepEqual(ledgerCheck.errors, [], 'Every direct S3 receipt has a valid path and SHA-256');
+const verifiedCloudMedia = new Set(ledgerCheck.byPath.keys());
 function checkLocalUrl(value) {
   if (!value || urlsChecked.has(value)) return;
   urlsChecked.add(value);
@@ -34,6 +39,8 @@ function checkLocalUrl(value) {
   assert.ok(['http:', 'https:'].includes(url.protocol), `Non-web URL: ${value}`);
   if (url.origin !== new URL(root).origin) return;
   const path = logicalPath(url.href, root);
+  // Media can exist only in verified S3 and need not have a GitHub Pages file.
+  if (path.startsWith('/media/') && verifiedCloudMedia.has(path)) return;
   // A Schema.org identifier fragment is not necessarily an HTML anchor.
   const target = path.endsWith('/') ? join(output, decodeURIComponent(path.slice(1)), 'index.html') : join(output, decodeURIComponent(path.slice(1)));
   assert.ok(existsSync(target), `Internal target not built: ${value}`);

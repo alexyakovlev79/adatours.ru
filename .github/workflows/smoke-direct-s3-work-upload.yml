@@ -1,0 +1,101 @@
+name: Smoke test direct S3 upload without Git binaries
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/smoke-direct-s3-work-upload.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+  issues: write
+
+concurrency:
+  group: adatours-direct-s3-smoke
+  cancel-in-progress: false
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Simulate ChatGPT Work key generation, encrypted exchange, direct upload
+        id: direct_upload
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${YC_SA_ID:-}" || { echo "::error::Missing YC_MEDIA_SA_ID"; exit 1; }
+          dir="${RUNNER_TEMP}/s3-upload-test"
+          mkdir -p "$dir"
+          node scripts/media-work-session.mjs init --out "$dir"
+          request_file="$(find "$dir" -name '*.request.json' -print -quit)"
+          private_file="$(find "$dir" -name '*.private.pem' -print -quit)"
+
+          jwt_json="$(curl --fail --silent --show-error --get \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            --data-urlencode "audience=https://github.com/alexyakovlev79" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
+          jwt="$(jq -er '.value' <<< "$jwt_json")"
+          echo "::add-mask::$jwt"
+          response="$(curl --fail --silent --show-error \
+            -X POST 'https://auth.yandex.cloud/oauth/token' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
+            --data-urlencode "audience=${YC_SA_ID}" \
+            --data-urlencode "subject_token=$jwt" \
+            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          iam="$(jq -er '.access_token' <<< "$response")"
+          echo "::add-mask::$iam"
+
+          MEDIA_ENVELOPE_OUTPUT="$dir/envelope.json" \
+            YC_MEDIA_IAM_TOKEN="$iam" \
+            node scripts/issue-media-token.mjs "$request_file" >/dev/null
+
+          printf 'Direct S3 upload via keyless envelope, run %s\n' "${GITHUB_RUN_ID}" > "$dir/test.txt"
+          node -e '
+            const fs=require("fs");
+            const dir=process.argv[1];
+            const id=process.env.GITHUB_RUN_ID;
+            fs.writeFileSync(dir+"/batch.json",JSON.stringify([{file:dir+"/test.txt",
+              key:"media/tech/direct-s3-smoke-"+id+"-20261009.txt"}]));
+          ' "$dir"
+
+          packet="$(base64 -w 0 "$dir/envelope.json")"
+          node scripts/media-work-session.mjs upload \
+            --request "$request_file" \
+            --private "$private_file" \
+            --envelope "$packet" \
+            --batch "$dir/batch.json" \
+            --receipt "$dir/receipt.json"
+          node -e '
+            const fs=require("fs");
+            const receipt=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));
+            if(receipt.assets.length!==1 || receipt.assets[0].status!=="uploaded-and-verified")
+              process.exit(1);
+            console.log("Verified direct S3 upload without Git binary: "+receipt.assets[0].key);
+          ' "$dir/receipt.json"
+
+      - name: Record smoke result for handoff
+        if: always()
+        continue-on-error: true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SMOKE_OUTCOME: ${{ steps.direct_upload.outcome }}
+        run: |
+          if [[ "$SMOKE_OUTCOME" == "success" ]]; then
+            summary="PASS: direct keyless S3 upload, HTTPS readback and SHA-256 verification"
+          else
+            summary="FAIL: direct S3 smoke test ($SMOKE_OUTCOME)"
+          fi
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/issues/17/comments" \
+            -f body="Automated S3 smoke result: **${summary}**. Run: https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"

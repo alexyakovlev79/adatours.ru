@@ -102,8 +102,8 @@ itinerary:
 
     **Включено:** входные билеты в Чаксу и к высокогорным лагунам, обед.
   images:
-  - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/itinerary-day-4-enhanced-20261006.webp
-    alt: 'На фото: пустыня Сан Педро де Атакама в Чили'
+  - src: /media/destinations/san-pedro-de-atakama/gallery-1-enhanced-20261006.webp
+    alt: 'На фото: пустыня Сан-Педро-де-Атакама в Чили'
 - day: 4
   title: Гейзеры Татио и Мачука
   places:
@@ -128,8 +128,8 @@ itinerary:
 
     **Включено:** входной билет к гейзерам Татио.
   images:
-  - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
-    alt: 'На фото: столица Чили, Сантьяго-де-Чили'
+  - src: /media/destinations/destination_chile_gejzery_el_tatio/hero-generated-20261008-resumed-v1.webp
+    alt: Гейзеры Эль-Татио, Чили
 - day: 5
   title: Сантьяго - Пуэрто-Наталес
   places:
@@ -140,8 +140,8 @@ itinerary:
 
     После прибытия встреча и трансфер в отель. Размещение и отдых.
   images:
-  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-13-enhanced-20261006.webp
-    alt: 'На фото: столица Чили, Сантьяго-де-Чили'
+  - src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
+    alt: Исторические здания с башнями и пешеходы на улице Сантьяго, Чили
 - day: 6
   title: Торрес-дель-Пайне и пещера Милодона
   places:
@@ -182,8 +182,8 @@ itinerary:
 
     **Авиабилеты:** от $650, стоимость зависит от момента оформления.
   images:
-  - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
-    alt: 'На фото: столица Чили, Сантьяго-де-Чили'
+  - src: /media/destinations/santyago-de-chili/gallery-3-enhanced-20261006.webp
+    alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
 included:
 - размещение в указанных или аналогичных отелях на базе завтраков;
 - питание по программе;

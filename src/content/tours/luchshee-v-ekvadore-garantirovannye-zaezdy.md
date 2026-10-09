@@ -68,7 +68,7 @@ itinerary:
 
     Ужин включен.
   images:
-  - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-0-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Кито
 - day: 2
   title: Кито и линия экватора
@@ -133,7 +133,7 @@ itinerary:
 
       Завтрак включен.
   images:
-  - src: "/media/tours/aktivnyj-ekvador-i-trekking/hero-src-enhanced-20261007.webp"
+  - src: /media/tours/aktivnyj-ekvador-i-trekking/hero-src-enhanced-20261007.webp
     alt: Кито
 - day: 3
   title: Кито - Килотоа - Баньос
@@ -217,6 +217,9 @@ itinerary:
     Размещение в Casa Real 4*.
 
     Завтрак включен.
+  images:
+  - src: /media/destinations/banos/gallery-1-enhanced-20261006.webp
+    alt: 'На фото: город Баньос в Эквадоре в Андах'
 - day: 5
   title: Риобамба - Чимборасо - Ингапирка - Куэнка
   places:
@@ -269,7 +272,7 @@ itinerary:
 
     Включены завтрак и ланч-бокс.
   images:
-  - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-4-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: Куэнка
 - day: 6
   title: Куэнка
@@ -304,8 +307,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-4-images-0-src-enhanced-20261007.webp"
-    alt: Куэнка
+  - src: /media/excursions/kito-siti-tur-na-ves-den/hero-enhanced-20261001.webp
+    alt: Куэнка, Эквадор
 - day: 7
   title: Куэнка - Кахас - какао-асьенда - Гуаякиль
   places:
@@ -359,8 +362,8 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-4-images-0-src-enhanced-20261007.webp"
-    alt: Куэнка
+  - src: /media/destinations/guayakil/gallery-2-enhanced-20261006.webp
+    alt: 'На фото: город Гуаякиль в Зквадоре'
 - day: 8
   title: Гуаякиль - Галапагосские острова - Санта-Крус
   places:
@@ -413,7 +416,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-2-src-enhanced-20261007.webp"
+  - src: /media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-2-src-enhanced-20261007.webp
     alt: Галапагосские острова
 - day: 9
   title: 'Галапагосы: остров Бартоломе'
@@ -460,7 +463,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: "/media/tours/ekvador-i-galapagosskie-ostrova-v-iyule/itinerary-6-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/ekvador-i-galapagosskie-ostrova-v-iyule/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Галапагосские острова
 - day: 10
   title: 'Галапагосы: Сеймур-Норте или Пласа-Сур'
@@ -494,8 +497,8 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-2-src-enhanced-20261007.webp"
-    alt: Галапагосские острова
+  - src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1.webp
+    alt: Остров Сеймур-Норте
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []
 - excursionRef: excursion_source_ostrov_plasa
@@ -515,10 +518,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/tours/ekvador-i-galapagosskie-ostrova-v-iyule/itinerary-6-images-0-src-enhanced-20261007.webp"
-    alt: Галапагосские острова
-  - src: "/media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Кито
+  - src: /media/destinations/kito-vulkan-kotopahi/old-quito-src-enhanced-20261008.webp
+    alt: Исторический центр Кито
 included:
 - Групповые трансферы и экскурсии.
 - Проживание в отелях с возможностью замены на отели аналогичной категории.

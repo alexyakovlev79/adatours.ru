@@ -71,8 +71,8 @@ itinerary:
     На вечер можно выбрать **Borago, Ambrosia, Peumayen** или **Aquí está Coco**. Среди этих ресторанов есть варианты с акцентом на морепродукты и современную чилийскую кухню.
   images:
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
-    hover: "Сантьяго: кабины канатной дороги на фоне высотных зданий и гор"
-    alt: "Красная и синяя кабины канатной дороги над городом Сантьяго, Чили"
+    hover: 'Сантьяго: кабины канатной дороги на фоне высотных зданий и гор'
+    alt: Красная и синяя кабины канатной дороги над городом Сантьяго, Чили
 - day: 3
   title: Сантьяго - Калама - Сан-Педро-де-Атакама
   places:
@@ -98,10 +98,8 @@ itinerary:
 
     **Включено:** вход в Долину Луны, коктейль.
   images:
-  - src: "/media/tours/vip-chili-5/itinerary-2-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/vip-chili-5/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: Сан-Педро-де-Атакама
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
 - day: 4
   title: Солончак Атакамы и высокогорные лагуны
   places:
@@ -122,8 +120,8 @@ itinerary:
 
     **Включено:** входные билеты в лагуну Чакса и высокогорные лагуны, обед.
   images:
-  - src: "/media/tours/vip-chili-5/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Сан-Педро-де-Атакама
+  - src: /media/destinations/san-pedro-de-atakama/gallery-1-enhanced-20261006.webp
+    alt: 'На фото: пустыня Сан-Педро-де-Атакама в Чили'
 - day: 5
   title: Гейзеры Татио и деревня Мачука
   places:
@@ -148,9 +146,8 @@ itinerary:
 
     После экскурсии трансфер в Каламу, перелет в Сантьяго и трансфер в отель.
   images:
-  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
-    hover: "Сантьяго: кабины канатной дороги на фоне высотных зданий и гор"
-    alt: "Красная и синяя кабины канатной дороги над городом Сантьяго, Чили"
+  - src: /media/destinations/destination_chile_gejzery_el_tatio/hero-generated-20261008-resumed-v1.webp
+    alt: Гейзеры Эль-Татио, Чили
 - day: 6
   title: Сантьяго - Пуэрто-Наталес
   places:
@@ -165,8 +162,6 @@ itinerary:
   images:
   - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
 - day: 7
   title: Торрес-дель-Пайне, ледник Грей и Пещера Милодона
   places:
@@ -204,11 +199,8 @@ itinerary:
 
     По прилете трансфер и размещение.
   images:
-  - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
-    alt: Пуэрто-Наталес
-  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
-    hover: "Сантьяго: кабины канатной дороги на фоне высотных зданий и гор"
-    alt: "Красная и синяя кабины канатной дороги над городом Сантьяго, Чили"
+  - src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
+    alt: Исторические здания с башнями и пешеходы на улице Сантьяго, Чили
 - day: 9
   title: Вальпараисо и Винья-дель-Мар
   places:
@@ -245,8 +237,8 @@ itinerary:
 
     В назначенное время трансфер в аэропорт для международного вылета.
   images:
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+  - src: /media/destinations/santyago-de-chili/gallery-3-enhanced-20261006.webp
+    alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
 included:
 - Проживание в указанных отелях или аналогичных отелях уровня 5*, включая завтраки
 - Включенное питание

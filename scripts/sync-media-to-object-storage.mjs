@@ -11,7 +11,13 @@ const token = process.env.YC_IAM_TOKEN;
 const manifestName = 'media-sync-manifest.json';
 if (!token) throw new Error('Missing temporary Yandex IAM token');
 
-const files = execFileSync('git', ['ls-files', '-z', '--', 'public/media'], {
+// The full snapshot is already in S3; production runs only mirror deltas.
+// Omitting MEDIA_BASELINE_COMMIT retains the full disaster-recovery mode.
+const baseline = process.env.MEDIA_BASELINE_COMMIT?.trim();
+const gitArgs = baseline
+  ? ['diff', '--name-only', '--no-renames', '--diff-filter=AM', '-z', baseline, 'HEAD', '--', 'public/media']
+  : ['ls-files', '-z', '--', 'public/media'];
+const files = execFileSync('git', gitArgs, {
   encoding: 'utf8', maxBuffer: 16 * 1024 * 1024,
 }).split('\0').filter(Boolean).sort();
 if (!files.length) throw new Error('No tracked files under public/media');
@@ -23,6 +29,7 @@ const mimeMap = {
   webp: 'image/webp', jpg: 'image/jpeg', jpeg: 'image/jpeg',
   png: 'image/png', avif: 'image/avif', gif: 'image/gif',
   svg: 'image/svg+xml', ico: 'image/x-icon', mp4: 'video/mp4',
+  webm: 'video/webm', mov: 'video/quicktime', m4v: 'video/x-m4v',
 };
 const mimeType = (key) => mimeMap[path.extname(key).slice(1).toLowerCase()] || 'application/octet-stream';
 

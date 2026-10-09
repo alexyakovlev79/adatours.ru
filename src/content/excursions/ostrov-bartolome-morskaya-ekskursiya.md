@@ -8,7 +8,9 @@ searchAliases: []
 country: "country_ecuador"
 destination: "destination_ecuador_galapagosskie_ostrova"
 destinationName: "Галапагосские острова"
-relatedDestinations: []
+relatedDestinations:
+- destination_ecuador_ostrov_baltra
+- destination_ecuador_ostrov_bartolome
 duration: "6 часов"
 language:
   - "Английский"

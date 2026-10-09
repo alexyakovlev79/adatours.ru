@@ -8,7 +8,9 @@ searchAliases: []
 country: "country_ecuador"
 destination: "destination_ecuador_galapagosskie_ostrova"
 destinationName: "Галапагосские острова"
-relatedDestinations: []
+relatedDestinations:
+- destination_ecuador_ostrov_santa_krus_galapagosy
+- destination_ecuador_ostrov_plasa_sur
 duration: "6 часов"
 language:
   - "Английский"

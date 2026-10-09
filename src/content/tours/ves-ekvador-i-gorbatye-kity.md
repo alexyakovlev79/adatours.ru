@@ -6,7 +6,7 @@ status: approved
 title: Эквадор, Галапагосы и горбатые киты
 countries:
 - country_ecuador
-destinations: &id001
+destinations:
 - destination_ecuador_kito_vulkan_kotopahi
 - destination_ecuador_banos
 - destination_ecuador_guayakil
@@ -82,6 +82,9 @@ itinerary:
 
 
     Размещение: Finlandia 4*. Питание: завтрак.'
+  images:
+  - src: /media/destinations/intinan-museum/hero-generated-20261009-v1.webp
+    alt: Музей Интиньян
 - excursionRef: excursion_ecuador_quito_panecillo_equator
   places: []
 - day: 3
@@ -96,6 +99,9 @@ itinerary:
 
 
     Свободный вечер в Баньосе. Размещение: La Floresta 3*. Питание: завтрак.'
+  images:
+  - src: /media/destinations/tigua/hero-generated-20261009-v1.webp
+    alt: Тигуа
 - excursionRef: excursion_ecuador_quilotoa_tigua_banos
   places: []
 - day: 4
@@ -110,6 +116,9 @@ itinerary:
 
 
     Размещение: Finlandia 4*. Питание: завтрак.'
+  images:
+  - src: /media/destinations/pastaza-canyon/hero-generated-20261009-v1.webp
+    alt: Каньон Пастаса
 - excursionRef: excursion_ecuador_banos_waterfalls_quito
   places: []
 - day: 5
@@ -128,6 +137,9 @@ itinerary:
 
 
     Размещение: Fiesta 3*. Питание: завтрак, обед.'
+  images:
+  - src: /media/destinations/baltra-island/hero-generated-20261009-v1.webp
+    alt: Остров Балтра
 - excursionRef: excursion_source_ostrov_santa_krus
   places: []
 - day: 6
@@ -140,6 +152,9 @@ itinerary:
 
 
     Размещение: Fiesta 3*. Питание: завтрак, обед.'
+  images:
+  - src: /media/tours/complete-ecuador-new-year/word-12-20261009-v1.webp
+    alt: Остров Бартоломе
 - excursionRef: excursion_source_ostrov_bartolome_morskaya_ekskursiya
   places: []
 - day: 7
@@ -162,6 +177,9 @@ itinerary:
 
 
     Свободный вечер. Размещение: Fiesta 3*. Питание: завтрак, обед.'
+  images:
+  - src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1.webp
+    alt: Морская черепаха — подводный мир Галапагосов
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []
 - excursionRef: excursion_source_ostrov_plasa
@@ -185,6 +203,9 @@ itinerary:
 
 
     (all inclusive)'
+  images:
+  - src: /media/destinations/guayakil/hero-enhanced-20261006.webp
+    alt: Гуаякиль, Эквадор
 - day: 9
   title: 19 августа 2027. Свободный день на побережье
   places:
@@ -201,6 +222,9 @@ itinerary:
   text: Выход от отеля для наблюдения за горбатыми китами. Наблюдение — 45 минут — 1 час; морской выход зависит
     от климатических и морских условий. После экскурсии возвращение в отель Decameron Punta Centinela, all
     inclusive.
+  images:
+  - src: /media/tours/ecuador-galapagos-humpback-whales/hero-generated-20261009-v1.webp
+    alt: Горбатый кит у тихоокеанского побережья Эквадора
 - excursionRef: excursion_ecuador_punta_centinela_whales
   places: []
 - day: 11
@@ -209,6 +233,9 @@ itinerary:
   - Пунта-Сентинела
   - Гуаякиль
   text: Обратный трансфер в аэропорт Гуаякиля – регистрация на международный рейс.
+  images:
+  - src: /media/destinations/guayakil/gallery-1-enhanced-20261006.webp
+    alt: Гуаякиль, Эквадор
 included:
 - Групповые трансферы и экскурсии;
 - Проживание в отелях по программе (возможность замены отелей на подобной категории);
@@ -251,7 +278,25 @@ hero:
   alt: Горбатый кит у тихоокеанского побережья Эквадора
 routeCountries:
 - country_ecuador
-routeDestinations: *id001
+routeDestinations:
+- destination_ecuador_kito_vulkan_kotopahi
+- destination_ecuador_banos
+- destination_ecuador_guayakil
+- destination_ecuador_galapagosskie_ostrova
+- destination_ecuador_ostrov_baltra
+- destination_ecuador_ostrov_santa_krus_galapagosy
+- destination_ecuador_puerto_ajora
+- destination_ecuador_ozero_kilotoa
+- destination_ecuador_tigua
+- destination_ecuador_punta_sentinela
+- destination_ecuador_vodopad_agoyan
+- destination_ecuador_vodopad_fata_nevesty_banos
+- destination_ecuador_vodopad_kotel_dyavola_banos
+- destination_ecuador_ostrov_bartolome
+- destination_ecuador_kanon_pastasa
+- destination_ecuador_mitad_del_mundo
+- destination_ecuador_intinan_museum
+- destination_ecuador_casa_del_arbol
 format: Групповой
 primaryThemes:
 - theme_wildlife

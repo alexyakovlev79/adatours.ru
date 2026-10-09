@@ -20,7 +20,7 @@ themes:
 duration: 11–12 часов с переездами
 hero:
   src: /media/destinations/agoyan-waterfall/hero-generated-20261009-v1.webp
-  alt: 'Баньос: водопады и качели с возвращением в Кито'
+  alt: Водопад Агоян
 gallery: []
 lead: Обзорная прогулка по Баньосу, Дорога водопадов и качели «Конец света», затем переезд в Кито.
 route:

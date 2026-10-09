@@ -3,7 +3,7 @@ id: tour_source_ostrova_san_blas_na_yakhte_lyuks_klassa
 locale: ru
 slug: panama-san-blas-luxury-yacht
 status: published
-title: Тур на яхте класса ВИП (люксовый) по островам Сан-Блас, Панама
+title: Тур на яхте класса VIP (люксовый) по островам Сан-Блас, Панама
 countries:
 - country_panama
 destinations:

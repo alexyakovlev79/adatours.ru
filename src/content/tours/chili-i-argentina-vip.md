@@ -3,7 +3,7 @@ id: tour_source_chili_i_argentina_vip
 locale: ru
 slug: chile-argentina-vip
 status: published
-title: Чили и Аргентина ВИП
+title: Чили и Аргентина VIP
 countries:
 - country_chile
 - country_argentina

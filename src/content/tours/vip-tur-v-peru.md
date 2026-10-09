@@ -3,7 +3,7 @@ id: tour_source_vip_tur_v_peru
 locale: ru
 slug: chile-bolivia-peru-vip
 status: published
-title: Вип тур в Чили, Боливию и Перу
+title: VIP тур в Чили, Боливию и Перу
 countries:
 - country_chile
 - country_bolivia

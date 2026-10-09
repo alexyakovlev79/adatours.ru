@@ -3,7 +3,7 @@ id: tour_source_vip_kosta_rika_nikaragua
 locale: ru
 slug: costa-rica-nicaragua-vip-private-plane
 status: published
-title: ВИП-тур в Коста-Рику и Никарагуа | На частном самолете
+title: VIP-тур в Коста-Рику и Никарагуа | На частном самолете
 countries:
 - country_costa_rica
 - country_nicaragua

@@ -1,0 +1,72 @@
+name: Diagnose www.adatours.ru DNS and HTTPS
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/diagnose-www.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  statuses: write
+
+jobs:
+  www-diagnostics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check DNS, TLS, redirects, and Pages domain
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -u
+          echo "=== Public DNS ==="
+          dig +short NS adatours.ru
+          for domain in adatours.ru www.adatours.ru; do
+            echo "--- $domain"
+            for type in A AAAA CNAME CAA; do
+              echo "$type"; dig +time=3 +tries=1 +short "$domain" "$type" || true
+            done
+          done
+          cname="$(dig +time=3 +tries=1 +short CNAME www.adatours.ru | head -1 | tr -d "\r")"
+          wwwa="$(dig +time=3 +tries=1 +short A www.adatours.ru | tr "\n" "," | cut -c 1-75)"
+          ns="$(dig +time=3 +tries=1 +short NS adatours.ru | tr "\n" "," | cut -c 1-95)"
+          echo "=== HTTP and TLS ==="
+          for url in https://adatours.ru/ https://www.adatours.ru/ http://www.adatours.ru/; do
+            echo "--- $url"
+            curl -sSIL --max-time 20 --max-redirs 5 "$url" | grep -Ei "^(HTTP/|location:|server:)" || true
+            curl -sS -L --max-time 20 --max-redirs 5 -o /dev/null -w "final_http=%{http_code},final_url=%{url_effective},tls_verify=%{ssl_verify_result}\n" "$url" || true
+          done
+          echo "=== TLS certificate WWW ==="
+          echo | timeout 12 openssl s_client -connect www.adatours.ru:443 -servername www.adatours.ru 2>/dev/null | openssl x509 -noout -issuer -subject -dates -ext subjectAltName 2>&1 || true
+          echo "=== GitHub Pages configuration ==="
+          pages="$(gh api "repos/${GITHUB_REPOSITORY}/pages" 2>/dev/null || true)"
+          if [ -n "$pages" ]; then
+            echo "$pages" | jq '{cname, status, https_enforced, https_certificate, html_url}' || true
+            page_name="$(echo "$pages" | jq -r '.cname // "UNSET"')"
+            cert_state="$(echo "$pages" | jq -r '.https_certificate.state // "UNKNOWN"')"
+          else
+            page_name="API_UNAVAILABLE"; cert_state="UNKNOWN"
+            echo "Cannot read Pages settings with workflow token"
+          fi
+          echo "=== Publish diagnostic statuses ==="
+          report() {
+            local context="$1" state="$2" description="$3"
+            gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+              -f context="$context" -f state="$state" -f description="${description:0:135}" \
+              -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >/dev/null || true
+          }
+          if [ "$cname" = "alexyakovlev79.github.io." ]; then dns_state=success; else dns_state=failure; fi
+          report "ada/www-cname" "$dns_state" "www CNAME=${cname:-MISSING}; A=${wwwa:-none}"
+          report "ada/domain-ns" success "Authoritative NS=${ns:-UNKNOWN}"
+          report "ada/pages-domain" success "Pages cname=${page_name}; cert=${cert_state}"
+          for prefix in www apex; do
+            if [ "$prefix" = www ]; then domain="www.adatours.ru"; else domain="adatours.ru"; fi
+            value="$(curl -sS -L --max-time 20 --max-redirs 5 -o /dev/null -w "%{http_code}|%{url_effective}|%{ssl_verify_result}" "https://${domain}/" 2>/dev/null || true)"
+            code="${value%%|*}"
+            if [ "$code" = 200 ] && [[ "$value" == *"|0" ]]; then state=success; else state=failure; fi
+            report "ada/${prefix}-https" "$state" "HTTPS=${value:-NO_RESPONSE}"
+          done

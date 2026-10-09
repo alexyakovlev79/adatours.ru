@@ -13,6 +13,7 @@ destinations:
 - destination_costa_rica_rio_seleste
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_monteverde_santa_elena
+- destination_costa_rica_pacific_coast
 audiences: []
 route:
 - Либерия
@@ -68,6 +69,9 @@ itinerary:
     Ночь в Hacienda Guachipelin.
 
     Завтрак включен.
+  images:
+  - src: /media/destinations/rincon-de-la-vieja/hero-enhanced-20261004.webp
+    alt: 'На фото: Ринкон-де-ла-Вьехо в Коста-Рике'
 - day: 3
   title: Ринкон-де-ла-Вьеха - Тенорио и Рио-Селесте
   places:
@@ -157,8 +161,8 @@ itinerary:
 
     Во время прогулки гид также постарается показать птиц, обезьян и других животных.
   images:
-  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 6
   title: Ареналь - Монтеверде
   places:
@@ -181,8 +185,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 7
   title: Монтеверде - северное Тихоокеанское побережье
   places:
@@ -195,6 +199,9 @@ itinerary:
     Остаток дня можно провести самостоятельно.
 
     Завтрак включен.
+  images:
+  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 8
   title: Северное Тихоокеанское побережье
   places: []
@@ -206,6 +213,9 @@ itinerary:
     Ночь в Hotel Pasatiempo.
 
     Завтрак включен.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-2-generated-20261009-v1.webp
+    alt: Вечерний прибой на Тихоокеанском побережье Коста-Рики
 - day: 9
   title: Либерия
   places:
@@ -217,8 +227,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/tours/kosta-rika-otdykh-na-plyazhe-i-v-gorakh/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Либерия
+  - src: /media/destinations/liberia/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
 included:
 - Трансферы.
 - Входные билеты.
@@ -254,6 +264,7 @@ routeDestinations:
 - destination_costa_rica_rio_seleste
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_monteverde_santa_elena
+- destination_costa_rica_pacific_coast
 primaryThemes: ["theme_wildlife","theme_beach"]
 themes: ["theme_adventure"]
 ---

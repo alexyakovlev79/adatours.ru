@@ -9,7 +9,17 @@ destinationType: "city"
 summary: "Горный город среди кофейных и цитрусовых плантаций. Из Бокете отправляются к вулкану Бару, водопадам и парку Ла Амистад."
 searchAliases: []
 hero: {"src":/media/countries/panama/featureBands-2-enhanced-20261002.webp,"alt":"На фото: горный курорт Бокете в Панаме"}
-gallery: [{"src":"/media/destinations/boquete/gallery-1-enhanced-20261005.webp","alt":"На фото: горный курорт Бокете в Панаме"},{"src":"/media/destinations/boquete/gallery-2-enhanced-20261005.webp","alt":"На фото: горный курорт Бокете в Панаме"},{"src":"/media/destinations/boquete/gallery-3-enhanced-20261005.webp","alt":"На фото: горный курорт Бокете в Панаме"},{"src":"/media/destinations/boquete/gallery-4-enhanced-20261005.webp","alt":"На фото: горный курорт Бокете в Панаме"}]
+gallery:
+- src: /media/destinations/boquete/gallery-1-enhanced-20261005.webp
+  alt: 'На фото: горный курорт Бокете в Панаме'
+- src: /media/destinations/boquete/gallery-2-enhanced-20261005.webp
+  alt: 'На фото: горный курорт Бокете в Панаме'
+- src: /media/destinations/boquete/gallery-3-enhanced-20261005.webp
+  alt: 'На фото: горный курорт Бокете в Панаме'
+- src: /media/destinations/boquete/gallery-4-enhanced-20261005.webp
+  alt: 'На фото: горный курорт Бокете в Панаме'
+- src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
+  alt: Лучшее в Центральной Америке
 facts: []
 featureBands: []
 relatedDestinations: []

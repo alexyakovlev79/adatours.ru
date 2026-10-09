@@ -9,7 +9,25 @@ destinationType: "city"
 summary: "Столица штата Халиско знакомит с колониальными церквями, музеями и традициями Мексики. Гвадалахару называют «Городом Роз» за ее парки и сады."
 searchAliases: []
 hero: {"src":"/media/destinations/guadalajara/hero-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"}
-gallery: [{"src":"/media/destinations/guadalajara/gallery-1-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-2-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-3-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-4-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-5-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-6-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-7-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"},{"src":"/media/destinations/guadalajara/gallery-8-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"}]
+gallery:
+- src: /media/destinations/guadalajara/gallery-1-enhanced-20261004.webp
+  alt: 'На фото: город Гвадалахара в Мексике'
+- src: /media/destinations/guadalajara/gallery-2-enhanced-20261004.webp
+  alt: 'На фото: город Гвадалахара в Мексике'
+- src: /media/destinations/guadalajara/gallery-3-enhanced-20261004.webp
+  alt: 'На фото: город Гвадалахара в Мексике'
+- src: /media/destinations/guadalajara/gallery-4-enhanced-20261004.webp
+  alt: 'На фото: город Гвадалахара в Мексике'
+- src: /media/destinations/guadalajara/gallery-5-enhanced-20261004.webp
+  alt: 'На фото: город Гвадалахара в Мексике'
+- src: /media/destinations/guadalajara/gallery-6-enhanced-20261004.webp
+  alt: 'На фото: город Гвадалахара в Мексике'
+- src: /media/destinations/guadalajara/gallery-7-enhanced-20261004.webp
+  alt: 'На фото: город Гвадалахара в Мексике'
+- src: /media/destinations/guadalajara/gallery-8-enhanced-20261004.webp
+  alt: 'На фото: город Гвадалахара в Мексике'
+- src: /media/tours/mexico-city-keretaro/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: Гвадалахара
 facts: []
 featureBands: []
 relatedDestinations: []

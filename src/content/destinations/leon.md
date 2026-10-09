@@ -9,7 +9,29 @@ destinationType: "city"
 summary: "Бывшая столица Никарагуа: руины старого города, собор Катедраль-де-ла-Асунсьон, музеи Рубена Дарио и коллекции религиозной живописи."
 searchAliases: []
 hero: {"src":"/media/destinations/leon/hero-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"}
-gallery: [{"src":"/media/destinations/leon/gallery-1-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-2-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-3-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-4-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-5-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-6-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-7-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-8-enhanced-20261005.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-9-enhanced-20261005.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-10-enhanced-20261005.webp","alt":"На фото: город Леон в Никарагуа"},{"src":"/media/destinations/leon/gallery-11-enhanced-20261005.webp","alt":"На фото: город Леон в Никарагуа"}]
+gallery:
+- src: /media/destinations/leon/gallery-1-enhanced-20261004.webp
+  alt: 'На фото: город Леон в Никарагуа'
+- src: /media/destinations/leon/gallery-2-enhanced-20261004.webp
+  alt: 'На фото: город Леон в Никарагуа'
+- src: /media/destinations/leon/gallery-3-enhanced-20261004.webp
+  alt: 'На фото: город Леон в Никарагуа'
+- src: /media/destinations/leon/gallery-4-enhanced-20261004.webp
+  alt: 'На фото: город Леон в Никарагуа'
+- src: /media/destinations/leon/gallery-5-enhanced-20261004.webp
+  alt: 'На фото: город Леон в Никарагуа'
+- src: /media/destinations/leon/gallery-6-enhanced-20261004.webp
+  alt: 'На фото: город Леон в Никарагуа'
+- src: /media/destinations/leon/gallery-7-enhanced-20261004.webp
+  alt: 'На фото: город Леон в Никарагуа'
+- src: /media/destinations/leon/gallery-8-enhanced-20261005.webp
+  alt: 'На фото: город Леон в Никарагуа'
+- src: /media/destinations/leon/gallery-9-enhanced-20261005.webp
+  alt: 'На фото: город Леон в Никарагуа'
+- src: /media/destinations/leon/gallery-10-enhanced-20261005.webp
+  alt: 'На фото: город Леон в Никарагуа'
+- src: /media/destinations/leon/gallery-11-enhanced-20261005.webp
+  alt: 'На фото: город Леон в Никарагуа'
 facts: []
 featureBands: []
 relatedDestinations: []

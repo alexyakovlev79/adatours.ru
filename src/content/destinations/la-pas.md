@@ -18,6 +18,8 @@ gallery:
   alt: 'На фото: столица Боливии город Ла Пас'
 - src: /media/destinations/la-pas/gallery-3-enhanced-20261003.webp
   alt: 'На фото: столица Боливии город Ла Пас'
+- src: /media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp
+  alt: Ла Пас
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -9,7 +9,27 @@ destinationType: "city"
 summary: "Столица Панамы с колониальными кварталами и небоскребами. Панама-Вьехо, Сан-Фелип, Авенида-Бальбоа и парки входят в знакомство с городом."
 searchAliases: []
 hero: {"src":/media/countries/panama/featureBands-1-enhanced-20261002.webp,"alt":"На фото: столица Панамы, город Панама-Сити"}
-gallery: [{"src":"/media/destinations/panama-city/gallery-1-enhanced-20261005.webp","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"/media/destinations/panama-city/gallery-2-enhanced-20261005.webp","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"/media/destinations/panama-city/gallery-3-enhanced-20261005.webp","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"/media/destinations/panama-city/gallery-4-enhanced-20261005.webp","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"/media/destinations/panama-city/gallery-5-enhanced-20261005.webp","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"/media/destinations/panama-city/gallery-6-enhanced-20261005.webp","alt":"На фото: столица Панамы, город Панама-Сити"},{"src":"/media/destinations/panama-city/gallery-7-enhanced-20261005.webp","alt":"На фото: столица Панамы, город Панама-Сити"}]
+gallery:
+- src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+  alt: 'На фото: столица Панамы, город Панама-Сити'
+- src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+  alt: 'На фото: столица Панамы, город Панама-Сити'
+- src: /media/destinations/panama-city/gallery-3-enhanced-20261005.webp
+  alt: 'На фото: столица Панамы, город Панама-Сити'
+- src: /media/destinations/panama-city/gallery-4-enhanced-20261005.webp
+  alt: 'На фото: столица Панамы, город Панама-Сити'
+- src: /media/destinations/panama-city/gallery-5-enhanced-20261005.webp
+  alt: 'На фото: столица Панамы, город Панама-Сити'
+- src: /media/destinations/panama-city/gallery-6-enhanced-20261005.webp
+  alt: 'На фото: столица Панамы, город Панама-Сити'
+- src: /media/destinations/panama-city/gallery-7-enhanced-20261005.webp
+  alt: 'На фото: столица Панамы, город Панама-Сити'
+- src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
+  alt: Панама-Сити
+- src: /media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp
+  alt: Панама-Сити
+- src: /media/tours/luchshee-v-paname/itinerary-0-images-0-src-enhanced-20261007.webp
+  alt: 'на фото: Тихоокеанское побережье Панама- Сити'
 facts: []
 featureBands: []
 relatedDestinations: []

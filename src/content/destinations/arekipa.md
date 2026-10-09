@@ -16,22 +16,26 @@ hero:
   src: /media/destinations/arequipa/hero-enhanced-20261005.webp
   alt: Арекипа, Перу
 gallery:
-  - src: /media/destinations/arequipa/gallery-1-enhanced-20261005.webp
-    alt: Арекипа, Перу
-  - src: /media/destinations/arequipa/gallery-2-enhanced-20261005.webp
-    alt: Историческая застройка Арекипы
-  - src: /media/destinations/arequipa/gallery-3-enhanced-20261005.webp
-    alt: Арекипа, Белый город Перу
-  - src: /media/destinations/arequipa/gallery-4-enhanced-20261005.webp
-    alt: Архитектура Арекипы
-  - src: /media/destinations/arequipa/gallery-5-enhanced-20261005.webp
-    alt: Городской пейзаж Арекипы
-  - src: /media/destinations/arequipa/gallery-6-enhanced-20261005.webp
-    alt: Арекипа и окрестности
-  - src: /media/destinations/arequipa/gallery-7-enhanced-20261005.webp
-    alt: Достопримечательности Арекипы
-  - src: /media/destinations/arequipa/gallery-8-enhanced-20261005.webp
-    alt: Арекипа в Перу
+- src: /media/destinations/arequipa/gallery-1-enhanced-20261005.webp
+  alt: Арекипа, Перу
+- src: /media/destinations/arequipa/gallery-2-enhanced-20261005.webp
+  alt: Историческая застройка Арекипы
+- src: /media/destinations/arequipa/gallery-3-enhanced-20261005.webp
+  alt: Арекипа, Белый город Перу
+- src: /media/destinations/arequipa/gallery-4-enhanced-20261005.webp
+  alt: Архитектура Арекипы
+- src: /media/destinations/arequipa/gallery-5-enhanced-20261005.webp
+  alt: Городской пейзаж Арекипы
+- src: /media/destinations/arequipa/gallery-6-enhanced-20261005.webp
+  alt: Арекипа и окрестности
+- src: /media/destinations/arequipa/gallery-7-enhanced-20261005.webp
+  alt: Достопримечательности Арекипы
+- src: /media/destinations/arequipa/gallery-8-enhanced-20261005.webp
+  alt: Арекипа в Перу
+- src: /media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-enhanced-20261007.webp
+  alt: Арекипа
+- src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp
+  alt: Арекипа
 relatedDestinations:
   - destination_peru_lima
   - destination_peru_cusco

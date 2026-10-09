@@ -47,8 +47,8 @@ itinerary:
 
     Размещение в Casa Corcovado. Включены завтрак, обед и ужин.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 - day: 3
   title: Национальный парк Корковадо
   places:
@@ -61,6 +61,9 @@ itinerary:
     Корковадо ценен именно плотностью природных наблюдений: на одной территории встречаются лесные растения, крупные млекопитающие, рептилии и яркие птицы. Прогулка проходит пешком, поэтому темп позволяет останавливаться у интересных участков и слушать лес, а не только перемещаться между заранее заданными точками.
 
     Возвращение в Casa Corcovado. Завтрак, обед и ужин включены.
+  images:
+  - src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/corcovado-national-park-place-generated-20261009-v1.webp
+    alt: Тропический лес и тихоокеанский берег национального парка Корковадо
 - day: 4
   title: Остров Каньо
   places:
@@ -75,6 +78,9 @@ itinerary:
     Ночь в Casa Corcovado. Завтрак, обед и ужин включены.
 
     После морской экскурсии остается время отдохнуть в лодже перед обратной дорогой.
+  images:
+  - src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/cano-island-place-generated-20261009-v1.webp
+    alt: Остров Каньо с лесным побережьем в Тихом океане
 - day: 5
   title: Возвращение в Сан-Хосе
   places:
@@ -84,8 +90,8 @@ itinerary:
 
     Последний день полностью посвящен обратной дороге после нескольких дней на тихоокеанском побережье.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/san-jose/gallery-2-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 included:
 - Русскоговорящий гид.
 - Трансферы.

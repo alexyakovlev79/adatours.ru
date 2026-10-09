@@ -73,8 +73,6 @@ itinerary:
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
     alt: Гватемала-Сити
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-2-enhanced-20261006.webp
-    alt: Антигуа-Гуатемала
 - day: 2
   title: Antigua
   places:
@@ -122,10 +120,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Лаго де Атитлан
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-2-enhanced-20261006.webp
-    alt: Антигуа-Гуатемала
+  - src: /media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
 - day: 4
   title: San Juan La Laguna - Santiago Atitlan
   places:
@@ -238,8 +234,6 @@ itinerary:
   images:
   - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Тикаль
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
 - day: 7
   title: Flores - Rio Dulce - Livingston
   places:
@@ -267,6 +261,9 @@ itinerary:
     Культура Garifuna сочетает африканские, карибские и европейские элементы.
 
     Размещение в Villa Caribe.
+  images:
+  - src: /media/destinations/tikal-and-flores/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Тикаль и Флорес в гватемале'
 - day: 8
   title: Rio Dulce - Quirigua - Copan, Honduras
   places:
@@ -316,8 +313,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
-    alt: Копан Руинас
+  - src: /media/destinations/copan-ruinas/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: руины Копана в Гондурасе'
 - day: 10
   title: San Salvador - San Andres - Joya de Ceren
   places:
@@ -336,6 +333,9 @@ itinerary:
     Здесь особенно заметна связь между извержениями, разрушением поселений и сохранением археологических слоев.
 
     Размещение в Barcelo San Salvador.
+  images:
+  - src: /media/destinations/san-salvador/featureBands-2-enhanced-20261006.webp
+    alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
 - day: 11
   title: San Salvador - La Union - Nicaragua - Leon - Managua
   places:
@@ -441,6 +441,9 @@ itinerary:
     Размещение в Arenal Paraiso Resort & Spa.
 
     Включены завтрак и обед.
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 15
   title: Arenal - Monteverde
   places:
@@ -460,6 +463,9 @@ itinerary:
     Размещение в El Establo Mountain Resort.
 
     Завтрак включен.
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 16
   title: Monteverde - Tarcoles - Manuel Antonio
   places:
@@ -484,6 +490,9 @@ itinerary:
     Размещение в Parador Resort & Spa.
 
     Включены завтрак и обед.
+  images:
+  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 17
   title: Manuel Antonio
   places:
@@ -508,6 +517,9 @@ itinerary:
     Размещение в Parador Resort & Spa.
 
     Завтрак включен.
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 18
   title: Manuel Antonio - Panama - Boquete
   places:
@@ -542,6 +554,9 @@ itinerary:
     Размещение в La Casa de La Abuela.
 
     Завтрак включен.
+  images:
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/baru-volcano-place-generated-20261009-v1.webp
+    alt: Горные склоны и дальние виды вулкана Бару
 - day: 20
   title: Boquete - Panama City
   places:
@@ -578,10 +593,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
-    alt: Панама-Сити
-  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Лучшее в Центральной Америке
+  - src: /media/destinations/boquete/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: горный курорт Бокете в Панаме'
 - day: 21
   title: Национальный парк Chagres - Embera - Тихоокеанская Ривьера
   places:
@@ -610,6 +623,9 @@ itinerary:
     Размещение в Playa Blanca Beach Resort.
 
     Завтрак включен, традиционный обед предусмотрен программой дня.
+  images:
+  - src: /media/tours/panama-2024/itinerary-4-images-0-src-enhanced-20261007.webp
+    alt: Национальный парк Чагрес
 - day: 22
   title: Тихоокеанская Ривьера
   places: []

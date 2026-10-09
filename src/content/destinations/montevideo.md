@@ -12,22 +12,24 @@ hero:
   src: /media/countries/uruguay/featureBands-1-enhanced-20261002.webp
   alt: "На фото: древний форт в столице Уругвая городе Монтевидео"
 gallery:
-  - src: "/media/destinations/montevideo/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: в столице Уругвая городе Монтевидео"
-  - src: "/media/destinations/montevideo/gallery-2-enhanced-20261005.webp"
-    alt: "На фото: в столице Уругвая городе Монтевидео"
-  - src: "/media/destinations/montevideo/gallery-3-enhanced-20261005.webp"
-    alt: "На фото: в столице Уругвая городе Монтевидео"
-  - src: "/media/destinations/montevideo/gallery-4-enhanced-20261005.webp"
-    alt: "На фото: в столице Уругвая городе Монтевидео"
-  - src: "/media/destinations/montevideo/gallery-5-enhanced-20261005.webp"
-    alt: "На фото: в столице Уругвая городе Монтевидео"
-  - src: "/media/destinations/montevideo/gallery-6-enhanced-20261005.webp"
-    alt: "На фото: в столице Уругвая городе Монтевидео"
-  - src: "/media/destinations/montevideo/gallery-7-enhanced-20261005.webp"
-    alt: "На фото: в столице Уругвая городе Монтевидео"
-  - src: "/media/destinations/montevideo/gallery-8-enhanced-20261005.webp"
-    alt: "На фото: в столице Уругвая городе Монтевидео"
+- src: /media/destinations/montevideo/gallery-1-enhanced-20261005.webp
+  alt: 'На фото: в столице Уругвая городе Монтевидео'
+- src: /media/destinations/montevideo/gallery-2-enhanced-20261005.webp
+  alt: 'На фото: в столице Уругвая городе Монтевидео'
+- src: /media/destinations/montevideo/gallery-3-enhanced-20261005.webp
+  alt: 'На фото: в столице Уругвая городе Монтевидео'
+- src: /media/destinations/montevideo/gallery-4-enhanced-20261005.webp
+  alt: 'На фото: в столице Уругвая городе Монтевидео'
+- src: /media/destinations/montevideo/gallery-5-enhanced-20261005.webp
+  alt: 'На фото: в столице Уругвая городе Монтевидео'
+- src: /media/destinations/montevideo/gallery-6-enhanced-20261005.webp
+  alt: 'На фото: в столице Уругвая городе Монтевидео'
+- src: /media/destinations/montevideo/gallery-7-enhanced-20261005.webp
+  alt: 'На фото: в столице Уругвая городе Монтевидео'
+- src: /media/destinations/montevideo/gallery-8-enhanced-20261005.webp
+  alt: 'На фото: в столице Уругвая городе Монтевидео'
+- src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-0-images-0-src-enhanced-20261007.webp
+  alt: Дворец Сальво на площади Независимости, башня-символ Монтевидео
 facts: []
 featureBands: []
 relatedDestinations: []

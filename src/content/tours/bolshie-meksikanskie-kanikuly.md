@@ -64,8 +64,6 @@ itinerary:
   images:
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Теотиуакан
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Мехико
 - day: 3
   title: Мехико-Сити - Вильяэрмоса - Паленке, 145 км
   places:
@@ -79,8 +77,8 @@ itinerary:
 
     По прибытии вас встретит водитель. Переезд в Паленке и размещение в отеле 4*.
   images:
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Мехико
+  - src: /media/destinations/mexico-city-and-teotihuacan/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица, город Мехико Сити в Мексике'
 - day: 4
   title: Паленке - Кампече, 365 км
   places:
@@ -116,8 +114,8 @@ itinerary:
 
     После осмотра Ушмаля переезд в Мериду и размещение в отеле 4*.
   images:
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: Кампече
+  - src: /media/destinations/campeche/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: город Кампече в Мексике'
 - day: 6
   title: Мерида - Чичен-Ица, 130 км - сенот - Канкун / Ривьера Майя, 220-280 км
   places:

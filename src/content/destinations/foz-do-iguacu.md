@@ -12,8 +12,12 @@ hero:
   src: /media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp
   alt: Водопады Игуасу со стороны Бразилии
 gallery:
-  - src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
-    alt: Водопады Игуасу
+- src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
+  alt: Водопады Игуасу
+- src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
+  alt: Мостик над водой к Глотке Дьявола, Игуасу, Аргентина
+- src: /media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp
+  alt: Экскурсия Макуко-сафари на водопадах Игуасу, заплыв под каскады в Бразилии
 relatedDestinations:
   - destination_brazil_rio
   - destination_argentina_buenos_aires

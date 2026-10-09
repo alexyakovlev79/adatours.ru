@@ -49,6 +49,9 @@ itinerary:
     \ проходит через лес к водопадам. На территории также находятся галерея колибри, серпентарий, сад птиц, ферма бабочек\
     \ и экспозиция лягушек.\n\nПосле экскурсии переезд в район вулкана Ареналь.\n\nНочь в Arenal Paraíso Resort & Spa.  \n\
     Питание: завтрак, обед."
+  images:
+  - src: /media/tours/zhemchuzhiny-kosta-riki-za-10-dnej/poas-crater-generated-20261009-v1.webp
+    alt: Кратер вулкана Поас с озером среди вулканических склонов
 - day: 3
   title: Ареналь - заповедник Каньо-Негро
   places:
@@ -58,6 +61,9 @@ itinerary:
     \ растений и диких животных. Здесь можно увидеть ленивцев, обезьян, кайманов и василисков.\n\nПо прибытии предлагают напитки,\
     \ после чего начинается круиз по заповеднику на комфортабельном судне. Во время прогулки наблюдаем местную флору и фауну.\n\
     \nПосле экскурсии предусмотрен обед.\n\nНочь в Arenal Paraíso Resort & Spa.  \nПитание: завтрак, обед."
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 4
   title: Вулкан Ареналь - Монтеверде
   places:
@@ -79,8 +85,8 @@ itinerary:
     \ леса.\n\nТерритория заповедника составляет около 10 000 гектаров. Он входит в сеть охраняемых лесов Коста-Рики и считается\
     \ одним из главных мест страны для наблюдения за природой.\n\nНочь в El Establo Mountain Resort.  \nПитание: завтрак."
   images:
-  - src: /media/tours/klassicheskaya-kosta-rika/hero-src-enhanced-20261007.webp
-    alt: 'на фото: флора и фауна Коста-Рики, Монтеверде'
+  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 6
   title: Сан-Хосе
   places:
@@ -90,8 +96,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 included:
 - трансферы и транспорт;
 - проживание;

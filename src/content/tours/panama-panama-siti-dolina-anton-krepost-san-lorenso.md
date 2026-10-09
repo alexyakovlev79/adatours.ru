@@ -53,8 +53,8 @@ itinerary:
     \ также посетите частный зоосад и ботанический сад «Эль Нисперо».\n\n**Обед:** в стоимость экскурсии не входит. Гид подскажет\
     \ рестораны на месте.  \n**Канопи-тур:** оплачивается дополнительно."
   images:
-  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
-    alt: Панама-Сити
+  - src: /media/destinations/el-valle-de-anton/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: горный курорт Эль Валле в Панаме'
 - excursionRef: excursion_panama_chorro_del_macho_canopy
   places: []
 - day: 3
@@ -108,8 +108,8 @@ itinerary:
 
     После окончания экскурсии трансфер в аэропорт и вылет далее по маршруту.
   images:
-  - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-19-images-0-src-enhanced-20261007.webp
-    alt: Панама-Сити
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: столица Панамы, город Панама-Сити'
 included:
 - Налоги.
 - Трансферы аэропорт - отель - аэропорт.

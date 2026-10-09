@@ -15,22 +15,24 @@ hero:
   src: /media/countries/el-salvador/featureBands-3-enhanced-20261002.webp
   alt: "На фото: вулкан на фоне Сан-Сальвадора в Эль-Сальвадоре"
 gallery:
-  - src: /media/destinations/san-salvador/featureBands-1-enhanced-20261006.webp
-    alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: /media/destinations/san-salvador/featureBands-2-enhanced-20261006.webp
-    alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: /media/destinations/san-salvador/gallery-3-enhanced-20261006.webp
-    alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: /media/destinations/san-salvador/gallery-4-enhanced-20261006.webp
-    alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: /media/destinations/san-salvador/gallery-5-enhanced-20261006.webp
-    alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: /media/destinations/san-salvador/gallery-6-enhanced-20261006.webp
-    alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: /media/destinations/san-salvador/gallery-7-enhanced-20261006.webp
-    alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
-  - src: /media/destinations/san-salvador/gallery-8-enhanced-20261006.webp
-    alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
+- src: /media/destinations/san-salvador/featureBands-1-enhanced-20261006.webp
+  alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+- src: /media/destinations/san-salvador/featureBands-2-enhanced-20261006.webp
+  alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+- src: /media/destinations/san-salvador/gallery-3-enhanced-20261006.webp
+  alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+- src: /media/destinations/san-salvador/gallery-4-enhanced-20261006.webp
+  alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+- src: /media/destinations/san-salvador/gallery-5-enhanced-20261006.webp
+  alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+- src: /media/destinations/san-salvador/gallery-6-enhanced-20261006.webp
+  alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+- src: /media/destinations/san-salvador/gallery-7-enhanced-20261006.webp
+  alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+- src: /media/destinations/san-salvador/gallery-8-enhanced-20261006.webp
+  alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
+- src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-0-src-enhanced-20261007.webp
+  alt: 'На фото: Сан-Сальвадор - столица Сальвадора'
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

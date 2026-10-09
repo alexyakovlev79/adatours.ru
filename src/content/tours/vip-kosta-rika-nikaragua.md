@@ -127,8 +127,8 @@ itinerary:
 
     Экскурсия рассчитана примерно на 12 часов и начинается рано утром.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: 'на фото: Национальный Парк Вулкан Ареналь в Коста-Рике'
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - excursionRef: excursion_costa_rica_monteverde_viento_fresco_day_trip
   places: []
 - day: 4
@@ -146,6 +146,9 @@ itinerary:
     Вдоль Рио-Селесте встречаются горячие источники.
 
     После экскурсии возвращение в Hotel el Silencio.
+  images:
+  - src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
+    alt: Рио-Селесте
 - day: 5
   title: Подвесные мосты Ареналя, Sky Tram, Sky Trek и каньонинг
   places:
@@ -165,8 +168,8 @@ itinerary:
 
     Возвращение в Hotel el Silencio Relais & Chateaux.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: 'на фото: Национальный Парк Вулкан Ареналь в Коста-Рике'
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 6
   title: Кофейная плантация Дока, вулкан Поас и водопады Ла-Пас
   places:
@@ -184,6 +187,9 @@ itinerary:
     Также предусмотрены галерея колибри, серпентарий, сад птиц, ферма бабочек и экспозиция лягушек.
 
     После экскурсии возвращение в Hotel el Silencio.
+  images:
+  - src: /media/tours/zhemchuzhiny-kosta-riki-za-10-dnej/poas-crater-generated-20261009-v1.webp
+    alt: Кратер вулкана Поас с озером среди вулканических склонов
 - day: 7
   title: Пунтаренас и частный перелет в Никарагуа
   places: []
@@ -236,6 +242,9 @@ itinerary:
     3 свободных дня без экскурсионной программы.
 
     Это время оставлено для отдыха у лагуны после насыщенного маршрута по Коста-Рике и экскурсионного дня в Никарагуа.
+  images:
+  - src: /media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-place-generated-20261009-v1.webp
+    alt: Озеро в вулканическом кратере лагуны Апойо
 - day: 10
   title: Отдых у лагуны-де-Апойо
   places:
@@ -261,8 +270,8 @@ itinerary:
 
     После прибытия - вылет домой.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: 'на фото: Сан Хосе, столица Коста Рики'
+  - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 included:
 - Проживание в отелях на базе завтраков или на отдельно оговоренных условиях.
 - Экскурсии с русскоговорящим гидом.

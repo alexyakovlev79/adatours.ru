@@ -12,12 +12,18 @@ hero:
   src: /media/countries/uruguay/featureBands-3-enhanced-20261002.webp
   alt: "На фото: курорт Пунта дель Эсте в Уругвае"
 gallery:
-  - src: "/media/destinations/punta-del-este/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: курорт Пунта дель Эсте в Уругвае"
-  - src: "/media/destinations/punta-del-este/gallery-2-enhanced-20261005.webp"
-    alt: "На фото: курорт Пунта дель Эсте в Уругвае"
-  - src: "/media/destinations/punta-del-este/gallery-3-enhanced-20261005.webp"
-    alt: "На фото: курорт Пунта дель Эсте в Уругвае"
+- src: /media/destinations/punta-del-este/gallery-1-enhanced-20261005.webp
+  alt: 'На фото: курорт Пунта дель Эсте в Уругвае'
+- src: /media/destinations/punta-del-este/gallery-2-enhanced-20261005.webp
+  alt: 'На фото: курорт Пунта дель Эсте в Уругвае'
+- src: /media/destinations/punta-del-este/gallery-3-enhanced-20261005.webp
+  alt: 'На фото: курорт Пунта дель Эсте в Уругвае'
+- src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: Пальцы Ла-Мано в Пунта-дель-Эсте, Уругвай
+- src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-3-images-0-src-enhanced-20261007.webp
+  alt: Белые каситы на пляже Манса в Пунта-дель-Эсте, курортный колорит Уругвая
+- src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-4-images-0-src-enhanced-20261007.webp
+  alt: Вид на марину Пунта-дель-Эсте, яхты и залив, панорама Атлантического побережья Уругвая
 facts: []
 featureBands: []
 relatedDestinations: []

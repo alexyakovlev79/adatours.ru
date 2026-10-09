@@ -37,6 +37,7 @@ destinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_san_hose
+- destination_costa_rica_plajya_tamarindo
 audiences: []
 route:
 - Гватемала
@@ -90,10 +91,8 @@ itinerary:
     \ начинается примерно с 1900 м и продолжается до отметки около 2300 м. После спуска трансфер к озеру Атитлан.\n\n**Ночь:**\
     \ Villa Santa Catarina.  \n**Питание:** завтрак."
   images:
-  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: озеро Атитлан в Гватемале'
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: город Антигуа в Гватемале'
+  - src: /media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
 - day: 4
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан
   places:
@@ -163,10 +162,8 @@ itinerary:
     \ только по воде. Культура гарифуна здесь сочетает африканские, карибские и европейские элементы.\n\n**Ночь:** Villa Caribe.\
     \  \n**Питание:** завтрак."
   images:
-  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-6-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Ливингстон в Гватемале'
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
-    alt: 'На фото: город Флорес'
 - day: 8
   title: Рио-Дульсе - Киригуа - Копан, Гондурас
   places:
@@ -191,10 +188,8 @@ itinerary:
     \ периода. Каждая из ее 63 ступеней украшена письменами, а по сторонам расположены балюстрады с изображениями змей и птиц.\n\
     \nПосле осмотра комплекса переезд в Сан-Сальвадор.\n\n**Ночь:** Barceló San Salvador.  \n**Питание:** завтрак."
   images:
-  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: Сан-Сальвадор - столица Сальвадора'
-  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: пирамиды и руины Копана в Гватемале'
+  - src: /media/destinations/copan-ruinas/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: руины Копана в Гондурасе'
 - day: 10
   title: Сан-Сальвадор - Сан-Андрес - Хойя-де-Серен
   places:
@@ -222,8 +217,6 @@ itinerary:
     \ музей Ортиса Гурдиана и увидите революционные фрески.\n\nПосле экскурсии переезд в Манагуа.\n\n**Ночь:** Real Intercontinental\
     \ Metrocento Managua.  \n**Питание:** завтрак."
   images:
-  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: Сан-Сальвадор - столица Сальвадора'
   - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-1-src-enhanced-20261007.webp
     alt: 'На фото: столица Никарагуа город Манагуа'
 - day: 12
@@ -243,10 +236,8 @@ itinerary:
     \ монастырь Сан-Франциско, музей керамики, церковь Ла-Мерсед и улицу Ла-Кальсада.\n\n**Ночь:** La Gran Francia.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: город Гранада в Никарагуа'
-  - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-1-src-enhanced-20261007.webp
-    alt: 'На фото: столица Никарагуа город Манагуа'
+  - src: /media/destinations/managua/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: столица Никарагуа. город Манагуа'
 - day: 13
   title: Гранада - Тихоокеанское побережье Коста-Рики
   places:
@@ -260,6 +251,9 @@ itinerary:
   title: Тихоокеанское побережье
   places: []
   text: "Свободный день и пляжный отдых.\n\n**Ночь:** Wyndham Tamarindo.  \n**Питание:** завтрак."
+  images:
+  - src: /media/destinations/playa-tamarindo/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: пляж Плайя Тамариндо в Коста-Рике'
 - day: 15
   title: Тихоокеанское побережье - Монтеверде
   places:
@@ -267,6 +261,9 @@ itinerary:
   text: "Переезд в Монтеверде. В программе «Подвесные мосты» и канопи-тур в лесу Монтеверде. При удаче можно увидеть кетцаля,\
     \ священную птицу майя, которая находится на грани исчезновения.\n\n**Ночь:** El Establo Mountain Resort.  \n**Питание:**\
     \ завтрак."
+  images:
+  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 16
   title: Монтеверде - Ареналь
   places:
@@ -289,8 +286,8 @@ itinerary:
     \ комфортабельном судне. Основная часть экскурсии посвящена наблюдению за природой с воды.\n\n**Ночь:** Arenal Paraíso\
     \ Resort & Spa.  \n**Питание:** завтрак, обед."
   images:
-  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-15-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: вулкан Ареналь в Коста-Рике'
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 18
   title: Ареналь - вулкан Поас - Ла-Пас - Сан-Хосе
   places:
@@ -305,10 +302,8 @@ itinerary:
     \ галерею колибри, серпентарий, дом птиц, сад бабочек и экспозицию лягушек. После экскурсии трансфер в Сан-Хосе.\n\n**Ночь:**\
     \ Barceló San Jose Palacio.  \n**Питание:** завтрак, обед."
   images:
-  - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-15-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: вулкан Ареналь в Коста-Рике'
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 19
   title: Сан-Хосе
   places:
@@ -380,6 +375,7 @@ routeDestinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_san_hose
+- destination_costa_rica_plajya_tamarindo
 primaryThemes: ["theme_culture","theme_wildlife"]
 themes: ["theme_beach"]
 ---

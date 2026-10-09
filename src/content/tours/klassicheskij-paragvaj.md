@@ -83,6 +83,9 @@ itinerary:
     Во время поездки можно увидеть характерные для Чако растения и животных.
 
     Вечером возвращаемся в отель в Филадельфии.
+  images:
+  - src: /media/tours/klassicheskij-paragvaj/chaco-place-generated-20261009-v1.webp
+    alt: Сухой лес и равнинная дорога парагвайского Чако
 - day: 4
   title: Филадельфия - школа Пай-Пуку - Асунсьон
   places:
@@ -135,6 +138,9 @@ itinerary:
     После посещения завода продолжаем путь на север в Сьюдад-дель-Эсте.
 
     Прибытие и размещение в отеле 4*.
+  images:
+  - src: /media/destinations/ciudad-del-este/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: город Сьюдад-дель-Эсте в Парагвае'
 - day: 7
   title: Моисей Бертони - Итайпу - Асунсьон
   places:
@@ -151,16 +157,16 @@ itinerary:
 
     После посещения плотины возвращаемся в Асунсьон и едем в отель 4*/5* с завтраком.
   images:
-  - src: "/media/excursions/siti-tur-v-asunsone/gallery-1-src-enhanced-20261007.webp"
-    alt: 'на фото: Асунсьон'
+  - src: /media/destinations/asuncion/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: город Асунсьон - столица Парагвая'
 - day: 8
   title: Асунсьон
   places:
   - Асунсьон
   text: В соответствии со временем вылета трансфер в аэропорт Асунсьона.
   images:
-  - src: "/media/excursions/siti-tur-v-asunsone/gallery-3-src-enhanced-20261007.webp"
-    alt: на фото:Асунсьон
+  - src: /media/destinations/asuncion/gallery-2-enhanced-20261005.webp
+    alt: 'На фото: город Асунсьон - столица Парагвая'
 included:
 - трансфер аэропорт - отель в Асунсьоне;
 - 7 ночей в отелях 3-4* с завтраками;

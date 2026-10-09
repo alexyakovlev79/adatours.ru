@@ -74,7 +74,7 @@ itinerary:
 
      После экскурсии возвращение в отель и отдых, чтобы спокойно адаптироваться к высоте Куско.
   images:
-  - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
+  - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
     alt: Лима
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
@@ -93,6 +93,9 @@ itinerary:
     С 1983 года Мачу-Пикчу входит в список Всемирного наследия ЮНЕСКО, а с 2007 года относится к Новым чудесам света.
 
     Во второй половине дня спуск в Агуас-Кальентес. Предусмотрен обед в ресторане национальной кухни Ayasca. Затем возвращение поездом в Куско, встреча и трансфер в отель.
+  images:
+  - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
+    alt: Куско
 - day: 4
   title: Куско или Священная долина
   places:
@@ -106,6 +109,9 @@ itinerary:
     Дополнительно можно заказать экскурсию в Священную долину инков за $225.
 
     В программу дополнительной поездки входит обед, шведский стол с блюдами национальной кухни.
+  images:
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
+    alt: Город Куско, Перу - древняя столица империи инков
 - excursionRef: excursion_peru_sacred_valley_full_day
   places: []
 - day: 5
@@ -141,8 +147,8 @@ itinerary:
 
     Обед на острове. После возвращения в Пуно трансфер в аэропорт и перелет в Лиму. Встреча в аэропорту Лимы и трансфер в отель.
   images:
-  - src: "/media/tours/manyashchij-peru-i-ikitos/itinerary-6-images-0-src-enhanced-20261007.webp"
-    alt: Пуно
+  - src: /media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: город Пуно в Перу и озеро Титикака'
 - day: 7
   title: Лима - Икитос - Heliconia Amazon River Lodge
   places:
@@ -157,10 +163,8 @@ itinerary:
 
     К вечеру предусмотрено наблюдение за закатом. После возвращения в лодж ужин и отдых. Вечером местные гиды рассказывают истории и легенды Амазонии.
   images:
-  - src: "/media/tours/manyashchij-peru-i-ikitos/hero-src-enhanced-20261007.webp"
+  - src: /media/tours/manyashchij-peru-i-ikitos/hero-src-enhanced-20261007.webp
     alt: Манящий Перу и Икитос
-  - src: "/media/tours/manyashchij-peru-i-ikitos/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Лима
 - day: 8
   title: 'Амазония: птицы, рыбалка и розовые дельфины'
   places:
@@ -175,6 +179,9 @@ itinerary:
     После обеда поездка на лодке к местам, где растут гигантские кувшинки виктория регия. Далее предусмотрено посещение местных жителей, которые много поколений живут на берегах Амазонки. Во время встречи вы узнаете о повседневной жизни и традициях общины.
 
     После ужина - ночная прогулка по джунглям. В темное время суток лес звучит и выглядит иначе, поэтому эта экскурсия дополняет дневные наблюдения.
+  images:
+  - src: /media/destinations/iquitos/gallery-1-enhanced-20261005.webp
+    alt: ''
 - day: 9
   title: Амазония - Икитос - Лима
   places:
@@ -189,10 +196,8 @@ itinerary:
 
     В назначенное время трансфер в аэропорт и перелет в Лиму. По прибытии встреча, трансфер в гостиницу и размещение.
   images:
-  - src: "/media/tours/manyashchij-peru-i-ikitos/hero-src-enhanced-20261007.webp"
-    alt: Манящий Перу и Икитос
-  - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
-    alt: Лима
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: Лима — Перу
 - day: 10
   title: Лима
   places:
@@ -218,7 +223,7 @@ itinerary:
 
     Ночь в отеле в Лиме. Этот свободный день оставляет возможность самостоятельно выбрать темп перед международным вылетом и при желании добавить одну из перечисленных экскурсий.
   images:
-  - src: "/media/tours/manyashchij-peru-i-ikitos/itinerary-0-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Лима
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []
@@ -234,8 +239,8 @@ itinerary:
   - Лима
   text: Завтрак. Трансфер в аэропорт для международного вылета.
   images:
-  - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
-    alt: Лима
+  - src: /media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
+    alt: Лима - столица Перу, вид с берега
 included:
 - Внутренние авиаперелеты Лима - Куско, Хулиака - Лима и Лима - Икитос - Лима.
 - Трансферы, переезды и включенное питание.

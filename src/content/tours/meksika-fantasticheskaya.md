@@ -75,6 +75,9 @@ itinerary:
     Затем маршрут продолжается в Теотиуакан примерно в 50 км к северо-востоку от Мехико. Археологический комплекс известен Пирамидами Солнца и Луны. Город возник в начале I века н. э. и достиг расцвета примерно к 500 году, когда его влияние распространялось далеко за пределы центральной Мексики.
 
     Во второй половине дня возвращение в отель в Мехико.
+  images:
+  - src: /media/destinations/teotihuacan/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: пирамида Солнца в Теотиуакане в Мексике'
 - day: 4
   title: Мехико - Тустла-Гутьеррес - каньон Сумидеро - Сан-Кристобаль
   places:
@@ -91,10 +94,8 @@ itinerary:
 
     После каньона переезд в Сан-Кристобаль-де-лас-Касас. Для категории 4* предусмотрен Mansion del Valle, 2 ночи в стандартном номере. Для категории 5* - Casa del Alma, 2 ночи в номере Suite.
   images:
-  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: Сан Кристобал де Лас Касас
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Мехико
+  - src: /media/destinations/mexico-city-and-teotihuacan/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица, город Мехико Сити в Мексике'
 - day: 5
   title: Сан-Кристобаль, Синакантан и Сан-Хуан-Чамула
   places:
@@ -125,10 +126,8 @@ itinerary:
 
     После экскурсии продолжение пути в Паленке и размещение. В категории 4* предусмотрен Tulija Palenque, 3 ночи в стандартном номере. В категории 5* - Quinta Chanabnal, 3 ночи в Junior Suite.
   images:
-  - src: /media/tours/meksika-fantasticheskaya/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Паленке
-  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: Сан Кристобал де Лас Касас
+  - src: /media/destinations/san-cristobal-de-las-casas/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
 - day: 7
   title: Яшчилан и Бонампак
   places:
@@ -173,10 +172,8 @@ itinerary:
 
     Трансферы в Канкуне выполняются с испаноговорящим водителем, без гида и отдельного сопровождения.
   images:
-  - src: /media/tours/meksika-fantasticheskaya/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: Канкун
-  - src: /media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: Паленке
+  - src: /media/destinations/palenque/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: древний город майя Паленке в Мексике'
 - day: 10
   title: Канкун
   places:
@@ -205,8 +202,8 @@ itinerary:
   - Канкун
   text: После завтрака в назначенное время трансфер в аэропорт Канкуна для вылета домой.
   images:
-  - src: /media/tours/meksika-fantasticheskaya/itinerary-11-images-0-src-enhanced-20261007.webp
-    alt: Канкун
+  - src: /media/destinations/cancun/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: курорт Канкун в Мексике'
 included:
 - 11 ночей проживания в отелях маршрута или аналогичных.
 - Ежедневные американские завтраки со 2-го по 12-й день.

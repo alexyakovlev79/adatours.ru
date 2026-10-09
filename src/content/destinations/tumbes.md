@@ -12,18 +12,22 @@ hero:
   src: "/media/destinations/tumbes/hero-enhanced-20261005.webp"
   alt: "На фото: город Тумбес в Перу"
 gallery:
-  - src: "/media/destinations/tumbes/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: город Тумбес в Перу"
-  - src: "/media/destinations/tumbes/gallery-2-enhanced-20261005.webp"
-    alt: "На фото: город Тумбес в Перу"
-  - src: "/media/destinations/tumbes/gallery-3-enhanced-20261005.webp"
-    alt: "На фото: город Тумбес в Перу"
-  - src: "/media/destinations/tumbes/gallery-4-enhanced-20261005.webp"
-    alt: "На фото: город Тумбес в Перу"
-  - src: "/media/destinations/tumbes/gallery-5-enhanced-20261005.webp"
-    alt: "На фото: город Тумбес в Перу"
-  - src: "/media/destinations/tumbes/gallery-6-enhanced-20261005.webp"
-    alt: "На фото: город Тумбес в Перу"
+- src: /media/destinations/tumbes/gallery-1-enhanced-20261005.webp
+  alt: 'На фото: город Тумбес в Перу'
+- src: /media/destinations/tumbes/gallery-2-enhanced-20261005.webp
+  alt: 'На фото: город Тумбес в Перу'
+- src: /media/destinations/tumbes/gallery-3-enhanced-20261005.webp
+  alt: 'На фото: город Тумбес в Перу'
+- src: /media/destinations/tumbes/gallery-4-enhanced-20261005.webp
+  alt: 'На фото: город Тумбес в Перу'
+- src: /media/destinations/tumbes/gallery-5-enhanced-20261005.webp
+  alt: 'На фото: город Тумбес в Перу'
+- src: /media/destinations/tumbes/gallery-6-enhanced-20261005.webp
+  alt: 'На фото: город Тумбес в Перу'
+- src: /media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-13-images-0-src-enhanced-20261007.webp
+  alt: Тумбес
+- src: /media/tours/peru-8d/hero-enhanced-20260930.webp
+  alt: Весь Многоликий Перу  + Пляжи Тумбеса
 facts: []
 featureBands: []
 relatedDestinations: []

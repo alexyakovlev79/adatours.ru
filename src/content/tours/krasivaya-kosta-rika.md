@@ -13,6 +13,7 @@ destinations:
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_zapovednik_kano_negro
 - destination_costa_rica_monteverde_santa_elena
+- destination_costa_rica_pacific_coast
 audiences: []
 route:
 - Сан-Хосе
@@ -85,10 +86,8 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
-  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 - day: 4
   title: Вулкан Ареналь и подвесные мосты Mistico
   places:
@@ -162,8 +161,8 @@ itinerary:
 
     Включены завтрак и ужин.
   images:
-  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 7
   title: Ареналь - Монтеверде и ферма Trapiche
   places:
@@ -186,10 +185,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
-    alt: Монтеверде
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 8
   title: Монтеверде и облачный лес Selvatura
   places:
@@ -226,8 +223,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
-    alt: Монтеверде
+  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 10
   title: Северное побережье Тихого океана
   places: []
@@ -241,6 +238,9 @@ itinerary:
     Каждый день включен завтрак.
 
     После активной части маршрута у вулканов и в лесах этот блок позволяет провести несколько дней в спокойном режиме.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-2-generated-20261009-v1.webp
+    alt: Вечерний прибой на Тихоокеанском побережье Коста-Рики
 - day: 11
   title: Северное побережье Тихого океана
   places: []
@@ -254,6 +254,9 @@ itinerary:
     Каждый день включен завтрак.
 
     После активной части маршрута у вулканов и в лесах этот блок позволяет провести несколько дней в спокойном режиме.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-3-generated-20261009-v1.webp
+    alt: Тропические деревья над тихоокеанским пляжем Коста-Рики
 - day: 12
   title: Северное побережье Тихого океана
   places: []
@@ -267,6 +270,9 @@ itinerary:
     Каждый день включен завтрак.
 
     После активной части маршрута у вулканов и в лесах этот блок позволяет провести несколько дней в спокойном режиме.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-4-generated-20261009-v1.webp
+    alt: Скалистый участок тихоокеанского берега Коста-Рики
 - day: 13
   title: Северное побережье Тихого океана
   places: []
@@ -280,6 +286,9 @@ itinerary:
     Каждый день включен завтрак.
 
     После активной части маршрута у вулканов и в лесах этот блок позволяет провести несколько дней в спокойном режиме.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-5-generated-20261009-v1.webp
+    alt: Тихоокеанская бухта Коста-Рики среди тропической зелени
 - day: 14
   title: Северное побережье Тихого океана
   places: []
@@ -293,6 +302,9 @@ itinerary:
     Каждый день включен завтрак.
 
     После активной части маршрута у вулканов и в лесах этот блок позволяет провести несколько дней в спокойном режиме.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-1-generated-20261009-v1.webp
+    alt: Песчаный пляж на Тихоокеанском побережье Коста-Рики
 - day: 15
   title: Отъезд
   places: []
@@ -336,6 +348,7 @@ routeDestinations:
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_zapovednik_kano_negro
 - destination_costa_rica_monteverde_santa_elena
+- destination_costa_rica_pacific_coast
 primaryThemes: ["theme_wildlife","theme_beach"]
 themes: ["theme_adventure"]
 ---

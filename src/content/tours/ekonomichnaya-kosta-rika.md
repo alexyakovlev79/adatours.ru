@@ -50,8 +50,6 @@ itinerary:
   images:
   - src: /media/tours/costa-rica/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
 - day: 3
   title: Национальный парк Тортугеро - вулкан Аренал
   places:
@@ -84,6 +82,9 @@ itinerary:
     Ночь в Arenal Paraíso Resort & Spa.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 5
   title: Монтеверде - Национальный парк Мануэль-Антонио
   places:
@@ -112,6 +113,9 @@ itinerary:
     Ночь в отеле San Bada.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 7
   title: Сан-Хосе
   places:

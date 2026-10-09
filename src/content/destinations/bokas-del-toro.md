@@ -9,7 +9,27 @@ destinationType: "island"
 summary: "Архипелаг Панамы с пальмовыми лесами, пляжами и коралловыми рифами. В прозрачной воде можно наблюдать скатов, омаров и тропических рыб."
 searchAliases: []
 hero: {"src":"/media/destinations/bocas-del-toro/hero-enhanced-20261005.webp","alt":"На фото: архипелаг Бокас дель Торо в Панаме"}
-gallery: [{"src":"/media/destinations/bocas-del-toro/gallery-1-enhanced-20261005.webp","alt":"На фото: архипелаг Бокас дель Торо в Панаме"},{"src":"/media/destinations/bocas-del-toro/gallery-2-enhanced-20261005.webp","alt":"На фото: архипелаг Бокас дель Торо в Панаме"},{"src":"/media/destinations/bocas-del-toro/gallery-3-enhanced-20261005.webp","alt":"На фото: архипелаг Бокас дель Торо в Панаме"},{"src":"/media/destinations/bocas-del-toro/gallery-4-enhanced-20261005.webp","alt":"На фото: архипелаг Бокас дель Торо в Панаме"},{"src":"/media/destinations/bocas-del-toro/gallery-5-enhanced-20261005.webp","alt":"На фото: архипелаг Бокас дель Торо в Панаме"},{"src":"/media/destinations/bocas-del-toro/gallery-6-enhanced-20261005.webp","alt":"На фото: архипелаг Бокас дель Торо в Панаме"},{"src":"/media/destinations/bocas-del-toro/gallery-7-enhanced-20261005.webp","alt":"На фото: архипелаг Бокас дель Торо в Панаме"},{"src":"/media/destinations/bocas-del-toro/gallery-8-enhanced-20261005.webp","alt":"На фото: архипелаг Бокас дель Торо в Панаме"}]
+gallery:
+- src: /media/destinations/bocas-del-toro/gallery-1-enhanced-20261005.webp
+  alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
+- src: /media/destinations/bocas-del-toro/gallery-2-enhanced-20261005.webp
+  alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
+- src: /media/destinations/bocas-del-toro/gallery-3-enhanced-20261005.webp
+  alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
+- src: /media/destinations/bocas-del-toro/gallery-4-enhanced-20261005.webp
+  alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
+- src: /media/destinations/bocas-del-toro/gallery-5-enhanced-20261005.webp
+  alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
+- src: /media/destinations/bocas-del-toro/gallery-6-enhanced-20261005.webp
+  alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
+- src: /media/destinations/bocas-del-toro/gallery-7-enhanced-20261005.webp
+  alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
+- src: /media/destinations/bocas-del-toro/gallery-8-enhanced-20261005.webp
+  alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
+- src: /media/tours/luchshee-v-paname/itinerary-10-images-0-src-enhanced-20261007.webp
+  alt: 'на фото: Бокас -дель-Торо'
+- src: /media/tours/luchshee-v-paname/itinerary-7-images-0-src-enhanced-20261007.webp
+  alt: 'на фото: Бокас -дель-Торо'
 facts: []
 featureBands: []
 relatedDestinations: []

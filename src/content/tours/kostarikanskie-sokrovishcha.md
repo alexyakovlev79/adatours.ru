@@ -100,8 +100,8 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/tours/gvatemala-kosta-rika/cano-negro-place-generated-20261009-v1.webp
+    alt: Водно-болотные угодья и птицы заповедника Каньо-Негро
 - day: 4
   title: 'Вулкан Ареналь: Mistico, Ecoglide и тропа 1968'
   places:
@@ -145,8 +145,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 5
   title: Ареналь - река Тарколес - Мануэль-Антонио
   places:
@@ -172,8 +172,8 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 6
   title: Национальный парк Мануэль-Антонио
   places:
@@ -198,6 +198,9 @@ itinerary:
     После отдыха маршрут продолжается по территории парка.
 
     Включены завтрак и обед.
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 7
   title: Мануэль-Антонио - Bahia Ballena и Национальный парк Марино-Баллена
   places:
@@ -233,6 +236,9 @@ itinerary:
     Весь день проходит среди пейзажей южного Тихоокеанского побережья Коста-Рики.
 
     Завтрак включен.
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 8
   title: Сан-Хосе
   places:

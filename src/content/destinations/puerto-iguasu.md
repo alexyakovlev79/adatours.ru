@@ -18,6 +18,10 @@ gallery:
   alt: 'на фото: Водопады Игуасу'
 - src: /media/destinations/puerto-iguasu/gallery-3-enhanced-20261002.webp
   alt: 'на фото: Водопады Игуасу'
+- src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
+  alt: Мостик над водой к Глотке Дьявола, Игуасу, Аргентина
+- src: /media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp
+  alt: Экскурсия Макуко-сафари на водопадах Игуасу, заплыв под каскады в Бразилии
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

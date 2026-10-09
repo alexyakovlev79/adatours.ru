@@ -63,8 +63,8 @@ itinerary:
 
     Завершит экскурсию Коса Амадор. Раньше на этом месте находились 3 отдельных острова: Наос, Перико и Фламенко.
   images:
-  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Панама-Сити
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: столица Панамы, город Панама-Сити'
 - day: 3
   title: Национальный парк Чагрес и деревня индейцев Эмбера
   places:
@@ -105,8 +105,8 @@ itinerary:
 
     После отдыха возвращение в Панама-Сити на пароме и трансфер в отель.
   images:
-  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Панама-Сити
+  - src: /media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/taboga-island-place-generated-20261009-v1.webp
+    alt: Прибрежное поселение и зеленые склоны острова Табога
 - day: 5
   title: Собераниа, озеро Гатун, крепость Сан-Лоренсо и шлюзы Агуа-Клара
   places:
@@ -154,8 +154,8 @@ itinerary:
     \nОбед в этот день не включен. Гид порекомендует рестораны на месте. Канопи-тур оплачивается дополнительно.\n\nПо окончании\
     \ экскурсии - трансфер в отель."
   images:
-  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Панама-Сити
+  - src: /media/destinations/el-valle-de-anton/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: горный курорт Эль Валле в Панаме'
 - excursionRef: excursion_panama_chorro_del_macho_canopy
   places: []
 - day: 7
@@ -167,8 +167,8 @@ itinerary:
 
     Свободное время. Затем трансфер из отеля в аэропорт.
   images:
-  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Панама-Сити
+  - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+    alt: 'На фото: столица Панамы, город Панама-Сити'
 included:
 - Трансфер аэропорт - отель - аэропорт.
 - Размещение в выбранном отеле на 6 ночей, завтрак включен.

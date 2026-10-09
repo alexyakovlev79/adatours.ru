@@ -133,8 +133,8 @@ itinerary:
 
     День 4 посвящен исследованию джунглей и наблюдению за дикой природой. В день 5 предусмотрены экскурсии на каяках и рыбалка на пираний.
   images:
-  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Индеец в джунглях Амазонии, Икитос Перу
+  - src: /media/destinations/iquitos/gallery-1-enhanced-20261005.webp
+    alt: ''
 - day: 6
   title: Возвращение в Икитос, перелет в Куско и Explora Sacred Valley
   places:
@@ -149,15 +149,16 @@ itinerary:
 
     Священная долина известна мягким климатом, древними террасами и археологическими памятниками инков. Здесь проходит акклиматизация перед дальнейшими поездками по Андам.
   images:
-  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Город Куско, Перу - древняя столица империи инков
-  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp"
-    alt: Круиз по Амазонке в Перу (Икитос) с Aqua Expedition
+  - src: /media/destinations/iquitos/gallery-2-enhanced-20261005.webp
+    alt: ''
 - day: 7
   title: 'Священная долина: экскурсии Explora на выбор'
   places:
   - Священная долина инков
   text: День посвящен одной из программ Explora Sacred Valley. Конкретную экскурсию можно выбрать из вариантов отеля.
+  images:
+  - src: /media/tours/manyashchij-peru-kolumbiya/sacred-valley-place-generated-20261009-v1.webp
+    alt: Священная долина инков
 - day: 8
   title: 'Священная долина: андские общины и ремесла'
   places:
@@ -212,8 +213,8 @@ itinerary:
 
     В 19:00 забронирован ужин в ресторане TUPAY. Ужин не включен. Ночь в Куско.
   images:
-  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Город Куско, Перу - древняя столица империи инков
+  - src: /media/destinations/cusco/hero-enhanced-20260930.webp
+    alt: Куско, Перу
 - day: 12
   title: Перелет в Пуно и Titilaka на озере Титикака
   places:
@@ -226,6 +227,9 @@ itinerary:
     Далее начинается программа отеля на 3 дня / 2 ночи с полным пансионом. В нее входят поездки по окрестностям, выходы на воду к плавучим островам и знакомство с местной жизнью и традиционным ткачеством.
 
     Ночь в Пуно.
+  images:
+  - src: /media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: город Пуно в Перу и озеро Титикака'
 - day: 13
   title: Озеро Титикака и плавучие острова Урос
   places:
@@ -233,6 +237,9 @@ itinerary:
   - Острова Урос
   text: День проходит в Titilaka. Вас ждут выход на воду к плавучим островам Урос, поездки по окрестностям и знакомство с
     местной жизнью и традиционным ткачеством.
+  images:
+  - src: /media/destinations/puno-i-o-titikaka/gallery-2-enhanced-20261005.webp
+    alt: 'На фото: город Пуно в Перу и озеро Титикака'
 - day: 14
   title: Перелет в Уюни через Ла-Пас и размещение в Kachi Lodge
   places:
@@ -286,8 +293,8 @@ itinerary:
 
     По прилете встреча и переезд в Belmond Miraflores Park. Размещение в Ocean View Club Junior Suite. Ночь в Лиме.
   images:
-  - src: "/media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Лима - столица Перу, вид с берега
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/chiguana-salt-flat-place-generated-20261009-v1.webp
+    alt: Сухая соляная равнина Чигуана и горы боливийского Альтиплано
 - day: 17
   title: Линии Наски и острова Бальестас на частном самолете и яхте
   places:
@@ -304,6 +311,9 @@ itinerary:
     После возвращения в Писко программа продолжается полетом над линиями Наски на приватном самолете. За полтора часа можно рассмотреть основные фигуры с воздуха.
 
     Затем перелет в Лиму, встреча и трансфер в Belmond Miraflores Park. Ночь в отеле.
+  images:
+  - src: /media/destinations/nazca-lines-and-ballestas-islands/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: линии пустыни Наска в Перу'
 - day: 18
   title: Трансфер в аэропорт Лимы и вылет домой
   places:
@@ -313,8 +323,8 @@ itinerary:
 
     К этому моменту за 18 дней маршрут успевает пройти через Амазонию, Анды, озеро Титикака, солончак Уюни и пустыню Наска. Это путешествие построено на резкой смене природных зон и форматов: круиз сменяется горными дорогами, затем поездом к Мачу-Пикчу, полетами над Виникункой и Наской, высокогорным озером и белой равниной Уюни.
   images:
-  - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Колониальная архитектура старых зданий Лимы столицы Перу
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: Лима — Перу
 included:
 - Размещение.
 - Экскурсии.

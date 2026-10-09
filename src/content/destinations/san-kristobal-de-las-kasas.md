@@ -9,7 +9,25 @@ destinationType: "city"
 summary: "Горный город в штате Чьяпас на высоте 2100 м: традиции майя, собор XVII века и пешеходная улица 20 ноября с сувенирными лавками и кафе."
 searchAliases: []
 hero: {"src":"/media/destinations/san-cristobal-de-las-casas/hero-enhanced-20261004.webp","alt":"На фото: на улицах города Сан Кристобал де Лас Касас в Мексике"}
-gallery: [{"src":"/media/destinations/san-cristobal-de-las-casas/gallery-1-enhanced-20261004.webp","alt":"На фото: на улицах города Сан Кристобал де Лас Касас в Мексике"},{"src":"/media/destinations/san-cristobal-de-las-casas/gallery-2-enhanced-20261004.webp","alt":"На фото: на улицах города Сан Кристобал де Лас Касас в Мексике"},{"src":"/media/destinations/san-cristobal-de-las-casas/gallery-3-enhanced-20261004.webp","alt":"На фото: на улицах города Сан Кристобал де Лас Касас в Мексике"},{"src":"/media/destinations/san-cristobal-de-las-casas/gallery-4-enhanced-20261004.webp","alt":"На фото: на улицах города Сан Кристобал де Лас Касас в Мексике"},{"src":"/media/destinations/san-cristobal-de-las-casas/gallery-5-enhanced-20261004.webp","alt":"На фото: на улицах города Сан Кристобал де Лас Касас в Мексике"},{"src":"/media/destinations/san-cristobal-de-las-casas/gallery-6-enhanced-20261004.webp","alt":"На фото: на улицах города Сан Кристобал де Лас Касас в Мексике"},{"src":"/media/destinations/san-cristobal-de-las-casas/gallery-7-enhanced-20261004.webp","alt":"На фото: на улицах города Сан Кристобал де Лас Касас в Мексике"},{"src":"/media/destinations/san-cristobal-de-las-casas/gallery-8-enhanced-20261004.webp","alt":"На фото: на улицах города Сан Кристобал де Лас Касас в Мексике"}]
+gallery:
+- src: /media/destinations/san-cristobal-de-las-casas/gallery-1-enhanced-20261004.webp
+  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+- src: /media/destinations/san-cristobal-de-las-casas/gallery-2-enhanced-20261004.webp
+  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+- src: /media/destinations/san-cristobal-de-las-casas/gallery-3-enhanced-20261004.webp
+  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+- src: /media/destinations/san-cristobal-de-las-casas/gallery-4-enhanced-20261004.webp
+  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+- src: /media/destinations/san-cristobal-de-las-casas/gallery-5-enhanced-20261004.webp
+  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+- src: /media/destinations/san-cristobal-de-las-casas/gallery-6-enhanced-20261004.webp
+  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+- src: /media/destinations/san-cristobal-de-las-casas/gallery-7-enhanced-20261004.webp
+  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+- src: /media/destinations/san-cristobal-de-las-casas/gallery-8-enhanced-20261004.webp
+  alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
+- src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
+  alt: Сан Кристобал де Лас Касас
 facts: []
 featureBands: []
 relatedDestinations: []

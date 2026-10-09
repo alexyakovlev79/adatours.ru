@@ -9,7 +9,21 @@ destinationType: "city"
 summary: "Либерию называют Белым городом за дома колониальной эпохи. Отсюда отправляются к вулкану Ринкон-де-ла-Вьеха, в парк Санта-Роса и на пляжи Никоя."
 searchAliases: []
 hero: {"src":"/media/destinations/liberia/hero-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"}
-gallery: [{"src":"/media/destinations/liberia/gallery-1-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"},{"src":"/media/destinations/liberia/gallery-2-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"},{"src":"/media/destinations/liberia/gallery-3-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"},{"src":"/media/destinations/liberia/gallery-4-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"},{"src":"/media/destinations/liberia/gallery-5-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"},{"src":"/media/destinations/liberia/gallery-6-enhanced-20261003.webp","alt":"На фото: город Либерия в Коста-Рике (провинция Гуанакасте)"}]
+gallery:
+- src: /media/destinations/liberia/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
+- src: /media/destinations/liberia/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
+- src: /media/destinations/liberia/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
+- src: /media/destinations/liberia/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
+- src: /media/destinations/liberia/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
+- src: /media/destinations/liberia/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
+- src: /media/tours/kosta-rika-otdykh-na-plyazhe-i-v-gorakh/itinerary-0-images-0-src-enhanced-20261007.webp
+  alt: Либерия
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

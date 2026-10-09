@@ -11,7 +11,9 @@ searchAliases: []
 hero:
   src: /media/countries/bolivia/featureBands-3-enhanced-20261002.webp
   alt: 'На фото: город Тиванку в Боливии'
-gallery: []
+gallery:
+- src: /media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-2-src-enhanced-20261007.webp
+  alt: Тиауанаку
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

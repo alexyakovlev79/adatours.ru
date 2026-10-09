@@ -12,14 +12,16 @@ hero:
   src: "/media/destinations/livingston/hero-enhanced-20261003.webp"
   alt: "На фото: город Ливингстон в Гватемале"
 gallery:
-  - src: "/media/destinations/livingston/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: город Ливингстон в Гватемале"
-  - src: "/media/destinations/livingston/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: город Ливингстон в Гватемале"
-  - src: "/media/destinations/livingston/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: город Ливингстон в Гватемале"
-  - src: "/media/destinations/livingston/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: город Ливингстон в Гватемале"
+- src: /media/destinations/livingston/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: город Ливингстон в Гватемале'
+- src: /media/destinations/livingston/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: город Ливингстон в Гватемале'
+- src: /media/destinations/livingston/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: город Ливингстон в Гватемале'
+- src: /media/destinations/livingston/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: город Ливингстон в Гватемале'
+- src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-6-images-0-src-enhanced-20261007.webp
+  alt: 'На фото: Ливингстон в Гватемале'
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

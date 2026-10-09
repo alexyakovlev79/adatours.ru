@@ -20,6 +20,7 @@ destinations:
 - destination_nicaragua_ozero_nikaragua
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_managua
+- destination_costa_rica_plajya_tamarindo
 audiences: []
 route:
 - Сан-Хосе
@@ -61,6 +62,9 @@ itinerary:
     \ парка.\n\nСледующая точка - Сад водопадов Ла-Пас. Тропа проходит через лес к водопадам. В комплексе также можно посетить\
     \ галерею колибри, серпентарий, сад птиц, ферму бабочек и экспозицию лягушек.\n\nВозвращение в Сан-Хосе.\n\n**Ночь:**\
     \ Barceló San Jose Palacio.  \n**Питание:** завтрак, обед."
+  images:
+  - src: /media/tours/zhemchuzhiny-kosta-riki-za-10-dnej/poas-crater-generated-20261009-v1.webp
+    alt: Кратер вулкана Поас с озером среди вулканических склонов
 - day: 3
   title: Сан-Хосе - Тортугеро
   places:
@@ -108,8 +112,8 @@ itinerary:
     \ на лошадях.\n\nПосле прогулки традиционный коста-риканский обед.\n\nЗатем переезд в Монтеверде.\n\n**Ночь:** El Establo.\
     \  \n**Питание:** завтрак, обед."
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 7
   title: Монтеверде - Гранада
   places:
@@ -156,16 +160,22 @@ itinerary:
   text: "Переезд к границе с Коста-Рикой, затем на тихоокеанское побережье.\n\nОтдых на пляже.\n\n**Ночь:** Wyndham Tamarindo.\
     \  \n**Питание:** завтрак, обед."
   images:
-  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: Гранада
+  - src: /media/destinations/granada/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: город Гранада в Никарагуа'
 - day: 11
   title: Тихоокеанское побережье
   places: []
   text: "Свободные дни для пляжного отдыха.\n\n**Ночь:** Wyndham Tamarindo.  \n**Питание:** завтрак."
+  images:
+  - src: /media/destinations/playa-tamarindo/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: пляж Плайя Тамариндо в Коста-Рике'
 - day: 12
   title: Тихоокеанское побережье
   places: []
   text: "Свободные дни для пляжного отдыха.\n\n**Ночь:** Wyndham Tamarindo.  \n**Питание:** завтрак."
+  images:
+  - src: /media/destinations/playa-tamarindo/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: пляж Плайя Тамариндо в Коста-Рике'
 - day: 13
   title: Сан-Хосе
   places:
@@ -224,6 +234,7 @@ routeDestinations:
 - destination_nicaragua_ozero_nikaragua
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_managua
+- destination_costa_rica_plajya_tamarindo
 primaryThemes: ["theme_wildlife","theme_culture"]
 themes: ["theme_beach"]
 ---

@@ -9,7 +9,21 @@ destinationType: "national_park"
 summary: "Мануэль Антонио объединяет пляжный курорт и национальный парк на тихоокеанском побережье Коста-Рики. Здесь можно гулять среди джунглей и знакомиться с подводным миром."
 searchAliases: []
 hero: {"src":"/media/countries/costa-rica/featureBands-3-enhanced-20261002.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"}
-gallery: [{"src":"/media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-3-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-4-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-5-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"},{"src":"/media/destinations/manuel-antonio/gallery-6-enhanced-20261003.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"}]
+gallery:
+- src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+- src: /media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+- src: /media/destinations/manuel-antonio/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+- src: /media/destinations/manuel-antonio/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+- src: /media/destinations/manuel-antonio/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+- src: /media/destinations/manuel-antonio/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
+- src: /media/tours/panama-kosta-rika-nikaragua/itinerary-5-images-1-src-enhanced-20261007.webp
+  alt: Мануэль Антонио
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

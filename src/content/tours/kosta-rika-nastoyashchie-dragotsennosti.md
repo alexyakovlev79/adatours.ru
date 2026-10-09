@@ -64,6 +64,9 @@ itinerary:
     После экскурсии возвращение в Rancho Corcovado и ночевка.
 
     **Питание:** завтрак, обед, ужин.
+  images:
+  - src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/corcovado-national-park-place-generated-20261009-v1.webp
+    alt: Тропический лес и тихоокеанский берег национального парка Корковадо
 - day: 4
   title: Дайвинг у острова Кано
   places:
@@ -76,6 +79,9 @@ itinerary:
     После дайвинга возвращение в отель.
 
     **Питание:** завтрак, обед, ужин.
+  images:
+  - src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/cano-island-place-generated-20261009-v1.webp
+    alt: Остров Каньо с лесным побережьем в Тихом океане
 - day: 5
   title: Возвращение в Сан-Хосе
   places:

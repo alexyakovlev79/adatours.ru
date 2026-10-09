@@ -9,7 +9,27 @@ destinationType: "city"
 summary: "Колониальный город Никарагуа, основанный в 1524 году. Старинные церкви, крепость Ла-Польвора, сувенирные лавки и кофейни на улицах старого города."
 searchAliases: []
 hero: {"src":/media/countries/nicaragua/featureBands-2-enhanced-20261002.webp,"alt":"На фото: город Гранада в Никарагуа"}
-gallery: [{"src":"/media/destinations/granada/gallery-1-enhanced-20261004.webp","alt":"На фото: город Гранада в Никарагуа"},{"src":"/media/destinations/granada/gallery-2-enhanced-20261004.webp","alt":"На фото: город Гранада в Никарагуа"},{"src":"/media/destinations/granada/gallery-3-enhanced-20261004.webp","alt":"На фото: город Гранада в Никарагуа"},{"src":"/media/destinations/granada/gallery-4-enhanced-20261004.webp","alt":"На фото: город Гранада в Никарагуа"},{"src":"/media/destinations/granada/gallery-5-enhanced-20261004.webp","alt":"На фото: город Гранада в Никарагуа"},{"src":"/media/destinations/granada/gallery-6-enhanced-20261004.webp","alt":"На фото: город Гранада в Никарагуа"},{"src":"/media/destinations/granada/gallery-7-enhanced-20261004.webp","alt":"На фото: город Гранада в Никарагуа"},{"src":"/media/destinations/granada/gallery-8-enhanced-20261004.webp","alt":"На фото: город Гранада в Никарагуа"},{"src":"/media/destinations/granada/gallery-9-enhanced-20261004.webp","alt":"На фото: город Гранада в Никарагуа"}]
+gallery:
+- src: /media/destinations/granada/gallery-1-enhanced-20261004.webp
+  alt: 'На фото: город Гранада в Никарагуа'
+- src: /media/destinations/granada/gallery-2-enhanced-20261004.webp
+  alt: 'На фото: город Гранада в Никарагуа'
+- src: /media/destinations/granada/gallery-3-enhanced-20261004.webp
+  alt: 'На фото: город Гранада в Никарагуа'
+- src: /media/destinations/granada/gallery-4-enhanced-20261004.webp
+  alt: 'На фото: город Гранада в Никарагуа'
+- src: /media/destinations/granada/gallery-5-enhanced-20261004.webp
+  alt: 'На фото: город Гранада в Никарагуа'
+- src: /media/destinations/granada/gallery-6-enhanced-20261004.webp
+  alt: 'На фото: город Гранада в Никарагуа'
+- src: /media/destinations/granada/gallery-7-enhanced-20261004.webp
+  alt: 'На фото: город Гранада в Никарагуа'
+- src: /media/destinations/granada/gallery-8-enhanced-20261004.webp
+  alt: 'На фото: город Гранада в Никарагуа'
+- src: /media/destinations/granada/gallery-9-enhanced-20261004.webp
+  alt: 'На фото: город Гранада в Никарагуа'
+- src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
+  alt: 'на фото: Гранада, Никарагуа'
 facts: []
 featureBands: []
 relatedDestinations: []

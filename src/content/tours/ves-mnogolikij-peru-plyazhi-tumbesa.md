@@ -106,9 +106,7 @@ itinerary:
 
     **Дополнительно:** посещение Кафедрального собора Куско перед основной экскурсией, около 40 минут, **$25**.
   images:
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
-    alt: Куско
-  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Лима
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
@@ -158,6 +156,9 @@ itinerary:
     Обед проходит в ресторане национальной кухни **Inka House**, формат шведского стола.
 
     После экскурсии возвращение в гостиницу.
+  images:
+  - src: /media/tours/manyashchij-peru-kolumbiya/sacred-valley-place-generated-20261009-v1.webp
+    alt: Священная долина инков
 - day: 6
   title: Куско - Пуно
   places:
@@ -194,9 +195,7 @@ itinerary:
 
       **Доплата:** $250 с человека.
   images:
-  - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-6-images-0-src-enhanced-20261007.webp"
-    alt: Пуно
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
+  - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp
     alt: Куско
 - day: 7
   title: Пуно и озеро Титикака
@@ -281,10 +280,8 @@ itinerary:
 
     По прилете встреча, трансфер в гостиницу и размещение.
   images:
-  - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp
     alt: Арекипа
-  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
-    alt: Лима
 - day: 11
   title: Лима. Свободный день
   places:
@@ -296,8 +293,8 @@ itinerary:
 
     По желанию
   images:
-  - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
-    alt: Лима
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: Лима — Перу
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []
 - day: 12
@@ -314,10 +311,8 @@ itinerary:
 
     Отдых. Вечером ужин на берегу Тихого океана.
   images:
-  - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-13-images-0-src-enhanced-20261007.webp"
-    alt: Тумбес
-  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Лима
+  - src: /media/destinations/lima/hero-enhanced-20260930.webp
+    alt: Лима, столица Перу
 - day: 13
   title: Тумбес
   places:
@@ -342,8 +337,8 @@ itinerary:
 
     Эти 2 дня проходят без обязательной экскурсионной программы. После горных переездов, Титикаки, Колки и Арекипы маршрут становится спокойнее и позволяет провести время у моря.
   images:
-  - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-13-images-0-src-enhanced-20261007.webp"
-    alt: Тумбес
+  - src: /media/destinations/tumbes/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: город Тумбес в Перу'
 - day: 15
   title: Тумбес - Лима
   places:
@@ -354,10 +349,8 @@ itinerary:
 
     По прилете встреча и трансфер в отель **Casa Andina** или отель той же категории.
   images:
-  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
-    alt: Лима
-  - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-13-images-0-src-enhanced-20261007.webp"
-    alt: Тумбес
+  - src: /media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
+    alt: Лима - столица Перу, вид с берега
 - day: 16
   title: Лима и вылет
   places:
@@ -379,7 +372,7 @@ itinerary:
 
     После посещения продолжение трансфера в аэропорт и международный вылет.
   images:
-  - src: "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp"
+  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
     alt: Лима
 included:
 - Внутренние авиаперелеты Лима - Куско, Арекипа - Лима, Лима - Тумбес - Лима

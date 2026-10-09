@@ -11,6 +11,7 @@ destinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_la_fortuna_vulkan_arenal
+- destination_costa_rica_pacific_coast
 audiences: []
 route:
 - Сан-Хосе
@@ -54,8 +55,6 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: 'на фото: Вулкан Ареналь в Коста-Рике'
   - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-1-src-enhanced-20261007.webp
     alt: 'на фото: столица - город Сан Хосе в Коста-Рике'
 - day: 3
@@ -88,8 +87,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: 'на фото: Вулкан Ареналь в Коста-Рике'
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 5
   title: Северное побережье Тихого океана
   places: []
@@ -101,6 +100,9 @@ itinerary:
     Кроме отдыха на пляже доступны разные виды активности: спортивная рыбалка, серфинг, подводное плавание и каякинг.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-2-generated-20261009-v1.webp
+    alt: Вечерний прибой на Тихоокеанском побережье Коста-Рики
 - day: 6
   title: Северное побережье Тихого океана
   places: []
@@ -112,6 +114,9 @@ itinerary:
     Кроме отдыха на пляже доступны разные виды активности: спортивная рыбалка, серфинг, подводное плавание и каякинг.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-3-generated-20261009-v1.webp
+    alt: Тропические деревья над тихоокеанским пляжем Коста-Рики
 - day: 7
   title: Северное побережье Тихого океана
   places: []
@@ -123,6 +128,9 @@ itinerary:
     Кроме отдыха на пляже доступны разные виды активности: спортивная рыбалка, серфинг, подводное плавание и каякинг.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-4-generated-20261009-v1.webp
+    alt: Скалистый участок тихоокеанского берега Коста-Рики
 - day: 8
   title: Северное побережье Тихого океана
   places: []
@@ -134,6 +142,9 @@ itinerary:
     Кроме отдыха на пляже доступны разные виды активности: спортивная рыбалка, серфинг, подводное плавание и каякинг.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-5-generated-20261009-v1.webp
+    alt: Тихоокеанская бухта Коста-Рики среди тропической зелени
 - day: 9
   title: Северное побережье Тихого океана
   places: []
@@ -145,6 +156,9 @@ itinerary:
     Кроме отдыха на пляже доступны разные виды активности: спортивная рыбалка, серфинг, подводное плавание и каякинг.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-1-generated-20261009-v1.webp
+    alt: Песчаный пляж на Тихоокеанском побережье Коста-Рики
 - day: 10
   title: Сан-Хосе
   places:
@@ -189,6 +203,7 @@ routeDestinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_la_fortuna_vulkan_arenal
+- destination_costa_rica_pacific_coast
 primaryThemes: ["theme_wildlife","theme_beach"]
 themes: []
 ---

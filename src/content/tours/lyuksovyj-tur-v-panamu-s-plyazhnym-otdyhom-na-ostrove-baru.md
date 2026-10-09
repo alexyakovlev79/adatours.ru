@@ -118,6 +118,9 @@ itinerary:
     Можно искупаться у водопада.
 
     Традиционный обед включает жареную тилапию, жареные бананы и фрукты.
+  images:
+  - src: /media/tours/panama-2024/itinerary-4-images-0-src-enhanced-20261007.webp
+    alt: Национальный парк Чагрес
 - day: 4
   title: Панама-Сити - David - Boca Chica
   places:
@@ -142,10 +145,8 @@ itinerary:
 
     После размещения остается свободное время.
   images:
-  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-3-images-0-src-enhanced-20261007.webp"
-    alt: Остров Бока-Чика, Панама - люксовый пляж, белый песок
-  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Туман в Панама-сити, Панама - рассвет над заливом
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: столица Панамы, город Панама-Сити'
 - day: 5
   title: Отдых на частном острове Boca Chica
   places:
@@ -210,8 +211,8 @@ itinerary:
 
     Язык проведения - английский.
   images:
-  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-4-images-0-src-enhanced-20261007.webp"
-    alt: Бока-Чика, Панама - элитный пляжный отдых на острове
+  - src: /media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp
+    alt: Boca Chica
 - day: 8
   title: Вулкан Бару и подвесные мосты
   places:
@@ -240,6 +241,9 @@ itinerary:
     Маршрут проходит высоко над облачным лесом.
 
     С мостов видны лианы, папоротники, кроны деревьев и разные уровни влажного леса.
+  images:
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/baru-volcano-place-generated-20261009-v1.webp
+    alt: Горные склоны и дальние виды вулкана Бару
 - day: 9
   title: Boquete - Bocas del Toro
   places:
@@ -283,8 +287,8 @@ itinerary:
 
     Обязательной экскурсионной программы на этот день нет.
   images:
-  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Бокас-дель-Торо, Панама - коралловые рифы и бирюзовая вода
+  - src: /media/destinations/bocas-del-toro/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
 - day: 11
   title: Bocas del Toro - Panama City
   places:
@@ -303,10 +307,8 @@ itinerary:
 
     После островов и джунглей возвращение в современную городскую среду становится финальной сменой обстановки перед вылетом.
   images:
-  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Бокас-дель-Торо, Панама - коралловые рифы и бирюзовая вода
-  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Туман в Панама-сити, Панама - рассвет над заливом
+  - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+    alt: 'На фото: столица Панамы, город Панама-Сити'
 - day: 12
   title: Вылет из Панама-Сити
   places:
@@ -316,8 +318,8 @@ itinerary:
 
     На этом 12-дневная программа завершается.
   images:
-  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Туман в Панама-сити, Панама - рассвет над заливом
+  - src: /media/destinations/panama-city/gallery-3-enhanced-20261005.webp
+    alt: 'На фото: столица Панамы, город Панама-Сити'
 included:
 - Гид в дни 1-3, русский гид под запрос.
 - Индивидуальные трансферы.

@@ -12,24 +12,26 @@ hero:
   src: "/media/destinations/santyago-de-chili/hero-enhanced-20261006.webp"
   alt: "На фото: столица Чили. город Сантьяго-де-Чили"
 gallery:
-  - src: "/media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp"
-    alt: "На фото: столица Чили. город Сантьяго-де-Чили"
-  - src: "/media/destinations/santyago-de-chili/gallery-2-enhanced-20261006.webp"
-    alt: "На фото: столица Чили. город Сантьяго-де-Чили"
-  - src: "/media/destinations/santyago-de-chili/gallery-3-enhanced-20261006.webp"
-    alt: "На фото: столица Чили. город Сантьяго-де-Чили"
-  - src: "/media/destinations/santyago-de-chili/gallery-4-enhanced-20261006.webp"
-    alt: "На фото: столица Чили. город Сантьяго-де-Чили"
-  - src: "/media/destinations/santyago-de-chili/gallery-5-enhanced-20261006.webp"
-    alt: "На фото: столица Чили. город Сантьяго-де-Чили"
-  - src: "/media/destinations/santyago-de-chili/gallery-6-enhanced-20261006.webp"
-    alt: "На фото: столица Чили. город Сантьяго-де-Чили"
-  - src: "/media/destinations/santyago-de-chili/gallery-7-enhanced-20261006.webp"
-    alt: "На фото: столица Чили. город Сантьяго-де-Чили"
-  - src: "/media/destinations/santyago-de-chili/gallery-8-enhanced-20261006.webp"
-    alt: "На фото: столица Чили. город Сантьяго-де-Чили"
-  - src: "/media/destinations/santyago-de-chili/gallery-9-enhanced-20261006.webp"
-    alt: "На фото: столица Чили. город Сантьяго-де-Чили"
+- src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
+  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+- src: /media/destinations/santyago-de-chili/gallery-2-enhanced-20261006.webp
+  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+- src: /media/destinations/santyago-de-chili/gallery-3-enhanced-20261006.webp
+  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+- src: /media/destinations/santyago-de-chili/gallery-4-enhanced-20261006.webp
+  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+- src: /media/destinations/santyago-de-chili/gallery-5-enhanced-20261006.webp
+  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+- src: /media/destinations/santyago-de-chili/gallery-6-enhanced-20261006.webp
+  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+- src: /media/destinations/santyago-de-chili/gallery-7-enhanced-20261006.webp
+  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+- src: /media/destinations/santyago-de-chili/gallery-8-enhanced-20261006.webp
+  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+- src: /media/destinations/santyago-de-chili/gallery-9-enhanced-20261006.webp
+  alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+- src: /media/tours/braziliya-argentina-i-chili/itinerary-day-12-enhanced-20261006.webp
+  alt: Сантьяго-де-Чили
 facts: []
 featureBands: []
 relatedDestinations: []

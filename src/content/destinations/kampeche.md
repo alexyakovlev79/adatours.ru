@@ -9,7 +9,13 @@ destinationType: "city"
 summary: "Кампече на западном побережье Юкатана сохранил облик города-крепости. Здесь гуляют по набережной и историческим улицам, а в окрестностях знакомятся с природой и археологическими памятниками."
 searchAliases: []
 hero: {"src":"/media/destinations/campeche/hero-enhanced-20261005.webp","alt":"На фото: город Кампече в Мексике"}
-gallery: [{"src":"/media/destinations/campeche/gallery-1-enhanced-20261005.webp","alt":"На фото: город Кампече в Мексике"},{"src":"/media/destinations/campeche/gallery-2-enhanced-20261005.webp","alt":"На фото: город Кампече в Мексике"}]
+gallery:
+- src: /media/destinations/campeche/gallery-1-enhanced-20261005.webp
+  alt: 'На фото: город Кампече в Мексике'
+- src: /media/destinations/campeche/gallery-2-enhanced-20261005.webp
+  alt: 'На фото: город Кампече в Мексике'
+- src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-3-images-0-src-enhanced-20261007.webp
+  alt: Кампече
 facts: []
 featureBands: []
 relatedDestinations: []

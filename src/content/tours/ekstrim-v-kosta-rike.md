@@ -15,6 +15,7 @@ destinations:
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_flamingo
 - destination_costa_rica_ostrova_katalina
+- destination_costa_rica_plajya_tamarindo
 audiences: []
 route:
 - Сан-Хосе
@@ -52,10 +53,8 @@ itinerary:
     \ Тортугеро. При желании можно посетить Музей Зеленых Черепах.\n\nПосле прогулки возвращение в лодж.\n\n**Размещение:**\
     \ Mawamba Lodge Tortuguero.  \n**Питание:** завтрак, обед, ужин."
   images:
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
-  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 - day: 3
   title: Тортугеро
   places:
@@ -80,8 +79,8 @@ itinerary:
     \ столовой открывается вид на реку. Вечером предусмотрены бесплатные алкогольные напитки в формате happy hour и ужин.\n\
     \n**Размещение:** Ríos Tropicales Lodge.  \n**Питание:** завтрак, обед, ужин."
   images:
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
+  - src: /media/destinations/tortuguero/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике'
 - day: 5
   title: Пакуаре
   places:
@@ -89,6 +88,9 @@ itinerary:
   text: "День остается в распоряжении гостей лагеря. Можно выбрать одно из доступных занятий или провести несколько часов\
     \ без программы, например отдохнуть в гамаке у реки.\n\n**Размещение:** Ríos Tropicales Lodge.  \n**Питание:** завтрак,\
     \ обед, ужин."
+  images:
+  - src: /media/tours/ekstrim-v-kosta-rike/pacuare-river-place-generated-20261009-v1.webp
+    alt: Пороги реки Пакуаре среди тропического леса
 - day: 6
   title: Пакуаре - Ареналь
   places:
@@ -114,8 +116,8 @@ itinerary:
     \ У реки Ареналь будет время для небольшого перекуса и купания. Затем возвращение на базу и в отель.\n\n**Размещение:**\
     \ Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак, обед."
   images:
-  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 8
   title: Ареналь - Монтеверде
   places:
@@ -128,10 +130,8 @@ itinerary:
     \nЗатем путь продолжится в Монтеверде. В активной части дня запланирован банджи-прыжок с высоты 140 м и полет в стиле\
     \ «Супермен» по тросу длиной 1000 м.\n\n**Размещение:** El Establo.  \n**Питание:** завтрак, обед."
   images:
-  - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
-    alt: Монтеверде
-  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 9
   title: Монтеверде - Тихоокеанское побережье
   places:
@@ -151,6 +151,9 @@ itinerary:
     \ большеглазый тунец.\n\nВсего в 5 милях от порта находятся острова Каталина и Бруммель. В этих водах круглый год ловят\
     \ ваху, сьерру-макрель, испанскую макрель, большеглазую ставриду и разные виды окуней, включая тихоокеанского окуня и\
     \ рыбу-петуха.\n\nПосле рыбалки возвращение в отель.\n\n**Размещение:** Wyndham Tamarindo.  \n**Питание:** завтрак, обед."
+  images:
+  - src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-1-generated-20261009-v1.webp
+    alt: Снасти на рыболовном катере у побережья Фламинго
 - day: 11
   title: Дайвинг у островов Каталина
   places:
@@ -161,11 +164,17 @@ itinerary:
     \ рифовых акул. После прохождения канала маршрут продолжается дрейфом в северо-западном направлении вдоль вершин восьмилучевых\
     \ кораллов. Здесь встречаются гигантские манты, другие скаты и косяки коровоносых скатов.\n\n**Размещение:** Wyndham Tamarindo.\
     \  \n**Питание:** завтрак."
+  images:
+  - src: /media/tours/ekstrim-v-kosta-rike/catalina-islands-place-generated-20261009-v1.webp
+    alt: Скалистые острова Каталина у тихоокеанского побережья Коста-Рики
 - day: 12
   title: Тихоокеанское побережье
   places: []
   text: "Свободный день на пляже. Экскурсии по обязательной программе на этот день не запланированы.\n\n**Размещение:** Wyndham\
     \ Tamarindo.  \n**Питание:** завтрак."
+  images:
+  - src: /media/destinations/playa-tamarindo/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: пляж Плайя Тамариндо в Коста-Рике'
 - day: 13
   title: Сан-Хосе
   places:
@@ -175,8 +184,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/san-jose/gallery-2-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 included:
 - Услуги русскоговорящего гида.
 - Трансферы по программе.
@@ -215,6 +224,7 @@ routeDestinations:
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_flamingo
 - destination_costa_rica_ostrova_katalina
+- destination_costa_rica_plajya_tamarindo
 primaryThemes: ["theme_adventure","theme_wildlife"]
 themes: ["theme_beach","theme_fishing","theme_diving"]
 ---

@@ -51,8 +51,6 @@ itinerary:
 
     После экскурсии трансфер в отель. Ночь в Панаме.
   images:
-  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Панама-Сити
   - src: /media/tours/luchshee-v-paname/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Панамский канал
 - day: 3
@@ -103,10 +101,8 @@ itinerary:
 
     По прибытии трансфер в регион Бока-Чика и размещение в отеле.
   images:
-  - src: "/media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp"
-    alt: Boca Chica
-  - src: "/media/tours/panama-2024/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Панама-Сити
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: столица Панамы, город Панама-Сити'
 - day: 7
   title: Бока-Чика
   places:
@@ -123,8 +119,8 @@ itinerary:
   text: 2 дня отдыха на побережье. Дополнительно можно отправиться на необитаемые острова Бока-Чика с белым песком и бирюзовой
     водой.
   images:
-  - src: "/media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp"
-    alt: Boca Chica
+  - src: /media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-3-images-0-src-enhanced-20261007.webp
+    alt: Остров Бока-Чика, Панама - люксовый пляж, белый песок
 - day: 9
   title: Бока-Чика - Бокете
   places:
@@ -132,10 +128,8 @@ itinerary:
   - Бокете
   text: Завтрак в отеле и трансфер в регион Бокете. По дороге предусмотрена экскурсия в дождевой лес.
   images:
-  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Бокете
-  - src: "/media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp"
-    alt: Boca Chica
+  - src: /media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-4-images-0-src-enhanced-20261007.webp
+    alt: Бока-Чика, Панама - элитный пляжный отдых на острове
 - day: 10
   title: Вулкан Бару
   places:
@@ -144,6 +138,9 @@ itinerary:
     Выезд из отеля в 04:00. Подъем на внедорожниках 4x4 на вулкан Бару высотой 3475 м над уровнем моря.
 
     На вершине вы встретите рассвет. В хорошую погоду отсюда одновременно видны Тихий океан и Карибское море. К полудню спуск в Бокете. После обеда можно выбрать дополнительную экскурсию на месте.
+  images:
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/baru-volcano-place-generated-20261009-v1.webp
+    alt: Горные склоны и дальние виды вулкана Бару
 - day: 11
   title: 'Бокете: канопи и кофейная плантация'
   places:
@@ -167,10 +164,8 @@ itinerary:
 
     В Альмиранте водитель доставит вас к причалу. Далее водное такси на острова архипелага Бокас-дель-Торо.
   images:
-  - src: "/media/tours/luchshee-v-paname/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Бокас-дель-Торо
-  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Бокете
+  - src: /media/destinations/boquete/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: горный курорт Бокете в Панаме'
 - day: 13
   title: Бокас-дель-Торо
   places:
@@ -194,9 +189,7 @@ itinerary:
   - Бокас-дель-Торо
   text: После завтрака трансфер в аэропорт Альмиранте и перелет в Панаму. По прибытии трансфер в отель и свободный вечер.
   images:
-  - src: "/media/tours/luchshee-v-paname/itinerary-7-images-0-src-enhanced-20261007.webp"
-    alt: Бокас-дель-Торо
-  - src: "/media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/panama-2024/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Панама-Сити
 - day: 16
   title: Панама-Сити
@@ -204,8 +197,8 @@ itinerary:
   - Панама-Сити
   text: В назначенное время трансфер в аэропорт для вылета домой.
   images:
-  - src: "/media/tours/panama-2024/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Панама-Сити
+  - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+    alt: 'На фото: столица Панамы, город Панама-Сити'
 included:
 - Трансферы.
 - Проживание в указанных отелях или отелях аналогичной категории на базе завтраков.

@@ -61,6 +61,9 @@ itinerary:
     Возвращение в Сан-Хосе. Ночь в отеле **Barceló San Jose Palacio**.
 
     Питание: завтрак, обед.
+  images:
+  - src: /media/tours/zhemchuzhiny-kosta-riki-za-10-dnej/poas-crater-generated-20261009-v1.webp
+    alt: Кратер вулкана Поас с озером среди вулканических склонов
 - day: 3
   title: Тортугеро
   places:
@@ -75,6 +78,9 @@ itinerary:
     Ночь в отеле **Pachira Lodge Tortuguero**.
 
     Питание: завтрак, обед, ужин.
+  images:
+  - src: /media/destinations/tortuguero/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике'
 - day: 4
   title: Тортугеро - Ареналь
   places:
@@ -104,8 +110,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 6
   title: Ареналь - Монтеверде
   places:
@@ -120,8 +126,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 7
   title: Монтеверде
   places:
@@ -134,6 +140,9 @@ itinerary:
     Ночь в отеле **El Establo Mountain Resort**.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 8
   title: Монтеверде - Мануэль Антонио
   places:
@@ -145,6 +154,9 @@ itinerary:
     Ночь в отеле **Parador Resort & Spa**.
 
     Питание: завтрак, обед.
+  images:
+  - src: /media/destinations/monteverde-santa-elena/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 9
   title: Мануэль Антонио
   places:
@@ -159,6 +171,9 @@ itinerary:
     Ночь в отеле **Parador Resort & Spa**.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 10
   title: Мануэль Антонио - Корковадо
   places:
@@ -170,6 +185,9 @@ itinerary:
     Ночь в отеле **Rancho Corcovado**.
 
     Питание: завтрак, обед, ужин.
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 11
   title: Корковадо
   places:
@@ -182,6 +200,9 @@ itinerary:
     Ночь в отеле **Rancho Corcovado**.
 
     Питание: завтрак, обед, ужин.
+  images:
+  - src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/corcovado-national-park-place-generated-20261009-v1.webp
+    alt: Тропический лес и тихоокеанский берег национального парка Корковадо
 - day: 12
   title: Остров Каньо
   places:
@@ -196,6 +217,9 @@ itinerary:
     Ночь в отеле **Rancho Corcovado**.
 
     Питание: завтрак, обед, ужин.
+  images:
+  - src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/cano-island-place-generated-20261009-v1.webp
+    alt: Остров Каньо с лесным побережьем в Тихом океане
 - day: 13
   title: Сан-Хосе
   places:

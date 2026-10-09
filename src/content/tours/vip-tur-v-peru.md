@@ -115,8 +115,8 @@ itinerary:
 
     По дороге ландшафт остается почти безлюдным. В пустыне Силоли время предусмотрено специально для остановки и фотографий. В заповеднике Эдуардо-Авароа маршрут проходит через несколько лагун, где можно наблюдать фламинго и викуний. На горизонте появляется вулкан Ольягуэ, а завершение дня в соляном отеле логично продолжает тему самого Уюни.
   images:
-  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-9-images-0-src-enhanced-20261007.webp"
-    alt: Уюни
+  - src: /media/destinations/uyuni/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Лес кактусов и соленое озеро (солончак) Уюни'
 - day: 5
   title: Уюни - Ла-Пас
   places:
@@ -135,10 +135,8 @@ itinerary:
 
     Возвращение в отель. Ночь в Ла-Пасе.
   images:
-  - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
+  - src: /media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp
     alt: Ла Пас
-  - src: "/media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-9-images-0-src-enhanced-20261007.webp"
-    alt: Уюни
 - day: 6
   title: Ла-Пас - Тиуанако - озеро Титикака
   places:
@@ -149,10 +147,8 @@ itinerary:
 
     После посещения археологического комплекса маршрут продолжается к озеру Титикака, которое называют самым высоким озером в мире.
   images:
-  - src: "/media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-2-src-enhanced-20261007.webp"
+  - src: /media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-2-src-enhanced-20261007.webp
     alt: Тиауанаку
-  - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
-    alt: Ла Пас
 - day: 7
   title: Пуно - озеро Титикака - Пуно
   places:
@@ -182,8 +178,6 @@ itinerary:
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
     alt: Куско
-  - src: "/media/tours/vip-tur-v-peru/itinerary-6-images-0-src-enhanced-20261007.webp"
-    alt: Пуно
 - day: 9
   title: Мачу-Пикчу
   places:
@@ -219,6 +213,9 @@ itinerary:
     После завершения экскурсии трансфер в гостиницу.
 
     Священная долина в этой программе занимает полный день и показывает сразу несколько типов инкских памятников. Писак расположен на холме и связан с крупным археологическим комплексом, Ольянтайтамбо сохранил церемониальные сооружения, Чинчеро сочетает инкские стены и колониальный храм, а Морай выделяется системой круглых земледельческих террас. Отдельная остановка в «Ауанаканче» посвящена животным Анд и обработке их шерсти.
+  images:
+  - src: /media/tours/manyashchij-peru-kolumbiya/sacred-valley-place-generated-20261009-v1.webp
+    alt: Священная долина инков
 - day: 11
   title: Куско - Лима
   places:

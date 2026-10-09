@@ -24,6 +24,14 @@ gallery:
   alt: 'На фото: Джип тур на соленое озеро (солончак) Уюни'
 - src: /media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-day-10-generated-20261008-next20.webp
   alt: Кладбище поездов у Уюни, Боливия
+- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-13-images-0-src-enhanced-20261007.webp
+  alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
+- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-14-images-0-src-enhanced-20261007.webp
+  alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
+- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/hero-enhanced-20261006.webp
+  alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
+- src: /media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-9-images-0-src-enhanced-20261007.webp
+  alt: Уюни
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

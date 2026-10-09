@@ -9,7 +9,27 @@ destinationType: "city"
 summary: "Столица Парагвая с сувенирным кварталом Recova, парком Хардин Ботанико и музеями. Знакомство с городом дополняют местная кухня и чай матэ."
 searchAliases: []
 hero: {"src":/media/countries/paraguay/featureBands-1-enhanced-20261002.webp,"alt":"На фото: город Асунсьон - столица Парагвая"}
-gallery: [{"src":"/media/destinations/asuncion/gallery-1-enhanced-20261005.webp","alt":"На фото: город Асунсьон - столица Парагвая"},{"src":"/media/destinations/asuncion/gallery-2-enhanced-20261005.webp","alt":"На фото: город Асунсьон - столица Парагвая"},{"src":"/media/destinations/asuncion/gallery-3-enhanced-20261005.webp","alt":"На фото: город Асунсьон - столица Парагвая"},{"src":"/media/destinations/asuncion/gallery-4-enhanced-20261005.webp","alt":"На фото: город Асунсьон - столица Парагвая"},{"src":"/media/destinations/asuncion/gallery-5-enhanced-20261005.webp","alt":"На фото: город Асунсьон - столица Парагвая"}]
+gallery:
+- src: /media/destinations/asuncion/gallery-1-enhanced-20261005.webp
+  alt: 'На фото: город Асунсьон - столица Парагвая'
+- src: /media/destinations/asuncion/gallery-2-enhanced-20261005.webp
+  alt: 'На фото: город Асунсьон - столица Парагвая'
+- src: /media/destinations/asuncion/gallery-3-enhanced-20261005.webp
+  alt: 'На фото: город Асунсьон - столица Парагвая'
+- src: /media/destinations/asuncion/gallery-4-enhanced-20261005.webp
+  alt: 'На фото: город Асунсьон - столица Парагвая'
+- src: /media/destinations/asuncion/gallery-5-enhanced-20261005.webp
+  alt: 'На фото: город Асунсьон - столица Парагвая'
+- src: /media/excursions/siti-tur-v-asunsone/gallery-1-src-enhanced-20261007.webp
+  alt: 'на фото: Асунсьон'
+- src: /media/excursions/siti-tur-v-asunsone/gallery-3-src-enhanced-20261007.webp
+  alt: на фото:Асунсьон
+- src: /media/excursions/siti-tur-v-asunsone/gallery-2-src-enhanced-20261007.webp
+  alt: на фото:Асунсьон
+- src: /media/tours/klassicheskij-paragvaj/itinerary-4-images-0-src-enhanced-20261007.webp
+  alt: на фото:Асунсьон
+- src: /media/excursions/siti-tur-v-asunsone/gallery-0-src-enhanced-20261007.webp
+  alt: 'на фото: Асунсьон, столица Парагвая'
 facts: []
 featureBands: []
 relatedDestinations: []

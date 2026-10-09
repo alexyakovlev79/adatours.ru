@@ -54,8 +54,8 @@ itinerary:
 
     Затем вы отправитесь в Койоакан. Гастрономическая прогулка пройдет через рынки, уличные ларьки, семейные рестораны и современные заведения. По дороге гид будет рассказывать истории и местные анекдоты, связанные с кварталом. В результате Койоакан раскрывается одновременно через улицы, людей и еду, которую здесь готовят каждый день.
   images:
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Мехико
+  - src: /media/destinations/mexico-city-and-teotihuacan/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица, город Мехико Сити в Мексике'
 - day: 3
   title: Мехико-Сити - Теотиуакан - тур по тако и мескалю
   places:
@@ -72,8 +72,6 @@ itinerary:
   images:
   - src: /media/countries/mexico/featureBands-1-enhanced-20261002.webp
     alt: Теотиуакан
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Мехико
 - day: 4
   title: Исторический центр Мехико - рынки - перелет в Канкун
   places:
@@ -92,10 +90,8 @@ itinerary:
 
     По прибытии встреча и частный трансфер в Presidente Intercontinental Cancún 5*.
   images:
-  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: Канкун
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Мехико
+  - src: /media/destinations/mexico-city-and-teotihuacan/gallery-2-enhanced-20261004.webp
+    alt: 'На фото: столица, город Мехико Сити в Мексике'
 - day: 5
   title: Канкун - Чичен-Ица - сенот
   places:
@@ -118,8 +114,8 @@ itinerary:
   - Канкун
   text: Завтрак. Свободный день.
   images:
-  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: Канкун
+  - src: /media/destinations/cancun/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: курорт Канкун в Мексике'
 - day: 7
   title: Канкун - Коба - Тулум - Гран-Сенот
   places:
@@ -138,24 +134,22 @@ itinerary:
   images:
   - src: /media/tours/cancun-palenque-cenot/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Тулум
-  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: Канкун
 - day: 8
   title: Канкун
   places:
   - Канкун
   text: Завтрак. Свободный день.
   images:
-  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: Канкун
+  - src: /media/destinations/cancun/gallery-2-enhanced-20261005.webp
+    alt: 'На фото: курорт Канкун в Мексике'
 - day: 9
   title: Канкун
   places:
   - Канкун
   text: Завтрак. В назначенное время трансфер в аэропорт Канкуна для вылета домой.
   images:
-  - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: Канкун
+  - src: /media/destinations/cancun/gallery-3-enhanced-20261005.webp
+    alt: 'На фото: курорт Канкун в Мексике'
 included:
 - Проживание в указанном или аналогичном отеле категории 4*/5* в стандартных номерах, включая налоги.
 - 8 ночей в указанных или аналогичных отелях.

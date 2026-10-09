@@ -45,6 +45,9 @@ itinerary:
   - Мехико Сити (руины Теотихуакана)
   text: Прибытие в международный аэропорт Мексики. Встреча и трансфер в ваш отель.Presidente Intercontinental 5* www.presidenteicmexico.com
     03 ночи / Номер с видом на Поланко
+  images:
+  - src: /media/destinations/mexico-city-and-teotihuacan/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица, город Мехико Сити в Мексике'
 - day: 2
   title: Экскурсия по Мехико-Сити и Посещение Музеев
   places:
@@ -96,8 +99,6 @@ itinerary:
   images:
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Мехико
-  - src: /media/destinations/san-cristobal-de-las-casas/hero-enhanced-20261004.webp
-    alt: Сан Кристобал де Лас Касас
 - day: 5
   title: Паленке
   places:
@@ -124,8 +125,8 @@ itinerary:
     своими яркими фресками, изображающими майскую жизнь и церемонии. Сайт предоставляет взгляд на художественные и культурные
     достижения древних майя.По завершении посещений возвращение в Паленке.
   images:
-  - src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
-    alt: Фантастический Тур по Мексике
+  - src: /media/destinations/palenque/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: древний город майя Паленке в Мексике'
 - day: 7
   title: Паленке – Агуа-Асул – Сан-Кристобал (Завтрак)
   places:
@@ -138,10 +139,8 @@ itinerary:
     природное зрелище, с кристально чистой водой, которая приобретает бирюзовый оттенок из-за высокого содержания минералов.Поздно
     днем вы прибудете в замечательный колониальный город Сан-Кристобаль.Casa del Alma Sp Cat www.casadelalma.mx 2 ночи / Юниор-люкс
   images:
-  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: Сан Кристобал де Лас Касас
-  - src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
-    alt: Фантастический Тур по Мексике
+  - src: /media/destinations/palenque/gallery-2-enhanced-20261004.webp
+    alt: 'На фото: древний город майя Паленке в Мексике'
 - day: 8
   title: Сан-Кристобал + Чамула И Зинакантан (Завтрак)
   places:
@@ -196,8 +195,8 @@ itinerary:
   - Канкун
   text: Завтрак в отеле.В установленное время трансфер в аэропорт для вылета домой.
   images:
-  - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
-    alt: Канкун
+  - src: /media/destinations/cancun/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: курорт Канкун в Мексике'
 included:
 - 'Включено:'
 - Проживание 11 ночей в указанных отелях или аналогичных.

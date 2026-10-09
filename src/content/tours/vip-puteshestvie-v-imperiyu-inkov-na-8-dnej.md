@@ -122,6 +122,9 @@ itinerary:
     **Зип-лайн в Священной долине**
 
     Вторая опция
+  images:
+  - src: /media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-1-src-enhanced-20261008.webp
+    alt: Морай
 - excursionRef: excursion_peru_sacred_valley_via_ferrata
   places: []
 - excursionRef: excursion_peru_sacred_valley_zipline
@@ -172,8 +175,8 @@ itinerary:
 
     Финальная точка - **Кориканча**, Золотой храм, главная святыня империи инков. Стены и интерьер храма были покрыты золотом, а на алтаре находился большой золотой диск с изображением бога солнца Инти.
   images:
-  - src: "/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Город Куско - древняя столица инков, Перу
+  - src: /media/destinations/cusco/hero-enhanced-20260930.webp
+    alt: Куско, Перу
 - day: 7
   title: Куско - Лима
   places:
@@ -194,8 +197,6 @@ itinerary:
   images:
   - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-09-enhanced-20260930.webp
     alt: Город Лима - вид с океана, столица Перу
-  - src: "/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Город Куско - древняя столица инков, Перу
 - excursionRef: excursion_lima_larco_museum_visit
   places: []
 - day: 8
@@ -209,8 +210,8 @@ itinerary:
 
     За 8 дней вы проходите путь от океанской Лимы к Священной долине, Мачу-Пикчу и высокогорному Куско, а затем возвращаетесь к побережью. В памяти остаются разные детали: серый свет над океаном, каменные ступени Мачу-Пикчу, террасы Морай, соляные поля Марас и темнеющие улицы Куско.
   images:
-  - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
-    alt: Город Лима - столица Перу, вид с океана
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: Лима — Перу
 included:
 - Размещение в отелях 5*
 - Сопровождение гида, русскоговорящий гид под запрос

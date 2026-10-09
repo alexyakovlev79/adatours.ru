@@ -69,8 +69,8 @@ itinerary:
 
     Возвращение в Сан-Кристобаль и ночевка.
   images:
-  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: Сан Кристобал де Лас Касас
+  - src: /media/destinations/san-cristobal-de-las-casas/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
 - day: 3
   title: Сан-Кристобаль - Агуа-Азуль - Паленке
   places:
@@ -84,8 +84,8 @@ itinerary:
 
     После посещения водопадов продолжение пути в Паленке. Размещение в Villa Mercedes 4*, 1 ночь в стандартном номере.
   images:
-  - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: Сан Кристобал де Лас Касас
+  - src: /media/destinations/san-cristobal-de-las-casas/gallery-2-enhanced-20261004.webp
+    alt: 'На фото: на улицах города Сан Кристобал де Лас Касас в Мексике'
 - day: 4
   title: Паленке - Кампече
   places:
@@ -99,6 +99,9 @@ itinerary:
     Среди других сооружений упоминаются Здание летучих мышей, Храм Солнца, Храм Листоподобного Креста и площадка для игры в мяч. Их расположение среди густой зелени усиливает контраст между монументальной архитектурой и джунглями.
 
     После экскурсии переезд в Кампече. Это прибрежный город с яркими зданиями, колониальной архитектурой, крепостями и старым центром. Защитная стена напоминает о морской и пиратской истории города. Размещение в Plaza Campeche 4*, 1 ночь в стандартном номере.
+  images:
+  - src: /media/destinations/palenque/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: древний город майя Паленке в Мексике'
 - day: 5
   title: Кампече - Ушмаль - Мерида
   places:

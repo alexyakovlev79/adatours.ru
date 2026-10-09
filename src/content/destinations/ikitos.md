@@ -9,7 +9,27 @@ destinationType: "city"
 summary: "Город на Амазонке с архитектурой эпохи каучуковых магнатов. Из Икитоса отправляются в джунгли, в гости к местным народам и на фермы бабочек."
 searchAliases: []
 hero: {"src":"/media/destinations/iquitos/hero-enhanced-20261005.webp","alt":"На фото: ленивец из Амазонии в Икитос Перу"}
-gallery: [{"src":"/media/destinations/iquitos/gallery-1-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-2-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-3-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-4-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-5-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-6-enhanced-20261005.webp","alt":""},{"src":"/media/destinations/iquitos/gallery-7-enhanced-20261005.webp","alt":""}]
+gallery:
+- src: /media/destinations/iquitos/gallery-1-enhanced-20261005.webp
+  alt: ''
+- src: /media/destinations/iquitos/gallery-2-enhanced-20261005.webp
+  alt: ''
+- src: /media/destinations/iquitos/gallery-3-enhanced-20261005.webp
+  alt: ''
+- src: /media/destinations/iquitos/gallery-4-enhanced-20261005.webp
+  alt: ''
+- src: /media/destinations/iquitos/gallery-5-enhanced-20261005.webp
+  alt: ''
+- src: /media/destinations/iquitos/gallery-6-enhanced-20261005.webp
+  alt: ''
+- src: /media/destinations/iquitos/gallery-7-enhanced-20261005.webp
+  alt: ''
+- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: Индеец в джунглях Амазонии, Икитос Перу
+- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-3-images-0-src-enhanced-20261007.webp
+  alt: Круиз по Амазонке в Перу (Икитос) с Aqua Expedition
+- src: /media/tours/manyashchij-peru-i-ikitos/hero-src-enhanced-20261007.webp
+  alt: Манящий Перу и Икитос
 facts: []
 featureBands: []
 relatedDestinations: []

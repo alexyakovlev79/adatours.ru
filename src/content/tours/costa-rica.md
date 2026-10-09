@@ -71,8 +71,6 @@ itinerary:
   images:
   - src: /media/tours/costa-rica/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
 - day: 3
   title: Национальный парк Тортугеро
   places:
@@ -106,8 +104,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
+  - src: /media/destinations/tortuguero/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике'
 - day: 5
   title: Вулкан Ареналь
   places:
@@ -118,6 +116,9 @@ itinerary:
     Можно отдыхать или выбрать дополнительные активности в районе Ареналя.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 6
   title: Вулкан Ареналь - Монтеверде
   places:
@@ -129,6 +130,9 @@ itinerary:
     Монтеверде известно облачным лесом, который формируется благодаря частым туманам. В районе Санта-Елены сохраняется деревенская атмосфера, а сама территория является одним из главных центров экотуризма Коста-Рики.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 7
   title: Монтеверде
   places:
@@ -137,6 +141,9 @@ itinerary:
     Свободный день для отдыха или дополнительных активностей.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 8
   title: Монтеверде - Национальный парк Мануэль-Антонио
   places:
@@ -154,6 +161,9 @@ itinerary:
     При посещении парка необходимо соблюдать его правила и бережно относиться к местной флоре и фауне.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/monteverde-santa-elena/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 9
   title: Национальный парк Мануэль-Антонио
   places:
@@ -162,6 +172,9 @@ itinerary:
     Свободные дни для отдыха или дополнительных активностей в регионе.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 10
   title: Национальный парк Мануэль-Антонио
   places:
@@ -170,6 +183,9 @@ itinerary:
     Свободные дни для отдыха или дополнительных активностей в регионе.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 11
   title: Сан-Хосе
   places:
@@ -179,8 +195,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/tours/costa-rica/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 included:
 - регулярные общие трансферы;
 - аренда автомобиля Mitsubishi ASX или Geely Cool Ray с базовой страховкой с 4-го по 11-й день;

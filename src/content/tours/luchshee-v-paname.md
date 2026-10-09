@@ -78,6 +78,9 @@ itinerary:
     Ночь в отеле в Панама-Сити.
 
     Питание: завтрак, обед.
+  images:
+  - src: /media/tours/panama-2024/itinerary-4-images-0-src-enhanced-20261007.webp
+    alt: Национальный парк Чагрес
 - day: 4
   title: Панама-Сити - Давид - залив Чирики
   places:
@@ -92,8 +95,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: "/media/tours/luchshee-v-paname/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Тихоокеанское побережье Панама- Сити'
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: столица Панамы, город Панама-Сити'
 - day: 5
   title: 'Бокете: канопи и кофейная плантация'
   places:
@@ -123,6 +126,9 @@ itinerary:
     Во второй половине дня можно выбрать дополнительные экскурсии на месте.
 
     Ночь в отеле.
+  images:
+  - src: /media/tours/luchshee-v-tsentralnoj-amerike/baru-volcano-place-generated-20261009-v1.webp
+    alt: Горные склоны и дальние виды вулкана Бару
 - day: 7
   title: Бокете - Бокас-дель-Торо
   places:
@@ -137,10 +143,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: "/media/tours/luchshee-v-paname/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Бокас -дель-Торо'
-  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: 'на фото: Бокет'
+  - src: /media/destinations/boquete/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: горный курорт Бокете в Панаме'
 - day: 8
   title: Бокас-дель-Торо
   places:
@@ -176,8 +180,8 @@ itinerary:
 
     Вечером предусмотрены вылет в Панама-Сити и трансфер в отель.
   images:
-  - src: "/media/tours/luchshee-v-paname/itinerary-7-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Бокас -дель-Торо'
+  - src: /media/destinations/bocas-del-toro/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
 - day: 11
   title: Бокас-дель-Торо - Панама
   places:
@@ -188,8 +192,8 @@ itinerary:
 
     Трансфер в аэропорт.
   images:
-  - src: "/media/tours/luchshee-v-paname/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Бокас -дель-Торо'
+  - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+    alt: 'На фото: столица Панамы, город Панама-Сити'
 included:
 - Услуги русскоговорящего гида на 2-й и 3-й дни.
 - Билет на Панамский канал.

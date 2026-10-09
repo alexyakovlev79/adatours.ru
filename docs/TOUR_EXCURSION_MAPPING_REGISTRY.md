@@ -1376,3 +1376,28 @@ Commit определяется по изменению, содержащему 
 - `tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala`: 18 дней; канонические вставки: `excursion_source_park_jekzoticheskih_ptic_v_iguasu`, `excursion_source_makuko_safari_he`, `excursion_santiago_maipo_wine_tour`, `excursion_chile_atacama_astronomy_tour`.
 
 09.10.2026: P143 восстановлен по Word Анны 2027, групповой вариант Рио + Игуасу. Вертолет над Рио отсутствует в Word и удален; Парк птиц и активная каноническая Макуко-сaфари сохранены как факультативные. Тарифы тура $50/$130 и особенность 3 км на джипе записаны в условиях тура; исторический source hash относится к прежнему V2.
+
+
+## P151 — восстановление по Word Анны 2027 · 09.10.2026
+
+Тур: `tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala`, прежний URL сохранен. Рио 3н + Фоз 2н + Буэнос-Айрес 3н; 12–20.02.2027. Word: https://docs.google.com/document/d/1qkPpWu99FABWC0lOUv80QsAPHJGIahUG/edit. Девять тарифов, внутренние перелеты включены. Все дополнительные условия, включая расхождения тарифов Игуасу, сохранены в днях тура; общие Excursion не переписаны.
+
+| После дня | excursionRef | Результат |
+| --- | --- | --- |
+| 3 | `excursion_rio_samba_capoeira_show_only` | Новая самостоятельная экскурсия из Word |
+| 3 | `excursion_source_zaliv_guanabara_morskaya_progulka` | Канонический существующий продукт |
+| 3 | `excursion_source_tajny_starogo_rio_de_zhanejro` | Канонический существующий продукт |
+| 3 | `excursion_source_polet_na_vertolete_nad_rio` | Канонический существующий продукт |
+| 3 | `excursion_source_botanical_garden` | Канонический существующий продукт |
+| 3 | `excursion_rio_rocinha_favela_jeep_tour` | Новая самостоятельная экскурсия из Word |
+| 3 | `excursion_source_polet_na_deltaplane_nad_rio` | Канонический существующий продукт |
+| 5 | `excursion_source_makuko_safari_he` | Канонический существующий продукт |
+| 5 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | Канонический существующий продукт |
+| 5 | `excursion_iguazu_helicopter_falls` | Канонический существующий продукт |
+| 5 | `excursion_source_rafain_shou` | Канонический существующий продукт |
+| 7 | `excursion_buenos_aires_tango_show_dinner` | Канонический существующий продукт |
+| 8 | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | Канонический существующий продукт |
+| 8 | `excursion_source_ekskursiya_po_montevideo` | Канонический существующий продукт |
+| 8 | `excursion_source_fiesta_gaucho` | Канонический существующий продукт |
+
+Росинья на джипе отличается от `excursion_source_favela_tur` (Видигал, мото-такси и трек на Два Брата). Шоу за $120 исключает трансферы, в отличие от сопровождаемой программы `excursion_source_rio_nochyu`. Созданы самостоятельные ID без клонирования этих продуктов. 9 разных обычных дневных фото и 15 разных героев экскурсионных вставок, без пересечений. Использованы существующие media assets; новых S3 загрузок и GPT Images нет. Статус: content prepared; Actions/Sheets pending.

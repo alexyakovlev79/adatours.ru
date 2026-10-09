@@ -53,6 +53,8 @@ jobs:
           oidc_token="$(jq -er ".value" "$oidc_file")"
           echo "::add-mask::$oidc_token"
           echo "GitHub OIDC JWT acquired."
+          # Print only safe, non-secret OIDC claim fields (never the JWT).
+          python3 -c 'import json,base64,sys; b=sys.stdin.read().split(".")[1]; c=json.loads(base64.urlsafe_b64decode(b+"="*(-len(b)%4))); print("OIDC claims:",json.dumps({k:c.get(k) for k in ("iss","aud","sub")}))' <<< "$oidc_token"
           
           echo "2/4: Exchanging JWT for Yandex IAM token"
           token_status="$(curl --silent --show-error \
@@ -66,7 +68,8 @@ jobs:
             --output "$oauth_file" --write-out "%{http_code}")"
           if [[ "$token_status" != "200" ]]; then
             err_code="$(jq -r '.error // .code // .error_code // "unknown" | if type == "string" then . else "unknown" end' "$oauth_file" 2>/dev/null || echo unknown)"
-            echo "::error::Yandex IAM token exchange failed (HTTP $token_status; error=$err_code)"
+            detail="$(jq -r '.error_description // .message // ""' "$oauth_file" 2>/dev/null | head -c 350 | sed -E 's/[A-Za-z0-9_-]{70,}/[redacted]/g')"
+            echo "::error::Yandex IAM token exchange failed (HTTP $token_status; error=$err_code; detail=${detail:-unavailable})"
             exit 1
           fi
           iam_token="$(jq -er ".access_token" "$oauth_file")"

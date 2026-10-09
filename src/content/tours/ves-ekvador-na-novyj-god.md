@@ -200,7 +200,7 @@ itinerary:
     Питание: завтрак, ланч-бокс.'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1.webp
-    alt: Тигуа
+    alt: Озеро Килотоа
 - day: 4
   title: 2 января 2027 года. Баньос, водопады и Риобамба
   places:
@@ -240,7 +240,7 @@ itinerary:
     Питание: завтрак, ланч-бокс.'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1.webp
-    alt: Риобамба
+    alt: Заповедник Чимборасо
   contentBlocks:
   - type: excursion
     excursionRef: excursion_ecuador_chimborazo_ingapirca_day
@@ -276,7 +276,7 @@ itinerary:
     Питание: завтрак, обед.'
   images:
   - src: /media/destinations/cajas-national-park/hero-generated-20261009-v1.webp
-    alt: Куэнка
+    alt: Национальный парк Кахас
   contentBlocks:
   - type: excursion
     excursionRef: excursion_ecuador_cajas_cacao_day
@@ -344,7 +344,7 @@ itinerary:
     Питание: завтрак, обед.'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1.webp
-    alt: Остров Балтра
+    alt: Остров Санта-Крус (Галапагосы)
 - day: 9
   title: 7 января 2027 года. Морская экскурсия на Бартоломе
   places:
@@ -529,6 +529,7 @@ routeDestinations:
 - destination_ecuador_vodopad_agoyan
 - destination_ecuador_vodopad_fata_nevesty_banos
 - destination_ecuador_vodopad_kotel_dyavola_banos
+- destination_ecuador_kanon_pastasa
 - destination_ecuador_riobamba
 - destination_ecuador_zapovednik_chimboraso
 - destination_ecuador_ingapirka
@@ -540,10 +541,6 @@ routeDestinations:
 - destination_ecuador_ostrov_santa_krus_galapagosy
 - destination_ecuador_puerto_ajora
 - destination_ecuador_ostrov_bartolome
-- destination_ecuador_ostrov_sejmur_norte
-- destination_ecuador_ostrov_plasa_sur
-- destination_ecuador_mys_karrion
-- destination_ecuador_plyazhi_bachas
 - destination_ecuador_mitad_del_mundo
 - destination_ecuador_intinan_museum
 - destination_ecuador_casa_del_arbol

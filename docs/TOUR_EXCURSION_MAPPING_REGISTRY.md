@@ -614,7 +614,7 @@ Commit определяется по изменению, содержащему 
 | 424 | `tour_source_braziliya_i_argentina_v_sentyabre` | Тур в Бразилию и Аргентину: Рио-де-Жанейро, Фоз де Игуасу, Буэнос Айрес · `/multi-country/tour/brazil-argentina-rio-iguazu-buenos-aires-september/` | `src/content/tours/braziliya-i-argentina-v-sentyabre.md` | 1 | `68279792632c47dc4b13d9ef203dfab7206a12df4cdb4c646205f54c471ee34f` |
 | 425 | `tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu` | Тур в Бразилию и Аргентину: от Манауса (Амазонка) до Игуасу · `/multi-country/tour/brazil-amazon-argentina-manaus-iguazu/` | `src/content/tours/tur-v-braziliyu-s-amazoniej-i-argentinu.md` | 2 | `d77292c305c2527897a68f905ffb29cdfde4a03cf638eeebf6a8f663fdc7656b` |
 | 426 | `tour_source_braziliya_i_peru_na_novyj_god` | Тур в Бразилию и Перу на празднование Нового Года · `/multi-country/tour/brazil-peru-new-year/` | `src/content/tours/braziliya-i-peru-na-novyj-god.md` | 5 | `8f9275bd649b30be65d8b04e58961985317851098b3907c98087b9d8237cf7a2` |
-| 427 | `tour_source_braziliya_s_vodopadami_na_novyj_god` | Тур в Бразилию и на водопады Игуасу на Новый Год · `/brazil/tour/brazil-iguazu-new-year/` | `src/content/tours/braziliya-s-vodopadami-na-novyj-god.md` | 3 | `cf46457931f28e6767fe7c82a19fcb90a33bcc56519d9f67231f7e074ba76ebd` |
+| 427 | `tour_source_braziliya_s_vodopadami_na_novyj_god` | Новый год в Рио и водопады Игуасу — 2027 · `/brazil/tour/brazil-iguazu-new-year/` | `src/content/tours/braziliya-s-vodopadami-na-novyj-god.md` | 2 | `cf46457931f28e6767fe7c82a19fcb90a33bcc56519d9f67231f7e074ba76ebd` |
 | 428 | `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | Тур в Бразилию индивидуальный: Рио, Игуасу, Пантанал, Бонито и Бузиос · `/brazil/tour/brazil-rio-iguazu-pantanal-bonito-buzios-private-tour/` | `src/content/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala.md` | 5 | `b678c6c8178341645156d27ce4bf38c8e37cc89b95f14030796f404d87d9c4c1` |
 | 429 | `tour_source_roskoshnyj_novyj_god_v_brazilii` | Тур в Бразилию на 10 дней – Роскошный Новый Год · `/brazil/tour/luxury-brazil-new-year-10-days/` | `src/content/tours/roskoshnyj-novyj-god-v-brazilii.md` | 4 | `ff4cac7656483f49494b37e5b7c5797e1c6720af1f4943de09c70f8d730620a7` |
 | 430 | `tour_source_tropicheskij_karnaval_s_angroj_dush_rejsh` | Тур в Бразилию на 12 дней \| Карнавал в Рио с пляжным отдыхом · `/brazil/tour/brazil-rio-carnival-angra-dos-reis-12-days/` | `src/content/tours/tropicheskij-karnaval-s-angroj-dush-rejsh.md` | 1 | `f47a9df73c82f6a26e067b7d06f0bab6de2bfc2dd7f12b32c0b7da62cbdeefc8` |
@@ -1046,9 +1046,8 @@ Commit определяется по изменению, содержащему 
 | `tour_source_braziliya_i_peru_na_novyj_god` | 3 | `excursion_source_favela_tur` | 4 | 5 | Существующая каноническая |
 | `tour_source_braziliya_i_peru_na_novyj_god` | 4 | `excursion_rio_pedra_bonita_trekking` | 4 | 5 | Новая, подготовлена в пакете |
 | `tour_source_braziliya_i_peru_na_novyj_god` | 5 | `excursion_source_polet_na_deltaplane_nad_rio` | 4 | 5 | Существующая каноническая |
-| `tour_source_braziliya_s_vodopadami_na_novyj_god` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 4 | 5 | Существующая каноническая |
-| `tour_source_braziliya_s_vodopadami_na_novyj_god` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
-| `tour_source_braziliya_s_vodopadami_na_novyj_god` | 3 | `excursion_source_makuko_safari` | 6 | 7 | Существующая каноническая |
+| `tour_source_braziliya_s_vodopadami_na_novyj_god` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 6 | 7 | Существующая каноническая |
+| `tour_source_braziliya_s_vodopadami_na_novyj_god` | 2 | `excursion_source_makuko_safari_he` | 6 | 7 | Существующая каноническая |
 | `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
 | `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
 | `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | 3 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
@@ -1375,3 +1374,5 @@ Commit определяется по изменению, содержащему 
 - `tour_source_karnaval_5_stran`: 19 дней; канонические вставки: `excursion_source_park_jekzoticheskih_ptic_v_iguasu`, `excursion_source_makuko_safari_he`, `excursion_santiago_maipo_wine_tour`.
 - `tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god`: 19 дней; канонические вставки: `excursion_source_park_jekzoticheskih_ptic_v_iguasu`, `excursion_source_makuko_safari_he`, `excursion_santiago_maipo_wine_tour`, `excursion_chile_atacama_astronomy_tour`.
 - `tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala`: 18 дней; канонические вставки: `excursion_source_park_jekzoticheskih_ptic_v_iguasu`, `excursion_source_makuko_safari_he`, `excursion_santiago_maipo_wine_tour`, `excursion_chile_atacama_astronomy_tour`.
+
+09.10.2026: P143 восстановлен по Word Анны 2027, групповой вариант Рио + Игуасу. Вертолет над Рио отсутствует в Word и удален; Парк птиц и активная каноническая Макуко-сaфари сохранены как факультативные. Тарифы тура $50/$130 и особенность 3 км на джипе записаны в условиях тура; исторический source hash относится к прежнему V2.

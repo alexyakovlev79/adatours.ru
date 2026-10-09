@@ -325,7 +325,6 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   const desktopPhotoMax = 660;
   const mediaGap = 16;
   const collapsedMediaGap = 18;
-  const expandedMediaGap = 40;
   const cardBottomGap = 18;
 
   const imageCount = (card: HTMLElement) =>
@@ -334,40 +333,12 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   const summaryHeight = (card: HTMLElement) =>
     card.querySelector<HTMLElement>(':scope > .day > summary')?.getBoundingClientRect().height ?? 0;
 
-  const measureExpandedDetailsHeight = (card: HTMLElement) => {
-    if (!itineraryDays) return 0;
-
-    const clone = card.cloneNode(true) as HTMLElement;
-    const width = card.getBoundingClientRect().width;
-    clone.removeAttribute('data-row-coordinated');
-    clone.style.removeProperty('--itinerary-row-height');
-    clone.style.removeProperty('--itinerary-row-media-height');
-    clone.style.position = 'absolute';
-    clone.style.visibility = 'hidden';
-    clone.style.pointerEvents = 'none';
-    clone.style.width = width + 'px';
-    clone.style.height = 'auto';
-    clone.style.minHeight = '0';
-    clone.style.maxHeight = 'none';
-    clone.style.inset = '0 auto auto 0';
-    clone.style.zIndex = '-1';
-
-    const details = clone.querySelector<HTMLDetailsElement>(':scope > .day');
-    const media = clone.querySelector<HTMLElement>(':scope > .day__media');
-    media?.remove();
-    if (!details) return 0;
-
-    details.open = true;
-    itineraryDays.appendChild(clone);
-    const height = details.getBoundingClientRect().height;
-    clone.remove();
-    return height;
-  };
-
   const clearRowSizing = (card: HTMLElement) => {
     card.removeAttribute('data-row-coordinated');
+    card.removeAttribute('data-row-expanded');
     card.style.removeProperty('--itinerary-row-height');
     card.style.removeProperty('--itinerary-row-media-height');
+    card.style.removeProperty('--itinerary-expanded-photo-height');
   };
 
   const syncMultiImageRows = () => {
@@ -396,29 +367,39 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
       const counts = pair.map(imageCount);
       if (counts.some((count) => count === 0)) continue;
 
-      const maxCount = Math.max(...counts);
-      if (maxCount <= 1) continue;
-
-      const rowSlots = Math.min(...counts);
-      const governingCards = pair.filter((card) => imageCount(card) === rowSlots);
       const anyOpen = pair.some(
         (card) => card.querySelector<HTMLDetailsElement>(':scope > .day')?.open,
       );
 
+      if (anyOpen) {
+        // An opened row grows to fit both full texts and every photograph.
+        // Each card gets its own 16:9 photo slots; the CSS Grid row naturally
+        // takes the larger height without compressing either card's images.
+        pair.forEach((card) => {
+          const cardWidth = card.getBoundingClientRect().width;
+          if (cardWidth <= 0) return;
+          const photoHeight = Math.min(cardWidth * 9 / 16, desktopPhotoMax);
+          card.setAttribute('data-row-expanded', '');
+          card.style.setProperty('--itinerary-expanded-photo-height', photoHeight + 'px');
+        });
+        continue;
+      }
+
+      const maxCount = Math.max(...counts);
+      if (maxCount <= 1) continue;
+
+      // Preserve the existing compact shared media budget for closed rows.
+      const rowSlots = Math.min(...counts);
+      const governingCards = pair.filter((card) => imageCount(card) === rowSlots);
       const cardWidth = Math.min(...pair.map((card) => card.getBoundingClientRect().width));
       if (cardWidth <= 0) continue;
 
       const onePhotoHeight = Math.min(cardWidth * 9 / 16, desktopPhotoMax);
       const rowMediaHeight =
         rowSlots * onePhotoHeight + Math.max(0, rowSlots - 1) * mediaGap;
-
-      const governingDetailsHeight = anyOpen
-        ? Math.max(...governingCards.map(measureExpandedDetailsHeight))
-        : Math.max(...governingCards.map(summaryHeight));
-
-      const mediaTopGap = anyOpen ? expandedMediaGap : collapsedMediaGap;
       const rowHeight = Math.ceil(
-        governingDetailsHeight + mediaTopGap + rowMediaHeight + cardBottomGap,
+        Math.max(...governingCards.map(summaryHeight))
+          + collapsedMediaGap + rowMediaHeight + cardBottomGap,
       );
 
       pair.forEach((card) => {
@@ -684,14 +665,13 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   /*
    * DESKTOP ITINERARY LAYOUT INVARIANT
    * ----------------------------------
-   * The itinerary is a two-column grid on desktop. Media bottoms align per row.
-   * If a row contains different photo counts, the smaller count governs the row's
-   * maximum media capacity. Equal multi-photo counts reserve that many full photo
-   * slots. The card with more photos divides the shared capacity between them.
+   * Collapsed rows retain the compact media budget based on the smaller count.
+   * Opened rows show every photo at a full 16:9 slot height, while the taller
+   * card defines the natural CSS Grid row height. Media blocks remain
+   * bottom-aligned, with any extra space above the shorter column's photos.
    *
-   * Keep itinerary media as a sibling of <details> so the outer .day-card can
-   * coordinate the row. Mobile remains single-column and preserves source aspect
-   * ratios; none of the desktop row sizing rules apply there.
+   * Keep media as a sibling of <details> to coordinate the outer cards.
+   * Mobile stays single-column with original image aspect ratios.
    */
 
   @media (min-width: 1100px) {
@@ -755,9 +735,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
     }
 
     /*
-     * Rows containing multiple itinerary photographs use a shared media budget.
-     * Different counts are governed by the card with fewer photographs; equal
-     * counts reserve one full desktop photo slot for every photograph.
+     * Collapsed multi-photo rows use the shared media budget. Opened rows
+     * instead show every photograph at its own full desktop slot height.
      */
     .day-card[data-row-coordinated] {
       height: var(--itinerary-row-height);
@@ -784,6 +763,22 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
       padding-top: 0;
     }
 
+    /*
+     * An expanded row has no shared media-height limit. The CSS Grid row
+     * grows to the taller column, and auto margins align both photo bottoms.
+     * A separate fixed 16:9 slot is reserved for every image.
+     */
+    .day-card[data-row-expanded] .day__media {
+      flex: 0 0 auto;
+      height: auto;
+      min-height: 0;
+      max-height: none;
+      grid-auto-rows: var(--itinerary-expanded-photo-height);
+      margin-top: auto;
+      padding-top: 40px;
+      aspect-ratio: auto;
+    }
+
     .day__media img {
       display: block;
       width: 100%;
@@ -791,6 +786,10 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
       min-height: 0;
       aspect-ratio: auto;
       object-fit: cover;
+    }
+
+    .day-card[data-row-expanded] .day__media img {
+      height: var(--itinerary-expanded-photo-height);
     }
   }
 

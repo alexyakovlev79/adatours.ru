@@ -22,27 +22,33 @@ The collapsed summary must sit visually halfway between the photograph above and
 
 There are no horizontal divider lines above or below itinerary cards. The always-visible photographs themselves separate one itinerary item from the next, on both desktop and mobile.
 
-Desktop rows with multiple itinerary photographs use a shared media budget.
+### Collapsed desktop rows: compact media budget
 
-One full desktop photo slot is the normal 16:9 height of the current itinerary column, capped by the established 660 px opened-media maximum. The 16 px gaps between photographs are added on top of those slots.
+One full desktop photo slot is the normal 16:9 height of the current itinerary column, capped at 660 px. The 16 px gaps between photographs are added on top of these slots.
 
-For every desktop grid row:
+While the row is collapsed, preserve its existing compact rules:
 
-- if both cards have photographs and the counts differ, the row media budget is based on the **smaller photograph count**;
-- if both cards have the same count and that count is greater than 1, reserve one full slot for **every** photograph: 2 + 2 reserves 2 slots, 5 + 5 reserves 5 slots;
-- an unpaired final card with more than 1 photograph uses its own photograph count;
-- rows where both cards have only 1 photograph keep the ordinary existing behavior;
-- a row containing a card without photographs keeps the text-card behavior and is not forced into the multi-photo calculation.
+- if both cards have photographs and their counts differ, the shared media budget is based on the **smaller photograph count**;
+- if both cards have the same count greater than 1, reserve one full slot for **each** photograph;
+- an unpaired final card with multiple photographs uses its own photograph count;
+- two single-photo cards keep their ordinary collapsed layout;
+- a row containing a card without photographs preserves the static text-card behavior.
 
-When the row is collapsed, its height is the governing summary height plus the shared media budget. When either card is opened, the row expands up to the fully opened content height of the governing card with the smaller photograph count, plus that same shared media budget. If the counts are equal, the larger fully opened text height of the two cards governs.
+The collapsed media blocks end on one line. A card with more photographs may show them shorter **only while collapsed**.
 
-The card with more photographs must fit its text and photographs **inside that same row height**. Its media area shrinks as necessary and divides the available height across its additional photographs instead of making the whole row taller.
+### Expanded desktop rows: full-height photographs
 
-The **bottom edges of the media blocks stay aligned on one horizontal line**. A governing card is allowed to show each photograph at its full desktop slot height; a neighboring card with more photographs may show each individual photograph shorter. This is intentional.
+Clicking **+** on either interactive card opens the entire pair. Its height is now content-driven, regardless of differences in photo counts or text lengths.
 
-Opening a desktop itinerary card must never make its visual row shorter than the same row in the collapsed state. The opened media keeps at least the collapsed 16:9 media height, with the expanded-content gap added above it. Therefore revealing text can keep the next row in place or move it downward, but it must never pull the next row upward.
+- **All text** of both cards appears in full, including subsections and embedded excursions.
+- **Every photo** in both cards uses its own standard desktop 16:9 slot, capped at 660 px per photograph, with 16 px between photos.
+- The grid row grows to the taller natural combination of expanded text and full-height photographs. The smaller photo count **never limits** the other card when expanded.
+- Both photo blocks end on the same horizontal line. The shorter column can have empty space above its images; neither its text nor images are compressed to equalize heights.
+- Expanding never moves the next row upward; there is a 40 px top gap before the photos.
 
-The invariant is: **row height is governed by the smaller photograph count; equal counts reserve that full number of photograph slots; media bottoms align; mobile is unaffected**.
+The rule applies to all photo-count combinations, including 1+1, 2+1, 3+2, 5+5 and a single final photo card. Clicking **×** restores the compact closed layout. A desktop text-only card retains its special static behavior.
+
+The invariant is: **closed rows stay compact; opened rows show all content and full-height photos; media bottoms align; mobile is unaffected**.
 
 ## Desktop paired toggle behavior
 
@@ -75,7 +81,7 @@ The media block must remain a **sibling of `<details>` inside `.day-card`**.
 
 Do not move `.day__media` back inside `<details>`. When media is nested inside `<details>`, the browser does not allow the outer grid row to distribute the remaining vertical space correctly, and the two neighboring images end at different vertical positions.
 
-The `.day-card` itself is the object that stretches to the full height of its CSS Grid row. The media block uses the remaining height and is anchored at the bottom of the card.
+The `.day-card` itself stretches to the full height of its CSS Grid row. Closed multi-photo cards share a fixed media budget; opened media keeps its full intrinsic slot count, the grid row grows naturally, and photo blocks remain anchored at the bottom.
 
 ## Image behavior
 
@@ -84,9 +90,9 @@ Desktop:
 - every item is collapsed by default;
 - collapsed media remains visible;
 - a single full photo slot uses the normal 16:9 column height, capped at 660 px;
-- rows with multiple photographs use the photograph-count rule above instead of squeezing every count into one 16:9 media block;
-- opening an item reveals places/direction, text, and subsections;
-- the governing card may show its photographs at the full slot height, while a neighboring card with more photographs divides the same media budget among them;
+- collapsed multi-photo rows use the compact shared media budget above;
+- opening a pair shows both cards' full text, places/direction and subsections;
+- expanded photos retain individual full 16:9 heights regardless of their neighbor's photo count;
 - use `object-fit: cover`;
 - keep the bottom edge aligned across the desktop row.
 

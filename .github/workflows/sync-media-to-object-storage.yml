@@ -1,0 +1,60 @@
+name: Copy Ada Tours media to Object Storage
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: adatours-media-bulk-copy
+  cancel-in-progress: false
+
+jobs:
+  copy:
+    name: Replicate fixed media snapshot
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+    steps:
+      - name: Checkout current commit
+        uses: actions/checkout@v6
+      - name: Use Node.js 24
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: Synchronize and verify media
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${YC_SA_ID:-}" || { echo "::error::Missing YC_MEDIA_SA_ID"; exit 1; }
+
+          oidc_response="$(curl --fail --silent --show-error --get \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            --data-urlencode "audience=https://github.com/alexyakovlev79" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
+          oidc_token="$(jq -er '.value' <<< "${oidc_response}")"
+          echo "::add-mask::${oidc_token}"
+
+          iam_response="$(curl --fail --silent --show-error \
+            -X POST 'https://auth.yandex.cloud/oauth/token' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
+            --data-urlencode "audience=${YC_SA_ID}" \
+            --data-urlencode "subject_token=${oidc_token}" \
+            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          iam_token="$(jq -er '.access_token' <<< "${iam_response}")"
+          echo "::add-mask::${iam_token}"
+
+          YC_IAM_TOKEN="${iam_token}" node scripts/sync-media-to-object-storage.mjs
+      - name: Save file-by-file checksums and status
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ada-media-sync-${{ github.run_id }}
+          path: media-sync-manifest.json
+          retention-days: 30
+          if-no-files-found: ignore

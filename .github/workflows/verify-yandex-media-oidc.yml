@@ -1,0 +1,68 @@
+name: Verify Ada Tours media OIDC
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: verify-yandex-media-oidc
+  cancel-in-progress: false
+
+jobs:
+  smoke:
+    name: Test keyless Object Storage upload
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+    steps:
+      - name: Exchange GitHub OIDC JWT and upload one test object
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -z "${YC_SA_ID:-}" ]]; then
+            echo "::error::Set the Actions repository variable YC_MEDIA_SA_ID to the Yandex Cloud service account ID."
+            exit 1
+          fi
+
+          oidc_response="$(curl --fail --silent --show-error --get \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            --data-urlencode "audience=https://github.com/alexyakovlev79" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
+          oidc_token="$(jq -er '.value' <<<"${oidc_response}")"
+          echo "::add-mask::${oidc_token}"
+
+          token_response="$(curl --fail --silent --show-error \
+            -X POST 'https://auth.yandex.cloud/oauth/token' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
+            --data-urlencode "audience=${YC_SA_ID}" \
+            --data-urlencode "subject_token=${oidc_token}" \
+            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          iam_token="$(jq -er '.access_token' <<<"${token_response}")"
+          echo "::add-mask::${iam_token}"
+
+          test_file="$(mktemp)"
+          trap 'rm -f "${test_file}"' EXIT
+          printf 'Ada Tours media OIDC test\nGitHub run: %s\n' "${GITHUB_RUN_ID}" > "${test_file}"
+
+          curl --fail --silent --show-error \
+            -X PUT \
+            -H "Authorization: Bearer ${iam_token}" \
+            -H 'Content-Type: text/plain; charset=utf-8' \
+            -H 'Cache-Control: no-store' \
+            --upload-file "${test_file}" \
+            'https://storage.yandexcloud.net/img.adatours.ru/media/tech/oidc-smoke-test.txt' \
+            > /dev/null
+
+          curl --fail --silent --show-error \
+            -H 'Cache-Control: no-cache' \
+            'https://img.adatours.ru/media/tech/oidc-smoke-test.txt' \
+            | cmp - "${test_file}"
+
+          echo 'Success: GitHub OIDC → Yandex IAM → Object Storage → public HTTPS.'

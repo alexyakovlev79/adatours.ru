@@ -1,16 +1,55 @@
 {
   "id": "tour_source_solonchak_uyuni",
   "type": "tour",
-  "name": "Джип-тур в Боливию на солончак Уюни на 3 дня",
+  "name": "Джип-тур на солончак Уюни на 3 дня: лагуны, гейзеры и вулканы Боливии",
   "url": "/bolivia/tour/bolivia-uyuni-salt-flats-jeep-tour-3-days/",
   "slug": "bolivia-uyuni-salt-flats-jeep-tour-3-days",
   "contentPath": "src/content/tours/solonchak-uyuni.md",
   "sourceUrl": "https://brasiltours.ru/solonchak-uyuni",
   "countryIds": [
-    "country_bolivia"
+    "country_bolivia",
+    "country_chile"
   ],
-  "destinationIds": [],
-  "destinations": [],
+  "destinationIds": [
+    "destination_bolivia_laguna_verde",
+    "destination_bolivia_pustynya_salvadora_dali",
+    "destination_bolivia_termalnye_istochniki_polkes",
+    "destination_bolivia_gejzery_sol_de_manyana",
+    "destination_bolivia_laguna_kolorada",
+    "destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa",
+    "destination_bolivia_laguna_honda",
+    "destination_bolivia_laguna_hedionda",
+    "destination_bolivia_laguna_kanyapa",
+    "destination_bolivia_pustynya_siloli",
+    "destination_bolivia_arbol_de_piedra",
+    "destination_bolivia_vulkan_ollague",
+    "destination_bolivia_puerto_chuvica",
+    "destination_bolivia_uyuni",
+    "destination_bolivia_kolchani",
+    "destination_bolivia_ojos_del_salar",
+    "destination_bolivia_ostrov_inka_huasi",
+    "destination_chile_san_pedro_de_atakama"
+  ],
+  "destinations": [
+    "destination_bolivia_laguna_verde",
+    "destination_bolivia_pustynya_salvadora_dali",
+    "destination_bolivia_termalnye_istochniki_polkes",
+    "destination_bolivia_gejzery_sol_de_manyana",
+    "destination_bolivia_laguna_kolorada",
+    "destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa",
+    "destination_bolivia_laguna_honda",
+    "destination_bolivia_laguna_hedionda",
+    "destination_bolivia_laguna_kanyapa",
+    "destination_bolivia_pustynya_siloli",
+    "destination_bolivia_arbol_de_piedra",
+    "destination_bolivia_vulkan_ollague",
+    "destination_bolivia_puerto_chuvica",
+    "destination_bolivia_uyuni",
+    "destination_bolivia_kolchani",
+    "destination_bolivia_ojos_del_salar",
+    "destination_bolivia_ostrov_inka_huasi",
+    "destination_chile_san_pedro_de_atakama"
+  ],
   "aliases": [
     "solonchak-uyuni"
   ],
@@ -34,10 +73,14 @@
       "mimeType": "text/markdown"
     },
     "verification": {
-      "method": "mapping_sheet_exact_source_url",
+      "method": "exact_selected_v2_and_anna_telegram_clarification",
       "driveMetadataVerified": true,
-      "textBodyReviewed": false,
-      "verifiedAt": "2026-10-02"
+      "textBodyReviewed": true,
+      "verifiedAt": "2026-10-09"
+    },
+    "provenance": {
+      "clarification": "Анна, Telegram, 09.10.2026 17:58 и 18:03: остров Рыб — Инкауаси.",
+      "auditPath": "data/audits/anna-clarifications-batch1-20261009.json"
     }
   },
   "media": {
@@ -82,9 +125,9 @@
   },
   "readiness": {
     "sources": "ready",
-    "text": "rewrite_v2_available",
+    "text": "rewrite_v2_reviewed",
     "media": "ready",
-    "geography": "resolve_when_creating_tour"
+    "geography": "resolved"
   },
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -103,5 +146,33 @@
   "legacyUrls": [
     "/tury/solonchak-uyuni/",
     "/boliviya/tour/solonchak-uyuni/"
-  ]
+  ],
+  "routeCountryIds": [
+    "country_bolivia"
+  ],
+  "routeDestinationIds": [
+    "destination_bolivia_laguna_verde",
+    "destination_bolivia_pustynya_salvadora_dali",
+    "destination_bolivia_termalnye_istochniki_polkes",
+    "destination_bolivia_gejzery_sol_de_manyana",
+    "destination_bolivia_laguna_kolorada",
+    "destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa",
+    "destination_bolivia_laguna_honda",
+    "destination_bolivia_laguna_hedionda",
+    "destination_bolivia_laguna_kanyapa",
+    "destination_bolivia_pustynya_siloli",
+    "destination_bolivia_arbol_de_piedra",
+    "destination_bolivia_vulkan_ollague",
+    "destination_bolivia_puerto_chuvica",
+    "destination_bolivia_uyuni",
+    "destination_bolivia_kolchani",
+    "destination_bolivia_ojos_del_salar",
+    "destination_bolivia_ostrov_inka_huasi"
+  ],
+  "primaryThemes": [
+    "theme_adventure",
+    "theme_wildlife"
+  ],
+  "themes": [],
+  "status": "approved"
 }

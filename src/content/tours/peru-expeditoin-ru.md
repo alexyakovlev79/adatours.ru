@@ -99,6 +99,9 @@ itinerary:
     После обеда - Ойянтайтамбо, важный военный, религиозный и сельскохозяйственный центр инков. Здесь находятся Храм десяти окон, ванны ньуста и Храм Солнца.
 
     Ночь в Священной долине.
+  images:
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp
+    alt: Традиционный текстиль в мастерской Священной долины инков
 - day: 5
   title: Мачу-Пикчу
   places:
@@ -132,8 +135,6 @@ itinerary:
   images:
   - src: /media/tours/peru-8d/itinerary/day-04-enhanced-20261001.webp
     alt: Куско
-  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
-    alt: 'Перу: Энергия Предков'
 - day: 7
   title: 'Озеро Титикака: Урос и Такиле'
   places:
@@ -160,8 +161,8 @@ itinerary:
   - Хулиака
   text: После завтрака трансфер в аэропорт Хулиака. Дорога из Пуно занимает около 1 часа.
   images:
-  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
-    alt: 'Перу: Энергия Предков'
+  - src: /media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: город Пуно в Перу и озеро Титикака'
 included:
 - Включенное питание и напитки.
 - Завтраки.

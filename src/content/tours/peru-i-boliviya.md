@@ -73,8 +73,6 @@ itinerary:
   images:
   - src: /media/tours/peru-i-boliviya/lima-park-of-love-src-enhanced-20261008.webp
     alt: Лима
-  - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: Куско
 - day: 3
   title: Куско - Мачу-Пикчу - Куско
   places:
@@ -113,6 +111,9 @@ itinerary:
     Проживание в Священной долине.
 
     **Питание:** обед включен.
+  images:
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp
+    alt: Традиционный текстиль в мастерской Священной долины инков
 - day: 5
   title: Куско - Пуно
   places:
@@ -131,10 +132,8 @@ itinerary:
 
     Пуно расположен на высоте более 3800 м на берегу озера Титикака. Главная роль города в маршруте - отправная точка к плавучим островам на перуанской стороне озера.
   images:
-  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
+  - src: /media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp
     alt: Пуно
-  - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: Куско
 - day: 6
   title: Пуно - озеро Титикака - Копакабана - Ла-Пас
   places:
@@ -150,10 +149,8 @@ itinerary:
 
     По прибытии в Ла-Пас встреча с водителем и трансфер в отель.
   images:
-  - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
-    alt: Ла Пас
-  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
-    alt: Пуно
+  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp
+    alt: 'На фото: Озеро Титикака и плавучие острова Урос  в Перу'
 - day: 7
   title: Ла-Пас
   places:
@@ -177,8 +174,8 @@ itinerary:
   - Ла Пас
   text: В заранее согласованное время трансфер в аэропорт для вылета домой.
   images:
-  - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
-    alt: Ла Пас
+  - src: /media/destinations/la-pas/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: столица Боливии город Ла Пас'
 included:
 - Трансферы аэропорт - отель - аэропорт.
 - Проживание в отелях.

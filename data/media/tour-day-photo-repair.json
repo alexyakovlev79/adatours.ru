@@ -1,47 +1,26 @@
 {
   "updatedAt": "2026-10-09",
-  "workflowVersion": "1.4",
+  "workflowVersion": "1.6",
   "lastCompletedBatch": {
+    "date": "2026-10-09",
     "tourIds": [
-      "tour_source_rybalka_v_ushuajya",
-      "tour_source_antarktida_ekspress_vozdushnyj_kruiz",
-      "tour_source_vsya_argentina",
-      "tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej",
-      "tour_source_argentina_dlya_degustatorov_khoroshej_zhizni",
-      "tour_source_tur_v_argentinu_na_dikuyu_prirodu",
-      "tour_source_tur_v_argentinu_na_11dnej",
-      "tour_source_neveroyatnaya_argentina",
-      "tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu",
-      "tour_source_argentina_ot_lda_k_vodopadam"
+      "tour_source_peru_i_boliviya",
+      "tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii",
+      "tour_source_peru_expeditoin_ru"
     ],
     "pageRows": [
-      299,
-      301,
-      302,
-      303,
-      304,
-      305,
-      306,
-      307,
-      309,
-      310
+      565,
+      567,
+      568
     ],
-    "completedTours": 10,
-    "partialTours": 0,
-    "changedTours": 6,
-    "unchangedTours": 4,
-    "replacedDuplicateSlots": 7,
-    "replacedUnreadableSlots": 3,
-    "generatedPhotos": 10,
-    "removedDuplicates": 0,
-    "commits": [
-      "74b1f09e12c8269bbfa3a9937e8dbfa1715bc4f5",
-      "e0bec455d7b9a812fcffaf52ece6be92ed3897c7",
-      "af706b966a89cd4d4a48465e7634a20e644d82ab"
-    ],
-    "spreadsheetStatus": "completed",
-    "nextTourId": "tour_source_issledovanie_argentiny",
-    "nextPageRow": 311
+    "completedTours": 3,
+    "removedDuplicateSlots": 14,
+    "removedUnreadableSlots": 1,
+    "reusedPhotos": 9,
+    "generatedPhotos": 0,
+    "createdPlaces": 0,
+    "changedExcursionHeroes": 0,
+    "uniqueDestinations": 26
   },
   "description": "Targeted tour itinerary photo repairs. Incomplete tasks are never marked finished.",
   "queue": {
@@ -38466,6 +38445,742 @@
       },
       "sheetUpdated": true,
       "photoRegistryUpdated": true
+    },
+    {
+      "tourId": "tour_source_peru_i_boliviya",
+      "contentPath": "src/content/tours/peru-i-boliviya.md",
+      "sheetRow": 565,
+      "status": "completed",
+      "workflowVersion": "1.6",
+      "completedAt": "2026-10-09",
+      "removedDuplicates": [
+        {
+          "itineraryIndex": 1,
+          "imageIndex": 1,
+          "day": 2,
+          "src": "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 3
+        },
+        {
+          "itineraryIndex": 4,
+          "imageIndex": 1,
+          "day": 5,
+          "src": "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 3
+        },
+        {
+          "itineraryIndex": 5,
+          "imageIndex": 1,
+          "day": 6,
+          "src": "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 5
+        },
+        {
+          "itineraryIndex": 5,
+          "imageIndex": 0,
+          "day": 6,
+          "src": "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 7
+        },
+        {
+          "itineraryIndex": 7,
+          "imageIndex": 0,
+          "day": 8,
+          "src": "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 7
+        }
+      ],
+      "removedUnreadable": [],
+      "reusedAssets": [
+        {
+          "itineraryIndex": 3,
+          "day": 4,
+          "src": "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp",
+          "alt": "Традиционный текстиль в мастерской Священной долины инков",
+          "destinationId": "destination_peru_svyaschennaya_dolina_inkov",
+          "origin": "destination_gallery",
+          "sourceContentPath": "src/content/destinations/sacred-valley-of-the-incas.md",
+          "originalMethod": "gpt-image",
+          "originalCreatedAt": "2026-10-09",
+          "reusedAt": "2026-10-09"
+        },
+        {
+          "itineraryIndex": 5,
+          "day": 6,
+          "src": "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp",
+          "alt": "На фото: Озеро Титикака и плавучие острова Урос  в Перу",
+          "destinationId": "destination_peru_ostrova_uros",
+          "origin": "destination_hero",
+          "sourceContentPath": "src/content/destinations/uros-islands.md",
+          "originalMethod": "gpt-image",
+          "originalCreatedAt": "2026-10-07",
+          "reusedAt": "2026-10-09"
+        },
+        {
+          "itineraryIndex": 7,
+          "day": 8,
+          "src": "/media/destinations/la-pas/gallery-1-enhanced-20261003.webp",
+          "alt": "На фото: столица Боливии город Ла Пас",
+          "destinationId": "destination_bolivia_la_pas",
+          "origin": "destination_gallery",
+          "sourceContentPath": "src/content/destinations/la-pas.md",
+          "originalMethod": "gpt-image",
+          "originalCreatedAt": "2026-10-03",
+          "reusedAt": "2026-10-09"
+        }
+      ],
+      "completedAssets": [],
+      "destinationSync": [
+        {
+          "destinationId": "destination_peru_lima",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_cusco",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_aguas_kalentes",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_machu_picchu",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_svyaschennaya_dolina_inkov",
+          "created": false,
+          "status": "completed",
+          "paths": [
+            "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp"
+          ],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_chinchero",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_moraj",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_olyantajtambo",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_andaguaililyas",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_rakchi",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_sikuani",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_pereval_la_raya",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_puno_i_o_titikaka",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_ostrova_uros",
+          "created": false,
+          "status": "completed",
+          "paths": [
+            "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp"
+          ],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_bolivia_kopakabana",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_bolivia_la_pas",
+          "created": false,
+          "status": "completed",
+          "paths": [
+            "/media/destinations/la-pas/gallery-1-enhanced-20261003.webp"
+          ],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "remaining": [],
+      "ordinaryDays": 8,
+      "generatedPhotos": 0,
+      "changedExcursionHeroes": 0,
+      "publicationStatus": "committed_to_main_deploy_pending"
+    },
+    {
+      "tourId": "tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii",
+      "contentPath": "src/content/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii.md",
+      "sheetRow": 567,
+      "status": "completed",
+      "workflowVersion": "1.6",
+      "completedAt": "2026-10-09",
+      "removedDuplicates": [
+        {
+          "itineraryIndex": 13,
+          "imageIndex": 0,
+          "day": 13,
+          "src": "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 1
+        },
+        {
+          "itineraryIndex": 3,
+          "imageIndex": 0,
+          "day": 3,
+          "src": "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 2
+        },
+        {
+          "itineraryIndex": 4,
+          "imageIndex": 1,
+          "day": 4,
+          "src": "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 2
+        },
+        {
+          "itineraryIndex": 5,
+          "imageIndex": 1,
+          "day": 5,
+          "src": "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 2
+        },
+        {
+          "itineraryIndex": 5,
+          "imageIndex": 0,
+          "day": 5,
+          "src": "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 6
+        },
+        {
+          "itineraryIndex": 8,
+          "imageIndex": 0,
+          "day": 8,
+          "src": "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 6
+        },
+        {
+          "itineraryIndex": 11,
+          "imageIndex": 1,
+          "day": 11,
+          "src": "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-10-images-0-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 10
+        }
+      ],
+      "removedUnreadable": [
+        {
+          "itineraryIndex": 1,
+          "imageIndex": 1,
+          "day": 2,
+          "src": "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-1-images-1-src-enhanced-20261007.webp",
+          "reason": "unreadable"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "itineraryIndex": 3,
+          "day": 3,
+          "src": "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp",
+          "alt": "Традиционный текстиль в мастерской Священной долины инков",
+          "destinationId": "destination_peru_svyaschennaya_dolina_inkov",
+          "origin": "destination_gallery",
+          "sourceContentPath": "src/content/destinations/sacred-valley-of-the-incas.md",
+          "originalMethod": "gpt-image",
+          "originalCreatedAt": "2026-10-09",
+          "reusedAt": "2026-10-09"
+        },
+        {
+          "itineraryIndex": 5,
+          "day": 5,
+          "src": "/media/tours/tur-v-peru-i-braziliyu/la-raya-pass-place-generated-20261008.webp",
+          "alt": "Горная долина у перевала Ла-Рая на дороге Куско — Пуно, Перу",
+          "destinationId": "destination_peru_pereval_la_raya",
+          "origin": "destination_hero",
+          "sourceContentPath": "src/content/destinations/la-raya-pass.md",
+          "originalMethod": "gpt-image",
+          "originalCreatedAt": "2026-10-08",
+          "reusedAt": "2026-10-09"
+        },
+        {
+          "itineraryIndex": 8,
+          "day": 8,
+          "src": "/media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp",
+          "alt": "На фото: город Пуно в Перу и озеро Титикака",
+          "destinationId": "destination_peru_puno_i_o_titikaka",
+          "origin": "destination_gallery",
+          "sourceContentPath": "src/content/destinations/puno-i-o-titikaka.md",
+          "originalMethod": "gpt-image",
+          "originalCreatedAt": "2026-10-05",
+          "reusedAt": "2026-10-09"
+        },
+        {
+          "itineraryIndex": 13,
+          "day": 13,
+          "src": "/media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp",
+          "alt": "Лима — Перу",
+          "destinationId": "destination_peru_lima",
+          "origin": "destination_gallery",
+          "sourceContentPath": "src/content/destinations/lima.md",
+          "originalMethod": "gpt-image",
+          "originalCreatedAt": "2026-10-08",
+          "reusedAt": "2026-10-09"
+        }
+      ],
+      "completedAssets": [],
+      "destinationSync": [
+        {
+          "destinationId": "destination_peru_lima",
+          "created": false,
+          "status": "completed",
+          "paths": [
+            "/media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp"
+          ],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_cusco",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_svyaschennaya_dolina_inkov",
+          "created": false,
+          "status": "completed",
+          "paths": [
+            "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp"
+          ],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_pisak",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_olyantajtambo",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_chinchero",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_urubamba",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_moraj",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_machu_picchu",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_andaguaililyas",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_rakchi",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_sikuani",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_pereval_la_raya",
+          "created": false,
+          "status": "completed",
+          "paths": [
+            "/media/tours/tur-v-peru-i-braziliyu/la-raya-pass-place-generated-20261008.webp"
+          ],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_pukara",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_puno_i_o_titikaka",
+          "created": false,
+          "status": "completed",
+          "paths": [
+            "/media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp"
+          ],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_ostrova_uros",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_kanon_kolka",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_chivaj",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_arekipa",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_linii_naska_i_ostrova_balestas",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_parakas",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "remaining": [],
+      "ordinaryDays": 13,
+      "generatedPhotos": 0,
+      "changedExcursionHeroes": 0,
+      "publicationStatus": "committed_to_main_deploy_pending"
+    },
+    {
+      "tourId": "tour_source_peru_expeditoin_ru",
+      "contentPath": "src/content/tours/peru-expeditoin-ru.md",
+      "sheetRow": 568,
+      "status": "completed",
+      "workflowVersion": "1.6",
+      "completedAt": "2026-10-09",
+      "removedDuplicates": [
+        {
+          "itineraryIndex": 5,
+          "imageIndex": 1,
+          "day": 6,
+          "src": "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 7
+        },
+        {
+          "itineraryIndex": 7,
+          "imageIndex": 0,
+          "day": 8,
+          "src": "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp",
+          "reason": "duplicate",
+          "keptDay": 7
+        }
+      ],
+      "removedUnreadable": [],
+      "reusedAssets": [
+        {
+          "itineraryIndex": 3,
+          "day": 4,
+          "src": "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp",
+          "alt": "Традиционный текстиль в мастерской Священной долины инков",
+          "destinationId": "destination_peru_svyaschennaya_dolina_inkov",
+          "origin": "destination_gallery",
+          "sourceContentPath": "src/content/destinations/sacred-valley-of-the-incas.md",
+          "originalMethod": "gpt-image",
+          "originalCreatedAt": "2026-10-09",
+          "reusedAt": "2026-10-09"
+        },
+        {
+          "itineraryIndex": 7,
+          "day": 8,
+          "src": "/media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp",
+          "alt": "На фото: город Пуно в Перу и озеро Титикака",
+          "destinationId": "destination_peru_puno_i_o_titikaka",
+          "origin": "destination_gallery",
+          "sourceContentPath": "src/content/destinations/puno-i-o-titikaka.md",
+          "originalMethod": "gpt-image",
+          "originalCreatedAt": "2026-10-05",
+          "reusedAt": "2026-10-09"
+        }
+      ],
+      "completedAssets": [],
+      "destinationSync": [
+        {
+          "destinationId": "destination_peru_lima",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_cusco",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_svyaschennaya_dolina_inkov",
+          "created": false,
+          "status": "completed",
+          "paths": [
+            "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp"
+          ],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_chinchero",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_moraj",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_olyantajtambo",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_aguas_kalentes",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_machu_picchu",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_andaguaililyas",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_rakchi",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_pereval_la_raya",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_pukara",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_puno_i_o_titikaka",
+          "created": false,
+          "status": "completed",
+          "paths": [
+            "/media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp"
+          ],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_ostrova_uros",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_ostrov_takile",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        },
+        {
+          "destinationId": "destination_peru_huliaka",
+          "created": false,
+          "status": "completed",
+          "paths": [],
+          "remaining": [],
+          "note": "Existing active destination; reused assets already linked to its hero/gallery."
+        }
+      ],
+      "pendingGeneratedSlots": [],
+      "remaining": [],
+      "ordinaryDays": 8,
+      "generatedPhotos": 0,
+      "changedExcursionHeroes": 0,
+      "publicationStatus": "committed_to_main_deploy_pending"
     }
   ],
   "version": 1,

@@ -87,10 +87,8 @@ itinerary:
 
     Дополнительно можно посетить кафедральный собор Куско. Стоимость - $20, продолжительность экскурсии около 40 минут до начала сити-тура.
   images:
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
+  - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp
     alt: Куско
-  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: Лима
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
 - day: 3
@@ -113,8 +111,8 @@ itinerary:
 
     После экскурсии возвращение в Куско, в гостиницу Siete Ventanas 3*.
   images:
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
-    alt: Куско
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp
+    alt: Традиционный текстиль в мастерской Священной долины инков
 - day: 4
   title: Куско - Мачу-Пикчу - Куско
   places:
@@ -131,10 +129,8 @@ itinerary:
 
     После обеда возвращение на железнодорожную станцию, поездка на поезде и трансфер обратно в Куско.
   images:
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp"
+  - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp
     alt: Мачу Пикчу
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
-    alt: Куско
 - day: 5
   title: Куско - Пуно
   places:
@@ -161,10 +157,8 @@ itinerary:
 
     Доплата за этот вариант - $250 на человека.
   images:
-  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
-    alt: Пуно
-  - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
-    alt: Куско
+  - src: /media/tours/tur-v-peru-i-braziliyu/la-raya-pass-place-generated-20261008.webp
+    alt: Горная долина у перевала Ла-Рая на дороге Куско — Пуно, Перу
 - day: 6
   title: Пуно и праздник Святой Канделярии
   places:
@@ -223,8 +217,8 @@ itinerary:
 
     По желанию можно посетить горячие источники. Также предусмотрено время на обед.
   images:
-  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
-    alt: Пуно
+  - src: /media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: город Пуно в Перу и озеро Титикака'
 - day: 9
   title: Колка - Арекипа
   places:
@@ -296,10 +290,8 @@ itinerary:
 
     По прибытии размещение в гостинице Residencial Los Frayles 3*. Свободное время.
   images:
-  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-11-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-11-images-0-src-enhanced-20261007.webp
     alt: Паракас
-  - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Линии Наска
 - day: 12
   title: Паракас - Лима
   places:
@@ -339,8 +331,8 @@ itinerary:
 
     При музее работает ресторан национальной кухни Café del Museo.
   images:
-  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Лима
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: Лима — Перу
 included:
 - Внутренний авиаперелет Лима - Куско.
 - Входной билет на праздник Канделярии и трансферы.

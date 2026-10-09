@@ -10,7 +10,6 @@ on:
 permissions:
   contents: read
   id-token: write
-  issues: write
   statuses: write
 
 concurrency:
@@ -84,9 +83,8 @@ jobs:
             console.log("Verified direct S3 upload without Git binary: "+receipt.assets[0].key);
           ' "$dir/receipt.json"
 
-      - name: Record smoke result for handoff
+      - name: Record smoke result in commit status
         if: always()
-        continue-on-error: true
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -103,5 +101,3 @@ jobs:
             -f state="$state" -f context="ada/direct-s3-webp-smoke" \
             -f description="$summary" \
             -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
-          gh api --method POST "repos/${GITHUB_REPOSITORY}/issues/17/comments" \
-            -f body="Automated S3 smoke result: **${summary}**. Run: https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"

@@ -256,7 +256,8 @@ itinerary:
         alt: "Олень с ветвистыми рогами среди травы и воды в Ибере, Аргентина"
         intendedSlot: "itinerary:day-6"
 
-        hover: "Ибера: болотный олень среди травы и воды"  - excursionRef: excursion_ibera_corrientes_river_or_dorado_fishing
+        hover: "Ибера: болотный олень среди травы и воды"
+  - excursionRef: excursion_ibera_corrientes_river_or_dorado_fishing
     places:
       - "Ибера"
       - "река Корриентес"

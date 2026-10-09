@@ -546,7 +546,8 @@ itinerary:
         alt: "Патагония рядом с Эль-Калафате"
         intendedSlot: "itinerary:day-21"
 
-        hover: "Эль-Калафате: пейзажи Патагонии"  - excursionRef: excursion_el_chalten_kayaking
+        hover: "Эль-Калафате: пейзажи Патагонии"
+  - excursionRef: excursion_el_chalten_kayaking
     places:
       - "Эль-Чалтен"
   - day: 22
@@ -659,7 +660,8 @@ itinerary:
         alt: "Спокойная вода между заснеженными горами, Огненная Земля, Аргентина"
         intendedSlot: "itinerary:day-24"
 
-        hover: "Огненная Земля: горное озеро у Ушуайи"  - day: 25
+        hover: "Огненная Земля: горное озеро у Ушуайи"
+  - day: 25
     title: "Ушуайя - национальный парк Тьерра-дель-Фуэго"
     places:
       - "Ушуайя"

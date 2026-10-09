@@ -68,8 +68,8 @@ itinerary:
   images:
   - src: "/media/tours/udivitelnaya-braziliya/itinerary-day-14-generated-20261008-next20.webp"
     alt: "Мощеная улица с фасадами в синих изразцах в Сан-Луисе, Бразилия"
-
-    hover: "Сан-Луис: улица с историческими фасадами и изразцами"- excursionRef: excursion_sao_luis_city_tour_four_hours
+    hover: "Сан-Луис: улица с историческими фасадами и изразцами"
+- excursionRef: excursion_sao_luis_city_tour_four_hours
   places: []
 - day: 2
   title: Сан-Луис - Баррейриньяс - Ленсойс-Мараньенсес

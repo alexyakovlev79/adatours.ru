@@ -136,7 +136,8 @@ itinerary:
         alt: "Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-2"
 
-        hover: "Буэнос-Айрес: городской пейзаж"  - excursionRef: excursion_buenos_aires_gala_tango_dinner_transfer
+        hover: "Буэнос-Айрес: городской пейзаж"
+  - excursionRef: excursion_buenos_aires_gala_tango_dinner_transfer
     places:
       - "Буэнос-Айрес"
   - day: 3

@@ -203,8 +203,8 @@ itinerary:
   images:
   - src: "/media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp"
     alt: "Водопады Игуасу со стороны Бразилии"
-
-    hover: "Игуасу: панорама водопадов с бразильской стороны"- excursionRef: excursion_source_makuko_safari
+    hover: "Игуасу: панорама водопадов с бразильской стороны"
+- excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []

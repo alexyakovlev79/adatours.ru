@@ -18,8 +18,9 @@ hero:
   src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/hero-enhanced-20261006.webp
   alt: "Лапа--шоу ночного Рио-де-Жанейро"
 gallery:
-  - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+  - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-0-src-enhanced-20261009-v2.webp"
+    alt: "Старинный фасад с кованым балконом и открытыми окнами в ночной Лапе, Рио-де-Жанейро"
+    hover: "Лапа, Рио-де-Жанейро: старинное здание с балконом в цветной ночной подсветке"
   - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-2-enhanced-20261006.webp"
     alt: ""
   - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp"

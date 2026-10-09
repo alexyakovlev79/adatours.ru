@@ -3,24 +3,23 @@
   "method": "text_sources_and_explicit_visual_reviews; only visually_reviewed records are visually verified; conflict/context/missing rows are drafts",
   "scope": "all tracked public image paths, S3 image receipts, production content slots, source-index image URLs and recorded enhancements",
   "summary": {
-    "images": 6844,
+    "images": 6845,
     "contentUsages": 6003,
     "currentImages": 2976,
     "activeImages": 2919,
     "imagesByStatus": {
-      "context_only": 5,
-      "missing_description": 739,
+      "context_only": 4,
+      "missing_description": 740,
       "source_described": 5361,
       "text_conflict": 585,
-      "visually_reviewed": 154
+      "visually_reviewed": 155
     },
     "activeImagesByStatus": {
-      "context_only": 1,
       "source_described": 2764,
-      "visually_reviewed": 154
+      "visually_reviewed": 155
     },
     "trackedImages": 2990,
-    "originalEmptyAltUsages": 219,
+    "originalEmptyAltUsages": 218,
     "sharedDescriptionGroups": 322,
     "rewordedActiveImages": 470
   },
@@ -66797,41 +66796,83 @@
     {
       "id": "fc2b6a8fb8a574adcf57",
       "src": "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-0-src-enhanced-20261007.webp",
-      "alt": "Иллюстрация: Лапа — шоу ночного Рио-де-Жанейро",
-      "hover": "Материал: Лапа — шоу ночного Рио-де-Жанейро",
-      "status": "context_only",
-      "basis": "page_context",
+      "alt": "",
+      "hover": "",
+      "status": "missing_description",
+      "basis": null,
       "visuallyReviewed": false,
-      "activeUses": 1,
+      "activeUses": 0,
       "archivedUses": 0,
-      "totalUses": 1,
+      "totalUses": 0,
       "storage": [
         "git"
       ],
       "sha256": null,
+      "sourceImages": [],
+      "evidence": [],
+      "alternatives": [],
+      "sourceRefs": [],
+      "generationRefs": [],
+      "sourceDescription": "",
+      "captionIdentity": "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-0-src-enhanced-20261007.webp",
+      "wordingChanged": false,
+      "reviewReasons": [
+        "missing_description"
+      ]
+    },
+    {
+      "id": "7ed7e6577048f3b3d072",
+      "src": "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-0-src-enhanced-20261009-v2.webp",
+      "alt": "Старинный фасад с кованым балконом и открытыми окнами в ночной Лапе, Рио-де-Жанейро",
+      "hover": "Лапа, Рио-де-Жанейро: старинное здание с балконом в цветной ночной подсветке",
+      "status": "visually_reviewed",
+      "basis": "visual_review",
+      "visuallyReviewed": true,
+      "activeUses": 1,
+      "archivedUses": 0,
+      "totalUses": 1,
+      "storage": [
+        "s3"
+      ],
+      "sha256": "711702c51bbfb7d3fad8065bc5445d8963b1114179ee74c8e781f6ecbdac83fc",
       "sourceImages": [
         "https://brasiltours.ru/image/caipirinha.png"
       ],
       "evidence": [
         {
-          "ref": "src/content/excursions/lapa-shou-nochnogo-rio-de-zhanejro.md#gallery[0]",
-          "quote": "Лапа — шоу ночного Рио-де-Жанейро"
+          "ref": "https://img.adatours.ru/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-0-src-enhanced-20261009-v2.webp",
+          "quote": "Старинный фасад с кованым балконом и открытыми окнами в ночной Лапе, Рио-де-Жанейро"
+        },
+        {
+          "ref": "data/media/lapa-photo-replacement-20261009.json",
+          "quote": "User-requested regenerated facade based on the supplied screenshot; generated image visually inspected."
         }
       ],
-      "alternatives": [],
+      "alternatives": [
+        "Старинный фасад с кованым балконом и открытыми окнами в ночной Лапе, Рио-де-Жанейро"
+      ],
       "sourceRefs": [
+        "data/media/lapa-photo-replacement-20261009.json#",
         "data/source-index/entries/excursion_source_lapa_shou_nochnogo_rio_de_zhanejro.json",
         "src/content/excursions/lapa-shou-nochnogo-rio-de-zhanejro.md#gallery[0].alt",
         "src/content/excursions/lapa-shou-nochnogo-rio-de-zhanejro.md#gallery[0].caption",
+        "src/data/media/direct-s3-uploads.json#media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-0-src-enhanced-20261009-v2.webp",
         "src/data/media/photo-enhancements.json#enhancements[2272]"
       ],
-      "generationRefs": [],
-      "sourceDescription": "Иллюстрация: Лапа — шоу ночного Рио-де-Жанейро",
+      "generationRefs": [
+        {
+          "ref": "src/data/media/photo-enhancements.json#enhancements[2272]",
+          "prompt": "Regenerate the historic Lapa facade from the user screenshot: ochre two-story building, continuous black wrought-iron balcony, open wooden shutters, arched lower windows, amber and magenta exterior light, cyan window interiors. Preserve the reference architectural composition; remove all website text and interface; realistic night travel photograph."
+        },
+        {
+          "ref": "data/media/lapa-photo-replacement-20261009.json#",
+          "prompt": "Regenerate the historic Lapa facade from the user screenshot: ochre two-story building, continuous black wrought-iron balcony, open wooden shutters, arched lower windows, amber and magenta exterior light, cyan window interiors. Preserve the reference architectural composition; remove all website text and interface; realistic night travel photograph."
+        }
+      ],
+      "sourceDescription": "Старинный фасад с кованым балконом и открытыми окнами в ночной Лапе, Рио-де-Жанейро",
       "captionIdentity": "https://brasiltours.ru/image/caipirinha.png",
       "wordingChanged": false,
-      "reviewReasons": [
-        "context_only"
-      ]
+      "reviewReasons": []
     },
     {
       "id": "cac16a76ff3905af5adb",

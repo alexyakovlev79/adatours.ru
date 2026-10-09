@@ -365,17 +365,16 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
     for (let index = 0; index < itineraryCards.length; index += 2) {
       const pair = itineraryCards.slice(index, index + 2);
       const counts = pair.map(imageCount);
-      if (counts.some((count) => count === 0)) continue;
-
       const anyOpen = pair.some(
-        (card) => card.querySelector<HTMLDetailsElement>(':scope > .day')?.open,
+        (card) => imageCount(card) > 0 &&
+          card.querySelector<HTMLDetailsElement>(':scope > .day')?.open,
       );
 
       if (anyOpen) {
-        // An opened row grows to fit both full texts and every photograph.
-        // Each card gets its own 16:9 photo slots; the CSS Grid row naturally
-        // takes the larger height without compressing either card's images.
-        pair.forEach((card) => {
+        // Each expanded photo card keeps its own full 16:9 image slots
+        // immediately after its text, including a single card or a card
+        // paired with a static text-only day.
+        pair.filter((card) => imageCount(card) > 0).forEach((card) => {
           const cardWidth = card.getBoundingClientRect().width;
           if (cardWidth <= 0) return;
           const photoHeight = Math.min(cardWidth * 9 / 16, desktopPhotoMax);
@@ -384,6 +383,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
         });
         continue;
       }
+
+      if (counts.some((count) => count === 0)) continue;
 
       const maxCount = Math.max(...counts);
       if (maxCount <= 1) continue;
@@ -667,8 +668,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
    * ----------------------------------
    * Collapsed rows retain the compact media budget based on the smaller count.
    * Opened rows show every photo at a full 16:9 slot height, while the taller
-   * card defines the natural CSS Grid row height. Media blocks remain
-   * bottom-aligned, with any extra space above the shorter column's photos.
+   * card defines the natural CSS Grid row height. Each open card's photos
+   * follow its own text; any unused space is below the shorter column.
    *
    * Keep media as a sibling of <details> to coordinate the outer cards.
    * Mobile stays single-column with original image aspect ratios.
@@ -720,8 +721,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
        */
       min-height: calc(var(--itinerary-collapsed-media-height, 260px) + 40px);
       max-height: 700px;
-      margin-top: auto;
-      padding-top: 40px;
+      margin-top: 40px;
+      padding-top: 0;
       aspect-ratio: auto;
     }
 
@@ -765,7 +766,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
     /*
      * An expanded row has no shared media-height limit. The CSS Grid row
-     * grows to the taller column, and auto margins align both photo bottoms.
+     * grows to the taller column; photos start just below their own text.
      * A separate fixed 16:9 slot is reserved for every image.
      */
     .day-card[data-row-expanded] .day__media {
@@ -774,8 +775,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
       min-height: 0;
       max-height: none;
       grid-auto-rows: var(--itinerary-expanded-photo-height);
-      margin-top: auto;
-      padding-top: 40px;
+      margin-top: 40px;
+      padding-top: 0;
       aspect-ratio: auto;
     }
 

@@ -43,12 +43,13 @@ Clicking **+** on either interactive card opens the entire pair. Its height is n
 - **All text** of both cards appears in full, including subsections and embedded excursions.
 - **Every photo** in both cards uses its own standard desktop 16:9 slot, capped at 660 px per photograph, with 16 px between photos.
 - The grid row grows to the taller natural combination of expanded text and full-height photographs. The smaller photo count **never limits** the other card when expanded.
-- Both photo blocks end on the same horizontal line. The shorter column can have empty space above its images; neither its text nor images are compressed to equalize heights.
-- Expanding never moves the next row upward; there is a 40 px top gap before the photos.
+- Each card's photos start immediately after its own text with the standard 40 px expanded-state gap. Photos in neighboring cards no longer have to end on the same horizontal line.
+- Any unused height of the shorter card appears **below its photos**, not between the text and the photos; neither text nor images are compressed to equalize heights.
+- Expanding never moves the next row upward.
 
 The rule applies to all photo-count combinations, including 1+1, 2+1, 3+2, 5+5 and a single final photo card. Clicking **×** restores the compact closed layout. A desktop text-only card retains its special static behavior.
 
-The invariant is: **closed rows stay compact; opened rows show all content and full-height photos; media bottoms align; mobile is unaffected**.
+The invariant is: **closed rows stay compact and aligned; opened rows show all content with full-height photos immediately after their own text; mobile is unaffected**.
 
 ## Desktop paired toggle behavior
 
@@ -81,7 +82,7 @@ The media block must remain a **sibling of `<details>` inside `.day-card`**.
 
 Do not move `.day__media` back inside `<details>`. When media is nested inside `<details>`, the browser does not allow the outer grid row to distribute the remaining vertical space correctly, and the two neighboring images end at different vertical positions.
 
-The `.day-card` itself stretches to the full height of its CSS Grid row. Closed multi-photo cards share a fixed media budget; opened media keeps its full intrinsic slot count, the grid row grows naturally, and photo blocks remain anchored at the bottom.
+The `.day-card` itself stretches to the full height of its CSS Grid row. Closed multi-photo cards share a fixed media budget and keep their photo bottoms aligned. When opened, each card keeps full 16:9 photo slots immediately after its own description; the grid row grows naturally, with any spare height below the shorter card's photos.
 
 ## Image behavior
 
@@ -94,7 +95,7 @@ Desktop:
 - opening a pair shows both cards' full text, places/direction and subsections;
 - expanded photos retain individual full 16:9 heights regardless of their neighbor's photo count;
 - use `object-fit: cover`;
-- keep the bottom edge aligned across the desktop row.
+- keep bottom edges aligned when collapsed; when expanded, position photos directly after their respective texts, even if their bottom edges differ.
 
 Mobile:
 

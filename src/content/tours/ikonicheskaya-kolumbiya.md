@@ -52,8 +52,8 @@ itinerary:
     \ транспорт, профессиональный англоязычный гид, вход в Музей золота, Casa de la Moneda и Donación Botero, подъем на Монсеррат.\n\
     \nМузей золота закрыт по понедельникам. Casa de la Moneda и Donación Botero закрыты по вторникам."
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Богота
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 3
   title: Богота - Сипакира - Гуатавита
   places:
@@ -66,8 +66,8 @@ itinerary:
     \ дня возвращаемся в отель.\n\n**Продолжительность:** 10 часов.  \n**Включено:** профессиональный англоязычный гид, частный\
     \ транспорт, вход в Соляной собор Сипакиры, вход к лагуне Гуатавита и типичный обед."
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Богота
+  - src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 4
   title: Богота - Медельин
   places:
@@ -78,10 +78,8 @@ itinerary:
 
     По прибытии встреча в международном аэропорту Хосе Марии Кордова, трансфер в отель и размещение.
   images:
-  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
-    alt: Медельин
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Богота
+  - src: /media/destinations/bogota/gallery-3-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 5
   title: Медельин и Коммуна 13
   places:
@@ -125,10 +123,8 @@ itinerary:
     \n**Продолжительность:** 4 часа.  \n**Включено:** профессиональный англоязычный гид, частный транспорт, интерактивная\
     \ программа по приготовлению кофе, сопровождение персонала фермы и традиционный обед."
   images:
-  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/ikonicheskaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: Перейра
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp"
-    alt: Медельин
 - day: 8
   title: Перейра - Саленто - долина Кокора
   places:
@@ -143,10 +139,8 @@ itinerary:
     \ 7 часов.  \n**Включено:** профессиональный англоязычный гид, частный транспорт, ритуал восковой пальмы и дегустация\
     \ канелазо.  \n**Дополнительно:** обед - $25 с человека."
   images:
-  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-7-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/ikonicheskaya-kolumbiya/itinerary-7-images-0-src-enhanced-20261007.webp
     alt: Долина Кокора
-  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
-    alt: Перейра
 - day: 9
   title: Перейра - Картахена - закат в бухте
   places:
@@ -159,10 +153,8 @@ itinerary:
     \ лимонадом, водой и содовой.  \n**Не включено:** продукты премиум-класса и закуски на борту, а также причальный сбор\
     \ $5 с человека.  \n**Дни проведения:** со среды по понедельник."
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp
     alt: Картахена
-  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
-    alt: Перейра
 - day: 10
   title: 'Картахена: обзорная экскурсия'
   places:
@@ -204,10 +196,8 @@ itinerary:
     \ сектор Эль-Родадеро.\n\nВозвращение в отель.\n\n**Продолжительность экскурсии:** 4 часа.  \n**Включено:** частный трансфер,\
     \ профессиональный англоязычный гид и входные билеты в указанные туристические объекты."
   images:
-  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp"
-    alt: Санта-Марта
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp"
-    alt: Картахена
+  - src: /media/destinations/cartagena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Картахена в Колумбии'
 - day: 13
   title: Санта-Марта - национальный парк Тайрона - Кабо-Сан-Хуан-дель-Гиа
   places:

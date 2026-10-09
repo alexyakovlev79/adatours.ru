@@ -11,7 +11,19 @@ summary: >-
 hero:
   src: /media/destinations/cusco/hero-enhanced-20260930.webp
   alt: Куско, Перу
-gallery: []
+gallery:
+- src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
+  alt: Куско
+- src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
+  alt: Город Куско, Перу - древняя столица империи инков
+- src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp
+  alt: Куско
+- src: /media/tours/peru-8d/itinerary/day-04-enhanced-20261001.webp
+  alt: Куско
+- src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp
+  alt: Куско
+- src: /media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: Город Куско - древняя столица инков, Перу
 relatedDestinations:
   - destination_peru_lima
   - destination_peru_machu_picchu

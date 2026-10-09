@@ -49,10 +49,8 @@ itinerary:
     \ Музей зеленых черепах.\n\nПосле прогулки возвращение в отель.\n\n**Размещение:** Pachira Lodge Tortuguero.  \n**Питание:**\
     \ завтрак, обед, ужин."
   images:
-  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-9-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
+  - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 - day: 3
   title: Национальный парк Тортугеро
   places:
@@ -77,10 +75,8 @@ itinerary:
     \ можно посетить галерею колибри, серпентарий, дом птиц, сад бабочек и экспозицию лягушек.\n\nПосле экскурсии трансфер\
     \ обратно в Сан-Хосе.\n\n**Размещение:** Barceló San José Palacio.  \n**Питание:** завтрак, обед."
   images:
-  - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
+  - src: /media/destinations/san-jose/gallery-2-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 - day: 5
   title: Сан-Хосе
   places:

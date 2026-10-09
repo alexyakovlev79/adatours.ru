@@ -59,6 +59,9 @@ itinerary:
     Возвращение в Сан-Хосе. Ночь в Barceló San Jose Palacio.
 
     Питание: завтрак, обед.
+  images:
+  - src: /media/tours/zhemchuzhiny-kosta-riki-za-10-dnej/poas-crater-generated-20261009-v1.webp
+    alt: Кратер вулкана Поас с озером среди вулканических склонов
 - day: 3
   title: Тортугеро
   places:
@@ -75,6 +78,9 @@ itinerary:
     Ночь в Pachira Lodge Tortuguero.
 
     Питание: завтрак, обед, ужин.
+  images:
+  - src: /media/destinations/tortuguero/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике'
 - day: 4
   title: Тортугеро - Ареналь
   places:
@@ -107,8 +113,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 6
   title: Ареналь - Монтеверде
   places:
@@ -123,8 +129,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 7
   title: Монтеверде - Мануэль-Антонио
   places:
@@ -142,6 +148,9 @@ itinerary:
     Ночь в Parador Resort & Spa.
 
     Питание: завтрак, обед.
+  images:
+  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 8
   title: Мануэль-Антонио
   places:
@@ -158,6 +167,9 @@ itinerary:
     Ночь в Parador Resort & Spa.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 9
   title: Мануэль-Антонио
   places:
@@ -168,6 +180,9 @@ itinerary:
     Ночь в Parador Resort & Spa.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 10
   title: Сан-Хосе
   places:

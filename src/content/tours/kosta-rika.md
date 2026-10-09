@@ -73,8 +73,6 @@ itinerary:
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
 - day: 3
   title: Национальный парк Тортугеро
   places:
@@ -128,8 +126,6 @@ itinerary:
   images:
   - src: /media/tours/costa-rica/itinerary-0-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
 - day: 5
   title: Сан-Хосе
   places:
@@ -139,8 +135,8 @@ itinerary:
 
     На этом программа заканчивается.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 included:
 - Все трансферы.
 - Входные билеты в достопримечательности, кроме отдельно обозначенного билета в Национальный парк Тортугеро.

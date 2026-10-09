@@ -48,8 +48,8 @@ itinerary:
 
     Питание: завтрак и обед.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 - day: 3
   title: Тихоокеанское побережье
   places:
@@ -64,6 +64,9 @@ itinerary:
     Ночи в **Tamarindo Diria**.
 
     Питание: завтрак и обед.
+  images:
+  - src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-1-generated-20261009-v1.webp
+    alt: Снасти на рыболовном катере у побережья Фламинго
 - day: 4
   title: Тихоокеанское побережье
   places:
@@ -78,6 +81,9 @@ itinerary:
     Ночи в **Tamarindo Diria**.
 
     Питание: завтрак и обед.
+  images:
+  - src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-2-generated-20261009-v1.webp
+    alt: Рыболовный катер в тихоокеанской бухте Фламинго
 - day: 5
   title: Тихоокеанское побережье
   places:
@@ -92,6 +98,9 @@ itinerary:
     Ночи в **Tamarindo Diria**.
 
     Питание: завтрак и обед.
+  images:
+  - src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-3-generated-20261009-v1.webp
+    alt: Морская рыбалка в открытых водах у Фламинго
 - day: 6
   title: Тихоокеанское побережье
   places:
@@ -106,6 +115,9 @@ itinerary:
     Ночи в **Tamarindo Diria**.
 
     Питание: завтрак и обед.
+  images:
+  - src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-4-generated-20261009-v1.webp
+    alt: Выход рыболовного катера из бухты Фламинго
 - day: 7
   title: Сан-Хосе
   places:
@@ -115,8 +127,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+  - src: /media/destinations/san-jose/gallery-2-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 included:
 - англоговорящий гид;
 - трансферы;

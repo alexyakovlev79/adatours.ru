@@ -9,7 +9,27 @@ destinationType: "city"
 summary: "Сан-Хосе, столица Коста-Рики, знакомит с Национальным театром, музеями золота и нефрита. В окрестностях находятся кофейные плантации, фермы бабочек и вулканы."
 searchAliases: []
 hero: {"src":"/media/destinations/san-jose/hero-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"}
-gallery: [{"src":"/media/destinations/san-jose/gallery-1-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-2-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-3-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-4-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-5-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-6-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-7-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"},{"src":"/media/destinations/san-jose/gallery-8-enhanced-20261004.webp","alt":"На фото: столица Коста-Рики, город Сан-Хосе"}]
+gallery:
+- src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+- src: /media/destinations/san-jose/gallery-2-enhanced-20261004.webp
+  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+- src: /media/destinations/san-jose/gallery-3-enhanced-20261004.webp
+  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+- src: /media/destinations/san-jose/gallery-4-enhanced-20261004.webp
+  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+- src: /media/destinations/san-jose/gallery-5-enhanced-20261004.webp
+  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+- src: /media/destinations/san-jose/gallery-6-enhanced-20261004.webp
+  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+- src: /media/destinations/san-jose/gallery-7-enhanced-20261004.webp
+  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+- src: /media/destinations/san-jose/gallery-8-enhanced-20261004.webp
+  alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
+- src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-0-images-0-src-enhanced-20261007.webp
+  alt: Сан Хосе
+- src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-9-images-0-src-enhanced-20261007.webp
+  alt: Сан Хосе
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

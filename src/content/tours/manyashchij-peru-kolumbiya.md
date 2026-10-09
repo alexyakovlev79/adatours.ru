@@ -99,9 +99,7 @@ itinerary:
 
      После программы возвращение в отель.
   images:
-  - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
-    alt: Куско
-  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-day-3-images-1-enhanced-20261007.webp"
+  - src: /media/tours/manyashchij-peru-kolumbiya/itinerary-day-3-images-1-enhanced-20261007.webp
     alt: Лима
 - excursionRef: excursion_cusco_cathedral_visit
   places: []
@@ -135,8 +133,8 @@ itinerary:
 
     В стоимость дополнительной поездки входит обед, шведский стол с блюдами национальной кухни.
   images:
-  - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
-    alt: Куско
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
+    alt: Город Куско, Перу - древняя столица империи инков
 - excursionRef: excursion_peru_sacred_valley_full_day
   places: []
 - day: 6
@@ -153,10 +151,8 @@ itinerary:
 
     Обед, шведский стол, проходит в Сикуани. Далее остановка на перевале Ла-Рая на высоте около 4400 метров и посещение Пукары с местным музеем. Примерно в 18:00 прибытие в Пуно. Город расположен на высоте около 3860 метров у озера Титикака. Размещение в гостинице.
   images:
-  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
+  - src: /media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp
     alt: Пуно
-  - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
-    alt: Куско
 - day: 7
   title: Озеро Титикака, Урос и Такиле - Лима
   places:
@@ -175,8 +171,6 @@ itinerary:
   images:
   - src: /media/tours/peru-8d/itinerary/day-06-enhanced-20261001.webp
     alt: Озеро Титикака
-  - src: "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp"
-    alt: Лима
 - day: 8
   title: Лима - Богота
   places:
@@ -187,8 +181,8 @@ itinerary:
 
     По прибытии в аэропорт Эль-Дорадо встреча, трансфер и размещение в гостинице. Оставшаяся часть дня свободная. После высокогорного Перу начинается совсем другая часть путешествия, сначала столица Колумбии, затем Карибское побережье.
   images:
-  - src: "/media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Лима
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
+    alt: Лима — Перу
 - day: 9
   title: 'Богота: исторический центр, Музей золота и Монсеррат'
   places:
@@ -201,6 +195,9 @@ itinerary:
     В программу входит Музей золота с большой коллекцией предметов доколумбовой эпохи: маски, диадемы, браслеты, ритуальные фигурки и символы власти. Затем вы посетите дом-музей, связанный с Симоном Боливаром, и узнаете о его жизни и деятельности в Колумбии.
 
     После этого подъем на Монсеррат на фуникулере. Холм находится примерно на высоте 3200 метров над уровнем моря, сверху открывается панорама Боготы. На вершине расположен монастырь Сан-Винсенте XVII века. Экскурсия продолжается в музее Фернандо Ботеро. В конце программы возвращение в отель либо трансфер в местный ресторан для знакомства с национальной кухней.
+  images:
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 10
   title: Богота - озеро Гуатавита - Сипакира
   places:
@@ -243,8 +240,8 @@ itinerary:
 
     После экскурсии возвращение в гостиницу и отдых.
   images:
-  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Картахена
+  - src: /media/destinations/cartagena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Картахена в Колумбии'
 - day: 13
   title: Картахена или остров Бару
   places:
@@ -259,8 +256,8 @@ itinerary:
 
     На территории отеля Agua Azul предусмотрено дневное размещение с лежаками и пляжными полотенцами. Обед включен. Напитки в ресторане и баре оплачиваются отдельно. В 17:00 возвращение на скоростной лодке в Картахену и трансфер в отель.
   images:
-  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Картахена
+  - src: /media/destinations/cartagena/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Картахена в Колумбии'
 - excursionRef: excursion_colombia_baru_agua_azul_day_trip
   places: []
 - day: 14
@@ -273,8 +270,8 @@ itinerary:
 
     Перелет Картахена - Богота и стыковка с международным рейсом.
   images:
-  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Картахена
+  - src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 included:
 - Внутренние авиаперелеты Лима - Куско, Хулиака - Лима, Богота - Картахена - Богота.
 - Трансферы, переезды и питание по программе.

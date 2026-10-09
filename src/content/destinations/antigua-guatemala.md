@@ -12,20 +12,26 @@ hero:
   src: "/media/countries/guatemala/featureBands-1-enhanced-20261002.webp"
   alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
 gallery:
-  - src: "/media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
-  - src: "/media/destinations/antigua-guatemala/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
-  - src: "/media/destinations/antigua-guatemala/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
-  - src: "/media/destinations/antigua-guatemala/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
-  - src: "/media/destinations/antigua-guatemala/gallery-5-enhanced-20261003.webp"
-    alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
-  - src: "/media/destinations/antigua-guatemala/gallery-6-enhanced-20261003.webp"
-    alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
-  - src: "/media/destinations/antigua-guatemala/gallery-7-enhanced-20261003.webp"
-    alt: "На фото: на улицах города Антигуа-Гуатемала в Гватемале"
+- src: /media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+- src: /media/destinations/antigua-guatemala/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+- src: /media/destinations/antigua-guatemala/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+- src: /media/destinations/antigua-guatemala/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+- src: /media/destinations/antigua-guatemala/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+- src: /media/destinations/antigua-guatemala/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+- src: /media/destinations/antigua-guatemala/gallery-7-enhanced-20261003.webp
+  alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
+- src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
+  alt: Антигуа-Гуатемала
+- src: /media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp
+  alt: Антигуа-Гуатемала
+- src: /media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: Антигуа-Гуатемала
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

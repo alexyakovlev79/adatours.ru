@@ -1,0 +1,29 @@
+---
+id: destination_costa_rica_flamingo
+locale: ru
+name: Фламинго
+slug: flamingo
+status: approved
+countryId: country_costa_rica
+destinationType: city
+summary: Фламинго на тихоокеанском побережье Коста-Рики, отправная точка для морской рыбалки в открытом океане и у островов.
+hero:
+  src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-1-generated-20261009-v1.webp
+  alt: Снасти на рыболовном катере у побережья Фламинго
+gallery:
+- src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-2-generated-20261009-v1.webp
+  alt: Рыболовный катер в тихоокеанской бухте Фламинго
+- src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-3-generated-20261009-v1.webp
+  alt: Морская рыбалка в открытых водах у Фламинго
+- src: /media/tours/pybalka-v-kosta-rike/flamingo-fishing-4-generated-20261009-v1.webp
+  alt: Выход рыболовного катера из бухты Фламинго
+themes:
+- theme_fishing
+searchAliases: []
+sourceSnapshot: data/source-index/materials/destination_costa_rica_flamingo.md
+updatedAt: '2026-10-09'
+---
+
+Фламинго находится на северо-западном тихоокеанском побережье Коста-Рики. Район известен выходами на морскую рыбалку: одни маршруты направлены в глубоководную часть океана, другие проходят ближе к островам Каталина и Бруммель. Эти участки различаются глубиной и видами рыб, ради которых сюда приезжают.
+
+В океанских водах встречаются парусник, марлины, дорадо и тунцы. У островов рыболовные маршруты связаны с ваху, макрелями и рыбой-петухом. Фламинго интересен тем, кто хочет сделать рыбалку отдельной частью поездки по Коста-Рике и провести несколько дней у Тихого океана.

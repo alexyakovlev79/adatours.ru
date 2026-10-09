@@ -42,6 +42,9 @@ itinerary:
 
 
     Ночь в Porta Antigua, двухместный номер Standard, завтрак включен.'
+  images:
+  - src: /media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Гватемала-Сити (столица страны)'
 - day: 2
   title: Антигуа - озеро Атитлан - Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан
   places: []
@@ -70,6 +73,9 @@ itinerary:
 
 
     Ночь в Hotel Atitlan. Питание: завтрак.'
+  images:
+  - src: /media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
 - day: 3
   title: Рынок Чичикастенанго, только в четверг или воскресенье
   places: []
@@ -92,6 +98,9 @@ itinerary:
 
 
     Ночь в Hotel Porto Antigua, двухместный номер Standard, завтрак включен.'
+  images:
+  - src: /media/destinations/chichicastenango/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: рынок в городе Чичикастенанго в Гватемале'
 - day: 4
   title: Антигуа
   places: []
@@ -109,6 +118,9 @@ itinerary:
 
 
     Ночь в отеле.'
+  images:
+  - src: /media/destinations/antigua-guatemala/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
 - day: 5
   title: Гватемала-Сити - Флорес
   places: []
@@ -116,6 +128,9 @@ itinerary:
 
 
     Ночь в Villa Maya. Питание: завтрак.'
+  images:
+  - src: /media/destinations/guatemala-city/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Гватемала-Сити (столица страны)'
 - day: 6
   title: Тикаль - Гватемала-Сити
   places: []
@@ -141,6 +156,9 @@ itinerary:
 
 
     Ночь в Barcelo Guatemala City. Питание: завтрак.'
+  images:
+  - src: /media/destinations/guatemala-city/gallery-3-enhanced-20261003.webp
+    alt: 'На фото: город Гватемала-Сити (столица страны)'
 - day: 7
   title: Гватемала-Сити - Сан-Хосе - Ла-Фортуна
   places: []
@@ -152,6 +170,9 @@ itinerary:
 
 
     Ночь в Arenal Kioro Suites & Spa, двухместный номер Standard, завтрак включен. Питание: завтрак.'
+  images:
+  - src: /media/destinations/guatemala-city/gallery-4-enhanced-20261003.webp
+    alt: 'На фото: город Гватемала-Сити (столица страны)'
 - day: 8
   title: Ареналь - заповедник Каньо-Негро
   places: []
@@ -167,6 +188,9 @@ itinerary:
 
 
     Ночь в Arenal Kioro Suites & Spa, двухместный номер Standard, завтрак включен. Питание: завтрак, обед.'
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 9
   title: Ареналь
   places: []
@@ -180,6 +204,9 @@ itinerary:
 
 
     Ночь в Arenal Kioro Suites & Spa. Питание: завтрак.'
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 10
   title: Ареналь - река Тарколес - Мануэль Антонио
   places: []
@@ -196,6 +223,9 @@ itinerary:
 
 
     Ночь в Shana by the Beach Resort. Питание: завтрак, обед.'
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-3-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 11
   title: Национальный парк Мануэль Антонио
   places: []
@@ -212,6 +242,9 @@ itinerary:
 
 
     Ночь в Shana by the Beach Resort. Питание: завтрак.'
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 12
   title: Мануэль Антонио - тихоокеанское побережье
   places: []
@@ -219,6 +252,9 @@ itinerary:
 
 
     Ночь в Tamarindo Diria, двухместный номер Standard, завтрак включен. Питание: завтрак.'
+  images:
+  - src: /media/destinations/manuel-antonio/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - day: 13
   title: Тихоокеанское побережье
   places: []
@@ -227,10 +263,16 @@ itinerary:
 
     Ночь в Tamarindo Diria, двухместный номер Standard, завтрак включен. Питание: завтрак.'
   label: Дни 13–14
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-1-generated-20261009-v1.webp
+    alt: Песчаный пляж на Тихоокеанском побережье Коста-Рики
 - day: 15
   title: Сан-Хосе
   places: []
   text: 'Трансфер с водителем в международный аэропорт. Питание: завтрак.'
+  images:
+  - src: /media/destinations/san-jose/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: столица Коста-Рики, город Сан-Хосе'
 included:
 - трансферы;
 - проживание в отелях по программе;
@@ -269,7 +311,24 @@ destinations: &id001
 - destination_costa_rica_kepos
 - destination_costa_rica_manuel_antonio
 - destination_costa_rica_plajya_tamarindo
-routeDestinations: *id001
+- destination_costa_rica_pacific_coast
+routeDestinations:
+- destination_guatemala_gvatemala_siti
+- destination_guatemala_antigua_guatemala
+- destination_guatemala_panahachel
+- destination_guatemala_lago_de_atitlan
+- destination_guatemala_san_huan_la_laguna
+- destination_guatemala_santyago_atitlan
+- destination_guatemala_chichikastenango
+- destination_guatemala_tikal_flores
+- destination_costa_rica_san_hose
+- destination_costa_rica_la_fortuna_vulkan_arenal
+- destination_costa_rica_zapovednik_kano_negro
+- destination_costa_rica_reka_tarkoles
+- destination_costa_rica_kepos
+- destination_costa_rica_manuel_antonio
+- destination_costa_rica_plajya_tamarindo
+- destination_costa_rica_pacific_coast
 routeCountries:
 - country_guatemala
 - country_costa_rica

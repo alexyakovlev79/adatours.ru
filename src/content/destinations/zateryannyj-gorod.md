@@ -9,7 +9,13 @@ destinationType: "region"
 summary: "Сьюдад-Пердида, или Затерянный город, хранит руины поселения культуры Тайрона в горах Сьерра-Невада-де-Санта-Марта. К ним ведут пешие тропы."
 searchAliases: []
 hero: {"src":"/media/destinations/ciudad-perdida/hero-enhanced-20261003.webp","alt":"На фото: затерянный город в Колумбии (Lost City)"}
-gallery: [{"src":"/media/destinations/ciudad-perdida/gallery-1-enhanced-20261003.webp","alt":"На фото: затерянный город в Колумбии (Lost City)"}]
+gallery:
+- src: /media/destinations/ciudad-perdida/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: затерянный город в Колумбии (Lost City)'
+- src: /media/tours/zateryannyj-gorod-v-santa-marte/itinerary-3-images-0-src-enhanced-20261007.webp
+  alt: 'на фото: Затерянный город Санта Марта'
+- src: /media/tours/zateryannyj-gorod-v-santa-marte/hero-src-enhanced-20261007.webp
+  alt: 'на фото: Затерянный город Санта Марта'
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

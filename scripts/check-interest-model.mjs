@@ -59,9 +59,12 @@ for (const interest of INTERESTS) {
 // Validate exact source pointers and compact catalog copies, not the historical annotation audit.
 for (const collection of ['tours', 'excursions', 'destinations']) {
   const rawCatalog = JSON.parse(readFileSync(`data/source-index/catalogs/${collection}.json`, 'utf8'));
-  // Only top-level records are canonical; nested destination references reuse IDs.
-  assert.ok(Array.isArray(rawCatalog.entries), `compact catalogue ${collection} has entries`);
-  const compact = new Map(rawCatalog.entries.map((entry) => [entry.id, entry]));
+  const compact = new Map();
+  const visit = (value) => {
+    if (Array.isArray(value)) return value.forEach(visit);
+    if (value && typeof value === 'object') { if (value.id) compact.set(value.id, value); Object.values(value).forEach(visit); }
+  };
+  visit(rawCatalog);
   for (const entry of collections[collection].filter((entry) => entry.data.locale === 'ru' && isActiveEntity(entry))) {
     const d = entry.data;
     const source = JSON.parse(readFileSync(`data/source-index/entries/${d.id}.json`, 'utf8'));

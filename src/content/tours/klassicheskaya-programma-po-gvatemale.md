@@ -59,8 +59,6 @@ itinerary:
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
     alt: 'На фото: Вид на озеро Атитлан'
-  - src: "/media/tours/klassicheskaya-programma-po-gvatemale/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: Арка Санта-Каталина, Антигуа-Гватемала'
 - day: 3
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан - Антигуа
   places:
@@ -81,10 +79,8 @@ itinerary:
     \ традиционной одежде.\n\nПосле экскурсии возвращаемся в Панахачель и переезжаем в Антигуа.\n\nНочь в Villa Colonial.\
     \  \nПитание: завтрак."
   images:
-  - src: "/media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Озеро Атитлан в Гватемале'
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: Арка Святой Каталины, Антигуа-Гватемала'
 - day: 4
   title: Антигуа - Гватемала-Сити
   places:

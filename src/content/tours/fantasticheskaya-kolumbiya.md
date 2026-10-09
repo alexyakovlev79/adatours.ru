@@ -91,10 +91,8 @@ itinerary:
     наркобарона и уличным граффити. Продолжительность: 6 часов Включено: транспорт, услуги двуязычного гида, оплата в метро
     и на канатную дорогу.Остановка в парках: Barefoot/ Sculpture Park/ Wish Park/Pueblito Paisa.'
   images:
-  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
-    alt: 'на фото: Медельин'
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Богота'
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 4
   title: Медельин - Пеньоль и Гуатапе
   places:
@@ -152,6 +150,9 @@ itinerary:
     сушки зерен кофе. Тур завершится на вкусных нотках -мы попробуем кофейный лимонад.Возвращение в отель.Продолжительность:
     4 часаВключено: частный трансфер, услуги гида на испанском языке, на ферме Санта - Роза - интерактивный процесс приготовления
     кофе, помощь опытного персонала гасиенды, и закуски.Дополнительно оплачивается обед: 25 долларов США на человека.'
+  images:
+  - src: /media/destinations/pereira/featureBands-0-image-enhanced-20261007.webp
+    alt: Кофейные фермы региона
 - day: 8
   title: Медельин – Санта Марта
   places:
@@ -166,10 +167,8 @@ itinerary:
     в музее золота. Возвращение в гостиницу.Продолжительность: 4 часаВключено: входные билеты, услуги гида, индивидуальный
     транспорт, местная карта медицинской помощи'
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-1-src-enhanced-20261007.webp"
+  - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-1-src-enhanced-20261007.webp
     alt: 'на фото: Санта Марта'
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Медельин'
 - day: 9
   title: Санта-Марта - Мамей - Кемп Кабана де Адан 1
   places:
@@ -196,6 +195,9 @@ itinerary:
     и ознакомит с планом на следующий день. Размещение в гамаках, кроватях или палатках, ужин в лагере (входит в стоимость).Продолжительность:
     7 часов. Расстояние: 14 км. Высота: 900 метровПримечание: Размещение в гамаках/кроватях/шатрах с москитными сетками и
     одеяламиДополнительно: Мулы для перевозки багажа'
+  images:
+  - src: /media/tours/zateryannyj-gorod-v-santa-marte/itinerary-day-03-generated-20261008-v1.webp
+    alt: Традиционные хижины общины Мутанзи среди горного леса, Колумбия
 - day: 11
   title: Лагерь 3 - Затерянный Город - Лагерь 2
   places:
@@ -209,6 +211,9 @@ itinerary:
     полакомиться местными фруктами, мы продолжим наш путь в кемп 2 Бумаке. Размещение в гамаках. Ужин в лагере (входит в стоимость).Продолжительность:
     7 часов, Расстояние: 9 км. Высота: 470 м.Примечание: Размещение в гамаках/кроватях/шатрах с москитными сетками и одеяламиДополнительно:
     Мулы для перевозки багажа'
+  images:
+  - src: /media/destinations/ciudad-perdida/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: затерянный город в Колумбии (Lost City)'
 - day: 12
   title: Кемп 2 - Мамей - Санта-Марта
   places:
@@ -235,10 +240,8 @@ itinerary:
     Здесь расположены сувенирные лавочки и магазины, где можно купить все - от безделушек до гамаков.Продолжительность: 4
     часа. Дни проведения тура: ежедневноВключено: транспорт, услуги гида, входные билеты и местная карта медицинской помощи.'
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp
     alt: 'на фото: Картахена'
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-1-src-enhanced-20261007.webp"
-    alt: 'на фото: Санта Марта'
 - day: 14
   title: Картахена - Исла дель Росарио
   places:

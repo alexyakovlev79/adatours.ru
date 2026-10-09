@@ -74,8 +74,8 @@ itinerary:
 
     После обеда в ресторане возвращение в гостиницу.
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: страна Колумбия, город Богота'
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 4
   title: Богота - озеро Гуатавита - Сипакира
   places:
@@ -99,10 +99,8 @@ itinerary:
 
     После экскурсии возвращение в Боготу. Дорога Сипакира - Богота занимает примерно 1,5 часа. Обед в ресторане включен в программу дня.
   images:
-  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/manyashchaya-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: 'На фото: страна Колумбия и озеро Гуатавита'
-  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
-    alt: 'На фото: страна Колумбия, город Богота'
 - day: 5
   title: Богота - Медельин - Эль-Пеньон-де-Гуатапе
   places:
@@ -120,10 +118,8 @@ itinerary:
 
     После посещения скалы вы отправитесь в деревню Гуатапе, где будет время на прогулку и обед. Затем возвращение в Медельин.
   images:
-  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
-    alt: 'На фото: страна Колумбия, город Медельин'
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: страна Колумбия, город Богота'
+  - src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 6
   title: Медельин
   places:
@@ -153,10 +149,8 @@ itinerary:
 
     Встреча по прибытии, трансфер и размещение в гостинице.
   images:
-  - src: "/media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: страна Колумбия, город Картахена'
-  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp"
-    alt: 'На фото: страна Колумбия, город Медельин'
+  - src: /media/destinations/medellin/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Медельин в Колумбии'
 - day: 8
   title: Картахена
   places:

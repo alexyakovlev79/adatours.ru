@@ -9,7 +9,27 @@ destinationType: "city"
 summary: "Столица Колумбии с колониальным районом Ла-Канделария, Музеем золота и панорамами с горы Монсеррат. Уличные граффити соседствуют здесь со старинной архитектурой."
 searchAliases: []
 hero: {"src":"/media/destinations/bogota/hero-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"}
-gallery: [{"src":"/media/destinations/bogota/gallery-1-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-2-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-3-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-4-enhanced-20261003.webp","alt":"На фото: колумбийский кофе"},{"src":"/media/destinations/bogota/gallery-5-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-6-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-7-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"},{"src":"/media/destinations/bogota/gallery-8-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"}]
+gallery:
+- src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: город Богота, столица Колумбии'
+- src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: город Богота, столица Колумбии'
+- src: /media/destinations/bogota/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: город Богота, столица Колумбии'
+- src: /media/destinations/bogota/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: колумбийский кофе'
+- src: /media/destinations/bogota/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: город Богота, столица Колумбии'
+- src: /media/destinations/bogota/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: город Богота, столица Колумбии'
+- src: /media/destinations/bogota/gallery-7-enhanced-20261003.webp
+  alt: 'На фото: город Богота, столица Колумбии'
+- src: /media/destinations/bogota/gallery-8-enhanced-20261003.webp
+  alt: 'На фото: город Богота, столица Колумбии'
+- src: /media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp
+  alt: Богота
+- src: /media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: Богота
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

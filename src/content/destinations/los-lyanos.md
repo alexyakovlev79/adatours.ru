@@ -28,6 +28,8 @@ gallery:
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
 - src: /media/destinations/los-llanos/gallery-8-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
+- src: /media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
+  alt: 'На фото: животный мир Лос Льянос в Венесуэле'
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

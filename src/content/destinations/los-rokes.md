@@ -26,6 +26,8 @@ gallery:
   alt: ''
 - src: /media/destinations/los-roques/gallery-7-enhanced-20261003.webp
   alt: ''
+- src: /media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-1-images-0-src-enhanced-20261007.webp
+  alt: Лос Рокес
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

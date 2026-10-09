@@ -45,8 +45,8 @@ itinerary:
     \ Botero, подъем на Монсеррат.\n\nМузей золота закрыт по понедельникам. Casa de la Moneda и Donación Botero закрыты по\
     \ вторникам."
   images:
-  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: город Богота в Колумбии'
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 3
   title: Богота - Соляной собор Сипакиры
   places:
@@ -56,8 +56,8 @@ itinerary:
     \ возвращаемся в Боготу.\n\n**Продолжительность:** 5 часов.  \n**Включено:** профессиональный англоязычный гид, частный\
     \ транспорт и вход в Соляной собор Сипакиры."
   images:
-  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: город Богота в Колумбии'
+  - src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 4
   title: Богота - Картахена
   places:
@@ -72,10 +72,8 @@ itinerary:
     \  \n**Дни проведения:** ежедневно.  \n**Включено:** профессиональный англоязычный гид, частный транспорт и входные билеты\
     \ в указанные места."
   images:
-  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: город Богота в Колумбии'
-  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-3-images-1-src-enhanced-20261007.webp
-    alt: 'На фото: город Картахена в Колумбии'
+  - src: /media/destinations/bogota/gallery-3-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 5
   title: Картахена - острова Росарио
   places:
@@ -100,7 +98,7 @@ itinerary:
 
     Перелет домой в стоимость программы не включен.
   images:
-  - src: /media/tours/kolumbiya-2024-kulturnaya/itinerary-3-images-1-src-enhanced-20261007.webp
+  - src: /media/destinations/cartagena/gallery-1-enhanced-20261003.webp
     alt: 'На фото: город Картахена в Колумбии'
 included:
 - 3 ночи проживания в Боготе;

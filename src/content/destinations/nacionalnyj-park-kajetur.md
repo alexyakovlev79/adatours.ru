@@ -11,7 +11,9 @@ searchAliases: []
 hero:
   src: "/media/countries/guyana/featureBands-1-enhanced-20261002.webp"
   alt: "На фото: Национальный парк Кайетур в Гайане"
-gallery: []
+gallery:
+- src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-5-images-1-src-enhanced-20261007.webp
+  alt: Национальный парк Кайетур
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -85,6 +85,9 @@ itinerary:
     Возвращение в отель, ужин и отдых.
 
     **Питание:** обед, ужин.
+  images:
+  - src: /media/destinations/canaima-and-angel-falls/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 - day: 5
   title: ', пятница. Сальто-Анхель'
   places:
@@ -136,6 +139,9 @@ itinerary:
     - лагуна Сакайка, 3 часа.
 
     Также доступны прокат для паддлинга и велосипедов. При низком уровне воды предлагаются поездки к водопадам Юри и Юрилу либо пикник у водопада Колондрина и природное джакузи.
+  images:
+  - src: /media/destinations/canaima-and-angel-falls/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []
 - excursionRef: excursion_venezuela_angel_helicopter_flight
@@ -165,10 +171,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: "/media/tours/luchshee-v-venesuele/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Венесуэлы город Каракас'
-  - src: "/media/tours/luchshee-v-venesuele/itinerary-14-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: пляжный отдых в Венесуэле'
+  - src: /media/destinations/caracas/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: столица Венесуэлы, город Каракас'
 - day: 8
   title: ', понедельник - четверг. Остров Маргарита'
   places:
@@ -189,8 +193,8 @@ itinerary:
 
     По желанию можно заказать дополнительную обзорную экскурсию по острову Маргарита.
   images:
-  - src: "/media/tours/luchshee-v-venesuele/itinerary-14-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: пляжный отдых в Венесуэле'
+  - src: /media/destinations/margarita-island/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: остров Маргариты в Венесуэле'
 - day: 10
   title: ', понедельник - четверг. Остров Маргарита'
   places:
@@ -200,8 +204,8 @@ itinerary:
 
     По желанию можно заказать дополнительную обзорную экскурсию по острову Маргарита.
   images:
-  - src: "/media/tours/luchshee-v-venesuele/itinerary-14-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: пляжный отдых в Венесуэле'
+  - src: /media/destinations/margarita-island/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: остров Маргариты в Венесуэле'
 - day: 11
   title: ', понедельник - четверг. Остров Маргарита'
   places:
@@ -211,16 +215,16 @@ itinerary:
 
     По желанию можно заказать дополнительную обзорную экскурсию по острову Маргарита.
   images:
-  - src: "/media/tours/luchshee-v-venesuele/itinerary-14-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: пляжный отдых в Венесуэле'
+  - src: /media/destinations/margarita-island/gallery-3-enhanced-20261003.webp
+    alt: 'На фото: остров Маргариты в Венесуэле'
 - day: 12
   title: ', пятница. Каракас'
   places:
   - Каракас
   text: Завтрак. Трансфер в аэропорт и регистрация на рейс в Москву.
   images:
-  - src: "/media/tours/luchshee-v-venesuele/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Венесуэлы город Каракас'
+  - src: /media/destinations/caracas/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: столица Венесуэлы, город Каракас'
 included:
 - Проживание в отелях
 - Трансферы

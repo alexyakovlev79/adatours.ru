@@ -49,8 +49,6 @@ itinerary:
   images:
   - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
 - day: 3
   title: Национальный парк Тортугеро
   places:
@@ -70,10 +68,8 @@ itinerary:
   text: "Продолжаем путешествие к северному подножию вулкана Ареналь и городу Ла-Фортуна.\n\nПосле прибытия можно отдохнуть\
     \ в термальных источниках.\n\n**Размещение:** Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак, обед."
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
-  - src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Тортугуэро
+  - src: /media/destinations/tortuguero/gallery-1-enhanced-20261004.webp
+    alt: 'На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике'
 - day: 5
   title: Ареналь
   places:

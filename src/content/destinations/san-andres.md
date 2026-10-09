@@ -9,7 +9,21 @@ destinationType: "island"
 summary: "Сан-Андрес, колумбийский остров в Карибском море, привлекает пляжами, коралловыми рифами и дайвингом. В пещере Морганс-Кейв живут легенды о пиратских сокровищах."
 searchAliases: []
 hero: {"src":"/media/destinations/san-andres/hero-enhanced-20261003.webp","alt":"На фото: остров  Сан-Андрес-и-Провиденсия в Колумбии"}
-gallery: [{"src":"/media/destinations/san-andres/gallery-1-enhanced-20261003.webp","alt":"На фото: остров Сан-Андрес-и-Провиденсия в Колумбии"},{"src":"/media/destinations/san-andres/gallery-2-enhanced-20261003.webp","alt":"На фото: остров Сан-Андрес-и-Провиденсия в Колумбии"},{"src":"/media/destinations/san-andres/gallery-3-enhanced-20261003.webp","alt":"На фото: остров Сан-Андрес-и-Провиденсия в Колумбии"},{"src":"/media/destinations/san-andres/gallery-4-enhanced-20261003.webp","alt":"На фото: остров Сан-Андрес-и-Провиденсия в Колумбии"},{"src":"/media/destinations/san-andres/gallery-5-enhanced-20261003.webp","alt":"На фото: остров Сан-Андрес-и-Провиденсия в Колумбии"},{"src":"/media/destinations/san-andres/gallery-6-enhanced-20261003.webp","alt":"На фото: остров Сан-Андрес-и-Провиденсия в Колумбии"}]
+gallery:
+- src: /media/destinations/san-andres/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
+- src: /media/destinations/san-andres/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
+- src: /media/destinations/san-andres/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
+- src: /media/destinations/san-andres/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
+- src: /media/destinations/san-andres/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
+- src: /media/destinations/san-andres/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
+- src: /media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-5-images-1-src-enhanced-20261007.webp
+  alt: 'На фото: Остров Сан Андрес в Колумбии'
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

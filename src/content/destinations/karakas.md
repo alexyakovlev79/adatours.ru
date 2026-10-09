@@ -28,6 +28,10 @@ gallery:
   alt: 'На фото: столица Венесуэлы, город Каракас'
 - src: /media/destinations/caracas/gallery-8-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
+- src: /media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-0-images-0-src-enhanced-20261007.webp
+  alt: 'На фото: столица Венесуэлы, город Каракас'
+- src: /media/tours/krasota-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp
+  alt: 'На фото: столица Венесуэлы город Каракас'
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

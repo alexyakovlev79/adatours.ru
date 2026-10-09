@@ -9,7 +9,23 @@ destinationType: "city"
 summary: "Вилья-де-Лейва сохранила побеленные дома, мощеные улицы и терракотовые крыши колониальной эпохи. Вокруг главной площади находятся церкви, музеи и старинные здания."
 searchAliases: []
 hero: {"src":"/media/destinations/villa-de-leyva/hero-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"}
-gallery: [{"src":"/media/destinations/villa-de-leyva/gallery-1-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-2-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-3-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-4-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-5-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"},{"src":"/media/destinations/villa-de-leyva/gallery-6-enhanced-20261003.webp","alt":"На фото: город Вилья-де-Лейва в Колумбии"}]
+gallery:
+- src: /media/destinations/villa-de-leyva/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: город Вилья-де-Лейва в Колумбии'
+- src: /media/destinations/villa-de-leyva/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: город Вилья-де-Лейва в Колумбии'
+- src: /media/destinations/villa-de-leyva/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: город Вилья-де-Лейва в Колумбии'
+- src: /media/destinations/villa-de-leyva/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: город Вилья-де-Лейва в Колумбии'
+- src: /media/destinations/villa-de-leyva/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: город Вилья-де-Лейва в Колумбии'
+- src: /media/destinations/villa-de-leyva/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: город Вилья-де-Лейва в Колумбии'
+- src: /media/tours/kolumbiya-live/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: Вилья-де-Лейва
+- src: /media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-3-images-0-src-enhanced-20261007.webp
+  alt: На фото:Вилья-де-Лейва
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

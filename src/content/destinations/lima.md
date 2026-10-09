@@ -13,6 +13,24 @@ hero:
 gallery:
 - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
   alt: Лима — Перу
+- src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp
+  alt: Лима
+- src: /media/tours/manyashchij-peru-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp
+  alt: Лима
+- src: /media/tours/manyashchij-peru-kolumbiya/itinerary-day-3-images-1-enhanced-20261007.webp
+  alt: Лима
+- src: /media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
+  alt: Лима - столица Перу, вид с берега
+- src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
+  alt: Лима
+- src: /media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp
+  alt: Лима
+- src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
+  alt: Лима
+- src: /media/tours/vip-tur-v-peru/itinerary-11-images-0-src-enhanced-20261007.webp
+  alt: Лима
+- src: /media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
+  alt: Закат над столицей Перу, городом Лима
 relatedDestinations:
 - destination_peru_cusco
 - destination_peru_machu_picchu

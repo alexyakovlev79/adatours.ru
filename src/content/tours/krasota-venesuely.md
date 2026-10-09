@@ -81,6 +81,9 @@ itinerary:
     Можно продолжить отдых у моря или выбрать одну из локальных поездок по побережью.
 
     Включены завтрак, обед и ужин.
+  images:
+  - src: /media/tours/venesuela-novye-konkistadory/itinerary-day-02-generated-20261008-next20.webp
+    alt: Плайя-Гранде у Чорони, Венесуэла
 - day: 3
   title: 'Среда: Чорони - Каракас'
   places:
@@ -97,8 +100,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/tours/krasota-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Венесуэлы город Каракас'
+  - src: /media/destinations/caracas/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: столица Венесуэлы, город Каракас'
 - day: 4
   title: 'Четверг: Канайма, лагуна и водопад Эль-Сапо'
   places:
@@ -121,6 +124,9 @@ itinerary:
     После экскурсии возвращение в отель.
 
     Включены обед и ужин.
+  images:
+  - src: /media/destinations/canaima-and-angel-falls/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 - day: 5
   title: 'Пятница: Сальто-Анхель'
   places:
@@ -200,8 +206,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/tours/krasota-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Венесуэлы город Каракас'
+  - src: /media/destinations/caracas/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: столица Венесуэлы, город Каракас'
 - day: 8
   title: 'Понедельник: озеро Маракайбо и молнии Кататумбо'
   places:
@@ -228,6 +234,9 @@ itinerary:
     Ночь проходит в гамаках.
 
     Включены обед и ужин.
+  images:
+  - src: /media/tours/krasota-venesuely/itinerary-day-08-generated-20261008-v1.webp
+    alt: Молнии над водой у дельты Кататумбо на озере Маракайбо, Венесуэла
 - day: 9
   title: 'Вторник: Ла-Асулита - парамо - Баринас'
   places:
@@ -259,6 +268,9 @@ itinerary:
     После прибытия в поместье - ужин и отдых.
 
     Включены завтрак, обед и ужин.
+  images:
+  - src: /media/tours/krasota-venesuely/itinerary-day-09-generated-20261008-v1.webp
+    alt: Улица Ла-Асулиты среди зеленых склонов венесуэльских Анд
 - day: 10
   title: 'Среда: Лос-Льянос'
   places:
@@ -313,8 +325,8 @@ itinerary:
 
     Включены завтрак, обед и ужин.
   images:
-  - src: "/media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: животный мир Лос Льянос в Венесуэле'
+  - src: /media/destinations/los-llanos/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
 - day: 12
   title: 'Пятница: возвращение в Каракас'
   places:
@@ -328,8 +340,8 @@ itinerary:
 
     По желанию можно добавить экскурсию по Каракасу.
   images:
-  - src: "/media/tours/krasota-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Венесуэлы город Каракас'
+  - src: /media/destinations/caracas/gallery-3-enhanced-20261003.webp
+    alt: 'На фото: столица Венесуэлы, город Каракас'
 included:
 - Проживание в отелях по программе.
 - Индивидуальные трансферы по программе.

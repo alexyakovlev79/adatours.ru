@@ -12,18 +12,26 @@ hero:
   src: "/media/countries/guatemala/featureBands-2-enhanced-20261002.webp"
   alt: "На фото: озеро Атитлан в Гватемале"
 gallery:
-  - src: "/media/destinations/lake-atitlan/gallery-1-enhanced-20261003.webp"
-    alt: ""
-  - src: "/media/destinations/lake-atitlan/gallery-2-enhanced-20261003.webp"
-    alt: ""
-  - src: "/media/destinations/lake-atitlan/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: озеро Атитлан в Гватемале"
-  - src: "/media/destinations/lake-atitlan/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: озеро Атитлан в Гватемале"
-  - src: "/media/destinations/lake-atitlan/gallery-5-enhanced-20261003.webp"
-    alt: "На фото: озеро Атитлан в Гватемале"
-  - src: "/media/destinations/lake-atitlan/gallery-6-enhanced-20261003.webp"
-    alt: "На фото: озеро Атитлан в Гватемале"
+- src: /media/destinations/lake-atitlan/gallery-1-enhanced-20261003.webp
+  alt: ''
+- src: /media/destinations/lake-atitlan/gallery-2-enhanced-20261003.webp
+  alt: ''
+- src: /media/destinations/lake-atitlan/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: озеро Атитлан в Гватемале'
+- src: /media/destinations/lake-atitlan/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: озеро Атитлан в Гватемале'
+- src: /media/destinations/lake-atitlan/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: озеро Атитлан в Гватемале'
+- src: /media/destinations/lake-atitlan/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: озеро Атитлан в Гватемале'
+- src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: Лаго де Атитлан
+- src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
+  alt: 'На фото: Вид на озеро Атитлан'
+- src: /media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: 'На фото: Озеро Атитлан в Гватемале'
+- src: /media/tours/otkryvaya-gvatemalu/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: 'На фото: Озеро атитлан'
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

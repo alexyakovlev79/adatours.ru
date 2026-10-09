@@ -9,7 +9,27 @@ destinationType: "city"
 summary: "Картахена стоит на берегу Карибского моря. Старый центр города входит в список Всемирного наследия ЮНЕСКО, а пляжи и коралловые рифы привлекают любителей дайвинга."
 searchAliases: []
 hero: {"src":"/media/destinations/cartagena/hero-enhanced-20261003.webp","alt":"На фото: колумбийка из страны Колумбия"}
-gallery: [{"src":"/media/destinations/cartagena/gallery-1-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-2-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-3-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-4-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-5-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"},{"src":"/media/destinations/cartagena/gallery-6-enhanced-20261003.webp","alt":"На фото: город Картахена в Колумбии"}]
+gallery:
+- src: /media/destinations/cartagena/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: город Картахена в Колумбии'
+- src: /media/destinations/cartagena/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: город Картахена в Колумбии'
+- src: /media/destinations/cartagena/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: город Картахена в Колумбии'
+- src: /media/destinations/cartagena/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: город Картахена в Колумбии'
+- src: /media/destinations/cartagena/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: город Картахена в Колумбии'
+- src: /media/destinations/cartagena/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: город Картахена в Колумбии'
+- src: /media/excursions/siti-tur-po-kartakhene/gallery-0-src-enhanced-20261007.webp
+  alt: Картахена
+- src: /media/tours/fantasticheskaya-kolumbiya/itinerary-13-images-0-src-enhanced-20261007.webp
+  alt: Картахена
+- src: /media/tours/fantasticheskaya-kolumbiya/itinerary-14-images-0-src-enhanced-20261007.webp
+  alt: Картахена
+- src: /media/tours/ikonicheskaya-kolumbiya/itinerary-10-images-0-src-enhanced-20261007.webp
+  alt: Картахена
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

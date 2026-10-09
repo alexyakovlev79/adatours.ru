@@ -62,8 +62,6 @@ itinerary:
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
     alt: Антигуа-Гуатемала
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
 - day: 2
   title: Антигуа
   places:
@@ -104,10 +102,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: "/media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: Антигуа-Гуатемала
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
-    alt: Лучшее в Гватемале
 - day: 4
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан
   places:
@@ -160,8 +156,6 @@ itinerary:
   images:
   - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: Чичикастенанго
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-enhanced-20261006.webp
-    alt: Антигуа-Гуатемала
 - day: 6
   title: Гватемала-Сити - заповедник Кетцаля - Кобан
   places:
@@ -202,6 +196,9 @@ itinerary:
     Ночь в отеле **Guayahá Glamping**.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/coban/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале'
 - day: 8
   title: Кобан - пещера Канделярия - Флорес
   places:
@@ -222,6 +219,9 @@ itinerary:
     Ночь в отеле **Villa Maya**.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/coban/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Кобан, Ланкин и район Альта-Верапас в Гватемале'
 - day: 9
   title: Тикаль
   places:
@@ -240,6 +240,9 @@ itinerary:
     Ночь в отеле **Villa Maya**.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/tikal-and-flores/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Тикаль и Флорес в гватемале'
 - day: 10
   title: Флорес - Рио-Дульсе - Ливингстон
   places:
@@ -264,6 +267,9 @@ itinerary:
     Ночь в отеле **Villa Caribe**.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/tikal-and-flores/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Тикаль и Флорес в гватемале'
 - day: 11
   title: Ливингстон
   places:
@@ -278,6 +284,9 @@ itinerary:
     Ночь в отеле **Villa Caribe**.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/livingston/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Ливингстон в Гватемале'
 - day: 12
   title: Рио-Дульсе - Копан, Гондурас
   places:
@@ -310,10 +319,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
-    alt: Копан Руинас
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
+  - src: /media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Гватемала-Сити (столица страны)'
 - day: 14
   title: Гватемала-Сити
   places:
@@ -323,8 +330,8 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
+  - src: /media/destinations/guatemala-city/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Гватемала-Сити (столица страны)'
 included:
 - Услуги русскоговорящего гида.
 - Трансферы по программе.

@@ -9,7 +9,15 @@ destinationType: "national_park"
 summary: "Тортугуэро, Земля черепах, охраняет места гнездования морских черепах. Во время прогулок на лодках по каналам можно увидеть тропических птиц, игуан и крокодилов."
 searchAliases: []
 hero: {"src":"/media/destinations/tortuguero/hero-enhanced-20261004.webp","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"}
-gallery: [{"src":"/media/destinations/tortuguero/gallery-1-enhanced-20261004.webp","alt":"На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике"},{"src":"/media/destinations/tortuguero/gallery-2-enhanced-20261004.webp","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"},{"src":"/media/destinations/tortuguero/gallery-3-enhanced-20261004.webp","alt":"На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике"}]
+gallery:
+- src: /media/destinations/tortuguero/gallery-1-enhanced-20261004.webp
+  alt: 'На фото: черепахи на пляже в Тортугеро (Национальный Парк) в Коста-Рике'
+- src: /media/destinations/tortuguero/gallery-2-enhanced-20261004.webp
+  alt: 'На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике'
+- src: /media/destinations/tortuguero/gallery-3-enhanced-20261004.webp
+  alt: 'На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике'
+- src: /media/tours/costa-rica/itinerary-1-images-1-src-enhanced-20261007.webp
+  alt: Тортугуэро
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

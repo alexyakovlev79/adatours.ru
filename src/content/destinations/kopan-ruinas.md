@@ -12,18 +12,22 @@ hero:
   src: "/media/countries/honduras/featureBands-1-enhanced-20261002.webp"
   alt: "На фото: руины Копана в Гондурасе"
 gallery:
-  - src: "/media/destinations/copan-ruinas/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: руины Копана в Гондурасе"
-  - src: "/media/destinations/copan-ruinas/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: руины Копана в Гондурасе"
-  - src: "/media/destinations/copan-ruinas/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: руины Копана в Гондурасе"
-  - src: "/media/destinations/copan-ruinas/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: город Копан в Гондурасе"
-  - src: "/media/destinations/copan-ruinas/gallery-5-enhanced-20261003.webp"
-    alt: "На фото: руины Копана в Гондурасе"
-  - src: "/media/destinations/copan-ruinas/gallery-6-enhanced-20261003.webp"
-    alt: "На фото: руины Копана в Гондурасе"
+- src: /media/destinations/copan-ruinas/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: руины Копана в Гондурасе'
+- src: /media/destinations/copan-ruinas/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: руины Копана в Гондурасе'
+- src: /media/destinations/copan-ruinas/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: руины Копана в Гондурасе'
+- src: /media/destinations/copan-ruinas/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: город Копан в Гондурасе'
+- src: /media/destinations/copan-ruinas/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: руины Копана в Гондурасе'
+- src: /media/destinations/copan-ruinas/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: руины Копана в Гондурасе'
+- src: /media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp
+  alt: Копан Руинас
+- src: /media/tours/mir-majya/itinerary-6-images-0-src-enhanced-20261007.webp
+  alt: Копан Руинас
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

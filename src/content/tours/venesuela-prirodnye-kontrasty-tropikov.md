@@ -57,8 +57,8 @@ itinerary:
 
     Питание: завтрак, ланч-бокс.
   images:
-  - src: "/media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Лос Рокес
+  - src: /media/destinations/los-roques/gallery-1-enhanced-20261003.webp
+    alt: ''
 - day: 4
   title: ', четверг: национальный парк Канайма, остров Анатолия, водопады Сапо и Ача'
   places:
@@ -98,8 +98,8 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp"
-    alt: Канайма
+  - src: /media/destinations/canaima-and-angel-falls/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
 - excursionRef: excursion_canaima_pemon_village_visit
   places: []
 - day: 7
@@ -126,8 +126,8 @@ itinerary:
 
     Питание: завтрак, обед, ужин.
   images:
-  - src: "/media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-7-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: Поездка по притокам дельты реки Ориноко'
+  - src: /media/destinations/orinoco-delta/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: дельта реки Ориноко в Венесуэле'
 - day: 9
   title: ', вторник: остров Маргарита'
   places:
@@ -136,16 +136,25 @@ itinerary:
     Завтрак. Трансфер в аэропорт и перелет на остров Маргарита. Встреча, трансфер и размещение в отеле по системе «все включено». Отдых.
 
     Питание: завтрак, на Маргарите «все включено».
+  images:
+  - src: /media/destinations/margarita-island/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: остров Маргариты в Венесуэле'
 - day: 10
   title: ', среда и четверг: остров Маргарита'
   places:
   - Остров Маргарита
   text: Отдых на море в отеле по системе «все включено».
+  images:
+  - src: /media/destinations/margarita-island/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: остров Маргариты в Венесуэле'
 - day: 11
   title: ', среда и четверг: остров Маргарита'
   places:
   - Остров Маргарита
   text: Отдых на море в отеле по системе «все включено».
+  images:
+  - src: /media/destinations/margarita-island/gallery-3-enhanced-20261003.webp
+    alt: 'На фото: остров Маргариты в Венесуэле'
 - day: 12
   title: ', пятница: остров Маргарита'
   places:
@@ -154,6 +163,9 @@ itinerary:
     Завтрак. Выписка из отеля, трансфер в аэропорт и регистрация на рейс.
 
     Питание: завтрак.
+  images:
+  - src: /media/destinations/margarita-island/gallery-4-enhanced-20261003.webp
+    alt: 'На фото: остров Маргариты в Венесуэле'
 included:
 - 'проживание: отели 4*, посада и кампаменто;'
 - индивидуальные трансферы;

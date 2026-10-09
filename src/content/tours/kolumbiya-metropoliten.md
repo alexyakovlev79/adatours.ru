@@ -55,8 +55,8 @@ itinerary:
     \nПосле экскурсии возвращаемся в Боготу.\n\n**Продолжительность:** около 5 часов.  \n**Включено:** профессиональный англоязычный\
     \ гид, частный транспорт и вход в Соляной собор."
   images:
-  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
-    alt: Богота
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 4
   title: Богота - Медельин - обзорная экскурсия и Коммуна 13
   places:
@@ -72,10 +72,8 @@ itinerary:
     \ у знаменитых эскалаторов Коммуны 13.\n\nВозвращение в отель.\n\n**Продолжительность:** около 7 часов.  \n**Включено:**\
     \ профессиональный англоязычный гид, частный транспорт, вход в метро и граффити-тур по Коммуне 13."
   images:
-  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
-    alt: Медельин
-  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Богота
+  - src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 5
   title: Медельин - Эль-Пеньоль и Гуатапе
   places:
@@ -99,8 +97,8 @@ itinerary:
 
     Перелет домой в стоимость программы не включен.
   images:
-  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
-    alt: Медельин
+  - src: /media/destinations/medellin/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Медельин в Колумбии'
 included:
 - 3 ночи проживания в Боготе;
 - 2 ночи проживания в Медельине;

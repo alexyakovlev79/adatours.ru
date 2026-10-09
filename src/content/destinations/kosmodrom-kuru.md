@@ -12,14 +12,16 @@ hero:
   src: /media/countries/french-guiana/featureBands-2-enhanced-20261002.webp
   alt: "На фото: запуск ракеты с космодрома Куру во Французской Гвиане"
 gallery:
-  - src: "/media/destinations/kosmodrom-kuru/gallery-1-enhanced-20261005.webp"
-    alt: ""
-  - src: "/media/destinations/kosmodrom-kuru/gallery-2-enhanced-20261005.webp"
-    alt: ""
-  - src: "/media/destinations/kosmodrom-kuru/gallery-3-enhanced-20261005.webp"
-    alt: ""
-  - src: "/media/destinations/kosmodrom-kuru/gallery-4-enhanced-20261005.webp"
-    alt: ""
+- src: /media/destinations/kosmodrom-kuru/gallery-1-enhanced-20261005.webp
+  alt: ''
+- src: /media/destinations/kosmodrom-kuru/gallery-2-enhanced-20261005.webp
+  alt: ''
+- src: /media/destinations/kosmodrom-kuru/gallery-3-enhanced-20261005.webp
+  alt: ''
+- src: /media/destinations/kosmodrom-kuru/gallery-4-enhanced-20261005.webp
+  alt: ''
+- src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp
+  alt: Космодром Куру
 facts: []
 featureBands: []
 relatedDestinations: []

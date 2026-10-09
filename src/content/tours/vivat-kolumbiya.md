@@ -16,6 +16,7 @@ destinations:
 - destination_colombia_dolina_kokora
 - destination_colombia_salento
 - destination_colombia_kartahena
+- destination_colombia_hacienda_venecia
 audiences: []
 route:
 - Богота
@@ -76,6 +77,9 @@ itinerary:
     Главная цель здесь - Catedral de Sal, необычный собор, полностью высеченный из соли. Он расположен на глубине 180 метров ниже уровня моря. После посещения собора будет время прогуляться по колоритному городку и купить сувениры.
 
     Обед в ресторане. Затем возвращение в Боготу и трансфер в отель. Отдых.
+  images:
+  - src: /media/tours/manyashchaya-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp
+    alt: Озеро Гуатавита
 - day: 4
   title: Богота - Медельин - Эль-Пеньон и Гуатапе
   places:
@@ -97,10 +101,8 @@ itinerary:
 
     Возвращение в Медельин, размещение в отеле и отдых.
   images:
-  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
-    alt: Медельин
-  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
-    alt: Богота
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 5
   title: Медельин
   places:
@@ -138,9 +140,7 @@ itinerary:
 
     Также включен национальный обед. После экскурсии возвращение в город Армения, размещение в гостинице и ночевка.
   images:
-  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
-    alt: Медельин
-  - src: "/media/tours/vivat-kolumbiya/hero-src-enhanced-20261007.webp"
+  - src: /media/tours/vivat-kolumbiya/hero-src-enhanced-20261007.webp
     alt: Виват Колумбия
 - day: 7
   title: Кофейная плантация Hacienda Venecia
@@ -157,6 +157,9 @@ itinerary:
     После обеда проводится семинар по разным способам приготовления кофе. Здесь уже можно сравнить аромат и вкус напитка в зависимости от метода заваривания и лучше понять, чем различаются привычные способы приготовления.
 
     По окончании тура трансфер в гостиницу. Отдых.
+  images:
+  - src: /media/tours/vivat-kolumbiya/hacienda-venecia-generated-20261009-v1.webp
+    alt: Кофейные плантации Hacienda Venecia в окрестностях Манисалеса
 - day: 8
   title: Перейра - Картахена
   places:
@@ -234,6 +237,7 @@ routeDestinations:
 - destination_colombia_dolina_kokora
 - destination_colombia_salento
 - destination_colombia_kartahena
+- destination_colombia_hacienda_venecia
 primaryThemes: ["theme_culture","theme_wildlife"]
 themes: ["theme_gastronomy_wine"]
 ---

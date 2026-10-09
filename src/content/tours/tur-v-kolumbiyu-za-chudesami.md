@@ -219,10 +219,8 @@ itinerary:
 
     **Включено:** входные билеты, услуги двуязычного гида, частный транспорт и карта местной медицинской помощи.
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Картахена'
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-12-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: Санта Марта'
 - day: 9
   title: рыбацкая деревня под Картахеной
   places:
@@ -237,6 +235,9 @@ itinerary:
     **Продолжительность:** 7 часов.
 
     **Включено:** услуги двуязычного гида, частный транспорт, типичный обед в доме местного рыбака и карта местной медицинской помощи.
+  images:
+  - src: /media/destinations/cartagena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Картахена в Колумбии'
 - day: 10
   title: Картахена
   places:

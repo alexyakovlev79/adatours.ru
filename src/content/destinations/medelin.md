@@ -9,7 +9,25 @@ destinationType: "city"
 summary: "Медельин окружен холмами и зелеными горными склонами. Здесь можно увидеть старинные базилики, коллекцию орхидей в ботаническом саду и скульптуры Ботеро."
 searchAliases: []
 hero: {"src":"/media/destinations/medellin/hero-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"}
-gallery: [{"src":"/media/destinations/medellin/gallery-1-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"},{"src":"/media/destinations/medellin/gallery-2-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"},{"src":"/media/destinations/medellin/gallery-3-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"},{"src":"/media/destinations/medellin/gallery-4-enhanced-20261003.webp","alt":""},{"src":"/media/destinations/medellin/gallery-5-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"},{"src":"/media/destinations/medellin/gallery-6-enhanced-20261003.webp","alt":"На фото: город Медельин в Колумбии"}]
+gallery:
+- src: /media/destinations/medellin/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: город Медельин в Колумбии'
+- src: /media/destinations/medellin/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: город Медельин в Колумбии'
+- src: /media/destinations/medellin/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: город Медельин в Колумбии'
+- src: /media/destinations/medellin/gallery-4-enhanced-20261003.webp
+  alt: ''
+- src: /media/destinations/medellin/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: город Медельин в Колумбии'
+- src: /media/destinations/medellin/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: город Медельин в Колумбии'
+- src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp
+  alt: Медельин
+- src: /media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp
+  alt: Медельин
+- src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp
+  alt: 'На фото: город Медельин, Колумбия'
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -32,6 +32,9 @@ itinerary:
     После размещения оставшаяся часть дня свободна.
 
     Обед и ужин в этот день в стоимость не включены.
+  images:
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 2
   title: Богота, индивидуальная экскурсия на 4 часа
   places:
@@ -52,6 +55,9 @@ itinerary:
     Обед и ужин оплачиваются отдельно.
 
     Музей золота закрыт по понедельникам. Casa de la Moneda и фонд Ботеро закрыты по вторникам.
+  images:
+  - src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 3
   title: Богота - Медельин
   places:
@@ -97,8 +103,8 @@ itinerary:
 
     Обед и ужин оплачиваются отдельно.
   images:
-  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
-    alt: Медельин
+  - src: /media/destinations/medellin/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Медельин в Колумбии'
 - day: 5
   title: Гуатапе и Пьедра-дель-Пеньоль, затем перелет в Картахену
   places:
@@ -152,8 +158,8 @@ itinerary:
 
     Обед и ужин оплачиваются отдельно.
   images:
-  - src: "/media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp"
-    alt: Картахена
+  - src: /media/destinations/cartagena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Картахена в Колумбии'
 - day: 7
   title: Свободный день в Картахене
   places:
@@ -171,8 +177,8 @@ itinerary:
 
     Ужин в стоимость не включен.
   images:
-  - src: "/media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp"
-    alt: Картахена
+  - src: /media/destinations/cartagena/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Картахена в Колумбии'
 - excursionRef: excursion_colombia_san_pedro_majagua_day_trip
   places: []
 - day: 8
@@ -184,8 +190,8 @@ itinerary:
 
     Авиаперелет в стоимость не включен.
   images:
-  - src: "/media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp"
-    alt: Картахена
+  - src: /media/destinations/cartagena/gallery-3-enhanced-20261003.webp
+    alt: 'На фото: город Картахена в Колумбии'
 included:
 - Трансфер аэропорт - отель - аэропорт.
 - Внутренние трансферы.

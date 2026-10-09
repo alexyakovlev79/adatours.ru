@@ -9,7 +9,25 @@ destinationType: "route_cluster"
 summary: "Из Ла-Фортуны открываются виды на вулкан Ареналь. В окрестностях находятся одноименное озеро, национальный парк и водопад Ла-Фортуна."
 searchAliases: []
 hero: {"src":/media/countries/costa-rica/featureBands-1-enhanced-20261002.webp,"alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"}
-gallery: [{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-3-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"},{"src":"/media/destinations/la-fortuna-arenal-volcano/gallery-4-enhanced-20261003.webp","alt":"На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике"}]
+gallery:
+- src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+- src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+- src: /media/destinations/la-fortuna-arenal-volcano/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+- src: /media/destinations/la-fortuna-arenal-volcano/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+- src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
+  alt: Вулкан Ареналь
+- src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-0-src-enhanced-20261007.webp
+  alt: Вулкан Ареналь
+- src: /media/tours/ekstrim-v-kosta-rike/itinerary-5-images-0-src-enhanced-20261007.webp
+  alt: Вулкан Ареналь
+- src: /media/tours/costa-rica-nicaragua-ru/itinerary-4-images-0-src-enhanced-20261007.webp
+  alt: Вулкан Ареналь
+- src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-15-images-0-src-enhanced-20261007.webp
+  alt: 'На фото: вулкан Ареналь в Коста-Рике'
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

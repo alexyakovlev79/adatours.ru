@@ -12,18 +12,20 @@ hero:
   src: "/media/destinations/guatemala-city/hero-enhanced-20261003.webp"
   alt: "На фото: город Гватемала-Сити (столица страны)"
 gallery:
-  - src: "/media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: город Гватемала-Сити (столица страны)"
-  - src: "/media/destinations/guatemala-city/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: город Гватемала-Сити (столица страны)"
-  - src: "/media/destinations/guatemala-city/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: город Гватемала-Сити (столица страны)"
-  - src: "/media/destinations/guatemala-city/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: город Гватемала-Сити (столица страны)"
-  - src: "/media/destinations/guatemala-city/gallery-5-enhanced-20261003.webp"
-    alt: "На фото: город Гватемала-Сити (столица страны)"
-  - src: "/media/destinations/guatemala-city/gallery-6-enhanced-20261003.webp"
-    alt: "На фото: город Гватемала-Сити (столица страны)"
+- src: /media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: город Гватемала-Сити (столица страны)'
+- src: /media/destinations/guatemala-city/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: город Гватемала-Сити (столица страны)'
+- src: /media/destinations/guatemala-city/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: город Гватемала-Сити (столица страны)'
+- src: /media/destinations/guatemala-city/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: город Гватемала-Сити (столица страны)'
+- src: /media/destinations/guatemala-city/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: город Гватемала-Сити (столица страны)'
+- src: /media/destinations/guatemala-city/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: город Гватемала-Сити (столица страны)'
+- src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
+  alt: Гватемала-Сити
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -56,8 +56,8 @@ itinerary:
 
     Музей золота закрыт по понедельникам. Casa de la Moneda и Donacion Botero закрыты по вторникам.
   images:
-  - src: "/media/tours/kolumbiya-live/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Богота
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 3
   title: Богота - Сипакира - Вилья-де-Лейва
   places:
@@ -75,10 +75,8 @@ itinerary:
 
     Продолжительность программы около 12 часов. Включены вход в соляной собор, типичный обед, частный транспорт и услуги профессионального англоговорящего гида. Ночь в Вилья-де-Лейве.
   images:
-  - src: "/media/tours/kolumbiya-live/itinerary-2-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/kolumbiya-live/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: Вилья-де-Лейва
-  - src: "/media/tours/kolumbiya-live/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Богота
 - day: 4
   title: Вилья-де-Лейва - Богота - Перейра
   places:
@@ -98,10 +96,8 @@ itinerary:
 
     По прилете в Международный аэропорт Матеканья вас встретят и доставят в отель.
   images:
-  - src: "/media/tours/kolumbiya-live/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Вилья-де-Лейва
-  - src: "/media/tours/kolumbiya-live/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Богота
+  - src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 5
   title: Перейра - Филандия - Саленто - долина Кокора
   places:
@@ -144,6 +140,9 @@ itinerary:
     Продолжительность около 5 часов. Включены частный транспорт, профессиональный англоговорящий гид, интерактивная кофейная программа, помощь сотрудников фермы и типичный обед.
 
     После экскурсии - возвращение в отель.
+  images:
+  - src: /media/tours/kolumbiya-live/itinerary-day-06-generated-20261008-v1.webp
+    alt: Созревшие кофейные ягоды на плантации у Санта-Роса-де-Кабаль
 - day: 7
   title: Перейра - Санта-Марта
   places:
@@ -153,6 +152,9 @@ itinerary:
     После завтрака предусмотрен трансфер в Международный аэропорт Матеканья.
 
     Перелет в Санта-Марту оплачивается отдельно. По прибытии вас встретят в аэропорту Симона Боливара и доставят в отель.
+  images:
+  - src: /media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-1-images-1-src-enhanced-20261007.webp
+    alt: 'На фото: Перейра в Колумбии'
 - day: 8
   title: Санта-Марта, обзорная экскурсия
   places:
@@ -167,6 +169,9 @@ itinerary:
     Включены частный транспорт, профессиональный англоговорящий гид и входные билеты в указанные объекты.
 
     После экскурсии - возвращение в отель.
+  images:
+  - src: /media/destinations/santa-marta/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: курорт Санта-Марта в Колумбии'
 - day: 9
   title: Национальный парк Тайрона и Кабо-Сан-Хуан
   places:
@@ -185,6 +190,9 @@ itinerary:
     Обратный путь проходит пешком по той же дороге к основному входу, после чего группа возвращается в отель.
 
     Продолжительность всего дня около 10 часов. Включены частный транспорт, профессиональный англоговорящий гид, вход в Национальный парк Тайрона и типичный региональный обед.
+  images:
+  - src: /media/tours/kolumbiya-live/cabo-san-juan-generated-20261009-v1.webp
+    alt: Пляж и скалистый мыс Кабо-Сан-Хуан в парке Тайрона
 - day: 10
   title: Санта-Марта - Картахена и закат в бухте
   places:

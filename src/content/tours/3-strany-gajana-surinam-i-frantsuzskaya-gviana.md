@@ -59,8 +59,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Парамарибо
+  - src: /media/destinations/paramaribo/gallery-1-enhanced-20261005.webp
+    alt: 'На фото: столица Суринама город Парамарибо'
 - day: 3
   title: Суринам - Французская Гвиана - Куру
   places:
@@ -95,8 +95,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Космодром Куру
+  - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-day-04-generated-20261008-v1.webp
+    alt: Скалистый берег Острова Дьявола с пальмами, Французская Гвиана
 - day: 5
   title: Кайенна - Сен-Лоран-дю-Марони - Парамарибо
   places:
@@ -116,8 +116,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Парамарибо
+  - src: /media/destinations/paramaribo/gallery-2-enhanced-20261005.webp
+    alt: 'На фото: столица Суринама город Парамарибо'
 - day: 6
   title: Джорджтаун и водопад Кайетур
   places:
@@ -151,6 +151,9 @@ itinerary:
     В назначенное время трансфер в международный аэропорт Джорджтауна.
 
     Вылет домой.
+  images:
+  - src: /media/destinations/georgetown/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: столица страны Гайана - город Джорджтаун'
 included:
 - Проживание в отелях 3* на базе завтраков.
 - Наземный транспорт, минивэны с кондиционером.

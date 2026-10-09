@@ -10,6 +10,7 @@ destinations:
 - destination_colombia_bogota
 - destination_colombia_la_makarena
 - destination_colombia_kano_kristales
+- destination_colombia_guayabero_river
 audiences: []
 route:
 - Богота
@@ -90,6 +91,9 @@ itinerary:
     Вечером предусмотрено знакомство с местным фольклором и региональной кухней: музыка, общение с молодыми жителями города и ужин.
 
     Ужин включен.
+  images:
+  - src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/guayabero-river-generated-20261009-v1.webp
+    alt: Лодочный маршрут по реке Гуаяберо у Ла-Макарены
 - day: 4
   title: Ла-Макарена
   places:
@@ -100,6 +104,9 @@ itinerary:
     Конкретный маршрут заранее не фиксируется: он определяется природоохранными органами с учетом состояния природной территории.
 
     Вечером - общение с местными жителями, музыка и ужин.
+  images:
+  - src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/la-macarena-town-generated-20261009-v1.webp
+    alt: Улица Ла-Макарены в департаменте Мета, Колумбия
 - day: 5
   title: Каньо-Кристалес и возвращение в Боготу
   places:
@@ -122,8 +129,8 @@ itinerary:
 
     По прибытии в международный аэропорт Эль-Дорадо встреча и трансфер в отель.
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: столица Колумбии, город Богота'
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 6
   title: Богота
   places:
@@ -133,8 +140,8 @@ itinerary:
 
     В назначенное время трансфер в международный аэропорт Эль-Дорадо для вылета домой.
   images:
-  - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"
-    alt: 'на фото: Богота- столица Колумбии'
+  - src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 included:
 - Чартерный авиабилет Богота - Ла-Макарена - Богота.
 - 2 ночи проживания в Боготе.
@@ -177,6 +184,7 @@ routeDestinations:
 - destination_colombia_bogota
 - destination_colombia_la_makarena
 - destination_colombia_kano_kristales
+- destination_colombia_guayabero_river
 primaryThemes: ["theme_wildlife"]
 themes: ["theme_culture"]
 ---

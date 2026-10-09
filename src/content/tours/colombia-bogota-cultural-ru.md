@@ -81,8 +81,8 @@ itinerary:
 
     **Включено:** профессиональный англоговорящий гид, частный транспорт, вход в Соляной собор Сипакиры.
   images:
-  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Колумбии, город Богота'
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 4
   title: 'Богота - Медельин: сити-тур и Коммуна 13'
   places:
@@ -113,8 +113,8 @@ itinerary:
 
     **Включено:** профессиональный англоговорящий гид, частный транспорт, проезд в метро и граффити-тур по Коммуне 13.
   images:
-  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Колумбии, город Богота'
+  - src: /media/destinations/bogota/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 - day: 5
   title: Медельин - Пьедра-дель-Пеньоль и Гуатапе
   places:
@@ -138,6 +138,9 @@ itinerary:
     **Включено:** профессиональный англоговорящий гид, транспорт, мототакси-тур, типичный обед в местном ресторане.
 
     **Не включено:** подъем на Пьедра-дель-Пеньоль и прогулка на лодке по водохранилищу Пеньоль - Гуатапе.
+  images:
+  - src: /media/destinations/medellin/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Медельин в Колумбии'
 - day: 6
   title: Медельин - Картахена
   places:
@@ -167,10 +170,8 @@ itinerary:
     \ на острова, трансфер отель - пристань - отель, типичный карибский обед.\n\n**Не включено:** налог Coralia $10 с человека,\
     \ вход в океанариум $10 с человека."
   images:
-  - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp
     alt: 'На фото: пляжи островов Росарио в Колумбии'
-  - src: /media/tours/colombia-bogota-cultural-ru/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: На улицах Картахены, Колумбия
 - day: 8
   title: Картахена
   places:
@@ -182,8 +183,8 @@ itinerary:
 
     Перелет в стоимость не включен.
   images:
-  - src: /media/tours/colombia-bogota-cultural-ru/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: На улицах Картахены, Колумбия
+  - src: /media/destinations/cartagena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Картахена в Колумбии'
 included:
 - 3 ночи проживания в Боготе;
 - 2 ночи проживания в Медельине;

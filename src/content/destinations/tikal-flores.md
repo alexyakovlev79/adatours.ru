@@ -12,20 +12,26 @@ hero:
   src: "/media/countries/guatemala/featureBands-3-enhanced-20261002.webp"
   alt: "На фото: Тикаль и Флорес в Гватемале"
 gallery:
-  - src: "/media/destinations/tikal-and-flores/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "/media/destinations/tikal-and-flores/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "/media/destinations/tikal-and-flores/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "/media/destinations/tikal-and-flores/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "/media/destinations/tikal-and-flores/gallery-5-enhanced-20261003.webp"
-    alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "/media/destinations/tikal-and-flores/gallery-6-enhanced-20261003.webp"
-    alt: "На фото: Тикаль и Флорес в гватемале"
-  - src: "/media/destinations/tikal-and-flores/gallery-7-enhanced-20261003.webp"
-    alt: "На фото: Тикаль и Флорес в гватемале"
+- src: /media/destinations/tikal-and-flores/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: Тикаль и Флорес в гватемале'
+- src: /media/destinations/tikal-and-flores/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: Тикаль и Флорес в гватемале'
+- src: /media/destinations/tikal-and-flores/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: Тикаль и Флорес в гватемале'
+- src: /media/destinations/tikal-and-flores/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: Тикаль и Флорес в гватемале'
+- src: /media/destinations/tikal-and-flores/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: Тикаль и Флорес в гватемале'
+- src: /media/destinations/tikal-and-flores/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: Тикаль и Флорес в гватемале'
+- src: /media/destinations/tikal-and-flores/gallery-7-enhanced-20261003.webp
+  alt: 'На фото: Тикаль и Флорес в гватемале'
+- src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
+  alt: Флорес
+- src: /media/tours/otkryvaya-gvatemalu/itinerary-4-images-0-src-enhanced-20261007.webp
+  alt: 'На фото: Тикаль в провинции Эль-Петен'
+- src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-5-images-0-src-enhanced-20261007.webp
+  alt: Тикаль
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

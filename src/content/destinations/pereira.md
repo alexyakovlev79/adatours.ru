@@ -15,7 +15,11 @@ summary: >-
 hero:
   src: "/media/destinations/pereira/hero-src-enhanced-20261007.webp"
   alt: Долина Кокора рядом с Перейрой, Колумбия
-gallery: []
+gallery:
+- src: /media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-1-images-1-src-enhanced-20261007.webp
+  alt: 'На фото: Перейра в Колумбии'
+- src: /media/tours/ikonicheskaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp
+  alt: Перейра
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

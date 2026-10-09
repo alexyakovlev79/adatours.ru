@@ -12,6 +12,7 @@ destinations:
 - destination_costa_rica_rio_seleste
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_monteverde_santa_elena
+- destination_costa_rica_pacific_coast
 audiences: []
 route:
 - Либерия
@@ -37,6 +38,9 @@ itinerary:
     Встреча и трансфер в Ринкон-де-ла-Вьеха. После размещения вам подробно расскажут о предстоящем маршруте.
 
     Ночь в отеле Hacienda Guachipelin.
+  images:
+  - src: /media/destinations/liberia/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
 - day: 2
   title: Ринкон-де-ла-Вьеха
   places:
@@ -49,6 +53,9 @@ itinerary:
     Ночь в Hacienda Guachipelin.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/rincon-de-la-vieja/hero-enhanced-20261004.webp
+    alt: 'На фото: Ринкон-де-ла-Вьехо в Коста-Рике'
 - day: 3
   title: Ринкон-де-ла-Вьеха - Рио-Селесте
   places:
@@ -68,6 +75,9 @@ itinerary:
     Ночь в Tenorio Lodge.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
+    alt: Рио-Селесте
 - day: 4
   title: Малекос - Ареналь
   places:
@@ -82,6 +92,9 @@ itinerary:
     Ночь в Arenal Paraíso Resort & Spa.
 
     **Питание:** завтрак, обед.
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 5
   title: Ареналь
   places:
@@ -96,6 +109,9 @@ itinerary:
     Ночь в Arenal Paraíso Resort & Spa.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 6
   title: Ареналь - Монтеверде
   places:
@@ -111,6 +127,9 @@ itinerary:
     Ночь в El Establo Mountain Resort.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-3-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 7
   title: Монтеверде - Тихоокеанское побережье
   places:
@@ -123,6 +142,9 @@ itinerary:
     Ночь в Wyndham Tamarindo.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/monteverde-santa-elena/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: облачные леса Монтеверде в Коста-Рике (Санта-Елена)'
 - day: 8
   title: Тихоокеанское побережье
   places: []
@@ -132,6 +154,9 @@ itinerary:
     Ночь в Wyndham Tamarindo.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-1-generated-20261009-v1.webp
+    alt: Песчаный пляж на Тихоокеанском побережье Коста-Рики
 - day: 9
   title: Либерия
   places:
@@ -140,6 +165,9 @@ itinerary:
     Возвращение в международный аэропорт Daniel Oduber в Либерии.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/destinations/liberia/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: город Либерия в Коста-Рике (провинция Гуанакасте)'
 included:
 - Русскоговорящий гид.
 - Трансферы.
@@ -175,6 +203,7 @@ routeDestinations:
 - destination_costa_rica_rio_seleste
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_monteverde_santa_elena
+- destination_costa_rica_pacific_coast
 primaryThemes: ["theme_adventure","theme_wildlife"]
 themes: ["theme_beach"]
 ---

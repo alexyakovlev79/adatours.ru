@@ -9,7 +9,27 @@ destinationType: "city"
 summary: "Санта-Марта находится на Карибском побережье у гор Сьерра-Невада-де-Санта-Марта. Пляжи, дайвинг и вечерние кафе делают город местом для отдыха у моря."
 searchAliases: []
 hero: {"src":"/media/destinations/santa-marta/hero-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"}
-gallery: [{"src":"/media/destinations/santa-marta/gallery-1-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-2-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-3-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-4-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-5-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"},{"src":"/media/destinations/santa-marta/gallery-6-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"}]
+gallery:
+- src: /media/destinations/santa-marta/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: курорт Санта-Марта в Колумбии'
+- src: /media/destinations/santa-marta/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: курорт Санта-Марта в Колумбии'
+- src: /media/destinations/santa-marta/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: курорт Санта-Марта в Колумбии'
+- src: /media/destinations/santa-marta/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: курорт Санта-Марта в Колумбии'
+- src: /media/destinations/santa-marta/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: курорт Санта-Марта в Колумбии'
+- src: /media/destinations/santa-marta/gallery-6-enhanced-20261003.webp
+  alt: 'На фото: курорт Санта-Марта в Колумбии'
+- src: /media/tours/fantasticheskaya-kolumbiya/itinerary-8-images-0-src-enhanced-20261007.webp
+  alt: 'на фото: Санта Марта'
+- src: /media/tours/ikonicheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp
+  alt: 'на фото: Санта Марта'
+- src: /media/tours/zateryannyj-gorod-v-santa-marte/itinerary-3-images-0-src-enhanced-20261007.webp
+  alt: 'на фото: Затерянный город Санта Марта'
+- src: /media/tours/fantasticheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp
+  alt: 'на фото: Санта Марта'
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

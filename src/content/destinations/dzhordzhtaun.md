@@ -12,16 +12,18 @@ hero:
   src: "/media/countries/guyana/featureBands-3-enhanced-20261002.webp"
   alt: "На фото: столица страны Гайана - город Джорджтаун"
 gallery:
-  - src: "/media/destinations/georgetown/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: столица страны Гайана - город Джорджтаун"
-  - src: "/media/destinations/georgetown/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: столица страны Гайана - город Джорджтаун"
-  - src: "/media/destinations/georgetown/gallery-3-enhanced-20261003.webp"
-    alt: "На фото: столица страны Гайана - город Джорджтаун"
-  - src: "/media/destinations/georgetown/gallery-4-enhanced-20261003.webp"
-    alt: "На фото: столица страны Гайана - город Джорджтаун"
-  - src: "/media/destinations/georgetown/gallery-5-enhanced-20261003.webp"
-    alt: "На фото: столица страны Гайана - город Джорджтаун"
+- src: /media/destinations/georgetown/gallery-1-enhanced-20261003.webp
+  alt: 'На фото: столица страны Гайана - город Джорджтаун'
+- src: /media/destinations/georgetown/gallery-2-enhanced-20261003.webp
+  alt: 'На фото: столица страны Гайана - город Джорджтаун'
+- src: /media/destinations/georgetown/gallery-3-enhanced-20261003.webp
+  alt: 'На фото: столица страны Гайана - город Джорджтаун'
+- src: /media/destinations/georgetown/gallery-4-enhanced-20261003.webp
+  alt: 'На фото: столица страны Гайана - город Джорджтаун'
+- src: /media/destinations/georgetown/gallery-5-enhanced-20261003.webp
+  alt: 'На фото: столица страны Гайана - город Джорджтаун'
+- src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-5-images-0-src-enhanced-20261007.webp
+  alt: Джорджтаун
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

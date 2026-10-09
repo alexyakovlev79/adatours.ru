@@ -81,10 +81,8 @@ itinerary:
 
     Трансфер и размещение в **Movich Hotel de Pereira**.
   images:
-  - src: "/media/excursions/salento-i-dolina-kokora/hero-src-enhanced-20261007.webp"
+  - src: /media/excursions/salento-i-dolina-kokora/hero-src-enhanced-20261007.webp
     alt: 'На фото: конная прогулка в долине Кокора'
-  - src: "/media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: Перейра в Колумбии'
 - excursionRef: excursion_source_kofejnyj_tur_v_perejra
   places: []
 - day: 3
@@ -121,10 +119,8 @@ itinerary:
 
     После экскурсии возвращение в отель по проспекту Сантандер.
   images:
-  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: город Картахена в Колумбии'
-  - src: "/media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: Перейра в Колумбии'
+  - src: /media/tours/ikonicheskaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp
+    alt: Перейра
 - day: 5
   title: Картахена - Сан-Андрес
   places:
@@ -137,9 +133,7 @@ itinerary:
 
     По прибытии встреча, трансфер и размещение в **Decameron Isleño ALL IN**.
   images:
-  - src: "/media/tours/manyashchaya-kolumbiya/itinerary-6-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: город Картахена в Колумбии'
-  - src: "/media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-5-images-1-src-enhanced-20261007.webp"
+  - src: /media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-5-images-1-src-enhanced-20261007.webp
     alt: 'На фото: Остров Сан Андрес в Колумбии'
 - day: 6
   title: отдых на Сан-Андресе
@@ -150,8 +144,8 @@ itinerary:
 
     Плотной экскурсионной части нет. Можно наслаждаться карибскими пейзажами, морем, пляжами и инфраструктурой отеля. После Боготы, кофейного региона и Картахены эта часть маршрута оставлена для спокойного отдыха у воды.
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: город Богота в Колумбии'
+  - src: /media/destinations/san-andres/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
 - day: 7
   title: отдых на Сан-Андресе
   places:
@@ -161,8 +155,8 @@ itinerary:
 
     Плотной экскурсионной части нет. Можно наслаждаться карибскими пейзажами, морем, пляжами и инфраструктурой отеля. После Боготы, кофейного региона и Картахены эта часть маршрута оставлена для спокойного отдыха у воды.
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: город Богота в Колумбии'
+  - src: /media/destinations/san-andres/gallery-2-enhanced-20261003.webp
+    alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
 - day: 8
   title: отдых на Сан-Андресе
   places:
@@ -207,7 +201,7 @@ itinerary:
 
     После экскурсии вечером перелет в Боготу. По прибытии трансфер и размещение в **Hotel Novotel Bogota Parque 93**.
   images:
-  - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"
+  - src: /media/destinations/medellin/gallery-1-enhanced-20261003.webp
     alt: 'На фото: город Медельин в Колумбии'
 - day: 11
   title: Гуатавита и Сипакира
@@ -240,8 +234,8 @@ itinerary:
   - Богота
   text: В назначенное время трансфер в аэропорт для вылета домой.
   images:
-  - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: город Богота в Колумбии'
+  - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Богота, столица Колумбии'
 included:
 - проживание в отелях;
 - экскурсии с русскоговорящим гидом;

@@ -11,6 +11,7 @@ destinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_la_fortuna_vulkan_arenal
+- destination_costa_rica_pacific_coast
 audiences: []
 route:
 - Сан-Хосе
@@ -89,8 +90,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Вулкан Ареналь
+  - src: /media/destinations/la-fortuna-arenal-volcano/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - day: 5
   title: Тихоокеанское побережье
   places: []
@@ -100,6 +101,9 @@ itinerary:
     Эта часть программы полностью посвящена пляжному отдыху и позволяет сделать паузу после экскурсионных дней у вулканов и в тропическом лесу.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-1-generated-20261009-v1.webp
+    alt: Песчаный пляж на Тихоокеанском побережье Коста-Рики
 - day: 6
   title: Тихоокеанское побережье
   places: []
@@ -109,6 +113,9 @@ itinerary:
     Эта часть программы полностью посвящена пляжному отдыху и позволяет сделать паузу после экскурсионных дней у вулканов и в тропическом лесу.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-2-generated-20261009-v1.webp
+    alt: Вечерний прибой на Тихоокеанском побережье Коста-Рики
 - day: 7
   title: Тихоокеанское побережье
   places: []
@@ -118,6 +125,9 @@ itinerary:
     Эта часть программы полностью посвящена пляжному отдыху и позволяет сделать паузу после экскурсионных дней у вулканов и в тропическом лесу.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-3-generated-20261009-v1.webp
+    alt: Тропические деревья над тихоокеанским пляжем Коста-Рики
 - day: 8
   title: Тихоокеанское побережье
   places: []
@@ -127,6 +137,9 @@ itinerary:
     Эта часть программы полностью посвящена пляжному отдыху и позволяет сделать паузу после экскурсионных дней у вулканов и в тропическом лесу.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-4-generated-20261009-v1.webp
+    alt: Скалистый участок тихоокеанского берега Коста-Рики
 - day: 9
   title: Тихоокеанское побережье
   places: []
@@ -136,6 +149,9 @@ itinerary:
     Эта часть программы полностью посвящена пляжному отдыху и позволяет сделать паузу после экскурсионных дней у вулканов и в тропическом лесу.
 
     **Питание:** завтрак.
+  images:
+  - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-5-generated-20261009-v1.webp
+    alt: Тихоокеанская бухта Коста-Рики среди тропической зелени
 - day: 10
   title: Сан-Хосе / дальнейший маршрут
   places:
@@ -181,6 +197,7 @@ routeDestinations:
 - destination_costa_rica_vulkan_poas
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_la_fortuna_vulkan_arenal
+- destination_costa_rica_pacific_coast
 primaryThemes: ["theme_wildlife","theme_beach"]
 themes: []
 ---

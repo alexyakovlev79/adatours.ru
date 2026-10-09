@@ -39,10 +39,8 @@ itinerary:
 
     После переезда размещение и ночь в отеле Villa Colonial.
   images:
-  - src: "/media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp"
+  - src: /media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp
     alt: 'На фото: Антигуа-Гуатемала столица Гватемалы'
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: 'На фото: Вид на Гватемала сити'
 - day: 2
   title: Антигуа - рынок Чичикастенанго - озеро Атитлан
   places:
@@ -63,8 +61,6 @@ itinerary:
   images:
   - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: 'На фото: Люди на рынке Чичикастенанго'
-  - src: "/media/tours/gvatemala-kosta-rika/hero-src-enhanced-20261007.webp"
-    alt: 'На фото: Антигуа-Гуатемала столица Гватемалы'
 - day: 3
   title: Сан-Хуан-ла-Лагуна - Сантьяго-Атитлан
   places:
@@ -97,8 +93,6 @@ itinerary:
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: Вид свеху на Флорес'
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: 'На фото: Вид на Гватемала сити'
 - day: 5
   title: Тикаль - Гватемала-Сити
   places:
@@ -116,10 +110,8 @@ itinerary:
     \nВо второй половине дня трансфер в аэропорт Флореса и внутренний перелет в Гватемала-Сити. Ночь в отеле Barcelo Guatemala\
     \ City.  \n**Питание:** завтрак."
   images:
-  - src: "/media/tours/otkryvaya-gvatemalu/itinerary-4-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/otkryvaya-gvatemalu/itinerary-4-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Тикаль в провинции Эль-Петен'
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: 'На фото: Вид на Гватемала сити'
 - day: 6
   title: Гватемала-Сити
   places:

@@ -39,9 +39,7 @@ itinerary:
     \ примерно 1 час. В этот день проводится вводная информация о предстоящем маршруте.\n\n**Отель:** Villa Colonial.  \n\
     Ночь в Антигуа."
   images:
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
-  - src: "/media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: Антигуа-Гуатемала
 - day: 2
   title: Антигуа, Сан-Антонио-Агуас-Кальентес и Сантьяго-Самора
@@ -74,10 +72,8 @@ itinerary:
     \ испанского присутствия в Гватемале и историей народа какчикель.\n\n**Отель:** Villa Santa Catarina.  \n**Питание:**\
     \ завтрак."
   images:
-  - src: "/media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Лаго де Атитлан
-  - src: "/media/tours/luchshee-v-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: Антигуа-Гуатемала
+  - src: /media/destinations/antigua-guatemala/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: на улицах города Антигуа-Гуатемала в Гватемале'
 - day: 4
   title: Сан-Хуан-ла-Лагуна и Сантьяго-Атитлан
   places:
@@ -118,8 +114,6 @@ itinerary:
   images:
   - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-2-enhanced-20261006.webp
     alt: Чичикастенанго
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
 - day: 6
   title: Гватемала-Сити - Копан, Гондурас
   places:
@@ -130,10 +124,8 @@ itinerary:
     \ зон путешествия. После музея в Гватемала-Сити часть увиденных артефактов получает контекст уже непосредственно среди\
     \ руин и стел Копана.\n\n**Отель:** Clarion Copan Ruinas.  \n**Питание:** завтрак."
   images:
-  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
+  - src: /media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp
     alt: Копан Руинас
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
 - day: 7
   title: Копан
   places:
@@ -163,8 +155,6 @@ itinerary:
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-4-enhanced-20261006.webp
     alt: Флорес
-  - src: "/media/tours/luchshee-v-gvatemale/itinerary-11-images-0-src-enhanced-20261007.webp"
-    alt: Копан Руинас
 - day: 9
   title: Тикаль - Гватемала-Сити
   places:
@@ -192,8 +182,8 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-    alt: Гватемала-Сити
+  - src: /media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp
+    alt: 'На фото: город Гватемала-Сити (столица страны)'
 included:
 - Русскоговорящий гид.
 - Трансферы по программе.

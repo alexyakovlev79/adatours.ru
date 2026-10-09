@@ -59,8 +59,8 @@ itinerary:
 
     Возвращение в отель. Ночь в Монтевидео.
   images:
-  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
-    alt: Монтевидео
+  - src: "/media/destinations/montevideo/gallery-1-enhanced-20261005.webp"
+    alt: 'На фото: Монтевидео, Уругвай'
 - day: 3
   title: Монтевидео - Сан-Хавьер - Фрай-Бентос
   places:
@@ -76,8 +76,8 @@ itinerary:
 
     Ночь в Фрай-Бентосе.
   images:
-  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
-    alt: Монтевидео
+  - src: "/media/destinations/montevideo/gallery-3-enhanced-20261005.webp"
+    alt: 'На фото: Монтевидео, Уругвай'
 - day: 4
   title: Музей Англо и Колония-дель-Сакраменто
   places:

@@ -62,8 +62,8 @@ itinerary:
 
     **Вся программа зависит от погодных условий.** Погода влияет на вылеты, высадки, навигацию на лодках и возможность посещения отдельных объектов.
   images:
-  - src: /media/tours/antarktida-programma-s-nochevkoj/itinerary-day-1-enhanced-20261006.webp
-    alt: Пунта Аренас
+  - src: /media/tours/antarktida-programma-na-ves-den/itinerary-1-images-0-src-enhanced-20261007.webp
+    alt: 'На фото: круиз в Антарктиду'
 included:
 - 'Проживание: 4 ночи по маршруту.'
 - Трансферы по маршруту.

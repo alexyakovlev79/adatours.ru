@@ -3,32 +3,15 @@
   "workflowVersion": "1.6",
   "lastCompletedBatch": {
     "date": "2026-10-09",
+    "kind": "reused_existing_images",
+    "count": 3,
     "tourIds": [
-      "tour_source_21_dnevnoe_priklyuchenie_v_peru",
-      "tour_source_ves_mnogolikij_peru_i_senor_sipan",
-      "tour_source_ves_mnogolikij_peru"
+      "tour_source_luchshee_v_urugvae_pyatizvjozdochnyj_marshrut",
+      "tour_source_urugvaj_vino_i_traditsii_starovertsev",
+      "tour_source_antarktida_programma_s_nochevkoj"
     ],
-    "pageRows": [
-      572,
-      573,
-      574
-    ],
-    "completedTours": 3,
-    "partialTours": 0,
-    "removedDuplicateSlots": 26,
-    "removedUnreadableSlots": 3,
-    "reusedPhotos": 15,
-    "generatedPhotos": 1,
-    "createdPlaces": 5,
-    "createdPlaceIds": [
-      "destination_peru_chan_chan",
-      "destination_peru_ozero_tres_chimbadas",
-      "destination_peru_puerto_maldonado",
-      "destination_peru_uaka_rahada",
-      "destination_peru_uanchako"
-    ],
-    "changedExcursionHeroes": 0,
-    "uniqueDestinations": 32
+    "photosCompleted": 3,
+    "destinationBackfill": "pending"
   },
   "description": "Targeted tour itinerary photo repairs. Incomplete tasks are never marked finished.",
   "queue": {
@@ -40810,6 +40793,127 @@
       "generatedPhotos": 0,
       "changedExcursionHeroes": 0,
       "publicationStatus": "committed_to_main_deploy_pending"
+    },
+    {
+      "tourId": "tour_source_luchshee_v_urugvae_pyatizvjozdochnyj_marshrut",
+      "contentPath": "src/content/tours/luchshee-v-urugvae-pyatizvjozdochnyj-marshrut.md",
+      "sheetRow": 578,
+      "workflowVersion": "1.6",
+      "completedAt": "2026-10-09",
+      "status": "photos_completed_destination_backfill_pending",
+      "dayPhotosStatus": "completed",
+      "ordinaryDays": 6,
+      "removedDuplicates": [
+        {
+          "day": 4,
+          "src": "/media/excursions/ekskursiya-po-montevideo/hero-enhanced-20261001.webp",
+          "reason": "duplicate"
+        },
+        {
+          "day": 6,
+          "src": "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp",
+          "reason": "duplicate"
+        }
+      ],
+      "reusedAssets": [
+        {
+          "day": 5,
+          "src": "/media/destinations/punta-del-este/gallery-1-enhanced-20261005.webp",
+          "destinationId": null,
+          "origin": "existing_destination_or_tour_photo",
+          "reusedAt": "2026-10-09"
+        },
+        {
+          "day": 6,
+          "src": "/media/destinations/montevideo/gallery-2-enhanced-20261005.webp",
+          "destinationId": null,
+          "origin": "existing_destination_or_tour_photo",
+          "reusedAt": "2026-10-09"
+        }
+      ],
+      "generatedPhotos": 0,
+      "completedAssets": [],
+      "remainingDuplicateGroups": [],
+      "destinationSync": [],
+      "remaining": [
+        "Адресно проверить и при необходимости создать отсутствующие страницы мест маршрута"
+      ],
+      "publicationStatus": "committed_to_main_deploy_pending",
+      "spreadsheetSync": {
+        "status": "pending",
+        "pageCell": "Страницы!M578"
+      }
+    },
+    {
+      "tourId": "tour_source_urugvaj_vino_i_traditsii_starovertsev",
+      "contentPath": "src/content/tours/urugvaj-vino-i-traditsii-starovertsev.md",
+      "sheetRow": 579,
+      "workflowVersion": "1.6",
+      "completedAt": "2026-10-09",
+      "status": "photos_completed_destination_backfill_pending",
+      "dayPhotosStatus": "completed",
+      "ordinaryDays": 4,
+      "removedDuplicates": [],
+      "reusedAssets": [
+        {
+          "day": 2,
+          "src": "/media/destinations/montevideo/gallery-1-enhanced-20261005.webp",
+          "destinationId": null,
+          "origin": "existing_destination_or_tour_photo",
+          "reusedAt": "2026-10-09"
+        },
+        {
+          "day": 3,
+          "src": "/media/destinations/montevideo/gallery-3-enhanced-20261005.webp",
+          "destinationId": null,
+          "origin": "existing_destination_or_tour_photo",
+          "reusedAt": "2026-10-09"
+        }
+      ],
+      "generatedPhotos": 0,
+      "completedAssets": [],
+      "remainingDuplicateGroups": [],
+      "destinationSync": [],
+      "remaining": [
+        "Адресно проверить и при необходимости создать отсутствующие страницы мест маршрута"
+      ],
+      "publicationStatus": "committed_to_main_deploy_pending",
+      "spreadsheetSync": {
+        "status": "pending",
+        "pageCell": "Страницы!M579"
+      }
+    },
+    {
+      "tourId": "tour_source_antarktida_programma_s_nochevkoj",
+      "contentPath": "src/content/tours/antarktida-programma-s-nochevkoj.md",
+      "sheetRow": 584,
+      "workflowVersion": "1.6",
+      "completedAt": "2026-10-09",
+      "status": "photos_completed_destination_backfill_pending",
+      "dayPhotosStatus": "completed",
+      "ordinaryDays": 2,
+      "removedDuplicates": [],
+      "reusedAssets": [
+        {
+          "day": 2,
+          "src": "/media/tours/antarktida-programma-na-ves-den/itinerary-1-images-0-src-enhanced-20261007.webp",
+          "destinationId": null,
+          "origin": "existing_destination_or_tour_photo",
+          "reusedAt": "2026-10-09"
+        }
+      ],
+      "generatedPhotos": 0,
+      "completedAssets": [],
+      "remainingDuplicateGroups": [],
+      "destinationSync": [],
+      "remaining": [
+        "Адресно проверить и при необходимости создать отсутствующие страницы мест маршрута"
+      ],
+      "publicationStatus": "committed_to_main_deploy_pending",
+      "spreadsheetSync": {
+        "status": "pending",
+        "pageCell": "Страницы!M584"
+      }
     }
   ],
   "version": 1,

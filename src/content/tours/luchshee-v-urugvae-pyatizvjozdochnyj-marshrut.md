@@ -83,8 +83,6 @@ itinerary:
   images:
   - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"
     alt: Пунта дель Эсте
-  - src: /media/excursions/ekskursiya-po-montevideo/hero-enhanced-20261001.webp
-    alt: Монтевидео
 - day: 5
   title: Пунта-дель-Эсте
   places:
@@ -96,8 +94,8 @@ itinerary:
 
     Возвращение в отель. Ночлег.
   images:
-  - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"
-    alt: Пунта дель Эсте
+  - src: "/media/destinations/punta-del-este/gallery-1-enhanced-20261005.webp"
+    alt: 'На фото: курорт Пунта-дель-Эсте в Уругвае'
 - day: 6
   title: Пунта-дель-Эсте - Монтевидео
   places:
@@ -108,10 +106,8 @@ itinerary:
 
     В назначенное время частный трансфер в аэропорт или порт Монтевидео.
   images:
-  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-1-src-enhanced-20261007.webp"
-    alt: Монтевидео
-  - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"
-    alt: Пунта дель Эсте
+  - src: "/media/destinations/montevideo/gallery-2-enhanced-20261005.webp"
+    alt: 'На фото: Монтевидео, Уругвай'
 included:
 - Индивидуальный трансфер из аэропорта или порта Монтевидео в Hyatt Centric
 - 3 ночи в Hyatt Centric Montevideo, номер River View, завтрак

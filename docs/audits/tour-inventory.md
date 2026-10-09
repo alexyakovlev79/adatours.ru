@@ -11,13 +11,13 @@
 | № | Показатель | Сейчас |
 |---|---|---:|
 | 1 | Программы Drive без повторных копий файлов | 168 программ / 192 файлов |
-| 2 | Неархивные страницы туров | 287 |
-| 3 | Архивные страницы туров | 36 |
+| 2 | Неархивные страницы туров | 288 |
+| 3 | Архивные страницы туров | 35 |
 | 4 | Страницы без соответствия в снимке Drive | 177 активных + 18 архивных |
-| 5 | Программы Drive с архивным соответствием | 21: 6 только в архиве, 15 также с активной страницей |
+| 5 | Программы Drive с архивным соответствием | 20: 5 только в архиве, 15 также с активной страницей |
 | 6 | Программы Drive без активной страницы и без архива | 48; из них 4 уже имеют запись источников |
 
-**Очередь наличия страниц: 54 программ** — 6 из архива и 48 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
+**Очередь наличия страниц: 53 программ** — 5 из архива и 48 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
 
 Рабочая инструкция: [обновление описи](../workflows/tour-inventory.md). Редактируемый реестр: [JSON](../../data/audits/tour-inventory-drive-20261009.json). Этот Markdown генерируется, ручные пометки в нём будут перезаписаны.
 
@@ -82,7 +82,6 @@
 | `P143` | Rio & Iguasu New Year 2027 Group RUS com 20%.docx; 8 дн.; New Year 2027 | [Rio & Iguasu New Year 2027 Group RUS com 20%.docx](https://docs.google.com/document/d/16HYc2q48Bca_8Zo2VD-W1iOufzB_c33b/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур в Бразилию и на водопады Игуасу на Новый Год](https://adatours.ru/brazil/tour/brazil-iguazu-new-year/) — архив; `tour_source_braziliya_s_vodopadami_na_novyj_god` | Только архив | Не начато |
 | `P145` | Unforgettable Champoin Parade Rio,Foz,Buz 10d9n 2027 RUS  20docx.docx; 10 дн.; Carnaval Champions Parade Rio 2027 | [Unforgettable Champoin Parade Rio,Foz,Buz 10d9n 2027 RUS  20docx.docx](https://docs.google.com/document/d/12QJtd211FeAN8NdNUvLeLvn4p_iGfYfA/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | Индивидуальный тур в Бразилию на Карнавал (страницы нет; [запись источника](../../data/source-index/entries/tour_source_nezabyvaemyj_parad_chempionov_v_brazilii.json)) — архив; `tour_source_nezabyvaemyj_parad_chempionov_v_brazilii` | Только архив | Не начато |
 | `P146` | Tropical Champion parade Rio Buz 10d9n 2027 RUS  20.docx; 10 дн.; Carnaval Champions Parade Rio 2027 | [Tropical Champion parade Rio Buz 10d9n 2027 RUS  20.docx](https://docs.google.com/document/d/1oLZAfaNIgNA-GbS3R8II2cvW_TFlka6t/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Индивидуальный тур в Бразилию на Парад Чемпионов](https://adatours.ru/brazil/tour/brazil-champions-parade-tropical-coast/) — архив; `tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe` | Только архив | Не начато |
-| `P149` | Champion Pararde Rio Iguazu Short 7d6n 2027 RUS 20 .docx; 7 дн.; Carnaval Champions Parade Rio 2027 | [Champion Pararde Rio Iguazu Short 7d6n 2027 RUS 20 .docx](https://docs.google.com/document/d/1NeP8Lfc-Lm9XtbeNUmWcWLnn9KTvoTYp/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Парад Чемпионов в Рио де Жанейро & Водопады](https://adatours.ru/brazil/tour/rio-champions-parade-waterfalls/) — архив; `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | Только архив | Не начато |
 | `P151` | Dreams Come True Carnival Champions 9d8n 2027 RUS 20.docx; 9 дн.; Carnaval Champions Parade Rio 2027 | [Dreams Come True Carnival Champions 9d8n 2027 RUS 20.docx](https://docs.google.com/document/d/1qkPpWu99FABWC0lOUv80QsAPHJGIahUG/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Мечты сбываются на Парад Чемпионов Карнавала в Бразилии](https://adatours.ru/multi-country/tour/brazil-carnival-champions-parade-dreams/) — архив; `tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala` | Только архив | Не начато |
 
 Новая версия на 2027 год не снимает архив автоматически. Перед восстановлением проверить программу и даты; действующий архивный workflow сохраняет stable ID, URL и историю. Эта опись сама ничего не восстанавливает.
@@ -192,6 +191,7 @@
 | `P140` | Unforgettable New Year 2027 Group RUS com 20%.docx; 10 дн.; New Year 2027 | [Unforgettable New Year 2027 Group RUS com 20%.docx](https://docs.google.com/document/d/1QGKwDhr8CwK321tCUMUuNAyliJpBr5mz/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Новогодний тур в Бразилию 10 дней: Рио, Игуасу, Бузиос от $3192](https://adatours.ru/brazil/tour/brazil-new-year-rio-iguazu-buzios-10-days/) — активный; `tour_source_nezabyvaemyj_novyj_god_v_brazilii` | Активная страница есть | Не начато |
 | `P141` | Tropical New Year 2027 Group RUS com 20%.docx; 10 дн.; New Year 2027 | [Tropical New Year 2027 Group RUS com 20%.docx](https://docs.google.com/document/d/1xN_GP-qNB2wE5hz42vnS45FEXKw3Mqeb/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур на Новый год в Бразилию: Рио и пляжный отдых в Бузиосе](https://adatours.ru/brazil/tour/brazil-new-year-rio-buzios-beach/) — активный; `tour_source_tropicheskij_novyj_god_v_brazilii` | Активная страница есть | Не начато |
 | `P142` | Rio de Janeiro New Year 2027 Group RUS com 20%.docx; 5 дн.; New Year 2027 | [Rio de Janeiro New Year 2027 Group RUS com 20%.docx](https://docs.google.com/document/d/1HbsOmP3KzeLw1VGZk1XEaCAnvflwkZQe/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Новый год в Рио: Копакабана, статуя Христа, Сахарная Голова](https://adatours.ru/brazil/tour/rio-new-year-copacabana-christ-redeemer-sugarloaf/) — активный; `tour_source_nezabyvaemyj_novyj_god_v_rio`; [Тур Новый Год в Рио-де-Жанейро](https://adatours.ru/brazil/tour/rio-de-janeiro-new-year-tour/) — архив; `tour_source_novyj_god_v_rio_de_zhanejro_1` | Активная страница есть | Не начато |
+| `P149` | Champion Pararde Rio Iguazu Short 7d6n 2027 RUS 20 .docx; 7 дн.; Carnaval Champions Parade Rio 2027 | [Champion Pararde Rio Iguazu Short 7d6n 2027 RUS 20 .docx](https://docs.google.com/document/d/1NeP8Lfc-Lm9XtbeNUmWcWLnn9KTvoTYp/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Парад чемпионов в Рио-де-Жанейро и водопады Игуасу](https://adatours.ru/brazil/tour/rio-champions-parade-waterfalls/) — активный; `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | Активная страница есть | Содержание сверено; Свежий Word 2027 полностью сверен; подготовлены 7 дней с фото, 9 тарифов, 3 канонические экскурсии, 3 основных места и Бузиос как продолжение. Ожидает успешного Actions deploy и синхронизации Sheets. |
 | `P150` | Exotic Champion Parade Rio,Foz,Mao,Buz 11d10n 2027 RUS 20%.docx; 11 дн.; Carnaval Champions Parade Rio 2027 | [Exotic Champion Parade Rio,Foz,Mao,Buz 11d10n 2027 RUS 20%.docx](https://docs.google.com/document/d/1odj5X6HhIZ5RWzMPdZOVyUTxtmhmdoR4/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Экзотический Карнавал (Парад Чемпионов) в Бразилии](https://adatours.ru/brazil/tour/brazil-exotic-carnival-champions-parade/) — активный; `tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii` | Активная страница есть | Не начато |
 | `P152` | Champion Parade in Rio 5d4n 2027 RUS 20.docx; 5 дн.; Carnaval Champions Parade Rio 2027 | [Champion Parade in Rio 5d4n 2027 RUS 20.docx](https://docs.google.com/document/d/1Ua17HBMs3lZcz3bo1uFqsBufP1AUipkN/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур в Бразилию на парад чемпионов карнавала в Рио](https://adatours.ru/brazil/tour/brazil-rio-carnival-champions-parade/) — активный; `tour_source_parad_chempionov_karnavala_v_rio` | Активная страница есть | Не начато |
 | `P154` | Vip Carnaval Rio Iguacu 8d7n 2027  20%.docx; 8 дн.; Carnaval Rio 2027 | [Vip Carnaval Rio Iguacu 8d7n 2027  20%.docx](https://docs.google.com/document/d/1wm4F-nqVlb_latC4I9kxI4NGR2we-e8l/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур в Бразилию на Карнавал в Рио и водопады Игуасу \| 8 дней](https://adatours.ru/brazil/tour/luxury-brazil-rio-carnival-iguazu-8-days/) — активный; `tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu` | Активная страница есть | Не начато |
@@ -259,7 +259,7 @@
 
 ## 5. Полная опись сайта и источников
 
-В архивном реестре 42 туров; 6 без страниц. «Нет на Drive» относится только к указанной папке и её снимку, а не ко всему Google Drive. Этот факт не является причиной архивирования или удаления.
+В архивном реестре 41 туров; 6 без страниц. «Нет на Drive» относится только к указанной папке и её снимку, а не ко всему Google Drive. Этот факт не является причиной архивирования или удаления.
 
 | Tour ID | Тур / страница | Статус | Соответствующие программы Drive |
 |---|---|---|---|
@@ -389,7 +389,7 @@
 | `tour_source_pantanal_bonito` | [Пантанал & Бонито](https://adatours.ru/brazil/tour/pantanal-bonito/) | Активная страница | `P085` |
 | `tour_source_pantanal_4dnya_3_nochi` | [Пантанал 4дня/ 3 ночи](https://adatours.ru/brazil/tour/pantanal-4-days-3-nights/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_pantanal_za_5_dnej` | [Пантанал за 5 дней](https://adatours.ru/brazil/tour/pantanal-5-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
-| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | [Парад Чемпионов в Рио де Жанейро & Водопады](https://adatours.ru/brazil/tour/rio-champions-parade-waterfalls/) | Архивная страница | `P149` |
+| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | [Парад чемпионов в Рио-де-Жанейро и водопады Игуасу](https://adatours.ru/brazil/tour/rio-champions-parade-waterfalls/) | Активная страница | `P149` |
 | `tour_source_peru_i_braziliya_na` | [Перу и Бразилия](https://adatours.ru/multi-country/tour/peru-brazil/) | Архивная страница | `P076` |
 | `tour_source_belosnezhnye_zhemchuzhiny_brazilii` | [Пляжный тур в Бразилию на 10 дней](https://adatours.ru/brazil/tour/brazil-beach-tour-10-days/) | Архивная страница | `P086` |
 | `tour_source_prazdnik_gordosti_v_rio_de_zhanejro` | [Праздник гордости в Рио-де-Жанейро](https://adatours.ru/brazil/tour/rio-de-janeiro-pride/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |

@@ -592,7 +592,6 @@ Commit определяется по изменению, содержащему 
 | 398 | `tour_source_pantanal_bonito` | Пантанал & Бонито · `/brazil/tour/pantanal-bonito/` | `src/content/tours/pantanal-bonito.md` | 1 | `e806d757179d55fa9a5664a7d3a3473c35c9c803e3eed824cc2d4cefd9f7f006` |
 | 399 | `tour_source_pantanal_4dnya_3_nochi` | Пантанал 4дня/ 3 ночи · `/brazil/tour/pantanal-4-days-3-nights/` | `src/content/tours/pantanal-4dnya-3-nochi.md` | 0 | `8f865326b17feedf76e3765978a22c46f14b55c664a1ebac75fd4ac2b5378c9e` |
 | 400 | `tour_source_pantanal_za_5_dnej` | Пантанал за 5 дней · `/brazil/tour/pantanal-5-days/` | `src/content/tours/pantanal-za-5-dnej.md` | 0 | `8b434597f7995cfdec9570787d16ff928664cf78099167138ce7c895fd37ecde` |
-| 401 | `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | Парад Чемпионов в Рио де Жанейро & Водопады · `/brazil/tour/rio-champions-parade-waterfalls/` | `src/content/tours/parad-chempionov-v-rio-de-zhanejro-vodopady.md` | 4 | `72e2e3ebc2e158660d270c720015a6895fb3d20436330ad59652a3f7ffa77f8b` |
 | 402 | `tour_source_peru_i_braziliya_na` | Перу и Бразилия · `/multi-country/tour/peru-brazil/` | `src/content/tours/peru-i-braziliya-na.md` | 3 | `057d4df7fe8611a348264ab2acd8db243857b58a417ef6d7f3e7b28286a92236` |
 | 403 | `tour_source_belosnezhnye_zhemchuzhiny_brazilii` | Пляжный тур в Бразилию на 10 дней · `/brazil/tour/brazil-beach-tour-10-days/` | `src/content/tours/belosnezhnye-zhemchuzhiny-brazilii.md` | 0 | `e070fcaabed8eb0583d3388e106d1004a1f785916c095a136fda1e61dddc298d` |
 | 404 | `tour_source_prazdnik_gordosti_v_rio_de_zhanejro` | Праздник гордости в Рио-де-Жанейро · `/brazil/tour/rio-de-janeiro-pride/` | `src/content/tours/prazdnik-gordosti-v-rio-de-zhanejro.md` | 0 | `cbfd5a591299a3401073df37cb28e731c7cea5b09e553cbea2c3d714ab82c3a6` |
@@ -899,6 +898,8 @@ Commit определяется по изменению, содержащему 
 | `tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios` | 11 | `excursion_buzios_coastal_boat_trip` | 11 | 12 | Существующая каноническая |
 | `tour_source_rajskaya_braziliya` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
 | `tour_source_rajskaya_braziliya` | 2 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
+| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Word P149, 2027: существующая каноническая; стоимость сохранена в условиях тура |
+| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 3 | `excursion_iguazu_helicopter_falls` | 5 | 6 | Word P149, 2027: существующая каноническая; стоимость сохранена в условиях тура |
 | `tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
 | `tour_source_nezabyvaemaya_braziliya` | 1 | `excursion_source_botanical_garden` | 4 | 5 | Существующая каноническая |
 | `tour_source_nezabyvaemaya_braziliya` | 2 | `excursion_source_royal_petropolis_private_tour_full_day` | 4 | 5 | Существующая каноническая |
@@ -977,10 +978,6 @@ Commit определяется по изменению, содержащему 
 | `tour_source_opyt_brazilii` | 1 | `excursion_source_makuko_safari` | 4 | 5 | Существующая каноническая |
 | `tour_source_opyt_brazilii` | 2 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 4 | 5 | Существующая каноническая |
 | `tour_source_pantanal_bonito` | 1 | `excursion_brazil_bonito_abismo_anhumas` | 5 | 6 | Существующая каноническая |
-| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 1 | `excursion_source_polet_na_vertolete_nad_rio` | 3 | 4 | Существующая каноническая |
-| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 2 | `excursion_source_makuko_safari` | 5 | 6 | Существующая каноническая |
-| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 3 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 5 | 6 | Существующая каноническая |
-| `tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady` | 4 | `excursion_iguazu_helicopter_falls` | 5 | 6 | Существующая каноническая |
 | `tour_source_peru_i_braziliya_na` | 1 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | 8 | 9 | Существующая каноническая |
 | `tour_source_peru_i_braziliya_na` | 2 | `excursion_iguazu_helicopter_falls` | 8 | 9 | Существующая каноническая |
 | `tour_source_peru_i_braziliya_na` | 3 | `excursion_source_polet_na_vertolete_nad_rio` | 10 | 11 | Существующая каноническая |
@@ -1348,3 +1345,4 @@ Commit определяется по изменению, содержащему 
 | 7 | `excursion_source_ostrov_severnyj_sejmur` | Переиспользована каноническая экскурсия |
 | 7 | `excursion_source_ostrov_plasa` | Переиспользована каноническая экскурсия |
 | 10 | `excursion_ecuador_punta_centinela_whales` | Создана из Word |
+

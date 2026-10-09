@@ -55,7 +55,7 @@
     "/media/excursions/macuco-safari-group-add-on/hero-enhanced-20261005.webp"
   ],
   "newMedia": 0,
-  "stage": "ready_for_deploy",
+  "stage": "done",
   "sheets": {
     "pageRow": 427,
     "existingPhotoRows": [
@@ -71,7 +71,39 @@
       6,
       7,
       8
-    ]
+    ],
+    "synchronized": true,
+    "pageStatus": "Уникализировано",
+    "photoRows": [
+      4726,
+      4727,
+      4818,
+      4819,
+      4820,
+      5626,
+      5627,
+      5628,
+      5629,
+      5630
+    ],
+    "livePhotoSlots": 9,
+    "removedHistoricalPhotoRow": 4727,
+    "firstPublicationDatePreserved": "02.10.2026",
+    "acceptedColumnUnchanged": true
   },
-  "note": "Same stable 8d/7n Rio+Iguazu product restored from exact Anna Word; old VIP hotels, included gala, VIP access, restaurants, unsupported helicopter and old dates removed. All 3 destination pages and 2 canonical excursions exist. Removed historical day-6 second fireworks slot remains archived in Photos history."
+  "note": "Same stable 8d/7n Rio+Iguazu product restored from exact Anna Word; old VIP hotels, included gala, VIP access, restaurants, unsupported helicopter and old dates removed. All 3 destination pages and 2 canonical excursions exist. Removed historical day-6 second fireworks slot remains archived in Photos history.",
+  "deployment": {
+    "runId": 37959941071,
+    "commit": "4081945f613ecac7e0633ae7f85f4c8e2332a34f",
+    "contentCommit": "389dbe517525d358bbadda3ec29ac2c32d6223ea",
+    "conclusion": "success",
+    "url": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/37959941071",
+    "targetTourBlob": "678f85a197f5e3ae26b17a0651000384758360ae",
+    "targetEntryBlob": "804d061e1ca068e002f22fdbab8019a6e1209b4c"
+  },
+  "publicationQueueFix": {
+    "commit": "22ff9efd7fc423e97fe5241a41597df65ff85866",
+    "change": "pages concurrency cancel-in-progress=false",
+    "reason": "Repeated unrelated main commits cancelled publication before Pages deploy; keep running publication and queue subsequent updates."
+  }
 }

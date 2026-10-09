@@ -12,10 +12,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
+      MEDIA_LEGACY_CUTOFF: b09b6ba01316e888e871eac399d98eb9915d2bf7
+    env:
       MEDIA_CDN_ORIGIN: https://img.adatours.ru
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+
+      - name: Reject additions to frozen Git media; verify S3 receipt schema
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! git cat-file -e "${MEDIA_LEGACY_CUTOFF}^{tree}" 2>/dev/null; then
+            git fetch --no-tags --filter=blob:none --depth=1 origin "${MEDIA_LEGACY_CUTOFF}"
+          fi
+          node scripts/guard-no-new-git-media.mjs
+          node scripts/verify-direct-s3-assets.mjs --local
 
       - name: Setup Node
         uses: actions/setup-node@v5

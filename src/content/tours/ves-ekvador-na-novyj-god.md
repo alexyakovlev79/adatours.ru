@@ -547,7 +547,7 @@ routeDestinations:
 - destination_ecuador_mitad_del_mundo
 - destination_ecuador_intinan_museum
 - destination_ecuador_casa_del_arbol
-format: Групповой тур, гарантированный заезд; до 15 участников
+format: Групповой
 primaryThemes:
 - theme_events
 - theme_wildlife

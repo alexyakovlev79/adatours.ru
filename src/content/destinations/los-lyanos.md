@@ -13,7 +13,8 @@ hero:
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
 gallery:
 - src: /media/destinations/los-llanos/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
+  alt: "Крупная змея, свернувшаяся на земле среди листьев"
+  hover: "Свернувшаяся змея среди сухих и зелёных листьев"
 - src: /media/destinations/los-llanos/gallery-2-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
 - src: /media/destinations/los-llanos/gallery-3-enhanced-20261003.webp
@@ -29,7 +30,8 @@ gallery:
 - src: /media/destinations/los-llanos/gallery-8-enhanced-20261003.webp
   alt: 'На фото: саванны и равнины Лос Льяноса в Венесуэле'
 - src: /media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
-  alt: 'На фото: животный мир Лос Льянос в Венесуэле'
+  alt: "Стая ярко-красных птиц над травянистой равниной Лос-Льяноса, Венесуэла"
+  hover: "Лос-Льянос: красные птицы взлетают над зелёной равниной"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

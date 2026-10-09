@@ -11,7 +11,8 @@ searchAliases: []
 hero: {"src":"/media/destinations/santa-marta/hero-enhanced-20261003.webp","alt":"На фото: курорт Санта-Марта в Колумбии"}
 gallery:
 - src: /media/destinations/santa-marta/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: курорт Санта-Марта в Колумбии'
+  alt: "Мужчина с музыкальным инструментом в Санта-Марте, Колумбия"
+  hover: "Санта-Марта в Колумбии: портрет мужчины с музыкальным инструментом"
 - src: /media/destinations/santa-marta/gallery-2-enhanced-20261003.webp
   alt: 'На фото: курорт Санта-Марта в Колумбии'
 - src: /media/destinations/santa-marta/gallery-3-enhanced-20261003.webp
@@ -29,7 +30,8 @@ gallery:
   hover: "Санта-Марта: прибрежная дорога, песчаный пляж и горы у моря"
   alt: "Пляж и набережная с пальмами у гористого берега Санта-Марты, Колумбия"
 - src: /media/tours/zateryannyj-gorod-v-santa-marte/itinerary-3-images-0-src-enhanced-20261007.webp
-  alt: 'на фото: Затерянный город Санта Марта'
+  alt: "Каменные террасы и лестницы Затерянного города среди горного леса, Колумбия"
+  hover: "Затерянный город в Колумбии: древние террасы на лесистом склоне"
 - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-11-images-0-src-enhanced-20261007.webp
   hover: "Санта-Марта: морская панорама в золотом свете и бассейн на переднем плане"
   alt: "Солнце над морем и бассейн перед пальмами в районе Санта-Марты, Колумбия"

@@ -16,7 +16,8 @@ gallery:
   hover: "Уюни: множество столбовидных кактусов среди камней"
   alt: "Высокие кактусы на каменистом склоне в районе солончака Уюни, Боливия"
 - src: /media/destinations/uyuni/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: соленое озеро (солончак) Уюни'
+  alt: "Высокие кактусы на фоне зеркальной поверхности солончака Уюни, Боливия"
+  hover: "Уюни: кактусы и горы, отражающиеся в воде на солончаке"
 - src: /media/destinations/uyuni/gallery-3-enhanced-20261003.webp
   alt: 'На фото: соленое озеро (солончак) Уюни'
 - src: /media/destinations/uyuni/gallery-4-enhanced-20261003.webp
@@ -24,7 +25,8 @@ gallery:
 - src: /media/destinations/uyuni/gallery-5-enhanced-20261003.webp
   alt: 'На фото: Джип тур на соленое озеро (солончак) Уюни'
 - src: /media/tours/priroda-i-kultura-venesuely-bolivii/itinerary-day-10-generated-20261008-next20.webp
-  alt: Кладбище поездов у Уюни, Боливия
+  alt: "Ржавый паровоз и вагоны на кладбище поездов у Уюни, Боливия"
+  hover: "Уюни: старый паровоз среди песка и гор на горизонте"
 - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-13-images-0-src-enhanced-20261007.webp
   alt: Отель глемпинг Salar de Uyuni, Kachi Lodge на солончаке Уюни в Боливии
 - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-14-images-0-src-enhanced-20261007.webp

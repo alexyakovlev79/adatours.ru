@@ -13,9 +13,11 @@ hero:
   alt: 'На фото: остров Кайе Колкер в Белизе'
 gallery:
 - src: /media/destinations/kaje-kolker/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: остров Кей Колкер в Белизе'
+  alt: "Разноцветные деревянные дома на сваях у пляжа Кайе-Колкера, Белиз"
+  hover: "Кайе-Колкер: дома с наружными лестницами среди пальм"
 - src: /media/destinations/kaje-kolker/gallery-2-enhanced-20261002.webp
-  alt: 'На фото: остров Кей Колкер в Белизе'
+  alt: "Деревянные решётчатые ящики, сложенные друг на друга"
+  hover: "Стопка деревянных ящиков с решётчатыми стенками"
 - src: /media/destinations/kaje-kolker/gallery-3-enhanced-20261002.webp
   alt: 'На фото: остров Кей Колкер в Белизе'
 - src: /media/destinations/kaje-kolker/gallery-4-enhanced-20261002.webp

@@ -17,11 +17,14 @@ hero:
   alt: Арекипа, Перу
 gallery:
 - src: /media/destinations/arequipa/gallery-1-enhanced-20261005.webp
-  alt: Арекипа, Перу
+  alt: "Подсвеченная церковь с колокольней и пальмы в Арекипе, Перу"
+  hover: "Арекипа ночью: освещённая церковь среди пальм"
 - src: /media/destinations/arequipa/gallery-2-enhanced-20261005.webp
-  alt: Историческая застройка Арекипы
+  alt: "Собака на мощёной улице со старинными фасадами в Арекипе, Перу"
+  hover: "Арекипа: собака у фонаря на улице между каменными зданиями"
 - src: /media/destinations/arequipa/gallery-3-enhanced-20261005.webp
-  alt: Арекипа, Белый город Перу
+  alt: "Светлая церковь с двумя башнями в Арекипе, Перу"
+  hover: "Арекипа: белый фасад церкви с двумя высокими башнями"
 - src: /media/destinations/arequipa/gallery-4-enhanced-20261005.webp
   alt: Архитектура Арекипы
 - src: /media/destinations/arequipa/gallery-5-enhanced-20261005.webp

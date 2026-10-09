@@ -26,7 +26,8 @@ gallery:
   hover: "Вилья-де-Лейва: цветущий сад внутри двора с белыми арками"
   alt: "Внутренний двор с аркадой, черепичными крышами и цветами в Вилья-де-Лейве, Колумбия"
 - src: /media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-3-images-0-src-enhanced-20261007.webp
-  alt: На фото:Вилья-де-Лейва
+  alt: "Мощёная площадь Вилья-де-Лейвы с подсвеченными домами вечером, Колумбия"
+  hover: "Вилья-де-Лейва: вечерняя площадь у белых домов с фонарями"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

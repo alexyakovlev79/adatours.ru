@@ -13,7 +13,8 @@ hero:
   alt: 'На фото: руины майя Шунантунич, в Кайо Белиз'
 gallery:
 - src: /media/destinations/kajo/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: округ Кайо в Белизе'
+  alt: "Пальмы у залива на фоне зелёной остроконечной горы"
+  hover: "Синяя вода, пальмы и высокая зелёная гора у берега"
 - src: /media/destinations/kajo/gallery-2-enhanced-20261002.webp
   alt: 'На фото: округ Кайо в Белизе'
 relatedDestinations: []

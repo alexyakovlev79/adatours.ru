@@ -33,9 +33,11 @@ gallery:
   hover: "Бирюзовое озеро среди зелени на фоне высокой вулканической вершины"
   alt: "Озеро у подножия конусообразного вулкана, окружённое деревьями и цветами"
 - src: /media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: 'На фото: Озеро Атитлан в Гватемале'
+  alt: "Синее озеро Атитлан и вулкан на фоне цветов у берега, Гватемала"
+  hover: "Озеро Атитлан: цветы у берега и вулкан над синей водой"
 - src: /media/tours/otkryvaya-gvatemalu/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: 'На фото: Озеро атитлан'
+  alt: "Озеро Атитлан с вулканом на горизонте и цветами у берега, Гватемала"
+  hover: "Атитлан: синяя вода у зелёного берега на фоне вулкана"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

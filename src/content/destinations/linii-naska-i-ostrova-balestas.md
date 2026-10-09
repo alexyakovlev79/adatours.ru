@@ -9,7 +9,7 @@ destinationType: "route_cluster"
 summary: "Геоглифы плато Наска, морские животные и птицы островов Бальестас, гигантский Канделябр Паракаса. Воздушные и лодочные экскурсии по Перу."
 searchAliases: []
 hero: {"src":"/media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261005.webp","alt":"На фото: линии пустыни Наска в Перу"}
-gallery: [{"src":"/media/destinations/nazca-lines-and-ballestas-islands/gallery-1-enhanced-20261005.webp","alt":"На фото: линии пустыни Наска в Перу"},{"src":"/media/destinations/nazca-lines-and-ballestas-islands/gallery-2-enhanced-20261005.webp","alt":"На фото: линии пустыни Наска в Перу"},{"src":"/media/destinations/nazca-lines-and-ballestas-islands/gallery-3-enhanced-20261005.webp","alt":"На фото: пустыня Наска в Перу"},{"src":"/media/destinations/nazca-lines-and-ballestas-islands/gallery-4-enhanced-20261005.webp","alt":"На фото: линии пустыни Наска в Перу"}]
+gallery: [{"src":"/media/destinations/nazca-lines-and-ballestas-islands/gallery-1-enhanced-20261005.webp","alt":"Прямые линии на сухой поверхности пустыни Наска, Перу, вид сверху", hover: "Наска: пересекающиеся светлые линии среди пустынных склонов"},{"src":"/media/destinations/nazca-lines-and-ballestas-islands/gallery-2-enhanced-20261005.webp","alt":"На фото: линии пустыни Наска в Перу"},{"src":"/media/destinations/nazca-lines-and-ballestas-islands/gallery-3-enhanced-20261005.webp","alt":"На фото: пустыня Наска в Перу"},{"src":"/media/destinations/nazca-lines-and-ballestas-islands/gallery-4-enhanced-20261005.webp","alt":"На фото: линии пустыни Наска в Перу"}]
 facts: []
 featureBands: []
 relatedDestinations: []

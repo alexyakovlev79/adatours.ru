@@ -119,7 +119,8 @@ itinerary:
     **Дополнительная стоимость Abismo Anhumas:** $450 на человека.'
   image:
     src: /media/destinations/bonito/gallery-2-enhanced-20261001.webp
-    alt: Активный отдых на воде в Бонито
+    alt: "Туристы с масками и трубками в прозрачной реке Бонито, Бразилия"
+    hover: "Бонито в Бразилии: снорклинг в бирюзовой реке среди зелени"
 - excursionRef: excursion_brazil_bonito_abismo_anhumas
   places: []
 - day: 6

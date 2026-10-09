@@ -13,13 +13,16 @@ hero:
   alt: Рорайма и саванна на подходе к горе, Венесуэла
 gallery:
 - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-04-generated-20261008-next20.webp
-  alt: Тропа у скальной стены Рораймы, Венесуэла
+  alt: "Каменистая тропа вдоль отвесной стены Рораймы над облаками, Венесуэла"
+  hover: "Рорайма: узкая тропа у скальной стены среди облаков"
 - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-05-generated-20261008-next20.webp
   alt: Скалы и небольшие водоемы на плато Рораймы, Венесуэла
 - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-06-generated-20261008-next20.webp
-  alt: Рорайма со стороны реки Тек, Венесуэла
+  alt: "Каменистая река Тек на фоне плоской вершины Рораймы, Венесуэла"
+  hover: "Рорайма в Венесуэле: река с камнями перед столовой горой"
 - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-07-generated-20261008-next20.webp
-  alt: Путь от Рораймы к Парай-Тепуй, Венесуэла
+  alt: "Тропа через травянистую равнину к столовой горе Рорайма, Венесуэла"
+  hover: "Рорайма: тропа среди травы и плоская вершина вдали"
 themes:
 - theme_adventure
 - theme_wildlife

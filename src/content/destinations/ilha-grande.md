@@ -13,9 +13,11 @@ hero:
   alt: Побережье острова Илья-Гранди, Бразилия
 gallery:
   - src: /media/destinations/ilha-grande/gallery-1-enhanced-20261001.webp
-    alt: Зеленые склоны острова Илья-Гранди
+    alt: "Лесистые горы, прибрежный посёлок и бухта Илья-Гранди, Бразилия"
+    hover: "Илья-Гранди: лодки в голубой бухте под зелёными склонами"
   - src: /media/destinations/ilha-grande/gallery-2-enhanced-20261001.webp
-    alt: Побережье и бухта на Илья-Гранди
+    alt: "Пара за столом у моря при свете факела на Илья-Гранди, Бразилия"
+    hover: "Илья-Гранди: ужин на берегу моря рядом с горящим факелом"
 relatedDestinations:
   - destination_brazil_angra_dos_reis
   - destination_brazil_paraty

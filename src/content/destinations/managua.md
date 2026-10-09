@@ -11,7 +11,8 @@ searchAliases: []
 hero: {"src":"/media/destinations/managua/hero-enhanced-20261005.webp","alt":"На фото: столица Никарагуа. город Манагуа"}
 gallery:
 - src: /media/destinations/managua/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: столица Никарагуа. город Манагуа'
+  alt: "Двое мужчин возле синего автомобиля в Манагуа, Никарагуа"
+  hover: "Манагуа: мужчины у автомобиля, один из них поднимает руку"
 - src: /media/destinations/managua/gallery-2-enhanced-20261005.webp
   alt: 'На фото: столица Никарагуа. город Манагуа'
 - src: /media/destinations/managua/gallery-3-enhanced-20261005.webp

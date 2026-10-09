@@ -34,7 +34,8 @@ gallery:
   - src: /media/destinations/kito-vulkan-kotopahi/gallery-7-enhanced-20261006.webp
     alt: Город Кито среди Анд
   - src: /media/destinations/kito-vulkan-kotopahi/featureBands-2-enhanced-20261006.webp
-    alt: Окрестности Кито и Дорога вулканов
+    alt: "Павлин с раскрытым веером хвостовых перьев"
+    hover: "Синий павлин перед веером перьев с яркими глазками"
 relatedDestinations:
   - destination_ecuador_kuenka
 featuredTours: []

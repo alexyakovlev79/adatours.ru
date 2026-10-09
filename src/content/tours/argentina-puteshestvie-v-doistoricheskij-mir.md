@@ -152,7 +152,8 @@ itinerary:
     **Питание:** завтрак.'
   images:
   - src: /media/destinations/destination_argentina_dolina_uko/original-02.jpg
-    alt: Долина Уко
+    alt: "Ряды посадок на сухих холмах долины Уко, Аргентина"
+    hover: "Долина Уко: ровные ряды зелёных посадок среди горных склонов"
 - day: 6
   title: Мендоса - Сан-Хуан
   places:

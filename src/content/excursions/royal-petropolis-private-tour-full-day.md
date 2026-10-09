@@ -19,11 +19,14 @@ hero:
   alt: "На фото: Королевский Петрополис в Бразилии"
 gallery:
   - src: /media/excursions/royal-petropolis-private-tour-full-day/gallery-1-enhanced-20261006.webp
-    alt: "На фото: Дворец в Петрополисе, Бразилия"
+    alt: "Здание с башнями и крутыми крышами у пруда в Петрополисе, Бразилия"
+    hover: "Петрополис: большое здание с башнями и статуя у пруда"
   - src: /media/excursions/royal-petropolis-private-tour-full-day/gallery-2-enhanced-20261006.webp
-    alt: "На фото: Кристалл-палас в Петрополисе"
+    alt: "Стеклянный Кристалл-палас с подсветкой в Петрополисе, Бразилия"
+    hover: "Петрополис: освещённый стеклянный павильон Кристалл-палас"
   - src: "/media/excursions/royal-petropolis-private-tour-full-day/gallery-2-src-enhanced-20261007.webp"
-    alt: "На фото: Корона в музее Петрополиса"
+    alt: "Золотая корона в музейной витрине Петрополиса, Бразилия"
+    hover: "Петрополис: украшенная золотая корона в освещённой витрине"
 route:
   - "Рио-де-Жанейро"
   - "Петрополис"

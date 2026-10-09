@@ -142,7 +142,8 @@ itinerary:
     Питание: завтрак, обед.'
   images:
   - src: /media/destinations/kajo/gallery-1-enhanced-20261002.webp
-    alt: 'На фото: округ Кайо в Белизе'
+    alt: "Пальмы у залива на фоне зелёной остроконечной горы"
+    hover: "Синяя вода, пальмы и высокая зелёная гора у берега"
 - day: 7
   title: Тикаль
   places:

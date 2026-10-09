@@ -13,9 +13,11 @@ hero:
   alt: "На фото: столица Суринама город Парамарибо"
 gallery:
 - src: /media/destinations/paramaribo/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: столица Суринама город Парамарибо'
+  alt: "Старый деревянный дом с окнами и крыльцом в Парамарибо, Суринам"
+  hover: "Парамарибо: потемневший деревянный фасад и дверь над ступенями"
 - src: /media/destinations/paramaribo/gallery-2-enhanced-20261005.webp
-  alt: 'На фото: столица Суринама город Парамарибо'
+  alt: "Небольшие лодки у деревянных причалов в Парамарибо, Суринам"
+  hover: "Парамарибо: лодки на спокойной воде у свайных причалов"
 - src: /media/destinations/paramaribo/gallery-3-enhanced-20261005.webp
   alt: 'На фото: столица Суринама город Парамарибо'
 - src: /media/destinations/paramaribo/gallery-4-enhanced-20261005.webp

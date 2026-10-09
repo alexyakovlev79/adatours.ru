@@ -19,7 +19,8 @@ currency: USD
 priceNote: "Основная стоимость — $621. Для 2 человек — $311 на человека, для 3 человек — $264 на человека."
 hero:
   src: /media/excursions/samaipata-tur/hero-src-enhanced-20261008.webp
-  alt: Фуэрте-де-Самайпата в Боливии
+  alt: "Высеченные в скале уступы Фуэрте-де-Самайпата, Боливия"
+  hover: "Фуэрте-де-Самайпата в Боливии: каменные уступы и зелёный двор"
 gallery:
   - src: /media/excursions/samaipata-tur/gallery-0-src-enhanced-20261008.webp
     alt: Самаипата в предгорьях Анд

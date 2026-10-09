@@ -271,7 +271,8 @@ itinerary:
   text: Сегодня вы отправитесь к солончакам Salinas Grandes по дороге №9. После экскурсии маршрут возвращается в Сальту с остановками в живописных деревнях. Переезд занимает около 4 часов.
   images:
   - src: /media/destinations/salta/gallery-3-enhanced-20261002.webp
-    alt: 'На фото: город  Сальта в Аргентине'
+    alt: "Подсвеченный красно-жёлтый фасад церкви с башней в Сальте, Аргентина"
+    hover: "Сальта ночью: ярко освещённая церковь с высокой колокольней"
 - day: 15
   title: Сальта
   places:
@@ -279,7 +280,8 @@ itinerary:
   text: Завтрак в отеле. Затем трансфер в аэропорт для дальнейшего вылета.
   images:
   - src: /media/destinations/salta/gallery-4-enhanced-20261002.webp
-    alt: 'На фото: город  Сальта в Аргентине'
+    alt: "Арочные окна и балкон с кованой оградой в Сальте, Аргентина"
+    hover: "Сальта: старинный фасад с арочными окнами и кованым балконом"
 included:
 - 'Размещение в отелях 4* на базе завтраков: Design Suites Buenos, Sheraton Mendoza, Alto Calafate Hotel, Viale Cataratas
   Iguazu, Design Suites Salta, Patios de Cafayate, Marques de Tojo Purmamarca или аналогичные отели.'

@@ -23,7 +23,8 @@ gallery:
 - src: /media/destinations/georgetown/gallery-5-enhanced-20261003.webp
   alt: 'На фото: столица страны Гайана - город Джорджтаун'
 - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-5-images-0-src-enhanced-20261007.webp
-  alt: Джорджтаун
+  alt: "Освещённая церковь со шпилем среди вечерних улиц Джорджтауна, Гайана"
+  hover: "Джорджтаун вечером: церковь и подсвеченные городские улицы"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

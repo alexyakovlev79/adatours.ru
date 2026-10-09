@@ -31,7 +31,8 @@ gallery:
   - src: /media/destinations/kuenka/gallery-7-enhanced-20261006.webp
     alt: Куэнка и ее окрестности
   - src: /media/destinations/kuenka/featureBands-2-enhanced-20261006.webp
-    alt: Панорама Куэнки в Эквадоре
+    alt: "Собор с голубыми куполами над городскими кварталами Куэнки, Эквадор"
+    hover: "Куэнка: голубые купола собора на фоне облачного неба"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

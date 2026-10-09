@@ -35,9 +35,11 @@ gallery:
   hover: "Лима: пляж и прибрежная дорога под обрывом с городской застройкой"
   alt: "Океанское побережье Лимы с высоким обрывом, дорогой и высотными домами, Перу"
 - src: /media/tours/vip-tur-v-peru/itinerary-11-images-0-src-enhanced-20261007.webp
-  alt: Лима
+  alt: "Освещённый собор с двумя башнями и фонтан на площади Лимы, Перу"
+  hover: "Лима вечером: подсвеченные башни собора и струи фонтана"
 - src: /media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Закат над столицей Перу, городом Лима
+  alt: "Закат над высотными зданиями и городскими кварталами Лимы, Перу"
+  hover: "Лима: солнце у горизонта за высотной городской застройкой"
 relatedDestinations:
 - destination_peru_cusco
 - destination_peru_machu_picchu

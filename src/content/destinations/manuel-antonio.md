@@ -25,7 +25,8 @@ gallery:
 - src: /media/destinations/manuel-antonio/gallery-6-enhanced-20261003.webp
   alt: 'На фото: курорт Мануэль Антонио в Коста-Рике'
 - src: /media/tours/panama-kosta-rika-nikaragua/itinerary-5-images-1-src-enhanced-20261007.webp
-  alt: Мануэль Антонио
+  alt: "Песчаный перешеек между бухтами Мануэль-Антонио, Коста-Рика"
+  hover: "Мануэль-Антонио: лесистый берег и два пляжа у бирюзового моря"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

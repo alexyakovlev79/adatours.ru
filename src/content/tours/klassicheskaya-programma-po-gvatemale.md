@@ -82,7 +82,8 @@ itinerary:
     \  \nПитание: завтрак."
   images:
   - src: /media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: Озеро Атитлан в Гватемале'
+    alt: "Синее озеро Атитлан и вулкан на фоне цветов у берега, Гватемала"
+    hover: "Озеро Атитлан: цветы у берега и вулкан над синей водой"
 - day: 4
   title: Антигуа - Гватемала-Сити
   places:

@@ -55,7 +55,8 @@ itinerary:
     \ рестораны на месте.  \n**Канопи-тур:** оплачивается дополнительно."
   images:
   - src: /media/destinations/el-valle-de-anton/gallery-1-enhanced-20261005.webp
-    alt: 'На фото: горный курорт Эль Валле в Панаме'
+    alt: "Группа людей у каменистого ручья среди деревьев в Эль-Валле, Панама"
+    hover: "Эль-Валле в Панаме: люди отдыхают у ручья в тени деревьев"
 - excursionRef: excursion_panama_chorro_del_macho_canopy
   places: []
 - day: 3

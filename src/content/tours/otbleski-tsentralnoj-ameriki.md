@@ -120,7 +120,8 @@ itinerary:
     \ Catarina.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: Озеро Атитлан, Гватемала'
+    alt: "Синее озеро Атитлан и вулкан на фоне цветов у берега, Гватемала"
+    hover: "Озеро Атитлан: цветы у берега и вулкан над синей водой"
 - day: 5
   title: Чичикастенанго - Гватемала-Сити
   places:
@@ -183,7 +184,8 @@ itinerary:
     \n**Ночь:** Clarion Copan Ruinas.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/mir-majya/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: Копан в Гондурасе'
+    alt: "Ступенчатая каменная платформа Копана под цветущими ветвями, Гондурас"
+    hover: "Копан: древняя платформа и человек на зелёной площади"
 - day: 9
   title: Копан - Сан-Сальвадор
   places:
@@ -195,7 +197,8 @@ itinerary:
     \nПосле осмотра комплекса переезд в Сан-Сальвадор.\n\n**Ночь:** Barceló San Salvador.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/mir-majya/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: Копан в Гондурасе'
+    alt: "Ступенчатая каменная платформа Копана под цветущими ветвями, Гондурас"
+    hover: "Копан: древняя платформа и человек на зелёной площади"
 - day: 10
   title: Сан-Сальвадор - Сан-Андрес - Хойя-де-Серен
   places:

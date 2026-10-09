@@ -83,7 +83,8 @@ itinerary:
     \ экскурсии возвращение в Панахачель. Ночь в отеле Villa Santa Catarina.  \n**Питание:** завтрак."
   images:
   - src: "/media/tours/otkryvaya-gvatemalu/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: Озеро атитлан'
+    alt: "Озеро Атитлан с вулканом на горизонте и цветами у берега, Гватемала"
+    hover: "Атитлан: синяя вода у зелёного берега на фоне вулкана"
 - day: 4
   title: Озеро Атитлан - Гватемала-Сити - Флорес
   places:
@@ -114,7 +115,8 @@ itinerary:
     \ City.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/otkryvaya-gvatemalu/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: Тикаль в провинции Эль-Петен'
+    alt: "Ступенчатый храм Тикаля среди руин и тропического леса, Гватемала"
+    hover: "Тикаль в Гватемале: каменный храм над зелёной площадью"
 - day: 6
   title: Гватемала-Сити
   places:

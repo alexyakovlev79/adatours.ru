@@ -14,11 +14,14 @@ hero:
   alt: "Белое здание с террасами на скалистом берегу, Уругвай"
 gallery:
 - src: /media/destinations/punta-del-este/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: курорт Пунта дель Эсте в Уругвае'
+  alt: "Скульптура пальцев, выступающих из песка, в Пунта-дель-Эсте, Уругвай"
+  hover: "Пунта-дель-Эсте: человек на скульптуре гигантской руки"
 - src: /media/destinations/punta-del-este/gallery-2-enhanced-20261005.webp
-  alt: 'На фото: курорт Пунта дель Эсте в Уругвае'
+  alt: "Сувенирные прилавки с разноцветными украшениями в Пунта-дель-Эсте, Уругвай"
+  hover: "Пунта-дель-Эсте: яркие сувениры на освещённых прилавках"
 - src: /media/destinations/punta-del-este/gallery-3-enhanced-20261005.webp
-  alt: 'На фото: курорт Пунта дель Эсте в Уругвае'
+  alt: "Старый бирюзовый пикап у моря в Пунта-дель-Эсте, Уругвай"
+  hover: "Пунта-дель-Эсте: винтажный пикап на фоне моря"
 - src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-2-images-0-src-enhanced-20261007.webp
   alt: Пальцы Ла-Мано в Пунта-дель-Эсте, Уругвай
 - src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/itinerary-3-images-0-src-enhanced-20261007.webp

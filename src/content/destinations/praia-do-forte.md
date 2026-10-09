@@ -12,9 +12,11 @@ hero:
   alt: Побережье Прайя-ду-Форте в штате Баия
 gallery:
 - src: /media/destinations/destination_brazil_praia_do_forte/praia-beach-generated-20261008.webp
-  alt: Прайя-ду-Форте - Бразилия
+  alt: "Песчаный пляж с пальмами у моря в Прайя-ду-Форте, Бразилия"
+  hover: "Прайя-ду-Форте: волны у песчаного берега под пальмами"
 - src: /media/destinations/destination_brazil_praia_do_forte/praia-departure-generated-20261008.webp
-  alt: Прайя-ду-Форте - Бразилия
+  alt: "Мощёная улица с низкими домами, цветами и пальмами в Прайя-ду-Форте, Бразилия"
+  hover: "Прайя-ду-Форте: тихая улица среди пальм и цветущих фасадов"
 relatedDestinations:
 - destination_brazil_salvador
 featuredTours:

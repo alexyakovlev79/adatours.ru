@@ -237,7 +237,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-5-images-0-src-enhanced-20261007.webp
-    alt: Тикаль
+    alt: "Высокий ступенчатый храм Тикаля среди пальм и руин, Гватемала"
+    hover: "Тикаль: каменный храм над зелёной площадью с пальмами"
 - day: 7
   title: Flores - Rio Dulce - Livingston
   places:

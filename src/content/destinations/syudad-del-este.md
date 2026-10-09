@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Город в «районе трех границ», известный магазинами и беспошлинной торговлей. Мост дружбы через Парану соединяет его с Фос-ду-Игуасу."
 searchAliases: []
 hero: {"src":/media/countries/paraguay/featureBands-3-enhanced-20261002.webp,"alt":"На фото: город Сьюдад-дель-Эсте в Парагвае"}
-gallery: [{"src":"/media/destinations/ciudad-del-este/gallery-1-enhanced-20261005.webp","alt":"На фото: город Сьюдад-дель-Эсте в Парагвае"},{"src":"/media/destinations/ciudad-del-este/gallery-2-enhanced-20261005.webp","alt":"На фото: город Сьюдад-дель-Эсте в Парагвае"},{"src":"/media/destinations/ciudad-del-este/gallery-3-enhanced-20261005.webp","alt":"На фото: город Сьюдад-дель-Эсте в Парагвае"},{"src":"/media/destinations/ciudad-del-este/gallery-4-enhanced-20261005.webp","alt":"На фото: город Сьюдад-дель-Эсте в Парагвае"}]
+gallery: [{"src":"/media/destinations/ciudad-del-este/gallery-1-enhanced-20261005.webp","alt":"Ярко раскрашенный автобус на улице Сьюдад-дель-Эсте, Парагвай", hover: "Сьюдад-дель-Эсте: передняя часть цветного городского автобуса"},{"src":"/media/destinations/ciudad-del-este/gallery-2-enhanced-20261005.webp","alt":"На фото: город Сьюдад-дель-Эсте в Парагвае"},{"src":"/media/destinations/ciudad-del-este/gallery-3-enhanced-20261005.webp","alt":"На фото: город Сьюдад-дель-Эсте в Парагвае"},{"src":"/media/destinations/ciudad-del-este/gallery-4-enhanced-20261005.webp","alt":"На фото: город Сьюдад-дель-Эсте в Парагвае"}]
 facts: []
 featureBands: []
 relatedDestinations: []

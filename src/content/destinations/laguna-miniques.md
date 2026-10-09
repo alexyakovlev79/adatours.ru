@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_chile_laguna_minikes/hero-generated-20261008-resumed-v1.webp
-  alt: Лагуна Миньикес, Чили
+  alt: "Синяя лагуна Миньикес среди сухих горных склонов, Чили"
+  hover: "Миньикес в Чили: озеро у подножия гор с заснеженной вершиной"
 gallery: []
 relatedDestinations: []
 featuredTours: []

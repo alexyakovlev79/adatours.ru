@@ -61,7 +61,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/destinations/paramaribo/gallery-1-enhanced-20261005.webp
-    alt: 'На фото: столица Суринама город Парамарибо'
+    alt: "Старый деревянный дом с окнами и крыльцом в Парамарибо, Суринам"
+    hover: "Парамарибо: потемневший деревянный фасад и дверь над ступенями"
 - day: 3
   title: Суринам - Французская Гвиана - Куру
   places:
@@ -119,7 +120,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/destinations/paramaribo/gallery-2-enhanced-20261005.webp
-    alt: 'На фото: столица Суринама город Парамарибо'
+    alt: "Небольшие лодки у деревянных причалов в Парамарибо, Суринам"
+    hover: "Парамарибо: лодки на спокойной воде у свайных причалов"
 - day: 6
   title: Джорджтаун и водопад Кайетур
   places:
@@ -142,9 +144,11 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-5-images-0-src-enhanced-20261007.webp"
-    alt: Джорджтаун
+    alt: "Освещённая церковь со шпилем среди вечерних улиц Джорджтауна, Гайана"
+    hover: "Джорджтаун вечером: церковь и подсвеченные городские улицы"
   - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-5-images-1-src-enhanced-20261007.webp"
-    alt: Национальный парк Кайетур
+    alt: "Водопад Кайетур падает со скального уступа среди тропического леса, Гайана"
+    hover: "Кайетур в Гайане: река обрывается водопадом посреди зелёного леса"
 - day: 7
   title: Отъезд из Гайаны
   places:

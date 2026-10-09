@@ -11,11 +11,13 @@ searchAliases: []
 hero: {"src":"/media/destinations/campeche/hero-enhanced-20261005.webp","alt":"На фото: город Кампече в Мексике"}
 gallery:
 - src: /media/destinations/campeche/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: город Кампече в Мексике'
+  alt: "Улица Кампече с разноцветными домами и прохожими, Мексика"
+  hover: "Кампече: яркие фасады вдоль мощёной улицы"
 - src: /media/destinations/campeche/gallery-2-enhanced-20261005.webp
   alt: 'На фото: город Кампече в Мексике'
 - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-3-images-0-src-enhanced-20261007.webp
-  alt: Кампече
+  alt: "Зелёное здание с арками и церковные башни на улице Кампече, Мексика"
+  hover: "Кампече: прохожие на улице у зелёного фасада с арками"
 facts: []
 featureBands: []
 relatedDestinations: []

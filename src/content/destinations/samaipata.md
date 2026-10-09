@@ -15,7 +15,8 @@ hero:
   alt: Самаипата в предгорьях Анд
 gallery:
   - src: /media/excursions/samaipata-tur/hero-src-enhanced-20261008.webp
-    alt: Фуэрте-де-Самайпата в Боливии
+    alt: "Высеченные в скале уступы Фуэрте-де-Самайпата, Боливия"
+    hover: "Фуэрте-де-Самайпата в Боливии: каменные уступы и зелёный двор"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

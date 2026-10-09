@@ -17,7 +17,8 @@ hero:
   alt: "На фото: аргентинский курорт Барилоче в Патагонии"
 gallery:
   - src: /media/destinations/bariloche/gallery-1-enhanced-20261002.webp
-    alt: "На фото: аргентинский курорт Барилоче в Патагонии"
+    alt: "Синее озеро, скалистые горы и дерево на берегу у Барилоче, Аргентина"
+    hover: "Барилоче: озеро у лесистых гор и дерево на переднем плане"
   - src: /media/destinations/bariloche/gallery-2-enhanced-20261002.webp
     alt: "На фото: аргентинский курорт Барилоче в Патагонии"
   - src: /media/destinations/bariloche/gallery-3-enhanced-20261002.webp

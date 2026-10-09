@@ -23,7 +23,8 @@ gallery:
 - src: /media/destinations/san-andres/gallery-6-enhanced-20261003.webp
   alt: 'На фото: остров Сан-Андрес-и-Провиденсия в Колумбии'
 - src: /media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-5-images-1-src-enhanced-20261007.webp
-  alt: 'На фото: Остров Сан Андрес в Колумбии'
+  alt: "Прозрачная морская вода над каменистым дном у Сан-Андреса, Колумбия"
+  hover: "Сан-Андрес: бирюзовая вода с видимыми камнями на дне"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_chile_laguna_miskanti/hero-generated-20261008-resumed-v1.webp
-  alt: Лагуна Мисканти, Чили
+  alt: "Лагуна Мисканти с изогнутым берегом на фоне гор, Чили"
+  hover: "Мисканти: синяя вода у каменистого берега среди чилийских гор"
 gallery: []
 relatedDestinations: []
 featuredTours: []

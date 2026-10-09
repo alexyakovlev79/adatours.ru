@@ -13,7 +13,8 @@ hero:
   alt: "На фото: город Тумбес в Перу"
 gallery:
 - src: /media/destinations/tumbes/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: город Тумбес в Перу'
+  alt: "Фасад жёлтого городского здания с окнами и балконами"
+  hover: "Жёлтое здание с балконами и тёмными оконными рамами"
 - src: /media/destinations/tumbes/gallery-2-enhanced-20261005.webp
   alt: 'На фото: город Тумбес в Перу'
 - src: /media/destinations/tumbes/gallery-3-enhanced-20261005.webp
@@ -25,7 +26,8 @@ gallery:
 - src: /media/destinations/tumbes/gallery-6-enhanced-20261005.webp
   alt: 'На фото: город Тумбес в Перу'
 - src: /media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-13-images-0-src-enhanced-20261007.webp
-  alt: Тумбес
+  alt: "Человек на квадроцикле на песчаном пляже у Тумбеса, Перу"
+  hover: "Тумбес: поездка на квадроцикле по берегу моря"
 - src: /media/tours/peru-8d/hero-enhanced-20260930.webp
   hover: "Лима: цветочная надпись у площади с пальмами и старинными фасадами"
   alt: "Цветники с надписью Lima и исторические здания на площади Лимы, Перу"

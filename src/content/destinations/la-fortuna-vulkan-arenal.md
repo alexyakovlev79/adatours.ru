@@ -17,7 +17,8 @@ gallery:
   hover: "Ла-Фортуна: зелёная лесная долина и высокие пальмы"
   alt: "Пальмы и густой тропический лес в районе Ла-Фортуны, Коста-Рика"
 - src: /media/destinations/la-fortuna-arenal-volcano/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+  alt: "Лодки на озере под вулканом Ареналь, Коста-Рика"
+  hover: "Ареналь в Коста-Рике: лодки у зелёного берега под вулканом"
 - src: /media/destinations/la-fortuna-arenal-volcano/gallery-4-enhanced-20261003.webp
   alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
 - src: /media/tours/3-vzglyada-na-kosta-riku/itinerary-1-images-0-src-enhanced-20261007.webp
@@ -33,7 +34,8 @@ gallery:
   hover: "Ареналь: раскалённая лава на вулканическом склоне"
   alt: "Вулкан Ареналь с ярким потоком лавы на склоне над лесом, Коста-Рика"
 - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-15-images-0-src-enhanced-20261007.webp
-  alt: 'На фото: вулкан Ареналь в Коста-Рике'
+  alt: "Женщина отдыхает в бассейне с каскадами среди тропической зелени"
+  hover: "Каскадный бассейн среди растений с отдыхающей женщиной"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

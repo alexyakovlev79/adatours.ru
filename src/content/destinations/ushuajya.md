@@ -13,7 +13,8 @@ hero:
   alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
 gallery:
 - src: /media/destinations/ushuajya/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
+  alt: "Жёлтый деревянный дом с крутой крышей на фоне снежных гор Ушуайи, Аргентина"
+  hover: "Ушуайя: жёлтый фасад под треугольной крышей перед заснеженными горами"
 - src: /media/destinations/ushuajya/gallery-2-enhanced-20261002.webp
   alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
 - src: /media/destinations/ushuajya/gallery-3-enhanced-20261002.webp

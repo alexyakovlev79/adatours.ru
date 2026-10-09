@@ -150,7 +150,8 @@ itinerary:
     **Питание:** легкий завтрак, обед, ужин.
   images:
   - src: /media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: Лос Льянос
+    alt: "Стая ярко-красных птиц над травянистой равниной Лос-Льяноса, Венесуэла"
+    hover: "Лос-Льянос: красные птицы взлетают над зелёной равниной"
 - day: 11
   title: ', четверг. Лос-Льянос'
   places:
@@ -163,7 +164,8 @@ itinerary:
     **Питание:** завтрак, обед, ужин.
   images:
   - src: /media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: Лос Льянос
+    alt: "Стая ярко-красных птиц над травянистой равниной Лос-Льяноса, Венесуэла"
+    hover: "Лос-Льянос: красные птицы взлетают над зелёной равниной"
 - day: 12
   title: ', пятница. Лос-Льянос - Каракас'
   places:
@@ -177,7 +179,8 @@ itinerary:
   - src: /media/tours/soedinennye-shtaty-venesuely/archive-13-src-enhanced-20261008.webp
     alt: Каракас
   - src: /media/tours/krasota-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: Лос Льянос
+    alt: "Стая ярко-красных птиц над травянистой равниной Лос-Льяноса, Венесуэла"
+    hover: "Лос-Льянос: красные птицы взлетают над зелёной равниной"
 included:
 - 'Проживание: отели 4*, лодж и поместье.'
 - Транспорт.

@@ -79,7 +79,8 @@ itinerary:
     **Питание:** завтрак, сухой паек на обед, ужин.
   images:
   - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-04-generated-20261008-next20.webp
-    alt: Тропа у скальной стены Рораймы, Венесуэла
+    alt: "Каменистая тропа вдоль отвесной стены Рораймы над облаками, Венесуэла"
+    hover: "Рорайма: узкая тропа у скальной стены среди облаков"
 - day: 5
   title: ', пятница. Плато Рораймы'
   places:
@@ -105,7 +106,8 @@ itinerary:
     **Питание:** завтрак, сухой паек на обед, ужин.
   images:
   - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-06-generated-20261008-next20.webp
-    alt: Рорайма со стороны реки Тек, Венесуэла
+    alt: "Каменистая река Тек на фоне плоской вершины Рораймы, Венесуэла"
+    hover: "Рорайма в Венесуэле: река с камнями перед столовой горой"
 - day: 7
   title: ', воскресенье. Рорайма - Сан-Франциско-де-Юруани'
   places:
@@ -119,7 +121,8 @@ itinerary:
     **Питание:** завтрак, сухой паек на обед, ужин.
   images:
   - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-07-generated-20261008-next20.webp
-    alt: Путь от Рораймы к Парай-Тепуй, Венесуэла
+    alt: "Тропа через травянистую равнину к столовой горе Рорайма, Венесуэла"
+    hover: "Рорайма: тропа среди травы и плоская вершина вдали"
 - day: 8
   title: ', понедельник. Пуэрто-Ордас'
   places:

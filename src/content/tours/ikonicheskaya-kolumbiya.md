@@ -146,7 +146,8 @@ itinerary:
     \ канелазо.  \n**Дополнительно:** обед - $25 с человека."
   images:
   - src: /media/tours/ikonicheskaya-kolumbiya/itinerary-7-images-0-src-enhanced-20261007.webp
-    alt: Долина Кокора
+    alt: "Рельсы фуникулёра спускаются по зелёному склону к городу"
+    hover: "Путь фуникулёра среди деревьев с видом на город"
 - day: 9
   title: Перейра - Картахена - закат в бухте
   places:

@@ -13,7 +13,8 @@ hero:
   alt: "На фото: город Вальпараисо в Чили"
 gallery:
   - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: город Вальпараисо в Чили"
+    alt: "Узкая лестница между домами на склоне Вальпараисо, Чили"
+    hover: "Вальпараисо: каменные ступени между домами на крутом склоне"
   - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-2-enhanced-20261005.webp"
     alt: "На фото: город Вальпараисо в Чили"
   - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-3-enhanced-20261005.webp"

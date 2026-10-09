@@ -33,7 +33,8 @@ gallery:
 - src: /media/destinations/san-salvador/gallery-8-enhanced-20261006.webp
   alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
 - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-0-src-enhanced-20261007.webp
-  alt: 'На фото: Сан-Сальвадор - столица Сальвадора'
+  alt: "Подсвеченная площадь и собор Сан-Сальвадора на закате, Эль-Сальвадор"
+  hover: "Сан-Сальвадор: вечерняя площадь и освещённый собор на фоне гор"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

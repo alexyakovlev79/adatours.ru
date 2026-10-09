@@ -16,7 +16,8 @@ gallery:
 - src: /media/destinations/teotihuacan/gallery-2-enhanced-20261004.webp
   alt: 'На фото: пирамида Солнца в Теотиуакане в Мексике'
 - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Теотиуакан
+  alt: "Большая каменная пирамида Теотиуакана и ступенчатые платформы, Мексика"
+  hover: "Теотиуакан: пирамида за древними каменными платформами"
 facts: []
 featureBands: []
 relatedDestinations: []

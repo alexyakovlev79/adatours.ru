@@ -10,7 +10,7 @@ summary: "Национальный парк Тьерра-дель-Фуэго"
 searchAliases: ["Национальный парк Тьерра-дель-Фуего", "Национальный парк Огненная Земля", "nacionalnyj-park-terra-del-fuego"]
 themes: ["theme_wildlife", "theme_adventure"]
 hero: {"src": "/media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-01.jpg", "alt": "Национальный парк Тьерра-дель-Фуэго"}
-gallery: [{"src": "/media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-02.jpg", "alt": "Национальный парк Тьерра-дель-Фуэго"}, {"src": "/media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-03.jpg", "alt": "Национальный парк Тьерра-дель-Фуэго"}]
+gallery: [{"src": "/media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-02.jpg", "alt": "Озеро, лес и горы под облачным небом в парке Тьерра-дель-Фуэго, Аргентина", hover: "Тьерра-дель-Фуэго: спокойная вода у лесистых гор"}, {"src": "/media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-03.jpg", "alt": "Деревянный настил через прибрежную растительность в Тьерра-дель-Фуэго, Аргентина", hover: "Тьерра-дель-Фуэго: деревянная дорожка ведёт к озеру и горам"}]
 facts: []
 featureBands: []
 relatedDestinations: []

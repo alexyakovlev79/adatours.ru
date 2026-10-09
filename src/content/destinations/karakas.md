@@ -19,9 +19,11 @@ gallery:
   hover: "Каракас: высотные здания и жилые кварталы у горного склона"
   alt: "Панорама густой городской застройки Каракаса на фоне гор, Венесуэла"
 - src: /media/destinations/caracas/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: столица Венесуэлы, город Каракас'
+  alt: "Яркая настенная роспись с людьми и венесуэльскими флагами в Каракасе"
+  hover: "Каракас: цветная роспись на стене и люди перед ней"
 - src: /media/destinations/caracas/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: столица Венесуэлы, город Каракас'
+  alt: "Пятнистая дикая кошка лежит на каменной тумбе среди зелени"
+  hover: "Отдыхающая пятнистая кошка на камне под густой листвой"
 - src: /media/destinations/caracas/gallery-5-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
 - src: /media/destinations/caracas/gallery-6-enhanced-20261003.webp
@@ -31,9 +33,11 @@ gallery:
 - src: /media/destinations/caracas/gallery-8-enhanced-20261003.webp
   alt: 'На фото: столица Венесуэлы, город Каракас'
 - src: /media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-0-images-0-src-enhanced-20261007.webp
-  alt: 'На фото: столица Венесуэлы, город Каракас'
+  alt: "Городские кварталы Каракаса у зелёных горных склонов, Венесуэла"
+  hover: "Каракас: панорама многоэтажной застройки на фоне гор"
 - src: /media/tours/krasota-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp
-  alt: 'На фото: столица Венесуэлы город Каракас'
+  alt: "Светлое здание со ступенчатой башней и статуей в Каракасе, Венесуэла"
+  hover: "Каракас: высокая башня со статуей над светлым фасадом"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

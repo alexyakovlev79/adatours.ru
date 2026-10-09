@@ -20,9 +20,11 @@ gallery:
   hover: "Богота: посетители площади у каменного фасада собора"
   alt: "Люди перед собором с двумя башнями на площади Боготы, Колумбия"
 - src: /media/destinations/bogota/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: колумбийский кофе'
+  alt: "Гроздья круглых зелёных плодов среди крупных листьев"
+  hover: "Зелёные плоды на ветках среди блестящих листьев"
 - src: /media/destinations/bogota/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: город Богота, столица Колумбии'
+  alt: "Торговые тележки с зонтами на многолюдной площади Боготы, Колумбия"
+  hover: "Богота: уличные торговцы и прохожие на городской площади"
 - src: /media/destinations/bogota/gallery-6-enhanced-20261003.webp
   alt: 'На фото: город Богота, столица Колумбии'
 - src: /media/destinations/bogota/gallery-7-enhanced-20261003.webp

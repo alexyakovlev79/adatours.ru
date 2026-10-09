@@ -20,7 +20,8 @@ gallery:
   hover: "Картахена: ночная подсветка церковного фасада с часами"
   alt: "Подсвеченный каменный фасад церкви с башнями и часами в Картахене, Колумбия"
 - src: /media/destinations/cartagena/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: город Картахена в Колумбии'
+  alt: "Каменный фасад церкви и жёлтое здание с балконами в Картахене, Колумбия"
+  hover: "Картахена: церковь на площади рядом с ярким зданием"
 - src: /media/destinations/cartagena/gallery-5-enhanced-20261003.webp
   alt: 'На фото: город Картахена в Колумбии'
 - src: /media/destinations/cartagena/gallery-6-enhanced-20261003.webp

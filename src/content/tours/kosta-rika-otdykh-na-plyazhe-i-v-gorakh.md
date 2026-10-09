@@ -44,7 +44,8 @@ itinerary:
     Этот день оставлен без обязательной экскурсионной программы после прибытия.
   images:
   - src: /media/tours/kosta-rika-otdykh-na-plyazhe-i-v-gorakh/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Либерия
+    alt: "Песчаный пляж с пальмами у прозрачного бирюзового моря"
+    hover: "Бирюзовое море у светлого пляжа с пальмами"
 - day: 2
   title: 'Ринкон-де-ла-Вьеха: приключенческий день'
   places:

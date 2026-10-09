@@ -149,7 +149,8 @@ itinerary:
     Размещение в отеле 4* в Паленке.
   images:
   - src: /media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: Паленке
+    alt: "Пирамида с храмом и человек на зелёной площади Паленке, Мексика"
+    hover: "Паленке: каменный храм на фоне леса и человек на площади"
   - src: /media/tours/vsya-meksika/archive-55-src-enhanced-20261008.webp
     alt: Сан Кристобал де Лас Касас
 - day: 7
@@ -169,9 +170,11 @@ itinerary:
     Размещение в отеле 4*.
   images:
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: Кампече
+    alt: "Зелёное здание с арками и церковные башни на улице Кампече, Мексика"
+    hover: "Кампече: прохожие на улице у зелёного фасада с арками"
   - src: /media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: Паленке
+    alt: "Пирамида с храмом и человек на зелёной площади Паленке, Мексика"
+    hover: "Паленке: каменный храм на фоне леса и человек на площади"
 - day: 8
   title: Кампече - Ушмаль - Мерида, 160 км
   places:
@@ -190,7 +193,8 @@ itinerary:
     Размещение в отеле.
   images:
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: Кампече
+    alt: "Зелёное здание с арками и церковные башни на улице Кампече, Мексика"
+    hover: "Кампече: прохожие на улице у зелёного фасада с арками"
 - day: 9
   title: Мерида - Чичен-Ица - сенот - Канкун
   places:

@@ -18,9 +18,11 @@ hero:
   alt: Манта, Эквадор
 gallery:
   - src: /media/destinations/manta/featureBands-1-enhanced-20261006.webp
-    alt: Побережье Манты в Эквадоре
+    alt: "Морские птицы у жёлтого навигационного буя возле Манты, Эквадор"
+    hover: "Манта: птицы над морем рядом с жёлтым буем"
   - src: /media/destinations/manta/featureBands-2-enhanced-20261006.webp
-    alt: Город Манта на побережье
+    alt: "Рыболовные суда у песчаного берега Манты, Эквадор"
+    hover: "Манта в Эквадоре: суда на воде и человек у берега"
   - src: /media/destinations/manta/gallery-3-enhanced-20261006.webp
     alt: Манта, провинция Манаби
 relatedDestinations: []

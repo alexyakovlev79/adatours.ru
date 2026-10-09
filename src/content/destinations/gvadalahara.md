@@ -11,7 +11,8 @@ searchAliases: []
 hero: {"src":"/media/destinations/guadalajara/hero-enhanced-20261004.webp","alt":"На фото: город Гвадалахара в Мексике"}
 gallery:
 - src: /media/destinations/guadalajara/gallery-1-enhanced-20261004.webp
-  alt: 'На фото: город Гвадалахара в Мексике'
+  alt: "Двое мужчин в шляпах держат банки и жёлтые угощения в Гвадалахаре, Мексика"
+  hover: "Гвадалахара: мужчины в светлых рубашках с банками и угощениями"
 - src: /media/destinations/guadalajara/gallery-2-enhanced-20261004.webp
   alt: 'На фото: город Гвадалахара в Мексике'
 - src: /media/destinations/guadalajara/gallery-3-enhanced-20261004.webp
@@ -27,7 +28,8 @@ gallery:
 - src: /media/destinations/guadalajara/gallery-8-enhanced-20261004.webp
   alt: 'На фото: город Гвадалахара в Мексике'
 - src: /media/tours/mexico-city-keretaro/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: Гвадалахара
+  alt: "Собор с остроконечными башнями на улице Гвадалахары, Мексика"
+  hover: "Гвадалахара: собор с двумя шпилями среди деревьев и домов"
 facts: []
 featureBands: []
 relatedDestinations: []

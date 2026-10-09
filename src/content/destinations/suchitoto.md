@@ -15,9 +15,11 @@ hero:
   alt: "На фото: город Сучитото в Эль-Сальвадоре"
 gallery:
   - src: /media/destinations/suchitoto/featureBands-1-enhanced-20261006.webp
-    alt: "На фото: город Сучитото в Эль-Сальвадоре"
+    alt: "Узкая мощёная улица с белыми домами и цветами в Сучитото, Эль-Сальвадор"
+    hover: "Сучитото: улица среди белых стен, черепичных крыш и цветов"
   - src: /media/destinations/suchitoto/featureBands-2-enhanced-20261006.webp
-    alt: "На фото: город Сучитото в Эль-Сальвадоре"
+    alt: "Девочка в синем платье в горошек держит двух котят"
+    hover: "Два котёнка на руках у девочки в синем платье"
   - src: /media/destinations/suchitoto/gallery-3-enhanced-20261006.webp
     alt: "На фото: город Сучитото в Эль-Сальвадоре"
   - src: /media/destinations/suchitoto/gallery-4-enhanced-20261006.webp

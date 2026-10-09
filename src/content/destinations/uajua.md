@@ -16,13 +16,15 @@ hero:
   alt: "На фото: собор в городе Уайуа в Эль-Сальвадоре"
 gallery:
   - src: /media/destinations/uajua/featureBands-1-enhanced-20261006.webp
-    alt: "На фото: собор в городе Уайуа в Эль-Сальвадоре"
+    alt: "Белый фасад собора Уайуа с колокольней среди зелени, Эль-Сальвадор"
+    hover: "Уайуа: светлая колокольня собора на фоне облачного неба"
   - src: /media/destinations/uajua/gallery-2-enhanced-20261006.webp
     alt: "На фото: в городе Уайуа в Эль-Сальвадоре"
   - src: /media/destinations/uajua/gallery-3-enhanced-20261006.webp
     alt: "На фото: собор в городе Уайуа в Эль-Сальвадоре"
   - src: /media/destinations/uajua/featureBands-2-enhanced-20261006.webp
-    alt: "На фото: в городе Уайуа в Эль-Сальвадоре"
+    alt: "Небольшой водопад впадает в прозрачный скальный бассейн у Уайуа, Эль-Сальвадор"
+    hover: "Уайуа: струи водопада у бирюзовой воды среди скал и зелени"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

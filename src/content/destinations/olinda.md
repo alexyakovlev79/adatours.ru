@@ -13,9 +13,11 @@ hero:
   alt: Исторический центр Олинды в Пернамбуку, Бразилия
 gallery:
   - src: /media/destinations/olinda/gallery-1-enhanced-20261001.webp
-    alt: Колониальная архитектура Олинды
+    alt: "Две декоративные фигуры в ярких платьях за столом с напитками"
+    hover: "Раскрашенные фигуры за синим столиком с цветными напитками"
   - src: /media/destinations/olinda/gallery-2-enhanced-20261001.webp
-    alt: Историческая застройка Олинды
+    alt: "Люди в прибрежном бассейне и под пляжными зонтами у моря"
+    hover: "Купающиеся у моря и яркие зонты на многолюдном пляже"
 relatedDestinations:
   - destination_brazil_recife
   - destination_brazil_porto_de_galinhas

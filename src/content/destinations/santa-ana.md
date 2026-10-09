@@ -16,11 +16,13 @@ hero:
   alt: "На фото: руины Тасумаля в Эль-Сальвадоре (Чальчуапа)"
 gallery:
   - src: /media/destinations/santa-ana/featureBands-1-enhanced-20261006.webp
-    alt: "На фото: Санта Ана в Эль-Сальвадоре"
+    alt: "Лодка на озере у зелёных вулканических склонов в Эль-Сальвадоре"
+    hover: "Эль-Сальвадор: спокойное озеро и лодка на фоне гор в облаках"
   - src: /media/destinations/santa-ana/gallery-2-enhanced-20261006.webp
     alt: "На фото: Санта Ана в Эль-Сальвадоре"
   - src: /media/destinations/santa-ana/featureBands-2-enhanced-20261006.webp
-    alt: "На фото: Санта Ана в Эль-Сальвадоре"
+    alt: "Кратер вулкана Санта-Ана среди зелёных гор, Эль-Сальвадор"
+    hover: "Санта-Ана: глубокий вулканический кратер, вид сверху"
   - src: /media/destinations/santa-ana/gallery-4-enhanced-20261006.webp
     alt: "На фото: Санта Ана в Эль-Сальвадоре"
 relatedDestinations: []

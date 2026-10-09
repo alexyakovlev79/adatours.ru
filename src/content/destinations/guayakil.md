@@ -13,7 +13,8 @@ hero:
   alt: "На фото: город Гуаякиль в Зквадоре"
 gallery:
   - src: "/media/destinations/guayakil/gallery-1-enhanced-20261006.webp"
-    alt: "На фото: город Гуаякиль в Зквадоре"
+    alt: "Игуана с гребнем на спине в Гуаякиле, Эквадор"
+    hover: "Гуаякиль: крупная игуана на траве"
   - src: "/media/destinations/guayakil/gallery-2-enhanced-20261006.webp"
     alt: "На фото: город Гуаякиль в Зквадоре"
   - src: "/media/destinations/guayakil/gallery-3-enhanced-20261006.webp"

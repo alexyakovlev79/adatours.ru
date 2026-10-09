@@ -113,7 +113,8 @@ itinerary:
     Солнца", "Храм Лиственного Креста", "Шаровая игра", среди прочих.Свободное время во второй половине дня.
   images:
   - src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
-    alt: Фантастический Тур по Мексике
+    alt: "Ступенчатые каменные руины Паленке среди деревьев, Мексика"
+    hover: "Паленке в Мексике: древние стены и лестницы среди зелени"
 - day: 6
   title: Паленке - Якшилан и Бонампак – Паленке (З)
   places:
@@ -142,7 +143,8 @@ itinerary:
     днем вы прибудете в замечательный колониальный город Сан-Кристобаль.Casa del Alma Sp Cat www.casadelalma.mx 2 ночи / Юниор-люкс
   images:
   - src: /media/destinations/palenque/gallery-2-enhanced-20261004.webp
-    alt: 'На фото: древний город майя Паленке в Мексике'
+    alt: "Каменная ступенчатая пирамида Паленке с храмом наверху, Мексика"
+    hover: "Паленке в Мексике: храм на вершине каменной пирамиды"
 - day: 8
   title: Сан-Кристобал + Чамула И Зинакантан (Завтрак)
   places:
@@ -236,7 +238,8 @@ currency: USD
 priceNote: $4356
 hero:
   src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
-  alt: Фантастический Тур по Мексике
+  alt: "Ступенчатые каменные руины Паленке среди деревьев, Мексика"
+  hover: "Паленке в Мексике: древние стены и лестницы среди зелени"
 routeCountries:
 - country_mexico
 routeDestinations:

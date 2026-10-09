@@ -11,7 +11,8 @@ searchAliases: []
 hero: {"src":"/media/destinations/bocas-del-toro/hero-enhanced-20261005.webp","alt":"На фото: архипелаг Бокас дель Торо в Панаме"}
 gallery:
 - src: /media/destinations/bocas-del-toro/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
+  alt: "Разноцветные деревянные дома с балконами в Бокас-дель-Торо, Панама"
+  hover: "Бокас-дель-Торо: улица с деревянными домами и яркими балконами"
 - src: /media/destinations/bocas-del-toro/gallery-2-enhanced-20261005.webp
   alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
 - src: /media/destinations/bocas-del-toro/gallery-3-enhanced-20261005.webp

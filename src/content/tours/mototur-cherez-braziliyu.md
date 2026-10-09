@@ -131,7 +131,8 @@ itinerary:
     **Примерное расстояние:** 360 км.'
   image:
     src: /media/excursions/royal-petropolis-private-tour-full-day/gallery-2-enhanced-20261006.webp
-    alt: 'на фото: Королевский Петрополис'
+    alt: "Стеклянный Кристалл-палас с подсветкой в Петрополисе, Бразилия"
+    hover: "Петрополис: освещённый стеклянный павильон Кристалл-палас"
 - day: 9
   title: Тирадентис - Капитолио
   places:

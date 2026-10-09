@@ -15,7 +15,8 @@ gallery:
   - src: /media/destinations/lencois-maranhenses/gallery-1-enhanced-20261001.webp
     alt: Природа национального парка Ленсойс-Мараньенсес
   - src: /media/destinations/lencois-maranhenses/gallery-2-enhanced-20261001.webp
-    alt: Дюны и лагуны Ленсойс-Мараньенсес
+    alt: "Белые дюны и извилистые голубые лагуны Ленсойс-Мараньенсес, Бразилия"
+    hover: "Ленсойс-Мараньенсес: озёра между светлыми песчаными дюнами"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

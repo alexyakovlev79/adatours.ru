@@ -13,9 +13,11 @@ gallery:
 - src: /media/destinations/ciudad-perdida/gallery-1-enhanced-20261003.webp
   alt: 'На фото: затерянный город в Колумбии (Lost City)'
 - src: /media/tours/zateryannyj-gorod-v-santa-marte/itinerary-3-images-0-src-enhanced-20261007.webp
-  alt: 'на фото: Затерянный город Санта Марта'
+  alt: "Каменные террасы и лестницы Затерянного города среди горного леса, Колумбия"
+  hover: "Затерянный город в Колумбии: древние террасы на лесистом склоне"
 - src: /media/tours/zateryannyj-gorod-v-santa-marte/hero-src-enhanced-20261007.webp
-  alt: 'на фото: Затерянный город Санта Марта'
+  alt: "Каменные террасы Затерянного города на зелёном горном склоне, Колумбия"
+  hover: "Затерянный город: древние террасы и лестница среди тропического леса"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

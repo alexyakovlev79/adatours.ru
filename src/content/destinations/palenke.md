@@ -14,13 +14,17 @@ gallery:
   hover: "Паленке: древние каменные платформы, лестницы и башня"
   alt: "Каменные ступенчатые сооружения и башня среди зелени Паленке, Мексика"
 - src: /media/destinations/palenque/gallery-2-enhanced-20261004.webp
-  alt: 'На фото: древний город майя Паленке в Мексике'
+  alt: "Каменная ступенчатая пирамида Паленке с храмом наверху, Мексика"
+  hover: "Паленке в Мексике: храм на вершине каменной пирамиды"
 - src: /media/tours/meksika-fantasticheskaya/itinerary-5-images-0-src-enhanced-20261007.webp
-  alt: Паленке
+  alt: "Каменные террасы и лестницы Паленке под деревьями, Мексика"
+  hover: "Паленке: ступенчатые руины с зеленью между каменными уступами"
 - src: /media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp
-  alt: Паленке
+  alt: "Пирамида с храмом и человек на зелёной площади Паленке, Мексика"
+  hover: "Паленке: каменный храм на фоне леса и человек на площади"
 - src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
-  alt: Фантастический Тур по Мексике
+  alt: "Ступенчатые каменные руины Паленке среди деревьев, Мексика"
+  hover: "Паленке в Мексике: древние стены и лестницы среди зелени"
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -13,7 +13,8 @@ hero:
   alt: 'На фото: дельта реки Ориноко в Венесуэле'
 gallery:
 - src: /media/destinations/orinoco-delta/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: дельта реки Ориноко в Венесуэле'
+  alt: "Русло Ориноко среди густого леса и плавучие сооружения, Венесуэла"
+  hover: "Дельта Ориноко: широкая река среди леса, вид сверху"
 - src: /media/destinations/orinoco-delta/gallery-2-enhanced-20261003.webp
   alt: 'На фото: дельта реки Ориноко в Венесуэле'
 - src: /media/destinations/orinoco-delta/gallery-3-enhanced-20261003.webp

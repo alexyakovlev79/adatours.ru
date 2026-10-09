@@ -32,9 +32,11 @@ gallery:
   hover: "Флорес: вид сверху на островной город и окружающее озеро"
   alt: "Флорес с красными крышами на острове среди озёрной воды, Гватемала"
 - src: /media/tours/otkryvaya-gvatemalu/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: 'На фото: Тикаль в провинции Эль-Петен'
+  alt: "Ступенчатый храм Тикаля среди руин и тропического леса, Гватемала"
+  hover: "Тикаль в Гватемале: каменный храм над зелёной площадью"
 - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-5-images-0-src-enhanced-20261007.webp
-  alt: Тикаль
+  alt: "Высокий ступенчатый храм Тикаля среди пальм и руин, Гватемала"
+  hover: "Тикаль: каменный храм над зелёной площадью с пальмами"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

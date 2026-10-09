@@ -74,7 +74,8 @@ itinerary:
       Лима рассматривается в программе и как гастрономический город: холодное севиче, морепродукты и дегустационные сеты дополняют историческую экскурсию.
   images:
   - src: "/media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Закат над столицей Перу, городом Лима
+    alt: "Закат над высотными зданиями и городскими кварталами Лимы, Перу"
+    hover: "Лима: солнце у горизонта за высотной городской застройкой"
 - day: 3
   title: Перелет в Куско и переезд в Священную долину
   places:
@@ -125,7 +126,8 @@ itinerary:
     Вторая опция
   images:
   - src: /media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-1-src-enhanced-20261008.webp
-    alt: Морай
+    alt: "Круговые террасы Морая на зелёном горном склоне, Перу"
+    hover: "Морай в Перу: концентрические террасы среди зелёных холмов"
 - excursionRef: excursion_peru_sacred_valley_via_ferrata
   places: []
 - excursionRef: excursion_peru_sacred_valley_zipline

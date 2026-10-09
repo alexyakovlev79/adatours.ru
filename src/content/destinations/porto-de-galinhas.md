@@ -16,7 +16,8 @@ gallery:
     hover: "Порту-ди-Галиньяш: вид сверху на прибрежные рифы, пляж и поселение"
     alt: "Рифы и бирюзовые естественные бассейны у пляжа Порту-ди-Галиньяш, Бразилия"
   - src: /media/destinations/porto-de-galinhas/gallery-2-enhanced-20261001.webp
-    alt: Пляж и рифы Порту-ди-Галиньяш
+    alt: "Бирюзовое море, рифы и песчаный пляж Порту-ди-Галиньяш, Бразилия"
+    hover: "Порту-ди-Галиньяш: пляж с пальмами и рифы в прозрачной воде"
   - src: /media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-13-generated-20261008-next20.webp
     alt: Пальмы и пляж Порту-ди-Галиньяш, Бразилия
 relatedDestinations:

@@ -14,11 +14,14 @@ hero:
   alt: "Здание с арочными окнами и зубчатыми башнями, Уругвай"
 gallery:
 - src: /media/destinations/montevideo/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: в столице Уругвая городе Монтевидео'
+  alt: "Высокое здание с башней и пальмы на площади Монтевидео, Уругвай"
+  hover: "Монтевидео: городская площадь с пальмами у здания с башней"
 - src: /media/destinations/montevideo/gallery-2-enhanced-20261005.webp
-  alt: 'На фото: в столице Уругвая городе Монтевидео'
+  alt: "Уличные сувенирные прилавки с расписными зонтами в Монтевидео, Уругвай"
+  hover: "Монтевидео: прохожие у сувенирных прилавков под цветными зонтами"
 - src: /media/destinations/montevideo/gallery-3-enhanced-20261005.webp
-  alt: 'На фото: в столице Уругвая городе Монтевидео'
+  alt: "Округлые башни и арочные окна здания в Монтевидео, Уругвай"
+  hover: "Монтевидео: крупный план фасада с башнями и небольшими балконами"
 - src: /media/destinations/montevideo/gallery-4-enhanced-20261005.webp
   alt: 'На фото: в столице Уругвая городе Монтевидео'
 - src: /media/destinations/montevideo/gallery-5-enhanced-20261005.webp

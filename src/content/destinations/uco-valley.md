@@ -10,7 +10,7 @@ summary: "Долина Уко — один из самых живописных 
 searchAliases: ["dolina-uko"]
 themes: ["theme_gastronomy_wine"]
 hero: {"src": "/media/destinations/destination_argentina_dolina_uko/original-01.jpg", "alt": "Долина Уко"}
-gallery: [{"src": "/media/destinations/destination_argentina_dolina_uko/original-02.jpg", "alt": "Долина Уко"}, {"src": "/media/destinations/destination_argentina_dolina_uko/original-03.jpg", "alt": "Долина Уко"}]
+gallery: [{"src": "/media/destinations/destination_argentina_dolina_uko/original-02.jpg", "alt": "Ряды посадок на сухих холмах долины Уко, Аргентина", hover: "Долина Уко: ровные ряды зелёных посадок среди горных склонов"}, {"src": "/media/destinations/destination_argentina_dolina_uko/original-03.jpg", "alt": "Долина Уко"}]
 facts: []
 featureBands: []
 relatedDestinations: []

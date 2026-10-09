@@ -181,7 +181,8 @@ itinerary:
   text: "Свободные дни для пляжного отдыха.\n\n**Ночь:** Wyndham Tamarindo.  \n**Питание:** завтрак."
   images:
   - src: /media/destinations/playa-tamarindo/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: пляж Плайя Тамариндо в Коста-Рике'
+    alt: "Люди с досками для сёрфинга идут по пляжу Тамариндо, Коста-Рика"
+    hover: "Тамариндо: группа сёрферов на мокром песке у моря"
 - day: 13
   title: Сан-Хосе
   places:

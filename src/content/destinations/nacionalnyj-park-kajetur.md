@@ -13,7 +13,8 @@ hero:
   alt: "На фото: Национальный парк Кайетур в Гайане"
 gallery:
 - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-5-images-1-src-enhanced-20261007.webp
-  alt: Национальный парк Кайетур
+  alt: "Водопад Кайетур падает со скального уступа среди тропического леса, Гайана"
+  hover: "Кайетур в Гайане: река обрывается водопадом посреди зелёного леса"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

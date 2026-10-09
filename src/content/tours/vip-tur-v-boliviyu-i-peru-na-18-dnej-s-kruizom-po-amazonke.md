@@ -246,7 +246,8 @@ itinerary:
     местной жизнью и традиционным ткачеством.
   images:
   - src: /media/destinations/puno-i-o-titikaka/gallery-2-enhanced-20261005.webp
-    alt: 'На фото: город Пуно в Перу и озеро Титикака'
+    alt: "Музыканты с духовыми инструментами на многолюдной улице Пуно, Перу"
+    hover: "Пуно: духовой оркестр и толпа на городской улице"
 - day: 14
   title: Перелет в Уюни через Ла-Пас и размещение в Kachi Lodge
   places:
@@ -320,7 +321,8 @@ itinerary:
     Затем перелет в Лиму, встреча и трансфер в Belmond Miraflores Park. Ночь в отеле.
   images:
   - src: /media/destinations/nazca-lines-and-ballestas-islands/gallery-1-enhanced-20261005.webp
-    alt: 'На фото: линии пустыни Наска в Перу'
+    alt: "Прямые линии на сухой поверхности пустыни Наска, Перу, вид сверху"
+    hover: "Наска: пересекающиеся светлые линии среди пустынных склонов"
 - day: 18
   title: Трансфер в аэропорт Лимы и вылет домой
   places:

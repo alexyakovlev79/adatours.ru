@@ -11,11 +11,14 @@ searchAliases: []
 hero: {"src":/media/countries/paraguay/featureBands-1-enhanced-20261002.webp,"alt":"На фото: город Асунсьон - столица Парагвая"}
 gallery:
 - src: /media/destinations/asuncion/gallery-1-enhanced-20261005.webp
-  alt: 'На фото: город Асунсьон - столица Парагвая'
+  alt: "Мужчина несёт свёрток на голове мимо розовых колонн в Асунсьоне, Парагвай"
+  hover: "Асунсьон: прохожий со свёртком на голове у розового здания"
 - src: /media/destinations/asuncion/gallery-2-enhanced-20261005.webp
-  alt: 'На фото: город Асунсьон - столица Парагвая'
+  alt: "Светлый собор с двумя башнями в Асунсьоне, Парагвай"
+  hover: "Асунсьон: фасад собора с двумя башнями и арочными входами"
 - src: /media/destinations/asuncion/gallery-3-enhanced-20261005.webp
-  alt: 'На фото: город Асунсьон - столица Парагвая'
+  alt: "Белая церковь с остроконечными башнями за оградой в Асунсьоне, Парагвай"
+  hover: "Асунсьон: светлые шпили церкви среди деревьев"
 - src: /media/destinations/asuncion/gallery-4-enhanced-20261005.webp
   alt: 'На фото: город Асунсьон - столица Парагвая'
 - src: /media/destinations/asuncion/gallery-5-enhanced-20261005.webp
@@ -30,7 +33,8 @@ gallery:
   hover: "Асунсьон: городская надпись на газоне перед старинным зданием"
   alt: "Крупные буквы ASUnción перед историческим зданием и пальмами в Асунсьоне, Парагвай"
 - src: /media/tours/klassicheskij-paragvaj/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: на фото:Асунсьон
+  alt: "Панорама Асунсьона с зелёными кварталами и высотными домами, Парагвай"
+  hover: "Асунсьон: городская застройка среди деревьев"
 - src: /media/excursions/siti-tur-v-asunsone/gallery-0-src-enhanced-20261007.webp
   hover: "Асунсьон: городская панорама у широкого водного берега"
   alt: "Вид сверху на прибрежные кварталы и высотные здания Асунсьона, Парагвай"

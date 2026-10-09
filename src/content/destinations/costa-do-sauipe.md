@@ -12,13 +12,17 @@ hero:
   alt: Побережье Коста-ду-Сауипе в штате Баия
 gallery:
 - src: /media/tours/romanticheskaya-braziliya/sauipe-9-generated-20261008.webp
-  alt: Коста-ду-Сауипе — Бразилия
+  alt: "Песчаный берег с камнями и морским прибоем в Коста-ду-Сауипе, Бразилия"
+  hover: "Коста-ду-Сауипе: волны на пляже рядом с пальмовой рощей"
 - src: /media/tours/romanticheskaya-braziliya/sauipe-10-generated-20261008.webp
-  alt: Коста-ду-Сауипе — Бразилия
+  alt: "Шезлонги под пальмой на песчаном пляже Коста-ду-Сауипе, Бразилия"
+  hover: "Коста-ду-Сауипе: шезлонги в тени пальмы у моря"
 - src: /media/tours/romanticheskaya-braziliya/sauipe-11-generated-20261008.webp
-  alt: Коста-ду-Сауипе — Бразилия
+  alt: "Волны и камни на песчаном берегу Коста-ду-Сауипе, Бразилия"
+  hover: "Коста-ду-Сауипе: морской прибой у каменистого участка пляжа"
 - src: /media/tours/romanticheskaya-braziliya/sauipe-12-generated-20261008.webp
-  alt: Коста-ду-Сауипе — Бразилия
+  alt: "Автомобиль на прибрежной дороге среди пальм в Коста-ду-Сауипе, Бразилия"
+  hover: "Коста-ду-Сауипе: дорога с пальмами вдоль морского берега"
 relatedDestinations:
 - destination_brazil_salvador
 - destination_brazil_praia_do_forte

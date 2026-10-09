@@ -17,9 +17,11 @@ hero:
   alt: Лагуна Чакса, Чили
 gallery:
 - src: /media/destinations/destination_chile_laguna_miskanti/hero-generated-20261008-resumed-v1.webp
-  alt: Лагуна Мисканти, Чили
+  alt: "Лагуна Мисканти с изогнутым берегом на фоне гор, Чили"
+  hover: "Мисканти: синяя вода у каменистого берега среди чилийских гор"
 - src: /media/destinations/destination_chile_laguna_minikes/hero-generated-20261008-resumed-v1.webp
-  alt: Лагуна Миньикес, Чили
+  alt: "Синяя лагуна Миньикес среди сухих горных склонов, Чили"
+  hover: "Миньикес в Чили: озеро у подножия гор с заснеженной вершиной"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

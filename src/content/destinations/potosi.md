@@ -13,7 +13,8 @@ hero:
   alt: 'На фото: рассвет в городе Потоси в Боливии'
 gallery:
 - src: /media/destinations/potosi/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: в городе Потоси в Боливии'
+  alt: "Улица Потоси с цветными домами и горой на горизонте, Боливия"
+  hover: "Потоси: машины на узкой улице у подножия горы"
 - src: /media/destinations/potosi/gallery-2-enhanced-20261003.webp
   alt: 'На фото: в городе Потоси в Боливии'
 - src: /media/destinations/potosi/gallery-3-enhanced-20261003.webp

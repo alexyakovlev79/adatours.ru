@@ -167,7 +167,8 @@ itinerary:
     \  \n**Питание:** завтрак."
   images:
   - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: Ливингстон в Гватемале'
+    alt: "Деревянный причал и беседка над водой в Ливингстоне, Гватемала"
+    hover: "Ливингстон: причал к беседке над морем под пальмовыми ветвями"
 - day: 8
   title: Рио-Дульсе - Киригуа - Копан, Гондурас
   places:
@@ -209,7 +210,8 @@ itinerary:
     \ Barceló San Salvador.  \n**Питание:** завтрак."
   images:
   - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: Сан-Сальвадор - столица Сальвадора'
+    alt: "Подсвеченная площадь и собор Сан-Сальвадора на закате, Эль-Сальвадор"
+    hover: "Сан-Сальвадор: вечерняя площадь и освещённый собор на фоне гор"
 - day: 11
   title: Сан-Сальвадор - Ла-Уньон - Леон - Манагуа
   places:
@@ -243,7 +245,8 @@ itinerary:
     \ завтрак."
   images:
   - src: /media/destinations/managua/gallery-1-enhanced-20261005.webp
-    alt: 'На фото: столица Никарагуа. город Манагуа'
+    alt: "Двое мужчин возле синего автомобиля в Манагуа, Никарагуа"
+    hover: "Манагуа: мужчины у автомобиля, один из них поднимает руку"
 - day: 13
   title: Гранада - Тихоокеанское побережье Коста-Рики
   places:
@@ -282,7 +285,8 @@ itinerary:
     \ Arenal Paraíso Resort & Spa.  \n**Питание:** завтрак."
   images:
   - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-15-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: вулкан Ареналь в Коста-Рике'
+    alt: "Женщина отдыхает в бассейне с каскадами среди тропической зелени"
+    hover: "Каскадный бассейн среди растений с отдыхающей женщиной"
 - day: 17
   title: Ареналь - заповедник Каньо-Негро
   places:

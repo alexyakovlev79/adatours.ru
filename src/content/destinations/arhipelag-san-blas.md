@@ -23,7 +23,8 @@ gallery:
 - src: /media/destinations/san-blas-islands/gallery-6-enhanced-20261005.webp
   alt: 'На фото: острова Сан-Блас в Панаме'
 - src: /media/tours/panama-2024/itinerary-3-images-0-src-enhanced-20261007.webp
-  alt: Архипелаг Сан-Блас
+  alt: "Кокос с трубочкой на фоне пляжа с пальмами в Сан-Бласе, Панама"
+  hover: "Сан-Блас: кокосовый напиток у бирюзового моря и пальм"
 facts: []
 featureBands: []
 relatedDestinations: []

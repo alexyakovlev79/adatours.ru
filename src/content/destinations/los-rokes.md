@@ -34,7 +34,8 @@ gallery:
   hover: "Лос-Рокес в Венесуэле: морские птицы на пляже перед яхтой"
   alt: "Птицы на песчаном пляже и яхта у берега, Лос-Рокес, Венесуэла"
 - src: /media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Лос Рокес
+  alt: "Люди у бирюзового моря на песчаном пляже Лос-Рокес, Венесуэла"
+  hover: "Лос-Рокес: светлый песок и люди на берегу бирюзового моря"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

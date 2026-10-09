@@ -15,11 +15,14 @@ gallery:
   hover: "Ангра-дус-Рейс: лодки у причала и дома на зелёном склоне"
   alt: "Цветные рыбацкие лодки в гавани Ангра-дус-Рейс на фоне прибрежных домов, Бразилия"
 - src: /media/destinations/angra-dos-reis/gallery-2-enhanced-20261001.webp
-  alt: Атлантическое побережье Ангра-дус-Рейс
+  alt: "Радуга над парусными яхтами в бухте Ангра-дус-Рейс, Бразилия"
+  hover: "Ангра-дус-Рейс: яхты на воде под радугой в вечернем небе"
 - src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/angra-10-generated-20261008.webp
-  alt: Ангра-дус-Рейс — Бразилия
+  alt: "Прозрачная морская бухта у лесистого берега Ангра-дус-Рейс, Бразилия"
+  hover: "Ангра-дус-Рейс: бирюзовая вода у пляжа с пальмами и скалами"
 - src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/angra-11-generated-20261008.webp
-  alt: Ангра-дус-Рейс — Бразилия
+  alt: "Волны у песчаного берега с валунами в Ангра-дус-Рейс, Бразилия"
+  hover: "Ангра-дус-Рейс: камни на пляже у моря в вечернем свете"
 relatedDestinations:
 - destination_brazil_rio
 - destination_brazil_ilha_grande

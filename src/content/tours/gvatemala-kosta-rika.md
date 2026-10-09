@@ -132,7 +132,8 @@ itinerary:
     Ночь в Villa Maya. Питание: завтрак.'
   images:
   - src: /media/destinations/guatemala-city/gallery-2-enhanced-20261003.webp
-    alt: 'На фото: город Гватемала-Сити (столица страны)'
+    alt: "Панорама Гватемала-Сити с высотными зданиями и зелёными кварталами"
+    hover: "Гватемала-Сити: высотные дома среди зелени городских кварталов"
 - day: 6
   title: Тикаль - Гватемала-Сити
   places: []
@@ -160,7 +161,8 @@ itinerary:
     Ночь в Barcelo Guatemala City. Питание: завтрак.'
   images:
   - src: /media/destinations/guatemala-city/gallery-3-enhanced-20261003.webp
-    alt: 'На фото: город Гватемала-Сити (столица страны)'
+    alt: "Длинноволосый мужчина с седой бородой у двери"
+    hover: "Портрет бородатого мужчины рядом с дверью и кованой решёткой"
 - day: 7
   title: Гватемала-Сити - Сан-Хосе - Ла-Фортуна
   places: []
@@ -174,7 +176,8 @@ itinerary:
     Ночь в Arenal Kioro Suites & Spa, двухместный номер Standard, завтрак включен. Питание: завтрак.'
   images:
   - src: /media/destinations/guatemala-city/gallery-4-enhanced-20261003.webp
-    alt: 'На фото: город Гватемала-Сити (столица страны)'
+    alt: "Старинный светлый фасад церкви с колоннами в Гватемала-Сити"
+    hover: "Гватемала-Сити: каменные колонны и резные детали церковного фасада"
 - day: 8
   title: Ареналь - заповедник Каньо-Негро
   places: []
@@ -229,7 +232,8 @@ itinerary:
     Ночь в Shana by the Beach Resort. Питание: завтрак, обед.'
   images:
   - src: /media/destinations/la-fortuna-arenal-volcano/gallery-3-enhanced-20261003.webp
-    alt: 'На фото: Ла Фортуна и Вулкан Ареналь в Коста-Рике'
+    alt: "Лодки на озере под вулканом Ареналь, Коста-Рика"
+    hover: "Ареналь в Коста-Рике: лодки у зелёного берега под вулканом"
 - day: 11
   title: Национальный парк Мануэль Антонио
   places: []

@@ -16,7 +16,8 @@ gallery:
     hover: "Парати: старинный угловой фасад с арочными дверями и балконом"
     alt: "Белый колониальный дом с длинным кованым балконом и цветной отделкой в Парати, Бразилия"
   - src: /media/destinations/paraty/gallery-2-enhanced-20261001.webp
-    alt: Море и острова у Парати
+    alt: "Зелёные острова и изрезанное побережье у Парати, Бразилия"
+    hover: "Парати: острова и лесистые полуострова среди синего моря"
 relatedDestinations:
   - destination_brazil_rio
   - destination_brazil_buzios

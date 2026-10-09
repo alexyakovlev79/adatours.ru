@@ -20,7 +20,8 @@ gallery:
   hover: "Канкун: деревянная вышка на пляже под соломенной крышей"
   alt: "Деревянная вышка с соломенной крышей у бирюзового моря в Канкуне, Мексика"
 - src: /media/destinations/cancun/gallery-4-enhanced-20261005.webp
-  alt: 'На фото: курорт Канкун в Мексике'
+  alt: "Танцовщицы в ярких многослойных юбках на сцене в Канкуне, Мексика"
+  hover: "Канкун: сценический танец в красочных костюмах"
 - src: /media/destinations/cancun/gallery-5-enhanced-20261005.webp
   alt: 'На фото: курорт Канкун в Мексике'
 - src: /media/destinations/cancun/gallery-6-enhanced-20261005.webp

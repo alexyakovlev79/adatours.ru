@@ -12,7 +12,8 @@ hero:
   alt: Архипелаг Фернанду-ди-Норонья в Бразилии
 gallery:
 - src: /media/destinations/destination_brazil_fernando_de_noronha/noronha-v2-generated-20261008.webp
-  alt: Фернанду-ди-Норонья - Бразилия
+  alt: "Волны на песчаном пляже у скал Фернанду-ди-Нороньи, Бразилия"
+  hover: "Фернанду-ди-Норонья: бирюзовое море у пляжа с камнями"
 relatedDestinations:
 - destination_brazil_recife
 - destination_brazil_porto_de_galinhas

@@ -18,9 +18,11 @@ gallery:
   hover: "Долина Кокора: пальмы и яркие ограды на зелёном склоне"
   alt: "Высокие пальмы и цветные ограды среди зелёных холмов долины Кокора, Колумбия"
 - src: /media/tours/tur-v-kolumbiyu-za-chudesami/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: На фото:Долина Кокора
+  alt: "Туристы идут по тропе среди высоких пальм долины Кокора, Колумбия"
+  hover: "Долина Кокора: горная тропа с туристами под высокими пальмами"
 - src: /media/tours/ikonicheskaya-kolumbiya/itinerary-7-images-0-src-enhanced-20261007.webp
-  alt: Долина Кокора
+  alt: "Рельсы фуникулёра спускаются по зелёному склону к городу"
+  hover: "Путь фуникулёра среди деревьев с видом на город"
 themes:
 - theme_wildlife
 - theme_adventure

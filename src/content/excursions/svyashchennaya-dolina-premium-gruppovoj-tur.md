@@ -26,7 +26,8 @@ gallery:
     alt: "На фото: Священная Долина инков из города Куско"
   -
     src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-1-src-enhanced-20261008.webp"
-    alt: "На фото: Священная Долина инков из города Куско"
+    alt: "Круговые террасы Морая на зелёном горном склоне, Перу"
+    hover: "Морай в Перу: концентрические террасы среди зелёных холмов"
   -
     src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-2-src-enhanced-20261008.webp"
     alt: "На фото: Священная Долина инков из города Куско"

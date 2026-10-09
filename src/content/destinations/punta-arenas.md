@@ -13,7 +13,8 @@ hero:
   alt: "На фото: пингвины в Пунта Аренас в Чили (Патагония)"
 gallery:
   - src: "/media/destinations/punta-arenas/gallery-1-enhanced-20261005.webp"
-    alt: "На фото: Пунта Аренас в Чили (Патагония)"
+    alt: "Красные рыболовные суда у причала в Пунта-Аренасе, Чили"
+    hover: "Пунта-Аренас в Чили: рыболовные суда с красными корпусами"
   - src: "/media/destinations/punta-arenas/gallery-2-enhanced-20261005.webp"
     alt: "На фото: Пунта Аренас в Чили (Патагония)"
   - src: "/media/destinations/punta-arenas/gallery-3-enhanced-20261005.webp"

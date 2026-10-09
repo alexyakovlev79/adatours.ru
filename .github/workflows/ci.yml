@@ -58,8 +58,10 @@ jobs:
       - name: Verify media offload in build output
         run: |
           test -f dist/media-offload-report.json
+          cat dist/media-offload-report.json
           test ! -d dist/media
           grep -q 'https://img.adatours.ru/media/' dist/brazil/index.html
+          node --input-type=module -e "import fs from 'node:fs'; const r = JSON.parse(fs.readFileSync('dist/media-offload-report.json')); if (r.excludedBytes < 1000000000 || r.redirectedReferences < 1000) process.exit(1);"
 
       - name: Search index smoke checks
         shell: bash

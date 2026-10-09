@@ -79,6 +79,7 @@ async function copyOne(file) {
       method: 'PUT',
       headers: {
         Authorization: 'Bearer ' + token,
+        'If-None-Match': '*', // S3 rejects writes if the key was created meanwhile.
         'Content-Type': mimeType(key),
         'x-amz-meta-sha256': hash,
         'Cache-Control': /-(?:enhanced|generated)-\d{8}/.test(key)

@@ -1406,3 +1406,18 @@ Commit определяется по изменению, содержащему 
 ### P151 — завершено 09.10.2026
 
 Опубликован commit `f7a57f3cfa2fdcfe34aa539b07217a6382d8826b` в успешном deploy https://github.com/alexyakovlev79/adatours.ru/actions/runs/37959941071 (потомок `4081945f613ecac7e0633ae7f85f4c8e2332a34f`, целевые MD/entries сохранены без изменений). Штатная синхронизация `sync-tour-inventory.mjs --apply` выполнена в Actions 37958483949; финальная опись тем же генератором отражает `work: done`. Таблица проверена по всем значениям и нативной структуре: Страницы 386, 983–984; Фото 5614–5625. Старая дата 02.10.2026 и «Принята» сохранены. Новый источник содержит разные тарифы Игуасу, неясную единицу $230 Гуанабара и назначение трансфера по прилету; все 3 уточнения явно сохранены в публичных условиях для подтверждения при бронировании. Новых файлов медиа нет.
+
+
+## Уточнения Анны — 09.10.2026, подготовлено, deploy ожидается
+
+Viva Mexico: 9 самостоятельных модулей перенесены из точного Word; ночевки сохранены в туре.
+
+- `tour_source_viva_meksika` → `excursion_mexico_mexico_city_history_anthropology`, после дня 2.
+- `tour_source_viva_meksika` → `excursion_mexico_teotihuacan_guadalupe`, после дня 3.
+- `tour_source_viva_meksika` → `excursion_mexico_xochimilco_south_mexico_city`, после дня 4.
+- `tour_source_viva_meksika` → `excursion_mexico_oaxaca_walking`, после дня 6.
+- `tour_source_viva_meksika` → `excursion_mexico_monte_alban_craft_villages`, после дня 7.
+- `tour_source_viva_meksika` → `excursion_mexico_mitla_hierve_el_agua_mescal`, после дня 8.
+- `tour_source_viva_meksika` → `excursion_mexico_uxmal_cenote`, после дня 10.
+- `tour_source_viva_meksika` → `excursion_mexico_santa_barbara_cenotes`, после дня 11.
+- `tour_source_viva_meksika` → `excursion_mexico_chichen_itza_valladolid_caribbean`, после дня 12.

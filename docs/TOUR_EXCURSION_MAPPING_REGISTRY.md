@@ -1486,3 +1486,21 @@ Word: https://docs.google.com/document/d/16Yho_hI1w_jZ1yah_LrAH8cKU0V5Wddt/edit.
 | tour_colombia_highlights_7_days | excursion_colombia_guatape_rock_and_town | День 4, contentBlock 1 | canonical_excursion_linked |
 | tour_colombia_highlights_7_days | excursion_source_siti_tur_po_kartakhene | День 5, contentBlock 1 | canonical_excursion_linked |
 | tour_colombia_highlights_7_days | excursion_colombia_san_pedro_majagua_day_trip | День 6, contentBlock 1 | canonical_excursion_linked |
+
+
+## P043 — Перу и Боливия, 10 дней / 9 ночей, 10.10.2026
+
+Источник: https://drive.google.com/file/d/1cLVaZTUZWg3v12X6Kuqa8etRRaY39kfu/view (PDF). 10 обычных дней, 10 самостоятельных вставок; 5 новых модулей, 5 существующих. Условия пакета, включая обед Мачу-Пикчу и факультативные поездки, сохранены в Tour.
+
+| День | Excursion ID | Результат |
+|---|---|---|
+| 2 | `excursion_peru_lima_miraflores_casa_aliaga` | Создана |
+| 3 | `excursion_peru_cusco_coricancha_sacsayhuaman` | Создана |
+| 4 | `excursion_source_ekskursiya_v_zateryannyj_gorod_machu_pikchu` | Переиспользована |
+| 5 | `excursion_peru_sacred_valley_full_day` | Переиспользована |
+| 5 | `excursion_source_ekskursiya_na_raduzhnuyu_goru_vinikunka` | Переиспользована |
+| 6 | `excursion_peru_cusco_puno_andes_bus` | Создана |
+| 7 | `excursion_bolivia_titicaca_isla_del_sol_catamaran` | Создана |
+| 8 | `excursion_bolivia_la_paz_moon_valley_tiwanaku` | Создана |
+| 9 | `excursion_peru_paracas_nazca_full_day` | Переиспользована |
+| 10 | `excursion_lima_larco_museum_visit` | Переиспользована |

@@ -7,10 +7,11 @@ import { isActiveEntity } from '../src/lib/archive.mjs';
 import {
   countryPath, destinationCountryPath, destinationPath,
   excursionCountryPath, excursionDestinationPath, excursionGeography, excursionPath, tourExcursionPath,
-  optionalTourDestinationPath, tourCountryPath, tourDestinationPath, tourPath,
+  optionalTourDestinationPath, tourCountryPath, tourDestinationPath, tourPath, themePath,
 } from '../src/lib/routes.ts';
 import { excursionDestinationIds } from '../src/lib/destination-links.mjs';
 import { excursionIdsForTour } from '../src/lib/excursion-popularity.ts';
+import { buildInterestHub, interestsForCountry, interestTourCatalogPath } from '../src/lib/interest-model.mjs';
 import { tourHasMainCountry, tourHasMainDestination } from '../src/lib/tour-relations.ts';
 
 const dataOnly = process.argv.includes('--data-only');
@@ -23,6 +24,8 @@ const countries = collection('countries');
 const destinations = collection('destinations');
 const tours = collection('tours');
 const excursions = collection('excursions');
+const themes = collection('themes');
+const compactCountryById = new Map(JSON.parse(read('data/source-index/catalogs/countries.json')).entries.map((data) => [data.id, data]));
 const excursionById = new Map(excursions.map((data) => [data.id, data]));
 const compactExcursionById = new Map(JSON.parse(read('data/source-index/catalogs/excursions.json')).entries.map((data) => [data.id, data]));
 const countryById = new Map(countries.map((data) => [data.id, data]));
@@ -32,6 +35,7 @@ const compactById = new Map(JSON.parse(read('data/source-index/catalogs/tours.js
 const indexById = new Map(JSON.parse(read('data/source-index/index.json')).entries.map((data) => [data.id, data]));
 const futureIds = new Set();
 const counts = { countries: countries.length, destinations: destinations.length, tours: tours.length,
+  themes: themes.length, countryTheme: 0, countryThemeOutsidePreview: 0, optionalOnlyThemeCountry: 0,
   excursions: excursions.length, countryExcursion: 0, placeExcursion: 0, relatedPlaceExcursion: 0, reservedPlaceExcursion: 0, tourExcursion: 0,
   countryPlace: 0, countryTour: 0, excludedAdditionalCountryTour: 0, placeTour: 0, optionalPlaceTour: 0, reservedPlaceTour: 0 };
 const fileFor = (path) => resolve(output, `.${path}`, 'index.html');
@@ -71,6 +75,37 @@ const reverse = (from, to, catalogue) => {
   assert.ok(catalogueLinks(catalogue).has(to), `Missing catalogue relation: ${catalogue} → ${to}`);
 };
 
+// Compare complete country catalogues, so missing and foreign/archive items both fail.
+const exactCatalogue = (path, expectedIds) => {
+  if (dataOnly) return;
+  if (!expectedIds.length) {
+    assert.ok(!existsSync(fileFor(path)), `Empty country catalogue is published: ${path}`);
+    return;
+  }
+  catalogueLinks(path);
+  const found = [];
+  for (let page = 1; ; page++) {
+    const current = page === 1 ? path : `${path}page/${page}/`;
+    if (!existsSync(fileFor(current))) break;
+    found.push(...[...read(fileFor(current)).matchAll(/\bdata-catalog-item=["']([^"']+)["']/g)].map((match) => match[1]));
+  }
+  assert.equal(new Set(found).size, found.length, `Repeated country catalogue items: ${path}`);
+  assert.deepEqual([...found].sort(), [...expectedIds].sort(), `Country catalogue differs from active relations: ${path}`);
+};
+for (const country of countries) {
+  const entry = JSON.parse(read(`data/source-index/entries/${country.id}.json`));
+  for (const [label, record] of [['entry', entry], ['compact catalog', compactCountryById.get(country.id)], ['index', indexById.get(country.id)]]) {
+    assert.ok(record, `${country.id}: missing ${label}`);
+    assert.equal(record.slug, country.slug, `${country.id}: slug differs in ${label}`);
+    assert.equal(record.url, countryPath(country), `${country.id}: country URL differs in ${label}`);
+    assert.deepEqual(record.countryIds, [country.id], `${country.id}: identity differs in ${label}`);
+    assert.ok(!record.themes?.length && !record.relatedThemes?.length, `${country.id}: manual interests in ${label}`);
+  }
+  assert.ok(!country.themes?.length && !country.relatedThemes?.length, `${country.id}: manual country interests`);
+  exactCatalogue(destinationCountryPath(country), destinations.filter((place) => place.countryId === country.id).map((place) => place.id));
+  exactCatalogue(tourCountryPath(country), tours.filter((tour) => tourHasMainCountry(tour, country.id)).map((tour) => tour.id));
+  exactCatalogue(excursionCountryPath(country), excursions.filter((excursion) => excursionGeography(excursion).country.id === country.id).map((excursion) => excursion.id));
+}
 for (const place of destinations) {
   const country = countryById.get(place.countryId);
   assert.ok(country, `${place.id}: unpublished country ${place.countryId}`);
@@ -165,6 +200,33 @@ for (const tour of tours) {
     direct(tourPath(tour), excursionPath(excursion));
     reverse(excursionPath(excursion), tourPath(tour), tourExcursionPath(excursion));
     counts.tourExcursion++;
+  }
+}
+const interestCollections = { countries, tours, destinations, excursions, themes };
+for (const theme of themes) {
+  const hub = buildInterestHub(theme.id, interestCollections);
+  const root = interestTourCatalogPath(theme);
+  if (hub.allTours.length) direct(themePath(theme), root);
+  for (const row of hub.allCountries) {
+    const country = row.entry;
+    const catalog = interestTourCatalogPath(theme, country);
+    assert.ok(interestsForCountry(country.id, tours, themes).some((interest) => interest.id === theme.id), `${country.id}: asymmetric interest projection ${theme.id}`);
+    direct(countryPath(country), themePath(theme));
+    // The seven country banners remain a preview; the full catalogue exposes all countries.
+    direct(root, catalog);
+    exactCatalogue(catalog, row.tours.map((tour) => tour.id));
+    if (!dataOnly) {
+      for (let page = 1; ; page++) {
+        const current = page === 1 ? catalog : `${catalog}page/${page}/`;
+        if (!existsSync(fileFor(current))) break;
+        direct(current, countryPath(country));
+        direct(current, themePath(theme));
+        direct(current, root);
+      }
+    }
+    counts.countryTheme++;
+    if (!hub.countries.some((preview) => preview.entry.id === country.id)) counts.countryThemeOutsidePreview++;
+    if (!row.mainCount) counts.optionalOnlyThemeCountry++;
   }
 }
 console.log(JSON.stringify({ mode: dataOnly ? 'data' : 'data-and-html', ...counts,

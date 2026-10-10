@@ -25,10 +25,12 @@ interface Props {
   pagination: PaginationData;
   catalogVersion: string;
   countryContextId?: string;
+  navigationLabel?: string;
+  navigationLinks?: Array<{ label: string; href: string }>;
   variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours';
 }
 
-const { leadTitle, leadEntityId, kind, entries, title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId } = Astro.props;
+const { leadTitle, leadEntityId, kind, entries, title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, navigationLabel, navigationLinks = [] } = Astro.props;
 const eyebrow = variant === 'vip-tours' ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : 'Направления';
 const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
 const multiCountryPageCountries = variant === 'multi-country-tours'
@@ -125,6 +127,13 @@ const listSchema = {
     image={hero}
     compact={p.currentPage > 1 || (variant !== 'global-tours' && variant !== 'global-places')}
   />
+  {navigationLinks.length > 0 && (
+    <nav class="catalog-navigation container section--tight" aria-label={navigationLabel ?? 'Связанные разделы'}>
+      <ul>
+        {navigationLinks.map((link) => <li><a href={withBase(link.href)}>{link.label}</a></li>)}
+      </ul>
+    </nav>
+  )}
   {p.currentPage === 1 && presentation.editorial && (
     <EditorialStatement eyebrow={presentation.editorial.eyebrow} text={presentation.editorial.text} />
   )}
@@ -172,6 +181,15 @@ const listSchema = {
 </script>
 
 <style>
+  .catalog-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .catalog-navigation a { color: var(--color-ink); text-underline-offset: .25em; }
   .catalog-start {
     display: flex;
     align-items: center;

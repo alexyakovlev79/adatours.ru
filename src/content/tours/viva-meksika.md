@@ -128,6 +128,9 @@ itinerary:
   - Койоакан
   - Сан-Анхель
   - Мехико Сити (руины Теотихуакана)
+  images:
+  - src: /media/tours/viva-meksika/xochimilco-generated-20261010-v1.webp
+    alt: "Цветные лодки на каналах Сочимилько в Мехико"
 - excursionRef: excursion_mexico_xochimilco_south_mexico_city
   places:
   - Сочимилько
@@ -182,6 +185,9 @@ itinerary:
   - Оахака
   - Сан-Антонио-Арразола
   - Сан-Бартоло-Койотепек
+  images:
+  - src: /media/tours/viva-meksika/monte-alban-generated-20261010-v1.webp
+    alt: "Каменные платформы Монте-Альбана над долиной Оахаки"
 - excursionRef: excursion_mexico_monte_alban_craft_villages
   places:
   - Монте-Альбан
@@ -196,6 +202,9 @@ itinerary:
   - Теотитлан-дель-Валье
   - Хьерве-эль-Агуа
   - Оахака
+  images:
+  - src: /media/tours/viva-meksika/hierve-el-agua-generated-20261010-v1.webp
+    alt: "Минеральный бассейн и окаменевшие каскады Хьерве-эль-Агуа"
 - excursionRef: excursion_mexico_mitla_hierve_el_agua_mescal
   places:
   - Митла
@@ -235,6 +244,9 @@ itinerary:
   places:
   - Ушмаль
   - Мерида
+  images:
+  - src: /media/tours/viva-meksika/uxmal-generated-20261010-v1.webp
+    alt: "Орнаментированный каменный фасад Дворца Правителя в Ушмале"
 - excursionRef: excursion_mexico_uxmal_cenote
   places:
   - Ушмаль
@@ -245,6 +257,9 @@ itinerary:
   places:
   - Сеноты Санта-Барбара
   - Мерида
+  images:
+  - src: /media/tours/viva-meksika/santa-barbara-cenotes-generated-20261010-v1.webp
+    alt: "Бирюзовая вода пещерного сенота Санта-Барбары на Юкатане"
 - excursionRef: excursion_mexico_santa_barbara_cenotes
   places:
   - Сеноты Санта-Барбара
@@ -287,7 +302,7 @@ notes:
   скорректировать порядок посещений, чтобы обеспечить наилучшие впечатления.
 sourceUrl: https://brasiltours.ru/viva-meksika
 sourceSnapshot: https://drive.google.com/file/d/1pjl_9aSS2htObNukmIC6YqRXRsLUiriu/view
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-10'
 aliases:
 - viva-meksika
 hero:
@@ -356,3 +371,4 @@ priceNote: Цена на человека при размещении TPL. DBL �
 | 4 | Мехико | Casa Blanca4* |
 | 4 | Оахака |  Viktoria 4*  |
 | 3 | Мерида | Gamma 4* |
+

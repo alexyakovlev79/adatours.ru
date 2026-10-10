@@ -10,6 +10,8 @@ interface MediaItem {
   status?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
   intendedSlot?: string;
+  sourceWidth?: number;
+  sourceHeight?: number;
 }
 
 interface Props {
@@ -48,6 +50,11 @@ const orientation = layout === 'orientation';
             class:list={['media-gallery__item', `media-gallery__item--${index % 6}`]}
             data-media-status={item.status ?? 'legacy'}
             data-replacement-reason={item.replacementReason}
+            data-mobile-panorama={
+              item.sourceWidth && item.sourceHeight && item.sourceWidth * 9 > item.sourceHeight * 16
+                ? "true"
+                : undefined
+            }
             data-orientation={
               item.sourceWidth && item.sourceHeight
                 ? (item.sourceHeight > item.sourceWidth ? 'portrait' : 'landscape')
@@ -342,6 +349,13 @@ const orientation = layout === 'orientation';
       object-fit: contain;
     }
 
+    /* Mobile panoramic photos must occupy at least a 16:9 frame.
+       Narrower originals retain their full height and natural proportions. */
+    .media-gallery--orientation .media-gallery__item[data-mobile-panorama="true"] img {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 </style>
 
@@ -358,6 +372,11 @@ const orientation = layout === 'orientation';
           'data-orientation',
           img.naturalHeight > img.naturalWidth ? 'portrait' : 'landscape'
         );
+        if (img.naturalWidth * 9 > img.naturalHeight * 16) {
+          item.setAttribute('data-mobile-panorama', 'true');
+        } else {
+          item.removeAttribute('data-mobile-panorama');
+        }
       };
 
       if (img.complete) applyOrientation();

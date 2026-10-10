@@ -9,6 +9,7 @@ test('commissioned description accepts truthful mixed image origins', () => {
   const entry = valid();
   entry.media.images.push({ ...entry.media.images[0], role: 'gallery', order: 2, origin: 'anna_word_embedded' });
   entry.media.images.push({ ...entry.media.images[0], role: 'gallery', order: 3, origin: 'existing_archive_tour' });
+  entry.media.images.push({ ...entry.media.images[0], role: 'gallery', order: 4, origin: 'existing_site_asset' });
   assert.deepEqual(validateCommissionedSourceMaterials(entry), []);
 });
 test('commissioned source cannot masquerade as a supplied original', () => {

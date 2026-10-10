@@ -19,7 +19,7 @@ export function validateCommissionedSourceMaterials(entry, { repoRoot, directAss
   const images = entry.media?.images;
   if (!Array.isArray(images) || images.filter((image) => image.role === 'hero').length !== 1) fail('selected media requires exactly one hero');
   for (const image of Array.isArray(images) ? images : []) {
-    if (!['gpt_image', 'anna_word_embedded', 'existing_archive_tour'].includes(image.origin)) fail('every image needs its truthful individual origin');
+    if (!['gpt_image', 'anna_word_embedded', 'existing_archive_tour', 'existing_site_asset'].includes(image.origin)) fail('every image needs its truthful individual origin');
     if (!/^\/media\/[A-Za-z0-9_/-]+\.webp$/.test(image.url ?? '') || image.url.includes('..') || !['hero', 'gallery'].includes(image.role) || !Number.isInteger(image.order) || image.order < 1 || !image.alt?.trim()) fail('selected images need exact WebP path, role, order and alt');
     else if (repoRoot && !directAssets.has(image.url) && !fs.existsSync(path.join(repoRoot, 'public', image.url))) fail(`missing selected image ${image.url}`);
   }

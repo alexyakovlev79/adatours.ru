@@ -32,7 +32,7 @@ import {SEO_CASES,seoCountryCase,seoPlacePhrase,seoPlaceDirectionPhrase,seoInter
 import {seoCountryTitle,seoDestinationTitle,seoTourTitle,seoExcursionTitle,
  seoThemeHubTitle,seoThemeCatalogTitle,seoCountryTourCatalogTitle,
  seoCountryPlacesCatalogTitle,seoCountryExcursionsCatalogTitle,seoDestinationTourCatalogTitle,
- seoDestinationExcursionsCatalogTitle,seoExcursionTourCatalogTitle,seoPaginatedTitle
+ seoDestinationExcursionsCatalogTitle,seoExcursionTourCatalogTitle,seoPaginatedTitle,seoRelatedToursDescription
 } from '../src/lib/seo-page.mjs';
 
 test('case table covers all known countries, themes, and destinations',()=>{
@@ -47,11 +47,11 @@ test('case table covers all known countries, themes, and destinations',()=>{
  assert.equal(seoPlaceDirectionPhrase('destination_bolivia_samaipata','Самаипата'),'в Самаипату');
  assert.equal(seoPlacePhrase('destination_ecuador_galapagosskie_ostrova','Галапагосские острова'),'на Галапагосских островах');
 });
-test('missing numbers hide counted phrases and their conjunctions',()=>{
+test('zero tours show destination availability while other missing counts stay hidden',()=>{
  const one=seoCountryTitle('Перу',0,0,0);
  assert.ok(!one.includes('0 '));assert.ok(!one.includes(' и .'));
  const two=seoDestinationTitle('Самаипата','country_bolivia',0,0);
- assert.match(two,/Самаипата в Боливии: достопримечательности\./);
+ assert.match(two,/Самаипата в Боливии: достопримечательности\. Пока нет туров в это место\./);
  assert.ok(!two.includes('0 туров'));
  assert.equal(seoThemeHubTitle('Дайвинг',0),'Дайвинг — впечатления | Ada Tours');
  assert.equal(seoThemeHubTitle('Приключения',3),'Приключения — 3 тура и впечатления | Ada Tours');
@@ -97,4 +97,33 @@ test('zero counts suppress the complete numbered phrase, not just its marker',()
  assert.equal(seoFill('Путешествия и [число] тур[ов] в Южную Америку',{numbers:[0]}),'Путешествия в Южную Америку');
  assert.equal(seoFill('Бразилия, Аргентина и еще [22] стран[ы]',{countries:2}),'Бразилия, Аргентина');
  assert.ok(!seoFill('[число] VIP и Luxury тур[ов] по Южной Америке',{numbers:[0]}).includes('0'));
+});
+
+test('availability follows active related tour counts for places and excursions',()=>{
+ const placeTitle=seoDestinationTitle('Самаипата','country_bolivia',2,0);
+ assert.match(placeTitle,/2 экскурсии\. Пока нет туров в это место\./);
+ assert.ok(!placeTitle.includes('0 туров'));
+ for(const count of [1,2,5,21]) {
+  const title=seoDestinationTitle('Самаипата','country_bolivia',0,count);
+  assert.ok(!title.includes('Пока нет'));
+  assert.ok(title.includes(seoCountLabel(count,['тур','тура','туров'])));
+ }
+ const excursion={title:'Парк птиц',priceFrom:51,currency:'USD'};
+ assert.match(seoExcursionTitle(excursion,'country_brazil',undefined,undefined,0),
+  /цена от \$51\. Пока нет туров с этой экскурсией \| Ada Tours$/);
+ for(const count of [undefined,1,2,5]) {
+  assert.ok(!seoExcursionTitle(excursion,'country_brazil',undefined,undefined,count).includes('Пока нет'));
+ }
+ assert.equal(seoRelatedToursDescription('Описание места.',0,'destination'),
+  'Описание места. Пока нет туров в это место.');
+ assert.equal(seoRelatedToursDescription('Описание экскурсии',0,'excursion'),
+  'Описание экскурсии. Пока нет туров с этой экскурсией.');
+ assert.equal(seoRelatedToursDescription('Что посмотреть?',0,'destination'),
+  'Что посмотреть? Пока нет туров в это место.');
+ assert.equal(seoRelatedToursDescription('',0,'excursion'),'Пока нет туров с этой экскурсией.');
+ for(const kind of ['destination','excursion']) {
+  for(const count of [undefined,1,2,5]) {
+   assert.equal(seoRelatedToursDescription('Исходное описание.',count,kind),'Исходное описание.');
+  }
+ }
 });

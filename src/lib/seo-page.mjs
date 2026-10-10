@@ -16,7 +16,8 @@ export function seoCountryTitle(name,attractions,excursions,tours) {
 export function seoDestinationTitle(name,countryId,excursions,tours) {
  const inCountry=seoCountryCase(countryId,'prepositional');
  const visible=combine(['достопримечательности',quantity(excursions,'excursion'),quantity(tours,'tour')]);
- return name+(inCountry?' в '+inCountry:'')+': '+visible+'. Цены '+year()+' принимающего туроператора Ada Tours';
+ const availability=tours===0?' Пока нет туров в это место.':'';
+ return name+(inCountry?' в '+inCountry:'')+': '+visible+'.'+availability+' Цены '+year()+' принимающего туроператора Ada Tours';
 }
 function priceFrom(price,currency) {
  const n=Number(price);
@@ -31,11 +32,19 @@ export function seoTourTitle(d) {
  return named+(price?' по цене '+price:'')+' в '+year()+
   ' от туроператора с русскоговорящими гидами | Ada Tours';
 }
-export function seoExcursionTitle(d,countryId,destinationId,destinationName) {
+export function seoExcursionTitle(d,countryId,destinationId,destinationName,tours) {
  const where=destinationId&&destinationName?seoPlacePhrase(destinationId,destinationName):'';
  const country=seoCountryName(countryId);
  const price=priceFrom(d.priceFrom,d.currency);
- return d.title+(where?' '+where:'')+(country?', '+country:'')+(price?', цена '+price:'')+' | Ada Tours';
+ return d.title+(where?' '+where:'')+(country?', '+country:'')+(price?', цена '+price:'')+
+  (tours===0?'. Пока нет туров с этой экскурсией':'')+' | Ada Tours';
+}
+/** Only active related tours determine availability; page copy remains independent. */
+export function seoRelatedToursDescription(description,tours,kind) {
+ if(tours!==0)return description;
+ const copy=(description||'').trim();
+ const status=kind==='excursion'?'Пока нет туров с этой экскурсией.':'Пока нет туров в это место.';
+ return copy?copy+(/[.!?…]$/u.test(copy)?' ':'. ')+status:status;
 }
 export function seoThemeHubTitle(name,tourCount) {
  if(!(tourCount>0))return name+' — впечатления | Ada Tours';

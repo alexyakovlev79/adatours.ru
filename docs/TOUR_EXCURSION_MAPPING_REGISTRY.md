@@ -1563,3 +1563,8 @@ Word: https://docs.google.com/document/d/16Yho_hI1w_jZ1yah_LrAH8cKU0V5Wddt/edit.
 | `tour_brazil_rio_four_days` | `excursion_rio_sugarloaf_urca_four_hours` | После дня 2 | Включено |
 | `tour_brazil_rio_four_days` | `excursion_rio_corcovado_tijuca_four_hours` | После дня 3 | Включено |
 | `tour_brazil_rio_four_days` | `excursion_rio_rocinha_private_walk` | После дня 3 | Факультативно, оплачивается отдельно |
+
+
+## P096 · tour_brazil_best_rio_express_six_days · 2026-10-11
+
+6 numbered days; 3 modules on original positions: after day 2 `excursion_rio_corcovado_train_christ`, after day 3 `excursion_rio_sugarloaf_urca_four_hours`, after day 4 `excursion_angra_ilha_grande_day_trip_from_rio`. Numbered days retain meals, hotel nights, transfer and tour-specific panorama details. Boat module is a distinct guided six-hour program without unsupported lunch or Blue Lagoon stops. All 10 hero/program images are distinct. Content prepared; publication tracked in exact entry and Drive inventory.

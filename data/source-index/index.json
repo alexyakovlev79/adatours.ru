@@ -5,12 +5,12 @@
       "types": {
         "country": 24,
         "destination": 837,
-        "tour": 364,
-        "excursion": 284
+        "tour": 365,
+        "excursion": 285
       },
       "media": {
         "ready": 929,
-        "existing_enhanced_preserved": 67,
+        "existing_enhanced_preserved": 69,
         "generated": 466,
         "provided_originals": 47
       },
@@ -18,8 +18,8 @@
       "activeTypes": {
         "country": 24,
         "destination": 837,
-        "tour": 328,
-        "excursion": 283
+        "tour": 329,
+        "excursion": 284
       },
       "archivedTypes": {
         "tour": 36,
@@ -31189,7 +31189,10 @@
         "theme_culture",
         "theme_wildlife"
       ],
-      "status": "approved"
+      "status": "approved",
+      "relatedDestinationIds": [
+        "destination_brazil_tijuca_national_park"
+      ]
     },
     {
       "id": "destination_mexico_santa_barbara_cenotes",
@@ -48795,6 +48798,74 @@
         "theme_culture"
       ],
       "status": "approved"
+    },
+    {
+      "id": "tour_brazil_best_rio_express_six_days",
+      "type": "tour",
+      "name": "Лучшее из Рио-де-Жанейро — экспресс: 6 дней и тропические острова",
+      "url": "/brazil/tour/best-of-rio-express-six-days/",
+      "slug": "best-of-rio-express-six-days",
+      "contentPath": "src/content/tours/best-of-rio-express-six-days.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_rio",
+        "destination_brazil_tijuca_national_park",
+        "destination_brazil_angra_dos_reis",
+        "destination_brazil_ilha_grande"
+      ],
+      "sourceUrl": null,
+      "themes": [
+        "theme_wildlife"
+      ],
+      "primaryThemes": [
+        "theme_culture",
+        "theme_beach"
+      ],
+      "routeCountryIds": [
+        "country_brazil"
+      ],
+      "routeDestinationIds": [
+        "destination_brazil_rio",
+        "destination_brazil_tijuca_national_park",
+        "destination_brazil_angra_dos_reis",
+        "destination_brazil_ilha_grande"
+      ],
+      "status": "approved",
+      "aliases": [
+        "Best of Rio Express",
+        "Лучшее из Рио экспресс",
+        "6 дней в Рио"
+      ],
+      "relatedDestinationIds": [],
+      "entryPath": "data/source-index/entries/tour_brazil_best_rio_express_six_days.json"
+    },
+    {
+      "id": "excursion_angra_ilha_grande_day_trip_from_rio",
+      "type": "excursion",
+      "name": "Тропические острова: Ангра-дус-Рейс и Илья-Гранди из Рио",
+      "url": "/brazil/angra-dos-reis/angra-ilha-grande-day-trip-from-rio/",
+      "slug": "angra-ilha-grande-day-trip-from-rio",
+      "contentPath": "src/content/excursions/angra-ilha-grande-day-trip-from-rio.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_angra_dos_reis"
+      ],
+      "sourceUrl": null,
+      "themes": [
+        "theme_beach",
+        "theme_wildlife"
+      ],
+      "status": "approved",
+      "aliases": [],
+      "relatedDestinationIds": [
+        "destination_brazil_ilha_grande",
+        "destination_brazil_rio"
+      ],
+      "entryPath": "data/source-index/entries/excursion_angra_ilha_grande_day_trip_from_rio.json"
     }
   ]
 }

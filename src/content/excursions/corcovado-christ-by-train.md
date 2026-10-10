@@ -7,7 +7,8 @@ title: 'Корковаду и Христос-Искупитель: подъем 
 country: country_brazil
 destination: destination_brazil_rio
 destinationName: Рио-де-Жанейро
-relatedDestinations: []
+relatedDestinations:
+- destination_brazil_tijuca_national_park
 themes:
 - theme_culture
 - theme_wildlife

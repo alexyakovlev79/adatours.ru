@@ -8,7 +8,7 @@ searchAliases: []
 country: "country_argentina"
 destination: "destination_argentina_puerto_iguasu"
 destinationName: "Пуэрто Игуасу"
-relatedDestinations: []
+relatedDestinations: ["destination_argentina_garganta_del_diablo"]
 duration: "6 часов"
 language: []
 priceFrom: 123

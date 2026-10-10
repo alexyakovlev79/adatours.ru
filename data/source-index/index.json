@@ -3,22 +3,22 @@
     "schemaVersion": 1,
     "counts": {
       "types": {
-        "excursion": 237,
-        "tour": 348,
-        "destination": 745,
+        "excursion": 238,
+        "tour": 349,
+        "destination": 747,
         "country": 24
       },
       "media": {
         "ready": 833,
         "generated": 449,
         "provided_originals": 27,
-        "existing_enhanced_preserved": 45
+        "existing_enhanced_preserved": 49
       },
       "rawDonorUrls": 694,
       "activeTypes": {
-        "excursion": 236,
-        "tour": 312,
-        "destination": 745,
+        "excursion": 237,
+        "tour": 313,
+        "destination": 747,
         "country": 24
       },
       "archivedTypes": {
@@ -65,7 +65,7 @@
       }
     },
     "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
-    "entityCount": 1354
+    "entityCount": 1358
   },
   "entries": [
     {
@@ -24189,6 +24189,9 @@
       "legacyUrls": [
         "/ekskursii/jekskursija-v-park-ptic/",
         "/braziliya/foz-do-iguasu/jekskursija-v-park-ptic/"
+      ],
+      "relatedDestinationIds": [
+        "destination_brazil_parque_das_aves"
       ]
     },
     {
@@ -24235,6 +24238,9 @@
       "legacyUrls": [
         "/ekskursii/jekskursija-na-argentinskie-vodopady/",
         "/argentina/puerto-iguasu/jekskursija-na-argentinskie-vodopady/"
+      ],
+      "relatedDestinationIds": [
+        "destination_argentina_garganta_del_diablo"
       ]
     },
     {
@@ -43176,6 +43182,113 @@
         "theme_adventure"
       ],
       "status": "approved"
+    },
+    {
+      "id": "destination_argentina_garganta_del_diablo",
+      "type": "destination",
+      "name": "Глотка Дьявола в Игуасу",
+      "url": "/argentina/place/garganta-del-diablo/",
+      "slug": "garganta-del-diablo",
+      "contentPath": "src/content/destinations/garganta-del-diablo.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_garganta_del_diablo"
+      ],
+      "sourceUrl": null,
+      "themes": [
+        "theme_wildlife"
+      ],
+      "status": "approved",
+      "relatedDestinationIds": [
+        "destination_argentina_puerto_iguasu"
+      ],
+      "destinationType": "natural_area",
+      "entryPath": "data/source-index/entries/destination_argentina_garganta_del_diablo.json"
+    },
+    {
+      "id": "destination_brazil_parque_das_aves",
+      "type": "destination",
+      "name": "Парк птиц в Игуасу",
+      "url": "/brazil/place/parque-das-aves/",
+      "slug": "parque-das-aves",
+      "contentPath": "src/content/destinations/parque-das-aves.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_parque_das_aves"
+      ],
+      "sourceUrl": null,
+      "themes": [
+        "theme_wildlife"
+      ],
+      "status": "approved",
+      "relatedDestinationIds": [
+        "destination_brazil_iguacu"
+      ],
+      "destinationType": "natural_area",
+      "entryPath": "data/source-index/entries/destination_brazil_parque_das_aves.json"
+    },
+    {
+      "id": "excursion_iguazu_argentine_asado_wine",
+      "type": "excursion",
+      "name": "Аргентинское асадо с вином в программе Игуасу",
+      "url": "/brazil/foz-do-iguacu/argentine-asado-wine-evening/",
+      "slug": "argentine-asado-wine-evening",
+      "contentPath": "src/content/excursions/argentine-asado-wine-evening.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_iguacu"
+      ],
+      "sourceUrl": null,
+      "themes": [
+        "theme_gastronomy_wine"
+      ],
+      "status": "approved",
+      "relatedDestinationIds": [],
+      "entryPath": "data/source-index/entries/excursion_iguazu_argentine_asado_wine.json"
+    },
+    {
+      "id": "tour_iguazu_incentive_3_days",
+      "type": "tour",
+      "name": "Игуасу за 3 дня: две стороны водопадов и Macuco Safari",
+      "url": "/brazil/tour/iguazu-incentive-3-days/",
+      "slug": "iguazu-incentive-3-days",
+      "contentPath": "src/content/tours/iguazu-incentive-3-days.md",
+      "countryIds": [
+        "country_brazil",
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_brazil_iguacu",
+        "destination_brazil_parque_das_aves",
+        "destination_argentina_puerto_iguasu",
+        "destination_argentina_garganta_del_diablo"
+      ],
+      "sourceUrl": null,
+      "primaryThemes": [
+        "theme_wildlife",
+        "theme_adventure"
+      ],
+      "themes": [
+        "theme_culture",
+        "theme_gastronomy_wine"
+      ],
+      "status": "approved",
+      "routeCountryIds": [
+        "country_brazil"
+      ],
+      "routeDestinationIds": [
+        "destination_brazil_iguacu",
+        "destination_brazil_parque_das_aves",
+        "destination_argentina_puerto_iguasu",
+        "destination_argentina_garganta_del_diablo"
+      ],
+      "entryPath": "data/source-index/entries/tour_iguazu_incentive_3_days.json"
     }
   ]
 }

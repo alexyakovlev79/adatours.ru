@@ -8,7 +8,7 @@ searchAliases: []
 country: "country_brazil"
 destination: "destination_brazil_iguacu"
 destinationName: "Фоз-ду-Игуасу"
-relatedDestinations: []
+relatedDestinations: ["destination_brazil_parque_das_aves"]
 language: []
 priceFrom: 50
 currency: "USD"

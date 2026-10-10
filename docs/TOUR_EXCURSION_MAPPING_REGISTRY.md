@@ -1538,3 +1538,16 @@ Word: https://docs.google.com/document/d/16Yho_hI1w_jZ1yah_LrAH8cKU0V5Wddt/edit.
 | `tour_colombia_explorer_9_days` | `excursion_colombia_guatape_rock_and_town` | После дня 6 | Переиспользована |
 | `tour_colombia_explorer_9_days` | `excursion_source_siti_tur_po_kartakhene` | После дня 7 | Переиспользована |
 | `tour_colombia_explorer_9_days` | `excursion_colombia_san_pedro_majagua_day_trip` | После дня 8 | Переиспользована |
+
+
+## P055: Южная Бразилия VIP, 7 дней / 6 ночей · 10.10.2026
+
+Тур: `tour_brazil_southern_vip_7_days`. Источник: https://docs.google.com/document/d/1WLLe6iOY4dkgnQbQl9oiK31QweUUA-rq/edit. Полный Word-проход: 7 обычных дней, 5 самостоятельных экскурсионных модулей, 6 канонических опубликованных мест. Прогулка по виноградникам относится к проживанию; вертолет является трансфером.
+
+| tour_id | excursion_id | Позиция | Канонизация |
+|---|---|---|---|
+| `tour_brazil_southern_vip_7_days` | `excursion_brazil_bento_vineyard_atv` | После дня 2 | Создана из самостоятельного блока Word; excursionRef |
+| `tour_brazil_southern_vip_7_days` | `excursion_brazil_gramado_private_full_day` | После дня 3 | Создана из самостоятельного блока Word; excursionRef |
+| `tour_brazil_southern_vip_7_days` | `excursion_brazil_itaimbezinho_full_day` | После дня 4 | Создана из самостоятельного блока Word; excursionRef |
+| `tour_brazil_southern_vip_7_days` | `excursion_brazil_cambara_balloon_picnic` | После дня 5 | Создана из самостоятельного блока Word; excursionRef |
+| `tour_brazil_southern_vip_7_days` | `excursion_brazil_florianopolis_private_city` | После дня 7 | Создана из самостоятельного блока Word; excursionRef |

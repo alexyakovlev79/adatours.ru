@@ -136,7 +136,7 @@ itinerary:
   - Бухта Пост-Офис
   - Мирадор-де-ла-Баронесса
   images:
-  - src: https://brasiltours.ru/image/galapagos2.png
+  - src: /media/excursions/ostrov-bartolome-morskaya-ekskursiya/hero-src-enhanced-20261007.webp
     alt: 'на фото: Морские львы на Галапагоских островах, Эквадор'
 - day: 3
   title: Остров Исабела

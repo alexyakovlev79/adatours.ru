@@ -52,7 +52,7 @@ durationNights: 13
 priceFrom: 4375
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/argentina/new-photos/florian-delee-sgq-0qddxs4-unsplash.jpg
+  src: /media/destinations/el-calafate/hero-enhanced-20260930.webp
   alt: 'На фото: ледник Перито Морено в Патагонии, Аргентина'
 lead: 'За одну поездку вы пройдете через очень разные природные зоны Аргентины: от Буэнос-Айреса к ледникам
   Патагонии, проливу Бигль, озерам Барилоче и тропикам Игуасу. Маршрут дает увидеть страну не одним коротким

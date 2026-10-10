@@ -559,7 +559,7 @@ itinerary:
   - Мыс Корморан
   - Корона Дьявола
   images:
-  - src: https://brasiltours.ru/image/countries/equador/galap-islands.jpg
+  - src: /media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-0-src-enhanced-20261007.webp
     alt: 'На фото: олуши с Галапагосских островов, Эквадор'
 - day: 17
   title: 'Эспаньола: мыс Суарес и бухта Гарднер'

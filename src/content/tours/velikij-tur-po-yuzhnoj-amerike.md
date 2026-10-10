@@ -113,7 +113,7 @@ durationNights: 13
 priceFrom: 7336
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/peru/amelia-cui-sytmtggnxe0-unsplash-22.jpg
+  src: /media/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej/itinerary-5-images-0-src-enhanced-20261007.webp
   alt: Мачу-Пикчу, Перу - затерянный город инков, чудо света
 lead: За 14 дней маршрут проходит через Перу, Боливию и Чили. Путешествие начинается у Тихого океана в Лиме,
   затем поднимается в Анды к Куско и Мачу-Пикчу, проходит через озеро Титикака и Ла-Пас, выходит на солончак
@@ -160,7 +160,7 @@ itinerary:
 
     После экскурсии возвращение в отель.'
   images:
-  - src: https://brasiltours.ru/image/countries/peru/prezind-palace-lima.png
+  - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: Пласа-Майор (Главная площадь), Лима, Перу — колониальная архитектура
 - day: 3
   title: Лима - Куско

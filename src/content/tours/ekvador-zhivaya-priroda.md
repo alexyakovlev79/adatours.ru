@@ -746,7 +746,7 @@ updatedAt: '2026-10-10'
 aliases:
 - ekvador-zhivaya-priroda
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/quito-23.jpg
+  src: /media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-0-images-0-src-enhanced-20261007.webp
   alt: Кито, Эквадор
 priceNote: 'Цена на человека при размещении TPL: $7443; DBL: $7999; SGL при поездке одного человека: $12775.
   Доплата за одноместное размещение при группе от 2 человек: $1546.'

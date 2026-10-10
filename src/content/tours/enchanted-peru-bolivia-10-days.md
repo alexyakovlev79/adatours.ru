@@ -59,7 +59,7 @@ primaryThemes:
 - theme_wildlife
 themes: []
 audiences: []
-format: Индивидуальные трансферы, экскурсии по программе и поездка на катамаране
+format: "Частный + катамаран"
 durationDays: 10
 durationNights: 9
 route:

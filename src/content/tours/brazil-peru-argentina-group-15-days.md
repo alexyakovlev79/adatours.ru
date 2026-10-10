@@ -46,7 +46,7 @@ primaryThemes:
 themes: []
 audiences:
 - Группы 10–20 человек
-format: Групповая программа для 10–20 человек
+format: "Группа: 10–20 чел."
 durationDays: 15
 durationNights: 14
 route:

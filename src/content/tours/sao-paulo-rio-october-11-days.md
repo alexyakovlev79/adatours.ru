@@ -18,7 +18,7 @@ primaryThemes:
 - theme_culture
 themes:
 - theme_beach
-format: Программа для группы 22 человека с индивидуальными трансферами и экскурсиями
+format: "Группа: 22 человека"
 durationDays: 11
 durationNights: 10
 route:

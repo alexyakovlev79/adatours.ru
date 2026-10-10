@@ -22,7 +22,7 @@ primaryThemes:
 - theme_beach
 themes: []
 audiences: []
-format: Индивидуальные трансферы и экскурсии; общий катер на острова Росарио
+format: "Частный + общий катер"
 durationDays: 5
 durationNights: 4
 route:

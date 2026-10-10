@@ -23,7 +23,7 @@ themes:
 - theme_gastronomy_wine
 audiences:
 - Корпоративные группы
-format: Групповая incentive-программа
+format: "Инсентив в группе"
 durationDays: 3
 durationNights: 2
 route:

@@ -34,7 +34,7 @@ themes:
 - theme_adventure
 - theme_wildlife
 audiences: []
-format: Индивидуальное путешествие с англоговорящими гидами
+format: "Частный тур"
 durationDays: 11
 durationNights: 10
 route:

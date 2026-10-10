@@ -35,7 +35,7 @@ primaryThemes:
 - theme_diving
 - theme_wildlife
 themes: []
-format: Групповой дайвинг-тур с проживанием в отеле
+format: "Дайвинг в группе"
 durationDays: 4
 durationNights: 3
 route:

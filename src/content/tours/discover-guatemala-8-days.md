@@ -36,7 +36,7 @@ primaryThemes:
 themes:
 - theme_wildlife
 audiences: []
-format: Выезды по субботам; регулярный сервис
+format: "Заезды по субботам"
 durationDays: 8
 durationNights: 7
 route:

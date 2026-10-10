@@ -49,7 +49,7 @@ themes:
 audiences:
 - couples
 - groups
-format: Групповой тур от 2 до 16 человек; индивидуальный тур
+format: "Группа / частный тур"
 durationDays: 12
 durationNights: 11
 route:

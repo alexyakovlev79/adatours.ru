@@ -52,7 +52,7 @@ const stats = [
     value: String(routePointCount),
     label: pluralRu(routePointCount, 'точка маршрута', 'точки маршрута', 'точек маршрута'),
   },
-  d.format ? { value: d.format, label: 'формат' } : null,
+  d.format ? { value: d.format, label: 'формат', kind: 'format' as const } : null,
 ].filter(Boolean);
 
 // Media QA status must never silently remove a source image from the page.
@@ -225,3 +225,4 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   .tour-destinations ul { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 0; padding: 0; list-style: none; }
   .tour-destinations a { text-decoration: underline; text-underline-offset: .2em; }
 </style>
+

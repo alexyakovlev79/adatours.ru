@@ -28,7 +28,7 @@ primaryThemes:
 themes:
 - theme_adventure
 audiences: []
-format: Экскурсии с русскоговорящим гидом; индивидуальный трансфер при отъезде
+format: "Экскурсии + трансферы"
 durationDays: 3
 durationNights: 2
 route:

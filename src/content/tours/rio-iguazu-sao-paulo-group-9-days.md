@@ -23,7 +23,7 @@ themes:
 audiences:
 - groups
 - mice
-format: 'Групповая программа: 40 человек + 1 FOC'
+format: "Группа: 40 + 1 FOC"
 durationDays: 9
 durationNights: 8
 route:

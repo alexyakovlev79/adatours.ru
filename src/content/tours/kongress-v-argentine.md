@@ -16,7 +16,7 @@ destinations:
 audiences:
   - corporate
   - mice
-format: "Корпоративный"
+format: "Для компаний"
 durationDays: 5
 durationNights: 4
 route:

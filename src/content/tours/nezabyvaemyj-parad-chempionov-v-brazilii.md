@@ -243,7 +243,7 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_buzios
-format: Групповой тур с русскоговорящим гидом
+format: "Групповой тур"
 primaryThemes:
 - theme_events
 - theme_beach

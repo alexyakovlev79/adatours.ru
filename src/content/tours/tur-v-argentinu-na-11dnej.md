@@ -38,7 +38,7 @@ routeDestinations:
 audiences:
   - private
   - luxury
-format: "Индивидуальный VIP-тур"
+format: "Частный VIP-тур"
 durationDays: 11
 durationNights: 10
 route:

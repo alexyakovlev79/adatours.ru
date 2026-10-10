@@ -33,7 +33,7 @@ primaryThemes:
 themes:
   - "theme_culture"
 audiences: []
-format: "Индивидуальный маршрут с природными экскурсиями и чартерным перелетом"
+format: "Частный тур"
 durationDays: 8
 durationNights: 7
 route:

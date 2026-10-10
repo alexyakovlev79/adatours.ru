@@ -26,7 +26,7 @@ routeDestinations:
 primaryThemes: [theme_culture, theme_wildlife]
 themes: []
 audiences: []
-format: Групповые экскурсии SIB в Рио и индивидуальные трансферы
+format: "Группа + трансферы"
 durationDays: 8
 durationNights: 7
 route: [Рио-де-Жанейро, Фоз-ду-Игуасу, Аргентинская сторона Игуасу]

@@ -48,7 +48,7 @@ primaryThemes:
 themes:
 - theme_fishing
 audiences: []
-format: Природное путешествие
+format: "Природный тур"
 durationDays: 8
 durationNights: 7
 route:

@@ -19,7 +19,7 @@ primaryThemes:
 themes:
 - theme_wildlife
 audiences: []
-format: Индивидуальные трансферы; экскурсии с русскоговорящим гидом
+format: "Экскурсии + трансферы"
 durationDays: 4
 durationNights: 3
 route:

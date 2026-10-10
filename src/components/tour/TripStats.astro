@@ -2,6 +2,7 @@
 interface Stat {
   value: string;
   label: string;
+  kind?: 'format';
 }
 interface Props {
   stats: Stat[];
@@ -13,7 +14,7 @@ const { stats, variant = 'default' } = Astro.props;
 <section class="stats" data-variant={variant}>
   <div class="stats__inner" data-count={stats.length} style={`--stats-count: ${stats.length}`}>
     {stats.map((stat) => (
-      <div class="stat">
+      <div class:list={['stat', { 'stat--format': stat.kind === 'format' }]}>
         <strong>{stat.value}</strong>
         <span>{stat.label}</span>
       </div>
@@ -309,4 +310,25 @@ const { stats, variant = 'default' } = Astro.props;
       text-wrap: balance;
     }
   }
+  /* Short tour format names use a readable text scale, separate from numbers. */
+  .stats[data-variant="default"] .stat--format strong {
+    font-size: clamp(1rem, 1.6vw, 1.5rem);
+    line-height: 1.15;
+    letter-spacing: -.025em;
+    overflow-wrap: normal;
+    hyphens: none;
+    white-space: normal;
+    text-wrap: balance;
+  }
+
+  @media (max-width: 760px) {
+    .stats[data-variant="default"] .stat--format {
+      padding-inline: 12px;
+    }
+
+    .stats[data-variant="default"] .stat--format strong {
+      font-size: clamp(1rem, 4.2vw, 1.35rem);
+    }
+  }
 </style>
+

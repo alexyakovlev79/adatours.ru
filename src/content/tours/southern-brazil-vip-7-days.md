@@ -24,7 +24,7 @@ themes:
 - theme_culture
 audiences:
 - VIP
-format: Частный тур для 2 пассажиров с англоговорящим гидом
+format: "Частный тур на двоих"
 durationDays: 7
 durationNights: 6
 route:

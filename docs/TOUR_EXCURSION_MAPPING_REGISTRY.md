@@ -1421,3 +1421,8 @@ Viva Mexico: 9 самостоятельных модулей перенесен�
 - `tour_source_viva_meksika` → `excursion_mexico_uxmal_cenote`, после дня 10.
 - `tour_source_viva_meksika` → `excursion_mexico_santa_barbara_cenotes`, после дня 11.
 - `tour_source_viva_meksika` → `excursion_mexico_chichen_itza_valladolid_caribbean`, после дня 12.
+
+
+## P005 — Argentina Experience, 10.10.2026
+
+`tour_argentina_experience_6_days`: 5 самостоятельных модулей, 4 новых, 1 существующий (Колония из Буэнос-Айреса). Word полностью сверен; generic продукты с исключённым обедом, другим залом танго или другим составом услуг не подставлены. Модули связаны через `excursionRef` после дней 2, 3, 4 и 5. Основные места: Буэнос-Айрес, Тигре, Колония-дель-Сакраменто, Санта-Сусана. Сан-Исидро и конкретные городские районы не гарантируются источником.

@@ -676,7 +676,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
    * follow its own text; any unused space is below the shorter column.
    *
    * Keep media as a sibling of <details> to coordinate the outer cards.
-   * Mobile stays single-column with original image aspect ratios.
+   * Mobile stays single-column and crops only images outside its height limits.
    */
 
   @media (min-width: 1100px) {
@@ -851,9 +851,12 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
       display: block;
       width: 100%;
       height: auto;
+      min-height: 45vw;
+      max-height: 100vw;
       max-width: none;
       aspect-ratio: auto;
-      object-fit: initial;
+      object-fit: cover;
+      object-position: center;
     }
   }
 </style>

@@ -3,22 +3,22 @@
     "schemaVersion": 1,
     "counts": {
       "types": {
-        "excursion": 235,
-        "tour": 347,
-        "destination": 724,
+        "excursion": 237,
+        "tour": 348,
+        "destination": 725,
         "country": 24
       },
       "media": {
-        "ready": 812,
+        "ready": 813,
         "generated": 449,
         "provided_originals": 27,
-        "existing_enhanced_preserved": 42
+        "existing_enhanced_preserved": 45
       },
       "rawDonorUrls": 694,
       "activeTypes": {
-        "excursion": 234,
-        "tour": 311,
-        "destination": 724,
+        "excursion": 236,
+        "tour": 312,
+        "destination": 725,
         "country": 24
       },
       "archivedTypes": {
@@ -65,7 +65,7 @@
       }
     },
     "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
-    "entityCount": 1330
+    "entityCount": 1334
   },
   "entries": [
     {
@@ -42663,6 +42663,115 @@
         "theme_gastronomy_wine"
       ],
       "entryPath": "data/source-index/entries/destination_argentina_santa_susana.json"
+    },
+    {
+      "id": "tour_brazil_agribusiness_14_days",
+      "type": "tour",
+      "name": "Агробизнес в Бразилии: Рибейран-Прету, Амазония, Рио и Игуасу",
+      "url": "/brazil/tour/brazil-agribusiness-14-days/",
+      "slug": "brazil-agribusiness-14-days",
+      "contentPath": "src/content/tours/brazil-agribusiness-14-days.md",
+      "countryIds": [
+        "country_brazil",
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_brazil_sao_paulo",
+        "destination_brazil_ribeirao_preto",
+        "destination_brazil_amazon",
+        "destination_brazil_rio",
+        "destination_brazil_tijuca_national_park",
+        "destination_brazil_iguacu",
+        "destination_argentina_puerto_iguasu"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/tour_brazil_agribusiness_14_days.json",
+      "primaryThemes": [
+        "theme_events",
+        "theme_wildlife"
+      ],
+      "themes": [
+        "theme_culture",
+        "theme_adventure",
+        "theme_fishing"
+      ],
+      "status": "approved",
+      "routeCountryIds": [
+        "country_brazil"
+      ],
+      "routeDestinationIds": [
+        "destination_brazil_sao_paulo",
+        "destination_brazil_ribeirao_preto",
+        "destination_brazil_amazon",
+        "destination_brazil_rio",
+        "destination_brazil_tijuca_national_park",
+        "destination_brazil_iguacu",
+        "destination_argentina_puerto_iguasu"
+      ]
+    },
+    {
+      "id": "destination_brazil_ribeirao_preto",
+      "type": "destination",
+      "name": "Рибейран-Прету",
+      "url": "/brazil/place/ribeirao-preto/",
+      "slug": "ribeirao-preto",
+      "contentPath": "src/content/destinations/ribeirao-preto.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_ribeirao_preto"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_brazil_ribeirao_preto.json",
+      "themes": [
+        "theme_events",
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "excursion_sao_paulo_historic_modern_graffiti",
+      "type": "excursion",
+      "name": "Сан-Паулу: исторический центр, Ибирапуэра и граффити",
+      "url": "/brazil/sao-paulo/sao-paulo-historic-modern-graffiti/",
+      "slug": "sao-paulo-historic-modern-graffiti",
+      "contentPath": "src/content/excursions/sao-paulo-historic-modern-graffiti.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_sao_paulo"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/excursion_sao_paulo_historic_modern_graffiti.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "excursion_amazon_boat_caboclo_jungle_dolphins",
+      "type": "excursion",
+      "name": "Амазония: лодочная прогулка, кабокло, джунгли и розовые дельфины",
+      "url": "/brazil/manaus-amazon/amazon-boat-caboclo-jungle-dolphins/",
+      "slug": "amazon-boat-caboclo-jungle-dolphins",
+      "contentPath": "src/content/excursions/amazon-boat-caboclo-jungle-dolphins.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_amazon"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/excursion_amazon_boat_caboclo_jungle_dolphins.json",
+      "themes": [
+        "theme_wildlife",
+        "theme_culture",
+        "theme_adventure",
+        "theme_fishing"
+      ],
+      "status": "approved"
     }
   ]
 }

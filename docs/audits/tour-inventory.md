@@ -11,13 +11,13 @@
 | № | Показатель | Сейчас |
 |---|---|---:|
 | 1 | Программы Drive без повторных копий файлов | 168 программ / 192 файлов |
-| 2 | Неархивные страницы туров | 307 |
+| 2 | Неархивные страницы туров | 308 |
 | 3 | Архивные страницы туров | 31 |
 | 4 | Страницы без соответствия в снимке Drive | 186 активных + 18 архивных |
 | 5 | Программы Drive с архивным соответствием | 15: 0 только в архиве, 15 также с активной страницей |
-| 6 | Программы Drive без активной страницы и без архива | 43; из них 0 уже имеют запись источников |
+| 6 | Программы Drive без активной страницы и без архива | 42; из них 0 уже имеют запись источников |
 
-**Очередь наличия страниц: 43 программ** — 0 из архива и 43 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
+**Очередь наличия страниц: 42 программ** — 0 из архива и 42 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
 
 Рабочая инструкция: [обновление описи](../workflows/tour-inventory.md). Редактируемый реестр: [JSON](../../data/audits/tour-inventory-drive-20261009.json). Этот Markdown генерируется, ручные пометки в нём будут перезаписаны.
 
@@ -25,7 +25,6 @@
 
 | ID программы | Программа / разделы Drive | Все файлы Drive | Соответствия сайта / реестра | Наличие | Работа с содержанием |
 |---|---|---|---|---|---|
-| `P002` | Brazil, Peru & Argentina Group 10-20 pax RUS.docx; 15 дн.; Mice Groups Incentives Congresses | [Brazil, Peru & Argentina Group 10-20 pax RUS.docx](https://docs.google.com/document/d/1EhJfFowYPCXzDd-TML5lKRjvl2G0Kk0E/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | Не начато |
 | `P003` | BRAZIL Rio - Iguacu - Sao Paulo9d8n RUS _20%COM.docx; 9 дн.; Mice Groups Incentives Congresses | [BRAZIL Rio - Iguacu - Sao Paulo9d8n RUS _20%COM.docx](https://docs.google.com/document/d/1ieOqDeLtzMJY9sAhcp96uV03nsgSiCLQ/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | Не начато |
 | `P004` | Brazil 11D10N Package - OUT2027 - Ada Tourss.docx; 11 дн.; Mice Groups Incentives Congresses | [Brazil 11D10N Package - OUT2027 - Ada Tourss.docx](https://docs.google.com/document/d/1iTLxaJci0-E9CZTBMwCYjJiZTMyu_x28/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | Не начато |
 | `P005` | Argentina Experience 6d5n RUS.docx; 6 дн.; Mice Groups Incentives Congresses | [Argentina Experience 6d5n RUS.docx](https://docs.google.com/document/d/1gZ3bqTwQ_59DCqQyFzRgf_53jRY3cHSl/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | Не начато |
@@ -81,6 +80,7 @@
 | ID программы | Программа / разделы Drive | Все файлы Drive | Соответствия сайта / реестра | Наличие | Работа с содержанием |
 |---|---|---|---|---|---|
 | `P001` | Carnival Flavors of Rio de Janeiro, Angra, Historical Paraty & islands champions parade RUS.docx; 9 дн.; Mice Groups Incentives Congresses | [Carnival Flavors of Rio de Janeiro, Angra, Historical Paraty & islands champions parade RUS.docx](https://docs.google.com/document/d/19vlht5vKeMR5iUtBjjWLHp1JEfxWawo2/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Вкусы Бразилии: карнавал в Рио, Парати и Илья-Гранди](https://adatours.ru/brazil/tour/carnival-flavors-rio-paraty-ilha-grande/) — активный; `tour_brazil_carnival_flavors_rio_paraty_ilha_grande` | Активная страница есть | В работе; Word полностью сверен: 9 дней, 8 ночей, 6 тарифов, 6 мест и 6 самостоятельных экскурсионных модулей. Все 16 слотов используют разные готовые asset. Ожидается штатный Actions deploy и регистрация Страницы/Фото. |
+| `P002` | Brazil, Peru & Argentina Group 10-20 pax RUS.docx; 15 дн.; Mice Groups Incentives Congresses | [Brazil, Peru & Argentina Group 10-20 pax RUS.docx](https://docs.google.com/document/d/1EhJfFowYPCXzDd-TML5lKRjvl2G0Kk0E/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Бразилия, Перу и Аргентина: групповой тур на 15 дней](https://adatours.ru/multi-country/tour/brazil-peru-argentina-group-15-days/) — активный; `tour_brazil_peru_argentina_group_15_days` | Активная страница есть | В работе; Word и таблица тарифов проверены; 15 дней, 14 ночей, 3 новых самостоятельных экскурсии, 8 переиспользуемых канонических экскурсий, существующие места и уникальные фото подготовлены. Ожидаются Actions deploy и синхронизация Страницы/Фото. |
 | `P006` | Argentina & Chile 2027 Patagonia and Uyuni 13d 12n ,RUS.docx; 13 дн.; Mice Groups Incentives Congresses | [Argentina & Chile 2027 Patagonia and Uyuni 13d 12n ,RUS.docx](https://docs.google.com/document/d/120CQgsde0TEyXVZHOQ52XkMUyNQJsNL_/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Аргентина, Чили и Патагония: тур на 13 дней](https://adatours.ru/multi-country/tour/argentina-chile-patagonia-13-days/) — активный; `tour_source_argentina_chili_i_prekrasnaya_patagoniya`; [Аргентина и Чили: путешествие по Патагонии на 13 дней](https://adatours.ru/multi-country/tour/patagonia-argentina-chile-13-days/) — архив; `tour_source_argentina_chili_prekrasnaya_patagoniya` | Активная страница есть | Не начато |
 | `P007` | Amazing Moto tour in Brazil 2027.docx; 12 дн.; Mice Groups Incentives Congresses | [Amazing Moto tour in Brazil 2027.docx](https://docs.google.com/document/d/1rtYJ_Sg9scTo1Ib6BJJw-U_poWqenwIJ/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Мото тур по Бразилии за 12 дней](https://adatours.ru/brazil/tour/brazil-motorcycle-tour-12-days/) — активный; `tour_source_mototur_cherez_braziliyu` | Активная страница есть | Не начато |
 | `P010` | Adventure Peru 21d20n 2027 RUS com20.docx; 21 дн.; Mice Groups Incentives Congresses | [Adventure Peru 21d20n 2027 RUS com20.docx](https://docs.google.com/document/d/1butPiR7ZRJDGqCrV5LIi5KzbwMUYV8Lz/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур в Перу – лучшее в стране за 21 день](https://adatours.ru/peru/tour/best-of-peru-21-days/) — активный; `tour_source_21_dnevnoe_priklyuchenie_v_peru` | Активная страница есть | Не начато |
@@ -212,7 +212,6 @@
 
 | Программа Drive | Кандидаты в реестре |
 |---|---|
-| `P002`: Brazil, Peru & Argentina Group 10-20 pax RUS.docx | [Бразилия и Аргентина Фан](https://adatours.ru/multi-country/tour/brazil-argentina-fun/); `tour_source_fan_braziliya_i_argentina`; [Тур в Бразилию и Аргентину: Рио-де-Жанейро, Фоз де Игуасу, Буэнос Айрес](https://adatours.ru/multi-country/tour/brazil-argentina-rio-iguazu-buenos-aires-september/); `tour_source_braziliya_i_argentina_v_sentyabre`; [Тур в Бразилию, Аргентину, Чили и Перу на 15 дней](https://adatours.ru/multi-country/tour/brazil-argentina-chile-peru-15-days/); `tour_source_braziliya_argentina_chili_peru_ru` |
 | `P003`: BRAZIL Rio - Iguacu - Sao Paulo9d8n RUS _20%COM.docx | [Бразилия: Сан Пауло –Игуасу- Рио-де-Жанейро – Бузиос](https://adatours.ru/brazil/tour/brazil-sao-paulo-iguazu-rio-buzios/); `tour_source_sao_paulo_buzios_rio_iguasu`; [Индивидуальный кофе-тур в Бразилию](https://adatours.ru/brazil/tour/brazil-private-coffee-tour/); `tour_source_kofe_tur_v_brazilii`; [Тур в Бразилию: Сан Пауло, Манаус, Рио-де-Жанейро, Игуасу](https://adatours.ru/brazil/tour/brazil-sao-paulo-manaus-rio-iguazu/); `tour_source_braziliya_s_san_paulo` |
 | `P004`: Brazil 11D10N Package - OUT2027 - Ada Tourss.docx | [Бразилия от Сан Пауло до Бузиоса](https://adatours.ru/brazil/tour/brazil-sao-paulo-to-buzios/); `tour_source_braziliya_ot_san_paulo_do_buziosa`; [Бразилия: Сан Пауло –Игуасу- Рио-де-Жанейро – Бузиос](https://adatours.ru/brazil/tour/brazil-sao-paulo-iguazu-rio-buzios/); `tour_source_sao_paulo_buzios_rio_iguasu`; [Тур в Бразилию: Сан Пауло, Манаус, Рио-де-Жанейро, Игуасу](https://adatours.ru/brazil/tour/brazil-sao-paulo-manaus-rio-iguazu/); `tour_source_braziliya_s_san_paulo` |
 | `P005`: Argentina Experience 6d5n RUS.docx | [Корпоративный тур а Аргентину: Буэнос-Айрес и Тигре](https://adatours.ru/argentina/tour/argentina-buenos-aires-tigre-corporate-tour/); `tour_source_kongress_v_argentine`; [Тур в Аргентину: Буэнос-Айрес, Эль-Калафате, Сальта, Игуасу](https://adatours.ru/argentina/tour/argentina-buenos-aires-el-calafate-salta-iguazu/); `tour_source_vlyubites_v_argentinu`; [Тур в Бразилию, Аргентину и Уругвай за 13 дней](https://adatours.ru/multi-country/tour/brazil-argentina-uruguay-13-days/); `tour_source_stolitsy_latinskoj_ameriki` |
@@ -605,6 +604,7 @@
 | `tour_source_ekvador_kito_galapagosskie_ostrova` | [Эквадор: Кито – Галапагосские Острова](https://adatours.ru/ecuador/tour/ecuador-quito-galapagos-islands/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_luchshee_v_salvadore` | [Тур в Сальвадор: Сан-Сальвадор, Сучитото, Залив Фонсека](https://adatours.ru/el-salvador/tour/el-salvador-san-salvador-suchitoto-gulf-of-fonseca/) | Активная страница | `P021` |
 | `tour_brazil_carnival_flavors_rio_paraty_ilha_grande` | [Вкусы Бразилии: карнавал в Рио, Парати и Илья-Гранди](https://adatours.ru/brazil/tour/carnival-flavors-rio-paraty-ilha-grande/) | Активная страница | `P001` |
+| `tour_brazil_peru_argentina_group_15_days` | [Бразилия, Перу и Аргентина: групповой тур на 15 дней](https://adatours.ru/multi-country/tour/brazil-peru-argentina-group-15-days/) | Активная страница | `P002` |
 
 ## 6. Исключённые файлы
 

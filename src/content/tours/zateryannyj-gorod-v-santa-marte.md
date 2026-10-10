@@ -12,11 +12,12 @@ destinations:
 - destination_colombia_mutanzi
 - destination_colombia_zateryannyj_gorod
 - destination_colombia_nacionalnyj_park_tajrona
+- destination_colombia_cabana_de_adan
 audiences: []
 route:
 - Санта-Марта
 - Мамей
-- кемп Кабана-де-Адан 1
+- лагерь Кабанья-де-Адан №1
 - Затерянный город
 - природный парк Тайрона
 dates: []
@@ -40,7 +41,7 @@ itinerary:
     hover: "Санта-Марта: тропический берег с пальмами и камнями у прозрачной воды"
     alt: "Пляж с пальмами, прибрежными скалами и бирюзовой бухтой у Санта-Марты, Колумбия"
 - day: 2
-  title: Санта-Марта - Мамей - кемп Кабана-де-Адан 1
+  title: Санта-Марта - Мамей - лагерь Кабанья-де-Адан №1
   places:
   - Санта-Марта
   - Мамей
@@ -49,7 +50,7 @@ itinerary:
 
     Обед в деревне входит в стоимость. После него начинается первый пеший участок вдоль реки. На первой остановке можно искупаться в природном бассейне.
 
-    Далее начинается самый крутой подъем маршрута к Кабана-де-Адан. У лагеря открывается вид на природный бассейн и водопад. Ночь проведем в гамаках. Ужин в лагере включен.
+    Далее начинается самый крутой подъем маршрута к лагерю Кабанья-де-Адан. У лагеря открывается вид на природный бассейн и водопад. Ночь проведем в гамаках. Ужин в лагере включен.
 
     Продолжительность перехода: 3 часа. Расстояние: 7,6 км. Высота: 450 м.
   images:
@@ -176,6 +177,7 @@ routeDestinations:
 - destination_colombia_mutanzi
 - destination_colombia_zateryannyj_gorod
 - destination_colombia_nacionalnyj_park_tajrona
+- destination_colombia_cabana_de_adan
 primaryThemes: ["theme_adventure","theme_culture"]
 themes: ["theme_wildlife","theme_beach"]
 ---

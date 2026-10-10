@@ -9,6 +9,7 @@ countries:
 destinations:
 - destination_brazil_rio
 - destination_brazil_buzios
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -126,6 +127,7 @@ routeCountries:
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_buzios
+- destination_brazil_praia_vermelha
 primaryThemes:
 - theme_beach
 - theme_culture

@@ -7,12 +7,14 @@ status: approved
 countries:
   - country_brazil
 destinations:
-  - destination_brazil_rio
-  - destination_brazil_iguacu
-  - destination_brazil_florianopolis
-  - destination_brazil_porto_alegre
-  - destination_brazil_gramadu
-  - destination_brazil_kanela
+- destination_brazil_rio
+- destination_brazil_iguacu
+- destination_brazil_florianopolis
+- destination_brazil_porto_alegre
+- destination_brazil_gramadu
+- destination_brazil_kanela
+- destination_brazil_kambara_du_sul
+- destination_brazil_lagoa_da_conceicao
 audiences:
   - private
   - couples

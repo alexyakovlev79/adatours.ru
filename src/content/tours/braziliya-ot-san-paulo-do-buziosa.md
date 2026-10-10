@@ -13,6 +13,7 @@ destinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_rio
 - destination_brazil_buzios
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Сан-Паулу
@@ -223,6 +224,7 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_rio
 - destination_brazil_buzios
+- destination_brazil_praia_vermelha
 primaryThemes: ["theme_culture","theme_beach"]
 themes: ["theme_wildlife"]
 ---

@@ -8,17 +8,18 @@ countries:
   - country_brazil
   - country_argentina
 destinations:
-  - destination_brazil_rio
-  - destination_brazil_ouro_preto
-  - destination_brazil_salvador
-  - destination_brazil_praia_do_forte
-  - destination_brazil_iguacu
-  - destination_brazil_belo_horizonte
-  - destination_argentina_puerto_iguasu
-  - destination_brazil_kongonyas
-  - destination_brazil_mariana
-  - destination_brazil_petropolis
-  - destination_brazil_inhotim
+- destination_brazil_rio
+- destination_brazil_ouro_preto
+- destination_brazil_salvador
+- destination_brazil_praia_do_forte
+- destination_brazil_iguacu
+- destination_brazil_belo_horizonte
+- destination_argentina_puerto_iguasu
+- destination_brazil_kongonyas
+- destination_brazil_mariana
+- destination_brazil_petropolis
+- destination_brazil_inhotim
+- destination_brazil_tijuca_national_park
 audiences:
   - private
   - couples

@@ -9,6 +9,7 @@ countries:
 destinations:
 - destination_costa_rica_san_hose
 - destination_costa_rica_flamingo
+- destination_costa_rica_pacific_coast
 audiences: []
 route:
 - Сан-Хосе
@@ -161,6 +162,7 @@ routeCountries:
 routeDestinations:
 - destination_costa_rica_san_hose
 - destination_costa_rica_flamingo
+- destination_costa_rica_pacific_coast
 primaryThemes: ["theme_fishing"]
 themes: []
 ---

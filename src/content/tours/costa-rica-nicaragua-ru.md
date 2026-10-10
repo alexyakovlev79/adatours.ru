@@ -21,6 +21,8 @@ destinations:
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_managua
 - destination_costa_rica_plajya_tamarindo
+- destination_costa_rica_pacific_coast
+- destination_costa_rica_doka_estate
 audiences: []
 route:
 - Сан-Хосе
@@ -53,10 +55,10 @@ itinerary:
     hover: "Сан-Хосе: фасад церкви с парными шпилями и пальмы"
     alt: "Церковь с двумя высокими шпилями среди пальм в Сан-Хосе, Коста-Рика"
 - day: 2
-  title: Кофейная плантация Doka - вулкан Поас - Ла-Пас
+  title: Кофейная плантация Дока - вулкан Поас - Ла-Пас
   places:
   - Вулкан Поас
-  text: "Поездка начинается на кофейной плантации Doka.\n\nЗдесь вы познакомитесь с процессом выращивания, сбора, обработки\
+  text: "Поездка начинается на кофейной плантации Дока.\n\nЗдесь вы познакомитесь с процессом выращивания, сбора, обработки\
     \ и обжарки коста-риканского кофе. На месте можно купить кофе.\n\nДалее переезд в Национальный парк Volcan Poas. По мере\
     \ подъема к вулкану меняются температура и растительность. Дорога проходит мимо кофейных плантаций, цветочных теплиц и\
     \ клубничных хозяйств.\n\nУ кратера Поас можно увидеть сернистые фумаролы и познакомиться с экосистемами национального\
@@ -243,6 +245,8 @@ routeDestinations:
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_managua
 - destination_costa_rica_plajya_tamarindo
+- destination_costa_rica_pacific_coast
+- destination_costa_rica_doka_estate
 primaryThemes: ["theme_wildlife","theme_culture"]
 themes: ["theme_beach"]
 ---

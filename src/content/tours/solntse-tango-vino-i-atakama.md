@@ -27,6 +27,7 @@ destinations:
 - destination_chile_gejzery_el_tatio
 - destination_chile_tokonao
 - destination_chile_machuka
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро (3 ночи)
@@ -330,6 +331,7 @@ routeDestinations:
 - destination_chile_gejzery_el_tatio
 - destination_chile_tokonao
 - destination_chile_machuka
+- destination_brazil_praia_vermelha
 primaryThemes:
 - theme_wildlife
 - theme_culture

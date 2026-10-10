@@ -18,6 +18,7 @@ destinations:
 - destination_argentina_tigre
 - destination_argentina_san_isidro_buenos_ajres
 - destination_uruguay_montevideo
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро, 4 ночи
@@ -299,6 +300,7 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
 - destination_chile_santyago_de_chili
+- destination_brazil_praia_vermelha
 primaryThemes: ["theme_culture","theme_wildlife"]
 themes: []
 ---

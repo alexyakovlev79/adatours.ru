@@ -7,16 +7,17 @@ status: approved
 countries:
   - country_brazil
 destinations:
-  - destination_brazil_rio
-  - destination_brazil_angra_dos_reis
-  - destination_brazil_ilha_grande
-  - destination_brazil_iguacu
-  - destination_brazil_pantanal
-  - destination_brazil_bonito
-  - destination_brazil_sao_luis
-  - destination_brazil_lencois_maranhenses
-  - destination_brazil_barrejrinyas
-  - destination_brazil_kampo_grande
+- destination_brazil_rio
+- destination_brazil_angra_dos_reis
+- destination_brazil_ilha_grande
+- destination_brazil_iguacu
+- destination_brazil_pantanal
+- destination_brazil_bonito
+- destination_brazil_sao_luis
+- destination_brazil_lencois_maranhenses
+- destination_brazil_barrejrinyas
+- destination_brazil_kampo_grande
+- destination_brazil_tijuca_national_park
 audiences: [private, couples, family]
 format: Частный
 durationDays: 17

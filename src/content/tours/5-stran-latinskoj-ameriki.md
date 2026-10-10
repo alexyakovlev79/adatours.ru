@@ -58,6 +58,7 @@ destinations:
 - destination_peru_sacsayhuaman
 - destination_peru_lima
 - destination_chile_dolina_majpo
+- destination_brazil_praia_vermelha
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
@@ -99,6 +100,7 @@ routeDestinations:
 - destination_peru_tambomachay
 - destination_peru_sacsayhuaman
 - destination_peru_lima
+- destination_brazil_praia_vermelha
 primaryThemes:
 - theme_culture
 - theme_wildlife

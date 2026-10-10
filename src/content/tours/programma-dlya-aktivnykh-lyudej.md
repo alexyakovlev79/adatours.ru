@@ -12,13 +12,17 @@ countries:
   - country_argentina
   - country_chile
 destinations:
-  - destination_argentina_buenos_aires
-  - destination_chile_santyago_de_chili
-  - destination_chile_ostrov_pashi
-  - destination_chile_puerto_natales_torres_del_pajne
-  - destination_chile_lednik_grej
-  - destination_chile_ahu_akivi
-  - destination_chile_vulkan_rano_raraku
+- destination_argentina_buenos_aires
+- destination_chile_santyago_de_chili
+- destination_chile_ostrov_pashi
+- destination_chile_puerto_natales_torres_del_pajne
+- destination_chile_lednik_grej
+- destination_chile_ahu_akivi
+- destination_chile_vulkan_rano_raraku
+- destination_chile_peschera_milodona
+- destination_chile_tahai
+- destination_chile_ahu_tongariki
+- destination_chile_hanga_roa
 audiences:
   - private
 format: "Активное путешествие"

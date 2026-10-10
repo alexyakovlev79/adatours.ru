@@ -13,6 +13,7 @@ destinations:
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_zapovednik_kano_negro
 - destination_costa_rica_monteverde_santa_elena
+- destination_costa_rica_doka_estate
 audiences: []
 route:
 - Сан-Хосе
@@ -38,11 +39,11 @@ itinerary:
     hover: "Сан-Хосе: вечерняя подсветка фасада и фонтан на площади"
     alt: "Освещённое историческое здание за фонтаном вечером в Сан-Хосе, Коста-Рика"
 - day: 2
-  title: Кофейная плантация Doka - вулкан Поас - Ла-Пас - Ареналь
+  title: Кофейная плантация Дока - вулкан Поас - Ла-Пас - Ареналь
   places:
   - Вулкан Поас
   - Ла Фортуна & Вулкан Ареналь
-  text: "Утром отправляемся на кофейную плантацию Doka.\n\nЗдесь знакомимся с полным циклом производства кофе: выращиванием,\
+  text: "Утром отправляемся на кофейную плантацию Дока.\n\nЗдесь знакомимся с полным циклом производства кофе: выращиванием,\
     \ сбором, обработкой и обжаркой зерен. На плантации также можно приобрести местный кофе.\n\nДальше едем в национальный\
     \ парк Volcan Poas. По мере подъема к вулкану меняются температура и растительность. По дороге видны кофейные плантации,\
     \ цветочные теплицы и клубничные хозяйства.\n\nНа вулкане Поас можно увидеть большой кратер и сернистые фумаролы, а также\
@@ -135,6 +136,7 @@ routeDestinations:
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_zapovednik_kano_negro
 - destination_costa_rica_monteverde_santa_elena
+- destination_costa_rica_doka_estate
 primaryThemes: ["theme_wildlife"]
 themes: ["theme_gastronomy_wine"]
 ---

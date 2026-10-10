@@ -10,6 +10,7 @@ destinations:
 - destination_brazil_rio
 - destination_brazil_ilha_grande
 - destination_brazil_paraty
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро (3 ночи)
@@ -158,6 +159,7 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_ilha_grande
 - destination_brazil_paraty
+- destination_brazil_praia_vermelha
 primaryThemes: ["theme_culture","theme_beach"]
 themes: ["theme_wildlife"]
 ---

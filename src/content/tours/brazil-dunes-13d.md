@@ -8,15 +8,17 @@ countries:
   - country_brazil
   - country_argentina
 destinations:
-  - destination_brazil_rio
-  - destination_brazil_iguacu
-  - destination_brazil_sao_luis
-  - destination_brazil_lencois_maranhenses
-  - destination_brazil_natal
-  - destination_brazil_praia_de_pipa
-  - destination_argentina_puerto_iguasu
-  - destination_brazil_atins
-  - destination_brazil_barrejrinyas
+- destination_brazil_rio
+- destination_brazil_iguacu
+- destination_brazil_sao_luis
+- destination_brazil_lencois_maranhenses
+- destination_brazil_natal
+- destination_brazil_praia_de_pipa
+- destination_argentina_puerto_iguasu
+- destination_brazil_atins
+- destination_brazil_barrejrinyas
+- destination_brazil_tijuca_national_park
+- destination_brazil_praia_vermelha
 audiences:
   - private
   - couples
@@ -61,7 +63,7 @@ itinerary:
   - day: 3
     title: "Сахарная Голова и исторический Рио"
     places: ["Рио-де-Жанейро", "Сахарная голова"]
-    text: "После завтрака русскоговорящий гид встретит вас в отеле. Сначала вы отправитесь на Красный пляж, Praia Vermelha, откуда начинается подъем по канатной дороге. Первая линия ведет на Урку. Уже отсюда хорошо виден город, а вторая линия поднимается к Сахарной Голове.\n\nС вершины открываются виды на Леме, Копакабану, Ипанему, Леблон и Фламенго, Корковадо со статуей Христа, массивы парка Тижука, бухту Гуанабара, центр города, аэропорт Сантос-Дюмон, мост Рио - Нитерой и сам Нитерой. С этой точки хорошо видно, как город помещается между океаном, бухтой и крутыми гранитными горами.\n\nПосле спуска вы отправитесь в историческую часть Рио-де-Жанейро. Здесь современный мегаполис сменяется старой застройкой, площадями и улицами центра. По окончании экскурсии гид сопровождает вас обратно в отель."
+    text: "После завтрака русскоговорящий гид встретит вас в отеле. Сначала вы отправитесь на Красный пляж, Прайя-Вермелья, откуда начинается подъем по канатной дороге. Первая линия ведет на Урку. Уже отсюда хорошо виден город, а вторая линия поднимается к Сахарной Голове.\n\nС вершины открываются виды на Леме, Копакабану, Ипанему, Леблон и Фламенго, Корковадо со статуей Христа, массивы парка Тижука, бухту Гуанабара, центр города, аэропорт Сантос-Дюмон, мост Рио - Нитерой и сам Нитерой. С этой точки хорошо видно, как город помещается между океаном, бухтой и крутыми гранитными горами.\n\nПосле спуска вы отправитесь в историческую часть Рио-де-Жанейро. Здесь современный мегаполис сменяется старой застройкой, площадями и улицами центра. По окончании экскурсии гид сопровождает вас обратно в отель."
     images:
       - src: /media/tours/brazil-dunes-13d/itinerary/day-03-enhanced-20261001.webp
         alt: "Панорама Рио-де-Жанейро"

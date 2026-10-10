@@ -11,19 +11,23 @@ searchAliases:
 countries:
   - country_costa_rica
 destinations:
-  - destination_costa_rica_san_hose
-  - destination_costa_rica_tortuguero
-  - destination_costa_rica_la_fortuna_vulkan_arenal
-  - destination_costa_rica_monteverde_santa_elena
-  - destination_costa_rica_manuel_antonio
-  - destination_costa_rica_poluostrov_osa
-  - destination_costa_rica_vodopady_la_pas
-  - destination_costa_rica_vulkan_poas
-  - destination_costa_rica_nacionalnyj_park_korkovado
-  - destination_costa_rica_nacionalnyj_park_tenorio
-  - destination_costa_rica_ostrov_kano
-  - destination_costa_rica_plajya_konchal
-  - destination_costa_rica_rio_seleste
+- destination_costa_rica_san_hose
+- destination_costa_rica_tortuguero
+- destination_costa_rica_la_fortuna_vulkan_arenal
+- destination_costa_rica_monteverde_santa_elena
+- destination_costa_rica_manuel_antonio
+- destination_costa_rica_poluostrov_osa
+- destination_costa_rica_vodopady_la_pas
+- destination_costa_rica_vulkan_poas
+- destination_costa_rica_nacionalnyj_park_korkovado
+- destination_costa_rica_nacionalnyj_park_tenorio
+- destination_costa_rica_ostrov_kano
+- destination_costa_rica_plajya_konchal
+- destination_costa_rica_rio_seleste
+- destination_costa_rica_kepos
+- destination_costa_rica_serpe
+- destination_costa_rica_zaliv_drejk
+- destination_costa_rica_doka_estate
 audiences:
   - private
 format: Частный
@@ -83,7 +87,7 @@ itinerary:
         alt: "Сан-Хосе, столица Коста-Рики"
         intendedSlot: "itinerary:day-1"
   - day: 2
-    title: "Кофейная плантация Doka, вулкан Поас и Ла-Пас"
+    title: "Кофейная плантация Дока, вулкан Поас и Ла-Пас"
     places:
       - "Дока"
       - "Поас"
@@ -95,7 +99,7 @@ itinerary:
       
       
       
-      Первая остановка - кофейная плантация Doka.
+      Первая остановка - кофейная плантация Дока.
       
       
       
@@ -844,7 +848,7 @@ themes: ["theme_adventure"]
 
 
 
-Центральная часть страны начинается с кофе и вулканов. На плантации Doka вы увидите полный цикл производства коста-риканской арабики, затем отправитесь к кратеру Поаса и в Сад водопадов Ла-Пас.
+Центральная часть страны начинается с кофе и вулканов. На плантации Дока вы увидите полный цикл производства коста-риканской арабики, затем отправитесь к кратеру Поаса и в Сад водопадов Ла-Пас.
 
 
 
@@ -879,7 +883,7 @@ themes: ["theme_adventure"]
 
 
 
-Одна из особенностей этой программы в том, что почти каждые 1-2 дня меняется природная зона. В районе Сан-Хосе и Doka акцент сделан на высокогорные кофейные земли. Дальше маршрут поднимается к Поас, где уже ощущается прохладный вулканический климат, а затем переходит в влажный лес Ла-Пас.
+Одна из особенностей этой программы в том, что почти каждые 1-2 дня меняется природная зона. В районе Сан-Хосе и Дока акцент сделан на высокогорные кофейные земли. Дальше маршрут поднимается к Поас, где уже ощущается прохладный вулканический климат, а затем переходит в влажный лес Ла-Пас.
 
 
 

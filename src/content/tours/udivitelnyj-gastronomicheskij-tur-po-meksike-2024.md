@@ -14,6 +14,8 @@ destinations:
 - destination_mexico_koba
 - destination_mexico_tulum
 - destination_mexico_gran_senot
+- destination_mexico_xochimilco
+- destination_mexico_coyoacan
 audiences: []
 route:
 - Мехико-Сити
@@ -201,6 +203,8 @@ routeDestinations:
 - destination_mexico_koba
 - destination_mexico_tulum
 - destination_mexico_gran_senot
+- destination_mexico_xochimilco
+- destination_mexico_coyoacan
 primaryThemes: ["theme_gastronomy_wine","theme_culture"]
 themes: ["theme_beach"]
 ---

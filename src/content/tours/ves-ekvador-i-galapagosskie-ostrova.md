@@ -20,6 +20,7 @@ destinations:
 - destination_ecuador_ostrov_plasa_sur
 - destination_ecuador_mys_karrion
 - destination_ecuador_guayakil
+- destination_ecuador_plyazhi_bachas
 audiences: []
 route:
 - Кито

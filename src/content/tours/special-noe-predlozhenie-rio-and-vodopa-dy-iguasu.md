@@ -13,6 +13,7 @@ destinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_angra_dos_reis
 - destination_brazil_petropolis
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -223,6 +224,7 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+- destination_brazil_praia_vermelha
 primaryThemes:
 - theme_culture
 - theme_wildlife

@@ -12,6 +12,7 @@ destinations:
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_pacific_coast
+- destination_costa_rica_doka_estate
 audiences: []
 route:
 - Сан-Хосе
@@ -202,6 +203,7 @@ routeDestinations:
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_pacific_coast
+- destination_costa_rica_doka_estate
 primaryThemes: ["theme_wildlife","theme_beach"]
 themes: []
 ---

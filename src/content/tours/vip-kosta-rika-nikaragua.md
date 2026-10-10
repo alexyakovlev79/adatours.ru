@@ -23,6 +23,7 @@ destinations:
 - destination_nicaragua_laguna_apojo
 - destination_costa_rica_vodopady_vento_fresko
 - destination_costa_rica_monteverde_santa_elena
+- destination_costa_rica_doka_estate
 audiences: []
 route:
 - Сан-Хосе
@@ -322,6 +323,7 @@ routeDestinations:
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_masaya
 - destination_nicaragua_laguna_apojo
+- destination_costa_rica_doka_estate
 primaryThemes: ["theme_wildlife","theme_culture"]
 themes: ["theme_gastronomy_wine"]
 ---

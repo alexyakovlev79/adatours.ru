@@ -14,6 +14,7 @@ destinations:
 - destination_mexico_uakechula
 - destination_mexico_atliksko
 - destination_mexico_mikskik
+- destination_mexico_xochimilco
 audiences: []
 route:
 - Мехико
@@ -218,6 +219,7 @@ routeDestinations:
 - destination_mexico_uakechula
 - destination_mexico_atliksko
 - destination_mexico_mikskik
+- destination_mexico_xochimilco
 primaryThemes: ["theme_events","theme_culture"]
 themes: []
 ---

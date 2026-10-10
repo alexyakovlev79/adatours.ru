@@ -11,6 +11,7 @@ destinations:
 - destination_colombia_medelin
 - destination_colombia_guatape
 - destination_colombia_kartahena
+- destination_colombia_islas_rosario
 audiences: []
 route:
 - Богота

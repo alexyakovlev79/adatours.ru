@@ -12,12 +12,13 @@ countries:
   - country_argentina
   - country_chile
 destinations:
-  - destination_argentina_buenos_aires
-  - destination_argentina_mendoza
-  - destination_chile_santyago_de_chili
-  - destination_chile_valparaiso_i_vinya_del_mar
-  - destination_argentina_dolina_uko
-  - destination_argentina_luhan_de_kujo
+- destination_argentina_buenos_aires
+- destination_argentina_mendoza
+- destination_chile_santyago_de_chili
+- destination_chile_valparaiso_i_vinya_del_mar
+- destination_argentina_dolina_uko
+- destination_argentina_luhan_de_kujo
+- destination_chile_concha_y_toro
 audiences:
   - private
 format: Частный
@@ -36,7 +37,7 @@ hero:
 gallery: []
 featured: false
 priority: 0
-lead: "Этот маршрут соединяет Буэнос-Айрес, винодельческий регион Мендоса и Сантьяго. За 9 дней вы познакомитесь с 2 столицами, проведете день на ранчо гаучо, увидите танго-шоу, посетите винодельни долины Уко и чилийскую Concha y Toro, а затем отправитесь к Тихому океану, в Винья-дель-Мар и Вальпараисо."
+lead: "Этот маршрут соединяет Буэнос-Айрес, винодельческий регион Мендоса и Сантьяго. За 9 дней вы познакомитесь с 2 столицами, проведете день на ранчо гаучо, увидите танго-шоу, посетите винодельни долины Уко и чилийскую Конча-и-Торо, а затем отправитесь к Тихому океану, в Винья-дель-Мар и Вальпараисо."
 highlights: []
 itinerary:
   - day: 1
@@ -349,17 +350,17 @@ itinerary:
         alt: "Вальпараисо, Чили"
         intendedSlot: "itinerary:day-7"
   - day: 8
-    title: "Виноградники Concha y Toro"
+    title: "Виноградники Конча-и-Торо"
     places:
       - "Сантьяго-де-Чили"
-      - "Concha y Toro"
+      - "Конча-и-Торо"
     text: |-
       Завтрак в гостинице.
       
       
       
       
-      День посвящен чилийскому виноделию и виноградникам Concha y Toro.
+      День посвящен чилийскому виноделию и виноградникам Конча-и-Торо.
       
       
       
@@ -528,12 +529,12 @@ themes: []
 
 
 
-### Concha y Toro
+### Конча-и-Торо
 
 
 
 
-В последний полный день путешествия предусмотрена экскурсия на виноградники Concha y Toro.
+В последний полный день путешествия предусмотрена экскурсия на виноградники Конча-и-Торо.
 
 
 

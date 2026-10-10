@@ -9,14 +9,16 @@ countries:
   - country_argentina
   - country_peru
 destinations:
-  - destination_brazil_rio
-  - destination_brazil_iguacu
-  - destination_argentina_buenos_aires
-  - destination_peru_lima
-  - destination_peru_cusco
-  - destination_peru_machu_picchu
-  - destination_argentina_puerto_iguasu
-  - destination_peru_puno_i_o_titikaka
+- destination_brazil_rio
+- destination_brazil_iguacu
+- destination_argentina_buenos_aires
+- destination_peru_lima
+- destination_peru_cusco
+- destination_peru_machu_picchu
+- destination_argentina_puerto_iguasu
+- destination_peru_puno_i_o_titikaka
+- destination_peru_sacsayhuaman
+- destination_brazil_praia_vermelha
 audiences:
   - couples
   - private

@@ -27,6 +27,8 @@ destinations:
 - destination_peru_chinchero
 - destination_peru_urubamba
 - destination_peru_karal
+- destination_peru_parakas
+- destination_peru_linii_naska_i_ostrova_balestas
 audiences: []
 route:
 - Лима

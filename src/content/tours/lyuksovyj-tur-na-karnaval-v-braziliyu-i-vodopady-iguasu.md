@@ -12,6 +12,7 @@ destinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_angra_dos_reis
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро, 5 ночей
@@ -150,7 +151,7 @@ itinerary:
     Можно отдохнуть, поздно позавтракать или самостоятельно прогуляться по Рио.
 
 
-    Во второй половине дня русскоговорящий гид отвезет вас на Praia Vermelha.
+    Во второй половине дня русскоговорящий гид отвезет вас на Прайя-Вермелья.
 
 
     Канатная дорога сначала поднимает на гору Urca.
@@ -345,6 +346,7 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+- destination_brazil_praia_vermelha
 primaryThemes:
 - theme_events
 themes:

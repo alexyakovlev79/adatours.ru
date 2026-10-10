@@ -15,6 +15,7 @@ destinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_petropolis
 - destination_brazil_itakurusa
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро (4 ночи)
@@ -330,6 +331,7 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_brazil_amazon
 - destination_brazil_buzios
+- destination_brazil_praia_vermelha
 primaryThemes:
 - theme_family
 - theme_beach

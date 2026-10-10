@@ -11,6 +11,7 @@ destinations:
 - destination_panama_el_valle
 - destination_panama_krepost_san_lorenso
 - destination_panama_shlyuzy_agua_klara
+- destination_panama_vodopad_chorro_del_macho
 audiences: []
 route:
 - Панама-Сити
@@ -150,6 +151,7 @@ routeDestinations:
 - destination_panama_el_valle
 - destination_panama_krepost_san_lorenso
 - destination_panama_shlyuzy_agua_klara
+- destination_panama_vodopad_chorro_del_macho
 primaryThemes: ["theme_culture","theme_wildlife"]
 themes: []
 ---

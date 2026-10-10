@@ -11,7 +11,9 @@ searchAliases:
 countries:
   - country_brazil
 destinations:
-  - destination_brazil_amazon
+- destination_brazil_amazon
+- destination_brazil_ekologicheskij_park_zhanauari
+- destination_brazil_janauaca_lake
 audiences: [private, couples, family]
 format: Круиз
 durationDays: 3

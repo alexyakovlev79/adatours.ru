@@ -12,17 +12,19 @@ countries:
   - country_argentina
   - country_brazil
 destinations:
-  - destination_argentina_buenos_aires
-  - destination_argentina_el_calafate
-  - destination_brazil_iguacu
-  - destination_argentina_ushuajya
-  - destination_argentina_puerto_iguasu
-  - destination_argentina_laguna_esmeralda
-  - destination_argentina_lednik_perito_moreno
-  - destination_argentina_nacionalnyj_park_los_glasyares
-  - destination_argentina_nacionalnyj_park_terra_del_fuego
-  - destination_argentina_ozero_argentino
-  - destination_argentina_ozero_eskondido_ognennaya_zemlya
+- destination_argentina_buenos_aires
+- destination_argentina_el_calafate
+- destination_brazil_iguacu
+- destination_argentina_ushuajya
+- destination_argentina_puerto_iguasu
+- destination_argentina_laguna_esmeralda
+- destination_argentina_lednik_perito_moreno
+- destination_argentina_nacionalnyj_park_los_glasyares
+- destination_argentina_nacionalnyj_park_terra_del_fuego
+- destination_argentina_ozero_argentino
+- destination_argentina_ozero_eskondido_ognennaya_zemlya
+- destination_argentina_kanal_bigl
+- destination_argentina_ozero_fagnano
 audiences: []
 format: "Тур по Аргентине"
 durationDays: 13

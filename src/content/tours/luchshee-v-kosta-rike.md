@@ -20,6 +20,7 @@ destinations:
 - destination_costa_rica_zaliv_drejk
 - destination_costa_rica_nacionalnyj_park_korkovado
 - destination_costa_rica_ostrov_kano
+- destination_costa_rica_doka_estate
 audiences: []
 route:
 - Сан-Хосе
@@ -49,11 +50,11 @@ itinerary:
     hover: "Сан-Хосе: вечерняя подсветка фасада и фонтан на площади"
     alt: "Освещённое историческое здание за фонтаном вечером в Сан-Хосе, Коста-Рика"
 - day: 2
-  title: Кофейная плантация Doka, вулкан Поас и Ла-Пас
+  title: Кофейная плантация Дока, вулкан Поас и Ла-Пас
   places:
   - Вулкан Поас
   text: |-
-    После завтрака вы отправитесь на кофейную плантацию Doka, где выращивают коста-риканский кофе. Во время экскурсии можно проследить весь путь зерна: выращивание, сбор, обработку и обжарку. Здесь же можно купить кофе.
+    После завтрака вы отправитесь на кофейную плантацию Дока, где выращивают коста-риканский кофе. Во время экскурсии можно проследить весь путь зерна: выращивание, сбор, обработку и обжарку. Здесь же можно купить кофе.
 
     Далее маршрут идет в национальный парк Volcan Poas. По мере подъема к вулкану меняются температура и растительность. По дороге встречаются кофейные плантации, цветочные теплицы и поля клубники. На Поасе вы увидите кратер с сернистыми фумаролами и познакомитесь с разными экосистемами национального парка.
 
@@ -291,6 +292,7 @@ routeDestinations:
 - destination_costa_rica_zaliv_drejk
 - destination_costa_rica_nacionalnyj_park_korkovado
 - destination_costa_rica_ostrov_kano
+- destination_costa_rica_doka_estate
 primaryThemes: ["theme_wildlife"]
 themes: ["theme_beach","theme_adventure"]
 ---

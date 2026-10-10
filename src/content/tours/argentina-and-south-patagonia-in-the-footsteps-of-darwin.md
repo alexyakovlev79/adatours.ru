@@ -11,9 +11,14 @@ searchAliases:
 countries:
   - country_argentina
 destinations:
-  - destination_argentina_mendoza
-  - destination_argentina_akonkagua
-  - destination_argentina_puente_de_inka
+- destination_argentina_mendoza
+- destination_argentina_akonkagua
+- destination_argentina_puente_de_inka
+- destination_argentina_confluencia
+- destination_argentina_plaza_francia
+- destination_argentina_plaza_de_mulas
+- destination_argentina_nido_de_condores
+- destination_argentina_cerro_bonete
 audiences: []
 format: "Экспедиция"
 durationDays: 20

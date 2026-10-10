@@ -12,6 +12,8 @@ destinations:
 - destination_venezuela_ostrov_margarita
 - destination_venezuela_kanon_kavak
 - destination_venezuela_tepuj_kuravajna
+- destination_venezuela_nacionalnyj_park_avila
+- destination_venezuela_pozo_azul_canaima
 audiences: []
 route:
 - Каракас

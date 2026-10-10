@@ -18,10 +18,11 @@ destinations:
 - destination_costa_rica_reka_tarkoles
 - destination_costa_rica_kepos
 - destination_costa_rica_manuel_antonio
+- destination_costa_rica_doka_estate
 audiences: []
 route:
 - Сан-Хосе
-- кофейная плантация Doka
+- кофейная плантация Дока
 - вулкан Поас
 - Ла-Пас
 - Тортугеро
@@ -44,11 +45,11 @@ itinerary:
   - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
     alt: Сан Хосе
 - day: 2
-  title: Кофейная плантация Doka - вулкан Поас - Ла-Пас
+  title: Кофейная плантация Дока - вулкан Поас - Ла-Пас
   places:
   - Вулкан Поас
   text: |-
-    Отправляемся на кофейную плантацию Doka, где выращивают коста-риканский кофе. Вы познакомитесь с процессом выращивания, сбора, обработки и обжарки зерен. Здесь же можно купить кофе по местным ценам.
+    Отправляемся на кофейную плантацию Дока, где выращивают коста-риканский кофе. Вы познакомитесь с процессом выращивания, сбора, обработки и обжарки зерен. Здесь же можно купить кофе по местным ценам.
 
     Далее переезд в Национальный парк Volcan Poas. По мере подъема меняются температура и растительность. По дороге видны кофейные плантации, цветочные теплицы и посадки клубники.
 
@@ -239,6 +240,7 @@ routeDestinations:
 - destination_costa_rica_reka_tarkoles
 - destination_costa_rica_kepos
 - destination_costa_rica_manuel_antonio
+- destination_costa_rica_doka_estate
 primaryThemes: ["theme_wildlife"]
 themes: ["theme_adventure","theme_beach","theme_gastronomy_wine"]
 ---

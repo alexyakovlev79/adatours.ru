@@ -17,6 +17,7 @@ destinations:
 - destination_brazil_tijuca_national_park
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+- destination_argentina_garganta_del_diablo
 routeDestinations:
 - destination_brazil_sao_paulo
 - destination_brazil_ribeirao_preto
@@ -25,6 +26,7 @@ routeDestinations:
 - destination_brazil_tijuca_national_park
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
+- destination_argentina_garganta_del_diablo
 primaryThemes:
 - theme_events
 - theme_wildlife

@@ -20,6 +20,7 @@ destinations:
 - destination_brazil_reka_rio_da_prata
 - destination_brazil_vodopad_boka_da_onsa
 - destination_brazil_reka_pregias
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро (2 ночи)
@@ -266,6 +267,7 @@ routeDestinations:
 - destination_brazil_reka_rio_da_prata
 - destination_brazil_vodopad_boka_da_onsa
 - destination_brazil_reka_pregias
+- destination_brazil_praia_vermelha
 primaryThemes: ["theme_wildlife"]
 themes: ["theme_adventure","theme_culture"]
 ---

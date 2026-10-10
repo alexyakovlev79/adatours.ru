@@ -12,18 +12,20 @@ countries:
   - country_argentina
   - country_chile
 destinations:
-  - destination_argentina_buenos_aires
-  - destination_argentina_ushuajya
-  - destination_argentina_el_calafate
-  - destination_chile_puerto_natales_torres_del_pajne
-  - destination_chile_santyago_de_chili
-  - destination_argentina_el_chalten
-  - destination_argentina_lednik_perito_moreno
-  - destination_argentina_nacionalnyj_park_los_glasyares
-  - destination_argentina_nacionalnyj_park_terra_del_fuego
-  - destination_argentina_ozero_eskondido_ognennaya_zemlya
-  - destination_argentina_ostrov_martilo
-  - destination_chile_dolina_majpo
+- destination_argentina_buenos_aires
+- destination_argentina_ushuajya
+- destination_argentina_el_calafate
+- destination_chile_puerto_natales_torres_del_pajne
+- destination_chile_santyago_de_chili
+- destination_argentina_el_chalten
+- destination_argentina_lednik_perito_moreno
+- destination_argentina_nacionalnyj_park_los_glasyares
+- destination_argentina_nacionalnyj_park_terra_del_fuego
+- destination_argentina_ozero_eskondido_ognennaya_zemlya
+- destination_argentina_ostrov_martilo
+- destination_chile_dolina_majpo
+- destination_argentina_laguna_capri
+- destination_argentina_laguna_de_los_tres
 audiences:
   - private
 format: Частный
@@ -152,13 +154,13 @@ itinerary:
         alt: "Эль-Калафате и ледник Перито-Морено"
         intendedSlot: "itinerary:day-6"
   - day: 7
-    title: "Эль-Калафате - Эль-Чалтен: Лагуна Капри"
+    title: "Эль-Калафате - Эль-Чалтен: Лагуна-Капри"
     places:
       - "Эль-Калафате"
       - "Эль-Чалтен"
-      - "лагуна Капри"
+      - "Лагуна-Капри"
     text: |-
-      Трансфер в Эль-Чалтен. После прибытия начинается треккинг к Лагуне Капри.
+      Трансфер в Эль-Чалтен. После прибытия начинается треккинг к Лагуне-Капри.
       
       Это маршрут на полдня для тех, кто хочет увидеть Фицрой без длинного похода. Начало тропы находится в конце деревни, у старого дома, известного как «Желтое кресло».
       
@@ -166,7 +168,7 @@ itinerary:
       
       Примерно через 45 минут вы достигнете первой смотровой площадки, откуда виден массив Фицрой и окружающие пики Пойсеннот, Сент-Экзюпери, Мермоз и Гийомет.
       
-      Неподалеку от площадки тропа раздваивается, и одно ответвление ведет к Лагуне Капри. Озеро окружено лесом, рядом расположен кемпинг. Обратная дорога в Эль-Чалтен проходит в основном на спуск.
+      Неподалеку от площадки тропа раздваивается, и одно ответвление ведет к Лагуне-Капри. Озеро окружено лесом, рядом расположен кемпинг. Обратная дорога в Эль-Чалтен проходит в основном на спуск.
     images:
       - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-7-enhanced-20261006.webp
         alt: "Эль-Чалтен, Патагония"
@@ -187,7 +189,7 @@ itinerary:
       
       Для участников, готовых к дополнительной нагрузке, гид предлагает подъем к Лагуне-де-лос-Трес. На этом участке нужно набрать около 500 м высоты, подъем занимает примерно 1 час. Сверху открывается вид на массив Фицрой, лагуну и ледники. Рядом можно увидеть Лагуну Сусиа. Финальный подъем заметно тяжелее предыдущих участков, поэтому именно он становится главной физической частью этого дня.
       
-      После отдыха и обеда начинается спуск в Эль-Чалтен. Обратный маршрут проходит через смотровую площадку Лагуна Капри.
+      После отдыха и обеда начинается спуск в Эль-Чалтен. Обратный маршрут проходит через смотровую площадку Лагуна-Капри.
     images:
       - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-8-enhanced-20261006.webp
         alt: "Эль-Чалтен и Фицрой"
@@ -300,7 +302,7 @@ themes: ["theme_culture"]
 
 Эта программа проходит через Аргентину и Чили и почти целиком строится вокруг Патагонии. Начало путешествия, Буэнос-Айрес, дает время увидеть столицу, ее старые кварталы и танго. Затем маршрут резко уходит на юг, в Ушуайю, к озерам Фаньяно и Эскондидо и Национальному парку «Тьерра-дель-Фуего».
 
-После Огненной Земли вы отправитесь в Эль-Калафате к леднику Перито-Морено, а затем в Эль-Чалтен, где предусмотрены 2 разных треккинговых дня. Первый маршрут короче и ведет к Лагуне Капри с видами на Фицрой. Второй занимает целый день и поднимается к Лагуне-де-лос-Трес, почти к подножию знаменитого массива.
+После Огненной Земли вы отправитесь в Эль-Калафате к леднику Перито-Морено, а затем в Эль-Чалтен, где предусмотрены 2 разных треккинговых дня. Первый маршрут короче и ведет к Лагуне-Капри с видами на Фицрой. Второй занимает целый день и поднимается к Лагуне-де-лос-Трес, почти к подножию знаменитого массива.
 
 Дальше программа пересекает границу Чили. Пуэрто-Наталес становится базой для поездки в Торрес-дель-Пайне, где патагонская степь, ледники и озера окружают гранитные башни парка. Последняя часть путешествия проходит в Сантьяго-де-Чили: исторический центр, современные районы и винодельни долины Майпо.
 

@@ -14,6 +14,7 @@ destinations:
 - destination_brazil_masejo
 - destination_brazil_alagoas
 - destination_brazil_angra_dos_reis
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро, 5 ночей
@@ -162,7 +163,7 @@ itinerary:
     Во второй половине дня вас встретит русскоговорящий гид.
 
 
-    Трансфер ведет к Praia Vermelha.
+    Трансфер ведет к Прайя-Вермелья.
 
 
     Первый участок канатной дороги поднимает на гору Urca.
@@ -466,6 +467,7 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_masejo
 - destination_brazil_alagoas
+- destination_brazil_praia_vermelha
 primaryThemes:
 - theme_events
 - theme_beach

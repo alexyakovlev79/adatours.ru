@@ -8,13 +8,15 @@ countries:
   - country_brazil
   - country_argentina
 destinations:
-  - destination_brazil_sao_paulo
-  - destination_brazil_iguacu
-  - destination_brazil_rio
-  - destination_brazil_ilha_grande
-  - destination_brazil_paraty
-  - destination_argentina_puerto_iguasu
-  - destination_brazil_trindadi_parati
+- destination_brazil_sao_paulo
+- destination_brazil_iguacu
+- destination_brazil_rio
+- destination_brazil_ilha_grande
+- destination_brazil_paraty
+- destination_argentina_puerto_iguasu
+- destination_brazil_trindadi_parati
+- destination_brazil_tijuca_national_park
+- destination_brazil_praia_vermelha
 audiences:
   - couples
   - private

@@ -9,6 +9,7 @@ countries:
 destinations:
 - destination_brazil_rio
 - destination_brazil_angra_dos_reis
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -138,7 +139,7 @@ itinerary:
     Затем канатная дорога ведет на вершину Сахарной Головы.
 
 
-    Отсюда видны Copacabana, горы Dois Irmaos и Gavea, Praia Vermelha, залив Guanabara, мост Niteroi, Botafogo, центральные районы и Христос-Искупитель на Corcovado.
+    Отсюда видны Copacabana, горы Dois Irmaos и Gavea, Прайя-Вермелья, залив Guanabara, мост Niteroi, Botafogo, центральные районы и Христос-Искупитель на Corcovado.
 
 
     После спуска предусмотрен обед в местном ресторане.
@@ -271,6 +272,7 @@ routeCountries:
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_angra_dos_reis
+- destination_brazil_praia_vermelha
 primaryThemes:
 - theme_culture
 themes:

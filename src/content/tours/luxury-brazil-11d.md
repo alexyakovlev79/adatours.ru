@@ -8,12 +8,13 @@ countries:
   - country_brazil
   - country_argentina
 destinations:
-  - destination_brazil_rio
-  - destination_brazil_iguacu
-  - destination_brazil_buzios
-  - destination_brazil_angra_dos_reis
-  - destination_brazil_ilha_grande
-  - destination_argentina_puerto_iguasu
+- destination_brazil_rio
+- destination_brazil_iguacu
+- destination_brazil_buzios
+- destination_brazil_angra_dos_reis
+- destination_brazil_ilha_grande
+- destination_argentina_puerto_iguasu
+- destination_brazil_tijuca_national_park
 audiences:
   - couples
   - private

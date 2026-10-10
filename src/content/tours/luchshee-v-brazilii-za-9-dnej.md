@@ -12,6 +12,7 @@ destinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_buzios
+- destination_brazil_praia_vermelha
 audiences: []
 route:
 - Рио-де-Жанейро, 3 ночи
@@ -57,7 +58,7 @@ itinerary:
     Предусмотрена полудневная экскурсия продолжительностью около 4 часов.
 
 
-    Сначала вы отправитесь на Praia Vermelha, Красный пляж, откуда начинается подъем по канатной дороге.
+    Сначала вы отправитесь на Прайя-Вермелья, Красный пляж, откуда начинается подъем по канатной дороге.
 
 
     Первая остановка - гора Urca.
@@ -326,6 +327,7 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_buzios
+- destination_brazil_praia_vermelha
 primaryThemes:
 - theme_beach
 - theme_wildlife

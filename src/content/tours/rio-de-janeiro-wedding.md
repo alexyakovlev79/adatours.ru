@@ -7,11 +7,12 @@ status: approved
 searchAliases:
   - "свадебная церемония в Рио-де-Жанейро"
   - "свадьба на пляже в Рио"
-  - "Praia Vermelha wedding"
+  - "Прайя-Вермелья wedding"
 countries:
   - country_brazil
 destinations:
-  - destination_brazil_rio
+- destination_brazil_rio
+- destination_brazil_praia_vermelha
 audiences: [couples, private]
 route:
   - Рио-де-Жанейро

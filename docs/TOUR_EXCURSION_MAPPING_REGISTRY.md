@@ -1472,3 +1472,17 @@ Tour: `tour_brazil_three_ecosystems_8_days`; источник https://docs.googl
 | tour_colombia_essential_5_days | excursion_source_colombia_bogota_zipaquira_con_guatavita | День 2, contentBlock 1 | canonical_excursion_linked |
 | tour_colombia_essential_5_days | excursion_source_siti_tur_po_kartakhene | День 3, contentBlock 1 | canonical_excursion_linked |
 | tour_colombia_essential_5_days | excursion_colombia_san_pedro_majagua_day_trip | День 4, contentBlock 1 | canonical_excursion_linked |
+
+
+## P041 — Колумбия за 7 дней, 10.10.2026
+
+Word: https://docs.google.com/document/d/16Yho_hI1w_jZ1yah_LrAH8cKU0V5Wddt/edit. Все 7 дней/6 ночей, 6 тарифов, отели и коммерческие условия сверены.
+
+| Tour ID | Excursion ID | Позиция | Результат |
+|---|---|---|---|
+| tour_colombia_highlights_7_days | excursion_source_siti_tur_v_bogote | День 1, contentBlock 1 | canonical_excursion_linked |
+| tour_colombia_highlights_7_days | excursion_source_colombia_bogota_zipaquira_con_guatavita | День 2, contentBlock 1 | canonical_excursion_linked |
+| tour_colombia_highlights_7_days | excursion_colombia_medellin_comuna13_el_castillo | День 3, contentBlock 1 | canonical_excursion_linked |
+| tour_colombia_highlights_7_days | excursion_colombia_guatape_rock_and_town | День 4, contentBlock 1 | canonical_excursion_linked |
+| tour_colombia_highlights_7_days | excursion_source_siti_tur_po_kartakhene | День 5, contentBlock 1 | canonical_excursion_linked |
+| tour_colombia_highlights_7_days | excursion_colombia_san_pedro_majagua_day_trip | День 6, contentBlock 1 | canonical_excursion_linked |

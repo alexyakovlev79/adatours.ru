@@ -11,13 +11,13 @@
 | № | Показатель | Сейчас |
 |---|---|---:|
 | 1 | Программы Drive без повторных копий файлов | 168 программ / 192 файлов |
-| 2 | Неархивные страницы туров | 313 |
+| 2 | Неархивные страницы туров | 314 |
 | 3 | Архивные страницы туров | 31 |
 | 4 | Страницы без соответствия в снимке Drive | 186 активных + 18 архивных |
 | 5 | Программы Drive с архивным соответствием | 15: 0 только в архиве, 15 также с активной страницей |
-| 6 | Программы Drive без активной страницы и без архива | 37; из них 0 уже имеют запись источников |
+| 6 | Программы Drive без активной страницы и без архива | 36; из них 0 уже имеют запись источников |
 
-**Очередь наличия страниц: 37 программ** — 0 из архива и 37 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
+**Очередь наличия страниц: 36 программ** — 0 из архива и 36 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
 
 Рабочая инструкция: [обновление описи](../workflows/tour-inventory.md). Редактируемый реестр: [JSON](../../data/audits/tour-inventory-drive-20261009.json). Этот Markdown генерируется, ручные пометки в нём будут перезаписаны.
 
@@ -26,7 +26,6 @@
 | ID программы | Программа / разделы Drive | Все файлы Drive | Соответствия сайта / реестра | Наличие | Работа с содержанием |
 |---|---|---|---|---|---|
 | `P013` | 3 Ecosystems Student group 2027 Amazon,Savannah,Pantanal 8d7n RUS.docx; 8 дн.; Mice Groups Incentives Congresses | [3 Ecosystems Student group 2027 Amazon,Savannah,Pantanal 8d7n RUS.docx](https://docs.google.com/document/d/1Teplr6p6WIA5ow9sf9yOkCzMjDmgX3B-/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | Не начато |
-| `P020` | The Best of Nicaragua 2027 10d9n RUS  com 20%.docx; 10 дн.; Nicaragua 2027 | [The Best of Nicaragua 2027 10d9n RUS  com 20%.docx](https://docs.google.com/document/d/1BFzfdAZ0Vt0mYe2YI8yc-4lL7Vd_HFPv/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | В работе; Word, таблицы и фото сверены. 10 дней, 4 новые экскурсии, 6 новых мест, 13 основных связей. Тарифы SGL 4196 USD / DBL 3342 USD, от 2 человек. Расхождения отелей и заголовка дня 6 сохранены как условия подтверждения; CI/deploy и Sheets ожидаются. |
 | `P022` | Guatemala_Belize_12d11n_2027_RUS.docx; 12 дн.; Belize 2027, Guatemala 2027 | [Guatemala_Belize_12d11n_2027_RUS.docx](https://docs.google.com/document/d/1KEDrQnYyaJJN2aL3fJfrNR-gAy21FLCK/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true); [Guatemala_Belize_12d11n_2027_RUS.docx](https://docs.google.com/document/d/1Ht66U8h6NUzf07VNwV9c6pH_v_uVNaAo/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | Не начато |
 | `P027` | Diving tour in Ecuador Galapagos 2027  RUS com 20%.docx; уточнить дн.; Ecuador  2027 | [Diving tour in Ecuador Galapagos 2027  RUS com 20%.docx](https://docs.google.com/document/d/1IJCi1k921IDssN0vGLsVmnOoQ5xTWT8o/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | Не начато |
 | `P034` | Venezuelan Beauty4d3n_RUS 20%COM.docx; 4 дн.; Venezuela 2027 | [Venezuelan Beauty4d3n_RUS 20%COM.docx](https://docs.google.com/document/d/1l3NZVOJImL-ZtZAmlFjBDPrOpyMT2C56/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | Не начато |
@@ -92,6 +91,7 @@
 | `P017` | Suriname, French Guiana &  Guyana 2027 14d13n RUS 20%.docx; 14 дн.; Guyana, Suriname, French Guiana 2027 | [Suriname, French Guiana &  Guyana 2027 14d13n RUS 20%.docx](https://docs.google.com/document/d/1eVwN7RYPJdoRT6dXtd-tudCwPXBk94xy/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Суринам, Гайана, Французская Гвиана](https://adatours.ru/multi-country/tour/suriname-guyana-french-guiana/) — активный; `tour_source_surinam_gajana_frantsuzskaya_gviana` | Активная страница есть | Не начато |
 | `P018` | Guianas highlights 2027 7d6n RUS 20%.docx; 7 дн.; Guyana, Suriname, French Guiana 2027 | [Guianas highlights 2027 7d6n RUS 20%.docx](https://docs.google.com/document/d/1ksPnw61-VzXdNjx3mRm3uuRTsEMaQyCl/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур в три страны Латинской Америки: Суринам, Гайана и Фр.Гвиана](https://adatours.ru/multi-country/tour/suriname-guyana-french-guiana-3-countries/) — активный; `tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana` | Активная страница есть | Не начато |
 | `P019` | Guianas experience 2027 9d8n RUS 20%.docx; 9 дн.; Guyana, Suriname, French Guiana 2027 | [Guianas experience 2027 9d8n RUS 20%.docx](https://docs.google.com/document/d/1ow3Iisp1magVaLjqQUtlijZTZAvYTeWp/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Приключение в Гвианах](https://adatours.ru/multi-country/tour/guianas-adventure/) — активный; `tour_source_priklyuchenie_v_gvianakh` | Активная страница есть | Не начато |
+| `P020` | The Best of Nicaragua 2027 10d9n RUS  com 20%.docx; 10 дн.; Nicaragua 2027 | [The Best of Nicaragua 2027 10d9n RUS  com 20%.docx](https://docs.google.com/document/d/1BFzfdAZ0Vt0mYe2YI8yc-4lL7Vd_HFPv/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Лучшее в Никарагуа: вулканы, Ометепе и Тихий океан](https://adatours.ru/nicaragua/tour/best-of-nicaragua-10-days/) — активный; `tour_nicaragua_best_10_days` | Активная страница есть | В работе; Word, таблицы и фото сверены. 10 дней, 4 новые экскурсии, 6 новых мест, 13 основных связей. Тарифы SGL 4196 USD / DBL 3342 USD, от 2 человек. Расхождения отелей и заголовка дня 6 сохранены как условия подтверждения; CI/deploy и Sheets ожидаются. |
 | `P021` | The best of El Salvador 2027 6d5n RUS com 20%.docx; 6 дн.; El Salvador 2027 | [The best of El Salvador 2027 6d5n RUS com 20%.docx](https://docs.google.com/document/d/1lWeAiB-7v8o63YZI4qIOQlpSQL2Zht6R/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур в Сальвадор: Сан-Сальвадор, Сучитото, Залив Фонсека](https://adatours.ru/el-salvador/tour/el-salvador-san-salvador-suchitoto-gulf-of-fonseca/) — активный; `tour_source_luchshee_v_salvadore` | Активная страница есть | Не начато |
 | `P023` | SAN PEDRO AMBERGRIS CAYE 5d4n 2027  Rus  com 20%.docx; 5 дн.; Belize 2027 | [SAN PEDRO AMBERGRIS CAYE 5d4n 2027  Rus  com 20%.docx](https://docs.google.com/document/d/1RvHUyc1osz8RgXnIpjvGvMHmTj9K9eHL/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Белиз](https://adatours.ru/belize/tour/belize-san-pedro-ambergris-caye/) — активный; `tour_source_beliz_san_pedro_ostrov_ambergris_kaje` | Активная страница есть | Не начато |
 | `P024` | INLAND- ISLAND 8d7n 2027 Rus com 20%.docx; 8 дн.; Belize 2027 | [INLAND- ISLAND 8d7n 2027 Rus com 20%.docx](https://docs.google.com/document/d/1P8McpHZEYpzowGVMvHTkRFs_sKwdpM16/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Белиз: Приключение «Материк / Остров»](https://adatours.ru/belize/tour/belize-mainland-island-adventure/) — активный; `tour_source_beliz_priklyuchenie_materik_ostrov` | Активная страница есть | Не начато |
@@ -213,7 +213,6 @@
 | Программа Drive | Кандидаты в реестре |
 |---|---|
 | `P013`: 3 Ecosystems Student group 2027 Amazon,Savannah,Pantanal 8d7n RUS.docx | [Индивидуальный тур в Бразилию: Северный Пантанал – водопады и реки](https://adatours.ru/brazil/tour/northern-pantanal-waterfalls-rivers/); `tour_source_severnyj_pantanal_vodopady_reki`; [Индивидуальный тур в Бразилию: Северный Пантанал, Водопады и Рио-де-Жанейро](https://adatours.ru/brazil/tour/northern-pantanal-waterfalls-rivers-rio-de-janeiro/); `tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro`; [Лучшие достопримечательности Эквадора и Амазонии за 15 дней](https://adatours.ru/ecuador/tour/mainland-ecuador-amazon-15-days/); `tour_source_kontinentalnyj_ekvador_amazoniya` |
-| `P020`: The Best of Nicaragua 2027 10d9n RUS  com 20%.docx | [VIP-тур в Коста-Рику и Никарагуа \| На частном самолете](https://adatours.ru/multi-country/tour/costa-rica-nicaragua-vip-private-plane/); `tour_source_vip_kosta_rika_nikaragua`; [Коста Рика Никарагуа](https://adatours.ru/multi-country/tour/costa-rica-nicaragua/); `tour_source_costa_rica_nicaragua_ru`; [Панама – Коста Рика- Никарагуа](https://adatours.ru/multi-country/tour/panama-costa-rica-nicaragua/); `tour_source_panama_kosta_rika_nikaragua` |
 | `P022`: Guatemala_Belize_12d11n_2027_RUS.docx | [Гватемала, Гондурас и Белиз](https://adatours.ru/multi-country/tour/guatemala-honduras-belize/); `tour_source_gvatemala_gonduras_i_beliz`; [Мир Майя](https://adatours.ru/multi-country/tour/maya-world/); `tour_source_mir_majya`; [Тур в Гватемалу: Гватемала Cити, Антигуа, Сантьяго Атитлан, Тикаль](https://adatours.ru/guatemala/tour/guatemala-guatemala-city-antigua-atitlan-tikal/); `tour_source_otkryvaya_gvatemalu` |
 | `P027`: Diving tour in Ecuador Galapagos 2027  RUS com 20%.docx | [Весь Эквадор на Новый год: Анды и Галапагосы](https://adatours.ru/ecuador/tour/complete-ecuador-new-year/); `tour_source_ves_ekvador_na_novyj_god`; [Весь Эквадор и Галапагосские острова](https://adatours.ru/ecuador/tour/complete-ecuador-galapagos-islands/); `tour_source_ves_ekvador_i_galapagosskie_ostrova`; [Эквадор: Кито – Галапагосские Острова](https://adatours.ru/ecuador/tour/ecuador-quito-galapagos-islands/); `tour_source_ekvador_kito_galapagosskie_ostrova` |
 | `P034`: Venezuelan Beauty4d3n_RUS 20%COM.docx | [Краски Венесуэлы](https://adatours.ru/venezuela/tour/colors-of-venezuela/); `tour_source_kraski_venesuely`; [Тур в Венесуэлу и Боливию \| Природа и культура за 12 дней](https://adatours.ru/multi-country/tour/venezuela-bolivia-nature-culture-12-days/); `tour_source_priroda_i_kultura_venesuely_bolivii`; [Тур в Венесуэлу и Колумбию на 12 дней (групповой с русским гидом)](https://adatours.ru/multi-country/tour/venezuela-colombia-group-tour-12-days/); `tour_source_ot_venesuely_do_kolumbii` |
@@ -605,6 +604,7 @@
 | `tour_argentina_experience_6_days` | [Аргентина за 6 дней: Буэнос-Айрес, Тигре и традиции гаучо](https://adatours.ru/argentina/tour/argentina-experience-6-days/) | Активная страница | `P005` |
 | `tour_brazil_agribusiness_14_days` | [Агробизнес в Бразилии: Рибейран-Прету, Амазония, Рио и Игуасу](https://adatours.ru/brazil/tour/brazil-agribusiness-14-days/) | Активная страница | `P008` |
 | `tour_iguazu_incentive_3_days` | [Игуасу за 3 дня: две стороны водопадов и Macuco Safari](https://adatours.ru/brazil/tour/iguazu-incentive-3-days/) | Активная страница | `P009` |
+| `tour_nicaragua_best_10_days` | [Лучшее в Никарагуа: вулканы, Ометепе и Тихий океан](https://adatours.ru/nicaragua/tour/best-of-nicaragua-10-days/) | Активная страница | `P020` |
 
 ## 6. Исключённые файлы
 
@@ -616,4 +616,4 @@
 
 ## 7. Предупреждения целостности
 
-- drive_program_1BFzfdAZ0Vt0mYe2YI8yc-4lL7Vd_HFPv: неизвестный entityId tour_nicaragua_best_10_days
+Нет.

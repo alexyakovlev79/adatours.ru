@@ -11,6 +11,7 @@ countries: [country_brazil, country_argentina]
 routeCountries: [country_brazil]
 destinations:
   - destination_brazil_rio
+  - destination_brazil_tijuca_national_park
   - destination_brazil_iguacu
   - destination_argentina_puerto_iguasu
   - destination_argentina_garganta_del_diablo
@@ -18,6 +19,7 @@ destinations:
   - destination_brazil_petropolis
 routeDestinations:
   - destination_brazil_rio
+  - destination_brazil_tijuca_national_park
   - destination_brazil_iguacu
   - destination_argentina_puerto_iguasu
   - destination_argentina_garganta_del_diablo
@@ -66,7 +68,7 @@ itinerary:
     places: [Рио-де-Жанейро]
   - day: 3
     title: Корковаду и Христос-Искупитель
-    places: [Рио-де-Жанейро]
+    places: [Рио-де-Жанейро, Национальный парк Тижука]
     text: |-
       После завтрака групповая экскурсия SIB с русскоговорящим гидом. На станции вы сядете на поезд, который поднимается через лес Тижука к вершине Корковаду.
 

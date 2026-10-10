@@ -16,6 +16,9 @@ destination: destination_brazil_itakurusa
 destinationName: Итакуруса
 relatedDestinations:
 - destination_brazil_rio
+hero:
+  src: /media/destinations/destination_brazil_itakurusa/hero-generated-20261008-resumed.webp
+  alt: Итакуруса — Бразилия
 sourceSnapshot: https://drive.google.com/file/d/1krMKz4X0Ls4AyhJchoT4xa-dRG0Qo3jC/view?usp=drivesdk
 themes: ["theme_beach"]
 ---
@@ -33,3 +36,4 @@ themes: ["theme_beach"]
 Затем возвращение на шхуне в Рио.
 
 **Продолжительность:** около 8 часов.
+

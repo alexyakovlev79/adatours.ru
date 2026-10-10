@@ -1504,3 +1504,19 @@ Word: https://docs.google.com/document/d/16Yho_hI1w_jZ1yah_LrAH8cKU0V5Wddt/edit.
 | 8 | `excursion_bolivia_la_paz_moon_valley_tiwanaku` | Создана |
 | 9 | `excursion_peru_paracas_nazca_full_day` | Переиспользована |
 | 10 | `excursion_lima_larco_museum_visit` | Переиспользована |
+
+
+## P040 — Word Анны, 10.10.2026
+
+`tour_colombia_complete_11_days`: 11 обычных дней и 8 канонических модулей. Коммерческие условия тура сохранены в днях; несовпадение ночевок таблицы отелей и программы вынесено в условия до оплаты.
+
+| День | excursion_id | Результат |
+|---|---|---|
+| 1 | `excursion_source_siti_tur_v_bogote` | Каноническая экскурсия подключена |
+| 2 | `excursion_source_colombia_bogota_zipaquira_con_guatavita` | Каноническая экскурсия подключена |
+| 3 | `excursion_source_salento_i_dolina_kokora` | Каноническая экскурсия подключена |
+| 3 | `excursion_colombia_el_ocaso_coffee_tour` | Каноническая экскурсия подключена |
+| 4 | `excursion_colombia_coffee_region_zipline_horseback` | Каноническая экскурсия подключена |
+| 5 | `excursion_source_siti_tur_po_kartakhene` | Каноническая экскурсия подключена |
+| 9 | `excursion_colombia_medellin_comuna13_el_castillo` | Каноническая экскурсия подключена |
+| 10 | `excursion_colombia_guatape_rock_and_town` | Каноническая экскурсия подключена |

@@ -1,7 +1,7 @@
 {
   "id": "excursion_colombia_el_ocaso_coffee_tour",
   "type": "excursion",
-  "name": "Кофейная ферма El Ocaso: от кофейной ягоды до чашки",
+  "name": "Кофейная ферма Эль-Окасо: от кофейной ягоды до чашки",
   "url": "/colombia/salento/el-ocaso-coffee-farm-tour/",
   "slug": "el-ocaso-coffee-farm-tour",
   "contentPath": "src/content/excursions/colombia-el-ocaso-coffee-tour.md",
@@ -39,9 +39,19 @@
     "status": "ready",
     "sourceUrl": null,
     "provenance": {
-      "kind": "parent_tour_excerpt",
-      "parentTourId": "tour_source_tur_v_kolumbiyu_na_10_dnej"
-    }
+      "kind": "source_aware_selection",
+      "createdAt": "2026-10-10",
+      "note": "Ready coffee-bean photograph replaces incorrectly selected cacao fruit; no new generation."
+    },
+    "current": [
+      {
+        "url": "/media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp",
+        "alt": "Кофейные зерна колумбийского кофе",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero"
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
@@ -50,5 +60,8 @@
   },
   "themes": [
     "theme_gastronomy_wine"
+  ],
+  "relatedDestinationIds": [
+    "destination_colombia_el_ocaso_coffee_farm"
   ]
 }

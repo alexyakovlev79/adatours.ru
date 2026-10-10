@@ -3,26 +3,26 @@ id: excursion_colombia_el_ocaso_coffee_tour
 locale: ru
 slug: el-ocaso-coffee-farm-tour
 status: published
-title: 'Кофейная ферма El Ocaso: от кофейной ягоды до чашки'
+title: 'Кофейная ферма Эль-Окасо: от кофейной ягоды до чашки'
 country: country_colombia
 destination: destination_colombia_salento
-relatedDestinations: []
-lead: 'На кофейной ферме El Ocaso знакомство с кофе проходит через весь цикл производства: выращивание, сбор ягод,
-  обработку, сушку, обжарку и дегустацию. В завершение подают кофейный лимонад.'
+relatedDestinations:
+- destination_colombia_el_ocaso_coffee_farm
+lead: 'На кофейной ферме El Ocaso знакомство с кофе проходит через весь цикл производства: выращивание, сбор ягод, обработку, сушку,
+  обжарку и дегустацию. В завершение подают кофейный лимонад.'
 sourceSnapshot: https://drive.google.com/file/d/1T-ie16JSmpharVOTK7tU7XAfg2nYPIPy/view?usp=drivesdk
-updatedAt: '2026-10-04'
+updatedAt: '2026-10-10'
 priceFrom: null
 currency: USD
 hero:
-  src: "/media/destinations/pereira/featureBands-0-image-enhanced-20261007.webp"
-  hover: "Колумбия: плод какао рядом с чашкой напитка и выпечкой"
-  alt: "Раскрытый плод какао, чашка напитка и выпечка, Колумбия"
+  src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
+  alt: Кофейные зерна колумбийского кофе
 included:
 - Знакомство с производством кофе и дегустация по программе.
 notIncluded: []
-themes: ["theme_gastronomy_wine"]
+themes:
+- theme_gastronomy_wine
 ---
-
 
 Во второй половине дня вы посетите ферму El Ocaso на высоте около 1500 метров в Центральных Андах. Дорога проходит среди кофейных кустов, зеленых склонов и влажного горного леса.
 

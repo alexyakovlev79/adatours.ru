@@ -3,10 +3,10 @@ id: excursion_jardim_amazonia_forest_canoe
 locale: ru
 slug: jardim-amazonia-forest-canoe
 status: approved
-title: 'Jardim da Amazônia: лесные тропы и каноэ'
+title: 'Лодж «Жардим-да-Амазония»: лесные тропы и каноэ'
 country: country_brazil
 destination: destination_brazil_jardim_da_amazonia
-destinationName: Jardim da Amazônia
+destinationName: Лодж «Жардим-да-Амазония»
 relatedDestinations:
 - destination_brazil_rio_claro_jardim_amazonia
 - destination_brazil_anaconda_lake_jardim_amazonia
@@ -22,9 +22,11 @@ lead: Прогулка по лесным тропам, рассказ о кау�
 notes: []
 sourceSnapshot: https://docs.google.com/document/d/1Teplr6p6WIA5ow9sf9yOkCzMjDmgX3B-/edit
 updatedAt: '2026-10-10'
+searchAliases:
+- 'Jardim da Amazônia: лесные тропы и каноэ'
 ---
 
-## Тропы вокруг Jardim da Amazônia
+## Тропы вокруг лоджа «Жардим-да-Амазония»
 
 Прогулка проходит по лесным тропам вокруг лоджа. Гид знакомит с местной флорой и фауной и рассказывает об истории добычи каучука, которая играла важную роль в жизни региона.
 

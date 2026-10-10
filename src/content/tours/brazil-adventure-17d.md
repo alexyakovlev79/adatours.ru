@@ -72,8 +72,8 @@ highlights:
     image:
       src: /media/tours/brazil-adventure-17d/highlights/06-bonito-clear-water-enhanced-20260930.webp
       alt: "Прозрачная река Бонито с рыбами"
-  - title: "Abismo Anhumas"
-    text: "Дополнительный Abismo Anhumas предлагает совсем другой формат: вертикальный спуск через узкую расщелину в огромную пещеру. Внизу находится подземное озеро, над водой висят гигантские сталактиты. Ограниченное число посетителей и прохладная тишина создают ощущение, что этот участок маршрута существует отдельно от яркого тропического мира снаружи."
+  - title: "Бездна Аньюмас"
+    text: "Дополнительный Аньюмас предлагает совсем другой формат: вертикальный спуск через узкую расщелину в огромную пещеру. Внизу находится подземное озеро, над водой висят гигантские сталактиты. Ограниченное число посетителей и прохладная тишина создают ощущение, что этот участок маршрута существует отдельно от яркого тропического мира снаружи."
     image:
       src: /media/tours/brazil-adventure-17d/highlights/07-abismo-anhumas-enhanced-20260930.webp
       alt: "Подземное озеро в пещере Абисму-Аньюмас"
@@ -227,7 +227,7 @@ faq:
     answer: Подойдет тем, кто готов к нескольким внутренним перелетам и активной смене регионов.
 sourceUrl: https://brasiltours.ru/priklyuchencheskij-tur-v-braziliyu-na-17-dnej
 sourceSnapshot: page_texts_original/priklyuchencheskij-tur-v-braziliyu-na-17-dnej__7dceac50.md
-updatedAt: 2026-09-30
+updatedAt: '2026-10-10'
 primaryThemes: ["theme_adventure","theme_wildlife"]
 themes: ["theme_culture","theme_beach"]
 ---

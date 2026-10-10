@@ -143,7 +143,7 @@ itinerary:
 
     После обеда запланирован снорклинг в реке Рио-Сукури. Вода здесь настолько прозрачная, что животных можно увидеть на расстоянии до 50 метров.
 
-    **Abismo Anhumas**
+    **Аньюмас**
 
     Дополнительно
 
@@ -252,7 +252,7 @@ notes:
 - Ada Tours может заменить указанные отели другими отелями той же категории.
 - Ada Tours может изменить порядок экскурсий, сохранив программу тура.
 - Ada Tours не несет ответственности за завтраки в отелях, пропущенные из-за раннего выселения при раннем перелете или экскурсии.
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-10'
 sourceUrl: https://brasiltours.ru/novogodnie-priklyucheniya-v-brazilii
 sourceSnapshot: https://drive.google.com/file/d/1_DcUsgf9GXkz391vd4urjMqby7vxwsUe/view?usp=drivesdk
 durationDays: 12

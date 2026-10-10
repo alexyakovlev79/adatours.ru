@@ -1,4 +1,4 @@
-/** Audit every active country/place/tour relation and its reachable HTML links. */
+/** Audit every active country/place/tour/excursion relation and its reachable HTML links. */
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -6,8 +6,11 @@ import yaml from 'js-yaml';
 import { isActiveEntity } from '../src/lib/archive.mjs';
 import {
   countryPath, destinationCountryPath, destinationPath,
+  excursionCountryPath, excursionDestinationPath, excursionGeography, excursionPath, tourExcursionPath,
   optionalTourDestinationPath, tourCountryPath, tourDestinationPath, tourPath,
 } from '../src/lib/routes.ts';
+import { excursionDestinationIds } from '../src/lib/destination-links.mjs';
+import { excursionIdsForTour } from '../src/lib/excursion-popularity.ts';
 import { tourHasMainCountry, tourHasMainDestination } from '../src/lib/tour-relations.ts';
 
 const dataOnly = process.argv.includes('--data-only');
@@ -19,6 +22,9 @@ const collection = (name) => readdirSync(`src/content/${name}`).filter((file) =>
 const countries = collection('countries');
 const destinations = collection('destinations');
 const tours = collection('tours');
+const excursions = collection('excursions');
+const excursionById = new Map(excursions.map((data) => [data.id, data]));
+const compactExcursionById = new Map(JSON.parse(read('data/source-index/catalogs/excursions.json')).entries.map((data) => [data.id, data]));
 const countryById = new Map(countries.map((data) => [data.id, data]));
 const destinationById = new Map(destinations.map((data) => [data.id, data]));
 const plannedById = new Map(JSON.parse(read('src/data/catalog/destinations.json')).map((data) => [data.id, data]));
@@ -26,13 +32,16 @@ const compactById = new Map(JSON.parse(read('data/source-index/catalogs/tours.js
 const indexById = new Map(JSON.parse(read('data/source-index/index.json')).entries.map((data) => [data.id, data]));
 const futureIds = new Set();
 const counts = { countries: countries.length, destinations: destinations.length, tours: tours.length,
+  excursions: excursions.length, countryExcursion: 0, placeExcursion: 0, relatedPlaceExcursion: 0, reservedPlaceExcursion: 0, tourExcursion: 0,
   countryPlace: 0, countryTour: 0, excludedAdditionalCountryTour: 0, placeTour: 0, optionalPlaceTour: 0, reservedPlaceTour: 0 };
 const fileFor = (path) => resolve(output, `.${path}`, 'index.html');
 const linksCache = new Map();
 const links = (path) => {
   if (!linksCache.has(path)) {
     assert.ok(existsSync(fileFor(path)), `Published page is missing: ${path}`);
-    const anchors = new Set([...read(fileFor(path)).matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["'][^>]*>/gi)]
+    const main = read(fileFor(path)).match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1];
+    assert.ok(main, `Published page has no main content: ${path}`);
+    const anchors = new Set([...main.matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["'][^>]*>/gi)]
       .map((match) => new URL(match[1].replaceAll('&amp;', '&'), 'https://adatours.ru').pathname));
     linksCache.set(path, anchors);
   }
@@ -116,6 +125,46 @@ for (const tour of tours) {
     reverse(destinationPath(place), tourPath(tour), main ? tourDestinationPath(place) : optionalTourDestinationPath(place));
     counts.placeTour++;
     if (!main) counts.optionalPlaceTour++;
+  }
+}
+for (const excursion of excursions) {
+  const entry = JSON.parse(read(`data/source-index/entries/${excursion.id}.json`));
+  for (const [label, record] of [['entry', entry], ['compact catalog', compactExcursionById.get(excursion.id)], ['index', indexById.get(excursion.id)]]) {
+    assert.ok(record, `${excursion.id}: missing ${label}`);
+    assert.deepEqual(record.countryIds, [excursion.country], `${excursion.id}: country differs in ${label}`);
+    assert.deepEqual(record.destinationIds, excursion.destination ? [excursion.destination] : [], `${excursion.id}: primary place differs in ${label}`);
+    assert.deepEqual(record.relatedDestinationIds ?? [], excursion.relatedDestinations ?? [], `${excursion.id}: related places differ in ${label}`);
+  }
+  assert.equal(new Set(excursion.relatedDestinations ?? []).size, (excursion.relatedDestinations ?? []).length, `${excursion.id}: duplicate related places`);
+  assert.ok(!(excursion.relatedDestinations ?? []).includes(excursion.destination), `${excursion.id}: primary place repeated as related`);
+  const country = countryById.get(excursionGeography(excursion).country.id);
+  assert.ok(country, `${excursion.id}: unpublished geographic country`);
+  direct(excursionPath(excursion), countryPath(country));
+  reverse(countryPath(country), excursionPath(excursion), excursionCountryPath(country));
+  counts.countryExcursion++;
+  for (const id of excursionDestinationIds(excursion)) {
+    const planned = plannedById.get(id);
+    assert.ok(planned, `${excursion.id}: unknown place ${id}`);
+    const place = destinationById.get(id);
+    if (!place) {
+      futureIds.add(id);
+      counts.reservedPlaceExcursion++;
+      if (!dataOnly) assert.ok(!links(excursionPath(excursion)).has(destinationPath(planned)), `Excursion links to an unpublished place: ${excursion.id} → ${id}`);
+      continue;
+    }
+    direct(excursionPath(excursion), destinationPath(place));
+    reverse(destinationPath(place), excursionPath(excursion), excursionDestinationPath(place));
+    counts.placeExcursion++;
+    if (id !== excursion.destination) counts.relatedPlaceExcursion++;
+  }
+}
+for (const tour of tours) {
+  for (const id of excursionIdsForTour({ data: tour })) {
+    const excursion = excursionById.get(id);
+    assert.ok(excursion, `${tour.id}: reference to an unpublished excursion ${id}`);
+    direct(tourPath(tour), excursionPath(excursion));
+    reverse(excursionPath(excursion), tourPath(tour), tourExcursionPath(excursion));
+    counts.tourExcursion++;
   }
 }
 console.log(JSON.stringify({ mode: dataOnly ? 'data' : 'data-and-html', ...counts,

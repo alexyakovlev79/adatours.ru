@@ -15,7 +15,7 @@ import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogMoreLink from '../components/editorial/CatalogMoreLink.astro';
 import { withBase } from '../lib/paths';
 import { destinationCatalogById } from '../lib/content-validation';
-import { destinationPath, excursionBreadcrumbs as buildExcursionBreadcrumbs, excursionGeography, excursionPath, tourExcursionPath, tourPath } from '../lib/routes';
+import { countryPath, destinationPath, excursionBreadcrumbs as buildExcursionBreadcrumbs, excursionGeography, excursionPath, tourExcursionPath, tourPath } from '../lib/routes';
 import { excursionDestinationIds } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsForTour } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
@@ -163,6 +163,12 @@ const excursionSchema = {
   />
 
   {stats.length > 0 && <TripStats stats={stats} variant="excursion" />}
+
+  {!archived && country && (
+    <nav class="container section--tight" aria-label="Страна экскурсии">
+      <p><a href={withBase(countryPath(country.data))}>{country.data.name}</a></p>
+    </nav>
+  )}
 
   <section class="excursion-copy section--tight">
     <div class="container prose">

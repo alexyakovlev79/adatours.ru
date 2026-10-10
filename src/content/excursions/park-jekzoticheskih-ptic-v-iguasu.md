@@ -9,6 +9,8 @@ searchAliases:
   - Парк птиц Игуасу
 country: country_brazil
 destination: destination_brazil_iguacu
+relatedDestinations:
+  - destination_brazil_parque_das_aves
 duration: 6 часов
 language: []
 priceFrom: 51

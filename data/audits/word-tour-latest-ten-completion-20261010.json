@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-10",
+  "scope": {
+    "even": [
+      "P008",
+      "P020",
+      "P022",
+      "P034",
+      "P036"
+    ],
+    "odd": [
+      "P009",
+      "P013",
+      "P027",
+      "P037",
+      "P039"
+    ],
+    "selection": "last five added programs per parity as of task start; not every consecutive program number"
+  },
+  "verification": {
+    "freshWordRead": true,
+    "linkedEntityPages": 159,
+    "dayAndExcursionImageDuplicates": 0,
+    "sourceReceiptsAndGptImageRegistryChecked": true,
+    "registeredTourPhotoSlotsCrossChecked": true,
+    "mainDeploymentBeforeRepair": {
+      "commit": "ffe73814d0eae3985ab78eb5814cbef06f478944",
+      "runId": 38061632210,
+      "conclusion": "success"
+    }
+  },
+  "findingsFixed": [
+    {
+      "program": "P008",
+      "problem": "Published guaranteed Bird Park visit missing from tour destinations and excursion secondary links",
+      "action": "Added canonical Bird Park to full and route lists in MD, exact entry and compact catalog, plus excursion related destinations"
+    },
+    {
+      "program": "P036",
+      "problem": "Deployed content, but no page/photo/Anna registration and stale in-progress marker; guessed entry row numbers occupied by other entities",
+      "action": "Wrote and read-back verified 14 page rows, 24 photo slots and 9 Anna rows; corrected 14 source-entry row references and completion stages"
+    },
+    {
+      "program": "P008",
+      "problem": "Publication audit retained obsolete deploy/register todo items",
+      "action": "Reconciled audit with already successful deploy and actual registers; retained separate business-event clarification"
+    }
+  ],
+  "branchReview": {
+    "branchesChecked": 29,
+    "unpublishedTargetTourChanges": 0,
+    "tourBranches": [
+      {
+        "name": "fix/p030-ecuador-links-photos-20261009",
+        "mergedPullRequest": 18
+      },
+      {
+        "name": "work/tour-place-recovery-20261009-uruguay",
+        "mergedPullRequest": 19
+      },
+      {
+        "name": "work/tour-place-recovery-20261009-antarctica",
+        "mergedPullRequest": 20
+      }
+    ],
+    "note": "Historical feature branches can be ahead in commit graph after squash merges; no replay of already incorporated or unrelated changes."
+  },
+  "programs": [
+    {
+      "key": "P008",
+      "tourId": "tour_brazil_agribusiness_14_days",
+      "url": "/brazil/tour/brazil-agribusiness-14-days/",
+      "durationDays": 14,
+      "destinationCount": 9,
+      "excursionCount": 9,
+      "ordinaryAndExcursionImageCount": 23,
+      "implementationState": "done"
+    },
+    {
+      "key": "P009",
+      "tourId": "tour_iguazu_incentive_3_days",
+      "url": "/brazil/tour/iguazu-incentive-3-days/",
+      "durationDays": 3,
+      "destinationCount": 4,
+      "excursionCount": 7,
+      "ordinaryAndExcursionImageCount": 10,
+      "implementationState": "done"
+    },
+    {
+      "key": "P013",
+      "tourId": "tour_brazil_three_ecosystems_8_days",
+      "url": "/brazil/tour/brazil-three-ecosystems-8-days/",
+      "durationDays": 8,
+      "destinationCount": 17,
+      "excursionCount": 5,
+      "ordinaryAndExcursionImageCount": 13,
+      "implementationState": "done"
+    },
+    {
+      "key": "P020",
+      "tourId": "tour_nicaragua_best_10_days",
+      "url": "/nicaragua/tour/best-of-nicaragua-10-days/",
+      "durationDays": 10,
+      "destinationCount": 13,
+      "excursionCount": 4,
+      "ordinaryAndExcursionImageCount": 14,
+      "implementationState": "done"
+    },
+    {
+      "key": "P022",
+      "tourId": "tour_guatemala_belize_maya_world_12_days",
+      "url": "/multi-country/tour/guatemala-belize-maya-world-12-days/",
+      "durationDays": 12,
+      "destinationCount": 16,
+      "excursionCount": 8,
+      "ordinaryAndExcursionImageCount": 20,
+      "implementationState": "done"
+    },
+    {
+      "key": "P027",
+      "tourId": "tour_ecuador_galapagos_diving_4_5_days",
+      "url": "/ecuador/tour/galapagos-diving-4-5-days/",
+      "durationDays": 4,
+      "destinationCount": 17,
+      "excursionCount": 2,
+      "ordinaryAndExcursionImageCount": 7,
+      "implementationState": "done"
+    },
+    {
+      "key": "P034",
+      "tourId": "tour_venezuela_canaima_angel_falls_4_days",
+      "url": "/venezuela/tour/canaima-angel-falls-4-days/",
+      "durationDays": 4,
+      "destinationCount": 14,
+      "excursionCount": 7,
+      "ordinaryAndExcursionImageCount": 11,
+      "implementationState": "done"
+    },
+    {
+      "key": "P036",
+      "tourId": "tour_panama_city_gamboa_6_days",
+      "url": "/panama/tour/panama-city-gamboa-6-days/",
+      "durationDays": 6,
+      "destinationCount": 12,
+      "excursionCount": 4,
+      "ordinaryAndExcursionImageCount": 10,
+      "implementationState": "done"
+    },
+    {
+      "key": "P037",
+      "tourId": "tour_guatemala_discover_8_days",
+      "url": "/guatemala/tour/discover-guatemala-8-days/",
+      "durationDays": 8,
+      "destinationCount": 12,
+      "excursionCount": 7,
+      "ordinaryAndExcursionImageCount": 15,
+      "implementationState": "done"
+    },
+    {
+      "key": "P039",
+      "tourId": "tour_colombia_essential_5_days",
+      "url": "/colombia/tour/colombia-essential-5-days/",
+      "durationDays": 5,
+      "destinationCount": 7,
+      "excursionCount": 4,
+      "ordinaryAndExcursionImageCount": 9,
+      "implementationState": "done"
+    }
+  ],
+  "commercialClarifications": [
+    {
+      "program": "P008",
+      "item": "The intended business event in Ribeirao Preto still requires Anna confirmation; publicly disclosed, no guarantee of IFAMA in Brazil."
+    }
+  ]
+}

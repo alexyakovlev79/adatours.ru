@@ -4,12 +4,12 @@
     "counts": {
       "types": {
         "country": 24,
-        "destination": 832,
-        "tour": 357,
-        "excursion": 268
+        "destination": 833,
+        "tour": 358,
+        "excursion": 270
       },
       "media": {
-        "ready": 915,
+        "ready": 919,
         "existing_enhanced_preserved": 53,
         "generated": 466,
         "provided_originals": 47
@@ -17,9 +17,9 @@
       "rawDonorUrls": 694,
       "activeTypes": {
         "country": 24,
-        "destination": 832,
-        "tour": 321,
-        "excursion": 267
+        "destination": 833,
+        "tour": 322,
+        "excursion": 269
       },
       "archivedTypes": {
         "tour": 36,
@@ -65,7 +65,7 @@
       }
     },
     "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
-    "entityCount": 1481
+    "entityCount": 1485
   },
   "entries": [
     {
@@ -47756,6 +47756,127 @@
         "Cabaña de Adán"
       ],
       "entryPath": "data/source-index/entries/destination_colombia_cabana_de_adan.json"
+    },
+    {
+      "id": "tour_colombia_highlights_7_days",
+      "type": "tour",
+      "name": "Колумбия за 7 дней: Богота, Медельин и Картахена",
+      "url": "/colombia/tour/colombia-highlights-7-days/",
+      "slug": "colombia-highlights-7-days",
+      "contentPath": "src/content/tours/colombia-highlights-7-days.md",
+      "countryIds": [
+        "country_colombia"
+      ],
+      "destinationIds": [
+        "destination_colombia_bogota",
+        "destination_colombia_ozero_guatavita",
+        "destination_colombia_guatavita_town",
+        "destination_colombia_sipakira",
+        "destination_colombia_medelin",
+        "destination_colombia_guatape",
+        "destination_colombia_el_penon_de_guatape",
+        "destination_colombia_kartahena",
+        "destination_colombia_islas_rosario",
+        "destination_colombia_isla_grande"
+      ],
+      "routeCountryIds": [
+        "country_colombia"
+      ],
+      "routeDestinationIds": [
+        "destination_colombia_bogota",
+        "destination_colombia_ozero_guatavita",
+        "destination_colombia_guatavita_town",
+        "destination_colombia_sipakira",
+        "destination_colombia_medelin",
+        "destination_colombia_guatape",
+        "destination_colombia_el_penon_de_guatape",
+        "destination_colombia_kartahena",
+        "destination_colombia_islas_rosario",
+        "destination_colombia_isla_grande"
+      ],
+      "sourceUrl": null,
+      "themes": [],
+      "primaryThemes": [
+        "theme_culture",
+        "theme_beach"
+      ],
+      "status": "approved",
+      "aliases": [
+        "Colombia Highlights 7d6n",
+        "История, преображение и карибское очарование"
+      ],
+      "entryPath": "data/source-index/entries/tour_colombia_highlights_7_days.json"
+    },
+    {
+      "id": "destination_colombia_el_penon_de_guatape",
+      "type": "destination",
+      "name": "Скала Эль-Пеньон-де-Гуатапе",
+      "url": "/colombia/place/el-penon-de-guatape/",
+      "slug": "el-penon-de-guatape",
+      "contentPath": "src/content/destinations/el-penon-de-guatape.md",
+      "countryIds": [
+        "country_colombia"
+      ],
+      "destinationIds": [
+        "destination_colombia_el_penon_de_guatape"
+      ],
+      "relatedDestinationIds": [],
+      "sourceUrl": null,
+      "themes": [
+        "theme_wildlife",
+        "theme_adventure"
+      ],
+      "status": "approved",
+      "aliases": [],
+      "entryPath": "data/source-index/entries/destination_colombia_el_penon_de_guatape.json"
+    },
+    {
+      "id": "excursion_colombia_medellin_comuna13_el_castillo",
+      "type": "excursion",
+      "name": "Медельин: Ботеро, Коммуна 13 и музей Эль-Кастильо",
+      "url": "/colombia/medellin/medellin-comuna13-el-castillo/",
+      "slug": "medellin-comuna13-el-castillo",
+      "contentPath": "src/content/excursions/medellin-comuna13-el-castillo.md",
+      "countryIds": [
+        "country_colombia"
+      ],
+      "destinationIds": [
+        "destination_colombia_medelin"
+      ],
+      "relatedDestinationIds": [],
+      "sourceUrl": null,
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved",
+      "aliases": [],
+      "entryPath": "data/source-index/entries/excursion_colombia_medellin_comuna13_el_castillo.json"
+    },
+    {
+      "id": "excursion_colombia_guatape_rock_and_town",
+      "type": "excursion",
+      "name": "Гуатапе и скала Эль-Пеньон из Медельина",
+      "url": "/colombia/medellin/guatape-rock-and-town-from-medellin/",
+      "slug": "guatape-rock-and-town-from-medellin",
+      "contentPath": "src/content/excursions/guatape-rock-and-town-from-medellin.md",
+      "countryIds": [
+        "country_colombia"
+      ],
+      "destinationIds": [
+        "destination_colombia_medelin"
+      ],
+      "relatedDestinationIds": [
+        "destination_colombia_guatape",
+        "destination_colombia_el_penon_de_guatape"
+      ],
+      "sourceUrl": null,
+      "themes": [
+        "theme_culture",
+        "theme_wildlife"
+      ],
+      "status": "approved",
+      "aliases": [],
+      "entryPath": "data/source-index/entries/excursion_colombia_guatape_rock_and_town.json"
     }
   ]
 }

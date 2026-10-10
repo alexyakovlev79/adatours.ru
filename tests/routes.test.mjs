@@ -87,8 +87,9 @@ test('excursions use the destination geography even when departing from another 
 test('reserved future destinations yield a route without a published page or fallback search', () => {
   const entries = JSON.parse(readFileSync(`${root}data/source-index/catalogs/excursions.json`, 'utf8')).entries;
   const publishedIds = new Set(destinations.map((entry) => entry.id));
-  const future = entries.find((entry) => entry.destinationIds?.length && !publishedIds.has(entry.destinationIds[0]));
-  assert.ok(future, 'fixture needs an excursion linked to a future destination');
+  // Publishing the last reserved place must not invalidate this routing test.
+  const future = entries.find((entry) => entry.destinationIds?.length && !publishedIds.has(entry.destinationIds[0]))
+    ?? { type: 'excursion', slug: 'future-place-fixture', countryIds: ['country_brazil'], destinationIds: ['destination_brazil_rio'] };
   const destination = destinationRoute(future.destinationIds[0]);
   assert.equal(canonicalPath(future), `/${destination.countrySlug}/${destination.slug}/${future.slug}/`);
   assert.equal(canonicalPath({ type: 'excursion', slug: 'coffee-baron-estates', countryIds: ['country_brazil'], destinationIds: [] }), '/brazil/excursion/coffee-baron-estates/');
@@ -151,13 +152,16 @@ test('all exact pre-migration spellings remain aliases for the same stable entit
 test('reserved destination history is registered even without a source snapshot', () => {
   const catalogue = JSON.parse(readFileSync(`${root}src/data/catalog/destinations.json`, 'utf8'));
   const sourceIds = new Set(JSON.parse(readFileSync(`${root}data/source-index/catalogs/destinations.json`, 'utf8')).entries.map(({ id }) => id));
-  const reserved = catalogue.find((entry) => !sourceIds.has(entry.id) && entry.legacyUrls?.length);
-  assert.ok(reserved, 'migration fixture needs a reserved destination with URL history');
+  const reserved = catalogue.find((entry) => !sourceIds.has(entry.id) && entry.legacyUrls?.length)
+    ?? catalogue.find((entry) => entry.legacyUrls?.length);
+  assert.ok(reserved, 'fixture needs a destination with URL history');
   const current = destinationPath(reserved);
-  const actual = aliasesForEntity('destination', reserved, current);
+  // This isolated registry has no source snapshot, even after all live places do.
+  const registry = createEntityAliasRegistry([{ ...reserved, type: 'destination', countryIds: [reserved.countryId] }]);
+  const actual = registry.aliasesForEntity('destination', reserved, current);
   for (const oldPath of reserved.legacyUrls.filter((path) => path !== current)) {
     assert.ok(actual.includes(oldPath), `reserved place lost ${oldPath}`);
-    assert.equal(isLegacyRedirectPath(oldPath), true, oldPath);
+    assert.equal(registry.isLegacyRedirectPath(oldPath), true, oldPath);
   }
 });
 

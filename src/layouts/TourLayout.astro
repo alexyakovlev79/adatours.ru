@@ -16,8 +16,8 @@ import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import InlineMarkdown from '../components/global/InlineMarkdown.astro';
 import { withBase } from '../lib/paths';
 import { destinationCatalogById } from '../lib/content-validation';
-import { destinationPath, tourBreadcrumbs, tourPath } from '../lib/routes';
-import { mainTourCountryIds } from '../lib/tour-relations';
+import { countryPath, destinationPath, tourBreadcrumbs, tourPath } from '../lib/routes';
+import { mainTourCountryIds, mainTourDestinationIds, optionalTourDestinationIds } from '../lib/tour-relations';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -37,7 +37,7 @@ const pluralRu = (value: number, one: string, few: string, many: string) => {
   return many;
 };
 
-const routePointCount = d.destinations.length || d.route.length;
+const routePointCount = mainTourDestinationIds(d).length || d.route.length;
 const stats = [
   d.durationDays ? {
     value: String(d.durationDays),
@@ -88,6 +88,13 @@ const routeDestinations = d.destinations.map((id) => {
   };
 }).filter((item) => item.name);
 const destinationNames = routeDestinations.map((item) => item.name);
+const mainPlaces = routeDestinations.filter((item) => mainTourDestinationIds(d).includes(item.id));
+const optionalPlaces = routeDestinations.filter((item) => optionalTourDestinationIds(d).includes(item.id));
+const mainCountryEntries = mainTourCountryIds(d).map((id) => countryById.get(id)).filter(Boolean);
+const placeGroups = [
+  { label: 'Места маршрута', entries: mainPlaces },
+  { label: 'Места факультативных экскурсий и вариантов программы', entries: optionalPlaces },
+];
 const durationLabel = d.durationDays
   ? `${d.durationDays} ${pluralRu(d.durationDays, 'день', 'дня', 'дней')}`
   : '';
@@ -148,16 +155,27 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     </section>
   )}
 
-  {routeDestinations.length > 0 && (
-    <nav class="tour-destinations container" aria-label="Места маршрута">
-      <p class="eyebrow">Места маршрута</p>
+  {mainCountryEntries.length > 0 && (
+    <nav class="tour-destinations container" aria-label="Страны маршрута">
+      <p class="eyebrow">Страны маршрута</p>
       <ul>
-        {routeDestinations.map((item) => (
-          <li>{item.href ? <a href={withBase(item.href)}>{item.name}</a> : <span>{item.name}</span>}</li>
+        {mainCountryEntries.map((country) => (
+          <li><a href={withBase(countryPath(country.data))}>{country.data.name}</a></li>
         ))}
       </ul>
     </nav>
   )}
+
+  {placeGroups.filter((group) => group.entries.length).map((group) => (
+    <nav class="tour-destinations container" aria-label={group.label}>
+      <p class="eyebrow">{group.label}</p>
+      <ul>
+        {group.entries.map((item) => (
+          <li>{item.href ? <a href={withBase(item.href)}>{item.name}</a> : <span>{item.name}</span>}</li>
+        ))}
+      </ul>
+    </nav>
+  ))}
 
   {firstStory && (
     <StoryPair

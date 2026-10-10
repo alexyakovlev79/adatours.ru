@@ -31,7 +31,7 @@ const [allTourEntries, countryEntries, excursionEntries, destinationEntries] = a
     data.locale === 'ru' &&
     isActiveEntity(data)
   ),
-  getCollection('countries', ({ data }) => data.locale === 'ru'),
+  getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
   getCollection('excursions', ({ data }) =>
     data.locale === 'ru' &&
     isActiveEntity(data) &&
@@ -146,6 +146,12 @@ const destinationSchema = {
   />
 
   {d.facts.length > 0 && <TripStats stats={d.facts} />}
+
+  {country && (
+    <nav class="container section--tight" aria-label="Страна места">
+      <p><a href={withBase(countryPath(country.data))}>{countryName}</a></p>
+    </nav>
+  )}
 
   <EditorialStatement eyebrow="Зачем ехать" text={d.summary} />
 

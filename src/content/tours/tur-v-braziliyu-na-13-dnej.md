@@ -253,7 +253,7 @@ itinerary:
     Ночевка в Бонито. Завтрак и обед включены.
 
 
-    **Abismo Anhumas**
+    **Аньюмас**
 
 
     Дополнительно
@@ -326,7 +326,7 @@ notes:
 - При необходимости Ada Tours может заменить отель на другой отель той же категории.
 - Порядок экскурсий может быть изменен при сохранении программы тура.
 - Ada Tours не несет ответственности за пропущенные завтраки в отелях при раннем выселении из-за раннего перелета или экскурсии.
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-10'
 sourceUrl: https://brasiltours.ru/tur-v-braziliyu-na-13-dnej
 sourceSnapshot: https://drive.google.com/file/d/11zevwB0adt_Za5r65yBCtaKR1c0B0Ylc/view?usp=drivesdk
 durationDays: 13

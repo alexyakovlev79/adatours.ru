@@ -29,14 +29,14 @@ route:
 - Водопад Фата Невесты (Баньос)
 - Водопад Котел Дьявола (Баньос)
 - Каньон Пастаса
-- Качели «Конец света» — Casa del Árbol
+- Качели «Конец света» — Каса-дель-Арбол
 - Кито & вулкан Котопахи
 included: []
 notIncluded:
 - Канопи над каньоном Пастаса — 15 USD с человека
 notes: []
 sourceSnapshot: https://drive.google.com/file/d/18-m9Is7xIKzVM3aQSSt4y6qCBWtjoKuk/view
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-10'
 language:
 - русский
 ---

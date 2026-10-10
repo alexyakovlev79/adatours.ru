@@ -19,7 +19,7 @@ lead: Маршрут проходит вдоль побережья.
 themes:
 - theme_culture
 hero:
-  src: https://brasiltours.ru/image/countries/chile/ostrov-paskhi/livia-enomoto-rnlucminugq-unsplash.jpg
+  src: /media/excursions/anakena-rano-raraku-tongariki-tour/hero-src-enhanced-20261010.webp
   alt: Аху Тонгарики, остров Пасхи - 15 восстановленных статуй моаи
 sourceSnapshot: https://drive.google.com/file/d/1Of-rCEbo7uTXOBvvXzNiFYyt8TC5a2Wn/view?usp=drivesdk
 updatedAt: '2026-10-09'

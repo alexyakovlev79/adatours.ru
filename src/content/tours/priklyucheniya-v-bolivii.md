@@ -83,7 +83,7 @@ durationNights: 10
 priceFrom: null
 currency: USD
 hero:
-  src: https://brasiltours.ru/image/countries/bolivia/alain-bonnardeaux-zd6h7n442og-unsplash.jpg
+  src: /media/tours/priklyucheniya-v-bolivii/hero-src-enhanced-20261010.webp
   alt: Приключения в Боливии
 lead: Этот маршрут соединяет города, высокогорные озера, археологические памятники, солончак Уюни, цветные
   лагуны и Национальный парк Тороторо. За 11 дней вы побываете в Санта-Крусе, увидите Тиуанаку и озеро Титикака,

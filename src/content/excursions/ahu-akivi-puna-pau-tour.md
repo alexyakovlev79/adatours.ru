@@ -14,7 +14,7 @@ lead: Маршрут ведет в центральную часть остро�
 themes:
 - theme_culture
 hero:
-  src: https://brasiltours.ru/image/countries/chile/ostrov-paskhi/franz-nawrath-0knpshthjjq-unsplash.jpg
+  src: /media/excursions/ahu-akivi-puna-pau-tour/hero-src-enhanced-20261010.webp
   alt: Статуи моаи на острове Пасхи, Чили - каменные истуканы Рапа-Нуи
 sourceSnapshot: https://drive.google.com/file/d/1Of-rCEbo7uTXOBvvXzNiFYyt8TC5a2Wn/view?usp=drivesdk
 updatedAt: '2026-10-09'

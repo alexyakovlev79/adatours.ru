@@ -102,7 +102,7 @@ itinerary:
     Дополнительные поездки проходят в сборной группе с англоговорящим гидом. «Фиеста гаучо» — $400 с человека,
     8 часов, традиционный обед включен. В поездке в Монтевидео билеты на паром включены.'
   images:
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN3647_16_1.jpg
+  - src: /media/tours/tur-v-argentinu-v-patagoniyu/itinerary-day-3-image-0-enhanced-20261010.webp
     alt: 'На фото: столица Аргентины Буэнос-Айрес'
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
 - excursionRef: excursion_source_ekskursiya_po_montevideo
@@ -301,7 +301,7 @@ itinerary:
   text: Завтрак в отеле. В назначенное время трансфер в аэропорт Игуасу и перелет в Буэнос-Айрес. По прибытии
     встреча и трансфер в гостиницу.
   images:
-  - src: https://brasiltours.ru/image/catalog/category/f/i/file_2_4.jpg
+  - src: /media/tours/tur-v-argentinu-v-patagoniyu/itinerary-day-13-image-0-enhanced-20261010.webp
     alt: 'На фото: столица Аргентины Буэнос-Айрес'
 - day: 14
   title: Буэнос-Айрес, вылет домой
@@ -309,7 +309,7 @@ itinerary:
   - Буэнос-Айрес
   text: После завтрака в назначенное время трансфер в аэропорт Буэнос-Айреса для вылета домой.
   images:
-  - src: https://brasiltours.ru/image/catalog/category/B/N/BN14141_3_1.jpg
+  - src: /media/tours/tur-v-argentinu-v-patagoniyu/itinerary-day-14-image-0-enhanced-20261010.webp
     alt: 'На фото: столица Аргентины Буэнос-Айрес'
 included:
 - Размещение в отелях категории 4* на базе завтраков.

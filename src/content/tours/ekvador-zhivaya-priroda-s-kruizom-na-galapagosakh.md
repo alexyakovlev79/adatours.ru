@@ -659,7 +659,7 @@ updatedAt: '2026-10-10'
 aliases:
 - ekvador-zhivaya-priroda-s-kruizom-na-galapagosakh
 hero:
-  src: https://brasiltours.ru/image/countries/equador/new/354.jpg
+  src: /media/tours/ekvador-zhivaya-priroda-s-kruizom-na-galapagosakh/hero-src-enhanced-20261010.webp
   alt: 'На фото: морской котик с Галапагосских островов, Эквадор'
 ---
 

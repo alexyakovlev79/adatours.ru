@@ -14,7 +14,7 @@ themes:
 - theme_wildlife
 - theme_adventure
 hero:
-  src: https://brasiltours.ru/image/merida%2011(1).png
+  src: /media/excursions/santa-barbara-cenotes-tour/hero-src-enhanced-20261010.webp
   alt: Город Мерида в Мексике
 duration: 8 часов
 language:

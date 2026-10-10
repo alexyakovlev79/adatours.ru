@@ -14,7 +14,7 @@ lead: Экскурсия начинается на склонах Рано-Ка�
 themes:
 - theme_culture
 hero:
-  src: https://brasiltours.ru/image/countries/chile/ostrov-paskhi/thomas-griggs-2qjk2pfah3o-unsplash.jpg
+  src: /media/excursions/orongo-rano-kau-tour/hero-src-enhanced-20261010.webp
   alt: Моаи острова Пасхи, Чили - ряд статуй на платформе Аху
 sourceSnapshot: https://drive.google.com/file/d/1Of-rCEbo7uTXOBvvXzNiFYyt8TC5a2Wn/view?usp=drivesdk
 updatedAt: '2026-10-09'

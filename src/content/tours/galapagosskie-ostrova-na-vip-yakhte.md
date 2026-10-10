@@ -321,7 +321,7 @@ updatedAt: '2026-10-09'
 aliases:
 - galapagosskie-ostrova-na-vip-yakhte
 hero:
-  src: https://brasiltours.ru/image/countries/equador/simon-matzinger-347343-unsplash.jpg
+  src: /media/tours/galapagosskie-ostrova-na-vip-yakhte/hero-src-enhanced-20261010.webp
   alt: 'на фото: Галапагосские острова'
 ---
 

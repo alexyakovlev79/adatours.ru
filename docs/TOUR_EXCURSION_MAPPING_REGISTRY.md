@@ -1431,3 +1431,17 @@ Viva Mexico: 9 самостоятельных модулей перенесен�
 ## P009 — Игуасу incentive 3 дня, 10.10.2026
 
 `tour_iguazu_incentive_3_days`: 7 модулей в исходном порядке. Rafain → бразильские водопады → Macuco Safari → Парк птиц → факультативный вертолет 10 минут → вечер асадо → аргентинские водопады. 6 существующих экскурсий переиспользованы, новый гастрономический модуль `excursion_iguazu_argentine_asado_wine` создан из Word. Оба национальных парка сопоставлены с каноническими местами Фоз-ду-Игуасу / Пуэрто-Игуасу; созданы самостоятельные страницы Парка птиц и Глотки Дьявола и добавлены их связи к соответствующим экскурсиям. Бразилия основная страна с размещением, Аргентина обязательный приграничный выезд. Даты, стоимость, отели и размер группы в Word отсутствуют.
+
+## P013 — три экосистемы Мату-Гросу, 10.10.2026
+
+Tour: `tour_brazil_three_ecosystems_8_days`; источник https://docs.google.com/document/d/1Teplr6p6WIA5ow9sf9yOkCzMjDmgX3B-/edit
+
+| После дня | Канонический модуль | Состояние |
+|---|---|---|
+| 2 | `excursion_jardim_amazonia_forest_canoe` | CANONICALIZED — MD/entry готовы; deploy ожидается |
+| 3 | `excursion_bom_jardim_aquario_salobra_snorkeling` | CANONICALIZED — MD/entry готовы; deploy ожидается |
+| 4 | `excursion_chapada_waterfalls_trails` | CANONICALIZED — MD/entry готовы; deploy ожидается |
+| 6 | `excursion_araras_canoe_trek_night_safari` | CANONICALIZED — MD/entry готовы; deploy ожидается |
+| 7 | `excursion_araras_horseback_rondon_trail` | CANONICALIZED — MD/entry готовы; deploy ожидается |
+
+8 обычных дней сохранены, самостоятельные тексты вынесены в 5 Excursion без потери питания/ночёвок и условий.

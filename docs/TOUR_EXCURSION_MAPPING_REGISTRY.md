@@ -1520,3 +1520,21 @@ Word: https://docs.google.com/document/d/16Yho_hI1w_jZ1yah_LrAH8cKU0V5Wddt/edit.
 | 5 | `excursion_source_siti_tur_po_kartakhene` | Каноническая экскурсия подключена |
 | 9 | `excursion_colombia_medellin_comuna13_el_castillo` | Каноническая экскурсия подключена |
 | 10 | `excursion_colombia_guatape_rock_and_town` | Каноническая экскурсия подключена |
+
+## P042 — Colombia Explorer, Word 2027
+
+Источник: https://docs.google.com/document/d/1S9Yxr3o4Yn77DDkStiW3PXI-drhZT3xk/edit
+
+Отдельный 9-дневный продукт; 9 модулей, 8 готовых и 1 новый без посещений площади Ботеро и Музея Антьокии. Все места опубликованы.
+
+| tour_id | excursion_id | Позиция | Результат |
+|---|---|---|---|
+| `tour_colombia_explorer_9_days` | `excursion_source_siti_tur_v_bogote` | После дня 1 | Переиспользована |
+| `tour_colombia_explorer_9_days` | `excursion_source_colombia_bogota_zipaquira_con_guatavita` | После дня 2 | Переиспользована |
+| `tour_colombia_explorer_9_days` | `excursion_source_salento_i_dolina_kokora` | После дня 3 | Переиспользована |
+| `tour_colombia_explorer_9_days` | `excursion_colombia_el_ocaso_coffee_tour` | После дня 3 | Переиспользована |
+| `tour_colombia_explorer_9_days` | `excursion_colombia_coffee_region_zipline_horseback` | После дня 4 | Переиспользована |
+| `tour_colombia_explorer_9_days` | `excursion_colombia_medellin_veracruz_comuna13_castillo` | После дня 5 | Создана по P042 |
+| `tour_colombia_explorer_9_days` | `excursion_colombia_guatape_rock_and_town` | После дня 6 | Переиспользована |
+| `tour_colombia_explorer_9_days` | `excursion_source_siti_tur_po_kartakhene` | После дня 7 | Переиспользована |
+| `tour_colombia_explorer_9_days` | `excursion_colombia_san_pedro_majagua_day_trip` | После дня 8 | Переиспользована |

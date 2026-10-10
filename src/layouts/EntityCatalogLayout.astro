@@ -7,7 +7,7 @@ import Hero from '../components/editorial/Hero.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../components/catalog/CatalogPagination.astro';
-import { countryRoute, destinationPath, excursionPath, mainTourCountries, tourPath, type BreadcrumbItem } from '../lib/routes';
+import { countryRoute, destinationPath, excursionPath, mainTourCountries, tourPath, themePath, type BreadcrumbItem } from '../lib/routes';
 import { withBase } from '../lib/paths';
 import { vipTourPriceLabel } from '../lib/vip-tours.mjs';
 import type { CatalogPagination as PaginationData } from '../lib/catalog-pagination';
@@ -15,8 +15,8 @@ import type { CatalogPagination as PaginationData } from '../lib/catalog-paginat
 interface Props {
   leadTitle?: string;
   leadEntityId?: string;
-  kind: 'tour' | 'excursion' | 'destination';
-  entries: Array<CollectionEntry<'tours'> | CollectionEntry<'excursions'> | CollectionEntry<'destinations'>>;
+  kind: 'tour' | 'excursion' | 'destination' | 'theme';
+  entries: Array<CollectionEntry<'tours'> | CollectionEntry<'excursions'> | CollectionEntry<'destinations'> | CollectionEntry<'themes'>>;
   title: string;
   description: string;
   canonical: string;
@@ -31,7 +31,7 @@ interface Props {
 }
 
 const { leadTitle, leadEntityId, kind, entries, title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, navigationLabel, navigationLinks = [] } = Astro.props;
-const eyebrow = variant === 'vip-tours' ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : 'Направления';
+const eyebrow = variant === 'vip-tours' ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : kind === 'theme' ? 'По интересам' : 'Направления';
 const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
 const multiCountryPageCountries = variant === 'multi-country-tours'
   ? [...new Map(entries.flatMap((entry) => mainTourCountries((entry as CollectionEntry<'tours'>).data)).map((country) => [country.id, country])).values()]
@@ -80,6 +80,10 @@ const pageBreadcrumbs: BreadcrumbItem[] = p.currentPage > 1
   ? [...breadcrumbs, { label: `Страница ${p.currentPage}`, href: canonical }]
   : breadcrumbs;
 const cards = entries.map((entry) => {
+  if (kind === 'theme') {
+    const d = (entry as CollectionEntry<'themes'>).data;
+    return { data: d, title: d.name, text: d.summary, href: themePath(d), meta: '' };
+  }
   if (kind === 'tour') {
     const d = (entry as CollectionEntry<'tours'>).data;
     const curatedTour = variant === 'multi-country-tours' || variant === 'vip-tours';

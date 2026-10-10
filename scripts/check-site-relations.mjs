@@ -11,7 +11,7 @@ import {
 } from '../src/lib/routes.ts';
 import { excursionDestinationIds } from '../src/lib/destination-links.mjs';
 import { excursionIdsForTour } from '../src/lib/excursion-popularity.ts';
-import { buildInterestHub, interestsForCountry, interestTourCatalogPath } from '../src/lib/interest-model.mjs';
+import { buildInterestHub, interestsForCountry, interestTourCatalogPath, interestDestinationCatalogPath, interestExcursionCatalogPath, relatedInterestCatalogPath, themeIds } from '../src/lib/interest-model.mjs';
 import { tourHasMainCountry, tourHasMainDestination } from '../src/lib/tour-relations.ts';
 
 const dataOnly = process.argv.includes('--data-only');
@@ -35,7 +35,7 @@ const compactById = new Map(JSON.parse(read('data/source-index/catalogs/tours.js
 const indexById = new Map(JSON.parse(read('data/source-index/index.json')).entries.map((data) => [data.id, data]));
 const futureIds = new Set();
 const counts = { countries: countries.length, destinations: destinations.length, tours: tours.length,
-  themes: themes.length, countryTheme: 0, countryThemeOutsidePreview: 0, optionalOnlyThemeCountry: 0,
+  themes: themes.length, themeTour: 0, themePlace: 0, themeExcursion: 0, themeRelated: 0, themedObjects: 0, dormantPlaceTheme: 0, countryTheme: 0, countryThemeOutsidePreview: 0, optionalOnlyThemeCountry: 0,
   excursions: excursions.length, countryExcursion: 0, placeExcursion: 0, relatedPlaceExcursion: 0, reservedPlaceExcursion: 0, tourExcursion: 0,
   countryPlace: 0, countryTour: 0, excludedAdditionalCountryTour: 0, placeTour: 0, optionalPlaceTour: 0, reservedPlaceTour: 0 };
 const fileFor = (path) => resolve(output, `.${path}`, 'index.html');
@@ -203,10 +203,49 @@ for (const tour of tours) {
   }
 }
 const interestCollections = { countries, tours, destinations, excursions, themes };
+const interestHubById = new Map(themes.map((theme) => [theme.id, buildInterestHub(theme.id, interestCollections)]));
 for (const theme of themes) {
-  const hub = buildInterestHub(theme.id, interestCollections);
+  const hub = interestHubById.get(theme.id);
   const root = interestTourCatalogPath(theme);
-  if (hub.allTours.length) direct(themePath(theme), root);
+  if (hub.allTours.length) {
+    direct(themePath(theme), root);
+    exactCatalogue(root, hub.allTours.map((tour) => tour.id));
+    direct(root, themePath(theme));
+  }
+  for (const tour of hub.allTours) {
+    direct(tourPath(tour), themePath(theme));
+    reverse(themePath(theme), tourPath(tour), root);
+    counts.themeTour++;
+  }
+  const experienceCatalogs = [
+    { kind: 'destination', path: interestDestinationCatalogPath(theme), rows: hub.allExperiences.filter((row) => row.kind === 'destination'), count: 'themePlace' },
+    { kind: 'excursion', path: interestExcursionCatalogPath(theme), rows: hub.allExperiences.filter((row) => row.kind === 'excursion'), count: 'themeExcursion' },
+  ];
+  for (const catalog of experienceCatalogs) {
+    exactCatalogue(catalog.path, catalog.rows.map((row) => row.id));
+    if (catalog.rows.length) { direct(themePath(theme), catalog.path); direct(catalog.path, themePath(theme)); }
+    for (const row of catalog.rows) {
+      const entity = row.entry;
+      const path = row.kind === 'destination' ? destinationPath(entity) : excursionPath(entity);
+      assert.ok(themeIds(entity).includes(theme.id), `${entity.id}: inherited interest ${theme.id}`);
+      if (row.kind === 'excursion') assert.equal(row.countryId, excursionGeography(entity).country.id, `${entity.id}: wrong thematic geographic country`);
+      direct(path, themePath(theme));
+      reverse(themePath(theme), path, catalog.path);
+      counts[catalog.count]++;
+    }
+  }
+  const relatedCatalog = relatedInterestCatalogPath(theme);
+  exactCatalogue(relatedCatalog, hub.allRelatedThemes.map((row) => row.entry.id));
+  if (hub.allRelatedThemes.length) { direct(themePath(theme), relatedCatalog); direct(relatedCatalog, themePath(theme)); }
+  for (const row of hub.allRelatedThemes) {
+    const other = row.entry;
+    const reverseHub = interestHubById.get(other.id);
+    const reverseRow = reverseHub.allRelatedThemes.find((candidate) => candidate.entry.id === theme.id);
+    assert.equal(reverseRow?.tourCount, row.tourCount, `${theme.id}: asymmetric shared tours with ${other.id}`);
+    reverse(themePath(theme), themePath(other), relatedCatalog);
+    reverse(themePath(other), themePath(theme), relatedInterestCatalogPath(other));
+    counts.themeRelated++;
+  }
   for (const row of hub.allCountries) {
     const country = row.entry;
     const catalog = interestTourCatalogPath(theme, country);
@@ -227,6 +266,17 @@ for (const theme of themes) {
     counts.countryTheme++;
     if (!hub.countries.some((preview) => preview.entry.id === country.id)) counts.countryThemeOutsidePreview++;
     if (!row.mainCount) counts.optionalOnlyThemeCountry++;
+  }
+}
+for (const [entities, pathFor] of [[tours, tourPath], [destinations, destinationPath], [excursions, excursionPath]]) {
+  for (const entity of entities) {
+    for (const id of themeIds(entity)) {
+      const theme = themes.find((row) => row.id === id);
+      assert.ok(theme, `${entity.id}: unpublished interest ${id}`);
+      direct(pathFor(entity), themePath(theme));
+      if (entities === destinations && !interestHubById.get(id).allExperiences.some((row) => row.id === entity.id)) counts.dormantPlaceTheme++;
+    }
+    if (themeIds(entity).length) counts.themedObjects++;
   }
 }
 console.log(JSON.stringify({ mode: dataOnly ? 'data' : 'data-and-html', ...counts,

@@ -5,6 +5,7 @@ import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
 import ArchiveNotice from '../components/global/ArchiveNotice.astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
+import InterestLinks from '../components/editorial/InterestLinks.astro';
 import Hero from '../components/editorial/Hero.astro';
 import TripStats from '../components/tour/TripStats.astro';
 import HighlightsEditorial from '../components/tour/HighlightsEditorial.astro';
@@ -144,6 +145,8 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   />
 
   {d.durationDays && <TripStats stats={stats} />}
+
+  <InterestLinks entity={d} />
 
   {hasTourDescription && (
     <section class="tour-copy">

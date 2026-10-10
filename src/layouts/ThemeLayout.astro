@@ -8,7 +8,7 @@ import DestinationBand from '../components/editorial/DestinationBand.astro';
 import { interestCopy, interestTourCount, relatedInterestCount } from '../lib/interest-copy.mjs';
 import { destinationPath, excursionPath, themePath, tourPath } from '../lib/routes';
 import { withBase } from '../lib/paths';
-import { buildInterestHub, countLabel, interestTourCatalogPath } from '../lib/interest-model.mjs';
+import { buildInterestHub, countLabel, interestTourCatalogPath, interestDestinationCatalogPath, interestExcursionCatalogPath, relatedInterestCatalogPath } from '../lib/interest-model.mjs';
 const { entry } = Astro.props;
 const d = entry.data;
 const copy = interestCopy(d.id);
@@ -27,6 +27,10 @@ const experienceProps = (row) => ({
   meta: row.tourCount ? interestTourCount(d.id, row.tourCount) : 'Идея для вашей поездки',
 });
 const tourCatalog = interestTourCatalogPath(d);
+const experienceCatalogs = [
+  { kind: 'destination', label: `Все места: ${d.name}`, href: interestDestinationCatalogPath(d) },
+  { kind: 'excursion', label: `Все экскурсии: ${d.name}`, href: interestExcursionCatalogPath(d) },
+].filter((catalog) => hub.allExperiences.some((row) => row.kind === catalog.kind));
 ---
 <BaseLayout leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id} title={seoThemeHubTitle(d.name,hub.allTours.length)} description={d.summary} image={d.hero?.src}
   canonical={themePath(d)} hideCurrentBreadcrumbLabel={true}
@@ -74,6 +78,9 @@ const tourCatalog = interestTourCatalogPath(d);
         <div class="theme-grid">{hub.experiences.map((row) => <InterestCard {...experienceProps(row)} />)}</div>
       </div>
     </section>}
+    {experienceCatalogs.length > 0 && <nav class="container section--tight" aria-label="Места и экскурсии по интересу">
+      {experienceCatalogs.map((catalog) => <a class="theme-more" href={withBase(catalog.href)}>{catalog.label} <span aria-hidden="true">→</span></a>)}
+    </nav>}
     {hub.relatedThemes.length > 0 && <section class="theme-related-section" data-interest-section="related">
       <div class="container section--tight">
         <header class="theme-heading">
@@ -97,6 +104,9 @@ const tourCatalog = interestTourCatalogPath(d);
         ))}
       </div>
     </section>}
+    {hub.allRelatedThemes.length > 0 && <div class="container section--tight">
+      <a class="theme-more" href={withBase(relatedInterestCatalogPath(d))}>Все близкие интересы <span aria-hidden="true">→</span></a>
+    </div>}
     <section class="section--tight theme-copy"><div class="container prose"><slot /></div></section>
   </div>
 </BaseLayout>

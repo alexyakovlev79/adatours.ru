@@ -3,6 +3,7 @@ import { isActiveEntity } from '../lib/archive.mjs';
 import { seoDestinationTitle, seoRelatedToursDescription } from '../lib/seo-page.mjs';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
+import InterestLinks from '../components/editorial/InterestLinks.astro';
 import Hero from '../components/editorial/Hero.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
@@ -152,6 +153,8 @@ const destinationSchema = {
       <p><a href={withBase(countryPath(country.data))}>{countryName}</a></p>
     </nav>
   )}
+
+  <InterestLinks entity={d} />
 
   <EditorialStatement eyebrow="Зачем ехать" text={d.summary} />
 

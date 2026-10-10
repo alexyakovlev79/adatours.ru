@@ -4,6 +4,7 @@ import { seoExcursionTitle, seoRelatedToursDescription } from '../lib/seo-page.m
 import ArchiveNotice from '../components/global/ArchiveNotice.astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
+import InterestLinks from '../components/editorial/InterestLinks.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import Hero from '../components/editorial/Hero.astro';
 import TripStats from '../components/tour/TripStats.astro';
@@ -169,6 +170,8 @@ const excursionSchema = {
       <p><a href={withBase(countryPath(country.data))}>{country.data.name}</a></p>
     </nav>
   )}
+
+  <InterestLinks entity={d} />
 
   <section class="excursion-copy section--tight">
     <div class="container prose">

@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { getCollection } from 'astro:content';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { seoThemeCatalogTitle } from '../../lib/seo-page.mjs';
-import { buildInterestHub, interestTourCatalogPath } from '../../lib/interest-model.mjs';
+import { buildInterestHub, interestTourCatalogPath, interestDestinationCatalogPath, interestExcursionCatalogPath, relatedInterestCatalogPath } from '../../lib/interest-model.mjs';
 import { interestCatalogDescription } from '../../lib/interest-copy.mjs';
 import { countryPath, themePath } from '../../lib/routes';
 import { paginateCatalog } from '../../lib/catalog-pagination';
@@ -27,7 +27,22 @@ export async function getStaticPaths() {
       href: interestTourCatalogPath(d, row.entry.data),
     }));
     add(hub.allTours, root, { kind: 'tour', title: seoThemeCatalogTitle(d.name,hub.allTours.length), description: interestCatalogDescription(d.id, hub.allTours.length), breadcrumbs, hero: d.hero?.src, leadEntityId: d.id, leadTitle: `Собрать поездку: ${d.name}`,
-      navigationLabel: 'Страны путешествия', navigationLinks: countryLinks });
+      navigationLabel: 'Страны путешествия', navigationLinks: [{ label: d.name, href: themePath(d) }, ...countryLinks] });
+    const sections = [
+      { kind: 'destination', label: 'Все места', root: interestDestinationCatalogPath(d), entries: hub.allExperiences.filter((row) => row.kind === 'destination').map((row) => row.entry) },
+      { kind: 'excursion', label: 'Все экскурсии', root: interestExcursionCatalogPath(d), entries: hub.allExperiences.filter((row) => row.kind === 'excursion').map((row) => row.entry) },
+      { kind: 'theme', label: 'Близкие интересы', root: relatedInterestCatalogPath(d), entries: hub.allRelatedThemes.map((row) => row.entry) },
+    ];
+    for (const section of sections) {
+      if (!section.entries.length) continue;
+      add(section.entries, section.root, {
+        kind: section.kind, title: `${d.name}: ${section.label.toLocaleLowerCase('ru')}`,
+        description: `${d.name}: ${section.label.toLocaleLowerCase('ru')} для вашего путешествия с Ada Tours. Выберите идею для поездки и расскажите нам о своих планах.`,
+        breadcrumbs: [breadcrumbs[0], breadcrumbs[1], { label: section.label, href: section.root }],
+        hero: d.hero?.src, leadEntityId: d.id, leadTitle: `Собрать поездку: ${d.name}`,
+        navigationLabel: 'Интерес поездки', navigationLinks: [{ label: d.name, href: themePath(d) }],
+      });
+    }
     for (const row of hub.allCountries) {
       const country = row.entry.data, countryRoot = interestTourCatalogPath(d, country);
       add(row.tours, countryRoot, { kind: 'tour', title: seoThemeCatalogTitle(d.name,row.tourCount,country.name), description: interestCatalogDescription(d.id, row.tourCount, country.name),

@@ -3,7 +3,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import yaml from 'js-yaml';
 import { isActiveEntity } from '../src/lib/archive.mjs';
-import { INTERESTS, INTEREST_LIMITS, buildInterestHub, validateInterestContent, interestTourCatalogPath } from '../src/lib/interest-model.mjs';
+import { INTERESTS, INTEREST_LIMITS, buildInterestHub, validateInterestContent, interestTourCatalogPath, interestDestinationCatalogPath, interestExcursionCatalogPath, relatedInterestCatalogPath } from '../src/lib/interest-model.mjs';
 import { paginateCatalog } from '../src/lib/catalog-pagination.ts';
 import { compactCatalogById } from './lib/compact-catalog-map.mjs';
 const collections = {};
@@ -21,12 +21,12 @@ const ids = (html, attr) => [...html.matchAll(new RegExp(`${attr}="([^"]+)"`, 'g
 const section = (html, name) => html.match(new RegExp(`<section\\b[^>]*data-interest-section="${name}"[^>]*>([\\s\\S]*?)<\\/section>`))?.[1] ?? '';
 const base = process.env.SITE_BASE === '/' ? '' : `/${(process.env.SITE_BASE ?? '').replace(/^\/+|\/+$/g, '')}`.replace(/^\/$/, '');
 let catalogs = 0, pages = 0, annotations = 0;
-const checkCatalog = (theme, entries, country) => {
-  const root = interestTourCatalogPath(theme, country);
+const checkCatalog = (theme, entries, country, root = interestTourCatalogPath(theme, country)) => {
   if (!entries.length) { assert.ok(!existsSync(join('dist', root, 'index.html')), `no empty catalogue ${root}`); return; }
   const all = [];
   for (const page of paginateCatalog(entries, root)) {
     const html = htmlAt(page.pagination.canonical);
+    assert.ok(html.includes(`href="${base}/interests/${theme.slug}/"`), `return to interest: ${page.pagination.canonical}`);
     const found = ids(html, 'data-catalog-item');
     assert.deepEqual(found, page.entries.map((entry) => entry.data.id), `thematic order: ${page.pagination.canonical}`);
     all.push(...found); pages++;
@@ -55,6 +55,9 @@ for (const interest of INTERESTS) {
   for (const row of hub.countries) assert.ok(section(html, 'countries').includes(`href="${base}${interestTourCatalogPath(interest, row.entry.data)}"`), `country links preserve interest: ${root}`);
   assert.ok(html.includes('data-interest-section="cta"'), `CTA: ${root}`);
   checkCatalog(interest, hub.allTours);
+  checkCatalog(interest, hub.allExperiences.filter((row) => row.kind === 'destination').map((row) => row.entry), undefined, interestDestinationCatalogPath(interest));
+  checkCatalog(interest, hub.allExperiences.filter((row) => row.kind === 'excursion').map((row) => row.entry), undefined, interestExcursionCatalogPath(interest));
+  checkCatalog(interest, hub.allRelatedThemes.map((row) => row.entry), undefined, relatedInterestCatalogPath(interest));
   for (const row of hub.allCountries) checkCatalog(interest, row.tours, row.entry.data);
 }
 // Validate exact source pointers and compact catalog copies, not the historical annotation audit.

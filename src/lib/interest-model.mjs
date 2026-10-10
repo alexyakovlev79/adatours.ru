@@ -1,6 +1,10 @@
+import destinationCatalog from '../data/catalog/destinations.json' with { type: 'json' };
 import registry from '../data/interest-registry.json' with { type: 'json' };
 import { isActiveEntity, activeReplacementId } from './archive.mjs';
 import { compareToursBySalesFit } from './tour-sales-fit.mjs';
+
+const destinationCountryById = new Map(destinationCatalog.map((place) => [place.id, place.countryId]));
+const excursionCountryId = (excursion) => destinationCountryById.get(dataOf(excursion).destination) ?? dataOf(excursion).country;
 
 export const INTERESTS = Object.freeze(registry);
 export const INTEREST_IDS = new Set(registry.map((row) => row.id));
@@ -28,6 +32,9 @@ const destinationMembership = (tour, id) => {
   return (d.destinations ?? []).includes(id) ? OPTIONAL_COUNTRY_WEIGHT : 0;
 };
 export const interestTourCatalogPath = (theme, country) => `/interests/${dataOf(theme).slug}/tours/${country ? `${dataOf(country).slug}/` : ''}`;
+export const interestDestinationCatalogPath = (theme) => `/interests/${dataOf(theme).slug}/places/`;
+export const interestExcursionCatalogPath = (theme) => `/interests/${dataOf(theme).slug}/excursions/`;
+export const relatedInterestCatalogPath = (theme) => `/interests/${dataOf(theme).slug}/related/`;
 export const pluralIndex = (count) => {
   if (!Number.isSafeInteger(count) || count < 0) throw new RangeError('A count must be a non-negative safe integer.');
   const last = count % 10, lastTwo = count % 100;
@@ -72,13 +79,13 @@ export function buildInterestHub(id, { tours = [], countries = [], destinations 
   const countryIds = new Set(activeCountries.map((entry) => dataOf(entry).id));
   const activePlaces = activeUnique(destinations).filter((entry) => countryIds.has(dataOf(entry).countryId));
   const placeIds = new Set(activePlaces.map((entry) => dataOf(entry).id));
-  const activeExcursions = activeUnique(excursions).filter((entry) => countryIds.has(dataOf(entry).country));
+  const activeExcursions = activeUnique(excursions).filter((entry) => countryIds.has(excursionCountryId(entry)));
   const allTourRefs = new Map(allTours.map((tour) => [dataOf(tour).id, excursionIdsForInterestTour(tour)]));
   const ownExcursions = activeExcursions.filter((entry) => (dataOf(entry).themes ?? []).includes(id));
   const excursionRows = ownExcursions.map((entry) => {
     const entityId = dataOf(entry).id;
     const relatedTours = matchedTours.filter((tour) => allTourRefs.get(dataOf(tour).id)?.has(entityId));
-    return { kind: 'excursion', entry, id: entityId, countryId: dataOf(entry).country, tourCount: relatedTours.length,
+    return { kind: 'excursion', entry, id: entityId, countryId: excursionCountryId(entry), tourCount: relatedTours.length,
       score: relatedTours.length, popularity: allTours.filter((tour) => allTourRefs.get(dataOf(tour).id)?.has(entityId)).length };
   });
   const destinationRows = activePlaces.filter((entry) => (dataOf(entry).themes ?? []).includes(id)).map((entry) => {

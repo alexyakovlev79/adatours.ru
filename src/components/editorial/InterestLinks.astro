@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../../lib/archive.mjs';
+import { themeIds } from '../../lib/interest-model.mjs';
+import { themePath } from '../../lib/routes';
+import { withBase } from '../../lib/paths';
+const { entity } = Astro.props;
+const ids = isActiveEntity(entity) ? themeIds(entity) : [];
+const themes = ids.length ? await getCollection('themes', ({ data }) =>
+  data.locale === 'ru' && isActiveEntity(data) && ids.includes(data.id)
+) : [];
+const byId = new Map(themes.map((entry) => [entry.data.id, entry.data]));
+const linked = ids.map((id) => byId.get(id)).filter(Boolean);
+---
+{linked.length > 0 && (
+  <nav class="interest-links container section--tight" aria-label="Интересы поездки">
+    <p class="eyebrow">По интересам</p>
+    <ul>{linked.map((theme) => <li><a href={withBase(themePath(theme))}>{theme.name}</a></li>)}</ul>
+  </nav>
+)}
+<style>
+  .interest-links ul { display: flex; flex-wrap: wrap; gap: 16px 28px; margin: 0; padding: 0; list-style: none; }
+  .interest-links a { color: var(--color-ink); text-underline-offset: .25em; }
+</style>

@@ -54,6 +54,15 @@ test('archived countries, places and excursions never leak into the graph', () =
     destinations: [entity('p', { countryId: 'one', themes: [A] })], excursions: [entity('e', { country: 'one', themes: [A] })] });
   assert.equal(hub.allCountries.length, 0); assert.equal(hub.allExperiences.length, 0);
 });
+test('excursion geography follows the primary place even before its page exists', () => {
+  const excursion = entity('cross-border', { country: 'country_argentina', destination: 'destination_uruguay_montevideo', themes: [C], hero: { src: '/test.webp' } });
+  const origin = entity('country_argentina'), visited = entity('country_uruguay');
+  const hub = buildInterestHub(C, { countries: [entity('country_argentina', { status: 'archived' }), visited], themes, excursions: [excursion] });
+  assert.equal(hub.allExperiences[0].countryId, 'country_uruguay');
+  assert.equal(hub.stories[0].countryId, 'country_uruguay');
+  const excluded = buildInterestHub(C, { countries: [origin, entity('country_uruguay', { status: 'archived' })], themes, excursions: [excursion] });
+  assert.equal(excluded.allExperiences.length, 0);
+});
 test('top stories and lower experiences do not repeat; related interests come only from common tours', () => {
   const excursions = Array.from({ length: 18 }, (_, i) => entity(`e${i}`, { country: i % 2 ? 'one' : 'two', themes: [A], hero: { src: '/test.webp' } }));
   const hub = buildInterestHub(A, { countries, themes, excursions, tours: [tour('t', { themes: [C] })] });

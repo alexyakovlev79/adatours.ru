@@ -10,7 +10,7 @@ destinationName: Чичикастенанго
 relatedDestinations: []
 themes:
 - theme_culture
-- theme_food
+- theme_gastronomy_wine
 format: Экскурсионная программа
 hero:
   src: /media/destinations/chichicastenango/hero-enhanced-20261003.webp

@@ -27,7 +27,10 @@
       "commit": "ffe73814d0eae3985ab78eb5814cbef06f478944",
       "runId": 38061632210,
       "conclusion": "success"
-    }
+    },
+    "linkedPageHeroesGeneratedTodayChecked": 49,
+    "missingGptImageRecordsRepaired": 2,
+    "aggregateSourceIndexChecked": true
   },
   "findingsFixed": [
     {
@@ -44,6 +47,16 @@
       "program": "P008",
       "problem": "Publication audit retained obsolete deploy/register todo items",
       "action": "Reconciled audit with already successful deploy and actual registers; retained separate business-event clarification"
+    },
+    {
+      "program": "P027",
+      "problem": "Two previously generated linked-place hero images missing from GPT Image history",
+      "action": "Registered confirmed GPT Image origins for Mosquera Islet and Punta Cormorant, generation date 2026-10-10; reused already uploaded files"
+    },
+    {
+      "program": "P008",
+      "problem": "New site-relations check also requires the legacy aggregate source index to match the three canonical records",
+      "action": "Synchronized Bird Park full/route destination IDs and excursion secondary relation in data/source-index/index.json; corrected failed run 38065216421"
     }
   ],
   "branchReview": {

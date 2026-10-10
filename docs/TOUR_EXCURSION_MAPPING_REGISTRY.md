@@ -1445,3 +1445,18 @@ Tour: `tour_brazil_three_ecosystems_8_days`; источник https://docs.googl
 | 7 | `excursion_araras_horseback_rondon_trail` | CANONICALIZED — MD/entry готовы; deploy ожидается |
 
 8 обычных дней сохранены, самостоятельные тексты вынесены в 5 Excursion без потери питания/ночёвок и условий.
+
+
+## P034 — Канайма и Анхель, 4 дня / 3 ночи (Word Анны, 2027)
+
+Источник: https://docs.google.com/document/d/1l3NZVOJImL-ZtZAmlFjBDPrOpyMT2C56/edit; точная проверка: `data/audits/word-tour-p034-20261010.json`. Все семь блоков используют canonical экскурсии.
+
+| Тур | День / блок | Экскурсия | Результат |
+|---|---|---|---|
+| `tour_venezuela_canaima_angel_falls_4_days` | 1 / 1 | `excursion_canaima_sapo_hacha_lagoon` | canonical_excursion_linked |
+| `tour_venezuela_canaima_angel_falls_4_days` | 2 / 1 | `excursion_canaima_angel_falls_full_day` | canonical_excursion_linked |
+| `tour_venezuela_canaima_angel_falls_4_days` | 3 / 2 | `excursion_venezuela_kavak_angel_flight` | canonical_excursion_linked |
+| `tour_venezuela_canaima_angel_falls_4_days` | 3 / 4 | `excursion_venezuela_blue_lagoon_trip` | canonical_excursion_linked |
+| `tour_venezuela_canaima_angel_falls_4_days` | 3 / 6 | `excursion_venezuela_kuravaina_trekking` | canonical_excursion_linked |
+| `tour_venezuela_canaima_angel_falls_4_days` | 3 / 8 | `excursion_canaima_yuri_yurilu` | canonical_excursion_linked |
+| `tour_venezuela_canaima_angel_falls_4_days` | 3 / 10 | `excursion_venezuela_angel_helicopter_flight` | canonical_excursion_linked |

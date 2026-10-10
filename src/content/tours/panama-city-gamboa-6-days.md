@@ -8,7 +8,7 @@ countries:
 - country_panama
 routeCountries:
 - country_panama
-destinations: &id001
+destinations:
 - destination_panama_panama_siti
 - destination_panama_miraflores_locks
 - destination_panama_panama_canal
@@ -21,7 +21,19 @@ destinations: &id001
 - destination_panama_panama_rainforest_discovery_center
 - destination_panama_ozero_gatun
 - destination_panama_monkey_island_gatun
-routeDestinations: *id001
+routeDestinations:
+- destination_panama_panama_siti
+- destination_panama_miraflores_locks
+- destination_panama_panama_canal
+- destination_panama_biomuseo
+- destination_panama_casco_viejo
+- destination_panama_chagres_river
+- destination_panama_embera_chagres_community
+- destination_panama_gamboa
+- destination_panama_nacionalnyj_park_soberania
+- destination_panama_panama_rainforest_discovery_center
+- destination_panama_ozero_gatun
+- destination_panama_monkey_island_gatun
 primaryThemes:
 - theme_culture
 - theme_wildlife
@@ -32,12 +44,12 @@ durationNights: 5
 route:
 - Панама-Сити
 - Мирафлорес
-- Biomuseo
+- Биомузей
 - Каско-Вьехо
 - Чагрес и община эмбера
 - Гамбоа
 - Соберания
-- Rainforest Discovery Center
+- Центр изучения тропического леса Панамы
 - Гатун и Остров обезьян
 - Панама-Сити
 dates: []
@@ -68,9 +80,9 @@ itinerary:
   places:
   - Панама-Сити
   - Мирафлорес
-  - Biomuseo
+  - Биомузей
   - Каско-Вьехо
-  text: Завтрак в отеле. Сегодня — шлюзы Мирафлорес, Biomuseo и исторический центр Каско-Вьехо. После обеда пешая
+  text: Завтрак в отеле. Сегодня — шлюзы Мирафлорес, Биомузей и исторический центр Каско-Вьехо. После обеда пешая
     прогулка по старому городу; во второй половине дня возвращение в отель. Ночь в Панама-Сити.
   images:
   - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
@@ -97,10 +109,10 @@ itinerary:
   title: Тропический лес и смотровая башня
   places:
   - Соберания
-  - Rainforest Discovery Center
+  - Центр изучения тропического леса Панамы
   - Гамбоа
-  text: Завтрак в отеле. Национальный парк Соберания, прогулка по тропам и подъем на башню Rainforest Discovery
-    Center, затем знакомство с природой Гамбоа. Возвращение в отель. Ночь в Гамбоа.
+  text: Завтрак в отеле. Национальный парк Соберания, прогулка по тропам и подъем на башню Центра изучения тропического
+    леса Панамы, затем знакомство с природой Гамбоа. Возвращение в отель. Ночь в Гамбоа.
   images:
   - src: /media/tours/panama-city-gamboa-6-days/word-8-20261010.webp
     alt: Желтая птица с черной головой и крыльями на ветке
@@ -154,8 +166,7 @@ notes:
   в Панама-Сити; в обоих случаях в Гамбоа указан Gamboa Rainforest Resort.
 - Все пять завтраков включены. В тексте дней 2 и 3 упомянуты обеды, а общий список питания отсылает к программе;
   таблица обозначает BB. Включение и условия оплаты обедов подтверждаются при бронировании. Ужины по дням не заявлены.
-- Конкретная община эмбера, размер группы и время экскурсий согласуются при
-  бронировании.
+- Конкретная община эмбера, размер группы и время экскурсий согласуются при бронировании.
 sourceSnapshot: https://docs.google.com/document/d/1E3cu_NsB-Q55iBpMfoX87YrECo17Kgpm/edit
 updatedAt: '2026-10-10'
 ---

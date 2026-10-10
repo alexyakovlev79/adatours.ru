@@ -1460,3 +1460,15 @@ Tour: `tour_brazil_three_ecosystems_8_days`; источник https://docs.googl
 | `tour_venezuela_canaima_angel_falls_4_days` | 3 / 6 | `excursion_venezuela_kuravaina_trekking` | canonical_excursion_linked |
 | `tour_venezuela_canaima_angel_falls_4_days` | 3 / 8 | `excursion_canaima_yuri_yurilu` | canonical_excursion_linked |
 | `tour_venezuela_canaima_angel_falls_4_days` | 3 / 10 | `excursion_venezuela_angel_helicopter_flight` | canonical_excursion_linked |
+
+
+## P039 — От Анд до Карибского моря, 10.10.2026
+
+Свежий Word: https://docs.google.com/document/d/1s8C2hA5M8Xq9v-uealzohr9okK55ebU_/edit. Сохранены 5 дней/4 ночи, 6 тарифов и все коммерческие условия.
+
+| Tour ID | Excursion ID | Позиция | Результат |
+|---|---|---|---|
+| tour_colombia_essential_5_days | excursion_source_siti_tur_v_bogote | День 1, contentBlock 1 | canonical_excursion_linked |
+| tour_colombia_essential_5_days | excursion_source_colombia_bogota_zipaquira_con_guatavita | День 2, contentBlock 1 | canonical_excursion_linked |
+| tour_colombia_essential_5_days | excursion_source_siti_tur_po_kartakhene | День 3, contentBlock 1 | canonical_excursion_linked |
+| tour_colombia_essential_5_days | excursion_colombia_san_pedro_majagua_day_trip | День 4, contentBlock 1 | canonical_excursion_linked |

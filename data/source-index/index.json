@@ -4,21 +4,21 @@
     "counts": {
       "types": {
         "country": 24,
-        "destination": 804,
-        "tour": 355,
+        "destination": 806,
+        "tour": 356,
         "excursion": 264
       },
       "media": {
-        "ready": 896,
+        "ready": 898,
         "existing_enhanced_preserved": 53,
-        "generated": 461,
+        "generated": 462,
         "provided_originals": 37
       },
       "rawDonorUrls": 694,
       "activeTypes": {
         "country": 24,
-        "destination": 804,
-        "tour": 319,
+        "destination": 806,
+        "tour": 320,
         "excursion": 263
       },
       "archivedTypes": {
@@ -65,7 +65,7 @@
       }
     },
     "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
-    "entityCount": 1447
+    "entityCount": 1450
   },
   "entries": [
     {
@@ -25303,6 +25303,8 @@
         "colombia-bogota-zipaquira-con-guatavita"
       ],
       "relatedDestinationIds": [
+        "destination_colombia_ozero_guatavita",
+        "destination_colombia_guatavita_town",
         "destination_colombia_sipakira"
       ],
       "legacyUrls": [
@@ -45166,7 +45168,7 @@
     {
       "id": "excursion_colombia_san_pedro_majagua_day_trip",
       "type": "excursion",
-      "name": "Острова Росарио: групповой день в San Pedro de Majagua",
+      "name": "Острова Росарио: день в Сан-Педро-де-Махагуа",
       "url": "/colombia/rosario-islands/colombia-san-pedro-de-majagua-day-trip/",
       "slug": "colombia-san-pedro-de-majagua-day-trip",
       "contentPath": "src/content/excursions/colombia-san-pedro-majagua-day-trip.md",
@@ -45181,8 +45183,12 @@
       "themes": [
         "theme_beach"
       ],
+      "status": "approved",
       "aliases": [
         "colombia-san-pedro-majagua-day-trip"
+      ],
+      "relatedDestinationIds": [
+        "destination_colombia_isla_grande"
       ],
       "legacyUrls": [
         "/ekskursii/colombia-san-pedro-majagua-day-trip/",
@@ -46835,6 +46841,98 @@
       "destinationId": "destination_guatemala_monterrico_turtle_conservation_center",
       "destinationName": "Центр охраны черепах Монтеррико",
       "entryPath": "data/source-index/entries/excursion_guatemala_monterrico_turtle_center.json"
+    },
+    {
+      "id": "tour_colombia_essential_5_days",
+      "type": "tour",
+      "name": "От Анд до Карибского моря: Богота и Картахена за 5 дней",
+      "url": "/colombia/tour/colombia-essential-5-days/",
+      "slug": "colombia-essential-5-days",
+      "contentPath": "src/content/tours/colombia-essential-5-days.md",
+      "countryIds": [
+        "country_colombia"
+      ],
+      "destinationIds": [
+        "destination_colombia_bogota",
+        "destination_colombia_ozero_guatavita",
+        "destination_colombia_guatavita_town",
+        "destination_colombia_sipakira",
+        "destination_colombia_kartahena",
+        "destination_colombia_islas_rosario",
+        "destination_colombia_isla_grande"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/tour_colombia_essential_5_days.json",
+      "primaryThemes": [
+        "theme_culture",
+        "theme_beach"
+      ],
+      "themes": [],
+      "status": "approved",
+      "aliases": [
+        "Colombia Essential 5d4n",
+        "От Анд до Карибского моря"
+      ],
+      "routeCountryIds": [
+        "country_colombia"
+      ],
+      "routeDestinationIds": [
+        "destination_colombia_bogota",
+        "destination_colombia_ozero_guatavita",
+        "destination_colombia_guatavita_town",
+        "destination_colombia_sipakira",
+        "destination_colombia_kartahena",
+        "destination_colombia_islas_rosario",
+        "destination_colombia_isla_grande"
+      ]
+    },
+    {
+      "id": "destination_colombia_guatavita_town",
+      "type": "destination",
+      "name": "Гуатавита",
+      "url": "/colombia/place/guatavita-town/",
+      "slug": "guatavita-town",
+      "contentPath": "src/content/destinations/guatavita-town.md",
+      "countryIds": [
+        "country_colombia"
+      ],
+      "destinationIds": [
+        "destination_colombia_guatavita_town"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_colombia_guatavita_town.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved",
+      "aliases": [
+        "Городок Гуатавита",
+        "Guatavita town"
+      ]
+    },
+    {
+      "id": "destination_colombia_isla_grande",
+      "type": "destination",
+      "name": "Исла-Гранде",
+      "url": "/colombia/place/isla-grande/",
+      "slug": "isla-grande",
+      "contentPath": "src/content/destinations/isla-grande.md",
+      "countryIds": [
+        "country_colombia"
+      ],
+      "destinationIds": [
+        "destination_colombia_isla_grande"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_colombia_isla_grande.json",
+      "themes": [
+        "theme_beach"
+      ],
+      "status": "approved",
+      "aliases": [
+        "Isla Grande",
+        "Исла Гранде"
+      ]
     }
   ]
 }

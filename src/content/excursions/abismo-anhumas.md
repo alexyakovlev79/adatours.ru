@@ -9,6 +9,8 @@ searchAliases:
   - Абисму-Аньюмас
 country: country_brazil
 destination: destination_brazil_bonito
+relatedDestinations:
+  - destination_brazil_peschera_abismo_anhumas
 language: []
 hero:
   src: /media/tours/brazil-adventure-17d/highlights/07-abismo-anhumas-enhanced-20260930.webp

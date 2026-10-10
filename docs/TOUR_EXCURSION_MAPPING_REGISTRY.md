@@ -1551,3 +1551,15 @@ Word: https://docs.google.com/document/d/16Yho_hI1w_jZ1yah_LrAH8cKU0V5Wddt/edit.
 | `tour_brazil_southern_vip_7_days` | `excursion_brazil_itaimbezinho_full_day` | После дня 4 | Создана из самостоятельного блока Word; excursionRef |
 | `tour_brazil_southern_vip_7_days` | `excursion_brazil_cambara_balloon_picnic` | После дня 5 | Создана из самостоятельного блока Word; excursionRef |
 | `tour_brazil_southern_vip_7_days` | `excursion_brazil_florianopolis_private_city` | После дня 7 | Создана из самостоятельного блока Word; excursionRef |
+
+
+## P080 — 4 дня в Рио, Word 2027 · 2026-10-11
+
+Источник: https://docs.google.com/document/d/1K7mXZs3iOQm9U7fDH-HRmgE3lOn6i6lD/edit. 4 обычных дня, 4 самостоятельных модуля; 2 обязательных и 2 факультативных. Существующие варианты отличаются длительностью, маршрутом или услугами: вечерняя англоязычная Сахарная Голова; старый Рио с дополнительными остановками; Корковаду с поездом/джипом; Росинья с джипом/Видигалом. Новый маршрут эти услуги не обещает. Новые модули имеют stable ID, независимые от тура. Шоу содержит ужин в чурраскарии, а существующий show-only его исключает.
+
+| tour_id | excursion_id | Позиция | Статус программы |
+|---|---|---|---|
+| `tour_brazil_rio_four_days` | `excursion_rio_night_show_churrascaria_dinner` | После дня 1 | Факультативно, оплачивается отдельно |
+| `tour_brazil_rio_four_days` | `excursion_rio_sugarloaf_urca_four_hours` | После дня 2 | Включено |
+| `tour_brazil_rio_four_days` | `excursion_rio_corcovado_tijuca_four_hours` | После дня 3 | Включено |
+| `tour_brazil_rio_four_days` | `excursion_rio_rocinha_private_walk` | После дня 3 | Факультативно, оплачивается отдельно |

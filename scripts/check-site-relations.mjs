@@ -38,7 +38,7 @@ const futureIds = new Set();
 const counts = { countries: countries.length, destinations: destinations.length, tours: tours.length,
   themes: themes.length, themeTour: 0, themePlace: 0, themeExcursion: 0, themeRelated: 0, themedObjects: 0, dormantPlaceTheme: 0, countryTheme: 0, countryThemeOutsidePreview: 0, optionalOnlyThemeCountry: 0,
   excursions: excursions.length, countryExcursion: 0, placeExcursion: 0, relatedPlaceExcursion: 0, reservedPlaceExcursion: 0, tourExcursion: 0,
-  countryPlace: 0, countryTour: 0, additionalCountryTourLink: 0, excludedAdditionalCountryTour: 0, placeTour: 0, optionalPlaceTour: 0, reservedPlaceTour: 0 };
+  countryPlace: 0, countryTour: 0, excludedAdditionalCountryTour: 0, placeTour: 0, optionalPlaceTour: 0, reservedPlaceTour: 0 };
 const fileFor = (path) => resolve(output, `.${path}`, 'index.html');
 const linksCache = new Map();
 const links = (path) => {
@@ -141,10 +141,9 @@ for (const tour of tours) {
       reverse(countryPath(country), tourPath(tour), tourCountryPath(country));
       counts.countryTour++;
     } else {
-      direct(tourPath(tour), countryPath(country));
-      counts.additionalCountryTourLink++;
       counts.excludedAdditionalCountryTour++;
       if (!dataOnly) {
+        assert.ok(!links(tourPath(tour)).has(countryPath(country)), `Additional-country link leaked onto tour page: ${tour.id} → ${country.id}`);
         assert.ok(!links(countryPath(country)).has(tourPath(tour)), `Additional-country tour leaked onto country page: ${country.id} → ${tour.id}`);
         if (existsSync(fileFor(tourCountryPath(country)))) {
           assert.ok(!catalogueLinks(tourCountryPath(country)).has(tourPath(tour)), `Additional-country tour leaked into country catalogue: ${country.id} → ${tour.id}`);

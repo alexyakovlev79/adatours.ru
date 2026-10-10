@@ -92,13 +92,6 @@ const destinationNames = routeDestinations.map((item) => item.name);
 const mainPlaces = routeDestinations.filter((item) => mainTourDestinationIds(d).includes(item.id));
 const optionalPlaces = routeDestinations.filter((item) => optionalTourDestinationIds(d).includes(item.id));
 const mainCountryEntries = mainTourCountryIds(d).map((id) => countryById.get(id)).filter(Boolean);
-const additionalCountryEntries = d.countries
-  .filter((id) => !mainTourCountryIds(d).includes(id))
-  .map((id) => countryById.get(id)).filter(Boolean);
-const countryGroups = [
-  { label: 'Страны маршрута', entries: mainCountryEntries },
-  { label: 'Другие страны программы', entries: additionalCountryEntries },
-];
 const placeGroups = [
   { label: 'Места маршрута', entries: mainPlaces },
   { label: 'Места факультативных экскурсий и вариантов программы', entries: optionalPlaces },
@@ -165,11 +158,11 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     </section>
   )}
 
-  {countryGroups.filter((group) => group.entries.length).map((group) => (
-    <nav class="tour-destinations container" aria-label={group.label}>
-      <p class="eyebrow">{group.label}</p>
+  {mainCountryEntries.length > 0 && (
+    <nav class="tour-destinations container" aria-label="Страны маршрута">
+      <p class="eyebrow">Страны маршрута</p>
       <ul>
-        {group.entries.map((country) => (
+        {mainCountryEntries.map((country) => (
           <li><a href={withBase(countryPath(country.data))}>{country.data.name}</a></li>
         ))}
       </ul>

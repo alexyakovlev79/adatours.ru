@@ -4,9 +4,9 @@
 
 Исходный commit: `8fa1bd809f8b36136ac2d97259c6710f3b2e0835`. Это фиксированный срез; новые туры и дальнейшие изменения требуют сверки.
 
-Неархивных активных туров с highlights: **21**. Из них **3** показывают текстовый блок, как на скриншоте; **18** уже имеют фотографии и раскрытие по «+».
+Неархивных активных туров с highlights: **21**. Из них **0** показывают текстовый блок; **21** уже имеют фотографии и раскрытие по «+».
 
-Для очереди нужно добавить **14** изображений показываемых впечатлений. Частично заполненных блоков: 0.
+Для очереди нужно добавить **0** изображений показываемых впечатлений. Частично заполненных блоков: 0.
 
 Проверены все 377 production MD: 346 активных, 31 архивных исключено. У 325 активных туров highlights пусты — они в эту очередь не входят.
 
@@ -20,26 +20,30 @@
 
 Обновление 11.10.2026: следующие три тура (исходные позиции 13–15) получили 12 фотографий через imagegen. Подробности и промпты: `data/audits/tour-highlights-batch5-20261011.json`.
 
+Обновление 11.10.2026: последняя тройка (исходные позиции 16–18) получила 14 фотографий через imagegen. Все 18 туров исходной очереди завершены; добавлено 79 изображений. Подробности: `data/audits/tour-highlights-batch6-20261011.json`.
+
 ## Как продолжать в следующих чатах
 
 - Машинный реестр: `data/audits/tour-highlights-20261011.json`. Брать записи `workStatus: pending` в порядке `queueOrder`.
 - Перед работой проверить свежий MD по `contentPath`, статус в `data/catalog-archive.json` и текущие `missingImageIndices`: номера здесь начинаются с 1 и относятся к исходному массиву `highlights`, а не к порядку на экране.
 - Обычный импорт/восстановление тура не запускает эту очередь. Генерация выполняется по отдельному заданию пользователя и `docs/workflows/highlights.md`.
 - Сохранять утвержденные title/text и существующие изображения. Новые медиа загружать по `direct-s3-upload.md`, отражать в реестрах и листе «Фото». После подтвержденного подключения обновлять запись очереди, счетчики и этот список в том же логическом пакете.
-- Режим «фото + раскрытие» включается, когда `image.src` есть у всех элементов, переданных в `HighlightsEditorial`. `TourLayout` может вынести первое/последнее впечатление в отдельные истории с gallery; они не входят в 14 недостающих изображений этого блока.
+- Режим «фото + раскрытие» включается, когда `image.src` есть у всех элементов, переданных в `HighlightsEditorial`. `TourLayout` может вынести первое/последнее впечатление в отдельные истории с gallery; они не входят в недостающие изображения этого блока.
 
-## Очередь: текстовый блок
+## Очередь: завершена
+
+Необработанных туров из исходного списка нет.
 
 | № | Тур | ID | Всего впечатлений | В блоке | Нужно фото | Номера без фото |
 |---|---|---|---:|---:|---:|---|
-| 16 | [Тур в Бразилию и Аргентину: от Манауса (Амазонка) до Игуасу](https://adatours.ru/multi-country/tour/brazil-amazon-argentina-manaus-iguazu/) | `tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu` | 4 | 4 | 4 | 1, 2, 3, 4 |
-| 17 | [Тур в Бразилию в Рио де Жанейро, Илья-Гранди, Парати](https://adatours.ru/brazil/tour/brazil-rio-ilha-grande-paraty/) | `tour_source_tur_v_braziliyu_za_vkusami` | 3 | 3 | 3 | 1, 2, 3 |
-| 18 | [VIP-тур в Коста-Рику и Никарагуа \| На частном самолете](https://adatours.ru/multi-country/tour/costa-rica-nicaragua-vip-private-plane/) | `tour_source_vip_kosta_rika_nikaragua` | 7 | 7 | 7 | 1, 2, 3, 4, 5, 6, 7 |
 
 ## Уже готовы: фото и «+»
 
 | Тур | ID | Впечатлений в блоке |
 |---|---|---:|
+| [Тур в Бразилию и Аргентину: от Манауса (Амазонка) до Игуасу](https://adatours.ru/multi-country/tour/brazil-amazon-argentina-manaus-iguazu/) | `tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu` | 4 |
+| [Тур в Бразилию в Рио де Жанейро, Илья-Гранди, Парати](https://adatours.ru/brazil/tour/brazil-rio-ilha-grande-paraty/) | `tour_source_tur_v_braziliyu_za_vkusami` | 3 |
+| [VIP-тур в Коста-Рику и Никарагуа \| На частном самолете](https://adatours.ru/multi-country/tour/costa-rica-nicaragua-vip-private-plane/) | `tour_source_vip_kosta_rika_nikaragua` | 7 |
 | [Новогодний тур в Бразилию, Аргентину и Чили 2027: 10 дней, цены](https://adatours.ru/multi-country/tour/brazil-argentina-chile-new-year-2027-10-days/) | `tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god` | 5 |
 | [Тур в Бразилию на водопады Игуасу с пляжным отдыхом в Бузиос](https://adatours.ru/brazil/tour/brazil-iguazu-buzios-13-days/) | `tour_source_tur_v_braziliyu_na_13_dnej` | 5 |
 | [Тур в Бразилию на 6 дней: Рио-де-Жанейро и на Водопады Игуасу](https://adatours.ru/brazil/tour/brazil-rio-iguazu-6-days/) | `tour_source_tur_v_braziliyu_na_6dnej` | 2 |

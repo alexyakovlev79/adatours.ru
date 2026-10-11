@@ -94,6 +94,7 @@ const money = roundedPrice && d.currency
 const stats = [
   d.duration ? { value: d.duration, label: 'продолжительность' } : null,
   destinationName ? { value: destinationName, label: 'место' } : null,
+  !archived && country ? { value: country.data.name, label: 'страна', href: countryPath(country.data) } : null,
   d.format ? { value: d.format, label: 'формат' } : null,
 ].filter(Boolean);
 
@@ -172,9 +173,6 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
   {stats.length > 0 && <TripStats stats={stats} variant="excursion" />}
 
   <EntityLinks entity={d} groups={archived ? [] : [
-    { label: 'Страна экскурсии', entries: country ? [
-      { name: country.data.name, href: countryPath(country.data) },
-    ] : [] },
     { label: 'Места экскурсии', entries: visibleDestinations.map((place) => ({
       name: place.data.name, href: destinationPath(place.data),
     })) },

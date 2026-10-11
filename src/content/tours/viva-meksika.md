@@ -306,7 +306,7 @@ updatedAt: '2026-10-10'
 aliases:
 - viva-meksika
 hero:
-  src: /media/destinations/mexico-city-and-teotihuacan/hero-enhanced-20261004.webp
+  src: /media/countries/mexico/block-068-generated-20261011-dedup-v1.webp
   alt: 'На фото: столица, город Мехико Сити в Мексике'
 dates:
 - По средам и пятницам, 2026 год
@@ -371,4 +371,5 @@ priceNote: Цена на человека при размещении TPL. DBL �
 | 4 | Мехико | Casa Blanca4* |
 | 4 | Оахака |  Viktoria 4*  |
 | 3 | Мерида | Gamma 4* |
+
 

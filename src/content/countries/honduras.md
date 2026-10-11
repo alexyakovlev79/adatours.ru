@@ -26,15 +26,15 @@ featureBands:
   - eyebrow: Мир майя
     title: Копан и наследие майя
     text: Руины Копана позволяют сделать археологию одной из главных частей маршрута и соединить ее с колониальными городами и природными районами западного Гондураса.
-    image: /media/countries/honduras/featureBands-1-enhanced-20261002.webp
+    image: /media/countries/honduras/block-058-generated-20261011-dedup-v1.webp
   - eyebrow: Карибское море
     title: Роатан, Утила и коралловый риф
     text: Острова залива подходят для пляжного отдыха, снорклинга и дайвинга. Роатан дает более курортный формат, а Утила известна дайвингом и более демократичной атмосферой.
-    image: /media/countries/honduras/featureBands-2-enhanced-20261002.webp
+    image: /media/countries/honduras/block-059-generated-20261011-dedup-v1.webp
   - eyebrow: Озера и водопады
     title: Йоджоа и Пульхапанзак
     text: Район озера Йоджоа можно включить в природную часть поездки с наблюдением за птицами, пешими маршрутами, горячими источниками и поездкой к водопаду Пульхапанзак.
-    image: /media/countries/honduras/featureBands-3-enhanced-20261002.webp
+    image: /media/countries/honduras/block-060-generated-20261011-dedup-v1.webp
 sourceUrl: https://brasiltours.ru/gonduras-ru
 sourceSnapshot: page_texts_original/gonduras-ru__f10f03e7.md
 updatedAt: 2026-10-02
@@ -47,3 +47,4 @@ updatedAt: 2026-10-02
 Внутри страны можно добавить озеро Йоджоа, водопад Пульхапанзак и природные районы с тропическими лесами. Озеро подходит для остановки между крупными городами, наблюдения за птицами, прогулок и поездок по окрестностям. Тегусигальпа добавляет к маршруту городскую часть.
 
 Ada Tours может собрать самостоятельное путешествие по Гондурасу или включить страну в комбинированный маршрут по Центральной Америке.
+

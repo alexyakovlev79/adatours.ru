@@ -18,7 +18,7 @@ priceFrom: 280
 currency: USD
 priceNote: "Основная стоимость — $280. Для группы из 2–4 человек — $141 на человека."
 hero:
-  src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
+  src: /media/countries/uruguay/block-090-generated-20261011-dedup-v1.webp
   alt: Исторический центр Монтевидео, Уругвай
 gallery:
   - src: /media/excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej/gallery-0-src-enhanced-20261007.webp
@@ -54,4 +54,5 @@ themes: ["theme_culture"]
 Вы увидите Площадь Свободы и Авенида 18 де Хулио, затем выйдете к Площади Независимости с памятником Хосе Артигасу и Паласио-Сальво. Рядом находятся Ворота Цитадели — сохранившийся фрагмент укреплений колониальной эпохи.
 
 Далее маршрут проходит по пешеходной улице Саранди через Сьюдад-Вьеха. В программе — Кафедральный собор Матрис, памятник основателю города Бруно Маурисио де Сабала и Театр Солис, один из известных исторических театров Южной Америки.
+
 

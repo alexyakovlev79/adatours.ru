@@ -237,7 +237,7 @@ priceFrom: 4741
 currency: USD
 priceNote: $4741
 hero:
-  src: /media/countries/venezuela/hero-enhanced-20261002.webp
+  src: /media/countries/venezuela/block-098-generated-20261011-dedup-v1.webp
   alt: Венесуэла -Новые  Конкистадоры
 routeCountries:
 - country_venezuela
@@ -254,3 +254,4 @@ themes: ["theme_culture","theme_beach"]
 
 
 ## Главное в путешествии
+

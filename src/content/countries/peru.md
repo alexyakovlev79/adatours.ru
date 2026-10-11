@@ -30,15 +30,15 @@ featureBands:
   - eyebrow: Анды
     title: Куско и Священная долина
     text: Первые дни в Андах лучше оставить спокойнее, чтобы высота не забирала впечатления от Куско и Священной долины.
-    image: /media/destinations/cusco/hero-enhanced-20260930.webp
+    image: /media/countries/peru/block-081-generated-20261011-dedup-v1.webp
   - eyebrow: Главный символ
     title: Мачу-Пикчу
     text: Поезд, автобус, время входа и ночевку лучше согласовать заранее как одну часть маршрута.
-    image: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
+    image: /media/countries/peru/block-082-generated-20261011-dedup-v1.webp
   - eyebrow: Высокогорье
     title: Озеро Титикака
     text: Пуно и Титикака добавляют в маршрут высокогорье и позволяют продолжить поездку в сторону Боливии.
-    image: /media/countries/peru/featureBands-3-image-enhanced-20261001.webp
+    image: /media/countries/peru/block-083-generated-20261011-dedup-v1.webp
 sourceUrl: https://brasiltours.ru/peru-ru
 sourceSnapshot: page_texts_original/peru-ru__722f1abd.md
 updatedAt: 2026-09-24
@@ -47,3 +47,4 @@ updatedAt: 2026-09-24
 Перу редко заканчивается на Мачу-Пикчу. Лиму, Куско, Священную долину и Анды можно дополнить Титикакой, Арекипой, Амазонией или продолжением по другим странам.
 
 Высота, внутренние перелеты и железная дорога влияют на порядок остановок. Ada Tours собирает программу так, чтобы дорога оставалась частью путешествия, а не съедала его.
+

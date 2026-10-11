@@ -14,7 +14,7 @@ lead: Базилика Гваделупе и пирамиды Теотиуака
 themes:
 - theme_culture
 hero:
-  src: /media/countries/mexico/featureBands-1-enhanced-20261002.webp
+  src: /media/countries/mexico/block-064-generated-20261011-dedup-v1.webp
   alt: 'На фото: пирамида Солнца в Теотиуакане в Мексике'
 duration: 10 часов
 language:
@@ -55,3 +55,4 @@ updatedAt: '2026-10-09'
 Посещение базилики Гваделупе 
 
 Не включено: Питание, Напитки, Чаевые, Личные расходы
+

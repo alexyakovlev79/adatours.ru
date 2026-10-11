@@ -18,7 +18,7 @@ priceFrom: 703
 currency: USD
 priceNote: "Основная стоимость — $703. Для группы из 2–4 человек в исходной программе отдельно указано $352 на человека."
 hero:
-  src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
+  src: /media/countries/uruguay/block-089-generated-20261011-dedup-v1.webp
   alt: Монтевидео, Уругвай
 gallery:
   - src: /media/excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej/gallery-0-src-enhanced-20261007.webp
@@ -61,4 +61,5 @@ themes: ["theme_culture","theme_gastronomy_wine"]
 После городской части предусмотрен обед в традиционном Mercado Puerto. Затем маршрут продолжается на винодельне. По исходной программе ближайшие винодельни находятся примерно в 15–20 минутах езды от центра Монтевидео: здесь можно увидеть производственные и складские зоны и попробовать местные вина.
 
 Отдельное место в уругвайском виноделии занимает Таннат. В исходной программе Канелонес назван главным винодельческим регионом страны; также перечислены Мерло, Пино Нуар, Марселан, Каберне Фран, Каберне Совиньон, Совиньон Блан, Шардоне и Альбариньо.
+
 

@@ -18,9 +18,10 @@ relatedDestinations:
 - destination_venezuela_kanajma_i_vodopad_anhel
 sourceSnapshot: https://drive.google.com/file/d/1XH92Fy0Amt9ucbzA6OjA_kW6lI_bkN8I/view?usp=drivesdk
 hero:
-  src: /media/tours/venesuela-novye-konkistadory/kavac-canyon-place-generated-20261008.webp
+  src: /media/countries/venezuela/block-095-generated-20261011-dedup-v1.webp
   alt: Узкий скальный каньон Кавак с водой и каскадом, Венесуэла
 themes: ["theme_wildlife"]
 ---
 
 Каньон Кавак и полет над Анхелем
+

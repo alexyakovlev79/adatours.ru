@@ -64,7 +64,7 @@ const { eyebrow, title, text, image, facts = [], reverse = false } = Astro.props
   }
   .proof h2 { max-width: 920px; margin: 10px 0 18px; color: inherit; font-size: var(--text-h2); line-height: 1.04; overflow-wrap: break-word; }
   .proof__copy > p:last-of-type { max-width: 700px; margin-bottom: 0; color: rgba(255,255,255,.9); }
-  .proof ul { max-width: 760px; margin: 28px 0 0; padding: 0; list-style: none; border-top: 1px solid rgba(255,255,255,.35); }
+  .proof ul { width: max-content; max-width: min(760px, 100%); margin: 28px 0 0; padding: 0; list-style: none; border-top: 1px solid rgba(255,255,255,.35); }
   .proof li { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.35); font-size: .92rem; }
   .proof--reverse .proof__copy { text-align: right; }
   .proof--reverse h2,

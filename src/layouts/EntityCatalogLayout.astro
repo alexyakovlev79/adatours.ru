@@ -4,6 +4,7 @@ import { seoPaginatedTitle } from '../lib/seo-page.mjs';
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
+import InlineMarkdown from '../components/global/InlineMarkdown.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../components/catalog/CatalogPagination.astro';
@@ -40,6 +41,7 @@ interface Props {
 }
 
 const { leadTitle, leadEntityId, kind, entries, title, h1Title = title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
+const introBelowHero = kind === 'tour' && /^\/interests\/[^/]+\/tours\/[^/]+\/$/.test(p.rootPath);
 const isVipCatalog = variant === 'vip-tours' || variant === 'vip-country-tours';
 const eyebrow = isVipCatalog ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : kind === 'theme' ? 'По интересам' : 'Направления';
 const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
@@ -139,10 +141,15 @@ const listSchema = {
   <Hero
     eyebrow={eyebrow}
     title={`${presentation.title}${pageSuffix}`}
-    intro={presentation.intro}
+    intro={introBelowHero ? undefined : presentation.intro}
     image={hero}
     compact={p.currentPage > 1 || (variant !== 'global-tours' && variant !== 'global-places')}
   />
+  {introBelowHero && presentation.intro && (
+    <div class="catalog-intro container">
+      <p><InlineMarkdown text={presentation.intro} /></p>
+    </div>
+  )}
   {navigationLinks.length > 0 && (
     <nav class="catalog-navigation container" aria-label={navigationLabel ?? 'Связанные разделы'}>
       <ul>
@@ -217,6 +224,14 @@ const listSchema = {
 </script>
 
 <style>
+  .catalog-intro { padding-top: clamp(20px, 3vw, 32px); }
+  .catalog-intro p {
+    max-width: 1000px;
+    margin: 0;
+    color: var(--color-ink);
+    font-size: var(--text-lg);
+    line-height: 1.55;
+  }
   .catalog-navigation { padding-block: 20px; }
   .catalog-navigation ul {
     display: flex;

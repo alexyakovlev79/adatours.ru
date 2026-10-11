@@ -13,7 +13,7 @@ themes:
 - theme_wildlife
 - theme_cruises
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x815-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x815-20261011-v1-enhanced-20261012-next21-v1.webp
   alt: Мраморные гроты над бирюзовой водой озера Хенераль-Каррера
 gallery: []
 lead: Тур на целый день к знаменитым Мраморным пещерам на озере Хенераль-Каррера — втором по величине озере Южной

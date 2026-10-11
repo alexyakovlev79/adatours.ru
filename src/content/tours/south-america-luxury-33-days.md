@@ -261,7 +261,7 @@ itinerary:
   - Лима
   text: Прибытие в Лиму и трансфер в отель.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x84-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x84-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Прибрежные скалы и набережная Лимы у Тихого океана
 - day: 2
   title: Исторический центр Лимы
@@ -318,7 +318,7 @@ itinerary:
   - Река Укаяли
   text: Продолжение круиза Aqua Nera по Амазонии. Ежедневные выходы с опытными гидами проходят по программе судна.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x198-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x198-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Судно Aqua Nera на амазонской реке в вечернем свете
 - day: 6
   title: 'Круиз Aqua Nera: реки и тропический лес'
@@ -327,7 +327,7 @@ itinerary:
   text: Продолжение круиза Aqua Nera по рекам Амазонии. Экспедиционная программа знакомит с тропическими лесами
     и их обитателями.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x203-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x203-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Открытая палуба круизного судна с видом на амазонскую реку
 - day: 7
   title: 'Круиз Aqua Nera: экспедиционные выходы'
@@ -350,7 +350,7 @@ itinerary:
 
     Встреча в аэропорту и переезд в отель в Священной долине с русскоязычным гидом.'
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x229-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x229-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Каменная церковь и черепичные крыши Куско
 - day: 9
   title: Морай, Марас и обед в MIL Centro
@@ -360,7 +360,7 @@ itinerary:
   - Марас
   text: Морай, Марас и обед в MIL Centro. Подробная экскурсионная программа приведена ниже.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x250-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x250-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Соляные бассейны Мараса на горном склоне
 - excursionRef: excursion_moray_maras_mil_centro_lunch
   places:
@@ -393,7 +393,7 @@ itinerary:
   - Куско
   text: Мачу-Пикчу на поезде Hiram Bingham. Подробная экскурсионная программа приведена ниже.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x297-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x297-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Каменные террасы Мачу-Пикчу на фоне андских вершин
 - excursionRef: excursion_machu_picchu_hiram_bingham_sanctuary_tea
   places:
@@ -415,7 +415,7 @@ itinerary:
   text: Ранним утром полет на вертолете к Виникунке. После возвращения обзорная экскурсия по Куско с русскоязычным
     гидом.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x322-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x322-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Полосатые склоны Радужной горы Виникунка в Перу
 - excursionRef: excursion_vinicunca_helicopter_flight
   places:
@@ -439,7 +439,7 @@ itinerary:
   - Пуно и о.Титикака
   text: Путешествие на поезде Belmond Andean Explorer из Куско к озеру Титикака. Ночевка в поезде у берегов озера.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x348-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x348-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Панорамный салон поезда Belmond Andean Explorer
 - excursionRef: excursion_belmond_andean_explorer_cusco_titicaca
   places:
@@ -457,7 +457,7 @@ itinerary:
   text: 'Ранний подъем, чтобы встретить впечатляющий рассвет над спокойными водами озера Титикака. После этого —
     праздничный заключительный завтрак на борту Belmond Andean Explorer и высадка в Пуно. '
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x379-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x379-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Каменная тропа и зеленые склоны острова Такиле
 - excursionRef: excursion_titicaca_uros_taquile_full_day
   places:

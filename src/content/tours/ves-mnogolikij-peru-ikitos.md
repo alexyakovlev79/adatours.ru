@@ -202,7 +202,7 @@ itinerary:
 
       Прибытие в Пуно около **19:00**.
 
-      **Доплата:** $250 с человека.
+      **Доплата:** по запросу.
   images:
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp"
     alt: 'На фото: озеро Титикака в Перу'

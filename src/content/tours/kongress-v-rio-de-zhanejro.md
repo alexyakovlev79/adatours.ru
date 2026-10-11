@@ -156,9 +156,8 @@ sourceUrl: https://brasiltours.ru/kongress-v-rio-de-zhanejro
 sourceSnapshot: https://drive.google.com/file/d/1_PlPst3hnzQ05INuJXfJDls3KmY0JBqT/view?usp=drivesdk
 durationDays: 5
 durationNights: 4
-priceFrom: 1845
 currency: USD
-priceNote: $1845
+priceNote: "Стоимость уточняется"
 hero:
   src: /media/tours/kongress-v-rio-de-zhanejro/hero-enhanced-20261006.webp
   alt: 'На фото: Рио-де-Жанейро'

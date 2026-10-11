@@ -240,11 +240,11 @@ itinerary:
 
     Дополнительно к экскурсии можно заказать 2 программы.
 
-    **Макуко Сафари - USD 130 на человека.** Поездка начинается на внедорожнике через густые джунгли.
+    **Макуко Сафари - по запросу.** Поездка начинается на внедорожнике через густые джунгли.
 
     По программе можно заказать диск с записью путешествия.
 
-    **Парк птиц - USD 50 на человека.** Парк расположен недалеко от национального парка Игуасу.
+    **Парк птиц - по запросу.** Парк расположен недалеко от национального парка Игуасу.
   images:
   - src: /media/tours/brazil-dunes-13d/itinerary/day-06-enhanced-20261001.webp
     alt: 'На фото: тропические Водопады Игуасу  в Аргентине и Бразилии'
@@ -348,9 +348,8 @@ sourceUrl: https://brasiltours.ru/tur-v-4-strany-yuzhnoj-ameriki
 sourceSnapshot: https://drive.google.com/file/d/1gFX2c9ZSFvC1Jw4l-xxz0Ak-EZVCv8IP/view?usp=drivesdk
 durationDays: 17
 durationNights: 16
-priceFrom: 5823
 currency: USD
-priceNote: $5823
+priceNote: "Стоимость уточняется"
 hero:
   src: "/media/tours/tur-v-4-strany-yuzhnoj-ameriki/hero-enhanced-20261007.webp"
   alt: 'На фото: ледник Перито Морено, Патагония'

@@ -232,7 +232,7 @@ included:
 - Входные билеты на бразильскую сторону водопадов Игуасу.
 notIncluded:
 - Международные авиаперелеты.
-- Внутренние перелеты Рио-де-Жанейро - Манаус - Сальвадор - Игуасу - Буэнос-Айрес, от $1250 на человека, NET, без комиссии.
+- Внутренние перелеты Рио-де-Жанейро - Манаус - Сальвадор - Игуасу - Буэнос-Айрес, по запросу, NET, без комиссии.
 - Личные расходы.
 notes:
 - При необходимости Ada Tours может заменить указанные отели другими отелями той же категории.
@@ -243,9 +243,8 @@ sourceUrl: https://brasiltours.ru/braziliya-argentina-gruppovoj-tur
 sourceSnapshot: https://drive.google.com/file/d/1gE0A4qS08Qy8CmgKmVXpPtaufMQHLuBo/view?usp=drivesdk
 durationDays: 14
 durationNights: 13
-priceFrom: 4195
 currency: USD
-priceNote: $4195
+priceNote: "Стоимость уточняется"
 hero:
   src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
   hover: "Амазония в Бразилии: река петляет среди густого тропического леса"

@@ -220,7 +220,7 @@ itinerary:
     дополнительно
 
 
-    **Стоимость:** $100 нетто на человека.'
+    **Стоимость:** по запросу нетто на человека.'
   images:
   - src: /media/tours/braziliya-s-san-paulo/itinerary-day-4-enhanced-20261006.webp
     alt: 'На фото: индейцы из Амазонии, Бразилия'

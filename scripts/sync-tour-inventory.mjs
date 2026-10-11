@@ -34,6 +34,8 @@ export function computeInventory(ledger, catalog, archives, pages) {
   const entitiesById = new Map(entities.map((e) => [e.id, e]));
   const programIds = new Set();
   const fileIds = new Set();
+  const primaryOwners = new Map();
+  const priceKeys = new Set(ledger.programs.map((p) => p.key).filter(Boolean));
   const programs = ledger.programs.map((program) => {
     if (programIds.has(program.id)) throw new Error(`Duplicate program: ${program.id}`);
     programIds.add(program.id);
@@ -42,6 +44,13 @@ export function computeInventory(ledger, catalog, archives, pages) {
     for (const file of program.files) {
       if (fileIds.has(file.driveId)) throw new Error(`Drive file assigned twice: ${file.driveId}`);
       fileIds.add(file.driveId);
+    }
+    if (program.primaryFileDriveId && !program.files.some((f) => f.driveId === program.primaryFileDriveId)) throw new Error(`Invalid primary file: ${program.id}`);
+    if (program.canonicalPriceProgramKey && (!priceKeys.has(program.canonicalPriceProgramKey) || program.canonicalPriceProgramKey === program.key)) throw new Error(`Invalid canonical price program: ${program.id}`);
+    for (const id of program.primaryForEntityIds ?? []) {
+      if (!program.entityIds.includes(id)) throw new Error(`Primary tour absent from matches: ${id}`);
+      if (primaryOwners.has(id)) throw new Error(`Multiple primary Word programs for tour: ${id}`);
+      primaryOwners.set(id, program.id);
     }
     const ids = new Set(program.entityIds);
     // An archived duplicate's confirmed replacement is a valid active counterpart.
@@ -106,8 +115,8 @@ export function renderInventory(ledger, result) {
   const programTable = (title, list) => {
     out.push(`## ${title}`, '', '| ID программы | Программа / разделы Drive | Все файлы Drive | Соответствия сайта / реестра | Наличие | Работа с содержанием |', '|---|---|---|---|---|---|');
     for (const p of list) {
-      const matches = p.matches.map((e) => `${tourLink(e)} — ${e.archived ? 'архив' : e.active ? 'активный' : e.draft ? 'черновик' : 'только источник'}; \`${e.id}\``).join('; ') || '—';
-      out.push(`| \`${p.key ?? p.id}\` | ${cell(p.name)}; ${p.durationDays ?? 'уточнить'} дн.; ${cell(p.folders.join(', '))} | ${p.files.map((f) => link(f.name, f.url)).join('; ')} | ${matches} | ${labels[p.state]} | ${workLabels[p.work.state]}${p.work.note ? '; ' + cell(p.work.note) : ''} |`);
+      const matches = p.matches.map((e) => `${tourLink(e)}${p.primaryForEntityIds?.includes(e.id) ? ' — основной Word' : ' — связанный материал, не основной Word'} — ${e.archived ? 'архив' : e.active ? 'активный' : e.draft ? 'черновик' : 'только источник'}; \`${e.id}\``).join('; ') || '—';
+      out.push(`| \`${p.key ?? p.id}\` | ${cell(p.name)}; ${p.durationDays ?? 'уточнить'} дн.; ${cell(p.folders.join(', '))} | ${p.files.map((f) => `${link(f.name, f.url)}${f.driveId === p.primaryFileDriveId ? ' — основной файл' : f.role === 'text_copy' ? ' — текстовая копия' : ' — сохранённая редакция'}`).join('; ') + (p.canonicalPriceProgramKey ? `; единый ценовой источник: \`${p.canonicalPriceProgramKey}\`` : '') + (p.sourceRole ? `; роль: ${cell(p.sourceRole)}` : '')} | ${matches} | ${labels[p.state]} | ${workLabels[p.work.state]}${p.work.note ? '; ' + cell(p.work.note) : ''} |`);
     }
     out.push('');
   };

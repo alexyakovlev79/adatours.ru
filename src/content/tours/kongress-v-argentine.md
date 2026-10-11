@@ -22,8 +22,8 @@ durationNights: 4
 route:
   - "Буэнос-Айрес"
   - "Тигре"
-priceFrom: 1285
 currency: USD
+priceNote: "Стоимость уточняется"
 dates: []
 hero:
   src: /media/tours/kongress-v-argentine/hero-enhanced-20261006.webp

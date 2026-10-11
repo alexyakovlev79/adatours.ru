@@ -241,9 +241,8 @@ sourceUrl: https://brasiltours.ru/meksika-fantasticheskaya
 sourceSnapshot: https://drive.google.com/file/d/1WKnbclv5PqMU0rMu95Qan-1VnOvNKRhZ/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 2561
 currency: USD
-priceNote: $2561 на человека при размещении DBL в отелях 4* и группе из 6 человек
+priceNote: "Стоимость уточняется"
 hero:
   src: /media/tours/meksika-fantasticheskaya/hero-src-enhanced-20261007.webp
   hover: "Теотиуакан в Мексике: пирамида среди каменных ступенчатых построек"

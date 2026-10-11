@@ -55,3 +55,18 @@ test('identity reader ignores status-like strings in the Markdown body', () => {
   assert.deepEqual(identityFromMarkdown('---\nid: "tour_a"\nstatus: approved # active\n---\nstatus: archived\n'), { id: 'tour_a', status: 'approved' });
   assert.throws(() => identityFromMarkdown('id: tour_a\nstatus: published'), /Missing frontmatter/);
 });
+
+test('one primary Word per tour and a valid primary file are required', () => {
+  const a = { ...program('a', ['tour']), primaryForEntityIds: ['tour'], primaryFileDriveId: 'a' };
+  const b = { ...program('b', ['tour']), primaryForEntityIds: ['tour'] };
+  assert.throws(() => computeInventory(ledger(a, b), [entry('tour')], [], new Map()), /Multiple primary Word/);
+  assert.throws(() => computeInventory(ledger({ ...a, primaryFileDriveId: 'missing' }), [entry('tour')], [], new Map()), /Invalid primary file/);
+  assert.doesNotThrow(() => computeInventory(ledger(a, { ...b, primaryForEntityIds: [] }), [entry('tour')], [], new Map()));
+});
+
+test('price aliases must refer to a retained different program key', () => {
+  const a = { ...program('a'), key: 'P001' };
+  const b = { ...program('b'), key: 'P002', canonicalPriceProgramKey: 'P001' };
+  assert.doesNotThrow(() => computeInventory(ledger(a, b), [], [], new Map()));
+  assert.throws(() => computeInventory(ledger(a, { ...b, canonicalPriceProgramKey: 'P999' }), [], [], new Map()), /Invalid canonical price program/);
+});

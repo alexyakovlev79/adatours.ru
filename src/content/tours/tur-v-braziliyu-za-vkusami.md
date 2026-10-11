@@ -174,9 +174,9 @@ sourceUrl: https://brasiltours.ru/tur-v-braziliyu-za-vkusami
 sourceSnapshot: https://drive.google.com/file/d/1A6swRGCcqaJ0JCwdpe0ADbL0DIR42sc2/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 1509
+priceFrom: 3480
 currency: USD
-priceNote: $1509
+priceNote: "3480 USD на человека, DBL; Arena Leme 3 ночи, Asalem 2, Sandi 2."
 hero:
   src: /media/tours/tur-v-braziliyu-za-vkusami/hero-enhanced-20261006.webp
   alt: 'На фото: пляжи Илья Гранди. Бразилия'
@@ -196,3 +196,11 @@ themes:
 
 
 Здесь несколько дней большого города сменяются морской прогулкой и островной природой, а затем историей старого портового Парати. Это хороший вариант для тех, кто хочет увидеть Рио и провести часть поездки у океана, не ограничивая путешествие только пляжным отдыхом.
+
+## Стоимость размещения
+
+Цена на человека в USD. Отели: Arena Leme — 3 ночи, Asalem Hotel — 2 ночи, Sandi Hotel — 2 ночи. Итоговая стоимость подтверждается при бронировании.
+
+| SGL | DBL | TRP |
+|---:|---:|---:|
+| 6795 | 3480 | 3296 |

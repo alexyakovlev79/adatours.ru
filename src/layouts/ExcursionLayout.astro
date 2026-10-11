@@ -159,6 +159,7 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
 
   <Hero
     contentSized
+    compactCta
     eyebrow={archived ? "Архивная экскурсия" : "Экскурсия"}
     title={d.title}
     image={d.hero?.src}
@@ -166,7 +167,7 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     mediaStatus={d.hero?.status}
     replacementReason={d.hero?.replacementReason}
     meta={[d.duration ?? '', d.route.join(' · ')].filter(Boolean).join(' · ')}
-    ctaLabel={archived ? "Актуальные экскурсии" : "Заказать экскурсию"}
+    ctaLabel={archived ? "Все экскурсии" : "Хочу сюда"}
     ctaHref={archived ? "/excursions/" : "/contacts/"}
   />
 

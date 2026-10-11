@@ -11,7 +11,7 @@ relatedDestinations: []
 themes:
 - theme_wildlife
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x478-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x478-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Млечный Путь над наблюдателями и телескопами в Атакаме
 gallery: []
 lead: Вечером вас ждет астрономический тур в пустыне Атакама — одном из лучших мест на планете для наблюдения за

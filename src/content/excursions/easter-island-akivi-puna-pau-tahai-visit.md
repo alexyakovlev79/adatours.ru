@@ -15,7 +15,7 @@ relatedDestinations:
 themes:
 - theme_culture
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x623-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x623-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Моаи с красным пукао на платформе у побережья острова Пасхи
 gallery: []
 lead: Экскурсия начнется с посещения восстановленной платформы аху Акиви, расположенной в центральной части острова.

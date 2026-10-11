@@ -15,7 +15,7 @@ themes:
 - theme_culture
 - theme_cruises
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x302-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x302-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Вагон поезда Hiram Bingham с освещенными окнами
 gallery: []
 lead: Трансфер на железнодорожную станцию Ольянтайтамбо и отправление на роскошном поезде Hiram Bingham (Belmond).

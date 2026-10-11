@@ -15,7 +15,7 @@ themes:
 - theme_cruises
 - theme_culture
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x353-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x353-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Поезд Belmond Andean Explorer среди горных пейзажей Перу
 gallery: []
 lead: Belmond Andean Explorer — роскошный поезд, следующий по одному из самых высокогорных железнодорожных маршрутов

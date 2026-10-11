@@ -16,7 +16,7 @@ relatedDestinations:
 themes:
 - theme_culture
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x327-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x327-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Храм Санто-Доминго над стенами Кориканчи в Куско
 gallery: []
 lead: После возвращения — обзорная экскурсия по Куско с русскоязычным гидом. Вы познакомитесь с бывшей столицей

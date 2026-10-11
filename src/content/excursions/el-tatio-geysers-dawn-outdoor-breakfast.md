@@ -12,7 +12,7 @@ relatedDestinations:
 themes:
 - theme_wildlife
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x488-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x488-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Столбы пара на гейзерном поле Эль-Татио
 gallery: []
 lead: Программа начнется рано утром с выезда к гейзерам Эль-Татио — одному из крупнейших геотермальных полей мира.

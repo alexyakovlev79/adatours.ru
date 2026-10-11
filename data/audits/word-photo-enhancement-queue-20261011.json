@@ -10,11 +10,12 @@
     "unconfirmed": "no canonical GPT Image evidence means NEEDS_REPLACEMENT; does not prove no historical tool invocation"
   },
   "counts": {
-    "REPLACED": 90,
-    "NEEDS_REPLACEMENT": 32
+    "REPLACED": 100,
+    "ARCHIVED": 1,
+    "NEEDS_REPLACEMENT": 21
   },
   "uniqueWordPhotos": 76,
-  "pendingPhotoSlots": 32,
+  "pendingPhotoSlots": 21,
   "batchSize": 10,
   "batches": 13,
   "photos": [
@@ -614,8 +615,8 @@
       "src": "/media/tours/complete-ecuador-new-year/word-14-20261009-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/complete-ecuador-new-year/word-14-20261009-v1.webp",
       "origin": "word_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "ARCHIVED",
+      "action": "",
       "evidence": [
         {
           "kind": "asset_filename",
@@ -652,7 +653,9 @@
       "queueOrder": 4,
       "batchNumber": 1,
       "documentQueueOrder": 4,
-      "documentBatchNumber": 1
+      "documentBatchNumber": 1,
+      "supersededBy": "/media/countries/ecuador/block-103-generated-20261011-dedup-v1.webp",
+      "reason": "Original hero slot already replaced by registered GPT Image asset; old source has no active usage."
     },
     {
       "src": "/media/tours/complete-ecuador-new-year/word-04-20261009-v1.webp",
@@ -7434,8 +7437,8 @@
       "src": "/media/tours/south-america-luxury-33-days/pdf-x302-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x302-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -7443,7 +7446,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x302-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x302-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-11",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/excursions/machu-picchu-hiram-bingham-sanctuary-tea.md",
@@ -7471,14 +7482,27 @@
         "status": "blocked",
         "error": "Tunnel connection failed: 403 Forbidden",
         "sourceUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x302-20261011-v1.webp"
+      },
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x302-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+      "enhancedAt": "2026-10-11",
+      "processingTask": "next50-2324",
+      "processingBatch": 5,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x302-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "sha256": "b9b92954adfe9c8ee073d046a2347a934689a77c1065682c9ce4d4a936ebc867",
+        "bytes": 296972,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T20:49:07.343Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
       }
     },
     {
       "src": "/media/tours/south-america-luxury-33-days/pdf-x327-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x327-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -7486,7 +7510,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x327-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x327-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-11",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/excursions/cusco-archaeological-sites-russian-guide.md",
@@ -7514,14 +7546,27 @@
         "status": "blocked",
         "error": "Tunnel connection failed: 403 Forbidden",
         "sourceUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x327-20261011-v1.webp"
+      },
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x327-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+      "enhancedAt": "2026-10-11",
+      "processingTask": "next50-2324",
+      "processingBatch": 5,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x327-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "sha256": "7bb9eef4533bdd17180533f0bb7b337c0b413f4c9455a5604423695a2c593fc4",
+        "bytes": 524788,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T20:49:15.279Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
       }
     },
     {
       "src": "/media/tours/south-america-luxury-33-days/pdf-x353-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x353-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -7529,7 +7574,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x353-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x353-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-11",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/excursions/belmond-andean-explorer-cusco-titicaca.md",
@@ -7557,14 +7610,27 @@
         "status": "blocked",
         "error": "Tunnel connection failed: 403 Forbidden",
         "sourceUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x353-20261011-v1.webp"
+      },
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x353-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+      "enhancedAt": "2026-10-11",
+      "processingTask": "next50-2324",
+      "processingBatch": 5,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x353-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "sha256": "0ba1f348bc51c12e0bff1c2b023abde0c37a5317c50d5431c51a78a82ac823a7",
+        "bytes": 497160,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T20:49:23.184Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
       }
     },
     {
       "src": "/media/tours/south-america-luxury-33-days/pdf-x384-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x384-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -7572,7 +7638,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x384-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x384-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-11",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/excursions/titicaca-uros-taquile-full-day.md",
@@ -7600,14 +7674,27 @@
         "status": "blocked",
         "error": "Tunnel connection failed: 403 Forbidden",
         "sourceUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x384-20261011-v1.webp"
+      },
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x384-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+      "enhancedAt": "2026-10-11",
+      "processingTask": "next50-2324",
+      "processingBatch": 5,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x384-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "sha256": "19846cef80265d7f112937c7016e49f2dceda2350b3a1e58451e1b0eca91bc0b",
+        "bytes": 681568,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T20:49:31.159Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
       }
     },
     {
       "src": "/media/tours/south-america-luxury-33-days/pdf-x426-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x426-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -7615,7 +7702,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x426-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x426-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-11",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/excursions/uyuni-incahuasi-tahua-salt-flat-lunch.md",
@@ -7643,14 +7738,27 @@
         "status": "blocked",
         "error": "Tunnel connection failed: 403 Forbidden",
         "sourceUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x426-20261011-v1.webp"
+      },
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x426-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+      "enhancedAt": "2026-10-11",
+      "processingTask": "next50-2324",
+      "processingBatch": 5,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x426-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "sha256": "2385e4ec5b34d2d4bf78a5bc29a2095a094e8ba7aed29c183f9fa0c12ac2bb35",
+        "bytes": 436056,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T20:49:39.258Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
       }
     },
     {
       "src": "/media/tours/south-america-luxury-33-days/pdf-x488-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x488-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -7658,7 +7766,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x488-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x488-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-11",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/excursions/el-tatio-geysers-dawn-outdoor-breakfast.md",
@@ -7686,14 +7802,27 @@
         "status": "blocked",
         "error": "Tunnel connection failed: 403 Forbidden",
         "sourceUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x488-20261011-v1.webp"
+      },
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x488-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+      "enhancedAt": "2026-10-11",
+      "processingTask": "next50-2324",
+      "processingBatch": 5,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x488-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "sha256": "d5ad9cfc2d63711b507d808c424fe73504682afeac204a701da67bcaf5a54f3d",
+        "bytes": 425586,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T20:49:47.075Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
       }
     },
     {
       "src": "/media/tours/south-america-luxury-33-days/pdf-x478-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x478-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -7701,7 +7830,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x478-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x478-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-11",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/excursions/atacama-telescopes-stargazing-picnic.md",
@@ -7729,14 +7866,27 @@
         "status": "blocked",
         "error": "Tunnel connection failed: 403 Forbidden",
         "sourceUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x478-20261011-v1.webp"
+      },
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x478-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+      "enhancedAt": "2026-10-11",
+      "processingTask": "next50-2324",
+      "processingBatch": 5,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x478-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "sha256": "c7550a86d105f2c8d2e1d7344095aeb2a256a0314da6c1ce05b85d57d4a13620",
+        "bytes": 630858,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T20:49:55.000Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
       }
     },
     {
       "src": "/media/tours/south-america-luxury-33-days/pdf-x556-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x556-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -7744,7 +7894,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x556-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x556-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-11",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/excursions/vik-winery-helicopter-tasting-lunch.md",
@@ -7772,14 +7930,27 @@
         "status": "blocked",
         "error": "Tunnel connection failed: 403 Forbidden",
         "sourceUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x556-20261011-v1.webp"
+      },
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x556-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+      "enhancedAt": "2026-10-11",
+      "processingTask": "next50-2324",
+      "processingBatch": 5,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x556-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "sha256": "a298be227643942af7550a55f60d3067212f38f0473f17f13e0bb40ea70b2b6c",
+        "bytes": 691258,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T20:50:03.141Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
       }
     },
     {
       "src": "/media/tours/south-america-luxury-33-days/pdf-x623-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x623-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -7787,7 +7958,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x623-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x623-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-11",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/excursions/easter-island-akivi-puna-pau-tahai-visit.md",
@@ -7815,14 +7994,27 @@
         "status": "blocked",
         "error": "Tunnel connection failed: 403 Forbidden",
         "sourceUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x623-20261011-v1.webp"
+      },
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x623-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+      "enhancedAt": "2026-10-11",
+      "processingTask": "next50-2324",
+      "processingBatch": 5,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x623-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "sha256": "268a4c5382558eba3f81eab5e93a9e2027cfd7a15deba327649db6a215569f44",
+        "bytes": 455640,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T20:50:10.945Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
       }
     },
     {
       "src": "/media/tours/south-america-luxury-33-days/pdf-x670-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x670-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -7830,7 +8022,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x670-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x670-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-11",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/excursions/torres-del-paine-full-day-natural-landscapes.md",
@@ -7850,7 +8050,20 @@
       "queueOrder": 101,
       "batchNumber": 11,
       "documentQueueOrder": 25,
-      "documentBatchNumber": 3
+      "documentBatchNumber": 3,
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x670-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+      "enhancedAt": "2026-10-11",
+      "processingTask": "next50-2324",
+      "processingBatch": 5,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x670-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "sha256": "ba58f13a2db41833f6375ebf3919169cab0be41c8e3654aee589e03fe57d01e0",
+        "bytes": 697482,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T20:50:18.850Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
+      }
     },
     {
       "src": "/media/tours/south-america-luxury-33-days/pdf-x815-20261011-v1.webp",
@@ -8612,7 +8825,7 @@
     "updatedRows": 221,
     "verifiedAt": "2026-10-11T18:04:08.669Z"
   },
-  "lastEnhancedAt": "2026-10-11T20:47:32.619Z",
+  "lastEnhancedAt": "2026-10-11T20:50:33.828Z",
   "processingPasses": [
     {
       "task": "next50-queue-51-100",
@@ -8651,6 +8864,48 @@
         }
       ],
       "sheetSync": "completed per committed batch"
+    },
+    {
+      "task": "next50-2324",
+      "date": "2026-10-11",
+      "requested": 50,
+      "completed": 50,
+      "newEnhancements": 40,
+      "recoveredGeneratedResults": 10,
+      "batchSize": 10,
+      "batches": [
+        {
+          "batch": 1,
+          "count": 10,
+          "commit": "fe63921dda5a939ebad2a13f397c8f294406c2ec"
+        },
+        {
+          "batch": 2,
+          "count": 10,
+          "commit": "98a2a941206027251bd8af1788c75a5731683c94"
+        },
+        {
+          "batch": 3,
+          "count": 10,
+          "commit": "b8fcbcd15fd3c5b7815c4c08491bc297ad910c18"
+        },
+        {
+          "batch": 4,
+          "count": 10,
+          "commit": "aff0de4bac78571bd3b468e6763e6c36155161f3"
+        },
+        {
+          "batch": 5,
+          "count": 10,
+          "commit": "containing_this_record"
+        }
+      ],
+      "reconciledSheetRows": [
+        5492,
+        6246,
+        6783,
+        6435
+      ]
     }
   ]
 }

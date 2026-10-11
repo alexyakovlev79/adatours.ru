@@ -11,7 +11,7 @@ relatedDestinations: []
 themes:
 - theme_wildlife
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x670-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x670-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Гранитные башни Торрес-дель-Пайне над каменистой долиной
 gallery: []
 lead: Экскурсия на целый день в Национальный парк Торрес-дель-Пайне — один из самых впечатляющих природных заповедников

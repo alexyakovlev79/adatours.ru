@@ -14,7 +14,7 @@ themes:
 - theme_gastronomy_wine
 - theme_adventure
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x556-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x556-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Винодельня VIK и виноградники среди чилийских холмов
 gallery: []
 lead: Сегодня вас ждет незабываемое путешествие в VIK Chile — одну из самых престижных и инновационных виноделен

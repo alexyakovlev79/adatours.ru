@@ -14,7 +14,7 @@ themes:
 - theme_culture
 - theme_wildlife
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x384-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x384-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Тростниковые лодки и дома плавучих островов Урос
 gallery: []
 lead: Далее состоится экскурсия на целый день по озеру Титикака с посещением знаменитых плавучих островов Урос и

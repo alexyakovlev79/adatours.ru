@@ -123,7 +123,7 @@ itinerary:
   text: 2 дня отдыха на побережье. Дополнительно можно отправиться на необитаемые острова Бока-Чика с белым песком и бирюзовой
     водой.
   images:
-  - src: /media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-3-images-0-src-enhanced-20261007.webp
+  - src: /media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-3-images-0-src-regenerated-20261011-v2.webp
     alt: Остров Бока-Чика, Панама - люксовый пляж, белый песок
 - day: 9
   title: Бока-Чика - Бокете

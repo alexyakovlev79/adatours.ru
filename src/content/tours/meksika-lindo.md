@@ -150,7 +150,7 @@ itinerary:
 
     **Время в пути:** Мерида - Чичен-Ица около 2 часов; Чичен-Ица - Канкун около 3 часов.
   images:
-  - src: /media/tours/meksika-lindo/itinerary-5-images-0-src-enhanced-20261007.webp
+  - src: /media/tours/meksika-lindo/itinerary-5-images-0-src-regenerated-20261011-v2.webp
     alt: 'На фото: пирамида Чичен Ица в Мексике'
 included:
 - 5 ночей проживания в стандартных номерах в указанных или аналогичных отелях.

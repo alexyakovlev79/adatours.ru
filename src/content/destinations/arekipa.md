@@ -39,7 +39,7 @@ gallery:
 - src: /media/destinations/arequipa/gallery-8-enhanced-20261005.webp
   alt: "Расписная статуя Христа в терновом венце рядом с другими религиозными фигурками"
   hover: "Фигурка Христа в терновом венце крупным планом"
-- src: /media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-enhanced-20261007.webp
+- src: /media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-regenerated-20261011-v2.webp
   alt: Арекипа
 - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp
   hover: "Арекипа: собор и пальмы у площади перед заснеженной вершиной"

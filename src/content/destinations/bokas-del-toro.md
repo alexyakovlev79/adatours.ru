@@ -13,11 +13,11 @@ gallery:
 - src: /media/destinations/bocas-del-toro/gallery-1-enhanced-20261005.webp
   alt: "Разноцветные деревянные дома с балконами в Бокас-дель-Торо, Панама"
   hover: "Бокас-дель-Торо: улица с деревянными домами и яркими балконами"
-- src: /media/destinations/bocas-del-toro/gallery-2-enhanced-20261005.webp
+- src: /media/destinations/bocas-del-toro/gallery-2-regenerated-20261011-v2.webp
   alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
 - {"src":"/media/destinations/bocas-del-toro/gallery-3-enhanced-20261005.webp","alt":"Скалистые островки с пальмами в синем море, Бокас-дель-Торо, Панама","hover":"Бокас-дель-Торо, Панама: скалистые островки с пальмами в синем море"}
 - {"src":"/media/destinations/bocas-del-toro/gallery-4-enhanced-20261005.webp","alt":"Вид сверху на зелёные островки и бирюзовые протоки, Бокас-дель-Торо, Панама","hover":"Бокас-дель-Торо, Панама: вид сверху на зелёные островки и бирюзовые протоки"}
-- src: /media/destinations/bocas-del-toro/gallery-5-enhanced-20261005.webp
+- src: /media/destinations/bocas-del-toro/gallery-5-regenerated-20261011-v2.webp
   alt: 'На фото: архипелаг Бокас дель Торо в Панаме'
 - {"src":"/media/destinations/bocas-del-toro/gallery-6-enhanced-20261005.webp","alt":"Небольшой остров с деревьями и песчаным берегом, Бокас-дель-Торо, Панама","hover":"Бокас-дель-Торо, Панама: небольшой остров с деревьями и песчаным берегом"}
 - {"src":"/media/destinations/bocas-del-toro/gallery-7-enhanced-20261005.webp","alt":"Домики с соломенными крышами на сваях над прозрачной водой, Бокас-дель-Торо, Панама","hover":"Бокас-дель-Торо, Панама: домики с соломенными крышами на сваях над прозрачной водой"}

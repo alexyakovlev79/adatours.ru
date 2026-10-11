@@ -18,7 +18,7 @@ gallery:
   - src: /media/destinations/santa-ana/featureBands-1-enhanced-20261006.webp
     alt: "Лодка на озере у зелёных вулканических склонов в Эль-Сальвадоре"
     hover: "Эль-Сальвадор: спокойное озеро и лодка на фоне гор в облаках"
-  - src: /media/destinations/santa-ana/gallery-2-enhanced-20261006.webp
+  - src: /media/destinations/santa-ana/gallery-2-regenerated-20261011-v2.webp
     alt: "На фото: Санта Ана в Эль-Сальвадоре"
   - src: /media/destinations/santa-ana/featureBands-2-enhanced-20261006.webp
     alt: "Кратер вулкана Санта-Ана среди зелёных гор, Эль-Сальвадор"

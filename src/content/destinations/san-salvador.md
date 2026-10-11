@@ -15,14 +15,14 @@ hero:
   src: /media/countries/el-salvador/featureBands-3-enhanced-20261002.webp
   alt: "На фото: вулкан на фоне Сан-Сальвадора в Эль-Сальвадоре"
 gallery:
-- src: /media/destinations/san-salvador/featureBands-1-enhanced-20261006.webp
+- src: /media/destinations/san-salvador/featureBands-1-regenerated-20261011-v2.webp
   alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
 - src: /media/destinations/san-salvador/featureBands-2-enhanced-20261006.webp
   hover: "Сан-Сальвадор: конная статуя на постаменте под синим небом"
   alt: "Бронзовый памятник всаднику на коне в Сан-Сальвадоре, Эль-Сальвадор"
 - {"src":"/media/destinations/san-salvador/gallery-3-enhanced-20261006.webp","alt":"Красный автобус с надписями на лобовом стекле, Эль-Сальвадор","hover":"Эль-Сальвадор: красный автобус с надписями на лобовом стекле"}
 - {"src":"/media/destinations/san-salvador/gallery-4-enhanced-20261006.webp","alt":"Церковный интерьер с разноцветными витражами и клетчатым полом, Сан-Сальвадор, Эль-Сальвадор","hover":"Сан-Сальвадор, Эль-Сальвадор: церковный интерьер с разноцветными витражами и клетчатым полом"}
-- src: /media/destinations/san-salvador/gallery-5-enhanced-20261006.webp
+- src: /media/destinations/san-salvador/gallery-5-regenerated-20261011-v2.webp
   alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
 - {"src":"/media/destinations/san-salvador/gallery-6-enhanced-20261006.webp","alt":"Городской проспект с автомобилями и зелёной разделительной полосой, Сан-Сальвадор, Эль-Сальвадор","hover":"Сан-Сальвадор, Эль-Сальвадор: городской проспект с автомобилями и зелёной разделительной полосой"}
 - {"src":"/media/destinations/san-salvador/gallery-7-enhanced-20261006.webp","alt":"Разноцветные фигурки птиц и расписные сувениры, Сан-Сальвадор, Эль-Сальвадор","hover":"Сан-Сальвадор, Эль-Сальвадор: разноцветные фигурки птиц и расписные сувениры"}

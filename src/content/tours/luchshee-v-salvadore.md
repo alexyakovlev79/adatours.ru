@@ -86,7 +86,7 @@ itinerary:
 
     **Питание:** завтрак.
   images:
-  - src: /media/destinations/san-salvador/featureBands-1-enhanced-20261006.webp
+  - src: /media/destinations/san-salvador/featureBands-1-regenerated-20261011-v2.webp
     alt: 'На фото: город Сан-Сальвадор в Эль-Сальвадоре'
 - day: 5
   title: Залив Фонсека

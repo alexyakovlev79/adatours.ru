@@ -261,7 +261,7 @@ itinerary:
 
     Прибытие в Арекипу, размещение в гостинице 3*. Свободное время.
   images:
-  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-enhanced-20261007.webp"
+  - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-regenerated-20261011-v2.webp"
     alt: Арекипа
 - day: 10
   title: Арекипа - Лима

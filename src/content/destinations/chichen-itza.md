@@ -14,7 +14,7 @@ themes:
 hero:
   src: /media/destinations/destination_mexico_chichen_ica/hero-generated-20261008.webp
   alt: Chichen Itza, Yucatan — Mexico
-gallery: [{"src": "/media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/itinerary-5-images-0-src-enhanced-20261007.webp", "alt": "Ступенчатая пирамида с храмом на вершине в Чичен-Ице, Мексика", "hover": "Чичен-Ица: каменная пирамида на зелёной площади"}, {"src": "/media/tours/meksika-lindo/itinerary-5-images-0-src-enhanced-20261007.webp", "alt": "На фото: пирамида Чичен Ица в Мексике"}]
+gallery: [{"src": "/media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/itinerary-5-images-0-src-enhanced-20261007.webp", "alt": "Ступенчатая пирамида с храмом на вершине в Чичен-Ице, Мексика", "hover": "Чичен-Ица: каменная пирамида на зелёной площади"}, {"src": "/media/tours/meksika-lindo/itinerary-5-images-0-src-regenerated-20261011-v2.webp", "alt": "На фото: пирамида Чичен Ица в Мексике"}]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

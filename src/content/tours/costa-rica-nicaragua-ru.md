@@ -130,7 +130,7 @@ itinerary:
     \ индейцев майя, находящуюся на грани исчезновения.\n\nПосле экскурсий переезд в Гранаду.\n\n**Ночь:** La Gran Francia.\
     \  \n**Питание:** завтрак."
   images:
-  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-regenerated-20261011-v2.webp
     alt: Гранада
 - day: 8
   title: Гранада - Масая

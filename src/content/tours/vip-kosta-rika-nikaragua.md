@@ -239,7 +239,7 @@ itinerary:
 
     У воды можно отдохнуть, поплавать, покататься на каяке или заняться серфингом.
   images:
-  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
+  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-regenerated-20261011-v2.webp
     alt: 'на фото: Гранада, Никарагуа'
 - day: 9
   title: Отдых у лагуны-де-Апойо

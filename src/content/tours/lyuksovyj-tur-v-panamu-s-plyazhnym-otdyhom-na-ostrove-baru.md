@@ -183,7 +183,7 @@ itinerary:
 
     Из напитков включены местное пиво, вина и коктейли.
   images:
-  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-3-images-0-src-enhanced-20261007.webp"
+  - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-3-images-0-src-regenerated-20261011-v2.webp"
     alt: Остров Бока-Чика, Панама - люксовый пляж, белый песок
 - day: 7
   title: Boca Chica - Boquete и кофейная плантация

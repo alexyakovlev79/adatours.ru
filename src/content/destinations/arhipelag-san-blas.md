@@ -16,7 +16,7 @@ gallery:
   alt: 'На фото: острова Сан-Блас в Панаме'
 - src: /media/destinations/san-blas-islands/gallery-3-enhanced-20261005.webp
   alt: 'На фото: острова Сан-Блас в Панаме'
-- src: /media/destinations/san-blas-islands/gallery-4-enhanced-20261005.webp
+- src: /media/destinations/san-blas-islands/gallery-4-regenerated-20261011-v2.webp
   alt: 'На фото: острова Сан-Блас в Панаме'
 - src: /media/destinations/san-blas-islands/gallery-5-enhanced-20261005.webp
   alt: 'На фото: острова Сан-Блас в Панаме'

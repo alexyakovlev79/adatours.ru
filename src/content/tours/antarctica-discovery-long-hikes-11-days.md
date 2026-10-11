@@ -67,7 +67,7 @@ dates:
 - 29.12.2026–08.01.2027
 - 08.02.2027–18.02.2027
 hero:
-  src: /media/tours/antarctica-discovery-learning/antarctic-zodiac-word-20261011-v1.webp
+  src: /media/countries/antarctica/block-100-generated-20261011-dedup-v1.webp
   alt: Лодка Zodiac среди высоких айсбергов в Антарктиде
   hover: Лодка Zodiac среди высоких айсбергов в Антарктиде
   status: approved
@@ -260,3 +260,4 @@ updatedAt: '2026-10-11'
 | Twin Deluxe — 2 места  улучшенная каюта | от 13 600 |
 
 Валюта подтверждается при бронировании. Окончательная цена зависит от даты, категории и наличия кают.
+

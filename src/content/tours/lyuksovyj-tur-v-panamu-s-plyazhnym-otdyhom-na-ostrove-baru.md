@@ -354,7 +354,7 @@ priceFrom: 12098
 currency: USD
 priceNote: $12098
 hero:
-  src: /media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/hero-enhanced-20261006.webp
+  src: /media/countries/panama/block-109-generated-20261011-repair-v1.webp
   alt: Архипелаг Бокас-дель-Торо, Панама - карибские острова, пляжи
 routeCountries:
 - country_panama
@@ -554,3 +554,4 @@ Bocas del Toro снова меняет климат и темп. Здесь ос
 Включены 2 внутренних перелета: Panama City - David и Bocas del Toro - Panama City.
 
 Лучшее время для поездки — сухой сезон с декабря по апрель. В этот период море обычно спокойнее, а горные виды чаще бывают ясными.
+

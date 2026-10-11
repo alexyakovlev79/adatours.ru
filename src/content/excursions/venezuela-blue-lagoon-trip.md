@@ -21,7 +21,7 @@ sourceSnapshot: https://docs.google.com/document/d/1l3NZVOJImL-ZtZAmlFjBDPrOpyMT
 themes:
 - theme_wildlife
 hero:
-  src: /media/tours/canaima-angel-falls-4-days/pozo-azul-generated-20261010-p034-v1.webp
+  src: /media/countries/venezuela/block-108-generated-20261011-dedup-v1.webp
   alt: Естественный водоем Посо-Асул среди скал и растительности Канаймы — иллюстрация
   status: approved
 ---
@@ -29,3 +29,4 @@ hero:
 Посо-Асул (Pozo Azul), или Синий бассейн, — естественный водоем в Канайме. К нему отправляются на отдельную прогулку, чтобы пройти среди зелени и отдохнуть у воды.
 
 В программе «Венесуэльская красота» на 2027 год экскурсия стоит 88 USD. Этот тариф относится к указанной программе; подробности поездки подтверждаются при бронировании.
+

@@ -517,7 +517,7 @@ currency: USD
 priceNote: 'За человека: TPL (трёхместное) — 4 250 USD; DBL (двухместное) — 4 325 USD; SGL (одноместное) — 4 970
   USD.'
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-14-20261009-v1.webp
+  src: /media/countries/ecuador/block-103-generated-20261011-dedup-v1.webp
   alt: Исторический центр Кито — начало новогоднего тура по Эквадору
 routeCountries:
 - country_ecuador
@@ -577,3 +577,4 @@ gallery:
 | Одноместное, SGL | 4 970 |
 
 Программа включает материковую часть Эквадора и Галапагосские острова. Тарифы до бронирования и маршрут могут меняться без предварительного оповещения.
+

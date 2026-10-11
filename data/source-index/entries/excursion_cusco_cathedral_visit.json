@@ -67,10 +67,11 @@
     "sourceUrl": null,
     "current": [
       {
-        "url": "/media/excursions/kafedralnyj-sobor-kusko/hero-enhanced-20261001.webp",
+        "url": "/media/countries/peru/block-111-generated-20261011-dedup-v1.webp",
         "role": "hero",
         "order": 1,
-        "alt": "Куско, Перу"
+        "alt": "Кафедральный собор Куско",
+        "origin": "gpt_image"
       }
     ],
     "provenance": {
@@ -79,7 +80,20 @@
       "parentTourId": "tour_peru_8d",
       "enhancementRegistry": "src/data/media/photo-enhancements.json",
       "rule": "Preserve current media. Empty raw images do not request regeneration or a replacement donor."
-    }
+    },
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": "/media/excursions/kafedralnyj-sobor-kusko/hero-enhanced-20261001.webp",
+        "src": "/media/countries/peru/block-111-generated-20261011-dedup-v1.webp",
+        "alt": "Кафедральный собор Куско",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-11",
+        "purpose": "distinct_country_page_photo",
+        "prompt": "Cusco Cathedral Peru, interior aisle with carved wooden choir and gilded colonial altarpiece, respectful quiet architectural travel photograph, no people, natural soft interior lighting"
+      }
+    ],
+    "registrySyncedAt": "2026-10-11"
   },
   "readiness": {
     "sources": "ready",

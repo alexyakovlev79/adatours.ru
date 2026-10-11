@@ -15,7 +15,7 @@ priceFrom: 20
 currency: USD
 priceNote: "Стоимость экскурсии — $20."
 hero:
-  src: /media/excursions/kafedralnyj-sobor-kusko/hero-enhanced-20261001.webp
+  src: /media/countries/peru/block-111-generated-20261011-dedup-v1.webp
   alt: Куско, Перу
 gallery: []
 route:
@@ -31,3 +31,4 @@ themes: ["theme_culture"]
 Дополнительно можно посетить кафедральный собор Куско.
 
 Продолжительность экскурсии — около 40 минут. Стоимость — $20.
+

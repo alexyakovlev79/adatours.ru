@@ -275,8 +275,8 @@ priceFrom: 3665
 currency: USD
 priceNote: 3665 USD — трёхместное; 3745 USD — двухместное; 4565 USD — одноместное размещение. Цена на человека.
 hero:
-  src: /media/tours/ecuador-galapagos-humpback-whales/hero-generated-20261009-v1.webp
-  alt: Горбатый кит у тихоокеанского побережья Эквадора
+  src: "/media/countries/ekvador/featureBands-2-enhanced-20261002.webp"
+  alt: "На фото: Галапагосские острова в Эквадоре"
 routeCountries:
 - country_ecuador
 routeDestinations:

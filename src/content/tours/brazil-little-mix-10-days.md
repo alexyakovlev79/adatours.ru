@@ -44,8 +44,8 @@ priceNote: От $3089 на человека при трехместном раз
   Пляжный отель и маршрут перелетов требуют подтверждения.
 dates: []
 hero:
-  src: /media/destinations/sao-paulo/hero-enhanced-20261001.webp
-  alt: Панорама Сан-Паулу, Бразилия
+  src: "/media/destinations/destination_brazil_sao_paulo/sao-paulo-departure-generated-20261008.webp"
+  alt: "Тенистый тротуар и оживлённая улица среди высотных зданий Сан-Паулу, Бразилия"
 gallery: []
 featured: false
 priority: 0

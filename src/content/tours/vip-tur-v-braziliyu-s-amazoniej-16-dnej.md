@@ -43,8 +43,8 @@ itinerary:
 
     Отель позволяет провести первый день без дополнительных переездов: бассейн, рестораны и Копакабана находятся рядом.'
   images:
-  - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/hero-enhanced-20261006.webp
-    alt: Вечерний закат на Копакабане, пляжный отдых в Рио-де-Жанейро, Бразилия
+  - src: "/media/destinations/destination_brazil_rio/rio-free-beach-v2-generated-20261008.webp"
+    alt: "Мозаичная набережная и пляж Копакабаны с пальмами в золотом свете, Рио-де-Жанейро, Бразилия"
 - day: 2
   title: Сахарная Голова и исторический центр Рио
   places:
@@ -63,8 +63,8 @@ itinerary:
 
     После экскурсии возвращение в отель.'
   images:
-  - src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/itinerary-day-1-enhanced-20261006.webp
-    alt: Полёт на вертолете над Рио, залив Гуанабара, Сахарная Голова и океан
+  - src: "/media/destinations/destination_brazil_rio/rio-free-street-generated-20261008.webp"
+    alt: "Тенистая улица с деревьями и столиками кафе в Рио-де-Жанейро, Бразилия"
 - day: 3
   title: Корковадо и статуя Христа
   places:

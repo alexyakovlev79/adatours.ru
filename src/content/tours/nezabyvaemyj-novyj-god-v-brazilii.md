@@ -73,8 +73,8 @@ itinerary:
   images:
   - src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/itinerary-day-4-enhanced-20261006.webp
     alt: Статуя Христа и Панорамный вид в Рио-де -Жанейро, Бразилия
-  - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
-    alt: Празднование Нового года на пляже Копакабана, Бразилия
+  - src: "/media/destinations/destination_brazil_rio/rio-free-beach-v2-generated-20261008.webp"
+    alt: "Мозаичная набережная и пляж Копакабаны с пальмами в золотом свете, Рио-де-Жанейро, Бразилия"
 - day: 3
   title: 1 января. Сахарная Голова и исторический центр
   places:

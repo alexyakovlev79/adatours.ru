@@ -148,8 +148,8 @@ itinerary:
 
     По прибытии в Ла-Пас встреча с водителем и трансфер в отель.
   images:
-  - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp
-    alt: 'На фото: Озеро Титикака и плавучие острова Урос  в Перу'
+  - src: "/media/destinations/puno-i-o-titikaka/gallery-8-enhanced-20261005.webp"
+    alt: "Два человека в лодке из тростника на озере Титикака у Пуно, Перу"
 - day: 7
   title: Ла-Пас
   places:

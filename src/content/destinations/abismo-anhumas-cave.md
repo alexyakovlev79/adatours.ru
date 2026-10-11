@@ -19,7 +19,7 @@ themes:
 hero:
   src: /media/tours/brazil-adventure-17d/highlights/07-abismo-anhumas-enhanced-20260930.webp
   alt: Подземное озеро в пещере Аньюмас
-gallery: []
+gallery: [{"src": "/media/tours/brazil-adventure-17d/highlights/anhumas-descent-generated-20261011-dedup-v1.webp", "alt": "Спуск по страховочным тросам в известняковую пещеру Аньюмас у Бонито, Бразилия", "hover": "Аньюмас: вертикальный спуск в пещеру к подземному озеру"}]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -34,8 +34,8 @@ priceFrom: 3930
 currency: USD
 priceNote: 'Цена на человека при размещении TRP в отелях категории 4*. Полная таблица SGL/DBL/TRP 4* и 5* приведена в описании.'
 hero:
-  src: '/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/hero-enhanced-20261007.webp'
-  alt: 'Участники Парада чемпионов в ярких карнавальных костюмах на Самбодроме, Рио-де-Жанейро'
+  src: "/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp"
+  alt: "Рио-де-Жанейро вечером"
 lead: '10 дней в Бразилии с 12 по 21 февраля 2027 года: Парад чемпионов Карнавала в Рио-де-Жанейро, Сахарная Голова и Корковаду, затем 6 ночей отдыха на побережье Ангра-дус-Рейс по системе «все включено».'
 highlights: []
 itinerary:

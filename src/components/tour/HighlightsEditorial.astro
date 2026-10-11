@@ -22,7 +22,7 @@ const { items } = Astro.props;
 const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.src));
 ---
 
-<section class="highlights section">
+<section class:list={['highlights', 'section', { 'highlights--media': mediaMode }]}>
   <div class:list={['container', { 'highlights__container--media': mediaMode }]}>
     <p class="eyebrow">Главные впечатления</p>
 
@@ -74,6 +74,14 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
 <style>
   .highlights {
     background: var(--color-bg);
+  }
+
+  .highlights--media {
+    padding-bottom: 0;
+  }
+
+  .highlight--media:last-child {
+    padding-bottom: 0;
   }
 
   .highlights__list {
@@ -210,6 +218,11 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
      */
     .highlight--media {
       min-height: 100%;
+    }
+
+    /* Remove the trailing inset from both cards in the final two-column row. */
+    .highlight--media:nth-last-child(2):nth-child(odd) {
+      padding-bottom: 0;
     }
 
     .highlight__media {

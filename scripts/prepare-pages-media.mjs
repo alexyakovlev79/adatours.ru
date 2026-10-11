@@ -90,7 +90,8 @@ async function main() {
   console.log('External media deployment: ' + JSON.stringify(report));
   const output = await fileStats(dist);
   console.log('GitHub Pages artifact source size: ' + output.bytes + ' bytes');
-  if (output.bytes > 950_000_000) throw new Error('Published site still too large');
+  // GitHub Pages permits 1 GB; retain 20 MB for the search index and packaging.
+  if (output.bytes > 980_000_000) throw new Error('Published site still too large');
 }
 if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url)
   await main();

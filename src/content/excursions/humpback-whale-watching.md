@@ -12,7 +12,7 @@ themes:
 - theme_wildlife
 duration: 45 минут — 1 час наблюдения
 hero:
-  src: /media/tours/ecuador-galapagos-humpback-whales/whales-word-20261009-v1.webp
+  src: /media/tours/ecuador-galapagos-humpback-whales/whales-word-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Горбатые киты у побережья Пунта-Сентинелы
 gallery: []
 lead: Выход в Тихий океан на моторной лодке для наблюдения за горбатыми китами в сезон с июня по сентябрь.

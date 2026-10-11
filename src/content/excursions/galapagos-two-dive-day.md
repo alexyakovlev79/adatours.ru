@@ -28,7 +28,7 @@ language:
 - Английский
 format: Групповая экскурсионная программа
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Морская черепаха плывет в прозрачной воде среди рыб
 gallery: []
 lead: Выезд из отеля, чек-дайв, 2 погружения с дайв-мастером, перерыв со снэком и обед на морском маршруте.

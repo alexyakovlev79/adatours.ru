@@ -153,7 +153,7 @@ itinerary:
 
     Размещение: Fiesta 3*. Питание: завтрак, обед.'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-12-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-12-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Остров Бартоломе
 - excursionRef: excursion_source_ostrov_bartolome_morskaya_ekskursiya
   places: []
@@ -178,7 +178,7 @@ itinerary:
 
     Свободный вечер. Размещение: Fiesta 3*. Питание: завтрак, обед.'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Морская черепаха — подводный мир Галапагосов
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []

@@ -9,7 +9,7 @@ destinationType: national_park
 summary: 'Вулканический парк возле Масая: действующий кратер, каменистые склоны и открытые виды на вулканический
   ландшафт.'
 hero:
-  src: /media/tours/best-of-nicaragua-10-days/masaya-word-06-20261010-p020-v1.webp
+  src: /media/tours/best-of-nicaragua-10-days/masaya-word-06-20261010-p020-v1-enhanced-20261011-doc-v1.webp
   alt: Дымящийся вулканический кратер Масая, Никарагуа
 gallery: []
 themes:

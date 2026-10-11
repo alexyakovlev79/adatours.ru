@@ -13,7 +13,7 @@ themes:
 - theme_wildlife
 format: Экскурсионная программа
 hero:
-  src: /media/tours/guatemala-belize-maya-world-12-days/tikal-word-08-20261010-p022-v1.webp
+  src: /media/tours/guatemala-belize-maya-world-12-days/tikal-word-08-20261010-p022-v1-enhanced-20261011-doc-v1.webp
   alt: Каменный храм Тикаля среди тропического леса, Гватемала
   status: approved
 gallery: []

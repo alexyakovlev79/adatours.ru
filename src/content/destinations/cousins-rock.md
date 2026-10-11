@@ -8,7 +8,7 @@ countryId: country_ecuador
 destinationType: natural_area
 summary: Казенс-Рок у Сантьяго и Бартоломе соединяет рифовые участки и подводную стену с черными кораллами.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Морская черепаха плывет в прозрачной воде среди рыб
 gallery: []
 themes:

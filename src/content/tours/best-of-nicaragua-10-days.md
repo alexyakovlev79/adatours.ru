@@ -159,7 +159,7 @@ itinerary:
   text: Свободный день для отдыха и самостоятельного знакомства с курортным городом и его окрестностями. По таблице
     размещения — ночь в Alcazar. Отель и питание в свободные дни подтверждаются при бронировании.
   images:
-  - src: /media/tours/best-of-nicaragua-10-days/san-juan-del-sur-word-01-20261010-p020-v1.webp
+  - src: /media/tours/best-of-nicaragua-10-days/san-juan-del-sur-word-01-20261010-p020-v1-enhanced-20261011-doc-v1.webp
     alt: Бухта Сан-Хуан-дель-Сур и статуя Христа над побережьем, Никарагуа
 - day: 8
   title: Отдых у Тихого океана

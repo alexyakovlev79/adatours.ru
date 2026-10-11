@@ -219,7 +219,7 @@ itinerary:
 
     Питание: завтрак.'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-02-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-02-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Баньос
   contentBlocks:
   - type: excursion
@@ -256,7 +256,7 @@ itinerary:
 
     Питание: завтрак.'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-15-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-15-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Куэнка
   contentBlocks:
   - type: excursion
@@ -390,7 +390,7 @@ itinerary:
 
     Питание: завтрак, обед.'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-12-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-12-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Остров Бартоломе
 - day: 10
   title: 8 января 2027 года. Сеймур-Норте или Пласа-Сур
@@ -459,7 +459,7 @@ itinerary:
 
     Питание: завтрак, обед.'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Морская черепаха — подводный мир Галапагосов
 - day: 11
   title: 9 января 2027 года. Балтра и вылет

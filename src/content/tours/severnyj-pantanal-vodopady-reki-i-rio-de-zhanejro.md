@@ -151,9 +151,9 @@ sourceUrl: https://brasiltours.ru/severnyj-pantanal-vodopady-reki-i-rio-de-zhane
 sourceSnapshot: https://drive.google.com/file/d/1cleYovdtcqrUQzQGNYu9olrNgf715IwZ/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 5358
+priceFrom: 5996
 currency: USD
-priceNote: $5358
+priceNote: $5996
 hero:
   src: /media/tours/south-brazil-12d/itinerary/day-08-enhanced-20260930.webp
   alt: 'На фото: Водопады Фос Ду Игуасу'

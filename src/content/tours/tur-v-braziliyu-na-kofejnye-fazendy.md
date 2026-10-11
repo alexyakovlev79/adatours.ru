@@ -212,9 +212,9 @@ sourceUrl: https://brasiltours.ru/tur-v-braziliyu-na-kofejnye-fazendy
 sourceSnapshot: https://drive.google.com/file/d/1gqd9JI-9fP-x3OH-Kt7d_L2WuRorEjEW/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 3590
+priceFrom: 3908
 currency: USD
-priceNote: $3590
+priceNote: $3908
 hero:
   src: /media/tours/tur-v-braziliyu-na-kofejnye-fazendy/hero-enhanced-20261006.webp
   alt: Кофейные плантации Висконди-ди-Мауа, Бразилия

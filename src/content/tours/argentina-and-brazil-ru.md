@@ -175,9 +175,9 @@ sourceUrl: https://brasiltours.ru/argentina-and-brazil-ru
 sourceSnapshot: https://drive.google.com/file/d/1O1Ts6H7_0gMXmIGbYoCfMAU1SHYp5pSh/view?usp=drivesdk
 durationDays: 10
 durationNights: 9
-priceFrom: 2788
+priceFrom: 3230
 currency: USD
-priceNote: $2788
+priceNote: $3230
 hero:
   src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
   alt: 'На фото: Национальный парк Игуасу'

@@ -251,9 +251,9 @@ sourceUrl: https://brasiltours.ru/solntse-tango-i-vino
 sourceSnapshot: https://drive.google.com/file/d/1LPJdTv3m-YXUSwEuTnviyb7JcR1owZCU/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 4150
+priceFrom: 4885
 currency: USD
-priceNote: $4150
+priceNote: $4885
 hero:
   src: /media/destinations/rio-de-janeiro/featureBands-1-enhanced-20261001.webp
   hover: "Рио-де-Жанейро в Бразилии: закат над заливом с яхтами"

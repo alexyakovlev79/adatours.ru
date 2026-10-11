@@ -145,9 +145,9 @@ sourceUrl: https://brasiltours.ru/tropicheskij-karnaval-v-brazilii
 sourceSnapshot: https://drive.google.com/file/d/1SBULxLqlwmrfNoYdhJVB0mr7p_c4S9ER/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 3689
+priceFrom: 3688
 currency: USD
-priceNote: $3689
+priceNote: $3688
 hero:
   src: /media/tours/luxury-brazil-11d/itinerary/extra-samba-show-enhanced-20260930.webp
   alt: Парад чемпионов на карнавале в Рио, шесть лучших школ самбы на Самбадроме

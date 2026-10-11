@@ -317,9 +317,9 @@ sourceUrl: https://brasiltours.ru/braziliya-s-detmi
 sourceSnapshot: https://drive.google.com/file/d/1komqHuGsINx6OUQm1Y66hlGbrflAucX3/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 4009
+priceFrom: 4917
 currency: USD
-priceNote: $4009
+priceNote: $4917
 hero:
   src: /media/tours/braziliya-s-detmi/hero-enhanced-20261006.webp
   hover: "Рио-де-Жанейро в Бразилии: женщина с ребенком на смотровой площадке"

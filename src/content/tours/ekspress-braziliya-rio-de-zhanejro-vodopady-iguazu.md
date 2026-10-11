@@ -137,9 +137,9 @@ sourceUrl: https://brasiltours.ru/ekspress-braziliya-rio-de-zhanejro-vodopady-ig
 sourceSnapshot: https://drive.google.com/file/d/1nWwx5m8BTFXeqjfIbBUIBZ9U58ZMuU8n/view?usp=drivesdk
 durationDays: 6
 durationNights: 5
-priceFrom: 1845
+priceFrom: 2110
 currency: USD
-priceNote: $1845
+priceNote: $2110
 hero:
   src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
   alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'

@@ -195,9 +195,9 @@ sourceUrl: https://brasiltours.ru/chili-zagadki-chelovechestva
 sourceSnapshot: https://drive.google.com/file/d/1ONbD8BGtYKUp2oIkbXZeEKDmi5h8sSui/view?usp=drivesdk
 durationDays: 10
 durationNights: 9
-priceFrom: 3419
+priceFrom: 3876
 currency: USD
-priceNote: $3419
+priceNote: $3876
 hero:
   src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
   alt: 'На фото: истуканы острова Пасхи в Чили'

@@ -283,9 +283,9 @@ sourceUrl: https://brasiltours.ru/kofe-tur-v-brazilii
 sourceSnapshot: https://drive.google.com/file/d/1krMKz4X0Ls4AyhJchoT4xa-dRG0Qo3jC/view?usp=drivesdk
 durationDays: 9
 durationNights: 8
-priceFrom: 4805
+priceFrom: 5596
 currency: USD
-priceNote: $4805
+priceNote: $5596
 hero:
   src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
   alt: 'На фото: Бразильский кофе'

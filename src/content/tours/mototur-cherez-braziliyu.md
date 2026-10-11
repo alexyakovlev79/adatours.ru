@@ -205,9 +205,9 @@ sourceUrl: https://brasiltours.ru/mototur-cherez-braziliyu
 sourceSnapshot: https://drive.google.com/file/d/1sMjY_1A1X9quYVxSNi0rWUUXrpiITNco/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 8745
+priceFrom: 7605
 currency: USD
-priceNote: $8745
+priceNote: $7605
 hero:
   src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-3-images-1-enhanced-20261006.webp
   alt: 'на фото: Сан Паулу'

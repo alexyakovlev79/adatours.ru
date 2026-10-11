@@ -201,9 +201,9 @@ sourceUrl: https://brasiltours.ru/tropicheskij-novyj-god-v-brazilii
 sourceSnapshot: https://drive.google.com/file/d/1FRxwE8Rg9PpP0w0BMtMghZ65wryVxtSN/view?usp=drivesdk
 durationDays: 10
 durationNights: 9
-priceFrom: 2988
+priceFrom: 3315
 currency: USD
-priceNote: $2988
+priceNote: $3315
 hero:
   src: "/media/tours/tropicheskij-novyj-god-v-brazilii/hero-enhanced-20261007.webp"
   alt: Новогодний салют на пляже Копакабана в Рио-де-Жанейро, встреча Нового года в Бразилии, праздничный фейерверк

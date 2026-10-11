@@ -35,7 +35,7 @@ route:
   - "Эль-Калафате"
   - "Игуасу"
   - "Буэнос-Айрес"
-priceFrom: 4609
+priceFrom: 5326
 currency: USD
 dates: []
 hero:

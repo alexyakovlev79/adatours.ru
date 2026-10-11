@@ -290,9 +290,9 @@ sourceUrl: https://brasiltours.ru/rajskaya-braziliya
 sourceSnapshot: https://drive.google.com/file/d/1psJ9I24CWZbGa8KudiHatYnCTAVihTFy/view?usp=drivesdk
 durationDays: 13
 durationNights: 12
-priceFrom: 5801
+priceFrom: 6669
 currency: USD
-priceNote: $5801
+priceNote: $6669
 hero:
   src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
   alt: 'На фото: Порту-де-Галиньяс'

@@ -227,9 +227,9 @@ sourceUrl: https://brasiltours.ru/braziliya-gruppovoj-tur-na-13-dnej
 sourceSnapshot: https://drive.google.com/file/d/1d-9nfTZl-fOLJDiVoFZxEvfs-02FjOYh/view?usp=drivesdk
 durationDays: 13
 durationNights: 12
-priceFrom: 4070
+priceFrom: 4478
 currency: USD
-priceNote: $4070
+priceNote: $4478
 hero:
   src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/hero-enhanced-20261008-v2.webp
   hover: "Рио-де-Жанейро в Бразилии: морское побережье, пляж и высотные дома"

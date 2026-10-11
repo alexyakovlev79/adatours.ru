@@ -422,9 +422,9 @@ sourceUrl: https://brasiltours.ru/ves-mnogolikij-peru-ikitos
 sourceSnapshot: https://drive.google.com/file/d/1J9ozW2PYJ9iT-ABe1ebYFafuXPXENSU-/view?usp=drivesdk
 durationDays: 15
 durationNights: 14
-priceFrom: 5318
+priceFrom: 3910
 currency: USD
-priceNote: $5318
+priceNote: $3910
 hero:
   src: /media/countries/peru/hero-enhanced-20260930.webp
   alt: 'На фото: девушки-перуанки с альпакой в Перу'

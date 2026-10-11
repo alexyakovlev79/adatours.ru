@@ -144,9 +144,9 @@ sourceUrl: https://brasiltours.ru/luchshee-iz-dvukh-mirov
 sourceSnapshot: https://drive.google.com/file/d/1Fs-xkJoFy8ZKdWRzhy5GpwQzuU8c8REP/view?usp=drivesdk
 durationDays: 9
 durationNights: 8
-priceFrom: 4914
+priceFrom: 4910
 currency: USD
-priceNote: $4914
+priceNote: $4910
 hero:
   src: /media/tours/luchshee-iz-dvukh-mirov/hero-enhanced-20261006.webp
   hover: "Коралловый риф с рыбами, скатами, черепахой и пловцом в маске"

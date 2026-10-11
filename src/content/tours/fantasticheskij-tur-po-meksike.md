@@ -233,9 +233,9 @@ sourceUrl: https://brasiltours.ru/fantasticheskij-tur-po-meksike
 sourceSnapshot: https://drive.google.com/file/d/1IDxKXfhYQxhhH2H0O6PtSJyaPRra48Sy/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 4356
+priceFrom: 4046
 currency: USD
-priceNote: $4356
+priceNote: $4046
 hero:
   src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
   alt: "Ступенчатые каменные руины Паленке среди деревьев, Мексика"
@@ -264,6 +264,6 @@ themes: ["theme_wildlife"]
 
 **Длительность:** 12 дней / 11 ночей  
 **Маршрут:** Мехико-Сити - Теотиуакан - Паленке - Якшилан - Бонампак - Агуа-Асуль - Сан-Кристобаль - Чамула - Зинакантан - каньон Сумидеро - Канкун  
-**Стоимость:** $4356
+**Стоимость:** $4046
 
 Маршрут тура

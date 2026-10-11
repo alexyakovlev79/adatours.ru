@@ -114,7 +114,7 @@ route:
 - Чили, Сантьяго и Атакама
 - Боливия, Уюни, Ла-Пас и Титикака
 - Перу, Пуно, Куско, Мачу-Пикчу и Лима
-priceFrom: 7655.0
+priceFrom: 8945.0
 currency: USD
 hero:
   src: /media/tours/5-stran-latinskoj-ameriki/hero-enhanced-20261009-v1.webp

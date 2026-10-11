@@ -24,7 +24,7 @@ route:
   - Порту-де-Галиньяс
   - Фернанду-де-Норонья
   - Ресифи
-priceFrom: 4828
+priceFrom: 5660
 currency: USD
 dates: []
 hero:

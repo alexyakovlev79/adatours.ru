@@ -6,7 +6,7 @@
     "url": "https://drive.google.com/drive/folders/1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK"
   },
   "initialComparisonCommit": "04a931a39e0397ea8774d2b6ba4fe23b9801a15d",
-  "counting": "Единица описи — именованная программа/вариант. Повторные копии одноименной программы объединены. Изменение года и цены не выделяет новый вариант; другая длительность или существенный маршрут выделяет. Несколько программ могут соответствовать одному Tour ID; количества программ и страниц не складываются.",
+  "counting": "Единица описи — именованная программа/вариант. Повторные копии и прежние редакции объединяются. Один активный Tour должен иметь один основной Word-источник; история копий/редакций хранится отдельно. Неоднозначные существующие связи отмечены в priceAudit, до решения не удаляются. Количества программ и страниц не складываются.",
   "programs": [
     {
       "id": "drive_program_19vlht5vKeMR5iUtBjjWLHp1JEfxWawo2",
@@ -36,7 +36,20 @@
         "updatedAt": "2026-10-10",
         "note": "Свежий Word Анны полностью сверен и опубликован: 9 дней/8 ночей, 6 тарифов для групп 8+1, 10+1, 12+1, 6 основных мест и 6 самостоятельных экскурсионных модулей. В программе 16 разных готовых кадров. Даты, сектор Самбодрома и язык гидов уточняются при бронировании. Commit b2843812904335413a68d302a0c3ba8761218695; deploy https://github.com/alexyakovlev79/adatours.ru/actions/runs/38031330431 — success. Sheets: Страницы 1106–1112, Фото 6037–6058; 22 реально используемых слота. Новые бинарные медиа не создавались."
       },
-      "key": "P001"
+      "key": "P001",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_carnival_flavors_rio_paraty_ilha_grande",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 1940,
+            "priceAfter": 1940
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1EhJfFowYPCXzDd-TML5lKRjvl2G0Kk0E",
@@ -70,7 +83,20 @@
         "note": "Свежий DOCX Анны и таблица 4 тарифов сверены. Опубликованы 15 дней / 14 ночей, 11 экскурсионных модулей (3 новых, 8 переиспользованных), связи 15 мест и 27 уникальных кадров в программе. Actions build/deploy SUCCESS: https://github.com/alexyakovlev79/adatours.ru/actions/runs/38031832516 (commit 50621db5cb6cd43968aae79ab9b1cbc0a3316671). Реестр Страницы: 1113–1116; Фото: 6059–6088, 30 слотов. Проверено обратным чтением.",
         "updatedAt": "2026-10-10"
       },
-      "key": "P002"
+      "key": "P002",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_peru_argentina_group_15_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 3486,
+            "priceAfter": 3486
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1ieOqDeLtzMJY9sAhcp96uV03nsgSiCLQ",
@@ -100,7 +126,20 @@
         "note": "Свежий Word Анны полностью сверен и опубликован: 9 дней/8 ночей, группа 40+1 FOC, SGL $7140 / DBL $4640, все трансферы, английские гиды, питание и Theme Party. Созданы 6 самостоятельных экскурсионных модулей и страница парка Тижука; 4 основных места, 16 разных готовых кадров в программе. Противоречие по проживанию, отсутствие точных отелей/дат и расписания Theme Party явно сохранены для подтверждения. Commit 0179c487c2b6f8a21108969058231cc3a4731e21; deploy https://github.com/alexyakovlev79/adatours.ru/actions/runs/38033326809 — success. Sheets: Страницы 1123–1130, Фото 6096–6118 (23 слота), очередь Места 609. Новые бинарные медиа не создавались.",
         "updatedAt": "2026-10-10"
       },
-      "key": "P003"
+      "key": "P003",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_rio_iguazu_sao_paulo_group_9d",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 4640,
+            "priceAfter": 4640
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1iTLxaJci0-E9CZTBMwCYjJiZTMyu_x28",
@@ -134,7 +173,20 @@
         "note": "Полностью опубликовано: 11 дней / 10 ночей, 20–30 октября 2027, 22 участника, DBL $1122 / SGL $1642, 5 самостоятельных экскурсионных модулей, 17 уникальных кадров. Actions 38033443463 success, commit 388b94847a512f2c0d3931f3fb5a1af8a2d66982. Реестры: Страницы 1131–1136; Фото 6119–6140 (22 слота), запись и оформление проверены. Расхождения дат и аэропорт GRU сохранены в provenance и условиях.",
         "updatedAt": "2026-10-10"
       },
-      "key": "P004"
+      "key": "P004",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_sao_paulo_rio_october_11_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 1122,
+            "priceAfter": 1122
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1gZ3bqTwQ_59DCqQyFzRgf_53jRY3cHSl",
@@ -164,7 +216,20 @@
         "updatedAt": "2026-10-10",
         "note": "Word и таблица полностью сверены. Опубликованы 6 дней/5 ночей, 80 участников, SGL $3070 / TWIN $2445 нетто. Проживание исключено. 5 экскурсионных модулей (4 новых), место Санта-Сусана, 11 разных кадров программы. Commit 576de0bef8cd241d4244928df52a243f92b6b42e; Actions 38035953297 success. Sheets восстановлены и проверены после остановки чата: Страницы 1161–1166; Фото 6188–6204 (17 слотов). Даты/отели/язык гидов уточняются при бронировании."
       },
-      "key": "P005"
+      "key": "P005",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_argentina_experience_6_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 2445,
+            "priceAfter": 2445
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_120CQgsde0TEyXVZHOQ52XkMUyNQJsNL_",
@@ -195,7 +260,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P006"
+      "key": "P006",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_argentina_chili_i_prekrasnaya_patagoniya",
+            "status": "price_updated",
+            "priceBefore": 7013,
+            "priceAfter": 8416
+          },
+          {
+            "entityId": "tour_source_argentina_chili_prekrasnaya_patagoniya",
+            "status": "archived_not_checked",
+            "priceBefore": 6378,
+            "priceAfter": 6378
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1rtYJ_Sg9scTo1Ib6BJJw-U_poWqenwIJ",
@@ -225,7 +309,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P007"
+      "key": "P007",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_mototur_cherez_braziliyu",
+            "status": "price_updated",
+            "priceBefore": 8745,
+            "priceAfter": 7605
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_11DgsH9YxGcnDrgJmkr3MDHaipxRFDlPL",
@@ -255,7 +352,20 @@
         "updatedAt": "2026-10-10",
         "note": "Word verified; 14 дней/13 ночей, 9 экскурсионных связей, Рибейран-Прету. Actions success: https://github.com/alexyakovlev79/adatours.ru/actions/runs/38036311658; commit 4e6a370635d4b2ceeeab50b704c81580440eeb31. Sheets Страницы 1157–1160, Фото 6161–6187: 27 слотов, подтверждено обратным чтением. Условия делового мероприятия опубликованы как требующие подтверждения, IFAMA 2027 в Бразилии не обещана; цены по запросу."
       },
-      "key": "P008"
+      "key": "P008",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_agribusiness_14_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": null,
+            "priceAfter": null
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1s-8BCk5eP_LwNBziRXUvmlvmSdovFWzP",
@@ -289,7 +399,20 @@
         "updatedAt": "2026-10-10",
         "note": "Свежий Word Анны полностью сверен и опубликован: 3 дня/2 ночи, обе стороны Игуасу, 7 самостоятельных модулей (6 переиспользованы, 1 новый вечер асадо), 2 новые страницы мест — Парк птиц и Глотка Дьявола. Англоговорящий гид в группе, отель и аэропортовые трансферы; вертолет 10 минут факультативно. Цены/даты/отели по запросу. 10 различных кадров в программе, 11 с hero. Commit eb81d798488bf15522b6fd9b1d09e81a894315c8, исправление provenance fd3dd05a5af5b4f78e3266904eece1129b1d60dc; deploy https://github.com/alexyakovlev79/adatours.ru/actions/runs/38040118657 — success. Sheets: Страницы 1177–1180, Фото 6215–6228 (14 слотов); запись и форматирование проверены. Новые бинарные медиа не создавались."
       },
-      "key": "P009"
+      "key": "P009",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_iguazu_incentive_3_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": null,
+            "priceAfter": null
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1butPiR7ZRJDGqCrV5LIi5KzbwMUYV8Lz",
@@ -319,7 +442,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P010"
+      "key": "P010",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_21_dnevnoe_priklyuchenie_v_peru",
+            "status": "price_updated",
+            "priceBefore": 4913,
+            "priceAfter": 4913
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1EWxohAVcD-XCAzEdxsSBsiISQDVFACVf",
@@ -349,7 +485,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P011"
+      "key": "P011",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_kongress_v_argentine",
+            "status": "no_total_price_in_word",
+            "priceBefore": 1285,
+            "priceAfter": 1285
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1EJcuwA-Ein2EADhIhx7Me1ZkkYpR_MgF",
@@ -379,7 +528,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P012"
+      "key": "P012",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_kongress_v_rio_de_zhanejro",
+            "status": "no_total_price_in_word",
+            "priceBefore": 1845,
+            "priceAfter": 1845
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1Teplr6p6WIA5ow9sf9yOkCzMjDmgX3B-",
@@ -413,7 +575,20 @@
         "updatedAt": "2026-10-10",
         "note": "P013 опубликован. Actions 38045201765 success, commit 005edb7c8be583ea2d0930c7535d55c98d531dac. Sheets: Страницы 1222–1236, Фото 6304–6331. 5 экскурсий, 9 новых мест."
       },
-      "key": "P013"
+      "key": "P013",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_three_ecosystems_8_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 5514,
+            "priceAfter": 5514
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_10dvC8af6CzhLoZ-GfWKJuU4Ig_JyRPlM",
@@ -443,7 +618,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P014"
+      "key": "P014",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_pantanal_bonito_lencois_8d",
+            "status": "price_equal",
+            "priceBefore": 3123,
+            "priceAfter": 3123
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_116eH9e_Su7nsI0fynPiJwKSQVCI7OAOD",
@@ -473,7 +661,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P015"
+      "key": "P015",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_brazilskaya_mechta",
+            "status": "price_equal",
+            "priceBefore": 1615,
+            "priceAfter": 1615
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1YCUbwARgRaeCBLJvCzwWKqhKLTOBICoe",
@@ -504,7 +705,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P016"
+      "key": "P016",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_vpechatlenie_ot_surinama",
+            "status": "price_equal",
+            "priceBefore": 3745,
+            "priceAfter": 3745
+          },
+          {
+            "entityId": "tour_source_vpechatleniya_ot_surinama",
+            "status": "archived_not_checked",
+            "priceBefore": 3745,
+            "priceAfter": 3745
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1eVwN7RYPJdoRT6dXtd-tudCwPXBk94xy",
@@ -534,7 +754,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P017"
+      "key": "P017",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_surinam_gajana_frantsuzskaya_gviana",
+            "status": "price_updated",
+            "priceBefore": 10760,
+            "priceAfter": 10312
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1ksPnw61-VzXdNjx3mRm3uuRTsEMaQyCl",
@@ -564,7 +797,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P018"
+      "key": "P018",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana",
+            "status": "price_updated",
+            "priceBefore": 4014,
+            "priceAfter": 5119
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1ow3Iisp1magVaLjqQUtlijZTZAvYTeWp",
@@ -594,7 +840,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P019"
+      "key": "P019",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_priklyuchenie_v_gvianakh",
+            "status": "price_updated",
+            "priceBefore": 5563,
+            "priceAfter": 5887
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1BFzfdAZ0Vt0mYe2YI8yc-4lL7Vd_HFPv",
@@ -628,7 +887,20 @@
         "updatedAt": "2026-10-10",
         "note": "Word и 10 дней сверены. Deploy success: https://github.com/alexyakovlev79/adatours.ru/actions/runs/38040256188; commit dabcd73930fa61a28416ec635ff3fb6cc13d0018. Завершено после прерывания: Страницы 1191–1201, Фото 6239–6263 (25 слотов), подтверждено обратным чтением."
       },
-      "key": "P020"
+      "key": "P020",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_nicaragua_best_10_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 3342,
+            "priceAfter": 3342
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1lWeAiB-7v8o63YZI4qIOQlpSQL2Zht6R",
@@ -658,7 +930,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P021"
+      "key": "P021",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_v_salvadore",
+            "status": "price_updated",
+            "priceBefore": 2700,
+            "priceAfter": 1582
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1KEDrQnYyaJJN2aL3fJfrNR-gAy21FLCK",
@@ -702,7 +987,20 @@
         "updatedAt": "2026-10-10",
         "note": "Завершено после сбоя сборки: исправлен canonical интерес гастрономии. Deploy Actions 38045201765 success (005edb7c8be583ea2d0930c7535d55c98d531dac). Реестры Страницы 1212–1221, Фото 6274–6303: 10 страниц/30 слотов, подтверждены обратным чтением."
       },
-      "key": "P022"
+      "key": "P022",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_guatemala_belize_maya_world_12_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 2871,
+            "priceAfter": 2871
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1RvHUyc1osz8RgXnIpjvGvMHmTj9K9eHL",
@@ -732,7 +1030,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P023"
+      "key": "P023",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_beliz_san_pedro_ostrov_ambergris_kaje",
+            "status": "price_updated",
+            "priceBefore": 1674,
+            "priceAfter": 1730
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1P8McpHZEYpzowGVMvHTkRFs_sKwdpM16",
@@ -762,7 +1073,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P024"
+      "key": "P024",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_beliz_priklyuchenie_materik_ostrov",
+            "status": "price_updated",
+            "priceBefore": 2955,
+            "priceAfter": 3143
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1DMMz4N6h5_STB3gI6GnrKauiAUON10qR",
@@ -792,7 +1116,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P025"
+      "key": "P025",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_iz_dvukh_mirov",
+            "status": "price_updated",
+            "priceBefore": 4914,
+            "priceAfter": 4910
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1GUX4I3ummOv_b3JG7ZTVPljSEkDwIU-U",
@@ -822,7 +1159,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P026"
+      "key": "P026",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_v_belize",
+            "status": "price_updated",
+            "priceBefore": 3888,
+            "priceAfter": 3853
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1IJCi1k921IDssN0vGLsVmnOoQ5xTWT8o",
@@ -856,7 +1206,20 @@
         "updatedAt": "2026-10-10",
         "note": "Word сверен предыдущим проходом: варианты 4/5 дней, 4 тарифа, 2 экскурсии и 8 новых мест. Восстановлена публикация: commit bceb9ceb7709574378a8154488e70cc9aa452479; Actions 38048928150 success. Реестры Страницы 1240–1250, Фото 6335–6352 (18 реально используемых слотов), проверены обратным чтением. Использованы готовые опубликованные assets; новый публичный upload приватного Word не выполнялся."
       },
-      "key": "P027"
+      "key": "P027",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_ecuador_galapagos_diving_4_5_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 1861,
+            "priceAfter": 1861
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1bN59Os3gqQL7zQr6Qwg92ym-LZSnp0fn",
@@ -887,7 +1250,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P028"
+      "key": "P028",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ekvador_v_sentyabre",
+            "status": "archived_not_checked",
+            "priceBefore": 4044,
+            "priceAfter": 4044
+          },
+          {
+            "entityId": "tour_source_ves_ekvador_galapagosskie_ostrova",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 4260,
+            "priceAfter": 4260
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1mfrALIdEovxDH2ahFtc-wuor942SGvqn",
@@ -917,7 +1299,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P029"
+      "key": "P029",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ekvador_i_galapagosskie_ostrova_v_iyule",
+            "status": "price_updated",
+            "priceBefore": 1986,
+            "priceAfter": 1960
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1lAlPZq9lDvk6DYF09CER7Djq9A_vXj4x",
@@ -948,7 +1343,20 @@
         "note": "ГОТОВО: полная сверка Word Анны от 25.09.2026, 11 дней, отели, питание, цены 4250/4325/4970 USD и условия. Архив восстановлен: 30.12.2026–09.01.2027. Опубликованы 20 мест и 4 экскурсии, загружены 28 изображений; 25 публичных страниц проверены. Реестр: тур строка 598, новые страницы 954–977, фото 5492–5534; legacy строка 326 DONE. https://github.com/alexyakovlev79/adatours.ru/actions/runs/37923090452",
         "publicationCommit": "f71ddd03163de98106b1edaa632e6e137765e81d"
       },
-      "key": "P030"
+      "key": "P030",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ves_ekvador_na_novyj_god",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 4250,
+            "priceAfter": 4250
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1AGRe5pF92IiNZzminJvGpccanyDmhCiU",
@@ -978,7 +1386,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P031"
+      "key": "P031",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy",
+            "status": "price_updated",
+            "priceBefore": 3965,
+            "priceAfter": 3995
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_18-m9Is7xIKzVM3aQSSt4y6qCBWtjoKuk",
@@ -1008,7 +1429,20 @@
         "updatedAt": "2026-10-09",
         "note": "ГОТОВО — полная сверка Word Анны: 11–21.08.2027, 11 дней/10 ночей, цены TPL 3665 / DBL 3745 / SGL 4565 USD. 1 место, 4 новые экскурсии, 8 excursionRef. Тур восстановлен из архива. Commit 74dab5844ebad3aa635f88967b0ebd532d9d022c; успешный deploy https://github.com/alexyakovlev79/adatours.ru/actions/runs/37932022335. Реестры Страницы/Фото и legacy обновлены, приёмка G не менялась."
       },
-      "key": "P032"
+      "key": "P032",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ves_ekvador_i_gorbatye_kity",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 3665,
+            "priceAfter": 3665
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1DkLBy9rBTlAz2k3AQT0ohvgVIAagIOoo",
@@ -1039,7 +1473,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P033"
+      "key": "P033",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_populyarnye_napravleniya_venesuely",
+            "status": "price_updated",
+            "priceBefore": 5421,
+            "priceAfter": 4744
+          },
+          {
+            "entityId": "tour_source_venesuela_populyarnye_napravleniya",
+            "status": "archived_not_checked",
+            "priceBefore": 3395,
+            "priceAfter": 3395
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1l3NZVOJImL-ZtZAmlFjBDPrOpyMT2C56",
@@ -1069,7 +1522,20 @@
         "updatedAt": "2026-10-10",
         "note": "Word сверен предыдущим проходом: 4 дня/3 ночи, Tapuy 2293 / Waku 2581 USD, 5 дополнительных экскурсий. Исправлен countrySlug десяти новых мест; commit bceb9ceb7709574378a8154488e70cc9aa452479; Actions 38048928150 success. Реестры Страницы 1251–1264 и обновления 801/804; Фото 6353–6379 (27 слотов) и актуализация 3121. Данные и форматирование подтверждены обратным чтением."
       },
-      "key": "P034"
+      "key": "P034",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_venezuela_canaima_angel_falls_4_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 2293,
+            "priceAfter": 2293
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1dsT6ebFO9L4ilxhnIamb0C-iqlwkhMT8",
@@ -1099,7 +1565,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P035"
+      "key": "P035",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_v_paname",
+            "status": "price_updated",
+            "priceBefore": 2461,
+            "priceAfter": 3458
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1E3cu_NsB-Q55iBpMfoX87YrECo17Kgpm",
@@ -1133,7 +1612,20 @@
         "updatedAt": "2026-10-10",
         "note": "Полностью завершено после остановки чата. 6 дней/5 ночей, 6 тарифов Word, 12 мест, 9 новых страниц мест и 4 экскурсии; 11 прямых S3 receipts. Content commit 3758c4810c8cf82d6db90771e7f5327c41f80aec, Actions 38059492539 success. Реестры Страницы 1285–1298, Фото 6425–6448, Места Анны 632–640; значения, оформление и проверки данных подтверждены обратным чтением. Исправлены предварительные номера строк в 14 source-index entries."
       },
-      "key": "P036"
+      "key": "P036",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_panama_city_gamboa_6_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 1783,
+            "priceAfter": 1783
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1-YRzv_6uGoDx8hIOM899hoy-3xFHgfKe",
@@ -1314,7 +1806,20 @@
           ]
         }
       },
-      "key": "P037"
+      "key": "P037",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_guatemala_discover_8_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 2085,
+            "priceAfter": 2085
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_12Duu6WD8YDZRzL8O6hEeE5FDdfwplqKz",
@@ -1351,7 +1856,20 @@
         "deployRunId": 38084955263,
         "deployUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38084955263"
       },
-      "key": "P038"
+      "key": "P038",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_colombia_cano_cristales_8_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 4078,
+            "priceAfter": 4078
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1s8C2hA5M8Xq9v-uealzohr9okK55ebU_",
@@ -1385,7 +1903,20 @@
         "updatedAt": "2026-10-10",
         "note": "Свежий Word Анны 2027 полностью сверен и опубликован: 5 дней/4 ночи, 6 тарифов SGL/DBL/TRP, отели 4★/5★, услуги и условия, 4 канонических экскурсионных модуля, 2 новых места, 10 разных кадров. Deploy 38055028941 успешен. Страницы 647, 658, 774, 1273–1275; Фото 6403–6415; Места Анны 613–614 обновлены и проверены."
       },
-      "key": "P039"
+      "key": "P039",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_colombia_essential_5_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 1863,
+            "priceAfter": 1863
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1eNlJbN-1Cbg2q6hVGcjlhOy8tsoDAE3h",
@@ -1422,7 +1953,20 @@
         "deployRunId": 38084955263,
         "deployUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38084955263"
       },
-      "key": "P040"
+      "key": "P040",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_colombia_complete_11_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 4456,
+            "priceAfter": 4456
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_16Yho_hI1w_jZ1yah_LrAH8cKU0V5Wddt",
@@ -1456,7 +2000,20 @@
         "updatedAt": "2026-10-10",
         "note": "Свежий Word сверен и опубликован: 7 дней/6 ночей, 6 тарифов, 10 мест, 6 экскурсий, 14 разных кадров. Content commit dc4099f; successful descendant deploy 1259f814 / 38069380702. Реестры проверены: Страницы 1310–1313; Фото 6467–6483. Завершена работа остановившегося чата."
       },
-      "key": "P041"
+      "key": "P041",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_colombia_highlights_7_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 2829,
+            "priceAfter": 2829
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1S9Yxr3o4Yn77DDkStiW3PXI-drhZT3xk",
@@ -1493,7 +2050,20 @@
         "deployRunId": 38084955263,
         "deployUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38084955263"
       },
-      "key": "P042"
+      "key": "P042",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_colombia_explorer_9_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 4041,
+            "priceAfter": 4041
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1cLVaZTUZWg3v12X6Kuqa8etRRaY39kfu",
@@ -1537,7 +2107,20 @@
         "updatedAt": "2026-10-10",
         "note": "Свежий PDF Анны от 05.10.2026 сверен и опубликован: 10 дней/9 ночей, 6 тарифов, 26 мест (16 основных), 10 экскурсионных вставок, 5 новых экскурсий, 21 разный кадр. Content commit 5194d2f; source-index fix 683b0dead513b189443bf8683daaf27b9de822bc; Actions 38071517910 success. Реестры проверены: Страницы 1314–1319, Фото 6484–6509. Коммерческий вопрос сохранен в публичных условиях до оплаты: обратный рейс Ла-Пас–Лима / Хулиака–Лима требует подтверждения."
       },
-      "key": "P043"
+      "key": "P043",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_peru_bolivia_enchanted_10_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 3443,
+            "priceAfter": 3443
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1hEl65uC5XxRmXN-vzq3TFZkQ9Eny65gz",
@@ -1588,7 +2171,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P044"
+      "key": "P044",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_argentina_chili_boliviya",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 7198,
+            "priceAfter": 7198
+          },
+          {
+            "entityId": "tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 7198,
+            "priceAfter": 7198
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1Mi9d57-P1XaUec17BRLdnkXDZaXtmUy3",
@@ -1618,7 +2220,7 @@
           "url": "https://docs.google.com/document/d/1z_Hn43j-IHNBwo5_QwWAdgbDJ4unpoPt/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
           "folderId": "1t79vXL8ZMLuLgLwEphaAkYM7Hrdp_GBk",
           "folder": "Brazil 2027",
-          "modifiedTime": "2026-09-29T13:59:37.612Z",
+          "modifiedTime": "2026-10-09T13:39:36.278Z",
           "textSha256": "93cc670c0938316e19876a0004157e164276359a6aba04e4d14812ab2e2052ea"
         },
         {
@@ -1668,7 +2270,20 @@
         "note": "09.10.2026: тур опубликован по точному выбранному V2 14_PyOo8ZDuAiXeu4rMyPkDhd5SLAb0Hg с уточнением Анны «остров Рыб — Инкауаси». Полная сверка варианта Word 2027 из этой описи не выполнялась; статус проверки Word не закрывается автоматически.",
         "updatedAt": "2026-10-09"
       },
-      "key": "P045"
+      "key": "P045",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_5_stran_latinskoj_ameriki",
+            "status": "price_updated",
+            "priceBefore": 7655.0,
+            "priceAfter": 8945
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1RutAyh6jgoOj4IR2J7Gj3GpWTs52n8Oo",
@@ -1695,7 +2310,7 @@
           "url": "https://docs.google.com/document/d/1pAA3G9pbiLSNwDlK-R_6sAkEP72bvLrq/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
           "folderId": "1t79vXL8ZMLuLgLwEphaAkYM7Hrdp_GBk",
           "folder": "Brazil 2027",
-          "modifiedTime": "2026-09-17T07:54:47.605Z",
+          "modifiedTime": "2026-10-09T12:29:29.940Z",
           "textSha256": "d808f9dab329a10a85d56208b5be356c6c1de144f436772630336202343ca650"
         },
         {
@@ -1718,7 +2333,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P046"
+      "key": "P046",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_tur_v_4_strany_yuzhnoj_ameriki",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 5823,
+            "priceAfter": 5823
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_18JlxnPW3h7QnCAI5J_xyPxxupRuQN54g",
@@ -1748,7 +2376,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P047"
+      "key": "P047",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_tur_v_ekzoticheskuyu_braziliyu",
+            "status": "price_updated",
+            "priceBefore": 4053,
+            "priceAfter": 4769
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1Kbz5HNDLaNlF1Xz1E08QPhuQzNkmxFiy",
@@ -1778,7 +2419,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P048"
+      "key": "P048",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_vazhnoe_brazilii",
+            "status": "price_updated",
+            "priceBefore": 2951,
+            "priceAfter": 3566
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1qqg_wsISE9df71wjk6AcVkuNRq7xLVoe",
@@ -1808,7 +2462,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P049"
+      "key": "P049",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_dunes_13d",
+            "status": "price_updated",
+            "priceBefore": 4349,
+            "priceAfter": 5345
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1xav4a_QttYhHqMEZlM1OsBHY54qZM7mp",
@@ -1838,7 +2505,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P050"
+      "key": "P050",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_braziliya_s_plyazhami",
+            "status": "price_updated",
+            "priceBefore": 2608,
+            "priceAfter": 3205
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1UggFIBG6Xj2EN4rZ5b31vfegR9NIdcDT",
@@ -1854,7 +2534,7 @@
           "url": "https://docs.google.com/document/d/1UggFIBG6Xj2EN4rZ5b31vfegR9NIdcDT/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
           "folderId": "1t79vXL8ZMLuLgLwEphaAkYM7Hrdp_GBk",
           "folder": "Brazil 2027",
-          "modifiedTime": "2026-10-08T13:08:39.286Z",
+          "modifiedTime": "2026-10-09T14:00:25.511Z",
           "textSha256": "d4d2e80a7f20328bc6e4d172d1afc713587f7087b21f06a596b5280cf9014fc4"
         }
       ],
@@ -1868,7 +2548,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P051"
+      "key": "P051",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_podlinnaya_braziliya",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 4875,
+            "priceAfter": 4875
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1k2nkvsOwYyYSQiypHRb1ONYnJ21ujdln",
@@ -1898,7 +2591,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P052"
+      "key": "P052",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_brazil_coffee_tour_ru",
+            "status": "price_updated",
+            "priceBefore": 3130,
+            "priceAfter": 3715
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1XbfhTCbZC8A_hK6azPVuMAFipSpAhHmr",
@@ -1928,7 +2634,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P053"
+      "key": "P053",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_argentina_peru_14d",
+            "status": "price_updated",
+            "priceBefore": 5716,
+            "priceAfter": 6449
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1IV_0KIv-hMXGKyCkHkXd-aeC1sod7yg5",
@@ -1958,7 +2677,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P054"
+      "key": "P054",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios",
+            "status": "price_updated",
+            "priceBefore": 4159,
+            "priceAfter": 4750
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1WLLe6iOY4dkgnQbQl9oiK31QweUUA-rq",
@@ -2097,7 +2829,20 @@
           ]
         }
       },
-      "key": "P055"
+      "key": "P055",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_southern_vip_7_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 10043,
+            "priceAfter": 10043
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1gQ-b6RL_1WycICvJ2mvmElwVNqx27oql",
@@ -2127,7 +2872,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P056"
+      "key": "P056",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_braziliya_gruppovoj_tur_na_13_dnej",
+            "status": "price_updated",
+            "priceBefore": 4070,
+            "priceAfter": 4478
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1eqvUS8-2r0QF7ukiQAYVuL6GDDrLVeAU",
@@ -2158,7 +2916,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P057"
+      "key": "P057",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_braziliya_argentina_gruppovoj_tur",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 4195,
+            "priceAfter": 4195
+          },
+          {
+            "entityId": "tour_source_fan_braziliya_i_argentina",
+            "status": "archived_not_checked",
+            "priceBefore": 4195,
+            "priceAfter": 4195
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_19azCGfr4smp-AQy5o4mQvtkfULPtOMzG",
@@ -2189,7 +2966,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P058"
+      "key": "P058",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_braziliya_ot_san_paulo_do_buziosa",
+            "status": "price_updated",
+            "priceBefore": 3889,
+            "priceAfter": 4687
+          },
+          {
+            "entityId": "tour_source_sao_paulo_buzios_rio_iguasu",
+            "status": "archived_not_checked",
+            "priceBefore": 3765,
+            "priceAfter": 3765
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_11UCPG-16zAKPnxrcT16amhN1HX6YEbfy",
@@ -2219,7 +3015,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P059"
+      "key": "P059",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_romanticheskaya_braziliya",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 3986,
+            "priceAfter": 3986
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1te0NoRlCFCkprjsNlqDRzqGcoKoy95aE",
@@ -2260,7 +3069,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P060"
+      "key": "P060",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_braziliya_argentina_gruppovoj_tur",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 4195,
+            "priceAfter": 4195
+          },
+          {
+            "entityId": "tour_source_fan_braziliya_i_argentina",
+            "status": "archived_not_checked",
+            "priceBefore": 4195,
+            "priceAfter": 4195
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1RC4JVwa9pNqemBAaJnmsnyE1P9vZ6MXp",
@@ -2290,7 +3118,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P061"
+      "key": "P061",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_gems_14d",
+            "status": "price_updated",
+            "priceBefore": 6289,
+            "priceAfter": 7357
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1fl1BPByaAsmLufzOOlnw0JDqgJqVkdV-",
@@ -2320,7 +3161,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P062"
+      "key": "P062",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ekspress_braziliya_rio_ibuzios",
+            "status": "price_updated",
+            "priceBefore": 2225,
+            "priceAfter": 2422
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1-iP28XW_AWkzMc0RblURAC1agXZ1o8Ir",
@@ -2350,7 +3204,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P063"
+      "key": "P063",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala",
+            "status": "price_updated",
+            "priceBefore": 4230,
+            "priceAfter": 7140
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1HY1teydYIljcmefYCtGTKteZaMgvNXsF",
@@ -2380,7 +3247,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P064"
+      "key": "P064",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_tur_v_krasochnuyu_braziliyu_2022",
+            "status": "price_updated",
+            "priceBefore": 3589,
+            "priceAfter": 4326
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_19QWeq2ZDrpZLXjDLLMcXh_KtTboZDlKX",
@@ -2410,7 +3290,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P065"
+      "key": "P065",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_v_brazilii_za_9_dnej",
+            "status": "price_updated",
+            "priceBefore": 3269,
+            "priceAfter": 3320
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1GoModQ3BCgOo6lOAKrnlFU9ggbS58yKL",
@@ -2440,7 +3333,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P066"
+      "key": "P066",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_v_brazilii_rio_iguasu_buzios",
+            "status": "price_updated",
+            "priceBefore": 2703,
+            "priceAfter": 2988
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1oggKMDakULVfSUlKKWdxVYrZn2KMLoBE",
@@ -2481,7 +3387,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P067"
+      "key": "P067",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_braziliya_i_argentina_v_sentyabre",
+            "status": "archived_not_checked",
+            "priceBefore": 1915,
+            "priceAfter": 1915
+          },
+          {
+            "entityId": "tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 2775,
+            "priceAfter": 2775
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1cDyQGEPklh2ckz6-JzwRmgE8O597QWwG",
@@ -2512,7 +3437,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P068"
+      "key": "P068",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_braziliya_i_argentina_v_sentyabre",
+            "status": "archived_not_checked",
+            "priceBefore": 1915,
+            "priceAfter": 1915
+          },
+          {
+            "entityId": "tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 2775,
+            "priceAfter": 2775
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1moIDf9Rpu00YiTMcY3MfxmfLGRubW5kP",
@@ -2562,7 +3506,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P069"
+      "key": "P069",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_solntse_tango_i_vino",
+            "status": "price_updated",
+            "priceBefore": 4150,
+            "priceAfter": 4885
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_11DCAguJnX6Dd-XUtoCxbqC_ADdSpP6vx",
@@ -2592,7 +3549,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P070"
+      "key": "P070",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_solntse_tango_vino_i_atakama",
+            "status": "price_updated",
+            "priceBefore": 6600,
+            "priceAfter": 8636
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1E4Lc1c1AzZudT3MKmYqbjp5vdOozxG1j",
@@ -2622,7 +3592,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P071"
+      "key": "P071",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_tropicheskaya_braziliya",
+            "status": "price_updated",
+            "priceBefore": 3811,
+            "priceAfter": 4072
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1upH0a0_J1aGcNmLHI0mKszagOYjfTb_A",
@@ -2652,7 +3635,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P072"
+      "key": "P072",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_severnyj_pantanal_vodopady_reki",
+            "status": "price_updated",
+            "priceBefore": 4016,
+            "priceAfter": 4595
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_16ASy5mk2j6Kf8gs5CcsO_G6_lz7vHBJA",
@@ -2682,7 +3678,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P073"
+      "key": "P073",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu",
+            "status": "price_updated",
+            "priceBefore": 1865,
+            "priceAfter": 1950
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1xcMowipqiYJzSVe8Ys5UlSaUmhHRI4ds",
@@ -2712,7 +3721,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P074"
+      "key": "P074",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_super_predlozhenie_rio_buzios",
+            "status": "price_updated",
+            "priceBefore": 1909,
+            "priceAfter": 2078
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1LoRqKPvRsf3y-2vn4d9uE-Kv6avb9_dG",
@@ -2757,7 +3779,20 @@
           }
         }
       },
-      "key": "P075"
+      "key": "P075",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 1950,
+            "priceAfter": 1950
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1FygiOMTM22L8B3FcqLseku3j8NWoNmIw",
@@ -2798,7 +3833,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P076"
+      "key": "P076",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_peru_i_braziliya_na",
+            "status": "archived_not_checked",
+            "priceBefore": 5529,
+            "priceAfter": 5529
+          },
+          {
+            "entityId": "tour_source_tur_v_peru_i_braziliyu",
+            "status": "price_updated",
+            "priceBefore": 5529,
+            "priceAfter": 6048
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_12SiyfXD5cmxTBxLwVqoKQTKvlNno4oep",
@@ -2828,7 +3882,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P077"
+      "key": "P077",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_rajskaya_braziliya",
+            "status": "price_updated",
+            "priceBefore": 5801,
+            "priceAfter": 6669
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1pI8Z5otE4DQDfxySu33vUc2HdSltAgUx",
@@ -2858,7 +3925,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P078"
+      "key": "P078",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro",
+            "status": "price_updated",
+            "priceBefore": 5358,
+            "priceAfter": 5996
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1vK1403LhxTEPv_4-Y-IWsdBUs5Z6Jap8",
@@ -2909,7 +3989,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P079"
+      "key": "P079",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_argentina_i_braziliya_ot_lda_k_solntsu",
+            "status": "archived_not_checked",
+            "priceBefore": 3130,
+            "priceAfter": 3130
+          },
+          {
+            "entityId": "tour_source_led_solntse_i_kraj_zemli",
+            "status": "price_updated",
+            "priceBefore": 3761,
+            "priceAfter": 4175
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1K7mXZs3iOQm9U7fDH-HRmgE3lOn6i6lD",
@@ -2946,7 +4045,20 @@
         "deployRunId": 38088315008,
         "deployUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38088315008"
       },
-      "key": "P080"
+      "key": "P080",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_rio_four_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 1255,
+            "priceAfter": 1255
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1xl8O5-7K7gg_KkuKK5e-IL1lBZmbMvcM",
@@ -2989,7 +4101,20 @@
           }
         }
       },
-      "key": "P081"
+      "key": "P081",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_foz_iguazu_three_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 764,
+            "priceAfter": 764
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1SmSgSpfM9MA_NUVqdSZUoeoKuqWpnm5C",
@@ -3019,7 +4144,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P082"
+      "key": "P082",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_nezabyvaemaya_braziliya",
+            "status": "price_updated",
+            "priceBefore": 4009,
+            "priceAfter": 4352
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1zIg2kIOpb7EOGB-5CtG-n0evD1qM5xcV",
@@ -3049,7 +4187,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P083"
+      "key": "P083",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu",
+            "status": "price_updated",
+            "priceBefore": 3644,
+            "priceAfter": 3453
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1gJL6wENRglVMMyVX2rlWvcJfEFy8eQOm",
@@ -3079,7 +4230,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P084"
+      "key": "P084",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_v_rio_de_zhanejro_dlya_mice",
+            "status": "price_updated",
+            "priceBefore": 3340,
+            "priceAfter": 3871
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_15akcPKqbny6iaVW1AjMYEQ0pDes2bXnQ",
@@ -3109,7 +4273,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P085"
+      "key": "P085",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_pantanal_bonito",
+            "status": "price_updated",
+            "priceBefore": 2040,
+            "priceAfter": 3993
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1K8T6QZoMkDjggR-hENCg402iJIOcs1cY",
@@ -3140,7 +4317,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P086"
+      "key": "P086",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_belosnezhnye_zhemchuzhiny_brazilii",
+            "status": "archived_not_checked",
+            "priceBefore": 4448,
+            "priceAfter": 4448
+          },
+          {
+            "entityId": "tour_brazil_recife_porto_noronha_10d",
+            "status": "price_updated",
+            "priceBefore": 4828,
+            "priceAfter": 5660
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1eIcgS0dHDNpH6HdezKhNp9ptziqNehfq",
@@ -3170,7 +4366,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P087"
+      "key": "P087",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_tur_v_braziliyu_k_mestam_sily",
+            "status": "price_updated",
+            "priceBefore": 3000,
+            "priceAfter": 3653
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1fEfuMFwcYqXRDblcCCy53PyQ2YBUqI2t",
@@ -3210,7 +4419,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P088"
+      "key": "P088",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_argentina_and_brazil_ru",
+            "status": "price_updated",
+            "priceBefore": 2788,
+            "priceAfter": 3230
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1miAreWqDuHlkbxCgAB3GAaHcv8AFsg8C",
@@ -3240,7 +4462,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P089"
+      "key": "P089",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ekspress_braziliya_rio_de_zhanejro_vodopady_iguazu",
+            "status": "price_updated",
+            "priceBefore": 1845,
+            "priceAfter": 2110
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1gqIJXqTYsu32ES-2kDpOxxFACsHKFjdr",
@@ -3270,7 +4505,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P090"
+      "key": "P090",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_podlinnaya_braziliya",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 4875,
+            "priceAfter": 4875
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_16kTzZvLYTF6oWnFZTpvPxYdesVw52Jc6",
@@ -3300,7 +4548,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P091"
+      "key": "P091",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_braziliya_s_detmi",
+            "status": "price_updated",
+            "priceBefore": 4009,
+            "priceAfter": 4917
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1gMSf7AZ03CVGcNuJfscbPZYKBHwL9hRq",
@@ -3330,7 +4591,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P092"
+      "key": "P092",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_kofe_tur_v_brazilii",
+            "status": "price_updated",
+            "priceBefore": 4805,
+            "priceAfter": 5596
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1cG6A6GA_bxt6s5NUGUdMA_1RJHm5SuEN",
@@ -3360,7 +4634,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P093"
+      "key": "P093",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_tur_v_braziliyu_na_kofejnye_fazendy",
+            "status": "price_updated",
+            "priceBefore": 3590,
+            "priceAfter": 3908
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1YsHiTbfqXdoD-cjzVVM2HVDcH8pucxQE",
@@ -3400,7 +4687,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P094"
+      "key": "P094",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_brazilii_argentiny_i_chili",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 9235,
+            "priceAfter": 9235
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1D04UFzIJIE8I0JDz8IgUvAu4iBDyCwEA",
@@ -3430,7 +4730,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P095"
+      "key": "P095",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_v_rio_de_zhanejro",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 2039,
+            "priceAfter": 2039
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1z2ysqJ_7DVER7-6fjXr_N-1JQxX1uyMn",
@@ -3467,7 +4780,20 @@
         "deployRunId": 38089917224,
         "deployUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38089917224"
       },
-      "key": "P096"
+      "key": "P096",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_best_rio_express_six_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 1564,
+            "priceAfter": 1564
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1tnDv4wOdgMuc4Qmi2v36FXIXfPuM0j63",
@@ -3497,7 +4823,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P097"
+      "key": "P097",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_v_rio_de_zhanejro",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 2039,
+            "priceAfter": 2039
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1JX8Osf_D88_oiU0Yze8kF8knDCbc2Dkq",
@@ -3527,7 +4866,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P098"
+      "key": "P098",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_luxury_brazil_11d",
+            "status": "price_updated",
+            "priceBefore": 3653,
+            "priceAfter": 4609
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1j3oxyPxLjk17AxK3DC-BTB3di7PFWEMF",
@@ -3575,7 +4927,20 @@
           ]
         }
       },
-      "key": "P099"
+      "key": "P099",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_little_mix_ten_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 3089,
+            "priceAfter": 3089
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1oY-NYx09AKB4GytwNQwIDs7B0l4OYIDo",
@@ -3605,7 +4970,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P100"
+      "key": "P100",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ves_mnogolikij_peru_ikitos",
+            "status": "price_updated",
+            "priceBefore": 5318,
+            "priceAfter": 3910
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1_Cfl5kRmb-VHmnuWte-BbHNZfdqtyKHJ",
@@ -3651,7 +5029,20 @@
           ]
         }
       },
-      "key": "P101"
+      "key": "P101",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_mexico_oaxaca_city_break_five_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 2423,
+            "priceAfter": 2423
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1m3seHdUa3XZ9uxw6bBi_v3BUC84fJUo2",
@@ -3689,7 +5080,20 @@
         "deployRunId": 38121954810,
         "deployUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38121954810"
       },
-      "key": "P102"
+      "key": "P102",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_mexico_lindo_eight_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 5219,
+            "priceAfter": 5219
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1AE7daYamykdBi1VK4RrVaXKMMUrRzJKF",
@@ -3720,7 +5124,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P103"
+      "key": "P103",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_fantasticheskij_tur_po_meksike",
+            "status": "price_updated",
+            "priceBefore": 4356,
+            "priceAfter": 4046
+          },
+          {
+            "entityId": "tour_source_meksika_fantasticheskaya",
+            "status": "tariff_basis_needs_confirmation",
+            "priceBefore": 2561,
+            "priceAfter": 2561
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1BDEY5p7a0mRlI7LNhc9inf0OYQqkiWam",
@@ -3754,7 +5177,20 @@
         "updatedAt": "2026-10-11",
         "note": "Полный Word сверен; 7 дней/6 ночей, все услуги, 17 новых мест и 5 экскурсий опубликованы. S3 receipts проверены; commit 0e879f14db62c2a916cb125fcc5a9c7b3f271445; Actions 38124524843 success. Реестры: Страницы 1356–1378, Фото 6671–6705, Места 647–663; завершены 11.10.2026."
       },
-      "key": "P104"
+      "key": "P104",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_mexico_religious_journey",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": null,
+            "priceAfter": null
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1mtpDP_NPbAGL54yClrU8TZuOUcEUJf4t",
@@ -3788,7 +5224,20 @@
         "updatedAt": "2026-10-11",
         "note": "Word Анны полностью сверен в content commit acea1178b54a18019c9dcac88f7f5572b17db754; URL исправлен acae3dc. Опубликовано успешным Actions 38126978260 на d795675e4ca7bb8600bee7c221ec0b096b20c097. 26 дней/25 ночей, 8 стран; 49 разных кадров программы, 20 новых экскурсий и 2 новых места. Пустая цена и расхождения ночей/перелетов явно сохранены на странице. Реестры проверены: Страницы 1413–1435, Фото 6772–6842, Места 685–686. Все этапы завершены 11.10.2026."
       },
-      "key": "P105"
+      "key": "P105",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_central_america_eight_countries_26_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": null,
+            "priceAfter": null
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1Fg36H-7Wj19XoYkDZQsS8uY_jSbxTd-D",
@@ -3822,7 +5271,20 @@
         "updatedAt": "2026-10-11",
         "note": "Полный свежий Word сверен: 17 дней/16 ночей, все 10 этапов размещения, USD23700/DBL; частные джеты отдельно. Опубликованы 21 новое место и 12 новых экскурсий; 15 вставок, 33 разных кадра программы, 11 новых GPT Images с прямыми S3 receipts. Коммерческие вставки не содержат чужих тарифов и доплат за включенные билеты. Content d795675e4ca7bb8600bee7c221ec0b096b20c097; Actions 38126978260 success. Реестры сверены чтением: Страницы 1379–1412, Фото 6706–6771, Места 664–684. Принята не изменена."
       },
-      "key": "P106"
+      "key": "P106",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_chile_argentina_private_grand_tour_17_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 23700,
+            "priceAfter": 23700
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1zWTBZQZpl9vvjK01-cNLRFYJt2VZIOE2",
@@ -3873,7 +5335,20 @@
         },
         "note": "Свежий Word P107 сверен; Tour и 7 новых Excursion опубликованы. Дополнительно завершены 5 полноценных мест (Гуачипас, Куэвас-Пинтадас, Качи, Инка-Куэва, Валичу) и 3 недостающие экскурсионные обложки. 6 новых WebP в S3 с SHA-256 receipts: 3 Word-фото и 3 подписанные GPT Image иллюстрации с историей генераций. Content 58edcddc; порог упаковки b1cc9f31; Actions 38130308372 success. Страницы 1436–1443 и 1481–1485, Фото 6843–6862 и 6928–6935, Места 687–691 проверены чтением; этапы закрыты. Неопределенный Word image14 для Инка-Куэва не использован; высота Качи уточнена до 2210 м."
       },
-      "key": "P107"
+      "key": "P107",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_argentina_grand_tour_15_days_2027",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 12500,
+            "priceAfter": 12500
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1P3LxiLgJKPeX9COqlUovScukmYFRny2N",
@@ -3907,7 +5382,20 @@
         "updatedAt": "2026-10-11",
         "note": "Свежий точный Word Анны сверен: все 16 дней/15 ночей, отели, трансферы и экскурсии. Созданы 25 страниц мест и 11 экскурсий, 12 экскурсионных вставок и 28 разных кадров программы плюс уникальный hero. 20 фото Word загружены напрямую в S3 с проверенными receipts. Год, цена и размещение последней ночи в Word не указаны: отмечены для подтверждения. Content dbcfaab27fa7ddd074141aac79700e7ec5c283e7; Deploy 7507c9e7e455ee346084f4c91af6af90d954db88; Actions 38129089557 success. Реестры сверены чтением: Страницы 1444–1480, Фото 6863–6927, Места 692–716. Принята не изменена."
       },
-      "key": "P108"
+      "key": "P108",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_bolivia_chile_hidden_treasures_16_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": null,
+            "priceAfter": null
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1ydIzUxXVRHKmIGZpMtqwTQfQ8yKUir0F",
@@ -3939,7 +5427,13 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P109"
+      "key": "P109",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": []
+      }
     },
     {
       "id": "drive_program_1snFnoINZkqnOiuFA1UMTYSiOFYo8fTcO",
@@ -3969,7 +5463,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P110"
+      "key": "P110",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_udivitelnaya_salta",
+            "status": "price_updated",
+            "priceBefore": 3110,
+            "priceAfter": 2191
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1-ppkM_nl815BdOJUUHwIsC868DfzI8mJ",
@@ -3999,7 +5506,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P111"
+      "key": "P111",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_vsya_argentina",
+            "status": "price_updated",
+            "priceBefore": 12323,
+            "priceAfter": 13707
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1JtCSrvNG6geYQfD8hJvq5rWLgMSfYLbC",
@@ -4029,7 +5549,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P112"
+      "key": "P112",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_neveroyatnaya_argentina",
+            "status": "price_updated",
+            "priceBefore": 4609,
+            "priceAfter": 5326
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1lfibiUF3jx5l1hq2xXAwMiT4YXKMbw1i",
@@ -4078,7 +5611,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P113"
+      "key": "P113",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii",
+            "status": "price_updated",
+            "priceBefore": 3500,
+            "priceAfter": 3939
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1XH94LwW3ziRhm3ueKHR2biMbg97e_PX1",
@@ -4108,7 +5654,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P114"
+      "key": "P114",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu",
+            "status": "price_updated",
+            "priceBefore": 3375,
+            "priceAfter": 4216
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1mT6CCTXmmiOg8ebri3Yx_FDnwrsczLwz",
@@ -4138,7 +5697,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P115"
+      "key": "P115",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_vlyubites_v_argentinu",
+            "status": "price_updated",
+            "priceBefore": 4981,
+            "priceAfter": 5375
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1jK2Iu98GrqMalVGV6ljRDCtWeYLXEEIM",
@@ -4168,7 +5740,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P116"
+      "key": "P116",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_issledovanie_argentiny",
+            "status": "price_updated",
+            "priceBefore": 6638,
+            "priceAfter": 7745
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1CjiOSoQOYw57N_BEWBLto6w4aEU5KJDB",
@@ -4208,7 +5793,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P117"
+      "key": "P117",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_chili_argentina",
+            "status": "price_updated",
+            "priceBefore": 9818,
+            "priceAfter": 10548
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_14AcwXEAKWk0aL6yHNJEb57BumCn0aK19",
@@ -4242,7 +5840,20 @@
         "updatedAt": "2026-10-11",
         "note": "Свежий точный Word Анны сверен: все 14 дней/13 ночей, отели, трансферы, языки гидов, дополнительные экскурсии и 6 тарифов 2026 года. Созданы 8 самостоятельных страниц мест и 7 экскурсий; в программе 17 канонических вставок и 32 разных кадра. 7 иллюстраций GPT Image загружены напрямую в S3 с receipts и историей. Расписание двух поездок в Барилоче, местоположение отеля Игуасу и пограничные трансферы отмечены для подтверждения при бронировании. Content 871a70378648b661abd47d65a79770f57d94631d; Deploy af08cd2c28f631db4157ecd1a5ad0582e5281fde; Actions 38131784727 success. Реестры сверены чтением: Страницы 1489–1504, Фото 6942–6988, Места 717–724. Принята не изменена."
       },
-      "key": "P118"
+      "key": "P118",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_argentina_best_14_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 5096,
+            "priceAfter": 5096
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1RMOiyc3hazi5oKJWgKey6NB7Ht2AU54y",
@@ -4272,7 +5883,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P119"
+      "key": "P119",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_argentina_bariloche_i_buenos_ajres",
+            "status": "price_equal",
+            "priceBefore": 1650,
+            "priceAfter": 1650
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1lComQQhTHAI5KUZ9lmKPSSUpwVGFXeNL",
@@ -4303,7 +5927,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P120"
+      "key": "P120",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_argentina_buenos_ajres_salta_iguasu",
+            "status": "archived_not_checked",
+            "priceBefore": 5745,
+            "priceAfter": 5745
+          },
+          {
+            "entityId": "tour_source_buenos_ajres_salta_iguasu",
+            "status": "price_updated",
+            "priceBefore": 5745,
+            "priceAfter": 6539
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1c9gktI3zlyoabtPVz3PhfNDItbCct8H5",
@@ -4333,7 +5976,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P121"
+      "key": "P121",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_argentina_dlya_degustatorov_khoroshej_zhizni",
+            "status": "price_updated",
+            "priceBefore": 2518,
+            "priceAfter": 3025
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1wxd4Fq4-rEaL2TE50dJMhgNl4EzuJJNX",
@@ -4363,7 +6019,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P122"
+      "key": "P122",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_luchshee_brazilii_argentiny_i_chili",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 9235,
+            "priceAfter": 9235
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1u7HGbk5fOexsVGOf-IItuGystWxsOrnH",
@@ -4407,7 +6076,20 @@
         },
         "note": "Свежий точный Word Анны полностью сверен: 3 дня/2 ночи, все 6 тарифов SGL/DBL/TRL, 4* и индивидуальное обслуживание, завтраки и бокс-ланч; входной билет в парк включен, авиабилеты и русский гид за отдельную плату. 15 опубликованных мест, 1 существующая и 2 новые точные экскурсии; 7 разных кадров с обложкой, новых медиа не создавалось. Content b604abd815f1a08a9465116ef331e0e2a963748c; Actions 38130496446 success. Страницы 1486–1488, Фото 6936–6941 записаны и проверены; Принята сохранена."
       },
-      "key": "P123"
+      "key": "P123",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_chile_easter_island_3_days_2027",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 1492,
+            "priceAfter": 1492
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1MCUXBiq_HYaNTONYUIpyGuYvVV76I9Ku",
@@ -4441,7 +6123,20 @@
         "updatedAt": "2026-10-11",
         "note": "Полностью добавлен по свежему Word Анны: 3 дня/2 ночи, USD2000 на человека при группе 2; 10 мест, новое Серро-Кастильо (Айсен), 2 канонические экскурсии, 6 разных кадров. Content 6d7d617655a4849cbb0a8e7446bc1c33577cb3ef; Actions 38133023503 success. Страницы!1510:1511; Фото!7010:7016; Места!727. Все записи прочитаны обратно. Аудит data/audits/p124-word-handoff-20261011.json."
       },
-      "key": "P124"
+      "key": "P124",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_chile_marble_caves_san_rafael_three_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 2000,
+            "priceAfter": 2000
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_15U6pzr7Vde_C90zMoqmPo2FEhusldE-D",
@@ -4484,7 +6179,20 @@
         "updatedAt": "2026-10-11",
         "note": "P125 завершён: точный Word Анны 09.09.2026 и обе таблицы сверены. 9 дней/8 ночей, тариф 2 PAX DBL 6994 USD, все отели/питание/услуги/ограничения. 44 опубликованных места, 7 экскурсионных вставок (5 существующих и 2 новых), 2 новых места с самостоятельным текстом и GPT-обложками; 17 разных кадров тура. Расхождение по включению перелёта Калама — Сантьяго сохранено явно. Content c4596b72345053857d2a315fc27f2f5f3d9ef44c; Actions 38132734013 success. Sheets: Страницы 1505–1509, Фото 6989–7009 (21 слот), очередь Анны 725–726; все клетки проверены, Принята не изменена."
       },
-      "key": "P125"
+      "key": "P125",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_chile_hidden_secrets_9_days_2027",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 6994,
+            "priceAfter": 6994
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1FadSVhirch2MG4khM8rL3TpcicU6tQGC",
@@ -4534,7 +6242,20 @@
         },
         "note": "Свежий Word Анны полностью сверен и обновлен существующий тур: 10 дней/9 ночей, 6 тарифов SGL/DBL/TRP от $9998 до $22347, The Singular Santiago / Nayara Alto Atacama / The Singular Patagonia, 46 опубликованных мест, 8 канонических экскурсионных вставок (7 существующих, 1 новая для ледника Грей). Все фотографии использованы из имеющихся, день 5 заменен для устранения дубля с Эль-Татио. Content a35470a1a06f7f53d7c06fa479f261499a8a1c17; Actions 38134754686 success. Google Sheets: Страницы 582, 1512; Фото 1746, 7017–7024. Все строки проверены обратным чтением; поле Принята и первая дата тура сохранены."
       },
-      "key": "P126"
+      "key": "P126",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_vip_chili_5",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 9998,
+            "priceAfter": 9998
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1JI6ZBQtl3Y_LC6hLD-y0Rn8W2M3p5b5h",
@@ -4573,7 +6294,20 @@
           "photos": []
         }
       },
-      "key": "P127"
+      "key": "P127",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_velikij_tur_po_yuzhnoj_amerike",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 6559,
+            "priceAfter": 6559
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1BDjyYTsNgYCYHkSCc4Y-apfzMz1EdxRi",
@@ -4603,7 +6337,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P128"
+      "key": "P128",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_chili_santyago_pustynya_atakama_torres_del_pajne",
+            "status": "price_updated",
+            "priceBefore": 3730,
+            "priceAfter": 4139
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1idXvVut2EUCZwPPEtaVzOA6usFOj8a3_",
@@ -4633,7 +6380,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P129"
+      "key": "P129",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_chili_zagadki_chelovechestva",
+            "status": "price_updated",
+            "priceBefore": 3419,
+            "priceAfter": 3876
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_10oIIbNfwg59WJtBA8oZ2tRETqkYxo5p5",
@@ -4663,7 +6423,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P130"
+      "key": "P130",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
+            "status": "price_updated",
+            "priceBefore": 3538,
+            "priceAfter": 3892
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1Jyk6KlKNCE7S14g68NYjDjnhZ_v2-yMu",
@@ -4693,7 +6466,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P131"
+      "key": "P131",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_chili_argentina_braziliya",
+            "status": "price_updated",
+            "priceBefore": 4763,
+            "priceAfter": 5979
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1Cn41JKRDrFqc9O6lxFEKixi5nBTfNcpP",
@@ -4723,7 +6509,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P132"
+      "key": "P132",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_koloritnyj_santyago_i_zagadochnyj_ostrov_paskhi",
+            "status": "price_updated",
+            "priceBefore": 2255,
+            "priceAfter": 2577
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1Z3JMZXFBlQgCxsUSj7YBy2e1skLA18iE",
@@ -4753,7 +6552,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P133"
+      "key": "P133",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_chili_samoe_luchshee",
+            "status": "price_updated",
+            "priceBefore": 5505,
+            "priceAfter": 6174
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1XFk5MV8FDfwJgD2M1fORsmetmakXt9c8",
@@ -4783,7 +6595,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P134"
+      "key": "P134",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_tur_v_4_strany_yuzhnoj_ameriki",
+            "status": "ambiguous_word_mapping",
+            "priceBefore": 5823,
+            "priceAfter": 5823
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1Kjvbso56c2nJhFSZq5crWwga8anymdnP",
@@ -4813,7 +6638,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P135"
+      "key": "P135",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_mechty_sbyvayutsya_na_novyj_god",
+            "status": "price_equal",
+            "priceBefore": 4373,
+            "priceAfter": 4373
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1ZaAXBy_tbSigYKnqCeScyDRNE0qRri5d",
@@ -4844,7 +6682,20 @@
         "note": "ГОТОВО: Word Анны 2027 полностью сверен, включая закрытые ячейки таблицы цен. 12 дней / 11 ночей, 30.12.2026–10.01.2027; 6 тарифов SGL/DBL/TPL, от $5846; 13 мест (5 основных), 4 канонические экскурсии, 12 разных фото дней. Commit 444f6117cb039a12caac2908eaf69df77d7c4762; успешный deploy https://github.com/alexyakovlev79/adatours.ru/actions/runs/37972602249. Реестры проверены: Страницы 441, 13 используемых фото + 3 исторические строки; новые места 554–555; legacy строка 89 DONE. ID, URL, дата первой публикации и поле Принята сохранены. В Word остался старый заголовок дат таблицы цен; ставки перенесены без пересчета, даты программы 2026–2027.",
         "publicationCommit": "444f6117cb039a12caac2908eaf69df77d7c4762"
       },
-      "key": "P136"
+      "key": "P136",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ekzoticheskij_novyj_god_ru",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 5846,
+            "priceAfter": 5846
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_14Om_luOpwtBtqql7NxyZDRQ8xtjv4uTb",
@@ -4874,7 +6725,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P137"
+      "key": "P137",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+            "status": "price_updated",
+            "priceBefore": 38291,
+            "priceAfter": 30633
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1gaL9MHGLftE6Q3_O5tuZF3AkM3XDs8kH",
@@ -4904,7 +6768,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P138"
+      "key": "P138",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej",
+            "status": "price_updated",
+            "priceBefore": 35306,
+            "priceAfter": 28245
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1FEYZGxUPKg8a6JrRkx_2FG0e7wwZ4JOU",
@@ -4934,7 +6811,20 @@
         "note": "09.10.2026: опубликован точный выбранный V2 тура с уточнением Анны «Инкауаси». Полная сверка Word-варианта из этой описи не выполнялась; статус Word не закрывается автоматически.",
         "updatedAt": "2026-10-09"
       },
-      "key": "P139"
+      "key": "P139",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god",
+            "status": "price_equal",
+            "priceBefore": 10355.0,
+            "priceAfter": 10355.0
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1QGKwDhr8CwK321tCUMUuNAyliJpBr5mz",
@@ -4964,7 +6854,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P140"
+      "key": "P140",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_nezabyvaemyj_novyj_god_v_brazilii",
+            "status": "price_updated",
+            "priceBefore": 3193,
+            "priceAfter": 3532
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1xN_GP-qNB2wE5hz42vnS45FEXKw3Mqeb",
@@ -4994,7 +6897,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P141"
+      "key": "P141",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_tropicheskij_novyj_god_v_brazilii",
+            "status": "price_updated",
+            "priceBefore": 2988,
+            "priceAfter": 3315
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1HbsOmP3KzeLw1VGZk1XEaCAnvflwkZQe",
@@ -5025,7 +6941,26 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P142"
+      "key": "P142",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_nezabyvaemyj_novyj_god_v_rio",
+            "status": "price_equal",
+            "priceBefore": 2056,
+            "priceAfter": 2056
+          },
+          {
+            "entityId": "tour_source_novyj_god_v_rio_de_zhanejro_1",
+            "status": "archived_not_checked",
+            "priceBefore": 1975,
+            "priceAfter": 1975
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_16HYc2q48Bca_8Zo2VD-W1iOufzB_c33b",
@@ -5055,7 +6990,20 @@
         "updatedAt": "2026-10-09",
         "note": "ГОТОВО: Word Анны 2027 полностью сверен и опубликован — 8 дней/7 ночей, 30.12.2026–06.01.2027, все 9 тарифов и отели, 3 места и 2 канонические факультативные экскурсии, 8 разных фото дней. Deploy https://github.com/alexyakovlev79/adatours.ru/actions/runs/37959941071; реестры: Страницы 427, 9 используемых фото и сохраненная историческая строка 4727. Прежние ID, URL, дата первой публикации и поле Принята сохранены."
       },
-      "key": "P143"
+      "key": "P143",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_braziliya_s_vodopadami_na_novyj_god",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 2539,
+            "priceAfter": 2539
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1u5ezyd_oXIe6SZtASV11R3UnOA3mYbFr",
@@ -5131,7 +7079,20 @@
         },
         "note": "P144 полностью завершен по точному Word Анны и двум таблицам: 11 дней/10 ночей, 30.12.2026–09.01.2027, 9 тарифов SGL/DBL/TPL для 3*/4*/5* от $5008; все отели, завтраки, трансферы, русскоговорящие гиды и включенные перелеты. 25 опубликованных canonical мест (23 основных), 10 экскурсионных модулей: 4 новые групповые экскурсии, 6 существующих. 21 различный кадр программы, новые медиа не создавались. Расхождение дат NH Plaza Santiago сохранено для подтверждения. Content d3f61b7d2d782065d0f309ce00695720d24a3f93; Actions 38137955208 success. Sheets Страницы 1515–1519, существующая Майпо 794; Фото 7040–7066 (27 слотов). Значения и структура проверены обратным чтением; первая дата Майпо и Принята сохранены."
       },
-      "key": "P144"
+      "key": "P144",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_argentina_chile_new_year_11_days_2027",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 5008,
+            "priceAfter": 5008
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_12QJtd211FeAN8NdNUvLeLvn4p_iGfYfA",
@@ -5161,7 +7122,20 @@
         "updatedAt": "2026-10-09",
         "note": "Свежий Word Анны 2027 полностью сверен и опубликован: 12–21.02.2027, 10 дней / 9 ночей, 9 тарифов, 4 основных места и 3 экскурсии; 10 дней с разными фото. Deploy https://github.com/alexyakovlev79/adatours.ru/actions/runs/37953238666; Sheets: Страницы 368, Фото 5600–5610. Исторические блокеры Word закрыты; stable ID, URL и история сохранены."
       },
-      "key": "P145"
+      "key": "P145",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_nezabyvaemyj_parad_chempionov_v_brazilii",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 3540,
+            "priceAfter": 3540
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1oLZAfaNIgNA-GbS3R8II2cvW_TFlka6t",
@@ -5191,7 +7165,20 @@
         "note": "Full Anna Word 2027 verified and published: 10d/9n, 12–21 February, all 9 tariffs and hotels, services, 10 distinct day images. Deployment 37947221971 succeeded; Sheets page 369 and all 11 photo slots synchronized.",
         "updatedAt": "2026-10-09"
       },
-      "key": "P146"
+      "key": "P146",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 3255,
+            "priceAfter": 3255
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_16GI9NiTFhgcwJSm3Y5XaVHIuoEtr-7Y0",
@@ -5238,7 +7225,20 @@
         },
         "note": "P147 полностью добавлен из свежего Word Анны 17.08.2026. Групповой тур 12–21.02.2027, 10 дней/9 ночей, Рио 3 ночи и Ангра-дус-Рейс 6 ночей, система All Inclusive на побережье; 4* SGL $7390, DBL $4280, TRP $3930; 5* SGL $7925, DBL $4840, TRP $4300. Включены русскоязычные обзорные экскурсии, карнавальные билеты и трансфер на Самбодром; отдельный ужин Marius $130. Создан canonical excursion_rio_champions_parade_2027_sambadrome, переиспользованы 2 существующие экскурсии, 3 ID мест, 10 разных фотографий дней и hero с существующими asset. Сохранены Word-происхождение, exact entry, все компактные каталоги и source-index, 15 слотов листа Фото без новых бинарных файлов. Content d38816e7ddbb339cd0a6efe1cc8a4f29d4a8fabc; Actions 38135587787 success. Страницы 1513–1514, Фото 7025–7039 внесены и проверены, Принята не изменена."
       },
-      "key": "P147"
+      "key": "P147",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_tropical_champions_parade_rio_angra_2027",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 3930,
+            "priceAfter": 3930
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_11U4ImOs5mtSCy83Jp7cqewca5b-S9yL7",
@@ -5316,7 +7316,20 @@
         },
         "note": "Свежий точный Word Анны и таблица 9 тарифов сверены. Опубликованы 10 дней/9 ночей, 3 основные страны и факультативный Уругвай, 31 опубликованное место (22 основных), 23 существующих экскурсионных модуля и 33 различных кадра программы плюс отдельный hero. Все коммерческие условия, включенные перелеты, трансферы, карнавальные билеты и дополнительные услуги сохранены; расхождения года дат, конечного пункта трансфера в день 6 и трех дополнительных тарифов явно отмечены для подтверждения при бронировании. Content 8fa1bd809f8b36136ac2d97259c6710f3b2e0835; Actions 38142542951 success. Sheets Страницы 1551, Фото 7206–7239: значения, проверки данных, форматирование и ссылки проверены обратным чтением. Принята не изменена. Новых медиа, S3 uploads, мест или экскурсий не потребовалось."
       },
-      "key": "P148"
+      "key": "P148",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 5208,
+            "priceAfter": 5208
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1NeP8Lfc-Lm9XtbeNUmWcWLnn9KTvoTYp",
@@ -5346,7 +7359,20 @@
         "updatedAt": "2026-10-09",
         "note": "Свежий Word 2027 полностью сверен и опубликован: 7 дней, 9 тарифов, 3 экскурсии, 4 связи с местами; все 7 дней с разными фото. Deploy https://github.com/alexyakovlev79/adatours.ru/actions/runs/37944850064; Sheets: Страницы 401, Фото 4758–4759 и 5568–5573. Дата первой публикации и история сохранены."
       },
-      "key": "P149"
+      "key": "P149",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 2650,
+            "priceAfter": 2650
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1odj5X6HhIZ5RWzMPdZOVyUTxtmhmdoR4",
@@ -5376,7 +7402,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P150"
+      "key": "P150",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii",
+            "status": "price_updated",
+            "priceBefore": 3806,
+            "priceAfter": 4475
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1qkPpWu99FABWC0lOUv80QsAPHJGIahUG",
@@ -5406,7 +7445,20 @@
         "updatedAt": "2026-10-09",
         "note": "Свежий Word Анны 2027 полностью перенесен и опубликован: 12–20.02.2027, 9 дней / 8 ночей, 9 тарифов, внутренние перелеты включены; 7 мест (4 основных), 15 экскурсионных вставок (2 новых), 9 разных дневных фото. Deploy https://github.com/alexyakovlev79/adatours.ru/actions/runs/37959941071; Sheets: Страницы 386, 983–984; Фото 5614–5625. Дата первого добавления 02.10.2026 и Принята сохранены. Разные тарифы Игуасу, единица расчета Гуанабара и точка назначения трансфера по прилету явно отмечены для подтверждения при бронировании."
       },
-      "key": "P151"
+      "key": "P151",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": 4300,
+            "priceAfter": 4300
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1Ua17HBMs3lZcz3bo1uFqsBufP1AUipkN",
@@ -5436,7 +7488,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P152"
+      "key": "P152",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_parad_chempionov_karnavala_v_rio",
+            "status": "price_equal",
+            "priceBefore": 2170,
+            "priceAfter": 2170
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX",
@@ -5466,7 +7531,20 @@
         "note": "09.10.2026: опубликован точный выбранный V2 тура с уточнением Анны «Инкауаси». Полная сверка Word-варианта из этой описи не выполнялась; статус Word не закрывается автоматически.",
         "updatedAt": "2026-10-09"
       },
-      "key": "P153"
+      "key": "P153",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+            "status": "price_updated",
+            "priceBefore": 9563.0,
+            "priceAfter": 9562
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1wm4F-nqVlb_latC4I9kxI4NGR2we-e8l",
@@ -5496,7 +7574,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P154"
+      "key": "P154",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu",
+            "status": "price_equal",
+            "priceBefore": 26780,
+            "priceAfter": 26780
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1H-xNMIgh0fUgKtMbzilltHzg3rOJrtI4",
@@ -5526,7 +7617,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P155"
+      "key": "P155",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas",
+            "status": "price_equal",
+            "priceBefore": 30350,
+            "priceAfter": 30350
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_19pKXftoqMdCFVJMHyFGeSlBnA1aT6c5e",
@@ -5556,7 +7660,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P156"
+      "key": "P156",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_mechty_sbyvayutsya_na_karnaval",
+            "status": "price_equal",
+            "priceBefore": 3725,
+            "priceAfter": 3725
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1EIC9jKLRqITF8NK50uSAlJbf0NeREbOm",
@@ -5586,7 +7703,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P157"
+      "key": "P157",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
+            "status": "price_updated",
+            "priceBefore": 4639,
+            "priceAfter": 4638
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1fkf4D9-9xNYjrVtiklv8IsK85SNe2tqi",
@@ -5616,7 +7746,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P158"
+      "key": "P158",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_tropicheskij_karnaval_v_brazilii",
+            "status": "price_updated",
+            "priceBefore": 3689,
+            "priceAfter": 3688
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1XQxG7EGyqT7ocecorNoz8kZb5Nc2zPoz",
@@ -5646,7 +7789,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P159"
+      "key": "P159",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_tropicheskij_karnaval_s_angroj_dush_rejsh",
+            "status": "price_equal",
+            "priceBefore": 6149,
+            "priceAfter": 6149
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_199I4cPaXMicxUKzIZIjiQtSHIffrvzBE",
@@ -5676,7 +7832,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P160"
+      "key": "P160",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_ekzoticheskij_karnaval_v_brazilii",
+            "status": "price_equal",
+            "priceBefore": 4806,
+            "priceAfter": 4806
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1HFQgkqcjsvx1UCA_Zh3xXLodzsZnNd3B",
@@ -5706,7 +7875,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P161"
+      "key": "P161",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_nezabyvaemyj_karnaval_v_brazilii",
+            "status": "price_equal",
+            "priceBefore": 4056,
+            "priceAfter": 4056
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_15rBdMvFM6CsIXXtqkUz-x2Vz6qI76csW",
@@ -5736,7 +7918,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P162"
+      "key": "P162",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_karnaval_v_rio_de_zhanejro_vodopady",
+            "status": "price_equal",
+            "priceBefore": 2981,
+            "priceAfter": 2981
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1yJf5w4VcmsoTdfSattK8taFMuTak_8m9",
@@ -5766,7 +7961,20 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P163"
+      "key": "P163",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_karnaval_v_rio_de_zhanejro",
+            "status": "price_updated",
+            "priceBefore": 2200,
+            "priceAfter": 2338
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1OQYapq32LGsSOtNr4wAbPUfLtP-jDREi",
@@ -5827,7 +8035,20 @@
           ]
         }
       },
-      "key": "P164"
+      "key": "P164",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_antarctica_discovery_long_hikes_11_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": null,
+            "priceAfter": null
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1oARzLN8Eh0E4J0Yp8F_wRGXs8fIMomBA",
@@ -5881,7 +8102,20 @@
           ]
         }
       },
-      "key": "P165"
+      "key": "P165",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_antarctica_discovery_learning_11_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": null,
+            "priceAfter": null
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1zLr992kFMz9UdiLXx9LI-RtuWbl--jS4",
@@ -5977,7 +8211,20 @@
           ]
         }
       },
-      "key": "P166"
+      "key": "P166",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_antarctica_polar_circle_deep_south_13_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": null,
+            "priceAfter": null
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1i8AMBZ-bp9Fc1AB7ru8BB6QDqibsM8b9",
@@ -6029,7 +8276,20 @@
           ]
         }
       },
-      "key": "P167"
+      "key": "P167",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_antarctica_whale_watching_learning_11_days",
+            "status": "added_from_word_not_rechecked",
+            "priceBefore": null,
+            "priceAfter": null
+          }
+        ]
+      }
     },
     {
       "id": "drive_program_1zat9NNuJlzlnuF_KU5o_-E8BGpGXd6tF",
@@ -6060,7 +8320,65 @@
         "note": "",
         "updatedAt": null
       },
-      "key": "P168"
+      "key": "P168",
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": [
+          {
+            "entityId": "tour_source_klassicheskaya_antarktida",
+            "status": "price_updated",
+            "priceBefore": 11495,
+            "priceAfter": 15995
+          },
+          {
+            "entityId": "tour_source_klassicheskaya_antarktika",
+            "status": "archived_not_checked",
+            "priceBefore": 13595,
+            "priceAfter": 13595
+          }
+        ]
+      }
+    },
+    {
+      "id": "drive_program_1skaR2iQ6FrxpdT_QMuxOoacXJWUn5TWa",
+      "key": "P169",
+      "name": "Flavors of Brazil 2027 8d7n RUS com 20%.docx",
+      "durationDays": 8,
+      "folders": [
+        "Brazil 2027"
+      ],
+      "files": [
+        {
+          "driveId": "1skaR2iQ6FrxpdT_QMuxOoacXJWUn5TWa",
+          "name": "Flavors of Brazil 2027 8d7n RUS com 20%.docx",
+          "url": "https://docs.google.com/document/d/1skaR2iQ6FrxpdT_QMuxOoacXJWUn5TWa/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+          "folderId": "1t79vXL8ZMLuLgLwEphaAkYM7Hrdp_GBk",
+          "folder": "Brazil 2027",
+          "modifiedTime": "2026-10-09T14:00:00.000Z"
+        }
+      ],
+      "entityIds": [],
+      "candidateEntityIds": [],
+      "comparisonNote": "Word найден при сверке цен 11.10.2026. Подтверждённого тура на 8 дней Rio–Ilha Grande–Paraty на сайте не найдено. Варианты на 9 и 12 дней не приравнены.",
+      "work": {
+        "state": "not_started",
+        "note": "Нет подтверждённого соответствия туру на сайте; в ценовой задаче новый тур не создавался.",
+        "updatedAt": null
+      },
+      "priceAudit": {
+        "date": "2026-10-11",
+        "scope": "Только цены, без сверки полного содержания",
+        "status": "no_site_match",
+        "wordTariffsUSD": [
+          6795,
+          3480,
+          3296
+        ],
+        "auditPath": "data/audits/tour-price-word-correspondence-20261011.json",
+        "tours": []
+      }
     }
   ],
   "excludedFiles": [
@@ -6085,5 +8403,7 @@
       "folder": "Carnaval Rio 2027",
       "reason": "Билеты на карнавал, не программа тура"
     }
-  ]
+  ],
+  "driveFileListCheckedAt": "2026-10-11",
+  "priceAudit": "data/audits/tour-price-word-correspondence-20261011.json"
 }

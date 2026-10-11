@@ -183,9 +183,9 @@ sourceUrl: https://brasiltours.ru/koloritnyj-santyago-i-zagadochnyj-ostrov-paskh
 sourceSnapshot: https://drive.google.com/file/d/1s6QTwr2RjJZ9DnGV1zlmY69N82tPX0sr/view?usp=drivesdk
 durationDays: 6
 durationNights: 5
-priceFrom: 2255
+priceFrom: 2577
 currency: USD
-priceNote: $2255
+priceNote: $2577
 hero:
   src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
   alt: Колоритный Сантьяго и загадочный остров Пасхи

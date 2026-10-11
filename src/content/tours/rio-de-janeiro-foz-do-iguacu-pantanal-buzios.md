@@ -237,7 +237,7 @@ notIncluded:
 - Дополнительные экскурсии.
 - Еда и напитки.
 - Международный перелет.
-- Внутренний перелет Рио-де-Жанейро - Фоз-де-Игуасу - Кампу-Гранди - Рио-де-Жанейро, от USD 450 с человека.
+- Внутренний перелет Рио-де-Жанейро - Фоз-де-Игуасу - Кампу-Гранди - Рио-де-Жанейро, от USD 990 с человека.
 notes:
 - При необходимости Ada Tours может заменить отель на другой отель той же категории.
 - Порядок экскурсий может быть изменен при сохранении программы тура.
@@ -247,9 +247,9 @@ sourceUrl: https://brasiltours.ru/rio-de-janeiro-foz-do-iguacu-pantanal-buzios
 sourceSnapshot: https://drive.google.com/file/d/1-lMZLzKK66jwgrIDGBELBf0M6ovR7Sip/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 4159
+priceFrom: 4750
 currency: USD
-priceNote: $4159
+priceNote: $4750
 hero:
   src: /media/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios/hero-enhanced-20261006.webp
   alt: Болота Пантанал, Бразилия, дикая природа

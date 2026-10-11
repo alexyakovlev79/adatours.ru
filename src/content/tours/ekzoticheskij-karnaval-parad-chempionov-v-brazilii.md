@@ -233,9 +233,9 @@ sourceUrl: https://brasiltours.ru/ekzoticheskij-karnaval-parad-chempionov-v-braz
 sourceSnapshot: https://drive.google.com/file/d/1MuAQxXClfIrSfV4LPxluiIDnInMB7IzG/view?usp=drivesdk
 durationDays: 11
 durationNights: 10
-priceFrom: 3806
+priceFrom: 4475
 currency: USD
-priceNote: $3806
+priceNote: $4475
 hero:
   src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/hero-enhanced-20261007.webp"
   alt: 'на фото: Карнавал в Рио'

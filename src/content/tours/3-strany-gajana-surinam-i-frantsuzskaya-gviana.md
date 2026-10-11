@@ -186,9 +186,9 @@ sourceUrl: https://brasiltours.ru/3-strany-gajana-surinam-i-frantsuzskaya-gviana
 sourceSnapshot: https://drive.google.com/file/d/1NiHrlgBQ0_PGZKNMc4rqlz3ZtWJAIChh/view?usp=drivesdk
 durationDays: 7
 durationNights: 6
-priceFrom: 4014
+priceFrom: 5119
 currency: USD
-priceNote: $4014
+priceNote: $5119
 hero:
   src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/hero-src-enhanced-20261007.webp"
   hover: "Суринам: внутренний двор кирпичного комплекса с пальмами"

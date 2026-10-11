@@ -178,9 +178,9 @@ sourceUrl: https://brasiltours.ru/tur-v-braziliyu-k-mestam-sily
 sourceSnapshot: https://drive.google.com/file/d/17Whreb2RTebO0JvodUoNCuhzB1paxI2D/view?usp=drivesdk
 durationDays: 9
 durationNights: 8
-priceFrom: 3000
+priceFrom: 3653
 currency: USD
-priceNote: $3000
+priceNote: $3653
 hero:
   src: "/media/tours/tur-v-braziliyu-k-mestam-sily/hero-enhanced-20261006.webp"
   alt: 'На фото: регион Висконде де Мауа в Бразилии (Кофейный регион)'

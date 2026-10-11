@@ -341,9 +341,9 @@ sourceUrl: https://brasiltours.ru/chili-argentina
 sourceSnapshot: https://drive.google.com/file/d/1ij6DyIOzE7i2Uly5MmUPpk6DZKEJRsdO/view?usp=drivesdk
 durationDays: 14
 durationNights: 13
-priceFrom: 9818
+priceFrom: 10548
 currency: USD
-priceNote: $9818
+priceNote: $10548
 hero:
   src: /media/tours/chili-argentina/hero-enhanced-20261006.webp
   alt: Чили & Аргентина Делюкс

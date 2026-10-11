@@ -290,9 +290,9 @@ sourceUrl: https://brasiltours.ru/chili-samoe-luchshee
 sourceSnapshot: https://drive.google.com/file/d/1k8lWgxra03rN4I6xc8igLOtKCS7bFc9h/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 5505
+priceFrom: 6174
 currency: USD
-priceNote: $5505
+priceNote: $6174
 hero:
   src: /media/tours/chili-i-argentina-vip/hero-enhanced-20261006.webp
   alt: 'На фото: парк Торрес-дель-Пайне в Чили'

@@ -116,9 +116,9 @@ sourceUrl: https://brasiltours.ru/ekspress-braziliya-rio-ibuzios
 sourceSnapshot: https://drive.google.com/file/d/1XDTf1VcIohNJziKghxCxItyPKtpvWv7_/view?usp=drivesdk
 durationDays: 6
 durationNights: 5
-priceFrom: 2225
+priceFrom: 2422
 currency: USD
-priceNote: $2225
+priceNote: $2422
 hero:
   src: /media/tours/ekspress-braziliya-rio-ibuzios/hero-enhanced-20261006.webp
   alt: 'На фото: пляжи Рио-де-Жанейро в Бразилии'

@@ -189,9 +189,9 @@ sourceUrl: https://brasiltours.ru/braziliya-s-plyazhami
 sourceSnapshot: https://drive.google.com/file/d/1DExmcxXKiljHD6XWAU5E4DeHvsapLs1h/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 2608
+priceFrom: 3205
 currency: USD
-priceNote: $2608
+priceNote: $3205
 hero:
   src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
   alt: Бразилия с пляжами

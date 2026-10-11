@@ -181,9 +181,9 @@ sourceUrl: https://brasiltours.ru/beliz-priklyuchenie-materik-ostrov
 sourceSnapshot: https://drive.google.com/file/d/1paMtek_bd9VyqBL0cYqM3u_mesSbuzaz/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 2955
+priceFrom: 3143
 currency: USD
-priceNote: $2955
+priceNote: $3143
 hero:
   src: /media/tours/beliz-priklyuchenie-materik-ostrov/hero-enhanced-20261006.webp
   hover: "Белиз: мальчик в маске для плавания с морской звездой"

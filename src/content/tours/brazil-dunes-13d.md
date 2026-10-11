@@ -34,7 +34,7 @@ route:
   - Ленсойс-Мараньенсес
   - Натал
   - Прайя-де-Пипа
-priceFrom: 4349
+priceFrom: 5345
 currency: USD
 dates: []
 hero:

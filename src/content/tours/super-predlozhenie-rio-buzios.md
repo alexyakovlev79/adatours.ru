@@ -187,9 +187,9 @@ sourceUrl: https://brasiltours.ru/super-predlozhenie-rio-buzios
 sourceSnapshot: https://drive.google.com/file/d/1AoBgtoTS83eINWCmRinRG728SZ258Oqu/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 1909
+priceFrom: 2078
 currency: USD
-priceNote: $1909
+priceNote: $2078
 hero:
   src: /media/tours/luxury-brazil-11d/itinerary/day-10-enhanced-20260930.webp
   alt: 'На фото: бразильский морской курорт Бузиос'

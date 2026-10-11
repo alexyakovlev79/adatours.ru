@@ -22,7 +22,7 @@ durationNights: 6
 route:
   - "Буэнос-Айрес"
   - "Мендоса"
-priceFrom: 2518
+priceFrom: 3025
 currency: USD
 dates: []
 hero:

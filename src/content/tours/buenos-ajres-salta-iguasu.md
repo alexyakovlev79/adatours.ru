@@ -49,7 +49,7 @@ route:
   - Буэнос-Айрес
   - Сальта
   - Игуасу
-priceFrom: 5745
+priceFrom: 6539
 currency: USD
 dates: []
 hero:

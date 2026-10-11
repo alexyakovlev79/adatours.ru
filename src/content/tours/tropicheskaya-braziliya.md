@@ -252,9 +252,9 @@ sourceUrl: https://brasiltours.ru/tropicheskaya-braziliya
 sourceSnapshot: https://drive.google.com/file/d/1m0tOMOKXNgeRTpAGqO4OGRP9HwzYEEIN/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 3811
+priceFrom: 4072
 currency: USD
-priceNote: $3811
+priceNote: $4072
 hero:
   src: /media/tours/luxury-brazil-11d/itinerary/day-11-enhanced-20260930.webp
   alt: 'На фото: город Рио-де-Жанейро в Бразилии'

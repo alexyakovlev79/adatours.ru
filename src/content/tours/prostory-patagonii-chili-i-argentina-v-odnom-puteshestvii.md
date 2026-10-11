@@ -30,7 +30,7 @@ route:
   - "Эль-Калафате"
   - "Пуэрто-Наталес"
   - "Сантьяго-де-Чили"
-priceFrom: 3500
+priceFrom: 3939
 currency: USD
 dates: []
 hero:

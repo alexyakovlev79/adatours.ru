@@ -58,7 +58,7 @@ route:
   - "Эль-Чалтен"
   - "Торрес-дель-Пайне"
   - "Ушуайя"
-priceFrom: 12323
+priceFrom: 13707
 currency: USD
 dates: []
 hero:

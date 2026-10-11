@@ -3,7 +3,7 @@ id: tour_source_nezabyvaemyj_novyj_god_v_brazilii
 locale: ru
 slug: brazil-new-year-rio-iguazu-buzios-10-days
 status: published
-title: 'Новогодний тур в Бразилию 10 дней: Рио, Игуасу, Бузиос от $3192'
+title: 'Новогодний тур в Бразилию 10 дней: Рио, Игуасу, Бузиос от $3532'
 countries:
 - country_brazil
 - country_argentina
@@ -274,9 +274,9 @@ sourceUrl: https://brasiltours.ru/nezabyvaemyj-novyj-god-v-brazilii
 sourceSnapshot: https://drive.google.com/file/d/1g4KxyNTKtV-p1jUweK_oSaIJSNWYIkKA/view?usp=drivesdk
 durationDays: 10
 durationNights: 9
-priceFrom: 3193
+priceFrom: 3532
 currency: USD
-priceNote: $3193
+priceNote: $3532
 hero:
   src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
   alt: Празднование Нового года на пляже Копакабана, Бразилия

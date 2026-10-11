@@ -33,7 +33,7 @@ route:
   - Лима
   - Куско
   - Пуно
-priceFrom: 5716
+priceFrom: 6449
 currency: USD
 dates: []
 hero:

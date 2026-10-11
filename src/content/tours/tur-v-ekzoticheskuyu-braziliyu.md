@@ -290,7 +290,7 @@ included:
 - трансферы с водителем.
 notIncluded:
 - дополнительные экскурсии;
-- внутренние перелеты Рио-де-Жанейро - Игуасу - Манаус - Рио-де-Жанейро, **от USD 600**;
+- внутренние перелеты Рио-де-Жанейро - Игуасу - Манаус - Рио-де-Жанейро, **от USD 990**;
 - еда и напитки во время переездов.
 notes:
 - При необходимости Ada Tours может заменить отель на другой отель той же категории.
@@ -301,9 +301,9 @@ sourceUrl: https://brasiltours.ru/tur-v-ekzoticheskuyu-braziliyu
 sourceSnapshot: https://drive.google.com/file/d/1RQwJTpFJTrU4XatNgXdgQvssaY_toweR/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 4053
+priceFrom: 4769
 currency: USD
-priceNote: $4053
+priceNote: $4769
 hero:
   src: /media/tours/tur-v-ekzoticheskuyu-braziliyu/hero-enhanced-20261006.webp
   alt: 'На фото: птицы в лесах реки Амазонка в Бразилии'

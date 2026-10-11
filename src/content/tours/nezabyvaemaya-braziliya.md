@@ -261,9 +261,9 @@ sourceUrl: https://brasiltours.ru/nezabyvaemaya-braziliya
 sourceSnapshot: https://drive.google.com/file/d/1AigNbFT8c3F6YBd2ZRm985ui7r7GydRX/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 4009
+priceFrom: 4352
 currency: USD
-priceNote: $4009
+priceNote: $4352
 hero:
   src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
   alt: 'На фото: Бухта в Бузиосе'

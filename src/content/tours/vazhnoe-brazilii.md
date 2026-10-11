@@ -213,9 +213,9 @@ sourceUrl: https://brasiltours.ru/vazhnoe-brazilii
 sourceSnapshot: https://drive.google.com/file/d/19F4BDJyl8i3hIsLQVW7t8gO-cN7UNakx/view?usp=drivesdk
 durationDays: 7
 durationNights: 6
-priceFrom: 2951
+priceFrom: 3566
 currency: USD
-priceNote: $2951
+priceNote: $3566
 hero:
   src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-8-enhanced-20261006.webp
   alt: Важное  Бразилии

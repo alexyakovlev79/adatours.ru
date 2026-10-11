@@ -222,9 +222,9 @@ sourceUrl: https://brasiltours.ru/brazil-coffee-tour-ru
 sourceSnapshot: https://drive.google.com/file/d/1BP3Tzvo-NLiVXQHPeqocHGODzHvGKulL/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 3130
+priceFrom: 3715
 currency: USD
-priceNote: $3130
+priceNote: $3715
 hero:
   src: /media/tours/brazil-coffee-tour-ru/hero-enhanced-20261006.webp
   hover: "Ветви кофейного растения с красными ягодами среди листьев"

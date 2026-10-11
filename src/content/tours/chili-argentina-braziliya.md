@@ -343,9 +343,9 @@ sourceUrl: https://brasiltours.ru/chili-argentina-braziliya
 sourceSnapshot: https://drive.google.com/file/d/18c-fphKy6KmVi3eOSqw-fONi-LlNjUKL/view?usp=drivesdk
 durationDays: 15
 durationNights: 14
-priceFrom: 4763
+priceFrom: 5979
 currency: USD
-priceNote: $4763
+priceNote: $5979
 hero:
   src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
   alt: Чили-Аргентина- Бразилия

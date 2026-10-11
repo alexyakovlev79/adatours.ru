@@ -129,9 +129,9 @@ sourceUrl: https://brasiltours.ru/udivitelnaya-salta
 sourceSnapshot: https://drive.google.com/file/d/1lrqPzp5gUgCeeTN0nXOtWudcSU7U6elI/view?usp=drivesdk
 durationDays: 5
 durationNights: 4
-priceFrom: 3110
+priceFrom: 2191
 currency: USD
-priceNote: $3110
+priceNote: $2191
 hero:
   src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
   alt: Удивительная Сальта

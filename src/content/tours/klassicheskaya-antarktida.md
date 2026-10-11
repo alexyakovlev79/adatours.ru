@@ -134,9 +134,9 @@ sourceUrl: https://brasiltours.ru/klassicheskaya-antarktida
 sourceSnapshot: https://drive.google.com/file/d/1wImr5jCO0TvA1AT_dZMeZvPF0XzBLG4Y/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 11495
+priceFrom: 15995
 currency: USD
-priceNote: $11495
+priceNote: $15995
 hero:
   src: "/media/tours/klassicheskaya-antarktida/hero-src-enhanced-20261007.webp"
   alt: Классическая Антарктида

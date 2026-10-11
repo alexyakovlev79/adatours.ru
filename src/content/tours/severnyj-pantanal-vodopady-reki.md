@@ -108,9 +108,9 @@ sourceUrl: https://brasiltours.ru/severnyj-pantanal-vodopady-reki
 sourceSnapshot: https://drive.google.com/file/d/1asX6WIuv3tSEV71JQQa-Q7iuKOzZkGic/view?usp=drivesdk
 durationDays: 5
 durationNights: 4
-priceFrom: 4016
+priceFrom: 4595
 currency: USD
-priceNote: $4016
+priceNote: $4595
 hero:
   src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
   alt: 'На фото: Заповедник в Пантанале'

@@ -176,9 +176,9 @@ sourceUrl: https://brasiltours.ru/rio-de-zhanejro-amazoniya-vodopady-iguasu
 sourceSnapshot: https://drive.google.com/file/d/1uPOyyV2NRTHMklYYX4uaG2lEw4GRgutS/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 3644
+priceFrom: 3453
 currency: USD
-priceNote: $3644
+priceNote: $3453
 hero:
   src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
   alt: Рио-де-Жанейро - Амазония - Водопады Игуасу

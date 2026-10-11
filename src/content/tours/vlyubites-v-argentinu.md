@@ -293,9 +293,9 @@ sourceUrl: https://brasiltours.ru/vlyubites-v-argentinu
 sourceSnapshot: https://drive.google.com/file/d/1Lc-exxPA9YxnTOx3Pr_YZ50SfogO38xu/view?usp=drivesdk
 durationDays: 15
 durationNights: 14
-priceFrom: 4981
+priceFrom: 5375
 currency: USD
-priceNote: $4981
+priceNote: $5375
 hero:
   src: /media/tours/vlyubites-v-argentinu/hero-enhanced-20261006.webp
   alt: 'на фото: Перито морено ледник, Аргентина'

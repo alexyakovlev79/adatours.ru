@@ -307,16 +307,16 @@ notIncluded:
 notes:
 - Ada Tours может заменить указанные отели на другие отели той же категории.
 - Порядок экскурсий может быть изменен при сохранении программы тура.
-- Стоимость $3269 указана на 1 человека при размещении DBL в отеле 4* для группы из 3 человек.
+- Стоимость $3320 указана на 1 человека при размещении DBL в отеле 4* для группы из 3 человек.
 - Ada Tours не несет ответственности за завтраки в отелях, пропущенные из-за раннего выселения при раннем перелете или ранней экскурсии.
 updatedAt: '2026-10-02'
 sourceUrl: https://brasiltours.ru/luchshee-v-brazilii-za-9-dnej
 sourceSnapshot: https://drive.google.com/file/d/1YqQzUan5WOg1NkMGWIqDIR9dfXpwksX8/view?usp=drivesdk
 durationDays: 9
 durationNights: 8
-priceFrom: 3269
+priceFrom: 3320
 currency: USD
-priceNote: $3269
+priceNote: $3320
 hero:
   src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-05-enhanced-20261001.webp
   alt: Лучшее в Бразилии за 9 дней

@@ -33,7 +33,7 @@ route:
   - Сальвадор
   - Прайя-ду-Форте
   - Фоз-ду-Игуасу
-priceFrom: 6289
+priceFrom: 7357
 currency: USD
 dates: []
 hero:

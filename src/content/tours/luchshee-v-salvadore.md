@@ -138,9 +138,9 @@ sourceUrl: https://brasiltours.ru/luchshee-v-salvadore
 sourceSnapshot: https://drive.google.com/file/d/1owqQ_x0660S9nI568hb23wKbldkVVeeB/view?usp=drivesdk
 durationDays: 6
 durationNights: 5
-priceFrom: 2700
+priceFrom: 1582
 currency: USD
-priceNote: $2700
+priceNote: $1582
 hero:
   src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
   alt: 'На фото: Сан-Сальвадор столица Сальвадора'

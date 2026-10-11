@@ -346,7 +346,7 @@ included:
 - Трансфер отель - Самбадром - отель.
 notIncluded:
 - Дополнительные экскурсии.
-- 'Внутренний перелет Рио-де-Жанейро - Игуасу - Кампу-Гранди - Рио-де-Жанейро: от USD 800.'
+- 'Внутренний перелет Рио-де-Жанейро - Игуасу - Кампу-Гранди - Рио-де-Жанейро: от USD 950.'
 - Международные перелеты.
 - Еда и напитки во время переездов.
 notes:
@@ -358,9 +358,9 @@ sourceUrl: https://brasiltours.ru/ekzoticheskij-koktejl-na-parad-chempionov-karn
 sourceSnapshot: https://drive.google.com/file/d/1Ta1xE-7Re-XRr-3WhHQL3O3okhjVP_OK/view?usp=drivesdk
 durationDays: 13
 durationNights: 12
-priceFrom: 4230
+priceFrom: 7140
 currency: USD
-priceNote: $4230
+priceNote: $7140
 hero:
   src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/hero-enhanced-20261006.webp
   alt: 'На фото: залив Гуанабара в Рио-де-Жанейро, Бразилия'

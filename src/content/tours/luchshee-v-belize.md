@@ -175,9 +175,9 @@ sourceUrl: https://brasiltours.ru/luchshee-v-belize
 sourceSnapshot: https://drive.google.com/file/d/11o2mCNEWqKiSHi1psCwZLD_oHWfOImMo/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 3888
+priceFrom: 3853
 currency: USD
-priceNote: $3888
+priceNote: $3853
 hero:
   src: /media/tours/luchshee-v-belize/hero-enhanced-20261006.webp
   alt: Лучшее в Белизе

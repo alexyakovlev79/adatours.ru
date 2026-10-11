@@ -46,7 +46,7 @@ route:
   - "Ушуайя"
   - "Игуасу"
   - "Буэнос-Айрес"
-priceFrom: 3375
+priceFrom: 4216
 currency: USD
 dates: []
 hero:

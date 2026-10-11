@@ -143,9 +143,9 @@ sourceUrl: https://brasiltours.ru/karnaval-v-rio-de-zhanejro
 sourceSnapshot: https://drive.google.com/file/d/1VuTQLblKIbgW0Avy56cmSzB8Fo_dArJB/view?usp=drivesdk
 durationDays: 5
 durationNights: 4
-priceFrom: 2200
+priceFrom: 2338
 currency: USD
-priceNote: $2200
+priceNote: $2338
 hero:
   src: "/media/tours/karnaval-v-rio-de-zhanejro/hero-enhanced-20261007.webp"
   alt: Девушка на карнавале в Рио, Бразилия

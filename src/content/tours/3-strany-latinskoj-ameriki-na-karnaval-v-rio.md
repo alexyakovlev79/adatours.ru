@@ -284,9 +284,9 @@ sourceUrl: https://brasiltours.ru/3-strany-latinskoj-ameriki-na-karnaval-v-rio
 sourceSnapshot: https://drive.google.com/file/d/1-6QN46JhKzXcFlNgMpeJ2XhOV2rJlIQ7/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 4639
+priceFrom: 4638
 currency: USD
-priceNote: $4639
+priceNote: $4638
 hero:
   src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/hero-enhanced-20261006.webp
   alt: Девушка в синем карнавальном костюме на карнавале в Рио

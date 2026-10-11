@@ -195,9 +195,9 @@ sourceUrl: https://brasiltours.ru/priklyuchenie-v-gvianakh
 sourceSnapshot: https://drive.google.com/file/d/1xCoAFBBGW79lXf7HJxVRUpiP0JhPhxBa/view?usp=drivesdk
 durationDays: 9
 durationNights: 8
-priceFrom: 5563
+priceFrom: 5887
 currency: USD
-priceNote: $5563
+priceNote: $5887
 hero:
   src: "/media/tours/priklyuchenie-v-gvianakh/hero-src-enhanced-20261007.webp"
   hover: "Фонтан и цветник на площади перед зданием с башенками"

@@ -438,9 +438,9 @@ sourceUrl: https://brasiltours.ru/vip-tur-v-braziliyu-s-amazoniej-16-dnej
 sourceSnapshot: https://drive.google.com/file/d/1YEp8K7Nn0x7Am4HHJXikF3l7NFaMCvJY/view?usp=drivesdk
 durationDays: 16
 durationNights: 15
-priceFrom: 38291
+priceFrom: 30633
 currency: USD
-priceNote: $38291
+priceNote: $30633
 hero:
   src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/hero-enhanced-20261006.webp
   alt: Вечерний закат на Копакабане, пляжный отдых в Рио-де-Жанейро, Бразилия

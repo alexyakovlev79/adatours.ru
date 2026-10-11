@@ -226,9 +226,9 @@ sourceUrl: https://brasiltours.ru/luchshee-v-paname
 sourceSnapshot: https://drive.google.com/file/d/1kVwGHm5QL8KoastuKrc64U-mSVPz_e4G/view?usp=drivesdk
 durationDays: 11
 durationNights: 10
-priceFrom: 2461
+priceFrom: 3458
 currency: USD
-priceNote: $2461.
+priceNote: $3458.
 hero:
   src: "/media/tours/luchshee-v-paname/hero-src-enhanced-20261007.webp"
   alt: на фото:Панама - Сити

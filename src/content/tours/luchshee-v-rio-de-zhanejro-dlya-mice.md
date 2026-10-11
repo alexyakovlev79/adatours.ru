@@ -252,7 +252,7 @@ notIncluded:
 - Дополнительное питание.
 - Личные расходы.
 notes:
-- Стоимость $3340 указана на 1 человека при размещении TWIN для группы минимум 20 человек.
+- Стоимость $3871 указана на 1 человека при размещении TWIN для группы минимум 20 человек.
 - Ada Tours может заменить указанный отель на другой отель той же категории.
 - Порядок экскурсий может быть изменен при сохранении программы тура.
 - Ada Tours не несет ответственности за завтраки в отеле, пропущенные из-за раннего выселения при раннем перелете или ранней экскурсии.
@@ -261,9 +261,9 @@ sourceUrl: https://brasiltours.ru/luchshee-v-rio-de-zhanejro-dlya-mice
 sourceSnapshot: https://drive.google.com/file/d/1jbxBjbDsInRUgUvDjB231ysqFccHA0_H/view?usp=drivesdk
 durationDays: 6
 durationNights: 5
-priceFrom: 3340
+priceFrom: 3871
 currency: USD
-priceNote: $3340
+priceNote: $3871
 hero:
   src: /media/tours/luchshee-v-rio-de-zhanejro-dlya-mice/hero-enhanced-20261006.webp
   alt: 'На фото: Рио-де-Жанейро с высоты птичьего полёта'

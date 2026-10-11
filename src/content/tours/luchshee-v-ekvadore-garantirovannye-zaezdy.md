@@ -531,7 +531,7 @@ included:
 notIncluded:
 - Международные перелеты.
 - Медицинская страховка и страховка путешествия.
-- Перелет Guayaquil - Галапагосские острова - Quito или Guayaquil, $515 на человека.
+- Перелет Guayaquil - Галапагосские острова - Quito или Guayaquil, $575 на человека.
 - Вход в Национальный парк Галапагос, $200 на человека.
 - Для детей младше 12 лет на вход в Национальный парк Галапагос действует скидка 50%.
 - Миграционная карточка INGALA, $20 на человека.
@@ -553,9 +553,9 @@ sourceUrl: https://brasiltours.ru/luchshee-v-ekvadore-garantirovannye-zaezdy
 sourceSnapshot: https://drive.google.com/file/d/1SxPxzqT7NwWYYmWTH_h4F4acLfqEHrrF/view?usp=drivesdk
 durationDays: 11
 durationNights: 10
-priceFrom: 3965
+priceFrom: 3995
 currency: USD
-priceNote: $3965
+priceNote: $3995
 hero:
   src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
   alt: 'Лучшее в Эквадоре: Гарантированные заезды'

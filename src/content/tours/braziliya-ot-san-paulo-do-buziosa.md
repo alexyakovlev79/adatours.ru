@@ -210,9 +210,9 @@ sourceUrl: https://brasiltours.ru/braziliya-ot-san-paulo-do-buziosa
 sourceSnapshot: https://drive.google.com/file/d/1IJ6XNS0PXshrmt6C3RBM8OSWdEbRw9DH/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 3889
+priceFrom: 4687
 currency: USD
-priceNote: $3889
+priceNote: $4687
 hero:
   src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-9-enhanced-20261006.webp
   alt: Бразилия от Сан Пауло до Бузиоса

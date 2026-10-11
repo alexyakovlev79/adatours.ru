@@ -246,9 +246,9 @@ sourceUrl: https://brasiltours.ru/tur-v-krasochnuyu-braziliyu-2022
 sourceSnapshot: https://drive.google.com/file/d/1yZ3_MGaKbpS6qCKMNbPAYL54Hf-e-Yvf/view?usp=drivesdk
 durationDays: 14
 durationNights: 13
-priceFrom: 3589
+priceFrom: 4326
 currency: USD
-priceNote: $3589
+priceNote: $4326
 hero:
   src: /media/tours/braziliya-argentina-gruppovoj-tur/itinerary-day-8-enhanced-20261006.webp
   alt: 'на фото: город Ресифе Бразилия'

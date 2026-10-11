@@ -164,9 +164,9 @@ sourceUrl: https://brasiltours.ru/chili-kosmicheskoe-puteshestvie-na-zemle
 sourceSnapshot: https://drive.google.com/file/d/1TmhuHeFCJQI9NsauVVqkAf0BUuW2PXCY/view?usp=drivesdk
 durationDays: 6
 durationNights: 5
-priceFrom: 3538
+priceFrom: 3892
 currency: USD
-priceNote: $3538
+priceNote: $3892
 hero:
   src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/hero-enhanced-20261006.webp
   hover: "Атакама в Чили: скалы и горные вершины в закатном свете"

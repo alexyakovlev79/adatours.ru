@@ -296,9 +296,9 @@ sourceUrl: https://brasiltours.ru/led-solntse-i-kraj-zemli
 sourceSnapshot: https://drive.google.com/file/d/1mrVZ9oJhPb0hlfrnJILLXx1rz7dWJgot/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 3761
+priceFrom: 4175
 currency: USD
-priceNote: $3761
+priceNote: $4175
 hero:
   src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
   alt: 'на фото: Эль Калафате'

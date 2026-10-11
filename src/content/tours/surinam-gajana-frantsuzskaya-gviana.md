@@ -269,9 +269,9 @@ sourceUrl: https://brasiltours.ru/surinam-gajana-frantsuzskaya-gviana
 sourceSnapshot: https://drive.google.com/file/d/1jySmaHVY8Xa9NCIPntO-cLOcqVRoawqR/view?usp=drivesdk
 durationDays: 14
 durationNights: 13
-priceFrom: 10760
+priceFrom: 10312
 currency: USD
-priceNote: $10760
+priceNote: $10312
 hero:
   src: /media/tours/surinam-gajana-frantsuzskaya-gviana/hero-enhanced-20261006.webp
   alt: Суринам, Гайана, Французская Гвиана

@@ -126,9 +126,9 @@ sourceUrl: https://brasiltours.ru/beliz-san-pedro-ostrov-ambergris-kaje
 sourceSnapshot: https://drive.google.com/file/d/1yF0mFa1WfcwM7CbaIKanfBJaYNbrX25-/view?usp=drivesdk
 durationDays: 5
 durationNights: 4
-priceFrom: 1674
+priceFrom: 1730
 currency: USD
-priceNote: $1674
+priceNote: $1730
 hero:
   src: /media/tours/beliz-san-pedro-ostrov-ambergris-kaje/hero-enhanced-20261006.webp
   alt: Белиз:Сан-Педро, Остров Амбергрис Кайе

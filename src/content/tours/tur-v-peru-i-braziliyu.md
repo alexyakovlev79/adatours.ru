@@ -300,9 +300,9 @@ sourceUrl: https://brasiltours.ru/tur-v-peru-i-braziliyu
 sourceSnapshot: https://drive.google.com/file/d/1i3aSiqKDd0WmCOE-WK9i_b8dRO00Avi0/view?usp=drivesdk
 durationDays: 13
 durationNights: 12
-priceFrom: 5529
+priceFrom: 6048
 currency: USD
-priceNote: $5529
+priceNote: $6048
 hero:
   src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
   alt: 'На фото: город инков Мачу Пикчу в Перу'

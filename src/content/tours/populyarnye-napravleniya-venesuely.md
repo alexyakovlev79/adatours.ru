@@ -304,9 +304,9 @@ sourceUrl: https://brasiltours.ru/populyarnye-napravleniya-venesuely
 sourceSnapshot: https://drive.google.com/file/d/1hwNJZa2VqN_DMRQGrGEw8lCLagBWx3Ya/view?usp=drivesdk
 durationDays: 12
 durationNights: 11
-priceFrom: 5421
+priceFrom: 4744
 currency: USD
-priceNote: $5421
+priceNote: $4744
 hero:
   src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp"
   alt: Популярные Направления Венесуэлы

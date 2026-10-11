@@ -153,9 +153,9 @@ sourceUrl: https://brasiltours.ru/pantanal-bonito
 sourceSnapshot: https://drive.google.com/file/d/1Mdv3qmbFO5FGFAmHJ4dGyENVv1nSUN3n/view?usp=drivesdk
 durationDays: 6
 durationNights: 5
-priceFrom: 2040
+priceFrom: 3993
 currency: USD
-priceNote: $2040
+priceNote: $3993
 hero:
   src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
   alt: Пантанал & Бонито

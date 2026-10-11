@@ -424,9 +424,9 @@ sourceUrl: https://brasiltours.ru/vip-tur-v-braziliyu-s-bonito-16-dnej
 sourceSnapshot: https://drive.google.com/file/d/1R0qaEbRlcQo6RVVV-vq0SId8oWp1ple5/view?usp=drivesdk
 durationDays: 16
 durationNights: 15
-priceFrom: 35306
+priceFrom: 28245
 currency: USD
-priceNote: $35306
+priceNote: $28245
 hero:
   src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/hero-enhanced-20261006.webp
   alt: Новогодний салют на пляже Копакабана в Рио, фейерверк над океаном

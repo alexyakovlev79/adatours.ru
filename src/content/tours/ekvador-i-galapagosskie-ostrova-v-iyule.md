@@ -110,8 +110,8 @@ included:
 notIncluded:
 - Международные перелеты.
 - Медицинская страховка / страховка путешествия.
-- 'Перелет Кито - Галапагосские острова - Кито или Гуаякиль: $515 на человека.'
-- 'Вход в Национальный парк Галапагос: $100 на человека. Для детей младше 12 лет скидка 50%.'
+- 'Перелет Кито - Галапагосские острова - Кито или Гуаякиль: $575 на человека.'
+- 'Вход в Национальный парк Галапагос: $200 на человека. Для детей младше 12 лет скидка 50%.'
 - 'Миграционная карточка ИНГАЛА: $20 на человека.'
 - Чаевые.
 - Личные расходы.
@@ -125,9 +125,9 @@ sourceUrl: https://brasiltours.ru/ekvador-i-galapagosskie-ostrova-v-iyule
 sourceSnapshot: https://drive.google.com/file/d/1TmM06w3ICwThboP2V37aujBDzd0FXD5W/view?usp=drivesdk
 durationDays: 8
 durationNights: 7
-priceFrom: 1986
+priceFrom: 1960
 currency: USD
-priceNote: $1986
+priceNote: $1960
 hero:
   src: "/media/excursions/ostrov-plasa/hero-src-enhanced-20261007.webp"
   alt: 'На фото: Морские котики на Галапагосских островах'

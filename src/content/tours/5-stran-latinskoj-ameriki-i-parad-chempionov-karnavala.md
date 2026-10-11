@@ -110,7 +110,7 @@ route:
 - Пуно, 1 ночь
 - Куско, 2 ночи
 - Лима, 1 ночь
-priceFrom: 9563.0
+priceFrom: 9562.0
 currency: USD
 hero:
   src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/itinerary-day-11-enhanced-20261006.webp

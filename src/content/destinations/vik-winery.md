@@ -1,7 +1,7 @@
 ---
 id: destination_chile_vik_winery
 locale: ru
-name: Винодельня VIK
+name: "Винодельня «Вик»"
 slug: vik-winery
 status: approved
 countryId: country_chile

@@ -1,7 +1,7 @@
 ---
 id: destination_colombia_guatavita_town
 locale: ru
-name: Гуатавита
+name: "Город Гуатавита"
 slug: guatavita-town
 status: approved
 countryId: country_colombia
@@ -18,7 +18,7 @@ searchAliases:
 - Городок Гуатавита
 - Guatavita town
 sourceSnapshot: data/source-index/materials/destination_colombia_guatavita_town.md
-updatedAt: '2026-10-10'
+updatedAt: '2026-10-11'
 ---
 
 В Гуатавите приятно сделать паузу после прогулки к одноименному озеру. Белые фасады, черепичные крыши и небольшие площади создают цельный облик городка. Здесь можно пройтись по улицам и заглянуть в местные лавки, прежде чем продолжить поездку по окрестностям Боготы.

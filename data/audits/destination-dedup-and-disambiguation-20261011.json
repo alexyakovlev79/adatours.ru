@@ -14,7 +14,8 @@
     "confirmedSameEntityDuplicates": 0,
     "deletedDestinationRecords": 0,
     "renamedStableIds": 0,
-    "redirectsRequired": 0
+    "redirectsRequired": 0,
+    "renamedPlaceNames": 5
   },
   "disambiguatedCandidatePairs": [
     {
@@ -116,6 +117,43 @@
       "tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh"
     ]
   },
-  "policy": "Одинаковое название не является доказательством дубля. Различать озеро и ледник, парк и гору, деревню и регион, город и остров по текстам туров, экскурсиям и географии. Публичные названия мест должны быть на русском, стабильные ID и URL не менять без отдельной миграции.",
-  "notes": "Подтвержденных дублей для удаления в исследованных кандидатах нет. Тексты отдельных мест с общим топонимом могут использовать общие фото; это само по себе не доказательство дублирования сущностей."
+  "policy": "Одинаковое название не является доказательством дубля. Различать озеро и ледник, парк и гору, деревню и регион, город и остров по текстам туров, экскурсиям и географии. Публичные названия мест должны быть на русском, стабильные ID и URL не менять без отдельной миграции. В уточняемых публичных названиях сохранять русские наименования; латинское написание бренда допускается в searchAliases.",
+  "notes": "Подтвержденных дублей для удаления в исследованных кандидатах нет. Тексты отдельных мест с общим топонимом могут использовать общие фото; это само по себе не доказательство дублирования сущностей.",
+  "russianNameClarifications": [
+    {
+      "id": "destination_colombia_guatavita_town",
+      "newName": "Город Гуатавита",
+      "stableIdPreserved": true,
+      "stableUrlPreserved": true,
+      "legacyNameRemainsAlias": true
+    },
+    {
+      "id": "destination_nicaragua_masaya",
+      "newName": "Город Масая",
+      "stableIdPreserved": true,
+      "stableUrlPreserved": true,
+      "legacyNameRemainsAlias": true
+    },
+    {
+      "id": "destination_panama_kolon",
+      "newName": "Город Колон",
+      "stableIdPreserved": true,
+      "stableUrlPreserved": true,
+      "legacyNameRemainsAlias": true
+    },
+    {
+      "id": "destination_brazil_viskondi_de_maua",
+      "newName": "Регион Висконди-де-Мауа",
+      "stableIdPreserved": true,
+      "stableUrlPreserved": true,
+      "legacyNameRemainsAlias": true
+    },
+    {
+      "id": "destination_chile_vik_winery",
+      "newName": "Винодельня «Вик»",
+      "stableIdPreserved": true,
+      "stableUrlPreserved": true,
+      "legacyNameRemainsAlias": true
+    }
+  ]
 }

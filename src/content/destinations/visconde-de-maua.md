@@ -3,11 +3,12 @@ id: destination_brazil_viskondi_de_maua
 locale: ru
 slug: visconde-de-maua
 status: approved
-name: Висконди-де-Мауа
+name: "Регион Висконди-де-Мауа"
 countryId: country_brazil
 destinationType: region
 summary: Висконди-де-Мауа объединяет горные тропы, реки, водопады и естественные бассейны среди зеленых склонов.
 searchAliases:
+- "Висконди-де-Мауа"
 - Висконде-де-Мауа
 - Visconde de Mauá
 - viskondi-de-maua
@@ -23,7 +24,7 @@ featuredExcursions: []
 featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_viskondi_de_maua.md
-updatedAt: '2026-10-08'
+updatedAt: '2026-10-11'
 ---
 
 Регион Висконди-де-Мауа известен горными тропами, реками и водопадами. У водных участков встречаются естественные бассейны, где путешественники проводят часть свободного дня.

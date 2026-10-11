@@ -1,7 +1,7 @@
 ---
 id: destination_nicaragua_masaya
 locale: ru
-name: Масая
+name: "Город Масая"
 slug: masaya
 status: approved
 countryId: country_nicaragua
@@ -14,10 +14,11 @@ gallery: []
 themes:
 - theme_culture
 searchAliases:
+- "Масая"
 - Масайя
 - Masaya
 sourceSnapshot: data/source-index/materials/destination_nicaragua_masaya.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
 
 Масая известна ремесленным рынком, где знакомятся с изделиями местных мастеров. Историческое здание рынка связано с городской жизнью и торговлей. Посещение позволяет увидеть никарагуанскую культуру через ручную работу и предметы, которые предлагают жители.

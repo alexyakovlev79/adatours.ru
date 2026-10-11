@@ -3,11 +3,12 @@ id: "destination_panama_kolon"
 locale: "ru"
 slug: colon
 status: "approved"
-name: "Колон"
+name: "Город Колон"
 countryId: "country_panama"
 destinationType: "city"
 summary: "Город на берегу океана с пляжами, барами и окружающими тропическими лесами. Колон предлагает спокойный отдых и вечерние развлечения."
-searchAliases: []
+searchAliases:
+- "Колон"
 hero: {"src":"/media/destinations/colon/hero-enhanced-20261005.webp","alt":"На фото: город Колон в Панаме"}
 gallery: [{"src":"/media/destinations/colon/gallery-1-enhanced-20261005.webp","alt":"Прибрежный посёлок у залива с лодками и зелёными островами", hover: "Посёлок у синей воды залива среди лесистых берегов"},{"src":"/media/destinations/colon/gallery-2-enhanced-20261005.webp","alt":"Женщина на велосипеде едет по дорожке у тропического леса", hover: "Велосипедная прогулка по дорожке среди густой зелени"},{"src":"/media/destinations/colon/gallery-3-enhanced-20261005.webp","alt":"Старинные каменные укрепления с башенкой у морского берега", hover: "Руины прибрежных укреплений на фоне зелени и моря"}]
 facts: []
@@ -17,7 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kolon-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1A6wfGcpW-l3ubodUTT-Ww_MM1XPgM2p4/view?usp=drivesdk"
-updatedAt: "2026-10-02"
+updatedAt: '2026-10-11'
 themes: ["theme_beach","theme_wildlife"]
 ---
 

@@ -10,6 +10,9 @@ export default defineConfig({
   site,
   base,
   output: 'static',
+  // Reuse CSS files across pages instead of repeating small sheets in every HTML file.
+  build: { inlineStylesheets: 'never' },
+  compressHTML: true,
   trailingSlash: 'always',
   prerenderConflictBehavior: 'error',
   integrations: [sitemap({ filter: (page) => !isLegacyRedirectPath(new URL(page).pathname, base) && !isArchivedPath(new URL(page).pathname, base) })],

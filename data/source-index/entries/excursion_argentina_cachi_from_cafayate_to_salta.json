@@ -4,7 +4,7 @@
   "sheet": {
     "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
     "sheetName": "Страницы",
-    "row": null
+    "row": 1438
   },
   "readiness": {
     "sources": "ready",
@@ -91,7 +91,13 @@
       "method": "exact_anna_docx",
       "driveMetadataVerified": true,
       "textBodyReviewed": true,
-      "verifiedAt": "2026-10-11"
+      "verifiedAt": "2026-10-11",
+      "geographicCorrection": {
+        "field": "Cachi elevation",
+        "original": "более 2500 метров",
+        "corrected": "2210 метров",
+        "source": "https://visitsalta.ar/valles-calchaquies/cachi/"
+      }
     },
     "sourceScope": "tour_excerpt",
     "provenance": {
@@ -104,12 +110,21 @@
     "theme_culture"
   ],
   "media": {
-    "images": [],
-    "status": "existing_enhanced_preserved",
+    "images": [
+      {
+        "url": "/media/destinations/cachi/hero-generated-20261011-p107-v1.webp",
+        "role": "hero",
+        "order": 1,
+        "alt": "Белые дома и мощеная улица Качи — иллюстрация GPT Image",
+        "origin": "gpt_image"
+      }
+    ],
+    "status": "ready",
     "sourceUrl": null,
     "provenance": {
-      "kind": "existing_canonical_media",
-      "parentTourId": "tour_argentina_grand_tour_15_days_2027"
+      "kind": "source_aware_selection",
+      "parentTourId": "tour_argentina_grand_tour_15_days_2027",
+      "createdAt": "2026-10-11"
     }
   },
   "status": "approved"

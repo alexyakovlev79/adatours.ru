@@ -106,7 +106,8 @@ const nestedGroups = NAV_LINKS
             <div
               class:list={[
                 'desktop-nav__submenu',
-                { 'desktop-nav__submenu--wide': children.length > 8 || link.href === '/vip/' },
+                { 'desktop-nav__submenu--wide': children.length > 8 || link.href === '/vip/',
+                  'desktop-nav__submenu--countries': link.href === '/country/' },
               ]}
               aria-label={link.label}
             >
@@ -450,6 +451,7 @@ const nestedGroups = NAV_LINKS
   }
 
   .desktop-nav__submenu {
+    --submenu-offset-x: -50%;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -465,7 +467,7 @@ const nestedGroups = NAV_LINKS
     box-shadow: 0 14px 30px rgb(19 20 18 / 12%);
     opacity: 0;
     visibility: hidden;
-    transform: translate(-50%, -6px);
+    transform: translate(var(--submenu-offset-x), -6px);
     transition:
       opacity 180ms var(--ease-out),
       transform 180ms var(--ease-out),
@@ -475,6 +477,12 @@ const nestedGroups = NAV_LINKS
   .desktop-nav__submenu--wide {
     grid-template-columns: repeat(2, minmax(190px, 1fr));
     min-width: min(520px, calc(100vw - 40px));
+  }
+
+  /* Anchor the first wide menu below its link, clear of the viewport's left edge. */
+  .desktop-nav__submenu--countries {
+    --submenu-offset-x: 0%;
+    left: 0;
   }
 
   .desktop-nav__submenu a {
@@ -503,7 +511,7 @@ const nestedGroups = NAV_LINKS
   .desktop-nav__group:has(a:focus-visible) .desktop-nav__submenu {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, 0);
+    transform: translate(var(--submenu-offset-x), 0);
   }
 
   .desktop-cta {

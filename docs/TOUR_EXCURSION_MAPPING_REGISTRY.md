@@ -1568,3 +1568,20 @@ Word: https://docs.google.com/document/d/16Yho_hI1w_jZ1yah_LrAH8cKU0V5Wddt/edit.
 ## P096 · tour_brazil_best_rio_express_six_days · 2026-10-11
 
 6 numbered days; 3 modules on original positions: after day 2 `excursion_rio_corcovado_train_christ`, after day 3 `excursion_rio_sugarloaf_urca_four_hours`, after day 4 `excursion_angra_ilha_grande_day_trip_from_rio`. Numbered days retain meals, hotel nights, transfer and tour-specific panorama details. Boat module is a distinct guided six-hour program without unsupported lunch or Blue Lagoon stops. All 10 hero/program images are distinct. Content prepared; publication tracked in exact entry and Drive inventory.
+
+
+## P102 · Мексика Линдо, 8 дней / 7 ночей · 2026-10-11
+
+P102: новый вариант 8 дней/7 ночей, 4 ночи в Мехико и 3 в Мериде, Сочимилько 12 ч, сеноты Санта-Барбары, Кабах. Старый tour_source_meksika_lindo — 6 дней, не закрывает этот Word; гастрономические варианты имеют другой маршрут. Четыре модуля точно сопоставлены и переиспользованы. Пешеходная Мерида и Ушмаль с Кабахом созданы; существующий uxmal_cenote не посещает Кабах. Сочимилько 12 ч выделен отдельно от подтвержденного 10-часового продукта; действующие экскурсии не изменены.
+
+Источник: https://docs.google.com/document/d/1m3seHdUa3XZ9uxw6bBi_v3BUC84fJUo2/edit. Все 7 модулей включены; номерные дни сохраняют ночевки, питание, расписание и ограничения именно этого тура. Последние три города — альтернативные точки высадки, не одновременный маршрут.
+
+| tour_id | excursion_id | Позиция | Канонизация |
+|---|---|---|---|
+| `tour_mexico_lindo_eight_days` | `excursion_mexico_mexico_city_history_anthropology` | После дня 2 | Переиспользована существующая |
+| `tour_mexico_lindo_eight_days` | `excursion_mexico_teotihuacan_guadalupe` | После дня 3 | Переиспользована существующая |
+| `tour_mexico_lindo_eight_days` | `excursion_mexico_xochimilco_south_twelve_hours` | После дня 4 | Создана из Word |
+| `tour_mexico_lindo_eight_days` | `excursion_mexico_merida_walking` | После дня 5 | Создана из Word |
+| `tour_mexico_lindo_eight_days` | `excursion_mexico_uxmal_kabah_cenote` | После дня 6 | Создана из Word |
+| `tour_mexico_lindo_eight_days` | `excursion_mexico_santa_barbara_cenotes` | После дня 7 | Переиспользована существующая |
+| `tour_mexico_lindo_eight_days` | `excursion_mexico_chichen_itza_valladolid_caribbean` | После дня 8 | Переиспользована существующая |

@@ -1585,3 +1585,28 @@ P102: новый вариант 8 дней/7 ночей, 4 ночи в Мехи�
 | `tour_mexico_lindo_eight_days` | `excursion_mexico_uxmal_kabah_cenote` | После дня 6 | Создана из Word |
 | `tour_mexico_lindo_eight_days` | `excursion_mexico_santa_barbara_cenotes` | После дня 7 | Переиспользована существующая |
 | `tour_mexico_lindo_eight_days` | `excursion_mexico_chichen_itza_valladolid_caribbean` | После дня 8 | Переиспользована существующая |
+
+
+## P118 · Лучшее в Аргентине, 14 дней / 13 ночей · 2026-10-11
+
+Источник: https://docs.google.com/document/d/14AcwXEAKWk0aL6yHNJEb57BumCn0aK19/edit. 14 номерных дней, 17 самостоятельных модулей: 10 переиспользованы, 7 созданы из Word. Тарифы 2026 года и условия конкретного тура сохранены в номерных днях; разные языки/форматы и маршруты с двух сторон Игуасу выделены в отдельные канонические продукты.
+
+| tour_id | excursion_id | Позиция | Канонизация |
+|---|---|---|---|
+| `tour_argentina_best_14_days` | `excursion_buenos_aires_historic_districts_russian_private` | После дня 2, вставка 1 | Создана из Word |
+| `tour_argentina_best_14_days` | `excursion_buenos_aires_tango_show_dinner` | После дня 2, вставка 2 | Переиспользована существующая |
+| `tour_argentina_best_14_days` | `excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa` | После дня 3, вставка 1 | Переиспользована существующая |
+| `tour_argentina_best_14_days` | `excursion_source_ekskursiya_po_montevideo` | После дня 3, вставка 2 | Переиспользована существующая |
+| `tour_argentina_best_14_days` | `excursion_source_fiesta_gaucho` | После дня 3, вставка 3 | Переиспользована существующая |
+| `tour_argentina_best_14_days` | `excursion_perito_moreno_full_day_bus` | После дня 5, вставка 1 | Переиспользована существующая |
+| `tour_argentina_best_14_days` | `excursion_el_calafate_ice_trekking_perito_moreno` | После дня 5, вставка 2 | Переиспользована существующая |
+| `tour_argentina_best_14_days` | `excursion_tierra_del_fuego_english_group` | После дня 7, вставка 1 | Создана из Word |
+| `tour_argentina_best_14_days` | `excursion_martillo_penguin_walk` | После дня 7, вставка 2 | Создана из Word |
+| `tour_argentina_best_14_days` | `excursion_bariloche_circuito_chico` | После дня 9, вставка 1 | Создана из Word |
+| `tour_argentina_best_14_days` | `excursion_victoria_island_arrayanes_catamaran` | После дня 9, вставка 2 | Создана из Word |
+| `tour_argentina_best_14_days` | `excursion_iguazu_argentine_full_day_russian_private` | После дня 11, вставка 1 | Создана из Word |
+| `tour_argentina_best_14_days` | `excursion_iguazu_gran_aventura` | После дня 11, вставка 2 | Переиспользована существующая |
+| `tour_argentina_best_14_days` | `excursion_iguazu_brazil_half_day_russian_private` | После дня 12, вставка 1 | Создана из Word |
+| `tour_argentina_best_14_days` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | После дня 12, вставка 2 | Переиспользована существующая |
+| `tour_argentina_best_14_days` | `excursion_source_makuko_safari` | После дня 12, вставка 3 | Переиспользована существующая |
+| `tour_argentina_best_14_days` | `excursion_iguazu_helicopter_falls` | После дня 12, вставка 4 | Переиспользована существующая |

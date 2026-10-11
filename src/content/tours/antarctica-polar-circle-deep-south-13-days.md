@@ -44,7 +44,7 @@ themes:
 - theme_culture
 audiences:
 - group
-format: Экспедиционный круиз
+format: Экспедиция
 durationDays: 13
 durationNights: 12
 route:

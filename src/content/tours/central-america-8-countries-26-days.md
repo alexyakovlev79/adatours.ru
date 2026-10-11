@@ -135,7 +135,7 @@ primaryThemes:
 themes:
 - theme_adventure
 audiences: []
-format: Экскурсионное путешествие
+format: Экскурсии
 durationDays: 26
 durationNights: 25
 route:

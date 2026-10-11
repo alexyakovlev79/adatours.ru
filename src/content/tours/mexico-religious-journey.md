@@ -60,7 +60,7 @@ routeDestinations:
 primaryThemes:
 - theme_culture
 themes: []
-format: Паломнический тур
+format: Паломничество
 durationDays: 7
 durationNights: 6
 route:

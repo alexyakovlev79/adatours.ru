@@ -139,7 +139,7 @@ themes:
 - theme_gastronomy_wine
 - theme_adventure
 - theme_beach
-format: Индивидуальный VIP-тур
+format: Частный VIP
 durationDays: 17
 durationNights: 16
 route:

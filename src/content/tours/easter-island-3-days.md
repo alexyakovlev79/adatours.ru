@@ -31,7 +31,7 @@ routeDestinations: *id001
 primaryThemes:
 - theme_culture
 themes: []
-format: Индивидуальный
+format: Частный
 durationDays: 3
 durationNights: 2
 route:

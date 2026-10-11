@@ -79,7 +79,7 @@ primaryThemes:
 - theme_culture
 themes: []
 audiences: []
-format: Индивидуально и в группе
+format: Смешанный
 durationDays: 14
 durationNights: 13
 route:

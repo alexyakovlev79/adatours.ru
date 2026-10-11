@@ -81,7 +81,7 @@ themes:
 - theme_cruises
 audiences:
 - vip
-format: Индивидуальный
+format: Частный
 durationDays: 16
 durationNights: 15
 route:

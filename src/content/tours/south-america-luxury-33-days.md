@@ -218,7 +218,7 @@ themes:
 - theme_wildlife
 - theme_adventure
 - theme_gastronomy_wine
-format: Индивидуальное путешествие с круизом и поездами Belmond
+format: Частный
 durationDays: 33
 durationNights: 32
 route:

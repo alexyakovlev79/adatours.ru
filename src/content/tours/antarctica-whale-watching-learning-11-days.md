@@ -26,7 +26,7 @@ themes:
 - theme_adventure
 audiences:
 - group
-format: Экспедиционный круиз
+format: Экспедиция
 durationDays: 11
 durationNights: 10
 route:

@@ -25,7 +25,7 @@ primaryThemes:
 - theme_cruises
 themes: []
 audiences: []
-format: Индивидуальный тур
+format: Частный
 durationDays: 3
 durationNights: 2
 route:

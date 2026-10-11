@@ -106,7 +106,7 @@ primaryThemes:
 themes:
 - theme_culture
 - theme_cruises
-format: Тур с групповыми экскурсиями и частной лодкой
+format: Смешанный
 durationDays: 9
 durationNights: 8
 route:

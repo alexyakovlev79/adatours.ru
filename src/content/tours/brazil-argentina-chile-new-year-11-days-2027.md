@@ -66,7 +66,7 @@ themes:
 - theme_wildlife
 - theme_gastronomy_wine
 audiences: []
-format: Групповой тур
+format: Групповой
 durationDays: 11
 durationNights: 10
 route:

@@ -12,13 +12,17 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_chile_dolina_majpo
 relatedDestinations:
 - destination_chile_santyago_de_chili
 destinationName: Долина Майпо
 sourceSnapshot: https://drive.google.com/file/d/1Ishh33VjYfqp8WOQwnpgPzhCxE8drOpI/view?usp=drivesdk
-themes: ["theme_gastronomy_wine"]
+themes:
+- theme_gastronomy_wine
+hero:
+  src: /media/destinations/maipo-valley/hero-generated-20261008.webp
+  alt: Долина Майпо
 ---
 
 Вы посетите винодельню, виноградники и погреба, познакомитесь с местными сортами и продегустируете премиальные вина на фоне Анд.

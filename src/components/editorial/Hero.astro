@@ -19,6 +19,8 @@ interface Props {
   tour?: boolean;
   vip?: boolean;
   contentSized?: boolean;
+  mobilePhotoLead?: boolean;
+  imagePositionMobile?: string;
   meta?: string;
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
@@ -38,6 +40,8 @@ const {
   tour = false,
   vip = false,
   contentSized = false,
+  mobilePhotoLead = false,
+  imagePositionMobile,
   meta,
   mediaStatus,
   replacementReason,
@@ -49,7 +53,8 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
 ---
 
 <section
-  class:list={['hero', { 'hero--compact': compact, 'hero--home': home, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized, 'hero--with-breadcrumbs': hasBreadcrumbs }]}
+  class:list={['hero', { 'hero--compact': compact, 'hero--home': home, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized, 'hero--photo-lead': mobilePhotoLead, 'hero--with-breadcrumbs': hasBreadcrumbs }]}
+  style={imagePositionMobile ? { '--hero-image-position-mobile': imagePositionMobile } : undefined}
   data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
@@ -356,6 +361,44 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
       background:
         linear-gradient(90deg, rgb(10 20 24 / 30%), rgb(10 20 24 / 15%)),
         linear-gradient(180deg, rgb(15 16 14 / 9%) 0%, rgb(15 16 14 / 36%) 48%, rgb(15 16 14 / 29%) 100%);
+    }
+  }
+
+  /* On selected phone covers, keep the subject above the copy and fade into ink. */
+  @media (max-width: 720px) {
+    .hero--photo-lead {
+      background: var(--color-ink-deep);
+    }
+
+    .hero--photo-lead .hero__media {
+      height: clamp(270px, 90vw, 420px);
+      object-position: var(--hero-image-position-mobile, center);
+    }
+
+    .hero--photo-lead .hero__overlay {
+      bottom: auto;
+      height: clamp(270px, 90vw, 420px);
+      background: linear-gradient(
+        180deg,
+        rgb(15 16 14 / 16%) 0%,
+        rgb(15 16 14 / 4%) 46%,
+        rgb(19 20 18 / 42%) 70%,
+        var(--color-ink-deep) 100%
+      );
+    }
+
+    .hero--photo-lead .hero__content {
+      justify-content: flex-start;
+      padding-top: max(calc(var(--header-h) + 140px), 66vw);
+      padding-bottom: 30px;
+    }
+
+    .hero--photo-lead h1 {
+      margin-bottom: 22px;
+    }
+
+    .hero--photo-lead .hero__bottom {
+      gap: 22px;
     }
   }
 

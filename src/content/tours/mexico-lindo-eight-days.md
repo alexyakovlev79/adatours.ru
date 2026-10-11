@@ -45,7 +45,7 @@ themes:
 - theme_wildlife
 - theme_adventure
 audiences: []
-format: Экскурсии + частные трансферы
+format: "Экскурсии"
 durationDays: 8
 durationNights: 7
 route:

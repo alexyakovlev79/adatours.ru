@@ -49,7 +49,7 @@ themes:
 audiences:
 - couples
 - groups
-format: "Группа / частный тур"
+format: "На выбор"
 durationDays: 12
 durationNights: 11
 route:

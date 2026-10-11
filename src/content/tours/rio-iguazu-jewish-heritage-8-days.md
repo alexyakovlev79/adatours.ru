@@ -26,7 +26,7 @@ routeDestinations:
 primaryThemes: [theme_culture, theme_wildlife]
 themes: []
 audiences: []
-format: "Группа + трансферы"
+format: "Смешанный"
 durationDays: 8
 durationNights: 7
 route: [Рио-де-Жанейро, Фоз-ду-Игуасу, Аргентинская сторона Игуасу]

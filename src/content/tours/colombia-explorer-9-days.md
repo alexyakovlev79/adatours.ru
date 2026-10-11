@@ -49,7 +49,7 @@ themes:
 - theme_adventure
 - theme_beach
 audiences: []
-format: "Частный + общий катер"
+format: "Смешанный"
 durationDays: 9
 durationNights: 8
 route:

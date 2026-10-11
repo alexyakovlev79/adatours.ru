@@ -20,7 +20,7 @@ primaryThemes:
 themes:
 - theme_wildlife
 audiences: []
-format: "Экскурсии + трансферы"
+format: "Экскурсии"
 durationDays: 6
 durationNights: 5
 route:

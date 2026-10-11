@@ -16,7 +16,7 @@ destinations:
   - destination_argentina_kanon_atuel
 audiences:
   - private
-format: "Частный гастротур"
+format: "Гастротур"
 durationDays: 7
 durationNights: 6
 route:

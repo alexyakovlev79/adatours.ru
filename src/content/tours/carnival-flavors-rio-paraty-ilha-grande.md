@@ -32,7 +32,7 @@ themes:
 audiences:
 - groups
 - mice
-format: "Групповой тур"
+format: "Групповой"
 durationDays: 9
 durationNights: 8
 route:

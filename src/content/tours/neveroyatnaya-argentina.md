@@ -26,7 +26,7 @@ destinations:
 - destination_argentina_kanal_bigl
 - destination_argentina_ozero_fagnano
 audiences: []
-format: "Тур по Аргентине"
+format: "Обзорный"
 durationDays: 13
 durationNights: 12
 route:

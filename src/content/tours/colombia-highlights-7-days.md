@@ -35,7 +35,7 @@ primaryThemes:
 - theme_beach
 themes: []
 audiences: []
-format: "Частный + общий катер"
+format: "Смешанный"
 durationDays: 7
 durationNights: 6
 route:

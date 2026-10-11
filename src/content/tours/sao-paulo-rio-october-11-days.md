@@ -18,7 +18,7 @@ primaryThemes:
 - theme_culture
 themes:
 - theme_beach
-format: "Группа: 22 человека"
+format: "Групповой"
 durationDays: 11
 durationNights: 10
 route:

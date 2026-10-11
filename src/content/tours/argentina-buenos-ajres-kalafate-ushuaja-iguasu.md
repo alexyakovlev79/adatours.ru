@@ -37,7 +37,7 @@ routeDestinations:
   - destination_argentina_nacionalnyj_park_terra_del_fuego
 audiences:
   - private
-format: "Частный тур"
+format: "Частный"
 durationDays: 12
 durationNights: 11
 route:

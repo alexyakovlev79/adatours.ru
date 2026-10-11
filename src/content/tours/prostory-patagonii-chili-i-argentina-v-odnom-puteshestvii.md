@@ -22,7 +22,7 @@ destinations:
 - destination_chile_peschera_milodona
 audiences:
   - private
-format: "Частный тур"
+format: "Частный"
 durationDays: 8
 durationNights: 7
 route:

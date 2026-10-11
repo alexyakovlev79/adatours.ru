@@ -59,7 +59,7 @@ primaryThemes:
 - theme_wildlife
 themes: []
 audiences: []
-format: "Частный + катамаран"
+format: "Частный"
 durationDays: 10
 durationNights: 9
 route:

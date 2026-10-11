@@ -25,7 +25,7 @@ destinations:
 - destination_chile_hanga_roa
 audiences:
   - private
-format: "Активный тур"
+format: "Активный"
 durationDays: 12
 durationNights: 11
 route:

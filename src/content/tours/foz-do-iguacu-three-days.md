@@ -28,7 +28,7 @@ primaryThemes:
 themes:
 - theme_adventure
 audiences: []
-format: "Экскурсии + трансферы"
+format: "Экскурсии"
 durationDays: 3
 durationNights: 2
 route:

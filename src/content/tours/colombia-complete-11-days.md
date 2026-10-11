@@ -34,7 +34,7 @@ themes:
 - theme_adventure
 - theme_wildlife
 audiences: []
-format: "Частный тур"
+format: "Частный"
 durationDays: 11
 durationNights: 10
 route:

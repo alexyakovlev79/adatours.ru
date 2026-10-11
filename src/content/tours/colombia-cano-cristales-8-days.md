@@ -33,7 +33,7 @@ primaryThemes:
 themes:
   - "theme_culture"
 audiences: []
-format: "Частный тур"
+format: "Частный"
 durationDays: 8
 durationNights: 7
 route:

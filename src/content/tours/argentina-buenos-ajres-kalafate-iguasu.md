@@ -36,7 +36,7 @@ themes:
   - adventure
 audiences:
   - private
-format: "Частный тур"
+format: "Частный"
 durationDays: 10
 durationNights: 9
 route:

@@ -22,7 +22,7 @@ themes:
 - theme_wildlife
 audiences:
 - Корпоративные группы
-format: "Группа: 80 человек"
+format: "Групповой"
 durationDays: 6
 durationNights: 5
 route:

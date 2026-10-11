@@ -48,7 +48,7 @@ primaryThemes:
 themes:
 - theme_fishing
 audiences: []
-format: "Природный тур"
+format: "Эко-тур"
 durationDays: 8
 durationNights: 7
 route:

@@ -100,7 +100,7 @@ primaryThemes:
 themes:
 - theme_wildlife
 - theme_adventure
-format: "Частный тур"
+format: "Частный"
 audiences:
 - private
 durationDays: 19

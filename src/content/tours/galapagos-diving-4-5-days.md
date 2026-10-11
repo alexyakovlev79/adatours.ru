@@ -35,7 +35,7 @@ primaryThemes:
 - theme_diving
 - theme_wildlife
 themes: []
-format: "Дайвинг в группе"
+format: "Дайвинг"
 durationDays: 4
 durationNights: 3
 route:

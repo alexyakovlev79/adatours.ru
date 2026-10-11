@@ -24,7 +24,7 @@ themes:
 - theme_culture
 audiences:
 - VIP
-format: "Частный тур на двоих"
+format: "Для двоих"
 durationDays: 7
 durationNights: 6
 route:

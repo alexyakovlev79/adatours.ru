@@ -16,7 +16,7 @@ destinations:
   - destination_argentina_puerto_almansa
 audiences:
   - private
-format: "Однодневная рыбалка"
+format: "Рыбалка"
 durationDays: 1
 durationNights: 0
 route:

@@ -22,7 +22,7 @@ destinations:
   - destination_chile_ford_garibaldi
 audiences:
   - private
-format: "Круиз-экспедиция"
+format: "Круиз"
 durationDays: 9
 durationNights: 8
 route:

@@ -32,7 +32,7 @@ themes:
 audiences:
 - couples
 - groups
-format: "Тур от 2 человек"
+format: "От двоих"
 durationDays: 10
 durationNights: 9
 route:

@@ -249,7 +249,7 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_amazon
 - destination_brazil_buzios
-format: Групповой тур
+format: "Групповой"
 primaryThemes:
 - theme_events
 - theme_wildlife

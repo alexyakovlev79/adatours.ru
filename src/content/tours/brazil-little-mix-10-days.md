@@ -29,7 +29,7 @@ primaryThemes:
 - theme_beach
 themes: []
 audiences: []
-format: Экскурсии + пляжный отдых
+format: "Экскурсии"
 durationDays: 10
 durationNights: 9
 route:

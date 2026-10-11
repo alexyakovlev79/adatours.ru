@@ -30,7 +30,7 @@ destinations:
   - destination_argentina_puerto_iguasu
   - destination_brazil_iguacu
 audiences: []
-format: "Тур по Аргентине"
+format: "Обзорный"
 durationDays: 16
 durationNights: 15
 route:

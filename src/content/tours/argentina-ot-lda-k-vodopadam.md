@@ -34,7 +34,7 @@ routeDestinations:
   - destination_argentina_nacionalnyj_park_los_glasyares
 audiences:
   - private
-format: "Частный тур"
+format: "Частный"
 durationDays: 10
 durationNights: 9
 route:

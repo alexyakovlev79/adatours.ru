@@ -13,7 +13,7 @@ countries:
 destinations:
   - destination_brazil_rio
 audiences: [couples, private]
-format: Свадебный пакет
+format: "Свадебный"
 durationDays: 1
 route:
   - Рио-де-Жанейро

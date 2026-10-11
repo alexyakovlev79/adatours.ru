@@ -21,7 +21,7 @@ destinations:
   - destination_chile_puerto_vilyams
 audiences:
   - private
-format: "Круиз с перелетом"
+format: "Авиакруиз"
 durationDays: 6
 durationNights: 5
 route:

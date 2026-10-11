@@ -26,7 +26,7 @@ themes:
   - cruise
 audiences:
   - private
-format: "Круиз-экспедиция"
+format: "Круиз"
 durationDays: 6
 durationNights: 5
 route:

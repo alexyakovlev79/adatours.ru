@@ -205,7 +205,7 @@ routeCountries:
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_buzios
-format: "Групповой тур"
+format: "Групповой"
 primaryThemes:
 - theme_events
 - theme_beach

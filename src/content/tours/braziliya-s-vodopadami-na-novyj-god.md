@@ -198,7 +198,7 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
-format: Групповой тур
+format: "Групповой"
 primaryThemes:
 - theme_events
 - theme_wildlife

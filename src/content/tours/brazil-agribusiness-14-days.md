@@ -39,7 +39,7 @@ themes:
 audiences:
 - mice
 - groups
-format: "Деловой + экскурсии"
+format: "Деловой"
 durationDays: 14
 durationNights: 13
 route:

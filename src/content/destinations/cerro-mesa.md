@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: Гора Меса упоминается среди пейзажей обзорного маршрута к Торрес-дель-Пайне. Здесь горы соседствуют с озерами
   и открытой патагонской степью, а дорога каждый раз открывает новый вид на окружающие склоны.
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-14-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-14-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Гранитные башни Торрес-дель-Пайне над горным озером, Чили
   hover: Гранитные башни Торрес-дель-Пайне над горным озером, Чили
   status: approved

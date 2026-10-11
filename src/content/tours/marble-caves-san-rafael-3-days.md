@@ -41,7 +41,7 @@ currency: USD
 priceNote: 2 000 USD на человека при размещении и группе из 2 человек. Другие варианты расчета подтверждаются отдельно.
 dates: []
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-22-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-22-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Мраморные арки и синие отражения воды озера Хенераль-Каррера
   hover: Мраморные арки и синие отражения воды озера Хенераль-Каррера
   status: approved
@@ -65,7 +65,7 @@ itinerary:
 
     Прибытие в Пуэрто-Рио-Транкило и размещение в El Puesto Patagonia. Первая ночь в отеле.'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
     hover: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
     status: approved

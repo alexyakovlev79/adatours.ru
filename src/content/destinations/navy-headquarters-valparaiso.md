@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: Историческое здание Военно-морского штаба выходит на площадь Сотомайор. Его фасад становится одной из архитектурных
   остановок во время знакомства с портовым Вальпараисо.
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-26-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-26-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Разноцветные дома на холмах Вальпараисо и Тихий океан на горизонте
   hover: Разноцветные дома на холмах Вальпараисо и Тихий океан на горизонте
   status: approved

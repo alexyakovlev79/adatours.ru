@@ -9,7 +9,7 @@ destinationType: city
 summary: Бальмаседа служит воздушными воротами центральной части Карретеры-Аустраль. Отсюда поездка продолжается по дорогам
   региона Айсен к озерам, долинам и небольшим поселкам чилийской Патагонии.
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
   hover: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
   status: approved

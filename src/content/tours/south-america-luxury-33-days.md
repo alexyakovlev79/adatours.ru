@@ -777,7 +777,7 @@ itinerary:
   text: Поездка на целый день к Мраморным пещерам на озере Хенераль-Каррера. После лодочной прогулки возвращение
     в лодж.
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
 - excursionRef: excursion_general_carrera_marble_caves_full_day
   places:

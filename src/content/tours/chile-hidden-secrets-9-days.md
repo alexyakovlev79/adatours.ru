@@ -126,7 +126,7 @@ currency: USD
 priceNote: '6994 USD — тариф 2 PAX DBL: два путешественника, двухместное размещение, завтраки и услуги по программе.'
 dates: []
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-22-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-22-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Мраморные арки и синие отражения воды озера Хенераль-Каррера
   hover: Мраморные арки и синие отражения воды озера Хенераль-Каррера
   status: approved
@@ -237,7 +237,7 @@ itinerary:
     Лодочная прогулка среди дрейфующих айсбергов. Возвращение в Пуэрто-Рио-Транкило во второй половине дня. Ночь
     в El Puesto Patagonia, Standard Room, BB.
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
     hover: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
     status: approved
@@ -292,7 +292,7 @@ itinerary:
 
     Частный трансфер из отеля в Пуэрто-Наталес в аэропорт для вылета домой.'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-15-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-15-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Исторические здания на берегу у Пуэрто-Наталеса в чилийской Патагонии
     hover: Исторические здания на берегу у Пуэрто-Наталеса в чилийской Патагонии
     status: approved

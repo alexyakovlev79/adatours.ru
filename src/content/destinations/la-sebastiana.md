@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: Ла-Себастьяна знакомит с Вальпараисо через дом поэта Пабло Неруды. Дом-музей находится на холме Бельявиста,
   откуда город раскрывается в панорамах крыш, портовых кварталов и бухты.
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-26-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-26-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Разноцветные дома на холмах Вальпараисо и Тихий океан на горизонте
   hover: Разноцветные дома на холмах Вальпараисо и Тихий океан на горизонте
   status: approved

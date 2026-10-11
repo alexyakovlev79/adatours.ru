@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: Горный массив Прат входит в панорамы на пути из Пуэрто-Наталеса к Торрес-дель-Пайне. Открытые пространства,
   озера и горные склоны делают этот участок дороги интересным еще до прибытия к главным смотровым площадкам.
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-14-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-14-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Гранитные башни Торрес-дель-Пайне над горным озером, Чили
   hover: Гранитные башни Торрес-дель-Пайне над горным озером, Чили
   status: approved

@@ -188,7 +188,7 @@ itinerary:
 
     Размещение: Nayara Alto Atacama, Tilo Suite, завтрак (BB)'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-07-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-07-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Красноватая вода Лагуны Колорада и разноцветные берега, Боливия
     hover: Красноватая вода Лагуны Колорада и разноцветные берега, Боливия
     status: approved
@@ -217,7 +217,7 @@ itinerary:
 
     Размещение: Nayara Alto Atacama, Tilo Suite, завтрак (BB)'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-11-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-11-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Путешественники возле парящих источников Эль-Татио на рассвете
     hover: Путешественники возле парящих источников Эль-Татио на рассвете
     status: approved
@@ -259,7 +259,7 @@ itinerary:
 
     Размещение: Mandarin Oriental, Club Room, завтрак (BB)'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-13-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-13-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Высотные здания Сантьяго на фоне заснеженных Анд
     hover: Высотные здания Сантьяго на фоне заснеженных Анд
     status: approved
@@ -280,7 +280,7 @@ itinerary:
 
     Размещение: Singular Patagonia, Singular Room King, завтрак (BB)'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-15-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-15-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Исторические здания на берегу у Пуэрто-Наталеса в чилийской Патагонии
     hover: Исторические здания на берегу у Пуэрто-Наталеса в чилийской Патагонии
     status: approved
@@ -308,7 +308,7 @@ itinerary:
 
     Размещение: Singular Patagonia, Singular Room King, завтрак (BB)'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-16-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-16-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Гуанако перед гранитными горами Торрес-дель-Пайне
     hover: Гуанако перед гранитными горами Торрес-дель-Пайне
     status: approved
@@ -372,7 +372,7 @@ itinerary:
 
     Размещение: Mallin Colorado Ecolodge или аналог, Cabana Coigüe, завтрак (BB)'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
     hover: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
     status: approved
@@ -400,7 +400,7 @@ itinerary:
 
     Размещение: Mandarin Oriental, Club Room, завтрак (BB)'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-22-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-22-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Мраморные арки и синие отражения воды озера Хенераль-Каррера
     hover: Мраморные арки и синие отражения воды озера Хенераль-Каррера
     status: approved
@@ -454,7 +454,7 @@ itinerary:
 
     Размещение: Mandarin Oriental, Club Room, завтрак (BB)'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-26-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-26-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Разноцветные дома на холмах Вальпараисо и Тихий океан на горизонте
     hover: Разноцветные дома на холмах Вальпараисо и Тихий океан на горизонте
     status: approved

@@ -1,0 +1,24 @@
+---
+id: destination_uruguay_montevideo_port
+locale: ru
+slug: montevideo-port
+status: approved
+name: Порт Монтевидео
+countryId: country_uruguay
+destinationType: route_cluster
+summary: Порт Монтевидео, место прибытия паромов и начало знакомства со столицей Уругвая с воды.
+hero:
+  src: /media/tours/best-of-argentina-14-days/port-generated-20261011-v1.webp
+  alt: Паром у пассажирского причала порта Монтевидео — иллюстрация
+  hover: Паром у пассажирского причала порта Монтевидео — иллюстрация
+  status: approved
+gallery: []
+themes:
+- theme_culture
+sourceSnapshot: data/source-index/materials/destination_uruguay_montevideo_port.md
+updatedAt: '2026-10-11'
+---
+
+Порт Монтевидео связан с поездками через залив Ла-Плата из Буэнос-Айреса. При прибытии на пароме знакомство со столицей Уругвая начинается у воды, после чего маршрут продолжается по центральным и историческим кварталам.
+
+В однодневной программе можно соединить порт, площадь Независимости, Старый город и кафедральный собор. Обратная поездка на пароме возвращает путешественников в Буэнос-Айрес; состав трансферов и билетов зависит от выбранной экскурсии.

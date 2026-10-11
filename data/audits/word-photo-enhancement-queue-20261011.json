@@ -10,12 +10,11 @@
     "unconfirmed": "no canonical GPT Image evidence means NEEDS_REPLACEMENT; does not prove no historical tool invocation"
   },
   "counts": {
-    "REPLACED": 120,
-    "ARCHIVED": 1,
-    "NEEDS_REPLACEMENT": 1
+    "REPLACED": 121,
+    "ARCHIVED": 1
   },
   "uniqueWordPhotos": 76,
-  "pendingPhotoSlots": 1,
+  "pendingPhotoSlots": 0,
   "batchSize": 10,
   "batches": 13,
   "photos": [
@@ -9189,8 +9188,8 @@
       "src": "/media/tours/south-america-luxury-33-days/pdf-x832-20261011-v1.webp",
       "productionUrl": "https://img.adatours.ru/media/tours/south-america-luxury-33-days/pdf-x832-20261011-v1.webp",
       "origin": "pdf_embedded",
-      "enhancementStatus": "NEEDS_REPLACEMENT",
-      "action": "GPT Image: improve exact Word photo; preserve scene and framing",
+      "enhancementStatus": "REPLACED",
+      "action": "",
       "evidence": [
         {
           "kind": "source_index_media_origin",
@@ -9198,7 +9197,15 @@
           "value": "anna_word_embedded   "
         }
       ],
-      "enhancementRecords": [],
+      "enhancementRecords": [
+        {
+          "source": "/media/tours/south-america-luxury-33-days/pdf-x832-20261011-v1.webp",
+          "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x832-20261011-v1-enhanced-20261012-next21-v1.webp",
+          "method": "gpt-image",
+          "enhancedAt": "2026-10-12",
+          "revision": 1
+        }
+      ],
       "usages": [
         {
           "path": "src/content/tours/south-america-luxury-33-days.md",
@@ -9218,7 +9225,20 @@
       "queueOrder": 122,
       "batchNumber": 13,
       "documentQueueOrder": 46,
-      "documentBatchNumber": 5
+      "documentBatchNumber": 5,
+      "enhanced": "/media/tours/south-america-luxury-33-days/pdf-x832-20261011-v1-enhanced-20261012-next21-v1.webp",
+      "enhancedAt": "2026-10-12",
+      "processingTask": "next50-2358",
+      "processingBatch": 3,
+      "s3Receipt": {
+        "key": "media/tours/south-america-luxury-33-days/pdf-x832-20261011-v1-enhanced-20261012-next21-v1.webp",
+        "sha256": "5f088a007b6f02a3fc4f8c63e03b8df809fdc29b05d62039d226ee6a8f816de8",
+        "bytes": 675586,
+        "contentType": "image/webp",
+        "uploadedAt": "2026-10-11T21:16:28.488Z",
+        "source": "direct-s3",
+        "status": "uploaded-and-verified"
+      }
     }
   ],
   "uniquePdfPhotos": 46,
@@ -9245,7 +9265,7 @@
     "updatedRows": 221,
     "verifiedAt": "2026-10-11T18:04:08.669Z"
   },
-  "lastEnhancedAt": "2026-10-11T21:16:42.682Z",
+  "lastEnhancedAt": "2026-10-11T21:16:52.809Z",
   "processingPasses": [
     {
       "task": "next50-queue-51-100",
@@ -9325,6 +9345,20 @@
         6246,
         6783,
         6435
+      ]
+    },
+    {
+      "task": "next50-2358",
+      "date": "2026-10-12",
+      "requested": 50,
+      "available": 21,
+      "completed": 21,
+      "newEnhancements": 21,
+      "batchSize": 10,
+      "batches": [
+        10,
+        10,
+        1
       ]
     }
   ]

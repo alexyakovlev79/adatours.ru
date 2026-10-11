@@ -799,7 +799,7 @@ itinerary:
   - Сантьяго-де-Чили
   text: В назначенное время — трансфер в аэропорт для вылета.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x832-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x832-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Каменные фасады и пешеходы в центре Сантьяго
 included: []
 notIncluded: []

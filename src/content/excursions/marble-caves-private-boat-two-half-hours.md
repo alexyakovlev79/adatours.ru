@@ -13,7 +13,7 @@ themes:
 - theme_wildlife
 - theme_cruises
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-23-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-23-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Лодка с путешественниками внутри Мраморных пещер на озере Хенераль-Каррера
   hover: Лодка с путешественниками внутри Мраморных пещер на озере Хенераль-Каррера
   status: approved

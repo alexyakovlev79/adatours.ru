@@ -23,7 +23,7 @@ relatedDestinations:
 themes:
 - theme_wildlife
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-17-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-17-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Вход в пещеру Милодона с видом на деревья и дневной свет
   hover: Вход в пещеру Милодона с видом на деревья и дневной свет
   status: approved

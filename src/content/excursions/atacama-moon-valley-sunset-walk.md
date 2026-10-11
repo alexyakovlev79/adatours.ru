@@ -12,7 +12,7 @@ relatedDestinations:
 themes:
 - theme_wildlife
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-09-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-09-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Красноватые скальные гребни Лунной долины в чилийской Атакаме
   hover: Красноватые скальные гребни Лунной долины в чилийской Атакаме
   status: approved

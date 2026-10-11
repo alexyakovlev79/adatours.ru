@@ -17,7 +17,7 @@ route:
 - "Сальта"
 language: []
 hero:
-  src: /media/destinations/salinas-grandes/hero-word-20261011-p107-v1.webp
+  src: /media/destinations/salinas-grandes/hero-word-20261011-p107-v1-enhanced-20261011-next50-v1.webp
   alt: Белая соляная равнина Салинас-Грандес
 gallery: []
 included: []

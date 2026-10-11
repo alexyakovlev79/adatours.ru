@@ -10,7 +10,7 @@ relatedDestinations: []
 themes:
 - theme_wildlife
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-08-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-08-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Путешественники под Млечным Путем в ночной пустыне Атакама
   hover: Путешественники под Млечным Путем в ночной пустыне Атакама
   status: approved

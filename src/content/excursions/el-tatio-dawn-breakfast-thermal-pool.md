@@ -12,7 +12,7 @@ themes:
 - theme_wildlife
 - theme_spa
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-10-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-10-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Столбы пара на гейзерном поле Эль-Татио, Чили
   hover: Столбы пара на гейзерном поле Эль-Татио, Чили
   status: approved

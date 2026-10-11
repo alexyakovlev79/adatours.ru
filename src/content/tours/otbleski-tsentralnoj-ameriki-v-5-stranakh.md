@@ -30,6 +30,7 @@ destinations:
 - destination_nicaragua_leon
 - destination_nicaragua_managua
 - destination_nicaragua_masaya
+- destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_granada
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_la_fortuna_vulkan_arenal
@@ -230,6 +231,7 @@ itinerary:
   title: Манагуа - Масайя - Гранада
   places:
   - Манагуа
+  - Национальный парк вулкана Масая
   - Масая
   - Гранада
   text: "Знакомство с Манагуа, столицей Никарагуа с 1852 года, расположенной на берегу озера Ксолотлан. В историческом центре\
@@ -381,6 +383,7 @@ routeDestinations:
 - destination_nicaragua_leon
 - destination_nicaragua_managua
 - destination_nicaragua_masaya
+- destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_granada
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_la_fortuna_vulkan_arenal

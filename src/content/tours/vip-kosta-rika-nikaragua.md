@@ -20,6 +20,7 @@ destinations:
 - destination_nicaragua_ozero_nikaragua
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_masaya
+- destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_laguna_apojo
 - destination_costa_rica_vodopady_vento_fresko
 - destination_costa_rica_monteverde_santa_elena
@@ -216,6 +217,7 @@ itinerary:
   places:
   - Гранада
   - Озеро Никарагуа
+  - Национальный парк вулкана Масая
   - Масая
   - Лагуна Апойо
   text: |-
@@ -322,6 +324,7 @@ routeDestinations:
 - destination_nicaragua_ozero_nikaragua
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_masaya
+- destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_laguna_apojo
 - destination_costa_rica_doka_estate
 primaryThemes: ["theme_wildlife","theme_culture"]

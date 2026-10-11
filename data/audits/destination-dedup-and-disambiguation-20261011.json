@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-11",
+  "baseCommit": "5e12b1c75d7df5d9c2a62f45dbd5669fe6365e23",
+  "scope": {
+    "canonicalDestinations": 947,
+    "sourceCatalogDestinations": 947,
+    "activeToursAtCheck": 350,
+    "explicitCountrySpecificDestinationNameDuplicates": 0,
+    "sameCountryCanonicalSlugDuplicates": 0,
+    "sameCountryLongAliasCollisions": 0
+  },
+  "result": {
+    "confirmedSameEntityDuplicates": 0,
+    "deletedDestinationRecords": 0,
+    "renamedStableIds": 0,
+    "redirectsRequired": 0
+  },
+  "disambiguatedCandidatePairs": [
+    {
+      "leftId": "destination_chile_ozero_grej",
+      "rightId": "destination_chile_lednik_grej",
+      "decision": "distinct",
+      "reason": "Озеро и ледник Грей: разный вид объекта, экскурсионные маршруты описаны отдельно"
+    },
+    {
+      "leftId": "destination_colombia_guatavita_town",
+      "rightId": "destination_colombia_ozero_guatavita",
+      "decision": "distinct",
+      "reason": "Город Гуатавита и озеро Гуатавита: в программах оба явно перечислены"
+    },
+    {
+      "leftId": "destination_nicaragua_masaya",
+      "rightId": "destination_nicaragua_masaya_volcano_national_park",
+      "decision": "distinct",
+      "reason": "Ремесленный рынок города Масая и национальный парк вулкана: два посещения"
+    },
+    {
+      "leftId": "destination_panama_kolon",
+      "rightId": "destination_panama_ostrov_kolon",
+      "decision": "distinct",
+      "reason": "Город Колон на материке и остров Колон в Бокас-дель-Торо"
+    },
+    {
+      "leftId": "destination_chile_nacionalnyj_park_san_rafael",
+      "rightId": "destination_chile_san_rafael_glacier",
+      "decision": "distinct",
+      "reason": "Национальный парк Сан-Рафаэль и расположенный в нем ледник"
+    },
+    {
+      "leftId": "destination_ecuador_vulkan_chimboraso",
+      "rightId": "destination_ecuador_zapovednik_chimboraso",
+      "decision": "distinct",
+      "reason": "Вулкан Чимборасо и окружающий заповедник"
+    },
+    {
+      "leftId": "destination_brazil_viskondi_de_maua",
+      "rightId": "destination_brazil_maringa_viskondi_de_maua",
+      "decision": "distinct",
+      "reason": "Регион Висконди-де-Мауа и деревня Маринга в его пределах"
+    },
+    {
+      "leftId": "destination_brazil_gorod_shapada_dus_gimarajns",
+      "rightId": "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns",
+      "decision": "distinct",
+      "reason": "Город Шапада-дус-Гимарайнс и одноименный национальный парк"
+    },
+    {
+      "leftId": "destination_colombia_kano_kristales",
+      "rightId": "destination_colombia_cano_cristalitos",
+      "decision": "distinct",
+      "reason": "Каньо-Кристалес и Каньо-Кристалитос: разные водотоки"
+    },
+    {
+      "leftId": "destination_brazil_fortaleza",
+      "rightId": "destination_brazil_kanon_fortaleza",
+      "decision": "distinct",
+      "reason": "Город Форталеза и каньон Форталеза"
+    },
+    {
+      "leftId": "destination_panama_nacionalnyj_park_chagres",
+      "rightId": "destination_panama_chagres_river",
+      "decision": "distinct",
+      "reason": "Национальный парк Чагрес и река Чагрес"
+    },
+    {
+      "leftId": "destination_chile_exploradores_valley",
+      "rightId": "destination_chile_exploradores_bay",
+      "decision": "distinct",
+      "reason": "Долина Эксплорадорес и бухта Эксплорадорес"
+    },
+    {
+      "leftId": "destination_brazil_derevnya_akazhatuba",
+      "rightId": "destination_brazil_ozero_akazhatuba",
+      "decision": "distinct",
+      "reason": "Деревня Акажатуба и озеро Акажатуба"
+    },
+    {
+      "leftId": "destination_uruguay_montevideo",
+      "rightId": "destination_uruguay_montevideo_port",
+      "decision": "distinct",
+      "reason": "Город Монтевидео и его порт"
+    }
+  ],
+  "correctedReferences": {
+    "distinctPlaces": [
+      "destination_nicaragua_masaya",
+      "destination_nicaragua_masaya_volcano_national_park"
+    ],
+    "changes": "В 5 активных турах к уже присутствующему городу Масая добавлен самостоятельный национальный парк вулкана Масая в destinations/routeDestinations и в соответствующий день программы; ни одна существующая связь не удалена.",
+    "tourIds": [
+      "tour_source_vip_kosta_rika_nikaragua",
+      "tour_source_costa_rica_nicaragua_ru",
+      "tour_source_luchshee_v_tsentralnoj_amerike",
+      "tour_source_panama_kosta_rika_nikaragua",
+      "tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh"
+    ]
+  },
+  "policy": "Одинаковое название не является доказательством дубля. Различать озеро и ледник, парк и гору, деревню и регион, город и остров по текстам туров, экскурсиям и географии. Публичные названия мест должны быть на русском, стабильные ID и URL не менять без отдельной миграции.",
+  "notes": "Подтвержденных дублей для удаления в исследованных кандидатах нет. Тексты отдельных мест с общим топонимом могут использовать общие фото; это само по себе не доказательство дублирования сущностей."
+}

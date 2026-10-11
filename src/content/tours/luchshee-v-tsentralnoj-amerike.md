@@ -32,6 +32,7 @@ destinations:
 - destination_nicaragua_leon
 - destination_nicaragua_managua
 - destination_nicaragua_masaya
+- destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_granada
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_zapovednik_kano_negro
@@ -377,6 +378,7 @@ itinerary:
   title: Managua - Masaya - Granada
   places:
   - Манагуа
+  - Национальный парк вулкана Масая
   - Масая
   - Гранада
   text: |-
@@ -742,6 +744,7 @@ routeDestinations:
 - destination_nicaragua_leon
 - destination_nicaragua_managua
 - destination_nicaragua_masaya
+- destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_granada
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_zapovednik_kano_negro

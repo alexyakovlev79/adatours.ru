@@ -17,6 +17,7 @@ destinations:
 - destination_costa_rica_monteverde_santa_elena
 - destination_nicaragua_granada
 - destination_nicaragua_masaya
+- destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_ozero_nikaragua
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_managua
@@ -136,6 +137,7 @@ itinerary:
   places:
   - Гранада
   - Манагуа
+  - Национальный парк вулкана Масая
   - Масая
   text: "Гранада основана в 1524 году и считается старейшим колониальным городом континентальной Америки. За свою историю\
     \ город пережил нападения пиратов, гражданские войны и пожары.\n\nЭкскурсия начинается на Центральной площади. Вы увидите\
@@ -241,6 +243,7 @@ routeDestinations:
 - destination_costa_rica_monteverde_santa_elena
 - destination_nicaragua_granada
 - destination_nicaragua_masaya
+- destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_ozero_nikaragua
 - destination_nicaragua_ostrov_zopango
 - destination_nicaragua_managua

@@ -11,13 +11,13 @@
 | № | Показатель | Сейчас |
 |---|---|---:|
 | 1 | Программы Drive без повторных копий файлов | 169 программ / 193 файлов |
-| 2 | Неархивные страницы туров | 350 |
+| 2 | Неархивные страницы туров | 351 |
 | 3 | Архивные страницы туров | 31 |
 | 4 | Страницы без соответствия в снимке Drive | 185 активных + 18 архивных |
 | 5 | Программы Drive с архивным соответствием | 15: 0 только в архиве, 15 также с активной страницей |
-| 6 | Программы Drive без активной страницы и без архива | 1; из них 0 уже имеют запись источников |
+| 6 | Программы Drive без активной страницы и без архива | 0; из них 0 уже имеют запись источников |
 
-**Очередь наличия страниц: 1 программ** — 0 из архива и 1 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
+**Очередь наличия страниц: 0 программ** — 0 из архива и 0 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
 
 Рабочая инструкция: [обновление описи](../workflows/tour-inventory.md). Редактируемый реестр: [JSON](../../data/audits/tour-inventory-drive-20261009.json). Этот Markdown генерируется, ручные пометки в нём будут перезаписаны.
 
@@ -25,7 +25,6 @@
 
 | ID программы | Программа / разделы Drive | Все файлы Drive | Соответствия сайта / реестра | Наличие | Работа с содержанием |
 |---|---|---|---|---|---|
-| `P109` | Большой тур по Южной Америке.pdf; 33 дн.; Vip Programmes 2027 | [Большой тур по Южной Америке.pdf](https://drive.google.com/file/d/1ydIzUxXVRHKmIGZpMtqwTQfQ8yKUir0F/view?usp=drivesdk) — основной файл | — | Нужна новая программа/вариант | Не начато |
 
 ## 2. Программы представлены только в архиве
 
@@ -146,6 +145,7 @@
 | `P106` | Chile_Argentina_17d_RUS_com20%.docx; 17 дн.; Vip Programmes 2027 | [Chile_Argentina_17d_RUS_com20%.docx](https://docs.google.com/document/d/1Fg36H-7Wj19XoYkDZQsS8uY_jSbxTd-D/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Чили и Аргентина: гран-тур на 17 дней с Игуасу в Бразилии](https://adatours.ru/multi-country/tour/chile-argentina-private-grand-tour-17-days/) — основной Word — активный; `tour_chile_argentina_private_grand_tour_17_days` | Активная страница есть | Работа завершена; Полный свежий Word сверен: 17 дней/16 ночей, все 10 этапов размещения, USD23700/DBL; частные джеты отдельно. Опубликованы 21 новое место и 12 новых экскурсий; 15 вставок, 33 разных кадра программы, 11 новых GPT Images с прямыми S3 receipts. Коммерческие вставки не содержат чужих тарифов и доплат за включенные билеты. Content d795675e4ca7bb8600bee7c221ec0b096b20c097; Actions 38126978260 success. Реестры сверены чтением: Страницы 1379–1412, Фото 6706–6771, Места 664–684. Принята не изменена. |
 | `P107` | Argentina_Grand_Tour_15d14n RUS.docx; 15 дн.; Vip Programmes 2027 | [Argentina_Grand_Tour_15d14n RUS.docx](https://docs.google.com/document/d/1zWTBZQZpl9vvjK01-cNLRFYJt2VZIOE2/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Аргентина: большое путешествие от Игуасу до Патагонии](https://adatours.ru/multi-country/tour/argentina-grand-tour-15-days/) — основной Word — активный; `tour_argentina_grand_tour_15_days_2027` | Активная страница есть | Работа завершена; Свежий Word P107 сверен; Tour и 7 новых Excursion опубликованы. Дополнительно завершены 5 полноценных мест (Гуачипас, Куэвас-Пинтадас, Качи, Инка-Куэва, Валичу) и 3 недостающие экскурсионные обложки. 6 новых WebP в S3 с SHA-256 receipts: 3 Word-фото и 3 подписанные GPT Image иллюстрации с историей генераций. Content 58edcddc; порог упаковки b1cc9f31; Actions 38130308372 success. Страницы 1436–1443 и 1481–1485, Фото 6843–6862 и 6928–6935, Места 687–691 проверены чтением; этапы закрыты. Неопределенный Word image14 для Инка-Куэва не использован; высота Качи уточнена до 2210 м. |
 | `P108` | Bolivia_Chile_16d15n.docx; 16 дн.; Vip Programmes 2027 | [Bolivia_Chile_16d15n.docx](https://docs.google.com/document/d/1P3LxiLgJKPeX9COqlUovScukmYFRny2N/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Скрытые сокровища Боливии и Чили: 16 дней от Уюни до Патагонии](https://adatours.ru/multi-country/tour/bolivia-chile-hidden-treasures-16-days/) — связанный материал, не основной Word — активный; `tour_bolivia_chile_hidden_treasures_16_days` | Активная страница есть | Работа завершена; Свежий точный Word Анны сверен: все 16 дней/15 ночей, отели, трансферы и экскурсии. Созданы 25 страниц мест и 11 экскурсий, 12 экскурсионных вставок и 28 разных кадров программы плюс уникальный hero. 20 фото Word загружены напрямую в S3 с проверенными receipts. Год, цена и размещение последней ночи в Word не указаны: отмечены для подтверждения. Content dbcfaab27fa7ddd074141aac79700e7ec5c283e7; Deploy 7507c9e7e455ee346084f4c91af6af90d954db88; Actions 38129089557 success. Реестры сверены чтением: Страницы 1444–1480, Фото 6863–6927, Места 692–716. Принята не изменена. |
+| `P109` | Большой тур по Южной Америке.pdf; 33 дн.; Vip Programmes 2027 | [Большой тур по Южной Америке.pdf](https://drive.google.com/file/d/1ydIzUxXVRHKmIGZpMtqwTQfQ8yKUir0F/view?usp=drivesdk) — основной файл | [VIP: Большой тур по Южной Америке на 33 дня — Перу, Боливия и Чили](https://adatours.ru/multi-country/tour/south-america-luxury-33-days/) — основной Word — активный; `tour_south_america_luxury_33_days` | Активная страница есть | В работе; P109: полный PDF проверен; 33 дня, 97 мест, 23 новых страниц мест, 23 новых экскурсий и 2 существующие. Подготовлены фотографии; ожидается подтвержденная публикация и синхронизация таблиц. |
 | `P110` | Amazing Salta 5d4n 2027 RUS 20%.docx; 5 дн.; Argentina 2027 | [Amazing Salta 5d4n 2027 RUS 20%.docx](https://docs.google.com/document/d/1snFnoINZkqnOiuFA1UMTYSiOFYo8fTcO/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Удивительная Сальта](https://adatours.ru/argentina/tour/amazing-salta/) — основной Word — активный; `tour_source_udivitelnaya_salta` | Активная страница есть | Не начато |
 | `P111` | All Argentina 2027 26d25n RUS  SIB 20%.docx; 26 дн.; Argentina 2027 | [All Argentina 2027 26d25n RUS  SIB 20%.docx](https://docs.google.com/document/d/1-ppkM_nl815BdOJUUHwIsC868DfzI8mJ/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Тур в Аргентину - лучшее в стране за 26 дней с Патагонией](https://adatours.ru/multi-country/tour/best-of-argentina-patagonia-26-days/) — основной Word — активный; `tour_source_vsya_argentina` | Активная страница есть | Не начато |
 | `P112` | Incredible Argentina  2027 13 d 12n RUS 20%.docx; 13 дн.; Argentina 2027 | [Incredible Argentina  2027 13 d 12n RUS 20%.docx](https://docs.google.com/document/d/1JtCSrvNG6geYQfD8hJvq5rWLgMSfYLbC/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Тур в Аргентину и Патагонию по лучшим достопримечательностям](https://adatours.ru/multi-country/tour/incredible-argentina-patagonia/) — основной Word — активный; `tour_source_neveroyatnaya_argentina` | Активная страница есть | Не начато |
@@ -213,7 +213,6 @@
 
 | Программа Drive | Кандидаты в реестре |
 |---|---|
-| `P109`: Большой тур по Южной Америке.pdf | [Программа для Активных людей](https://adatours.ru/multi-country/tour/active-adventure-tour/); `tour_source_programma_dlya_aktivnykh_lyudej`; [Колоритный Сантьяго и загадочный остров Пасхи](https://adatours.ru/chile/tour/santiago-easter-island/); `tour_source_koloritnyj_santyago_i_zagadochnyj_ostrov_paskhi`; [Тур в Чили на 12 дней по лучшим местам страны с о.Пасха](https://adatours.ru/chile/tour/best-of-chile-easter-island-12-days/); `tour_source_chili_samoe_luchshee` |
 
 ## 5. Полная опись сайта и источников
 
@@ -607,6 +606,7 @@
 | `tour_antarctica_whale_watching_learning_11_days` | [Антарктида: экспедиция с наблюдением за китами](https://adatours.ru/antarctica/tour/antarctica-whale-watching-learning-11-days/) | Активная страница | `P167` |
 | `tour_antarctica_discovery_long_hikes_11_days` | [Антарктида: открытия и длительные пешие прогулки](https://adatours.ru/antarctica/tour/antarctica-discovery-long-hikes-11-days/) | Активная страница | `P164` |
 | `tour_antarctica_polar_circle_deep_south_13_days` | [Антарктида: за Южный полярный круг](https://adatours.ru/antarctica/tour/antarctica-polar-circle-deep-south-13-days/) | Активная страница | `P166` |
+| `tour_south_america_luxury_33_days` | [VIP: Большой тур по Южной Америке на 33 дня — Перу, Боливия и Чили](https://adatours.ru/multi-country/tour/south-america-luxury-33-days/) | Активная страница | `P109` |
 
 ## 6. Исключённые файлы
 

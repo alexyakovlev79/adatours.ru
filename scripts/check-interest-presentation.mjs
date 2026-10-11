@@ -5,6 +5,8 @@ import yaml from 'js-yaml';
 import { CATALOG_PAGE_SIZE } from '../src/lib/catalog-pagination.ts';
 import { INTERESTS, buildInterestHub, buildInterestIndex, interestTourCatalogPath, countLabel } from '../src/lib/interest-model.mjs';
 import { interestCopy, interestTourCount, relatedInterestCount, interestCatalogDescription } from '../src/lib/interest-copy.mjs';
+import { seoThemeCatalogTitle, seoPaginatedTitle } from '../src/lib/seo-page.mjs';
+import { countryPath, themePath } from '../src/lib/routes.ts';
 const collections = Object.fromEntries(['tours','countries','destinations','excursions','themes'].map(collection => [collection,
   readdirSync(`src/content/${collection}`).filter(f=>f.endsWith('.md')).map(file=>({data:yaml.load(readFileSync(`src/content/${collection}/${file}`,'utf8').match(/^---\r?\n([\s\S]*?)\r?\n---/)[1])}))
 ]));
@@ -12,6 +14,8 @@ const at=path=>readFileSync(join('dist',path,'index.html'),'utf8');
 const ids=(html,attribute)=>[...html.matchAll(new RegExp(`${attribute}="([^"]+)"`,'g'))].map(m=>m[1]);
 const text=html=>html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ');
 const heroSection=html=>html.match(/<section\b[^>]*class="[^"]*\bhero\b[^"]*"[\s\S]*?<\/section>/)?.[0]??'';
+const heading=html=>text(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1]??'').trim();
+const title=html=>text(html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/)?.[1]??'').trim();
 const expectedThemeAlign=new Map([['motorcycle-tours','left'],['adventure','left'],['weddings-and-romance','right'],['wildlife','right']]);
 const index=at('/interests/'), expected=buildInterestIndex(collections.themes,collections.tours);
 assert.equal(expected.length,13);
@@ -49,12 +53,26 @@ for (const {id,slug} of INTERESTS) {
     const catalogHtml=at(interestTourCatalogPath({slug}));
     assert.ok(catalogHtml.includes(interestCatalogDescription(id,hub.allTours.length)));
     assert.ok(heroSection(catalogHtml).includes(themeHero),`${slug}: interest tour catalog uses theme hero`);
+    for(let page=1;page<=Math.ceil(hub.allTours.length/CATALOG_PAGE_SIZE);page++) {
+      const pageHtml=at(`${interestTourCatalogPath({slug})}${page>1?`page/${page}/`:''}`);
+      assert.equal(heading(pageHtml),`${theme.data.name}${page>1?` — страница ${page}`:''}`,`${slug}: short catalog H1`);
+      assert.equal(title(pageHtml),seoPaginatedTitle(seoThemeCatalogTitle(theme.data.name,hub.allTours.length),page),`${slug}: separate SEO title`);
+    }
   }
   for(const row of hub.allCountries) {
     const countryRoot=interestTourCatalogPath({slug},row.entry), countryHtml=at(countryRoot);
     assert.ok(countryHtml.includes(interestCatalogDescription(id,row.tourCount,row.entry.data.name)));
     assert.ok(heroSection(countryHtml).includes(themeHero),`${slug}: ${row.entry.data.id} catalog uses theme hero`);
     if(row.tours.length>CATALOG_PAGE_SIZE) assert.ok(heroSection(at(`${countryRoot}page/2/`)).includes(themeHero),`${slug}: ${row.entry.data.id} page 2 uses theme hero`);
+    for(let page=1;page<=Math.ceil(row.tours.length/CATALOG_PAGE_SIZE);page++) {
+      const pageHtml=at(`${countryRoot}${page>1?`page/${page}/`:''}`);
+      assert.equal(heading(pageHtml),`${theme.data.name}: ${row.entry.data.name}${page>1?` — страница ${page}`:''}`,`${slug}: ${row.entry.data.id} short country H1`);
+      assert.equal(title(pageHtml),seoPaginatedTitle(seoThemeCatalogTitle(theme.data.name,row.tourCount,row.entry.data.name),page),`${slug}: ${row.entry.data.id} separate SEO title`);
+      const nav=pageHtml.match(/<nav\b[^>]*class="[^"]*\bcatalog-navigation\b[^"]*"[\s\S]*?<\/nav>/)?.[0]??'';
+      assert.equal((nav.match(/<a\b/g)??[]).length,3,`${slug}: ${row.entry.data.id} three navigation links`);
+      for(const href of [countryPath(row.entry.data),themePath(theme.data),interestTourCatalogPath({slug})]) assert.ok(nav.includes(`href="${href}"`),`${slug}: ${row.entry.data.id} navigation to ${href}`);
+      assert.equal((nav.match(/class="catalog-navigation__arrow"/g)??[]).length,3,`${slug}: ${row.entry.data.id} styled navigation arrows`);
+    }
   }
 }
 const enhancements=JSON.parse(readFileSync('src/data/media/photo-enhancements.json','utf8')).enhancements;

@@ -18,6 +18,7 @@ interface Props {
   kind: 'tour' | 'excursion' | 'destination' | 'theme';
   entries: Array<CollectionEntry<'tours'> | CollectionEntry<'excursions'> | CollectionEntry<'destinations'> | CollectionEntry<'themes'>>;
   title: string;
+  h1Title?: string;
   description: string;
   canonical: string;
   breadcrumbs: BreadcrumbItem[];
@@ -38,7 +39,7 @@ interface Props {
   variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours' | 'vip-country-tours';
 }
 
-const { leadTitle, leadEntityId, kind, entries, title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
+const { leadTitle, leadEntityId, kind, entries, title, h1Title = title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
 const isVipCatalog = variant === 'vip-tours' || variant === 'vip-country-tours';
 const eyebrow = isVipCatalog ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : kind === 'theme' ? 'По интересам' : 'Направления';
 const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
@@ -86,7 +87,7 @@ const presentation = variant === 'global-tours' ? {
   title: 'VIP и Luxury туры по Латинской Америке',
   intro: `Маршруты ${p.from}–${p.to} из ${p.totalItems}. На этой странице представлены поездки по направлениям: ${vipCountryText}.`,
   editorial: undefined,
-} : { title, intro: description, editorial: undefined };
+} : { title: h1Title, intro: description, editorial: undefined };
 const pageBreadcrumbs: BreadcrumbItem[] = p.currentPage > 1
   ? [...breadcrumbs, { label: `Страница ${p.currentPage}`, href: canonical }]
   : breadcrumbs;
@@ -143,9 +144,16 @@ const listSchema = {
     compact={p.currentPage > 1 || (variant !== 'global-tours' && variant !== 'global-places')}
   />
   {navigationLinks.length > 0 && (
-    <nav class="catalog-navigation container section--tight" aria-label={navigationLabel ?? 'Связанные разделы'}>
+    <nav class="catalog-navigation container" aria-label={navigationLabel ?? 'Связанные разделы'}>
       <ul>
-        {navigationLinks.map((link) => <li><a href={withBase(link.href)}>{link.label}</a></li>)}
+        {navigationLinks.map((link) => (
+          <li>
+            <a href={withBase(link.href)}>
+              <span>{link.label}</span>
+              <span class="catalog-navigation__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   )}
@@ -209,15 +217,44 @@ const listSchema = {
 </script>
 
 <style>
+  .catalog-navigation { padding-block: 20px; }
   .catalog-navigation ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 28px;
+    gap: 8px;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  .catalog-navigation a { color: var(--color-ink); text-underline-offset: .25em; }
+  .catalog-navigation li { min-width: 0; max-width: 100%; }
+  .catalog-navigation a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    min-height: 44px;
+    padding: 10px 16px;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-pill);
+    color: var(--color-ink);
+    background: var(--color-surface);
+    font-size: .92rem;
+    line-height: 1.35;
+    text-decoration: none;
+    transition: border-color .18s ease, background-color .18s ease;
+  }
+  .catalog-navigation a > span:first-child { overflow-wrap: anywhere; }
+  .catalog-navigation__arrow { flex: 0 0 auto; color: var(--color-gold-deep); }
+  .catalog-navigation a:hover,
+  .catalog-navigation a:focus-visible {
+    border-color: var(--color-gold-deep);
+    background: var(--color-gold-soft);
+  }
+  @media (max-width: 600px) {
+    .catalog-navigation { padding-block: 16px; }
+    .catalog-navigation li { flex: 1 1 100%; }
+    .catalog-navigation a { padding: 10px 14px; }
+  }
   .catalog-start {
     display: flex;
     align-items: center;

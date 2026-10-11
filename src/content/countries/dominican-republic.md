@@ -28,15 +28,15 @@ featureBands:
   - eyebrow: Карибское побережье
     title: Пунта-Кана, Баваро и спокойные пляжи
     text: Пунта-Кана и Баваро дают классический пляжный формат с белым песком и бирюзовой водой. Ла-Романа и Хуан-Долио можно добавить для спокойного моря, снорклинга и семейного отдыха.
-    image: /media/countries/dominican-republic/featureBands-1-enhanced-20261002.webp
+    image: /media/countries/dominican-republic/block-034-generated-20261011-dedup-v1.webp
   - eyebrow: Природа
     title: Самана и национальный парк Лос-Айтисес
     text: Полуостров Самана и Лос-Айтисес добавляют в маршрут лодочные поездки, мангровые ландшафты, пещеры и наблюдение за горбатыми китами в сезон.
-    image: /media/countries/dominican-republic/featureBands-2-enhanced-20261002.webp
+    image: /media/countries/dominican-republic/block-035-generated-20261011-dedup-v1.webp
   - eyebrow: Колониальная история
     title: Санто-Доминго
     text: "Столица дает городскую часть поездки: крепость Озама, музеи и здания колониального периода можно соединить с пляжной программой на юге или востоке страны."
-    image: /media/countries/dominican-republic/featureBands-3-enhanced-20261002.webp
+    image: /media/countries/dominican-republic/block-036-generated-20261011-dedup-v1.webp
 sourceUrl: https://brasiltours.ru/dominikanskaya-respublika-ru
 sourceSnapshot: page_texts_original/dominikanskaya-respublika-ru__b5f4dd8b.md
 updatedAt: 2026-10-02
@@ -49,3 +49,4 @@ updatedAt: 2026-10-02
 Санто-Доминго добавляет к путешествию историю: крепость Озама, музеи и колониальная архитектура дают совсем другой день после пляжей и природных маршрутов. В поездку также можно встроить местную кухню и вечер с меренге.
 
 Ada Tours может собрать маршрут вокруг пляжного отдыха или соединить несколько регионов Доминиканы в одной поездке с экскурсиями, дайвингом, снорклингом, серфингом и семейными днями у моря.
+

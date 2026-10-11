@@ -37,15 +37,15 @@ featureBands:
   - eyebrow: Колониальное наследие
     title: Антигуа-Гуатемала и вулканы
     text: Антигуа позволяет соединить колониальную архитектуру, мощеные улицы и пейзажи трех окружающих город вулканов в одном маршруте.
-    image: /media/countries/guatemala/featureBands-1-enhanced-20261002.webp
+    image: /media/countries/guatemala/block-047-generated-20261011-dedup-v1.webp
   - eyebrow: Высокогорное озеро
     title: Атитлан и поселения майя
     text: Озеро Атитлан окружено вулканами и городками, где сохраняются местные языки, традиции и ремесла. Маршрут можно продолжить в Панахачель или Сан-Педро-ла-Лагуну.
-    image: /media/countries/guatemala/featureBands-2-enhanced-20261002.webp
+    image: /media/countries/guatemala/block-048-generated-20261011-dedup-v1.webp
   - eyebrow: Мир майя
     title: Тикаль, Флорес и джунгли Петена
     text: В районе Флореса и Петена находятся Тикаль и другие археологические центры майя, окруженные влажным тропическим лесом.
-    image: /media/countries/guatemala/featureBands-3-enhanced-20261002.webp
+    image: /media/countries/guatemala/block-049-generated-20261011-dedup-v1.webp
 sourceUrl: https://brasiltours.ru/gvatemala-ru
 sourceSnapshot: page_texts_original/gvatemala-ru__bf741ecd.md
 updatedAt: 2026-10-02
@@ -58,3 +58,4 @@ updatedAt: 2026-10-02
 Для активной части поездки можно добавить вулканы, пещеры Ланкин, водопады Семук-Чампей и природные маршруты. На востоке Ливингстон и озеро Изабал показывают уже другую Гватемалу — с Карибским побережьем, лодочными маршрутами и культурой гарифуна.
 
 Ada Tours может собрать самостоятельное путешествие по Гватемале или соединить страну с соседними направлениями Центральной Америки в одном маршруте.
+

@@ -35,17 +35,17 @@ featureBands:
     title: Кито и вулканы
     text: >-
       Кито расположен высоко в Андах среди вулканических массивов. Исторический центр, линия экватора и поездки к вулканам позволяют соединить городскую и природную часть маршрута.
-    image: /media/countries/ekvador/featureBands-1-enhanced-20261002.webp
+    image: /media/countries/ecuador/block-037-generated-20261011-dedup-v1.webp
   - eyebrow: Тихий океан
     title: Галапагосские острова
     text: >-
       Галапагосы дополняют материковый Эквадор вулканическими ландшафтами, морской природой и большим числом эндемичных видов.
-    image: /media/countries/ekvador/featureBands-2-enhanced-20261002.webp
+    image: /media/countries/ecuador/block-038-generated-20261011-dedup-v1.webp
   - eyebrow: Восточные склоны Анд
     title: Баньос и дорога к Амазонии
     text: >-
       Баньос известен зелеными горами, реками, водопадами и активными маршрутами на переходе от Анд к амазонской части страны.
-    image: /media/countries/ekvador/featureBands-3-enhanced-20261002.webp
+    image: /media/countries/ecuador/block-039-generated-20261011-dedup-v1.webp
 sourceUrl: https://brasiltours.ru/ekvador-ru
 sourceSnapshot: page_texts_original/ekvador-ru__f44fca57.md
 updatedAt: 2026-10-02
@@ -56,3 +56,4 @@ updatedAt: 2026-10-02
 Кито подходит для начала маршрута по высокогорной части страны. Из столицы можно продолжить поездку к линии экватора, вулканам, рынкам и колониальным городам, а затем добавить Амазонию или Галапагосы.
 
 Климат заметно отличается по регионам, поэтому даты поездки лучше выбирать под конкретный маршрут. В стране используется доллар США, основной язык — испанский; также распространен кечуа и другие языки коренных народов.
+

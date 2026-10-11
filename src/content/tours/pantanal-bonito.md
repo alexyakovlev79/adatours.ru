@@ -41,8 +41,8 @@ itinerary:
 
     На время пребывания в Пантанале экскурсии и питание включены.'
   images:
-  - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
-    alt: Пантанал & Бонито
+  - src: "/media/destinations/destination_brazil_kampo_grande/hero-generated-20261008-resumed.webp"
+    alt: "Кампо-Гранде — Бразилия"
 - day: 2
   title: Пантанал
   places:

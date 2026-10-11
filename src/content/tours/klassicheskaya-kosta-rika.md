@@ -77,8 +77,8 @@ itinerary:
     \ увидеть кетцаля, священную птицу майя, которая находится на грани исчезновения.\n\nНочь в El Establo Mountain Resort.\
     \  \nПитание: завтрак."
   images:
-  - src: /media/tours/klassicheskaya-kosta-rika/hero-src-enhanced-20261007.webp
-    alt: 'на фото: флора и фауна Коста-Рики, Монтеверде'
+  - src: "/media/destinations/monteverde-santa-elena/gallery-2-enhanced-20261003.webp"
+    alt: "Густая тропическая зелень с лианами и папоротниками, Монтеверде, Коста-Рика"
 - day: 5
   title: Облачный лес Монтеверде
   places:

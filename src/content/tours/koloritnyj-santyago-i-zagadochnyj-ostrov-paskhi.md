@@ -50,8 +50,8 @@ itinerary:
 
     Ночь в отеле.
   images:
-  - src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
-    alt: Колоритный Сантьяго и загадочный остров Пасхи
+  - src: "/media/destinations/santyago-de-chili/gallery-9-enhanced-20261006.webp"
+    alt: "Кабинки канатной дороги на фоне города и заснеженных гор, Сантьяго, Чили"
 - day: 2
   title: Вальпараисо и Винья-дель-Мар
   places:

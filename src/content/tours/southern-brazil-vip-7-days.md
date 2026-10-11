@@ -39,8 +39,8 @@ currency: USD
 priceNote: 10 043 USD на человека. Стоимость рассчитана для частной поездки на 2 пассажиров.
 dates: []
 hero: &id002
-  src: /media/destinations/destination_brazil_kanon_itaimbezinyu/hero-generated-20261009-v1.webp
-  alt: Узкое ущелье и отвесные стены каньона Итаимбезинью
+  src: "/media/destinations/destination_brazil_gramadu/original-01-20261010.jpg"
+  alt: "Грамаду в горах Серра-Гауша, Бразилия"
   status: approved
 gallery: []
 featured: false
@@ -144,7 +144,7 @@ itinerary:
 
     Ночь в Камбара-ду-Сул.'
   images:
-  - *id002
+  - {"src": "/media/destinations/destination_brazil_kanon_itaimbezinyu/hero-generated-20261009-v1.webp", "alt": "Узкое ущелье и отвесные стены каньона Итаимбезинью", "status": "approved"}
 - excursionRef: excursion_brazil_itaimbezinho_full_day
   places:
   - Каньон Итаимбезинью

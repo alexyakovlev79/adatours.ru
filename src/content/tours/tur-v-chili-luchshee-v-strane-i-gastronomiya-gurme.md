@@ -143,8 +143,8 @@ itinerary:
 
     Вечером отдых перед следующим насыщенным днем.
   images:
-  - src: /media/countries/chile/hero-enhanced-20261002.webp
-    alt: Торрес-дель-Пайне на закате, Патагония, индивидуальный тур в Чили с Ada Tours.
+  - src: "/media/destinations/puerto-natales-torres-del-pajne/gallery-1-enhanced-20261005.webp"
+    alt: "Разноцветные дома на берегу Пуэрто-Наталеса на фоне гор, Чили"
 - day: 6
   title: Торрес-дель-Пайне и ледник Грей
   places:

@@ -60,8 +60,8 @@ itinerary:
   text: Днём — полудневная экскурсия по Буэнос-Айресу с гидом, билетами и обедом. Вечером — танго-шоу с ужином в
     Michelangelo; трансферы и билеты включены.
   images:
-  - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
-    alt: Каса-Росада в Буэнос-Айресе
+  - src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp"
+    alt: "На фото: Городской пейзаж Буэнос-Айреса"
 - excursionRef: excursion_buenos_aires_half_day_lunch
   places: *id002
 - excursionRef: excursion_buenos_aires_michelangelo_tango_dinner

@@ -101,8 +101,8 @@ itinerary:
       
       Питание: завтрак, полдник, ужин.
     images:
-      - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/hero-enhanced-20261006.webp
-        alt: "Аконкагуа, Аргентина"
+      - src: "/media/destinations/plaza-francia/hero-generated-20261010-last8-v1.webp"
+        alt: "Южная стена Аконкагуа над каменистой долиной на подходе к Пласа-Франсия — реалистичная иллюстрация"
         intendedSlot: "itinerary:day-4"
   - day: 5
     title: "Конфлуэнсия - Пласа-де-Мулас, 4260 м"

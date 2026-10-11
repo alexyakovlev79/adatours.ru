@@ -120,8 +120,8 @@ priceFrom: 1650
 currency: USD
 priceNote: $1650
 hero:
-  src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
-  alt: 'На фото: Резиденция Каса Росада, Аргентина'
+  src: "/media/destinations/bariloche/gallery-1-enhanced-20261002.webp"
+  alt: "Синее озеро, скалистые горы и дерево на берегу у Барилоче, Аргентина"
 routeCountries:
 - country_argentina
 routeDestinations:

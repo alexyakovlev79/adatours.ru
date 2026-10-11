@@ -37,8 +37,8 @@ itinerary:
 
     Ночь в отеле Barceló San Salvador.
   images:
-  - src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
-    alt: 'На фото: Сан-Сальвадор столица Сальвадора'
+  - src: "/media/destinations/san-salvador/gallery-5-regenerated-20261011-v2.webp"
+    alt: "На фото: город Сан-Сальвадор в Эль-Сальвадоре"
 - day: 2
   title: Сан-Андрес и Хоя-де-Серен
   places:

@@ -5,39 +5,46 @@ interface Props {
   notIncluded: string[];
   notes?: string[];
 }
-const { included, notIncluded, notes = [] } = Astro.props;
+const { included = [], notIncluded = [], notes = [] } = Astro.props;
+const includedItems = included.map((item) => item.trim()).filter(Boolean);
+const notIncludedItems = notIncluded.map((item) => item.trim()).filter(Boolean);
+const noteItems = notes.map((item) => item.trim()).filter(Boolean);
+const hasServices = includedItems.length > 0 || notIncludedItems.length > 0;
+const hasContent = hasServices || noteItems.length > 0;
 ---
 
+{hasContent && (
 <section class="included section">
   <div class="container">
-    <p class="eyebrow">Условия программы</p>
-    {(included.length > 0 || notIncluded.length > 0) && (
+    {hasServices && <p class="eyebrow">Условия программы</p>}
+    {hasServices && (
       <div class="included__grid">
-        <div class="included__column included__column--included">
+        {includedItems.length > 0 && <div class="included__column included__column--included">
           <h2>Включено</h2>
           <ul>
-            {included.map((item) => <li><InlineMarkdown text={item} /></li>)}
+            {includedItems.map((item) => <li><InlineMarkdown text={item} /></li>)}
           </ul>
-        </div>
-        <div class="included__column included__column--extra">
+        </div>}
+        {notIncludedItems.length > 0 && <div class="included__column included__column--extra">
           <h2>Оплачивается отдельно</h2>
           <ul>
-            {notIncluded.map((item) => <li><InlineMarkdown text={item} /></li>)}
+            {notIncludedItems.map((item) => <li><InlineMarkdown text={item} /></li>)}
           </ul>
-        </div>
+        </div>}
       </div>
     )}
 
-    {notes.length > 0 && (
-      <div class="included__notes">
+    {noteItems.length > 0 && (
+      <div class:list={["included__notes", { "included__notes--standalone": !hasServices }]}>
         <h3>Важные условия</h3>
         <ul>
-          {notes.map((item) => <li><InlineMarkdown text={item} /></li>)}
+          {noteItems.map((item) => <li><InlineMarkdown text={item} /></li>)}
         </ul>
       </div>
     )}
   </div>
 </section>
+)}
 
 <style>
   .included {
@@ -106,6 +113,10 @@ const { included, notIncluded, notes = [] } = Astro.props;
   .included__notes {
     margin-top: clamp(44px, 6vw, 76px);
     max-width: 980px;
+  }
+
+  .included__notes--standalone {
+    margin-top: 0;
   }
 
   .included__notes h3 {

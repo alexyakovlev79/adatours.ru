@@ -88,8 +88,8 @@ itinerary:
     text: |-
       Этот день оставлен без обязательной программы. Его можно провести на пляже или выбрать одну из дополнительных экскурсий.
     images:
-      - src: /media/tours/luxury-brazil-11d/hero-enhanced-20260930.webp
-        alt: "Панорама Рио-де-Жанейро у Атлантики"
+      - src: "/media/destinations/destination_brazil_rio/rio-free-beach-v2-generated-20261008.webp"
+        alt: "Мозаичная набережная и пляж Копакабаны с пальмами в золотом свете, Рио-де-Жанейро, Бразилия"
         intendedSlot: "itinerary:day-4"
   - excursionRef: excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie
     places: ["Ангра-дус-Рейс","Илья-Гранди"]
@@ -158,8 +158,8 @@ itinerary:
       
       По мере движения городская застройка сменяется холмами и зеленью. Бузиос расположен на полуострове с десятками небольших бухт и пляжей. Воздух становится суше, движение спокойнее, а океан появляется между холмами все чаще. После размещения в отеле начинается пляжная часть маршрута, для которой в программе оставлено несколько дней без жесткого расписания.
     images:
-      - src: /media/tours/luxury-brazil-11d/itinerary/day-08-enhanced-20260930.webp
-        alt: "Бухта Бузиоса с яхтами"
+      - src: "/media/destinations/buzios/gallery-1-enhanced-20261001.webp"
+        alt: "Узкий проход между яркими домами с видом на море в Бузиосе, Бразилия"
         intendedSlot: "itinerary:day-8"
   - day: 9
     title: "Пляжи Бузиоса"

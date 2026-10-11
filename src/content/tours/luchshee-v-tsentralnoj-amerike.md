@@ -546,9 +546,9 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp
-    hover: "Бокете: водопад и человек у его подножия среди тропической растительности"
-    alt: "Высокий водопад среди густой зелени в районе Бокете, Панама"
+  - src: "/media/destinations/boquete/gallery-4-enhanced-20261005.webp"
+    hover: "Бокете: торговая улица, церковь и зелёные горы на горизонте"
+    alt: "Городская улица с магазинами и церковными башнями на фоне гор, Бокете, Панама"
 - day: 19
   title: Вулкан Baru
   places:

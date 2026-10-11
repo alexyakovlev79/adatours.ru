@@ -207,8 +207,8 @@ itinerary:
   - Рио-де-Жанейро
   text: После завтрака трансфер в аэропорт для международного вылета домой.
   images:
-  - src: /media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp
-    alt: Рио-де-Жанейро вечером
+  - src: "/media/destinations/destination_brazil_rio/rio-departure-bay-v2-generated-20261008.webp"
+    alt: "Каменистый берег и парусники в заливе Гуанабара, Рио-де-Жанейро, Бразилия"
 included:
 - Проживание в указанных или аналогичных отелях с завтраком.
 - Экскурсии по программе в групповом формате с англоговорящим гидом.

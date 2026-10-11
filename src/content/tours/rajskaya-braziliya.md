@@ -175,8 +175,8 @@ itinerary:
 
     Курорт известен пляжами с чистой бирюзовой водой, белым песком и пальмами.'
   images:
-  - src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
-    alt: 'На фото: Порту-де-Галиньяс'
+  - src: "/media/destinations/porto-de-galinhas/gallery-2-enhanced-20261001.webp"
+    alt: "Бирюзовое море, рифы и песчаный пляж Порту-ди-Галиньяш, Бразилия"
   - src: /media/tours/rajskaya-braziliya/itinerary-day-8-images-1-enhanced-20261006.webp
     alt: Ресифи
 - day: 9

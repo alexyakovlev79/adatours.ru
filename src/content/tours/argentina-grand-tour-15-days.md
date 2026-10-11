@@ -289,8 +289,8 @@ itinerary:
   - "Буэнос-Айрес"
   text: "Трансфер в аэропорт для международного вылета (водитель)."
   images:
-  - src: "/media/tours/argentina-2024/hero-enhanced-20261006.webp"
-    alt: "Буэнос-Айрес"
+  - src: "/media/destinations/buenos-aires/hero-enhanced-20260930.webp"
+    alt: "Буэнос-Айрес, Аргентина"
 sourceSnapshot: "https://docs.google.com/document/d/1zWTBZQZpl9vvjK01-cNLRFYJt2VZIOE2/edit"
 updatedAt: "2026-10-11"
 ---

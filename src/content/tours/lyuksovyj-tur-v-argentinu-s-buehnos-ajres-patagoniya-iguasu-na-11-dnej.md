@@ -208,9 +208,9 @@ itinerary:
       
       Оставшаяся часть дня посвящена отдыху и знакомству с патагонским пейзажем.
     images:
-      - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/hero-enhanced-20261006.webp
-        hover: "Аргентинская Патагония: дорога среди осенних деревьев к снежным вершинам"
-        alt: "Автомобиль на дороге к заснеженным горам Патагонии, Аргентина"
+      - src: "/media/home/patagonia-enhanced-20260930.webp"
+        hover: "Патагония: озеро с зелёными берегами на фоне гор"
+        alt: "Бирюзовое озеро среди лесистых берегов и гор Патагонии, Аргентина"
         intendedSlot: "itinerary:day-4"
   - day: 5
     title: "Perito Moreno"

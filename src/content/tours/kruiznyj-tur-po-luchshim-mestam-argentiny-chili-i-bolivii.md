@@ -744,8 +744,8 @@ itinerary:
 
     Вылет домой.'
   images:
-  - src: /media/home/buenos-aires-enhanced-20260930.webp
-    alt: "Розовое здание Каса-Росада за цветочной клумбой в Буэнос-Айресе, Аргентина"
+  - src: "/media/destinations/buenos-aires/hero-enhanced-20260930.webp"
+    alt: "Буэнос-Айрес, Аргентина"
 included:
 - Проживание в отелях по программе.
 - Круизный корабль с полным пансионом и экскурсиями по программе, каюта AA.

@@ -12,7 +12,7 @@ themes:
 - theme_adventure
 - theme_wildlife
 hero:
-  src: /media/tours/southern-brazil-vip-7-days/balloons-word-20261010.webp
+  src: /media/tours/southern-brazil-vip-7-days/balloons-word-20261010-enhanced-20261011-pass2324-v1.webp
   alt: Разноцветные воздушные шары над холмистой местностью
 gallery: []
 lead: Полет на воздушном шаре над ландшафтами Камбара-ду-Сул, затем пикник среди сельских пейзажей.

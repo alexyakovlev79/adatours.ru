@@ -12,7 +12,7 @@ themes:
 - theme_adventure
 - theme_gastronomy_wine
 hero:
-  src: /media/tours/southern-brazil-vip-7-days/vineyard-atv-word-20261010.webp
+  src: /media/tours/southern-brazil-vip-7-days/vineyard-atv-word-20261010-enhanced-20261011-pass2324-v1.webp
   alt: Участники поездки на квадроциклах среди зеленых холмов
 gallery: []
 lead: Поездка на квадроциклах по виноградникам Бенту-Гонсалвиса. Зеленые склоны и ряды лоз становятся дорогой для

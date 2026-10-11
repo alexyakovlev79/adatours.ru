@@ -164,7 +164,7 @@ itinerary:
 
     Ночь в Камбара-ду-Сул.'
   images:
-  - src: /media/tours/southern-brazil-vip-7-days/canyon-picnic-word-20261010.webp
+  - src: /media/tours/southern-brazil-vip-7-days/canyon-picnic-word-20261010-enhanced-20261011-pass2324-v1.webp
     alt: Корзина с едой и покрывало для пикника у края каньона
 - excursionRef: excursion_brazil_cambara_balloon_picnic
   places:
@@ -187,7 +187,7 @@ itinerary:
 
     Ночь во Флорианополисе.'
   images:
-  - src: /media/tours/southern-brazil-vip-7-days/helicopter-coast-word-20261010.webp
+  - src: /media/tours/southern-brazil-vip-7-days/helicopter-coast-word-20261010-enhanced-20261011-pass2324-v1.webp
     alt: Вертолет над зеленым побережьем и океаном
 - day: 7
   title: Флорианополис и отъезд

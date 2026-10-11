@@ -102,7 +102,7 @@ priceNote: Стоимость рассчитывается по запросу �
 dates:
 - 29 декабря — 13 января; год поездки подтверждается при бронировании
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-01-20261011-v1.webp
+  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-01-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Люди и отражения закатного неба на солончаке Уюни, Боливия
   hover: Люди и отражения закатного неба на солончаке Уюни, Боливия
   status: approved
@@ -121,7 +121,7 @@ itinerary:
 
     Размещение: Casa Grande Suites, Presidential Suite, завтрак (BB)'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-02-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-02-20261011-v1-enhanced-20261011-pass2324-v1.webp
     alt: Канатная дорога над плотной застройкой Ла-Паса, Боливия
     hover: Канатная дорога над плотной застройкой Ла-Паса, Боливия
     status: approved
@@ -163,7 +163,7 @@ itinerary:
 
     Размещение: Glamping Uyuni Deluxe или аналог, Tent, завтрак (BB)'
   images:
-  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-04-20261011-v1.webp
+  - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-04-20261011-v1-enhanced-20261011-pass2324-v1.webp
     alt: Группа путешественников и отражения на покрытом водой солончаке Уюни
     hover: Группа путешественников и отражения на покрытом водой солончаке Уюни
     status: approved

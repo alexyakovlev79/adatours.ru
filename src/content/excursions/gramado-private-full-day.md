@@ -11,7 +11,7 @@ relatedDestinations: []
 themes:
 - theme_culture
 hero:
-  src: /media/tours/southern-brazil-vip-7-days/gramado-town-word-20261010.webp
+  src: /media/tours/southern-brazil-vip-7-days/gramado-town-word-20261010-enhanced-20261011-pass2324-v1.webp
   alt: Улица Грамаду с цветами, фахверковыми фасадами и церковной башней
 gallery: []
 lead: 'Знакомство с Грамаду на частной экскурсии: архитектура с европейским влиянием и город среди зеленых гор Серра-Гауша.'

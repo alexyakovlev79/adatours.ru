@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: На кладбище поездов у Уюни сохранились старые локомотивы и вагоны. Железнодорожные конструкции стоят среди
   открытого сухого ландшафта.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x431-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x431-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Ржавые железнодорожные вагоны на кладбище поездов в Уюни
 gallery: []
 themes:

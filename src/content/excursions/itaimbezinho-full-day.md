@@ -12,7 +12,7 @@ relatedDestinations:
 themes:
 - theme_wildlife
 hero:
-  src: /media/tours/southern-brazil-vip-7-days/itaimbezinho-canyon-word-20261010.webp
+  src: /media/tours/southern-brazil-vip-7-days/itaimbezinho-canyon-word-20261010-enhanced-20261011-pass2324-v1.webp
   alt: Отвесные стены и зеленые края каньона Итаимбезинью
 gallery: []
 lead: 'Экскурсия на целый день к каньону Итаимбезинью: отвесные скалы, высокогорные пейзажи, тропы и смотровые площадки.'

@@ -51,10 +51,19 @@ lead: От виноградников Бенту-Гонсалвиса через
 highlights:
 - title: Виноградники Серра-Гауша
   text: Проживание в SPA-отеле do Vinho, включенная прогулка среди лоз и поездка на квадроциклах.
+  image:
+    src: /media/tours/southern-brazil-vip-7-days/highlights/01-serra-gaucha-vineyard-atv-enhanced-20261011-v1.webp
+    alt: "Поездка на квадроцикле среди виноградников Бенту-Гонсалвиса"
 - title: Каньоны с земли и с воздуха
   text: Целый день у Итаимбезинью, полет на воздушном шаре и пикник в окрестностях Камбара-ду-Сул.
+  image:
+    src: /media/tours/southern-brazil-vip-7-days/highlights/02-cambara-balloon-canyons-enhanced-20261011-v1.webp
+    alt: "Воздушный шар над каньонами Камбара-ду-Сул"
 - title: Вертолет к океану
   text: Частный перелет во Флорианополис, ночь на побережье и обзорная экскурсия перед отъездом.
+  image:
+    src: /media/tours/southern-brazil-vip-7-days/highlights/03-florianopolis-helicopter-enhanced-20261011-v1.webp
+    alt: "Частный вертолёт над побережьем Флорианополиса"
 itinerary:
 - day: 1
   title: Порту-Алегри и виноградники Бенту-Гонсалвиса

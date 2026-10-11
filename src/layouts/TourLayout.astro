@@ -342,7 +342,11 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     .tour-copy__toggle { display: none; }
   }
 
-  .tour-links { padding-bottom: clamp(24px, 3vw, 40px); }
+  .tour-links { padding-bottom: clamp(12px, 1.5vw, 20px); }
+  /* Avoid adding the next section's full editorial inset to the compact links. */
+  .tour-links + :global(.highlights) { padding-top: clamp(12px, 2vw, 24px); }
+  .tour-links + :global(.highlights) :global(.eyebrow) { margin-top: 0; }
+  .tour-links + :global(.highlights) :global(.highlights__list) { margin-top: 16px; }
   .tour-links__group {
     display: grid;
     grid-template-columns: 190px minmax(0, 1fr);

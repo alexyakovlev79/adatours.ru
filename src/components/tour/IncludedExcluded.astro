@@ -111,7 +111,7 @@ const hasContent = hasServices || noteItems.length > 0;
   }
 
   .included__notes {
-    margin-top: clamp(44px, 6vw, 76px);
+    margin-top: clamp(28px, 4vw, 48px);
     max-width: 980px;
   }
 
@@ -120,21 +120,27 @@ const hasContent = hasServices || noteItems.length > 0;
   }
 
   .included__notes h3 {
-    margin: 0 0 20px;
+    margin: 0 0 12px;
     font-family: var(--font-display);
     font-size: clamp(1.5rem, 2vw, 2.2rem);
   }
 
   .included__notes ul {
-    border-top: 1px solid var(--color-line);
+    display: grid;
+    gap: 10px;
+    border: 0;
   }
 
   .included__notes li {
-    padding-left: 0;
+    padding: 0 0 0 20px;
+    border: 0;
   }
 
   .included__notes li::before {
-    content: none;
+    content: '•';
+    top: 0;
+    font-size: 1rem;
+    line-height: inherit;
   }
 
   @media (max-width: 760px) {

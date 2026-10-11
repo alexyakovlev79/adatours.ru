@@ -1,0 +1,249 @@
+{
+  "format_version": 1,
+  "primary_site": "https://adatours.ru/",
+  "organization_id": "https://adatours.ru/#organization",
+  "snapshot_date": "2026-10-11",
+  "snapshot_commit": "e4a2b8bbec56d39d6731e78950051746f16faff8",
+  "source_workbook": {
+    "filename": "AdaTours_Internet_Mapping_2026-10-11.xlsx",
+    "sha256": "ecd119487758058b79c712714bf1137b18267d9c7aa9ee89d5b5e9f301e46ae4"
+  },
+  "historical_crawl": {
+    "date": "2026-09-23",
+    "inventory_url": "https://drive.google.com/file/d/1ptF_mS-_9SHQM8VtNmci9oxhu0_XHQWK/view",
+    "snapshots_folder_url": "https://drive.google.com/drive/folders/1zbcua6J4CzYyay9kYMGQeyvHQ_gGj1Vl"
+  },
+  "stats": {
+    "old_discovered": 1426,
+    "ru_generated": 8244,
+    "ru_canonical": 4135,
+    "ru_redirects": 4109,
+    "published_entities": 1625,
+    "exact_registry_pairs": 690,
+    "archived_pages": 32,
+    "types": {
+      "webpage": 20,
+      "country": 24,
+      "destination": 877,
+      "catalog": 1706,
+      "pagination": 784,
+      "tour": 369,
+      "excursion": 339,
+      "case": 2,
+      "theme": 13,
+      "person": 1
+    },
+    "matches": {
+      "НЕТ ОТДЕЛЬНОЙ ПАРЫ": 3015,
+      "ФУНКЦИОНАЛЬНЫЙ АНАЛОГ": 17,
+      "ТОЧНАЯ ПАРА В РЕЕСТРЕ": 690,
+      "ТЕМАТИЧЕСКИЙ АНАЛОГ": 413
+    },
+    "old_unique_matched": 1141,
+    "old_match_rows": 1596,
+    "live_sitemap_count": 4102,
+    "built_sitemap_count": 4102,
+    "only_build": [],
+    "only_live": [],
+    "snapshot_commit": "e4a2b8bbec56d39d6731e78950051746f16faff8"
+  },
+  "tables": [
+    {
+      "table": "resources",
+      "original_sheet": "Ресурсы",
+      "row_count": 9741,
+      "json": "resources.json",
+      "csv": "resources.csv",
+      "columns": [
+        "name",
+        "resource_type",
+        "site",
+        "url",
+        "status",
+        "entity_id",
+        "relation",
+        "evidence",
+        "evidence_url",
+        "observed_at",
+        "confidence",
+        "notes"
+      ],
+      "sha256": {
+        "json": "b2abc24ed3d3cced7390bacb3702f7fe8df0f6e2066ffb4012c0d9607be05ed0",
+        "csv": "614c6445cce947028cd7b6ae062c5b272961123af391cfd21fa6d0fd05c3b643"
+      }
+    },
+    {
+      "table": "ru-brasiltours",
+      "original_sheet": "RU → BrasilTours",
+      "row_count": 4135,
+      "json": "ru-brasiltours.json",
+      "csv": "ru-brasiltours.csv",
+      "columns": [
+        "name",
+        "entity_type",
+        "entity_id",
+        "ru_url",
+        "brasiltours_url",
+        "match_status",
+        "ru_status",
+        "schema_guidance",
+        "snapshot_id",
+        "snapshot_http",
+        "snapshot_file",
+        "original_drive_url",
+        "selected_material",
+        "source_entry_url",
+        "content_md_url",
+        "previous_verification_method",
+        "active_replacement_id",
+        "notes"
+      ],
+      "sha256": {
+        "json": "bf7f09c810b405f5399a6cd2265099b8478ffbf4c5a17ec9419f9b034a60e1dd",
+        "csv": "d4725272936019406f1bebefcf223c237975915328d0ad980d0610cc547be75d"
+      }
+    },
+    {
+      "table": "brasiltours-ru",
+      "original_sheet": "BrasilTours → RU",
+      "row_count": 1596,
+      "json": "brasiltours-ru.json",
+      "csv": "brasiltours-ru.csv",
+      "columns": [
+        "name",
+        "page_type",
+        "snapshot_id",
+        "brasiltours_url",
+        "snapshot_http",
+        "ru_url",
+        "ru_entity_id",
+        "ru_status",
+        "match_method",
+        "relation_type",
+        "snapshot_final_url",
+        "snapshot_canonical",
+        "snapshot_file",
+        "duplicate_group",
+        "text_hash",
+        "notes"
+      ],
+      "sha256": {
+        "json": "384aae30372b5653bb31b965744719744e75bc98e2638e7efaf59953225f22d5",
+        "csv": "e5587c0cf0483433b9aecc4eaa1011b020c457de164f44efb4425df80fab6ab2"
+      }
+    },
+    {
+      "table": "ru-aliases",
+      "original_sheet": "RU алиасы",
+      "row_count": 4109,
+      "json": "ru-aliases.json",
+      "csv": "ru-aliases.csv",
+      "columns": [
+        "name",
+        "alias_url",
+        "canonical_url",
+        "entity_id",
+        "brasiltours_source_url",
+        "rule"
+      ],
+      "sha256": {
+        "json": "56be97a4d1506901820b1ce9335979ee14f9b36620cbfd00e3b2d0bfbb308cbf",
+        "csv": "632a916da6b2a1bfd58f109f7d2612718ac1081b58ea5f6f99c4a44cecf0610d"
+      }
+    },
+    {
+      "table": "external-profiles",
+      "original_sheet": "RU → внешние",
+      "row_count": 58,
+      "json": "external-profiles.json",
+      "csv": "external-profiles.csv",
+      "columns": [
+        "ru_entity",
+        "entity_name",
+        "resource_name",
+        "external_url",
+        "resource_type",
+        "verification_status",
+        "schema_guidance",
+        "confidence",
+        "evidence",
+        "evidence_url",
+        "verified_at",
+        "notes"
+      ],
+      "sha256": {
+        "json": "132356eaf2df82ac936395d86a242d7ae929bf729e7d25da9304b53acb1575fb",
+        "csv": "1e72d1035d368e3406edcd1739bac0f5ba4fccea1cd679899656b666ee3c13cb"
+      }
+    },
+    {
+      "table": "source-only-archives",
+      "original_sheet": "Архив без страницы",
+      "row_count": 5,
+      "json": "source-only-archives.json",
+      "csv": "source-only-archives.csv",
+      "columns": [
+        "name",
+        "entity_type",
+        "entity_id",
+        "status",
+        "planned_unpublished_ru_url",
+        "brasiltours_url",
+        "original_drive_url",
+        "source_entry_url",
+        "notes"
+      ],
+      "sha256": {
+        "json": "c85b055d2ec4ccbcc58ca569cd33b0bf86d0469eb74ee94cf6155f9fbb4eb359",
+        "csv": "7259cd81c8e7981d715ae6fabdaa358266e6eb570b305ece2c4a31373be26381"
+      }
+    },
+    {
+      "table": "next-steps",
+      "original_sheet": "Второй этап",
+      "row_count": 4,
+      "json": "next-steps.json",
+      "csv": "next-steps.csv",
+      "columns": [
+        "site_or_scope",
+        "site_url",
+        "status",
+        "basis",
+        "model_check",
+        "acceptance_rule"
+      ],
+      "sha256": {
+        "json": "a729467cd967f6dd62ddf0fb261e91b46fb8829a2d1a4b81749f52b5be27b49c",
+        "csv": "359ce6a31fd736d7a55b00d0dd35c22c2894a0a7cd016cfaa1ea4a28806d1fe5"
+      }
+    },
+    {
+      "table": "methodology",
+      "original_sheet": "Методика",
+      "row_count": 32,
+      "json": "methodology.json",
+      "csv": "methodology.csv",
+      "columns": [
+        "rule",
+        "value"
+      ],
+      "sha256": {
+        "json": "f8e710cd5e42632463967c6d51bcbed7a15d33f428584c7748209cfbc95bb938",
+        "csv": "ae2389be0ed8f950e03cd42ea25e0d3fa01c4d111e463a1aac98e0cc51c875f3"
+      }
+    }
+  ],
+  "index": {
+    "file": "index.json",
+    "sha256": "d9067ddf778999031d4f61e3c790d94e8f9e0c5620b268c16eee761602fd019f"
+  },
+  "schema_implementation_status": "research_only_waiting_for_user_command",
+  "second_stage_status": "not_started",
+  "update_policy": "JSON tables are the editable source; regenerate CSV views and index after edits. Snapshot counts describe the original 2026-10-11 workbook; newer repository content is not automatically included.",
+  "normalization": [
+    "Date columns converted to ISO YYYY-MM-DD.",
+    "All table cell values are strings. Empty cells are empty strings.",
+    "Worksheet titles, styles and cached formula controls are omitted. Real row counts are in tables[].row_count."
+  ]
+}

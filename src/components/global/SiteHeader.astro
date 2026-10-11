@@ -342,15 +342,28 @@ const nestedGroups = NAV_LINKS
     z-index: 50;
     color: var(--color-bg);
     background: transparent;
-    transition:
-      color 220ms var(--ease-out),
-      background-color 220ms var(--ease-out),
-      backdrop-filter 220ms var(--ease-out);
+    transition: color 220ms var(--ease-out);
+  }
+
+  /* Keep backdrop-filter off the ancestor of the fixed mobile menu:
+     it otherwise becomes the menu's containing block during the transition. */
+  .site-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: transparent;
+    transition: background-color 220ms var(--ease-out);
   }
 
   .site-header--dark,
   .site-header.is-scrolled {
     color: var(--color-ink);
+  }
+
+  .site-header--dark::before,
+  .site-header.is-scrolled::before {
     background: rgb(255 252 248 / 92%);
     -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
@@ -358,7 +371,10 @@ const nestedGroups = NAV_LINKS
 
   .site-header.is-open {
     color: var(--color-bg);
-    background: transparent;
+  }
+
+  .site-header.is-open::before {
+    background: var(--color-ink-deep);
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
@@ -610,6 +626,7 @@ const nestedGroups = NAV_LINKS
     .mobile-menu {
       position: fixed;
       inset: 0;
+      z-index: 1;
       display: block;
       overflow: hidden;
       color: var(--color-bg);

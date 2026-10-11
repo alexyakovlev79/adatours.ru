@@ -272,7 +272,7 @@ itinerary:
   - Дом Каса-Алиага в Лиме
   text: Исторический центр Лимы. Подробная экскурсионная программа приведена ниже.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x110-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x110-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Аркады и двор монастыря Санто-Доминго в Лиме
 - excursionRef: excursion_lima_cathedral_santo_domingo_casa_aliaga_five_hours
   places:
@@ -336,7 +336,7 @@ itinerary:
   text: Продолжение круиза Aqua Nera. Выходы с гидами и отдых на борту по программе судна; порядок ежедневных активностей
     уточняется на месте.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x208-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x208-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Зеленый тропический лес по берегам амазонской протоки
 - day: 8
   title: Икитос — Куско — Священная долина

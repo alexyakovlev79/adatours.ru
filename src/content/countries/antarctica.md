@@ -42,7 +42,7 @@ featureBands:
   - eyebrow: Экспедиция
     title: Айсберги и высадки с воды
     text: Круиз дает возможность проходить среди льда, выходить на берег на лодках Zodiac и наблюдать животных в естественной среде.
-    image: /media/tours/antarctica-discovery-learning/antarctic-zodiac-word-20261011-v1.webp
+    image: /media/tours/antarctica-discovery-learning/antarctic-zodiac-word-20261011-v1-enhanced-20261011-next50-v1.webp
   - eyebrow: Живая природа
     title: Пингвины, тюлени и киты
     text: Наблюдение за антарктической фауной становится одной из главных частей маршрута и зависит от конкретного района и условий экспедиции.

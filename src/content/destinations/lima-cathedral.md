@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: Кафедральный собор находится в историческом центре Лимы. Колониальная архитектура храма, своды и произведения
   религиозного искусства знакомят с историей перуанской столицы.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x120-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x120-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Сводчатый интерьер Кафедрального собора Лимы
 gallery: []
 themes:

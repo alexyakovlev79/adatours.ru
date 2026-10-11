@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: 'Каса-Алиага в Лиме знакомит с жилой архитектурой колониального города: историческими залами, антикварной
   мебелью и внутренними дворами.'
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x115-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x115-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Исторический интерьер дома Каса-Алиага в Лиме
 gallery: []
 themes:

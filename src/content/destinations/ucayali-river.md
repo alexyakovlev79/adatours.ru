@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: Укаяли проходит через перуанскую Амазонию. По реке путешествуют на экспедиционных судах, знакомясь с тропическими
   лесами и водными ландшафтами.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x208-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x208-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Зеленый тропический лес по берегам амазонской протоки
 gallery: []
 themes:

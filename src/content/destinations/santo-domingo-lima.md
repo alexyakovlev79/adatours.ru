@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: Монастырь Санто-Доминго в исторической части Лимы известен внутренними дворами, старинной библиотекой и
   произведениями искусства.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x110-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x110-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Аркады и двор монастыря Санто-Доминго в Лиме
 gallery: []
 themes:

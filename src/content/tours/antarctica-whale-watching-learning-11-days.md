@@ -43,7 +43,7 @@ dates:
 - 07.03.2027–17.03.2027
 - 17.03.2027–27.03.2027
 hero:
-  src: /media/tours/antarctica-discovery-learning/humpback-whale-word-20261011-v1.webp
+  src: /media/tours/antarctica-discovery-learning/humpback-whale-word-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Хвост кита над морской водой у заснеженного антарктического берега
   hover: Хвост кита над морской водой у заснеженного антарктического берега
   status: approved
@@ -146,7 +146,7 @@ itinerary:
   text: Завершается общий участок дней 4–8, посвященный открытию и изучению Антарктиды и наблюдению за китами. Доступность
     наблюдений и точное время выхода в обратный путь определяют на месте.
   images:
-  - src: /media/tours/antarctica-discovery-learning/chinstrap-penguins-word-20261011-v1.webp
+  - src: /media/tours/antarctica-discovery-learning/chinstrap-penguins-word-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Антарктические пингвины на снегу
     hover: Антарктические пингвины на снегу
     status: approved
@@ -166,7 +166,7 @@ itinerary:
   text: Дни 9–10 занимает обратный переход через пролив Дрейка. Снова можно наблюдать морских птиц, знакомых по
     пути на юг. Время выхода из Антарктиды и ход перехода зависят от состояния моря.
   images:
-  - src: /media/tours/antarctica-discovery-learning/antarctic-blue-ice-word-20261011-v1.webp
+  - src: /media/tours/antarctica-discovery-learning/antarctic-blue-ice-word-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Голубой плавучий лед в водах Антарктиды
     hover: Голубой плавучий лед в водах Антарктиды
     status: approved
@@ -176,7 +176,7 @@ itinerary:
   - Ушуайя
   text: Возвращение в Ушуайю и высадка с судна. Здесь заканчивается 11-дневная экспедиционная программа.
   images:
-  - src: /media/tours/antarctica-discovery-learning/beagle-channel-word-20261011-v1.webp
+  - src: /media/tours/antarctica-discovery-learning/beagle-channel-word-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Маяк Ле-Эклерер на скалистом острове в канале Бигль, Аргентина
     hover: Маяк Ле-Эклерер на скалистом острове в канале Бигль, Аргентина
     status: approved

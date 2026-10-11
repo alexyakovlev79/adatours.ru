@@ -14,7 +14,7 @@ relatedDestinations:
 themes:
 - theme_culture
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x120-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x120-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: Сводчатый интерьер Кафедрального собора Лимы
 gallery: []
 lead: Обзорная экскурсия по Лиме продолжительностью 5 часов. Вы познакомитесь с историческим центром города, внесенным

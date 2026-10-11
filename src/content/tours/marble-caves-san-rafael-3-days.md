@@ -84,7 +84,7 @@ itinerary:
 
     Во второй половине дня возвращение в Пуэрто-Рио-Транкило. Размещение в El Puesto Patagonia, вторая ночь в отеле.'
   images:
-  - src: /media/tours/marble-caves-san-rafael-3-days/word-lake-20261011-v1.webp
+  - src: /media/tours/marble-caves-san-rafael-3-days/word-lake-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Бирюзовая вода озера под темными облаками, горы на дальнем берегу
     status: approved
 - excursionRef: excursion_san_rafael_exploradores_boat_full_day

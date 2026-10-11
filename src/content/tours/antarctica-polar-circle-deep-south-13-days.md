@@ -233,7 +233,7 @@ itinerary:
   text: Дни 11–12 занимает возвращение через пролив Дрейка. Во время перехода снова можно наблюдать разнообразных
     морских птиц, знакомых по пути на юг.
   images:
-  - src: /media/tours/antarctica-discovery-learning/antarctic-blue-ice-word-20261011-v1.webp
+  - src: /media/tours/antarctica-discovery-learning/antarctic-blue-ice-word-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Голубой плавучий лед в водах Антарктиды
     hover: Голубой плавучий лед в водах Антарктиды
     status: approved
@@ -254,7 +254,7 @@ itinerary:
   - Ушуайя
   text: Возвращение в Ушуайю и высадка с судна. Здесь заканчивается 13-дневная экспедиция.
   images:
-  - src: /media/tours/antarctica-discovery-learning/beagle-channel-word-20261011-v1.webp
+  - src: /media/tours/antarctica-discovery-learning/beagle-channel-word-20261011-v1-enhanced-20261011-next50-v1.webp
     alt: Маяк Ле-Эклерер на скалистом острове в канале Бигль, Аргентина
     hover: Маяк Ле-Эклерер на скалистом острове в канале Бигль, Аргентина
     status: approved

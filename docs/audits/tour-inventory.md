@@ -26,7 +26,7 @@
 | ID программы | Программа / разделы Drive | Все файлы Drive | Соответствия сайта / реестра | Наличие | Работа с содержанием |
 |---|---|---|---|---|---|
 | `P109` | Большой тур по Южной Америке.pdf; 33 дн.; Vip Programmes 2027 | [Большой тур по Южной Америке.pdf](https://drive.google.com/file/d/1ydIzUxXVRHKmIGZpMtqwTQfQ8yKUir0F/view?usp=drivesdk) | — | Нужна новая программа/вариант | Не начато |
-| `P166` | Antartica Polar-Circle-2027com10%-RUS.docx; 13 дн.; Antarctica 2027-2028 | [Antartica Polar-Circle-2027com10%-RUS.docx](https://docs.google.com/document/d/1zLr992kFMz9UdiLXx9LI-RtuWbl--jS4/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | Не начато |
+| `P166` | Antartica Polar-Circle-2027com10%-RUS.docx; 13 дн.; Antarctica 2027-2028 | [Antartica Polar-Circle-2027com10%-RUS.docx](https://docs.google.com/document/d/1zLr992kFMz9UdiLXx9LI-RtuWbl--jS4/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | В работе; P166 взят чётным Word-проходом 11.10.2026 14:40 UTC: точный DOCX скачан и проверен, 13 дней/12 ночей, 06–18.03.2027, пять тарифов из embedded-таблицы; создание недостающих мест и медиа. Не брать повторно. |
 
 ## 2. Программы представлены только в архиве
 

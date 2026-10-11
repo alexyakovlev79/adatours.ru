@@ -233,8 +233,8 @@ priceFrom: 4270
 currency: USD
 priceNote: $4270
 hero:
-  src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/hero-enhanced-20261006.webp
-  alt: Пальмовые листья - отдых в Амазонии (Манаус) в Бразилии
+  src: "/media/home/amazon-enhanced-20260930.webp"
+  alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

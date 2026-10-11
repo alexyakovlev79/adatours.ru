@@ -33,9 +33,9 @@ itinerary:
 
     Ночь в Манаусе.'
   image:
-    src: /media/home/amazon-enhanced-20260930.webp
-    hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
-    alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
+    src: "/media/excursions/h-d-city-tour-manaus/hero-regenerated-20261011-v1.webp"
+    hover: "Манаус: театр Амазонас в тёплом вечернем свете"
+    alt: "Театр Амазонас с цветным куполом и площадь в Манаусе, Бразилия"
 - day: 2
   title: Манаус - встреча рек - розовые дельфины - Evolution Eco Lodge
   places:

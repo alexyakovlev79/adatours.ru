@@ -33,8 +33,8 @@ itinerary:
 
     Оставшаяся часть дня свободна. Можно сразу отправиться на прогулку и почувствовать жизнь Рио или провести несколько часов у океана, среди пальм, песка и волн.
   images:
-  - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
-    alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
+  - src: "/media/destinations/destination_brazil_rio/rio-free-beach-v2-generated-20261008.webp"
+    alt: "Мозаичная набережная и пляж Копакабаны с пальмами в золотом свете, Рио-де-Жанейро, Бразилия"
 - day: 2
   title: Сахарная Голова и пляжи
   places:

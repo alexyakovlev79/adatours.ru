@@ -124,8 +124,8 @@ itinerary:
 
     С этого дня начинается большая патагонская часть путешествия. Вместо городской застройки вокруг будут озера, открытая степь, гранитные горы и ледники.'
   images:
-  - src: /media/countries/chile/hero-enhanced-20261002.webp
-    alt: Торрес-дель-Пайне
+  - src: "/media/destinations/puerto-natales-torres-del-pajne/gallery-1-enhanced-20261005.webp"
+    alt: "Разноцветные дома на берегу Пуэрто-Наталеса на фоне гор, Чили"
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-13-enhanced-20261006.webp
     alt: Сантьяго-де-Чили
 - day: 5
@@ -565,8 +565,8 @@ itinerary:
   - Буэнос-Айрес
   text: Трансфер в аэропорт, около **40 минут**.
   images:
-  - src: /media/tours/argentina-bariloche-i-buenos-ajres/hero-enhanced-20261006.webp
-    alt: Буэнос-Айрес
+  - src: "/media/destinations/buenos-aires/hero-enhanced-20260930.webp"
+    alt: "Буэнос-Айрес, Аргентина"
 included:
 - Проживание в отелях по программе на базе завтраков.
 - Индивидуальные экскурсии по программе, кроме навигации к острову Магдалены.

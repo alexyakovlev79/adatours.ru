@@ -43,8 +43,8 @@ itinerary:
 
     Экскурсионный день вместе с переездами занимает около 6 часов.
   images:
-  - src: /media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp
-    alt: 'Эквадор: Кито – Галапагосские Острова'
+  - src: "/media/destinations/kito-vulkan-kotopahi/gallery-2-enhanced-20261006.webp"
+    alt: "Почётные караульные в синих мундирах у деревянных дверей в Кито, Эквадор"
 - excursionRef: excursion_quito_equator_six_hour_tour
   places: []
 - day: 2

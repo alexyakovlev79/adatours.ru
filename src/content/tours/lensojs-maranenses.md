@@ -118,9 +118,9 @@ itinerary:
 
     Размещение в Porto Preguiças Resort.'
   image:
-    src: /media/tours/lensojs-maranenses/hero-enhanced-20261006.webp
-    hover: "Ленсойс-Мараньенсес в Бразилии: белый песок и голубые лагуны"
-    alt: "Туристы на песчаной косе среди лагун Ленсойс-Мараньенсес, Бразилия"
+    src: "/media/destinations/lencois-maranhenses/gallery-2-enhanced-20261001.webp"
+    hover: "Ленсойс-Мараньенсес: озёра между светлыми песчаными дюнами"
+    alt: "Белые дюны и извилистые голубые лагуны Ленсойс-Мараньенсес, Бразилия"
 - day: 3
   title: Баррейриньяс - река Прегисас - Сан-Луис
   places:

@@ -105,8 +105,8 @@ itinerary:
   - Сальта
   text: После завтрака в отеле трансфер в аэропорт для вылета.
   images:
-  - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
-    alt: Удивительная Сальта
+  - src: "/media/destinations/salta/gallery-3-enhanced-20261002.webp"
+    alt: "Подсвеченный красно-жёлтый фасад церкви с башней в Сальте, Аргентина"
 included:
 - Проживание в отелях.
 - Включенное питание.

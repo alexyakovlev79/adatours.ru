@@ -86,9 +86,9 @@ priceFrom: 4225
 currency: USD
 priceNote: '$4225 с человека**. Минимальная группа: 4 человека.'
 hero:
-  src: /media/tours/amazoniya/hero-enhanced-20261006.webp
-  hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
-  alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
+  src: "/media/destinations/manaus-amazonia/hero-enhanced-20261001.webp"
+  hover: "Амазония в Бразилии"
+  alt: "Амазония в Бразилии"
 routeCountries:
 - country_brazil
 routeDestinations:

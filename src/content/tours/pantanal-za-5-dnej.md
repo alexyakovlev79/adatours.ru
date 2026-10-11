@@ -131,8 +131,8 @@ priceFrom: 4145
 currency: USD
 priceNote: $4145
 hero:
-  src: /media/destinations/pantanal/hero-enhanced-20261001.webp
-  alt: Пантанал за 5 дней
+  src: "/media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp"
+  alt: "Водные растения на водоёме Пантанала в Бразилии"
 routeCountries:
 - country_brazil
 routeDestinations:

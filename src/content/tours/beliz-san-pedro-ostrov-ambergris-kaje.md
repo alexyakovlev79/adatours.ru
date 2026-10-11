@@ -30,8 +30,8 @@ itinerary:
 
     Питание: завтрак.'
   images:
-  - src: /media/tours/beliz-san-pedro-ostrov-ambergris-kaje/hero-enhanced-20261006.webp
-    alt: Белиз:Сан-Педро, Остров Амбергрис Кайе
+  - src: "/media/countries/belize/featureBands-3-enhanced-20261002.webp"
+    alt: "На фото: остров Амбергрис-Кайе, Белиз"
 - day: 2
   title: Хол-Чан и Shark Ray Alley
   places: []

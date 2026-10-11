@@ -367,7 +367,7 @@ const orientation = layout === 'orientation';
       if (!(img instanceof HTMLImageElement)) return;
 
       const applyOrientation = () => {
-        if (!img.naturalWidth || !img.naturalHeight) return;
+        if (img.hasAttribute('data-lazy-src') || !img.naturalWidth || !img.naturalHeight) return;
         item.setAttribute(
           'data-orientation',
           img.naturalHeight > img.naturalWidth ? 'portrait' : 'landscape'
@@ -379,8 +379,10 @@ const orientation = layout === 'orientation';
         }
       };
 
+      // The inline placeholder may load before the real photo. Keep the listener
+      // until the original arrives, and never classify the placeholder.
+      img.addEventListener('load', applyOrientation);
       if (img.complete) applyOrientation();
-      else img.addEventListener('load', applyOrientation, { once: true });
     });
   };
 

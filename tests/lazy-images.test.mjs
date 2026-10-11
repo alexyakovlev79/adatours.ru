@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseFragment } from 'parse5';
+import { readFileSync } from 'node:fs';
+import { runInNewContext } from 'node:vm';
 import { deferImages } from '../src/lib/lazy-images.mjs';
 import { isWithinImageWindow, initializeLazyImages } from '../src/scripts/lazy-images.mjs';
 import { inspectHtml } from '../src/lib/structured-data-html.mjs';
@@ -105,4 +107,30 @@ test('runtime fetches only nearby images and responds to scroll, resize, hidden 
     assert.ok(distant.attrs.src);
     assert.equal(metadata.attrs.src, undefined);
   } finally { for (const [key, value] of Object.entries(saved)) value === undefined ? delete globalThis[key] : globalThis[key] = value; }
+});
+
+test('gallery orientation ignores the placeholder and updates when the original photo loads', () => {
+  const script = readFileSync(new URL('../src/components/editorial/MediaGallery.astro', import.meta.url), 'utf8').match(/<script>([\s\S]*?)<\/script>/)[1];
+  class Image {
+    complete = true; naturalWidth = 1200; naturalHeight = 900; deferred = true;
+    hasAttribute() { return this.deferred; }
+    addEventListener(name, fn, options) { this.listener = fn; this.once = options?.once; }
+  }
+  const img = new Image();
+  const attributes = { 'data-orientation': 'portrait' };
+  const item = { querySelector: () => img,
+    setAttribute: (name, value) => attributes[name] = value,
+    removeAttribute: (name) => delete attributes[name] };
+  runInNewContext(script, { HTMLImageElement: Image,
+    document: { querySelectorAll: () => [item], addEventListener() {} } });
+  assert.equal(attributes['data-orientation'], 'portrait');
+  img.listener(); // placeholder load must not consume the original's listener
+  assert.equal(attributes['data-orientation'], 'portrait');
+  assert.ok(!img.once);
+  img.deferred = false; img.naturalWidth = 700; img.naturalHeight = 1200;
+  img.listener();
+  assert.equal(attributes['data-orientation'], 'portrait');
+  img.naturalWidth = 2200; img.naturalHeight = 900; img.listener();
+  assert.equal(attributes['data-orientation'], 'landscape');
+  assert.equal(attributes['data-mobile-panorama'], 'true');
 });

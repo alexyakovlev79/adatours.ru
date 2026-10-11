@@ -50,7 +50,11 @@ for (const interest of INTERESTS) {
   assert.equal(new Set([...expectations.stories, ...expectations.experiences]).size, expectations.stories.length + expectations.experiences.length, `${root}: no repeated experience`);
   const coverTourIds = hub.countries.map((row) => row.coverTour?.data.id).filter(Boolean);
   assert.equal(new Set(coverTourIds).size, coverTourIds.length, `${root}: country geography never repeats a tour cover`);
-  for (const row of hub.countries) if (row.coverTour) assert.ok(row.tours.some((tour) => tour.data.id === row.coverTour.data.id), `${root}: cover belongs to country thematic catalogue`);
+  for (const row of hub.countries) if (row.coverTour) {
+    assert.ok(row.tours.some((tour) => tour.data.id === row.coverTour.data.id), `${root}: cover belongs to country thematic catalogue`);
+    const ids = [...new Set([...(row.coverTour.data.countries ?? []), ...(row.coverTour.data.routeCountries ?? [])])];
+    assert.deepEqual(ids, [row.entry.data.id], `${root}: country-only tour covers geography band`);
+  }
   if (hub.allTours.length) assert.ok(html.includes(`href="${base}${interestTourCatalogPath(interest)}"`), `complete tour catalogue link: ${root}`);
   for (const row of hub.countries) assert.ok(section(html, 'countries').includes(`href="${base}${interestTourCatalogPath(interest, row.entry.data)}"`), `country links preserve interest: ${root}`);
   assert.ok(html.includes('data-interest-section="cta"'), `CTA: ${root}`);
@@ -75,3 +79,4 @@ for (const collection of ['tours', 'excursions', 'destinations']) {
   }
 }
 console.log(`Interest model checks passed: ${INTERESTS.length} hubs, ${catalogs} complete thematic catalogues, ${pages} catalogue pages, ${annotations} synchronized entity annotations.`);
+

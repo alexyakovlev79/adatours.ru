@@ -119,16 +119,19 @@ export function buildInterestHub(id, { tours = [], countries = [], destinations 
       places: destinationRows.filter((row) => row.countryId === countryId).sort((a, b) => b.score - a.score || byName(a, b)).slice(0, 2).map((row) => nameOf(row.entry)) };
   }).filter((row) => row.tourCount).sort((a, b) => b.score - a.score || b.tourCount - a.tourCount || byName(a, b));
 
-  // Allocate visible country covers from the weakest displayed country upward so one
-  // multi-country tour can be the background of only one country in the geography block.
+  // Keep bottom-up allocation, but use only tours entirely within this country.
+  // A multi-country itinerary cannot determine which country its hero shows.
+  // If no country-only tour has a hero, ThemeLayout uses Country.hero.
   const countryPreview = rankedCountries.slice(0, INTEREST_LIMITS.countries);
   const usedCountryCoverTours = new Set();
   const coverTourByCountry = new Map();
   for (let index = countryPreview.length - 1; index >= 0; index -= 1) {
     const row = countryPreview[index];
     const coverTour = row.tours.find((tour) => {
-      const tourId = dataOf(tour).id;
-      return tourId && dataOf(tour).hero?.src && !usedCountryCoverTours.has(tourId);
+      const d = dataOf(tour), tourId = d.id;
+      const tourCountries = unique([...(d.countries ?? []), ...(d.routeCountries ?? [])]);
+      return tourId && d.hero?.src && !usedCountryCoverTours.has(tourId)
+        && tourCountries.length === 1 && tourCountries[0] === dataOf(row.entry).id;
     });
     if (!coverTour) continue;
     usedCountryCoverTours.add(dataOf(coverTour).id);
@@ -171,3 +174,4 @@ export function validateInterestContent({ tours = [], destinations = [], excursi
   for (const entry of countries.filter(active)) if (dataOf(entry).relatedThemes?.length || dataOf(entry).themes?.length) errors.push(`${dataOf(entry).id}: country interests must be derived.`);
   return errors;
 }
+

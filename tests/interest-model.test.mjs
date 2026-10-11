@@ -26,16 +26,43 @@ test('country scores use all tours, optional visits have lower weight and duplic
   assert.equal(hub.countries[1].score, 7.5); assert.equal(hub.countries[1].optionalCount, 15);
   assert.equal(countryMembership(tours[0], 'two'), .25);
 });
-test('geography cover tours are unique and allocated from weaker countries upward', () => {
-  const geography = [entity('brazil'), entity('argentina'), entity('peru')];
+test('geography uses country-only covers and country heroes instead of shared multi-country leaders', () => {
+  const geography = [entity('brazil'), entity('argentina', { hero: { src: '/argentina.webp' } }), entity('peru', { hero: { src: '/peru.webp' } })];
   const t1 = tour('t1', { countries: ['brazil', 'argentina', 'peru'], routeCountries: ['brazil', 'argentina', 'peru'], hero: { src: '/t1.webp' } });
   const t2 = tour('t2', { countries: ['brazil', 'argentina'], routeCountries: ['brazil', 'argentina'], hero: { src: '/t2.webp' } });
   const t3 = tour('t3', { countries: ['brazil'], routeCountries: ['brazil'], hero: { src: '/t3.webp' } });
   const hub = buildInterestHub(A, { countries: geography, tours: [t1, t2, t3], themes });
   assert.deepEqual(hub.countries.map((row) => row.entry.data.id), ['brazil', 'argentina', 'peru']);
   assert.deepEqual(hub.allCountries.map((row) => row.topTour.data.id), ['t1', 't1', 't1']);
-  assert.deepEqual(hub.countries.map((row) => row.coverTour?.data.id), ['t3', 't2', 't1']);
-  assert.equal(new Set(hub.countries.map((row) => row.coverTour?.data.id).filter(Boolean)).size, 3);
+  assert.deepEqual(hub.countries.map((row) => row.coverTour?.data.id), ['t3', undefined, undefined]);
+  assert.equal(new Set(hub.countries.map((row) => row.coverTour?.data.id).filter(Boolean)).size, 1);
+  assert.equal(hub.countries[1].entry.data.hero.src, '/argentina.webp');
+  assert.equal(hub.countries[2].entry.data.hero.src, '/peru.webp');
+});
+test('Rio multi-country hero never becomes Bolivia cover, without determining image geography', () => {
+  const countries = [entity('brazil'), entity('bolivia', { hero: { src: '/bolivia.webp' } })];
+  const shared = tour('five-countries', { countries: ['brazil', 'bolivia'], hero: { src: '/rio.webp' } });
+  const single = tour('bolivia-only', { countries: ['bolivia'], durationDays: 30, hero: { src: '/single.webp' } });
+  const hub = buildInterestHub(A, { countries, tours: [shared, single], themes });
+  const row = hub.countries.find(row => row.entry.data.id === 'bolivia');
+  assert.equal(row.topTour.data.id, shared.data.id);
+  assert.equal(row.coverTour.data.id, single.data.id);
+  assert.equal(row.tourCount, 2);
+  assert.deepEqual(hub.allTours.map(row => row.data.id), [shared.data.id, single.data.id]);
+  const withoutSingle = buildInterestHub(A, { countries, tours: [shared], themes });
+  const fallback = withoutSingle.countries.find(row => row.entry.data.id === 'bolivia');
+  assert.equal(fallback.coverTour, undefined);
+  assert.equal(fallback.entry.data.hero.src, '/bolivia.webp');
+});
+test('optional foreign visits disqualify a cover and missing tour photos use country fallback', () => {
+  const countries = [entity('one', { hero: { src: '/one.webp' } })];
+  const optional = tour('optional', { countries: ['one', 'two'], routeCountries: ['one'], hero: { src: '/optional.webp' } });
+  const noHero = tour('no-hero');
+  const hub = buildInterestHub(A, { countries, themes, tours: [optional, noHero] });
+  assert.equal(hub.countries[0].coverTour, undefined);
+  assert.equal(hub.countries[0].tourCount, 2);
+  const duplicateId = tour('single', { countries: ['one', 'one'], hero: { src: '/single.webp' } });
+  assert.equal(buildInterestHub(A, { countries, themes, tours: [duplicateId] }).countries[0].coverTour.data.id, 'single');
 });
 test('no excursion/destination inheritance and no archived/draft contribution', () => {
   const tours = [tour('a', { destinations: ['city'], itinerary: [{ excursionRef: 'sightseeing' }] }), tour('arch', { status: 'archived' }), tour('draft', { status: 'draft' })];
@@ -84,3 +111,4 @@ test('validator rejects missing primary, old vocabulary, overlap and country cur
   assert.equal(errors.length, 4); assert.deepEqual(validateInterestContent({ themes, tours: [tour('good')], destinations: [entity('intentional-empty')] }), []);
 });
 test('Russian counters have correct forms', () => { assert.equal(countLabel(1), '1 тур'); assert.equal(countLabel(2), '2 тура'); assert.equal(countLabel(11), '11 туров'); assert.equal(countLabel(21), '21 тур'); });
+

@@ -40,6 +40,8 @@ for (const {id,slug} of INTERESTS) {
     const block=html.slice(start,end>=0?end:start+20000);
     const expectedImage=row.coverTour?.data.hero?.src??row.entry.data.hero?.src;
     if(row.coverTour) {
+      const coverCountries=[...new Set([...(row.coverTour.data.countries??[]),...(row.coverTour.data.routeCountries??[])])];
+      assert.deepEqual(coverCountries,[row.entry.data.id],`${slug}: geography cover tour visits only displayed country`);
       assert.ok(row.coverTour.data.hero?.src,`${slug}: assigned cover tour has a hero`);
       assert.ok(block.includes(row.coverTour.data.hero.src),`${slug}: assigned unique tour hero`);
     } else if(expectedImage) {
@@ -107,4 +109,4 @@ for(const file of readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.ht
   pages++;
 }
 assert.ok(pages>700,'all real site pages are checked, not just a handful of examples');
-console.log(`Interest presentation checks passed: 13 sorted interests, 13 individual copy sets, 4 generated covers, unique bottom-up tour geography covers, theme-owned catalog heroes, requested theme hero alignment and inflected counters; exactly one footer form on all ${pages} real HTML pages.`);
+console.log(`Interest presentation checks passed: 13 sorted interests, 13 individual copy sets, 4 generated covers, country-only unique tour geography covers, theme-owned catalog heroes, requested theme hero alignment and inflected counters; exactly one footer form on all ${pages} real HTML pages.`);

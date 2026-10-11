@@ -144,8 +144,14 @@ destinations: &id001
 highlights:
 - title: Рио с двух высот
   text: Подъем на Корковадо на поезде через лес Тижука и поездка по канатной дороге на Сахарную Голову.
+  image:
+    src: /media/tours/luchshee-v-rio-de-zhanejro/highlights/01-rio-corcovado-panorama-enhanced-20261011-v1.webp
+    alt: "Статуя Христа Спасителя над панорамой Рио-де-Жанейро"
 - title: Острова и свободное время
   text: Морская прогулка в районе Ангра-дус-Рейс и Илья-Гранде, затем два дня без обязательной экскурсионной программы.
+  image:
+    src: /media/tours/luchshee-v-rio-de-zhanejro/highlights/02-ilha-grande-boat-enhanced-20261011-v1.webp
+    alt: "Морская прогулка у лесистого берега Илья-Гранде"
 routeDestinations: *id001
 routeCountries:
 - country_brazil
@@ -168,3 +174,4 @@ themes:
 | 5*: Miramar by Windsor | Standard | 4830 | 2624 | 2266 |
 
 Конкретный отель или равнозначная замена и наличие номеров подтверждаются при бронировании. Экскурсии в Видигал и Петрополис в эту программу не входят.
+

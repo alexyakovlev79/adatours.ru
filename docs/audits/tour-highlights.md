@@ -4,13 +4,15 @@
 
 Исходный commit: `8fa1bd809f8b36136ac2d97259c6710f3b2e0835`. Это фиксированный срез; новые туры и дальнейшие изменения требуют сверки.
 
-Неархивных активных туров с highlights: **21**. Из них **15** показывают текстовый блок, как на скриншоте; **6** уже имеют фотографии и раскрытие по «+».
+Неархивных активных туров с highlights: **21**. Из них **12** показывают текстовый блок, как на скриншоте; **9** уже имеют фотографии и раскрытие по «+».
 
-Для очереди нужно добавить **63** изображений показываемых впечатлений. Частично заполненных блоков: 0.
+Для очереди нужно добавить **52** изображений показываемых впечатлений. Частично заполненных блоков: 0.
 
 Проверены все 377 production MD: 346 активных, 31 архивных исключено. У 325 активных туров highlights пусты — они в эту очередь не входят.
 
 Обновление 11.10.2026: первые три тура очереди получили 16 фотографий через imagegen. Подробности и промпты: `data/audits/tour-highlights-batch1-20261011.json`.
+
+Обновление 11.10.2026: следующие три тура (исходные позиции 4–6) получили 11 фотографий через imagegen. Подробности и промпты: `data/audits/tour-highlights-batch2-20261011.json`.
 
 ## Как продолжать в следующих чатах
 
@@ -18,15 +20,12 @@
 - Перед работой проверить свежий MD по `contentPath`, статус в `data/catalog-archive.json` и текущие `missingImageIndices`: номера здесь начинаются с 1 и относятся к исходному массиву `highlights`, а не к порядку на экране.
 - Обычный импорт/восстановление тура не запускает эту очередь. Генерация выполняется по отдельному заданию пользователя и `docs/workflows/highlights.md`.
 - Сохранять утвержденные title/text и существующие изображения. Новые медиа загружать по `direct-s3-upload.md`, отражать в реестрах и листе «Фото». После подтвержденного подключения обновлять запись очереди, счетчики и этот список в том же логическом пакете.
-- Режим «фото + раскрытие» включается, когда `image.src` есть у всех элементов, переданных в `HighlightsEditorial`. `TourLayout` может вынести первое/последнее впечатление в отдельные истории с gallery; они не входят в 63 недостающих изображений этого блока.
+- Режим «фото + раскрытие» включается, когда `image.src` есть у всех элементов, переданных в `HighlightsEditorial`. `TourLayout` может вынести первое/последнее впечатление в отдельные истории с gallery; они не входят в 52 недостающих изображений этого блока.
 
 ## Очередь: текстовый блок
 
 | № | Тур | ID | Всего впечатлений | В блоке | Нужно фото | Номера без фото |
 |---|---|---|---:|---:|---:|---|
-| 4 | [Тур в Бразилию индивидуальный: Рио, Игуасу, Пантанал, Бонито и Бузиос](https://adatours.ru/brazil/tour/brazil-rio-iguazu-pantanal-bonito-buzios-private-tour/) | `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | 6 | 6 | 6 | 1, 2, 3, 4, 5, 6 |
-| 5 | [Дайвинг на Галапагосах: 4 или 5 дней с отелем Fiesta](https://adatours.ru/ecuador/tour/galapagos-diving-4-5-days/) | `tour_ecuador_galapagos_diving_4_5_days` | 3 | 3 | 3 | 1, 2, 3 |
-| 6 | [Лучшее в Рио-де-Жанейро: Корковадо, Сахарная Голова и тропические острова](https://adatours.ru/brazil/tour/best-of-rio-de-janeiro/) | `tour_source_luchshee_v_rio_de_zhanejro` | 2 | 2 | 2 | 1, 2 |
 | 7 | [Мечты сбываются: Парад чемпионов, Игуасу и Буэнос-Айрес](https://adatours.ru/multi-country/tour/brazil-carnival-champions-parade-dreams/) | `tour_source_mechty_sbyvayutsya_na_parad_chempionov_karnavala` | 4 | 4 | 4 | 1, 2, 3, 4 |
 | 8 | [Новый год в Рио: Копакабана, статуя Христа, Сахарная Голова](https://adatours.ru/brazil/tour/rio-new-year-copacabana-christ-redeemer-sugarloaf/) | `tour_source_nezabyvaemyj_novyj_god_v_rio` | 5 | 5 | 5 | 1, 2, 3, 4, 5 |
 | 9 | [Рио и Игуасу с еврейским наследием Бразилии](https://adatours.ru/brazil/tour/rio-iguazu-jewish-heritage-8-days/) | `tour_brazil_rio_iguazu_jewish_heritage_8_days` | 3 | 3 | 3 | 1, 2, 3 |
@@ -44,6 +43,9 @@
 
 | Тур | ID | Впечатлений в блоке |
 |---|---|---:|
+| [Тур в Бразилию индивидуальный: Рио, Игуасу, Пантанал, Бонито и Бузиос](https://adatours.ru/brazil/tour/brazil-rio-iguazu-pantanal-bonito-buzios-private-tour/) | `tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala` | 6 |
+| [Дайвинг на Галапагосах: 4 или 5 дней с отелем Fiesta](https://adatours.ru/ecuador/tour/galapagos-diving-4-5-days/) | `tour_ecuador_galapagos_diving_4_5_days` | 3 |
+| [Лучшее в Рио-де-Жанейро: Корковадо, Сахарная Голова и тропические острова](https://adatours.ru/brazil/tour/best-of-rio-de-janeiro/) | `tour_source_luchshee_v_rio_de_zhanejro` | 2 |
 | [Скрытые сокровища Боливии и Чили: 16 дней от Уюни до Патагонии](https://adatours.ru/multi-country/tour/bolivia-chile-hidden-treasures-16-days/) | `tour_bolivia_chile_hidden_treasures_16_days` | 4 |
 | [Бразилия, Перу и Аргентина: групповой тур на 15 дней](https://adatours.ru/multi-country/tour/brazil-peru-argentina-group-15-days/) | `tour_brazil_peru_argentina_group_15_days` | 3 |
 | [Тур в Бразилию на Карнавал в Рио \| Игуасу, Амазонка и Бузиос](https://adatours.ru/brazil/tour/brazil-rio-carnival-iguazu-amazon-buzios/) | `tour_source_ekzoticheskij_karnaval_v_brazilii` | 9 |
@@ -55,3 +57,4 @@
 
 «Тур в Уругвай и Парагвай 2026: скрытые сокровища Южной Америки | 16 дней» — `tour_source_tur_po_uruguayu_i_paragvayu_16_dnej`.
 Восемь текстовых впечатлений: Монтевидео, Колония-дель-Сакраменто, Канелонес, Пунта-дель-Эсте, Асунсьон, Парагвайский Чако, Лагуна Капитан, Водопады Игуасу. У всех восьми отсутствует изображение.
+

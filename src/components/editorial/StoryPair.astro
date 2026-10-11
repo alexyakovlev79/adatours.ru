@@ -8,18 +8,21 @@ interface Props {
   text: string;
   image?: string;
   reverse?: boolean;
+  imageTextAlign?: 'left' | 'right';
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
   imagePosition?: string;
   imagePositionMobile?: string;
 }
 
-const { eyebrow, title, text, image, reverse = false, mediaStatus, replacementReason, imagePosition, imagePositionMobile } = Astro.props;
+const { eyebrow, title, text, image, reverse = false, imageTextAlign, mediaStatus, replacementReason, imagePosition, imagePositionMobile } = Astro.props;
+const align = imageTextAlign ?? (reverse ? 'right' : 'left');
 const resolvedImage = image ? withBase(image) : undefined;
 ---
 
 <section
-  class:list={['story section', { 'story--reverse': reverse }]}
+  class:list={['story', `story--${align}`]}
+  data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
 >
@@ -40,62 +43,60 @@ const resolvedImage = image ? withBase(image) : undefined;
 
 <style>
   .story {
+    position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
-    gap: clamp(34px, 5vw, 80px);
-    align-items: center;
-    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
-    margin-inline: auto;
+    min-height: clamp(440px, 55vw, 680px);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    isolation: isolate;
+    color: #fff;
+    background: #171815;
   }
-
-  .story--reverse {
-    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
-  }
-
-  .story--reverse .story__media {
-    order: 2;
-  }
-
   .story__media {
-    min-height: clamp(440px, 52vw, 720px);
-    background:
-      radial-gradient(circle at 70% 20%, rgba(242,204,103,.22), transparent 30%),
-      linear-gradient(150deg, #57584f, #1a1a18);
+    position: absolute;
+    inset: 0;
+    z-index: -2;
     background-position: var(--story-image-position, center);
     background-size: cover;
   }
-
-  .story__copy {
-    min-width: 0;
-    max-width: 100%;
+  .story::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(10,10,9,.72), rgba(10,10,9,.16) 85%);
   }
-
+  .story__copy {
+    align-self: end;
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    min-width: 0;
+    margin-inline: auto;
+    padding-block: clamp(48px, 6vw, 86px);
+  }
   .story h2 {
-    max-width: 100%;
-    margin: 12px 0 24px;
-    font-size: clamp(2.35rem, 3.4vw, 4rem);
+    max-width: 920px;
+    margin: 10px 0 18px;
+    color: inherit;
+    font-size: var(--text-h2);
     line-height: 1.04;
     hyphens: auto;
     overflow-wrap: break-word;
   }
-
-  .story__copy p:last-child {
-    max-width: 520px;
-    color: rgba(26,26,26,.72);
+  .story__copy > p:last-child {
+    max-width: 700px;
+    margin-bottom: 0;
+    color: rgba(255,255,255,.9);
   }
-
+  .story--right .story__copy { text-align: right; }
+  .story--right h2,
+  .story--right .story__copy > p:last-child { margin-left: auto; }
+  .story--right::before {
+    background: linear-gradient(270deg, rgba(10,10,9,.72), rgba(10,10,9,.16) 85%);
+  }
   @media (max-width: 820px) {
-    .story,
-    .story--reverse {
-      grid-template-columns: 1fr;
-    }
-
-    .story--reverse .story__media {
-      order: initial;
-    }
-
-    .story__media {
-      background-position: var(--story-image-position-mobile, center);
-    }
+    .story__media { background-position: var(--story-image-position-mobile, var(--story-image-position, center)); }
+    .story::before { background: linear-gradient(180deg, rgba(10,10,9,.15), rgba(10,10,9,.82)); }
   }
 </style>

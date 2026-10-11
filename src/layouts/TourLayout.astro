@@ -200,6 +200,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
       title={firstStory.item.title}
       text={firstStory.item.text}
       image={firstStory.image.src}
+      imageTextAlign={d.imageTextAlign}
       mediaStatus={firstStory.image.status}
       replacementReason={firstStory.image.replacementReason}
     />
@@ -216,6 +217,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
       title={lastStory.item.title}
       text={lastStory.item.text}
       image={lastStory.image.src}
+      imageTextAlign={d.imageTextAlign}
       mediaStatus={lastStory.image.status}
       replacementReason={lastStory.image.replacementReason}
       reverse

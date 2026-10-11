@@ -32,7 +32,7 @@ featureBands:
     title: Зеленые зоны и современный город
     text: >-
       Куритиба известна вниманием к общественному транспорту, пешеходным улицам и зеленым пространствам. Благодаря этому город заметно отличается от других крупных остановок в маршруте по Бразилии.
-    image: /media/destinations/curitiba/featureBands-1-enhanced-20261001.webp
+    image: /media/destinations/curitiba/hero-enhanced-20261001.webp
   - eyebrow: Архитектура
     title: От исторического центра до Оскара Нимейера
     text: >-

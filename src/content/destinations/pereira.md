@@ -35,7 +35,7 @@ featureBands:
     title: Саленто и долина Кокора
     text: >-
       Из Перейры удобно отправиться в долину Кокора, пройти по экологической тропе среди восковых пальм, а затем продолжить день в Саленто с его колониальными улицами и ремесленными мастерскими.
-    image: "/media/destinations/pereira/featureBands-1-image-enhanced-20261007.webp"
+    image: "/media/destinations/pereira/hero-src-enhanced-20261007.webp"
 facts:
   - value: Кофейный треугольник
     label: Перейра — один из трех его городов

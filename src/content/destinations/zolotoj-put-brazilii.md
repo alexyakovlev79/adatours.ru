@@ -34,7 +34,7 @@ featureBands:
     title: Ору-Прету, Мариана и Конгоньяс
     text: >-
       В основе маршрута лежат старые города Минас-Жерайс. Здесь история добычи золота соединяется с барочной архитектурой, церквями, площадями и шахтами, открытыми для посещения.
-    image: /media/destinations/zolotoj-put-brazilii/featureBands-1-enhanced-20261001.webp
+    image: /media/destinations/zolotoj-put-brazilii/hero-enhanced-20261001.webp
   - eyebrow: Искусство
     title: Иньотим после исторических городов
     text: >-

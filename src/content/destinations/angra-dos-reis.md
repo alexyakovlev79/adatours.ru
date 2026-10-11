@@ -46,7 +46,7 @@ featureBands:
 - eyebrow: Отдых
   title: Несколько дней между Рио и островами
   text: 'Ангра подходит для паузы после насыщенной городской программы: море, отель, пляж и короткие поездки по побережью. Формат можно адаптировать для пары, семьи или небольшой частной группы.'
-  image: /media/destinations/angra-dos-reis/gallery-2-enhanced-20261001.webp
+  image: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/angra-10-generated-20261008.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii__37f42b69.md
 updatedAt: 2026-09-24

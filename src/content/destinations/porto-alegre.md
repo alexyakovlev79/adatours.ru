@@ -37,7 +37,7 @@ featureBands:
     title: Знакомство с культурой гаучу
     text: >-
       В окрестностях Порту-Алегри можно добавить конные прогулки, поездки на ранчо и знакомство с культурой гаучу. Это совсем другая Бразилия по сравнению с Рио, Баией или Амазонией.
-    image: /media/destinations/porto-alegre/featureBands-2-enhanced-20261001.webp
+    image: /media/destinations/porto-alegre/hero-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-portu-alegri-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-portu-alegri-v-brazilii__67a33061.md
 updatedAt: 2026-09-25

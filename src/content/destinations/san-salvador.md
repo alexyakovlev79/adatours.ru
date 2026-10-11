@@ -45,7 +45,7 @@ featureBands:
     title: Колониальная архитектура и современная застройка
     text: >-
       В Сан-Сальвадоре сохранились образцы колониальной архитектуры, рядом с которыми появились современные высотные здания. Среди основных достопримечательностей города — собор Катедраль-Метрополитана и церковь Эль-Росарио.
-    image: /media/destinations/san-salvador/featureBands-1-enhanced-20261006.webp
+    image: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-0-src-enhanced-20261007.webp
   - eyebrow: Городская жизнь
     title: Музеи, театры, кафе и рынки
     text: >-

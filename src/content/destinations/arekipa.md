@@ -70,7 +70,7 @@ featureBands:
     title: Инкские террасы и каньон Колка
     text: >-
       В окрестностях Арекипы сохранились сельскохозяйственные террасы, а поездка к каньону Колка добавляет к городскому маршруту горные пейзажи и возможность увидеть андских кондоров.
-    image: /media/destinations/arequipa/gallery-3-enhanced-20261005.webp
+    image: /media/excursions/kanon-kolka-i-polet-kondora/hero-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-arekipa-v-peru__e7ff1886.md
 updatedAt: 2026-10-02

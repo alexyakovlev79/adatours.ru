@@ -3,7 +3,7 @@ id: tour_source_tur_v_braziliyu_s_detmi
 locale: ru
 slug: brazil-family-tour
 status: published
-title: Семейный тур в Бразилию | Отдых с детьми в Латинской Америке
+title: Тур в Бразилию с детьми | Отдых с детьми в Латинской Америке
 countries:
 - country_brazil
 destinations:
@@ -103,7 +103,7 @@ itinerary:
     **Продолжительность:** 4 часа.'
   images:
   - src: /media/tours/tur-v-braziliyu-s-detmi/itinerary-day-12-images-1-enhanced-20261006.webp
-    alt: 'На фото: семейный тур в Бразилию (отдых с детьми) - вид со смотровой площадки в Рио'
+    alt: 'На фото: тур в Бразилию с детьми (отдых с детьми) - вид со смотровой площадки в Рио'
 - excursionRef: excursion_source_botanical_garden
   places: []
 - excursionRef: excursion_rio_maracana_stadium_tour
@@ -255,7 +255,7 @@ currency: USD
 priceNote: $3656
 hero:
   src: /media/tours/tur-v-braziliyu-s-detmi/hero-enhanced-20261006.webp
-  alt: 'На фото: семейный тур в Бразилию (отдых с детьми) - макуко сафари'
+  alt: 'На фото: тур в Бразилию с детьми (отдых с детьми) - макуко сафари'
 routeCountries:
 - country_brazil
 routeDestinations:

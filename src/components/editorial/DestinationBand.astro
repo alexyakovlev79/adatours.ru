@@ -52,7 +52,7 @@ const vip = (await getVipTourPaths()).has(href);
       : <span class="band-card__media" aria-hidden="true"></span>}
     <span class="band-card__overlay" aria-hidden="true"></span>
     {vip && <VipBadge overlay />}
-    {eyebrow && <span class="band-card__eyebrow eyebrow">{eyebrow}</span>}
+    {eyebrow && eyebrow !== 'По интересам' && <span class="band-card__eyebrow eyebrow">{eyebrow}</span>}
     <strong class="band-card__title">{title}</strong>
     {text && <span class="band-card__description"><InlineMarkdown text={text} /></span>}
     <span class="band-card__link">Смотреть <span aria-hidden="true">↗</span></span>
@@ -66,7 +66,7 @@ const vip = (await getVipTourPaths()).has(href);
     <div class="band__overlay"></div>
     {vip && <VipBadge overlay />}
     <div class="band__content">
-      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      {eyebrow && eyebrow !== 'По интересам' && <p class="eyebrow">{eyebrow}</p>}
       <Heading class="band__title">{title}</Heading>
       {text && <p class="band__text"><InlineMarkdown text={text} /></p>}
       <span class="band__link">Смотреть <span aria-hidden="true">↗</span></span>

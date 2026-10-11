@@ -13,7 +13,7 @@ const vip = (await getVipTourPaths()).has(href);
   <a href={withBase(href)} class="interest-card__link">
     {image && <div class="interest-card__image"><img src={withBase(image)} alt="" loading="lazy" decoding="async" />{vip && <VipBadge overlay />}</div>}
     <div class="interest-card__copy" data-text-align={imageTextAlign}>
-      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      {eyebrow && eyebrow !== 'По интересам' && <p class="eyebrow">{eyebrow}</p>}
       <h3>{title}<span aria-hidden="true"> ↗</span></h3>
       {meta && <p class="interest-card__meta">{meta}</p>}
       {text && <p class="interest-card__text">{text}</p>}

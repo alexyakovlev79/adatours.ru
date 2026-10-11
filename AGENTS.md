@@ -6,6 +6,8 @@
 
 Выполнять актуальный запрос пользователя. Для типового наполнения читать только выбранный workflow и точную запись `data/source-index/entries/<entityId>.json`.
 
+**Ускорение и PageSpeed:** `docs/workflows/performance.md`, `data/performance/pages.json` и журнал Google Sheets из workflow. Каждый следующий эксперимент сначала обсуждать с Алексеем; после согласованного изменения — 3 независимых PSI-прогона Mobile и Desktop, медианы и сравнение с эталоном. Бразилия с видео — отдельные строки для устройств. Не смешивать ERROR / REUSED / DRIFT с VALID и не вычислять эффект lazy load без замеров «до».
+
 | Задача | Workflow |
 |---|---|
 | Разметка интересов / тематические страницы | `docs/workflows/interests.md` |

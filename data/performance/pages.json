@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "origin": "https://adatours.ru",
+  "pages": [
+    {
+      "id": "home",
+      "name": "Главная",
+      "path": "/",
+      "url": "https://adatours.ru/",
+      "type": "Главная",
+      "template": "src/pages/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "countries",
+      "name": "Каталог стран",
+      "path": "/country/",
+      "url": "https://adatours.ru/country/",
+      "type": "Каталог стран",
+      "template": "src/pages/country/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "country-photo",
+      "name": "Страна — фото",
+      "path": "/argentina/",
+      "url": "https://adatours.ru/argentina/",
+      "type": "Страна",
+      "template": "src/layouts/CountryLayout.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "brazil",
+      "name": "Бразилия — видео",
+      "path": "/brazil/",
+      "url": "https://adatours.ru/brazil/",
+      "type": "Страна с видео",
+      "template": "src/layouts/CountryLayout.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Desktop: video; Mobile: poster"
+    },
+    {
+      "id": "place",
+      "name": "Место — Рио",
+      "path": "/brazil/place/rio-de-janeiro/",
+      "url": "https://adatours.ru/brazil/place/rio-de-janeiro/",
+      "type": "Место",
+      "template": "src/layouts/DestinationLayout.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "tour",
+      "name": "Тур — три экосистемы",
+      "path": "/brazil/tour/brazil-three-ecosystems-8-days/",
+      "url": "https://adatours.ru/brazil/tour/brazil-three-ecosystems-8-days/",
+      "type": "Тур",
+      "template": "src/layouts/TourLayout.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "excursion",
+      "name": "Экскурсия — Лапа",
+      "path": "/brazil/rio-de-janeiro/lapa-nightlife-tour-6-hours/",
+      "url": "https://adatours.ru/brazil/rio-de-janeiro/lapa-nightlife-tour-6-hours/",
+      "type": "Экскурсия",
+      "template": "src/layouts/ExcursionLayout.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "tours",
+      "name": "Каталог туров",
+      "path": "/tours/",
+      "url": "https://adatours.ru/tours/",
+      "type": "Каталог товаров: туры",
+      "template": "src/layouts/EntityCatalogLayout.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "places",
+      "name": "Каталог мест",
+      "path": "/places/",
+      "url": "https://adatours.ru/places/",
+      "type": "Каталог товаров: места",
+      "template": "src/layouts/EntityCatalogLayout.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "excursions",
+      "name": "Каталог экскурсий",
+      "path": "/excursions/",
+      "url": "https://adatours.ru/excursions/",
+      "type": "Каталог товаров: экскурсии",
+      "template": "src/layouts/EntityCatalogLayout.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "interest-index",
+      "name": "Каталог интересов",
+      "path": "/interests/",
+      "url": "https://adatours.ru/interests/",
+      "type": "Каталог интересов",
+      "template": "src/pages/interests/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "interest",
+      "name": "Интерес — культура",
+      "path": "/interests/culture-and-history/",
+      "url": "https://adatours.ru/interests/culture-and-history/",
+      "type": "Интерес",
+      "template": "src/layouts/ThemeLayout.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "interest-country",
+      "name": "Интерес + страна",
+      "path": "/interests/culture-and-history/tours/brazil/",
+      "url": "https://adatours.ru/interests/culture-and-history/tours/brazil/",
+      "type": "Каталог по интересу",
+      "template": "src/pages/interests/[...catalog].astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "vip",
+      "name": "VIP",
+      "path": "/vip/",
+      "url": "https://adatours.ru/vip/",
+      "type": "Коммерческая: VIP",
+      "template": "src/pages/vip/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "multi",
+      "name": "Multi-country",
+      "path": "/multi-country/",
+      "url": "https://adatours.ru/multi-country/",
+      "type": "Коммерческая: multi-country",
+      "template": "src/pages/multi-country/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "mice",
+      "name": "MICE",
+      "path": "/mice/",
+      "url": "https://adatours.ru/mice/",
+      "type": "Коммерческая: MICE",
+      "template": "src/pages/mice/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "dmc",
+      "name": "DMC",
+      "path": "/dmc/",
+      "url": "https://adatours.ru/dmc/",
+      "type": "Коммерческая: DMC",
+      "template": "src/pages/dmc/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "about",
+      "name": "О компании",
+      "path": "/about/",
+      "url": "https://adatours.ru/about/",
+      "type": "О компании",
+      "template": "src/pages/about/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "team",
+      "name": "Команда",
+      "path": "/team/",
+      "url": "https://adatours.ru/team/",
+      "type": "Команда",
+      "template": "src/pages/team/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "person",
+      "name": "Профиль — Анна",
+      "path": "/team/anna-avanesova/",
+      "url": "https://adatours.ru/team/anna-avanesova/",
+      "type": "Профиль",
+      "template": "src/pages/team/[slug].astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "reviews",
+      "name": "Отзывы",
+      "path": "/reviews/",
+      "url": "https://adatours.ru/reviews/",
+      "type": "Отзывы",
+      "template": "src/pages/reviews/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "cases",
+      "name": "Каталог кейсов",
+      "path": "/cases/",
+      "url": "https://adatours.ru/cases/",
+      "type": "Каталог кейсов",
+      "template": "src/pages/cases/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "case",
+      "name": "Кейс — делегация",
+      "path": "/cases/business-delegation-sao-paulo-campinas-2026/",
+      "url": "https://adatours.ru/cases/business-delegation-sao-paulo-campinas-2026/",
+      "type": "Кейс",
+      "template": "src/layouts/CaseLayout.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "contacts",
+      "name": "Контакты",
+      "path": "/contacts/",
+      "url": "https://adatours.ru/contacts/",
+      "type": "Контакты",
+      "template": "src/pages/contacts/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    },
+    {
+      "id": "legal",
+      "name": "Юридическая",
+      "path": "/privacy/",
+      "url": "https://adatours.ru/privacy/",
+      "type": "Юридическая",
+      "template": "src/pages/privacy/index.astro",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runs": 3,
+      "heroPolicy": "Фото / без hero-видео"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ destinationType: island
 summary: Бартоломе — небольшой вулканический остров Галапагосов, известный панорамой скалы Pinnacle Rock и двух
   бухт. На склонах видны следы вулканического происхождения архипелага.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-07-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-07-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Остров Бартоломе
 gallery: []
 themes:

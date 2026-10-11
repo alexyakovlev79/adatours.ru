@@ -101,7 +101,7 @@ itinerary:
   - Пуэрто-Айора
   - Исследовательская станция Чарльза Дарвина
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Остров Санта-Крус (Галапагосы)
 - day: 2
   title: Остров Флореана
@@ -282,7 +282,7 @@ itinerary:
   - Остров Сеймур-Норте
   - Остров Москера
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Остров Сеймур-Норте
 - day: 8
   title: Большой Дафне и Бальтра

@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: Килотоа — озеро в вулканическом кратере Центральных Анд Эквадора. С края кальдеры открывается круговая
   панорама озера, крутых склонов и окружающих высокогорий.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Озеро Килотоа
 gallery: []
 themes:

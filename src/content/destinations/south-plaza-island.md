@@ -9,7 +9,7 @@ destinationType: island
 summary: Пласа-Сур — небольшой остров Галапагосов с вулканическими берегами, опунциями и ярким почвенным покровом.
   На фоне океана здесь особенно заметны красные и зелёные оттенки растительности.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-09-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-09-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Остров Пласа-Сур
 gallery: []
 themes:

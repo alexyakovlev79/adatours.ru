@@ -9,7 +9,7 @@ destinationType: island
 summary: Санта-Крус — один из главных островов для наземного путешествия по Галапагосам. Его северные сухие берега
   сменяются зелёными высокогорьями, а на южном побережье расположен город Пуэрто-Айора.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Остров Санта-Крус (Галапагосы)
 gallery: []
 themes:

@@ -18,7 +18,7 @@ duration: 11–12 часов с переездами
 language:
 - русский
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-01-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-01-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: 'Чимборасо и Ингапирка: высокогорье и наследие инков'
 gallery: []
 lead: Поездка из Риобамбы к заповеднику Чимборасо и археологическому комплексу Ингапирка с завершением в Куэнке.

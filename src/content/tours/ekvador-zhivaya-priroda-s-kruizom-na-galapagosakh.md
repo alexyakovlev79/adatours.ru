@@ -397,7 +397,7 @@ itinerary:
   - Музей Интиньян
   - Пулулагуа
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-04-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-04-20261009-v1-enhanced-20261011-doc-v1.webp
     hover: 'Митад-дель-Мундо в Эквадоре: пара перед памятником с шаром на вершине'
     alt: Пара у монумента Митад-дель-Мундо, Эквадор
 - day: 11
@@ -495,7 +495,7 @@ itinerary:
   - Тигуа
   - Кито & вулкан Котопахи
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Озеро Килотоа
 - day: 15
   title: Перелет на Галапагосы и остров Сан-Кристобаль
@@ -628,7 +628,7 @@ itinerary:
   - Остров Балтра
   - Кратеры-Близнецы
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Остров Санта-Крус (Галапагосы)
 included:
 - 'Трансферы и экскурсии: групповые в Bellavista, Амазонии и на Галапагосских островах; индивидуальные в остальной

@@ -75,7 +75,7 @@ itinerary:
 
     (ужин)'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-10-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-10-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Кито
 - day: 2
   title: 31 декабря 2026 года. Кито, линия экватора и Новый год
@@ -145,7 +145,7 @@ itinerary:
 
     (завтрак, ужин)'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-03-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-03-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Кито
 - day: 3
   title: 1 января 2027 года. Тигуа, Килотоа и Баньос
@@ -199,7 +199,7 @@ itinerary:
 
     Питание: завтрак, ланч-бокс.'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Озеро Килотоа
 - day: 4
   title: 2 января 2027 года. Баньос, водопады и Риобамба
@@ -239,7 +239,7 @@ itinerary:
 
     Питание: завтрак, ланч-бокс.'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Заповедник Чимборасо
   contentBlocks:
   - type: excursion
@@ -343,7 +343,7 @@ itinerary:
 
     Питание: завтрак, обед.'
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Остров Санта-Крус (Галапагосы)
 - day: 9
   title: 7 января 2027 года. Морская экскурсия на Бартоломе
@@ -549,20 +549,20 @@ primaryThemes:
 - theme_events
 - theme_wildlife
 gallery:
-- src: /media/tours/complete-ecuador-new-year/word-04-20261009-v1.webp
+- src: /media/tours/complete-ecuador-new-year/word-04-20261009-v1-enhanced-20261011-doc-v1.webp
   hover: "Митад-дель-Мундо в Эквадоре: пара перед памятником с шаром на вершине"
   alt: "Пара у монумента Митад-дель-Мундо, Эквадор"
-- src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1.webp
+- src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Озеро Килотоа
-- src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1.webp
+- src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Чимборасо
-- src: /media/tours/complete-ecuador-new-year/word-01-20261009-v1.webp
+- src: /media/tours/complete-ecuador-new-year/word-01-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Ингапирка
-- src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1.webp
+- src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Гигантская черепаха Санта-Крус
-- src: /media/tours/complete-ecuador-new-year/word-07-20261009-v1.webp
+- src: /media/tours/complete-ecuador-new-year/word-07-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Остров Бартоломе
-- src: /media/tours/complete-ecuador-new-year/word-09-20261009-v1.webp
+- src: /media/tours/complete-ecuador-new-year/word-09-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Игуана на Галапагосах
 ---
 

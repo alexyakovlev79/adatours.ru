@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: Ингапирка — археологический комплекс в южных Андах Эквадора, где сохранилось наследие народа каньяри и
   инков. Его главное сооружение — эллиптический Храм Солнца из тщательно подогнанных каменных блоков.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-01-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-01-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Ингапирка
 gallery: []
 themes:

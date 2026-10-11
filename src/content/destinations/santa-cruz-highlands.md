@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: Зеленая внутренняя часть острова Санта-Крус знакомит с гигантскими сухопутными черепахами. Здесь начинается
   наземная часть дайвинг-путешествия по Галапагосам.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Гигантская сухопутная черепаха на траве и путешественница позади нее
 gallery: []
 themes:

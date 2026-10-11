@@ -16,7 +16,7 @@ themes:
 - theme_culture
 duration: 11 часов с переездами
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Озеро Килотоа
 gallery: []
 lead: Плантация роз в долине Котопакси, мастерская индейской живописи в Тигуа и смотровая площадка кратера

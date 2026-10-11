@@ -395,7 +395,7 @@ itinerary:
   - Музей Интиньян
   - Пулулагуа
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-04-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-04-20261009-v1-enhanced-20261011-doc-v1.webp
     hover: 'Митад-дель-Мундо в Эквадоре: пара перед памятником с шаром на вершине'
     alt: Пара у монумента Митад-дель-Мундо, Эквадор
 - day: 7

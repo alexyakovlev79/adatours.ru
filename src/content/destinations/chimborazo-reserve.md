@@ -9,7 +9,7 @@ destinationType: national_park
 summary: Заповедник Чимборасо охраняет высокогорные ландшафты вокруг самой высокой вершины Эквадора. Над открытыми
   пространствами парамо поднимается заснеженный вулкан Чимборасо.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Заповедник Чимборасо
 gallery: []
 themes:

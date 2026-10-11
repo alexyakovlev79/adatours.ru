@@ -497,7 +497,7 @@ itinerary:
 
     Включены завтрак и обед.
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Остров Сеймур-Норте
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []

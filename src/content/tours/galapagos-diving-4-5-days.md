@@ -51,7 +51,7 @@ priceNote: 'На человека: 4 дня / 3 ночи, 2 дня дайвин�
 dates:
 - 2027 год; начало в любой день
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-07-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-07-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Вулканические берега, бирюзовая бухта и остроконечная скала на Галапагосах
 gallery: []
 lead: 'Галапагосы с базой в отеле Fiesta: гигантские черепахи в высокогорьях Санта-Крус и 2 или 3 дня дайвинга среди
@@ -94,7 +94,7 @@ itinerary:
     часа и снэк. Обед, возвращение в дайв-центр в 15:15 или 16:30. Дайв-сайты выбираются по дню недели, условиям
     в океане и опыту участников. Ночь в Fiesta.
   images:
-  - src: /media/tours/complete-ecuador-new-year/word-07-20261009-v1.webp
+  - src: /media/tours/complete-ecuador-new-year/word-07-20261009-v1-enhanced-20261011-doc-v1.webp
     alt: Вулканические берега, бирюзовая бухта и остроконечная скала на Галапагосах
 - excursionRef: excursion_galapagos_two_dive_day
 - day: 3

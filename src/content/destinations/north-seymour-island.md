@@ -9,7 +9,7 @@ destinationType: island
 summary: Сеймур-Норте — остров Галапагосского архипелага, известный наземными прогулками и наблюдением за птицами.
   Сухие вулканические берега и деревья пало санто создают открытый ландшафт.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1.webp
+  src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Остров Сеймур-Норте
 gallery: []
 themes:

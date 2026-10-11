@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import yaml from 'js-yaml';
+import { CATALOG_PAGE_SIZE } from '../src/lib/catalog-pagination.ts';
 import { INTERESTS, buildInterestHub, buildInterestIndex, interestTourCatalogPath, countLabel } from '../src/lib/interest-model.mjs';
 import { interestCopy, interestTourCount, relatedInterestCount, interestCatalogDescription } from '../src/lib/interest-copy.mjs';
 const collections = Object.fromEntries(['tours','countries','destinations','excursions','themes'].map(collection => [collection,
@@ -53,7 +54,7 @@ for (const {id,slug} of INTERESTS) {
     const countryRoot=interestTourCatalogPath({slug},row.entry), countryHtml=at(countryRoot);
     assert.ok(countryHtml.includes(interestCatalogDescription(id,row.tourCount,row.entry.data.name)));
     assert.ok(heroSection(countryHtml).includes(themeHero),`${slug}: ${row.entry.data.id} catalog uses theme hero`);
-    if(row.tours.length>10) assert.ok(heroSection(at(`${countryRoot}page/2/`)).includes(themeHero),`${slug}: ${row.entry.data.id} page 2 uses theme hero`);
+    if(row.tours.length>CATALOG_PAGE_SIZE) assert.ok(heroSection(at(`${countryRoot}page/2/`)).includes(themeHero),`${slug}: ${row.entry.data.id} page 2 uses theme hero`);
   }
 }
 const enhancements=JSON.parse(readFileSync('src/data/media/photo-enhancements.json','utf8')).enhancements;

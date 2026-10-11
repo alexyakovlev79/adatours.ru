@@ -1,4 +1,6 @@
 /** Progressive enhancement: the link and numbered pagination also work without JavaScript. */
+import { CATALOG_PAGE_SIZE } from '../lib/catalog-pagination';
+
 export function initializeCatalogLoadMore(): void {
   document.querySelectorAll<HTMLElement>('[data-catalog-root]').forEach((root) => {
     if (root.dataset.catalogInitialized) return;
@@ -10,6 +12,7 @@ export function initializeCatalogLoadMore(): void {
     root.dataset.catalogInitialized = 'true';
     let loading = false;
     let loadedPage = Number(root.dataset.catalogPage);
+    let loadedTo = Number(root.dataset.catalogTo);
     const firstItem = Number(root.dataset.catalogFrom);
     const totalItems = Number(root.dataset.catalogTotal);
     const originalLabel = more.innerHTML;
@@ -42,6 +45,7 @@ export function initializeCatalogLoadMore(): void {
           || nextRoot.dataset.catalogKey !== root.dataset.catalogKey
           || nextRoot.dataset.catalogVersion !== root.dataset.catalogVersion
           || Number(nextRoot.dataset.catalogPage) !== loadedPage + 1
+          || Number(nextRoot.dataset.catalogFrom) !== loadedTo + 1
           || Number(nextRoot.dataset.catalogTotal) !== totalItems) {
           throw new Error('Catalogue changed between requests');
         }
@@ -51,7 +55,9 @@ export function initializeCatalogLoadMore(): void {
         const existingIds = new Set(Array.from(items.querySelectorAll<HTMLElement>('[data-catalog-item]'))
           .map((item) => item.dataset.catalogItem));
         const newIds = new Set(additions.map((item) => item.dataset.catalogItem));
-        if (!additions.length || additions.length > 10 || newIds.size !== additions.length
+        if (!additions.length || additions.length > CATALOG_PAGE_SIZE || newIds.size !== additions.length
+          || Number(nextRoot.dataset.catalogTo) !== Math.min(loadedTo + CATALOG_PAGE_SIZE, totalItems)
+          || additions.length !== Number(nextRoot.dataset.catalogTo) - loadedTo
           || additions.some((item) => !item.dataset.catalogItem || existingIds.has(item.dataset.catalogItem))) {
           throw new Error('Invalid or repeated catalogue items');
         }
@@ -60,6 +66,7 @@ export function initializeCatalogLoadMore(): void {
         if (subsequentURL && subsequentURL.origin !== window.location.origin) throw new Error('Foreign next page');
         items.append(...additions);
         loadedPage += 1;
+        loadedTo = Number(nextRoot.dataset.catalogTo);
         count.textContent = `Показано ${firstItem}–${nextRoot.dataset.catalogTo} из ${totalItems}`;
         if (subsequentURL) more.href = subsequentURL.href;
         else more.hidden = true;

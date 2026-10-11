@@ -5,7 +5,7 @@ import { CATALOG_PAGE_SIZE, catalogPagePath, paginateCatalog, paginationNumbers 
 const root = '/brazil/place/rio-de-janeiro/tour/';
 
 test('page one uses the existing root, following pages have distinct paths', () => {
-  assert.equal(CATALOG_PAGE_SIZE, 10);
+  assert.equal(CATALOG_PAGE_SIZE, 30);
   assert.equal(catalogPagePath(root, 1), root);
   assert.equal(catalogPagePath(root, 2), `${root}page/2/`);
   for (const value of [0, -1, 1.5, NaN, Infinity, '2']) assert.throws(() => catalogPagePath(root, value));
@@ -15,21 +15,21 @@ test('page one uses the existing root, following pages have distinct paths', () 
 });
 
 test('pagination preserves every item and its order, including exact boundaries', () => {
-  for (const count of [0, 1, 5, 10, 11, 20, 21, 33, 60, 136, 342]) {
+  for (const count of [0, 1, 5, 10, 11, 29, 30, 31, 59, 60, 61, 90, 91, 136, 342]) {
     const entries = Array.from({ length: count }, (_, index) => `item-${index}`);
     const original = [...entries];
     const pages = paginateCatalog(entries, root);
-    assert.equal(pages.length, Math.ceil(count / 10));
+    assert.equal(pages.length, Math.ceil(count / CATALOG_PAGE_SIZE));
     assert.deepEqual(pages.flatMap((page) => page.entries), original);
     assert.deepEqual(entries, original);
     for (const [index, { entries: chunk, pagination: p }] of pages.entries()) {
-      assert.ok(chunk.length > 0 && chunk.length <= 10);
+      assert.ok(chunk.length > 0 && chunk.length <= CATALOG_PAGE_SIZE);
       assert.equal(p.currentPage, index + 1);
       assert.equal(p.canonical, catalogPagePath(root, index + 1));
       assert.equal(p.previousPath, index ? catalogPagePath(root, index) : undefined);
       assert.equal(p.nextPath, index + 1 < pages.length ? catalogPagePath(root, index + 2) : undefined);
-      assert.equal(p.from, index * 10 + 1);
-      assert.equal(p.to, Math.min((index + 1) * 10, count));
+      assert.equal(p.from, index * CATALOG_PAGE_SIZE + 1);
+      assert.equal(p.to, Math.min((index + 1) * CATALOG_PAGE_SIZE, count));
       assert.equal(p.totalItems, count);
     }
   }

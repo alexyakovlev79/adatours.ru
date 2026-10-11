@@ -1,4 +1,4 @@
-export const CATALOG_PAGE_SIZE = 10;
+export const CATALOG_PAGE_SIZE = 30;
 
 export interface CatalogPagination {
   rootPath: string;

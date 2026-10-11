@@ -67,6 +67,8 @@ for (const path of files) {
     assert.ok(hrefs.has(absolute(key)), `first page link: ${context}`);
     assert.ok(hrefs.has(absolute(catalogPagePath(key, page - 1))), `previous page link: ${context}`);
     assert.ok(titleText.includes(`страница ${page}`), `numbered title: ${context}`);
+    assert.ok(metaDescription.includes(`Страница ${page} из ${last}`) || metaDescription.includes(`страница ${page} из ${last}`), `numbered description: ${context}`);
+    assert.ok(metaDescription.includes(`${from}–${to} из ${total}`), `description range: ${context}`);
   }
   const more = links.find((tag) => /\bdata-catalog-load-more\b/.test(tag));
   if (page < last) {

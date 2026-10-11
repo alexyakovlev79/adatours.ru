@@ -3450,14 +3450,27 @@
   },
   "online_checks": {
     "attempted": 290,
-    "confirmed_200_and_canonical": 33,
-    "proxy_blocked": 254,
-    "unconfirmed_502": 3,
-    "note": "Прокси 403 относится к среде проверки; HTTP 502 тоже не доказывает отсутствие страницы. Повторение через веб-ридер результата не дало."
+    "confirmed_200_and_canonical": 290,
+    "confirmed_without_redirect": 290,
+    "proxy_blocked": 0,
+    "unconfirmed_502": 0,
+    "unconfirmed": 0,
+    "retry_attempted": 257,
+    "retry_confirmed": 257,
+    "retry_evidence": "online-retry-results.json",
+    "note": "All 257 initially unconfirmed URLs passed the repeat GET check. The original 254 CONNECT 403 errors came from the checking environment proxy; the 3 earlier 502 responses did not recur. The exact cause of the original proxy block was not established. Rechecks used four concurrent requests and a standard browser User-Agent. The remaining 33 URLs retain their original successful checks."
   },
   "relations_validation": {
     "command": "node scripts/check-site-relations.mjs --data-only",
     "errors": 0
   },
-  "identity_issues": []
+  "identity_issues": [],
+  "previous_online_checks": {
+    "attempted": 290,
+    "confirmed_200_and_canonical": 33,
+    "proxy_blocked": 254,
+    "unconfirmed_502": 3,
+    "note": "Прокси 403 относится к среде проверки; HTTP 502 тоже не доказывает отсутствие страницы. Повторение через веб-ридер результата не дало."
+  },
+  "online_rechecked_at": "2026-10-11T18:01:07+00:00"
 }

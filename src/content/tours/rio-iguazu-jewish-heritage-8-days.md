@@ -41,10 +41,19 @@ lead: Четыре ночи в Рио и три у водопадов Игуас
 highlights:
   - title: Рио с двух вершин
     text: Канатная дорога на Сахарную Голову и поезд через лес Тижука к статуе Христа-Искупителя.
+    image:
+      src: /media/tours/rio-iguazu-jewish-heritage-8-days/highlights/01-rio-summit-enhanced-20261011-v1.webp
+      alt: "Залив Гуанабара и Сахарная Голова с вершины Корковадо"
   - title: Еврейское наследие города
     text: Синагоги в маршруте по историческому центру Рио вместе с церквями и колониальной архитектурой.
+    image:
+      src: /media/tours/rio-iguazu-jewish-heritage-8-days/highlights/02-jewish-heritage-enhanced-20261011-v1.webp
+      alt: "Менора в интерьере синагоги — еврейское наследие Рио"
   - title: Оба берега Игуасу
     text: Панорамная прогулка в Бразилии и поезд к Глотке Дьявола с аргентинской стороны.
+    image:
+      src: /media/tours/rio-iguazu-jewish-heritage-8-days/highlights/03-iguazu-devils-throat-enhanced-20261011-v1.webp
+      alt: "Глотка Дьявола с аргентинской смотровой площадки"
 itinerary:
   - day: 1
     title: Прилет в Рио-де-Жанейро
@@ -176,3 +185,4 @@ updatedAt: '2026-10-11'
 | 5* | Miramar Copacabana (4 ночи) + DoubleTree by Hilton (3 ночи), BB + услуги по программе | $4281 | $3876 | $2617 | $2327 |
 
 Минимальный тариф $1950 относится к варианту 4* с размещением DBL. Стоимость дополнительных экскурсий и международных перелетов в него не входит.
+

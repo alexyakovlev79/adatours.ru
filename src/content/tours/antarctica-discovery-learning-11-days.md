@@ -39,6 +39,7 @@ routeDestinations:
 - destination_antarctica_brabant_island
 - destination_antarctica_anvers_island
 - destination_antarctica_antarkticheskij_poluostrov
+- destination_antarctica_yuzhnye_shetlandskie_ostrova
 primaryThemes:
 - theme_cruises
 - theme_wildlife

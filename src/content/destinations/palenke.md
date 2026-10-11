@@ -9,22 +9,7 @@ destinationType: "region"
 summary: "Паленке в штате Чьяпас объединяет современный город и руины древнего города майя. Рядом с археологическим памятником находятся природные зоны и водопад Мисоль-Ха."
 searchAliases: []
 hero: {"src":"/media/destinations/palenque/hero-enhanced-20261004.webp","alt":"На фото: древний город майя Паленке в Мексике"}
-gallery:
-- src: /media/destinations/palenque/gallery-1-enhanced-20261004.webp
-  hover: "Паленке: древние каменные платформы, лестницы и башня"
-  alt: "Каменные ступенчатые сооружения и башня среди зелени Паленке, Мексика"
-- src: /media/destinations/palenque/gallery-2-enhanced-20261004.webp
-  alt: "Каменная ступенчатая пирамида Паленке с храмом наверху, Мексика"
-  hover: "Паленке в Мексике: храм на вершине каменной пирамиды"
-- src: /media/tours/meksika-fantasticheskaya/itinerary-5-images-0-src-enhanced-20261007.webp
-  alt: "Каменные террасы и лестницы Паленке под деревьями, Мексика"
-  hover: "Паленке: ступенчатые руины с зеленью между каменными уступами"
-- src: /media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp
-  alt: "Пирамида с храмом и человек на зелёной площади Паленке, Мексика"
-  hover: "Паленке: каменный храм на фоне леса и человек на площади"
-- src: /media/tours/fantasticheskij-tur-po-meksike/hero-src-enhanced-20261007.webp
-  alt: "Ступенчатые каменные руины Паленке среди деревьев, Мексика"
-  hover: "Паленке в Мексике: древние стены и лестницы среди зелени"
+gallery: [{"src": "/media/destinations/palenque/gallery-1-enhanced-20261004.webp", "hover": "Паленке: древние каменные платформы, лестницы и башня", "alt": "Каменные ступенчатые сооружения и башня среди зелени Паленке, Мексика"}, {"src": "/media/destinations/palenque/gallery-2-enhanced-20261004.webp", "alt": "Каменная ступенчатая пирамида Паленке с храмом наверху, Мексика", "hover": "Паленке в Мексике: храм на вершине каменной пирамиды"}, {"src": "/media/tours/meksika-fantasticheskaya/itinerary-5-images-0-src-enhanced-20261007.webp", "alt": "Каменные террасы и лестницы Паленке под деревьями, Мексика", "hover": "Паленке: ступенчатые руины с зеленью между каменными уступами"}, {"src": "/media/tours/meksika-fantasticheskaya/itinerary-6-images-0-src-enhanced-20261007.webp", "alt": "Пирамида с храмом и человек на зелёной площади Паленке, Мексика", "hover": "Паленке: каменный храм на фоне леса и человек на площади"}]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -9,31 +9,7 @@ destinationType: "city"
 summary: "Медельин окружен холмами и зелеными горными склонами. Здесь можно увидеть старинные базилики, коллекцию орхидей в ботаническом саду и скульптуры Ботеро."
 searchAliases: []
 hero: {"src":"/media/destinations/medellin/hero-enhanced-20261003.webp","alt":"Панорама Медельина с высотными домами и горами, Колумбия", hover: "Медельин в Колумбии: городская застройка на фоне гор"}
-gallery:
-- src: /media/destinations/medellin/gallery-1-enhanced-20261003.webp
-  hover: "Медельин: церковь, фонтан и яркие дома вокруг небольшой площади"
-  alt: "Мощёная площадь с белой церковью и цветными домами в Медельине, Колумбия"
-- src: /media/destinations/medellin/gallery-2-enhanced-20261003.webp
-  hover: "Медельин: поезд метро и пассажиры на станции"
-  alt: "Поезд метро у крытой платформы станции в Медельине, Колумбия"
-- src: /media/destinations/medellin/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: город Медельин в Колумбии'
-- src: /media/destinations/medellin/gallery-4-enhanced-20261003.webp
-  hover: "Медельин в Колумбии: высотное здание с заостренной белой башней"
-  alt: "Высотное здание с заостренной белой башней, Медельин, Колумбия"
-- src: /media/destinations/medellin/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: город Медельин в Колумбии'
-- src: /media/destinations/medellin/gallery-6-enhanced-20261003.webp
-  alt: 'На фото: город Медельин в Колумбии'
-- src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp
-  hover: "Медельин: церковь у линии метро на фоне города и гор"
-  alt: "Готическая церковь и надземные пути метро среди зданий Медельина, Колумбия"
-- src: /media/tours/fantasticheskaya-kolumbiya/itinerary-3-images-0-src-enhanced-20261007.webp
-  hover: "Медельин: метро, церковь с башнями и городская застройка"
-  alt: "Поезд метро у каменной церкви на фоне высотных зданий Медельина, Колумбия"
-- src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp
-  hover: "Медельин: церковь с башнями рядом с метро и городской зеленью"
-  alt: "Каменная церковь у надземной линии метро и пальм в Медельине, Колумбия"
+gallery: [{"src": "/media/destinations/medellin/gallery-1-enhanced-20261003.webp", "hover": "Медельин: церковь, фонтан и яркие дома вокруг небольшой площади", "alt": "Мощёная площадь с белой церковью и цветными домами в Медельине, Колумбия"}, {"src": "/media/destinations/medellin/gallery-2-enhanced-20261003.webp", "hover": "Медельин: поезд метро и пассажиры на станции", "alt": "Поезд метро у крытой платформы станции в Медельине, Колумбия"}, {"src": "/media/destinations/medellin/gallery-3-enhanced-20261003.webp", "alt": "На фото: город Медельин в Колумбии"}, {"src": "/media/destinations/medellin/gallery-4-enhanced-20261003.webp", "hover": "Медельин в Колумбии: высотное здание с заостренной белой башней", "alt": "Высотное здание с заостренной белой башней, Медельин, Колумбия"}, {"src": "/media/destinations/medellin/gallery-5-enhanced-20261003.webp", "alt": "На фото: город Медельин в Колумбии"}, {"src": "/media/destinations/medellin/gallery-6-enhanced-20261003.webp", "alt": "На фото: город Медельин в Колумбии"}, {"src": "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp", "hover": "Медельин: церковь у линии метро на фоне города и гор", "alt": "Готическая церковь и надземные пути метро среди зданий Медельина, Колумбия"}, {"src": "/media/excursions/medelin-siti-tur-i-eskobar/gallery-5-src-enhanced-20261007.webp", "hover": "Медельин: церковь с башнями рядом с метро и городской зеленью", "alt": "Каменная церковь у надземной линии метро и пальм в Медельине, Колумбия"}]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

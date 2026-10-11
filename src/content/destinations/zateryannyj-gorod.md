@@ -9,16 +9,7 @@ destinationType: "region"
 summary: "Сьюдад-Пердида, или Затерянный город, хранит руины поселения культуры Тайрона в горах Сьерра-Невада-де-Санта-Марта. К ним ведут пешие тропы."
 searchAliases: []
 hero: {"src":"/media/destinations/ciudad-perdida/hero-enhanced-20261003.webp","alt":"На фото: затерянный город в Колумбии (Lost City)"}
-gallery:
-- src: /media/destinations/ciudad-perdida/gallery-1-enhanced-20261003.webp
-  alt: "Круглые каменные террасы Сьюдад-Пердида среди тропического леса, Колумбия"
-  hover: "Затерянный город в Колумбии: каменные террасы в лесу"
-- src: /media/tours/zateryannyj-gorod-v-santa-marte/itinerary-3-images-0-src-enhanced-20261007.webp
-  alt: "Каменные террасы и лестницы Затерянного города среди горного леса, Колумбия"
-  hover: "Затерянный город в Колумбии: древние террасы на лесистом склоне"
-- src: /media/tours/zateryannyj-gorod-v-santa-marte/hero-src-enhanced-20261007.webp
-  alt: "Каменные террасы Затерянного города на зелёном горном склоне, Колумбия"
-  hover: "Затерянный город: древние террасы и лестница среди тропического леса"
+gallery: [{"src": "/media/destinations/ciudad-perdida/gallery-1-enhanced-20261003.webp", "alt": "Круглые каменные террасы Сьюдад-Пердида среди тропического леса, Колумбия", "hover": "Затерянный город в Колумбии: каменные террасы в лесу"}, {"src": "/media/tours/zateryannyj-gorod-v-santa-marte/itinerary-3-images-0-src-enhanced-20261007.webp", "alt": "Каменные террасы и лестницы Затерянного города среди горного леса, Колумбия", "hover": "Затерянный город в Колумбии: древние террасы на лесистом склоне"}]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

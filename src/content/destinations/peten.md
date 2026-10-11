@@ -11,16 +11,7 @@ searchAliases: []
 hero:
   src: "/media/countries/guatemala/hero-enhanced-20261002.webp"
   alt: "На фото: пирамиды Эль-Петен в Гватемале"
-gallery:
-- src: /media/destinations/peten/gallery-1-enhanced-20261003.webp
-  alt: "Каменный храм Тикаля над площадью с руинами в Петене, Гватемала"
-  hover: "Петен: ступенчатый храм Тикаля и древние стены среди зелени"
-- src: /media/destinations/peten/gallery-2-enhanced-20261003.webp
-  alt: "Ступенчатая пирамида майя среди деревьев в Петене, Гватемала"
-  hover: "Петен: каменная пирамида с лестницей в окружении зелени"
-- src: /media/tours/otkryvaya-gvatemalu/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: "Ступенчатый храм Тикаля среди руин и тропического леса, Гватемала"
-  hover: "Тикаль в Гватемале: каменный храм над зелёной площадью"
+gallery: [{"src": "/media/destinations/peten/gallery-1-enhanced-20261003.webp", "alt": "Каменный храм Тикаля над площадью с руинами в Петене, Гватемала", "hover": "Петен: ступенчатый храм Тикаля и древние стены среди зелени"}, {"src": "/media/destinations/peten/gallery-2-enhanced-20261003.webp", "alt": "Ступенчатая пирамида майя среди деревьев в Петене, Гватемала", "hover": "Петен: каменная пирамида с лестницей в окружении зелени"}]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

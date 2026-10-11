@@ -11,33 +11,7 @@ searchAliases: []
 hero:
   src: "/media/countries/guatemala/featureBands-2-enhanced-20261002.webp"
   alt: "На фото: озеро Атитлан в Гватемале"
-gallery:
-- src: /media/destinations/lake-atitlan/gallery-1-enhanced-20261003.webp
-  hover: "Гватемала: площадь перед храмом с двумя башнями"
-  alt: "Храм с двумя колокольнями на городской площади, Гватемала"
-- src: /media/destinations/lake-atitlan/gallery-2-enhanced-20261003.webp
-  hover: "Гватемальский рынок рядом с башней церкви"
-  alt: "Рынок под тентами у церковной башни, Гватемала"
-- src: /media/destinations/lake-atitlan/gallery-3-enhanced-20261003.webp
-  alt: 'На фото: озеро Атитлан в Гватемале'
-- src: /media/destinations/lake-atitlan/gallery-4-enhanced-20261003.webp
-  alt: 'На фото: озеро Атитлан в Гватемале'
-- src: /media/destinations/lake-atitlan/gallery-5-enhanced-20261003.webp
-  alt: 'На фото: озеро Атитлан в Гватемале'
-- src: /media/destinations/lake-atitlan/gallery-6-enhanced-20261003.webp
-  alt: 'На фото: озеро Атитлан в Гватемале'
-- src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp
-  hover: "Атитлан: широкая озёрная панорама на фоне вулканов"
-  alt: "Озеро Атитлан между горными склонами и вулканическими вершинами, Гватемала"
-- src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
-  hover: "Бирюзовое озеро среди зелени на фоне высокой вулканической вершины"
-  alt: "Озеро у подножия конусообразного вулкана, окружённое деревьями и цветами"
-- src: /media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: "Синее озеро Атитлан и вулкан на фоне цветов у берега, Гватемала"
-  hover: "Озеро Атитлан: цветы у берега и вулкан над синей водой"
-- src: /media/tours/otkryvaya-gvatemalu/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: "Озеро Атитлан с вулканом на горизонте и цветами у берега, Гватемала"
-  hover: "Атитлан: синяя вода у зелёного берега на фоне вулкана"
+gallery: [{"src": "/media/destinations/lake-atitlan/gallery-1-enhanced-20261003.webp", "hover": "Гватемала: площадь перед храмом с двумя башнями", "alt": "Храм с двумя колокольнями на городской площади, Гватемала"}, {"src": "/media/destinations/lake-atitlan/gallery-2-enhanced-20261003.webp", "hover": "Гватемальский рынок рядом с башней церкви", "alt": "Рынок под тентами у церковной башни, Гватемала"}, {"src": "/media/destinations/lake-atitlan/gallery-3-enhanced-20261003.webp", "alt": "На фото: озеро Атитлан в Гватемале"}, {"src": "/media/destinations/lake-atitlan/gallery-4-enhanced-20261003.webp", "alt": "На фото: озеро Атитлан в Гватемале"}, {"src": "/media/destinations/lake-atitlan/gallery-5-enhanced-20261003.webp", "alt": "На фото: озеро Атитлан в Гватемале"}, {"src": "/media/destinations/lake-atitlan/gallery-6-enhanced-20261003.webp", "alt": "На фото: озеро Атитлан в Гватемале"}, {"src": "/media/tours/luchshee-v-tsentralnoj-amerike/itinerary-2-images-0-src-enhanced-20261007.webp", "hover": "Атитлан: широкая озёрная панорама на фоне вулканов", "alt": "Озеро Атитлан между горными склонами и вулканическими вершинами, Гватемала"}, {"src": "/media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp", "hover": "Бирюзовое озеро среди зелени на фоне высокой вулканической вершины", "alt": "Озеро у подножия конусообразного вулкана, окружённое деревьями и цветами"}, {"src": "/media/tours/klassicheskaya-programma-po-gvatemale/itinerary-2-images-0-src-enhanced-20261007.webp", "alt": "Синее озеро Атитлан и вулкан на фоне цветов у берега, Гватемала", "hover": "Озеро Атитлан: цветы у берега и вулкан над синей водой"}]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

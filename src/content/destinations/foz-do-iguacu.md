@@ -11,14 +11,7 @@ summary: >-
 hero:
   src: /media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp
   alt: Водопады Игуасу со стороны Бразилии
-gallery:
-- src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
-  hover: "Игуасу в Бразилии: каскады водопадов, радуга и зелёные берега"
-  alt: "Водопады Игуасу и радуга над рекой в окружении тропического леса, Бразилия"
-- src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
-  hover: "Игуасу: смотровой мостик над каскадами падающей воды"
-  alt: "Посетители на смотровом мостике среди водопадов Игуасу"
-- {"src":"/media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp","alt":"Туристы в моторной лодке у мощных каскадов водопада, Игуасу, Бразилия","hover":"Игуасу, Бразилия: туристы в моторной лодке у мощных каскадов водопада"}
+gallery: [{"src": "/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp", "hover": "Игуасу в Бразилии: каскады водопадов, радуга и зелёные берега", "alt": "Водопады Игуасу и радуга над рекой в окружении тропического леса, Бразилия"}, {"src": "/media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp", "alt": "Туристы в моторной лодке у мощных каскадов водопада, Игуасу, Бразилия", "hover": "Игуасу, Бразилия: туристы в моторной лодке у мощных каскадов водопада"}]
 relatedDestinations:
   - destination_brazil_rio
   - destination_argentina_buenos_aires

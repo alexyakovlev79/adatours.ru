@@ -319,22 +319,31 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     mask-image: linear-gradient(to bottom, #000 calc(100% - var(--tour-copy-fade-height)), transparent);
   }
   .tour-copy__toggle {
-    display: inline-flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
+    width: fit-content;
+    max-width: 100%;
     min-height: 44px;
-    margin-top: 12px;
-    padding: 8px 0;
-    border: 0;
-    background: transparent;
+    margin: 12px auto 0;
+    padding: 8px 16px;
+    border: 1px solid color-mix(in srgb, var(--color-ink) 14%, transparent);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--color-champagne) 12%, var(--color-bg));
     color: var(--color-ink);
     font-size: var(--text-base);
     font-weight: 500;
-    text-align: left;
+    line-height: 1.35;
+    text-align: center;
     cursor: pointer;
+    transition: background-color .15s ease, border-color .15s ease;
   }
   .tour-copy__toggle[hidden] { display: none; }
-  .tour-copy__toggle:hover { color: var(--color-gold-deep); }
+  .tour-copy__toggle:hover, .tour-copy__toggle:focus-visible {
+    border-color: var(--color-gold-deep);
+    background: color-mix(in srgb, var(--color-champagne) 35%, var(--color-bg));
+  }
   .tour-copy__toggle svg { flex: none; transition: transform .2s ease; }
   .tour-copy__toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
   @media print {

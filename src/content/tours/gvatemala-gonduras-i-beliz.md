@@ -239,7 +239,7 @@ priceFrom: 6166
 currency: USD
 priceNote: $6166
 hero:
-  src: /media/countries/belize/featureBands-3-enhanced-20261002.webp
+  src: /media/countries/belize/block-013-generated-20261011-dedup-v1.webp
   alt: Гватемала, Гондурас и Белиз
 routeCountries:
 - country_guatemala
@@ -267,3 +267,4 @@ themes: ["theme_wildlife"]
 
 
 Программа 2024 года включает знакомство с одним из старейших и красивейших городов Центральной Америки, поездку к озеру Атитлан в кратере потухшего вулкана, древние города майя и несколько дней на побережье Белиза. В финале путешествия можно добавить полет над Голубой Дырой.
+

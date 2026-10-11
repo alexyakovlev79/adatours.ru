@@ -192,7 +192,7 @@ priceFrom: 3636
 currency: USD
 priceNote: $3636
 hero:
-  src: /media/tours/luchshee-iz-dvukh-mirov/hero-enhanced-20261006.webp
+  src: /media/countries/belize/block-014-generated-20261011-dedup-v1.webp
   hover: "Коралловый риф с рыбами, скатами, черепахой и пловцом в маске"
   alt: "Пловец с маской над кораллами среди рыб, скатов и морской черепахи"
 routeCountries:
@@ -207,4 +207,5 @@ routeDestinations:
 primaryThemes: ["theme_adventure","theme_culture"]
 themes: ["theme_beach","theme_wildlife"]
 ---
+
 

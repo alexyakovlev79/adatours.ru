@@ -16,7 +16,7 @@ lead: Буэнос-Айрес, ледник Перито-Морено и Тор�
 durationDays: 12
 durationNights: 11
 hero:
-  src: /media/countries/bolivia/featureBands-1-enhanced-20261002.webp
+  src: /media/countries/bolivia/block-019-generated-20261011-dedup-v1.webp
   alt: Тур в Аргентину, Чили и Боливию на 12 дней
 currency: USD
 priceFrom: 7198
@@ -277,3 +277,4 @@ themes: []
 | 3 | 8087 | 6228 | 6278 |
 
 Авиабилеты не включены. Тарифы на перелеты рассчитываются для фактических дат и последовательности маршрута, а не по чужому списку рейсов через Рио.
+

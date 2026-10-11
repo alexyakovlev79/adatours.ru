@@ -19,7 +19,7 @@ priceFrom: 280
 currency: USD
 priceNote: Стоимость экскурсии — $280.
 hero:
-  src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/hero-src-enhanced-20261007.webp
+  src: /media/countries/colombia/block-023-generated-20261011-dedup-v1.webp
   alt: Соляной собор в Сипакире, Колумбия
 gallery:
 - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-0-src-enhanced-20261008.webp
@@ -64,3 +64,4 @@ themes:
 В местном ресторане будет свободное время на обед. Обед оплачивается отдельно.
 
 Во второй половине дня вы посетите Соляной собор Сипакиры, высеченный примерно в 180 метрах под землей в бывшей соляной шахте. Подземные часовни, галереи и монументальные залы составляют основную часть визита. После экскурсии возвращение в Боготу.
+

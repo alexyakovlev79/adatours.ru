@@ -21,8 +21,9 @@ sourceSnapshot: https://drive.google.com/file/d/1Ishh33VjYfqp8WOQwnpgPzhCxE8drOp
 themes:
 - theme_gastronomy_wine
 hero:
-  src: /media/destinations/maipo-valley/hero-generated-20261008.webp
+  src: /media/countries/chile/block-004-generated-20261011-dedup-v1.webp
   alt: Долина Майпо
 ---
 
 Вы посетите винодельню, виноградники и погреба, познакомитесь с местными сортами и продегустируете премиальные вина на фоне Анд.
+

@@ -13,7 +13,7 @@ language: []
 priceFrom: 120
 currency: USD
 hero:
-  src: /media/excursions/tango-shou-v-buenos-ajrese/hero-enhanced-20261001.webp
+  src: /media/countries/argentina/block-009-generated-20261011-dedup-v1.webp
   alt: Танго-шоу в Буэнос-Айресе
 gallery: []
 route:
@@ -32,3 +32,4 @@ themes: ["theme_culture"]
 Вечером проходит танго-шоу с ужином в Буэнос-Айресе.
 
 Продолжительность программы — около 4 часов.
+

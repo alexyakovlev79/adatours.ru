@@ -120,7 +120,7 @@ route:
 priceFrom: 14534.0
 currency: USD
 hero:
-  src: /media/countries/bolivia/featureBands-1-enhanced-20261002.webp
+  src: /media/countries/bolivia/block-018-generated-20261011-dedup-v1.webp
   alt: 'на фото: Тур на джипах в Солар -де Уюни'
 lead: 'Большой маршрут по 3 странам Южной Америки соединяет Сантьяго-де-Чили, высокогорные пустыни и солончак Уюни,
   Торрес-дель-Пайне, круиз по фьордам Южной Патагонии и Огненной Земле, Ушуайю, Буэнос-Айрес и Барилоче. За 18 дней
@@ -832,3 +832,4 @@ dates:
 - 31.12-02.01: Alvear Art Hotel, Studio Double, BB.
 - 02.01-05.01: Llao Llao, Standard Double, BB.
 - 05.01-06.01: Alvear Art Hotel, Studio Double, BB.
+

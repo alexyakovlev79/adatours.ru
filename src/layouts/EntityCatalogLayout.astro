@@ -143,6 +143,7 @@ const listSchema = {
     title={`${presentation.title}${pageSuffix}`}
     intro={introBelowHero ? undefined : presentation.intro}
     image={hero}
+    compactCta={introBelowHero}
     compact={p.currentPage > 1 || (variant !== 'global-tours' && variant !== 'global-places')}
   />
   {introBelowHero && presentation.intro && (

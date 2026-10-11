@@ -1610,3 +1610,15 @@ P102: новый вариант 8 дней/7 ночей, 4 ночи в Мехи�
 | `tour_argentina_best_14_days` | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` | После дня 12, вставка 2 | Переиспользована существующая |
 | `tour_argentina_best_14_days` | `excursion_source_makuko_safari` | После дня 12, вставка 3 | Переиспользована существующая |
 | `tour_argentina_best_14_days` | `excursion_iguazu_helicopter_falls` | После дня 12, вставка 4 | Переиспользована существующая |
+
+
+## P124: Мраморные пещеры и ледник Сан-Рафаэль — 11.10.2026
+
+Tour: `tour_chile_marble_caves_san_rafael_three_days`. Word Анны: https://docs.google.com/document/d/1MCUXBiq_HYaNTONYUIpyGuYvVV76I9Ku/edit. Полная программа 3 дня / 2 ночи.
+
+| День | Позиция после дня | Каноническая экскурсия | Решение |
+| --- | --- | --- | --- |
+| 2 | 1 | `excursion_san_rafael_exploradores_boat_full_day` | Переиспользована: весь день через Эксплорадорес на лодке к леднику |
+| 3 | 1 | `excursion_marble_caves_private_boat_two_half_hours` | Переиспользована: частная лодка к Мраморным пещерам; время начала в P124 не назначено |
+
+Обычные дни 1–3 сохранены с размещением, условиями и отдельными фотографиями. 6 разных кадров hero/программы, все 10 мест опубликованы. Канонизация данных готова; deploy и таблицы фиксируются после success.

@@ -14,8 +14,9 @@ priceFrom: 190
 currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "/media/excursions/h-d-city-tour-manaus/hero-src-enhanced-20261007.webp"
-  alt: "Манаус-сити тур"
+  src: "/media/excursions/h-d-city-tour-manaus/hero-regenerated-20261011-v1.webp"
+  hover: "Манаус: театр Амазонас в тёплом вечернем свете"
+  alt: "Театр Амазонас с цветным куполом и площадь в Манаусе, Бразилия"
 gallery:
   - src: "/media/excursions/h-d-city-tour-manaus/gallery-0-src-enhanced-20261007.webp"
     hover: "Песчаный пляж с птицами и высотным зданием на закате"

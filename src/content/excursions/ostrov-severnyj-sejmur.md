@@ -24,8 +24,9 @@ hero:
 gallery:
   - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: Остров Северный Сеймур на Галапагосских острова Эквадора"
-  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp"
-    alt: "на фото: Остров Северный Сеймур на Галапагосских острова Эквадора"
+  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-regenerated-20261011-v1.webp"
+    hover: "Северный Сеймур: фрегат среди сухих ветвей на скалистом берегу"
+    alt: "Фрегат с красным горловым мешком на острове Северный Сеймур, Галапагосы"
 route:
   - "Галапагосские острова"
   - "Канал Итабака"

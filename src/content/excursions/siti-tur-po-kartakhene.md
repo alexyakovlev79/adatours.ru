@@ -27,8 +27,9 @@ gallery:
   alt: Узкая улица Картахены с яркими фасадами, балконами и растениями, Колумбия
 - src: /media/excursions/siti-tur-po-kartakhene/gallery-1-src-enhanced-20261007.webp
   alt: Картахена, Колумбия
-- src: /media/excursions/siti-tur-po-kartakhene/gallery-2-src-enhanced-20261007.webp
-  alt: Картахена, Колумбия
+- src: "/media/excursions/siti-tur-po-kartakhene/gallery-2-regenerated-20261011-v1.webp"
+  hover: "Картахена: крепость Сан-Фелипе с оборонительными стенами и подъёмом к бастионам"
+  alt: "Каменные бастионы крепости Сан-Фелипе-де-Барахас в Картахене, Колумбия"
 - src: /media/excursions/siti-tur-po-kartakhene/gallery-3-src-enhanced-20261007.webp
   alt: Картахена, Колумбия
 - src: /media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp

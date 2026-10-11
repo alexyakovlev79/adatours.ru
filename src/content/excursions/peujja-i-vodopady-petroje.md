@@ -12,8 +12,9 @@ priceFrom: 103
 currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "/media/excursions/peujja-i-vodopady-petroje/hero-src-enhanced-20261007.webp"
-  alt: "Пеуйла и Водопады  Петроэ"
+  src: "/media/excursions/peujja-i-vodopady-petroje/hero-regenerated-20261011-v1.webp"
+  hover: "Петроуэ: бурные потоки и прозрачные бассейны среди тёмных скал"
+  alt: "Бирюзовые каскады водопадов Петроуэ среди вулканических скал и леса, Чили"
 gallery:
   - src: "/media/excursions/peujja-i-vodopady-petroje/gallery-0-src-enhanced-20261007.webp"
     hover: "Чили: речные пороги на фоне леса и снежной вершины вулкана"

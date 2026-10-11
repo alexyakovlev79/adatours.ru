@@ -290,8 +290,9 @@ itinerary:
 
     После экскурсии - возвращение в отель. Питание: завтрак, обед, ужин.
   images:
-  - src: /media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp
-    alt: Галапагосские острова
+  - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-1-regenerated-20261011-v1.webp"
+    hover: "Северный Сеймур: фрегат среди сухих ветвей на скалистом берегу"
+    alt: "Фрегат с красным горловым мешком на острове Северный Сеймур, Галапагосы"
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []
 - excursionRef: excursion_source_ostrov_plasa

@@ -86,31 +86,41 @@
       "entityId": "excursion_source_arekipa_tur_v_belom_gorode",
       "title": "Экскурсии в Перу - \"Белый Город\" Арекипа, Сан-Лазаро и Пичу-Пичу",
       "src": "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-enhanced-20261007.webp",
-      "reason": "Published image file contains zero bytes; cannot compare visually."
+      "reason": "Published image file contains zero bytes; cannot compare visually.",
+      "resolution": "already_repaired_by_parallel_commit",
+      "replacementSrc": "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-regenerated-20261011-v2.webp"
     },
     {
       "entityId": "excursion_source_siti_tur_po_kartakhene",
       "title": "Картахена: сити-тур по колониальному городу и крепости Сан-Фелипе",
       "src": "/media/excursions/siti-tur-po-kartakhene/gallery-2-src-enhanced-20261007.webp",
-      "reason": "Published image file contains zero bytes; cannot compare visually."
+      "reason": "Published image file contains zero bytes; cannot compare visually.",
+      "resolution": "regenerated_and_uploaded",
+      "replacementSrc": "/media/excursions/siti-tur-po-kartakhene/gallery-2-regenerated-20261011-v1.webp"
     },
     {
       "entityId": "excursion_source_h_d_city_tour_manaus",
       "title": "Манаус-сити тур",
       "src": "/media/excursions/h-d-city-tour-manaus/hero-src-enhanced-20261007.webp",
-      "reason": "Published image file contains zero bytes; cannot compare visually."
+      "reason": "Published image file contains zero bytes; cannot compare visually.",
+      "resolution": "regenerated_and_uploaded",
+      "replacementSrc": "/media/excursions/h-d-city-tour-manaus/hero-regenerated-20261011-v1.webp"
     },
     {
       "entityId": "excursion_source_ostrov_severnyj_sejmur",
       "title": "Экскурсия на Галапагосские острова: северный остров Сеймур",
       "src": "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp",
-      "reason": "Published image file contains zero bytes; cannot compare visually."
+      "reason": "Published image file contains zero bytes; cannot compare visually.",
+      "resolution": "regenerated_and_uploaded",
+      "replacementSrc": "/media/excursions/ostrov-severnyj-sejmur/gallery-1-regenerated-20261011-v1.webp"
     },
     {
       "entityId": "excursion_source_peujja_i_vodopady_petroje",
       "title": "Пеуйла и Водопады Петроэ",
       "src": "/media/excursions/peujja-i-vodopady-petroje/hero-src-enhanced-20261007.webp",
-      "reason": "Published image file contains zero bytes; cannot compare visually."
+      "reason": "Published image file contains zero bytes; cannot compare visually.",
+      "resolution": "regenerated_and_uploaded",
+      "replacementSrc": "/media/excursions/peujja-i-vodopady-petroje/hero-regenerated-20261011-v1.webp"
     }
   ],
   "reviewedExcursions": [
@@ -624,5 +634,91 @@
       "contentPath": "src/content/excursions/mashpi-lodzh.md",
       "imageCountBefore": 5
     }
-  ]
+  ],
+  "emptyImageRepair": {
+    "date": "2026-10-11",
+    "status": "repaired",
+    "generatedIndividually": true,
+    "count": 5,
+    "affectedContent": [
+      {
+        "contentPath": "src/content/tours/pochuvstvujte-peru-ekvador.md",
+        "replacedSlots": 1
+      },
+      {
+        "contentPath": "src/content/tours/ekvador-krasota-i-priroda.md",
+        "replacedSlots": 1
+      },
+      {
+        "contentPath": "src/content/excursions/siti-tur-po-kartakhene.md",
+        "replacedSlots": 1
+      },
+      {
+        "contentPath": "src/content/excursions/peujja-i-vodopady-petroje.md",
+        "replacedSlots": 1
+      },
+      {
+        "contentPath": "src/content/excursions/ostrov-severnyj-sejmur.md",
+        "replacedSlots": 1
+      },
+      {
+        "contentPath": "src/content/excursions/h-d-city-tour-manaus.md",
+        "replacedSlots": 1
+      }
+    ],
+    "replacements": [
+      {
+        "oldSrc": "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-enhanced-20261007.webp",
+        "newSrc": "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-regenerated-20261011-v2.webp",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-11",
+        "generatedAlternativeSrc": "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-regenerated-20261011-v1.webp",
+        "resolution": "already_repaired_by_parallel_commit",
+        "generatedAlternativeActivated": false
+      },
+      {
+        "oldSrc": "/media/excursions/siti-tur-po-kartakhene/gallery-2-src-enhanced-20261007.webp",
+        "newSrc": "/media/excursions/siti-tur-po-kartakhene/gallery-2-regenerated-20261011-v1.webp",
+        "sha256": "12381d6fbaae13a88d6d28df7faba864f312bd9d607d2562870c6324d824cf45",
+        "bytes": 490300,
+        "method": "gpt-image",
+        "generatedAt": "2026-10-11",
+        "alt": "Каменные бастионы крепости Сан-Фелипе-де-Барахас в Картахене, Колумбия",
+        "hover": "Картахена: крепость Сан-Фелипе с оборонительными стенами и подъёмом к бастионам"
+      },
+      {
+        "oldSrc": "/media/excursions/h-d-city-tour-manaus/hero-src-enhanced-20261007.webp",
+        "newSrc": "/media/excursions/h-d-city-tour-manaus/hero-regenerated-20261011-v1.webp",
+        "sha256": "83b145bed737e33c4c0eea67cf097eb32ea4c43928f7d01d7d62d9504efdb508",
+        "bytes": 432060,
+        "method": "gpt-image",
+        "generatedAt": "2026-10-11",
+        "alt": "Театр Амазонас с цветным куполом и площадь в Манаусе, Бразилия",
+        "hover": "Манаус: театр Амазонас в тёплом вечернем свете"
+      },
+      {
+        "oldSrc": "/media/excursions/ostrov-severnyj-sejmur/gallery-1-src-enhanced-20261007.webp",
+        "newSrc": "/media/excursions/ostrov-severnyj-sejmur/gallery-1-regenerated-20261011-v1.webp",
+        "sha256": "0fce20d2b36cc1947a0de5ca0fa543e851ae668736ecb133314c756ccbb2fa92",
+        "bytes": 328480,
+        "method": "gpt-image",
+        "generatedAt": "2026-10-11",
+        "alt": "Фрегат с красным горловым мешком на острове Северный Сеймур, Галапагосы",
+        "hover": "Северный Сеймур: фрегат среди сухих ветвей на скалистом берегу"
+      },
+      {
+        "oldSrc": "/media/excursions/peujja-i-vodopady-petroje/hero-src-enhanced-20261007.webp",
+        "newSrc": "/media/excursions/peujja-i-vodopady-petroje/hero-regenerated-20261011-v1.webp",
+        "sha256": "4bdbc41d998262db447a95106da5da6b7e3cc686a04a750720fbc889f0b46a31",
+        "bytes": 501236,
+        "method": "gpt-image",
+        "generatedAt": "2026-10-11",
+        "alt": "Бирюзовые каскады водопадов Петроуэ среди вулканических скал и леса, Чили",
+        "hover": "Петроуэ: бурные потоки и прозрачные бассейны среди тёмных скал"
+      }
+    ],
+    "newImagesActivated": 4,
+    "resolvedInParallel": 1,
+    "parallelRepairCommit": "4a9e3b81e4874bd80b77c49c84a0ec51e36c39bb"
+  }
 }

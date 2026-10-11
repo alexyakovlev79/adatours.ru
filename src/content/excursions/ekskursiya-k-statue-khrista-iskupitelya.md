@@ -27,8 +27,6 @@ gallery:
     alt: Рио-де-Жанейро и горы Тижуки
   - src: /media/excursions/ekskursiya-k-statue-khrista-iskupitelya/gallery-3-src-enhanced-20261008.webp
     alt: Панорамный вид на Рио-де-Жанейро
-  - src: /media/excursions/ekskursiya-k-statue-khrista-iskupitelya/gallery-4-src-enhanced-20261008.webp
-    alt: Рио-де-Жанейро с вершины Корковаду
 route:
   - экологический поезд
   - национальный парк Тижука

@@ -17,9 +17,6 @@ hero:
   src: "/media/excursions/punta-arenas-mnogoobrazie-krasot-jetogo-kraja/hero-src-enhanced-20261007.webp"
   alt: "Пунта Аренас-  многообразие красот этого края"
 gallery:
-  - src: "/media/excursions/punta-arenas-mnogoobrazie-krasot-jetogo-kraja/gallery-0-src-enhanced-20261007.webp"
-    hover: "Пунта-Аренас в Чили: крыши домов и улица на фоне морского берега"
-    alt: "Городская улица к морю, Пунта-Аренас, Чили"
   - src: "/media/excursions/punta-arenas-mnogoobrazie-krasot-jetogo-kraja/gallery-1-src-enhanced-20261007.webp"
     hover: "Пунта-Аренас в Чили: памятник на высоком постаменте"
     alt: "Памятник на высоком постаменте, Пунта-Аренас, Чили"

@@ -25,8 +25,6 @@ gallery:
     alt: Машпи Лодж в облачном лесу Эквадора
   - src: /media/excursions/mashpi-lodzh/gallery-1-src-enhanced-20261008.webp
     alt: Природа заповедника Машпи
-  - src: /media/excursions/mashpi-lodzh/gallery-2-src-enhanced-20261008.webp
-    alt: Тропический лес вокруг Машпи Лодж
   - src: /media/excursions/mashpi-lodzh/gallery-3-src-enhanced-20261008.webp
     alt: Машпи Лодж в Эквадоре
 route:

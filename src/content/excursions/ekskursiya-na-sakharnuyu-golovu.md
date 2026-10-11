@@ -21,8 +21,6 @@ hero:
 gallery:
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-1-enhanced-20261001.webp
     alt: Ночной вид на бухту Гуанабара
-  - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-2-enhanced-20261001.webp
-    alt: Сахарная Голова и Рио-де-Жанейро
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Вид с высоты на Рио-де-Жанейро
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp

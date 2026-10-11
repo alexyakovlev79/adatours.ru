@@ -27,8 +27,6 @@ gallery:
     alt: Монтевидео и побережье Рио-де-ла-Плата
   - src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
     alt: Монтевидео, столица Уругвая
-  - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/hero-src-enhanced-20261007.webp"
-    alt: Панорама Монтевидео
 route:
   - набережная Рамбла
   - площадь Независимости

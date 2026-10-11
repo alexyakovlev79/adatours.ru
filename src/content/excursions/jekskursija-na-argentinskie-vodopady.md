@@ -22,9 +22,6 @@ gallery:
     src: "/media/excursions/jekskursija-na-argentinskie-vodopady/gallery-0-src-enhanced-20261008.webp"
     alt: "На фото: Аргентинские водопады Игуасу"
   -
-    src: "/media/excursions/jekskursija-na-argentinskie-vodopady/gallery-1-src-enhanced-20261008.webp"
-    alt: "На фото: смотровая площадка на водопадах Игуасу"
-  -
     src: "/media/excursions/jekskursija-na-argentinskie-vodopady/gallery-2-src-enhanced-20261008.webp"
     alt: "На фото: Водопады Игуасу, Аргентина"
 route:

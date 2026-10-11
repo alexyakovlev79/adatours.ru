@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_plyazh_tortuga_bej.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Тортуга-Бэй — пляж на острове Санта-Крус.
 
 Белый песок, прибрежная растительность и морской пейзаж отличают эту прогулку от городской части Пуэрто-Айоры.

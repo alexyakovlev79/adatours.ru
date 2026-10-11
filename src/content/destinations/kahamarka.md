@@ -17,13 +17,11 @@ featuredTours: []
 featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kahamarka-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1eGYxUlIvJ1KY0rwHOzEhYm6A1ahGMdrK/view?usp=drivesdk"
-updatedAt: "2026-10-02"
+updatedAt: '2026-10-11'
 themes: ["theme_culture","theme_spa"]
 ---
 
 ## Кахамарка- зеленая жемчужина Перу!
-
-Город находится на высоте 2720 м над уровнем моря в роскошном великолепии зелени и расположен в очень красивой и живописной горной долине.
 
 ## Кахамарка - колыбель культуры инков!
 

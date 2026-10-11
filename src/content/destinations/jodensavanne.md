@@ -20,8 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_jodensavanna.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-Йоденсаванна — историческое поселение на берегу реки Суринам, связанное с еврейской общиной страны.
 
 Сохранившиеся руины и кладбища рассказывают о жизни поселения и его плантационном прошлом.

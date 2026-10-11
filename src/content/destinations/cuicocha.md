@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_cuicocha.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Куикоча — кратерное озеро рядом с Котакачи.
 
 Главный пейзаж здесь создают вода, острова и окружающие склоны; прогулки по краю кратера включают в маршруты по северным Андам.

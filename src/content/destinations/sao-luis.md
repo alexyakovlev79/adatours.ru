@@ -27,12 +27,10 @@ facts:
 featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-luis-maranyan-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-san-luis-maranyan-braziliya__3266825b.md
-updatedAt: 2026-09-24
+updatedAt: '2026-10-11'
 themes:
 - theme_culture
 ---
-
-Сан-Луис добавляет к природному маршруту по Мараньяну городскую и историческую часть. Старый центр сохранил улицы, площади и здания разных периодов, а многие фасады покрыты португальской керамической плиткой азулежу.
 
 Исторический центр Сан-Луиса внесен в список Всемирного наследия UNESCO в 1997 году. Город был основан французами в XVII веке, затем перешел под контроль португальцев; эта история заметна в планировке и архитектуре.
 

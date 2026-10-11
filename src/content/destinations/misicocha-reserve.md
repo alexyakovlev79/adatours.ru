@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_zapovednik_misikocha.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Мисикоча — лесной участок, посещаемый в программах La Casa del Suizo.
 
 Прогулка здесь показывает растительность и природную среду эквадорской Амазонии.

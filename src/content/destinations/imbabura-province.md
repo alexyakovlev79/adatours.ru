@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_imbabura_province.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Имбабура — провинция северного Эквадора с городами Отавало и Котакачи, озёрами и горными сельскими районами.
 
 Она входит в маршруты, соединяющие природу Анд и местные ремесленные традиции.

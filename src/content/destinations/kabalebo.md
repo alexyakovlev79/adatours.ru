@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_kabalebo.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Кабалебо — лесной и речной район внутренней части Суринама.
 
 Программы здесь посвящены прогулкам по тропическому лесу, поездкам на лодках и наблюдению за животными и птицами.

@@ -32,15 +32,13 @@ featuredTours: []
 featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-gornyj-kurort-bokete-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1VXp3p7fEX-mlAdSlumUN9pZ110WDsAGY/view?usp=drivesdk"
-updatedAt: "2026-10-02"
+updatedAt: '2026-10-11'
 themes: ["theme_gastronomy_wine","theme_wildlife"]
 ---
 
 ## Вулкан Бару и заповедник Ла-Амистад: что посмотреть в Бокете, Панама
 
 ### Бокете - город вечной весны в Панаме!
-
-Бокете – горный город в цвету. Это кофейные и цитрусовые плантации.
 
 Самая известная туристическая достопримечательность Бокете — вулкан Бару. Он же является самой высокой точкой Панамы. Несмотря на то, что восхождение на Бару занимает около 7 часов, подняться туда стремятся все туристы. С его вершины можно увидеть сразу два океана -Тихий и Атлантический.
 

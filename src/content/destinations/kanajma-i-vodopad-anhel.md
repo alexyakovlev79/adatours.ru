@@ -28,11 +28,9 @@ featureBands: []
 facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle
 sourceSnapshot: https://drive.google.com/file/d/195WVrDm2PS5iiteMuM63CsbnilbvZDJb/view?usp=drivesdk
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 themes: ["theme_wildlife"]
 ---
-
-Канайма - это самый известный национальный парк Венесуэлы, в котором находится одно из природных чудес света- водопад Анхель.
 
 Высота падающей воды в Анхеле по официальным данным составляет 979 метров, однако часть исследователей утверждает, что на самом деле водопад еще выше — как минимум 1054 метра.
 

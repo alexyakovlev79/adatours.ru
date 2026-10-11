@@ -20,8 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_plantaciya_bakki.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-Бакки — поселение в районе старых плантаций Суринама.
 
 Его посещение связывает историю сельского хозяйства с прогулками по прибрежным водным путям и мангровым зарослям.

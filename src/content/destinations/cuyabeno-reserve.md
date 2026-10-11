@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_zapovednik_kuyabeno.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Куябено — природный район эквадорской Амазонии.
 
 Затопленные леса, лагуны и речные переходы определяют характер знакомства с этой частью страны.

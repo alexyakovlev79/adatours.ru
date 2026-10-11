@@ -20,8 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_french_guiana_ostrov_royal.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-Остров Рояль входит в архипелаг Иль-дю-Салю во Французской Гвиане.
 
 Здесь природные пейзажи соседствуют с постройками бывшей каторжной колонии.

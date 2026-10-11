@@ -22,8 +22,7 @@ featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_belize_jaguar_paw.md
 searchAliases:
 - "Jaguar Paw"
-updatedAt: '2026-10-10'
+updatedAt: '2026-10-11'
 ---
-«Лапу ягуара» в Белизе посещают ради сплава по пещерной реке. Вода проходит через известняковые залы, а у входов в пещеры подступает тропический лес.
 
 Cave Tubing проходит на надувных кругах с гидом. Эта остановка входит в программы переезда из западного Белиза к Белиз-Сити и Карибскому побережью.

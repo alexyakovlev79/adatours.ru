@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_el_angel_ecological_reserve.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Заповедник Эль-Анхель представляет высокогорные ландшафты северного Эквадора.
 
 Его узнаваемая растительность — фрайлехоны, характерные для прохладного и влажного парамо.

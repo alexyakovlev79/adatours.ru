@@ -27,10 +27,8 @@ featureBands: []
 facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-solnechnyj-ostrov-boliviya
 sourceSnapshot: https://drive.google.com/file/d/1PpYMcMdVku0Wy2gTfibboRuVJOrAc83P/view?usp=drivesdk
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 themes: ["theme_culture"]
 ---
-
-Солнечный остров – где находится впечатляющий Дворец Инков Пилкокайна с которого открывается вид на остров Луна.
 
 Если пройти по широкой священной лестнице, можно увидеть Фонтан Инков, являющийся местом ритуалов и обрядов. И конечно надо попробовать форель из самого высокогорного озера на свете.

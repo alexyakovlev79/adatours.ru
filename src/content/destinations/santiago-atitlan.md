@@ -19,8 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_guatemala_santyago_atitlan.md
-updatedAt: '2026-10-08'
+updatedAt: '2026-10-11'
 ---
-Сантьяго-Атитлан расположен на берегу озера Атитлан в Гватемале. Поселение входит в озерные маршруты, знакомящие с жизнью и традициями местных майянских общин.
 
 Сюда приезжают по воде из других поселений Атитлана. Прогулка по Сантьяго дополняет посещение Сан-Хуан-ла-Лагуна и других прибрежных городков.

@@ -20,8 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_vodopady_ferullasi.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-Ферулласи — речные пороги в лесном районе Суринама.
 
 Их посещение входит в водные поездки по верховьям реки, где открываются пейзажи тропического леса и скалистого русла.

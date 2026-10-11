@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_reka_napo.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Напо — одна из главных рек эквадорской Амазонии.
 
 Речные переходы по ней соединяют населённые пункты, лесные лоджи и природные участки путешествия.

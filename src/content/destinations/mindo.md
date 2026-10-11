@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_mindo.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Миндо — район облачных лесов на западных склонах эквадорских Анд.
 
 Лесные прогулки, реки и наблюдение за птицами дополняют здесь городскую и вулканическую программу поездки.

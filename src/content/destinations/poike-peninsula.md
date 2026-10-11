@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_poluostrov_pojke.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Полуостров Пойке — часть острова Пасхи, включенная в маршруты знакомства с его побережьем.
 
 Поездка к Пойке продолжает знакомство с открытыми островными пейзажами после осмотра археологических зон. В программах эту часть пути сочетают с остановками у Аху-Те-Пито-Кура и пляжа Анакена.

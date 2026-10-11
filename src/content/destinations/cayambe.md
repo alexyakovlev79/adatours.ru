@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_cayambe.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Каямбе — город в северных Андах Эквадора.
 
 В маршрутах из Кито к Отавало здесь знакомятся с местной жизнью и сельскохозяйственным пейзажем высокогорья.

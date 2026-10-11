@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_punta_auano.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Пунта-Ауано — речная остановка в районе Ауано, связанная с поездками по Напо.
 
 Здесь наземная часть маршрута переходит в знакомство с водой и тропическим лесом.

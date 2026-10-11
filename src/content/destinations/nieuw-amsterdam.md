@@ -20,8 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_niv_amsterdam.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-Ньив-Амстердам находится у рек Суринам и Коммевейне.
 
 В путешествии сюда приезжают по суше или по воде, знакомясь с прибрежным ландшафтом и историей этого района.

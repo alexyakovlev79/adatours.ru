@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_porog_kilo_3.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Порог Кило 3 посещают во время программ по району Кабалебо.
 
 Лесная прогулка и речной участок знакомят с природой внутренней части Суринама.

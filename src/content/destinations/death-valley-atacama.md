@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_dolina_smerti_atakama.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Долина Смерти находится в районе Сан-Педро-де-Атакама.
 
 Песчаные дюны и размытые скальные формы показывают ещё одну сторону пустыни, отличную от солончаков и высокогорных лагун.

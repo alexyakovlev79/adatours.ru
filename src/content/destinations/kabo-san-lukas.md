@@ -17,13 +17,11 @@ featuredTours: []
 featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kabo-san-lukas-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1eyxRZYKMBMugWXDt3n7QKfZo7M67NbRb/view?usp=drivesdk"
-updatedAt: "2026-10-02"
+updatedAt: '2026-10-11'
 themes: ["theme_diving","theme_adventure","theme_wildlife","theme_fishing"]
 ---
 
 ## Кабо-Сан-Лукас - рай Мексики!
-
-На самой оконечности п-ова Байа находится Кабо-Сан-Лукас – удивительный образец райского места на земле.
 
 ## Райское наслаждение в Кабо-Сан-Лукасе!
 

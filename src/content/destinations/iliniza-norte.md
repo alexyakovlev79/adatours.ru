@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_severnyj_ilinisa.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Северный Илиниса — горная цель активных маршрутов по Эквадору.
 
 Поход показывает высокогорные пейзажи, вулканические склоны и открытые участки андского рельефа.

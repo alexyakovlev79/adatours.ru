@@ -31,14 +31,12 @@ facts:
 featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-paulu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-san-paulu-braziliya__f2082e1c.md
-updatedAt: 2026-09-24
+updatedAt: '2026-10-11'
 themes:
 - theme_culture
 - theme_gastronomy_wine
 - theme_events
 ---
-
-Сан-Паулу заслуживает отдельной остановки в маршруте по Бразилии. Это огромный деловой мегаполис с музеями, ресторанами, магазинами и насыщенной культурной жизнью.
 
 Архитектура здесь показывает разные периоды развития города: исторические здания и церкви соседствуют с плотной современной застройкой и небоскребами. Программу удобно строить вокруг искусства, городской истории и гастрономии, оставляя время на отдельные районы и вечерние события.
 

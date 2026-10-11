@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_reka_kihos.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Кихос — река на восточной стороне эквадорских Анд.
 
 В активных маршрутах её посещение связано с рафтингом и пейзажами быстрых горных потоков.

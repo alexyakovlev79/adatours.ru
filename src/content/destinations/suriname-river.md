@@ -20,8 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_reka_surinam.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-Река Суринам связывает столицу с лесными районами в глубине страны.
 
 Поездки по воде позволяют увидеть прибрежные поселения, тропическую растительность и жизнь на реке.

@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_uruguay_punta_balena.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Пунта-Бальена находится рядом с курортом Пунта-дель-Эсте. С берега открывается широкий вид на воду, а к вечеру сюда приезжают встречать закат.
 
 На мысе расположен Casapueblo, музей и мастерская художника Карлоса Паэс Виларо. Посещение музея позволяет совместить прогулку у воды со знакомством с творчеством уругвайского художника.

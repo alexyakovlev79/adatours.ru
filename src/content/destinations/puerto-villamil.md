@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_puerto_vilyamil.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Пуэрто-Вильямиль — прибрежное поселение на Исабеле.
 
 Отсюда начинаются многие прогулки к морским и вулканическим природным участкам острова.

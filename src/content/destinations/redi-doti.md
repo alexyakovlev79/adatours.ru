@@ -20,8 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_redi_doti.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-Реди-Доти — деревня в Суринаме, которую посещают вместе с исторической Йоденсаванной.
 
 Знакомство с поселением дополняет рассказ о местных общинах и жизни за пределами столицы.

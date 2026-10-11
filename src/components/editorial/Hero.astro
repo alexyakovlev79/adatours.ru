@@ -19,6 +19,7 @@ interface Props {
   tour?: boolean;
   vip?: boolean;
   contentSized?: boolean;
+  compactCta?: boolean;
   mobilePhotoLead?: boolean;
   imagePositionMobile?: string;
   meta?: string;
@@ -40,6 +41,7 @@ const {
   tour = false,
   vip = false,
   contentSized = false,
+  compactCta = false,
   mobilePhotoLead = false,
   imagePositionMobile,
   meta,
@@ -53,7 +55,7 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
 ---
 
 <section
-  class:list={['hero', { 'hero--compact': compact, 'hero--home': home, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized, 'hero--photo-lead': mobilePhotoLead, 'hero--with-breadcrumbs': hasBreadcrumbs }]}
+  class:list={['hero', { 'hero--compact': compact, 'hero--home': home, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized, 'hero--compact-cta': compactCta, 'hero--photo-lead': mobilePhotoLead, 'hero--with-breadcrumbs': hasBreadcrumbs }]}
   style={imagePositionMobile ? { '--hero-image-position-mobile': imagePositionMobile } : undefined}
   data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
@@ -298,7 +300,8 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
     gap: 0;
   }
 
-  .hero--tour .hero__bottom :global(.cta) {
+  .hero--tour .hero__bottom :global(.cta),
+  .hero--compact-cta .hero__bottom :global(.cta) {
     flex: 0 0 auto;
     width: 292px;
     min-width: 0;
@@ -346,13 +349,15 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
     }
 
     /* Keep the existing compact button without wrapping its label. */
-    .hero--tour .hero__bottom :global(.cta) {
+    .hero--tour .hero__bottom :global(.cta),
+    .hero--compact-cta .hero__bottom :global(.cta) {
       gap: 10px;
       font-size: .74rem;
       letter-spacing: .05em;
     }
 
-    .hero--tour .hero__bottom :global(.cta span:first-child) {
+    .hero--tour .hero__bottom :global(.cta span:first-child),
+    .hero--compact-cta .hero__bottom :global(.cta span:first-child) {
       white-space: nowrap;
     }
 
@@ -410,3 +415,4 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
   }
   .hero--with-breadcrumbs .hero__content { padding-top: clamp(28px, 4vw, 56px); }
 </style>
+

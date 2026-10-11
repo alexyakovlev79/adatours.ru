@@ -3,7 +3,7 @@ import { isActiveEntity } from '../lib/archive.mjs';
 import { seoDestinationTitle, seoRelatedToursDescription } from '../lib/seo-page.mjs';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
-import InterestLinks from '../components/editorial/InterestLinks.astro';
+import EntityLinks from '../components/editorial/EntityLinks.astro';
 import Hero from '../components/editorial/Hero.astro';
 import InlineMarkdown from '../components/global/InlineMarkdown.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
@@ -144,24 +144,22 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
 
   <Hero
     contentSized
+    compactCta
     eyebrow="Направление"
     title={d.name}
     image={d.hero?.src}
     imageTextAlign={d.imageTextAlign}
     mediaStatus={d.hero?.status}
     replacementReason={d.hero?.replacementReason}
-    ctaLabel="Собрать поездку"
+    ctaLabel="Хочу сюда"
   />
 
   {d.facts.length > 0 && <TripStats stats={d.facts} />}
 
-  {country && (
-    <nav class="container section--tight" aria-label="Страна места">
-      <p><a href={withBase(countryPath(country.data))}>{countryName}</a></p>
-    </nav>
-  )}
-
-  <InterestLinks entity={d} />
+  <EntityLinks
+    entity={d}
+    groups={country ? [{ label: 'Страна', entries: [{ name: countryName, href: countryPath(country.data) }] }] : []}
+  />
 
   <section class="destination-copy section--tight">
     <div class="container prose">
@@ -305,6 +303,7 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     color: var(--color-ink);
   }
 </style>
+
 
 
 

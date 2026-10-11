@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_ozero_panyakocha.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Паньякоча — озёрный район эквадорской Амазонии.
 
 В программу знакомства с ним входят речные переходы и наблюдение за природой лесных берегов.

@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_vulkan_ruminyaui.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Руминяуи находится в вулканическом районе Котопакси.
 
 Треккинг по его склонам раскрывает высокогорный ландшафт за пределами главной заснеженной вершины национального парка.

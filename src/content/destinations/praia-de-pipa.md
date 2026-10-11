@@ -30,11 +30,9 @@ facts:
 featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-v-prajya-de-pipa-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-plyazhnye-tury-v-prajya-de-pipa-braziliya__eb45ba81.md
-updatedAt: 2026-09-25
+updatedAt: '2026-10-11'
 themes: ["theme_beach","theme_adventure","theme_wildlife"]
 ---
-
-Прайя-де-Пипа находится примерно в 70 км к югу от Натала. Здесь пляжи и дюны сочетаются с серфингом, прогулками у океана и возможностью увидеть дельфинов у побережья.
 
 Днем можно почти не уходить с побережья: прогулки, вода, серфинг и природные виды. Вечером открываются рестораны и бары, звучит местная музыка, в том числе форро.
 

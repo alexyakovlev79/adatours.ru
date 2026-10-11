@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_ostrov_tintoreras.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Тинторерас — группа небольших вулканических островков у Исабелы.
 
 Морская прогулка сюда знакомит с лавовыми берегами и прибрежной природой Галапагосов.

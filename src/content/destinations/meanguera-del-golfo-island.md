@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_ostrov_meangera_del_golfo.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Меангера-дель-Гольфо — остров в заливе Фонсека.
 
 Морская поездка сюда знакомит с островными берегами и жизнью прибрежных поселений Сальвадора.

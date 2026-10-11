@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_zaliv_fonseka_salvador.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Залив Фонсека находится у восточного побережья Сальвадора.
 
 Острова, бухты и прибрежные поселения составляют программу морских прогулок из района Ла-Уньона.

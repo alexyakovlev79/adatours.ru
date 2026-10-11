@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_zapovednik_ilinisas.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Илинисас — заповедный высокогорный район Эквадора.
 
 В активных маршрутах его посещение связано с вулканическими вершинами и прогулками по андскому парамо.

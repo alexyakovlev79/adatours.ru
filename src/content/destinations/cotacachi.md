@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_cotacachi.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Котакачи — город в северной части Эквадора, связанный с традициями ремесленного производства.
 
 Его посещение сочетают с Отавало и природными маршрутами соседнего горного района.

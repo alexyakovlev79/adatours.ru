@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_vulkan_serra_negra.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Сьерра-Негра — вулкан на Исабеле.
 
 Прогулка к его кратеру показывает масштаб вулканического рельефа острова и дополняет морскую часть путешествия по Галапагосам.

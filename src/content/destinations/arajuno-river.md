@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_reka_arahuno.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Арахуно — река в эквадорской Амазонии.
 
 Прогулки по воде и посещение лесных участков её берегов входят в программы знакомства с районом Ауано.

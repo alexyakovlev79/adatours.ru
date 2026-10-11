@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_biologicheskij_zapovednik_limonkocha.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Лимонкоча — биологический заповедник эквадорской Амазонии.
 
 Озёрный и лесной ландшафт отличает его от высокогорных природных районов страны.

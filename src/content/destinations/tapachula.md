@@ -17,13 +17,11 @@ featuredTours: []
 featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-tapachula-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1KkRjYQ5VduvoVuQThgtT9BimdECmPKMk/view?usp=drivesdk"
-updatedAt: "2026-10-02"
+updatedAt: '2026-10-11'
 themes: ["theme_culture","theme_events"]
 ---
 
 ## Тапачула - культурный центр Мексики!
-
-Это город с богатой культурой и является важным торговым центром, не только для Соконуско, но и для приграничной торговли с Гватемалой.
 
 ## Тапачула - смесь культур!
 

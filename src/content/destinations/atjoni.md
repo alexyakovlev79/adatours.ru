@@ -20,8 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_atoni.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-Атьони — отправная точка водных маршрутов по верховьям реки Суринам.
 
 Отсюда на каноэ добираются к лесным лоджам и поселениям местных общин.

@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_ostrov_isabela.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Исабела — один из островов Галапагосского архипелага.
 
 В маршрутах здесь сочетаются морские прогулки, прибрежные природные участки и знакомство с вулканическим ландшафтом.

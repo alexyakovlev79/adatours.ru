@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_vulkan_pasochoa.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Пасочоа — вулканический район в окрестностях Кито.
 
 В активных программах его посещают ради треккинга и знакомства с горной растительностью и рельефом.

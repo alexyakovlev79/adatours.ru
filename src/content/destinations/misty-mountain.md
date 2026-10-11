@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_tumannaya_gora.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Туманная гора находится в районе Кабалебо.
 
 Поход к ней соединяет тропический лес, горные склоны и виды на окружающий лесной ландшафт Суринама.

@@ -42,11 +42,9 @@ featureBands:
     image: /media/destinations/el-calafate/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/argentinskaya-patagoniya-i-gorod-ehl-kalafate
 sourceSnapshot: page_texts_original/argentinskaya-patagoniya-i-gorod-ehl-kalafate__cf077830.md
-updatedAt: 2026-09-24
+updatedAt: '2026-10-11'
 themes: ["theme_wildlife","theme_adventure"]
 ---
-
-Эль-Калафате – удобная база для поездок к ледникам Национального парка Лос-Гласьярес. Главная точка здесь – Перито-Морено, но программу можно дополнить и другими природными экскурсиями Патагонии.
 
 Ледники можно осматривать с воды во время прогулки на небольшом судне. Для активного дня подойдет пешая прогулка по леднику в сопровождении профильной команды.
 

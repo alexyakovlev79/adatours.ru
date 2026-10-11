@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_vulkan_chimboraso.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Чимборасо — один из наиболее узнаваемых вулканов Эквадора.
 
 В поездках по высокогорью его окрестности представляют пейзажи открытых склонов и заснеженной вершины.

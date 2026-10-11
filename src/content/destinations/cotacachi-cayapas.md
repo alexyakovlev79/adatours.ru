@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_cotacachi_cayapas.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Котакачи-Каяпас объединяет разные природные ландшафты северо-западного Эквадора.
 
 В высокогорных маршрутах знакомство с этим районом дополняет поездки к Отавало и Котакачи.

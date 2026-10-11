@@ -41,11 +41,9 @@ featureBands:
     image: /media/destinations/ouro-preto/hero-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya__226a4f58.md
-updatedAt: 2026-09-25
+updatedAt: '2026-10-11'
 themes: ["theme_culture"]
 ---
-
-Ору-Прету находится в штате Минас-Жерайс и тесно связан с эпохой добычи золота. В старом центре сохранились барочные церкви, музеи, площади и плотная застройка на холмистом рельефе.
 
 Площадь Тирадентис остается одной из основных точек прогулки. От нее удобно продолжать маршрут по историческим улицам, музеям и религиозным памятникам. Отдельный блок поездки можно посвятить старым золотым шахтам, которые показывают другую сторону истории региона.
 

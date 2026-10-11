@@ -17,13 +17,11 @@ featureBands: []
 facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-montesuma-v-kosta-rike-poluostrov-nikoya"
 sourceSnapshot: "https://drive.google.com/file/d/1l__E6-3qQ1OCnBJ1NSfGYb3o_t-T67Tm/view?usp=drivesdk"
-updatedAt: "2026-10-02"
+updatedAt: '2026-10-11'
 themes: ["theme_beach","theme_wildlife"]
 ---
 
 ## Монтесума -живописная деревушка в Коста Рике
-
-Монтесума является излюбленным местом туристов. Живописная деревушка хорошо известна своей богемной атмосферой и потрясающей красотой пляжей, рек и водопадов.
 
 Монтесума привлекает эко-туристов, любителей пляжа и поклонников неописуемой красоты. Пляж небольшой деревни окружен высокими скалами, поросшими тропической растительностью, живописными водопадами и природными бассейнами.
 

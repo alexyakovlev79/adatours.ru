@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_niv_avrora.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Ньив-Аврора — деревня на реке Верхний Суринам.
 
 В программах путешествия знакомство с деревней связано с речной поездкой и культурой марунов, живущих в лесных районах страны.

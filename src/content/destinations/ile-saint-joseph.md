@@ -20,8 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_french_guiana_ostrov_sen_zhozef.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-Остров Сен-Жозеф — один из островов Иль-дю-Салю во Французской Гвиане.
 
 Сохранившиеся сооружения бывшей колонии позволяют представить ее историю, а тропическая растительность постепенно возвращает себе пространство.

@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_bellavista_cloud_forest.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Бельявиста — район облачного леса в окрестностях Кито.
 
 Тропы проходят среди густой растительности и влажных горных склонов; знакомство с лесом дополняет маршруты по Миндо.

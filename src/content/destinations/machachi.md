@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_machachi.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Мачачи находится в межгорной долине к югу от Кито.
 
 Город служит ориентиром в маршрутах к вулканам и высокогорным природным районам Эквадора.

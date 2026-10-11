@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_peguche_waterfall.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Водопад Пегуче находится рядом с Отавало.
 
 Его посещение добавляет лесную прогулку и природный пейзаж к знакомству с городом и местными ремесленными традициями.

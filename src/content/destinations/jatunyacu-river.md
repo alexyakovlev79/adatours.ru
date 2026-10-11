@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_reka_zhatunyaku.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Жатуньяку — река в районе Тены.
 
 В активных программах по эквадорской Амазонии здесь знакомятся с речным пейзажем и проходят участки маршрута на рафте.

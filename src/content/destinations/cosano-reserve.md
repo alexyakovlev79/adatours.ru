@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_zapovednik_kosano.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Косано — лесной участок у реки Арахуно.
 
 Его посещение входит в программы La Casa del Suizo: пешая прогулка знакомит с тропической растительностью и лесной средой.

@@ -20,9 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_antarctica_proliv_gerlashe.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Пролив Герлаше лежит у западного побережья Антарктического полуострова.
 
 Вода, ледники и горные берега образуют пейзаж, ради которого сюда заходят экспедиционные суда.

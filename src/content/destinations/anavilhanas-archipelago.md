@@ -26,10 +26,8 @@ featuredExcursions: []
 featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_arhipelag_anavianas.md
-updatedAt: '2026-10-08'
+updatedAt: '2026-10-11'
 ---
-
-Архипелаг Анавианас входит в маршруты по бразильской Амазонии. Здесь путешествуют на катере между лесными берегами и островами, выходят на тропы дождевого леса и знакомятся с жизнью местных общин.
 
 Маршрут зависит от уровня воды. В сухой сезон в программе встречаются общины Santo Antonio и Tiririca и пляж Tiririca. В период высокой воды посещают Sobrado и лесные участки в районе Parana das Araras.
 

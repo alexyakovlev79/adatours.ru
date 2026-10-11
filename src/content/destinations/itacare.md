@@ -39,11 +39,9 @@ featureBands:
     image: /media/destinations/itacare/featureBands-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/plyazhnye-tury-v-braziliyu-na-morskoj-kurort-itakare
 sourceSnapshot: page_texts_original/plyazhnye-tury-v-braziliyu-na-morskoj-kurort-itakare__2bb91022.md
-updatedAt: 2026-09-25
+updatedAt: '2026-10-11'
 themes: ["theme_beach","theme_wildlife"]
 ---
-
-Итакаре находится на побережье штата Баия. Его окрестности соединяют океан, атлантический лес и водопады, поэтому пляжные дни легко чередовать с короткими поездками в природу.
 
 Пляжную часть здесь удобно чередовать с прогулками и короткими выездами в Мата-Атлантику. Для спокойной поездки лучше выбрать несколько любимых пляжей, а не пытаться объехать все побережье.
 

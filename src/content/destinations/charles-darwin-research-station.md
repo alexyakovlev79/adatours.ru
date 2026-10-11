@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_issledovatelskaya_stanciya_charlza_darvina.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Исследовательская станция Чарльза Дарвина находится на острове Санта-Крус.
 
 Здесь знакомятся с работой по изучению и сохранению природы Галапагосов, в том числе гигантских черепах.

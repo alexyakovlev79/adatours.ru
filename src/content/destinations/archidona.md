@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_archidona.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Арчидона находится в провинции Напо, на пути к эквадорской Амазонии.
 
 Здесь горные маршруты сменяются поездками по речным и лесным районам восточной части страны.

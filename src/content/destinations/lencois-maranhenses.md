@@ -41,11 +41,9 @@ featureBands:
     image: /media/destinations/lencois-maranhenses/gallery-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-pustynyu-lensojc-maranenses-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-pustynyu-lensojc-maranenses-v-brazilii__de947896.md
-updatedAt: 2026-09-26
+updatedAt: '2026-10-11'
 themes: ["theme_wildlife","theme_adventure"]
 ---
-
-Ленсойс-Мараньенсес запоминается почти сразу: белые дюны тянутся до горизонта, а после дождей между ними появляются пресноводные лагуны. Именно за этим сочетанием песка и воды сюда и едут.
 
 Лагуны сезонные. В разные месяцы глубина воды и доступные маршруты меняются, поэтому даты поездки лучше подбирать под состояние парка. На месте программу можно построить вокруг прогулок по дюнам, купания и маршрутов к известным лагунам, включая Лагоа-Азул.
 

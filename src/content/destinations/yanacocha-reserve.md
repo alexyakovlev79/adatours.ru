@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_yanacocha_reserve.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Янакоча — природный участок в горных окрестностях Кито.
 
 Лесные тропы и наблюдение за птицами добавляют к маршруту знакомство с влажными высокогорными склонами.

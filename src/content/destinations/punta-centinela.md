@@ -20,10 +20,8 @@ featuredExcursions: []
 facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_punta_sentinela.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Пунта-Сентинела — пляжное побережье полуострова Санта-Элена в Эквадоре, где после экскурсий по стране можно провести несколько дней у Тихого океана.
 
 Здесь едут ради песчаного пляжа, океанских пейзажей и спокойного отдыха на берегу. В районе работает Royal Decameron Punta Centinela с системой all inclusive; конкретные услуги и условия проживания зависят от выбранного размещения.
 

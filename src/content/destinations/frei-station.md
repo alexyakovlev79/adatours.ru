@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_antarctica_stanciya_frej.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Станция Фрей — чилийская антарктическая станция на острове Кинг-Джордж.
 
 Она входит в район, через который проходят воздушные и морские маршруты к Южным Шетландским островам.

@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_pujo.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Пуйо расположен у восточных склонов Анд, на переходе к эквадорской Амазонии.
 
 В маршрутах через Баньос и лесные районы здесь меняется характер природы и городской жизни.

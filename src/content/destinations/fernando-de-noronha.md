@@ -31,14 +31,12 @@ facts:
 featureBands: []
 sourceUrl: https://brasiltours.ru/tury-v-fernandu-di-noronya-arhipelag-v-brazilii
 sourceSnapshot: page_texts_original/tury-v-fernandu-di-noronya-arhipelag-v-brazilii__981f2035.md
-updatedAt: 2026-09-26
+updatedAt: '2026-10-11'
 themes:
 - theme_diving
 - theme_beach
 - theme_wildlife
 ---
-
-Фернанду-ди-Норонья стоит выделить несколько отдельных дней. Здесь большая часть поездки проходит у воды: дайвинг, снорклинг, пляжи и прогулки с видами на Атлантику.
 
 Архипелаг имеет вулканическое происхождение. Его природные территории и морская экосистема входят в объект Всемирного наследия UNESCO с 2001 года. В воде встречаются черепахи, дельфины и множество рыб.
 

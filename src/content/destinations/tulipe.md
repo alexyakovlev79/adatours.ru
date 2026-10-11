@@ -19,9 +19,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_tulipe.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Тулипе — археологическое место к северо-западу от Кито.
 
 Его посещение дополняет маршруты по облачным лесам знакомством с культурной историей этого района.

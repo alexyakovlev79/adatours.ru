@@ -20,8 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_belize_peschera_barton_krik.md
-updatedAt: '2026-10-08'
+updatedAt: '2026-10-11'
 ---
-Бартон-Крик, пещера в районе Кайо в Белизе, известна подземной рекой. Вода ведет между известняковыми стенами, под сводами с природными натечными образованиями.
 
 Внутри пещеры путешествуют на каноэ с гидом. Лодочная прогулка позволяет увидеть подземные залы с воды и дополняет маршруты по западному Белизу.

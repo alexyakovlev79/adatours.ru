@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import InterestLinks from '../components/editorial/InterestLinks.astro';
 import Hero from '../components/editorial/Hero.astro';
+import InlineMarkdown from '../components/global/InlineMarkdown.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 import TripStats from '../components/tour/TripStats.astro';
@@ -112,6 +113,12 @@ const destinationSchema = {
     },
   } : {}),
 };
+
+// Match the tour description: keep its opening heading, then show the lead in prose.
+const descriptionHtml = await Astro.slots.render('default');
+const firstHeadingMatch = descriptionHtml.match(/^(\s*(?:<!--[\s\S]*?-->\s*)*<h2\b[^>]*>[\s\S]*?<\/h2>)/i);
+const firstHeadingHtml = firstHeadingMatch?.[1] ?? '';
+const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstHeadingHtml.length) : descriptionHtml;
 ---
 
 <BaseLayout leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id}
@@ -156,13 +163,11 @@ const destinationSchema = {
 
   <InterestLinks entity={d} />
 
-  <div class="destination-intro">
-    <EditorialStatement eyebrow="Зачем ехать" text={d.summary} />
-  </div>
-
   <section class="destination-copy section--tight">
     <div class="container prose">
-      <slot />
+      {firstHeadingHtml && <Fragment set:html={firstHeadingHtml} />}
+      {d.summary?.trim() && <p class="destination-lead"><InlineMarkdown text={d.summary} /></p>}
+      {remainingDescriptionHtml && <Fragment set:html={remainingDescriptionHtml} />}
     </div>
   </section>
 
@@ -289,16 +294,16 @@ const destinationSchema = {
 </BaseLayout>
 
 <style>
-  .destination-intro :global(.statement) {
-    padding-block: clamp(24px, 3vw, 40px) 16px;
-  }
-  .destination-intro :global(.eyebrow) { margin-top: 0; }
   .destination-copy {
     padding-block: 16px clamp(28px, 3vw, 40px);
   }
   .destination-copy :global(.prose) { display: flow-root; }
   .destination-copy :global(.prose > :first-child) { margin-top: 0; }
   .destination-copy :global(.prose > :last-child) { margin-bottom: 0; }
+  .destination-copy :global(.prose) .destination-lead {
+    font-weight: 600;
+    color: var(--color-ink);
+  }
 </style>
 
 

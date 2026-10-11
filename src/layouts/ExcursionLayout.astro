@@ -7,6 +7,7 @@ import BaseLayout from './BaseLayout.astro';
 import EntityLinks from '../components/editorial/EntityLinks.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import Hero from '../components/editorial/Hero.astro';
+import InlineMarkdown from '../components/global/InlineMarkdown.astro';
 import TripStats from '../components/tour/TripStats.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
 import TourPricing from '../components/tour/TourPricing.astro';
@@ -123,6 +124,12 @@ const excursionSchema = {
     },
   } : {}),
 };
+
+// Match the tour description: keep its opening heading, then show the lead in prose.
+const descriptionHtml = await Astro.slots.render('default');
+const firstHeadingMatch = descriptionHtml.match(/^(\s*(?:<!--[\s\S]*?-->\s*)*<h2\b[^>]*>[\s\S]*?<\/h2>)/i);
+const firstHeadingHtml = firstHeadingMatch?.[1] ?? '';
+const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstHeadingHtml.length) : descriptionHtml;
 ---
 
 <BaseLayout leadTitle={archived ? "Подобрать другую поездку" : `Заказать экскурсию: ${d.title}`} leadEntityId={archived ? "" : d.id}
@@ -153,7 +160,6 @@ const excursionSchema = {
     contentSized
     eyebrow={archived ? "Архивная экскурсия" : "Экскурсия"}
     title={d.title}
-    intro={d.lead}
     image={d.hero?.src}
     imageTextAlign={d.imageTextAlign}
     mediaStatus={d.hero?.status}
@@ -176,7 +182,9 @@ const excursionSchema = {
 
   <section class="excursion-copy section--tight">
     <div class="container prose">
-      <slot />
+      {firstHeadingHtml && <Fragment set:html={firstHeadingHtml} />}
+      {d.lead?.trim() && <p class="excursion-lead"><InlineMarkdown text={d.lead} /></p>}
+      {remainingDescriptionHtml && <Fragment set:html={remainingDescriptionHtml} />}
     </div>
   </section>
 
@@ -280,6 +288,10 @@ const excursionSchema = {
 
   .excursion-copy :global(.prose p:last-child) {
     margin-bottom: 0;
+  }
+  .excursion-copy :global(.prose) .excursion-lead {
+    font-weight: 600;
+    color: var(--color-ink);
   }
 </style>
 

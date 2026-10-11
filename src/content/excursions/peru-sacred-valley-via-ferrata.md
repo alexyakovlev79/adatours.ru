@@ -12,14 +12,12 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_peru_svyaschennaya_dolina_inkov
 destinationName: Священная долина инков
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1BtRjZQrP4rvdwc5mscbeOgdGRzkHCjWx/view?usp=drivesdk
 themes: ["theme_adventure"]
 ---
-
-Маршрут проходит по отвесной скале высотой около **300 метров**. На скале установлены металлические лестницы и стальные анкеры, страховка фиксируется на каждом участке.
 
 Опыт скалолазания не обязателен. Также предусмотрен спуск дюльфером по веревке со страховкой примерно на **100 метров**.

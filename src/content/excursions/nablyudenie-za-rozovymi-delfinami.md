@@ -11,7 +11,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/1HQQThKxYsgHoUkh7BEEU7noQF9DzgQD1/view?usp=drivesdk
@@ -21,5 +21,3 @@ hero:
   alt: "Розовый речной дельфин выпрыгивает из воды, Амазония, Бразилия"
 themes: ["theme_wildlife"]
 ---
-
-Поездка позволяет увидеть розовых речных дельфинов, которые живут в амазонских водах.

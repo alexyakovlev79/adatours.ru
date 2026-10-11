@@ -25,40 +25,20 @@ notIncluded: []
 notes:
   - "Экскурсия оплачивается отдельно."
 sourceSnapshot: page_texts_original/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej__374153d4.md
-updatedAt: 2026-10-02
+updatedAt: '2026-10-11'
 relatedDestinations:
   - destination_argentina_ostrov_martilo
 themes: ["theme_wildlife"]
 ---
 
-Можно заказать морскую поездку к колонии пингвинов.
-
-
-
-
 Трансфер к порту занимает около 20 минут.
-
-
-
 
 Затем около 2 часов проходит навигация по проливу Beagle.
 
-
-
-
 С конца сентября на остров возвращаются магеллановы пингвины.
-
-
-
 
 Также можно увидеть папуа-пингвинов.
 
-
-
-
 Среди птиц встречаются альбатросы, бакланы, буревестники, грифы и южноамериканские крачки.
-
-
-
 
 Экскурсия оплачивается отдельно.

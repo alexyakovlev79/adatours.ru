@@ -12,7 +12,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_ecuador_zapovednik_misikocha
 destinationName: Заповедник Мисикоча
 relatedDestinations: []
@@ -20,8 +20,6 @@ duration: 1–4 часа
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
 themes: ["theme_wildlife","theme_adventure"]
 ---
-
-До частного заповедника около 15 минут на лодке вверх по течению. На территории сохранился участок девственного леса. Все маршруты начинаются от приюта с соломенной крышей, расположенного в нескольких сотнях метров от реки.
 
 Тропы различаются по протяженности и сложности, прогулка может занимать от 1 до 4 часов. Маршрут проходит через ручьи, холмы и выводит к смотровой площадке. Местный гид рассказывает, как индейцы кичуа используют растения тропического леса в быту и традиционной медицине.
 

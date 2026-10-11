@@ -13,7 +13,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_brazil_sao_paulo
 destinationName: Сан-Паулу
 sourceSnapshot: https://drive.google.com/file/d/1wdoT4bUsTp4hUeirLM67k8049wKzZKCN/view?usp=drivesdk
@@ -22,5 +22,3 @@ hero:
   alt: 'На фото: город Сан-Пауло в Бразилии'
 themes: ["theme_culture"]
 ---
-
-В исторической части города программа включает площадь Се, Кафедральный собор, район Либердаде, площадь основания города, Чайный мост, Муниципальный театр оперы и балета, привокзальный сквер, вокзал пригородных поездов, Муниципальный рынок, площадь Республики и здание «Итальянская Терраса».

@@ -27,12 +27,10 @@ included: []
 notIncluded: []
 notes: []
 sourceSnapshot: https://drive.google.com/file/d/18-m9Is7xIKzVM3aQSSt4y6qCBWtjoKuk/view
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 language:
 - русский
 ---
-
-Обзорная экскурсия по городу Кито с посещением линии экватора.
 
 Продолжительность экскурсионного дня вместе с переездами – 8 часов.
 

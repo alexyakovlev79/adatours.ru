@@ -11,7 +11,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_venezuela_kanajma_i_vodopad_anhel
 destinationName: Канайма и водопад Анхель
 relatedDestinations: []
@@ -22,6 +22,3 @@ hero:
   alt: "Водопад Анхель падает со столовой горы среди облаков, Венесуэла"
 themes: ["theme_wildlife"]
 ---
-
-Вертолетная программа над Национальным парком и водопадом Анхель
-

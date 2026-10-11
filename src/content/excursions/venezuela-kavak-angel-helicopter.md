@@ -11,7 +11,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_venezuela_kanon_kavak
 destinationName: Каньон Кавак
 relatedDestinations:
@@ -22,5 +22,3 @@ hero:
   alt: 'На фото: водопад Сальта-Анхель в Венесуэле'
 themes: ["theme_wildlife"]
 ---
-
-вертолетная программа к Сальто-Анхелю и каньону Кавак, 3,5 часа, минимум 4 человека;

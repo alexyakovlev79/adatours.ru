@@ -11,14 +11,12 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_peru_svyaschennaya_dolina_inkov
 destinationName: Священная долина инков
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1BtRjZQrP4rvdwc5mscbeOgdGRzkHCjWx/view?usp=drivesdk
 themes: ["theme_adventure"]
 ---
-
-Зип-лайн. Трасса состоит из **6 тросов** длиной от **100 до 500 метров**, общая протяженность около **2000 метров**.
 
 Участника фиксируют карабином с полной страховкой. Система сама обеспечивает плавную остановку, поэтому вручную тормозить не требуется.

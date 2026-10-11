@@ -11,7 +11,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_peru_lima
 destinationName: Лима
 relatedDestinations: []
@@ -21,5 +21,3 @@ hero:
   alt: ''
 themes: ["theme_culture"]
 ---
-
-Сити-тур по Лиме и Музей золота

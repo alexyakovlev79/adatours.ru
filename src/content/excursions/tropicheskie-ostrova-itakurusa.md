@@ -11,7 +11,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_brazil_itakurusa
 destinationName: Итакуруса
 relatedDestinations:
@@ -22,8 +22,6 @@ hero:
 sourceSnapshot: https://drive.google.com/file/d/1krMKz4X0Ls4AyhJchoT4xa-dRG0Qo3jC/view?usp=drivesdk
 themes: ["theme_beach"]
 ---
-
-Итакуруса находится примерно в 1,5 часах от Рио-де-Жанейро, в районе Мангаратиба.
 
 Местная жизнь связана с рыболовством, туризмом и сельским хозяйством. На берегу сохранились небольшие дома рыбаков.
 
@@ -36,4 +34,3 @@ themes: ["theme_beach"]
 Затем возвращение на шхуне в Рио.
 
 **Продолжительность:** около 8 часов.
-

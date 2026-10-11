@@ -23,13 +23,8 @@ notIncluded: []
 notes:
   - "Активность оплачивается отдельно."
 sourceSnapshot: page_texts_original/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej__374153d4.md
-updatedAt: 2026-10-11
+updatedAt: '2026-10-11'
 themes: ["theme_wildlife"]
 ---
-
-Дополнительный полет позволяет увидеть всю систему каскадов сверху.
-
-
-
 
 Маршрут проходит над водопадами и «Горлом Дьявола».

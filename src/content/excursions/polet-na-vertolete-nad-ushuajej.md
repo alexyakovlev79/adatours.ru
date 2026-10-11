@@ -11,7 +11,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_argentina_ushuajya
 destinationName: Ушуайя
 sourceSnapshot: https://drive.google.com/file/d/1J5MJHHhSev7vjEDYzyO5nN_KFCu16ec-/view?usp=drivesdk
@@ -20,6 +20,3 @@ hero:
   alt: Ушуайя
 themes: ["theme_wildlife"]
 ---
-
-Предусмотрена возможность полета на вертолете над Ушуайей или заливом Дрейка продолжительностью около **10 минут**.
-

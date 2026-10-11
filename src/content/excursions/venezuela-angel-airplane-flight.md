@@ -11,7 +11,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_venezuela_kanajma_i_vodopad_anhel
 destinationName: Канайма и водопад Анхель
 relatedDestinations: []
@@ -22,5 +22,3 @@ hero:
   alt: "Высокий водопад падает с отвесной скалы среди облаков, Канайма, Венесуэла"
 themes: ["theme_wildlife"]
 ---
-
-Полет над водопадом Анхель на самолете

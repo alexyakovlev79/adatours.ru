@@ -11,7 +11,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_venezuela_kanon_kavak
 destinationName: Каньон Кавак
 relatedDestinations:
@@ -22,6 +22,3 @@ hero:
   alt: Узкий скальный каньон Кавак с водой и каскадом, Венесуэла
 themes: ["theme_wildlife"]
 ---
-
-Каньон Кавак и полет над Анхелем
-

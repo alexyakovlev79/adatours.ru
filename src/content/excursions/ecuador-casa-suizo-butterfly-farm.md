@@ -13,12 +13,10 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_ecuador_reka_napo
 destinationName: Река Напо
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
 themes: ["theme_wildlife"]
 ---
-
-Примерно в 15 минутах ходьбы от Casa del Suizo находится ферма бабочек. Здесь разводят более 20 местных видов. Гостям показывают этапы развития насекомых, после чего можно пройти в большое помещение, где среди растений летают сотни бабочек. Среди них встречается яркий голубой морфо.

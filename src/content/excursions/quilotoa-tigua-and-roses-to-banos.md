@@ -31,12 +31,10 @@ notIncluded:
 - Каяки и подъём на мулах у озера Килотоа
 notes: []
 sourceSnapshot: https://drive.google.com/file/d/18-m9Is7xIKzVM3aQSSt4y6qCBWtjoKuk/view
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 language:
 - русский
 ---
-
-Посещение кратерного озера Килотоа.
 
 Продолжительность экскурсионного дня вместе с переездами – 11 часов.
 

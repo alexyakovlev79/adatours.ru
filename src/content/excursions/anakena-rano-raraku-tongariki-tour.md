@@ -22,10 +22,8 @@ hero:
   src: /media/excursions/anakena-rano-raraku-tongariki-tour/hero-src-enhanced-20261010.webp
   alt: Аху Тонгарики, остров Пасхи - 15 восстановленных статуй моаи
 sourceSnapshot: https://drive.google.com/file/d/1Of-rCEbo7uTXOBvvXzNiFYyt8TC5a2Wn/view?usp=drivesdk
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Маршрут проходит вдоль побережья.
 
 Первая остановка - Аху-Акаханга, где, согласно местной легенде, похоронен первый король острова Хоту-Матуа.
 

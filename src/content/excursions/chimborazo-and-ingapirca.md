@@ -31,10 +31,8 @@ included: []
 notIncluded: []
 notes: []
 sourceSnapshot: https://drive.google.com/file/d/1lAlPZq9lDvk6DYF09CER7Djq9A_vXj4x/view
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Посещение заповедника Чимборасо и археологического комплекса Ингапирка
 
 Продолжительность экскурсионного дня (включая переезды): 11–12 часов.
 

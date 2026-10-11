@@ -12,11 +12,9 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_argentina_buenos_aires
 destinationName: Буэнос-Айрес
 sourceSnapshot: https://drive.google.com/file/d/1Y5SqS1gxfk1Gs2vZDbaX-CeR6gzeH4g8/view?usp=drivesdk
 themes: ["theme_culture"]
 ---
-
-Вечером вы посетите танго-шоу с ужином в доме танго «Портеньо». Групповые трансферы без гида. Время программы: примерно с 20:00 до 23:45.

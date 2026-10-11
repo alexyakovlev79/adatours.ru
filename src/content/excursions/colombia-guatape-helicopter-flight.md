@@ -11,12 +11,10 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_colombia_guatape
 destinationName: Гуатапе
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1qY85mKDod9WRGJeTpJZPYPD6j-F48v7n/view?usp=drivesdk
 themes: ["theme_wildlife"]
 ---
-
-Можно заказать вертолетную прогулку над долиной.

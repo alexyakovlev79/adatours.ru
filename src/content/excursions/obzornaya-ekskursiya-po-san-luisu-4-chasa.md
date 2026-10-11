@@ -11,7 +11,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_brazil_sao_luis
 destinationName: Сан-Луис
 sourceSnapshot: https://drive.google.com/file/d/1IDFSVXvO7ggxj3FVSY3gp50CRWS4eBe6/view?usp=drivesdk
@@ -20,8 +20,6 @@ hero:
   alt: Сан-Луис
 themes: ["theme_culture"]
 ---
-
-Продолжительность около 4 часов.
 
 Экскурсия проходит по историческому центру, включенному в список Всемирного наследия ЮНЕСКО.
 

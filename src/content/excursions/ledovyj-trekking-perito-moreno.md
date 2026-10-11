@@ -25,12 +25,10 @@ notIncluded: []
 notes:
   - "Экскурсия оплачивается отдельно."
 sourceSnapshot: page_texts_original/argentina-buenos-ajres-kalafate-iguasu__2214ad3f.md
-updatedAt: 2026-10-02
+updatedAt: '2026-10-11'
 relatedDestinations:
   - destination_argentina_lednik_perito_moreno
 themes: ["theme_adventure","theme_wildlife"]
 ---
-
-Можно дополнить день у Перито-Морено прогулкой по поверхности ледника.
 
 В программу входит коктейль со льдом, взятым с ледника.

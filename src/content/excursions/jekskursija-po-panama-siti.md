@@ -51,11 +51,9 @@ notes:
   - "Принимающая сторона оставляет за собой право изменения порядка посещения достопримечательностей."
 sourceUrl: "https://brasiltours.ru/jekskursija-po-panama-siti"
 sourceSnapshot: "https://drive.google.com/file/d/14a3DZbeKdTvFKVbVE9k5IBSKRYiOj09V/view?usp=drivesdk"
-updatedAt: "2026-10-02"
+updatedAt: '2026-10-11'
 themes: ["theme_culture"]
 ---
-
-Экскурсия с русскоговорящим гидом. От 2 человек.
 
 ## Панама — три города в одном
 
@@ -90,4 +88,3 @@ themes: ["theme_culture"]
 ## Стоимость
 
 Стоимость — $188. Экскурсия проводится от 2 человек.
-

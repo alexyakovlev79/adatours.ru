@@ -11,15 +11,13 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_venezuela_nacionalnyj_park_avila
 destinationName: Национальный парк Авила
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1XH92Fy0Amt9ucbzA6OjA_kW6lI_bkN8I/view?usp=drivesdk
 themes: ["theme_wildlife","theme_culture"]
 ---
-
-Подъем на фуникулере или автомобилях 4x4 на гору Авила, около 2170 м над уровнем моря.
 
 В ясную погоду отсюда видны Каракас и Карибское море. На вершине можно гулять, покупать сувениры и попробовать клубнику со сливками и горячее какао.
 

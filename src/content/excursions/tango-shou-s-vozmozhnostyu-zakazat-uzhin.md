@@ -12,13 +12,11 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_argentina_buenos_aires
 destinationName: Буэнос-Айрес
 sourceSnapshot: https://drive.google.com/file/d/1QpDAajYz7W1SExwk2OmbCES3C8vGGOo0/view?usp=drivesdk
 themes: ["theme_culture"]
 ---
-
-Вечером вас ждет танго-шоу. Танцоры работают почти без дистанции, а музыка и паузы делают представление очень напряженным и выразительным.
 
 можно заказать аргентинское вино и традиционные блюда.

@@ -12,12 +12,10 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_ecuador_mindo
 destinationName: Миндо
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1YmOlpUD9Iuchy4Rkfq4kXeYsK1pRDGsu/view?usp=drivesdk
 themes: ["theme_adventure"]
 ---
-
-Можно отправиться на тюбинг по горной реке. Для сплава используют связанные между собой камеры, группу сопровождает профессиональный гид.

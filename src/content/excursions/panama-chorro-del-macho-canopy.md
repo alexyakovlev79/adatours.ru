@@ -12,7 +12,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_panama_vodopad_chorro_del_macho
 destinationName: Водопад Чорро-дель-Мачо
 relatedDestinations:
@@ -20,5 +20,3 @@ relatedDestinations:
 sourceSnapshot: https://drive.google.com/file/d/11SlnwD-NRAp5QXuXQ1s07d7JY4U8cPtq/view?usp=drivesdk
 themes: ["theme_adventure","theme_wildlife"]
 ---
-
-Над водопадом проходят трассы канопи. Желающие могут подняться с инструкторами к первой платформе и спуститься по канатам. Один из пролетов длиной 130 метров проходит над водопадом, а в его середине предусмотрена остановка для фотографии.

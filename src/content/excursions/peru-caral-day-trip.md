@@ -11,12 +11,10 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_peru_karal
 destinationName: Караль
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/14g9D9z3HEkt3Lx1O7W-pvn45NKMRrdkq/view?usp=drivesdk
 themes: ["theme_culture"]
 ---
-
-Древний город Караль

@@ -11,7 +11,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_costa_rica_monteverde_santa_elena
 destinationName: Монтеверде & Санта Елена
 relatedDestinations:
@@ -22,8 +22,6 @@ hero:
   alt: 'на фото: Облачный лес Монтеверде в Коста-Рике'
 themes: ["theme_wildlife"]
 ---
-
-Экскурсия рассчитана примерно на 12 часов и начинается рано утром.
 
 Название Монтеверде переводится с испанского как «зеленая гора». Маршрут проходит через горный облачный лес к водопадам Viento Fresco.
 

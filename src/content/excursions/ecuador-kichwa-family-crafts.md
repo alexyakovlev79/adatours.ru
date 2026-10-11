@@ -12,15 +12,13 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_ecuador_reka_napo
 destinationName: Река Напо
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
 themes: ["theme_culture","theme_gastronomy_wine"]
 ---
-
-Короткое плавание вниз по течению приводит к семье индейцев кичуа. Гостям показывают, как готовят традиционный напиток чича, и предлагают его попробовать.
 
 Здесь же рассказывают о духовой трубке, которую жители джунглей использовали на охоте. Желающие могут попробовать попасть в цель.
 

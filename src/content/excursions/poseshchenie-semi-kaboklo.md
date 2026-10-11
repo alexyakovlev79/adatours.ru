@@ -11,14 +11,12 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/1HQQThKxYsgHoUkh7BEEU7noQF9DzgQD1/view?usp=drivesdk
 themes: ["theme_culture"]
 ---
-
-Поездка на лодке или каноэ к местной семье кабокло.
 
 Во время визита вы узнаете о традициях, повседневной жизни и истории Амазонии, включая период «резиновой лихорадки».
 

@@ -25,11 +25,8 @@ notIncluded: []
 notes: []
 sourceUrl: https://brasiltours.ru/tango-shou-v-buenos-ajrese
 sourceSnapshot: page_texts_newstep/Excursions/tango-shou-v-buenos-ajrese__f0fe36bb.md
-updatedAt: 2026-10-01
+updatedAt: '2026-10-11'
 themes: ["theme_culture"]
 ---
 
-Вечером проходит танго-шоу с ужином в Буэнос-Айресе.
-
 Продолжительность программы — около 4 часов.
-

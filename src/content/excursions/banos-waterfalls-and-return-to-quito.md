@@ -36,12 +36,10 @@ notIncluded:
 - Канопи над каньоном Пастаса — 15 USD с человека
 notes: []
 sourceSnapshot: https://drive.google.com/file/d/18-m9Is7xIKzVM3aQSSt4y6qCBWtjoKuk/view
-updatedAt: '2026-10-10'
+updatedAt: '2026-10-11'
 language:
 - русский
 ---
-
-Обзорная экскурсия по городу Баньосу и посещение водопадов.
 
 Продолжительность экскурсионного дня вместе с переездами – 11-12 часов.
 

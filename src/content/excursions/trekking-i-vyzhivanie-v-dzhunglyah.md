@@ -11,14 +11,12 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/1HQQThKxYsgHoUkh7BEEU7noQF9DzgQD1/view?usp=drivesdk
 themes: ["theme_adventure","theme_wildlife"]
 ---
-
-Полнодневная экскурсия.
 
 После выезда из Манауса и инструктажа по безопасности начинается пеший маршрут по тропе с инструкторами.
 

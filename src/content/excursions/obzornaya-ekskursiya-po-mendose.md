@@ -11,14 +11,12 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-11'
 destination: destination_argentina_mendoza
 destinationName: Мендоса
 sourceSnapshot: https://drive.google.com/file/d/15CAtJqQ2j1KpQopAOZeaH9YgcEVhKnWY/view?usp=drivesdk
 themes: ["theme_culture"]
 ---
-
-Продолжительность около 3 часов.
 
 Мендоса была основана в XVI веке и в тот период относилась к Чили. В XIX веке сильное землетрясение почти полностью разрушило старый город, от первоначальной застройки сохранилось немногое, в том числе руины церкви Святого Франциска.
 

@@ -45,15 +45,13 @@ notes:
   - При необходимости Ada Tours может изменить порядок посещения достопримечательностей.
 sourceUrl: https://brasiltours.ru/tur-na-ostrov-florena
 sourceSnapshot: page_texts_newstep/Excursions/tur-na-ostrov-florena__8e9c8be0.md
-updatedAt: 2026-10-01
+updatedAt: '2026-10-11'
 relatedDestinations:
   - destination_ecuador_ostrov_santa_krus_galapagosy
   - destination_ecuador_ostrov_florena_galapagosy
   - destination_ecuador_puerto_ajora
 themes: ["theme_wildlife","theme_culture"]
 ---
-
-Экскурсия начинается в Пуэрто-Айоре на острове Санта-Крус и продолжается поездкой на остров Флорена.
 
 Флорена известна своей историей: здесь бывали китобои и пираты, а связанные с островом истории первых поселенцев стали частью его культурного наследия.
 

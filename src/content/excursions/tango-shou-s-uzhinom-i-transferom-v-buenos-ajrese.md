@@ -24,11 +24,8 @@ included:
 notIncluded: []
 notes: []
 sourceSnapshot: page_texts_original/tur-v-argentinu-na-11dnej__b1e0208b.md
-updatedAt: 2026-10-02
+updatedAt: '2026-10-11'
 themes: ["theme_culture"]
 ---
 
-Вечером проходит танго-шоу с ужином. Представление сопровождается аргентинским вином и традиционными блюдами.
-
 Трансфер на вечернюю программу включен.
-

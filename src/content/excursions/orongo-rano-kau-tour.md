@@ -17,10 +17,8 @@ hero:
   src: /media/excursions/orongo-rano-kau-tour/hero-src-enhanced-20261010.webp
   alt: Моаи острова Пасхи, Чили - ряд статуй на платформе Аху
 sourceSnapshot: https://drive.google.com/file/d/1Of-rCEbo7uTXOBvvXzNiFYyt8TC5a2Wn/view?usp=drivesdk
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-11'
 ---
-
-Экскурсия начинается на склонах Рано-Кау.
 
 Со смотровой площадки открывается вид на кратер и озеро внутри него. Затем посещение Оронго, церемониального центра Рапа-Нуи.
 

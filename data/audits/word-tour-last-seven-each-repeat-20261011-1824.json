@@ -217,45 +217,95 @@
     }
   ],
   "registers": {
-    "state": "prepared",
+    "state": "applied_and_verified",
     "expectedPhotoSlots": 710,
     "matchedBefore": 709,
-    "newPhotoRows": [
-      [
-        "destination_antarctica_yuzhnye_shetlandskie_ostrova__hero",
-        "destination_antarctica_yuzhnye_shetlandskie_ostrova",
-        "https://adatours.ru/antarctica/place/south-shetland-islands/",
-        "",
-        "Место",
-        "Южные Шетландские острова",
-        "Hero",
-        "hero",
-        "1",
-        "/media/destinations/destination_antarctica_yuzhnye_shetlandskie_ostrova/original-01.png",
-        "Южные Шетландские острова",
-        "Готовый опубликованный актив Ada Tours; происхождение по реестру",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "REPLACED",
-        "",
-        "Существующий опубликованный слот; регистрация после аудита",
-        "public/media/destinations/destination_antarctica_yuzhnye_shetlandskie_ostrova/original-01.png",
-        "https://img.adatours.ru/media/destinations/destination_antarctica_yuzhnye_shetlandskie_ostrova/original-01.png",
-        "",
-        "",
-        "Аманда",
-        "Аудит 7 чётных и 7 нечётных программ, 11.10.2026. Слот присутствует в production MD; без новой генерации."
-      ]
+    "matchedAfter": 710,
+    "missingPhotoSlots": 0,
+    "pagesMissing": 0,
+    "newPhotoRow": 7372,
+    "newPhotoValues": [
+      "destination_antarctica_yuzhnye_shetlandskie_ostrova__hero",
+      "destination_antarctica_yuzhnye_shetlandskie_ostrova",
+      "https://adatours.ru/antarctica/place/south-shetland-islands/",
+      "",
+      "Место",
+      "Южные Шетландские острова",
+      "Hero",
+      "hero",
+      "1",
+      "/media/destinations/destination_antarctica_yuzhnye_shetlandskie_ostrova/original-01.png",
+      "Южные Шетландские острова",
+      "Готовый опубликованный актив Ada Tours; происхождение по реестру",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "REPLACED",
+      "",
+      "Существующий опубликованный слот; регистрация после аудита",
+      "public/media/destinations/destination_antarctica_yuzhnye_shetlandskie_ostrova/original-01.png",
+      "https://img.adatours.ru/media/destinations/destination_antarctica_yuzhnye_shetlandskie_ostrova/original-01.png",
+      "",
+      "",
+      "Аманда",
+      "Повторный аудит 7 чётных и 7 нечётных туров, начат 11.10.2026 в 18:24 МСК. Существующая обложка страницы; новых медиа нет. Content e288cd99519d50c86ba75e3f030b01c34ce8c082; Actions 38151795569 success."
     ],
-    "pagesMissing": 0
+    "tourAuditRows": [
+      1436,
+      1504,
+      1488,
+      1510,
+      1509,
+      582,
+      593,
+      1515,
+      1513,
+      1551,
+      1570,
+      1552,
+      1572,
+      1553
+    ],
+    "firstDatesAndAcceptancePreserved": true,
+    "readbackVerified": true
   },
   "publication": {
-    "state": "pending"
+    "state": "deployed",
+    "contentCommit": "e288cd99519d50c86ba75e3f030b01c34ce8c082",
+    "runId": 38151795569,
+    "runURL": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38151795569",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "id": 114506592593,
+        "name": "Verify S3 receipts and enforce no new Git media",
+        "conclusion": "success"
+      },
+      {
+        "id": 114506831302,
+        "name": "build",
+        "conclusion": "success"
+      },
+      {
+        "id": 114507781830,
+        "name": "deploy",
+        "conclusion": "success"
+      },
+      {
+        "id": 114507880038,
+        "name": "Publish deployment result as commit status",
+        "conclusion": "success"
+      }
+    ],
+    "testsPassed": 103,
+    "testsFailed": 0,
+    "siteRelationsErrors": 0,
+    "schemaHTMLPagesChecked": 8050,
+    "s3ReceiptsVerified": 453
   },
   "unresolvedSourceConditions": [
     "P148 date/year and optional service prices conflict within Anna Word; kept as conditions requiring confirmation before booking.",

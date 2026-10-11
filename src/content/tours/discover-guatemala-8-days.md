@@ -146,7 +146,7 @@ itinerary:
   text: Завтрак. Переезд из Антигуа на тихоокеанское побережье. Прибытие в Монтеррико, к пляжу с вулканическим песком.
     Этот трансфер выполняется без гида. Ночь в Dos Mundos Pacífico или аналогичном отеле в Монтеррико.
   images:
-  - src: /media/tours/discover-guatemala-8-days/monterrico-word-image4-20261010-p037-v1.webp
+  - src: /media/tours/discover-guatemala-8-days/monterrico-word-image4-20261010-p037-v1-enhanced-20261011-doc-v1.webp
     alt: Пальмы вдоль темного пляжа и закат над океаном
 - day: 7
   title: 'Пятница: отдых на пляже Монтеррико'

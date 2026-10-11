@@ -107,7 +107,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.'
   images:
-  - src: /media/tours/brazil-three-ecosystems-8-days/word-2-20261010.webp
+  - src: /media/tours/brazil-three-ecosystems-8-days/word-2-20261010-enhanced-20261011-doc-v1.webp
     alt: Спокойная река с отражениями деревьев и лесистыми берегами
 - excursionRef: excursion_jardim_amazonia_forest_canoe
   places:
@@ -160,7 +160,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.'
   images:
-  - src: /media/tours/brazil-three-ecosystems-8-days/word-3-20261010.webp
+  - src: /media/tours/brazil-three-ecosystems-8-days/word-3-20261010-enhanced-20261011-doc-v1.webp
     alt: Узкий водопад среди тёмных скал и густой лесной зелени
 - excursionRef: excursion_chapada_waterfalls_trails
   places:
@@ -192,7 +192,7 @@ itinerary:
 
     Питание: завтрак, обед, ужин.'
   images:
-  - src: /media/tours/brazil-three-ecosystems-8-days/word-4-20261010.webp
+  - src: /media/tours/brazil-three-ecosystems-8-days/word-4-20261010-enhanced-20261011-doc-v1.webp
     alt: Лесистые холмы и высокая растительность под облачным небом
 - day: 6
   title: 'Эколодж «Арарас»: каноэ и лесная тропа'

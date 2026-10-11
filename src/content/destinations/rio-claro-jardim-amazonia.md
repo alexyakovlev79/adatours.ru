@@ -13,7 +13,7 @@ searchAliases:
 themes:
 - theme_wildlife
 hero:
-  src: /media/tours/brazil-three-ecosystems-8-days/word-2-20261010.webp
+  src: /media/tours/brazil-three-ecosystems-8-days/word-2-20261010-enhanced-20261011-doc-v1.webp
   alt: Спокойная река с отражениями деревьев и лесистыми берегами
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_rio_claro_jardim_amazonia.md

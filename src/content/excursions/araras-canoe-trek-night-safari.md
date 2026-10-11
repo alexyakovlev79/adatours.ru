@@ -18,7 +18,7 @@ themes:
 language:
 - Английский
 hero:
-  src: /media/tours/brazil-three-ecosystems-8-days/word-5-20261010.webp
+  src: /media/tours/brazil-three-ecosystems-8-days/word-5-20261010-enhanced-20261011-doc-v1.webp
   alt: Узкая лодка на спокойной воде у зелёного берега
 gallery: []
 lead: Фотосафари к реке, каноэ, наблюдение за природой, тропа Howler Monkey и вечерний выезд.

@@ -19,7 +19,7 @@ language:
 priceFrom: null
 priceNote: Стоимость отдельной экскурсии рассчитывается по запросу.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-4-20261010.webp
+  src: /media/tours/panama-city-gamboa-6-days/word-4-20261010-enhanced-20261011-doc-v1.webp
   alt: Шлюзы Панамского канала и подходы к ним, вид сверху
 gallery: []
 lead: Шестичасовая экскурсия по Панама-Сити включает шлюзы Мирафлорес, исторические и современные районы, Каско-Антигуо

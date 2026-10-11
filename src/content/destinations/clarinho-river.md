@@ -12,7 +12,7 @@ searchAliases:
 themes:
 - theme_wildlife
 hero:
-  src: /media/tours/brazil-three-ecosystems-8-days/word-5-20261010.webp
+  src: /media/tours/brazil-three-ecosystems-8-days/word-5-20261010-enhanced-20261011-doc-v1.webp
   alt: Узкая лодка на спокойной воде у зелёного берега
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_clarinho_river.md

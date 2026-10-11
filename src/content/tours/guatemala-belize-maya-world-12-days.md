@@ -162,7 +162,7 @@ itinerary:
     Свободный день для отдыха в природном окружении отеля, посещения острова Флорес или дополнительной экскурсии в Яшху.
     Ночь в отеле.'
   images:
-  - src: /media/tours/guatemala-belize-maya-world-12-days/flores-word-07-20261010-p022-v1.webp
+  - src: /media/tours/guatemala-belize-maya-world-12-days/flores-word-07-20261010-p022-v1-enhanced-20261011-doc-v1.webp
     alt: Остров Флорес на озере Петен-Ица с высоты, Гватемала
     status: approved
   contentBlocks:
@@ -193,7 +193,7 @@ itinerary:
     пути через Сан-Игнасио в природный заповедник Хидден-Вэлли. Прогулка по заповеднику включена в программу. Ночь в
     Hidden Valley.
   images:
-  - src: /media/tours/guatemala-belize-maya-world-12-days/san-ignacio-word-09-20261010-p022-v1.webp
+  - src: /media/tours/guatemala-belize-maya-world-12-days/san-ignacio-word-09-20261010-p022-v1-enhanced-20261011-doc-v1.webp
     alt: Разноцветные деревянные дома и вывески на улице Сан-Игнасио, Белиз
     status: approved
   contentBlocks:
@@ -235,7 +235,7 @@ itinerary:
   text: Завтрак. Свободный день, чтобы насладиться этим ярким тропическим островом, его пляжами и коралловыми рифами,
     одними из наиболее сохранившихся в мире. Ночь в отеле.
   images:
-  - src: /media/tours/guatemala-belize-maya-world-12-days/ambergris-word-12-20261010-p022-v1.webp
+  - src: /media/tours/guatemala-belize-maya-world-12-days/ambergris-word-12-20261010-p022-v1-enhanced-20261011-doc-v1.webp
     alt: Пальмы и берег Карибского моря у отеля на Амбергрис-Кей, Белиз
     status: approved
   contentBlocks: []

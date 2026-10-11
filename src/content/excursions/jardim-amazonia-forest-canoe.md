@@ -15,7 +15,7 @@ themes:
 language:
 - Английский
 hero:
-  src: /media/tours/brazil-three-ecosystems-8-days/word-1-20261010.webp
+  src: /media/tours/brazil-three-ecosystems-8-days/word-1-20261010-enhanced-20261011-doc-v1.webp
   alt: Тропа среди густой зелени и крупных деревьев в тропическом лесу
 gallery: []
 lead: Прогулка по лесным тропам, рассказ о каучуке и каноэ по реке Клару в сторону озера Анаконда.

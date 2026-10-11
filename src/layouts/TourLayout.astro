@@ -156,10 +156,18 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 
   {hasTourDescription && (
     <section class="tour-copy">
-      <div class="container prose">
+      <div class="container prose" data-tour-description>
         {firstHeadingHtml && <Fragment set:html={firstHeadingHtml} />}
-        {d.lead?.trim() && <p class="tour-lead"><InlineMarkdown text={d.lead} /></p>}
-        {remainingBodyHtml && <Fragment set:html={remainingBodyHtml} />}
+        <div class="tour-copy__text" id={`tour-description-${d.id}`} data-tour-description-text>
+          {d.lead?.trim() && <p class="tour-lead"><InlineMarkdown text={d.lead} /></p>}
+          {remainingBodyHtml && <Fragment set:html={remainingBodyHtml} />}
+        </div>
+        <button class="tour-copy__toggle" type="button" aria-expanded="false" aria-controls={`tour-description-${d.id}`} data-tour-description-toggle hidden>
+          <span data-tour-description-label>Подробнее о путешествии</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
       </div>
     </section>
   )}
@@ -220,6 +228,65 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   )}
 </BaseLayout>
 
+<script>
+  const initTourDescriptions = () => {
+    document.querySelectorAll<HTMLElement>('[data-tour-description]').forEach((section) => {
+      if (section.dataset.descriptionReady) return;
+      const text = section.querySelector<HTMLElement>('[data-tour-description-text]');
+      const toggle = section.querySelector<HTMLButtonElement>('[data-tour-description-toggle]');
+      const label = section.querySelector<HTMLElement>('[data-tour-description-label]');
+      if (!text || !toggle || !label) return;
+      section.dataset.descriptionReady = 'true';
+      let expanded = false;
+
+      const update = () => {
+        const firstParagraph = text.querySelector<HTMLElement>('p');
+        const lead = text.querySelector<HTMLElement>('.tour-lead');
+        const lineHeight = parseFloat(getComputedStyle(firstParagraph ?? text).lineHeight) || 30;
+        // Keep the whole lead, plus a faded glimpse of the continuation.
+        // Without a lead, show roughly ten lines at the current screen width.
+        const leadHeight = lead
+          ? lead.getBoundingClientRect().bottom - text.getBoundingClientRect().top
+          : 0;
+        const previewHeight = Math.ceil(Math.max(lineHeight * 10, leadHeight + lineHeight * 3));
+        const long = text.scrollHeight > previewHeight + lineHeight;
+        text.style.setProperty('--tour-copy-preview-height', `${previewHeight}px`);
+        text.style.setProperty('--tour-copy-fade-height', `${lineHeight * 2.5}px`);
+        text.classList.toggle('is-collapsed', long && !expanded);
+        toggle.hidden = !long;
+        toggle.setAttribute('aria-expanded', String(expanded));
+        label.textContent = expanded ? 'Свернуть' : 'Подробнее о путешествии';
+      };
+
+      toggle.addEventListener('click', () => {
+        expanded = !expanded;
+        update();
+        // Keep the control and beginning in view when closing a long description.
+        if (!expanded && text.getBoundingClientRect().top < 0) {
+          window.scrollTo({
+            top: Math.max(0, window.scrollY + text.getBoundingClientRect().top - 120),
+            behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+          });
+        }
+      });
+      // A keyboard user reaching a link inside the clipped text sees it immediately.
+      text.addEventListener('focusin', () => {
+        if (!expanded && !toggle.hidden) {
+          expanded = true;
+          update();
+        }
+      });
+
+      update();
+      if ('ResizeObserver' in window) new ResizeObserver(update).observe(text);
+      else window.addEventListener('resize', update);
+      document.fonts.ready.then(update);
+    });
+  };
+  initTourDescriptions();
+  document.addEventListener('astro:page-load', initTourDescriptions);
+</script>
+
 <style>
   .tour-copy { background: var(--color-bg); padding: 0 0 clamp(28px, 4vw, 56px); }
   .tour-copy :global(.prose) { padding-top: 0; padding-bottom: 0; }
@@ -227,6 +294,38 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   .tour-copy .tour-lead {
     font-weight: 600;
   }
+
+  .tour-copy__text { display: flow-root; }
+  .tour-copy__text.is-collapsed {
+    max-height: var(--tour-copy-preview-height);
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - var(--tour-copy-fade-height)), transparent);
+    mask-image: linear-gradient(to bottom, #000 calc(100% - var(--tour-copy-fade-height)), transparent);
+  }
+  .tour-copy__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 44px;
+    margin-top: 12px;
+    padding: 8px 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-ink);
+    font-size: var(--text-base);
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+  }
+  .tour-copy__toggle[hidden] { display: none; }
+  .tour-copy__toggle:hover { color: var(--color-gold-deep); }
+  .tour-copy__toggle svg { flex: none; transition: transform .2s ease; }
+  .tour-copy__toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+  @media print {
+    .tour-copy__text.is-collapsed { max-height: none; overflow: visible; -webkit-mask-image: none; mask-image: none; }
+    .tour-copy__toggle { display: none; }
+  }
+
   .tour-destinations { padding-block: 0 clamp(28px, 4vw, 56px); }
   .tour-destinations ul { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 0; padding: 0; list-style: none; }
   .tour-destinations a { text-decoration: underline; text-underline-offset: .2em; }

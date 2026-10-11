@@ -77,6 +77,7 @@ destinations:
 - destination_panama_casco_viejo
 - destination_panama_ostrov_flamenko
 - destination_mexico_national_palace_mexico_city
+- destination_guatemala_peten
 routeDestinations:
 - destination_mexico_mehiko_siti_ruiny_teotihuakana
 - destination_mexico_mexico_city_zocalo
@@ -127,6 +128,7 @@ routeDestinations:
 - destination_panama_miraflores_locks
 - destination_panama_casco_viejo
 - destination_panama_ostrov_flamenko
+- destination_guatemala_peten
 primaryThemes:
 - theme_culture
 - theme_wildlife

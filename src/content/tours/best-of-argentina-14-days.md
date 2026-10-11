@@ -46,6 +46,7 @@ destinations:
 - destination_uruguay_montevideo_old_town
 - destination_uruguay_montevideo_cathedral
 - destination_argentina_ostrov_martilo
+- destination_brazil_parque_das_aves
 routeDestinations:
 - destination_argentina_buenos_aires
 - destination_argentina_buenos_aires_obelisk
@@ -367,7 +368,7 @@ itinerary:
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places:
   - Национальный парк Игуасу
-- excursionRef: excursion_source_makuko_safari
+- excursionRef: excursion_source_makuko_safari_he
   places:
   - Национальный парк Игуасу
   - Река Игуасу

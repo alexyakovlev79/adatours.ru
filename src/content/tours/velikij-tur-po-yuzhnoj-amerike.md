@@ -64,6 +64,8 @@ destinations:
 - destination_chile_ahu_akivi
 - destination_chile_kamenolomnya_puna_pau
 - destination_chile_dolina_majpo
+- destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa
+- destination_chile_santiago_city_hall
 routeDestinations:
 - destination_peru_lima
 - destination_peru_cusco
@@ -103,6 +105,8 @@ routeDestinations:
 - destination_bolivia_laguna_ramaditas
 - destination_bolivia_ojo_de_perdiz
 - destination_bolivia_laguna_chalviri
+- destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa
+- destination_chile_santiago_city_hall
 primaryThemes:
 - theme_culture
 - theme_wildlife

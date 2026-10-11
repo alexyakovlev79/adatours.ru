@@ -14,7 +14,7 @@ themes:
 - theme_culture
 - theme_gastronomy_wine
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x271-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x271-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Каменные сооружения и горные склоны Священной долины инков
 gallery: []
 lead: Продолжение экскурсионной программы по Священной долине с посещением Писака — древнего поселения инков, известного

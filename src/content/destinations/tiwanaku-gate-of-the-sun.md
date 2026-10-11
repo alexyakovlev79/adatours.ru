@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: Ворота Солнца — монолитный каменный памятник археологического комплекса Тиуанако в Боливии. Резные изображения
   сохранились над прямоугольным проходом.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x405-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x405-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Монолитные Ворота Солнца в археологическом комплексе Тиуанако
 gallery: []
 themes:

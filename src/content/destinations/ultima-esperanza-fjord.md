@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: Фьорд Ультима-Эсперанса, или Последней Надежды, находится у Пуэрто-Наталеса в чилийской Патагонии. Городская
   набережная обращена к воде и горным берегам.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x644-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x644-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Прибрежные дома Пуэрто-Наталеса и горы за заливом
 gallery: []
 themes:

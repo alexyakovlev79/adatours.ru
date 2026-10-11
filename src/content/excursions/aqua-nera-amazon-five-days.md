@@ -13,7 +13,7 @@ themes:
 - theme_cruises
 - theme_wildlife
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x176-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x176-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Круизное судно Aqua Nera на реке в перуанской Амазонии
 gallery: []
 lead: 'Вас ждут ежедневные экскурсии с опытными гидами, где можно увидеть редких и эндемичных животных, включая

@@ -14,7 +14,7 @@ themes:
 - theme_culture
 - theme_gastronomy_wine
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x255-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x255-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Кольцевые сельскохозяйственные террасы Морая в Перу
 gallery: []
 lead: Экскурсия по Священной долине с посещением Морая и знаменитых соляных террас Мараса. В Морае вы увидите уникальные

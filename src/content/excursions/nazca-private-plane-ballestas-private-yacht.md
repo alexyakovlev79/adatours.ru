@@ -15,7 +15,7 @@ themes:
 - theme_adventure
 - theme_wildlife
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x141-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x141-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Скальные арки островов Бальестас у побережья Перу
 gallery: []
 lead: После полета — трансфер в Паракас, где вы отправитесь на частной яхте к островам Бальестас. Во время морской

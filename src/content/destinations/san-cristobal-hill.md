@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: Холм Сан-Кристобаль поднимается над Сантьяго. С его склонов и смотровых площадок видны городские кварталы
   и Андский хребет.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x535-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x535-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Кабины канатной дороги над зелеными склонами Сан-Кристобаля в Сантьяго
 gallery: []
 themes:

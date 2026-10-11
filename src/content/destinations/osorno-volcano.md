@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: Вулкан Осорно возвышается над озерами юга Чили. Его заснеженная вершина видна из Пуэрто-Вараса и со многих
   маршрутов Озерного края.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x696-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x696-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Заснеженный вулкан Осорно над водой озера Льянкиуэ
 gallery: []
 themes:

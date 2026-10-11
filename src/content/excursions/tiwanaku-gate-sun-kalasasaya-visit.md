@@ -13,7 +13,7 @@ relatedDestinations:
 themes:
 - theme_culture
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x405-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x405-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Монолитные Ворота Солнца в археологическом комплексе Тиуанако
 gallery: []
 lead: Во время экскурсии Вы увидите Ворота Солнца, храм Каласасайя, монументальные каменные сооружения и ступенчатые

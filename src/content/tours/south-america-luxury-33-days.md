@@ -680,7 +680,7 @@ itinerary:
     Патагонии. По прибытии — встреча и трансфер в отель The Singular Patagonia, расположенный на берегу фьорда Последней
     Надежды.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x644-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x644-20261011-v1-enhanced-20261011-pass2324-v1.webp
     alt: Прибрежные дома Пуэрто-Наталеса и горы за заливом
 - day: 26
   title: Национальный парк Торрес-дель-Пайне
@@ -713,7 +713,7 @@ itinerary:
     активно развивался в XIX веке благодаря немецким переселенцам, поэтому здесь сохранились характерные архитектурные
     особенности, традиции и гастрономическое наследие немецкой колонизации.'
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x696-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x696-20261011-v1-enhanced-20261011-pass2324-v1.webp
     alt: Заснеженный вулкан Осорно над водой озера Льянкиуэ
 - day: 28
   title: Петроуэ, Висенте-Перес-Росалес и Осорно
@@ -726,7 +726,7 @@ itinerary:
   text: После завтрака индивидуальная поездка в национальный парк Висенте-Перес-Росалес, к водопадам Петроуэ и вулкану
     Осорно. Вечером возвращение в Пуэрто-Варас.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x722-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x722-20261011-v1-enhanced-20261011-pass2324-v1.webp
     alt: Лес и бирюзовая вода реки в чилийском Озерном крае
 - excursionRef: excursion_petrohue_osorno_private_nature_day
   places:

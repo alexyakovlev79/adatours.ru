@@ -9,7 +9,7 @@ destinationType: natural_area
 summary: Река Петроуэ протекает среди лесов и вулканических ландшафтов Озерного края Чили. Ее прозрачная вода образует
   пороги и каскады.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x722-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x722-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Лес и бирюзовая вода реки в чилийском Озерном крае
 gallery: []
 themes:

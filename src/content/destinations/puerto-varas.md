@@ -9,7 +9,7 @@ destinationType: city
 summary: Пуэрто-Варас расположен на берегу озера Льянкиуэ. Над водой поднимается заснеженный вулкан Осорно, одна
   из узнаваемых панорам Озерного края Чили.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x696-20261011-v1.webp
+  src: /media/tours/south-america-luxury-33-days/pdf-x696-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: Заснеженный вулкан Осорно над водой озера Льянкиуэ
 gallery: []
 themes:

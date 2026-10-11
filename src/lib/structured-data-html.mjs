@@ -62,7 +62,7 @@ export function inspectHtml(html, { root, pageUrl, fullDocument = false } = {}) 
   const sections = elements.filter((n) => n.tagName === 'section' && /^home-[a-z0-9-]+$/.test(attr(n, 'id') || ''))
     .map((n) => ({ id: attr(n, 'id'), name: text(heading(n)) })).filter((n) => n.name);
   const images = elements.filter((n) => n.tagName === 'img').map((n) => ({
-    src: absoluteUrl(attr(n, 'src'), root), alt: attr(n, 'alt'), width: positive(attr(n, 'width')), height: positive(attr(n, 'height')),
+    src: absoluteUrl(attr(n, 'data-lazy-src') || attr(n, 'src'), root), alt: attr(n, 'alt'), width: positive(attr(n, 'width')), height: positive(attr(n, 'height')),
   })).filter((n) => n.src);
   const faq = [];
   for (const detail of elements.filter((n) => n.tagName === 'details')) {

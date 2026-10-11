@@ -14,6 +14,7 @@ import { withBase } from '../lib/paths';
 import { expandBreadcrumbTrails, type BreadcrumbItem } from '../lib/routes';
 import { validateSiteContent } from '../lib/content-validation';
 import { pageStructuredData } from '../lib/page-schema';
+import { deferImages } from '../lib/lazy-images.mjs';
 import { safeJsonLd, SCHEMA_VERSION } from '../lib/structured-data.mjs';
 
 await validateSiteContent();
@@ -141,6 +142,7 @@ const schema = await pageStructuredData({
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
+    <noscript><style is:inline>img[data-lazy-src] { display: none !important; }</style></noscript>
     <meta name="theme-color" content="#131412" />
     <script is:inline src={withBase('/form-config.js')}></script>
     <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />
@@ -165,11 +167,15 @@ const schema = await pageStructuredData({
         items={breadcrumbs} hideCurrentLabel={hideCurrentBreadcrumbLabel} />
     )}
     <main>
-      <Fragment set:html={schema.html} />
+      <Fragment set:html={deferImages(schema.html)} />
       <div id="request" data-lead-location="footer" data-interest-section={leadEntityId?.startsWith('theme_') ? 'cta' : undefined} data-pagefind-ignore>
         <LeadForm title={leadTitle} entityId={leadEntityId || logicalPath} tourId={leadTourId} pageUrl={canonicalUrl} locale={lang} />
       </div>
     </main>
+    <script>
+      import { initializeLazyImages } from '../scripts/lazy-images.mjs';
+      initializeLazyImages();
+    </script>
     <CookieNotice />
     <SiteFooter />
   </body>

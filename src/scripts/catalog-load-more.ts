@@ -32,7 +32,10 @@ export function initializeCatalogLoadMore(): void {
         if (!response.ok || !response.headers.get('content-type')?.includes('text/html')) {
           throw new Error('Catalogue page is unavailable');
         }
-        const doc = new DOMParser().parseFromString(await response.text(), 'text/html');
+        // DOMParser treats noscript as active markup in its inert document.
+        // Remove the no-JS fallbacks before parsing to avoid discovering every image.
+        const html = (await response.text()).replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript>/gi, '');
+        const doc = new DOMParser().parseFromString(html, 'text/html');
         const nextRoot = doc.querySelector<HTMLElement>('[data-catalog-root]');
         const nextItems = nextRoot?.querySelector<HTMLElement>('[data-catalog-items]');
         if (!nextRoot || !nextItems

@@ -100,7 +100,7 @@ const optionalPlaces = routeDestinations.filter((item) => optionalTourDestinatio
 const mainCountryEntries = mainTourCountryIds(d).map((id) => countryById.get(id)).filter(Boolean);
 const placeGroups = [
   { label: 'Места маршрута', entries: mainPlaces },
-  { label: 'Места факультативных экскурсий и вариантов программы', entries: optionalPlaces },
+  { label: 'Места дополнительных экскурсий', entries: optionalPlaces },
 ];
 const durationLabel = d.durationDays
   ? `${d.durationDays} ${pluralRu(d.durationDays, 'день', 'дня', 'дней')}`

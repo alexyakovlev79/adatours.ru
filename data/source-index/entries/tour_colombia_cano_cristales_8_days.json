@@ -151,11 +151,10 @@
     "images": [],
     "current": [
       {
-        "url": "/media/tours/kolumbiya-s-kano-kristales-i-ne-tolko/hero-src-enhanced-20261007.webp",
-        "alt": "Каньо-Кристалес, цветная водная растительность",
+        "url": "/media/destinations/bogota/hero-enhanced-20261003.webp",
         "role": "hero",
         "order": 1,
-        "slot": "hero"
+        "alt": "На фото: город Богота, столица Колумбии"
       },
       {
         "url": "/media/destinations/bogota/gallery-3-enhanced-20261003.webp",
@@ -217,7 +216,21 @@
     "provenance": {
       "kind": "existing_site_assets",
       "note": "All production MD image sources reuse existing S3/site assets. No new Word image upload or generation. images[] holds no new legacy raw source; current[] documents the reused slot sources."
-    }
+    },
+    "reusedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": "/media/tours/kolumbiya-s-kano-kristales-i-ne-tolko/hero-src-enhanced-20261007.webp",
+        "src": "/media/destinations/bogota/hero-enhanced-20261003.webp",
+        "alt": "На фото: город Богота, столица Колумбии",
+        "origin": "existing_asset_reuse",
+        "reusedAt": "2026-10-11",
+        "sourceEntityId": "destination_colombia_bogota",
+        "purpose": "duplicate_on_page",
+        "audit": "data/audits/tour-pages-201-250-photo-duplicates-20261011.json"
+      }
+    ],
+    "lastPageDedupAt": "2026-10-11"
   },
   "readiness": {
     "sources": "ready",

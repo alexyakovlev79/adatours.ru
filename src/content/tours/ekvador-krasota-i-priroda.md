@@ -152,8 +152,8 @@ priceFrom: 4986
 currency: USD
 priceNote: $4986
 hero:
-  src: "/media/excursions/ostrov-plasa/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: Морские котики на пляже Эквадора'
+  src: "/media/destinations/mashpi-reserve/hero-generated-20261009-root-v1.webp"
+  alt: "Облачный лес Машпи на влажных горных склонах"
 routeCountries:
 - country_ecuador
 routeDestinations:

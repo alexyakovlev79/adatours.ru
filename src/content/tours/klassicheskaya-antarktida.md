@@ -54,8 +54,8 @@ itinerary:
 
     На берегу группа садится на «Зодиак», который доставляет пассажиров на экспедиционное судно.
   images:
-  - src: /media/tours/klassicheskaya-antarktida/hero-src-enhanced-20261007.webp
-    alt: Классическая Антарктида
+  - src: "/media/destinations/destination_antarctica_ostrov_king_dzhordzh/original-01.png"
+    alt: "Остров Кинг-Джордж"
 - day: 3
   title: Дни 3-6. Исследование Антарктиды
   places:

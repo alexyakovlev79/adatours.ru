@@ -104,8 +104,8 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
-    alt: 'Коста Рика: Отдых на пляже и в горах'
+  - src: "/media/tours/kosta-rika-korotkaya-no-polnaya-programma/tenorio-place-generated-20261009-v1.webp"
+    alt: "Тропический лес у голубой реки в национальном парке Тенорио"
 - day: 4
   title: Деревня Малеку - вулкан Ареналь
   places:

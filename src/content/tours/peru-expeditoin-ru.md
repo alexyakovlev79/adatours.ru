@@ -155,8 +155,8 @@ itinerary:
 
     Ближе к закату возвращение на лодке к причалу в Пуно. Ночь в Пуно.
   images:
-  - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
-    alt: 'Перу: Энергия Предков'
+  - src: "/media/destinations/puno-i-o-titikaka/gallery-8-enhanced-20261005.webp"
+    alt: "Два человека в лодке из тростника на озере Титикака у Пуно, Перу"
 - day: 8
   title: Пуно - аэропорт Хулиака
   places:

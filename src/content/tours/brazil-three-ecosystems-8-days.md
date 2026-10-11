@@ -64,8 +64,8 @@ priceNote: 5 514 USD на человека при 2–3 участниках. П
   согласуются при бронировании.
 dates: []
 hero:
-  src: /media/destinations/pantanal/hero-enhanced-20261001.webp
-  alt: Природа Пантанала в Бразилии
+  src: "/media/destinations/destination_brazil_bom_zhardim/hero-generated-20261008-resumed.webp"
+  alt: "Бом-Жардим — Бразилия"
 gallery: []
 featured: false
 priority: 0

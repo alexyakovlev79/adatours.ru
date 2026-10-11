@@ -187,8 +187,8 @@ priceFrom: 3480
 currency: USD
 priceNote: "3480 USD на человека, DBL; Arena Leme 3 ночи, Asalem 2, Sandi 2."
 hero:
-  src: /media/tours/tur-v-braziliyu-za-vkusami/hero-enhanced-20261006.webp
-  alt: 'На фото: пляжи Илья Гранди. Бразилия'
+  src: "/media/destinations/destination_brazil_rio/rio-departure-bay-v2-generated-20261008.webp"
+  alt: "Каменистый берег и парусники в заливе Гуанабара, Рио-де-Жанейро, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -33,8 +33,8 @@ itinerary:
 
     Дополнительно'
   images:
-  - src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
-    alt: Рио-де-Жанейро - Амазония - Водопады Игуасу
+  - src: "/media/destinations/destination_brazil_rio/rio-free-beach-v2-generated-20261008.webp"
+    alt: "Мозаичная набережная и пляж Копакабаны с пальмами в золотом свете, Рио-де-Жанейро, Бразилия"
 - excursionRef: excursion_rio_zona_sul_bike_tour
   places: []
 - day: 2

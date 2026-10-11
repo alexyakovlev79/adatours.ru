@@ -32,8 +32,8 @@ priceFrom: 3270
 currency: USD
 dates: []
 hero:
-  src: /media/excursions/ibera-progulka-po-reke-korrientes-ili-rybalka-na-dorado/hero-enhanced-20261006.webp
-  alt: "Болота и лагуны заповедника Ибера"
+  src: "/media/destinations/valdes-peninsula/hero-generated-20261008.webp"
+  alt: "Полуостров Вальдес"
 gallery: []
 featured: false
 priority: 0

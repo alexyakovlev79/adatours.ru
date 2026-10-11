@@ -205,8 +205,8 @@ itinerary:
 
     **Питание:** завтрак, обед.
   images:
-  - src: /media/tours/ves-ekvador-i-galapagosskie-ostrova/hero-src-enhanced-20261007.webp
-    alt: Весь Эквадор и Галапагосские острова
+  - src: "/media/destinations/galapagosskie-ostrova/gallery-1-enhanced-20261006.webp"
+    alt: "Множество зелёных островков среди бирюзовых лагун и синего моря"
 - day: 6
   title: Остров Бартоломе
   places:

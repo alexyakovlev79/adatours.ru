@@ -286,8 +286,8 @@ itinerary:
 
     Во второй половине дня дополнительно предлагается поездка в долину Майпо, $175 на человека, минимум 2 человека.'
   images:
-  - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-13-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+  - src: "/media/destinations/santyago-de-chili/hero-enhanced-20261006.webp"
+    alt: "На фото: столица Чили. город Сантьяго-де-Чили"
 - excursionRef: excursion_santiago_maipo_wine_tour
   places: []
 - day: 14

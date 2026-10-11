@@ -88,9 +88,9 @@ itinerary:
 
     В 19:00 ужин и свободное время.
   images:
-  - src: /media/tours/braziliya-argentina-gruppovoj-tur/hero-enhanced-20261006.webp
-    hover: "Амазония в Бразилии: река петляет среди густого тропического леса"
-    alt: "Изгиб реки среди тропического леса, Амазония, Бразилия"
+  - src: "/media/destinations/destination_brazil_amazon/amazon-igapo-generated-20261008.webp"
+    hover: "Амазония: спокойная вода среди деревьев затопленного леса"
+    alt: "Стволы деревьев и их отражения в затопленном лесу игапо, Амазония, Бразилия"
 - day: 5
   title: Манаус
   places:

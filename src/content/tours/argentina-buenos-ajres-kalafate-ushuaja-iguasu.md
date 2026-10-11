@@ -154,8 +154,8 @@ itinerary:
     text: |-
       Трансфер в аэропорт Эль-Калафате и перелет в Ушуайю. По прибытии трансфер в отель.
     images:
-      - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
-        alt: "Ушуайя"
+      - src: "/media/destinations/ushuajya/gallery-1-enhanced-20261002.webp"
+        alt: "Жёлтый деревянный дом с крутой крышей на фоне снежных гор Ушуайи, Аргентина"
         intendedSlot: "itinerary:day-6"
 
   - day: 7

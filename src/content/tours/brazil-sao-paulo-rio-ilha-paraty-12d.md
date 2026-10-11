@@ -54,9 +54,9 @@ itinerary:
     text: |-
       Прибытие в аэропорт Сан-Паулу. Водитель встретит вас с табличкой с логотипом компании и вашими фамилиями. Трансфер в отель.
     images:
-      - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/hero-enhanced-20260930.webp
-        hover: "Сан-Паулу в Бразилии: городские огни под вечерним небом"
-        alt: "Ночной Сан-Паулу с освещенными башнями и месяцем, Бразилия"
+      - src: "/media/destinations/destination_brazil_sao_paulo/sao-paulo-departure-generated-20261008.webp"
+        hover: "Сан-Паулу: деревья, пешеходы и автомобили у городских высоток"
+        alt: "Тенистый тротуар и оживлённая улица среди высотных зданий Сан-Паулу, Бразилия"
         intendedSlot: "itinerary:day-1"
   - day: 2
     title: "Сан-Паулу"

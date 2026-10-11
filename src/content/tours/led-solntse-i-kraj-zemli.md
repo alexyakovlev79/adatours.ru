@@ -106,8 +106,8 @@ itinerary:
 
     После экскурсии возвращение в Калафате.
   images:
-  - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
-    alt: 'на фото: Эль Калафате'
+  - src: "/media/destinations/destination_argentina_lednik_perito_moreno/original-02.jpg"
+    alt: "Ледяная стена Перито-Морено и отколовшиеся льдины у берега, Аргентина"
 - day: 5
   title: Калафате - Ушуайя
   places:

@@ -13,8 +13,8 @@ language: []
 priceFrom: 500
 currency: USD
 hero:
-  src: /media/excursions/ledovyj-trekking-perito-moreno/hero-enhanced-20261006.webp
-  alt: "Ледник Перито-Морено"
+  src: "/media/destinations/destination_argentina_lednik_perito_moreno/original-05.jpg"
+  alt: "Вертикальные голубые разломы ледяной стены Перито-Морено у воды, Аргентина"
 gallery: []
 route:
   - "Эль-Калафате"

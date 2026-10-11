@@ -145,8 +145,8 @@ itinerary:
 
     В программу входят Ла-Бока, Сан-Тельмо, Пласа-Доррего, Пласа-де-Майо, Каса-Росада, 67-метровый Обелиск на Авениде 9 Июля, Реколета, церковь Эль-Пилар, современные районы Пуэрто-Мадеро, парк Лезама и парк 3 Февраля.'
   images:
-  - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
-    alt: Солнце, Танго, Вино и Атакама
+  - src: "/media/destinations/buenos-aires/hero-enhanced-20260930.webp"
+    alt: "Буэнос-Айрес, Аргентина"
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
 - day: 8

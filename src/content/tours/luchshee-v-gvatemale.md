@@ -132,9 +132,9 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-3-enhanced-20261006.webp
-    hover: "Бирюзовое озеро среди зелени на фоне высокой вулканической вершины"
-    alt: "Озеро у подножия конусообразного вулкана, окружённое деревьями и цветами"
+  - src: "/media/destinations/destination_guatemala_san_huan_la_laguna/hero-generated-20261008.webp"
+    hover: "San Juan La Laguna on Lake Atitlan — Guatemala"
+    alt: "San Juan La Laguna on Lake Atitlan — Guatemala"
 - day: 5
   title: Антигуа - рынок Чичикастенанго - Гватемала-Сити
   places:

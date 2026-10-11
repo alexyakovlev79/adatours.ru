@@ -52,8 +52,8 @@ itinerary:
   - Джорджтаун
   text: После пересадочного рейса вы прилетаете в международный аэропорт имени Чедди Джагана. В аэропорту встречает водитель и отвозит в отель в Джорджтауне. Дорога занимает от 30 до 70 минут в зависимости от трафика.
   images:
-  - src: /media/tours/surinam-gajana-frantsuzskaya-gviana/hero-enhanced-20261006.webp
-    alt: Суринам, Гайана, Французская Гвиана
+  - src: "/media/destinations/georgetown/gallery-1-enhanced-20261003.webp"
+    alt: "Уличные торговые ряды под зонтиками в Джорджтауне, Гайана"
 - day: 2
   title: Водопад Кайетур, Джорджтаун и перелет в Суринам
   places:
@@ -107,8 +107,8 @@ itinerary:
 
     Завтрак включен, программа с гидом на целый день.
   images:
-  - src: /media/tours/surinam-gajana-frantsuzskaya-gviana/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: Кайенна
+  - src: "/media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/saint-laurent-place-generated-20261009-v1.webp"
+    alt: "Историческая кирпичная застройка Сен-Лоран-дю-Марони"
 - day: 5
   title: Острова бывшей каторжной системы
   places:

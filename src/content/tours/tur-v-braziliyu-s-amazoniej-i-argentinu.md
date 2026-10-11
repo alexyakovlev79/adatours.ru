@@ -139,8 +139,8 @@ itinerary:
 
     Продолжительность - около 8 часов.'
   images:
-  - src: /media/tours/tur-v-braziliyu-s-amazoniej-i-argentinu/hero-enhanced-20261006.webp
-    alt: 'На фото: река Амазонка, Бразилия'
+  - src: "/media/home/amazon-enhanced-20260930.webp"
+    alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
 - excursionRef: excursion_source_vstrecha_rek
   places: []
 - day: 6

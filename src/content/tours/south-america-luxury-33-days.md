@@ -526,7 +526,7 @@ itinerary:
   - Сан-Педро-де-Атакама
   text: Лагуны Альтиплано и переезд в Чили. Подробная экскурсионная программа приведена ниже.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x452-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x452-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Красная вода Лагуны Колорада и животные на ее берегу
 - excursionRef: excursion_altiplano_lagoons_chalviri_chile_border
   places:
@@ -553,7 +553,7 @@ itinerary:
   text: Ранним утром гейзеры Эль-Татио и горячий завтрак на открытом воздухе. Во второй половине дня прогулка по
     Лунной долине и закат. Вечером астрономический тур с профессиональными телескопами и легким пикником.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x483-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x483-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Красноватые скальные гребни и сухой рельеф Лунной долины
 - excursionRef: excursion_el_tatio_geysers_dawn_outdoor_breakfast
   places:
@@ -570,7 +570,7 @@ itinerary:
   - Сантьяго-де-Чили
   text: Трансфер в аэропорт Калама. Перелет в Сантьяго. Трансфер в отель
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x504-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x504-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Городские здания Сантьяго у подножия Анд
 - day: 20
   title: Сантьяго и холм Сан-Кристобаль
@@ -585,7 +585,7 @@ itinerary:
   - Провиденсия
   text: Сантьяго и холм Сан-Кристобаль. Подробная экскурсионная программа приведена ниже.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x530-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x530-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Неоклассический фасад дворца Ла-Монеда в Сантьяго
 - excursionRef: excursion_santiago_san_cristobal_modern_districts
   places:
@@ -606,7 +606,7 @@ itinerary:
   - Долина Мильяуэ
   text: Винодельня VIK на вертолете. Подробная экскурсионная программа приведена ниже.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x551-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x551-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Современная архитектура винодельни VIK среди цветников
 - excursionRef: excursion_vik_winery_helicopter_tasting_lunch
   places:
@@ -623,7 +623,7 @@ itinerary:
   text: Трансфер в аэропорт и перелет на остров Пасхи. По прибытии — встреча и трансфер в отель.  Во второй половине
     дня посещение Рано-Кау и Оронго.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x580-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x580-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Зеленый кратер вулкана Рано-Кау на острове Пасхи
 - excursionRef: excursion_easter_island_orongo_rano_kau
 - day: 23
@@ -639,7 +639,7 @@ itinerary:
   - Аху-Нау-Нау
   text: Южное побережье Рапа-Нуи и Анакена. Подробная экскурсионная программа приведена ниже.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x592-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x592-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Ряд каменных моаи платформы Аху-Тонгарики
 - excursionRef: excursion_easter_island_south_coast_anakena_private_picnic
   places:
@@ -662,7 +662,7 @@ itinerary:
   - Сантьяго-де-Чили
   text: После экскурсии — трансфер в аэропорт и перелет с острова Пасхи в Сантьяго. По прибытии — трансфер в отель.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x628-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x628-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Зеленые склоны каменоломни Пуна-Пау с красными каменными пукао
 - excursionRef: excursion_easter_island_akivi_puna_pau_tahai_visit
   places:
@@ -689,7 +689,7 @@ itinerary:
   text: Целый день в национальном парке Торрес-дель-Пайне. Маршрут и продолжительность остановок зависят от погодных
     условий. Вечером возвращение в Пуэрто-Наталес.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x680-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x680-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Гуанако на фоне гор Торрес-дель-Пайне
 - excursionRef: excursion_torres_del_paine_full_day_natural_landscapes
   places:
@@ -791,7 +791,7 @@ itinerary:
   - Сантьяго-де-Чили
   text: Трансфер в аэропорт Бальмаседы и перелет в Сантьяго. По прибытии — трансфер в отель и размещение.
   images:
-  - src: /media/tours/south-america-luxury-33-days/pdf-x827-20261011-v1.webp
+  - src: /media/tours/south-america-luxury-33-days/pdf-x827-20261011-v1-enhanced-20261012-next21-v1.webp
     alt: Историческая площадь и улица в Сантьяго
 - day: 33
   title: Вылет из Сантьяго

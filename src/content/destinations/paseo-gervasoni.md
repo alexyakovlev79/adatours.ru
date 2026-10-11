@@ -1,0 +1,25 @@
+---
+id: destination_chile_paseo_gervasoni
+locale: ru
+name: Пасео-Гервасони
+slug: paseo-gervasoni
+status: approved
+countryId: country_chile
+destinationType: route_cluster
+summary: Пасео-Гервасони дает возможность увидеть Вальпараисо сверху. Прогулочная дорожка на холме соединяет городские
+  дома с видами на порт и бухту. Здесь особенно хорошо заметно, как улицы поднимаются по склонам.
+hero:
+  src: /media/destinations/valparaiso-i-vinya-del-mar/gallery-8-enhanced-20261005.webp
+  alt: 'На фото: город Вальпараисо в Чили'
+gallery: []
+themes:
+- theme_culture
+searchAliases:
+- Пасео-Гервасони
+sourceSnapshot: data/source-index/materials/destination_chile_paseo_gervasoni.md
+updatedAt: '2026-10-11'
+---
+
+Пасео-Гервасони дает возможность увидеть Вальпараисо сверху. Прогулочная дорожка на холме соединяет городские дома с видами на порт и бухту. Здесь особенно хорошо заметно, как улицы поднимаются по склонам.
+
+Остановку удобно сочетать с соседними дорожками и прогулкой по холму Консепсьон. По пути интересно рассматривать цветные фасады, ступени и детали старой застройки. Обложка показывает панораму холмов Вальпараисо.

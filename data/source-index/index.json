@@ -3,27 +3,29 @@
     "schemaVersion": 1,
     "counts": {
       "types": {
-        "destination": 934,
-        "tour": 382,
+        "destination": 935,
+        "tour": 385,
         "excursion": 367,
         "country": 24
       },
       "media": {
-        "ready": 1026,
+        "ready": 1028,
         "generated": 481,
         "existing_enhanced_preserved": 130,
         "provided_originals": 47
       },
       "rawDonorUrls": 694,
       "activeTypes": {
-        "destination": 934,
-        "tour": 346,
+        "destination": 935,
+        "tour": 349,
         "excursion": 366,
         "country": 24
       },
       "archivedTypes": {
         "tour": 36,
-        "excursion": 1
+        "excursion": 1,
+        "destination": 0,
+        "country": 0
       }
     },
     "preparedAt": "2026-10-02",
@@ -65,7 +67,7 @@
       }
     },
     "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
-    "entityCount": 1709
+    "entityCount": 1711
   },
   "entries": [
     {
@@ -55526,6 +55528,93 @@
         "destination_antarctica_antarkticheskij_poluostrov"
       ],
       "entryPath": "data/source-index/entries/tour_antarctica_whale_watching_learning_11_days.json"
+    },
+    {
+      "id": "tour_antarctica_discovery_long_hikes_11_days",
+      "type": "tour",
+      "name": "Антарктида: открытия и длительные пешие прогулки",
+      "url": "/antarctica/tour/antarctica-discovery-long-hikes-11-days/",
+      "slug": "antarctica-discovery-long-hikes-11-days",
+      "contentPath": "src/content/tours/antarctica-discovery-long-hikes-11-days.md",
+      "countryIds": [
+        "country_antarctica",
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_ushuajya",
+        "destination_argentina_kanal_bigl",
+        "destination_antarctica_drake_passage",
+        "destination_antarctica_melchior_islands",
+        "destination_antarctica_schollaert_channel",
+        "destination_antarctica_brabant_island",
+        "destination_antarctica_anvers_island",
+        "destination_antarctica_antarkticheskij_poluostrov",
+        "destination_antarctica_danco_island",
+        "destination_antarctica_neko_harbour",
+        "destination_antarctica_paradise_bay",
+        "destination_antarctica_neumayer_channel",
+        "destination_antarctica_port_lockroy",
+        "destination_antarctica_goudier_island",
+        "destination_antarctica_jougla_point",
+        "destination_antarctica_damoy_point",
+        "destination_antarctica_yuzhnye_shetlandskie_ostrova",
+        "destination_antarctica_deception_island",
+        "destination_antarctica_neptunes_bellows",
+        "destination_antarctica_half_moon_island",
+        "destination_antarctica_camara_base"
+      ],
+      "sourceUrl": null,
+      "primaryThemes": [
+        "theme_cruises",
+        "theme_adventure"
+      ],
+      "themes": [
+        "theme_wildlife",
+        "theme_culture"
+      ],
+      "status": "approved",
+      "routeCountryIds": [
+        "country_antarctica"
+      ],
+      "routeDestinationIds": [
+        "destination_argentina_ushuajya",
+        "destination_argentina_kanal_bigl",
+        "destination_antarctica_drake_passage",
+        "destination_antarctica_melchior_islands",
+        "destination_antarctica_schollaert_channel",
+        "destination_antarctica_brabant_island",
+        "destination_antarctica_anvers_island",
+        "destination_antarctica_antarkticheskij_poluostrov",
+        "destination_antarctica_yuzhnye_shetlandskie_ostrova"
+      ],
+      "entryPath": "data/source-index/entries/tour_antarctica_discovery_long_hikes_11_days.json"
+    },
+    {
+      "id": "destination_antarctica_damoy_point",
+      "type": "destination",
+      "name": "Мыс Дамой",
+      "url": "/antarctica/place/damoy-point/",
+      "slug": "damoy-point",
+      "contentPath": "src/content/destinations/damoy-point.md",
+      "countryIds": [
+        "country_antarctica"
+      ],
+      "destinationIds": [
+        "destination_antarctica_damoy_point"
+      ],
+      "sourceUrl": null,
+      "themes": [
+        "theme_adventure",
+        "theme_culture",
+        "theme_wildlife"
+      ],
+      "status": "approved",
+      "aliases": [
+        "Damoy Point",
+        "Дамой",
+        "Мыс Дамуа"
+      ],
+      "entryPath": "data/source-index/entries/destination_antarctica_damoy_point.json"
     }
   ]
 }

@@ -82,6 +82,8 @@ const { eyebrow, title, steps, dark = false } = Astro.props;
   }
 
   @media (min-width: 901px) {
+    .step:last-child { border-right: 0; }
+
     .step h3 {
       display: flex;
       min-height: 2.16em;

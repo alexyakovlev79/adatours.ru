@@ -274,8 +274,8 @@ itinerary:
 
     В этом варианте программы Парк птиц включен в экскурсионный день, а не вынесен как дополнительная опция.'
   images:
-  - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-1-enhanced-20261006.webp
-    alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио, яркие перья и улыбка
+  - src: "/media/tours/brazil-argentina-peru-14d/itinerary/day-06-enhanced-20260930.webp"
+    alt: "Туристы в моторной лодке у мощных каскадов водопада, Игуасу, Бразилия"
 - excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_iguazu_helicopter_falls

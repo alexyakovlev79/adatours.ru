@@ -133,8 +133,8 @@ itinerary:
 
       Завтрак включен.
   images:
-  - src: /media/tours/aktivnyj-ekvador-i-trekking/hero-src-enhanced-20261007.webp
-    alt: Кито
+  - src: "/media/destinations/kito-vulkan-kotopahi/gallery-7-enhanced-20261006.webp"
+    alt: "Бюст на каменном постаменте и обелиск на фоне гор у Кито, Эквадор"
 - day: 3
   title: Кито - Килотоа - Баньос
   places:

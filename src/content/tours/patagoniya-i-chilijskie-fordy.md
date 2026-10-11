@@ -55,8 +55,8 @@ itinerary:
       
       После обязательного инструктажа судно выходит в залив Корковадо и берет курс на юг.
     images:
-      - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
-        alt: "Патагония и Чилийские фьорды"
+      - src: "/media/destinations/valdiviya-i-puerto-mont/hero-enhanced-20261005.webp"
+        alt: "На фото: Пуэрто Монт в Чили"
         intendedSlot: "itinerary:day-1"
   - day: 2
     title: "Канал По Уапи"

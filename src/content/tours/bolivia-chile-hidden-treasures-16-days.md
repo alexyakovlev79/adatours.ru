@@ -498,12 +498,24 @@ itinerary:
 highlights:
 - title: Уюни и альтиплано
   text: Солончак, Инкауаси, цветные лагуны и переход в Чили на внедорожниках.
+  image:
+    src: /media/tours/bolivia-chile-hidden-treasures-16-days/highlights/01-uyuni-incahuasi-enhanced-20261011-v1.webp
+    alt: "Остров Инкауаси с кактусами среди белого солончака Уюни"
 - title: Атакама после заката
   text: Профессиональные телескопы, гейзеры Эль-Татио и Лунная долина.
+  image:
+    src: /media/tours/bolivia-chile-hidden-treasures-16-days/highlights/02-atacama-stargazing-enhanced-20261011-v1.webp
+    alt: "Наблюдение звёзд через телескоп в пустыне Атакама"
 - title: Лед и мрамор Патагонии
   text: Торрес-дель-Пайне, плавание к Сан-Рафаэлю и частная лодка в Мраморных пещерах.
+  image:
+    src: /media/tours/bolivia-chile-hidden-treasures-16-days/highlights/03-patagonia-marble-caves-enhanced-20261011-v1.webp
+    alt: "Прогулочная лодка у мраморных стен пещер Патагонии"
 - title: Вино и Тихий океан
   text: Дегустация с обедом на VIK, Вальпараисо и Винья-дель-Мар.
+  image:
+    src: /media/tours/bolivia-chile-hidden-treasures-16-days/highlights/04-vik-vineyard-lunch-enhanced-20261011-v1.webp
+    alt: "Обед с вином на фоне виноградников долины Мильяуэ"
 included: []
 notIncluded: []
 notes:

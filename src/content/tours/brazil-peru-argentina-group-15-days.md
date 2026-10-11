@@ -74,10 +74,19 @@ lead: Рио и водопады Игуасу, города инков и Мач
 highlights:
 - title: Рио с высоты
   text: Подъем на Сахарную Голову и поезд к статуе Христа-Искупителя на Корковаду.
+  image:
+    src: /media/tours/brazil-peru-argentina-group-15-days/highlights/01-rio-sugarloaf-panorama-enhanced-20261011-v1.webp
+    alt: "Панорама Рио-де-Жанейро и залива с Сахарной Головы"
 - title: Города инков
   text: Чинчеро, террасы Морая, Ольянтайтамбо и экскурсия с гидом по Мачу-Пикчу.
+  image:
+    src: /media/tours/brazil-peru-argentina-group-15-days/highlights/02-machu-picchu-enhanced-20261011-v1.webp
+    alt: "Каменные постройки и террасы Мачу-Пикчу в Андах"
 - title: Водопады и ледник
   text: Бразильская сторона Игуасу и целый день у ледника Перито-Морено в Патагонии.
+  image:
+    src: /media/tours/brazil-peru-argentina-group-15-days/highlights/03-perito-moreno-glacier-enhanced-20261011-v1.webp
+    alt: "Голубая ледяная стена Перито-Морено у озера Аргентино"
 itinerary:
 - day: 1
   title: Рио-де-Жанейро

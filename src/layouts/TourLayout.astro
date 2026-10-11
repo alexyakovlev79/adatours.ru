@@ -1,5 +1,6 @@
 ---
 import { themeIds } from '../lib/interest-model.mjs';
+import { getVipTourPaths } from '../lib/vip-catalog';
 import { seoTourTitle } from '../lib/seo-page.mjs';
 import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
 import ArchiveNotice from '../components/global/ArchiveNotice.astro';
@@ -23,6 +24,7 @@ import { mainTourCountryIds, mainTourDestinationIds, optionalTourDestinationIds 
 const { entry } = Astro.props;
 const d = entry.data;
 const archived = isArchivedEntity(d);
+const vip = !archived && (await getVipTourPaths()).has(tourPath(d));
 const roundedPrice = typeof d.priceFrom === 'number' ? Math.round(d.priceFrom) : null;
 const currencyPrefix = d.currency === 'USD' ? String.fromCharCode(36) : '';
 const money = roundedPrice && d.currency
@@ -133,6 +135,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 
   <Hero
     tour
+    vip={vip}
     eyebrow={archived ? "Архивный тур" : "Индивидуальный тур"}
     title={d.title}
     image={d.hero?.src}

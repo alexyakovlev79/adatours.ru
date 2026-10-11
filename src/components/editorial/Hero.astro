@@ -3,6 +3,7 @@ import PrimaryCTA from '../global/PrimaryCTA.astro';
 import { withBase } from '../../lib/paths';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 import HeroVideo from './HeroVideo.astro';
+import VipBadge from '../tour/VipBadge.astro';
 
 interface Props {
   eyebrow?: string;
@@ -16,6 +17,7 @@ interface Props {
   compact?: boolean;
   home?: boolean;
   tour?: boolean;
+  vip?: boolean;
   contentSized?: boolean;
   meta?: string;
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
@@ -34,6 +36,7 @@ const {
   compact = false,
   home = false,
   tour = false,
+  vip = false,
   contentSized = false,
   meta,
   mediaStatus,
@@ -65,6 +68,7 @@ const resolvedImage = image ? withBase(image) : undefined;
   <div class="hero__overlay"></div>
   <div class="hero__content">
     <div class="hero__head">
+      {vip && <VipBadge />}
       {eyebrow && <p class="eyebrow">{eyebrow}</p>}
       {meta && <p class="hero__meta">{meta}</p>}
     </div>

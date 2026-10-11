@@ -1,5 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
+import { getVipTourPaths } from '../lib/vip-catalog';
+import VipBadge from '../components/tour/VipBadge.astro';
 import { SEO, seoFill } from '../lib/seo-meta.mjs';
 import { isActiveEntity } from '../lib/archive.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../lib/country-popularity';
@@ -29,6 +31,7 @@ const [countryEntries, tourEntries, themeEntries, destinationEntries, excursionE
 ]);
 
 const tours = [...tourEntries].sort(compareToursBySalesFit);
+const vipTourPaths = await getVipTourPaths();
 const countryCounts = buildCountryTourCounts(tours);
 const countries = [...countryEntries].sort(compareCountriesByPopularity(countryCounts));
 const brazil = countries.find((country) => country.data.id === 'country_brazil');
@@ -226,6 +229,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
           <a class="home-poster home-poster--tour" href={withBase(tourPath(entry.data))} data-image-text-align={entry.data.imageTextAlign}>
             {entry.data.hero?.src && <img src={withBase(entry.data.hero.src)} loading="lazy" alt="" />}
             <span class="home-poster__shade" aria-hidden="true"></span>
+            {vipTourPaths.has(tourPath(entry.data)) && <VipBadge overlay />}
             <span class="home-poster__content">
               <span class="eyebrow">{tourDescription(entry)}</span>
               <h3>{entry.data.title}</h3>
@@ -427,6 +431,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
 
   .home-tour-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
   .home-poster--tour { min-height: clamp(350px, 37vw, 510px); }
+  .home-poster--tour :global(.vip-badge--overlay) { top: 16px; left: 16px; }
   .home-poster--tour h3 { max-width: 680px; font-size: clamp(1.5rem, 2.35vw, 2.8rem); }
   .home-poster--tour .eyebrow { font-size: .78rem; }
 

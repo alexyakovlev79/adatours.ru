@@ -1,6 +1,8 @@
 ---
 import { withBase } from '../../lib/paths';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
+import VipBadge from '../tour/VipBadge.astro';
+import { getVipTourPaths } from '../../lib/vip-catalog';
 
 interface Props {
   eyebrow?: string;
@@ -34,6 +36,7 @@ const resolvedImage = image ? withBase(image) : undefined;
 const style = resolvedImage ? `--band-image: url("${resolvedImage}")` : undefined;
 const resolvedHref = withBase(href);
 const resolvedAlign = imageTextAlign ?? align;
+const vip = (await getVipTourPaths()).has(href);
 ---
 
 {descriptionBelow ? (
@@ -48,6 +51,7 @@ const resolvedAlign = imageTextAlign ?? align;
       ? <img class="band-card__media" src={resolvedImage} alt="" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer" />
       : <span class="band-card__media" aria-hidden="true"></span>}
     <span class="band-card__overlay" aria-hidden="true"></span>
+    {vip && <VipBadge overlay />}
     {eyebrow && <span class="band-card__eyebrow eyebrow">{eyebrow}</span>}
     <strong class="band-card__title">{title}</strong>
     {text && <span class="band-card__description"><InlineMarkdown text={text} /></span>}
@@ -60,6 +64,7 @@ const resolvedAlign = imageTextAlign ?? align;
     data-replacement-reason={replacementReason}
   >
     <div class="band__overlay"></div>
+    {vip && <VipBadge overlay />}
     <div class="band__content">
       {eyebrow && <p class="eyebrow">{eyebrow}</p>}
       <Heading class="band__title">{title}</Heading>

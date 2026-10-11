@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: Поездка на каноэ к эмбера, музыка, танцы и ремесла на берегах Чагрес. Конкретную принимающую общину подтверждают
   при бронировании.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-5-20261010.webp
+  src: /media/tours/panama-city-gamboa-6-days/word-5-20261010-enhanced-20261011-pass2324-v1.webp
   alt: Музыканты эмбера с барабанами на берегу реки
 gallery: []
 themes:

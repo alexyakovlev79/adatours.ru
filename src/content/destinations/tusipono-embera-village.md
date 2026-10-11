@@ -9,7 +9,7 @@ destinationType: route_cluster
 summary: Община эмбера в бассейне реки Чагрес. Знакомство с местными жителями проходит через музыку, танцы и традиционные
   ремесла.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-5-20261010.webp
+  src: /media/tours/panama-city-gamboa-6-days/word-5-20261010-enhanced-20261011-pass2324-v1.webp
   alt: Музыканты эмбера с барабанами на берегу реки
 gallery: []
 themes:

@@ -8,7 +8,7 @@ countryId: country_panama
 destinationType: island
 summary: Лодочная прогулка из Гамбоа к лесным берегам Гатуна. Здесь наблюдают за обезьянами в их естественной среде.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-10-20261010.webp
+  src: /media/tours/panama-city-gamboa-6-days/word-10-20261010-enhanced-20261011-pass2324-v1.webp
   alt: Белолицые обезьяны среди зеленых ветвей
 gallery: []
 themes:

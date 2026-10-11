@@ -73,7 +73,7 @@ itinerary:
     его условия подтверждаются при бронировании. Гид сопровождает поездку на протяжении пребывания в Панаме. После
     встречи — трансфер и размещение в отеле. Ночь в Панама-Сити.
   images:
-  - src: /media/tours/panama-city-gamboa-6-days/word-2-20261010.webp
+  - src: /media/tours/panama-city-gamboa-6-days/word-2-20261010-enhanced-20261011-pass2324-v1.webp
     alt: Рыболовные лодки в заливе на фоне небоскребов Панама-Сити
 - day: 2
   title: Канал и старый город
@@ -100,7 +100,7 @@ itinerary:
   text: Завтрак в отеле. Поездка на каноэ и культурная программа в общине эмбера. После обеда и знакомства с традициями
     — продолжение пути в Гамбоа и размещение в Gamboa Rainforest Resort. Ночь в Гамбоа.
   images:
-  - src: /media/tours/panama-city-gamboa-6-days/word-5-20261010.webp
+  - src: /media/tours/panama-city-gamboa-6-days/word-5-20261010-enhanced-20261011-pass2324-v1.webp
     alt: Музыканты эмбера с барабанами на берегу реки
   contentBlocks:
   - type: excursion
@@ -114,7 +114,7 @@ itinerary:
   text: Завтрак в отеле. Национальный парк Соберания, прогулка по тропам и подъем на башню Центра изучения тропического
     леса Панамы, затем знакомство с природой Гамбоа. Возвращение в отель. Ночь в Гамбоа.
   images:
-  - src: /media/tours/panama-city-gamboa-6-days/word-8-20261010.webp
+  - src: /media/tours/panama-city-gamboa-6-days/word-8-20261010-enhanced-20261011-pass2324-v1.webp
     alt: Желтая птица с черной головой и крыльями на ветке
   contentBlocks:
   - type: excursion
@@ -129,7 +129,7 @@ itinerary:
   text: Завтрак в отеле. Отправление из Гамбоа на лодочную экскурсию по озеру Гатун и к Острову обезьян. Во второй
     половине дня возвращение в Панама-Сити. Ночь в Панама-Сити.
   images:
-  - src: /media/tours/panama-city-gamboa-6-days/word-9-20261010.webp
+  - src: /media/tours/panama-city-gamboa-6-days/word-9-20261010-enhanced-20261011-pass2324-v1.webp
     alt: Контейнеровоз на воде, вид сверху
   contentBlocks:
   - type: excursion

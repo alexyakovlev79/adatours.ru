@@ -139,7 +139,7 @@ itinerary:
     Пласа-де-Санто-Доминго, собор Санта-Каталина, Дворец инквизиции, городские стены и Лас-Боведас с рынком ремесленников. Возвращение
     в отель, ночь в Картахене.'
   images:
-  - src: /media/tours/colombia-complete-11-days/cartagena-street-word-20261010-v1.webp
+  - src: /media/tours/colombia-complete-11-days/cartagena-street-word-20261010-v1-enhanced-20261011-pass2324-v1.webp
     alt: Колониальная улица Картахены с цветными фасадами и балконами, изображение из Word Анны
   contentBlocks:
   - type: excursion
@@ -153,7 +153,7 @@ itinerary:
     трансфер в аэропорт и перелет на Сан-Андрес, остров с белыми пляжами и бирюзовыми водами Моря семи цветов. Размещение на островном
     курорте, ночь на Сан-Андресе.'
   images:
-  - src: /media/tours/colombia-complete-11-days/san-andres-beach-word-20261010-v1.webp
+  - src: /media/tours/colombia-complete-11-days/san-andres-beach-word-20261010-v1-enhanced-20261011-pass2324-v1.webp
     alt: Пальмы, белый песок и бирюзовое море на Сан-Андресе, изображение из Word Анны
 - day: 7
   title: 'Сан-Андрес: первый день у Карибского моря'
@@ -186,7 +186,7 @@ itinerary:
     культурой. В конце дня музей Эль-Кастильо, особняк в европейском стиле с садами, произведениями искусства, антиквариатом и старинной
     мебелью. Ночь в Медельине.'
   images:
-  - src: /media/tours/colombia-complete-11-days/medellin-panorama-word-20261010-v1.webp
+  - src: /media/tours/colombia-complete-11-days/medellin-panorama-word-20261010-v1-enhanced-20261011-pass2324-v1.webp
     alt: Панорама Медельина в зеленой горной долине, изображение из Word Анны
   contentBlocks:
   - type: excursion

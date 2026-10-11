@@ -555,7 +555,7 @@ itinerary:
     эмбера Тусипоно. В деревне предусмотрены традиционный обед, музыка, танцы и знакомство с ремеслами. Покупки сувениров
     относятся к личным расходам. После экскурсии возвращение в отель в Панама-Сити.
   images:
-  - src: /media/tours/panama-city-gamboa-6-days/word-5-20261010.webp
+  - src: /media/tours/panama-city-gamboa-6-days/word-5-20261010-enhanced-20261011-pass2324-v1.webp
     alt: Музыканты эмбера с барабанами на берегу реки
 - excursionRef: excursion_chagres_tusipono_waterfall_embera
   places:
@@ -574,7 +574,7 @@ itinerary:
     Бальбоа, Каско-Антигуо и коса Амадор. После экскурсии трансфер в аэропорт на рейс домой. Время вылета нужно согласовать
     с шестичасовой программой.'
   images:
-  - src: /media/tours/panama-city-gamboa-6-days/word-3-20261010.webp
+  - src: /media/tours/panama-city-gamboa-6-days/word-3-20261010-enhanced-20261011-pass2324-v1.webp
     alt: Улица Каско-Вьехо с цветными фасадами и подвесными украшениями
 - excursionRef: excursion_panama_city_miraflores_imax_amador
   places:

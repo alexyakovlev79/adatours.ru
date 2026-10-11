@@ -170,7 +170,7 @@ itinerary:
     по прибрежным районам, монастырю Ла-Попа, крепости Сан-Фелипе-де-Барахас и историческому центру. Маршрут до Лас-Боведас
     описан ниже. Ночь в Картахене.
   images:
-  - src: /media/tours/colombia-complete-11-days/cartagena-street-word-20261010-v1.webp
+  - src: /media/tours/colombia-complete-11-days/cartagena-street-word-20261010-v1-enhanced-20261011-pass2324-v1.webp
     alt: Колониальная улица Картахены с цветными фасадами и балконами, изображение из Word Анны
 - excursionRef: excursion_source_siti_tur_po_kartakhene
   places: *id007

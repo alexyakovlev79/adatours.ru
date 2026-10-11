@@ -13,7 +13,7 @@ themes:
 - theme_culture
 - theme_wildlife
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-6-20261010.webp
+  src: /media/tours/panama-city-gamboa-6-days/word-6-20261010-enhanced-20261011-pass2324-v1.webp
   alt: Мастерицы эмбера и плетеные изделия под соломенной крышей
 gallery: []
 route:

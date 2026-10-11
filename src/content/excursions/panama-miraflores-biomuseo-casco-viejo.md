@@ -18,7 +18,7 @@ hero:
   src: /media/countries/panama/block-107-generated-20261011-dedup-v1.webp
   alt: Шлюзы Панамского канала и подходы к ним, вид сверху
 gallery:
-- src: /media/tours/panama-city-gamboa-6-days/word-3-20261010.webp
+- src: /media/tours/panama-city-gamboa-6-days/word-3-20261010-enhanced-20261011-pass2324-v1.webp
   alt: Улица Каско-Вьехо с цветными фасадами и подвесными украшениями
 - src: /media/tours/panama-city-gamboa-6-days/biomuseo-generated-20261010-p036-v1.webp
   alt: Цветные угловатые крыши Биомузея на побережье Панама-Сити — иллюстрация

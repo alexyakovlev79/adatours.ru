@@ -19,7 +19,7 @@ language:
 priceFrom: null
 priceNote: Стоимость отдельной экскурсии рассчитывается по запросу.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-6-20261010.webp
+  src: /media/tours/panama-city-gamboa-6-days/word-6-20261010-enhanced-20261011-pass2324-v1.webp
   alt: Мастерицы эмбера и плетеные изделия под соломенной крышей
 gallery: []
 lead: Поездка в Национальный парк Чагрес проходит с 08:00 до 16:00. Речной путь через тропический лес ведет к водопаду

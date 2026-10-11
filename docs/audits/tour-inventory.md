@@ -11,13 +11,13 @@
 | № | Показатель | Сейчас |
 |---|---|---:|
 | 1 | Программы Drive без повторных копий файлов | 168 программ / 192 файлов |
-| 2 | Неархивные страницы туров | 349 |
+| 2 | Неархивные страницы туров | 350 |
 | 3 | Архивные страницы туров | 31 |
 | 4 | Страницы без соответствия в снимке Drive | 187 активных + 18 архивных |
 | 5 | Программы Drive с архивным соответствием | 15: 0 только в архиве, 15 также с активной страницей |
-| 6 | Программы Drive без активной страницы и без архива | 2; из них 0 уже имеют запись источников |
+| 6 | Программы Drive без активной страницы и без архива | 1; из них 0 уже имеют запись источников |
 
-**Очередь наличия страниц: 2 программ** — 0 из архива и 2 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
+**Очередь наличия страниц: 1 программ** — 0 из архива и 1 без страниц. Архивные дубли с активной заменой эту очередь не увеличивают.
 
 Рабочая инструкция: [обновление описи](../workflows/tour-inventory.md). Редактируемый реестр: [JSON](../../data/audits/tour-inventory-drive-20261009.json). Этот Markdown генерируется, ручные пометки в нём будут перезаписаны.
 
@@ -26,7 +26,6 @@
 | ID программы | Программа / разделы Drive | Все файлы Drive | Соответствия сайта / реестра | Наличие | Работа с содержанием |
 |---|---|---|---|---|---|
 | `P109` | Большой тур по Южной Америке.pdf; 33 дн.; Vip Programmes 2027 | [Большой тур по Южной Америке.pdf](https://drive.google.com/file/d/1ydIzUxXVRHKmIGZpMtqwTQfQ8yKUir0F/view?usp=drivesdk) | — | Нужна новая программа/вариант | Не начато |
-| `P166` | Antartica Polar-Circle-2027com10%-RUS.docx; 13 дн.; Antarctica 2027-2028 | [Antartica Polar-Circle-2027com10%-RUS.docx](https://docs.google.com/document/d/1zLr992kFMz9UdiLXx9LI-RtuWbl--jS4/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | — | Нужна новая программа/вариант | В работе; P166 взят чётным Word-проходом 11.10.2026 14:40 UTC: точный DOCX скачан и проверен, 13 дней/12 ночей, 06–18.03.2027, пять тарифов из embedded-таблицы; создание недостающих мест и медиа. Не брать повторно. |
 
 ## 2. Программы представлены только в архиве
 
@@ -203,6 +202,7 @@
 | `P163` | Carnival in Rio 5d4n 2027 RUS 20.docx; 5 дн.; Carnaval Rio 2027 | [Carnival in Rio 5d4n 2027 RUS 20.docx](https://docs.google.com/document/d/1yJf5w4VcmsoTdfSattK8taFMuTak_8m9/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Тур на Карнавал в Рио в Бразилии: цены и программа тура](https://adatours.ru/brazil/tour/rio-de-janeiro-carnival/) — активный; `tour_source_karnaval_v_rio_de_zhanejro` | Активная страница есть | Не начато |
 | `P164` | Antartica - Discovery And Learning Voyage + Long Hike 2026-2027com10%-RUS.docx; 11 дн.; Antarctica 2027-2028 | [Antartica - Discovery And Learning Voyage + Long Hike 2026-2027com10%-RUS.docx](https://docs.google.com/document/d/1OQYapq32LGsSOtNr4wAbPUfLtP-jDREi/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Антарктида: открытия и длительные пешие прогулки](https://adatours.ru/antarctica/tour/antarctica-discovery-long-hikes-11-days/) — активный; `tour_antarctica_discovery_long_hikes_11_days` | Активная страница есть | Работа завершена; P164 полностью перенесен из точного Word Анны: 11 дней/10 ночей, обе даты 29.12.2026–08.01.2027 и 08–18.02.2027, все 5 тарифов с изображения (Triple 11900). Связано 21 опубликованное место (9 основных), создана самостоятельная страница мыса Дамой; 12 разных кадров тура и отдельный слот места, новая иллюстрация подтверждена direct S3 receipt и GPT history. Возможные высадки/снегоступы и альтернативы сохранены. Валюта, судно, питание, язык и состав услуг отсутствуют в Word и отмечены для подтверждения. Content f24fb4e86dbcb491e10cdf45eff637ab3230fd9b; Actions 38146232567 success. Страницы 1570–1571, Фото 7296–7308, очередь Анны 744 записаны и проверены обратным чтением; Принята не изменена. |
 | `P165` | Antartica - Discovery - And Learning Voyagecom10%-RUS.docx; 11 дн.; Antarctica 2027-2028 | [Antartica - Discovery - And Learning Voyagecom10%-RUS.docx](https://docs.google.com/document/d/1oARzLN8Eh0E4J0Yp8F_wRGXs8fIMomBA/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Антарктида: путешествие открытий и обучения](https://adatours.ru/antarctica/tour/antarctica-discovery-learning-11-days/) — активный; `tour_antarctica_discovery_learning_11_days` | Активная страница есть | Работа завершена; P165 завершен после возобновления: точный Word и 5 тарифов с embedded-таблицы сверены предшествующим content-проходом; 11 дней/10 ночей, полные связи и фотографии всех дней. Сохранены 16 новых страниц мест, 20 новых WebP в S3 с SHA-256 receipts, 15 GPT Image записей и 5 Word-фото. Content fedef815; Actions 38142922805 success. Реестры Страницы 1552–1569, Фото 7256–7295 и Места 728–743 записаны и проверены чтением 11.10.2026; Принята не менялась. Валюта, судно, питание и состав услуг отсутствуют в Word и оставлены для подтверждения до бронирования. |
+| `P166` | Antartica Polar-Circle-2027com10%-RUS.docx; 13 дн.; Antarctica 2027-2028 | [Antartica Polar-Circle-2027com10%-RUS.docx](https://docs.google.com/document/d/1zLr992kFMz9UdiLXx9LI-RtuWbl--jS4/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Антарктида: за Южный полярный круг](https://adatours.ru/antarctica/tour/antarctica-polar-circle-deep-south-13-days/) — активный; `tour_antarctica_polar_circle_deep_south_13_days` | Активная страница есть | В работе; Точный Word сверён: 13 дней/12 ночей, 5 тарифов, 12 новых страниц мест, 13 разных фото дней и обложка; ожидаются Actions deploy и адресные записи таблиц. |
 | `P167` | Antartica - Whale Watching And Discovery Learning Voyagecom10%RUS.docx; 11 дн.; Antarctica 2027-2028 | [Antartica - Whale Watching And Discovery Learning Voyagecom10%RUS.docx](https://docs.google.com/document/d/1i8AMBZ-bp9Fc1AB7ru8BB6QDqibsM8b9/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Антарктида: экспедиция с наблюдением за китами](https://adatours.ru/antarctica/tour/antarctica-whale-watching-learning-11-days/) — активный; `tour_antarctica_whale_watching_learning_11_days` | Активная страница есть | Работа завершена; P167 завершен после возобновления: точный Word и 5 тарифов с embedded-таблицы сверены предшествующим content-проходом; 11 дней/10 ночей, полные связи и фотографии всех дней. Сохранены 16 новых страниц мест, 20 новых WebP в S3 с SHA-256 receipts, 15 GPT Image записей и 5 Word-фото. Content fedef815; Actions 38142922805 success. Реестры Страницы 1552–1569, Фото 7256–7295 и Места 728–743 записаны и проверены чтением 11.10.2026; Принята не менялась. Валюта, судно, питание и состав услуг отсутствуют в Word и оставлены для подтверждения до бронирования. |
 | `P168` | CLASSIC ANTARCTICA AIR-CRUISE 2027- 2028 RUS 8 d 7n 10%.docx; 8 дн.; Antarctica 2027-2028 | [CLASSIC ANTARCTICA AIR-CRUISE 2027- 2028 RUS 8 d 7n 10%.docx](https://docs.google.com/document/d/1zat9NNuJlzlnuF_KU5o_-E8BGpGXd6tF/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) | [Классическая Антарктика](https://adatours.ru/antarctica/tour/classic-antarctica-air-cruise-8-days/) — активный; `tour_source_klassicheskaya_antarktida`; [Классическая Антарктика](https://adatours.ru/antarctica/tour/classic-antarctic-air-cruise-8-days/) — архив; `tour_source_klassicheskaya_antarktika` | Активная страница есть | Не начато |
 
@@ -213,7 +213,6 @@
 | Программа Drive | Кандидаты в реестре |
 |---|---|
 | `P109`: Большой тур по Южной Америке.pdf | [Программа для Активных людей](https://adatours.ru/multi-country/tour/active-adventure-tour/); `tour_source_programma_dlya_aktivnykh_lyudej`; [Колоритный Сантьяго и загадочный остров Пасхи](https://adatours.ru/chile/tour/santiago-easter-island/); `tour_source_koloritnyj_santyago_i_zagadochnyj_ostrov_paskhi`; [Тур в Чили на 12 дней по лучшим местам страны с о.Пасха](https://adatours.ru/chile/tour/best-of-chile-easter-island-12-days/); `tour_source_chili_samoe_luchshee` |
-| `P166`: Antartica Polar-Circle-2027com10%-RUS.docx | [Круиз Мыс Горн и Антарктида](https://adatours.ru/multi-country/tour/cape-horn-antarctica-cruise/); `tour_source_kruiz_mys_gorn_i_antarktida`; [Тур в Антарктиду и Патагонию «Экспресс» на 6 дней с Мысом Горн](https://adatours.ru/multi-country/tour/antarctica-patagonia-express-air-cruise-6-days/); `tour_source_antarktida_ekspress_vozdushnyj_kruiz`; [Классическая Антарктика](https://adatours.ru/antarctica/tour/classic-antarctic-air-cruise-8-days/); `tour_source_klassicheskaya_antarktika` |
 
 ## 5. Полная опись сайта и источников
 
@@ -606,6 +605,7 @@
 | `tour_antarctica_discovery_learning_11_days` | [Антарктида: путешествие открытий и обучения](https://adatours.ru/antarctica/tour/antarctica-discovery-learning-11-days/) | Активная страница | `P165` |
 | `tour_antarctica_whale_watching_learning_11_days` | [Антарктида: экспедиция с наблюдением за китами](https://adatours.ru/antarctica/tour/antarctica-whale-watching-learning-11-days/) | Активная страница | `P167` |
 | `tour_antarctica_discovery_long_hikes_11_days` | [Антарктида: открытия и длительные пешие прогулки](https://adatours.ru/antarctica/tour/antarctica-discovery-long-hikes-11-days/) | Активная страница | `P164` |
+| `tour_antarctica_polar_circle_deep_south_13_days` | [Антарктида: за Южный полярный круг](https://adatours.ru/antarctica/tour/antarctica-polar-circle-deep-south-13-days/) | Активная страница | `P166` |
 
 ## 6. Исключённые файлы
 

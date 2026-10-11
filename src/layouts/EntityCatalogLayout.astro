@@ -27,11 +27,12 @@ interface Props {
   countryContextId?: string;
   navigationLabel?: string;
   navigationLinks?: Array<{ label: string; href: string }>;
-  variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours';
+  variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours' | 'vip-country-tours';
 }
 
 const { leadTitle, leadEntityId, kind, entries, title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, navigationLabel, navigationLinks = [] } = Astro.props;
-const eyebrow = variant === 'vip-tours' ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : kind === 'theme' ? 'По интересам' : 'Направления';
+const isVipCatalog = variant === 'vip-tours' || variant === 'vip-country-tours';
+const eyebrow = isVipCatalog ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : kind === 'theme' ? 'По интересам' : 'Направления';
 const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
 const multiCountryPageCountries = variant === 'multi-country-tours'
   ? [...new Map(entries.flatMap((entry) => mainTourCountries((entry as CollectionEntry<'tours'>).data)).map((country) => [country.id, country])).values()]
@@ -47,6 +48,8 @@ const vipCountryText = vipPageCountries.length
   : 'Латинская Америка';
 const metaTitle = variant === 'multi-country-tours' || variant === 'vip-tours'
   ? `${title} — страница ${p.currentPage} из ${p.totalPages}`
+  : variant === 'vip-country-tours'
+    ? `${seoPaginatedTitle(`${title}: ${countLabel(p.totalItems, ['маршрут', 'маршрута', 'маршрутов'])} и цены`, p.currentPage)} | Ada Tours`
   : seoPaginatedTitle(title,p.currentPage);
 const metaDescription = variant === 'multi-country-tours'
   ? `Multi-country туры Ada Tours — страница ${p.currentPage} из ${p.totalPages}. Маршруты ${p.from}–${p.to} из ${p.totalItems}; страны на этой странице: ${multiCountryCountryText}.`
@@ -86,7 +89,7 @@ const cards = entries.map((entry) => {
   }
   if (kind === 'tour') {
     const d = (entry as CollectionEntry<'tours'>).data;
-    const curatedTour = variant === 'multi-country-tours' || variant === 'vip-tours';
+    const curatedTour = variant === 'multi-country-tours' || isVipCatalog;
     return {
       data: d,
       title: d.title,
@@ -95,7 +98,7 @@ const cards = entries.map((entry) => {
       meta: [
         curatedTour ? mainTourCountries(d).map((country) => country.name).join(' + ') : '',
         d.durationDays ? countLabel(d.durationDays, ['день', 'дня', 'дней']) : '',
-        variant === 'vip-tours' ? vipTourPriceLabel(d) : '',
+        isVipCatalog ? vipTourPriceLabel(d) : '',
         d.format,
         countryContextId && countryMembership(d, countryContextId) < 1 ? 'Дополнительное посещение страны' : '',
       ].filter(Boolean).join(' · '),

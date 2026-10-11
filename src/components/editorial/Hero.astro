@@ -77,12 +77,19 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
     <h1>{title}</h1>
     <div class="hero__bottom">
       {intro && <p><InlineMarkdown text={intro} /></p>}
-      <PrimaryCTA href={ctaHref} label={ctaLabel} />
+      {Astro.slots.has('actions') ? (
+        <div class="hero__actions">
+          <PrimaryCTA href={ctaHref} label={ctaLabel} />
+          <slot name="actions" />
+        </div>
+      ) : <PrimaryCTA href={ctaHref} label={ctaLabel} />}
     </div>
   </div>
 </section>
 
 <style>
+  .hero__actions { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .hero[data-image-text-align='right'] .hero__actions { align-items: flex-end; }
   .hero {
     position: relative;
     display: grid;

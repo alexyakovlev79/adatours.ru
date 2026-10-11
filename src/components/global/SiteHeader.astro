@@ -9,6 +9,7 @@ import { countryPath, themePath } from '../../lib/routes';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../../lib/country-popularity';
 import { buildInterestIndex } from '../../lib/interest-model.mjs';
+import { getVipCountryIndex } from '../../lib/vip-catalog';
 
 interface Props {
   theme?: 'light' | 'dark';
@@ -44,12 +45,15 @@ const interestChildLinks: NavChild[] = buildInterestIndex(themeEntries, tourEntr
   }));
 
 const miceChildLinks: NavChild[] = MICE_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
+const vipChildLinks: NavChild[] = (await getVipCountryIndex())
+  .map(({ href, label }) => ({ href, label }));
 const dmcChildLinks: NavChild[] = DMC_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 const aboutChildLinks: NavChild[] = ABOUT_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 
 const childLinksFor = (href: string): NavChild[] => {
   if (href === '/country/') return countryChildLinks;
   if (href === '/interests/') return interestChildLinks;
+  if (href === '/vip/') return vipChildLinks;
   if (href === '/mice/') return miceChildLinks;
   if (href === '/dmc/') return dmcChildLinks;
   if (href === '/about/') return aboutChildLinks;
@@ -59,6 +63,7 @@ const childLinksFor = (href: string): NavChild[] => {
 const groupIdFor = (href: string) => {
   if (href === '/country/') return 'countries';
   if (href === '/interests/') return 'interests';
+  if (href === '/vip/') return 'vip';
   if (href === '/mice/') return 'mice';
   if (href === '/dmc/') return 'dmc';
   if (href === '/about/') return 'about';
@@ -68,6 +73,7 @@ const groupIdFor = (href: string) => {
 const overviewLabelFor = (href: string, label: string) => {
   if (href === '/country/') return 'Все страны';
   if (href === '/interests/') return 'Все интересы';
+  if (href === '/vip/') return 'Все VIP-туры';
   if (href === '/mice/') return 'MICE и корпоративные поездки';
   if (href === '/dmc/') return 'DMC / B2B';
   if (href === '/about/') return 'О компании';

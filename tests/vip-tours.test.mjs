@@ -2,9 +2,66 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { hasVipInTitle, selectVipTours, vipTourPriceLabel } from '../src/lib/vip-tours.mjs';
 import { isActiveEntity } from '../src/lib/archive.mjs';
+import { buildVipCountryIndex, vipCountryTitle } from '../src/lib/vip-countries.mjs';
+import { SEO_CASES } from '../src/lib/seo-grammar.mjs';
 
 const tour = (id, title, priceFrom, durationDays = 10) => ({
   data: { id, title, priceFrom, currency: 'USD', durationDays, countries: ['country_brazil'] },
+});
+
+test('VIP country intersections use the global selection and main countries without duplicates', () => {
+  const countries = ['brazil', 'argentina', 'peru'].map((slug) => ({ data: {
+    id: `country_${slug}`, slug, name: slug, locale: 'ru', status: 'published',
+  } }));
+  const vip = tour('global-vip', 'VIP маршрут', 10000);
+  vip.data.countries = ['country_brazil', 'country_argentina', 'country_peru'];
+  vip.data.routeCountries = ['country_brazil', 'country_argentina', 'country_brazil'];
+  const regular = tour('regular-peru', 'Обычный тур', 1000);
+  regular.data.countries = ['country_peru'];
+  const index = buildVipCountryIndex([vip, regular], countries);
+  assert.deepEqual(index.map((row) => row.entry.data.id).sort(), ['country_argentina', 'country_brazil']);
+  for (const row of index) {
+    assert.equal(row.count, 1);
+    assert.equal(row.tours[0], vip);
+    assert.equal(row.href, `/vip/${row.entry.data.slug}/`);
+  }
+});
+
+test('VIP country links appear and disappear with the active selection and country lifecycle', () => {
+  const brazil = { data: { id: 'country_brazil', slug: 'brazil', name: 'Бразилия', locale: 'ru' } };
+  const vip = tour('lifecycle-vip', 'VIP маршрут', undefined);
+  assert.equal(buildVipCountryIndex([vip], [brazil]).length, 1);
+  vip.data.status = 'draft';
+  assert.equal(buildVipCountryIndex([vip], [brazil]).length, 0);
+  vip.data.status = 'archived';
+  assert.equal(buildVipCountryIndex([vip], [brazil]).length, 0);
+  vip.data.status = 'published';
+  vip.data.locale = 'en';
+  assert.equal(buildVipCountryIndex([vip], [brazil]).length, 0);
+  vip.data.locale = 'ru';
+  brazil.data.status = 'draft';
+  assert.equal(buildVipCountryIndex([vip], [brazil]).length, 0);
+});
+
+test('VIP country labels cover all current countries and use Russian direction forms', () => {
+  for (const [id, country] of Object.entries(SEO_CASES.countries)) {
+    assert.match(vipCountryTitle({ id, name: country.name }), /^VIP-туры (в |во |на )/);
+  }
+  assert.equal(vipCountryTitle({ id: 'country_brazil' }), 'VIP-туры в Бразилию');
+  assert.equal(vipCountryTitle({ id: 'country_argentina' }), 'VIP-туры в Аргентину');
+  assert.equal(vipCountryTitle({ id: 'country_cuba' }), 'VIP-туры на Кубу');
+  assert.equal(vipCountryTitle({ id: 'country_french_guiana' }), 'VIP-туры во Французскую Гвиану');
+});
+
+test('VIP country lists use commercial ranking and order countries by VIP tour count', () => {
+  const brazil = { id: 'country_brazil', slug: 'brazil', name: 'Бразилия' };
+  const argentina = { id: 'country_argentina', slug: 'argentina', name: 'Аргентина' };
+  const shorter = tour('short', 'VIP короткий', 10000, 3);
+  const standard = tour('standard', 'VIP стандартный', 9000, 13);
+  standard.data.countries = ['country_brazil', 'country_argentina'];
+  const rows = buildVipCountryIndex([shorter, standard], [argentina, brazil]);
+  assert.deepEqual(rows.map((row) => row.entry.id), ['country_brazil', 'country_argentina']);
+  assert.deepEqual(rows[0].tours.map((row) => row.data.id), ['standard', 'short']);
 });
 
 test('VIP in the title is mandatory and the target stays at 25 percent', () => {

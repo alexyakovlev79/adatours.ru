@@ -1,0 +1,33 @@
+---
+import { createHash } from 'node:crypto';
+import { getVipCountryIndex } from '../../lib/vip-catalog';
+import { paginateCatalog } from '../../lib/catalog-pagination';
+import { countryPath } from '../../lib/routes';
+import { countLabel } from '../../lib/interest-model.mjs';
+import EntityCatalogLayout from '../../layouts/EntityCatalogLayout.astro';
+
+export async function getStaticPaths() {
+  const countries = await getVipCountryIndex();
+  return countries.flatMap((row) => {
+    const country = row.entry.data;
+    const description = `${row.label}: ${countLabel(row.count, ['маршрут', 'маршрута', 'маршрутов'])} Ada Tours. Сравните программы, длительность и стоимость. Адаптируем поездку под ваши даты, отели и интересы.`;
+    const catalogVersion = createHash('sha256').update(JSON.stringify(row.tours.map((entry) => entry.data.id))).digest('hex').slice(0, 20);
+    return paginateCatalog(row.tours, row.href).map(({ entries, pagination }) => ({
+      params: { country: pagination.canonical.slice('/vip/'.length).replace(/\/$/, '') },
+      props: {
+        kind: 'tour', entries, pagination, catalogVersion,
+        title: row.label, description, canonical: pagination.canonical,
+        hero: country.hero?.src, countryContextId: country.id,
+        variant: 'vip-country-tours', leadTitle: `Собрать VIP-маршрут: ${country.name}`, leadEntityId: `vip:${country.id}`,
+        breadcrumbs: [{ label: 'VIP-туры', href: '/vip/' }, { label: row.label, href: row.href }],
+        navigationLabel: 'Страна и VIP-туры', navigationLinks: [
+          { label: `О стране: ${country.name}`, href: countryPath(country) },
+          { label: 'Все VIP-туры', href: '/vip/' },
+          ...countries.filter((item) => item !== row).map(({ label, href }) => ({ label, href })),
+        ],
+      },
+    }));
+  });
+}
+---
+<EntityCatalogLayout {...Astro.props} />

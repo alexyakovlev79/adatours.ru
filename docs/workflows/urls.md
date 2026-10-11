@@ -33,6 +33,7 @@
 | Туры с конкретной экскурсией | `<canonical-excursion-path>tour/` |
 | Продолжение любого каталога туров, мест или экскурсий | `<catalog-root>page/<n>/`, только целые `n >= 2` |
 | Интересы | `/interests/`, `/interests/<theme-slug>/` |
+| VIP-туры страны | `/vip/<country-slug>/`, продолжение `/vip/<country-slug>/page/<n>/` |
 | Деловые делегации | `/mice/business-delegations/` |
 | Для турагентств; условия DMC | `/dmc/travel-agencies/`, `/dmc/terms/` |
 

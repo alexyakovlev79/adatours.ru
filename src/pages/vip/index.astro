@@ -16,11 +16,13 @@ import { paginateCatalog } from '../../lib/catalog-pagination';
 import { mainTourCountries, tourPath } from '../../lib/routes';
 import { withBase } from '../../lib/paths';
 import { selectVipTours, vipTourPriceLabel } from '../../lib/vip-tours.mjs';
+import { getVipCountryIndex } from '../../lib/vip-catalog';
 
 const allTours = await getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data));
 const allCountries = await getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data));
 const vipSelection = selectVipTours(allTours);
 const vipTours = vipSelection.entries;
+const vipCountries = await getVipCountryIndex();
 if (!vipTours.length) throw new Error('VIP page requires at least one qualifying active tour');
 
 const catalogPages = paginateCatalog(vipTours, '/vip/');
@@ -95,6 +97,16 @@ const listSchema = {
     eyebrow="Private travel"
     text="Приватность, свободное время и возможность менять планы по ходу поездки так же важны, как выбранные города, отели и впечатления."
   />
+
+  <section class="vip-countries container section--tight" aria-labelledby="vip-countries-title">
+    <p class="eyebrow">Выбрать страну</p>
+    <h2 id="vip-countries-title">VIP-туры по странам</h2>
+    <nav aria-label="VIP-туры по странам">
+      <ul>{vipCountries.map(({ href, label, count }) => (
+        <li><a href={withBase(href)}>{label} <span>{countLabel(count, ['тур', 'тура', 'туров'])}</span></a></li>
+      ))}</ul>
+    </nav>
+  </section>
 
   <FactStrip
     wideFirst
@@ -187,6 +199,11 @@ const listSchema = {
 </script>
 
 <style>
+  .vip-countries h2 { margin: 12px 0 28px; }
+  .vip-countries ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 0 32px; list-style: none; padding: 0; margin: 0; }
+  .vip-countries a { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--color-line); color: var(--color-ink); text-decoration: none; font-family: var(--font-display); line-height: 1.4; }
+  .vip-countries a:hover { text-decoration: underline; text-underline-offset: .25em; }
+  .vip-countries a span { flex-shrink: 0; font-size: .8rem; color: color-mix(in srgb, var(--color-ink) 65%, transparent); }
   .vip-tours { padding-bottom: 0; }
   .vip-tours__head { padding-bottom: clamp(44px, 7vw, 84px); }
   .vip-tours__head h2 { max-width: 980px; margin: 12px 0 22px; }

@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { hasVipInTitle, selectVipTours, vipTourPriceLabel } from '../src/lib/vip-tours.mjs';
+import { isActiveEntity } from '../src/lib/archive.mjs';
 
 const tour = (id, title, priceFrom, durationDays = 10) => ({
   data: { id, title, priceFrom, currency: 'USD', durationDays, countries: ['country_brazil'] },
@@ -46,4 +47,36 @@ test('price label uses the stored currency without inventing a conversion', () =
   assert.match(vipTourPriceLabel(tour('c', 'Тур', 3653)), /^от \$3[\s\u00a0]?653$/);
   const eur = tour('d', 'Тур', 2400); eur.data.currency = 'EUR';
   assert.match(vipTourPriceLabel(eur), /^от €2[\s\u00a0]?400$/);
+});
+
+test('VIP quota recalculates when the active tour catalog grows or shrinks', () => {
+  const tours = Array.from({ length: 24 }, (_, index) => {
+    const entry = tour(
+      `dynamic-${index}`,
+      index === 0 ? 'VIP путешествие' : `Обычный тур ${index}`,
+      index === 0 ? undefined : 2000 + index * 100,
+    );
+    entry.data.status = index < 20 ? 'published' : 'draft';
+    return entry;
+  });
+  const selectActive = () => selectVipTours(tours.filter(isActiveEntity));
+
+  const initial = selectActive();
+  assert.equal(initial.targetCount, 5);
+  assert.equal(initial.entries.length, 5);
+  assert.equal(initial.actualShare, 0.25);
+  assert.ok(initial.entries.some((entry) => entry.data.id === 'dynamic-0'));
+
+  for (const entry of tours.slice(20)) entry.data.status = 'approved';
+  const grown = selectActive();
+  assert.equal(grown.targetCount, 6);
+  assert.equal(grown.entries.length, 6);
+  assert.equal(grown.actualShare, 0.25);
+
+  for (const entry of tours.slice(17)) entry.data.status = 'archived';
+  const reduced = selectActive();
+  assert.equal(reduced.targetCount, 4);
+  assert.equal(reduced.entries.length, 4);
+  assert.equal(reduced.actualShare, 4 / 17);
+  assert.ok(reduced.entries.some((entry) => entry.data.id === 'dynamic-0'));
 });

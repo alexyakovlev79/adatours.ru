@@ -27,10 +27,18 @@ interface Props {
   countryContextId?: string;
   navigationLabel?: string;
   navigationLinks?: Array<{ label: string; href: string }>;
+  countryOverview?: {
+    name: string;
+    href: string;
+    image?: string;
+    imageTextAlign?: 'left' | 'right';
+    mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
+    replacementReason?: string;
+  };
   variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours' | 'vip-country-tours';
 }
 
-const { leadTitle, leadEntityId, kind, entries, title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, navigationLabel, navigationLinks = [] } = Astro.props;
+const { leadTitle, leadEntityId, kind, entries, title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
 const isVipCatalog = variant === 'vip-tours' || variant === 'vip-country-tours';
 const eyebrow = isVipCatalog ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : kind === 'theme' ? 'По интересам' : 'Направления';
 const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
@@ -140,6 +148,19 @@ const listSchema = {
         {navigationLinks.map((link) => <li><a href={withBase(link.href)}>{link.label}</a></li>)}
       </ul>
     </nav>
+  )}
+  {countryOverview && (
+    <section class="catalog-country" aria-label={`О стране: ${countryOverview.name}`}>
+      <DestinationBand
+        eyebrow="О стране"
+        title={countryOverview.name}
+        href={countryOverview.href}
+        image={countryOverview.image}
+        imageTextAlign={countryOverview.imageTextAlign}
+        mediaStatus={countryOverview.mediaStatus}
+        replacementReason={countryOverview.replacementReason}
+      />
+    </section>
   )}
   {p.currentPage === 1 && presentation.editorial && (
     <EditorialStatement eyebrow={presentation.editorial.eyebrow} text={presentation.editorial.text} />

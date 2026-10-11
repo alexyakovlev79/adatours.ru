@@ -46,7 +46,7 @@ const interestChildLinks: NavChild[] = buildInterestIndex(themeEntries, tourEntr
 
 const miceChildLinks: NavChild[] = MICE_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 const vipChildLinks: NavChild[] = (await getVipCountryIndex())
-  .map(({ href, label }) => ({ href, label }));
+  .map(({ href, entry }) => ({ href, label: entry.data.name }));
 const dmcChildLinks: NavChild[] = DMC_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 const aboutChildLinks: NavChild[] = ABOUT_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 
@@ -106,7 +106,7 @@ const nestedGroups = NAV_LINKS
             <div
               class:list={[
                 'desktop-nav__submenu',
-                { 'desktop-nav__submenu--wide': children.length > 8 },
+                { 'desktop-nav__submenu--wide': children.length > 8 || link.href === '/vip/' },
               ]}
               aria-label={link.label}
             >
@@ -750,6 +750,7 @@ const nestedGroups = NAV_LINKS
     }
 
     .mobile-menu__panel[data-mobile-panel='countries'] nav,
+    .mobile-menu__panel[data-mobile-panel='vip'] nav,
     .mobile-menu__panel[data-mobile-panel='interests'] nav {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       column-gap: clamp(18px, 5vw, 28px);
@@ -773,6 +774,7 @@ const nestedGroups = NAV_LINKS
     }
 
     .mobile-menu__panel[data-mobile-panel='countries'] .mobile-menu__overview,
+    .mobile-menu__panel[data-mobile-panel='vip'] .mobile-menu__overview,
     .mobile-menu__panel[data-mobile-panel='interests'] .mobile-menu__overview {
       grid-column: 1 / -1;
     }

@@ -12115,15 +12115,38 @@
   ],
   "copyGroupClassificationBasis": "SHA извлечённого текста в снимке описи 09.10.2026. Более новые копии 09.10 перечитаны: тарифы P045/P046 совпадают; отличаются только редакция/формат текста.",
   "completion": {
-    "state": "price_pass_completed_with_open_issues",
-    "completedAt": "2026-10-11T16:17:34.279Z",
-    "scope": "Только ценовой проход; полная сверка программ не выполнялась. Спорные цены и предложения не применены.",
-    "contentCommit": "63ed47b3899aef9ab4f0d89025aa0f79a50c37e1",
+    "state": "price_pass_and_remediation_completed_with_open_source_questions",
+    "completedAt": "2026-10-11T17:01:16.875Z",
+    "scope": "Цены и однозначные соответствия Word; полнота всех программ не проверялась. Неподтверждённые суммы шести основных пакетов и 57 строк допуслуг сняты.",
+    "contentCommit": "c66387fa6d883591447fc6b9bb845726bb9f3dc4",
     "deployment": {
-      "runId": 38153227204,
-      "url": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38153227204",
+      "runId": 38157091750,
+      "url": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38157091750",
       "conclusion": "success",
-      "completedAt": "2026-10-11T16:00:55Z"
+      "completedAt": "2026-10-11T17:00:15Z",
+      "headSha": "c66387fa6d883591447fc6b9bb845726bb9f3dc4",
+      "jobs": [
+        {
+          "name": "Verify S3 receipts and enforce no new Git media",
+          "conclusion": "success",
+          "completedAt": "2026-10-11T16:55:00Z"
+        },
+        {
+          "name": "build",
+          "conclusion": "success",
+          "completedAt": "2026-10-11T16:59:34Z"
+        },
+        {
+          "name": "deploy",
+          "conclusion": "success",
+          "completedAt": "2026-10-11T17:00:08Z"
+        },
+        {
+          "name": "Publish deployment result as commit status",
+          "conclusion": "success",
+          "completedAt": "2026-10-11T17:00:14Z"
+        }
+      ]
     },
     "sheets": {
       "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
@@ -12141,7 +12164,7 @@
       ],
       "rowsWritten": 381,
       "rowsVerified": 381,
-      "verifiedAt": "2026-10-11T16:17:34.279Z",
+      "verifiedAt": "2026-10-11T16:57:19.395Z",
       "entityRowMap": [
         {
           "entityId": "tour_source_21_dnevnoe_priklyuchenie_v_peru",
@@ -13668,22 +13691,27 @@
           "row": 516
         }
       ],
-      "verification": "Точные ID и все семь значений повторно прочитаны через native CellData; 0 расхождений. Заголовки и формат новых столбцов проверены по API."
+      "verification": "Точные ID и 2667 значений повторно прочитаны через native CellData; 0 расхождений. Исходные строки снятых доплат сохранены в T."
     },
     "inventory": {
       "programs": 169,
-      "priceAuditTourLinksVerified": 184,
+      "priceAuditTourLinksVerified": 183,
       "mismatches": 0
     },
     "openIssues": {
-      "ambiguousWordMappingTours": 6,
+      "ambiguousWordMappingTours": 3,
       "noTotalPriceInWordTours": 2,
       "tariffBasisNeedsConfirmationTours": 1,
-      "ancillaryPricesNotConfirmed": 57,
+      "ancillaryPricesAwaitingSourceLines": 57,
       "ancillaryPriceTours": 20,
-      "activeToursWithoutConfirmedWordMatch": 187
+      "activeToursWithoutConfirmedWordMatch": 185,
+      "missingPrograms": [
+        "P109"
+      ],
+      "unconfirmedMainPricesRemoved": 6
     },
-    "proposalsApplied": false
+    "proposalsApplied": true,
+    "previousContentCommit": "63ed47b3899aef9ab4f0d89025aa0f79a50c37e1"
   },
   "resolvedConflicts": [
     {
@@ -13722,7 +13750,7 @@
   ],
   "remediation": {
     "date": "2026-10-11",
-    "state": "prepared",
+    "state": "completed_with_open_source_questions",
     "removedUnconfirmedMainPrices": [
       "tour_source_braziliya_argentina_gruppovoj_tur",
       "tour_source_kongress_v_argentine",
@@ -13755,6 +13783,49 @@
         "P109"
       ],
       "sourceEntryReadsWithoutAdditionalExactWordMatches": 187
-    }
+    },
+    "completedAt": "2026-10-11T17:01:16.875Z",
+    "contentCommit": "c66387fa6d883591447fc6b9bb845726bb9f3dc4",
+    "deployment": {
+      "runId": 38157091750,
+      "url": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38157091750",
+      "conclusion": "success",
+      "completedAt": "2026-10-11T17:00:15Z",
+      "headSha": "c66387fa6d883591447fc6b9bb845726bb9f3dc4",
+      "jobs": [
+        {
+          "name": "Verify S3 receipts and enforce no new Git media",
+          "conclusion": "success",
+          "completedAt": "2026-10-11T16:55:00Z"
+        },
+        {
+          "name": "build",
+          "conclusion": "success",
+          "completedAt": "2026-10-11T16:59:34Z"
+        },
+        {
+          "name": "deploy",
+          "conclusion": "success",
+          "completedAt": "2026-10-11T17:00:08Z"
+        },
+        {
+          "name": "Publish deployment result as commit status",
+          "conclusion": "success",
+          "completedAt": "2026-10-11T17:00:14Z"
+        }
+      ]
+    },
+    "filesReadBack": 41,
+    "sheets": {
+      "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
+      "sheetName": "Страницы",
+      "columns": "N:T",
+      "rowsVerified": 381,
+      "cellsVerified": 2667,
+      "mismatches": [],
+      "verifiedAt": "2026-10-11T16:57:19.395Z",
+      "questionsPreservedInColumnT": true
+    },
+    "proposalsApplied": "Однозначные решения применены; спорные суммы сняты с публикации, источники и исходные строки сохранены."
   }
 }

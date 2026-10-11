@@ -31,6 +31,7 @@ interface Props {
   headerTheme?: 'light' | 'dark';
   noindex?: boolean;
   showBreadcrumbs?: boolean;
+  breadcrumbsInHero?: boolean;
   hideCurrentBreadcrumbLabel?: boolean;
   breadcrumbs?: BreadcrumbItem[];
   pageSchema?: Record<string, unknown> | Array<Record<string, unknown>>;
@@ -42,6 +43,7 @@ const {
   description = SITE.defaultDescription,
   canonical, image, lang = SITE.locale,
   headerTheme = 'light', noindex = false, showBreadcrumbs = true,
+  breadcrumbsInHero = false,
   hideCurrentBreadcrumbLabel = false, breadcrumbs, pageSchema,
 } = Astro.props;
 
@@ -162,7 +164,7 @@ const schema = await pageStructuredData({
     <noscript><div><img src="https://mc.yandex.ru/watch/113586792" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <SiteHeader theme={headerTheme} />
     <SearchOverlay />
-    {showBreadcrumbs && !noindex && segments.length > 0 && (
+    {showBreadcrumbs && !breadcrumbsInHero && !noindex && segments.length > 0 && (
       <Breadcrumbs pathname={Astro.url.pathname} title={title} theme={headerTheme}
         items={breadcrumbs} hideCurrentLabel={hideCurrentBreadcrumbLabel} />
     )}

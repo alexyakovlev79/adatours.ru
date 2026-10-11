@@ -44,11 +44,12 @@ const {
 } = Astro.props;
 
 const resolvedImage = image ? withBase(image) : undefined;
+const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
 
 ---
 
 <section
-  class:list={['hero', { 'hero--compact': compact, 'hero--home': home, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized }]}
+  class:list={['hero', { 'hero--compact': compact, 'hero--home': home, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized, 'hero--with-breadcrumbs': hasBreadcrumbs }]}
   data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
@@ -66,6 +67,7 @@ const resolvedImage = image ? withBase(image) : undefined;
   )}
   {video && image && <HeroVideo src={video.src} poster={image} />}
   <div class="hero__overlay"></div>
+  {hasBreadcrumbs && <div class="hero__breadcrumbs"><slot name="breadcrumbs" /></div>}
   <div class="hero__content">
     <div class="hero__head">
       {vip && <VipBadge />}
@@ -262,7 +264,9 @@ const resolvedImage = image ? withBase(image) : undefined;
   .hero--tour .hero__meta {
     padding-left: 18px;
     border-left: 1px solid rgb(255 255 255 / 55%);
-    color: rgb(255 255 255 / 87%);
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 60%);
     white-space: nowrap;
   }
 
@@ -347,4 +351,12 @@ const resolvedImage = image ? withBase(image) : undefined;
         linear-gradient(180deg, rgb(15 16 14 / 9%) 0%, rgb(15 16 14 / 36%) 48%, rgb(15 16 14 / 29%) 100%);
     }
   }
+
+  .hero--with-breadcrumbs { grid-template-rows: auto 1fr; }
+  .hero__breadcrumbs {
+    width: min(calc(100% - (var(--gutter) * 2)), 1440px);
+    margin-inline: auto;
+    padding-top: calc(var(--header-h) + 16px);
+  }
+  .hero--with-breadcrumbs .hero__content { padding-top: clamp(28px, 4vw, 56px); }
 </style>

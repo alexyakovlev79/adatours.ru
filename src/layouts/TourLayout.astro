@@ -4,6 +4,7 @@ import { getVipTourPaths } from '../lib/vip-catalog';
 import { seoTourTitle } from '../lib/seo-page.mjs';
 import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
 import ArchiveNotice from '../components/global/ArchiveNotice.astro';
+import Breadcrumbs from '../components/global/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import InterestLinks from '../components/editorial/InterestLinks.astro';
@@ -117,7 +118,7 @@ const remainingBodyHtml = firstHeadingHtml ? tourBodyHtml.slice(firstHeadingHtml
 const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 ---
 
-<BaseLayout leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={seoTourTitle(d)} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
+<BaseLayout breadcrumbsInHero leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={seoTourTitle(d)} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
   {!archived && <SearchIndexRecord
     title={d.title}
     summary={d.lead}
@@ -145,7 +146,9 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     meta={heroMeta}
     ctaLabel={archived ? "Актуальные туры" : "Получить программу"}
     ctaHref={archived ? "/tours/" : "/contacts/"}
-  />
+  >
+    {!archived && <Breadcrumbs slot="breadcrumbs" inline pathname={Astro.url.pathname} title={d.title} items={tourBreadcrumbs(d)} />}
+  </Hero>
 
   {d.durationDays && <TripStats stats={stats} />}
 

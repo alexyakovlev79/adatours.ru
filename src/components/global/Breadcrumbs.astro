@@ -8,9 +8,10 @@ interface Props {
   theme?: 'light' | 'dark';
   items?: BreadcrumbItem[];
   hideCurrentLabel?: boolean;
+  inline?: boolean;
 }
 
-const { pathname, title, theme = 'light', items, hideCurrentLabel = false } = Astro.props;
+const { pathname, title, theme = 'light', items, hideCurrentLabel = false, inline = false } = Astro.props;
 const base = import.meta.env.BASE_URL || '/';
 const normalizedBase = base.endsWith('/') ? base : `${base}/`;
 let cleanPath = pathname;
@@ -89,15 +90,15 @@ const visibleCrumbs = isCustomTrail
   : crumbs.length > 1 ? crumbs.slice(0, -1) : crumbs;
 ---
 
-<nav class:list={['breadcrumbs', `breadcrumbs--${theme}`, isCustomTrail && 'breadcrumbs--custom']} aria-label="Хлебные крошки">
+<nav class:list={['breadcrumbs', `breadcrumbs--${theme}`, isCustomTrail && 'breadcrumbs--custom', { 'breadcrumbs--inline': inline }]} aria-label="Хлебные крошки">
   <ol>
     {visibleCrumbs.map((crumb, index) => (
       <li class:list={{ 'breadcrumbs__group': 'links' in crumb }}>
         {'links' in crumb ? crumb.links.map((link, linkIndex) => (
-          <>
+          <span class="breadcrumbs__country">
             {linkIndex > 0 && <span class="breadcrumbs__dot" aria-hidden="true">·</span>}
             <a href={link.href}>{link.label}</a>
-          </>
+          </span>
         )) : isCustomTrail && index === visibleCrumbs.length - 1 ? (
           <span aria-current="page">{crumb.label}</span>
         ) : (
@@ -126,22 +127,26 @@ const visibleCrumbs = isCustomTrail
     padding: 0;
     list-style: none;
     font-family: var(--font-display);
-    font-size: .67rem;
-    line-height: 1.35;
-    letter-spacing: .06em;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: .08em;
     text-transform: uppercase;
   }
 
   .breadcrumbs li {
     display: flex;
     align-items: center;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
     pointer-events: auto;
   }
 
   .breadcrumbs li + li::before {
     content: '/';
     margin: 0 9px;
-    opacity: .45;
+    opacity: .8;
   }
 
   .breadcrumbs a,
@@ -150,22 +155,24 @@ const visibleCrumbs = isCustomTrail
   }
 
   .breadcrumbs a {
-    opacity: .7;
+    opacity: 1;
   }
 
   .breadcrumbs a:hover {
-    opacity: 1;
+    text-decoration: underline;
+    text-underline-offset: .2em;
   }
 
   .breadcrumbs__group { flex-wrap: wrap; }
   .breadcrumbs__dot { margin-inline: .45em; }
 
   .breadcrumbs--light {
-    color: rgba(255,255,255,.78);
+    color: #fff;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 60%);
   }
 
   .breadcrumbs--dark {
-    color: rgba(26,26,26,.72);
+    color: var(--color-ink);
   }
 
   @media (max-width: 680px) {
@@ -176,8 +183,8 @@ const visibleCrumbs = isCustomTrail
     .breadcrumbs ol {
       flex-wrap: nowrap;
       overflow: hidden;
-      font-size: .61rem;
-      letter-spacing: .045em;
+      font-size: var(--text-xs);
+      letter-spacing: .06em;
     }
 
     .breadcrumbs li {
@@ -237,5 +244,20 @@ const visibleCrumbs = isCustomTrail
     .breadcrumbs--custom li:last-child { flex: 0 1 auto; overflow: visible; }
     .breadcrumbs--custom li:nth-child(2) a,
     .breadcrumbs--custom li:last-child span { white-space: normal; overflow: visible; }
+  }
+
+  .breadcrumbs--inline { position: static; pointer-events: auto; }
+
+  .breadcrumbs .breadcrumbs__group .breadcrumbs__country {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .breadcrumbs .breadcrumbs__group .breadcrumbs__country a { white-space: nowrap; }
+
+  @media (max-width: 720px) {
+    .breadcrumbs--inline ol { flex-wrap: wrap; gap: 8px 0; overflow: visible; }
+    .breadcrumbs--inline li.breadcrumbs__group { flex: 1 1 100%; }
+    .breadcrumbs--inline .breadcrumbs__group::before { display: none; }
   }
 </style>

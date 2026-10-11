@@ -361,4 +361,37 @@ const syllabifyFormat = (value: string) => value.replace(/[а-яё]+/giu, (word)
     white-space: normal;
     text-wrap: balance;
   }
+  /* Excursion facts lead directly into the compact geography and interest links. */
+  .stats[data-variant="excursion"] {
+    padding-block: clamp(18px, 2vw, 28px);
+  }
+  .stats[data-variant="excursion"] .stat,
+  .stats[data-variant="excursion"] .stats__inner[data-count] .stat {
+    min-height: 0;
+    padding: 18px 24px;
+  }
+  .stats[data-variant="excursion"] .stat strong {
+    line-height: 1.08;
+    white-space: normal;
+  }
+  @media (max-width: 760px) {
+    .stats[data-variant="excursion"] { padding-block: 12px; }
+    .stats[data-variant="excursion"] .stat,
+    .stats[data-variant="excursion"] .stats__inner[data-count] .stat {
+      padding: 14px 12px;
+    }
+    .stats[data-variant="excursion"] .stats__inner[data-count="1"] .stat,
+    .stats[data-variant="excursion"] .stats__inner[data-count="2"] .stat {
+      padding-inline: 0;
+      gap: 12px;
+    }
+    .stats[data-variant="excursion"] .stats__inner[data-count="1"] .stat strong,
+    .stats[data-variant="excursion"] .stats__inner[data-count="2"] .stat strong {
+      font-size: clamp(1.35rem, 5.6vw, 1.65rem);
+    }
+    .stats[data-variant="excursion"] .stat span {
+      font-size: .68rem;
+      letter-spacing: .04em;
+    }
+  }
 </style>

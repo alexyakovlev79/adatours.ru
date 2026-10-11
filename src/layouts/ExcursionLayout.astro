@@ -4,7 +4,7 @@ import { seoExcursionTitle, seoRelatedToursDescription } from '../lib/seo-page.m
 import ArchiveNotice from '../components/global/ArchiveNotice.astro';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
-import InterestLinks from '../components/editorial/InterestLinks.astro';
+import EntityLinks from '../components/editorial/EntityLinks.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import Hero from '../components/editorial/Hero.astro';
 import TripStats from '../components/tour/TripStats.astro';
@@ -165,13 +165,14 @@ const excursionSchema = {
 
   {stats.length > 0 && <TripStats stats={stats} variant="excursion" />}
 
-  {!archived && country && (
-    <nav class="container section--tight" aria-label="Страна экскурсии">
-      <p><a href={withBase(countryPath(country.data))}>{country.data.name}</a></p>
-    </nav>
-  )}
-
-  <InterestLinks entity={d} />
+  <EntityLinks entity={d} groups={archived ? [] : [
+    { label: 'Страна экскурсии', entries: country ? [
+      { name: country.data.name, href: countryPath(country.data) },
+    ] : [] },
+    { label: 'Места экскурсии', entries: visibleDestinations.map((place) => ({
+      name: place.data.name, href: destinationPath(place.data),
+    })) },
+  ]} />
 
   <section class="excursion-copy section--tight">
     <div class="container prose">
@@ -254,11 +255,20 @@ const excursionSchema = {
 <style>
   .excursion-copy {
     background: var(--color-bg);
-    padding-block: clamp(58px, 6vw, 96px);
+    padding-block: clamp(18px, 2vw, 28px) clamp(28px, 3vw, 44px);
   }
 
   .excursion-copy :global(.prose) {
     max-width: 900px;
+    display: flow-root;
+  }
+
+  .excursion-copy :global(.prose > :first-child) {
+    margin-top: 0;
+  }
+
+  .excursion-copy :global(.prose > :last-child) {
+    margin-bottom: 0;
   }
 
   .excursion-copy :global(.prose p) {
@@ -272,3 +282,4 @@ const excursionSchema = {
     margin-bottom: 0;
   }
 </style>
+

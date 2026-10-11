@@ -1,0 +1,90 @@
+---
+import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../../lib/archive.mjs';
+import { themeIds } from '../../lib/interest-model.mjs';
+import { themePath } from '../../lib/routes';
+import { withBase } from '../../lib/paths';
+
+interface LinkGroup {
+  label: string;
+  entries: { name: string; href?: string }[];
+  interests?: boolean;
+}
+interface Props {
+  entity: { status?: string; themes?: string[]; primaryThemes?: string[] };
+  groups?: LinkGroup[];
+}
+const { entity, groups = [] } = Astro.props;
+const ids = isActiveEntity(entity) ? themeIds(entity) : [];
+const themes = ids.length ? await getCollection('themes', ({ data }) =>
+  data.locale === 'ru' && isActiveEntity(data) && ids.includes(data.id)
+) : [];
+const byId = new Map(themes.map((entry) => [entry.data.id, entry.data]));
+const interests = ids.map((id) => byId.get(id)).filter(Boolean);
+const visibleGroups: LinkGroup[] = [
+  ...groups,
+  { label: 'По интересам', interests: true,
+    entries: interests.map((theme) => ({ name: theme.name, href: themePath(theme) })) },
+].filter((group) => group.entries.length);
+---
+{visibleGroups.length > 0 && (
+  <div class="entity-links container">
+    {visibleGroups.map((group) => (
+      <nav class:list={['entity-links__group', { 'entity-links__group--interests': group.interests }]} aria-label={group.label}>
+        <p class="entity-links__label">{group.label}</p>
+        <ul>
+          {group.entries.map((item) => (
+            <li>{item.href ? <a href={withBase(item.href)}>{item.name}</a> : <span>{item.name}</span>}</li>
+          ))}
+        </ul>
+      </nav>
+    ))}
+  </div>
+)}
+<style>
+  .entity-links { padding-bottom: clamp(12px, 1.5vw, 20px); }
+  .entity-links__group {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    align-items: start;
+    gap: 12px 24px;
+    padding-block: 12px;
+    border-top: 1px solid var(--color-line);
+  }
+  .entity-links__label {
+    margin: 7px 0 0;
+    font-family: var(--font-display);
+    font-size: .7rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--color-ink) 72%, transparent);
+  }
+  .entity-links ul { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+  .entity-links li { max-width: 100%; font-size: clamp(.875rem, .85rem + .15vw, 1rem); line-height: 1.4; }
+  .entity-links a, .entity-links li > span {
+    display: block;
+    padding: 6px 10px;
+    border: 1px solid color-mix(in srgb, var(--color-ink) 12%, transparent);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--color-champagne) 12%, var(--color-bg));
+    overflow-wrap: anywhere;
+    text-decoration: none;
+    transition: background-color .15s ease, border-color .15s ease;
+  }
+  .entity-links__group--interests a {
+    border-color: color-mix(in srgb, var(--color-gold-deep) 25%, transparent);
+    background: color-mix(in srgb, var(--color-champagne) 22%, var(--color-bg));
+  }
+  .entity-links a:hover, .entity-links a:focus-visible {
+    border-color: var(--color-gold-deep);
+    background: color-mix(in srgb, var(--color-champagne) 40%, var(--color-bg));
+  }
+  .entity-links li > span { border-style: dashed; background: transparent; }
+  @media (max-width: 760px) {
+    .entity-links__group { grid-template-columns: minmax(0, 1fr); gap: 8px; padding-block: 12px; }
+    .entity-links__label { margin: 0; }
+  }
+</style>
+

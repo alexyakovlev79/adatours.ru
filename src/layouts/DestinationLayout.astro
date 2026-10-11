@@ -156,7 +156,9 @@ const destinationSchema = {
 
   <InterestLinks entity={d} />
 
-  <EditorialStatement eyebrow="Зачем ехать" text={d.summary} />
+  <div class="destination-intro">
+    <EditorialStatement eyebrow="Зачем ехать" text={d.summary} />
+  </div>
 
   <section class="destination-copy section--tight">
     <div class="container prose">
@@ -285,5 +287,19 @@ const destinationSchema = {
   )}
 
 </BaseLayout>
+
+<style>
+  .destination-intro :global(.statement) {
+    padding-block: clamp(24px, 3vw, 40px) 16px;
+  }
+  .destination-intro :global(.eyebrow) { margin-top: 0; }
+  .destination-copy {
+    padding-block: 16px clamp(28px, 3vw, 40px);
+  }
+  .destination-copy :global(.prose) { display: flow-root; }
+  .destination-copy :global(.prose > :first-child) { margin-top: 0; }
+  .destination-copy :global(.prose > :last-child) { margin-bottom: 0; }
+</style>
+
 
 

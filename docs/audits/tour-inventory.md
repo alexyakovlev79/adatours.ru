@@ -358,7 +358,7 @@
 | `tour_source_iguacu_falls` | [Свадебная церемония любви на водопадах Игуасу](https://adatours.ru/brazil/tour/iguazu-falls-wedding/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_rio_de_janeiro_wedding` | [Свадебная церемония любви на пляже в Рио де Жанейро (Praia Vermelha)](https://adatours.ru/brazil/tour/rio-de-janeiro-praia-vermelha-wedding/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_sekrety_pantanala` | [Секреты Пантанала](https://adatours.ru/brazil/tour/secrets-of-the-pantanal/) | Архивная страница | Нет подтверждённого соответствия в снимке Drive |
-| `tour_source_tur_v_braziliyu_s_detmi` | [Семейный тур в Бразилию \| Отдых с детьми в Латинской Америке](https://adatours.ru/brazil/tour/brazil-family-tour/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
+| `tour_source_tur_v_braziliyu_s_detmi` | [Тур в Бразилию с детьми \| Отдых с детьми в Латинской Америке](https://adatours.ru/brazil/tour/brazil-family-tour/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_solntse_tango_vino_i_atakama` | [Солнце, Танго, Вино и Атакама](https://adatours.ru/multi-country/tour/sun-tango-wine-atacama/) | Активная страница | `P070` |
 | `tour_source_rio_de_zhanejro` | [Спортивная рыбалка – Pousada Mamori](https://adatours.ru/brazil/tour/pousada-mamori-sport-fishing/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_wedding_ceremony_tropical_package` | [Тропическая свадебная церемония](https://adatours.ru/brazil/tour/tropical-wedding-ceremony/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |

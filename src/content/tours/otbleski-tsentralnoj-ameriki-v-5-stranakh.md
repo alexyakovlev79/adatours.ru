@@ -253,8 +253,9 @@ itinerary:
   text: "Переезд к границе Коста-Рики, затем на тихоокеанское побережье. После дороги время для отдыха на пляже.\n\n**Ночь:**\
     \ Wyndham Tamarindo.  \n**Питание:** завтрак."
   images:
-  - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: город Гранада в Никарагуа'
+  - src: /media/destinations/granada/gallery-1-enhanced-20261004.webp
+    alt: "Разноцветный туристический паровозик и велосипедист на улице Гранады, Никарагуа"
+    hover: "Гранада: яркий прогулочный паровозик рядом с велосипедистом"
 - day: 14
   title: Тихоокеанское побережье
   places: []

@@ -1,12 +1,43 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildInterestHub, themeRelevance, compareToursForInterest, interestsForCountry, validateInterestContent, INTERESTS, countLabel, countryMembership, excursionIdsForInterestTour } from '../src/lib/interest-model.mjs';
-import { salesFitScore } from '../src/lib/tour-sales-fit.mjs';
+import { salesFitScore, countryDestinationShare, compareToursForCountry, compareToursBySalesFit } from '../src/lib/tour-sales-fit.mjs';
+import destinationCatalog from '../src/data/catalog/destinations.json' with { type: 'json' };
 const A = 'theme_adventure', C = 'theme_culture';
 const entity = (id, extra = {}) => ({ data: { id, locale: 'ru', status: 'published', title: id, name: id, slug: id.replaceAll('_', '-'), themes: [], ...extra } });
 const tour = (id, extra = {}) => entity(id, { primaryThemes: [A], countries: ['one'], destinations: [], durationDays: 13, itinerary: [], ...extra });
 const countries = [entity('one'), entity('two')];
 const themes = INTERESTS.map((d) => entity(d.id, d));
+const brazilPlaces = destinationCatalog.filter((place) => place.countryId === 'country_brazil').slice(0, 7).map((place) => place.id);
+const foreignPlaces = destinationCatalog.filter((place) => place.countryId !== 'country_brazil').slice(0, 3).map((place) => place.id);
+test('country formula matches 15 days, four countries, and seven of ten places: 3.6', () => {
+  const t = tour('four-countries', { durationDays: 15, countries: ['country_brazil', 'two', 'three', 'four'],
+    destinations: [...brazilPlaces, ...foreignPlaces] });
+  assert.equal(countryDestinationShare(t, 'country_brazil'), .7);
+  assert.ok(Math.abs(salesFitScore(t, 'country_brazil') - 3.6) < 1e-12);
+  assert.equal(salesFitScore(t), 6);
+  assert.equal(salesFitScore(tour('short', { ...t.data, durationDays: 11 }), 'country_brazil'), salesFitScore(t, 'country_brazil'));
+});
+test('route share deduplicates visits, excludes optional places, and counts unpublished catalogued places', () => {
+  const t = tour('route', { destinations: [...brazilPlaces, ...foreignPlaces],
+    routeDestinations: [brazilPlaces[0], brazilPlaces[0], foreignPlaces[0]] });
+  assert.equal(countryDestinationShare(t, 'country_brazil'), .5);
+  assert.equal(countryDestinationShare(tour('empty', { routeDestinations: [], destinations: brazilPlaces }), 'country_brazil'), 0);
+  assert.equal(countryDestinationShare(tour('unknown', { destinations: ['unknown'] }), 'country_brazil'), 0);
+  assert.equal(salesFitScore(tour('unknown-days', { durationDays: undefined }), 'country_brazil'), -Infinity);
+});
+test('country order rewards route presence, preserves global order and thematic relevance', () => {
+  const dilute = tour('dilute', { title: 'А', countries: ['country_brazil', 'two'], destinations: [brazilPlaces[0], ...foreignPlaces] });
+  const concentrated = tour('concentrated', { title: 'Я', countries: ['country_brazil', 'two'], destinations: [...brazilPlaces, foreignPlaces[0]] });
+  assert.deepEqual([concentrated, dilute].sort(compareToursBySalesFit).map((t) => t.data.id), ['dilute', 'concentrated']);
+  assert.deepEqual([dilute, concentrated].sort(compareToursForCountry('country_brazil')).map((t) => t.data.id), ['concentrated', 'dilute']);
+  assert.deepEqual([dilute, concentrated].sort(compareToursForInterest(A, 'country_brazil')).map((t) => t.data.id), ['concentrated', 'dilute']);
+  const secondary = tour('secondary', { ...concentrated.data, id: 'secondary', primaryThemes: [C], themes: [A] });
+  assert.deepEqual([secondary, dilute].sort(compareToursForInterest(A, 'country_brazil')).map((t) => t.data.id), ['dilute', 'secondary']);
+  const hub = buildInterestHub(A, { tours: [dilute, concentrated], countries: [entity('country_brazil')], themes });
+  assert.deepEqual(hub.allCountries[0].tours.map((t) => t.data.id), ['concentrated', 'dilute']);
+  assert.deepEqual(hub.allTours.map((t) => t.data.id), ['dilute', 'concentrated']);
+});
 test('closed dictionary retains the nine stable URLs and has thirteen themes', () => { assert.equal(INTERESTS.length, 13); assert.equal(INTERESTS.find((r) => r.id === 'theme_motorcycle').slug, 'motorcycle-tours'); });
 test('primary relevance beats a stronger commercial score', () => {
   const primary = tour('primary', { durationDays: 30 }), secondary = tour('secondary', { primaryThemes: [C], themes: [A], countries: ['one', 'two'], durationDays: 13 });

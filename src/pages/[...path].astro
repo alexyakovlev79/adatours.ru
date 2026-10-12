@@ -20,7 +20,7 @@ import {
 import { excursionDestinationIds } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsForTour } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
-import { compareToursBySalesFit } from '../lib/tour-ranking';
+import { compareToursBySalesFit, compareToursForCountry } from '../lib/tour-ranking';
 import { selectVipTours } from '../lib/vip-tours.mjs';
 import { tourFilterTitle, tourFilterDescription } from '../lib/vip-copy.mjs';
 import { tourHasMainCountry, tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-relations';
@@ -120,7 +120,7 @@ export async function getStaticPaths() {
       { label: country.name, href: destinationCountryPath(country) },
       { label: entry.data.name, href: canonical },
     ];
-    const mainTours = tours.filter((tour) => tourHasMainDestination(tour.data, entry.data.id));
+    const mainTours = tours.filter((tour) => tourHasMainDestination(tour.data, entry.data.id)).sort(compareToursForCountry(entry.data.countryId));
     if (mainTours.length) {
       const catalogPath = tourDestinationPath(entry.data);
       add(catalogPath, {
@@ -131,7 +131,7 @@ export async function getStaticPaths() {
         hero: '/media/catalog/tury/hero-enhanced-20260930.webp',
       });
     }
-    const optionalTours = tours.filter((tour) => tourHasOptionalDestination(tour.data, entry.data.id));
+    const optionalTours = tours.filter((tour) => tourHasOptionalDestination(tour.data, entry.data.id)).sort(compareToursForCountry(entry.data.countryId));
     if (optionalTours.length) {
       const catalogPath = optionalTourDestinationPath(entry.data);
       add(catalogPath, {
@@ -156,7 +156,7 @@ export async function getStaticPaths() {
     add(canonical, { mode: 'detail', kind: 'excursion', entry });
     for (const alias of aliasesForEntity('excursion', entry.data, canonical)) add(alias, { mode: 'redirect', to: canonical, title: entry.data.title });
     if (isArchivedEntity(entry)) continue; // Keep page and aliases, exclude every catalogue membership.
-    const relatedTours = tours.filter((tour) => tourExcursions.get(tour.data.id)?.has(entry.data.id));
+    const relatedTours = tours.filter((tour) => tourExcursions.get(tour.data.id)?.has(entry.data.id)).sort(compareToursForCountry(excursionGeography(entry.data).country.id));
     if (relatedTours.length) {
       const catalogPath = tourExcursionPath(entry.data);
       add(catalogPath, {
@@ -196,7 +196,7 @@ export async function getStaticPaths() {
         hero: heroForCountry(country.id),
       });
     }
-    const selectedTours = tours.filter((entry) => tourHasMainCountry(entry.data, country.id));
+    const selectedTours = tours.filter((entry) => tourHasMainCountry(entry.data, country.id)).sort(compareToursForCountry(country.id));
     if (selectedTours.length) {
       const canonical = tourCountryPath(country);
       add(canonical, {

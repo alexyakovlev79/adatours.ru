@@ -1,6 +1,6 @@
 import { isActiveEntity } from './archive.mjs';
 import { selectVipTours } from './vip-tours.mjs';
-import { compareToursBySalesFit } from './tour-sales-fit.mjs';
+import { compareToursForCountry } from './tour-sales-fit.mjs';
 
 const dataOf = (entry) => entry?.data ?? entry;
 const directions = {
@@ -44,7 +44,7 @@ export function buildVipCountryIndex(tours, countries) {
   return countries.filter(activeRu).flatMap((entry) => {
     const entries = byCountry.get(dataOf(entry).id);
     if (!entries?.length) return [];
-    return [{ entry, tours: entries.sort(compareToursBySalesFit), count: entries.length,
+    return [{ entry, tours: entries.sort(compareToursForCountry(dataOf(entry).id)), count: entries.length,
       href: vipCountryPath(entry), label: vipCountryTitle(entry) }];
   }).sort((a, b) => b.count - a.count || dataOf(a.entry).name.localeCompare(dataOf(b.entry).name, 'ru'));
 }

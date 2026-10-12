@@ -16,7 +16,7 @@ import {
 } from '../lib/routes';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
-import { compareToursBySalesFit } from '../lib/tour-ranking';
+import { compareToursForCountry } from '../lib/tour-ranking';
 import { tourHasMainCountry } from '../lib/tour-relations';
 import { getVipCountryIndex } from '../lib/vip-catalog';
 
@@ -81,7 +81,7 @@ const destinationTourCounts = buildDestinationTourCounts(allTourEntries);
 
 destinationEntries.sort(compareDestinationsByPopularity(destinationTourCounts));
 
-tourEntries.sort(compareToursBySalesFit);
+tourEntries.sort(compareToursForCountry(d.id));
 
 excursionEntries.sort(compareExcursionsByPopularity(excursionTourCounts));
 

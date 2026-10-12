@@ -1,7 +1,7 @@
 import destinationCatalog from '../data/catalog/destinations.json' with { type: 'json' };
 import registry from '../data/interest-registry.json' with { type: 'json' };
 import { isActiveEntity, activeReplacementId } from './archive.mjs';
-import { compareToursBySalesFit } from './tour-sales-fit.mjs';
+import { compareToursBySalesFit, compareToursForCountry } from './tour-sales-fit.mjs';
 
 const destinationCountryById = new Map(destinationCatalog.map((place) => [place.id, place.countryId]));
 const excursionCountryId = (excursion) => destinationCountryById.get(dataOf(excursion).destination) ?? dataOf(excursion).country;
@@ -20,7 +20,10 @@ const byName = (a, b) => nameOf(a.entry ?? a).localeCompare(nameOf(b.entry ?? b)
 export const themeIds = (entity) => unique([...(dataOf(entity).primaryThemes ?? []), ...(dataOf(entity).themes ?? [])]);
 export const themeNames = (ids = []) => unique(ids).map((id) => registry.find((row) => row.id === id)?.name ?? id);
 export const themeRelevance = (entity, id) => (dataOf(entity).primaryThemes ?? []).includes(id) ? 2 : (dataOf(entity).themes ?? []).includes(id) ? 1 : 0;
-export const compareToursForInterest = (id) => (a, b) => themeRelevance(b, id) - themeRelevance(a, id) || compareToursBySalesFit(a, b);
+export const compareToursForInterest = (id, countryId) => {
+  const compare = countryId ? compareToursForCountry(countryId) : compareToursBySalesFit;
+  return (a, b) => themeRelevance(b, id) - themeRelevance(a, id) || compare(a, b);
+};
 export const countryMembership = (tour, id) => {
   const d = dataOf(tour);
   if ((d.routeCountries ?? d.countries ?? []).includes(id)) return 1;
@@ -112,7 +115,7 @@ export function buildInterestHub(id, { tours = [], countries = [], destinations 
   }
   const rankedCountries = activeCountries.map((entry) => {
     const countryId = dataOf(entry).id;
-    const countryTours = matchedTours.filter((tour) => countryMembership(tour, countryId));
+    const countryTours = matchedTours.filter((tour) => countryMembership(tour, countryId)).sort(compareToursForInterest(id, countryId));
     const mainCount = countryTours.filter((tour) => countryMembership(tour, countryId) === 1).length;
     return { entry, tourCount: countryTours.length, mainCount, optionalCount: countryTours.length - mainCount, tours: countryTours, topTour: countryTours[0],
       score: countryTours.reduce((sum, tour) => sum + themeRelevance(tour, id) * countryMembership(tour, countryId), 0),

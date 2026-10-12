@@ -8,6 +8,7 @@ import { buildVipFilterIndex, vipFilterOptions } from '../src/lib/vip-filters.mj
 import { paginateCatalog } from '../src/lib/catalog-pagination.ts';
 import { buildTourFilterIndex, tourFilterOptions } from '../src/lib/tour-filters.mjs';
 import { buildInterestHub } from '../src/lib/interest-model.mjs';
+import destinationCatalog from '../src/data/catalog/destinations.json' with { type: 'json' };
 
 const filterCountries = [
   { id: 'country_brazil', slug: 'brazil', name: 'Бразилия', locale: 'ru' },
@@ -22,6 +23,28 @@ const filterThemes = [
 const filterTour = (id, countries, primaryThemes, themes = [], extras = {}) => ({ data: {
   id, title: `VIP ${id}`, durationDays: 13, locale: 'ru', countries, primaryThemes, themes, ...extras,
 } });
+
+test('regular, interest, VIP and VIP-interest country lists share the route-weighted order before pagination', () => {
+  const brazil = destinationCatalog.filter((p) => p.countryId === 'country_brazil').slice(0, 7).map((p) => p.id);
+  const chile = destinationCatalog.filter((p) => p.countryId === 'country_chile').slice(0, 7).map((p) => p.id);
+  const concentrated = filterTour('concentrated', ['country_brazil', 'country_chile'], ['theme_wildlife'], [],
+    { title: 'VIP Я', destinations: [...brazil, chile[0]] });
+  const dilute = filterTour('dilute', ['country_brazil', 'country_chile'], ['theme_wildlife'], [],
+    { title: 'VIP А', destinations: [brazil[0], ...chile] });
+  const tours = [dilute, concentrated];
+  const regular = buildTourFilterIndex(tours, filterCountries, filterThemes);
+  const vip = buildVipFilterIndex(tours, filterCountries, filterThemes);
+  for (const rows of [regular, vip]) {
+    for (const themeId of [undefined, 'theme_wildlife']) {
+      for (const [countryId, expected] of [['country_brazil', ['concentrated', 'dilute']], ['country_chile', ['dilute', 'concentrated']]]) {
+        const row = rows.find((r) => r.countryId === countryId && r.themeId === themeId);
+        assert.deepEqual(paginateCatalog(row.entries, row.href).flatMap((p) => p.entries).map((t) => t.data.id), expected);
+      }
+    }
+  }
+  assert.deepEqual(buildVipCountryIndex(tours, filterCountries).find((r) => r.entry.id === 'country_brazil').tours.map((t) => t.data.id), ['concentrated', 'dilute']);
+  assert.deepEqual(regular.find((r) => !r.countryId && !r.themeId).entries.map((t) => t.data.id), ['dilute', 'concentrated']);
+});
 
 test('ordinary filter counts and entries match the existing thematic catalogues, including optional countries', () => {
   const tours = [

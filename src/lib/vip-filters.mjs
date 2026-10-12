@@ -1,7 +1,7 @@
 import { isActiveEntity } from './archive.mjs';
 import { selectVipTours } from './vip-tours.mjs';
 import { vipFilterTitle } from './vip-copy.mjs';
-import { compareToursBySalesFit } from './tour-sales-fit.mjs';
+import { compareToursForCountry } from './tour-sales-fit.mjs';
 import { INTEREST_IDS, themeIds, compareToursForInterest } from './interest-model.mjs';
 
 const dataOf = (entry) => entry?.data ?? entry;
@@ -23,8 +23,8 @@ export function buildVipFilterIndex(tours, countries, themes) {
     const countryTours = country ? selected.filter((tour) => hasCountry(tour, dataOf(country).id)) : selected;
     for (const theme of [undefined, ...activeThemes]) {
       const entries = theme
-        ? countryTours.filter((tour) => themeIds(tour).includes(dataOf(theme).id)).sort(compareToursForInterest(dataOf(theme).id))
-        : country ? [...countryTours].sort(compareToursBySalesFit) : [...countryTours];
+        ? countryTours.filter((tour) => themeIds(tour).includes(dataOf(theme).id)).sort(compareToursForInterest(dataOf(theme).id, country ? dataOf(country).id : undefined))
+        : country ? [...countryTours].sort(compareToursForCountry(dataOf(country).id)) : [...countryTours];
       if (!entries.length) continue;
       const title = vipFilterTitle(country, theme);
       rows.push({ country, theme, countryId: country ? dataOf(country).id : undefined,

@@ -1,6 +1,6 @@
 import { isActiveEntity } from './archive.mjs';
 import { INTEREST_IDS, themeIds, countryMembership, compareToursForInterest } from './interest-model.mjs';
-import { compareToursBySalesFit } from './tour-sales-fit.mjs';
+import { compareToursBySalesFit, compareToursForCountry } from './tour-sales-fit.mjs';
 import { vipFilterOptions } from './vip-filters.mjs';
 
 const dataOf = (entry) => entry?.data ?? entry;
@@ -26,7 +26,9 @@ export function buildTourFilterIndex(tours, countries, themes) {
         return theme ? membership > 0 : membership === 1;
       }) : [...thematicTours];
       if (!entries.length) continue;
-      entries.sort(theme ? compareToursForInterest(dataOf(theme).id) : compareToursBySalesFit);
+      const countryId = country ? dataOf(country).id : undefined;
+      entries.sort(theme ? compareToursForInterest(dataOf(theme).id, countryId)
+        : countryId ? compareToursForCountry(countryId) : compareToursBySalesFit);
       rows.push({ country, theme, countryId: country ? dataOf(country).id : undefined,
         themeId: theme ? dataOf(theme).id : undefined, entries, count: entries.length,
         href: tourFilterPath(country, theme) });

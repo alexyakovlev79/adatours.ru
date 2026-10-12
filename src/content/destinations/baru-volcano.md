@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Вулкан Бару в Панаме, высокий горный массив с панорамами западной части страны.
 hero:
   src: /media/tours/luchshee-v-tsentralnoj-amerike/baru-volcano-place-generated-20261009-v1.webp
-  alt: Горные склоны и дальние виды вулкана Бару
+  hover: "Бару: горные склоны и облака ниже вершины"
+  alt: "Каменистая вершина вулкана Бару над зелеными долинами и облаками, Панама"
 gallery: []
 themes:
 - theme_adventure

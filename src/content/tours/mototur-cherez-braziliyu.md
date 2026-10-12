@@ -63,7 +63,8 @@ itinerary:
     **Примерное расстояние:** 350 км.'
   images:
   - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-enhanced-20261006.webp
-    alt: на фото:Парати
+    hover: "Парати: старый город у воды на фоне зеленых гор"
+    alt: "Церковь, прибрежные дома и цветные лодки в гавани Парати, Бразилия"
   - src: /media/tours/mototur-cherez-braziliyu/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: 'на фото: Сан Паулу'
 - day: 4
@@ -89,7 +90,8 @@ itinerary:
     **Примерное расстояние:** 250 км.'
   image:
     src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
-    alt: 'на фото: Рио де Жанейро'
+    hover: "Рио-де-Жанейро: ипподром и городские кварталы на фоне гор"
+    alt: "Зеленый ипподром среди кварталов Рио-де-Жанейро у гор, Бразилия"
 - day: 6
   title: Рио-де-Жанейро
   places:

@@ -11,7 +11,8 @@ searchAliases:
 - vulkan-rano-raraku
 hero:
   src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-11-generated-20261008-v1.webp
-  alt: Моаи на склонах каменоломни Рано-Рараку, остров Пасхи, Чили
+  hover: "Рано-Рараку: каменные головы моаи среди травы и скал"
+  alt: "Частично погруженные в землю моаи на травянистом склоне Рано-Рараку, остров Пасхи, Чили"
 gallery: []
 themes:
 - theme_culture

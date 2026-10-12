@@ -22,9 +22,11 @@ gallery:
   - src: /media/excursions/favela-tur/gallery-1-enhanced-20261001.webp
     alt: Вид на Рио-де-Жанейро и Корковадо
   - src: /media/excursions/favela-tur/gallery-2-enhanced-20261001.webp
-    alt: Улицы фавелы в Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: краснокирпичные дома фавелы на лесистом склоне"
+    alt: "Плотная застройка фавелы на зеленом склоне Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp
-    alt: Панорама Рио-де-Жанейро
+    hover: "Рио с высоты: залив, острова и Сахарная Голова"
+    alt: "Сахарная Голова над заливом и городскими кварталами Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/favela-tur/gallery-4-enhanced-20261001.webp
     alt: Городской пейзаж Рио-де-Жанейро
 route:

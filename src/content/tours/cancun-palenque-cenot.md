@@ -46,7 +46,8 @@ itinerary:
   text: Прибытие в аэропорт Канкуна. Трансфер в отель Omni Cancun Hotel and Villas All Inclusive.
   images:
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
-    alt: 'На фото: пляжный отдых в Мексике'
+    hover: "Канкун: пляжные зонты у прозрачного Карибского моря"
+    alt: "Пляж Канкуна с соломенными зонтами, пирсом и бирюзовой водой, Мексика"
 - day: 2
   title: Канкун - Тулум - лагуна Бакалар - Шпухиль
   places:
@@ -125,7 +126,8 @@ itinerary:
     Размещение в отеле 4*.
   images:
   - src: /media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Ушмаль
+    hover: "Ушмаль с высоты: древний комплекс майя в окружении джунглей"
+    alt: "Каменные пирамиды и дворцовые руины Ушмаля среди зеленого леса, Мексика"
 - day: 6
   title: Чичен-Ица - сенот Ик-Киль - Канкун / Ривьера-Майя
   places:

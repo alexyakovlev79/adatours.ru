@@ -14,7 +14,8 @@ lead: Поездка на джипе по Росинье в Рио-де-Жане
   гидом и индивидуальный вариант с русскоговорящим гидом.
 hero:
   src: /media/excursions/favela-tur/gallery-2-enhanced-20261001.webp
-  alt: Улицы фавелы в Рио-де-Жанейро
+  hover: "Рио-де-Жанейро: краснокирпичные дома фавелы на лесистом склоне"
+  alt: "Плотная застройка фавелы на зеленом склоне Рио-де-Жанейро, Бразилия"
 gallery: []
 sourceSnapshot: https://docs.google.com/document/d/1qkPpWu99FABWC0lOUv80QsAPHJGIahUG/edit
 updatedAt: '2026-10-09'

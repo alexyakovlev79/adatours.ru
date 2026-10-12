@@ -27,7 +27,8 @@ gallery:
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-3-enhanced-20261001.webp
     alt: Архитектура Кито
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
-    alt: Вид на Кито
+    hover: "Кито в сумерках: мокрая площадь и фонтан под розовым небом"
+    alt: "Площадь Кито с фонтаном и вечерними огнями на фоне облачного склона, Эквадор"
 route:
   - Кито
   - Линия экватора

@@ -78,7 +78,8 @@ itinerary:
       После экскурсии возвращение в гостиницу.
     images:
       - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp
-        alt: "Буэнос-Айрес, Аргентина"
+        hover: "Буэнос-Айрес: широкий проспект и высокие дома в солнечный день"
+        alt: "Городской перекресток и фасады зданий в Буэнос-Айресе, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2
     title: "Ранчо гаучо «Сусана» и вечер танго"
@@ -291,7 +292,8 @@ itinerary:
       Возвращение в гостиницу.
     images:
       - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
-        alt: "Сантьяго-де-Чили"
+        hover: "Сантьяго: городское движение у стеклянных высоток"
+        alt: "Автомобили на улице среди высотных зданий Сантьяго, Чили"
         intendedSlot: "itinerary:day-6"
   - day: 7
     title: "Винья-дель-Мар и Вальпараисо"
@@ -399,7 +401,8 @@ itinerary:
       В назначенное время трансфер в аэропорт для международного перелета.
     images:
       - src: /media/tours/luchshee-brazilii-argentiny-i-chili/itinerary-day-10-images.1-enhanced-20261006.webp
-        alt: "Сантьяго-де-Чили"
+        hover: "Сантьяго: стеклянные башни на фоне снежных гор"
+        alt: "Высотные здания Сантьяго под заснеженными вершинами Анд, Чили"
         intendedSlot: "itinerary:day-9"
 included:
   - "8 ночей в отелях выбранной категории на базе завтраков."

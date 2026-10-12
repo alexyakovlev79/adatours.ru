@@ -17,13 +17,15 @@ currency: "USD"
 priceNote: "Стоимость — $135."
 hero:
   src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/hero-enhanced-20261006.webp
-  alt: "Джип тур на Санта-Терезу и Корковадо"
+  hover: "Корковадо: статуя и смотровая площадка над городом и океаном"
+  alt: "Христос-Искупитель над лагуной и ипподромом Рио-де-Жанейро, Бразилия"
 gallery:
   - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-1-enhanced-20261006.webp
     hover: "Рио-де-Жанейро в Бразилии: панорама города и побережья с горы"
     alt: "Город, ипподром и океан с высоты, Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
-    alt: ""
+    hover: "Рио-де-Жанейро: статуя на скалистой вершине в окружении зеленых гор"
+    alt: "Христос-Искупитель и туристические площадки среди лесистых гор Рио-де-Жанейро, Бразилия"
 route:
   - "Санта-Тереза"
   - "Корковадо"

@@ -50,7 +50,8 @@ itinerary:
     Первый день проходит без обязательной экскурсии, чтобы после перелета можно было выбрать собственный темп.'
   images:
   - src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
-    alt: 'на фото: Центр Рио'
+    hover: "Рио-де-Жанейро: исторический театр и пешеходы на площади"
+    alt: "Городской театр с зелеными куполами среди высотных зданий Рио-де-Жанейро, Бразилия"
 - day: 2
   title: Сахарная Голова и старый Рио
   places:
@@ -257,7 +258,8 @@ itinerary:
     Оставшаяся часть дня свободна.'
   images:
   - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
-    alt: 'на фото: Бузиос'
+    hover: "Бузиос: прогулочная набережная вдоль бухты с лодками"
+    alt: "Лодки в бухте и каменная набережная Бузиоса с пальмами, Бразилия"
   - src: /media/tours/luchshee-v-brazilii-rio-iguasu-buzios/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: 'на фото: Водопады Игуасу'
 - day: 7

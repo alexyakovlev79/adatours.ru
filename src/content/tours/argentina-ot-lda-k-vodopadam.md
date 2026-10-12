@@ -64,7 +64,8 @@ itinerary:
       Остаток дня свободный. Можно отдохнуть после перелета или начать знакомство с городом самостоятельно.
     images:
       - src: /media/tours/argentina-2024/itinerary-day-1-enhanced-20261006.webp
-        alt: "на фото: столица Аргентины, город Буэнос Айрес"
+        hover: "Буэнос-Айрес вечером: освещенный Конгресс и фонтан на площади"
+        alt: "Здание Конгресса Аргентины за фонтаном и монументом в Буэнос-Айресе"
         intendedSlot: "itinerary:day-1"
 
   - day: 2
@@ -81,7 +82,8 @@ itinerary:
       Вечером предусмотрено танго-шоу с ужином. В ресторане подают традиционные блюда и аргентинское вино.
     images:
       - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
-        alt: "на фото: столица Аргентины, город Буэнос Айрес"
+        hover: "Буэнос-Айрес: Каса-Росада за цветами и флагштоками"
+        alt: "Розовый фасад Каса-Росада за клумбой желтых цветов в Буэнос-Айресе, Аргентина"
         intendedSlot: "itinerary:day-2"
 
   - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
@@ -96,7 +98,8 @@ itinerary:
       Завтрак в гостинице. День свободный. При желании можно заказать дополнительную экскурсию.
     images:
       - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-3-enhanced-20261006.webp
-        alt: "на фото: столица Аргентины, город Буэнос Айрес"
+        hover: "Буэнос-Айрес: белый обелиск рядом с развевающимся аргентинским флагом"
+        alt: "Обелиск Буэнос-Айреса и флаг Аргентины на фоне городских зданий"
         intendedSlot: "itinerary:day-3"
 
   - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
@@ -185,7 +188,8 @@ itinerary:
       После экскурсии трансфер в гостиницу. За день вы увидите одну систему водопадов с 3 разных уровней: снизу, с верхней кромки и у самого мощного каскада. Поэтому аргентинская сторона дает особенно подробное представление о форме и силе Игуасу.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
-        alt: "на фото: Водопады Игуасу в Аргентине и Бразилии"
+        hover: "Игуасу: мощные потоки падают со скалистых уступов"
+        alt: "Широкие каскады Игуасу и облако водяных брызг над рекой"
         intendedSlot: "itinerary:day-7"
 
   - day: 8
@@ -225,7 +229,8 @@ itinerary:
       Завтрак в отеле. В назначенное время трансфер в аэропорт Буэнос-Айреса.
     images:
       - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
-        alt: "на фото: столица Аргентины, город Буэнос Айрес"
+        hover: "Буэнос-Айрес сверху: многополосный проспект между городскими кварталами"
+        alt: "Широкий проспект с зелеными аллеями в центре Буэнос-Айреса, Аргентина"
         intendedSlot: "itinerary:day-10"
 
 included:

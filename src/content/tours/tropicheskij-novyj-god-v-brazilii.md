@@ -54,7 +54,8 @@ itinerary:
   - src: "/media/tours/tropicheskij-novyj-god-v-brazilii/itinerary-day-2-enhanced-20261007.webp"
     alt: Шампанское и встреча Нового года в Бразилии на пляже Копакабана
   - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
-    alt: Статуя Христа Искупителя на горе Корковадо, Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: Христос-Искупитель на фоне облаков"
+    alt: "Статуя Христа-Искупителя с раскинутыми руками на фоне голубого неба, Рио-де-Жанейро, Бразилия"
 - day: 3
   title: 1 января. Сахарная Голова и центр Рио
   places:

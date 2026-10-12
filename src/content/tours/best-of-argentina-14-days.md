@@ -167,7 +167,8 @@ itinerary:
     обед входит в стоимость экскурсии. Ночь в 474 Buenos Aires 4*.'
   images:
   - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp
-    alt: 'На фото: Городской пейзаж Буэнос-Айреса'
+    hover: "Буэнос-Айрес: широкий проспект и высокие дома в солнечный день"
+    alt: "Городской перекресток и фасады зданий в Буэнос-Айресе, Аргентина"
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places:
   - Буэнос-Айрес
@@ -244,7 +245,8 @@ itinerary:
     Ushuaia 4*.'
   images:
   - src: /media/destinations/ushuajya/hero-enhanced-20261002.webp
-    alt: 'На фото: город Ушуайя в Патагонии, Аргентина'
+    hover: "Ушуайя: порт и городские крыши под горными склонами"
+    alt: "Набережная Ушуайи с причалами, лодками и цветными домами на фоне гор, Аргентина"
 - excursionRef: excursion_tierra_del_fuego_english_group
   places:
   - Ушуайя

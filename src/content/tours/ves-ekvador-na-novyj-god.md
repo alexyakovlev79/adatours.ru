@@ -474,7 +474,8 @@ itinerary:
     (завтрак)'
   images:
   - src: /media/destinations/baltra-island/hero-generated-20261009-v1.webp
-    alt: Остров Балтра
+    hover: "Балтра: сухой вулканический берег у бирюзовой воды"
+    alt: "Кактусы на каменистом берегу острова Балтра, Галапагосы, Эквадор"
 included:
 - Групповые трансферы и экскурсии
 - Проживание в отелях по программе (возможность замены отелей на подобной категории)
@@ -550,8 +551,8 @@ primaryThemes:
 - theme_wildlife
 gallery:
 - src: /media/tours/complete-ecuador-new-year/word-04-20261009-v1-enhanced-20261011-doc-v1.webp
-  hover: "Митад-дель-Мундо в Эквадоре: пара перед памятником с шаром на вершине"
-  alt: "Пара у монумента Митад-дель-Мундо, Эквадор"
+  hover: "Митад-дель-Мундо: пара на желтой линии перед монументом"
+  alt: "Пара целуется у монумента Митад-дель-Мундо на линии экватора, Эквадор"
 - src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Озеро Килотоа
 - src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1-enhanced-20261011-doc-v1.webp

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Анакена — пляж острова Пасхи с белым песком, пальмами и платформой Аху-Нау-Нау.
 hero:
   src: /media/destinations/anakena-beach/hero-generated-20261009-v3.webp
-  alt: Пляж Анакена
+  hover: "Анакена: пальмовый берег у океана и зеленых холмов"
+  alt: "Пальмы над светлым песком и бирюзовой водой пляжа Анакена, остров Пасхи, Чили"
 gallery: []
 themes:
 - theme_beach

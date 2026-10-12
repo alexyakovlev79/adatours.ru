@@ -145,7 +145,8 @@ itinerary:
   text: Полудневная обзорная экскурсия по Сан-Паулу с англоговорящим гидом. Билеты включены.
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
-    alt: 'На фото: Собор Сан-Паулу'
+    hover: "Сан-Паулу: собор с двумя башнями и круглым окном над входом"
+    alt: "Неоготический собор среди высоких пальм на площади Сан-Паулу, Бразилия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_sao_paulo_city_half_day_english

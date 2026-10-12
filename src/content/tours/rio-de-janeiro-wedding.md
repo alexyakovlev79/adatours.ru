@@ -22,7 +22,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/rio-de-janeiro-wedding/hero-enhanced-20260930.webp
-  alt: "Пляж Прайя-Вермелья в Рио-де-Жанейро"
+  hover: "Рио-де-Жанейро: песчаное побережье между океаном и городскими кварталами"
+  alt: "Широкий городской пляж Рио-де-Жанейро вдоль набережной с высотными домами, Бразилия"
 gallery: []
 featured: false
 priority: 0

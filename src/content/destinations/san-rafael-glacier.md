@@ -11,7 +11,8 @@ summary: Сан-Рафаэль встречает путешественнико
   Патагонии.
 hero:
   src: /media/tours/patagoniya-i-chilijskie-fordy/itinerary-day-03-generated-20261008-v1.webp
-  alt: Ледник Сан-Рафаэль и лагуна в Чилийской Патагонии
+  hover: "Сан-Рафаэль: голубой ледяной фронт и плавающие льдины в Патагонии"
+  alt: "Ледник Сан-Рафаэль у серо-зеленой лагуны и облачных гор, Чили"
 gallery: []
 themes:
 - theme_wildlife

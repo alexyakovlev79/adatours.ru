@@ -20,7 +20,8 @@ hero:
   alt: Винный регион Мендосы в Аргентине
 gallery:
   - src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
-    alt: Мендоса, Аргентина
+    hover: "Мендоса: указатель у виноградных рядов и горных склонов"
+    alt: "Деревянный указатель Mendoza среди виноградников на фоне гор, Аргентина"
   - src: /media/excursions/mendoza-tur-v-vinnuyu-dolinu/gallery-2-enhanced-20261006.webp
     alt: Дегустация вина на винодельне в Мендосе
 route:

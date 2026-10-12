@@ -139,7 +139,8 @@ itinerary:
     Размещение: Fiesta 3*. Питание: завтрак, обед.'
   images:
   - src: /media/destinations/baltra-island/hero-generated-20261009-v1.webp
-    alt: Остров Балтра
+    hover: "Балтра: сухой вулканический берег у бирюзовой воды"
+    alt: "Кактусы на каменистом берегу острова Балтра, Галапагосы, Эквадор"
 - excursionRef: excursion_source_ostrov_santa_krus
   places: []
 - day: 6

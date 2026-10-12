@@ -12,7 +12,8 @@ searchAliases:
 - lednik-grej
 hero:
   src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-07-generated-20261008-v1.webp
-  alt: Ледник Грей с воды, Торрес-дель-Пайне, Чили
+  hover: "Ледник Грей: ледяной фронт под пасмурными горами"
+  alt: "Голубая стена ледника Грей и льдины на темной воде озера, Чили"
 gallery: []
 themes:
 - theme_wildlife

@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_bom_zhardim/hero-generated-20261008-resumed.webp
-  alt: Бом-Жардим — Бразилия
+  hover: "Бом-Жардим: лесной водоем с видимым каменистым дном"
+  alt: "Прозрачная бирюзовая вода и деревянный настил среди леса Бом-Жардима, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

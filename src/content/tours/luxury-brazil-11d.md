@@ -52,7 +52,8 @@ itinerary:
       На вечер можно выбрать ресторан Cipriani в Belmond Copacabana Palace, отмеченный 1 звездой Мишлен. Вместо обычной встречи с гидом можно воспользоваться сервисом Fast Track Gold.
     images:
       - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
-        alt: "Статуя Христа-Искупителя и панорама Рио-де-Жанейро"
+        hover: "Рио-де-Жанейро: Христос-Искупитель на фоне облаков"
+        alt: "Статуя Христа-Искупителя с раскинутыми руками на фоне голубого неба, Рио-де-Жанейро, Бразилия"
         intendedSlot: "itinerary:day-1"
   - day: 2
     title: "Сахарная Голова с VIP-доступом"
@@ -114,7 +115,8 @@ itinerary:
       Город расположен в приграничной части страны рядом с Аргентиной и Парагваем. После океанского Рио пейзаж меняется на плотную зелень и широкие реки.
     images:
       - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
-        alt: "Водопады Игуасу"
+        hover: "Игуасу: зеленый лес окружает каскады и водяную дымку"
+        alt: "Водопады Игуасу среди густого леса, вид с каменистого берега"
         intendedSlot: "itinerary:day-5"
   - day: 6
     title: "Игуасу с бразильской стороны"
@@ -126,7 +128,8 @@ itinerary:
       
     images:
       - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
-        alt: "Бразильская сторона водопадов Игуасу"
+        hover: "Игуасу вечером: потоки воды под теплым небом"
+        alt: "Каскады Игуасу и водяная дымка над лесом в вечернем свете"
         intendedSlot: "itinerary:day-6"
   - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
     places: ["Фос-ду-Игуасу"]

@@ -19,7 +19,8 @@ hero:
   alt: "Обзорная экскурсия по Сан Пауло"
 gallery:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
-    alt: ""
+    hover: "Сан-Паулу: собор с двумя башнями и круглым окном над входом"
+    alt: "Неоготический собор среди высоких пальм на площади Сан-Паулу, Бразилия"
   - src: /media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-enhanced-20261006.webp
     alt: ""
   - src: "/media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-src-enhanced-20261007.webp"

@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns/chapada-park-generated-20261008.webp
-  alt: Национальный парк Шапада-дус-Гимарайнс - Бразилия
+  hover: "Шапада-дус-Гимарайнс: узкий поток падает с красноватого скального уступа"
+  alt: "Высокий водопад в скальном амфитеатре парка Шапада-дус-Гимарайнс, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

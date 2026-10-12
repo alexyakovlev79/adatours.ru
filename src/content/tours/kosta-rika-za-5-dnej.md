@@ -36,7 +36,8 @@ itinerary:
     **Размещение:** Barceló San Jose Palacio.
   images:
   - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Коста-Рика: остроконечная церковная башня над городской улицей"
+    alt: "Неоготическая церковь с высокой башней у зеленой площади в Коста-Рике"
 - day: 2
   title: Сан-Хосе - Тортугеро
   places:
@@ -90,7 +91,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/tours/3-shaga-po-kosta-rike/itinerary-9-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: фасад театра и пешеходы на узорчатой площади"
+    alt: "Национальный театр Коста-Рики и мозаичная площадь в Сан-Хосе"
 included:
 - услуги русскоговорящего гида;
 - трансферы по программе;
@@ -118,7 +120,8 @@ currency: USD
 priceNote: $2226
 hero:
   src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: Коста Рика за 5 дней
+  hover: "Рио-Селесте: лесной водопад перед смотровой площадкой"
+  alt: "Туристы у водопада Рио-Селесте с голубой водой в тропическом лесу, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

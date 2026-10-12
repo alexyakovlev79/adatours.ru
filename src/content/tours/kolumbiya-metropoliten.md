@@ -136,7 +136,8 @@ currency: USD
 priceNote: $1156
 hero:
   src: "/media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp"
-  alt: Колумбия Метрополитен
+  hover: "Картахена: женщины в цветных платьях с корзиной тропических фруктов"
+  alt: "Две женщины в яркой одежде, одна с корзиной фруктов на голове, Картахена, Колумбия"
 routeCountries:
 - country_colombia
 routeDestinations:

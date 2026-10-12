@@ -14,11 +14,13 @@ hero:
   alt: Айсберги у побережья Антарктиды
 gallery:
   - src: /media/countries/antarktida/gallery-1-enhanced-20261001.webp
-    alt: Экспедиционное судно в Антарктиде
+    hover: "Яхта на синей воде рядом с небольшой надувной лодкой"
+    alt: "Белая двухкорпусная яхта и желтая надувная лодка у скалистого берега"
   - src: /media/countries/antarktida/gallery-2-enhanced-20261001.webp
     alt: Ледяной пейзаж Антарктиды
   - src: /media/countries/antarktida/gallery-3-enhanced-20261001.webp
-    alt: Айсберг в водах Антарктиды
+    hover: "Антарктида: крупный айсберг среди морских волн"
+    alt: "Плоский бело-голубой айсберг в темной воде Антарктиды"
   - src: /media/countries/antarctica/feature-2-wildlife-enhanced-20261001.webp
     alt: Пингвины в Антарктиде
   - src: /media/countries/antarktida/gallery-5-enhanced-20261001.webp

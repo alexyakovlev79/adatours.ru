@@ -10,7 +10,8 @@ summary: Амбергрис-Кайе находится в 58 км к север
 searchAliases: []
 hero:
   src: /media/countries/belize/featureBands-3-enhanced-20261002.webp
-  alt: 'На фото: остров Амбергрис-Кайе, Белиз'
+  hover: "Амбергрис-Кайе: вид на море из-под соломенного навеса"
+  alt: "Пальмы и балкон прибрежного дома над бирюзовым морем Амбергрис-Кайе, Белиз"
 gallery:
 - src: /media/destinations/ambergris-kaje/gallery-1-enhanced-20261002.webp
   hover: "Амбергрис-Кайе: лодка под парусом в прозрачном бирюзовом море"

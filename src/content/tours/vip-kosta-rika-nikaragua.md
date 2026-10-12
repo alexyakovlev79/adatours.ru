@@ -174,7 +174,8 @@ itinerary:
     После экскурсии возвращение в Hotel el Silencio.
   images:
   - src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
-    alt: Рио-Селесте
+    hover: "Рио-Селесте: лесной водопад перед смотровой площадкой"
+    alt: "Туристы у водопада Рио-Селесте с голубой водой в тропическом лесу, Коста-Рика"
 - day: 5
   title: Подвесные мосты Ареналя, Sky Tram, Sky Trek и каньонинг
   places:
@@ -216,7 +217,8 @@ itinerary:
     После экскурсии возвращение в Hotel el Silencio.
   images:
   - src: /media/tours/zhemchuzhiny-kosta-riki-za-10-dnej/poas-crater-generated-20261009-v1.webp
-    alt: Кратер вулкана Поас с озером среди вулканических склонов
+    hover: "Поас: серые стены кратера вокруг светло-бирюзового озера"
+    alt: "Бирюзовое озеро и пар в широком кратере вулкана Поас, Коста-Рика"
 - day: 7
   title: Пунтаренас и частный перелет в Никарагуа
   places: []
@@ -261,7 +263,8 @@ itinerary:
     У воды можно отдохнуть, поплавать, покататься на каяке или заняться серфингом.
   images:
   - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-regenerated-20261011-v2.webp
-    alt: 'на фото: Гранада, Никарагуа'
+    hover: "Гранада: желтые и красные дома вдоль улицы в вечернем свете"
+    alt: "Тихая мощеная улица Гранады с цветными фасадами и церковной башней, Никарагуа"
 - day: 9
   title: Отдых у лагуны-де-Апойо
   places:

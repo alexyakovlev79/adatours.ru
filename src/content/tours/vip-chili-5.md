@@ -78,7 +78,8 @@ itinerary:
     Остаток дня свободный. После перелета можно отдохнуть или самостоятельно выйти на прогулку по городу.
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+    hover: "Сантьяго: городские башни у подножия снежных Анд"
+    alt: "Панорама Сантьяго с высотными зданиями на фоне заснеженных Анд, Чили"
 - day: 2
   title: Сантьяго и долина Майпо
   places:
@@ -174,7 +175,8 @@ itinerary:
     Включены входные билеты в парк, навигация к леднику и обед. Вечером возвращение в отель.
   images:
   - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-10-enhanced-20261006.webp
-    alt: Торрес-дель-Пайне
+    hover: "Торрес-дель-Пайне: горные пики над озером и травянистым берегом"
+    alt: "Зубчатые вершины Торрес-дель-Пайне над синим озером, Чили"
 - excursionRef: excursion_chile_grey_glacier_boat_paine_full_day
   places:
   - Пуэрто Наталес & Торрес дель Пайне

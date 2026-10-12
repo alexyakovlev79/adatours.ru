@@ -255,7 +255,8 @@ currency: USD
 priceNote: $3001
 hero:
   src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
-  alt: 'Коста Рика: Отдых на пляже и в горах'
+  hover: "Рио-Селесте: лесной водопад перед смотровой площадкой"
+  alt: "Туристы у водопада Рио-Селесте с голубой водой в тропическом лесу, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

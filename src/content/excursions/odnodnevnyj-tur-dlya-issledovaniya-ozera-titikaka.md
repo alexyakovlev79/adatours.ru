@@ -23,7 +23,8 @@ gallery:
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp"
     alt: "на фото: озеро Титикака и  плавающие острова Урос в Перу"
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
-    alt: "на фото: озеро Титикака и  плавающие острова Урос в Перу"
+    hover: "Острова Урос: жители в цветной одежде среди тростниковых построек"
+    alt: "Женщины в ярких юбках на тростниковом острове Урос, озеро Титикака, Перу"
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: озеро Титикака и девочки перуанки с ламой"
 route:

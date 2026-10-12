@@ -36,7 +36,8 @@ itinerary:
     Ночь в **Best Western Biltmore Plaza**.'
   images:
   - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
-    alt: Белиз-сити
+    hover: "Белиз-Сити: канал ведет через городские кварталы к морю"
+    alt: "Белиз-Сити с высоты: городской канал, низкие дома и Карибское море"
 - day: 2
   title: Зоопарк Белиза и Шунаантуньич
   places:
@@ -109,7 +110,8 @@ itinerary:
     **Питание:** завтрак.'
   images:
   - src: /media/destinations/hol-chan-marine-reserve/hero-generated-20261008.webp
-    alt: Коралловый риф и акула-нянька в морском заповеднике Хол-Чан, Белиз
+    hover: "Хол-Чан: акула у кораллов в прозрачной бирюзовой воде"
+    alt: "Акула-нянька над песчаным дном у кораллового рифа Хол-Чан, Белиз"
 - day: 6
   title: Сан-Педро
   places:
@@ -150,7 +152,8 @@ itinerary:
     **Питание:** завтрак.'
   images:
   - src: /media/countries/belize/featureBands-3-enhanced-20261002.webp
-    alt: Амбергрис-Кайе
+    hover: "Амбергрис-Кайе: вид на море из-под соломенного навеса"
+    alt: "Пальмы и балкон прибрежного дома над бирюзовым морем Амбергрис-Кайе, Белиз"
 included:
 - 1 ночь в Best Western Biltmore Plaza в стандартном номере, налоги и завтрак включены.
 - Экскурсия в Зоопарк Белиза и к руинам Шунаантуньич, с обедом и входными билетами.

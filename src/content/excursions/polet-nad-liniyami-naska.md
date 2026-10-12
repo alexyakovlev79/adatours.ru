@@ -14,7 +14,8 @@ duration: 35 минут
 language: []
 hero:
   src: /media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp
-  alt: Линии Наска, Перу
+  hover: "Наска: самолет над светлыми линиями рисунка на сухой равнине"
+  alt: "Небольшой самолет над геоглифом птицы в пустыне Наска, Перу"
 gallery: []
 route:
   - пустыня Наска

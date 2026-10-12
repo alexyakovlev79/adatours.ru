@@ -92,7 +92,8 @@ itinerary:
     Вход в заповедник, 150 боливианос, оплачивается отдельно.'
   images:
   - src: /media/destinations/laguna-verde/hero-generated-20261008.webp
-    alt: "Лагуна Верде"
+    hover: "Лагуна Верде: бирюзовое озеро под конической вершиной Ликанкабура"
+    alt: "Зеленая вода Лагуны Верде у вулкана Ликанкабур, Боливия"
 - day: 2
   title: Лагуны - Каменное Дерево - вулкан Оллаге
   places:
@@ -116,7 +117,8 @@ itinerary:
     Ночь предусмотрена в отеле, построенном из соли.'
   images:
   - src: /media/destinations/destination_bolivia_laguna_honda/hero-generated-20261008.webp
-    alt: "Laguna Honda in the southwestern Bolivian Altiplano — Bolivia"
+    hover: "Лагуна Хонда: высокогорное озеро с птицами у берега"
+    alt: "Прозрачная вода Лагуны Хонда у светлого берега и сухих гор, Боливия"
 - day: 3
   title: Рассвет на солончаке Уюни - Кольчани - остров Инкауаси - Уюни
   places:

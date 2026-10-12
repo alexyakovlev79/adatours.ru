@@ -48,7 +48,8 @@ itinerary:
     Размещение и отдых после перелета.
   images:
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-2-enhanced-20261006.webp"
-    alt: 'На фото: город Лима, Перу'
+    hover: "Лима: дорога и пляж у подножия застроенного обрыва"
+    alt: "Прибрежные скалы Лимы с высотными домами над океаном, Перу"
 - day: 2
   title: 'Лима: исторический центр, Мирафлорес и музей Ларко'
   places:
@@ -110,7 +111,8 @@ itinerary:
     Затем спуск на автобусе в поселок, обед и возвращение на железнодорожную станцию. Обратная дорога на поезде снова проходит через горные долины. По прибытии трансфер в гостиницу в Куско.
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-14-enhanced-20261006.webp
-    alt: 'На фото: город инков Мачу Пикчу в Перу'
+    hover: "Мачу-Пикчу: солнечный вид на древний город среди гор"
+    alt: "Каменные террасы и руины Мачу-Пикчу под крутыми зелеными вершинами, Перу"
 - day: 5
   title: Куско - Пуно
   places:
@@ -152,7 +154,8 @@ itinerary:
     В Лиме вас встретит русскоговорящий гид и отвезет в отель.
   images:
   - src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp
-    alt: 'На фото: Озеро Титикака и плавучие острова Урос  в Перу'
+    hover: "Острова Урос: жители у причала и тростниковой лодки"
+    alt: "Тростниковые дома и лодка у плавучего острова Урос, озеро Титикака, Перу"
 - day: 7
   title: Лима - Фоз-де-Игуасу
   places:
@@ -191,7 +194,8 @@ itinerary:
     Сам полет длится около 10 минут.
   images:
   - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-11-enhanced-20261006.webp
-    alt: 'НА фото: водопады Фоз Игуасу в Аргентине и Бразилии'
+    hover: "Игуасу вблизи: смотровая площадка перед стеной падающей воды"
+    alt: "Туристы на деревянных мостках у широких потоков Игуасу"
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
 - excursionRef: excursion_source_makuko_safari
@@ -252,7 +256,8 @@ itinerary:
     Размещение и отдых.
   images:
   - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
-    alt: 'На фото: курорт Бузиос в Бразилии и пляжный отдых'
+    hover: "Бузиос: прогулочная набережная вдоль бухты с лодками"
+    alt: "Лодки в бухте и каменная набережная Бузиоса с пальмами, Бразилия"
 - day: 12
   title: Бузиос
   places:

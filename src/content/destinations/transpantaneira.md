@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-2-enhanced-20261006.webp
-  alt: Белые и чёрно-белые птицы над водой у заросшего берега в Пантанале
+  hover: "Пантанал: птицы взлетают над водоемом"
+  alt: "Стая белых и розовых птиц над водой и зеленым берегом Пантанала, Бразилия"
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_transpantaneira.md
 updatedAt: '2026-10-10'

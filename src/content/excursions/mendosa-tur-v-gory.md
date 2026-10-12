@@ -19,7 +19,8 @@ currency: USD
 priceNote: "Стоимость — $150 на человека. Для группы больше 1 человека возможна скидка; размер в исходной программе не указан."
 hero:
   src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
-  alt: Горный маршрут из Мендосы к Андам
+  hover: "Мендоса: указатель у виноградных рядов и горных склонов"
+  alt: "Деревянный указатель Mendoza среди виноградников на фоне гор, Аргентина"
 gallery:
   - src: /media/excursions/mendosa-tur-v-gory/gallery-3-enhanced-20261001.webp
     alt: Горный пейзаж в окрестностях Мендосы

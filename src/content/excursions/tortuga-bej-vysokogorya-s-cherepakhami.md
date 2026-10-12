@@ -27,7 +27,8 @@ gallery:
   - src: "/media/excursions/tortuga-bej-vysokogorya-s-cherepakhami/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: лавовые туннели,  Галапагосские острова в Эквадоре"
   - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
-    alt: "на фото: Черепахи на Галапагосских  островах"
+    hover: "Галапагосы: большая черепаха на лесной дорожке"
+    alt: "Гигантская черепаха на грунтовой тропе среди деревьев, Галапагосы, Эквадор"
 route:
   - "Кито (или Гуаякиль)"
   - "Галапагосские острова"

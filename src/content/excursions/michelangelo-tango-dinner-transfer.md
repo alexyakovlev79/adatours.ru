@@ -14,7 +14,8 @@ language: []
 lead: Вечер танго в Michelangelo в Буэнос-Айресе. Включены билеты, ужин и трансферы.
 hero:
   src: /media/excursions/tango-shou-s-uzhinom-i-transferom-v-buenos-ajrese/hero-enhanced-20261006.webp
-  alt: Танго-шоу в Буэнос-Айресе
+  hover: "Танго в Буэнос-Айресе: танцевальная пара на освещенной сцене"
+  alt: "Пара танцует танго на сцене: мужчина поддерживает партнершу в голубом платье, Буэнос-Айрес, Аргентина"
 gallery: []
 route:
 - Буэнос-Айрес

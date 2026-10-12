@@ -43,7 +43,8 @@ itinerary:
     Ночь в отеле Barceló San Jose Palacio.
   images:
   - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Коста-Рика: остроконечная церковная башня над городской улицей"
+    alt: "Неоготическая церковь с высокой башней у зеленой площади в Коста-Рике"
 - day: 2
   title: Кофейная плантация Дока - вулкан Поас - Ла-Пас
   places:
@@ -62,7 +63,8 @@ itinerary:
     Питание: завтрак, обед.
   images:
   - src: /media/tours/zhemchuzhiny-kosta-riki-za-10-dnej/poas-crater-generated-20261009-v1.webp
-    alt: Кратер вулкана Поас с озером среди вулканических склонов
+    hover: "Поас: серые стены кратера вокруг светло-бирюзового озера"
+    alt: "Бирюзовое озеро и пар в широком кратере вулкана Поас, Коста-Рика"
 - day: 3
   title: Тортугеро
   places:

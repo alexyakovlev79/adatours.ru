@@ -198,9 +198,9 @@ itinerary:
     Master Suite. Завтрак входит в размещение (BB).'
   images:
   - src: /media/tours/chile-argentina-private-grand-tour-17-days/millahue-generated-20261011-v1.webp
-    alt: Виноградники и пологие холмы долины Мильяуэ — иллюстрация
+    alt: "Ряды виноградников на пологих холмах долины Мильяуэ в вечернем свете, Чили"
     status: approved
-    hover: Виноградники и пологие холмы долины Мильяуэ — иллюстрация
+    hover: "Мильяуэ: виноградные склоны у гор на закате"
 - excursionRef: excursion_chile_private_wine_day_millahue
   places: []
 - day: 3
@@ -237,7 +237,8 @@ itinerary:
     острова. Ночь в Nayara Hangaroa, Kainga. Завтрак входит в размещение (BB).'
   images:
   - src: /media/destinations/anakena-beach/hero-generated-20261009-v3.webp
-    alt: Пляж Анакена
+    hover: "Анакена: пальмовый берег у океана и зеленых холмов"
+    alt: "Пальмы над светлым песком и бирюзовой водой пляжа Анакена, остров Пасхи, Чили"
 - excursionRef: excursion_easter_island_anakena_rano_raraku
   places: []
 - day: 5
@@ -339,7 +340,8 @@ itinerary:
     и стоимость подтверждаются отдельно. Ночь в EOLO Patagonia, Corner Room. Завтрак входит в размещение (BB).
   images:
   - src: /media/destinations/destination_argentina_lednik_perito_moreno/original-01.jpg
-    alt: Ледник Перито-Морено
+    hover: "Перито-Морено: голубой ледяной фронт под туманными горами"
+    alt: "Ледник Перито-Морено и смотровая площадка над водой в пасмурную погоду, Аргентина"
 - excursionRef: excursion_argentina_perito_moreno_private_full_day
   places: []
 - day: 11
@@ -352,7 +354,8 @@ itinerary:
     знакомство с винным регионом Аргентины. Ночь в Entre Cielos, Superior Room. Завтрак входит в размещение (BB).
   images:
   - src: /media/destinations/mendoza/hero-enhanced-20260930.webp
-    alt: Мендоса и винный регион Аргентины
+    hover: "Анды у Мендосы: тропа ведет в долину между сухими горными склонами"
+    alt: "Горная долина с каменистыми склонами и снежной вершиной в районе Мендосы, Аргентина"
 - day: 12
   title: Мендоса | Долина Лужан
   places:

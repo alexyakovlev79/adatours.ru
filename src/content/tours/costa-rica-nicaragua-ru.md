@@ -68,7 +68,8 @@ itinerary:
     \ Barceló San Jose Palacio.  \n**Питание:** завтрак, обед."
   images:
   - src: /media/tours/zhemchuzhiny-kosta-riki-za-10-dnej/poas-crater-generated-20261009-v1.webp
-    alt: Кратер вулкана Поас с озером среди вулканических склонов
+    hover: "Поас: серые стены кратера вокруг светло-бирюзового озера"
+    alt: "Бирюзовое озеро и пар в широком кратере вулкана Поас, Коста-Рика"
 - day: 3
   title: Сан-Хосе - Тортугеро
   places:
@@ -81,7 +82,8 @@ itinerary:
     \ в отель.\n\n**Ночь:** Pachira Lodge Tortuguero.  \n**Питание:** завтрак, обед, ужин."
   images:
   - src: /media/tours/costa-rica/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: оживленный перекресток у зеленой площади"
+    alt: "Городская площадь с пальмами и красными такси в Сан-Хосе, Коста-Рика"
 - day: 4
   title: Тортугеро - Ареналь
   places:
@@ -131,7 +133,8 @@ itinerary:
     \  \n**Питание:** завтрак."
   images:
   - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-regenerated-20261011-v2.webp
-    alt: Гранада
+    hover: "Гранада: желтые и красные дома вдоль улицы в вечернем свете"
+    alt: "Тихая мощеная улица Гранады с цветными фасадами и церковной башней, Никарагуа"
 - day: 8
   title: Гранада - Масая
   places:
@@ -197,7 +200,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/tours/3-shaga-po-kosta-rike/itinerary-9-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: фасад театра и пешеходы на узорчатой площади"
+    alt: "Национальный театр Коста-Рики и мозаичная площадь в Сан-Хосе"
 included:
 - русскоговорящий гид;
 - трансферы;

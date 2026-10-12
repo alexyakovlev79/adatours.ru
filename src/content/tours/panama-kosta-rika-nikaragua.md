@@ -80,7 +80,8 @@ itinerary:
     \ аэропорта Альбрук в город Дэвид, столицу провинции Чирики.\n\nНочь в отеле La Casa de La Abuela.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/panama-2024/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Национальный парк Чагрес
+    hover: "Чагрес: лодки у каменистого берега в тропическом лесу"
+    alt: "Люди в узких деревянных лодках на реке среди леса, парк Чагрес, Панама"
 - day: 4
   title: Вулкан Бару
   places:
@@ -90,7 +91,8 @@ itinerary:
     Ночь в отеле La Casa de La Abuela.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/luchshee-v-tsentralnoj-amerike/baru-volcano-place-generated-20261009-v1.webp
-    alt: Горные склоны и дальние виды вулкана Бару
+    hover: "Бару: горные склоны и облака ниже вершины"
+    alt: "Каменистая вершина вулкана Бару над зелеными долинами и облаками, Панама"
 - day: 5
   title: Национальный морской парк Чирикского залива
   places:

@@ -87,8 +87,8 @@ currency: USD
 priceNote: '$4225 с человека**. Минимальная группа: 4 человека.'
 hero:
   src: "/media/destinations/manaus-amazonia/hero-enhanced-20261001.webp"
-  hover: "Амазония в Бразилии"
-  alt: "Амазония в Бразилии"
+  hover: "Амазония в Бразилии: речная излучина среди тропического леса"
+  alt: "Извилистая река среди густого леса Амазонии, Бразилия, вид сверху"
 routeCountries:
 - country_brazil
 routeDestinations:

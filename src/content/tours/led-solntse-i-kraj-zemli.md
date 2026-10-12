@@ -44,7 +44,8 @@ itinerary:
     После размещения оставшаяся часть дня свободна.
   images:
   - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
-    alt: Буэнос-Айрес
+    hover: "Буэнос-Айрес: башни и их отражения у набережной"
+    alt: "Высотные здания у воды в Буэнос-Айресе, Аргентина"
 - day: 2
   title: Буэнос-Айрес
   places:
@@ -216,7 +217,8 @@ itinerary:
     По прибытии в Рио - трансфер в отель.
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
-    alt: Рио-де-Жанейро
+    hover: "Рио с высоты: Христос-Искупитель над городом и прибрежными горами"
+    alt: "Статуя Христа-Искупителя над Рио-де-Жанейро, лагуной и океаном, Бразилия"
 - day: 10
   title: Рио-де-Жанейро и Сахарная Голова
   places:
@@ -239,7 +241,8 @@ itinerary:
     После экскурсии возвращение в отель.
   images:
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
-    alt: Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: ипподром и городские кварталы на фоне гор"
+    alt: "Зеленый ипподром среди кварталов Рио-де-Жанейро у гор, Бразилия"
 - day: 11
   title: Рио-де-Жанейро и Корковадо
   places:
@@ -262,7 +265,8 @@ itinerary:
     После экскурсии возвращение в отель.
   images:
   - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
-    alt: Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: яркие ступени лестницы Селарона между красными стенами"
+    alt: "Лестница Селарона с разноцветной плиткой в Рио-де-Жанейро, Бразилия"
 - day: 12
   title: Рио-де-Жанейро
   places:
@@ -301,7 +305,8 @@ currency: USD
 priceNote: $4175
 hero:
   src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
-  alt: 'на фото: Эль Калафате'
+  hover: "Аргентинская Патагония: озерная бухта среди леса и гор"
+  alt: "Лесистые берега голубого озера на фоне гор Патагонии, Аргентина"
 routeCountries:
 - country_argentina
 - country_brazil

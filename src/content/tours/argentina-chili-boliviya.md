@@ -150,7 +150,8 @@ itinerary:
     Размещение: Desert Hotel (ланч-бокс, ужин).'
   images:
   - src: /media/destinations/calama/hero-generated-20261008.webp
-    alt: Калама
+    hover: "Калама: зеленая площадь среди городской застройки и пустынных склонов"
+    alt: "Площадь с пальмами и церковью в Каламе на фоне сухих гор, Чили"
 - day: 10
   title: Уюни
   places: []

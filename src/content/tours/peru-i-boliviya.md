@@ -90,7 +90,8 @@ itinerary:
     **Питание:** обед включен.
   images:
   - src: "/media/tours/peru-i-boliviya/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: Куско
+    hover: "Куско: церковный фасад, фонари и прохожие на площади"
+    alt: "Каменная церковь с двумя башнями у площади со скамейками в Куско, Перу"
 - day: 4
   title: Священная долина инков
   places:

@@ -44,7 +44,8 @@ itinerary:
     Вечер свободный. Ночь в отеле.
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+    hover: "Сантьяго: городские башни у подножия снежных Анд"
+    alt: "Панорама Сантьяго с высотными зданиями на фоне заснеженных Анд, Чили"
 - day: 2
   title: Вальпараисо и Винья-дель-Мар
   places:
@@ -86,7 +87,8 @@ itinerary:
     hover: 'Атакама в Чили: женщина на скальном уступе под закатным небом'
     alt: Женщина на скальном уступе Атакамы под закатным небом, Чили
   - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+    hover: "Сантьяго: городское движение у стеклянных высоток"
+    alt: "Автомобили на улице среди высотных зданий Сантьяго, Чили"
 - excursionRef: excursion_chile_atacama_astronomy_tour
   places: []
 - day: 4
@@ -108,7 +110,8 @@ itinerary:
     Возвращение в Сан-Педро-де-Атакама. Ночь в отеле.
   images:
   - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/itinerary-day-4-enhanced-20261006.webp
-    alt: Сан-Педро-де-Атакама
+    hover: "Атакама: фламинго и горы отражаются в спокойной воде"
+    alt: "Розовый фламинго у высокогорной лагуны на фоне сухих гор Атакамы, Чили"
 - day: 5
   title: Гейзеры Татио - Мачука - Сантьяго
   places:
@@ -125,7 +128,8 @@ itinerary:
     После экскурсии трансфер в аэропорт и перелет в Сантьяго. По прибытии трансфер в отель, размещение и ночь в Сантьяго.
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
-    alt: Сантьяго-де-Чили
+    hover: "Сантьяго: историческая архитектура рядом со стеклянными зданиями и башней"
+    alt: "Старинное угловое здание и телебашня среди современной застройки Сантьяго, Чили"
 - day: 6
   title: Сантьяго
   places:

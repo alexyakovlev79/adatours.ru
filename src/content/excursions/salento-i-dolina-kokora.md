@@ -28,7 +28,8 @@ gallery:
   - src: "/media/excursions/salento-i-dolina-kokora/gallery-2-src-enhanced-20261007.webp"
     alt: Пейзаж долины Кокора
   - src: "/media/destinations/pereira/hero-src-enhanced-20261007.webp"
-    alt: Долина Кокора и облачный лес
+    hover: "Долина Кокора: тонкие пальмы над травянистыми склонами"
+    alt: "Высокие пальмы долины Кокора над зелеными пастбищами, Колумбия"
   - src: "/media/excursions/salento-i-dolina-kokora/gallery-4-src-enhanced-20261007.webp"
     alt: Экологическая тропа в долине Кокора
   - src: /media/excursions/salento-i-dolina-kokora/gallery-5-src-enhanced-20261007.webp

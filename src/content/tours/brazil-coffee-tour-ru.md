@@ -94,7 +94,8 @@ itinerary:
     Продолжительность полета около 8-9 минут.'
   images:
   - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-6-enhanced-20261006.webp
-    alt: Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: яркие ступени лестницы Селарона между красными стенами"
+    alt: "Лестница Селарона с разноцветной плиткой в Рио-де-Жанейро, Бразилия"
 - excursionRef: excursion_source_botanical_garden
   places: []
 - excursionRef: excursion_rio_itacuruca_tropical_islands

@@ -246,7 +246,8 @@ priceNote: Стоимость и даты путешествия по запро
 dates: []
 hero:
   src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
-  alt: Мачу-Пикчу, Перу
+  hover: "Мачу-Пикчу: древние террасы над глубокой горной долиной"
+  alt: "Каменные постройки и террасы Мачу-Пикчу среди гор и облаков, Перу"
 gallery: []
 featured: false
 lead: За 33 дня вы пройдете от перуанской Амазонии до чилийской Патагонии. Круиз Aqua Nera, поезда Hiram Bingham
@@ -778,7 +779,8 @@ itinerary:
     в лодж.
   images:
   - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1-enhanced-20261011-next50-v1.webp
-    alt: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
+    hover: "Чилийская Патагония: поселок у бирюзового озера Хенераль-Каррера"
+    alt: "Пуэрто-Рио-Транкило на берегу озера Хенераль-Каррера среди гор, Чили"
 - excursionRef: excursion_general_carrera_marble_caves_full_day
   places:
   - Мраморные пещеры

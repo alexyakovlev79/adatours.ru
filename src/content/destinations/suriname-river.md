@@ -10,7 +10,8 @@ summary: Река Суринам связывает столицу с лесны
   поселения, тропическую растительность и жизнь на реке.
 hero:
   src: /media/destinations/suriname-reka-surinam/hero-generated-20261009-v2.webp
-  alt: Река Суринам
+  hover: "Река Суринам: лодка у зеленого берега в вечернем свете"
+  alt: "Деревянная лодка на широкой реке Суринам у тропического леса"
 gallery: []
 themes:
 - theme_wildlife

@@ -243,7 +243,8 @@ itinerary:
     Размещение: Mandarin Oriental, Club Room, завтрак (BB)'
   images:
   - src: /media/destinations/santyago-de-chili/hero-enhanced-20261006.webp
-    alt: 'На фото: столица Чили. город Сантьяго-де-Чили'
+    hover: "Сантьяго на закате: огни города у темных гор"
+    alt: "Огни Сантьяго под красным закатным небом и горными силуэтами, Чили"
 - day: 7
   title: Сантьяго — сити-тур
   places:
@@ -373,8 +374,8 @@ itinerary:
     Размещение: Mallin Colorado Ecolodge или аналог, Cabana Coigüe, завтрак (BB)'
   images:
   - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1-enhanced-20261011-next50-v1.webp
-    alt: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
-    hover: Пуэрто-Рио-Транкило у бирюзовой воды озера Хенераль-Каррера
+    alt: "Пуэрто-Рио-Транкило на берегу озера Хенераль-Каррера среди гор, Чили"
+    hover: "Чилийская Патагония: поселок у бирюзового озера Хенераль-Каррера"
     status: approved
 - excursionRef: excursion_san_rafael_exploradores_boat_full_day
   places:

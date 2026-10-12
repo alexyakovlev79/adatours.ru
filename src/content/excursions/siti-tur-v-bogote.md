@@ -31,7 +31,8 @@ gallery:
   - src: /media/excursions/siti-tur-v-bogote/gallery-3-src-enhanced-20261008.webp
     alt: Музеи Боготы
   - src: "/media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp"
-    alt: Колумбия
+    hover: "Картахена: женщины в цветных платьях с корзиной тропических фруктов"
+    alt: "Две женщины в яркой одежде, одна с корзиной фруктов на голове, Картахена, Колумбия"
 route:
   - Богота
   - Ла-Канделария

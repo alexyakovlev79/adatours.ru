@@ -84,7 +84,8 @@ itinerary:
     район граффити. После экскурсии трансфер в Рибейран-Прету и размещение в отеле.
   images:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
-    alt: 'На фото: Собор Сан-Паулу'
+    hover: "Сан-Паулу: собор с двумя башнями и круглым окном над входом"
+    alt: "Неоготический собор среди высоких пальм на площади Сан-Паулу, Бразилия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_sao_paulo_historic_modern_graffiti
@@ -143,7 +144,8 @@ itinerary:
     в Манаусе проходят в группе с англоговорящим гидом; формат контакта с животными подтверждается при бронировании.'
   images:
   - src: /media/destinations/manaus-amazonia/hero-enhanced-20261001.webp
-    alt: Амазония в Бразилии
+    hover: "Амазония в Бразилии: речная излучина среди тропического леса"
+    alt: "Извилистая река среди густого леса Амазонии, Бразилия, вид сверху"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_amazon_boat_caboclo_jungle_dolphins

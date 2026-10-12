@@ -23,7 +23,8 @@ hero:
   alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
 gallery:
   - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
-    alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
+    hover: "Галапагосы: большая черепаха на лесной дорожке"
+    alt: "Гигантская черепаха на грунтовой тропе среди деревьев, Галапагосы, Эквадор"
   - src: /media/excursions/ostrov-santa-krus/gallery-1-enhanced-20261001.webp
     alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
   - src: /media/excursions/ostrov-santa-krus/gallery-2-enhanced-20261001.webp

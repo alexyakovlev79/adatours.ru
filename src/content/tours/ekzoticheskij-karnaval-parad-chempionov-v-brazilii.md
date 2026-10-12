@@ -75,7 +75,8 @@ itinerary:
     На вечер можно выбрать ресторан морепродуктов Marius, ориентировочная стоимость — $130 с человека.
   images:
   - src: /media/tours/brazil-gems-14d/itinerary/day-01-enhanced-20260930.webp
-    alt: 'на фото: Панорама Рио с Корковадо'
+    hover: "Рио с высоты: Христос-Искупитель над городом и прибрежными горами"
+    alt: "Статуя Христа-Искупителя над Рио-де-Жанейро, лагуной и океаном, Бразилия"
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
 - day: 4
@@ -184,7 +185,8 @@ itinerary:
     Стоимость - $100 нетто с человека.
   images:
   - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
-    alt: 'на фото: Бузиос'
+    hover: "Бузиос: зеленый берег и парусная лодка в прозрачной бухте"
+    alt: "Лодка в бирюзовой бухте Бузиоса и лестница к воде, Бразилия"
 - excursionRef: excursion_source_vstrecha_rek
   places: []
 - excursionRef: excursion_source_plavanie_s_rozovymi_del_finami
@@ -238,7 +240,8 @@ currency: USD
 priceNote: $4475
 hero:
   src: "/media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/hero-enhanced-20261007.webp"
-  alt: 'на фото: Карнавал в Рио'
+  hover: "Карнавал в Рио-де-Жанейро: разноцветные юбки и пышные головные уборы"
+  alt: "Участницы карнавала в Рио в ярких костюмах с перьями, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -16,7 +16,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_viskondi_de_maua/hero-generated-20261008-resumed.webp
-  alt: Висконди-де-Мауа — Бразилия
+  hover: "Висконди-де-Мауа: горный ручей впадает в бирюзовый водоем"
+  alt: "Прозрачный природный бассейн среди камней и леса Висконди-де-Мауа, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

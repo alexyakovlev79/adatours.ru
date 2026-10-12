@@ -47,7 +47,8 @@ itinerary:
     Возвращение в отель.
   images:
   - src: "/media/tours/fantasticheskaya-kolumbiya/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: столица Колумбии, город Богота'
+    hover: "Богота сверху: городские кварталы и круглая арена у гор"
+    alt: "Панорама Боготы с высотными зданиями и круглой ареной у зеленого склона, Колумбия"
 - day: 2
   title: Богота - Ла-Макарена
   places:

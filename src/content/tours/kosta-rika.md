@@ -129,7 +129,8 @@ itinerary:
     Включены завтрак и обед.
   images:
   - src: /media/tours/costa-rica/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: оживленный перекресток у зеленой площади"
+    alt: "Городская площадь с пальмами и красными такси в Сан-Хосе, Коста-Рика"
 - day: 5
   title: Сан-Хосе
   places:

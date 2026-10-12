@@ -44,7 +44,8 @@ itinerary:
     Размещение в Presidente Intercontinental Polanco 5*, номер Polanco View. Всего в Мехико запланировано 3 ночи.
   images:
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Мехико
+    hover: "Мехико: Дворец изящных искусств у городских улиц"
+    alt: "Дворец изящных искусств с цветным куполом в центре Мехико, Мексика"
 - day: 2
   title: Мехико-Сити - Сочимилько - гастрономический тур по Койоакану
   places:

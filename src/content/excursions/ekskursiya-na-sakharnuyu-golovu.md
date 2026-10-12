@@ -17,14 +17,16 @@ currency: USD
 priceNote: "Основная стоимость — $394. В source отдельно указана стоимость $680 на человека при группе из 2 человек."
 hero:
   src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/hero-enhanced-20261001.webp
-  alt: Вид на Сахарную Голову в Рио-де-Жанейро
+  hover: "Подъем к Сахарной Голове: канатная дорога над бухтами и городом"
+  alt: "Кабина канатной дороги над зелеными вершинами и побережьем Рио-де-Жанейро, Бразилия"
 gallery:
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-1-enhanced-20261001.webp
     alt: Ночной вид на бухту Гуанабара
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Вид с высоты на Рио-де-Жанейро
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp
-    alt: Панорама Рио-де-Жанейро
+    hover: "Рио с высоты: залив, острова и Сахарная Голова"
+    alt: "Сахарная Голова над заливом и городскими кварталами Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-5-enhanced-20261001.webp
     alt: Вид с Сахарной Головы на Рио
 route:

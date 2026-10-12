@@ -17,14 +17,17 @@ currency: USD
 priceNote: "Стоимость — $359 на человека."
 hero:
   src: /media/excursions/ekskursiya-k-statue-khrista-iskupitelya/hero-enhanced-20261006.webp
-  alt: Статуя Христа-Искупителя над Рио-де-Жанейро
+  hover: "Рио-де-Жанейро: вид снизу на статую Христа под облачным небом"
+  alt: "Статуя Христа-Искупителя на фоне светлых облаков в Рио-де-Жанейро, Бразилия"
 gallery:
   - src: /media/tours/luxury-brazil-11d/itinerary/day-01-enhanced-20260930.webp
-    alt: Панорама Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: Христос-Искупитель на фоне облаков"
+    alt: "Статуя Христа-Искупителя с раскинутыми руками на фоне голубого неба, Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/corcovado-tijuca-forest-half-day-tour-lunch/hero-src-enhanced-20261008.webp
     alt: Вид на Рио-де-Жанейро с высоты
   - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
-    alt: Рио-де-Жанейро и горы Тижуки
+    hover: "Рио-де-Жанейро: статуя на скалистой вершине в окружении зеленых гор"
+    alt: "Христос-Искупитель и туристические площадки среди лесистых гор Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/ekskursiya-k-statue-khrista-iskupitelya/gallery-3-src-enhanced-20261008.webp
     alt: Панорамный вид на Рио-де-Жанейро
 route:

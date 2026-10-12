@@ -18,6 +18,7 @@ relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/14g9D9z3HEkt3Lx1O7W-pvn45NKMRrdkq/view?usp=drivesdk
 hero:
   src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
-  alt: ''
+  hover: "Лима сверху: центральная площадь между колониальными зданиями"
+  alt: "Площадь Лимы с клумбами, пальмами и желтыми историческими фасадами, Перу"
 themes: ["theme_culture"]
 ---

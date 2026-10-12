@@ -84,7 +84,8 @@ itinerary:
     Питание: обед, ужин.
   images:
   - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp"
-    alt: Канайма
+    hover: "Канайма: отвесная скала и длинный поток над лесом и облаками"
+    alt: "Водопад падает с высокого столового плато в облачную долину Канаймы, Венесуэла"
 - day: 5
   title: ', пятница: Сальто-Анхель'
   places:

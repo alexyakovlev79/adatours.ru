@@ -69,7 +69,8 @@ itinerary:
     **Размещение:** Blancaneaux Lodge, Gardenview Cabana.'
   images:
   - src: /media/destinations/caracol/hero-generated-20261008.webp
-    alt: Руины майя Каракол среди тропического леса, Белиз
+    hover: "Каракол: древняя пирамида майя над травянистой площадью"
+    alt: "Ступенчатые каменные руины Каракола на зеленой поляне среди леса, Белиз"
 - day: 3
   title: Бартон-Крик - Белиз-Сити - Сан-Педро
   places:
@@ -93,7 +94,8 @@ itinerary:
     **Размещение:** Las Terrazas Resort, Deluxe Room. Питание не включено.'
   images:
   - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: Вид с на город с высоты, Белиз'
+    hover: "Белиз-Сити: канал ведет через городские кварталы к морю"
+    alt: "Белиз-Сити с высоты: городской канал, низкие дома и Карибское море"
 - day: 4
   title: Сан-Педро и морской заповедник Хол-Чан
   places:

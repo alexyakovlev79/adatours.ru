@@ -147,7 +147,8 @@ itinerary:
     Дополнительно можно заказать видеозапись путешествия.'
   images:
   - src: /media/tours/luxury-brazil-11d/itinerary/day-06-enhanced-20260930.webp
-    alt: Водопады Игуасу в Аргентине и Бразилии
+    hover: "Игуасу вечером: потоки воды под теплым небом"
+    alt: "Каскады Игуасу и водяная дымка над лесом в вечернем свете"
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
 - excursionRef: excursion_source_makuko_safari

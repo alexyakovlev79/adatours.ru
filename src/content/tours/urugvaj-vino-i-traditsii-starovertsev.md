@@ -44,7 +44,8 @@ itinerary:
     Возвращение в отель. Ночь в Монтевидео.
   images:
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
-    alt: Монтевидео
+    hover: "Монтевидео: пешеходная площадь перед дворцом Сальво"
+    alt: "Площадь с пальмами и башней дворца Сальво в Монтевидео, Уругвай"
 - day: 2
   title: Монтевидео и винодельня Спиноглио
   places:

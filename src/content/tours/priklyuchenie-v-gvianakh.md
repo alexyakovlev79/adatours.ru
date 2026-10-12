@@ -137,7 +137,8 @@ itinerary:
     Программа проходит с гидом.
   images:
   - src: /media/destinations/suriname-reka-surinam/hero-generated-20261009-v2.webp
-    alt: Река Суринам
+    hover: "Река Суринам: лодка у зеленого берега в вечернем свете"
+    alt: "Деревянная лодка на широкой реке Суринам у тропического леса"
 - day: 8
   title: Деревня Ньив-Аврора и культура марунов
   places:

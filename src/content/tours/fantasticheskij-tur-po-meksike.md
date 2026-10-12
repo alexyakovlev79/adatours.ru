@@ -99,7 +99,8 @@ itinerary:
     www.quintachanabnal.com 3 ночи / Deluxe Suite King
   images:
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Мехико
+    hover: "Мехико: Дворец изящных искусств у городских улиц"
+    alt: "Дворец изящных искусств с цветным куполом в центре Мехико, Мексика"
 - day: 5
   title: Паленке
   places:
@@ -185,7 +186,8 @@ itinerary:
   text: Завтрак в отеле.День на отдыхе для наслаждения пляжем и морем./
   images:
   - src: /media/tours/bolshie-meksikanskie-kanikuly/itinerary-day-6-enhanced-20261006.webp
-    alt: Канкун
+    hover: "Канкун: пляжные зонты у прозрачного Карибского моря"
+    alt: "Пляж Канкуна с соломенными зонтами, пирсом и бирюзовой водой, Мексика"
 - day: 11
   title: Канкун ()
   places:

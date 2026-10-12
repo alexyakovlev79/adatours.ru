@@ -433,7 +433,8 @@ itinerary:
       После основной программы можно заказать дополнительные активности.
     images:
       - src: /media/tours/luxury-brazil-11d/itinerary/day-05-enhanced-20260930.webp
-        alt: "Водопады Игуасу, Бразилия"
+        hover: "Игуасу: зеленый лес окружает каскады и водяную дымку"
+        alt: "Водопады Игуасу среди густого леса, вид с каменистого берега"
         intendedSlot: "itinerary:day-9"
   - excursionRef: excursion_source_makuko_safari
     places:

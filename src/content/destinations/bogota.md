@@ -8,7 +8,7 @@ countryId: "country_colombia"
 destinationType: "city"
 summary: "Столица Колумбии с колониальным районом Ла-Канделария, Музеем золота и панорамами с горы Монсеррат. Уличные граффити соседствуют здесь со старинной архитектурой."
 searchAliases: []
-hero: {"src":"/media/destinations/bogota/hero-enhanced-20261003.webp","alt":"На фото: город Богота, столица Колумбии"}
+hero: {"src":"/media/destinations/bogota/hero-enhanced-20261003.webp","alt":"Красный Volkswagen Beetle на улице Боготы у кирпичных домов, Колумбия", hover: "Богота: красный автомобиль на тихой улице с деревьями"}
 gallery:
 - src: /media/destinations/bogota/gallery-1-enhanced-20261003.webp
   hover: "Богота: красные, белые и жёлтые автобусы на оживлённой улице"

@@ -35,7 +35,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
-  alt: "Патагония"
+  hover: "Аргентинская Патагония: озерная бухта среди леса и гор"
+  alt: "Лесистые берега голубого озера на фоне гор Патагонии, Аргентина"
 gallery: []
 featured: false
 priority: 0
@@ -95,7 +96,8 @@ itinerary:
       Перелет в Эль-Калафате. По прилете встреча и трансфер в отель.
     images:
       - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-10-enhanced-20261006.webp
-        alt: "Патагония"
+        hover: "Торрес-дель-Пайне: горные пики над озером и травянистым берегом"
+        alt: "Зубчатые вершины Торрес-дель-Пайне над синим озером, Чили"
         intendedSlot: "itinerary:day-3"
   - excursionRef: excursion_el_calafate_nativo_experience
     places:
@@ -228,7 +230,8 @@ itinerary:
       Остаток дня - по программе размещения.
     images:
       - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
-        alt: "Сантьяго-де-Чили"
+        hover: "Сантьяго: историческая архитектура рядом со стеклянными зданиями и башней"
+        alt: "Старинное угловое здание и телебашня среди современной застройки Сантьяго, Чили"
         intendedSlot: "itinerary:day-7"
   - day: 8
     title: "Сантьяго-де-Чили"

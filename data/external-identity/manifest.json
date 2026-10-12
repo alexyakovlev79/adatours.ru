@@ -65,8 +65,8 @@
         "notes"
       ],
       "sha256": {
-        "json": "926c9363dea6f09f65275ef18f013c0a629a735f6135617d1eb8652db3695248",
-        "csv": "ddb6b458a237db7a75be64d8ce3291bf5aa207fc48573a1f6208f3d14de7d0d0"
+        "json": "540332ebd07d4863114ae0cd0bdc129f88c15a05f1e693151b5ea636405db79a",
+        "csv": "fd075944b9404c8f573d9384b846ff4cc05f20c38d0a107879483a5e5fe49868"
       }
     },
     {
@@ -96,8 +96,8 @@
         "notes"
       ],
       "sha256": {
-        "json": "f7ac997b8a39a6e53b353711e650143d3b7ff9568677eb3e14745d8df8ba9f3c",
-        "csv": "198a09f70b5dc10fd72d43b0d9474c3f23fba97b093005fd9f5c0307dd3255de"
+        "json": "5e3ad04b7c9e2614aa19077c0fe5c4ebe84125cb5edd8be106d9940765506691",
+        "csv": "37af6d800ee41dfac18256e8a03edfd78e1a94fef3e734a3aa41c5c4df21cc54"
       }
     },
     {
@@ -210,8 +210,8 @@
         "acceptance_rule"
       ],
       "sha256": {
-        "json": "e4b1ac4ecb900f718f4223c3be1c4e0f6bc28ae74965d5165467c9c08046fc8f",
-        "csv": "76ad73cb506b608a3614dcb5b0b30bd1d5d8fd0fca2003c42f553a3d3331e656"
+        "json": "c172938195113cb67524ce17dadf2a0be0ac8a95316efcf02d4b1b8c0886cb79",
+        "csv": "557256854962a50954a4d6d04c7f5cc947936385d2df9c9c4002068364b0fdaf"
       }
     },
     {
@@ -257,8 +257,8 @@
         "notes"
       ],
       "sha256": {
-        "json": "962ce0d598df75b94155e12ccb8570b07d2df40aefa7142d6405df9f6a9b00e0",
-        "csv": "43693c3fb58b5aed846eaea57325a8338c05a2c18fc2eefe7f2f09e3a71c7bc2"
+        "json": "3bef5233d3850ec3e8817322ff6a70fc03611c17d65131a01e348be81e50a640",
+        "csv": "409d8917356ec20d2d1b07df300d4b3075196a15c195270e216462d1a0b2ab1c"
       }
     },
     {
@@ -308,11 +308,22 @@
         "evidence_url",
         "observed_at",
         "source_commit",
-        "notes"
+        "notes",
+        "ru_http_status",
+        "ru_canonical",
+        "ru_validation_status",
+        "ru_checked_at",
+        "brasiltours_status",
+        "adatours_com_status",
+        "vipdeluxetravel_ru_status",
+        "vipdeluxetravel_com_status",
+        "sameas_eligible",
+        "sameas_checked_at",
+        "sameas_evidence"
       ],
       "sha256": {
-        "json": "c367593674be3cf629282978d4a8c486e507b39335fd0e02835f54edae9464da",
-        "csv": "ddc302d4e921b3683089d4f0c20f52fe05ad44b883175baf863b92ad94f56985"
+        "json": "be0c26e629b2c520dc7e32471f11717e6d7d276f95d0eccea5f7ad3ed7878172",
+        "csv": "140704cf4da3a0e018080d8c3d0795cd149d945ed306d56e1603f9b5fc9bc329"
       }
     }
   ],
@@ -395,5 +406,20 @@
       "vip_pages": 133,
       "added_canonical_urls": 109
     }
-  ]
+  ],
+  "vip_sameas_check": {
+    "checked_at": "2026-10-12T07:15:53+00:00",
+    "report": "vip-sameas-check-20261012.json",
+    "pages_checked": 133,
+    "new_pages_checked": 109,
+    "target_domains": [
+      "brasiltours.ru",
+      "adatours.com",
+      "vipdeluxetravel.ru",
+      "vipdeluxetravel.com"
+    ],
+    "confirmed_sameas_pairs": 0,
+    "approximate_correspondences_saved": 0,
+    "sameas_rule": "Only confirmed identical catalogue entities; no thematic or functional substitutes."
+  }
 }

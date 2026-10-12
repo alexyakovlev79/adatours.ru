@@ -8,8 +8,8 @@ countryId: "country_cuba"
 destinationType: "city"
 summary: "Тринидад на Кубе сохранил мощеные улицы и колониальные дома. В городе работают исторический, археологический и романтический музеи, а в долине Сан Луис сохранились следы сахарных плантаций."
 searchAliases: []
-hero: {"src":"/media/destinations/trinidad/hero-enhanced-20261004.webp","alt":"На фото: кубинский город Тринидад"}
-gallery: [{"src":"/media/destinations/trinidad/gallery-1-enhanced-20261004.webp","alt":"На фото: кубинский город Тринидад"},{"src":"/media/destinations/trinidad/gallery-2-enhanced-20261004.webp","alt":"На фото: кубинский город Тринидад"},{"src":"/media/destinations/trinidad/gallery-3-enhanced-20261004.webp","alt":"На фото: кубинский город Тринидад"},{"src":"/media/destinations/trinidad/gallery-4-enhanced-20261004.webp","alt":"На фото: кубинский город Тринидад"}]
+hero: {"src":"/media/destinations/trinidad/hero-enhanced-20261004.webp","alt":"Бирюзовые и желтые колониальные здания с аркадой и башней в Тринидаде, Куба", hover: "Тринидад: яркие фасады, аркада и башня"}
+gallery: [{"src":"/media/destinations/trinidad/gallery-1-enhanced-20261004.webp","alt":"Синий ретроавтомобиль у бирюзового фасада на мощеной улице Тринидада, Куба", hover: "Тринидад: синий автомобиль среди цветных домов"},{"src":"/media/destinations/trinidad/gallery-2-enhanced-20261004.webp","alt":"Человек идет по каменной мостовой мимо старого желтого дома с облупившейся штукатуркой, Тринидад, Куба", hover: "Тринидад: старые желтые фасады и каменная мостовая"},{"src":"/media/destinations/trinidad/gallery-3-enhanced-20261004.webp","alt":"Человек в синей повозке, запряженной светлой лошадью, у желтой стены в Тринидаде, Куба", hover: "Тринидад: конная повозка у старого фасада"},{"src":"/media/destinations/trinidad/gallery-4-enhanced-20261004.webp","alt":"Узкая мощеная улица с цветными стенами и высокой колокольней вдали, Тринидад, Куба", hover: "Тринидад: колокольня над узкой колониальной улицей"}]
 facts: []
 featureBands: []
 relatedDestinations: []

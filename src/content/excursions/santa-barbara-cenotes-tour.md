@@ -15,7 +15,8 @@ themes:
 - theme_adventure
 hero:
   src: /media/excursions/santa-barbara-cenotes-tour/hero-src-enhanced-20261010.webp
-  alt: Город Мерида в Мексике
+  hover: "Мерида: собор за зеленой городской площадью"
+  alt: "Белый собор с двумя башнями за пальмами и прогулочной дорожкой городской площади, Мерида, Мексика"
 duration: 8 часов
 language:
 - английский

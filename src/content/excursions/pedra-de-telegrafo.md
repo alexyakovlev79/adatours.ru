@@ -23,7 +23,8 @@ gallery:
   - src: /media/excursions/pedra-de-telegrafo/gallery-2-enhanced-20261001.webp
     alt: Горные склоны и побережье Рио-де-Жанейро
   - src: /media/excursions/pedra-de-telegrafo/gallery-3-enhanced-20261001.webp
-    alt: Вид с Педра-ду-Телеграфу
+    hover: "Педра-ду-Телеграфу: позирование у скалы на фоне морского берега"
+    alt: "Женщина держится за край скалы Педра-ду-Телеграфу над лесистым побережьем и морем, Бразилия"
 route:
   - Рио-де-Жанейро
   - Педра-Бранка

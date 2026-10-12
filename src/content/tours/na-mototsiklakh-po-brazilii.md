@@ -171,7 +171,8 @@ currency: USD
 priceNote: $8315
 hero:
   src: /media/tours/na-mototsiklakh-po-brazilii/hero-enhanced-20261006.webp
-  alt: 'На фото: на мотоцикле по Бразилии'
+  hover: "Мотоциклы на горной дороге среди сухих скалистых склонов"
+  alt: "Мотоциклист в шлеме на большом дорожном мотоцикле рядом с группой байкеров среди сухих гор"
 routeCountries:
 - country_brazil
 routeDestinations:

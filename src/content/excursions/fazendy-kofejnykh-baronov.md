@@ -11,7 +11,8 @@ duration: "7–8 часов"
 language: []
 hero:
   src: "/media/excursions/fazendy-kofejnykh-baronov/hero-src-enhanced-20261007.webp"
-  alt: "Фазенды кофейных баронов"
+  hover: "Фазенда в Бразилии: домики и гамак в зеленом саду"
+  alt: "Красные домики фазенды и подвешенный гамак среди деревьев и зеленого сада, Бразилия"
 gallery:
   - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-0-src-enhanced-20261007.webp"
     alt: ""

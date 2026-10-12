@@ -9,7 +9,7 @@ destinationType: "natural_area"
 summary: "Река Сарамакка — одна из заметных водных артерий Суринама, протекающая через живописные тропические ландшафты северной части страны."
 searchAliases: ["reka-saramakka"]
 themes: ["theme_wildlife"]
-hero: {"src": "/media/destinations/destination_suriname_reka_saramakka/original-01-20261010.jpg", "alt": "Река Сарамакка, Суринам"}
+hero: {"src": "/media/destinations/destination_suriname_reka_saramakka/original-01-20261010.jpg", "alt": "Коричневая вода реки Сарамакки у зеленого берега с домами под соломенными крышами, Суринам", hover: "Сарамакка: речной берег с домами и тропической зеленью"}
 gallery: []
 facts: []
 featureBands: []

@@ -8,7 +8,7 @@ countryId: "country_nicaragua"
 destinationType: "city"
 summary: "Бывшая столица Никарагуа: руины старого города, собор Катедраль-де-ла-Асунсьон, музеи Рубена Дарио и коллекции религиозной живописи."
 searchAliases: []
-hero: {"src":"/media/destinations/leon/hero-enhanced-20261004.webp","alt":"На фото: город Леон в Никарагуа"}
+hero: {"src":"/media/destinations/leon/hero-enhanced-20261004.webp","alt":"Белые купола и балюстрада на крыше собора Леона под темными облаками, Никарагуа", hover: "Леон: белая крыша собора с куполами"}
 gallery:
 - src: /media/destinations/leon/gallery-1-enhanced-20261004.webp
   alt: "Лошадь тянет тележку с товарами вдоль зелёного дома в Леоне, Никарагуа"

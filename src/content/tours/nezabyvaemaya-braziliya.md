@@ -126,7 +126,8 @@ itinerary:
     Дополнительно можно заказать Парк птиц и Macuco Safari.
   images:
   - src: /media/tours/nezabyvaemaya-braziliya/itinerary-day-7-images-1-enhanced-20261006.webp
-    alt: 'На фото: Водопады Фос-ду-Игуасу'
+    hover: "Игуасу: многоярусные водопады и радуга среди брызг"
+    alt: "Каскады Игуасу среди лесистых скальных уступов с радугой в водяной пыли"
   - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
     hover: "Рио-де-Жанейро: длинный городской пляж у горного берега"
     alt: "Пляж и кварталы Рио-де-Жанейро между океаном и зелеными горами, Бразилия"

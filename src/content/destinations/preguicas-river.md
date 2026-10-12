@@ -16,7 +16,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_reka_pregias/destination_brazil_reka_pregias-generated-20261008.webp
-  alt: Река Прегиас - Бразилия
+  hover: "Река Прегиас: пальмы и лес на тихих берегах"
+  alt: "Спокойная река Прегиас с отражениями облаков между густыми зелеными берегами и пальмами, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

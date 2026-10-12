@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_ozero_furnash/destination_brazil_ozero_furnash-generated-20261008.webp
-  alt: Озеро Фурнаш - Бразилия
+  hover: "Фурнаш: озеро между холмами и скалистыми берегами"
+  alt: "Широкие бирюзовые воды озера Фурнаш среди зеленых холмов и светлых скальных берегов, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

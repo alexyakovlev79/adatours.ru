@@ -164,7 +164,8 @@ itinerary:
       Ночевка в Ору-Прету.
     images:
       - src: /media/tours/brazil-gems-14d/itinerary/day-05-enhanced-20261001.webp
-        alt: "Исторический Ору-Прету"
+        hover: "Ору-Прету: церковь и старые дома на холме"
+        alt: "Церковь с башнями и белые дома под черепичными крышами на зеленом склоне Ору-Прету, Бразилия"
         intendedSlot: "itinerary:day-5"
   - day: 6
     title: "Ору-Прету - Иньотим - Салвадор"

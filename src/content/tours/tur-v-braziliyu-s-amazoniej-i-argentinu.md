@@ -301,7 +301,8 @@ currency: USD
 priceNote: $3260
 hero:
   src: /media/tours/tur-v-braziliyu-s-amazoniej-i-argentinu/hero-enhanced-20261006.webp
-  alt: 'На фото: река Амазонка, Бразилия'
+  hover: "Амазония: золотистые отражения на лесной реке"
+  alt: "Тихая лесная река с плавающими растениями и отражениями закатного света, Амазония, Бразилия"
 routeCountries:
 - country_brazil
 - country_argentina

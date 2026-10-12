@@ -139,7 +139,8 @@ itinerary:
   text: Трансфер в аэропорт для перелета в Калафате. По прибытии встреча и трансфер в отель.
   images:
   - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-6-enhanced-20261006.webp
-    alt: 'на фото: Эль Калафате в Аргентине'
+    hover: "Эль-Калафате: ледник за осенними ветвями у озера"
+    alt: "Голубая ледяная стена за бирюзовой водой и деревьями с осенней листвой у Эль-Калафате, Аргентина"
   - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
     hover: "Анды у Мендосы: цветы и тропа перед заснеженными горными склонами"
     alt: "Горная долина у Мендосы с цветами на переднем плане и снежной вершиной, Аргентина"

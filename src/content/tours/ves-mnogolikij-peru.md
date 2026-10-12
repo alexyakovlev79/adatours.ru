@@ -325,7 +325,8 @@ currency: USD
 priceNote: $2979
 hero:
   src: "/media/tours/ves-mnogolikij-peru/hero-src-enhanced-20261007.webp"
-  alt: 'на фото: город Лима, столица Перу'
+  hover: "Лима: башни и фасад собора"
+  alt: "Светлый собор Лимы с двумя высокими башнями и украшенным фасадом под голубым небом, Перу"
 routeCountries:
 - country_peru
 routeDestinations:

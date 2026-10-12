@@ -256,7 +256,8 @@ itinerary:
       Частный трансфер из отеля в аэропорт.
     images:
       - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-12-enhanced-20261006.webp
-        alt: "Буэнос-Айрес, Аргентина"
+        hover: "Аргентинский флаг над зданиями Буэнос-Айреса"
+        alt: "Флаг Аргентины на высоком флагштоке над городскими зданиями Буэнос-Айреса"
         intendedSlot: "itinerary:day-12"
 included:
   - "проживание в отелях 4*, завтраки и местные налоги;"

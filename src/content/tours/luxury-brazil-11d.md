@@ -31,7 +31,8 @@ priceNote: Стоимость по программе 2027 — от $4609. То�
 dates: []
 hero:
   src: /media/tours/luxury-brazil-11d/hero-enhanced-20260930.webp
-  alt: Панорама Рио-де-Жанейро
+  hover: "Закат над Сахарной Головой и заливом Рио"
+  alt: "Темный силуэт Сахарной Головы над заливом Рио-де-Жанейро в золотистом закатном свете, Бразилия"
 gallery:
   - src: /media/tours/luxury-brazil-11d/gallery-1-src-enhanced-20261001.webp
     hover: "Игуасу: радуга у водопадов, вид сквозь листву"

@@ -15,7 +15,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_reka_sukuri/destination_brazil_reka_sukuri-generated-20261008.webp
-  alt: Река Сукури - Бразилия
+  hover: "Река Сукури: подводный мир в прозрачной воде"
+  alt: "Рыбы и зеленые водные растения над светлым дном прозрачной реки Сукури, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

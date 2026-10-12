@@ -12,7 +12,8 @@ destination: destination_brazil_buzios
 language: []
 hero:
   src: /media/excursions/morskaya-progulka-po-buziosu/hero-enhanced-20261001.webp
-  alt: Бухта Бузиоса с яхтами
+  hover: "Бузиос: лодка у скалистого берега, вид сверху"
+  alt: "Небольшая лодка на прозрачной воде у слоистых береговых скал Бузиоса, Бразилия"
 gallery: []
 route:
   - Бузиос

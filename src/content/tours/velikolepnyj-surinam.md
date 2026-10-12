@@ -133,7 +133,8 @@ currency: USD
 priceNote: $3860
 hero:
   src: /media/tours/velikolepnyj-surinam/hero-src-enhanced-20261007.webp
-  alt: 'На фото: листья лотоса в Суринаме'
+  hover: "Суринам: большие водные листья и цветы"
+  alt: "Крупные круглые плавающие листья с поднятыми краями и белыми и розовыми цветами, Суринам"
 routeCountries:
 - country_suriname
 routeDestinations:

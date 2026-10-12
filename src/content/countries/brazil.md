@@ -11,7 +11,8 @@ summary: >-
   Рио, Игуасу, Амазония, Пантанал и Атлантика. Частный маршрут по Бразилии можно собрать вокруг города, природы, пляжей или соединить их в одной поездке.
 hero:
   src: /media/countries/brazil/hero-src-enhanced-20261001.webp
-  alt: Панорама Рио-де-Жанейро
+  hover: "Рио: статуя Христа среди горных склонов в мягком свете"
+  alt: "Статуя Христа-Искупителя на небольшой вершине среди лесистых гор в солнечной дымке, Рио, Бразилия"
 heroVideo:
   src: /media/countries/brazil/hero-video-original-20261009-v1.mp4
   sourceUrl: https://www.pexels.com/pt-br/video/arquitetonico-arquitetura-praia-litoral-4875313/

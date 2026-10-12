@@ -35,7 +35,8 @@ gallery:
     hover: "Буэнос-Айрес: уличные кафе среди исторических зданий"
     alt: "Пешеходная улица с летними столиками и старинными фасадами в Буэнос-Айресе, Аргентина"
   - src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-5-src-enhanced-20261007.webp"
-    alt: "На фото: Обелиск в Буэнос-Айресе"
+    hover: "Буэнос-Айрес: дневная панорама проспектов у Обелиска"
+    alt: "Белый Обелиск над оживленными проспектами и городскими зданиями Буэнос-Айреса, Аргентина"
   - src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-6-src-enhanced-20261007.webp"
     alt: "На фото: монумент Флоралис Хенерика в Буэнос-Айресе"
 route:

@@ -12,7 +12,8 @@ destination: destination_brazil_rio
 language: []
 hero:
   src: /media/excursions/master-klass-po-prigotovleniyu-kajpirini/hero-enhanced-20261001.webp
-  alt: Бразильская кайпиринья
+  hover: "Кайпиринья со льдом и лаймом на деревянном столе"
+  alt: "Стакан кайпириньи со льдом и дольками лайма на деревянном столе рядом с плодами и листьями мяты"
 gallery: []
 route:
   - Рио-де-Жанейро

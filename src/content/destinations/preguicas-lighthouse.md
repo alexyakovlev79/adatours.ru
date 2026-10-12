@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_mayak_pergula/destination_brazil_mayak_pergula-generated-20261008.webp
-  alt: Маяк Пергула - Бразилия
+  hover: "Речное устье и песчаные косы на бразильском побережье"
+  alt: "Речное устье среди зеленых берегов и песчаных кос у океана, вид сверху, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

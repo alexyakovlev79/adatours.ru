@@ -10,7 +10,8 @@ summary: "Саванны на юго-западе Гайаны с лесисты
 searchAliases: []
 hero:
   src: "/media/countries/guyana/featureBands-2-enhanced-20261002.webp"
-  alt: "На фото: Саванны Рупунуни в Гайане"
+  hover: "Рупунуни: муравьед в травянистой саванне"
+  alt: "Муравьед с длинной мордой среди желтой травы саванн Рупунуни, Гайана"
 gallery: []
 relatedDestinations: []
 featuredTours: []

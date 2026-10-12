@@ -12,7 +12,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_rio_das_flores/hero-generated-20261008-resumed.webp
-  alt: Рио-дас-Флорес — Бразилия
+  hover: "Рио-дас-Флорес: старые дома на мощеной улице"
+  alt: "Мощеная улица Рио-дас-Флореса с белыми домами, цветными ставнями и зелеными холмами вдали, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

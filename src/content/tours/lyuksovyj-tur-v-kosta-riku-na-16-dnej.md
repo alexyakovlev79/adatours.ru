@@ -255,7 +255,8 @@ itinerary:
       Включены завтрак и ужин.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-4-enhanced-20261006.webp
-        alt: "Панорама вулкана Ареналь"
+        hover: "Ареналь: вулканический склон под солнечными лучами"
+        alt: "Конус вулкана Ареналь над тропической зеленью в лучах солнца сквозь темные облака, Коста-Рика"
         intendedSlot: "itinerary:day-4"
   - day: 5
     title: "Рио-Селесте и Национальный парк Тенорио"
@@ -367,7 +368,8 @@ itinerary:
       Завтрак включен.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-6-enhanced-20261006.webp
-        alt: "Облачный лес Монтеверде"
+        hover: "Монтеверде: подвесной мост над тропической зеленью"
+        alt: "Женщина на подвесном мосту среди густого зеленого леса Монтеверде, Коста-Рика"
         intendedSlot: "itinerary:day-6"
   - day: 7
     title: "Облачный лес Монтеверде и река Тарколес"

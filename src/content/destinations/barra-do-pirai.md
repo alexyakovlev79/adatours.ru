@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_barra_du_pirai/destination_brazil_barra_du_pirai-generated-20261008.webp
-  alt: Барра-ду-Пираи - Бразилия
+  hover: "Барра-ду-Пираи: городская улица в тени деревьев"
+  alt: "Тихая улица Барра-ду-Пираи с низкими домами и тенистыми деревьями на фоне зеленых холмов, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

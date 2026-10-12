@@ -28,7 +28,8 @@ gallery:
 - src: /media/destinations/merida/gallery-7-enhanced-20261003.webp
   alt: Окрестности города Мерида в Венесуэле
 - src: /media/destinations/merida/gallery-8-enhanced-20261003.webp
-  alt: Город Мерида в Венесуэле
+  hover: "Мерида в Венесуэле: собор и пальмы перед горным хребтом"
+  alt: "Светлый собор с двумя башнями за пальмами на фоне зеленых гор Мериды, Венесуэла"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

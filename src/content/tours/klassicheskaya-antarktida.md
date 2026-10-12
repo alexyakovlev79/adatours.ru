@@ -142,7 +142,8 @@ currency: USD
 priceNote: $15995
 hero:
   src: "/media/tours/klassicheskaya-antarktida/hero-src-enhanced-20261007.webp"
-  alt: Классическая Антарктида
+  hover: "Антарктида: лодка у ледяной арки айсберга"
+  alt: "Лодка с людьми у большого голубого айсберга с естественной ледяной аркой, Антарктида"
 routeCountries:
 - country_antarctica
 routeDestinations:

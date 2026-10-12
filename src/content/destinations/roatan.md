@@ -10,7 +10,8 @@ summary: "Остров у северного побережья Гондурас
 searchAliases: []
 hero:
   src: "/media/countries/honduras/featureBands-2-enhanced-20261002.webp"
-  alt: "На фото: остров Роатан в Гондурасе"
+  hover: "Роатан: яхта над рифовым мелководьем, вид сверху"
+  alt: "Белая моторная яхта над прозрачной бирюзовой водой и темными рифовыми пятнами у Роатана, Гондурас"
 gallery:
   - src: "/media/destinations/roatan/gallery-1-enhanced-20261003.webp"
     alt: "На фото: остров Роатан в Гондурасе"

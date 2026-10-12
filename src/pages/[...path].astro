@@ -22,6 +22,7 @@ import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsFo
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { compareToursBySalesFit } from '../lib/tour-ranking';
 import { selectVipTours } from '../lib/vip-tours.mjs';
+import { tourFilterTitle, tourFilterDescription } from '../lib/vip-copy.mjs';
 import { tourHasMainCountry, tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-relations';
 import { paginateCatalog, type CatalogPagination } from '../lib/catalog-pagination';
 
@@ -33,7 +34,7 @@ type DetailProps =
 type CatalogInput = {
   mode: 'catalog'; kind: 'tour' | 'excursion' | 'destination';
   entries: Array<CollectionEntry<'tours'> | CollectionEntry<'excursions'> | CollectionEntry<'destinations'>>;
-  canonical: string; title: string; description: string; breadcrumbs: BreadcrumbItem[]; hero?: string;
+  canonical: string; title: string; h1Title?: string; description: string; breadcrumbs: BreadcrumbItem[]; hero?: string;
   leadTitle?: string; leadEntityId?: string;
   countryContextId?: string;
   variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours';
@@ -201,8 +202,9 @@ export async function getStaticPaths() {
       add(canonical, {
         mode: 'catalog', kind: 'tour', entries: selectedTours, canonical,
         title: seoCountryTourCatalogTitle(country.id),
+        h1Title: tourFilterTitle(country),
         countryContextId: country.id,
-        description: `Маршруты Ada Tours, в которые входит ${country.name}.`,
+        description: tourFilterDescription(country, undefined, selectedTours.length),
         breadcrumbs: [{ label: 'Туры', href: '/tours/' }, { label: country.name, href: canonical }],
         hero: heroForCountry(country.id) ?? '/media/catalog/tury/hero-enhanced-20260930.webp',
       });

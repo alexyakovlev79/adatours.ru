@@ -4,8 +4,9 @@ import { join } from 'node:path';
 import yaml from 'js-yaml';
 import { CATALOG_PAGE_SIZE } from '../src/lib/catalog-pagination.ts';
 import { INTERESTS, buildInterestHub, buildInterestIndex, interestTourCatalogPath, countLabel } from '../src/lib/interest-model.mjs';
-import { interestCopy, interestTourCount, relatedInterestCount, interestCatalogDescription } from '../src/lib/interest-copy.mjs';
+import { interestCopy, interestTourCount, relatedInterestCount } from '../src/lib/interest-copy.mjs';
 import { seoThemeCatalogTitle, seoPaginatedTitle } from '../src/lib/seo-page.mjs';
+import { tourFilterTitle, tourFilterDescription } from '../src/lib/vip-copy.mjs';
 import { countryPath, themePath } from '../src/lib/routes.ts';
 const collections = Object.fromEntries(['tours','countries','destinations','excursions','themes'].map(collection => [collection,
   readdirSync(`src/content/${collection}`).filter(f=>f.endsWith('.md')).map(file=>({data:yaml.load(readFileSync(`src/content/${collection}/${file}`,'utf8').match(/^---\r?\n([\s\S]*?)\r?\n---/)[1])}))
@@ -53,22 +54,22 @@ for (const {id,slug} of INTERESTS) {
   for(const phrase of ['Сначала — путешествия, для которых','Страны, которые встречаются в действующих','туров с этим интересом','41 тур объединяют']) assert.ok(!html.includes(phrase));
   if(hub.allTours.length) {
     const catalogHtml=at(interestTourCatalogPath({slug}));
-    assert.ok(catalogHtml.includes(interestCatalogDescription(id,hub.allTours.length)));
+    assert.ok(catalogHtml.includes(tourFilterDescription(undefined,theme.data,hub.allTours.length)));
     assert.ok(heroSection(catalogHtml).includes(themeHero),`${slug}: interest tour catalog uses theme hero`);
     for(let page=1;page<=Math.ceil(hub.allTours.length/CATALOG_PAGE_SIZE);page++) {
       const pageHtml=at(`${interestTourCatalogPath({slug})}${page>1?`page/${page}/`:''}`);
-      assert.equal(heading(pageHtml),`${theme.data.name}${page>1?` — страница ${page}`:''}`,`${slug}: short catalog H1`);
+      assert.equal(heading(pageHtml),`${tourFilterTitle(undefined,theme.data)}${page>1?` — страница ${page}`:''}`,`${slug}: short catalog H1`);
       assert.equal(title(pageHtml),seoPaginatedTitle(seoThemeCatalogTitle(theme.data.name,hub.allTours.length),page),`${slug}: separate SEO title`);
     }
   }
   for(const row of hub.allCountries) {
     const countryRoot=interestTourCatalogPath({slug},row.entry), countryHtml=at(countryRoot);
-    assert.ok(countryHtml.includes(interestCatalogDescription(id,row.tourCount,row.entry.data.name)));
+    assert.ok(countryHtml.includes(tourFilterDescription(row.entry.data,theme.data,row.tourCount)));
     assert.ok(heroSection(countryHtml).includes(themeHero),`${slug}: ${row.entry.data.id} catalog uses theme hero`);
     if(row.tours.length>CATALOG_PAGE_SIZE) assert.ok(heroSection(at(`${countryRoot}page/2/`)).includes(themeHero),`${slug}: ${row.entry.data.id} page 2 uses theme hero`);
     for(let page=1;page<=Math.ceil(row.tours.length/CATALOG_PAGE_SIZE);page++) {
       const pageHtml=at(`${countryRoot}${page>1?`page/${page}/`:''}`);
-      assert.equal(heading(pageHtml),`${theme.data.name}: ${row.entry.data.name}${page>1?` — страница ${page}`:''}`,`${slug}: ${row.entry.data.id} short country H1`);
+      assert.equal(heading(pageHtml),`${tourFilterTitle(row.entry.data,theme.data)}${page>1?` — страница ${page}`:''}`,`${slug}: ${row.entry.data.id} short country H1`);
       assert.equal(title(pageHtml),seoPaginatedTitle(seoThemeCatalogTitle(theme.data.name,row.tourCount,row.entry.data.name),page),`${slug}: ${row.entry.data.id} separate SEO title`);
       const nav=pageHtml.match(/<nav\b[^>]*class="[^"]*\bcatalog-navigation\b[^"]*"[\s\S]*?<\/nav>/)?.[0]??'';
       assert.equal((nav.match(/<a\b/g)??[]).length,3,`${slug}: ${row.entry.data.id} three navigation links`);

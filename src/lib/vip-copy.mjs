@@ -69,7 +69,20 @@ export function vipFilterTitle(country, theme) {
   return copyFor(theme).title.replace('{country}', directionFor(country));
 }
 
-export function vipFilterDescription(country, theme, count) {
+export function tourFilterTitle(country, theme) {
+  const title = vipFilterTitle(country, theme).replace('VIP-туры', 'туры');
+  return title.charAt(0).toLocaleUpperCase('ru') + title.slice(1);
+}
+
+function catalogDescription(country, theme, count, vip) {
   const intro = theme ? copyFor(theme).intro : 'Сравните программы, длительность и стоимость.';
-  return `Собрали ${countLabel(count, ['VIP-маршрут', 'VIP-маршрута', 'VIP-маршрутов'])}${directionFor(country)}. ${intro} Адаптируем поездку под ваши даты и привычный темп.`;
+  const forms = vip ? ['VIP-маршрут', 'VIP-маршрута', 'VIP-маршрутов'] : ['маршрут', 'маршрута', 'маршрутов'];
+  return `Собрали ${countLabel(count, forms)}${directionFor(country)}. ${intro} Адаптируем поездку под ваши даты и привычный темп.`;
+}
+
+export function vipFilterDescription(country, theme, count) {
+  return catalogDescription(country, theme, count, true);
+}
+export function tourFilterDescription(country, theme, count) {
+  return catalogDescription(country, theme, count, false);
 }

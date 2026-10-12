@@ -232,8 +232,8 @@ const listSchema = {
 
 <style>
   /* The filters already provide equal spacing above and below. */
-  :global(.tour-filters + .statement) { padding-top: 0; }
-  :global(.tour-filters + .statement .eyebrow) { margin-top: 0; }
+  :global(.tour-filters ~ .statement) { padding-top: 0; }
+  :global(.tour-filters ~ .statement .eyebrow) { margin-top: 0; }
   .catalog-intro { padding-top: clamp(20px, 3vw, 32px); }
   .catalog-intro p {
     max-width: 1000px;

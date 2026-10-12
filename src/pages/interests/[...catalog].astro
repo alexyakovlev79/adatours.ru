@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { seoThemeCatalogTitle } from '../../lib/seo-page.mjs';
 import { buildInterestHub, interestTourCatalogPath, interestDestinationCatalogPath, interestExcursionCatalogPath, relatedInterestCatalogPath } from '../../lib/interest-model.mjs';
-import { interestCatalogDescription } from '../../lib/interest-copy.mjs';
+import { tourFilterTitle, tourFilterDescription } from '../../lib/vip-copy.mjs';
 import { countryPath, themePath } from '../../lib/routes';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import EntityCatalogLayout from '../../layouts/EntityCatalogLayout.astro';
@@ -22,7 +22,7 @@ export async function getStaticPaths() {
     const d = theme.data, hub = buildInterestHub(d.id, { themes, tours, countries, destinations, excursions });
     const root = interestTourCatalogPath(d);
     const breadcrumbs = [{ label: 'По интересам', href: '/interests/' }, { label: d.name, href: themePath(d) }, { label: 'Все туры', href: root }];
-    add(hub.allTours, root, { kind: 'tour', title: seoThemeCatalogTitle(d.name,hub.allTours.length), h1Title: d.name, description: interestCatalogDescription(d.id, hub.allTours.length), breadcrumbs, hero: d.hero?.src, leadEntityId: d.id, leadTitle: `Собрать поездку: ${d.name}`,
+    add(hub.allTours, root, { kind: 'tour', title: seoThemeCatalogTitle(d.name,hub.allTours.length), h1Title: tourFilterTitle(undefined, d), description: tourFilterDescription(undefined, d, hub.allTours.length), breadcrumbs, hero: d.hero?.src, leadEntityId: d.id, leadTitle: `Собрать поездку: ${d.name}`,
       themeContextId: d.id, navigationLabel: 'Интерес поездки', navigationLinks: [{ label: d.name, href: themePath(d) }] });
     const sections = [
       { kind: 'destination', label: 'Все места', root: interestDestinationCatalogPath(d), entries: hub.allExperiences.filter((row) => row.kind === 'destination').map((row) => row.entry) },
@@ -41,7 +41,7 @@ export async function getStaticPaths() {
     }
     for (const row of hub.allCountries) {
       const country = row.entry.data, countryRoot = interestTourCatalogPath(d, country);
-      add(row.tours, countryRoot, { kind: 'tour', title: seoThemeCatalogTitle(d.name,row.tourCount,country.name), h1Title: `${d.name}: ${country.name}`, description: interestCatalogDescription(d.id, row.tourCount, country.name),
+      add(row.tours, countryRoot, { kind: 'tour', title: seoThemeCatalogTitle(d.name,row.tourCount,country.name), h1Title: tourFilterTitle(country, d), description: tourFilterDescription(country, d, row.tourCount),
         breadcrumbs: [...breadcrumbs, { label: country.name, href: countryRoot }], hero: d.hero?.src, countryContextId: country.id, themeContextId: d.id, leadEntityId: d.id, leadTitle: `Собрать поездку: ${country.name}`,
         navigationLabel: 'Страна и интерес', navigationLinks: [
           { label: `О стране: ${country.name}`, href: countryPath(country) },

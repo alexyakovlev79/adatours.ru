@@ -229,7 +229,8 @@ itinerary:
       Экскурсия на полдня. С бразильской стороны открывается широкая панорама системы водопадов. Маршрут проходит по традиционным мосткам, откуда видны каскады Флориано, Дэодоро, Бенжамин Констант и Гарганта-дель-Дьябло.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-10-generated-20261008-v1.webp
-        alt: "Водопады Игуасу и пешеходные мостки с бразильской стороны"
+        hover: "Игуасу: прогулочная площадка над бурной водой и брызгами"
+        alt: "Посетители на пешеходном настиле среди каскадов Игуасу, Бразилия"
         intendedSlot: "itinerary:day-10"
 
   - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu

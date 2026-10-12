@@ -15,7 +15,8 @@ themes:
 - theme_culture
 hero:
   src: /media/excursions/orongo-rano-kau-tour/hero-src-enhanced-20261010.webp
-  alt: Моаи острова Пасхи, Чили - ряд статуй на платформе Аху
+  hover: "Остров Пасхи: ряд моаи у зеленого склона"
+  alt: "Каменные моаи на травянистом склоне острова Пасхи, Чили"
 sourceSnapshot: https://drive.google.com/file/d/1Of-rCEbo7uTXOBvvXzNiFYyt8TC5a2Wn/view?usp=drivesdk
 updatedAt: '2026-10-11'
 ---

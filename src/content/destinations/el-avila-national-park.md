@@ -9,7 +9,8 @@ destinationType: national_park
 summary: Зеленый горный массив над Каракасом с прогулочными маршрутами и панорамами городской долины.
 hero:
   src: /media/tours/kraski-venesuely/el-avila-national-park-place-generated-20261008.webp
-  alt: Горы национального парка Авила над Каракасом, Венесуэла
+  hover: "Авила: городская панорама за лесистыми горными склонами"
+  alt: "Каракас в горной долине со склонов Авилы, Венесуэла"
 gallery: []
 themes:
 - theme_adventure

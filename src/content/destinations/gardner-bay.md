@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "natural_area"
 summary: "Бухта Гарднер на Эспаньоле — белый пляж, прозрачный океан и морские львы, отдыхающие прямо на песке."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_gardner_bay/hero-generated-20261010-next-ten-v1.webp", "alt": "Морские львы на белом пляже бухты Гарднер — иллюстрация"}
+hero: {"src": "/media/destinations/destination_ecuador_gardner_bay/hero-generated-20261010-next-ten-v1.webp", "alt": "Морские львы на белом пляже бухты Гарднер у бирюзового моря, Галапагосы, Эквадор", hover: "Бухта Гарднер: морские львы отдыхают у кромки прибоя"}
 gallery: []
 themes: ["theme_wildlife", "theme_beach"]
 relatedDestinations: []

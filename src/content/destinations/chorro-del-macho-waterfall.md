@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Водопад Чорро-дель-Мачо в Панаме, лесной каскад в районе Эль-Вайе-де-Антон.
 hero:
   src: /media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/chorro-del-macho-waterfall-place-generated-20261009-v1.webp
-  alt: Водопад Чорро-дель-Мачо среди леса Эль-Вайе-де-Антон
+  hover: "Эль-Валье: белая струя водопада над каменистым ручьем"
+  alt: "Водопад Чорро-Эль-Мачо падает со скалы среди густого леса, Панама"
 gallery: []
 themes:
 - theme_wildlife

@@ -16,7 +16,8 @@ priceFrom: 400
 currency: USD
 hero:
   src: /media/excursions/tropicheskie-ostrova-rajskoe-naslazhdenie/hero-enhanced-20261001.webp
-  alt: Тропические острова и бирюзовая вода у Ангра-дус-Рейс
+  hover: "Ангра-дус-Рейс: песчаный берег в тени раскидистой ветви"
+  alt: "Пляж с прозрачной бирюзовой водой и зелеными островами Ангра-дус-Рейс, Бразилия"
 gallery: []
 route:
   - Рио-де-Жанейро

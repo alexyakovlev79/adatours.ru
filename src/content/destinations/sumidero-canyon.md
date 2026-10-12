@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Каньон Сумидеро в мексиканском Чьяпасе, речное ущелье с высокими скальными стенами и лодочными маршрутами.
 hero:
   src: /media/tours/meksika-fantasticheskaya/sumidero-canyon-place-generated-20261009-v1.webp
-  alt: Река между высокими скальными стенами каньона Сумидеро
+  hover: "Сумидеро: спокойная вода под скалами с зеленой растительностью"
+  alt: "Река между высокими отвесными стенами каньона Сумидеро, Мексика"
 gallery: []
 themes:
 - theme_wildlife

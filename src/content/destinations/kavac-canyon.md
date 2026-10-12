@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Узкий скальный каньон в районе Ауян-Тепуя, где вода проходит между высокими стенами и образует каскады.
 hero:
   src: /media/tours/venesuela-novye-konkistadory/kavac-canyon-place-generated-20261008.webp
-  alt: Узкий скальный каньон Кавак с водой и каскадом, Венесуэла
+  hover: "Кавак: зеленая вода между высокими каменными стенами"
+  alt: "Водопад в узком скальном каньоне Кавак над прозрачной водой, Венесуэла"
 gallery: []
 themes:
 - theme_adventure

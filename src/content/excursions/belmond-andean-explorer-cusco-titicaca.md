@@ -16,7 +16,8 @@ themes:
 - theme_culture
 hero:
   src: /media/tours/south-america-luxury-33-days/pdf-x353-20261011-v1-enhanced-20261011-pass2324-v1.webp
-  alt: Поезд Belmond Andean Explorer среди горных пейзажей Перу
+  hover: "Andean Explorer: поезд среди сухих трав и андских гор"
+  alt: "Синий поезд Belmond Andean Explorer идет по высокогорной равнине Перу"
 gallery: []
 lead: Belmond Andean Explorer — роскошный поезд, следующий по одному из самых высокогорных железнодорожных маршрутов
   Южной Америки. Он соединяет Куско с озером Титикака и проходит через впечатляющие пейзажи Анд, включая горный

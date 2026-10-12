@@ -9,7 +9,8 @@ destinationType: region
 summary: Канелонес в Уругвае, винодельческий регион с семейными хозяйствами и виноградниками сорта таннат.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/canelones-place-generated-20261009-v1.webp
-  alt: Виноградники на холмах винодельческого региона Канелонес
+  hover: "Канелонес: виноградные лозы и сельский пейзаж под облаками"
+  alt: "Ряды виноградников на пологих зеленых холмах Канелонеса, Уругвай"
 gallery: []
 themes:
 - theme_gastronomy_wine

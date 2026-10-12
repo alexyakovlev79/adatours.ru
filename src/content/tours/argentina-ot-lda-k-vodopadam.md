@@ -149,7 +149,8 @@ itinerary:
       Рекомендуется взять ланч-бокс. Также можно пообедать в ресторане парка.
     images:
       - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-5-enhanced-20261006.webp
-        alt: "на фото: ледник Перито-Морено в Эль-Калафате, Аргентина, Патагония"
+        hover: "Перито-Морено: острые ледяные гребни у озерной воды"
+        alt: "Голубая ледяная стена Перито-Морено перед темной горой со снежной вершиной, Аргентина"
         intendedSlot: "itinerary:day-5"
 
   - excursionRef: excursion_el_calafate_ice_trekking_perito_moreno

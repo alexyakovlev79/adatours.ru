@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_bolivia_vulkan_tunupa/hero-generated-20261008.webp
-  alt: Вулкан Тунупа над белой поверхностью солончака Уюни
+  hover: "Уюни: ровный солончак перед разноцветными склонами Тунупы"
+  alt: "Вулкан Тунупа за белой поверхностью солончака Уюни, Боливия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

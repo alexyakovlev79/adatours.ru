@@ -15,7 +15,8 @@ language:
 priceNote: "Цена указана на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/rio-nochyu-lapa/hero-src-enhanced-20261008.webp"
-  alt: "На фото: Ночной вид на район Лапа в Рио-де-Жанейро, Бразилия"
+  hover: "Лапа: оживленная площадь у белого акведука ночью"
+  alt: "Подсвеченные арки Лапа и вечерние огни Рио-де-Жанейро, Бразилия"
 gallery:
   -
     src: "/media/excursions/rio-nochyu-lapa/gallery-1-enhanced-20261007.webp"

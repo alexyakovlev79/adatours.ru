@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Гран-Сенот возле Тулума в Мексике, карстовый водоем с прозрачной водой и природными пещерными участками.
 hero:
   src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/gran-cenote-place-generated-20261009-v1.webp
-  alt: Прозрачная вода и известняковые берега Гран-Сенота
+  hover: "Гран-Сенот: свет на воде у естественного пещерного проема"
+  alt: "Прозрачная бирюзовая вода Гран-Сенота под скальным сводом и корнями, Мексика"
 gallery: []
 themes:
 - theme_wildlife

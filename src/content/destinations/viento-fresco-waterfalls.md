@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Водопады Вьенто-Фреско в районе Тиларана в Коста-Рике, лесные каскады на горном маршруте к Монтеверде.
 hero:
   src: /media/tours/vip-kosta-rika-nikaragua/viento-fresco-waterfalls-place-generated-20261009-v1.webp
-  alt: Лесной водопад Вьенто-Фреско в горном районе Тиларана
+  hover: "Вьенто-Фреско: падающая вода и каменистый поток под лесным склоном"
+  alt: "Водопад Вьенто-Фреско среди зеленых склонов у Тиларана, Коста-Рика"
 gallery: []
 themes:
 - theme_wildlife

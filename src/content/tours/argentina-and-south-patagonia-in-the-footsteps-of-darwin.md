@@ -164,7 +164,8 @@ itinerary:
       Питание: завтрак, полдник, ужин.
     images:
       - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-08-generated-20261008-v1.webp
-        alt: "Заброска снаряжения в лагерь Канада, Аконкагуа, Аргентина"
+        hover: "Аконкагуа: снаряжение и палатки на каменистом склоне перед снежными горами"
+        alt: "Альпинист разбирает снаряжение среди палаток лагеря Канада на Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-8"
   - day: 9
     title: "Пласа-де-Мулас, 4260 м"
@@ -269,7 +270,8 @@ itinerary:
       Питание: завтрак, полдник, ужин.
     images:
       - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-16-generated-20261008-v1.webp
-        alt: "Спуск по склону Аконкагуа к Пласа-де-Мулас, Аргентина"
+        hover: "Аконкагуа: спуск к широкой долине среди скалистых гор"
+        alt: "Трое альпинистов с рюкзаками спускаются по каменистому склону Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-16"
   - day: 17
     title: "Пласа-де-Мулас - Пуэнте-дель-Инка - Мендоса"
@@ -296,7 +298,8 @@ itinerary:
       Завтрак. Трансфер в аэропорт или на автовокзал.
     images:
       - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-18-generated-20261008-v1.webp
-        alt: "Вылет из аэропорта Мендосы после экспедиции, Аргентина"
+        hover: "Мендоса: самолет и наземная техника перед горной цепью"
+        alt: "Самолет у пассажирского телетрапа в аэропорту Мендосы на фоне Анд, Аргентина"
         intendedSlot: "itinerary:day-18"
   - day: 19
     title: "Резервный день"

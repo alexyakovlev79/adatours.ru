@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Шлюзы Агуа-Клара на карибской стороне Панамского канала, инженерный комплекс для перехода крупных судов.
 hero:
   src: /media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/agua-clara-locks-place-generated-20261009-v1.webp
-  alt: Шлюзовые камеры Агуа-Клара и проходящее грузовое судно
+  hover: "Агуа-Клара: судно между шлюзовыми стенами рядом с водными камерами"
+  alt: "Контейнеровоз в шлюзах Агуа-Клара Панамского канала, Панама"
 gallery: []
 themes:
 - theme_culture

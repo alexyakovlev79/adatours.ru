@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Небольшой рыбацкий порт региона Айсен среди лесистых берегов Патагонии."
 searchAliases: ["puerto-sisnes"]
 themes: ["theme_cruises","theme_culture"]
-hero: {"src":"/media/destinations/destination_chile_puerto_sisnes/hero-generated-20261009-v1.webp","alt":"Рыбацкая гавань Пуэрто-Сиснес на фоне лесистых склонов","status":"approved"}
+hero: {"src":"/media/destinations/destination_chile_puerto_sisnes/hero-generated-20261009-v1.webp","alt":"Рыбацкие лодки у домов на берегу Пуэрто-Сиснес под лесистыми горами, Чили","status":"approved", hover: "Пуэрто-Сиснес: тихая гавань перед горами в облаках"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

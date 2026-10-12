@@ -165,7 +165,8 @@ itinerary:
     Питание: завтрак, обед, ужин.'
   images:
   - src: /media/tours/brazil-three-ecosystems-8-days/word-3-20261010-enhanced-20261011-doc-v1.webp
-    alt: Узкий водопад среди тёмных скал и густой лесной зелени
+    hover: "Струя воды между мшистыми скалами и густым лесом"
+    alt: "Узкий водопад в зеленом скальном ущелье, Бразилия"
 - excursionRef: excursion_chapada_waterfalls_trails
   places:
   - Национальный парк Шапада-дус-Гимарайнс

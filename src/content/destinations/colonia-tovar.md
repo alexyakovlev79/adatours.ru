@@ -9,7 +9,8 @@ destinationType: city
 summary: Горное поселение с немецко-венесуэльским наследием, фахверковыми домами и традициями местной кухни.
 hero:
   src: /media/tours/populyarnye-napravleniya-venesuely/colonia-tovar-place-generated-20261008.webp
-  alt: Фахверковые дома Колонии Товар в горной долине, Венесуэла
+  hover: "Колония-Товар: украшенные балконы у мощеной улицы в зеленых горах"
+  alt: "Улица Колонии-Товар с фахверковыми домами, красными крышами и цветами, Венесуэла"
 gallery: []
 themes:
 - theme_culture

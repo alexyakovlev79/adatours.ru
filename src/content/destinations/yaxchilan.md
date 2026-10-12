@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Яшчилан в Чьяпасе, древний город майя на реке Усумасинта с резными каменными памятниками.
 hero:
   src: /media/tours/meksika-fantasticheskaya/yaxchilan-place-generated-20261009-v1.webp
-  alt: Древние каменные сооружения Яшчилана в тропическом лесу
+  hover: "Яшчилан: ступени и каменные проемы под кронами деревьев"
+  alt: "Каменная лестница к древнему сооружению Яшчилана среди леса, Мексика"
 gallery: []
 themes:
 - theme_culture

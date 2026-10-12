@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa/hero-generated-20261008.webp
-  alt: Eduardo Avaroa Andean Fauna National Reserve — Bolivia
+  hover: "Эдуардо-Авароа: голубая лагуна, белые берега и фламинго"
+  alt: "Фламинго на мелководье перед сухими вулканическими горами заповедника Эдуардо-Авароа, Боливия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

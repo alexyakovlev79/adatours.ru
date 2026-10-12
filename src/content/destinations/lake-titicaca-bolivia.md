@@ -14,7 +14,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_bolivia_ozero_titikaka_boliviya/hero-generated-20261008.webp
-  alt: Lake Titicaca, Bolivian side near Isla del Sol — Bolivia
+  hover: "Титикака: каменные террасы на склоне над озером"
+  alt: "Синяя вода Титикаки у террасированного боливийского берега"
 gallery: []
 relatedDestinations: []
 featuredTours: []

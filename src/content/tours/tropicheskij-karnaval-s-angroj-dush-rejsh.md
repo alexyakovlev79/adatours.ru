@@ -317,7 +317,8 @@ currency: USD
 priceNote: $6149
 hero:
   src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/hero-enhanced-20261006.webp
-  alt: Грандиозный карнавал в Рио, музыка, танцы и яркие перья
+  hover: "Рио-де-Жанейро: голубые перья и украшенные костюмы на городской улице"
+  alt: "Участницы карнавального шествия в голубых костюмах и высоких перьях, Рио-де-Жанейро, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -312,7 +312,8 @@ itinerary:
     После перелета и трансфера остаток дня свободный.'
   images:
   - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-11-enhanced-20261006.webp
-    alt: Подземное озеро в Голубой пещере Бонито в Бразилии
+    hover: "Бонито: голубая вода под каменным сводом пещеры"
+    alt: "Сталактиты над ярко-синим подземным озером Бонито, Бразилия"
   - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: Пляжный отдых в NANNAI Muro Alto, Порту-де-Галиньяш, бассейн, спа и ресторан у океана
 - day: 12

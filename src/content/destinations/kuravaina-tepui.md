@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Тепуй возле Канаймы с панорамами саванны, долины Кураупа и соседних столовых гор.
 hero:
   src: /media/tours/venesuela-novye-konkistadory/kuravaina-tepui-place-generated-20261008.webp
-  alt: Саванна и тепуи с вершины Куравейны у Канаймы, Венесуэла
+  hover: "Канайма: широкая долина у тепуи Куравайна"
+  alt: "Столовые горы и извилистая река в зеленой долине Канаймы, Венесуэла"
 gallery: []
 themes:
 - theme_adventure

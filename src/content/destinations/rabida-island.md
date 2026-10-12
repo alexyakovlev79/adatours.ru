@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "island"
 summary: "Рабида запоминается красным вулканическим песком, морскими львами у прибоя и лагуной за пляжем."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_rabida_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские львы на красном пляже острова Рабида — иллюстрация", "hover": "Рабида запоминается красным вулканическим песком, морскими львами у прибоя и лагуной за пляжем."}
+hero: {"src": "/media/destinations/destination_ecuador_rabida_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские львы и пеликан на красном пляже Рабиды, Галапагосы, Эквадор", "hover": "Рабида: морские львы у прибоя на красноватом песке"}
 gallery: []
 themes: ["theme_wildlife"]
 relatedDestinations: []

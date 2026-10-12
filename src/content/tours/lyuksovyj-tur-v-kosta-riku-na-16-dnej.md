@@ -49,7 +49,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/hero-enhanced-20261006.webp
-  alt: "Горячие источники Табакон у вулкана Ареналь, Коста-Рика"
+  hover: "Табакон: белая вода под мостиком в тропическом саду"
+  alt: "Водный каскад под пешеходным мостиком среди зелени Табакона, Коста-Рика"
 gallery: []
 featured: false
 priority: 0

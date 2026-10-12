@@ -170,7 +170,8 @@ itinerary:
     Ночь в Камбара-ду-Сул.'
   images:
   - src: /media/tours/southern-brazil-vip-7-days/canyon-picnic-word-20261010-enhanced-20261011-pass2324-v1.webp
-    alt: Корзина с едой и покрывало для пикника у края каньона
+    hover: "Пикник с видом на отвесные скалы и зеленую долину"
+    alt: "Корзина, фрукты и закуски на клетчатом пледе у края каньона в южной Бразилии"
 - excursionRef: excursion_brazil_cambara_balloon_picnic
   places:
   - Камбара-ду-Сул

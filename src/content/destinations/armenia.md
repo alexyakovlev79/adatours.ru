@@ -9,7 +9,8 @@ destinationType: city
 summary: Армения в Колумбии, город кофейного региона Киндио и отправная точка для поездок к плантациям и долине Кокора.
 hero:
   src: /media/tours/tur-v-kolumbiyu-za-chudesami/armenia-place-generated-20261009-v1.webp
-  alt: Городская улица Армении в кофейном регионе Колумбии
+  hover: "Армения: невысокие фасады на фоне зеленых холмов"
+  alt: "Зеленая городская улица Армении с домами и пальмами, Колумбия"
 gallery: []
 themes:
 - theme_gastronomy_wine

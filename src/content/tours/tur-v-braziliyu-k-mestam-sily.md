@@ -190,7 +190,8 @@ currency: USD
 priceNote: $3653
 hero:
   src: "/media/tours/tur-v-braziliyu-k-mestam-sily/hero-enhanced-20261006.webp"
-  alt: 'На фото: регион Висконде де Мауа в Бразилии (Кофейный регион)'
+  hover: "Висконде-де-Мауа: вода стекает по каменным уступам в лесу"
+  alt: "Лесной водопад среди мшистых камней в Висконде-де-Мауа, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

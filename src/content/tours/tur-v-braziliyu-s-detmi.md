@@ -261,7 +261,8 @@ currency: USD
 priceNote: $3656
 hero:
   src: /media/tours/tur-v-braziliyu-s-detmi/hero-enhanced-20261006.webp
-  alt: 'На фото: тур в Бразилию с детьми (отдых с детьми) - макуко сафари'
+  hover: "Прогулка на лодке среди зеленых речных берегов"
+  alt: "Пассажиры в спасательных жилетах в красной лодке на лесной реке"
 routeCountries:
 - country_brazil
 routeDestinations:

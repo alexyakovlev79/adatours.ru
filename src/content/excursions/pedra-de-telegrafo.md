@@ -16,7 +16,8 @@ priceFrom: 205
 currency: USD
 hero:
   src: /media/excursions/pedra-de-telegrafo/hero-enhanced-20261001.webp
-  alt: Скала Педра-ду-Телеграфу над побережьем Рио-де-Жанейро
+  hover: "Педра-ду-Телеграфу: позирование у каменного выступа с видом на океан"
+  alt: "Женщина держится за выступ Педра-ду-Телеграфу над морским побережьем Рио-де-Жанейро, Бразилия"
 gallery:
   - src: /media/excursions/pedra-de-telegrafo/gallery-1-enhanced-20261001.webp
     hover: "Педра-ду-Телеграфу: девушка на краю скалы у морской бухты"

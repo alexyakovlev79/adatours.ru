@@ -166,7 +166,8 @@ itinerary:
     Ночь в отеле.'
   images:
   - src: /media/tours/guatemala-belize-maya-world-12-days/flores-word-07-20261010-p022-v1-enhanced-20261011-doc-v1.webp
-    alt: Остров Флорес на озере Петен-Ица с высоты, Гватемала
+    hover: "Флорес: островная застройка в окружении синей озерной воды"
+    alt: "Остров Флорес с красными крышами среди озера Петен-Ица, Гватемала"
     status: approved
   contentBlocks:
   - type: excursion

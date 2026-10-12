@@ -8,7 +8,7 @@ countryId: "country_mexico"
 destinationType: "natural_area"
 summary: "Чапультепек в Мехико соединяет тенистые аллеи и озера с замком, музеями и ботаническим садом. Здесь приятно чередовать прогулку со знакомством с историей города."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_mexico_chapultepec/hero-generated-20261010-twenty-v1.webp", "alt": "Тенистая аллея и озеро в парке Чапультепек — иллюстрация", "hover": "Чапультепек в Мехико соединяет тенистые аллеи и озера с замком, музеями и ботаническим садом. Здесь приятно чередовать прогулку со знакомством с историей города."}
+hero: {"src": "/media/destinations/destination_mexico_chapultepec/hero-generated-20261010-twenty-v1.webp", "alt": "Тенистая аллея с деревьями вдоль озера в парке Чапультепек, Мехико, Мексика", "hover": "Чапультепек: прогулочная дорожка у воды под густыми кронами"}
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

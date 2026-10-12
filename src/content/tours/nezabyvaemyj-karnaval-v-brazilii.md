@@ -71,7 +71,8 @@ itinerary:
     **Стоимость:** от $250.'
   images:
   - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-2-enhanced-20261006.webp
-    alt: Сёрфинг на пляжах Рио, океан, волны и песок в Бразилии
+    hover: "Рио-де-Жанейро: ряд серфбордов перед океаном и прибрежными горами"
+    alt: "Разноцветные доски для серфинга на песчаном пляже Рио-де-Жанейро, Бразилия"
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
 - day: 3

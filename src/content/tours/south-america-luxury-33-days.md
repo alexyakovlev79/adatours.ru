@@ -263,7 +263,8 @@ itinerary:
   text: Прибытие в Лиму и трансфер в отель.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x84-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Прибрежные скалы и набережная Лимы у Тихого океана
+    hover: "Лима: городские огни вдоль Тихого океана в сумерках"
+    alt: "Огни прибрежной дороги под скалистым берегом Лимы вечером, Перу"
 - day: 2
   title: Исторический центр Лимы
   places:
@@ -321,7 +322,8 @@ itinerary:
   text: Продолжение круиза Aqua Nera по Амазонии. Ежедневные выходы с опытными гидами проходят по программе судна.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x198-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Судно Aqua Nera на амазонской реке в вечернем свете
+    hover: "Aqua Nera: освещенные окна над отражениями речной воды"
+    alt: "Круизное судно Aqua Nera на реке в золотистом вечернем свете, перуанская Амазония"
 - day: 6
   title: 'Круиз Aqua Nera: реки и тропический лес'
   places:
@@ -400,7 +402,8 @@ itinerary:
   text: Мачу-Пикчу на поезде Hiram Bingham. Подробная экскурсионная программа приведена ниже.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x297-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Каменные террасы Мачу-Пикчу на фоне андских вершин
+    hover: "Мачу-Пикчу: древние стены и террасы на фоне гор"
+    alt: "Каменные террасы Мачу-Пикчу перед зеленой вершиной Уайна-Пикчу, Перу"
 - excursionRef: excursion_machu_picchu_hiram_bingham_sanctuary_tea
   places:
   - Мачу-Пикчу
@@ -533,7 +536,8 @@ itinerary:
   text: Лагуны Альтиплано и переезд в Чили. Подробная экскурсионная программа приведена ниже.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x452-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Красная вода Лагуны Колорада и животные на ее берегу
+    hover: "Лагуна Колорада: красное озеро и животные на каменистом берегу"
+    alt: "Животные у красной воды Лагуны Колорада перед сухими горами, Боливия"
 - excursionRef: excursion_altiplano_lagoons_chalviri_chile_border
   places:
   - Уюни
@@ -560,7 +564,8 @@ itinerary:
     Лунной долине и закат. Вечером астрономический тур с профессиональными телескопами и легким пикником.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x483-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Красноватые скальные гребни и сухой рельеф Лунной долины
+    hover: "Лунная долина: высокие ребристые скалы под синим небом"
+    alt: "Красноватые скальные стены и песчаные склоны Лунной долины в Атакаме, Чили"
 - excursionRef: excursion_el_tatio_geysers_dawn_outdoor_breakfast
   places:
   - Гейзеры Эль-Татио
@@ -614,7 +619,8 @@ itinerary:
   text: Винодельня VIK на вертолете. Подробная экскурсионная программа приведена ниже.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x551-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Современная архитектура винодельни VIK среди цветников
+    hover: "VIK: современная архитектура вокруг двора с розовыми цветами"
+    alt: "Волнистая металлическая крыша здания VIK над двором с цветниками, Чили"
 - excursionRef: excursion_vik_winery_helicopter_tasting_lunch
   places:
   - Винодельня «Вик»

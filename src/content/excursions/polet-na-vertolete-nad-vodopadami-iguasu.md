@@ -12,7 +12,8 @@ destination: destination_brazil_iguacu
 language: []
 hero:
   src: /media/excursions/iguazu-falls-helicopter-flight/hero-generated-20261011-v1.webp
-  alt: "Экскурсионный вертолёт над каскадами водопадов Игуасу"
+  hover: "Игуасу: полет над широкими водопадами и облаками брызг"
+  alt: "Вертолет над каскадами Игуасу и густым лесом"
 gallery: []
 route:
   - "Фос-ду-Игуасу"

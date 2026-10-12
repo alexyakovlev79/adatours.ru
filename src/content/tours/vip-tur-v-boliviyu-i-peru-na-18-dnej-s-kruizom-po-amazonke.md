@@ -82,7 +82,8 @@ itinerary:
     После ужина возвращение в отель, дорога занимает около 5 минут пешком. Ночь в Лиме.
   images:
   - src: "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Колониальная архитектура старых зданий Лимы столицы Перу
+    hover: "Лима: украшенные порталы и башни кафедрального собора"
+    alt: "Фасад кафедрального собора Лимы с двумя башнями под ярким небом, Перу"
 - day: 3
   title: Икитос и круиз Aria Amazon по Амазонке
   places:

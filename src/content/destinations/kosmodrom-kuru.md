@@ -10,7 +10,8 @@ summary: 'Космодром Куру во Французской Гвиане: 
 searchAliases: []
 hero:
   src: /media/countries/french-guiana/featureBands-2-enhanced-20261002.webp
-  alt: 'На фото: запуск ракеты с космодрома Куру во Французской Гвиане'
+  hover: "Куру: старт ракеты под темными облаками"
+  alt: "Взлетающая ракета с ярким огненным следом на космодроме Куру, Французская Гвиана"
 gallery:
 - src: /media/destinations/kosmodrom-kuru/gallery-1-enhanced-20261005.webp
   hover: 'Французская Гвиана: прибрежные дома в окружении пальм'

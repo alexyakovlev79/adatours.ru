@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Калакмуль в Кампече, древний город майя с крупными пирамидами среди тропического леса.
 hero:
   src: /media/tours/cancun-palenque-cenot/calakmul-place-generated-20261009-v1.webp
-  alt: Пирамида Калакмуля среди тропического леса Кампече
+  hover: "Калакмуль: центральная лестница пирамиды среди лесной зелени"
+  alt: "Широкая ступенчатая пирамида Калакмуля над тропическим лесом, Мексика"
 gallery: []
 themes:
 - theme_culture

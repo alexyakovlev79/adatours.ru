@@ -405,7 +405,8 @@ currency: USD
 priceNote: $17550
 hero:
   src: /media/tours/braziliya-i-peru-na-novyj-god/hero-enhanced-20261006.webp
-  alt: Новый Год в Рио
+  alt: "Розовые и оранжевые вспышки фейерверка в ночном небе"
+  hover: "Ночной салют: розовые огни и яркие искры на темном фоне"
 routeCountries:
 - country_brazil
 - country_peru

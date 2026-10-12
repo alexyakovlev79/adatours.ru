@@ -191,7 +191,8 @@ itinerary:
     Включены завтрак и ужин.
   images:
   - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: вулканы в Эквадоре'
+    alt: "Снежный вулкан на фоне зеленых полей и низких облаков, Эквадор"
+    hover: "Эквадор: белая вулканическая вершина над зеленой сельской долиной"
 - day: 8
   title: 'Вторник: Национальный парк Котопакси и возвращение в Кито'
   places:
@@ -289,7 +290,8 @@ currency: USD
 priceNote: $7319
 hero:
   src: "/media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: вулканы в Эквадоре'
+  alt: "Заснеженный вулкан Эквадора над сухим высокогорьем в вечернем свете"
+  hover: "Эквадор: снежная вершина вулкана под розовыми облаками"
 routeCountries:
 - country_ecuador
 routeDestinations:

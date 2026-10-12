@@ -359,7 +359,8 @@ currency: USD
 priceNote: $6326
 hero:
   src: /media/tours/tur-v-braziliyu-na-13-dnej/hero-enhanced-20261006.webp
-  alt: 'На фото: попугай из Бразиии'
+  alt: "Сине-желтый попугай ара на стволе дерева на фоне заката, Бразилия"
+  hover: "Бразилия: яркий ара с желтой грудью и синими крыльями на вечернем фоне"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -12,7 +12,8 @@ destination: destination_argentina_buenos_aires
 language: []
 hero:
   src: /media/excursions/tango-shou-s-uzhinom-v-buenos-ajrese/hero-enhanced-20261001.webp
-  alt: Танго в Буэнос-Айресе
+  alt: "Пара танцует танго на мощеной улице возле музыкантов на закате"
+  hover: "Уличное танго: красное платье, темный костюм и музыканты у кафе"
 gallery: []
 route:
   - Буэнос-Айрес

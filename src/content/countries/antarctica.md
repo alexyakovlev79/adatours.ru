@@ -23,7 +23,8 @@ gallery:
     hover: "Антарктида: крупный айсберг среди морских волн"
     alt: "Плоский бело-голубой айсберг в темной воде Антарктиды"
   - src: /media/countries/antarctica/feature-2-wildlife-enhanced-20261001.webp
-    alt: Пингвины в Антарктиде
+    alt: "Пингвины с оранжевыми клювами на каменистом берегу Антарктиды"
+    hover: "Антарктида: группа пингвинов у льда и снежных гор"
   - src: /media/countries/antarktida/gallery-5-enhanced-20261001.webp
     alt: Айсберги и горы Антарктиды
   - src: /media/countries/antarctica/feature-1-zodiac-enhanced-20261001.webp

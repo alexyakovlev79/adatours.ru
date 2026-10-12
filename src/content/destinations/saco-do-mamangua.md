@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Длинная морская бухта возле Парати с лесистыми склонами, небольшими пляжами и тихими прибрежными поселениями.
 hero:
   src: /media/tours/brazilskaya-mechta/saco-do-mamangua-place-generated-20261008.webp
-  alt: Сако-ду-Мамангуа
+  alt: "Сако-ду-Мамангуа между лесистыми горными берегами, Бразилия"
+  hover: "Сако-ду-Мамангуа в Бразилии: длинный морской залив среди зеленых холмов"
 gallery: []
 themes:
 - theme_beach

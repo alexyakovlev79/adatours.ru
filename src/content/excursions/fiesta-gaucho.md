@@ -23,9 +23,11 @@ gallery:
     hover: "Аргентинский гаучо на лошади среди стада"
     alt: "Гаучо верхом поднимает красную ткань среди скота на аргентинском ранчо"
   - src: /media/excursions/fiesta-gaucho/gallery-2-enhanced-20261001.webp
-    alt: Соревнование гаучо
+    alt: "Всадник на вставшей на дыбы лошади перед зрителями соревнования гаучо, Аргентина"
+    hover: "Аргентина: выступление всадника на лошади перед собравшейся публикой"
   - src: /media/excursions/fiesta-gaucho/gallery-3-enhanced-20261001.webp
-    alt: Шоу гаучо в Аргентине
+    alt: "Всадник на лошади и участник шоу гаучо на аргентинском ранчо"
+    hover: "Аргентина: выступление гаучо с лошадью на открытой площадке"
   - src: /media/excursions/fiesta-gaucho/gallery-4-enhanced-20261001.webp
     alt: Конное мастерство аргентинских гаучо
   - src: /media/excursions/fiesta-gaucho/gallery-5-enhanced-20261001.webp

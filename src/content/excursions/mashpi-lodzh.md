@@ -26,7 +26,8 @@ gallery:
   - src: /media/excursions/mashpi-lodzh/gallery-1-src-enhanced-20261008.webp
     alt: Природа заповедника Машпи
   - src: /media/excursions/mashpi-lodzh/gallery-3-src-enhanced-20261008.webp
-    alt: Машпи Лодж в Эквадоре
+    alt: "Гостиная Машпи Лодж с диванами и большими окнами в тропический лес, Эквадор"
+    hover: "Машпи Лодж в Эквадоре: светлый интерьер с видом на густую зелень"
 route:
   - Кито
   - Середина мира

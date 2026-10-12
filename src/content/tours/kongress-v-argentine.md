@@ -27,7 +27,8 @@ priceNote: "Стоимость уточняется"
 dates: []
 hero:
   src: /media/tours/kongress-v-argentine/hero-enhanced-20261006.webp
-  alt: "Улица Буэнос-Айреса"
+  alt: "Перекресток Буэнос-Айреса с исторической церковью и высокой часовой башней, Аргентина"
+  hover: "Буэнос-Айрес: пешеходы на городской улице между светлыми историческими зданиями"
 gallery: []
 featured: false
 priority: 0

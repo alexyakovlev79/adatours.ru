@@ -283,7 +283,8 @@ currency: USD
 priceNote: $10312
 hero:
   src: /media/tours/surinam-gajana-frantsuzskaya-gviana/hero-enhanced-20261006.webp
-  alt: Суринам, Гайана, Французская Гвиана
+  alt: "Большое дерево с обнаженными корнями у светлого песчаного берега"
+  hover: "Дерево над пляжем перед бирюзовой водой и низким зеленым берегом"
 routeCountries:
 - country_guyana
 - country_suriname

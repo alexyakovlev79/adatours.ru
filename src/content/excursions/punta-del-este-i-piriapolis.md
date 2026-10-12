@@ -22,7 +22,8 @@ hero:
   alt: "Белое здание с террасами на скалистом берегу, Уругвай"
 gallery:
   - src: /media/excursions/punta-del-este-i-piriapolis/gallery-0-src-enhanced-20261008.webp
-    alt: Пириаполис, Уругвай
+    alt: "Морская бухта, пляж и прибрежная застройка Пириаполиса, Уругвай"
+    hover: "Пириаполис в Уругвае: широкая береговая дуга у синего моря"
   - src: /media/excursions/punta-del-este-i-piriapolis/gallery-1-src-enhanced-20261008.webp
     alt: Пириаполис и его историческая архитектура
   - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"

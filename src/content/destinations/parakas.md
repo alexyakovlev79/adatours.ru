@@ -10,7 +10,8 @@ summary: "Полуостров Паракас: скалистое побереж
 searchAliases: []
 hero:
   src: "/media/destinations/parakas/hero-enhanced-20261005.webp"
-  alt: "На фото: остров Паракас в Перу"
+  alt: "Катера под большой скальной аркой у побережья Паракаса, Перу"
+  hover: "Паракас в Перу: морская скальная арка и туристические лодки"
 gallery:
   - src: "/media/destinations/parakas/gallery-1-enhanced-20261005.webp"
     alt: "Красноватый пляж и жёлтые скалы побережья Паракаса, Перу"

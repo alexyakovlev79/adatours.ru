@@ -30,7 +30,8 @@ gallery:
 - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-2-src-enhanced-20261008.webp
   alt: Подземные пространства Соляного собора
 - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-3-src-enhanced-20261008.webp
-  alt: Сипакира, Колумбия
+  alt: "Голубой светящийся крест в скальном зале Соляного собора Сипакиры, Колумбия"
+  hover: "Сипакира в Колумбии: подсвеченный крест над каменным алтарем"
 - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-4-src-enhanced-20261007.webp
   hover: "Богота: картины перед цветным фасадом уличной галереи"
   alt: "Картины у входа в здание с красным фасадом и зелеными балконами, Богота, Колумбия"

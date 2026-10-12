@@ -10,7 +10,8 @@ summary: Боуза, бутиковая винодельня рядом с Мо�
   кухней.
 hero:
   src: /media/destinations/bouza-winery/hero-generated-20261009-v3.webp
-  alt: Винодельня Боуза
+  alt: "Ряды виноградников винодельни Боуза на пологих холмах, Уругвай"
+  hover: "Боуза в Уругвае: зеленые виноградные ряды в сельском пейзаже"
 gallery: []
 themes:
 - theme_gastronomy_wine

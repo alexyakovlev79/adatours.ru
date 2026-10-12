@@ -228,7 +228,8 @@ currency: USD
 priceNote: $3305
 hero:
   src: "/media/tours/venesuela-treking-v-zateryannyj-i-pervozdannyj-mir-rorajmy/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: сосуды из Венесуэлы'
+  alt: "Темный керамический кувшин и кружка перед кирпичной стеной"
+  hover: "Керамические сосуды с рельефными украшениями на деревянном столе"
 routeCountries:
 - country_venezuela
 routeDestinations:

@@ -15,7 +15,7 @@ language: []
 priceFrom: 44
 currency: "USD"
 priceNote: "Стоимость — $44."
-hero: {"src":"/media/excursions/jekskursija-v-buzios/hero-src-enhanced-20261007.webp","alt":"Экскурсия в Бузиос"}
+hero: {"src":"/media/excursions/jekskursija-v-buzios/hero-src-enhanced-20261007.webp","alt":"Доски для серфинга и разноцветный зонт на пляже Бузиоса, Бразилия","hover":"Бузиос в Бразилии: серфовые доски у песчаного пляжа с прибоем"}
 gallery: [{"src":"/media/excursions/jekskursija-v-buzios/gallery-0-src-enhanced-20261008.webp","alt":"Прибрежный отель на зеленом склоне, Бузиос, Бразилия", hover: "Бузиос в Бразилии: отель среди пальм над пляжем"},{"src":"/media/excursions/jekskursija-v-buzios/gallery-2-enhanced-20261006.webp","alt":"Лодки в спокойной бухте у песчаного берега, Бузиос, Бразилия", hover: "Бузиос в Бразилии: лодки в спокойной бухте у песчаного берега"},{"src":"/media/excursions/jekskursija-v-buzios/gallery-2-src-enhanced-20261008.webp","alt":"Красная лодка на пляже перед бухтой, Бузиос, Бразилия", hover: "Бузиос в Бразилии: красная лодка на песке перед бухтой"}]
 route: ["Рио-де-Жанейро","Бузиос"]
 lead: "Групповая экскурсия из Рио-де-Жанейро в Бузиос — рыбацкую деревушку с живописными пляжами, экзотической растительностью и видами на океан и горы."

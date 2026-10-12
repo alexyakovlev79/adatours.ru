@@ -8,7 +8,8 @@ summary: >-
   Мото-маршруты по Бразилии, Аргентине, Чили, Перу, Боливии, Коста-Рике и другим странам региона собираются вокруг дороги: покрытия, рельефа, дневного пробега и времени на остановки.
 hero:
   src: /media/themes/moto-tury/hero-enhanced-20261001.webp
-  alt: Мотоцикл на дороге
+  alt: "Мотоциклистка на серебристом мотоцикле на дороге среди зеленых холмов"
+  hover: "Поездка на мотоцикле по дороге в холмистой местности"
 imageTextAlign: left
 sourceUrl: https://brasiltours.ru/moto-tury
 sourceSnapshot: page_texts_original/moto-tury__55b12a54.md

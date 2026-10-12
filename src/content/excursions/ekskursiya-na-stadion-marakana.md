@@ -18,7 +18,8 @@ destinationName: Рио-де-Жанейро
 sourceSnapshot: https://drive.google.com/file/d/1oe_MGXzmP19QpDhd3_pXXXlyd4VVYqYw/view?usp=drivesdk
 hero:
   src: /media/excursions/ekskursiya-na-stadion-marakana/hero-enhanced-20261006.webp
-  alt: Стадион Маракана
+  alt: "Посетительница на фоне футбольного поля и трибун стадиона Маракана, Рио-де-Жанейро, Бразилия"
+  hover: "Маракана в Рио: девушка у зеленого поля под крышей стадиона"
 themes: ["theme_culture","theme_family"]
 ---
 

@@ -9,7 +9,8 @@ destinationType: region
 summary: Винодельня Спиноглио к северу от Монтевидео сохранила исторический погреб и окружена виноградниками и парком.
 hero:
   src: /media/destinations/spinoglio-winery/hero-generated-20261009-v3.webp
-  alt: Винодельня Спиноглио
+  alt: "Гроздья темного винограда и зеленые лозы винодельни Спиноглио, Уругвай"
+  hover: "Спиноглио в Уругвае: виноградные ряды и спелые гроздья в солнечном свете"
 gallery: []
 themes:
 - theme_gastronomy_wine

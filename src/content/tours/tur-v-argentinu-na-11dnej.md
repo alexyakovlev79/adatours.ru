@@ -52,7 +52,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/tur-v-argentinu-na-11dnej/hero-enhanced-20261006.webp
-  alt: "Аргентина Делюкс"
+  alt: "Голубой айсберг на озере перед снежными горными склонами"
+  hover: "Ледяная глыба в синей воде на фоне темных и заснеженных гор"
 gallery: []
 featured: false
 priority: 0

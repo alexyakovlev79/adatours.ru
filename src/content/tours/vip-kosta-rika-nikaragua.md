@@ -333,7 +333,8 @@ currency: USD
 priceNote: $17500
 hero:
   src: /media/tours/vip-kosta-rika-nikaragua/hero-src-enhanced-20261007.webp
-  alt: 'На фото: вулкан в Никарагуа'
+  alt: "Белое облако над кратером красноватого вулкана, Никарагуа"
+  hover: "Никарагуа: вулканический кратер с выходящим белым паром"
 routeCountries:
 - country_costa_rica
 - country_nicaragua

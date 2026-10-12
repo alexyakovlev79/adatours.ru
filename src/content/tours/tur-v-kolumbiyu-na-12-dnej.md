@@ -273,7 +273,8 @@ currency: USD
 priceNote: $5135
 hero:
   src: "/media/tours/tur-v-kolumbiyu-na-12-dnej/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: шоппинг в Колумбии'
+  alt: "Яркие сумки, украшения и плетеные изделия на стене сувенирной лавки, Колумбия"
+  hover: "Колумбия: разноцветные ремесленные изделия на красной стене магазина"
 routeCountries:
 - country_colombia
 routeDestinations:

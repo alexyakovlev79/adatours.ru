@@ -17,7 +17,8 @@ gallery:
   - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-0-src-enhanced-20261007.webp"
     alt: ""
   - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-1-src-enhanced-20261007.webp"
-    alt: ""
+    alt: "Круглая россыпь обжаренных кофейных зерен на грубой ткани"
+    hover: "Коричневые кофейные зерна на светлой мешковине"
   - src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
     hover: "Кофейные зерна крупным планом рядом с каплями воды на листе"
     alt: "Коричневые кофейные зерна на мокром зеленом листе и деревянной поверхности"
@@ -25,7 +26,8 @@ gallery:
     hover: "Мужчина собирает кофейные ягоды на плантации"
     alt: "Сборщик с корзиной у куста с красными кофейными ягодами"
   - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-4-src-enhanced-20261007.webp"
-    alt: ""
+    alt: "Раскрытый плод какао, чашка коричневого напитка и выпечка на столе"
+    hover: "Плод какао со светлыми семенами рядом с чашкой и выпечкой"
 route:
   - "Долина Кофе штата Рио-де-Жанейро"
 lead: "Поездка в Долину Кофе штата Рио-де-Жанейро: исторические фазенды, сельские пейзажи и история кофейного богатства Бразилии. Включены трансфер, гид и ужин."

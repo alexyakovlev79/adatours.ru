@@ -357,7 +357,8 @@ currency: USD
 priceNote: $10548
 hero:
   src: /media/tours/chili-argentina/hero-enhanced-20261006.webp
-  alt: Чили & Аргентина Делюкс
+  alt: "Озеро и лесистый берег перед снежными пиками Патагонии, Аргентина"
+  hover: "Аргентинская Патагония: горные вершины над синим озером и зеленым лесом"
 routeCountries:
 - country_chile
 - country_argentina

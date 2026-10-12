@@ -21,7 +21,8 @@ hero:
   alt: "Нос моторной лодки в заливе Гуанабара на фоне Сахарной Головы и золотого заката, Рио-де-Жанейро, Бразилия"
 gallery:
   - src: "/media/excursions/zaliv-guanabara-morskaya-progulka/gallery-0-src-enhanced-20261007.webp"
-    alt: "На фото: Пляж Рио-де-Жанейро"
+    alt: "Пляж Рио-де-Жанейро с городской застройкой у зеленой горы, Бразилия"
+    hover: "Рио-де-Жанейро: морская бухта, песчаный пляж и дома под горным склоном"
   - src: "/media/excursions/zaliv-guanabara-morskaya-progulka/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Ночной вид на залив Гуанабара в Рио"
 route:

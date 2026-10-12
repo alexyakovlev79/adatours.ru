@@ -262,8 +262,9 @@ itinerary:
       После экскурсии возвращение в лодж.
     images:
       - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-5-enhanced-20261006.webp
-        alt: "Ледник Перито-Морено"
+        alt: "Ледяные гребни Перито-Морено перед снежными горными склонами, Аргентина"
         intendedSlot: "itinerary:day-5"
+        hover: "Перито-Морено в Аргентине: широкое поле голубого льда с глубокими трещинами"
   - day: 6
     title: "El Calafate - Ushuaia"
     places:

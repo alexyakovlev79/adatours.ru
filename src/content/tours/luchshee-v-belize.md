@@ -184,7 +184,8 @@ currency: USD
 priceNote: $3853
 hero:
   src: /media/tours/luchshee-v-belize/hero-enhanced-20261006.webp
-  alt: Лучшее в Белизе
+  alt: "Вход в пещеру через скальную арку над густым зеленым лесом, Белиз"
+  hover: "Белиз: заросшие каменные стены вокруг светлого входа в пещеру"
 routeCountries:
 - country_belize
 routeDestinations:

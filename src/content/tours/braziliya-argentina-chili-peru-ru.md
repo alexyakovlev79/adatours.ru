@@ -338,7 +338,8 @@ currency: USD
 priceNote: $6146
 hero:
   src: "/media/tours/braziliya-argentina-chili-peru-ru/hero-enhanced-20261006.webp"
-  alt: 'На фото: Пляж в Рио-де-Жанейро'
+  alt: "Пляж с лодками у зеленых скал Рио-де-Жанейро, Бразилия"
+  hover: "Рио-де-Жанейро: лодки на песчаном берегу под высокими скальными склонами"
 routeCountries:
 - country_brazil
 - country_argentina

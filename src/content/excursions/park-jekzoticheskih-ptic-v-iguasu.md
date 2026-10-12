@@ -22,11 +22,13 @@ hero:
   alt: "Тукан с крупным желто-оранжевым клювом на деревянном периле среди зелени Парка птиц в Игуасу"
 gallery:
   - src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/gallery-1-enhanced-20260930.webp
-    alt: Парк птиц в Игуасу
+    alt: "Водопады Игуасу с многоярусными каскадами среди зеленых уступов"
+    hover: "Игуасу: панорама водопадов под облачным небом"
   - src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/gallery-2-enhanced-20260930.webp
     alt: Попугай в Парке птиц Игуасу
   - src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/gallery-3-enhanced-20260930.webp
-    alt: Птицы в парке Игуасу
+    alt: "Два тукана с яркими оранжевыми клювами в Парке птиц Игуасу, Бразилия"
+    hover: "Парк птиц Игуасу: черно-белые туканы на ветке в лесной зелени"
   - src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/gallery-4-enhanced-20260930.webp
     alt: Парк птиц в районе Игуасу
 route:

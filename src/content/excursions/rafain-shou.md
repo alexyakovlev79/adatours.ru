@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Стоимость — $150. Тарифы: 1 PAX — $247; 2 PAX — $138; 3 PAX — $150."
 hero:
   src: "/media/excursions/rafain-shou/hero-enhanced-20261006.webp"
-  alt: "На фото: Танцоры на Рафаин-шоу"
+  alt: "Танцоры в разноцветных костюмах под вывеской Рафаин-шоу, Бразилия"
+  hover: "Рафаин-шоу в Бразилии: яркие костюмы и перьевые украшения на сцене"
 gallery:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: "На фото: Буэнос-Айрес Аргентина"

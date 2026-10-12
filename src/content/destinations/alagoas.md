@@ -12,7 +12,8 @@ themes:
 - theme_beach
 hero:
   src: /media/destinations/destination_brazil_alagoas/destination_brazil_alagoas-generated-20261008.webp
-  alt: Алагоас - Бразилия
+  alt: "Светлый пляж с пальмами и прозрачным мелководьем в Алагоасе, Бразилия"
+  hover: "Алагоас в Бразилии: бирюзовая вода у песчаного берега и кокосовых пальм"
 gallery: []
 relatedDestinations: []
 featuredTours: []

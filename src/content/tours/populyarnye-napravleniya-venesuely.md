@@ -192,7 +192,8 @@ itinerary:
     **Питание:** завтрак, ужин.
   images:
   - src: /media/tours/populyarnye-napravleniya-venesuely/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: Остров Маргарита
+    alt: "Кокосовая пальма и лежак на светлом песке перед бирюзовым морем"
+    hover: "Тропический пляж: пальма с кокосами у прозрачной воды"
 - day: 8
   title: Остров Маргарита
   places:
@@ -203,7 +204,8 @@ itinerary:
     Отель работает по системе «все включено».
   images:
   - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-11-images-0-src-enhanced-20261007.webp"
-    alt: Остров Маргарита
+    alt: "Лодки в синей бухте у зеленого скалистого мыса"
+    hover: "Морская бухта с небольшими лодками и домами на лесистом берегу"
 - day: 9
   title: Обзорная экскурсия по острову Маргарита
   places:
@@ -232,7 +234,8 @@ itinerary:
     Вечером возвращение в отель.
   images:
   - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-12-images-1-src-enhanced-20261007.webp"
-    alt: Остров Маргарита
+    alt: "Пальмы и низкие дома у пляжа с волнами и прибрежными островами"
+    hover: "Прибой у песчаного берега на фоне зеленых мысов и островов"
 - day: 10
   title: Остров Маргарита
   places:

@@ -10,7 +10,8 @@ summary: "Писко на побережье Перу известен вино�
 searchAliases: []
 hero:
   src: "/media/destinations/pisko/hero-enhanced-20261005.webp"
-  alt: "На фото: город Писко в Перу"
+  alt: "Песчаные дюны и редкая растительность на фоне гор у Писко, Перу"
+  hover: "Писко в Перу: светлые песчаные холмы между сухой зеленью и горным хребтом"
 gallery:
   - src: "/media/destinations/pisko/gallery-1-enhanced-20261005.webp"
     alt: "Каменные руины на берегу синего озера с горами вдали"

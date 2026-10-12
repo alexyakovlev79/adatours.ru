@@ -14,7 +14,8 @@ priceFrom: 300
 currency: USD
 hero:
   src: /media/excursions/kajaking-v-el-chalten/hero-enhanced-20261006.webp
-  alt: "Каякинг в Патагонии"
+  alt: "Туристы в каяках среди голубых айсбергов на горном озере Патагонии"
+  hover: "Каякинг в Патагонии: яркие весла и плавучий лед перед снежными горами"
 gallery: []
 route:
   - "Эль-Чалтен"

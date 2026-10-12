@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Аху-Те-Пито-Кура — археологическая зона острова Пасхи с крупной статуей моаи вне каменоломни.
 hero:
   src: /media/destinations/ahu-te-pito-kura/hero-generated-20261009-v3.webp
-  alt: Аху-Те-Пито-Кура
+  alt: "Поверженная статуя моаи у Аху-Те-Пито-Кура на острове Пасхи, Чили"
+  hover: "Аху-Те-Пито-Кура: лежащий моаи на каменистой травянистой земле у моря"
 gallery: []
 themes:
 - theme_culture

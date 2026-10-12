@@ -13,7 +13,7 @@ language: []
 priceFrom: 50
 currency: "USD"
 priceNote: "Стоимость — $50."
-hero: {"src":"/media/excursions/jekskursija-v-park-ptic/hero-src-enhanced-20261008.webp","alt":"Экскурсия в Парк птиц."}
+hero: {"src":"/media/excursions/jekskursija-v-park-ptic/hero-src-enhanced-20261008.webp","alt":"Зеленый попугай с красным лбом и синими перьями на ветке в Парке птиц Игуасу, Бразилия","hover":"Парк птиц Игуасу: крупный зеленый попугай на деревянной ветке"}
 gallery: [{"src":"/media/excursions/jekskursija-v-park-ptic/gallery-0-src-enhanced-20261008.webp","alt":"Тукан с ярким оранжевым клювом на ограждении, Бразилия", hover: "Бразилия: тукан на деревянных перилах в парке птиц"}]
 route: ["Парк птиц"]
 lead: "Экскурсия в Парк птиц рядом с Национальным парком Игуассу: прогулка по субтропическому лесу и огромным вольерам с экзотическими птицами."

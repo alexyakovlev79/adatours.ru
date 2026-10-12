@@ -10,7 +10,8 @@ summary: "Тумбес на севере перуанского побережь
 searchAliases: []
 hero:
   src: "/media/destinations/tumbes/hero-enhanced-20261005.webp"
-  alt: "На фото: город Тумбес в Перу"
+  alt: "Множество небольших рыбацких лодок на морской воде у Тумбеса, Перу"
+  hover: "Тумбес в Перу: разноцветные лодки на спокойном море"
 gallery:
 - src: /media/destinations/tumbes/gallery-1-enhanced-20261005.webp
   alt: "Фасад жёлтого городского здания с окнами и балконами"

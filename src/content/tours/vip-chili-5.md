@@ -113,7 +113,8 @@ itinerary:
     После экскурсий трансфер и размещение в отеле.
   images:
   - src: /media/tours/vip-chili-5/itinerary-2-images-0-src-enhanced-20261007.webp
-    alt: Сан-Педро-де-Атакама
+    alt: "Улица с низкими глиняными стенами в Сан-Педро-де-Атакаме, Чили"
+    hover: "Сан-Педро-де-Атакама в Чили: охристые дома и сухие горы в вечернем свете"
 - excursionRef: excursion_chile_moon_valley_cocktail_half_day
   places:
   - Долина Луны

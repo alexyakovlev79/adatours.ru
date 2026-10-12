@@ -39,7 +39,8 @@ itinerary:
     Прибыть в Пунта-Аренас необходимо за день до поездки не позднее 17:00, чтобы успеть на брифинг. Пассажиры, которые не участвовали в брифинге, к полету не допускаются.
   images:
   - src: "/media/tours/antarktida-programma-na-ves-den/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: город Пунта-Аренас'
+    alt: "Городские крыши Пунта-Аренаса перед морем, Чили"
+    hover: "Пунта-Аренас в Чили: панорама города с цветными крышами и морским горизонтом"
 - day: 2
   title: Антарктида
   places:
@@ -85,7 +86,8 @@ currency: USD
 priceNote: $6956
 hero:
   src: "/media/tours/antarktida-programma-na-ves-den/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: тур в Антарктиду'
+  alt: "Туристы в яркой одежде на снежном берегу перед льдом и горами Антарктиды"
+  hover: "Антарктида: группа путешественников у моря с плавучим льдом"
 routeCountries:
 - country_antarctica
 routeDestinations:

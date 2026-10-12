@@ -28,7 +28,8 @@ gallery:
   - src: /media/excursions/jekskursija-v-tigre/gallery-3-enhanced-20261001.webp
     alt: Клуб морских гонок в Тигре
   - src: /media/excursions/jekskursija-v-tigre/gallery-4-enhanced-20261001.webp
-    alt: Набережная Тигре
+    alt: "Прогулочные лодки у городской набережной с причалами и высокими домами"
+    hover: "Речные лодки перед крытыми причалами и городской застройкой"
 route:
   - Буэнос-Айрес
   - Сан-Исидро

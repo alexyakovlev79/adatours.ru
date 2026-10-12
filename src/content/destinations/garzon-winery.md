@@ -9,7 +9,8 @@ destinationType: region
 summary: Винодельня Гарсон объединяет прогулку по винному хозяйству, дегустации и знакомство с сезонной кухней Уругвая.
 hero:
   src: /media/destinations/garzon-winery/hero-generated-20261009-v3.webp
-  alt: Винодельня Гарсон
+  alt: "Виноградные ряды на зеленых холмах винодельни Гарсон, Уругвай"
+  hover: "Гарсон в Уругвае: виноградники в теплом вечернем свете"
 gallery: []
 themes:
 - theme_gastronomy_wine

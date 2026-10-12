@@ -92,7 +92,8 @@ itinerary:
     Возвращение в отель.
   images:
   - src: "/media/tours/tur-v-krasochnuyu-braziliyu-2022/itinerary-day-5-enhanced-20261006.webp"
-    alt: 'на фото: Парк птиц в Игуасу'
+    alt: "Зеленые попугаи с темными головами у деревянной кормушки, Парк птиц Игуасу, Бразилия"
+    hover: "Парк птиц Игуасу: группа зеленых попугаев на деревянном ограждении"
 - excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu

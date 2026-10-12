@@ -17,7 +17,8 @@ currency: "USD"
 priceNote: "Стоимость — $101."
 hero:
   src: "/media/excursions/nezabyvaemoe-tango-shou/hero-src-enhanced-20261007.webp"
-  alt: "На фото: Танго шоу в Аргентине"
+  alt: "Танцевальная пара в глубоком наклоне на сцене танго-шоу, Буэнос-Айрес, Аргентина"
+  hover: "Танго в Буэнос-Айресе: партнер в черном костюме и танцовщица в голубом платье"
 gallery:
   - src: "/media/excursions/nezabyvaemoe-tango-shou/gallery-1-enhanced-20261006.webp"
     alt: "Металлический цветок Флоралис Хенерика с вечерней подсветкой, Буэнос-Айрес, Аргентина"

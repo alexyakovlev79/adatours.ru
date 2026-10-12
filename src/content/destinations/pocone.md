@@ -12,7 +12,8 @@ searchAliases:
 themes: []
 hero:
   src: /media/destinations/destination_brazil_pokone/pocone-v2-generated-20261008.webp
-  alt: Поконе - Бразилия
+  alt: "Невысокий дом с черепичной крышей в тени дерева, Поконе, Бразилия"
+  hover: "Поконе в Бразилии: светлый фасад сельского дома и дерево у ворот"
 gallery: []
 relatedDestinations: []
 featuredTours: []

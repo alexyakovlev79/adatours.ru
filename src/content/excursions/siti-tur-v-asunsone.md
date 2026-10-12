@@ -13,7 +13,8 @@ language: []
 priceNote: "Цена указана на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/siti-tur-v-asunsone/hero-src-enhanced-20261008.webp"
-  alt: "Сити тур в Асунсьоне"
+  alt: "Светлая церковь с высокой остроконечной башней среди деревьев"
+  hover: "Кремовый церковный фасад с арками и высокой колокольней"
 gallery:
   -
     src: "/media/excursions/siti-tur-v-asunsone/gallery-0-src-enhanced-20261007.webp"

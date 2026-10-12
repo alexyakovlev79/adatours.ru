@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Пуна-Пау — каменоломня острова Пасхи, где добывали красный камень для головных уборов моаи.
 hero:
   src: /media/destinations/puna-pau-quarry/hero-generated-20261009-v3.webp
-  alt: Каменоломня Пуна-Пау
+  alt: "Красноватые каменные заготовки в карьере Пуна-Пау на острове Пасхи, Чили"
+  hover: "Пуна-Пау на острове Пасхи: крупные цилиндрические камни на травянистом склоне"
 gallery: []
 themes:
 - theme_culture

@@ -10,7 +10,8 @@ summary: Сукре называют Белым городом за его ко�
 searchAliases: []
 hero:
   src: /media/destinations/sucre/hero-enhanced-20261003.webp
-  alt: 'На фото: город Сукре в Боливии'
+  alt: "Красные крыши и белые дома Сукре, вид из арочной галереи, Боливия"
+  hover: "Сукре в Боливии: городской пейзаж между колоннами на фоне зеленых гор"
 gallery:
 - src: /media/destinations/sucre/gallery-1-enhanced-20261003.webp
   alt: "Улица Сукре с белыми фасадами, аркой и церковной башней, Боливия"

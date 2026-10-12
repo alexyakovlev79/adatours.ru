@@ -327,7 +327,8 @@ aliases:
 - galapagosskie-ostrova-na-vip-yakhte
 hero:
   src: /media/tours/galapagosskie-ostrova-na-vip-yakhte/hero-src-enhanced-20261010.webp
-  alt: 'на фото: Галапагосские острова'
+  alt: "Игуана с желтой головой на прибрежных скалах Галапагосских островов, Эквадор"
+  hover: "Галапагосы в Эквадоре: игуана на темном камне у моря"
 ---
 
 # VIP-круиз на яхте по Галапагосским островам на 8 дней

@@ -38,7 +38,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/hero-enhanced-20261006.webp
-  alt: "Аконкагуа, Аргентина"
+  alt: "Снежные скальные склоны Аконкагуа в теплом вечернем свете, Аргентина"
+  hover: "Аконкагуа в Аргентине: оранжевое освещение скал над заснеженным склоном"
 gallery: []
 featured: false
 priority: 0

@@ -357,7 +357,8 @@ currency: USD
 priceNote: $10780
 hero:
   src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: Антигуа в Гватемале'
+  alt: "Большая церковь с красными куполами среди городской застройки, вид сверху"
+  hover: "Красно-белый церковный фасад и купола на фоне улиц и зеленых окраин"
 routeCountries:
 - country_guatemala
 - country_honduras

@@ -14,7 +14,8 @@ searchAliases:
 themes: []
 hero:
   src: /media/destinations/destination_brazil_masejo/destination_brazil_masejo-generated-20261008.webp
-  alt: Масейо - Бразилия
+  alt: "Пляж Масейо с пальмами и высотными домами у прозрачного моря, Бразилия"
+  hover: "Масейо в Бразилии: бирюзовое мелководье и городская набережная с пальмами"
 gallery: []
 relatedDestinations: []
 featuredTours: []

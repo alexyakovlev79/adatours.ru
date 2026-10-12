@@ -8,7 +8,8 @@ summary: >-
   Поездку с детьми по Латинской Америке лучше собирать с учетом возраста детей, длины переездов, жары, высоты и привычного режима дня.
 hero:
   src: /media/themes/semejnye-tury/hero-enhanced-20261001.webp
-  alt: Путешествие с детьми
+  alt: "Родители и ребенок держатся за руки у морского прибоя"
+  hover: "Семья на песчаном пляже перед волнами и бирюзовым морем"
 sourceUrl: https://brasiltours.ru/semejnyj-otdykh
 sourceSnapshot: page_texts_original/semejnyj-otdykh__12a9f6fe.md
 updatedAt: 2026-10-11

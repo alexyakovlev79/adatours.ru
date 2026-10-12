@@ -12,7 +12,8 @@ destination: destination_argentina_buenos_aires
 language: []
 hero:
   src: /media/excursions/gala-tango-s-uzhinom-i-transferom/hero-enhanced-20261006.webp
-  alt: "Танго в Буэнос-Айресе"
+  alt: "Пара танцует танго на темной сцене у лестничных перил"
+  hover: "Танго на сцене: партнеры в черной одежде и красной юбке"
 gallery: []
 route:
   - "Буэнос-Айрес"

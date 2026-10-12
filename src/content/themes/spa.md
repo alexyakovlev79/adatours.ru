@@ -8,7 +8,8 @@ summary: >-
   SPA, термальные источники и wellness-отели хорошо подходят для нескольких спокойных дней между городами, природными районами и длинными переездами.
 hero:
   src: /media/themes/spa/hero-enhanced-20261002-v2.webp
-  alt: SPA и wellness отдых
+  alt: "Женщина с полотенцем на голове касается лица на желтом фоне"
+  hover: "Уход за кожей: женщина после водных процедур на ярком фоне"
 sourceUrl: https://brasiltours.ru/spa-zdorove
 sourceSnapshot: page_texts_original/spa-zdorove__f65becfb.md
 updatedAt: 2026-10-02

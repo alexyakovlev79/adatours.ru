@@ -24,7 +24,8 @@ gallery:
   - src: /media/excursions/khram-pachakamak/gallery-0-src-enhanced-20261008.webp
     alt: Руины археологического комплекса Пачакамак
   - src: /media/excursions/khram-pachakamak/gallery-1-src-enhanced-20261008.webp
-    alt: Лима, столица Перу
+    alt: "Освещенный фонтан перед желтым историческим зданием ночной Лимы, Перу"
+    hover: "Лима в Перу: ночной фонтан и подсвеченные желтые фасады"
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/hero-enhanced-20261001.webp
     hover: "Ночная Лима: освещенные башни церкви у площади"
     alt: "Подсвеченная церковь с двумя башнями и городская площадь ночью, Лима, Перу"

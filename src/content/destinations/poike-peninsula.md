@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Полуостров Пойке — часть острова Пасхи, включенная в маршруты знакомства с его побережьем.
 hero:
   src: /media/destinations/poike-peninsula/hero-generated-20261009-v3.webp
-  alt: Полуостров Пойке
+  alt: "Зеленые склоны полуострова Пойке над скалистым берегом острова Пасхи, Чили"
+  hover: "Пойке на острове Пасхи: травянистое плато и морской прибой у обрывов"
 gallery: []
 themes:
 - theme_wildlife

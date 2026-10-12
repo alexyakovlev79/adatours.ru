@@ -137,7 +137,8 @@ itinerary:
     После обеда возвращение на станцию, поезд обратно и трансфер в гостиницу в Куско.
   images:
   - src: /media/tours/ves-mnogolikij-peru-i-senor-sipan/itinerary-4-images-1-src-enhanced-20261007.webp
-    alt: 'на фото: Мачу Пикчу в Перу'
+    alt: "Мощеная дорожка между каменными стенами Мачу-Пикчу, Перу"
+    hover: "Мачу-Пикчу в Перу: дорожка вдоль древней кладки на фоне зеленой горы"
 - day: 5
   title: Священная долина
   places:
@@ -334,7 +335,8 @@ itinerary:
     Размещение в отеле **Costa del Sol 4*** или гостинице той же категории.
   images:
   - src: /media/tours/ves-mnogolikij-peru-i-senor-sipan/itinerary-13-images-1-src-enhanced-20261007.webp
-    alt: 'на фото: город Трухильо  в Перу'
+    alt: "Монумент и желтый собор на площади Трухильо, Перу"
+    hover: "Трухильо в Перу: площадь с памятником перед желтыми башнями собора"
 - day: 13
   title: Чиклайо и Сеньор Сипан - Лима
   places:

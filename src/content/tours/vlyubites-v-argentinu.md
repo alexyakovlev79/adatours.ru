@@ -189,7 +189,8 @@ itinerary:
     Ночь в Сальте.'
   images:
   - src: /media/tours/vlyubites-v-argentinu/itinerary-day-10-enhanced-20261006.webp
-    alt: 'на фото: Салта, Аргентина'
+    alt: "Дорога среди красных скал и сухих гор региона Сальты, Аргентина"
+    hover: "Сальта в Аргентине: асфальтовая дорога к красным скальным стенам"
 - day: 11
   title: Сальта - Игуасу
   places:

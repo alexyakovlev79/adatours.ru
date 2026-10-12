@@ -47,14 +47,16 @@
     "retries_per_url_in_same_step": 0
   },
   "first_next_task": {
-    "id": "adatours-com-crawl-001",
+    "id": "adatours-com-crawl-002",
     "step": 2,
     "domain": "adatours.com",
-    "action": "Continue only this frozen actual-URL batch; skip processed rows. Maximum 300 URLs and 10 minutes; checkpoint and stop. No programme sameAs comparison.",
+    "action": "Verify permitted domain/proxy access before fetching the next frozen actual-URL batch. If blocked, save the blocker and stop without advancing the cursor. Otherwise process only this batch, maximum 300 URLs and 10 minutes. No programme sameAs comparison. Retry URLs remain a separate bounded pass.",
     "inventory": "adatours-com-url-inventory-20261012.json",
     "queue": "adatours.com.json",
-    "status": "partial",
-    "url_count": 34
+    "status": "pending",
+    "url_count": 300,
+    "access_check_required": true,
+    "access_blocker": "Environment proxy rejected CONNECT with 403 Forbidden; target-site HTTP status not received. Check permitted access before beginning another batch; do not drain the next queue into proxy errors. No proof of page absence."
   },
   "resume": "Read plan.json and the selected domain queue. Run one batch, persist results/cursor and checkpoint commit, report counts, then stop until the user says далее.",
   "completed_step": 1,
@@ -80,10 +82,10 @@
     "step": 2,
     "domain": "adatours.com",
     "batch_id": "adatours-com-crawl-001",
-    "processed_in_batch": 266,
-    "remaining_in_batch": 34,
+    "processed_in_batch": 300,
+    "remaining_in_batch": 0,
     "report": "adatours-com-crawl-001.json",
-    "saved_at": "2026-10-12T13:55:53.907605+00:00"
+    "saved_at": "2026-10-12T14:05:39.273494+00:00"
   },
   "step_1": {
     "status": "completed",

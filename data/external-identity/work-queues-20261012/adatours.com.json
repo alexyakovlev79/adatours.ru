@@ -959,10 +959,10 @@
         313,
         314
       ],
-      "status": "partial",
-      "processed": 266,
-      "remaining": 34,
-      "cursor": 266,
+      "status": "completed",
+      "processed": 300,
+      "remaining": 0,
+      "cursor": 300,
       "report": "../adatours-com-crawl-001.json"
     },
     {
@@ -1310,10 +1310,23 @@
       "status": "pending"
     }
   ],
-  "crawl_cursor": 266,
+  "crawl_cursor": 300,
   "verification_cursor": 0,
   "retry_urls": [
-    "https://adatours.com/colombia-san-andres-tours-excursions-hotels/excursions"
+    "https://adatours.com/colombia-san-andres-tours-excursions-hotels/excursions",
+    "https://adatours.com/guiana-amazonian-park/packages",
+    "https://adatours.com/guyana-en",
+    "https://adatours.com/guyana-en/excursions",
+    "https://adatours.com/guyana-en/packages",
+    "https://adatours.com/honduras-en",
+    "https://adatours.com/honduras-en/excursions",
+    "https://adatours.com/honduras-en/packages",
+    "https://adatours.com/how-a-private-assistant-should-brief-a-luxury-brazil-trip",
+    "https://adatours.com/how-to-visit-the-amazon-rainforest",
+    "https://adatours.com/ilha-grande",
+    "https://adatours.com/ilha-grande/excursions",
+    "https://adatours.com/ilha-grande/packages",
+    "https://adatours.com/iquitos"
   ],
   "model_sample_keys": [
     "country_antarctica",
@@ -6095,5 +6108,13 @@
   "model_processed": 20,
   "model_cursor": 20,
   "url_inventory": "../adatours-com-url-inventory-20261012.json",
-  "model_conclusion": "Shared category ID confirmed on all 10 geographic samples. Product ID lookup succeeds for 4 of 10 programmes and returns 404 for 6. Successful ID lookup is technical linkage only; full programme/duration/format/guide-language comparison remains pending. A failed lookup does not establish absence elsewhere."
+  "model_conclusion": "Shared category ID confirmed on all 10 geographic samples. Product ID lookup succeeds for 4 of 10 programmes and returns 404 for 6. Successful ID lookup is technical linkage only; full programme/duration/format/guide-language comparison remains pending. A failed lookup does not establish absence elsewhere.",
+  "access_blocker": {
+    "type": "proxy_connect_403",
+    "observed_at": "2026-10-12T14:05:39.237207+00:00",
+    "domain": "adatours.com",
+    "message": "Environment proxy rejected CONNECT with 403 Forbidden; target-site HTTP status not received. Check permitted access before beginning another batch; do not drain the next queue into proxy errors. No proof of page absence.",
+    "report": "../adatours-com-crawl-001.json",
+    "failed_urls_this_pass": 13
+  }
 }

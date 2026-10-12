@@ -50,13 +50,12 @@
     "id": "adatours-com-crawl-002",
     "step": 2,
     "domain": "adatours.com",
-    "action": "Verify permitted domain/proxy access before fetching the next frozen actual-URL batch. If blocked, save the blocker and stop without advancing the cursor. Otherwise process only this batch, maximum 300 URLs and 10 minutes. No programme sameAs comparison. Retry URLs remain a separate bounded pass.",
+    "action": "Verify permitted access before continuing this frozen actual-URL batch; stop without starting if blocked. Skip processed rows, maximum 300 URLs and 10 minutes. Crawler stops at the first proxy CONNECT 403 and preserves one retry. No programme sameAs comparison.",
     "inventory": "adatours-com-url-inventory-20261012.json",
     "queue": "adatours.com.json",
-    "status": "pending",
-    "url_count": 300,
-    "access_check_required": true,
-    "access_blocker": "Environment proxy rejected CONNECT with 403 Forbidden; target-site HTTP status not received. Check permitted access before beginning another batch; do not drain the next queue into proxy errors. No proof of page absence."
+    "status": "partial",
+    "url_count": 244,
+    "access_check_required": true
   },
   "resume": "Read plan.json and the selected domain queue. Run one batch, persist results/cursor and checkpoint commit, report counts, then stop until the user says далее.",
   "completed_step": 1,
@@ -81,11 +80,11 @@
   "last_checkpoint": {
     "step": 2,
     "domain": "adatours.com",
-    "batch_id": "adatours-com-crawl-001",
-    "processed_in_batch": 300,
-    "remaining_in_batch": 0,
-    "report": "adatours-com-crawl-001.json",
-    "saved_at": "2026-10-12T14:05:39.273494+00:00"
+    "batch_id": "adatours-com-crawl-002",
+    "processed_in_batch": 56,
+    "remaining_in_batch": 244,
+    "report": "adatours-com-crawl-002.json",
+    "saved_at": "2026-10-12T14:31:09.848028+00:00"
   },
   "step_1": {
     "status": "completed",
@@ -94,5 +93,22 @@
     "programmes_with_shared_id_needing_content_check": 4,
     "programmes_shared_id_lookup_404": 6,
     "report": "adatours-com-model-check-20261012.json"
+  },
+  "last_access_check": {
+    "url": "https://adatours.com/iquitos/excursions",
+    "method": "HEAD",
+    "checked_at": "2026-10-12T14:22:51.763153+00:00",
+    "http_status": 200,
+    "final_url": "https://adatours.com/iquitos/excursions",
+    "content_type": "text/html; charset=utf-8",
+    "status": "access_restored_this_pass",
+    "robots": {
+      "url": "https://adatours.com/robots.txt",
+      "http_status": 200,
+      "checked_at": "2026-10-12T14:23:53.322165+00:00",
+      "sha256": "bbaf6fd733dc879f25d513f972c6b31ced894b2561e9c232936c52320e5bf40f"
+    },
+    "fetched_this_pass": 56,
+    "report": "../adatours-com-crawl-002.json"
   }
 }

@@ -198,6 +198,8 @@ def main():
                               'status': result['status'], 'url': url, 'type': result.get('page_type')}, ensure_ascii=False), flush=True)
             if result.get('http_status') == 429:
                 checkpoint('http_429'); break
+            if 'Tunnel connection failed: 403 Forbidden' in result.get('error', ''):
+                checkpoint('proxy_connect_403'); break
             if delay:
                 if time.monotonic() - started + delay >= args.seconds:
                     checkpoint('time_budget'); break

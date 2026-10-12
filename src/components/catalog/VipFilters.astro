@@ -14,10 +14,9 @@ const menus = [
   { label: 'Интерес', placeholder: 'Выбрать интерес', selected: themeId,
     options: options.themes, reset: 'Все интересы', resetHref: options.allThemesHref },
 ];
-const hrefFor = (href: string) => `${withBase(href)}#vip-filters`;
 ---
 
-<nav id="vip-filters" class="vip-filters container" aria-label="Подбор VIP-туров" data-vip-filters>
+<nav class="vip-filters container" aria-label="Подбор VIP-туров" data-vip-filters>
   {menus.map((menu) => (
     <div class="vip-filters__field">
       <span class="vip-filters__label">{menu.label}</span>
@@ -27,9 +26,9 @@ const hrefFor = (href: string) => `${withBase(href)}#vip-filters`;
           <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
         </summary>
         <ul aria-label={menu.label}>
-          {menu.resetHref && <li><a href={hrefFor(menu.resetHref)} aria-current={!menu.selected ? 'page' : undefined}>{menu.reset}</a></li>}
+          {menu.resetHref && <li><a href={withBase(menu.resetHref)} aria-current={!menu.selected ? 'page' : undefined}>{menu.reset}</a></li>}
           {menu.options.map((option) => (
-            <li><a href={hrefFor(option.href)} aria-current={option.id === menu.selected ? 'page' : undefined}>
+            <li><a href={withBase(option.href)} aria-current={option.id === menu.selected ? 'page' : undefined}>
               <span>{option.label}</span><small>{countLabel(option.count)}</small>
             </a></li>
           ))}
@@ -60,7 +59,7 @@ const hrefFor = (href: string) => `${withBase(href)}#vip-filters`;
 </script>
 
 <style>
-  .vip-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; padding-block: clamp(24px, 4vw, 40px); scroll-margin-top: 110px; }
+  .vip-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; padding-block: clamp(24px, 4vw, 40px); }
   .vip-filters__field { min-width: 0; }
   .vip-filters__label { display: block; margin-bottom: 10px; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
   .vip-filters__menu { position: relative; }

@@ -3,22 +3,22 @@
     "schemaVersion": 1,
     "counts": {
       "types": {
-        "destination": 970,
+        "destination": 980,
         "tour": 387,
-        "excursion": 390,
+        "excursion": 392,
         "country": 24
       },
       "media": {
-        "ready": 1064,
+        "ready": 1076,
         "generated": 481,
         "existing_enhanced_preserved": 130,
         "provided_originals": 71
       },
       "rawDonorUrls": 696,
       "activeTypes": {
-        "destination": 970,
+        "destination": 980,
         "tour": 351,
-        "excursion": 389,
+        "excursion": 391,
         "country": 24
       },
       "archivedTypes": {
@@ -67,7 +67,7 @@
       }
     },
     "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
-    "entityCount": 1771
+    "entityCount": 1783
   },
   "entries": [
     {
@@ -10858,7 +10858,7 @@
     {
       "id": "tour_source_led_solntse_i_kraj_zemli",
       "type": "tour",
-      "name": "Индивидуальный тур в Аргентину и Бразилию на 12 дней",
+      "name": "Лед, солнце и край земли 2027: Аргентина и Бразилия",
       "url": "/multi-country/tour/argentina-brazil-private-tour-12-days/",
       "slug": "argentina-brazil-private-tour-12-days",
       "contentPath": "src/content/tours/led-solntse-i-kraj-zemli.md",
@@ -10877,7 +10877,30 @@
         "destination_brazil_iguacu",
         "destination_brazil_rio",
         "destination_argentina_ostrov_martilo",
-        "destination_argentina_kanal_bigl"
+        "destination_argentina_kanal_bigl",
+        "destination_argentina_buenos_aires_obelisk",
+        "destination_argentina_plaza_de_mayo",
+        "destination_argentina_plaza_san_martin",
+        "destination_argentina_plaza_del_congreso",
+        "destination_argentina_la_boca",
+        "destination_argentina_san_telmo",
+        "destination_argentina_monserrat",
+        "destination_argentina_palermo",
+        "destination_argentina_recoleta",
+        "destination_argentina_puerto_madero",
+        "destination_argentina_parque_lezama",
+        "destination_argentina_parque_tres_de_febrero",
+        "destination_argentina_pipo_river",
+        "destination_argentina_ensenada_zaratiegui",
+        "destination_argentina_lago_roca",
+        "destination_argentina_lapataia_bay",
+        "destination_brazil_morro_da_urca",
+        "destination_brazil_sugarloaf_mountain",
+        "destination_brazil_rio_metropolitan_cathedral",
+        "destination_brazil_corcovado_christ_the_redeemer",
+        "destination_brazil_tijuca_national_park",
+        "destination_argentina_garganta_del_diablo",
+        "destination_argentina_nacionalnyj_park_los_glasyares"
       ],
       "sourceUrl": "https://brasiltours.ru/led-solntse-i-kraj-zemli",
       "entryPath": "data/source-index/entries/tour_source_led_solntse_i_kraj_zemli.json",
@@ -10886,6 +10909,7 @@
         "theme_culture"
       ],
       "themes": [],
+      "status": "published",
       "aliases": [
         "led-solntse-i-kraj-zemli"
       ],
@@ -10900,9 +10924,33 @@
         "destination_argentina_ozero_argentino",
         "destination_argentina_ushuajya",
         "destination_argentina_nacionalnyj_park_terra_del_fuego",
+        "destination_argentina_kanal_bigl",
         "destination_argentina_puerto_iguasu",
         "destination_brazil_iguacu",
-        "destination_brazil_rio"
+        "destination_brazil_rio",
+        "destination_argentina_buenos_aires_obelisk",
+        "destination_argentina_plaza_de_mayo",
+        "destination_argentina_plaza_san_martin",
+        "destination_argentina_plaza_del_congreso",
+        "destination_argentina_la_boca",
+        "destination_argentina_san_telmo",
+        "destination_argentina_monserrat",
+        "destination_argentina_palermo",
+        "destination_argentina_recoleta",
+        "destination_argentina_puerto_madero",
+        "destination_argentina_parque_lezama",
+        "destination_argentina_parque_tres_de_febrero",
+        "destination_argentina_pipo_river",
+        "destination_argentina_ensenada_zaratiegui",
+        "destination_argentina_lago_roca",
+        "destination_argentina_lapataia_bay",
+        "destination_brazil_morro_da_urca",
+        "destination_brazil_sugarloaf_mountain",
+        "destination_brazil_rio_metropolitan_cathedral",
+        "destination_brazil_corcovado_christ_the_redeemer",
+        "destination_brazil_tijuca_national_park",
+        "destination_argentina_garganta_del_diablo",
+        "destination_argentina_nacionalnyj_park_los_glasyares"
       ],
       "legacyUrls": [
         "/tury/led-solntse-i-kraj-zemli/",
@@ -31220,7 +31268,12 @@
       "themes": [
         "theme_culture"
       ],
-      "status": "approved"
+      "status": "approved",
+      "relatedDestinationIds": [
+        "destination_brazil_morro_da_urca",
+        "destination_brazil_sugarloaf_mountain",
+        "destination_brazil_rio_metropolitan_cathedral"
+      ]
     },
     {
       "id": "destination_mexico_hierve_el_agua",
@@ -31263,7 +31316,8 @@
       ],
       "status": "approved",
       "relatedDestinationIds": [
-        "destination_brazil_tijuca_national_park"
+        "destination_brazil_tijuca_national_park",
+        "destination_brazil_corcovado_christ_the_redeemer"
       ]
     },
     {
@@ -54133,15 +54187,14 @@
         "destination_argentina_ostrov_martilo"
       ],
       "sourceUrl": null,
-      "aliases": [],
+      "entryPath": "data/source-index/entries/excursion_martillo_penguin_walk.json",
       "themes": [
         "theme_wildlife"
       ],
       "status": "approved",
       "relatedDestinationIds": [
         "destination_argentina_ushuajya"
-      ],
-      "entryPath": "data/source-index/entries/excursion_martillo_penguin_walk.json"
+      ]
     },
     {
       "id": "excursion_bariloche_circuito_chico",
@@ -57394,6 +57447,265 @@
         "destination_chile_general_carrera_lake"
       ],
       "entryPath": "data/source-index/entries/tour_south_america_luxury_33_days.json"
+    },
+    {
+      "id": "destination_argentina_monserrat",
+      "type": "destination",
+      "name": "Монсеррат",
+      "url": "/argentina/place/monserrat/",
+      "slug": "monserrat",
+      "contentPath": "src/content/destinations/monserrat.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_monserrat"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_argentina_monserrat.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "destination_argentina_palermo",
+      "type": "destination",
+      "name": "Палермо",
+      "url": "/argentina/place/palermo/",
+      "slug": "palermo",
+      "contentPath": "src/content/destinations/palermo.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_palermo"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_argentina_palermo.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "destination_argentina_parque_lezama",
+      "type": "destination",
+      "name": "Парк Лезама",
+      "url": "/argentina/place/parque-lezama/",
+      "slug": "parque-lezama",
+      "contentPath": "src/content/destinations/parque-lezama.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_parque_lezama"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_argentina_parque_lezama.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "destination_argentina_parque_tres_de_febrero",
+      "type": "destination",
+      "name": "Парк Трес-де-Фебреро",
+      "url": "/argentina/place/parque-tres-de-febrero/",
+      "slug": "parque-tres-de-febrero",
+      "contentPath": "src/content/destinations/parque-tres-de-febrero.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_parque_tres_de_febrero"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_argentina_parque_tres_de_febrero.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "destination_argentina_plaza_del_congreso",
+      "type": "destination",
+      "name": "Площадь Конгресса",
+      "url": "/argentina/place/plaza-del-congreso/",
+      "slug": "plaza-del-congreso",
+      "contentPath": "src/content/destinations/plaza-del-congreso.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_plaza_del_congreso"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_argentina_plaza_del_congreso.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "destination_argentina_plaza_san_martin",
+      "type": "destination",
+      "name": "Площадь Сан-Мартин",
+      "url": "/argentina/place/plaza-san-martin/",
+      "slug": "plaza-san-martin",
+      "contentPath": "src/content/destinations/plaza-san-martin.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_plaza_san_martin"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_argentina_plaza_san_martin.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "destination_brazil_corcovado_christ_the_redeemer",
+      "type": "destination",
+      "name": "Корковаду и статуя Христа-Искупителя",
+      "url": "/brazil/place/corcovado-christ-the-redeemer/",
+      "slug": "corcovado-christ-the-redeemer",
+      "contentPath": "src/content/destinations/corcovado-christ-the-redeemer.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_corcovado_christ_the_redeemer"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_brazil_corcovado_christ_the_redeemer.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "destination_brazil_morro_da_urca",
+      "type": "destination",
+      "name": "Гора Урка",
+      "url": "/brazil/place/morro-da-urca/",
+      "slug": "morro-da-urca",
+      "contentPath": "src/content/destinations/morro-da-urca.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_morro_da_urca"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_brazil_morro_da_urca.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "destination_brazil_rio_metropolitan_cathedral",
+      "type": "destination",
+      "name": "Кафедральный собор Сан-Себастьян",
+      "url": "/brazil/place/rio-metropolitan-cathedral/",
+      "slug": "rio-metropolitan-cathedral",
+      "contentPath": "src/content/destinations/rio-metropolitan-cathedral.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_rio_metropolitan_cathedral"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_brazil_rio_metropolitan_cathedral.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "destination_brazil_sugarloaf_mountain",
+      "type": "destination",
+      "name": "Сахарная Голова",
+      "url": "/brazil/place/sugarloaf-mountain/",
+      "slug": "sugarloaf-mountain",
+      "contentPath": "src/content/destinations/sugarloaf-mountain.md",
+      "countryIds": [
+        "country_brazil"
+      ],
+      "destinationIds": [
+        "destination_brazil_sugarloaf_mountain"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/destination_brazil_sugarloaf_mountain.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved"
+    },
+    {
+      "id": "excursion_buenos_aires_city_parks_russian_private",
+      "type": "excursion",
+      "name": "Буэнос-Айрес: обзорная экскурсия с парками Лезама и Палермо",
+      "url": "/argentina/buenos-aires/buenos-aires-city-parks-russian-private/",
+      "slug": "buenos-aires-city-parks-russian-private",
+      "contentPath": "src/content/excursions/buenos-aires-city-parks-russian-private.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_buenos_aires"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/excursion_buenos_aires_city_parks_russian_private.json",
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved",
+      "relatedDestinationIds": [
+        "destination_argentina_buenos_aires_obelisk",
+        "destination_argentina_plaza_de_mayo",
+        "destination_argentina_plaza_san_martin",
+        "destination_argentina_plaza_del_congreso",
+        "destination_argentina_la_boca",
+        "destination_argentina_san_telmo",
+        "destination_argentina_monserrat",
+        "destination_argentina_palermo",
+        "destination_argentina_recoleta",
+        "destination_argentina_puerto_madero",
+        "destination_argentina_parque_lezama",
+        "destination_argentina_parque_tres_de_febrero"
+      ]
+    },
+    {
+      "id": "excursion_perito_moreno_english_group",
+      "type": "excursion",
+      "name": "Перито-Морено: групповая экскурсия с англоговорящим гидом",
+      "url": "/argentina/el-calafate/perito-moreno-english-group/",
+      "slug": "perito-moreno-english-group",
+      "contentPath": "src/content/excursions/perito-moreno-english-group.md",
+      "countryIds": [
+        "country_argentina"
+      ],
+      "destinationIds": [
+        "destination_argentina_el_calafate"
+      ],
+      "sourceUrl": null,
+      "entryPath": "data/source-index/entries/excursion_perito_moreno_english_group.json",
+      "themes": [
+        "theme_wildlife"
+      ],
+      "status": "approved",
+      "relatedDestinationIds": [
+        "destination_argentina_lednik_perito_moreno",
+        "destination_argentina_ozero_argentino",
+        "destination_argentina_nacionalnyj_park_los_glasyares"
+      ]
     }
   ]
 }

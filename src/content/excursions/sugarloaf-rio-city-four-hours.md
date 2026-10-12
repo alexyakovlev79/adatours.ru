@@ -7,7 +7,10 @@ title: 'Сахарная Голова и старый Рио: экскурсия
 country: country_brazil
 destination: destination_brazil_rio
 destinationName: Рио-де-Жанейро
-relatedDestinations: []
+relatedDestinations:
+- destination_brazil_morro_da_urca
+- destination_brazil_sugarloaf_mountain
+- destination_brazil_rio_metropolitan_cathedral
 themes:
 - theme_culture
 route:
@@ -17,8 +20,8 @@ route:
 lead: Подъем через Урку на Сахарную Голову и поездка по историческому центру Рио-де-Жанейро.
 hero:
   src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/hero-enhanced-20261001.webp
-  hover: "Подъем к Сахарной Голове: канатная дорога над бухтами и городом"
-  alt: "Кабина канатной дороги над зелеными вершинами и побережьем Рио-де-Жанейро, Бразилия"
+  hover: 'Подъем к Сахарной Голове: канатная дорога над бухтами и городом'
+  alt: Кабина канатной дороги над зелеными вершинами и побережьем Рио-де-Жанейро, Бразилия
 gallery: []
 language: []
 included: []

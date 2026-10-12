@@ -9,6 +9,7 @@ destination: destination_brazil_rio
 destinationName: Рио-де-Жанейро
 relatedDestinations:
 - destination_brazil_tijuca_national_park
+- destination_brazil_corcovado_christ_the_redeemer
 themes:
 - theme_culture
 - theme_wildlife
@@ -19,8 +20,8 @@ route:
 lead: Поезд через тропический лес Тижука к статуе Христа-Искупителя и смотровой площадке Корковаду.
 hero:
   src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/itinerary-day-4-enhanced-20261006.webp
-  hover: "Корковаду в Рио: статуя Христа над лесистыми горными склонами"
-  alt: "Статуя Христа-Искупителя на вершине Корковаду среди зеленых гор Рио-де-Жанейро, Бразилия"
+  hover: 'Корковаду в Рио: статуя Христа над лесистыми горными склонами'
+  alt: Статуя Христа-Искупителя на вершине Корковаду среди зеленых гор Рио-де-Жанейро, Бразилия
 gallery: []
 language: []
 included: []

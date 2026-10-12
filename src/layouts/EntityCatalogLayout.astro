@@ -4,7 +4,6 @@ import { seoPaginatedTitle } from '../lib/seo-page.mjs';
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
-import InlineMarkdown from '../components/global/InlineMarkdown.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../components/catalog/CatalogPagination.astro';
@@ -43,7 +42,7 @@ interface Props {
 }
 
 const { leadTitle, leadEntityId, kind, entries, title, h1Title = title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, themeContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
-const introBelowHero = kind === 'tour' && /^\/interests\/[^/]+\/tours\/[^/]+\/$/.test(p.rootPath);
+const isThemeCountryCatalog = kind === 'tour' && /^\/interests\/[^/]+\/tours\/[^/]+\/$/.test(p.rootPath);
 const isVipCatalog = variant === 'vip-tours' || variant === 'vip-country-tours';
 const showTourFilters = kind === 'tour' && (isVipCatalog || variant === 'global-tours'
   || /^\/[a-z0-9-]+\/tour\/$/.test(p.rootPath)
@@ -146,16 +145,11 @@ const listSchema = {
   <Hero
     eyebrow={eyebrow}
     title={`${presentation.title}${pageSuffix}`}
-    intro={introBelowHero ? undefined : presentation.intro}
+    intro={presentation.intro}
     image={hero}
-    compactCta={introBelowHero}
+    compactCta={isThemeCountryCatalog}
     compact={p.currentPage > 1 || (variant !== 'global-tours' && variant !== 'global-places')}
   />
-  {introBelowHero && presentation.intro && (
-    <div class="catalog-intro container">
-      <p><InlineMarkdown text={presentation.intro} /></p>
-    </div>
-  )}
   {showTourFilters && <TourFilters countryId={countryContextId} themeId={themeContextId} vip={isVipCatalog} />}
   {navigationLinks.length > 0 && (
     <nav class="catalog-navigation container" aria-label={navigationLabel ?? 'Связанные разделы'}>
@@ -234,14 +228,6 @@ const listSchema = {
   /* The filters already provide equal spacing above and below. */
   :global(.tour-filters ~ .statement) { padding-top: 0; }
   :global(.tour-filters ~ .statement .eyebrow) { margin-top: 0; }
-  .catalog-intro { padding-top: clamp(20px, 3vw, 32px); }
-  .catalog-intro p {
-    max-width: 1000px;
-    margin: 0;
-    color: var(--color-ink);
-    font-size: var(--text-lg);
-    line-height: 1.55;
-  }
   .catalog-navigation { padding-block: 20px; }
   .catalog-navigation ul {
     display: flex;

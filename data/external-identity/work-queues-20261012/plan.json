@@ -50,11 +50,11 @@
     "id": "adatours-com-crawl-001",
     "step": 2,
     "domain": "adatours.com",
-    "action": "Crawl only the first frozen actual-URL batch; <=300 URLs and <=10 minutes. Skip 15 already fetched records, extract compact IDs/canonical/H1 and checkpoint. Do not perform full programme sameAs comparison in this crawl pass.",
+    "action": "Continue only this frozen actual-URL batch; skip processed rows. Maximum 300 URLs and 10 minutes; checkpoint and stop. No programme sameAs comparison.",
     "inventory": "adatours-com-url-inventory-20261012.json",
     "queue": "adatours.com.json",
-    "status": "pending",
-    "url_count": 300
+    "status": "partial",
+    "url_count": 253
   },
   "resume": "Read plan.json and the selected domain queue. Run one batch, persist results/cursor and checkpoint commit, report counts, then stop until the user says далее.",
   "completed_step": 1,
@@ -75,14 +75,15 @@
     "geography.json",
     "completed-vip.json"
   ],
-  "active_step": null,
+  "active_step": 2,
   "last_checkpoint": {
-    "step": 1,
+    "step": 2,
     "domain": "adatours.com",
-    "processed": 20,
-    "confirmed_pairs": 10,
-    "report": "adatours-com-model-check-20261012.json",
-    "saved_at": "2026-10-12T10:40:12.541364+00:00"
+    "batch_id": "adatours-com-crawl-001",
+    "processed_in_batch": 47,
+    "remaining_in_batch": 253,
+    "report": "adatours-com-crawl-001.json",
+    "saved_at": "2026-10-12T11:27:05.847935+00:00"
   },
   "step_1": {
     "status": "completed",

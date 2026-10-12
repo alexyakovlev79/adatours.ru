@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { getVipFilterIndex } from '../../lib/vip-catalog';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { countryPath } from '../../lib/routes';
-import { countLabel } from '../../lib/interest-model.mjs';
+import { vipFilterDescription } from '../../lib/vip-copy.mjs';
 import EntityCatalogLayout from '../../layouts/EntityCatalogLayout.astro';
 
 export async function getStaticPaths() {
@@ -12,7 +12,7 @@ export async function getStaticPaths() {
     const country = row.country?.data;
     const theme = row.theme?.data;
     const overviewImage = country?.gallery?.find((image) => image.src !== country.hero?.src) ?? country?.hero;
-    const description = `${row.title}: ${countLabel(row.count, ['маршрут', 'маршрута', 'маршрутов'])} Ada Tours. Сравните программы, длительность и стоимость. Адаптируем поездку под ваши даты, отели и интересы.`;
+    const description = vipFilterDescription(country, theme, row.count);
     const catalogVersion = createHash('sha256').update(JSON.stringify(row.entries.map((entry) => entry.data.id))).digest('hex').slice(0, 20);
     const breadcrumbs = [
       { label: 'VIP-туры', href: '/vip/' },

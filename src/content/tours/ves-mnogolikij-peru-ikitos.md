@@ -429,7 +429,8 @@ currency: USD
 priceNote: $3910
 hero:
   src: /media/countries/peru/hero-enhanced-20260930.webp
-  alt: 'На фото: девушки-перуанки с альпакой в Перу'
+  hover: "Перу: девочка и альпака крупным планом"
+  alt: "Девочка в традиционной цветной шляпе рядом с альпакой в Перу"
 routeCountries:
 - country_peru
 routeDestinations:

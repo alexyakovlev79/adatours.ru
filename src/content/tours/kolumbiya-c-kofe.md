@@ -136,7 +136,8 @@ currency: USD
 priceNote: $1500
 hero:
   src: "/media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-4-src-enhanced-20261007.webp"
-  alt: Колумбия c Кофе
+  hover: "Богота: картины перед цветным фасадом уличной галереи"
+  alt: "Картины у входа в здание с красным фасадом и зелеными балконами, Богота, Колумбия"
 routeCountries:
 - country_colombia
 routeDestinations:

@@ -34,7 +34,8 @@ itinerary:
     Размещение.
   images:
   - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Колумбии, город Богота'
+    hover: "Богота в Колумбии: городские башни у подножия гор"
+    alt: "Высотные здания Боготы на фоне зеленых горных склонов, Колумбия"
 - day: 2
   title: 'Богота: Ла-Канделария и Монсеррат'
   places:
@@ -61,7 +62,8 @@ itinerary:
     Музей золота закрыт по понедельникам. Casa de la Moneda и Donación Botero закрыты по вторникам.
   images:
   - src: "/media/tours/colombia-bogota-cultural-ru/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Колумбии, город Богота'
+    hover: "Богота: городская магистраль с автобусами и автомобилями"
+    alt: "Автобусы и автомобили на широкой дороге среди высотных кварталов Боготы, Колумбия"
 - day: 3
   title: Богота - Соляной собор Сипакиры
   places:

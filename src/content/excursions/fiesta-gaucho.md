@@ -19,7 +19,8 @@ hero:
   alt: Аргентинский гаучо с лошадью
 gallery:
   - src: /media/excursions/fiesta-gaucho/gallery-1-enhanced-20261001.webp
-    alt: Гаучо верхом на лошади
+    hover: "Аргентинский гаучо на лошади среди стада"
+    alt: "Гаучо верхом поднимает красную ткань среди скота на аргентинском ранчо"
   - src: /media/excursions/fiesta-gaucho/gallery-2-enhanced-20261001.webp
     alt: Соревнование гаучо
   - src: /media/excursions/fiesta-gaucho/gallery-3-enhanced-20261001.webp

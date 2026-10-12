@@ -13,7 +13,8 @@ destination: destination_brazil_rio
 language: []
 hero:
   src: /media/excursions/rio-nochyu/hero-enhanced-20261001.webp
-  alt: Ночное шоу с самбой в Рио-де-Жанейро
+  hover: "Артистка в карнавальном костюме с зелеными и розовыми перьями"
+  alt: "Улыбающаяся участница шоу в костюме с зелеными и розовыми перьями"
 gallery: []
 route:
   - Рио-де-Жанейро

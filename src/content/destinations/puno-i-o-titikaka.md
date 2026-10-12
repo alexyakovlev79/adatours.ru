@@ -10,7 +10,8 @@ summary: "Пуно и озеро Титикака: плавучие остров
 searchAliases: []
 hero:
   src: /media/countries/peru/featureBands-3-image-enhanced-20261001.webp
-  alt: "На фото: город Пуно в Перу и озеро Титикака"
+  hover: "Пуно: сувенирная лодка с разноцветным украшением из тростника"
+  alt: "Миниатюрная тростниковая лодка с ярким декором на соломе, Пуно, Перу"
 gallery:
   - src: "/media/destinations/puno-i-o-titikaka/gallery-1-enhanced-20261005.webp"
     hover: "Пуно в Перу: женщина с ребёнком в разноцветной переноске"

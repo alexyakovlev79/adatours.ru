@@ -41,7 +41,8 @@ itinerary:
     После размещения оставшаяся часть дня свободна.
   images:
   - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: городское движение вокруг площади с пальмами"
+    alt: "Красные автомобили у городской площади с пальмами и памятником, Сан-Хосе, Коста-Рика"
 - day: 2
   title: Сан-Хосе
   places:
@@ -217,7 +218,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
-    alt: Монтеверде
+    hover: "Монтеверде в Коста-Рике: зеленые горы и облачный лес"
+    alt: "Густой лес на зеленых горных склонах под облаками в Монтеверде, Коста-Рика"
 - day: 9
   title: Монтеверде - север Тихого океана
   places:

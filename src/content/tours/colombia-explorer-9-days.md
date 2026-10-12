@@ -115,7 +115,8 @@ itinerary:
     Дегустация и кофейный лимонад в главном доме фермы. Эти 2 модуля описаны ниже. Возвращение в отель, ночь в Перейре.'
   images:
   - src: /media/excursions/salento-i-dolina-kokora/gallery-1-src-enhanced-20261007.webp
-    alt: Восковые пальмы в долине Кокора, Колумбия
+    hover: "Кокора в Колумбии: восковые пальмы на зеленых склонах"
+    alt: "Высокие восковые пальмы над зелеными холмами долины Кокора, Колумбия"
 - excursionRef: excursion_source_salento_i_dolina_kokora
   places: *id003
 - excursionRef: excursion_colombia_el_ocaso_coffee_tour
@@ -159,7 +160,8 @@ itinerary:
     в отеле.
   images:
   - src: /media/excursions/penol-i-guatape/gallery-1-src-enhanced-20261007.webp
-    alt: Изрезанные берега водохранилища Эль-Пеньоль у Гуатапе, Колумбия
+    hover: "Гуатапе в Колумбии: зеленые островки среди бирюзовой воды"
+    alt: "Бирюзовые рукава водохранилища между зелеными холмами и домами у Гуатапе, Колумбия"
 - excursionRef: excursion_colombia_guatape_rock_and_town
   places: *id006
 - day: 7

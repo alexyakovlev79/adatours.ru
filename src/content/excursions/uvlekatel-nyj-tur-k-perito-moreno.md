@@ -14,7 +14,7 @@ language: ["Английский"]
 priceFrom: 165
 currency: "USD"
 priceNote: "Стоимость — $165."
-hero: {"src":"/media/excursions/uvlekatel-nyj-tur-k-perito-moreno/hero-src-enhanced-20261007.webp","alt":"Увлекательный тур к Перито Морено"}
+hero: {"src":"/media/excursions/uvlekatel-nyj-tur-k-perito-moreno/hero-src-enhanced-20261007.webp","alt":"Столики открытой террасы перед бирюзовым озером и ледником Перито-Морено, Аргентина", hover: "Перито-Морено: терраса с видом на озеро и ледник"}
 gallery: [{"src":"/media/excursions/uvlekatel-nyj-tur-k-perito-moreno/gallery-0-src-enhanced-20261007.webp","alt":"Голубая ледяная стена Перито-Морено и смотровые настилы, Аргентина", hover: "Перито-Морено в Аргентине: голубая стена ледника и смотровые настилы"},{"src":"/media/excursions/uvlekatel-nyj-tur-k-perito-moreno/gallery-1-src-enhanced-20261007.webp","alt":"Посетители у ледяной стены Перито-Морено, Аргентина", hover: "Перито-Морено в Аргентине: туристы на площадке перед голубым ледником"}]
 route: ["Аргентина","Перито Морено"]
 lead: "Шестичасовой тур к леднику Перито Морено с англоязычным гидом и личным трансфером. Со смотровых площадок можно наблюдать за огромной массой движущегося льда."

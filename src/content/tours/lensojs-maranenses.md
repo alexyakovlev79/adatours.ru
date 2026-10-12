@@ -157,7 +157,8 @@ itinerary:
     Размещение в Luzeiros Hotel.'
   image:
     src: /media/destinations/sao-luis/hero-enhanced-20261001.webp
-    alt: Сан-Луис в штате Мараньян, Бразилия
+    hover: "Сан-Луис: узорчатые изразцы вокруг красных окон"
+    alt: "Красные окна и металлические балконы на фасаде с синими изразцами, Сан-Луис, Бразилия"
 - day: 4
   title: Сан-Луис
   places:

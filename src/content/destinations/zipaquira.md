@@ -9,7 +9,8 @@ destinationType: city
 summary: Сипакира в окрестностях Боготы известна соляным собором, созданным внутри подземных выработок.
 hero:
   src: /media/tours/tur-v-kolumbiyu-na-12-dnej/itinerary-11-images-1-src-enhanced-20261007.webp
-  alt: 'На фото: Соляной собор  Сипакира в Колумбии'
+  hover: "Соляной собор Сипакиры: надпись COLOMBIA в цветной подсветке"
+  alt: "Белая надпись COLOMBIA у скальных стен с зеленой и синей подсветкой, Соляной собор Сипакиры, Колумбия"
 gallery:
 - src: /media/tours/fantasticheskaya-kolumbiya/itinerary-1-images-1-src-enhanced-20261007.webp
   hover: "Сипакира: подсвеченные стены и скульптурные элементы подземного зала"

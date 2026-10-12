@@ -264,7 +264,8 @@ itinerary:
     Прибытие в Арекипу, размещение в гостинице 3*. Свободное время.
   images:
   - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-regenerated-20261011-v2.webp"
-    alt: Арекипа
+    hover: "Арекипа: красные аркады и цветы во внутреннем дворе"
+    alt: "Красные стены и светлые арки двора в Арекипе на фоне вулкана, Перу"
 - day: 10
   title: Арекипа - Лима
   places:

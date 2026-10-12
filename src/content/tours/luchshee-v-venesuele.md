@@ -109,7 +109,8 @@ itinerary:
     **Питание:** завтрак, обед, ужин.
   images:
   - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-9-enhanced-20261007.webp"
-    alt: 'На фото: водопад Сальта-Анхель в Венесуэле'
+    hover: "Анхель в Венесуэле: водопад сквозь тропическую зелень"
+    alt: "Водопад Анхель падает со столовой горы за деревьями и облаками, Венесуэла"
 - day: 6
   title: ', суббота. Канайма'
   places:

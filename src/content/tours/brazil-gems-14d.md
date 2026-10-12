@@ -38,7 +38,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
-  alt: Сахарная Голова и Рио-де-Жанейро
+  hover: "Рио-де-Жанейро: океанский пляж у подножия зеленых гор"
+  alt: "Длинный пляж Рио-де-Жанейро у океана под зелеными скалистыми вершинами, Бразилия"
 gallery:
   - src: /media/destinations/praia-do-forte/hero-enhanced-20261001.webp
     hover: "Прайя-ду-Форте: следы на песке вдоль длинного атлантического пляжа"

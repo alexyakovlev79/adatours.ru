@@ -18,7 +18,8 @@ currency: "USD"
 priceNote: "Стоимость — $448."
 hero:
   src: "/media/excursions/ekskursiya-na-raduzhnuyu-goru-vinikunka/hero-src-enhanced-20261007.webp"
-  alt: "на фото: Виникунка, Радужная Гора, Перу"
+  hover: "Виникунка в Перу: полосатые горные гребни под облаками"
+  alt: "Разноцветные минеральные полосы на склонах Радужной горы Виникунка, Перу"
 gallery:
   - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-14-enhanced-20260930.webp
     alt: "на фото: завтрак на Виникунка, Радужная Гора , Перу"

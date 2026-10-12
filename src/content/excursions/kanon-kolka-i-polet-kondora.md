@@ -27,7 +27,8 @@ gallery:
   - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-2-enhanced-20261001.webp
     alt: Долина и склоны каньона Колка
   - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3-enhanced-20261001.webp
-    alt: Арекипа, Перу
+    hover: "Арекипа в Перу: городская архитектура под вулканической вершиной"
+    alt: "Церковная башня и пальмы на фоне вулкана в Арекипе, Перу"
 route:
   - Арекипа
   - Пампа-Каньяуас

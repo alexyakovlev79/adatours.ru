@@ -18,7 +18,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_mexico_chichen_ica/hero-generated-20261008.webp
-  alt: Chichen Itza, Yucatan — Mexico
+  hover: "Чичен-Ица в Мексике: древняя пирамида над травянистой площадью"
+  alt: "Ступенчатая пирамида с длинной лестницей на зеленой площади Чичен-Ицы, Мексика"
 duration: Полный день
 language:
 - английский

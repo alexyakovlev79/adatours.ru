@@ -19,7 +19,8 @@ relatedDestinations:
 sourceSnapshot: https://drive.google.com/file/d/1rwIPfMqcXTTB1gUsIevIdvvUEq0ASXTw/view?usp=drivesdk
 hero:
   src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
-  alt: 'на фото: Облачный лес Монтеверде в Коста-Рике'
+  hover: "Монтеверде в Коста-Рике: зеленые горы и облачный лес"
+  alt: "Густой лес на зеленых горных склонах под облаками в Монтеверде, Коста-Рика"
 themes: ["theme_wildlife"]
 ---
 

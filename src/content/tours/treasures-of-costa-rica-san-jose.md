@@ -65,7 +65,8 @@ itinerary:
     Возвращение в Casa Corcovado. Завтрак, обед и ужин включены.
   images:
   - src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/corcovado-national-park-place-generated-20261009-v1.webp
-    alt: Тропический лес и тихоокеанский берег национального парка Корковадо
+    hover: "Корковадо в Коста-Рике: тропическая зелень у океанского берега"
+    alt: "Пальмы и тропический лес у тихоокеанского пляжа национального парка Корковадо, Коста-Рика"
 - day: 4
   title: Остров Каньо
   places:
@@ -82,7 +83,8 @@ itinerary:
     После морской экскурсии остается время отдохнуть в лодже перед обратной дорогой.
   images:
   - src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/cano-island-place-generated-20261009-v1.webp
-    alt: Остров Каньо с лесным побережьем в Тихом океане
+    hover: "Остров Каньо в Коста-Рике: зеленый берег среди синей воды"
+    alt: "Небольшой остров Каньо с лесом и скалистым берегом в Тихом океане, Коста-Рика"
 - day: 5
   title: Возвращение в Сан-Хосе
   places:

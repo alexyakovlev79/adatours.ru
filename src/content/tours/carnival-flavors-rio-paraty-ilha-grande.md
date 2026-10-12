@@ -48,7 +48,8 @@ priceNote: От $1940 на человека в двухместном номер
 dates: []
 hero:
   src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/hero-enhanced-20261006.webp
-  alt: Девушка танцует в синем костюме с перьями на карнавале в Рио-де-Жанейро
+  hover: "Синий карнавальный костюм и перья во время уличного шествия"
+  alt: "Участница уличного карнавала в синем костюме с большими перьями"
 gallery: []
 featured: false
 priority: 0
@@ -82,7 +83,8 @@ itinerary:
     на белоснежном песке, — все это создает неповторимую атмосферу Рио. Вы действительно прибыли в рай.'
   images:
   - src: /media/tours/brazil-coffee-tour-ru/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: пляжи в Рио-де-Жанейро, Бразилия'
+    hover: "Рио-де-Жанейро: кокос на песке у океана"
+    alt: "Зеленый кокос с трубочкой на песчаном пляже у моря, Рио-де-Жанейро, Бразилия"
 - day: 2
   title: Рио-де-Жанейро
   places:
@@ -133,7 +135,8 @@ itinerary:
     После отдыха джип-тур с гидом по окрестностям Парати. Ночевка в Парати.'
   images:
   - src: /media/destinations/paraty/hero-enhanced-20261001.webp
-    alt: Исторический центр Парати в Бразилии
+    hover: "Парати: белый колониальный фасад с синими окнами и красным декором"
+    alt: "Синие решетчатые окна и красный геометрический узор на белом фасаде Парати, Бразилия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_paraty_waterfalls_cachaca_jeep

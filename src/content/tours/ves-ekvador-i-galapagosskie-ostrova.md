@@ -169,7 +169,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Кито
+    hover: "Кито: городская площадь у собора с белой колокольней"
+    alt: "Люди и цветущие деревья на площади перед кафедральным собором Кито, Эквадор"
 - day: 5
   title: Кито - Галапагосские острова, Балтра и Санта-Крус
   places:

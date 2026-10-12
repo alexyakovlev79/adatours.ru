@@ -28,7 +28,8 @@ currency: USD
 dates: []
 hero:
   src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
-  alt: "Ушуайя и Огненная Земля"
+  hover: "Ушуайя: прибрежные дома под горными склонами Огненной Земли"
+  alt: "Здания и лодки у набережной Ушуайи на фоне леса и гор, Аргентина"
 gallery: []
 featured: false
 priority: 0

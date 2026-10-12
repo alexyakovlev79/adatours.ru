@@ -26,7 +26,8 @@ gallery:
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-1-src-enhanced-20261007.webp"
     alt: Монтевидео и побережье Рио-де-ла-Плата
   - src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
-    alt: Исторический центр Монтевидео
+    hover: "Монтевидео: старинная башня в конце городской улицы"
+    alt: "Городская улица и историческое здание с башней в Монтевидео, Уругвай"
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
     hover: "Монтевидео: пешеходная площадь перед дворцом Сальво"
     alt: "Площадь с пальмами и башней дворца Сальво в Монтевидео, Уругвай"

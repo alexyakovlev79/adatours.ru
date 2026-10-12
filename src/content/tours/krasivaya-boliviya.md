@@ -45,7 +45,8 @@ itinerary:
     Отдельный символ города — система канатных дорог Teleférico протяженностью 30 км.
   images:
   - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: "на фото: Ла-Пас, столица Боливии"
+    hover: "Ла-Пас в Боливии: городские кварталы в горной котловине"
+    alt: "Плотная застройка Ла-Паса в широкой котловине среди сухих гор, Боливия"
 - day: 2
   title: Тиванаку - Лунная долина - Ла-Пас
   places:
@@ -180,7 +181,8 @@ currency: USD
 priceNote: $2414
 hero:
   src: /media/tours/krasivaya-boliviya/hero-enhanced-20261006.webp
-  alt: 'на фото: Лунная Долина в Боливии'
+  hover: "Пустынный пейзаж между охристыми скалами"
+  alt: "Песчаный склон и далекие горы между охристыми скальными стенами"
 routeCountries:
 - country_bolivia
 routeDestinations:

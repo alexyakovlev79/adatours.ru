@@ -73,7 +73,8 @@ itinerary:
       Дальше вы проедете по Авенида-де-Майо и Авенида-Корриентес, увидите Ла-Боку и Сан-Тельмо, а затем более современные и престижные районы Палермо, Реколета и Пуэрто-Мадеро с ресторанами и прогулочными зонами.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-1-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+        hover: "Буэнос-Айрес: фонтан и монумент на фоне Конгресса"
+        alt: "Монумент и фонтан перед зданием Конгресса с зеленым куполом, Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-2"
   - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
     places:

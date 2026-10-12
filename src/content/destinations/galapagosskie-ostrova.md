@@ -10,7 +10,8 @@ summary: "Галапагосские острова: эндемичная фло
 searchAliases: []
 hero:
   src: /media/countries/ekvador/featureBands-2-enhanced-20261002.webp
-  alt: "На фото: Галапагосские острова в Эквадоре"
+  hover: "Галапагосские острова: красные крабы на лавовой скале"
+  alt: "Яркие красные крабы на черной прибрежной скале, Галапагосы, Эквадор"
 gallery:
   - src: "/media/destinations/galapagosskie-ostrova/gallery-1-enhanced-20261006.webp"
     alt: "Множество зелёных островков среди бирюзовых лагун и синего моря"

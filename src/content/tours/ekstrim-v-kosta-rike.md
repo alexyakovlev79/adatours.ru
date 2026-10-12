@@ -41,7 +41,8 @@ itinerary:
     **Размещение:** Barceló San Jose Palacio.
   images:
   - src: /media/tours/3-shaga-po-kosta-rike/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе в Коста-Рике: городская застройка среди зелени"
+    alt: "Высотные здания среди зеленых кварталов Сан-Хосе на фоне холмов, Коста-Рика"
 - day: 2
   title: Сан-Хосе - Тортугеро
   places:
@@ -145,7 +146,8 @@ itinerary:
     \ экскурсионной программы.\n\n**Размещение:** Wyndham Tamarindo.  \n**Питание:** завтрак."
   images:
   - src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
-    alt: Монтеверде
+    hover: "Монтеверде в Коста-Рике: зеленые горы и облачный лес"
+    alt: "Густой лес на зеленых горных склонах под облаками в Монтеверде, Коста-Рика"
 - day: 10
   title: Спортивная рыбалка у Фламинго
   places:

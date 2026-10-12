@@ -9,7 +9,8 @@ destinationType: national_park
 summary: Национальный парк Корковадо на юге Коста-Рики, тропический лес и тихоокеанские пляжи с природными маршрутами.
 hero:
   src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/corcovado-national-park-place-generated-20261009-v1.webp
-  alt: Тропический лес и тихоокеанский берег национального парка Корковадо
+  hover: "Корковадо в Коста-Рике: тропическая зелень у океанского берега"
+  alt: "Пальмы и тропический лес у тихоокеанского пляжа национального парка Корковадо, Коста-Рика"
 gallery: []
 themes:
 - theme_wildlife

@@ -15,7 +15,8 @@ currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/obzornaja-jekskursija-po-sant-jago/hero-src-enhanced-20261007.webp"
-  alt: "Обзорная экскурсия по Сантьяго"
+  hover: "Сантьяго в Чили: город под длинным снежным хребтом"
+  alt: "Панорама Сантьяго с высокой башней на фоне заснеженных Анд, Чили"
 gallery:
   - src: "/media/excursions/obzornaja-jekskursija-po-sant-jago/gallery-0-src-enhanced-20261007.webp"
     hover: "Сантьяго в Чили: освещенные высотные здания перед горным хребтом"

@@ -16,14 +16,16 @@ currency: "USD"
 priceNote: "Стоимость экскурсии — $123. Входной билет оплачивается дополнительно — $40."
 hero:
   src: "/media/excursions/jekskursija-na-argentinskie-vodopady/hero-src-enhanced-20261008.webp"
-  alt: "На фото: Экскурсия на Аргентинские водопады"
+  hover: "Игуасу: вид сверху на площадку между падающими потоками воды"
+  alt: "Туристы на выступающей смотровой площадке над потоками водопадов Игуасу"
 gallery:
   -
     src: "/media/excursions/jekskursija-na-argentinskie-vodopady/gallery-0-src-enhanced-20261008.webp"
     alt: "На фото: Аргентинские водопады Игуасу"
   -
     src: "/media/excursions/jekskursija-na-argentinskie-vodopady/gallery-2-src-enhanced-20261008.webp"
-    alt: "На фото: Водопады Игуасу, Аргентина"
+    hover: "Игуасу в Аргентине: радуга среди каскадов и густой зелени"
+    alt: "Радуга над потоками Игуасу между лесистыми островками, Аргентина"
 route:
   - "Бразилия"
   - "Аргентина"

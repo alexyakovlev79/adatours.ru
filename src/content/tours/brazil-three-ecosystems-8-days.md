@@ -243,7 +243,8 @@ itinerary:
     Питание: завтрак, обед, ужин.'
   images:
   - src: /media/tours/pantanal-za-5-dnej/itinerary-day-2-enhanced-20261006.webp
-    alt: Кувшинки на водоёме в Пантанале, Бразилия
+    hover: "Пантанал: гигантские кувшинки на спокойной воде"
+    alt: "Большие круглые листья кувшинок и белый цветок на водоеме Пантанала, Бразилия"
 - excursionRef: excursion_araras_horseback_rondon_trail
   places:
   - Эколодж «Арарас»

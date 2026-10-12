@@ -67,7 +67,8 @@ itinerary:
       Прибытие в аэропорт EZE. Встреча и трансфер в отель.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-1-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+        hover: "Буэнос-Айрес: фонтан и монумент на фоне Конгресса"
+        alt: "Монумент и фонтан перед зданием Конгресса с зеленым куполом, Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-1"
 
   - day: 2
@@ -80,7 +81,8 @@ itinerary:
       Улицы Буэнос-Айреса связаны с историей иммиграции, ростом богатых районов в конце XIX и начале XX века и появлением танго. Старые кварталы соседствуют с современной набережной и широкими проспектами.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-2-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+        hover: "Буэнос-Айрес: вечерний мост Пуэрто-Мадеро отражается в воде"
+        alt: "Подсвеченный белый мост и высотные дома Пуэрто-Мадеро у воды, Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-2"
 
   - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
@@ -172,7 +174,8 @@ itinerary:
       Во время экскурсии маршрут проходит мимо реки Пипо, горы Сусана, залива Энсенада и острова Редонда. Вы увидите озеро Рока, залив Лапатайя, лагуны, плотину бобров и лесной домик. Здесь рядом находятся скалистые горы, реки, долины, озера и морское побережье.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-7-enhanced-20261006.webp
-        alt: "Ушуайя и Огненная Земля"
+        hover: "Ушуайя в Аргентине: городская набережная под снежными вершинами"
+        alt: "Кварталы Ушуайи у синей воды на фоне заснеженных гор, Аргентина"
         intendedSlot: "itinerary:day-7"
 
   - excursionRef: excursion_ushuaia_martillo_penguin_boat

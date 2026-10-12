@@ -135,7 +135,8 @@ currency: USD
 priceNote: $919
 hero:
   src: /media/countries/peru/hero-enhanced-20260930.webp
-  alt: Перу - страна Инков
+  hover: "Перу: девочка и альпака крупным планом"
+  alt: "Девочка в традиционной цветной шляпе рядом с альпакой в Перу"
 routeCountries:
 - country_peru
 routeDestinations:

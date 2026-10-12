@@ -19,7 +19,8 @@ hero:
   alt: "На фото: Экскурсия в лес Тижука, Бразилия"
 gallery:
   - src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-0-src-enhanced-20261007.webp"
-    alt: "На фото: Водопад Каскатинья в лесу Тижука"
+    hover: "Тижука в Рио: водопад Каскатинья среди мокрых скал и растений"
+    alt: "Узкий водопад Каскатинья падает по темной скале среди зелени леса Тижука, Рио-де-Жанейро, Бразилия"
   - src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Водопад Monkey, Бразилия"
   - src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-2-src-enhanced-20261007.webp"

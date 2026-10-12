@@ -170,7 +170,8 @@ itinerary:
     Продолжительность экскурсии около 6 часов.'
   images:
   - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-3-images-1-enhanced-20261006.webp
-    alt: Сан-Паулу
+    hover: "Сан-Паулу: городское движение среди башен и зеленых площадей"
+    alt: "Автомобили на широкой дороге между высотными зданиями Сан-Паулу, Бразилия"
 - day: 6
   title: Обзорная экскурсия по Сан-Паулу
   places:
@@ -346,7 +347,8 @@ currency: USD
 priceNote: $3510
 hero:
   src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
-  alt: 'Бразилия: Little Mix'
+  hover: "Рио-де-Жанейро: океанский пляж у подножия зеленых гор"
+  alt: "Длинный пляж Рио-де-Жанейро у океана под зелеными скалистыми вершинами, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

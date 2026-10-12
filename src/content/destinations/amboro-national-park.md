@@ -15,7 +15,8 @@ themes:
 - theme_adventure
 hero:
   src: /media/tours/krasivaya-boliviya/hero-enhanced-20261006.webp
-  alt: 'На фото: парк Амборо в Боливии'
+  hover: "Пустынный пейзаж между охристыми скалами"
+  alt: "Песчаный склон и далекие горы между охристыми скальными стенами"
 gallery: []
 relatedDestinations: []
 featuredTours: []

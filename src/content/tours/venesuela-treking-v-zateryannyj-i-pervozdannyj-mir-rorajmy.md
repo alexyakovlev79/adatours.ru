@@ -126,7 +126,8 @@ itinerary:
     Питание: завтрак, обед в пути.
   images:
   - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-08-generated-20261008-next20.webp
-    alt: Река Карони у Пуэрто-Ордаса, Венесуэла
+    hover: "Пуэрто-Ордас: река Карони перед городским берегом"
+    alt: "Широкая река Карони у зеленого берега и жилых домов Пуэрто-Ордаса, Венесуэла"
 - day: 9
   title: ', вторник: национальный парк Канайма и остров Ратон'
   places:

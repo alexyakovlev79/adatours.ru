@@ -19,12 +19,14 @@ currency: USD
 priceNote: "Основная стоимость — $435. Для 2 человек — $220 на человека."
 hero:
   src: /media/excursions/la-pas-siti-tur/hero-enhanced-20261006.webp
-  alt: Панорама Ла-Паса в Боливии
+  hover: "Ла-Пас: торговая лавка с тканями, сумками и сувенирами"
+  alt: "Женщина в шляпе среди яркого текстиля и сувениров на рынке Ла-Паса, Боливия"
 gallery:
   - src: /media/excursions/la-pas-siti-tur/gallery-1-enhanced-20261006.webp
     alt: Канатная дорога Ла-Паса
   - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
-    alt: Ла-Пас, Боливия
+    hover: "Ла-Пас в Боливии: вечерний город под снежными горами"
+    alt: "Огни Ла-Паса на горных склонах под заснеженной вершиной в сумерках, Боливия"
   - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
     hover: "Ла-Пас: украшенный фасад с куполом и боливийскими флагами"
     alt: "Жёлто-белое историческое здание с куполом и флагами в Ла-Пасе, Боливия"

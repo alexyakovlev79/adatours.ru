@@ -122,7 +122,8 @@ itinerary:
     **Питание:** легкий завтрак, обед, ужин.
   images:
   - src: "/media/excursions/venezuela-kavak-angel-helicopter/hero-src-enhanced-20261007.webp"
-    alt: Канайма
+    hover: "Канайма в Венесуэле: тепуи над зеленым берегом лагуны"
+    alt: "Столовая гора за густым лесом отражается в лагуне Канаймы, Венесуэла"
 - day: 5
   title: Сальто-Анхель
   places:

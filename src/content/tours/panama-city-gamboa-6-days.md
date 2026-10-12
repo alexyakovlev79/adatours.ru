@@ -101,7 +101,8 @@ itinerary:
     — продолжение пути в Гамбоа и размещение в Gamboa Rainforest Resort. Ночь в Гамбоа.
   images:
   - src: /media/tours/panama-city-gamboa-6-days/word-5-20261010-enhanced-20261011-pass2324-v1.webp
-    alt: Музыканты эмбера с барабанами на берегу реки
+    hover: "Эмбера на Чагресе: музыканты на речном берегу"
+    alt: "Мужчины и мальчики эмбера играют на барабанах и других инструментах у реки Чагрес, Панама"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_chagres_embera_cultural_visit

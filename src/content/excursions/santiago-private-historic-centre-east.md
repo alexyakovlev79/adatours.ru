@@ -16,7 +16,8 @@ themes:
 - theme_culture
 hero:
   src: /media/excursions/obzornaja-jekskursija-po-sant-jago/hero-src-enhanced-20261007.webp
-  alt: Обзорная экскурсия по Сантьяго
+  hover: "Сантьяго в Чили: город под длинным снежным хребтом"
+  alt: "Панорама Сантьяго с высокой башней на фоне заснеженных Анд, Чили"
   status: approved
 gallery: []
 lead: После размещения в отеле — обзорная экскурсия по историческому центру Сантьяго.

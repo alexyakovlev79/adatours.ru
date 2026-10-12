@@ -73,7 +73,8 @@ itinerary:
     Сан-Паулу.
   images:
   - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-2-enhanced-20261006.webp
-    alt: Сан-Паулу
+    hover: "Сан-Паулу: неоготический фасад собора с двумя шпилями"
+    alt: "Собор с двумя высокими шпилями и круглым окном над входом, Сан-Паулу, Бразилия"
 - excursionRef: excursion_sao_paulo_ibirapuera_jardins_batman
   places:
   - Сан-Паулу

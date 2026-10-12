@@ -26,7 +26,8 @@ gallery:
   - src: /media/excursions/khram-pachakamak/gallery-1-src-enhanced-20261008.webp
     alt: Лима, столица Перу
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/hero-enhanced-20261001.webp
-    alt: Вид на Лиму
+    hover: "Ночная Лима: освещенные башни церкви у площади"
+    alt: "Подсвеченная церковь с двумя башнями и городская площадь ночью, Лима, Перу"
 route:
   - Лима
   - Пачакамак

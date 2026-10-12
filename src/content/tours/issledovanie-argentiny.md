@@ -46,7 +46,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/issledovanie-argentiny/hero-enhanced-20261006.webp
-  alt: "На фото: Район Ла Бока в Буэнос Айресе"
+  hover: "Ла-Бока в Буэнос-Айресе: цветной дом у вечерней улицы"
+  alt: "Яркий угловой дом и прохожие на мощеной улице Ла-Боки, Буэнос-Айрес, Аргентина"
 gallery: []
 featured: false
 priority: 0
@@ -141,7 +142,8 @@ itinerary:
   text: Регулярный трансфер в аэропорт и перелет Aerolineas Argentinas. По прибытии вас встретят и доставят регулярным трансфером в отель Fueguino.
   images:
   - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-7-enhanced-20261006.webp
-    alt: 'На фото: Ушуайя, Аргентина'
+    hover: "Ушуайя в Аргентине: городская набережная под снежными вершинами"
+    alt: "Кварталы Ушуайи у синей воды на фоне заснеженных гор, Аргентина"
     intendedSlot: itinerary:day-6
 - day: 7
   title: Ушуайя, Национальный парк и Канал Бигль
@@ -235,7 +237,8 @@ itinerary:
   text: Завтрак и свободный день. Можно выбрать одну из 2 дополнительных экскурсий.
   images:
   - src: /media/tours/argentina-2024/itinerary-day-7-enhanced-20261006.webp
-    alt: 'На фото: Ледник Перито Морено'
+    hover: "Перито-Морено в Аргентине: ледяная стена у озера и горного берега"
+    alt: "Голубая стена ледника Перито-Морено над озером с льдинами, Аргентина"
     intendedSlot: itinerary:day-11
 - excursionRef: excursion_el_calafate_glaciares_gourmet
   places:

@@ -240,7 +240,8 @@ itinerary:
   text: "Экскурсия по Лухан-де-Куйо, родине Мальбека. Посещение винодельни и дегустация с русскоговорящим гидом. Ночь в Entre Cielos, Superior Room."
   images:
   - src: "/media/destinations/destination_argentina_luhan_de_kujo/original-01.jpg"
-    alt: "Винодельческий регион Лухан-де-Куйо"
+    hover: "Лухан-де-Куйо: виноградники у подножия снежных Анд"
+    alt: "Ряды виноградников и грунтовая дорога на фоне заснеженных Анд, Лухан-де-Куйо, Аргентина"
 - excursionRef: excursion_argentina_lujan_de_cuyo_winery_tasting
   places: []
 - day: 11

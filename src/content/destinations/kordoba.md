@@ -10,7 +10,8 @@ summary: Кордоба сохранила памятники колониаль
 searchAliases: []
 hero:
   src: /media/tours/brazil-argentina-peru-14d/itinerary/day-07-enhanced-20260930.webp
-  alt: 'На фото: город Кордоба в Аргентине'
+  hover: "Аргентина: фасад здания Bolsa de Comercio с куполом"
+  alt: "Светлое здание с колоннами, куполом и надписью Bolsa de Comercio, Аргентина"
 gallery:
 - src: /media/destinations/kordoba/gallery-1-enhanced-20261002.webp
   alt: 'На фото: город Кордоба в Аргентине'

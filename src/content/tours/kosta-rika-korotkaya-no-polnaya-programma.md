@@ -62,7 +62,8 @@ itinerary:
     Включен обед.
   images:
   - src: /media/tours/3-shaga-po-kosta-rike/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: городское движение вокруг площади с пальмами"
+    alt: "Красные автомобили у городской площади с пальмами и памятником, Сан-Хосе, Коста-Рика"
 - day: 2
   title: Заповедник Каньо-Негро
   places:

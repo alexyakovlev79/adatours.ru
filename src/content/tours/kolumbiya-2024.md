@@ -173,7 +173,8 @@ itinerary:
     Скала одиноко поднимается над сравнительно невысокими холмами, поэтому особенно хорошо заметна издалека.
   images:
   - src: /media/excursions/penol-i-guatape/gallery-0-src-enhanced-20261007.webp
-    alt: 'На фото: отдых в Колумбии'
+    hover: "Гуатапе в Колумбии: цветные фасады вдоль узкой улицы"
+    alt: "Мощеная улица с яркими расписными цоколями и цветными домами в Гуатапе, Колумбия"
 - excursionRef: excursion_colombia_guatape_helicopter_flight
   places: []
 - day: 8

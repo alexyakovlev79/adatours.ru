@@ -9,7 +9,8 @@ destinationType: city
 summary: Ольянтайтамбо в Священной долине Перу, город с инкскими улицами, каменными террасами и археологическим комплексом.
 hero:
   src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-12-images-0-src-enhanced-20261007.webp
-  alt: Каменные террасы Ольянтайтамбо
+  hover: "Ольянтайтамбо в Перу: вид сверху на террасы и древние постройки"
+  alt: "Широкие каменные террасы и лестница над руинами Ольянтайтамбо, Перу"
 gallery: []
 themes:
 - theme_culture

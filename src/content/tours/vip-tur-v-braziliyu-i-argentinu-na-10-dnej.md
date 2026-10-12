@@ -192,7 +192,8 @@ itinerary:
     По желанию можно заказать видеозапись поездки.
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-6-enhanced-20261006.webp
-    alt: Водопады Игуасу с бразильской стороны, панорама каскадов и радуга в брызгах
+    hover: "Водопады Игуасу: прогулочный мостик с туристами среди потоков воды"
+    alt: "Туристы на длинном мостике перед широкими каскадами водопадов Игуасу"
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
 - excursionRef: excursion_source_makuko_safari

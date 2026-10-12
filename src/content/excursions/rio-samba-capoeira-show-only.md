@@ -14,7 +14,8 @@ lead: Вечернее шоу с самбой, капоэйрой и танца�
   заказать отдельно.
 hero:
   src: /media/excursions/rio-nochyu/hero-enhanced-20261001.webp
-  alt: Ночное шоу с самбой в Рио-де-Жанейро
+  hover: "Артистка в карнавальном костюме с зелеными и розовыми перьями"
+  alt: "Улыбающаяся участница шоу в костюме с зелеными и розовыми перьями"
 gallery: []
 sourceSnapshot: https://docs.google.com/document/d/1qkPpWu99FABWC0lOUv80QsAPHJGIahUG/edit
 updatedAt: '2026-10-11'

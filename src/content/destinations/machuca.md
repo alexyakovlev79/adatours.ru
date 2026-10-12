@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_chile_machuka/hero-generated-20261008-resumed-v1.webp
-  alt: Мачука, Чили
+  hover: "Мачука в Чили: небольшие дома среди высокогорного ландшафта"
+  alt: "Глинобитные дома с соломенными крышами на сухом горном склоне Мачуки, Чили"
 gallery: []
 relatedDestinations: []
 featuredTours: []

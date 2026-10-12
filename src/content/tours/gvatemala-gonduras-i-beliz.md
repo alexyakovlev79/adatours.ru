@@ -166,7 +166,8 @@ itinerary:
     Ночь в Coco Beach Resort.'
   images:
   - src: /media/tours/chudesa-beliza/itinerary-day-5-enhanced-20261006.webp
-    alt: Амбергрис-Кайе
+    hover: "Амбергрис-Кайе в Белизе: причал над бирюзовым мелководьем"
+    alt: "Деревянный причал ведет к лодкам и прибрежным домам Амбергрис-Кайе, Белиз"
 - day: 10
   title: Плавание с акулами
   places: []

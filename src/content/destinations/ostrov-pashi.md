@@ -10,7 +10,8 @@ summary: "Остров Пасхи: статуи моаи, Аху Тонгари�
 searchAliases: []
 hero:
   src: /media/countries/chile/featureBands-3-enhanced-20261002.webp
-  alt: "На фото: истуканы острова Пасхи в Чили"
+  hover: "Остров Пасхи: ряд моаи на фоне закатного неба"
+  alt: "Силуэты ряда моаи перед низким солнцем на острове Пасхи, Чили"
 gallery:
   - src: "/media/destinations/ostrov-pashi/gallery-1-enhanced-20261005.webp"
     hover: "Остров Пасхи: зелёный берег и тёмные прибрежные скалы у океана"

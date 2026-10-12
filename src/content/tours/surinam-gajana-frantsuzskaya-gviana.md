@@ -238,7 +238,8 @@ itinerary:
     Завтрак и обед включены.
   images:
   - src: /media/destinations/suriname-jodensavanna/hero-generated-20261009-v2.webp
-    alt: Йоденсаванна
+    hover: "Йоденсаванна: остатки кирпичных стен у зеленого речного берега"
+    alt: "Низкие кирпичные руины синагоги среди деревьев у реки в Йоденсаванне, Суринам"
 - day: 14
   title: Отъезд из Суринама
   places:

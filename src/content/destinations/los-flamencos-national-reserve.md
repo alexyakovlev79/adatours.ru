@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_chile_laguna_chaksa/hero-generated-20261008-resumed-v1.webp
-  alt: Лагуна Чакса, Чили
+  hover: "Чакса в Чили: фламинго на фоне пустынных гор"
+  alt: "Розовые фламинго на мелководье лагуны Чакса среди соляной корки, Чили"
 gallery:
 - src: /media/destinations/destination_chile_laguna_miskanti/hero-generated-20261008-resumed-v1.webp
   alt: "Лагуна Мисканти с изогнутым берегом на фоне гор, Чили"

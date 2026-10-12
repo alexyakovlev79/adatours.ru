@@ -17,7 +17,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-0-src-enhanced-20261007.webp
-  alt: 'На фото: Водопад Каскатинья в лесу Тижука'
+  hover: "Тижука в Рио: водопад Каскатинья среди мокрых скал и растений"
+  alt: "Узкий водопад Каскатинья падает по темной скале среди зелени леса Тижука, Рио-де-Жанейро, Бразилия"
 gallery: []
 relatedDestinations:
 - destination_brazil_rio

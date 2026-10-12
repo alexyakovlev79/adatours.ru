@@ -124,7 +124,8 @@ itinerary:
     Оставшаяся часть дня свободна.
   images:
   - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
-    alt: Ушуайя
+    hover: "Ушуайя: прибрежные дома под горными склонами Огненной Земли"
+    alt: "Здания и лодки у набережной Ушуайи на фоне леса и гор, Аргентина"
 - day: 6
   title: Ушуайя и Национальный парк Огненная Земля
   places:

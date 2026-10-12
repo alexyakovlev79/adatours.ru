@@ -204,7 +204,8 @@ currency: USD
 priceNote: 'От $2 650 на человека при трехместном размещении в отелях 3*. Двухместное размещение: от $2 688 на человека.'
 hero:
   src: /media/tours/parad-chempionov-v-rio-de-zhanejro-vodopady/archive-16-src-enhanced-20261008.webp
-  alt: 'на фото: Карнавал в Рио'
+  hover: "Карнавал в Рио: сине-золотые костюмы и флаг перед трибунами"
+  alt: "Участники карнавала в сине-золотых костюмах с перьями и флагом на Самбадроме Рио, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

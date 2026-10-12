@@ -218,7 +218,8 @@ currency: USD
 priceNote: $4139
 hero:
   src: /media/tours/chili-santyago-pustynya-atakama-torres-del-pajne/hero-enhanced-20261006.webp
-  alt: 'На фото: пустыня Сан Педро де Атакама в Чили'
+  hover: "Атакама: гейзеры на фоне сухих гор и синего неба"
+  alt: "Струи пара над полем гейзеров среди высокогорных лугов Атакамы, Чили"
 routeCountries:
 - country_chile
 routeDestinations:

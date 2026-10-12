@@ -18,7 +18,8 @@ currency: USD
 priceNote: "Стоимость экскурсии — $330. Стоимость тура на 1 человека с русскоговорящим гидом — $525."
 hero:
   src: /media/excursions/kito-siti-tur-na-ves-den/hero-enhanced-20261001.webp
-  alt: Исторический центр Кито в Эквадоре
+  hover: "Куэнка в Эквадоре: голубые купола собора на фоне серого неба"
+  alt: "Голубые купола и башенки собора над краснокирпичным фасадом, Куэнка, Эквадор"
 gallery:
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-1-enhanced-20261001.webp
     hover: "Кито: церковный фасад и просторная мощеная площадь с голубями"
@@ -26,7 +27,8 @@ gallery:
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-2-enhanced-20261001.webp
     alt: Исторический центр Кито
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-3-enhanced-20261001.webp
-    alt: Архитектура Кито
+    hover: "Кито: белая колокольня собора над городской площадью"
+    alt: "Кафедральный собор и люди на площади у цветущих деревьев, Кито, Эквадор"
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
     hover: "Кито в сумерках: мокрая площадь и фонтан под розовым небом"
     alt: "Площадь Кито с фонтаном и вечерними огнями на фоне облачного склона, Эквадор"

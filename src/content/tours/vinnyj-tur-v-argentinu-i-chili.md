@@ -216,7 +216,8 @@ itinerary:
       Продолжительность экскурсии - весь день.
     images:
       - src: /media/excursions/mendoza-tur-v-vinnuyu-dolinu/gallery-2-enhanced-20261006.webp
-        alt: "Винодельни Мендосы"
+        hover: "Вино и закуски на столе у моря"
+        alt: "Бутылки вина и наполненные бокалы рядом с закусками на фоне моря"
         intendedSlot: "itinerary:day-4"
   - day: 5
     title: "Свободный день в Мендосе"
@@ -241,7 +242,8 @@ itinerary:
       Для активного отдыха в программе предложены рафтинг по реке, конные прогулки или поездка на велосипеде.
     images:
       - src: /media/excursions/mendoza-tur-v-vinnuyu-dolinu/hero-enhanced-20261006.webp
-        alt: "Мендоса и Анды"
+        hover: "Река на дне каньона среди сухих скальных стен"
+        alt: "Извилистая река между сухими красноватыми скалами широкого каньона"
         intendedSlot: "itinerary:day-5"
   - day: 6
     title: "Перелет в Сантьяго и обзорная экскурсия"
@@ -349,7 +351,8 @@ itinerary:
       После экскурсии возвращение в Сантьяго.
     images:
       - src: /media/tours/solntse-tango-vino-i-atakama/itinerary-day-11-enhanced-20261006.webp
-        alt: "Вальпараисо, Чили"
+        hover: "Вальпараисо: спуск по лестнице среди цветных домов"
+        alt: "Лестница и синий деревянный дом на холме над улицами Вальпараисо, Чили"
         intendedSlot: "itinerary:day-7"
   - day: 8
     title: "Виноградники Конча-и-Торо"

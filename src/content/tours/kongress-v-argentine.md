@@ -45,7 +45,8 @@ itinerary:
       Для участников предусмотрен приветственный напиток. Вечером трансфер на ужин в ресторан La Cabaña.
     images:
       - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-1-enhanced-20261006.webp
-        alt: "Обелиск в Буэнос-Айресе"
+        hover: "Буэнос-Айрес: вид сверху на обелиск и городские проспекты"
+        alt: "Белый обелиск среди широких дорог и плотной застройки Буэнос-Айреса, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2
     title: "Конгресс и обзорная экскурсия по городу"
@@ -84,7 +85,8 @@ itinerary:
       Вечером запланирован ужин в итальянском ресторане Piegari Carnes, меню Diamond.
     images:
       - src: /media/tours/kongress-v-argentine/itinerary-day-3-enhanced-20261006.webp
-        alt: "Тигре и дельта Параны"
+        hover: "Тигре в Аргентине: фасад с башней за зеленым газоном"
+        alt: "Здание с башней и фахверковыми фасадами у газона и пальм, Тигре, Аргентина"
         intendedSlot: "itinerary:day-3"
   - day: 4
     title: "Конгресс"
@@ -108,7 +110,8 @@ itinerary:
       После завтрака предусмотрен трансфер в аэропорт. На этом корпоративная программа в Аргентине завершается.
     images:
       - src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-2-enhanced-20261006.webp
-        alt: "Буэнос-Айрес, Аргентина"
+        hover: "Танго в Буэнос-Айресе: танцоры на сцене с музыкантами"
+        alt: "Пара исполняет танго на сцене под аккомпанемент музыкантов, Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-5"
 included:
   - "Проживание с завтраком."

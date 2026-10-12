@@ -183,7 +183,8 @@ currency: USD
 priceNote: $3230
 hero:
   src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
-  alt: 'На фото: Национальный парк Игуасу'
+  hover: "Игуасу: радуга в водяной пыли у мостиков"
+  alt: "Радуга над водопадами Игуасу и смотровыми мостиками с туристами"
 routeCountries:
 - country_argentina
 - country_brazil

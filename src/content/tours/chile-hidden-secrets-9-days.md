@@ -127,8 +127,8 @@ priceNote: '6994 USD — тариф 2 PAX DBL: два путешественни
 dates: []
 hero:
   src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-22-20261011-v1-enhanced-20261011-next50-v1.webp
-  alt: Мраморные арки и синие отражения воды озера Хенераль-Каррера
-  hover: Мраморные арки и синие отражения воды озера Хенераль-Каррера
+  alt: "Мраморные арки над прозрачной бирюзовой водой озера Хенераль-Каррера, Чили"
+  hover: "Мраморные пещеры в Чили: арки и полосатые скальные стены у воды"
   status: approved
 gallery: []
 lead: За девять дней Чили меняет пейзажи от соляных гребней Атакамы до айсбергов Сан-Рафаэля и озёр Торрес-дель-Пайне.
@@ -163,7 +163,8 @@ itinerary:
     входной билет и коктейль. Трансфер и размещение в Hotel Kimal, Standard Room, BB.
   images:
   - src: /media/countries/chile/featureBands-1-enhanced-20261002.webp
-    alt: 'На фото: пустыня Сан-Педро-де-Атакама в Чили'
+    hover: "Атакама в Чили: горы и их зеркальное отражение в воде"
+    alt: "Вулканические горы отражаются в спокойной воде среди пустыни Атакама, Чили"
 - excursionRef: excursion_atacama_moon_valley_sunset_walk
 - day: 3
   title: Сан-Педро-де-Атакама
@@ -199,7 +200,8 @@ itinerary:
     групповой трансфер в Каламу и авиаперелёт в Сантьяго. Ночь в Novotel Santiago Providencia, Standard Room, BB.
   images:
   - src: /media/destinations/destination_chile_machuka/hero-generated-20261008-resumed-v1.webp
-    alt: Мачука, Чили
+    hover: "Мачука в Чили: небольшие дома среди высокогорного ландшафта"
+    alt: "Глинобитные дома с соломенными крышами на сухом горном склоне Мачуки, Чили"
 - excursionRef: excursion_el_tatio_machuca_standard_half_day
 - day: 5
   title: Сантьяго — Бальмаседа — Пуэрто-Рио-Транкило

@@ -15,7 +15,8 @@ themes:
 - theme_adventure
 hero:
   src: /media/destinations/destination_brazil_trindadi_parati/hero-generated-20261008-next20.webp
-  alt: Триндади (Парати) — Бразилия
+  hover: "Триндади у Парати: бирюзовая вода между прибрежными валунами"
+  alt: "Прозрачный природный бассейн среди гранитных валунов и тропического леса, Триндади, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

@@ -18,7 +18,8 @@ hero:
   alt: "Национальный парк Огненная земля"
 gallery:
   - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
-    alt: ""
+    hover: "Ушуайя: прибрежные дома под горными склонами Огненной Земли"
+    alt: "Здания и лодки у набережной Ушуайи на фоне леса и гор, Аргентина"
   - src: "/media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-src-enhanced-20261007.webp"
     hover: "Огненная Земля в Аргентине: водоем и горы за деревянным ограждением"
     alt: "Бирюзовая вода и лесистые горы в парке Огненная Земля, Аргентина"

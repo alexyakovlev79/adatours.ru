@@ -33,7 +33,8 @@ currency: USD
 dates: []
 hero:
   src: "/media/destinations/valdes-peninsula/hero-generated-20261008.webp"
-  alt: "Полуостров Вальдес"
+  hover: "Полуостров Вальдес: морские слоны на сухом атлантическом берегу"
+  alt: "Морские слоны на берегу полуострова Вальдес у низких скал и Атлантики, Аргентина"
 gallery: []
 featured: false
 priority: 0
@@ -327,7 +328,8 @@ itinerary:
       В назначенное время предусмотрен трансфер в аэропорт для вылета домой.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-2-enhanced-20261006.webp
-        alt: "Буэнос-Айрес, Аргентина"
+        hover: "Буэнос-Айрес: вечерний мост Пуэрто-Мадеро отражается в воде"
+        alt: "Подсвеченный белый мост и высотные дома Пуэрто-Мадеро у воды, Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-9"
 included:
   - "5 ночей в отелях выбранной категории на базе завтраков"

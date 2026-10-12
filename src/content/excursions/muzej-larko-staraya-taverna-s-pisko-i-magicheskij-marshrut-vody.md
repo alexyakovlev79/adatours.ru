@@ -19,7 +19,8 @@ currency: USD
 priceNote: "Основная стоимость — $260. Для группы из 2 человек — $144 на человека, из 3 человек — $106, из 4 человек — $88; групповой тариф — $88 на человека."
 hero:
   src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/hero-enhanced-20261001.webp
-  alt: Лима, столица Перу
+  hover: "Ночная Лима: освещенные башни церкви у площади"
+  alt: "Подсвеченная церковь с двумя башнями и городская площадь ночью, Лима, Перу"
 gallery:
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-1-enhanced-20261001.webp
     alt: Волшебный круговорот воды в Парке-де-ла-Ресерва

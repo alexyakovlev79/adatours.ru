@@ -19,6 +19,7 @@ relatedDestinations:
 sourceSnapshot: https://drive.google.com/file/d/1NwKWeRwfRs2h6WlEadgXDdGIFaDH2hCK/view?usp=drivesdk
 hero:
   src: "/media/excursions/venezuela-kavak-angel-helicopter/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: водопад Сальта-Анхель в Венесуэле'
+  hover: "Канайма в Венесуэле: тепуи над зеленым берегом лагуны"
+  alt: "Столовая гора за густым лесом отражается в лагуне Канаймы, Венесуэла"
 themes: ["theme_wildlife"]
 ---

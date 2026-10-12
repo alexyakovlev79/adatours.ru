@@ -400,7 +400,8 @@ itinerary:
     После экскурсии возвращение в отель.'
   images:
   - src: /media/tours/chili-santyago-pustynya-atakama-torres-del-pajne/hero-enhanced-20261006.webp
-    alt: Сан-Педро-де-Атакама
+    hover: "Атакама: гейзеры на фоне сухих гор и синего неба"
+    alt: "Струи пара над полем гейзеров среди высокогорных лугов Атакамы, Чили"
 - day: 12
   title: Атакама - Сантьяго
   places:
@@ -481,7 +482,8 @@ currency: USD
 priceNote: "8860 USD NET на человека, DBL, 2 участника; внутренние перелёты отдельно от 1500 USD."
 hero:
   src: /media/tours/kofe-tur-v-brazilii/itinerary-day-1-enhanced-20261006.webp
-  alt: Лучшее  Бразилии, Аргентины и Чили
+  hover: "Рио-де-Жанейро со смотровой площадки над городом и заливом"
+  alt: "Женщина у каменных перил смотровой площадки над Рио-де-Жанейро и заливом, Бразилия"
 routeCountries:
 - country_brazil
 - country_argentina

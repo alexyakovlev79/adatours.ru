@@ -18,12 +18,14 @@ currency: "USD"
 priceNote: "Стоимость — $153. 2 участника — $95 на человека. 3 участника — $75 на человека. 4 участника — $72 на человека. Групповой тур — $69 на человека."
 hero:
   src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3-enhanced-20261001.webp
-  alt: "на фото: Арекипа, белый город в Перу"
+  hover: "Арекипа в Перу: городская архитектура под вулканической вершиной"
+  alt: "Церковная башня и пальмы на фоне вулкана в Арекипе, Перу"
 gallery:
   - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: Арекипа, белый город в Перу"
   - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-regenerated-20261011-v2.webp"
-    alt: "на фото: Арекипа, белый город в Перу"
+    hover: "Арекипа: красные аркады и цветы во внутреннем дворе"
+    alt: "Красные стены и светлые арки двора в Арекипе на фоне вулкана, Перу"
   - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-3-src-enhanced-20261007.webp"
     alt: "на фото: Арекипа, белый город в Перу"
 route:

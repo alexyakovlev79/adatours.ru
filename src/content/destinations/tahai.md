@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Тахаи — археологический комплекс острова Пасхи на маршрутах знакомства с культурой Рапа-Нуи.
 hero:
   src: /media/destinations/tahai/hero-generated-20261009-v3.webp
-  alt: Тахаи
+  hover: "Тахаи на острове Пасхи: моаи у океана в вечернем свете"
+  alt: "Моаи с красным каменным головным убором у берега Тахаи на закате, остров Пасхи, Чили"
 gallery: []
 themes:
 - theme_culture

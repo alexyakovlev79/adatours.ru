@@ -307,7 +307,8 @@ itinerary:
       После размещения остается свободное время.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-7-enhanced-20261006.webp
-        alt: "Ушуайя, Аргентина"
+        hover: "Ушуайя в Аргентине: городская набережная под снежными вершинами"
+        alt: "Кварталы Ушуайи у синей воды на фоне заснеженных гор, Аргентина"
         intendedSlot: "itinerary:day-6"
   - day: 7
     title: "Национальный парк Tierra del Fuego"
@@ -499,7 +500,8 @@ itinerary:
       По прибытии встреча и трансфер в отель.
     images:
       - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-10-enhanced-20261006.webp
-        alt: "Аргентинская сторона водопадов Игуасу"
+        hover: "Игуасу крупным планом: бурная вода вокруг зеленого скального уступа"
+        alt: "Потоки водопадов Игуасу обтекают небольшой уступ с зеленью"
         intendedSlot: "itinerary:day-10"
   - day: 11
     title: "Вылет из Буэнос-Айреса"

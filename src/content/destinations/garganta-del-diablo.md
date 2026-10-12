@@ -10,7 +10,8 @@ summary: Мощные каскады Игуасу и смотровые доро
   увидеть падающие потоки и поднявшееся над ущельем облако брызг.
 hero:
   src: /media/excursions/jekskursija-na-argentinskie-vodopady/gallery-2-src-enhanced-20261008.webp
-  alt: 'На фото: Водопады Игуасу, Аргентина'
+  hover: "Игуасу в Аргентине: радуга среди каскадов и густой зелени"
+  alt: "Радуга над потоками Игуасу между лесистыми островками, Аргентина"
 gallery: []
 themes:
 - theme_wildlife

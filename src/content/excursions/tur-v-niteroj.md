@@ -20,7 +20,8 @@ hero:
 gallery:
   -
     src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
-    alt: ""
+    hover: "Рио-де-Жанейро: океанский пляж у подножия зеленых гор"
+    alt: "Длинный пляж Рио-де-Жанейро у океана под зелеными скалистыми вершинами, Бразилия"
   -
     src: "/media/excursions/tur-v-niteroj/gallery-1-src-enhanced-20261008.webp"
     hover: "Нитерой в Бразилии: круглое здание музея над морским берегом"

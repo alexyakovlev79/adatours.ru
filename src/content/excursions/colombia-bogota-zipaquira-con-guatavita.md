@@ -31,7 +31,8 @@ gallery:
 - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-3-src-enhanced-20261008.webp
   alt: Сипакира, Колумбия
 - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-4-src-enhanced-20261007.webp
-  alt: Богота, Колумбия
+  hover: "Богота: картины перед цветным фасадом уличной галереи"
+  alt: "Картины у входа в здание с красным фасадом и зелеными балконами, Богота, Колумбия"
 route:
 - Богота
 - Озеро Гуатавита

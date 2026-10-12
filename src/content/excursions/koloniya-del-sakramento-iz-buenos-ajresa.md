@@ -12,7 +12,8 @@ destinationName: "Колония-дель-Сакраменто"
 language: []
 hero:
   src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
-  alt: "Колония-дель-Сакраменто, Уругвай"
+  hover: "Монтевидео: старинная башня в конце городской улицы"
+  alt: "Городская улица и историческое здание с башней в Монтевидео, Уругвай"
 gallery: []
 route:
   - "Буэнос-Айрес"

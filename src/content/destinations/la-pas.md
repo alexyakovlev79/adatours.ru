@@ -10,7 +10,8 @@ summary: Ла-Пас находится на высоте 3660 м над уро�
 searchAliases: []
 hero:
   src: /media/countries/bolivia/featureBands-2-enhanced-20261002.webp
-  alt: 'На фото: столица Боливии город Ла Пас'
+  hover: "Ночной Ла-Пас: городские огни под снежной вершиной"
+  alt: "Огни Ла-Паса на фоне темных склонов и заснеженных гор ночью, Боливия"
 gallery:
 - src: /media/destinations/la-pas/gallery-1-enhanced-20261003.webp
   hover: "Ла-Пас: оживлённая площадь с церковной башней и городскими зданиями"

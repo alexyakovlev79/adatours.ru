@@ -18,7 +18,8 @@ route:
 language: []
 hero:
   src: "/media/excursions/mendoza-tur-v-vinnuyu-dolinu/gallery-2-enhanced-20261006.webp"
-  alt: "Дегустация вина на винодельне Мендосы"
+  hover: "Вино и закуски на столе у моря"
+  alt: "Бутылки вина и наполненные бокалы рядом с закусками на фоне моря"
 gallery: []
 included: []
 notIncluded: []

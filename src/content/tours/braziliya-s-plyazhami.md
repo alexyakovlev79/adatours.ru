@@ -198,7 +198,8 @@ currency: USD
 priceNote: $3205
 hero:
   src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
-  alt: Бразилия с пляжами
+  hover: "Порту-де-Галиньяс: лодки между природными бассейнами у рифа"
+  alt: "Лодки на бирюзовом мелководье среди рифовых бассейнов Порту-де-Галиньяс, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -240,7 +240,8 @@ itinerary:
     Питание: завтрак, ланч-бокс.'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Заповедник Чимборасо
+    hover: "Чимборасо в Эквадоре: снежная вершина над высокогорной дорогой"
+    alt: "Дорога через высокогорные луга к заснеженному вулкану Чимборасо, Эквадор"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_ecuador_chimborazo_ingapirca_day
@@ -461,7 +462,8 @@ itinerary:
     Питание: завтрак, обед.'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Морская черепаха — подводный мир Галапагосов
+    hover: "Галапагосские острова: морская черепаха под водой среди рыб"
+    alt: "Морская черепаха плывет среди рыб над каменистым дном, Галапагосы, Эквадор"
 - day: 11
   title: 9 января 2027 года. Балтра и вылет
   places:
@@ -557,7 +559,8 @@ gallery:
 - src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Озеро Килотоа
 - src: /media/tours/complete-ecuador-new-year/word-16-20261009-v1-enhanced-20261011-doc-v1.webp
-  alt: Чимборасо
+  hover: "Чимборасо в Эквадоре: снежная вершина над высокогорной дорогой"
+  alt: "Дорога через высокогорные луга к заснеженному вулкану Чимборасо, Эквадор"
 - src: /media/tours/complete-ecuador-new-year/word-01-20261009-v1-enhanced-20261011-doc-v1.webp
   hover: "Ингапирка: археологические руины на открытом травянистом плато"
   alt: "Каменные стены и террасы Ингапирки на фоне гор, Эквадор"

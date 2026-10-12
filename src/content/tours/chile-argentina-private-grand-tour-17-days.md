@@ -217,7 +217,8 @@ itinerary:
     Ночь в Nayara Hangaroa, Kainga. Завтрак входит в размещение (BB).'
   images:
   - src: /media/destinations/rano-kau-volcano/hero-generated-20261009-v3.webp
-    alt: Вулкан Рано-Кау
+    hover: "Рано-Кау на острове Пасхи: кратерное озеро и океан за склоном"
+    alt: "Заросшее озеро внутри кратера Рано-Кау у океанского берега, остров Пасхи, Чили"
 - excursionRef: excursion_easter_island_orongo_rano_kau
   places: []
 - day: 4
@@ -257,7 +258,8 @@ itinerary:
     Room. Завтрак входит в размещение (BB).
   images:
   - src: /media/destinations/tahai/hero-generated-20261009-v3.webp
-    alt: Тахаи
+    hover: "Тахаи на острове Пасхи: моаи у океана в вечернем свете"
+    alt: "Моаи с красным каменным головным убором у берега Тахаи на закате, остров Пасхи, Чили"
 - excursionRef: excursion_easter_island_akivi_puna_pau_tahai
   places: []
 - day: 6
@@ -271,7 +273,8 @@ itinerary:
     Ночь в Nayara Alto Atacama, Quitor. Завтрак входит в размещение (BB).
   images:
   - src: /media/countries/chile/featureBands-1-enhanced-20261002.webp
-    alt: 'На фото: пустыня Сан-Педро-де-Атакама в Чили'
+    hover: "Атакама в Чили: горы и их зеркальное отражение в воде"
+    alt: "Вулканические горы отражаются в спокойной воде среди пустыни Атакама, Чили"
 - day: 7
   title: Атакама | Долина Луны → Патагония
   places:
@@ -367,9 +370,9 @@ itinerary:
     Room. Завтрак входит в размещение (BB).'
   images:
   - src: /media/excursions/mendoza-tur-v-vinnuyu-dolinu/gallery-2-enhanced-20261006.webp
-    alt: Дегустация вина на винодельне в Мендосе
+    alt: "Бутылки вина и наполненные бокалы рядом с закусками на фоне моря"
     status: approved
-    hover: Дегустация вина на винодельне в Мендосе
+    hover: "Вино и закуски на столе у моря"
 - excursionRef: excursion_argentina_lujan_three_wineries_lunch
   places: []
 - day: 13
@@ -417,9 +420,9 @@ itinerary:
     в районе Реколета. Ночь в Four Seasons Hotel Buenos Aires, Mansion-View Room. Завтрак входит в размещение (BB).
   images:
   - src: /media/tours/chile-argentina-private-grand-tour-17-days/recoleta-corrected-generated-20261011-v1.webp
-    alt: Белая базилика Эль-Пилар рядом с кладбищем Реколета — иллюстрация
+    alt: "Белая базилика Эль-Пилар с колокольней у ограды кладбища Реколета, Буэнос-Айрес, Аргентина"
     status: approved
-    hover: Белая базилика Эль-Пилар рядом с кладбищем Реколета — иллюстрация
+    hover: "Буэнос-Айрес: базилика Эль-Пилар рядом с Реколетой"
 - excursionRef: excursion_iguazu_argentina_private_walkways_program
   places: []
 - day: 16

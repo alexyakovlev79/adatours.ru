@@ -9,7 +9,8 @@ destinationType: city
 summary: Часть Сьюдад-Гуаяны у слияния Карони и Ориноко и один из транспортных пунктов путешествий по востоку Венесуэлы.
 hero:
   src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-08-generated-20261008-next20.webp
-  alt: Река Карони у Пуэрто-Ордаса, Венесуэла
+  hover: "Пуэрто-Ордас: река Карони перед городским берегом"
+  alt: "Широкая река Карони у зеленого берега и жилых домов Пуэрто-Ордаса, Венесуэла"
 gallery: []
 themes:
 - theme_culture

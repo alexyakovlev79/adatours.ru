@@ -177,7 +177,8 @@ itinerary:
     и согласовывается отдельно. Ночь в Пуно, в варианте размещения 4★ указан Casona Plaza Hotel.
   images:
   - src: /media/countries/peru/featureBands-3-image-enhanced-20261001.webp
-    alt: 'На фото: город Пуно в Перу и озеро Титикака'
+    hover: "Пуно: сувенирная лодка с разноцветным украшением из тростника"
+    alt: "Миниатюрная тростниковая лодка с ярким декором на соломе, Пуно, Перу"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_peru_cusco_puno_andes_bus

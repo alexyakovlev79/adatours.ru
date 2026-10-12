@@ -19,6 +19,7 @@ destinationName: Сан-Паулу
 sourceSnapshot: https://drive.google.com/file/d/1wdoT4bUsTp4hUeirLM67k8049wKzZKCN/view?usp=drivesdk
 hero:
   src: /media/excursions/obzornaya-ekskursiya-po-san-paulu-6-chasov/hero-enhanced-20261006.webp
-  alt: 'На фото: город Сан-Пауло в Бразилии'
+  hover: "Сан-Паулу: вантовый мост на фоне городских башен"
+  alt: "Вантовый мост Октавиу-Фриас-де-Оливейра перед высотными зданиями Сан-Паулу, Бразилия"
 themes: ["theme_culture"]
 ---

@@ -77,7 +77,8 @@ itinerary:
   text: Полудневная экскурсия к Корковаду и в Санта-Терезу с англоговорящим гидом. Входные билеты и обед указаны в общем списке включенных услуг.
   images:
   - src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/itinerary-day-4-enhanced-20261006.webp
-    alt: Статуя Христа Искупителя на горе Корковадо, Рио
+    hover: "Корковаду в Рио: статуя Христа над лесистыми горными склонами"
+    alt: "Статуя Христа-Искупителя на вершине Корковаду среди зеленых гор Рио-де-Жанейро, Бразилия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_rio_corcovado_santa_teresa_half_day
@@ -89,7 +90,8 @@ itinerary:
   text: Полудневная экскурсия в лес Тижука с гидом и включенным обедом. Оставшаяся часть дня свободна.
   images:
   - src: /media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-0-src-enhanced-20261007.webp
-    alt: 'На фото: Водопад Каскатинья в лесу Тижука'
+    hover: "Тижука в Рио: водопад Каскатинья среди мокрых скал и растений"
+    alt: "Узкий водопад Каскатинья падает по темной скале среди зелени леса Тижука, Рио-де-Жанейро, Бразилия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_tijuca_forest_half_day_lunch

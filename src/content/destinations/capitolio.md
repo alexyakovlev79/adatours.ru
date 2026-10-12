@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_kapitolio/destination_brazil_kapitolio-generated-20261008.webp
-  alt: Капитолио - Бразилия
+  hover: "Капитолио в Бразилии: вода между высокими скалами каньона"
+  alt: "Высокие скальные стены каньона над бирюзовой водой у Капитолио, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

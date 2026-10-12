@@ -54,7 +54,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/itinerary-day-2-enhanced-20261006.webp
-  alt: "Буэнос-Айрес, Аргентина"
+  hover: "Танго в Буэнос-Айресе: танцоры на сцене с музыкантами"
+  alt: "Пара исполняет танго на сцене под аккомпанемент музыкантов, Буэнос-Айрес, Аргентина"
 gallery: []
 featured: false
 priority: 0
@@ -69,7 +70,8 @@ itinerary:
       Прибытие в Буэнос-Айрес. Частный трансфер из международного аэропорта в отель в центре города.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-2-enhanced-20261006.webp
-        alt: "Буэнос-Айрес, Аргентина"
+        hover: "Буэнос-Айрес: вечерний мост Пуэрто-Мадеро отражается в воде"
+        alt: "Подсвеченный белый мост и высотные дома Пуэрто-Мадеро у воды, Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-1"
   - day: 2
     title: "Буэнос-Айрес"
@@ -96,7 +98,8 @@ itinerary:
       Завтрак в отеле. День свободный. Можно выбрать одну из дополнительных экскурсий.
     images:
       - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-3-enhanced-20261006.webp
-        alt: "Буэнос-Айрес, свободный день"
+        hover: "Буэнос-Айрес: вечерние огни и движение у обелиска"
+        alt: "Освещенный обелиск и транспортные потоки на широких проспектах Буэнос-Айреса, Аргентина"
         intendedSlot: "itinerary:day-3"
   - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
     places:
@@ -138,7 +141,8 @@ itinerary:
       По дороге предусмотрены остановки для фотографий и покупки региональных сувениров. Возвращение в Сальту. Ночевка в отеле.
     images:
       - src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
-        alt: "Сальта и северо-запад Аргентины"
+        hover: "Аргентина: виноградники на фоне горных склонов"
+        alt: "Ряды виноградников и стройные деревья у подножия сухих гор в Аргентине"
         intendedSlot: "itinerary:day-5"
   - day: 6
     title: "Сальта - Пурмамарка - Кебрада-дель-Хумауака"

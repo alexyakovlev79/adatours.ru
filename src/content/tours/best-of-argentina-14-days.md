@@ -97,8 +97,8 @@ dates:
 - 2026 год, даты по запросу
 hero:
   src: /media/excursions/uvlekatel-nyj-tur-k-perito-moreno/hero-src-enhanced-20261007.webp
-  alt: Ледник Перито-Морено в аргентинской Патагонии
-  hover: Ледник Перито-Морено в аргентинской Патагонии
+  alt: "Столики открытой террасы перед бирюзовым озером и ледником Перито-Морено, Аргентина"
+  hover: "Перито-Морено: терраса с видом на озеро и ледник"
   status: approved
 gallery: []
 lead: Буэнос-Айрес и танго, ледник Перито-Морено, леса Огненной Земли, озера Барилоче и водопады Игуасу с обеих
@@ -128,9 +128,9 @@ itinerary:
     4*.'
   images:
   - src: /media/tours/issledovanie-argentiny/hero-enhanced-20261006.webp
-    alt: Цветные дома района Ла-Бока в Буэнос-Айресе
+    alt: "Яркий угловой дом и прохожие на мощеной улице Ла-Боки, Буэнос-Айрес, Аргентина"
     status: approved
-    hover: Цветные дома района Ла-Бока в Буэнос-Айресе
+    hover: "Ла-Бока в Буэнос-Айресе: цветной дом у вечерней улицы"
 - excursionRef: excursion_buenos_aires_historic_districts_russian_private
   places:
   - Буэнос-Айрес

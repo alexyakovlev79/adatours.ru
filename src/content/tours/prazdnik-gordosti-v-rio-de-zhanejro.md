@@ -115,7 +115,8 @@ currency: USD
 priceNote: $1421
 hero:
   src: /media/tours/prazdnik-gordosti-v-rio-de-zhanejro/hero-enhanced-20261006.webp
-  alt: Праздник гордости в Рио-де-Жанейро
+  hover: "Пляжный натюрморт: шлепанцы с флагом Бразилии и кокос у моря"
+  alt: "Зеленые шлепанцы с бразильскими флагами и кокос с трубочкой на песке у моря"
 routeCountries:
 - country_brazil
 routeDestinations:

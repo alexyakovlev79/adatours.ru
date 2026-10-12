@@ -19,9 +19,11 @@ hero:
   alt: "Лапа--шоу ночного Рио-де-Жанейро"
 gallery:
   - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-2-enhanced-20261006.webp"
-    alt: ""
+    hover: "Рио-де-Жанейро: ночные огни вокруг арок Лапа"
+    alt: "Подсвеченные арки акведука Лапа и городские огни Рио-де-Жанейро ночью, Бразилия"
   - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp"
-    alt: ""
+    hover: "Ночная Лапа в Рио: огни у белых арок акведука"
+    alt: "Освещенные арки акведука и вечерняя улица района Лапа в Рио-де-Жанейро, Бразилия"
 route:
   - "Рио-де-Жанейро"
   - "Богемная Лапа"

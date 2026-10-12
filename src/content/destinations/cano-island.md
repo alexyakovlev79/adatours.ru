@@ -9,7 +9,8 @@ destinationType: island
 summary: Остров Каньо у тихоокеанского побережья Коста-Рики, природная территория с коралловыми участками и морской жизнью.
 hero:
   src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/cano-island-place-generated-20261009-v1.webp
-  alt: Остров Каньо с лесным побережьем в Тихом океане
+  hover: "Остров Каньо в Коста-Рике: зеленый берег среди синей воды"
+  alt: "Небольшой остров Каньо с лесом и скалистым берегом в Тихом океане, Коста-Рика"
 gallery: []
 themes:
 - theme_wildlife

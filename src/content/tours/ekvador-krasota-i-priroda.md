@@ -60,7 +60,8 @@ itinerary:
   - src: /media/tours/ekvador-krasota-i-priroda/itinerary-2-images-0-src-enhanced-20261007.webp
     alt: 'На фото: Вулкан Котопахи в Эквадоре'
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-3-enhanced-20261001.webp
-    alt: 'На фото: Кафедральный собор Кито'
+    hover: "Кито: белая колокольня собора над городской площадью"
+    alt: "Кафедральный собор и люди на площади у цветущих деревьев, Кито, Эквадор"
 - day: 4
   title: Кито - Машпи
   places:

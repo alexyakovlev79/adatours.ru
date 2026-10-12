@@ -221,7 +221,8 @@ currency: USD
 priceNote: "Стоимость уточняется"
 hero:
   src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
-  alt: 'На фото: Водопады Игуасу'
+  hover: "Игуасу: радуга в водяной пыли у мостиков"
+  alt: "Радуга над водопадами Игуасу и смотровыми мостиками с туристами"
 routeCountries:
 - country_brazil
 routeDestinations:

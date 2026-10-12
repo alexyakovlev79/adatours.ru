@@ -27,9 +27,11 @@ gallery:
   - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-2-src-enhanced-20261008.webp
     alt: Историческая архитектура центра Рио-де-Жанейро
   - src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp
-    alt: Район Лапа в Рио-де-Жанейро
+    hover: "Ночная Лапа в Рио: огни у белых арок акведука"
+    alt: "Освещенные арки акведука и вечерняя улица района Лапа в Рио-де-Жанейро, Бразилия"
   - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-2-enhanced-20261006.webp"
-    alt: Лапа в вечернем Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: ночные огни вокруг арок Лапа"
+    alt: "Подсвеченные арки акведука Лапа и городские огни Рио-де-Жанейро ночью, Бразилия"
   - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-5-src-enhanced-20261008.webp
     alt: Чай и кофе в кафе «Коломбо»
   - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-6-src-enhanced-20261008.webp

@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Виноградники и винодельческая культура юга Бразилии."
 searchAliases: ["Bento Gonçalves","bentu-gonsalvis"]
 themes: ["theme_gastronomy_wine"]
-hero: {"src":"/media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/bento-generated-20261008.webp","alt":"Бенту-Гонсалвис — виноградники юга Бразилии","status":"approved"}
+hero: {"src":"/media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/bento-generated-20261008.webp","alt":"Ряды виноградников на зеленых холмах Бенту-Гонсалвиса, Бразилия","status":"approved", hover: "Бенту-Гонсалвис в Бразилии: виноградники среди холмов"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

@@ -76,7 +76,8 @@ itinerary:
     местном ресторане с трансферами.
   images:
   - src: /media/tours/kongress-v-argentine/itinerary-day-3-enhanced-20261006.webp
-    alt: 'На фото: Город Тигре в провинции Буэнос-Айрес, Аргентина'
+    hover: "Тигре в Аргентине: фасад с башней за зеленым газоном"
+    alt: "Здание с башней и фахверковыми фасадами у газона и пальм, Тигре, Аргентина"
 - excursionRef: excursion_tigre_parana_delta_half_day_lunch
   places: *id003
 - day: 4
@@ -99,7 +100,8 @@ itinerary:
     аргентинское барбекю. Вечером — прощальный ужин в отеле.'
   images:
   - src: /media/excursions/fiesta-gaucho/gallery-1-enhanced-20261001.webp
-    alt: Гаучо верхом на лошади
+    hover: "Аргентинский гаучо на лошади среди стада"
+    alt: "Гаучо верхом поднимает красную ткань среди скота на аргентинском ранчо"
 - excursionRef: excursion_santa_susana_ranch_gaucho_day
   places: *id005
 - day: 6
@@ -109,7 +111,8 @@ itinerary:
   text: В назначенное время гид сопровождает вас во время трансфера из отеля в аэропорт к вашему рейсу.
   images:
   - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-4-src-enhanced-20261007.webp
-    alt: 'На фото: Улица в Буэнос-Айресе'
+    hover: "Буэнос-Айрес: уличные кафе среди исторических зданий"
+    alt: "Пешеходная улица с летними столиками и старинными фасадами в Буэнос-Айресе, Аргентина"
 included:
 - Трансфер аэропорт — отель в Буэнос-Айресе с гидом.
 - Трансфер отель — аэропорт с гидом.

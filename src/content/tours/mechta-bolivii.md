@@ -78,7 +78,8 @@ itinerary:
     Возвращение в Ла-Пас, трансфер и ночь в отеле.
   images:
   - src: /media/excursions/la-pas-siti-tur/hero-enhanced-20261006.webp
-    alt: "Ла Пас"
+    hover: "Ла-Пас: торговая лавка с тканями, сумками и сувенирами"
+    alt: "Женщина в шляпе среди яркого текстиля и сувениров на рынке Ла-Паса, Боливия"
 - day: 3
   title: Ла-Пас - Уюни - Колчани
   places:
@@ -105,7 +106,8 @@ itinerary:
     Возвращение в Колчани.
   images:
   - src: /media/excursions/la-pas-siti-tur/gallery-2-enhanced-20261006.webp
-    alt: "Ла Пас"
+    hover: "Ла-Пас в Боливии: вечерний город под снежными горами"
+    alt: "Огни Ла-Паса на горных склонах под заснеженной вершиной в сумерках, Боливия"
   - src: /media/tours/mechta-bolivii/itinerary-day-3-images-1-enhanced-20261006.webp
     alt: "Уюни"
 - day: 4
@@ -127,7 +129,8 @@ itinerary:
     Размещение и ночь в пустынном отеле.
   images:
   - src: /media/destinations/laguna-canapa/hero-generated-20261008.webp
-    alt: "Лагуна Каньяпа"
+    hover: "Каньяпа в Боливии: высокогорная лагуна с фламинго"
+    alt: "Фламинго на мелководье лагуны Каньяпа среди соляных берегов и вулканических гор, Боливия"
 - day: 5
   title: Пустыня Силоли - Зеленая лагуна - Уюни
   places:
@@ -179,7 +182,8 @@ itinerary:
     Размещение и ночь в Ла-Пасе.
   images:
   - src: /media/tours/krasivaya-boliviya/itinerary-day-1-enhanced-20261006.webp
-    alt: "Ла Пас"
+    hover: "Ла-Пас в Боливии: городские кварталы в горной котловине"
+    alt: "Плотная застройка Ла-Паса в широкой котловине среди сухих гор, Боливия"
 - day: 7
   title: Вылет
   places: []

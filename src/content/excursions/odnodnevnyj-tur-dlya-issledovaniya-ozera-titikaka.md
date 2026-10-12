@@ -22,7 +22,8 @@ hero:
   alt: "Тростниковая лодка и жители плавучего острова Урос, озеро Титикака, Перу"
 gallery:
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp"
-    alt: "на фото: озеро Титикака и  плавающие острова Урос в Перу"
+    hover: "Острова Урос на Титикаке: тростниковые постройки у воды"
+    alt: "Тростниковые хижины и высокая фигура птицы на плавучем острове Урос, озеро Титикака, Перу"
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
     hover: "Острова Урос: жители в цветной одежде среди тростниковых построек"
     alt: "Женщины в ярких юбках на тростниковом острове Урос, озеро Титикака, Перу"

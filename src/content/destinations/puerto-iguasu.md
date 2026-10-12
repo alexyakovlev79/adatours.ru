@@ -10,7 +10,8 @@ summary: 'Пуэрто-Игуасу находится на севере Арг�
 searchAliases: []
 hero:
   src: /media/destinations/puerto-iguasu/hero-enhanced-20261002.webp
-  alt: 'на фото: Водопады Игуасу'
+  hover: "Аргентинская сторона Игуасу: потоки воды между лесистыми скалами"
+  alt: "Каскады водопадов Игуасу среди густого зеленого леса со стороны Аргентины"
 gallery:
 - src: /media/destinations/puerto-iguasu/gallery-1-enhanced-20261002.webp
   hover: "Игуасу: широкие потоки воды над скалами с густой растительностью"

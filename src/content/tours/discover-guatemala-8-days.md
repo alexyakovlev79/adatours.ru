@@ -113,7 +113,8 @@ itinerary:
     в Антигуа.
   images:
   - src: /media/tours/mir-majya/iximche-place-generated-20261009-v1.webp
-    alt: Пирамиды и травяные площади Ишимче
+    hover: "Ишимче: каменные платформы майя у соснового леса"
+    alt: "Низкие ступенчатые платформы Ишимче среди травяных площадей и сосен, Гватемала"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_guatemala_iximche_antigua_visit

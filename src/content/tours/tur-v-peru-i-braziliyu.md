@@ -70,7 +70,8 @@ itinerary:
     Продолжительность экскурсии около 4 часов. После возвращения в отель свободное время.
   images:
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/hero-enhanced-20261001.webp
-    alt: На фото6 дворец в Лиме, Перу
+    hover: "Ночная Лима: освещенные башни церкви у площади"
+    alt: "Подсвеченная церковь с двумя башнями и городская площадь ночью, Лима, Перу"
 - day: 3
   title: Лима - Куско
   places:

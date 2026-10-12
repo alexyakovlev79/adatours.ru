@@ -136,8 +136,8 @@ itinerary:
     аналогичном отеле.
   images:
   - src: /media/destinations/destination_mexico_mexico_city_zocalo/hero-generated-20261010-twenty-v1.webp
-    alt: Площадь Сокало с кафедральным собором и Национальным дворцом в Мехико — иллюстрация
-    hover: Площадь Сокало с кафедральным собором и Национальным дворцом в Мехико — иллюстрация
+    alt: "Мексиканский флаг на площади Сокало перед собором и Национальным дворцом, Мехико"
+    hover: "Мехико: флаг над площадью Сокало у собора и дворца"
     status: approved
 - excursionRef: excursion_mexico_mexico_city_pilgrimage_garibaldi
   places:

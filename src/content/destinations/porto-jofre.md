@@ -15,7 +15,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_portu_zhofri/porto-jofre-generated-20261008.webp
-  alt: Порту-Жофри - Бразилия
+  hover: "Порту-Жофри в Пантанале: ягуар у кромки воды"
+  alt: "Ягуар идет по песчаному речному берегу у Порту-Жофри, Пантанал, Бразилия"
 gallery:
 - src: /media/destinations/destination_brazil_portu_zhofri/jaguar-morning-generated-20261008.webp
   hover: "Порту-Жофри: ягуар на бревне у зелёного речного берега"

@@ -184,7 +184,8 @@ itinerary:
     Свободный вечер. Размещение: Fiesta 3*. Питание: завтрак, обед.'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Морская черепаха — подводный мир Галапагосов
+    hover: "Галапагосские острова: морская черепаха под водой среди рыб"
+    alt: "Морская черепаха плывет среди рыб над каменистым дном, Галапагосы, Эквадор"
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []
 - excursionRef: excursion_source_ostrov_plasa
@@ -281,7 +282,8 @@ currency: USD
 priceNote: 3665 USD — трёхместное; 3745 USD — двухместное; 4565 USD — одноместное размещение. Цена на человека.
 hero:
   src: "/media/countries/ekvador/featureBands-2-enhanced-20261002.webp"
-  alt: "На фото: Галапагосские острова в Эквадоре"
+  hover: "Галапагосские острова: красные крабы на лавовой скале"
+  alt: "Яркие красные крабы на черной прибрежной скале, Галапагосы, Эквадор"
 routeCountries:
 - country_ecuador
 routeDestinations:

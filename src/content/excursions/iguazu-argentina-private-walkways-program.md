@@ -12,7 +12,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/excursions/jekskursija-na-argentinskie-vodopady/hero-src-enhanced-20261008.webp
-  alt: 'На фото: Экскурсия на Аргентинские водопады'
+  hover: "Игуасу: вид сверху на площадку между падающими потоками воды"
+  alt: "Туристы на выступающей смотровой площадке над потоками водопадов Игуасу"
   status: approved
 gallery: []
 lead: Приватная экскурсия по аргентинской стороне Игуасу с переездом из Бразилии через мост Танкредо-Невес.

@@ -201,7 +201,8 @@ itinerary:
     Международный перелет.
   images:
   - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: столица Эквадора, город Кито'
+    hover: "Кито: городская площадь у собора с белой колокольней"
+    alt: "Люди и цветущие деревья на площади перед кафедральным собором Кито, Эквадор"
 included:
 - Индивидуальные трансферы и экскурсии
 - Проживание в отелях

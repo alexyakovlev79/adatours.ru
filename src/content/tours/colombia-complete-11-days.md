@@ -110,7 +110,8 @@ itinerary:
     ночь в Перейре.'
   images:
   - src: /media/excursions/salento-i-dolina-kokora/gallery-1-src-enhanced-20261007.webp
-    alt: Восковые пальмы в долине Кокора, Колумбия
+    hover: "Кокора в Колумбии: восковые пальмы на зеленых склонах"
+    alt: "Высокие восковые пальмы над зелеными холмами долины Кокора, Колумбия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_source_salento_i_dolina_kokora
@@ -204,7 +205,8 @@ itinerary:
     открываются виды на водохранилище и острова. Ночь в Медельине.
   images:
   - src: /media/excursions/penol-i-guatape/hero-src-enhanced-20261007.webp
-    alt: Водохранилище Эль-Пеньоль и зеленые острова в окрестностях Гуатапе, Колумбия
+    hover: "Водохранилище Гуатапе: островки и поселения между рукавами воды"
+    alt: "Островки и застроенные зеленые берега водохранилища у Гуатапе, Колумбия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_colombia_guatape_rock_and_town

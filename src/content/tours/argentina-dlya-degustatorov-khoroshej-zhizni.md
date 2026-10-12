@@ -133,7 +133,8 @@ itinerary:
       Трансфер в аэропорт для дальнейшего вылета.
     images:
       - src: /media/excursions/mendoza-tur-v-vinnuyu-dolinu/hero-enhanced-20261006.webp
-        alt: "Мендоса, Аргентина"
+        hover: "Река на дне каньона среди сухих скальных стен"
+        alt: "Извилистая река между сухими красноватыми скалами широкого каньона"
         intendedSlot: "itinerary:day-7"
 included:
   - "Проживание в отелях по программе"

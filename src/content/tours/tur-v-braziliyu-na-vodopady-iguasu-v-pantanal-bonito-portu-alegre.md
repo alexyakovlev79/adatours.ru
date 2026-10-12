@@ -63,7 +63,8 @@ itinerary:
     Дополнительно можно заказать полет над Рио на вертолете продолжительностью от 10 до 30 минут.'
   images:
   - src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-2-enhanced-20261006.webp
-    alt: 'На фото: район Лапа в Рио'
+    hover: "Рио-де-Жанейро: ночные огни вокруг арок Лапа"
+    alt: "Подсвеченные арки акведука Лапа и городские огни Рио-де-Жанейро ночью, Бразилия"
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
 - day: 3
@@ -93,7 +94,8 @@ itinerary:
     hover: "Пантанал: ягуар выглядывает из густой растительности"
     alt: "Ягуар среди зеленой листвы в Пантанале, Бразилия"
   - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: пляжи Рио-де-Жанейро'
+    hover: "Рио-де-Жанейро: длинный городской пляж у горного берега"
+    alt: "Пляж и кварталы Рио-де-Жанейро между океаном и зелеными горами, Бразилия"
 - day: 5
   title: Пантанал - Бонито
   places:
@@ -192,7 +194,8 @@ itinerary:
     Вас ждет экскурсия по винодельням с дегустацией и обедом. После этого размещение в **SPA do Vinho** среди виноградников и отдых.'
   image:
     src: /media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/bento-generated-20261008.webp
-    alt: Бенту-Гонсалвис — Бразилия
+    hover: "Бенту-Гонсалвис в Бразилии: виноградники среди холмов"
+    alt: "Ряды виноградников на зеленых холмах Бенту-Гонсалвиса, Бразилия"
 - day: 12
   title: Камбара-ду-Сул
   places:

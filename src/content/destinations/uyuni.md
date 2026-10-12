@@ -10,7 +10,8 @@ summary: Солончак Уюни в сезон дождей превращае
 searchAliases: []
 hero:
   src: /media/countries/bolivia/featureBands-1-enhanced-20261002.webp
-  alt: 'На фото: соленое озеро (солончак) Уюни'
+  hover: "Уюни на закате: люди и внедорожник на зеркальной поверхности"
+  alt: "Путешественники и внедорожник отражаются в воде солончака Уюни на закате, Боливия"
 gallery:
 - src: /media/destinations/uyuni/gallery-1-enhanced-20261003.webp
   hover: "Уюни: множество столбовидных кактусов среди камней"

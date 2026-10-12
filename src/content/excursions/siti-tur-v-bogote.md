@@ -19,7 +19,8 @@ currency: USD
 priceNote: "Основная стоимость — $226. Для 2 человек — $141 на человека, для 3 человек — $109 на человека, для 4 человек — $102 на человека."
 hero:
   src: "/media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-4-src-enhanced-20261007.webp"
-  alt: Панорама Боготы, Колумбия
+  hover: "Богота: картины перед цветным фасадом уличной галереи"
+  alt: "Картины у входа в здание с красным фасадом и зелеными балконами, Богота, Колумбия"
 gallery:
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-0-src-enhanced-20261008.webp
     alt: Музей Ботеро в Боготе

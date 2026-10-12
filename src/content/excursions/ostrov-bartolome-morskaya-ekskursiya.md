@@ -20,13 +20,15 @@ currency: "USD"
 priceNote: "Стоимость — $525."
 hero:
   src: "/media/excursions/ostrov-bartolome-morskaya-ekskursiya/hero-src-enhanced-20261007.webp"
-  alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
+  hover: "Галапагосы: морские львы на пляже рядом с отдыхающей"
+  alt: "Морские львы и отдыхающая женщина на песчаном пляже Галапагосских островов, Эквадор"
 gallery:
   - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
     hover: "Галапагосы: большая черепаха на лесной дорожке"
     alt: "Гигантская черепаха на грунтовой тропе среди деревьев, Галапагосы, Эквадор"
   - src: /media/excursions/ostrov-santa-krus/gallery-1-enhanced-20261001.webp
-    alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
+    hover: "Галапагосы: морской лев у кромки воды на пляже"
+    alt: "Морской лев на белом песке у бирюзового моря, Галапагосские острова, Эквадор"
   - src: /media/excursions/ostrov-santa-krus/gallery-2-enhanced-20261001.webp
     alt: "на фото: остров Бартоломе, Галапагоссы в Эквадоре"
 route:

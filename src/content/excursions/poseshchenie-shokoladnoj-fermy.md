@@ -25,7 +25,8 @@ gallery:
   - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-1-src-enhanced-20261007.webp"
     alt: Какао и шоколад на ферме в Колумбии
   - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-2-src-enhanced-20261007.webp"
-    alt: Посещение шоколадной фермы в Перейре
+    hover: "Яркий интерьер с барной стойкой и желтыми стульями"
+    alt: "Женщина у барной стойки с узорчатой плиткой, желтыми стульями и фиолетовыми стенами"
   - src: "/media/destinations/pereira/featureBands-0-image-enhanced-20261007.webp"
     hover: "Колумбия: плод какао рядом с чашкой напитка и выпечкой"
     alt: "Раскрытый плод какао, чашка напитка и выпечка, Колумбия"

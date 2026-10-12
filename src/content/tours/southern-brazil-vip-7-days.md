@@ -84,7 +84,8 @@ itinerary:
     Ночь в Бенту-Гонсалвисе.'
   images:
   - src: /media/destinations/porto-alegre/hero-enhanced-20261001.webp
-    alt: Порту-Алегри на юге Бразилии
+    hover: "Порту-Алегри: конная статуя в тени городских деревьев"
+    alt: "Конный памятник на постаменте среди деревьев в Порту-Алегри, Бразилия"
 - day: 2
   title: Квадроциклы и переезд в Грамаду
   places:
@@ -101,7 +102,8 @@ itinerary:
     Ночь в Грамаду.'
   images:
   - src: /media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/bento-generated-20261008.webp
-    alt: Бенту-Гонсалвис — виноградники юга Бразилии
+    hover: "Бенту-Гонсалвис в Бразилии: виноградники среди холмов"
+    alt: "Ряды виноградников на зеленых холмах Бенту-Гонсалвиса, Бразилия"
     status: approved
 - excursionRef: excursion_brazil_bento_vineyard_atv
   places:

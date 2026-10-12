@@ -50,7 +50,8 @@ itinerary:
     В завершение - элитные районы, современная архитектура и район, известный граффити.
   images:
   - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-2-enhanced-20261006.webp
-    alt: Сан-Паулу
+    hover: "Сан-Паулу: неоготический фасад собора с двумя шпилями"
+    alt: "Собор с двумя высокими шпилями и круглым окном над входом, Сан-Паулу, Бразилия"
 - day: 3
   title: Сан-Паулу - Игуасу
   places:
@@ -74,7 +75,8 @@ itinerary:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-3-images-1-enhanced-20261006.webp
-    alt: Сан-Паулу
+    hover: "Сан-Паулу: городское движение среди башен и зеленых площадей"
+    alt: "Автомобили на широкой дороге между высотными зданиями Сан-Паулу, Бразилия"
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
 - excursionRef: excursion_source_makuko_safari
@@ -103,7 +105,8 @@ itinerary:
   text: Завтрак в отеле. Трансфер в аэропорт и перелет в Рио-де-Жанейро. По прилете трансфер в отель.
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
-    alt: Фоз-ду-Игуасу
+    hover: "Игуасу с бразильской стороны: водопады и радуга среди зелени"
+    alt: "Каскады Игуасу и радуга в водяной пыли за зелеными деревьями, Бразилия"
 - day: 6
   title: 'Рио-де-Жанейро: Сахарная Голова и старый город'
   places:
@@ -160,7 +163,8 @@ itinerary:
     После насыщенной экскурсионной части в Сан-Паулу, Игуасу и Рио эти 2 дня оставлены для спокойного отдыха у моря, прогулок и собственного плана.
   images:
   - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
-    alt: Бузиос
+    hover: "Бузиос: лестница к зеленому берегу и прозрачной бухте"
+    alt: "Деревянная лестница спускается к бирюзовой бухте с лодкой в Бузиосе, Бразилия"
 - day: 10
   title: Бузиос
   places: []
@@ -219,7 +223,8 @@ currency: USD
 priceNote: $4687
 hero:
   src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-9-enhanced-20261006.webp
-  alt: Бразилия от Сан Пауло до Бузиоса
+  hover: "Игуасу: лодочная прогулка у водопадов"
+  alt: "Лодка с пассажирами перед широкими каскадами водопадов Игуасу"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -48,7 +48,8 @@ itinerary:
   text: Еще один полный день на воде.
   image:
     src: /media/destinations/destination_brazil_portu_zhofri/porto-jofre-generated-20261008.webp
-    alt: Порту-Жофри - Бразилия
+    hover: "Порту-Жофри в Пантанале: ягуар у кромки воды"
+    alt: "Ягуар идет по песчаному речному берегу у Порту-Жофри, Пантанал, Бразилия"
 - day: 4
   title: Отъезд
   places:

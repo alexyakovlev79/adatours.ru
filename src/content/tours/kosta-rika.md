@@ -170,7 +170,8 @@ currency: USD
 priceNote: $1709
 hero:
   src: /media/tours/costa-rica/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: Базовая Коста-Рика
+  hover: "Сан-Хосе: церковь и фонтан за зелеными деревьями"
+  alt: "Светлая церковь с двумя башнями и фонтан на городской площади Сан-Хосе, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

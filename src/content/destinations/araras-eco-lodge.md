@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/tours/brazil-three-ecosystems-8-days/word-5-20261010-enhanced-20261011-doc-v1.webp
-  alt: Узкая лодка на спокойной воде у зелёного берега
+  hover: "Пантанал: лодка отражается в воде у зеленого берега"
+  alt: "Человек в узкой лодке на спокойной воде у лесистого берега, Пантанал, Бразилия"
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_araras_eco_lodge.md
 updatedAt: '2026-10-10'

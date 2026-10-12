@@ -358,7 +358,8 @@ itinerary:
     Буэнос-Айрес настолько многогранен и богат интересными местами, что перечислить их все практически невозможно.'
   images:
   - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-4-src-enhanced-20261007.webp
-    alt: 'На фото: Улица в Буэнос-Айресе'
+    hover: "Буэнос-Айрес: уличные кафе среди исторических зданий"
+    alt: "Пешеходная улица с летними столиками и старинными фасадами в Буэнос-Айресе, Аргентина"
 - excursionRef: excursion_buenos_aires_panoramic_half_day
   places: *id007
 - day: 15

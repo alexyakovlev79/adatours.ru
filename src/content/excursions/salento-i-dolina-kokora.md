@@ -22,9 +22,11 @@ hero:
   alt: "Всадники на лошадях среди зелёных холмов долины Кокора, Колумбия"
 gallery:
   - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-2-src-enhanced-20261007.webp"
-    alt: Саленто, Колумбия
+    hover: "Яркий интерьер с барной стойкой и желтыми стульями"
+    alt: "Женщина у барной стойки с узорчатой плиткой, желтыми стульями и фиолетовыми стенами"
   - src: "/media/excursions/salento-i-dolina-kokora/gallery-1-src-enhanced-20261007.webp"
-    alt: Восковые пальмы в долине Кокора
+    hover: "Кокора в Колумбии: восковые пальмы на зеленых склонах"
+    alt: "Высокие восковые пальмы над зелеными холмами долины Кокора, Колумбия"
   - src: "/media/excursions/salento-i-dolina-kokora/gallery-2-src-enhanced-20261007.webp"
     alt: Пейзаж долины Кокора
   - src: "/media/destinations/pereira/hero-src-enhanced-20261007.webp"

@@ -84,7 +84,8 @@ itinerary:
     Включены завтрак, обед и ужин.
   images:
   - src: /media/tours/venesuela-novye-konkistadory/itinerary-day-02-generated-20261008-next20.webp
-    alt: Плайя-Гранде у Чорони, Венесуэла
+    hover: "Чорони в Венесуэле: пальмы у песчаного пляжа Плайя-Гранде"
+    alt: "Пальмы и лесистые горы за пляжем Плайя-Гранде у Чорони, Венесуэла"
 - day: 3
   title: 'Среда: Чорони - Каракас'
   places:
@@ -170,7 +171,8 @@ itinerary:
     Включены завтрак, обед и ужин.
   images:
   - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-9-enhanced-20261007.webp"
-    alt: 'На фото: водопад Сальто Ангель парка Канайма'
+    hover: "Анхель в Венесуэле: водопад сквозь тропическую зелень"
+    alt: "Водопад Анхель падает со столовой горы за деревьями и облаками, Венесуэла"
 - day: 6
   title: 'Суббота: свободный день в Канайме'
   places:

@@ -402,8 +402,8 @@ itinerary:
     Размещение: Mandarin Oriental, Club Room, завтрак (BB)'
   images:
   - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-22-20261011-v1-enhanced-20261011-next50-v1.webp
-    alt: Мраморные арки и синие отражения воды озера Хенераль-Каррера
-    hover: Мраморные арки и синие отражения воды озера Хенераль-Каррера
+    alt: "Мраморные арки над прозрачной бирюзовой водой озера Хенераль-Каррера, Чили"
+    hover: "Мраморные пещеры в Чили: арки и полосатые скальные стены у воды"
     status: approved
 - excursionRef: excursion_marble_caves_private_boat_two_half_hours
   places:
@@ -456,8 +456,8 @@ itinerary:
     Размещение: Mandarin Oriental, Club Room, завтрак (BB)'
   images:
   - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-26-20261011-v1-enhanced-20261011-next50-v1.webp
-    alt: Разноцветные дома на холмах Вальпараисо и Тихий океан на горизонте
-    hover: Разноцветные дома на холмах Вальпараисо и Тихий океан на горизонте
+    alt: "Разноцветные дома на холмах Вальпараисо над тихоокеанской бухтой, Чили"
+    hover: "Вальпараисо в Чили: цветные дома на склонах над портом"
     status: approved
 - excursionRef: excursion_valparaiso_vina_neruda_full_day
   places:

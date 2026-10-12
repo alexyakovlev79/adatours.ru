@@ -130,7 +130,8 @@ itinerary:
       После спуска экскурсия продолжается в историческом центре. Вы увидите церкви и монастыри XVI-XVIII веков, колониальные фасады и главный кафедральный собор. Каменная плитка улиц, старые двери, балконы и здания позволяют рассмотреть город уже с уровня улицы после панорамных видов с гор.
     images:
       - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-03-enhanced-20260930.webp
-        alt: "Исторический центр Рио-де-Жанейро"
+        hover: "Рио-де-Жанейро: аркады двора под зеленым склоном Корковаду"
+        alt: "Аркады внутреннего двора на фоне лесистого склона Корковаду, Рио-де-Жанейро, Бразилия"
         intendedSlot: "itinerary:day-3"
   - day: 4
     title: "Перелет в Фоз-ду-Игуасу"
@@ -194,7 +195,8 @@ itinerary:
       
     images:
       - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-07-enhanced-20260930.webp
-        alt: "Буэнос-Айрес, Аргентина"
+        hover: "Аргентина: фасад здания Bolsa de Comercio с куполом"
+        alt: "Светлое здание с колоннами, куполом и надписью Bolsa de Comercio, Аргентина"
         intendedSlot: "itinerary:day-7"
   - excursionRef: excursion_buenos_aires_tango_show_dinner
     places: ["Буэнос-Айрес"]

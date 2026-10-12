@@ -23,7 +23,8 @@ hero:
 gallery:
   -
     src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-0-src-enhanced-20261008.webp"
-    alt: "На фото: Священная Долина инков из города Куско"
+    hover: "Чинчеро в Перу: традиционный текстиль и сувениры в рыночной лавке"
+    alt: "Женщина в красной шляпе среди цветного текстиля и сувениров на рынке Чинчеро, Перу"
   -
     src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-1-src-enhanced-20261008.webp"
     alt: "Круговые террасы Морая на зелёном горном склоне, Перу"

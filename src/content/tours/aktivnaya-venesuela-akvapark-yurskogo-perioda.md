@@ -135,7 +135,8 @@ itinerary:
     **Питание:** завтрак, обед в пути.
   images:
   - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-08-generated-20261008-next20.webp
-    alt: Река Карони у Пуэрто-Ордаса, Венесуэла
+    hover: "Пуэрто-Ордас: река Карони перед городским берегом"
+    alt: "Широкая река Карони у зеленого берега и жилых домов Пуэрто-Ордаса, Венесуэла"
 - day: 9
   title: ', вторник. Национальный парк Канайма - остров Ратон'
   places:
@@ -152,7 +153,8 @@ itinerary:
     **Питание:** завтрак, обед, ужин.
   images:
   - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-9-enhanced-20261007.webp"
-    alt: Канайма
+    hover: "Анхель в Венесуэле: водопад сквозь тропическую зелень"
+    alt: "Водопад Анхель падает со столовой горы за деревьями и облаками, Венесуэла"
 - day: 10
   title: ', среда. Сальто Анхель, Сапо и лагуна Канайма'
   places:

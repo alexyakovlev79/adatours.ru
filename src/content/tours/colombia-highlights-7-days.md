@@ -124,7 +124,8 @@ itinerary:
     в экскурсионном блоке ниже. Возвращение в Медельин. Ночь в Медельине.
   images:
   - src: /media/excursions/penol-i-guatape/gallery-1-src-enhanced-20261007.webp
-    alt: Изрезанные берега водохранилища Эль-Пеньоль у Гуатапе, Колумбия
+    hover: "Гуатапе в Колумбии: зеленые островки среди бирюзовой воды"
+    alt: "Бирюзовые рукава водохранилища между зелеными холмами и домами у Гуатапе, Колумбия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_colombia_guatape_rock_and_town

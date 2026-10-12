@@ -9,7 +9,8 @@ destinationType: city
 summary: Чинчеро в Священной долине Перу, поселение с инкским наследием, традиционными ремеслами и ярмаркой.
 hero:
   src: /media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-0-src-enhanced-20261008.webp
-  alt: Чинчеро в Священной долине инков
+  hover: "Чинчеро в Перу: традиционный текстиль и сувениры в рыночной лавке"
+  alt: "Женщина в красной шляпе среди цветного текстиля и сувениров на рынке Чинчеро, Перу"
 gallery: []
 themes:
 - theme_culture

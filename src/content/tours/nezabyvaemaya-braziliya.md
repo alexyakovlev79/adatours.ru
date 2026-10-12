@@ -127,7 +127,8 @@ itinerary:
   - src: /media/tours/nezabyvaemaya-braziliya/itinerary-day-7-images-1-enhanced-20261006.webp
     alt: 'На фото: Водопады Фос-ду-Игуасу'
   - src: /media/tours/ekspress-braziliya-rio-ibuzios/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: Набережная Рио-де-Жанейро'
+    hover: "Рио-де-Жанейро: длинный городской пляж у горного берега"
+    alt: "Пляж и кварталы Рио-де-Жанейро между океаном и зелеными горами, Бразилия"
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
 - excursionRef: excursion_source_makuko_safari
@@ -152,7 +153,8 @@ itinerary:
     Нижний и верхний маршруты показывают водопады с разных высот. На нижнем круге вы оказываетесь ближе к основанию каскадов, на верхнем проходите над участками реки перед падением воды. Горло дьявола становится кульминацией дня: еще до площадки слышен сильный гул, а над ущельем постоянно висит водяное облако.
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-5-enhanced-20261006.webp
-    alt: 'На фото:  Вид на Водопады Игуасу'
+    hover: "Игуасу с бразильской стороны: водопады и радуга среди зелени"
+    alt: "Каскады Игуасу и радуга в водяной пыли за зелеными деревьями, Бразилия"
 - day: 7
   title: Игуасу - Рио-де-Жанейро - Бузиос
   places:
@@ -268,7 +270,8 @@ currency: USD
 priceNote: $4352
 hero:
   src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-8-enhanced-20261006.webp
-  alt: 'На фото: Бухта в Бузиосе'
+  hover: "Бузиос: лестница к зеленому берегу и прозрачной бухте"
+  alt: "Деревянная лестница спускается к бирюзовой бухте с лодкой в Бузиосе, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

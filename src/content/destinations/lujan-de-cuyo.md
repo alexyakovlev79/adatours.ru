@@ -9,7 +9,7 @@ destinationType: "region"
 summary: "У подножия Анд, среди горных панорам и залитых солнцем долин, раскинулся Лухан-де-Куйо — один из наиболее знаменитых винодельческих уголков Аргентины. Его пейзажи словно созданы для неспешных путешествий: аккуратные виноградники простираются до горизонта, старинные винодельни хранят секреты мастерства, а на заднем плане возвышаются величественные горные вершины."
 searchAliases: ["долина Лужан", "luhan-de-kujo"]
 themes: ["theme_gastronomy_wine"]
-hero: {"src": "/media/destinations/destination_argentina_luhan_de_kujo/original-01.jpg", "alt": "Лухан-де-Куйо"}
+hero: {"src": "/media/destinations/destination_argentina_luhan_de_kujo/original-01.jpg", "alt": "Ряды виноградников и грунтовая дорога на фоне заснеженных Анд, Лухан-де-Куйо, Аргентина", hover: "Лухан-де-Куйо: виноградники у подножия снежных Анд"}
 gallery: []
 facts: []
 featureBands: []

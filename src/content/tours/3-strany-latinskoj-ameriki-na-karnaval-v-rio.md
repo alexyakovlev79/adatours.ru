@@ -134,7 +134,8 @@ itinerary:
     **Стоимость:** USD 50 с человека.
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-6-enhanced-20261006.webp
-    alt: Мостики над Глоткой Дьявола на водопадах Игуасу в Аргентине
+    hover: "Водопады Игуасу: прогулочный мостик с туристами среди потоков воды"
+    alt: "Туристы на длинном мостике перед широкими каскадами водопадов Игуасу"
 - excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
@@ -294,7 +295,8 @@ currency: USD
 priceNote: $4638
 hero:
   src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/hero-enhanced-20261006.webp
-  alt: Девушка в синем карнавальном костюме на карнавале в Рио
+  hover: "Синий карнавальный костюм и перья во время уличного шествия"
+  alt: "Участница уличного карнавала в синем костюме с большими перьями"
 routeCountries:
 - country_brazil
 - country_argentina

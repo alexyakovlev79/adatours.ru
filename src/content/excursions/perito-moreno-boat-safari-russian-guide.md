@@ -20,7 +20,8 @@ route:
 language: []
 hero:
   src: "/media/tours/argentina-2024/itinerary-day-7-enhanced-20261006.webp"
-  alt: "Ледник Перито-Морено"
+  hover: "Перито-Морено в Аргентине: ледяная стена у озера и горного берега"
+  alt: "Голубая стена ледника Перито-Морено над озером с льдинами, Аргентина"
 gallery: []
 included: []
 notIncluded: []

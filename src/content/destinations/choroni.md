@@ -10,7 +10,8 @@ summary: Прибрежное поселение у лесистых гор на
   моря.
 hero:
   src: /media/tours/venesuela-novye-konkistadory/itinerary-day-02-generated-20261008-next20.webp
-  alt: Плайя-Гранде у Чорони, Венесуэла
+  hover: "Чорони в Венесуэле: пальмы у песчаного пляжа Плайя-Гранде"
+  alt: "Пальмы и лесистые горы за пляжем Плайя-Гранде у Чорони, Венесуэла"
 gallery: []
 themes:
 - theme_beach

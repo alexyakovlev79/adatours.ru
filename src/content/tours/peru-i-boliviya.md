@@ -203,7 +203,8 @@ currency: USD
 priceNote: $2236
 hero:
   src: /media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp
-  alt: Перу и Боливия
+  hover: "Острова Урос на Титикаке: тростниковые постройки у воды"
+  alt: "Тростниковые хижины и высокая фигура птицы на плавучем острове Урос, озеро Титикака, Перу"
 routeCountries:
 - country_peru
 - country_bolivia

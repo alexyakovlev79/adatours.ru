@@ -134,7 +134,8 @@ currency: USD
 priceNote: $2191
 hero:
   src: /media/tours/buenos-ajres-salta-iguasu/itinerary-day-5-enhanced-20261006.webp
-  alt: Удивительная Сальта
+  hover: "Аргентина: виноградники на фоне горных склонов"
+  alt: "Ряды виноградников и стройные деревья у подножия сухих гор в Аргентине"
 routeCountries:
 - country_argentina
 routeDestinations:

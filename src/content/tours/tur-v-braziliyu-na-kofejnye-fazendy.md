@@ -86,7 +86,8 @@ itinerary:
     Можно выбрать короткий обзорный полет продолжительностью 6 минут или вариант на 13 минут, чтобы провести над городом больше времени.'
   images:
   - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-03-enhanced-20260930.webp
-    alt: Исторический центр Рио-де-Жанейро, Бразилия
+    hover: "Рио-де-Жанейро: аркады двора под зеленым склоном Корковаду"
+    alt: "Аркады внутреннего двора на фоне лесистого склона Корковаду, Рио-де-Жанейро, Бразилия"
 - excursionRef: excursion_source_rio_nochyu
   places: []
 - excursionRef: excursion_source_zaliv_guanabara_morskaya_progulka

@@ -145,7 +145,8 @@ itinerary:
     После экскурсии трансфер в Каламу, внутренний перелет в Сантьяго и трансфер в отель.
   images:
   - src: /media/destinations/destination_chile_machuka/hero-generated-20261008-resumed-v1.webp
-    alt: Мачука, Чили, Чили
+    hover: "Мачука в Чили: небольшие дома среди высокогорного ландшафта"
+    alt: "Глинобитные дома с соломенными крышами на сухом горном склоне Мачуки, Чили"
 - excursionRef: excursion_el_tatio_machuca_standard_half_day
   places:
   - Гейзеры Эль-Татио
@@ -202,7 +203,8 @@ itinerary:
     После завтрака экскурсия к Тихому океану: Вальпараисо и Винья-дель-Мар, дорога через долины Куракави и Касабланка. Продолжительность около 9 часов с остановкой на обед. По завершении возвращение в Сантьяго.
   images:
   - src: /media/tours/solntse-tango-vino-i-atakama/itinerary-day-11-enhanced-20261006.webp
-    alt: Вальпараисо
+    hover: "Вальпараисо: спуск по лестнице среди цветных домов"
+    alt: "Лестница и синий деревянный дом на холме над улицами Вальпараисо, Чили"
 - excursionRef: excursion_source_vin_ja_del_mar_i_val_paraiso
   places:
   - Вальпараисо и Винья дель Мар

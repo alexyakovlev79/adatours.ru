@@ -10,7 +10,8 @@ summary: Белиз-Сити расположен там, где Белиз-Ри
 searchAliases: []
 hero:
   src: /media/destinations/beliz-siti/hero-enhanced-20261002.webp
-  alt: 'На фото: город Белиз-Сити, в Белизе'
+  hover: "Белиз: приветственная надпись на здании у автомобилей"
+  alt: "Здание с разноцветной надписью Welcome to Belize за автомобилями, Белиз"
 gallery:
 - src: /media/destinations/beliz-siti/gallery-1-enhanced-20261002.webp
   hover: "Белиз-Сити: яркий деревянный дом и велосипед у стены"

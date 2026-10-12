@@ -45,7 +45,8 @@ itinerary:
     Ночевка в Сан-Мигель-де-Альенде.
   images:
   - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Мехико
+    hover: "Каменная пирамида с посетителями на ступенях"
+    alt: "Туристы на длинной лестнице ступенчатой каменной пирамиды в Мексике"
 - day: 2
   title: Сан-Мигель-де-Альенде - Долорес Идальго - Гуанахуато
   places:

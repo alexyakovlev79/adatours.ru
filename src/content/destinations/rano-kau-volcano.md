@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Рано-Кау — вулкан острова Пасхи с кратерным озером и смотровой площадкой на его краю.
 hero:
   src: /media/destinations/rano-kau-volcano/hero-generated-20261009-v3.webp
-  alt: Вулкан Рано-Кау
+  hover: "Рано-Кау на острове Пасхи: кратерное озеро и океан за склоном"
+  alt: "Заросшее озеро внутри кратера Рано-Кау у океанского берега, остров Пасхи, Чили"
 gallery: []
 themes:
 - theme_wildlife

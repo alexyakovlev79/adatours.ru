@@ -8,7 +8,7 @@ countryId: "country_brazil"
 destinationType: "resort"
 summary: "Акираз на побережье Сеары предлагает широкие атлантические пляжи и семейный отдых. В Порту-дас-Дунас расположен аквапарк Beach Park."
 searchAliases: ["Aquiraz"]
-hero: {"src": "/media/destinations/destination_brazil_aquiraz/hero-generated-20261010-editorial-v1.webp", "alt": "Широкий пляж Атлантического побережья Акираза — иллюстрация"}
+hero: {"src": "/media/destinations/destination_brazil_aquiraz/hero-generated-20261010-editorial-v1.webp", "alt": "Широкий песчаный пляж и пальмы вдоль Атлантического побережья Акираза", "hover": "Акираз: океанский прибой у песчаного пляжа с пальмами"}
 gallery: []
 themes: ["theme_beach", "theme_family"]
 relatedDestinations: []

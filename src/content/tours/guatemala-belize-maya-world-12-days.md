@@ -198,8 +198,9 @@ itinerary:
     Hidden Valley.
   images:
   - src: /media/tours/guatemala-belize-maya-world-12-days/san-ignacio-word-09-20261010-p022-v1-enhanced-20261011-doc-v1.webp
-    alt: Разноцветные деревянные дома и вывески на улице Сан-Игнасио, Белиз
+    alt: "Бирюзовый деревянный дом с вывесками и яркими ставнями на улице Сан-Игнасио, Белиз"
     status: approved
+    hover: "Сан-Игнасио в Белизе: цветной фасад и магазинные вывески"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_belize_hidden_valley_nature_walk
@@ -241,8 +242,9 @@ itinerary:
     одними из наиболее сохранившихся в мире. Ночь в отеле.
   images:
   - src: /media/tours/guatemala-belize-maya-world-12-days/ambergris-word-12-20261010-p022-v1-enhanced-20261011-doc-v1.webp
-    alt: Пальмы и берег Карибского моря у отеля на Амбергрис-Кей, Белиз
+    alt: "Пальмы и песчаный берег Карибского моря возле отеля на Амбергрис-Кей, Белиз"
     status: approved
+    hover: "Амбергрис-Кей в Белизе: отель и пальмы у бирюзового моря"
   contentBlocks: []
 - day: 12
   title: Прощание с миром майя и Карибским морем

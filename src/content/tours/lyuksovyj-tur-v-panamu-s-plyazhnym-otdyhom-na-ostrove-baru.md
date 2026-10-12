@@ -271,7 +271,8 @@ itinerary:
     Размещение в Azul Paradise Bastimentos Island Punta Vieja.
   images:
   - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Бокас-дель-Торо, Панама - коралловые рифы и бирюзовая вода
+    alt: "Тропический берег с причалом и коралловыми рифами в бирюзовой воде Бокас-дель-Торо, Панама"
+    hover: "Бокас-дель-Торо в Панаме: берег и рифы с высоты"
 - day: 10
   title: Свободный день в Бокас-дель-Торо
   places:

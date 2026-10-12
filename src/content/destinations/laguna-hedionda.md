@@ -16,7 +16,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_bolivia_laguna_hedionda/hero-generated-20261008.webp
-  alt: Laguna Hedionda in the southwestern Bolivian Altiplano — Bolivia
+  alt: "Фламинго на мелководье Лагуны Эдионда на фоне сухих горных склонов, Боливия"
+  hover: "Лагуна Эдионда в Боливии: фламинго у горного берега"
 gallery: []
 relatedDestinations: []
 featuredTours: []

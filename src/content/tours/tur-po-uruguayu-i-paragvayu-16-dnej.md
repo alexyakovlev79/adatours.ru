@@ -353,7 +353,8 @@ currency: USD
 priceNote: $6336
 hero:
   src: "/media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/hero-src-enhanced-20261007.webp"
-  alt: Закат на побережье Уругвая, пляжи Атлантики, золотой песок и волны
+  alt: "Закат над океаном и волны на песчаном побережье Уругвая"
+  hover: "Побережье Уругвая: солнечный закат и морской прибой"
 routeCountries:
 - country_uruguay
 - country_paraguay

@@ -213,7 +213,8 @@ currency: USD
 priceNote: $10133
 hero:
   src: /media/tours/tur-v-chili-luchshee-v-strane-i-gastronomiya-gurme/hero-enhanced-20261006.webp
-  alt: 'На фото: национальный заповедник Торрес-дель-Пайне в Чили (Чилийская Патгония)'
+  alt: "Горные вершины Торрес-дель-Пайне над синим озером под освещёнными облаками, Чили"
+  hover: "Торрес-дель-Пайне в Чили: горы и озеро в вечернем свете"
 routeCountries:
 - country_chile
 routeDestinations:

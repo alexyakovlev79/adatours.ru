@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "island"
 summary: "Большой Дафне, небольшой вулканический остров возле Санта-Крус, известен многолетними исследованиями дарвиновых вьюрков."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_daphne_major/hero-generated-20261010-third-ten-v1.webp", "alt": "Вулканический остров Большой Дафне со стороны океана — иллюстрация", "hover": "Большой Дафне, небольшой вулканический остров возле Санта-Крус, известен многолетними исследованиями дарвиновых вьюрков."}
+hero: {"src": "/media/destinations/destination_ecuador_daphne_major/hero-generated-20261010-third-ten-v1.webp", "alt": "Вулканический остров Большой Дафне среди синей океанской воды", "hover": "Большой Дафне: скалистый вулканический остров с моря"}
 gallery: []
 themes: ["theme_wildlife"]
 relatedDestinations: []

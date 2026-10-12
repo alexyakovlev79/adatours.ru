@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "natural_area"
 summary: "Парк Кондор возле Отавало знакомит с хищными птицами и работой центра спасения. С холма открываются виды на вулканы эквадорских Анд."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_parque_condor/hero-generated-20261010-editorial-v1.webp", "alt": "Андский кондор на фоне зеленых склонов возле Отавало — иллюстрация"}
+hero: {"src": "/media/destinations/destination_ecuador_parque_condor/hero-generated-20261010-editorial-v1.webp", "alt": "Андский кондор на камне на фоне зелёных склонов возле Отавало", "hover": "Отавало: кондор над зелёной горной долиной"}
 gallery: []
 themes: ["theme_wildlife"]
 relatedDestinations: []

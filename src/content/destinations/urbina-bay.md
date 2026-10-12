@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "natural_area"
 summary: "Бухта Урбина на западе Исабелы показывает бывшее морское дно, поднявшееся над водой, и знакомит с сухопутными обитателями острова."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_urbina_bay/hero-generated-20261010-third-ten-v1.webp", "alt": "Сухопутная игуана среди камней и кораллов у бухты Урбина — иллюстрация", "hover": "Бухта Урбина на западе Исабелы показывает бывшее морское дно, поднявшееся над водой, и знакомит с сухопутными обитателями острова."}
+hero: {"src": "/media/destinations/destination_ecuador_urbina_bay/hero-generated-20261010-third-ten-v1.webp", "alt": "Сухопутная игуана на каменистом берегу бухты Урбина возле кактусов", "hover": "Бухта Урбина: жёлтая игуана среди прибрежных камней"}
 gallery: []
 themes: ["theme_wildlife"]
 relatedDestinations: []

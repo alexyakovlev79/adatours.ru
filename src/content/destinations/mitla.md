@@ -8,7 +8,7 @@ countryId: "country_mexico"
 destinationType: "natural_area"
 summary: "Митла в долине Оахаки известна сапотекскими дворцами с геометрическими каменными мозаиками и залом монолитных колонн."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_mexico_mitla/hero-generated-20261010-batch-four-v1.webp", "alt": "Каменные геометрические орнаменты древних построек Митлы — иллюстрация"}
+hero: {"src": "/media/destinations/destination_mexico_mitla/hero-generated-20261010-batch-four-v1.webp", "alt": "Геометрические каменные орнаменты на стенах древних построек Митлы", "hover": "Митла: резные каменные узоры над входом"}
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

@@ -193,7 +193,8 @@ itinerary:
     мебелью. Ночь в Медельине.'
   images:
   - src: /media/tours/colombia-complete-11-days/medellin-panorama-word-20261010-v1-enhanced-20261011-pass2324-v1.webp
-    alt: Панорама Медельина в зеленой горной долине, изображение из Word Анны
+    alt: "Панорама Медельина с многоэтажными зданиями и зеленью в горной долине"
+    hover: "Медельин: городская застройка среди зелёных гор"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_colombia_medellin_comuna13_el_castillo

@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "island"
 summary: "Сан-Кристобаль на Галапагосах соединяет морских львов у берега, зеленые возвышенности и морские выходы к скалам Леон-Дормидо."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_san_cristobal_island/hero-generated-20261010-editorial-v1.webp", "alt": "Две скальные части Леон-Дормидо у острова Сан-Кристобаль — иллюстрация"}
+hero: {"src": "/media/destinations/destination_ecuador_san_cristobal_island/hero-generated-20261010-editorial-v1.webp", "alt": "Две скальные части Леон-Дормидо в океане у острова Сан-Кристобаль", "hover": "Сан-Кристобаль: скалы Леон-Дормидо среди синей воды"}
 gallery: []
 themes: ["theme_wildlife", "theme_diving"]
 relatedDestinations: []

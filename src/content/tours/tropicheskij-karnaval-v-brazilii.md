@@ -156,7 +156,8 @@ currency: USD
 priceNote: $3688
 hero:
   src: /media/tours/luxury-brazil-11d/itinerary/extra-samba-show-enhanced-20260930.webp
-  alt: Парад чемпионов на карнавале в Рио, шесть лучших школ самбы на Самбадроме
+  alt: "Участница карнавала в Рио-де-Жанейро в костюме с зелёными и розовыми перьями"
+  hover: "Карнавал в Рио-де-Жанейро: цветочный головной убор и яркие перья"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "natural_area"
 summary: "Бухта Тагус на Исабеле соединяет прогулку к озеру Дарвина с наблюдением за пингвинами и бакланами у вулканических берегов."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_tagus_cove/hero-generated-20261010-third-ten-v1.webp", "alt": "Галапагосские пингвины и баклан у скал бухты Тагус — иллюстрация", "hover": "Бухта Тагус на Исабеле соединяет прогулку к озеру Дарвина с наблюдением за пингвинами и бакланами у вулканических берегов."}
+hero: {"src": "/media/destinations/destination_ecuador_tagus_cove/hero-generated-20261010-third-ten-v1.webp", "alt": "Два галапагосских пингвина и баклан на камнях у воды бухты Тагус", "hover": "Бухта Тагус: пингвины и баклан на скалистом берегу"}
 gallery: []
 themes: ["theme_wildlife", "theme_adventure"]
 relatedDestinations: []

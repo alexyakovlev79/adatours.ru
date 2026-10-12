@@ -8,7 +8,7 @@ countryId: "country_mexico"
 destinationType: "city"
 summary: "Сан-Анхель в Мехико знакомит с мощеными улицами, колониальными домами и ремесленным искусством вокруг площади Сан-Хасинто."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_mexico_san_angel/hero-generated-20261010-batch-four-v1.webp", "alt": "Мощеная улица с колониальными домами в Сан-Анхеле — иллюстрация"}
+hero: {"src": "/media/destinations/destination_mexico_san_angel/hero-generated-20261010-batch-four-v1.webp", "alt": "Мощёная улица с цветными колониальными домами и цветами в Сан-Анхеле", "hover": "Сан-Анхель: цветущие растения у колониальных фасадов"}
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Прозрачная река в районе Бониту и Жардина, известная наблюдением за пресноводными рыбами и водной растительностью.
 hero:
   src: /media/tours/udivitelnaya-braziliya/rio-da-prata-place-generated-20261008.webp
-  alt: Рыбы и водные растения в прозрачной реке Рио-да-Прата, Бразилия
+  alt: "Рыбы и водные растения в прозрачной реке Рио-да-Прата, Бразилия"
+  hover: "Рио-да-Прата в Бразилии: рыбы среди подводной зелени"
 gallery: []
 themes:
 - theme_wildlife

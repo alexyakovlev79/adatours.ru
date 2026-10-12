@@ -20,7 +20,8 @@ themes:
 - theme_culture
 hero:
   src: /media/excursions/anakena-rano-raraku-tongariki-tour/hero-src-enhanced-20261010.webp
-  alt: Аху Тонгарики, остров Пасхи - 15 восстановленных статуй моаи
+  alt: "Стоящие и поваленные статуи моаи на зелёном склоне острова Пасхи"
+  hover: "Остров Пасхи: каменные моаи среди травы на склоне"
 sourceSnapshot: https://drive.google.com/file/d/1Of-rCEbo7uTXOBvvXzNiFYyt8TC5a2Wn/view?usp=drivesdk
 updatedAt: '2026-10-11'
 ---

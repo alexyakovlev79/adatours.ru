@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Прозрачная родниковая вода в тени тропических деревьев на острове Ометепе.
 hero:
   src: /media/tours/best-of-nicaragua-10-days/ojo-de-agua-generated-20261010-p020-v1.webp
-  alt: Бассейн с прозрачной водой среди деревьев Охо-де-Агуа — иллюстрация
+  alt: "Бассейн Охо-де-Агуа с прозрачной водой среди тропических деревьев"
+  hover: "Охо-де-Агуа: прозрачный бассейн в тенистом лесу"
 gallery: []
 themes:
 - theme_wildlife

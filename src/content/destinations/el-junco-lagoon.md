@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "natural_area"
 summary: "Эль-Юнко — пресноводная лагуна в вулканическом кратере на Сан-Кристобале. Зеленые склоны и фрегаты над водой показывают высокогорные Галапагосы."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_el_junco_lagoon/hero-generated-20261010-editorial-v1.webp", "alt": "Пресноводная лагуна Эль-Юнко среди зеленых склонов кратера — иллюстрация"}
+hero: {"src": "/media/destinations/destination_ecuador_el_junco_lagoon/hero-generated-20261010-editorial-v1.webp", "alt": "Пресноводная лагуна Эль-Юнко среди зелёных склонов и папоротников", "hover": "Эль-Юнко: округлая лагуна среди зелёных холмов"}
 gallery: []
 themes: ["theme_wildlife"]
 relatedDestinations: []

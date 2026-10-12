@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "natural_area"
 summary: "Кратеры-Близнецы в высокогорье Санта-Крус — глубокие вулканические провалы, окруженные зеленым лесом скалезии."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_los_gemelos/hero-generated-20261010-next-ten-v1.webp", "alt": "Зеленый лес по краю вулканического провала Лос-Гемелос — иллюстрация"}
+hero: {"src": "/media/destinations/destination_ecuador_los_gemelos/hero-generated-20261010-next-ten-v1.webp", "alt": "Зелёный лес по краю глубокого вулканического провала Лос-Гемелос", "hover": "Лос-Гемелос: лесистые стенки вулканического провала"}
 gallery: []
 themes: ["theme_wildlife"]
 relatedDestinations: []

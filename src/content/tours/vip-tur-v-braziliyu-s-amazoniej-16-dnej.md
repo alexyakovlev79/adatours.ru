@@ -366,7 +366,8 @@ itinerary:
     После Рио, Игуасу и Амазонии эти 4 дня позволяют провести время без новых перелетов и переездов.'
   images:
   - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-13-enhanced-20261006.webp
-    alt: Цветущая кувшинка Виктория амазонская на реке Амазонке в Бразилии
+    alt: "Розовая кувшинка с жёлтой серединой и зелёным листом на воде"
+    hover: "Цветок кувшинки над тёмной водой"
 - day: 14
   title: Отдых в Nannai Muro Alto
   places: []
@@ -453,7 +454,8 @@ currency: USD
 priceNote: $30633
 hero:
   src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/hero-enhanced-20261006.webp
-  alt: Вечерний закат на Копакабане, пляжный отдых в Рио-де-Жанейро, Бразилия
+  alt: "Двое людей играют с водой у пляжа на закате, на фоне города и гор"
+  hover: "Брызги воды вокруг двух людей у вечернего пляжа"
 routeCountries:
 - country_brazil
 routeDestinations:

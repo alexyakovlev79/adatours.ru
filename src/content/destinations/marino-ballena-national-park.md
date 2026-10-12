@@ -9,7 +9,8 @@ destinationType: national_park
 summary: Национальный парк Марино-Баллена в Коста-Рике, морская территория с пляжами и наблюдением за китами и дельфинами.
 hero:
   src: /media/tours/kostarikanskie-sokrovishcha/marino-ballena-national-park-place-generated-20261009-v1.webp
-  alt: Тихоокеанский пляж и лес национального парка Марино-Баллена
+  alt: "Тихоокеанский пляж с пальмами и лесом национального парка Марино-Баллена"
+  hover: "Марино-Баллена: тропический берег и океанский прибой"
 gallery: []
 themes:
 - theme_wildlife

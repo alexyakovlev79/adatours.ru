@@ -221,7 +221,8 @@ currency: USD
 priceNote: $2056
 hero:
   src: /media/tours/nezabyvaemyj-novyj-god-v-rio/hero-enhanced-20261006.webp
-  alt: 'На фото: празднование Нового Года на берегу океана в Рио-де-Жанейро. Бразилия'
+  alt: "Розовые и синие фейерверки в ночном небе"
+  hover: "Яркие вспышки салюта на чёрном небе"
 routeCountries:
 - country_brazil
 routeDestinations:

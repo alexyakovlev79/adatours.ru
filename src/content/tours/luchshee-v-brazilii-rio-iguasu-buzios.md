@@ -321,7 +321,8 @@ currency: USD
 priceNote: $2988
 hero:
   src: /media/tours/luchshee-v-brazilii-rio-iguasu-buzios/hero-enhanced-20261006.webp
-  alt: 'на фото: Статуя Иисуса Христа в Рио-де-Жанейро (Христа Спасителя) в Бразилии'
+  alt: "Статуя Христа-Искупителя над Рио-де-Жанейро, озером и океанским берегом, вид с высоты"
+  hover: "Рио-де-Жанейро с высоты: статуя Христа-Искупителя над городом"
 routeCountries:
 - country_brazil
 routeDestinations:

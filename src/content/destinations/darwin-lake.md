@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "natural_area"
 summary: "Озеро Дарвина на Исабеле лежит внутри вулканического конуса: соленая вода, сухие склоны и виды над бухтой Тагус."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_darwin_lake/hero-generated-20261010-batch-four-v1.webp", "alt": "Озеро Дарвина в вулканическом конусе на Исабеле — иллюстрация"}
+hero: {"src": "/media/destinations/destination_ecuador_darwin_lake/hero-generated-20261010-batch-four-v1.webp", "alt": "Озеро Дарвина среди сухих вулканических склонов острова Исабела", "hover": "Исабела: озеро Дарвина в вулканическом углублении"}
 gallery: []
 themes: ["theme_wildlife"]
 relatedDestinations: []

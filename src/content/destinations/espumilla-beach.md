@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "natural_area"
 summary: "Пляж Эспумилья на Сантьяго знакомит с песчаным берегом, манграми и местами гнездования морских черепах."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_espumilla_beach/hero-generated-20261010-batch-four-v1.webp", "alt": "Песчаный пляж Эспумилья с манграми и прибрежной птицей — иллюстрация"}
+hero: {"src": "/media/destinations/destination_ecuador_espumilla_beach/hero-generated-20261010-batch-four-v1.webp", "alt": "Песчаный пляж Эспумилья, прибрежная птица и вулканические камни у воды", "hover": "Эспумилья: песчаный берег и птица у прибоя"}
 gallery: []
 themes: ["theme_wildlife"]
 relatedDestinations: []

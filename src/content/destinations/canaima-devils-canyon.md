@@ -10,8 +10,9 @@ summary: Ущелье с высокими отвесными стенами на
   тропическим лесом.
 hero:
   src: /media/tours/canaima-angel-falls-4-days/devil-canyon-generated-20261010-p034-v1.webp
-  alt: Отвесные скальные стены Каньона Дьявола в Канайме — иллюстрация
+  alt: "Река среди леса и отвесных скальных стен Каньона Дьявола в Канайме"
   status: approved
+  hover: "Канайма: река между высокими скалами Каньона Дьявола"
 gallery: []
 themes:
 - theme_wildlife

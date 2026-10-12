@@ -362,7 +362,8 @@ currency: USD
 priceNote: $4056
 hero:
   src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/hero-enhanced-20261006.webp
-  alt: Счастливые девушки на карнавале в Рио, карнавальные костюмы
+  alt: "Две женщины в ярких карнавальных головных уборах с перьями в Рио-де-Жанейро"
+  hover: "Карнавал в Рио-де-Жанейро: женщины в украшенных костюмах"
 routeCountries:
 - country_brazil
 routeDestinations:

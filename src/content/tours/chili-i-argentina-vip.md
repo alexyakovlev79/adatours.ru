@@ -240,7 +240,7 @@ itinerary:
   images:
   - src: /media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-02-enhanced-20261009-1776-v1.webp
     alt: "Озеро, лес и горы под облачным небом в парке Тьерра-дель-Фуэго, Аргентина"
-    hover: "Тьерра-дель-Фуэго: спокойная вода у лесистых гор"
+    hover: "Тьерра-дель-Фуэго в Аргентине: горы и лес отражаются в озере"
 - day: 10
   title: Национальный парк Огненная Земля
   places:

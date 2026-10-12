@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Высокий водопад Серра-да-Бодокена с лесными тропами и природными водоемами в окрестностях.
 hero:
   src: /media/tours/udivitelnaya-braziliya/boca-da-onca-waterfall-place-generated-20261008.webp
-  alt: Водопад Бока-да-Онса среди леса Серра-да-Бодокена, Бразилия
+  alt: "Водопад Бока-да-Онса у отвесной скалы среди леса Серра-да-Бодокена, Бразилия"
+  hover: "Серра-да-Бодокена в Бразилии: водопад Бока-да-Онса"
 gallery: []
 themes:
 - theme_wildlife

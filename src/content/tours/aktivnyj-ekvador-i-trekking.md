@@ -198,7 +198,8 @@ currency: USD
 priceNote: $5805
 hero:
   src: "/media/tours/aktivnyj-ekvador-i-trekking/hero-src-enhanced-20261007-v2.webp"
-  alt: Активный Эквадор и Треккинг
+  alt: "Путешественник с рюкзаком над озером на фоне заснеженного вулкана"
+  hover: "Горное озеро и снежный вулкан перед путешественником"
 routeCountries:
 - country_ecuador
 routeDestinations:

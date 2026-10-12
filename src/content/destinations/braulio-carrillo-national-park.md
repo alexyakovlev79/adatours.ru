@@ -9,7 +9,8 @@ destinationType: national_park
 summary: Национальный парк Браулио-Каррильо охраняет влажные леса и горные ландшафты Коста-Рики.
 hero:
   src: /media/tours/kosta-rika/braulio-carrillo-place-generated-20261009-v1.webp
-  alt: Влажный тропический лес национального парка Браулио-Каррильо
+  alt: "Лесная тропа среди густой зелени национального парка Браулио-Каррильо"
+  hover: "Браулио-Каррильо: тропа во влажном тропическом лесу"
 gallery: []
 themes:
 - theme_wildlife

@@ -9,8 +9,8 @@ destinationType: route_cluster
 summary: Площадь Гарибальди в Мехико известна музыкантами мариачи, серенадами и Салоном Тенампа.
 hero:
   src: /media/tours/mexico-religious-journey/garibaldi-plaza-generated-20261011-v1.webp
-  alt: Музыканты мариачи на площади Гарибальди в Мехико — иллюстрация
-  hover: Музыканты мариачи на площади Гарибальди в Мехико — иллюстрация
+  alt: "Музыканты мариачи с гитарами на площади Гарибальди в Мехико"
+  hover: "Мехико: выступление мариачи на площади Гарибальди"
   status: approved
 gallery: []
 themes:

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Фортин-Толедо в парагвайском Чако, природоохранный центр сохранения местного пекари тагуа.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/fortin-toledo-reserve-place-generated-20261009-v1.webp
-  alt: Чакский пекари тагуа в природоохранном районе Фортин-Толедо
+  alt: "Чакский пекари тагуа на сухой лесной подстилке в районе Фортин-Толедо"
+  hover: "Фортин-Толедо: пекари среди сухих ветвей и листвы"
 gallery: []
 themes:
 - theme_wildlife

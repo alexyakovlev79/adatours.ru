@@ -8,7 +8,7 @@ countryId: "country_mexico"
 destinationType: "city"
 summary: "Теуантепек в штате Оахака знакомит с сапотекской культурой: старинные кварталы, храм Санто-Доминго и цветочная вышивка на нарядах теуанских женщин."
 searchAliases: ["teuantepek"]
-hero: {"src": "/media/destinations/destination_mexico_teuantepek/hero-generated-20261010-editorial-v1.webp", "alt": "Улица и традиционная цветочная вышивка Теуантепека — иллюстрация"}
+hero: {"src": "/media/destinations/destination_mexico_teuantepek/hero-generated-20261010-editorial-v1.webp", "alt": "Цветочная вышивка у лавки на мощёной улице Теуантепека", "hover": "Теуантепек: яркие ткани с вышивкой у цветных домов"}
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

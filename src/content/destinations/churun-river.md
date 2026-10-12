@@ -10,8 +10,9 @@ summary: Узкая река, по которой куриара подходя�
   место высоким стенам каньона.
 hero:
   src: /media/tours/canaima-angel-falls-4-days/churun-generated-20261010-p034-v1.webp
-  alt: Узкая река Чурун среди леса и высоких скальных стен — иллюстрация
+  alt: "Река Чурун среди леса и высоких скальных стен"
   status: approved
+  hover: "Чурун: лесистая долина реки между отвесными скалами"
 gallery: []
 themes:
 - theme_wildlife

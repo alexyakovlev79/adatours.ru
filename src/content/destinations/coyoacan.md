@@ -8,7 +8,7 @@ countryId: "country_mexico"
 destinationType: "city"
 summary: "Койоакан на юге Мехико приглашает гулять между старыми площадями, колониальными домами, музеями и небольшими кафе."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_mexico_coyoacan/hero-generated-20261010-batch-four-v1.webp", "alt": "Тенистая площадь и колониальные фасады Койоакана — иллюстрация"}
+hero: {"src": "/media/destinations/destination_mexico_coyoacan/hero-generated-20261010-batch-four-v1.webp", "alt": "Тенистая мощёная площадь и цветные фасады Койоакана", "hover": "Койоакан: деревья и колониальные дома вокруг площади"}
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

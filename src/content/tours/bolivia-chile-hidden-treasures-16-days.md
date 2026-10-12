@@ -103,8 +103,8 @@ dates:
 - 29 декабря — 13 января; год поездки подтверждается при бронировании
 hero:
   src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-01-20261011-v1-enhanced-20261011-pass2324-v1.webp
-  alt: Люди и отражения закатного неба на солончаке Уюни, Боливия
-  hover: Люди и отражения закатного неба на солончаке Уюни, Боливия
+  alt: "Люди и отражения закатного неба на покрытом водой солончаке Уюни, Боливия"
+  hover: "Уюни в Боливии: силуэты людей и отражения на закате"
   status: approved
 gallery: []
 lead: Зеркальный солончак Уюни, высокогорные лагуны Боливии и звездное небо Атакамы сменяются гранитными башнями Торрес-дель-Пайне.
@@ -164,8 +164,8 @@ itinerary:
     Размещение: Glamping Uyuni Deluxe или аналог, Tent, завтрак (BB)'
   images:
   - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-04-20261011-v1-enhanced-20261011-pass2324-v1.webp
-    alt: Группа путешественников и отражения на покрытом водой солончаке Уюни
-    hover: Группа путешественников и отражения на покрытом водой солончаке Уюни
+    alt: "Группа путешественников и их отражения на покрытом водой солончаке Уюни"
+    hover: "Уюни: путешественники держатся за руки над зеркальной водой"
     status: approved
 - excursionRef: excursion_uyuni_salt_flat_incahuasi_day
   places:
@@ -189,8 +189,8 @@ itinerary:
     Размещение: Nayara Alto Atacama, Tilo Suite, завтрак (BB)'
   images:
   - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-07-20261011-v1-enhanced-20261011-next50-v1.webp
-    alt: Красноватая вода Лагуны Колорада и разноцветные берега, Боливия
-    hover: Красноватая вода Лагуны Колорада и разноцветные берега, Боливия
+    alt: "Красноватая вода Лагуны Колорада и разноцветный берег на фоне гор, Боливия"
+    hover: "Лагуна Колорада в Боливии: цветные берега и горные склоны"
     status: approved
 - excursionRef: excursion_uyuni_altiplano_border_transfer
   places:
@@ -218,8 +218,8 @@ itinerary:
     Размещение: Nayara Alto Atacama, Tilo Suite, завтрак (BB)'
   images:
   - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-11-20261011-v1-enhanced-20261011-next50-v1.webp
-    alt: Путешественники возле парящих источников Эль-Татио на рассвете
-    hover: Путешественники возле парящих источников Эль-Татио на рассвете
+    alt: "Путешественники возле парящих источников Эль-Татио на рассвете"
+    hover: "Эль-Татио: люди у парящих источников в утреннем свете"
     status: approved
 - excursionRef: excursion_el_tatio_dawn_breakfast_thermal_pool
   places:

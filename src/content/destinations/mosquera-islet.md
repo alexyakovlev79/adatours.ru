@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "island"
 summary: "Москера между Балтрой и Северным Сеймуром приглашает на песчаный берег, где живет большая колония морских львов."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_mosquera_islet/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские львы на светлом песке островка Москера — иллюстрация", "hover": "Москера между Балтрой и Северным Сеймуром приглашает на песчаный берег, где живет большая колония морских львов."}
+hero: {"src": "/media/destinations/destination_ecuador_mosquera_islet/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские львы на светлом песке среди прибрежных камней островка Москера", "hover": "Островок Москера: морские львы у бирюзовой воды"}
 gallery: []
 themes: ["theme_wildlife"]
 relatedDestinations: []

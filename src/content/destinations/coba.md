@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_mexico_koba/hero-generated-20261008.webp
-  alt: Coba archaeological site, Quintana Roo, Yucatan Peninsula — Mexico
+  alt: "Каменная ступенчатая пирамида Кобы среди леса, Мексика"
+  hover: "Коба в Мексике: высокая пирамида в окружении деревьев"
 gallery: []
 relatedDestinations: []
 featuredTours: []

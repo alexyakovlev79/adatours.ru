@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "natural_area"
 summary: "Бухта Пост-Офис на Флорене хранит традицию почтовой бочки: открытки отсюда отправляются в путь в руках путешественников."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_post_office_bay/hero-generated-20261010-next-ten-v1.webp", "alt": "Почтовая бочка у берега бухты Пост-Офис на Флорене — иллюстрация"}
+hero: {"src": "/media/destinations/destination_ecuador_post_office_bay/hero-generated-20261010-next-ten-v1.webp", "alt": "Почтовая бочка под деревянным навесом у бухты Пост-Офис на Флорене", "hover": "Флорена: почтовая бочка у бирюзовой бухты Пост-Офис"}
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

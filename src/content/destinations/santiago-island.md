@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "island"
 summary: "Сантьяго соединяет лавовые поля, каменные бухты и пляжи, где можно наблюдать морских котиков, игуан и птиц Галапагосов."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_santiago_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские котики и каменные заводи на берегу Сантьяго — иллюстрация", "hover": "Сантьяго соединяет лавовые поля, каменные бухты и пляжи, где можно наблюдать морских котиков, игуан и птиц Галапагосов."}
+hero: {"src": "/media/destinations/destination_ecuador_santiago_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские котики на камнях возле прибрежных заводей острова Сантьяго", "hover": "Сантьяго: морские котики на вулканическом берегу"}
 gallery: []
 themes: ["theme_wildlife", "theme_adventure"]
 relatedDestinations: []

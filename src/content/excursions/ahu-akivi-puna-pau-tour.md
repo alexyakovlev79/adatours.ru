@@ -15,7 +15,8 @@ themes:
 - theme_culture
 hero:
   src: /media/excursions/ahu-akivi-puna-pau-tour/hero-src-enhanced-20261010.webp
-  alt: Статуи моаи на острове Пасхи, Чили - каменные истуканы Рапа-Нуи
+  alt: "Две статуи моаи на зелёном склоне острова Пасхи, Чили"
+  hover: "Остров Пасхи в Чили: два моаи среди травы"
 sourceSnapshot: https://drive.google.com/file/d/1Of-rCEbo7uTXOBvvXzNiFYyt8TC5a2Wn/view?usp=drivesdk
 updatedAt: '2026-10-11'
 ---

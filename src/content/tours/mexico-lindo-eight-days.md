@@ -159,7 +159,8 @@ itinerary:
     чаевые и личные расходы оплачиваются отдельно.
   images:
   - src: /media/tours/meksika-lindo/kabah-place-generated-20261009-v1.webp
-    alt: Каменные маски на фасаде древнего Кабаха
+    alt: "Фасад руин Кабаха с рядами каменных масок, Юкатан, Мексика"
+    hover: "Кабах в Мексике: резные маски на древнем каменном фасаде"
 - excursionRef: excursion_mexico_uxmal_kabah_cenote
   places: *id005
 - day: 7

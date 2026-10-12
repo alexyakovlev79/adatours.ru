@@ -14,7 +14,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_guatemala_san_huan_la_laguna/hero-generated-20261008.webp
-  alt: San Juan La Laguna on Lake Atitlan — Guatemala
+  alt: "Дома Сан-Хуан-ла-Лагуны у озера Атитлан на фоне вулкана, Гватемала"
+  hover: "Сан-Хуан-ла-Лагуна в Гватемале: прибрежные дома и вулкан над озером"
 gallery: []
 relatedDestinations: []
 featuredTours: []

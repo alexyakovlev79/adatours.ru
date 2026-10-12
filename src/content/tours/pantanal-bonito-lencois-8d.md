@@ -35,7 +35,8 @@ gallery:
   - src: /media/tours/pantanal-bonito-lencois-8d/gallery-1-src-enhanced-20261001.webp
     alt: Прозрачная вода в Бонито
   - src: /media/destinations/lencois-maranhenses/hero-enhanced-20261001.webp
-    alt: Дюны и лагуны Ленсойс-Мараньенсес
+    alt: "Белые песчаные дюны Ленсойс-Мараньенсес под синим небом, Бразилия"
+    hover: "Ленсойс-Мараньенсес в Бразилии: волнистые гребни светлых дюн"
 featured: false
 priority: 86
 lead: >-

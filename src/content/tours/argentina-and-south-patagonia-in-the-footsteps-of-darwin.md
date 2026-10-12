@@ -134,8 +134,9 @@ itinerary:
       Питание: завтрак, обед, ужин.
     images:
       - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-06-generated-20261008-v1.webp
-        alt: "Практика ходьбы в кошках у ледника Хорконес, Аконкагуа, Аргентина"
+        alt: "Ботинки с кошками и альпинисты на снегу у ледника Хорконес, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-6"
+        hover: "Аконкагуа в Аргентине: ходьба в кошках по снегу на фоне гор"
   - day: 7
     title: "Пласа-де-Мулас - пик Бонете, 5091 м - Пласа-де-Мулас"
     places:
@@ -187,8 +188,9 @@ itinerary:
       Питание: завтрак, полдник, ужин.
     images:
       - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-10-generated-20261008-v1.webp
-        alt: "Установка палаток в первом высотном лагере Канада, Аконкагуа, Аргентина"
+        alt: "Альпинисты устанавливают оранжевую палатку в лагере Канада на Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-10"
+        hover: "Аконкагуа в Аргентине: установка палатки на каменистой площадке высотного лагеря"
   - day: 11
     title: "Канада - Нидо-де-Кондорес, 5250 м"
     places:
@@ -280,8 +282,9 @@ itinerary:
       Питание: завтрак, обед.
     images:
       - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-17-generated-20261008-v1.webp
-        alt: "Спуск по долине Хорконес с караваном мулов, Аконкагуа, Аргентина"
+        alt: "Туристы и караван нагруженных мулов в долине Хорконес, Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-17"
+        hover: "Хорконес в Аргентине: спуск по каменистой долине рядом с караваном мулов"
   - day: 18
     title: "Мендоса"
     places:

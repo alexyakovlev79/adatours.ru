@@ -20,7 +20,8 @@ route:
 language: []
 hero:
   src: /media/destinations/cachi/hero-generated-20261011-p107-v1.webp
-  alt: Белые дома и мощеная улица Качи — иллюстрация GPT Image
+  alt: "Мощеная улица Качи с белыми домами на фоне сухих гор, Аргентина"
+  hover: "Качи в Аргентине: светлые фасады и горы над узкой улицей"
 gallery: []
 included: []
 notIncluded: []

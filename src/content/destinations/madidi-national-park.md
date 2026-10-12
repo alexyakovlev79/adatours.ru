@@ -14,7 +14,8 @@ themes:
 - theme_adventure
 hero:
   src: /media/tours/prirodnye-chudesa-bolivii/itinerary-day-07-generated-20261008-v1.webp
-  alt: Лодочный маршрут по реке Туичи в национальном парке Мадиди, Боливия
+  alt: "Нос деревянной лодки на реке Туичи среди леса парка Мадиди, Боливия"
+  hover: "Мадиди в Боливии: лодочный маршрут по реке между зелеными берегами"
 gallery: []
 relatedDestinations: []
 featuredTours: []

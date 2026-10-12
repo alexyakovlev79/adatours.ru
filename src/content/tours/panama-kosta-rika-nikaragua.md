@@ -102,7 +102,8 @@ itinerary:
     \ отеле La Casa de La Abuela.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/panama-kosta-rika-nikaragua/gulf-of-chiriqui-national-marine-park-place-generated-20261009-v1.webp
-    alt: Лесной остров и пляж морского парка Чирикского залива
+    alt: "Лесистый остров с узким белым пляжем в Чирикском заливе, Панама"
+    hover: "Чирикский залив в Панаме: скалистый остров и светлая песчаная бухта"
 - day: 6
   title: Бокете - Мануэль-Антонио
   places:

@@ -11,9 +11,9 @@ summary: Кольчагуа — винная долина центральног
   из посещений выбранных хозяйств.
 hero:
   src: /media/tours/chile-argentina-private-grand-tour-17-days/colchagua-generated-20261011-v1.webp
-  alt: Виноградники среди холмов долины Кольчагуа — иллюстрация
+  alt: "Ряды виноградников на фоне холмов долины Кольчагуа, Чили"
   status: approved
-  hover: Виноградники среди холмов долины Кольчагуа — иллюстрация
+  hover: "Долина Кольчагуа в Чили: виноградные ряды в теплом вечернем свете"
 gallery: []
 themes:
 - theme_gastronomy_wine

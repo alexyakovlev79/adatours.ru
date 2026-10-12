@@ -116,7 +116,8 @@ itinerary:
     любой школы самбы. Ночевка в Рио-де-Жанейро.
   images:
   - src: /media/tours/nezabyvaemyj-karnaval-s-vodopadami-i-otdykhom-na-poberezhe/itinerary-day-3-enhanced-20261006.webp
-    alt: Парад школ самбы, карнавал в Рио, Бразилия
+    alt: "Участница карнавала в красном уборе с длинными перьями, Рио-де-Жанейро, Бразилия"
+    hover: "Карнавал в Рио: красные перья и вышитый сценический костюм"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_rio_carnival_sambadrome_transfer

@@ -9,7 +9,8 @@ destinationType: island
 summary: Остров Фламенко возле Панама-Сити, портовая точка на тихоокеанской стороне для яхтенных и морских поездок.
 hero:
   src: /media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/flamenco-island-place-generated-20261009-v1.webp
-  alt: Яхтенная марина острова Фламенко у Панама-Сити
+  alt: "Яхты в марине острова Фламенко на фоне высотных зданий Панама-Сити, Панама"
+  hover: "Фламенко в Панаме: яхтенные причалы и городской силуэт за заливом"
 gallery: []
 themes:
 - theme_cruises

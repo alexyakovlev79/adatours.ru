@@ -221,7 +221,8 @@ itinerary:
     Centinela, all inclusive.'
   images:
   - src: /media/destinations/punta-centinela/hero-generated-20261009-v1.webp
-    alt: Иллюстрация побережья Пунта-Сентинелы
+    alt: "Песчаный пляж Пунта-Сентинелы с прибойными волнами и скалистым мысом, Эквадор"
+    hover: "Пунта-Сентинела в Эквадоре: полоса прибоя вдоль светлого пляжа"
 - day: 10
   title: 20 августа 2027. Наблюдение за горбатыми китами
   places:

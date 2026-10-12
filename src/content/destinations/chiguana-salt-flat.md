@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Солончак Чигуана в Боливии, открытая соляная равнина среди высокогорных пейзажей Альтиплано.
 hero:
   src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/chiguana-salt-flat-place-generated-20261009-v1.webp
-  alt: Сухая соляная равнина Чигуана и горы боливийского Альтиплано
+  alt: "Сухая соляная равнина Чигуана с темными горами на горизонте, Боливия"
+  hover: "Чигуана в Боливии: светлая соляная поверхность и далекие вулканические горы"
 gallery: []
 themes:
 - theme_wildlife

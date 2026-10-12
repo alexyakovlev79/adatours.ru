@@ -9,7 +9,8 @@ destinationType: island
 summary: Остров Табога в Панамском заливе, тихоокеанское направление с пляжами и узкими историческими улицами.
 hero:
   src: /media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/taboga-island-place-generated-20261009-v1.webp
-  alt: Прибрежное поселение и зеленые склоны острова Табога
+  alt: "Цветные прибрежные дома и зеленый холм острова Табога, Панама"
+  hover: "Табога в Панаме: песчаная бухта у поселения на лесистом склоне"
 gallery: []
 themes:
 - theme_beach

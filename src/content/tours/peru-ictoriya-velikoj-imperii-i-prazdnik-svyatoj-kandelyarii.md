@@ -160,7 +160,8 @@ itinerary:
     Доплата за этот вариант - $250 на человека.
   images:
   - src: /media/tours/tur-v-peru-i-braziliyu/la-raya-pass-place-generated-20261008.webp
-    alt: Горная долина у перевала Ла-Рая на дороге Куско — Пуно, Перу
+    alt: "Горная дорога в долине у перевала Ла-Рая между Куско и Пуно, Перу"
+    hover: "Ла-Рая в Перу: дорога среди сухих склонов под снежными вершинами"
 - day: 6
   title: Пуно и праздник Святой Канделярии
   places:
@@ -323,7 +324,8 @@ itinerary:
     hover: "Лима: цветочная надпись у площади с пальмами и старинными фасадами"
     alt: "Цветники с надписью Lima и исторические здания на площади Лимы, Перу"
   - src: "/media/excursions/ballestas-islands-tour/gallery-0-src-enhanced-20261007.webp"
-    alt: Паракас
+    alt: "Каменная арка островов Бальестас над морем, Перу"
+    hover: "Острова Бальестас в Перу: скальная арка и птицы на верхней кромке"
 - day: 13
   title: Лима
   places:
@@ -368,7 +370,8 @@ currency: USD
 priceNote: $3174
 hero:
   src: "/media/excursions/ballestas-islands-tour/gallery-2-src-enhanced-20261007.webp"
-  alt: 'Перу: Иcтория Великой Империи   и праздник Святой  Канделярии'
+  alt: "Скальные выступы и морской прибой у сухого побережья Перу"
+  hover: "Перу: волны у острых скал и обрывистого берега"
 routeCountries:
 - country_peru
 routeDestinations:

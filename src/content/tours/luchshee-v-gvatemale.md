@@ -133,8 +133,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: "/media/destinations/destination_guatemala_san_huan_la_laguna/hero-generated-20261008.webp"
-    hover: "San Juan La Laguna on Lake Atitlan — Guatemala"
-    alt: "San Juan La Laguna on Lake Atitlan — Guatemala"
+    hover: "Сан-Хуан-ла-Лагуна в Гватемале: прибрежные дома и вулкан над озером"
+    alt: "Дома Сан-Хуан-ла-Лагуны у озера Атитлан на фоне вулкана, Гватемала"
 - day: 5
   title: Антигуа - рынок Чичикастенанго - Гватемала-Сити
   places:

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Архипелаг Холандес в панамском Сан-Бласе, небольшие карибские острова с рифами и прозрачной водой.
 hero:
   src: /media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/holandes-cays-place-generated-20261009-v1.webp
-  alt: Пальмовые острова и бирюзовое мелководье архипелага Холандес
+  alt: "Пальмовые острова архипелага Холандес в бирюзовой воде, Сан-Блас, Панама"
+  hover: "Холандес в Панаме: белые пляжи вокруг низких островов и светлое мелководье"
 gallery: []
 themes:
 - theme_beach

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: 'Зеленые островки на озере Никарагуа у Гранады: лодочные проходы, птицы и виды в сторону вулкана Момбачо.'
 hero:
   src: /media/tours/vip-kosta-rika-nikaragua/lake-nicaragua-place-generated-20261009-v1.webp
-  alt: Острова и водный простор озера Никарагуа — иллюстрация
+  alt: "Зеленые островки озера Никарагуа на фоне горы Момбачо"
+  hover: "Озеро Никарагуа: небольшие лесистые острова и гора на горизонте"
 gallery: []
 themes:
 - theme_wildlife

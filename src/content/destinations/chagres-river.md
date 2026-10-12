@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Тропические берега и путь на каноэ к общинам эмбера. У Гамбоа Чагрес встречается с водами Панамского канала.
 hero:
   src: /media/tours/panama-city-gamboa-6-days/gamboa-generated-20261010-p036-v1.webp
-  alt: Тропическая река и лесные берега у Гамбоа — иллюстрация
+  alt: "Речной причал у лесистых берегов Гамбоа, Панама"
+  hover: "Гамбоа в Панаме: тихая река, деревянный причал и тропическая зелень"
 gallery: []
 themes:
 - theme_wildlife

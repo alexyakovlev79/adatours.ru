@@ -128,8 +128,9 @@ itinerary:
     Ночь в Камбара-ду-Сул.'
   images:
   - src: /media/destinations/destination_brazil_kambara_du_sul/hero-generated-20261009-v1.webp
-    alt: Высокогорные луга и араукарии в окрестностях Камбара-ду-Сул
+    alt: "Грунтовая дорога среди лугов и араукарий у Камбара-ду-Сул, Бразилия"
     status: approved
+    hover: "Камбара-ду-Сул в Бразилии: открытые луга и араукарии под облачным небом"
 - excursionRef: excursion_brazil_gramado_private_full_day
   places:
   - Грамаду
@@ -147,7 +148,7 @@ itinerary:
 
     Ночь в Камбара-ду-Сул.'
   images:
-  - {"src": "/media/destinations/destination_brazil_kanon_itaimbezinyu/hero-generated-20261009-v1.webp", "alt": "Узкое ущелье и отвесные стены каньона Итаимбезинью", "status": "approved"}
+  - {"src":"/media/destinations/destination_brazil_kanon_itaimbezinyu/hero-generated-20261009-v1.webp","alt":"Отвесные стены каньона Итаимбезинью над лесистым ущельем, Бразилия","status":"approved","hover":"Итаимбезинью в Бразилии: глубокое зеленое ущелье между каменными стенами"}
 - excursionRef: excursion_brazil_itaimbezinho_full_day
   places:
   - Каньон Итаимбезинью
@@ -210,7 +211,8 @@ itinerary:
     Отъезд из Флорианополиса.'
   images:
   - src: /media/destinations/florianopolis/featureBands-2-enhanced-20261001.webp
-    alt: Исторический центр и городской рынок Флорианополиса
+    alt: "Фонтан перед желтой исторической застройкой Флорианополиса, Бразилия"
+    hover: "Флорианополис в Бразилии: голубой бассейн фонтана и аркады желтого здания"
 - excursionRef: excursion_brazil_florianopolis_private_city
   places:
   - Флорианополис

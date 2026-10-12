@@ -273,7 +273,8 @@ itinerary:
     Рио-Он, купание и отдых. Возвращение в лодж в Сан-Игнасио.
   images:
   - src: /media/destinations/destination_belize_prirodnye_bassejny_rio_on/hero-generated-20261008.webp
-    alt: Rio On Pools in Mountain Pine Ridge — Belize
+    alt: "Прозрачные речные бассейны и невысокие каскады Рио-Он среди сосен, Белиз"
+    hover: "Рио-Он в Белизе: вода между гладкими скалами и сосновым лесом"
 - excursionRef: excursion_caracol_rio_frio_rio_on_pools
   places:
   - Сан Игнасио
@@ -388,7 +389,8 @@ itinerary:
     Ночь в Сан-Сальвадоре.
   images:
   - src: /media/countries/el-salvador/featureBands-3-enhanced-20261002.webp
-    alt: 'На фото: вулкан на фоне Сан-Сальвадора в Эль-Сальвадоре'
+    alt: "Статуя Христа на земном шаре под синим небом, Сан-Сальвадор, Эль-Сальвадор"
+    hover: "Сан-Сальвадор: светлая статуя Христа над шарообразным основанием"
 - excursionRef: excursion_san_salvador_joya_de_ceren_san_andres
   places:
   - Сан Сальвадор
@@ -530,7 +532,8 @@ itinerary:
     Наблюдение животных зависит от природных условий.
   images:
   - src: /media/destinations/tortuguero/hero-enhanced-20261004.webp
-    alt: 'На фото: каналы Тортугеро (Национальный Парк) в Коста-Рике'
+    alt: "Женщина в каяке на лесном канале Тортугеро, Коста-Рика"
+    hover: "Тортугеро в Коста-Рике: прогулка на каяке по тихому каналу среди леса"
 - excursionRef: excursion_tortuguero_dawn_canals_boat
   places:
   - Тортугуэро

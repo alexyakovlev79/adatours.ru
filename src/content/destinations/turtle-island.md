@@ -9,7 +9,8 @@ destinationType: island
 summary: Черепаший остров в панамском Сан-Бласе, небольшая островная остановка с пляжем и кораллами у берега.
 hero:
   src: /media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/turtle-island-place-generated-20261009-v1.webp
-  alt: Пляж и пальмы Черепашьего острова в Сан-Бласе
+  alt: "Небольшой Черепаший остров с пальмами и белым пляжем, Сан-Блас, Панама"
+  hover: "Черепаший остров в Панаме: пальмы над белым песком и прозрачным мелководьем"
 gallery: []
 themes:
 - theme_beach

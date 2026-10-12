@@ -12,7 +12,8 @@ searchAliases:
 - Инхотим
 hero:
   src: /media/tours/brazil-gems-14d/itinerary-day-06-generated-20261008-v1.webp
-  alt: Сады и озеро Иньотима, Брумадинью, Минас-Жерайс, Бразилия
+  alt: "Садовая дорожка вдоль озера в Иньотиме, Брумадинью, Бразилия"
+  hover: "Иньотим в Бразилии: пальмы, густые посадки и павильон у воды"
 gallery: []
 themes:
 - theme_culture

@@ -157,7 +157,8 @@ itinerary:
     Размещение: Casa del Suizo Lodge 4*. Питание: завтрак, обед, ужин.
   images:
   - src: /media/destinations/punta-ahuano/hero-generated-20261009-root-v1.webp
-    alt: Речной берег Пунта-Ауано с лодкой и тропическим лесом
+    alt: "Длинные моторные лодки у речного причала Пунта-Ауано, Эквадор"
+    hover: "Пунта-Ауано в Эквадоре: деревянные лодки и дома у мутной речной воды"
 - excursionRef: excursion_ecuador_misicocha_forest_walk
   places:
   - Амазония

@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_bolivia_kopakabana/hero-generated-20261008.webp
-  alt: Copacabana on the Bolivian shore of Lake Titicaca — Bolivia
+  alt: "Лодки на озере Титикака перед городом Копакабана, Боливия"
+  hover: "Копакабана в Боливии: прибрежные дома и лодки на синем озере Титикака"
 gallery: []
 relatedDestinations: []
 featuredTours: []

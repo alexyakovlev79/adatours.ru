@@ -12,7 +12,8 @@ searchAliases:
 - morskoj-park-fransisko-koloane
 hero:
   src: /media/tours/patagoniya-i-chilijskie-fordy/itinerary-day-07-generated-20261008-v1.webp
-  alt: Горбатый кит в морском парке Франсиско Колоане, Чили
+  alt: "Горбатый кит у поверхности моря на фоне гор парка Франсиско Колоане, Чили"
+  hover: "Франсиско Колоане в Чили: кит среди волн перед туманным горным берегом"
 gallery: []
 themes:
 - theme_wildlife

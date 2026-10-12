@@ -9,7 +9,8 @@ destinationType: city
 summary: Арегуа в Парагвае, холмистый город с ремесленными лавками и видами на воду.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/aregua-place-generated-20261009-v1.webp
-  alt: Городская улица и ремесленные изделия Арегуа
+  alt: "Керамические горшки у домов на мощеной улице Арегуа, Парагвай"
+  hover: "Арегуа в Парагвае: ремесленная керамика на улице, спускающейся к воде"
 gallery: []
 themes:
 - theme_culture

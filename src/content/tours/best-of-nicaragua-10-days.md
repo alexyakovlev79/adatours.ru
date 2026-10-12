@@ -116,7 +116,8 @@ itinerary:
     канопи-тур на Момбачо с облачным лесом и панорамными видами. Ночь в Real La Merced. Питание: завтрак и обед.'
   images:
   - src: /media/tours/best-of-nicaragua-10-days/mombacho-generated-20261010-p020-v1.webp
-    alt: Тропа во влажном облачном лесу Момбачо — иллюстрация
+    alt: "Туманная лесная тропа среди папоротников на Момбачо, Никарагуа"
+    hover: "Момбачо в Никарагуа: влажный облачный лес с узкой тропой"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_nicaragua_granada_islets_mombacho_canopy

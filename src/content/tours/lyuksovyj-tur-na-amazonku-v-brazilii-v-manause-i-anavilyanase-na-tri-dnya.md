@@ -81,7 +81,8 @@ itinerary:
     В первый день включен ужин.'
   images:
   - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-1-enhanced-20261006.webp
-    alt: Mirante do Gavião лодж на Амазонке в Бразилии
+    alt: "Два кресла под зонтом на деревянной террасе лоджа Миранте-ду-Гавиан, Бразилия"
+    hover: "Амазония в Бразилии: терраса лоджа у реки и моторной лодки"
 - day: 2
   title: Anavilhanas, местные общины и джунгли
   places:
@@ -205,7 +206,8 @@ itinerary:
     Включены завтрак и обед.'
   images:
   - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/hero-enhanced-20261006.webp
-    alt: Пальмовые листья - отдых в Амазонии (Манаус) в Бразилии
+    alt: "Длинные зеленые листья пальм крупным планом"
+    hover: "Перекрывающиеся пальмовые листья в солнечном свете"
 included:
 - Индивидуальные экскурсии и трансферы по программе.
 - 'Полный пансион: завтрак, обед и ужин.'

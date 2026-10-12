@@ -107,7 +107,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/destinations/charles-darwin-research-station/hero-generated-20261009-root-v1.webp
-    alt: Галапагосская черепаха среди вулканических камней станции Чарльза Дарвина
+    alt: "Гигантская черепаха среди вулканических камней станции Чарльза Дарвина, Галапагосы, Эквадор"
+    hover: "Станция Чарльза Дарвина на Галапагосах: черепаха у камней и сухой растительности"
 - day: 5
   title: Галапагосские острова - Кито или Гуаякиль
   places:
@@ -152,7 +153,8 @@ currency: USD
 priceNote: $1699
 hero:
   src: /media/excursions/ostrov-plasa/gallery-1-src-enhanced-20261007.webp
-  alt: 'Эквадор: Кито – Галапагосские Острова'
+  alt: "Морские львы на песчаном берегу у бирюзового моря, Галапагосы, Эквадор"
+  hover: "Галапагосские острова: морские львы отдыхают у темных прибрежных камней"
 routeCountries:
 - country_ecuador
 routeDestinations:

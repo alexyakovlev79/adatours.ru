@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Лагуна Апойо в Никарагуа, пресноводное озеро в вулканическом кратере среди зеленых склонов.
 hero:
   src: /media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-place-generated-20261009-v1.webp
-  alt: Озеро в вулканическом кратере лагуны Апойо
+  alt: "Синее кратерное озеро лагуны Апойо среди лесистых склонов, Никарагуа"
+  hover: "Лагуна Апойо в Никарагуа: озеро в зеленой чаше кратера"
 gallery: [{"src": "/media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-shore-generated-20261009-v1.webp", "alt": "Прозрачная вода у галечного берега и лесистые склоны, Лагуна Апойо, Никарагуа", "hover": "Лагуна Апойо, Никарагуа: прозрачная вода у галечного берега и лесистые склоны"}]
 themes:
 - theme_wildlife

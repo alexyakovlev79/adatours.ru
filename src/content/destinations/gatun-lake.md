@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Озеро Гатун в Панаме, водная часть Панамского канала с лесными берегами и островами.
 hero:
   src: /media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/gatun-lake-place-generated-20261009-v1.webp
-  alt: Озеро Гатун с лесными островами и проходящим судном
+  alt: "Грузовое судно на озере Гатун между лесистыми островами, Панама"
+  hover: "Озеро Гатун в Панаме: проходящее судно и зеленые берега"
 gallery: []
 themes:
 - theme_wildlife

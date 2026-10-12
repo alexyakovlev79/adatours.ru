@@ -136,7 +136,8 @@ currency: USD
 priceNote: $1960
 hero:
   src: "/media/excursions/ostrov-plasa/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: Морские котики на Галапагосских островах'
+  alt: "Морской лев на белом песке у прибоя, Галапагосские острова, Эквадор"
+  hover: "Галапагосы в Эквадоре: сидящий морской лев и отдыхающие животные у воды"
 routeCountries:
 - country_ecuador
 routeDestinations:

@@ -21,7 +21,8 @@ gallery:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-03-enhanced-20261001.webp
     alt: "На фото: Буэнос-Айрес Аргентина"
   - src: "/media/excursions/rafain-shou/gallery-1-src-enhanced-20261007.webp"
-    alt: "На фото: Мясное блюдо ресторана Rafain Grill Place"
+    alt: "Жареное мясо с овощами и веточкой розмарина на сервировочной доске"
+    hover: "Мясное блюдо с овощами гриль, розмарином и соусом"
   - src: "/media/excursions/rafain-shou/gallery-2-src-enhanced-20261007.webp"
     alt: "На фото: Блюда ресторана Rafain Grill Place"
 route: []

@@ -17,7 +17,8 @@ themes:
 - theme_adventure
 hero:
   src: /media/destinations/destination_belize_zapovednik_mauntin_pajn_ridzh/hero-generated-20261008.webp
-  alt: Mountain Pine Ridge Forest Reserve — Belize
+  alt: "Сосновый лес и каменистая река в заповеднике Маунтин-Пайн-Ридж, Белиз"
+  hover: "Маунтин-Пайн-Ридж в Белизе: речная долина среди сосен и скал"
 gallery: []
 relatedDestinations: []
 featuredTours: []

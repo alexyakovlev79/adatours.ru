@@ -462,7 +462,8 @@ currency: USD
 priceNote: $30350
 hero:
   src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-1-enhanced-20261006.webp
-  alt: Счастливая девушка в карнавальном костюме на Параде чемпионов в Рио, яркие перья и улыбка
+  alt: "Улыбающаяся участница карнавала с зелеными и розовыми перьями, Рио-де-Жанейро, Бразилия"
+  hover: "Карнавал в Рио: цветочный головной убор и зеленые перья с розовыми концами"
 routeCountries:
 - country_brazil
 routeDestinations:

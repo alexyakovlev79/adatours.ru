@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Красные скальные укрытия Лас-Хунтас хранят наскальные рисунки с изображениями животных и людей-щитов.
 hero:
   src: /media/destinations/cuevas-pintadas-guachipas/hero-word-20261011-p107-v1-enhanced-20261011-next50-v1.webp
-  alt: Наскальная фигура «человека-щита» в Гуачипасе
+  alt: "Наскальная фигура с геометрическим орнаментом в Гуачипасе, Аргентина"
+  hover: "Гуачипас в Аргентине: древний рисунок человека с узорчатым туловищем"
 gallery: []
 themes:
 - theme_culture

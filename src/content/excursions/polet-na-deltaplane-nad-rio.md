@@ -21,7 +21,8 @@ hero:
   alt: Полет на дельтаплане над Рио-де-Жанейро
 gallery:
   - src: /media/tours/brazil-gems-14d/itinerary/day-11-enhanced-20261001.webp
-    alt: Пляж Пепино в Рио-де-Жанейро
+    alt: "Песчаный пляж с черными камнями под высоким рыжим обрывом, Бразилия"
+    hover: "Бразильское побережье: прибой у камней и высокого берегового обрыва"
   - src: /media/excursions/polet-na-deltaplane-nad-rio/gallery-2-enhanced-20261001.webp
     alt: Вид с высоты на Рио-де-Жанейро
   - src: /media/excursions/polet-na-deltaplane-nad-rio/gallery-3-enhanced-20261001.webp

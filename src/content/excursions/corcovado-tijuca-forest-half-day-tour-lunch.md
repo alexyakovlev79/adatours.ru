@@ -17,7 +17,8 @@ currency: "USD"
 priceNote: "Стоимость — $284."
 hero:
   src: "/media/excursions/corcovado-tijuca-forest-half-day-tour-lunch/hero-src-enhanced-20261008.webp"
-  alt: "Джип тур на Корковадо и тропический лес Тижука"
+  alt: "Статуя Христа Искупителя со стороны спины над Рио-де-Жанейро, Бразилия"
+  hover: "Рио-де-Жанейро: Христос Искупитель над городом, стадионом и морем"
 gallery:
   - src: "/media/excursions/corcovado-tijuca-forest-half-day-tour-lunch/gallery-0-src-enhanced-20261007.webp"
     hover: "Зеленый открытый внедорожник рядом с тропическим лесом"

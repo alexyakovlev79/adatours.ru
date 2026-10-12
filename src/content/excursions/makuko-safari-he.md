@@ -22,7 +22,8 @@ gallery:
   - src: "/media/excursions/makuko-safari-he/gallery-0-src-enhanced-20261007.webp"
     alt: "На фото: Экскурсия Макуко -Сафари"
   - src: "/media/excursions/makuko-safari-he/gallery-1-src-enhanced-20261007.webp"
-    alt: "На фото: Макуко -Сафари, лодка подплывает к водопаду"
+    alt: "Лодка Макуко Сафари с туристами у мощного водопада Игуасу, Бразилия"
+    hover: "Игуасу в Бразилии: лодка с пассажирами возле падающей воды"
 route:
   - "Джунгли национального парка"
   - "Река Игуасу"

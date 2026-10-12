@@ -9,7 +9,8 @@ destinationType: island
 summary: Бару у Картахены, карибское направление для пляжного отдыха и размещения у моря.
 hero:
   src: /media/tours/tur-v-kolumbiyu-na-10-dnej/hero-enhanced-20261006.webp
-  alt: 'Тур в Колумбию vip: кофе, Картахена и остров Бару | 10 дней'
+  alt: "Улыбающаяся женщина с фруктами на голове у ярко-синей стены, Колумбия"
+  hover: "Колумбия: красно-желто-синий наряд и миска с фруктами на голове"
 gallery:
 - src: /media/tours/colombia-bogota-cultural-ru/itinerary-6-images-0-src-enhanced-20261007.webp
   hover: "Колумбия: бирюзовая вода перед островным берегом с деревьями"

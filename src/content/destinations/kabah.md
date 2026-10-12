@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Кабах на мексиканском Юкатане, древний город майя с аркой и храмом, украшенным каменными масками.
 hero:
   src: /media/tours/meksika-lindo/kabah-place-generated-20261009-v1.webp
-  alt: Каменные маски на фасаде древнего Кабаха
+  alt: "Фасад руин Кабаха с рядами каменных масок, Юкатан, Мексика"
+  hover: "Кабах в Мексике: резные маски на древнем каменном фасаде"
 gallery: []
 themes:
 - theme_culture

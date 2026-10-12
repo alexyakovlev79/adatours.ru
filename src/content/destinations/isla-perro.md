@@ -9,7 +9,8 @@ destinationType: island
 summary: Исла-Перро в панамском Сан-Бласе, карибский остров с мелководьем и затонувшим судном у берега.
 hero:
   src: /media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/isla-perro-place-generated-20261009-v1.webp
-  alt: Белый пляж и прозрачная вода острова Исла-Перро
+  alt: "Белый пляж Исла-Перро с пальмами и прозрачным морем, Сан-Блас, Панама"
+  hover: "Исла-Перро в Панаме: пальмы над светлым песком и мелководьем"
 gallery: []
 themes:
 - theme_beach

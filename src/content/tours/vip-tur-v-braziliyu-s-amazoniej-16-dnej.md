@@ -289,7 +289,8 @@ itinerary:
     Дополнительно'
   images:
   - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-1-enhanced-20261006.webp
-    alt: Экотуры по Амазонке из Манауса, наблюдение за дикой природой и флора Бразилии
+    alt: "Два кресла под зонтом на деревянной террасе лоджа Миранте-ду-Гавиан, Бразилия"
+    hover: "Амазония в Бразилии: терраса лоджа у реки и моторной лодки"
 - excursionRef: excursion_source_vstrecha_rek
   places: []
 - day: 11
@@ -315,7 +316,8 @@ itinerary:
   - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-11-enhanced-20261006.webp
     alt: Море и парусники на курорте Порту-де-Галиньяш в Бразилии
   - src: /media/tours/ekzoticheskij-karnaval-v-brazilii/itinerary-day-8-enhanced-20261006.webp
-    alt: Река Амазонка в Манаусе, слияние рек и джунгли Бразилии, экскурсия на лодке
+    alt: "Изгиб темной реки среди густого амазонского леса, вид сверху, Бразилия"
+    hover: "Бразильская Амазония: речная излучина внутри сплошного зеленого леса"
 - day: 12
   title: Отдых в Nannai Muro Alto
   places:
@@ -382,7 +384,8 @@ itinerary:
     После Рио, Игуасу и Амазонии эти 4 дня позволяют провести время без новых перелетов и переездов.'
   images:
   - src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/hero-enhanced-20261006.webp
-    alt: Джунгли Амазонии в Бразилии, тропический лес и дикая природа
+    alt: "Длинные зеленые листья пальм крупным планом"
+    hover: "Перекрывающиеся пальмовые листья в солнечном свете"
 - day: 15
   title: Отдых в Nannai Muro Alto
   places: []

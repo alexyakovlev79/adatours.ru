@@ -9,7 +9,8 @@ destinationType: national_park
 summary: Национальный парк Собераниа в Панаме, тропический лес рядом с Панамским каналом и рекой Чагрес.
 hero:
   src: /media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/soberania-national-park-place-generated-20261009-v1.webp
-  alt: Лесная тропа национального парка Собераниа
+  alt: "Узкая тропа среди деревьев и густой зелени парка Собераниа, Панама"
+  hover: "Собераниа в Панаме: тенистая лесная тропа и широкие корни деревьев"
 gallery: []
 themes:
 - theme_wildlife

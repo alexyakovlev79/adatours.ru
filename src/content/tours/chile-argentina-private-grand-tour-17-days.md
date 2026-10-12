@@ -290,7 +290,8 @@ itinerary:
     Луны. Ночь в The Singular Patagonia, Singular Room. Завтрак входит в размещение (BB).
   images:
   - src: /media/countries/chile/hero-enhanced-20261002.webp
-    alt: 'На фото: парк Торрес дель Пайне в Чили'
+    alt: "Озеро перед зубчатыми горами Торрес-дель-Пайне на закате, Чили"
+    hover: "Торрес-дель-Пайне в Чили: голубое озеро и горные вершины в вечернем свете"
 - excursionRef: excursion_chile_moon_valley_cocktail_half_day
   places: []
 - day: 8
@@ -314,9 +315,9 @@ itinerary:
     за час, дополнительно. Ночь в The Singular Patagonia, Singular Room. Завтрак входит в размещение (BB).'
   images:
   - src: /media/tours/chile-argentina-private-grand-tour-17-days/lake-toro-generated-20261011-v1.webp
-    alt: Широкая гладь и горы Патагонии — иллюстрация озера Торо
+    alt: "Голубое озеро Торо с островами и снежными горами на горизонте, Чили"
     status: approved
-    hover: Широкая гладь и горы Патагонии — иллюстрация озера Торо
+    hover: "Озеро Торо в чилийской Патагонии: широкая гладь за золотистым берегом"
 - excursionRef: excursion_chile_torres_del_paine_private_full_day
   places: []
 - day: 9

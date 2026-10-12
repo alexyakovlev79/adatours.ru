@@ -8,7 +8,7 @@ countryId: "country_mexico"
 destinationType: "city"
 summary: "Сан-Бартоло-Койотепек к югу от Оахаки известен черной керамикой барро-негро. В семейных мастерских можно увидеть, как глина превращается в резные сосуды."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_mexico_san_bartolo_coyotepec/hero-generated-20261010-twenty-v1.webp", "alt": "Черные керамические сосуды барро-негро в мастерской Койотепека — иллюстрация", "hover": "Сан-Бартоло-Койотепек к югу от Оахаки известен черной керамикой барро-негро. В семейных мастерских можно увидеть, как глина превращается в резные сосуды."}
+hero: {"src":"/media/destinations/destination_mexico_san_bartolo_coyotepec/hero-generated-20261010-twenty-v1.webp","alt":"Черные керамические сосуды с резным орнаментом в мастерской Койотепека, Мексика","hover":"Койотепека в Мексике: блестящая черная керамика на деревянном столе"}
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

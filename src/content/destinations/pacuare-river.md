@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Река Пакуаре в Коста-Рике, водный маршрут для рафтинга среди тропического леса.
 hero:
   src: /media/tours/ekstrim-v-kosta-rike/pacuare-river-place-generated-20261009-v1.webp
-  alt: Пороги реки Пакуаре среди тропического леса
+  alt: "Пороги реки Пакуаре между валунами и тропическим лесом, Коста-Рика"
+  hover: "Река Пакуаре в Коста-Рике: бурная вода у камней и зеленые берега"
 gallery: []
 themes:
 - theme_adventure

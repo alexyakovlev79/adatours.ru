@@ -123,8 +123,9 @@ itinerary:
       Во второй половине дня остается свободное время.
     images:
       - src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-3-enhanced-20261006.webp
-        alt: "Ранчо гаучо рядом с Буэнос-Айресом"
+        alt: "Скульптура Флоралис Хенерика с раскрытыми металлическими лепестками, Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-2"
+        hover: "Буэнос-Айрес: металлический цветок Флоралис Хенерика на фоне синего неба"
   - excursionRef: excursion_buenos_aires_tango_show_dinner
     places:
       - "Буэнос-Айрес"

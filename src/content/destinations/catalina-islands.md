@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Острова Каталина у Фламинго в Коста-Рике, тихоокеанские острова и воды для морской рыбалки.
 hero:
   src: /media/tours/ekstrim-v-kosta-rike/catalina-islands-place-generated-20261009-v1.webp
-  alt: Скалистые острова Каталина у тихоокеанского побережья Коста-Рики
+  alt: "Скалистые острова Каталина с редкой зеленью над Тихим океаном, Коста-Рика"
+  hover: "Каталина в Коста-Рике: темные островные скалы над синей водой"
 gallery: []
 themes:
 - theme_fishing

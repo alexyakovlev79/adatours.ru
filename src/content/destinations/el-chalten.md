@@ -12,7 +12,8 @@ searchAliases:
 - Эль Чальтен
 hero:
   src: /media/tours/vsya-argentina/itinerary-day-20-generated-20261008-v1.webp
-  alt: Треккинговая тропа у Эль-Чалтена с видом на Фицрой
+  alt: "Каменистая тропа у Эль-Чалтена на фоне пиков Фицроя, Аргентина"
+  hover: "Эль-Чалтен в Аргентине: тропа через кустарники к острым горным вершинам"
 gallery: []
 themes:
 - theme_adventure

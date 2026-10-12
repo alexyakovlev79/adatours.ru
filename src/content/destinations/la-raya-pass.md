@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Высокогорный перевал на маршруте Куско — Пуно с открытыми пастбищами и видами на андские хребты.
 hero:
   src: /media/tours/tur-v-peru-i-braziliyu/la-raya-pass-place-generated-20261008.webp
-  alt: Горная долина у перевала Ла-Рая на дороге Куско — Пуно, Перу
+  alt: "Горная дорога в долине у перевала Ла-Рая между Куско и Пуно, Перу"
+  hover: "Ла-Рая в Перу: дорога среди сухих склонов под снежными вершинами"
 gallery: []
 themes:
 - theme_adventure

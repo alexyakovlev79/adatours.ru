@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_belize_prirodnye_bassejny_rio_on/hero-generated-20261008.webp
-  alt: Rio On Pools in Mountain Pine Ridge — Belize
+  alt: "Прозрачные речные бассейны и невысокие каскады Рио-Он среди сосен, Белиз"
+  hover: "Рио-Он в Белизе: вода между гладкими скалами и сосновым лесом"
 gallery: []
 relatedDestinations: []
 featuredTours: []

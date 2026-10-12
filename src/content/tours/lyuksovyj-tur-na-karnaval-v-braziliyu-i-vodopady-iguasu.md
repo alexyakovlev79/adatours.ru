@@ -138,7 +138,8 @@ itinerary:
     Индивидуальный трансфер с гидом включен.'
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-3-enhanced-20261006.webp
-    alt: Карнавальные костюмы девушек в Бразилии, яркие перья и блестки на Самбадроме в Рио
+    alt: "Две участницы карнавала в ярких костюмах делают селфи, Рио-де-Жанейро, Бразилия"
+    hover: "Карнавал в Рио: девушки с телефоном в розовых и желтых перьевых уборах"
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
 - day: 4

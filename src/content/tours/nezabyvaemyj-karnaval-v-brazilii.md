@@ -240,7 +240,8 @@ itinerary:
   - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-8-enhanced-20261006.webp
     alt: Пляжный отдых на океане в Бузиосе, Бразилия, белый песок и бирюзовая вода Атлантики
   - src: /media/tours/nezabyvaemyj-karnaval-v-brazilii/itinerary-day-8-images-1-enhanced-20261006.webp
-    alt: Экзотические водопады Игуасу в Бразилии и Аргентине, каскады и джунгли
+    alt: "Ярусы водопадов Игуасу в окружении зеленых берегов, Бразилия и Аргентина"
+    hover: "Игуасу: широкие каскады над нижними водопадами и водяной туман"
 - day: 9
   title: Бузиос
   places:

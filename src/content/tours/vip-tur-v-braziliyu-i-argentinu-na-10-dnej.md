@@ -237,7 +237,8 @@ itinerary:
     Живой оркестр сопровождает танцоров, а в программу вечера включен ужин с традиционными блюдами и аргентинским вином.
   images:
   - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-9-enhanced-20261006.webp
-    alt: 'На фото: столица Буэнос-Айрес, Аргентина'
+    alt: "Высотные здания Буэнос-Айреса у воды с вечерней подсветкой, Аргентина"
+    hover: "Буэнос-Айрес: стеклянные башни и освещенная набережная в сумерках"
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
 - day: 9

@@ -14,7 +14,8 @@ themes:
 - theme_culture
 hero:
   src: /media/tours/prirodnye-chudesa-bolivii/itinerary-day-06-generated-20261008-v1.webp
-  alt: Лодка у лесного берега реки Бени в Сан-Мигель-дель-Бала, Боливия
+  alt: "Моторная лодка у домов на берегу реки Бени в Сан-Мигель-дель-Бала, Боливия"
+  hover: "Сан-Мигель-дель-Бала в Боливии: речная лодка возле лесистого берега и домов"
 gallery: []
 relatedDestinations: []
 featuredTours: []

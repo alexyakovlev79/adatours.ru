@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Облачный лес, лесные тропы и горные виды в природном парке Чикаке возле Боготы.
 hero:
   src: /media/destinations/chicaque-park/hero-generated-20261010-v1.webp
-  alt: Тропа в андском облачном лесу, иллюстрация природного парка Чикаке
+  alt: "Тропа среди мшистых деревьев облачного леса Чикаке, Колумбия"
+  hover: "Чикаке в Колумбии: лесная тропа на склоне и туман за деревьями"
 gallery: []
 themes:
 - theme_wildlife

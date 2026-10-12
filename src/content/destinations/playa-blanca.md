@@ -9,7 +9,8 @@ destinationType: resort
 summary: Пляжный отдых на тихоокеанском побережье Панамы.
 hero:
   src: /media/tours/luchshee-v-tsentralnoj-amerike/playa-blanca-beach-generated-20261009-v1.webp
-  alt: Широкий пляж Плайя-Бланка на Тихоокеанском побережье Панамы
+  alt: "Широкий песчаный пляж Плайя-Бланка с пальмами у Тихого океана, Панама"
+  hover: "Плайя-Бланка в Панаме: полоса прибоя вдоль светлого песчаного берега"
 gallery:
 - {"src":"/media/tours/luchshee-v-tsentralnoj-amerike/playa-blanca-shore-generated-20261009-v1.webp","alt":"Небольшая пенная волна на светлом песчаном берегу, Плайя-Бланка, Панама","hover":"Плайя-Бланка, Панама: небольшая пенная волна на светлом песчаном берегу"}
 themes:

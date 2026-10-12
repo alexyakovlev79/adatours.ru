@@ -22,11 +22,13 @@ hero:
   alt: "Небольшой самолет над геоглифом птицы в пустыне Наска, Перу"
 gallery:
   - src: "/media/excursions/ballestas-islands-tour/gallery-0-src-enhanced-20261007.webp"
-    alt: "на фото: Острова Бальестас (Islas Ballestas) в Перу"
+    alt: "Каменная арка островов Бальестас над морем, Перу"
+    hover: "Острова Бальестас в Перу: скальная арка и птицы на верхней кромке"
   - src: "/media/excursions/ballestas-islands-tour/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: Острова Бальестас (Islas Ballestas) в Перу"
   - src: "/media/excursions/ballestas-islands-tour/gallery-2-src-enhanced-20261007.webp"
-    alt: "на фото: Острова Бальестас (Islas Ballestas) в Перу"
+    alt: "Скальные выступы и морской прибой у сухого побережья Перу"
+    hover: "Перу: волны у острых скал и обрывистого берега"
   - src: "/media/excursions/ballestas-islands-tour/gallery-3-src-enhanced-20261007.webp"
     alt: "на фото: Линии Наска в Перу"
   - src: /media/tours/peru-8d/itinerary/day-07-enhanced-20261001.webp

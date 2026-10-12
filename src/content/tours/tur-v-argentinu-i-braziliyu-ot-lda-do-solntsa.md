@@ -53,7 +53,8 @@ itinerary:
     Танго-шоу проводится как групповой тур без гида.'
   images:
   - src: /media/excursions/nezabyvaemoe-tango-shou/gallery-1-enhanced-20261006.webp
-    alt: 'На фото: город Буэнос - Айрес, столица Аргентины'
+    alt: "Металлический цветок Флоралис Хенерика с вечерней подсветкой, Буэнос-Айрес, Аргентина"
+    hover: "Флоралис Хенерика в Буэнос-Айресе: отражения заката на металлических лепестках"
 - excursionRef: excursion_buenos_aires_tango_show_dinner_transfer
   places: []
 - day: 3

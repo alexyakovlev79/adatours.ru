@@ -24,7 +24,8 @@ gallery:
   - src: "/media/excursions/banos-tur-na-2-dnya/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: город-курорт Баньос. Эквадор (Восточные Анды)"
   - src: "/media/excursions/banos-tur-na-2-dnya/gallery-2-src-enhanced-20261007.webp"
-    alt: "на фото: город-курорт Баньос. Эквадор (Восточные Анды)"
+    alt: "Каменная церковь с двумя башнями на фоне зеленых гор Баньоса, Эквадор"
+    hover: "Баньос в Эквадоре: фасад церкви с башнями и пальма у площади"
 route:
   - "Кито"
   - "Баньос"

@@ -21,7 +21,8 @@ hero:
   alt: "на фото: Галапагосские острова (остров Исабела) в Эквадоре"
 gallery:
   - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-0-src-enhanced-20261007.webp"
-    alt: "на фото: олуши и Галапагосские острова (остров Исабела) в Эквадоре"
+    alt: "Две голубоногие олуши крупным планом на Галапагосах, Эквадор"
+    hover: "Галапагосские острова: голубые лапы и пестрые головы двух олуш"
   - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-1-src-enhanced-20261007.webp"
     hover: "Галапагосы: морские львы отдыхают на светлом песке у прозрачного моря"
     alt: "Морские львы на пляже и люди в гидрокостюмах у воды, Галапагосы, Эквадор"

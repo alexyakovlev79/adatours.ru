@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: 'Облачный лес возле Гранады: влажная зелень, лесные тропы и панорамы озера Никарагуа.'
 hero:
   src: /media/tours/best-of-nicaragua-10-days/mombacho-generated-20261010-p020-v1.webp
-  alt: Тропа во влажном облачном лесу Момбачо — иллюстрация
+  alt: "Туманная лесная тропа среди папоротников на Момбачо, Никарагуа"
+  hover: "Момбачо в Никарагуа: влажный облачный лес с узкой тропой"
 gallery: []
 themes:
 - theme_wildlife

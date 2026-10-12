@@ -184,7 +184,8 @@ itinerary:
     После обеда трансфер на водном такси в Белиз-Сити, затем трансфер в Radisson Fort George Hotel and Marina.
   images:
   - src: /media/destinations/great-blue-hole/hero-generated-20261008.webp
-    alt: "Большая голубая дыра в рифе Лайтхаус, Белиз"
+    alt: "Большая голубая дыра с кольцом бирюзового рифа, вид с воздуха, Белиз"
+    hover: "Белиз: темный круг Большой голубой дыры среди светлого кораллового рифа"
 - excursionRef: excursion_belize_blue_hole_scenic_flight
   places: []
 - day: 11

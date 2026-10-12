@@ -64,7 +64,8 @@ itinerary:
     Продолжительность экскурсии - 4 часа.'
   images:
   - src: /media/tours/special-noe-predlozhenie-rio-and-vodopa-dy-iguasu/itinerary-day-3-enhanced-20261006.webp
-    alt: 'На фото: статуя Христа в Рио-де-Жанейро в Бразилии'
+    alt: "Статуя Христа Искупителя над облаками на Корковадо, Рио-де-Жанейро, Бразилия"
+    hover: "Рио-де-Жанейро: силуэт Христа Искупителя над облачным морем"
 - day: 4
   title: Свободный день в Рио
   places:

@@ -10,7 +10,8 @@ summary: "Пунта Аренас на берегу Магелланова пр�
 searchAliases: []
 hero:
   src: /media/countries/chile/featureBands-2-enhanced-20261002.webp
-  alt: "На фото: пингвины в Пунта Аренас в Чили (Патагония)"
+  alt: "Два пингвина крупным планом, окрестности Пунта-Аренаса, Чили"
+  hover: "Пингвины у Пунта-Аренаса: черно-белые головы и розовые пятна над глазами"
 gallery:
   - src: "/media/destinations/punta-arenas/gallery-1-enhanced-20261005.webp"
     alt: "Красные рыболовные суда у причала в Пунта-Аренасе, Чили"

@@ -211,7 +211,8 @@ currency: USD
 priceNote: $2981
 hero:
   src: /media/tours/karnaval-v-rio-de-zhanejro-vodopady/hero-enhanced-20261006.webp
-  alt: Яркий карнавальный костюм с перьями на девушке в Рио-де-Жанейро
+  alt: "Девушка с голубым гримом в разноцветном перьевом уборе, Рио-де-Жанейро, Бразилия"
+  hover: "Карнавал в Рио: голубой узор на лице и синие, красные и полосатые перья"
 routeCountries:
 - country_brazil
 routeDestinations:

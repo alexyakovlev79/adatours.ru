@@ -298,7 +298,8 @@ itinerary:
     По прилете встреча и переезд в Belmond Miraflores Park. Размещение в Ocean View Club Junior Suite. Ночь в Лиме.
   images:
   - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/chiguana-salt-flat-place-generated-20261009-v1.webp
-    alt: Сухая соляная равнина Чигуана и горы боливийского Альтиплано
+    alt: "Сухая соляная равнина Чигуана с темными горами на горизонте, Боливия"
+    hover: "Чигуана в Боливии: светлая соляная поверхность и далекие вулканические горы"
 - day: 17
   title: Линии Наски и острова Бальестас на частном самолете и яхте
   places:

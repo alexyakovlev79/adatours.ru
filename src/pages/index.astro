@@ -10,6 +10,7 @@ import { interestTourCount } from '../lib/interest-copy.mjs';
 import { compareToursBySalesFit } from '../lib/tour-ranking';
 import { countryPath, mainTourCountries, themePath, tourPath } from '../lib/routes';
 import { withBase } from '../lib/paths';
+import { imageCaption } from '../lib/image-captions.mjs';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
@@ -294,7 +295,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
       </div>
       <div class="home-services__grid">
         <a class="home-service home-service--vip" href={withBase('/vip/')}>
-          <img src={withBase('/media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/hero-src-enhanced-20261007.webp')} loading="lazy" alt="Яхта в бирюзовой воде у тропического побережья" />
+          <img src={withBase('/media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/hero-src-enhanced-20261007.webp')} loading="lazy" alt={imageCaption('/media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/hero-src-enhanced-20261007.webp').alt} title={imageCaption('/media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/hero-src-enhanced-20261007.webp').hover} />
           <span class="home-service__shade" aria-hidden="true"></span>
           <span class="home-service__content">
             <span class="eyebrow">Private travel</span>

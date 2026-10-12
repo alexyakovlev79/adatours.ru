@@ -16,7 +16,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/tours/brazil-three-ecosystems-8-days/word-1-20261010-enhanced-20261011-doc-v1.webp
-  alt: Тропа среди густой зелени и крупных деревьев в тропическом лесу
+  alt: "Каменистая тропа среди густой зелени и стволов тропического леса"
+  hover: "Узкая лесная тропа между деревьями, лианами и папоротниками"
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_jardim_da_amazonia.md
 updatedAt: '2026-10-10'

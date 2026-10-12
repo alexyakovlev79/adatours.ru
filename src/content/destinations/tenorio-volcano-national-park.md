@@ -9,7 +9,8 @@ destinationType: national_park
 summary: Национальный парк Тенорио в Коста-Рике известен влажным лесом, бирюзовой рекой Рио-Селесте и ее водопадом.
 hero:
   src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/tenorio-place-generated-20261009-v1.webp
-  alt: Тропический лес у голубой реки в национальном парке Тенорио
+  alt: "Голубая река Рио-Селесте среди камней и леса в парке Тенорио, Коста-Рика"
+  hover: "Тенорио в Коста-Рике: бирюзовая вода между лесистыми берегами"
 gallery: []
 themes:
 - theme_wildlife

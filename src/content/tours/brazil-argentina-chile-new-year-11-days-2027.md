@@ -82,7 +82,8 @@ dates:
 - 30.12.2026–09.01.2027
 hero:
   src: /media/tours/mechty-sbyvayutsya-na-novyj-god/hero-enhanced-20261006.webp
-  alt: Новый год в Рио на Копакабане, салют и толпы у океана в Бразилии
+  alt: "Разноцветные вспышки фейерверка на фоне черного ночного неба"
+  hover: "Красные, зеленые и синие огни салюта в ночном небе"
 gallery: []
 featured: false
 priority: 0

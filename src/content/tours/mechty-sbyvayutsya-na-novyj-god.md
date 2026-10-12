@@ -274,7 +274,8 @@ itinerary:
     **Стоимость:** USD 250 с человека, обед включен.'
   images:
   - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-9-enhanced-20261006.webp
-    alt: Панорама Сити в Буэнос-Айресе, столице Аргентины
+    alt: "Высотные здания Буэнос-Айреса у воды с вечерней подсветкой, Аргентина"
+    hover: "Буэнос-Айрес: стеклянные башни и освещенная набережная в сумерках"
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places: []
 - excursionRef: excursion_source_ekskursiya_po_montevideo
@@ -326,7 +327,8 @@ currency: USD
 priceNote: $4373
 hero:
   src: /media/tours/mechty-sbyvayutsya-na-novyj-god/hero-enhanced-20261006.webp
-  alt: Новый год в Рио на Копакабане, салют и толпы у океана в Бразилии
+  alt: "Разноцветные вспышки фейерверка на фоне черного ночного неба"
+  hover: "Красные, зеленые и синие огни салюта в ночном небе"
 routeCountries:
 - country_brazil
 - country_argentina

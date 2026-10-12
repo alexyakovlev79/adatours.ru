@@ -24,14 +24,17 @@ gallery:
   hover: "Пласа-де-Мулас: треккинг по каменистой долине к базовому лагерю"
   alt: "Туристы с рюкзаками подходят к палаткам лагеря Пласа-де-Мулас у Аконкагуа, Аргентина"
 - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-06-generated-20261008-v1.webp
-  alt: Практика ходьбы в кошках у ледника Хорконес, Аконкагуа, Аргентина
+  alt: "Ботинки с кошками и альпинисты на снегу у ледника Хорконес, Аконкагуа, Аргентина"
+  hover: "Аконкагуа в Аргентине: ходьба в кошках по снегу на фоне гор"
 - {"src":"/media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-07-generated-20261008-v1.webp","alt":"Туристы на каменистом склоне перед большой заснеженной горой, Район Аконкагуа, Аргентина","hover":"Район Аконкагуа, Аргентина: туристы на каменистом склоне перед большой заснеженной горой"}
 - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-10-generated-20261008-v1.webp
-  alt: Установка палаток в первом высотном лагере Канада, Аконкагуа, Аргентина
+  alt: "Альпинисты устанавливают оранжевую палатку в лагере Канада на Аконкагуа, Аргентина"
+  hover: "Аконкагуа в Аргентине: установка палатки на каменистой площадке высотного лагеря"
 - {"src":"/media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-11-generated-20261008-v1.webp","alt":"Альпинисты идут к палаткам на каменистом высокогорном склоне, Нидо-де-Кондорес, Аконкагуа, Аргентина","hover":"Нидо-де-Кондорес, Аконкагуа, Аргентина: альпинисты идут к палаткам на каменистом высокогорном склоне"}
 - {"src":"/media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-15-generated-20261008-v1.webp","alt":"Два альпиниста на каменистой вершине над панорамой гор, Аконкагуа, Аргентина","hover":"Аконкагуа, Аргентина: два альпиниста на каменистой вершине над панорамой гор"}
 - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-17-generated-20261008-v1.webp
-  alt: Спуск по долине Хорконес с караваном мулов, Аконкагуа, Аргентина
+  alt: "Туристы и караван нагруженных мулов в долине Хорконес, Аконкагуа, Аргентина"
+  hover: "Хорконес в Аргентине: спуск по каменистой долине рядом с караваном мулов"
 facts: []
 featureBands: []
 relatedDestinations: []

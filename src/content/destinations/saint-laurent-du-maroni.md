@@ -10,7 +10,8 @@ summary: Сен-Лоран-дю-Марони во Французской Гви�
   системы.
 hero:
   src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/saint-laurent-place-generated-20261009-v1.webp
-  alt: Историческая кирпичная застройка Сен-Лоран-дю-Марони
+  alt: "Кирпичные здания вокруг тенистого двора Сен-Лоран-дю-Марони, Французская Гвиана"
+  hover: "Сен-Лоран-дю-Марони: красный кирпич, черепичные крыши и деревья во дворе"
 gallery: []
 themes:
 - theme_culture

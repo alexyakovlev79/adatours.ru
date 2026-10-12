@@ -90,8 +90,9 @@ itinerary:
     определяется выбранным тарифом Tapuy или Waku при бронировании. Питание: завтрак, обед, ужин.'
   images:
   - src: /media/tours/canaima-angel-falls-4-days/carrao-generated-20261010-p034-v1.webp
-    alt: Река Каррао, тропический лес и столовые горы в Канайме — иллюстрация
+    alt: "Деревянная лодка на берегу реки Каррао перед столовыми горами Канаймы, Венесуэла"
     status: approved
+    hover: "Канайма в Венесуэле: лодка у тихой реки и красноватые скальные плато вдали"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_canaima_angel_falls_full_day

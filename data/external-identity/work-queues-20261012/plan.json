@@ -54,7 +54,7 @@
     "inventory": "adatours-com-url-inventory-20261012.json",
     "queue": "adatours.com.json",
     "status": "partial",
-    "url_count": 190,
+    "url_count": 141,
     "access_check_required": true
   },
   "resume": "Read plan.json and the selected domain queue. Run one batch, persist results/cursor and checkpoint commit, report counts, then stop until the user says далее.",
@@ -81,10 +81,10 @@
     "step": 2,
     "domain": "adatours.com",
     "batch_id": "adatours-com-crawl-002",
-    "processed_in_batch": 110,
-    "remaining_in_batch": 190,
+    "processed_in_batch": 159,
+    "remaining_in_batch": 141,
     "report": "adatours-com-crawl-002.json",
-    "saved_at": "2026-10-12T15:12:56.482167+00:00"
+    "saved_at": "2026-10-12T15:31:11.576651+00:00"
   },
   "step_1": {
     "status": "completed",
@@ -95,20 +95,21 @@
     "report": "adatours-com-model-check-20261012.json"
   },
   "last_access_check": {
-    "url": "https://adatours.com/luxury-travel-colombia",
+    "url": "https://adatours.com/ouro-preto/excursions",
     "method": "HEAD",
-    "checked_at": "2026-10-12T15:05:04.034271+00:00",
+    "checked_at": "2026-10-12T15:23:28.212667+00:00",
     "http_status": 200,
-    "final_url": "https://adatours.com/luxury-travel-colombia",
+    "final_url": "https://adatours.com/ouro-preto/excursions",
     "content_type": "text/html; charset=utf-8",
     "status": "access_confirmed_this_pass",
     "robots": {
       "url": "https://adatours.com/robots.txt",
       "http_status": 200,
-      "checked_at": "2026-10-12T15:06:00.513545+00:00",
+      "checked_at": "2026-10-12T15:24:11.587198+00:00",
       "sha256": "bbaf6fd733dc879f25d513f972c6b31ced894b2561e9c232936c52320e5bf40f"
     },
-    "fetched_this_pass": 54,
+    "fetched_this_pass": 48,
+    "retry_this_pass": 1,
     "report": "../adatours-com-crawl-002.json"
   }
 }

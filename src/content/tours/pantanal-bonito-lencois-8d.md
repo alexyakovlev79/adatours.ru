@@ -170,7 +170,8 @@ itinerary:
       Трансфер в аэропорт для вылета домой.
     images:
       - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-08-enhanced-20261001.webp
-        alt: "Ленсойс-Мараньенсес, Бразилия"
+        hover: "Ленсойс-Мараньенсес: волнистые песчаные гребни перед закатом"
+        alt: "Золотистые дюны и лагуны Ленсойс-Мараньенсес в вечернем свете, Бразилия"
         intendedSlot: "itinerary:day-8"
 included:
   - Проживание в лодже по маршруту

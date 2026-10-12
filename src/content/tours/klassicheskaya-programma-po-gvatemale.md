@@ -132,7 +132,8 @@ currency: USD
 priceNote: $1939
 hero:
   src: "/media/tours/klassicheskaya-programma-po-gvatemale/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: Антигуа-Гуатемала в Гватемале'
+  hover: "Антигуа-Гуатемала: городские крыши под зеленым вулканом"
+  alt: "Старинные арки и крыши Антигуа-Гуатемалы на фоне вулкана, Гватемала"
 routeCountries:
 - country_guatemala
 routeDestinations:

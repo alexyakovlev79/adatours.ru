@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_bolivia_kokesa/hero-generated-20261008.webp
-  alt: Дома Кокесы у вулкана Тунупа
+  hover: "Кокеса: низкие дома на фоне Тунупы и белого солончака"
+  alt: "Каменные дома Кокесы у вулкана Тунупа и солончака Уюни, Боливия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

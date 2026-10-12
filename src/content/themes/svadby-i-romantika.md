@@ -8,7 +8,8 @@ summary: >-
   Свадебная церемония, предложение, медовый месяц или годовщина требуют подходящего места, приватности и достаточно свободного времени вокруг самого события.
 hero:
   src: /media/themes/svadby-i-romantika/hero-enhanced-20261001.webp
-  alt: Пара в романтическом путешествии
+  hover: "Свадебная пара на травянистом берегу над синей водой"
+  alt: "Жених держит невесту на руках на берегу моря"
 imageTextAlign: right
 sourceUrl: https://brasiltours.ru/svadby-i-romantika
 sourceSnapshot: page_texts_original/svadby-i-romantika__00c77142.md

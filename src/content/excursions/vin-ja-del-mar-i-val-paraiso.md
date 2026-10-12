@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Стоимость — $138."
 hero:
   src: "/media/excursions/vin-ja-del-mar-i-val-paraiso/hero-src-enhanced-20261007.webp"
-  alt: "Винья дель Мар и Вальпараисо"
+  hover: "Виноградник на фоне снежных вершин и золотистых деревьев"
+  alt: "Виноградные ряды и осенние деревья перед заснеженными горами"
 gallery:
   - src: "/media/excursions/vin-ja-del-mar-i-val-paraiso/gallery-0-src-enhanced-20261007.webp"
     hover: "Вальпараисо в Чили: яркий дом на городской улице с лестницей"

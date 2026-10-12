@@ -10,7 +10,8 @@ summary: Ориндж-Уолк знакомит с руинами майя Ла�
 searchAliases: []
 hero:
   src: /media/destinations/orindzh-uolk/hero-enhanced-20261002.webp
-  alt: 'На фото: Ориндж Уолк (Холпатин) в Белизе'
+  hover: "Холпатин: ступенчатое сооружение майя среди деревьев"
+  alt: "Каменная пирамида с резным фасадом в Холпатине, Белиз"
 gallery:
 - src: /media/destinations/orindzh-uolk/gallery-1-enhanced-20261002.webp
   alt: "Низкое солнце отражается в реке среди тропической зелени, Ориндж-Уолк, Белиз"

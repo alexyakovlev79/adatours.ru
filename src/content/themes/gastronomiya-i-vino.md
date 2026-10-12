@@ -8,7 +8,8 @@ summary: >-
   Винодельни, рынки, рестораны, дегустации и местная кухня могут стать отдельной темой поездки или частью большого маршрута по Латинской Америке.
 hero:
   src: /media/themes/gastronomiya-i-vino/hero-enhanced-20261001.webp
-  alt: Вино и гастрономия в путешествии
+  hover: "Тарелка мяса и овощей с красным вином"
+  alt: "Мясо с зеленью и помидорами рядом с бокалом красного вина"
 imageTextAlign: left
 sourceUrl: https://brasiltours.ru/vinnyi-tury
 sourceSnapshot: page_texts_original/vinnyi-tury__d73d99b5.md

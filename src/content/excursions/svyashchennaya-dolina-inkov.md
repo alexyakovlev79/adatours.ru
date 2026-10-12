@@ -14,7 +14,8 @@ priceFrom: 225
 currency: USD
 hero:
   src: /media/excursions/svyashchennaya-dolina-inkov/hero-enhanced-20261001.webp
-  alt: Священная долина инков, Перу
+  hover: "Мачу-Пикчу: лама над древними террасами"
+  alt: "Лама на фоне каменных террас Мачу-Пикчу и зеленых гор, Перу"
 gallery: []
 route:
   - Урубамба

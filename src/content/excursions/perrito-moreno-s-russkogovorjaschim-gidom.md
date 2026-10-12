@@ -16,7 +16,8 @@ currency: USD
 priceNote: Цена указана на человека. Для 2 и более человек возможна скидка.
 hero:
   src: /media/excursions/perrito-moreno-s-russkogovorjaschim-gidom/hero-enhanced-20260930.webp
-  alt: Ледник Перито-Морено в Аргентине
+  hover: "Перито-Морено: голубые ледяные гребни на краю озера"
+  alt: "Вид сверху на ледник Перито-Морено с трещинами у зеленой воды, Аргентина"
 gallery: []
 route: []
 lead: >-

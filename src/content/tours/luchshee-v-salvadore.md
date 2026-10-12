@@ -147,7 +147,8 @@ currency: USD
 priceNote: $1582
 hero:
   src: /media/tours/luchshee-v-salvadore/hero-src-enhanced-20261007.webp
-  alt: 'На фото: Сан-Сальвадор столица Сальвадора'
+  hover: "Сан-Сальвадор: вечерние огни площади и соборного купола"
+  alt: "Освещенная площадь и собор Сан-Сальвадора на фоне гор в сумерках, Эль-Сальвадор"
 routeCountries:
 - country_el_salvador
 routeDestinations:

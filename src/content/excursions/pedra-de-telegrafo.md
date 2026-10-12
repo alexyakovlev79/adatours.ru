@@ -19,7 +19,8 @@ hero:
   alt: Скала Педра-ду-Телеграфу над побережьем Рио-де-Жанейро
 gallery:
   - src: /media/excursions/pedra-de-telegrafo/gallery-1-enhanced-20261001.webp
-    alt: Фотосъемка на Педра-ду-Телеграфу
+    hover: "Педра-ду-Телеграфу: девушка на краю скалы у морской бухты"
+    alt: "Женщина с поднятыми руками на скале Педра-ду-Телеграфу над морем, Бразилия"
   - src: /media/excursions/pedra-de-telegrafo/gallery-2-enhanced-20261001.webp
     alt: Горные склоны и побережье Рио-де-Жанейро
   - src: /media/excursions/pedra-de-telegrafo/gallery-3-enhanced-20261001.webp

@@ -136,7 +136,8 @@ itinerary:
       Включены завтрак, обед и ужин.
   images:
   - src: /media/tours/kontinentalnyj-ekvador-roskoshnoe-puteshestvie/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: 'На фото: джунгли Амазонии в Эквадоре'
+    hover: "Эквадорская Амазония: густая зелень в лесной дымке"
+    alt: "Влажный лес Амазонии с лианами и туманом среди деревьев, Эквадор"
 - day: 6
   title: 'Воскресенье: возвращение в Кито и Папаякта'
   places:

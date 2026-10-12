@@ -346,7 +346,8 @@ itinerary:
       После основной экскурсии возвращение в отель.
     images:
       - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-7-enhanced-20261006.webp
-        alt: "Национальный парк Огненная Земля"
+        hover: "Огненная Земля: горные вершины отражаются в воде"
+        alt: "Снежные горы и неглубокая вода в национальном парке Огненная Земля, Аргентина"
         intendedSlot: "itinerary:day-7"
   - excursionRef: excursion_ushuaia_martillo_penguin_boat
     places:

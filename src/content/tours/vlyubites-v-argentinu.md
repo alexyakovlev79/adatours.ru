@@ -304,7 +304,8 @@ currency: USD
 priceNote: $5375
 hero:
   src: /media/tours/vlyubites-v-argentinu/hero-enhanced-20261006.webp
-  alt: 'на фото: Перито морено ледник, Аргентина'
+  hover: "Перито-Морено: люди на деревянных площадках у голубого льда"
+  alt: "Смотровые площадки с посетителями перед ледником Перито-Морено, Аргентина"
 routeCountries:
 - country_argentina
 routeDestinations:

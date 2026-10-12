@@ -33,7 +33,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/vinnyj-tur-v-argentinu-i-chili/hero-enhanced-20261006.webp
-  alt: "Вино и танго: Аргентина и Чили"
+  hover: "Красное вино рядом с тарелкой мяса и овощей"
+  alt: "Бокал красного вина и мясо с зеленью, грибами и помидорами"
 gallery: []
 featured: false
 priority: 0

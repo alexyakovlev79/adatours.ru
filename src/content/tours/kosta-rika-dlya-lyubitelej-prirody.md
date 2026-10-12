@@ -123,7 +123,8 @@ currency: USD
 priceNote: $3233
 hero:
   src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/hero-src-enhanced-20261007.webp
-  alt: Коста Рика для любителей природы
+  hover: "Озеро Ареналь: поднятые весла на фоне вулкана"
+  alt: "Люди в желтых каяках на озере перед вулканом Ареналь, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

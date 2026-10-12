@@ -103,7 +103,8 @@ itinerary:
     8 часов, традиционный обед включен. В поездке в Монтевидео билеты на паром включены.'
   images:
   - src: /media/tours/tur-v-argentinu-v-patagoniyu/itinerary-day-3-image-0-enhanced-20261010.webp
-    alt: 'На фото: столица Аргентины Буэнос-Айрес'
+    hover: "Буэнос-Айрес: вечерняя подсветка театра Колон"
+    alt: "Освещенный фасад театра Колон в Буэнос-Айресе ночью, Аргентина"
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
 - excursionRef: excursion_source_ekskursiya_po_montevideo
 - excursionRef: excursion_source_fiesta_gaucho
@@ -307,7 +308,8 @@ itinerary:
     встреча и трансфер в гостиницу.
   images:
   - src: /media/tours/tur-v-argentinu-v-patagoniyu/itinerary-day-13-image-0-enhanced-20261010.webp
-    alt: 'На фото: столица Аргентины Буэнос-Айрес'
+    hover: "Буэнос-Айрес: круглый фонтан, пальмы и старинные фасады"
+    alt: "Фонтан в парке перед историческими зданиями Буэнос-Айреса, Аргентина"
 - day: 14
   title: Буэнос-Айрес, вылет домой
   places:
@@ -315,7 +317,8 @@ itinerary:
   text: После завтрака в назначенное время трансфер в аэропорт Буэнос-Айреса для вылета домой.
   images:
   - src: /media/tours/tur-v-argentinu-v-patagoniyu/itinerary-day-14-image-0-enhanced-20261010.webp
-    alt: 'На фото: столица Аргентины Буэнос-Айрес'
+    hover: "Буэнос-Айрес: разноцветные дома под голубым небом"
+    alt: "Желтые, синие и красные фасады с деревянными балконами в Буэнос-Айресе, Аргентина"
 included:
 - Размещение в отелях категории 4* на базе завтраков.
 - Индивидуальные трансферы с водителем.

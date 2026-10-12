@@ -19,7 +19,8 @@ currency: USD
 priceNote: "Основная стоимость — $625. Для группы из 2–4 человек в исходной программе отдельно указано $313 на человека."
 hero:
   src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/hero-src-enhanced-20261007.webp"
-  alt: Монтевидео, столица Уругвая
+  hover: "Монтевидео: фасад Паласио-Сальво над пальмами"
+  alt: "Башня Паласио-Сальво и пальмы на площади в Монтевидео, Уругвай"
 gallery:
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-0-src-enhanced-20261007.webp"
     hover: "Монтевидео: огни городских улиц у воды"

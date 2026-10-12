@@ -123,7 +123,8 @@ currency: USD
 priceNote: $2422
 hero:
   src: /media/tours/ekspress-braziliya-rio-ibuzios/hero-enhanced-20261006.webp
-  alt: 'На фото: пляжи Рио-де-Жанейро в Бразилии'
+  hover: "Рио-де-Жанейро: оранжевое небо над морем у Сахарной Головы"
+  alt: "Сахарная Голова над пляжем Рио-де-Жанейро на закате, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

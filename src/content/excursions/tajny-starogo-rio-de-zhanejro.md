@@ -23,7 +23,8 @@ gallery:
     hover: "Рио с высоты: залив, острова и Сахарная Голова"
     alt: "Сахарная Голова над заливом и городскими кварталами Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-1-src-enhanced-20261008.webp
-    alt: Городской театр Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: фасад театра на фоне высотного здания"
+    alt: "Городской театр Рио-де-Жанейро с зелеными куполами у оживленной улицы, Бразилия"
   - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-2-src-enhanced-20261008.webp
     alt: Историческая архитектура центра Рио-де-Жанейро
   - src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-3-enhanced-20261006.webp
@@ -33,7 +34,8 @@ gallery:
     hover: "Рио-де-Жанейро: ночные огни вокруг арок Лапа"
     alt: "Подсвеченные арки акведука Лапа и городские огни Рио-де-Жанейро ночью, Бразилия"
   - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-5-src-enhanced-20261008.webp
-    alt: Чай и кофе в кафе «Коломбо»
+    hover: "Кафе «Коломбо»: белый сервиз с зелеными надписями"
+    alt: "Фарфоровые чашки и чайники кафе «Коломбо» в Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-6-src-enhanced-20261008.webp
     alt: Церковь Канделария в Рио-де-Жанейро
 route:

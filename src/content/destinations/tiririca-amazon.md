@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_tiririka_amazoniya/destination_brazil_tiririka_amazoniya-generated-20261008.webp
-  alt: Тиририка (Амазония) - Бразилия
+  hover: "Тиририка: лес и светлая полоса песка вдоль реки"
+  alt: "Песчаный берег и густой лес у темной воды в Тиририке, бразильская Амазония"
 gallery: []
 relatedDestinations: []
 featuredTours: []

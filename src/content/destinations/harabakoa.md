@@ -8,7 +8,7 @@ countryId: "country_dominican_republic"
 destinationType: "city"
 summary: "Харабакоа находится в горной долине реки Jimenoa. Здесь можно увидеть водопады, отправиться на пешую или конную прогулку и подняться на вершину Pico Duarte."
 searchAliases: []
-hero: {"src":"/media/destinations/jarabacoa/hero-enhanced-20261003.webp","alt":"На фото: курорт Харабакоа в Доминикане"}
+hero: {"src":"/media/destinations/jarabacoa/hero-enhanced-20261003.webp","alt":"Дом с деревянными балконами среди зеленых горных склонов", hover: "Горный пейзаж с домом, дорожками и деревьями"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

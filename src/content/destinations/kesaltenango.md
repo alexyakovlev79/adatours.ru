@@ -10,7 +10,8 @@ summary: "Город в высокогорье между вулканами, о
 searchAliases: []
 hero:
   src: "/media/destinations/quetzaltenango/hero-enhanced-20261003.webp"
-  alt: "На фото: город Кесальтенанго в Гватемале"
+  hover: "Кесальтенанго: плотная застройка у горных склонов"
+  alt: "Панорама красных городских крыш Кесальтенанго перед зелеными холмами, Гватемала"
 gallery:
   - src: "/media/destinations/quetzaltenango/gallery-1-enhanced-20261003.webp"
     alt: "Каменный бюст перед зданием с колоннами в Кесальтенанго, Гватемала"

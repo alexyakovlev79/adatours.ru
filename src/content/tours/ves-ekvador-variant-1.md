@@ -229,7 +229,8 @@ currency: USD
 priceNote: $1483
 hero:
   src: "/media/tours/ves-ekvador-variant-1/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: континентальный Эквадор и Анды'
+  hover: "Эквадорские Анды: вода и зеленые склоны у снежной горы"
+  alt: "Небольшое озеро на зеленом высокогорье перед снежной вершиной Анд, Эквадор"
 routeCountries:
 - country_ecuador
 routeDestinations:

@@ -363,7 +363,8 @@ currency: USD
 priceNote: "Стоимость уточняется"
 hero:
   src: "/media/tours/tur-v-4-strany-yuzhnoj-ameriki/hero-enhanced-20261007.webp"
-  alt: 'На фото: ледник Перито Морено, Патагония'
+  hover: "Перито-Морено: широкая кромка ледника у воды"
+  alt: "Голубая ледяная стена Перито-Морено над бирюзовым озером, Аргентина"
 routeCountries:
 - country_chile
 - country_argentina

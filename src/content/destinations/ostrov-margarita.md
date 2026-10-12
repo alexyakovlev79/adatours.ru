@@ -10,7 +10,8 @@ summary: "Остров у побережья Венесуэлы с пляжам�
 searchAliases: []
 hero:
   src: "/media/destinations/margarita-island/hero-enhanced-20261003.webp"
-  alt: "На фото: остров Маргариты в Венесуэле"
+  hover: "Остров Маргарита: каменистый берег над бирюзовым морем"
+  alt: "Скалы и прозрачная бирюзовая вода у острова Маргарита, Венесуэла"
 gallery:
   - src: "/media/destinations/margarita-island/gallery-1-enhanced-20261003.webp"
     hover: "Остров Маргарита: лестница к башне в окружении пальм"

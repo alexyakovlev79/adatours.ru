@@ -12,7 +12,8 @@ destination: destination_brazil_rio
 language: []
 hero:
   src: /media/excursions/trekking-na-saharnuyu-golovu/hero-enhanced-20261001.webp
-  alt: Сахарная Голова в Рио-де-Жанейро
+  hover: "Рио-де-Жанейро: канатная дорога на фоне города и морских бухт"
+  alt: "Кабина канатной дороги над зелеными холмами и бухтой Рио-де-Жанейро, Бразилия"
 gallery: []
 route:
   - Урка

@@ -8,7 +8,7 @@ countryId: "country_panama"
 destinationType: "city"
 summary: "Горный город среди кофейных и цитрусовых плантаций. Из Бокете отправляются к вулкану Бару, водопадам и парку Ла Амистад."
 searchAliases: []
-hero: {"src":/media/countries/panama/featureBands-2-enhanced-20261002.webp,"alt":"На фото: горный курорт Бокете в Панаме"}
+hero: {"src":/media/countries/panama/featureBands-2-enhanced-20261002.webp,"alt":"Человек на зеленом горном выступе над облаками в районе Бокете, Панама", hover: "Бокете: горный склон над сплошным слоем облаков"}
 gallery:
 - src: /media/destinations/boquete/gallery-1-enhanced-20261005.webp
   hover: "Бокете: пара ярких попугаев ара на земле среди растений"

@@ -13,7 +13,8 @@ destinationName: "Ушуайя"
 language: []
 hero:
   src: /media/excursions/ostrov-martillo-morskaya-poezdka-k-pingvinam/hero-enhanced-20261006.webp
-  alt: "Пингвины у острова Мартильо"
+  hover: "Остров Мартильо: пингвин у воды на фоне гор"
+  alt: "Пингвин с раскрытыми крыльями на галечном берегу острова Мартильо, Аргентина"
 gallery: []
 route:
   - "Ушуайя"

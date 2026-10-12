@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Река Тарколес на тихоокеанской стороне Коста-Рики известна американскими крокодилами и лодочными прогулками к устью.
 hero:
   src: /media/tours/gvatemala-kosta-rika/tarcoles-place-generated-20261009-v1.webp
-  alt: Крокодил на берегу реки Тарколес
+  hover: "Тарколес: крокодил отдыхает на берегу у воды"
+  alt: "Крокодил на илистом берегу реки Тарколес у мангровых корней, Коста-Рика"
 gallery: []
 themes:
 - theme_wildlife

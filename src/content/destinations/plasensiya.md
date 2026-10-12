@@ -10,7 +10,8 @@ summary: Пласенсия расположена на небольшом по�
 searchAliases: []
 hero:
   src: /media/destinations/plasensiya/hero-enhanced-20261002.webp
-  alt: 'На фото: курорт город Пласенсия в Белизе'
+  hover: "Пласенсия: пальмы над спокойным бирюзовым морем"
+  alt: "Пальмы и парусная лодка у пляжа Пласенсии, Белиз"
 gallery:
 - src: /media/destinations/plasensiya/gallery-1-enhanced-20261002.webp
   alt: "Лодки на песчаном пляже среди пальм в Пласенсии, Белиз"

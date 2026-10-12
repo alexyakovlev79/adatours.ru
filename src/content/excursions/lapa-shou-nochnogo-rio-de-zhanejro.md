@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Цена — $135 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
 hero:
   src: /media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/hero-enhanced-20261006.webp
-  alt: "Лапа--шоу ночного Рио-де-Жанейро"
+  hover: "Лапа: красные и розовые огни на фасаде клуба"
+  alt: "Ночная подсветка фасада клуба в районе Лапа, Рио-де-Жанейро, Бразилия"
 gallery:
   - src: "/media/excursions/lapa-shou-nochnogo-rio-de-zhanejro/gallery-2-enhanced-20261006.webp"
     hover: "Рио-де-Жанейро: ночные огни вокруг арок Лапа"

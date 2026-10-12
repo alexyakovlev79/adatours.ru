@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/hero-src-enhanced-20261007.webp"
-  alt: "Обзорная экскурсия по Сан Пауло"
+  hover: "Сан-Паулу: городской центр с собором среди небоскребов"
+  alt: "Высотная застройка Сан-Паулу и собор с зелеными шпилями, Бразилия"
 gallery:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-02-enhanced-20261001.webp
     hover: "Сан-Паулу: собор с двумя башнями и круглым окном над входом"

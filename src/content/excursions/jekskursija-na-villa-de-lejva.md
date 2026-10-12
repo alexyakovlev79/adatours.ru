@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "$276 на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/jekskursija-na-villa-de-lejva/hero-src-enhanced-20261008.webp"
-  alt: "Экскурсия на Вилла де Лейва"
+  hover: "Вилья-де-Лейва: вид через арку на церковь и горы"
+  alt: "Белая церковь и мощеная площадь Вилья-де-Лейвы под каменной аркой, Колумбия"
 gallery:
   -
     src: "/media/excursions/jekskursija-na-villa-de-lejva/gallery-0-src-enhanced-20261008.webp"

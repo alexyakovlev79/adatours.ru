@@ -10,7 +10,8 @@ summary: "Баньос у подножья вулкана Тунгурагуа: 
 searchAliases: []
 hero:
   src: /media/countries/ekvador/featureBands-3-enhanced-20261002.webp
-  alt: "На фото: город Баньос в Эквадоре в Андах"
+  hover: "Баньос: городская застройка в глубокой горной долине"
+  alt: "Дома Баньоса у подножия крутых зеленых гор, Эквадор"
 gallery:
   - src: "/media/destinations/banos/gallery-1-enhanced-20261006.webp"
     alt: "Зелёные горные гребни и лесистые склоны в районе Баньоса, Эквадор"

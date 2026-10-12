@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
   src: /media/excursions/plavanie-s-rozovymi-del-finami/hero-enhanced-20261006.webp
-  alt: "Плавание с розовыми дельфинами"
+  hover: "Розовый дельфин над водой с брызгами у хвоста"
+  alt: "Розовый дельфин в прыжке над темной водой"
 gallery:
   - src: "/media/excursions/plavanie-s-rozovymi-del-finami/gallery-0-src-enhanced-20261007.webp"
     hover: "Бразильская Амазония: речные петли в зеленом лесном массиве"

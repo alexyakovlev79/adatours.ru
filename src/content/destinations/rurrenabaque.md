@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_bolivia_rurrenabak/hero-generated-20261008.webp
-  alt: Рурренабак на берегу реки Бени
+  hover: "Рурренабак: речная набережная перед лесистыми горами"
+  alt: "Дома и лодки на берегу реки Бени в Рурренабаке, Боливия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

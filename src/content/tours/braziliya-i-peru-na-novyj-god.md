@@ -55,7 +55,8 @@ itinerary:
     Размещение в **Fairmont Copacabana**, номер **Fairmont Room, City View**.'
   images:
   - src: /media/tours/braziliya-i-peru-na-novyj-god/itinerary-day-1-enhanced-20261006.webp
-    alt: Оживленный город Рио де Жанейро
+    hover: "Выступление музыкантов перед публикой в ярко освещенном баре"
+    alt: "Музыканты на небольшой сцене и зрители в двухэтажном баре"
 - day: 2
   title: 29.12 - Корковадо, статуя Христа и лес Тижука
   places:

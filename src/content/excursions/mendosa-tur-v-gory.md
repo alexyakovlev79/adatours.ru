@@ -25,7 +25,8 @@ gallery:
   - src: /media/excursions/mendosa-tur-v-gory/gallery-3-enhanced-20261001.webp
     alt: Горный пейзаж в окрестностях Мендосы
   - src: /media/excursions/mendosa-tur-v-gory/gallery-2-enhanced-20261001.webp
-    alt: Долина и горы в районе Мендосы
+    hover: "Мендоса: красно-золотистые виноградники у гор"
+    alt: "Осенние виноградники и желтые деревья перед сухими горами Мендосы, Аргентина"
   - src: /media/excursions/mendosa-tur-v-gory/gallery-1-enhanced-20261001.webp
     hover: "Мендоса: городские крыши и горы на горизонте"
     alt: "Городская панорама Мендосы с зеленым куполом, многоэтажными домами и горами вдали, Аргентина"

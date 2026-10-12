@@ -406,7 +406,8 @@ currency: USD
 priceNote: $4220
 hero:
   src: "/media/tours/ves-mnogolikij-peru-i-senor-sipan/hero-src-enhanced-20261007.webp"
-  alt: 'на фото: город инков Мачу-Пикчу в Перу'
+  hover: "Мачу-Пикчу: вид через древний каменный проем"
+  alt: "Человек в шляпе и узорчатой рубашке в каменном проеме Мачу-Пикчу, Перу"
 routeCountries:
 - country_peru
 routeDestinations:

@@ -21,7 +21,8 @@ hero:
   alt: "Кабина канатной дороги над зелеными вершинами и побережьем Рио-де-Жанейро, Бразилия"
 gallery:
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-1-enhanced-20261001.webp
-    alt: Ночной вид на бухту Гуанабара
+    hover: "Рио в сумерках: городские огни у бухты и Сахарная Голова"
+    alt: "Огни Рио-де-Жанейро вокруг бухты Гуанабара и подсвеченной Сахарной Головы, Бразилия"
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-3-enhanced-20261001.webp
     alt: Вид с высоты на Рио-де-Жанейро
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp

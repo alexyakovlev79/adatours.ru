@@ -13,7 +13,7 @@ language: []
 priceFrom: 85
 currency: "USD"
 priceNote: "Стоимость — $85 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
-hero: {"src":"/media/excursions/buzios-full-day-tour-with-boat/hero-src-enhanced-20261007.webp","alt":"Тур в Бузиос-с морской прогулкой"}
+hero: {"src":"/media/excursions/buzios-full-day-tour-with-boat/hero-src-enhanced-20261007.webp","alt":"Парусное судно у песчаного пляжа Бузиоса, Бразилия", hover: "Бузиос: морская бухта с парусным кораблем"}
 gallery: []
 route: []
 lead: "Бузиос с морской прогулкой: бухты бразильского курорта, зеленые мысы и побережье, которое особенно красиво рассматривать с воды."

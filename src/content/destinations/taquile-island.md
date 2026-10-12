@@ -9,7 +9,8 @@ destinationType: island
 summary: Остров Такиле на озере Титикака в Перу известен традиционным текстильным искусством и жизнью местной общины.
 hero:
   src: /media/tours/manyashchij-peru-kolumbiya/taquile-place-generated-20261009-v1.webp
-  alt: Остров Такиле и озеро Титикака
+  hover: "Такиле: тропа по склону над синим озером"
+  alt: "Каменная тропа и сухие террасы острова Такиле над озером Титикака, Перу"
 gallery: []
 themes:
 - theme_culture

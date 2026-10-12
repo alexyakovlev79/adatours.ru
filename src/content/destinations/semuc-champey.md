@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Семук-Чампей в Гватемале, известняковый мост над рекой Кахабон с цепочкой естественных бассейнов.
 hero:
   src: /media/tours/luchshee-v-gvatemale/semuc-champey-place-generated-20261009-v1.webp
-  alt: Бирюзовые бассейны Семук-Чампея
+  hover: "Семук-Чампей: ступенчатые бассейны с высоты лесного склона"
+  alt: "Бирюзовые природные бассейны Семук-Чампея среди тропического леса, Гватемала"
 gallery: []
 themes:
 - theme_wildlife

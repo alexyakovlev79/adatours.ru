@@ -15,7 +15,8 @@ currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/hero-src-enhanced-20261007.webp"
-  alt: "Национальный парк Огненная земля"
+  hover: "Огненная Земля: лесная долина у гор со снегом"
+  alt: "Зеленый лес и ручей под горными склонами парка Огненная Земля, Аргентина"
 gallery:
   - src: /media/excursions/argentina-ushuaia-tierra-del-fuego-national-park/gallery-1-enhanced-20261006.webp
     hover: "Ушуайя: прибрежные дома под горными склонами Огненной Земли"

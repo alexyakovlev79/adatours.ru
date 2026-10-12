@@ -89,7 +89,8 @@ itinerary:
       Питание: завтрак, полдник, ужин.
     images:
       - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-13-enhanced-20261006.webp
-        alt: "Горный маршрут на Аконкагуа"
+        hover: "Оранжевые палатки у снежных склонов в вечернем свете"
+        alt: "Палаточный лагерь среди заснеженных гор на закате"
         intendedSlot: "itinerary:day-3"
   - day: 4
     title: "Конфлуэнсия - Пласа-Франсия, 4000 м - Конфлуэнсия"

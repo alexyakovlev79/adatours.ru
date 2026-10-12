@@ -9,7 +9,7 @@ destinationType: "national_park"
 summary: "Национальный парк Лос-Гласьярес"
 searchAliases: ["Лос-Гласьярес", "nacionalnyj-park-los-glasyares"]
 themes: ["theme_wildlife", "theme_adventure"]
-hero: {"src": "/media/destinations/destination_argentina_nacionalnyj_park_los_glasyares/original-01.jpg", "alt": "Национальный парк Лос-Гласьярес"}
+hero: {"src": "/media/destinations/destination_argentina_nacionalnyj_park_los_glasyares/original-01.jpg", "alt": "Голубой ледник за осенним лесом в парке Лос-Гласьярес, Аргентина", hover: "Лос-Гласьярес: смотровая дорожка к леднику среди деревьев"}
 gallery: [{"src": "/media/destinations/destination_argentina_nacionalnyj_park_los_glasyares/original-02.jpg", "alt": "Ледник у озера и заснеженных гор в национальном парке Лос-Гласьярес, Аргентина", hover: "Лос-Гласьярес: голубая ледниковая стена перед озером и снежными вершинами"}]
 facts: []
 featureBands: []

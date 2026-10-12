@@ -168,7 +168,8 @@ itinerary:
       Цель дня - исследование фьорда Гарибальди, если позволяют условия.
     images:
       - src: /media/tours/patagoniya-i-chilijskie-fordy/itinerary-day-8-enhanced-20261006.webp
-        alt: "Пролив Бигль и фьорд Гарибальди"
+        hover: "Пролив Бигль: горы и снежные вершины над спокойной водой"
+        alt: "Вода пролива Бигль между горными склонами под низкими облаками"
         intendedSlot: "itinerary:day-8"
   - day: 9
     title: "Ушуайя, высадка"

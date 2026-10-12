@@ -10,7 +10,8 @@ summary: Лос Рокес — архипелаг из 346 крупных и м�
 searchAliases: []
 hero:
   src: /media/countries/venezuela/featureBands-2-enhanced-20261002.webp
-  alt: 'На фото: архипелаг Лос Рокес в Венесуэле'
+  hover: "Лос-Рокес: песчаный берег между пальмами и бирюзовым морем"
+  alt: "Белый пляж, пальмы и лодки архипелага Лос-Рокес с высоты, Венесуэла"
 gallery:
 - src: /media/destinations/los-roques/gallery-1-enhanced-20261003.webp
   hover: "Лос-Рокес в Венесуэле: морская звезда на песчаном дне"

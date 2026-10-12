@@ -10,7 +10,8 @@ summary: "Поселок на берегу озера с кафе, заняти�
 searchAliases: []
 hero:
   src: "/media/destinations/san-pedro-la-laguna/hero-enhanced-20261003.webp"
-  alt: "На фото: Сан-Педро-ла-Лагуна в Гватемале"
+  hover: "Сан-Педро-ла-Лагуна: лодка у озерного берега с домами"
+  alt: "Дома на берегу синего озера Атитлан в Сан-Педро-ла-Лагуне, Гватемала"
 gallery:
   - src: "/media/destinations/san-pedro-la-laguna/gallery-1-enhanced-20261003.webp"
     alt: "Три улыбающиеся девочки у каменной стены в Сан-Педро-ла-Лагуна, Гватемала"

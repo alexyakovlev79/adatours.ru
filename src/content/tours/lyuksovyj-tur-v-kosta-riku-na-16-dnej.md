@@ -84,7 +84,8 @@ itinerary:
       Сан-Хосе становится отправной точкой поездки по вулканам, карибским каналам, облачным лесам и Тихоокеанскому побережью.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-1-enhanced-20261006.webp
-        alt: "Сан-Хосе, столица Коста-Рики"
+        hover: "Сан-Хосе: лепной фасад за многорожковым фонарем"
+        alt: "Декоративный фасад здания и черный уличный фонарь в Сан-Хосе, Коста-Рика"
         intendedSlot: "itinerary:day-1"
   - day: 2
     title: "Кофейная плантация Дока, вулкан Поас и Ла-Пас"
@@ -152,7 +153,8 @@ itinerary:
       Включены завтрак и обед.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-2-enhanced-20261006.webp
-        alt: "Кратер вулкана Поас в Коста-Рике"
+        hover: "Поас: кратерное озеро за серыми вулканическими стенками"
+        alt: "Зеленоватое озеро в кратере вулкана Поас, Коста-Рика"
         intendedSlot: "itinerary:day-2"
   - day: 3
     title: "Национальный парк Тортугеро"
@@ -312,7 +314,8 @@ itinerary:
       Завтрак включен.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-5-enhanced-20261006.webp
-        alt: "Бирюзовый водопад Рио-Селесте"
+        hover: "Рио-Селесте: белый поток в ярко-бирюзовой воде"
+        alt: "Водопад Рио-Селесте с бирюзовым бассейном среди густого леса, Коста-Рика"
         intendedSlot: "itinerary:day-5"
   - day: 6
     title: "Вулкан Ареналь - Монтеверде"
@@ -657,7 +660,8 @@ itinerary:
       Включены завтрак, обед и ужин.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-11-enhanced-20261006.webp
-        alt: "Полуостров Оса и залив Дрейк"
+        hover: "Коста-Рика: вид сверху на песчаную косу и океанские волны"
+        alt: "Песчаная коса между двумя бирюзовыми бухтами на побережье Коста-Рики"
         intendedSlot: "itinerary:day-11"
   - day: 12
     title: "Перелет к Плайя-Кончаль"
@@ -812,7 +816,8 @@ itinerary:
       За время маршрута вы увидите облачные леса Монтеверде, каналы Тортугеро, вулканы Ареналь и Поас, Рио-Селесте, Тихоокеанское побережье, Корковадо и Плайя-Кончаль.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-16-enhanced-20261006.webp
-        alt: "Лобби The Westin Reserva Conchal"
+        hover: "Westin Reserva Conchal: светлое лобби с цветными креслами"
+        alt: "Открытое лобби отеля Westin Reserva Conchal с креслами и деревянной крышей, Коста-Рика"
         intendedSlot: "itinerary:day-16"
 included:
   - "Русскоговорящий гид."

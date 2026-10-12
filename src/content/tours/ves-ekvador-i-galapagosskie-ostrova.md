@@ -335,7 +335,8 @@ currency: USD
 priceNote: $3439
 hero:
   src: "/media/tours/ves-ekvador-i-galapagosskie-ostrova/hero-src-enhanced-20261007.webp"
-  alt: Весь Эквадор и Галапагосские острова
+  hover: "Кито: городская площадь на фоне домов на склоне"
+  alt: "Площадь с пальмами и белыми историческими зданиями в Кито, Эквадор"
 routeCountries:
 - country_ecuador
 routeDestinations:

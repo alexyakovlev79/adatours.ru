@@ -94,7 +94,8 @@ itinerary:
 
     images:
       - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-02-enhanced-20261001.webp
-        alt: "Каса-Росада в Буэнос-Айресе"
+        hover: "Буэнос-Айрес: Каса-Росада за конным памятником"
+        alt: "Розовый фасад Каса-Росады и конный памятник в Буэнос-Айресе, Аргентина"
         intendedSlot: "itinerary:day-2"
   - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
     places: ["Буэнос-Айрес"]

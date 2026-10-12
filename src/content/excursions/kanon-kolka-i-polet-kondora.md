@@ -25,7 +25,8 @@ gallery:
   - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-1-enhanced-20261001.webp
     alt: Смотровая площадка над каньоном Колка
   - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-2-enhanced-20261001.webp
-    alt: Долина и склоны каньона Колка
+    hover: "Каньон Колка: тропа над горной долиной под облачным небом"
+    alt: "Зеленые склоны и глубокая долина каньона Колка в Перу"
   - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-3-enhanced-20261001.webp
     hover: "Арекипа в Перу: городская архитектура под вулканической вершиной"
     alt: "Церковная башня и пальмы на фоне вулкана в Арекипе, Перу"

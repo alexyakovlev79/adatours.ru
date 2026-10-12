@@ -9,7 +9,8 @@ destinationType: city
 summary: Ла-Уньон в Сальвадоре, прибрежный город и точка морских маршрутов в районе залива Фонсека.
 hero:
   src: /media/tours/luchshee-v-tsentralnoj-amerike/la-union-place-generated-20261009-v1.webp
-  alt: Берег Ла-Уньона и залив Фонсека
+  hover: "Ла-Уньон: лодки на спокойной воде перед вулканическими холмами"
+  alt: "Рыбацкие лодки у набережной Ла-Уньона в заливе Фонсека, Эль-Сальвадор"
 gallery: []
 themes:
 - theme_culture

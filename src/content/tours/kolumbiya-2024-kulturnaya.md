@@ -137,7 +137,8 @@ currency: USD
 priceNote: $1120
 hero:
   src: /media/tours/kolumbiya-2024-kulturnaya/hero-src-enhanced-20261007.webp
-  alt: 'На фото: граффити в Картахене Колумбия'
+  hover: "Картахена: яркие стены домов вдоль узкой улицы"
+  alt: "Разноцветные фасады и уличное кафе в Картахене, Колумбия"
 routeCountries:
 - country_colombia
 routeDestinations:

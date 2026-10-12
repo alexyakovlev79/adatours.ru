@@ -9,7 +9,8 @@ destinationType: region
 summary: Ривьера-Майя на карибском побережье Мексики, район пляжей, сенотов и памятников культуры майя.
 hero:
   src: /media/tours/bolshie-meksikanskie-kanikuly/riviera-maya-place-generated-20261009-v1.webp
-  alt: Карибский пляж Ривьеры-Майя
+  hover: "Ривьера-Майя: пальмы над песчаным берегом Карибского моря"
+  alt: "Белый пляж с пальмами и бирюзовыми волнами на Ривьере-Майя, Мексика"
 gallery: []
 themes:
 - theme_beach

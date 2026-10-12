@@ -427,7 +427,8 @@ itinerary:
     Вечером возвращение в Сальту.'
   images:
   - src: /media/destinations/destination_argentina_nacionalnyj_park_los_kardones/original-01-enhanced-20261009-5049-v1.webp
-    alt: Национальный парк Лос-Кардонес
+    hover: "Лос-Кардонес: деревянный знак у горной дороги в солнечный день"
+    alt: "Въездной знак парка Лос-Кардонес на каменных опорах под голубым небом, Аргентина"
 - day: 20
   title: Сальта - Игуасу
   places:

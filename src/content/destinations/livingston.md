@@ -10,7 +10,8 @@ summary: "Город в устье Рио-Дульче с деревянными
 searchAliases: []
 hero:
   src: "/media/destinations/livingston/hero-enhanced-20261003.webp"
-  alt: "На фото: город Ливингстон в Гватемале"
+  hover: "Ливингстон: лодка и причал в оранжевом свете заката"
+  alt: "Деревянный причал и дом на сваях на закате в Ливингстоне, Гватемала"
 gallery:
 - src: /media/destinations/livingston/gallery-1-enhanced-20261003.webp
   alt: "Пешеходы и велосипедист на улице Ливингстона, Гватемала"

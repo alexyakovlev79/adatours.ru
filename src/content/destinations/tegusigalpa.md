@@ -10,7 +10,8 @@ summary: "Столица Гондураса у горы Эль-Пикачо с �
 searchAliases: []
 hero:
   src: "/media/destinations/tegucigalpa/hero-enhanced-20261003.webp"
-  alt: "На фото: город Тегусигальпа в Гондурасе"
+  hover: "Тегусигальпа: дома и церковь на фоне лесистых склонов"
+  alt: "Белые городские здания и церковные башни у зеленых холмов Тегусигальпы, Гондурас"
 gallery:
   - src: "/media/destinations/tegucigalpa/gallery-1-enhanced-20261003.webp"
     alt: "Городские крыши и разноцветные дома на фоне холмов, Тегусигальпа, Гондурас"

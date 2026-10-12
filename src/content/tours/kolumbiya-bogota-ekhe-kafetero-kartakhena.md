@@ -163,7 +163,8 @@ currency: USD
 priceNote: $136
 hero:
   src: /media/tours/kolumbiya-bogota-ekhe-kafetero-kartakhena/hero-src-enhanced-20261007.webp
-  alt: 'На фото: попугай в джунглях Колумбии'
+  hover: "Колумбия: попугай с красным оперением и синими крыльями"
+  alt: "Красный ара на ветке среди тропических листьев в Колумбии"
 routeCountries:
 - country_colombia
 routeDestinations:

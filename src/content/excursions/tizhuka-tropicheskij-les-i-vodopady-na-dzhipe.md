@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Стоимость — $269 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/hero-src-enhanced-20261007.webp"
-  alt: "На фото: Экскурсия в лес Тижука, Бразилия"
+  hover: "Лес Тижука: густая растительность между высокими стволами"
+  alt: "Высокие деревья и крупные листья в лесу Тижука, Рио-де-Жанейро, Бразилия"
 gallery:
   - src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-0-src-enhanced-20261007.webp"
     hover: "Тижука в Рио: водопад Каскатинья среди мокрых скал и растений"

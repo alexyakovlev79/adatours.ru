@@ -54,7 +54,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: "/media/tours/luchshee-v-venesuele/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Венесуэлы город Каракас'
+    hover: "Каракас: автомобили между высотными зданиями"
+    alt: "Широкая городская магистраль с зеленой разделительной полосой в Каракасе, Венесуэла"
 - day: 3
   title: ', вторник - среда. Свободные дни в Каракасе'
   places:
@@ -71,7 +72,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: "/media/tours/luchshee-v-venesuele/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: столица Венесуэлы город Каракас'
+    hover: "Каракас: городская панорама с башнями и деревьями"
+    alt: "Высотные здания и зеленый парк на фоне гор в Каракасе, Венесуэла"
 - excursionRef: excursion_venezuela_avila_humboldt_visit
   places: []
 - day: 4

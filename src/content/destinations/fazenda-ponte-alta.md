@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_fazenda_ponte_alta/hero-generated-20261008-resumed.webp
-  alt: Фазенда Понте-Альта — Бразилия
+  hover: "Фазенда Понте-Альта: спелые кофейные ягоды на фоне зеленых холмов"
+  alt: "Кофейные ветви с красными ягодами на фазенде Понте-Альта, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

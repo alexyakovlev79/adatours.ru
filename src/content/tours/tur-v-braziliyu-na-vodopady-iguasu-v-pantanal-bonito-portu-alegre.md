@@ -43,7 +43,8 @@ itinerary:
     Размещение в **Fairmont Copacabana** и отдых после перелета.'
   images:
   - src: /media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-1-enhanced-20261006.webp
-    alt: На фото:снорклинг в реке Рио Сукури
+    hover: "Река Сукури: подводный вид на рыб и водные растения"
+    alt: "Рыбы над светлым дном прозрачной реки Сукури в Бразилии"
 - day: 2
   title: 'Рио-де-Жанейро: Сахарная Голова'
   places:
@@ -109,7 +110,8 @@ itinerary:
   - src: /media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-5-enhanced-20261006.webp
     alt: 'На фото: круиз по реке в Бонито, Бразилия'
   - src: /media/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre/itinerary-day-5-images-1-enhanced-20261006.webp
-    alt: 'На фото: озеро с лотосами в Пантанале'
+    hover: "Пантанал: плавающие листья с приподнятыми краями"
+    alt: "Крупные круглые листья кувшинок и белый цветок на водоеме Пантанала, Бразилия"
 - day: 6
   title: 'Бонито: Рио-Сукури, тюбинг и зиплайн'
   places:

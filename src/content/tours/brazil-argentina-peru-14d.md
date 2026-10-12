@@ -315,7 +315,8 @@ itinerary:
       По прибытии трансфер в отель в Лиме.
     images:
       - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-13-enhanced-20260930.webp
-        alt: "Озеро Титикака и острова Урос"
+        hover: "Острова Урос: жители в цветных юбках у тростниковых построек"
+        alt: "Женщины в ярких традиционных нарядах на островах Урос, озеро Титикака, Перу"
         intendedSlot: "itinerary:day-13"
   - day: 14
     title: "Вылет из Лимы"

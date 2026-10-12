@@ -17,7 +17,8 @@ currency: "USD"
 priceNote: "$313 на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/jekskursija-v-santos-i-guaruzha/hero-src-enhanced-20261008.webp"
-  alt: "Экскурсия в Сантос и Гуаружа"
+  hover: "Пляжная набережная с велосипедом, пальмами и песчаным берегом"
+  alt: "Велосипед у пляжной набережной с пальмами и соломенными зонтами"
 gallery:
   -
     src: "/media/excursions/jekskursija-v-santos-i-guaruzha/gallery-0-src-enhanced-20261008.webp"

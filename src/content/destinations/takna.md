@@ -10,7 +10,8 @@ summary: "Такна на юге Перу: собор по проекту Эйф
 searchAliases: []
 hero:
   src: "/media/destinations/takna/hero-enhanced-20261005.webp"
-  alt: "На фото: Такна - самый южный город Перу"
+  hover: "Закат над морем и выступающими из воды скалами"
+  alt: "Каменные скалы на морском берегу в золотистом свете заката"
 gallery:
   - src: "/media/destinations/takna/gallery-1-enhanced-20261005.webp"
     hover: "Такна в Перу: фонтан и пальмы на площади перед собором"

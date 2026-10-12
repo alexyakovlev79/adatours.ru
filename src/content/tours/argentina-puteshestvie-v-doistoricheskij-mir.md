@@ -240,7 +240,8 @@ itinerary:
     **Питание:** завтрак.'
   images:
   - src: /media/tours/argentina-puteshestvie-v-doistoricheskij-mir/itinerary-day-9-enhanced-20261006.webp
-    alt: 'на фото: город Пуэрто Мадрин в Аргентине'
+    hover: "Пуэрто-Мадрин: морской берег на фоне городской панорамы"
+    alt: "Набегающие волны и городские здания вдоль берега Пуэрто-Мадрина, Аргентина"
 - day: 10
   title: Пуэрто-Мадрин и полуостров Вальдес
   places:
@@ -270,7 +271,8 @@ itinerary:
     **Питание:** завтрак.'
   images:
   - src: /media/tours/argentina-puteshestvie-v-doistoricheskij-mir/itinerary-day-10-enhanced-20261006.webp
-    alt: 'на фото: Киты в Пуэрто Мадрин в Аргентине'
+    hover: "Пуэрто-Мадрин: кит поднимает хвост над синей водой"
+    alt: "Хвост кита над морем у Пуэрто-Мадрина, Аргентина"
 - day: 11
   title: Пуэрто-Мадрин - Гайман
   places:

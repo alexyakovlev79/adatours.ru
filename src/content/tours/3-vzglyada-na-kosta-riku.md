@@ -192,7 +192,8 @@ currency: USD
 priceNote: $3721
 hero:
   src: /media/tours/3-vzglyada-na-kosta-riku/hero-src-enhanced-20261007.webp
-  alt: 3 Взгляда на Коста Рику
+  hover: "Ареналь: облака у вершины и тропическая зелень у подножия"
+  alt: "Вулкан Ареналь с полосой облаков над зелеными склонами, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

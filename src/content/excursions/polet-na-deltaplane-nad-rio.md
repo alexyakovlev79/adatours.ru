@@ -24,7 +24,8 @@ gallery:
     alt: "Песчаный пляж с черными камнями под высоким рыжим обрывом, Бразилия"
     hover: "Бразильское побережье: прибой у камней и высокого берегового обрыва"
   - src: /media/excursions/polet-na-deltaplane-nad-rio/gallery-2-enhanced-20261001.webp
-    alt: Вид с высоты на Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: вид с высоты на город и Сахарную Голову"
+    alt: "Панорама Рио-де-Жанейро с Сахарной Головой, бухтами и холмами, Бразилия"
   - src: /media/excursions/polet-na-deltaplane-nad-rio/gallery-3-enhanced-20261001.webp
     alt: Гора Педра-Бонита в Рио-де-Жанейро
   - src: /media/excursions/polet-na-deltaplane-nad-rio/gallery-4-enhanced-20261001.webp

@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_vodopady_reki_mimozo/destination_brazil_vodopady_reki_mimozo-generated-20261008.webp
-  alt: Водопады реки Мимозо - Бразилия
+  hover: "Река Мимозо: невысокие каскады у зеленого речного бассейна"
+  alt: "Ступенчатые водопады реки Мимозо среди густого леса, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

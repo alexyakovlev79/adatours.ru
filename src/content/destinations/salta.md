@@ -10,7 +10,8 @@ summary: Сальта на северо-западе Аргентины сохр
 searchAliases: []
 hero:
   src: /media/destinations/salta/hero-enhanced-20261002.webp
-  alt: 'На фото: цветные скалы в Сальте Аргентина'
+  hover: "Сальта: складчатые разноцветные скалы"
+  alt: "Красные, желтые и серые полосы на горных склонах региона Сальта, Аргентина"
 gallery:
 - src: /media/destinations/salta/gallery-1-enhanced-20261002.webp
   hover: "Сальта: белый фасад с двумя рядами арок и башней"

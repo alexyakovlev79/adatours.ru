@@ -9,7 +9,8 @@ destinationType: region
 summary: Баринас на западе Венесуэлы, район между андскими склонами и равнинами Лос-Льянос.
 hero:
   src: /media/tours/krasota-venesuely/barinas-place-generated-20261009-v1.webp
-  alt: Предгорья Анд в регионе Баринас
+  hover: "Баринас: стадо за сельской оградой на фоне гор"
+  alt: "Коровы на зеленом пастбище у предгорий Анд в Баринасе, Венесуэла"
 gallery: []
 themes:
 - theme_wildlife

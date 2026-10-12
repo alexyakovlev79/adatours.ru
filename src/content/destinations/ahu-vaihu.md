@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Аху-Вайху — археологическая зона острова Пасхи, включенная в поездки по памятникам Рапа-Нуи.
 hero:
   src: /media/destinations/ahu-vaihu/hero-generated-20261009-v3.webp
-  alt: Аху-Вайху
+  hover: "Аху-Вайху: лежащие статуи у океанского берега"
+  alt: "Поверженные каменные статуи и красный цилиндрический камень у берега Аху-Вайху на острове Пасхи, Чили"
 gallery: []
 themes:
 - theme_culture

@@ -197,7 +197,8 @@ itinerary:
   text: Завтрак в отеле.День на отдыхе для наслаждения пляжем и морем./
   images:
   - src: /media/tours/fantasticheskij-tur-po-meksike/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: Канкун
+    hover: "Канкун: украшенная свадебная арка у бирюзового моря"
+    alt: "Свадебная арка с белой тканью и яркими цветами на песчаном пляже Канкуна, Мексика"
 - day: 12
   title: Канкун (З)
   places:

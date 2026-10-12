@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Аху-Акаханга — археологическая зона острова Пасхи на маршруте вдоль побережья.
 hero:
   src: /media/destinations/ahu-akahanga/hero-generated-20261009-v3.webp
-  alt: Аху-Акаханга
+  hover: "Аху-Акаханга: лежащие моаи у морского берега"
+  alt: "Поверженные моаи и каменная платформа Аху-Акаханга у травянистого океанского берега, остров Пасхи, Чили"
 gallery: []
 themes:
 - theme_culture

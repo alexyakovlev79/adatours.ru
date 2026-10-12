@@ -153,7 +153,8 @@ itinerary:
       Можно отдыхать в городе или выбрать одну из дополнительных экскурсий.
     images:
       - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-3-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+        hover: "Буэнос-Айрес: голубые ставни среди вьющихся растений"
+        alt: "Голубые ставни и двери на кирпичном фасаде за густой зеленью в Буэнос-Айресе, Аргентина"
         intendedSlot: "itinerary:day-3"
   - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
     places:
@@ -521,7 +522,8 @@ itinerary:
       На этом программа завершается.
     images:
       - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-11-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+        hover: "Four Seasons в Буэнос-Айресе: вечерняя подсветка фасада"
+        alt: "Подсвеченный фасад отеля Four Seasons с белыми колоннами и стеклянным павильоном, Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-11"
 included:
   - "Размещение в отелях 5* по программе."

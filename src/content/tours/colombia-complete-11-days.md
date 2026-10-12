@@ -143,7 +143,8 @@ itinerary:
     в отель, ночь в Картахене.'
   images:
   - src: /media/tours/colombia-complete-11-days/cartagena-street-word-20261010-v1-enhanced-20261011-pass2324-v1.webp
-    alt: Колониальная улица Картахены с цветными фасадами и балконами, изображение из Word Анны
+    hover: "Картахена: колониальная улица среди ярких фасадов"
+    alt: "Улица Картахены с красными и желтыми фасадами, деревянными балконами и цветущей зеленью, Колумбия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_source_siti_tur_po_kartakhene

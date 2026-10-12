@@ -375,7 +375,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/luchshee-v-tsentralnoj-amerike/itinerary-10-images-0-src-enhanced-20261007.webp
-    alt: Леон
+    hover: "Леон: красно-желтая церковь среди городских домов"
+    alt: "Церковь с красными башнями и желтым фасадом над черепичными крышами Леона, Никарагуа"
 - day: 12
   title: Managua - Masaya - Granada
   places:

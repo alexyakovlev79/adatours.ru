@@ -10,7 +10,8 @@ summary: Лагуна Амарга входит в маршруты по нац�
   Патагонии.
 hero:
   src: /media/destinations/laguna-amarga/hero-generated-20261009-v3.webp
-  alt: Лагуна Амарга
+  hover: "Лагуна Амарга: прозрачная вода на фоне гор Пайне"
+  alt: "Бирюзовая лагуна Амарга с белым минеральным берегом перед острыми вершинами Пайне, Чили"
 gallery: []
 themes:
 - theme_wildlife

@@ -101,7 +101,8 @@ itinerary:
     Вариант с облетом статуи Христа длится **9-10 минут** и стоит **USD 250 с человека**.'
   images:
   - src: /media/tours/vip-tur-v-braziliyu-s-bonito-16-dnej/itinerary-day-3-enhanced-20261006.webp
-    alt: Статуя Христа-Искупителя над Рио-де-Жанейро, символ Бразилии, вид с горы Корковаду
+    hover: "Корковадо: статуя Христа над лесистыми горами Рио"
+    alt: "Статуя Христа-Искупителя на узкой зеленой вершине Корковадо среди гор Рио-де-Жанейро, Бразилия"
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
 - day: 4

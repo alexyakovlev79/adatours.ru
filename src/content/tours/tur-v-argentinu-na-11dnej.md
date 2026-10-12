@@ -101,7 +101,8 @@ itinerary:
       После завтрака день остается свободным. При желании его можно дополнить одной из нескольких экскурсий.
     images:
       - src: /media/tours/tur-v-argentinu-na-11dnej/itinerary-day-3-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+        hover: "Буэнос-Айрес: металлический цветок у отражающей воды"
+        alt: "Большая металлическая скульптура цветка у воды под полосатыми облаками в Буэнос-Айресе, Аргентина"
         intendedSlot: "itinerary:day-3"
 
   - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
@@ -277,7 +278,8 @@ itinerary:
       В назначенное время предусмотрен индивидуальный трансфер из гостиницы в аэропорт для вылета домой.
     images:
       - src: /media/tours/tur-v-argentinu-na-11dnej/itinerary-day-11-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+        hover: "Красное вино и спелый виноград на фоне зелени"
+        alt: "Бокал красного вина рядом с гроздью темного винограда и виноградными листьями"
         intendedSlot: "itinerary:day-11"
 
 included:

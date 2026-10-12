@@ -151,7 +151,8 @@ itinerary:
     После экскурсии возвращаемся в отель Bolontiku, где проводим ночь.'
   images:
   - src: /media/tours/gvatemala-gonduras-i-beliz/itinerary-day-8-enhanced-20261006.webp
-    alt: Тикаль
+    hover: "Тикаль: каменная пирамида над зеленой поляной"
+    alt: "Высокая ступенчатая пирамида Тикаля с крутой лестницей и храмом на вершине, Гватемала"
 - day: 9
   title: Флорес - Белиз - Амбергрис Кей
   places:

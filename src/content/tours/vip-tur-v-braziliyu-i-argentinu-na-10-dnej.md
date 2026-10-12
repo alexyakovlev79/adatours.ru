@@ -277,7 +277,8 @@ itinerary:
       - **Crystal Bar**, Puerto Madero, 35-й этаж Alvear Icon - бар с видом на город
   images:
   - src: /media/tours/mechty-sbyvayutsya-na-karnaval/itinerary-day-10-enhanced-20261006.webp
-    alt: 'На фото: столица Буэнос-Айрес, Аргентина'
+    hover: "Буэнос-Айрес: купол и скульптуры здания Конгресса"
+    alt: "Зеленый купол Конгресса и скульптурная колесница над фасадом здания в Буэнос-Айресе, Аргентина"
 - excursionRef: excursion_source_fiesta_gaucho
   places: []
 - excursionRef: excursion_source_ekskursiya_po_montevideo

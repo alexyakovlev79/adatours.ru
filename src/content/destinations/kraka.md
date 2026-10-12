@@ -9,7 +9,7 @@ destinationType: "natural_area"
 summary: "Крака — небольшое поселение в Суринаме, расположенное в окружении пышных тропических лесов и живописных речных пейзажей."
 searchAliases: []
 themes: ["theme_wildlife", "theme_culture"]
-hero: {"src": "/media/destinations/destination_suriname_kraka/original-01-20261010.jpg", "alt": "Крака, Суринам"}
+hero: {"src": "/media/destinations/destination_suriname_kraka/original-01-20261010.jpg", "alt": "Пальма и грунтовая дорога у спокойного водоема в Краке под серыми облаками, Суринам", hover: "Крака: прибрежная пальма и тихая вода"}
 gallery: []
 facts: []
 featureBands: []

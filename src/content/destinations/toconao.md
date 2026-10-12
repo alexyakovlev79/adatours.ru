@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_chile_tokonao/hero-generated-20261008-resumed-v1.webp
-  alt: Токонао, Чили
+  hover: "Токонао: тихая улица среди каменных стен"
+  alt: "Улица Токонао с низкими каменными домами, деревянными дверями и тенью деревьев, Чили"
 gallery: []
 relatedDestinations: []
 featuredTours: []

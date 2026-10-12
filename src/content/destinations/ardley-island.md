@@ -9,7 +9,8 @@ destinationType: island
 summary: Остров Ардли рядом с Кинг-Джорджем посещают ради прибрежных пейзажей и колоний пингвинов.
 hero:
   src: /media/destinations/ardley-island/hero-generated-20261009-v3.webp
-  alt: Остров Ардли
+  hover: "Остров Ардли: пингвины у спокойной воды"
+  alt: "Пингвины на низком галечном берегу острова Ардли перед тихой бухтой и округлыми холмами, Антарктида"
 gallery: []
 themes:
 - theme_wildlife

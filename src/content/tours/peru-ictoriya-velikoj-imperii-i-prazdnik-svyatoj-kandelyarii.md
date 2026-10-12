@@ -269,7 +269,8 @@ itinerary:
     По прибытии встреча на станции и трансфер в гостиницу Alegria 3* или отель той же категории.
   images:
   - src: "/media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-10-images-0-src-enhanced-20261007.webp"
-    alt: Линии Наска
+    hover: "Наска: геоглиф колибри и легкий самолет"
+    alt: "Геоглиф колибри в пустыне Наска и легкий белый самолет над ним, Перу"
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-5-images-0-src-enhanced-20261007.webp"
     hover: "Арекипа: собор и пальмы у площади перед заснеженной вершиной"
     alt: "Собор Арекипы с двумя башнями на фоне снежного вулкана, Перу"
@@ -298,7 +299,8 @@ itinerary:
     По прибытии размещение в гостинице Residencial Los Frayles 3*. Свободное время.
   images:
   - src: /media/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii/itinerary-11-images-0-src-enhanced-20261007.webp
-    alt: Паракас
+    hover: "Паракас: морская прогулка у скальной арки"
+    alt: "Лодка у большой естественной каменной арки над синим морем в районе Паракаса, Перу"
 - day: 12
   title: Паракас - Лима
   places:

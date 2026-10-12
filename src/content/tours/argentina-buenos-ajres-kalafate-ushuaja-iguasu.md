@@ -97,7 +97,8 @@ itinerary:
       Завтрак в отеле. День свободный для самостоятельных прогулок или одной из дополнительных поездок.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-3-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+        hover: "Буэнос-Айрес: огни транспорта вокруг Обелиска"
+        alt: "Обелиск в Буэнос-Айресе над вечерним проспектом со световыми следами автомобилей, Аргентина"
         intendedSlot: "itinerary:day-3"
 
   - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
@@ -260,7 +261,8 @@ itinerary:
       Завтрак в отеле. В назначенное время трансфер в аэропорт Буэнос-Айреса.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-12-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+        hover: "Сан-Тельмо: городская улица с балконами и магазинами"
+        alt: "Мощеная улица Сан-Тельмо с невысокими зданиями, балконами и лавками, Буэнос-Айрес, Аргентина"
         intendedSlot: "itinerary:day-12"
 
 included:

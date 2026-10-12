@@ -204,7 +204,8 @@ currency: USD
 priceNote: От $3 255 на человека при двухместном размещении в отелях 3*. Завтраки включены.
 hero:
   src: /media/tours/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe/archive-46-src-enhanced-20261008.webp
-  alt: 'на фото: Карнавал в Рио'
+  hover: "Карнавал в Рио: яркая платформа и толпа у арки Самбодрома"
+  alt: "Зелено-желтая карнавальная платформа среди толпы на Самбодроме под большой белой аркой, Рио, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -100,7 +100,8 @@ itinerary:
     После прилета трансфер в город и свободное время. Ночевка в Hotel de Su Merced.
   images:
   - src: /media/tours/sokrovishcha-bolivii/itinerary-day-4-images-1-enhanced-20261006.webp
-    alt: "На фото: Сукре Боливия"
+    hover: "Пар над гейзерами среди сухих гор"
+    alt: "Клубы пара над гейзерами на каменистой горной равнине под ярким солнцем"
 - day: 5
   title: Сукре
   places:

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Ледник Коллинз на острове Кинг-Джордж входит в программы знакомства с ледовыми пейзажами Антарктиды.
 hero:
   src: /media/destinations/collins-glacier/hero-generated-20261009-v3.webp
-  alt: Ледник Коллинз
+  hover: "Ледник Коллинз: пологий ледяной край у моря"
+  alt: "Низкий пологий ледник Коллинз у серого моря с плавучим льдом и снежным берегом, Антарктида"
 gallery: []
 themes:
 - theme_wildlife

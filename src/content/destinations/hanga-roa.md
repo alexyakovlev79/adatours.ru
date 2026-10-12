@@ -9,7 +9,8 @@ destinationType: city
 summary: Ханга-Роа — поселок острова Пасхи, от которого начинаются экскурсии к археологическим зонам Рапа-Нуи.
 hero:
   src: /media/destinations/hanga-roa/hero-generated-20261009-v3.webp
-  alt: Ханга-Роа
+  hover: "Ханга-Роа: лодки в прибрежной бухте"
+  alt: "Небольшие лодки в бухте Ханга-Роа у скалистого берега с низкими зданиями, остров Пасхи, Чили"
 gallery: []
 themes:
 - theme_culture

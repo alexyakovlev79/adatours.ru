@@ -73,7 +73,8 @@ itinerary:
     После основной экскурсии можно выбрать дополнительные программы по Рио.'
   images:
   - src: /media/tours/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu/itinerary-day-2-enhanced-20261006.webp
-    alt: Статуя Христа Искупителя  в Рио-де-Жанейро
+    hover: "Рио: статуя Христа на фоне города и залива"
+    alt: "Статуя Христа-Искупителя над зелеными склонами, застройкой Рио-де-Жанейро и морским заливом, Бразилия"
 - excursionRef: excursion_source_lapa_shou_nochnogo_rio_de_zhanejro
   places: []
 - excursionRef: excursion_source_tajny_starogo_rio_de_zhanejro

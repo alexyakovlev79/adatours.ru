@@ -9,7 +9,8 @@ destinationType: city
 summary: Сан-Хавьер, поселение на реке Уругвай в департаменте Рио-Негро, связано с историей переселенцев из России.
 hero:
   src: /media/destinations/san-javier/hero-generated-20261009-v3.webp
-  alt: Сан-Хавьер
+  hover: "Сан-Хавьер: зеленый берег реки Уругвай"
+  alt: "Спокойная река Уругвай у травянистого берега с деревьями в Сан-Хавьере, Уругвай"
 gallery: []
 themes:
 - theme_culture

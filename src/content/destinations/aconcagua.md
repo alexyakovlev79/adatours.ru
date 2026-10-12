@@ -9,7 +9,7 @@ destinationType: "natural_area"
 summary: "Аконкагуа - высочайшая вершина Южной Америки и всего Западного полушария, возвышающаяся на 6 961 метр над уровнем моря. Расположенная в аргентинской провинции Мендоса, неподалёку от границы с Чили, эта величественная гора является одной из главных природных достопримечательностей Анд и символом суровой красоты южноамериканских высокогорий."
 searchAliases: ["akonkagua"]
 themes: ["theme_adventure", "theme_wildlife"]
-hero: {"src": "/media/destinations/destination_argentina_akonkagua/original-01.jpg", "alt": "Аконкагуа"}
+hero: {"src": "/media/destinations/destination_argentina_akonkagua/original-01.jpg", "alt": "Заснеженная вершина Аконкагуа над сухой каменистой долиной и темными склонами, Аргентина", hover: "Аконкагуа: снег на вершине над пустынной горной долиной"}
 gallery:
 - src: /media/destinations/destination_argentina_akonkagua/original-02.jpg
   alt: "Заснеженная Аконкагуа над горной долиной с цветами, Аргентина"

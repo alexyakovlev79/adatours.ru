@@ -9,7 +9,8 @@ destinationType: resort
 summary: Прибрежное поселение на краю Ленсойс-Мараньенсис, где песчаные улицы и пальмы соседствуют с дюнами и морем.
 hero:
   src: /media/tours/udivitelnaya-braziliya/atins-place-generated-20261008.webp
-  alt: Атинс
+  hover: "Атинс: поселок у моря на фоне песчаных дюн"
+  alt: "Песчаное побережье Атинса с лодками, низкими домами, пальмами и светлыми дюнами вдали, Бразилия"
 gallery: []
 themes:
 - theme_beach

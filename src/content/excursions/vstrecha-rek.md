@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Стоимость — $313."
 hero:
   src: /media/excursions/vstrecha-rek/hero-enhanced-20261006.webp
-  alt: "Встреча рек!!!"
+  hover: "Встреча двух рек с отчетливой границей цвета воды"
+  alt: "Слияние темной и песочно-коричневой речной воды у зеленых берегов, вид сверху"
 gallery:
   - src: "/media/excursions/vstrecha-rek/gallery-0-src-enhanced-20261007.webp"
     hover: "Манаус в Бразилии: встреча вод двух цветов с лодками"

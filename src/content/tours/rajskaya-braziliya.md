@@ -182,7 +182,8 @@ itinerary:
   - src: "/media/destinations/porto-de-galinhas/gallery-2-enhanced-20261001.webp"
     alt: "Бирюзовое море, рифы и песчаный пляж Порту-ди-Галиньяш, Бразилия"
   - src: /media/tours/rajskaya-braziliya/itinerary-day-8-images-1-enhanced-20261006.webp
-    alt: Ресифи
+    hover: "Ресифи: лодки у исторической набережной"
+    alt: "Старинные здания Ресифи перед набережной с лодками в теплом вечернем свете, Бразилия"
 - day: 9
   title: Порту-де-Галиньяс
   places:

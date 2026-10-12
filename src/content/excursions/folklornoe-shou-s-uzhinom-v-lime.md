@@ -13,7 +13,8 @@ duration: 19:00–22:00
 language: []
 hero:
   src: /media/excursions/folklornoe-shou-s-uzhinom-v-lime/hero-enhanced-20261001.webp
-  alt: Лима, Перу
+  hover: "Лима: город над океанским берегом"
+  alt: "Прибрежные кварталы Лимы на высоком зеленом берегу над Тихим океаном, Перу"
 gallery: []
 route:
   - Лима

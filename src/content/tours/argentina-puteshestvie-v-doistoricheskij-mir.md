@@ -354,7 +354,8 @@ currency: USD
 priceNote: $2219
 hero:
   src: /media/tours/argentina-puteshestvie-v-doistoricheskij-mir/hero-enhanced-20261006.webp
-  alt: 'На фото: Аргентина'
+  hover: "Горный пейзаж Аргентины с мостом и кактусами"
+  alt: "Красный мост и высокие кактусы среди зеленых горных склонов под облаками, Аргентина"
 routeCountries:
 - country_argentina
 routeDestinations:

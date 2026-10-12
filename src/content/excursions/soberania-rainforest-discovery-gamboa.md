@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/tours/panama-city-gamboa-6-days/discovery-generated-20261010-p036-v1.webp
-  alt: Вид над пологом тропического леса со смотровой площадки у Гамбоа — иллюстрация
+  hover: "Гамбоа: тропический лес со смотровой площадки"
+  alt: "Перила смотровой площадки над густым зеленым пологом тропического леса у Гамбоа, Панама"
 gallery:
 - src: /media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/soberania-national-park-place-generated-20261009-v1.webp
   alt: Лесная тропа национального парка Собераниа

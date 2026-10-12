@@ -76,7 +76,8 @@ itinerary:
     (ужин)'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-10-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Кито
+    hover: "Кито: собор с островерхими башнями на фоне города"
+    alt: "Неоготический собор с двумя башнями перед городскими кварталами Кито под тяжелыми облаками, Эквадор"
 - day: 2
   title: 31 декабря 2026 года. Кито, линия экватора и Новый год
   places:
@@ -146,7 +147,8 @@ itinerary:
     (завтрак, ужин)'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-03-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Кито
+    hover: "Кито: церковные своды и алтарь с золотистой отделкой"
+    alt: "Золотистый интерьер церкви в Кито с украшенными арками, алтарем и рядами деревянных скамей, Эквадор"
 - day: 3
   title: 1 января 2027 года. Тигуа, Килотоа и Баньос
   places:
@@ -220,7 +222,8 @@ itinerary:
     Питание: завтрак.'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-02-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Баньос
+    hover: "Вечерний Баньос среди горных склонов"
+    alt: "Огни улиц Баньоса у подножия темных зеленых гор с низкими облаками, Эквадор"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_ecuador_banos_waterfalls_day
@@ -258,7 +261,8 @@ itinerary:
     Питание: завтрак.'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-15-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Куэнка
+    hover: "Куэнка: собор в обрамлении зеленых ветвей"
+    alt: "Купол и украшенный кирпичный фасад собора Куэнки за зеленой листвой, Эквадор"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_ecuador_cuenca_city_hats

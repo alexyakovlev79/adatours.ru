@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Пунта-Бальена, прибрежный мыс рядом с Пунта-дель-Эсте, известен панорамами воды и закатами.
 hero:
   src: /media/destinations/punta-ballena/hero-generated-20261009-v3.webp
-  alt: Пунта-Бальена
+  hover: "Пунта-Бальена: скалы у воды на закате"
+  alt: "Скалистый берег Пунта-Бальены с низкими травянистыми холмами в золотом свете заката, Уругвай"
 gallery: []
 themes:
 - theme_wildlife

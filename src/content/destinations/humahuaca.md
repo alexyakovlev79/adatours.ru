@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Умауака — небольшой исторический город на севере Аргентины, расположенный в живописной долине Кебрада-де-Умауака, в провинции Жужуй. Город лежит среди высоких горных хребтов и разноцветных скал, а его улицы и площади хранят яркое наследие коренных народов Анд и испанской колониальной эпохи."
 searchAliases: ["gorod-umauaka"]
 themes: ["theme_culture"]
-hero: {"src": "/media/destinations/destination_argentina_gorod_umauaka/original-01.jpg", "alt": "Город Умауака"}
+hero: {"src": "/media/destinations/destination_argentina_gorod_umauaka/original-01.jpg", "alt": "Широкая каменная лестница к монументу среди высоких кактусов в Умауаке, Аргентина", hover: "Умауака: ступени к монументу на холме"}
 gallery: []
 facts: []
 featureBands: []

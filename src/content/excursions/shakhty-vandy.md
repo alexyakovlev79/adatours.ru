@@ -17,7 +17,8 @@ hero:
   alt: "На фото: Фиолетовый Аметист в рудниках Ванда"
 gallery:
   - src: "/media/excursions/shakhty-vandy/gallery-0-src-enhanced-20261007.webp"
-    alt: "На фото: Шахты Ванда"
+    hover: "Шахты Ванды: посетители у входов в выработки"
+    alt: "Посетители у темных входов в шахты Ванды под земляным уступом и деревьями, Аргентина"
   - src: "/media/excursions/shakhty-vandy/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Шахты Ванда, Пуэрто-Игуасу"
   - src: "/media/excursions/shakhty-vandy/gallery-2-src-enhanced-20261007.webp"

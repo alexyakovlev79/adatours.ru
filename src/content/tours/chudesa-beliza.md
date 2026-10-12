@@ -197,7 +197,8 @@ currency: USD
 priceNote: $4566
 hero:
   src: /media/tours/chudesa-beliza/hero-enhanced-20261006.webp
-  alt: 'На фото: Пляж Белиза'
+  hover: "Белиз: кресла у моря и зонты над мелководьем"
+  alt: "Деревянные кресла на берегу и соломенные зонты на площадках в бирюзовом море, Белиз"
 routeCountries:
 - country_belize
 routeDestinations:

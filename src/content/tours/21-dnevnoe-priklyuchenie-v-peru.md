@@ -99,7 +99,8 @@ itinerary:
     Ночь в Наске.
   images:
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-3-images-0-src-enhanced-20261007.webp"
-    alt: 'на фото: Ика'
+    hover: "Ика: зеленый оазис среди золотистых дюн"
+    alt: "Оазис с озером, пальмами и низкими домами среди высоких песчаных дюн у Ики, Перу"
   - src: /media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261005.webp
     hover: "Наска: рисунок колибри на поверхности пустыни"
     alt: "Геоглиф колибри с длинным клювом и расправленными крыльями в пустыне Наска, Перу"
@@ -388,7 +389,8 @@ currency: USD
 priceNote: $4913
 hero:
   src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/hero-src-enhanced-20261007.webp"
-  alt: 'на фото: Перу'
+  hover: "Женщины у каменной арки в перуанских Андах"
+  alt: "Две женщины в красных шляпах сидят на каменной стене у старой арки на фоне горной долины, Перу"
 routeCountries:
 - country_peru
 routeDestinations:

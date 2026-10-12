@@ -73,7 +73,8 @@ itinerary:
     Возвращение в Куско и отель.
   images:
   - src: /media/tours/peru-i-boliviya/lima-park-of-love-src-enhanced-20261008.webp
-    alt: Лима
+    hover: "Лима: мозаичные скамьи Парка любви над океаном"
+    alt: "Извилистые мозаичные скамьи и цветники Парка любви над тихоокеанским берегом Лимы, Перу"
 - day: 3
   title: Куско - Мачу-Пикчу - Куско
   places:

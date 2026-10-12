@@ -182,7 +182,8 @@ itinerary:
     Во второй половине дня свободное время.'
   images:
   - src: /media/tours/stolitsy-latinskoj-ameriki/itinerary-day-8-enhanced-20261006.webp
-    alt: 'на фото: Монтевидео'
+    hover: "Уругвай: городская площадь и яхтенная гавань на коллаже"
+    alt: "Коллаж с городской башней, зданиями и пальмами сверху и приморской яхтенной гаванью снизу, Уругвай"
 - day: 9
   title: Монтевидео - Пунта-дель-Эсте
   places:
@@ -254,7 +255,8 @@ currency: USD
 priceNote: $5005
 hero:
   src: /media/tours/brazil-argentina-uruguay-13-days/hero-rio-sunset-user-20261005.webp
-  alt: на фото:Рио де Жанейро
+  hover: "Закат над Рио и Сахарной Головой со смотровой площадки"
+  alt: "Двое людей смотрят со смотровой площадки на Рио-де-Жанейро, залив и Сахарную Голову на закате, Бразилия"
 routeCountries:
 - country_brazil
 - country_argentina

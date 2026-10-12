@@ -245,7 +245,8 @@ itinerary:
     По желанию можно посетить горячие источники. Предусмотрено время на обед.
   images:
   - src: "/media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/itinerary-6-images-0-src-enhanced-20261007.webp"
-    alt: Пуно
+    hover: "Пуно: лодка и хижины на тростниковом острове"
+    alt: "Тростниковая лодка у острова с хижинами и людьми в яркой одежде, Пуно, Перу"
 - day: 9
   title: Колка - Арекипа
   places:

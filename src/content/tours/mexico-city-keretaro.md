@@ -128,7 +128,8 @@ currency: USD
 priceNote: $1010
 hero:
   src: /media/tours/mexico-city-keretaro/hero-src-enhanced-20261007.webp
-  alt: Колониальные Сокровища Мексики
+  hover: "Чичен-Ица: каменная пирамида над зеленой поляной"
+  alt: "Ступенчатая пирамида Чичен-Ицы с храмом на вершине за зеленой поляной и ветвями деревьев, Мексика"
 routeCountries:
 - country_mexico
 routeDestinations:

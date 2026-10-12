@@ -79,7 +79,8 @@ itinerary:
       Возвращение в отель и отдых.
     images:
       - src: /media/tours/south-brazil-12d/itinerary/day-02-enhanced-20260930.webp
-        alt: "Рио-де-Жанейро"
+        hover: "Ара на ветвях среди зелени вольера"
+        alt: "Сине-желтые ара и красный попугай на деревянных ветвях в зеленом сетчатом вольере"
         intendedSlot: "itinerary:day-2"
   - day: 3
     title: "Корковадо и статуя Христа Искупителя"

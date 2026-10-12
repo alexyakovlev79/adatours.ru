@@ -113,7 +113,8 @@ itinerary:
     Затем поездка продолжится в сенот на территории Hacienda Selva Maya. Здесь можно искупаться, пообедать и отдохнуть перед возвращением в Канкун.
   images:
   - src: /media/tours/udivitelnyj-gastronomicheskij-tur-po-meksike-2024/itinerary-3-images-0-src-enhanced-20261007.webp
-    alt: Канкун
+    hover: "Канкун: шезлонг и соломенный зонт у моря"
+    alt: "Соломенный зонт, деревянный шезлонг и пальмы на белом пляже Канкуна, Мексика"
 - day: 6
   title: Канкун
   places:

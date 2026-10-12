@@ -138,7 +138,8 @@ itinerary:
   - src: /media/tours/brazil-gems-14d/itinerary/day-14-enhanced-20261001.webp
     alt: Фоз-ду-Игуасу
   - src: /media/tours/solntse-tango-vino-i-atakama/itinerary-day-8-enhanced-20261006.webp
-    alt: Буэнос-Айрес
+    hover: "Площадь перед Конгрессом в Буэнос-Айресе"
+    alt: "Монумент и фонтан перед зданием Конгресса с зеленым куполом, Буэнос-Айрес, Аргентина"
 - day: 7
   title: Буэнос-Айрес и танго-шоу
   places:

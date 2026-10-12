@@ -14,7 +14,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_chile_sokajre/hero-generated-20261008-resumed-v1.webp
-  alt: Сокайре, Чили
+  hover: "Сокайре: каменные дома на пустынной горной улице"
+  alt: "Грунтовая улица Сокайре между низкими каменными домами с соломенными крышами на фоне сухих гор, Чили"
 gallery: []
 relatedDestinations: []
 featuredTours: []

@@ -10,7 +10,8 @@ summary: Атьони — отправная точка водных маршр�
   поселениям местных общин.
 hero:
   src: /media/destinations/suriname-atoni/hero-generated-20261009-v2.webp
-  alt: Атьони
+  hover: "Атьони: лодки на речной пристани"
+  alt: "Деревянные лодки у небольшого речного причала Атьони на фоне лесистого берега, Суринам"
 gallery: []
 themes:
 - theme_culture

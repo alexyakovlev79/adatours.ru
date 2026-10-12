@@ -275,7 +275,8 @@ itinerary:
     Включены завтрак и ланч-бокс.
   images:
   - src: /media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Куэнка
+    hover: "Куэнка: церковная башня и городские крыши"
+    alt: "Белая церковная башня над черепичными крышами Куэнки на фоне зеленых гор, Эквадор"
 - day: 6
   title: Куэнка
   places:

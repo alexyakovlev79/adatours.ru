@@ -162,7 +162,8 @@ currency: USD
 priceNote: "Стоимость уточняется"
 hero:
   src: /media/tours/kongress-v-rio-de-zhanejro/hero-enhanced-20261006.webp
-  alt: 'На фото: Рио-де-Жанейро'
+  hover: "Рио с высоты: город между озером, горами и океаном"
+  alt: "Панорама Рио-де-Жанейро с озером, плотной городской застройкой и длинным океанским пляжем, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

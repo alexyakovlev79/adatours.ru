@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Аху-Нау-Нау — платформа со статуями моаи возле пляжа Анакена на острове Пасхи.
 hero:
   src: /media/destinations/ahu-nau-nau/hero-generated-20261009-v3.webp
-  alt: Аху-Нау-Нау
+  hover: "Аху-Нау-Нау: моаи у песчаного океанского берега"
+  alt: "Моаи с красными каменными навершиями на платформе Аху-Нау-Нау у пальмового берега, остров Пасхи, Чили"
 gallery: []
 themes:
 - theme_culture

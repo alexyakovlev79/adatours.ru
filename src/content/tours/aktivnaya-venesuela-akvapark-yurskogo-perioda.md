@@ -185,7 +185,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-11-enhanced-20261007.webp"
-    alt: Каракас
+    hover: "Каракас: высотная застройка среди зеленых кварталов"
+    alt: "Высотные здания Каракаса над зелеными скверами под голубым облачным небом, Венесуэла"
 - day: 12
   title: ', пятница. Каракас'
   places:

@@ -268,7 +268,8 @@ currency: USD
 priceNote: $4728
 hero:
   src: /media/tours/prirodnye-chudesa-bolivii/hero-enhanced-20261006.webp
-  alt: 'На фото: ламы в Боливии'
+  hover: "Ламы на зеленом высокогорном пастбище Боливии"
+  alt: "Две светлые ламы с цветными украшениями у ручья на травянистом высокогорье Боливии"
 routeCountries:
 - country_bolivia
 routeDestinations:

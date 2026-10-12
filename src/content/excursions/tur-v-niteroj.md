@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Стоимость — $284. Дополнительные посещения оплачиваются отдельно."
 hero:
   src: "/media/excursions/tur-v-niteroj/hero-src-enhanced-20261008.webp"
-  alt: "Тур в Нитерой"
+  hover: "Автодорожный мост над голубой водой залива"
+  alt: "Длинный автодорожный мост на бетонных опорах через залив к городской застройке, Бразилия"
 gallery:
   -
     src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp

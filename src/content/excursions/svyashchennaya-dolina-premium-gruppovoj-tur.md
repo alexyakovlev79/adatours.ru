@@ -19,7 +19,8 @@ currency: "USD"
 priceNote: "Стоимость — $75. При 2 участниках — $244 на человека; при 3 участниках — $175 на человека; при 4 участниках — $141 на человека."
 hero:
   src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/hero-src-enhanced-20261008.webp"
-  alt: "на фото: Чичеро. Перу"
+  hover: "Чинчеро: церковь над старой каменной кладкой"
+  alt: "Белая церковь с колокольней над каменной стеной и ступенями в Чинчеро, Перу"
 gallery:
   -
     src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-0-src-enhanced-20261008.webp"

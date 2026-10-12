@@ -147,7 +147,8 @@ currency: USD
 priceNote: $3745
 hero:
   src: "/media/tours/vpechatlenie-ot-surinama/hero-src-enhanced-20261007.webp"
-  alt: Впечатление от Суринама
+  hover: "Каменная башня с арочными проемами и декоративным поясом"
+  alt: "Круглая светлая каменная башня с арочными проемами и красным флагом под голубым небом"
 routeCountries:
 - country_suriname
 routeDestinations:

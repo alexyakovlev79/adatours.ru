@@ -297,7 +297,8 @@ currency: USD
 priceNote: $4643
 hero:
   src: /media/tours/fantasticheskaya-kolumbiya/hero-src-enhanced-20261007.webp
-  alt: 'на фото: Картахена'
+  hover: "Картахена: разноцветные фасады и балконы"
+  alt: "Ряд желтых, бирюзовых и синих домов с деревянными балконами в Картахене, Колумбия"
 routeCountries:
 - country_colombia
 routeDestinations:

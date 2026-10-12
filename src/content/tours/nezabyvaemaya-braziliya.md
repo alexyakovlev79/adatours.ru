@@ -96,7 +96,8 @@ itinerary:
     **Продолжительность:** около 4 часов.
   images:
   - src: /media/tours/nezabyvaemaya-braziliya/itinerary-day-4-enhanced-20261006.webp
-    alt: 'На фото: Полет на вертолете над Рио'
+    alt: "Приборная панель вертолета и статуя Христа над зелеными горами Рио-де-Жанейро"
+    hover: "Полет над Рио: Корковадо и побережье через стекло кабины"
 - excursionRef: excursion_source_botanical_garden
   places: []
 - excursionRef: excursion_source_royal_petropolis_private_tour_full_day

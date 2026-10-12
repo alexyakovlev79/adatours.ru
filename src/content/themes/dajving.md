@@ -8,7 +8,8 @@ summary: >-
   Погружения в Латинской Америке сильно зависят от сезона, опыта дайвера и выбранного места. Под конкретные даты Ada Tours проверяет подходящие локации и сертифицированных операторов.
 hero:
   src: /media/themes/dajving/hero-enhanced-20261001.webp
-  alt: Дайвинг в тропическом море
+  alt: "Аквалангист плывет рядом со стаей серебристых рыб в синей воде"
+  hover: "Подводное погружение среди многочисленных рыб"
 sourceUrl: https://brasiltours.ru/dajving
 sourceSnapshot: page_texts_original/dajving__b833d7b0.md
 updatedAt: 2026-10-02

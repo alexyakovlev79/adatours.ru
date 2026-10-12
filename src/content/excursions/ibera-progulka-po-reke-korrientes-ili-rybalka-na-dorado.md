@@ -13,7 +13,8 @@ destinationName: "Ибера"
 language: []
 hero:
   src: /media/excursions/ibera-progulka-po-reke-korrientes-ili-rybalka-na-dorado/hero-enhanced-20261006.webp
-  alt: "Водоемы заповедника Ибера"
+  alt: "Двойная радуга над зеленым садом с пальмами"
+  hover: "Две радужные дуги над травой и деревьями под дождевым небом"
 gallery: []
 route:
   - "Ибера"

@@ -14,9 +14,11 @@ hero:
   alt: "Светлое здание с колоннами, куполом и надписью Bolsa de Comercio, Аргентина"
 gallery:
 - src: /media/destinations/kordoba/gallery-1-enhanced-20261002.webp
-  alt: 'На фото: город Кордоба в Аргентине'
+  alt: "Каменная стена с рядами небольших квадратных отверстий"
+  hover: "Грубая каменная кладка и прямоугольные проемы в старой стене"
 - src: /media/destinations/kordoba/gallery-2-enhanced-20261002.webp
-  alt: 'На фото: город Кордоба в Аргентине'
+  alt: "Каменная галерея с арками, видом на зеленый двор и круглую башню"
+  hover: "Историческая аркада с садом и каменной башней за проемом"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

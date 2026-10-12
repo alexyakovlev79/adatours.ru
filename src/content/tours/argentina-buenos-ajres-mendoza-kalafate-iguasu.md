@@ -282,7 +282,8 @@ currency: USD
 priceNote: $3213
 hero:
   src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/hero-enhanced-20261006.webp
-  alt: 'на фото: регион Сальта в Аргентине'
+  alt: "Окно в глинобитных руинах с видом на горы региона Сальты, Аргентина"
+  hover: "Сальта в Аргентине: охристые стены и горная панорама в прямоугольном проеме"
 routeCountries:
 - country_argentina
 routeDestinations:

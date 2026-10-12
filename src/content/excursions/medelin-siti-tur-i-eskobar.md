@@ -26,7 +26,8 @@ gallery:
     hover: "Картина Ботеро: всадник на рыжей лошади"
     alt: "Картина Фернандо Ботеро с всадником на рыжей лошади в темной музейной раме, Колумбия"
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-1-src-enhanced-20261008.webp
-    alt: Городской пейзаж Медельина
+    alt: "Женщина у синего фасада с белыми решетками и цветущей зеленью над крышей"
+    hover: "Ярко-синяя стена и женщина в желто-красном платье"
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261008.webp
     alt: Искусство Фернандо Ботеро в Медельине
   - src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261007.webp"

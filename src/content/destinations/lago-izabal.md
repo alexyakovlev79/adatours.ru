@@ -10,10 +10,12 @@ summary: "Деревня на южном берегу озера Изабал. �
 searchAliases: []
 hero:
   src: "/media/destinations/lake-izabal/hero-enhanced-20261003.webp"
-  alt: "На фото: озеро Исабаль в Гватемале"
+  alt: "Белая парусная яхта у зеленого берега озера Исабаль, Гватемала"
+  hover: "Озеро Исабаль в Гватемале: яхта с высоким белым парусом на синей воде"
 gallery:
   - src: "/media/destinations/lake-izabal/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: озеро Исабаль в Гватемале"
+    alt: "Мужчина на причале, лодка и домик с соломенной крышей у озера Исабаль, Гватемала"
+    hover: "Исабаль в Гватемале: тихий лесистый берег с причалом и лодкой"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

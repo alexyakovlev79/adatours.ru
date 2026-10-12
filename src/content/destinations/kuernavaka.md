@@ -8,8 +8,8 @@ countryId: "country_mexico"
 destinationType: "city"
 summary: "Куэрнавака сочетает колониальные улочки, цветущие балконы и субтропические сады. Здесь можно посетить музеи, Кафедральный собор, монастырь францисканцев и старинные асьенды."
 searchAliases: []
-hero: {"src":"/media/destinations/cuernavaca/hero-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"}
-gallery: [{"src":"/media/destinations/cuernavaca/gallery-1-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"},{"src":"/media/destinations/cuernavaca/gallery-2-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"},{"src":"/media/destinations/cuernavaca/gallery-3-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"},{"src":"/media/destinations/cuernavaca/gallery-4-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"},{"src":"/media/destinations/cuernavaca/gallery-5-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"}]
+hero: {"src":"/media/destinations/cuernavaca/hero-enhanced-20261004.webp","alt":"Карнавальная маска с зеленым усом и яркой бисерной отделкой, крупный план","hover":"Разноцветный головной убор и украшенная маска на празднике"}
+gallery: [{"src":"/media/destinations/cuernavaca/gallery-1-enhanced-20261004.webp","alt":"Многоэтажный исторический фасад с аркадами и пешеходами на площади","hover":"Люди у длинной аркады старинного здания с множеством окон"},{"src":"/media/destinations/cuernavaca/gallery-2-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"},{"src":"/media/destinations/cuernavaca/gallery-3-enhanced-20261004.webp","alt":"На фото: город Куэрнавака в Мексике"},{"src":"/media/destinations/cuernavaca/gallery-4-enhanced-20261004.webp","alt":"Разноцветные полосатые ткани на вешалках у синей стены","hover":"Яркие тканевые изделия с бахромой на фоне синего фасада"},{"src":"/media/destinations/cuernavaca/gallery-5-enhanced-20261004.webp","alt":"Уличные музыканты в шляпах у каменной арки","hover":"Музыкальное выступление рядом с каменной колонной и арочным проходом"}]
 facts: []
 featureBands: []
 relatedDestinations: []

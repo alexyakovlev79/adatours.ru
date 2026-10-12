@@ -232,7 +232,8 @@ currency: USD
 priceNote: $1725
 hero:
   src: /media/tours/colombia-bogota-cultural-ru/hero-src-enhanced-20261007.webp
-  alt: 'На фото: город Картахена в Колумбии'
+  alt: "Разноцветные фасады домов с балконами и уличными кафе, Колумбия"
+  hover: "Колумбия: яркие стены и столики вдоль мощеной улицы"
 routeCountries:
 - country_colombia
 routeDestinations:

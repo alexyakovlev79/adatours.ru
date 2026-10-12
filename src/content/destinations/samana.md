@@ -10,7 +10,8 @@ summary: "Полуостров с кокосовыми рощами, пляжа�
 searchAliases: []
 hero:
   src: "/media/destinations/samana/hero-enhanced-20261003.webp"
-  alt: "На фото: курорт Самана в Доминикане"
+  alt: "Светлая песчаная бухта Саманы между тропической зеленью и морем, Доминикана"
+  hover: "Самана в Доминикане: пляж и полоса прибоя с высоты"
 gallery: []
 relatedDestinations: []
 featuredTours: []

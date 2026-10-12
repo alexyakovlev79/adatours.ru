@@ -13,9 +13,11 @@ hero:
   alt: "На фото: водопады на озере Йоджоа в Гондурасе"
 gallery:
   - src: "/media/destinations/lake-yojoa/gallery-1-enhanced-20261003.webp"
-    alt: "На фото: на озере Йоджоа в Гондурасе"
+    alt: "Озеро Йоджоа и зеленые горы за заболоченным берегом, Гондурас"
+    hover: "Йоджоа в Гондурасе: водные растения и лесистые склоны у озера"
   - src: "/media/destinations/lake-yojoa/gallery-2-enhanced-20261003.webp"
-    alt: "На фото: на озере Йоджоа в Гондурасе"
+    alt: "Облака отражаются в озере Йоджоа у берега с камышами, Гондурас"
+    hover: "Озеро Йоджоа в Гондурасе: спокойная синяя вода и горы вдали"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

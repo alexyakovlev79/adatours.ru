@@ -30,7 +30,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/pantanal-bonito-lencois-8d/hero-enhanced-20260930.webp
-  alt: Пещера в Бонито, Бразилия
+  alt: "Голубая вода под длинными сталактитами пещеры в Бонито, Бразилия"
+  hover: "Бонито в Бразилии: освещенная синяя вода и каменные образования в пещере"
 gallery:
   - src: /media/tours/pantanal-bonito-lencois-8d/gallery-1-src-enhanced-20261001.webp
     hover: "Бонито: плавание с масками у зеленого берега"

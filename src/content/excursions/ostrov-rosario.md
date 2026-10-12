@@ -25,7 +25,8 @@ gallery:
   - src: "/media/excursions/ostrov-rosario/gallery-0-src-enhanced-20261007.webp"
     alt: Побережье Картахены на пути к островам Росарио
   - src: "/media/excursions/ostrov-rosario/gallery-1-src-enhanced-20261007.webp"
-    alt: Острова Росарио, Колумбия
+    alt: "Моторная лодка у навеса с соломенной крышей на островах Росарио, Колумбия"
+    hover: "Острова Росарио в Колумбии: небольшая лодка на прозрачной морской воде"
 route:
   - Картахена
   - пирс Бодегита

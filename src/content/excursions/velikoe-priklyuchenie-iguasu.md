@@ -15,7 +15,8 @@ priceFrom: 96
 currency: USD
 hero:
   src: /media/excursions/velikoe-priklyuchenie-iguasu/hero-enhanced-20261006.webp
-  alt: "Водопады Игуасу, Аргентина"
+  alt: "Водопады Игуасу ночью под звездным небом с радугой над водой"
+  hover: "Ночной Игуасу: освещенные каскады, брызги и радужная дуга"
 gallery: []
 route:
   - "Пуэрто-Игуасу"

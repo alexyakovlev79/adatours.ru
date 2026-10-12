@@ -19,7 +19,8 @@ hero:
   alt: "На фото: Рыбак с пойманной рыбой, Рио-де-Жанейро"
 gallery:
   - src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/gallery-0-src-enhanced-20261007.webp"
-    alt: "На фото: Океаническая рыбалка в Рио"
+    alt: "Мужчина с длинным шестом на бамбуковом плоту среди спокойной воды и зеленых холмов"
+    hover: "Прогулка на плоту у лесистого берега"
   - src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Мужчина с рыбой на рыбалке в Рио-де-Жанейро"
   - src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/gallery-2-src-enhanced-20261007.webp"

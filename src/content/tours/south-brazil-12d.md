@@ -94,8 +94,9 @@ itinerary:
       После экскурсии возвращаемся в отель. Отдых.
     images:
       - src: /media/tours/south-brazil-12d/itinerary/day-03-enhanced-20260930.webp
-        alt: "Корковадо и Рио-де-Жанейро"
+        alt: "Статуя Христа Искупителя на Корковадо над городом и заливами Рио-де-Жанейро"
         intendedSlot: "itinerary:day-3"
+        hover: "Рио-де-Жанейро с высоты: статуя Христа и гора Сахарная Голова вдали"
   - excursionRef: excursion_source_polet_na_vertolete_nad_rio
     places: ["Рио-де-Жанейро"]
   - day: 4

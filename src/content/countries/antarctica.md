@@ -27,7 +27,8 @@ gallery:
     alt: "Пингвины с оранжевыми клювами на каменистом берегу Антарктиды"
     hover: "Антарктида: группа пингвинов у льда и снежных гор"
   - src: /media/countries/antarktida/gallery-5-enhanced-20261001.webp
-    alt: Айсберги и горы Антарктиды
+    alt: "Льдины и снежные горы Антарктиды отражаются в спокойной воде"
+    hover: "Антарктида: горный берег перед темной водой с плавучим льдом"
   - src: /media/countries/antarctica/feature-1-zodiac-enhanced-20261001.webp
     alt: Высадка на лодке Zodiac в Антарктиде
   - src: /media/countries/antarktida/gallery-7-enhanced-20261001.webp

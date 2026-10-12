@@ -199,7 +199,8 @@ currency: USD
 priceNote: $4111
 hero:
   src: "/media/tours/manyashchaya-kolumbiya-kofe-tur/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: улочки Картахены, Колумбия'
+  alt: "Белые дома с разноцветными дверями и балконами на улице в Колумбии"
+  hover: "Колумбия: пестрые деревянные балконы над мощеной улицей"
 routeCountries:
 - country_colombia
 routeDestinations:

@@ -29,7 +29,8 @@ gallery:
   alt: "Акулы и скаты в прозрачной мелкой воде у Амбергрис-Кайе, Белиз"
   hover: "Амбергрис-Кайе: скаты и акулы в бирюзовой воде"
 - src: /media/destinations/ambergris-kaje/gallery-6-enhanced-20261002.webp
-  alt: 'На фото: остров Амбергрис Кей, Белиз'
+  alt: "Высокие пальмы на белом пляже у бирюзового моря"
+  hover: "Тропический берег: светлый песок и пальмы у прозрачной воды"
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

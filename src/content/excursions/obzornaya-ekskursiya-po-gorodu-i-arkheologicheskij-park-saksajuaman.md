@@ -19,13 +19,15 @@ currency: USD
 priceNote: "Основная стоимость — $223. Для 2 человек — $144 на человека, для 3 человек — $119 на человека, для 4 человек — $105 на человека."
 hero:
   src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/hero-src-enhanced-20261007.webp"
-  alt: Кенко рядом с Куско, Перу
+  alt: "Высокий каменный выступ в скальном комплексе Кенко у Куско, Перу"
+  hover: "Кенко в Перу: крупный камень и окружающие скалы под синим небом"
 gallery:
   - src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-0-src-enhanced-20261007.webp"
     hover: "Саксайуаман: массивная каменная кладка и лестница"
     alt: "Проем и каменная лестница в стенах из крупных блоков Саксайуамана, Куско, Перу"
   - src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-1-src-enhanced-20261007.webp"
-    alt: Пука-Пукара рядом с Куско
+    alt: "Каменные стены Пука-Пукары среди зеленых горных склонов у Куско, Перу"
+    hover: "Пука-Пукара в Перу: древняя кладка на фоне зеленых Анд и облаков"
   - src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-2-src-enhanced-20261007.webp"
     alt: Археологический комплекс Кенко в Перу
 route:

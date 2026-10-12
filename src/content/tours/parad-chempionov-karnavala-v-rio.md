@@ -123,7 +123,8 @@ currency: USD
 priceNote: от $2170 с человека, в зависимости от категории отеля и типа размещения
 hero:
   src: /media/tours/parad-chempionov-karnavala-v-rio/hero-enhanced-20261006.webp
-  alt: 'На фото: Мужчина на карнавале в Рио'
+  alt: "Мужчина в карнавальном костюме с зеленым головным убором на карнавале в Рио"
+  hover: "Карнавал Рио: яркий костюм, перья и жест участника праздника"
 routeCountries:
 - country_brazil
 routeDestinations:

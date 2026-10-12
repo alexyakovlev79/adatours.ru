@@ -115,7 +115,8 @@ itinerary:
     \ Catarina.  \n**Питание:** завтрак."
   images:
   - src: "/media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-2-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: озеро Атитлан в Гватемале'
+    alt: "Озеро Атитлан между зелеными вулканическими склонами, Гватемала"
+    hover: "Атитлан в Гватемале: широкая синяя гладь и высокие горные берега"
 - day: 5
   title: Чичикастенанго - Гватемала-Сити
   places:

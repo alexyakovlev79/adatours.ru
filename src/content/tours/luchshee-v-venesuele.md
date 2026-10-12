@@ -192,7 +192,8 @@ itinerary:
     По желанию можно заказать дополнительную обзорную экскурсию по острову Маргарита.
   images:
   - src: "/media/tours/luchshee-v-venesuele/itinerary-14-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: пляжный отдых в Венесуэле'
+    alt: "Кокосовая пальма и лежак на белом песке у бирюзового моря"
+    hover: "Светлый тропический пляж с пальмой, лежаком и полосой прибоя"
 - day: 9
   title: ', понедельник - четверг. Остров Маргарита'
   places:
@@ -268,7 +269,8 @@ currency: USD
 priceNote: $3390
 hero:
   src: "/media/tours/luchshee-v-venesuele/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: пляжный отдых в Венесуэле'
+  alt: "Пальмы и постройки с соломенными крышами у тропического морского берега"
+  hover: "Пальмовый берег с небольшими соломенными навесами и синим морем"
 routeCountries:
 - country_venezuela
 routeDestinations:

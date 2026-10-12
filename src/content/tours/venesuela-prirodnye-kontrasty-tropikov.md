@@ -209,7 +209,8 @@ currency: USD
 priceNote: $4518
 hero:
   src: "/media/tours/venesuela-prirodnye-kontrasty-tropikov/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: тропические леса Венесуэлы'
+  alt: "Зеленый пальмовый лист крупным планом в солнечном свете"
+  hover: "Ряды узких листочков и прожилка тропической пальмы"
 routeCountries:
 - country_venezuela
 routeDestinations:

@@ -24,7 +24,8 @@ gallery:
   - src: /media/excursions/mashpi-lodzh/gallery-0-src-enhanced-20261008.webp
     alt: Машпи Лодж в облачном лесу Эквадора
   - src: /media/excursions/mashpi-lodzh/gallery-1-src-enhanced-20261008.webp
-    alt: Природа заповедника Машпи
+    alt: "Ванная комната Машпи Лодж с большими окнами в тропический лес, Эквадор"
+    hover: "Машпи Лодж в Эквадоре: белая ванна и деревянные раковинные тумбы у лесных окон"
   - src: /media/excursions/mashpi-lodzh/gallery-3-src-enhanced-20261008.webp
     alt: "Гостиная Машпи Лодж с диванами и большими окнами в тропический лес, Эквадор"
     hover: "Машпи Лодж в Эквадоре: светлый интерьер с видом на густую зелень"

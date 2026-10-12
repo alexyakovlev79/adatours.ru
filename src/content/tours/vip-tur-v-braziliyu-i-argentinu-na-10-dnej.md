@@ -320,7 +320,8 @@ currency: USD
 priceNote: $7873
 hero:
   src: /media/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej/hero-enhanced-20261006.webp
-  alt: 'На фото: люксовый отдых в Бразилии'
+  alt: "Морские волны перед гористым берегом в золотом закатном свете"
+  hover: "Закат над морским прибоем и темными силуэтами прибрежных гор"
 routeCountries:
 - country_brazil
 - country_argentina

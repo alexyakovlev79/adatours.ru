@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_fazenda_taquara/hero-generated-20261008-resumed.webp
-  alt: Фазенда Такуара — Бразилия
+  alt: "Красные кофейные ягоды на ветке среди зеленых холмов"
+  hover: "Спелые ягоды кофе и зеленые листья на фоне плантаций"
 gallery: []
 relatedDestinations: []
 featuredTours: []

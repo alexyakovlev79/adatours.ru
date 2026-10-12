@@ -9,7 +9,7 @@ destinationType: "resort"
 summary: "Пириаполис — очаровательный морской курорт на южном побережье Уругвая, расположенный между водами Атлантического океана и зелёными холмами департамента Мальдонадо."
 searchAliases: []
 themes: ["theme_beach", "theme_culture"]
-hero: {"src": "/media/destinations/destination_uruguay_piriapolis/original-01-20261010.jpg", "alt": "Курорт Пириаполис, Уругвай"}
+hero: {"src":"/media/destinations/destination_uruguay_piriapolis/original-01-20261010.jpg","alt":"Песчаный пляж Пириаполиса перед застроенным зеленым холмом, Уругвай","hover":"Пириаполис в Уругвае: полоса прибоя и дома вдоль морского берега"}
 gallery: []
 facts: []
 featureBands: []

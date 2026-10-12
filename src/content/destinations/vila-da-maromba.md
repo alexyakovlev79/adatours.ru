@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_vila_da_maromba/hero-generated-20261008-next20.webp
-  alt: Вила-да-Маромба — Бразилия
+  alt: "Каменистая река у лесистых склонов и домов Вила-да-Маромбы, Бразилия"
+  hover: "Вила-да-Маромба в Бразилии: речные валуны перед зелеными горами"
 gallery: []
 relatedDestinations: []
 featuredTours: []

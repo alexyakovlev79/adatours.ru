@@ -10,7 +10,8 @@ summary: "Чиклайо: современный торговый город П�
 searchAliases: []
 hero:
   src: "/media/destinations/chiklajo/hero-enhanced-20261005.webp"
-  alt: "На фото: шпили города Чиклайо в Перу"
+  alt: "Освещенная башня церкви Чиклайо в Перу под звездным ночным небом"
+  hover: "Чиклайо в Перу: желтая церковная башня с арками ночью"
 gallery:
   - src: "/media/destinations/chiklajo/gallery-1-enhanced-20261005.webp"
     alt: "Освещённый собор и площадь Чиклайо в сумерках, Перу"

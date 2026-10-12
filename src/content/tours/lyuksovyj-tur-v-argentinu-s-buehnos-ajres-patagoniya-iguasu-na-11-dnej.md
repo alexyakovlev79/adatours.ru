@@ -103,8 +103,9 @@ itinerary:
       Отдельно упоминается Avenida 9 de Julio и масштаб центральных кварталов.
     images:
       - src: /media/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej/itinerary-day-1-enhanced-20261006.webp
-        alt: "Four Seasons Buenos Aires"
+        alt: "Официант подает напитки двум женщинам на лежаках среди тропической зелени"
         intendedSlot: "itinerary:day-1"
+        hover: "Напитки у шезлонгов: отдыхающие женщины и официант в саду"
   - day: 2
     title: "Обзорная экскурсия и Gala Tango"
     places:

@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_fazenda_florenca/hero-generated-20261008-resumed.webp
-  alt: Фазенда Флоренса — Бразилия
+  alt: "Ряды кофейных кустов с красными ягодами на зеленом склоне"
+  hover: "Кофейная плантация: созревшие ягоды и тропа вдоль деревьев"
 gallery: []
 relatedDestinations: []
 featuredTours: []

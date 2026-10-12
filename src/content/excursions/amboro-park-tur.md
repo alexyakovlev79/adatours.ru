@@ -26,7 +26,8 @@ gallery:
   - src: "/media/excursions/amboro-park-tur/gallery-1-src-enhanced-20261007.webp"
     alt: Водопад в национальном парке Амборо
   - src: "/media/excursions/amboro-park-tur/gallery-2-src-enhanced-20261007.webp"
-    alt: Горные склоны парка Амборо
+    alt: "Красные отвесные скалы и густая зелень национального парка Амборо, Боливия"
+    hover: "Амборо в Боливии: лес на склонах высокого красного утеса"
 route:
   - Санта-Крус
   - парк Амборо

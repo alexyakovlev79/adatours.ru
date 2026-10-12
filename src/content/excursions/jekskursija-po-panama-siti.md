@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Стоимость — $188. Экскурсия проводится от 2 человек."
 hero:
   src: "/media/excursions/jekskursija-po-panama-siti/hero-src-enhanced-20261008.webp"
-  alt: "Экскурсия по Панама- Сити"
+  alt: "Городская панорама с высотными зданиями, заливами и парусными лодками"
+  hover: "Парусные лодки на переднем плане перед прибрежной городской застройкой"
 gallery:
   -
     src: "/media/excursions/jekskursija-po-panama-siti/gallery-0-src-enhanced-20261008.webp"

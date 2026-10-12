@@ -47,50 +47,17 @@
     "retries_per_url_in_same_step": 0
   },
   "first_next_task": {
-    "id": "step-1-adatours-com-model",
+    "id": "adatours-com-crawl-001",
+    "step": 2,
     "domain": "adatours.com",
-    "action": "Continue only the remaining 12 sample objects. Reuse the eight saved model results; do not start mass crawl.",
-    "sample_keys": [
-      "country_antarctica",
-      "country_argentina",
-      "country_belize",
-      "country_bolivia",
-      "country_brazil",
-      "destination_argentina_bariloche",
-      "destination_belize_ambergris_kaje",
-      "destination_bolivia_kochabamba",
-      "destination_brazil_angra_dos_reis",
-      "destination_chile_ostrov_pashi",
-      "tour_source_antarktida_programma_na_ves_den",
-      "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
-      "tour_source_luchshee_iz_dvukh_mirov",
-      "tour_source_mechta_bolivii",
-      "tour_source_udivitelnaya_braziliya",
-      "excursion_source_buenos_ajres_sochetanie_istorii_i_iskusstva",
-      "excursion_source_la_pas_siti_tur",
-      "excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie",
-      "excursion_source_transfer_s_russkim_gidom_na_ostrov_pashi",
-      "excursion_source_siti_tur_v_bogote"
-    ],
-    "status": "partial",
-    "processed": 8,
-    "remaining_sample_keys": [
-      "destination_brazil_angra_dos_reis",
-      "destination_chile_ostrov_pashi",
-      "tour_source_antarktida_programma_na_ves_den",
-      "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
-      "tour_source_luchshee_iz_dvukh_mirov",
-      "tour_source_mechta_bolivii",
-      "tour_source_udivitelnaya_braziliya",
-      "excursion_source_buenos_ajres_sochetanie_istorii_i_iskusstva",
-      "excursion_source_la_pas_siti_tur",
-      "excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie",
-      "excursion_source_transfer_s_russkim_gidom_na_ostrov_pashi",
-      "excursion_source_siti_tur_v_bogote"
-    ]
+    "action": "Crawl only the first frozen actual-URL batch; <=300 URLs and <=10 minutes. Skip 15 already fetched records, extract compact IDs/canonical/H1 and checkpoint. Do not perform full programme sameAs comparison in this crawl pass.",
+    "inventory": "adatours-com-url-inventory-20261012.json",
+    "queue": "adatours.com.json",
+    "status": "pending",
+    "url_count": 300
   },
   "resume": "Read plan.json and the selected domain queue. Run one batch, persist results/cursor and checkpoint commit, report counts, then stop until the user says далее.",
-  "completed_step": 0,
+  "completed_step": 1,
   "schema_implementation": "not_authorized_by_this_research_plan",
   "queues": [
     "adatours.com.json",
@@ -108,13 +75,21 @@
     "geography.json",
     "completed-vip.json"
   ],
-  "active_step": 1,
+  "active_step": null,
   "last_checkpoint": {
     "step": 1,
     "domain": "adatours.com",
-    "processed": 8,
-    "confirmed_pairs": 8,
+    "processed": 20,
+    "confirmed_pairs": 10,
     "report": "adatours-com-model-check-20261012.json",
-    "saved_at": "2026-10-12T10:12:56.594903+00:00"
+    "saved_at": "2026-10-12T10:40:12.541364+00:00"
+  },
+  "step_1": {
+    "status": "completed",
+    "processed": 20,
+    "confirmed_geography_pairs": 10,
+    "programmes_with_shared_id_needing_content_check": 4,
+    "programmes_shared_id_lookup_404": 6,
+    "report": "adatours-com-model-check-20261012.json"
   }
 }

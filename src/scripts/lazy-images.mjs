@@ -48,7 +48,10 @@ export function initializeLazyImages() {
       const height = window.innerHeight;
       observer = new IntersectionObserver((entries) => {
         for (const entry of entries) if (entry.isIntersecting && nearViewport(entry.target)) activate(entry.target);
-      }, { rootMargin: `${height}px 0px ${height}px 0px`, threshold: 0 });
+      // Edge contact has ratio 0 but can already be isIntersecting. Observe
+      // positive intersection too, otherwise the strict window check can
+      // reject that first notification and never receive another one.
+      }, { rootMargin: `${height}px 0px ${height}px 0px`, threshold: [0, Number.EPSILON] });
       pending.forEach((element) => observer.observe(element));
     }
     register();
@@ -56,6 +59,12 @@ export function initializeLazyImages() {
   let frame = 0;
   const schedule = () => {
     if (!frame) frame = window.requestAnimationFrame(() => { frame = 0; register(); });
+  };
+  const restore = () => {
+    rebuild();
+    // Reload/back-forward scroll restoration can happen after pageshow.
+    // Check again after the next layout, without requiring a manual scroll.
+    window.requestAnimationFrame(schedule);
   };
   rebuild();
   const mutations = new MutationObserver(schedule);
@@ -65,7 +74,18 @@ export function initializeLazyImages() {
   // Old browsers still respect the same loading window.
   window.addEventListener('scroll', schedule, { passive: true });
   document.addEventListener('toggle', schedule, true);
-  window.addEventListener('pageshow', schedule);
+  window.addEventListener('load', restore);
+  window.addEventListener('pageshow', restore);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') restore();
+  });
+  document.fonts?.ready.then(schedule);
+  // Hero images, fonts and filter menus can move a card inside the loading
+  // window while it stays intersecting the observer's expanded root.
+  if ('ResizeObserver' in window) {
+    const layout = new ResizeObserver(schedule);
+    layout.observe(document.body);
+  }
   window.addEventListener('beforeprint', () => {
     document.querySelectorAll(selector).forEach((element) => {
       if (!element.hasAttribute('data-pagefind-meta')) activate(element);

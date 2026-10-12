@@ -76,8 +76,18 @@ test('runtime fetches only nearby images and responds to scroll, resize, hidden 
   globalThis.document = { body: {}, querySelectorAll: () => nodes.filter((n) => n.dataset.lazySrc || n.dataset.lazyStyle),
     addEventListener: (name, fn) => listeners[name] = fn };
   globalThis.IntersectionObserver = class {
-    constructor(callback, options) { this.callback = callback; this.options = options; this.observed = new Set(); observers.push(this); }
+    constructor(callback, options) { this.callback = callback; this.options = options; this.observed = new Set(); this.thresholdIndex = new Map(); observers.push(this); }
     observe(node) { this.observed.add(node); } unobserve(node) { this.observed.delete(node); } disconnect() { this.observed.clear(); }
+    intersect(node, ratio) {
+      // Like the browser, notify only when a threshold index changes. Contact
+      // with the root boundary is already intersecting, even with ratio 0.
+      const thresholds = [this.options.threshold].flat();
+      const index = thresholds.filter((threshold) => threshold <= ratio).length;
+      if (this.thresholdIndex.get(node) !== index) {
+        this.thresholdIndex.set(node, index);
+        this.callback([{ target: node, isIntersecting: true, intersectionRatio: ratio }]);
+      }
+    }
   };
   globalThis.MutationObserver = class { constructor(callback) { mutation = callback; } observe() {} };
   try {
@@ -87,8 +97,11 @@ test('runtime fetches only nearby images and responds to scroll, resize, hidden 
     assert.equal(hidden.attrs.src, undefined);
     assert.equal(metadata.attrs.src, undefined);
     assert.equal(observers[0].options.rootMargin, '800px 0px 800px 0px');
-    far.top = 1500;
-    observers[0].callback([{ target: far, isIntersecting: true }]);
+    observers[0].intersect(far, 0);
+    assert.equal(far.attrs.src, undefined);
+    // A layout shift moves the card one pixel inside without a scroll event.
+    far.top = 1599;
+    observers[0].intersect(far, 1 / 300);
     assert.equal(far.attrs.src, '/photo-1600.webp');
     hidden.hidden = false;
     observers[0].callback([{ target: hidden, isIntersecting: true }]);
@@ -107,6 +120,59 @@ test('runtime fetches only nearby images and responds to scroll, resize, hidden 
     assert.ok(distant.attrs.src);
     assert.equal(metadata.attrs.src, undefined);
   } finally { for (const [key, value] of Object.entries(saved)) value === undefined ? delete globalThis[key] : globalThis[key] = value; }
+});
+
+test('backgrounds load after reload, restored scroll, fonts and layout changes without manual scrolling', async () => {
+  const keys = ['window', 'document', 'IntersectionObserver', 'MutationObserver', 'ResizeObserver'];
+  const saved = Object.fromEntries(keys.map((key) => [key, globalThis[key]]));
+  const listeners = {}, frames = [];
+  let layoutChanged, contentChanged, finishFonts;
+  const fontsReady = new Promise((resolve) => { finishFonts = resolve; });
+  const background = (top, hidden = false) => ({
+    dataset: { lazyStyle: '--band-image: url("/band-' + top + '.webp")' },
+    top, hidden, isConnected: true, style: { cssText: 'background-position:center' },
+    getClientRects() { return this.hidden ? [] : [this.getBoundingClientRect()]; },
+    getBoundingClientRect() { return { top: this.top, bottom: this.top + 440, left: 0, right: 390, width: 390, height: 440 }; },
+    hasAttribute(name) { return name === 'data-pagefind-meta' && this.metadata; },
+  });
+  const loaded = background(3000), restored = background(3200), resized = background(3300);
+  const font = background(3400), hidden = background(100, true), distant = background(10000);
+  const metadata = background(100); metadata.metadata = true;
+  const nodes = [loaded, restored, resized, font, hidden, distant, metadata];
+  const tick = () => { const current = frames.splice(0); current.forEach((fn) => fn()); };
+  const dispatch = (event) => listeners[event]?.();
+  globalThis.window = { innerWidth: 390, innerHeight: 800, ResizeObserver: true,
+    addEventListener: (name, fn) => listeners[name] = fn,
+    requestAnimationFrame: (fn) => { frames.push(fn); return 1; } };
+  globalThis.document = { body: {}, fonts: { ready: fontsReady }, visibilityState: 'visible',
+    querySelectorAll: () => nodes.filter((node) => node.dataset.lazyStyle),
+    addEventListener: (name, fn) => listeners[name] = fn };
+  // Exercise the scroll/resize fallback too; no IntersectionObserver exists.
+  delete globalThis.IntersectionObserver;
+  globalThis.MutationObserver = class { constructor(fn) { contentChanged = fn; } observe() {} };
+  globalThis.ResizeObserver = class { constructor(fn) { layoutChanged = fn; } observe(node) { assert.equal(node, document.body); } };
+  const active = (node, originalTop) => {
+    assert.ok(node.style.cssText.includes('--band-image: url("/band-' + originalTop + '.webp")'));
+    assert.ok(node.style.cssText.includes('background-position:center'));
+    assert.equal(node.dataset.lazyStyle, undefined);
+  };
+  try {
+    initializeLazyImages();
+    assert.ok(loaded.dataset.lazyStyle);
+    loaded.top = 100; dispatch('load'); active(loaded, 3000);
+    // Browser restores scroll after pageshow and its first animation frame.
+    dispatch('pageshow'); tick(); restored.top = 200; tick(); active(restored, 3200);
+    resized.top = 300; layoutChanged(); tick(); active(resized, 3300);
+    font.top = 400; finishFonts(); await fontsReady; tick(); active(font, 3400);
+    hidden.hidden = false; layoutChanged(); tick(); active(hidden, 100);
+    const appended = background(1500); nodes.push(appended); contentChanged(); tick(); active(appended, 1500);
+    const resumed = background(3500); nodes.push(resumed); resumed.top = 500;
+    dispatch('visibilitychange'); active(resumed, 3500);
+    assert.ok(distant.dataset.lazyStyle);
+    assert.ok(metadata.dataset.lazyStyle);
+  } finally {
+    for (const [key, value] of Object.entries(saved)) value === undefined ? delete globalThis[key] : globalThis[key] = value;
+  }
 });
 
 test('gallery orientation ignores the placeholder and updates when the original photo loads', () => {

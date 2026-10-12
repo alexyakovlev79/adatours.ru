@@ -62,8 +62,9 @@ itinerary:
           Вечером мы рекомендуем романтический ужин в ресторане с видом на водопады.
     images:
       - src: /media/tours/iguacu-falls/itinerary/day-02-enhanced-20261001.webp
-        alt: "День 2: свадебная церемония у водопадов Игуасу"
+        alt: "Накрытый стол на террасе перед водопадами Игуасу в закатном свете"
         intendedSlot: "itinerary:day-2"
+        hover: "Игуасу: столик с цветами и вечерний вид на водопады"
   - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
     places: ["Фоз-ду-Игуасу"]
   - day: 3

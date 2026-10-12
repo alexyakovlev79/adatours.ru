@@ -97,7 +97,8 @@ itinerary:
   text: После завтрака трансфер в аэропорт.
   image:
     src: /media/tours/manaus-4-dnya-3-nochi/manaus-airport-transfer-generated-20261008.webp
-    alt: 'Завершение поездки: трансфер в аэропорт Манауса'
+    alt: "Человек с чемоданом у крытого подъезда аэропорта и припаркованных автомобилей"
+    hover: "Аэропортовый подъезд: багаж, автомобили и пассажиры под навесом"
 - excursionRef: excursion_amazon_pink_dolphin_observation
   places: []
 - excursionRef: excursion_source_vstrecha_rek

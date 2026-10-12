@@ -245,7 +245,8 @@ currency: USD
 priceNote: От $5 846 на человека при трехместном размещении в отелях 4*. Двухместное размещение — от $6 401.
 hero:
   src: /media/tours/ekzoticheskij-novyj-god-ru/archive-22-src-enhanced-20261008.webp
-  alt: Встреча Нового Года в Рио-де-Жанейро, Бразилия
+  alt: "Новогодние фейерверки над дугой пляжа Копакабана в Рио-де-Жанейро, Бразилия"
+  hover: "Копакабана в Рио: салют над океаном и огни вдоль ночного берега"
 routeCountries:
 - country_brazil
 routeDestinations:

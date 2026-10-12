@@ -9,7 +9,8 @@ destinationType: city
 summary: Зинакантан в мексиканском Чьяпасе, поселение народа цоциль с ткачеством и вышивкой.
 hero:
   src: /media/tours/meksika-fantasticheskaya/zinacantan-place-generated-20261009-v1.webp
-  alt: Текстиль и вышивка в мастерской Зинакантана
+  alt: "Женщина работает над цветочной вышивкой в текстильной мастерской Зинакантана, Мексика"
+  hover: "Зинакантан в Мексике: яркие ткани на столе и работа на ткацком станке"
 gallery: []
 themes:
 - theme_culture

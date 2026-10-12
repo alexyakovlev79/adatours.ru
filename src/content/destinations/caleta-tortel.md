@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Деревянные дорожки и дома на сваях у воды в чилийской Патагонии."
 searchAliases: ["kaleta-tortel"]
 themes: ["theme_culture","theme_cruises"]
-hero: {"src":"/media/destinations/destination_chile_kaleta_tortel/hero-generated-20261009-v1.webp","alt":"Деревянные дорожки и дома на берегу Калета Тортель","status":"approved"}
+hero: {"src": "/media/destinations/destination_chile_kaleta_tortel/hero-generated-20261009-v1.webp", "alt": "Деревянная дорожка вдоль воды и дома Калета-Тортель среди туманных гор, Чили", "status": "approved", "hover": "Калета-Тортель в Чили: береговой настил и поселение у зеленого горного склона"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

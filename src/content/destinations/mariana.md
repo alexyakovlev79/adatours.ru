@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Колониальная архитектура и история золотодобычи в Минас-Жерайсе."
 searchAliases: []
 themes: ["theme_culture"]
-hero: {"src":"/media/destinations/destination_brazil_mariana/hero-generated-20261009-v1.webp","alt":"Колониальные дома на исторической улице Марианы","status":"approved"}
+hero: {"src": "/media/destinations/destination_brazil_mariana/hero-generated-20261009-v1.webp", "alt": "Мощеная улица Марианы с колониальными домами перед зелеными холмами, Бразилия", "status": "approved", "hover": "Мариана в Бразилии: старинные фасады и черепичные крыши на склоне"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

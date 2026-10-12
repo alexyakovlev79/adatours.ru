@@ -15,7 +15,8 @@ currency: "USD"
 priceNote: "Цена указана на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/punta-arenas-mnogoobrazie-krasot-jetogo-kraja/hero-src-enhanced-20261007.webp"
-  alt: "Пунта Аренас-  многообразие красот этого края"
+  alt: "Разноцветные крыши и городская улица Пунта-Аренаса перед морем, Чили"
+  hover: "Пунта-Аренас в Чили: панорама приморского города под облачным небом"
 gallery:
   - src: "/media/excursions/punta-arenas-mnogoobrazie-krasot-jetogo-kraja/gallery-1-src-enhanced-20261007.webp"
     hover: "Пунта-Аренас в Чили: памятник на высоком постаменте"

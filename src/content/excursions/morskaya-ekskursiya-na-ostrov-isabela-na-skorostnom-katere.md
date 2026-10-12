@@ -18,7 +18,8 @@ currency: "USD"
 priceNote: "Стоимость — $300."
 hero:
   src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/hero-src-enhanced-20261007.webp"
-  alt: "на фото: Галапагосские острова (остров Исабела) в Эквадоре"
+  alt: "Скалистый берег Галапагосских островов за синей морской водой, Эквадор"
+  hover: "Галапагосы в Эквадоре: сухие островные склоны и небольшие скалы у моря"
 gallery:
   - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-0-src-enhanced-20261007.webp"
     alt: "Две голубоногие олуши крупным планом на Галапагосах, Эквадор"

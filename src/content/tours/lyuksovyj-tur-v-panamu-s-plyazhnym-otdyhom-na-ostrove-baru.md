@@ -61,7 +61,8 @@ itinerary:
     Гид рекомендует ресторан на месте.
   images:
   - src: "/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Туман в Панама-сити, Панама - рассвет над заливом
+    alt: "Небоскребы Панама-Сити за лесистыми холмами и низким туманом, Панама"
+    hover: "Панама-Сити: городские башни над туманом между зелеными холмами"
 - day: 2
   title: Озеро Гатун, остров обезьян и крепость Сан-Лоренцо
   places:

@@ -13,7 +13,7 @@ language: []
 priceFrom: 143
 currency: "USD"
 priceNote: "Стоимость — $143 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
-hero: {"src":"/media/excursions/jekskursija-v-park-ispolinov-salto-del-mornito/hero-src-enhanced-20261008.webp","alt":"Экскурсия в Парк Исполинов- Салто дель Морнито"}
+hero: {"src": "/media/excursions/jekskursija-v-park-ispolinov-salto-del-mornito/hero-src-enhanced-20261008.webp", "alt": "Каменная голова с большими глазами и рельефной улыбкой на зеленой территории", "hover": "Резное лицо на каменной скульптуре среди травы и растений"}
 gallery: [{"src":"/media/excursions/jekskursija-v-park-ispolinov-salto-del-mornito/gallery-0-src-enhanced-20261008.webp","alt":"Каменная скульптура с крупным резным лицом среди зелени", hover: "Резная каменная фигура с круглым лицом на фоне деревьев"},{"src":"/media/excursions/jekskursija-v-park-ispolinov-salto-del-mornito/gallery-1-src-enhanced-20261008.webp","alt":"Коллаж с вывеской Akawanka Lodge, верандой и интерьерами", hover: "Akawanka Lodge: коллаж с вывеской, верандой и интерьерами"}]
 route: []
 lead: "Альто-де-лос-Идолос и водопад Мортино: каменные скульптуры древней Колумбии и зеленые пейзажи юга Уилы в одной поездке."

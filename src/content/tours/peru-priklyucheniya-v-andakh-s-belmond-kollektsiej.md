@@ -139,7 +139,8 @@ currency: USD
 priceNote: $4720
 hero:
   src: "/media/tours/peru-priklyucheniya-v-andakh-s-belmond-kollektsiej/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: поезд Belmond Hiram Bingham в Перу до Мачу Пикчу'
+  alt: "Синий поезд Belmond Hiram Bingham проходит по мосту через реку в Перу"
+  hover: "Hiram Bingham в Перу: поезд над каменистым руслом на фоне сухих холмов"
 routeCountries:
 - country_peru
 routeDestinations:

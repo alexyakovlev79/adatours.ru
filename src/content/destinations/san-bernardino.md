@@ -9,7 +9,8 @@ destinationType: city
 summary: Сан-Бернардино в Парагвае, приозерный город среди зеленых холмов.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/san-bernardino-place-generated-20261009-v1.webp
-  alt: Озерный берег Сан-Бернардино среди зеленых холмов
+  alt: "Озерная набережная Сан-Бернардино у зеленых холмов, Парагвай"
+  hover: "Сан-Бернардино в Парагвае: спокойная вода, деревья и невысокие береговые здания"
 gallery: []
 themes:
 - theme_wildlife

@@ -11,7 +11,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/toconao-san-lucas-church-bell-tower/hero-generated-20261011-p125-v1.webp
-  alt: Церковь Сан-Лукас и колокольня Токонао, Чили
+  alt: "Каменная колокольня и церковь Сан-Лукас на площади Токонао, Чили"
+  hover: "Токонао в Чили: светлая башня с колоколами перед сухими горами"
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_chile_toconao_san_lucas_church_bell_tower.md
 updatedAt: '2026-10-11'

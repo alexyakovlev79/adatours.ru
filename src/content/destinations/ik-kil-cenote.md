@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_mexico_senot_ik_kil/hero-generated-20261008.webp
-  alt: Ik Kil cenote near Chichen Itza, Yucatan — Mexico
+  alt: "Купающиеся в сеноте Ик-Киль под зеленью и длинными корнями, Мексика"
+  hover: "Ик-Киль в Мексике: круглый природный водоем под отвесными каменными стенами"
 gallery: []
 relatedDestinations: []
 featuredTours: []

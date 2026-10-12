@@ -216,7 +216,8 @@ currency: USD
 priceNote: $2563
 hero:
   src: /media/tours/tur-v-argentinu-i-braziliyu-ot-lda-do-solntsa/hero-enhanced-20261006.webp
-  alt: 'На фото: ледник Перито Моррено Эль Калафате, Патагония'
+  alt: "Стена голубого льда ледника Перито-Морено перед снежными горными склонами, Аргентина"
+  hover: "Перито-Морено в Аргентине: острые ледяные гребни и глубокие трещины"
 routeCountries:
 - country_argentina
 - country_brazil

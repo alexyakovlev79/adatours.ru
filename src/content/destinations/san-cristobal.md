@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_bolivia_san_kristobal/hero-generated-20261008.webp
-  alt: Церковь Сан-Кристобаля на высокогорной площади
+  alt: "Белая церковь Сан-Кристобаля с двумя башнями на высокогорной площади, Боливия"
+  hover: "Сан-Кристобаль в Боливии: резной церковный вход перед сухими горными склонами"
 gallery: []
 relatedDestinations: []
 featuredTours: []

@@ -30,7 +30,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/amazon-clipper-cruise-traditional-3-days-2-nights/hero-enhanced-20260930.webp
-  alt: "Круиз по Амазонке на теплоходе Amazon Clipper"
+  alt: "Белый речной теплоход Amazon Clipper у лесистого берега Амазонки, Бразилия"
+  hover: "Amazon Clipper на Амазонке: теплоход и его отражение у тропического леса"
 gallery: []
 featured: false
 priority: 0
@@ -69,7 +70,8 @@ itinerary:
       Ночь на борту теплохода.
     images:
       - src: /media/tours/amazon-clipper-cruise-traditional-3-days-2-nights/itinerary/day-02-enhanced-20260930.webp
-        alt: "День 2: путешествие по Амазонии на Amazon Clipper"
+        alt: "Поваленные стволы над темной лесной водой среди густой тропической растительности"
+        hover: "Затопленный лес: древесные стволы и отражения в темной воде"
   - day: 3
     title: "Экологический парк Жанауари и «Встреча вод»"
     places: ["экологический парк Жанауари", "Встреча вод", "Манаус"]

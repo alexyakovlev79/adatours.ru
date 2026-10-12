@@ -425,7 +425,8 @@ itinerary:
     гидом.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x322-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Полосатые склоны Радужной горы Виникунка в Перу
+    alt: "Посетитель с камерой перед разноцветными склонами Радужной горы Виникунка, Перу"
+    hover: "Виникунка в Перу: цветные полосы горных пород и человек на смотровой площадке"
 - excursionRef: excursion_vinicunca_helicopter_flight
   places:
   - Виникунка
@@ -449,7 +450,8 @@ itinerary:
   text: Путешествие на поезде Belmond Andean Explorer из Куско к озеру Титикака. Ночевка в поезде у берегов озера.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x348-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Панорамный салон поезда Belmond Andean Explorer
+    alt: "Мягкие кресла и большие окна панорамного салона Belmond Andean Explorer, Перу"
+    hover: "Belmond Andean Explorer в Перу: светлый салон поезда с креслами и подушками"
 - excursionRef: excursion_belmond_andean_explorer_cusco_titicaca
   places:
   - Куско
@@ -467,7 +469,8 @@ itinerary:
     праздничный заключительный завтрак на борту Belmond Andean Explorer и высадка в Пуно. '
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x379-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Каменная тропа и зеленые склоны острова Такиле
+    alt: "Люди на каменной тропе среди зеленых склонов острова Такиле у озера Титикака, Перу"
+    hover: "Такиле в Перу: каменные ступени, зеленые поля и синяя вода вдали"
 - excursionRef: excursion_titicaca_uros_taquile_full_day
   places:
   - Пуно и о.Титикака
@@ -598,7 +601,8 @@ itinerary:
   text: Сантьяго и холм Сан-Кристобаль. Подробная экскурсионная программа приведена ниже.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x530-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Неоклассический фасад дворца Ла-Монеда в Сантьяго
+    alt: "Светлый фасад дворца Ла-Монеда с чилийским флагом в Сантьяго, Чили"
+    hover: "Сантьяго в Чили: неоклассический дворец Ла-Монеда у городской площади"
 - excursionRef: excursion_santiago_san_cristobal_modern_districts
   places:
   - Сантьяго-де-Чили
@@ -637,7 +641,8 @@ itinerary:
     дня посещение Рано-Кау и Оронго.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x580-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Зеленый кратер вулкана Рано-Кау на острове Пасхи
+    alt: "Зеленый кратер Рано-Кау с водными участками на острове Пасхи, Чили"
+    hover: "Рано-Кау на острове Пасхи: круглый кратер и океан за его краем"
 - excursionRef: excursion_easter_island_orongo_rano_kau
 - day: 23
   title: Южное побережье Рапа-Нуи и Анакена
@@ -822,7 +827,8 @@ itinerary:
   text: В назначенное время — трансфер в аэропорт для вылета.
   images:
   - src: /media/tours/south-america-luxury-33-days/pdf-x832-20261011-v1-enhanced-20261012-next21-v1.webp
-    alt: Каменные фасады и пешеходы в центре Сантьяго
+    alt: "Пара делает селфи на улице перед историческими зданиями с куполами"
+    hover: "Пешеходы у украшенных каменных фасадов и разноцветной дорожной разметки"
 included: []
 notIncluded: []
 notes:

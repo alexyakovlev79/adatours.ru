@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Бонампак в мексиканском Чьяпасе, археологический комплекс майя, известный древними настенными росписями.
 hero:
   src: /media/tours/meksika-fantasticheskaya/bonampak-place-generated-20261009-v1.webp
-  alt: Каменные сооружения Бонампака в лесах Чьяпаса
+  alt: "Низкие каменные террасы и храм Бонампака среди густого леса, Мексика"
+  hover: "Бонампак в Мексике: древние сооружения майя под тропическими деревьями"
 gallery: []
 themes:
 - theme_culture

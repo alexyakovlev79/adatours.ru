@@ -10,7 +10,8 @@ summary: "Национальный парк Гвианская Амазония 
 searchAliases: []
 hero:
   src: /media/countries/french-guiana/featureBands-3-enhanced-20261002.webp
-  alt: "На фото: парк Гвианская Амазония во Французской Гвиане"
+  alt: "Серая цапля с длинным клювом среди густой зеленой растительности"
+  hover: "Цапля крупным планом среди ветвей и тропических листьев"
 gallery: []
 facts: []
 featureBands: []

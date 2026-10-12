@@ -385,7 +385,8 @@ currency: USD
 priceNote: $5290
 hero:
   src: "/media/tours/krasota-venesuely/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: Куягуа и побережье венесуэльского штата Арагуа'
+  alt: "Бирюзовое море у скалистого берега Куягуа с зелеными деревьями, Венесуэла"
+  hover: "Куягуа в Венесуэле: прозрачная вода у каменистого тропического побережья"
 routeCountries:
 - country_venezuela
 routeDestinations:

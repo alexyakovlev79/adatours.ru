@@ -23,7 +23,8 @@ hero:
   alt: "Подсвеченная церковь с двумя башнями и городская площадь ночью, Лима, Перу"
 gallery:
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-1-enhanced-20261001.webp
-    alt: Волшебный круговорот воды в Парке-де-ла-Ресерва
+    alt: "Ряды освещенных фонтанных струй в Парке-де-ла-Ресерва в Лиме, Перу"
+    hover: "Парк-де-ла-Ресерва в Лиме: вечерние фонтаны и посетители среди воды"
   - src: /media/excursions/muzej-larko-staraya-taverna-s-pisko-i-magicheskij-marshrut-vody/gallery-2-enhanced-20261001.webp
     hover: "Лима: пляж и прибрежная дорога под обрывом с городской застройкой"
     alt: "Океанское побережье Лимы с высоким обрывом, дорогой и высотными домами, Перу"

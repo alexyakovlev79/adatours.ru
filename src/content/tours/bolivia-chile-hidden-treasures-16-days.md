@@ -261,8 +261,8 @@ itinerary:
     Размещение: Mandarin Oriental, Club Room, завтрак (BB)'
   images:
   - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-13-20261011-v1-enhanced-20261011-next50-v1.webp
-    alt: Высотные здания Сантьяго на фоне заснеженных Анд
-    hover: Высотные здания Сантьяго на фоне заснеженных Анд
+    alt: "Высокие здания Сантьяго перед заснеженными вершинами Анд, Чили"
+    hover: "Сантьяго в Чили: современные башни и снежная горная стена за городом"
     status: approved
 - excursionRef: excursion_santiago_private_historic_centre_east
   places:
@@ -310,8 +310,8 @@ itinerary:
     Размещение: Singular Patagonia, Singular Room King, завтрак (BB)'
   images:
   - src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-16-20261011-v1-enhanced-20261011-next50-v1.webp
-    alt: Гуанако перед гранитными горами Торрес-дель-Пайне
-    hover: Гуанако перед гранитными горами Торрес-дель-Пайне
+    alt: "Два гуанако на травянистом склоне перед гранитными башнями Торрес-дель-Пайне, Чили"
+    hover: "Торрес-дель-Пайне в Чили: гуанако на фоне высоких скальных вершин"
     status: approved
 - excursionRef: excursion_torres_del_paine_standard_milodon_full_day
   places:
@@ -507,7 +507,8 @@ highlights:
   text: Профессиональные телескопы, гейзеры Эль-Татио и Лунная долина.
   image:
     src: /media/tours/bolivia-chile-hidden-treasures-16-days/highlights/02-atacama-stargazing-enhanced-20261011-v1.webp
-    alt: "Наблюдение звёзд через телескоп в пустыне Атакама"
+    alt: "Двое людей у телескопа под Млечным Путем в пустыне Атакама, Чили"
+    hover: "Атакама в Чили: наблюдение звезд на фоне темного горного горизонта"
 - title: Лед и мрамор Патагонии
   text: Торрес-дель-Пайне, плавание к Сан-Рафаэлю и частная лодка в Мраморных пещерах.
   image:
@@ -518,7 +519,8 @@ highlights:
   text: Дегустация с обедом на VIK, Вальпараисо и Винья-дель-Мар.
   image:
     src: /media/tours/bolivia-chile-hidden-treasures-16-days/highlights/04-vik-vineyard-lunch-enhanced-20261011-v1.webp
-    alt: "Обед с вином на фоне виноградников долины Мильяуэ"
+    alt: "Стол с блюдами и вином перед виноградниками долины Мильяуэ, Чили"
+    hover: "Мильяуэ в Чили: обед на террасе с видом на ряды виноградной лозы и горы"
 included: []
 notIncluded: []
 notes:

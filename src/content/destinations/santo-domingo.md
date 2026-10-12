@@ -10,7 +10,8 @@ summary: "Столица Доминиканской Республики с ко
 searchAliases: []
 hero:
   src: "/media/countries/dominican-republic/featureBands-3-enhanced-20261002.webp"
-  alt: "На фото: город Санто-Доминго в Доминиканской Республике"
+  alt: "Небольшой песчаный мыс с яркими зданиями, причалами и лодками в бирюзовом море"
+  hover: "Прибрежные домики и лодки у светлого тропического мыса, вид сверху"
 gallery: []
 relatedDestinations: []
 featuredTours: []

@@ -9,7 +9,8 @@ destinationType: city
 summary: Чивай в Перу, город в районе каньона Колка с горным окружением и горячими источниками.
 hero:
   src: /media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/chivay-place-generated-20261009-v1.webp
-  alt: Городская улица Чивая на фоне андских склонов
+  alt: "Мощеная улица Чивая с невысокими каменными домами перед андскими склонами, Перу"
+  hover: "Чивай в Перу: тихая улица и черепичные крыши на фоне сухих гор"
 gallery: []
 themes:
 - theme_wildlife

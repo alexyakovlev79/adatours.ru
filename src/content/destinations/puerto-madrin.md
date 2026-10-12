@@ -10,7 +10,8 @@ summary: Пуэрто-Мадрин расположен на северо-вос
 searchAliases: []
 hero:
   src: /media/destinations/puerto-madrin/hero-enhanced-20261002.webp
-  alt: 'На фото: наблюдение за китами в Пуэрто-Мадрин в Аргентине'
+  alt: "Хвост кита поднимается над синей морской водой у Пуэрто-Мадрина, Аргентина"
+  hover: "Пуэрто-Мадрин в Аргентине: темные хвостовые лопасти кита над волнами"
 gallery:
 - src: /media/destinations/puerto-madrin/gallery-1-enhanced-20261002.webp
   hover: "Пуэрто-Мадрин: морской лев у поверхности прозрачной воды"

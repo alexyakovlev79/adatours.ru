@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Исторический город Минас-Жерайса с памятниками бразильского колониального искусства."
 searchAliases: ["kongonyas"]
 themes: ["theme_culture"]
-hero: {"src":"/media/destinations/destination_brazil_kongonyas/hero-generated-20261009-v1.webp","alt":"Мощеная улица и колониальные дома Конгоньяса","status":"approved"}
+hero: {"src": "/media/destinations/destination_brazil_kongonyas/hero-generated-20261009-v1.webp", "alt": "Мощеная улица Конгоньяса с белыми домами перед зелеными холмами, Бразилия", "status": "approved", "hover": "Конгоньяс в Бразилии: колониальные фасады и черепичные крыши на склоне"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

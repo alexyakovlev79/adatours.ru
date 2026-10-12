@@ -117,7 +117,8 @@ itinerary:
     леса Панамы, затем знакомство с природой Гамбоа. Возвращение в отель. Ночь в Гамбоа.
   images:
   - src: /media/tours/panama-city-gamboa-6-days/word-8-20261010-enhanced-20261011-pass2324-v1.webp
-    alt: Желтая птица с черной головой и крыльями на ветке
+    alt: "Желтая птица с черной головой, темными крыльями и длинным хвостом на ветке"
+    hover: "Желто-черная птица крупным планом на зеленом размытом фоне"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_soberania_rainforest_discovery_gamboa

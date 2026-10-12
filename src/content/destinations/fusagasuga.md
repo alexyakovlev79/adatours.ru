@@ -9,7 +9,8 @@ destinationType: city
 summary: Фусагасуга, район к югу от Боготы, где на Hacienda Coloma знакомятся с выращиванием кофе и производством рома.
 hero:
   src: /media/tours/manyashchaya-kolumbiya-kofe-tur/fusagasuga-place-generated-20261009-v1.webp
-  alt: Кофейное хозяйство в окрестностях Фусагасуги
+  alt: "Тропа среди кофейных кустов и цветов у зеленых холмов Фусагасуги, Колумбия"
+  hover: "Фусагасуга в Колумбии: кофейная плантация под тенистыми деревьями"
 gallery: []
 themes:
 - theme_gastronomy_wine

@@ -10,7 +10,8 @@ summary: "Курорт на восточном побережье Доминик
 searchAliases: []
 hero:
   src: "/media/countries/dominican-republic/featureBands-1-enhanced-20261002.webp"
-  alt: "На фото: курорт Пунта-Кана в Доминиканской Республике"
+  alt: "Бирюзовый бассейн и павильоны с соломенными крышами среди пальм Пунта-Каны, Доминикана"
+  hover: "Пунта-Кана в Доминикане: бассейн под высокими пальмами"
 gallery: []
 relatedDestinations: []
 featuredTours: []

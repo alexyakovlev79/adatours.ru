@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Лимонкоча — биологический заповедник эквадорской Амазонии. Озёрный и лесной ландшафт отличает его от высокогорных природных районов страны.
 hero:
   src: /media/destinations/limoncocha-biological-reserve/hero-generated-20261009-root-v1.webp
-  alt: Лагуна и лесные берега заповедника Лимонкоча
+  alt: "Деревянное каноэ у лесного берега лагуны Лимонкоча, Эквадор"
+  hover: "Лимонкоча в Эквадоре: спокойная лагуна отражает лес и облака"
 gallery: []
 themes:
 - theme_wildlife

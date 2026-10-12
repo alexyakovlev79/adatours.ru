@@ -672,7 +672,8 @@ aliases:
 - ekvador-zhivaya-priroda-s-kruizom-na-galapagosakh
 hero:
   src: /media/tours/ekvador-zhivaya-priroda-s-kruizom-na-galapagosakh/hero-src-enhanced-20261010.webp
-  alt: 'На фото: морской котик с Галапагосских островов, Эквадор'
+  alt: "Ушастый тюлень на деревянном настиле у бирюзовой лодки, Галапагосы, Эквадор"
+  hover: "Галапагосы в Эквадоре: тюлень на береговом настиле рядом с лодкой"
 ---
 
 # Живая природа Эквадора и круиз по Галапагосам

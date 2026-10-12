@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Итайпу на границе Парагвая и Бразилии, гидроэлектростанция с большой плотиной на реке Парана.
 hero:
   src: /media/tours/klassicheskij-paragvaj/itaipu-place-generated-20261009-v1.webp
-  alt: Плотина гидроэлектростанции Итайпу на реке Парана
+  alt: "Плотина Итайпу и потоки водосброса на реке Парана с парагвайской стороны"
+  hover: "Итайпу в Парагвае: огромная бетонная плотина и белая вода водосброса"
 gallery: []
 themes:
 - theme_culture

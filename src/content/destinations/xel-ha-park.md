@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_mexico_park_shel_ha/hero-generated-20261008.webp
-  alt: Xel-Ha park near Tulum, Quintana Roo — Mexico
+  alt: "Люди плавают в прозрачной лагуне парка Шель-Ха среди скал и зелени, Мексика"
+  hover: "Шель-Ха в Мексике: бирюзовая вода и купающиеся у лесистых берегов"
 gallery: []
 relatedDestinations: []
 featuredTours: []

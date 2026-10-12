@@ -152,7 +152,8 @@ highlights:
   text: Морская прогулка в районе Ангра-дус-Рейс и Илья-Гранде, затем два дня без обязательной экскурсионной программы.
   image:
     src: /media/tours/luchshee-v-rio-de-zhanejro/highlights/02-ilha-grande-boat-enhanced-20261011-v1.webp
-    alt: "Морская прогулка у лесистого берега Илья-Гранде"
+    alt: "Прогулочное судно у песчаной бухты и лесистого берега Илья-Гранди, Бразилия"
+    hover: "Илья-Гранди в Бразилии: лодка у прозрачной воды и зеленых островных склонов"
 routeDestinations: *id001
 routeCountries:
 - country_brazil

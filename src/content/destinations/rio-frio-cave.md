@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_belize_peschera_rio_frio/hero-generated-20261008.webp
-  alt: Rio Frio Cave in Mountain Pine Ridge — Belize
+  alt: "Река и каменные валуны у большого входа в пещеру Рио-Фрио, Белиз"
+  hover: "Рио-Фрио в Белизе: пещерный свод и лес за освещенным входом"
 gallery: []
 relatedDestinations: []
 featuredTours: []

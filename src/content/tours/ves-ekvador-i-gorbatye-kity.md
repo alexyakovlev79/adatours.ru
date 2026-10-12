@@ -233,7 +233,8 @@ itinerary:
     inclusive.
   images:
   - src: /media/tours/ecuador-galapagos-humpback-whales/hero-generated-20261009-v1.webp
-    alt: Горбатый кит у тихоокеанского побережья Эквадора
+    alt: "Горбатый кит с фонтаном выдоха у тихоокеанского побережья Эквадора"
+    hover: "Эквадор: спина кита над водой и туманная струя выдоха"
 - excursionRef: excursion_ecuador_punta_centinela_whales
   places: []
 - day: 11

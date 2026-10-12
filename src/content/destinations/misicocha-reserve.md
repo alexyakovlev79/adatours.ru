@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Мисикоча — лесной участок, посещаемый в программах La Casa del Suizo. Прогулка здесь показывает растительность и природную среду эквадорской Амазонии.
 hero:
   src: /media/destinations/misicocha-reserve/hero-generated-20261009-root-v1.webp
-  alt: Тропа и крупные тропические деревья леса Мисикоча
+  alt: "Узкая тропа среди крупных деревьев и густой зелени леса Мисикоча, Эквадор"
+  hover: "Мисикоча в Эквадоре: корни тропических деревьев вдоль лесной тропы"
 gallery: []
 themes:
 - theme_wildlife

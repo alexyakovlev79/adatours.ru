@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_laguna_azul_lensojs_maranenses/destination_brazil_laguna_azul_lensojs_maranenses-generated-20261008.webp
-  alt: Лагуна Азул (Ленсойс-Мараньенсес) - Бразилия
+  alt: "Бирюзовая лагуна Азул между светлыми дюнами Ленсойс-Мараньенсес, Бразилия"
+  hover: "Лагуна Азул в Бразилии: прозрачная вода и белые песчаные гребни"
 gallery: []
 relatedDestinations: []
 featuredTours: []

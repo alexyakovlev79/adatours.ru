@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Лагуна Капитан в парагвайском Чако, соленый водоем с мелководьем и водоплавающими птицами.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/laguna-capitan-place-generated-20261009-v1.webp
-  alt: Соленая лагуна Капитан и птицы на мелководье
+  alt: "Фламинго на мелководье соленой лагуны Капитан с сухими светлыми берегами, Парагвай"
+  hover: "Лагуна Капитан в Чако: мелкая вода, соляной берег и далекие фламинго"
 gallery: []
 themes:
 - theme_wildlife

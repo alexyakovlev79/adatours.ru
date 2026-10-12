@@ -257,7 +257,8 @@ currency: USD
 priceNote: "3335 USD на человека, 3*, DBL, 2 участника; групповой тур 2027, внутренние перелёты включены."
 hero:
   src: /media/tours/mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej/hero-enhanced-20261006.webp
-  alt: Бутылка на песке, приключения в Латинской Америке
+  alt: "Стеклянная бутылка с бумагой лежит на песке в золотистом свете"
+  hover: "Бутылка на песчаном берегу и длинная тень при низком солнце"
 routeCountries:
 - country_brazil
 - country_argentina

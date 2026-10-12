@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_bolivia_lunnaya_dolina_la_pas/hero-generated-20261008.webp
-  alt: Светлые эрозионные столбы Лунной долины у Ла-Паса
+  alt: "Светлые эрозионные столбы Лунной долины перед сухими горами у Ла-Паса, Боливия"
+  hover: "Лунная долина в Боливии: острые скальные образования и узкие овраги"
 gallery: []
 relatedDestinations: []
 featuredTours: []

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: "Первая лагерная остановка на треке к Затерянному городу. Кабанья-де-Адан знакомит с пешим путешествием по влажным лесам Сьерра-Невада-де-Санта-Марта."
 hero:
   src: /media/destinations/cabana-de-adan/hero-generated-20261010-last8-v1.webp
-  alt: "Простое открытое укрытие с гамаками на лесистом склоне — реалистичная иллюстрация лагеря на треке к Сьюдад-Пердида"
+  hover: "Кабанья-де-Адан: гамаковый навес у каменистой тропы на лесном склоне"
+  alt: "Открытый деревянный навес с гамаками в лагере Кабанья-де-Адан среди тропической зелени, Колумбия"
 gallery: []
 themes: ["theme_adventure","theme_wildlife"]
 sourceSnapshot: data/source-index/materials/destination_colombia_cabana_de_adan.md

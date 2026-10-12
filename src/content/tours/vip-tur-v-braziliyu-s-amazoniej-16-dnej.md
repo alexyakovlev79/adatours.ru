@@ -164,7 +164,8 @@ itinerary:
     Основная экскурсия запланирована на следующий день. После перелета свободное время.'
   images:
   - src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-8-enhanced-20261006.webp
-    alt: Бар и гостиная Belmond на водопадах Игуасу, колониальный стиль и эксклюзивный сервис
+    hover: "Hotel das Cataratas: светлая гостиная с арочными окнами и мягкими креслами"
+    alt: "Кресла, круглые столики и комнатные растения в гостиной Hotel das Cataratas, Игуасу, Бразилия"
 - day: 7
   title: Бразильская сторона Игуасу
   places:
@@ -235,7 +236,8 @@ itinerary:
       **Стоимость гидросамолета - USD 1500 за всех.** Этот же маршрут можно пролететь на обычном самолете за **USD 800 за всех**.'
   image:
     src: /media/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej/itinerary-day-8-images-1-enhanced-20261006.webp
-    alt: Эко-лодж Mirante do Gavião в Амазонке, роскошные бунгало и наблюдение за дикой природой
+    hover: "Mirante do Gavião: деревянная терраса с креслами среди тропической зелени"
+    alt: "Кровать с белым пологом и открытая терраса лоджа Mirante do Gavião в Амазонии, Бразилия"
 - day: 9
   title: Национальный парк Анавильянас
   places:

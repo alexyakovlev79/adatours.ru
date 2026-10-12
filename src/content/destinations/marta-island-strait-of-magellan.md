@@ -8,7 +8,7 @@ countryId: "country_chile"
 destinationType: "island"
 summary: "Остров Марта в Магеллановом проливе: колонии морских львов и морские птицы. Животных наблюдают с лодки во время прогулки из Пунта-Аренаса."
 searchAliases: ["остров Марта", "ostrov-marta-magellanov-proliv"]
-hero: {"src": "/media/destinations/destination_chile_ostrov_marta_magellanov_proliv/hero-generated-20261010-final-v1.webp", "alt": "Морские львы на скалистом берегу острова Марта в Магеллановом проливе — иллюстрация", "hover": "Остров Марта в Магеллановом проливе: колонии морских львов и морские птицы. Животных наблюдают с лодки во время прогулки из Пунта-Аренаса."}
+hero: {"src": "/media/destinations/destination_chile_ostrov_marta_magellanov_proliv/hero-generated-20261010-final-v1.webp", "alt": "Морские львы на низком скалистом берегу острова Марта в Магеллановом проливе, Чили", "hover": "Остров Марта: морские львы отдыхают на камнях у прибоя"}
 gallery: []
 themes: ["theme_wildlife"]
 relatedDestinations: []

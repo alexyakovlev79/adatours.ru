@@ -8,7 +8,7 @@ countryId: "country_brazil"
 destinationType: "resort"
 summary: "Транкозу в Баии сочетает пляжи Атлантики с зеленой площадью Квадрадо, цветными домами и белой церковью над морем."
 searchAliases: ["Trancoso"]
-hero: {"src": "/media/destinations/destination_brazil_trancoso/hero-generated-20261010-editorial-v1.webp", "alt": "Площадь Квадрадо с цветными домами и белой церковью в Транкозу — иллюстрация"}
+hero: {"src": "/media/destinations/destination_brazil_trancoso/hero-generated-20261010-editorial-v1.webp", "alt": "Зеленая площадь Квадрадо с цветными домами и белой церковью в Транкозу, Бразилия", hover: "Транкозу: белая церковь в конце травянистой площади между низкими домами"}
 gallery: []
 themes: ["theme_beach", "theme_culture", "theme_gastronomy_wine"]
 relatedDestinations: []

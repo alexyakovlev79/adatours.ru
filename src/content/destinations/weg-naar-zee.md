@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: "Илистые отмели Атлантики, мангры и алые ибисы у Парамарибо. Вег-нар-Зе показывает Суринам со стороны его живого приливного побережья."
 hero:
   src: /media/destinations/weg-naar-zee/hero-generated-20261010-last8-v1.webp
-  alt: "Алые ибисы на илистой отмели у мангрового побережья — реалистичная иллюстрация Вег-нар-Зе"
+  hover: "Вег-нар-Зе: красные ибисы кормятся у мелких водных проток"
+  alt: "Алые ибисы на илистой отмели у мангрового побережья Вег-нар-Зе, Суринам"
 gallery: []
 themes: ["theme_wildlife"]
 sourceSnapshot: data/source-index/materials/destination_suriname_weg_naar_zee.md

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: "Ранний выход к лесным опушкам в окрестностях Парамарибо. Нордвейквег входит в орнитологический маршрут с поисками ярких тропических птиц."
 hero:
   src: /media/destinations/noordwijkweg/hero-generated-20261010-last8-v1.webp
-  alt: "Наблюдение за птицами у влажной лесной опушки — реалистичная иллюстрация района Нордвейквег в Суринаме"
+  hover: "Нордвейквег: наблюдение с биноклями у лесной опушки на рассвете"
+  alt: "Двое наблюдателей за птицами на тропе у влажного леса Нордвейквега, Суринам"
 gallery: []
 themes: ["theme_wildlife"]
 sourceSnapshot: data/source-index/materials/destination_suriname_noordwijkweg.md

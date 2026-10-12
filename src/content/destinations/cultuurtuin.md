@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: "Тенистые тропы и зрелые тропические деревья в Парамарибо. Култюртуин дает возможность наблюдать лесных птиц рядом с городом."
 hero:
   src: /media/destinations/cultuurtuin/hero-generated-20261010-last8-v1.webp
-  alt: "Тенистая тропа среди зрелых тропических деревьев — реалистичная иллюстрация садового леса Култюртуин"
+  hover: "Култюртуин: лесная дорожка у деревьев с широкими корнями"
+  alt: "Тенистая тропа среди крупных деревьев и густой зелени сада Култюртуин, Суринам"
 gallery: []
 themes: ["theme_wildlife"]
 sourceSnapshot: data/source-index/materials/destination_suriname_cultuurtuin.md

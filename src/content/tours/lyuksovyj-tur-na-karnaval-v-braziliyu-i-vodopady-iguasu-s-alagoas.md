@@ -62,7 +62,8 @@ itinerary:
     Он включает встречу у борта, приоритетный досмотр, помощь с регистрацией и багажом, электрическую тележку и услуги носильщика.'
   images:
   - src: /media/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu-s-alagoas/itinerary-day-1-enhanced-20261006.webp
-    alt: Лучшие отели Бразилии, люксовый Belmond Copacabana Palace в Рио-де-Жанейро
+    hover: "Copacabana Palace: ряды окон и белые балконы исторического отеля"
+    alt: "Белый фасад отеля Copacabana Palace перед зеленым холмом в Рио-де-Жанейро, Бразилия"
 - day: 2
   title: Корковадо, исторический центр и Карнавальный бал
   places:
@@ -112,7 +113,8 @@ itinerary:
     Программа сочетает музыку, танцы, высокую кухню и сервис отеля.'
   images:
   - src: /media/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu-s-alagoas/itinerary-day-2-enhanced-20261006.webp
-    alt: Статуя Христа в Рио и панорама залива Гуанабара, вид с горы Корковаду на город и океан
+    hover: "Рио-де-Жанейро: Корковадо и статуя перед морской панорамой"
+    alt: "Статуя Христа-Искупителя на зеленой вершине над бухтами Рио-де-Жанейро, Бразилия"
 - day: 3
   title: Свободное утро, вертолет над Рио и Самбадром
   places:

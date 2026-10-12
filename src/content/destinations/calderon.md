@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "city"
 summary: "Кальдерон на севере Кито известен фигурками из теста: местные мастера превращают простую основу в яркие миниатюры."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_calderon/hero-generated-20261010-next-ten-v1.webp", "alt": "Мастер расписывает традиционную фигурку из теста в Кальдероне — иллюстрация"}
+hero: {"src": "/media/destinations/destination_ecuador_calderon/hero-generated-20261010-next-ten-v1.webp", "alt": "Мастер расписывает маленькую фигурку среди цветных сувениров в Кальдероне, Эквадор", hover: "Кальдерон: роспись фигурки за столом с кистями и готовыми миниатюрами"}
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

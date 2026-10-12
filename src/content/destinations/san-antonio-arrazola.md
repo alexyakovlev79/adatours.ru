@@ -8,7 +8,7 @@ countryId: "country_mexico"
 destinationType: "city"
 summary: "Сан-Антонио-Арразола у подножия Монте-Альбана знакомит с алебрихе: фантастическими животными, которых местные мастера вырезают из дерева и расписывают вручную."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_mexico_san_antonio_arrazola/hero-generated-20261010-twenty-v1.webp", "alt": "Мастер расписывает деревянного алебрихе в мастерской Арразолы — иллюстрация", "hover": "Сан-Антонио-Арразола у подножия Монте-Альбана знакомит с алебрихе: фантастическими животными, которых местные мастера вырезают из дерева и расписывают вручную."}
+hero: {"src": "/media/destinations/destination_mexico_san_antonio_arrazola/hero-generated-20261010-twenty-v1.webp", "alt": "Мастер расписывает деревянного алебрихе в Сан-Антонио-Арразоле, Мексика", "hover": "Арразола: яркая фигурка животного у красок и резных заготовок"}
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

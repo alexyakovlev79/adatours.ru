@@ -1,0 +1,100 @@
+---
+import { getTourFilterIndex } from '../../lib/tour-filter-catalog';
+import { tourFilterOptions } from '../../lib/tour-filters.mjs';
+import { countLabel } from '../../lib/interest-model.mjs';
+import { withBase } from '../../lib/paths';
+
+interface Props { countryId?: string; themeId?: string; vip?: boolean; countryOverview?: boolean; }
+const { countryId, themeId, vip = false, countryOverview = false } = Astro.props;
+const index = await getTourFilterIndex();
+const options = tourFilterOptions(index.regular, index.vip, { countryId, themeId, vip, countryOverview });
+const menus = [
+  { label: 'Страна', placeholder: 'Выбрать страну', selected: countryId,
+    options: options.countries, reset: 'Все страны', resetHref: options.allCountriesHref },
+  { label: 'Интерес', placeholder: 'Выбрать интерес', selected: themeId,
+    options: options.themes, reset: 'Все интересы', resetHref: options.allThemesHref },
+];
+---
+
+<nav class="tour-filters container" aria-label={vip ? 'Подбор VIP-туров' : 'Подбор туров'} data-tour-filters>
+  {menus.map((menu) => (
+    <div class="tour-filters__field">
+      <span class="tour-filters__label">{menu.label}</span>
+      <details class="tour-filters__menu">
+        <summary>
+          <span>{menu.options.find((option) => option.id === menu.selected)?.label ?? menu.placeholder}</span>
+          <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
+        </summary>
+        <ul aria-label={menu.label}>
+          {menu.resetHref && <li><a href={withBase(menu.resetHref)} aria-current={!menu.selected ? 'page' : undefined}>{menu.reset}</a></li>}
+          {menu.options.map((option) => (
+            <li><a href={withBase(option.href)} aria-current={option.id === menu.selected ? 'page' : undefined}>
+              <span>{option.label}</span><small>{countLabel(option.count)}</small>
+            </a></li>
+          ))}
+        </ul>
+      </details>
+    </div>
+  ))}
+  <div class="tour-filters__vip-field">
+    <label class:list={['tour-filters__vip', { 'tour-filters__vip--unavailable': !options.toggleHref }]}>
+      <input type="checkbox" checked={vip} disabled={!options.toggleHref} data-tour-vip-toggle
+        data-href={options.toggleHref ? withBase(options.toggleHref) : undefined}
+        aria-describedby={!options.toggleHref ? 'tour-filter-vip-note' : undefined} />
+      <span>VIP</span>
+    </label>
+    {!options.toggleHref && <small id="tour-filter-vip-note" class="tour-filters__note">Для этой подборки пока нет VIP-туров.</small>}
+    {options.toggleHref && <noscript><a class="tour-filters__fallback" href={withBase(options.toggleHref)}>{vip ? 'Все туры этой подборки' : 'VIP-туры этой подборки'}</a></noscript>}
+  </div>
+</nav>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-tour-filters]').forEach((root) => {
+    const menus = [...root.querySelectorAll<HTMLDetailsElement>('details')];
+    menus.forEach((menu) => {
+      menu.addEventListener('toggle', () => {
+        if (menu.open) menus.forEach((other) => { if (other !== menu) other.open = false; });
+      });
+      menu.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          menu.open = false;
+          menu.querySelector('summary')?.focus();
+        }
+      });
+    });
+    document.addEventListener('click', (event) => {
+      if (event.target instanceof Node && !root.contains(event.target)) menus.forEach((menu) => { menu.open = false; });
+    });
+    const toggle = root.querySelector<HTMLInputElement>('[data-tour-vip-toggle]');
+    toggle?.addEventListener('change', () => {
+      if (toggle.dataset.href) window.location.assign(toggle.dataset.href);
+    });
+    window.addEventListener('pageshow', () => { if (toggle) toggle.checked = toggle.defaultChecked; });
+  });
+</script>
+
+<style>
+  .tour-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)) minmax(90px, auto); gap: 20px; align-items: start; padding-block: clamp(24px, 4vw, 40px); }
+  .tour-filters__field { min-width: 0; }
+  .tour-filters__label { display: block; margin-bottom: 10px; font-size: .78rem; line-height: 1.5; letter-spacing: .12em; text-transform: uppercase; }
+  .tour-filters__menu { position: relative; }
+  summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; padding: 14px 18px; border: 1px solid var(--color-line); border-radius: 4px; background: var(--color-surface); color: var(--color-ink); cursor: pointer; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  summary svg { flex-shrink: 0; transition: transform .18s ease; }
+  details[open] summary { border-color: var(--color-gold-deep); }
+  details[open] summary svg { transform: rotate(180deg); }
+  summary:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
+  ul { position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 30; max-height: min(360px, 55vh); overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 6px; list-style: none; background: var(--color-surface); border: 1px solid var(--color-line); border-radius: 4px; box-shadow: 0 12px 32px rgb(0 0 0 / .12); }
+  ul a { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; min-height: 44px; padding: 12px; color: var(--color-ink); text-decoration: none; line-height: 1.35; }
+  ul a:hover, ul a[aria-current="page"] { background: var(--color-gold-soft); }
+  small { color: color-mix(in srgb, var(--color-ink) 65%, transparent); }
+  ul small { flex-shrink: 0; }
+  .tour-filters__vip-field { padding-top: calc(.78rem * 1.5 + 10px); }
+  .tour-filters__vip { display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 14px 18px; border: 1px solid var(--color-line); border-radius: 4px; background: var(--color-surface); cursor: pointer; }
+  .tour-filters__vip input { width: 20px; height: 20px; margin: 0; accent-color: var(--color-gold-deep); cursor: inherit; }
+  .tour-filters__vip--unavailable { cursor: default; }
+  .tour-filters__note { display: block; max-width: 190px; margin-top: 8px; line-height: 1.4; }
+  .tour-filters__fallback { display: inline-block; margin-top: 8px; color: var(--color-ink); text-underline-offset: .2em; }
+  @media (max-width: 600px) { .tour-filters { grid-template-columns: 1fr; gap: 16px; } .tour-filters__vip-field { padding-top: 0; } .tour-filters__note { max-width: none; } }
+</style>

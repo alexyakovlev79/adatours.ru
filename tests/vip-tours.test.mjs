@@ -6,6 +6,8 @@ import { buildVipCountryIndex, vipCountryTitle } from '../src/lib/vip-countries.
 import { SEO_CASES } from '../src/lib/seo-grammar.mjs';
 import { buildVipFilterIndex, vipFilterOptions } from '../src/lib/vip-filters.mjs';
 import { paginateCatalog } from '../src/lib/catalog-pagination.ts';
+import { buildTourFilterIndex, tourFilterOptions } from '../src/lib/tour-filters.mjs';
+import { buildInterestHub } from '../src/lib/interest-model.mjs';
 
 const filterCountries = [
   { id: 'country_brazil', slug: 'brazil', name: 'Бразилия', locale: 'ru' },
@@ -20,6 +22,69 @@ const filterThemes = [
 const filterTour = (id, countries, primaryThemes, themes = [], extras = {}) => ({ data: {
   id, title: `VIP ${id}`, durationDays: 13, locale: 'ru', countries, primaryThemes, themes, ...extras,
 } });
+
+test('ordinary filter counts and entries match the existing thematic catalogues, including optional countries', () => {
+  const tours = [
+    filterTour('nature', ['country_brazil', 'country_peru'], ['theme_wildlife'], ['theme_culture'], { routeCountries: ['country_brazil'] }),
+    filterTour('culture', ['country_chile'], ['theme_culture']),
+    filterTour('draft', ['country_peru'], ['theme_spa'], [], { status: 'draft' }),
+    filterTour('archived', ['country_peru'], ['theme_spa'], [], { status: 'archived' }),
+    filterTour('foreign', ['country_peru'], ['theme_spa'], [], { locale: 'en' }),
+  ];
+  const regular = buildTourFilterIndex([...tours, tours[0]], filterCountries, filterThemes);
+  for (const theme of filterThemes) {
+    const hub = buildInterestHub(theme.id, { tours, countries: filterCountries, themes: filterThemes });
+    for (const country of hub.allCountries) {
+      const actual = regular.find((row) => row.themeId === theme.id && row.countryId === country.entry.id);
+      assert.deepEqual(actual.entries, country.tours);
+      assert.equal(actual.count, country.tourCount);
+    }
+  }
+  assert.ok(regular.some((row) => row.href === '/interests/wildlife/tours/peru/'));
+  assert.ok(!regular.some((row) => row.href === '/peru/tour/'));
+  assert.equal(regular.find((row) => row.href === '/tours/').count, 2);
+  assert.ok(regular.every((row) => row.count > 0 && row.themeId !== 'theme_spa'));
+});
+
+test('VIP checkbox switches both ways with the same country and interest, never to an empty or fallback route', () => {
+  const tours = [
+    filterTour('nature', ['country_brazil', 'country_peru'], ['theme_wildlife'], [], { routeCountries: ['country_brazil'] }),
+    filterTour('culture', ['country_chile'], ['theme_culture']),
+    filterTour('ordinary', ['country_peru'], ['theme_spa'], [], { title: 'Обычный тур' }),
+  ];
+  const regular = buildTourFilterIndex(tours, filterCountries, filterThemes);
+  const vip = buildVipFilterIndex(tours, filterCountries, filterThemes);
+  const selected = { countryId: 'country_brazil', themeId: 'theme_wildlife' };
+  assert.equal(tourFilterOptions(regular, vip, selected).toggleHref, '/vip/brazil/interests/wildlife/');
+  assert.equal(tourFilterOptions(regular, vip, { ...selected, vip: true }).toggleHref, '/interests/wildlife/tours/brazil/');
+  assert.equal(tourFilterOptions(regular, vip, { countryId: 'country_brazil' }).toggleHref, '/vip/brazil/');
+  assert.equal(tourFilterOptions(regular, vip, { themeId: 'theme_wildlife' }).toggleHref, '/vip/interests/wildlife/');
+  assert.equal(tourFilterOptions(regular, vip).toggleHref, '/vip/');
+  assert.equal(tourFilterOptions(regular, vip, { countryId: 'country_peru', themeId: 'theme_wildlife' }).toggleHref, undefined);
+  assert.equal(tourFilterOptions(regular, vip, { countryId: 'country_peru', themeId: 'theme_spa' }).toggleHref, undefined);
+  for (const row of vip) {
+    const options = tourFilterOptions(regular, vip, { countryId: row.countryId, themeId: row.themeId, vip: true });
+    assert.equal(options.toggleHref, regular.find((item) => item.countryId === row.countryId && item.themeId === row.themeId).href);
+    assert.ok([...options.countries, ...options.themes].every((item) => item.href.startsWith('/vip/') && !item.href.includes('#') && !item.href.includes('?')));
+  }
+});
+
+test('country overview menus keep country selection on country pages and interest selection in matching static catalogues', () => {
+  const tours = [
+    filterTour('brazil', ['country_brazil'], ['theme_wildlife'], ['theme_culture']),
+    filterTour('chile', ['country_chile'], ['theme_wildlife']),
+  ];
+  const regular = buildTourFilterIndex(tours, filterCountries, filterThemes);
+  const vip = buildVipFilterIndex(tours, filterCountries, filterThemes);
+  const overview = tourFilterOptions(regular, vip, { countryId: 'country_brazil', countryOverview: true });
+  assert.equal(overview.countries.find((row) => row.id === 'country_chile').href, '/chile/');
+  assert.equal(overview.themes.find((row) => row.id === 'theme_wildlife').href, '/interests/wildlife/tours/brazil/');
+  assert.equal(overview.toggleHref, '/vip/brazil/');
+  const both = tourFilterOptions(regular, vip, { countryId: 'country_brazil', themeId: 'theme_wildlife' });
+  assert.equal(both.countries.find((row) => row.id === 'country_chile').href, '/interests/wildlife/tours/chile/');
+  assert.equal(both.allCountriesHref, '/interests/wildlife/tours/');
+  assert.equal(both.allThemesHref, '/brazil/tour/');
+});
 
 test('VIP facets intersect main geography with primary and secondary interests without reselecting VIP', () => {
   const brazil = filterTour('brazil', ['country_brazil', 'country_peru'], ['theme_wildlife'], ['theme_culture'], { routeCountries: ['country_brazil'] });

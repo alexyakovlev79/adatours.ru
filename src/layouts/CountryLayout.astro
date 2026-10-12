@@ -8,6 +8,7 @@ import Hero from '../components/editorial/Hero.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
+import TourFilters from '../components/catalog/TourFilters.astro';
 import { withBase } from '../lib/paths';
 import {
   countryBreadcrumbs, countryPath, destinationCountryPath, destinationPath,
@@ -231,6 +232,7 @@ const featureBandImageTextAlign = (href: string) => {
         </div>
       </div>
 
+      <TourFilters countryId={d.id} countryOverview />
       <div class="country-tours__bands">
         {tourEntries.slice(0, previewLimits.tours).map((item, index) => (
           <DestinationBand

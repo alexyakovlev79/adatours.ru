@@ -22,12 +22,8 @@ export async function getStaticPaths() {
     const d = theme.data, hub = buildInterestHub(d.id, { themes, tours, countries, destinations, excursions });
     const root = interestTourCatalogPath(d);
     const breadcrumbs = [{ label: 'По интересам', href: '/interests/' }, { label: d.name, href: themePath(d) }, { label: 'Все туры', href: root }];
-    const countryLinks = hub.allCountries.map((row) => ({
-      label: `${row.entry.data.name}${row.mainCount ? '' : ' (дополнительное посещение)'}`,
-      href: interestTourCatalogPath(d, row.entry.data),
-    }));
     add(hub.allTours, root, { kind: 'tour', title: seoThemeCatalogTitle(d.name,hub.allTours.length), h1Title: d.name, description: interestCatalogDescription(d.id, hub.allTours.length), breadcrumbs, hero: d.hero?.src, leadEntityId: d.id, leadTitle: `Собрать поездку: ${d.name}`,
-      navigationLabel: 'Страны путешествия', navigationLinks: [{ label: d.name, href: themePath(d) }, ...countryLinks] });
+      themeContextId: d.id, navigationLabel: 'Интерес поездки', navigationLinks: [{ label: d.name, href: themePath(d) }] });
     const sections = [
       { kind: 'destination', label: 'Все места', root: interestDestinationCatalogPath(d), entries: hub.allExperiences.filter((row) => row.kind === 'destination').map((row) => row.entry) },
       { kind: 'excursion', label: 'Все экскурсии', root: interestExcursionCatalogPath(d), entries: hub.allExperiences.filter((row) => row.kind === 'excursion').map((row) => row.entry) },
@@ -46,7 +42,7 @@ export async function getStaticPaths() {
     for (const row of hub.allCountries) {
       const country = row.entry.data, countryRoot = interestTourCatalogPath(d, country);
       add(row.tours, countryRoot, { kind: 'tour', title: seoThemeCatalogTitle(d.name,row.tourCount,country.name), h1Title: `${d.name}: ${country.name}`, description: interestCatalogDescription(d.id, row.tourCount, country.name),
-        breadcrumbs: [...breadcrumbs, { label: country.name, href: countryRoot }], hero: d.hero?.src, countryContextId: country.id, leadEntityId: d.id, leadTitle: `Собрать поездку: ${country.name}`,
+        breadcrumbs: [...breadcrumbs, { label: country.name, href: countryRoot }], hero: d.hero?.src, countryContextId: country.id, themeContextId: d.id, leadEntityId: d.id, leadTitle: `Собрать поездку: ${country.name}`,
         navigationLabel: 'Страна и интерес', navigationLinks: [
           { label: `О стране: ${country.name}`, href: countryPath(country) },
           { label: d.name, href: themePath(d) },

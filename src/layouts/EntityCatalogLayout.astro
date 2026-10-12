@@ -8,7 +8,7 @@ import InlineMarkdown from '../components/global/InlineMarkdown.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../components/catalog/CatalogPagination.astro';
-import VipFilters from '../components/catalog/VipFilters.astro';
+import TourFilters from '../components/catalog/TourFilters.astro';
 import { countryRoute, destinationPath, excursionPath, mainTourCountries, tourPath, themePath, type BreadcrumbItem } from '../lib/routes';
 import { withBase } from '../lib/paths';
 import { vipTourPriceLabel } from '../lib/vip-tours.mjs';
@@ -45,6 +45,9 @@ interface Props {
 const { leadTitle, leadEntityId, kind, entries, title, h1Title = title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, themeContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
 const introBelowHero = kind === 'tour' && /^\/interests\/[^/]+\/tours\/[^/]+\/$/.test(p.rootPath);
 const isVipCatalog = variant === 'vip-tours' || variant === 'vip-country-tours';
+const showTourFilters = kind === 'tour' && (isVipCatalog || variant === 'global-tours'
+  || /^\/[a-z0-9-]+\/tour\/$/.test(p.rootPath)
+  || /^\/interests\/[^/]+\/tours\/(?:[^/]+\/)?$/.test(p.rootPath));
 const eyebrow = isVipCatalog ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : kind === 'theme' ? 'По интересам' : 'Направления';
 const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
 const multiCountryPageCountries = variant === 'multi-country-tours'
@@ -153,7 +156,7 @@ const listSchema = {
       <p><InlineMarkdown text={presentation.intro} /></p>
     </div>
   )}
-  {isVipCatalog && <VipFilters countryId={countryContextId} themeId={themeContextId} />}
+  {showTourFilters && <TourFilters countryId={countryContextId} themeId={themeContextId} vip={isVipCatalog} />}
   {navigationLinks.length > 0 && (
     <nav class="catalog-navigation container" aria-label={navigationLabel ?? 'Связанные разделы'}>
       <ul>

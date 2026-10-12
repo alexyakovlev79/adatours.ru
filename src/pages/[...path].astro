@@ -35,6 +35,7 @@ type CatalogInput = {
   entries: Array<CollectionEntry<'tours'> | CollectionEntry<'excursions'> | CollectionEntry<'destinations'>>;
   canonical: string; title: string; description: string; breadcrumbs: BreadcrumbItem[]; hero?: string;
   leadTitle?: string; leadEntityId?: string;
+  countryContextId?: string;
   variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours';
 };
 type CatalogProps = CatalogInput & { pagination: CatalogPagination; catalogVersion: string };
@@ -200,6 +201,7 @@ export async function getStaticPaths() {
       add(canonical, {
         mode: 'catalog', kind: 'tour', entries: selectedTours, canonical,
         title: seoCountryTourCatalogTitle(country.id),
+        countryContextId: country.id,
         description: `Маршруты Ada Tours, в которые входит ${country.name}.`,
         breadcrumbs: [{ label: 'Туры', href: '/tours/' }, { label: country.name, href: canonical }],
         hero: heroForCountry(country.id) ?? '/media/catalog/tury/hero-enhanced-20260930.webp',
@@ -292,3 +294,4 @@ const Content = props.mode === 'detail' ? (await render(props.entry)).Content : 
 ) : Content && props.kind === 'excursion' ? (
   <ExcursionLayout entry={props.entry}><Content /></ExcursionLayout>
 ) : null}
+

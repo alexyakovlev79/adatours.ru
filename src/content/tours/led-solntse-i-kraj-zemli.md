@@ -320,7 +320,7 @@ primaryThemes:
 - theme_wildlife
 - theme_culture
 themes: []
-format: Частный тур
+format: Частный
 gallery: []
 ---
 

@@ -14,7 +14,8 @@ relatedDestinations:
 language: []
 hero:
   src: /media/tours/brazil-adventure-17d/highlights/07-abismo-anhumas-enhanced-20260930.webp
-  alt: Подземное озеро в пещере Аньюмас
+  hover: "Аньюмас: лучи света над подземным озером"
+  alt: "Солнечные лучи из отверстия в своде над голубым подземным озером и сталактитами пещеры Аньюмас"
 gallery: []
 route:
   - Бонито

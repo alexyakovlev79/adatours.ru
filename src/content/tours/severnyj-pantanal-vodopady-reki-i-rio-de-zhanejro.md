@@ -161,7 +161,8 @@ currency: USD
 priceNote: $5996
 hero:
   src: /media/tours/south-brazil-12d/itinerary/day-08-enhanced-20260930.webp
-  alt: 'На фото: Водопады Фос Ду Игуасу'
+  hover: "Одинокий водопад среди леса и отвесных скал"
+  alt: "Высокий водопад у лесистого скального уступа, падающий в зеленое ущелье, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

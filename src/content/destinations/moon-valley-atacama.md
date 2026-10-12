@@ -16,7 +16,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_chile_lunnaya_dolina_atakama/destination_chile_lunnaya_dolina_atakama-generated-20261008.webp
-  alt: Лунная долина (Атакама) - Чили
+  hover: "Лунная долина: дюна и пустынные гряды Атакамы"
+  alt: "Оранжевая песчаная дюна и острые сухие гряды Лунной долины в пустыне Атакама, Чили"
 gallery: []
 relatedDestinations: []
 featuredTours: []

@@ -604,7 +604,8 @@ currency: USD
 priceNote: $22500
 hero:
   src: /media/tours/chili-i-argentina-vip/hero-enhanced-20261006.webp
-  alt: Чили  и Аргентина ВИП
+  hover: "Торрес-дель-Пайне: горные пики и бирюзовое озеро на закате"
+  alt: "Скалистые вершины Торрес-дель-Пайне над бирюзовым озером под розовыми облаками, Чили"
 routeCountries:
 - country_chile
 - country_argentina

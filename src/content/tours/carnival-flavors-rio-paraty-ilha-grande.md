@@ -149,7 +149,8 @@ itinerary:
     на пляже Раншос оплачиваются отдельно. Ночевка в Парати.
   images:
   - src: /media/tours/tur-v-braziliyu-za-vkusami/itinerary-day-7-enhanced-20261006.webp
-    alt: 'На фото: город Парати. Бразилия'
+    hover: "Парати: отражения на мостовой среди колониальных домов"
+    alt: "Мокрая мощеная улица Парати с лужами и белыми домами с цветными дверями, Бразилия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_paraty_trindade_beaches_pool

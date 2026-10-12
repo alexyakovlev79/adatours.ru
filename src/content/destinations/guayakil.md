@@ -10,13 +10,15 @@ summary: "Гуаякиль: колониальная архитектура, б�
 searchAliases: []
 hero:
   src: "/media/destinations/guayakil/hero-enhanced-20261006.webp"
-  alt: "На фото: город Гуаякиль в Зквадоре"
+  hover: "Скульптура в освещенном архитектурном интерьере Гуаякиля"
+  alt: "Бронзовая фигура в богато украшенном интерьере с теплой золотистой подсветкой, Гуаякиль, Эквадор"
 gallery:
   - src: "/media/destinations/guayakil/gallery-1-enhanced-20261006.webp"
     alt: "Игуана с гребнем на спине в Гуаякиле, Эквадор"
     hover: "Гуаякиль: крупная игуана на траве"
   - src: "/media/destinations/guayakil/gallery-2-enhanced-20261006.webp"
-    alt: "На фото: город Гуаякиль в Зквадоре"
+    hover: "Гуаякиль: ночной мост с синей подсветкой"
+    alt: "Вантовый мост с синей подсветкой и отражениями в воде ночью, Гуаякиль, Эквадор"
   - src: "/media/destinations/guayakil/gallery-3-enhanced-20261006.webp"
     alt: "На фото: город Гуаякиль в Зквадоре"
   - src: "/media/destinations/guayakil/gallery-4-enhanced-20261006.webp"

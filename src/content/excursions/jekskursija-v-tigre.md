@@ -16,12 +16,15 @@ priceFrom: 100
 currency: USD
 hero:
   src: /media/excursions/jekskursija-v-tigre/hero-enhanced-20261001.webp
-  alt: Экскурсия по Тигре, Аргентина
+  hover: "Тигре: здание с башней в окружении пальм"
+  alt: "Здание с башней и декоративным фахверком за пальмами и газонами в Тигре, Аргентина"
 gallery:
   - src: /media/excursions/jekskursija-v-tigre/gallery-1-enhanced-20261001.webp
-    alt: Буэнос-Айрес, Аргентина
+    hover: "Каса-Росада в Буэнос-Айресе под голубым небом"
+    alt: "Розовый фасад Каса-Росада с аргентинским флагом и газоном перед зданием, Буэнос-Айрес"
   - src: /media/excursions/jekskursija-v-tigre/gallery-2-enhanced-20261001.webp
-    alt: Прогулка по дельте Рио-де-ла-Плата
+    hover: "Речная прогулка среди лодок и лесистых берегов"
+    alt: "Прогулочные суда на реке у зеленых берегов и лодочных причалов, Аргентина"
   - src: /media/excursions/jekskursija-v-tigre/gallery-3-enhanced-20261001.webp
     alt: Клуб морских гонок в Тигре
   - src: /media/excursions/jekskursija-v-tigre/gallery-4-enhanced-20261001.webp

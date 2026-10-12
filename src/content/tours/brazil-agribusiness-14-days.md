@@ -173,7 +173,8 @@ itinerary:
     Урке; еду и напитки в ресторане или баре выбирают на месте.
   images:
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-5-enhanced-20261001.webp
-    alt: Вид с Сахарной Головы на Рио
+    hover: "Панорама Рио со смотровой площадки Сахарной Головы"
+    alt: "Женщина в коричневой шляпе смотрит с Сахарной Головы на Рио-де-Жанейро, залив и горы, Бразилия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_rio_sugarloaf_city_four_hours

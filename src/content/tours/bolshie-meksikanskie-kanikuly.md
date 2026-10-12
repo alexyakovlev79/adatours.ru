@@ -184,7 +184,8 @@ currency: USD
 priceNote: $2093
 hero:
   src: /media/tours/bolshie-meksikanskie-kanikuly/hero-enhanced-20261006.webp
-  alt: Большие Мексиканские Каникулы
+  hover: "Канкун: бассейны у белого пляжа и бирюзового моря"
+  alt: "Вид сверху на бассейны отеля, широкий песчаный пляж и морской прибой в Канкуне, Мексика"
 routeCountries:
 - country_mexico
 routeDestinations:

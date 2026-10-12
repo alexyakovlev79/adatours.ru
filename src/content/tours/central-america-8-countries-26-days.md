@@ -439,7 +439,8 @@ itinerary:
     небольшая обзорная прогулка и свободное время. Ночь в Эстели.
   images:
   - src: /media/destinations/esteli/gallery-1-enhanced-20261005.webp
-    alt: 'На фото: город Эстели в Никарагуа'
+    hover: "Эстели: прогулочная дорожка и беседка среди пальм"
+    alt: "Парк Эстели с пальмами, зеленой беседкой, прохожими и велотакси, Никарагуа"
 - excursionRef: excursion_esteli_cigar_factory_murals
   places:
   - Леон

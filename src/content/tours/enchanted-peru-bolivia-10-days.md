@@ -144,7 +144,8 @@ itinerary:
     классе входят в стоимость. Ночь в Куско, в варианте 4★ указан Xima Hotel Cusco.
   images:
   - src: /media/tours/manyashchij-peru-kolumbiya/aguas-calientes-place-generated-20261009-v1.webp
-    alt: Агуас-Кальентес в горной долине
+    hover: "Агуас-Кальентес: речная набережная в горной долине"
+    alt: "Бурная каменистая река между домами Агуас-Кальентес под крутыми зелеными склонами, Перу"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_source_ekskursiya_v_zateryannyj_gorod_machu_pikchu

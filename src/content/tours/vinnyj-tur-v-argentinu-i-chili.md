@@ -134,7 +134,8 @@ itinerary:
       **Расписание:** примерно с 20:00 до 23:45.
     images:
       - src: /media/tours/vinnyj-tur-v-argentinu-i-chili/itinerary-day-2-enhanced-20261006.webp
-        alt: "Аргентинская пампа и ранчо гаучо"
+        hover: "Аргентинское танго на улице среди ярких домов"
+        alt: "Пара танцует танго на мощеной улице перед разноцветными фасадами, Аргентина"
         intendedSlot: "itinerary:day-2"
   - day: 3
     title: "Перелет в Мендосу и знакомство с городом"
@@ -175,7 +176,8 @@ itinerary:
       С холма открывается панорамный вид на город.
     images:
       - src: /media/tours/argentina-puteshestvie-v-doistoricheskij-mir/itinerary-day-6-enhanced-20261006.webp
-        alt: "Мендоса, Аргентина"
+        hover: "Мендоса: монумент на вершине лестницы среди деревьев"
+        alt: "Бронзовый монумент на скальном постаменте над широкой лестницей в Мендосе, Аргентина"
         intendedSlot: "itinerary:day-3"
   - day: 4
     title: "Винодельни долины Уко"

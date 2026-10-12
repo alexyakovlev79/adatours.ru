@@ -10,7 +10,8 @@ summary: Сан-Игнасио расположен на левом берегу
 searchAliases: []
 hero:
   src: /media/destinations/san-ignasio/hero-enhanced-20261002.webp
-  alt: 'На фото: город Сан-Игнасио в Белизе'
+  hover: "Сан-Игнасио: разноцветный фасад уличных магазинов"
+  alt: "Бирюзовый деревянный фасад с красной дверью, красными ставнями и яркими вывесками, Сан-Игнасио, Белиз"
 gallery:
 - src: /media/destinations/san-ignasio/gallery-1-enhanced-20261002.webp
   hover: "Сан-Игнасио в Белизе: глиняные сосуды среди пещерных скал"

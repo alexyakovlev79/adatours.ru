@@ -14,7 +14,8 @@ durationDays: 15
 durationNights: 14
 hero:
   src: /media/excursions/kotopaksi-natsionalnyj-park/gallery-0-src-enhanced-20261007.webp
-  alt: Тур по континентальному Эквадору и Амазонии на 15 дней
+  hover: "Котопакси: снежная вершина над горной равниной"
+  alt: "Заснеженный конус Котопакси над травянистой равниной под полосой облаков, Эквадор"
 currency: USD
 priceFrom: 7443
 priceNote: От $7443 на человека при трехместном размещении; DBL — $7999. Внутренний перелет оплачивается отдельно.

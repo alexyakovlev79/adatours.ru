@@ -24,7 +24,8 @@ gallery:
   - src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-1-src-enhanced-20261007.webp"
     alt: "На фото: Водопад Monkey, Бразилия"
   - src: "/media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-2-src-enhanced-20261007.webp"
-    alt: "На фото: Национальный парк Тижука"
+    hover: "Вид на Рио и океан с лесистого склона Тижуки"
+    alt: "Панорама Рио-де-Жанейро и океана за густой зеленью леса Тижука, Бразилия"
 route:
   - "Рио-де-Жанейро"
 lead: "Трёхчасовая экскурсия на джипе в тропический лес Тижука в Рио-де-Жанейро. Вы познакомитесь с лесом, его природой и историей восстановления."

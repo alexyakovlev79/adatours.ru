@@ -196,7 +196,8 @@ itinerary:
     XX века.'
   images:
   - src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/filadelfia-place-generated-20261009-v1.webp
-    alt: Улица Филадельфии в парагвайском Чако
+    hover: "Филадельфия в Чако: улица среди низких домов"
+    alt: "Широкая тихая улица Филадельфии с низкими домами и тенистыми деревьями, Парагвай"
 - day: 9
   title: Лагуна Капитан, фламинго и меннонитские поселения
   places:

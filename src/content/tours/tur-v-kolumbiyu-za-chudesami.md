@@ -292,7 +292,8 @@ currency: USD
 priceNote: $2803
 hero:
   src: /media/destinations/cartagena/hero-enhanced-20261003.webp
-  alt: 'На фото: девушка в национальном костюме из Колумбии'
+  hover: "Женщина с фруктами в ярком колумбийском костюме"
+  alt: "Улыбающаяся женщина в ярком платье с чашей фруктов на голове на фоне синей стены, Колумбия"
 routeCountries:
 - country_colombia
 routeDestinations:

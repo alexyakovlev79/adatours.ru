@@ -10,7 +10,8 @@ summary: "Вальпараисо с фуникулерами и домами н�
 searchAliases: []
 hero:
   src: "/media/destinations/valparaiso-i-vinya-del-mar/hero-enhanced-20261005.webp"
-  alt: "На фото: город Вальпараисо в Чили"
+  hover: "Уличное искусство на оранжевом доме Вальпараисо"
+  alt: "Оранжевый фасад с яркими росписями, цветными окнами и дверями в Вальпараисо, Чили"
 gallery:
   - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-1-enhanced-20261005.webp"
     alt: "Узкая лестница между домами на склоне Вальпараисо, Чили"
@@ -22,13 +23,15 @@ gallery:
   - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-4-enhanced-20261005.webp"
     alt: "На фото: город Вальпараисо в Чили"
   - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-5-enhanced-20261005.webp"
-    alt: "На фото: город Вальпараисо в Чили"
+    hover: "Вальпараисо: фуникулер над портовой улицей"
+    alt: "Желтый вагон фуникулера, порт и дома на холмах Вальпараисо, Чили"
   - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-6-enhanced-20261005.webp"
     alt: "На фото: город Вальпараисо в Чили"
   - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-7-enhanced-20261005.webp"
     alt: "На фото: город Вальпараисо в Чили"
   - src: "/media/destinations/valparaiso-i-vinya-del-mar/gallery-8-enhanced-20261005.webp"
-    alt: "На фото: город Вальпараисо в Чили"
+    hover: "Вальпараисо: панорама разноцветных домов на склонах"
+    alt: "Разноцветные дома Вальпараисо с черепичными крышами на густо застроенных холмах, Чили"
 facts: []
 featureBands: []
 relatedDestinations: []

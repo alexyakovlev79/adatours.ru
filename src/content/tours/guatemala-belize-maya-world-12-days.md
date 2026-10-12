@@ -120,7 +120,8 @@ itinerary:
     майя-цутухилей. Возвращение на озеро. Ночь в отеле.
   images:
   - src: /media/countries/guatemala/featureBands-2-enhanced-20261002.webp
-    alt: 'На фото: озеро Атитлан в Гватемале'
+    hover: "Атитлан: вулкан в облаках и лучи над озером"
+    alt: "Солнечные лучи сквозь облака над вулканом и темной водой озера Атитлан, Гватемала"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_guatemala_atitlan_san_juan_santiago_boat

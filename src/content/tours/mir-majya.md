@@ -60,7 +60,8 @@ itinerary:
     \ прежде всего текстиль.\n\n**Отель:** Villa Colonial.  \n**Питание:** завтрак."
   images:
   - src: "/media/tours/klassicheskaya-programma-po-gvatemale/itinerary-1-images-1-src-enhanced-20261007.webp"
-    alt: Антигуа-Гуатемала
+    hover: "Антигуа: арка Санта-Каталина и вулкан за ней"
+    alt: "Желтая арка Санта-Каталина с часами над улицей Антигуа на фоне вулкана, Гватемала"
 - day: 3
   title: Антигуа - Ишимче - озеро Атитлан
   places:

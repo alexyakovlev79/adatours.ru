@@ -138,7 +138,8 @@ itinerary:
     Питание: завтрак, обед, ужин.'
   images:
   - src: /media/destinations/destination_brazil_reka_salobra/salobra-generated-20261008.webp
-    alt: Река Салобра - Бразилия
+    hover: "Река Салобра: подводная растительность в прозрачной воде"
+    alt: "Прозрачная бирюзовая вода реки Салобра с подводными растениями и лесистыми берегами, Бразилия"
 - excursionRef: excursion_bom_jardim_aquario_salobra_snorkeling
   places:
   - Бом-Жардим

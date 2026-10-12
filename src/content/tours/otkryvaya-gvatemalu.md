@@ -150,7 +150,8 @@ currency: USD
 priceNote: $3420
 hero:
   src: "/media/tours/otkryvaya-gvatemalu/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: Озеро Атитлан, Гватемала'
+  hover: "Озеро Атитлан и вулкан за цветущим берегом"
+  alt: "Синее озеро Атитлан с вулканом на противоположном берегу и цветами на переднем плане, Гватемала"
 routeCountries:
 - country_guatemala
 routeDestinations:

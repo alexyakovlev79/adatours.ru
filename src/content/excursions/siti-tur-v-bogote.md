@@ -23,7 +23,8 @@ hero:
   alt: "Картины у входа в здание с красным фасадом и зелеными балконами, Богота, Колумбия"
 gallery:
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-0-src-enhanced-20261008.webp
-    alt: Музей Ботеро в Боготе
+    hover: "Картина Ботеро: всадник на рыжей лошади"
+    alt: "Картина Фернандо Ботеро с всадником на рыжей лошади в темной музейной раме, Колумбия"
   - src: /media/excursions/siti-tur-v-bogote/gallery-1-src-enhanced-20261008.webp
     alt: Уличная жизнь Боготы
   - src: "/media/excursions/siti-tur-v-bogote/gallery-2-src-enhanced-20261007.webp"

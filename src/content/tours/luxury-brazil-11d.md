@@ -187,7 +187,8 @@ itinerary:
       
     images:
       - src: /media/tours/luxury-brazil-11d/itinerary/day-10-enhanced-20260930.webp
-        alt: "Rua das Pedras в Бузиосе"
+        hover: "Бузиос: песчаный замок на берегу бухты"
+        alt: "Высокий песчаный замок на пляже Бузиоса и лодки в голубой бухте, Бразилия"
         intendedSlot: "itinerary:day-10"
   - excursionRef: excursion_buzios_coastal_boat_trip
     places: ["Бузиос"]
@@ -198,7 +199,8 @@ itinerary:
       После завтрака выезд в сторону Рио. Дорога занимает около 2,5-3 часов. По прибытии трансфер в международный аэропорт и завершение путешествия.
     images:
       - src: /media/tours/luxury-brazil-11d/itinerary/day-11-enhanced-20260930.webp
-        alt: "Пляж Ипанема в Рио-де-Жанейро"
+        hover: "Зеленый скалистый берег над голубым морем"
+        alt: "Голубое море у скалистого берега с густой зеленью и горной вершиной, Бразилия"
         intendedSlot: "itinerary:day-11"
 included:
   - "Проживание в отелях."

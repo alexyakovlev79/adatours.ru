@@ -15,7 +15,8 @@ language:
   - "Английский"
 hero:
   src: "/media/excursions/urok-serfinga-rio-de-zhanejro/hero-enhanced-20261006.webp"
-  alt: "Урок серфинга Рио -де- Жанейро"
+  hover: "Рио: узорчатая набережная рядом с морским пляжем"
+  alt: "Песчаный пляж и широкая мозаичная набережная Рио-де-Жанейро с пальмами и горами вдали, Бразилия"
 gallery:
   - src: "/media/excursions/urok-serfinga-rio-de-zhanejro/gallery-0-src-enhanced-20261007.webp"
     alt: ""

@@ -9,7 +9,8 @@ destinationType: region
 summary: Станция Великая Стена на острове Кинг-Джордж знакомит с китайским присутствием в Антарктиде.
 hero:
   src: /media/destinations/great-wall-station/hero-generated-20261009-v3.webp
-  alt: Станция Великая Стена
+  hover: "Станция «Великая стена» у серого моря"
+  alt: "Низкие красные здания станции «Великая стена» на каменистом заснеженном берегу, Антарктида"
 gallery: []
 themes:
 - theme_culture

@@ -277,7 +277,8 @@ itinerary:
     Питание: завтрак, обед.'
   images:
   - src: /media/destinations/cajas-national-park/hero-generated-20261009-v1.webp
-    alt: Национальный парк Кахас
+    hover: "Парк Кахас: озера под облачным небом"
+    alt: "Темные горные озера среди травянистых холмов и скал национального парка Кахас, Эквадор"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_ecuador_cajas_cacao_day

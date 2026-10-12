@@ -12,7 +12,8 @@ searchAliases:
 themes: []
 hero:
   src: /media/destinations/destination_brazil_barrejrinyas/destination_brazil_barrejrinyas-generated-20261008.webp
-  alt: Баррейриньяс - Бразилия
+  hover: "Баррейриньяс: речной причал и отражения прибрежных домов"
+  alt: "Лодки у тихого речного берега с белыми домами и пальмами в Баррейриньясе, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

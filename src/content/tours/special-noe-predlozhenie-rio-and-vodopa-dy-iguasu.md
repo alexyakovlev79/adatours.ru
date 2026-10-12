@@ -219,7 +219,8 @@ currency: USD
 priceNote: $1950
 hero:
   src: /media/tours/special-noe-predlozhenie-rio-and-vodopa-dy-iguasu/hero-enhanced-20261006.webp
-  alt: 'На фото: водопады Игуасу в Бразилии и Аргентине'
+  hover: "Игуасу: посетители на мостике у падающих потоков воды"
+  alt: "Смотровой мостик с посетителями перед широкой стеной водопадов Игуасу"
 routeCountries:
 - country_brazil
 routeDestinations:

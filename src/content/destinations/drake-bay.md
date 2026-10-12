@@ -9,7 +9,8 @@ destinationType: city
 summary: Залив Дрейк на юге Коста-Рики, тихоокеанский берег и база для поездок в Корковадо.
 hero:
   src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-7-enhanced-20261006.webp
-  alt: Залив Дрейк
+  hover: "Колибри у фиолетовых цветов в Коста-Рике"
+  alt: "Зеленый колибри с рыжим хвостом летит у небольших фиолетовых цветов, Коста-Рика"
 gallery: []
 themes:
 - theme_beach

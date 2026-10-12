@@ -104,7 +104,8 @@ itinerary:
     Дополнительно
   images:
   - src: /media/tours/braziliya-s-san-paulo/itinerary-day-4-enhanced-20261006.webp
-    alt: 'На фото: Дети индейцев Амазонии'
+    hover: "Дети Амазонии с перьевыми украшениями на фоне леса"
+    alt: "Трое улыбающихся детей с рисунками на лицах, синими перьевыми украшениями и бусами, Амазония, Бразилия"
 - excursionRef: excursion_source_vstrecha_rek
   places: []
 - excursionRef: excursion_source_plavanie_s_rozovymi_del_finami

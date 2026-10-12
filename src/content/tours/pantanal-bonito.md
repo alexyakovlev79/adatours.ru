@@ -160,7 +160,8 @@ currency: USD
 priceNote: $3993
 hero:
   src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-01-enhanced-20261001.webp
-  alt: Пантанал & Бонито
+  hover: "Бонито: взгляд на Голубое озеро под сводами пещеры"
+  alt: "Посетитель у ограждения над ярко-голубым озером в пещере со сталактитами, Бонито, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

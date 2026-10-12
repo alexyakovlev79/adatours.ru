@@ -27,7 +27,8 @@ gallery:
   - src: /media/excursions/mendosa-tur-v-gory/gallery-2-enhanced-20261001.webp
     alt: Долина и горы в районе Мендосы
   - src: /media/excursions/mendosa-tur-v-gory/gallery-1-enhanced-20261001.webp
-    alt: Пейзаж горного маршрута из Мендосы
+    hover: "Мендоса: городские крыши и горы на горизонте"
+    alt: "Городская панорама Мендосы с зеленым куполом, многоэтажными домами и горами вдали, Аргентина"
 route:
   - Мендоса
   - Кордон-дель-Плата

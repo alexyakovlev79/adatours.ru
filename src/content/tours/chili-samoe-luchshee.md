@@ -209,7 +209,8 @@ itinerary:
     После прибытия трансфер в отель.
   images:
   - src: /media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp
-    alt: 'На фото: истуканы Моа с острова Пасха в Чили'
+    hover: "Остров Пасхи: ряд моаи на каменной платформе"
+    alt: "Длинный ряд каменных моаи на платформе острова Пасхи под облачным небом, Чили"
 - day: 9
   title: 'Остров Пасхи: Анакена и основные археологические зоны'
   places:
@@ -300,7 +301,8 @@ currency: USD
 priceNote: $6174
 hero:
   src: /media/tours/chili-i-argentina-vip/hero-enhanced-20261006.webp
-  alt: 'На фото: парк Торрес-дель-Пайне в Чили'
+  hover: "Торрес-дель-Пайне: горные пики и бирюзовое озеро на закате"
+  alt: "Скалистые вершины Торрес-дель-Пайне над бирюзовым озером под розовыми облаками, Чили"
 routeCountries:
 - country_chile
 routeDestinations:

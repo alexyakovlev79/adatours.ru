@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_zacharovannyj_akvarium/aquario-generated-20261008.webp
-  alt: Зачарованный Аквариум - Бразилия
+  hover: "Зачарованный Аквариум: рыбы в прозрачной воде среди корней"
+  alt: "Рыбы среди затопленных корней и растений в прозрачной воде Зачарованного Аквариума, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

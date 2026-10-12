@@ -13,7 +13,8 @@ duration: "5 часов"
 language: []
 hero:
   src: /media/destinations/santa-marta/hero-enhanced-20261003.webp
-  alt: "Санта Марта - Парк Тайрона и Плайя Кристал"
+  hover: "Санта-Марта: яхтенная гавань на закате"
+  alt: "Парусные яхты в гавани Санта-Марты на фоне городских зданий и гор в вечернем свете, Колумбия"
 gallery:
   - src: "/media/excursions/colombia-santa-marta-parque-tayrona-playa-crystal/gallery-0-src-enhanced-20261007.webp"
     hover: "Колумбия: женщины в цветных платьях и корзина фруктов"

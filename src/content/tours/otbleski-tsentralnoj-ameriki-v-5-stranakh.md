@@ -226,7 +226,8 @@ itinerary:
     \ Metrocento Managua.  \n**Питание:** завтрак."
   images:
   - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-1-src-enhanced-20261007.webp
-    alt: 'На фото: столица Никарагуа город Манагуа'
+    hover: "Манагуа: фасад старого собора и национальный флаг"
+    alt: "Каменный собор с двумя башнями рядом с флагом Никарагуа в Манагуа"
 - day: 12
   title: Манагуа - Масайя - Гранада
   places:

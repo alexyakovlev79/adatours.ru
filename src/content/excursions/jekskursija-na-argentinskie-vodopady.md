@@ -21,7 +21,8 @@ hero:
 gallery:
   -
     src: "/media/excursions/jekskursija-na-argentinskie-vodopady/gallery-0-src-enhanced-20261008.webp"
-    alt: "На фото: Аргентинские водопады Игуасу"
+    hover: "Аргентинская сторона Игуасу: каскады и радуга в брызгах"
+    alt: "Широкие каскады Игуасу, водяная пыль и радуга над ущельем, Аргентина"
   -
     src: "/media/excursions/jekskursija-na-argentinskie-vodopady/gallery-2-src-enhanced-20261008.webp"
     hover: "Игуасу в Аргентине: радуга среди каскадов и густой зелени"

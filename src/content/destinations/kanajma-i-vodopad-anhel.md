@@ -10,7 +10,8 @@ summary: В национальном парке Канайма находитс�
 searchAliases: []
 hero:
   src: /media/countries/venezuela/featureBands-1-enhanced-20261002.webp
-  alt: 'На фото: Канайма и водопад Анхель в Венесуэле'
+  hover: "Зеленые горные склоны под облачным небом"
+  alt: "Зеленые горные гребни с крутыми складчатыми склонами под облаками, Венесуэла"
 gallery:
 - src: /media/destinations/canaima-and-angel-falls/gallery-1-enhanced-20261003.webp
   hover: "Канайма: пассажиры в лодках на воде перед широким водопадом"

@@ -234,7 +234,8 @@ itinerary:
     Размещение в бутик-отеле Hotel Mukul Nicaragua.
   images:
   - src: /media/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh/itinerary-10-images-1-src-enhanced-20261007.webp
-    alt: 'на фото: Манагуа, Никарагуа'
+    hover: "Манагуа: фасад старого собора и национальный флаг"
+    alt: "Каменный собор с двумя башнями рядом с флагом Никарагуа в Манагуа"
 - day: 8
   title: Гранада, озеро Никарагуа, вулкан Масая и лагуна Апойо
   places:

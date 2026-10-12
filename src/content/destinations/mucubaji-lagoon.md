@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Высокогорная лагуна Мукубажи в венесуэльских Андах, окруженная ландшафтами парамо и растениями фрайлехон.
 hero:
   src: /media/tours/venesuela-novye-konkistadory/itinerary-day-10-generated-20261008-next20.webp
-  alt: Лагуна Мукубажи в Венесуэльских Андах
+  hover: "Лагуна Мукубажи: горное озеро среди склонов парамо"
+  alt: "Лагуна Мукубажи с розеточными растениями на берегу среди холмов и низких облаков, Венесуэла"
 gallery: []
 themes:
 - theme_wildlife

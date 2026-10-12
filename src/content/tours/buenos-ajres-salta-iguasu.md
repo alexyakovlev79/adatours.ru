@@ -166,7 +166,8 @@ itinerary:
       Ночевка в отеле в Пурмамарке.
     images:
       - src: /media/excursions/jekskursija-v-zhivopisnuju-sal-tu/hero-enhanced-20261006.webp
-        alt: "Пурмамарка и Кебрада-дель-Хумауака"
+        hover: "Скальные складки и цветные пласты у Сальты"
+        alt: "Красные и светлые слоистые скалы с редкими кустарниками в районе Сальты, Аргентина"
         intendedSlot: "itinerary:day-6"
   - day: 7
     title: "Сальта"

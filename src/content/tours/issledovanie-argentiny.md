@@ -79,7 +79,8 @@ itinerary:
     Финальная часть экскурсии проходит в Палермо, большом зеленом районе Буэнос-Айреса, который часто называют легкими города. После программы - возвращение в отель.'
   images:
   - src: /media/tours/issledovanie-argentiny/itinerary-day-2-enhanced-20261006.webp
-    alt: 'На фото: Вид на Пуэрто-Мадрин'
+    hover: "Набережные городских доков в вечернем свете"
+    alt: "Городские доки с белым пешеходным мостом и высотными зданиями на закате, Аргентина"
     intendedSlot: itinerary:day-2
 - day: 3
   title: Буэнос-Айрес - Трелев - Пуэрто-Мадрин
@@ -282,7 +283,8 @@ itinerary:
     После программы - возвращение в отель.'
   images:
   - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-9-enhanced-20261006.webp
-    alt: 'На фото: Водопады Игуасу'
+    hover: "Игуасу: падающие потоки воды в окружении леса"
+    alt: "Многоярусные каскады Игуасу среди деревьев и густых зеленых склонов"
     intendedSlot: itinerary:day-13
 - excursionRef: excursion_iguazu_gran_aventura
   places:

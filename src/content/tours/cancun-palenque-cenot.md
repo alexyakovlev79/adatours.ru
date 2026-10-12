@@ -176,7 +176,8 @@ currency: USD
 priceNote: $3846
 hero:
   src: /media/destinations/cozumel/hero-enhanced-20261005.webp
-  alt: 'На фото: курорт Косумель в Мексике'
+  hover: "Косумель: соломенный зонт на скалистом берегу"
+  alt: "Каменистый берег Косумеля с соломенным зонтом у прозрачного бирюзового моря, Мексика"
 routeCountries:
 - country_mexico
 routeDestinations:

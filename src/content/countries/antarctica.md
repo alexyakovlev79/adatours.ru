@@ -28,7 +28,8 @@ gallery:
   - src: /media/countries/antarctica/feature-1-zodiac-enhanced-20261001.webp
     alt: Высадка на лодке Zodiac в Антарктиде
   - src: /media/countries/antarktida/gallery-7-enhanced-20261001.webp
-    alt: Наблюдение за китами в Антарктиде
+    hover: "Наблюдение за китом с лодки в Антарктиде"
+    alt: "Хвост кита над морем рядом с лодкой с наблюдателями и заснеженными горами, Антарктида"
   - src: /media/countries/antarctica/feature-3-expedition-ship-enhanced-20261001.webp
     alt: Айсберги в антарктических водах
   - src: /media/countries/antarktida/gallery-9-enhanced-20261001.webp

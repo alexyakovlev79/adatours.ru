@@ -8,7 +8,7 @@ countryId: "country_nicaragua"
 destinationType: "city"
 summary: "Столица Никарагуа на берегу озера Ксолотлан. Площадь Революции, Старый собор, Национальный дворец культуры и парки в историческом центре."
 searchAliases: []
-hero: {"src":"/media/destinations/managua/hero-enhanced-20261005.webp","alt":"На фото: столица Никарагуа. город Манагуа"}
+hero: {"src":"/media/destinations/managua/hero-enhanced-20261005.webp","alt":"Белое здание с колоннадой и флагом Никарагуа за струями фонтана, Манагуа", hover: "Манагуа: колоннада городского здания и фонтан"}
 gallery:
 - src: /media/destinations/managua/gallery-1-enhanced-20261005.webp
   alt: "Двое мужчин возле синего автомобиля в Манагуа, Никарагуа"

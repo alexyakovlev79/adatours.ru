@@ -15,7 +15,8 @@ themes:
 - theme_cruises
 hero:
   src: /media/tours/panama-city-gamboa-6-days/word-10-20261010-enhanced-20261011-pass2324-v1.webp
-  alt: Белолицые обезьяны среди зеленых ветвей
+  hover: "Белолицые обезьяны в зеленой листве"
+  alt: "Две белолицые обезьяны с темной шерстью среди густых зеленых ветвей"
 gallery:
 - src: /media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/gatun-lake-place-generated-20261009-v1.webp
   alt: Озеро Гатун с лесными островами и проходящим судном

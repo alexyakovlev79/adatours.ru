@@ -18,7 +18,8 @@ currency: USD
 priceNote: Цена указана на человека. Для 2 и более человек возможна скидка.
 hero:
   src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/hero-enhanced-20260930.webp
-  alt: Экзотические птицы в Парке птиц Игуасу
+  hover: "Парк птиц Игуасу: тукан на деревянном периле"
+  alt: "Тукан с крупным желто-оранжевым клювом на деревянном периле среди зелени Парка птиц в Игуасу"
 gallery:
   - src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/gallery-1-enhanced-20260930.webp
     alt: Парк птиц в Игуасу

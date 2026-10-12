@@ -13,7 +13,8 @@ destination: destination_argentina_el_calafate
 language: []
 hero:
   src: /media/excursions/nativo-experience-el-calafate/hero-enhanced-20261006.webp
-  alt: "Патагония у Эль-Калафате"
+  hover: "Патагонское озеро с айсбергами среди лесистых гор"
+  alt: "Голубые айсберги на бирюзовом озере у лесистых горных склонов в Патагонии, Аргентина"
 gallery: []
 route:
   - "Эль-Калафате"

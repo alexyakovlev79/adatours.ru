@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_ekologicheskij_park_zhanauari/hero-generated-20261008-resumed.webp
-  alt: Экологический парк Жанауари — Бразилия
+  hover: "Жанауари: мостки над лесным водоемом с гигантскими кувшинками"
+  alt: "Деревянные мостки над водой среди затопленного леса и крупных листьев кувшинок, парк Жанауари, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

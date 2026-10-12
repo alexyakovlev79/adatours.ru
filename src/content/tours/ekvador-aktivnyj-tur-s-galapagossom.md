@@ -187,7 +187,8 @@ itinerary:
   - src: /media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-13-images-0-src-enhanced-20261007.webp
     alt: 'На фото: город Гуаякиль в Эквадоре'
   - src: /media/tours/ekvador-aktivnyj-tur-s-galapagossom/itinerary-13-images-1-src-enhanced-20261007.webp
-    alt: 'На фото: город Куэнка в Эквадоре'
+    hover: "Куэнка: голубые купола собора над городом"
+    alt: "Собор с голубыми куполами над черепичными крышами исторического центра Куэнки, Эквадор"
 - day: 14
   title: Гуаякиль - Балтра - Санта-Крус
   places:
@@ -266,7 +267,8 @@ currency: USD
 priceNote: $7265
 hero:
   src: /media/excursions/papallakta/gallery-2-enhanced-20261001.webp
-  alt: 'На фото: Эквадорские леса и джунгли'
+  hover: "Горная долина Папальякты в просветах облаков"
+  alt: "Солнечные лучи сквозь облака над зеленой горной долиной в районе Папальякты, Эквадор"
 routeCountries:
 - country_ecuador
 routeDestinations:

@@ -13,7 +13,7 @@ language: []
 priceFrom: 105
 currency: "USD"
 priceNote: "Стоимость — $105 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
-hero: {"src":"/media/excursions/jekskursija-v-zhivopisnuju-sal-tu/hero-enhanced-20261006.webp","alt":"Экскурсия в живописную Сальту"}
+hero: {"src":"/media/excursions/jekskursija-v-zhivopisnuju-sal-tu/hero-enhanced-20261006.webp","alt":"Красные и светлые слоистые скалы с редкими кустарниками в районе Сальты, Аргентина", hover: "Скальные складки и цветные пласты у Сальты"}
 gallery: [{"src":"/media/excursions/jekskursija-v-zhivopisnuju-sal-tu/gallery-0-src-enhanced-20261008.webp","alt":"Кабина канатной дороги над Сальтой, Аргентина", hover: "Сальта в Аргентине: канатная дорога над городской застройкой"},{"src":"/media/excursions/jekskursija-v-zhivopisnuju-sal-tu/gallery-1-src-enhanced-20261008.webp","alt":"Неоготическая церковь у озера на фоне гор, Аргентина", hover: "Аргентина: церковь с высоким шпилем рядом с горным озером"}]
 route: []
 lead: "Обзорная экскурсия по Сальте: архитектура аргентинского севера, старые фасады и городская жизнь в окружении гор."

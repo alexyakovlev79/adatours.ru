@@ -267,7 +267,8 @@ currency: USD
 priceNote: $3871
 hero:
   src: /media/tours/luchshee-v-rio-de-zhanejro-dlya-mice/hero-enhanced-20261006.webp
-  alt: 'На фото: Рио-де-Жанейро с высоты птичьего полёта'
+  hover: "Канатная дорога Рио над городом и морем"
+  alt: "Кабина канатной дороги над зелеными горами, морскими бухтами и застройкой Рио-де-Жанейро, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

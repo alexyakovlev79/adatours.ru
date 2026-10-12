@@ -210,7 +210,8 @@ currency: USD
 priceNote: $2015 на человека при группе 6 человек и размещении DBL
 hero:
   src: /media/tours/meksika-den-mertvykh/hero-src-enhanced-20261007.webp
-  alt: Мексика & День Мертвых
+  hover: "Дворец изящных искусств в Мехико под ясным небом"
+  alt: "Дворец изящных искусств с цветным куполом, флагами Мексики и людьми у входа, Мехико"
 routeCountries:
 - country_mexico
 routeDestinations:

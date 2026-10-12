@@ -215,7 +215,8 @@ currency: USD
 priceNote: $3729
 hero:
   src: /media/excursions/salento-i-dolina-kokora/gallery-5-src-enhanced-20261007.webp
-  alt: 'На фото: страна Колумбия, город Богота'
+  hover: "Уличная роспись с птицей на фасаде колумбийского дома"
+  alt: "Фасад дома с большой разноцветной птицей, зелеными и желтыми дверями, Колумбия"
 routeCountries:
 - country_colombia
 routeDestinations:

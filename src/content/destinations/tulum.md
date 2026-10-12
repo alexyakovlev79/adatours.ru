@@ -8,7 +8,7 @@ countryId: "country_mexico"
 destinationType: "resort"
 summary: "Руины города майя над Карибским морем, поселок Тулум Пуэбло и пляжи восточного побережья Юкатана с отелями и подводным миром."
 searchAliases: []
-hero: {"src":/media/countries/mexico/featureBands-2-enhanced-20261002.webp,"alt":"На фото: морской курорт Тулум в Мексике"}
+hero: {"src":/media/countries/mexico/featureBands-2-enhanced-20261002.webp,"alt":"Скалистый морской берег с наклоненной пальмой и густой зеленью у бирюзовой воды, Мексика", hover: "Пальма над бирюзовым морем у скалистого берега Мексики"}
 gallery:
 - src: /media/destinations/tulum/gallery-1-enhanced-20261004.webp
   alt: "Каменные руины Тулума на скалистом берегу Карибского моря, Мексика"

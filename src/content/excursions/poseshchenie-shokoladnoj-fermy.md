@@ -18,7 +18,8 @@ currency: USD
 priceNote: "Основная стоимость — $500. Для 2 человек — $297 на человека, для 3 человек — $250 на человека, для 4 человек — $227 на человека."
 hero:
   src: "/media/excursions/kofejnyj-tur-v-perejra/gallery-0-src-enhanced-20261007.webp"
-  alt: Напиток из какао на шоколадной ферме в Колумбии
+  hover: "Бокалы с напитком на фоне ярких дверей"
+  alt: "Три бокала янтарного напитка на деревянном столе перед желто-синими дверями, Колумбия"
 gallery:
   - src: "/media/excursions/poseshchenie-shokoladnoj-fermy/gallery-0-src-enhanced-20261007.webp"
     alt: Шоколадная ферма в районе Перейры

@@ -10,7 +10,8 @@ summary: Дельта реки Ориноко знакомит с тропиче
 searchAliases: []
 hero:
   src: /media/countries/venezuela/featureBands-3-enhanced-20261002.webp
-  alt: 'На фото: дельта реки Ориноко в Венесуэле'
+  hover: "Тукан в густой зелени Ориноко"
+  alt: "Тукан с желто-черным клювом среди зеленых ветвей в дельте Ориноко, Венесуэла"
 gallery:
 - src: /media/destinations/orinoco-delta/gallery-1-enhanced-20261003.webp
   alt: "Русло Ориноко среди густого леса и плавучие сооружения, Венесуэла"

@@ -16,7 +16,8 @@ currency: USD
 priceNote: Цена указана на человека. Для 2 и более человек возможна скидка.
 hero:
   src: /media/excursions/fiesta-gaucho/hero-enhanced-20260930.webp
-  alt: Аргентинский гаучо с лошадью
+  hover: "Гаучо с серой лошадью перед зрителями"
+  alt: "Мужчина в шляпе держит серую лошадь на арене перед зрительскими трибунами, Аргентина"
 gallery:
   - src: /media/excursions/fiesta-gaucho/gallery-1-enhanced-20261001.webp
     hover: "Аргентинский гаучо на лошади среди стада"
@@ -28,7 +29,8 @@ gallery:
   - src: /media/excursions/fiesta-gaucho/gallery-4-enhanced-20261001.webp
     alt: Конное мастерство аргентинских гаучо
   - src: /media/excursions/fiesta-gaucho/gallery-5-enhanced-20261001.webp
-    alt: Гости на аргентинском ранчо
+    hover: "Прогулка в конной повозке по ранчо в Аргентине"
+    alt: "Группа людей в деревянной повозке, запряженной парой лошадей, на аргентинском ранчо"
 route:
   - Буэнос-Айрес
   - Ранчо

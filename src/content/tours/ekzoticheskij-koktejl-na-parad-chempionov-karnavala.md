@@ -143,7 +143,8 @@ itinerary:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: 'На фото: Водопады Игуасу в Бразилии'
   - src: /media/excursions/favela-tur/gallery-4-enhanced-20261001.webp
-    alt: 'на фото: закат в Рио-де-Жанейро, Бразилия'
+    hover: "Рио: силуэт Христа над горой в закатном свете"
+    alt: "Силуэт статуи Христа-Искупителя на темной вершине Корковадо на фоне оранжевого заката, Рио, Бразилия"
 - day: 5
   title: Бразильская сторона водопадов Игуасу
   places:

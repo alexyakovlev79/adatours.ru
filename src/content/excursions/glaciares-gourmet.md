@@ -15,7 +15,8 @@ priceFrom: 388
 currency: USD
 hero:
   src: /media/excursions/glaciares-gourmet/hero-enhanced-20261006.webp
-  alt: "Ледник Перито-Морено в Эль-Калафате"
+  hover: "Перито-Морено: ледник на фоне леса и гор"
+  alt: "Голубая ледяная стена Перито-Морено перед зелеными склонами и горными вершинами, Аргентина"
 gallery: []
 route:
   - "Эль-Калафате"

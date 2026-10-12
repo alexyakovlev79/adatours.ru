@@ -17,7 +17,8 @@ currency: "USD"
 priceNote: "Стоимость — $274."
 hero:
   src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
-  alt: "На фото: Залив Гуанабара, Рио-де-Жанейро"
+  hover: "Гуанабара: Сахарная Голова с воды на закате"
+  alt: "Нос моторной лодки в заливе Гуанабара на фоне Сахарной Головы и золотого заката, Рио-де-Жанейро, Бразилия"
 gallery:
   - src: "/media/excursions/zaliv-guanabara-morskaya-progulka/gallery-0-src-enhanced-20261007.webp"
     alt: "На фото: Пляж Рио-де-Жанейро"

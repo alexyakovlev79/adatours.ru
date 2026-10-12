@@ -314,7 +314,8 @@ currency: USD
 priceNote: $5700
 hero:
   src: /media/tours/argentina-2024/hero-enhanced-20261006.webp
-  alt: 'На фото: Столица Аргентины Буэнос Айрес'
+  hover: "Буэнос-Айрес: купола старого здания среди современной застройки"
+  alt: "Светлое здание с куполами за городским сквером на фоне высоток Буэнос-Айреса, Аргентина"
 routeCountries:
 - country_argentina
 routeDestinations:

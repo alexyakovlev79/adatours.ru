@@ -152,7 +152,8 @@ itinerary:
     **Примерное расстояние:** 320 км.'
   image:
     src: /media/destinations/destination_brazil_tiradentis/destination_brazil_tiradentis-generated-20261008.webp
-    alt: Тирадентис - Бразилия
+    hover: "Тирадентес: колониальные дома на мощеной улице"
+    alt: "Мощеная улица Тирадентеса с белыми домами, синими окнами и горами вдали, Бразилия"
 - day: 10
   title: Капитолио
   places:

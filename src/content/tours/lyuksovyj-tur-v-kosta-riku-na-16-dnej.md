@@ -434,7 +434,8 @@ itinerary:
       Включены завтрак и обед.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-7-enhanced-20261006.webp
-        alt: "Колибри в тропических лесах Коста-Рики"
+        hover: "Колибри у фиолетовых цветов в Коста-Рике"
+        alt: "Зеленый колибри с рыжим хвостом летит у небольших фиолетовых цветов, Коста-Рика"
         intendedSlot: "itinerary:day-7"
   - day: 8
     title: "Национальный парк Мануэль-Антонио и гидроплан"

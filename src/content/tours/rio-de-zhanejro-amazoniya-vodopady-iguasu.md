@@ -181,7 +181,8 @@ currency: USD
 priceNote: $3453
 hero:
   src: /media/excursions/zaliv-guanabara-morskaya-progulka/hero-enhanced-20261006.webp
-  alt: Рио-де-Жанейро - Амазония - Водопады Игуасу
+  hover: "Гуанабара: Сахарная Голова с воды на закате"
+  alt: "Нос моторной лодки в заливе Гуанабара на фоне Сахарной Головы и золотого заката, Рио-де-Жанейро, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

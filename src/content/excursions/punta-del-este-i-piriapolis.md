@@ -26,7 +26,8 @@ gallery:
   - src: /media/excursions/punta-del-este-i-piriapolis/gallery-1-src-enhanced-20261008.webp
     alt: Пириаполис и его историческая архитектура
   - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"
-    alt: Побережье Пунта-дель-Эсте
+    hover: "Пунта-дель-Эсте: город на узком полуострове между морскими бухтами"
+    alt: "Вид сверху на полуостров Пунта-дель-Эсте с городской застройкой, яхтенной гаванью и пляжами, Уругвай"
 route:
   - Монтевидео
   - Пириаполис

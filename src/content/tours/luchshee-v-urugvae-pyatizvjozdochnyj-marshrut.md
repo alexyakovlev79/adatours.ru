@@ -50,7 +50,8 @@ itinerary:
     Возвращение в отель. Ночлег.
   images:
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-1-src-enhanced-20261007.webp"
-    alt: Монтевидео
+    hover: "Монтевидео: дворец Сальво со стороны городского сквера"
+    alt: "Башня дворца Сальво за зеленым сквером и пальмами в Монтевидео, Уругвай"
 - day: 3
   title: Монтевидео
   places:
@@ -63,7 +64,8 @@ itinerary:
     Возвращение в отель в согласованное время. Ночлег.
   images:
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-0-src-enhanced-20261007.webp"
-    alt: Монтевидео
+    hover: "Монтевидео: огни городских улиц у воды"
+    alt: "Вечерняя панорама Монтевидео с подсвеченными улицами, высотными зданиями и берегом, Уругвай"
 - day: 4
   title: Монтевидео - Пунта-дель-Эсте
   places:
@@ -83,7 +85,8 @@ itinerary:
     Возвращение в отель. Ночлег в Пунта-дель-Эсте.
   images:
   - src: "/media/excursions/punta-del-este-i-piriapolis/gallery-2-src-enhanced-20261007.webp"
-    alt: Пунта дель Эсте
+    hover: "Пунта-дель-Эсте: город на узком полуострове между морскими бухтами"
+    alt: "Вид сверху на полуостров Пунта-дель-Эсте с городской застройкой, яхтенной гаванью и пляжами, Уругвай"
 - day: 5
   title: Пунта-дель-Эсте
   places:

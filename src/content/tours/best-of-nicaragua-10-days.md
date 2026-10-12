@@ -68,7 +68,8 @@ itinerary:
     Robles. Размещение и ночь в отеле.
   images:
   - src: /media/destinations/managua/hero-enhanced-20261005.webp
-    alt: 'На фото: столица Никарагуа. город Манагуа'
+    hover: "Манагуа: колоннада городского здания и фонтан"
+    alt: "Белое здание с колоннадой и флагом Никарагуа за струями фонтана, Манагуа"
 - day: 2
   title: Манагуа — Леон-Вьехо — Леон — Гранада
   places:
@@ -100,7 +101,8 @@ itinerary:
     парк вулкана Масая и на ремесленный рынок. Ночь в Real La Merced. Питание: завтрак.'
   images:
   - src: /media/tours/vip-kosta-rika-nikaragua/masaya-place-generated-20261009-v1.webp
-    alt: Ремесленные изделия на рынке Масая
+    hover: "Масая: ремесленные товары и посетители рынка"
+    alt: "Ряды плетеных сумок, тканей и керамики под каменной аркадой рынка Масая, Никарагуа"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_nicaragua_granada_masaya_volcano_crafts
@@ -133,7 +135,8 @@ itinerary:
     Питание: завтрак.'
   images:
   - src: /media/countries/nicaragua/featureBands-1-enhanced-20261002.webp
-    alt: 'На фото: вулканы на острове Ометепе в Никарагуа'
+    hover: "Ометепе: вулканическая вершина за деревьями"
+    alt: "Конус вулкана на острове Ометепе над деревьями и сухой травой, Никарагуа"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_nicaragua_ometepe_ojo_de_agua_ferry

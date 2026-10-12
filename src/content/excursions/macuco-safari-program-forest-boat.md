@@ -12,7 +12,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/excursions/macuco-safari-group-add-on/hero-enhanced-20261005.webp
-  alt: 'На фото: Люди в лодке на Макуко -Сафари'
+  hover: "Красная лодка с людьми в бурном потоке"
+  alt: "Люди в красной надувной лодке среди бурлящей воды и небольших водопадов, Бразилия"
   status: approved
 gallery: []
 lead: Макуко Сафари проходит после знакомства с бразильской стороной водопадов Игуасу.

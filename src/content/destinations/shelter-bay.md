@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Шелтер-Бей на карибской стороне Панамского канала, бухта с мариной и яхтенными маршрутами.
 hero:
   src: /media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/shelter-bay-place-generated-20261009-v1.webp
-  alt: Яхты у причалов марины Шелтер-Бей
+  hover: "Шелтер-Бей: яхтенная марина у зеленого берега"
+  alt: "Парусные яхты у причалов Шелтер-Бей на спокойной воде перед тропическим лесом, Панама"
 gallery: []
 themes:
 - theme_cruises

@@ -40,7 +40,8 @@ priceNote: 10 043 USD на человека. Стоимость рассчита
 dates: []
 hero: &id002
   src: "/media/destinations/destination_brazil_gramadu/original-01-20261010.jpg"
-  alt: "Грамаду в горах Серра-Гауша, Бразилия"
+  hover: "Здание с балконами и высокими островерхими крышами"
+  alt: "Светлое многоэтажное здание с декоративными фасадами, балконами и крутыми крышами"
   status: approved
 gallery: []
 featured: false

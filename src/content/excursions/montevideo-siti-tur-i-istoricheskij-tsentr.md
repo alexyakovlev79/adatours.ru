@@ -22,9 +22,11 @@ hero:
   alt: Монтевидео, столица Уругвая
 gallery:
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-0-src-enhanced-20261007.webp"
-    alt: Городской пейзаж Монтевидео
+    hover: "Монтевидео: огни городских улиц у воды"
+    alt: "Вечерняя панорама Монтевидео с подсвеченными улицами, высотными зданиями и берегом, Уругвай"
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-1-src-enhanced-20261007.webp"
-    alt: Монтевидео и побережье Рио-де-ла-Плата
+    hover: "Монтевидео: дворец Сальво со стороны городского сквера"
+    alt: "Башня дворца Сальво за зеленым сквером и пальмами в Монтевидео, Уругвай"
   - src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
     hover: "Монтевидео: старинная башня в конце городской улицы"
     alt: "Городская улица и историческое здание с башней в Монтевидео, Уругвай"

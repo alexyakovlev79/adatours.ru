@@ -20,7 +20,8 @@ hero:
   alt: "на фото:вулкан Котопакси (Котопахи) в Эквадоре"
 gallery:
   - src: "/media/excursions/kotopaksi-natsionalnyj-park/gallery-0-src-enhanced-20261007.webp"
-    alt: "на фото:вулкан Котопакси (Котопахи) в Эквадоре"
+    hover: "Котопакси: снежная вершина над горной равниной"
+    alt: "Заснеженный конус Котопакси над травянистой равниной под полосой облаков, Эквадор"
   - src: "/media/excursions/kotopaksi-natsionalnyj-park/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото:вулкан Котопакси (Котопахи) в Эквадоре"
 route:

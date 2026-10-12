@@ -9,7 +9,8 @@ destinationType: city
 summary: Филадельфия в парагвайском Чако, город меннонитских общин и база поездок по региону.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/filadelfia-place-generated-20261009-v1.webp
-  alt: Улица Филадельфии в парагвайском Чако
+  hover: "Филадельфия в Чако: улица среди низких домов"
+  alt: "Широкая тихая улица Филадельфии с низкими домами и тенистыми деревьями, Парагвай"
 gallery: []
 themes:
 - theme_culture

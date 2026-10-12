@@ -9,7 +9,8 @@ destinationType: island
 summary: Коко-Бандеро в панамском Сан-Бласе, островная территория с коралловым окружением и прозрачной карибской водой.
 hero:
   src: /media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/coco-bandero-island-place-generated-20261009-v1.webp
-  alt: Пляж и рифовое мелководье Коко-Бандеро
+  hover: "Коко-Бандеро: пальмовый остров среди рифового мелководья"
+  alt: "Маленький пальмовый остров Коко-Бандеро с белым песком и темными рифовыми пятнами в прозрачной воде, Панама"
 gallery: []
 themes:
 - theme_beach

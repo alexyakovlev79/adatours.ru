@@ -9,7 +9,8 @@ destinationType: island
 summary: Остров Порвенир в панамском Сан-Бласе, небольшая карибская остановка в территории народа гуна.
 hero:
   src: /media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/el-porvenir-island-place-generated-20261009-v1.webp
-  alt: Берег и причал острова Порвенир
+  hover: "Остров Порвенир: пальмы и причал у карибского мелководья"
+  alt: "Пальмовый берег острова Порвенир с белым песком, небольшим причалом и прозрачной водой, Панама"
 gallery: []
 themes:
 - theme_beach

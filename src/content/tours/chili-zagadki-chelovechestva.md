@@ -96,7 +96,8 @@ itinerary:
     После прибытия трансфер в отель.
   images:
   - src: "/media/tours/chili-samoe-luchshee/itinerary-10-images-1-src-enhanced-20261007.webp"
-    alt: 'На фото: истуканы острова Пасхи в Чили'
+    hover: "Остров Пасхи: ряд моаи на каменной платформе"
+    alt: "Длинный ряд каменных моаи на платформе острова Пасхи под облачным небом, Чили"
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-11-images-1-enhanced-20261006.webp
     hover: "Сантьяго: историческая архитектура рядом со стеклянными зданиями и башней"
     alt: "Старинное угловое здание и телебашня среди современной застройки Сантьяго, Чили"
@@ -206,7 +207,8 @@ currency: USD
 priceNote: $3876
 hero:
   src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
-  alt: 'На фото: истуканы острова Пасхи в Чили'
+  hover: "Остров Пасхи: моаи в свете заходящего солнца"
+  alt: "Темные силуэты четырех моаи на острове Пасхи на фоне золотого заката, Чили"
 routeCountries:
 - country_chile
 routeDestinations:

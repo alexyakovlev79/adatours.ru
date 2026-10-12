@@ -181,7 +181,8 @@ currency: USD
 priceNote: $2119.
 hero:
   src: /media/excursions/papallakta/gallery-1-enhanced-20261001.webp
-  alt: 'на фото: Эквадор'
+  hover: "Папальякта: горячий бассейн в горной долине"
+  alt: "Пар над открытым голубым термальным бассейном среди зеленых склонов Папальякты, Эквадор"
 routeCountries:
 - country_ecuador
 routeDestinations:

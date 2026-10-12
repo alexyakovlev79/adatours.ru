@@ -12,7 +12,8 @@ searchAliases: []
 themes: ["theme_culture"]
 hero:
   src: /media/excursions/samaipata-tur/gallery-0-src-enhanced-20261008.webp
-  alt: Самаипата в предгорьях Анд
+  hover: "Эль-Фуэрте в Самаипате: руины и обработанный скальный массив"
+  alt: "Каменные основания построек перед большим ступенчатым скальным массивом Эль-Фуэрте, Самаипата, Боливия"
 gallery:
   - src: /media/excursions/samaipata-tur/hero-src-enhanced-20261008.webp
     alt: "Высеченные в скале уступы Фуэрте-де-Самайпата, Боливия"

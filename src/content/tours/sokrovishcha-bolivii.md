@@ -159,7 +159,8 @@ itinerary:
     Прибытие в Уюни примерно в 18:00. Ночевка в Luna Salada.
   images:
   - src: /media/excursions/uyuni-na-2-dnya/gallery-1-enhanced-20261006.webp
-    alt: "На фото: солончак Уюни в Боливии"
+    hover: "Уюни: внедорожник на соляной равнине с отражениями облаков"
+    alt: "Внедорожник с багажом на крыше и открытой дверью на влажном солончаке Уюни, Боливия"
 - day: 9
   title: Уюни - Ла-Пас - Копакабана - Солнечный остров
   places:
@@ -241,7 +242,8 @@ currency: USD
 priceNote: $4953
 hero:
   src: /media/excursions/uyuni-na-2-dnya/hero-enhanced-20261006.webp
-  alt: 'На фото: солончак Уюни в Боливии'
+  hover: "Уюни: прыжок над бескрайней соляной равниной"
+  alt: "Человек в прыжке над белой поверхностью солончака Уюни под ярко-синим небом, Боливия"
 routeCountries:
 - country_bolivia
 routeDestinations:

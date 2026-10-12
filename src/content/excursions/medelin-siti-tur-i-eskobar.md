@@ -23,7 +23,8 @@ hero:
   alt: "Панорама Медельина с высотными домами и горами, Колумбия"
 gallery:
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-0-src-enhanced-20261008.webp
-    alt: Скульптуры Фернандо Ботеро в Медельине
+    hover: "Картина Ботеро: всадник на рыжей лошади"
+    alt: "Картина Фернандо Ботеро с всадником на рыжей лошади в темной музейной раме, Колумбия"
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-1-src-enhanced-20261008.webp
     alt: Городской пейзаж Медельина
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-3-src-enhanced-20261008.webp

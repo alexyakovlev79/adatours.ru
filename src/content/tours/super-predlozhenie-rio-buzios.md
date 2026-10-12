@@ -195,7 +195,8 @@ currency: USD
 priceNote: $2078
 hero:
   src: /media/tours/luxury-brazil-11d/itinerary/day-10-enhanced-20260930.webp
-  alt: 'На фото: бразильский морской курорт Бузиос'
+  hover: "Бузиос: песчаный замок на берегу бухты"
+  alt: "Высокий песчаный замок на пляже Бузиоса и лодки в голубой бухте, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

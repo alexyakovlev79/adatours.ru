@@ -295,7 +295,8 @@ itinerary:
         text: "Возвращение в отель."
     images:
       - src: /media/tours/brazil-gems-14d/itinerary/day-12-enhanced-20261001.webp
-        alt: "Бразильская сторона водопадов Игуасу"
+        hover: "Игуасу: каскады, окруженные тропической зеленью"
+        alt: "Несколько ярусов водопадов Игуасу среди густого зеленого леса под голубым небом"
         intendedSlot: "itinerary:day-12"
   - excursionRef: excursion_source_makuko_safari
     places: ["Национальный парк Игуасу"]

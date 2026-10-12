@@ -156,7 +156,8 @@ currency: USD
 priceNote: "3480 USD на человека, DBL; Arena Leme 3 ночи, Asalem 2, Sandi 2."
 hero:
   src: /media/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios/itinerary-day-10-enhanced-20261006.webp
-  alt: Вкусы Бразилии
+  hover: "Закат над лодками в бухте Бузиоса"
+  alt: "Небольшие лодки и парусные яхты на воде Бузиоса под розово-оранжевым небом, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

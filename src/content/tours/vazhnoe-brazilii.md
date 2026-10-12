@@ -183,7 +183,8 @@ itinerary:
     После экскурсии возвращение в отель.'
   images:
   - src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-4-enhanced-20261006.webp
-    alt: Фоз-ду-Игуасу
+    hover: "Игуасу: водопады и пенящиеся потоки в зеленом ущелье"
+    alt: "Широкие каскады Игуасу и бурлящая вода в ущелье с зелеными скальными берегами"
 - day: 7
   title: Фоз-ду-Игуасу
   places:

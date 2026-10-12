@@ -262,7 +262,8 @@ currency: USD
 priceNote: $4072
 hero:
   src: /media/tours/luxury-brazil-11d/itinerary/day-11-enhanced-20260930.webp
-  alt: 'На фото: город Рио-де-Жанейро в Бразилии'
+  hover: "Зеленый скалистый берег над голубым морем"
+  alt: "Голубое море у скалистого берега с густой зеленью и горной вершиной, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_argentina_ostrov_martilo/hero-generated-20261008-resumed.webp
-  alt: Остров Мартильо — Аргентина
+  hover: "Остров Мартильо: пингвины у прибоя на фоне снежных гор"
+  alt: "Пингвины на галечном берегу острова Мартильо с заснеженными горами вдали, Аргентина"
 gallery: []
 relatedDestinations: []
 featuredTours: []

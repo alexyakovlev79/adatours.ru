@@ -10,7 +10,8 @@ summary: Каракас — столица Венесуэлы с музеями,
 searchAliases: []
 hero:
   src: /media/destinations/caracas/hero-enhanced-20261003.webp
-  alt: 'На фото: столица Венесуэлы, город Каракас'
+  hover: "Каракас: городская долина и горы на горизонте"
+  alt: "Широкая панорама застройки Каракаса в горной долине под полосой облаков, Венесуэла"
 gallery:
 - src: /media/destinations/caracas/gallery-1-enhanced-20261003.webp
   hover: "Каракас: жилые дома и узкая улица на холмистом склоне"

@@ -242,7 +242,8 @@ itinerary:
     Прибытие в Арекипу и размещение в гостинице Conde de Lemos Inn 3*. Свободное время для знакомства с городом.
   images:
   - src: "/media/excursions/arekipa-tur-v-belom-gorode/gallery-3-src-enhanced-20261007.webp"
-    alt: Арекипа
+    hover: "Арекипа и вулкан в обрамлении каменной арки"
+    alt: "Заснеженный вулкан над крышами Арекипы, вид через светлую каменную арку, Перу"
 - day: 10
   title: Арекипа - Наска
   places:

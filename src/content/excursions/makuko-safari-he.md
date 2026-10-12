@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Стоимость — $178 на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/macuco-safari-group-add-on/hero-enhanced-20261005.webp"
-  alt: "На фото: Люди в лодке на Макуко -Сафари"
+  hover: "Красная лодка с людьми в бурном потоке"
+  alt: "Люди в красной надувной лодке среди бурлящей воды и небольших водопадов, Бразилия"
 gallery:
   - src: "/media/excursions/makuko-safari-he/gallery-0-src-enhanced-20261007.webp"
     alt: "На фото: Экскурсия Макуко -Сафари"

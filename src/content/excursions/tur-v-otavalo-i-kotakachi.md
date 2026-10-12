@@ -22,7 +22,8 @@ gallery:
   - src: "/media/excursions/tur-v-otavalo-i-kotakachi/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: город Котапачи, Эквадор"
   - src: "/media/excursions/tur-v-otavalo-i-kotakachi/gallery-1-src-enhanced-20261007.webp"
-    alt: "на фото: город Котапачи, Эквадор"
+    hover: "Город у подножия горы в Эквадоре"
+    alt: "Городская застройка у подножия зеленого вулканического массива под облаками, Эквадор"
   - src: "/media/excursions/tur-v-otavalo-i-kotakachi/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: город Котапачи, Эквадор"
 route:

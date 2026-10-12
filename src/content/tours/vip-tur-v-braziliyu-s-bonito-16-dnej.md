@@ -256,7 +256,8 @@ itinerary:
     **Ограничение:** всего 8 человек в день.'
   image:
     src: /media/tours/brazil-adventure-17d/itinerary/day-10-enhanced-20260930.webp
-    alt: Голубая пещера Грута-ду-Лагу-Азул в Бонито, карстовое озеро и сталактиты Бразилии
+    hover: "Бонито: глубокая голубая вода под сводом пещеры"
+    alt: "Ярко-синее озеро под множеством сталактитов в пещере Бонито, Бразилия"
 - excursionRef: excursion_brazil_bonito_abismo_anhumas
   places: []
 - day: 10

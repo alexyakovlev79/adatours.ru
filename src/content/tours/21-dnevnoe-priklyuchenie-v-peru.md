@@ -101,7 +101,8 @@ itinerary:
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-3-images-0-src-enhanced-20261007.webp"
     alt: 'на фото: Ика'
   - src: /media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261005.webp
-    alt: 'на фото: Линии Наска'
+    hover: "Наска: рисунок колибри на поверхности пустыни"
+    alt: "Геоглиф колибри с длинным клювом и расправленными крыльями в пустыне Наска, Перу"
 - day: 5
   title: Наска - Арекипа
   places:
@@ -113,7 +114,8 @@ itinerary:
     После полета поездка на автобусе в Арекипу. Дорога занимает около 9 часов. По пути пейзажи постепенно меняются, а к вечеру вы прибываете в колониальный город, окруженный горами.
   images:
   - src: /media/excursions/arekipa-tur-v-belom-gorode/gallery-0-src-enhanced-20261007.webp
-    alt: 'на фото: Арекипа'
+    hover: "Арекипа: зеленая городская площадь среди белых фасадов"
+    alt: "Площадь Арекипы с пальмами, газонами, прохожими и белыми зданиями, Перу"
 - day: 6
   title: Арекипа
   places:

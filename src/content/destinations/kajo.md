@@ -10,7 +10,8 @@ summary: В Кайо находятся заповедники, тропичес
 searchAliases: []
 hero:
   src: /media/destinations/kajo/hero-enhanced-20261002.webp
-  alt: 'На фото: руины майя Шунантунич, в Кайо Белиз'
+  hover: "Шунантунич: пирамида майя среди тропической зелени"
+  alt: "Каменная пирамида Шунантунич на зеленом склоне за деревьями, Кайо, Белиз"
 gallery:
 - src: /media/destinations/kajo/gallery-1-enhanced-20261002.webp
   alt: "Пальмы у залива на фоне зелёной остроконечной горы"

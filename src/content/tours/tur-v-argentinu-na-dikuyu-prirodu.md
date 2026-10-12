@@ -202,7 +202,8 @@ itinerary:
       **Продолжительность:** весь день.
     images:
       - src: /media/tours/issledovanie-argentiny/itinerary-day-2-enhanced-20261006.webp
-        alt: "Полуостров Вальдес"
+        hover: "Набережные городских доков в вечернем свете"
+        alt: "Городские доки с белым пешеходным мостом и высотными зданиями на закате, Аргентина"
         intendedSlot: "itinerary:day-4"
   - day: 5
     title: "Пуэрто-Мадрин - Корриентес - Ибера"

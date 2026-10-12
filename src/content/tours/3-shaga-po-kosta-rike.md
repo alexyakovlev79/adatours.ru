@@ -198,7 +198,8 @@ currency: USD
 priceNote: $2136
 hero:
   src: /media/tours/3-shaga-po-kosta-rike/hero-src-enhanced-20261007.webp
-  alt: 'На фото: пляжный отдых в Коста-Рике'
+  hover: "Закат за пальмами на побережье Коста-Рики"
+  alt: "Пальмы на зеленом морском берегу в золотистом свете заходящего солнца, Коста-Рика"
 routeCountries:
 - country_costa_rica
 routeDestinations:

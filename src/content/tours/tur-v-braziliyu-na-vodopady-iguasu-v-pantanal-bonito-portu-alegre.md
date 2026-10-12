@@ -143,7 +143,8 @@ itinerary:
     Посещение строго ограничено: в день сюда допускаются только 2 группы по 8 человек.'
   images:
   - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-11-images-1-enhanced-20261006.webp
-    alt: 'На фото: пещера в Бонито, Бразилия'
+    hover: "Пещера Бонито: голубая вода среди известняковых скал"
+    alt: "Голубое подземное озеро под сталактитами, окруженное светлыми скалами, Бонито, Бразилия"
 - day: 8
   title: Бонито - Игуасу
   places:
@@ -214,7 +215,8 @@ itinerary:
     После программы трансфер в **Parador Casa da Montanha**.'
   images:
   - src: /media/tours/south-brazil-12d/gallery-1-src-enhanced-20261001.webp
-    alt: На фото:город Грамаду в Бразилии
+    hover: "Грамаду: цветники и дома вдоль городской улицы"
+    alt: "Улица Грамаду с домами под крутыми крышами и яркими цветниками, Бразилия"
 - day: 13
   title: Порту-Алегри
   places:
@@ -246,7 +248,8 @@ currency: USD
 priceNote: $14051
 hero:
   src: /media/destinations/bonito/hero-enhanced-20261001.webp
-  alt: 'На фото: пещера в Бонито Бразилия'
+  hover: "Грот Голубого озера в Бонито: сталактиты над синей водой"
+  alt: "Длинные сталактиты над ярко-синим озером и каменистым берегом пещеры Бонито, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

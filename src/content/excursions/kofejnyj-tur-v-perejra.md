@@ -22,7 +22,8 @@ hero:
   alt: "Коричневые кофейные зерна на мокром зеленом листе и деревянной поверхности"
 gallery:
   - src: "/media/excursions/kofejnyj-tur-v-perejra/gallery-0-src-enhanced-20261007.webp"
-    alt: Кофейные напитки в Колумбии
+    hover: "Бокалы с напитком на фоне ярких дверей"
+    alt: "Три бокала янтарного напитка на деревянном столе перед желто-синими дверями, Колумбия"
   - src: "/media/excursions/kofejnyj-tur-v-perejra/gallery-1-src-enhanced-20261007.webp"
     alt: Продукты на основе кофе
 route:

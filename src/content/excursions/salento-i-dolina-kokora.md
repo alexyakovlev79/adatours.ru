@@ -35,7 +35,8 @@ gallery:
   - src: "/media/excursions/salento-i-dolina-kokora/gallery-4-src-enhanced-20261007.webp"
     alt: Экологическая тропа в долине Кокора
   - src: /media/excursions/salento-i-dolina-kokora/gallery-5-src-enhanced-20261007.webp
-    alt: Улицы Саленто, Колумбия
+    hover: "Уличная роспись с птицей на фасаде колумбийского дома"
+    alt: "Фасад дома с большой разноцветной птицей, зелеными и желтыми дверями, Колумбия"
 route:
   - Перейра
   - долина Кокора

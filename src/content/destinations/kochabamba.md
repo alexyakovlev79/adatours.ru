@@ -10,12 +10,15 @@ summary: Кочабамба расположена в долине среди А
 searchAliases: []
 hero:
   src: /media/destinations/kochabamba/hero-enhanced-20261003.webp
-  alt: 'На фото: город Кочабамба в Боливии'
+  hover: "Кочабамба: церковь с двумя башнями на фоне зеленого склона"
+  alt: "Белая церковь с двумя купольными башнями над черепичными крышами, Кочабамба, Боливия"
 gallery:
 - src: /media/destinations/kochabamba/gallery-1-enhanced-20261003.webp
-  alt: 'На фото: город Кочабамба в Боливии'
+  hover: "Кочабамба: парковый фонарь в тени деревьев"
+  alt: "Старинный двойной фонарь среди зеленых деревьев под голубым небом, Кочабамба, Боливия"
 - src: /media/destinations/kochabamba/gallery-2-enhanced-20261003.webp
-  alt: 'На фото: город Кочабамба в Боливии'
+  hover: "Кочабамба: белый храм среди ухоженных садов"
+  alt: "Белый храм с высокой ступенчатой башней, широкой лестницей и цветниками, Кочабамба, Боливия"
 - src: /media/destinations/kochabamba/gallery-3-enhanced-20261003.webp
   alt: 'На фото: город Кочабамба в Боливии'
 - src: /media/destinations/kochabamba/gallery-4-enhanced-20261003.webp

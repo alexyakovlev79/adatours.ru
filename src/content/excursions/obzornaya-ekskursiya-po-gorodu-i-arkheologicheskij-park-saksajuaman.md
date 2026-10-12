@@ -22,7 +22,8 @@ hero:
   alt: Кенко рядом с Куско, Перу
 gallery:
   - src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-0-src-enhanced-20261007.webp"
-    alt: Саксайуаман в Куско, Перу
+    hover: "Саксайуаман: массивная каменная кладка и лестница"
+    alt: "Проем и каменная лестница в стенах из крупных блоков Саксайуамана, Куско, Перу"
   - src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-1-src-enhanced-20261007.webp"
     alt: Пука-Пукара рядом с Куско
   - src: "/media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-2-src-enhanced-20261007.webp"

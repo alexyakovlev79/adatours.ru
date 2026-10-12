@@ -22,7 +22,8 @@ hero:
   alt: Монтевидео, Уругвай
 gallery:
   - src: /media/excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej/gallery-0-src-enhanced-20261007.webp
-    alt: Городской пейзаж Монтевидео
+    hover: "Монтевидео: башня дворца Сальво и пальмы"
+    alt: "Высокая башня дворца Сальво за пальмами на площади Монтевидео, Уругвай"
   - src: "/media/excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej/gallery-1-src-enhanced-20261007.webp"
     alt: Монтевидео и побережье Рио-де-ла-Плата
   - src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp

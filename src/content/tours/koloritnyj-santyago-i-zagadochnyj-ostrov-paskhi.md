@@ -68,7 +68,8 @@ itinerary:
     Ночь в отеле в Сантьяго.
   images:
   - src: /media/destinations/valparaiso-i-vinya-del-mar/hero-enhanced-20261005.webp
-    alt: Вальпараисо
+    hover: "Уличное искусство на оранжевом доме Вальпараисо"
+    alt: "Оранжевый фасад с яркими росписями, цветными окнами и дверями в Вальпараисо, Чили"
 - day: 3
   title: Сантьяго - остров Пасхи - Оронго
   places:
@@ -190,7 +191,8 @@ currency: USD
 priceNote: $2577
 hero:
   src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
-  alt: Колоритный Сантьяго и загадочный остров Пасхи
+  hover: "Остров Пасхи: моаи в свете заходящего солнца"
+  alt: "Темные силуэты четырех моаи на острове Пасхи на фоне золотого заката, Чили"
 routeCountries:
 - country_chile
 routeDestinations:

@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_reka_aruau/hero-generated-20261008-resumed.webp
-  alt: Река Аруау — Бразилия
+  hover: "Река Аруау: лодка, лесные берега и отражения в воде"
+  alt: "Нос деревянной лодки на темной реке Аруау среди густого тропического леса, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

@@ -9,7 +9,8 @@ destinationType: city
 summary: Масая в Никарагуа, город с ремесленным рынком возле одноименного вулканического района.
 hero:
   src: /media/tours/vip-kosta-rika-nikaragua/masaya-place-generated-20261009-v1.webp
-  alt: Ремесленные изделия на рынке Масая
+  hover: "Масая: ремесленные товары и посетители рынка"
+  alt: "Ряды плетеных сумок, тканей и керамики под каменной аркадой рынка Масая, Никарагуа"
 gallery: []
 themes:
 - theme_culture

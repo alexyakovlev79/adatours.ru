@@ -119,7 +119,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
-    alt: Рио-Селесте
+    hover: "Рио-Селесте: лесной водопад перед смотровой площадкой"
+    alt: "Туристы у водопада Рио-Селесте с голубой водой в тропическом лесу, Коста-Рика"
 - day: 4
   title: Аренал - висячие мосты Mistico - Тамариндо
   places:
@@ -198,7 +199,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Коста-Рика: остроконечная церковная башня над городской улицей"
+    alt: "Неоготическая церковь с высокой башней у зеленой площади в Коста-Рике"
 included:
 - Транспорт.
 - Входные билеты в объекты маршрута.

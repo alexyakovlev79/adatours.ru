@@ -11,7 +11,8 @@ hero:
   alt: Горный пейзаж Перу
 gallery:
   - src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
-    alt: Мачу-Пикчу в Перу
+    hover: "Мачу-Пикчу: древние террасы над глубокой горной долиной"
+    alt: "Каменные постройки и террасы Мачу-Пикчу среди гор и облаков, Перу"
   - src: /media/destinations/cusco/hero-enhanced-20260930.webp
     alt: Куско, Перу
 regions:

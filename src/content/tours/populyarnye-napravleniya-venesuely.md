@@ -309,7 +309,8 @@ currency: USD
 priceNote: $4744
 hero:
   src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-10-enhanced-20261007.webp"
-  alt: Популярные Направления Венесуэлы
+  hover: "Канайма: отвесная скала и длинный поток над лесом и облаками"
+  alt: "Водопад падает с высокого столового плато в облачную долину Канаймы, Венесуэла"
 routeCountries:
 - country_venezuela
 routeDestinations:

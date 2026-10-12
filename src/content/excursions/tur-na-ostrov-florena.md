@@ -19,12 +19,14 @@ priceFrom: 366
 currency: USD
 hero:
   src: /media/excursions/tur-na-ostrov-florena/hero-enhanced-20261001.webp
-  alt: Морские львы на Галапагосских островах
+  hover: "Галапагосы: морские львы отдыхают у бирюзового океана"
+  alt: "Морские львы на светлом песчаном пляже Галапагосских островов, Эквадор"
 gallery:
   - src: /media/excursions/ostrov-santa-krus/gallery-1-enhanced-20261001.webp
     alt: Природа Галапагосских островов
   - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
-    alt: Дикая природа острова Флорена
+    hover: "Галапагосы: большая черепаха на лесной дорожке"
+    alt: "Гигантская черепаха на грунтовой тропе среди деревьев, Галапагосы, Эквадор"
 route:
   - Пуэрто-Айора
   - Остров Санта-Крус

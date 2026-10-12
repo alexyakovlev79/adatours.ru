@@ -31,7 +31,8 @@ gallery:
 - src: /media/destinations/granada/gallery-9-enhanced-20261004.webp
   alt: 'На фото: город Гранада в Никарагуа'
 - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-regenerated-20261011-v2.webp
-  alt: 'на фото: Гранада, Никарагуа'
+  hover: "Гранада: желтые и красные дома вдоль улицы в вечернем свете"
+  alt: "Тихая мощеная улица Гранады с цветными фасадами и церковной башней, Никарагуа"
 facts: []
 featureBands: []
 relatedDestinations: []

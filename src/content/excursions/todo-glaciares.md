@@ -15,7 +15,8 @@ priceFrom: 336
 currency: USD
 hero:
   src: /media/excursions/todo-glaciares/hero-enhanced-20261006.webp
-  alt: "Ледник Перито-Морено, Аргентина"
+  hover: "Патагония: зубчатый ледяной фронт у воды и горных склонов"
+  alt: "Голубая стена ледника над озером у снежных гор, Патагония, Аргентина"
 gallery: []
 route:
   - "Эль-Калафате"

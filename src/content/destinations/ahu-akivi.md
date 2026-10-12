@@ -10,7 +10,8 @@ summary: Аху-Акиви на острове Пасхи известна ря�
 searchAliases: []
 hero:
   src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-09-generated-20261008-v1.webp
-  alt: Семь моаи на платформе Аху-Акиви, остров Пасхи, Чили
+  hover: "Аху-Акиви: статуи моаи на травянистом склоне"
+  alt: "Ряд каменных моаи на платформе Аху-Акиви, остров Пасхи, Чили"
 gallery: []
 themes:
 - theme_culture

@@ -9,7 +9,8 @@ destinationType: national_park
 summary: Национальный парк Чагрес в Панаме, речные и лесные территории с поселениями народа эмбера.
 hero:
   src: /media/tours/panama-2024/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: Национальный парк Чагрес
+  hover: "Чагрес: лодки у каменистого берега в тропическом лесу"
+  alt: "Люди в узких деревянных лодках на реке среди леса, парк Чагрес, Панама"
 gallery:
 - src: /media/tours/panama-2024/itinerary-2-images-0-src-enhanced-20261007.webp
   hover: "Парк Чагрес: панорама воды и покрытых лесом холмов"

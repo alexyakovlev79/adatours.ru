@@ -124,7 +124,8 @@ itinerary:
     согласуют при бронировании. Ночь в Перейре.'
   images:
   - src: /media/destinations/pereira/hero-src-enhanced-20261007.webp
-    alt: Долина Кокора рядом с Перейрой, Колумбия
+    hover: "Долина Кокора: тонкие пальмы над травянистыми склонами"
+    alt: "Высокие пальмы долины Кокора над зелеными пастбищами, Колумбия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_colombia_coffee_region_zipline_horseback

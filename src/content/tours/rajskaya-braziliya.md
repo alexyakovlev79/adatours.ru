@@ -56,7 +56,8 @@ itinerary:
     После спуска поездка по историческому центру Рио. Вы увидите старые церкви, монастыри, главный собор и здания колониальной архитектуры.'
   images:
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-2-enhanced-20261006.webp
-    alt: Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: ипподром и городские кварталы на фоне гор"
+    alt: "Зеленый ипподром среди кварталов Рио-де-Жанейро у гор, Бразилия"
 - day: 3
   title: Рио-де-Жанейро - Корковадо и Христос Искупитель
   places:
@@ -118,7 +119,8 @@ itinerary:
     Дополнительно'
   images:
   - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-11-enhanced-20261006.webp
-    alt: Фоз-ду-Игуасу
+    hover: "Игуасу вблизи: смотровая площадка перед стеной падающей воды"
+    alt: "Туристы на деревянных мостках у широких потоков Игуасу"
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
 - excursionRef: excursion_source_makuko_safari

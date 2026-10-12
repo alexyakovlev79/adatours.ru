@@ -19,7 +19,8 @@ currency: USD
 priceNote: "Стоимость экскурсии — $171."
 hero:
   src: /media/excursions/ostrov-rosario/hero-src-enhanced-20261007.webp
-  alt: Острова Росарио в Карибском море, Колумбия
+  hover: "Острова Росарио: цветные домики вдоль карибского берега"
+  alt: "Яркие пляжные домики с соломенными крышами на островах Росарио, Колумбия"
 gallery:
   - src: "/media/excursions/ostrov-rosario/gallery-0-src-enhanced-20261007.webp"
     alt: Побережье Картахены на пути к островам Росарио

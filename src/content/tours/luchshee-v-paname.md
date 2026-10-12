@@ -60,7 +60,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/tours/luchshee-v-paname/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: на фото:Панамский канал
+    hover: "Панамский канал с высоты: корабль на подходе к шлюзам"
+    alt: "Судно подходит к шлюзам Панамского канала среди зеленых берегов, Панама"
   - src: "/media/tours/luchshee-v-paname/itinerary-1-images-1-src-enhanced-20261007.webp"
     alt: 'на фото: Панама - Сити'
 - day: 3
@@ -81,7 +82,8 @@ itinerary:
     Питание: завтрак, обед.
   images:
   - src: /media/tours/panama-2024/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Национальный парк Чагрес
+    hover: "Чагрес: лодки у каменистого берега в тропическом лесу"
+    alt: "Люди в узких деревянных лодках на реке среди леса, парк Чагрес, Панама"
 - day: 4
   title: Панама-Сити - Давид - залив Чирики
   places:
@@ -131,7 +133,8 @@ itinerary:
     Ночь в отеле.
   images:
   - src: /media/tours/luchshee-v-tsentralnoj-amerike/baru-volcano-place-generated-20261009-v1.webp
-    alt: Горные склоны и дальние виды вулкана Бару
+    hover: "Бару: горные склоны и облака ниже вершины"
+    alt: "Каменистая вершина вулкана Бару над зелеными долинами и облаками, Панама"
 - day: 7
   title: Бокете - Бокас-дель-Торо
   places:

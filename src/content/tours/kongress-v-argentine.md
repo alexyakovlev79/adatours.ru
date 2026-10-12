@@ -97,7 +97,8 @@ itinerary:
       Вечером участники отправляются на ужин в ресторан Fervor.
     images:
       - src: /media/excursions/nezabyvaemoe-tango-shou/gallery-2-enhanced-20261006.webp
-        alt: "Аргентинская кухня"
+        hover: "Мясные блюда: стейки и нарезанное мясо с овощными гарнирами"
+        alt: "Коллаж из четырех мясных блюд с овощами и гарнирами"
         intendedSlot: "itinerary:day-4"
   - day: 5
     title: "Отъезд"

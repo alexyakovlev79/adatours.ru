@@ -99,7 +99,8 @@ itinerary:
     Полет выполняется при наборе группы **от 4 человек**, поэтому к вам могут присоединиться другие пассажиры.'
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-4-enhanced-20261006.webp
-    alt: Статуя Христа-Искупителя на фоне синего неба в Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: статуя Христа с распростертыми руками"
+    alt: "Христос-Искупитель на фоне белых облаков и синего неба, Рио-де-Жанейро, Бразилия"
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio
   places: []
 - day: 4

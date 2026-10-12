@@ -162,7 +162,8 @@ itinerary:
     После экскурсии возвращение в гостиницу.
   images:
   - src: /media/tours/manyashchij-peru-kolumbiya/sacred-valley-place-generated-20261009-v1.webp
-    alt: Священная долина инков
+    hover: "Священная долина: извилистая река между сельскими поселениями и Андами"
+    alt: "Река Урубамба среди полей и гор Священной долины инков, Перу"
 - day: 6
   title: Куско - Пуно
   places:
@@ -220,7 +221,8 @@ itinerary:
     После экскурсии возвращение в Пуно. Ночь в отеле 3*.
   images:
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
-    alt: Пуно
+    hover: "Острова Урос: жители в цветной одежде среди тростниковых построек"
+    alt: "Женщины в ярких юбках на тростниковом острове Урос, озеро Титикака, Перу"
 - day: 8
   title: Пуно - Колка
   places:

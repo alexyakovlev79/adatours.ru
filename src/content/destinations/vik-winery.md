@@ -11,9 +11,9 @@ summary: VIK находится среди холмов долины Милья�
   образцов.
 hero:
   src: /media/tours/chile-argentina-private-grand-tour-17-days/millahue-generated-20261011-v1.webp
-  alt: Виноградники и пологие холмы долины Мильяуэ — иллюстрация
+  alt: "Ряды виноградников на пологих холмах долины Мильяуэ в вечернем свете, Чили"
   status: approved
-  hover: Виноградники и пологие холмы долины Мильяуэ — иллюстрация
+  hover: "Мильяуэ: виноградные склоны у гор на закате"
 gallery: []
 themes:
 - theme_gastronomy_wine

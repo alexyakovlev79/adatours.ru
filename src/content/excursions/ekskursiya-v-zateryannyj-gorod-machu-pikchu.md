@@ -19,7 +19,8 @@ currency: USD
 priceNote: "Основная стоимость — $889. Для 2 человек — $630 на человека, для 3 человек — $544 на человека, для 4 человек — $502 на человека."
 hero:
   src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
-  alt: Мачу-Пикчу в горах Перу
+  hover: "Мачу-Пикчу: древние террасы над глубокой горной долиной"
+  alt: "Каменные постройки и террасы Мачу-Пикчу среди гор и облаков, Перу"
 gallery:
   - src: "/media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-0-src-enhanced-20261007.webp"
     hover: "Куско: церковный фасад и цветники у оживлённой площади"

@@ -177,7 +177,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-4-enhanced-20261001.webp
-    alt: Кито
+    hover: "Кито в сумерках: мокрая площадь и фонтан под розовым небом"
+    alt: "Площадь Кито с фонтаном и вечерними огнями на фоне облачного склона, Эквадор"
 - day: 4
   title: Баньос - Риобамба
   places:
@@ -498,7 +499,8 @@ itinerary:
     Включены завтрак и обед.
   images:
   - src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Остров Сеймур-Норте
+    hover: "Сеймур-Норте: голубоногая олуша у воды в вечернем свете"
+    alt: "Голубоногая олуша на каменистом берегу острова Сеймур-Норте, Галапагосы, Эквадор"
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []
 - excursionRef: excursion_source_ostrov_plasa
@@ -558,7 +560,8 @@ currency: USD
 priceNote: $3995
 hero:
   src: "/media/tours/aktivnyj-ekvador-i-trekking/itinerary-0-images-0-src-enhanced-20261007.webp"
-  alt: 'Лучшее в Эквадоре: Гарантированные заезды'
+  hover: "Кито: центральная площадь и городские кварталы под облаками"
+  alt: "Зеленая площадь среди белых исторических зданий Кито, Эквадор"
 routeCountries:
 - country_ecuador
 routeDestinations:

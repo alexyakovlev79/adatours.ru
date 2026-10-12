@@ -17,7 +17,8 @@ heroVideo:
   sourceUrl: https://www.pexels.com/pt-br/video/arquitetonico-arquitetura-praia-litoral-4875313/
 gallery:
   - src: /media/home/lencois-enhanced-20260930.webp
-    alt: Дюны и лагуны Ленсойс-Мараньенсис
+    hover: "Ленсойс-Мараньенсис: цепочки лагун между белыми песчаными дюнами"
+    alt: "Белые дюны и бирюзовые лагуны Ленсойс-Мараньенсис с высоты, Бразилия"
   - src: /media/home/amazon-enhanced-20260930.webp
     hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
     alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"

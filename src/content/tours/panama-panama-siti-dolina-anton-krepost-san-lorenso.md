@@ -143,7 +143,8 @@ currency: USD
 priceNote: $933
 hero:
   src: /media/tours/luchshee-v-paname/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: 'Панама: Панама-Сити - Долина Антон-Крепость Сан-Лоренсо'
+  hover: "Панамский канал с высоты: корабль на подходе к шлюзам"
+  alt: "Судно подходит к шлюзам Панамского канала среди зеленых берегов, Панама"
 routeCountries:
 - country_panama
 routeDestinations:

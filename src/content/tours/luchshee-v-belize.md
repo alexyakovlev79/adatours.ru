@@ -142,7 +142,8 @@ itinerary:
     **Питание:** завтрак.'
   images:
   - src: /media/tours/beliz-priklyuchenie-materik-ostrov/itinerary-day-1-enhanced-20261006.webp
-    alt: Белиз-сити
+    hover: "Белиз-Сити: канал ведет через городские кварталы к морю"
+    alt: "Белиз-Сити с высоты: городской канал, низкие дома и Карибское море"
 included:
 - Встреча и помощь по прибытии.
 - 2 ночи в Lamanai Outpost Lodge в стандартном номере.

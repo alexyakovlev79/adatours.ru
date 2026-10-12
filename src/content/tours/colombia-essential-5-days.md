@@ -59,7 +59,8 @@ itinerary:
     блоке ниже. После экскурсии возвращение в отель. Ночь в Боготе.
   images:
   - src: /media/destinations/bogota/hero-enhanced-20261003.webp
-    alt: 'На фото: город Богота, столица Колумбии'
+    hover: "Богота: красный автомобиль на тихой улице с деревьями"
+    alt: "Красный Volkswagen Beetle на улице Боготы у кирпичных домов, Колумбия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_source_siti_tur_v_bogote

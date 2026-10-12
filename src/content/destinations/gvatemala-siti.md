@@ -10,7 +10,8 @@ summary: "Столица Гватемалы с Национальным двор
 searchAliases: []
 hero:
   src: "/media/destinations/guatemala-city/hero-enhanced-20261003.webp"
-  alt: "На фото: город Гватемала-Сити (столица страны)"
+  hover: "Историческая улица под желтой аркой с часами"
+  alt: "Желтая арка с часовой башней над мощеной улицей между низкими домами"
 gallery:
 - src: /media/destinations/guatemala-city/gallery-1-enhanced-20261003.webp
   hover: "Гватемала-Сити: длинный каменный фасад с башнями и арочными окнами"

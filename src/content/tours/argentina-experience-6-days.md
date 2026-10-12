@@ -61,7 +61,8 @@ itinerary:
     Michelangelo; трансферы и билеты включены.
   images:
   - src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp"
-    alt: "На фото: Городской пейзаж Буэнос-Айреса"
+    hover: "Буэнос-Айрес: широкий проспект и высокие дома в солнечный день"
+    alt: "Городской перекресток и фасады зданий в Буэнос-Айресе, Аргентина"
 - excursionRef: excursion_buenos_aires_half_day_lunch
   places: *id002
 - excursionRef: excursion_buenos_aires_michelangelo_tango_dinner

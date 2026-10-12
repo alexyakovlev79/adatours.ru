@@ -244,7 +244,8 @@ itinerary:
     По прибытии размещение в отеле и отдых.'
   image:
     src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
-    alt: Бузиос
+    hover: "Бузиос: прогулочная набережная вдоль бухты с лодками"
+    alt: "Лодки в бухте и каменная набережная Бузиоса с пальмами, Бразилия"
 - day: 10
   title: Бузиос
   places:

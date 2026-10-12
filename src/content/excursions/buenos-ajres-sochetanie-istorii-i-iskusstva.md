@@ -17,12 +17,15 @@ currency: "USD"
 priceNote: "Стоимость — $400."
 hero:
   src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/hero-src-enhanced-20261008.webp"
-  alt: "На фото: Флоралис Хенерика, в парке Национального Единства Буэнос-Айреса"
+  hover: "Буэнос-Айрес: раскрытые стальные лепестки Флоралис Хенерика"
+  alt: "Металлический цветок Флоралис Хенерика над круглым бассейном в Буэнос-Айресе, Аргентина"
 gallery:
   - src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-1-enhanced-20261006.webp"
-    alt: "На фото: Городской пейзаж Буэнос-Айреса"
+    hover: "Буэнос-Айрес: широкий проспект и высокие дома в солнечный день"
+    alt: "Городской перекресток и фасады зданий в Буэнос-Айресе, Аргентина"
   - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
-    alt: "На фото: Архитектура Буэнос-Айреса, аргентина"
+    hover: "Буэнос-Айрес сверху: многополосный проспект между городскими кварталами"
+    alt: "Широкий проспект с зелеными аллеями в центре Буэнос-Айреса, Аргентина"
   - src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-src-enhanced-20261007.webp"
     alt: "На фото: Площадь конгресса в Буэнос-Айресе"
   - src: "/media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-3-src-enhanced-20261007.webp"

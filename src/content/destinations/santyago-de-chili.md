@@ -10,7 +10,8 @@ summary: "Сантьяго-де-Чили: площадь Пласа-де-Арм�
 searchAliases: []
 hero:
   src: "/media/destinations/santyago-de-chili/hero-enhanced-20261006.webp"
-  alt: "На фото: столица Чили. город Сантьяго-де-Чили"
+  hover: "Сантьяго на закате: огни города у темных гор"
+  alt: "Огни Сантьяго под красным закатным небом и горными силуэтами, Чили"
 gallery:
 - src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
   hover: "Сантьяго: старинные фасады, башни и оживлённый перекрёсток"

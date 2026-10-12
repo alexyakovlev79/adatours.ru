@@ -234,7 +234,8 @@ itinerary:
     Питание: завтрак.'
   images:
   - src: /media/destinations/hol-chan-marine-reserve/hero-generated-20261008.webp
-    alt: Коралловый риф и акула-нянька в морском заповеднике Хол-Чан, Белиз
+    hover: "Хол-Чан: акула у кораллов в прозрачной бирюзовой воде"
+    alt: "Акула-нянька над песчаным дном у кораллового рифа Хол-Чан, Белиз"
 - day: 12
   title: Сан-Педро
   places:
@@ -306,7 +307,8 @@ itinerary:
     Питание: завтрак.'
   images:
   - src: /media/countries/belize/featureBands-3-enhanced-20261002.webp
-    alt: Амбергрис-Кайе
+    hover: "Амбергрис-Кайе: вид на море из-под соломенного навеса"
+    alt: "Пальмы и балкон прибрежного дома над бирюзовым морем Амбергрис-Кайе, Белиз"
 included:
 - Встреча в аэропорту Meet & Greet.
 - 2 ночи в Best Western Biltmore Plaza в стандартном номере.

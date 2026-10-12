@@ -154,7 +154,8 @@ itinerary:
     Стоимость - $50 с человека.'
   images:
   - src: /media/tours/south-brazil-12d/itinerary/day-05-enhanced-20260930.webp
-    alt: 'На фото: водопады Игуасу (Фоз Игуазу) в Бразилии и Аргентине'
+    hover: "Игуасу: туристическая тропа у водопадов в обрамлении листвы"
+    alt: "Смотровые мостки с людьми над водой перед каскадами Игуасу"
 - excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
@@ -176,7 +177,8 @@ itinerary:
     Для туристов работают лоджи со всеми необходимыми удобствами. После дороги размещение и отдых.'
   images:
   - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: заповедник Пантанал в Бразилии'
+    hover: "Пантанал: ягуар выглядывает из густой растительности"
+    alt: "Ягуар среди зеленой листвы в Пантанале, Бразилия"
   - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-6-images-1-enhanced-20261006.webp
     alt: 'На фото: водное сафари и водопады Игуасу (Фоз Игуазу) в Бразилии и Аргентине'
 - day: 7
@@ -230,7 +232,8 @@ itinerary:
   - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-8-enhanced-20261006.webp
     alt: 'На фото: подземная пещера в Бонито Бразилия'
   - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-2-enhanced-20261006.webp
-    alt: 'На фото: заповедник Пантанал в Бразилии'
+    hover: "Пантанал: птицы взлетают над водоемом"
+    alt: "Стая белых и розовых птиц над водой и зеленым берегом Пантанала, Бразилия"
 - day: 9
   title: Бонито и Голубая пещера
   places:
@@ -301,7 +304,8 @@ itinerary:
     В центре работают рестораны, бары и сувенирные магазины.'
   images:
   - src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-9-enhanced-20261006.webp
-    alt: 'На фото: пляжи в Бузиос Бразилия'
+    hover: "Бузиос: зеленый берег и парусная лодка в прозрачной бухте"
+    alt: "Лодка в бирюзовой бухте Бузиоса и лестница к воде, Бразилия"
   - src: /media/tours/tur-v-braziliyu-na-13-dnej/itinerary-day-11-images-1-enhanced-20261006.webp
     alt: 'На фото: подземная пещера в Бонито Бразилия'
 - day: 12
@@ -314,7 +318,8 @@ itinerary:
     Можно провести его на пляже, выбрать водные активности, прогулку по городу или морскую поездку.'
   images:
   - src: /media/tours/braziliya-s-detmi/itinerary-day-9-enhanced-20261006.webp
-    alt: 'На фото: пляж на курорте Бузиос Бразилия'
+    hover: "Бузиос: прогулочная набережная вдоль бухты с лодками"
+    alt: "Лодки в бухте и каменная набережная Бузиоса с пальмами, Бразилия"
 - day: 13
   title: Бузиос - Рио-де-Жанейро, вылет домой
   places:

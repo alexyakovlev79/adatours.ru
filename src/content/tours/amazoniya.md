@@ -57,7 +57,8 @@ itinerary:
       Ночь в Evolution Eco Lodge.'
   image:
     src: /media/destinations/manaus-amazonia/hero-enhanced-20261001.webp
-    alt: Амазония в Бразилии
+    hover: "Амазония в Бразилии: речная излучина среди тропического леса"
+    alt: "Извилистая река среди густого леса Амазонии, Бразилия, вид сверху"
 - excursionRef: excursion_source_vstrecha_rek
   places: []
 - excursionRef: excursion_source_plavanie_s_rozovymi_del_finami

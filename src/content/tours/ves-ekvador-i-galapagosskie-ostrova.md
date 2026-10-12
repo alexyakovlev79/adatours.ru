@@ -49,7 +49,8 @@ itinerary:
     Остаток дня свободный.
   images:
   - src: /media/tours/aktivnyj-ekvador/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Кито
+    hover: "Эквадор: дома у зеленых склонов под заснеженной вершиной"
+    alt: "Городские кварталы на фоне снежного вулкана в Эквадоре"
 - day: 2
   title: Кито и «Середина мира»
   places:
@@ -98,7 +99,8 @@ itinerary:
       **Питание:** завтрак.
   images:
   - src: /media/tours/aktivnyj-ekvador/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Кито
+    hover: "Кито: остроконечные башни базилики на фоне застроенного склона"
+    alt: "Неоготическая базилика с двумя башнями над кварталами Кито, Эквадор"
 - day: 3
   title: Миндо
   places:
@@ -277,7 +279,8 @@ itinerary:
     **Питание:** завтрак, обед.
   images:
   - src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Остров Сеймур-Норте
+    hover: "Сеймур-Норте: голубоногая олуша у воды в вечернем свете"
+    alt: "Голубоногая олуша на каменистом берегу острова Сеймур-Норте, Галапагосы, Эквадор"
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places: []
 - excursionRef: excursion_source_ostrov_plasa
@@ -296,7 +299,8 @@ itinerary:
     На этом программа путешествия заканчивается.
   images:
   - src: /media/destinations/baltra-island/hero-generated-20261009-v1.webp
-    alt: Остров Балтра
+    hover: "Балтра: сухой вулканический берег у бирюзовой воды"
+    alt: "Кактусы на каменистом берегу острова Балтра, Галапагосы, Эквадор"
 included:
 - Индивидуальные трансферы и экскурсии на материковой части Эквадора
 - Групповые трансферы и экскурсии на Галапагосских островах

@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_bolivia_laguna_honda/hero-generated-20261008.webp
-  alt: Laguna Honda in the southwestern Bolivian Altiplano — Bolivia
+  hover: "Лагуна Хонда: высокогорное озеро с птицами у берега"
+  alt: "Прозрачная вода Лагуны Хонда у светлого берега и сухих гор, Боливия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

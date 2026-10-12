@@ -18,7 +18,8 @@ gallery:
   - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-1-src-enhanced-20261007.webp"
     alt: ""
   - src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
-    alt: ""
+    hover: "Кофейные зерна крупным планом рядом с каплями воды на листе"
+    alt: "Коричневые кофейные зерна на мокром зеленом листе и деревянной поверхности"
   - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-3-src-enhanced-20261007.webp"
     hover: "Мужчина собирает кофейные ягоды на плантации"
     alt: "Сборщик с корзиной у куста с красными кофейными ягодами"

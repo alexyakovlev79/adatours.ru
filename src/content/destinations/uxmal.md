@@ -9,7 +9,8 @@ destinationType: city
 summary: Ушмаль на Юкатане в Мексике, древний город майя с пирамидами и каменными дворцовыми сооружениями.
 hero:
   src: /media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: Ушмаль
+  hover: "Ушмаль с высоты: древний комплекс майя в окружении джунглей"
+  alt: "Каменные пирамиды и дворцовые руины Ушмаля среди зеленого леса, Мексика"
 gallery:
 - src: /media/tours/viva-meksika/uxmal-generated-20261010-v1.webp
   alt: "Орнаментированный каменный фасад Дворца Правителя в Ушмале"

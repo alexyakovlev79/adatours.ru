@@ -19,7 +19,8 @@ currency: USD
 priceNote: "Стоимость — $688. Для 2 человек — $388 на человека, для 3 человек — $289, для 4 человек — $239; групповой тариф — $164 на человека."
 hero:
   src: /media/excursions/kanon-kolka-i-polet-kondora/hero-enhanced-20261001.webp
-  alt: Каньон Колка в Перу
+  hover: "Каньон Колка: горная долина и сельскохозяйственные террасы"
+  alt: "Река на дне каньона Колка среди сухих склонов и террас, Перу"
 gallery:
   - src: /media/excursions/kanon-kolka-i-polet-kondora/gallery-1-enhanced-20261001.webp
     alt: Смотровая площадка над каньоном Колка

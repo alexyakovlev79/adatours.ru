@@ -181,7 +181,8 @@ itinerary:
     Ночь в гостинице Sol Plaza 3* или отеле той же категории.
   images:
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-src-enhanced-20261007.webp"
-    alt: Пуно
+    hover: "Острова Урос: жители в цветной одежде среди тростниковых построек"
+    alt: "Женщины в ярких юбках на тростниковом острове Урос, озеро Титикака, Перу"
 - day: 7
   title: Пуно - озеро Титикака
   places:

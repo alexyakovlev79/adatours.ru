@@ -21,7 +21,8 @@ duration: Полный день
 sourceSnapshot: https://drive.google.com/file/d/1RQrUA0MJJcXtAk5TRTJ1qsLE7KBHUf3p/view?usp=drivesdk
 hero:
   src: /media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp
-  alt: 'на фото: Полет над Наска в Перу'
+  hover: "Наска: самолет над светлыми линиями рисунка на сухой равнине"
+  alt: "Небольшой самолет над геоглифом птицы в пустыне Наска, Перу"
 themes: ["theme_wildlife","theme_culture"]
 ---
 

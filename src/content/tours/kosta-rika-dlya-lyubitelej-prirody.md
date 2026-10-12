@@ -49,7 +49,8 @@ itinerary:
     \ обед, ужин."
   images:
   - src: /media/tours/kosta-rika-dlya-lyubitelej-prirody/itinerary-1-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Коста-Рика: остроконечная церковная башня над городской улицей"
+    alt: "Неоготическая церковь с высокой башней у зеленой площади в Коста-Рике"
 - day: 3
   title: Национальный парк Тортугеро
   places:
@@ -93,7 +94,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/tours/3-shaga-po-kosta-rike/itinerary-9-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: фасад театра и пешеходы на узорчатой площади"
+    alt: "Национальный театр Коста-Рики и мозаичная площадь в Сан-Хосе"
 included:
 - русскоговорящий гид;
 - трансферы;

@@ -127,7 +127,8 @@ itinerary:
     не входят.**'
   images:
   - src: /media/tours/vivat-kolumbiya/hero-src-enhanced-20261007.webp
-    alt: Виват Колумбия
+    hover: "Колумбия: конная прогулка по травянистым склонам"
+    alt: "Туристы верхом на лошадях среди зеленых холмов Колумбии"
 - excursionRef: excursion_colombia_el_ocaso_coffee_tour
   places:
   - Саленто

@@ -52,7 +52,8 @@ itinerary:
     **Питание:** завтрак.'
   images:
   - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-01-enhanced-20261001.webp
-    alt: 'на фото: столица Аргентины, город Буэнос Айрес'
+    hover: "Буэнос-Айрес: обелиск среди широких проспектов и городского движения"
+    alt: "Обелиск на оживленном перекрестке в центре Буэнос-Айреса, Аргентина"
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
 - day: 2
@@ -83,7 +84,8 @@ itinerary:
     **Питание:** завтрак, обед, ужин.'
   images:
   - src: /media/excursions/tango-shou-s-uzhinom-i-transferom-v-buenos-ajrese/hero-enhanced-20261006.webp
-    alt: 'на фото: Аргентинское танго'
+    hover: "Танго в Буэнос-Айресе: танцевальная пара на освещенной сцене"
+    alt: "Пара танцует танго на сцене: мужчина поддерживает партнершу в голубом платье, Буэнос-Айрес, Аргентина"
 - excursionRef: excursion_buenos_aires_porteno_tango_dinner_transfer
   places: []
 - day: 3

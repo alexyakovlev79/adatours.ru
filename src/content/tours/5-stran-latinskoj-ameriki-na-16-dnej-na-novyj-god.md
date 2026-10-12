@@ -322,7 +322,8 @@ itinerary:
     Стоимость астрономического тура: **USD 150 на человека**. Тур не проводится при яркой Луне и в полнолуние.'
   images:
   - src: /media/destinations/calama/hero-generated-20261008.webp
-    alt: "Калама"
+    hover: "Калама: зеленая площадь среди городской застройки и пустынных склонов"
+    alt: "Площадь с пальмами и церковью в Каламе на фоне сухих гор, Чили"
 - excursionRef: excursion_chile_atacama_astronomy_tour
   places:
   - Сан-Педро-де-Атакама
@@ -347,7 +348,8 @@ itinerary:
     После насыщенного дня - размещение в отеле в пустыне.'
   images:
   - src: /media/destinations/laguna-verde/hero-generated-20261008.webp
-    alt: "Лагуна Верде"
+    hover: "Лагуна Верде: бирюзовое озеро под конической вершиной Ликанкабура"
+    alt: "Зеленая вода Лагуны Верде у вулкана Ликанкабур, Боливия"
 - day: 13
   title: 11 января. Уюни на джипах
   places:
@@ -377,7 +379,8 @@ itinerary:
     Обед - ланч-бокс. После тура трансфер в Уюни.'
   images:
   - src: /media/destinations/destination_bolivia_laguna_honda/hero-generated-20261008.webp
-    alt: "Laguna Honda in the southwestern Bolivian Altiplano — Bolivia"
+    hover: "Лагуна Хонда: высокогорное озеро с птицами у берега"
+    alt: "Прозрачная вода Лагуны Хонда у светлого берега и сухих гор, Боливия"
 - day: 14
   title: 12 января. Уюни - Ла-Пас
   places:
@@ -450,7 +453,8 @@ itinerary:
     фасадами. Трансфер в отель.'
   images:
   - src: /media/tours/tur-v-peru-i-braziliyu/andahuaylillas-place-generated-20261008.webp
-    alt: "Церковь Сан-Педро на площади Андагуаилильяса, Перу"
+    hover: "Андагуаилильяс: белая церковь с колокольней и деревьями перед фасадом"
+    alt: "Церковь Сан-Педро у мощеной площади Андагуаилильяса на фоне гор, Перу"
 - day: 17
   title: 15 января. Мачу-Пикчу
   places:

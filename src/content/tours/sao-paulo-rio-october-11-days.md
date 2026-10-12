@@ -64,7 +64,8 @@ itinerary:
     Завтрак в отеле.'
   images:
   - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-1-enhanced-20261006.webp
-    alt: Мост Октавио Фриас де Оливейра и высотные здания Сан-Паулу, Бразилия
+    hover: "Сан-Паулу: мост с перекрещенными опорами у городских высоток"
+    alt: "Вантовый мост и высотные башни Сан-Паулу в вечернем свете, Бразилия"
 - excursionRef: excursion_sao_paulo_paulista_four_hours
   places:
   - Сан-Паулу
@@ -117,7 +118,8 @@ itinerary:
     в отеле.'
   images:
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp
-    alt: Панорама Рио-де-Жанейро
+    hover: "Рио с высоты: залив, острова и Сахарная Голова"
+    alt: "Сахарная Голова над заливом и городскими кварталами Рио-де-Жанейро, Бразилия"
 - excursionRef: excursion_rio_sugarloaf_cable_car_four_hours
   places:
   - Рио-де-Жанейро
@@ -129,7 +131,8 @@ itinerary:
     билет включен. Завтрак в отеле.'
   images:
   - src: /media/excursions/dzhip-tur-na-santa-terezu-i-korkovado/gallery-2-enhanced-20261006.webp
-    alt: Рио-де-Жанейро и горы Тижуки
+    hover: "Рио-де-Жанейро: статуя на скалистой вершине в окружении зеленых гор"
+    alt: "Христос-Искупитель и туристические площадки среди лесистых гор Рио-де-Жанейро, Бразилия"
 - excursionRef: excursion_rio_corcovado_four_hours
   places:
   - Рио-де-Жанейро
@@ -141,7 +144,8 @@ itinerary:
     в отеле.'
   images:
   - src: /media/excursions/favela-tur/gallery-2-enhanced-20261001.webp
-    alt: Улицы фавелы в Рио-де-Жанейро
+    hover: "Рио-де-Жанейро: краснокирпичные дома фавелы на лесистом склоне"
+    alt: "Плотная застройка фавелы на зеленом склоне Рио-де-Жанейро, Бразилия"
 - excursionRef: excursion_rio_favela_community_four_hours
   places:
   - Рио-де-Жанейро

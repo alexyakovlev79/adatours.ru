@@ -51,7 +51,8 @@ currency: USD
 dates: []
 hero:
   src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
-  alt: "Ушуайя и пролив Бигль в аргентинской Патагонии"
+  hover: "Ушуайя: птицы на прибрежных скалах рядом с полосатым маяком"
+  alt: "Красно-белый маяк и морские птицы на скалистом островке у Ушуайи, Аргентина"
 gallery: []
 featured: false
 priority: 0
@@ -120,7 +121,8 @@ itinerary:
       Трансфер в аэропорт и перелет в Эль-Калафате. По прибытии встреча и трансфер в отель.
     images:
       - src: /media/excursions/todo-glaciares/hero-enhanced-20261006.webp
-        alt: "Эль-Калафате"
+        hover: "Патагония: зубчатый ледяной фронт у воды и горных склонов"
+        alt: "Голубая стена ледника над озером у снежных гор, Патагония, Аргентина"
         intendedSlot: "itinerary:day-4"
 
   - day: 5
@@ -138,7 +140,8 @@ itinerary:
       Рекомендуется взять ланч-бокс. Пообедать также можно в ресторане парка.
     images:
       - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
-        alt: "Ледник Перито-Морено"
+        hover: "Перито-Морено: голубая ледяная стена перед смотровой площадкой"
+        alt: "Туристка фотографирует ледник Перито-Морено со смотровой площадки, Аргентина"
         intendedSlot: "itinerary:day-5"
 
   - excursionRef: excursion_el_calafate_ice_trekking_perito_moreno
@@ -186,7 +189,8 @@ itinerary:
       Трансфер в аэропорт и перелет в Игуасу с пересадкой в Буэнос-Айресе. По прибытии трансфер в отель.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
-        alt: "Игуасу"
+        hover: "Игуасу: мощные потоки падают со скалистых уступов"
+        alt: "Широкие каскады Игуасу и облако водяных брызг над рекой"
         intendedSlot: "itinerary:day-8"
 
   - day: 9
@@ -240,7 +244,8 @@ itinerary:
       Завтрак в отеле. В назначенное время трансфер в аэропорт IGR и перелет в Буэнос-Айрес. По прибытии трансфер в отель.
     images:
       - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-11-enhanced-20261006.webp
-        alt: "Игуасу"
+        hover: "Игуасу вблизи: смотровая площадка перед стеной падающей воды"
+        alt: "Туристы на деревянных мостках у широких потоков Игуасу"
         intendedSlot: "itinerary:day-11"
 
   - day: 12

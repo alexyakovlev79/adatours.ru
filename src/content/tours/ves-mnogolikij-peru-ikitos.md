@@ -205,7 +205,8 @@ itinerary:
       **Доплата:** по запросу.
   images:
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp"
-    alt: 'На фото: озеро Титикака в Перу'
+    hover: "Острова Урос: жители у причала и тростниковой лодки"
+    alt: "Тростниковые дома и лодка у плавучего острова Урос, озеро Титикака, Перу"
 - day: 7
   title: Пуно и озеро Титикака
   places:
@@ -306,7 +307,8 @@ itinerary:
     По желанию
   images:
   - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
-    alt: 'НА фото: город Лима, столица Перу'
+    hover: "Лима сверху: центральная площадь между колониальными зданиями"
+    alt: "Площадь Лимы с клумбами, пальмами и желтыми историческими фасадами, Перу"
 - excursionRef: excursion_peru_paracas_nazca_full_day
   places: []
 - day: 12

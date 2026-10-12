@@ -65,7 +65,8 @@ priceNote: 5 514 USD на человека при 2–3 участниках. П
 dates: []
 hero:
   src: "/media/destinations/destination_brazil_bom_zhardim/hero-generated-20261008-resumed.webp"
-  alt: "Бом-Жардим — Бразилия"
+  hover: "Бом-Жардим: лесной водоем с видимым каменистым дном"
+  alt: "Прозрачная бирюзовая вода и деревянный настил среди леса Бом-Жардима, Бразилия"
 gallery: []
 featured: false
 priority: 0
@@ -215,7 +216,8 @@ itinerary:
     Питание: завтрак, обед, ужин.'
   images:
   - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-2-enhanced-20261006.webp
-    alt: Белые и чёрно-белые птицы над водой у заросшего берега в Пантанале
+    hover: "Пантанал: птицы взлетают над водоемом"
+    alt: "Стая белых и розовых птиц над водой и зеленым берегом Пантанала, Бразилия"
 - excursionRef: excursion_araras_canoe_trek_night_safari
   places:
   - Эколодж «Арарас»
@@ -260,7 +262,8 @@ itinerary:
     Питание: завтрак.'
   images:
   - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
-    alt: Водные растения на водоёме Пантанала в Бразилии
+    hover: "Пантанал: плавающие листья кувшинок на фоне зеленых гор"
+    alt: "Крупные круглые листья водных кувшинок и белый цветок в Пантанале, Бразилия"
 included:
 - Регулярные трансферы на автомобиле с кондиционером.
 - 2 ночи в лодже «Жардим-да-Амазония».

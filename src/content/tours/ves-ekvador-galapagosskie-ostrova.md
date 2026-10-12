@@ -249,7 +249,8 @@ itinerary:
     Обед на борту, возвращение в отель и свободный вечер. Размещение: Fiesta 3*. Питание: завтрак, обед.
   images:
   - src: /media/tours/complete-ecuador-new-year/word-06-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Остров Сеймур-Норте
+    hover: "Сеймур-Норте: голубоногая олуша у воды в вечернем свете"
+    alt: "Голубоногая олуша на каменистом берегу острова Сеймур-Норте, Галапагосы, Эквадор"
 - excursionRef: excursion_source_ostrov_severnyj_sejmur
   places:
   - Сеймур-Норте

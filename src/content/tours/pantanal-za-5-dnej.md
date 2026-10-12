@@ -38,7 +38,8 @@ itinerary:
     Ночь в Pousada Aguape.'
   images:
   - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
-    alt: Пантанал
+    hover: "Пантанал: ягуар выглядывает из густой растительности"
+    alt: "Ягуар среди зеленой листвы в Пантанале, Бразилия"
 - day: 2
   title: Верховая прогулка и фотосафари
   places:
@@ -107,7 +108,8 @@ itinerary:
   text: После завтрака трансфер в международный аэропорт для дальнейшего вылета.
   image:
     src: /media/destinations/destination_brazil_kampo_grande/hero-generated-20261008-resumed.webp
-    alt: Кампо-Гранде — Бразилия
+    hover: "Кампо-Гранде: широкая улица с пальмами в солнечный день"
+    alt: "Автомобили на проспекте Кампо-Гранде среди пальм и городских зданий, Бразилия"
 included:
 - Проживание в лодже.
 - Экскурсии с гидом.
@@ -132,7 +134,8 @@ currency: USD
 priceNote: $4145
 hero:
   src: "/media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp"
-  alt: "Водные растения на водоёме Пантанала в Бразилии"
+  hover: "Пантанал: плавающие листья кувшинок на фоне зеленых гор"
+  alt: "Крупные круглые листья водных кувшинок и белый цветок в Пантанале, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

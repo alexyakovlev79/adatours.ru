@@ -20,7 +20,8 @@ hero:
   alt: Исторический центр Рио-де-Жанейро
 gallery:
   - src: /media/excursions/ekskursiya-na-sakharnuyu-golovu/gallery-4-enhanced-20261001.webp
-    alt: Панорама Рио-де-Жанейро
+    hover: "Рио с высоты: залив, острова и Сахарная Голова"
+    alt: "Сахарная Голова над заливом и городскими кварталами Рио-де-Жанейро, Бразилия"
   - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-1-src-enhanced-20261008.webp
     alt: Городской театр Рио-де-Жанейро
   - src: /media/excursions/tajny-starogo-rio-de-zhanejro/gallery-2-src-enhanced-20261008.webp

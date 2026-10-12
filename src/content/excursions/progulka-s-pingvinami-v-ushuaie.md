@@ -15,7 +15,8 @@ priceFrom: 350
 currency: USD
 hero:
   src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
-  alt: "Пингвины в Ушуайе"
+  hover: "Ушуайя: птицы на прибрежных скалах рядом с полосатым маяком"
+  alt: "Красно-белый маяк и морские птицы на скалистом островке у Ушуайи, Аргентина"
 gallery: []
 route:
   - "Ушуайя"

@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "natural_area"
 summary: "Лагартокоча в районе Сача Лодж открывает Амазонию через тихую прогулку на каноэ среди заболоченного и затопленного леса."
 searchAliases: []
-hero: {"src": "/media/destinations/sacha-reserve/gallery-generated-20261009-root-v1.webp", "alt": "Каноэ на темной воде затопленного леса в районе Сача — иллюстрация"}
+hero: {"src": "/media/destinations/sacha-reserve/gallery-generated-20261009-root-v1.webp", "alt": "Нос каноэ на темной воде затопленного леса заповедника Сача, Эквадор", hover: "Сача: нос каноэ между деревьями и их отражениями в воде"}
 gallery: []
 themes: ["theme_wildlife", "theme_adventure"]
 relatedDestinations: []

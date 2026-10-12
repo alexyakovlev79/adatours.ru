@@ -18,7 +18,8 @@ currency: USD
 priceNote: "Основная стоимость — $438. Для 2 человек — $219 на человека, для 3 человек — $188 на человека, для 4 человек — $148 на человека."
 hero:
   src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
-  alt: Кофейные зерна колумбийского кофе
+  hover: "Кофейные зерна крупным планом рядом с каплями воды на листе"
+  alt: "Коричневые кофейные зерна на мокром зеленом листе и деревянной поверхности"
 gallery:
   - src: "/media/excursions/kofejnyj-tur-v-perejra/gallery-0-src-enhanced-20261007.webp"
     alt: Кофейные напитки в Колумбии

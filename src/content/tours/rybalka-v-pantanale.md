@@ -87,7 +87,8 @@ currency: USD
 priceNote: $1061
 hero:
   src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
-  alt: Рыбалка в Пантанале
+  hover: "Пантанал: ягуар выглядывает из густой растительности"
+  alt: "Ягуар среди зеленой листвы в Пантанале, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

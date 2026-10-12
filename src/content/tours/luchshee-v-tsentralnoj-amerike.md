@@ -205,7 +205,8 @@ itinerary:
     hover: "Чичикастенанго: люди и торговые ряды у украшенной белой церкви"
     alt: "Рынок перед белой церковью с цветными украшениями в Чичикастенанго, Гватемала"
   - src: /media/destinations/guatemala-city/hero-enhanced-20261003.webp
-    alt: Гватемала-Сити
+    hover: "Историческая улица под желтой аркой с часами"
+    alt: "Желтая арка с часовой башней над мощеной улицей между низкими домами"
 - day: 6
   title: Guatemala City - Flores - Tikal
   places:
@@ -409,7 +410,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/costa-rica-nicaragua-ru/itinerary-6-images-0-src-regenerated-20261011-v2.webp
-    alt: Гранада
+    hover: "Гранада: желтые и красные дома вдоль улицы в вечернем свете"
+    alt: "Тихая мощеная улица Гранады с цветными фасадами и церковной башней, Никарагуа"
 - day: 13
   title: Granada - Costa Rica - Arenal
   places:
@@ -569,7 +571,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/luchshee-v-tsentralnoj-amerike/baru-volcano-place-generated-20261009-v1.webp
-    alt: Горные склоны и дальние виды вулкана Бару
+    hover: "Бару: горные склоны и облака ниже вершины"
+    alt: "Каменистая вершина вулкана Бару над зелеными долинами и облаками, Панама"
 - day: 20
   title: Boquete - Panama City
   places:
@@ -639,7 +642,8 @@ itinerary:
     Завтрак включен, традиционный обед предусмотрен программой дня.
   images:
   - src: /media/tours/panama-2024/itinerary-4-images-0-src-enhanced-20261007.webp
-    alt: Национальный парк Чагрес
+    hover: "Чагрес: лодки у каменистого берега в тропическом лесу"
+    alt: "Люди в узких деревянных лодках на реке среди леса, парк Чагрес, Панама"
 - day: 22
   title: Тихоокеанская Ривьера
   places: []

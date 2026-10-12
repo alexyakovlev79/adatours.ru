@@ -321,7 +321,8 @@ itinerary:
     Тур отменяют в даты ежемесячного лунного затмения.'
   images:
   - src: /media/destinations/calama/hero-generated-20261008.webp
-    alt: "Калама"
+    hover: "Калама: зеленая площадь среди городской застройки и пустынных склонов"
+    alt: "Площадь с пальмами и церковью в Каламе на фоне сухих гор, Чили"
 - excursionRef: excursion_chile_atacama_astronomy_tour
   places:
   - Сан-Педро-де-Атакама
@@ -349,7 +350,8 @@ itinerary:
     Размещение в отеле посреди пустынного плато. Условия простые и близкие к экспедиционному лагерю.'
   images:
   - src: /media/destinations/laguna-verde/hero-generated-20261008.webp
-    alt: "Лагуна Верде"
+    hover: "Лагуна Верде: бирюзовое озеро под конической вершиной Ликанкабура"
+    alt: "Зеленая вода Лагуны Верде у вулкана Ликанкабур, Боливия"
 - day: 12
   title: Солончак Уюни
   places:
@@ -385,7 +387,8 @@ itinerary:
     В конце дня трансфер в Уюни.'
   images:
   - src: /media/destinations/destination_bolivia_laguna_honda/hero-generated-20261008.webp
-    alt: "Laguna Honda in the southwestern Bolivian Altiplano — Bolivia"
+    hover: "Лагуна Хонда: высокогорное озеро с птицами у берега"
+    alt: "Прозрачная вода Лагуны Хонда у светлого берега и сухих гор, Боливия"
 - day: 13
   title: Уюни - Ла-Пас
   places:

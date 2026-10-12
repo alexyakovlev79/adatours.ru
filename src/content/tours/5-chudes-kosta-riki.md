@@ -76,7 +76,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
-    alt: Рио-Селесте
+    hover: "Рио-Селесте: лесной водопад перед смотровой площадкой"
+    alt: "Туристы у водопада Рио-Селесте с голубой водой в тропическом лесу, Коста-Рика"
 - day: 4
   title: Малекос - Ареналь
   places:
@@ -157,7 +158,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/tours/3-vzglyada-na-kosta-riku/pacific-coast-1-generated-20261009-v1.webp
-    alt: Песчаный пляж на Тихоокеанском побережье Коста-Рики
+    hover: "Коста-Рика: тихоокеанский прибой у лесистого мыса"
+    alt: "Песчаный пляж с волнами и тропическими деревьями на Тихоокеанском побережье Коста-Рики"
 - day: 9
   title: Либерия
   places:

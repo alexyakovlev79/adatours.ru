@@ -20,7 +20,8 @@ priceNote: Основная стоимость — $280. Для 2 человек
   — $117 на человека.
 hero:
   src: /media/excursions/siti-tur-po-kartakhene/hero-src-enhanced-20261007.webp
-  alt: Картахена в Колумбии
+  hover: "Картахена: крыши старого города и купола у Карибского моря"
+  alt: "Церковные башни и черепичные крыши Картахены на фоне моря, Колумбия"
 gallery:
 - src: /media/excursions/siti-tur-po-kartakhene/gallery-0-src-enhanced-20261007.webp
   hover: 'Картахена: разноцветные дома и зелень вдоль узкой улицы'
@@ -33,7 +34,8 @@ gallery:
 - src: /media/excursions/siti-tur-po-kartakhene/gallery-3-src-enhanced-20261007.webp
   alt: Картахена, Колумбия
 - src: /media/excursions/siti-tur-po-kartakhene/gallery-4-src-enhanced-20261007.webp
-  alt: Картахена, Колумбия
+  hover: "Картахена: женщины в цветных платьях с корзиной тропических фруктов"
+  alt: "Две женщины в яркой одежде, одна с корзиной фруктов на голове, Картахена, Колумбия"
 - src: /media/excursions/siti-tur-po-kartakhene/gallery-5-src-enhanced-20261007.webp
   alt: Картахена, Колумбия
 route:

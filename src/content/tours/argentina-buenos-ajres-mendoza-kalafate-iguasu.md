@@ -54,7 +54,8 @@ itinerary:
     Маршрут продолжается к Пласа-де-Майо и Каса-Росада, «Розовому дому», связанному с важными страницами аргентинской истории и именем Эвиты Перон. Гид расскажет о развитии города, его районах и людях, которые формировали современный Буэнос-Айрес. В старых кварталах особенно заметно, как в одном городе соединились европейская архитектура, портовая культура, эмигрантские традиции и южноамериканская повседневность.'
   images:
   - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
-    alt: 'на фото: столица Аргентины, город Буэнос Айрес'
+    hover: "Буэнос-Айрес: башни и их отражения у набережной"
+    alt: "Высотные здания у воды в Буэнос-Айресе, Аргентина"
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
 - day: 3
@@ -85,7 +86,8 @@ itinerary:
     Билеты на паром включены.'
   images:
   - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
-    alt: 'на фото: столица Аргентины, город Буэнос Айрес'
+    hover: "Буэнос-Айрес сверху: многополосный проспект между городскими кварталами"
+    alt: "Широкий проспект с зелеными аллеями в центре Буэнос-Айреса, Аргентина"
 - excursionRef: excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa
   places: []
 - excursionRef: excursion_source_fiesta_gaucho
@@ -125,7 +127,8 @@ itinerary:
     Гид объяснит, как правильно держать бокал, на что обращать внимание во вкусе и аромате и с какими продуктами сочетать разные вина. На одной из виноделен предусмотрен обед. Программа занимает весь день.'
   images:
   - src: /media/excursions/mendosa-tur-v-gory/hero-enhanced-20260930.webp
-    alt: 'на фото: винный регион Мендоса (Мендоза) в Аргентине'
+    hover: "Мендоса: указатель у виноградных рядов и горных склонов"
+    alt: "Деревянный указатель Mendoza среди виноградников на фоне гор, Аргентина"
 - day: 6
   title: Мендоса - Калафате
   places:
@@ -222,7 +225,8 @@ itinerary:
     После тура трансфер в отель. Вечером можно отдохнуть после насыщенного дня у водопадов и спокойно завершить эту часть путешествия.'
   images:
   - src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/itinerary-day-8-enhanced-20261006.webp
-    alt: 'на фото: Водопады Игуасу в Аргентине и Бразилии'
+    hover: "Игуасу: мощные потоки падают со скалистых уступов"
+    alt: "Широкие каскады Игуасу и облако водяных брызг над рекой"
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places: []
 - excursionRef: excursion_iguazu_helicopter_falls

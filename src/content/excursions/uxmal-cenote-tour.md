@@ -14,7 +14,8 @@ themes:
 - theme_culture
 hero:
   src: /media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: Ушмаль
+  hover: "Ушмаль с высоты: древний комплекс майя в окружении джунглей"
+  alt: "Каменные пирамиды и дворцовые руины Ушмаля среди зеленого леса, Мексика"
 duration: 8-9 часов
 language:
 - английский

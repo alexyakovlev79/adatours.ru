@@ -24,7 +24,8 @@ gallery:
   - src: /media/excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej/gallery-0-src-enhanced-20261007.webp
     alt: Монтевидео, столица Уругвая
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
-    alt: Архитектура исторического центра Монтевидео
+    hover: "Монтевидео: пешеходная площадь перед дворцом Сальво"
+    alt: "Площадь с пальмами и башней дворца Сальво в Монтевидео, Уругвай"
   - src: /media/excursions/peshij-tur-po-istoricheskomu-tsentru/gallery-2-src-enhanced-20261007.webp
     alt: Улицы Монтевидео
 route:

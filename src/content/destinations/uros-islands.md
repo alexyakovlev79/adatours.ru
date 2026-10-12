@@ -9,7 +9,8 @@ destinationType: island
 summary: Плавучие острова из тростника тотора на озере Титикака — место знакомства с традиционной жизнью общин Урос.
 hero:
   src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-9-enhanced-20261007.webp
-  alt: 'На фото: Озеро Титикака и плавучие острова Урос  в Перу'
+  hover: "Острова Урос: жители у причала и тростниковой лодки"
+  alt: "Тростниковые дома и лодка у плавучего острова Урос, озеро Титикака, Перу"
 gallery: []
 themes:
 - theme_culture

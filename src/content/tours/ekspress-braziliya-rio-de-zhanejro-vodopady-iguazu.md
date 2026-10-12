@@ -142,7 +142,8 @@ currency: USD
 priceNote: $2110
 hero:
   src: /media/tours/ekspress-braziliya-rio-de-zhanejro-vodopady-iguazu/hero-enhanced-20261006.webp
-  alt: 'Экспресс Бразилия: Рио де Жанейро + Водопады Игуасу'
+  hover: "Рио-де-Жанейро: исторический театр и пешеходы на площади"
+  alt: "Городской театр с зелеными куполами среди высотных зданий Рио-де-Жанейро, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -402,7 +402,8 @@ itinerary:
     Обед в формате ланч-бокса включен. Ночь в городе Уюни.'
   images:
   - src: /media/destinations/destination_bolivia_laguna_honda/hero-generated-20261008.webp
-    alt: "Laguna Honda in the southwestern Bolivian Altiplano — Bolivia"
+    hover: "Лагуна Хонда: высокогорное озеро с птицами у берега"
+    alt: "Прозрачная вода Лагуны Хонда у светлого берега и сухих гор, Боливия"
 - day: 14
   title: Уюни - Ла-Пас
   places:
@@ -475,7 +476,8 @@ itinerary:
     Вечером прибытие на автобусную станцию Куско и трансфер в отель.'
   images:
   - src: /media/tours/tur-v-peru-i-braziliyu/andahuaylillas-place-generated-20261008.webp
-    alt: "Церковь Сан-Педро на площади Андагуаилильяса, Перу"
+    hover: "Андагуаилильяс: белая церковь с колокольней и деревьями перед фасадом"
+    alt: "Церковь Сан-Педро у мощеной площади Андагуаилильяса на фоне гор, Перу"
 - day: 17
   title: Куско - Мачу-Пикчу
   places:

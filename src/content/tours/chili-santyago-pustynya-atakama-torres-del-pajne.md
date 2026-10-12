@@ -57,7 +57,8 @@ itinerary:
     Возвращение в отель.
   images:
   - src: /media/tours/chili-argentina/itinerary-day-2-enhanced-20261006.webp
-    alt: 'На фото: столица Чили, Сантьяго-де-Чили'
+    hover: "Сантьяго: городское движение у стеклянных высоток"
+    alt: "Автомобили на улице среди высотных зданий Сантьяго, Чили"
 - day: 2
   title: Сантьяго - Калама - Сан-Педро-де-Атакама
   places:
@@ -78,7 +79,8 @@ itinerary:
     **Включено:** входной билет в Лунную долину и коктейль.
   images:
   - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/itinerary-day-4-enhanced-20261006.webp
-    alt: 'На фото: пустыня Сан Педро де Атакама в Чили'
+    hover: "Атакама: фламинго и горы отражаются в спокойной воде"
+    alt: "Розовый фламинго у высокогорной лагуны на фоне сухих гор Атакамы, Чили"
   - src: /media/tours/braziliya-argentina-i-chili/itinerary-day-13-enhanced-20261006.webp
     alt: 'На фото: столица Чили, Сантьяго-де-Чили'
 - day: 3
@@ -128,7 +130,8 @@ itinerary:
     **Включено:** входной билет к гейзерам Татио.
   images:
   - src: /media/destinations/destination_chile_gejzery_el_tatio/hero-generated-20261008-resumed-v1.webp
-    alt: Гейзеры Эль-Татио, Чили
+    hover: "Эль-Татио: клубы пара у гор на фоне восходящего солнца"
+    alt: "Пар над каменистым геотермальным полем Эль-Татио на рассвете, Чили"
 - day: 5
   title: Сантьяго - Пуэрто-Наталес
   places:

@@ -8,7 +8,7 @@ countryId: "country_ecuador"
 destinationType: "island"
 summary: "Флорена соединяет пляжи Галапагосов, лагуну с фламинго и истории первых поселенцев. Здесь до сих пор отправляют открытки через старую почтовую бочку."
 searchAliases: ["остров Флорена", "ostrov-florena-galapagosy"]
-hero: {"src": "/media/excursions/tur-na-ostrov-florena/hero-enhanced-20261001.webp", "alt": "Морские львы на побережье Галапагосов"}
+hero: {"src": "/media/excursions/tur-na-ostrov-florena/hero-enhanced-20261001.webp", "alt": "Морские львы на светлом песчаном пляже Галапагосских островов, Эквадор", hover: "Галапагосы: морские львы отдыхают у бирюзового океана"}
 gallery: []
 themes: ["theme_wildlife", "theme_culture"]
 relatedDestinations: []

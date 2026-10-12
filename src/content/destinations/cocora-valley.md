@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Долина Кокора в колумбийских Андах известна зелеными склонами, облачным лесом и высокими восковыми пальмами.
 hero:
   src: /media/tours/vivat-kolumbiya/hero-src-enhanced-20261007.webp
-  alt: Виват Колумбия
+  hover: "Колумбия: конная прогулка по травянистым склонам"
+  alt: "Туристы верхом на лошадях среди зеленых холмов Колумбии"
 gallery:
 - src: /media/excursions/salento-i-dolina-kokora/hero-src-enhanced-20261007.webp
   hover: "Долина Кокора: конная прогулка по зелёным холмам"

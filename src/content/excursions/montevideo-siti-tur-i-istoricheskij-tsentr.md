@@ -28,7 +28,8 @@ gallery:
   - src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
     alt: Исторический центр Монтевидео
   - src: "/media/excursions/montevideo-siti-tur-i-istoricheskij-tsentr/gallery-4-enhanced-20261006.webp"
-    alt: Монтевидео, Уругвай
+    hover: "Монтевидео: пешеходная площадь перед дворцом Сальво"
+    alt: "Площадь с пальмами и башней дворца Сальво в Монтевидео, Уругвай"
 route:
   - набережная Рамбла
   - площадь Независимости

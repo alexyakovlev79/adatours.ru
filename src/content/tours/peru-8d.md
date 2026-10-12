@@ -55,7 +55,8 @@ itinerary:
       Лима расположена на берегу Тихого океана. Город основали испанцы, поэтому европейская архитектура здесь соседствует с памятниками эпохи инков. После размещения можно отдохнуть после перелета и начать знакомство со столицей Перу в своем темпе.
     images:
       - src: /media/tours/peru-8d/itinerary/day-01-enhanced-20261001.webp
-        alt: "Лима, Перу"
+        hover: "Лима сверху: центральная площадь между колониальными зданиями"
+        alt: "Площадь Лимы с клумбами, пальмами и желтыми историческими фасадами, Перу"
         intendedSlot: "itinerary:day-1"
   - day: 2
     title: "Лима - Куско"
@@ -81,7 +82,8 @@ itinerary:
       
     images:
       - src: /media/tours/peru-8d/itinerary/day-02-enhanced-20261001.webp
-        alt: "Лима и перелет в Куско"
+        hover: "Лима: цветники и пальмы перед фасадами старого центра"
+        alt: "Желтые исторические здания и клумбы на площади Лимы, Перу"
         intendedSlot: "itinerary:day-2"
   - excursionRef: excursion_cusco_cathedral_visit
     places: ["Куско"]
@@ -164,7 +166,8 @@ itinerary:
       
     images:
       - src: /media/tours/peru-8d/itinerary/day-07-enhanced-20261001.webp
-        alt: "Канделябр Паракаса, Перу"
+        hover: "Паракас: огромный рисунок Канделябра над каменистым побережьем"
+        alt: "Геоглиф Канделябр на песчаном склоне над морем у Паракаса, Перу"
         intendedSlot: "itinerary:day-7"
   - excursionRef: excursion_peru_paracas_ballestas
     places: ["Паракас","острова Бальестас"]

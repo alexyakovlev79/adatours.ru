@@ -42,7 +42,8 @@ itinerary:
     На время пребывания в Пантанале экскурсии и питание включены.'
   images:
   - src: "/media/destinations/destination_brazil_kampo_grande/hero-generated-20261008-resumed.webp"
-    alt: "Кампо-Гранде — Бразилия"
+    hover: "Кампо-Гранде: широкая улица с пальмами в солнечный день"
+    alt: "Автомобили на проспекте Кампо-Гранде среди пальм и городских зданий, Бразилия"
 - day: 2
   title: Пантанал
   places:

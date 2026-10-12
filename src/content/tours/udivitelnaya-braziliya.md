@@ -72,7 +72,8 @@ itinerary:
     Размещение в отеле или лодже. Здесь можно переключиться с городских впечатлений на природу: слушать звуки леса, наблюдать за птицами и бабочками, фотографировать животных и просто отдыхать вдали от крупных городов.
   images:
   - src: /media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp
-    alt: Пантанал
+    hover: "Пантанал: плавающие листья кувшинок на фоне зеленых гор"
+    alt: "Крупные круглые листья водных кувшинок и белый цветок в Пантанале, Бразилия"
 - day: 4
   title: Дни 4-5. Пантанал
   places:
@@ -88,7 +89,8 @@ itinerary:
     Обед и ужин проходят в отеле. Вечером возможна прогулка на каноэ.
   images:
   - src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-2-enhanced-20261006.webp
-    alt: Пантанал
+    hover: "Пантанал: птицы взлетают над водоемом"
+    alt: "Стая белых и розовых птиц над водой и зеленым берегом Пантанала, Бразилия"
 - day: 6
   title: Пантанал - Бонито
   places:
@@ -250,7 +252,8 @@ durationDays: 14
 durationNights: 13
 hero:
   src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
-  alt: Удивительная Бразилия
+  hover: "Пантанал: ягуар выглядывает из густой растительности"
+  alt: "Ягуар среди зеленой листвы в Пантанале, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

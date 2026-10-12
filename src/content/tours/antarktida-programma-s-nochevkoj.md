@@ -47,7 +47,8 @@ itinerary:
     Ночь в ледовом лагере на острове Кинг-Джордж.
   images:
   - src: /media/tours/antarktida-programma-s-nochevkoj/itinerary-day-1-enhanced-20261006.webp
-    alt: Пунта Аренас
+    hover: "Пунта-Аренас: городские крыши и судно у побережья"
+    alt: "Цветные дома Пунта-Аренаса у моря под облачным небом, Чили"
 - day: 2
   title: Остров Кинг-Джордж - Пунта-Аренас
   places:

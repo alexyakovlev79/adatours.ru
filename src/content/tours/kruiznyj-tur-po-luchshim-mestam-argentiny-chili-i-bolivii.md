@@ -216,7 +216,8 @@ itinerary:
     После экскурсии трансфер в Tayka del Desierto.'
   images:
   - src: /media/tours/chili-kosmicheskoe-puteshestvie-na-zemle/itinerary-day-4-enhanced-20261006.webp
-    alt: 'На фото: пустыня Сан Педро де Атакама'
+    hover: "Атакама: фламинго и горы отражаются в спокойной воде"
+    alt: "Розовый фламинго у высокогорной лагуны на фоне сухих гор Атакамы, Чили"
 - day: 3
   title: '22.12: Уюни'
   places:
@@ -292,7 +293,8 @@ itinerary:
     Размещение в The Singular Hotel.'
   images:
   - src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/itinerary-day-10-enhanced-20261006.webp
-    alt: 'На фото: столица Чили. город Сантьяго-де -Чили'
+    hover: "Сантьяго: городские башни у подножия снежных Анд"
+    alt: "Панорама Сантьяго с высотными зданиями на фоне заснеженных Анд, Чили"
 - day: 5
   title: '24.12: Сантьяго - Пуэрто-Наталес'
   places:
@@ -385,7 +387,8 @@ itinerary:
     Ночь на борту.'
   images:
   - src: /media/tours/antarktida-programma-s-nochevkoj/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: Пунта Аренас, Чили. Патагония'
+    hover: "Пунта-Аренас: городские крыши и судно у побережья"
+    alt: "Цветные дома Пунта-Аренаса у моря под облачным небом, Чили"
 - day: 8
   title: '27.12: бухта Эйнсворт и острова Такер'
   places:
@@ -552,7 +555,8 @@ itinerary:
     После экскурсии размещение в Arakur Hotel, Valley View Room.'
   images:
   - src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
-    alt: 'На фото: город Ушуайя, Патагония. Аргентина'
+    hover: "Ушуайя: птицы на прибрежных скалах рядом с полосатым маяком"
+    alt: "Красно-белый маяк и морские птицы на скалистом островке у Ушуайи, Аргентина"
 - day: 12
   title: '31.12: Ушуайя - Буэнос-Айрес и Новый год'
   places:
@@ -579,7 +583,8 @@ itinerary:
     Размещение в Alvear Art Hotel.'
   images:
   - src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/gallery-2-enhanced-20261006.webp
-    alt: 'На фото: столица Аргентины, город Буэнос-Айрес'
+    hover: "Буэнос-Айрес сверху: многополосный проспект между городскими кварталами"
+    alt: "Широкий проспект с зелеными аллеями в центре Буэнос-Айреса, Аргентина"
 - day: 13
   title: '01.01: Буэнос-Айрес и гастрономический тур'
   places:
@@ -605,7 +610,8 @@ itinerary:
     После экскурсии возвращение в отель.'
   images:
   - src: /media/tours/argentina-ot-lda-k-vodopadam/itinerary-day-2-enhanced-20261006.webp
-    alt: 'На фото: столица Аргентины, город Буэнос-Айрес'
+    hover: "Буэнос-Айрес: Каса-Росада за цветами и флагштоками"
+    alt: "Розовый фасад Каса-Росада за клумбой желтых цветов в Буэнос-Айресе, Аргентина"
 - excursionRef: excursion_buenos_aires_gastronomic_tour
   places:
   - Буэнос-Айрес
@@ -646,7 +652,8 @@ itinerary:
     Размещение в Llao Llao.'
   images:
   - src: /media/tours/chili-argentina/itinerary-day-10-images-1-enhanced-20261006.webp
-    alt: 'На фото: курорт Барилоче. Аргентина'
+    hover: "Барилоче: прозрачная озерная бухта у зеленого берега"
+    alt: "Голубое озеро с лесистыми островками и пристанью в районе Барилоче, Аргентина"
 - day: 15
   title: '03.01: Малое кольцо и остров Виктория'
   places:

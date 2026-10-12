@@ -177,7 +177,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/tours/costa-rica-nicaragua-ru/itinerary-8-images-0-src-enhanced-20261007.webp
-    alt: Гранада
+    hover: "Гранада: городской собор с куполами и развевающийся флаг"
+    alt: "Флаг Никарагуа перед желто-красными фасадами собора Гранады"
 - day: 12
   title: Гранада - Манагуа - Масая
   places:

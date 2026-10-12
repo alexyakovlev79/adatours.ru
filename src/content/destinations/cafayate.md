@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Кафайяте — живописный городок на северо-западе Аргентины, расположенный в долине Кальчаки, среди высоких Андских хребтов и необычных красных скал. Этот регион известен прежде всего своими виноградниками и считается одним из главных винодельческих центров страны. Сухой солнечный климат, большие перепады температур между днём и ночью и высота над уровнем моря создают особые условия для выращивания винограда."
 searchAliases: ["kafayate"]
 themes: ["theme_gastronomy_wine", "theme_culture"]
-hero: {"src": "/media/destinations/destination_argentina_kafayate/original-01.jpg", "alt": "Кафаяте"}
+hero: {"src": "/media/destinations/destination_argentina_kafayate/original-01.jpg", "alt": "Сухая горная долина у Кафаяте под темными облаками, Аргентина", hover: "Кафаяте: красноватые склоны и редкая растительность перед горами"}
 gallery: [{"src": "/media/destinations/destination_argentina_kafayate/original-02.jpg", "alt": "Слоистые скалы и туристы в ущелье у Кафаяте, Аргентина", hover: "Кафаяте: туристы среди разноцветных слоистых скал"}]
 facts: []
 featureBands: []

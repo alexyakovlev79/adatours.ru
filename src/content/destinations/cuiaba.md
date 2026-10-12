@@ -14,7 +14,8 @@ searchAliases:
 themes: []
 hero:
   src: /media/destinations/destination_brazil_kuyaba/hero-generated-20261008-resumed.webp
-  alt: Куяба — Бразилия
+  hover: "Куяба: автомобили на городской улице среди зелени"
+  alt: "Улица Куябы с пальмами, деревьями и высотными зданиями, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

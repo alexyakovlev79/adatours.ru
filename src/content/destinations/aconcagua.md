@@ -21,7 +21,8 @@ gallery:
   alt: "Птицы на небольшом озере перед заснеженной Аконкагуа, Аргентина"
   hover: "Аконкагуа: горное озеро с птицами у подножия снежной вершины"
 - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-05-generated-20261008-v1.webp
-  alt: Переход к базовому лагерю Пласа-де-Мулас, Аконкагуа, Аргентина
+  hover: "Пласа-де-Мулас: треккинг по каменистой долине к базовому лагерю"
+  alt: "Туристы с рюкзаками подходят к палаткам лагеря Пласа-де-Мулас у Аконкагуа, Аргентина"
 - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-06-generated-20261008-v1.webp
   alt: Практика ходьбы в кошках у ледника Хорконес, Аконкагуа, Аргентина
 - {"src":"/media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-07-generated-20261008-v1.webp","alt":"Туристы на каменистом склоне перед большой заснеженной горой, Район Аконкагуа, Аргентина","hover":"Район Аконкагуа, Аргентина: туристы на каменистом склоне перед большой заснеженной горой"}

@@ -17,7 +17,8 @@ language:
 - испанский
 hero:
   src: /media/destinations/destination_mexico_merida/hero-generated-20261009-v1.webp
-  alt: Цветные фасады на улице Мериды в Юкатане
+  hover: "Мерида: пастельные дома и цветущие растения вдоль узкой улицы"
+  alt: "Тихая улица Мериды с цветными фасадами, цветами и деревьями, Юкатан, Мексика"
   status: approved
 gallery: []
 route:

@@ -15,7 +15,8 @@ currency: "USD"
 priceNote: "$64 на человека. Для более чем одного человека возможны скидки; свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/hero-src-enhanced-20261008.webp"
-  alt: "Экскурсия на Бразильскую сторону водопадов"
+  hover: "Игуасу: мостки у мощных потоков падающей воды"
+  alt: "Туристы на деревянной площадке перед широкими каскадами Игуасу"
 gallery:
   -
     src: "/media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/gallery-0-src-enhanced-20261008.webp"

@@ -347,7 +347,8 @@ itinerary:
     у озера.
   images:
   - src: /media/destinations/santiago-atitlan/hero-generated-20261008.webp
-    alt: Сантьяго-Атитлан на берегу озера, Гватемала
+    hover: "Сантьяго-Атитлан: городские дома и причал у спокойного озера"
+    alt: "Лодки у причала Сантьяго-Атитлана на фоне вулканических склонов, Гватемала"
 - excursionRef: excursion_atitlan_san_juan_textiles_santiago_culture
   places:
   - Лаго де Атитлан
@@ -575,7 +576,8 @@ itinerary:
     с шестичасовой программой.'
   images:
   - src: /media/tours/panama-city-gamboa-6-days/word-3-20261010-enhanced-20261011-pass2324-v1.webp
-    alt: Улица Каско-Вьехо с цветными фасадами и подвесными украшениями
+    hover: "Каско-Вьехо: яркие украшения над узкой улицей старого города"
+    alt: "Пешеходная улица Каско-Вьехо с цветными фасадами и подвесными украшениями, Панама-Сити"
 - excursionRef: excursion_panama_city_miraflores_imax_amador
   places:
   - Панама-Сити

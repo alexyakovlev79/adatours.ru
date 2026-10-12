@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Исторический город Юкатана с цветными фасадами и местной кухней."
 searchAliases: []
 themes: ["theme_culture","theme_gastronomy_wine"]
-hero: {"src":"/media/destinations/destination_mexico_merida/hero-generated-20261009-v1.webp","alt":"Цветные фасады на улице Мериды в Юкатане","status":"approved"}
+hero: {"src":"/media/destinations/destination_mexico_merida/hero-generated-20261009-v1.webp","alt":"Тихая улица Мериды с цветными фасадами, цветами и деревьями, Юкатан, Мексика","status":"approved", hover: "Мерида: пастельные дома и цветущие растения вдоль узкой улицы"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

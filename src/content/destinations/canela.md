@@ -8,7 +8,7 @@ countryId: "country_brazil"
 destinationType: "city"
 summary: "Канела в горах Серра-Гауша: прогулки по уютным улицам, шоколадные лавки, водопад Караколь и виды на лесные долины юга Бразилии."
 searchAliases: ["kanela"]
-hero: {"src": "/media/tours/south-brazil-12d/itinerary/day-07-enhanced-20260930.webp", "alt": "Стеклянная платформа Skyglass над зеленой долиной в Канеле", "hover": "Канела в горах Серра-Гауша: прогулки по уютным улицам, шоколадные лавки, водопад Караколь и виды на лесные долины юга Бразилии."}
+hero: {"src": "/media/tours/south-brazil-12d/itinerary/day-07-enhanced-20260930.webp", "alt": "Стеклянная смотровая платформа Skyglass над лесным ущельем в Канеле, Бразилия", "hover": "Канела: подвесная платформа над рекой между зелеными склонами"}
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

@@ -99,7 +99,8 @@ itinerary:
     день.
   images:
   - src: /media/destinations/santa-krus/hero-enhanced-20261003.webp
-    alt: 'На фото: кафедральный собор в городе Санта-Круз в Боливии'
+    hover: "Санта-Крус: кирпичные башни собора над городской площадью"
+    alt: "Кафедральный собор Санта-Круса с двумя башнями за деревьями, Боливия"
 - day: 2
   title: 13 мая, Санта-Крус
   places:
@@ -249,7 +250,8 @@ itinerary:
     и открытые пространства делают этот участок одним из самых необычных во всей программе.'
   images:
   - src: /media/destinations/destination_bolivia_pustynya_siloli/hero-generated-20261008.webp
-    alt: Siloli Desert in the southwestern high-altitude Altiplano — Bolivia
+    hover: "Силоли: причудливая каменная форма на фоне сухих гор"
+    alt: "Ветром выточенная скала на песчаной равнине пустыни Силоли, Боливия"
 - day: 8
   title: 19 мая, Кочабамба
   places:

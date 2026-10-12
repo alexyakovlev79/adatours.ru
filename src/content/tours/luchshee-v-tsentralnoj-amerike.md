@@ -96,7 +96,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-2-enhanced-20261006.webp
-    alt: Антигуа-Гуатемала
+    hover: "Антигуа-Гуатемала: теплые огни старинной церкви под розовым небом"
+    alt: "Освещенный барочный церковный фасад в Антигуа-Гуатемале на закате"
 - day: 3
   title: Antigua - вулкан Pacaya - озеро Atitlan
   places:
@@ -433,7 +434,8 @@ itinerary:
     Завтрак включен.
   images:
   - src: /media/tours/costa-rica-nicaragua-ru/itinerary-7-images-0-src-enhanced-20261007.webp
-    alt: Гранада
+    hover: "Гранада: старинная башня над красными крышами города"
+    alt: "Черепичные крыши и каменная церковная башня Гранады, Никарагуа"
 - day: 14
   title: Arenal - Caño Negro
   places:

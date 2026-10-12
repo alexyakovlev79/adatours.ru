@@ -76,7 +76,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: "/media/tours/populyarnye-napravleniya-venesuely/itinerary-1-images-0-src-enhanced-20261007.webp"
-    alt: Каракас
+    hover: "Каракас: автомобильное движение вдоль центральной аллеи"
+    alt: "Широкий проспект Каракаса с зелеными аллеями и высотными зданиями, Венесуэла"
 - day: 3
   title: Колония Товар
   places:

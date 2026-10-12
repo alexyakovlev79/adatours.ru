@@ -112,8 +112,8 @@ itinerary:
     ниже. Возвращение в отель, ужин и ночь в Casa Blanca 4* или аналогичном отеле.
   images:
   - src: /media/tours/mexico-religious-journey/anthropology-museum-generated-20261011-v1.webp
-    alt: Двор Национального музея антропологии с фонтаном под навесом Эль-Парагуас
-    hover: Двор Национального музея антропологии с фонтаном под навесом Эль-Парагуас
+    alt: "Фонтан под широким навесом во дворе Национального музея антропологии, Мехико, Мексика"
+    hover: "Музей антропологии в Мехико: вода стекает вокруг резной опоры навеса"
     status: approved
 - excursionRef: excursion_mexico_guadalupe_mass_anthropology
   places:
@@ -164,8 +164,8 @@ itinerary:
     приведена в экскурсии ниже. Возвращение в Мехико, поздний ужин и ночь в Casa Blanca 4* или аналогичном отеле.
   images:
   - src: /media/tours/mexico-religious-journey/tlaxcala-san-francisco-generated-20261011-v1.webp
-    alt: Францисканский монастырь Сан-Франциско и зеленый атриум в Тласкале
-    hover: Францисканский монастырь Сан-Франциско и зеленый атриум в Тласкале
+    alt: "Монастырь Сан-Франциско с аркадой и колокольней у зеленого двора, Тласкала, Мексика"
+    hover: "Тласкала: старинные каменные стены монастыря под деревьями"
     status: approved
 - excursionRef: excursion_mexico_tlaxcala_ocotlan_puebla_pilgrimage
   places:

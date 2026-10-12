@@ -112,7 +112,8 @@ itinerary:
     и ущелья «Горло дьявола». Название Игуасу на языке гуарани означает «большая вода».'
   images:
   - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
-    alt: Водопады Игуасу в Бразилии и Аргентине, вид сверху на каскады и джунгли
+    hover: "Игуасу: несколько каскадов среди субтропического леса"
+    alt: "Высокие потоки Игуасу между скалами и густой зеленой листвой"
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places:
   - Фоз-ду-Игуасу

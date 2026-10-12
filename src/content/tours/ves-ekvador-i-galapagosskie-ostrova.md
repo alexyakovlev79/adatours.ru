@@ -137,7 +137,8 @@ itinerary:
     **Питание:** завтрак.
   images:
   - src: /media/tours/aktivnyj-ekvador-i-trekking/itinerary-1-images-1-src-enhanced-20261007.webp
-    alt: Мindo
+    hover: "Эквадор: высокий монумент с металлическим шаром, вид сверху"
+    alt: "Каменный монумент с шаром на вершине среди газонов и гор в Эквадоре"
 - day: 4
   title: Кратерное озеро Килотоа
   places:

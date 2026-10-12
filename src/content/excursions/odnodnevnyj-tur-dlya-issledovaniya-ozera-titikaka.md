@@ -18,7 +18,8 @@ currency: "USD"
 priceNote: "Стоимость — $376. При 2 участниках — $248 USD на человека; при 3 — $189 USD на человека; при 4 — $150 USD на человека. Групповой тур — $89 USD на человека."
 hero:
   src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
-  alt: "на фото: озеро Титикака и  плавающие острова Урос в Перу"
+  hover: "Урос: цветные наряды жителей и лодка у тростникового берега"
+  alt: "Тростниковая лодка и жители плавучего острова Урос, озеро Титикака, Перу"
 gallery:
   - src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/gallery-1-enhanced-20261006.webp"
     alt: "на фото: озеро Титикака и  плавающие острова Урос в Перу"

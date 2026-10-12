@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Река Гуаяберо у Ла-Макарены в Колумбии, лодочный участок природных маршрутов к Каньо-Кристалес.
 hero:
   src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/guayabero-river-generated-20261009-v1.webp
-  alt: Лодочный маршрут по реке Гуаяберо у Ла-Макарены
+  hover: "Гуаяберо: спокойная река у лесистого берега, вид из лодки"
+  alt: "Нос лодки на реке Гуаяберо среди каменистых берегов и тропического леса, Колумбия"
 gallery: []
 themes:
 - theme_wildlife

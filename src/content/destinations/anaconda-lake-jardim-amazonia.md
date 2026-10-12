@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/tours/brazil-three-ecosystems-8-days/word-2-20261010-enhanced-20261011-doc-v1.webp
-  alt: Спокойная река с отражениями деревьев и лесистыми берегами
+  hover: "Амазония: густые лесистые берега отражаются в тихой воде"
+  alt: "Спокойная лесная река с отражениями зеленых деревьев, Амазония, Бразилия"
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_anaconda_lake_jardim_amazonia.md
 updatedAt: '2026-10-10'

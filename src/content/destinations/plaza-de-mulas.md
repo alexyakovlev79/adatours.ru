@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: "Палаточный городок среди камня, снега и высоких Анд. Пласа-де-Мулас знакомит с жизнью базового лагеря на пути к вершине Аконкагуа."
 hero:
   src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-05-generated-20261008-v1.webp
-  alt: "Подход к палаткам базового лагеря Пласа-де-Мулас среди высоких Анд — реалистичная иллюстрация из программы тура"
+  hover: "Пласа-де-Мулас: треккинг по каменистой долине к базовому лагерю"
+  alt: "Туристы с рюкзаками подходят к палаткам лагеря Пласа-де-Мулас у Аконкагуа, Аргентина"
 gallery: []
 themes: ["theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_argentina_plaza_de_mulas.md

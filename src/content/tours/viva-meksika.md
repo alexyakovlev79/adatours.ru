@@ -130,7 +130,8 @@ itinerary:
   - Мехико Сити (руины Теотихуакана)
   images:
   - src: /media/tours/viva-meksika/xochimilco-generated-20261010-v1.webp
-    alt: "Цветные лодки на каналах Сочимилько в Мехико"
+    hover: "Сочимилько: цветные лодки у зеленых берегов канала"
+    alt: "Яркие прогулочные лодки на канале Сочимилько под ивами, Мехико, Мексика"
 - excursionRef: excursion_mexico_xochimilco_south_mexico_city
   places:
   - Сочимилько
@@ -188,7 +189,8 @@ itinerary:
   - Сан-Бартоло-Койотепек
   images:
   - src: /media/tours/viva-meksika/monte-alban-generated-20261010-v1.webp
-    alt: "Каменные платформы Монте-Альбана над долиной Оахаки"
+    hover: "Монте-Альбан: низкие ступенчатые сооружения над долиной Оахаки"
+    alt: "Каменные платформы Монте-Альбана вокруг травянистой площади, Мексика"
 - excursionRef: excursion_mexico_monte_alban_craft_villages
   places:
   - Монте-Альбан
@@ -205,7 +207,8 @@ itinerary:
   - Оахака
   images:
   - src: /media/tours/viva-meksika/hierve-el-agua-generated-20261010-v1.webp
-    alt: "Минеральный бассейн и окаменевшие каскады Хьерве-эль-Агуа"
+    hover: "Хьерве-эль-Агуа: прозрачная вода на скальной террасе над долиной"
+    alt: "Минеральный бассейн у белых окаменевших каскадов Хьерве-эль-Агуа, Оахака, Мексика"
 - excursionRef: excursion_mexico_mitla_hierve_el_agua_mescal
   places:
   - Митла
@@ -237,7 +240,8 @@ itinerary:
   - Оахака
   images:
   - src: /media/destinations/destination_mexico_merida/hero-generated-20261009-v1.webp
-    alt: Цветные фасады на улице Мериды в Юкатане
+    hover: "Мерида: пастельные дома и цветущие растения вдоль узкой улицы"
+    alt: "Тихая улица Мериды с цветными фасадами, цветами и деревьями, Юкатан, Мексика"
     status: approved
 - day: 10
   title: Ушмаль и сенот
@@ -247,7 +251,8 @@ itinerary:
   - Мерида
   images:
   - src: /media/tours/viva-meksika/uxmal-generated-20261010-v1.webp
-    alt: "Орнаментированный каменный фасад Дворца Правителя в Ушмале"
+    hover: "Ушмаль: узорчатый фасад древнего дворца перед травянистой площадкой"
+    alt: "Длинный каменный фасад Дворца Правителя в Ушмале с резным орнаментом, Мексика"
 - excursionRef: excursion_mexico_uxmal_cenote
   places:
   - Ушмаль
@@ -260,7 +265,8 @@ itinerary:
   - Мерида
   images:
   - src: /media/tours/viva-meksika/santa-barbara-cenotes-generated-20261010-v1.webp
-    alt: "Бирюзовая вода пещерного сенота Санта-Барбары на Юкатане"
+    hover: "Сеноты Санта-Барбара: луч света над прозрачной водой и деревянной лестницей"
+    alt: "Бирюзовая вода сенота Санта-Барбары под известняковым сводом, Юкатан, Мексика"
 - excursionRef: excursion_mexico_santa_barbara_cenotes
   places:
   - Сеноты Санта-Барбара

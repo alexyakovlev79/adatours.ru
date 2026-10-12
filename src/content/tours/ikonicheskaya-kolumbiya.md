@@ -258,7 +258,8 @@ currency: USD
 priceNote: $4054
 hero:
   src: "/media/excursions/medelin-siti-tur-i-eskobar/gallery-4-src-enhanced-20261007.webp"
-  alt: Иконическая Колумбия
+  hover: "Колумбия: женщина в цветном наряде у каменной стены с ананасом"
+  alt: "Женщина в ярком платье и синем головном уборе смотрит в телефон, Колумбия"
 routeCountries:
 - country_colombia
 routeDestinations:

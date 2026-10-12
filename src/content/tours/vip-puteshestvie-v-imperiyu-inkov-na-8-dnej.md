@@ -201,7 +201,8 @@ itinerary:
     Дополнительно.
   images:
   - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-09-enhanced-20260930.webp
-    alt: Город Лима - вид с океана, столица Перу
+    hover: "Лима: морские волны у высокого городского обрыва в вечернем свете"
+    alt: "Высотные здания Лимы над скалистым берегом Тихого океана на закате, Перу"
 - excursionRef: excursion_lima_larco_museum_visit
   places: []
 - day: 8

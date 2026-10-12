@@ -91,7 +91,8 @@ itinerary:
     В 19:00 ужин и свободный вечер.
   images:
   - src: /media/tours/braziliya-gruppovoj-tur-na-13-dnej/itinerary-day-4-enhanced-20261006.webp
-    alt: Манаус
+    hover: "Бразилия: городской берег с разноцветными зданиями и лодкой"
+    alt: "Цветные дома бразильского прибрежного города и прогулочная лодка на воде"
 - day: 5
   title: Манаус
   places:

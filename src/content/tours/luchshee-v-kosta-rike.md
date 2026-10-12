@@ -237,7 +237,8 @@ itinerary:
     Питание: завтрак.
   images:
   - src: /media/tours/luchshee-v-kosta-rike/itinerary-12-images-0-src-enhanced-20261007.webp
-    alt: Сан Хосе
+    hover: "Сан-Хосе: панорама застройки и высоких зданий у горного склона"
+    alt: "Городские кварталы Сан-Хосе на фоне зеленых гор, Коста-Рика"
 - day: 14
   title: Сан-Хосе
   places:

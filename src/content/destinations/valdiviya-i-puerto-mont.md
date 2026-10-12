@@ -10,7 +10,8 @@ summary: "Вальдивия, Пуэрто Варас и Пуэрто Монт: 
 searchAliases: []
 hero:
   src: "/media/destinations/valdiviya-i-puerto-mont/hero-enhanced-20261005.webp"
-  alt: "На фото: Пуэрто Монт в Чили"
+  hover: "Пуэрто-Монт: буксир перед зелеными прибрежными горами"
+  alt: "Красный буксир на синей воде у гористого побережья Пуэрто-Монта, Чили"
 gallery:
   - src: "/media/destinations/valdiviya-i-puerto-mont/gallery-1-enhanced-20261005.webp"
     alt: "Туристка на тропе среди высоких деревьев и густых папоротников"

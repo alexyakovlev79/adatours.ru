@@ -16,7 +16,8 @@ priceFrom: 100
 currency: USD
 hero:
   src: /media/excursions/ekskursiya-v-tigre-i-po-severnym-provintsiyam-buenos-ajresa/hero-enhanced-20261001.webp
-  alt: Тигре, Аргентина
+  hover: "Аргентина: деревянные лодки у оживленной городской набережной"
+  alt: "Пассажирские лодки у набережной с торговыми павильонами и высотными домами, Аргентина"
 gallery: []
 route:
   - Буэнос-Айрес

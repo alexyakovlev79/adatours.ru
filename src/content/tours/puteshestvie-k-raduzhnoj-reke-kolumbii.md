@@ -95,7 +95,8 @@ itinerary:
     Ужин включен.
   images:
   - src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/guayabero-river-generated-20261009-v1.webp
-    alt: Лодочный маршрут по реке Гуаяберо у Ла-Макарены
+    hover: "Гуаяберо: спокойная река у лесистого берега, вид из лодки"
+    alt: "Нос лодки на реке Гуаяберо среди каменистых берегов и тропического леса, Колумбия"
 - day: 4
   title: Ла-Макарена
   places:
@@ -108,7 +109,8 @@ itinerary:
     Вечером - общение с местными жителями, музыка и ужин.
   images:
   - src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/la-macarena-town-generated-20261009-v1.webp
-    alt: Улица Ла-Макарены в департаменте Мета, Колумбия
+    hover: "Ла-Макарена: низкая городская застройка среди тропической зелени"
+    alt: "Цветные дома и цветущие растения на улице Ла-Макарены, Колумбия"
 - day: 5
   title: Каньо-Кристалес и возвращение в Боготу
   places:

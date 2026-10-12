@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_bolivia_pustynya_siloli/hero-generated-20261008.webp
-  alt: Siloli Desert in the southwestern high-altitude Altiplano — Bolivia
+  hover: "Силоли: причудливая каменная форма на фоне сухих гор"
+  alt: "Ветром выточенная скала на песчаной равнине пустыни Силоли, Боливия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

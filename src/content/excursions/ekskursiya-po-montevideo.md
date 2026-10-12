@@ -18,7 +18,8 @@ priceFrom: 500
 currency: USD
 hero:
   src: /media/excursions/ekskursiya-po-montevideo/hero-enhanced-20261001.webp
-  alt: Монтевидео, Уругвай
+  hover: "Монтевидео: башня дворца Сальво над пешеходной площадью"
+  alt: "Пальмы и цветники на площади перед дворцом Сальво в Монтевидео, Уругвай"
 gallery: []
 route:
   - Буэнос-Айрес

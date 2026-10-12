@@ -160,7 +160,8 @@ priceNote: 'От $23 700 на человека при двухместном р�
 dates: []
 hero:
   src: /media/destinations/ahu-tongariki/hero-generated-20261009-v3.webp
-  alt: Аху-Тонгарики
+  hover: "Аху-Тонгарики: статуи моаи на фоне моря и вулканического побережья"
+  alt: "Ряд каменных моаи Аху-Тонгарики у океанского берега, остров Пасхи, Чили"
 gallery: []
 lead: 17 дней от Сантьяго и виноградников центрального Чили до моаи острова Пасхи, Атакамы, ледников Патагонии и
   виноделен Мендосы. Водопады Игуасу с 2 сторон и танго в Буэнос-Айресе завершают путешествие. Отели с указанными
@@ -442,9 +443,9 @@ itinerary:
     входит в размещение (BB).'
   images:
   - src: /media/tours/chile-argentina-private-grand-tour-17-days/plaza-dorrego-generated-20261011-v1.webp
-    alt: Кафе, деревья и старинные дома у Пласа-Доррего — иллюстрация
+    alt: "Столики кафе под деревьями у старинных домов Сан-Тельмо, Буэнос-Айрес, Аргентина"
     status: approved
-    hover: Кафе, деревья и старинные дома у Пласа-Доррего — иллюстрация
+    hover: "Сан-Тельмо: кафе и деревья у мощеной улицы Буэнос-Айреса"
 - excursionRef: excursion_buenos_aires_private_historic_neighbourhoods
   places: []
 - excursionRef: excursion_buenos_aires_tango_show_dinner

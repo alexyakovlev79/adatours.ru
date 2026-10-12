@@ -9,7 +9,8 @@ destinationType: city
 summary: Мутанзи, община коренных жителей Колумбии на пешем маршруте к Затерянному городу.
 hero:
   src: /media/tours/zateryannyj-gorod-v-santa-marte/itinerary-day-03-generated-20261008-v1.webp
-  alt: Традиционные хижины общины Мутанзи среди горного леса, Колумбия
+  hover: "Мутанзи: традиционные дома среди влажного леса и зеленых склонов"
+  alt: "Круглые хижины с соломенными крышами у горной реки в Мутанзи, Колумбия"
 gallery: []
 themes:
 - theme_culture

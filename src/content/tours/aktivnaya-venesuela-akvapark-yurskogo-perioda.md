@@ -36,7 +36,8 @@ itinerary:
     **Питание:** ужин.
   images:
   - src: "/media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-1-enhanced-20261007.webp"
-    alt: Каракас
+    hover: "Каракас сверху: высотные здания и жилые кварталы на склонах"
+    alt: "Плотная городская застройка Каракаса у зеленых гор, Венесуэла"
 - day: 2
   title: ', вторник. Сан-Франциско-де-Юруани'
   places:
@@ -47,7 +48,8 @@ itinerary:
     **Питание:** завтрак, обед в пути, ужин.
   images:
   - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-02-generated-20261008-next20.webp
-    alt: Саванна у Сан-Франциско-де-Юруани, Венесуэла
+    hover: "Сан-Франциско-де-Юруани: низкие дома среди травянистой равнины"
+    alt: "Поселение Сан-Франциско-де-Юруани в саванне на фоне столовых гор, Венесуэла"
 - day: 3
   title: ', среда. Начало треккинга на Рорайму'
   places:
@@ -62,7 +64,8 @@ itinerary:
     **Питание:** завтрак, сухой паек на обед, ужин.
   images:
   - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-03-generated-20261008-next20.webp
-    alt: Рорайма и саванна на подходе к горе, Венесуэла
+    hover: "Рорайма: отвесные стены плато над травами и камнями"
+    alt: "Столовая гора Рорайма над каменистым ручьем и саванной, Венесуэла"
 - day: 4
   title: ', четверг. Подъем на плато Рораймы'
   places:

@@ -12,7 +12,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_tumbira/hero-generated-20261008-resumed.webp
-  alt: Тумбира — Бразилия
+  hover: "Тумбира: прибрежная община у тихой реки и густого леса"
+  alt: "Деревянные дома и причал Тумбиры на лесном берегу реки в Амазонии, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

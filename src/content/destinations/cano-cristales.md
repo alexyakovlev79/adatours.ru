@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Каньо-Кристалес, река в районе Ла-Макарены с цветными участками русла, каскадами и естественными бассейнами.
 hero:
   src: /media/tours/kolumbiya-s-kano-kristales-i-ne-tolko/hero-src-enhanced-20261007.webp
-  alt: Колумбия с «Каньо-Кристалес» и не только
+  hover: "Каньо-Кристалес: цветные участки русла и небольшие водопады"
+  alt: "Красная и зеленая водная растительность у каскадов Каньо-Кристалес, Колумбия"
 gallery:
 - src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/hero-src-enhanced-20261007.webp
   alt: "Розовые водные растения между камнями реки Каньо-Кристалес, Колумбия"

@@ -111,7 +111,8 @@ itinerary:
     Продолжительность около 3 часов.'
   images:
   - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-4-enhanced-20261006.webp
-    alt: 'на фото: винный регион Мендоса (Мендоза) в Аргентине'
+    hover: "Мендоса: возделанные поля и деревья перед снежными горными вершинами"
+    alt: "Ряды сельскохозяйственных посадок у заснеженных Анд в районе Мендосы, Аргентина"
 - excursionRef: excursion_mendoza_city_tour
   places: []
 - day: 5
@@ -139,7 +140,8 @@ itinerary:
   - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-6-enhanced-20261006.webp
     alt: 'на фото: Эль Калафате в Аргентине'
   - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
-    alt: 'на фото: винный регион Мендоса (Мендоза) в Аргентине'
+    hover: "Анды у Мендосы: цветы и тропа перед заснеженными горными склонами"
+    alt: "Горная долина у Мендосы с цветами на переднем плане и снежной вершиной, Аргентина"
 - day: 7
   title: Калафате и ледник Перито-Морено
   places:

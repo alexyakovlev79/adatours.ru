@@ -412,7 +412,8 @@ itinerary:
     Ужин и ночевка.'
   images:
   - src: /media/destinations/destination_bolivia_pustynya_siloli/hero-generated-20261008.webp
-    alt: Siloli Desert in the southwestern high-altitude Altiplano — Bolivia
+    hover: "Силоли: причудливая каменная форма на фоне сухих гор"
+    alt: "Ветром выточенная скала на песчаной равнине пустыни Силоли, Боливия"
 - day: 11
   title: Лагуна Колорада - гейзеры - Лагуна Верде - Сан-Педро-де-Атакама
   places:
@@ -449,7 +450,8 @@ itinerary:
     лагуны, гейзерные поля, горячие источники и почти лишенную растительности пустыню.'
   images:
   - src: /media/destinations/laguna-colorada/hero-generated-20261008.webp
-    alt: Лагуна Колорада
+    hover: "Лагуна Колорада: фламинго у белого минерального берега и сухих гор"
+    alt: "Розовые фламинго в красной воде Лагуны Колорада, Боливия"
 - day: 12
   title: Сан-Педро-де-Атакама - Сантьяго
   places:

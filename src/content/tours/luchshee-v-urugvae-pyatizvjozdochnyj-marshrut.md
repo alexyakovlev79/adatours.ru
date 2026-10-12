@@ -32,7 +32,8 @@ itinerary:
     Размещение в отеле.
   images:
   - src: /media/excursions/ekskursiya-po-montevideo/hero-enhanced-20261001.webp
-    alt: Монтевидео
+    hover: "Монтевидео: башня дворца Сальво над пешеходной площадью"
+    alt: "Пальмы и цветники на площади перед дворцом Сальво в Монтевидео, Уругвай"
 - day: 2
   title: Монтевидео
   places:

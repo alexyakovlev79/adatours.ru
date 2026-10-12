@@ -21,7 +21,8 @@ hero:
   alt: Исторический центр Кито в Эквадоре
 gallery:
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-1-enhanced-20261001.webp
-    alt: Панорама Кито
+    hover: "Кито: церковный фасад и просторная мощеная площадь с голубями"
+    alt: "Белая церковь с двумя башнями и голуби на площади Кито, Эквадор"
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-2-enhanced-20261001.webp
     alt: Исторический центр Кито
   - src: /media/excursions/kito-siti-tur-na-ves-den/gallery-3-enhanced-20261001.webp

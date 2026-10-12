@@ -153,7 +153,8 @@ itinerary:
     День посвящен отдыху и купанию.
   images:
   - src: /media/tours/braziliya-argentina-gruppovoj-tur/itinerary-day-8-enhanced-20261006.webp
-    alt: Сальвадор
+    hover: "Бразилия: старинная церковь с голубыми стенами и каменным декором"
+    alt: "Голубой церковный фасад с колоколами и резными каменными украшениями, Бразилия"
 - day: 9
   title: Сальвадор - Фос-ду-Игуасу
   places:
@@ -207,7 +208,8 @@ itinerary:
     В программу также входят Ла-Бока, пешеходная улица Каминито, площадь Сан-Мартин и Реколета.
   images:
   - src: /media/tours/argentina-dlya-degustatorov-khoroshej-zhizni/itinerary-day-2-enhanced-20261006.webp
-    alt: Буэнос-Айрес
+    hover: "Буэнос-Айрес ночью: теплые огни старинного фасада"
+    alt: "Освещенное угловое здание и прохожие на ночной улице Буэнос-Айреса, Аргентина"
 - excursionRef: excursion_source_tango_shou_v_buenos_ajrese
   places: []
 - day: 13

@@ -9,7 +9,7 @@ destinationType: "natural_area"
 summary: "Пурмамарка — небольшой городок на севере Аргентины, расположенный в живописной долине Кебрада-де-Умауака у подножия знаменитой Горы семи цветов. Это одно из тех мест, где сама природа словно становится произведением искусства: разноцветные горные склоны окружают поселение, создавая необычный контраст с голубым небом и сухими пейзажами Анд."
 searchAliases: ["purmamarka"]
 themes: ["theme_wildlife", "theme_culture"]
-hero: {"src": "/media/destinations/destination_argentina_purmamarka/original-01.jpg", "alt": "Пурмамарка"}
+hero: {"src": "/media/destinations/destination_argentina_purmamarka/original-01.jpg", "alt": "Тропа ведет к разноцветным горным склонам Пурмамарки, Аргентина", hover: "Пурмамарка: розовые и серые полосы на сухих горных склонах"}
 gallery: [{"src": "/media/destinations/destination_argentina_purmamarka/original-02.jpg", "alt": "Разноцветные горные склоны у Пурмамарки, Аргентина", hover: "Пурмамарка: красные и охристые склоны под облаками"}]
 facts: []
 featureBands: []

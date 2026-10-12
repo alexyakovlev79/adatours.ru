@@ -37,7 +37,8 @@ priceFrom: null
 dates: []
 hero:
   src: /media/tours/programma-dlya-aktivnykh-lyudej/hero-enhanced-20261006.webp
-  alt: "Патагония"
+  hover: "Патагония: город у гор и его отражение в прозрачной воде"
+  alt: "Горные вершины и прибрежные дома отражаются в спокойной воде Патагонии"
 gallery: []
 featured: false
 priority: 0

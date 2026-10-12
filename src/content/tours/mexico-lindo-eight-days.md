@@ -172,7 +172,8 @@ itinerary:
     повозка. Ночь в отеле в Мериде. Питание, чаевые и личные расходы не включены.'
   images:
   - src: /media/tours/viva-meksika/santa-barbara-cenotes-generated-20261010-v1.webp
-    alt: Бирюзовая вода пещерного сенота Санта-Барбары на Юкатане
+    hover: "Сеноты Санта-Барбара: луч света над прозрачной водой и деревянной лестницей"
+    alt: "Бирюзовая вода сенота Санта-Барбары под известняковым сводом, Юкатан, Мексика"
 - excursionRef: excursion_mexico_santa_barbara_cenotes
   places: *id006
 - day: 8

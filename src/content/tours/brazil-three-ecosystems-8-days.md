@@ -92,7 +92,8 @@ itinerary:
     Питание: ужин.'
   images:
   - src: /media/destinations/destination_brazil_kuyaba/hero-generated-20261008-resumed.webp
-    alt: Куяба — Бразилия
+    hover: "Куяба: автомобили на городской улице среди зелени"
+    alt: "Улица Куябы с пальмами, деревьями и высотными зданиями, Бразилия"
 - day: 2
   title: 'Амазония: лес и каноэ'
   places:
@@ -109,7 +110,8 @@ itinerary:
     Питание: завтрак, обед, ужин.'
   images:
   - src: /media/tours/brazil-three-ecosystems-8-days/word-2-20261010-enhanced-20261011-doc-v1.webp
-    alt: Спокойная река с отражениями деревьев и лесистыми берегами
+    hover: "Амазония: густые лесистые берега отражаются в тихой воде"
+    alt: "Спокойная лесная река с отражениями зеленых деревьев, Амазония, Бразилия"
 - excursionRef: excursion_jardim_amazonia_forest_canoe
   places:
   - Лодж «Жардим-да-Амазония»

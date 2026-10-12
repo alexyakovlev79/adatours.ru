@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Сеноты у деревни Хомун на Юкатане, которые посещают из Мериды.
 hero:
   src: /media/tours/viva-meksika/santa-barbara-cenotes-generated-20261010-v1.webp
-  alt: Бирюзовая вода пещерного сенота Санта-Барбары на Юкатане
+  hover: "Сеноты Санта-Барбара: луч света над прозрачной водой и деревянной лестницей"
+  alt: "Бирюзовая вода сенота Санта-Барбары под известняковым сводом, Юкатан, Мексика"
 gallery: []
 themes:
 - theme_wildlife

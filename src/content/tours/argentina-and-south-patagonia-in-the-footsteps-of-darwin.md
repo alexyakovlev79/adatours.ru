@@ -70,7 +70,8 @@ itinerary:
       Питание: завтрак, обед, ужин.
     images:
       - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-2-enhanced-20261006.webp
-        alt: "Мендоса и Анды"
+        hover: "Анды у Мендосы: цветы и тропа перед заснеженными горными склонами"
+        alt: "Горная долина у Мендосы с цветами на переднем плане и снежной вершиной, Аргентина"
         intendedSlot: "itinerary:day-2"
   - day: 3
     title: "Пуэнте-дель-Инка - Конфлуэнсия, 3300 м"
@@ -119,7 +120,8 @@ itinerary:
       Питание: завтрак, полдник, ужин.
     images:
       - src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-05-generated-20261008-v1.webp
-        alt: "Переход к базовому лагерю Пласа-де-Мулас, Аконкагуа, Аргентина"
+        hover: "Пласа-де-Мулас: треккинг по каменистой долине к базовому лагерю"
+        alt: "Туристы с рюкзаками подходят к палаткам лагеря Пласа-де-Мулас у Аконкагуа, Аргентина"
         intendedSlot: "itinerary:day-5"
   - day: 6
     title: "Пласа-де-Мулас, 4260 м"

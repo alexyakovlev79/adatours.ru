@@ -178,7 +178,8 @@ itinerary:
   text: "Трансфер с водителем в аэропорт Игуасу, перелет в Сальту. Около 3 часов до Кафаяте, по пути археологический комплекс Куэвас-Пинтадас в Гуачипасе. Ночь в Grace Cafayate, Deluxe Room."
   images:
   - src: "/media/destinations/destination_argentina_kafayate/original-01.jpg"
-    alt: "Кафаяте"
+    hover: "Кафаяте: красноватые склоны и редкая растительность перед горами"
+    alt: "Сухая горная долина у Кафаяте под темными облаками, Аргентина"
 - excursionRef: excursion_argentina_guachipas_rock_art_tour
   places: []
 - day: 6
@@ -205,7 +206,8 @@ itinerary:
   text: "День с русскоговорящим гидом по Умауакскому ущелью: Семицветная гора, Тилькара, Укия, Умауака и Инка-Куэва. Указанные в Word входные билеты включены. Высадка в Пурмамарке, ночь Mirador del Virrey Cabañas Boutique, Cabaña."
   images:
   - src: "/media/destinations/destination_argentina_purmamarka/original-01.jpg"
-    alt: "Пурмамарка и Семицветная гора"
+    hover: "Пурмамарка: розовые и серые полосы на сухих горных склонах"
+    alt: "Тропа ведет к разноцветным горным склонам Пурмамарки, Аргентина"
 - excursionRef: excursion_argentina_humahuaca_seven_colours_inca_cueva
   places: []
 - day: 8
@@ -216,7 +218,8 @@ itinerary:
   text: "День на солончаке Салинас-Грандес по дороге №9 с русскоговорящим гидом, указанные в Word входные билеты включены. Возвращение в Сальту, ночь в Alejandro I, Affiliated by Meliá, Premium Room."
   images:
   - src: "/media/destinations/salinas-grandes/hero-generated-20261008.webp"
-    alt: "Солончак Салинас-Грандес"
+    hover: "Салинас-Грандес: соляная равнина у далеких андских гор"
+    alt: "Прямоугольный бассейн с голубой водой среди белой соли Салинас-Грандес, Аргентина"
 - excursionRef: excursion_argentina_salinas_grandes_with_russian_guide
   places: []
 - day: 9
@@ -248,7 +251,8 @@ itinerary:
   text: "Русскоговорящий гид, посещение бутик-виноделен долины Уко и дегустация высокогорных вин. Ночь в Entre Cielos, Superior Room."
   images:
   - src: "/media/destinations/destination_argentina_dolina_uko/original-01.jpg"
-    alt: "Долина Уко"
+    hover: "Долина Уко: виноградник под облачными андскими вершинами"
+    alt: "Ряды виноградных посадок в долине Уко на фоне гор, Аргентина"
 - excursionRef: excursion_argentina_uco_valley_winery_tasting
   places: []
 - day: 12

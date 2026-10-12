@@ -186,7 +186,8 @@ itinerary:
     text: ''
   images:
   - src: /media/tours/mechty-sbyvayutsya-na-novyj-god/itinerary-day-7-images-1-enhanced-20261006.webp
-    alt: Тропический лес и каскады Игуасу в Аргентине и Бразилии
+    hover: "Игуасу: несколько каскадов среди субтропического леса"
+    alt: "Высокие потоки Игуасу между скалами и густой зеленой листвой"
 - excursionRef: excursion_source_makuko_safari
   places: []
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
@@ -261,7 +262,8 @@ itinerary:
     На обратном пути катер проходит через участок, где обитают розовые дельфины. Обычно они появляются на поверхности на несколько секунд и снова уходят под темную воду.'
   image:
     src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-02-generated-20261008-v1.webp
-    alt: Лесные острова архипелага Анавианас на Рио-Негро в Бразилии
+    hover: "Анавианас сверху: зеленые острова и широкие речные протоки"
+    alt: "Лесистые острова архипелага Анавианас в темной воде Рио-Негро, Бразилия"
 - day: 10
   title: Амазония, розовые дельфины и возвращение в Манаус
   places:

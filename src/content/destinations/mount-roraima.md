@@ -10,7 +10,8 @@ summary: Столовая гора Гвианского нагорья с отв
   наверху.
 hero:
   src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-03-generated-20261008-next20.webp
-  alt: Рорайма и саванна на подходе к горе, Венесуэла
+  hover: "Рорайма: отвесные стены плато над травами и камнями"
+  alt: "Столовая гора Рорайма над каменистым ручьем и саванной, Венесуэла"
 gallery:
 - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-04-generated-20261008-next20.webp
   alt: "Каменистая тропа вдоль отвесной стены Рораймы над облаками, Венесуэла"

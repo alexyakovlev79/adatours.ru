@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Оронго — церемониальная деревня на острове Пасхи, связанная с культом человека-птицы.
 hero:
   src: /media/destinations/orongo-village/hero-generated-20261009-v3.webp
-  alt: Деревня Оронго
+  hover: "Оронго: древние дома у скалистого морского берега на закате"
+  alt: "Низкие каменные дома Оронго на травянистом склоне у океана, остров Пасхи, Чили"
 gallery: []
 themes:
 - theme_culture

@@ -11,7 +11,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/hero-src-enhanced-20261008.webp
-  alt: Экскурсия на Бразильскую сторону водопадов
+  hover: "Игуасу: мостки у мощных потоков падающей воды"
+  alt: "Туристы на деревянной площадке перед широкими каскадами Игуасу"
   status: approved
 gallery: []
 lead: Экскурсия к бразильской стороне водопадов Игуасу на территории национального парка.

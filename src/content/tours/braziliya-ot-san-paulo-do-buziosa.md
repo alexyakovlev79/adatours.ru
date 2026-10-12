@@ -185,7 +185,8 @@ itinerary:
     По прибытии трансфер в отель.
   images:
   - src: /media/tours/braziliya-ot-san-paulo-do-buziosa/itinerary-day-11-enhanced-20261006.webp
-    alt: Сан-Паулу
+    hover: "Сан-Паулу сверху: водоемы и кроны деревьев перед плотной застройкой"
+    alt: "Озера и зеленый городской парк среди высотных кварталов Сан-Паулу, Бразилия"
 - day: 12
   title: Сан-Паулу
   places:

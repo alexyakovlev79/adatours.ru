@@ -10,7 +10,8 @@ themes:
 lead: Прогулка по бразильской стороне водопадов Игуасу с русскоговорящим гидом в составе группы.
 hero:
   src: /media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/hero-src-enhanced-20261008.webp
-  alt: Экскурсия на Бразильскую сторону водопадов
+  hover: "Игуасу: мостки у мощных потоков падающей воды"
+  alt: "Туристы на деревянной площадке перед широкими каскадами Игуасу"
 locale: ru
 status: approved
 format: Групповая экскурсия

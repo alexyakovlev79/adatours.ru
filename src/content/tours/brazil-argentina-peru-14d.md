@@ -228,7 +228,8 @@ itinerary:
       После экскурсии возвращение в отель.
     images:
       - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-09-enhanced-20260930.webp
-        alt: "Побережье Лимы"
+        hover: "Лима: морские волны у высокого городского обрыва в вечернем свете"
+        alt: "Высотные здания Лимы над скалистым берегом Тихого океана на закате, Перу"
         intendedSlot: "itinerary:day-9"
   - day: 10
     title: "Куско и археологический парк Саксайуаман"
@@ -249,7 +250,8 @@ itinerary:
       Ночь в Куско.
     images:
       - src: /media/tours/brazil-argentina-peru-14d/itinerary/day-10-enhanced-20260930.webp
-        alt: "Куско, Перу"
+        hover: "Куско: резной церковный фасад и городское движение перед ним"
+        alt: "Каменная церковь с двумя башнями у оживленной улицы Куско, Перу"
         intendedSlot: "itinerary:day-10"
   - day: 11
     title: "Мачу-Пикчу"

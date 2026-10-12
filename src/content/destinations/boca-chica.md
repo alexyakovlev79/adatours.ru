@@ -9,7 +9,8 @@ destinationType: city
 summary: Бока-Чика в Панаме, тихоокеанское поселение и база морских поездок по Чирикскому заливу.
 hero:
   src: /media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-3-images-0-src-regenerated-20261011-v2.webp
-  alt: Остров Бока-Чика, Панама - люксовый пляж, белый песок
+  hover: "Бока-Чика: тихоокеанская бухта с песчаным берегом и тропической зеленью"
+  alt: "Светлый пляж и пальмы у прозрачного моря в районе Бока-Чика, Панама"
 gallery:
 - {"src":"/media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-4-images-0-src-enhanced-20261007.webp","alt":"Кокосы и пальмовые листья над бирюзовым морем, Бока-Чика, Панама","hover":"Бока-Чика, Панама: кокосы и пальмовые листья над бирюзовым морем"}
 - src: /media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp

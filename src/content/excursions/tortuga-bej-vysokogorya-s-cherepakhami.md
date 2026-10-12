@@ -21,7 +21,8 @@ hero:
   alt: "на фото: Галапагосские острова и галапагосская черепаха"
 gallery:
   - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-0-src-enhanced-20261007.webp"
-    alt: "на фото: Галапагосские острова в Эквадоре"
+    hover: "Галапагосы: морская птица над лодками и прибрежными домами"
+    alt: "Фрегат над гаванью с лодками у Галапагосских островов, Эквадор"
   - src: "/media/excursions/tortuga-bej-vysokogorya-s-cherepakhami/gallery-1-src-enhanced-20261007.webp"
     alt: "на фото: черепаха на Галапагосских островах"
   - src: "/media/excursions/tortuga-bej-vysokogorya-s-cherepakhami/gallery-2-src-enhanced-20261007.webp"

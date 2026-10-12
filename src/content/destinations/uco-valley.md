@@ -9,7 +9,7 @@ destinationType: "region"
 summary: "Долина Уко — один из самых живописных винодельческих регионов Аргентины, расположенный у подножия Анд в провинции Мендоса. На фоне величественных заснеженных вершин простираются бескрайние виноградники, а сухой солнечный климат, чистый горный воздух и богатые минеральными веществами почвы создают идеальные условия для выращивания винограда."
 searchAliases: ["dolina-uko"]
 themes: ["theme_gastronomy_wine"]
-hero: {"src": "/media/destinations/destination_argentina_dolina_uko/original-01.jpg", "alt": "Долина Уко"}
+hero: {"src": "/media/destinations/destination_argentina_dolina_uko/original-01.jpg", "alt": "Ряды виноградных посадок в долине Уко на фоне гор, Аргентина", hover: "Долина Уко: виноградник под облачными андскими вершинами"}
 gallery: [{"src": "/media/destinations/destination_argentina_dolina_uko/original-02.jpg", "alt": "Ряды посадок на сухих холмах долины Уко, Аргентина", hover: "Долина Уко: ровные ряды зелёных посадок среди горных склонов"}, {"src": "/media/destinations/destination_argentina_dolina_uko/original-03.jpg", "alt": "Горные склоны и зелёные поля в долине Уко, Аргентина", hover: "Долина Уко: зелёные поля между каменистыми склонами"}]
 facts: []
 featureBands: []

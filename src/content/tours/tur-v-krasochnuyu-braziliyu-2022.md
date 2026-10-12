@@ -160,7 +160,8 @@ itinerary:
     Возвращение в Ресифи.
   images:
   - src: /media/destinations/recife/hero-enhanced-20261001.webp
-    alt: Ресифи, столица штата Пернамбуку в Бразилии
+    hover: "Ресифи: светлые старинные здания вдоль воды в вечернем свете"
+    alt: "Исторические фасады и лодки у набережной Ресифи, Бразилия"
 - day: 10
   title: Ресифи - Порту-де-Галиньяс
   places:
@@ -252,7 +253,8 @@ currency: USD
 priceNote: $4326
 hero:
   src: /media/tours/braziliya-argentina-gruppovoj-tur/itinerary-day-8-enhanced-20261006.webp
-  alt: 'на фото: город Ресифе Бразилия'
+  hover: "Бразилия: старинная церковь с голубыми стенами и каменным декором"
+  alt: "Голубой церковный фасад с колоколами и резными каменными украшениями, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -283,7 +283,8 @@ itinerary:
     18:45. Ночь в Hotel Altiplanico Puerto Natales, Standard Room, BB.'
   images:
   - src: /media/destinations/lake-pehoe/hero-generated-20261008.webp
-    alt: Озеро Пехоэ
+    hover: "Пехоэ: яркая озерная вода у золотистой травы и патагонских гор"
+    alt: "Бирюзовое озеро Пехоэ перед зубчатыми вершинами Торрес-дель-Пайне, Чили"
 - excursionRef: excursion_torres_del_paine_standard_milodon_full_day
 - day: 9
   title: Пуэрто-Наталес — вылет

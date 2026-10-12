@@ -108,7 +108,8 @@ itinerary:
     **Продолжительность:** около 8-9 минут.'
   images:
   - src: /media/tours/kofe-tur-v-brazilii/itinerary-day-3-enhanced-20261006.webp
-    alt: Рио-де-Жанейро
+    hover: "Бразильское побережье: лодки между зелеными островами и берегом"
+    alt: "Лодки в бирюзовой бухте у небольшого лесистого острова, Бразилия"
 - excursionRef: excursion_source_botanical_garden
   places: []
 - excursionRef: excursion_rio_itacuruca_tropical_islands

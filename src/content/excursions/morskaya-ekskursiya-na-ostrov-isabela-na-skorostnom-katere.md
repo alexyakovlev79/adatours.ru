@@ -23,9 +23,11 @@ gallery:
   - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-0-src-enhanced-20261007.webp"
     alt: "на фото: олуши и Галапагосские острова (остров Исабела) в Эквадоре"
   - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-1-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Галапагосы: морские львы отдыхают на светлом песке у прозрачного моря"
+    alt: "Морские львы на пляже и люди в гидрокостюмах у воды, Галапагосы, Эквадор"
   - src: "/media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-2-src-enhanced-20261007.webp"
-    alt: "на фото: Галапагосские острова (остров Исабела) в Эквадоре"
+    hover: "Галапагосы: разноцветные вулканические склоны между морскими бухтами"
+    alt: "Вулканические холмы и бирюзовые бухты Галапагосских островов, Эквадор"
 route:
   - "Бальтра"
   - "Пуэрто-Вильямиль"

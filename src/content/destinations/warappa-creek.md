@@ -10,7 +10,8 @@ summary: Ручей Вараппа проходит среди мангровы�
   и окрестностями старых плантаций.
 hero:
   src: /media/destinations/suriname-ruchej-varappa/hero-generated-20261009-v2.webp
-  alt: Ручей Вараппа
+  hover: "Вараппа: спокойная вода под зелеными мангровыми зарослями"
+  alt: "Узкий водный проход ручья Вараппа среди мангровых корней, Суринам"
 gallery: []
 themes:
 - theme_wildlife

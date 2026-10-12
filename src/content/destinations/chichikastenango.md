@@ -10,7 +10,8 @@ summary: "Торговый городок в 120 км от столицы Гва
 searchAliases: []
 hero:
   src: "/media/destinations/chichicastenango/hero-enhanced-20261003.webp"
-  alt: "На фото: рынок в городе Чичикастенанго в Гватемале"
+  hover: "Чичикастенанго: узорчатые ткани и яркие сумки на рыночном прилавке"
+  alt: "Разноцветные тканые сумки и изделия на рынке Чичикастенанго, Гватемала"
 gallery:
 - src: /media/destinations/chichicastenango/gallery-1-enhanced-20261003.webp
   alt: "Стопки ярких полосатых тканей на рынке Чичикастенанго, Гватемала"

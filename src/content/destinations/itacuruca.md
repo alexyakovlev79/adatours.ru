@@ -14,7 +14,8 @@ themes:
 - theme_beach
 hero:
   src: /media/destinations/destination_brazil_itakurusa/hero-generated-20261008-resumed.webp
-  alt: Итакуруса — Бразилия
+  hover: "Итакуруса: спокойная вода и лодки у лесистого побережья"
+  alt: "Лодки у каменистого берега Итакурусы в бухте перед зелеными горами, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

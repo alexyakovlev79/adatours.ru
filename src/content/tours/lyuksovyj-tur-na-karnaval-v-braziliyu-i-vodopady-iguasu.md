@@ -340,7 +340,8 @@ currency: USD
 priceNote: $26780
 hero:
   src: /media/tours/ekzoticheskij-karnaval-v-brazilii/hero-enhanced-20261006.webp
-  alt: Грандиозный Парад чемпионов на карнавале в Рио, лучшие школы самбы на Самбадроме
+  hover: "Карнавал в Рио: яркие костюмы и пышные головные уборы участниц"
+  alt: "Участницы карнавала Рио в желтых костюмах с синими и розовыми перьями, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -246,7 +246,8 @@ itinerary:
     Оставшаяся часть дня свободна.'
   images:
   - src: /media/tours/luchshee-v-brazilii-za-9-dnej/itinerary-day-9-enhanced-20261006.webp
-    alt: Бузиос
+    hover: "Бузиос: ступени к прозрачной воде у лесистого берега"
+    alt: "Деревянная лестница спускается к бирюзовой бухте Бузиоса среди зелени, Бразилия"
   - src: /media/tours/iguacu-falls/hero-enhanced-20260930.webp
     alt: Фоз-ду-Игуасу
 - day: 7
@@ -276,7 +277,8 @@ itinerary:
     На эти дни обязательные экскурсии не предусмотрены.'
   images:
   - src: /media/tours/braziliya-s-detmi/itinerary-day-10-enhanced-20261006.webp
-    alt: Бузиос
+    hover: "Бузиос: павильон у песчаного пляжа и морских волн"
+    alt: "Небольшой пляжный павильон с соломенной крышей у океана в Бузиосе, Бразилия"
 - day: 9
   title: Бузиос - Рио-де-Жанейро
   places:

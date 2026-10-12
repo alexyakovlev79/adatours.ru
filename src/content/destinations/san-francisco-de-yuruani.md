@@ -9,7 +9,8 @@ destinationType: city
 summary: Поселение Гран-Сабаны, связанное с подготовкой маршрутов к Рорайме и путешествиями по юго-востоку Венесуэлы.
 hero:
   src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-02-generated-20261008-next20.webp
-  alt: Саванна у Сан-Франциско-де-Юруани, Венесуэла
+  hover: "Сан-Франциско-де-Юруани: низкие дома среди травянистой равнины"
+  alt: "Поселение Сан-Франциско-де-Юруани в саванне на фоне столовых гор, Венесуэла"
 gallery: []
 themes:
 - theme_adventure

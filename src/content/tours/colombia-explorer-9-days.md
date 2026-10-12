@@ -96,7 +96,8 @@ itinerary:
     дня посещение подземных залов собора на глубине примерно 180 метров. Возвращение в Боготу, ночь в отеле.
   images:
   - src: /media/destinations/guatavita-town/hero-generated-20261010-p039-v1.webp
-    alt: Белые дома, черепичные крыши и мощеная улица андского городка Гуатавита — иллюстрация
+    hover: "Гуатавита: черепичные крыши и цветы перед зелеными холмами"
+    alt: "Белые дома с деревянными балконами на мощеной улице Гуатавиты, Колумбия"
 - excursionRef: excursion_source_colombia_bogota_zipaquira_con_guatavita
   places: *id002
 - day: 3

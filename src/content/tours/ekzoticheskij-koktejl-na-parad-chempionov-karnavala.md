@@ -294,7 +294,8 @@ itinerary:
     Количество посетителей ограничено: в день допускаются 2 группы по 8 человек.'
   images:
   - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-05-enhanced-20261001.webp
-    alt: 'на фото: Пещеры Бонито в Бразилии'
+    hover: "Бонито: яркая вода в известняковой пещере"
+    alt: "Голубое подземное озеро под сталактитами пещеры Бонито, Бразилия"
 - excursionRef: excursion_brazil_bonito_abismo_anhumas
   places: []
 - day: 11

@@ -9,7 +9,8 @@ destinationType: city
 summary: Ла-Макарена, колумбийский город, из которого отправляются к Каньо-Кристалес и на природные маршруты региона.
 hero:
   src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/la-macarena-town-generated-20261009-v1.webp
-  alt: Улица Ла-Макарены в департаменте Мета, Колумбия
+  hover: "Ла-Макарена: низкая городская застройка среди тропической зелени"
+  alt: "Цветные дома и цветущие растения на улице Ла-Макарены, Колумбия"
 gallery: []
 themes:
 - theme_wildlife

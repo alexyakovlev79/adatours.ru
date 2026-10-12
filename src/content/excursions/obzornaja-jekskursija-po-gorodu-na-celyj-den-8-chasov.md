@@ -22,7 +22,8 @@ gallery:
     hover: "Сан-Паулу: собор с двумя башнями и круглым окном над входом"
     alt: "Неоготический собор среди высоких пальм на площади Сан-Паулу, Бразилия"
   - src: /media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-enhanced-20261006.webp
-    alt: ""
+    hover: "Сан-Паулу с высоты: мост с перекрещенными опорами и городские дороги"
+    alt: "Вантовый мост над рекой и развязками в Сан-Паулу, Бразилия"
   - src: "/media/excursions/obzornaja-jekskursija-po-gorodu-na-celyj-den-8-chasov/gallery-2-src-enhanced-20261007.webp"
     hover: "Сан-Паулу в Бразилии: плотная городская застройка с высоты"
     alt: "Высотные здания в центре Сан-Паулу, Бразилия"

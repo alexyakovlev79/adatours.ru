@@ -150,7 +150,8 @@ itinerary:
     \ завтрак."
   images:
   - src: /media/tours/costa-rica-nicaragua-ru/itinerary-7-images-0-src-enhanced-20261007.webp
-    alt: Гранада
+    hover: "Гранада: старинная башня над красными крышами города"
+    alt: "Черепичные крыши и каменная церковная башня Гранады, Никарагуа"
 - day: 9
   title: Гранада - остров Зопанго
   places:
@@ -163,7 +164,8 @@ itinerary:
     После обеда возвращение в отель.\n\n**Ночь:** La Gran Francia.  \n**Питание:** завтрак, обед."
   images:
   - src: /media/tours/costa-rica-nicaragua-ru/itinerary-8-images-0-src-enhanced-20261007.webp
-    alt: Гранада
+    hover: "Гранада: городской собор с куполами и развевающийся флаг"
+    alt: "Флаг Никарагуа перед желто-красными фасадами собора Гранады"
 - day: 10
   title: Гранада - тихоокеанское побережье
   places:

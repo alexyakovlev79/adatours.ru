@@ -111,7 +111,8 @@ itinerary:
     возвращения в аэропорт согласуется при бронировании.'
   images:
   - src: /media/destinations/cerro-castillo/hero-generated-20261011-v1.webp
-    alt: Дорога и горные склоны в районе Серро-Кастильо, Айсен; иллюстрация GPT Images
+    hover: "Серро-Кастильо: изгиб дороги перед зубчатыми патагонскими вершинами"
+    alt: "Дорога над горной долиной у скальных вершин Серро-Кастильо, Айсен, Чили"
     caption: 'Иллюстрация GPT Images: пейзаж района Серро-Кастильо'
     status: approved
 - excursionRef: excursion_marble_caves_private_boat_two_half_hours

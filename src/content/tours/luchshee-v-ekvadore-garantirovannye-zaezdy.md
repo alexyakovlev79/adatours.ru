@@ -69,7 +69,8 @@ itinerary:
     Ужин включен.
   images:
   - src: /media/tours/luchshee-v-ekvadore-garantirovannye-zaezdy/itinerary-0-images-0-src-enhanced-20261007.webp
-    alt: Кито
+    hover: "Кито: зеленый городской холм и монумент над старинными фасадами"
+    alt: "Холм Панесильо со статуей над цветными домами Кито, Эквадор"
 - day: 2
   title: Кито и линия экватора
   places:
@@ -418,7 +419,8 @@ itinerary:
     Включены завтрак и обед.
   images:
   - src: /media/excursions/morskaya-ekskursiya-na-ostrov-isabela-na-skorostnom-katere/gallery-2-src-enhanced-20261007.webp
-    alt: Галапагосские острова
+    hover: "Галапагосы: разноцветные вулканические склоны между морскими бухтами"
+    alt: "Вулканические холмы и бирюзовые бухты Галапагосских островов, Эквадор"
 - day: 9
   title: 'Галапагосы: остров Бартоломе'
   places:

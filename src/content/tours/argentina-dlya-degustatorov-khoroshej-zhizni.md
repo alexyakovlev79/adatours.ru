@@ -61,7 +61,8 @@ itinerary:
       Буэнос-Айрес известен музеями, галереями, театрами и архитектурой, поэтому обзорная экскурсия дает только первое представление о городе.
     images:
       - src: /media/tours/argentina-dlya-degustatorov-khoroshej-zhizni/itinerary-day-2-enhanced-20261006.webp
-        alt: "Буэнос-Айрес"
+        hover: "Буэнос-Айрес ночью: теплые огни старинного фасада"
+        alt: "Освещенное угловое здание и прохожие на ночной улице Буэнос-Айреса, Аргентина"
         intendedSlot: "itinerary:day-2"
   - excursionRef: excursion_buenos_aires_tango_show_dinner
     places:
@@ -121,7 +122,8 @@ itinerary:
       Дополнительно можно отправиться на винодельни другой долины с дегустацией в англоговорящей группе или выбрать другую активность: верховую езду, рафтинг либо поездку в каньон Атуэль.
     images:
       - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-4-enhanced-20261006.webp
-        alt: "Винный регион Мендоса"
+        hover: "Мендоса: возделанные поля и деревья перед снежными горными вершинами"
+        alt: "Ряды сельскохозяйственных посадок у заснеженных Анд в районе Мендосы, Аргентина"
         intendedSlot: "itinerary:day-6"
   - day: 7
     title: "Мендоса"

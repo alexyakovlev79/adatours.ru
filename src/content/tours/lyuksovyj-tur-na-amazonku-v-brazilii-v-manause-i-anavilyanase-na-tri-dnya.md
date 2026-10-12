@@ -148,7 +148,8 @@ itinerary:
       В этот день включены завтрак, обед и ужин.'
   image:
     src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-02-generated-20261008-v1.webp
-    alt: Лесные острова архипелага Анавианас на Рио-Негро в Бразилии
+    hover: "Анавианас сверху: зеленые острова и широкие речные протоки"
+    alt: "Лесистые острова архипелага Анавианас в темной воде Рио-Негро, Бразилия"
 - day: 3
   title: Встреча вод, розовые дельфины и возвращение в Манаус
   places:

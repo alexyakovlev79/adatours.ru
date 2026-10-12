@@ -84,7 +84,8 @@ itinerary:
     Размещение: Finlandia 4*. Питание: завтрак.'
   images:
   - src: /media/destinations/intinan-museum/hero-generated-20261009-v1.webp
-    alt: Музей Интиньян
+    hover: "Интиньян: музейный двор под открытым небом с соломенными крышами"
+    alt: "Традиционные хижины и резные столбы музея Интиньян на фоне гор, Эквадор"
 - excursionRef: excursion_ecuador_quito_panecillo_equator
   places: []
 - day: 3
@@ -101,7 +102,8 @@ itinerary:
     Свободный вечер в Баньосе. Размещение: La Floresta 3*. Питание: завтрак.'
   images:
   - src: /media/destinations/tigua/hero-generated-20261009-v1.webp
-    alt: Тигуа
+    hover: "Тигуа: народная живопись на стенах и у дверей мастерской"
+    alt: "Яркие картины у входа в сельскую мастерскую Тигуа на фоне гор, Эквадор"
 - excursionRef: excursion_ecuador_quilotoa_tigua_banos
   places: []
 - day: 4
@@ -118,7 +120,8 @@ itinerary:
     Размещение: Finlandia 4*. Питание: завтрак.'
   images:
   - src: /media/destinations/pastaza-canyon/hero-generated-20261009-v1.webp
-    alt: Каньон Пастаса
+    hover: "Каньон Пастаса: бурный поток между зелеными горными склонами"
+    alt: "Река Пастаса на дне глубокого лесистого каньона, Эквадор"
 - excursionRef: excursion_ecuador_banos_waterfalls_quito
   places: []
 - day: 5
@@ -155,7 +158,8 @@ itinerary:
     Размещение: Fiesta 3*. Питание: завтрак, обед.'
   images:
   - src: /media/tours/complete-ecuador-new-year/word-12-20261009-v1-enhanced-20261011-doc-v1.webp
-    alt: Остров Бартоломе
+    hover: "Бартоломе: скалистые берега и морские бухты под ярким солнцем"
+    alt: "Солнце над вулканическими склонами и бирюзовыми бухтами Бартоломе, Галапагосы, Эквадор"
 - excursionRef: excursion_source_ostrov_bartolome_morskaya_ekskursiya
   places: []
 - day: 7

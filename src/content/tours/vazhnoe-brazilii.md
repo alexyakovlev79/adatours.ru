@@ -219,7 +219,8 @@ currency: USD
 priceNote: $3566
 hero:
   src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/itinerary-day-8-enhanced-20261006.webp
-  alt: Важное  Бразилии
+  hover: "Бразильская Амазония: судно на спокойной лесной реке"
+  alt: "Речное судно отражается в тихой воде у тропического леса Амазонии, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

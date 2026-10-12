@@ -56,7 +56,8 @@ itinerary:
     **Стоимость:** $45 с человека, оплата на месте.
   images:
   - src: "/media/tours/kraski-venesuely/itinerary-0-images-0-src-enhanced-20261007.webp"
-    alt: Каракас
+    hover: "Каракас: современные башни и городские деревья под облаками"
+    alt: "Высотные здания Каракаса среди зеленых парков на фоне гор, Венесуэла"
 - excursionRef: excursion_venezuela_avila_humboldt_visit
   places: []
 - day: 2

@@ -10,7 +10,8 @@ summary: Озеро Сармьенто, одна из остановок в То
   Патагонии.
 hero:
   src: /media/destinations/lake-sarmiento/hero-generated-20261009-v3.webp
-  alt: Озеро Сармьенто
+  hover: "Сармьенто: светлый берег озера и патагонские горы"
+  alt: "Синяя вода озера Сармьенто перед снежными вершинами Торрес-дель-Пайне, Чили"
 gallery: []
 themes:
 - theme_wildlife

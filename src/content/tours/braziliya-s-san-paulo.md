@@ -271,7 +271,8 @@ currency: USD
 priceNote: $4323
 hero:
   src: "/media/tours/braziliya-s-san-paulo/hero-enhanced-20261006.webp"
-  alt: 'На фото: Мост Октавио Фриас де Оливейра, Сан-Паулу'
+  hover: "Сан-Паулу: мост с перекрещенными опорами и городские высотки"
+  alt: "Вантовый мост Октавио Фриас де Оливейра над рекой в Сан-Паулу, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

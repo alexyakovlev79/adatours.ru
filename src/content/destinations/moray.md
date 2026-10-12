@@ -10,7 +10,8 @@ destinationType: natural_area
 status: approved
 hero:
   src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-12-generated-20261008-v1.webp
-  alt: Круговые земледельческие террасы Морая, Священная долина, Перу
+  hover: "Морай: концентрические земледельческие террасы среди андских холмов"
+  alt: "Круговые каменные террасы Морая в зеленой котловине, Священная долина, Перу"
 themes:
 - theme_culture
 updatedAt: '2026-10-08'

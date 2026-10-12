@@ -97,7 +97,8 @@ itinerary:
     приведена ниже. Возвращение на озеро Атитлан. Ночь в Hotel Atitlán или аналогичном отеле.
   images:
   - src: /media/destinations/santiago-atitlan/hero-generated-20261008.webp
-    alt: Сантьяго-Атитлан на берегу озера, Гватемала
+    hover: "Сантьяго-Атитлан: городские дома и причал у спокойного озера"
+    alt: "Лодки у причала Сантьяго-Атитлана на фоне вулканических склонов, Гватемала"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_guatemala_atitlan_san_juan_santiago_boat

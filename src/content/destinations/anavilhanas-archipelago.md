@@ -18,7 +18,8 @@ themes:
 - theme_cruises
 hero:
   src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-02-generated-20261008-v1.webp
-  alt: Лесные острова архипелага Анавианас на Рио-Негро в Бразилии
+  hover: "Анавианас сверху: зеленые острова и широкие речные протоки"
+  alt: "Лесистые острова архипелага Анавианас в темной воде Рио-Негро, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

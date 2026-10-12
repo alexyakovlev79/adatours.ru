@@ -89,7 +89,8 @@ itinerary:
     примерно в 180 метрах под землей: часовни, галереи и монументальные залы бывшей шахты. Возвращение в Боготу. Ночь в Боготе.'
   images:
   - src: /media/destinations/guatavita-town/hero-generated-20261010-p039-v1.webp
-    alt: Белые дома, черепичные крыши и мощеная улица андского городка Гуатавита — иллюстрация
+    hover: "Гуатавита: черепичные крыши и цветы перед зелеными холмами"
+    alt: "Белые дома с деревянными балконами на мощеной улице Гуатавиты, Колумбия"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_source_colombia_bogota_zipaquira_con_guatavita

@@ -92,7 +92,8 @@ itinerary:
     Размещение в Dazzler Puerto Madryn, номер с видом на море. Так начинается патагонская часть маршрута.'
   images:
   - src: /media/excursions/ekskursiya-v-tigre-i-po-severnym-provintsiyam-buenos-ajresa/hero-enhanced-20261001.webp
-    alt: 'На фото: Пуэрто-Мадрин, Аргентина'
+    hover: "Аргентина: деревянные лодки у оживленной городской набережной"
+    alt: "Пассажирские лодки у набережной с торговыми павильонами и высотными домами, Аргентина"
     intendedSlot: itinerary:day-3
 - day: 4
   title: Пуэрто-Мадрин и полуостров Вальдес

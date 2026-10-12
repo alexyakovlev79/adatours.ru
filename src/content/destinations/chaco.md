@@ -9,7 +9,8 @@ destinationType: region
 summary: Чако в Парагвае, большой регион сухих лесов, равнин, соленых лагун и небольших поселений.
 hero:
   src: /media/tours/klassicheskij-paragvaj/chaco-place-generated-20261009-v1.webp
-  alt: Сухой лес и равнинная дорога парагвайского Чако
+  hover: "Чако в Парагвае: пыльная дорога через редколесье"
+  alt: "Грунтовая дорога среди сухих деревьев и кустарников парагвайского Чако"
 gallery: []
 themes:
 - theme_wildlife

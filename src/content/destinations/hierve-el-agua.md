@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Минеральные бассейны и окаменевшие каскады в горах Оахаки.
 hero:
   src: /media/tours/viva-meksika/hierve-el-agua-generated-20261010-v1.webp
-  alt: Минеральный бассейн и окаменевшие каскады Хьерве-эль-Агуа
+  hover: "Хьерве-эль-Агуа: прозрачная вода на скальной террасе над долиной"
+  alt: "Минеральный бассейн у белых окаменевших каскадов Хьерве-эль-Агуа, Оахака, Мексика"
 gallery: []
 themes:
 - theme_wildlife

@@ -47,7 +47,7 @@
     {
       "table": "resources",
       "original_sheet": "Ресурсы",
-      "row_count": 9547,
+      "row_count": 9656,
       "json": "resources.json",
       "csv": "resources.csv",
       "columns": [
@@ -65,14 +65,14 @@
         "notes"
       ],
       "sha256": {
-        "json": "0d08bea2c1329b983a802ecc4e0a093e29a61d64286673c61fea90f0de10c8de",
-        "csv": "abab531bce4fe0d40ef9c7e77f37f210dfd160da03cd6ba2fd44683d6b2737d4"
+        "json": "926c9363dea6f09f65275ef18f013c0a629a735f6135617d1eb8652db3695248",
+        "csv": "ddb6b458a237db7a75be64d8ce3291bf5aa207fc48573a1f6208f3d14de7d0d0"
       }
     },
     {
       "table": "ru-brasiltours",
       "original_sheet": "RU → BrasilTours",
-      "row_count": 3837,
+      "row_count": 3946,
       "json": "ru-brasiltours.json",
       "csv": "ru-brasiltours.csv",
       "columns": [
@@ -96,8 +96,8 @@
         "notes"
       ],
       "sha256": {
-        "json": "342dc70bdd1158f87c0aad9174585fe6d153c69b6584d0eb2051ed0624e577ff",
-        "csv": "87d39cd452ab51b2702ec13469005d17916ae7599f897733c449d131ce79041b"
+        "json": "f7ac997b8a39a6e53b353711e650143d3b7ff9568677eb3e14745d8df8ba9f3c",
+        "csv": "198a09f70b5dc10fd72d43b0d9474c3f23fba97b093005fd9f5c0307dd3255de"
       }
     },
     {
@@ -198,7 +198,7 @@
     {
       "table": "next-steps",
       "original_sheet": "Второй этап",
-      "row_count": 4,
+      "row_count": 5,
       "json": "next-steps.json",
       "csv": "next-steps.csv",
       "columns": [
@@ -210,8 +210,8 @@
         "acceptance_rule"
       ],
       "sha256": {
-        "json": "a729467cd967f6dd62ddf0fb261e91b46fb8829a2d1a4b81749f52b5be27b49c",
-        "csv": "359ce6a31fd736d7a55b00d0dd35c22c2894a0a7cd016cfaa1ea4a28806d1fe5"
+        "json": "e4b1ac4ecb900f718f4223c3be1c4e0f6bc28ae74965d5165467c9c08046fc8f",
+        "csv": "76ad73cb506b608a3614dcb5b0b30bd1d5d8fd0fca2003c42f553a3d3331e656"
       }
     },
     {
@@ -232,7 +232,7 @@
     {
       "table": "new-pages",
       "original_sheet": "Новые страницы",
-      "row_count": 290,
+      "row_count": 399,
       "json": "new-pages.json",
       "csv": "new-pages.csv",
       "columns": [
@@ -257,8 +257,8 @@
         "notes"
       ],
       "sha256": {
-        "json": "f120083f8fcbfc8e084ddfa5adf58d56f0ce1c2265f30d9f402373cfe50505a4",
-        "csv": "871b2a0ead54bb6623b3a7a7da9b2ec33141217f44426646369312dcd6ab4e4f"
+        "json": "962ce0d598df75b94155e12ccb8570b07d2df40aefa7142d6405df9f6a9b00e0",
+        "csv": "43693c3fb58b5aed846eaea57325a8338c05a2c18fc2eefe7f2f09e3a71c7bc2"
       }
     },
     {
@@ -278,15 +278,51 @@
         "json": "73696abcf76ec02d460a355940a09ff455b23fe345ebad82b1fba81b3204c8a4",
         "csv": "fd738936350744904186013550394daa41ca323384199413833792e7ffd8f903"
       }
+    },
+    {
+      "table": "vip-catalogues",
+      "original_sheet": "VIP: страны и интересы",
+      "row_count": 133,
+      "json": "vip-catalogues.json",
+      "csv": "vip-catalogues.csv",
+      "columns": [
+        "catalog_id",
+        "name",
+        "ru_url",
+        "root_url",
+        "page_number",
+        "total_pages",
+        "country_id",
+        "country_name",
+        "theme_id",
+        "theme_name",
+        "total_tours",
+        "tour_ids",
+        "in_live_sitemap",
+        "brasiltours_url",
+        "adatours_com_url",
+        "vipdeluxetravel_ru_url",
+        "vipdeluxetravel_com_url",
+        "verification_status",
+        "schema_guidance",
+        "evidence_url",
+        "observed_at",
+        "source_commit",
+        "notes"
+      ],
+      "sha256": {
+        "json": "c367593674be3cf629282978d4a8c486e507b39335fd0e02835f54edae9464da",
+        "csv": "ddc302d4e921b3683089d4f0c20f52fe05ad44b883175baf863b92ad94f56985"
+      }
     }
   ],
   "index": {
     "file": "index.json",
-    "sha256": "5158ef997d64c916fa2069f8b3357ecd3c80015698233dfa22ff136a8b8bad70"
+    "sha256": "0aaccbdff001c6b4c72f48e4ef611fe8ee534cc8f91f1c6486ae72e14709018e"
   },
   "schema_implementation_status": "research_only_waiting_for_user_command",
   "second_stage_status": "not_started",
-  "update_policy": "JSON tables are the editable source. Regenerate CSV and index after edits. Current stats describe snapshot_commit/snapshot_at, not continuously changing main. External profile observations retain their own original verification dates.",
+  "update_policy": "JSON tables are the editable source. Regenerate CSV and index after edits. Current stats describe snapshot_commit/snapshot_at, not continuously changing main. External profile observations retain their own original verification dates. Additive VIP catalogue updates have their own source_commit/observed_at/report; original stats remain the baseline snapshot, while table row_count describes current rows.",
   "normalization": [
     "Date columns converted to ISO YYYY-MM-DD.",
     "All table cell values are strings. Empty cells are empty strings.",
@@ -348,5 +384,16 @@
     "online_retry_evidence": "online-retry-results.json",
     "online_retry_evidence_sha256": "f7d5a601a2d1c68e2bdd24afca1eb07ed14ce0a531c3735c8e9432b2b38b3c6c"
   },
-  "online_rechecked_at": "2026-10-11T18:01:07+00:00"
+  "online_rechecked_at": "2026-10-11T18:01:07+00:00",
+  "catalogue_updates": [
+    {
+      "scope": "VIP country and interest combinations",
+      "source_commit": "c58332468cb58b8dadaf8d2cc3ee635ecf90aac0",
+      "observed_at": "2026-10-12T06:58:47+00:00",
+      "queue": "vip-catalogues.json",
+      "report": "vip-catalogues-update-20261012.json",
+      "vip_pages": 133,
+      "added_canonical_urls": 109
+    }
+  ]
 }

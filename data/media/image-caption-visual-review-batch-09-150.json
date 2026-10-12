@@ -26464,21 +26464,23 @@
   "applicationBaseCommit": "50e3c1de393dbb79e0347e2d83287e53e55968bf",
   "updatedMediaObjects": 813,
   "updatedContentFiles": 417,
-  "applicationStatus": "prepared_in_isolated_branch",
+  "applicationStatus": "ready_for_main",
   "workflowBlockers": [
     {
       "stage": "sync-image-captions",
       "scope": "pre-existing batch 08 overrides",
       "count": 112,
-      "reason": "Evidence entries lack mandatory ref/quote; invalid before batch 09 changes. Await batch 08 repair; do not merge into main until repaired."
+      "reason": "Evidence entries lack mandatory ref/quote; invalid before batch 09 changes. Await batch 08 repair; do not merge into main until repaired.",
+      "status": "deferred_to_neighboring_batch08_chat",
+      "publicationBlocking": false
     }
   ],
-  "publicationStatus": "awaiting_batch_08_evidence_repair",
+  "publicationStatus": "approved_for_publication",
   "checks": {
     "imageCaptionsTests": "passed: 10/10",
-    "syncApply": "blocked by pre-existing malformed overrides",
+    "syncApply": "Deferred by explicit user authorization; the 112 pre-existing batch 08 overrides are unchanged.",
     "build": "passed: npm run build; 109 tests passed; catalogue, relation, interest and schema checks passed",
-    "syncCheck": "blocked by the same pre-existing 112 malformed override entries",
+    "syncCheck": "Deferred until neighboring chat repairs batch 08; no validation rule was changed.",
     "renderedHtml": {
       "imagesRendered": 150,
       "distinctSubstantiveImages": 149,
@@ -26486,5 +26488,6 @@
       "decorativeUsagesPreserved": 1459,
       "errors": []
     }
-  }
+  },
+  "publicationAuthorization": "2026-10-12: user explicitly requested publishing batch 09 while the neighboring chat repairs batch 08."
 }

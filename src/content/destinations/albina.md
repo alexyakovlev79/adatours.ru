@@ -9,7 +9,8 @@ destinationType: city
 summary: Альбина на востоке Суринама, город на реке Маровейне напротив Сен-Лоран-дю-Марони во Французской Гвиане.
 hero:
   src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/albina-place-generated-20261009-v1.webp
-  alt: Лодки на реке Маровейне в Альбине
+  alt: "Деревянные пассажирские лодки у береговых домов Альбины на реке Маровейне, Суринам"
+  hover: "Альбина в Суринаме: лодки у причала и широкий речной берег"
 gallery: []
 themes:
 - theme_culture

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Озеро Трес Чимбадас находится в амазонском районе Перу, который посещают из Пуэрто-Мальдонадо.
 hero:
   src: /media/destinations/tres-chimbadas-lake/tres-chimbadas-lake-place-generated-20261009-v1.webp
-  alt: Озеро Трес Чимбадас и тропический лес
+  alt: "Нос деревянного каноэ на озере Трес-Чимбадас среди туманного тропического леса, Перу"
+  hover: "Трес-Чимбадас в Перу: спокойная вода отражает лесной берег и утреннюю дымку"
 gallery: []
 themes:
 - theme_wildlife

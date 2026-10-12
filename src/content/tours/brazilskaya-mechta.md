@@ -188,7 +188,8 @@ currency: USD
 priceNote: $1615
 hero:
   src: "/media/tours/brazilskaya-mechta/hero-enhanced-20261006.webp"
-  alt: 'На фото: Катер в море у берегов Ангра-дус-Рейс'
+  alt: "Парусные яхты у берегов Ангра-дус-Рейс в лучах низкого солнца, Бразилия"
+  hover: "Ангра-дус-Рейс в Бразилии: яхты на спокойной воде и золотистое отражение солнца"
 routeCountries:
 - country_brazil
 routeDestinations:

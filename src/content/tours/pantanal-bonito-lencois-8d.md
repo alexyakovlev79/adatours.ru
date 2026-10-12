@@ -162,8 +162,9 @@ itinerary:
       После экскурсии трансфер в Сан-Луис. Ночь в Сан-Луисе.
     images:
       - src: /media/tours/pantanal-bonito-lencois-8d/itinerary/day-07-enhanced-20261001.webp
-        alt: "Баррейриньяс и побережье Мараньяна"
+        alt: "Прозрачная лагуна у светлых дюн в окрестностях Баррейриньяса, Бразилия"
         intendedSlot: "itinerary:day-7"
+        hover: "Баррейриньяс в Бразилии: купающиеся у песчаного берега лагуны"
   - day: 8
     title: "Вылет"
     places: ["Сан-Луис"]

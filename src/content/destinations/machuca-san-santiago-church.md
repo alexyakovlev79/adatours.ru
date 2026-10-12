@@ -11,7 +11,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/machuca-san-santiago-church/hero-generated-20261011-p125-v1.webp
-  alt: Церковь Сан-Сантьяго в Мачуке, Чили
+  alt: "Белая церковь Сан-Сантьяго в Мачуке перед сухими горными склонами, Чили"
+  hover: "Мачука в Чили: маленькая церковь с соломенной крышей на каменном основании"
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_chile_machuca_san_santiago_church.md
 updatedAt: '2026-10-11'

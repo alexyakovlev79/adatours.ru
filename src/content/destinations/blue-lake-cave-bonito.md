@@ -15,7 +15,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_golubaya_peschera_bonito/destination_brazil_golubaya_peschera_bonito-generated-20261008.webp
-  alt: Голубая пещера (Бонито) - Бразилия
+  alt: "Сталактиты над прозрачным синим озером в Голубой пещере Бонито, Бразилия"
+  hover: "Бонито в Бразилии: скальный зал Голубой пещеры и глубокая синяя вода"
 gallery: []
 relatedDestinations: []
 featuredTours: []

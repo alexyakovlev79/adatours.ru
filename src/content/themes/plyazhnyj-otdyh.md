@@ -8,7 +8,8 @@ summary: >-
   Пляжи Бразилии и Карибского бассейна подходят и для отдельной поездки, и для нескольких спокойных дней после насыщенного маршрута.
 hero:
   src: /media/themes/plyazhnyj-otdyh/hero-enhanced-20261001.webp
-  alt: Пляж на побережье Латинской Америки
+  alt: "Женщина в большой соломенной шляпе с кокосом в прозрачной бирюзовой воде"
+  hover: "Отдых в мелководье: соломенная шляпа и кокос в руках"
 imageTextAlign: left
 sourceUrl: https://brasiltours.ru/plyazhnye-tury
 sourceSnapshot: page_texts_original/plyazhnye-tury__bc5e8bbc.md

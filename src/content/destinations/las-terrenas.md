@@ -10,7 +10,8 @@ summary: "Курортная деревушка на полуострове Са
 searchAliases: []
 hero:
   src: "/media/destinations/las-terrenas/hero-enhanced-20261003.webp"
-  alt: "На фото: курорт Лас Терренас на Доминикане"
+  alt: "Пальма у прозрачного моря и светлого пляжа Лас-Терренаса, Доминикана"
+  hover: "Лас-Терренас в Доминикане: пальмовый берег и бирюзовое мелководье"
 gallery: []
 relatedDestinations: []
 featuredTours: []

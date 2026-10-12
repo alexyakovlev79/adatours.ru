@@ -14,7 +14,8 @@ currency: "USD"
 priceNote: "Стоимость — $160."
 hero:
   src: "/media/excursions/shakhty-vandy/hero-src-enhanced-20261007.webp"
-  alt: "На фото: Фиолетовый Аметист в рудниках Ванда"
+  alt: "Грани фиолетовых кристаллов аметиста из рудников Ванда крупным планом"
+  hover: "Ванда: сверкающие кристаллы аметистовой друзы"
 gallery:
   - src: "/media/excursions/shakhty-vandy/gallery-0-src-enhanced-20261007.webp"
     hover: "Шахты Ванды: посетители у входов в выработки"

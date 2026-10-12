@@ -13,7 +13,8 @@ destinationName: "Паракас"
 language: []
 hero:
   src: /media/excursions/parakas-i-ostrova-ballestas/hero-enhanced-20261001.webp
-  alt: Паракас и острова Бальестас, Перу
+  alt: "Люди и разноцветные зонты на пляже между скалами и бирюзовым морем"
+  hover: "Каменистая бухта с узким пляжем, отдыхающими и прозрачной водой"
 gallery: []
 route:
   - Лима

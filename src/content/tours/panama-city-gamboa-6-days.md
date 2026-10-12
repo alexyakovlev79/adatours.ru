@@ -131,7 +131,8 @@ itinerary:
     половине дня возвращение в Панама-Сити. Ночь в Панама-Сити.
   images:
   - src: /media/tours/panama-city-gamboa-6-days/word-9-20261010-enhanced-20261011-pass2324-v1.webp
-    alt: Контейнеровоз на воде, вид сверху
+    alt: "Контейнеровоз с разноцветными контейнерами идет по воде, вид сверху"
+    hover: "Грузовое судно с яркими рядами контейнеров и следами на воде"
   contentBlocks:
   - type: excursion
     excursionRef: excursion_gatun_lake_monkey_island_boat

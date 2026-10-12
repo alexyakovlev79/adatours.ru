@@ -10,7 +10,8 @@ summary: Потоси расположен у подножья горы Серр
 searchAliases: []
 hero:
   src: /media/destinations/potosi/hero-enhanced-20261003.webp
-  alt: 'На фото: рассвет в городе Потоси в Боливии'
+  alt: "Башня на горном гребне и слои гор в золотистом свете"
+  hover: "Одинокая башня на фоне горных силуэтов и теплого неба"
 gallery:
 - src: /media/destinations/potosi/gallery-1-enhanced-20261003.webp
   alt: "Улица Потоси с цветными домами и горой на горизонте, Боливия"

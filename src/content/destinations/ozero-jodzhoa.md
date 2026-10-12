@@ -10,7 +10,8 @@ summary: "Озеро вулканического происхождения м�
 searchAliases: []
 hero:
   src: "/media/countries/honduras/featureBands-3-enhanced-20261002.webp"
-  alt: "На фото: водопады на озере Йоджоа в Гондурасе"
+  alt: "Высокий водопад среди густой зелени в районе озера Йоджоа, Гондурас"
+  hover: "Йоджоа в Гондурасе: мощный поток у зеленых скальных склонов"
 gallery:
   - src: "/media/destinations/lake-yojoa/gallery-1-enhanced-20261003.webp"
     alt: "Озеро Йоджоа и зеленые горы за заболоченным берегом, Гондурас"

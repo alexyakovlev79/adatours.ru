@@ -9,7 +9,8 @@ destinationType: city
 summary: Каапуку в Парагвае, городская остановка с историческим музеем Casa-Oratorio Cabanas.
 hero:
   src: /media/tours/klassicheskij-paragvaj/caapucu-place-generated-20261009-v1.webp
-  alt: Традиционные дома на улице Каапуку
+  alt: "Тихая мощеная улица Каапуку с черепичными домами и тенистыми деревьями, Парагвай"
+  hover: "Каапуку в Парагвае: невысокие фасады вдоль спокойной сельской улицы"
 gallery: []
 themes:
 - theme_culture

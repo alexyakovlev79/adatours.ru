@@ -9,7 +9,8 @@ destinationType: route_cluster
 summary: Чан-Чан — археологический комплекс у Трухильо на северном побережье Перу.
 hero:
   src: /media/destinations/chan-chan/chan-chan-place-generated-20261009-v1.webp
-  alt: Глинобитные стены и рельефы Чан-Чана
+  alt: "Глинобитный коридор Чан-Чана с геометрическими узорами и рельефами рыб, Перу"
+  hover: "Чан-Чан в Перу: охристые стены с повторяющимися резными орнаментами"
 gallery: []
 themes:
 - theme_culture

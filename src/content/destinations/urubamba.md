@@ -9,7 +9,8 @@ destinationType: city
 summary: Урубамба в Священной долине Перу, город среди сельскохозяйственных полей и горных пейзажей.
 hero:
   src: /media/tours/manyashchij-peru-kolumbiya/urubamba-place-generated-20261009-v1.webp
-  alt: Город Урубамба в Священной долине
+  alt: "Площадь Урубамбы с цветниками и невысокими домами перед горами, Перу"
+  hover: "Урубамба в Перу: сад, церковь и горные склоны за городской площадью"
 gallery: []
 themes:
 - theme_culture

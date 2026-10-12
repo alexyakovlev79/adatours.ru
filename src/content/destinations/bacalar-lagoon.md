@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Лагуна Бакалар в Мексике, пресноводный пейзаж с прозрачной водой разных голубых оттенков.
 hero:
   src: /media/tours/cancun-palenque-cenot/bacalar-lagoon-place-generated-20261009-v1.webp
-  alt: Голубые оттенки воды лагуны Бакалар
+  alt: "Прозрачная лагуна Бакалар у деревянного причала и зеленого берега, Мексика"
+  hover: "Бакалар в Мексике: светлое мелководье переходит в глубокую синюю воду"
 gallery: []
 themes:
 - theme_wildlife

@@ -10,7 +10,8 @@ summary: "Национальный парк Гайаны с водопадом �
 searchAliases: []
 hero:
   src: "/media/countries/guyana/featureBands-1-enhanced-20261002.webp"
-  alt: "На фото: Национальный парк Кайетур в Гайане"
+  alt: "Ступенчатый водопад среди каменных уступов и густых деревьев"
+  hover: "Лесной каскад: несколько широких ступеней с белыми потоками"
 gallery:
 - src: /media/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana/itinerary-5-images-1-src-enhanced-20261007.webp
   alt: "Водопад Кайетур падает со скального уступа среди тропического леса, Гайана"

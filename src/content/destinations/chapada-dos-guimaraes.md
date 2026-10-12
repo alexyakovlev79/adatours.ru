@@ -13,7 +13,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_gorod_shapada_dus_gimarajns/chapada-town-generated-20261008.webp
-  alt: Город Шапада-дус-Гимарайнс - Бразилия
+  alt: "Тихая улица Шапада-дус-Гимарайнса с яркими одноэтажными домами, Бразилия"
+  hover: "Шапада-дус-Гимарайнс в Бразилии: цветные фасады в тени большого дерева"
 gallery: []
 relatedDestinations: []
 featuredTours: []

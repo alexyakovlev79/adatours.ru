@@ -158,7 +158,8 @@ itinerary:
     Питание: завтрак, обед, ужин.
   images:
   - src: "/media/tours/venesuela-treking-v-zateryannyj-i-pervozdannyj-mir-rorajmy/itinerary-9-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: водопад Сальта-Анхель в Венесуэле'
+    alt: "Водопад Анхель падает с высокого скального плато в облако брызг, Венесуэла"
+    hover: "Анхель в Венесуэле: длинный поток на отвесной стене среди зелени"
 - day: 11
   title: ', четверг: свободный день в Канайме'
   places:

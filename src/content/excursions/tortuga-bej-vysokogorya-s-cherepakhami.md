@@ -24,7 +24,8 @@ gallery:
     hover: "Галапагосы: морская птица над лодками и прибрежными домами"
     alt: "Фрегат над гаванью с лодками у Галапагосских островов, Эквадор"
   - src: "/media/excursions/tortuga-bej-vysokogorya-s-cherepakhami/gallery-1-src-enhanced-20261007.webp"
-    alt: "на фото: черепаха на Галапагосских островах"
+    alt: "Крупная сухопутная черепаха на каменистом берегу Галапагосских островов, Эквадор"
+    hover: "Галапагосы в Эквадоре: черепаха перед полосой морского прибоя"
   - src: "/media/excursions/tortuga-bej-vysokogorya-s-cherepakhami/gallery-2-src-enhanced-20261007.webp"
     alt: "на фото: лавовые туннели,  Галапагосские острова в Эквадоре"
   - src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp

@@ -12,7 +12,8 @@ destination: destination_brazil_rio
 language: []
 hero:
   src: /media/excursions/master-klass-po-shurrasko/hero-enhanced-20261001.webp
-  alt: Приготовление бразильского шурраско
+  alt: "Мужчина срезает мясо с длинного шампура при подаче бразильского шурраско"
+  hover: "Шурраско: жареное мясо на шампуре и нарезанные ломтики на тарелке"
 gallery: []
 route:
   - Рио-де-Жанейро

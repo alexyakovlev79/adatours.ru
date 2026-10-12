@@ -23,7 +23,8 @@ hero:
   alt: Соляной собор в Сипакире, Колумбия
 gallery:
 - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-0-src-enhanced-20261008.webp
-  alt: Интерьер Соляного собора в Сипакире
+  alt: "Подземный зал Соляного собора в Сипакире с синей и зеленой подсветкой, Колумбия"
+  hover: "Сипакира в Колумбии: глубокий каменный проход и освещенный соборный зал"
 - src: /media/excursions/colombia-bogota-zipaquira-con-guatavita/gallery-1-src-enhanced-20261008.webp
   hover: "Горное озеро в окружении зеленых холмов Колумбии"
   alt: "Круглое синее озеро среди зеленых горных склонов и полей, Колумбия"

@@ -140,7 +140,8 @@ currency: USD
 priceNote: $2418
 hero:
   src: "/media/tours/luchshee-v-urugvae-pyatizvjozdochnyj-marshrut/hero-src-enhanced-20261007.webp"
-  alt: 'Лучшее в Уругвае: пятизвёздочный маршрут'
+  alt: "Городская улица Монтевидео с историческим зданием и высотными домами, Уругвай"
+  hover: "Монтевидео в Уругвае: перспективная улица и светлый фасад с башней"
 routeCountries:
 - country_uruguay
 routeDestinations:

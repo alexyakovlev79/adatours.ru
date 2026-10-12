@@ -8,7 +8,7 @@ countryId: "country_panama"
 destinationType: "city"
 summary: "Столица Панамы с колониальными кварталами и небоскребами. Панама-Вьехо, Сан-Фелип, Авенида-Бальбоа и парки входят в знакомство с городом."
 searchAliases: []
-hero: {"src":/media/countries/panama/featureBands-1-enhanced-20261002.webp,"alt":"На фото: столица Панамы, город Панама-Сити"}
+hero: {"src": "/media/countries/panama/featureBands-1-enhanced-20261002.webp", "alt": "Исторические дома Панама-Сити с красными крышами на берегу воды, Панама", "hover": "Панама-Сити: прибрежные фасады и церковная башня над крышами"}
 gallery:
 - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
   hover: "Панама-Сити: освещённый фасад собора между двумя белыми башнями"

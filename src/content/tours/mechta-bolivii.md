@@ -226,7 +226,8 @@ currency: USD
 priceNote: $2998
 hero:
   src: /media/tours/mechta-bolivii/hero-enhanced-20261006.webp
-  alt: Мечта Боливии
+  alt: "Лама в высокой траве перед каменной церковью и снежной горой, Боливия"
+  hover: "Боливия: лама, горная церковь и заснеженная вершина на фоне синего неба"
 routeCountries:
 - country_bolivia
 routeDestinations:

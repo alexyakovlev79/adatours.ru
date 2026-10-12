@@ -8,7 +8,7 @@ countryId: "country_peru"
 destinationType: "city"
 summary: "Город на Амазонке с архитектурой эпохи каучуковых магнатов. Из Икитоса отправляются в джунгли, в гости к местным народам и на фермы бабочек."
 searchAliases: []
-hero: {"src":"/media/destinations/iquitos/hero-enhanced-20261005.webp","alt":"На фото: ленивец из Амазонии в Икитос Перу"}
+hero: {"src": "/media/destinations/iquitos/hero-enhanced-20261005.webp", "alt": "Ленивец цепляется за ветви среди зеленых листьев, Икитос, Перу", "hover": "Икитос в Перу: ленивец на дереве в амазонском лесу"}
 gallery:
 - src: /media/destinations/iquitos/gallery-1-enhanced-20261005.webp
   hover: "Икитос в Перу: лодки у домов с соломенными крышами"

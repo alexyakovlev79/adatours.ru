@@ -338,7 +338,8 @@ currency: USD
 priceNote: $4568
 hero:
   src: /media/tours/tur-v-braziliyu-argentinu-i-chili-na-novyj-god/hero-enhanced-20261006.webp
-  alt: Новогодний салют на пляже Копакабана
+  alt: "Красные, зеленые и золотистые огни новогоднего салюта над Копакабаной, Рио-де-Жанейро"
+  hover: "Копакабана в Рио: яркие фейерверки на фоне ночного неба"
 routeCountries:
 - country_brazil
 - country_argentina

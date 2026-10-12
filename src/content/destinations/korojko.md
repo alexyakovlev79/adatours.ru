@@ -10,7 +10,8 @@ summary: Коройко расположен в регионе Юнгас, гд�
 searchAliases: []
 hero:
   src: /media/destinations/korojko/hero-enhanced-20261002.webp
-  alt: 'На фото: Коройко в Боливии (Дорога Смерти)'
+  alt: "Люди на узкой горной дороге над зелеными склонами Коройко, Боливия"
+  hover: "Коройко в Боливии: Дорога смерти на крутом лесистом склоне"
 gallery:
 - {"src":"/media/destinations/korojko/gallery-1-enhanced-20261002.webp","alt":"Путник с рюкзаком на каменистой тропе в горной долине","hover":"Путник с рюкзаком на каменистой тропе в горной долине"}
 - src: /media/destinations/korojko/gallery-2-enhanced-20261003.webp

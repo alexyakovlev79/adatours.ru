@@ -9,7 +9,8 @@ destinationType: national_park
 summary: Заповедник Кетцаля в Гватемале охраняет облачный лес и место обитания национальной птицы страны.
 hero:
   src: /media/tours/luchshee-v-gvatemale/quetzal-reserve-place-generated-20261009-v1.webp
-  alt: Облачный лес в заповеднике Кетцаля
+  alt: "Узкая тропа среди папоротников и мшистых деревьев в заповеднике Кетцаля, Гватемала"
+  hover: "Заповедник Кетцаля в Гватемале: влажный облачный лес с густой зеленью"
 gallery: []
 themes:
 - theme_wildlife

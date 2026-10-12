@@ -143,8 +143,9 @@ itinerary:
       Со смотровой площадки видны залив Гуанабара, мост Нитерой, Ботанический сад, стадион Маракана и Сахарная Голова.
     images:
       - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-07-enhanced-20261001.webp
-        alt: "Корковадо и панорама Рио-де-Жанейро"
+        alt: "Статуя Христа Искупителя на зеленой вершине Корковадо над Рио-де-Жанейро, Бразилия"
         intendedSlot: "itinerary:day-7"
+        hover: "Корковадо в Рио: статуя, извилистая дорожка и панорама городских заливов"
   - excursionRef: excursion_source_polet_na_vertolete_nad_rio
     places: ["Рио-де-Жанейро"]
   - day: 8

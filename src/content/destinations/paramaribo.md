@@ -10,7 +10,8 @@ summary: "Парамарибо: голландская колониальная 
 searchAliases: []
 hero:
   src: /media/countries/suriname/featureBands-1-enhanced-20261002.webp
-  alt: "На фото: столица Суринама город Парамарибо"
+  alt: "Белое здание с арками и гербом за зеленой лужайкой в Парамарибо, Суринам"
+  hover: "Парамарибо в Суринаме: симметричный белый фасад и открытые галереи"
 gallery:
 - src: /media/destinations/paramaribo/gallery-1-enhanced-20261005.webp
   alt: "Старый деревянный дом с окнами и крыльцом в Парамарибо, Суринам"

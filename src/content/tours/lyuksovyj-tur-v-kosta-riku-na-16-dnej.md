@@ -512,8 +512,9 @@ itinerary:
           Также гидроплан обходит марина «Пес-Вела», пляж Эспадилья и Национальный парк Мануэль-Антонио.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-8-enhanced-20261006.webp
-        alt: "Вид на полуостров Мануэль-Антонио"
+        alt: "Лесистый полуостров Мануэль-Антонио между бирюзовыми бухтами, Коста-Рика"
         intendedSlot: "itinerary:day-8"
+        hover: "Мануэль-Антонио в Коста-Рике: зеленый мыс и песчаный перешеек с воздуха"
   - day: 9
     title: "Полуостров Оса и Корковадо"
     places:
@@ -565,8 +566,9 @@ itinerary:
       Включены завтрак, обед и ужин.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-9-enhanced-20261006.webp
-        alt: "Природа полуострова Оса и Корковадо"
+        alt: "Девушка с веслом в каяке на тихой реке среди густого леса, Коста-Рика"
         intendedSlot: "itinerary:day-9"
+        hover: "Коста-Рика: прогулка на каяке по реке между зелеными берегами"
   - day: 10
     title: "Пеший маршрут по джунглям Корковадо"
     places:
@@ -605,8 +607,9 @@ itinerary:
       Включены завтрак, обед и ужин.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-10-enhanced-20261006.webp
-        alt: "Алый попугай в джунглях Коста-Рики"
+        alt: "Попугай с синими и желтыми крыльями летит на фоне зеленого леса, Коста-Рика"
         intendedSlot: "itinerary:day-10"
+        hover: "Коста-Рика: летящий попугай с красным лбом и яркими крыльями"
   - day: 11
     title: "Остров Каньо, дайвинг, снорклинг и сезон китов"
     places:
@@ -766,8 +769,9 @@ itinerary:
       Включены завтрак, обед и ужин.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-13-enhanced-20261006.webp
-        alt: "Территория The Westin Reserva Conchal"
+        alt: "Тенистая дорожка под деревьями на территории The Westin Reserva Conchal, Коста-Рика"
         intendedSlot: "itinerary:day-13"
+        hover: "The Westin Reserva Conchal в Коста-Рике: дорожка среди густой зелени"
   - day: 14
     title: "The Westin Reserva Conchal"
     places:
@@ -782,8 +786,9 @@ itinerary:
       Включены завтрак, обед и ужин.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-14-enhanced-20261006.webp
-        alt: "Бассейн The Westin Reserva Conchal"
+        alt: "Бассейн у павильона с соломенной крышей в The Westin Reserva Conchal, Коста-Рика"
         intendedSlot: "itinerary:day-14"
+        hover: "The Westin Reserva Conchal в Коста-Рике: бирюзовый бассейн среди пальм"
   - day: 15
     title: "The Westin Reserva Conchal"
     places:

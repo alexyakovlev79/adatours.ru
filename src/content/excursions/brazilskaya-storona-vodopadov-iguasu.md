@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Стоимость — $80."
 hero:
   src: "/media/excursions/brazilskaya-storona-vodopadov-iguasu/hero-src-enhanced-20261007.webp"
-  alt: "Бразильская сторона водопадов Игуасу"
+  alt: "Мощные потоки Игуасу с бразильской стороны падают в облако брызг"
+  hover: "Игуасу в Бразилии: широкие каскады и водяная дымка у скальных уступов"
 gallery:
   - src: /media/tours/brazil-sao-paulo-rio-ilha-paraty-12d/itinerary/day-03-enhanced-20261001.webp
     alt: ""

@@ -9,7 +9,8 @@ destinationType: city
 summary: Нюланд в парагвайском Чако, меннонитская колония с историей переселенцев и сельских общин.
 hero:
   src: /media/tours/klassicheskij-paragvaj/neuland-place-generated-20261009-v1.webp
-  alt: Улица меннонитской колонии Нюланд
+  alt: "Широкая тихая улица Нюланда с невысокими домами и деревьями, Парагвай"
+  hover: "Нюланд в Парагвае: грунтовая дорога среди меннонитской сельской застройки"
 gallery: []
 themes:
 - theme_culture

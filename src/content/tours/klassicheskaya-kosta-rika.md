@@ -127,7 +127,8 @@ currency: USD
 priceNote: $3550
 hero:
   src: /media/tours/klassicheskaya-kosta-rika/hero-src-enhanced-20261007.webp
-  alt: 'на фото: флора и фауна Коста-Рики, Монтеверде'
+  alt: "Тукан с большим желтым клювом на мшистой ветке под дождем, Коста-Рика"
+  hover: "Коста-Рика: тукан на ветке перед густым зеленым лесом"
 routeCountries:
 - country_costa_rica
 routeDestinations:

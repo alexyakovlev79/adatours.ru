@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_bolivia_dolina_skal_alota/hero-generated-20261008.webp
-  alt: Выветренные скалы в долине у Алоты
+  alt: "Выветренные каменные останцы на сухой равнине у Алоты, Боливия"
+  hover: "Алота в Боливии: причудливые скалы перед дальними горными хребтами"
 gallery: []
 relatedDestinations: []
 featuredTours: []

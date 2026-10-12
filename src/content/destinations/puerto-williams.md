@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Южный город на острове Наварино у пролива Бигль."
 searchAliases: ["puerto-vilyams"]
 themes: ["theme_cruises","theme_adventure"]
-hero: {"src":"/media/destinations/destination_chile_puerto_vilyams/hero-generated-20261009-v1.webp","alt":"Берег Пуэрто-Вильямса у пролива Бигль","status":"approved"}
+hero: {"src": "/media/destinations/destination_chile_puerto_vilyams/hero-generated-20261009-v1.webp", "alt": "Дома и лодки у берега Пуэрто-Вильямса перед снежными горами, Чили", "status": "approved", "hover": "Пуэрто-Вильямс в Чили: прибрежное поселение у спокойного пролива Бигль"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

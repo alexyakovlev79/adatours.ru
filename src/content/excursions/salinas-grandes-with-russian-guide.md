@@ -18,7 +18,8 @@ route:
 language: []
 hero:
   src: /media/destinations/salinas-grandes/hero-word-20261011-p107-v1-enhanced-20261011-next50-v1.webp
-  alt: Белая соляная равнина Салинас-Грандес
+  alt: "Человек на белом солончаке Салинас-Грандес рядом с узкими водными полосами, Аргентина"
+  hover: "Салинас-Грандес в Аргентине: соляная равнина под ярким солнцем"
 gallery: []
 included: []
 notIncluded: []

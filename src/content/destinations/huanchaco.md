@@ -9,7 +9,8 @@ destinationType: resort
 summary: Уанчако — прибрежное поселение рядом с Трухильо на тихоокеанском побережье Перу.
 hero:
   src: /media/destinations/huanchaco/huanchaco-place-generated-20261009-v1.webp
-  alt: Тростниковые лодки на пляже Уанчако
+  alt: "Высокие тростниковые лодки на песчаном пляже Уанчако у полосы прибоя, Перу"
+  hover: "Уанчако в Перу: традиционные рыбацкие лодки кабальитос-де-тотора"
 gallery: []
 themes:
 - theme_culture

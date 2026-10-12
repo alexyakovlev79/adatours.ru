@@ -14,7 +14,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_maringa_viskondi_de_maua/hero-generated-20261008-next20.webp
-  alt: Маринга (Висконди-де-Мауа) — Бразилия
+  alt: "Мощеная улица Маринги с деревянными домами и зелеными горами, Бразилия"
+  hover: "Маринга в районе Висконди-де-Мауа: сельская улица среди лесистых склонов"
 gallery: []
 relatedDestinations: []
 featuredTours: []

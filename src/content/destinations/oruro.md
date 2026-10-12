@@ -10,7 +10,8 @@ summary: Оруро был основан в 1606 году как центр д�
 searchAliases: []
 hero:
   src: /media/destinations/oruro/hero-enhanced-20261003.webp
-  alt: 'На фото: карнавал в городе Оруро в Боливии'
+  alt: "Мужчины в разноцветной одежде и украшенных шляпах крупным планом"
+  hover: "Яркие узоры, ленты и помпоны на традиционных костюмах"
 gallery: []
 relatedDestinations: []
 featuredTours: []

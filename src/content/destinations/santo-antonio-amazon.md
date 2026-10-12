@@ -14,7 +14,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_santu_antoniu_amazoniya/destination_brazil_santu_antoniu_amazoniya-generated-20261008.webp
-  alt: Санту-Антониу (Амазония) - Бразилия
+  alt: "Деревянный дом и лодка у лесистого речного берега Санту-Антониу, Бразилия"
+  hover: "Санту-Антониу в Бразилии: амазонское поселение у тихой воды"
 gallery: []
 relatedDestinations: []
 featuredTours: []

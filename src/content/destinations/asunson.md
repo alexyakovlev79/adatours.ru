@@ -8,7 +8,7 @@ countryId: "country_paraguay"
 destinationType: "city"
 summary: "Столица Парагвая с сувенирным кварталом Recova, парком Хардин Ботанико и музеями. Знакомство с городом дополняют местная кухня и чай матэ."
 searchAliases: []
-hero: {"src":/media/countries/paraguay/featureBands-1-enhanced-20261002.webp,"alt":"На фото: город Асунсьон - столица Парагвая"}
+hero: {"src": "/media/countries/paraguay/featureBands-1-enhanced-20261002.webp", "alt": "Белая церковь с высоким шпилем среди зеленых деревьев и невысоких домов", "hover": "Церковная башня и зеленая городская застройка с высоты"}
 gallery:
 - src: /media/destinations/asuncion/gallery-1-enhanced-20261005.webp
   alt: "Мужчина несёт свёрток на голове мимо розовых колонн в Асунсьоне, Парагвай"

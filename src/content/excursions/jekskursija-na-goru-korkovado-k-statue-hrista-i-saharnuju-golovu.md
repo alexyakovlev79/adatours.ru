@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Стоимость — $80."
 hero:
   src: "/media/excursions/jekskursija-na-goru-korkovado-k-statue-hrista-i-saharnuju-golovu/hero-src-enhanced-20261007.webp"
-  alt: "Сити Тур+ Корковадо + Сахарная Голова"
+  alt: "Статуя Христа Искупителя на Корковадо перед заливами Рио-де-Жанейро, Бразилия"
+  hover: "Рио-де-Жанейро: статуя Христа над городом и Сахарная Голова вдали"
 gallery:
   - src: "/media/excursions/jekskursija-na-goru-korkovado-k-statue-hrista-i-saharnuju-golovu/gallery-0-src-enhanced-20261007.webp"
     hover: "Рио-де-Жанейро в Бразилии: канатная дорога перед скалой Сахарная Голова"

@@ -56,7 +56,8 @@ highlights:
     на Рио сверху можно на вертолете или дельтаплане.
   image:
     src: /media/tours/nezabyvaemyj-novyj-god-v-rio/highlights/05-rio-botanical-garden-enhanced-20261011-v1.webp
-    alt: "Аллея пальм в Ботаническом саду Рио"
+    alt: "Длинная аллея высоких пальм в Ботаническом саду Рио-де-Жанейро, Бразилия"
+    hover: "Ботанический сад Рио: пальмы вдоль прогулочной дорожки и люди в тени"
 itinerary:
 - day: 1
   title: Прибытие в Рио-де-Жанейро
@@ -165,7 +166,8 @@ itinerary:
     **Стоимость:** USD 350 на человека.
   images:
   - src: /media/tours/nezabyvaemyj-novyj-god-v-rio/itinerary-day-4-enhanced-20261006.webp
-    alt: Кофейня Колумбия в Рио в Бразилии
+    alt: "Галереи и витражный потолок кондитерской Коломбо в Рио-де-Жанейро, Бразилия"
+    hover: "Коломбо в Рио: украшенный интерьер и столики под стеклянной крышей"
 - excursionRef: excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie
   places: []
 - excursionRef: excursion_source_polet_na_vertolete_nad_rio

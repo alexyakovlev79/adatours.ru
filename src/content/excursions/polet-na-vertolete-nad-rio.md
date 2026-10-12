@@ -12,7 +12,8 @@ destination: destination_brazil_rio
 language: []
 hero:
   src: /media/excursions/polet-na-vertolete-nad-rio/hero-enhanced-20261001.webp
-  alt: Полет на вертолете над Рио-де-Жанейро
+  alt: "Вертолет над городскими домами и лесистыми горами Рио-де-Жанейро, Бразилия"
+  hover: "Рио-де-Жанейро: вертолет на фоне солнечных лучей и горной панорамы"
 gallery: []
 route:
   - Рио-де-Жанейро

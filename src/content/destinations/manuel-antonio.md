@@ -8,7 +8,7 @@ countryId: "country_costa_rica"
 destinationType: "national_park"
 summary: "Мануэль Антонио объединяет пляжный курорт и национальный парк на тихоокеанском побережье Коста-Рики. Здесь можно гулять среди джунглей и знакомиться с подводным миром."
 searchAliases: []
-hero: {"src":"/media/countries/costa-rica/featureBands-3-enhanced-20261002.webp","alt":"На фото: курорт Мануэль Антонио в Коста-Рике"}
+hero: {"src": "/media/countries/costa-rica/featureBands-3-enhanced-20261002.webp", "alt": "Зеленый полуостров Мануэль-Антонио над бирюзовой водой, Коста-Рика", "hover": "Мануэль-Антонио в Коста-Рике: лесистый мыс и прибой у скал с воздуха"}
 gallery:
 - src: /media/destinations/manuel-antonio/gallery-1-enhanced-20261003.webp
   hover: "Мануэль-Антонио: тропический пляж у зелёного мыса"

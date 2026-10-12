@@ -1,0 +1,79 @@
+---
+import { getVipFilterIndex } from '../../lib/vip-catalog';
+import { vipFilterOptions } from '../../lib/vip-filters.mjs';
+import { countLabel } from '../../lib/interest-model.mjs';
+import { withBase } from '../../lib/paths';
+
+interface Props { countryId?: string; themeId?: string; }
+const { countryId, themeId } = Astro.props;
+const rows = await getVipFilterIndex();
+const options = vipFilterOptions(rows, countryId, themeId);
+const menus = [
+  { label: 'Страна', placeholder: 'Выбрать страну', selected: countryId,
+    options: options.countries, reset: 'Все страны', resetHref: options.allCountriesHref },
+  { label: 'Интерес', placeholder: 'Выбрать интерес', selected: themeId,
+    options: options.themes, reset: 'Все интересы', resetHref: options.allThemesHref },
+];
+const hrefFor = (href: string) => `${withBase(href)}#vip-filters`;
+---
+
+<nav id="vip-filters" class="vip-filters container" aria-label="Подбор VIP-туров" data-vip-filters>
+  {menus.map((menu) => (
+    <div class="vip-filters__field">
+      <span class="vip-filters__label">{menu.label}</span>
+      <details class="vip-filters__menu">
+        <summary>
+          <span>{menu.options.find((option) => option.id === menu.selected)?.label ?? menu.placeholder}</span>
+          <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
+        </summary>
+        <ul aria-label={menu.label}>
+          {menu.resetHref && <li><a href={hrefFor(menu.resetHref)} aria-current={!menu.selected ? 'page' : undefined}>{menu.reset}</a></li>}
+          {menu.options.map((option) => (
+            <li><a href={hrefFor(option.href)} aria-current={option.id === menu.selected ? 'page' : undefined}>
+              <span>{option.label}</span><small>{countLabel(option.count)}</small>
+            </a></li>
+          ))}
+        </ul>
+      </details>
+    </div>
+  ))}
+</nav>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-vip-filters]').forEach((root) => {
+    const menus = [...root.querySelectorAll<HTMLDetailsElement>('details')];
+    menus.forEach((menu) => {
+      menu.addEventListener('toggle', () => {
+        if (menu.open) menus.forEach((other) => { if (other !== menu) other.open = false; });
+      });
+      menu.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          menu.open = false;
+          menu.querySelector('summary')?.focus();
+        }
+      });
+    });
+    document.addEventListener('click', (event) => {
+      if (event.target instanceof Node && !root.contains(event.target)) menus.forEach((menu) => { menu.open = false; });
+    });
+  });
+</script>
+
+<style>
+  .vip-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; padding-block: clamp(24px, 4vw, 40px); scroll-margin-top: 110px; }
+  .vip-filters__field { min-width: 0; }
+  .vip-filters__label { display: block; margin-bottom: 10px; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
+  .vip-filters__menu { position: relative; }
+  summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; padding: 14px 18px; border: 1px solid var(--color-line); border-radius: 4px; background: var(--color-surface); color: var(--color-ink); cursor: pointer; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  summary svg { flex-shrink: 0; transition: transform .18s ease; }
+  details[open] summary { border-color: var(--color-gold-deep); }
+  details[open] summary svg { transform: rotate(180deg); }
+  summary:focus-visible, a:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
+  ul { position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 30; max-height: min(360px, 55vh); overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 6px; list-style: none; background: var(--color-surface); border: 1px solid var(--color-line); border-radius: 4px; box-shadow: 0 12px 32px rgb(0 0 0 / .12); }
+  a { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; min-height: 44px; padding: 12px; color: var(--color-ink); text-decoration: none; line-height: 1.35; }
+  a:hover, a[aria-current="page"] { background: var(--color-gold-soft); }
+  small { flex-shrink: 0; color: color-mix(in srgb, var(--color-ink) 65%, transparent); }
+  @media (max-width: 600px) { .vip-filters { grid-template-columns: 1fr; gap: 16px; } }
+</style>

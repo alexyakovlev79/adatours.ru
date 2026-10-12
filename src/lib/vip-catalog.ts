@@ -3,6 +3,7 @@ import { isActiveEntity } from './archive.mjs';
 import { tourPath } from './routes';
 import { selectVipTours } from './vip-tours.mjs';
 import { buildVipCountryIndex } from './vip-countries.mjs';
+import { buildVipFilterIndex } from './vip-filters.mjs';
 
 let cataloguePaths: Promise<ReadonlySet<string>> | undefined;
 
@@ -27,3 +28,16 @@ async function loadVipCountryIndex() {
 export function getVipCountryIndex() {
   return countryIndex ??= loadVipCountryIndex();
 }
+
+let filterIndex: ReturnType<typeof loadVipFilterIndex> | undefined;
+async function loadVipFilterIndex() {
+  const activeRu = ({ data }) => data.locale === 'ru' && isActiveEntity(data);
+  const [tours, countries, themes] = await Promise.all([
+    getCollection('tours', activeRu), getCollection('countries', activeRu), getCollection('themes', activeRu),
+  ]);
+  return buildVipFilterIndex(tours, countries, themes);
+}
+export function getVipFilterIndex() {
+  return filterIndex ??= loadVipFilterIndex();
+}
+

@@ -1,34 +1,44 @@
 ---
 import { createHash } from 'node:crypto';
-import { getVipCountryIndex } from '../../lib/vip-catalog';
+import { getVipFilterIndex } from '../../lib/vip-catalog';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { countryPath } from '../../lib/routes';
 import { countLabel } from '../../lib/interest-model.mjs';
 import EntityCatalogLayout from '../../layouts/EntityCatalogLayout.astro';
 
 export async function getStaticPaths() {
-  const countries = await getVipCountryIndex();
-  return countries.flatMap((row) => {
-    const country = row.entry.data;
-    const overviewImage = country.gallery?.find((image) => image.src !== country.hero?.src) ?? country.hero;
-    const description = `${row.label}: ${countLabel(row.count, ['маршрут', 'маршрута', 'маршрутов'])} Ada Tours. Сравните программы, длительность и стоимость. Адаптируем поездку под ваши даты, отели и интересы.`;
-    const catalogVersion = createHash('sha256').update(JSON.stringify(row.tours.map((entry) => entry.data.id))).digest('hex').slice(0, 20);
-    return paginateCatalog(row.tours, row.href).map(({ entries, pagination }) => ({
+  const index = await getVipFilterIndex();
+  return index.filter((row) => row.countryId || row.themeId).flatMap((row) => {
+    const country = row.country?.data;
+    const theme = row.theme?.data;
+    const overviewImage = country?.gallery?.find((image) => image.src !== country.hero?.src) ?? country?.hero;
+    const description = `${row.title}: ${countLabel(row.count, ['маршрут', 'маршрута', 'маршрутов'])} Ada Tours. Сравните программы, длительность и стоимость. Адаптируем поездку под ваши даты, отели и интересы.`;
+    const catalogVersion = createHash('sha256').update(JSON.stringify(row.entries.map((entry) => entry.data.id))).digest('hex').slice(0, 20);
+    const breadcrumbs = [
+      { label: 'VIP-туры', href: '/vip/' },
+      ...(country && theme ? [{ label: country.name, href: `/vip/${country.slug}/` }] : []),
+      { label: row.title, href: row.href },
+    ];
+    return paginateCatalog(row.entries, row.href).map(({ entries, pagination }) => ({
       params: { country: pagination.canonical.slice('/vip/'.length).replace(/\/$/, '') },
       props: {
         kind: 'tour', entries, pagination, catalogVersion,
-        title: row.label, description, canonical: pagination.canonical,
-        hero: country.hero?.src, countryContextId: country.id,
-        variant: 'vip-country-tours', leadTitle: `Собрать VIP-маршрут: ${country.name}`, leadEntityId: `vip:${country.id}`,
-        breadcrumbs: [{ label: 'VIP-туры', href: '/vip/' }, { label: row.label, href: row.href }],
-        countryOverview: {
+        title: row.title, description, canonical: pagination.canonical,
+        hero: theme?.hero?.src ?? country?.hero?.src ?? row.entries[0].data.hero?.src,
+        countryContextId: row.countryId, themeContextId: row.themeId,
+        variant: 'vip-country-tours',
+        leadTitle: `Собрать VIP-маршрут${country ? `: ${country.name}` : ''}${theme ? ` — ${theme.name}` : ''}`,
+        leadEntityId: ['vip', row.countryId, row.themeId].filter(Boolean).join(':'),
+        breadcrumbs,
+        countryOverview: country ? {
           name: country.name, href: countryPath(country), image: overviewImage?.src,
           imageTextAlign: country.imageTextAlign, mediaStatus: overviewImage?.status,
           replacementReason: overviewImage?.replacementReason,
-        },
+        } : undefined,
       },
     }));
   });
 }
 ---
 <EntityCatalogLayout {...Astro.props} />
+

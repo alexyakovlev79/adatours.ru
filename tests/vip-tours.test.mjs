@@ -4,6 +4,79 @@ import { hasVipInTitle, selectVipTours, vipTourPriceLabel } from '../src/lib/vip
 import { isActiveEntity } from '../src/lib/archive.mjs';
 import { buildVipCountryIndex, vipCountryTitle } from '../src/lib/vip-countries.mjs';
 import { SEO_CASES } from '../src/lib/seo-grammar.mjs';
+import { buildVipFilterIndex, vipFilterOptions } from '../src/lib/vip-filters.mjs';
+import { paginateCatalog } from '../src/lib/catalog-pagination.ts';
+
+const filterCountries = [
+  { id: 'country_brazil', slug: 'brazil', name: 'Бразилия', locale: 'ru' },
+  { id: 'country_chile', slug: 'chile', name: 'Чили', locale: 'ru' },
+  { id: 'country_peru', slug: 'peru', name: 'Перу', locale: 'ru' },
+];
+const filterThemes = [
+  { id: 'theme_wildlife', slug: 'wildlife', name: 'Природа и животные', locale: 'ru' },
+  { id: 'theme_culture', slug: 'culture-and-history', name: 'Культура и история', locale: 'ru' },
+  { id: 'theme_spa', slug: 'spa', name: 'SPA и wellness', locale: 'ru' },
+];
+const filterTour = (id, countries, primaryThemes, themes = [], extras = {}) => ({ data: {
+  id, title: `VIP ${id}`, durationDays: 13, locale: 'ru', countries, primaryThemes, themes, ...extras,
+} });
+
+test('VIP facets intersect main geography with primary and secondary interests without reselecting VIP', () => {
+  const brazil = filterTour('brazil', ['country_brazil', 'country_peru'], ['theme_wildlife'], ['theme_culture'], { routeCountries: ['country_brazil'] });
+  const chile = filterTour('chile', ['country_chile'], ['theme_culture'], ['theme_wildlife']);
+  const regular = filterTour('regular', ['country_peru'], ['theme_spa'], [], { title: 'Обычный тур', priceFrom: undefined });
+  const archived = filterTour('archived', ['country_peru'], ['theme_spa'], [], { status: 'archived', priceFrom: 999999 });
+  const rows = buildVipFilterIndex([brazil, chile, regular, archived], filterCountries, filterThemes);
+  assert.deepEqual(new Set(rows.find((row) => row.href === '/vip/').entries), new Set([brazil, chile]));
+  assert.equal(rows.find((row) => row.href === '/vip/interests/wildlife/').count, 2);
+  assert.deepEqual(rows.find((row) => row.href === '/vip/brazil/interests/culture-and-history/').entries, [brazil]);
+  assert.ok(rows.every((row) => row.count > 0 && !row.countryId?.includes('peru') && row.themeId !== 'theme_spa'));
+  assert.equal(new Set(rows.map((row) => row.href)).size, rows.length);
+  const existing = buildVipCountryIndex([brazil, chile, regular, archived], filterCountries);
+  for (const row of existing) assert.deepEqual(rows.find((item) => item.href === row.href).entries, row.tours);
+});
+
+test('VIP menus preserve the other facet when selecting, switching, or clearing a filter', () => {
+  const rows = buildVipFilterIndex([
+    filterTour('brazil', ['country_brazil'], ['theme_wildlife'], ['theme_culture']),
+    filterTour('chile', ['country_chile'], ['theme_wildlife']),
+  ], filterCountries, filterThemes);
+  const home = vipFilterOptions(rows);
+  assert.equal(home.countries.find((row) => row.id === 'country_brazil').href, '/vip/brazil/');
+  assert.equal(home.themes.find((row) => row.id === 'theme_wildlife').href, '/vip/interests/wildlife/');
+  const countryFirst = vipFilterOptions(rows, 'country_brazil');
+  const themeFirst = vipFilterOptions(rows, undefined, 'theme_wildlife');
+  assert.equal(countryFirst.themes.find((row) => row.id === 'theme_wildlife').href, '/vip/brazil/interests/wildlife/');
+  assert.equal(themeFirst.countries.find((row) => row.id === 'country_brazil').href, '/vip/brazil/interests/wildlife/');
+  const both = vipFilterOptions(rows, 'country_brazil', 'theme_wildlife');
+  assert.equal(both.allCountriesHref, '/vip/interests/wildlife/');
+  assert.equal(both.allThemesHref, '/vip/brazil/');
+  assert.equal(both.countries.find((row) => row.id === 'country_chile').href, '/vip/chile/interests/wildlife/');
+  assert.equal(both.themes.find((row) => row.id === 'theme_culture').href, '/vip/brazil/interests/culture-and-history/');
+  assert.equal(vipFilterOptions(rows, 'country_brazil', 'theme_culture').countries.length, 1);
+});
+
+test('VIP facet pagination retains the full static filter path and includes every matching tour', () => {
+  const tours = Array.from({ length: 65 }, (_, index) => filterTour(`tour-${index}`, ['country_brazil'], ['theme_wildlife']));
+  const rows = buildVipFilterIndex(tours, filterCountries, filterThemes);
+  const combined = rows.find((row) => row.href === '/vip/brazil/interests/wildlife/');
+  const pages = paginateCatalog(combined.entries, combined.href);
+  assert.deepEqual(pages.map((page) => page.pagination.canonical), [
+    '/vip/brazil/interests/wildlife/', '/vip/brazil/interests/wildlife/page/2/', '/vip/brazil/interests/wildlife/page/3/',
+  ]);
+  assert.equal(new Set(pages.flatMap((page) => page.entries.map((entry) => entry.data.id))).size, 65);
+});
+
+test('VIP facets exclude unpublished and foreign-language countries, themes, and tours', () => {
+  const entry = filterTour('visible', ['country_brazil'], ['theme_wildlife']);
+  for (const changes of [{ status: 'draft' }, { status: 'archived' }, { locale: 'en' }]) {
+    assert.equal(buildVipFilterIndex([{ data: { ...entry.data, ...changes } }], filterCountries, filterThemes).length, 0);
+    const hiddenCountry = filterCountries.map((country) => ({ ...country, ...changes }));
+    assert.ok(buildVipFilterIndex([entry], hiddenCountry, filterThemes).every((row) => !row.countryId));
+    const hiddenTheme = filterThemes.map((theme) => ({ ...theme, ...changes }));
+    assert.ok(buildVipFilterIndex([entry], filterCountries, hiddenTheme).every((row) => !row.themeId));
+  }
+});
 
 const tour = (id, title, priceFrom, durationDays = 10) => ({
   data: { id, title, priceFrom, currency: 'USD', durationDays, countries: ['country_brazil'] },
@@ -137,3 +210,4 @@ test('VIP quota recalculates when the active tour catalog grows or shrinks', () 
   assert.equal(reduced.actualShare, 4 / 17);
   assert.ok(reduced.entries.some((entry) => entry.data.id === 'dynamic-0'));
 });
+

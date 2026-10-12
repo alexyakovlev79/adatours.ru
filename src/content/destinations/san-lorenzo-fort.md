@@ -8,8 +8,8 @@ countryId: country_panama
 destinationType: city
 summary: Крепость Сан-Лоренсо на карибском побережье Панамы, исторические укрепления колониального времени.
 hero:
-  src: /media/tours/luchshee-v-paname/itinerary-1-images-0-src-enhanced-20261007.webp
-  alt: 'Панама: Панама-Сити - Долина Антон-Крепость Сан-Лоренсо'
+  src: /media/destinations/san-lorenzo-fort/hero-generated-20261012.webp
+  alt: Каменные бастионы крепости Сан-Лоренсо над Карибским морем в Панаме
 gallery: []
 themes:
 - theme_culture
@@ -18,7 +18,7 @@ searchAliases:
 - San Lorenzo
 - krepost-san-lorenso
 sourceSnapshot: data/source-index/materials/destination_panama_krepost_san_lorenso.md
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-12'
 ---
 
 Сан-Лоренсо входит в систему испанских укреплений карибского побережья Панамы. Крепость связана с защитой торговых путей и историей пиратских нападений. Ее каменные стены помогают представить, как берег использовался для обороны и контроля морского движения.

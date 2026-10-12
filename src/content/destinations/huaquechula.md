@@ -9,7 +9,8 @@ destinationType: city
 summary: Уакечула в Мексике, поселение с традициями семейных алтарей в дни памяти умерших.
 hero:
   src: /media/tours/meksika-den-mertvykh/huaquechula-place-generated-20261009-v1.webp
-  alt: Семейный алтарь Дня мертвых в Уакечуле
+  hover: "Уакечула: домашний алтарь с цветами на белой ткани"
+  alt: "Алтарь Дня мертвых с фотографиями, свечами и оранжевыми цветами в Уакечуле, Мексика"
 gallery: []
 themes:
 - theme_culture

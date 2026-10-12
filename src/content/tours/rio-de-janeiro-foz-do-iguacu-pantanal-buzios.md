@@ -258,7 +258,8 @@ currency: USD
 priceNote: $4750
 hero:
   src: /media/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios/hero-enhanced-20261006.webp
-  alt: Болота Пантанал, Бразилия, дикая природа
+  hover: "Пантанал: лесной водоем с отражениями густой зелени"
+  alt: "Тихая вода среди зеленых деревьев и свисающих ветвей Пантанала, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

@@ -205,7 +205,8 @@ itinerary:
       Включены завтрак, обед и ужин.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-3-enhanced-20261006.webp
-        alt: "Дикая природа национального парка Тортугеро"
+        hover: "Тортугеро: зубы и чешуя крокодила крупным планом"
+        alt: "Голова крокодила с приоткрытой пастью в Тортугеро, Коста-Рика"
         intendedSlot: "itinerary:day-3"
   - day: 4
     title: "Каналы Тортугеро - Ареналь - Табакон"
@@ -704,7 +705,8 @@ itinerary:
       Включены завтрак, обед и ужин.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-12-enhanced-20261006.webp
-        alt: "Побережье у The Westin Reserva Conchal"
+        hover: "Westin Reserva Conchal: вид сверху на курорт у моря"
+        alt: "Здания Westin Reserva Conchal и зеленое побережье у широкой бухты, Коста-Рика"
         intendedSlot: "itinerary:day-12"
   - day: 13
     title: "The Westin Reserva Conchal"
@@ -796,7 +798,8 @@ itinerary:
       Включены завтрак, обед и ужин.
     images:
       - src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-15-enhanced-20261006.webp
-        alt: "Закат на Тихоокеанском побережье Коста-Рики"
+        hover: "Коста-Рика: вечернее солнце сквозь пальмы у океана"
+        alt: "Закат над пляжем за пальмовыми листьями, Коста-Рика"
         intendedSlot: "itinerary:day-15"
   - day: 16
     title: "Трансфер в аэропорт Сан-Хосе"

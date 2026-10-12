@@ -9,7 +9,8 @@ destinationType: city
 summary: Атликско в Мексике, город цветов с колониальным центром и выращиванием декоративных растений.
 hero:
   src: /media/tours/meksika-den-mertvykh/atlixco-place-generated-20261009-v1.webp
-  alt: Колониальная улица и цветы в Атликско
+  hover: "Атликско: цветущие растения у ярких фасадов"
+  alt: "Мощеная улица Атликско с разноцветными домами и цветами в горшках, Мексика"
 gallery: []
 themes:
 - theme_culture

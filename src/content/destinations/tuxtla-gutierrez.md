@@ -9,7 +9,8 @@ destinationType: city
 summary: Тустла-Гутьеррес, столица мексиканского Чьяпаса с музеями, рынками и дорогой к каньону Сумидеро.
 hero:
   src: /media/tours/meksika-fantasticheskaya/tuxtla-gutierrez-place-generated-20261009-v1.webp
-  alt: Городская улица и рынок Тустла-Гутьерреса
+  hover: "Тустла-Гутьеррес: прогулочная улица с торговыми лавками"
+  alt: "Рыночные прилавки с фруктами на зеленой улице Тустла-Гутьерреса, Мексика"
 gallery: []
 themes:
 - theme_culture

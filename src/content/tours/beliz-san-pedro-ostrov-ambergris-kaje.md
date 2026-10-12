@@ -133,7 +133,8 @@ currency: USD
 priceNote: $1730
 hero:
   src: /media/tours/beliz-san-pedro-ostrov-ambergris-kaje/hero-enhanced-20261006.webp
-  alt: Белиз:Сан-Педро, Остров Амбергрис Кайе
+  hover: "Амбергрис-Кайе: вечернее солнце и темные облака над морем"
+  alt: "Оранжевый закат над водой у острова Амбергрис-Кайе, Белиз"
 routeCountries:
 - country_belize
 routeDestinations:

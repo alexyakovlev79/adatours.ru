@@ -9,7 +9,8 @@ destinationType: region
 summary: Колония-Индепенденсия в парагвайском Гуайра, район лесных холмов и природных поездок.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/colonia-independencia-place-generated-20261009-v1.webp
-  alt: Зеленые холмы района Колония-Индепенденсия
+  hover: "Колония-Индепенденсия: дом с черепичной крышей у лесистых склонов"
+  alt: "Невысокий сельский дом среди зеленых холмов Колонии-Индепенденсия, Парагвай"
 gallery: []
 themes:
 - theme_wildlife

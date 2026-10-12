@@ -9,7 +9,8 @@ destinationType: city
 summary: Сьерпе на юге Коста-Рики, речное поселение и отправная точка лодочных маршрутов через мангровые территории.
 hero:
   src: /media/tours/kosta-rika-nastoyashchie-dragotsennosti/sierpe-place-generated-20261009-v1.webp
-  alt: Речной причал Сьерпе и мангровые берега
+  hover: "Сьерпе: речная пристань перед мангровыми берегами"
+  alt: "Пассажирская лодка и люди у деревянного причала Сьерпе, Коста-Рика"
 gallery: []
 themes:
 - theme_wildlife

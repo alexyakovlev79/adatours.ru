@@ -9,7 +9,8 @@ destinationType: island
 summary: Остров Зопанго на озере Никарагуа, небольшая островная остановка с видом на вулкан Момбачо.
 hero:
   src: /media/tours/vip-kosta-rika-nikaragua/zopango-island-place-generated-20261009-v1.webp
-  alt: Зеленый остров Зопанго на озере Никарагуа
+  hover: "Зопанго: небольшой остров на фоне горы Момбачо"
+  alt: "Зеленый остров Зопанго с деревянным причалом перед вулканом, Никарагуа"
 gallery: []
 themes:
 - theme_wildlife

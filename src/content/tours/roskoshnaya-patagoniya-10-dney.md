@@ -319,7 +319,8 @@ itinerary:
       После прибытия размещение в Hotel Dreams del Estrecho с видом на пролив и южное побережье Чили.
     images:
       - src: /media/tours/roskoshnaya-patagoniya-10-dney/itinerary-day-7-enhanced-20261006.webp
-        alt: "Магелланов пролив, Чилийская Патагония"
+        hover: "Магелланов пролив: катер оставляет тонкий след на воде"
+        alt: "Небольшой катер на темно-бирюзовой воде Магелланова пролива, Чили"
         intendedSlot: "itinerary:day-7"
   - day: 8
     title: "Остров Магдалена, остров Марта и перелет в Сантьяго"

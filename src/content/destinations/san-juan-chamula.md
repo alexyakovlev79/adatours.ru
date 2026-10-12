@@ -9,7 +9,8 @@ destinationType: city
 summary: Сан-Хуан-Чамула в Чьяпасе, поселение с церковью Святого Иоанна и местными религиозными традициями.
 hero:
   src: /media/tours/meksika-fantasticheskaya/san-juan-chamula-place-generated-20261009-v1.webp
-  alt: Площадь и местные лавки Сан-Хуан-Чамулы
+  hover: "Сан-Хуан-Чамула: жители и тканевые изделия на городской площади"
+  alt: "Площадь Сан-Хуан-Чамулы с белой церковью и торговыми лавками, Мексика"
 gallery: []
 themes:
 - theme_culture

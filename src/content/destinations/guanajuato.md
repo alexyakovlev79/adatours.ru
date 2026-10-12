@@ -9,7 +9,8 @@ destinationType: city
 summary: Гуанахуато в Мексике, исторический город с цветными домами на склонах, узкими улицами и подземными дорогами.
 hero:
   src: /media/tours/mexico-city-keretaro/guanajuato-place-generated-20261009-v1.webp
-  alt: Цветные дома и узкие улицы Гуанахуато
+  hover: "Гуанахуато: узкая лестничная улица на фоне домов на холме"
+  alt: "Каменные ступени между цветными домами Гуанахуато, Мексика"
 gallery: []
 themes:
 - theme_culture

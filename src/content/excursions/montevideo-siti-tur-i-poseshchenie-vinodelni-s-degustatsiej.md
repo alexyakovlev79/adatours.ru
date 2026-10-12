@@ -25,7 +25,8 @@ gallery:
     hover: "Монтевидео: башня дворца Сальво и пальмы"
     alt: "Высокая башня дворца Сальво за пальмами на площади Монтевидео, Уругвай"
   - src: "/media/excursions/montevideo-siti-tur-i-poseshchenie-vinodelni-s-degustatsiej/gallery-1-src-enhanced-20261007.webp"
-    alt: Монтевидео и побережье Рио-де-ла-Плата
+    hover: "Монтевидео: историческая башня на фоне белых облаков"
+    alt: "Башня Паласио-Сальво над площадью с пальмами в Монтевидео, Уругвай"
   - src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-enhanced-20261006.webp
     hover: "Монтевидео: старинная башня в конце городской улицы"
     alt: "Городская улица и историческое здание с башней в Монтевидео, Уругвай"

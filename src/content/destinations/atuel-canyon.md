@@ -9,7 +9,7 @@ destinationType: "natural_area"
 summary: "Извилистая река и каменные формы в сухом ландшафте провинции Мендоса."
 searchAliases: ["kanon-atuel"]
 themes: ["theme_adventure","theme_wildlife"]
-hero: {"src":"/media/destinations/destination_argentina_kanon_atuel/hero-generated-20261009-v1.webp","alt":"Река среди каменных склонов каньона Атуэль","status":"approved"}
+hero: {"src":"/media/destinations/destination_argentina_kanon_atuel/hero-generated-20261009-v1.webp","alt":"Зеленоватая река между каменными стенами каньона Атуэль, Аргентина","status":"approved", hover: "Каньон Атуэль: узкий речной изгиб среди сухих скал"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

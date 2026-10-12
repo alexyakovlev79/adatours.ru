@@ -10,7 +10,8 @@ summary: "Город садов и парков с соборами, зоопа�
 searchAliases: []
 hero:
   src: "/media/countries/guyana/featureBands-3-enhanced-20261002.webp"
-  alt: "На фото: столица страны Гайана - город Джорджтаун"
+  hover: "Джорджтаун: светлая башня среди городской зелени"
+  alt: "Белая церковная башня с острыми шпилями за деревом в Джорджтауне, Гайана"
 gallery:
 - src: /media/destinations/georgetown/gallery-1-enhanced-20261003.webp
   alt: "Уличные торговые ряды под зонтиками в Джорджтауне, Гайана"

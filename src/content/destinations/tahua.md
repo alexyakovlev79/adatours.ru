@@ -12,7 +12,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_bolivia_tahua/hero-generated-20261008.webp
-  alt: Тахуа у склонов Тунупы и солончака Уюни
+  hover: "Тахуа: низкая застройка у белого солончака"
+  alt: "Каменные дома Тахуа между склонами Тунупы и солончаком Уюни, Боливия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

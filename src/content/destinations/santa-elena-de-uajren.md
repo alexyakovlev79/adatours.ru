@@ -10,7 +10,8 @@ summary: "Из Санта Елена де Уайрен начинаются эк
 searchAliases: []
 hero:
   src: "/media/destinations/santa-elena-de-uairen/hero-enhanced-20261003.webp"
-  alt: "На фото: водопады Гран Сабана Боливар в Венесуэле"
+  hover: "Гран-Сабана: белые потоки среди тропической растительности"
+  alt: "Речные пороги и широкий водопад Гран-Сабаны среди зеленых берегов, Венесуэла"
 gallery:
   - {"src":"/media/destinations/santa-elena-de-uairen/gallery-1-enhanced-20261003.webp","alt":"Гамаки под соломенным навесом над водой","hover":"Гамаки под соломенным навесом над водой"}
   - {"src":"/media/destinations/santa-elena-de-uairen/gallery-2-enhanced-20261003.webp","alt":"Серая птица летит низко над водой","hover":"Серая птица летит низко над водой"}

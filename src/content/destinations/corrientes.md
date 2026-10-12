@@ -9,7 +9,7 @@ destinationType: "city"
 summary: "Город на реке Парана и удобная остановка на пути к водно-болотным угодьям Ибера."
 searchAliases: ["korrientes"]
 themes: ["theme_culture"]
-hero: {"src":"/media/destinations/destination_argentina_korrientes/hero-generated-20261009-v1.webp","alt":"Набережная города Корриентес на реке Парана","status":"approved"}
+hero: {"src":"/media/destinations/destination_argentina_korrientes/hero-generated-20261009-v1.webp","alt":"Зеленая набережная Корриентеса с пальмами у реки Парана, Аргентина","status":"approved", hover: "Корриентес: широкий речной берег вдоль городской набережной"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

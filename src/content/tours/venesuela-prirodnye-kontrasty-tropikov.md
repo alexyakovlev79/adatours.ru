@@ -121,7 +121,8 @@ itinerary:
     Питание: завтрак, обед, ужин.
   images:
   - src: "/media/tours/venesuela-prirodnye-kontrasty-tropikov/itinerary-7-images-0-src-enhanced-20261007.webp"
-    alt: 'На фото: Поездка по притокам дельты реки Ориноко'
+    hover: "Дельта Ориноко: речные изгибы под низкими облаками"
+    alt: "Извилистые рукава дельты Ориноко среди сплошного зеленого леса, Венесуэла"
 - day: 8
   title: ', понедельник: дельта Ориноко'
   places:

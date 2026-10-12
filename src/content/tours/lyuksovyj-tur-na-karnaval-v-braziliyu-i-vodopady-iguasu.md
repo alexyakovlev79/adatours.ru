@@ -59,7 +59,8 @@ itinerary:
     Этот Fast Track первого дня оплачивается отдельно.'
   images:
   - src: /media/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu/itinerary-day-1-enhanced-20261006.webp
-    alt: Копакабана, главный пляж Рио-де-Жанейр
+    hover: "Рио-де-Жанейро: песчаная полоса у воды перед горными вершинами"
+    alt: "Пляж Рио-де-Жанейро и городские здания между зелеными холмами, Бразилия"
 - day: 2
   title: '06.02: Корковадо, исторический центр и Карнавальный бал'
   places:

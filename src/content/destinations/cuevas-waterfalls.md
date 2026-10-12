@@ -13,7 +13,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_bolivia_vodopady_kuevas/hero-generated-20261008.webp
-  alt: Водопад Куэвас среди зелени у Самайпаты
+  hover: "Куэвас: вода стекает по скале в тихий лесной бассейн"
+  alt: "Водопад Куэвас над прозрачным бассейном среди зеленого леса, Боливия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

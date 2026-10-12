@@ -9,7 +9,8 @@ destinationType: city
 summary: Писак в Священной долине Перу, поселение с ремесленным рынком и инкским комплексом на горных склонах.
 hero:
   src: /media/tours/manyashchij-peru-kolumbiya/pisac-place-generated-20261009-v1.webp
-  alt: Инкские террасы археологического Писака
+  hover: "Писак: каменные террасы ступенями спускаются по склону"
+  alt: "Изогнутые инкские террасы Писака над глубокой горной долиной, Перу"
 gallery: []
 themes:
 - theme_culture

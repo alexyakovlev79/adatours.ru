@@ -16,13 +16,15 @@ currency: "USD"
 priceNote: "Цена — $1350 на человека. Возможны скидки для более чем одного человека; свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/hero-src-enhanced-20261007.webp"
-  alt: "На фото: Рыбак с пойманной рыбой, Рио-де-Жанейро"
+  hover: "Мужчина с пойманной рыбой на фоне воды"
+  alt: "Рыбак держит крупную пятнистую рыбу у борта лодки"
 gallery:
   - src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/gallery-0-src-enhanced-20261007.webp"
     alt: "Мужчина с длинным шестом на бамбуковом плоту среди спокойной воды и зеленых холмов"
     hover: "Прогулка на плоту у лесистого берега"
   - src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/gallery-1-src-enhanced-20261007.webp"
-    alt: "На фото: Мужчина с рыбой на рыбалке в Рио-де-Жанейро"
+    hover: "Мужчина с уловом у галечного берега"
+    alt: "Рыбак в воде держит крупную серебристую рыбу с пятнами"
   - src: "/media/excursions/okeanicheskaya-rybalka-v-rio-de-zhanejro/gallery-2-src-enhanced-20261007.webp"
     alt: "На фото: Океаническая рыбалка в Рио-де-Жанейро"
 route:

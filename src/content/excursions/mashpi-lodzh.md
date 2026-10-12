@@ -19,7 +19,8 @@ currency: USD
 priceNote: "Стоимость программы — $1004. При размещении в одноместном номере — $1752."
 hero:
   src: /media/excursions/mashpi-lodzh/hero-src-enhanced-20261008.webp
-  alt: Машпи Лодж среди тропического леса Эквадора
+  hover: "Машпи Лодж: стеклянные фасады в густой тропической зелени"
+  alt: "Здание Машпи Лодж с освещенными окнами и смотровой площадкой среди леса, Эквадор"
 gallery:
   - src: /media/excursions/mashpi-lodzh/gallery-0-src-enhanced-20261008.webp
     alt: Машпи Лодж в облачном лесу Эквадора

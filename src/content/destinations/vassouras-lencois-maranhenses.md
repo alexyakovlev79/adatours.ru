@@ -14,7 +14,8 @@ themes:
 - theme_wildlife
 hero:
   src: /media/destinations/destination_brazil_vassuoras_lensojs_maranenses/destination_brazil_vassuoras_lensojs_maranenses-generated-20261008.webp
-  alt: Вассуорас (Ленсойс-Мараньенсес) - Бразилия
+  hover: "Вассуорас: спокойная лагуна среди песка и тропической зелени"
+  alt: "Прозрачная вода и светлые песчаные берега Вассуораса с пальмами, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

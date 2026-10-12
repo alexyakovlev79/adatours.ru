@@ -22,7 +22,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/wedding-ceremony-tropical-package/hero-enhanced-20260930.webp
-  alt: "Тропическая свадебная церемония в Бразилии"
+  hover: "Свадебная пара у бирюзовой воды под легкой фатой"
+  alt: "Жених и невеста у спокойного моря на песчаном пляже"
 gallery: []
 featured: false
 priority: 0

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Кордильера-дель-Йбитурусу в Парагвае, горный район с лесными тропами, водопадами и смотровыми точками.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/ybytyruzu-mountain-range-place-generated-20261009-v1.webp
-  alt: Лесные горы Кордильеры-дель-Йбитурусу
+  hover: "Кордильера-дель-Йбитурусу: зеленые холмы и лесные склоны"
+  alt: "Лесистые гряды Кордильеры-дель-Йбитурусу над зеленой сельской долиной, Парагвай"
 gallery: []
 themes:
 - theme_wildlife

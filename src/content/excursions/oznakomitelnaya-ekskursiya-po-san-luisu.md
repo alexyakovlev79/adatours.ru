@@ -14,7 +14,8 @@ language:
   - Английский
 hero:
   src: /media/excursions/oznakomitelnaya-ekskursiya-po-san-luisu/hero-enhanced-20261001.webp
-  alt: Исторический центр Сан-Луиса, Бразилия
+  hover: "Сан-Луис: узорчатая плитка вокруг окон с балконами"
+  alt: "Красные окна и металлические балконы на фасаде с сине-белой плиткой в Сан-Луисе, Бразилия"
 gallery: []
 route:
   - Сан-Луис

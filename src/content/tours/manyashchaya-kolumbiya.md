@@ -182,7 +182,8 @@ currency: USD
 priceNote: $3663
 hero:
   src: /media/tours/manyashchaya-kolumbiya/hero-src-enhanced-20261007.webp
-  alt: 'На фото: граффити в одном из колумбийских городов'
+  hover: "Колумбия: цветные рисунки на стендах среди зелени"
+  alt: "Яркая роспись с женским лицом и кукурузой на уличных панелях, Колумбия"
 routeCountries:
 - country_colombia
 routeDestinations:

@@ -10,7 +10,8 @@ summary: "Национальный парк с мангровыми болота
 searchAliases: []
 hero:
   src: "/media/countries/dominican-republic/featureBands-2-enhanced-20261002.webp"
-  alt: "На фото: Национальный парк Лос-Айтисес в Доминикане"
+  hover: "Лос-Айтисес: островки с густой растительностью над морем"
+  alt: "Зеленые скальные островки парка Лос-Айтисес в бирюзовой воде, Доминикана"
 gallery: []
 relatedDestinations: []
 featuredTours: []

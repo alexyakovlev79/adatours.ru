@@ -9,7 +9,8 @@ destinationType: city
 summary: Хулиака в Перу, город и воздушная точка маршрутов к Пуно и озеру Титикака.
 hero:
   src: /media/tours/manyashchij-peru-i-ikitos/juliaca-place-generated-20261009-v1.webp
-  alt: Город Хулиака на открытой андской равнине
+  hover: "Хулиака: невысокие здания перед пологими сухими холмами"
+  alt: "Плотная городская застройка Хулиаки на сухой андской равнине, Перу"
 gallery: []
 themes:
 - theme_culture

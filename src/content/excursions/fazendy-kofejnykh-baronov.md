@@ -15,7 +15,8 @@ hero:
   alt: "Красные домики фазенды и подвешенный гамак среди деревьев и зеленого сада, Бразилия"
 gallery:
   - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-0-src-enhanced-20261007.webp"
-    alt: ""
+    hover: "Женщина с косой на фоне белого дома и пальм"
+    alt: "Женщина в старинном светлом платье с крестиком у колониального дома"
   - src: "/media/excursions/fazendy-kofejnykh-baronov/gallery-1-src-enhanced-20261007.webp"
     alt: "Круглая россыпь обжаренных кофейных зерен на грубой ткани"
     hover: "Коричневые кофейные зерна на светлой мешковине"

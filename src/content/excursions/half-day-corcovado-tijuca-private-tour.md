@@ -16,7 +16,8 @@ currency: "USD"
 priceNote: "Стоимость — $188 на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
   src: "/media/excursions/half-day-corcovado-tijuca-private-tour/hero-src-enhanced-20261007.webp"
-  alt: "Индивидуальный тур на Корковадо& Тижука"
+  hover: "Лес Тижука: зеленые склоны под облаками у моря"
+  alt: "Лесистые горы и облака над скалистой вершиной в районе леса Тижука, Бразилия"
 gallery:
   - src: "/media/excursions/half-day-corcovado-tijuca-private-tour/gallery-0-src-enhanced-20261007.webp"
     hover: "Пассажиры открытого внедорожника на дороге в тропическом лесу"

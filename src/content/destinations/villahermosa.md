@@ -9,7 +9,8 @@ destinationType: city
 summary: Вильяэрмоса, столица мексиканского Табаско с городскими парками и водными пейзажами.
 hero:
   src: /media/tours/bolshie-meksikanskie-kanikuly/villahermosa-place-generated-20261009-v1.webp
-  alt: Городской парк и водный пейзаж Вильяэрмосы
+  hover: "Вильяэрмоса: пальмы у воды на фоне городских зданий"
+  alt: "Зеленая прогулочная дорожка у городской лагуны Вильяэрмосы, Мексика"
 gallery: []
 themes:
 - theme_culture

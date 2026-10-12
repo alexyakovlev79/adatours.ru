@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Хесус в Парагвае, историческое место с руинами иезуитской миссии Хесус-де-Таваранге.
 hero:
   src: /media/tours/klassicheskij-paragvaj/jesus-place-generated-20261009-v1.webp
-  alt: Каменные руины миссии Хесус-де-Таваранге
+  hover: "Хесус-де-Таваранге: зеленый газон внутри церкви без крыши"
+  alt: "Каменные стены и арочные проемы руин миссии Хесус-де-Таваранге, Парагвай"
 gallery: []
 themes:
 - theme_culture

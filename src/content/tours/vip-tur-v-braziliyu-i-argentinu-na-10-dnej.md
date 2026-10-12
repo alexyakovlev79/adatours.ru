@@ -41,7 +41,8 @@ itinerary:
     Для ужина рекомендован ресторан **Cipriani** в отеле, отмеченный звездой Michelin.
   images:
   - src: /media/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej/itinerary-day-1-enhanced-20261006.webp
-    alt: 'На фото: лучшие пляжи Рио-де-Жанейро, Бразилия'
+    hover: "Рио-де-Жанейро: ряд серфбордов у моря на фоне гор"
+    alt: "Разноцветные доски для серфинга на песчаном пляже Рио-де-Жанейро, Бразилия"
 - day: 2
   title: Сахарная Голова, исторический центр и обед Fogo de Chao
   places:

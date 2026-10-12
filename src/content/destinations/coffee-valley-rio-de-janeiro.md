@@ -14,7 +14,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_brazil_dolina_kofe_rio_de_zhanejro/hero-generated-20261008-resumed.webp
-  alt: Долина кофе (Рио-де-Жанейро) — Бразилия
+  hover: "Долина кофе: кофейные посадки на фоне лесистых холмов"
+  alt: "Ряды кофейных кустов на зеленых склонах Долины кофе, Бразилия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

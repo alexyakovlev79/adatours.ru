@@ -9,7 +9,8 @@ destinationType: city
 summary: Альмиранте в Панаме, прибрежный город и точка переправы к острову Колон в Бокас-дель-Торо.
 hero:
   src: /media/tours/luchshee-v-paname/almirante-place-generated-20261009-v1.webp
-  alt: Причалы и пассажирские лодки Альмиранте
+  hover: "Альмиранте: портовые домики и лодки на спокойной воде"
+  alt: "Пассажирские лодки у деревянных причалов Альмиранте, Панама"
 gallery: []
 themes:
 - theme_culture

@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Руко-Пичинча — вершина в горном районе Кито. Треккинг сюда добавляет к городской программе прогулку по высокогорным склонам и видам на окружающие Анды.
 hero:
   src: /media/destinations/rucu-pichincha-volcano/hero-generated-20261009-root-v1.webp
-  alt: Тропа к скалистой вершине Руко-Пичинча
+  hover: "Руко-Пичинча: горная тропа над облаками"
+  alt: "Тропа по травянистому гребню к скалистой вершине Руко-Пичинча, Эквадор"
 gallery: []
 themes:
 - theme_wildlife

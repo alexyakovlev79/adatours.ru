@@ -193,7 +193,8 @@ currency: USD
 priceNote: От $2 539 на человека при трехместном размещении в отелях 3*. Двухместное размещение — от $2 747 на человека.
 hero:
   src: /media/tours/braziliya-s-vodopadami-na-novyj-god/archive-61-src-enhanced-20261008.webp
-  alt: 'На фото: Новогодний салют на пляже в Рио-де-Жанейро'
+  hover: "Копакабана: красные фейерверки над женщинами у ночного моря"
+  alt: "Три женщины в белом у волн под новогодним салютом на Копакабане, Бразилия"
 routeCountries:
 - country_brazil
 routeDestinations:

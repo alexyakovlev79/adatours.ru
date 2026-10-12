@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Водопады Агуа-Асуль в Чьяпасе, каскады с бирюзово-голубой водой среди тропической растительности.
 hero:
   src: /media/tours/meksika-fantasticheskaya/agua-azul-waterfalls-place-generated-20261009-v1.webp
-  alt: Бирюзовые каскады водопадов Агуа-Асуль
+  hover: "Агуа-Асуль: белые потоки над широкими бирюзовыми бассейнами"
+  alt: "Ступенчатые каскады Агуа-Асуль с бирюзовой водой среди леса, Мексика"
 gallery: []
 themes:
 - theme_wildlife

@@ -8,7 +8,7 @@ countryId: "country_colombia"
 destinationType: "city"
 summary: "Археологический парк Сан-Августин хранит древние статуи, гробницы и мегалитические монументы. Этот памятник доколумбовой культуры входит в список ЮНЕСКО."
 searchAliases: []
-hero: {"src":"/media/destinations/san-agustin/hero-enhanced-20261003.webp","alt":"На фото: река Магдалена и Сан Августин в Колумбии"}
+hero: {"src":"/media/destinations/san-agustin/hero-enhanced-20261003.webp","alt":"Река Магдалена между зелеными берегами и скалами у Сан-Августина, Колумбия", hover: "Сан-Августин: золотистые скалы над извилистой рекой"}
 gallery: []
 relatedDestinations: []
 featuredTours: []

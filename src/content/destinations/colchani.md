@@ -14,7 +14,8 @@ themes:
 - theme_culture
 hero:
   src: /media/destinations/destination_bolivia_kolchani/hero-generated-20261008.webp
-  alt: Colchani beside Salar de Uyuni — Bolivia
+  hover: "Кольчани: соляные конусы на ровной белой поверхности"
+  alt: "Белые кучки соли на солончаке у Кольчани, Боливия"
 gallery: []
 relatedDestinations: []
 featuredTours: []

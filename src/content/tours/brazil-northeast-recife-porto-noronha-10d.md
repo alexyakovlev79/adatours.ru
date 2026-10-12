@@ -29,7 +29,8 @@ currency: USD
 dates: []
 hero:
   src: /media/tours/brazil-northeast-recife-porto-noronha-10d/hero-enhanced-20260930.webp
-  alt: Натуральные бассейны Порту-де-Галиньяс
+  hover: "Порту-де-Галиньяс: лодки и паруса у каменистого мелководья"
+  alt: "Небольшие лодки в бирюзовой воде Порту-де-Галиньяс, Бразилия"
 gallery: []
 featured: false
 priority: 90

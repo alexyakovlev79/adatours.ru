@@ -7,7 +7,8 @@ status: approved
 role: Основатель и CEO Ada Tours
 photo:
   src: /media/people/anna-avanesova/photo-provided-20261009-v1.jpg
-  alt: Анна Аванесова, основатель и CEO Ada Tours
+  hover: "Анна Аванесова: портрет основательницы Ada Tours"
+  alt: "Портрет Анны Аванесовой, основательницы Ada Tours"
 languages: []
 expertise:
   - Бразилия

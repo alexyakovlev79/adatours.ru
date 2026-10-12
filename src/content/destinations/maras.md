@@ -9,7 +9,8 @@ destinationType: natural_area
 summary: Марас в Священной долине Перу, поселение с соляными бассейнами на горном склоне.
 hero:
   src: /media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/maras-place-generated-20261009-v1.webp
-  alt: Соляные бассейны Мараса на горном склоне
+  hover: "Марас: сотни небольших бассейнов среди сухих гор"
+  alt: "Светлые соляные бассейны Мараса ступенями покрывают горный склон, Перу"
 gallery: []
 themes:
 - theme_culture

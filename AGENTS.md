@@ -1,5 +1,7 @@
 # Ada Tours: рабочий вход
 
+**Очередь экспертных SEO/GEO-текстов:** `docs/workflows/seo-geo-registry.md`, исходный индекс `data/seo-geo/registry/index.json` и семь файлов `data/seo-geo/registry/01-*.json` … `07-*.json`. Лист `SEO-GEO тексты` в общей таблице страниц: https://docs.google.com/spreadsheets/d/1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc/edit#gid=1993101426. При добавлении новой сущности/каталога или длинного SEO/GEO-текста добавлять и актуализировать соответствующую строку JSON и таблицы по каноническому URL, строго сохраняя порядок приоритетов. Исчезнувшие URL и архивные записи не удалять; `/page/2/` и далее не включать. SEO/GEO-исследование ведется независимо от Анны; MICE/DMC и другие отдельные коммерческие страницы вне этой очереди. Создание сущности не означает автоматического написания SEO/GEO-статьи.
+
 **Встроенные фото Word/PDF:** `docs/audits/word-photo-enhancement-queue-20261011.md` и `data/audits/word-photo-enhancement-queue-20261011.json` — сверка 11.10.2026: 76 уникальных Word-фото и отдельно 46 PDF-фото, без подтвержденного GPT Image; 221 действующий слот листа `Фото` помечен `NEEDS_REPLACEMENT`. Для «следующих 10 фото из Word» выбирать `origin: word_embedded` по `documentQueueOrder`; для всей очереди документов — `queueOrder`. Перед каждым пакетом сверять текущий слот/архив/реестр и переиспользовать уже готовый enhancement. WebP-конвертация, S3 receipt и первоначальный статус `REPLACED` не подтверждают улучшение. Архив исключать.
 
 **Главные впечатления туров:** `docs/audits/tour-highlights.md` и `data/audits/tour-highlights-20261011.json` — рабочая очередь иллюстраций, срез 11.10.2026. Брать `workStatus: pending` по `queueOrder`, перед работой сверять актуальный MD и архив; правило генерации — `docs/workflows/highlights.md`. Существующие title/text сохранять; после подключения фото обновлять затронутую запись очереди и счетчики. Обычное создание тура эту очередь не запускает.
@@ -16,6 +18,7 @@
 
 | Задача | Workflow |
 |---|---|
+| Написать экспертный SEO/GEO-текст или обновить очередь | `docs/workflows/seo-geo-registry.md` |
 | Разметка интересов / тематические страницы | `docs/workflows/interests.md` |
 | Общая форма и ее контекст | `docs/workflows/forms.md` |
 | Страна | `docs/workflows/countries.md` |

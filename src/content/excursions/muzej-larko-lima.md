@@ -10,6 +10,8 @@ searchAliases:
 - Музей Ларко
 country: country_peru
 destination: destination_peru_lima
+relatedDestinations:
+- destination_peru_larco_museum
 language: []
 priceFrom: 50
 currency: USD

@@ -3,22 +3,22 @@
     "schemaVersion": 1,
     "counts": {
       "types": {
-        "destination": 981,
+        "destination": 982,
         "tour": 388,
-        "excursion": 395,
+        "excursion": 396,
         "country": 24
       },
       "media": {
-        "ready": 1077,
+        "ready": 1078,
         "generated": 481,
-        "existing_enhanced_preserved": 134,
+        "existing_enhanced_preserved": 135,
         "provided_originals": 71
       },
       "rawDonorUrls": 696,
       "activeTypes": {
-        "destination": 981,
+        "destination": 982,
         "tour": 352,
-        "excursion": 394,
+        "excursion": 395,
         "country": 24
       },
       "archivedTypes": {
@@ -67,7 +67,7 @@
       }
     },
     "sourcePolicy": "Use the per-entity selected Drive file and raw URLs. No source discovery, donor crawl, photo download, or whole-index rebuild during ordinary ingestion.",
-    "entityCount": 1788
+    "entityCount": 1790
   },
   "entries": [
     {
@@ -27961,6 +27961,9 @@
       "legacyUrls": [
         "/ekskursii/muzej-larko-lima/",
         "/peru/lima/muzej-larko-lima/"
+      ],
+      "relatedDestinationIds": [
+        "destination_peru_larco_museum"
       ]
     },
     {
@@ -57766,7 +57769,8 @@
         "destination_bolivia_ostrov_inka_huasi",
         "destination_bolivia_chantani_museum",
         "destination_bolivia_la_paz_witches_market",
-        "destination_bolivia_vulkan_tunupa"
+        "destination_bolivia_vulkan_tunupa",
+        "destination_peru_larco_museum"
       ],
       "sourceUrl": null,
       "primaryThemes": [
@@ -58178,6 +58182,58 @@
         "theme_culture",
         "theme_wildlife"
       ]
+    },
+    {
+      "id": "excursion_peru_sacred_valley_pisac_awanakancha_ollantaytambo",
+      "type": "excursion",
+      "name": "Священная долина: Писак, Ауанаканча и Ольянтайтамбо",
+      "url": "/peru/cusco/sacred-valley-pisac-awanakancha-ollantaytambo/",
+      "slug": "sacred-valley-pisac-awanakancha-ollantaytambo",
+      "contentPath": "src/content/excursions/sacred-valley-pisac-awanakancha-ollantaytambo.md",
+      "countryIds": [
+        "country_peru"
+      ],
+      "destinationIds": [
+        "destination_peru_cusco"
+      ],
+      "sourceUrl": null,
+      "themes": [
+        "theme_wildlife",
+        "theme_culture"
+      ],
+      "status": "approved",
+      "aliases": [],
+      "relatedDestinationIds": [
+        "destination_peru_pisak",
+        "destination_peru_auanakancha",
+        "destination_peru_olyantajtambo",
+        "destination_peru_svyaschennaya_dolina_inkov"
+      ],
+      "entryPath": "data/source-index/entries/excursion_peru_sacred_valley_pisac_awanakancha_ollantaytambo.json"
+    },
+    {
+      "id": "destination_peru_larco_museum",
+      "type": "destination",
+      "name": "Музей Ларко",
+      "url": "/peru/place/larco-museum/",
+      "slug": "larco-museum",
+      "contentPath": "src/content/destinations/larco-museum.md",
+      "countryIds": [
+        "country_peru"
+      ],
+      "destinationIds": [
+        "destination_peru_larco_museum"
+      ],
+      "sourceUrl": null,
+      "themes": [
+        "theme_culture"
+      ],
+      "status": "approved",
+      "aliases": [
+        "Museo Larco",
+        "Larco Museum"
+      ],
+      "entryPath": "data/source-index/entries/destination_peru_larco_museum.json"
     }
   ]
 }

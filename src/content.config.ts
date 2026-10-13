@@ -177,6 +177,7 @@ const tours = defineCollection({
         z.object({
           type: z.literal('excursion'),
           excursionRef: z.string(),
+          text: z.string().optional(),
         }),
       ])).default([]),
       image: z.union([z.string(), mediaObject]).optional(),

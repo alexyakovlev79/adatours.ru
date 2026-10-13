@@ -18,7 +18,7 @@ interface MediaItem {
 type ContentBlock =
   | { type: 'text'; text: string }
   | { type: 'section'; title: string; text: string }
-  | { type: 'excursion'; excursionRef: string };
+  | { type: 'excursion'; excursionRef: string; text?: string };
 
 interface Day {
   day?: number;
@@ -223,7 +223,9 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
                         data-image-text-align={excursion.imageTextAlign}
                       >
                         <h3><a class="day__excursion-link" href={withBase(excursion.href)}>{excursion.title}</a></h3>
-                        {excursion.bodyHtml
+                        {block.text?.trim()
+                          ? <div class="excursion-embed__body">{splitParagraphs(block.text).map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}</div>
+                          : excursion.bodyHtml
                           ? <div class="excursion-embed__body" set:html={excursion.bodyHtml} />
                           : <p><InlineMarkdown text={excursion.lead} /></p>
                         }

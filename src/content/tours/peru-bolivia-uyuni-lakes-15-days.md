@@ -60,6 +60,7 @@ destinations:
 - destination_bolivia_gejzery_sol_de_manyana
 - destination_bolivia_termalnye_istochniki_polkes
 - destination_bolivia_laguna_verde
+- destination_peru_larco_museum
 routeDestinations:
 - destination_peru_lima
 - destination_peru_cusco
@@ -327,7 +328,7 @@ itinerary:
 
       Для поездки за пределы города предлагаются 2 дополнительные экскурсии.'
   - type: excursion
-    excursionRef: excursion_peru_sacred_valley_full_day
+    excursionRef: excursion_peru_sacred_valley_pisac_awanakancha_ollantaytambo
     text: 'Поездка на полный день в Священную долину стоит $220 на человека.
 
 

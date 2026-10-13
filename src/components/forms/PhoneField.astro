@@ -1,9 +1,12 @@
 ---
 import { PHONE_COUNTRIES } from '../../data/phone-countries';
+import { withBase } from '../../lib/paths';
 
 const DEFAULT_ISO = 'ru';
 const defaultCountry = PHONE_COUNTRIES.find((country) => country.iso2 === DEFAULT_ISO) ?? PHONE_COUNTRIES[0];
-const flagUrl = (iso2: string) => `https://flagcdn.com/24x18/${iso2}.png`;
+const flagUrl = (iso2: string) => withBase(`/phone-flags/${iso2 === 'mb' ? 'mx' : iso2}.png`);
+const defaultIndex = PHONE_COUNTRIES.findIndex((country) => country.iso2 === DEFAULT_ISO);
+const initialFlagIsos = new Set(PHONE_COUNTRIES.slice(Math.max(0, defaultIndex - 8), defaultIndex + 9).map((country) => country.iso2));
 const placeholderFromMask = (country: { mask: string; dial: string }) => {
   const rest = country.mask.startsWith(country.dial) ? country.mask.slice(country.dial.length) : country.mask;
   const pattern = rest.replace(/^[\s-]+/, '');
@@ -71,6 +74,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
               height="18"
               referrerpolicy="no-referrer"
               data-phone-option-flag
+              src={initialFlagIsos.has(country.iso2) ? flagUrl(country.iso2) : undefined}
               data-phone-option-flag-src={flagUrl(country.iso2)}
               hidden
             />
@@ -87,7 +91,8 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
 </div>
 
 <script>
-  const flagUrl = (iso2) => `https://flagcdn.com/24x18/${iso2}.png`;
+  import { withBase } from '../../lib/paths';
+  const flagUrl = (iso2) => withBase(`/phone-flags/${iso2 === 'mb' ? 'mx' : iso2}.png`);
   const maskParts = (mask, dial) => {
     const rest = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
     const pattern = rest.replace(/^[\s-]+/, '');
@@ -202,30 +207,44 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       if (focusInput) input.focus();
     };
 
-    let optionFlagsHydrated = false;
-    const hydrateOptionFlags = () => {
-      if (optionFlagsHydrated) return;
-      optionFlagsHydrated = true;
-      menu.querySelectorAll('[data-phone-option-flag]').forEach((image) => {
-        if (!(image instanceof HTMLImageElement)) return;
-        const source = image.dataset.phoneOptionFlagSrc;
-        if (!source) return;
-
-        const showFallback = () => {
-          image.hidden = true;
-        };
-        const showImage = () => {
-          image.hidden = false;
-        };
-        image.addEventListener('error', showFallback, { once: true });
-        image.addEventListener('load', showImage, { once: true });
-        image.src = source;
-        if (image.complete && image.naturalWidth > 0) showImage();
+    let flagObserver;
+    const loadOptionFlag = (image) => {
+      if (!(image instanceof HTMLImageElement) || image.hasAttribute('src')) return;
+      const source = image.dataset.phoneOptionFlagSrc;
+      if (!source) return;
+      image.src = source;
+      if (image.complete && image.naturalWidth > 0) image.hidden = false;
+    };
+    const loadNearbyFlags = () => {
+      if (!menu.classList.contains('is-open') || 'IntersectionObserver' in window) return;
+      const bounds = menu.getBoundingClientRect();
+      menu.querySelectorAll('[data-phone-option-flag]:not([src])').forEach((image) => {
+        const rect = image.parentElement.getBoundingClientRect();
+        if (rect.bottom >= bounds.top - 320 && rect.top <= bounds.bottom + 320) loadOptionFlag(image);
       });
     };
+    const observeOptionFlags = () => {
+      if (!menu.classList.contains('is-open')) return;
+      if (flagObserver) flagObserver.disconnect();
+      if ('IntersectionObserver' in window) {
+        flagObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting || !menu.classList.contains('is-open')) return;
+            loadOptionFlag(entry.target.querySelector('[data-phone-option-flag]'));
+            flagObserver.unobserve(entry.target);
+          });
+        }, { root: menu, rootMargin: '320px 0px' });
+        menu.querySelectorAll('[data-phone-option-flag]:not([src])').forEach((image) => {
+          // Images are hidden while pending; observe their visible-sized wrappers.
+          flagObserver.observe(image.parentElement);
+        });
+      } else {
+        loadNearbyFlags();
+      }
+    };
+    menu.addEventListener('scroll', loadNearbyFlags, { passive: true });
 
     toggle.addEventListener('click', () => {
-      hydrateOptionFlags();
       const open = !menu.classList.contains('is-open');
       menu.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
@@ -233,7 +252,11 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       if (open) {
         const selected = menu.querySelector(`[data-phone-option][data-iso2="${input.dataset.iso2}"]`);
         if (selected instanceof HTMLElement) {
-          setTimeout(() => selected.scrollIntoView({ block: 'center' }), 0);
+          setTimeout(() => {
+            if (!menu.classList.contains('is-open')) return;
+            menu.scrollTop = Math.max(0, selected.offsetTop - (menu.clientHeight - selected.offsetHeight) / 2);
+            observeOptionFlags();
+          }, 0);
         }
       }
     });

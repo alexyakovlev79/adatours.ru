@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-14",
+  "site": "https://adatours.ru",
+  "sheet": {
+    "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
+    "sheetName": "SEO-GEO тексты",
+    "sheetId": 1993101426
+  },
+  "rules": {
+    "order": "Strictly top-to-bottom by order; do not skip eligible earlier rows",
+    "pagination": "Only canonical page 1: never record /page/N/ as writing target",
+    "neverDelete": true,
+    "sourceIndependence": "Research using existing Ada Tours content plus verified independent sources; Anna approval is not a prerequisite",
+    "excludedScopes": [
+      "mice",
+      "dmc",
+      "commercial",
+      "legal",
+      "team",
+      "cases"
+    ]
+  },
+  "statusKeys": {
+    "queued": "В очереди",
+    "waiting_for_page": "Ждет страницу",
+    "archived": "Архив",
+    "not_in_active_theme_registry": "Вне 13 интересов",
+    "draft": "Пишется",
+    "prepared": "Текст готов",
+    "published": "Опубликовано",
+    "paused": "Отложено",
+    "temporarily_unavailable": "Временно недоступна"
+  },
+  "phases": [
+    {
+      "phase": 1,
+      "name": "Страны",
+      "path": "data/seo-geo/registry/01-countries.json",
+      "rows": 25,
+      "orderFirst": 1,
+      "orderLast": 25
+    },
+    {
+      "phase": 2,
+      "name": "Интересы",
+      "path": "data/seo-geo/registry/02-interests.json",
+      "rows": 41,
+      "orderFirst": 26,
+      "orderLast": 66
+    },
+    {
+      "phase": 3,
+      "name": "Страна + интерес",
+      "path": "data/seo-geo/registry/03-country-interest.json",
+      "rows": 119,
+      "orderFirst": 67,
+      "orderLast": 185
+    },
+    {
+      "phase": 4,
+      "name": "Страна + интерес + VIP",
+      "path": "data/seo-geo/registry/04-country-interest-vip.json",
+      "rows": 92,
+      "orderFirst": 186,
+      "orderLast": 277
+    },
+    {
+      "phase": 5,
+      "name": "Туры",
+      "path": "data/seo-geo/registry/05-tours.json",
+      "rows": 1692,
+      "orderFirst": 278,
+      "orderLast": 1969
+    },
+    {
+      "phase": 6,
+      "name": "Места",
+      "path": "data/seo-geo/registry/06-places.json",
+      "rows": 1018,
+      "orderFirst": 1970,
+      "orderLast": 2987
+    },
+    {
+      "phase": 7,
+      "name": "Экскурсии",
+      "path": "data/seo-geo/registry/07-excursions.json",
+      "rows": 818,
+      "orderFirst": 2988,
+      "orderLast": 3805
+    }
+  ],
+  "totalRows": 3805,
+  "excludedPagination": true,
+  "snapshotSources": [
+    "data/external-identity/index.json",
+    "data/external-identity/vip-catalogues.json",
+    "data/source-index/catalogs/",
+    "src/data/interest-registry.json",
+    "Google Sheet: Страницы"
+  ]
+}

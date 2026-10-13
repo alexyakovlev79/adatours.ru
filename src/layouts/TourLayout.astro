@@ -102,8 +102,8 @@ const metaDescription = /достопримечательност/iu.test(d.titl
   : d.lead;
 const mainCountryEntries = mainTourCountryIds(d).map((id) => countryById.get(id)).filter(Boolean);
 const placeGroups = [
-  { label: 'Места маршрута', entries: mainPlaces },
-  { label: 'Места дополнительных экскурсий', entries: optionalPlaces },
+  { label: 'Места маршрута', entries: mainPlaces, collapsible: true },
+  { label: 'Места дополнительных экскурсий', entries: optionalPlaces, collapsible: false },
 ];
 const durationLabel = d.durationDays
   ? `${d.durationDays} ${pluralRu(d.durationDays, 'день', 'дня', 'дней')}`
@@ -188,20 +188,22 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
           </ul>
         </nav>
       )}
-      {placeGroups.filter((group) => group.entries.length).map((group, groupIndex) => (
-        <nav class="tour-links__group" aria-label={group.label} data-tour-places>
+      {placeGroups.filter((group) => group.entries.length).map((group) => (
+        <nav class="tour-links__group" aria-label={group.label} data-tour-places={group.collapsible ? '' : undefined}>
           <p class="tour-links__label">{group.label}</p>
-          <ul id={'tour-places-' + d.id + '-' + groupIndex} data-tour-places-list>
+          <ul id={group.collapsible ? 'tour-places-' + d.id : undefined} data-tour-places-list={group.collapsible ? '' : undefined}>
             {group.entries.map((item) => (
               <li>{item.href ? <a href={withBase(item.href)}>{item.name}</a> : <span>{item.name}</span>}</li>
             ))}
           </ul>
-          <button class="tour-links__more" type="button" aria-expanded="false" aria-controls={'tour-places-' + d.id + '-' + groupIndex} data-tour-places-toggle hidden>
-            <span data-tour-places-label>Все достопримечательности</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </button>
+          {group.collapsible && (
+            <button class="tour-links__more" type="button" aria-expanded="false" aria-controls={'tour-places-' + d.id} data-tour-places-toggle hidden>
+              <span data-tour-places-label>Все достопримечательности</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          )}
         </nav>
       ))}
       {linkedInterests.length > 0 && (
@@ -323,7 +325,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
         const items = Array.from(list.children) as HTMLLIElement[];
         // Count actual flex rows, not places: the number varies with screen width.
         const rowTops = [...new Set(items.map((item) => item.offsetTop))].sort((a, b) => a - b);
-        const hasMore = matchMedia('(max-width: 760px)').matches && rowTops.length >= 4;
+        const hasMore = matchMedia('(max-width: 760px)').matches && rowTops.length >= 5;
 
         if (hasMore) {
           const thirdRow = items.filter((item) => item.offsetTop === rowTops[2]);

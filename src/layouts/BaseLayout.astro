@@ -58,7 +58,15 @@ const favicon32Url = withBase('/favicon-32x32.png');
 const favicon16Url = withBase('/favicon-16x16.png');
 const faviconIcoUrl = withBase('/favicon.ico');
 const appleTouchIconUrl = withBase('/apple-touch-icon.png');
-const ogImageUrl = image ? new URL(withBase(image), Astro.site ?? SITE.url).toString() : undefined;
+// Some editorial pages provide a Hero image without BaseLayout.image.
+// Use the already-rendered Hero to give these pages an Open Graph source.
+const renderedBody = await Astro.slots.render('default');
+const heroTag = (renderedBody.match(/<img\b[^>]*>/gi) || []).find((tag) =>
+  /\bclass=["'][^"']*\bhero__media\b/i.test(tag)
+);
+const heroSrc = heroTag?.match(/\bsrc=["']([^"']+)["']/i)?.[1];
+const ogSource = image || heroSrc || '/media/home/hero-rio-generated-20261008-v2.webp';
+const ogImageUrl = new URL(withBase(ogSource), Astro.site ?? SITE.url).toString();
 const robotsContent = (isPreview || noindex)
   ? 'noindex, nofollow'
   : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
@@ -112,7 +120,7 @@ const breadcrumbSchemas = !noindex && showBreadcrumbs && (segments.length > 0 ||
 // Render exactly once. The graph describes this same HTML, including current card slices.
 // Legacy child JSON-LD is consumed and removed, preventing duplicate Person/Trip graphs.
 const schema = await pageStructuredData({
-  root: rootUrl, html: await Astro.slots.render('default'), path: logicalPath,
+  root: rootUrl, html: renderedBody, path: logicalPath,
   url: canonicalUrl, title: fullTitle, description, lang, image: ogImageUrl,
   breadcrumbs: breadcrumbSchemas, extra: pageSchema,
 });

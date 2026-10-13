@@ -25,6 +25,7 @@ env:
   SITE_ORIGIN: https://adatours.ru
   SITE_BASE: /
   MEDIA_CDN_ORIGIN: https://img.adatours.ru
+  SOCIAL_PREVIEW_REQUIRED: '1'
 
 jobs:
   media:
@@ -52,10 +53,34 @@ jobs:
   build:
     needs: media
     runs-on: ubuntu-latest
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Obtain short-lived IAM token for social preview S3 uploads
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${YC_SA_ID:-}" || { echo "::error::Missing YC_MEDIA_SA_ID"; exit 1; }
+          oidc_json="$(curl --fail --silent --show-error --get \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            --data-urlencode "audience=https://github.com/alexyakovlev79" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
+          oidc_token="$(jq -er '.value' <<< "${oidc_json}")"
+          echo "::add-mask::${oidc_token}"
+          iam_json="$(curl --fail --silent --show-error \
+            -X POST 'https://auth.yandex.cloud/oauth/token' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
+            --data-urlencode "audience=${YC_SA_ID}" \
+            --data-urlencode "subject_token=${oidc_token}" \
+            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          iam_token="$(jq -er '.access_token' <<< "${iam_json}")"
+          echo "::add-mask::${iam_token}"
+          echo "YC_IAM_TOKEN=${iam_token}" >> "${GITHUB_ENV}"
       - name: Install, build, and upload Astro site
         uses: withastro/action@v6
         with:

@@ -7,6 +7,8 @@ import SiteHeader from '../components/global/SiteHeader.astro';
 import SiteFooter from '../components/global/SiteFooter.astro';
 import CookieNotice from '../components/global/CookieNotice.astro';
 import LeadForm from '../components/forms/LeadForm.astro';
+import SeoGeoSection from '../components/editorial/SeoGeoSection.astro';
+import { loadSeoGeoArticle } from '../lib/seo-geo-articles';
 import SearchOverlay from '../components/global/SearchOverlay.astro';
 import Breadcrumbs from '../components/global/Breadcrumbs.astro';
 import { SITE } from '../lib/site';
@@ -95,6 +97,12 @@ const breadcrumbLabels: Record<string, string> = {
   mendoza: 'Мендоса', cusco: 'Куско', 'machu-picchu': 'Мачу-Пикчу', lima: 'Лима',
 };
 const pageTitle = title.replace(/\s*[|–—-]\s*Ada Tours.*$/i, '').trim();
+// Only published, canonical first pages receive an additional SEO/GEO article.
+// Articles are compiled into HTML at build time, without client-side fetching.
+const seoGeoArticle = !noindex && lang === 'ru' && logicalPath !== '/' &&
+  !/\/page\/[0-9]+\/?$/.test(logicalPath)
+  ? await loadSeoGeoArticle(logicalPath, pageTitle)
+  : null;
 const ogType = /^\/(?:articles|cases)\/[^/]+\/$/.test(logicalPath)
   ? 'article'
   : /^\/team\/[^/]+\/$/.test(logicalPath) ? 'profile' : 'website';
@@ -180,6 +188,7 @@ const schema = await pageStructuredData({
     )}
     <main>
       <Fragment set:html={deferImages(schema.html)} />
+      {seoGeoArticle && <SeoGeoSection article={seoGeoArticle} />}
       <div id="request" data-lead-location="footer" data-interest-section={leadEntityId?.startsWith('theme_') ? 'cta' : undefined} data-pagefind-ignore>
         <LeadForm title={leadTitle} entityId={leadEntityId || logicalPath} tourId={leadTourId} pageUrl={canonicalUrl} locale={lang} />
       </div>

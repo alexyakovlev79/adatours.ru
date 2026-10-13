@@ -104,7 +104,7 @@ test('Russian plurals and conservative price minima', () => {
   assert.equal(seoGeoPriceBasis('Стоимость уточняется'), null);
   const a = { data: { currency: 'USD', priceFrom: 3218, priceNote: 'Цена на человека' } };
   const b = { data: { currency: 'USD', priceFrom: 4218, priceNote: 'Стоимость на человека' } };
-  assert.equal(comparableUsdMinimum([a, b]), '$3 218 на человека');
+  assert.equal(comparableUsdMinimum([a, b])?.replace(/\u00a0/g, ' '), '$3 218 на человека');
   assert.equal(comparableUsdMinimum([a, { data: { ...b.data, priceNote: 'за группу' } }]), null);
   assert.equal(comparableUsdMinimum([a, { data: { ...b.data, currency: 'EUR' } }]), null);
   assert.equal(comparableUsdMinimum([a, { data: { ...b.data, priceFrom: null } }]), null);

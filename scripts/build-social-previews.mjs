@@ -64,7 +64,7 @@ export function setSocialMetadata(html, url) {
   const match = /<head\b[^>]*>([\s\S]*?)<\/head>/i.exec(html);
   if (!match) throw new Error('HTML is missing its <head>');
   const inner = match[1].replace(/<meta\b[^>]*>/gi, (tag) =>
-    properties.has(attribute(tag, 'property')) || names.has(attribute(tag, 'name')) ? '' : tag);
+    properties.has(attribute(tag, 'property')) || names.has(attribute(tag, 'name')) ? '' : tag).trimEnd();
   const values = [
     ['property', 'og:image', url],
     ['property', 'og:image:secure_url', url],

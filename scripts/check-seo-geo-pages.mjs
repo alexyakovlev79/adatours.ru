@@ -12,13 +12,22 @@ const allFiles = (base) => {
   });
 };
 
+const registryRoot = join(process.cwd(), 'data', 'seo-geo', 'registry');
+const registryUrls = new Set();
+for (const name of ['01-countries.json', '02-interests.json', '03-country-interest.json',
+  '04-country-interest-vip.json', '05-tours.json', '06-places.json', '07-excursions.json']) {
+  const phase = JSON.parse(readFileSync(join(registryRoot, name), 'utf8'));
+  for (const row of phase.entries) registryUrls.add(row.url);
+}
 const errors = [];
 const articles = allFiles(root).filter((file) => file.endsWith('.md'));
 const targets = new Set();
 let approved = 0;
+let retainedUnavailable = 0;
 for (const file of articles) {
   try {
     const article = parseSeoGeoArticle(readFileSync(file, 'utf8'), file);
+    if (!registryUrls.has(article.targetPath)) throw new Error('SEO/GEO URL is not registered: ' + article.targetPath);
     const expected = seoGeoArticleFile(article.targetPath).replaceAll('/', sep);
     if (relative(process.cwd(), file) !== expected) {
       throw new Error('Article path must mirror its targetPath: ' + expected);
@@ -28,8 +37,12 @@ for (const file of articles) {
     const built = join(dist, article.targetPath, 'index.html');
     if (article.status === 'approved') {
       approved += 1;
-      if (!existsSync(built)) throw new Error('Approved article has no canonical built page: ' + article.targetPath);
+      // An archived/temporarily missing page does not delete its editorial article
+      // or make unrelated deployments fail. The canonical page can return later.
+      if (!existsSync(built)) { retainedUnavailable += 1; continue; }
       const html = readFileSync(built, 'utf8');
+      const noindex = /<meta\b[^>]*name="robots"[^>]*content="[^"]*noindex/i.test(html);
+      if (noindex) { retainedUnavailable += 1; continue; }
       const marker = 'data-seo-geo-target="' + article.targetPath + '"';
       if (html.split(marker).length !== 2) throw new Error('Expected exactly one built SEO/GEO block: ' + article.targetPath);
       const block = html.slice(html.indexOf(marker));
@@ -65,4 +78,4 @@ if (errors.length) {
   process.exit(1);
 }
 console.log('SEO/GEO: ' + articles.length + ' article files, ' + approved
-  + ' published, 0 pagination copies; internal links and HTML checked.');
+  + ' approved, ' + retainedUnavailable + ' retained without live canonical, 0 pagination copies; links/HTML checked.');

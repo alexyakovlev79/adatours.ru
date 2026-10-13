@@ -262,15 +262,13 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
         const firstParagraph = text.querySelector<HTMLElement>('p');
         const lead = text.querySelector<HTMLElement>('.tour-lead');
         const lineHeight = parseFloat(getComputedStyle(firstParagraph ?? text).lineHeight) || 30;
-        // End the collapsed preview at the lead: fade its last two lines.
-        // Descriptions without a lead retain the original ten-line preview.
+        // Show the full lead or seven lines, whichever is longer.
+        // Fade the last two visible lines before the expand button.
         const leadHeight = lead
           ? lead.getBoundingClientRect().bottom - text.getBoundingClientRect().top
           : 0;
-        const previewHeight = Math.ceil(lead ? leadHeight : lineHeight * 10);
-        const fadeHeight = lead
-          ? Math.min(lineHeight * 2, Math.max(0, leadHeight - lineHeight))
-          : lineHeight * 2.5;
+        const previewHeight = Math.ceil(Math.max(leadHeight, lineHeight * 7));
+        const fadeHeight = lineHeight * 2;
         const long = text.scrollHeight > previewHeight + lineHeight;
         text.style.setProperty('--tour-copy-preview-height', `${previewHeight}px`);
         text.style.setProperty('--tour-copy-fade-height', `${fadeHeight}px`);

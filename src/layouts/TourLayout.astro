@@ -143,7 +143,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   <Hero
     tour
     vip={vip}
-    eyebrow={archived ? "Архивный тур" : "Индивидуальный тур"}
+    eyebrow={archived ? "Архивный тур" : d.format === "Сборный" ? "Сборный тур" : "Индивидуальный тур"}
     title={d.title}
     image={d.hero?.src}
     imageTextAlign={d.imageTextAlign}

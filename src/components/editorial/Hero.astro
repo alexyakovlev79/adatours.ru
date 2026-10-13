@@ -10,7 +10,7 @@ interface Props {
   title: string;
   intro?: string;
   image?: string;
-  video?: { src: string };
+  video?: { src: string; mobileSrc?: string };
   imageTextAlign?: 'left' | 'right';
   ctaHref?: string;
   ctaLabel?: string;
@@ -72,7 +72,7 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
       referrerpolicy="no-referrer"
     />
   )}
-  {video && image && <HeroVideo src={video.src} poster={image} />}
+  {video && image && <HeroVideo src={video.src} mobileSrc={video.mobileSrc} poster={image} />}
   <div class="hero__overlay"></div>
   {hasBreadcrumbs && <div class="hero__breadcrumbs"><slot name="breadcrumbs" /></div>}
   <div class="hero__content">

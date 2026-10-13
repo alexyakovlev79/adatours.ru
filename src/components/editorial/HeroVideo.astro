@@ -1,11 +1,11 @@
 ---
 import { withBase } from '../../lib/paths';
-interface Props { src: string; poster: string }
-const { src, poster } = Astro.props;
+interface Props { src: string; mobileSrc?: string; poster: string }
+const { src, mobileSrc, poster } = Astro.props;
 ---
 
 <hero-background-video>
-  <video class="hero-video" data-src={withBase(src)} poster={withBase(poster)}
+  <video class="hero-video" data-src={withBase(src)} data-mobile-src={mobileSrc ? withBase(mobileSrc) : undefined} poster={withBase(poster)}
     muted loop autoplay playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
   <button class="hero-video-toggle" type="button" hidden aria-label="Приостановить видео">
     <span aria-hidden="true">Ⅱ</span>
@@ -20,20 +20,24 @@ const { src, poster } = Astro.props;
       const video = this.querySelector('video');
       const button = this.querySelector('button');
       if (!video || !button) return;
-      if (isPhoneDevice(navigator)) {
+      const phone = isPhoneDevice(navigator);
+      if (phone && !video.dataset.mobileSrc) {
         this.setAttribute('data-phone', '');
         return;
       }
       let visible = true;
       let pausedByUser = false;
       let failed = false;
+      const mobileViewport = matchMedia('(max-width: 720px)');
+      const selectSource = () => video.dataset.mobileSrc && (phone || mobileViewport.matches)
+        ? video.dataset.mobileSrc : video.dataset.src!;
       const updateButton = () => {
         button.setAttribute('aria-label', video.paused ? 'Воспроизвести видео' : 'Приостановить видео');
         button.firstElementChild!.textContent = video.paused ? '▶' : 'Ⅱ';
       };
       const play = () => {
         if (failed || pausedByUser || !visible || document.hidden) return;
-        if (!video.src) video.src = video.dataset.src!;
+        if (!video.getAttribute('src')) video.src = selectSource();
         video.muted = true;
         void video.play().catch(() => {
           button.hidden = false;
@@ -57,6 +61,18 @@ const { src, poster } = Astro.props;
       });
       const onVisibility = () => document.hidden ? video.pause() : play();
       document.addEventListener('visibilitychange', onVisibility);
+      const onViewportChange = () => {
+        if (!video.dataset.mobileSrc || !video.getAttribute('src')) return;
+        const next = selectSource();
+        if (video.getAttribute('src') === next) return;
+        video.pause();
+        video.classList.remove('is-playing');
+        failed = false;
+        video.src = next;
+        video.load();
+        play();
+      };
+      mobileViewport.addEventListener('change', onViewportChange);
       const observer = new IntersectionObserver(([entry]) => {
         visible = entry.isIntersecting;
         if (visible) play(); else video.pause();
@@ -65,6 +81,7 @@ const { src, poster } = Astro.props;
       this.cleanup = () => {
         observer.disconnect();
         document.removeEventListener('visibilitychange', onVisibility);
+        mobileViewport.removeEventListener('change', onViewportChange);
         video.pause();
       };
     }

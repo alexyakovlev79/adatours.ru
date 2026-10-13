@@ -10,6 +10,7 @@ import LeadForm from '../components/forms/LeadForm.astro';
 import SearchOverlay from '../components/global/SearchOverlay.astro';
 import Breadcrumbs from '../components/global/Breadcrumbs.astro';
 import { SITE } from '../lib/site';
+import { seoCompactTitle } from '../lib/seo-page.mjs';
 import { withBase } from '../lib/paths';
 import { expandBreadcrumbTrails, type BreadcrumbItem } from '../lib/routes';
 import { validateSiteContent } from '../lib/content-validation';
@@ -50,7 +51,8 @@ const {
 const canonicalUrl = canonical
   ? new URL(withBase(canonical), Astro.site ?? SITE.url).toString()
   : new URL(Astro.url.pathname, Astro.site ?? SITE.url).toString();
-const fullTitle = title.includes('Ada Tours') ? title : `${title} | Ada Tours`;
+const compactTitle = seoCompactTitle(title);
+const fullTitle = compactTitle.includes('Ada Tours') ? compactTitle : `${compactTitle} | Ada Tours`;
 const isPreview = import.meta.env.BASE_URL !== '/';
 const faviconSvgUrl = withBase('/favicon.svg');
 const favicon48Url = withBase('/favicon-48x48.png');

@@ -1,7 +1,7 @@
 ---
 import { themeIds } from '../lib/interest-model.mjs';
 import { getVipTourPaths } from '../lib/vip-catalog';
-import { seoTourTitle } from '../lib/seo-page.mjs';
+import { seoTourTitle, seoAttractionsDescription } from '../lib/seo-page.mjs';
 import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
 import ArchiveNotice from '../components/global/ArchiveNotice.astro';
 import Breadcrumbs from '../components/global/Breadcrumbs.astro';
@@ -97,6 +97,9 @@ const routeDestinations = d.destinations.map((id) => {
 const destinationNames = routeDestinations.map((item) => item.name);
 const mainPlaces = routeDestinations.filter((item) => mainTourDestinationIds(d).includes(item.id));
 const optionalPlaces = routeDestinations.filter((item) => optionalTourDestinationIds(d).includes(item.id));
+const metaDescription = /достопримечательност/iu.test(d.title)
+  ? seoAttractionsDescription(d.lead,mainPlaces.filter((place) => place.href).length,'в маршруте')
+  : d.lead;
 const mainCountryEntries = mainTourCountryIds(d).map((id) => countryById.get(id)).filter(Boolean);
 const placeGroups = [
   { label: 'Места маршрута', entries: mainPlaces },
@@ -121,7 +124,7 @@ const remainingBodyHtml = firstHeadingHtml ? tourBodyHtml.slice(firstHeadingHtml
 const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 ---
 
-<BaseLayout breadcrumbsInHero leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={seoTourTitle(d)} description={d.lead} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
+<BaseLayout breadcrumbsInHero leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={seoTourTitle(d)} description={metaDescription} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
   {!archived && <SearchIndexRecord
     title={d.title}
     summary={d.lead}

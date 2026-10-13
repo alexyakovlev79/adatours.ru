@@ -20,7 +20,7 @@ test("annual rollover at Moscow Jan 1",()=>{
  assert.equal(seoYearRange(new Date("2026-12-31T20:59:00Z")),"2026-2027");
  assert.equal(seoYearRange(new Date("2026-12-31T21:00:00Z")),"2027-2028");
  assert.equal(seoFill(SEO.country.title,{country:"Бразилия",numbers:[21,2,5],date:new Date("2026-10-09T12:00:00Z")}),
-  "Бразилия: 21 достопримечательность и 2 экскурсии. Каталог 5 туров и цены 2026-2027 туроператора Ada Tours");
+  "Бразилия: 21 локация и 2 экскурсии. Каталог 5 туров и цены 2026-2027 туроператора Ada Tours");
 });
 test("countries after 'по' use case",()=>{
  assert.equal(seoPopularCountriesAfterPo(["Бразилия","Аргентина","Перу"]),"Бразилии, Аргентине, Перу");
@@ -32,7 +32,8 @@ import {SEO_CASES,seoCountryCase,seoPlacePhrase,seoPlaceDirectionPhrase,seoInter
 import {seoCountryTitle,seoDestinationTitle,seoTourTitle,seoExcursionTitle,
  seoThemeHubTitle,seoThemeCatalogTitle,seoCountryTourCatalogTitle,
  seoCountryPlacesCatalogTitle,seoCountryExcursionsCatalogTitle,seoDestinationTourCatalogTitle,
- seoDestinationExcursionsCatalogTitle,seoExcursionTourCatalogTitle,seoPaginatedTitle,seoRelatedToursDescription
+ seoDestinationExcursionsCatalogTitle,seoExcursionTourCatalogTitle,seoPaginatedTitle,seoRelatedToursDescription,
+ seoCompactTitle,seoAttractionsDescription
 } from '../src/lib/seo-page.mjs';
 
 test('case table covers all known countries, themes, and destinations',()=>{
@@ -51,7 +52,7 @@ test('zero tours show destination availability while other missing counts stay h
  const one=seoCountryTitle('Перу',0,0,0);
  assert.ok(!one.includes('0 '));assert.ok(!one.includes(' и .'));
  const two=seoDestinationTitle('Самаипата','country_bolivia',0,0);
- assert.match(two,/Самаипата в Боливии: достопримечательности\. Пока нет туров в это место\./);
+ assert.match(two,/Самаипата в Боливии: локации\. Пока нет туров в это место\./);
  assert.ok(!two.includes('0 туров'));
  assert.equal(seoThemeHubTitle('Дайвинг',0),'Дайвинг — впечатления | Ada Tours');
  assert.equal(seoThemeHubTitle('Приключения',3),'Приключения — 3 тура и впечатления | Ada Tours');
@@ -60,7 +61,7 @@ test('zero tours show destination availability while other missing counts stay h
 test('SEO title cases and conditional prices',()=>{
  const place={id:'destination_bolivia_samaipata',name:'Самаипата',countryId:'country_bolivia'};
  assert.match(seoCountryTourCatalogTitle('country_brazil'),/по Бразилии/);
- assert.match(seoCountryPlacesCatalogTitle('country_brazil',21),/^21 достопримечательность Бразилии/);
+ assert.match(seoCountryPlacesCatalogTitle('country_brazil',21),/^21 локация Бразилии/);
  assert.match(seoCountryExcursionsCatalogTitle('country_belize',2),/^2 экскурсии в Белизе/);
  assert.match(seoDestinationTourCatalogTitle(place,4),/4 тура .* в Самаипате \(Боливии\)/);
  assert.match(seoDestinationTourCatalogTitle(place,4,true),/заехать в Самаипату/);
@@ -71,6 +72,29 @@ test('SEO title cases and conditional prices',()=>{
  assert.ok(!seoTourTitle({title:'Тур в Перу',priceFrom:null,currency:'USD'}).startsWith('Тур Тур'));
  assert.match(seoExcursionTitle({title:'Парк птиц',priceFrom:51,currency:'USD'},'country_brazil','destination_brazil_iguacu','Фоз-ду-Игуасу'),/Парк птиц в Фоз-ду-Игуасу, Бразилия, цена от \$51/);
  assert.ok(!seoExcursionTitle({title:'Полет',priceFrom:null},'country_brazil').includes('цена'));
+});
+
+test('SEO titles compact every grammatical case without changing source names',()=>{
+ const original='Достопримечательность, достопримечательности, достопримечательностей, достопримечательностям, достопримечательностями, достопримечательностях, достопримечательностью';
+ assert.equal(seoCompactTitle(original),'Локация, локации, локаций, локациям, локациями, локациях, локацией');
+ const tour={title:'Тур в Аргентину по лучшим достопримечательностям'};
+ assert.match(seoTourTitle(tour),/по лучшим локациям/);
+ assert.equal(tour.title,'Тур в Аргентину по лучшим достопримечательностям');
+ for(const [count,noun] of [[1,'локация'],[2,'локации'],[5,'локаций'],[11,'локаций'],[21,'локация'],[24,'локации']]) {
+  assert.match(seoCountryTitle('Бразилия',count,0,2),new RegExp(count+' '+noun));
+  assert.equal(seoFill('[число] локаци[й]',{numbers:[count]}),count+' '+noun);
+ }
+ assert.equal(seoFill('[число] локаци[й] и [число] экскурси[й]',{numbers:[0,2]}),'2 экскурсии');
+ assert.ok(!/достопримечательност/iu.test(seoFill(SEO.placesIndex.title,{numbers:[721]})));
+});
+
+test('descriptions retain the attraction keyword and exact nonzero place count',()=>{
+ for(const [count,noun] of [[1,'достопримечательность'],[2,'достопримечательности'],[5,'достопримечательностей'],[11,'достопримечательностей'],[21,'достопримечательность']]) {
+  assert.equal(seoAttractionsDescription('Выбирайте туры.',count,'Бразилии'),count+' '+noun+' Бразилии. Выбирайте туры.');
+ }
+ assert.equal(seoAttractionsDescription('Тур в Аргентину.',7,'в маршруте'),'7 достопримечательностей в маршруте. Тур в Аргентину.');
+ assert.equal(seoAttractionsDescription('Описание.',0),'Описание.');
+ assert.equal(seoAttractionsDescription('',0),'');
 });
 test('theme substitutions, year, and pagination title position',()=>{
  assert.match(seoThemeCatalogTitle('Дайвинг',7,'Бразилия'),/^Бразилия, Дайвинг: 7 туров/);

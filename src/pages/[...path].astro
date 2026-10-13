@@ -2,7 +2,8 @@
 import { createHash } from 'node:crypto';
 import { SEO, seoFill } from '../lib/seo-meta.mjs';
 import { seoCountryTourCatalogTitle, seoCountryPlacesCatalogTitle, seoCountryExcursionsCatalogTitle,
-  seoDestinationTourCatalogTitle, seoDestinationExcursionsCatalogTitle, seoExcursionTourCatalogTitle } from '../lib/seo-page.mjs';
+  seoDestinationTourCatalogTitle, seoDestinationExcursionsCatalogTitle, seoExcursionTourCatalogTitle, seoAttractionsDescription } from '../lib/seo-page.mjs';
+import { seoCountryCase } from '../lib/seo-grammar.mjs';
 import { isActiveEntity, isArchivedEntity } from '../lib/archive.mjs';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import CountryLayout from '../layouts/CountryLayout.astro';
@@ -92,7 +93,7 @@ export async function getStaticPaths() {
     mode: 'catalog', kind: 'destination', entries: destinations.filter((place) => activeCountryIds.has(place.data.countryId)),
     canonical: '/places/', variant: 'global-places',
     title: seoFill(SEO.placesIndex.title, { numbers: [destinations.filter((place) => activeCountryIds.has(place.data.countryId)).length] }),
-    description: SEO.placesIndex.description,
+    description: seoAttractionsDescription(SEO.placesIndex.description,destinations.filter((place) => activeCountryIds.has(place.data.countryId)).length,'Латинской Америки'),
     breadcrumbs: [{ label: 'Направления', href: '/places/' }],
     hero: '/media/home/patagonia-enhanced-20260930.webp',
   });
@@ -191,7 +192,7 @@ export async function getStaticPaths() {
       add(canonical, {
         mode: 'catalog', kind: 'destination', entries: places, canonical,
         title: seoCountryPlacesCatalogTitle(country.id, places.length),
-        description: `Города, регионы и природные места страны: ${country.name}.`,
+        description: seoAttractionsDescription(`Города, регионы и природные места страны: ${country.name}.`,places.length,seoCountryCase(country.id,'genitive')),
         breadcrumbs: [{ label: 'Направления', href: '/places/' }, { label: country.name, href: canonical }],
         hero: heroForCountry(country.id),
       });

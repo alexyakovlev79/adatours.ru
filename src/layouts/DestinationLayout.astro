@@ -123,7 +123,7 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
 
 <BaseLayout leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id}
   title={seoDestinationTitle(d.name,d.countryId,relatedExcursions.length,allRelatedTourEntries.length)}
-  description={seoRelatedToursDescription(d.summary,allRelatedTourEntries.length,'destination')}
+  description={seoRelatedToursDescription(`Достопримечательности и экскурсии: ${d.name}. ${d.summary}`,allRelatedTourEntries.length,'destination')}
   image={d.hero?.src}
   canonical={destinationPath(d)}
   pageSchema={destinationSchema}

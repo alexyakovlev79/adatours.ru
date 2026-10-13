@@ -2,7 +2,20 @@
 import {seoCountLabel,seoPluralIndex,seoYearRange} from './seo-meta.mjs';
 import {seoCountryCase,seoCountryName,seoPlacePhrase,seoPlaceDirectionPhrase} from './seo-grammar.mjs';
 const F={tour:['тур','тура','туров'],excursion:['экскурсия','экскурсии','экскурсий'],
- attraction:['достопримечательность','достопримечательности','достопримечательностей']};
+ attraction:['локация','локации','локаций']};
+/** Compact only SEO titles; names, headings, URLs and editorial copy keep their wording. */
+export function seoCompactTitle(title) {
+ const endings={ь:'я',и:'и',ей:'й',ям:'ям',ями:'ями',ях:'ях',ью:'ей'};
+ return title.replace(/достопримечательност(ями|ям|ях|ей|ью|ь|и)(?!\p{L})/giu, (word,ending)=>
+  (word[0]==='Д'?'Локаци':'локаци')+endings[ending.toLowerCase()]);
+}
+/** Count only the published places in the corresponding country, catalogue or route. */
+export function seoAttractionsDescription(description,count,context='') {
+ const copy=(description||'').trim();
+ if(!(count>0))return copy;
+ const label=seoCountLabel(count,['достопримечательность','достопримечательности','достопримечательностей']);
+ return label+(context?' '+context:'')+'.'+(copy?' '+copy:'');
+}
 const quantity=(n,type)=>Number(n)>0?seoCountLabel(n,F[type]):'';
 const year=()=>seoYearRange();
 const merchant='купить по лучшей цене напрямую у принимающего туроператора';
@@ -15,7 +28,7 @@ export function seoCountryTitle(name,attractions,excursions,tours) {
 }
 export function seoDestinationTitle(name,countryId,excursions,tours) {
  const inCountry=seoCountryCase(countryId,'prepositional');
- const visible=combine(['достопримечательности',quantity(excursions,'excursion'),quantity(tours,'tour')]);
+ const visible=combine(['локации',quantity(excursions,'excursion'),quantity(tours,'tour')]);
  const availability=tours===0?' Пока нет туров в это место.':'';
  return name+(inCountry?' в '+inCountry:'')+': '+visible+'.'+availability+' Цены '+year()+' принимающего туроператора Ada Tours';
 }
@@ -27,7 +40,8 @@ function priceFrom(price,currency) {
  return 'от '+(currencySymbol[currency]||'')+formatted+(currencySymbol[currency]?'':' '+currency);
 }
 export function seoTourTitle(d) {
- const named=/^тур(?:\s|$)/iu.test(d.title)?d.title:'Тур '+d.title;
+ const compact=seoCompactTitle(d.title);
+ const named=/^тур(?:\s|$)/iu.test(compact)?compact:'Тур '+compact;
  const price=priceFrom(d.priceFrom,d.currency);
  return named+(price?' по цене '+price:'')+' в '+year()+
   ' от туроператора с русскоговорящими гидами | Ada Tours';
@@ -36,7 +50,7 @@ export function seoExcursionTitle(d,countryId,destinationId,destinationName,tour
  const where=destinationId&&destinationName?seoPlacePhrase(destinationId,destinationName):'';
  const country=seoCountryName(countryId);
  const price=priceFrom(d.priceFrom,d.currency);
- return d.title+(where?' '+where:'')+(country?', '+country:'')+(price?', цена '+price:'')+
+ return seoCompactTitle(d.title)+(where?' '+where:'')+(country?', '+country:'')+(price?', цена '+price:'')+
   (tours===0?'. Пока нет туров с этой экскурсией':'')+' | Ada Tours';
 }
 /** Only active related tours determine availability; page copy remains independent. */
@@ -59,7 +73,7 @@ export function seoCountryTourCatalogTitle(countryId) {
  return 'Каталог туров '+year()+' по '+seoCountryCase(countryId,'dative')+' - '+merchant+' | Ada Tours';
 }
 export function seoCountryPlacesCatalogTitle(countryId,total) {
- const phrase=quantity(total,'attraction')||'Достопримечательности';
+ const phrase=quantity(total,'attraction')||'Локации';
  return phrase+' '+seoCountryCase(countryId,'genitive')+' | Ada Tours';
 }
 export function seoCountryExcursionsCatalogTitle(countryId,total) {

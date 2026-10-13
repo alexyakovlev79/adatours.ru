@@ -10,8 +10,8 @@
 
 | № | Показатель | Сейчас |
 |---|---|---:|
-| 1 | Программы Drive без повторных копий файлов | 170 программ / 196 файлов |
-| 2 | Неархивные страницы туров | 352 |
+| 1 | Программы Drive без повторных копий файлов | 171 программ / 197 файлов |
+| 2 | Неархивные страницы туров | 353 |
 | 3 | Архивные страницы туров | 31 |
 | 4 | Страницы без соответствия в снимке Drive | 185 активных + 18 архивных |
 | 5 | Программы Drive с архивным соответствием | 15: 0 только в архиве, 15 также с активной страницей |
@@ -207,6 +207,7 @@
 | `P168` | CLASSIC ANTARCTICA AIR-CRUISE 2027- 2028 RUS 8 d 7n 10%.docx; 8 дн.; Antarctica 2027-2028 | [CLASSIC ANTARCTICA AIR-CRUISE 2027- 2028 RUS 8 d 7n 10%.docx](https://docs.google.com/document/d/1zat9NNuJlzlnuF_KU5o_-E8BGpGXd6tF/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Классическая Антарктика](https://adatours.ru/antarctica/tour/classic-antarctica-air-cruise-8-days/) — основной Word — активный; `tour_source_klassicheskaya_antarktida`; [Классическая Антарктика](https://adatours.ru/antarctica/tour/classic-antarctic-air-cruise-8-days/) — связанный материал, не основной Word — архив; `tour_source_klassicheskaya_antarktika` | Активная страница есть | Не начато |
 | `P169` | Flavors of Brazil 2027 8d7n RUS com 20%.docx; 8 дн.; Brazil 2027 | [Flavors of Brazil 2027 8d7n RUS com 20%.docx](https://docs.google.com/document/d/1skaR2iQ6FrxpdT_QMuxOoacXJWUn5TWa/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Вкусы Бразилии](https://adatours.ru/brazil/tour/flavors-of-brazil/) — основной Word — активный; `tour_source_vkusy_brazilii`; [Тур в Бразилию в Рио де Жанейро, Илья-Гранди, Парати](https://adatours.ru/brazil/tour/brazil-rio-ilha-grande-paraty/) — основной Word — активный; `tour_source_tur_v_braziliyu_za_vkusami` | Активная страница есть | Не начато; Привязка и цены проверены; полная сверка / объединение страниц не выполнялись. |
 | `P170` | Amazing Peru, Bolivia and Solar de Uyuni  2027  12d11n RUS 20%.docx; 12 дн.; Peru 2027 | [Amazing Peru, Bolivia and Solar de Uyuni  2027  12d11n RUS 20%.docx](https://docs.google.com/document/d/1msC4CsEWXaPWNYTbe1xnDv_-AgdTgsLV/edit) — основной файл | [Перу и Боливия с солончаком Уюни: 12 дней в Андах](https://adatours.ru/multi-country/tour/peru-bolivia-uyuni-12-days/) — основной Word — активный; `tour_peru_bolivia_uyuni_12_days` | Активная страница есть | Содержание сверено; Полный Word, 12 дней, 34 заезда и 2 таблицы SGL/DBL/TPL сверены. Hero Word улучшен GPT Images и подтвержден S3 receipt. Созданы музей Чантани и 3 самостоятельные экскурсии. Ожидается успешный Actions deploy. |
+| `P171` | Amazing Peru, Bolivia, Solar de Uyuni  and National reservation 2027  15d14n RUS 20%.docx; 15 дн.; Peru 2027 | [Amazing Peru, Bolivia, Solar de Uyuni  and National reservation 2027  15d14n RUS 20%.docx](https://docs.google.com/document/d/1iBdizUjv-VcTa8NA4RomlGK-dwqh-SaK/edit) — основной файл | [Перу и Боливия: Уюни и озера Альтиплано](https://adatours.ru/multi-country/tour/peru-bolivia-uyuni-lakes-15-days/) — основной Word — активный; `tour_peru_bolivia_uyuni_lakes_15_days` | Активная страница есть | Содержание сверено; Полная программа 15 дней/14 ночей, 34 заезда, 4 новые экскурсии и 1 новое место; фото с подтвержденным GPT Image. Данные подготовлены для deploy. Ошибки коммерческих ячеек Word и ночевки после дня 11 отражены публично, спорные цены не придуманы. |
 
 ## 4. Похожие программы: сопоставление не подтверждено
 
@@ -609,6 +610,7 @@
 | `tour_antarctica_polar_circle_deep_south_13_days` | [Антарктида: за Южный полярный круг](https://adatours.ru/antarctica/tour/antarctica-polar-circle-deep-south-13-days/) | Активная страница | `P166` |
 | `tour_south_america_luxury_33_days` | [VIP: Большой тур по Южной Америке на 33 дня — Перу, Боливия и Чили](https://adatours.ru/multi-country/tour/south-america-luxury-33-days/) | Активная страница | `P109` |
 | `tour_peru_bolivia_uyuni_12_days` | [Перу и Боливия с солончаком Уюни: 12 дней в Андах](https://adatours.ru/multi-country/tour/peru-bolivia-uyuni-12-days/) | Активная страница | `P170` |
+| `tour_peru_bolivia_uyuni_lakes_15_days` | [Перу и Боливия: Уюни и озера Альтиплано](https://adatours.ru/multi-country/tour/peru-bolivia-uyuni-lakes-15-days/) | Активная страница | `P171` |
 
 ## 6. Исключённые файлы
 

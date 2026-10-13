@@ -1,40 +1,42 @@
 ---
 id: excursion_peru_sacred_valley_full_day
 locale: ru
-title: "Священная долина инков"
+title: Священная долина инков
 slug: sacred-valley-of-the-incas-tour
 status: approved
 searchAliases:
-  - Экскурсия в Священную долину инков
-  - Священная долина из Куско
+- Экскурсия в Священную долину инков
+- Священная долина из Куско
 country: country_peru
 destination: destination_peru_cusco
 language: []
 priceFrom: 225
 currency: USD
 hero:
-  src: /media/excursions/svyashchennaya-dolina-inkov/hero-enhanced-20261001.webp
-  hover: "Мачу-Пикчу: лама над древними террасами"
-  alt: "Лама на фоне каменных террас Мачу-Пикчу и зеленых гор, Перу"
+  src: /media/tours/manyashchij-peru-kolumbiya/sacred-valley-place-generated-20261009-v1.webp
+  hover: 'Священная долина: извилистая река между сельскими поселениями и Андами'
+  alt: Река Урубамба среди полей и гор Священной долины инков, Перу
 gallery: []
 route:
-  - Урубамба
-  - Писак
-  - Ольянтайтамбо
-  - Чинчеро
-  - Морай
-  - Ауанаканча
-lead: "Дополнительная экскурсия из Куско по Священной долине инков: Урубамба, Писак, Ольянтайтамбо, Чинчеро, Морай и центр Ауанаканча."
+- Урубамба
+- Писак
+- Ольянтайтамбо
+- Чинчеро
+- Морай
+- Ауанаканча
+lead: 'Дополнительная экскурсия из Куско по Священной долине инков: Урубамба, Писак, Ольянтайтамбо, Чинчеро,
+  Морай и центр Ауанаканча.'
 included: []
 notIncluded: []
 notes: []
-updatedAt: 2026-09-30
+updatedAt: '2026-10-13'
 relatedDestinations:
-  - destination_peru_olyantajtambo
-  - destination_peru_svyaschennaya_dolina_inkov
-  - destination_peru_urubamba
-  - destination_peru_chinchero
-themes: ["theme_culture"]
+- destination_peru_olyantajtambo
+- destination_peru_svyaschennaya_dolina_inkov
+- destination_peru_urubamba
+- destination_peru_chinchero
+themes:
+- theme_culture
 ---
 
 Священная долина считалась колыбелью цивилизации инков. Плодородные земли и мягкий климат позволяли развивать земледелие, а вдоль долины строились города и церемониальные центры.

@@ -10,8 +10,8 @@
 
 | № | Показатель | Сейчас |
 |---|---|---:|
-| 1 | Программы Drive без повторных копий файлов | 169 программ / 195 файлов |
-| 2 | Неархивные страницы туров | 351 |
+| 1 | Программы Drive без повторных копий файлов | 170 программ / 196 файлов |
+| 2 | Неархивные страницы туров | 352 |
 | 3 | Архивные страницы туров | 31 |
 | 4 | Страницы без соответствия в снимке Drive | 185 активных + 18 архивных |
 | 5 | Программы Drive с архивным соответствием | 15: 0 только в архиве, 15 также с активной страницей |
@@ -206,6 +206,7 @@
 | `P167` | Antartica - Whale Watching And Discovery Learning Voyagecom10%RUS.docx; 11 дн.; Antarctica 2027-2028 | [Antartica - Whale Watching And Discovery Learning Voyagecom10%RUS.docx](https://docs.google.com/document/d/1i8AMBZ-bp9Fc1AB7ru8BB6QDqibsM8b9/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Антарктида: экспедиция с наблюдением за китами](https://adatours.ru/antarctica/tour/antarctica-whale-watching-learning-11-days/) — основной Word — активный; `tour_antarctica_whale_watching_learning_11_days` | Активная страница есть | Работа завершена; P167 завершен после возобновления: точный Word и 5 тарифов с embedded-таблицы сверены предшествующим content-проходом; 11 дней/10 ночей, полные связи и фотографии всех дней. Сохранены 16 новых страниц мест, 20 новых WebP в S3 с SHA-256 receipts, 15 GPT Image записей и 5 Word-фото. Content fedef815; Actions 38142922805 success. Реестры Страницы 1552–1569, Фото 7256–7295 и Места 728–743 записаны и проверены чтением 11.10.2026; Принята не менялась. Валюта, судно, питание и состав услуг отсутствуют в Word и оставлены для подтверждения до бронирования. |
 | `P168` | CLASSIC ANTARCTICA AIR-CRUISE 2027- 2028 RUS 8 d 7n 10%.docx; 8 дн.; Antarctica 2027-2028 | [CLASSIC ANTARCTICA AIR-CRUISE 2027- 2028 RUS 8 d 7n 10%.docx](https://docs.google.com/document/d/1zat9NNuJlzlnuF_KU5o_-E8BGpGXd6tF/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Классическая Антарктика](https://adatours.ru/antarctica/tour/classic-antarctica-air-cruise-8-days/) — основной Word — активный; `tour_source_klassicheskaya_antarktida`; [Классическая Антарктика](https://adatours.ru/antarctica/tour/classic-antarctic-air-cruise-8-days/) — связанный материал, не основной Word — архив; `tour_source_klassicheskaya_antarktika` | Активная страница есть | Не начато |
 | `P169` | Flavors of Brazil 2027 8d7n RUS com 20%.docx; 8 дн.; Brazil 2027 | [Flavors of Brazil 2027 8d7n RUS com 20%.docx](https://docs.google.com/document/d/1skaR2iQ6FrxpdT_QMuxOoacXJWUn5TWa/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true) — основной файл | [Вкусы Бразилии](https://adatours.ru/brazil/tour/flavors-of-brazil/) — основной Word — активный; `tour_source_vkusy_brazilii`; [Тур в Бразилию в Рио де Жанейро, Илья-Гранди, Парати](https://adatours.ru/brazil/tour/brazil-rio-ilha-grande-paraty/) — основной Word — активный; `tour_source_tur_v_braziliyu_za_vkusami` | Активная страница есть | Не начато; Привязка и цены проверены; полная сверка / объединение страниц не выполнялись. |
+| `P170` | Amazing Peru, Bolivia and Solar de Uyuni  2027  12d11n RUS 20%.docx; 12 дн.; Peru 2027 | [Amazing Peru, Bolivia and Solar de Uyuni  2027  12d11n RUS 20%.docx](https://docs.google.com/document/d/1msC4CsEWXaPWNYTbe1xnDv_-AgdTgsLV/edit) — основной файл | [Перу и Боливия с солончаком Уюни: 12 дней в Андах](https://adatours.ru/multi-country/tour/peru-bolivia-uyuni-12-days/) — основной Word — активный; `tour_peru_bolivia_uyuni_12_days` | Активная страница есть | Содержание сверено; Полный Word, 12 дней, 34 заезда и 2 таблицы SGL/DBL/TPL сверены. Hero Word улучшен GPT Images и подтвержден S3 receipt. Созданы музей Чантани и 3 самостоятельные экскурсии. Ожидается успешный Actions deploy. |
 
 ## 4. Похожие программы: сопоставление не подтверждено
 
@@ -607,6 +608,7 @@
 | `tour_antarctica_discovery_long_hikes_11_days` | [Антарктида: открытия и длительные пешие прогулки](https://adatours.ru/antarctica/tour/antarctica-discovery-long-hikes-11-days/) | Активная страница | `P164` |
 | `tour_antarctica_polar_circle_deep_south_13_days` | [Антарктида: за Южный полярный круг](https://adatours.ru/antarctica/tour/antarctica-polar-circle-deep-south-13-days/) | Активная страница | `P166` |
 | `tour_south_america_luxury_33_days` | [VIP: Большой тур по Южной Америке на 33 дня — Перу, Боливия и Чили](https://adatours.ru/multi-country/tour/south-america-luxury-33-days/) | Активная страница | `P109` |
+| `tour_peru_bolivia_uyuni_12_days` | [Перу и Боливия с солончаком Уюни: 12 дней в Андах](https://adatours.ru/multi-country/tour/peru-bolivia-uyuni-12-days/) | Активная страница | `P170` |
 
 ## 6. Исключённые файлы
 

@@ -42,7 +42,7 @@ const delegationCase = (await getCollection('cases', ({ data }) =>
   {delegationCase && (
     <FactStrip
       facts={[
-        { value: delegationCase.data.groupSize ?? '7–8 человек', label: 'реальный кейс делегации Ada Tours' },
+        { value: delegationCase.data.groupSize ?? '8 человек', label: 'реальный кейс делегации Ada Tours' },
         { value: String(delegationCase.data.cities.length), label: 'города в программе кейса' },
         { value: '3', label: 'языка переводчика: русский, португальский, английский' },
         { value: String(delegationCase.data.year ?? 2026), label: 'год проекта' },

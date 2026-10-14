@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "targetPath": "/tours/",
+  "articlePath": "data/seo-geo/articles/tours/index.md",
+  "authoredBy": "seo-gpt6-20261014-writer-1791986487793",
+  "checkedAt": "2026-10-14",
+  "editorialIntent": "Практический гид по выбору действующих туров Ada Tours по числу дней, основной географии, интересам, частным и групповым услугам, внутренним перелетам, стоимости и сезонности; отличен от энциклопедических гидов по странам и страниц конкретных туров.",
+  "repositorySources": [
+    "src/pages/[...path].astro",
+    "src/lib/tour-filters.mjs",
+    "src/lib/vip-filters.mjs",
+    "src/lib/vip-tours.mjs",
+    "src/lib/seo-geo-articles.ts",
+    "data/source-index/catalogs/tours.json",
+    "data/catalog-archive.json",
+    "data/seo-geo/registry/03-country-interest.json",
+    "src/content/tours/peru-8d.md",
+    "src/content/tours/brazil-adventure-17d.md",
+    "src/content/tours/pantanal-bonito-lencois-8d.md",
+    "src/content/tours/brazil-northeast-recife-porto-noronha-10d.md",
+    "src/content/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej.md",
+    "src/content/tours/roskoshnaya-patagoniya-10-dney.md",
+    "src/content/tours/vinnyj-tur-v-argentinu-i-chili.md",
+    "src/content/tours/rybalka-v-ushuajya.md",
+    "src/content/tours/antarktida-ekspress-vozdushnyj-kruiz.md",
+    "src/content/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh.md",
+    "src/content/tours/luchshee-v-tsentralnoj-amerike.md",
+    "src/data/catalog/destinations.json"
+  ],
+  "independentSources": [
+    {
+      "url": "https://www.peru.travel/",
+      "publisher": "Peru Travel, официальное туристическое представительство Перу",
+      "checkedAt": "2026-10-14",
+      "supports": "Темы поездок в Перу: археология, культура, природа и маршруты"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/274",
+      "publisher": "UNESCO World Heritage Centre",
+      "checkedAt": "2026-10-14",
+      "supports": "Мачу-Пикчу, наследие инков и высокогорная география"
+    },
+    {
+      "url": "https://www.visitbrasil.com/en/info/climate-and-weather",
+      "publisher": "Visit Brasil",
+      "checkedAt": "2026-10-14",
+      "supports": "Региональные различия климата, природные сезоны"
+    },
+    {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/pantanal/lista-de-ucs/parna-do-pantanal-mato-grossense/informacoes-sobre-visitacao-2013-parna-do-pantanal-matogrossense",
+      "publisher": "ICMBio, государственный природоохранный институт Бразилии",
+      "checkedAt": "2026-10-14",
+      "supports": "Май-сентябрь — сезон низкой воды, подходящий для наблюдения фауны"
+    },
+    {
+      "url": "https://www.gov.br/turismo/pt-br/assuntos/ultimas-noticia/conheca-12-destinos-que-valem-a-pena-visitar-na-baixa-temporada",
+      "publisher": "Министерство туризма Бразилии",
+      "checkedAt": "2026-10-14",
+      "supports": "Лагуны Ленсойс-Мараньенсес наполняются после дождевого сезона"
+    },
+    {
+      "url": "https://iaato.org/visiting-antarctica/preparing-for-your-expedition",
+      "publisher": "IAATO, Международная ассоциация антарктических туроператоров",
+      "checkedAt": "2026-10-14",
+      "supports": "Подготовка к экспедиции, высадки, соблюдение природоохранных правил"
+    },
+    {
+      "url": "https://www.ats.aq/e/tourism.html",
+      "publisher": "Antarctic Treaty Secretariat",
+      "checkedAt": "2026-10-14",
+      "supports": "Правила и рекомендации туристам Антарктики"
+    }
+  ],
+  "editorialNotes": [
+    "Все коммерческие факты и ссылки на конкретные туры взяты только из активных production Tour MD в main. Проверены 11 конкретных Tour MD и отсутствие их stable ID в data/catalog-archive.json.",
+    "Выбраны короткие двухколоночные Markdown-таблицы под мобильную ширину. Самостоятельную трехколоночную таблицу с длинными названиями программ не создавали.",
+    "У /tours/ совокупный счетчик динамический catalog.toursCountPhrase; цена-минимум не выводится из-за несопоставимости оснований цены и услуг.",
+    "VIP попадает в общие туры и определяется по названию/ценовому ранжированию, не по наличию персонального сервиса. Прямые примеры групповое/частное из Brazil 17 days и Argentina-Chile wine 9 days.",
+    "Проверены существующие канонические Country+Theme каталоги и активные опубликованные Destination MD для ссылок."
+  ]
+}

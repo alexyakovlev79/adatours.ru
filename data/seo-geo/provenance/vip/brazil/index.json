@@ -1,0 +1,43 @@
+{
+  "targetPath": "/vip/brazil/",
+  "checkedAt": "2026-10-14T14:24:54.703Z",
+  "ownerId": "seo-gpt6-amanda-20261014-303-304-305-s",
+  "editorialIntent": "Сравнить конкретные VIP-программы Бразилии по географии, размещению, формату экскурсий, фактическим условиям и сезонности; не повторять путеводитель страны и общий VIP-хаб.",
+  "questions": [
+    "Какие VIP-программы по Бразилии существенно отличаются?",
+    "Что подтверждено в конкретном размещении и экскурсиях?",
+    "Как сравнивать базу цены и частный формат?",
+    "Когда выбрать Бонито, Амазонию или юг?",
+    "Как совмещаются Бразилия и Аргентина?"
+  ],
+  "githubSources": [
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-filters.mjs",
+    "src/pages/vip/[...country].astro",
+    "src/content/countries/brazil.md",
+    "data/catalog-archive.json",
+    "src/content/tours/vip-tur-v-braziliyu-s-bonito-16-dnej.md",
+    "src/content/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej.md",
+    "src/content/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej.md",
+    "src/content/tours/southern-brazil-vip-7-days.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.visitbrasil.com/en/info/climate-and-weather",
+      "supports": "Региональная климатическая неоднородность и сезоны Бразилии"
+    },
+    {
+      "url": "https://www.visitbrasil.com/en/location/pantanal-en/",
+      "supports": "Сезон и природные возможности Пантанала"
+    },
+    {
+      "url": "https://www.visitbrasil.com/en/location/rio-de-janeiro-en/",
+      "supports": "Городская география Рио и летние дожди"
+    }
+  ],
+  "limitations": [
+    "Текущие HTTP-страницы adatours.ru недоступны через внешний web-open; страницы и канонические связи подтверждены исходниками и активным MD в main.",
+    "VIP формируется алгоритмом названий/ценовых рангов; включенные услуги и отели указываются только для конкретных подтвержденных программ.",
+    "Число туров динамическое, цены в статье не фиксируются; внешние источники не включены в публичный HTML."
+  ]
+}

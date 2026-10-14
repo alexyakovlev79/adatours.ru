@@ -1,0 +1,47 @@
+{
+  "targetPath": "/vip/argentina/",
+  "checkedAt": "2026-10-14T14:31:40.065Z",
+  "ownerId": "seo-gpt6-amanda-20261014-303-304-305-s",
+  "editorialIntent": "Различить конкретные премиальные туры по Аргентине, их географию и фактический уровень сервиса; не дублировать страновой гид и общий каталог туров.",
+  "questions": [
+    "Какая VIP-программа подходит по регионам и длительности?",
+    "Где отели и языки гидов подтверждены конкретно?",
+    "Как сочетать Патагонию, Мендосу, север Аргентины и Игуасу?",
+    "Как влияют сезоны разных климатических зон?",
+    "Как сравнивать цену и частное обслуживание?"
+  ],
+  "githubSources": [
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-filters.mjs",
+    "src/pages/vip/[...country].astro",
+    "src/content/countries/argentina.md",
+    "data/catalog-archive.json",
+    "src/content/tours/roskoshnaya-patagoniya-10-dney.md",
+    "src/content/tours/argentina-grand-tour-15-days.md",
+    "src/content/tours/tur-v-argentinu-na-11dnej.md",
+    "src/content/tours/chili-i-argentina-vip.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.argentina.travel/en/news/what-to-do-in-argentinas-most-sought-after-tourist-destinations",
+      "supports": "Эль-Калафате, Перито-Морено и сезонные особенности"
+    },
+    {
+      "url": "https://www.argentina.travel/en/activities/iguazu-falls",
+      "supports": "Аргентинская сторона Игуасу и сезонные рекомендации"
+    },
+    {
+      "url": "https://www.argentina.travel/en/news/mendoza-the-capital-of-argentine-wine",
+      "supports": "Мендоса как винный регион"
+    },
+    {
+      "url": "https://www.argentina.travel/en/activities/el-calafate",
+      "supports": "Климат и сезон Патагонии"
+    }
+  ],
+  "limitations": [
+    "HTTP-страницы adatours.ru недоступны внешнему web-open; текущие продукты проверены по MD, маршрутам и коду каталога main.",
+    "VIP-подборка основана на названиях и ценовой модели; статья не приписывает всем продуктам единые стандарты сервиса.",
+    "Изменяемые количества выводятся динамически, статичных цен и внешних ссылок в публичном тексте нет."
+  ]
+}

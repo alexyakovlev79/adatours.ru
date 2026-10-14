@@ -161,13 +161,24 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     groups={country ? [{ label: 'Страна', entries: [{ name: countryName, href: countryPath(country.data) }] }] : []}
   />
 
-  <section class="destination-copy section--tight">
-    <div class="container prose">
-      {firstHeadingHtml && <Fragment set:html={firstHeadingHtml} />}
-      {d.summary?.trim() && <p class="destination-lead"><InlineMarkdown text={d.summary} /></p>}
-      {remainingDescriptionHtml && <Fragment set:html={remainingDescriptionHtml} />}
-    </div>
-  </section>
+  {(d.summary?.trim() || descriptionHtml.trim()) && (
+    <section class="destination-copy section--tight">
+      <div class="container prose" data-destination-description>
+        {firstHeadingHtml && <Fragment set:html={firstHeadingHtml} />}
+        <div class="destination-copy__text" id={`destination-description-${d.id}`} data-destination-description-text>
+          {d.summary?.trim() && <p class="destination-lead"><InlineMarkdown text={d.summary} /></p>}
+          {remainingDescriptionHtml && <Fragment set:html={remainingDescriptionHtml} />}
+        </div>
+        <button class="destination-copy__toggle" type="button" aria-expanded="false"
+          aria-controls={`destination-description-${d.id}`} data-destination-description-toggle hidden>
+          <span data-destination-description-label>Подробнее о месте</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </section>
+  )}
 
   {d.featureBands.map((band, index) => (
     <StoryPair
@@ -291,6 +302,65 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
 
 </BaseLayout>
 
+
+<script>
+  const initDestinationDescriptions = () => {
+    document.querySelectorAll<HTMLElement>('[data-destination-description]').forEach((section) => {
+      if (section.dataset.descriptionReady) return;
+      const text = section.querySelector<HTMLElement>('[data-destination-description-text]');
+      const toggle = section.querySelector<HTMLButtonElement>('[data-destination-description-toggle]');
+      const label = section.querySelector<HTMLElement>('[data-destination-description-label]');
+      if (!text || !toggle || !label) return;
+      section.dataset.descriptionReady = 'true';
+      let expanded = false;
+
+      const update = () => {
+        const firstParagraph = text.querySelector<HTMLElement>('p');
+        const lead = text.querySelector<HTMLElement>('.destination-lead');
+        const lineHeight = parseFloat(getComputedStyle(firstParagraph ?? text).lineHeight) || 30;
+        // Keep the complete lead visible, or at least seven lines as on tour pages.
+        const leadHeight = lead
+          ? lead.getBoundingClientRect().bottom - text.getBoundingClientRect().top
+          : 0;
+        const previewHeight = Math.ceil(Math.max(leadHeight, lineHeight * 7));
+        const long = text.scrollHeight > previewHeight + lineHeight;
+        text.style.setProperty('--destination-copy-preview-height', previewHeight + 'px');
+        text.style.setProperty('--destination-copy-fade-height', lineHeight * 2 + 'px');
+        text.classList.toggle('is-collapsed', long && !expanded);
+        toggle.hidden = !long;
+        toggle.setAttribute('aria-expanded', String(!long || expanded));
+        label.textContent = expanded ? 'Свернуть' : 'Подробнее о месте';
+      };
+
+      toggle.addEventListener('click', () => {
+        expanded = !expanded;
+        update();
+        if (!expanded && text.getBoundingClientRect().top < 0) {
+          window.scrollTo({
+            top: Math.max(0, window.scrollY + text.getBoundingClientRect().top - 120),
+            behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+          });
+        }
+      });
+      // Reveal links or controls before keyboard focus can enter clipped content.
+      text.addEventListener('focusin', () => {
+        if (!expanded && !toggle.hidden) {
+          expanded = true;
+          update();
+        }
+      });
+
+      update();
+      if ('ResizeObserver' in window) new ResizeObserver(update).observe(text);
+      else window.addEventListener('resize', update);
+      document.fonts.ready.then(update);
+    });
+  };
+
+  initDestinationDescriptions();
+  document.addEventListener('astro:page-load', initDestinationDescriptions);
+</script>
+
 <style>
   .destination-copy {
     padding-block: 16px clamp(28px, 3vw, 40px);
@@ -301,6 +371,50 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
   .destination-copy :global(.prose) .destination-lead {
     font-weight: 600;
     color: var(--color-ink);
+  }
+  .destination-copy__text { display: flow-root; }
+  .destination-copy__text.is-collapsed {
+    max-height: var(--destination-copy-preview-height);
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - var(--destination-copy-fade-height)), transparent);
+    mask-image: linear-gradient(to bottom, #000 calc(100% - var(--destination-copy-fade-height)), transparent);
+  }
+  .destination-copy__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 44px;
+    margin: 12px auto 0;
+    padding: 8px 16px;
+    border: 1px solid color-mix(in srgb, var(--color-ink) 14%, transparent);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--color-champagne) 12%, var(--color-bg));
+    color: var(--color-ink);
+    font-size: var(--text-base);
+    font-weight: 500;
+    line-height: 1.35;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .15s ease, border-color .15s ease;
+  }
+  .destination-copy__toggle[hidden] { display: none; }
+  .destination-copy__toggle:hover, .destination-copy__toggle:focus-visible {
+    border-color: var(--color-gold-deep);
+    background: color-mix(in srgb, var(--color-champagne) 35%, var(--color-bg));
+  }
+  .destination-copy__toggle svg { flex: none; transition: transform .2s ease; }
+  .destination-copy__toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+  @media print {
+    .destination-copy__text.is-collapsed {
+      max-height: none;
+      overflow: visible;
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+    .destination-copy__toggle { display: none; }
   }
 </style>
 

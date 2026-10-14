@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "targetPath": "/interests/family-tours/tours/",
+  "articlePath": "data/seo-geo/articles/interests/family-tours/tours/index.md",
+  "researchedAt": "2026-10-14T07:57:05.668Z",
+  "editorialIntent": "Практическое сравнение реальных семейных туров с учетом транспортных дней, структуры стоимости, возрастных условий экскурсий и семейного бюджета. Дополняет, а не повторяет подробный общий гид /interests/family-tours/.",
+  "repositorySources": [
+    "src/content/themes/semejnye-tury.md",
+    "src/data/interest-copy.json",
+    "src/data/interest-registry.json",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/source-index/catalogs/excursions.json",
+    "src/content/tours/braziliya-s-detmi.md",
+    "src/content/tours/tur-v-braziliyu-s-detmi.md",
+    "src/content/destinations/rio-de-janeiro.md",
+    "src/content/destinations/foz-do-iguacu.md",
+    "src/content/destinations/manaus-amazonia.md",
+    "src/content/destinations/buzios.md",
+    "src/content/destinations/puerto-iguasu.md",
+    "src/content/excursions/botanical-garden.md",
+    "src/content/excursions/park-jekzoticheskih-ptic-v-iguasu.md",
+    "data/seo-geo/articles/interests/family-tours/index.md",
+    "src/lib/seo-geo-articles.ts"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.cdc.gov/yellow-book/hcp/family-travel/traveling-safely-with-infants-and-children.html",
+      "checkedAt": "2026-10-14",
+      "supports": "Безопасность международных поездок с детьми: водный транспорт, спасательные жилеты, автомобильные удерживающие устройства, медицинская подготовка."
+    },
+    {
+      "url": "https://www.visitbrasil.com/en/location/buzios/",
+      "checkedAt": "2026-10-14",
+      "supports": "Разнообразие пляжей Бузиоса: более спокойные участки, места для водного спорта и семейного отдыха."
+    }
+  ],
+  "commercialVerification": {
+    "source": "Актуальные production Tour MD (GitHub main) и проверенные канонические Destination/Excursion URL",
+    "tourIds": [
+      "tour_source_braziliya_s_detmi",
+      "tour_source_tur_v_braziliyu_s_detmi"
+    ],
+    "tourPaths": [
+      "/brazil/tour/brazil-with-kids/",
+      "/brazil/tour/brazil-family-tour/"
+    ],
+    "facts": [
+      "Длительность обоих семейных маршрутов: 12 дней, 11 ночей; общие остановки: 4 ночи Рио и 2 ночи Игуасу.",
+      "Маршрут с Амазонией: 2 ночи в Амазонии, 3 в Бузиосе, перелеты Рио—Игуасу—Манаус—Рио не включены.",
+      "Второй маршрут: 5 ночей Бузиоса, перелеты Рио—Игуасу—Рио не включены.",
+      "Указаны отели с завтраками и русскоговорящие гиды по программе, отдельно оговорены дополнительные экскурсии и питание в дороге.",
+      "В программе амазонского вечернего выезда явно указан англоговорящий гид.",
+      "Аргентинская сторона Игуасу — факультативная возможность, а не основная страна маршрута."
+    ],
+    "notes": "Архивная каноническая экскурсия Макуко Сафари в публичных внутренних ссылках не используется; фрагмент упомянут только как возможность из Tour MD. Начальные цены не зафиксированы без подтвержденной сопоставимой базы."
+  },
+  "editorialChecks": [
+    "Статья не повторяет родительский тематический гид: ее основная цель — решение о покупке конкретной программы.",
+    "Единственная мобильная таблица имеет два коротких столбца.",
+    "В публичном Markdown нет изображений, внешних ссылок, придуманных тарифов, H1 и ссылки на архивные продукты.",
+    "Счетчик ассортимента динамический, все связи ведут на активные канонические страницы.",
+    "Внешние источники сохраняются только в служебном provenance."
+  ]
+}

@@ -47,10 +47,10 @@
     "retries_per_url_in_same_step": 0
   },
   "first_next_task": {
-    "id": "adatours-com-identity-001",
+    "id": "adatours-com-identity-002",
     "step": 3,
     "domain": "adatours.com",
-    "action": "Compare up to 50 current RU objects with saved fetched pages and IDs. Confirm exact identities only. Unresolved retrieval errors are not negative matches. Reconcile target ID, canonical URL and archive status before this batch.",
+    "action": "Continue geographic queue in recorded order; skip 10 step-1 confirmed pairs and 50 completed step-3 keys. Up to 50 current RU objects; exact geographic identities only, preserve evidence and search limitations. Programmes need content checks when reached.",
     "status": "pending",
     "object_limit": 50,
     "queue": "adatours.com.json",
@@ -75,16 +75,16 @@
     "geography.json",
     "completed-vip.json"
   ],
-  "active_step": null,
+  "active_step": 3,
   "last_checkpoint": {
-    "step": 2,
+    "step": 3,
     "domain": "adatours.com",
-    "batch_id": "adatours-com-retry-001",
-    "processed_in_batch": 15,
-    "remaining_in_batch": 0,
-    "unresolved_retry_urls": 0,
-    "report": "adatours-com-retry-001.json",
-    "saved_at": "2026-10-14T07:09:24.489085+00:00"
+    "batch_id": "adatours-com-identity-001",
+    "processed_in_batch": 50,
+    "confirmed_in_batch": 18,
+    "checked_no_confirmed_pair": 32,
+    "saved_at": "2026-10-14T07:21:40.068854+00:00",
+    "report": "adatours-com-identity-001.json"
   },
   "step_1": {
     "status": "completed",

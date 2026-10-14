@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "targetPath": "/interests/adventure/tours/mexico/",
+  "articlePath": "data/seo-geo/articles/interests/adventure/tours/mexico/index.md",
+  "researchedAt": "2026-10-14",
+  "editorialIntent": "Сравнение активных занятий, происходящих именно в мексиканской части двух размеченных adventure-программ. Отделяет сеноты Юкатана и длительные пешие экскурсии от более сложных занятий в Гватемале, Белизе и других странах; не переписывает гид /mexico/ или общий /interests/adventure/.",
+  "repositorySources": [
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/source-index/catalogs/excursions.json",
+    "data/seo-geo/registry/03-country-interest.json",
+    "src/content/countries/mexico.md",
+    "src/content/tours/mexico-lindo-eight-days.md",
+    "src/content/tours/central-america-8-countries-26-days.md",
+    "src/content/destinations/santa-barbara-cenotes.md",
+    "src/content/destinations/uxmal.md",
+    "src/content/destinations/kabah.md",
+    "src/content/destinations/chichen-itza.md",
+    "src/content/excursions/santa-barbara-cenotes-tour.md",
+    "src/content/excursions/uxmal-kabah-cenote-tour.md",
+    "src/content/excursions/chichen-itza-cenote-cancun-transfer.md",
+    "data/seo-geo/articles/interests/adventure/index.md",
+    "data/seo-geo/articles/interests/adventure/tours/guatemala/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://visitmexico.com/es/estado/31",
+      "checkedAt": "2026-10-14",
+      "supports": "Официальный туристический портал: природа, сеноты и памятники Юкатана, Мерида, Чичен-Ица и Ушмаль."
+    },
+    {
+      "url": "https://lugares.inah.gob.mx/es/node/6131",
+      "checkedAt": "2026-10-14",
+      "supports": "INAH: Чичен-Ица, связь майянского поселения с сенотами и культурное наследие."
+    },
+    {
+      "url": "https://www.inah.gob.mx/index.php/prensa/comunicados/el-inah-amplia-el-area-delimitada-en-torno-al-castillo-en-la-zona-arqueologica-de-chichen-itza",
+      "checkedAt": "2026-10-14",
+      "supports": "INAH: охрана пирамиды Кукулькана, ограничение доступа посетителей на памятник."
+    },
+    {
+      "url": "https://www.gob.mx/sectur/acciones-y-programas/ordenamiento-turistico-sustentable",
+      "checkedAt": "2026-10-14",
+      "supports": "Государственная политика ответственного отношения к природе при путешествиях."
+    }
+  ],
+  "commercialVerification": {
+    "tourIds": [
+      "tour_mexico_lindo_eight_days",
+      "tour_central_america_eight_countries_26_days"
+    ],
+    "source": "Актуальные production MD на main; обе программы approved, приключения указаны как дополнительные themes, длительность соответственно 8 и 26 дней. Мексика Линдо — сеноты Санта-Барбара, Ушмаль/Кабах, Чичен-Ица и отдельный перелет. Центральная Америка — мексиканская часть первые пять дней; Пакайя и пещера Рио-Фрио находятся вне Мексики. Цены и включенные услуги не выводятся из названия категории.",
+    "checkedAt": "2026-10-14"
+  },
+  "editorialChecks": [
+    "Один H1 остается в hero; статья начинается с H2.",
+    "Единственная сравнительная таблица имеет 2 коротких столбца.",
+    "Все публичные ссылки внутренние, канонические и по контексту; исходные URLs внешних источников только здесь.",
+    "Количества туристических продуктов оставлены динамической переменной.",
+    "Содержательная граница Мексика/другие страны соблюдена; нет обещания экстремального тура, дайвинга или включенного пляжного отеля.",
+    "Статья рассчитана на статический рендеринг без новых изображений."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "targetPath": "/vip/el-salvador/",
+  "checkedAt": "2026-10-14T14:38:50.593Z",
+  "ownerId": "seo-gpt6-amanda-vip-countries-20261014T1429",
+  "editorialIntent": "Сравнение 2 действующих VIP-выборок с Эль-Сальвадором, точная роль страны, подтвержденный состав программ, археология и логистика без вымышленных VIP-услуг.",
+  "questions": [
+    "Какие реальные маршруты есть в VIP-каталоге страны?",
+    "Сколько дней и стран, как различаются финальные этапы?",
+    "Что точно входит в сальвадорскую часть?",
+    "Что означает VIP при автоматическом отборе?",
+    "Когда нужен отдельный маршрут по Сальвадору?"
+  ],
+  "githubSources": [
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-filters.mjs",
+    "src/pages/vip/[...country].astro",
+    "data/external-identity/vip-catalogues.json",
+    "data/catalog-archive.json",
+    "src/content/countries/el-salvador.md",
+    "src/content/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh.md",
+    "src/content/tours/luchshee-v-tsentralnoj-amerike.md",
+    "src/content/destinations/san-salvador.md",
+    "src/content/destinations/joya-de-ceren.md",
+    "src/content/destinations/el-salvador-san-andres.md",
+    "src/content/destinations/la-union.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/675",
+      "supports": "Хойя-де-Серен, объект Всемирного наследия ЮНЕСКО с 1993 года; следы повседневной жизни"
+    },
+    {
+      "url": "https://elsalvador.travel/esp/volcan-de-san-salvador-parque-nacional-el-boqueron/",
+      "supports": "Эль-Бокерон, тропы и природные обзорные точки"
+    },
+    {
+      "url": "https://elsalvador.travel/esp/ruta-de-las-flores/",
+      "supports": "География Дороги цветов, кофейные и культурные остановки"
+    }
+  ],
+  "limitations": [
+    "Публичный сайт не открывается инструментом веб-просмотра; ассортимент и точные адреса взяты из активного GitHub MD и VIP-каталога.",
+    "VIP отбор по названиям/ценовому рангу; личный гид и отель 5* автоматически не подтверждаются.",
+    "Динамическое число поездок сохраняется через переменную Astro; общественная энциклопедическая информация не выдается за состав двух туров.",
+    "В публичный Markdown внешние источники не добавлены."
+  ]
+}

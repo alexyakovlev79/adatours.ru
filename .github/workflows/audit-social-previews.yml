@@ -1,0 +1,27 @@
+name: Weekly Open Graph image audit
+
+on:
+  schedule:
+    # Sundays at 03:20 Moscow time (00:20 UTC); no site rebuild or deploy.
+    - cron: '20 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: audit-social-previews
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Check all published OG JPEG objects
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Verify every published social-preview object via HTTPS HEAD
+        run: node scripts/audit-social-previews.mjs

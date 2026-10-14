@@ -5,13 +5,19 @@ import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import sharp from 'sharp';
+import {
+  SOCIAL_PREVIEW_VERSION, SOCIAL_IMAGE_ORIGIN, previewKey, socialRequest as request,
+  readPublishedSocialManifest, unverifiedSocialKeys, makeSocialManifest,
+  assertSocialPreviewHead,
+} from './lib/social-preview-manifest.mjs';
+export { previewKey } from './lib/social-preview-manifest.mjs';
 
 export const SOCIAL_WIDTH = 1200;
 export const SOCIAL_HEIGHT = 630;
 export const DEFAULT_PHOTO = '/media/home/hero-rio-generated-20261008-v2.webp';
-const VERSION = 'v1';
+const VERSION = SOCIAL_PREVIEW_VERSION;
 const SITE = 'https://adatours.ru';
-const IMAGE_ORIGIN = 'https://img.adatours.ru';
+const IMAGE_ORIGIN = SOCIAL_IMAGE_ORIGIN;
 const STORAGE_ORIGIN = 'https://storage.yandexcloud.net/img.adatours.ru';
 const DIST = path.resolve('dist');
 const MEDIA_ROOT = path.resolve('public/media');
@@ -82,11 +88,6 @@ export function setSocialMetadata(html, url) {
   return html.slice(0, match.index) + updated + html.slice(match.index + match[0].length);
 }
 
-export function previewKey(photo) {
-  const id = createHash('sha256').update(VERSION + '\0' + photo).digest('hex').slice(0, 28);
-  return 'media/social-previews/' + VERSION + '/' + id + '.jpg';
-}
-
 export function fitPhoto(width, height) {
   if (!(width > 0 && height > 0)) throw new Error('Invalid source dimensions');
   const factor = Math.min(1152 / width, 562 / height);
@@ -122,20 +123,6 @@ export async function renderPreview(bytes, logoSvg) {
   ]).jpeg({ quality: 80, progressive: true, mozjpeg: true }).toBuffer();
 }
 
-async function request(url, init = {}) {
-  let last;
-  for (let attempt = 0; attempt < 4; attempt++) {
-    try {
-      const response = await fetch(url, { ...init, signal: AbortSignal.timeout(45000) });
-      if (![429, 500, 502, 503, 504].includes(response.status) || attempt === 3) return response;
-      await response.body?.cancel();
-      last = new Error('HTTP ' + response.status);
-    } catch (e) { last = e; }
-    if (attempt !== 3) await new Promise((r) => setTimeout(r, 850 * (attempt + 1)));
-  }
-  throw last;
-}
-
 const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const encodeKey = (key) => key.split('/').map(encodeURIComponent).join('/');
 
@@ -158,9 +145,7 @@ async function ensureObject(photo, logoSvg) {
   const url = IMAGE_ORIGIN + '/' + encoded;
   const head = await request(url, { method: 'HEAD' });
   if (head.ok) {
-    const type = (head.headers.get('content-type') || '').split(';')[0];
-    if (type !== 'image/jpeg' || Number(head.headers.get('content-length') || 0) < 200)
-      throw new Error('Existing social object invalid: ' + key);
+    assertSocialPreviewHead(head, key);
     return { url, status: 'reused', key };
   }
   if (head.status !== 403 && head.status !== 404)
@@ -211,26 +196,49 @@ async function main() {
     pages.push({ file, html, photo: chooseSocialPhoto(html) });
   }
   const photos = [...new Set(pages.map((p) => p.photo))].sort();
-  const result = new Map();
+  const keys = photos.map(previewKey);
+  // The latest successfully published version carries a complete inventory of
+  // previously checked immutable JPEG keys; it never grants access to S3 writes.
+  let verifiedBefore = new Set();
+  try {
+    verifiedBefore = await readPublishedSocialManifest();
+    console.log('Social OG manifest: ' + verifiedBefore.size + ' previously verified objects.');
+  } catch (error) {
+    // Initial rollout, an unavailable site or an invalid manifest fails closed:
+    // every image gets the same network check as before.
+    console.warn('Social OG manifest unavailable; checking all images: ' + error.message);
+  }
+  const newKeys = new Set(unverifiedSocialKeys(keys, verifiedBefore));
+  const pendingPhotos = photos.filter((photo) => newKeys.has(previewKey(photo)));
+  const checked = new Map();
   let cursor = 0, finished = 0, uploaded = 0;
   await Promise.all(Array.from({ length: 6 }, async () => {
-    while (cursor < photos.length) {
-      const photo = photos[cursor++];
+    while (cursor < pendingPhotos.length) {
+      const photo = pendingPhotos[cursor++];
       const status = await ensureObject(photo, logo);
-      result.set(photo, status);
+      checked.set(photo, status);
       if (status.status === 'uploaded-and-verified') uploaded++;
-      if (++finished % 50 === 0 || finished === photos.length)
-        console.log('Social OG images verified: ' + finished + '/' + photos.length);
+      if (++finished % 50 === 0 || finished === pendingPhotos.length)
+        console.log('Social OG images checked: ' + finished + '/' + pendingPhotos.length);
     }
   }));
   for (const page of pages) {
-    const item = result.get(page.photo);
-    if (!item) throw new Error('Social image missing ' + page.photo);
-    await fs.writeFile(page.file, setSocialMetadata(page.html, item.url));
+    const key = previewKey(page.photo);
+    const url = checked.get(page.photo)?.url ||
+      (verifiedBefore.has(key) ? IMAGE_ORIGIN + '/' + key : undefined);
+    if (!url) throw new Error('Social image not verified: ' + page.photo);
+    await fs.writeFile(page.file, setSocialMetadata(page.html, url));
   }
-  const summary = { pages: pages.length, distinctImages: photos.length,
+  // Only hashed keys, with no /media/ prefix, survive the media-URL rewrite
+  // unchanged and become the trusted baseline after a successful Pages deploy.
+  await fs.writeFile(path.join(DIST, 'social-preview-manifest.json'),
+    JSON.stringify(makeSocialManifest(keys), null, 2) + '\n');
+  const summary = {
+    pages: pages.length, distinctImages: photos.length,
+    checked: pendingPhotos.length, alreadyVerified: photos.length - pendingPhotos.length,
     uploaded, reused: photos.length - uploaded, sourcePhotosUnchanged: true,
-    host: IMAGE_ORIGIN, version: VERSION };
+    host: IMAGE_ORIGIN, version: VERSION,
+  };
   await fs.writeFile(path.join(DIST, 'social-preview-report.json'),
     JSON.stringify(summary, null, 2) + '\n');
   console.log('Social Open Graph previews: ' + JSON.stringify(summary));

@@ -1,0 +1,176 @@
+---
+import { createHash } from 'node:crypto';
+import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../../lib/archive.mjs';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/editorial/Hero.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
+import CatalogPagination from '../../components/catalog/CatalogPagination.astro';
+import MultiCountrySelector from '../../components/catalog/MultiCountrySelector.astro';
+import { buildMultiCountryCombinations } from '../../lib/multi-country-combinations.mjs';
+import { paginateCatalog } from '../../lib/catalog-pagination';
+import { compareToursBySalesFit } from '../../lib/tour-ranking';
+import { mainTourCountries, tourPath } from '../../lib/routes';
+import { countLabel } from '../../lib/interest-model.mjs';
+import { withBase } from '../../lib/paths';
+
+export async function getStaticPaths() {
+  const tours = (await getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data)))
+    .filter((entry) => mainTourCountries(entry.data).length >= 2)
+    .sort(compareToursBySalesFit);
+  const combinations = buildMultiCountryCombinations(tours, (entry) => mainTourCountries(entry.data));
+  const pickerCountries = [...new Map(tours.flatMap((entry) => mainTourCountries(entry.data))
+    .map((country) => [country.slug, { slug: country.slug, name: country.name }])).values()]
+    .sort((a, b) => a.slug.localeCompare(b.slug, 'en'));
+  const pickerCombinations = combinations.map((row) => ({
+    slugs: row.slugs, path: row.path, count: row.tours.length,
+  }));
+  return combinations.flatMap((row) => {
+    const version = createHash('sha256')
+      .update(JSON.stringify(row.tours.map((entry) => entry.data.id))).digest('hex').slice(0, 20);
+    const cover = row.tours.find((entry) => Boolean(entry.data.hero?.src));
+    return paginateCatalog(row.tours, row.path).map(({ entries, pagination }) => ({
+      params: {
+        selection: row.slugs.join('_') + (pagination.currentPage > 1
+          ? '/page/' + pagination.currentPage : ''),
+      },
+      props: {
+        entries, pagination, catalogVersion: version,
+        slugs: row.slugs, comboCountries: row.countries,
+        pickerCountries, pickerCombinations, hero: cover?.data.hero?.src,
+      },
+    }));
+  });
+}
+
+const {
+  entries, pagination, catalogVersion, slugs, comboCountries,
+  pickerCountries, pickerCombinations, hero,
+} = Astro.props;
+const names = comboCountries.map((country) => country.name);
+const countriesText = names.join(' + ');
+const heading = 'Туры: ' + countriesText;
+const baseTitle = countriesText + ': ' + countLabel(pagination.totalItems, ['тур', 'тура', 'туров']);
+const pageSuffix = pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage + ' из ' + pagination.totalPages : '';
+const description = 'Готовые туры Ada Tours по странам: ' + names.join(', ') + '. '
+  + countLabel(pagination.totalItems, ['маршрут', 'маршрута', 'маршрутов'])
+  + ' с выбранными странами. В отдельных поездках могут быть и другие страны. Даты и отели можно адаптировать.'
+  + (pagination.currentPage > 1 ? ' Страница ' + pagination.currentPage + ' из ' + pagination.totalPages
+    + ', маршруты ' + pagination.from + '–' + pagination.to + ' из ' + pagination.totalItems + '.' : '');
+const absolute = (path: string) => new URL(withBase(path), Astro.site ?? 'https://adatours.ru/').toString();
+const itemList = {
+  '@type': 'ItemList',
+  '@id': absolute(pagination.canonical) + '#catalog',
+  name: baseTitle,
+  numberOfItems: entries.length,
+  itemListElement: entries.map((entry, index) => ({
+    '@type': 'ListItem',
+    position: pagination.offset + index + 1,
+    name: entry.data.title,
+    url: absolute(tourPath(entry.data)),
+  })),
+};
+---
+
+<BaseLayout
+  leadTitle={'Собрать маршрут: ' + countriesText}
+  leadEntityId="multi_country"
+  title={baseTitle + pageSuffix}
+  description={description}
+  canonical={pagination.canonical}
+  image={hero}
+  pageSchema={itemList}
+  breadcrumbs={[
+    { label: 'Главная', href: '/' },
+    { label: 'Multi-country', href: '/multi-country/' },
+    { label: countriesText, href: pagination.rootPath },
+  ]}
+>
+  <Hero
+    eyebrow="Multi-country"
+    title={heading + (pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage : '')}
+    intro={'Выберите маршрут, включающий страны: ' + names.join(', ') + '. Сравните длительность и формат готовых программ.'}
+    image={hero}
+    compact
+    ctaHref="#request"
+    ctaLabel="Собрать свой маршрут"
+  />
+
+  <section class="combination-tours section" aria-labelledby="combination-tours-title">
+    <div class="container combination-tours__head">
+      <p class="eyebrow">Выбрать путешествие</p>
+      <h2 id="combination-tours-title">{countriesText}</h2>
+      <p>{countLabel(pagination.totalItems, ['подходящий тур', 'подходящих тура', 'подходящих туров'])}. Можно добавить еще одну страну, если такие маршруты есть.</p>
+    </div>
+
+    <MultiCountrySelector countries={pickerCountries} combinations={pickerCombinations} selected={slugs} />
+
+    {pagination.currentPage > 1 && (
+      <div class="container combination-tours__back">
+        <a href={withBase(pagination.rootPath)}>← На первую страницу этой подборки</a>
+      </div>
+    )}
+
+    <div
+      data-catalog-root
+      data-catalog-key={pagination.rootPath}
+      data-catalog-version={catalogVersion}
+      data-catalog-page={pagination.currentPage}
+      data-catalog-from={pagination.from}
+      data-catalog-to={pagination.to}
+      data-catalog-total={pagination.totalItems}
+    >
+      <div id="catalog-items" data-catalog-items>
+        {entries.map((entry, index) => {
+          const data = entry.data;
+          const countryLabel = mainTourCountries(data)
+            .sort((a, b) => a.slug.localeCompare(b.slug, 'en'))
+            .map((country) => country.name).join(' + ');
+          const meta = [
+            countryLabel,
+            data.durationDays ? countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',
+            data.format,
+          ].filter(Boolean).join(' · ');
+          return (
+            <div data-catalog-item={data.id}>
+              <DestinationBand
+                headingTag="h3"
+                eyebrow={meta}
+                title={data.title}
+                image={data.hero?.src}
+                imageTextAlign={data.imageTextAlign}
+                mediaStatus={data.hero?.status}
+                replacementReason={data.hero?.replacementReason}
+                href={tourPath(data)}
+                align={index % 2 === 1 ? 'right' : 'left'}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <CatalogPagination pagination={pagination} />
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  import '../../scripts/catalog-load-more';
+</script>
+
+<style>
+  .combination-tours { padding-bottom: 0; }
+  .combination-tours__head { padding-bottom: clamp(24px, 4vw, 44px); }
+  .combination-tours__head h2 {
+    max-width: 980px;
+    margin: 12px 0 18px;
+    overflow-wrap: anywhere;
+  }
+  .combination-tours__head > p:last-child {
+    max-width: 760px;
+    margin: 0;
+    color: color-mix(in srgb, var(--color-ink) 72%, transparent);
+    font-size: var(--text-lg);
+  }
+  .combination-tours__back { padding: 16px 0 30px; }
+  .combination-tours__back a { color: var(--color-ink); text-underline-offset: 4px; }
+</style>

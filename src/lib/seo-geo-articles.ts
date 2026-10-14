@@ -78,6 +78,19 @@ export function seoGeoScope(path, data) {
 
   if (path === '/multi-country/') scopedTours = tours.filter((tour) =>
     new Set(tour.data.routeCountries ?? tour.data.countries).size > 1);
+  const multiComboMatch = path.match(/^\/multi-country\/([a-z0-9-]+(?:_[a-z0-9-]+){1,3})\/$/);
+  if (multiComboMatch) {
+    const slugs = multiComboMatch[1].split('_');
+    const ids = slugs.map((slug) => countryBySlug.get(slug)?.id);
+    if (ids.every(Boolean) && new Set(slugs).size === slugs.length) {
+      scopedTours = tours.filter((tour) => ids.every((id) => isMainCountry(tour.data, id))
+        && new Set(tour.data.routeCountries ?? tour.data.countries).size > 1);
+      const visited = new Set(scopedTours.flatMap((tour) => tour.data.destinations ?? []));
+      const refs = new Set(scopedTours.flatMap((tour) => [...excursionIdsForTour(tour)]));
+      scopedPlaces = destinations.filter((place) => visited.has(place.data.id));
+      scopedExcursions = excursions.filter((exc) => refs.has(exc.data.id));
+    }
+  }
   if (path === '/country/' || path === '/places/' || path === '/excursions/' || path === '/interests/') {
     if (!scopedTours.length) scopedTours = tours;
   }

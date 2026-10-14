@@ -15,7 +15,7 @@ export interface CatalogPagination {
 
 /** Page one has only the root URL. Invalid and out-of-range routes are never generated. */
 export function catalogPagePath(rootPath: string, page: number): string {
-  if (!/^\/(?:[a-z0-9]+(?:-[a-z0-9]+)*\/)+$/.test(rootPath)) {
+  if (!/^\/(?:[a-z0-9]+(?:[-_][a-z0-9]+)*\/)+$/.test(rootPath)) {
     throw new Error(`Invalid catalogue root: ${rootPath}`);
   }
   if (!Number.isSafeInteger(page) || page < 1) throw new Error(`Invalid catalogue page: ${page}`);

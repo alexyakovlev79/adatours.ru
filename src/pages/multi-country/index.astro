@@ -8,6 +8,8 @@ import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../../components/catalog/CatalogPagination.astro';
+import MultiCountrySelector from '../../components/catalog/MultiCountrySelector.astro';
+import { buildMultiCountryCombinations } from '../../lib/multi-country-combinations.mjs';
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
@@ -22,6 +24,11 @@ const [tourEntries, countryEntries] = await Promise.all([
 ]);
 const allTours = [...tourEntries].sort(compareToursBySalesFit);
 const multiCountryTours = allTours.filter((entry) => mainTourCountries(entry.data).length > 1);
+const combinationRows = buildMultiCountryCombinations(multiCountryTours, (entry) => mainTourCountries(entry.data));
+const combinationOptions = combinationRows.map((row) => ({ slugs: row.slugs, path: row.path, count: row.tours.length }));
+const selectorCountries = [...new Map(multiCountryTours.flatMap((entry) => mainTourCountries(entry.data))
+  .map((country) => [country.slug, { slug: country.slug, name: country.name }])).values()]
+  .sort((a, b) => a.slug.localeCompare(b.slug, 'en'));
 const countryEntryById = new Map(countryEntries.map((entry) => [entry.data.id, entry]));
 
 const catalogPages = paginateCatalog(multiCountryTours, '/multi-country/');
@@ -158,6 +165,8 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
       <p>Сравните страны, длительность и формат. Любой готовый маршрут можно адаптировать под ваши даты, отели и состав поездки.</p>
     </div>
 
+    <MultiCountrySelector countries={selectorCountries} combinations={combinationOptions} />
+
     {pagination && (
       <div
         data-catalog-root
@@ -171,7 +180,8 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
         <div id="catalog-items" data-catalog-items>
           {visibleTours.map((entry, index) => {
             const data = entry.data;
-            const countries = mainTourCountries(data).map((country) => country.name).join(' + ');
+            const countries = mainTourCountries(data).sort((a, b) => a.slug.localeCompare(b.slug, 'en'))
+              .map((country) => country.name).join(' + ');
             const meta = [
               countries,
               data.durationDays ? countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',

@@ -1,0 +1,131 @@
+---
+import { withBase } from '../../lib/paths';
+import { nextMultiCountryOptions } from '../../lib/multi-country-combinations.mjs';
+
+interface CountryOption { slug: string; name: string; }
+interface CombinationOption { slugs: string[]; path: string; count: number; }
+interface Props {
+  countries: CountryOption[];
+  combinations: CombinationOption[];
+  selected?: string[];
+}
+const { countries, combinations, selected = [] } = Astro.props;
+const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
+const optionsFor = (prefix: string[]): CountryOption[] => prefix.length === 0
+  ? countries
+  : nextMultiCountryOptions(combinations, prefix)
+    .map((slug) => countryBySlug.get(slug)).filter((country): country is CountryOption => Boolean(country));
+const steps = [0, 1, 2, 3].map((index) => ({
+  index,
+  options: optionsFor(selected.slice(0, index)),
+  value: selected[index] ?? '',
+}));
+const descriptions = ['Первая страна', 'Вторая страна', 'Третья страна', 'Четвертая страна'];
+const suggestions = combinations
+  .filter((row) => selected.length === 0
+    ? row.slugs.length === 2
+    : selected.length < 4 && row.slugs.length === selected.length + 1
+      && selected.every((slug) => row.slugs.includes(slug)))
+  .sort((a, b) => b.count - a.count || a.path.localeCompare(b.path, 'en'))
+  .slice(0, 8);
+---
+
+<section
+  class="mc-picker container"
+  id="country-picker"
+  aria-label="Выбор сочетания стран"
+  data-multi-country-picker
+  data-root-href={withBase('/multi-country/')}
+  data-countries={JSON.stringify(countries)}
+  data-combinations={JSON.stringify(combinations.map((row) => row.slugs.join('_')))}
+  data-selected={JSON.stringify(selected)}
+>
+  <div class="mc-picker__intro">
+    <p class="eyebrow">Страны маршрута</p>
+    <h3>Выберите сочетание стран</h3>
+    <p>Сначала укажите страну, затем добавляйте другие. В списках есть только сочетания с готовыми турами.</p>
+  </div>
+  <div class="mc-picker__fields">
+    {steps.map((step) => (
+      <div
+        class="mc-picker__field"
+        data-mc-field={step.index}
+        hidden={step.index > 0 && !(selected[step.index - 1] && step.options.length > 0)}
+      >
+        <label for={'mc-country-' + (step.index + 1)}>{descriptions[step.index]}</label>
+        <select id={'mc-country-' + (step.index + 1)} data-mc-select={step.index} autocomplete="off">
+          <option value="">Выберите страну</option>
+          {step.options.map((country) => (
+            <option value={country.slug} selected={step.value === country.slug}>{country.name}</option>
+          ))}
+        </select>
+      </div>
+    ))}
+  </div>
+  {selected.length > 0 && (
+    <a class="mc-picker__reset" href={withBase('/multi-country/')} data-mc-reset>
+      Сбросить выбор и показать все туры
+    </a>
+  )}
+  {suggestions.length > 0 && (
+    <nav class="mc-picker__suggestions" aria-label={selected.length ? 'Добавить страну к маршруту' : 'Популярные сочетания стран'}>
+      <p>{selected.length ? 'Можно добавить страну:' : 'Популярные сочетания:'}</p>
+      <div class="mc-picker__links">
+        {suggestions.map((row) => (
+          <a href={withBase(row.path)}>
+            {row.slugs.map((slug) => countryBySlug.get(slug)?.name ?? slug).join(' + ')}
+          </a>
+        ))}
+      </div>
+    </nav>
+  )}
+</section>
+
+<script>
+  import '../../scripts/multi-country-selector';
+</script>
+
+<style>
+  .mc-picker { padding-block: 0 38px; scroll-margin-top: 100px; }
+  .mc-picker__intro { max-width: 700px; }
+  .mc-picker__intro .eyebrow { margin-bottom: 8px; }
+  .mc-picker__intro h3 {
+    margin: 0 0 12px;
+    font-family: var(--font-display);
+    font-size: clamp(1.65rem, 3vw, 2.6rem);
+    font-weight: 500;
+    line-height: 1.15;
+  }
+  .mc-picker__intro > p:last-child {
+    margin: 0 0 22px;
+    color: color-mix(in srgb, var(--color-ink) 75%, transparent);
+    line-height: 1.5;
+  }
+  .mc-picker__fields { display: flex; flex-direction: column; gap: 16px; max-width: 480px; }
+  .mc-picker__field { display: flex; flex-direction: column; gap: 6px; }
+  .mc-picker__field[hidden] { display: none; }
+  .mc-picker__field label { font-size: .95rem; font-weight: 500; }
+  .mc-picker__field select {
+    display: block;
+    width: 100%;
+    min-height: 52px;
+    border: 1px solid #aaa7a1;
+    border-radius: 2px;
+    padding: 10px 16px;
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font: inherit;
+    font-size: 1.1rem;
+  }
+  .mc-picker__field select:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
+  .mc-picker__reset { display: inline-block; margin-top: 18px; color: var(--color-ink); text-underline-offset: 4px; }
+  .mc-picker__suggestions { max-width: 900px; margin-top: 24px; }
+  .mc-picker__suggestions p { margin: 0 0 12px; font-size: .95rem; }
+  .mc-picker__links { display: flex; gap: 10px 18px; flex-wrap: wrap; }
+  .mc-picker__links a { color: var(--color-ink); text-underline-offset: 4px; font-size: .94rem; }
+  .mc-picker__links a:hover, .mc-picker__reset:hover { color: var(--color-gold-deep); }
+  @media (max-width: 600px) {
+    .mc-picker { padding-bottom: 30px; }
+    .mc-picker__field select { font-size: 1rem; }
+  }
+</style>

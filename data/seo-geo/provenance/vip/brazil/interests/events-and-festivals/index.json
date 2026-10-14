@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "targetPath": "/vip/brazil/interests/events-and-festivals/",
+  "articlePath": "data/seo-geo/articles/vip/brazil/interests/events-and-festivals/index.md",
+  "researchDate": "2026-10-14",
+  "editorialIntent": "VIP-события Бразилии: сравнение девяти действующих туров через Carnival 2027, Champions Parade, Новый год на Копакабане, разнообразие географии и проверяемые входные билеты, формат групповой/частный, сервиса и перелетов.",
+  "repositorySources": [
+    "src/lib/vip-filters.mjs",
+    "src/lib/vip-tours.mjs",
+    "data/external-identity/vip-catalogues.json",
+    "data/source-index/catalogs/tours.json",
+    "src/content/themes/events-and-festivals.md",
+    "src/content/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu.md",
+    "src/content/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu-s-alagoas.md",
+    "src/content/tours/vip-tur-v-braziliyu-s-bonito-16-dnej.md",
+    "src/content/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej.md",
+    "src/content/tours/5-stran-latinskoj-ameriki-i-parad-chempionov-karnavala.md",
+    "src/content/tours/5-stran-latinskoj-ameriki-na-16-dnej-na-novyj-god.md",
+    "src/content/tours/braziliya-i-peru-na-novyj-god.md",
+    "data/seo-geo/articles/interests/events-and-festivals/tours/brazil/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://liesa.org.br/carnaval/",
+      "checkedAt": "2026-10-14",
+      "supports": "Календарь Карнавала 2027: 7,8,9 февраля конкурсные парады, 13 февраля Парад чемпионов"
+    },
+    {
+      "url": "https://liesa.org.br/noticias/260818-faq-ingressoss.html",
+      "checkedAt": "2026-10-14",
+      "supports": "Официальное раздельное билетное предложение для конкурсных дней и Champions Parade в 2027 году"
+    },
+    {
+      "url": "https://riotur.rio/editorial/carnaval-2027-ingressos-para-arquibancadas-e-cadeiras-da-sapucai-ja-estao-a-venda/",
+      "checkedAt": "2026-10-14",
+      "supports": "Календарь Rio Carnaval 2027 и разница между конкурсами и парадом лучших школ"
+    },
+    {
+      "url": "https://prefeitura.rio/cidade/prefeitura-apresenta-o-planejamento-operacional-para-o-reveillon-2026/",
+      "checkedAt": "2026-10-14",
+      "supports": "Исторический пример отдельной праздничной логистики Copacabana; не переносить схему прошлого года на 2026/27"
+    }
+  ],
+  "commercialVerification": {
+    "vipSnapshotDate": "2026-10-12",
+    "catalogSnapshotTourCount": 9,
+    "checkedTourIds": [
+      "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu",
+      "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas",
+      "tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej",
+      "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+      "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+      "tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god",
+      "tour_source_braziliya_i_peru_na_novyj_god"
+    ],
+    "notes": "Тур 5 стран на Новый год обозначен как Групповой, несмотря на VIP-подборку. Календарь 2027 независим от даты тура; не приписывать конкретной карте билет без явного содержания и проверки года. Числовые цены не обобщаются из разной базы."
+  },
+  "editorialChecks": [
+    "No assumption every VIP tour private",
+    "Avoid dated itinerary calendar conflict",
+    "Dynamic count rather than 9 hardcoded in article",
+    "Two-column tables",
+    "Only internal canonical links, independent external sources in provenance"
+  ]
+}

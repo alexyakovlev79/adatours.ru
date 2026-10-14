@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "targetPath": "/vip/brazil/interests/beach-holidays/",
+  "articlePath": "data/seo-geo/articles/vip/brazil/interests/beach-holidays/index.md",
+  "researchedAt": "2026-10-14T13:10:33.994Z",
+  "editorialIntent": "Выбор пляжных VIP-маршрутов в Бразилии по конкретному курорту, числу дней у океана и проверенным условиям программы.",
+  "repositorySources": [
+    "src/lib/vip-filters.mjs",
+    "src/lib/vip-tours.mjs",
+    "src/pages/vip/[...country].astro",
+    "data/external-identity/vip-catalogues.json",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "src/content/tours/brazil-gems-14d.md",
+    "src/content/tours/rajskaya-braziliya.md",
+    "src/content/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala.md",
+    "src/content/tours/south-brazil-12d.md",
+    "src/content/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu-s-alagoas.md",
+    "src/content/tours/vip-tur-v-braziliyu-s-amazoniej-16-dnej.md",
+    "src/content/tours/vip-tur-v-braziliyu-s-bonito-16-dnej.md",
+    "data/seo-geo/articles/interests/beach-holidays/index.md",
+    "data/seo-geo/articles/brazil/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.visitbrasil.com/en/location/buzios",
+      "supports": "Пляжи и бухты Бузиоса",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "url": "https://www.visitbrasil.com/en/location/florianopolis-en/",
+      "supports": "Пляжи Флорианополиса и сезонность",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "url": "https://visitbrasil.com/en/experience/sun-beach/",
+      "supports": "Разнообразие пляжных регионов Бразилии",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "commercialVerification": {
+    "verifiedTourIds": [
+      "tour_brazil_gems_14d",
+      "tour_source_rajskaya_braziliya",
+      "tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala",
+      "tour_brazil_south_12d",
+      "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas",
+      "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+      "tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej"
+    ],
+    "notes": "Прочитаны точные активные Tour MD. VIP-классификация не гарантирует конкретных условий обслуживания. Многострановая пляжная программа не обязательно имеет пляжные дни в Бразилии."
+  },
+  "editorialChecks": [
+    "Динамический счетчик {{catalog.toursCountPhrase}}",
+    "Только относительные внутренние ссылки в MD",
+    "Таблица в две компактные колонки",
+    "Без H1 и изображений в теле"
+  ]
+}

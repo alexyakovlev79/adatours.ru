@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "targetPath": "/interests/culture-and-history/tours/colombia/",
+  "articlePath": "data/seo-geo/articles/interests/culture-and-history/tours/colombia/index.md",
+  "researchedAt": "2026-10-14T10:46:00.012Z",
+  "editorialIntent": "Сравнение реально опубликованных культурно-исторических туров по Колумбии, а не общий путеводитель. Выбор по 5/7/8/9/11/14 дням, городам и обязательным экскурсиям; роли Боготы, Медельина, кофейного региона и Картахены, отдельные многодневные археологические маршруты и многострановые поездки.",
+  "repositorySources": [
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/source-index/catalogs/excursions.json",
+    "src/data/catalog/destinations.json",
+    "src/data/interest-registry.json",
+    "data/catalog-archive.json",
+    "data/seo-geo/articles/colombia/index.md",
+    "data/seo-geo/articles/interests/culture-and-history/tours/belize/index.md",
+    "src/data/interest-copy.json",
+    "src/content/tours/colombia-essential-5-days.md",
+    "src/content/tours/colombia-highlights-7-days.md",
+    "src/content/tours/colombia-bogota-cultural-ru.md",
+    "src/content/tours/colombia-complete-11-days.md",
+    "src/content/tours/colombia-explorer-9-days.md",
+    "src/content/tours/kolumbiya-c-kofe.md",
+    "src/content/tours/ikonicheskaya-kolumbiya.md",
+    "src/content/tours/manyashchij-peru-kolumbiya.md",
+    "data/external-identity/vip-catalogues.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/statesparties/CO",
+      "checkedAt": "2026-10-14",
+      "supports": "Культурные памятники Колумбии во Всемирном наследии ЮНЕСКО; отличие наличия памятника в стране от его посещения туром"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/285",
+      "checkedAt": "2026-10-14",
+      "supports": "Картахена: исторический порт, система городских укреплений и кварталы центра"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1121",
+      "checkedAt": "2026-10-14",
+      "supports": "Кофейный культурный ландшафт Колумбии: 2011 год, сельскохозяйственное наследие, архитектура и традиции"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/744",
+      "checkedAt": "2026-10-14",
+      "supports": "Археологический парк Сан-Августин: каменные скульптуры и погребальные сооружения"
+    },
+    {
+      "url": "https://colombia.travel/en/bogota/gold-museum",
+      "checkedAt": "2026-10-14",
+      "supports": "Богота: доколумбово искусство и Музей золота"
+    },
+    {
+      "url": "https://colombia.travel/en/bogota/salt-cathedral-zipaquira",
+      "checkedAt": "2026-10-14",
+      "supports": "Сипакира: Соляной собор и наследие добычи соли"
+    },
+    {
+      "url": "https://colombia.travel/en/medellin",
+      "checkedAt": "2026-10-14",
+      "supports": "Медельин и Коммуна 13: современная городская культура и уличное искусство"
+    },
+    {
+      "url": "https://colombia.travel/en/meetings/cultural-coffee-landscape",
+      "checkedAt": "2026-10-14",
+      "supports": "Кофейная география четырех департаментов и культурное наследие"
+    }
+  ],
+  "commercialVerification": {
+    "themeId": "theme_culture",
+    "countryId": "country_colombia",
+    "sourceCatalogMatchesAtResearch": 27,
+    "sourceCatalogMatchDefinition": "Country ID includes country_colombia AND primaryThemes/themes include theme_culture; число публичного каталога вычисляется в Astro с учетом статуса/архива и не вписано в Markdown вручную",
+    "verifiedTourIds": [
+      "tour_colombia_essential_5_days",
+      "tour_colombia_highlights_7_days",
+      "tour_source_colombia_bogota_cultural_ru",
+      "tour_colombia_explorer_9_days",
+      "tour_colombia_complete_11_days",
+      "tour_source_ikonicheskaya_kolumbiya",
+      "tour_source_kolumbiya_c_kofe",
+      "tour_source_manyashchij_peru_kolumbiya"
+    ],
+    "notes": [
+      "Коммерческие детали в статье относятся только к фактическим маршрутам production MD и составу каталогов Ada Tours.",
+      "Таблица catalog.tourTable обращается к действующим Tour ID; числовые поля выводит renderer, статические цены вручную не вводились.",
+      "Список мест Колумбии сверен по exact source catalog contentPath и фактическим файлам src/content/destinations: все 37 имеют MD.",
+      "Внутренние ссылки на Tour/Destination/Excursion сверены по каноническим каталогам; VIP Colombia подтвержден в vip-catalogues, кофейный интерес theme_coffee присутствует в interest-registry.",
+      "Археологические объекты ЮНЕСКО не выдаются за включенные в каждую программу; многострановые 14 дней не выдаются за 14 дней исключительно в Колумбии.",
+      "Тур 2023 года на Затерянный город сознательно не указан как конкретное актуальное коммерческое предложение, приводится только страница места и направление активности.",
+      "В тексте нет внешних ссылок; официальные документы хранятся только в provenance."
+    ],
+    "checkedAt": "2026-10-14"
+  }
+}

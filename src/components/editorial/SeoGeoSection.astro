@@ -113,7 +113,18 @@ const controlId = 'seo-geo-content-' + article.targetPath.split('/').filter(Bool
   .seo-geo__content :global(h4) { margin-block: 24px 12px; }
   .seo-geo__content :global(ul),
   .seo-geo__content :global(ol) { margin-block: 14px 26px; padding-left: 26px; }
-  .seo-geo__content :global(a) { color: var(--color-ink); text-underline-offset: .2em; }
+  .seo-geo__content :global(a) {
+    color: var(--color-ink);
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: .2em;
+    text-decoration-skip-ink: auto;
+  }
+  .seo-geo__content :global(a:focus-visible) {
+    outline: 2px solid var(--color-gold-deep);
+    outline-offset: 3px;
+  }
   .seo-geo__content :global(a:hover) { color: var(--color-gold-deep); }
   .seo-geo__content :global(table) {
     display: block;

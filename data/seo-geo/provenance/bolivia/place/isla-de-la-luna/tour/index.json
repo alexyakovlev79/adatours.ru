@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "targetPath": "/bolivia/place/isla-de-la-luna/tour/",
+  "articlePath": "data/seo-geo/articles/bolivia/place/isla-de-la-luna/tour/index.md",
+  "intent": "Выбор подтвержденного тура с обязательным посещением Острова Луны, место в программе, отличия от Солнечного острова и логистика Титикаки.",
+  "commercialSources": [
+    {
+      "path": "src/content/tours/priklyucheniya-v-bolivii.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/tours/peru-bolivia-uyuni-12-days.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/tours/peru-bolivia-uyuni-lakes-15-days.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/destinations/isla-de-la-luna.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/destinations/solnechnyj-ostrov.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "data/source-index/catalogs/tours.json",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    }
+  ],
+  "neighborSources": [
+    "src/content/countries/bolivia.md",
+    "src/content/destinations/solnechnyj-ostrov.md",
+    "data/seo-geo/articles/bolivia/tour/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://conocebolivia.turismoyculturas.gob.bo/wp-content/uploads/2025/11/P-BoliviaTeEspera.pdf",
+      "supports": "Острова Луны и Солнца, достопримечательности, 3812 м для озера Титикака."
+    },
+    {
+      "url": "https://boliviatravel.gob.bo/3lago-titicaca/",
+      "supports": "Остров Луны, храм Iñak Uyu; Солнечный остров; культурные и природные достопримечательности."
+    }
+  ],
+  "verification": {
+    "tourIds": [
+      "tour_source_priklyucheniya_v_bolivii"
+    ],
+    "catalogFilter": "Main routeDestinations of active Tour; no optional destination claim.",
+    "internalLinks": "Checked against current canonical destination and tour catalogs; archive recheck before content commit.",
+    "dynamicFields": [
+      "catalog.toursCountPhrase",
+      "catalog.tourTable"
+    ],
+    "externalLinksInBody": false,
+    "pricePolicy": "No price claimed for tour with priceFrom null.",
+    "published": false
+  },
+  "checkedAt": "2026-10-14T18:03:07.779Z",
+  "ownerId": "seo-gpt6-amanda-608-609-610-20261014175820296",
+  "batchId": "seo-batch-608-609-610-20261014175820296"
+}

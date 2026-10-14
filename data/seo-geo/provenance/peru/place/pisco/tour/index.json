@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "targetPath": "/peru/place/pisco/tour/",
+  "checkedAt": "2026-10-14T16:56:11.460Z",
+  "ownerId": "seo-gpt6-writer-20261014T164834779Z",
+  "batchId": "seo-batch-537-538-539-20261014T164834779Z",
+  "editorialIntent": "Сравнить три действующих тура через Писко как логистическую точку морского побережья и маршрута к линиям Наска, не подменяя самостоятельную страницу города.",
+  "questions": [
+    "Что именно включает посещение Писко в действующих турах?",
+    "Как отличаются новогодний, VIP-18 и большой VIP-33?",
+    "Как связаны Писко, Паракас, острова Бальестас и линии Наска?",
+    "Как сравнивать транспорт, сезон и услуги?",
+    "Что проверить при выборе экскурсии на море и обзорного полета?"
+  ],
+  "githubSources": [
+    "src/content/destinations/pisko.md",
+    "src/content/tours/braziliya-i-peru-na-novyj-god.md",
+    "src/content/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke.md",
+    "src/content/tours/south-america-luxury-33-days.md",
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "data/catalog-archive.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://visitaareasnaturales.sernanp.gob.pe/anps/reserva-nacional-de-paracas/",
+      "supports": "Охраняемые прибрежные экосистемы и география Паракаса, возможность посещения в течение года."
+    },
+    {
+      "url": "https://visitaareasnaturales.sernanp.gob.pe/anps/reserva-nacional-siipg-islas-ballestas/",
+      "supports": "Провинция Писко, острова Бальестас, пингвины Гумбольдта и морские львы."
+    },
+    {
+      "url": "https://www.gob.pe/institucion/mincetur/noticias/499796-destinos-ica-nasca-y-paracas-obtienen-el-sello-internacional-safe-travels",
+      "supports": "Состав туристических районов Паракаса и Наска в регионе Ика."
+    }
+  ],
+  "constraints": [
+    "Активный ассортимент подтвержден в GitHub main; архивные туры исключены.",
+    "Не приписывать дегустации писко, морской выход и полет всем турам только по географии.",
+    "Все публичные ссылки внутренние и канонические; никакие внешние источники в теле статьи не приводятся.",
+    "Количества и таблица действующих туров пересчитываются через catalog.* при сборке."
+  ]
+}

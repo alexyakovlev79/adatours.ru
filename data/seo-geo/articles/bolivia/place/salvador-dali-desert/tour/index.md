@@ -11,7 +11,7 @@ lead: >-
 
 Каталог объединяет {{catalog.toursCountPhrase}} с [пустыней Сальвадора Дали](/bolivia/place/salvador-dali-desert/) в основном маршруте. Это природная остановка южного Альтиплано, расположенная в районе [заповедника Эдуардо-Авароа](/bolivia/place/eduardo-avaroa-national-reserve/). Она входит в последовательность переездов между [Лагуной Верде](/bolivia/place/laguna-verde/), [источниками Полкес](/bolivia/place/polques-hot-springs/) и [гейзерами Соль-де-Маньяна](/bolivia/place/sol-de-manana-geysers/).
 
-В ассортименте Ada Tours есть 2 подходящие по структуре поездки: [групповой джип-тур на 3 дня](/bolivia/tour/bolivia-uyuni-salt-flats-jeep-tour-3-days/) и [«Природные чудеса Боливии» на 10 дней](/bolivia/tour/bolivia-natural-wonders-10-days/), где природный этап дополняют Ла-Пас, Амазония и Титикака. Здесь стоит выбирать не только сам пейзаж Дали, но и то, сколько разных районов вы хотите посетить до него и после.
+Для сравнения возьмем [групповой джип-тур на 3 дня](/bolivia/tour/bolivia-uyuni-salt-flats-jeep-tour-3-days/) и [«Природные чудеса Боливии» на 10 дней](/bolivia/tour/bolivia-natural-wonders-10-days/), где природный этап дополняют Ла-Пас, Амазония и Титикака. Здесь стоит выбирать не только сам пейзаж Дали, но и то, сколько разных районов вы хотите посетить до него и после.
 
 {{catalog.tourTable:tour_source_solonchak_uyuni,tour_source_prirodnye_chudesa_bolivii}}
 

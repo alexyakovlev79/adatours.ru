@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "targetPath": "/vip/argentina/interests/events-and-festivals/",
+  "articlePath": "data/seo-geo/articles/vip/argentina/interests/events-and-festivals/index.md",
+  "authoredBy": "seo-gpt6-author-20261014-20261014130052811",
+  "checkedAt": "2026-10-14",
+  "editorialIntent": "Объяснить выбор четырех VIP-событийных туров с основной Аргентиной, разделить географию праздника (Рио или Буэнос-Айрес), формат (группа/частный с групповой частью/круиз), включенные билеты и перелеты. Отличается от общей тематической подборки конкретным сравнением четырех VIP-программ.",
+  "repositorySources": [
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-filters.mjs",
+    "data/external-identity/vip-catalogues.json",
+    "data/catalog-archive.json",
+    "data/seo-geo/articles/interests/events-and-festivals/tours/argentina/index.md",
+    "src/content/countries/argentina.md",
+    "src/content/tours/5-stran-latinskoj-ameriki-i-parad-chempionov-karnavala.md",
+    "src/content/tours/karnaval-5-stran.md",
+    "src/content/tours/5-stran-latinskoj-ameriki-na-16-dnej-na-novyj-god.md",
+    "src/content/tours/kruiznyj-tur-po-luchshim-mestam-argentiny-chili-i-bolivii.md"
+  ],
+  "independentSources": [
+    {
+      "url": "https://turismo.buenosaires.gob.ar/es/article/tango-ba-festival-y-mundial?field_barrio_tid=All",
+      "publisher": "Ente de Turismo de la Ciudad de Buenos Aires",
+      "checkedAt": "2026-10-14",
+      "supports": "Tango BA Festival y Mundial как самостоятельное событие в Буэнос-Айресе, без утверждения о включении в текущие туры."
+    },
+    {
+      "url": "https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/celebrar-la-vendimia-en-mendoza",
+      "publisher": "Argentina.gob.ar — turismo",
+      "checkedAt": "2026-10-14",
+      "supports": "Fiesta Nacional de la Vendimia в Мендосе, без переноса дат и включения в конкретную программу."
+    }
+  ],
+  "editorialNotes": [
+    "Строка VIP Аргентина+события: четыре tour ID из vip-catalogues, actual tour MD в main и отсутствие архивного статуса подтверждены.",
+    "Число динамическое через catalog.toursCountPhrase; статический заголовок не фиксирует ассортимент.",
+    "VIP-алгоритм не гарантирует услуги: явно разграничены групповые/частные/круизные форматы.",
+    "Внутренние канонические ссылки на активные места, маршруты и тематические каталоги; внешние источники только в provenance.",
+    "Двухколоночная таблица для мобильных, markdown H2/H3, без H1 и изображений."
+  ]
+}

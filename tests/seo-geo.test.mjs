@@ -32,6 +32,8 @@ const article = [
 
 test('normalizes canonical paths and forbids pagination, queries and path traversal', () => {
   assert.equal(normalizeSeoGeoPath('/vip/bolivia'), '/vip/bolivia/');
+  assert.equal(normalizeSeoGeoPath('/multi-country/argentina_brazil_chile'), '/multi-country/argentina_brazil_chile/');
+  assert.equal(seoGeoArticleFile('/multi-country/argentina_brazil/'), 'data/seo-geo/articles/multi-country/argentina_brazil/index.md');
   assert.equal(seoGeoArticleFile('/vip/bolivia/'), 'data/seo-geo/articles/vip/bolivia/index.md');
   for (const path of ['/vip/bolivia/page/2/', '/vip/bolivia/?sort=1', '/foo/#faq',
     '/foo/../../bar/', '/', '//other.example/']) {

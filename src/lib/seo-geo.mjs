@@ -2,7 +2,7 @@ import yaml from 'js-yaml';
 import { parseFragment } from 'parse5';
 
 // One canonical article per page: data/seo-geo/articles/<canonical>/index.md.
-const PATH_RE = /^\/(?:[a-z0-9]+(?:-[a-z0-9]+)*\/)+$/;
+const PATH_RE = /^\/(?:[a-z0-9]+(?:[-_][a-z0-9]+)*\/)+$/;
 const KEY_RE = /^[a-z][A-Za-z0-9_]*(?:\.[a-z][A-Za-z0-9_]*)*$/;
 const BLOCK_RE = /\{\{#if\s+([a-z][A-Za-z0-9_.]*)\s*\}\}([\s\S]*?)\{\{\/if\}\}/g;
 const VALUE_RE = /\{\{([a-z][A-Za-z0-9_.]*)\}\}/g;

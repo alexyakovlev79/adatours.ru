@@ -1,13 +1,13 @@
 /**
  * Static multi-country combinations. A match contains every selected MAIN
  * route country; optional visits in tour.countries are never treated as main.
- * Generate subsets of 2–4 countries even for routes visiting 5+ countries.
+ * Generate subsets of 1–4 countries even for routes visiting 5+ countries.
  */
 export const MAX_SELECTED_COUNTRIES = 4;
 
 export function multiCountryCombinationKey(slugs) {
   const values = [...new Set(slugs)];
-  if (values.length < 2 || values.length > MAX_SELECTED_COUNTRIES
+  if (values.length < 1 || values.length > MAX_SELECTED_COUNTRIES
     || values.some((slug) => !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))) {
     throw new Error('Invalid multi-country combination');
   }
@@ -40,7 +40,7 @@ export function buildMultiCountryCombinations(tours, countriesForTour) {
         add(size, i + 1, [...selected, countries[i]]);
       }
     };
-    for (let size = 2; size <= Math.min(countries.length, MAX_SELECTED_COUNTRIES); size++) {
+    for (let size = 1; size <= Math.min(countries.length, MAX_SELECTED_COUNTRIES); size++) {
       add(size, 0, []);
     }
   }

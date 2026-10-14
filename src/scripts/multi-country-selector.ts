@@ -9,18 +9,9 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
   const rootHref = picker.dataset.rootHref ?? '/multi-country/';
   const fields = [...picker.querySelectorAll<HTMLElement>('[data-mc-field]')];
   const selects = [...picker.querySelectorAll<HTMLSelectElement>('[data-mc-select]')];
-  const storageKey = 'adatours:multi-country-first';
   const rootPath = new URL(rootHref, window.location.origin).pathname;
   const onRoot = window.location.pathname === rootPath;
   let selected = JSON.parse(picker.dataset.selected ?? '[]') as string[];
-
-  if (onRoot && selected.length === 0) {
-    try {
-      const first = window.sessionStorage.getItem(storageKey);
-      window.sessionStorage.removeItem(storageKey);
-      if (first && countries.some((country) => country.slug === first)) selected = [first];
-    } catch { /* Storage can be blocked; the selector still works. */ }
-  }
 
   const available = (prefix: string[]): CountryOption[] => {
     if (prefix.length === 0) return countries;
@@ -55,7 +46,7 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
     select.addEventListener('change', () => {
       selected = [...selected.slice(0, index), ...(select.value ? [select.value] : [])];
       render();
-      if (selected.length >= 2) {
+      if (selected.length >= 1) {
         const key = [...selected].sort().join('_');
         if (known.has(key)) {
           const destination = rootHref + key + '/';
@@ -66,16 +57,8 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
         }
       }
       if (!onRoot) {
-        try {
-          if (selected.length === 1) window.sessionStorage.setItem(storageKey, selected[0]);
-          else window.sessionStorage.removeItem(storageKey);
-        } catch { /* No persistent state required. */ }
         window.location.assign(rootHref + '#country-picker');
       }
     });
-  });
-
-  picker.querySelector<HTMLAnchorElement>('[data-mc-reset]')?.addEventListener('click', () => {
-    try { window.sessionStorage.removeItem(storageKey); } catch { /* Ignore. */ }
   });
 }

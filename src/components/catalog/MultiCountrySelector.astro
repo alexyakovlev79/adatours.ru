@@ -23,7 +23,7 @@ const steps = [0, 1, 2, 3].map((index) => ({
 const descriptions = ['Первая страна', 'Вторая страна', 'Третья страна', 'Четвертая страна'];
 const suggestions = combinations
   .filter((row) => selected.length === 0
-    ? row.slugs.length === 2
+    ? row.slugs.length === 1
     : selected.length < 4 && row.slugs.length === selected.length + 1
       && selected.every((slug) => row.slugs.includes(slug)))
   .sort((a, b) => b.count - a.count || a.path.localeCompare(b.path, 'en'))
@@ -68,8 +68,8 @@ const suggestions = combinations
     </a>
   )}
   {suggestions.length > 0 && (
-    <nav class="mc-picker__suggestions" aria-label={selected.length ? 'Добавить страну к маршруту' : 'Популярные сочетания стран'}>
-      <p>{selected.length ? 'Можно добавить страну:' : 'Популярные сочетания:'}</p>
+    <nav class="mc-picker__suggestions" aria-label={selected.length ? 'Добавить страну к маршруту' : 'Выбор по странам'}>
+      <p>{selected.length ? 'Можно добавить страну:' : 'Начните со страны:'}</p>
       <div class="mc-picker__links">
         {suggestions.map((row) => (
           <a href={withBase(row.path)}>

@@ -78,7 +78,7 @@ export function seoGeoScope(path, data) {
 
   if (path === '/multi-country/') scopedTours = tours.filter((tour) =>
     new Set(tour.data.routeCountries ?? tour.data.countries).size > 1);
-  const multiComboMatch = path.match(/^\/multi-country\/([a-z0-9-]+(?:_[a-z0-9-]+){1,3})\/$/);
+  const multiComboMatch = path.match(/^\/multi-country\/([a-z0-9-]+(?:_[a-z0-9-]+){0,3})\/$/);
   if (multiComboMatch) {
     const slugs = multiComboMatch[1].split('_');
     const ids = slugs.map((slug) => countryBySlug.get(slug)?.id);

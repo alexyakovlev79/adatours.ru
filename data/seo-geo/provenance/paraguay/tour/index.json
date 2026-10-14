@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "targetPath": "/paraguay/tour/",
+  "articlePath": "data/seo-geo/articles/paraguay/tour/index.md",
+  "editorialIntent": "Сравнить реально продаваемые 8-дневный однострановой маршрут по Парагваю и 16-дневный маршрут Уругвай-Парагвай-Игуасу по дням, логистике, историческим остановкам и цене, без дублирования отдельного путеводителя по Парагваю.",
+  "repositorySources": [
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/source-index/catalogs/excursions.json",
+    "data/catalog-archive.json",
+    "src/content/tours/klassicheskij-paragvaj.md",
+    "src/content/tours/tur-po-uruguayu-i-paragvayu-16-dnej.md",
+    "src/content/excursions/siti-tur-v-asunsone.md",
+    "data/seo-geo/articles/paraguay/index.md",
+    "data/seo-geo/provenance/paraguay/index.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/648",
+      "checkedAt": "2026-10-14",
+      "supports": "Историческое наследие Тринидада и Хесус-де-Таваранге и их статус Всемирного наследия ЮНЕСКО"
+    },
+    {
+      "url": "https://www.itaipu.gov.py/turismo/visitas",
+      "checkedAt": "2026-10-14",
+      "supports": "Действующие виды туристических посещений Итайпу, режимы посещения различаются"
+    },
+    {
+      "url": "https://www.meteorologia.gov.py/la-dmh/la-meteorologia-en-paraguay/",
+      "checkedAt": "2026-10-14",
+      "supports": "Климатические наблюдения Парагвая и необходимость региональной проверки погоды"
+    }
+  ],
+  "commercialVerification": {
+    "tourIds": [
+      "tour_source_klassicheskij_paragvaj",
+      "tour_source_tur_po_uruguayu_i_paragvayu_16_dnej"
+    ],
+    "statuses": "Both published, not archived in inspected current production MD",
+    "principalCountries16": [
+      "country_uruguay",
+      "country_paraguay",
+      "country_brazil"
+    ],
+    "optionalCountry16": "country_argentina",
+    "priceBasis": "No cross-product minimum; priceFrom USD notes do not reliably specify same price basis",
+    "notes": "Tour names retain historical years; no guaranteed future departures or automatically included Russian guide."
+  },
+  "researchedAt": "2026-10-14T14:39:01.396Z"
+}

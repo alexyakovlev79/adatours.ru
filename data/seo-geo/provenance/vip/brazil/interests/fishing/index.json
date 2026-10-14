@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "targetPath": "/vip/brazil/interests/fishing/",
+  "articlePath": "data/seo-geo/articles/vip/brazil/interests/fishing/index.md",
+  "researchedAt": "2026-10-14T13:19:52.342Z",
+  "editorialIntent": "Уточнить реальное содержание единственного VIP-тура на пересечении Бразилии и рыбалки, отличить возможность попробовать ловлю пираний в экоэкскурсии от специализированной рыболовной экспедиции.",
+  "repositorySources": [
+    "data/external-identity/vip-catalogues.json",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/excursions.json",
+    "data/source-index/catalogs/destinations.json",
+    "src/lib/vip-filters.mjs",
+    "src/lib/vip-tours.mjs",
+    "src/content/tours/brazil-three-ecosystems-8-days.md",
+    "src/content/excursions/araras-canoe-trek-night-safari.md",
+    "src/content/destinations/pantanal.md",
+    "src/content/destinations/araras-eco-lodge.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.gov.br/mpa/pt-br/assuntos/cadastro-registro-e-monitoramento/pescadora-e-pescador-amador-ou-esportivo/solicitar-registro-de-pescador-amador-1",
+      "supports": "Официальная лицензия на любительскую рыбалку, ее срок, исключения на охраняемых территориях и дополнительные штатные требования; обновление страницы 03.07.2026",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "url": "https://www.gov.br/pt-br/servicos/solicitar-licenca-de-pescador-amador-ou-esportivoo?id=10058&origem=servico",
+      "supports": "Условия оформления для граждан и иностранцев, правила любительской рыбалки; актуализация 17.08.2026",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "url": "https://www.gov.br/mpa/pt-br/assuntos/noticias/consulta-publica-para-revisao-das-regras-da-pesca-amadora-ou-esportiva-ate-18-11/",
+      "supports": "На 14.10.2026 идет публичное обсуждение возможной корректировки правил, поэтому не давать бессрочных точных обещаний",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "commercialVerification": {
+    "verifiedTourIds": [
+      "tour_brazil_three_ecosystems_8_days"
+    ],
+    "verifiedExcursionIds": [
+      "excursion_araras_canoe_trek_night_safari"
+    ],
+    "notes": "В VIP-срезе один тур. Основные темы wildlife/adventure; fishing только дополнительная. В экскурссии Araras говорится о возможности попробовать поймать пираний, а не обязательном или многодневном рыболовном туре. Основной маршрут каноэ Кларинью, альтернативный Коришу."
+  },
+  "editorialChecks": [
+    "Обещания VIP-сервиса и улова не придуманы",
+    "Сезонные и лицензионные ограничения адресные",
+    "Только работающие канонические ссылки на tour, excursion, destinations",
+    "Двухколоночные таблицы и динамический счетчик"
+  ]
+}

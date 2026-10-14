@@ -1,0 +1,54 @@
+{
+  "targetPath": "/vip/interests/wildlife/",
+  "checkedAt": "2026-10-14T14:59:35.166Z",
+  "ownerId": "seo-gpt6-amanda-vip-countries-20261014T1429",
+  "editorialIntent": "Сравнить природные VIP-поездки по экосистемам, подтвержденным выездам, длительности и фактическим условиям без гарантий встреч с животными.",
+  "questions": [
+    "Где наблюдать животных: Пантанал, Амазония, Корковадо, Галапагосы, Антарктида?",
+    "Чем отличаются сафари по реке, круизы и пешие маршруты?",
+    "Какие условия VIP действительно подтверждены конкретными программами?",
+    "Как влияет сезонность и почему невозможно гарантировать встречу с диким животным?",
+    "Какие природоохранные правила действуют при наблюдении?"
+  ],
+  "githubSources": [
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-filters.mjs",
+    "src/lib/vip-copy.mjs",
+    "data/external-identity/vip-catalogues.json",
+    "data/catalog-archive.json",
+    "src/data/catalog/destinations.json",
+    "src/content/tours/pantanal-za-5-dnej.md",
+    "src/content/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre.md",
+    "src/content/tours/amazoniya-kruiz-tukano.md",
+    "src/content/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya.md",
+    "src/content/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej.md",
+    "src/content/tours/ekstrim-v-kosta-rike.md",
+    "src/content/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej.md",
+    "src/content/tours/roskoshnaya-patagoniya-10-dney.md",
+    "src/content/tours/antarktida-ekspress-vozdushnyj-kruiz.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/999",
+      "supports": "Экология и сезонное затопление Пантанала, разнообразие видов и ягуары"
+    },
+    {
+      "url": "https://www.sinac.go.cr/en-us/ac/acosa/pnc/pages/default.aspx",
+      "supports": "Корковадо: природные наблюдения, зависимость от сезона и приливов, правила посещения, запрет кормить животных"
+    },
+    {
+      "url": "https://galapagos.gob.ec/campana-yo-si-cumplo-promueve-el-respeto-de-las-reglas-de-visita-en-galapagos/",
+      "supports": "Галапагосы: дистанция от животных 2 м, запрет трогать и кормить, соблюдать маршруты"
+    },
+    {
+      "url": "https://iaato.org/visiting-antarctica/during-your-visit",
+      "supports": "Правила ответственного посещения Антарктики и наблюдения за дикими животными"
+    }
+  ],
+  "limitations": [
+    "Состав VIP определяется действующим алгоритмом названий и ценовых рангов. Премиальный сервис подтвержден только там, где явно записан в активном Tour MD.",
+    "Состав подбора взят из VIP-каталога 12.10.2026 и активных Tour MD; динамическое число туров берется из актуального каталога при сборке.",
+    "Внешние источники не добавлены в рендеримый Markdown, их URL и дата находятся только в provenance.",
+    "Дикие животные не являются гарантированной частью встречи; программа подтверждает только маршрут и предусмотренные наблюдательные активности."
+  ]
+}

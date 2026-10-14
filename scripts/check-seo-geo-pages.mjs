@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, relative, dirname, sep } from 'node:path';
 import { parseSeoGeoArticle, seoGeoArticleFile } from '../src/lib/seo-geo.mjs';
+import { isArchivedPath } from '../src/lib/archive.mjs';
 
 const root = join(process.cwd(), 'data', 'seo-geo', 'articles');
 const dist = join(process.cwd(), 'dist');
@@ -56,6 +57,10 @@ for (const file of articles) {
       const links = [...section.matchAll(/<a\b[^>]*\bhref="([^"]+)"/g)].map((m) => m[1]);
       for (const href of links) {
         const route = href.split('#')[0];
+        // Archive pages return HTTP 200, but must never be recommended from an active article.
+        if (isArchivedPath(route)) {
+          throw new Error('SEO/GEO link points to an archived tour/excursion: ' + href + ' on ' + article.targetPath);
+        }
         if (!route.startsWith('/') || route.startsWith('//') || !existsSync(join(dist, route, 'index.html'))) {
           throw new Error('SEO/GEO internal link missing or not canonical: ' + href + ' on ' + article.targetPath);
         }

@@ -47,14 +47,14 @@
     "retries_per_url_in_same_step": 0
   },
   "first_next_task": {
-    "id": "adatours-com-crawl-002",
+    "id": "adatours-com-crawl-003",
     "step": 2,
     "domain": "adatours.com",
-    "action": "Verify permitted access before continuing this frozen actual-URL batch. Skip processed rows, maximum 300 URLs and 10 minutes. Stop on proxy CONNECT 403 or HTTP 429, preserve retries. No programme sameAs comparison.",
+    "action": "Continue only this frozen actual-URL batch; skip processed rows. Maximum 300 URLs and 10 minutes; checkpoint and stop. No programme sameAs comparison.",
     "inventory": "adatours-com-url-inventory-20261012.json",
     "queue": "adatours.com.json",
-    "status": "partial",
-    "url_count": 67,
+    "status": "pending",
+    "url_count": 32,
     "access_check_required": true
   },
   "resume": "Read plan.json and the selected domain queue. Run one batch, persist results/cursor and checkpoint commit, report counts, then stop until the user says далее.",
@@ -81,10 +81,10 @@
     "step": 2,
     "domain": "adatours.com",
     "batch_id": "adatours-com-crawl-002",
-    "processed_in_batch": 233,
-    "remaining_in_batch": 67,
+    "processed_in_batch": 300,
+    "remaining_in_batch": 0,
     "report": "adatours-com-crawl-002.json",
-    "saved_at": "2026-10-14T06:06:41.865756+00:00"
+    "saved_at": "2026-10-14T06:43:38.383677+00:00"
   },
   "step_1": {
     "status": "completed",
@@ -95,21 +95,21 @@
     "report": "adatours-com-model-check-20261012.json"
   },
   "last_access_check": {
-    "url": "https://adatours.com/ouro-preto/excursions",
+    "url": "https://adatours.com/",
     "method": "HEAD",
-    "checked_at": "2026-10-14T05:58:45+00:00",
+    "checked_at": "2026-10-14T06:35:08+00:00",
     "http_status": 200,
-    "final_url": "https://adatours.com/ouro-preto/excursions",
+    "final_url": "https://adatours.com/",
     "content_type": "text/html; charset=utf-8",
     "status": "access_confirmed_this_pass",
     "robots": {
       "url": "https://adatours.com/robots.txt",
       "http_status": 200,
-      "checked_at": "2026-10-14T05:59:25.739096+00:00",
+      "checked_at": "2026-10-14T06:36:01.469305+00:00",
       "sha256": "bbaf6fd733dc879f25d513f972c6b31ced894b2561e9c232936c52320e5bf40f"
     },
-    "fetched_this_pass": 74,
+    "fetched_this_pass": 67,
     "retry_this_pass": 0,
-    "report": "../adatours-com-crawl-002.json"
+    "report": "adatours-com-crawl-002.json"
   }
 }

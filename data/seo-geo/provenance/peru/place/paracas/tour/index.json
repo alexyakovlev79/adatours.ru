@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "targetPath": "/peru/place/paracas/tour/",
+  "articlePath": "data/seo-geo/articles/peru/place/paracas/tour/index.md",
+  "authoredBy": "seo-gpt6-amanda-writer-20261014T164804411Z",
+  "checkedAt": "2026-10-14",
+  "editorialIntent": "Выбор основных туров через Паракас и различие с факультативными экскурсиями, Бальестас, Наска, логистика и сезонные ограничения.",
+  "repositorySources": [
+    "src/content/destinations/parakas.md",
+    "src/content/tours/21-dnevnoe-priklyuchenie-v-peru.md",
+    "src/content/tours/peru-8d.md",
+    "src/content/tours/ves-mnogolikij-peru.md",
+    "src/content/excursions/parakas-i-ostrova-ballestas.md",
+    "src/content/excursions/peru-paracas-nazca-full-day.md",
+    "src/content/excursions/paracas-nazca-two-days.md",
+    "src/data/catalog/destinations.json",
+    "data/catalog-archive.json"
+  ],
+  "independentSources": [
+    {
+      "url": "https://visitaareasnaturales.sernanp.gob.pe/anps/reserva-nacional-de-paracas/",
+      "publisher": "SERNANP, Национальный заповедник Паракас",
+      "checkedAt": "2026-10-14",
+      "supports": "Природные ландшафты, круглый год, наземный северный маршрут, ориентир 4 часа от Лимы, правила посещения."
+    },
+    {
+      "url": "https://visitaareasnaturales.sernanp.gob.pe/anps/reserva-nacional-siipg-islas-ballestas/",
+      "publisher": "SERNANP, сектор островов Бальестас",
+      "checkedAt": "2026-10-14",
+      "supports": "Отдельная охраняемая зона островов, морские львы, пингвины Гумбольдта, катера, правила наблюдения и круглогодичный сезон."
+    }
+  ],
+  "editorialNotes": [
+    "Основной Tour MD на 21 день включает Паракас в день 3, routeDestinations.",
+    "8-дневный тур не имеет routeDestinations и попадает в каталог по fallback, но в narrative относит Паракас к дополнительным экскурсиям; смысл в статье уточнен.",
+    "12-дневный маршрут хранит Паракас только в destinations, не в routeDestinations, и указывает факультативную поездку.",
+    "Цены не фиксировались в Markdown, чтобы не дублировать меняющиеся условия туров."
+  ]
+}

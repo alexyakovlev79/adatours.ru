@@ -2,7 +2,7 @@
   "domain": "adatours.com",
   "role": "primary",
   "order": 1,
-  "status": "crawl_partial",
+  "status": "crawl_pending_retries",
   "entry_url": "https://adatours.com/",
   "url_inventory_status": "prepared",
   "discovered_urls": [
@@ -1311,10 +1311,14 @@
         645,
         646
       ],
-      "status": "pending"
+      "status": "completed",
+      "processed": 32,
+      "remaining": 0,
+      "cursor": 32,
+      "report": "../adatours-com-crawl-003.json"
     }
   ],
-  "crawl_cursor": 600,
+  "crawl_cursor": 632,
   "verification_cursor": 0,
   "retry_urls": [
     "https://adatours.com/colombia-san-andres-tours-excursions-hotels/excursions",
@@ -6144,7 +6148,7 @@
   "last_access_check": {
     "url": "https://adatours.com/",
     "method": "HEAD",
-    "checked_at": "2026-10-14T06:35:08+00:00",
+    "checked_at": "2026-10-14T06:53:52.438026+00:00",
     "http_status": 200,
     "final_url": "https://adatours.com/",
     "content_type": "text/html; charset=utf-8",
@@ -6152,12 +6156,12 @@
     "robots": {
       "url": "https://adatours.com/robots.txt",
       "http_status": 200,
-      "checked_at": "2026-10-14T06:36:01.469305+00:00",
+      "checked_at": "2026-10-14T06:54:02.371802+00:00",
       "sha256": "bbaf6fd733dc879f25d513f972c6b31ced894b2561e9c232936c52320e5bf40f"
     },
-    "fetched_this_pass": 67,
+    "fetched_this_pass": 32,
     "retry_this_pass": 0,
-    "report": "../adatours-com-crawl-002.json"
+    "report": "../adatours-com-crawl-003.json"
   },
   "access_checks": [
     {
@@ -6247,6 +6251,51 @@
       "fetched_this_pass": 67,
       "retry_this_pass": 0,
       "report": "../adatours-com-crawl-002.json"
+    },
+    {
+      "url": "https://adatours.com/",
+      "method": "HEAD",
+      "checked_at": "2026-10-14T06:53:52.438026+00:00",
+      "http_status": 200,
+      "final_url": "https://adatours.com/",
+      "content_type": "text/html; charset=utf-8",
+      "status": "access_confirmed_this_pass",
+      "robots": {
+        "url": "https://adatours.com/robots.txt",
+        "http_status": 200,
+        "checked_at": "2026-10-14T06:54:02.371802+00:00",
+        "sha256": "bbaf6fd733dc879f25d513f972c6b31ced894b2561e9c232936c52320e5bf40f"
+      },
+      "fetched_this_pass": 32,
+      "retry_this_pass": 0,
+      "report": "../adatours-com-crawl-003.json"
+    }
+  ],
+  "retry_batches": [
+    {
+      "id": "adatours-com-retry-001",
+      "inventory_row_indexes": [
+        188,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        314,
+        473
+      ],
+      "status": "pending",
+      "processed": 0,
+      "remaining": 15,
+      "cursor": 0,
+      "scope": "One separate retry request per saved failed URL; no sameAs decisions."
     }
   ]
 }

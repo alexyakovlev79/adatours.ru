@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "targetPath": "/brazil/place/bento-goncalves/tour/",
+  "checkedAt": "2026-10-14",
+  "ownerId": "seo-gpt6-amanda-writer-20261014T154055704Z",
+  "batchId": "seo-batch-348-413-414-20261014T154055704Z",
+  "editorialIntent": "Сравнить реальные активные туры с основным посещением Бенту-Гонсалвиса по времени в винном регионе, включенным дегустациям, сопровождению, полетам и дальнейшей географии. Не повторять путеводитель по месту.",
+  "questions": [
+    "Какие активные маршруты проходят через Бенту-Гонсалвис?",
+    "В чем разница между 7- и 13-дневными турами?",
+    "Есть ли в программе дегустация вина, квадроциклы и экскурсии?",
+    "Как добраться и где заканчивается поездка?",
+    "Как сезон урожая соотносится с фактической программой?"
+  ],
+  "githubSources": [
+    "src/content/destinations/bento-goncalves.md",
+    "src/content/tours/southern-brazil-vip-7-days.md",
+    "src/content/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre.md",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/catalog-archive.json",
+    "src/content/excursions/bento-vineyard-atv.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://bento.tur.br/vale-dos-vinhedos/",
+      "supports": "Винный регион, итальянская иммиграция, традиции и туристические форматы."
+    },
+    {
+      "url": "https://bento.tur.br/perfil-da-cidade/",
+      "supports": "Сезон сбора винограда и местные винные маршруты."
+    },
+    {
+      "url": "https://www.embrapa.br/en/web/uva-e-vinho/indicacoes-geograficas-de-vinhos-do-brasil/do-vale-dos-vinhedos",
+      "supports": "Denominação de Origem в 2012 году и происхождение региона."
+    }
+  ],
+  "constraints": [
+    "Активны два соответствующих Tour, опубликованные в main; сравнение только по их MD.",
+    "Тур 7 дней включает прогулку и квадроциклы, но не подтверждает отдельную дегустацию.",
+    "7-дневная цена рассчитана на 2 пассажиров; в статье цифры цены динамические.",
+    "Внутренние ссылки ведут на канонические активные страницы. Внешние источники сохраняются только в provenance."
+  ]
+}

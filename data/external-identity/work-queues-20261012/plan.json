@@ -47,10 +47,10 @@
     "retries_per_url_in_same_step": 0
   },
   "first_next_task": {
-    "id": "adatours-com-identity-013",
+    "id": "adatours-com-identity-014",
     "step": 3,
     "domain": "adatours.com",
-    "action": "Continue after 600 stage-3 objects. Verify the next 50 current RU objects; exact identities only; skip batches 001-012 and confirmed step-1 pairs.",
+    "action": "Continue after 650 distinct stage-3 objects. Verify next 50 current RU objects; exact identities only, skipping completed batches 001–013 and confirmed stage-1 pairs.",
     "status": "pending",
     "object_limit": 50,
     "queue": "adatours.com.json",
@@ -79,14 +79,13 @@
   "last_checkpoint": {
     "step": 3,
     "domain": "adatours.com",
-    "batch_id": "adatours-com-identity-012",
+    "batch_id": "adatours-com-identity-013",
     "processed_in_batch": 50,
-    "confirmed_in_batch": 4,
-    "checked_no_confirmed_pair": 46,
-    "verification_cursor": 600,
-    "report": "adatours-com-identity-012.json",
-    "saved_at": "2026-10-14T11:32:44.004Z",
-    "batch_011_report_imported": 50
+    "confirmed_in_batch": 7,
+    "checked_no_confirmed_pair": 43,
+    "verification_cursor": 650,
+    "report": "adatours-com-identity-013.json",
+    "saved_at": "2026-10-14T12:24:01.322Z"
   },
   "step_1": {
     "status": "completed",
@@ -133,7 +132,7 @@
       "unconfirmed_elsewhere": 36
     }
   ],
-  "updated_at": "2026-10-14T11:32:44.004Z",
+  "updated_at": "2026-10-14T12:24:01.322Z",
   "completed_reports_pending_sync": [
     {
       "batch_id": "adatours-com-identity-011",

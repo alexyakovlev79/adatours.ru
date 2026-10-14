@@ -79,6 +79,22 @@ export async function pageStructuredData(input: {
       priceSummaries.push(prefix + noun + ': ' + (seo.quote.multiple ? 'от ' : '') + formatSeoMoney(amount, currency) + '.');
     }
   }
+  // Metadata must quote the minimum of the entire logical selection, not
+  // whichever ten products happened to be rendered on this catalogue page.
+  // JSON-LD AggregateOffer itself remains scoped to the actually rendered links.
+  if (seo.quote && seo.quote.parts.length === 1) {
+    const { currency, amount } = seo.quote.parts[0];
+    const kind = seo.quote.kind;
+    const noun = kind === 'tour' ? (seo.quote.count === 1 ? 'тура' : 'туров')
+      : (seo.quote.count === 1 ? 'экскурсии' : 'экскурсий');
+    const text = (seo.quote.count === 1 ? 'Стартовая цена ' : 'Стартовые цены ') +
+      noun + ': ' + (seo.quote.multiple ? 'от ' : '') + formatSeoMoney(amount, currency) + '.';
+    const pattern = kind === 'tour' ? /^(Стартовые цены туров|Стартовая цена тура):/
+      : /^(Стартовые цены экскурсий|Стартовая цена экскурсии):/;
+    const existing = priceSummaries.findIndex((summary) => pattern.test(summary));
+    if (existing >= 0) priceSummaries[existing] = text;
+    else if (seo.changed) priceSummaries.push(text);
+  }
   const priceSummary = priceSummaries.join(' ');
   const metaDescription = priceSummary ? priceSummary + ' ' + seo.description : seo.description;
   const currentPage = graph['@graph'].find((node: any) => node['@id'] === input.url + '#webpage');

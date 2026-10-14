@@ -21,7 +21,10 @@
       "cases"
     ],
     "seoStagingBranch": "seo-geo/staging",
-    "seoClaimTimeoutMinutes": 30,
+    "seoClaimTimeoutMinutes": 60,
+    "seoWriterBatchSize": 3,
+    "seoWriterUnlimitedDuration": true,
+    "seoClaimRenewal": "60-minute rolling lease, explicit CAS refresh while writing",
     "seoPublicationRole": "Только мастер-чат: собирай SEO / публикуй SEO",
     "seoWriterBuildForbidden": true
   },

@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "targetPath": "/interests/adventure/tours/",
+  "articlePath": "data/seo-geo/articles/interests/adventure/tours/index.md",
+  "researchedAt": "2026-10-14T07:04:21.660Z",
+  "editorialIntent": "Тематический каталог готовых приключенческих туров: сравнение конкретных активных программ, нагрузки, длительности, высоты ночевок, формата и включенных активностей. Отличается от глобального руководства /interests/adventure/ практическим выбором между действующими предложениями, без дублирования страновых гидов и itinerary.",
+  "repositorySources": [
+    "src/content/themes/priklyucheniya.md",
+    "src/data/interest-copy.json",
+    "data/source-index/catalogs/tours.json",
+    "src/lib/seo-geo-articles.ts",
+    "data/seo-geo/articles/interests/adventure/index.md",
+    "src/content/tours/solonchak-uyuni.md",
+    "src/content/tours/priklyucheniya-v-amazonke.md",
+    "src/content/tours/beliz-priklyuchenie-materik-ostrov.md",
+    "src/content/tours/aktivnyj-ekvador-i-trekking.md",
+    "src/content/tours/ekstrim-v-kosta-rike.md",
+    "src/content/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin.md",
+    "src/content/tours/venesuela-treking-v-zateryannyj-i-pervozdannyj-mir-rorajmy.md",
+    "src/content/tours/antarctica-discovery-long-hikes-11-days.md",
+    "src/content/tours/brazil-adventure-17d.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html",
+      "checkedAt": "2026-10-14",
+      "supports": "Высота ночевок, скорость набора высоты, постепенная акклиматизация, отсутствие защиты от горной болезни только благодаря хорошей физической форме."
+    },
+    {
+      "url": "https://www.visitcostarica.com/planning-your-trip/tips",
+      "checkedAt": "2026-10-14",
+      "supports": "Официальные меры безопасности рафтинга и каякинга: спасательный жилет, защитный шлем, подходящая обувь и снаряжение."
+    },
+    {
+      "url": "https://boliviatravel.gob.bo/salar-de-uyuni-y-lagunade-colores/",
+      "checkedAt": "2026-10-14",
+      "supports": "Официальный туристический портал Боливии: солончак Уюни на высокогорье около 3663 м; сравнение джип-маршрута и высотной нагрузки."
+    },
+    {
+      "url": "https://iaato.org/visiting-antarctica/preparing-for-your-expedition",
+      "checkedAt": "2026-10-14",
+      "supports": "Рекомендации IAATO по подготовке к антарктическим экспедициям и зависимости полевых занятий от условий. Ссылка дополнительно уже зафиксирована в provenance глобальной статьи; отдельного прямого открытия здесь не выполнялось.",
+      "access": "inherited_verified_project_provenance"
+    }
+  ],
+  "commercialVerification": {
+    "themeId": "theme_adventure",
+    "scope": "Учитываются только активные RU Tour с основным/дополнительным интересом; численный счетчик вычисляется текущим renderer на сборке.",
+    "examplesVerified": [
+      "tour_source_solonchak_uyuni",
+      "tour_source_priklyucheniya_v_amazonke",
+      "tour_source_beliz_priklyuchenie_materik_ostrov",
+      "tour_source_aktivnyj_ekvador_i_trekking",
+      "tour_source_ekstrim_v_kosta_rike",
+      "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+      "tour_source_venesuela_treking_v_zateryannyj_i_pervozdannyj_mir_rorajmy",
+      "tour_antarctica_discovery_long_hikes_11_days",
+      "tour_brazil_adventure_17d"
+    ],
+    "notice": "Все названия, длительность, виды активности, статусы и URL проверены по production MD. Цены, дополнительные услуги и гарантии не выдумывались. URL страны Чили при Уюни относится к дополнительной географии, не объявлялся обязательным посещением."
+  },
+  "editorialChecks": [
+    "Один H1 остается на основной странице: статья начинается с H2.",
+    "Публичный Markdown содержит только внутренние canonical ссылки без внешних URL и изображений.",
+    "Обе самостоятельные таблицы по 2 столбца, мобильная подача краткая.",
+    "Число туров только в динамической переменной.",
+    "Уникальный для каталога интент: конкретное сравнение действующих путешествий, а не глобальное описание вида отдыха."
+  ]
+}

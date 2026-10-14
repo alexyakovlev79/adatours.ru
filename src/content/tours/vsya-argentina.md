@@ -13,6 +13,11 @@ countries:
   - country_brazil
   - country_uruguay
   - country_chile
+routeCountries:
+- country_argentina
+- country_brazil
+- country_uruguay
+- country_chile
 destinations:
 - destination_argentina_buenos_aires
 - destination_brazil_iguacu

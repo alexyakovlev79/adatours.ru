@@ -58,6 +58,7 @@ for (const file of files.sort()) {
     assert.equal(graph['@context'], 'https://schema.org');
     assert.ok(Array.isArray(graph['@graph']) && graph['@graph'].length > 0, 'Nonempty graph');
     assert.ok(html.includes(`data-schema-version="${SCHEMA_VERSION}"`), 'Current generator version');
+    assert.ok(!html.includes('selection-price-summary'), 'No sitewide price-range captions in visible HTML');
     const nodes = graph['@graph'];
     const byId = new Map(nodes.map((n) => [n['@id'], n]));
     assert.equal(byId.size, nodes.length, 'No duplicate top-level IDs');
@@ -140,7 +141,6 @@ for (const file of files.sort()) {
         assert.ok(node.lowPrice > 0 && node.highPrice >= node.lowPrice, 'Valid starting-price range');
         assert.ok(Number.isInteger(node.offerCount) && node.offerCount >= 2, 'Range uses multiple priced products');
         assert.ok(/^[A-Z]{3}$/.test(node.priceCurrency), 'One valid currency per range');
-        assert.ok(inspected.facts.text.includes('Стартовые цены'), 'Published price range is visible');
         assert.equal(node.availability, undefined, 'No unverified availability');
       }
       if (hasType(node, 'Offer')) {

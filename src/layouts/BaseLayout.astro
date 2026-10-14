@@ -190,11 +190,6 @@ const metaDescription = schema.metaDescription;
     )}
     <main>
       <Fragment set:html={deferImages(schema.html)} />
-      {schema.priceSummaries.length > 0 && (
-        <aside class="selection-price-summary container" aria-label="Цены в подборке">
-          {schema.priceSummaries.map((summary) => <p>{summary}</p>)}
-        </aside>
-      )}
       {seoGeoArticle && <SeoGeoSection article={seoGeoArticle} />}
       <div id="request" data-lead-location="footer" data-interest-section={leadEntityId?.startsWith('theme_') ? 'cta' : undefined} data-pagefind-ignore>
         <LeadForm title={leadTitle} entityId={leadEntityId || logicalPath} tourId={leadTourId} pageUrl={canonicalUrl} locale={lang} />
@@ -210,6 +205,4 @@ const metaDescription = schema.metaDescription;
 </html>
 <style>
   #request { scroll-margin-top: 100px; }
-  .selection-price-summary { margin-block: 44px; color: var(--color-muted-text, #5d5d5d); font-size: 15px; line-height: 1.5; }
-  .selection-price-summary p { margin: 0 0 6px; }
 </style>

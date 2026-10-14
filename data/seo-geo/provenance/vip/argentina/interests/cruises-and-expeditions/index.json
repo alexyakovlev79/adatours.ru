@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "targetPath": "/vip/argentina/interests/cruises-and-expeditions/",
+  "articlePath": "data/seo-geo/articles/vip/argentina/interests/cruises-and-expeditions/index.md",
+  "researchedAt": "2026-10-14T13:15:00Z",
+  "editorialIntent": "Различить круизную часть большого маршрута и многодневную экспедицию, подтвердить посадку/высадку в Аргентине, Чили, Антарктиде, способ прохождения Дрейка, погодные и сервисные оговорки. Упор на реальные три тура Ada Tours.",
+  "repositorySources": [
+    "data/external-identity/vip-catalogues.json",
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-filters.mjs",
+    "src/data/catalog/destinations.json",
+    "data/source-index/catalogs/tours.json",
+    "data/catalog-archive.json",
+    "src/content/tours/kruiznyj-tur-po-luchshim-mestam-argentiny-chili-i-bolivii.md",
+    "src/content/tours/patagoniya-i-chilijskie-fordy.md",
+    "src/content/tours/antarktida-ekspress-vozdushnyj-kruiz.md",
+    "data/seo-geo/articles/argentina/index.md",
+    "data/seo-geo/articles/interests/cruises-and-expeditions/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://iaato.org/visiting-antarctica/preparing-for-your-expedition",
+      "supports": "Antarctic shore excursion preparation and weather-dependent operations"
+    },
+    {
+      "url": "https://iaato.org/about-us/bylaws",
+      "supports": "Antarctic visitor and vessel policies; no promised private landings"
+    },
+    {
+      "url": "https://chile.travel/en/destinations/punta-arenas-and-strait-of-magellan/",
+      "supports": "Punta Arenas and Strait of Magellan regional port geography"
+    }
+  ],
+  "inventorySnapshot": {
+    "date": "2026-10-12",
+    "matchingVipTourCount": 3,
+    "source": "data/external-identity/vip-catalogues.json",
+    "renderedTourCount": "dynamic"
+  },
+  "verifiedTourUrls": [
+    "/multi-country/tour/argentina-chile-bolivia-cruise-tour-18-days/",
+    "/multi-country/tour/patagonia-chilean-fjords/",
+    "/multi-country/tour/antarctica-patagonia-express-air-cruise-6-days/"
+  ],
+  "editorialChecks": [
+    "18-day programme includes only about 4-day sea cruise section",
+    "9-day fjord programme starts at Puerto Montt and disembarks Ushuaia in one direction; reverse depends on sailing",
+    "6-day Antarctica Express crosses Drake by ship outward and flies from King George Island to Punta Arenas, not roundtrip flights",
+    "Arrival/departure ports and services must be rechecked per sailing",
+    "VIP catalogue is algorithmic; private ship/shore outings never inferred",
+    "Tour counts are dynamic and public Markdown contains internal links only"
+  ]
+}

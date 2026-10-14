@@ -181,7 +181,7 @@ for (const file of files.sort()) {
       if (inferredPath === '/') {
         assert.equal(page.mainEntity?.['@id'], org['@id'], 'Homepage main entity stays Organization');
         assert.ok(nodes.filter((n) => hasType(n, 'WebPageElement')).length >= 7, 'Editorial home sections represented');
-        assert.equal(nodes.filter((n) => hasType(n, 'Service')).length, 4, 'Home references four service areas');
+        assert.equal(nodes.filter((n) => hasType(n, 'Service') && n['@id'].endsWith('#service')).length, 4, 'Home references four service areas');
       } else assert.equal(page.mainEntity?.['@id'], `${canonical}#reviews`, 'Reviews main entity is the reviews list');
     }
     if (inspected.facts.catalog) {

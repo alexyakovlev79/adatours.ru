@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "targetPath": "/vip/colombia/",
+  "articlePath": "data/seo-geo/articles/vip/colombia/index.md",
+  "researchedAt": "2026-10-14",
+  "editorialIntent": "VIP+Колумбия: один подтвержденный 10-дневный премиальный маршрут; условия гостиниц, частного транспорта, гидов и исключений, выбор пропорции городов, кофейного региона и пляжа. Не повторять гид страны и отдельные статьи кофе/пляжа.",
+  "repositorySources": [
+    "src/pages/vip/[...country].astro",
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-countries.mjs",
+    "src/content/countries/colombia.md",
+    "src/content/tours/tur-v-kolumbiyu-na-10-dnej.md",
+    "data/external-identity/vip-catalogues.json",
+    "data/source-index/catalogs/tours.json",
+    "data/seo-geo/articles/vip/colombia/interests/food-and-wine/index.md",
+    "data/catalog-archive.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/1121/",
+      "checkedAt": "2026-10-14",
+      "supports": "Кофейный культурный ландшафт страны, горные хозяйства и культурные практики; без конкретных коммерческих утверждений."
+    }
+  ],
+  "commercialVerification": {
+    "vipSnapshotDate": "2026-10-12",
+    "verifiedTourIds": [
+      "tour_source_tur_v_kolumbiyu_na_10_dnej"
+    ],
+    "notes": "Программа 10 дней/9 ночей, Four Seasons Casa Medina, Visus Hotel Boutique & Spa, Sofitel Legend Santa Clara, Las Islas, языки гидов и исключение внутренних авиаперелетов взяты из активного Tour MD. Цена не указана."
+  },
+  "editorialChecks": [
+    "Только внутренние канонические ссылки в публичном тексте",
+    "Динамический счетчик и tourTable",
+    "Двухколоночная мобильная таблица",
+    "Никаких внешних ссылок или изображений в статье",
+    "Коммерческие гарантии не выводятся из VIP-метки"
+  ]
+}

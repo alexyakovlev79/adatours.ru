@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "targetPath": "/brazil/place/vassouras-lencois-maranhenses/tour/",
+  "articlePath": "data/seo-geo/articles/brazil/place/vassouras-lencois-maranhenses/tour/index.md",
+  "researchedAt": "2026-10-14",
+  "purpose": "Выбор реально доступного тура с обязательным Вассуорасом; роль речного посещения, отличие от дюн и условия 4-дневной программы без дублирования путеводителя места.",
+  "repositorySources": [
+    "src/content/destinations/vassouras-lencois-maranhenses.md",
+    "src/content/tours/lensojs-maranenses.md",
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "data/catalog-archive.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.gov.br/turismo/pt-br/assuntos/noticias/catalogo-de-experiencias-turisticas-do-brasil-ultrapassa-42-mil-acessos-e-impulsiona-turismo-sustentavel/CATALOGO_EXPERIENCIAS_COP_30_A4.pdf",
+      "supports": "Маршруты по реке Прегисас, Вассуорас и Малые Ленсойсы, рыбацкие поселения, Мандакару."
+    },
+    {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/parna-dos-lencois-maranhenses/paginas-site-parna-dos-lencois-maranhenses-ma/orientacoes-ao-visitante",
+      "supports": "Посещение парка круглый год, правила и условия."
+    },
+    {
+      "url": "https://www.gov.br/icmbio/pt-br/centrais-de-conteudo/travessias-uma-aventura-pelos-parques-nacionais-do-brasil-pdf",
+      "supports": "Лагуны и сезонность после дождей, Баррейриньяс как отправная точка."
+    }
+  ],
+  "verifiedAt": "2026-10-14",
+  "constraints": [
+    "В каталоге через Вассуорас одна основная действующая программа: tour_source_lensojs_maranenses.",
+    "Готовые цены и состав услуг брать только из production Tour MD, счетчик динамический.",
+    "Внешние ссылки в публичном Markdown отсутствуют.",
+    "Изображения, шаблоны и общие страницы не изменяются."
+  ]
+}

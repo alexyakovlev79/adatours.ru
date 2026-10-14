@@ -212,8 +212,8 @@ routeDestinations:
 - destination_colombia_guatape
 - destination_colombia_kartahena
 - destination_colombia_hacienda_coloma
-primaryThemes: ["theme_culture","theme_gastronomy_wine"]
-themes: []
+primaryThemes: ["theme_culture", "theme_coffee"]
+themes: ["theme_gastronomy_wine"]
 ---
 
 

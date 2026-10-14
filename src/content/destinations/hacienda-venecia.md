@@ -13,8 +13,7 @@ hero:
   hover: "Асьенда Венесия: кофейные ряды и сельский дом на зеленых склонах"
   alt: "Красные кофейные ягоды и плантации асьенды Венесия у Манисалеса, Колумбия"
 gallery: []
-themes:
-- theme_gastronomy_wine
+themes: ["theme_gastronomy_wine", "theme_coffee"]
 searchAliases:
 - Асьенда Венесия
 - Hacienda Venecia

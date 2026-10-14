@@ -12,9 +12,7 @@ hero:
   hover: "Санта-Роса-де-Кабаль: кофейные кусты на холмах перед сельским домом"
   alt: "Красные кофейные ягоды и зеленые плантации Санта-Роса-де-Кабаль, Колумбия"
 gallery: []
-themes:
-- theme_gastronomy_wine
-- theme_spa
+themes: ["theme_gastronomy_wine", "theme_spa", "theme_coffee"]
 searchAliases:
 - santa-rosa-de-kabal
 sourceSnapshot: data/source-index/materials/destination_colombia_santa_rosa_de_kabal.md

@@ -856,8 +856,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/lyuksovyj-tur-v-kosta-riku-na-16-dnej
 sourceSnapshot: page_texts_original/lyuksovyj-tur-v-kosta-riku-na-16-dnej__1385cfb2.md
 updatedAt: 2026-10-01
-primaryThemes: ["theme_wildlife","theme_beach"]
-themes: ["theme_adventure"]
+primaryThemes: ["theme_wildlife", "theme_beach"]
+themes: ["theme_adventure", "theme_coffee"]
 ---
 
 ## Главное в путешествии

@@ -41,13 +41,8 @@ routeDestinations:
 - destination_colombia_kartahena
 - destination_colombia_islas_rosario
 - destination_colombia_isla_grande
-primaryThemes:
-- theme_culture
-- theme_gastronomy_wine
-themes:
-- theme_wildlife
-- theme_adventure
-- theme_beach
+primaryThemes: ["theme_culture", "theme_gastronomy_wine"]
+themes: ["theme_wildlife", "theme_adventure", "theme_beach", "theme_coffee"]
 audiences: []
 format: "Смешанный"
 durationDays: 9

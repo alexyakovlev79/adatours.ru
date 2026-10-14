@@ -12,9 +12,7 @@ hero:
   hover: "Саленто: яркие фасады на фоне зеленых гор"
   alt: "Улица Саленто с цветными дверями, балконами и белыми домами, Колумбия"
 gallery: []
-themes:
-- theme_culture
-- theme_gastronomy_wine
+themes: ["theme_culture", "theme_gastronomy_wine", "theme_coffee"]
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_colombia_salento.md
 updatedAt: '2026-10-09'

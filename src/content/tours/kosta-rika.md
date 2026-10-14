@@ -181,7 +181,7 @@ routeDestinations:
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_doka_estate
 primaryThemes: ["theme_wildlife"]
-themes: ["theme_gastronomy_wine"]
+themes: ["theme_gastronomy_wine", "theme_coffee"]
 ---
 
 

@@ -240,11 +240,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_barra_du_pirai
 - destination_brazil_dolina_kofe_rio_de_zhanejro
-primaryThemes:
-- theme_gastronomy_wine
-- theme_culture
-themes:
-- theme_wildlife
+primaryThemes: ["theme_coffee", "theme_culture"]
+themes: ["theme_wildlife", "theme_gastronomy_wine"]
 ---
 
 

@@ -306,8 +306,8 @@ routeDestinations:
 - destination_colombia_santa_marta
 - destination_colombia_nacionalnyj_park_tajrona
 - destination_colombia_kartahena
-primaryThemes: ["theme_culture","theme_wildlife"]
-themes: ["theme_gastronomy_wine","theme_beach"]
+primaryThemes: ["theme_culture", "theme_wildlife"]
+themes: ["theme_gastronomy_wine", "theme_beach", "theme_coffee"]
 ---
 
 

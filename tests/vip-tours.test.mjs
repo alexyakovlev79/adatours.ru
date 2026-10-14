@@ -9,6 +9,29 @@ import { paginateCatalog } from '../src/lib/catalog-pagination.ts';
 import { buildTourFilterIndex, tourFilterOptions } from '../src/lib/tour-filters.mjs';
 import { buildInterestHub } from '../src/lib/interest-model.mjs';
 import destinationCatalog from '../src/data/catalog/destinations.json' with { type: 'json' };
+import { tourFilterTitle } from '../src/lib/vip-copy.mjs';
+
+test('coffee interest supports ordinary, VIP and country intersections with its own visitor copy', () => {
+  const theme = { id: 'theme_coffee', slug: 'coffee-tours', name: 'Кофейные туры', locale: 'ru' };
+  const tours = [
+    filterTour('coffee', ['country_brazil'], ['theme_coffee']),
+    filterTour('coffee-day', ['country_brazil', 'country_peru'], ['theme_culture'], ['theme_coffee'], { routeCountries: ['country_brazil'] }),
+    filterTour('other', ['country_chile'], ['theme_culture']),
+    filterTour('archive', ['country_brazil'], ['theme_coffee'], [], { status: 'archived' }),
+  ];
+  const regular = buildTourFilterIndex(tours, filterCountries, [theme]);
+  const vip = buildVipFilterIndex(tours, filterCountries, [theme]);
+  for (const rows of [regular, vip]) {
+    const all = rows.find((row) => row.themeId === theme.id && !row.countryId);
+    assert.deepEqual(new Set(all.entries.map((entry) => entry.data.id)), new Set(['coffee', 'coffee-day']));
+    const brazil = rows.find((row) => row.themeId === theme.id && row.countryId === 'country_brazil');
+    assert.match(brazil.title ?? tourFilterTitle(filterCountries[0], theme), /Кофейные (?:VIP-)?туры в Бразилию/);
+    assert.equal(brazil.count, 2);
+    assert.ok(!rows.some((row) => row.themeId === theme.id && row.countryId === 'country_chile'));
+  }
+  assert.ok(regular.some((row) => row.themeId === theme.id && row.countryId === 'country_peru'));
+  assert.ok(!vip.some((row) => row.themeId === theme.id && row.countryId === 'country_peru'));
+});
 
 const filterCountries = [
   { id: 'country_brazil', slug: 'brazil', name: 'Бразилия', locale: 'ru' },

@@ -13,9 +13,7 @@ hero:
   hover: "Асьенда Колома: кофейные кусты у сельского дома среди зеленых гор"
   alt: "Красные кофейные ягоды перед белым домом и цветущим садом асьенды Колома, Колумбия"
 gallery: []
-themes:
-- theme_gastronomy_wine
-- theme_culture
+themes: ["theme_gastronomy_wine", "theme_culture", "theme_coffee"]
 sourceSnapshot: data/source-index/materials/destination_colombia_hacienda_coloma.md
 updatedAt: '2026-10-10'
 ---

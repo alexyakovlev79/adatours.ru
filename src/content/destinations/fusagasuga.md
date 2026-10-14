@@ -12,8 +12,7 @@ hero:
   alt: "Тропа среди кофейных кустов и цветов у зеленых холмов Фусагасуги, Колумбия"
   hover: "Фусагасуга в Колумбии: кофейная плантация под тенистыми деревьями"
 gallery: []
-themes:
-- theme_gastronomy_wine
+themes: ["theme_gastronomy_wine", "theme_coffee"]
 searchAliases:
 - Фусагазуга
 sourceSnapshot: data/source-index/materials/destination_colombia_fusagasuga.md

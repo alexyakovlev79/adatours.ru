@@ -247,8 +247,8 @@ routeDestinations:
 - destination_colombia_salento
 - destination_colombia_kartahena
 - destination_colombia_hacienda_venecia
-primaryThemes: ["theme_culture","theme_wildlife"]
-themes: ["theme_gastronomy_wine"]
+primaryThemes: ["theme_culture", "theme_wildlife"]
+themes: ["theme_gastronomy_wine", "theme_coffee"]
 ---
 
 

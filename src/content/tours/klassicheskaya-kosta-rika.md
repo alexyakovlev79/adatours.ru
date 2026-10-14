@@ -140,7 +140,7 @@ routeDestinations:
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_doka_estate
 primaryThemes: ["theme_wildlife"]
-themes: ["theme_gastronomy_wine"]
+themes: ["theme_gastronomy_wine", "theme_coffee"]
 ---
 
 

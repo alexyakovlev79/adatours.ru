@@ -170,7 +170,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     <div class="container">
       <div class="home-heading">
         <div>
-          <p class="eyebrow">13 интересов</p>
+          <p class="eyebrow">{themeEntries.filter(activeRu).length} интересов</p>
           <h2 id="home-interests-title">Ради чего хочется лететь?</h2>
         </div>
         <p>Выберите, что хочется увидеть или попробовать. Мы покажем страны и маршруты, где это впечатление становится частью путешествия.</p>
@@ -201,7 +201,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
           ))}
         </ul>
       )}
-      <a class="home-all-link" href={withBase('/interests/')}>Открыть все 13 интересов <span aria-hidden="true">↗</span></a>
+      <a class="home-all-link" href={withBase('/interests/')}>Открыть все {themeEntries.filter(activeRu).length} интересов <span aria-hidden="true">↗</span></a>
     </div>
   </section>
 

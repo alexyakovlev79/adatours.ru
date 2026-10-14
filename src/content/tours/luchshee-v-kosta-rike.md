@@ -299,7 +299,7 @@ routeDestinations:
 - destination_costa_rica_ostrov_kano
 - destination_costa_rica_doka_estate
 primaryThemes: ["theme_wildlife"]
-themes: ["theme_beach","theme_adventure"]
+themes: ["theme_beach", "theme_adventure", "theme_coffee"]
 ---
 
 

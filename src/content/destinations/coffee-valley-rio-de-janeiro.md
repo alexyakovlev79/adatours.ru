@@ -10,8 +10,7 @@ summary: Долина кофе штата Рио-де-Жанейро знако�
 searchAliases:
 - Кофейная долина
 - dolina-kofe-rio-de-zhanejro
-themes:
-- theme_culture
+themes: ["theme_culture", "theme_coffee"]
 hero:
   src: /media/destinations/destination_brazil_dolina_kofe_rio_de_zhanejro/hero-generated-20261008-resumed.webp
   hover: "Долина кофе: кофейные посадки на фоне лесистых холмов"

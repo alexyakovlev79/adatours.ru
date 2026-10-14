@@ -46,7 +46,7 @@ notes:
 sourceUrl: https://brasiltours.ru/kofejnyj-tur-v-perejra
 sourceSnapshot: page_texts_newstep/Excursions/kofejnyj-tur-v-perejra__c83cd958.md
 updatedAt: '2026-10-11'
-themes: ["theme_gastronomy_wine"]
+themes: ["theme_gastronomy_wine", "theme_coffee"]
 ---
 
 На ферме вы познакомитесь с тем, как оценивают баланс, полноту, аромат и кислотность кофе.

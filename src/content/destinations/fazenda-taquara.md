@@ -9,8 +9,7 @@ destinationType: route_cluster
 summary: Фазенда Такуара входит в экскурсионные маршруты по историческим кофейным усадьбам Бразилии.
 searchAliases:
 - "Fazenda Taquara"
-themes:
-- theme_culture
+themes: ["theme_culture", "theme_coffee"]
 hero:
   src: /media/destinations/destination_brazil_fazenda_taquara/hero-generated-20261008-resumed.webp
   alt: "Красные кофейные ягоды на ветке среди зеленых холмов"

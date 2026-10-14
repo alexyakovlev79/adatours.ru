@@ -146,8 +146,8 @@ routeDestinations:
 - destination_colombia_pereira
 - destination_colombia_salento
 - destination_colombia_dolina_kokora
-primaryThemes: ["theme_gastronomy_wine","theme_culture"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_coffee", "theme_culture"]
+themes: ["theme_wildlife", "theme_gastronomy_wine"]
 ---
 
 

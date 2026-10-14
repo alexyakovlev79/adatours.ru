@@ -44,7 +44,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/fazendy-kofejnykh-baronov"
 sourceSnapshot: "https://drive.google.com/file/d/1FeWErnZbE1KcImHbjeIvWUzidIEN_2sm/view?usp=drivesdk"
 updatedAt: '2026-10-10'
-themes: ["theme_culture","theme_gastronomy_wine"]
+themes: ["theme_culture", "theme_gastronomy_wine", "theme_coffee"]
 ---
 
 ## Долина Кофе и ее фазенды

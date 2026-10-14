@@ -209,8 +209,8 @@ routeDestinations:
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_pacific_coast
 - destination_costa_rica_doka_estate
-primaryThemes: ["theme_wildlife","theme_beach"]
-themes: []
+primaryThemes: ["theme_wildlife", "theme_beach"]
+themes: ["theme_coffee"]
 ---
 
 

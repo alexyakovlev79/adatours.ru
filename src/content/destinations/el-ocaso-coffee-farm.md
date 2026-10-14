@@ -12,8 +12,7 @@ hero:
   hover: "Кофейные зерна крупным планом рядом с каплями воды на листе"
   alt: "Коричневые кофейные зерна на мокром зеленом листе и деревянной поверхности"
 gallery: []
-themes:
-- theme_gastronomy_wine
+themes: ["theme_gastronomy_wine", "theme_coffee"]
 searchAliases:
 - El Ocaso
 - Finca El Ocaso

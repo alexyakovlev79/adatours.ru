@@ -12,9 +12,7 @@ hero:
   hover: "Армения: невысокие фасады на фоне зеленых холмов"
   alt: "Зеленая городская улица Армении с домами и пальмами, Колумбия"
 gallery: []
-themes:
-- theme_gastronomy_wine
-- theme_culture
+themes: ["theme_gastronomy_wine", "theme_culture", "theme_coffee"]
 searchAliases:
 - armeniya
 sourceSnapshot: data/source-index/materials/destination_colombia_armeniya.md

@@ -288,8 +288,8 @@ routeDestinations:
 - destination_colombia_guatape
 - destination_colombia_ozero_guatavita
 - destination_colombia_sipakira
-primaryThemes: ["theme_culture","theme_beach"]
-themes: ["theme_gastronomy_wine","theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_gastronomy_wine", "theme_wildlife", "theme_coffee"]
 ---
 
 

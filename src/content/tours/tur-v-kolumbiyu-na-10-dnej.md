@@ -292,8 +292,8 @@ destinations: &id001
 routeDestinations: *id001
 routeCountries:
 - country_colombia
-primaryThemes: ["theme_culture","theme_beach"]
-themes: ["theme_gastronomy_wine","theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_gastronomy_wine", "theme_wildlife", "theme_coffee"]
 ---
 
 

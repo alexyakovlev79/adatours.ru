@@ -276,8 +276,8 @@ routeDestinations:
 - destination_colombia_islas_rosario
 - destination_colombia_santa_marta
 - destination_colombia_nacionalnyj_park_tajrona
-primaryThemes: ["theme_culture","theme_gastronomy_wine"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_gastronomy_wine"]
+themes: ["theme_wildlife", "theme_coffee"]
 ---
 
 

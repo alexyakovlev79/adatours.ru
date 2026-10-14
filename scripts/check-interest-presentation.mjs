@@ -19,7 +19,7 @@ const heading=html=>text(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1]??'').tri
 const title=html=>text(html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/)?.[1]??'').trim();
 const expectedThemeAlign=new Map([['motorcycle-tours','left'],['adventure','left'],['weddings-and-romance','right'],['wildlife','right']]);
 const index=at('/interests/'), expected=buildInterestIndex(collections.themes,collections.tours);
-assert.equal(expected.length,13);
+assert.equal(expected.length,14);
 assert.deepEqual(ids(index,'data-interest-index-item'),expected.map(r=>r.entry.data.id));
 assert.deepEqual(ids(index,'data-interest-tour-count').map(Number),expected.map(r=>r.tourCount));
 for (const {id,slug} of INTERESTS) {
@@ -110,4 +110,4 @@ for(const file of readdirSync('dist',{recursive:true}).filter(f=>f.endsWith('.ht
   pages++;
 }
 assert.ok(pages>700,'all real site pages are checked, not just a handful of examples');
-console.log(`Interest presentation checks passed: 13 sorted interests, 13 individual copy sets, 4 generated covers, country-only unique tour geography covers, theme-owned catalog heroes, requested theme hero alignment and inflected counters; exactly one footer form on all ${pages} real HTML pages.`);
+console.log(`Interest presentation checks passed: ${INTERESTS.length} sorted interests, ${INTERESTS.length} individual copy sets, 4 generated covers, country-only unique tour geography covers, theme-owned catalog heroes, requested theme hero alignment and inflected counters; exactly one footer form on all ${pages} real HTML pages.`);

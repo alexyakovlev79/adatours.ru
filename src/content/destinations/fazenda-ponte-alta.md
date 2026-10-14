@@ -9,8 +9,7 @@ destinationType: route_cluster
 summary: Фазенда Понте-Альта — историческая кофейная усадьба, где знакомятся с жизнью поместья и историей производства кофе.
 searchAliases:
 - "Fazenda Ponte Alta"
-themes:
-- theme_culture
+themes: ["theme_culture", "theme_coffee"]
 hero:
   src: /media/destinations/destination_brazil_fazenda_ponte_alta/hero-generated-20261008-resumed.webp
   hover: "Фазенда Понте-Альта: спелые кофейные ягоды на фоне зеленых холмов"

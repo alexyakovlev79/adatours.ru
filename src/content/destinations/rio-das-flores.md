@@ -8,8 +8,7 @@ countryId: country_brazil
 destinationType: city
 summary: Рио-дас-Флорес входит в маршруты по Долине кофе штата Рио-де-Жанейро с посещением исторических плантаций.
 searchAliases: []
-themes:
-- theme_culture
+themes: ["theme_culture", "theme_coffee"]
 hero:
   src: /media/destinations/destination_brazil_rio_das_flores/hero-generated-20261008-resumed.webp
   hover: "Рио-дас-Флорес: старые дома на мощеной улице"

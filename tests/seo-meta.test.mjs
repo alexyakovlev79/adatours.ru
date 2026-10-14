@@ -38,7 +38,7 @@ import {seoCountryTitle,seoDestinationTitle,seoTourTitle,seoExcursionTitle,
 
 test('case table covers all known countries, themes, and destinations',()=>{
  assert.equal(Object.keys(SEO_CASES.countries).length,24);
- assert.equal(Object.keys(SEO_CASES.interests).length,13);
+ assert.equal(Object.keys(SEO_CASES.interests).length,14);
  assert.ok(Object.keys(SEO_CASES.destinations).length>=700);
  assert.equal(seoCountryCase('country_brazil','genitive'),'Бразилии');
  assert.equal(seoCountryCase('country_belize','dative'),'Белизу');

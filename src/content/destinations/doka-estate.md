@@ -13,9 +13,7 @@ hero:
   hover: "Дока: кофейные ягоды и хозяйственные здания среди зеленых гор"
   alt: "Кофейные кусты с красными ягодами перед красными постройками плантации Дока, Коста-Рика"
 gallery: []
-themes:
-- theme_gastronomy_wine
-- theme_culture
+themes: ["theme_gastronomy_wine", "theme_culture", "theme_coffee"]
 sourceSnapshot: data/source-index/materials/destination_costa_rica_doka_estate.md
 updatedAt: '2026-10-10'
 ---

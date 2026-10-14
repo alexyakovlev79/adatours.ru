@@ -9,8 +9,7 @@ destinationType: city
 summary: Барра-ду-Пираи лежит в кофейной долине штата Рио-де-Жанейро. Через город проходят поездки к историческим фазендам.
 searchAliases:
 - barra-du-pirai
-themes:
-- theme_culture
+themes: ["theme_culture", "theme_coffee"]
 hero:
   src: /media/destinations/destination_brazil_barra_du_pirai/destination_brazil_barra_du_pirai-generated-20261008.webp
   hover: "Барра-ду-Пираи: городская улица в тени деревьев"

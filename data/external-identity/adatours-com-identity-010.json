@@ -1,0 +1,1558 @@
+{
+  "format_version": 1,
+  "batch_id": "adatours-com-identity-010",
+  "domain": "adatours.com",
+  "step": 3,
+  "started_at": "2026-10-14T10:56:02.165Z",
+  "completed_at": "2026-10-14T11:06:22.843Z",
+  "scope": "50 distinct pending objects after batch 009: recover 14 Chile destinations skipped at original positions 401–414, and 36 Costa Rica/Cuba destinations at positions 465–500. Drop 14 overlapping rows from provisional batch 010 which batch 009 already verified. No old result lost.",
+  "source_catalogue": "data/source-index/catalogs/destinations.json",
+  "frozen_positions": [
+    {
+      "start": 401,
+      "end": 414,
+      "note": "Recovery of skipped objects"
+    },
+    {
+      "start": 465,
+      "end": 500,
+      "note": "Next unverified objects"
+    }
+  ],
+  "frozen_keys": [
+    "destination_chile_vulkan_rano_kau",
+    "destination_chile_vulkan_rano_raraku",
+    "destination_chile_renaca_beach",
+    "destination_chile_rio_serrano",
+    "destination_chile_vodopad_salto_grande",
+    "destination_chile_san_pedro_de_atakama",
+    "destination_chile_san_rafael_glacier",
+    "destination_chile_santa_lucia_hill",
+    "destination_chile_santiago_central_post_office",
+    "destination_chile_santiago_city_hall",
+    "destination_chile_santyago_de_chili",
+    "destination_chile_santiago_plaza_de_armas",
+    "destination_chile_sokajre",
+    "destination_chile_tahai",
+    "destination_costa_rica_doka_estate",
+    "destination_costa_rica_zaliv_drejk",
+    "destination_costa_rica_el_tigre_waterfalls",
+    "destination_costa_rica_flamingo",
+    "destination_costa_rica_hako",
+    "destination_costa_rica_la_fortuna_vulkan_arenal",
+    "destination_costa_rica_vodopady_la_pas",
+    "destination_costa_rica_liberiya",
+    "destination_costa_rica_manuel_antonio",
+    "destination_costa_rica_nacionalnyj_park_marino_ballena",
+    "destination_costa_rica_monteverde_santa_elena",
+    "destination_costa_rica_montesuma",
+    "destination_costa_rica_poluostrov_osa",
+    "destination_costa_rica_pacific_coast",
+    "destination_costa_rica_reka_pakuare",
+    "destination_costa_rica_plajya_konchal",
+    "destination_costa_rica_plajya_tamarindo",
+    "destination_costa_rica_vulkan_poas",
+    "destination_costa_rica_puerto_limon",
+    "destination_costa_rica_puerto_veho",
+    "destination_costa_rica_kepos",
+    "destination_costa_rica_rinkon_de_la_veha",
+    "destination_costa_rica_rio_seleste",
+    "destination_costa_rica_san_hose",
+    "destination_costa_rica_serpe",
+    "destination_costa_rica_reka_tarkoles",
+    "destination_costa_rica_nacionalnyj_park_tenorio",
+    "destination_costa_rica_tortuguero",
+    "destination_costa_rica_vodopady_vento_fresko",
+    "destination_cuba_barakoa",
+    "destination_cuba_kamaguej",
+    "destination_cuba_sego_de_avila",
+    "destination_cuba_senfuegos",
+    "destination_cuba_gavana",
+    "destination_cuba_olgin",
+    "destination_cuba_ostrov_huventud"
+  ],
+  "access_evidence": {
+    "english_inventory": "adatours-com-url-inventory-20261012.json",
+    "discovered": 647,
+    "fetched": 646,
+    "direct_http_rechecked_in_this_batch": false,
+    "verified_english_pages": [
+      "https://adatours.com/san-pedro-de-atacama",
+      "https://adatours.com/chile-santiago",
+      "https://adatours.com/la-fortuna",
+      "https://adatours.com/liberia",
+      "https://adatours.com/monteverde-santa-elena",
+      "https://adatours.com/peninsula-de-osa",
+      "https://adatours.com/playa-tamarindo",
+      "https://adatours.com/puerto-limon",
+      "https://adatours.com/puerto-viejo-de-talamanca",
+      "https://adatours.com/rincon-de-la-vieja",
+      "https://adatours.com/san-jose",
+      "https://adatours.com/tortuguero"
+    ],
+    "note": "Saved crawl HTTP/canonical/H1 and targeted indexed English page corroboration for Santiago and San Pedro."
+  },
+  "results": [
+    {
+      "key": "destination_chile_vulkan_rano_kau",
+      "type": "destination",
+      "name": "Вулкан Рано-Кау",
+      "ru_url": "https://adatours.ru/chile/place/rano-kau-volcano/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_vulkan_rano_kau",
+        "name": "Вулкан Рано-Кау",
+        "slug": "rano-kau-volcano",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/rano-kau-volcano.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "rano-kau-volcano",
+        "Вулкан Рано-Кау",
+        "Вулкан Рано-Као",
+        "vulkan-rano-kau"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_vulkan_rano_raraku",
+      "type": "destination",
+      "name": "Вулкан Рано-Рараку",
+      "ru_url": "https://adatours.ru/chile/place/rano-raraku-volcano/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_vulkan_rano_raraku",
+        "name": "Вулкан Рано-Рараку",
+        "slug": "rano-raraku-volcano",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/rano-raraku-volcano.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "rano-raraku-volcano",
+        "Вулкан Рано-Рараку",
+        "vulkan-rano-raraku"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_renaca_beach",
+      "type": "destination",
+      "name": "Пляж Реньяка",
+      "ru_url": "https://adatours.ru/chile/place/renaca-beach/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_renaca_beach",
+        "name": "Пляж Реньяка",
+        "slug": "renaca-beach",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/renaca-beach.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "renaca-beach",
+        "Пляж Реньяка"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_rio_serrano",
+      "type": "destination",
+      "name": "Рио-Серрано",
+      "ru_url": "https://adatours.ru/chile/place/rio-serrano/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_rio_serrano",
+        "name": "Рио-Серрано",
+        "slug": "rio-serrano",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/rio-serrano.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "rio-serrano",
+        "Рио-Серрано"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_vodopad_salto_grande",
+      "type": "destination",
+      "name": "Водопад Сальто-Гранде",
+      "ru_url": "https://adatours.ru/chile/place/salto-grande-waterfall/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_vodopad_salto_grande",
+        "name": "Водопад Сальто-Гранде",
+        "slug": "salto-grande-waterfall",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/salto-grande-waterfall.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "salto-grande-waterfall",
+        "Водопад Сальто-Гранде",
+        "vodopad-salto-grande"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_san_pedro_de_atakama",
+      "type": "destination",
+      "name": "Сан-Педро-де-Атакама",
+      "ru_url": "https://adatours.ru/chile/place/san-pedro-de-atacama/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/san-pedro-de-atacama",
+      "current_ru": {
+        "id": "destination_chile_san_pedro_de_atakama",
+        "name": "Сан-Педро-де-Атакама",
+        "slug": "san-pedro-de-atacama",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/san-pedro-de-atakama.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": true
+      },
+      "search_terms": [
+        "san-pedro-de-atacama",
+        "Сан-Педро-де-Атакама",
+        "san-pedro-de-atakama"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "en": {
+        "url": "https://adatours.com/san-pedro-de-atacama",
+        "canonical": "https://adatours.com/san-pedro-de-atacama",
+        "h1": "Moon Valley and Tatio geysers: what to see in San Pedro de Atacama, Chile",
+        "title": "San Pedro de Atacama Travel Guide | Best Places & Tips",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "256"
+        ],
+        "corroboration": "English page indexed full text corroborated on 2026-10-14; saved HTTP status, not new probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Exact San Pedro de Atacama town, its centre and local area; nearby Moon Valley and El Tatio are not equated with the town.",
+        "country_id": "country_chile",
+        "relation": "sameAs exact Place identity"
+      }
+    },
+    {
+      "key": "destination_chile_san_rafael_glacier",
+      "type": "destination",
+      "name": "Ледник Сан-Рафаэль",
+      "ru_url": "https://adatours.ru/chile/place/san-rafael-glacier/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_san_rafael_glacier",
+        "name": "Ледник Сан-Рафаэль",
+        "slug": "san-rafael-glacier",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/san-rafael-glacier.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "san-rafael-glacier",
+        "Ледник Сан-Рафаэль"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_santa_lucia_hill",
+      "type": "destination",
+      "name": "Холм Санта-Лючия",
+      "ru_url": "https://adatours.ru/chile/place/santa-lucia-hill/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_santa_lucia_hill",
+        "name": "Холм Санта-Лючия",
+        "slug": "santa-lucia-hill",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/santa-lucia-hill.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "santa-lucia-hill",
+        "Холм Санта-Лючия"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_santiago_central_post_office",
+      "type": "destination",
+      "name": "Центральная почта Сантьяго",
+      "ru_url": "https://adatours.ru/chile/place/santiago-central-post-office/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_santiago_central_post_office",
+        "name": "Центральная почта Сантьяго",
+        "slug": "santiago-central-post-office",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/santiago-central-post-office.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "santiago-central-post-office",
+        "Центральная почта Сантьяго"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_santiago_city_hall",
+      "type": "destination",
+      "name": "Муниципалитет Сантьяго",
+      "ru_url": "https://adatours.ru/chile/place/santiago-city-hall/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_santiago_city_hall",
+        "name": "Муниципалитет Сантьяго",
+        "slug": "santiago-city-hall",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/santiago-city-hall.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "santiago-city-hall",
+        "Муниципалитет Сантьяго"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_santyago_de_chili",
+      "type": "destination",
+      "name": "Сантьяго-де-Чили",
+      "ru_url": "https://adatours.ru/chile/place/santiago-de-chile/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/chile-santiago",
+      "current_ru": {
+        "id": "destination_chile_santyago_de_chili",
+        "name": "Сантьяго-де-Чили",
+        "slug": "santiago-de-chile",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/santyago-de-chili.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": true
+      },
+      "search_terms": [
+        "santiago-de-chile",
+        "Сантьяго-де-Чили",
+        "santyago-de-chili"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "en": {
+        "url": "https://adatours.com/chile-santiago",
+        "canonical": "https://adatours.com/chile-santiago",
+        "h1": "Plaza de Armas and La Moneda Palace: what to see in Santiago, Chile",
+        "title": "Santiago Travel Guide | Best Places & Tips | Ada Tours",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "89"
+        ],
+        "corroboration": "English page indexed full text corroborated on 2026-10-14; saved HTTP status, not new probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Exact Santiago de Chile capital city, including historical center; its separate landmarks are not equated with the city.",
+        "country_id": "country_chile",
+        "relation": "sameAs exact Place identity"
+      }
+    },
+    {
+      "key": "destination_chile_santiago_plaza_de_armas",
+      "type": "destination",
+      "name": "Пласа-де-Армас в Сантьяго",
+      "ru_url": "https://adatours.ru/chile/place/santiago-plaza-de-armas/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_santiago_plaza_de_armas",
+        "name": "Пласа-де-Армас в Сантьяго",
+        "slug": "santiago-plaza-de-armas",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/santiago-plaza-de-armas.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "santiago-plaza-de-armas",
+        "Пласа-де-Армас в Сантьяго"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_sokajre",
+      "type": "destination",
+      "name": "Сокайре",
+      "ru_url": "https://adatours.ru/chile/place/socaire/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_sokajre",
+        "name": "Сокайре",
+        "slug": "socaire",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/socaire.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "socaire",
+        "Сокайре",
+        "Сакайре",
+        "sokajre"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_chile_tahai",
+      "type": "destination",
+      "name": "Тахаи",
+      "ru_url": "https://adatours.ru/chile/place/tahai/",
+      "checked_at": "2026-10-14T11:06:22.843Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_chile_tahai",
+        "name": "Тахаи",
+        "slug": "tahai",
+        "country_id": "country_chile",
+        "content_path": "src/content/destinations/tahai.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "tahai",
+        "Тахаи"
+      ],
+      "search_scope": "English inventory 647 discovered/646 fetched (Oct 12-14), plus targeted site-restricted searches Oct 14. Not a complete crawl.",
+      "reason": "No independently confirmed English page dedicated to this exact Place in the observed inventory; broader city/country or tour mentions are insufficient and absence elsewhere is unproven."
+    },
+    {
+      "key": "destination_costa_rica_doka_estate",
+      "type": "destination",
+      "name": "Кофейная плантация Дока",
+      "ru_url": "https://adatours.ru/costa-rica/place/doka-estate/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_doka_estate",
+        "name": "Кофейная плантация Дока",
+        "slug": "doka-estate",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/doka-estate.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "doka-estate",
+        "Кофейная плантация Дока",
+        "Кофейная плантация Doka",
+        "Doka Estate",
+        "кофейная плантация Дока"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_zaliv_drejk",
+      "type": "destination",
+      "name": "Залив Дрейк",
+      "ru_url": "https://adatours.ru/costa-rica/place/drake-bay/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_zaliv_drejk",
+        "name": "Залив Дрейк",
+        "slug": "drake-bay",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/drake-bay.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "drake-bay",
+        "Залив Дрейк",
+        "Залив Драке",
+        "zaliv-drejk"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_el_tigre_waterfalls",
+      "type": "destination",
+      "name": "Водопады Эль-Тигре",
+      "ru_url": "https://adatours.ru/costa-rica/place/el-tigre-waterfalls/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_el_tigre_waterfalls",
+        "name": "Водопады Эль-Тигре",
+        "slug": "el-tigre-waterfalls",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/el-tigre-waterfalls.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "el-tigre-waterfalls",
+        "Водопады Эль-Тигре",
+        "El Tigre Waterfalls",
+        "Водопады Эль Тигре"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_flamingo",
+      "type": "destination",
+      "name": "Фламинго",
+      "ru_url": "https://adatours.ru/costa-rica/place/flamingo/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_flamingo",
+        "name": "Фламинго",
+        "slug": "flamingo",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/flamingo.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "flamingo",
+        "Фламинго"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_hako",
+      "type": "destination",
+      "name": "Хако",
+      "ru_url": "https://adatours.ru/costa-rica/place/jaco/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_hako",
+        "name": "Хако",
+        "slug": "jaco",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/hako.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "jaco",
+        "Хако",
+        "hako"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_la_fortuna_vulkan_arenal",
+      "type": "destination",
+      "name": "Ла Фортуна & Вулкан Ареналь",
+      "ru_url": "https://adatours.ru/costa-rica/place/la-fortuna-arenal-volcano/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/la-fortuna",
+      "current_ru": {
+        "id": "destination_costa_rica_la_fortuna_vulkan_arenal",
+        "name": "Ла Фортуна & Вулкан Ареналь",
+        "slug": "la-fortuna-arenal-volcano",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/la-fortuna-vulkan-arenal.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "la-fortuna-arenal-volcano",
+        "Ла Фортуна & Вулкан Ареналь",
+        "la-fortuna-vulkan-arenal"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "en": {
+        "url": "https://adatours.com/la-fortuna",
+        "canonical": "https://adatours.com/la-fortuna",
+        "h1": "Arenal Volcano and La Fortuna Waterfall: What to See in La Fortuna",
+        "title": "La Fortuna: Travel Guide to Arenal Volcano and Waterfall",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "46"
+        ],
+        "observation": "HTTP 200 from saved October 12–14 crawl; not a newly performed live HTTP probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Both pages cover the combined La Fortuna and Arenal Volcano area, including volcano, lake and nearby waterfall.",
+        "country_id": "country_costa_rica",
+        "relation": "sameAs exact Place geographic identity"
+      }
+    },
+    {
+      "key": "destination_costa_rica_vodopady_la_pas",
+      "type": "destination",
+      "name": "Водопады Ла-Пас",
+      "ru_url": "https://adatours.ru/costa-rica/place/la-paz-waterfalls/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_vodopady_la_pas",
+        "name": "Водопады Ла-Пас",
+        "slug": "la-paz-waterfalls",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/la-paz-waterfalls.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "la-paz-waterfalls",
+        "Водопады Ла-Пас",
+        "Сад водопадов Ла-Пас",
+        "vodopady-la-pas"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_liberiya",
+      "type": "destination",
+      "name": "Либерия",
+      "ru_url": "https://adatours.ru/costa-rica/place/liberia/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/liberia",
+      "current_ru": {
+        "id": "destination_costa_rica_liberiya",
+        "name": "Либерия",
+        "slug": "liberia",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/liberiya.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "liberia",
+        "Либерия",
+        "liberiya"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "en": {
+        "url": "https://adatours.com/liberia",
+        "canonical": "https://adatours.com/liberia",
+        "h1": "The White City and Dry Tropical Paradise: What to See in Liberia",
+        "title": "Liberia, Costa Rica: Travel Guide to the White City",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "47"
+        ],
+        "observation": "HTTP 200 from saved October 12–14 crawl; not a newly performed live HTTP probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Both identify Liberia city ('White City') in Costa Rica; Guanacaste is discussed as the surrounding province, not equated as a separate entity.",
+        "country_id": "country_costa_rica",
+        "relation": "sameAs exact Place geographic identity"
+      }
+    },
+    {
+      "key": "destination_costa_rica_manuel_antonio",
+      "type": "destination",
+      "name": "Мануэль Антонио",
+      "ru_url": "https://adatours.ru/costa-rica/place/manuel-antonio/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_manuel_antonio",
+        "name": "Мануэль Антонио",
+        "slug": "manuel-antonio",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/manuel-antonio.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "manuel-antonio",
+        "Мануэль Антонио"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "English /quepos-manuel-antonio combines Quepos and Manuel Antonio, unlike this separate RU park/resort entity. Candidate only.",
+      "candidate_only_url": "https://adatours.com/quepos-manuel-antonio"
+    },
+    {
+      "key": "destination_costa_rica_nacionalnyj_park_marino_ballena",
+      "type": "destination",
+      "name": "Национальный парк Марино-Баллена",
+      "ru_url": "https://adatours.ru/costa-rica/place/marino-ballena-national-park/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_nacionalnyj_park_marino_ballena",
+        "name": "Национальный парк Марино-Баллена",
+        "slug": "marino-ballena-national-park",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/marino-ballena-national-park.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "marino-ballena-national-park",
+        "Национальный парк Марино-Баллена",
+        "nacionalnyj-park-marino-ballena"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_monteverde_santa_elena",
+      "type": "destination",
+      "name": "Монтеверде & Санта Елена",
+      "ru_url": "https://adatours.ru/costa-rica/place/monteverde-santa-elena/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/monteverde-santa-elena",
+      "current_ru": {
+        "id": "destination_costa_rica_monteverde_santa_elena",
+        "name": "Монтеверде & Санта Елена",
+        "slug": "monteverde-santa-elena",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/monteverde-santa-elena.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "monteverde-santa-elena",
+        "Монтеверде & Санта Елена"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "en": {
+        "url": "https://adatours.com/monteverde-santa-elena",
+        "canonical": "https://adatours.com/monteverde-santa-elena",
+        "h1": "Cloud Forest and the Quetzal: What to See in Monteverde, Costa Rica",
+        "title": "Monteverde, Costa Rica: Travel Guide to the Cloud Forest",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "48"
+        ],
+        "observation": "HTTP 200 from saved October 12–14 crawl; not a newly performed live HTTP probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Both identify the combined Monteverde and Santa Elena cloud forest area.",
+        "country_id": "country_costa_rica",
+        "relation": "sameAs exact Place geographic identity"
+      }
+    },
+    {
+      "key": "destination_costa_rica_montesuma",
+      "type": "destination",
+      "name": "Монтесума",
+      "ru_url": "https://adatours.ru/costa-rica/place/montezuma/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_montesuma",
+        "name": "Монтесума",
+        "slug": "montezuma",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/montesuma.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "montezuma",
+        "Монтесума",
+        "montesuma"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_poluostrov_osa",
+      "type": "destination",
+      "name": "Полуостров Оса",
+      "ru_url": "https://adatours.ru/costa-rica/place/osa-peninsula/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/peninsula-de-osa",
+      "current_ru": {
+        "id": "destination_costa_rica_poluostrov_osa",
+        "name": "Полуостров Оса",
+        "slug": "osa-peninsula",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/poluostrov-osa.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "osa-peninsula",
+        "Полуостров Оса",
+        "poluostrov-osa"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "en": {
+        "url": "https://adatours.com/peninsula-de-osa",
+        "canonical": "https://adatours.com/peninsula-de-osa",
+        "h1": "Península de Osa in Costa Rica",
+        "title": "Excursions and tours to the Osa Peninsula in Costa Rica",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "49"
+        ],
+        "observation": "HTTP 200 from saved October 12–14 crawl; not a newly performed live HTTP probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Both pages are dedicated to the Osa Peninsula in Costa Rica.",
+        "country_id": "country_costa_rica",
+        "relation": "sameAs exact Place geographic identity"
+      }
+    },
+    {
+      "key": "destination_costa_rica_pacific_coast",
+      "type": "destination",
+      "name": "Тихоокеанское побережье Коста-Рики",
+      "ru_url": "https://adatours.ru/costa-rica/place/pacific-coast/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_pacific_coast",
+        "name": "Тихоокеанское побережье Коста-Рики",
+        "slug": "pacific-coast",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/pacific-coast.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "pacific-coast",
+        "Тихоокеанское побережье Коста-Рики",
+        "Тихоокеанское побережье",
+        "Pacific Coast"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_reka_pakuare",
+      "type": "destination",
+      "name": "Река Пакуаре",
+      "ru_url": "https://adatours.ru/costa-rica/place/pacuare-river/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_reka_pakuare",
+        "name": "Река Пакуаре",
+        "slug": "pacuare-river",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/pacuare-river.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "pacuare-river",
+        "Река Пакуаре",
+        "reka-pakuare"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_plajya_konchal",
+      "type": "destination",
+      "name": "Плайя-Кончаль",
+      "ru_url": "https://adatours.ru/costa-rica/place/playa-conchal/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_plajya_konchal",
+        "name": "Плайя-Кончаль",
+        "slug": "playa-conchal",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/playa-conchal.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "playa-conchal",
+        "Плайя-Кончаль",
+        "plajya-konchal"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_plajya_tamarindo",
+      "type": "destination",
+      "name": "Плайя Тамариндо",
+      "ru_url": "https://adatours.ru/costa-rica/place/playa-tamarindo/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/playa-tamarindo",
+      "current_ru": {
+        "id": "destination_costa_rica_plajya_tamarindo",
+        "name": "Плайя Тамариндо",
+        "slug": "playa-tamarindo",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/plajya-tamarindo.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "playa-tamarindo",
+        "Плайя Тамариндо",
+        "plajya-tamarindo"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "en": {
+        "url": "https://adatours.com/playa-tamarindo",
+        "canonical": "https://adatours.com/playa-tamarindo",
+        "h1": "Surfing, Diving and Nightlife: What to See in Tamarindo, Costa Rica",
+        "title": "Tamarindo, Costa Rica: Travel Guide to the Beach Resort",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "50"
+        ],
+        "observation": "HTTP 200 from saved October 12–14 crawl; not a newly performed live HTTP probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Both identify the Playa Tamarindo resort and beach.",
+        "country_id": "country_costa_rica",
+        "relation": "sameAs exact Place geographic identity"
+      }
+    },
+    {
+      "key": "destination_costa_rica_vulkan_poas",
+      "type": "destination",
+      "name": "Вулкан Поас",
+      "ru_url": "https://adatours.ru/costa-rica/place/poas-volcano/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_vulkan_poas",
+        "name": "Вулкан Поас",
+        "slug": "poas-volcano",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/poas-volcano.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "poas-volcano",
+        "Вулкан Поас",
+        "Поас",
+        "vulkan-poas"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_puerto_limon",
+      "type": "destination",
+      "name": "Пуэрто Лимон",
+      "ru_url": "https://adatours.ru/costa-rica/place/puerto-limon/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/puerto-limon",
+      "current_ru": {
+        "id": "destination_costa_rica_puerto_limon",
+        "name": "Пуэрто Лимон",
+        "slug": "puerto-limon",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/puerto-limon.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "puerto-limon",
+        "Пуэрто Лимон"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "en": {
+        "url": "https://adatours.com/puerto-limon",
+        "canonical": "https://adatours.com/puerto-limon",
+        "h1": "Afro-Caribbean Culture and Carnival: What to See in Puerto Limon",
+        "title": "Puerto Limon, Costa Rica: Travel Guide to the Caribbean Coast",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "238"
+        ],
+        "observation": "HTTP 200 from saved October 12–14 crawl; not a newly performed live HTTP probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Exact same geographic place represented by the English dedicated page and the RU destination; country, name and scope correspond.",
+        "country_id": "country_costa_rica",
+        "relation": "sameAs exact Place geographic identity"
+      }
+    },
+    {
+      "key": "destination_costa_rica_puerto_veho",
+      "type": "destination",
+      "name": "Пуэрто Вьехо",
+      "ru_url": "https://adatours.ru/costa-rica/place/puerto-viejo/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/puerto-viejo-de-talamanca",
+      "current_ru": {
+        "id": "destination_costa_rica_puerto_veho",
+        "name": "Пуэрто Вьехо",
+        "slug": "puerto-viejo",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/puerto-veho.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "puerto-viejo",
+        "Пуэрто Вьехо",
+        "puerto-veho"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "en": {
+        "url": "https://adatours.com/puerto-viejo-de-talamanca",
+        "canonical": "https://adatours.com/puerto-viejo-de-talamanca",
+        "h1": "Puerto Viejo de Talamanca Resort",
+        "title": "Excursions and tours to Puerto Viejo de Talamanca in Costa Rica",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "51"
+        ],
+        "observation": "HTTP 200 from saved October 12–14 crawl; not a newly performed live HTTP probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Exact same geographic place represented by the English dedicated page and the RU destination; country, name and scope correspond.",
+        "country_id": "country_costa_rica",
+        "relation": "sameAs exact Place geographic identity"
+      }
+    },
+    {
+      "key": "destination_costa_rica_kepos",
+      "type": "destination",
+      "name": "Кепос",
+      "ru_url": "https://adatours.ru/costa-rica/place/quepos/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_kepos",
+        "name": "Кепос",
+        "slug": "quepos",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/quepos.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "quepos",
+        "Кепос",
+        "kepos"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "English /quepos-manuel-antonio combines Quepos and Manuel Antonio, unlike this separate RU city entity. Candidate only.",
+      "candidate_only_url": "https://adatours.com/quepos-manuel-antonio"
+    },
+    {
+      "key": "destination_costa_rica_rinkon_de_la_veha",
+      "type": "destination",
+      "name": "Ринкон-де-ла-Вьеха",
+      "ru_url": "https://adatours.ru/costa-rica/place/rincon-de-la-vieja/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/rincon-de-la-vieja",
+      "current_ru": {
+        "id": "destination_costa_rica_rinkon_de_la_veha",
+        "name": "Ринкон-де-ла-Вьеха",
+        "slug": "rincon-de-la-vieja",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/rinkon-de-la-veha.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "rincon-de-la-vieja",
+        "Ринкон-де-ла-Вьеха",
+        "rinkon-de-la-veha"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "en": {
+        "url": "https://adatours.com/rincon-de-la-vieja",
+        "canonical": "https://adatours.com/rincon-de-la-vieja",
+        "h1": "Volcano, Mud Springs and Rafting: What to See in Rincon de la Vieja",
+        "title": "Rincon de la Vieja: Attractions and Travel Guide to the National Park",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "374"
+        ],
+        "observation": "HTTP 200 from saved October 12–14 crawl; not a newly performed live HTTP probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Both describe the national park Rincon de la Vieja with its active volcano and related trails.",
+        "country_id": "country_costa_rica",
+        "relation": "sameAs exact Place geographic identity"
+      }
+    },
+    {
+      "key": "destination_costa_rica_rio_seleste",
+      "type": "destination",
+      "name": "Рио-Селесте",
+      "ru_url": "https://adatours.ru/costa-rica/place/rio-celeste/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_rio_seleste",
+        "name": "Рио-Селесте",
+        "slug": "rio-celeste",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/rio-celeste.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "rio-celeste",
+        "Рио-Селесте",
+        "rio-seleste"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_san_hose",
+      "type": "destination",
+      "name": "Сан Хосе",
+      "ru_url": "https://adatours.ru/costa-rica/place/san-jose/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/san-jose",
+      "current_ru": {
+        "id": "destination_costa_rica_san_hose",
+        "name": "Сан Хосе",
+        "slug": "san-jose",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/san-hose.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "san-jose",
+        "Сан Хосе",
+        "san-hose"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "en": {
+        "url": "https://adatours.com/san-jose",
+        "canonical": "https://adatours.com/san-jose",
+        "h1": "Theatres, Museums and Colonial Buildings: What to See in San Jose",
+        "title": "San Jose, Costa Rica: Attractions and Travel Guide to the Capital",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "52"
+        ],
+        "observation": "HTTP 200 from saved October 12–14 crawl; not a newly performed live HTTP probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Exact same geographic place represented by the English dedicated page and the RU destination; country, name and scope correspond.",
+        "country_id": "country_costa_rica",
+        "relation": "sameAs exact Place geographic identity"
+      }
+    },
+    {
+      "key": "destination_costa_rica_serpe",
+      "type": "destination",
+      "name": "Сьерпе",
+      "ru_url": "https://adatours.ru/costa-rica/place/sierpe/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_serpe",
+        "name": "Сьерпе",
+        "slug": "sierpe",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/sierpe.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "sierpe",
+        "Сьерпе",
+        "Сиерпе",
+        "serpe"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_reka_tarkoles",
+      "type": "destination",
+      "name": "Река Тарколес",
+      "ru_url": "https://adatours.ru/costa-rica/place/tarcoles-river/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_reka_tarkoles",
+        "name": "Река Тарколес",
+        "slug": "tarcoles-river",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/tarcoles-river.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "tarcoles-river",
+        "Река Тарколес",
+        "Tarcoles",
+        "reka-tarkoles"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_nacionalnyj_park_tenorio",
+      "type": "destination",
+      "name": "Национальный парк Тенорио",
+      "ru_url": "https://adatours.ru/costa-rica/place/tenorio-volcano-national-park/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_nacionalnyj_park_tenorio",
+        "name": "Национальный парк Тенорио",
+        "slug": "tenorio-volcano-national-park",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/tenorio-volcano-national-park.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "tenorio-volcano-national-park",
+        "Национальный парк Тенорио",
+        "Тенорио",
+        "nacionalnyj-park-tenorio"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_costa_rica_tortuguero",
+      "type": "destination",
+      "name": "Тортугуэро",
+      "ru_url": "https://adatours.ru/costa-rica/place/tortuguero/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/tortuguero",
+      "current_ru": {
+        "id": "destination_costa_rica_tortuguero",
+        "name": "Тортугуэро",
+        "slug": "tortuguero",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/tortuguero.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "tortuguero",
+        "Тортугуэро"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "en": {
+        "url": "https://adatours.com/tortuguero",
+        "canonical": "https://adatours.com/tortuguero",
+        "h1": "Turtles, Canals and Toucans: What to See in Tortuguero",
+        "title": "Tortuguero, Costa Rica: Travel Guide to the National Park",
+        "http_status_in_saved_crawl": 200,
+        "category_ids": [
+          "335"
+        ],
+        "observation": "HTTP 200 from saved October 12–14 crawl; not a newly performed live HTTP probe."
+      },
+      "identity_evidence": {
+        "identity_basis": "Both refer to Tortuguero national park, turtle nesting beaches and canals.",
+        "country_id": "country_costa_rica",
+        "relation": "sameAs exact Place geographic identity"
+      }
+    },
+    {
+      "key": "destination_costa_rica_vodopady_vento_fresko",
+      "type": "destination",
+      "name": "Водопады Вьенто-Фреско",
+      "ru_url": "https://adatours.ru/costa-rica/place/viento-fresco-waterfalls/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_costa_rica_vodopady_vento_fresko",
+        "name": "Водопады Вьенто-Фреско",
+        "slug": "viento-fresco-waterfalls",
+        "country_id": "country_costa_rica",
+        "content_path": "src/content/destinations/viento-fresco-waterfalls.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "viento-fresco-waterfalls",
+        "Водопады Вьенто-Фреско",
+        "Viento Fresco",
+        "vodopady-vento-fresko"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_cuba_barakoa",
+      "type": "destination",
+      "name": "Баракоа",
+      "ru_url": "https://adatours.ru/cuba/place/baracoa/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_cuba_barakoa",
+        "name": "Баракоа",
+        "slug": "baracoa",
+        "country_id": "country_cuba",
+        "content_path": "src/content/destinations/barakoa.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "baracoa",
+        "Баракоа",
+        "barakoa"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_cuba_kamaguej",
+      "type": "destination",
+      "name": "Камагуэй",
+      "ru_url": "https://adatours.ru/cuba/place/camaguey/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_cuba_kamaguej",
+        "name": "Камагуэй",
+        "slug": "camaguey",
+        "country_id": "country_cuba",
+        "content_path": "src/content/destinations/kamaguej.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "camaguey",
+        "Камагуэй",
+        "kamaguej"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_cuba_sego_de_avila",
+      "type": "destination",
+      "name": "Сьего де Авила",
+      "ru_url": "https://adatours.ru/cuba/place/ciego-de-avila/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_cuba_sego_de_avila",
+        "name": "Сьего де Авила",
+        "slug": "ciego-de-avila",
+        "country_id": "country_cuba",
+        "content_path": "src/content/destinations/sego-de-avila.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "ciego-de-avila",
+        "Сьего де Авила",
+        "sego-de-avila"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_cuba_senfuegos",
+      "type": "destination",
+      "name": "Сьенфуэгос",
+      "ru_url": "https://adatours.ru/cuba/place/cienfuegos/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_cuba_senfuegos",
+        "name": "Сьенфуэгос",
+        "slug": "cienfuegos",
+        "country_id": "country_cuba",
+        "content_path": "src/content/destinations/senfuegos.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "cienfuegos",
+        "Сьенфуэгос",
+        "senfuegos"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_cuba_gavana",
+      "type": "destination",
+      "name": "Гавана",
+      "ru_url": "https://adatours.ru/cuba/place/havana/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_cuba_gavana",
+        "name": "Гавана",
+        "slug": "havana",
+        "country_id": "country_cuba",
+        "content_path": "src/content/destinations/gavana.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "havana",
+        "Гавана",
+        "gavana"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_cuba_olgin",
+      "type": "destination",
+      "name": "Ольгин",
+      "ru_url": "https://adatours.ru/cuba/place/holguin/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_cuba_olgin",
+        "name": "Ольгин",
+        "slug": "holguin",
+        "country_id": "country_cuba",
+        "content_path": "src/content/destinations/olgin.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "holguin",
+        "Ольгин",
+        "olgin"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    },
+    {
+      "key": "destination_cuba_ostrov_huventud",
+      "type": "destination",
+      "name": "Остров Хувентуд",
+      "ru_url": "https://adatours.ru/cuba/place/isla-de-la-juventud/",
+      "checked_at": "2026-10-14T10:56:02.165Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "current_ru": {
+        "id": "destination_cuba_ostrov_huventud",
+        "name": "Остров Хувентуд",
+        "slug": "isla-de-la-juventud",
+        "country_id": "country_cuba",
+        "content_path": "src/content/destinations/ostrov-huventud.md",
+        "source_catalogue": "data/source-index/catalogs/destinations.json",
+        "production_md_individually_reviewed": false
+      },
+      "search_terms": [
+        "isla-de-la-juventud",
+        "Остров Хувентуд",
+        "ostrov-huventud"
+      ],
+      "search_scope": "Frozen 647-URL English inventory (646 fetched) collected 2026-10-12 to 2026-10-14, supplemented by targeted 2026-10-14 English site searches. Not an exhaustive current site crawl.",
+      "reason": "No independently identified English page for this exact Place in the saved inventory or targeted checks; this does not prove that none exists."
+    }
+  ],
+  "important_exclusions": [
+    "Santiago's landmarks (Santa Lucia hill, city hall, central post office, Plaza de Armas) are not exact sameAs Santiago city.",
+    "San Pedro de Atacama is distinct from its neighbouring sites.",
+    "English combined Quepos–Manuel Antonio is not sameAs separate RU Quepos or Manuel Antonio.",
+    "Mentions inside tours and geographic hubs are insufficient for a dedicated Place sameAs.",
+    "An unconfirmed pair is not proof of global absence."
+  ],
+  "summary": {
+    "processed": 50,
+    "confirmed": 12,
+    "checked_no_confirmed_pair": 38,
+    "by_country": {
+      "country_chile": {
+        "checked": 14,
+        "confirmed": 2
+      },
+      "country_costa_rica": {
+        "checked": 29,
+        "confirmed": 10
+      },
+      "country_cuba": {
+        "checked": 7,
+        "confirmed": 0
+      }
+    },
+    "recovered_previous_gap": 14,
+    "verification_cursor_after": 500,
+    "next_batch": "adatours-com-identity-011"
+  }
+}

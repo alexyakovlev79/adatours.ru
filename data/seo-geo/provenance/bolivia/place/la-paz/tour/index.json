@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "targetPath": "/bolivia/place/la-paz/tour/",
+  "articlePath": "data/seo-geo/articles/bolivia/place/la-paz/tour/index.md",
+  "intent": "Выбрать маршрут, где Ла-Пас входит в основной путь, и различить день знакомства с городом, транспортный узел, Титикаку/Уюни и продолжение через границы.",
+  "commercialSources": [
+    {
+      "path": "src/content/destinations/la-pas.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/countries/bolivia.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/tours/krasivaya-boliviya.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/tours/priklyucheniya-v-bolivii.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/tours/sokrovishcha-bolivii.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/tours/bolivia-chile-hidden-treasures-16-days.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "data/source-index/catalogs/tours.json",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "data/source-index/catalogs/destinations.json",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    }
+  ],
+  "neighborSources": [
+    "data/seo-geo/articles/bolivia/tour/index.md",
+    "src/content/destinations/la-pas.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://lapaz.bo/turismo/",
+      "supports": "География и городской туризм, транспортные связи."
+    },
+    {
+      "url": "https://lapaz.bo/turismo/ciudad-montana/",
+      "supports": "Высотная и горная топография Ла-Паса."
+    },
+    {
+      "url": "https://www.miteleferico.bo/",
+      "supports": "Существование и назначение сети канатных дорог."
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/567/",
+      "supports": "Историческая ценность Тиауанако, объект Всемирного наследия."
+    }
+  ],
+  "verification": {
+    "links": "Внутренние пути сверены с активным каталогом Destination и Tour на 14.10; архив пересверяется перед commit.",
+    "tables": "2 компактные колонки.",
+    "counts": "Динамический catalog.toursCountPhrase.",
+    "publication": "Staging only; no main, build or deploy."
+  },
+  "checkedAt": "2026-10-14T18:08:58.253Z",
+  "ownerId": "seo-gpt6-amanda-611-613-20261014180046080",
+  "batchId": "seo-batch-611-612-613-20261014180046080"
+}

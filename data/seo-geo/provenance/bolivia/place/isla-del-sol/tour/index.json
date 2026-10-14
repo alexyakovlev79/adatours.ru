@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "targetPath": "/bolivia/place/isla-del-sol/tour/",
+  "articlePath": "data/seo-geo/articles/bolivia/place/isla-del-sol/tour/index.md",
+  "intent": "Сравнить три реально проходящих через Солнечный остров тура, день остановки, катамаран/гидрофойл/скоростной катер, число стран и отличие от острова Луны.",
+  "commercialSources": [
+    {
+      "path": "src/content/tours/priklyucheniya-v-bolivii.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/tours/peru-bolivia-uyuni-12-days.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/tours/peru-bolivia-uyuni-lakes-15-days.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "src/content/destinations/solnechnyj-ostrov.md",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "data/source-index/catalogs/tours.json",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    },
+    {
+      "path": "data/source-index/catalogs/excursions.json",
+      "readFrom": "main",
+      "readDate": "2026-10-14"
+    }
+  ],
+  "neighborSources": [
+    "src/content/countries/bolivia.md",
+    "src/content/destinations/isla-de-la-luna.md",
+    "data/seo-geo/articles/bolivia/tour/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://conocebolivia.turismoyculturas.gob.bo/wp-content/uploads/2025/11/P-BoliviaTeEspera.pdf",
+      "supports": "Титикака 3812 м; археология Острова Солнца, лестница Юмани, Пилкокайна, Остров Луны и храм Иñak Uyu."
+    },
+    {
+      "url": "https://visitbolivia.produccion.gob.bo/lugar/13",
+      "supports": "Официальная туристическая страница Isla del Sol: сезон апрель–октябрь, лодка из Копакабаны, климат и тропы."
+    }
+  ],
+  "verification": {
+    "tourIds": [
+      "tour_source_priklyucheniya_v_bolivii",
+      "tour_peru_bolivia_uyuni_12_days",
+      "tour_peru_bolivia_uyuni_lakes_15_days"
+    ],
+    "catalogFilter": "Main routeDestinations of active tours, excluding archived.",
+    "internalLinks": "Canonical paths verified in current destination, excursion, tour source catalogs; archive check during commit.",
+    "dynamicFields": [
+      "catalog.toursCountPhrase",
+      "catalog.tourTable"
+    ],
+    "externalLinksInBody": false,
+    "pricePolicy": "Dynamic table supplies current tour prices; no static price assertions.",
+    "published": false
+  },
+  "checkedAt": "2026-10-14T18:06:01.678Z",
+  "ownerId": "seo-gpt6-amanda-608-609-610-20261014175820296",
+  "batchId": "seo-batch-608-609-610-20261014175820296"
+}

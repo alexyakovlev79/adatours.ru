@@ -47,10 +47,10 @@
     "retries_per_url_in_same_step": 0
   },
   "first_next_task": {
-    "id": "adatours-com-identity-021",
+    "id": "adatours-com-identity-022",
     "step": 3,
     "domain": "adatours.com",
-    "action": "Next 50 distinct stage-3 objects after tour_source_luchshee_v_brazilii_za_9_dnej. Skip all completed batches 001–020 and model samples; do not use a raw catalogue offset.",
+    "action": "Next 50 distinct stage-3 objects after tour_brazil_carnival_flavors_rio_paraty_ilha_grande; starts tour_source_vazhnoe_brazilii. Skip completed 001–021 and model samples; preserve frozen queue order.",
     "status": "pending",
     "object_limit": 50,
     "queue": "adatours.com.json",
@@ -79,13 +79,13 @@
   "last_checkpoint": {
     "step": 3,
     "domain": "adatours.com",
-    "batch_id": "adatours-com-identity-020",
+    "batch_id": "adatours-com-identity-021",
     "processed_in_batch": 50,
-    "confirmed_in_batch": 13,
-    "checked_no_confirmed_pair": 37,
-    "verification_cursor": 1000,
-    "report": "adatours-com-identity-020.json",
-    "saved_at": "2026-10-14T14:51:32.113Z"
+    "confirmed_in_batch": 25,
+    "checked_no_confirmed_pair": 25,
+    "verification_cursor": 1050,
+    "report": "adatours-com-identity-021.json",
+    "saved_at": "2026-10-14T16:22:43.957Z"
   },
   "step_1": {
     "status": "completed",
@@ -132,7 +132,7 @@
       "unconfirmed_elsewhere": 36
     }
   ],
-  "updated_at": "2026-10-14T14:25:23.075Z",
+  "updated_at": "2026-10-14T16:22:43.957Z",
   "completed_reports_pending_sync": [
     {
       "batch_id": "adatours-com-identity-011",
@@ -143,10 +143,11 @@
       "unconfirmed_exact": 45,
       "first_key": "destination_cuba_matansas",
       "last_key": "destination_ecuador_enderby_islet",
-      "queue_sync": "pending",
-      "correspondences_table_sync": "pending",
-      "reason": "GitHub connector security blocked bulk update of existing large JSON/CSV. Saved report is complete and must be imported without rechecking any of the 50 keys.",
-      "next_after_sync": "adatours-com-identity-012"
+      "queue_sync": "completed",
+      "correspondences_table_sync": "completed",
+      "reason": "Historical 011 bulk-sync blocker subsequently resolved; rows and frozen batch are included in current correspondence table and queue.",
+      "next_after_sync": "adatours-com-identity-012",
+      "resolved_by": "subsequent batches before identity-021"
     }
   ]
 }

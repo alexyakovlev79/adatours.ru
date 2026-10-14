@@ -476,18 +476,18 @@
     "other_domains_not_exhaustively_checked": true
   },
   "adatours_com_identity_latest": {
-    "batch_id": "adatours-com-identity-019",
-    "checked_at": "2026-10-14T14:25:23.075Z",
-    "step3_checked": 950,
+    "batch_id": "adatours-com-identity-021",
+    "checked_at": "2026-10-14T16:22:43.957Z",
+    "step3_checked": 1050,
     "step1_confirmed_geography": 10,
     "coffee_related_checked": 50,
     "coffee_confirmed_programmes": 8,
-    "record_count": 968,
-    "confirmed_exact": 185,
-    "unconfirmed_exact": 783,
-    "next": "adatours-com-identity-020",
-    "report": "adatours-com-identity-019.json",
-    "note": "16 Suriname, 15 Uruguay, 19 Venezuela: 9 exact English Place identities, 41 without verified exact pair. Synced queued results of batches 017–019, no schema/JSON-LD changes."
+    "record_count": 1068,
+    "confirmed_exact": 223,
+    "unconfirmed_exact": 845,
+    "next": "adatours-com-identity-022",
+    "report": "adatours-com-identity-021.json",
+    "note": "50 active Brazil tours, 25 exact programme identities, 25 unconfirmed. English-language offer prices/dates independently change; potential collisions and editions excluded from sameAs. Report, full queue cursor and JSON/CSV correspondences synchronized. No schema/JSON-LD changes."
   },
   "adatours_com_identity_pending_sync": {
     "batch_id": "adatours-com-identity-011",
@@ -498,10 +498,11 @@
     "unconfirmed_exact": 45,
     "first_key": "destination_cuba_matansas",
     "last_key": "destination_ecuador_enderby_islet",
-    "queue_sync": "pending",
-    "correspondences_table_sync": "pending",
-    "reason": "GitHub connector security blocked bulk update of existing large JSON/CSV. Saved report is complete and must be imported without rechecking any of the 50 keys.",
+    "queue_sync": "completed",
+    "correspondences_table_sync": "completed",
+    "reason": "Historical 011 write-access blocker resolved by later synchronization; frozen 011 keys and all rows are included in current queue/table.",
     "next_after_sync": "adatours-com-identity-012",
-    "manifest_still_represents_last_integrated_batch": "adatours-com-identity-010"
+    "manifest_still_represents_last_integrated_batch": "adatours-com-identity-010",
+    "resolved_by": "subsequent batch integrations"
   }
 }

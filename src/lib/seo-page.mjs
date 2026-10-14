@@ -36,7 +36,7 @@ function priceFrom(price,currency) {
  const n=Number(price);
  if(!Number.isFinite(n)||n<=0||currency!=='USD')return '';
  const formatted=Math.round(n).toLocaleString('ru-RU',{maximumFractionDigits:0});
- return 'от $'+formatted;
+ return 'от ' + String.fromCharCode(36) + formatted;
 }
 export function seoTourTitle(d) {
  const compact=seoCompactTitle(d.title);

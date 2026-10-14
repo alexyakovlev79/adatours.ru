@@ -5,6 +5,7 @@ import { countryPath, destinationPath, tourPath, excursionPath, themePath } from
 import { isActiveEntity, isArchivedEntity } from './archive.mjs';
 import { buildStructuredData } from './structured-data.mjs';
 import { inspectHtml } from './structured-data-html.mjs';
+import { collectSeoPagePrices, enrichSeoPriceMetadata, formatSeoMoney } from './seo-price-meta.mjs';
 
 let recordsPromise: Promise<any[]> | undefined;
 async function loadRecords() {
@@ -47,24 +48,46 @@ export async function pageStructuredData(input: {
       page: { path: input.path, url: input.url, title: input.title, description: input.description, lang: input.lang, image: input.image },
       document: inspected.facts, breadcrumbs: input.breadcrumbs || [],
       extra: [...[input.extra || []].flat(), ...inspected.legacy] });
-  const priceSummaries = graph['@graph'].filter((node: any) => node['@type'] === 'AggregateOffer').map((offer: any) => {
-    const kind = offer['@id'].includes('#tour-') ? 'туров' : 'экскурсий';
-    const symbols: Record<string, string> = { USD: '$', EUR: '€', RUB: '₽', BRL: 'R$' };
-    const formatted = (amount: number) => {
-      const value = amount.toLocaleString('ru-RU', { maximumFractionDigits: 0 });
-      return symbols[offer.priceCurrency]
-        ? (offer.priceCurrency === 'RUB' ? value + ' ₽' : symbols[offer.priceCurrency] + value)
-        : value + ' ' + offer.priceCurrency;
-    };
-    const range = offer.lowPrice === offer.highPrice
-      ? `от ${formatted(offer.lowPrice)}`
-      : `от ${formatted(offer.lowPrice)} до ${formatted(offer.highPrice)}`;
-    return `Стартовые цены ${kind}: ${range}.`;
+  const current = records.find((record) => record.path === input.path);
+  const prices = collectSeoPagePrices({
+    records, root: input.root, path: input.path,
+    groups: inspected.facts.groups, priceVisible: inspected.facts.priceVisible,
   });
-  const priceSummary = priceSummaries.join(' ');
-  if (priceSummary) {
-    const currentPage = graph['@graph'].find((node: any) => node['@id'] === `${input.url}#webpage`);
-    if (currentPage) currentPage.description = `${priceSummary} ${currentPage.description}`;
+  const seo = enrichSeoPriceMetadata({
+    title: input.title, description: input.description, prices,
+    preferredKind: current?.kind === 'country' || current?.kind === 'destination' ? 'tour' : undefined,
+  });
+  const aggregates = graph['@graph'].filter((node: any) => node['@type'] === 'AggregateOffer');
+  const priceSummaries = aggregates.map((offer: any) => {
+    const kind = offer['@id'].includes('#tour-') ? 'туров' : 'экскурсий';
+    const range = offer.lowPrice === offer.highPrice
+      ? 'от ' + formatSeoMoney(offer.lowPrice, offer.priceCurrency)
+      : 'от ' + formatSeoMoney(offer.lowPrice, offer.priceCurrency) +
+        ' до ' + formatSeoMoney(offer.highPrice, offer.priceCurrency);
+    return 'Стартовые цены ' + kind + ': ' + range + '.';
+  });
+  // The priced card of a singleton selection was not visible before; display its
+  // factual starting price beside the catalogue when SEO now cites that price.
+  // Keep the existing AggregateOffer summaries unchanged for multi-item groups.
+  if (seo.changed && seo.quote && !['tour', 'excursion'].includes(current?.kind)) {
+    for (const { currency, amount } of seo.quote.parts) {
+      if (aggregates.some((node: any) => node['@id'] === input.url + '#' + seo.quote.kind + '-' + currency + '-price-range')) continue;
+      const count = prices.filter((item) => item.kind === seo.quote.kind && item.currency === currency).length;
+      const noun = seo.quote.kind === 'tour' ? (count === 1 ? 'тура' : 'туров')
+        : count === 1 ? 'экскурсии' : 'экскурсий';
+      const prefix = count === 1 ? 'Стартовая цена ' : 'Стартовые цены ';
+      priceSummaries.push(prefix + noun + ': ' + (seo.quote.multiple ? 'от ' : '') + formatSeoMoney(amount, currency) + '.');
+    }
   }
-  return { html: inspected.html, graph, priceSummaries, priceSummary };
+  const priceSummary = priceSummaries.join(' ');
+  const metaDescription = priceSummary ? priceSummary + ' ' + seo.description : seo.description;
+  const currentPage = graph['@graph'].find((node: any) => node['@id'] === input.url + '#webpage');
+  if (currentPage) {
+    currentPage.name = seo.title;
+    currentPage.description = metaDescription;
+  }
+  return {
+    html: inspected.html, graph, priceSummaries, priceSummary,
+    metaTitle: seo.title, metaDescription,
+  };
 }

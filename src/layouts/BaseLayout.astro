@@ -134,7 +134,8 @@ const schema = await pageStructuredData({
   url: canonicalUrl, title: fullTitle, description, lang, image: ogImageUrl,
   breadcrumbs: breadcrumbSchemas, extra: pageSchema,
 });
-const metaDescription = schema.priceSummary ? `${schema.priceSummary} ${description}` : description;
+const metaTitle = schema.metaTitle;
+const metaDescription = schema.metaDescription;
 ---
 <!doctype html>
 <html lang={lang}>
@@ -142,7 +143,7 @@ const metaDescription = schema.priceSummary ? `${schema.priceSummary} ${descript
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{fullTitle}</title>
+    <title>{metaTitle}</title>
     <meta name="description" content={metaDescription} />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" type="image/svg+xml" href={faviconSvgUrl} />
@@ -155,12 +156,12 @@ const metaDescription = schema.priceSummary ? `${schema.priceSummary} ${descript
     <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:locale" content={ogLocale} />
-    <meta property="og:title" content={fullTitle} />
+    <meta property="og:title" content={metaTitle} />
     <meta property="og:description" content={metaDescription} />
     <meta property="og:url" content={canonicalUrl} />
     {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
     <meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
-    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:title" content={metaTitle} />
     <meta name="twitter:description" content={metaDescription} />
     {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
     <noscript><style is:inline>img[data-lazy-src] { display: none !important; }</style></noscript>

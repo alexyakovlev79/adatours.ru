@@ -23,7 +23,10 @@
     "candidate_requires_terms": 6,
     "unconfirmed_other": 36,
     "new_coffee_urls_previously_screened": 18,
-    "new_url_exact_sameas_confirmed": 0
+    "new_url_exact_sameas_confirmed": 0,
+    "external_sites_keyword_screened": 10,
+    "explicit_vip_candidate_without_sameas": 1,
+    "other_domain_crawls_not_exhaustive": true
   },
   "records": [
     {
@@ -775,6 +778,60 @@
       "sameas_url": null,
       "candidate_url": null,
       "evidence": "Old brasiltours.ru source URL is source provenance, not sufficient current cross-domain sameAs confirmation."
+    }
+  ],
+  "additional_external_site_checks": [
+    {
+      "domain": "brasiltours.ru",
+      "scope": "Legacy source URLs examined for principal coffee tours. Product provenance only; live equality of price/conditions on all 29 legacy links not asserted.",
+      "result": "Historical donor/source URLs retained separately, not promoted en masse to sameAs."
+    },
+    {
+      "domain": "vipdeluxetravel.com",
+      "url": "https://vipdeluxetravel.com/brazil-coffee-tour",
+      "source": "Publicly readable 8-day Brazil Coffee Tour: Rio, Iguazu, Barra do Pirai, specific coffee estates Ponte Alta, Taquara and Florenca, USD 3130.",
+      "result": "Candidate programme only. RU nearest 8-day coffee programme offers USD 3715 and different level of documented estate detail; no safe sameAs."
+    },
+    {
+      "domain": "vipdeluxetravel.ru",
+      "scope": "Search queries for coffee tours, coffee baron estates, El Ocaso excursion",
+      "result": "No exact current coffee object page independently confirmed by indexed search. Not a whole-site absence claim."
+    },
+    {
+      "domain": "adatours.com.br",
+      "url": "https://adatours.com.br/",
+      "scope": "Opened independent Portuguese-language homepage and keyword-searched site for coffee/fazenda tours.",
+      "result": "Operates an independent website, NOT a proven redirect to adatours.com. No exact coffee entity confirmed by indexed search."
+    },
+    {
+      "domain": "svadbazagranicey.com",
+      "scope": "Targeted indexed-domain coffee query",
+      "result": "No exact coffee product or geographic page confirmed in this pass. Indexed-search silence is not proof of nonexistence."
+    },
+    {
+      "domain": "news.brasiltours.ru",
+      "scope": "Targeted indexed-domain coffee query",
+      "result": "No exact coffee product or geographic page confirmed in this pass. Indexed-search silence is not proof of nonexistence."
+    },
+    {
+      "domain": "hotels.adatours.com",
+      "scope": "Targeted indexed-domain coffee query",
+      "result": "No exact coffee product or geographic page confirmed in this pass. Indexed-search silence is not proof of nonexistence."
+    },
+    {
+      "domain": "adatoursbrazil.weebly.com",
+      "scope": "Targeted indexed-domain coffee query",
+      "result": "No exact coffee product or geographic page confirmed in this pass. Indexed-search silence is not proof of nonexistence."
+    },
+    {
+      "domain": "touroperatorbrazil.wordpress.com",
+      "scope": "Targeted indexed-domain coffee query",
+      "result": "No exact coffee product or geographic page confirmed in this pass. Indexed-search silence is not proof of nonexistence."
+    },
+    {
+      "domain": "2016olympicgame.wordpress.com",
+      "scope": "Targeted indexed-domain coffee query",
+      "result": "No exact coffee product or geographic page confirmed in this pass. Indexed-search silence is not proof of nonexistence."
     }
   ]
 }

@@ -32,7 +32,7 @@ export function collectSeoPagePrices({ records, root, path, groups = [], priceVi
   }
   // Resolve an entire logical selection before pagination. A country tour page
   // and /page/N/ of that catalogue must quote the same verified minimum.
-  const canonical = path.replace(/page\\/\\d+\\/$/, '');
+  const canonical = path.replace(/page\/\d+\/$/, '');
   const tours = records.filter((r) => active(r) && r.kind === 'tour');
   const excursions = records.filter((r) => active(r) && r.kind === 'excursion');
   const countries = records.filter((r) => active(r) && r.kind === 'country');
@@ -53,39 +53,39 @@ export function collectSeoPagePrices({ records, root, path, groups = [], priceVi
   else if (canonical === '/excursions/') fullSelection = excursions;
   else if (canonical === '/vip/') fullSelection = selectVipTours(tours).entries;
   else if (canonical === '/multi-country/') fullSelection = tours.filter((r) => mainCountries(r).length > 1);
-  else if ((m = canonical.match(/^\\/([^/]+)\\/tour\\/$/))) {
+  else if ((m = canonical.match(/^\/([^/]+)\/tour\/$/))) {
     const country = countryBySlug(m[1]);
     if (country) fullSelection = tours.filter((r) => mainCountries(r).includes(country.data.id));
-  } else if ((m = canonical.match(/^\\/([^/]+)\\/place\\/([^/]+)\\/(tour|optional-tours)\\/$/))) {
+  } else if ((m = canonical.match(/^\/([^/]+)\/place\/([^/]+)\/(tour|optional-tours)\/$/))) {
     const country = countryBySlug(m[1]);
     const destination = destinationBySlug(m[2], country);
     if (destination) fullSelection = tours.filter((r) => {
       const main = mainDestinations(r).includes(destination.data.id);
       return m[3] === 'tour' ? main : !main && (r.data.destinations ?? []).includes(destination.data.id);
     });
-  } else if ((m = canonical.match(/^\\/interests\\/([^/]+)\\/tours\\/(?:([^/]+)\\/)?$/))) {
+  } else if ((m = canonical.match(/^\/interests\/([^/]+)\/tours\/(?:([^/]+)\/)?$/))) {
     const theme = themeBySlug(m[1]);
     const country = m[2] && countryBySlug(m[2]);
     if (theme && (!m[2] || country)) fullSelection = tours.filter((r) =>
       allThemes(r).includes(theme.data.id) && (!country ||
         (r.data.countries ?? []).includes(country.data.id)));
-  } else if ((m = canonical.match(/^\\/vip\\/(?:([^/]+)\\/)?(?:interests\\/([^/]+)\\/)?$/))) {
+  } else if ((m = canonical.match(/^\/vip\/(?:([^/]+)\/)?(?:interests\/([^/]+)\/)?$/))) {
     const country = m[1] && countryBySlug(m[1]);
     const theme = m[2] && themeBySlug(m[2]);
     if ((!m[1] || country) && (!m[2] || theme)) fullSelection = selectVipTours(tours).entries.filter((r) =>
       (!country || mainCountries(r).includes(country.data.id)) &&
       (!theme || allThemes(r).includes(theme.data.id)));
-  } else if ((m = canonical.match(/^\\/([^/]+)\\/excursion\\/$/))) {
+  } else if ((m = canonical.match(/^\/([^/]+)\/excursion\/$/))) {
     const country = countryBySlug(m[1]);
     if (country) fullSelection = excursions.filter((r) =>
       r.data.country === country.data.id || destinations.some((d) =>
         d.data.countryId === country.data.id && d.data.id === r.data.destination));
-  } else if ((m = canonical.match(/^\\/([^/]+)\\/([^/]+)\\/$/))) {
+  } else if ((m = canonical.match(/^\/([^/]+)\/([^/]+)\/$/))) {
     const country = countryBySlug(m[1]);
     const destination = destinationBySlug(m[2], country);
     if (destination) fullSelection = excursions.filter((r) =>
       r.data.destination === destination.data.id || (r.data.relatedDestinations ?? []).includes(destination.data.id));
-  } else if ((m = canonical.match(/^\\/([^/]+)\\/([^/]+)\\/([^/]+)\\/tour\\/$/))) {
+  } else if ((m = canonical.match(/^\/([^/]+)\/([^/]+)\/([^/]+)\/tour\/$/))) {
     const ex = excursions.find((r) => r.path === canonical.slice(0, -'tour/'.length));
     if (ex) fullSelection = tours.filter((r) => referencesExcursion(r, ex.data.id));
   }

@@ -21,7 +21,7 @@ test('static combinations are sorted, unique, nonempty and match only main count
   ];
   const rows = buildMultiCountryCombinations(tours, getCountries);
   const byKey = new Map(rows.map((row) => [row.slugs.join('_'), row]));
-  assert.deepEqual([...byKey.keys()], [...byKey.keys()].sort());
+  assert.deepEqual([...byKey.keys()], [...byKey.keys()].sort((a, b) => a.localeCompare(b, 'en')));
   assert.deepEqual(byKey.get('argentina_brazil').tours.map((tour) => tour.id), ['abc']);
   assert.deepEqual(byKey.get('brazil_chile').tours.map((tour) => tour.id), ['abc', 'chile-brazil']);
   assert.deepEqual(byKey.get('brazil_peru').tours.map((tour) => tour.id), ['brazil-peru']);

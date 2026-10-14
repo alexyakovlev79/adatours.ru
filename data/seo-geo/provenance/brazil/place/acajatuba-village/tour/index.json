@@ -2,37 +2,32 @@
   "version": 1,
   "targetPath": "/brazil/place/acajatuba-village/tour/",
   "articlePath": "data/seo-geo/articles/brazil/place/acajatuba-village/tour/index.md",
-  "authoredBy": "seo-gpt6-amanda-20261014-1430-vip-topics",
-  "checkedAt": "2026-10-14",
-  "editorialIntent": "Сравнение действующих туров через деревню Акажатуба; отличия культурного визита от природного речного этапа; отсутствие обещаний одинаковой программы.",
+  "researchedAt": "2026-10-14T15:45:43.841Z",
+  "editorialIntent": "Каталог обязательных маршрутов через деревню Акажатуба: подтвердить основной тур, роль посещения в дне 3, отличить деревню от одноименного озера и лоджа, показать логистику и условия, не пересказывая страницу самого места.",
   "repositorySources": [
+    "src/lib/tour-relations.ts",
     "src/content/destinations/acajatuba-village.md",
+    "src/content/destinations/lake-acajatuba.md",
+    "src/content/destinations/manaus-amazonia.md",
     "src/content/tours/amazoniya.md",
-    "src/content/tours/braziliya-argentina-gruppovoj-tur.md",
-    "src/content/tours/braziliya-gruppovoj-tur-na-13-dnej.md",
-    "src/content/tours/priklyucheniya-v-amazonke.md",
+    "data/source-index/entries/destination_brazil_derevnya_akazhatuba.json",
     "data/source-index/catalogs/tours.json",
-    "data/source-index/catalogs/destinations.json",
-    "data/catalog-archive.json"
+    "data/source-index/catalogs/excursions.json",
+    "src/content/excursions/vstrecha-rek.md",
+    "src/content/excursions/plavanie-s-rozovymi-del-finami.md",
+    "src/data/catalog/destinations.json"
   ],
-  "independentSources": [
+  "externalSources": [
     {
-      "url": "https://portodemanaus.com.br/nivel-do-rio-negro/",
-      "publisher": "Porto de Manaus",
-      "checkedAt": "2026-10-14",
-      "supports": "Сезонное изменение уровней Рио-Негро, без обещания конкретного состояния реки."
+      "url": "https://www.visitbrasil.com/location/manaus-pt/",
+      "supports": "Официальный Visit Brasil: Манаус, Encontro das Águas и размещение в природных лоджах рядом с Манаусом.",
+      "checkedAt": "2026-10-14"
     },
     {
-      "url": "https://www.sciencedirect.com/science/article/pii/S2405880723000031",
-      "publisher": "Рецензируемая научная публикация, 2023",
-      "checkedAt": "2026-10-14",
-      "supports": "Типичный высокий уровень воды в июне, низкий осенью (октябрь-ноябрь), с годовой изменчивостью."
+      "url": "https://www.visitbrasil.com/en/blog/witness-the-famous-meeting-of-the-waters-between-the-amazon-and-negro-rivers/",
+      "supports": "Официальное описание встречи рек Рио-Негро и Солимойнс, речной навигации и культурного контекста поселений; не источник коммерческих условий Ada Tours.",
+      "checkedAt": "2026-10-14"
     }
   ],
-  "editorialNotes": [
-    "Реальные детали туристического продукта получены только из действующих MD.",
-    "Архивный тур исключен.",
-    "Четыре основных маршрута содержат destination ID Акажатубы; не все включают ремесленную экскурсию.",
-    "Публичный текст использует динамическое число и только внутренние ссылки."
-  ]
+  "constraints": "Use only active canonical Tour for tour inclusion and factual services; archive/optional routes are not automatically part of this catalog. Dynamic catalog counts; no external links in public Markdown, no invented homestay, craft workshop, separate boat booking, flights or extra stops."
 }

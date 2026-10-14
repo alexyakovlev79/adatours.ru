@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "targetPath": "/vip/mexico/",
+  "articlePath": "data/seo-geo/articles/vip/mexico/index.md",
+  "researchedAt": "2026-10-14",
+  "editorialIntent": "VIP+Мексика: точно объяснить единственный VIP-тур 8 дней/7 ночей, смешанный формат групповых экскурсий и индивидуальных трансферов, границы включенных услуг, вариативность цены за размещение и отдельное побережье; не копировать общий путеводитель и культурную VIP-статью.",
+  "repositorySources": [
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-countries.mjs",
+    "src/pages/vip/[...country].astro",
+    "src/content/tours/mexico-lindo-eight-days.md",
+    "src/content/countries/mexico.md",
+    "data/external-identity/vip-catalogues.json",
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "data/seo-geo/articles/vip/mexico/interests/culture-and-history/index.md",
+    "data/catalog-archive.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://teotihuacan.inah.gob.mx/",
+      "checkedAt": "2026-10-14",
+      "supports": "Теотиуакан как самостоятельный археологический объект; история и состав достопримечательностей."
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/791/",
+      "checkedAt": "2026-10-14",
+      "supports": "Ушмаль и памятники архитектуры майя; публичная статья не делает заявления о стоимости или расписании UNESCO."
+    }
+  ],
+  "commercialVerification": {
+    "vipSnapshotDate": "2026-10-12",
+    "verifiedTourIds": [
+      "tour_mexico_lindo_eight_days"
+    ],
+    "notes": "Тур 8 дней / 7 ночей; 4 ночи в Мехико и 3 в Мериде; 2027 тарифы TPL/DBL/SGL; индивидуальные airport/day8 transfers, групповые экскурсии и трансферы по ряду дней; рейс Мехико-Мерида, проживание на побережье и питание кроме обеда день8 исключены. Нет гарантии полностью private."
+  },
+  "editorialChecks": [
+    "Разделение VIP-подборки и фактического уровня сервиса",
+    "Динамическая таблица единственного тура",
+    "Мобильная таблица из двух колонок",
+    "Контекстные внутренние ссылки и отсутствие внешних",
+    "Туровая стоимость и состав подтверждены из GitHub",
+    "Никаких иллюстраций"
+  ]
+}

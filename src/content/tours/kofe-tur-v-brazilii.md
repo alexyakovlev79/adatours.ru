@@ -295,7 +295,7 @@ priceFrom: 5596
 currency: USD
 priceNote: $5596
 hero:
-  src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
+  src: /media/tours/tour_source_kofe_tur_v_brazilii/hero-generated-20261014-coffee-dedup-v1.webp
   hover: "Кофейные зерна крупным планом рядом с каплями воды на листе"
   alt: "Коричневые кофейные зерна на мокром зеленом листе и деревянной поверхности"
 routeCountries:

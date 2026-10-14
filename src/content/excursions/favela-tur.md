@@ -16,7 +16,7 @@ language: []
 priceFrom: 165
 currency: USD
 hero:
-  src: /media/excursions/favela-tur/hero-enhanced-20261001.webp
+  src: /media/excursions/excursion_source_favela_tur/hero-generated-20261014-coffee-dedup-v1.webp
   hover: "Рио: дома фавелы, поднимающиеся по горному склону"
   alt: "Плотно стоящие разноцветные дома фавелы на зеленом склоне Рио-де-Жанейро, Бразилия"
 gallery:

@@ -59,7 +59,7 @@ priceNote: 'Стоимость на человека: 4★ — SGL $7830, DBL $4
 dates:
 - 2027 год; точные даты поездки подтверждают при бронировании
 hero:
-  src: /media/destinations/cartagena/gallery-1-enhanced-20261003.webp
+  src: /media/tours/tour_colombia_explorer_9_days/hero-generated-20261014-coffee-dedup-v1.webp
   alt: Улица Картахены с арочными входами и деревянными балконами, Колумбия
   hover: 'Картахена: исторические дома с балконами вдоль городской улицы'
 gallery: []

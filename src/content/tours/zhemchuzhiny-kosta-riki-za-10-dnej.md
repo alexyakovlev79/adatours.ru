@@ -226,7 +226,7 @@ priceNote: $5605.
 durationDays: 10
 durationNights: 9
 hero:
-  src: /media/tours/5-chudes-kosta-riki/hero-src-enhanced-20261007.webp
+  src: /media/tours/tour_source_zhemchuzhiny_kosta_riki_za_10_dnej/hero-generated-20261014-coffee-dedup-v1.webp
   hover: "Коста-Рика: водопад и ярко-бирюзовая вода у зеленого склона"
   alt: "Водопад в бирюзовом водоеме среди тропического леса, Коста-Рика"
 routeCountries:

@@ -15,7 +15,7 @@ priceFrom: 170
 currency: "USD"
 priceNote: "Стоимость — $170."
 hero:
-  src: /media/excursions/royal-petropolis-private-tour-full-day/hero-enhanced-20261006.webp
+  src: /media/excursions/excursion_source_royal_petropolis_private_tour_full_day/hero-generated-20261014-coffee-dedup-v1.webp
   hover: "Петрополис: фасад с фахверком в окружении зелени"
   alt: "Большое светлое здание с фахверком и крутой крышей между деревьями, Петрополис, Бразилия"
 gallery:

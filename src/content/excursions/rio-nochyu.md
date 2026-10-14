@@ -12,7 +12,7 @@ country: country_brazil
 destination: destination_brazil_rio
 language: []
 hero:
-  src: /media/excursions/rio-nochyu/hero-enhanced-20261001.webp
+  src: /media/excursions/excursion_source_rio_nochyu/hero-generated-20261014-coffee-dedup-v1.webp
   hover: "Артистка в карнавальном костюме с зелеными и розовыми перьями"
   alt: "Улыбающаяся участница шоу в костюме с зелеными и розовыми перьями"
 gallery: []

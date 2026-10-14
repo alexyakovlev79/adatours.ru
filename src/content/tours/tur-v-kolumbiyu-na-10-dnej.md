@@ -15,7 +15,7 @@ lead: 'Десять дней в Колумбии: музеи и историче
 durationDays: 10
 durationNights: 9
 hero:
-  src: /media/tours/tur-v-kolumbiyu-na-10-dnej/hero-enhanced-20261006.webp
+  src: /media/tours/tour_source_tur_v_kolumbiyu_na_10_dnej/hero-generated-20261014-coffee-dedup-v1.webp
   alt: "Улыбающаяся женщина с фруктами на голове у ярко-синей стены, Колумбия"
   hover: "Колумбия: красно-желто-синий наряд и миска с фруктами на голове"
 currency: USD

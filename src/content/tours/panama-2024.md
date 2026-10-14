@@ -239,7 +239,7 @@ priceFrom: 6629
 currency: USD
 priceNote: $6629
 hero:
-  src: /media/destinations/pearl-islands/hero-enhanced-20261005.webp
+  src: /media/tours/tour_source_panama_2024/hero-generated-20261014-coffee-dedup-v1.webp
   alt: "Пальмы и лодка у прозрачной воды Жемчужных островов, Панама"
   hover: "Жемчужные острова в Панаме: песчаный берег в тени пальм"
 routeCountries:

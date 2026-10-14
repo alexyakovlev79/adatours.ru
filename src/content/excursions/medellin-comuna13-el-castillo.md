@@ -16,7 +16,7 @@ priceFrom: null
 currency: USD
 priceNote: Включена в программу Colombia Highlights 7 дней / 6 ночей; отдельная стоимость по запросу.
 hero:
-  src: /media/destinations/medellin/hero-enhanced-20261003.webp
+  src: /media/excursions/excursion_colombia_medellin_comuna13_el_castillo/hero-generated-20261014-coffee-dedup-v1.webp
   alt: Панорама Медельина с высотными домами и горами, Колумбия
   hover: 'Медельин в Колумбии: городская застройка на фоне гор'
 gallery: []

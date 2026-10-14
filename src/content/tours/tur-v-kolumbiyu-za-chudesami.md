@@ -291,7 +291,7 @@ priceFrom: 2803
 currency: USD
 priceNote: $2803
 hero:
-  src: /media/destinations/cartagena/hero-enhanced-20261003.webp
+  src: /media/tours/tour_source_tur_v_kolumbiyu_za_chudesami/hero-generated-20261014-coffee-dedup-v1.webp
   hover: "Женщина с фруктами в ярком колумбийском костюме"
   alt: "Улыбающаяся женщина в ярком платье с чашей фруктов на голове на фоне синей стены, Колумбия"
 routeCountries:

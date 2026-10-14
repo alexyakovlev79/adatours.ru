@@ -15,7 +15,7 @@ updatedAt: '2026-10-10'
 priceFrom: null
 currency: USD
 hero:
-  src: /media/excursions/fazendy-kofejnykh-baronov/gallery-3-enhanced-20261006.webp
+  src: /media/excursions/excursion_colombia_el_ocaso_coffee_tour/hero-generated-20261014-coffee-dedup-v1.webp
   hover: "Кофейные зерна крупным планом рядом с каплями воды на листе"
   alt: "Коричневые кофейные зерна на мокром зеленом листе и деревянной поверхности"
 included:

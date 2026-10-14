@@ -17,7 +17,7 @@ destinationName: Итакуруса
 relatedDestinations:
 - destination_brazil_rio
 hero:
-  src: /media/destinations/destination_brazil_itakurusa/hero-generated-20261008-resumed.webp
+  src: /media/excursions/excursion_rio_itacuruca_tropical_islands/hero-generated-20261014-coffee-dedup-v1.webp
   hover: "Итакуруса: спокойная вода и лодки у лесистого побережья"
   alt: "Лодки у каменистого берега Итакурусы в бухте перед зелеными горами, Бразилия"
 sourceSnapshot: https://drive.google.com/file/d/1krMKz4X0Ls4AyhJchoT4xa-dRG0Qo3jC/view?usp=drivesdk

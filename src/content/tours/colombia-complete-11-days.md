@@ -52,7 +52,7 @@ priceNote: 'Стоимость на человека: 4★ — SGL $8622, DBL $4
 dates:
 - 2027 год; даты поездки согласуют при бронировании
 hero:
-  src: /media/destinations/san-andres/hero-enhanced-20261003.webp
+  src: /media/tours/tour_colombia_complete_11_days/hero-generated-20261014-coffee-dedup-v1.webp
   alt: "Бирюзовая морская бухта с пальмами на Сан-Андресе, Колумбия"
   hover: "Сан-Андрес в Колумбии: пальмы над прозрачной водой и островной бухтой"
 gallery: []

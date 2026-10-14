@@ -15,7 +15,7 @@ language:
 priceFrom: null
 currency: USD
 hero:
-  src: /media/destinations/medellin/hero-enhanced-20261003.webp
+  src: /media/excursions/excursion_colombia_medellin_veracruz_comuna13_castillo/hero-generated-20261014-coffee-dedup-v1.webp
   alt: Панорама Медельина с высотными домами и горами, Колумбия
 gallery: []
 route:

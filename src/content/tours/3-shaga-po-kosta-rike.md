@@ -197,7 +197,7 @@ priceFrom: 2136
 currency: USD
 priceNote: $2136
 hero:
-  src: /media/tours/3-shaga-po-kosta-rike/hero-src-enhanced-20261007.webp
+  src: /media/tours/tour_source_3_shaga_po_kosta_rike/hero-generated-20261014-coffee-dedup-v1.webp
   hover: "Закат за пальмами на побережье Коста-Рики"
   alt: "Пальмы на зеленом морском берегу в золотистом свете заходящего солнца, Коста-Рика"
 routeCountries:

@@ -233,7 +233,7 @@ priceFrom: 6688
 currency: USD
 priceNote: $6688
 hero:
-  src: /media/tours/5-chudes-kosta-riki/hero-src-enhanced-20261007.webp
+  src: /media/tours/tour_source_costa_rica_nicaragua_ru/hero-generated-20261014-coffee-dedup-v1.webp
   hover: "Коста-Рика: водопад и ярко-бирюзовая вода у зеленого склона"
   alt: "Водопад в бирюзовом водоеме среди тропического леса, Коста-Рика"
 routeCountries:

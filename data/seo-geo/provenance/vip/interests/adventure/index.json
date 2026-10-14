@@ -1,0 +1,43 @@
+{
+  "targetPath": "/vip/interests/adventure/",
+  "checkedAt": "2026-10-14T14:49:46.466Z",
+  "ownerId": "seo-gpt6-amanda-vip-countries-20261014T1429",
+  "editorialIntent": "Сравнить реальные типы приключений, физическую нагрузку и подтвержденный сервис VIP-программ разных стран без дублирования путеводителя /interests/adventure/.",
+  "questions": [
+    "Какие типы приключений есть в VIP-подборке?",
+    "Куда ехать за рафтингом, пещерами, выживанием и мото-маршрутом?",
+    "Как различаются короткие и длинные программы?",
+    "Что подтверждено о составе услуг и размещении?",
+    "Какие ограничения значимы для выбора?"
+  ],
+  "githubSources": [
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-filters.mjs",
+    "src/lib/vip-copy.mjs",
+    "src/pages/vip/[...country].astro",
+    "data/external-identity/vip-catalogues.json",
+    "data/catalog-archive.json",
+    "src/content/tours/ekstrim-v-kosta-rike.md",
+    "src/content/tours/priklyucheniya-v-amazonke.md",
+    "src/content/tours/chudesa-beliza.md",
+    "src/content/tours/mototur-cherez-braziliyu.md",
+    "src/content/tours/nezabyvaemyj-tur-v-antarktidu-s-nochevkoj.md",
+    "src/content/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej.md",
+    "src/content/tours/chile-argentina-private-grand-tour-17-days.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html",
+      "supports": "Высотные риски зависят от скорости подъема и высоты; физическая подготовка не исключает высотную болезнь"
+    },
+    {
+      "url": "https://iaato.org/visiting-antarctica/during-your-visit",
+      "supports": "Экологические ограничения и требования при посещении Антарктиды"
+    }
+  ],
+  "limitations": [
+    "Коммерческие факты и связи сверены по активным MD GitHub и модели VIP; услуги не выводились из названия VIP.",
+    "Динамические числа вычисляются Astro, неподтвержденные цены и уровни сервиса не добавлены.",
+    "Публичное Markdown-содержимое не содержит внешних ссылок, источники сохранены отдельно."
+  ]
+}

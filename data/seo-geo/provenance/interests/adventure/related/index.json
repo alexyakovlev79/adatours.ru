@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "targetPath": "/interests/adventure/related/",
+  "articlePath": "data/seo-geo/articles/interests/adventure/related/index.md",
+  "researchedAt": "2026-10-14T08:03:38.281Z",
+  "editorialIntent": "Выбор сочетаний приключенческих путешествий с природой, историей, пляжами, гастрономией, экспедициями и специализированными активностями. Уникальная ценность каталога близких интересов — сравнение подтвержденных комбинаций на действующих программах, без повторения глобального гида по приключениям или витрины туров.",
+  "repositorySources": [
+    "src/pages/interests/[...catalog].astro",
+    "src/lib/interest-model.mjs",
+    "src/content/themes/priklyucheniya.md",
+    "src/data/interest-registry.json",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/seo-geo/articles/interests/adventure/index.md",
+    "data/seo-geo/articles/interests/adventure/tours/index.md",
+    "src/content/tours/brazil-adventure-17d.md",
+    "src/content/tours/beliz-priklyuchenie-materik-ostrov.md",
+    "src/content/tours/priklyucheniya-v-bolivii.md",
+    "src/content/tours/ekstrim-v-kosta-rike.md",
+    "src/content/tours/antarctica-discovery-long-hikes-11-days.md",
+    "src/content/tours/mototur-cherez-braziliyu.md",
+    "src/content/tours/colombia-explorer-9-days.md",
+    "src/content/tours/vsya-argentina.md",
+    "src/content/tours/ves-ekvador-na-novyj-god.md"
+  ],
+  "externalSources": [],
+  "verificationNote": "Коммерческие факты и названия программ взяты из текущих production Tour MD. Для этих фактов внешняя выдача не использовалась. Внешнее открытие adatours.ru через веб-инструмент недоступно; наличие страницы /related/ проверено по Astro getStaticPaths, а участие интересов — по модели и каталогу. Изменяемые правила поездок или внешняя статистика в статью не включены.",
+  "commercialVerification": {
+    "themeId": "theme_adventure",
+    "currentRelevantThemes": [
+      "theme_wildlife",
+      "theme_culture",
+      "theme_beach",
+      "theme_gastronomy_wine",
+      "theme_cruises",
+      "theme_events",
+      "theme_fishing",
+      "theme_motorcycle",
+      "theme_diving"
+    ],
+    "verifiedExamples": [
+      {
+        "id": "tour_brazil_adventure_17d",
+        "url": "/brazil/tour/grand-brazil-adventure-17-days/",
+        "notes": "17 дней; природные наблюдения и активные дни Пантанал/Бонито/Ленсойс, побережье и городские экскурсии"
+      },
+      {
+        "id": "tour_source_beliz_priklyuchenie_materik_ostrov",
+        "url": "/belize/tour/belize-mainland-island-adventure/",
+        "notes": "8 дней; Шунаантуньич, пещерный Cave Tubing, Сан-Педро и морская программа"
+      },
+      {
+        "id": "tour_source_priklyucheniya_v_bolivii",
+        "url": "/bolivia/tour/bolivia-titicaca-uyuni-la-paz-11-days/",
+        "notes": "11 дней; археология, Титикака, Уюни, Тороторо"
+      },
+      {
+        "id": "tour_source_ekstrim_v_kosta_rike",
+        "url": "/costa-rica/tour/costa-rica-extreme-adventure/",
+        "notes": "13 дней; рафтинг Пакуаре, каньонинг, спортивная рыбалка и дайвинг как отдельные дни"
+      },
+      {
+        "id": "tour_antarctica_discovery_long_hikes_11_days",
+        "url": "/antarctica/tour/antarctica-discovery-long-hikes-11-days/",
+        "notes": "11 дней; морская экспедиция, пешие выходы возможны при подходящих условиях"
+      },
+      {
+        "id": "tour_source_mototur_cherez_braziliyu",
+        "url": "/brazil/tour/brazil-motorcycle-tour-12-days/",
+        "notes": "12 дней; мотоцикл основа маршрута, экскурсии в Парати/Петрополисе/Тирадентисе"
+      },
+      {
+        "id": "tour_colombia_explorer_9_days",
+        "url": "/colombia/tour/colombia-explorer-9-days/",
+        "notes": "9 дней; кофейная ферма, зиплайн, города и Карибское море"
+      },
+      {
+        "id": "tour_source_vsya_argentina",
+        "url": "/multi-country/tour/best-of-argentina-patagonia-26-days/",
+        "notes": "26 дней; гастрономические регионы Мендосы и Кафаяте, патагонийская часть"
+      },
+      {
+        "id": "tour_source_ves_ekvador_na_novyj_god",
+        "url": "/ecuador/tour/complete-ecuador-new-year/",
+        "notes": "Новогодний тур, материковый Эквадор и Галапагосы"
+      }
+    ],
+    "dynamicCount": "catalog.toursCountPhrase resolves at build from active tour data; no hardcoded numbers."
+  },
+  "editorialChecks": [
+    "Все текстовые таблицы имеют только 2 компактных столбца.",
+    "Контекстные ссылки проставлены при первых упоминаниях и в перечислениях; нет лимита одной ссылки на URL.",
+    "Нет внешних ссылок, изображений или второго H1.",
+    "Не обещаны гарантированные антарктические высадки или иные факультативные услуги.",
+    "Содержание отличается от общего гида по приключениям и каталога туров."
+  ]
+}

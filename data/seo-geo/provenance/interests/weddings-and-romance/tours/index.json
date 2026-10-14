@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "targetPath": "/interests/weddings-and-romance/tours/",
+  "articlePath": "data/seo-geo/articles/interests/weddings-and-romance/tours/index.md",
+  "researchedAt": "2026-10-14",
+  "verifiedAt": "2026-10-14",
+  "editorialIntent": "Практическое сравнение четырех активных свадебных/романтических программ Ada Tours: свадебный день в Рио на определенном пляже, однодневный пакет в Рио без закрепленной площадки, церемония у Игуасу на 3 дня и 12-дневный медовый месяц. Отличается от родительского хаба /interests/weddings-and-romance/ углубленным выбором именно готового маршрута, состава услуг и условий заявки. Не дублирует большой гид по юридической регистрации или географии Бразилии.",
+  "repositorySources": [
+    "src/data/interest-registry.json",
+    "src/data/interest-copy.json",
+    "src/content/themes/svadby-i-romantika.md",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/seo-geo/articles/interests/weddings-and-romance/index.md",
+    "src/content/tours/iguacu-falls.md",
+    "src/content/tours/rio-de-janeiro-wedding.md",
+    "src/content/tours/wedding-ceremony-tropical-package.md",
+    "src/content/tours/romanticheskaya-braziliya.md",
+    "src/content/destinations/praia-vermelha.md",
+    "src/content/destinations/rio-de-janeiro.md",
+    "src/content/destinations/foz-do-iguacu.md",
+    "src/content/destinations/salvador.md",
+    "src/content/destinations/costa-do-sauipe.md"
+  ],
+  "commercialVerification": {
+    "scope": "Production RU Tour MD active status approved/published; catalog membership by theme_weddings_romance. Pricing comparisons withheld due different service bases and TRP/DBL/SGL arrangements.",
+    "tourIds": [
+      "tour_source_rio_de_janeiro_wedding",
+      "tour_source_wedding_ceremony_tropical_package",
+      "tour_source_iguacu_falls",
+      "tour_source_romanticheskaya_braziliya"
+    ],
+    "confirmedFacts": [
+      "Praia Vermelha: beach ceremony at fixed location; priceFrom USD 4243 but duration and detailed inclusions not stated.",
+      "Tropical wedding ceremony: one-day wedding format in Rio; priceFrom USD 4063; specific venue and inclusions not stated.",
+      "Iguazu wedding: private 3 days, 2 nights; Belmond das Cataratas named with same-category substitution option, arrival/transfer, makeup artist, wedding, photo session, Bird Park excursion, recommended rather than included dinner; priceFrom USD 4023.",
+      "Romantic Brazil: 12 days, 11 nights, 3 Rio + 2 Iguazu + 2 Salvador + 4 Costa do Sauipe nights; private transfers/guided excursions, beach free days; domestic/international flights excluded; priceFrom base triple occupancy; DBL separately specified."
+    ],
+    "checks": "No claims of legal marriage included, photographic contractor guaranteed or specific decor/venue capacity for sparse wedding products. No conversion of package prices into per-person or per-couple values."
+  },
+  "externalSources": [
+    {
+      "url": "https://riotur.rio/que_fazer/praia-vermelha/",
+      "checkedAt": "2026-10-14",
+      "supports": "Official Rio municipal visitor information locating Praia Vermelha in Urca, with Pão de Açúcar backdrop and small bay."
+    },
+    {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/mata-atlantica/lista-de-ucs/parna-do-iguacu/normas-e-procedimentos-para-exploracao-de-imagens-do-parque-nacional-do-iguacu",
+      "checkedAt": "2026-10-14",
+      "supports": "Official ICMBio filming guidance, updated August 2026: activities in areas/hours open to public vs potentially permitted organized/commercial use, park rules."
+    },
+    {
+      "url": "https://www.gov.br/pt-br/servicos/registrar-casamento-no-exterior",
+      "checkedAt": "2026-10-14",
+      "supports": "Brazilian government distinction between legal registration and ceremonies; Brazilian consular procedures have nationality-specific scope and are not assumed applicable to every foreign couple."
+    }
+  ],
+  "editorialChecks": [
+    "One shared H1 remains in existing hero; article begins at H2 and uses contextual H3.",
+    "Two mobile-friendly two-column tables; no oversized cell paragraphs.",
+    "Every concrete referenced Tour and Destination hyperlink points to checked active canonical URL.",
+    "No public external URLs, invented services, added images or static catalog-wide tour counts.",
+    "Renderer variable {{catalog.toursCountPhrase}} is part of existing shared SEO/GEO contract.",
+    "Full article in approved MD for remote staging, not published until master deploy."
+  ]
+}

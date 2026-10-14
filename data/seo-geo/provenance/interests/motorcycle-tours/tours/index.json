@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "targetPath": "/interests/motorcycle-tours/tours/",
+  "articlePath": "data/seo-geo/articles/interests/motorcycle-tours/tours/index.md",
+  "researchedAt": "2026-10-14T07:49:47.755Z",
+  "editorialIntent": "Каталог двух конкретных бразильских мото-туров: помощь в выборе 10- и 12-дневной программы по сроку аренды, дневным пробегам, включенным дорожным расходам, страховке, депозиту, сопровождению и участию спутника без мотоцикла. Родительский хаб освещает географию и общую подготовку, каталог дает практическое сравнение действующих предложений.",
+  "repositorySources": [
+    "src/content/themes/moto-tury.md",
+    "src/content/tours/na-mototsiklakh-po-brazilii.md",
+    "src/content/tours/mototur-cherez-braziliyu.md",
+    "data/seo-geo/articles/interests/motorcycle-tours/index.md",
+    "data/source-index/entries/tour_source_na_mototsiklakh_po_brazilii.json",
+    "data/source-index/entries/tour_source_mototur_cherez_braziliyu.json",
+    "src/data/interest-registry.json"
+  ],
+  "externalSources": [],
+  "externalSourceNote": "Внешние веб-страницы adatours.ru при проверке 2026-10-14 оказались недоступны через инструмент веб-чтения. Энциклопедические сведения и динамические правовые требования не добавлены. Все коммерческие детали проверены по действующим GitHub Tour MD; для их содержания внешние источники не подставлялись.",
+  "commercialVerification": {
+    "themeId": "theme_motorcycle",
+    "activeTourIds": [
+      "tour_source_na_mototsiklakh_po_brazilii",
+      "tour_source_mototur_cherez_braziliyu"
+    ],
+    "facts": [
+      "10 дней: группа от 10, аренда GS1250/аналог 8 дней со страховкой, бензин, платные дороги/парковки, багажный ван, 460 и 580 км.",
+      "12 дней: Triumph Tiger 900, аренда 10 дней, транспорт сопровождения, страхование не включено, депозит 2000 USD на кредитной карте, максимум указанных 360 км.",
+      "В обеих опубликованных программах международный перелет не входит в стоимость."
+    ],
+    "dynamicFields": [
+      "catalog.toursCountPhrase",
+      "catalog.tourTable"
+    ],
+    "prices": "Текущие цены не зафиксированы в body; берутся динамически при сборке сайта из активных туров."
+  },
+  "editorialChecks": [
+    "Один H1 основной страницы сохраняется; внутри статьи H2/H3.",
+    "Одна узкая текстовая таблица из двух столбцов; tourTable динамическая.",
+    "Внутренние ссылки встроены в абзацы и ведут на действующие canonical URL.",
+    "В теле статьи нет изображений и внешних URL.",
+    "Текст выбирает между реальными программами и не повторяет обзорный гид."
+  ]
+}

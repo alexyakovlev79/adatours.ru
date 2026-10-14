@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "targetPath": "/interests/beach-holidays/related/",
+  "articlePath": "data/seo-geo/articles/interests/beach-holidays/related/index.md",
+  "researchedAt": "2026-10-14T08:08:17.622Z",
+  "editorialIntent": "Практическое сопоставление пляжного отдыха и соседних тем: природа, культура, гастрономия, морские занятия, семья, романтика и события. Отличается от глобального путеводителя по пляжным регионам и каталога туров.",
+  "repositorySources": [
+    "src/content/themes/plyazhnyj-otdyh.md",
+    "src/data/interest-registry.json",
+    "src/lib/interest-model.mjs",
+    "data/source-index/catalogs/tours.json",
+    "data/seo-geo/registry/02-interests.json",
+    "data/seo-geo/registry/03-country-interest.json",
+    "data/seo-geo/articles/interests/beach-holidays/index.md",
+    "data/seo-geo/articles/interests/beach-holidays/tours/index.md",
+    "src/content/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios.md",
+    "src/content/tours/braziliya-s-detmi.md",
+    "src/content/tours/romanticheskaya-braziliya.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/1308/",
+      "supports": "Исторический центр Парати и охраняемые природные районы Илья-Гранди включены ЮНЕСКО в единый объект «Культура и биоразнообразие».",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/764/",
+      "supports": "Белизский барьерный риф: семь охраняемых районов и обитание морских черепах и ламантинов.",
+      "checkedAt": "2026-10-14"
+    }
+  ],
+  "sourcesStatus": "Официальные сведения ЮНЕСКО проверены 14 октября 2026 года. Внешние ссылки доступны только в служебном provenance; в теле статьи только внутренние ссылки.",
+  "commercialVerification": {
+    "scope": "Туры и коммерческие условия — из действующего content Ada Tours, source-index и уже опубликованных SEO/GEO-материалов. Отдельные услуги и цены не дописывались.",
+    "verifiedTourIds": [
+      "tour_source_rio_de_janeiro_foz_do_iguacu_pantanal_buzios",
+      "tour_source_braziliya_s_detmi",
+      "tour_source_romanticheskaya_braziliya"
+    ],
+    "relatedInterestSource": "src/lib/interest-model.mjs: relatedThemes are computed from actual overlap of active tours, independent of editorial text.",
+    "dynamicNumbers": "Статические количества туров/мест/экскурсий в статье не указаны."
+  }
+}

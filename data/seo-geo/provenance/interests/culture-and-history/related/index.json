@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "targetPath": "/interests/culture-and-history/related/",
+  "articlePath": "data/seo-geo/articles/interests/culture-and-history/related/index.md",
+  "researchedAt": "2026-10-14",
+  "purpose": "Compare confirmed overlaps of culture-and-history with other interests, guiding users through real Ada Tours route combinations rather than repeating the parent cultural guide or the cultural tour catalog.",
+  "repositorySources": [
+    "src/content/themes/culture-and-history.md",
+    "src/data/interest-registry.json",
+    "src/lib/interest-model.mjs",
+    "src/pages/interests/[...catalog].astro",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/catalog-archive.json",
+    "src/content/tours/peru-8d.md",
+    "src/content/tours/brazil-argentina-peru-14d.md",
+    "src/content/tours/vinnyj-tur-v-argentinu-i-chili.md",
+    "src/content/tours/nezabyvaemyj-parad-chempionov-v-brazilii.md",
+    "src/content/tours/brazil-gems-14d.md",
+    "src/content/tours/luchshee-iz-dvukh-mirov.md",
+    "src/content/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke.md",
+    "data/seo-geo/articles/interests/culture-and-history/index.md",
+    "data/seo-geo/articles/interests/culture-and-history/tours/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/64/",
+      "supports": "Tikal mixed UNESCO natural-cultural heritage and archaeological significance in Guatemala's Maya forest"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1308/",
+      "supports": "Paraty and Ilha Grande mixed World Heritage site: historic town and biodiversity of protected Atlantic Forest"
+    },
+    {
+      "url": "https://ich.unesco.org/en/RL/tango-00258",
+      "supports": "Tango as Argentine-Uruguayan intangible cultural heritage developed in Buenos Aires and Montevideo"
+    }
+  ],
+  "verifiedAt": "2026-10-14",
+  "constraints": "Commercial itinerary details and status checked against active production Tour MD in GitHub main on 2026-10-14. Interest overlap is calculated by buildInterestHub; catalog source-index is not sole proof of live availability. No variable-price claims, no unsupported activities, no external links in public body, only internal canonical URLs. Dynamic counts intentionally omitted from theme-only related catalog."
+}

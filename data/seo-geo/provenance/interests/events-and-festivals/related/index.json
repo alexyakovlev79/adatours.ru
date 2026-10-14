@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "targetPath": "/interests/events-and-festivals/related/",
+  "articlePath": "data/seo-geo/articles/interests/events-and-festivals/related/index.md",
+  "researchedAt": "2026-10-14T08:07:14.994Z",
+  "editorialIntent": "Как совмещать событийные поездки с близкими интересами на основании текущих комбинированных маршрутов Ada Tours. Сравнение реальной второй темы, порядка дней и ограничений без дублирования путеводителя о праздниках или каталога праздничных туров.",
+  "repositorySources": [
+    "src/pages/interests/[...catalog].astro",
+    "src/lib/interest-model.mjs",
+    "src/content/themes/events-and-festivals.md",
+    "src/content/themes/culture-and-history.md",
+    "src/content/themes/gastronomiya-i-vino.md",
+    "data/seo-geo/articles/interests/events-and-festivals/index.md",
+    "data/seo-geo/articles/interests/events-and-festivals/tours/index.md",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "src/content/tours/meksika-den-mertvykh.md",
+    "src/content/tours/peru-ictoriya-velikoj-imperii-i-prazdnik-svyatoj-kandelyarii.md",
+    "src/content/tours/tropicheskij-karnaval-v-brazilii.md",
+    "src/content/tours/carnival-flavors-rio-paraty-ilha-grande.md",
+    "src/content/tours/brazil-argentina-chile-champions-parade-10-days-2027.md",
+    "src/content/tours/ves-ekvador-na-novyj-god.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://ich.unesco.org/en/RL/dia-de-muertos-the-indigenous-festivity-dedicated-to-the-dead-00054",
+      "checkedAt": "2026-10-14",
+      "supports": "День мертвых: семейные обряды памяти, традиции коренных сообществ Мексики."
+    },
+    {
+      "url": "https://ich.unesco.org/en/RL/festivity-of-virgen-de-la-candelaria-of-puno-00956",
+      "checkedAt": "2026-10-14",
+      "supports": "Канделария в Пуно: ежегодный февральский праздник католических и андских традиций, включен ЮНЕСКО в 2014."
+    },
+    {
+      "url": "https://ich.unesco.org/en/RL/frevo-performing-arts-of-the-carnival-of-recife-00603",
+      "checkedAt": "2026-10-14",
+      "supports": "Связь бразильских карнавальных традиций с музыкой и танцем; статья не приписывает фрево Рио."
+    }
+  ],
+  "commercialVerification": {
+    "themeId": "theme_events",
+    "relatedThemesByTourSource": [
+      "theme_culture",
+      "theme_wildlife",
+      "theme_beach",
+      "theme_adventure",
+      "theme_gastronomy_wine",
+      "theme_cruises",
+      "theme_fishing"
+    ],
+    "verifiedTourIds": [
+      "tour_source_meksika_den_mertvykh",
+      "tour_source_peru_ictoriya_velikoj_imperii_i_prazdnik_svyatoj_kandelyarii",
+      "tour_source_tropicheskij_karnaval_v_brazilii",
+      "tour_brazil_carnival_flavors_rio_paraty_ilha_grande",
+      "tour_brazil_argentina_chile_champions_parade_10_days_2027",
+      "tour_source_ves_ekvador_na_novyj_god"
+    ],
+    "notes": "Реальные опубликованные/approved Tour MD; Игуасу представлен как природный ландшафт, не как гарантированное наблюдение животных. Долина Майпо — факультативная опция 10-дневного тура. Название «Вкусы Бразилии» не превращено в обещание включенных дегустаций. Числовые счетчики и цены в публичном тексте не зафиксированы."
+  },
+  "editorialChecks": [
+    "Уникальный интент related-темы; тексты /interests/events-and-festivals/ и /tours/ не дублируются.",
+    "Нет внешних ссылок в статье, новых изображений, H1 или зафиксированных изменчивых счетчиков.",
+    "2-колоночные компактные таблицы для мобильной ширины.",
+    "Внутренние ссылки на опубликованные Country/Destination/Tour/Theme и релевантные каталоги распределены по абзацам.",
+    "Включенное и факультативное разделено; нет обещаний на основании только темы или названия продукта."
+  ]
+}

@@ -1,6 +1,7 @@
 {
   "version": 1,
-  "description": "Atomic coordination ledger for SEO/GEO writers on seo-geo/staging; each claim expires 30 minutes after claimedAt, only remote content commits become ready for master publication.",
+  "description": "Atomic 3-URL batch reservations for SEO/GEO writers on seo-geo/staging; each URL has a renewable 60-minute lease, and only confirmed remote article commits become ready for master publication.",
   "claims": {},
-  "claimTimeoutMinutes": 30
+  "claimTimeoutMinutes": 60,
+  "writerBatchSize": 3
 }

@@ -47,7 +47,7 @@
     "retries_per_url_in_same_step": 0
   },
   "first_next_task": {
-    "id": "adatours-com-identity-007",
+    "id": "adatours-com-identity-008",
     "step": 3,
     "domain": "adatours.com",
     "action": "Continue geographic queue in recorded order, skipping ten step-1 confirmed pairs and all keys of completed verification_batches. Up to 50 current RU objects; exact Place identities only, preserve evidence and search limitations. Programmes need full content checks when reached.",
@@ -79,13 +79,13 @@
   "last_checkpoint": {
     "step": 3,
     "domain": "adatours.com",
-    "batch_id": "adatours-com-identity-006",
+    "batch_id": "adatours-com-identity-007",
     "processed_in_batch": 50,
-    "confirmed_in_batch": 20,
-    "checked_no_confirmed_pair": 30,
-    "verification_cursor": 300,
-    "report": "adatours-com-identity-006.json",
-    "saved_at": "2026-10-14T08:35:40.221573+00:00"
+    "confirmed_in_batch": 5,
+    "checked_no_confirmed_pair": 45,
+    "verification_cursor": 350,
+    "report": "adatours-com-identity-007.json",
+    "saved_at": "2026-10-14T09:54:20.627Z"
   },
   "step_1": {
     "status": "completed",
@@ -118,11 +118,15 @@
       "id": "coffee-interest-identity-20261014",
       "file": "../coffee-interest-queue-20261014.json",
       "kind": "14th interest: 18 new generated pages plus 50 existing linked pages",
-      "status": "queued",
+      "status": "partial",
       "new_pages": 18,
       "existing_related": 50,
       "created_at": "2026-10-14T09:04:00.102Z",
-      "note": "Additive scope; keep adatours-com-identity-007 and the 300-object verification checkpoint unchanged."
+      "note": "Additive scope; keep adatours-com-identity-007 and the 300-object verification checkpoint unchanged.",
+      "new_pages_screened": 18,
+      "remaining_linked": 50,
+      "report": "../coffee-identity-check-20261014.json"
     }
-  ]
+  ],
+  "updated_at": "2026-10-14T09:54:20.627Z"
 }

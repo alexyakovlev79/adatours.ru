@@ -49,11 +49,7 @@ export async function pageStructuredData(input: {
       extra: [...[input.extra || []].flat(), ...inspected.legacy] });
   const priceSummaries = graph['@graph'].filter((node: any) => node['@type'] === 'AggregateOffer').map((offer: any) => {
     const kind = offer['@id'].includes('#tour-') ? 'туров' : 'экскурсий';
-    const symbols: Record<string, string> = { USD: '
-}
-, EUR: '€', RUB: '₽', BRL: 'R
-}
- };
+    const symbols: Record<string, string> = { USD: '$', EUR: '€', RUB: '₽', BRL: 'R$' };
     const formatted = (amount: number) => {
       const value = amount.toLocaleString('ru-RU', { maximumFractionDigits: 0 });
       return symbols[offer.priceCurrency]

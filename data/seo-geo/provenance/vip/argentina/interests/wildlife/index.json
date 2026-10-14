@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "targetPath": "/vip/argentina/interests/wildlife/",
+  "articlePath": "data/seo-geo/articles/vip/argentina/interests/wildlife/index.md",
+  "researchedAt": "2026-10-14T13:06:00Z",
+  "editorialIntent": "Сравнить активные природные VIP-маршруты Аргентины по подтвержденным остановкам, сезонам наблюдений за животными и фактическому сервису конкретных продуктов. Не повторять общий путеводитель по стране.",
+  "repositorySources": [
+    "data/external-identity/vip-catalogues.json",
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-filters.mjs",
+    "src/data/catalog/destinations.json",
+    "data/source-index/catalogs/tours.json",
+    "data/catalog-archive.json",
+    "src/content/tours/issledovanie-argentiny.md",
+    "src/content/tours/argentina-grand-tour-15-days.md",
+    "src/content/tours/roskoshnaya-patagoniya-10-dney.md",
+    "src/content/tours/vip-tur-v-braziliyu-i-argentinu-na-10-dnej.md",
+    "data/seo-geo/articles/argentina/index.md",
+    "data/seo-geo/articles/interests/wildlife/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/937/",
+      "supports": "UNESCO Península Valdés: breeding grounds of marine mammals, southern right whales, sea lions, elephant seals"
+    },
+    {
+      "url": "https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/avistar-ballenas-en-peninsula-valdes",
+      "supports": "Southern right whale observation season June through early December; no sighting guarantee"
+    },
+    {
+      "url": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/actividades",
+      "supports": "Perito Moreno viewing walkways and alternative boat / guided ice visit formats"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/303/",
+      "supports": "Iguazú National Park and subtropical protected landscape"
+    }
+  ],
+  "inventorySnapshot": {
+    "date": "2026-10-12",
+    "matchingVipTourCount": 24,
+    "source": "data/external-identity/vip-catalogues.json",
+    "renderedTourCount": "dynamic"
+  },
+  "verifiedTourUrls": [
+    "/argentina/tour/explore-argentina-16-days/",
+    "/multi-country/tour/luxury-patagonia-10-days/",
+    "/multi-country/tour/argentina-grand-tour-15-days/",
+    "/multi-country/tour/brazil-argentina-vip-10-days/"
+  ],
+  "constraints": [
+    "VIP catalogue is algorithmic, does not certify hotel/guide class",
+    "No wildlife sighting guarantees",
+    "Do not infer Valdés stops if absent from tour",
+    "Public article has only internal canonical links and no static tour count"
+  ]
+}

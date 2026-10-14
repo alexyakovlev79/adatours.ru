@@ -134,6 +134,7 @@ const schema = await pageStructuredData({
   url: canonicalUrl, title: fullTitle, description, lang, image: ogImageUrl,
   breadcrumbs: breadcrumbSchemas, extra: pageSchema,
 });
+const metaDescription = schema.priceSummary ? `${schema.priceSummary} ${description}` : description;
 ---
 <!doctype html>
 <html lang={lang}>
@@ -142,7 +143,7 @@ const schema = await pageStructuredData({
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDescription} />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" type="image/svg+xml" href={faviconSvgUrl} />
     <link rel="icon" type="image/png" sizes="48x48" href={favicon48Url} />
@@ -155,12 +156,12 @@ const schema = await pageStructuredData({
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:locale" content={ogLocale} />
     <meta property="og:title" content={fullTitle} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={metaDescription} />
     <meta property="og:url" content={canonicalUrl} />
     {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
     <meta name="twitter:card" content={ogImageUrl ? 'summary_large_image' : 'summary'} />
     <meta name="twitter:title" content={fullTitle} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={metaDescription} />
     {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
     <noscript><style is:inline>img[data-lazy-src] { display: none !important; }</style></noscript>
     <meta name="theme-color" content="#131412" />
@@ -188,6 +189,11 @@ const schema = await pageStructuredData({
     )}
     <main>
       <Fragment set:html={deferImages(schema.html)} />
+      {schema.priceSummaries.length > 0 && (
+        <aside class="selection-price-summary container" aria-label="Цены в подборке">
+          {schema.priceSummaries.map((summary) => <p>{summary}</p>)}
+        </aside>
+      )}
       {seoGeoArticle && <SeoGeoSection article={seoGeoArticle} />}
       <div id="request" data-lead-location="footer" data-interest-section={leadEntityId?.startsWith('theme_') ? 'cta' : undefined} data-pagefind-ignore>
         <LeadForm title={leadTitle} entityId={leadEntityId || logicalPath} tourId={leadTourId} pageUrl={canonicalUrl} locale={lang} />
@@ -203,4 +209,6 @@ const schema = await pageStructuredData({
 </html>
 <style>
   #request { scroll-margin-top: 100px; }
+  .selection-price-summary { margin-block: 44px; color: var(--color-muted-text, #5d5d5d); font-size: 15px; line-height: 1.5; }
+  .selection-price-summary p { margin: 0 0 6px; }
 </style>

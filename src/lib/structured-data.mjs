@@ -3,7 +3,7 @@ import { selectVipTours } from './vip-tours.mjs';
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
  * Facts come from the content model and the rendered page, never SEO inventions.
  */
-export const SCHEMA_VERSION = '2026-10-08.1';
+export const SCHEMA_VERSION = '2026-10-14.1';
 export const types = (node) => [node?.['@type'] ?? []].flat();
 export const hasType = (node, type) => types(node).includes(type);
 export const ref = (id) => ({ '@id': id });
@@ -319,6 +319,52 @@ export function buildStructuredData({ root, organization, records, page, documen
     if (group.catalog || (!webPage.mainEntity && pageType === 'CollectionPage')) webPage.mainEntity = list;
     // ItemList is Intangible, not CreativeWork: hasPart is reserved for page content.
     else webPage.mentions.push(list);
+  }
+  // Only actually rendered links contribute. Prices are starting quotes, not maximum trip costs.
+  // Tours and excursions and their currencies stay separate; countries advertise tours only.
+  if (!current?.archived) {
+    const pricedProducts = new Map();
+    for (const group of groupData) {
+      for (const link of group.links || []) {
+        const url = absoluteUrl(link.href, root);
+        if (!url || new URL(url).origin !== new URL(root).origin) continue;
+        const record = byPath.get(logicalPath(url, root));
+        if (!publicRecord(record) || !['tour', 'excursion'].includes(record.kind)) continue;
+        if (current?.kind === 'country' && record.kind !== 'tour') continue;
+        const { priceFrom, currency } = record.data;
+        const price = typeof priceFrom === 'number' && Number.isFinite(priceFrom) ? Math.round(priceFrom) : 0;
+        if (price <= 0 || !/^[A-Z]{3}$/.test(currency || '')) continue;
+        const key = `${record.kind}:${currency}`;
+        if (!pricedProducts.has(key)) pricedProducts.set(key, new Map());
+        pricedProducts.get(key).set(record.data.id, price);
+      }
+    }
+    for (const [key, uniqueProducts] of pricedProducts) {
+      if (uniqueProducts.size < 2) continue; // One price is not a range.
+      const [kind, currency] = key.split(':');
+      const prices = [...uniqueProducts.values()];
+      const plural = kind === 'tour' ? 'туров' : 'экскурсий';
+      const aggregate = add({
+        '@type': 'AggregateOffer',
+        '@id': `${page.url}#${kind}-${currency}-price-range`,
+        url: page.url,
+        priceCurrency: currency,
+        lowPrice: Math.min(...prices),
+        highPrice: Math.max(...prices),
+        offerCount: prices.length,
+        seller: ref(orgId),
+      });
+      const selection = add({
+        '@type': 'Service',
+        '@id': `${page.url}#${kind}-${currency}-selection`,
+        url: page.url,
+        name: `Подборка ${plural} Ada Tours`,
+        serviceType: `Организация ${plural}`,
+        provider: ref(orgId),
+        offers: aggregate,
+      });
+      webPage.mentions.push(selection);
+    }
   }
   // Keep authored reviews only when their text and author are actually on this page.
   const authored = [extra].flat().flatMap((n) => n?.['@graph'] || [n]).filter(Boolean);

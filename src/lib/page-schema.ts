@@ -43,11 +43,32 @@ export async function pageStructuredData(input: {
       addressLocality: ORG.legal.addressLocality, addressRegion: ORG.legal.addressRegion,
       postalCode: ORG.legal.postalCode, addressCountry: ORG.legal.addressCountry },
   };
-  return {
-    html: inspected.html,
-    graph: buildStructuredData({ root: input.root, organization, records,
+  const graph = buildStructuredData({ root: input.root, organization, records,
       page: { path: input.path, url: input.url, title: input.title, description: input.description, lang: input.lang, image: input.image },
       document: inspected.facts, breadcrumbs: input.breadcrumbs || [],
-      extra: [...[input.extra || []].flat(), ...inspected.legacy] }),
-  };
+      extra: [...[input.extra || []].flat(), ...inspected.legacy] });
+  const priceSummaries = graph['@graph'].filter((node: any) => node['@type'] === 'AggregateOffer').map((offer: any) => {
+    const kind = offer['@id'].includes('#tour-') ? 'туров' : 'экскурсий';
+    const symbols: Record<string, string> = { USD: '
+}
+, EUR: '€', RUB: '₽', BRL: 'R
+}
+ };
+    const formatted = (amount: number) => {
+      const value = amount.toLocaleString('ru-RU', { maximumFractionDigits: 0 });
+      return symbols[offer.priceCurrency]
+        ? (offer.priceCurrency === 'RUB' ? value + ' ₽' : symbols[offer.priceCurrency] + value)
+        : value + ' ' + offer.priceCurrency;
+    };
+    const range = offer.lowPrice === offer.highPrice
+      ? `от ${formatted(offer.lowPrice)}`
+      : `от ${formatted(offer.lowPrice)} до ${formatted(offer.highPrice)}`;
+    return `Стартовые цены ${kind}: ${range}.`;
+  });
+  const priceSummary = priceSummaries.join(' ');
+  if (priceSummary) {
+    const currentPage = graph['@graph'].find((node: any) => node['@id'] === `${input.url}#webpage`);
+    if (currentPage) currentPage.description = `${priceSummary} ${currentPage.description}`;
+  }
+  return { html: inspected.html, graph, priceSummaries, priceSummary };
 }

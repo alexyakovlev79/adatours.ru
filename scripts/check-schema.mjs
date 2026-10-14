@@ -23,7 +23,7 @@ function* objects(value) {
   else if (value && typeof value === 'object') { yield value; for (const v of Object.values(value)) yield* objects(v); }
 }
 const pageTypes = new Set(['WebPage', 'CollectionPage', 'AboutPage', 'ContactPage', 'ProfilePage', 'FAQPage']);
-const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'Country', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'Review', 'AggregateRating', 'WebPageElement', 'Question', 'Answer']);
+const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'Country', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'AggregateOffer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'Review', 'AggregateRating', 'WebPageElement', 'Question', 'Answer']);
 const report = { schemaVersion: SCHEMA_VERSION, root, totalHtml: 0, contentPages: 0, redirects: 0, archives: 0, withSchema: 0, catalogPages: 0, faqPages: 0, offerPages: 0, pageTypes: {}, mainEntityTypes: {}, errors: [], pages: [] };
 const definitions = new Set();
 const references = [];
@@ -136,6 +136,13 @@ for (const file of files.sort()) {
       if (node.url && typeof node.url === 'string') checkLocalUrl(node.url);
       if (hasType(node, 'BreadcrumbList')) for (const item of node.itemListElement || []) checkLocalUrl(item.item);
       if (hasType(node, 'TouristTrip') || hasType(node, 'Trip')) assert.equal(node.duration, undefined, 'Trip duration is not a schema.org property');
+      if (hasType(node, 'AggregateOffer')) {
+        assert.ok(node.lowPrice > 0 && node.highPrice >= node.lowPrice, 'Valid starting-price range');
+        assert.ok(Number.isInteger(node.offerCount) && node.offerCount >= 2, 'Range uses multiple priced products');
+        assert.ok(/^[A-Z]{3}$/.test(node.priceCurrency), 'One valid currency per range');
+        assert.ok(inspected.facts.text.includes('Стартовые цены'), 'Published price range is visible');
+        assert.equal(node.availability, undefined, 'No unverified availability');
+      }
       if (hasType(node, 'Offer')) {
         assert.ok(inspected.facts.priceVisible, 'Offer has a visible pricing block');
         assert.ok(node.priceSpecification?.minPrice > 0, 'Positive starting price');

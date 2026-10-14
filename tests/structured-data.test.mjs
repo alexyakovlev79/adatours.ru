@@ -202,3 +202,44 @@ test('JSON-LD is safe inside a script and node IDs are unique', () => {
   assert.deepEqual(org.contactPoint.availableLanguage, ['ru', 'en']);
   assert.equal(org.areaServed[0].name, 'Бразилия');
 });
+
+test('country pages offer price range only for tours, not excursions', () => {
+  const pricedMulti = { ...multiTour, data: { ...multiTour.data, priceFrom: 3400, currency: 'USD' } };
+  const ex1 = record('excursion', 'ex1', '/brazil/excursion/ex1/', { title: 'Экскурсия 1', priceFrom: 50, currency: 'USD' });
+  const ex2 = record('excursion', 'ex2', '/brazil/excursion/ex2/', { title: 'Экскурсия 2', priceFrom: 100, currency: 'USD' });
+  const graph = build('/brazil/', { records: [brazil, tour, pricedMulti, ex1, ex2], document: {
+    groups: [{ links: [tour.path, pricedMulti.path, ex1.path, ex2.path].map((href) => ({ href })) }],
+  } });
+  const aggregates = nodes(graph, 'AggregateOffer');
+  assert.equal(aggregates.length, 1);
+  assert.deepEqual([aggregates[0].lowPrice, aggregates[0].highPrice, aggregates[0].offerCount, aggregates[0].priceCurrency],
+    [1201, 3400, 2, 'USD']);
+  const selection = graph['@graph'].find((n) => n['@id'] === `${root}brazil/#tour-USD-selection`);
+  assert.equal(selection.offers['@id'], aggregates[0]['@id']);
+});
+
+test('catalog ranges use rendered products only, group types/currencies and deduplicate', () => {
+  const pricedMulti = { ...multiTour, data: { ...multiTour.data, priceFrom: 3456, currency: 'USD' } };
+  const pricedEur = { ...vipTour, data: { ...vipTour.data, priceFrom: 500, currency: 'EUR' } };
+  const ex1 = record('excursion', 'ex1', '/brazil/excursion/ex1/', { title: 'Экскурсия 1', priceFrom: 45, currency: 'USD' });
+  const ex2 = record('excursion', 'ex2', '/brazil/excursion/ex2/', { title: 'Экскурсия 2', priceFrom: 75, currency: 'USD' });
+  const noPrice = record('tour', 'noPrice', '/brazil/tour/noPrice/', { title: 'Цена неизвестна', priceFrom: null, currency: 'USD' });
+  const archived = { ...record('tour', 'old', '/brazil/tour/old/', { title: 'Архив', priceFrom: 1, currency: 'USD' }), archived: true };
+  const graph = build('/tours/page/2/', { records: [tour, pricedMulti, pricedEur, ex1, ex2, noPrice, archived],
+    document: { catalog: true, groups: [{ catalog: true, offset: 10, links: [
+      tour.path, tour.path, pricedMulti.path, pricedEur.path, ex1.path, ex2.path, noPrice.path, archived.path,
+    ].map((href) => ({ href })) }] },
+  });
+  const offers = nodes(graph, 'AggregateOffer');
+  assert.equal(offers.length, 2);
+  assert.deepEqual(offers.map((n) => [n.lowPrice, n.highPrice, n.offerCount, n.priceCurrency]),
+    [[1201, 3456, 2, 'USD'], [45, 75, 2, 'USD']]);
+  assert.equal(nodes(graph, 'Service').filter((n) => n.offers?.['@id']?.includes('price-range')).length, 2);
+});
+
+test('catalog cannot invent a range from a single price or different currencies', () => {
+  const eurTour = { ...vipTour, data: { ...vipTour.data, priceFrom: 2000, currency: 'EUR' } };
+  const graph = build('/tours/', { records: [tour, eurTour, multiTour], document: { catalog: true,
+    groups: [{ catalog: true, links: [tour.path, eurTour.path, multiTour.path].map((href) => ({ href })) }] } });
+  assert.equal(nodes(graph, 'AggregateOffer').length, 0);
+});

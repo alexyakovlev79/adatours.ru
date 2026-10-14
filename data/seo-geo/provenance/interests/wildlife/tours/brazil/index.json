@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "targetPath": "/interests/wildlife/tours/brazil/",
+  "articlePath": "data/seo-geo/articles/interests/wildlife/tours/brazil/index.md",
+  "researchedAt": "2026-10-14",
+  "purpose": "A Brazil-specific decision guide to active wildlife tours and experiences: Pantanal general safaris versus dedicated Porto Jofre jaguar observation, Amazon lodges versus river cruise, Bonito freshwater observation, and broad multi-region itineraries. Avoid duplicating parent Brazil country guide or global wildlife theme articles.",
+  "repositorySources": [
+    "src/content/themes/wildlife.md",
+    "src/lib/interest-model.mjs",
+    "src/pages/interests/[...catalog].astro",
+    "src/lib/seo-geo-articles.ts",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/catalog-archive.json",
+    "src/content/tours/pantanal-4dnya-3-nochi.md",
+    "src/content/tours/pantanal-za-5-dnej.md",
+    "src/content/tours/severnyj-pantanal-vodopady-reki.md",
+    "src/content/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya.md",
+    "src/content/tours/amazoniya.md",
+    "src/content/tours/amazoniya-kruiz-tukano.md",
+    "src/content/tours/pantanal-bonito.md",
+    "src/content/tours/brazil-three-ecosystems-8-days.md",
+    "src/content/tours/pantanal-bonito-lencois-8d.md",
+    "src/content/tours/rio-de-janeiro-foz-do-iguacu-pantanal-buzios.md",
+    "src/content/tours/brazil-adventure-17d.md",
+    "src/content/destinations/pantanal.md",
+    "src/content/destinations/manaus-amazonia.md",
+    "src/content/destinations/bonito.md",
+    "src/content/destinations/lencois-maranhenses.md",
+    "src/content/destinations/porto-jofre.md",
+    "src/content/destinations/anavilhanas-archipelago.md",
+    "data/seo-geo/articles/interests/wildlife/index.md",
+    "data/seo-geo/articles/interests/wildlife/tours/index.md",
+    "data/seo-geo/articles/brazil/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/999",
+      "supports": "Pantanal annual seasonal inundation and high wetland biodiversity, including jaguars, giant otters and many bird species; rainfall/flood cycle described as roughly October–April."
+    },
+    {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/amazonia/lista-de-ucs/parna-de-anavilhanas",
+      "supports": "Anavilhanas National Park in the Amazon biome, protected river archipelago, habitat for pink river dolphins and other threatened mammals; use conservation rules for wildlife observation."
+    }
+  ],
+  "verifiedAt": "2026-10-14",
+  "constraints": "Live commercial facts, tour duration, included activities and itineraries sourced only from main-branch active content MD. External source pages document ecological background and are not linked from the public SEO article. Numbers of current active tours intentionally dynamic ({{catalog.toursCountPhrase}}) to avoid stale counts. Did not invent wildlife sightings, lodging inclusions or guaranteed safari schedules; optional activities expressly distinguished. Source-index initial catalog contained 130 wildlife-associated Brazil tours as of this pass but this snapshot figure is deliberately not embedded."
+}

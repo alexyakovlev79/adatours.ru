@@ -488,5 +488,20 @@
     "next": "adatours-com-identity-011",
     "report": "adatours-com-identity-010.json",
     "note": "50 distinct batch10 Place identities; recovered 14 Chilean records skipped in batch9 without overwriting its 50 records. No schema.org integration."
+  },
+  "adatours_com_identity_pending_sync": {
+    "batch_id": "adatours-com-identity-011",
+    "report": "adatours-com-identity-011.json",
+    "research_status": "complete",
+    "checked": 50,
+    "confirmed_exact": 5,
+    "unconfirmed_exact": 45,
+    "first_key": "destination_cuba_matansas",
+    "last_key": "destination_ecuador_enderby_islet",
+    "queue_sync": "pending",
+    "correspondences_table_sync": "pending",
+    "reason": "GitHub connector security blocked bulk update of existing large JSON/CSV. Saved report is complete and must be imported without rechecking any of the 50 keys.",
+    "next_after_sync": "adatours-com-identity-012",
+    "manifest_still_represents_last_integrated_batch": "adatours-com-identity-010"
   }
 }

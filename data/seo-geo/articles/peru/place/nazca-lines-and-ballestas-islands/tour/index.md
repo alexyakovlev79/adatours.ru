@@ -22,7 +22,7 @@ lead: >-
 
 Актуальные характеристики этих программ выводятся непосредственно из действующих туров:
 
-{{catalog.tourTable:tour_source_21_dnevnoe_priklyuchenie_v_peru,tour_source_vip_tur_v_boliviyu_i_peru_na_18_dnej_s_kruizom_po_amazonke,tour_peru_8d}}
+{{catalog.tourTable:tour_source_21_dnevnoe_priklyuchenie_v_peru,tour_source_vip_tur_v_boliviyu_i_peru_na_18_dnej_s_kruizom_po_amazonke,tour_peru_8d,tour_source_ves_mnogolikij_peru}}
 
 ## Полет над линиями Наска или наземный осмотр
 

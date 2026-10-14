@@ -93,4 +93,4 @@ lead: >-
 
 ### С чего начать, если пока нет предпочтений?
 
-Для первой поездки с ограниченным временем сравните [4-дневную](/guatemala/tour/guatemala-antigua-guatemala-city-santiago-atitlan/) и [6-дневную](/guatemala/tour/guatemala-guatemala-city-antigua-atitlan-tikal/) программы. Если хочется более спокойного знакомства с Антигуа, посмотрите [8 дней с Монтеррико](/guatemala/tour/discover-guatemala-8-days/). Затем откройте [полную подборку туров через Антигуа](/guatemala/place/antigua-guatemala/tour/) и сверяйте фактические остановки, даты и условия в каждой программе.
+Для первой поездки с ограниченным временем сравните [4-дневную](/guatemala/tour/guatemala-antigua-guatemala-city-santiago-atitlan/) и [6-дневную](/guatemala/tour/guatemala-guatemala-city-antigua-atitlan-tikal/) программы. Если хочется более спокойного знакомства с Антигуа, посмотрите [8 дней с Монтеррико](/guatemala/tour/discover-guatemala-8-days/). Затем сравните остальные программы в каталоге выше и сверяйте фактические остановки, даты и условия в каждой из них.

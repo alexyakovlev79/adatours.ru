@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "targetPath": "/interests/culture-and-history/tours/brazil/",
+  "articlePath": "data/seo-geo/articles/interests/culture-and-history/tours/brazil/index.md",
+  "researchedAt": "2026-10-14T08:48:13.673Z",
+  "editorialIntent": "Сравнение действующих культурно-исторических туров именно по Бразилии: региональные культурные акценты, продолжительность городских экскурсий, смешанные форматы, исторические кофе-фазенды, разница между основными культурными остановками и пляжно-природными днями. Не повторять энциклопедический гид по Бразилии или общий интерес.",
+  "repositorySources": [
+    "src/content/themes/culture-and-history.md",
+    "src/lib/interest-model.mjs",
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "src/content/tours/brazil-gems-14d.md",
+    "src/content/tours/brazil-sao-paulo-rio-ilha-paraty-12d.md",
+    "src/content/tours/tur-v-krasochnuyu-braziliyu-2022.md",
+    "src/content/tours/brazil-coffee-tour-ru.md",
+    "src/content/tours/tur-v-braziliyu-na-kofejnye-fazendy.md",
+    "src/content/tours/vkusy-brazilii.md",
+    "src/content/tours/rio-iguazu-jewish-heritage-8-days.md",
+    "src/content/tours/rio-de-janeiro-four-days.md",
+    "src/content/tours/sao-paulo-rio-october-11-days.md",
+    "src/content/destinations/ouro-preto.md",
+    "src/content/destinations/salvador.md",
+    "src/content/destinations/paraty.md",
+    "src/content/destinations/olinda.md",
+    "src/content/destinations/recife.md",
+    "src/content/destinations/inhotim.md",
+    "src/content/destinations/coffee-valley-rio-de-janeiro.md",
+    "src/content/themes/coffee-tours.md",
+    "data/seo-geo/articles/interests/culture-and-history/tours/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/124",
+      "checkedAt": "2026-10-14",
+      "supports": "Ору-Прету: золотая лихорадка, архитектурный ансамбль, барокко и Алейжадинью"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/334/",
+      "checkedAt": "2026-10-14",
+      "supports": "Святилище Бон-Жезус в Конгоньясе и двенадцать скульптур пророков"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/309/",
+      "checkedAt": "2026-10-14",
+      "supports": "Сальвадор: первая колониальная столица, даты 1549—1763, культурное наследие"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/189/",
+      "checkedAt": "2026-10-14",
+      "supports": "Олинда: историческая городская застройка и церкви"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1308/",
+      "checkedAt": "2026-10-14",
+      "supports": "Парати и Илья-Гранди: смешанный культурно-природный объект, Золотой путь"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1100",
+      "checkedAt": "2026-10-14",
+      "supports": "Рио-де-Жанейро: культурный ландшафт между горами и морем"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/445/",
+      "checkedAt": "2026-10-14",
+      "supports": "Бразилиа: модернистское градостроительство, Лусиу Коста и Оскар Нимейер"
+    },
+    {
+      "url": "https://www.turismo.rj.gov.br/regioes/vale-do-cafe/",
+      "checkedAt": "2026-10-14",
+      "supports": "Vale do Café: история кофе XIX века и сельские усадьбы"
+    }
+  ],
+  "commercialVerification": {
+    "themeId": "theme_culture",
+    "countryId": "country_brazil",
+    "notes": [
+      "Использованы действующие Tour MD, которые несут theme_culture в primaryThemes/themes и включают Бразилию как основную страну либо подтвержденную географию.",
+      "Не приписывать все услуги конкретным турам по одной лишь тематической метке; индивидуальные/групповые условия проверены в соответствующих MD.",
+      "Количество туров и динамическая сравнительная таблица рассчитываются при сборке."
+    ],
+    "tourIds": [
+      "tour_brazil_gems_14d",
+      "tour_brazil_sao_paulo_rio_ilha_paraty_12d",
+      "tour_source_tur_v_krasochnuyu_braziliyu_2022",
+      "tour_source_vkusy_brazilii",
+      "tour_source_brazil_coffee_tour_ru",
+      "tour_source_tur_v_braziliyu_na_kofejnye_fazendy",
+      "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+      "tour_brazil_rio_four_days",
+      "tour_sao_paulo_rio_october_11_days"
+    ]
+  },
+  "editorialChecks": [
+    "Уникальный интент country + culture + tours, отличающийся от /brazil/, /interests/culture-and-history/ и /interests/culture-and-history/tours/.",
+    "Статический HTML получает полный Markdown после сборки; FAQ без вложенных аккордеонов.",
+    "Две компактные текстовые таблицы по 2 столбца, одна динамическая сравнительная таблица товаров по реальным ID.",
+    "Нет внешних ссылок или изображений в публичном тексте; внешние источники только в служебном provenance.",
+    "Контекстные ссылки распределены по всему материалу; списки городов и маршрутов связаны по смыслу."
+  ]
+}

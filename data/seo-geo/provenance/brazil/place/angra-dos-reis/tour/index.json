@@ -1,0 +1,38 @@
+{
+  "targetPath": "/brazil/place/angra-dos-reis/tour/",
+  "checkedAt": "2026-10-14T14:42:10.475Z",
+  "ownerId": "seo-gpt6-amanda-20261014-340-341-342-writer",
+  "editorialIntent": "Сравнить основные маршруты через Ангра-дус-Рейс по продолжительности пляжного этапа, обязательности и морской программе; отделить от факультативного каталога и общего гида курорта.",
+  "questions": [
+    "Какие программы включают Ангра как обязательную остановку?",
+    "Когда поездка занимает один морской день, а когда несколько ночей?",
+    "Чем отличается Ангра от Илья-Гранди и Парати?",
+    "Какие карнавальные программы содержат морской отдых?",
+    "Что проверить в составе услуг и трансферах?"
+  ],
+  "githubSources": [
+    "src/content/destinations/angra-dos-reis.md",
+    "src/data/catalog/destinations.json",
+    "data/source-index/catalogs/tours.json",
+    "src/content/tours/best-of-rio-express-six-days.md",
+    "src/content/tours/brazilskaya-mechta.md",
+    "src/content/tours/tropicheskij-karnaval-s-angroj-dush-rejsh.md",
+    "src/content/tours/tropical-champions-parade-rio-angra-2027.md",
+    "data/catalog-archive.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://visite.angra.rj.gov.br/",
+      "supports": "География Ангра-дус-Рейс, острова и бухты, основные морские занятия"
+    },
+    {
+      "url": "https://www.turismo.rj.gov.br/cidades/angra-dos-reis/",
+      "supports": "Морские экскурсии, исторические районы и пляжи Коста-Верде"
+    }
+  ],
+  "limitations": [
+    "Состав туров, включения и даты взяты из действующих production MD и индекса; дополнительные посещения отделены от основных.",
+    "Изменяемые количества выводятся динамически; фиксированные тарифы и внешние URL в публичном тексте отсутствуют.",
+    "Погодные условия обсуждаются как возможное ограничение морской логистики, без неподтвержденных расписаний."
+  ]
+}

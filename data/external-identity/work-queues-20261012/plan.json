@@ -47,12 +47,12 @@
     "retries_per_url_in_same_step": 0
   },
   "first_next_task": {
-    "id": "adatours-com-identity-011-sync",
+    "id": "adatours-com-identity-013",
     "step": 3,
     "domain": "adatours.com",
-    "action": "Import the already completed report data/external-identity/adatours-com-identity-011.json into adatours.com.json and adatours-com-correspondences.json/csv using the project exporter; do not research these 50 again. Then advance cursor from 500 to 550 and resume batch 012.",
-    "status": "pending_sync",
-    "object_limit": 0,
+    "action": "Continue after 600 stage-3 objects. Verify the next 50 current RU objects; exact identities only; skip batches 001-012 and confirmed step-1 pairs.",
+    "status": "pending",
+    "object_limit": 50,
     "queue": "adatours.com.json",
     "inventory": "adatours-com-url-inventory-20261012.json"
   },
@@ -79,14 +79,14 @@
   "last_checkpoint": {
     "step": 3,
     "domain": "adatours.com",
-    "batch_id": "adatours-com-identity-010",
+    "batch_id": "adatours-com-identity-012",
     "processed_in_batch": 50,
-    "confirmed_in_batch": 12,
-    "checked_no_confirmed_pair": 38,
-    "verification_cursor": 500,
-    "report": "adatours-com-identity-010.json",
-    "saved_at": "2026-10-14T11:06:22.843Z",
-    "recovered_previous_gap": 14
+    "confirmed_in_batch": 4,
+    "checked_no_confirmed_pair": 46,
+    "verification_cursor": 600,
+    "report": "adatours-com-identity-012.json",
+    "saved_at": "2026-10-14T11:32:44.004Z",
+    "batch_011_report_imported": 50
   },
   "step_1": {
     "status": "completed",
@@ -133,7 +133,7 @@
       "unconfirmed_elsewhere": 36
     }
   ],
-  "updated_at": "2026-10-14T11:06:22.843Z",
+  "updated_at": "2026-10-14T11:32:44.004Z",
   "completed_reports_pending_sync": [
     {
       "batch_id": "adatours-com-identity-011",

@@ -47,18 +47,17 @@
     "retries_per_url_in_same_step": 0
   },
   "first_next_task": {
-    "id": "adatours-com-retry-001",
-    "step": 2,
+    "id": "adatours-com-identity-001",
+    "step": 3,
     "domain": "adatours.com",
-    "action": "Retry only the frozen failed actual URLs in one separate bounded pass, one request per URL, after HEAD and robots checks. Stop on proxy CONNECT 403 or HTTP 429; preserve unresolved errors. No programme sameAs comparison.",
-    "inventory": "adatours-com-url-inventory-20261012.json",
-    "queue": "adatours.com.json",
+    "action": "Compare up to 50 current RU objects with saved fetched pages and IDs. Confirm exact identities only. Unresolved retrieval errors are not negative matches. Reconcile target ID, canonical URL and archive status before this batch.",
     "status": "pending",
-    "url_count": 15,
-    "access_check_required": true
+    "object_limit": 50,
+    "queue": "adatours.com.json",
+    "inventory": "adatours-com-url-inventory-20261012.json"
   },
   "resume": "Read plan.json and the selected domain queue. Run one batch, persist results/cursor and checkpoint commit, report counts, then stop until the user says далее.",
-  "completed_step": 1,
+  "completed_step": 2,
   "schema_implementation": "not_authorized_by_this_research_plan",
   "queues": [
     "adatours.com.json",
@@ -76,15 +75,16 @@
     "geography.json",
     "completed-vip.json"
   ],
-  "active_step": 2,
+  "active_step": null,
   "last_checkpoint": {
     "step": 2,
     "domain": "adatours.com",
-    "batch_id": "adatours-com-crawl-003",
-    "processed_in_batch": 32,
+    "batch_id": "adatours-com-retry-001",
+    "processed_in_batch": 15,
     "remaining_in_batch": 0,
-    "report": "adatours-com-crawl-003.json",
-    "saved_at": "2026-10-14T06:57:15.231399+00:00"
+    "unresolved_retry_urls": 0,
+    "report": "adatours-com-retry-001.json",
+    "saved_at": "2026-10-14T07:09:24.489085+00:00"
   },
   "step_1": {
     "status": "completed",
@@ -97,7 +97,7 @@
   "last_access_check": {
     "url": "https://adatours.com/",
     "method": "HEAD",
-    "checked_at": "2026-10-14T06:53:52.438026+00:00",
+    "checked_at": "2026-10-14T07:07:21.573684+00:00",
     "http_status": 200,
     "final_url": "https://adatours.com/",
     "content_type": "text/html; charset=utf-8",
@@ -105,11 +105,11 @@
     "robots": {
       "url": "https://adatours.com/robots.txt",
       "http_status": 200,
-      "checked_at": "2026-10-14T06:54:02.371802+00:00",
+      "checked_at": "2026-10-14T07:07:29.855797+00:00",
       "sha256": "bbaf6fd733dc879f25d513f972c6b31ced894b2561e9c232936c52320e5bf40f"
     },
-    "fetched_this_pass": 32,
+    "fetched_this_pass": 15,
     "retry_this_pass": 0,
-    "report": "adatours-com-crawl-003.json"
+    "report": "adatours-com-retry-001.json"
   }
 }

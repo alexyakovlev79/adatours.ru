@@ -2,7 +2,7 @@
   "domain": "adatours.com",
   "role": "primary",
   "order": 1,
-  "status": "crawl_pending_retries",
+  "status": "crawl_completed",
   "entry_url": "https://adatours.com/",
   "url_inventory_status": "prepared",
   "discovered_urls": [
@@ -1320,23 +1320,7 @@
   ],
   "crawl_cursor": 632,
   "verification_cursor": 0,
-  "retry_urls": [
-    "https://adatours.com/colombia-san-andres-tours-excursions-hotels/excursions",
-    "https://adatours.com/guiana-amazonian-park/packages",
-    "https://adatours.com/guyana-en",
-    "https://adatours.com/guyana-en/excursions",
-    "https://adatours.com/guyana-en/packages",
-    "https://adatours.com/honduras-en",
-    "https://adatours.com/honduras-en/excursions",
-    "https://adatours.com/honduras-en/packages",
-    "https://adatours.com/how-a-private-assistant-should-brief-a-luxury-brazil-trip",
-    "https://adatours.com/how-to-visit-the-amazon-rainforest",
-    "https://adatours.com/ilha-grande",
-    "https://adatours.com/ilha-grande/excursions",
-    "https://adatours.com/ilha-grande/packages",
-    "https://adatours.com/iquitos",
-    "https://adatours.com/playa-del-carmen"
-  ],
+  "retry_urls": [],
   "model_sample_keys": [
     "country_antarctica",
     "country_argentina",
@@ -6148,7 +6132,7 @@
   "last_access_check": {
     "url": "https://adatours.com/",
     "method": "HEAD",
-    "checked_at": "2026-10-14T06:53:52.438026+00:00",
+    "checked_at": "2026-10-14T07:07:21.573684+00:00",
     "http_status": 200,
     "final_url": "https://adatours.com/",
     "content_type": "text/html; charset=utf-8",
@@ -6156,12 +6140,12 @@
     "robots": {
       "url": "https://adatours.com/robots.txt",
       "http_status": 200,
-      "checked_at": "2026-10-14T06:54:02.371802+00:00",
+      "checked_at": "2026-10-14T07:07:29.855797+00:00",
       "sha256": "bbaf6fd733dc879f25d513f972c6b31ced894b2561e9c232936c52320e5bf40f"
     },
-    "fetched_this_pass": 32,
+    "fetched_this_pass": 15,
     "retry_this_pass": 0,
-    "report": "../adatours-com-crawl-003.json"
+    "report": "../adatours-com-retry-001.json"
   },
   "access_checks": [
     {
@@ -6269,6 +6253,24 @@
       "fetched_this_pass": 32,
       "retry_this_pass": 0,
       "report": "../adatours-com-crawl-003.json"
+    },
+    {
+      "url": "https://adatours.com/",
+      "method": "HEAD",
+      "checked_at": "2026-10-14T07:07:21.573684+00:00",
+      "http_status": 200,
+      "final_url": "https://adatours.com/",
+      "content_type": "text/html; charset=utf-8",
+      "status": "access_confirmed_this_pass",
+      "robots": {
+        "url": "https://adatours.com/robots.txt",
+        "http_status": 200,
+        "checked_at": "2026-10-14T07:07:29.855797+00:00",
+        "sha256": "bbaf6fd733dc879f25d513f972c6b31ced894b2561e9c232936c52320e5bf40f"
+      },
+      "fetched_this_pass": 15,
+      "retry_this_pass": 0,
+      "report": "../adatours-com-retry-001.json"
     }
   ],
   "retry_batches": [
@@ -6291,11 +6293,12 @@
         314,
         473
       ],
-      "status": "pending",
-      "processed": 0,
-      "remaining": 15,
-      "cursor": 0,
-      "scope": "One separate retry request per saved failed URL; no sameAs decisions."
+      "status": "completed",
+      "processed": 15,
+      "remaining": 0,
+      "cursor": 15,
+      "scope": "One separate retry request per saved failed URL; no sameAs decisions.",
+      "report": "../adatours-com-retry-001.json"
     }
   ]
 }

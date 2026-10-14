@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "targetPath": "/argentina/place/los-penitentes/tour/",
+  "articlePath": "data/seo-geo/articles/argentina/place/los-penitentes/tour/index.md",
+  "authoredBy": "seo-gpt6-amanda-20261014-465-467-1791994363636",
+  "checkedAt": "2026-10-14",
+  "editorialIntent": "Выбор реального тура через Лос-Пенитентес, различия с самостоятельной горной экскурсией, остановки дороги и сезонные ограничения.",
+  "repositorySources": [
+    "src/content/destinations/los-penitentes.md",
+    "src/content/tours/argentina-puteshestvie-v-doistoricheskij-mir.md",
+    "src/content/excursions/mendosa-tur-v-gory.md",
+    "src/content/destinations/uspallata.md",
+    "src/content/destinations/puente-del-inca.md",
+    "src/content/destinations/aconcagua.md",
+    "src/content/destinations/las-cuevas.md",
+    "src/lib/tour-relations.ts",
+    "src/pages/[...path].astro",
+    "data/source-index/catalogs/tours.json",
+    "data/catalog-archive.json"
+  ],
+  "independentSources": [
+    {
+      "url": "https://www.mendoza.gov.ar/turismo/plan-estrategico-de-alta-montana/",
+      "publisher": "Ente Mendoza Turismo",
+      "checkedAt": "2026-10-14",
+      "supports": "Горный коридор RN7, поселки Penitentes, Puente del Inca и Las Cuevas, туристическая география."
+    },
+    {
+      "url": "https://prensa.mendoza.gob.ar/miles-de-mendocinos-y-turistas-disfrutan-de-la-alta-montana/",
+      "publisher": "Gobierno de Mendoza, EMETUR, 09.08.2026",
+      "checkedAt": "2026-10-14",
+      "supports": "Сезонные предложения Penitentes Park, зависимость открытости RN7 от погодных условий."
+    },
+    {
+      "url": "https://www.argentina.gob.ar/jefatura/comision-nacional-de-fronteras/alertas-de-pasos-internacionales",
+      "publisher": "Gobierno de Argentina, Comisión Nacional de Fronteras",
+      "checkedAt": "2026-10-14",
+      "supports": "Изменяющееся состояние горного международного коридора и сообщения об ограничениях."
+    },
+    {
+      "url": "https://www.argentina.gob.ar/noticias/reapertura-paso-internacional-sistema-cristo-redentor",
+      "publisher": "Gobierno de Argentina, 03.10.2026",
+      "checkedAt": "2026-10-14",
+      "supports": "Официально подтвержденный пример изменения доступности горного коридора в зависимости от погодных условий."
+    }
+  ],
+  "editorialNotes": [
+    "Один действующий Tour MD с destination_argentina_los_penitentes в основном маршруте, день 4: обзорный проезд, без обещаний катания.",
+    "Самостоятельная экскурсия из Мендосы не приравнена к включенной в тур; ее действующие условия приведены из Excursion MD.",
+    "Динамический счетчик подставляется из фактического непустого каталога при каждой сборке.",
+    "Внешние источники указаны только в provenance; в рендеримый MD добавлены исключительно внутренние канонические ссылки."
+  ]
+}

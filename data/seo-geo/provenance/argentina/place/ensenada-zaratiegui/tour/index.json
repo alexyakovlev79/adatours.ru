@@ -1,0 +1,36 @@
+{
+  "targetPath": "/argentina/place/ensenada-zaratiegui/tour/",
+  "checkedAt": "2026-10-14T16:14:13.007Z",
+  "ownerId": "seo-gpt6-amanda-writer-20261014T1605",
+  "batchId": "seo-batch-447-448-449-20261014T1605",
+  "editorialIntent": "Сравнить реальные маршруты через Энсенаду и различить явно названную остановку и общий визит в парк.",
+  "questions": [
+    "Какие опубликованные туры проходят через Энсенаду?",
+    "Где бухта названа прямо в дне?",
+    "Чем отличаются Огненная Земля + Рио и Огненная Земля + Барилоче?",
+    "Какие сезонные ограничения доступа к бухте действуют?"
+  ],
+  "githubSources": [
+    "src/content/destinations/ensenada-zaratiegui.md",
+    "src/content/tours/led-solntse-i-kraj-zemli.md",
+    "src/content/tours/best-of-argentina-14-days.md",
+    "src/data/catalog/destinations.json",
+    "data/source-index/catalogs/tours.json",
+    "data/catalog-archive.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.argentina.travel/actividades/parque-nacional-tierra-del-fuego",
+      "supports": "Описание бухты и природных маршрутов парка"
+    },
+    {
+      "url": "https://larutanatural.gob.ar/es/imperdible/8/parque-nacional-tierra-del-fuego",
+      "supports": "Сезонные ограничения доступа к Энсенаде, май–сентябрь"
+    }
+  ],
+  "limitations": [
+    "Бухта входит в routeDestinations обоих туров, но в тексте дня 12-дневного тура отдельно не перечислена; этот факт объяснен читателю.",
+    "Изменяемое количество туров используется только через динамическую переменную; все коммерческие сведения взяты из production MD.",
+    "Внешние ссылки хранятся в provenance, не в публичной статье."
+  ]
+}

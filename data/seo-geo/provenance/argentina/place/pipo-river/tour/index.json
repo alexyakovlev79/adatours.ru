@@ -1,0 +1,39 @@
+{
+  "targetPath": "/argentina/place/pipo-river/tour/",
+  "checkedAt": "2026-10-14T16:20:22.569Z",
+  "ownerId": "seo-gpt6-amanda-20261014-20261014T161519080Z",
+  "batchId": "seo-batch-474-475-476-20261014T161519080Z",
+  "editorialIntent": "Выбрать реальный маршрут через реку Пипо; различить остановку у реки, общий визит в парк и самостоятельную прогулку к водопаду.",
+  "questions": [
+    "Какие туры включают реку Пипо и где остановка явно указана?",
+    "Чем отличаются программы на 12, 14 и 26 дней?",
+    "Можно ли пройти к водопаду и какой сезон разрешен?",
+    "Какие объекты парка реально совмещаются с долиной?",
+    "Как соотносятся языки гидов и условия конкретного дня?"
+  ],
+  "githubSources": [
+    "src/content/destinations/pipo-river.md",
+    "src/content/destinations/tierra-del-fuego-national-park.md",
+    "src/content/tours/vsya-argentina.md",
+    "src/content/tours/led-solntse-i-kraj-zemli.md",
+    "src/content/tours/best-of-argentina-14-days.md",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/catalog-archive.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-tierra-del-fuego/actividades",
+      "supports": "Валье-Рио-Пипо, тропа к водопаду, сезон, Pampa Alta, соседние точки"
+    },
+    {
+      "url": "https://www.argentina.gob.ar/node/306176",
+      "supports": "Пешеходный маршрут Cascada Río Pipo, 900 м и 15 мин в одну сторону, ноябрь–апрель"
+    }
+  ],
+  "limitations": [
+    "Лос-Пипо в данных 12-дневного тура фигурирует среди destinations, но отдельной остановки в day 6 нет; явно разграничено.",
+    "Поход к водопаду не заявлен отдельной включенной услугой ни в одной из сравниваемых программ.",
+    "Изменяемый счетчик через {{catalog.toursCountPhrase}}, внешних ссылок в публичном тексте нет."
+  ]
+}

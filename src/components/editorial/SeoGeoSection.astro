@@ -161,7 +161,27 @@ const controlId = 'seo-geo-content-' + article.targetPath.split('/').filter(Bool
   @media (max-width: 600px) {
     .seo-geo { padding-block: 36px 56px; }
     .seo-geo__container { max-width: 100%; }
-    .seo-geo__content :global(th), .seo-geo__content :global(td) { padding: 10px 12px; }
+    /* Compact editorial tables should fit the article width without side scrolling. */
+    .seo-geo__content :global(table) {
+      display: table;
+      width: 100%;
+      max-width: 100%;
+      table-layout: fixed;
+      overflow-wrap: anywhere;
+    }
+    .seo-geo__content :global(th), .seo-geo__content :global(td) {
+      padding: 9px 10px;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+    }
+    /* Wide datasets retain horizontal scrolling instead of unreadable thin cells. */
+    .seo-geo__content :global(table:has(tr > :nth-child(4))) {
+      display: block;
+      width: max-content;
+      max-width: 100%;
+      table-layout: auto;
+      overflow-x: auto;
+    }
   }
   @media print {
     .seo-geo__content.is-collapsed {

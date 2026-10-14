@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "targetPath": "/interests/family-tours/related/",
+  "articlePath": "data/seo-geo/articles/interests/family-tours/related/index.md",
+  "researchedAt": "2026-10-14T08:34:55.723Z",
+  "editorialIntent": "Узкая SEO/GEO-страница пересечений интереса «Туры с детьми» с пляжным отдыхом, природой и животными, культурой. Помогает выбрать вторую тему по конкретному распределению дней; не дублирует семейный путеводитель и сравнение коммерческих условий двух туров.",
+  "repositorySources": [
+    "src/content/themes/semejnye-tury.md",
+    "src/content/themes/plyazhnyj-otdyh.md",
+    "src/content/themes/wildlife.md",
+    "src/lib/interest-model.mjs",
+    "src/pages/interests/[...catalog].astro",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/source-index/catalogs/excursions.json",
+    "src/content/tours/braziliya-s-detmi.md",
+    "src/content/tours/tur-v-braziliyu-s-detmi.md",
+    "src/content/excursions/park-jekzoticheskih-ptic-v-iguasu.md",
+    "src/content/destinations/foz-do-iguacu.md",
+    "src/content/destinations/buzios.md",
+    "src/content/destinations/manaus-amazonia.md",
+    "data/seo-geo/articles/interests/family-tours/index.md",
+    "data/seo-geo/articles/interests/family-tours/tours/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.parquedasaves.com.br/en/about-parque-das-aves/",
+      "checkedAt": "2026-10-14",
+      "supports": "Указание на природоохранную деятельность Парка птиц и знакомство с фауной Атлантического леса."
+    },
+    {
+      "url": "https://www.parquedasaves.com.br/en/plan-your-visit/",
+      "checkedAt": "2026-10-14",
+      "supports": "Соседство Парка птиц с национальным парком Игуасу и возможность посещения обоих за один день, без утверждения о детских допусках."
+    },
+    {
+      "url": "https://cataratasdoiguacu.com.br/guia-do-visitante/",
+      "checkedAt": "2026-10-14",
+      "supports": "Смотровые дорожки бразильской стороны Игуасу и правила посещения зависят от действующей эксплуатации."
+    },
+    {
+      "url": "https://www1.folha.uol.com.br/cotidiano/2026/10/com-cheia-do-rio-iguacu-parque-retira-grades-de-passarela-que-leva-as-cataratas.shtml",
+      "checkedAt": "2026-10-14",
+      "supports": "Пример временного ограничения отдельных мостков после высокого уровня реки (13–14 октября 2026); в статье не утверждаются длительные закрытия."
+    }
+  ],
+  "commercialVerification": {
+    "themeId": "theme_family",
+    "verifiedActiveTourIds": [
+      "tour_source_braziliya_s_detmi",
+      "tour_source_tur_v_braziliyu_s_detmi"
+    ],
+    "actualRelatedInterestIds": [
+      "theme_beach",
+      "theme_wildlife",
+      "theme_culture"
+    ],
+    "verifiedTourPaths": [
+      "/brazil/tour/brazil-with-kids/",
+      "/brazil/tour/brazil-family-tour/"
+    ],
+    "notes": "Оба маршрута по 12 дней / 11 ночей; первый Рио 4, Игуасу 2, Амазония 2, Бузиос 3 ночи; второй Рио 4, Игуасу 2, Бузиос 5 ночей. Внутренние перелеты вынесены в notIncluded; дополнительные экскурсии — отдельно. Не заявляется, что все тематические туры пригодны детям."
+  },
+  "editorialChecks": [
+    "Уникальный интент: сочетание интересов, а не путеводитель с детьми или полное сравнение двух туров.",
+    "Число программ подставляется динамически.",
+    "Только реальные активные внутренние ссылки, без внешних URL в рендеримом Markdown.",
+    "Двухколоночные таблицы для мобильных экранов.",
+    "Возрастные ограничения не выдуманы; парк птиц и лодочное сафари разделены.",
+    "Нет H1, картинок, произвольных HTML-тегов или обещаний конкретных животных."
+  ]
+}

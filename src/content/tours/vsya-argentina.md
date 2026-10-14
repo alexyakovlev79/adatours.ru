@@ -41,6 +41,20 @@ destinations:
 - destination_argentina_gorod_umauaka
 - destination_argentina_cerro_campanario
 - destination_chile_peschera_milodona
+- destination_brazil_parque_das_aves
+- destination_argentina_ukiya
+- destination_argentina_nahuel_huapi_lake
+- destination_argentina_ozero_eskondido_ognennaya_zemlya
+- destination_argentina_pipo_river
+- destination_argentina_lapataia_bay
+- destination_chile_vodopad_salto_grande
+- destination_chile_ozero_nordensheld
+- destination_chile_ozero_pehoe
+- destination_chile_rio_serrano
+- destination_chile_lake_toro
+- destination_chile_lake_porteno
+- destination_argentina_plaza_dorrego
+- destination_argentina_plaza_de_mayo
 audiences:
   - private
 format: "Обзорный"
@@ -84,26 +98,35 @@ itinerary:
     title: "Буэнос-Айрес"
     places:
       - "Буэнос-Айрес"
-    text: |-
-      После завтрака начинается трехчасовая обзорная экскурсия по Буэнос-Айресу с русскоговорящим гидом. Город сочетает европейскую архитектуру, латиноамериканский характер, историю иммиграции и множество культурных традиций.
-      
-      
-      
-      
-      
-      
-      
-      
-      В программе - старый район Ла-Бока, исторический Сан-Тельмо с барами, ресторанами и антикварным рынком на Пласа-Доррего, центральная Пласа-де-Майо и знаменитый Розовый дом, президентский дворец Каса-Росада. Вы увидите городской Обелиск высотой 67 метров на Авениде 9 июля, одном из главных проспектов аргентинской столицы.
-      
-      
-      
-      
-      
-      
-      
-      
-      Экскурсия продолжается в элегантном районе Реколета, где находится известное кладбище и церковь Эль-Пилар в колониальном стиле. Также маршрут проходит через современные районы, в том числе Пуэрто-Мадеро, и городские парки. Таким образом, за одну экскурсию можно увидеть несколько совершенно разных слоев города: старые портовые кварталы, парадный центр, аристократические районы и современную застройку.
+    text: 'После завтрака начинается трехчасовая обзорная экскурсия по Буэнос-Айресу с русскоговорящим гидом. Город сочетает европейскую архитектуру,
+      латиноамериканский характер, историю иммиграции и множество культурных традиций.
+
+
+
+
+
+
+
+
+
+      В программе - старый район Ла-Бока, исторический Сан-Тельмо с барами, ресторанами и антикварным рынком на Пласа-Доррего, центральная Пласа-де-Майо
+      и знаменитый Розовый дом, президентский дворец Каса-Росада. Вы увидите городской Обелиск высотой 67 метров на Авениде 9 июля, одном из главных
+      проспектов аргентинской столицы.
+
+
+
+
+
+
+
+
+
+      Экскурсия продолжается в элегантном районе Реколета, где находится известное кладбище и церковь Эль-Пилар в колониальном стиле. Также маршрут
+      проходит через современные районы, в том числе Пуэрто-Мадеро, и городские парки. Таким образом, за одну экскурсию можно увидеть несколько совершенно
+      разных слоев города: старые портовые кварталы, парадный центр, аристократические районы и современную застройку.
+
+
+      Вечером включено танго-шоу с ужином, без сопровождения гида.'
     images:
       - src: /media/tours/argentina-buenos-ajres-mendoza-kalafate-iguasu/itinerary-day-2-enhanced-20261006.webp
         hover: "Буэнос-Айрес: башни и их отражения у набережной"
@@ -556,10 +579,8 @@ itinerary:
     places:
       - "Эль-Чалтен"
       - "Эль-Калафате"
-    text: |-
-      После завтрака еще один свободный день в Эль-Чалтене. 
-      
-      Во второй половине дня трансфер на автобусную станцию и переезд обратно в Эль-Калафате. По прибытии - трансфер в отель.
+    text: "После завтрака еще один свободный день в Эль-Чалтене: можно продолжить самостоятельные треккинги или заказать каякинг от 300 USD с человека.\
+      \ \n\nВо второй половине дня трансфер на автобусную станцию и переезд обратно в Эль-Калафате. По прибытии - трансфер в отель."
     images:
       - src: "/media/destinations/el-calafate/hero-enhanced-20260930.webp"
         alt: "Патагония рядом с Эль-Калафате"
@@ -640,8 +661,10 @@ itinerary:
     places:
       - "Эль-Калафате"
       - "Ушуайя"
-    text: |-
-      После завтрака трансфер в аэропорт и перелет в Ушуайю. По прибытии - трансфер в отель и свободное время.
+    text: 'После завтрака трансфер в аэропорт и перелет в Ушуайю. По прибытии - трансфер в отель и свободное время.
+
+
+      Дополнительно можно заказать групповую прогулку с пингвинами с англоговорящим гидом — 350 USD с человека.'
     images:
       - src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-05-enhanced-20261001.webp
         hover: "Перито-Морено: голубая ледяная стена перед смотровой площадкой"
@@ -725,11 +748,12 @@ itinerary:
         intendedSlot: "itinerary:day-26"
         hover: "Ушуайя в Аргентине: прибрежный город и лодки на фоне горных склонов"
 included:
-  - "Размещение в отелях."
-  - "Включенное питание."
-  - "Групповые экскурсии с англоязычными гидами."
-  - "Трансферы с водителем."
-  - "Паром Буэнос-Айрес - Монтевидео - Буэнос-Айрес."
+- Размещение в отелях.
+- Включенное питание.
+- 'Экскурсии по программе: русскоговорящий гид на обзорной экскурсии по Буэнос-Айресу и на аргентинской стороне Игуасу; англоговорящие гиды на
+  указанных групповых экскурсиях и индивидуальной экскурсии «Большое кольцо».'
+- Трансферы с водителем.
+- Паром Буэнос-Айрес - Монтевидео - Буэнос-Айрес.
 notIncluded:
   - "Международный перелет."
   - "Внутренние перелеты."
@@ -740,15 +764,58 @@ notIncluded:
   - "Дополнительный каякинг в Эль-Чалтене - от $300 за человека."
   - "Опциональная прогулка с пингвинами - $350 с человека."
 notes:
-  - "При необходимости Ada Tours может заменить отели на другие объекты той же категории."
-  - "Ada Tours может изменить порядок экскурсий при сохранении общей программы тура."
-  - "Ada Tours не несет ответственности за завтраки, пропущенные из-за раннего выселения из отеля при раннем перелете или раннем начале экскурсии."
+- Ada Tours может изменить порядок экскурсий при сохранении общей программы тура.
+- Ada Tours не несет ответственности за завтраки, пропущенные из-за раннего выселения из отеля при раннем перелете или раннем начале экскурсии.
+- Цены могут изменяться; окончательная стоимость подтверждается после проверки всех услуг и стоимости перелетов на дату бронирования.
 faq: []
 sourceUrl: https://brasiltours.ru/vsya-argentina
-sourceSnapshot: page_texts_original/vsya-argentina__2bb3b633.md
-updatedAt: 2026-10-02
+sourceSnapshot: https://docs.google.com/document/d/1-ppkM_nl815BdOJUUHwIsC868DfzI8mJ/edit
+updatedAt: '2026-10-14'
 primaryThemes: ["theme_wildlife","theme_culture"]
 themes: ["theme_adventure","theme_gastronomy_wine"]
+priceNote: 13 707 USD на человека при двух участниках; отели с завтраками, перелеты отдельно.
+routeDestinations:
+- destination_argentina_buenos_aires
+- destination_brazil_iguacu
+- destination_argentina_mendoza
+- destination_argentina_el_calafate
+- destination_uruguay_montevideo
+- destination_argentina_puerto_iguasu
+- destination_argentina_salta
+- destination_argentina_bariloche
+- destination_argentina_el_chalten
+- destination_chile_puerto_natales_torres_del_pajne
+- destination_argentina_ushuajya
+- destination_argentina_vilya_la_angostura
+- destination_argentina_vilya_traful
+- destination_argentina_dolina_uko
+- destination_argentina_kafayate
+- destination_argentina_kebrada_de_umauaka
+- destination_argentina_lednik_perito_moreno
+- destination_argentina_luhan_de_kujo
+- destination_argentina_nacionalnyj_park_los_kardones
+- destination_argentina_nacionalnyj_park_terra_del_fuego
+- destination_argentina_ostrov_viktoriya_ozero_nauel_uapi
+- destination_argentina_purmamarka
+- destination_argentina_salinas_grandes
+- destination_argentina_tilkara
+- destination_argentina_gorod_umauaka
+- destination_argentina_cerro_campanario
+- destination_chile_peschera_milodona
+- destination_brazil_parque_das_aves
+- destination_argentina_ukiya
+- destination_argentina_nahuel_huapi_lake
+- destination_argentina_ozero_eskondido_ognennaya_zemlya
+- destination_argentina_pipo_river
+- destination_argentina_lapataia_bay
+- destination_chile_vodopad_salto_grande
+- destination_chile_ozero_nordensheld
+- destination_chile_ozero_pehoe
+- destination_chile_rio_serrano
+- destination_chile_lake_toro
+- destination_chile_lake_porteno
+- destination_argentina_plaza_dorrego
+- destination_argentina_plaza_de_mayo
 ---
 
 Маршрут построен как большое путешествие через несколько климатических и природных зон. Сначала вас ждет ритм мегаполиса и культура Буэнос-Айреса, затем тропики Игуасу. После этого программа уходит на северо-запад, где появляются виноградники, высокогорные долины и разноцветные склоны Анд. Вторая половина путешествия посвящена Патагонии: озерам Барилоче, ледникам, горным тропам, степям и природе Огненной Земли.
@@ -773,3 +840,25 @@ themes: ["theme_adventure","theme_gastronomy_wine"]
 
 Отдельные дни дают возможность увидеть соседние страны и пограничные регионы. Из Буэнос-Айреса запланирована поездка в Монтевидео, район водопадов Игуасу знакомит сразу с бразильской и аргентинской сторонами природного комплекса, а из Патагонии маршрут приводит в чилийский Торрес-дель-Пайне.
 
+
+
+## Стоимость и размещение на 2027 год
+
+13 707 USD на человека при двух участниках. Тариф включает услуги и отели с завтраками (BB). Международные и внутренние перелеты оплачиваются отдельно. Окончательная стоимость подтверждается при бронировании.
+
+| Остановка | Отель и ночи |
+| --- | --- |
+| Буэнос-Айрес | NH Collection Buenos Aires Lancaster — 3 ночи |
+| Фоз-ду-Игуасу | Viale Cataratas Hotel — 2 ночи |
+| Кафаяте | El Porvenir Wine Lodge — 2 ночи |
+| Сальта | House of Jasmines — 1 ночь |
+| Пурмамарка | Hotel El Manantial del Silencio — 1 ночь |
+| Сальта, повторная остановка | Hotel Legado Mítico Salta — 1 ночь |
+| Мендоса | NH Mendoza Cordillera — 3 ночи |
+| Барилоче | NH Edelweiss Bariloche — 3 ночи |
+| Эль-Калафате, первая остановка | Mirador del Lago Hotel — 2 ночи |
+| Эль-Чалтен | Los Cerros del Chalten Boutique Hotel — 2 ночи |
+| Эль-Калафате, повторная остановка | Mirador del Lago Hotel — 2 ночи |
+| Ушуайя | Los Acebos Ushuaia Hotel — 3 ночи |
+
+В поэтапной программе указаны 3 ночи в Игуасу и 1 ночь в Кафаяте, а в тарифной таблице — 2 ночи в каждом из этих мест. Итоговая длительность одинакова: 26 дней / 25 ночей. Распределение ночей на этом участке требует подтверждения при бронировании.

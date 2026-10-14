@@ -26,6 +26,13 @@ destinations:
 - destination_chile_ozero_pehoe
 - destination_chile_ozero_grej
 - destination_chile_lednik_grej
+- destination_brazil_sugarloaf_mountain
+- destination_brazil_corcovado_christ_the_redeemer
+- destination_brazil_parque_das_aves
+- destination_argentina_plaza_de_mayo
+- destination_chile_santiago_plaza_de_armas
+- destination_chile_la_moneda_palace
+- destination_chile_santa_lucia_hill
 audiences: []
 route:
 - Рио-де-Жанейро
@@ -397,7 +404,10 @@ itinerary:
     Главная особенность этого дня - сочетание пустынного окружения, воды и вулканических силуэтов.
 
 
-    После экскурсии возвращение в отель.'
+    После экскурсии возвращение в отель.
+
+
+    На высоте более 4000 м возможны проявления горной болезни.'
   images:
   - src: /media/tours/chili-santyago-pustynya-atakama-torres-del-pajne/hero-enhanced-20261006.webp
     hover: "Атакама: гейзеры на фоне сухих гор и синего неба"
@@ -472,9 +482,10 @@ notes:
 - Ada Tours может заменить указанные отели на другие отели той же категории.
 - Порядок экскурсий может быть изменен при сохранении программы тура.
 - Ada Tours не несет ответственности за завтраки в отелях, пропущенные из-за раннего выселения при раннем перелете или ранней экскурсии.
-updatedAt: '2026-10-02'
+- Высокогорные лагуны Атакамы посещаются на высоте более 4000 м; возможны проявления горной болезни.
+updatedAt: '2026-10-14'
 sourceUrl: https://brasiltours.ru/luchshee-brazilii-argentiny-i-chili
-sourceSnapshot: https://drive.google.com/file/d/1-SwJGcuzFdGRV6ydr11IO8ESWVvRAD-Q/view?usp=drivesdk
+sourceSnapshot: https://docs.google.com/document/d/1wxd4Fq4-rEaL2TE50dJMhgNl4EzuJJNX/edit
 durationDays: 13
 durationNights: 12
 priceFrom: 8860
@@ -505,6 +516,13 @@ routeDestinations:
 - destination_chile_lunnaya_dolina_atakama
 - destination_chile_ozero_pehoe
 - destination_chile_ozero_grej
+- destination_brazil_sugarloaf_mountain
+- destination_brazil_corcovado_christ_the_redeemer
+- destination_brazil_parque_das_aves
+- destination_argentina_plaza_de_mayo
+- destination_chile_santiago_plaza_de_armas
+- destination_chile_la_moneda_palace
+- destination_chile_santa_lucia_hill
 primaryThemes:
 - theme_wildlife
 - theme_culture
@@ -549,7 +567,7 @@ themes:
 
 Формат экскурсий меняется вместе с регионами. В больших городах акцент сделан на обзорные маршруты и культурные объекты. У Игуасу к пешим дорожкам добавляется лодочная программа. В Патагонии основной объект наблюдается со смотровых площадок и природных троп. В Атакаме часть впечатлений приходится на вечернее и ночное время из-за астрономической программы.
 
-В стоимость входят завтраки в отелях и питание в отдельные дни маршрута или в рамках условий размещения. Остальное питание оплачивается самостоятельно.
+В стоимость входят завтраки в отелях и ужин на танго-шоу в Буэнос-Айресе. Питание, не указанное в программе, оплачивается самостоятельно.
 
 В течение путешествия меняется и формат сопровождения: в одних точках работает гид вместе с водителем, в других предусмотрен только водитель на трансфере, а часть природных экскурсий проходит со специализированными местными проводниками.
 
@@ -572,3 +590,4 @@ themes:
 | 1 | 16133 | — | — |
 | 2 | 11052 | 8860 | — |
 | 3 | 9911 | 7719 | 7660 |
+

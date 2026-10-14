@@ -58,7 +58,13 @@ export async function pageStructuredData(input: {
     preferredKind: current?.kind === 'country' || current?.kind === 'destination' ? 'tour' : undefined,
   });
   const aggregates = graph['@graph'].filter((node: any) => node['@type'] === 'AggregateOffer');
-  const priceSummaries = aggregates.map((offer: any) => {
+  // SEO copy is USD-only. Other currencies remain factual in JSON-LD but
+  // must not introduce EUR/BRL price claims into title or description.
+  // Do not add a new price claim when no amount was attached to authored metadata.
+  const priceSummaries = (seo.changed && seo.quote
+    ? aggregates.filter((offer: any) =>
+        offer.priceCurrency === 'USD' && offer['@id'].includes('#' + seo.quote.kind + '-'))
+    : []).map((offer: any) => {
     const kind = offer['@id'].includes('#tour-') ? 'туров' : 'экскурсий';
     const range = offer.lowPrice === offer.highPrice
       ? 'от ' + formatSeoMoney(offer.lowPrice, offer.priceCurrency)
@@ -82,7 +88,7 @@ export async function pageStructuredData(input: {
   // Metadata must quote the minimum of the entire logical selection, not
   // whichever ten products happened to be rendered on this catalogue page.
   // JSON-LD AggregateOffer itself remains scoped to the actually rendered links.
-  if (seo.quote && seo.quote.parts.length === 1) {
+  if (seo.changed && seo.quote && seo.quote.parts.length === 1) {
     const { currency, amount } = seo.quote.parts[0];
     const kind = seo.quote.kind;
     const noun = kind === 'tour' ? (seo.quote.count === 1 ? 'тура' : 'туров')

@@ -70,6 +70,8 @@ test('SEO title cases and conditional prices',()=>{
  assert.match(seoTourTitle({title:'Роскошная Бразилия',priceFrom:3653,currency:'USD'}),/по цене от \$3\s?653/);
  assert.ok(!seoTourTitle({title:'Тур в Перу',priceFrom:null,currency:'USD'}).includes('цене'));
  assert.ok(!seoTourTitle({title:'Тур в Перу',priceFrom:null,currency:'USD'}).startsWith('Тур Тур'));
+ assert.ok(!seoTourTitle({title:'Тур в Бразилию',priceFrom:900,currency:'BRL'}).includes('по цене'));
+ assert.ok(!seoExcursionTitle({title:'Прогулка',priceFrom:900,currency:'BRL'},'country_brazil').includes('цена от'));
  assert.match(seoExcursionTitle({title:'Парк птиц',priceFrom:51,currency:'USD'},'country_brazil','destination_brazil_iguacu','Фоз-ду-Игуасу'),/Парк птиц в Фоз-ду-Игуасу, Бразилия, цена от \$51/);
  assert.ok(!seoExcursionTitle({title:'Полет',priceFrom:null},'country_brazil').includes('цена'));
 });
@@ -200,10 +202,10 @@ test('SEO: multiple priced products use от and a real minimum', () => {
   assert.equal(moneyText(output.description), 'Туры по лучшим ценам от $1 500 и каталоги.');
 });
 
-test('SEO: mixed currencies do not change original SEO wording', () => {
+test('SEO: non-USD and mixed-currency prices do not add numeric metadata', () => {
   const prices = [
     { id: 'usd', kind: 'tour', currency: 'USD', amount: 2000 },
-    { id: 'eur', kind: 'tour', currency: 'EUR', amount: 900 },
+    { id: 'brl', kind: 'tour', currency: 'BRL', amount: 900 },
   ];
   const output = enrichSeoPriceMetadata({ title: 'VIP по выгодным ценам',
     description: 'Каталог и цены 2026-2027', prices });
@@ -211,6 +213,15 @@ test('SEO: mixed currencies do not change original SEO wording', () => {
   assert.equal(output.quote, null);
   assert.equal(output.title, 'VIP по выгодным ценам');
   assert.equal(output.description, 'Каталог и цены 2026-2027');
+  const singleLocal = enrichSeoPriceMetadata({
+    title: 'Туры по лучшей цене',
+    description: 'Стоимость туров',
+    prices: [{ id: 'local', kind: 'tour', currency: 'BRL', amount: 900 }],
+  });
+  assert.equal(singleLocal.changed, false);
+  assert.equal(singleLocal.quote, null);
+  assert.equal(singleLocal.title, 'Туры по лучшей цене');
+  assert.equal(singleLocal.description, 'Стоимость туров');
 });
 
 test('SEO: absent price wording means metadata stays unchanged', () => {

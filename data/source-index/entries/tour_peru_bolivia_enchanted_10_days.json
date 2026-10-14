@@ -41,7 +41,8 @@
     "destination_peru_puka_pukara",
     "destination_peru_tambomachay",
     "destination_peru_sikuani",
-    "destination_peru_pukara"
+    "destination_peru_pukara",
+    "destination_peru_larco_museum"
   ],
   "destinations": [
     {
@@ -223,6 +224,12 @@
       "name": "Пукара",
       "url": "/peru/place/pucara/",
       "countryId": "country_peru"
+    },
+    {
+      "id": "destination_peru_larco_museum",
+      "name": "Музей Ларко",
+      "url": "/peru/place/larco-museum/",
+      "countryId": "country_peru"
     }
   ],
   "aliases": [],
@@ -313,7 +320,15 @@
         "Day 8 return flight La Paz–Lima conflicts with included Juliaca–Lima",
         "Russian guide listed in new Word; previous PDF excluded Titicaca interpreter; crossing accompaniment requires confirmation",
         "Hotel table lists Peru hotels only; Bolivia hotel category for 3/5-star packages unspecified"
-      ]
+      ],
+      "relationsAudit": {
+        "verifiedAt": "2026-10-14",
+        "corrections": [
+          "Exact Sacred Valley and four-site Cusco excursions reused from fresh Word route",
+          "Titicaca Train optional module linked separately with original text preserved",
+          "Larco Museum included as optional destination; routeDestinations preserved"
+        ]
+      }
     },
     "provenance": {
       "programKey": "P043",
@@ -358,72 +373,156 @@
       {
         "url": "/media/destinations/lima/hero-enhanced-20260930.webp",
         "alt": "Лима, столица Перу",
-        "role": "gallery",
-        "order": 2,
+        "role": "itinerary",
+        "order": 1,
         "slot": "itinerary:day-1"
       },
       {
         "url": "/media/destinations/cusco/hero-enhanced-20260930.webp",
         "alt": "Куско, Перу",
-        "role": "gallery",
-        "order": 3,
+        "role": "itinerary",
+        "order": 2,
         "slot": "itinerary:day-2"
+      },
+      {
+        "url": "/media/tours/ves-mnogolikij-peru/itinerary-2-images-1-src-enhanced-20261007.webp",
+        "alt": "Перуанский флаг над площадью и собором Лимы, Перу",
+        "role": "itinerary",
+        "order": 2,
+        "slot": "itinerary:day-2:contentBlock-1"
       },
       {
         "url": "/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp",
         "alt": "Старинная церковь и черепичные крыши вокруг площади с высоты, Куско, Перу",
-        "role": "gallery",
-        "order": 4,
+        "role": "itinerary",
+        "order": 3,
         "slot": "itinerary:day-3"
       },
       {
+        "url": "/media/tours/south-america-luxury-33-days/pdf-x327-20261011-v1-enhanced-20261011-pass2324-v1.webp",
+        "alt": "Храм Санто-Доминго над древними стенами Кориканчи в Куско, Перу",
+        "role": "itinerary",
+        "order": 3,
+        "slot": "itinerary:day-3:contentBlock-1"
+      },
+      {
+        "url": "/media/countries/peru/block-111-generated-20261011-dedup-v1.webp",
+        "alt": "Куско, Перу",
+        "role": "itinerary",
+        "order": 3,
+        "slot": "itinerary:day-3:contentBlock-2"
+      },
+      {
         "url": "/media/tours/manyashchij-peru-kolumbiya/aguas-calientes-place-generated-20261009-v1.webp",
-        "alt": "Агуас-Кальентес в горной долине",
-        "role": "gallery",
-        "order": 5,
+        "alt": "Бурная каменистая река между домами Агуас-Кальентес под крутыми зелеными склонами, Перу",
+        "role": "itinerary",
+        "order": 4,
         "slot": "itinerary:day-4"
+      },
+      {
+        "url": "/media/destinations/machu-picchu/hero-enhanced-20260930.webp",
+        "alt": "Каменные постройки и террасы Мачу-Пикчу среди гор и облаков, Перу",
+        "role": "itinerary",
+        "order": 4,
+        "slot": "itinerary:day-4:contentBlock-1"
       },
       {
         "url": "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-day-11-enhanced-20261006.webp",
         "alt": "Куско с церковными башнями, красными крышами и зелёными горами, Перу",
-        "role": "gallery",
-        "order": 6,
+        "role": "itinerary",
+        "order": 5,
         "slot": "itinerary:day-5"
       },
       {
+        "url": "/media/destinations/destination_peru_auanakancha/hero-generated-20261009-v1.webp",
+        "alt": "Лама и две альпаки у каменной ограды Ауанаканчи, Перу",
+        "role": "itinerary",
+        "order": 5,
+        "slot": "itinerary:day-5:contentBlock-2"
+      },
+      {
+        "url": "/media/excursions/ekskursiya-na-raduzhnuyu-goru-vinikunka/hero-src-enhanced-20261007.webp",
+        "alt": "Разноцветные минеральные полосы на склонах Радужной горы Виникунка, Перу",
+        "role": "itinerary",
+        "order": 5,
+        "slot": "itinerary:day-5:contentBlock-3"
+      },
+      {
         "url": "/media/countries/peru/featureBands-3-image-enhanced-20261001.webp",
-        "alt": "На фото: город Пуно в Перу и озеро Титикака",
-        "role": "gallery",
-        "order": 7,
+        "alt": "Миниатюрная тростниковая лодка с ярким декором на соломе, Пуно, Перу",
+        "role": "itinerary",
+        "order": 6,
         "slot": "itinerary:day-6"
+      },
+      {
+        "url": "/media/destinations/puno-i-o-titikaka/gallery-9-enhanced-20261005.webp",
+        "alt": "Синяя гладь озера Титикака с маленькой лодкой и холмами вдали, Перу",
+        "role": "itinerary",
+        "order": 6,
+        "slot": "itinerary:day-6:contentBlock-1"
+      },
+      {
+        "url": "/media/tours/tur-v-peru-i-braziliyu/la-raya-pass-place-generated-20261008.webp",
+        "alt": "Горная дорога в долине у перевала Ла-Рая между Куско и Пуно, Перу",
+        "role": "itinerary",
+        "order": 6,
+        "slot": "itinerary:day-6:contentBlock-2"
       },
       {
         "url": "/media/destinations/isla-del-sol/gallery-1-enhanced-20261003.webp",
         "alt": "Лодка на мелководье с отражениями облаков у Солнечного острова, Боливия",
-        "role": "gallery",
-        "order": 8,
+        "role": "itinerary",
+        "order": 7,
         "slot": "itinerary:day-7"
+      },
+      {
+        "url": "/media/destinations/isla-del-sol/gallery-2-enhanced-20261003.webp",
+        "alt": "Лодки и яхты у причала на спокойной воде в золотом свете заката, Боливия",
+        "role": "itinerary",
+        "order": 7,
+        "slot": "itinerary:day-7:contentBlock-1"
       },
       {
         "url": "/media/destinations/la-pas/gallery-3-enhanced-20261003.webp",
         "alt": "Панорама Ла-Паса и заснеженной горы на горизонте, Боливия",
-        "role": "gallery",
-        "order": 9,
+        "role": "itinerary",
+        "order": 8,
         "slot": "itinerary:day-8"
+      },
+      {
+        "url": "/media/countries/bolivia/block-017-generated-20261011-dedup-v1.webp",
+        "alt": "Светлые эрозионные столбы Лунной долины у Ла-Паса",
+        "role": "itinerary",
+        "order": 8,
+        "slot": "itinerary:day-8:contentBlock-1"
       },
       {
         "url": "/media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-14-enhanced-20261006.webp",
         "alt": "Кафедральный собор Лимы с двумя башнями у просторной площади, Перу",
-        "role": "gallery",
-        "order": 10,
+        "role": "itinerary",
+        "order": 9,
         "slot": "itinerary:day-9"
+      },
+      {
+        "url": "/media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp",
+        "alt": "Небольшой самолет над геоглифом птицы в пустыне Наска, Перу",
+        "role": "itinerary",
+        "order": 9,
+        "slot": "itinerary:day-9:contentBlock-1"
       },
       {
         "url": "/media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp",
         "alt": "Дорога к аэропорту с терминалом и диспетчерской башней в Лиме, Перу",
-        "role": "gallery",
-        "order": 11,
+        "role": "itinerary",
+        "order": 10,
         "slot": "itinerary:day-10"
+      },
+      {
+        "url": "/media/excursions/muzej-larko-lima/ceramics-generated-20261013-v1.webp",
+        "alt": "Красно-коричневые сосуды доколумбовой керамики в музейной витрине",
+        "role": "itinerary",
+        "order": 10,
+        "slot": "itinerary:day-10:contentBlock-1"
       }
     ],
     "provenance": {

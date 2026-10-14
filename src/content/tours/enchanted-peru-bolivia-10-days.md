@@ -41,6 +41,7 @@ destinations:
 - destination_peru_tambomachay
 - destination_peru_sikuani
 - destination_peru_pukara
+- destination_peru_larco_museum
 routeDestinations:
 - destination_peru_lima
 - destination_peru_cusco
@@ -204,7 +205,7 @@ itinerary:
     hover: 'Куско, Перу: старинная церковь и черепичные крыши вокруг площади с высоты'
   contentBlocks:
   - type: excursion
-    excursionRef: excursion_peru_cusco_coricancha_sacsayhuaman
+    excursionRef: excursion_cusco_archaeological_sites_russian_guide
     text: 'Завтрак.
 
 
@@ -314,7 +315,7 @@ itinerary:
       По желанию предлагаются дополнительные экскурсии, позволяющие открыть для себя еще больше удивительных мест
       Перу.'
   - type: excursion
-    excursionRef: excursion_peru_sacred_valley_full_day
+    excursionRef: excursion_peru_sacred_valley_pisac_awanakancha_ollantaytambo
     text: 'Священная долина инков - Писак и Ольянтайтамбо
 
 
@@ -426,10 +427,10 @@ itinerary:
 
 
       Ориентировочно в 18:00 - прибытие в Пуно, трансфер и размещение в отеле Casona Plaza 4* или аналогичном отеле
-      той же категории.
-
-
-      По желанию: путешествие на роскошном поезде Titicaca Train
+      той же категории.'
+  - type: excursion
+    excursionRef: excursion_peru_titicaca_train_cusco_puno
+    text: 'По желанию: путешествие на роскошном поезде Titicaca Train
 
 
       Доплата - 295 USD с человека. Отправление по средам, пятницам и воскресеньям, согласно расписанию перевозчика.
@@ -675,7 +676,7 @@ notes:
 - 'Для поездки к Виникунке нужна хорошая физическая выносливость: маршрут проходит на высоте около 5200 м.'
 - Во время переправы через Титикаку состав сопровождения на русском языке подтверждается при бронировании.
 sourceSnapshot: https://docs.google.com/document/d/1TGAF3QF8XX-VrVTVMgSs50tq7V8d7oGs/edit
-updatedAt: '2026-10-13'
+updatedAt: '2026-10-14'
 ---
 
 Маршрут начинается в Лиме, проходит через древнюю столицу инков Куско и Мачу-Пикчу, затем поднимается к озеру Титикака. Катамаран ведет к Острову Солнца; после переезда в Ла-Пас вы увидите Долину Луны и Тиуанако и вернетесь в Лиму.

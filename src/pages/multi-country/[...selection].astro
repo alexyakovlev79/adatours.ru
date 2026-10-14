@@ -49,12 +49,10 @@ const {
 } = Astro.props;
 const names = comboCountries.map((country) => country.name);
 const countriesText = names.join(' + ');
-const heading = slugs.length === 1 ? 'Multi-country туры с ' + countriesText : 'Туры: ' + countriesText;
-const baseTitle = countriesText + ': ' + countLabel(pagination.totalItems, ['тур', 'тура', 'туров']) + (slugs.length === 1 ? ' по нескольким странам' : '');
+const heading = 'Туры: ' + countriesText;
+const baseTitle = countriesText + ': ' + countLabel(pagination.totalItems, ['тур', 'тура', 'туров']);
 const pageSuffix = pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage + ' из ' + pagination.totalPages : '';
-const description = (slugs.length === 1
-  ? 'Готовые маршруты Ada Tours по нескольким странам, где ' + countriesText + ' — одна из основных стран. '
-  : 'Готовые туры Ada Tours по странам: ' + names.join(', ') + '. ')
+const description = 'Готовые туры Ada Tours по странам: ' + names.join(', ') + '. '
   + countLabel(pagination.totalItems, ['маршрут', 'маршрута', 'маршрутов'])
   + ' с выбранными странами. В отдельных поездках могут быть и другие страны. Даты и отели можно адаптировать.'
   + (pagination.currentPage > 1 ? ' Страница ' + pagination.currentPage + ' из ' + pagination.totalPages
@@ -91,9 +89,7 @@ const itemList = {
   <Hero
     eyebrow="Multi-country"
     title={heading + (pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage : '')}
-    intro={slugs.length === 1
-      ? 'Выберите путешествие по нескольким странам с посещением ' + countriesText + '. Добавьте вторую страну в подборке ниже.'
-      : 'Выберите маршрут, включающий страны: ' + names.join(', ') + '. Сравните длительность и формат готовых программ.'}
+    intro={'Выберите маршрут, включающий страны: ' + names.join(', ') + '. Сравните длительность и формат готовых программ.'}
     image={hero}
     compact
     ctaHref="#request"

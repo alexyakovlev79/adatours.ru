@@ -23,8 +23,6 @@ test('static combinations are sorted, unique, nonempty and match only main count
   const byKey = new Map(rows.map((row) => [row.slugs.join('_'), row]));
   assert.deepEqual([...byKey.keys()], [...byKey.keys()].sort((a, b) => a.localeCompare(b, 'en')));
   assert.deepEqual(byKey.get('argentina_brazil').tours.map((tour) => tour.id), ['abc']);
-  assert.deepEqual(byKey.get('argentina').tours.map((tour) => tour.id), ['abc']);
-  assert.deepEqual(byKey.get('brazil').tours.map((tour) => tour.id), ['abc', 'brazil-peru', 'chile-brazil']);
   assert.deepEqual(byKey.get('brazil_chile').tours.map((tour) => tour.id), ['abc', 'chile-brazil']);
   assert.deepEqual(byKey.get('brazil_peru').tours.map((tour) => tour.id), ['brazil-peru']);
   assert.deepEqual(byKey.get('argentina_brazil_chile').tours.map((tour) => tour.id), ['abc']);
@@ -41,7 +39,7 @@ test('fourth selector appears only where a fourth main country exists, even on l
   assert.equal(rows.filter((row) => row.slugs.length === 4).length, 5);
   assert.deepEqual(nextMultiCountryOptions(rows, ['argentina', 'brazil', 'chile']), ['peru', 'uruguay']);
   assert.deepEqual(nextMultiCountryOptions(rows, ['argentina', 'brazil', 'chile', 'peru']), []);
-  assert.equal(multiCountryCombinationPath(['argentina']), '/multi-country/argentina/');
+  assert.throws(() => multiCountryCombinationKey(['argentina']));
   assert.throws(() => multiCountryCombinationKey(['argentina', 'argentina']));
   assert.throws(() => multiCountryCombinationKey(['argentina', 'brazil', 'chile', 'peru', 'uruguay']));
 });

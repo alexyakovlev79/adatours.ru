@@ -54,7 +54,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     />
 
     <div class="phone-field__menu" role="listbox" data-phone-menu data-nosnippet>
-      {PHONE_COUNTRIES.map((country) => (
+      {[defaultCountry].map((country) => (
         <button
           type="button"
           class="phone-field__option"
@@ -92,6 +92,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
 
 <script>
   import { withBase } from '../../lib/paths';
+  import { PHONE_COUNTRIES } from '../../data/phone-countries';
   const flagUrl = (iso2) => withBase(`/phone-flags/${iso2 === 'mb' ? 'mx' : iso2}.png`);
   const maskParts = (mask, dial) => {
     const rest = mask.startsWith(dial) ? mask.slice(dial.length) : mask;
@@ -244,8 +245,59 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     };
     menu.addEventListener('scroll', loadNearbyFlags, { passive: true });
 
+    // The original SSR rendered every country option on every page (thousands
+    // of identical large menus). Keep the default option in HTML as fallback;
+    // populate the full accessible list only on the first user interaction.
+    let optionsReady = false;
+    const ensureOptions = () => {
+      if (optionsReady) return;
+      const fragment = document.createDocumentFragment();
+      for (const country of PHONE_COUNTRIES) {
+        const option = document.createElement('button');
+        option.type = 'button';
+        option.className = 'phone-field__option';
+        option.setAttribute('role', 'option');
+        option.dataset.phoneOption = '';
+        option.dataset.name = country.name;
+        option.dataset.iso2 = country.iso2;
+        option.dataset.dial = country.dial;
+        option.dataset.mask = country.mask;
+
+        const flagWrap = document.createElement('span');
+        flagWrap.className = 'phone-field__flag-wrap';
+        flagWrap.setAttribute('aria-hidden', 'true');
+        const fallback = document.createElement('span');
+        fallback.className = 'phone-field__flag-fallback';
+        fallback.textContent = '🌐';
+        const countryFlag = document.createElement('img');
+        countryFlag.className = 'phone-field__flag';
+        countryFlag.alt = '';
+        countryFlag.width = 24;
+        countryFlag.height = 18;
+        countryFlag.hidden = true;
+        countryFlag.dataset.phoneOptionFlag = '';
+        countryFlag.dataset.phoneOptionFlagSrc = flagUrl(country.iso2);
+        countryFlag.referrerPolicy = 'no-referrer';
+        countryFlag.addEventListener('load', () => { countryFlag.hidden = false; });
+        countryFlag.addEventListener('error', () => { countryFlag.hidden = true; });
+        flagWrap.append(fallback, countryFlag);
+
+        const label = document.createElement('span');
+        label.className = 'phone-field__country-name';
+        label.textContent = country.name;
+        const dialText = document.createElement('span');
+        dialText.className = 'phone-field__option-code';
+        dialText.textContent = country.dial;
+        option.append(flagWrap, label, dialText);
+        fragment.append(option);
+      }
+      menu.replaceChildren(fragment);
+      optionsReady = true;
+    };
+
     toggle.addEventListener('click', () => {
       const open = !menu.classList.contains('is-open');
+      if (open) ensureOptions();
       menu.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
 
@@ -261,8 +313,10 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       }
     });
 
-    menu.querySelectorAll('[data-phone-option]').forEach((option) => {
-      option.addEventListener('click', () => applyCountry(option));
+    menu.addEventListener('click', (event) => {
+      const target = event.target;
+      const option = target instanceof Element ? target.closest('[data-phone-option]') : null;
+      if (option instanceof HTMLButtonElement && menu.contains(option)) applyCountry(option);
     });
 
     input.addEventListener('keydown', (event) => {

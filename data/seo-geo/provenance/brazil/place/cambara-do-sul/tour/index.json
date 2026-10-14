@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "targetPath": "/brazil/place/cambara-do-sul/tour/",
+  "articlePath": "data/seo-geo/articles/brazil/place/cambara-do-sul/tour/index.md",
+  "authoredBy": "seo-gpt6-amanda-20261014T144435-242-354-355",
+  "checkedAt": "2026-10-14",
+  "editorialIntent": "Помочь выбрать один из трех маршрутов, действительно связанных с Камбара-ду-Сул; противопоставить 3 ночи на плато, обзор каньонов из Прая-Гранде и однодневный каньонный финал многорегиональной поездки. Сверить конкретные активности, ночевки и включенные перелеты.",
+  "repositorySources": [
+    "data/source-index/catalogs/tours.json",
+    "src/content/destinations/cambara-do-sul.md",
+    "src/content/destinations/itaimbezinho-canyon.md",
+    "src/content/destinations/fortaleza-canyon.md",
+    "src/content/tours/south-brazil-12d.md",
+    "src/content/tours/southern-brazil-vip-7-days.md",
+    "src/content/tours/tur-v-braziliyu-na-vodopady-iguasu-v-pantanal-bonito-portu-alegre.md",
+    "data/catalog-archive.json",
+    "src/lib/seo-geo-articles.ts"
+  ],
+  "independentSources": [
+    {
+      "url": "https://www.cambaradosul.rs.gov.br/turismo_int.php?id=14&tipo=3",
+      "publisher": "Prefeitura Municipal de Cambará do Sul, официальный туристический раздел",
+      "checkedAt": "2026-10-14",
+      "supports": "Близость Итаимбезинью к Камбара-ду-Сул, обзорные и более протяженные тропы."
+    },
+    {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/mata-atlantica/lista-de-ucs/parna-da-serra-geral/informacoes-sobre-visitacao-2013-parna-da-serra-geral/informacoes-sobre-visitacao-2013-parna-da-serra-geral",
+      "publisher": "ICMBio, администрация национального парка Серра-Жерал",
+      "checkedAt": "2026-10-14",
+      "supports": "Маршруты к каньону Форталеза, подходы и необходимость учитывать актуальные ограничения посещения."
+    },
+    {
+      "url": "https://www.sgb.gov.br/geossit/geossitios/ver/1850",
+      "publisher": "Serviço Geológico do Brasil",
+      "checkedAt": "2026-10-14",
+      "supports": "География геосайта Итаимбезинью и Форталеза и различие подходов со стороны плато и прибрежной низменности."
+    }
+  ],
+  "editorialNotes": [
+    "Действующие Tour MD, а не название самого каталога, определяют ночевки, транспорт, программу и нагрузку.",
+    "В 12-дневном туре Камбара-ду-Сул указан в географии, но детальный каньонный день привязан к Прая-Гранде: не обещаны ночи в городе.",
+    "Не использованы статические цены и числа каталогов, подставляются переменные из Astro; все внутренние ссылки соответствуют существующим страницам."
+  ]
+}

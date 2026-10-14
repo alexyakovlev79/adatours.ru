@@ -1,0 +1,51 @@
+{
+  "targetPath": "/vip/interests/cruises-and-expeditions/",
+  "checkedAt": "2026-10-14T14:53:34.992Z",
+  "ownerId": "seo-gpt6-amanda-20261014-319-321-cf4",
+  "batchId": "seo-batch-325-326-327-20261014-cf4",
+  "editorialIntent": "Помочь сравнить VIP-круизы и экспедиции по типу судна, географии, способам достижения региона, длительности именно водного участка, высадкам, погодным ограничениям и основе цены без обещаний, которых нет в программе.",
+  "questions": [
+    "Как выбрать экспедицию по Антарктиде, Галапагосам, фьордам, Амазонии или Сан-Блас?",
+    "В чем различие антарктических авиакруизов и экспедиций по морю?",
+    "Чем яхта вокруг Галапагосов отличается от поездки с 4 днями круиза?",
+    "Как считать реальную длительность круиза в длинном маршруте?",
+    "Какие условия VIP и высадок требуют проверки?"
+  ],
+  "githubSources": [
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-filters.mjs",
+    "src/pages/vip/[...country].astro",
+    "data/external-identity/vip-catalogues.json",
+    "data/catalog-archive.json",
+    "src/content/tours/galapagosskie-ostrova-na-vip-yakhte.md",
+    "src/content/tours/ostrova-san-blas-na-yakhte-lyuks-klassa.md",
+    "src/content/tours/klassicheskaya-antarktida.md",
+    "src/content/tours/antarktida-ekspress-vozdushnyj-kruiz.md",
+    "src/content/tours/patagoniya-i-chilijskie-fordy.md",
+    "src/content/tours/amazoniya-kruiz-tukano.md",
+    "src/content/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke.md",
+    "src/content/tours/ekvador-zhivaya-priroda-s-kruizom-na-galapagosakh.md",
+    "src/content/tours/kruiznyj-tur-po-luchshim-mestam-argentiny-chili-i-bolivii.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://iaato.org/visiting-antarctica/preparing-for-your-expedition",
+      "supports": "Особенности подготовки и условий экспедиционного посещения Антарктики"
+    },
+    {
+      "url": "https://iaato.org/visiting-antarctica/visitor-briefings",
+      "supports": "Правила поведения и безопасность посещений Антарктики"
+    },
+    {
+      "url": "https://galapagos.gob.ec/sitios-de-visita/",
+      "supports": "Регулируемые места и посещения в Галапагосском национальном парке"
+    }
+  ],
+  "limitations": [
+    "VIP включение определяется алгоритмом, а не подтвержденным классом обслуживания.",
+    "Для Сан-Блас указан существенный размер цены без подтвержденной единой базы сравнения; в тексте сумма намеренно не фиксируется.",
+    "Количество программ выводится динамически.",
+    "Погодные и природоохранные условия меняют программу высадок; гарантии не даны.",
+    "Внешние ссылки отсутствуют в публичном Markdown."
+  ]
+}

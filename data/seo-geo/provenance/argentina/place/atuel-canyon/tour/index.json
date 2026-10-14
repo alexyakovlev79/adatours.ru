@@ -1,0 +1,37 @@
+{
+  "targetPath": "/argentina/place/atuel-canyon/tour/",
+  "checkedAt": "2026-10-14T15:57:23.597Z",
+  "ownerId": "seo-gpt6-amanda-20261014-recovery-chapada-and-argentina",
+  "editorialIntent": "Разъяснить возможность дополнительного посещения каньона Атуэль в единственном связанном туре и не представить факультативную опцию как включенный продукт.",
+  "questions": [
+    "Есть ли включенный тур с Атуэлем?",
+    "Как Атуэль вписан в 7-дневную гастрономическую программу?",
+    "Какая часть дня посвящена винодельням, а какая свободна?",
+    "Как расположены каньон и Сан-Рафаэль относительно Мендосы?",
+    "Какие услуги при выезде нужно согласовать отдельно?"
+  ],
+  "githubSources": [
+    "src/content/destinations/atuel-canyon.md",
+    "src/content/tours/argentina-dlya-degustatorov-khoroshej-zhizni.md",
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "data/catalog-archive.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://sanrafaelturismo.gov.ar/destino/can-del-atuel",
+      "supports": "Маршрут каньона от Эль-Ниуиль к Валье-Гранде, скальные формы, 50 км дороги RP173, дорожные рекомендации."
+    },
+    {
+      "url": "https://www.argentina.travel/actividades/canon-del-atuel",
+      "supports": "География каньона в провинции Мендоса и возможность спортивных занятий в районе реки."
+    }
+  ],
+  "dataIssue": "Тур с ID tour_source_argentina_dlya_degustatorov_khoroshej_zhizni содержит destination_argentina_kanon_atuel в destinations, но не имеет routeDestinations, а в тексте дня 6 каньон указан только как дополнительный вариант. Из-за fallback в каталоге основных туров он сейчас отображается в /argentina/place/atuel-canyon/tour/. Нужна отдельная правка классификации main-данных; статья сознательно не обещает включенное посещение.",
+  "limitations": [
+    "Туров с обязательным включенным Атуэлем в полученных активных записях не подтверждено.",
+    "Стоимость и состав факультативного выезда не придуманы.",
+    "Услуги местных операторов описаны только как возможности района, а не как включения Ada Tours.",
+    "Никаких внешних URL в публичном MD."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "targetPath": "/multi-country/",
+  "articlePath": "data/seo-geo/articles/multi-country/index.md",
+  "authoredBy": "seo-gpt6-amanda-20261014-recovery-280281292",
+  "checkedAt": "2026-10-14",
+  "editorialIntent": "Выбор действующих многострановых маршрутов по связкам стран, пограничной логистике, распределению ночей, климатическим пересечениям, нагрузке и фактическим условиям; не повторяет общую статью /tours/ и путеводители стран.",
+  "repositorySources": [
+    "src/pages/multi-country/index.astro",
+    "src/lib/routes.ts",
+    "data/source-index/catalogs/tours.json",
+    "data/catalog-archive.json",
+    "src/content/tours/mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej.md",
+    "src/content/tours/brazil-argentina-peru-14d.md",
+    "src/content/tours/argentina-chili-i-prekrasnaya-patagoniya.md",
+    "src/content/tours/vinnyj-tur-v-argentinu-i-chili.md",
+    "src/content/tours/argentina-chili-boliviya.md",
+    "src/content/tours/otbleski-tsentralnoj-ameriki-v-5-stranakh.md",
+    "src/content/tours/5-stran-latinskoj-ameriki.md",
+    "src/data/catalog/destinations.json",
+    "data/seo-geo/articles/tours/index.md",
+    "data/seo-geo/articles/brazil/index.md"
+  ],
+  "independentSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/303",
+      "publisher": "UNESCO World Heritage Centre",
+      "checkedAt": "2026-10-14",
+      "supports": "Единая природная система водопадов Игуасу на границе Аргентины и Бразилии"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/355",
+      "publisher": "UNESCO World Heritage Centre",
+      "checkedAt": "2026-10-14",
+      "supports": "Бразильский национальный парк Игуасу, сопредельный аргентинскому"
+    },
+    {
+      "url": "https://www.visitcostarica.com/planning-your-trip/climate",
+      "publisher": "Costa Rica Tourism Board",
+      "checkedAt": "2026-10-14",
+      "supports": "Различия климатических сезонов Тихоокеанского и Карибского побережий"
+    },
+    {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/parna-dos-lencois-maranhenses",
+      "publisher": "ICMBio",
+      "checkedAt": "2026-10-14",
+      "supports": "Природная сезонность дюн и лагун Ленсойс-Мараньенсес"
+    }
+  ],
+  "editorialNotes": "В публичной статье только подтвержденные внутренние URL. Динамическое число туров через catalog.toursCountPhrase. Не фиксируются цены и визовые требования. Важна разница routeCountries/countries."
+}

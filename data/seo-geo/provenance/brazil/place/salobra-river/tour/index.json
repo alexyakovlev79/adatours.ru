@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "targetPath": "/brazil/place/salobra-river/tour/",
+  "articlePath": "data/seo-geo/articles/brazil/place/salobra-river/tour/index.md",
+  "researchedAt": "2026-10-14",
+  "editorialIntent": "Buyer comparison of three tours whose main itinerary visits Rio Salobra: 5-day jaguar Pantanal, 8-day Pantanal+Rio, 8-day three ecosystems, snorkeling and practical conditions. Distinct from river destination encyclopedia and excursion detail.",
+  "repositorySources": [
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/excursions.json",
+    "src/data/catalog/destinations.json",
+    "data/catalog-archive.json",
+    "src/content/destinations/salobra-river.md",
+    "src/content/tours/severnyj-pantanal-vodopady-reki.md",
+    "src/content/tours/severnyj-pantanal-vodopady-reki-i-rio-de-zhanejro.md",
+    "src/content/tours/brazil-three-ecosystems-8-days.md",
+    "src/content/excursions/bom-jardim-aquario-salobra-snorkeling.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/",
+      "checkedAt": "2026-10-14",
+      "supports": "Aquário Encantado and Rio Salobra: floating with snorkel and guide, safety, visitor capacity, limestone geology, local booking requirements"
+    },
+    {
+      "url": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Reino-encantado--15",
+      "checkedAt": "2026-10-14",
+      "supports": "Rio Salobra snorkeling and local environmental measures"
+    },
+    {
+      "url": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Refugio-das-aguas-14",
+      "checkedAt": "2026-10-14",
+      "supports": "Rio Salobra guided floating and local access arrangements"
+    }
+  ],
+  "constraints": [
+    "Only active tour IDs in source-index used and no archive recommendations",
+    "Dynamic catalog count, no stale price promises",
+    "Public Markdown contains only internal canonical URLs",
+    "Two-column phone-friendly comparison table",
+    "Do not turn local attraction rules into Ada Tours inclusions"
+  ]
+}

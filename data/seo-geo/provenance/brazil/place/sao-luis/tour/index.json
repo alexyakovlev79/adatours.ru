@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "targetPath": "/brazil/place/sao-luis/tour/",
+  "checkedAt": "2026-10-14",
+  "ownerId": "seo-gpt6-amanda-writer-20261014T154055704Z",
+  "batchId": "seo-batch-348-413-414-20261014T154055704Z",
+  "editorialIntent": "Сравнить действующие туры с обязательным Сан-Луисом по продолжительности, плотности посещения Ленсойс-Мараньенсес, трансферам и экскурсиям. Отличить каталог выбора маршрута от энциклопедической страницы города.",
+  "questions": [
+    "Какие активные программы проходят через Сан-Луис?",
+    "Сколько дней в Мараньяне, какие районы дюн и речные экскурсии?",
+    "Чем отличается короткий тур от больших туров с Игуасу, Амазонией, Пантаналом?",
+    "Какие перелеты, трансферы, экскурсии входят и какие дополнительные?",
+    "В какой сезон выше вероятность увидеть наполненные лагуны?"
+  ],
+  "githubSources": [
+    "src/content/destinations/sao-luis.md",
+    "src/content/tours/lensojs-maranenses.md",
+    "src/content/tours/pantanal-bonito-lencois-8d.md",
+    "src/content/tours/brazil-dunes-13d.md",
+    "src/content/tours/udivitelnaya-braziliya.md",
+    "src/content/tours/brazil-adventure-17d.md",
+    "data/source-index/catalogs/tours.json",
+    "data/source-index/catalogs/destinations.json",
+    "data/source-index/catalogs/excursions.json",
+    "data/catalog-archive.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/821",
+      "supports": "Сан-Луис: ЮНЕСКО, 1997 год, архитектура и происхождение города."
+    },
+    {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/parna-dos-lencois-maranhenses/paginas-site-parna-dos-lencois-maranhenses-ma/barreirinhas",
+      "supports": "Баррейриньяс как точка входа в парк; лагуны зависят от дождей."
+    },
+    {
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/parna-dos-lencois-maranhenses/paginas-site-parna-dos-lencois-maranhenses-ma/orientacoes-ao-visitante",
+      "supports": "Правила посещения, допущенные сопровождающие, безопасность и подготовка."
+    }
+  ],
+  "constraints": [
+    "В расчете пять подтвержденных активных туров; архивный дубль исключен.",
+    "Состав перелетов, гидов и услуг берется исключительно из текущих Tour MD.",
+    "Экскурсия по Сан-Луису не объявлена включенной во все туры.",
+    "Динамическая таблица и счетчик для активного каталога без устаревающих цифр.",
+    "Никаких внешних ссылок в публичном Markdown; источники только в provenance."
+  ]
+}

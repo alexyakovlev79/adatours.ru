@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "targetPath": "/brazil/place/paraty/tour/",
+  "checkedAt": "2026-10-14",
+  "ownerId": "seo-gpt6-amanda-20261014-20261014152031",
+  "batchId": "seo-batch-293-308-392-20261014152031",
+  "editorialIntent": "Помочь выбрать конкретный действующий Tour с обязательным Парати: сравнить ночевки, природные/культурные дни, мотоциклетный и событийный форматы, авиаперелеты и экскурсии. Не дублировать энциклопедический материал страницы места.",
+  "questions": [
+    "Какие действующие маршруты обязательно проходят через Парати?",
+    "Сколько ночей и экскурсий предусмотрено в городе?",
+    "Как различаются прибрежные, многорегиональные и мото-туры?",
+    "Когда нужен Илья-Гранди, а когда Игуасу?",
+    "Какие перелеты, трансферы и сопровождение включены?"
+  ],
+  "githubSources": [
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "data/seo-geo/registry/05-tours.json",
+    "data/catalog-archive.json",
+    "src/content/tours/brazil-sao-paulo-rio-ilha-paraty-12d.md",
+    "src/content/tours/vkusy-brazilii.md",
+    "src/content/tours/mototur-cherez-braziliyu.md",
+    "src/content/tours/na-mototsiklakh-po-brazilii.md",
+    "src/content/tours/opyt-brazilii.md",
+    "src/content/tours/tur-v-braziliyu-za-vkusami.md",
+    "src/content/tours/brazilskaya-mechta.md",
+    "src/content/tours/tur-v-braziliyu-k-mestam-sily.md",
+    "src/content/tours/carnival-flavors-rio-paraty-ilha-grande.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://whc.unesco.org/en/list/1308/",
+      "supports": "Исторический центр Парати, Золотой путь, части Серра-да-Бокайна и Атлантического леса, ЮНЕСКО 2019."
+    }
+  ],
+  "constraints": [
+    "Основные Tour.routeDestinations содержат destination_brazil_paraty; факультативные варианты не приписаны основным.",
+    "9 catalog core Tour IDs as of main check; dynamic count rendered from live catalog at build.",
+    "Tour-specific format, price, language, day count and included services grounded only in Tour MD.",
+    "Нет внешних ссылок в публичном HTML-материале."
+  ]
+}

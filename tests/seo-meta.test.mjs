@@ -157,8 +157,9 @@ import { collectSeoPagePrices, enrichSeoPriceMetadata } from '../src/lib/seo-pri
 
 const moneyText = (text) => text.replaceAll('\u00a0', ' ');
 const seoRoot = 'https://adatours.ru/';
-const pricedRecord = (kind, id, path, priceFrom, currency = 'USD', archived = false) =>
-  ({ kind, path, archived, data: { id, status: 'approved', priceFrom, currency } });
+const pricedRecord = (kind, id, path, priceFrom, currency = 'USD', archived = false, routeCountries = []) =>
+  ({ kind, path, archived, data: { id, status: 'approved', priceFrom, currency, routeCountries, countries: routeCountries,
+    slug: kind === 'country' ? path.split('/').filter(Boolean)[0] : undefined } });
 
 test('SEO: no quotation means no change even when price claim exists', () => {
   const original = { title: 'Купить по лучшей цене', description: 'Выбирайте по выгодным ценам.' };
@@ -182,15 +183,15 @@ test('SEO: one real price appears without от beside a price claim', () => {
 
 test('SEO: multiple priced products use от and a real minimum', () => {
   const records = [
-    pricedRecord('tour', 'a', '/brazil/tour/a/', 2600),
-    pricedRecord('tour', 'b', '/brazil/tour/b/', 1500),
-    pricedRecord('tour', 'archived', '/brazil/tour/archived/', 2, 'USD', true),
-    pricedRecord('tour', 'unpriced', '/brazil/tour/unpriced/', null),
+    pricedRecord('tour', 'a', '/brazil/tour/a/', 2600, 'USD', false, ['country_brazil']),
+    pricedRecord('tour', 'b', '/brazil/tour/b/', 1500, 'USD', false, ['country_brazil']),
+    pricedRecord('tour', 'archived', '/brazil/tour/archived/', 2, 'USD', true, ['country_brazil']),
+    pricedRecord('tour', 'unpriced', '/brazil/tour/unpriced/', null, 'USD', false, ['country_brazil']),
     pricedRecord('excursion', 'exc', '/brazil/excursion/exc/', 30),
   ];
   const links = records.map((r) => ({ href: r.path }));
   const prices = collectSeoPagePrices({ root: seoRoot, path: '/brazil/',
-    records: [pricedRecord('country', 'br', '/brazil/', null), ...records],
+    records: [pricedRecord('country', 'country_brazil', '/brazil/', null), ...records],
     groups: [{ links: [...links, links[1]] }] });
   assert.deepEqual(prices.map((r) => r.id), ['a', 'b']);
   const output = enrichSeoPriceMetadata({ title: 'Туры по лучшей цене в Бразилию',
@@ -199,15 +200,17 @@ test('SEO: multiple priced products use от and a real minimum', () => {
   assert.equal(moneyText(output.description), 'Туры по лучшим ценам от $1 500 и каталоги.');
 });
 
-test('SEO: different currencies retain their own minimum without FX conversion', () => {
+test('SEO: mixed currencies do not change original SEO wording', () => {
   const prices = [
     { id: 'usd', kind: 'tour', currency: 'USD', amount: 2000 },
     { id: 'eur', kind: 'tour', currency: 'EUR', amount: 900 },
   ];
   const output = enrichSeoPriceMetadata({ title: 'VIP по выгодным ценам',
     description: 'Каталог и цены 2026-2027', prices });
-  assert.equal(moneyText(output.title), 'VIP по выгодным ценам от $2 000 и от €900');
-  assert.equal(moneyText(output.description), 'Каталог и цены от $2 000 и от €900 2026-2027');
+  assert.equal(output.changed, false);
+  assert.equal(output.quote, null);
+  assert.equal(output.title, 'VIP по выгодным ценам');
+  assert.equal(output.description, 'Каталог и цены 2026-2027');
 });
 
 test('SEO: absent price wording means metadata stays unchanged', () => {
@@ -225,12 +228,58 @@ test('SEO: an already displayed price is not repeated in the title', () => {
   assert.equal(output.changed, false);
 });
 
-test('SEO: detail price must actually be visible; catalogs use only rendered links', () => {
+test('SEO: detail price must be visible; full catalog is independent of rendered links', () => {
   const own = pricedRecord('excursion', 'e', '/brazil/excursion/e/', 70);
   const other = pricedRecord('excursion', 'f', '/brazil/excursion/f/', 80);
   const records = [own, other];
   assert.equal(collectSeoPagePrices({ records, root: seoRoot, path: own.path, priceVisible: false }).length, 0);
   assert.deepEqual(collectSeoPagePrices({ records, root: seoRoot, path: own.path, priceVisible: true }).map((v) => v.amount), [70]);
   assert.deepEqual(collectSeoPagePrices({ records, root: seoRoot, path: '/excursions/',
-    groups: [{ links: [{ href: other.path }] }] }).map((v) => v.id), ['f']);
+    groups: [{ links: [{ href: other.path }] }] }).map((v) => v.id), ['e', 'f']);
+});
+
+
+test('SEO: prices across all Brazil tour pages use one full-country minimum', () => {
+  const rows = [
+    pricedRecord('country', 'country_brazil', '/brazil/', null),
+    pricedRecord('tour', 'high', '/brazil/tour/high/', 5900, 'USD', false, ['country_brazil']),
+    pricedRecord('tour', 'low', '/brazil/tour/low/', 950, 'USD', false, ['country_brazil']),
+    pricedRecord('tour', 'other-country', '/peru/tour/a/', 50, 'USD', false, ['country_peru']),
+  ];
+  const first = collectSeoPagePrices({ records: rows, root: seoRoot, path: '/brazil/tour/',
+    groups: [{ links: [{ href: rows[1].path }] }] });
+  const second = collectSeoPagePrices({ records: rows, root: seoRoot, path: '/brazil/tour/page/2/',
+    groups: [{ links: [{ href: rows[2].path }] }] });
+  assert.deepEqual(first, second);
+  assert.deepEqual(first.map((r) => r.id), ['high', 'low']);
+  const quote = enrichSeoPriceMetadata({ title: 'Купить в Бразилию по лучшей цене',
+    description: 'Каталог и цены.', prices: second });
+  assert.match(moneyText(quote.title), /по лучшей цене от \$950/);
+  assert.match(moneyText(quote.description), /цены от \$950/);
+});
+
+test('SEO: home uses full catalog and optional destination tours remain in the calculation', () => {
+  const rows = [
+    pricedRecord('destination', 'd', '/brazil/place/rio/', null),
+    { ...pricedRecord('tour', 'main', '/brazil/tour/main/', 3500), data: {
+      id: 'main', status: 'approved', priceFrom: 3500, currency: 'USD',
+      destinations: ['d'], routeDestinations: ['d'],
+    }},
+    { ...pricedRecord('tour', 'optional', '/brazil/tour/optional/', 1400), data: {
+      id: 'optional', status: 'approved', priceFrom: 1400, currency: 'USD',
+      destinations: ['d'], routeDestinations: [],
+    }},
+  ];
+  assert.deepEqual(collectSeoPagePrices({ records: rows, root: seoRoot, path: '/',
+    groups: [] }).map((r) => r.id), ['main','optional']);
+  assert.deepEqual(collectSeoPagePrices({ records: rows, root: seoRoot, path: '/brazil/place/rio/',
+    groups: [] }).map((r) => r.id), ['main','optional']);
+});
+
+test('SEO: a single price uses singular wording without от', () => {
+  const result = enrichSeoPriceMetadata({ title: 'По лучшим ценам',
+    description: 'Каталог и цены 2026-2027',
+    prices: [{ id: 'one', kind: 'tour', currency: 'USD', amount: 1350 }] });
+  assert.equal(moneyText(result.title), 'По лучшей цене $1 350');
+  assert.equal(moneyText(result.description), 'Каталог и цена $1 350 2026-2027');
 });

@@ -3,7 +3,7 @@ import { selectVipTours } from './vip-tours.mjs';
 
 const CURRENCY_PREFIX = { USD: '$', EUR: '€', BRL: 'R$', ARS: 'ARS ' };
 const CURRENCY_ORDER = ['USD', 'EUR', 'RUB', 'BRL', 'ARS'];
-const PRICE_CLAIM = /(?<!\p{L})(?:по\s+лучшей\s+цене|по\s+лучшим\s+ценам|по\s+выгодным\s+ценам|по\s+цене|цены|цена|стоимость)(?!\p{L})/iu;
+const PRICE_CLAIM = /(?<!\p{L})(?:по\s+лучшей\s+цене|по\s+лучшим\s+ценам|по\s+выгодным\s+ценам|по\s+выгодной\s+цене|лучшие\s+цены|по\s+цене|цены|цена|стоимость|стоимости)(?!\p{L})/iu;
 const INLINE_AMOUNT = /^\s*(?:[:—–-]\s*)?(?:(?:от|до)\s+)?(?:R\$|\$|€|₽|ARS\s+\d|\d[\d\s\u00a0.,]*\s*(?:USD|EUR|RUB|BRL|ARS))/iu;
 
 function priceOf(record) {
@@ -46,10 +46,11 @@ export function collectSeoPagePrices({ records, root, path, groups = [], priceVi
   const mainDestinations = (r) => r.data.routeDestinations ?? r.data.destinations ?? [];
   const allThemes = (r) => [...(r.data.primaryThemes ?? []), ...(r.data.themes ?? [])];
   const referencesExcursion = (r, id) => (r.data.itinerary ?? []).some((day) =>
-    day.excursionRef === id || (day.contentBlocks ?? []).some((block) => block.excursionRef === id));
+    day.excursionRef === id || (day.contentBlocks ?? []).some((block) => block.excursionRef === id))
+    || (r.data.contentBlocks ?? []).some((block) => block.excursionRef === id);
   let fullSelection;
   let m;
-  if (canonical === '/tours/') fullSelection = tours;
+  if (canonical === '/' || canonical === '/tours/') fullSelection = tours;
   else if (canonical === '/excursions/') fullSelection = excursions;
   else if (canonical === '/vip/') fullSelection = selectVipTours(tours).entries;
   else if (canonical === '/multi-country/') fullSelection = tours.filter((r) => mainCountries(r).length > 1);
@@ -77,9 +78,10 @@ export function collectSeoPagePrices({ records, root, path, groups = [], priceVi
       (!theme || allThemes(r).includes(theme.data.id)));
   } else if ((m = canonical.match(/^\/([^/]+)\/excursion\/$/))) {
     const country = countryBySlug(m[1]);
-    if (country) fullSelection = excursions.filter((r) =>
-      r.data.country === country.data.id || destinations.some((d) =>
-        d.data.countryId === country.data.id && d.data.id === r.data.destination));
+    if (country) fullSelection = excursions.filter((r) => {
+      const destination = destinations.find((d) => d.data.id === r.data.destination);
+      return (destination?.data.countryId ?? r.data.country) === country.data.id;
+    });
   } else if ((m = canonical.match(/^\/([^/]+)\/([^/]+)\/$/))) {
     const country = countryBySlug(m[1]);
     const destination = destinationBySlug(m[2], country);
@@ -92,7 +94,7 @@ export function collectSeoPagePrices({ records, root, path, groups = [], priceVi
   if (current?.kind === 'country') fullSelection = tours.filter((r) =>
     mainCountries(r).includes(current.data.id));
   if (current?.kind === 'destination') fullSelection = tours.filter((r) =>
-    mainDestinations(r).includes(current.data.id));
+    (r.data.destinations ?? []).includes(current.data.id));
   const prices = new Map();
   if (fullSelection) {
     for (const record of fullSelection) {
@@ -156,8 +158,15 @@ function attachAmount(text, quote) {
   if (INLINE_AMOUNT.test(tail)) return text;
   const sameClause = tail.split(/[.!?]/, 1)[0].slice(0, 100);
   if (/(?:R\$|\$|€|₽)\s*\d|\d[\d\s\u00a0.,]*\s*(?:USD|EUR|RUB|BRL|ARS)(?!\p{L})/iu.test(sameClause)) return text;
-  const punctuation = /^цены$/iu.test(match[0]) && !quote.multiple ? ': ' : ' ';
-  return text.slice(0, match.index + match[0].length) + punctuation + quote.suffix + tail;
+  let wording = match[0];
+  if (!quote.multiple) {
+    wording = wording.replace(/лучшим\s+ценам$/iu, 'лучшей цене')
+      .replace(/выгодным\s+ценам$/iu, 'выгодной цене')
+      .replace(/^лучшие\s+цены$/iu, 'лучшая цена')
+      .replace(/^цены$/iu, 'цена');
+    if (/^\p{Lu}/u.test(match[0])) wording = wording[0].toLocaleUpperCase('ru') + wording.slice(1);
+  }
+  return text.slice(0, match.index) + wording + ' ' + quote.suffix + tail;
 }
 
 export function enrichSeoPriceMetadata({ title, description, prices, preferredKind }) {

@@ -44,7 +44,7 @@ export function buildMultiCountryCombinations(tours, countriesForTour) {
       add(size, 0, []);
     }
   }
-  return [...results.values()].sort((a, b) => a.path.localeCompare(b.path, 'en'));
+  return [...results.values()].sort((a, b) => a.slugs.join('_').localeCompare(b.slugs.join('_'), 'en'));
 }
 
 export function nextMultiCountryOptions(combinations, selected) {

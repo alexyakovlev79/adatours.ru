@@ -165,6 +165,7 @@ async function ensureObject(photo, logoSvg) {
   }
   if (head.status !== 403 && head.status !== 404)
     throw new Error('Social image HEAD: ' + head.status + ' ' + key);
+  if (!TOKEN) throw new Error('Social preview missing, and YC_IAM_TOKEN unavailable: ' + key);
   const bytes = await renderPreview(await photoBytes(photo), logoSvg);
   const checksum = sha(bytes);
   const put = await request(STORAGE_ORIGIN + '/' + encoded, {
@@ -197,9 +198,11 @@ async function htmlFiles(root, files = []) {
 
 async function main() {
   if (!TOKEN) {
-    if (REQUIRED) throw new Error('SOCIAL_PREVIEW_REQUIRED set but YC_IAM_TOKEN missing');
-    console.log('Social previews: CI/local mode without upload token; publishing skipped.');
-    return;
+    if (!REQUIRED) {
+      console.log('Social previews: CI/local mode without upload token; publishing skipped.');
+      return;
+    }
+    console.warn('Social previews: no IAM token; checking existing S3 previews in strict reuse-only mode.');
   }
   const logo = await fs.readFile('public/brand/adatours-logo-white.svg');
   const pages = [];

@@ -1,0 +1,55 @@
+{
+  "targetPath": "/vip/peru/",
+  "checkedAt": "2026-10-14T14:43:59.311Z",
+  "ownerId": "seo-gpt6-amanda-20261014-303-304-305-s",
+  "editorialIntent": "Сравнение подтвердившихся VIP-маршрутов через Перу, 8-дневного и 18-дневных путешествий, фактических отелей, поездов и форматов экскурсий. Отдельно объяснить ограничения посещения Мачу-Пикчу, влияние высоты и сезонов.",
+  "questions": [
+    "Чем различаются 8- и 18-дневные VIP-туры?",
+    "Какие условия размещения и сопровождения подтверждены?",
+    "Что нужно знать о контуре посещения Мачу-Пикчу?",
+    "Какие поезд и круиз входят в конкретные программы?",
+    "Как выбирать сезон и учитывать высоту?"
+  ],
+  "githubSources": [
+    "src/lib/vip-tours.mjs",
+    "src/lib/vip-filters.mjs",
+    "src/pages/vip/[...country].astro",
+    "src/content/countries/peru.md",
+    "data/catalog-archive.json",
+    {
+      "path": "src/content/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej.md",
+      "blobSha": "f0fcaccea9853fff0d789b51f1924324a6dc542c"
+    },
+    {
+      "path": "src/content/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke.md",
+      "blobSha": "91eca5071fcd1aa5c951d3c700c7cac4eab52c45"
+    },
+    {
+      "path": "src/content/tours/lyuksovyj-tur-v-peru-i-ehkvador-s-galapagosami-na-18-dnej.md",
+      "blobSha": "41c1230fbe4de3164ac74e6b0d5e35170585a7a8"
+    }
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.machupicchu.gob.pe/circuitos-y-rutas-de-visita/",
+      "supports": "Три контура и десять отдельных маршрутов посещения Мачу-Пикчу."
+    },
+    {
+      "url": "https://www.machupicchu.gob.pe/boletos-de-ingreso-online/",
+      "supports": "Отдельная государственная система покупки входных билетов."
+    },
+    {
+      "url": "https://www.peru.travel/es/inspirate/cual-es-la-mejor-epoca-para-visitar-machupicchu-y-sus-alrededores",
+      "supports": "Сухой сезон Куско и Мачу-Пикчу примерно апрель-сентябрь."
+    },
+    {
+      "url": "https://www.peru.travel/es/datos-utiles/clima",
+      "supports": "Три климатические зоны Перу и различие сезонов побережья, Анд и Амазонии."
+    }
+  ],
+  "limitations": [
+    "Публичный HTTP-срез не является источником коммерческих обещаний; использованы актуальные Tour MD в main.",
+    "VIP-отбор основан на названии и ранжировании по ценовым характеристикам; гарантии для всей категории не утверждаются.",
+    "Счетчики выводятся динамически; внешние ссылки только в непубличном provenance, в статье только внутренние URL."
+  ]
+}

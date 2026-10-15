@@ -307,9 +307,9 @@ priceNote: $5330.
 durationDays: 11
 durationNights: 10
 hero:
-  src: /media/tours/chudesa-gvatemaly-beliza/itinerary-day-1-images-1-enhanced-20261006.webp
-  hover: "Гватемала-Сити: городская застройка перед цепью вулканических вершин"
-  alt: "Городские кварталы и высотные дома на фоне вулканов в Гватемала-Сити, Гватемала"
+  src: /media/tours/gvatemala-gonduras-el-salvador-beliz/hero-tikal-generated-20261015-v1.webp
+  hover: "Тикаль: храмы майя над тропическим лесом в утреннем свете"
+  alt: "Каменные храмы Тикаля возвышаются над туманными джунглями Петена, Гватемала"
 routeCountries:
 - country_guatemala
 - country_honduras

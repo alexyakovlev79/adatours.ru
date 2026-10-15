@@ -1,4 +1,5 @@
 ---
+import catalogHeroOverrides from '../data/media/catalog-hero-overrides.json';
 import { countLabel, countryMembership } from '../lib/interest-model.mjs';
 import { seoPaginatedTitle } from '../lib/seo-page.mjs';
 import type { CollectionEntry } from 'astro:content';
@@ -42,7 +43,10 @@ interface Props {
   variant?: 'global-tours' | 'global-places' | 'global-excursions' | 'multi-country-tours' | 'vip-tours' | 'vip-country-tours';
 }
 
-const { leadTitle, leadEntityId, kind, entries, title, h1Title = title, description, canonical, breadcrumbs, hero, pagination: p, catalogVersion, variant, countryContextId, themeContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
+const { leadTitle, leadEntityId, kind, entries, title, h1Title = title, description, canonical, breadcrumbs, hero: defaultHero, pagination: p, catalogVersion, variant, countryContextId, themeContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
+// Catalogue covers are page-specific, including pagination, and never alter card images.
+const heroOverrides: Record<string, { src: string }> = catalogHeroOverrides.covers;
+const hero = heroOverrides[canonical]?.src ?? defaultHero;
 const isThemeCountryCatalog = kind === 'tour' && /^\/interests\/[^/]+\/tours\/[^/]+\/$/.test(p.rootPath);
 const isVipCatalog = variant === 'vip-tours' || variant === 'vip-country-tours';
 const showTourFilters = kind === 'tour' && (isVipCatalog || variant === 'global-tours'

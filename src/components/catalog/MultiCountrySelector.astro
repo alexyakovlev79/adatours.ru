@@ -46,7 +46,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
         <label class="mc-picker__visually-hidden" for={'mc-country-' + (step.index + 1)}>{descriptions[step.index]}</label>
         <div class="mc-picker__control">
           <div class="mc-picker__select-wrap">
-            <select id={'mc-country-' + (step.index + 1)} data-mc-select={step.index} autocomplete="off">
+            <select class={step.value ? undefined : 'mc-picker__select--placeholder'} id={'mc-country-' + (step.index + 1)} data-mc-select={step.index} autocomplete="off">
               <option value="">{descriptions[step.index]}</option>
               {step.options.map((country) => (
                 <option value={country.slug} selected={step.value === country.slug}>{country.name}</option>
@@ -71,7 +71,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   </div>
   {selected.length > 0 && (
     <a class="mc-picker__reset" href={withBase('/multi-country/')} data-mc-reset>
-      Сбросить выбор и показать все туры
+      Сбросить и показать все мультистрановые туры
     </a>
   )}
 
@@ -138,9 +138,13 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     font-size: 1.1rem;
     cursor: pointer;
   }
+  .mc-picker__field select.mc-picker__select--placeholder {
+    color: color-mix(in srgb, var(--color-ink) 55%, var(--color-bg));
+  }
+  .mc-picker__field select option { color: var(--color-ink); }
   .mc-picker__field select:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
   .mc-picker__remove {
-    display: none;
+    display: flex;
     flex: 0 0 44px;
     width: 44px;
     height: 52px;
@@ -196,7 +200,6 @@ const descriptions = ['Первая страна', 'Вторая страна', 
       pointer-events: none;
       color: var(--color-ink);
     }
-    .mc-picker__remove:not([hidden]) { display: flex; }
     .mc-picker__reset { width: min(100%, 480px); font-size: .9rem; }
   }
 </style>

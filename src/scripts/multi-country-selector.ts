@@ -78,6 +78,7 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
       } else if (value) {
         selected = selected.slice(0, index);
       }
+      select.classList.toggle('mc-picker__select--placeholder', !select.value);
       fields[index].hidden = index > 0 && options.length === 0;
     }
     for (const button of removeButtons) {

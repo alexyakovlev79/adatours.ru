@@ -468,29 +468,34 @@
       "linked2027ProgramKey": null,
       "method": "full_docx_read_and_catalog_reconciliation_new_product",
       "note": "Создан отдельный групповой тур на 12 дней. VIP-тур отличается длительностью, Священной долиной и перелетом Пуно — Куско. Основной Word 1pCkFaciSHySvIMHJeQEP6SIJ4l8Hhgn8: DBL $7040 / SGL $8175; старая копия 500 USD дает $9520 / $11280 и лишние города в included, не использована для цены.",
-      "candidates": [
+      "work": {
+        "state": "done",
+        "updatedAt": "2026-10-15",
+        "entityId": "tour_chile_bolivia_peru_group_12_days_2026",
+        "note": "Полный Word перенесен; 12 дней, 6 новых мест, 3 новые экскурсии, 11 экскурсионных связей. Deploy success; Google Sheets проверены чтением.",
+        "commit": "5382c94184e0270f25a78a26db6f518a121fe802",
+        "workflowUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38776871912"
+      },
+      "contentReview": {
+        "state": "done",
+        "updatedAt": "2026-10-15",
+        "note": "Полная сверка Word, успешный deploy и реестры завершены."
+      },
+      "rejectedCandidates": [
         {
           "entityId": "tour_source_karnaval_5_stran",
           "name": "Лучшие достопримечательности 5 стран Латинской Америки за 19 дней",
           "url": "https://adatours.ru/multi-country/tour/latin-america-5-countries-carnival-private-tour/",
-          "reason": "Кандидат по лексике/географии; соответствие НЕ подтверждено."
+          "reason": "Проверено 15.10.2026: другая длительность, состав маршрута или формат; точной парой Y26-004 не является."
         },
         {
           "entityId": "tour_source_vip_tur_v_peru",
           "name": "VIP тур в Чили, Боливию и Перу",
           "url": "https://adatours.ru/multi-country/tour/chile-bolivia-peru-vip/",
-          "reason": "Кандидат по лексике/географии; соответствие НЕ подтверждено."
+          "reason": "Проверено 15.10.2026: другая длительность, состав маршрута или формат; точной парой Y26-004 не является."
         }
       ],
-      "work": {
-        "state": "not_requested",
-        "note": "Только инвентаризация. Не означает сверку содержания, актуализацию или публикацию."
-      },
-      "contentReview": {
-        "state": "reviewed",
-        "updatedAt": "2026-10-15",
-        "note": "Полный Word перенесен; статус успешной публикации и таблиц подтверждается отдельно после deploy."
-      }
+      "candidates": []
     },
     {
       "key": "Y26-005",
@@ -18247,7 +18252,6 @@
         "Установлена только идентичность программы; цены, услуги и даты не сверялись. Содержание подлежит отдельной последующей сверке с Word 2026."
       ],
       "unconfirmed2026Candidates": [
-        "Y26-004: Chile Bolivia Peru 31.10-11.11.2026 20% .docx",
         "Y26-007: 8 countries 22.10-22.11.2026 500 USD (1).docx",
         "Y26-008: 6 countries 23.10-11.11.2026 500 USD (1).docx",
         "Y26-017: Great South America VIP 2025 20_.docx",
@@ -29606,7 +29610,7 @@
       "contentPath": "src/content/tours/chile-bolivia-peru-group-12-days.md",
       "hasPublishedPage": true,
       "status": "active",
-      "sheetRow": null,
+      "sheetRow": 391,
       "group": "Только 2026 — сверено",
       "sources2027": [],
       "sheet2027Label": "",
@@ -29671,8 +29675,14 @@
         "Создан отдельный групповой тур на 12 дней. VIP-тур отличается длительностью, Священной долиной и перелетом Пуно — Куско. Основной Word 1pCkFaciSHySvIMHJeQEP6SIJ4l8Hhgn8: DBL $7040 / SGL $8175; старая копия 500 USD дает $9520 / $11280 и лишние города в included, не использована для цены."
       ],
       "unconfirmed2026Candidates": [],
-      "action": "Полная публикация по Word 2026",
-      "contentCompared": true
+      "action": "Готово — опубликовано и сверено",
+      "contentCompared": true,
+      "publication": {
+        "commit": "5382c94184e0270f25a78a26db6f518a121fe802",
+        "workflowUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38776871912",
+        "deployConclusion": "success",
+        "registrySyncedAt": "2026-10-15T17:44:40.335169+00:00"
+      }
     },
     {
       "entityId": "tour_south_america_eight_countries_32_days_2026",

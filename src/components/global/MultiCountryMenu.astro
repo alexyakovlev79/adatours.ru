@@ -31,6 +31,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
         class="mc-menu__country"
         type="button"
         data-mc-menu-country={country.slug}
+        data-mc-menu-country-name={country.name}
         aria-label={'Сочетания с ' + country.name}
       >
         <span class="mc-menu__country-name">
@@ -199,12 +200,21 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     outline-offset: 3px;
   }
   @media (max-width: 1240px) {
+    /* Same compact row spacing and type scale as the mobile VIP submenu. */
     .mc-menu__country {
-      min-height: 62px;
-      font-size: clamp(1.02rem, 4vw, 1.34rem);
+      min-height: 0;
+      padding: 13px 0;
+      font-size: clamp(1.08rem, 4vw, 1.55rem);
+      line-height: 1.15;
     }
-    .mc-menu__combination a { font-size: clamp(1rem, 4vw, 1.25rem); }
-    .mc-menu__arrow { font-size: 1.35rem; }
+    .mc-menu__combination a {
+      padding: 13px 0;
+      font-size: clamp(1.08rem, 4vw, 1.55rem);
+      line-height: 1.15;
+    }
+    .mc-menu__heading { margin: 10px 0 6px; }
+    .mc-menu__arrow { flex-basis: 16px; font-size: 1.35rem; }
+    .mc-menu__expand { flex-basis: 30px; }
     .mc-menu__all { font-size: 1.04rem; }
   }
 </style>

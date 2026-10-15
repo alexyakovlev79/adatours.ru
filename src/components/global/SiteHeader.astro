@@ -331,8 +331,24 @@ const nestedGroups = NAV_LINKS
       });
     });
 
+    // Multi-country has up to four nested levels within one submenu panel.
+    // Its visible mobile Back button must pop that stack before returning to
+    // the site's main menu.
+    const popMultiCountryLevel = (): boolean => {
+      if (activeSubmenu !== 'multi-country') return false;
+      const nested = menu.querySelector<HTMLElement>(
+        '[data-mobile-panel="multi-country"] [data-mc-menu][data-mc-selected]'
+      );
+      if (!nested) return false;
+      const back = nested.querySelector<HTMLButtonElement>('[data-mc-menu-back]');
+      if (!back) return false;
+      back.click();
+      return true;
+    };
+
     backButtons.forEach((button) => {
       button.addEventListener('click', () => {
+        if (popMultiCountryLevel()) return;
         const opener = submenuOpener;
         setSubmenu('');
         requestAnimationFrame(() => opener?.focus());
@@ -358,6 +374,7 @@ const nestedGroups = NAV_LINKS
       if (event.key !== 'Escape') return;
 
       if (activeSubmenu) {
+        if (popMultiCountryLevel()) return;
         const opener = submenuOpener;
         setSubmenu('');
         requestAnimationFrame(() => opener?.focus());
@@ -847,6 +864,11 @@ const nestedGroups = NAV_LINKS
 
     .mobile-menu__panel[data-mobile-panel='multi-country'] {
       gap: 14px;
+    }
+
+    /* One Back button on mobile; the header button pops menu levels. */
+    .mobile-menu__panel[data-mobile-panel='multi-country'] :global(.mc-menu__back) {
+      display: none;
     }
 
     .mobile-menu__contact {

@@ -5,6 +5,8 @@ import {
   multiCountryCombinationKey,
   multiCountryCombinationPath,
   nextMultiCountryOptions,
+  extendMultiCountrySelection,
+  previousMultiCountrySelection,
 } from '../src/lib/multi-country-combinations.mjs';
 
 const codes = Object.fromEntries(['argentina', 'brazil', 'chile', 'peru', 'uruguay']
@@ -42,4 +44,21 @@ test('fourth selector appears only where a fourth main country exists, even on l
   assert.throws(() => multiCountryCombinationKey(['argentina']));
   assert.throws(() => multiCountryCombinationKey(['argentina', 'argentina']));
   assert.throws(() => multiCountryCombinationKey(['argentina', 'brazil', 'chile', 'peru', 'uruguay']));
+});
+
+
+test('mobile back returns one level through the visitor choice order', () => {
+  const first = ['brazil'];
+  const pair = extendMultiCountrySelection(first, ['argentina', 'brazil']);
+  const triple = extendMultiCountrySelection(pair, ['argentina', 'brazil', 'chile']);
+  const quadruple = extendMultiCountrySelection(triple, ['argentina', 'brazil', 'chile', 'peru']);
+  assert.deepEqual(pair, ['brazil', 'argentina']);
+  assert.deepEqual(triple, ['brazil', 'argentina', 'chile']);
+  assert.deepEqual(quadruple, ['brazil', 'argentina', 'chile', 'peru']);
+  assert.deepEqual(previousMultiCountrySelection(quadruple), triple);
+  assert.deepEqual(previousMultiCountrySelection(triple), pair);
+  assert.deepEqual(previousMultiCountrySelection(pair), first);
+  assert.deepEqual(previousMultiCountrySelection(first), []);
+  assert.throws(() => extendMultiCountrySelection(first, ['brazil', 'brazil']));
+  assert.throws(() => extendMultiCountrySelection(pair, ['argentina', 'chile']));
 });

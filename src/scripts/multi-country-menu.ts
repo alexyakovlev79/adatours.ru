@@ -1,5 +1,8 @@
 // Actual hrefs for every 2-4 country combination remain in the rendered header.
 // JS changes the displayed level, without creating URL links dynamically.
+import {
+  extendMultiCountrySelection, previousMultiCountrySelection,
+} from '../lib/multi-country-combinations.mjs';
 const menuInstances = [...document.querySelectorAll<HTMLElement>('[data-mc-menu]')];
 const linkSource = menuInstances.map((item) => item.querySelector<HTMLElement>('[data-mc-menu-combinations][data-mc-menu-source]'))
   .find((nav) => nav && nav.children.length > 0);
@@ -7,7 +10,7 @@ for (const menu of menuInstances) {
   const countries = [...menu.querySelectorAll<HTMLButtonElement>('[data-mc-menu-country]')];
   const names = new Map(countries.map((button) => [
     button.dataset.mcMenuCountry ?? '',
-    button.querySelector('.mc-menu__country-name')?.textContent?.trim() ?? '',
+    button.dataset.mcMenuCountryName ?? '',
   ]));
   const countryGrid = menu.querySelector<HTMLElement>('[data-mc-menu-countries]');
   const links = menu.querySelector<HTMLElement>('[data-mc-menu-combinations]');
@@ -22,6 +25,11 @@ for (const menu of menuInstances) {
     .map((element) => ({ element, slugs: (element.dataset.mcMenuSlugs ?? '').split('_') }));
   if (!countryGrid || !links || !heading || !back) continue;
   let selected: string[] = [];
+  const focusBack = () => {
+    const mobileBack = menu.closest<HTMLElement>('[data-mobile-panel]')
+      ?.querySelector<HTMLButtonElement>('[data-submenu-back]');
+    (mobileBack ?? back).focus();
+  };
 
   const display = () => {
     const level = selected.length;
@@ -48,21 +56,26 @@ for (const menu of menuInstances) {
     if (!slug) return;
     selected = [slug];
     display();
-    back.focus();
+    focusBack();
   }));
 
   menu.querySelectorAll<HTMLButtonElement>('[data-mc-menu-expand]').forEach((button) => {
     button.addEventListener('click', () => {
-      selected = (button.dataset.mcMenuExpand ?? '').split('_').filter(Boolean);
+      const target = (button.dataset.mcMenuExpand ?? '').split('_').filter(Boolean);
+      if (target.length !== selected.length + 1
+        || !selected.every((slug) => target.includes(slug))) return;
+      // The URL slugs are alphabetical, but Back must preserve the visitor's
+      // actual navigation path (e.g. Brazil -> Argentina -> Chile).
+      selected = extendMultiCountrySelection(selected, target);
       display();
-      back.focus();
+      focusBack();
     });
   });
 
   back.addEventListener('click', () => {
-    selected = selected.slice(0, -1);
+    selected = previousMultiCountrySelection(selected);
     display();
-    if (selected.length) back.focus();
+    if (selected.length) focusBack();
     else countryGrid.querySelector<HTMLButtonElement>('button')?.focus();
   });
 

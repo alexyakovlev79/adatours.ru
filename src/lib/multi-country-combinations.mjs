@@ -47,6 +47,22 @@ export function buildMultiCountryCombinations(tours, countriesForTour) {
   return [...results.values()].sort((a, b) => a.slugs.join('_').localeCompare(b.slugs.join('_'), 'en'));
 }
 
+/** Keep the actual choice order while displaying canonical alphabetical URLs. */
+export function extendMultiCountrySelection(selected, combination) {
+  if (selected.length < 1 || selected.length >= MAX_SELECTED_COUNTRIES
+    || new Set(selected).size !== selected.length
+    || new Set(combination).size !== combination.length
+    || combination.length !== selected.length + 1
+    || !selected.every((slug) => combination.includes(slug))) {
+    throw new Error('Country combination is not an immediate next level');
+  }
+  return [...selected, combination.find((slug) => !selected.includes(slug))];
+}
+
+export function previousMultiCountrySelection(selected) {
+  return selected.slice(0, -1);
+}
+
 export function nextMultiCountryOptions(combinations, selected) {
   if (!selected.length || selected.length >= MAX_SELECTED_COUNTRIES) return [];
   const found = new Set();

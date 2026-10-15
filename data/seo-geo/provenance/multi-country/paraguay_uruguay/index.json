@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "targetPath": "/multi-country/paraguay_uruguay/",
+  "articlePath": "data/seo-geo/articles/multi-country/paraguay_uruguay/index.md",
+  "researchedAt": "2026-10-15",
+  "editorialIntent": "Сочетание Уругвая и Парагвая с фактическими Бразилией и аргентинским Игуасу: маршрут 16 дней, противопоставление морского лета и жара Чако, парагвайские культурные и природные районы, необходимость документов на все границы и несколько валют.",
+  "repositorySources": [
+    "src/pages/multi-country/[...selection].astro",
+    "src/lib/multi-country-combinations.mjs",
+    "src/lib/seo-geo-articles.ts",
+    "src/content/tours/tur-po-uruguayu-i-paragvayu-16-dnej.md",
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "src/content/countries/uruguay.md",
+    "src/content/countries/paraguay.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision",
+      "supports": "Уругвайский режим въезда и необходимость проверки требований по гражданству и типу паспорта",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://migraciones.gov.py/entrada-y-salida-del-pais/requerimientos-migratorios-de-ingreso-y-salida-del-paraguay/",
+      "supports": "Парагвай: документы туриста, обязательная регистрация въезда и выезда, режим для граждан стран МЕРКОСУР и прочих",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.bcp.gov.py/web/institucional/w/el-banco-central-marca-un-hito-al-presentar-una-nueva-familia-de-billetes-del-guarani-que-celebra-a-la-historia-cultura-y-biodiversidad-del-paraguay",
+      "supports": "Banco Central del Paraguay 05.10.2026: гуарани как денежная единица Парагвая",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.inumet.gub.uy/clima/estadisticas-climatologicas/caracteristicas-climaticas",
+      "supports": "Климат Уругвая и различие морского сезона и внутренних районов",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://senatur.gov.py/noticias/reunion-tecnica-en-el-chaco-para-el-desarrollo-del-turismo-de-naturaleza/",
+      "supports": "Природный туризм Чако и местные особенности удаленных ландшафтов",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/747/",
+      "supports": "Исторический квартал Колонии-дель-Сакраменто внесен в список ЮНЕСКО",
+      "checkedAt": "2026-10-15"
+    }
+  ],
+  "commercialVerification": {
+    "tourId": "tour_source_tur_po_uruguayu_i_paragvayu_16_dnej",
+    "tourPath": "/multi-country/tour/uruguay-paraguay-16-days-2026/",
+    "durationDays": 16,
+    "dates": "[]",
+    "coreCountries": [
+      "country_uruguay",
+      "country_paraguay",
+      "country_brazil"
+    ],
+    "additionalCountry": "country_argentina",
+    "notes": "Факты и последовательность дней 1–16 только из актуального production Tour MD. Уругвай 1–5, перелет в Асунсьон 6, Чако 8–10, Игуасу 13–15. Нет утверждений о подтвержденных заездах 2026, прямых рейсах или включении неизвестных билетов."
+  },
+  "editorialChecks": [
+    "Двухколоночные таблицы с короткими значениями для мобильного экрана",
+    "Контекстные внутренние ссылки только на существующие точные Destination/Tour канонические страницы",
+    "Отдельные условия двух сторон водопадов и отсутствие ложного вывода о едином праве на въезд МЕРКОСУР",
+    "Все внешние фактические источники только в provenance, публичный Markdown без внешних ссылок",
+    "Динамические tourCount и tourTable вместо твердых и устаревающих цифр каталога"
+  ]
+}

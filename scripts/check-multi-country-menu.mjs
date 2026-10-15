@@ -1,0 +1,37 @@
+// SSR head navigation: every existing combination must appear as a real link.
+// Check representative site-wide templates, including the multi-country root.
+import assert from 'node:assert/strict';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+
+const output = 'dist';
+const root = join(output, 'multi-country');
+const names = readdirSync(root, { withFileTypes: true })
+  .filter((entry) => entry.isDirectory() && /^(?:[a-z0-9-]+_){1,3}[a-z0-9-]+$/.test(entry.name))
+  .filter((entry) => existsSync(join(root, entry.name, 'index.html')))
+  .map((entry) => entry.name);
+const expected = new Set(names.map((name) => '/multi-country/' + name + '/'));
+assert.ok(expected.size > 0, 'Expected real multi-country combinations');
+const examples = [
+  join(output, 'index.html'),
+  join(output, 'multi-country', 'index.html'),
+  join(output, 'vip', 'index.html'),
+  ...names.slice(0, 3).map((name) => join(root, name, 'index.html')),
+];
+for (const file of examples) {
+  const html = readFileSync(file, 'utf8');
+  const header = html.match(/<header\b[^>]*data-site-header[^>]*>[\s\S]*?<\/header>/)?.[0];
+  assert.ok(header, 'Missing header: ' + file);
+  const linked = [...header.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>/g)]
+    .map((match) => match[1].replaceAll('&amp;', '&'))
+    .filter((href) => /^\/multi-country\/[a-z0-9_-]+\/$/.test(href));
+  assert.deepEqual([...new Set(linked)].sort(), [...expected].sort(), 'Header links differ: ' + file);
+  assert.equal(linked.length, expected.size * 2, 'Mobile and desktop menus must each contain all links: ' + file);
+}
+const indexHtml = readFileSync(join(root, 'index.html'), 'utf8');
+const picker = indexHtml.match(/<section\b[^>]*data-multi-country-picker[^>]*>[\s\S]*?<\/section>/)?.[0];
+assert.ok(picker, 'Multi-country selector missing');
+assert.equal((picker.match(/data-mc-select=/g) ?? []).length, 4, 'Expected four progressive selectors');
+assert.ok(!/data-mc-pair-link|data-mc-extended-link|data-mc-alternative-link/.test(picker),
+  'All combination link collections must be moved into the header');
+console.log('Multi-country menu: ' + expected.size + ' combination URLs on ' + examples.length + ' sampled pages.');

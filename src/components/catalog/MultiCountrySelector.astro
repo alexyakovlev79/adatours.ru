@@ -14,26 +14,13 @@ const countryBySlug = new Map(countries.map((country) => [country.slug, country]
 const nextOptions = (prefix: string[]): CountryOption[] =>
   nextMultiCountryOptions(combinations, prefix)
     .map((slug) => countryBySlug.get(slug)).filter((country): country is CountryOption => Boolean(country));
-const firstOptions = selected[1] ? nextOptions([selected[1]]) : countries;
-const secondOptions = selected[0] ? nextOptions([selected[0]]) : countries;
 const steps = [0, 1, 2, 3].map((index) => ({
   index,
-  options: index === 0 ? firstOptions : index === 1 ? secondOptions
-    : selected.length >= index ? nextOptions(selected.slice(0, index)) : [],
+  options: index === 0 ? countries : selected.length >= index
+    ? nextOptions(selected.slice(0, index)) : [],
   value: selected[index] ?? '',
 }));
 const descriptions = ['Первая страна', 'Вторая страна', 'Третья страна', 'Четвертая страна'];
-const countryLabels = (slugs: string[]) => slugs.map((slug) => countryBySlug.get(slug)?.name ?? slug).join(' + ');
-const pairs = combinations.filter((row) => row.slugs.length === 2);
-const extensions = selected.length >= 2 && selected.length < 4
-  ? combinations.filter((row) => row.slugs.length === selected.length + 1
-    && selected.every((slug) => row.slugs.includes(slug))) : [];
-const alternatives = selected.length >= 2
-  ? combinations.filter((row) => row.slugs.length === selected.length
-    && row.slugs.join('_') !== selected.join('_')
-    && selected.slice(0, -1).every((slug) => row.slugs.includes(slug))) : [];
-const alternateLabel = selected.length === 2 ? 'Другие пары с первой страной'
-  : selected.length === 3 ? 'Другие варианты третьей страны' : 'Другие варианты четвертой страны';
 ---
 
 <section
@@ -49,14 +36,14 @@ const alternateLabel = selected.length === 2 ? 'Другие пары с пер�
   <div class="mc-picker__intro">
     <p class="eyebrow">Страны маршрута</p>
     <h3>Выберите сочетание стран</h3>
-    <p>Укажите две страны. Затем можно добавить третью и четвертую, если есть такие готовые маршруты.</p>
+    <p>Выберите первую страну, затем вторую. Третья и четвертая появятся, если есть подходящие туры.</p>
   </div>
   <div class="mc-picker__fields">
     {steps.map((step) => (
       <div
         class="mc-picker__field"
         data-mc-field={step.index}
-        hidden={step.index >= 2 && !(selected.length >= step.index && step.options.length > 0)}
+        hidden={step.index > 0 && !(selected[step.index - 1] && step.options.length > 0)}
       >
         <label for={'mc-country-' + (step.index + 1)}>{descriptions[step.index]}</label>
         <select id={'mc-country-' + (step.index + 1)} data-mc-select={step.index} autocomplete="off">
@@ -74,45 +61,6 @@ const alternateLabel = selected.length === 2 ? 'Другие пары с пер�
     </a>
   )}
 
-  {selected.length === 0 ? (
-    <details class="mc-picker__index" data-mc-crawl-links>
-      <summary>Все сочетания двух стран ({pairs.length})</summary>
-      <nav class="mc-picker__links" aria-label="Все пары стран">
-        {pairs.map((row) => (
-          <a href={withBase(row.path)} data-mc-pair-link={row.slugs.join('_')}>
-            {countryLabels(row.slugs)}
-          </a>
-        ))}
-      </nav>
-    </details>
-  ) : (
-    <div class="mc-picker__related">
-      {extensions.length > 0 && (
-        <nav class="mc-picker__suggestions" aria-label={selected.length === 2 ? 'Добавить третью страну' : 'Добавить четвертую страну'} data-mc-crawl-links>
-          <p>{selected.length === 2 ? 'Добавить третью страну:' : 'Добавить четвертую страну:'}</p>
-          <div class="mc-picker__links">
-            {extensions.map((row) => (
-              <a href={withBase(row.path)} data-mc-extended-link={row.slugs.join('_')}>
-                {countryLabels(row.slugs)}
-              </a>
-            ))}
-          </div>
-        </nav>
-      )}
-      {alternatives.length > 0 && (
-        <details class="mc-picker__index" data-mc-crawl-links>
-          <summary>{alternateLabel} ({alternatives.length})</summary>
-          <nav class="mc-picker__links" aria-label={alternateLabel}>
-            {alternatives.map((row) => (
-              <a href={withBase(row.path)} data-mc-alternative-link={row.slugs.join('_')}>
-                {countryLabels(row.slugs)}
-              </a>
-            ))}
-          </nav>
-        </details>
-      )}
-    </div>
-  )}
 </section>
 
 <script>
@@ -153,15 +101,6 @@ const alternateLabel = selected.length === 2 ? 'Другие пары с пер�
   }
   .mc-picker__field select:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
   .mc-picker__reset { display: inline-block; margin-top: 18px; color: var(--color-ink); text-underline-offset: 4px; }
-  .mc-picker__related { margin-top: 24px; }
-  .mc-picker__suggestions { max-width: 900px; }
-  .mc-picker__suggestions p { margin: 0 0 12px; font-size: .95rem; }
-  .mc-picker__index { max-width: 960px; margin-top: 20px; }
-  .mc-picker__index summary { cursor: pointer; font-size: .98rem; text-underline-offset: 4px; }
-  .mc-picker__index[open] .mc-picker__links { margin-top: 16px; }
-  .mc-picker__links { display: flex; gap: 10px 18px; flex-wrap: wrap; }
-  .mc-picker__links a { color: var(--color-ink); text-underline-offset: 4px; font-size: .94rem; }
-  .mc-picker__links a:hover, .mc-picker__reset:hover { color: var(--color-gold-deep); }
   @media (max-width: 600px) {
     .mc-picker { padding-bottom: 30px; }
     .mc-picker__field select { font-size: 1rem; }

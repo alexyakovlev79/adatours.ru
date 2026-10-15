@@ -1,0 +1,209 @@
+---
+import { withBase } from '../../lib/paths';
+
+interface MenuCountry { slug: string; name: string; }
+interface MenuCombination { slugs: string[]; path: string; count: number; }
+interface Props {
+  countries: MenuCountry[];
+  combinations: MenuCombination[];
+}
+const { countries, combinations } = Astro.props;
+const bySlug = new Map(countries.map((country) => [country.slug, country]));
+const existing = new Set(combinations.map((row) => row.slugs.join('_')));
+const items = combinations.map((row) => ({
+  ...row,
+  names: row.slugs.map((slug) => bySlug.get(slug)?.name ?? slug),
+  hasMore: row.slugs.length < 4 && countries.some((country) =>
+    !row.slugs.includes(country.slug)
+    && existing.has([...row.slugs, country.slug].sort().join('_'))),
+}));
+---
+
+<div class="mc-menu" data-mc-menu data-pagefind-ignore="all">
+  <a class="mc-menu__all" href={withBase('/multi-country/')}>Все Multi-country туры</a>
+  <button class="mc-menu__back" type="button" data-mc-menu-back hidden>‹ Назад</button>
+  <p class="mc-menu__heading" data-mc-menu-heading>Выберите страну</p>
+
+  <div class="mc-menu__countries" data-mc-menu-countries>
+    {countries.map((country) => (
+      <button
+        class="mc-menu__country"
+        type="button"
+        data-mc-menu-country={country.slug}
+        aria-label={'Сочетания с ' + country.name}
+      >
+        <span class="mc-menu__country-name">
+          {country.name === 'Французская Гвиана'
+            ? <>Французская<br />Гвиана</>
+            : country.name}
+        </span>
+        <span class="mc-menu__arrow" aria-hidden="true">›</span>
+      </button>
+    ))}
+  </div>
+
+  <nav class="mc-menu__combinations" data-mc-menu-combinations aria-label="Сочетания стран">
+    {items.map((row) => (
+      <div
+        class="mc-menu__combination"
+        data-mc-menu-combination
+        data-mc-menu-slugs={row.slugs.join('_')}
+        data-mc-menu-size={row.slugs.length}
+      >
+        <a href={withBase(row.path)}>{row.names.join(' + ')}</a>
+        {row.hasMore && (
+          <button
+            type="button"
+            class="mc-menu__expand"
+            data-mc-menu-expand={row.slugs.join('_')}
+            aria-label={'Добавить страну к сочетанию ' + row.names.join(', ')}
+          >›</button>
+        )}
+      </div>
+    ))}
+  </nav>
+</div>
+
+<script>
+  import '../../scripts/multi-country-menu';
+</script>
+
+<style>
+  .mc-menu {
+    min-width: 0;
+    font-family: var(--font-display);
+    line-height: 1.2;
+    color: inherit;
+  }
+  .mc-menu__all {
+    display: inline-block;
+    padding-block: 10px;
+    color: inherit;
+    font-size: .9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+  .mc-menu__back {
+    display: block;
+    padding: 8px 0;
+    margin-top: 8px;
+    color: inherit;
+    background: transparent;
+    border: none;
+    font: inherit;
+    font-size: .92rem;
+    cursor: pointer;
+  }
+  .mc-menu__back[hidden],
+  .mc-menu__countries[hidden],
+  .mc-menu__combination[hidden],
+  .mc-menu__combinations[hidden] {
+    display: none;
+  }
+  .mc-menu__heading {
+    margin: 18px 0 12px;
+    font-size: .93rem;
+    font-weight: 500;
+    opacity: .8;
+  }
+  .mc-menu__countries {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(14px, 3vw, 26px);
+  }
+  .mc-menu__country {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    min-height: 52px;
+    gap: 8px;
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+    color: inherit;
+    background: transparent;
+    font-family: inherit;
+    font-size: clamp(.94rem, 1.15vw, 1.1rem);
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    cursor: pointer;
+  }
+  .mc-menu__country-name {
+    flex: 1 1 auto;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+  .mc-menu__arrow {
+    flex: 0 0 16px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1;
+    text-align: right;
+    opacity: .7;
+  }
+  .mc-menu__combinations {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0 0 12px;
+  }
+  .mc-menu[data-mc-ready]:not([data-mc-selected]) .mc-menu__combinations {
+    display: none;
+  }
+  .mc-menu__combination {
+    display: flex;
+    min-width: 0;
+    align-items: stretch;
+    gap: 8px;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+  }
+  .mc-menu__combination a {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 13px 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: .97rem;
+    line-height: 1.3;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+  }
+  .mc-menu__expand {
+    flex: 0 0 38px;
+    padding: 4px;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    font: inherit;
+    font-size: 1.5rem;
+    opacity: .8;
+    cursor: pointer;
+  }
+  .mc-menu__country:hover,
+  .mc-menu__combination:hover,
+  .mc-menu__country:focus-visible,
+  .mc-menu__combination:focus-within {
+    color: var(--color-gold-deep);
+  }
+  .mc-menu :is(a, button):focus-visible {
+    outline: 2px solid var(--color-gold-deep);
+    outline-offset: 3px;
+  }
+  @media (max-width: 1240px) {
+    .mc-menu__country {
+      min-height: 62px;
+      font-size: clamp(1.02rem, 4vw, 1.34rem);
+    }
+    .mc-menu__combination a { font-size: clamp(1rem, 4vw, 1.25rem); }
+    .mc-menu__arrow { font-size: 1.35rem; }
+    .mc-menu__all { font-size: 1.04rem; }
+  }
+</style>

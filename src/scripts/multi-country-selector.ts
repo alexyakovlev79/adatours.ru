@@ -1,5 +1,4 @@
-// Country combinations are real static HTML pages; change events only navigate
-// between links already published by the Astro build.
+// Progressive country selection. Static URLs are opened after 2–4 choices.
 interface CountryOption { slug: string; name: string; }
 
 for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country-picker]')) {
@@ -25,54 +24,32 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
   const render = () => {
     for (let index = 0; index < selects.length; index++) {
       const options = index === 0
-        ? (selected[1] ? compatible([selected[1]]) : countries)
-        : index === 1
-          ? (selected[0] ? compatible([selected[0]]) : countries)
-          : selected.length >= index && selected[index - 1]
-            ? compatible(selected.slice(0, index))
-            : [];
+        ? countries
+        : selected[index - 1] ? compatible(selected.slice(0, index)) : [];
       const select = selects[index];
+      const value = selected[index] ?? '';
       select.replaceChildren(new Option('Выберите страну', ''));
       for (const country of options) select.add(new Option(country.name, country.slug));
-      const value = selected[index] ?? '';
       if (value && options.some((country) => country.slug === value)) {
         select.value = value;
       } else if (value) {
         selected = selected.slice(0, index);
       }
-      fields[index].hidden = index >= 2 && options.length === 0;
+      fields[index].hidden = index > 0 && options.length === 0;
     }
   };
 
   render();
-
-  const navigate = (slugs: string[]) => {
-    if (slugs.length < 2) return false;
-    const key = [...slugs].sort().join('_');
-    if (!known.has(key)) return false;
-    const target = new URL(rootHref + key + '/#country-picker', window.location.origin);
-    if (window.location.pathname !== target.pathname) window.location.assign(target.toString());
-    return true;
-  };
-
   selects.forEach((select, index) => {
     select.addEventListener('change', () => {
-      if (index <= 1) {
-        const first = selects[0].value;
-        const second = selects[1].value;
-        selected = [first, second];
-        if (first && second && first !== second && navigate([first, second])) return;
-        render();
-        if (picker.dataset.selected !== '[]') {
-          const target = new URL(rootHref + '#country-picker', window.location.origin);
-          if (window.location.pathname !== target.pathname) window.location.assign(target.toString());
-        }
-        return;
-      }
-      selected = [...selects.slice(0, index + 1).map((input) => input.value)].filter(Boolean);
-      if (navigate(selected)) return;
-      selected = selected.slice(0, Math.max(2, index));
+      selected = [...selected.slice(0, index), ...(select.value ? [select.value] : [])];
       render();
+      if (selected.length < 2) return;
+      const key = [...selected].sort().join('_');
+      if (known.has(key)) {
+        const target = new URL(rootHref + key + '/#country-picker', window.location.origin);
+        if (window.location.pathname !== target.pathname) window.location.assign(target.toString());
+      }
     });
   });
 }

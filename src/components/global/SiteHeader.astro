@@ -3,9 +3,11 @@ import { getCollection } from 'astro:content';
 import PrimaryCTA from './PrimaryCTA.astro';
 import SearchTrigger from './SearchTrigger.astro';
 import ContactActions from './ContactActions.astro';
+import MultiCountryMenu from './MultiCountryMenu.astro';
+import { buildMultiCountryCombinations } from '../../lib/multi-country-combinations.mjs';
 import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, MICE_NAV_LINKS, NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
-import { countryPath, themePath } from '../../lib/routes';
+import { countryPath, themePath, mainTourCountries } from '../../lib/routes';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../../lib/country-popularity';
 import { buildInterestIndex } from '../../lib/interest-model.mjs';
@@ -50,6 +52,24 @@ const vipChildLinks: NavChild[] = (await getVipCountryIndex())
 const dmcChildLinks: NavChild[] = DMC_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 const aboutChildLinks: NavChild[] = ABOUT_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 
+// Build the full index once per static render, from active routes only.
+const multiCountryTours = tourEntries.filter((entry) => mainTourCountries(entry.data).length >= 2);
+const multiCountryRows = buildMultiCountryCombinations(multiCountryTours, (entry) => mainTourCountries(entry.data));
+const multiCountryCombinations = multiCountryRows.map((row) => ({
+  slugs: row.slugs, path: row.path, count: row.tours.length,
+}));
+const multiCountryCounts = new Map<string, number>();
+const multiCountryBySlug = new Map<string, { slug: string; name: string }>();
+for (const entry of multiCountryTours) {
+  for (const country of mainTourCountries(entry.data)) {
+    multiCountryCounts.set(country.slug, (multiCountryCounts.get(country.slug) ?? 0) + 1);
+    multiCountryBySlug.set(country.slug, { slug: country.slug, name: country.name });
+  }
+}
+const multiCountryCountries = [...multiCountryBySlug.values()]
+  .sort((a, b) => (multiCountryCounts.get(b.slug) ?? 0) - (multiCountryCounts.get(a.slug) ?? 0)
+    || a.name.localeCompare(b.name, 'ru'));
+
 const childLinksFor = (href: string): NavChild[] => {
   if (href === '/country/') return countryChildLinks;
   if (href === '/interests/') return interestChildLinks;
@@ -64,6 +84,7 @@ const groupIdFor = (href: string) => {
   if (href === '/country/') return 'countries';
   if (href === '/interests/') return 'interests';
   if (href === '/vip/') return 'vip';
+  if (href === '/multi-country/') return 'multi-country';
   if (href === '/mice/') return 'mice';
   if (href === '/dmc/') return 'dmc';
   if (href === '/about/') return 'about';
@@ -74,6 +95,7 @@ const overviewLabelFor = (href: string, label: string) => {
   if (href === '/country/') return 'Все страны';
   if (href === '/interests/') return 'Все интересы';
   if (href === '/vip/') return 'Все VIP-туры';
+  if (href === '/multi-country/') return 'Все Multi-country туры';
   if (href === '/mice/') return 'MICE и корпоративные поездки';
   if (href === '/dmc/') return 'DMC / B2B';
   if (href === '/about/') return 'О компании';
@@ -87,7 +109,7 @@ const nestedGroups = NAV_LINKS
     children: childLinksFor(link.href),
     overviewLabel: overviewLabelFor(link.href, link.label),
   }))
-  .filter((group) => group.children.length > 0);
+  .filter((group) => group.children.length > 0 || group.groupId === 'multi-country');
 ---
 
 <header class:list={['site-header', `site-header--${theme}`]} data-site-header>
@@ -100,7 +122,14 @@ const nestedGroups = NAV_LINKS
     <nav class="desktop-nav" aria-label="Основная навигация">
       {NAV_LINKS.map((link) => {
         const children = childLinksFor(link.href);
-        return children.length > 0 ? (
+        return link.href === '/multi-country/' ? (
+          <div class="desktop-nav__group">
+            <a class="desktop-nav__parent" href={withBase(link.href)}>{link.label}</a>
+            <div class="desktop-nav__submenu desktop-nav__submenu--multi-country" aria-label="Сочетания стран">
+              <MultiCountryMenu countries={multiCountryCountries} combinations={multiCountryCombinations} />
+            </div>
+          </div>
+        ) : children.length > 0 ? (
           <div class="desktop-nav__group">
             <a class="desktop-nav__parent" href={withBase(link.href)}>{link.label}</a>
             <div
@@ -157,7 +186,7 @@ const nestedGroups = NAV_LINKS
             const children = childLinksFor(link.href);
             const groupId = groupIdFor(link.href);
 
-            return children.length > 0 ? (
+            return (children.length > 0 || link.href === '/multi-country/') ? (
               <button
                 class="mobile-menu__parent"
                 type="button"
@@ -194,12 +223,16 @@ const nestedGroups = NAV_LINKS
 
           <p class="mobile-menu__title">{group.label}</p>
 
-          <nav aria-label={group.label}>
-            <a class="mobile-menu__overview" href={withBase(group.href)}>{group.overviewLabel}</a>
-            {group.children.map((child) => (
-              <a href={withBase(child.href)}>{child.label}</a>
-            ))}
-          </nav>
+          {group.groupId === 'multi-country' ? (
+            <MultiCountryMenu countries={multiCountryCountries} combinations={multiCountryCombinations} />
+          ) : (
+            <nav aria-label={group.label}>
+              <a class="mobile-menu__overview" href={withBase(group.href)}>{group.overviewLabel}</a>
+              {group.children.map((child) => (
+                <a href={withBase(child.href)}>{child.label}</a>
+              ))}
+            </nav>
+          )}
         </section>
       ))}
     </div>
@@ -490,6 +523,14 @@ const nestedGroups = NAV_LINKS
       visibility 180ms;
   }
 
+  .desktop-nav__submenu--multi-country {
+    --submenu-offset-x: 0%;
+    left: 0;
+    width: min(620px, calc(100vw - 48px));
+    padding: 16px 22px 20px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .desktop-nav__submenu--wide {
     grid-template-columns: repeat(2, minmax(190px, 1fr));
     min-width: min(520px, calc(100vw - 40px));
@@ -501,7 +542,7 @@ const nestedGroups = NAV_LINKS
     left: 0;
   }
 
-  .desktop-nav__submenu a {
+  .desktop-nav__submenu > a {
     padding: 12px 18px;
     white-space: nowrap;
     font-family: var(--font-display);
@@ -511,20 +552,20 @@ const nestedGroups = NAV_LINKS
     text-transform: uppercase;
   }
 
-  .desktop-nav__submenu--wide a {
+  .desktop-nav__submenu--wide > a {
     min-width: 0;
     white-space: normal;
     line-height: 1.3;
     overflow-wrap: break-word;
   }
 
-  .desktop-nav__submenu a:hover,
-  .desktop-nav__submenu a:focus-visible {
+  .desktop-nav__submenu > a:hover,
+  .desktop-nav__submenu > a:focus-visible {
     background: color-mix(in srgb, var(--color-gold) 18%, transparent);
   }
 
   .desktop-nav__group:hover .desktop-nav__submenu,
-  .desktop-nav__group:has(a:focus-visible) .desktop-nav__submenu {
+  .desktop-nav__group:focus-within .desktop-nav__submenu {
     opacity: 1;
     visibility: visible;
     transform: translate(var(--submenu-offset-x), 0);
@@ -703,12 +744,12 @@ const nestedGroups = NAV_LINKS
       transform: translateX(0);
     }
 
-    .mobile-menu__panel nav {
+    .mobile-menu__panel > nav {
       display: grid;
       gap: clamp(9px, 1.25vh, 13px);
     }
 
-    .mobile-menu__panel nav a,
+    .mobile-menu__panel > nav > a,
     .mobile-menu__parent {
       width: 100%;
       padding: 0;
@@ -769,19 +810,19 @@ const nestedGroups = NAV_LINKS
       display: none;
     }
 
-    .mobile-menu__panel--submenu nav {
+    .mobile-menu__panel--submenu > nav {
       gap: 0;
       padding-bottom: 28px;
     }
 
-    .mobile-menu__panel[data-mobile-panel='countries'] nav,
-    .mobile-menu__panel[data-mobile-panel='vip'] nav,
-    .mobile-menu__panel[data-mobile-panel='interests'] nav {
+    .mobile-menu__panel[data-mobile-panel='countries'] > nav,
+    .mobile-menu__panel[data-mobile-panel='vip'] > nav,
+    .mobile-menu__panel[data-mobile-panel='interests'] > nav {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       column-gap: clamp(18px, 5vw, 28px);
     }
 
-    .mobile-menu__panel--submenu nav a {
+    .mobile-menu__panel--submenu > nav > a {
       max-width: 100%;
       min-width: 0;
       padding: 13px 0;
@@ -793,15 +834,19 @@ const nestedGroups = NAV_LINKS
       overflow-wrap: break-word;
     }
 
-    .mobile-menu__panel--submenu nav a.mobile-menu__overview {
+    .mobile-menu__panel--submenu > nav > a.mobile-menu__overview {
       color: var(--color-bg);
       font-weight: 600;
     }
 
-    .mobile-menu__panel[data-mobile-panel='countries'] .mobile-menu__overview,
-    .mobile-menu__panel[data-mobile-panel='vip'] .mobile-menu__overview,
-    .mobile-menu__panel[data-mobile-panel='interests'] .mobile-menu__overview {
+    .mobile-menu__panel[data-mobile-panel='countries'] > nav > .mobile-menu__overview,
+    .mobile-menu__panel[data-mobile-panel='vip'] > nav > .mobile-menu__overview,
+    .mobile-menu__panel[data-mobile-panel='interests'] > nav > .mobile-menu__overview {
       grid-column: 1 / -1;
+    }
+
+    .mobile-menu__panel[data-mobile-panel='multi-country'] {
+      gap: 14px;
     }
 
     .mobile-menu__contact {

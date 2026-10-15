@@ -45,13 +45,24 @@ const descriptions = ['Первая страна', 'Вторая страна', 
         data-mc-field={step.index}
         hidden={step.index > 0 && !(selected[step.index - 1] && step.options.length > 0)}
       >
-        <label for={'mc-country-' + (step.index + 1)}>{descriptions[step.index]}</label>
-        <select id={'mc-country-' + (step.index + 1)} data-mc-select={step.index} autocomplete="off">
-          <option value="">Выберите страну</option>
-          {step.options.map((country) => (
-            <option value={country.slug} selected={step.value === country.slug}>{country.name}</option>
-          ))}
-        </select>
+        <label class="mc-picker__visually-hidden" for={'mc-country-' + (step.index + 1)}>{descriptions[step.index]}</label>
+        <div class="mc-picker__control">
+          <select id={'mc-country-' + (step.index + 1)} data-mc-select={step.index} autocomplete="off">
+            <option value="">{descriptions[step.index]}</option>
+            {step.options.map((country) => (
+              <option value={country.slug} selected={step.value === country.slug}>{country.name}</option>
+            ))}
+          </select>
+          {step.index > 0 && (
+            <button
+              type="button"
+              class="mc-picker__remove"
+              data-mc-remove={step.index}
+              aria-label={'Убрать выбранную страну: ' + descriptions[step.index]}
+              hidden={!step.value}
+            ><span aria-hidden="true">×</span></button>
+          )}
+        </div>
       </div>
     ))}
   </div>
@@ -86,10 +97,23 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   .mc-picker__fields { display: flex; flex-direction: column; gap: 16px; max-width: 480px; }
   .mc-picker__field { display: flex; flex-direction: column; gap: 6px; }
   .mc-picker__field[hidden] { display: none; }
-  .mc-picker__field label { font-size: .95rem; font-weight: 500; }
+  .mc-picker__visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+  .mc-picker__control { display: flex; align-items: center; gap: 10px; }
   .mc-picker__field select {
     display: block;
+    flex: 1 1 auto;
     width: 100%;
+    min-width: 0;
     min-height: 52px;
     border: 1px solid #aaa7a1;
     border-radius: 2px;
@@ -100,9 +124,50 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     font-size: 1.1rem;
   }
   .mc-picker__field select:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
-  .mc-picker__reset { display: inline-block; margin-top: 18px; color: var(--color-ink); text-underline-offset: 4px; }
+  .mc-picker__remove {
+    display: none;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid var(--color-line);
+    color: var(--color-ink);
+    background: var(--color-bg);
+    font: inherit;
+    font-size: 1.65rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .mc-picker__remove[hidden] { display: none; }
+  .mc-picker__remove:hover { border-color: var(--color-gold-deep); }
+  .mc-picker__remove:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
+  .mc-picker__reset {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    max-width: 100%;
+    margin-top: 18px;
+    padding: 12px 20px;
+    border: 1px solid var(--color-gold-deep);
+    color: var(--color-ink);
+    background: var(--color-gold-soft);
+    font-family: var(--font-display);
+    font-size: .93rem;
+    font-weight: 600;
+    line-height: 1.35;
+    text-align: center;
+    text-decoration: none;
+    transition: background 180ms ease;
+  }
+  .mc-picker__reset:hover { background: var(--color-gold); }
+  .mc-picker__reset:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 3px; }
   @media (max-width: 600px) {
     .mc-picker { padding-bottom: 30px; }
     .mc-picker__field select { font-size: 1rem; }
+    .mc-picker__remove:not([hidden]) { display: flex; }
+    .mc-picker__reset { width: min(100%, 480px); font-size: .9rem; }
   }
 </style>

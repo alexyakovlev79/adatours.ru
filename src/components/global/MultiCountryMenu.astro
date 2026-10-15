@@ -23,7 +23,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
 <div class="mc-menu" data-mc-menu data-pagefind-ignore="all">
   <a class="mc-menu__all" href={withBase('/multi-country/')}>Все Multi-country туры</a>
   <button class="mc-menu__back" type="button" data-mc-menu-back hidden>‹ Назад</button>
-  <p class="mc-menu__heading" data-mc-menu-heading>Выберите страну</p>
+  <p class="mc-menu__heading" data-mc-menu-heading hidden></p>
 
   <div class="mc-menu__countries" data-mc-menu-countries>
     {countries.map((country) => (
@@ -98,6 +98,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     cursor: pointer;
   }
   .mc-menu__back[hidden],
+  .mc-menu__heading[hidden],
   .mc-menu__countries[hidden],
   .mc-menu__combination[hidden],
   .mc-menu__combinations[hidden] {
@@ -213,6 +214,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
       line-height: 1.15;
     }
     .mc-menu__heading { margin: 10px 0 6px; }
+    .mc-menu__all { padding-block: 6px; }
     .mc-menu__arrow { flex-basis: 16px; font-size: 1.35rem; }
     .mc-menu__expand { flex-basis: 30px; }
     .mc-menu__all { font-size: 1.04rem; }

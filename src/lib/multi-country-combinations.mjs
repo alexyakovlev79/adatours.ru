@@ -63,6 +63,17 @@ export function previousMultiCountrySelection(selected) {
   return selected.slice(0, -1);
 }
 
+/** Drop any selected country except the first; keep all other selections. */
+export function removeMultiCountrySelection(selected, index) {
+  if (!Array.isArray(selected) || selected.length < 2
+    || selected.length > MAX_SELECTED_COUNTRIES
+    || new Set(selected).size !== selected.length
+    || !Number.isInteger(index) || index < 1 || index >= selected.length) {
+    throw new Error('Invalid multi-country selection removal');
+  }
+  return selected.filter((_, position) => position !== index);
+}
+
 export function nextMultiCountryOptions(combinations, selected) {
   if (!selected.length || selected.length >= MAX_SELECTED_COUNTRIES) return [];
   const found = new Set();

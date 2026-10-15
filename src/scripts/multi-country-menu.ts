@@ -39,10 +39,10 @@ for (const menu of menuInstances) {
     countryGrid.hidden = level > 0;
     links.hidden = level === 0;
     back.hidden = level === 0;
-    heading.textContent = level === 0 ? 'Выберите страну'
-      : level === 1 ? 'Добавить вторую страну к ' + (names.get(selected[0]) ?? selected[0])
+    heading.hidden = level === 0;
+    heading.textContent = level === 1 ? 'Добавить вторую страну к ' + (names.get(selected[0]) ?? selected[0])
       : level === 2 ? 'Добавить третью страну'
-      : 'Добавить четвертую страну';
+      : level === 3 ? 'Добавить четвертую страну' : '';
     for (const item of combinations) {
       item.element.hidden = item.slugs.length !== level + 1
         || !selected.every((slug) => item.slugs.includes(slug));

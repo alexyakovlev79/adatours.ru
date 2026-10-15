@@ -7,6 +7,7 @@ import {
   nextMultiCountryOptions,
   extendMultiCountrySelection,
   previousMultiCountrySelection,
+  removeMultiCountrySelection,
 } from '../src/lib/multi-country-combinations.mjs';
 
 const codes = Object.fromEntries(['argentina', 'brazil', 'chile', 'peru', 'uruguay']
@@ -61,4 +62,20 @@ test('mobile back returns one level through the visitor choice order', () => {
   assert.deepEqual(previousMultiCountrySelection(first), []);
   assert.throws(() => extendMultiCountrySelection(first, ['brazil', 'brazil']));
   assert.throws(() => extendMultiCountrySelection(pair, ['argentina', 'chile']));
+});
+
+
+test('removing a selected country preserves all other countries, including later ones', () => {
+  const triple = ['argentina', 'brazil', 'chile'];
+  const withoutSecond = removeMultiCountrySelection(triple, 1);
+  assert.deepEqual(withoutSecond, ['argentina', 'chile']);
+  assert.equal(multiCountryCombinationPath(withoutSecond), '/multi-country/argentina_chile/');
+  const quadruple = ['chile', 'argentina', 'brazil', 'peru'];
+  assert.deepEqual(removeMultiCountrySelection(quadruple, 1), ['chile', 'brazil', 'peru']);
+  assert.equal(multiCountryCombinationPath(removeMultiCountrySelection(quadruple, 1)),
+    '/multi-country/brazil_chile_peru/');
+  assert.deepEqual(removeMultiCountrySelection(['argentina', 'brazil'], 1), ['argentina']);
+  assert.throws(() => removeMultiCountrySelection(triple, 0));
+  assert.throws(() => removeMultiCountrySelection(triple, 3));
+  assert.throws(() => removeMultiCountrySelection(['argentina', 'argentina'], 1));
 });

@@ -1,13 +1,30 @@
-// Progressive country selection. Static URLs are opened after 2–4 choices.
+// Progressive selection of 2–4 main countries.
+// Every completed selection resolves to an already generated static catalogue.
+import { removeMultiCountrySelection } from '../lib/multi-country-combinations.mjs';
+
 interface CountryOption { slug: string; name: string; }
 
 for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country-picker]')) {
   const countries = JSON.parse(picker.dataset.countries ?? '[]') as CountryOption[];
   const known = new Set(JSON.parse(picker.dataset.combinations ?? '[]') as string[]);
   const rootHref = picker.dataset.rootHref ?? '/multi-country/';
+  const rootPath = new URL(rootHref, window.location.origin).pathname;
   const fields = [...picker.querySelectorAll<HTMLElement>('[data-mc-field]')];
   const selects = [...picker.querySelectorAll<HTMLSelectElement>('[data-mc-select]')];
+  const removeButtons = [...picker.querySelectorAll<HTMLButtonElement>('[data-mc-remove]')];
+  const placeholders = ['Первая страна', 'Вторая страна', 'Третья страна', 'Четвертая страна'];
+  const firstCountryState = 'adatours:multi-country-first';
   let selected = JSON.parse(picker.dataset.selected ?? '[]') as string[];
+
+  // The initial /multi-country/ has no country-specific static catalogue.
+  // Preserve the first selection for one navigation when removing the second.
+  if (window.location.pathname === rootPath && selected.length === 0) {
+    try {
+      const first = window.sessionStorage.getItem(firstCountryState);
+      window.sessionStorage.removeItem(firstCountryState);
+      if (first && countries.some((country) => country.slug === first)) selected = [first];
+    } catch { /* Storage may be disabled; all selectors remain functional. */ }
+  }
 
   const compatible = (slugs: string[]): CountryOption[] => {
     if (!slugs.length) return countries;
@@ -28,7 +45,7 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
         : selected[index - 1] ? compatible(selected.slice(0, index)) : [];
       const select = selects[index];
       const value = selected[index] ?? '';
-      select.replaceChildren(new Option('Выберите страну', ''));
+      select.replaceChildren(new Option(placeholders[index], ''));
       for (const country of options) select.add(new Option(country.name, country.slug));
       if (value && options.some((country) => country.slug === value)) {
         select.value = value;
@@ -37,19 +54,69 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
       }
       fields[index].hidden = index > 0 && options.length === 0;
     }
+    for (const button of removeButtons) {
+      const index = Number(button.dataset.mcRemove);
+      button.hidden = !selected[index];
+    }
+  };
+
+  const navigate = (next: string[]): boolean => {
+    if (next.length >= 2) {
+      const key = [...next].sort().join('_');
+      if (!known.has(key)) return false;
+      const target = new URL(rootHref + key + '/#country-picker', window.location.origin);
+      if (window.location.pathname !== target.pathname) window.location.assign(target.toString());
+      else {
+        selected = next;
+        render();
+      }
+      return true;
+    }
+
+    try {
+      if (next.length === 1) window.sessionStorage.setItem(firstCountryState, next[0]);
+      else window.sessionStorage.removeItem(firstCountryState);
+    } catch { /* Storage may be disabled. */ }
+    if (window.location.pathname !== rootPath) {
+      window.location.assign(new URL(rootHref + '#country-picker', window.location.origin).toString());
+    } else {
+      selected = next;
+      render();
+    }
+    return true;
   };
 
   render();
+
   selects.forEach((select, index) => {
     select.addEventListener('change', () => {
-      selected = [...selected.slice(0, index), ...(select.value ? [select.value] : [])];
-      render();
-      if (selected.length < 2) return;
-      const key = [...selected].sort().join('_');
-      if (known.has(key)) {
-        const target = new URL(rootHref + key + '/#country-picker', window.location.origin);
-        if (window.location.pathname !== target.pathname) window.location.assign(target.toString());
+      if (index > 0 && !select.value && selected[index]) {
+        // Clearing via the placeholder is equivalent to the × control.
+        navigate(removeMultiCountrySelection(selected, index));
+        return;
       }
+      const next = [...selected.slice(0, index), ...(select.value ? [select.value] : [])];
+      if (next.length >= 2 && navigate(next)) return;
+      // A one-country selection has no canonical page; on another catalogue
+      // return to the general hub without losing that first choice.
+      if (next.length < 2 && window.location.pathname !== rootPath) {
+        navigate(next);
+        return;
+      }
+      selected = next;
+      render();
     });
+  });
+
+  removeButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const index = Number(button.dataset.mcRemove);
+      if (!selected[index]) return;
+      navigate(removeMultiCountrySelection(selected, index));
+    });
+  });
+
+  picker.querySelector<HTMLAnchorElement>('[data-mc-reset]')?.addEventListener('click', () => {
+    try { window.sessionStorage.removeItem(firstCountryState); } catch { /* Ignore. */ }
   });
 }

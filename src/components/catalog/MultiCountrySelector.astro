@@ -52,6 +52,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
                 <option value={country.slug} selected={step.value === country.slug}>{country.name}</option>
               ))}
             </select>
+            <span class="mc-picker__placeholder-text" aria-hidden="true">{descriptions[step.index]}</span>
             <svg class="mc-picker__select-arrow" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
               <path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" />
             </svg>
@@ -138,10 +139,33 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     font-size: 1.1rem;
     cursor: pointer;
   }
-  .mc-picker__field select.mc-picker__select--placeholder {
+  /* Keep the native option list dark. A pale placeholder is painted only
+     over the closed, empty control, so the dropdown never inherits its color. */
+  .mc-picker__placeholder-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    max-width: calc(100% - 52px);
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 4px 8px 4px 0;
+    background: var(--color-bg);
     color: color-mix(in srgb, var(--color-ink) 55%, var(--color-bg));
+    font: inherit;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    pointer-events: none;
+  }
+  .mc-picker__field select.mc-picker__select--placeholder + .mc-picker__placeholder-text {
+    display: block;
   }
   .mc-picker__field select option { color: var(--color-ink); }
+  .mc-picker__field select option[value=""] {
+    color: color-mix(in srgb, var(--color-ink) 55%, var(--color-bg));
+  }
   .mc-picker__field select:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
   .mc-picker__remove {
     display: flex;
@@ -191,6 +215,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
       -webkit-appearance: none;
       padding-right: 48px;
     }
+    .mc-picker__placeholder-text { font-size: 1rem; }
     .mc-picker__select-arrow {
       display: block;
       position: absolute;

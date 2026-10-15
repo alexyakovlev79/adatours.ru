@@ -271,6 +271,7 @@ primaryThemes: ["theme_culture","theme_beach"]
 themes: ["theme_wildlife"]
 archivedAt: "2026-10-15"
 archiveReason: "user_requested"
+archiveDuplicateOf: "tour_source_fantasticheskij_tur_po_meksike"
 ---
 
 **Условия стоимости:** на человека при размещении DBL в отелях 4* и группе из 6 человек

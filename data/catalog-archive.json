@@ -1368,7 +1368,7 @@
       "status": "archived",
       "archivedAt": "2026-10-15",
       "reason": "user_requested",
-      "evidence": "Прямая команда пользователя 15.10.2026: «P103 архивируй версию тура без цены». Выбрана страница «Мексика Фантастическая» без priceFrom. Страница «Фантастический Тур по Мексике» с ценой 4046 USD остаётся активной. Порядок дней различается; duplicateOf не установлен, тождество программ не подтверждено.",
+      "evidence": "Прямая команда пользователя 15.10.2026: «P103 архивируй версию тура без цены». Выбрана страница «Мексика Фантастическая» без priceFrom. Страница «Фантастический Тур по Мексике» с ценой 4046 USD остаётся активной. Порядок дней различается; duplicateOf не установлен, тождество программ не подтверждено. Активная страница сохранена; все 12 дней приведены к Word P103, обе цены 4046/5209 подтверждены полным DOCX. Архивная страница сохранена как дубль обновлённой программы.",
       "hadPage": true,
       "previousStatus": "published",
       "sheet": {
@@ -1385,7 +1385,74 @@
         "folderPath": "page_texts_rewrite_v2",
         "mimeType": "text/markdown"
       },
-      "originalBodySha256": "7e1a987f787b9fa415ce6b8a3013424d937740a51e5912934ac64aeff28579eb"
+      "originalBodySha256": "7e1a987f787b9fa415ce6b8a3013424d937740a51e5912934ac64aeff28579eb",
+      "duplicateOf": "tour_source_fantasticheskij_tur_po_meksike"
+    },
+    {
+      "id": "tour_source_argentina_chili_boliviya",
+      "type": "tour",
+      "name": "Аргентина, Чили и Боливия: Патагония и Уюни за 12 дней",
+      "url": "/multi-country/tour/argentina-chile-bolivia-patagonia-12-days/",
+      "contentPath": "src/content/tours/argentina-chili-boliviya.md",
+      "sourceUrl": "https://brasiltours.ru/argentina-chili-boliviya",
+      "legacyUrls": [
+        "/tury/argentina-chili-boliviya/",
+        "/argentina/tour/argentina-chili-boliviya/",
+        "/argentina/tour/argentina-chile-bolivia-patagonia-12-days/"
+      ],
+      "status": "archived",
+      "archivedAt": "2026-10-15",
+      "reason": "duplicate",
+      "evidence": "Программы и услуги обеих страниц полностью совпадают; сохранена patagonia-uyuni-salt-flats-12-days, существующие SEO-рекомендации перенесены. Прямое поручение пользователя свести один Word к одному активному туру.",
+      "duplicateOf": "tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni",
+      "hadPage": true,
+      "previousStatus": "published",
+      "sheet": {
+        "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
+        "sheetName": "Страницы",
+        "row": 317
+      },
+      "sourceText": {
+        "url": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/tours/argentina-chili-boliviya.md",
+        "name": "argentina-chili-boliviya.md",
+        "kind": "verified_primary_revision",
+        "mimeType": "text/markdown"
+      },
+      "originalBodySha256": "b0138d01945e3d8fc355f315668c0879d6e253b75f1aae9ea8b12236cbe5f3d2"
+    },
+    {
+      "id": "tour_source_tur_v_braziliyu_za_vkusami",
+      "type": "tour",
+      "name": "Тур в Бразилию в Рио де Жанейро, Илья-Гранди, Парати",
+      "url": "/brazil/tour/brazil-rio-ilha-grande-paraty/",
+      "contentPath": "src/content/tours/tur-v-braziliyu-za-vkusami.md",
+      "sourceUrl": "https://brasiltours.ru/tur-v-braziliyu-za-vkusami",
+      "legacyUrls": [
+        "/tury/tur-v-braziliyu-za-vkusami/",
+        "/braziliya/tour/tur-v-braziliyu-za-vkusami/"
+      ],
+      "status": "archived",
+      "archivedAt": "2026-10-15",
+      "reason": "duplicate",
+      "evidence": "Сохранён flavors-of-brazil с более полными днями и длительностью экскурсий; частные лодочные трансферы и условия цен приведены к Word. Прямое поручение пользователя свести один Word к одному активному туру.",
+      "duplicateOf": "tour_source_vkusy_brazilii",
+      "hadPage": true,
+      "previousStatus": "published",
+      "sheet": {
+        "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
+        "sheetName": "Страницы",
+        "row": 420
+      },
+      "sourceText": {
+        "driveId": "1A6swRGCcqaJ0JCwdpe0ADbL0DIR42sc2",
+        "url": "https://drive.google.com/file/d/1A6swRGCcqaJ0JCwdpe0ADbL0DIR42sc2/view?usp=drivesdk",
+        "name": "tur-v-braziliyu-za-vkusami__a029153f.md",
+        "kind": "rewrite_v2",
+        "folderId": "1-9mtF_QMc3oFgRiwmNU8ZNo8lWFEA0Rs",
+        "folderPath": "page_texts_rewrite_v2",
+        "mimeType": "text/markdown"
+      },
+      "originalBodySha256": "70fd78a4453f5fba6f215e22afe42f666acd79a3d4336a29a1f17efcf09f3a81"
     }
   ],
   "review": [
@@ -1420,14 +1487,6 @@
       ],
       "decision": "retained_for_review",
       "note": "Одинаковый каркас 15 дней, но вторая программа включает Янакочу и Килотоа и другое питание дней 9–10. Сохранены как варианты."
-    },
-    {
-      "ids": [
-        "tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni",
-        "tour_source_argentina_chili_boliviya"
-      ],
-      "decision": "retained_for_review",
-      "note": "Очень схожие 12 дней, но различается расклад дней 9–11 и возврат из Боливии в Атакаму. Обе пока не опубликованы; нужно сверить ночевки перед объединением."
     },
     {
       "ids": [

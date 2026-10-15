@@ -5,8 +5,8 @@ slug: patagonia-uyuni-salt-flats-12-days
 status: published
 title: 'Патагония и солончак Уюни: Аргентина, Чили и Боливия за 12 дней'
 sourceUrl: https://brasiltours.ru/prekrasnaya-patagoniya-i-solonchak-uyuni
-sourceSnapshot: https://docs.google.com/document/d/1NErCFKzKVsPpaWpU5nexkagASyPFgy3K/edit
-updatedAt: '2026-10-04'
+sourceSnapshot: https://docs.google.com/document/d/1hEl65uC5XxRmXN-vzq3TFZkQ9Eny65gz/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true
+updatedAt: '2026-10-15'
 countries:
 - country_argentina
 - country_chile
@@ -265,8 +265,6 @@ primaryThemes: ["theme_wildlife","theme_culture"]
 themes: []
 ---
 
-
-
 ## Отели и тарифы 2027 года
 
 Проживание: Icaro Suites в Буэнос-Айресе — 2 ночи; Calafate Parque — 2 ночи; Costaustralis в Пуэрто-Наталесе — 2 ночи; Torremayor Lyon в Сантьяго — 3 ночи суммарно; Tayka del Desierto — 1 ночь; Palacio de Sal — 1 ночь.
@@ -279,4 +277,3 @@ themes: []
 | 3 | 8087 | 6228 | 6278 |
 
 Авиабилеты не включены. Тарифы на перелеты рассчитываются для фактических дат и последовательности маршрута, а не по чужому списку рейсов через Рио.
-

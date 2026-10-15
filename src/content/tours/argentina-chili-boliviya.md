@@ -2,7 +2,7 @@
 id: tour_source_argentina_chili_boliviya
 locale: ru
 slug: argentina-chile-bolivia-patagonia-12-days
-status: published
+status: archived
 title: 'Аргентина, Чили и Боливия: Патагония и Уюни за 12 дней'
 sourceUrl: https://brasiltours.ru/argentina-chili-boliviya
 sourceSnapshot: https://docs.google.com/document/d/1NErCFKzKVsPpaWpU5nexkagASyPFgy3K/edit
@@ -264,6 +264,9 @@ routeCountries:
 - country_bolivia
 primaryThemes: ["theme_wildlife","theme_culture"]
 themes: []
+archivedAt: "2026-10-15"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni"
 ---
 
 

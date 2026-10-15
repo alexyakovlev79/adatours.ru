@@ -142,6 +142,11 @@ test('multi-country SEO uses exact selected countries, verified USD minimum and 
   ],date:new Date('2026-10-15T06:00:00Z')});
   assert.ok(!mixed.title.includes('цены от'));
   assert.ok(mixed.description.startsWith('Достопримечательности Антарктиды, Чили и Перу.'));
+  const unknown = multiCountrySeoMetadata({countries,tours:[{data:{id:'unpriced',priceFrom:null,currency:'USD'}}],
+    date:new Date('2026-10-15T06:00:00Z')});
+  assert.equal(unknown.minUsdPrice,null,'An unpriced combination has no invented zero-dollar price');
+  assert.ok(!unknown.title.includes('$0'));
+  assert.ok(!unknown.description.includes('$0'));
   const unchanged = enrichSeoPriceMetadata({
     title:seo.title, description:seo.description,
     prices:[{kind:'tour',amount:6595,currency:'USD',id:'two'}, {kind:'tour',amount:7800,currency:'USD',id:'one'}],

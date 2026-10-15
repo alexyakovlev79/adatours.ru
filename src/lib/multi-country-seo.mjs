@@ -12,7 +12,7 @@ export function multiCountrySeoMetadata({ countries, tours, destinations = [], d
       && tour.priceFrom > 0 && /^[A-Z]{3}$/.test(tour.currency ?? ''));
   // Other currencies are not converted to USD. No amount is quoted if the
   // selection has priced tours in incomparable currencies.
-  const minUsdPrice = prices.length && prices.every((tour) => tour.currency === 'USD')
+  const minUsdPrice = prices.length > 0 && prices.every((tour) => tour.currency === 'USD')
     ? Math.min(...prices.map((tour) => Math.round(tour.priceFrom))) : null;
   const priceLabel = minUsdPrice !== null ? 'от ' + formatSeoMoney(minUsdPrice, 'USD') : '';
   const title = nameList + ': Каталог ' + seoYearRange(date) + ': '

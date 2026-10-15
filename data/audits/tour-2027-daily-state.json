@@ -4,10 +4,126 @@
   "repository": "alexyakovlev79/adatours.ru",
   "driveRootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
   "inventoryPath": "data/audits/tour-inventory-drive-20261009.json",
-  "lastAttempt": null,
-  "lastCompleteScanAt": null,
+  "lastAttempt": {
+    "at": "2026-10-15T17:13:12Z",
+    "kind": "manual_integration_control_scan",
+    "status": "completed_detection_only",
+    "note": "No content or media publication attempted in this control scan."
+  },
+  "lastCompleteScanAt": "2026-10-15T17:13:12Z",
   "lastSuccessfulBatchAt": null,
-  "openQueue": [],
-  "runs": [],
+  "openQueue": [
+    {
+      "programKey": "P117",
+      "driveFileId": "1CjiOSoQOYw57N_BEWBLto6w4aEU5KJDB",
+      "name": "Chile Argentina Deluxe 14d13n 2027 RUS com 20%.docx",
+      "observedModifiedTime": "2026-10-15T13:45:50.525Z",
+      "previousModifiedTime": "2026-09-18T10:21:05.000Z",
+      "reason": "modified_since_inventory",
+      "stage": "detected_needs_content_comparison",
+      "tourId": "tour_source_chili_argentina"
+    },
+    {
+      "programKey": "P122",
+      "driveFileId": "1wxd4Fq4-rEaL2TE50dJMhgNl4EzuJJNX",
+      "name": "Brazil Argentina Chile with Patagonia and Atacama 2027 RUS 13d 12n com20%.docx",
+      "observedModifiedTime": "2026-10-15T13:22:43.920Z",
+      "previousModifiedTime": "2026-10-14T13:56:10.383Z",
+      "reason": "modified_since_last_done",
+      "stage": "detected_needs_content_comparison",
+      "tourId": "tour_source_luchshee_brazilii_argentiny_i_chili"
+    },
+    {
+      "programKey": "P111",
+      "driveFileId": "1-ppkM_nl815BdOJUUHwIsC868DfzI8mJ",
+      "name": "All Argentina 2027 26d25n RUS SIB 20%.docx",
+      "observedModifiedTime": "2026-10-15T13:12:12.889Z",
+      "previousModifiedTime": "2026-10-14T12:09:21.477Z",
+      "reason": "modified_since_last_done",
+      "stage": "detected_needs_content_comparison",
+      "tourId": "tour_source_vsya_argentina"
+    },
+    {
+      "programKey": "P153",
+      "driveFileId": "1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX",
+      "name": "5 countries Carnival Champion 18d17n 2027 RUS 500.docx",
+      "observedModifiedTime": "2026-10-12T14:29:36.043Z",
+      "previousModifiedTime": "2026-08-17T00:36:40.605Z",
+      "reason": "modified_since_inventory",
+      "stage": "detected_needs_content_comparison"
+    },
+    {
+      "programKey": null,
+      "driveFileId": "1FO7BcjDJgArdLqmabhS5L9LW5Y4VmK0i",
+      "name": "Amazing Peru, Bolivia, Solar de Uyuni and National reservation 2027 15d14n RUS 20%.docx",
+      "observedModifiedTime": "2026-10-12T19:30:44.089Z",
+      "reason": "word_not_in_inventory",
+      "stage": "detected_needs_identity_check"
+    },
+    {
+      "programKey": null,
+      "driveFileId": "1S8O23p3rfd15P5ihSppvW2C-1cYmM57S",
+      "name": "Amazing Peru, Bolivia and Solar de Uyuni 2027 12d11n RUS 20%.docx",
+      "observedModifiedTime": "2026-10-12T18:40:12.623Z",
+      "reason": "word_not_in_inventory",
+      "stage": "detected_needs_identity_check"
+    }
+  ],
+  "runs": [
+    {
+      "id": "manual-control-2026-10-15",
+      "startedAt": "2026-10-15T17:07:23Z",
+      "finishedAt": "2026-10-15T17:13:12Z",
+      "scanStatus": "complete",
+      "foldersScanned": 26,
+      "rootChildren": 25,
+      "filesObserved": 205,
+      "sourceInventorySnapshotAt": "2026-10-14",
+      "candidateChangedFileIds": [
+        "1CjiOSoQOYw57N_BEWBLto6w4aEU5KJDB",
+        "1wxd4Fq4-rEaL2TE50dJMhgNl4EzuJJNX",
+        "1-ppkM_nl815BdOJUUHwIsC868DfzI8mJ",
+        "1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX"
+      ],
+      "unregisteredWordCandidates": [
+        "1FO7BcjDJgArdLqmabhS5L9LW5Y4VmK0i",
+        "1S8O23p3rfd15P5ihSppvW2C-1cYmM57S"
+      ],
+      "unclassifiedOrAuxiliary": [
+        {
+          "driveFileId": "1q6OMZlJa330EA2p9cPUs81Soe5nxNSNF",
+          "name": "Excursions AdaTours Rio Iguazu 2027 RUS COM 20%.docx",
+          "reason": "excursion_document_not_a_tour"
+        },
+        {
+          "driveFileId": "1aodmuf2MCV25iJuC2XGK7ok7X9tu-Qpu",
+          "name": "CARNIVAL TICKETS 2027.docx",
+          "reason": "ticket_document_not_a_tour"
+        },
+        {
+          "driveFileId": "1HI1vzOx4WDYCTLmxZAfUou4ueUdgbIQt",
+          "name": "CARNIVAL TICKETS 2027.docx",
+          "reason": "ticket_document_not_a_tour"
+        },
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "name": "Lua_de_mel_Brasil_12D11N_-_FEV2027_-_Ada_Tours_RU_v12.pdf",
+          "reason": "pdf_program_needs_separate_identity_review"
+        },
+        {
+          "driveFileId": "1IgJJGHOBHSXL8L2WMgLYNz_8pI4yFWtx",
+          "name": "New Year in Rio de Janeiro 5d4n 2027 RUS.pdf",
+          "reason": "pdf_program_needs_separate_identity_review"
+        },
+        {
+          "driveFileId": "1Adh-AOGUci2h9GYP5hybGGbZlPU2vgkl",
+          "name": "Dreams Come True New Year Group 10d9n2027 RUS.pdf",
+          "reason": "pdf_program_needs_separate_identity_review"
+        }
+      ],
+      "errors": [],
+      "publicationStatus": "not_attempted"
+    }
+  ],
   "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items."
 }

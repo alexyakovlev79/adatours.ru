@@ -1,0 +1,972 @@
+{
+  "format_version": 1,
+  "batch_id": "adatours-com-identity-022",
+  "domain": "adatours.com",
+  "step": 3,
+  "checked_at": "2026-10-15T05:48:44.418Z",
+  "scope": "50 distinct active tours (41 Brazil and 9 Chile), frozen after identity-021. Exact standalone programme matches only; preserve rejected candidates.",
+  "source_catalogue": [
+    "data/source-index/catalogs/tours.json",
+    "src/content/tours/"
+  ],
+  "source_inventory": "adatours-com-url-inventory-20261012.json",
+  "source_coverage": {
+    "discovered": 647,
+    "fetched": 646,
+    "crawl_date": "2026-10-12",
+    "targeted_public_search_date": "2026-10-15",
+    "fresh_live_http_checks": 0,
+    "note": "Public-indexed product pages inspected; not a complete live crawl, and absence conclusions are not supported. No link synthesized by domain substitution."
+  },
+  "frozen_keys": [
+    "tour_source_vazhnoe_brazilii",
+    "tour_source_opyt_brazilii",
+    "tour_source_vkusy_brazilii",
+    "tour_brazil_foz_iguazu_three_days",
+    "tour_brazil_adventure_17d",
+    "tour_source_iguacu_falls",
+    "tour_iguazu_incentive_3_days",
+    "tour_source_lensojs_maranenses",
+    "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+    "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu",
+    "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas",
+    "tour_source_manaus_4_dnya_3_nochi",
+    "tour_brazil_recife_porto_noronha_10d",
+    "tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro",
+    "tour_source_severnyj_pantanal_vodopady_reki",
+    "tour_source_pantanal_4dnya_3_nochi",
+    "tour_source_pantanal_za_5_dnej",
+    "tour_brazil_pantanal_bonito_lencois_8d",
+    "tour_source_pantanal_bonito",
+    "tour_source_rybalka_v_pantanale",
+    "tour_source_rio_de_zhanejro",
+    "tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe",
+    "tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady",
+    "tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu",
+    "tour_source_karnaval_v_rio_de_zhanejro",
+    "tour_source_kongress_v_rio_de_zhanejro",
+    "tour_source_luchshee_v_rio_de_zhanejro_dlya_mice",
+    "tour_brazil_rio_four_days",
+    "tour_source_rio_de_janeiro_wedding",
+    "tour_source_prazdnik_gordosti_v_rio_de_zhanejro",
+    "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+    "tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu",
+    "tour_brazil_rio_iguazu_sao_paulo_group_9d",
+    "tour_source_nezabyvaemyj_novyj_god_v_rio",
+    "tour_sao_paulo_rio_october_11_days",
+    "tour_brazil_south_12d",
+    "tour_brazil_southern_vip_7_days",
+    "tour_source_tropicheskaya_braziliya",
+    "tour_brazil_tropical_champions_parade_rio_angra_2027",
+    "tour_source_wedding_ceremony_tropical_package",
+    "tour_source_nezabyvaemaya_braziliya",
+    "tour_source_chili_samoe_luchshee",
+    "tour_source_chili_zagadki_chelovechestva",
+    "tour_source_vip_chili_5",
+    "tour_chile_hidden_secrets_9_days_2027",
+    "tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
+    "tour_source_chili_santyago_pustynya_atakama_torres_del_pajne",
+    "tour_source_tur_v_chili_luchshee_v_strane_i_gastronomiya_gurme",
+    "tour_chile_easter_island_3_days_2027",
+    "tour_chile_marble_caves_san_rafael_three_days"
+  ],
+  "results": [
+    {
+      "key": "tour_source_vazhnoe_brazilii",
+      "type": "tour",
+      "name": "Важное Бразилии",
+      "ru_url": "https://adatours.ru/brazil/tour/essential-brazil/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/essential-brazil",
+      "evidence": {
+        "english_url": "https://adatours.com/essential-brazil",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "7 days, Rio de Janeiro–Manaus jungle lodge–Foz do Iguazu, same order and excursions; prices RU 3566 / EN 2951.25 differ",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_opyt_brazilii",
+      "type": "tour",
+      "name": "Опыт Бразилии",
+      "ru_url": "https://adatours.ru/brazil/tour/experience-brazil/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/brazil-experience",
+      "evidence": {
+        "english_url": "https://adatours.com/brazil-experience",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "10 days/9 nights, Rio 3, Foz 2, Visconde de Mauá 2, Paraty 2; same tour name and four-stop sequence; price USD 3395",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_vkusy_brazilii",
+      "type": "tour",
+      "name": "Вкусы Бразилии",
+      "ru_url": "https://adatours.ru/brazil/tour/flavors-of-brazil/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Вкусы Бразилии",
+        "flavors-of-brazil"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/flavours-of-brazil. Same 8-day Rio/Ilha Grande/Paraty family already linked to RU ID tour_source_tur_v_braziliyu_za_vkusami in batch021. Two RU products may be duplicates; do not assign duplicate sameAs without deciding canonical product."
+    },
+    {
+      "key": "tour_brazil_foz_iguazu_three_days",
+      "type": "tour",
+      "name": "3 дня в Фоз-ду-Игуасу: водопады с двух сторон и Парк птиц",
+      "ru_url": "https://adatours.ru/brazil/tour/foz-do-iguacu-three-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "3 дня в Фоз-ду-Игуасу: водопады с двух сторон и Парк птиц",
+        "foz-do-iguacu-three-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "No dedicated English product page with independently matched itinerary and duration was established in the bounded public search; not proof of absence."
+    },
+    {
+      "key": "tour_brazil_adventure_17d",
+      "type": "tour",
+      "name": "Большое приключение по Бразилии: Рио, Игуасу, Пантанал, Бонито и Ленсойс за 17 дней",
+      "ru_url": "https://adatours.ru/brazil/tour/grand-brazil-adventure-17-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/brazil-adventures",
+      "evidence": {
+        "english_url": "https://adatours.com/brazil-adventures",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "17 days, Rio, Ilha Grande, Foz, Pantanal, Bonito, São Luís, Barreirinhas/Lençóis; detailed programme and USD 7233 agree",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_iguacu_falls",
+      "type": "tour",
+      "name": "Свадебная церемония любви на водопадах Игуасу",
+      "ru_url": "https://adatours.ru/brazil/tour/iguazu-falls-wedding/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Свадебная церемония любви на водопадах Игуасу",
+        "iguazu-falls-wedding"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/weddings-and-romance. Only thematic weddings catalogue identified, not the independent 3-day Iguazu waterfall wedding product."
+    },
+    {
+      "key": "tour_iguazu_incentive_3_days",
+      "type": "tour",
+      "name": "Игуасу за 3 дня: две стороны водопадов и Macuco Safari",
+      "ru_url": "https://adatours.ru/brazil/tour/iguazu-incentive-3-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Игуасу за 3 дня: две стороны водопадов и Macuco Safari",
+        "iguazu-incentive-3-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/foz-do-iguacu/packages. A destination listing is not the specific 3-day incentive programme."
+    },
+    {
+      "key": "tour_source_lensojs_maranenses",
+      "type": "tour",
+      "name": "Ленсойс-Мараньенсес",
+      "ru_url": "https://adatours.ru/brazil/tour/lencois-maranhenses/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/lencois-maranhenses-for-4-days",
+      "evidence": {
+        "english_url": "https://adatours.com/lencois-maranhenses-for-4-days",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "4 days, São Luís–Barreirinhas–Lençóis–São Luís; same park excursions, river cruise and USD 1315 price",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+      "type": "tour",
+      "name": "Люксовый индивидуальный тур в Бразилию с Амазонией | 16 дней",
+      "ru_url": "https://adatours.ru/brazil/tour/luxury-brazil-amazon-16-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Люксовый индивидуальный тур в Бразилию с Амазонией | 16 дней",
+        "luxury-brazil-amazon-16-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/luxury-tour-brazil. English VIP Brazil hub, not a verified matching 16-day Amazon premium itinerary."
+    },
+    {
+      "key": "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu",
+      "type": "tour",
+      "name": "Тур в Бразилию на Карнавал в Рио и водопады Игуасу | 8 дней",
+      "ru_url": "https://adatours.ru/brazil/tour/luxury-brazil-rio-carnival-iguazu-8-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/luxury-tour-rio-carnival-iguazu-falls",
+      "evidence": {
+        "english_url": "https://adatours.com/luxury-tour-rio-carnival-iguazu-falls",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "8 days, Carnival VIP in Rio 5 nights + Iguazu 2, Copacabana Palace, Belmond, helicopter and Carnival Ball; USD 26780",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas",
+      "type": "tour",
+      "name": "Люксовый тур в Бразилию на Карнавал в Рио, Игуасу и Алагоас | 11 дней",
+      "ru_url": "https://adatours.ru/brazil/tour/luxury-brazil-rio-carnival-iguazu-alagoas-11-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/luxury-tour-rio-carnival-iguazu-falls-alagoas",
+      "evidence": {
+        "english_url": "https://adatours.com/luxury-tour-rio-carnival-iguazu-falls-alagoas",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "11 days, Rio Carnival VIP 5 nights, Iguazu 2, Alagoas 3; same premium programme and USD 30350",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_manaus_4_dnya_3_nochi",
+      "type": "tour",
+      "name": "Манаус: 4 дня / 3 ночи",
+      "ru_url": "https://adatours.ru/brazil/tour/manaus-4-days-3-nights/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/manaus-4-days-3-nights",
+      "evidence": {
+        "english_url": "https://adatours.com/manaus-4-days-3-nights",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "4 days/3 nights, Manaus Amazon lodge, caboclo/community, night canoe and fishing; USD 1298",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_brazil_recife_porto_noronha_10d",
+      "type": "tour",
+      "name": "Северо-восток Бразилии: Ресифи, Порту-ди-Галиньяш и Фернанду-ди-Норонья за 10 дней",
+      "ru_url": "https://adatours.ru/brazil/tour/northeast-brazil-recife-porto-de-galinhas-fernando-de-noronha-10-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/beaches-of-brazil-recife-porto-de-galinhas-diving-at-fernando-de-noronha",
+      "evidence": {
+        "english_url": "https://adatours.com/beaches-of-brazil-recife-porto-de-galinhas-diving-at-fernando-de-noronha",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "10 days, Recife/Olinda–Porto de Galinhas–Fernando de Noronha; matching coastal sequence and dive/island days; language-specific price differs",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro",
+      "type": "tour",
+      "name": "Индивидуальный тур в Бразилию: Северный Пантанал, Водопады и Рио-де-Жанейро",
+      "ru_url": "https://adatours.ru/brazil/tour/northern-pantanal-waterfalls-rivers-rio-de-janeiro/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/northern-pantanal-waterfalls-rivers-rio-de-janeiro",
+      "evidence": {
+        "english_url": "https://adatours.com/northern-pantanal-waterfalls-rivers-rio-de-janeiro",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "8 days, Chapada dos Guimarães, northern Pantanal/Pantanal lodge, Porto Jofre jaguar safari, finish Rio; same day route",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_severnyj_pantanal_vodopady_reki",
+      "type": "tour",
+      "name": "Индивидуальный тур в Бразилию: Северный Пантанал – водопады и реки",
+      "ru_url": "https://adatours.ru/brazil/tour/northern-pantanal-waterfalls-rivers/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/northern-pantanal-waterfalls-rivers",
+      "evidence": {
+        "english_url": "https://adatours.com/northern-pantanal-waterfalls-rivers",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "5 days, Cuiabá, Bom Jardim, Chapada dos Guimarães, northern Pantanal lodge, Porto Jofre; matching safari sequence",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_pantanal_4dnya_3_nochi",
+      "type": "tour",
+      "name": "Пантанал 4дня/ 3 ночи",
+      "ru_url": "https://adatours.ru/brazil/tour/pantanal-4-days-3-nights/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/the-pantanal-4-days-3-nights",
+      "evidence": {
+        "english_url": "https://adatours.com/the-pantanal-4-days-3-nights",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "4 days/3 nights in Pantanal lodge, riding, safari, fishing, transfer; USD 3809",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_pantanal_za_5_dnej",
+      "type": "tour",
+      "name": "Пантанал за 5 дней",
+      "ru_url": "https://adatours.ru/brazil/tour/pantanal-5-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/the-pantanal-for-5-days",
+      "evidence": {
+        "english_url": "https://adatours.com/the-pantanal-for-5-days",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "5 days/4 nights Pantanal lodge, daily safaris, boat trips, fishing; USD 4145",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_brazil_pantanal_bonito_lencois_8d",
+      "type": "tour",
+      "name": "Пантанал, Бонито и Ленсойс-Мараньенсес за 8 дней",
+      "ru_url": "https://adatours.ru/brazil/tour/pantanal-bonito-lencois-maranhenses-8-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Пантанал, Бонито и Ленсойс-Мараньенсес за 8 дней",
+        "pantanal-bonito-lencois-maranhenses-8-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/fascinating-tour. English 14-day circuit Rio/Pantanal/Bonito/Manaus/Lençóis differs substantially from RU 8-day Pantanal/Bonito/Lençóis."
+    },
+    {
+      "key": "tour_source_pantanal_bonito",
+      "type": "tour",
+      "name": "Пантанал & Бонито",
+      "ru_url": "https://adatours.ru/brazil/tour/pantanal-bonito/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Пантанал & Бонито",
+        "pantanal-bonito"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/exotic-cocktail-with-rio-and-pantanal. English 9-day Rio/Pantanal/Bonito programme includes Rio; RU is 6 days Pantanal/Bonito only."
+    },
+    {
+      "key": "tour_source_rybalka_v_pantanale",
+      "type": "tour",
+      "name": "Рыбалка в Пантанале",
+      "ru_url": "https://adatours.ru/brazil/tour/pantanal-fishing/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Рыбалка в Пантанале",
+        "pantanal-fishing"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/fishing-in-the-pantanal. English Porto Jofre package offers 2–7 days and several price/boat arrangements; RU fixed 4-day product not independently matched in detail."
+    },
+    {
+      "key": "tour_source_rio_de_zhanejro",
+      "type": "tour",
+      "name": "Спортивная рыбалка – Pousada Mamori",
+      "ru_url": "https://adatours.ru/brazil/tour/pousada-mamori-sport-fishing/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/sport-fishing-pousada-mamori",
+      "evidence": {
+        "english_url": "https://adatours.com/sport-fishing-pousada-mamori",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "Sport Fishing – Pousada Mamori, Manaus and lodge, 2-night package, same specialty fishing product and species; RU 3-day package",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe",
+      "type": "tour",
+      "name": "Незабываемый карнавал в Рио с отдыхом на побережье и водопадами",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-carnival-waterfalls-coast/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/brazil-carnival-iguazu-beach-tour-12-days",
+      "evidence": {
+        "english_url": "https://adatours.com/brazil-carnival-iguazu-beach-tour-12-days",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "12 days, Rio Carnival 4 nights, Iguazu 3, Angra dos Reis coast 4; group 2027 Champions Parade and optional coast activities",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady",
+      "type": "tour",
+      "name": "Парад чемпионов в Рио-де-Жанейро и водопады Игуасу",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-champions-parade-waterfalls/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Парад чемпионов в Рио-де-Жанейро и водопады Игуасу",
+        "rio-champions-parade-waterfalls"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/champion-parade-in-rio-and-iguazu-waterfalls. 7-day Rio 3/Foz 3 route matches, but English departure is Feb 20–26 2026 and Russian Feb 12–18 2027: historical/new offer not established identical."
+    },
+    {
+      "key": "tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu",
+      "type": "tour",
+      "name": "Рио-де-Жанейро - Амазония - Водопады Игуасу",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-de-janeiro-amazon-iguazu-falls/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/rio-de-janeiro-amazon-iguazu-falls",
+      "evidence": {
+        "english_url": "https://adatours.com/rio-de-janeiro-amazon-iguazu-falls",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "8 days, Rio–Manaus/Amazonia–Foz Iguazu, same three-region day sequence, flights and waterfall sides",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_karnaval_v_rio_de_zhanejro",
+      "type": "tour",
+      "name": "Тур на Карнавал в Рио в Бразилии: цены и программа тура",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-de-janeiro-carnival/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/rio-de-janeiro-carnival-5-day-tour-with-champions-parade",
+      "evidence": {
+        "english_url": "https://adatours.com/rio-de-janeiro-carnival-5-day-tour-with-champions-parade",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "5 days Feb 12–16 2027 group Carnival at Sambadrome, Sugarloaf and Corcovado, Rio-only 4-night programme",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_kongress_v_rio_de_zhanejro",
+      "type": "tour",
+      "name": "Корпоративный тур в Рио-де-Жанейро на 5 дней",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-de-janeiro-corporate-tour-5-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/congress-in-rio-de-janeiro",
+      "evidence": {
+        "english_url": "https://adatours.com/congress-in-rio-de-janeiro",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "5-day/4-night Rio congress, corporate events and Corcovado/Sugarloaf excursions, dinner programme",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_luchshee_v_rio_de_zhanejro_dlya_mice",
+      "type": "tour",
+      "name": "Корпоративный тур в Рио-де-Жанейро на 6 дней",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-de-janeiro-corporate-tour-6-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/best-of-rio-for-mice",
+      "evidence": {
+        "english_url": "https://adatours.com/best-of-rio-for-mice",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "6-day/5-night corporate MICE programme in Rio with group dining and signature city tours",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_brazil_rio_four_days",
+      "type": "tour",
+      "name": "4 дня в Рио-де-Жанейро: Сахарная Голова и Христос-Искупитель",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-de-janeiro-four-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "4 дня в Рио-де-Жанейро: Сахарная Голова и Христос-Искупитель",
+        "rio-de-janeiro-four-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/rio-de-janeiro/packages. City listing does not establish the specific 4-day Rio tour."
+    },
+    {
+      "key": "tour_source_rio_de_janeiro_wedding",
+      "type": "tour",
+      "name": "Свадебная церемония любви на пляже в Рио де Жанейро (Praia Vermelha)",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-de-janeiro-praia-vermelha-wedding/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Свадебная церемония любви на пляже в Рио де Жанейро (Praia Vermelha)",
+        "rio-de-janeiro-praia-vermelha-wedding"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "No dedicated English product page with independently matched itinerary and duration was established in the bounded public search; not proof of absence."
+    },
+    {
+      "key": "tour_source_prazdnik_gordosti_v_rio_de_zhanejro",
+      "type": "tour",
+      "name": "Праздник гордости в Рио-де-Жанейро",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-de-janeiro-pride/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Праздник гордости в Рио-де-Жанейро",
+        "rio-de-janeiro-pride"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "No dedicated English product page with independently matched itinerary and duration was established in the bounded public search; not proof of absence."
+    },
+    {
+      "key": "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+      "type": "tour",
+      "name": "Рио и Игуасу с еврейским наследием Бразилии",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-iguazu-jewish-heritage-8-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Рио и Игуасу с еврейским наследием Бразилии",
+        "rio-iguazu-jewish-heritage-8-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "No dedicated English product page with independently matched itinerary and duration was established in the bounded public search; not proof of absence."
+    },
+    {
+      "key": "tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu",
+      "type": "tour",
+      "name": "Новый год в Рио и на Игуасу: тур 7 дней от $1791",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-iguazu-new-year-7-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/new-year-adventure-in-rio-and-iguazu",
+      "evidence": {
+        "english_url": "https://adatours.com/new-year-adventure-in-rio-and-iguazu",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "7 days, Rio 3 nights and Iguazu 3; New Year on Copacabana, both waterfall sides, USD 1791 in RU and EN",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_brazil_rio_iguazu_sao_paulo_group_9d",
+      "type": "tour",
+      "name": "Бразилия для группы: Рио-де-Жанейро, Игуасу и Сан-Паулу",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-iguazu-sao-paulo-group-9-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Бразилия для группы: Рио-де-Жанейро, Игуасу и Сан-Паулу",
+        "rio-iguazu-sao-paulo-group-9-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/rio-de-janeiro/packages. No exact 9-day Rio–Iguazu–Sao Paulo group programme demonstrated by this catalogue."
+    },
+    {
+      "key": "tour_source_nezabyvaemyj_novyj_god_v_rio",
+      "type": "tour",
+      "name": "Новый год в Рио: Копакабана, статуя Христа, Сахарная Голова",
+      "ru_url": "https://adatours.ru/brazil/tour/rio-new-year-copacabana-christ-redeemer-sugarloaf/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/brazil-group-new-year-tour-rio-5-days",
+      "evidence": {
+        "english_url": "https://adatours.com/brazil-group-new-year-tour-rio-5-days",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "5 days/4 nights, New Year in Rio only with Copacabana fireworks, Corcovado/Sugarloaf; price USD 2056",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_sao_paulo_rio_october_11_days",
+      "type": "tour",
+      "name": "Сан-Паулу и Рио-де-Жанейро: 11 дней в октябре",
+      "ru_url": "https://adatours.ru/brazil/tour/sao-paulo-rio-october-11-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Сан-Паулу и Рио-де-Жанейро: 11 дней в октябре",
+        "sao-paulo-rio-october-11-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "No dedicated English product page with independently matched itinerary and duration was established in the bounded public search; not proof of absence."
+    },
+    {
+      "key": "tour_brazil_south_12d",
+      "type": "tour",
+      "name": "Южная Бразилия за 12 дней: Рио, Игуасу, Грамаду, каньоны и Флорианополис",
+      "ru_url": "https://adatours.ru/brazil/tour/southern-brazil-rio-iguazu-gramado-florianopolis-12-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Южная Бразилия за 12 дней: Рио, Игуасу, Грамаду, каньоны и Флорианополис",
+        "southern-brazil-rio-iguazu-gramado-florianopolis-12-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/southern-brazil. English 13 days / 12 nights, Russian 12 days; same stops/price but duration discrepancy prevents definite equality of programmes."
+    },
+    {
+      "key": "tour_brazil_southern_vip_7_days",
+      "type": "tour",
+      "name": "Южная Бразилия VIP: виноградники, каньоны и океан",
+      "ru_url": "https://adatours.ru/brazil/tour/southern-brazil-vip-7-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Южная Бразилия VIP: виноградники, каньоны и океан",
+        "southern-brazil-vip-7-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "No dedicated English product page with independently matched itinerary and duration was established in the bounded public search; not proof of absence."
+    },
+    {
+      "key": "tour_source_tropicheskaya_braziliya",
+      "type": "tour",
+      "name": "Тур в Бразилию: Рио-де-Жанейро и пляжный отдых в Бузиосе",
+      "ru_url": "https://adatours.ru/brazil/tour/tropical-brazil-rio-buzios/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/tropical-brazil",
+      "evidence": {
+        "english_url": "https://adatours.com/tropical-brazil",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "12 days/11 nights, Rio 4 nights then Búzios 7 nights; same beach-heavy programme",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_brazil_tropical_champions_parade_rio_angra_2027",
+      "type": "tour",
+      "name": "Тропический Парад чемпионов 2027: Рио и Ангра-дус-Рейс",
+      "ru_url": "https://adatours.ru/brazil/tour/tropical-champions-parade-rio-angra-2027/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Тропический Парад чемпионов 2027: Рио и Ангра-дус-Рейс",
+        "tropical-champions-parade-rio-angra-2027"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/brazil-carnival-iguazu-beach-tour-12-days. English 12-day Carnival/Iguazu/Angra package; Russian 10-day Rio/Angra Champions Parade without Iguazu."
+    },
+    {
+      "key": "tour_source_wedding_ceremony_tropical_package",
+      "type": "tour",
+      "name": "Тропическая свадебная церемония",
+      "ru_url": "https://adatours.ru/brazil/tour/tropical-wedding-ceremony/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Тропическая свадебная церемония",
+        "tropical-wedding-ceremony"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "No dedicated English product page with independently matched itinerary and duration was established in the bounded public search; not proof of absence."
+    },
+    {
+      "key": "tour_source_nezabyvaemaya_braziliya",
+      "type": "tour",
+      "name": "Индивидуальный тур в Бразилию, по лучшим местам за 12 дней",
+      "ru_url": "https://adatours.ru/brazil/tour/unforgettable-brazil-private-tour-12-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Индивидуальный тур в Бразилию, по лучшим местам за 12 дней",
+        "unforgettable-brazil-private-tour-12-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "No dedicated English product page with independently matched itinerary and duration was established in the bounded public search; not proof of absence."
+    },
+    {
+      "key": "tour_source_chili_samoe_luchshee",
+      "type": "tour",
+      "name": "Тур в Чили на 12 дней по лучшим местам страны с о.Пасха",
+      "ru_url": "https://adatours.ru/chile/tour/best-of-chile-easter-island-12-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/chile-the-best-santiago-atacama-desert-torres-del-paine-easter-island",
+      "evidence": {
+        "english_url": "https://adatours.com/chile-the-best-santiago-atacama-desert-torres-del-paine-easter-island",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "12 days, Santiago–Atacama Desert–Torres del Paine–Easter Island, matching excursions to Moai/Patagonia",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_chili_zagadki_chelovechestva",
+      "type": "tour",
+      "name": "Индивидуальный тур в Чили и на остров Пасхи на 10 дней",
+      "ru_url": "https://adatours.ru/chile/tour/chile-easter-island-private-tour-10-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/chile-the-mysteries-of-men",
+      "evidence": {
+        "english_url": "https://adatours.com/chile-the-mysteries-of-men",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "10 days, Santiago/Valparaiso/Viña del Mar–Easter Island–Santiago, same Moai excursions",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_vip_chili_5",
+      "type": "tour",
+      "name": "VIP Чили 5*",
+      "ru_url": "https://adatours.ru/chile/tour/chile-five-star-vip/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "VIP Чили 5*",
+        "chile-five-star-vip"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/chile-vip-summer-wine. English VIP Chile Summer & Wine 11 days/10 nights, Russian VIP Chile 5-star 10 days, terms/itinerary differ."
+    },
+    {
+      "key": "tour_chile_hidden_secrets_9_days_2027",
+      "type": "tour",
+      "name": "Скрытые сокровища Чили: Атакама, Патагония и Мраморные пещеры",
+      "ru_url": "https://adatours.ru/chile/tour/chile-hidden-secrets-9-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Скрытые сокровища Чили: Атакама, Патагония и Мраморные пещеры",
+        "chile-hidden-secrets-9-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "No dedicated English product page with independently matched itinerary and duration was established in the bounded public search; not proof of absence."
+    },
+    {
+      "key": "tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
+      "type": "tour",
+      "name": "Чили: Космическое путешествие на Земле",
+      "ru_url": "https://adatours.ru/chile/tour/chile-otherworldly-journey/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Чили: Космическое путешествие на Земле",
+        "chile-otherworldly-journey"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "No dedicated English product page with independently matched itinerary and duration was established in the bounded public search; not proof of absence."
+    },
+    {
+      "key": "tour_source_chili_santyago_pustynya_atakama_torres_del_pajne",
+      "type": "tour",
+      "name": "Тур в Чили с пустыней Аатакама и парком Торрес-дель-Пайне в Патагонии",
+      "ru_url": "https://adatours.ru/chile/tour/chile-santiago-atacama-torres-del-paine/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/santiago-atacama-desert-torres-del-paine-eng",
+      "evidence": {
+        "english_url": "https://adatours.com/santiago-atacama-desert-torres-del-paine-eng",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "7 days, Santiago–San Pedro de Atacama–Puerto Natales/Torres del Paine, same regions and duration",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_source_tur_v_chili_luchshee_v_strane_i_gastronomiya_gurme",
+      "type": "tour",
+      "name": "VIP тур в Чили: Атакама, Патагония и гастрономия | Ada Tours",
+      "ru_url": "https://adatours.ru/chile/tour/chile-vip-atacama-patagonia-gourmet/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/chile-the-best-the-landscapes-and-gourmet-vip-food-experience-in-atacama",
+      "evidence": {
+        "english_url": "https://adatours.com/chile-the-best-the-landscapes-and-gourmet-vip-food-experience-in-atacama",
+        "source": "public_indexed_dedicated_product_page_2026-10-15",
+        "matching_evidence": "7-day VIP Chile: Santiago, Atacama, Torres del Paine with special gastronomy; same USD 10133",
+        "qualification": "Identity of underlying tour programme; independent localized price/booking terms must not be conflated.",
+        "retrieval_note": "Dedicated indexed adatours.com page viewed through public search; no whole-site crawl or complete commercial-offer equality claimed."
+      }
+    },
+    {
+      "key": "tour_chile_easter_island_3_days_2027",
+      "type": "tour",
+      "name": "Остров Пасхи: три дня среди моаи и вулканов",
+      "ru_url": "https://adatours.ru/chile/tour/easter-island-3-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Остров Пасхи: три дня среди моаи и вулканов",
+        "easter-island-3-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/great-south-america. Only optional Easter Island 3-day extension inside separate Peru/Bolivia/Chile product; no dedicated tour page verified."
+    },
+    {
+      "key": "tour_chile_marble_caves_san_rafael_three_days",
+      "type": "tour",
+      "name": "Мраморные пещеры и ледник Сан-Рафаэль: 3 дня в Патагонии",
+      "ru_url": "https://adatours.ru/chile/tour/marble-caves-san-rafael-3-days/",
+      "checked_at": "2026-10-15T05:48:44.418Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Мраморные пещеры и ледник Сан-Рафаэль: 3 дня в Патагонии",
+        "marble-caves-san-rafael-3-days"
+      ],
+      "search_scope": "Direct public search for dedicated adatours.com products, 2026-10-15; context from 647 saved English URLs / 646 fetched 2026-10-12; neither is a complete site crawl.",
+      "reason": "Candidate: https://adatours.com/chile-the-best-santiago-atacama-desert-torres-del-paine-easter-island. Marble Caves and San Rafael 3-day standalone programme not part of 12-day Chile/Easter Island itinerary."
+    }
+  ],
+  "excluded_approximate": [
+    {
+      "key": "tour_source_vkusy_brazilii",
+      "candidate": "https://adatours.com/flavours-of-brazil",
+      "reason": "Same 8-day Rio/Ilha Grande/Paraty family already linked to RU ID tour_source_tur_v_braziliyu_za_vkusami in batch021. Two RU products may be duplicates; do not assign duplicate sameAs without deciding canonical product."
+    },
+    {
+      "key": "tour_source_iguacu_falls",
+      "candidate": "https://adatours.com/weddings-and-romance",
+      "reason": "Only thematic weddings catalogue identified, not the independent 3-day Iguazu waterfall wedding product."
+    },
+    {
+      "key": "tour_iguazu_incentive_3_days",
+      "candidate": "https://adatours.com/foz-do-iguacu/packages",
+      "reason": "A destination listing is not the specific 3-day incentive programme."
+    },
+    {
+      "key": "tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
+      "candidate": "https://adatours.com/luxury-tour-brazil",
+      "reason": "English VIP Brazil hub, not a verified matching 16-day Amazon premium itinerary."
+    },
+    {
+      "key": "tour_brazil_pantanal_bonito_lencois_8d",
+      "candidate": "https://adatours.com/fascinating-tour",
+      "reason": "English 14-day circuit Rio/Pantanal/Bonito/Manaus/Lençóis differs substantially from RU 8-day Pantanal/Bonito/Lençóis."
+    },
+    {
+      "key": "tour_source_pantanal_bonito",
+      "candidate": "https://adatours.com/exotic-cocktail-with-rio-and-pantanal",
+      "reason": "English 9-day Rio/Pantanal/Bonito programme includes Rio; RU is 6 days Pantanal/Bonito only."
+    },
+    {
+      "key": "tour_source_rybalka_v_pantanale",
+      "candidate": "https://adatours.com/fishing-in-the-pantanal",
+      "reason": "English Porto Jofre package offers 2–7 days and several price/boat arrangements; RU fixed 4-day product not independently matched in detail."
+    },
+    {
+      "key": "tour_source_parad_chempionov_v_rio_de_zhanejro_vodopady",
+      "candidate": "https://adatours.com/champion-parade-in-rio-and-iguazu-waterfalls",
+      "reason": "7-day Rio 3/Foz 3 route matches, but English departure is Feb 20–26 2026 and Russian Feb 12–18 2027: historical/new offer not established identical."
+    },
+    {
+      "key": "tour_brazil_rio_four_days",
+      "candidate": "https://adatours.com/rio-de-janeiro/packages",
+      "reason": "City listing does not establish the specific 4-day Rio tour."
+    },
+    {
+      "key": "tour_brazil_rio_iguazu_sao_paulo_group_9d",
+      "candidate": "https://adatours.com/rio-de-janeiro/packages",
+      "reason": "No exact 9-day Rio–Iguazu–Sao Paulo group programme demonstrated by this catalogue."
+    },
+    {
+      "key": "tour_brazil_south_12d",
+      "candidate": "https://adatours.com/southern-brazil",
+      "reason": "English 13 days / 12 nights, Russian 12 days; same stops/price but duration discrepancy prevents definite equality of programmes."
+    },
+    {
+      "key": "tour_brazil_tropical_champions_parade_rio_angra_2027",
+      "candidate": "https://adatours.com/brazil-carnival-iguazu-beach-tour-12-days",
+      "reason": "English 12-day Carnival/Iguazu/Angra package; Russian 10-day Rio/Angra Champions Parade without Iguazu."
+    },
+    {
+      "key": "tour_source_vip_chili_5",
+      "candidate": "https://adatours.com/chile-vip-summer-wine",
+      "reason": "English VIP Chile Summer & Wine 11 days/10 nights, Russian VIP Chile 5-star 10 days, terms/itinerary differ."
+    },
+    {
+      "key": "tour_chile_easter_island_3_days_2027",
+      "candidate": "https://adatours.com/great-south-america",
+      "reason": "Only optional Easter Island 3-day extension inside separate Peru/Bolivia/Chile product; no dedicated tour page verified."
+    },
+    {
+      "key": "tour_chile_marble_caves_san_rafael_three_days",
+      "candidate": "https://adatours.com/chile-the-best-santiago-atacama-desert-torres-del-paine-easter-island",
+      "reason": "Marble Caves and San Rafael 3-day standalone programme not part of 12-day Chile/Easter Island itinerary."
+    }
+  ],
+  "summary": {
+    "processed": 50,
+    "confirmed": 25,
+    "checked_no_confirmed_pair": 25,
+    "errors": 0,
+    "verification_cursor_after": 1100,
+    "next_batch": "adatours-com-identity-023",
+    "confirmed_keys": [
+      "tour_source_vazhnoe_brazilii",
+      "tour_source_opyt_brazilii",
+      "tour_brazil_adventure_17d",
+      "tour_source_lensojs_maranenses",
+      "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu",
+      "tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas",
+      "tour_source_manaus_4_dnya_3_nochi",
+      "tour_brazil_recife_porto_noronha_10d",
+      "tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro",
+      "tour_source_severnyj_pantanal_vodopady_reki",
+      "tour_source_pantanal_4dnya_3_nochi",
+      "tour_source_pantanal_za_5_dnej",
+      "tour_source_rio_de_zhanejro",
+      "tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe",
+      "tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu",
+      "tour_source_karnaval_v_rio_de_zhanejro",
+      "tour_source_kongress_v_rio_de_zhanejro",
+      "tour_source_luchshee_v_rio_de_zhanejro_dlya_mice",
+      "tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu",
+      "tour_source_nezabyvaemyj_novyj_god_v_rio",
+      "tour_source_tropicheskaya_braziliya",
+      "tour_source_chili_samoe_luchshee",
+      "tour_source_chili_zagadki_chelovechestva",
+      "tour_source_chili_santyago_pustynya_atakama_torres_del_pajne",
+      "tour_source_tur_v_chili_luchshee_v_strane_i_gastronomiya_gurme"
+    ],
+    "by_country": {
+      "country_brazil": {
+        "checked": 41,
+        "confirmed": 21
+      },
+      "country_chile": {
+        "checked": 9,
+        "confirmed": 4
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, relative, dirname, sep } from 'node:path';
 import { parseSeoGeoArticle, seoGeoArticleFile } from '../src/lib/seo-geo.mjs';
 import { isArchivedPath } from '../src/lib/archive.mjs';
+import { createHash } from 'node:crypto';
+import { PREFLIGHT_GATE_SINCE } from './lib/seo-geo-recovery.mjs';
 
 const root = join(process.cwd(), 'data', 'seo-geo', 'articles');
 const dist = join(process.cwd(), 'dist');
@@ -15,12 +17,36 @@ const allFiles = (base) => {
 
 const registryRoot = join(process.cwd(), 'data', 'seo-geo', 'registry');
 const registryUrls = new Set();
+const errors = [];
 for (const name of ['01-countries.json', '02-interests.json', '03-country-interest.json',
   '04-country-interest-vip.json', '05-tours.json', '06-places.json', '07-excursions.json']) {
   const phase = JSON.parse(readFileSync(join(registryRoot, name), 'utf8'));
-  for (const row of phase.entries) registryUrls.add(row.url);
+  for (const row of phase.entries) {
+    registryUrls.add(row.url);
+    // Offline release gate: new staging articles must carry proof of a prior
+    // passing preflight for these exact article bytes. Historical rows are
+    // handled separately by the publishing master.
+    if (row.work !== 'prepared' || !row.preparedAt ||
+        row.preparedAt < PREFLIGHT_GATE_SINCE) continue;
+    if (!/^[0-9a-f]{40}$/.test(row.preflightCommit ?? '') ||
+        !/^[0-9a-f]{40}$/.test(row.preflightArticleBlobSha ?? '')) {
+      errors.push('Unverified SEO/GEO prepared article: ' + row.url);
+      continue;
+    }
+    const articlePath = seoGeoArticleFile(row.url);
+    const absolute = join(process.cwd(), articlePath);
+    if (!existsSync(absolute)) {
+      errors.push('Prepared SEO/GEO article file missing: ' + row.url);
+      continue;
+    }
+    const bytes = readFileSync(absolute);
+    const actual = createHash('sha1').update('blob ' + bytes.length + '\0')
+      .update(bytes).digest('hex');
+    if (actual !== row.preflightArticleBlobSha) {
+      errors.push('SEO/GEO article changed after preflight: ' + row.url);
+    }
+  }
 }
-const errors = [];
 const articles = allFiles(root).filter((file) => file.endsWith('.md'));
 const targets = new Set();
 let approved = 0;

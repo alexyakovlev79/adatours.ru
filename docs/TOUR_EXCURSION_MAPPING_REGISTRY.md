@@ -1,9 +1,9 @@
 # Ada Tours — реестр сопоставления туров и экскурсий
 
 Версия: 1.50
-Дата старта: 2026-09-30  
-Repo: `alexyakovlev79/adatours.ru`  
-Ветка: `main`  
+Дата старта: 2026-09-30
+Repo: `alexyakovlev79/adatours.ru`
+Ветка: `main`
 Базовый HEAD при создании реестра: `5f2a10064d6aad34718503337c62cf252af0c231`
 
 ## 0. Назначение
@@ -13,8 +13,8 @@ Repo: `alexyakovlev79/adatours.ru`
 Действующая методика: `docs/workflows/tour-excursion-linking.md`; общий процесс: `docs/workflows/master.md`. Старые записи ниже сохраняют историю, но не назначают дополнительные проверки, поиск источников, отдельные служебные commits или создание мест.
 
 Основной реестр страниц:
-`Ada Tours — реестр страниц нового сайта`  
-Google Sheet: `1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc`  
+`Ada Tours — реестр страниц нового сайта`
+Google Sheet: `1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc`
 Лист: `Страницы`
 
 Production tours:
@@ -1645,3 +1645,22 @@ Tour: `tour_chile_marble_caves_san_rafael_three_days`. Word Анны: https://do
 ## P043 — обновление свежим Word, 13.10.2026
 
 Источник: https://docs.google.com/document/d/1TGAF3QF8XX-VrVTVMgSs50tq7V8d7oGs/edit. 10 дней, 11 канонических excursionRef; добавлен собор Куско на день 3. Все 11 вставок имеют текст свежей программы именно этого тура: цены, язык, состав посещений и логистика не подменяются общими условиями экскурсии. URL/ID и 10 фото дней сохранены. Полная сверка DOCX и 9 тарифов: data/audits/p043-word-update-20261013.json.
+
+
+## Y26-004 — полный импорт Word 2026, 15.10.2026
+
+Тур `tour_chile_bolivia_peru_group_12_days_2026`: 12 обычных дней, 11 экскурсионных связей; условия каждого блока закреплены текстом именно этого Word. 3 экскурсии новые, 8 существующих переиспользованы. Основной источник: https://docs.google.com/document/d/1pCkFaciSHySvIMHJeQEP6SIJ4l8Hhgn8/edit.
+
+| День | Экскурсия |
+|---|---|
+| 2 | `excursion_santiago_historic_east_russian_group` |
+| 2 | `excursion_santiago_maipo_wine_tour` |
+| 3 | `excursion_atacama_astronomy_telescope_evening` |
+| 4 | `excursion_source_uyuni_na_2_dnya` |
+| 6 | `excursion_la_paz_city_moon_valley_four_hours` |
+| 7 | `excursion_source_la_pas_tiuanako_i_desaguadero_tur` |
+| 7 | `excursion_puno_uros_reed_islands_afternoon` |
+| 8 | `excursion_puno_cusco_andes_tourist_bus` |
+| 9 | `excursion_source_ekskursiya_v_zateryannyj_gorod_machu_pikchu` |
+| 10 | `excursion_cusco_archaeological_sites_russian_guide` |
+| 11 | `excursion_lima_huallamarca_cathedral_santo_domingo` |

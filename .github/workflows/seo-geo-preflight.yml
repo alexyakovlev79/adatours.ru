@@ -13,7 +13,8 @@ permissions:
   statuses: write
 
 concurrency:
-  group: seo-geo-staging-preflight
+  # Each author commit gets its own check; no pending run is displaced.
+  group: seo-geo-staging-${{ github.sha }}
   cancel-in-progress: false
 
 jobs:

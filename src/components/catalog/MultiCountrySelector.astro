@@ -124,7 +124,16 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   }
   .mc-picker__control { display: flex; align-items: center; gap: 10px; }
   .mc-picker__select-wrap { position: relative; flex: 1 1 auto; min-width: 0; }
-  .mc-picker__select-arrow { display: none; }
+  /* Same 20px chevron and 18px right inset as TourFilters. */
+  .mc-picker__select-arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--color-ink);
+  }
   .mc-picker__field select {
     display: block;
     width: 100%;
@@ -132,7 +141,9 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     min-height: 52px;
     border: 1px solid #aaa7a1;
     border-radius: 2px;
-    padding: 10px 16px;
+    padding: 10px 52px 10px 16px;
+    appearance: none;
+    -webkit-appearance: none;
     background: var(--color-bg);
     color: var(--color-ink);
     font: inherit;
@@ -146,7 +157,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     position: absolute;
     top: 50%;
     left: 16px;
-    max-width: calc(100% - 52px);
+    max-width: calc(100% - 70px);
     transform: translateY(-50%);
     overflow: hidden;
     padding: 4px 8px 4px 0;
@@ -209,22 +220,8 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   .mc-picker__reset:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 3px; }
   @media (max-width: 600px) {
     .mc-picker { padding-bottom: 30px; }
-    .mc-picker__field select {
-      font-size: 1rem;
-      appearance: none;
-      -webkit-appearance: none;
-      padding-right: 48px;
-    }
+    .mc-picker__field select { font-size: 1rem; }
     .mc-picker__placeholder-text { font-size: 1rem; }
-    .mc-picker__select-arrow {
-      display: block;
-      position: absolute;
-      top: 50%;
-      right: 16px;
-      transform: translateY(-50%);
-      pointer-events: none;
-      color: var(--color-ink);
-    }
     .mc-picker__reset { width: min(100%, 480px); font-size: .9rem; }
   }
 </style>

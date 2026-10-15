@@ -42,6 +42,7 @@ jobs:
         env:
           BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.sha }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           if ! git -C staging cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then

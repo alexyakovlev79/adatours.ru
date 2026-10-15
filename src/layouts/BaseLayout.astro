@@ -140,6 +140,14 @@ const metaDescription = schema.metaDescription;
 <!doctype html>
 <html lang={lang}>
   <head>
+    <!-- Google Analytics 4: Ada Tours -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-FM6ZVZH2ZX"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FM6ZVZH2ZX');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />

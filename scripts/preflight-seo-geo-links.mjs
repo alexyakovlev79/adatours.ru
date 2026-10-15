@@ -36,7 +36,7 @@ function changedArticles() {
   for (const path of changedFiles.filter((path) => phasePattern.test(path))) {
     const current = json(join(staging, path));
     let old;
-    try { old = JSON.parse(execFileSync('git', ['show', `${base}:${path}`], { cwd: staging, encoding: 'utf8' })); }
+    try { old = JSON.parse(execFileSync('git', ['show', `${base}:${path}`], { cwd: staging, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 })); }
     catch { old = { entries: [] }; }
     const before = new Map(old.entries.map((row) => [row.url, row.work]));
     for (const row of current.entries) {

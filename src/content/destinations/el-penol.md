@@ -3,9 +3,9 @@ id: destination_colombia_el_penol
 locale: ru
 slug: el-penol
 status: approved
-name: Эль-Пеньол
+name: Реплика старого Эль-Пеньола
 countryId: country_colombia
-destinationType: city
+destinationType: route_cluster
 summary: 'Эль-Пеньол в окрестностях Гуатапе: история старого поселения и воссозданная колониальная архитектура.'
 hero:
   src: /media/destinations/el-penol/hero-generated-20261015-y26-005-v1.webp

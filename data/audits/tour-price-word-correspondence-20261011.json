@@ -6,35 +6,7 @@
     "url": "https://drive.google.com/drive/folders/1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK"
   },
   "scope": "Price-only. Product correspondence uses inventory entityIds; no full-content acceptance.",
-  "conflicts": [
-    {
-      "keys": [
-        "P046",
-        "P134"
-      ],
-      "id": "tour_source_tur_v_4_strany_yuzhnoj_ameriki",
-      "finding": "Одинаковый маршрут на 17 дней. В Бузиосе различаются отели: PortoBay / Rio Buzios Beach. DBL 6836 / 6849 USD.",
-      "proposal": "Предлагается P046 как текущая редакция, P134 как предыдущая. Если замена отеля намеренно является альтернативой, оформить её вариантом одной программы."
-    },
-    {
-      "keys": [
-        "P051",
-        "P090"
-      ],
-      "id": "tour_source_podlinnaya_braziliya",
-      "finding": "Одинаковые 13 дней, маршрут и набор отелей. DBL 5576 / 5431 USD; TRP 5265 / 5366 USD.",
-      "proposal": "Предлагается P051 (редакция 09.10) как основной источник, P090 — предыдущая редакция. Объединить записи в одну программу с историей источников."
-    },
-    {
-      "keys": [
-        "P057",
-        "P060"
-      ],
-      "id": "tour_source_braziliya_argentina_gruppovoj_tur",
-      "finding": "Обе вводные задают 14 дней: Rio 3n, Manaus 2n, Salvador 3n, Foz 2n, Buenos Aires 3n. В тарифной таблице P057 нет Buenos Aires, а число ночей Rio/Foz отличается от вводной. DBL 4659 / 4796 USD.",
-      "proposal": "Запросить у Анны исправленную таблицу P057. P060 выглядит подходящим основным источником, поскольку его таблица включает Buenos Aires; до уточнения цену не выбирать."
-    }
-  ],
+  "conflicts": [],
   "copyGroups": [
     {
       "key": "P022",
@@ -2671,9 +2643,9 @@
         "P060"
       ],
       "scope": "Только цены; соответствие продукта по реестру, без проверки полноты содержания",
-      "date": "2026-10-11",
+      "date": "2026-10-15",
       "priceBefore": 4195,
-      "priceAfter": null,
+      "priceAfter": 4796,
       "sourceFiles": [
         {
           "programKey": "P057",
@@ -2713,20 +2685,43 @@
           "new": null,
           "reason": "ambiguous_word_mapping",
           "phase": "follow_up"
+        },
+        {
+          "field": "primary_word_and_tariffs",
+          "date": "2026-10-15",
+          "new": 4796,
+          "programKey": "P060"
         }
       ],
-      "status": "ambiguous_word_mapping",
-      "issue": {
-        "keys": [
-          "P057",
-          "P060"
-        ],
-        "id": "tour_source_braziliya_argentina_gruppovoj_tur",
-        "finding": "Обе вводные задают 14 дней: Rio 3n, Manaus 2n, Salvador 3n, Foz 2n, Buenos Aires 3n. В тарифной таблице P057 нет Buenos Aires, а число ночей Rio/Foz отличается от вводной. DBL 4659 / 4796 USD.",
-        "proposal": "Запросить у Анны исправленную таблицу P057. P060 выглядит подходящим основным источником, поскольку его таблица включает Buenos Aires; до уточнения цену не выбирать."
-      },
+      "status": "price_updated",
       "previousUnconfirmedPrice": 4195,
-      "publicPriceState": "on_request"
+      "publicPriceState": "confirmed",
+      "previousPriceAudit": {
+        "status": "ambiguous_word_mapping",
+        "date": "2026-10-11",
+        "priceAfter": null,
+        "issue": {
+          "keys": [
+            "P057",
+            "P060"
+          ],
+          "id": "tour_source_braziliya_argentina_gruppovoj_tur",
+          "finding": "Обе вводные задают 14 дней: Rio 3n, Manaus 2n, Salvador 3n, Foz 2n, Buenos Aires 3n. В тарифной таблице P057 нет Buenos Aires, а число ночей Rio/Foz отличается от вводной. DBL 4659 / 4796 USD.",
+          "proposal": "Запросить у Анны исправленную таблицу P057. P060 выглядит подходящим основным источником, поскольку его таблица включает Buenos Aires; до уточнения цену не выбирать."
+        },
+        "publicPriceState": "on_request"
+      },
+      "primaryProgramKey": "P060",
+      "mappingEvidence": "P060 — основной Word; DBL 4796 USD. Цены SGL/DBL/TRP, отели и условия 2027 сверены.",
+      "followupAuditPath": "data/audits/tour-terms-word-update-20261015.json",
+      "selectedSource": {
+        "driveId": "1te0NoRlCFCkprjsNlqDRzqGcoKoy95aE",
+        "url": "https://docs.google.com/document/d/1te0NoRlCFCkprjsNlqDRzqGcoKoy95aE/edit",
+        "name": "Fun Brazil and Argentina 2027  RUS com 20%.docx",
+        "programKey": "P060",
+        "priority": "authoritative",
+        "verifiedAt": "2026-10-15"
+      }
     },
     {
       "entityId": "tour_source_braziliya_argentina_i_chili",
@@ -6611,7 +6606,7 @@
         "P095"
       ],
       "scope": "Только цены; соответствие продукта по реестру, без проверки полноты содержания",
-      "date": "2026-10-11",
+      "date": "2026-10-15",
       "priceBefore": 2039,
       "priceAfter": 2039,
       "sourceFiles": [
@@ -6636,24 +6631,36 @@
           "textSha256": "1b2125fe1a34a762e9c0e61980f2ac2474134a6d2dfb48684f1b65b0bda2c192"
         }
       ],
-      "changes": [],
-      "status": "added_from_word_not_rechecked",
+      "changes": [
+        {
+          "field": "primary_word_and_tariffs",
+          "date": "2026-10-15",
+          "new": 2039,
+          "programKey": "P095"
+        }
+      ],
+      "status": "price_equal",
       "relatedProgramKeys": [
         "P097"
       ],
       "primaryProgramKey": "P095",
       "selectedSource": {
-        "programKey": "P095",
         "driveId": "1D04UFzIJIE8I0JDz8IgUvAu4iBDyCwEA",
+        "url": "https://docs.google.com/document/d/1D04UFzIJIE8I0JDz8IgUvAu4iBDyCwEA/edit",
         "name": "Best of Rio 7d6n 2027 RUS  com 20%.docx",
-        "url": "https://docs.google.com/document/d/1D04UFzIJIE8I0JDz8IgUvAu4iBDyCwEA/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
-        "folderId": "1t79vXL8ZMLuLgLwEphaAkYM7Hrdp_GBk",
-        "folder": "Brazil 2027",
-        "modifiedTime": "2026-08-27T09:46:08.628Z",
-        "textSha256": "3b0bd2b16ae8f6617342b120db2d7c8b227b2a3772273135cccea0044b761ce6"
+        "programKey": "P095",
+        "priority": "authoritative",
+        "verifiedAt": "2026-10-15"
       },
-      "mappingEvidence": "В exact source entry уже есть authoritative primaryWord и проверка manager_issue_reconciliation от 03.10.2026. Повторный импорт не нужен.",
-      "note": "P095 закреплён ранее; P097 — неподтверждённый альтернативный файл, не источник текущей цены."
+      "mappingEvidence": "P095 — основной Word; DBL 2039 USD. Цены SGL/DBL/TRP, отели и условия 2027 сверены.",
+      "note": "P095 закреплён ранее; P097 — неподтверждённый альтернативный файл, не источник текущей цены.",
+      "previousPriceAudit": {
+        "status": "added_from_word_not_rechecked",
+        "date": "2026-10-11",
+        "priceAfter": 2039
+      },
+      "publicPriceState": "confirmed",
+      "followupAuditPath": "data/audits/tour-terms-word-update-20261015.json"
     },
     {
       "entityId": "tour_source_luchshee_v_salvadore",
@@ -8647,9 +8654,9 @@
         "P090"
       ],
       "scope": "Только цены; соответствие продукта по реестру, без проверки полноты содержания",
-      "date": "2026-10-11",
+      "date": "2026-10-15",
       "priceBefore": 4875,
-      "priceAfter": null,
+      "priceAfter": 5431,
       "sourceFiles": [
         {
           "programKey": "P051",
@@ -8679,20 +8686,43 @@
           "new": null,
           "reason": "ambiguous_word_mapping",
           "phase": "follow_up"
+        },
+        {
+          "field": "primary_word_and_tariffs",
+          "date": "2026-10-15",
+          "new": 5431,
+          "programKey": "P090"
         }
       ],
-      "status": "ambiguous_word_mapping",
-      "issue": {
-        "keys": [
-          "P051",
-          "P090"
-        ],
-        "id": "tour_source_podlinnaya_braziliya",
-        "finding": "Одинаковые 13 дней, маршрут и набор отелей. DBL 5576 / 5431 USD; TRP 5265 / 5366 USD.",
-        "proposal": "Предлагается P051 (редакция 09.10) как основной источник, P090 — предыдущая редакция. Объединить записи в одну программу с историей источников."
-      },
+      "status": "price_updated",
       "previousUnconfirmedPrice": 4875,
-      "publicPriceState": "on_request"
+      "publicPriceState": "confirmed",
+      "previousPriceAudit": {
+        "status": "ambiguous_word_mapping",
+        "date": "2026-10-11",
+        "priceAfter": null,
+        "issue": {
+          "keys": [
+            "P051",
+            "P090"
+          ],
+          "id": "tour_source_podlinnaya_braziliya",
+          "finding": "Одинаковые 13 дней, маршрут и набор отелей. DBL 5576 / 5431 USD; TRP 5265 / 5366 USD.",
+          "proposal": "Предлагается P051 (редакция 09.10) как основной источник, P090 — предыдущая редакция. Объединить записи в одну программу с историей источников."
+        },
+        "publicPriceState": "on_request"
+      },
+      "primaryProgramKey": "P090",
+      "mappingEvidence": "P090 — основной Word; DBL 5431 USD. Цены SGL/DBL/TRP, отели и условия 2027 сверены.",
+      "followupAuditPath": "data/audits/tour-terms-word-update-20261015.json",
+      "selectedSource": {
+        "driveId": "1gqIJXqTYsu32ES-2kDpOxxFACsHKFjdr",
+        "url": "https://docs.google.com/document/d/1gqIJXqTYsu32ES-2kDpOxxFACsHKFjdr/edit",
+        "name": "Brazil with Amazon and Waterfalls 2027 13d12n  RUS com20%.docx",
+        "programKey": "P090",
+        "priority": "authoritative",
+        "verifiedAt": "2026-10-15"
+      }
     },
     {
       "entityId": "tour_source_populyarnye_napravleniya_venesuely",
@@ -10438,9 +10468,9 @@
         "P134"
       ],
       "scope": "Только цены; соответствие продукта по реестру, без проверки полноты содержания",
-      "date": "2026-10-11",
+      "date": "2026-10-15",
       "priceBefore": 5823,
-      "priceAfter": null,
+      "priceAfter": 6836,
       "sourceFiles": [
         {
           "programKey": "P046",
@@ -10490,20 +10520,43 @@
           "new": null,
           "reason": "ambiguous_word_mapping",
           "phase": "follow_up"
+        },
+        {
+          "field": "primary_word_and_tariffs",
+          "date": "2026-10-15",
+          "new": 6836,
+          "programKey": "P046"
         }
       ],
-      "status": "ambiguous_word_mapping",
-      "issue": {
-        "keys": [
-          "P046",
-          "P134"
-        ],
-        "id": "tour_source_tur_v_4_strany_yuzhnoj_ameriki",
-        "finding": "Одинаковый маршрут на 17 дней. В Бузиосе различаются отели: PortoBay / Rio Buzios Beach. DBL 6836 / 6849 USD.",
-        "proposal": "Предлагается P046 как текущая редакция, P134 как предыдущая. Если замена отеля намеренно является альтернативой, оформить её вариантом одной программы."
-      },
+      "status": "price_updated",
       "previousUnconfirmedPrice": 5823,
-      "publicPriceState": "on_request"
+      "publicPriceState": "confirmed",
+      "previousPriceAudit": {
+        "status": "ambiguous_word_mapping",
+        "date": "2026-10-11",
+        "priceAfter": null,
+        "issue": {
+          "keys": [
+            "P046",
+            "P134"
+          ],
+          "id": "tour_source_tur_v_4_strany_yuzhnoj_ameriki",
+          "finding": "Одинаковый маршрут на 17 дней. В Бузиосе различаются отели: PortoBay / Rio Buzios Beach. DBL 6836 / 6849 USD.",
+          "proposal": "Предлагается P046 как текущая редакция, P134 как предыдущая. Если замена отеля намеренно является альтернативой, оформить её вариантом одной программы."
+        },
+        "publicPriceState": "on_request"
+      },
+      "primaryProgramKey": "P046",
+      "mappingEvidence": "P046 — основной Word; DBL 6836 USD. Цены SGL/DBL/TRP, отели и условия 2027 сверены.",
+      "followupAuditPath": "data/audits/tour-terms-word-update-20261015.json",
+      "selectedSource": {
+        "driveId": "1RutAyh6jgoOj4IR2J7Gj3GpWTs52n8Oo",
+        "url": "https://docs.google.com/document/d/1RutAyh6jgoOj4IR2J7Gj3GpWTs52n8Oo/edit",
+        "name": "4 Countries -2027  Brazil, Chile, Argentina & Uruguay 17d16n RUS com $500 (1).docx",
+        "programKey": "P046",
+        "priority": "authoritative",
+        "verifiedAt": "2026-10-15"
+      }
     },
     {
       "entityId": "tour_source_tur_v_argentinu_i_braziliyu_ot_lda_do_solntsa",
@@ -12081,12 +12134,11 @@
     }
   ],
   "counts": {
-    "price_updated": 84,
+    "price_updated": 87,
     "no_word_match": 185,
-    "price_equal": 16,
+    "price_equal": 17,
     "archived_not_checked": 31,
-    "added_from_word_not_rechecked": 59,
-    "ambiguous_word_mapping": 3,
+    "added_from_word_not_rechecked": 58,
     "no_total_price_in_word": 2,
     "tariff_basis_needs_confirmation": 1
   },
@@ -13746,6 +13798,42 @@
       "proposal": "Сохранить уже закреплённый основной источник P095. P097 пометить предыдущей редакцией после подтверждения Анной; если различие обусловлено услугами, оформить вариант, а не второй источник одной цены.",
       "resolvedAt": "2026-10-11",
       "resolution": "В exact source entry уже есть authoritative primaryWord и проверка manager_issue_reconciliation от 03.10.2026. Повторный импорт не нужен."
+    },
+    {
+      "keys": [
+        "P046",
+        "P134"
+      ],
+      "id": "tour_source_tur_v_4_strany_yuzhnoj_ameriki",
+      "finding": "Одинаковый маршрут на 17 дней. В Бузиосе различаются отели: PortoBay / Rio Buzios Beach. DBL 6836 / 6849 USD.",
+      "proposal": "Предлагается P046 как текущая редакция, P134 как предыдущая. Если замена отеля намеренно является альтернативой, оформить её вариантом одной программы.",
+      "resolvedAt": "2026-10-15",
+      "resolution": "P046 — основной Word; DBL 6836 USD. Цены SGL/DBL/TRP, отели и условия 2027 сверены.",
+      "auditPath": "data/audits/tour-terms-word-update-20261015.json"
+    },
+    {
+      "keys": [
+        "P051",
+        "P090"
+      ],
+      "id": "tour_source_podlinnaya_braziliya",
+      "finding": "Одинаковые 13 дней, маршрут и набор отелей. DBL 5576 / 5431 USD; TRP 5265 / 5366 USD.",
+      "proposal": "Предлагается P051 (редакция 09.10) как основной источник, P090 — предыдущая редакция. Объединить записи в одну программу с историей источников.",
+      "resolvedAt": "2026-10-15",
+      "resolution": "P090 — основной Word; DBL 5431 USD. Цены SGL/DBL/TRP, отели и условия 2027 сверены.",
+      "auditPath": "data/audits/tour-terms-word-update-20261015.json"
+    },
+    {
+      "keys": [
+        "P057",
+        "P060"
+      ],
+      "id": "tour_source_braziliya_argentina_gruppovoj_tur",
+      "finding": "Обе вводные задают 14 дней: Rio 3n, Manaus 2n, Salvador 3n, Foz 2n, Buenos Aires 3n. В тарифной таблице P057 нет Buenos Aires, а число ночей Rio/Foz отличается от вводной. DBL 4659 / 4796 USD.",
+      "proposal": "Запросить у Анны исправленную таблицу P057. P060 выглядит подходящим основным источником, поскольку его таблица включает Buenos Aires; до уточнения цену не выбирать.",
+      "resolvedAt": "2026-10-15",
+      "resolution": "P060 — основной Word; DBL 4796 USD. Цены SGL/DBL/TRP, отели и условия 2027 сверены.",
+      "auditPath": "data/audits/tour-terms-word-update-20261015.json"
     }
   ],
   "remediation": {
@@ -13827,5 +13915,6 @@
       "questionsPreservedInColumnT": true
     },
     "proposalsApplied": "Однозначные решения применены; спорные суммы сняты с публикации, источники и исходные строки сохранены."
-  }
+  },
+  "latestTermsFollowup": "data/audits/tour-terms-word-update-20261015.json"
 }

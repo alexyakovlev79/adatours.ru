@@ -8,6 +8,7 @@ import DestinationBand from '../../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../../components/catalog/CatalogPagination.astro';
 import MultiCountrySelector from '../../components/catalog/MultiCountrySelector.astro';
 import { buildMultiCountryCombinations, formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
+import combinationCovers from '../../data/media/multi-country-heroes.json';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { compareToursBySalesFit } from '../../lib/tour-ranking';
 import { mainTourCountries, tourPath } from '../../lib/routes';
@@ -37,7 +38,8 @@ export async function getStaticPaths() {
       props: {
         entries, pagination, catalogVersion: version,
         slugs: row.slugs, comboCountries: row.countries,
-        pickerCountries, pickerCombinations, hero: cover?.data.hero?.src,
+        pickerCountries, pickerCombinations,
+        hero: combinationCovers.covers[row.slugs.join('_')]?.src ?? cover?.data.hero?.src,
       },
     }));
   });

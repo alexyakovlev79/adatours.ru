@@ -83,6 +83,13 @@
         "order": 1,
         "alt": "Фрегат с надутым красным горловым мешком на ветке, Северный Сеймур, Галапагосы, Эквадор",
         "origin": "existing_site_asset"
+      },
+      {
+        "url": "/media/excursions/ostrov-severnyj-sejmur/gallery-0-src-enhanced-20261007.webp",
+        "role": "gallery",
+        "order": 2,
+        "alt": "Фрегат над гаванью с лодками у Галапагосских островов, Эквадор",
+        "origin": "existing_site_asset"
       }
     ],
     "reusedReplacements": [
@@ -95,6 +102,14 @@
         "reusedAt": "2026-10-15",
         "purpose": "geographic_correction",
         "audit": "data/audits/y26-005-word-completion-20261015.json"
+      }
+    ],
+    "removedSlots": [
+      {
+        "slot": "gallery[1].src",
+        "asset": "/media/excursions/ostrov-severnyj-sejmur/gallery-1-regenerated-20261011-v1.webp",
+        "removedAt": "2026-10-15",
+        "reason": "Moved to hero; duplicate gallery slot retired."
       }
     ]
   },
@@ -131,5 +146,12 @@
   "relatedDestinationIds": [
     "destination_ecuador_ostrov_sejmur_norte",
     "destination_ecuador_plyazhi_bachas"
-  ]
+  ],
+  "publication": {
+    "status": "published",
+    "updatedAt": "2026-10-15",
+    "deployCommit": "13273ceff3ea979702595ed5c6a6b32d0ee55700",
+    "deployConclusion": "success",
+    "workflowUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38784554451"
+  }
 }

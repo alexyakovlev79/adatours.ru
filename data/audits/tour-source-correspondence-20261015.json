@@ -1,7 +1,7 @@
 {
   "version": 2,
   "date": "2026-10-15",
-  "scope": "Инвентаризация соответствий 2026 / 2027 / сайта; без обновления туров и без повторной сверки содержания туров, уже связанных с 2027. Первые 20 туров без 2027 дополнительно сверены по содержанию; замечания сохранены без правок сайта.",
+  "scope": "Инвентаризация 2026 / 2027 / сайта и результаты последовательной сверки/создания программ 2026. Программы 2027 сохраняются.",
   "drive2026Root": {
     "id": "100uWfP32taS_1UFxTCAM6jMvwk2_rxv7",
     "url": "https://drive.google.com/drive/folders/100uWfP32taS_1UFxTCAM6jMvwk2_rxv7"
@@ -27,18 +27,18 @@
     "Только 2026 — сверить позже": 69,
     "Нет подтверждённых соответствий": 119,
     "Только 2027 — не менять": 61,
-    "siteCatalogRows": 391,
-    "publishedTourPages": 386,
+    "siteCatalogRows": 392,
+    "publishedTourPages": 387,
     "files2026": 433,
     "subfolders2026": 52,
     "programRecords2026": 327,
-    "matchedProgramRecords2026": 234,
-    "unresolvedProgramRecords2026": 93,
+    "matchedProgramRecords2026": 235,
+    "unresolvedProgramRecords2026": 92,
     "excludedFiles2026": 26,
-    "matchedFiles2026": 300,
-    "unresolvedFiles2026": 107,
-    "matchedSiteTours2026": 211,
-    "Только 2026 — сверено": 22
+    "matchedFiles2026": 303,
+    "unresolvedFiles2026": 104,
+    "matchedSiteTours2026": 212,
+    "Только 2026 — сверено": 23
   },
   "folders": [
     {
@@ -543,12 +543,24 @@
           "header": "Эквадор Колумбия\n11.11-22.11.2026\n11.11  Кито\n Прилет в Кито. Трансфер в отель.\n12.11 Кито\nЗавтрак в отеле. \nОбзорная экскурсия по городу Кито с посещением линии экватора.\nПродолжительность экскурсионного дня вместе с переездами – 8 часов.\nВысота – 2800м.\nСредняя температура  - +20С днем, +10С ночью.\nВ течение обзорной экскурсии по Кито вы увидите "
         }
       ],
-      "status": "unresolved",
-      "entityIds": [],
+      "status": "matched",
+      "entityIds": [
+        "tour_ecuador_colombia_galapagos_12_days"
+      ],
       "linked2027ProgramKey": null,
-      "method": null,
-      "note": "Точное соответствие не установлено: названия, длительность или состав маршрута не дают однозначной пары. Новый тур не создавался.",
-      "candidates": [
+      "method": "full_word_import_new_product",
+      "note": "Создан отдельный продукт: Эквадор и Колумбия с Галапагосами, 12 дней / 11 ночей, 11–22.11.2026; DBL 5390 USD / SGL 6040 USD. Полная сверка Word и успешная публикация. Источник 2027 отсутствует.",
+      "candidates": [],
+      "work": {
+        "state": "done",
+        "updatedAt": "2026-10-15",
+        "note": "Полный Word, 3 новых места и 3 экскурсии, фото, связи, успешный Pages deploy и проверенная синхронизация Google Sheets.",
+        "contentCommit": "d08437e63ee63fd1820b344dde1fe62766dc78a1",
+        "deployCommit": "13273ceff3ea979702595ed5c6a6b32d0ee55700",
+        "workflowUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38784554451",
+        "sheetsSyncedAt": "2026-10-15"
+      },
+      "rejectedCandidates": [
         {
           "entityId": "tour_source_ekvador_zhivaya_priroda",
           "name": "Эквадор: живая природа Анд и Амазонии за 15 дней",
@@ -573,11 +585,7 @@
           "url": "https://adatours.ru/ecuador/tour/mainland-ecuador-private-tour-5-days/",
           "reason": "Кандидат по лексике/географии; соответствие НЕ подтверждено."
         }
-      ],
-      "work": {
-        "state": "not_requested",
-        "note": "Только инвентаризация. Не означает сверку содержания, актуализацию или публикацию."
-      }
+      ]
     },
     {
       "key": "Y26-006",
@@ -27113,9 +27121,7 @@
       "notes": [
         "Установлена только идентичность программы; цены, услуги и даты не сверялись. Содержание подлежит отдельной последующей сверке с Word 2026."
       ],
-      "unconfirmed2026Candidates": [
-        "Y26-005: Ecuador Colombia 11.11 RUS 20% .docx"
-      ],
+      "unconfirmed2026Candidates": [],
       "action": "Позже выверить с 2026",
       "contentCompared": false
     },
@@ -27206,7 +27212,6 @@
         "Выбрана страница с точным именем «Почувствуйте Перу-Эквадор». На сайте есть второй близкий 18-дневный VIP-тур; ему этот Word повторно не назначен."
       ],
       "unconfirmed2026Candidates": [
-        "Y26-005: Ecuador Colombia 11.11 RUS 20% .docx",
         "Y26-007: 8 countries 22.10-22.11.2026 500 USD (1).docx",
         "Y26-023: VIP Ecuador Peru 2026-2027.docx",
         "Y26-063: Peru & Galapagos: A Remarkable Adventure 16d15n RUS com 20%.docx"
@@ -27415,7 +27420,6 @@
       "sources2026": [],
       "notes": [],
       "unconfirmed2026Candidates": [
-        "Y26-005: Ecuador Colombia 11.11 RUS 20% .docx",
         "Y26-007: 8 countries 22.10-22.11.2026 500 USD (1).docx",
         "Y26-023: VIP Ecuador Peru 2026-2027.docx",
         "Y26-063: Peru & Galapagos: A Remarkable Adventure 16d15n RUS com 20%.docx"
@@ -27646,7 +27650,6 @@
         "Установлена только идентичность программы; цены, услуги и даты не сверялись. Содержание подлежит отдельной последующей сверке с Word 2026."
       ],
       "unconfirmed2026Candidates": [
-        "Y26-005: Ecuador Colombia 11.11 RUS 20% .docx",
         "Y26-007: 8 countries 22.10-22.11.2026 500 USD (1).docx",
         "Y26-063: Peru & Galapagos: A Remarkable Adventure 16d15n RUS com 20%.docx"
       ],
@@ -29746,11 +29749,74 @@
         "siteUrl": "https://adatours.ru/multi-country/tour/south-america-eight-countries-32-days/",
         "registrySyncedAt": "2026-10-15T18:36:42.403Z"
       }
+    },
+    {
+      "entityId": "tour_ecuador_colombia_galapagos_12_days",
+      "name": "Эквадор и Колумбия: Галапагосы, Анды и Карибское море за 12 дней",
+      "url": "https://adatours.ru/multi-country/tour/ecuador-colombia-galapagos-12-days/",
+      "contentPath": "src/content/tours/ecuador-colombia-galapagos-12-days.md",
+      "hasPublishedPage": true,
+      "status": "active",
+      "sheetRow": 392,
+      "group": "Только 2026 — сверено",
+      "sources2027": [],
+      "sheet2027Label": "",
+      "programKeys2026": [
+        "Y26-005"
+      ],
+      "sources2026": [
+        {
+          "driveId": "16mtrEPn5UbZfLrfAQFqqNZj56F_PAWzr",
+          "name": "Ecuador Colombia 11.11 RUS 20% .docx",
+          "url": "https://docs.google.com/document/d/16mtrEPn5UbZfLrfAQFqqNZj56F_PAWzr/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+          "folderId": "16J2otCJ7-HXxf5RNp-wN1CmWLKyNGS4G",
+          "path": "Russian group tours departure dates 2026/Ecuador Colombia 11.11 RUS 20% .docx",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "modifiedTime": "2026-08-25T19:21:12.000Z",
+          "bytes": "1861551",
+          "identityRead": "document_text",
+          "textSha256": "bee2cdcc053edd3663f234c4869f6e88b8d6bec4db3d8af7aa91dfd83baf830b",
+          "header": "Эквадор Колумбия\n11.11-22.11.2026\n11.11  Кито\n Прилет в Кито. Трансфер в отель.\n12.11 Кито\nЗавтрак в отеле. \nОбзорная экскурсия по городу Кито с посещением линии экватора.\nПродолжительность экскурсионного дня вместе с переездами – 8 часов.\nВысота – 2800м.\nСредняя температура  - +20С днем, +10С ночью.\nВ течение обзорной экскурсии по Кито вы увидите "
+        },
+        {
+          "driveId": "1Ba8pPpQOj5SnS0P8nYGqvZnnphPPYmVF",
+          "name": "Ecuador Colombia 11.11 RUS 20% (2).docx",
+          "url": "https://docs.google.com/document/d/1Ba8pPpQOj5SnS0P8nYGqvZnnphPPYmVF/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+          "folderId": "1zGWUcbfNkbn4_C1p7fNecoh8mD4J5sDt",
+          "path": "8 countries tour October november/Ecuador Colombia 11.11 RUS 20% (2).docx",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "modifiedTime": "2026-08-13T20:37:07.000Z",
+          "bytes": "1860947",
+          "identityRead": "document_text",
+          "textSha256": "bee2cdcc053edd3663f234c4869f6e88b8d6bec4db3d8af7aa91dfd83baf830b",
+          "header": "Эквадор Колумбия\n11.11-22.11.2026\n11.11  Кито\n Прилет в Кито. Трансфер в отель.\n12.11 Кито\nЗавтрак в отеле. \nОбзорная экскурсия по городу Кито с посещением линии экватора.\nПродолжительность экскурсионного дня вместе с переездами – 8 часов.\nВысота – 2800м.\nСредняя температура  - +20С днем, +10С ночью.\nВ течение обзорной экскурсии по Кито вы увидите "
+        },
+        {
+          "driveId": "1RRKkbEgcfvMuwNImPvA54F3drSR-hFzd",
+          "name": "Ecuador Colombia 11.11 RUS 20%.docx",
+          "url": "https://docs.google.com/document/d/1RRKkbEgcfvMuwNImPvA54F3drSR-hFzd/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+          "folderId": "1GtgCNBI9NDIdWWc9QSt9_pTag03C8g0W",
+          "path": "Multi countries 2026/Ecuador Colombia 11.11 RUS 20%.docx",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "modifiedTime": "2026-06-26T17:32:54.000Z",
+          "bytes": "1860947",
+          "identityRead": "document_text",
+          "textSha256": "bee2cdcc053edd3663f234c4869f6e88b8d6bec4db3d8af7aa91dfd83baf830b",
+          "header": "Эквадор Колумбия\n11.11-22.11.2026\n11.11  Кито\n Прилет в Кито. Трансфер в отель.\n12.11 Кито\nЗавтрак в отеле. \nОбзорная экскурсия по городу Кито с посещением линии экватора.\nПродолжительность экскурсионного дня вместе с переездами – 8 часов.\nВысота – 2800м.\nСредняя температура  - +20С днем, +10С ночью.\nВ течение обзорной экскурсии по Кито вы увидите "
+        }
+      ],
+      "notes": [
+        "Создан отдельный продукт: Эквадор и Колумбия с Галапагосами, 12 дней / 11 ночей, 11–22.11.2026; DBL 5390 USD / SGL 6040 USD. Полная сверка Word и успешная публикация. Источник 2027 отсутствует.",
+        "Deploy 13273ceff3ea979702595ed5c6a6b32d0ee55700; https://github.com/alexyakovlev79/adatours.ru/actions/runs/38784554451"
+      ],
+      "unconfirmed2026Candidates": [],
+      "action": "Создано и опубликовано по Word 2026",
+      "contentCompared": true
     }
   ],
   "verification": {
     "all433DriveFilesAccountedFor": true,
-    "siteRowsUnique": 389,
+    "siteRowsUnique": 392,
     "matchedProgramsWithMultipleTourIds": 0,
     "sheetsMainCellsVerified": 3120,
     "sheetsSourceCellsVerified": 4248,
@@ -29758,7 +29824,14 @@
     "contentChanges": 0,
     "archiveChanges": 0,
     "sources2027Changed": false,
-    "unresolvedAreNotMatches": true
+    "unresolvedAreNotMatches": true,
+    "y26_005Completion": {
+      "deployCommit": "13273ceff3ea979702595ed5c6a6b32d0ee55700",
+      "workflowUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38784554451",
+      "sheetsVerified": true,
+      "sourceProgramRow": 6,
+      "siteConfirmationRow": 392
+    }
   },
   "contentReview2026": {
     "batches": [
@@ -29778,5 +29851,6 @@
       }
     ],
     "remaining2026Only": 69
-  }
+  },
+  "initialInventoryScope": "Инвентаризация соответствий 2026 / 2027 / сайта; без обновления туров и без повторной сверки содержания туров, уже связанных с 2027. Первые 20 туров без 2027 дополнительно сверены по содержанию; замечания сохранены без правок сайта."
 }

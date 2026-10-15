@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "targetPath": "/colombia/place/bogota/tour/",
+  "articlePath": "data/seo-geo/articles/colombia/place/bogota/tour/index.md",
+  "researchedAt": "2026-10-14",
+  "editorialIntent": "Выбор активных туров через Боготу, сравнение 5/7/8/9/11-дневных городских, кофейных, природных и морских маршрутов; не дублировать путеводитель по столице и описание itinerary.",
+  "repositorySources": [
+    "src/content/destinations/bogota.md",
+    "src/content/tours/colombia-essential-5-days.md",
+    "src/content/tours/colombia-highlights-7-days.md",
+    "src/content/tours/colombia-cano-cristales-8-days.md",
+    "src/content/tours/colombia-explorer-9-days.md",
+    "src/content/tours/colombia-complete-11-days.md",
+    "src/content/tours/kolumbiya-c-kofe.md",
+    "src/content/tours/manyashchij-peru-kolumbiya.md",
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "data/seo-geo/articles/colombia/index.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.banrepcultural.org/bogota/museo-del-oro/visita",
+      "supports": "Музей золота как учреждение Банка Республики, коллекции и дни работы",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.banrepcultural.org/bogota/museo-del-oro",
+      "supports": "Кратковременные ограничения доступа к отдельным залам музея осенью 2026 года",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.parquesnacionales.gov.co/sala-prensa/noticias/inicia-temporada-en-cano-cristales-naturalmente-responsable/",
+      "supports": "Сезон Каньо-Кристалес в 2026 году, сезонная специфика и охрана территории",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.parquesnacionales.gov.co/nuestros-parques/pnn-sierra-de-la-macarena/",
+      "supports": "Правила доступа к природным достопримечательностям Сьерра-де-ла-Макарена",
+      "checkedAt": "2026-10-15"
+    }
+  ],
+  "safetyAndCommercialConstraints": [
+    "Рекомендованные Tour ID подтверждены как активные production MD и содержат Боготу в routeDestinations.",
+    "Длительности и основные места взяты из соответствующих Tour MD.",
+    "Отдельный сезон реки не объявлен постоянным графиком на следующие годы.",
+    "Не заявлены универсальные включенные авиабилеты, цены или типы гостиниц по всем предложениям.",
+    "Внешние источники сохраняются только в служебном provenance."
+  ],
+  "reviewedAt": "2026-10-15",
+  "editorialReview": {
+    "reviewedAt": "2026-10-15",
+    "internalLinksChecked": 29,
+    "missingProductionMdLinks": 0,
+    "tourTableIdsVerified": 5,
+    "activeTourMdChecked": [
+      "tour_colombia_essential_5_days",
+      "tour_colombia_highlights_7_days",
+      "tour_colombia_cano_cristales_8_days",
+      "tour_colombia_explorer_9_days",
+      "tour_colombia_complete_11_days"
+    ],
+    "notes": [
+      "Повторно использован ранее подготовленный Git blob с полноценной статьей, без нового рерайта.",
+      "Сверены даты доступа Каньо-Кристалес и действующие ограничения Музея золота по официальным учреждениям.",
+      "Публикация только в staging; HTML и GitHub Pages — зона мастер-чата."
+    ]
+  }
+}

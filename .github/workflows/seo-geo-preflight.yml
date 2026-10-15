@@ -1,0 +1,75 @@
+name: SEO/GEO staging link preflight
+
+on:
+  push:
+    branches: ['seo-geo/staging']
+    paths:
+      - 'data/seo-geo/articles/**'
+      - 'data/seo-geo/registry/**'
+      - '.github/workflows/seo-geo-preflight.yml'
+
+permissions:
+  contents: read
+  statuses: write
+
+concurrency:
+  group: seo-geo-staging-preflight
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Check changed SEO links against current canonical routes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          path: staging
+          ref: ${{ github.sha }}
+          fetch-depth: 2
+      - uses: actions/checkout@v6
+        with:
+          path: source
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Install only dependencies, not Astro build
+        working-directory: source
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Validate changed approved articles and prepared transitions
+        shell: bash
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if ! git -C staging cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            git -C staging fetch --no-tags --depth=50 origin "$BEFORE"
+          fi
+          node source/scripts/preflight-seo-geo-links.mjs \
+            --source-root source --staging-root staging \
+            --base "$BEFORE" --head "$AFTER"
+  report:
+    name: Record staging preflight commit status
+    if: always()
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report the prepared gate result
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RESULT: ${{ needs.verify.result }}
+        run: |
+          if [ "$RESULT" = success ]; then
+            state=success
+            description='SEO links valid; prepared transition allowed'
+          else
+            state=failure
+            description="SEO link preflight failed ($RESULT); keep draft"
+          fi
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+            -f state="$state" -f context='ada/seo-link-preflight' \
+            -f description="$description" \
+            -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"

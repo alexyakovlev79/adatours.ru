@@ -1,0 +1,966 @@
+{
+  "format_version": 1,
+  "batch_id": "adatours-com-identity-028",
+  "domain": "adatours.com",
+  "step": 3,
+  "checked_at": "2026-10-15T17:20:00.907Z",
+  "scope": "50 distinct active RU excursion products, verification positions 1351–1400; Argentina, Belize, Bolivia and Brazil. Standalone product to standalone product comparisons only.",
+  "source_coverage": {
+    "discovered": 647,
+    "fetched": 646,
+    "crawl_date": "2026-10-12",
+    "targeted_public_search_date": "2026-10-15",
+    "complete_live_crawl": false,
+    "note": "Archived saved URL inventory supplemented by targeted indexed search and individual English excursion pages outside inventory. A nonconfirmation does not demonstrate absence."
+  },
+  "verification_rule": "Confirm sameAs only where both canonical pages describe the same separately offered excursion; do not link broad country/place/Excursion catalogues or embedded modules inside multi-day Tour pages.",
+  "contextual_english_pages_not_sameas": [
+    {
+      "group": "argentina",
+      "urls": [
+        "https://adatours.com/all-argentina",
+        "https://adatours.com/dreams-voyage-to-argentina"
+      ],
+      "role": "Salta, Cafayate and Tierra del Fuego activities inside multi-day tours are not independent sameAs destinations."
+    },
+    {
+      "group": "belize",
+      "urls": [
+        "https://adatours.com/guatemala-belize-wonders"
+      ],
+      "role": "Blue Hole flight described inside multiday programme only."
+    },
+    {
+      "group": "bolivia",
+      "urls": [
+        "https://adatours.com/adventures-in-bolivia",
+        "https://adatours.com/bolivia-dream",
+        "https://adatours.com/bolivia-fast"
+      ],
+      "role": "Uyuni and Lake Titicaca stages inside larger programmes, not standalone excursion identities."
+    },
+    {
+      "group": "brazil",
+      "urls": [
+        "https://adatours.com/macuco-safari",
+        "https://adatours.com/brazil/excursions",
+        "https://adatours.com/bird-park-iguacu",
+        "https://adatours.com/brazilian-falls"
+      ],
+      "role": "Macuco Safari is a separate offer; Bird Park and Brazilian Falls are catalogue-linked similar products with insufficient or differing conditions."
+    }
+  ],
+  "frozen_keys": [
+    "excursion_iguazu_gran_aventura",
+    "excursion_argentina_humahuaca_seven_colours_inca_cueva",
+    "excursion_argentina_salinas_grandes_with_russian_guide",
+    "excursion_source_jekskursija_v_kafazhate",
+    "excursion_source_jekskursija_v_zhivopisnuju_sal_tu",
+    "excursion_santa_susana_ranch_gaucho_day",
+    "excursion_tigre_parana_delta_half_day_lunch",
+    "excursion_argentina_uco_valley_winery_tasting",
+    "excursion_source_argentina_ushuaia_tierra_del_fuego_national_park",
+    "excursion_ushuaia_laguna_esmeralda_trekking",
+    "excursion_ushuaia_martillo_penguin_boat",
+    "excursion_tierra_del_fuego_english_group",
+    "excursion_ushuaia_helicopter_flight",
+    "excursion_ushuaia_penguin_walk",
+    "excursion_belize_caracol_optional_visit",
+    "excursion_caracol_rio_frio_rio_on_pools",
+    "excursion_belize_blue_hole_scenic_flight",
+    "excursion_belize_hidden_valley_nature_walk",
+    "excursion_bolivia_titicaca_isla_del_sol_catamaran",
+    "excursion_la_paz_city_moon_valley_four_hours",
+    "excursion_bolivia_la_paz_moon_valley_tiwanaku",
+    "excursion_source_la_pas_tiuanako_i_desaguadero_tur",
+    "excursion_source_potosi_tur",
+    "excursion_source_amboro_park_tur",
+    "excursion_source_samaipata_tur",
+    "excursion_uyuni_altiplano_border_transfer",
+    "excursion_uyuni_salt_flat_incahuasi_day",
+    "excursion_source_uyuni_na_2_dnya",
+    "excursion_angra_ilha_grande_unguided_boat",
+    "excursion_angra_ilha_grande_day_trip_from_rio",
+    "excursion_araras_canoe_trek_night_safari",
+    "excursion_araras_horseback_rondon_trail",
+    "excursion_source_siti_tur_po_belu_orizonti",
+    "excursion_brazil_bento_vineyard_atv",
+    "excursion_bom_jardim_aquario_salobra_snorkeling",
+    "excursion_brazil_bonito_abismo_anhumas",
+    "excursion_buzios_coastal_boat_trip",
+    "excursion_source_jekskursija_v_buzios",
+    "excursion_brazil_cambara_balloon_picnic",
+    "excursion_chapada_waterfalls_trails",
+    "excursion_source_fazendy_kofejnykh_baronov",
+    "excursion_brazil_florianopolis_private_city",
+    "excursion_iguazu_argentine_asado_wine",
+    "excursion_iguazu_brazil_waterfalls_macuco_english",
+    "excursion_iguazu_bird_park_private_program_visit",
+    "excursion_source_park_jekzoticheskih_ptic_v_iguasu",
+    "excursion_iguazu_brazil_group_russian_program",
+    "excursion_iguazu_brazil_half_day_russian_private",
+    "excursion_iguazu_brazil_panorama_private_program",
+    "excursion_source_brazilskaya_storona_vodopadov_iguasu"
+  ],
+  "results": [
+    {
+      "key": "excursion_iguazu_gran_aventura",
+      "type": "excursion",
+      "name": "Великое приключение на Игуасу: лодка Zodiac и джунгли",
+      "ru_url": "https://adatours.ru/argentina/puerto-iguazu/iguazu-great-adventure/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Великое приключение на Игуасу: лодка Zodiac и джунгли",
+        "iguazu great adventure",
+        "site:adatours.com iguazu great adventure excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "English Macuco Safari is a Brazilian-side boat and jungle product; the RU Gran Aventura is an Argentine-side Zodiac/jungle product. Do not conflate across the border.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_argentina_humahuaca_seven_colours_inca_cueva",
+      "type": "excursion",
+      "name": "Ущелье Умауака, Семицветная гора и Инка-Куэва",
+      "ru_url": "https://adatours.ru/argentina/quebrada-de-humahuaca/humahuaca-seven-colours-inca-cueva/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Ущелье Умауака, Семицветная гора и Инка-Куэва",
+        "humahuaca seven colours inca cueva",
+        "site:adatours.com humahuaca seven colours excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_argentina_salinas_grandes_with_russian_guide",
+      "type": "excursion",
+      "name": "Салинас-Грандес: экскурсия с русскоговорящим гидом",
+      "ru_url": "https://adatours.ru/argentina/salinas-grandes/salinas-grandes-with-russian-guide/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Салинас-Грандес: экскурсия с русскоговорящим гидом",
+        "salinas grandes with russian guide",
+        "site:adatours.com salinas grandes with excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_source_jekskursija_v_kafazhate",
+      "type": "excursion",
+      "name": "Экскурсия в Кафажате",
+      "ru_url": "https://adatours.ru/argentina/salta/cafayate-tour/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Экскурсия в Кафажате",
+        "cafayate tour",
+        "site:adatours.com cafayate tour excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_source_jekskursija_v_zhivopisnuju_sal_tu",
+      "type": "excursion",
+      "name": "Экскурсия в живописную Сальту",
+      "ru_url": "https://adatours.ru/argentina/salta/salta-sightseeing-tour/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Экскурсия в живописную Сальту",
+        "salta sightseeing tour",
+        "site:adatours.com salta sightseeing tour excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_santa_susana_ranch_gaucho_day",
+      "type": "excursion",
+      "name": "Ранчо Санта-Сусана: день гаучо с аргентинским обедом",
+      "ru_url": "https://adatours.ru/argentina/santa-susana-ranch/santa-susana-gaucho-day-lunch/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Ранчо Санта-Сусана: день гаучо с аргентинским обедом",
+        "santa susana gaucho day lunch",
+        "site:adatours.com santa susana gaucho excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "English Santa Susana ranch experience appears inside longer itineraries; independent matching day-product URL and exact services not established.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_tigre_parana_delta_half_day_lunch",
+      "type": "excursion",
+      "name": "Тигре и дельта Параны: полдня с гидом и обедом",
+      "ru_url": "https://adatours.ru/argentina/tigre/tigre-parana-delta-half-day-lunch/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Тигре и дельта Параны: полдня с гидом и обедом",
+        "tigre parana delta half day lunch",
+        "site:adatours.com tigre parana delta excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_argentina_uco_valley_winery_tasting",
+      "type": "excursion",
+      "name": "Долина Уко: винодельни и дегустация",
+      "ru_url": "https://adatours.ru/argentina/uco-valley/uco-valley-winery-tasting/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Долина Уко: винодельни и дегустация",
+        "uco valley winery tasting",
+        "site:adatours.com valley winery tasting excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_source_argentina_ushuaia_tierra_del_fuego_national_park",
+      "type": "excursion",
+      "name": "Национальный парк Огненная земля",
+      "ru_url": "https://adatours.ru/argentina/ushuaia/argentina-ushuaia-tierra-del-fuego-national-park/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/argentina-ushuaia-tierra-del-fuego-national-park",
+      "evidence": {
+        "english_url": "https://adatours.com/argentina-ushuaia-tierra-del-fuego-national-park",
+        "source": "public_standalone_product_page_and_exact_RU_source_2026-10-15",
+        "matching_evidence": "Same independent Tierra del Fuego National Park excursion: identical source-derived English slug, same Ushuaia park product and USD 76 published base price.",
+        "qualification": "Same underlying separately offered excursion, not necessarily identical localized price or guide-language conditions.",
+        "retrieval_note": "Independent English product page, not just itinerary mention or a destination catalogue."
+      }
+    },
+    {
+      "key": "excursion_ushuaia_laguna_esmeralda_trekking",
+      "type": "excursion",
+      "name": "Треккинг к лагуне Эсмеральда из Ушуайи",
+      "ru_url": "https://adatours.ru/argentina/ushuaia/laguna-esmeralda-hike-from-ushuaia/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Треккинг к лагуне Эсмеральда из Ушуайи",
+        "laguna esmeralda hike from ushuaia",
+        "site:adatours.com laguna esmeralda hike excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_ushuaia_martillo_penguin_boat",
+      "type": "excursion",
+      "name": "Остров Мартильо: морская поездка к пингвинам",
+      "ru_url": "https://adatours.ru/argentina/ushuaia/martillo-island-penguin-boat-trip/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Остров Мартильо: морская поездка к пингвинам",
+        "martillo island penguin boat trip",
+        "site:adatours.com martillo island penguin excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "Penguin boat visits appear inside Ushuaia/Patagonia programmes; exact independent EN boat excursion identity unverified.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_tierra_del_fuego_english_group",
+      "type": "excursion",
+      "name": "Огненная Земля: экскурсия в группе с английским гидом",
+      "ru_url": "https://adatours.ru/argentina/ushuaia/tierra-del-fuego-english-group/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Огненная Земля: экскурсия в группе с английским гидом",
+        "tierra del fuego english group",
+        "site:adatours.com tierra fuego english excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_ushuaia_helicopter_flight",
+      "type": "excursion",
+      "name": "Полет на вертолете над Ушуайей",
+      "ru_url": "https://adatours.ru/argentina/ushuaia/ushuaia-helicopter-flight/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Полет на вертолете над Ушуайей",
+        "ushuaia helicopter flight",
+        "site:adatours.com ushuaia helicopter flight excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_ushuaia_penguin_walk",
+      "type": "excursion",
+      "name": "Прогулка с пингвинами в Ушуайе",
+      "ru_url": "https://adatours.ru/argentina/ushuaia/ushuaia-walking-with-penguins/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Прогулка с пингвинами в Ушуайе",
+        "ushuaia walking with penguins",
+        "site:adatours.com ushuaia walking with excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "argentina"
+    },
+    {
+      "key": "excursion_belize_caracol_optional_visit",
+      "type": "excursion",
+      "name": "Каракол: дополнительная экскурсия из Хидден-Вэлли",
+      "ru_url": "https://adatours.ru/belize/caracol/caracol-optional-visit/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Каракол: дополнительная экскурсия из Хидден-Вэлли",
+        "caracol optional visit",
+        "site:adatours.com caracol optional visit excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "belize"
+    },
+    {
+      "key": "excursion_caracol_rio_frio_rio_on_pools",
+      "type": "excursion",
+      "name": "Каракол, пещера Рио-Фрио и бассейны Рио-Он",
+      "ru_url": "https://adatours.ru/belize/caracol/caracol-rio-frio-rio-on-pools/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Каракол, пещера Рио-Фрио и бассейны Рио-Он",
+        "caracol rio frio rio on pools",
+        "site:adatours.com caracol frio pools excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "belize"
+    },
+    {
+      "key": "excursion_belize_blue_hole_scenic_flight",
+      "type": "excursion",
+      "name": "Полет над Голубой дырой в Белизе",
+      "ru_url": "https://adatours.ru/belize/great-blue-hole/great-blue-hole-scenic-flight/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Полет над Голубой дырой в Белизе",
+        "great blue hole scenic flight",
+        "site:adatours.com great blue hole excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "Blue Hole scenic flight appears as an optional experience in multi-day Belize tours; no separate matching EN excursion URL established.",
+      "comparison_group": "belize"
+    },
+    {
+      "key": "excursion_belize_hidden_valley_nature_walk",
+      "type": "excursion",
+      "name": "Хидден-Вэлли: прогулка по природному заповеднику",
+      "ru_url": "https://adatours.ru/belize/hidden-valley/hidden-valley-nature-walk/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Хидден-Вэлли: прогулка по природному заповеднику",
+        "hidden valley nature walk",
+        "site:adatours.com hidden valley nature excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "belize"
+    },
+    {
+      "key": "excursion_bolivia_titicaca_isla_del_sol_catamaran",
+      "type": "excursion",
+      "name": "Титикака на катамаране: Копакабана и Остров Солнца",
+      "ru_url": "https://adatours.ru/bolivia/copacabana/titicaca-isla-del-sol-catamaran/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Титикака на катамаране: Копакабана и Остров Солнца",
+        "titicaca isla del sol catamaran",
+        "site:adatours.com titicaca isla catamaran excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "Lake Titicaca and Isla del Sol appear in EN multi-day tours; exact standalone catamaran itinerary unconfirmed.",
+      "comparison_group": "bolivia"
+    },
+    {
+      "key": "excursion_la_paz_city_moon_valley_four_hours",
+      "type": "excursion",
+      "name": "Ла-Пас и Лунная долина за 4 часа",
+      "ru_url": "https://adatours.ru/bolivia/la-paz/la-paz-city-moon-valley-four-hours/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Ла-Пас и Лунная долина за 4 часа",
+        "la paz city moon valley four hours",
+        "site:adatours.com city moon valley excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "bolivia"
+    },
+    {
+      "key": "excursion_bolivia_la_paz_moon_valley_tiwanaku",
+      "type": "excursion",
+      "name": "Ла-Пас, Долина Луны и Тиуанако",
+      "ru_url": "https://adatours.ru/bolivia/la-paz/la-paz-moon-valley-tiwanaku/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Ла-Пас, Долина Луны и Тиуанако",
+        "la paz moon valley tiwanaku",
+        "site:adatours.com moon valley tiwanaku excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "bolivia"
+    },
+    {
+      "key": "excursion_source_la_pas_tiuanako_i_desaguadero_tur",
+      "type": "excursion",
+      "name": "Экскурсия в Боливии: цивилизация Тиуанако на 8 часов",
+      "ru_url": "https://adatours.ru/bolivia/la-paz/tiwanaku-desaguadero-from-la-paz/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "confirmed",
+      "confirmed_sameas_url": "https://adatours.com/la-paz-tiwanaku-and-desaguadero-tour",
+      "evidence": {
+        "english_url": "https://adatours.com/la-paz-tiwanaku-and-desaguadero-tour",
+        "source": "public_standalone_product_page_and_exact_RU_source_2026-10-15",
+        "matching_evidence": "Same standalone La Paz–Tiwanaku–Desaguadero tour: departure at 08:00, Lithic and Ceramic museums, Akapana, Kalasasaya, Gate of the Sun, Desaguadero crossing, transfers, entrance tickets and lunch. RU and EN language and commercial prices are independently specified.",
+        "qualification": "Same underlying separately offered excursion, not necessarily identical localized price or guide-language conditions.",
+        "retrieval_note": "Independent English product page, not just itinerary mention or a destination catalogue."
+      }
+    },
+    {
+      "key": "excursion_source_potosi_tur",
+      "type": "excursion",
+      "name": "Экскурсия в город Потоси в Боливии на 4 часа",
+      "ru_url": "https://adatours.ru/bolivia/potosi/potosi-city-tour/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Экскурсия в город Потоси в Боливии на 4 часа",
+        "potosi city tour",
+        "site:adatours.com potosi city tour excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "bolivia"
+    },
+    {
+      "key": "excursion_source_amboro_park_tur",
+      "type": "excursion",
+      "name": "Парк Амборо из Санта-Круса: облачный лес и водопады Куэвас",
+      "ru_url": "https://adatours.ru/bolivia/santa-cruz/amboro-national-park-cuevas-waterfalls/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Парк Амборо из Санта-Круса: облачный лес и водопады Куэвас",
+        "amboro national park cuevas waterfalls",
+        "site:adatours.com amboro national park excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "bolivia"
+    },
+    {
+      "key": "excursion_source_samaipata_tur",
+      "type": "excursion",
+      "name": "Экскурсии в Боливии: Фуэрте-де-Самайпата за 8 часов с обедом",
+      "ru_url": "https://adatours.ru/bolivia/santa-cruz/samaipata-el-fuerte-tour/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Экскурсии в Боливии: Фуэрте-де-Самайпата за 8 часов с обедом",
+        "samaipata el fuerte tour",
+        "site:adatours.com samaipata fuerte tour excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "bolivia"
+    },
+    {
+      "key": "excursion_uyuni_altiplano_border_transfer",
+      "type": "excursion",
+      "name": "Через боливийское альтиплано в Сан-Педро-де-Атакама",
+      "ru_url": "https://adatours.ru/bolivia/uyuni/uyuni-altiplano-border-transfer/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Через боливийское альтиплано в Сан-Педро-де-Атакама",
+        "uyuni altiplano border transfer",
+        "site:adatours.com uyuni altiplano border excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "bolivia"
+    },
+    {
+      "key": "excursion_uyuni_salt_flat_incahuasi_day",
+      "type": "excursion",
+      "name": "Солончак Уюни и остров Инкауаси",
+      "ru_url": "https://adatours.ru/bolivia/uyuni/uyuni-salt-flat-incahuasi-day/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Солончак Уюни и остров Инкауаси",
+        "uyuni salt flat incahuasi day",
+        "site:adatours.com uyuni salt flat excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "bolivia"
+    },
+    {
+      "key": "excursion_source_uyuni_na_2_dnya",
+      "type": "excursion",
+      "name": "Уюни на 2 дня: лагуны, гейзеры и солончак на джипе 4x4",
+      "ru_url": "https://adatours.ru/bolivia/uyuni/uyuni-salt-flats-4x4-tour-2-days/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Уюни на 2 дня: лагуны, гейзеры и солончак на джипе 4x4",
+        "uyuni salt flats 4x4 tour 2 days",
+        "site:adatours.com uyuni salt flats excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "Uyuni and lagoons appear in EN Bolivia expedition programmes; exact standalone two-day 4x4 itinerary not established.",
+      "comparison_group": "bolivia"
+    },
+    {
+      "key": "excursion_angra_ilha_grande_unguided_boat",
+      "type": "excursion",
+      "name": "Ангра-дус-Рейс и Илья-Гранди: морская прогулка без гида",
+      "ru_url": "https://adatours.ru/brazil/angra-dos-reis/angra-ilha-grande-boat-without-guide/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Ангра-дус-Рейс и Илья-Гранди: морская прогулка без гида",
+        "angra ilha grande boat without guide",
+        "site:adatours.com angra ilha grande excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_angra_ilha_grande_day_trip_from_rio",
+      "type": "excursion",
+      "name": "Тропические острова: Ангра-дус-Рейс и Илья-Гранди из Рио",
+      "ru_url": "https://adatours.ru/brazil/angra-dos-reis/angra-ilha-grande-day-trip-from-rio/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Тропические острова: Ангра-дус-Рейс и Илья-Гранди из Рио",
+        "angra ilha grande day trip from rio",
+        "site:adatours.com angra ilha grande excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_araras_canoe_trek_night_safari",
+      "type": "excursion",
+      "name": "Эколодж «Арарас»: каноэ, лесная тропа и ночное сафари",
+      "ru_url": "https://adatours.ru/brazil/araras-eco-lodge/araras-canoe-trek-night-safari/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Эколодж «Арарас»: каноэ, лесная тропа и ночное сафари",
+        "araras canoe trek night safari",
+        "site:adatours.com araras canoe trek excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_araras_horseback_rondon_trail",
+      "type": "excursion",
+      "name": "Эколодж «Арарас»: верховая прогулка и тропа Рондон",
+      "ru_url": "https://adatours.ru/brazil/araras-eco-lodge/araras-horseback-rondon-trail/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Эколодж «Арарас»: верховая прогулка и тропа Рондон",
+        "araras horseback rondon trail",
+        "site:adatours.com araras horseback rondon excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_source_siti_tur_po_belu_orizonti",
+      "type": "excursion",
+      "name": "Сити-тур по Белу-Оризонти",
+      "ru_url": "https://adatours.ru/brazil/belo-horizonte/belo-horizonte-city-tour/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Сити-тур по Белу-Оризонти",
+        "belo horizonte city tour",
+        "site:adatours.com belo horizonte city excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_brazil_bento_vineyard_atv",
+      "type": "excursion",
+      "name": "Бенту-Гонсалвис: квадроциклы по виноградникам",
+      "ru_url": "https://adatours.ru/brazil/bento-goncalves/bento-vineyard-atv/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Бенту-Гонсалвис: квадроциклы по виноградникам",
+        "bento vineyard atv",
+        "site:adatours.com bento vineyard excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_bom_jardim_aquario_salobra_snorkeling",
+      "type": "excursion",
+      "name": "Бом-Жардим: Зачарованный Аквариум и снорклинг в Салобре",
+      "ru_url": "https://adatours.ru/brazil/bom-jardim/bom-jardim-aquario-salobra-snorkeling/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Бом-Жардим: Зачарованный Аквариум и снорклинг в Салобре",
+        "bom jardim aquario salobra snorkeling",
+        "site:adatours.com jardim aquario salobra excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_brazil_bonito_abismo_anhumas",
+      "type": "excursion",
+      "name": "Бездна Аньюмас",
+      "ru_url": "https://adatours.ru/brazil/bonito/abismo-anhumas/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Бездна Аньюмас",
+        "abismo anhumas",
+        "site:adatours.com abismo anhumas excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_buzios_coastal_boat_trip",
+      "type": "excursion",
+      "name": "Морская прогулка по Бузиосу",
+      "ru_url": "https://adatours.ru/brazil/buzios/buzios-boat-trip/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Морская прогулка по Бузиосу",
+        "buzios boat trip",
+        "site:adatours.com buzios boat trip excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "English Buzios full-day tour from Rio includes city and pickup; RU page describes an independent local coastal boat trip, not the same full-day programme.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_source_jekskursija_v_buzios",
+      "type": "excursion",
+      "name": "Бузиос",
+      "ru_url": "https://adatours.ru/brazil/buzios/buzios-group-tour-from-rio/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Бузиос",
+        "buzios group tour from rio",
+        "site:adatours.com buzios group tour excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "The EN catalogue mentions Buzios full-day with boat and Rio pickup; the RU page describes a group visit with boat in its text but gives six-hour duration. Independent canonical product URL and full terms could not be compared; remain unconfirmed.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_brazil_cambara_balloon_picnic",
+      "type": "excursion",
+      "name": "Камбара-ду-Сул: воздушный шар и пикник",
+      "ru_url": "https://adatours.ru/brazil/cambara-do-sul/cambara-balloon-picnic/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Камбара-ду-Сул: воздушный шар и пикник",
+        "cambara balloon picnic",
+        "site:adatours.com cambara balloon picnic excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_chapada_waterfalls_trails",
+      "type": "excursion",
+      "name": "Шапада-дус-Гимарайнс: тропы и водопад Фата Невесты",
+      "ru_url": "https://adatours.ru/brazil/chapada-dos-guimaraes-national-park/chapada-waterfalls-trails/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Шапада-дус-Гимарайнс: тропы и водопад Фата Невесты",
+        "chapada waterfalls trails",
+        "site:adatours.com chapada waterfalls trails excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_source_fazendy_kofejnykh_baronov",
+      "type": "excursion",
+      "name": "Фазенды кофейных баронов",
+      "ru_url": "https://adatours.ru/brazil/excursion/coffee-baron-estates-tour/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Фазенды кофейных баронов",
+        "coffee baron estates tour",
+        "site:adatours.com coffee baron estates excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_brazil_florianopolis_private_city",
+      "type": "excursion",
+      "name": "Флорианополис: частная обзорная экскурсия",
+      "ru_url": "https://adatours.ru/brazil/florianopolis/florianopolis-private-city/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Флорианополис: частная обзорная экскурсия",
+        "florianopolis private city",
+        "site:adatours.com florianopolis private city excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_iguazu_argentine_asado_wine",
+      "type": "excursion",
+      "name": "Аргентинское асадо с вином в программе Игуасу",
+      "ru_url": "https://adatours.ru/brazil/foz-do-iguacu/argentine-asado-wine-evening/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Аргентинское асадо с вином в программе Игуасу",
+        "argentine asado wine evening",
+        "site:adatours.com argentine asado wine excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "No separate English excursion URL with confirmed matching itinerary, format, duration and included services was established from the saved inventory and targeted public searches; absence of an English version is unproven.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_iguazu_brazil_waterfalls_macuco_english",
+      "type": "excursion",
+      "name": "Бразильские водопады Игуасу и Macuco Safari с гидом",
+      "ru_url": "https://adatours.ru/brazil/foz-do-iguacu/brazilian-iguazu-waterfalls-macuco-english/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Бразильские водопады Игуасу и Macuco Safari с гидом",
+        "brazilian iguazu waterfalls macuco english",
+        "site:adatours.com brazilian iguazu waterfalls excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "The separate EN Macuco Safari page offers the boat/jungle excursion. RU product combines Brazilian waterfall panoramas, tickets and Macuco Safari with English guide. Not the same standalone package.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_iguazu_bird_park_private_program_visit",
+      "type": "excursion",
+      "name": "Парк птиц: посещение в индивидуальной программе Игуасу",
+      "ru_url": "https://adatours.ru/brazil/foz-do-iguacu/iguazu-bird-park-private-program-visit/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Парк птиц: посещение в индивидуальной программе Игуасу",
+        "iguazu bird park private program visit",
+        "site:adatours.com iguazu bird park excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "EN Bird Park in Iguaçu advertises a four-hour visit with ticket and transfer; RU product is a visit embedded in a private Iguazu programme. Independent product terms not proven identical.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_source_park_jekzoticheskih_ptic_v_iguasu",
+      "type": "excursion",
+      "name": "Парк экзотических птиц в Игуасу",
+      "ru_url": "https://adatours.ru/brazil/foz-do-iguacu/iguazu-bird-park-tour-6-hours/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Парк экзотических птиц в Игуасу",
+        "iguazu bird park tour 6 hours",
+        "site:adatours.com iguazu bird park excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "EN Bird Park in Iguaçu lists four hours; RU independent Park of Birds excursion specifies six hours plus guide and transfer. Terms differ; exact identity unconfirmed.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_iguazu_brazil_group_russian_program",
+      "type": "excursion",
+      "name": "Бразильская сторона Игуасу с русскоговорящим гидом в группе",
+      "ru_url": "https://adatours.ru/brazil/foz-do-iguacu/iguazu-brazil-group-russian-program/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Бразильская сторона Игуасу с русскоговорящим гидом в группе",
+        "iguazu brazil group russian program",
+        "site:adatours.com iguazu brazil group excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "General EN Brazilian Falls pages do not confirm a Russian-guided group product with the RU conditions.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_iguazu_brazil_half_day_russian_private",
+      "type": "excursion",
+      "name": "Игуасу: бразильская сторона с русскоговорящим гидом",
+      "ru_url": "https://adatours.ru/brazil/foz-do-iguacu/iguazu-brazil-half-day-russian-private/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Игуасу: бразильская сторона с русскоговорящим гидом",
+        "iguazu brazil half day russian private",
+        "site:adatours.com iguazu brazil half excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "EN Brazilian Falls general day tour does not establish the same Russian-language private half-day guided product.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_iguazu_brazil_panorama_private_program",
+      "type": "excursion",
+      "name": "Игуасу: панорамы бразильской стороны",
+      "ru_url": "https://adatours.ru/brazil/foz-do-iguacu/iguazu-brazil-panorama-private-program/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Игуасу: панорамы бразильской стороны",
+        "iguazu brazil panorama private program",
+        "site:adatours.com iguazu brazil panorama excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "EN Brazilian Falls standalone item mentions a general programme, not independently confirmed as the RU private panorama product.",
+      "comparison_group": "brazil"
+    },
+    {
+      "key": "excursion_source_brazilskaya_storona_vodopadov_iguasu",
+      "type": "excursion",
+      "name": "Бразильская сторона водопадов Игуасу",
+      "ru_url": "https://adatours.ru/brazil/foz-do-iguacu/iguazu-falls-brazilian-side-6-hours/",
+      "checked_at": "2026-10-15T17:20:00.907Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Бразильская сторона водопадов Игуасу",
+        "iguazu falls brazilian side 6 hours",
+        "site:adatours.com iguazu falls brazilian excursion"
+      ],
+      "search_scope": "Saved English URL inventory: 647 discovered and 646 fetched (2026-10-12); supplemented by targeted public indexed searches of Argentina, Belize, Bolivia and Brazil excursion pages (2026-10-15). Bounded independent excursion identity review, not exhaustive crawling or negative existence proof.",
+      "reason": "An EN Brazilian Falls standalone item is linked from the excursion catalogue, but its page could not be retrieved for exact scope and price comparison. Do not infer sameAs from the destination name.",
+      "comparison_group": "brazil"
+    }
+  ],
+  "summary": {
+    "processed": 50,
+    "excursions": 50,
+    "confirmed": 2,
+    "checked_no_confirmed_pair": 48,
+    "errors": 0,
+    "verification_cursor_after": 1400,
+    "next_batch": "adatours-com-identity-029",
+    "next_first_key": "excursion_source_jekskursija_na_brazil_skuju_storonu_vodopadov",
+    "schema_jsonld_changes": false
+  }
+}

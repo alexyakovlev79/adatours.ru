@@ -1,7 +1,7 @@
 ---
 targetPath: /mexico/place/san-miguel-de-allende/tour/
 kind: destination_tours
-status: approved
+status: "approved"
 buttonLabel: "Подробнее о турах через Сан-Мигель-де-Альенде"
 lead: "Сан-Мигель-де-Альенде удобно включать в маршрут по колониальным городам центральной Мексики. Разбираем действующий четырехдневный тур, время на прогулки, переезды и включенные услуги."
 ---

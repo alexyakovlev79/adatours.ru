@@ -1,7 +1,7 @@
 ---
 targetPath: /mexico/place/santa-barbara-cenotes/tour/
 kind: destination_tours
-status: approved
+status: "approved"
 buttonLabel: "Подробнее о турах к сенотам Санта-Барбара"
 lead: "Сеноты Санта-Барбара возле Хомуна на Юкатане включены в два маршрута Ada Tours через Мериду. Сравниваем восьмидневную и двенадцатидневную программы, условия купания, логистику и отличия экскурсий."
 ---

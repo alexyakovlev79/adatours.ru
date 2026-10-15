@@ -2,7 +2,7 @@
 id: tour_source_meksika_fantasticheskaya
 locale: ru
 slug: fantastic-mexico
-status: published
+status: archived
 title: Мексика Фантастическая
 countries:
 - country_mexico
@@ -269,6 +269,8 @@ routeDestinations:
 - destination_mexico_kankun
 primaryThemes: ["theme_culture","theme_beach"]
 themes: ["theme_wildlife"]
+archivedAt: "2026-10-15"
+archiveReason: "user_requested"
 ---
 
 **Условия стоимости:** на человека при размещении DBL в отелях 4* и группе из 6 человек

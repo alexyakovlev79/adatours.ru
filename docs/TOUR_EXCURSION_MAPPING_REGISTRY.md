@@ -1664,3 +1664,40 @@ Tour: `tour_chile_marble_caves_san_rafael_three_days`. Word Анны: https://do
 | 9 | `excursion_source_ekskursiya_v_zateryannyj_gorod_machu_pikchu` |
 | 10 | `excursion_cusco_archaeological_sites_russian_guide` |
 | 11 | `excursion_lima_huallamarca_cathedral_santo_domingo` |
+
+
+## Y26-007 — 8 стран Южной Америки, 32 дня (15.10.2026)
+
+Тур: `tour_south_america_eight_countries_32_days_2026`; основной Word: https://docs.google.com/document/d/1AQ_mgnd2pQY2p1qlSYHYiCY1UPZwZg4e/edit. Все 32 дня и коммерческие условия перенесены; 108 полных и 100 основных связей с местами. Существующие канонические экскурсии переиспользованы; новые сущности не создавались. Вариант Сеймур–Бачас / Пласа–Каррион — включённая альтернатива, не два обязательных маршрута.
+
+| День | Каноническая экскурсия | Условия |
+|---|---|---|
+| 3 (24.10.2026) | `excursion_rio_corcovado_train_christ` | Включено по Word |
+| 4 (25.10.2026) | `excursion_rio_sugarloaf_city_four_hours` | Включено по Word |
+| 6 (27.10.2026) | `excursion_iguazu_brazil_group_russian_program` | Включено по Word |
+| 6 (27.10.2026) | `excursion_source_jekskursija_v_park_ptic` | Факультативно, за доплату |
+| 6 (27.10.2026) | `excursion_macuco_safari_program_forest_boat` | Факультативно, за доплату |
+| 7 (28.10.2026) | `excursion_iguazu_argentina_group_russian_program` | Включено по Word |
+| 8 (29.10.2026) | `excursion_buenos_aires_three_hours_russian_group` | Включено по Word |
+| 8 (29.10.2026) | `excursion_buenos_aires_tango_show_dinner_transfer` | Включено по Word |
+| 9 (30.10.2026) | `excursion_source_ekskursiya_po_montevideo` | Включено по Word |
+| 11 (01.11.2026) | `excursion_santiago_historic_east_russian_group` | Включено по Word |
+| 11 (01.11.2026) | `excursion_santiago_maipo_wine_tour` | Факультативно, за доплату |
+| 12 (02.11.2026) | `excursion_atacama_astronomy_telescope_evening` | Факультативно, за доплату |
+| 13 (03.11.2026) | `excursion_source_uyuni_na_2_dnya` | Включено по Word |
+| 15 (05.11.2026) | `excursion_la_paz_city_moon_valley_four_hours` | Включено по Word |
+| 16 (06.11.2026) | `excursion_source_la_pas_tiuanako_i_desaguadero_tur` | Включено по Word |
+| 16 (06.11.2026) | `excursion_puno_uros_reed_islands_afternoon` | Включено по Word |
+| 17 (07.11.2026) | `excursion_puno_cusco_andes_tourist_bus` | Включено по Word |
+| 18 (08.11.2026) | `excursion_source_ekskursiya_v_zateryannyj_gorod_machu_pikchu` | Включено по Word |
+| 19 (09.11.2026) | `excursion_cusco_archaeological_sites_russian_guide` | Включено по Word |
+| 20 (10.11.2026) | `excursion_lima_huallamarca_cathedral_santo_domingo` | Включено по Word |
+| 22 (12.11.2026) | `excursion_ecuador_quito_panecillo_equator` | Включено по Word |
+| 23 (13.11.2026) | `excursion_ecuador_santa_cruz_highlands_lava_tunnels` | Включено по Word |
+| 24 (14.11.2026) | `excursion_source_ostrov_severnyj_sejmur` | Одна из двух включённых альтернатив |
+| 24 (14.11.2026) | `excursion_source_ostrov_plasa` | Одна из двух включённых альтернатив |
+| 27 (17.11.2026) | `excursion_source_penol_i_guatape` | Включено по Word |
+| 28 (18.11.2026) | `excursion_colombia_medellin_city_comuna13` | Включено по Word |
+| 29 (19.11.2026) | `excursion_source_siti_tur_po_kartakhene` | Включено по Word |
+| 30 (20.11.2026) | `excursion_source_siti_tur_v_bogote` | Включено по Word |
+| 31 (21.11.2026) | `excursion_colombia_zipaquira_salt_cathedral_5_hours` | Включено по Word |

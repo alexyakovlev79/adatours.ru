@@ -27,18 +27,18 @@
     "Только 2026 — сверить позже": 69,
     "Нет подтверждённых соответствий": 119,
     "Только 2027 — не менять": 61,
-    "siteCatalogRows": 390,
-    "publishedTourPages": 385,
+    "siteCatalogRows": 391,
+    "publishedTourPages": 386,
     "files2026": 433,
     "subfolders2026": 52,
     "programRecords2026": 327,
-    "matchedProgramRecords2026": 233,
-    "unresolvedProgramRecords2026": 94,
+    "matchedProgramRecords2026": 234,
+    "unresolvedProgramRecords2026": 93,
     "excludedFiles2026": 26,
-    "matchedFiles2026": 298,
-    "unresolvedFiles2026": 109,
-    "matchedSiteTours2026": 210,
-    "Только 2026 — сверено": 21
+    "matchedFiles2026": 300,
+    "unresolvedFiles2026": 107,
+    "matchedSiteTours2026": 211,
+    "Только 2026 — сверено": 22
   },
   "folders": [
     {
@@ -640,11 +640,13 @@
           "header": "8 стран Латинской Америки\nБразилия ∙ Аргентина ∙ Уругвай- Чили ∙ Боливия - Перу- Эквадор- Колумбия\n22.10-22.11.2026\n22.10 Сан Пауло \nПрибытие в Сан Пауло. Трансфер в отель рядом с аэропортом.\n23.10 Сан Пауло -Рио-де-Жанейрo\nТрансфер в аэропорт . Перелет в Рио-де-Жанейро. Трансфер в отель. \n24.10  Рио-де-Жанейро\nЗавтрак. Встреча в холле отеля с гидо"
         }
       ],
-      "status": "unresolved",
-      "entityIds": [],
+      "status": "matched",
+      "entityIds": [
+        "tour_south_america_eight_countries_32_days_2026"
+      ],
       "linked2027ProgramKey": null,
-      "method": null,
-      "note": "Точное соответствие не установлено: названия, длительность или состав маршрута не дают однозначной пары. Новый тур не создавался.",
+      "method": "exact_word_full_import_new_tour",
+      "note": "Подтверждена отдельная программа на 32 дня и восемь стран; похожие туры на 18/19 дней и VIP 33 дня — другие продукты. Полностью перенесён основной Word 2026: 22.10–22.11.2026, отели 4*, DBL $15500 / SGL $18600. Использованы существующие места и экскурсии, в том числе результаты Y26-004/Y26-005. Публикация ожидает успешного Actions deploy.",
       "candidates": [
         {
           "entityId": "tour_source_ekvador_zhivaya_priroda",
@@ -672,9 +674,11 @@
         }
       ],
       "work": {
-        "state": "not_requested",
-        "note": "Только инвентаризация. Не означает сверку содержания, актуализацию или публикацию."
-      }
+        "state": "reviewed",
+        "updatedAt": "2026-10-15",
+        "note": "Полная сверка Word завершена; 32 дня, 108 мест, 29 экскурсионных блоков, без дублей фото внутри программы. Деплой пока не подтверждён."
+      },
+      "primaryFileDriveId": "1AQ_mgnd2pQY2p1qlSYHYiCY1UPZwZg4e"
     },
     {
       "key": "Y26-008",
@@ -29669,6 +29673,56 @@
       "unconfirmed2026Candidates": [],
       "action": "Полная публикация по Word 2026",
       "contentCompared": true
+    },
+    {
+      "entityId": "tour_south_america_eight_countries_32_days_2026",
+      "name": "8 стран Южной Америки за 32 дня: от Рио и Игуасу до Галапагосов и Колумбии",
+      "url": "https://adatours.ru/multi-country/tour/south-america-eight-countries-32-days/",
+      "contentPath": "src/content/tours/south-america-eight-countries-32-days.md",
+      "hasPublishedPage": true,
+      "status": "active",
+      "sheetRow": null,
+      "group": "Только 2026 — сверено",
+      "sources2027": [],
+      "sheet2027Label": "",
+      "programKeys2026": [
+        "Y26-007"
+      ],
+      "sources2026": [
+        {
+          "driveId": "1AQ_mgnd2pQY2p1qlSYHYiCY1UPZwZg4e",
+          "name": "8 countries 22.10-22.11.2026 500 USD (1).docx",
+          "url": "https://docs.google.com/document/d/1AQ_mgnd2pQY2p1qlSYHYiCY1UPZwZg4e/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+          "folderId": "1zGWUcbfNkbn4_C1p7fNecoh8mD4J5sDt",
+          "path": "8 countries tour October november/8 countries 22.10-22.11.2026 500 USD (1).docx",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "modifiedTime": "2026-08-15T15:41:05.817Z",
+          "bytes": "3959305",
+          "identityRead": "document_text",
+          "textSha256": "3f5a62df7b296e71664e20e80281720490e6a067e3e774048e58a3b05a6ddc76",
+          "header": "8 стран Латинской Америки\nБразилия ∙ Аргентина ∙ Уругвай- Чили ∙ Боливия - Перу- Эквадор- Колумбия\n22.10-22.11.2026\n22.10 Сан Пауло \nПрибытие в Сан Пауло. Трансфер в отель рядом с аэропортом.\n23.10 Сан Пауло -Рио-де-Жанейрo\nТрансфер в аэропорт . Перелет в Рио-де-Жанейро. Трансфер в отель. \n24.10  Рио-де-Жанейро\nЗавтрак. Встреча в холле отеля с гидо"
+        },
+        {
+          "driveId": "1ccWq73WN9F_Z7lbsp5P86PIN7Q5hq6t4",
+          "name": "8 countries 22.10-22.11.2026 500 USD.docx",
+          "url": "https://docs.google.com/document/d/1ccWq73WN9F_Z7lbsp5P86PIN7Q5hq6t4/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+          "folderId": "1GtgCNBI9NDIdWWc9QSt9_pTag03C8g0W",
+          "path": "Multi countries 2026/8 countries 22.10-22.11.2026 500 USD.docx",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "modifiedTime": "2026-06-26T17:33:01.000Z",
+          "bytes": "4980900",
+          "identityRead": "document_text",
+          "textSha256": "3f5a62df7b296e71664e20e80281720490e6a067e3e774048e58a3b05a6ddc76",
+          "header": "8 стран Латинской Америки\nБразилия ∙ Аргентина ∙ Уругвай- Чили ∙ Боливия - Перу- Эквадор- Колумбия\n22.10-22.11.2026\n22.10 Сан Пауло \nПрибытие в Сан Пауло. Трансфер в отель рядом с аэропортом.\n23.10 Сан Пауло -Рио-де-Жанейрo\nТрансфер в аэропорт . Перелет в Рио-де-Жанейро. Трансфер в отель. \n24.10  Рио-де-Жанейро\nЗавтрак. Встреча в холле отеля с гидо"
+        }
+      ],
+      "notes": [
+        "Подтверждена отдельная программа на 32 дня и восемь стран; похожие туры на 18/19 дней и VIP 33 дня — другие продукты. Полностью перенесён основной Word 2026: 22.10–22.11.2026, отели 4*, DBL $15500 / SGL $18600. Использованы существующие места и экскурсии, в том числе результаты Y26-004/Y26-005. Публикация ожидает успешного Actions deploy."
+      ],
+      "unconfirmed2026Candidates": [],
+      "action": "Ожидается успешный deploy полного импорта Word 2026",
+      "contentCompared": true,
+      "publicationStatus": "pending"
     }
   ],
   "verification": {

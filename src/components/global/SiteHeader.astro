@@ -548,6 +548,12 @@ const nestedGroups = NAV_LINKS
     grid-template-columns: minmax(0, 1fr);
   }
 
+  /* After picking a country, let the widest visible label set the panel width. */
+  .desktop-nav__submenu--multi-country:has([data-mc-selected]) {
+    width: max-content;
+    max-width: min(620px, calc(100vw - 48px));
+  }
+
   .desktop-nav__submenu--wide {
     grid-template-columns: repeat(2, minmax(190px, 1fr));
     min-width: min(520px, calc(100vw - 40px));
@@ -582,7 +588,7 @@ const nestedGroups = NAV_LINKS
   }
 
   .desktop-nav__group:hover .desktop-nav__submenu,
-  .desktop-nav__group:focus-within .desktop-nav__submenu {
+  .desktop-nav__group:has(:focus-visible) .desktop-nav__submenu {
     opacity: 1;
     visibility: visible;
     transform: translate(var(--submenu-offset-x), 0);

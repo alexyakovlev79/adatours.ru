@@ -25,10 +25,12 @@ for (const menu of menuInstances) {
     .map((element) => ({ element, slugs: (element.dataset.mcMenuSlugs ?? '').split('_') }));
   if (!countryGrid || !links || !heading || !back) continue;
   let selected: string[] = [];
-  const focusBack = () => {
+  const focusBack = (keyboardActivation = false) => {
     const mobileBack = menu.closest<HTMLElement>('[data-mobile-panel]')
       ?.querySelector<HTMLButtonElement>('[data-submenu-back]');
-    (mobileBack ?? back).focus();
+    // Mouse clicks must not pin the desktop dropdown open via focused Back.
+    if (mobileBack) mobileBack.focus();
+    else if (keyboardActivation) back.focus();
   };
 
   const display = () => {
@@ -64,9 +66,10 @@ for (const menu of menuInstances) {
   countries.forEach((button) => button.addEventListener('click', () => {
     const slug = button.dataset.mcMenuCountry;
     if (!slug) return;
+    const keyboardActivation = button.matches(':focus-visible');
     selected = [slug];
     display();
-    focusBack();
+    focusBack(keyboardActivation);
   }));
 
   menu.querySelectorAll<HTMLButtonElement>('[data-mc-menu-expand]').forEach((button) => {
@@ -76,17 +79,34 @@ for (const menu of menuInstances) {
         || !selected.every((slug) => target.includes(slug))) return;
       // The URL slugs are alphabetical, but Back must preserve the visitor's
       // actual navigation path (e.g. Brazil -> Argentina -> Chile).
+      const keyboardActivation = button.matches(':focus-visible');
       selected = extendMultiCountrySelection(selected, target);
       display();
-      focusBack();
+      focusBack(keyboardActivation);
     });
   });
 
   back.addEventListener('click', () => {
+    const keyboardActivation = back.matches(':focus-visible');
     selected = previousMultiCountrySelection(selected);
     display();
-    if (selected.length) focusBack();
-    else countryGrid.querySelector<HTMLButtonElement>('button')?.focus();
+    if (selected.length) focusBack(keyboardActivation);
+    else if (menu.closest('[data-mobile-panel]') || keyboardActivation) {
+      countryGrid.querySelector<HTMLButtonElement>('button')?.focus();
+    }
+  });
+
+  // Leaving the whole desktop dropdown closes it and resets the next hover.
+  // Do not apply this behavior to the touch/mobile nested menu.
+  const desktopGroup = menu.closest<HTMLElement>('.desktop-nav__group');
+  desktopGroup?.addEventListener('pointerleave', (event) => {
+    if (event.pointerType !== 'mouse') return;
+    const focused = document.activeElement;
+    if (focused instanceof HTMLElement && desktopGroup.contains(focused)) focused.blur();
+    if (selected.length) {
+      selected = [];
+      display();
+    }
   });
 
   display();

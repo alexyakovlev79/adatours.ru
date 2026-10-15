@@ -73,6 +73,9 @@ const items = (serverLinks ? combinations : []).map((row) => ({
 
 <style>
   .mc-menu {
+    --mc-item-size: .72rem;
+    --mc-item-weight: 600;
+    --mc-item-tracking: .055em;
     min-width: 0;
     font-family: var(--font-display);
     line-height: 1.2;
@@ -82,8 +85,10 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     display: inline-block;
     padding-block: 10px;
     color: inherit;
-    font-size: .9rem;
-    font-weight: 600;
+    font-size: var(--mc-item-size);
+    font-weight: var(--mc-item-weight);
+    letter-spacing: var(--mc-item-tracking);
+    text-transform: uppercase;
     text-decoration: none;
     border-bottom: 1px solid currentColor;
   }
@@ -95,7 +100,10 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     background: transparent;
     border: none;
     font: inherit;
-    font-size: .92rem;
+    font-size: var(--mc-item-size);
+    font-weight: var(--mc-item-weight);
+    letter-spacing: var(--mc-item-tracking);
+    text-transform: uppercase;
     cursor: pointer;
   }
   .mc-menu__back[hidden],
@@ -130,8 +138,10 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     color: inherit;
     background: transparent;
     font-family: inherit;
-    font-size: clamp(.94rem, 1.15vw, 1.1rem);
-    font-weight: 400;
+    font-size: var(--mc-item-size);
+    font-weight: var(--mc-item-weight);
+    letter-spacing: var(--mc-item-tracking);
+    text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
     cursor: pointer;
@@ -166,23 +176,29 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
   }
   .mc-menu__combination a {
-    flex: 1 1 auto;
+    /* A link only covers its label, never the empty space leading to the arrow. */
+    flex: 0 1 auto;
     min-width: 0;
     padding: 13px 0;
     color: inherit;
     font-family: inherit;
-    font-size: .97rem;
+    font-size: var(--mc-item-size);
     line-height: 1.3;
-    font-weight: 400;
-    text-transform: none;
-    letter-spacing: normal;
+    font-weight: var(--mc-item-weight);
+    text-transform: uppercase;
+    letter-spacing: var(--mc-item-tracking);
     white-space: normal;
     overflow-wrap: anywhere;
     text-decoration: none;
   }
   .mc-menu__expand {
-    flex: 0 0 38px;
-    padding: 4px;
+    /* Invisible expansion hit-area starts just beyond the country label. */
+    display: flex;
+    flex: 1 0 104px;
+    min-width: 104px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 4px 5px 4px 8px;
     color: inherit;
     background: transparent;
     border: 0;
@@ -201,23 +217,38 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     outline: 2px solid var(--color-gold-deep);
     outline-offset: 3px;
   }
+  @media (min-width: 1241px) {
+    /* Size desktop levels 2+ to the longest visible combination, not the initial 620px panel. */
+    .mc-menu[data-mc-selected] .mc-menu__combinations {
+      width: max-content;
+      max-width: 100%;
+    }
+  }
   @media (max-width: 1240px) {
+    .mc-menu {
+      --mc-item-size: clamp(1.08rem, 4vw, 1.55rem);
+      --mc-item-weight: 400;
+      --mc-item-tracking: normal;
+    }
     /* Same compact row spacing and type scale as the mobile VIP submenu. */
     .mc-menu__country {
       min-height: 0;
       padding: 13px 0;
-      font-size: clamp(1.08rem, 4vw, 1.55rem);
+      font-size: var(--mc-item-size);
+      text-transform: none;
       line-height: 1.15;
     }
     .mc-menu__combination a {
       padding: 13px 0;
-      font-size: clamp(1.08rem, 4vw, 1.55rem);
+      font-size: var(--mc-item-size);
+      text-transform: none;
       line-height: 1.15;
     }
     .mc-menu__heading { margin: 10px 0 6px; }
     .mc-menu__all { padding-block: 6px; }
     .mc-menu__arrow { flex-basis: 16px; font-size: 1.35rem; }
-    .mc-menu__expand { flex-basis: 30px; }
-    .mc-menu__all { font-size: 1.04rem; }
+    .mc-menu__expand { flex-basis: 76px; min-width: 76px; }
+    .mc-menu__all { font-size: 1.04rem; text-transform: none; }
+    .mc-menu__back { font-size: .92rem; }
   }
 </style>

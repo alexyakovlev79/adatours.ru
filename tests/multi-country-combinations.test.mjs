@@ -1,4 +1,5 @@
 import test from 'node:test';
+import { isActiveEntity } from '../src/lib/archive.mjs';
 import assert from 'node:assert/strict';
 import {
   buildMultiCountryCombinations,
@@ -94,4 +95,19 @@ test('country names use natural Russian conjunction without changing selection o
   const alphabetical = [...chosen].sort();
   assert.equal(multiCountryCombinationPath(chosen), multiCountryCombinationPath(alphabetical));
   assert.deepEqual(chosen, ['brazil', 'argentina']);
+});
+
+test('rebuilds pairs and triples when route country changes or tour is archived', () => {
+  const slugs = ['argentina','brazil','chile'];
+  const lookup = new Map(slugs.map(slug => [slug, { slug, name: slug }]));
+  const tour = { data: { id:'test',status:'approved',locale:'ru',countries:slugs,routeCountries:['argentina','brazil'] } };
+  const routes = () => buildMultiCountryCombinations([tour].filter(isActiveEntity),
+    e => (e.data.routeCountries ?? e.data.countries).map(id=>lookup.get(id))).map(x=>x.path);
+  assert.deepEqual(routes(), ['/multi-country/argentina_brazil/']);
+  tour.data.routeCountries=['argentina','brazil','chile'];
+  assert.deepEqual(new Set(routes()),new Set(['/multi-country/argentina_brazil/','/multi-country/argentina_chile/','/multi-country/brazil_chile/','/multi-country/argentina_brazil_chile/']));
+  tour.data.routeCountries=['argentina','chile'];
+  assert.deepEqual(routes(),['/multi-country/argentina_chile/']);
+  tour.data.status='archived';
+  assert.deepEqual(routes(),[]);
 });

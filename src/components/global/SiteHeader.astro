@@ -126,7 +126,7 @@ const nestedGroups = NAV_LINKS
           <div class="desktop-nav__group">
             <a class="desktop-nav__parent" href={withBase(link.href)}>{link.label}</a>
             <div class="desktop-nav__submenu desktop-nav__submenu--multi-country" aria-label="Сочетания стран">
-              <MultiCountryMenu countries={multiCountryCountries} combinations={multiCountryCombinations} />
+              <MultiCountryMenu countries={multiCountryCountries} combinations={multiCountryCombinations} serverLinks={false} />
             </div>
           </div>
         ) : children.length > 0 ? (

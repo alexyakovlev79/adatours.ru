@@ -26,7 +26,8 @@ for (const file of examples) {
     .map((match) => match[1].replaceAll('&amp;', '&'))
     .filter((href) => /^\/multi-country\/[a-z0-9_-]+\/$/.test(href));
   assert.deepEqual([...new Set(linked)].sort(), [...expected].sort(), 'Header links differ: ' + file);
-  assert.equal(linked.length, expected.size * 2, 'Mobile and desktop menus must each contain all links: ' + file);
+  assert.equal(linked.length, expected.size, 'Every combination must appear exactly once in source HTML: ' + file);
+  assert.ok(header.includes('data-mc-menu-source="true"'), 'Mobile menu must own the real SSR links: ' + file);
 }
 const indexHtml = readFileSync(join(root, 'index.html'), 'utf8');
 const picker = indexHtml.match(/<section\b[^>]*data-multi-country-picker[^>]*>[\s\S]*?<\/section>/)?.[0];

@@ -1,6 +1,9 @@
 // Actual hrefs for every 2-4 country combination remain in the rendered header.
 // JS changes the displayed level, without creating URL links dynamically.
-for (const menu of document.querySelectorAll<HTMLElement>('[data-mc-menu]')) {
+const menuInstances = [...document.querySelectorAll<HTMLElement>('[data-mc-menu]')];
+const linkSource = menuInstances.map((item) => item.querySelector<HTMLElement>('[data-mc-menu-combinations][data-mc-menu-source]'))
+  .find((nav) => nav && nav.children.length > 0);
+for (const menu of menuInstances) {
   const countries = [...menu.querySelectorAll<HTMLButtonElement>('[data-mc-menu-country]')];
   const names = new Map(countries.map((button) => [
     button.dataset.mcMenuCountry ?? '',
@@ -8,6 +11,11 @@ for (const menu of document.querySelectorAll<HTMLElement>('[data-mc-menu]')) {
   ]));
   const countryGrid = menu.querySelector<HTMLElement>('[data-mc-menu-countries]');
   const links = menu.querySelector<HTMLElement>('[data-mc-menu-combinations]');
+  // Desktop borrows the exact same verified SSR anchors from the mobile menu.
+  // The source HTML contains a single copy of every link on every page.
+  if (links && links.children.length === 0 && linkSource) {
+    for (const child of [...linkSource.children]) links.append(child.cloneNode(true));
+  }
   const heading = menu.querySelector<HTMLElement>('[data-mc-menu-heading]');
   const back = menu.querySelector<HTMLButtonElement>('[data-mc-menu-back]');
   const combinations = [...menu.querySelectorAll<HTMLElement>('[data-mc-menu-combination]')]

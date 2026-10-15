@@ -6,11 +6,12 @@ interface MenuCombination { slugs: string[]; path: string; count: number; }
 interface Props {
   countries: MenuCountry[];
   combinations: MenuCombination[];
+  serverLinks?: boolean;
 }
-const { countries, combinations } = Astro.props;
+const { countries, combinations, serverLinks = true } = Astro.props;
 const bySlug = new Map(countries.map((country) => [country.slug, country]));
 const existing = new Set(combinations.map((row) => row.slugs.join('_')));
-const items = combinations.map((row) => ({
+const items = (serverLinks ? combinations : []).map((row) => ({
   ...row,
   names: row.slugs.map((slug) => bySlug.get(slug)?.name ?? slug),
   hasMore: row.slugs.length < 4 && countries.some((country) =>
@@ -42,7 +43,7 @@ const items = combinations.map((row) => ({
     ))}
   </div>
 
-  <nav class="mc-menu__combinations" data-mc-menu-combinations aria-label="Сочетания стран">
+  <nav class="mc-menu__combinations" data-mc-menu-combinations aria-label="Сочетания стран" data-mc-menu-source={serverLinks ? 'true' : undefined}>
     {items.map((row) => (
       <div
         class="mc-menu__combination"

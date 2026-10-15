@@ -1,0 +1,998 @@
+{
+  "format_version": 1,
+  "batch_id": "adatours-com-identity-027",
+  "domain": "adatours.com",
+  "step": 3,
+  "checked_at": "2026-10-15T16:56:05.393Z",
+  "scope": "50 active RU objects, verification positions 1301–1350: 6 Venezuela tours and 44 Argentina excursions. Each checked for an exact independent English object URL, not for mentions inside itineraries.",
+  "source_coverage": {
+    "inventory_urls": 647,
+    "fetched": 646,
+    "inventory_date": "2026-10-12",
+    "targeted_public_search_date": "2026-10-15",
+    "fresh_live_http_checks": 0,
+    "limitation": "The saved English URL inventory is not exhaustive; public search was topical/bounded, not 50 fresh direct HTTP validations. 'No confirmed pair' does not prove nonexistence."
+  },
+  "verification_rule": "sameAs only if both URLs denote the same independently published tour or excursion product. A country, destination, broad excursion catalogue, or embedded module of a multi-day tour does not match a standalone RU excursion page.",
+  "contextual_english_pages_not_sameas": [
+    {
+      "group": "bariloche",
+      "urls": [
+        "https://adatours.com/argentina-bariloche-and-buenos-aires",
+        "https://adatours.com/bariloche/excursions"
+      ],
+      "role": "Examples found in English pages relevant to the group; not confirmed one-to-one product URL equivalents."
+    },
+    {
+      "group": "tango",
+      "urls": [
+        "https://adatours.com/buenos-aires-full",
+        "https://adatours.com/luxury-argentina-tour-11-days"
+      ],
+      "role": "Examples found in English pages relevant to the group; not confirmed one-to-one product URL equivalents."
+    },
+    {
+      "group": "buenos_aires",
+      "urls": [
+        "https://adatours.com/buenos-aires/excursions",
+        "https://adatours.com/buenos-aires-full"
+      ],
+      "role": "Examples found in English pages relevant to the group; not confirmed one-to-one product URL equivalents."
+    },
+    {
+      "group": "tigre",
+      "urls": [
+        "https://adatours.com/3-countries-of-latin-america-at-rio-carnival",
+        "https://adatours.com/from-ice-to-waterfalls"
+      ],
+      "role": "Examples found in English pages relevant to the group; not confirmed one-to-one product URL equivalents."
+    },
+    {
+      "group": "calafate",
+      "urls": [
+        "https://adatours.com/incredible-argentina",
+        "https://adatours.com/exploring-argentina"
+      ],
+      "role": "Examples found in English pages relevant to the group; not confirmed one-to-one product URL equivalents."
+    },
+    {
+      "group": "iguazu",
+      "urls": [
+        "https://adatours.com/incredible-argentina",
+        "https://adatours.com/ice-to-sun-and-end-of-the-world"
+      ],
+      "role": "Examples found in English pages relevant to the group; not confirmed one-to-one product URL equivalents."
+    },
+    {
+      "group": "mendoza",
+      "urls": [
+        "https://adatours.com/all-argentina",
+        "https://adatours.com/mendoza/excursions"
+      ],
+      "role": "Examples found in English pages relevant to the group; not confirmed one-to-one product URL equivalents."
+    },
+    {
+      "group": "venezuela",
+      "urls": [
+        "https://adatours.com/venezuela-en",
+        "https://adatours.com/venezuela-en/packages"
+      ],
+      "role": "Examples found in English pages relevant to the group; not confirmed one-to-one product URL equivalents."
+    }
+  ],
+  "frozen_keys": [
+    "tour_source_kraski_venesuely",
+    "tour_source_populyarnye_napravleniya_venesuely",
+    "tour_source_venesuela_treking_v_zateryannyj_i_pervozdannyj_mir_rorajmy",
+    "tour_source_krasota_venesuely",
+    "tour_source_venesuela_novye_konkistadory",
+    "tour_source_venesuela_prirodnye_kontrasty_tropikov",
+    "excursion_bariloche_circuito_chico",
+    "excursion_victoria_island_arrayanes_catamaran",
+    "excursion_buenos_aires_gastronomic_tour",
+    "excursion_buenos_aires_half_day_lunch",
+    "excursion_buenos_aires_historic_districts_russian_private",
+    "excursion_source_buenos_ajres_sochetanie_istorii_i_iskusstva",
+    "excursion_buenos_aires_panoramic_half_day",
+    "excursion_buenos_aires_private_historic_neighbourhoods",
+    "excursion_source_tango_shou_v_buenos_ajrese",
+    "excursion_buenos_aires_tango_show_dinner_transfer",
+    "excursion_buenos_aires_tango_show_optional_dinner",
+    "excursion_buenos_aires_tango_show_dinner",
+    "excursion_buenos_aires_three_hours_russian_group",
+    "excursion_source_fiesta_gaucho",
+    "excursion_buenos_aires_gala_tango_dinner_transfer",
+    "excursion_source_nezabyvaemoe_tango_shou",
+    "excursion_buenos_aires_michelangelo_tango_dinner",
+    "excursion_buenos_aires_porteno_tango_dinner_transfer",
+    "excursion_source_jekskursija_v_tigre",
+    "excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa",
+    "excursion_argentina_cachi_from_cafayate_to_salta",
+    "excursion_argentina_guachipas_rock_art_tour",
+    "excursion_argentina_perito_moreno_private_full_day",
+    "excursion_el_calafate_glaciares_gourmet",
+    "excursion_el_calafate_nativo_experience",
+    "excursion_source_uvlekatel_nyj_tur_k_perito_moreno",
+    "excursion_perito_moreno_full_day_bus",
+    "excursion_el_calafate_ice_trekking_perito_moreno",
+    "excursion_source_perrito_moreno_s_russkogovorjaschim_gidom",
+    "excursion_el_calafate_todo_glaciares",
+    "excursion_el_chalten_kayaking",
+    "excursion_source_shakhty_vandy",
+    "excursion_ibera_corrientes_river_or_dorado_fishing",
+    "excursion_argentina_lujan_de_cuyo_winery_tasting",
+    "excursion_martillo_penguin_walk",
+    "excursion_argentina_lujan_three_wineries_lunch",
+    "excursion_source_mendosa_tur_v_gory",
+    "excursion_mendoza_city_tour",
+    "excursion_source_mendoza_tur_v_vinnuyu_dolinu",
+    "excursion_argentina_perito_moreno_boat_safari_russian_guide",
+    "excursion_iguazu_argentina_group_russian_program",
+    "excursion_iguazu_argentina_private_walkways_program",
+    "excursion_iguazu_argentine_full_day_russian_private",
+    "excursion_source_jekskursija_na_argentinskie_vodopady"
+  ],
+  "results": [
+    {
+      "key": "tour_source_kraski_venesuely",
+      "type": "tour",
+      "name": "Краски Венесуэлы",
+      "ru_url": "https://adatours.ru/venezuela/tour/colors-of-venezuela/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Краски Венесуэлы",
+        "colors of venezuela",
+        "site:adatours.com Venezuela tour"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No independently documented identical English tour programme found for this Venezuelan RU itinerary. EN Venezuela country/catalogue coverage and unrelated Roraima/Canaima references do not establish a one-to-one tour identity.",
+      "comparison_group": "venezuela"
+    },
+    {
+      "key": "tour_source_populyarnye_napravleniya_venesuely",
+      "type": "tour",
+      "name": "Популярные Направления Венесуэлы от туроператора Ада Турс",
+      "ru_url": "https://adatours.ru/venezuela/tour/popular-destinations-of-venezuela/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Популярные Направления Венесуэлы от туроператора Ада Турс",
+        "popular destinations of venezuela",
+        "site:adatours.com Venezuela tour"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No independently documented identical English tour programme found for this Venezuelan RU itinerary. EN Venezuela country/catalogue coverage and unrelated Roraima/Canaima references do not establish a one-to-one tour identity.",
+      "comparison_group": "venezuela"
+    },
+    {
+      "key": "tour_source_venesuela_treking_v_zateryannyj_i_pervozdannyj_mir_rorajmy",
+      "type": "tour",
+      "name": "Тур в Венесуэлу на 12 дней с трекингом на столовую гору Рорайма",
+      "ru_url": "https://adatours.ru/venezuela/tour/venezuela-mount-roraima-trek-12-days/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Тур в Венесуэлу на 12 дней с трекингом на столовую гору Рорайма",
+        "venezuela mount roraima trek 12 days",
+        "site:adatours.com Venezuela tour"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No independently documented identical English tour programme found for this Venezuelan RU itinerary. EN Venezuela country/catalogue coverage and unrelated Roraima/Canaima references do not establish a one-to-one tour identity.",
+      "comparison_group": "venezuela"
+    },
+    {
+      "key": "tour_source_krasota_venesuely",
+      "type": "tour",
+      "name": "Тур в Венесуэлу на 12 дней с пляжным отдыхом и эко-маршрутами",
+      "ru_url": "https://adatours.ru/venezuela/tour/venezuela-nature-beaches-12-days/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Тур в Венесуэлу на 12 дней с пляжным отдыхом и эко-маршрутами",
+        "venezuela nature beaches 12 days",
+        "site:adatours.com Venezuela tour"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No independently documented identical English tour programme found for this Venezuelan RU itinerary. EN Venezuela country/catalogue coverage and unrelated Roraima/Canaima references do not establish a one-to-one tour identity.",
+      "comparison_group": "venezuela"
+    },
+    {
+      "key": "tour_source_venesuela_novye_konkistadory",
+      "type": "tour",
+      "name": "Венесуэла -Новые Конкистадоры",
+      "ru_url": "https://adatours.ru/venezuela/tour/venezuela-new-conquistadors/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Венесуэла -Новые Конкистадоры",
+        "venezuela new conquistadors",
+        "site:adatours.com Venezuela tour"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No independently documented identical English tour programme found for this Venezuelan RU itinerary. EN Venezuela country/catalogue coverage and unrelated Roraima/Canaima references do not establish a one-to-one tour identity.",
+      "comparison_group": "venezuela"
+    },
+    {
+      "key": "tour_source_venesuela_prirodnye_kontrasty_tropikov",
+      "type": "tour",
+      "name": "Тур в Венесуэлу на 12 дней по лучшим местам страны и пляжным отдыхом",
+      "ru_url": "https://adatours.ru/venezuela/tour/venezuela-tropical-contrasts-beaches-12-days/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Тур в Венесуэлу на 12 дней по лучшим местам страны и пляжным отдыхом",
+        "venezuela tropical contrasts beaches 12 days",
+        "site:adatours.com Venezuela tour"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No independently documented identical English tour programme found for this Venezuelan RU itinerary. EN Venezuela country/catalogue coverage and unrelated Roraima/Canaima references do not establish a one-to-one tour identity.",
+      "comparison_group": "venezuela"
+    },
+    {
+      "key": "excursion_bariloche_circuito_chico",
+      "type": "excursion",
+      "name": "Барилоче: «Малое кольцо» и Серро-Кампанарио",
+      "ru_url": "https://adatours.ru/argentina/bariloche/bariloche-circuito-chico/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Барилоче: «Малое кольцо» и Серро-Кампанарио",
+        "bariloche circuito chico",
+        "site:adatours.com bariloche excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "Bariloche attractions or activities may be mentioned in EN multi-day tours, but the bounded search has not established an independent English page for this exact excursion.",
+      "comparison_group": "bariloche"
+    },
+    {
+      "key": "excursion_victoria_island_arrayanes_catamaran",
+      "type": "excursion",
+      "name": "Остров Виктория и лес Арраянес на катамаране",
+      "ru_url": "https://adatours.ru/argentina/bariloche/victoria-island-arrayanes-catamaran/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Остров Виктория и лес Арраянес на катамаране",
+        "victoria island arrayanes catamaran",
+        "site:adatours.com bariloche excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "Bariloche attractions or activities may be mentioned in EN multi-day tours, but the bounded search has not established an independent English page for this exact excursion.",
+      "comparison_group": "bariloche"
+    },
+    {
+      "key": "excursion_buenos_aires_gastronomic_tour",
+      "type": "excursion",
+      "name": "Гастрономический тур по Буэнос-Айресу",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-food-tour/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Гастрономический тур по Буэнос-Айресу",
+        "buenos aires food tour",
+        "site:adatours.com buenos aires excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN Buenos Aires tour descriptions or excursion catalogue have thematically related content but do not independently identify this exact RU excursion offer.",
+      "comparison_group": "buenos_aires"
+    },
+    {
+      "key": "excursion_buenos_aires_half_day_lunch",
+      "type": "excursion",
+      "name": "Буэнос-Айрес: полдня с гидом и обедом",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-half-day-lunch/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Буэнос-Айрес: полдня с гидом и обедом",
+        "buenos aires half day lunch",
+        "site:adatours.com buenos aires excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN Buenos Aires tour descriptions or excursion catalogue have thematically related content but do not independently identify this exact RU excursion offer.",
+      "comparison_group": "buenos_aires"
+    },
+    {
+      "key": "excursion_buenos_aires_historic_districts_russian_private",
+      "type": "excursion",
+      "name": "Буэнос-Айрес: исторические районы с русскоговорящим гидом",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-historic-districts-russian-private/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Буэнос-Айрес: исторические районы с русскоговорящим гидом",
+        "buenos aires historic districts russian private",
+        "site:adatours.com buenos aires excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN Buenos Aires tour descriptions or excursion catalogue have thematically related content but do not independently identify this exact RU excursion offer.",
+      "comparison_group": "buenos_aires"
+    },
+    {
+      "key": "excursion_source_buenos_ajres_sochetanie_istorii_i_iskusstva",
+      "type": "excursion",
+      "name": "Экскурсия в Буэнос-Айресе Аргентина: лучшее в городе",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-history-art-tour/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Экскурсия в Буэнос-Айресе Аргентина: лучшее в городе",
+        "buenos aires history art tour",
+        "site:adatours.com buenos aires excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN Buenos Aires tour descriptions or excursion catalogue have thematically related content but do not independently identify this exact RU excursion offer.",
+      "comparison_group": "buenos_aires"
+    },
+    {
+      "key": "excursion_buenos_aires_panoramic_half_day",
+      "type": "excursion",
+      "name": "Буэнос-Айрес: панорамная экскурсия на полдня",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-panoramic-half-day/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Буэнос-Айрес: панорамная экскурсия на полдня",
+        "buenos aires panoramic half day",
+        "site:adatours.com buenos aires excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN Buenos Aires tour descriptions or excursion catalogue have thematically related content but do not independently identify this exact RU excursion offer.",
+      "comparison_group": "buenos_aires"
+    },
+    {
+      "key": "excursion_buenos_aires_private_historic_neighbourhoods",
+      "type": "excursion",
+      "name": "Буэнос-Айрес: индивидуальная экскурсия по историческим районам",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-private-historic-neighbourhoods/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Буэнос-Айрес: индивидуальная экскурсия по историческим районам",
+        "buenos aires private historic neighbourhoods",
+        "site:adatours.com buenos aires excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN Buenos Aires tour descriptions or excursion catalogue have thematically related content but do not independently identify this exact RU excursion offer.",
+      "comparison_group": "buenos_aires"
+    },
+    {
+      "key": "excursion_source_tango_shou_v_buenos_ajrese",
+      "type": "excursion",
+      "name": "Танго-шоу в Буэнос-Айресе",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-tango-show-4-hours/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Танго-шоу в Буэнос-Айресе",
+        "buenos aires tango show 4 hours",
+        "site:adatours.com tango excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tour packages mention tango shows, including particular venues; no standalone EN product page confirming this exact show, meal and transfer variant was established.",
+      "comparison_group": "tango"
+    },
+    {
+      "key": "excursion_buenos_aires_tango_show_dinner_transfer",
+      "type": "excursion",
+      "name": "Танго-шоу с ужином и трансфером в Буэнос-Айресе",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-tango-show-dinner-transfer/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Танго-шоу с ужином и трансфером в Буэнос-Айресе",
+        "buenos aires tango show dinner transfer",
+        "site:adatours.com tango excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tour packages mention tango shows, including particular venues; no standalone EN product page confirming this exact show, meal and transfer variant was established.",
+      "comparison_group": "tango"
+    },
+    {
+      "key": "excursion_buenos_aires_tango_show_optional_dinner",
+      "type": "excursion",
+      "name": "Танго-шоу в Буэнос-Айресе с возможностью заказать ужин",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-tango-show-optional-dinner/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Танго-шоу в Буэнос-Айресе с возможностью заказать ужин",
+        "buenos aires tango show optional dinner",
+        "site:adatours.com tango excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tour packages mention tango shows, including particular venues; no standalone EN product page confirming this exact show, meal and transfer variant was established.",
+      "comparison_group": "tango"
+    },
+    {
+      "key": "excursion_buenos_aires_tango_show_dinner",
+      "type": "excursion",
+      "name": "Танго-шоу с ужином в Буэнос-Айресе",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-tango-show-with-dinner/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Танго-шоу с ужином в Буэнос-Айресе",
+        "buenos aires tango show with dinner",
+        "site:adatours.com tango excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tour packages mention tango shows, including particular venues; no standalone EN product page confirming this exact show, meal and transfer variant was established.",
+      "comparison_group": "tango"
+    },
+    {
+      "key": "excursion_buenos_aires_three_hours_russian_group",
+      "type": "excursion",
+      "name": "Буэнос-Айрес: обзорная экскурсия на 3 часа в группе",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/buenos-aires-three-hours-russian-group/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Буэнос-Айрес: обзорная экскурсия на 3 часа в группе",
+        "buenos aires three hours russian group",
+        "site:adatours.com buenos aires excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN Buenos Aires tour descriptions or excursion catalogue have thematically related content but do not independently identify this exact RU excursion offer.",
+      "comparison_group": "buenos_aires"
+    },
+    {
+      "key": "excursion_source_fiesta_gaucho",
+      "type": "excursion",
+      "name": "«Фиеста Гаучо»: день на аргентинском ранчо",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/fiesta-gaucho/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "«Фиеста Гаучо»: день на аргентинском ранчо",
+        "fiesta gaucho",
+        "site:adatours.com buenos aires excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN Buenos Aires tour descriptions or excursion catalogue have thematically related content but do not independently identify this exact RU excursion offer.",
+      "comparison_group": "buenos_aires"
+    },
+    {
+      "key": "excursion_buenos_aires_gala_tango_dinner_transfer",
+      "type": "excursion",
+      "name": "Gala Tango с ужином и трансфером",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/gala-tango-dinner-transfer/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Gala Tango с ужином и трансфером",
+        "gala tango dinner transfer",
+        "site:adatours.com tango excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tour packages mention tango shows, including particular venues; no standalone EN product page confirming this exact show, meal and transfer variant was established.",
+      "comparison_group": "tango"
+    },
+    {
+      "key": "excursion_source_nezabyvaemoe_tango_shou",
+      "type": "excursion",
+      "name": "Экскурсия \"Танго в Буэнос-Айресе\" с шоу и ужином",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/la-ventana-tango-dinner-show/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Экскурсия \"Танго в Буэнос-Айресе\" с шоу и ужином",
+        "la ventana tango dinner show",
+        "site:adatours.com tango excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tour packages mention tango shows, including particular venues; no standalone EN product page confirming this exact show, meal and transfer variant was established.",
+      "comparison_group": "tango"
+    },
+    {
+      "key": "excursion_buenos_aires_michelangelo_tango_dinner",
+      "type": "excursion",
+      "name": "Michelangelo: танго-шоу с ужином и трансфером",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/michelangelo-tango-dinner-transfer/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Michelangelo: танго-шоу с ужином и трансфером",
+        "michelangelo tango dinner transfer",
+        "site:adatours.com tango excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tour packages mention tango shows, including particular venues; no standalone EN product page confirming this exact show, meal and transfer variant was established.",
+      "comparison_group": "tango"
+    },
+    {
+      "key": "excursion_buenos_aires_porteno_tango_dinner_transfer",
+      "type": "excursion",
+      "name": "Танго-шоу с ужином в доме танго «Портеньо»",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/tango-porteno-dinner-show/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Танго-шоу с ужином в доме танго «Портеньо»",
+        "tango porteno dinner show",
+        "site:adatours.com tango excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tour packages mention tango shows, including particular venues; no standalone EN product page confirming this exact show, meal and transfer variant was established.",
+      "comparison_group": "tango"
+    },
+    {
+      "key": "excursion_source_jekskursija_v_tigre",
+      "type": "excursion",
+      "name": "Тигре за 4 часа: прогулка по дельте из Буэнос-Айреса",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/tigre-delta-tour-from-buenos-aires/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Тигре за 4 часа: прогулка по дельте из Буэнос-Айреса",
+        "tigre delta tour from buenos aires",
+        "site:adatours.com tigre excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "Tigre or Northern Suburbs appear as embedded excursion modules in EN multi-day tours; those tour URLs are not sameAs for this standalone RU excursion.",
+      "comparison_group": "tigre"
+    },
+    {
+      "key": "excursion_source_ekskursiya_v_tigre_i_po_severnym_provintsiyam_buenos_ajresa",
+      "type": "excursion",
+      "name": "Тигре и Северная зона",
+      "ru_url": "https://adatours.ru/argentina/buenos-aires/tigre-northern-buenos-aires-tour/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Тигре и Северная зона",
+        "tigre northern buenos aires tour",
+        "site:adatours.com tigre excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "Tigre or Northern Suburbs appear as embedded excursion modules in EN multi-day tours; those tour URLs are not sameAs for this standalone RU excursion.",
+      "comparison_group": "tigre"
+    },
+    {
+      "key": "excursion_argentina_cachi_from_cafayate_to_salta",
+      "type": "excursion",
+      "name": "Качи: горный город из Кафаяте в Сальту",
+      "ru_url": "https://adatours.ru/argentina/cachi/cachi-from-cafayate-to-salta/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Качи: горный город из Кафаяте в Сальту",
+        "cachi from cafayate to salta",
+        "site:adatours.com other excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No standalone EN excursion product corresponding exactly to this RU activity was established in the saved inventory and bounded topical public search; nearby EN material is geographic or tour-level rather than product-level.",
+      "comparison_group": "other"
+    },
+    {
+      "key": "excursion_argentina_guachipas_rock_art_tour",
+      "type": "excursion",
+      "name": "Гуачипас и наскальная живопись",
+      "ru_url": "https://adatours.ru/argentina/cuevas-pintadas-guachipas/guachipas-rock-art-tour/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Гуачипас и наскальная живопись",
+        "guachipas rock art tour",
+        "site:adatours.com other excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No standalone EN excursion product corresponding exactly to this RU activity was established in the saved inventory and bounded topical public search; nearby EN material is geographic or tour-level rather than product-level.",
+      "comparison_group": "other"
+    },
+    {
+      "key": "excursion_argentina_perito_moreno_private_full_day",
+      "type": "excursion",
+      "name": "Перито-Морено: индивидуальная экскурсия на целый день",
+      "ru_url": "https://adatours.ru/argentina/el-calafate/argentina-perito-moreno-private-full-day/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Перито-Морено: индивидуальная экскурсия на целый день",
+        "argentina perito moreno private full day",
+        "site:adatours.com calafate excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "English tour itineraries describe Perito Moreno or lake navigation, but not a confirmed independent product matching this excursion's exact activity, duration and guide/transport variant.",
+      "comparison_group": "calafate"
+    },
+    {
+      "key": "excursion_el_calafate_glaciares_gourmet",
+      "type": "excursion",
+      "name": "Glaciares Gourmet: навигация по озеру Аргентино",
+      "ru_url": "https://adatours.ru/argentina/el-calafate/glaciares-gourmet/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Glaciares Gourmet: навигация по озеру Аргентино",
+        "glaciares gourmet",
+        "site:adatours.com calafate excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "English tour itineraries describe Perito Moreno or lake navigation, but not a confirmed independent product matching this excursion's exact activity, duration and guide/transport variant.",
+      "comparison_group": "calafate"
+    },
+    {
+      "key": "excursion_el_calafate_nativo_experience",
+      "type": "excursion",
+      "name": "Nativo Experience: джип-тур у озера Архентино",
+      "ru_url": "https://adatours.ru/argentina/el-calafate/nativo-experience-el-calafate/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Nativo Experience: джип-тур у озера Архентино",
+        "nativo experience el calafate",
+        "site:adatours.com calafate excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "English tour itineraries describe Perito Moreno or lake navigation, but not a confirmed independent product matching this excursion's exact activity, duration and guide/transport variant.",
+      "comparison_group": "calafate"
+    },
+    {
+      "key": "excursion_source_uvlekatel_nyj_tur_k_perito_moreno",
+      "type": "excursion",
+      "name": "Увлекательный тур к Перито Морено",
+      "ru_url": "https://adatours.ru/argentina/el-calafate/perito-moreno-english-speaking-guide/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Увлекательный тур к Перито Морено",
+        "perito moreno english speaking guide",
+        "site:adatours.com calafate excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "English tour itineraries describe Perito Moreno or lake navigation, but not a confirmed independent product matching this excursion's exact activity, duration and guide/transport variant.",
+      "comparison_group": "calafate"
+    },
+    {
+      "key": "excursion_perito_moreno_full_day_bus",
+      "type": "excursion",
+      "name": "Перито-Морено: экскурсия на целый день на автобусе",
+      "ru_url": "https://adatours.ru/argentina/el-calafate/perito-moreno-full-day-bus/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Перито-Морено: экскурсия на целый день на автобусе",
+        "perito moreno full day bus",
+        "site:adatours.com calafate excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "English tour itineraries describe Perito Moreno or lake navigation, but not a confirmed independent product matching this excursion's exact activity, duration and guide/transport variant.",
+      "comparison_group": "calafate"
+    },
+    {
+      "key": "excursion_el_calafate_ice_trekking_perito_moreno",
+      "type": "excursion",
+      "name": "Ледовый треккинг по леднику Перито-Морено",
+      "ru_url": "https://adatours.ru/argentina/el-calafate/perito-moreno-glacier-ice-trekking/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Ледовый треккинг по леднику Перито-Морено",
+        "perito moreno glacier ice trekking",
+        "site:adatours.com calafate excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "English tour itineraries describe Perito Moreno or lake navigation, but not a confirmed independent product matching this excursion's exact activity, duration and guide/transport variant.",
+      "comparison_group": "calafate"
+    },
+    {
+      "key": "excursion_source_perrito_moreno_s_russkogovorjaschim_gidom",
+      "type": "excursion",
+      "name": "Ледник Перито-Морено с русскоговорящим гидом",
+      "ru_url": "https://adatours.ru/argentina/el-calafate/perito-moreno-russian-speaking-guide/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Ледник Перито-Морено с русскоговорящим гидом",
+        "perito moreno russian speaking guide",
+        "site:adatours.com calafate excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "English tour itineraries describe Perito Moreno or lake navigation, but not a confirmed independent product matching this excursion's exact activity, duration and guide/transport variant.",
+      "comparison_group": "calafate"
+    },
+    {
+      "key": "excursion_el_calafate_todo_glaciares",
+      "type": "excursion",
+      "name": "Todo Glaciares: навигация по ледникам озера Аргентино",
+      "ru_url": "https://adatours.ru/argentina/el-calafate/todo-glaciares/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Todo Glaciares: навигация по ледникам озера Аргентино",
+        "todo glaciares",
+        "site:adatours.com calafate excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "English tour itineraries describe Perito Moreno or lake navigation, but not a confirmed independent product matching this excursion's exact activity, duration and guide/transport variant.",
+      "comparison_group": "calafate"
+    },
+    {
+      "key": "excursion_el_chalten_kayaking",
+      "type": "excursion",
+      "name": "Каякинг в Эль-Чалтене",
+      "ru_url": "https://adatours.ru/argentina/el-chalten/el-chalten-kayaking/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Каякинг в Эль-Чалтене",
+        "el chalten kayaking",
+        "site:adatours.com calafate excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "English tour itineraries describe Perito Moreno or lake navigation, but not a confirmed independent product matching this excursion's exact activity, duration and guide/transport variant.",
+      "comparison_group": "calafate"
+    },
+    {
+      "key": "excursion_source_shakhty_vandy",
+      "type": "excursion",
+      "name": "Экскурсия в Игуасу в Аргентине – Шахты Ванды",
+      "ru_url": "https://adatours.ru/argentina/excursion/wanda-mines-tour/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Экскурсия в Игуасу в Аргентине – Шахты Ванды",
+        "wanda mines tour",
+        "site:adatours.com other excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No standalone EN excursion product corresponding exactly to this RU activity was established in the saved inventory and bounded topical public search; nearby EN material is geographic or tour-level rather than product-level.",
+      "comparison_group": "other"
+    },
+    {
+      "key": "excursion_ibera_corrientes_river_or_dorado_fishing",
+      "type": "excursion",
+      "name": "Прогулка по реке Корриентес или рыбалка на дорадо в Ибере",
+      "ru_url": "https://adatours.ru/argentina/ibera/ibera-corrientes-river-cruise-or-dorado-fishing/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Прогулка по реке Корриентес или рыбалка на дорадо в Ибере",
+        "ibera corrientes river cruise or dorado fishing",
+        "site:adatours.com other excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No standalone EN excursion product corresponding exactly to this RU activity was established in the saved inventory and bounded topical public search; nearby EN material is geographic or tour-level rather than product-level.",
+      "comparison_group": "other"
+    },
+    {
+      "key": "excursion_argentina_lujan_de_cuyo_winery_tasting",
+      "type": "excursion",
+      "name": "Лухан-де-Куйо: винодельня и дегустация",
+      "ru_url": "https://adatours.ru/argentina/lujan-de-cuyo/lujan-de-cuyo-winery-tasting/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Лухан-де-Куйо: винодельня и дегустация",
+        "lujan de cuyo winery tasting",
+        "site:adatours.com mendoza excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "Mendoza and its wineries appear in the EN guide/tours; no independently identified English excursion URL with the same winery route and conditions was found.",
+      "comparison_group": "mendoza"
+    },
+    {
+      "key": "excursion_martillo_penguin_walk",
+      "type": "excursion",
+      "name": "Остров Мартильо: прогулка рядом с пингвинами",
+      "ru_url": "https://adatours.ru/argentina/martillo-island/martillo-penguin-walk/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Остров Мартильо: прогулка рядом с пингвинами",
+        "martillo penguin walk",
+        "site:adatours.com other excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "No standalone EN excursion product corresponding exactly to this RU activity was established in the saved inventory and bounded topical public search; nearby EN material is geographic or tour-level rather than product-level.",
+      "comparison_group": "other"
+    },
+    {
+      "key": "excursion_argentina_lujan_three_wineries_lunch",
+      "type": "excursion",
+      "name": "Лухан-де-Куйо: 3 винодельни с дегустациями и обедом",
+      "ru_url": "https://adatours.ru/argentina/mendoza/argentina-lujan-three-wineries-lunch/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Лухан-де-Куйо: 3 винодельни с дегустациями и обедом",
+        "argentina lujan three wineries lunch",
+        "site:adatours.com mendoza excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "Mendoza and its wineries appear in the EN guide/tours; no independently identified English excursion URL with the same winery route and conditions was found.",
+      "comparison_group": "mendoza"
+    },
+    {
+      "key": "excursion_source_mendosa_tur_v_gory",
+      "type": "excursion",
+      "name": "Мендоса: горный маршрут к Аконкагуа и мосту Инков",
+      "ru_url": "https://adatours.ru/argentina/mendoza/mendoza-aconcagua-puente-del-inca-tour/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Мендоса: горный маршрут к Аконкагуа и мосту Инков",
+        "mendoza aconcagua puente del inca tour",
+        "site:adatours.com mendoza excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "Mendoza and its wineries appear in the EN guide/tours; no independently identified English excursion URL with the same winery route and conditions was found.",
+      "comparison_group": "mendoza"
+    },
+    {
+      "key": "excursion_mendoza_city_tour",
+      "type": "excursion",
+      "name": "Обзорная экскурсия по Мендосе",
+      "ru_url": "https://adatours.ru/argentina/mendoza/mendoza-city-tour/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Обзорная экскурсия по Мендосе",
+        "mendoza city tour",
+        "site:adatours.com mendoza excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "Mendoza and its wineries appear in the EN guide/tours; no independently identified English excursion URL with the same winery route and conditions was found.",
+      "comparison_group": "mendoza"
+    },
+    {
+      "key": "excursion_source_mendoza_tur_v_vinnuyu_dolinu",
+      "type": "excursion",
+      "name": "Мендоса: винодельни и дегустация вина",
+      "ru_url": "https://adatours.ru/argentina/mendoza/mendoza-wineries-wine-tasting/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Мендоса: винодельни и дегустация вина",
+        "mendoza wineries wine tasting",
+        "site:adatours.com mendoza excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "Mendoza and its wineries appear in the EN guide/tours; no independently identified English excursion URL with the same winery route and conditions was found.",
+      "comparison_group": "mendoza"
+    },
+    {
+      "key": "excursion_argentina_perito_moreno_boat_safari_russian_guide",
+      "type": "excursion",
+      "name": "Перито-Морено с гидом и сафари на катере",
+      "ru_url": "https://adatours.ru/argentina/perito-moreno-glacier/perito-moreno-boat-safari-russian-guide/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Перито-Морено с гидом и сафари на катере",
+        "perito moreno boat safari russian guide",
+        "site:adatours.com calafate excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "English tour itineraries describe Perito Moreno or lake navigation, but not a confirmed independent product matching this excursion's exact activity, duration and guide/transport variant.",
+      "comparison_group": "calafate"
+    },
+    {
+      "key": "excursion_iguazu_argentina_group_russian_program",
+      "type": "excursion",
+      "name": "Аргентинская сторона Игуасу с русскоговорящим гидом в группе",
+      "ru_url": "https://adatours.ru/argentina/puerto-iguazu/iguazu-argentina-group-russian-program/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Аргентинская сторона Игуасу с русскоговорящим гидом в группе",
+        "iguazu argentina group russian program",
+        "site:adatours.com iguazu excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tours and destination pages describe Iguazu walkways and falls, but no independent EN excursion page with matching Argentine-side/Brazilian-side service format was confirmed.",
+      "comparison_group": "iguazu"
+    },
+    {
+      "key": "excursion_iguazu_argentina_private_walkways_program",
+      "type": "excursion",
+      "name": "Игуасу: приватная прогулка по аргентинской стороне",
+      "ru_url": "https://adatours.ru/argentina/puerto-iguazu/iguazu-argentina-private-walkways-program/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Игуасу: приватная прогулка по аргентинской стороне",
+        "iguazu argentina private walkways program",
+        "site:adatours.com iguazu excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tours and destination pages describe Iguazu walkways and falls, but no independent EN excursion page with matching Argentine-side/Brazilian-side service format was confirmed.",
+      "comparison_group": "iguazu"
+    },
+    {
+      "key": "excursion_iguazu_argentine_full_day_russian_private",
+      "type": "excursion",
+      "name": "Игуасу: аргентинская сторона с русскоговорящим гидом",
+      "ru_url": "https://adatours.ru/argentina/puerto-iguazu/iguazu-argentine-full-day-russian-private/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Игуасу: аргентинская сторона с русскоговорящим гидом",
+        "iguazu argentine full day russian private",
+        "site:adatours.com iguazu excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tours and destination pages describe Iguazu walkways and falls, but no independent EN excursion page with matching Argentine-side/Brazilian-side service format was confirmed.",
+      "comparison_group": "iguazu"
+    },
+    {
+      "key": "excursion_source_jekskursija_na_argentinskie_vodopady",
+      "type": "excursion",
+      "name": "Экскурсия на Водопады Игуасу в Аргентине и Бразилии",
+      "ru_url": "https://adatours.ru/argentina/puerto-iguazu/iguazu-falls-argentine-side-tour/",
+      "checked_at": "2026-10-15T16:56:05.393Z",
+      "status": "checked_no_confirmed_pair",
+      "confirmed_sameas_url": "",
+      "search_terms": [
+        "Экскурсия на Водопады Игуасу в Аргентине и Бразилии",
+        "iguazu falls argentine side tour",
+        "site:adatours.com iguazu excursion"
+      ],
+      "search_scope": "All 50 canonical RU titles, types and URLs cross-compared with the saved adatours.com URL inventory (647 discovered / 646 fetched on 2026-10-12); additional targeted public searches on 2026-10-15 for Venezuelan tours and Bariloche, Buenos Aires, tango, Tigre, El Calafate, Mendoza and Iguazu excursions. This is a bounded identity check, not a complete new live crawl; EN tour mentions and catalogue pages are not standalone Excursion identities.",
+      "reason": "EN tours and destination pages describe Iguazu walkways and falls, but no independent EN excursion page with matching Argentine-side/Brazilian-side service format was confirmed.",
+      "comparison_group": "iguazu"
+    }
+  ],
+  "summary": {
+    "processed": 50,
+    "tours": 6,
+    "excursions": 44,
+    "confirmed": 0,
+    "checked_no_confirmed_pair": 50,
+    "verification_cursor_after": 1350,
+    "next_batch": "adatours-com-identity-028",
+    "next_first_key": "excursion_iguazu_gran_aventura",
+    "schema_jsonld_changes": false
+  }
+}

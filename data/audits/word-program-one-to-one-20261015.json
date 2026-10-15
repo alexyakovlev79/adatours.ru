@@ -2,7 +2,7 @@
   "date": "2026-10-15",
   "scope": "13 спорных программ: одна нормализованная программа Word — один активный опубликованный Tour; альтернативные редакции сохраняются без новых страниц.",
   "authority": "Прямое поручение Алексея 15.10.2026 13:28:40 МСК; предыдущие предложения приняты.",
-  "stage": "ready_for_deployment",
+  "stage": "published_and_registered",
   "decisions": [
     {
       "key": "P057",
@@ -143,7 +143,7 @@
     "data/seo-geo/articles/vip/bolivia/index.md",
     "data/seo-geo/articles/vip/bolivia/interests/wildlife/index.md"
   ],
-  "stagingCheck": "Published target articles in staging still contain old recommendations; synchronize exact patches after checking claims and branch head.",
+  "stagingCheck": "Шесть опубликованных статей и две архивные строки синхронизированы в seo-geo/staging; preflight 38722209432 success.",
   "coverage": {
     "programRecords": 13,
     "uniqueCanonicalTours": 10,
@@ -241,5 +241,41 @@
         "activeMatches": 1
       }
     ]
+  },
+  "contentCommit": "097e98f7fa982bdec1497bb1dbd07b85ac80b551",
+  "deployedCommit": "b6a4082bf4648a4ddd4e926801dc4d0e6001853f",
+  "deploymentRunId": 38722616971,
+  "deploymentConclusion": "success",
+  "stagingCleanupCommit": "3914b2a721268010100d0e4bde30996617efa334",
+  "registers": {
+    "pages": "synced_and_read_back",
+    "photos": "30 historical/archive slots closed; 10 reused image slots updated; read back verified",
+    "annaConfirmation": "13 target rows synced and verified",
+    "anna13Programs": "13/13 mappings closed",
+    "seo": "2 archive rows and 6 article comments synced"
+  },
+  "acceptedSourceCaveats": {
+    "P051": "В Word заявлены 13 дней/12 ночей, описаны дни 1–12; оговорка публично сохранена по решению пользователя.",
+    "P057": "Название отеля Buenos Aires подтверждается при бронировании; 13 ночей нормализованы по расписанию 3/2/3/2/3.",
+    "P108": "Цена по запросу; неизвестные год и коммерческие сведения не выдуманы."
+  },
+  "verification": {
+    "activeCanonicalProgrammePages": 10,
+    "archiveOutput": {
+      "archiveRecords": 40,
+      "accessibleArchivedDetails": 35,
+      "preservedAliases": 106,
+      "sourceOnlyArchiveRecords": 5,
+      "publicLinksToArchive": 0,
+      "archiveSearchRecords": 0,
+      "archivePhotoJobs": 0
+    },
+    "buildArtifactId": 11966014822,
+    "registerReadBack": {
+      "mainCells": 265,
+      "annaCells": 120,
+      "mismatches": 0
+    },
+    "concurrentChanges": "Fresh main defcc71c: no changes in target tours, source-index, inventory, archives or edited SEO articles since content commit."
   }
 }

@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "targetPath": "/multi-country/belize_costa-rica/",
+  "articlePath": "data/seo-geo/articles/multi-country/belize_costa-rica/index.md",
+  "authoredBy": "seo-gpt6-amanda-writer-20261015113041925",
+  "checkedAt": "2026-10-15",
+  "editorialIntent": "Практический выбор маршрута Белиз + Коста-Рика с явной фиксацией отсутствия прямой границы, особенностей действующей 26-дневной восьмистрановой программы, фактических Белизских и коста-риканских дней, пересадок, гражданства и виз, валют и сезонов. Не приписывать сайту несуществующий отдельный двухстрановый пакет.",
+  "repositorySources": [
+    "src/content/tours/central-america-8-countries-26-days.md",
+    "src/lib/multi-country-combinations.mjs",
+    "src/data/catalog/destinations.json",
+    "data/source-index/catalogs/tours.json",
+    "data/seo-geo/articles/multi-country/index.md",
+    "data/seo-geo/articles/multi-country/costa-rica_panama/index.md"
+  ],
+  "independentSources": [
+    {
+      "url": "https://immigration.gov.bz/visa/visa-who-qualify/?50976b45_page=1",
+      "publisher": "Belize Immigration Department",
+      "checkedAt": "2026-10-15",
+      "supports": "Визовая таблица гражданств, Russian Federation = NO, общее разрешение посетителей и необходимость продления пребывания"
+    },
+    {
+      "url": "https://www.pgrweb.go.cr/DOCS/NORMAS/1/VIGENTE/CIR/2020-2029/2020-2024/2022/17D0E/159FDF.HTML",
+      "publisher": "Procuraduría General de la República de Costa Rica",
+      "checkedAt": "2026-10-15",
+      "supports": "Специальное соглашение с РФ о безвизовом пребывании до 90 календарных дней"
+    },
+    {
+      "url": "https://www.travelbelize.org/facts.about-belize/",
+      "publisher": "Belize Tourism Board",
+      "checkedAt": "2026-10-15",
+      "supports": "Общая сезонность климата Белиза и более сухой период февраль–май"
+    },
+    {
+      "url": "https://www.visitcostarica.com/planning-your-trip/climate",
+      "publisher": "Costa Rica Tourism Board",
+      "checkedAt": "2026-10-15",
+      "supports": "Различия климата тихоокеанского и карибского побережий Коста-Рики"
+    }
+  ],
+  "editorialNotes": "Белиз и Коста-Рика присутствуют в 8-страновом активном туре, но не являются соседними государствами. Реальная программа имеет 26 дней и включает авиарейсы Канкун→Белиз-Сити и Манагуа→Сан-Хосе, но НЕ прямой Белиз→Коста-Рика. У туров не подтверждена цена, не выводить фиктивный priceFrom. В публичном MD внешних ссылок нет."
+}

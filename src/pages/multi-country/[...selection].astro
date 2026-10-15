@@ -8,7 +8,9 @@ import DestinationBand from '../../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../../components/catalog/CatalogPagination.astro';
 import MultiCountrySelector from '../../components/catalog/MultiCountrySelector.astro';
 import { buildMultiCountryCombinations, formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
+import { multiCountrySeoMetadata } from '../../lib/multi-country-seo.mjs';
 import combinationCovers from '../../data/media/multi-country-heroes.json';
+import destinationCatalog from '../../data/catalog/destinations.json';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { compareToursBySalesFit } from '../../lib/tour-ranking';
 import { mainTourCountries, tourPath } from '../../lib/routes';
@@ -30,6 +32,9 @@ export async function getStaticPaths() {
     const version = createHash('sha256')
       .update(JSON.stringify(row.tours.map((entry) => entry.data.id))).digest('hex').slice(0, 20);
     const cover = row.tours.find((entry) => Boolean(entry.data.hero?.src));
+    const seoMeta = multiCountrySeoMetadata({
+      countries: row.countries, tours: row.tours, destinations: destinationCatalog,
+    });
     return paginateCatalog(row.tours, row.path).map(({ entries, pagination }) => ({
       params: {
         selection: row.slugs.join('_') + (pagination.currentPage > 1
@@ -37,7 +42,7 @@ export async function getStaticPaths() {
       },
       props: {
         entries, pagination, catalogVersion: version,
-        slugs: row.slugs, comboCountries: row.countries,
+        slugs: row.slugs, comboCountries: row.countries, seoMeta,
         pickerCountries, pickerCombinations,
         hero: combinationCovers.covers[row.slugs.join('_')]?.src ?? cover?.data.hero?.src,
       },
@@ -47,17 +52,15 @@ export async function getStaticPaths() {
 
 const {
   entries, pagination, catalogVersion, slugs, comboCountries,
-  pickerCountries, pickerCombinations, hero,
+  pickerCountries, pickerCombinations, hero, seoMeta,
 } = Astro.props;
 const names = comboCountries.map((country) => country.name);
 // Page titles always use the canonical alphabetical country order.
 const countriesText = formatMultiCountryNames(names);
 const heading = 'Туры: ' + countriesText;
-const baseTitle = countriesText + ': ' + countLabel(pagination.totalItems, ['тур', 'тура', 'туров']);
+const baseTitle = seoMeta.title;
 const pageSuffix = pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage + ' из ' + pagination.totalPages : '';
-const description = 'Готовые туры Ada Tours по странам: ' + countriesText + '. '
-  + countLabel(pagination.totalItems, ['маршрут', 'маршрута', 'маршрутов'])
-  + ' с выбранными странами. В отдельных поездках могут быть и другие страны. Даты и отели можно адаптировать.'
+const description = seoMeta.description
   + (pagination.currentPage > 1 ? ' Страница ' + pagination.currentPage + ' из ' + pagination.totalPages
     + ', маршруты ' + pagination.from + '–' + pagination.to + ' из ' + pagination.totalItems + '.' : '');
 const absolute = (path: string) => new URL(withBase(path), Astro.site ?? 'https://adatours.ru/').toString();

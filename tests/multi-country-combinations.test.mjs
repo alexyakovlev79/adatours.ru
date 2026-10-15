@@ -1,5 +1,7 @@
 import test from 'node:test';
 import { isActiveEntity } from '../src/lib/archive.mjs';
+import { multiCountrySeoMetadata } from '../src/lib/multi-country-seo.mjs';
+import { collectSeoPagePrices, enrichSeoPriceMetadata } from '../src/lib/seo-price-meta.mjs';
 import assert from 'node:assert/strict';
 import {
   buildMultiCountryCombinations,
@@ -110,4 +112,66 @@ test('rebuilds pairs and triples when route country changes or tour is archived'
   assert.deepEqual(routes(),['/multi-country/argentina_chile/']);
   tour.data.status='archived';
   assert.deepEqual(routes(),[]);
+});
+
+test('multi-country SEO uses exact selected countries, verified USD minimum and Russian genitives', () => {
+  const countries = [
+    {id:'country_antarctica',name:'Антарктида'},
+    {id:'country_chile',name:'Чили'},
+    {id:'country_peru',name:'Перу'},
+  ];
+  const tours = [
+    {data:{id:'one',priceFrom:7800,currency:'USD',routeDestinations:['drake','santiago']}},
+    {data:{id:'two',priceFrom:6595,currency:'USD',routeDestinations:['machu']}},
+    {data:{id:'three',priceFrom:null,currency:'USD',routeDestinations:['santiago']}},
+  ];
+  const destinations = [
+    {id:'drake',countryId:'country_antarctica',name:'Пролив Дрейка'},
+    {id:'santiago',countryId:'country_chile',name:'Сантьяго'},
+    {id:'machu',countryId:'country_peru',name:'Мачу-Пикчу'},
+  ];
+  const seo = multiCountrySeoMetadata({countries,tours,destinations,date:new Date('2026-10-15T06:00:00Z')});
+  assert.equal(seo.title.replaceAll('\u00a0',' '),
+    'Антарктида, Чили и Перу: Каталог 2026-2027: 3 тура и цены от $6 595 туроператора Ada Tours');
+  assert.match(seo.description.replaceAll('\u00a0',' '),
+    /^Цены туров: от \$6 595\. Достопримечательности Антарктиды, Чили и Перу\./);
+  assert.match(seo.description,/Пролив Дрейка, Сантьяго и Мачу-Пикчу/);
+  assert.equal(seo.minUsdPrice,6595);
+  const mixed = multiCountrySeoMetadata({countries,tours:[
+    tours[0],{data:{...tours[1].data,currency:'EUR'}}
+  ],date:new Date('2026-10-15T06:00:00Z')});
+  assert.ok(!mixed.title.includes('цены от'));
+  assert.ok(mixed.description.startsWith('Достопримечательности Антарктиды, Чили и Перу.'));
+  const unchanged = enrichSeoPriceMetadata({
+    title:seo.title, description:seo.description,
+    prices:[{kind:'tour',amount:6595,currency:'USD',id:'two'}, {kind:'tour',amount:7800,currency:'USD',id:'one'}],
+  });
+  assert.equal(unchanged.changed,false,'Do not insert the same price twice');
+});
+
+test('combination price selection ignores cheaper tours missing a country and uses full list on page 2', () => {
+  const kinds = ['antarctica','chile','peru'];
+  const records = kinds.map((slug) => ({
+    kind:'country',path:'/'+slug+'/',data:{id:'country_'+slug,slug,status:'approved'},
+  }));
+  const tour = (id, amount, ids) => ({
+    kind:'tour',path:'/multi-country/tour/'+id+'/', data:{
+      id,status:'approved',priceFrom:amount,currency:'USD',routeCountries:ids,
+      countries:ids,
+    },
+  });
+  records.push(
+    tour('first',8500,['country_antarctica','country_chile','country_peru']),
+    tour('second',6595,['country_antarctica','country_chile','country_peru']),
+    tour('cheaper-but-no-peru',800,['country_antarctica','country_chile']),
+    tour('peru-only-optional',500,['country_antarctica','country_chile'])
+  );
+  records.at(-1).data.countries.push('country_peru');
+  const params = { records,root:'https://adatours.ru/',
+    groups:[{links:[{href:'/multi-country/tour/cheaper-but-no-peru/'}]}] };
+  const first = collectSeoPagePrices({...params,path:'/multi-country/antarctica_chile_peru/'});
+  const second = collectSeoPagePrices({...params,path:'/multi-country/antarctica_chile_peru/page/2/'});
+  assert.deepEqual(first.map((r)=>r.id),['first','second']);
+  assert.deepEqual(second,first);
+  assert.equal(Math.min(...second.map((r)=>r.amount)),6595);
 });

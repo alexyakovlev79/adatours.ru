@@ -23,14 +23,15 @@ const combine=(items)=>{const list=items.filter(Boolean);return list.length>1?
  list.slice(0,-1).join(', ')+' и '+list.at(-1):(list[0]||'');};
 export function seoCountryTitle(name,attractions,excursions,tours) {
  const visible=combine([quantity(attractions,'attraction'),quantity(excursions,'excursion')])||'путешествия';
- const toursText=tours>0?'Каталог '+quantity(tours,'tour')+' и цены':'Цены';
- return name+': '+visible+'. '+toursText+' '+year()+' туроператора Ada Tours';
+ const toursText=tours>0?'Каталог '+year()+': '+quantity(tours,'tour')+' и цены':'Путешествия '+year();
+ return name+': '+visible+'. '+toursText+' туроператора Ada Tours';
 }
 export function seoDestinationTitle(name,countryId,excursions,tours) {
  const inCountry=seoCountryCase(countryId,'prepositional');
  const visible=combine(['локации',quantity(excursions,'excursion'),quantity(tours,'tour')]);
  const availability=tours===0?' Пока нет туров в это место.':'';
- return name+(inCountry?' в '+inCountry:'')+': '+visible+'.'+availability+' Цены '+year()+' принимающего туроператора Ada Tours';
+ const catalogue=tours>0?'Каталог '+year()+': цены':'Путешествия '+year();
+ return name+(inCountry?' в '+inCountry:'')+': '+visible+'.'+availability+' '+catalogue+' принимающего туроператора Ada Tours';
 }
 function priceFrom(price,currency) {
  const n=Number(price);

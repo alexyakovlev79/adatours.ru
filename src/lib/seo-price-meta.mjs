@@ -54,7 +54,13 @@ export function collectSeoPagePrices({ records, root, path, groups = [], priceVi
   else if (canonical === '/excursions/') fullSelection = excursions;
   else if (canonical === '/vip/') fullSelection = selectVipTours(tours).entries;
   else if (canonical === '/multi-country/') fullSelection = tours.filter((r) => mainCountries(r).length > 1);
-  else if ((m = canonical.match(/^\/([^/]+)\/tour\/$/))) {
+  else if ((m = canonical.match(/^\/multi-country\/([a-z0-9-]+(?:_[a-z0-9-]+){1,3})\/$/))) {
+    // The price belongs to the FULL selection of main route countries, not
+    // an optional visit or the first ten cards on a paginated catalogue.
+    const ids = m[1].split('_').map((slug) => countryBySlug(slug)?.data.id);
+    if (ids.every(Boolean)) fullSelection = tours.filter((r) =>
+      ids.every((id) => mainCountries(r).includes(id)));
+  } else if ((m = canonical.match(/^\/([^/]+)\/tour\/$/))) {
     const country = countryBySlug(m[1]);
     if (country) fullSelection = tours.filter((r) => mainCountries(r).includes(country.data.id));
   } else if ((m = canonical.match(/^\/([^/]+)\/place\/([^/]+)\/(tour|optional-tours)\/$/))) {

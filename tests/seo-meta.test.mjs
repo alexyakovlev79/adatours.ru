@@ -20,7 +20,7 @@ test("annual rollover at Moscow Jan 1",()=>{
  assert.equal(seoYearRange(new Date("2026-12-31T20:59:00Z")),"2026-2027");
  assert.equal(seoYearRange(new Date("2026-12-31T21:00:00Z")),"2027-2028");
  assert.equal(seoFill(SEO.country.title,{country:"Бразилия",numbers:[21,2,5],date:new Date("2026-10-09T12:00:00Z")}),
-  "Бразилия: 21 локация и 2 экскурсии. Каталог 5 туров и цены 2026-2027 туроператора Ada Tours");
+  "Бразилия: 21 локация и 2 экскурсии. Каталог 2026-2027: 5 туров и цены туроператора Ada Tours");
 });
 test("countries after 'по' use case",()=>{
  assert.equal(seoPopularCountriesAfterPo(["Бразилия","Аргентина","Перу"]),"Бразилии, Аргентине, Перу");
@@ -58,6 +58,20 @@ test('zero tours show destination availability while other missing counts stay h
  assert.equal(seoThemeHubTitle('Приключения',3),'Приключения — 3 тура и впечатления | Ada Tours');
  assert.equal(seoThemeHubTitle('Приключения',5),'Приключения — 5 туров и впечатлений | Ada Tours');
 });
+test('country and destination place the catalogue year before dynamic prices', () => {
+ const yr=seoYearRange();
+ assert.equal(seoCountryTitle('Антарктида',41,0,9),
+  'Антарктида: 41 локация. Каталог '+yr+': 9 туров и цены туроператора Ada Tours');
+ const priced=enrichSeoPriceMetadata({
+  title:seoCountryTitle('Антарктида',41,0,9),description:'',
+  prices:[{id:'a',kind:'tour',amount:6595,currency:'USD'}, {id:'b',kind:'tour',amount:8000,currency:'USD'}],
+ });
+ assert.equal(priced.title.replaceAll('\u00a0',' '),
+  'Антарктида: 41 локация. Каталог '+yr+': 9 туров и цены от $6 595 туроператора Ada Tours');
+ assert.match(seoDestinationTitle('Самаипата','country_bolivia',2,3),
+  new RegExp('Каталог '+yr+': цены принимающего'));
+});
+
 test('SEO title cases and conditional prices',()=>{
  const place={id:'destination_bolivia_samaipata',name:'Самаипата',countryId:'country_bolivia'};
  assert.match(seoCountryTourCatalogTitle('country_brazil'),/по Бразилии/);

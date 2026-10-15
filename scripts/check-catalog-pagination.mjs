@@ -51,6 +51,11 @@ for (const path of files) {
   assert.ok(og, context);
   assert.equal(attr(og, 'content'), expectedURL, `OG URL: ${context}`);
   assert.equal((html.match(/<h1\b/g) ?? []).length, 1, `one H1: ${context}`);
+  if (/^\/multi-country\/(?:[a-z0-9-]+_){1,3}[a-z0-9-]+\/$/.test(key)) {
+    assert.match(titleText, /Каталог \d{4}-\d{4}: \d+ тур/u, `combination title: ${context}`);
+    assert.ok(metaDescription.includes('Достопримечательности '), `combination geo description: ${context}`);
+    assert.ok(!/цены\s+от\s+\$[\d\s\u00a0]+\s+\d{4}-\d{4}/u.test(titleText), `price before year: ${context}`);
+  }
   if (key === '/multi-country/') {
     assert.ok(titleText.includes('Multi-country тур'), `multi-country title: ${context}`);
     assert.ok(metaDescription.includes(String(total)), `multi-country description has total: ${context}`);

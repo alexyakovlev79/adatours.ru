@@ -60,6 +60,10 @@ const countriesText = formatMultiCountryNames(names);
 const heading = 'Туры: ' + countriesText;
 const baseTitle = seoMeta.title;
 const pageSuffix = pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage + ' из ' + pagination.totalPages : '';
+const matchingTourPhrase = countLabel(pagination.totalItems,
+  ['подходящий тур', 'подходящих тура', 'подходящих туров']);
+const matchingTourAgreement = pagination.totalItems % 10 === 1 && pagination.totalItems % 100 !== 11
+  ? 'включающий' : 'включающих';
 const description = seoMeta.description
   + (pagination.currentPage > 1 ? ' Страница ' + pagination.currentPage + ' из ' + pagination.totalPages
     + ', маршруты ' + pagination.from + '–' + pagination.to + ' из ' + pagination.totalItems + '.' : '');
@@ -106,7 +110,7 @@ const itemList = {
     <div class="container combination-tours__head">
       <p class="eyebrow">Выбрать путешествие</p>
       <h2 id="combination-tours-title">{countriesText}</h2>
-      <p>{countLabel(pagination.totalItems, ['подходящий тур', 'подходящих тура', 'подходящих туров'])}. Можно добавить еще одну страну, если такие маршруты есть.</p>
+      <p>{matchingTourPhrase}, {matchingTourAgreement} посещение всех этих стран.</p>
     </div>
 
     <MultiCountrySelector countries={pickerCountries} combinations={pickerCombinations} selected={slugs} />

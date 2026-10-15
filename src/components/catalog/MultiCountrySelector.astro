@@ -25,7 +25,6 @@ const descriptions = ['Первая страна', 'Вторая страна', 
 
 <section
   class="mc-picker container"
-  id="country-picker"
   aria-label="Выбор сочетания стран"
   data-multi-country-picker
   data-root-href={withBase('/multi-country/')}
@@ -36,7 +35,6 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   <div class="mc-picker__intro">
     <p class="eyebrow">Страны маршрута</p>
     <h3>Выберите сочетание стран</h3>
-    <p>Выберите первую страну, затем вторую. Третья и четвертая появятся, если есть подходящие туры.</p>
   </div>
   <div class="mc-picker__fields">
     {steps.map((step) => (
@@ -83,19 +81,29 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   .mc-picker__intro { max-width: 700px; }
   .mc-picker__intro .eyebrow { margin-bottom: 8px; }
   .mc-picker__intro h3 {
-    margin: 0 0 12px;
+    margin: 0 0 22px;
     font-family: var(--font-display);
     font-size: clamp(1.65rem, 3vw, 2.6rem);
     font-weight: 500;
     line-height: 1.15;
   }
-  .mc-picker__intro > p:last-child {
-    margin: 0 0 22px;
-    color: color-mix(in srgb, var(--color-ink) 75%, transparent);
-    line-height: 1.5;
+  /* Country controls stay on one row wherever their natural minimum widths fit.
+     Smaller screens wrap to 2 columns or to a single full-width control. */
+  .mc-picker__fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+    max-width: 1120px;
   }
-  .mc-picker__fields { display: flex; flex-direction: column; gap: 16px; max-width: 480px; }
-  .mc-picker__field { display: flex; flex-direction: column; gap: 6px; }
+  .mc-picker__field {
+    display: flex;
+    flex: 1 1 230px;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+    max-width: 340px;
+  }
   .mc-picker__field[hidden] { display: none; }
   .mc-picker__visually-hidden {
     position: absolute;
@@ -122,6 +130,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     color: var(--color-ink);
     font: inherit;
     font-size: 1.1rem;
+    cursor: pointer;
   }
   .mc-picker__field select:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
   .mc-picker__remove {

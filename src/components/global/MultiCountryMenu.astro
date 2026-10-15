@@ -144,6 +144,11 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     text-align: left;
     cursor: pointer;
   }
+  /* The entire country row, including its label and chevron, is clickable. */
+  .mc-menu__country,
+  .mc-menu__country * {
+    cursor: pointer;
+  }
   .mc-menu__country-name {
     flex: 1 1 auto;
     min-width: 0;
@@ -226,6 +231,18 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     outline-offset: 3px;
   }
   @media (min-width: 1241px) {
+    /* Highlight the whole half-panel: left column reaches the outer left edge,
+       right column reaches the outer right edge, with a shared midpoint. */
+    .mc-menu__countries {
+      margin-inline: -22px;
+      column-gap: 0;
+    }
+    .mc-menu__country {
+      padding-inline: 22px 14px;
+    }
+    .mc-menu__country:nth-child(2n) {
+      padding-inline: 15px 22px;
+    }
     /* Let every highlighted row cover the entire wider level 2+ panel. */
     .mc-menu[data-mc-selected] .mc-menu__combinations {
       width: 100%;

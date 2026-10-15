@@ -14,7 +14,25 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
   const removeButtons = [...picker.querySelectorAll<HTMLButtonElement>('[data-mc-remove]')];
   const placeholders = ['Первая страна', 'Вторая страна', 'Третья страна', 'Четвертая страна'];
   const firstCountryState = 'adatours:multi-country-first';
+  const pickerScrollState = 'adatours:multi-country-return-to-picker';
   let selected = JSON.parse(picker.dataset.selected ?? '[]') as string[];
+
+  // Old hash URLs are normalized without reloading; future navigation never
+  // adds a #country-picker fragment. Remember the selector position instead.
+  if (window.location.hash === '#country-picker') {
+    window.history.replaceState(window.history.state, '', window.location.pathname + window.location.search);
+  }
+  try {
+    if (window.sessionStorage.getItem(pickerScrollState) === '1') {
+      window.sessionStorage.removeItem(pickerScrollState);
+      window.requestAnimationFrame(() => picker.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    }
+  } catch { /* Navigation also works when storage is unavailable. */ }
+
+  const navigateKeepingPicker = (target: URL) => {
+    try { window.sessionStorage.setItem(pickerScrollState, '1'); } catch { /* Optional. */ }
+    window.location.assign(target.toString());
+  };
 
   // The initial /multi-country/ has no country-specific static catalogue.
   // Preserve the first selection for one navigation when removing the second.
@@ -64,8 +82,8 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
     if (next.length >= 2) {
       const key = [...next].sort().join('_');
       if (!known.has(key)) return false;
-      const target = new URL(rootHref + key + '/#country-picker', window.location.origin);
-      if (window.location.pathname !== target.pathname) window.location.assign(target.toString());
+      const target = new URL(rootHref + key + '/', window.location.origin);
+      if (window.location.pathname !== target.pathname) navigateKeepingPicker(target);
       else {
         selected = next;
         render();
@@ -78,7 +96,7 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
       else window.sessionStorage.removeItem(firstCountryState);
     } catch { /* Storage may be disabled. */ }
     if (window.location.pathname !== rootPath) {
-      window.location.assign(new URL(rootHref + '#country-picker', window.location.origin).toString());
+      navigateKeepingPicker(new URL(rootHref, window.location.origin));
     } else {
       selected = next;
       render();

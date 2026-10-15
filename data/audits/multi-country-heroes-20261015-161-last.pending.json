@@ -3,7 +3,7 @@
   "createdAt": "2026-10-15T08:55:39Z",
   "requestedBy": "Алексей",
   "kind": "multi-country-hero-generation",
-  "status": "blocked",
+  "status": "completed",
   "requestedRange": {
     "first": 161,
     "last": "last-current-canonical-combination"
@@ -15,26 +15,26 @@
     {
       "first": 161,
       "last": 170,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "first": 171,
       "last": 180,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "first": 181,
       "last": 190,
-      "status": "pending"
+      "status": "completed"
     },
     {
       "first": 191,
       "last": "last-current-canonical-combination",
       "lastKnownLast": 199,
-      "status": "pending"
+      "status": "completed"
     }
   ],
-  "blocker": "Current Work execution environment is unavailable; no filesystem, image conversion, local X25519 session, direct S3 upload or download/SHA verification can be performed. No image generation or publication claimed.",
+  "blocker": null,
   "queueOrder": "All active RU main-route combinations sorted by canonical key ascending, absolute 1-based positions; do not renumber by skipping completed covers.",
   "beforeStarting": [
     "Recompute current active combinations using buildMultiCountryCombinations and main route countries; optional countries excluded.",
@@ -60,7 +60,10 @@
     "batchAuditRequired": true,
     "deploymentVerificationRequired": true
   },
-  "generated": 0,
-  "uploaded": 0,
-  "published": 0
+  "generated": 39,
+  "uploaded": 39,
+  "resolvedAt": "2026-10-15",
+  "supersededBy": "data/audits/multi-country-heroes-20261015-150-199.json",
+  "productionLinked": 39,
+  "deploymentVerification": "ada/pages-deploy status of the containing main commit"
 }

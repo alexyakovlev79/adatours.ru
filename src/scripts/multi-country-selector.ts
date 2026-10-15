@@ -25,7 +25,15 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
   try {
     if (window.sessionStorage.getItem(pickerScrollState) === '1') {
       window.sessionStorage.removeItem(pickerScrollState);
-      window.requestAnimationFrame(() => picker.scrollIntoView({ block: 'start', behavior: 'instant' }));
+      window.requestAnimationFrame(() => {
+        // Align the beginning of the results section just below the sticky
+        // header, so the combination title and tour count remain visible.
+        const section = picker.closest<HTMLElement>('.combination-tours, .multi-tours') ?? picker;
+        const headerHeight = document.querySelector<HTMLElement>('[data-site-header]')
+          ?.getBoundingClientRect().height ?? 0;
+        const top = window.scrollY + section.getBoundingClientRect().top - headerHeight;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'instant' });
+      });
     }
   } catch { /* Navigation also works when storage is unavailable. */ }
 

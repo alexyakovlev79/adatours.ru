@@ -1,15 +1,19 @@
 # Инвентаризация туров: папки 2026, 2027 и сайт
 
-Дата: 15 октября 2026. Только соответствия; туры, цены, фото, архив и опубликованное содержание не менялись.
+Дата: 15 октября 2026. Соответствия и отдельная сверка первых 20 туров без 2027; содержание сайта, цены, фото и архив не менялись.
 
 [Таблица Анны](https://docs.google.com/spreadsheets/d/1yAaGtXfnGRvZFgTpJPjaJnBQyyKpi9eXcqLfLHymKpo/edit) · [Папка 2026](https://drive.google.com/drive/folders/100uWfP32taS_1UFxTCAM6jMvwk2_rxv7)
+
+Содержание первых 20 из 89 туров проверено: [подробный отчёт](tour-2026-verification-batch-01-20261015.md). 14 требуют правок, 2 — уточнений, 2 архивных, 2 без существенных расхождений. Осталось 69.
+
 
 ## Итоги
 
 | Категория | Количество |
 |---|---:|
 | 2027 + 2026 — не менять | 120 |
-| Только 2026 — сверить позже | 89 |
+| Только 2026 — сверить позже | 69 |
+| Только 2026 — сверено | 20 |
 | Нет подтверждённых соответствий | 119 |
 | Только 2027 — не менять | 61 |
 | siteCatalogRows | 389 |
@@ -30,18 +34,18 @@
 |---:|---|---|---|---|---|
 | 1 | active | [Роскошная Бразилия](https://adatours.ru/multi-country/tour/luxury-brazil/) | P098 | Y26-222 | 2027 + 2026 — не менять |
 | 2 | active | [Бразилия, Аргентина и Перу за 14 дней](https://adatours.ru/multi-country/tour/brazil-argentina-peru-14-days/) | P053 | Y26-169 | 2027 + 2026 — не менять |
-| 3 | active | [Перу за 8 дней: Лима, Куско, Мачу-Пикчу и Титикака](https://adatours.ru/peru/tour/peru-8-days/) |  | Y26-161 | Только 2026 — сверить позже |
+| 3 | active | [Перу за 8 дней: Лима, Куско, Мачу-Пикчу и Титикака](https://adatours.ru/peru/tour/peru-8-days/) |  | Y26-161 | Только 2026 — сверено |
 | 4 | active | [Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати](https://adatours.ru/multi-country/tour/brazil-sao-paulo-iguazu-rio-ilha-grande-paraty-12-days/) |  |  | Нет подтверждённых соответствий |
-| 5 | active | [Большое приключение по Бразилии: Рио, Игуасу, Пантанал, Бонито и Ленсойс за 17 дней](https://adatours.ru/brazil/tour/grand-brazil-adventure-17-days/) |  | Y26-247 | Только 2026 — сверить позже |
+| 5 | active | [Большое приключение по Бразилии: Рио, Игуасу, Пантанал, Бонито и Ленсойс за 17 дней](https://adatours.ru/brazil/tour/grand-brazil-adventure-17-days/) |  | Y26-247 | Только 2026 — сверено |
 | 6 | active | [Пантанал, Бонито и Ленсойс-Мараньенсес за 8 дней](https://adatours.ru/brazil/tour/pantanal-bonito-lencois-maranhenses-8-days/) | P014 | Y26-312 | 2027 + 2026 — не менять |
 | 7 | active | [Северо-восток Бразилии: Ресифи, Порту-ди-Галиньяш и Фернанду-ди-Норонья за 10 дней](https://adatours.ru/brazil/tour/northeast-brazil-recife-porto-de-galinhas-fernando-de-noronha-10-days/) | P086 | Y26-236 | 2027 + 2026 — не менять |
 | 8 | active | [Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-ду-Форте и Игуасу](https://adatours.ru/multi-country/tour/brazil-rio-ouro-preto-salvador-praia-do-forte-iguazu-14-days/) | P061 | Y26-225 | 2027 + 2026 — не менять |
 | 9 | active | [Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа](https://adatours.ru/multi-country/tour/brazil-rio-iguazu-lencois-natal-pipa-13-days/) | P049 | Y26-244 | 2027 + 2026 — не менять |
 | 10 | active | [Аргентина и Бразилия за 11 дней: Буэнос-Айрес, Эль-Калафате, Игуасу и Прайя-де-Пипа](https://adatours.ru/multi-country/tour/argentina-brazil-buenos-aires-el-calafate-iguazu-pipa-11-days/) |  |  | Нет подтверждённых соответствий |
 | 11 | active | [Южная Бразилия за 12 дней: Рио, Игуасу, Грамаду, каньоны и Флорианополис](https://adatours.ru/brazil/tour/southern-brazil-rio-iguazu-gramado-florianopolis-12-days/) |  |  | Нет подтверждённых соответствий |
-| 12 | active | [Бердвотчинг /  Орнитологический тур в Суринам на 8 дней](https://adatours.ru/suriname/tour/suriname-birdwatching-8-days/) |  | Y26-010 | Только 2026 — сверить позже |
-| 13 | active | [Премиум-тур в Коста-Рику на 16 дней: вулканы, джунгли, Корковадо и Плайя-Кончаль](https://adatours.ru/costa-rica/tour/luxury-costa-rica-16-days/) |  | Y26-046 | Только 2026 — сверить позже |
-| 14 | active | [Роскошная Патагония: VIP-тур по Аргентине и Чили на 10 дней](https://adatours.ru/multi-country/tour/luxury-patagonia-10-days/) |  | Y26-052 | Только 2026 — сверить позже |
+| 12 | active | [Бердвотчинг /  Орнитологический тур в Суринам на 8 дней](https://adatours.ru/suriname/tour/suriname-birdwatching-8-days/) |  | Y26-010 | Только 2026 — сверено |
+| 13 | active | [Премиум-тур в Коста-Рику на 16 дней: вулканы, джунгли, Корковадо и Плайя-Кончаль](https://adatours.ru/costa-rica/tour/luxury-costa-rica-16-days/) |  | Y26-046 | Только 2026 — сверено |
+| 14 | active | [Роскошная Патагония: VIP-тур по Аргентине и Чили на 10 дней](https://adatours.ru/multi-country/tour/luxury-patagonia-10-days/) |  | Y26-052 | Только 2026 — сверено |
 | 15 | active | [Аргентина, Чили и Патагония: тур на 13 дней](https://adatours.ru/multi-country/tour/argentina-chile-patagonia-13-days/) | P006 | Y26-309 | 2027 + 2026 — не менять |
 | 16 | archived | [Аргентина и Чили: путешествие по Патагонии на 13 дней](https://adatours.ru/multi-country/tour/patagonia-argentina-chile-13-days/) | P006 |  | Только 2027 — не менять |
 | 17 | active | [Буэнос-Айрес, Сальта и Игуасу](https://adatours.ru/multi-country/tour/buenos-aires-salta-iguazu/) | P120 | Y26-210 | 2027 + 2026 — не менять |
@@ -49,21 +53,21 @@
 | 19 | active | [Восхождение на Аконкагуа 6962м](https://adatours.ru/argentina/tour/aconcagua-climb/) |  |  | Нет подтверждённых соответствий |
 | 20 | active | [Корпоративный тур а Аргентину: Буэнос-Айрес и Тигре](https://adatours.ru/argentina/tour/argentina-buenos-aires-tigre-corporate-tour/) | P011 | Y26-330 | 2027 + 2026 — не менять |
 | 21 | archived | [Круиз Мыс Горн и Антарктида](https://adatours.ru/multi-country/tour/cape-horn-antarctica-cruise/) |  |  | Нет подтверждённых соответствий |
-| 22 | active | [Патагония и Чилийские фьорды](https://adatours.ru/multi-country/tour/patagonia-chilean-fjords/) |  | Y26-188 | Только 2026 — сверить позже |
-| 23 | active | [Программа для Активных людей](https://adatours.ru/multi-country/tour/active-adventure-tour/) |  | Y26-042, Y26-064 | Только 2026 — сверить позже |
+| 22 | active | [Патагония и Чилийские фьорды](https://adatours.ru/multi-country/tour/patagonia-chilean-fjords/) |  | Y26-188 | Только 2026 — сверено |
+| 23 | active | [Программа для Активных людей](https://adatours.ru/multi-country/tour/active-adventure-tour/) |  | Y26-042, Y26-064 | Только 2026 — сверено |
 | 24 | active | [Просторы Патагонии: Чили и Аргентина в одном путешествии](https://adatours.ru/multi-country/tour/patagonia-chile-argentina-journey/) | P113 | Y26-181 | 2027 + 2026 — не менять |
 | 25 | active | [Рыбалка в Ушуайя](https://adatours.ru/argentina/tour/ushuaia-fishing/) |  |  | Нет подтверждённых соответствий |
-| 26 | archived | [Треккинг на Аконкагуа](https://adatours.ru/argentina/tour/aconcagua-trek/) |  | Y26-217 | Только 2026 — сверить позже |
-| 27 | active | [Тур в Антарктиду и Патагонию «Экспресс» на 6 дней с Мысом Горн](https://adatours.ru/multi-country/tour/antarctica-patagonia-express-air-cruise-6-days/) |  | Y26-298 | Только 2026 — сверить позже |
+| 26 | archived | [Треккинг на Аконкагуа](https://adatours.ru/argentina/tour/aconcagua-trek/) |  | Y26-217 | Только 2026 — сверено |
+| 27 | active | [Тур в Антарктиду и Патагонию «Экспресс» на 6 дней с Мысом Горн](https://adatours.ru/multi-country/tour/antarctica-patagonia-express-air-cruise-6-days/) |  | Y26-298 | Только 2026 — сверено |
 | 28 | active | [Тур в Аргентину и Патагонию на 26 дней](https://adatours.ru/multi-country/tour/best-of-argentina-patagonia-26-days/) | P111 | Y26-207 | 2027 + 2026 — не менять |
 | 29 | active | [Тур в Аргентину 2026 - 2027: Патагония, Игуасу, Буэнос-Айрес](https://adatours.ru/multi-country/tour/luxury-argentina-buenos-aires-patagonia-iguazu-11-days-2026-2027/) |  |  | Нет подтверждённых соответствий |
 | 30 | active | [Тур в Аргентину для любителей красивой жизни и вкусной еды](https://adatours.ru/argentina/tour/argentina-food-fine-living/) | P121 | Y26-205 | 2027 + 2026 — не менять |
 | 31 | active | [Тур в Аргентину и Буэнос-Айрес: по лучшим заповедным местам](https://adatours.ru/argentina/tour/argentina-wildlife-buenos-aires/) |  |  | Нет подтверждённых соответствий |
-| 32 | active | [Тур в Аргентину и Патагонию на 11 дней /  Люксовый тур в Аргентину](https://adatours.ru/multi-country/tour/argentina-patagonia-vip-11-days/) |  | Y26-062 | Только 2026 — сверить позже |
+| 32 | active | [Тур в Аргентину и Патагонию на 11 дней /  Люксовый тур в Аргентину](https://adatours.ru/multi-country/tour/argentina-patagonia-vip-11-days/) |  | Y26-062 | Только 2026 — сверено |
 | 33 | active | [Тур в Аргентину и Патагонию по лучшим достопримечательностям](https://adatours.ru/multi-country/tour/incredible-argentina-patagonia/) | P112 | Y26-202 | 2027 + 2026 — не менять |
 | 34 | archived | [Тур в Аргентину на 10 дней: Патагония и водопады Игуасу](https://adatours.ru/multi-country/tour/argentina-buenos-aires-el-calafate-iguazu-10-days/) |  |  | Нет подтверждённых соответствий |
 | 35 | active | [Тур в Аргентину на 12 дней: Патагония и водопады Игуасу](https://adatours.ru/multi-country/tour/argentina-buenos-aires-el-calafate-ushuaia-iguazu-12-days/) | P114 | Y26-200, Y26-204 | 2027 + 2026 — не менять |
-| 36 | active | [Тур в Аргентину с Патагонией (Эль-Калафате) и Водопадами Игуасу](https://adatours.ru/multi-country/tour/argentina-glaciers-to-iguazu-falls/) |  | Y26-201 | Только 2026 — сверить позже |
+| 36 | active | [Тур в Аргентину с Патагонией (Эль-Калафате) и Водопадами Игуасу](https://adatours.ru/multi-country/tour/argentina-glaciers-to-iguazu-falls/) |  | Y26-201 | Только 2026 — сверено |
 | 37 | active | [Тур в Аргентину с Патагонией (Эль-Калафате), водопады Игуасу](https://adatours.ru/argentina/tour/explore-argentina-16-days/) | P116 | Y26-216 | 2027 + 2026 — не менять |
 | 38 | active | [Аргентина и Патагония за 14 дней: Ушуайя, Барилоче и водопады Игуасу](https://adatours.ru/argentina/tour/argentina-patagonia-brazil-iguazu-falls/) |  |  | Нет подтверждённых соответствий |
 | 39 | active | [Тур в Аргентину с Патагонией по лучшим достопримечательностям](https://adatours.ru/argentina/tour/argentina-patagonia-highlights-2024/) |  |  | Нет подтверждённых соответствий |
@@ -76,34 +80,34 @@
 | 46 | active | [Тур в Аргентину: Буэнос-Айрес, Эль-Калафате, Сальта, Игуасу](https://adatours.ru/argentina/tour/argentina-buenos-aires-el-calafate-salta-iguazu/) | P115 | Y26-206 | 2027 + 2026 — не менять |
 | 47 | active | [Аргентина, Чили, Боливия и Патагония за 18 дней](https://adatours.ru/multi-country/tour/argentina-chile-bolivia-cruise-tour-18-days/) |  |  | Нет подтверждённых соответствий |
 | 48 | active | [Удивительная Сальта](https://adatours.ru/argentina/tour/amazing-salta/) | P110 | Y26-215 | 2027 + 2026 — не менять |
-| 49 | active | [Фьорды Огненной Земли](https://adatours.ru/multi-country/tour/tierra-del-fuego-fjords/) |  | Y26-192 | Только 2026 — сверить позже |
+| 49 | active | [Фьорды Огненной Земли](https://adatours.ru/multi-country/tour/tierra-del-fuego-fjords/) |  | Y26-192 | Только 2026 — сверено |
 | 50 | active | [Чили & Аргентина Делюкс](https://adatours.ru/multi-country/tour/chile-argentina-deluxe/) | P117 | Y26-187 | 2027 + 2026 — не менять |
 | 51 | active | [Чили и Аргентина VIP](https://adatours.ru/multi-country/tour/chile-argentina-vip/) |  |  | Нет подтверждённых соответствий |
 | 52 | active | [Белиз](https://adatours.ru/belize/tour/belize-san-pedro-ambergris-caye/) | P023 | Y26-087 | 2027 + 2026 — не менять |
 | 53 | active | [Белиз: Лучшее Из Двух Миров](https://adatours.ru/belize/tour/belize-best-of-both-worlds/) | P025 | Y26-088 | 2027 + 2026 — не менять |
 | 54 | active | [Белиз: Приключение «Материк / Остров»](https://adatours.ru/belize/tour/belize-mainland-island-adventure/) | P024 | Y26-086 | 2027 + 2026 — не менять |
-| 55 | active | [Белиз: Страстный Наблюдатель за птицами](https://adatours.ru/belize/tour/belize-birdwatching/) |  | Y26-085 | Только 2026 — сверить позже |
+| 55 | active | [Белиз: Страстный Наблюдатель за птицами](https://adatours.ru/belize/tour/belize-birdwatching/) |  | Y26-085 | Только 2026 — сверено |
 | 56 | active | [Гватемала - Гондурас- Эль Сальвадор - Белиз](https://adatours.ru/multi-country/tour/guatemala-honduras-el-salvador-belize/) |  |  | Нет подтверждённых соответствий |
 | 57 | active | [Гватемала, Гондурас и Белиз](https://adatours.ru/multi-country/tour/guatemala-honduras-belize/) |  |  | Нет подтверждённых соответствий |
-| 58 | active | [Исследуя Белиз](https://adatours.ru/belize/tour/explore-belize/) |  | Y26-083 | Только 2026 — сверить позже |
+| 58 | active | [Исследуя Белиз](https://adatours.ru/belize/tour/explore-belize/) |  | Y26-083 | Только 2026 — сверено |
 | 59 | active | [Лучшее в Белизе](https://adatours.ru/belize/tour/best-of-belize/) | P026 | Y26-089 | 2027 + 2026 — не менять |
-| 60 | active | [Лучшее в Белизе за 11 дней](https://adatours.ru/belize/tour/best-of-belize-11-days/) |  | Y26-082 | Только 2026 — сверить позже |
+| 60 | active | [Лучшее в Белизе за 11 дней](https://adatours.ru/belize/tour/best-of-belize-11-days/) |  | Y26-082 | Только 2026 — сверено |
 | 61 | active | [Тур в Белиз, на 6 дней (с англо или русскоговорящим гидом)](https://adatours.ru/belize/tour/belize-wonders-6-days/) |  |  | Нет подтверждённых соответствий |
 | 62 | active | [Тур в Канкун и Белиз на 11 дней (с русскоговорящим гидом)](https://adatours.ru/multi-country/tour/cancun-belize-11-days/) |  |  | Нет подтверждённых соответствий |
 | 63 | active | [Чудеса Гватемалы & Белиза](https://adatours.ru/multi-country/tour/guatemala-belize-wonders/) |  |  | Нет подтверждённых соответствий |
 | 64 | active | [Джип-тур на солончак Уюни на 3 дня: лагуны, гейзеры и вулканы Боливии](https://adatours.ru/bolivia/tour/bolivia-uyuni-salt-flats-jeep-tour-3-days/) |  |  | Нет подтверждённых соответствий |
-| 65 | active | [Мечта Боливии](https://adatours.ru/bolivia/tour/bolivia-dream/) |  | Y26-155 | Только 2026 — сверить позже |
+| 65 | active | [Мечта Боливии](https://adatours.ru/bolivia/tour/bolivia-dream/) |  | Y26-155 | Только 2026 — сверено |
 | 66 | active | [Боливия за 11 дней: Титикака, Ла-Пас, Уюни и Тороторо](https://adatours.ru/bolivia/tour/bolivia-titicaca-uyuni-la-paz-11-days/) |  |  | Нет подтверждённых соответствий |
-| 67 | active | [Тур в Боливию на 12 дней (все экскурсии с гидами)](https://adatours.ru/bolivia/tour/bolivia-treasures-12-days/) |  | Y26-156 | Только 2026 — сверить позже |
+| 67 | active | [Тур в Боливию на 12 дней (все экскурсии с гидами)](https://adatours.ru/bolivia/tour/bolivia-treasures-12-days/) |  | Y26-156 | Только 2026 — сверено |
 | 68 | active | [Тур в Боливию по лучшим местам страны на 10 дней](https://adatours.ru/bolivia/tour/bolivia-natural-wonders-10-days/) |  |  | Нет подтверждённых соответствий |
 | 69 | active | [Тур в Боливию: солончак Уюни, Лунная Долина, Ла-Пас и Тиванку](https://adatours.ru/bolivia/tour/bolivia-uyuni-moon-valley-la-paz-tiwanaku/) |  |  | Нет подтверждённых соответствий |
 | 70 | active | [Amazon Clipper Cruise](https://adatours.ru/brazil/tour/amazon-clipper-cruise-traditional-3-days-2-nights/) |  |  | Нет подтверждённых соответствий |
-| 71 | active | [VIP тур в Амазонию 3 дня: гидросамолет, лодж Mirante do Gavião и розовые дельфины](https://adatours.ru/brazil/tour/amazon-manaus-anavilhanas-vip-3-days/) |  | Y26-051 | Только 2026 — сверить позже |
-| 72 | active | [VIP тур в Бразилию и Аргентину: Рио, Игуасу, Буэнос-Айрес](https://adatours.ru/multi-country/tour/brazil-argentina-vip-10-days/) |  | Y26-024 | Только 2026 — сверить позже |
+| 71 | active | [VIP тур в Амазонию 3 дня: гидросамолет, лодж Mirante do Gavião и розовые дельфины](https://adatours.ru/brazil/tour/amazon-manaus-anavilhanas-vip-3-days/) |  | Y26-051 | Только 2026 — сверено |
+| 72 | active | [VIP тур в Бразилию и Аргентину: Рио, Игуасу, Буэнос-Айрес](https://adatours.ru/multi-country/tour/brazil-argentina-vip-10-days/) |  | Y26-024 | Только 2026 — сверено |
 | 73 | active | [Амазония](https://adatours.ru/brazil/tour/amazon/) |  |  | Нет подтверждённых соответствий |
 | 74 | active | [Амазония: Круиз Тукано](https://adatours.ru/brazil/tour/amazon-tucano-cruise/) |  |  | Нет подтверждённых соответствий |
 | 75 | archived | [Аргентина и Бразилия: От льда к солнцу](https://adatours.ru/multi-country/tour/argentina-brazil-ice-to-sun/) | P079 |  | Только 2027 — не менять |
-| 76 | archived | [Большое бразильское приключение](https://adatours.ru/brazil/tour/grand-brazil-adventure/) |  | Y26-238 | Только 2026 — сверить позже |
+| 76 | archived | [Большое бразильское приключение](https://adatours.ru/brazil/tour/grand-brazil-adventure/) |  | Y26-238 | Только 2026 — сверено |
 | 77 | archived | [Бразилия и Аргентина Фан](https://adatours.ru/multi-country/tour/brazil-argentina-fun/) | P057 | P060 |  | Только 2027 — не менять |
 | 78 | active | [Бразилия от Сан Пауло до Бузиоса](https://adatours.ru/brazil/tour/brazil-sao-paulo-to-buzios/) | P058 | Y26-234, Y26-262 | 2027 + 2026 — не менять |
 | 79 | active | [Бразилия с детьми](https://adatours.ru/brazil/tour/brazil-with-kids/) | P091 | Y26-239, Y26-254 | 2027 + 2026 — не менять |

@@ -3,6 +3,7 @@ import { countLabel, countryMembership } from '../lib/interest-model.mjs';
 import { seoPaginatedTitle } from '../lib/seo-page.mjs';
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
+import { formatMultiCountryNames } from '../lib/multi-country-combinations.mjs';
 import Hero from '../components/editorial/Hero.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
@@ -111,7 +112,12 @@ const cards = entries.map((entry) => {
       text: undefined,
       href: tourPath(d),
       meta: [
-        curatedTour ? mainTourCountries(d).map((country) => country.name).join(' + ') : '',
+        curatedTour
+          ? variant === 'multi-country-tours'
+            ? formatMultiCountryNames(mainTourCountries(d)
+                .sort((a, b) => a.slug.localeCompare(b.slug, 'en')).map((country) => country.name))
+            : mainTourCountries(d).map((country) => country.name).join(' + ')
+          : '',
         d.durationDays ? countLabel(d.durationDays, ['день', 'дня', 'дней']) : '',
         isVipCatalog ? vipTourPriceLabel(d) : '',
         d.format,

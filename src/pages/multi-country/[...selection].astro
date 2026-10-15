@@ -7,7 +7,7 @@ import Hero from '../../components/editorial/Hero.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../../components/catalog/CatalogPagination.astro';
 import MultiCountrySelector from '../../components/catalog/MultiCountrySelector.astro';
-import { buildMultiCountryCombinations } from '../../lib/multi-country-combinations.mjs';
+import { buildMultiCountryCombinations, formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
 import { paginateCatalog } from '../../lib/catalog-pagination';
 import { compareToursBySalesFit } from '../../lib/tour-ranking';
 import { mainTourCountries, tourPath } from '../../lib/routes';
@@ -48,11 +48,12 @@ const {
   pickerCountries, pickerCombinations, hero,
 } = Astro.props;
 const names = comboCountries.map((country) => country.name);
-const countriesText = names.join(' + ');
+// Page titles always use the canonical alphabetical country order.
+const countriesText = formatMultiCountryNames(names);
 const heading = 'Туры: ' + countriesText;
 const baseTitle = countriesText + ': ' + countLabel(pagination.totalItems, ['тур', 'тура', 'туров']);
 const pageSuffix = pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage + ' из ' + pagination.totalPages : '';
-const description = 'Готовые туры Ada Tours по странам: ' + names.join(', ') + '. '
+const description = 'Готовые туры Ada Tours по странам: ' + countriesText + '. '
   + countLabel(pagination.totalItems, ['маршрут', 'маршрута', 'маршрутов'])
   + ' с выбранными странами. В отдельных поездках могут быть и другие страны. Даты и отели можно адаптировать.'
   + (pagination.currentPage > 1 ? ' Страница ' + pagination.currentPage + ' из ' + pagination.totalPages
@@ -89,7 +90,7 @@ const itemList = {
   <Hero
     eyebrow="Multi-country"
     title={heading + (pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage : '')}
-    intro={'Выберите маршрут, включающий страны: ' + names.join(', ') + '. Сравните длительность и формат готовых программ.'}
+    intro={'Выберите маршрут, включающий страны: ' + countriesText + '. Сравните длительность и формат готовых программ.'}
     image={hero}
     compact
     ctaHref="#request"
@@ -123,9 +124,9 @@ const itemList = {
       <div id="catalog-items" data-catalog-items>
         {entries.map((entry, index) => {
           const data = entry.data;
-          const countryLabel = mainTourCountries(data)
+          const countryLabel = formatMultiCountryNames(mainTourCountries(data)
             .sort((a, b) => a.slug.localeCompare(b.slug, 'en'))
-            .map((country) => country.name).join(' + ');
+            .map((country) => country.name));
           const meta = [
             countryLabel,
             data.durationDays ? countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',

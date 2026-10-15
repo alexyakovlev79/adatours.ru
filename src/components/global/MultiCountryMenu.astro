@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
+import { formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
 
 interface MenuCountry { slug: string; name: string; }
 interface MenuCombination { slugs: string[]; path: string; count: number; }
@@ -52,13 +53,13 @@ const items = (serverLinks ? combinations : []).map((row) => ({
         data-mc-menu-slugs={row.slugs.join('_')}
         data-mc-menu-size={row.slugs.length}
       >
-        <a href={withBase(row.path)}>{row.names.join(' + ')}</a>
+        <a href={withBase(row.path)}>{formatMultiCountryNames(row.names)}</a>
         {row.hasMore && (
           <button
             type="button"
             class="mc-menu__expand"
             data-mc-menu-expand={row.slugs.join('_')}
-            aria-label={'Добавить страну к сочетанию ' + row.names.join(', ')}
+            aria-label={'Добавить страну к сочетанию ' + formatMultiCountryNames(row.names)}
           >›</button>
         )}
       </div>

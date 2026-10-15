@@ -8,6 +8,7 @@ import {
   extendMultiCountrySelection,
   previousMultiCountrySelection,
   removeMultiCountrySelection,
+  formatMultiCountryNames,
 } from '../src/lib/multi-country-combinations.mjs';
 
 const codes = Object.fromEntries(['argentina', 'brazil', 'chile', 'peru', 'uruguay']
@@ -78,4 +79,19 @@ test('removing a selected country preserves all other countries, including later
   assert.throws(() => removeMultiCountrySelection(triple, 0));
   assert.throws(() => removeMultiCountrySelection(triple, 3));
   assert.throws(() => removeMultiCountrySelection(['argentina', 'argentina'], 1));
+});
+
+test('country names use natural Russian conjunction without changing selection order', () => {
+  assert.equal(formatMultiCountryNames([]), '');
+  assert.equal(formatMultiCountryNames(['Бразилия']), 'Бразилия');
+  assert.equal(formatMultiCountryNames(['Бразилия', 'Аргентина']), 'Бразилия и Аргентина');
+  assert.equal(formatMultiCountryNames(['Аргентина', 'Бразилия']), 'Аргентина и Бразилия');
+  assert.equal(formatMultiCountryNames(['Бразилия', 'Аргентина', 'Коста-Рика']),
+    'Бразилия, Аргентина и Коста-Рика');
+  assert.equal(formatMultiCountryNames(['Бразилия', 'Аргентина', 'Коста-Рика', 'Чили']),
+    'Бразилия, Аргентина, Коста-Рика и Чили');
+  const chosen = ['brazil', 'argentina'];
+  const alphabetical = [...chosen].sort();
+  assert.equal(multiCountryCombinationPath(chosen), multiCountryCombinationPath(alphabetical));
+  assert.deepEqual(chosen, ['brazil', 'argentina']);
 });

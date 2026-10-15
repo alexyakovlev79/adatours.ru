@@ -29,6 +29,14 @@ for (const file of examples) {
   assert.equal(linked.length, expected.size, 'Every combination must appear exactly once in source HTML: ' + file);
   assert.ok(header.includes('data-mc-menu-source="true"'), 'Mobile menu must own the real SSR links: ' + file);
 }
+const pair = [...expected].find((path) => path.split('_').length === 2);
+if (pair) {
+  const html = readFileSync(join(output, pair.slice(1), 'index.html'), 'utf8');
+  assert.ok(/<h1\b[^>]*>[\s\S]*?\sи\s[\s\S]*?<\/h1>/.test(html),
+    'Pair catalogue H1 should use the natural country conjunction');
+  assert.ok(!/<h1\b[^>]*>[\s\S]*?\s\+\s[\s\S]*?<\/h1>/.test(html),
+    'Pair catalogue H1 must not separate countries with plus signs');
+}
 const indexHtml = readFileSync(join(root, 'index.html'), 'utf8');
 const picker = indexHtml.match(/<section\b[^>]*data-multi-country-picker[^>]*>[\s\S]*?<\/section>/)?.[0];
 assert.ok(picker, 'Multi-country selector missing');

@@ -1,7 +1,7 @@
 // Actual hrefs for every 2-4 country combination remain in the rendered header.
 // JS changes the displayed level, without creating URL links dynamically.
 import {
-  extendMultiCountrySelection, previousMultiCountrySelection,
+  extendMultiCountrySelection, previousMultiCountrySelection, formatMultiCountryNames,
 } from '../lib/multi-country-combinations.mjs';
 const menuInstances = [...document.querySelectorAll<HTMLElement>('[data-mc-menu]')];
 const linkSource = menuInstances.map((item) => item.querySelector<HTMLElement>('[data-mc-menu-combinations][data-mc-menu-source]'))
@@ -44,8 +44,18 @@ for (const menu of menuInstances) {
       : level === 2 ? 'Добавить третью страну'
       : level === 3 ? 'Добавить четвертую страну' : '';
     for (const item of combinations) {
-      item.element.hidden = item.slugs.length !== level + 1
-        || !selected.every((slug) => item.slugs.includes(slug));
+      const visible = item.slugs.length === level + 1
+        && selected.every((slug) => item.slugs.includes(slug));
+      item.element.hidden = !visible;
+      if (!visible) continue;
+      // Labels follow the customer's selection, whereas each href keeps the
+      // same alphabetic canonical slugs for search engines and bookmarks.
+      const ordered = [...selected, ...item.slugs.filter((slug) => !selected.includes(slug))];
+      const label = formatMultiCountryNames(ordered.map((slug) => names.get(slug) ?? slug));
+      const anchor = item.element.querySelector('a');
+      if (anchor) anchor.textContent = label;
+      const expand = item.element.querySelector<HTMLButtonElement>('[data-mc-menu-expand]');
+      if (expand) expand.setAttribute('aria-label', 'Добавить страну к сочетанию ' + label);
     }
     const scroller = menu.closest<HTMLElement>('.mobile-menu__panel, .desktop-nav__submenu');
     if (scroller) scroller.scrollTop = 0;

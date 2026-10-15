@@ -9,7 +9,7 @@ import EditorialStatement from '../../components/editorial/EditorialStatement.as
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../../components/catalog/CatalogPagination.astro';
 import MultiCountrySelector from '../../components/catalog/MultiCountrySelector.astro';
-import { buildMultiCountryCombinations } from '../../lib/multi-country-combinations.mjs';
+import { buildMultiCountryCombinations, formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
@@ -180,8 +180,9 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
         <div id="catalog-items" data-catalog-items>
           {visibleTours.map((entry, index) => {
             const data = entry.data;
-            const countries = mainTourCountries(data).sort((a, b) => a.slug.localeCompare(b.slug, 'en'))
-              .map((country) => country.name).join(' + ');
+            const countries = formatMultiCountryNames(mainTourCountries(data)
+              .sort((a, b) => a.slug.localeCompare(b.slug, 'en'))
+              .map((country) => country.name));
             const meta = [
               countries,
               data.durationDays ? countLabel(data.durationDays, ['день', 'дня', 'дней']) : '',

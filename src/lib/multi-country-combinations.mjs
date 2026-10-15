@@ -18,6 +18,14 @@ export function multiCountryCombinationPath(slugs) {
   return '/multi-country/' + multiCountryCombinationKey(slugs) + '/';
 }
 
+/** Natural Russian country enumeration; preserve the supplied order. */
+export function formatMultiCountryNames(names) {
+  const values = names.filter((name) => typeof name === 'string' && name.trim().length > 0)
+    .map((name) => name.trim());
+  if (values.length <= 1) return values[0] ?? '';
+  return values.slice(0, -1).join(', ') + ' и ' + values.at(-1);
+}
+
 export function buildMultiCountryCombinations(tours, countriesForTour) {
   const results = new Map();
   for (const tour of tours) {

@@ -161,8 +161,8 @@ test('combination price selection ignores cheaper tours missing a country and us
   }));
   const tour = (id, amount, ids) => ({
     kind:'tour',path:'/multi-country/tour/'+id+'/', data:{
-      id,status:'approved',priceFrom:amount,currency:'USD',routeCountries:ids,
-      countries:ids,
+      id,status:'approved',priceFrom:amount,currency:'USD',routeCountries:[...ids],
+      countries:[...ids],
     },
   });
   records.push(

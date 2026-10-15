@@ -542,10 +542,18 @@ const nestedGroups = NAV_LINKS
 
   .desktop-nav__submenu--multi-country {
     --submenu-offset-x: 0%;
-    left: 0;
+    left: var(--mc-dropdown-offset, 0px);
     width: min(620px, calc(100vw - 48px));
     padding: 16px 22px 20px;
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* A level change can shrink the panel away from the clicked country.
+     Keep it visible until the mouse actually moves out of the menu. */
+  .desktop-nav__group[data-mc-interacting] > .desktop-nav__submenu--multi-country {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(var(--submenu-offset-x), 0);
   }
 
   /* After picking a country, let the widest visible label set the panel width. */

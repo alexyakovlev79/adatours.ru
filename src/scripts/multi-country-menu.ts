@@ -25,6 +25,50 @@ for (const menu of menuInstances) {
     .map((element) => ({ element, slugs: (element.dataset.mcMenuSlugs ?? '').split('_') }));
   if (!countryGrid || !links || !heading || !back) continue;
   let selected: string[] = [];
+
+  // Align the dropdown with the first primary navigation label ("Страны"),
+  // not with the third label ("Multi-country"). The gap adapts to font/viewport.
+  const desktopGroup = menu.closest<HTMLElement>('.desktop-nav__group');
+  const desktopPopup = desktopGroup?.querySelector<HTMLElement>('.desktop-nav__submenu--multi-country');
+  const desktopTrigger = desktopGroup?.querySelector<HTMLElement>('.desktop-nav__parent');
+  const desktopNav = desktopGroup?.closest<HTMLElement>('.desktop-nav');
+  const firstNavChild = desktopNav?.firstElementChild;
+  const firstNavLink = firstNavChild instanceof HTMLAnchorElement
+    ? firstNavChild : firstNavChild?.querySelector<HTMLAnchorElement>('a');
+  const alignDesktopPopup = () => {
+    if (!desktopGroup || !firstNavLink) return;
+    const offset = firstNavLink.getBoundingClientRect().left - desktopGroup.getBoundingClientRect().left;
+    desktopGroup.style.setProperty('--mc-dropdown-offset', `${Math.round(offset)}px`);
+  };
+  if (desktopPopup) {
+    alignDesktopPopup();
+    desktopGroup?.addEventListener('pointerenter', alignDesktopPopup);
+    window.addEventListener('resize', alignDesktopPopup, { passive: true });
+    document.fonts?.ready.then(alignDesktopPopup);
+  }
+
+  const withinRect = (rect: DOMRect, x: number, y: number) =>
+    x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+  let pointerBridge: { rect: DOMRect; lastX: number; startedAt: number } | null = null;
+  const preserveDesktopPopup = (event: MouseEvent) => {
+    if (!desktopGroup || !desktopPopup || event.detail === 0) return;
+    // Capture the old (possibly wider) panel before hiding the clicked row.
+    pointerBridge = { rect: desktopPopup.getBoundingClientRect(),
+      lastX: event.clientX, startedAt: performance.now() };
+    desktopGroup.dataset.mcInteracting = '';
+  };
+  const closeDesktopPopup = () => {
+    if (!desktopGroup) return;
+    pointerBridge = null;
+    delete desktopGroup.dataset.mcInteracting;
+    const active = document.activeElement;
+    if (active instanceof HTMLElement && desktopGroup.contains(active)) active.blur();
+    if (selected.length) {
+      selected = [];
+      display();
+    }
+  };
+
   const focusBack = (keyboardActivation = false) => {
     const mobileBack = menu.closest<HTMLElement>('[data-mobile-panel]')
       ?.querySelector<HTMLButtonElement>('[data-submenu-back]');
@@ -63,31 +107,34 @@ for (const menu of menuInstances) {
     if (scroller) scroller.scrollTop = 0;
   };
 
-  countries.forEach((button) => button.addEventListener('click', () => {
+  countries.forEach((button) => button.addEventListener('click', (event) => {
     const slug = button.dataset.mcMenuCountry;
     if (!slug) return;
     const keyboardActivation = button.matches(':focus-visible');
+    preserveDesktopPopup(event);
     selected = [slug];
     display();
     focusBack(keyboardActivation);
   }));
 
   menu.querySelectorAll<HTMLButtonElement>('[data-mc-menu-expand]').forEach((button) => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (event) => {
       const target = (button.dataset.mcMenuExpand ?? '').split('_').filter(Boolean);
       if (target.length !== selected.length + 1
         || !selected.every((slug) => target.includes(slug))) return;
       // The URL slugs are alphabetical, but Back must preserve the visitor's
       // actual navigation path (e.g. Brazil -> Argentina -> Chile).
       const keyboardActivation = button.matches(':focus-visible');
+      preserveDesktopPopup(event);
       selected = extendMultiCountrySelection(selected, target);
       display();
       focusBack(keyboardActivation);
     });
   });
 
-  back.addEventListener('click', () => {
+  back.addEventListener('click', (event) => {
     const keyboardActivation = back.matches(':focus-visible');
+    preserveDesktopPopup(event);
     selected = previousMultiCountrySelection(selected);
     display();
     if (selected.length) focusBack(keyboardActivation);
@@ -96,18 +143,42 @@ for (const menu of menuInstances) {
     }
   });
 
-  // Leaving the whole desktop dropdown closes it and resets the next hover.
-  // Do not apply this behavior to the touch/mobile nested menu.
-  const desktopGroup = menu.closest<HTMLElement>('.desktop-nav__group');
-  desktopGroup?.addEventListener('pointerleave', (event) => {
-    if (event.pointerType !== 'mouse') return;
-    const focused = document.activeElement;
-    if (focused instanceof HTMLElement && desktopGroup.contains(focused)) focused.blur();
-    if (selected.length) {
-      selected = [];
-      display();
-    }
-  });
+  // Layout changes generate pointerleave even when the actual mouse has not
+  // moved: resetting there made first-level clicks look completely inert.
+  // Close only for a real pointer move/click outside. From a right-column
+  // country, preserve a short path across the old panel toward the narrower
+  // next level, then require the pointer to stay within the visible popup.
+  if (desktopGroup && desktopPopup) {
+    document.addEventListener('pointermove', (event) => {
+      if (event.pointerType !== 'mouse' || !desktopGroup.hasAttribute('data-mc-interacting')) return;
+      const insidePopup = withinRect(desktopPopup.getBoundingClientRect(), event.clientX, event.clientY);
+      const insideTrigger = desktopTrigger
+        ? withinRect(desktopTrigger.getBoundingClientRect(), event.clientX, event.clientY) : false;
+      if (insidePopup || insideTrigger) {
+        pointerBridge = null;
+        return;
+      }
+      if (pointerBridge && performance.now() - pointerBridge.startedAt < 1400
+        && withinRect(pointerBridge.rect, event.clientX, event.clientY)
+        && event.clientX <= pointerBridge.lastX + 10) {
+        pointerBridge.lastX = event.clientX;
+        return;
+      }
+      closeDesktopPopup();
+    }, { passive: true });
+    document.addEventListener('pointerdown', (event) => {
+      if (desktopGroup.hasAttribute('data-mc-interacting') && !desktopGroup.contains(event.target as Node)) {
+        closeDesktopPopup();
+      }
+    });
+    // Keyboard Escape resets the nested level while preserving the primary
+    // navigation link for subsequent keyboard interaction.
+    desktopGroup.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      closeDesktopPopup();
+      desktopTrigger?.focus();
+    });
+  }
 
   display();
 }

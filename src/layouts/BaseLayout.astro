@@ -147,6 +147,17 @@ const metaDescription = schema.metaDescription;
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-FM6ZVZH2ZX');
+      // LeadForm emits this only after an HTTP-successful server response.
+      document.addEventListener('adatours:lead-success', function(event) {
+        var detail = event.detail || {};
+        gtag('event', 'generate_lead', {
+          send_to: 'G-FM6ZVZH2ZX',
+          form_id: 'lead_request',
+          entity_id: detail.entityId || '',
+          tour_id: detail.tourId || '',
+          language: detail.lang || 'ru'
+        });
+      });
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />

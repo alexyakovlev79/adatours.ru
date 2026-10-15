@@ -36,12 +36,13 @@ jobs:
           node-version: 24
       - name: Install only dependencies, not Astro build
         working-directory: source
-        run: npm ci --ignore-scripts --no-audit --no-fund
+        run: npm install --ignore-scripts --no-package-lock --no-audit --no-fund
       - name: Validate changed approved articles and prepared transitions
         shell: bash
         env:
           BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.sha }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           if ! git -C staging cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then

@@ -27,6 +27,7 @@ const files = (root) => !existsSync(root) ? [] : readdirSync(root, { withFileTyp
   const path = join(root, entry.name);
   return entry.isDirectory() ? files(path) : [path];
 });
+const newlyPrepared = [];
 function changedArticles() {
   if (!base) return explicit;
   const changedFiles = execFileSync('git', ['diff', '--name-only', '--diff-filter=ACMR', base, head,
@@ -41,12 +42,38 @@ function changedArticles() {
     for (const row of current.entries) {
       if (row.work === 'prepared' && before.get(row.url) !== 'prepared') {
         const articlePath = row.articlePath ?? seoGeoArticleFile(row.url);
-        if (articlePattern.test(articlePath)) changed.add(articlePath);
+        if (articlePattern.test(articlePath)) { changed.add(articlePath); newlyPrepared.push({ row, articlePath }); }
       }
     }
   }
   return [...changed, ...explicit];
 }
+
+async function verifyPreparedProof({ row, articlePath }) {
+  const sha = row.preflightCommit, blob = row.preflightArticleBlobSha;
+  if (!/^[0-9a-f]{40}$/.test(sha ?? '') || !/^[0-9a-f]{40}$/.test(blob ?? '')) {
+    throw new Error('New prepared row needs preflightCommit and preflightArticleBlobSha');
+  }
+  const actual = execFileSync('git', ['hash-object', articlePath], { cwd: staging, encoding: 'utf8' }).trim();
+  if (actual !== blob) throw new Error('Article changed after the successful preflight');
+  const repo = process.env.GITHUB_REPOSITORY, token = process.env.GH_TOKEN;
+  if (!repo || !token) throw new Error('GitHub authentication unavailable to verify preflight');
+  const request = async (path) => {
+    const response = await fetch('https://api.github.com/repos/' + repo + path, {
+      headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + token,
+        'X-GitHub-Api-Version': '2022-11-28' },
+    });
+    if (!response.ok) throw new Error('GitHub verification returned HTTP ' + response.status);
+    return response.json();
+  };
+  const checked = await request('/contents/' + articlePath + '?ref=' + sha);
+  if (checked.sha !== blob) throw new Error('Claimed preflight commit contains different article bytes');
+  const status = await request('/commits/' + sha + '/status');
+  if (!status.statuses?.some((entry) => entry.context === 'ada/seo-link-preflight' && entry.state === 'success')) {
+    throw new Error('No successful ada/seo-link-preflight for the claimed content commit');
+  }
+}
+
 const collection = (name) => files(join(source, 'src', 'content', name)).filter((file) => /\.mdx?$/.test(file))
   .map((file) => ({ data: frontmatter(readFileSync(file, 'utf8'), file) }));
 const staticPaths = files(join(source, 'src', 'pages')).filter((file) => /\.astro$/.test(file))
@@ -65,6 +92,10 @@ if (!candidates.length) {
 }
 const processor = await createMarkdownProcessor();
 const errors = [];
+for (const transition of newlyPrepared) {
+  try { await verifyPreparedProof(transition); }
+  catch (error) { errors.push(transition.articlePath + ': ' + error.message); }
+}
 let count = 0;
 for (const path of candidates) {
   try {

@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "targetPath": "/multi-country/mexico_panama/",
+  "articlePath": "data/seo-geo/articles/multi-country/mexico_panama/index.md",
+  "researchedAt": "2026-10-15",
+  "editorialIntent": "Фокус пары Мексика + Панама: два конца 26-дневного маршрута, Панамский канал и Чагрес, межстрановые перелеты и документы, реальные валюты и погодные сезоны. Не повторять исследование Мексики + Никарагуа.",
+  "repositorySources": [
+    "src/pages/multi-country/[...selection].astro",
+    "src/lib/multi-country-combinations.mjs",
+    "src/lib/seo-geo-articles.ts",
+    "src/content/tours/central-america-8-countries-26-days.md",
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "src/content/countries/mexico.md",
+    "src/content/countries/panama.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.migracion.gob.pa/turistas/",
+      "supports": "Панамские условия въезда: паспорт, при необходимости виза, достаточные средства, билет из страны и медицинские требования",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.migracion.gob.pa/preguntas-frecuentes/",
+      "supports": "Панамская миграционная служба о паспорте, билетах, средствах и проверке документов",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.imhpa.gob.pa/es/regimen-pluviometrico-panama",
+      "supports": "Национальная метеослужба Панамы: дождливый/сухой сезон на тихоокеанской стороне, осадки на Карибском побережье",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/panama.html",
+      "supports": "Сведения о долларе США и панамском балбоа, общие особенности доступности наличных и карт; нормы для граждан США не обобщены",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.gob.mx/inm/documentos/paises-y-regiones-que-no-requieren-visa-para-viajar-a-mexico",
+      "supports": "Мексика: миграционные формы, паспорта, требования к въезду без визы",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://visitmexico.com/en/pagina/clima",
+      "supports": "Сезонность и региональные климатические различия Мексики",
+      "checkedAt": "2026-10-15"
+    }
+  ],
+  "commercialVerification": {
+    "mainTourId": "tour_central_america_eight_countries_26_days",
+    "tourPath": "/multi-country/tour/central-america-8-countries-26-days/",
+    "actualDurationDays": 26,
+    "nights": 25,
+    "notes": "Tour MD: Мексика дни 1–5, Панама дни 24–26; экскурсия по Чагресу/Тусипоно, Мирафлоресу/IMAX/старому городу, последний день 6-часовая экскурсия. 8 основных стран, нет ценовых сумм. Перелеты упомянуты, но их включение неоднозначно."
+  },
+  "editorialChecks": [
+    "Единственный H1 остается в hero, Markdown начинается с H2",
+    "Мобильные таблицы до 2 коротких колонок",
+    "Внутренние ссылки подтверждены по точным production Destination/Tour MD",
+    "Динамический tourTable только по реальному tourId",
+    "Внешние URL только в этой служебной записи, не в статье"
+  ]
+}

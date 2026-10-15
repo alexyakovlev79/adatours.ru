@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "targetPath": "/multi-country/mexico_nicaragua/",
+  "articlePath": "data/seo-geo/articles/multi-country/mexico_nicaragua/index.md",
+  "researchedAt": "2026-10-15",
+  "editorialIntent": "Практическая специфика сочетания Мексики и Никарагуа: разрыв географии другими странами, точная роль в 26-дневной программе, миграция CA-4, климат, валюты, состав услуг, выбор темпа. Не дублируется путеводитель по всей Центральной Америке.",
+  "repositorySources": [
+    "src/pages/multi-country/[...selection].astro",
+    "src/lib/multi-country-combinations.mjs",
+    "src/lib/seo-geo-articles.ts",
+    "src/content/tours/central-america-8-countries-26-days.md",
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "src/content/countries/mexico.md",
+    "src/content/countries/nicaragua.md"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.gob.mx/inm/documentos/paises-y-regiones-que-no-requieren-visa-para-viajar-a-mexico",
+      "supports": "Мексика: паспорт, основания безвизового въезда, различие FMM на сухопутной границе и в международных аэропортах",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.visitanicaragua.com/sobre-nicaragua/requisitos-migratorios/",
+      "supports": "Никарагуа: срок паспорта 6 месяцев, электронный миграционный формуляр, сбор и дополнительные требования",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://www.visitanicaragua.com/en/about-Nicaragua/general-data/",
+      "supports": "Климат тихоокеанской и карибской частей Никарагуа, сухой и дождливый сезоны, валюта кордоба",
+      "checkedAt": "2026-10-15"
+    },
+    {
+      "url": "https://visitmexico.com/en/pagina/clima",
+      "supports": "Климатические различия столицы, Юкатана и северных районов Мексики, типичные сезоны дождей",
+      "checkedAt": "2026-10-15"
+    }
+  ],
+  "commercialVerification": {
+    "mainTourId": "tour_central_america_eight_countries_26_days",
+    "tourPath": "/multi-country/tour/central-america-8-countries-26-days/",
+    "mainCountries": 8,
+    "actualDurationDays": 26,
+    "notes": "По текущему Tour MD: дни 1–5 Мексика, 15–17 Никарагуа; маршрут через Белиз, Гватемалу, Гондурас и Сальвадор; 2028 как год программы без закрепленных дат, priceFrom null. Включение перелетов в исходных условиях неоднозначно, поэтому не заявлено включенным."
+  },
+  "editorialChecks": [
+    "Две колонки сравнительной таблицы, без горизонтального скролла на узких мобильных экранах",
+    "Контекстные ссылки только на подтвержденные production MD и канонические каталоги",
+    "Нет ссылок на внешние сайты, архивы и неподтвержденные цены в публичном тексте",
+    "FAQ соответствует фактическому маршруту 8 стран, не продает вымышленный маршрут только по двум странам"
+  ]
+}

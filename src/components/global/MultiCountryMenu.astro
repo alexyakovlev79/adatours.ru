@@ -45,23 +45,20 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     ))}
   </div>
 
+  <template data-mc-menu-expand-template>
+    <button type="button" class="mc-menu__expand" aria-label="Добавить страну">›</button>
+  </template>
+
   <nav class="mc-menu__combinations" data-mc-menu-combinations aria-label="Сочетания стран" data-mc-menu-source={serverLinks ? 'true' : undefined}>
     {items.map((row) => (
       <div
         class="mc-menu__combination"
         data-mc-menu-combination
         data-mc-menu-slugs={row.slugs.join('_')}
-        data-mc-menu-size={row.slugs.length}
+        data-mc-menu-more={row.hasMore ? '' : undefined}
       >
         <a href={withBase(row.path)}>{formatMultiCountryNames(row.names)}</a>
-        {row.hasMore && (
-          <button
-            type="button"
-            class="mc-menu__expand"
-            data-mc-menu-expand={row.slugs.join('_')}
-            aria-label={'Добавить страну к сочетанию ' + formatMultiCountryNames(row.names)}
-          >›</button>
-        )}
+
       </div>
     ))}
   </nav>

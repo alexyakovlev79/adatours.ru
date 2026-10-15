@@ -24,6 +24,17 @@ for (const menu of menuInstances) {
   const combinations = [...menu.querySelectorAll<HTMLElement>('[data-mc-menu-combination]')]
     .map((element) => ({ element, slugs: (element.dataset.mcMenuSlugs ?? '').split('_') }));
   if (!countryGrid || !links || !heading || !back) continue;
+  // Keep each canonical anchor in SSR, but clone the shared scoped button
+  // only in the browser instead of repeating its markup on every page.
+  const expandTemplate = menu.querySelector<HTMLTemplateElement>('[data-mc-menu-expand-template]');
+  for (const { element, slugs } of combinations) {
+    if (!element.hasAttribute('data-mc-menu-more') || element.querySelector('[data-mc-menu-expand]')) continue;
+    const expand = expandTemplate?.content.querySelector('button')?.cloneNode(true) as HTMLButtonElement | undefined;
+    if (!expand) continue;
+    expand.dataset.mcMenuExpand = slugs.join('_');
+    expand.setAttribute('aria-label', 'Добавить страну к сочетанию ' + (element.querySelector('a')?.textContent?.trim() ?? ''));
+    element.append(expand);
+  }
   let selected: string[] = [];
 
   // Align the dropdown with the first primary navigation label ("Страны"),

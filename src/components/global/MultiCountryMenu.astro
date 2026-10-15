@@ -90,7 +90,6 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     letter-spacing: var(--mc-item-tracking);
     text-transform: uppercase;
     text-decoration: none;
-    border-bottom: 1px solid currentColor;
   }
   .mc-menu__back {
     display: block;
@@ -134,7 +133,6 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     gap: 8px;
     padding: 10px 0;
     border: 0;
-    border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
     color: inherit;
     background: transparent;
     font-family: inherit;
@@ -173,7 +171,6 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     min-width: 0;
     align-items: stretch;
     gap: 8px;
-    border-bottom: 1px solid color-mix(in srgb, currentColor 16%, transparent);
   }
   .mc-menu__combination a {
     /* A link only covers its label, never the empty space leading to the arrow. */
@@ -207,20 +204,31 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     opacity: .8;
     cursor: pointer;
   }
+  /* Use the same full-row gold hover as the other desktop dropdowns.
+     The parent row owns the background, covering both link and expand button. */
   .mc-menu__country:hover,
   .mc-menu__combination:hover,
   .mc-menu__country:focus-visible,
-  .mc-menu__combination:focus-within {
-    color: var(--color-gold-deep);
+  .mc-menu__combination:focus-within,
+  .mc-menu__all:hover,
+  .mc-menu__all:focus-visible,
+  .mc-menu__back:hover,
+  .mc-menu__back:focus-visible {
+    color: inherit;
+    background: color-mix(in srgb, var(--color-gold) 18%, transparent);
+  }
+  .mc-menu__country,
+  .mc-menu__combination {
+    transition: background-color 180ms var(--ease-out);
   }
   .mc-menu :is(a, button):focus-visible {
     outline: 2px solid var(--color-gold-deep);
     outline-offset: 3px;
   }
   @media (min-width: 1241px) {
-    /* Size desktop levels 2+ to the longest visible combination, not the initial 620px panel. */
+    /* Let every highlighted row cover the entire wider level 2+ panel. */
     .mc-menu[data-mc-selected] .mc-menu__combinations {
-      width: max-content;
+      width: 100%;
       max-width: 100%;
     }
   }

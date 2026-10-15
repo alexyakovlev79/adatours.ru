@@ -556,9 +556,9 @@ const nestedGroups = NAV_LINKS
     transform: translate(var(--submenu-offset-x), 0);
   }
 
-  /* After picking a country, let the widest visible label set the panel width. */
+  /* Wider but still compact panel for country combinations (levels 2–4). */
   .desktop-nav__submenu--multi-country:has([data-mc-selected]) {
-    width: max-content;
+    width: min(390px, calc(100vw - 48px));
     max-width: min(620px, calc(100vw - 48px));
   }
 

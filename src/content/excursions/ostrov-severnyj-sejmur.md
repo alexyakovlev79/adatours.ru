@@ -19,9 +19,9 @@ priceFrom: 488
 currency: "USD"
 priceNote: "Стоимость — $488."
 hero:
-  src: /media/excursions/tur-na-ostrov-florena/gallery-2-enhanced-20261001.webp
-  hover: "Галапагосы: большая черепаха на лесной дорожке"
-  alt: "Гигантская черепаха на грунтовой тропе среди деревьев, Галапагосы, Эквадор"
+  src: /media/excursions/ostrov-severnyj-sejmur/gallery-1-regenerated-20261011-v1.webp
+  alt: "Фрегат с надутым красным горловым мешком на ветке, Северный Сеймур, Галапагосы, Эквадор"
+  hover: "Северный Сеймур: черный фрегат с ярко-красным горловым мешком"
 gallery:
   - src: "/media/excursions/ostrov-severnyj-sejmur/gallery-0-src-enhanced-20261007.webp"
     hover: "Галапагосы: морская птица над лодками и прибрежными домами"

@@ -63,7 +63,7 @@ test('draft-only failures preserve an active lease and annotate the reason', () 
   const lease = { ownerId: 'writer', expiresAt: '2026-10-15T11:00:00.000Z' };
   const phase = { entries: [row] }, claims = { claims: { [row.url]: lease } };
   const result = applySeoRecovery(phase, claims, [{ url: row.url, articlePath: path, draftFailure: true }],
-    { now: at, errors: new Map([[path, 'Неверная ссылка']] });
+    { now: at, errors: new Map([[path, 'Неверная ссылка']]) });
   assert.deepEqual(result.annotatedDrafts, [row.url]);
   assert.equal(row.preflightFailure.reason, 'Неверная ссылка');
   assert.deepEqual(claims.claims[row.url], lease);

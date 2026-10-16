@@ -70,7 +70,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/seo-geo/registry data/catalogues/multi-country.json data/external-identity/multi-country-catalogues.json docs/catalogues/multi-country.md
+          git add data/seo-geo/registry data/catalogues/multi-country.json data/external-identity/multi-country-catalogues.json
+          git add -f docs/catalogues/multi-country.md
           cp -r /tmp/catalog-dev/payload .catalog-dev
           cp /tmp/catalog-dev/workflow.yml .github/workflows/catalog-development-source.yml
           git add .catalog-dev .github/workflows/catalog-development-source.yml

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_camara_base",
+  "stableId": "destination_antarctica_camara_base",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/camara-base/",
+  "sourceFingerprint": "fc099f9097eec5230dd1ab1e652b82607309a69082e51de25f8c7c423f02117b",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "research_station",
+  "external": {
+    "wikidataQid": "Q3635543",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/C%C3%A1mara_Base"
+    }
+  },
+  "location": {
+    "latitude": -62.59385806,
+    "longitude": -59.91934389,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3635543"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_antarctica_half_moon_island"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/camara-base/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверен точный live URL: HTTP 200, H1 «База Камара», canonical совпадает. Current main MD имеет ожидаемый stable ID, approved и соответствующую географию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3635543",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Отдельная аргентинская сезонная станция на Half Moon Island. Выбрана точка P625 со ссылкой на COMNAP Facilities List 2017; округленная правительственная координата 62°36′S 59°54′W менее точна и не усреднялась."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3635543",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Отдельная аргентинская сезонная станция на Half Moon Island. Выбрана точка P625 со ссылкой на COMNAP Facilities List 2017; округленная правительственная координата 62°36′S 59°54′W менее точна и не усреднялась. Роль точки: representative; не навигационная координата."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3635543",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Тип объекта сверяется с точной записью и собственным MD: research_station."
+    },
+    {
+      "field": "relationships.destination_antarctica_half_moon_island",
+      "sourceUrl": "https://adatours.ru/antarctica/place/camara-base/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Географическое нахождение в destination_antarctica_half_moon_island подтверждено описанием и внешним источником; это не утверждение суверенитета."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/C%C3%A1mara_Base",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверена точная статья о соответствующем объекте, имя и география согласованы с Wikidata и MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.argentina.gob.ar/estado-mayor-conjunto/comando-conjunto-antartico/informacion-sobre-el-comando-conjunto-antartico",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Правительственное описание Base Camara: Isla Media Luna, основание 1 апреля 1953, сезонная станция. Отдельная станция, не территория Аргентины в паспорте."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q3635543",
+      "reason": "Отдельная аргентинская сезонная станция на Half Moon Island. Выбрана точка P625 со ссылкой на COMNAP Facilities List 2017; округленная правительственная координата 62°36′S 59°54′W менее точна и не усреднялась."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3635543",
+      "reason": "Совпадают имя, тип и антарктическая география; исключены конкурирующие одноименные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "-62.59385805555556,-59.91934388888889",
+      "reason": "Отдельная аргентинская сезонная станция на Half Moon Island. Выбрана точка P625 со ссылкой на COMNAP Facilities List 2017; округленная правительственная координата 62°36′S 59°54′W менее точна и не усреднялась."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "research_station",
+      "reason": "Тип подтверждается географическим справочником/карточкой и смыслом страницы."
+    },
+    {
+      "field": "relationships.destination_antarctica_half_moon_island",
+      "probability": 99,
+      "selected": "destination_antarctica_half_moon_island",
+      "reason": "Согласованная географическая иерархия по MD и справочнику."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/C%C3%A1mara_Base",
+      "reason": "Точная статья соответствует выбранному референту."
+    }
+  ],
+  "reviewNote": null
+}

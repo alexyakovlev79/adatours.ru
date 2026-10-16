@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_recife",
+  "stableId": "destination_brazil_recife",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/recife/",
+  "sourceFingerprint": "896565ec6f588db2a87f5ba3aa4cabbfaee54aff49df07c0093f0d8b27b45553",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q48344",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Recife"
+    },
+    "geonamesId": "3390760"
+  },
+  "location": {
+    "latitude": -8.05389,
+    "longitude": -34.88111,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3390760/recife.html"
+  },
+  "alternateNames": [
+    "Recife",
+    "Ресифе"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/recife/",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точный опубликованный canonical URL проверен прямым HTTP GET: 200, конечный URL совпадает, noindex отсутствует. Браузер поискового инструмента URL не открыл; использован прямой сетевой запрос."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/recife.md",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Текущий утверждённый MD и точная source-index entry сверены: destination_brazil_recife, country_brazil; содержание соответствует выбранному охвату объекта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q48344",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверены название, P31 и P17/P131: city, Brazil; Город Ресифи в Pernambuco. GeoNames 3390760 — PPLA; 6320570 обозначает муниципальную территорию с иной точкой −8.01175, −34.95291 и не использован вместо центра. Q12701845 перенаправляется в действующий Q48344; второй QID не создаётся."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Recife",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точная статья о выбранном именованном объекте, проверена содержательно и по sitelink Wikidata; охват и обнаруженные координатные расхождения отражены в reviewNote."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3390760/recife.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверена точная карточка населённого пункта: GeoNameId 3390760; правильная страна и административная иерархия. Использован PPL/PPLA, а не одноимённый пляж или центроид ADM2."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3390760/recife.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Исходная точка WGS84 (-8.05389, -34.88111), pointRole=settlement_center. Город Ресифи в Pernambuco. GeoNames 3390760 — PPLA; 6320570 обозначает муниципальную территорию с иной точкой −8.01175, −34.95291 и не использован вместо центра. Q12701845 перенаправляется в действующий Q48344; второй QID не создаётся."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q48344",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Wikidata P625 8°3′14″S 34°52′51″W согласуется с GeoNames PPLA −8.05389, −34.88111; отличие долготы около 1 угловой секунды, точки не усреднялись."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q48344",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Страна Brazil явно указана в географической карточке; сверено с countryId в текущем MD и source-index. containedInPlace указывает на существующий country_brazil."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Город Ресифи в Pernambuco. GeoNames 3390760 — PPLA; 6320570 обозначает муниципальную территорию с иной точкой −8.01175, −34.95291 и не использован вместо центра. Q12701845 перенаправляется в действующий Q48344; второй QID не создаётся."
+}

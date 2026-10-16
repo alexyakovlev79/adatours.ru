@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_clarinho_river",
+  "stableId": "destination_brazil_clarinho_river",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/clarinho-river/",
+  "sourceFingerprint": "8cb375ae5746ec541d72b4dfa47337b0bc9c21d8867eee4e96e9cfe47c65b494",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/clarinho-river/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямая HTTP-проверка urllib: 200, canonical совпадает с целевым URL; опубликованная страница и актуальный approved MD имеют нужный stable ID."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/clarinho-river.md",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Актуальный MD: countryId=country_brazil; stable ID, имя, тип и статус approved сверены."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://araraslodge.com.br/pantanal-and-savannah-6-days-and-5-nights/?lang=en",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Официальная программа лоджа, день 2: каноэ по Clarinho, обед у Sentinela. Подтверждено название маршрутной реки, внешняя географическая идентичность пока не доказана."
+    }
+  ],
+  "entityClass": "watercourse",
+  "alternateNames": [
+    "Rio Clarinho",
+    "Clarinho River"
+  ],
+  "reviewNote": "Лодж подтверждает Rio Clarinho в своей программе и связь с Sentinela. Точная речная геометрия, QID/OSM/GeoNames и проверенная точка не установлены. Не присвоены GeoNames 3474395 (Fazenda Rio Clarinho — усадьба) и OSM 4644317638 (деревня Rio Clarinho в Espírito Santo). Сайт лоджа — источник об остановке, не sameAs реки."
+}

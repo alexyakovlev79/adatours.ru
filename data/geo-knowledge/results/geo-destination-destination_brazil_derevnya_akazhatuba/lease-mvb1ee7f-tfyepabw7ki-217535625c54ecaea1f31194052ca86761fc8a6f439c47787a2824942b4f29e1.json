@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_derevnya_akazhatuba",
+  "stableId": "destination_brazil_derevnya_akazhatuba",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/acajatuba-village/",
+  "sourceFingerprint": "10dfee9dfed6f946b3c5c5c2b687c280a3517fd70f97671124c38c8d1a063be1",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/acajatuba-village/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямая HTTP-проверка urllib: 200, canonical совпадает с целевым URL; опубликованная страница и актуальный approved MD имеют нужный stable ID."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/acajatuba-village.md",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Актуальный MD: countryId=country_brazil; stable ID, имя, тип и статус approved сверены."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/tours/amazoniya.md",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Исходный тур: Evolution Eco Lodge в районе Acajatuba, затем посещение деревни Acajatuba; более точного названия общины нет."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/1714844126.json",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Проверен кандидат OSM, имя совпадает, но административный тег указывает Manacapuru; принадлежность именно туристической деревне из программы не доказана."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://www.viveramazonia.com/nossa-senhora-do-perp%C3%A9tuo-socorro",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Общинный туристический портал описывает Nossa Senhora do Perpétuo Socorro на озере Acajatuba в Iranduba; точное соответствие нашему маршруту не установлено."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://www.amazonastur.am.gov.br/municipios/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Официальный Amazonastur подтверждает общины озёр Acajatuba и Janauari в Iranduba, но не идентифицирует конкретную деревню из программы."
+    }
+  ],
+  "entityClass": "settlement",
+  "reviewNote": "Источник тура называет лишь Vila/деревню Acajatuba возле Rio Negro. Обнаружен кандидат OSM node 1714844126 (-3.1244314,-60.5260363) с name=Acajatuba, place=hamlet, is_in:municipality=Manacapuru, source=IBGE. Другой источник связывает туристическую Vila de Acajatuba с Nossa Senhora do Perpétuo Socorro в Iranduba. Район озера включает несколько общин. Без доказательства конкретного посещаемого поселения OSM/QID/координаты не присвоены; озеро не отождествлено с деревней."
+}

@@ -9,8 +9,8 @@ export async function runSchemaGeo(tools, core, request) {
   const head=(await fetch(`${api}/git/ref/heads/${branch}`)).object.sha;
   const [commit,queue,state,manifest]=await Promise.all([fetch(`${api}/git/commits/${head}`),json('data/geo-knowledge/queue.json',head),json('data/geo-knowledge/state.json',head),json('data/geo-knowledge/manifest.json',head)]);
   const now=Date.now(),args={...request,now};let output,extra=[];
-  if(request.action==='inspect')return {head,manifest,summary:queue.jobs.reduce((m,j)=>{const s=core.statusOf(state,j);m[s]=(m[s]||0)+1;return m;},{}),next:queue.jobs.filter(j=>j.stage<=manifest.maxStage&&core.statusOf(state,j)==='QUEUED').slice(0,5)};
-  if(request.action==='claim')output=core.claim(queue,state,{...args,maxStage:manifest.maxStage});
+  if(request.action==='inspect')return {head,manifest,summary:queue.jobs.reduce((m,j)=>{const s=core.statusOf(state,j);m[s]=(m[s]||0)+1;return m;},{}),next:queue.jobs.filter(j=>j.stage<=manifest.maxStage&&core.statusOf(state,j)==='QUEUED').slice(0,Math.min(10,Math.max(1,manifest.batchSize||10)))};
+  if(request.action==='claim')output=core.claim(queue,state,{...args,maxStage:manifest.maxStage,batchSize:manifest.batchSize||10,limit:request.limit??manifest.batchSize??10});
   else if(request.action==='renew')output=core.renew(state,args);
   else if(request.action==='release')output=core.release(state,args);
   else if(request.action==='complete'){

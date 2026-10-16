@@ -63,12 +63,12 @@ text({loadedFrom:head});
 const core=new Function(load('geoCoreSource').replace(/^export /gm,'')+
  ';return {claim,renew,release,complete,beginPublication,recordCommit,confirmDeploy,statusOf,stable};')();
 const run=new Function(load('geoRemoteSource').replace(/^export /gm,'')+';return runSchemaGeo;')();
-const r=await run(tools,core,{action:'claim',ownerId:load('geoOwner'),token:load('geoToken'),limit:5});
+const r=await run(tools,core,{action:'claim',ownerId:load('geoOwner'),token:load('geoToken'),limit:10});
 store('geoClaim',r);
 text(r);
 ```
 
-Первый пилот можно взять `limit:3`. Сессия берет **одну пачку**, до пяти задач, одного этапа. Успешный ответ: `status: saved`, commit SHA и список `output` с lease. Только после него приступать к исследованию. Сохранять owner/token и возвращенный commit. Если ответ потерян, **повторить тот же owner/token**, не создавать новые. `empty_or_gated` означает отсутствие доступной пачки в открытых этапах; не расширять maxStage самостоятельно.
+Первый пилот исторически запускался с `limit:3`. Новая сессия берет **одну пачку**, до 10 задач одного этапа (размер задает `manifest.batchSize`). Успешный ответ: `status: saved`, commit SHA и список `output` с lease. Только после него приступать к исследованию. Сохранять owner/token и возвращенный commit. Если ответ потерян, **повторить тот же owner/token**, не создавать новые. `empty_or_gated` означает отсутствие доступной пачки в открытых этапах; не расширять maxStage самостоятельно.
 
 ### 3.2. Исследование
 

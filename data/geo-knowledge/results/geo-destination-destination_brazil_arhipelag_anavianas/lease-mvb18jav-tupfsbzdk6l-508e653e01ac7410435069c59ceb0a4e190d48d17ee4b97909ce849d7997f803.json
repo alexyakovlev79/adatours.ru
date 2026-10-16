@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_arhipelag_anavianas",
+  "stableId": "destination_brazil_arhipelag_anavianas",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/anavilhanas-archipelago/",
+  "sourceFingerprint": "d898f455a688a99519e30738c2b6369f7dead4a33342fc489db0e99c93a030d0",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/anavilhanas-archipelago.md",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный approved MD прочитан на фиксированном main SHA; stable ID, страна и предмет страницы совпадают с entry. Тип страницы destination не подменяется типом внешнего геообъекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/anavilhanas-archipelago/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP GET: 200; rel=canonical точно совпадает с этим URL; noindex отсутствует; заголовок соответствует объекту."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://ppbio.inpa.gov.br/node/365",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Первичный источник INPA/PPBio отдельно описывает речной архипелаг и его положение внутри федеральной охраняемой территории Parque Nacional de Anavilhanas."
+    },
+    {
+      "field": "identity.candidate_rejected",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q392877",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Q392877 обозначает Anavilhanas National Park, P31 national park, не архипелаг как физико-географический объект. Не присвоен архипелагу."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://ppbio.inpa.gov.br/node/365",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Архипелаг в Rio Negro, Amazonas, в федеральной природоохранной территории Бразилии; совпадает с контекстом MD."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/anavilhanas-archipelago/"
+    ],
+    "findings": [
+      "HTTP 200, canonical совпадает, noindex отсутствует; approved content MD и точная source-index entry сверены."
+    ]
+  },
+  "entityClass": "river_archipelago",
+  "alternateNames": [
+    "Arquipélago de Anavilhanas",
+    "Anavilhanas Archipelago",
+    "Анавильянас"
+  ],
+  "reviewNote": "Физический архипелаг и национальный парк имеют разные объём и класс. Q392877, GeoNames 9222709, OSM relation 3425635 относятся к парку и не назначены архипелагу. INPA подтверждает само место, но отдельная точная внешняя идентичность и независимые координаты архипелага не найдены; нужны картографические границы архипелага. Страница исследовательского сайта не объявлена officialUrl/sameAs географического объекта."
+}

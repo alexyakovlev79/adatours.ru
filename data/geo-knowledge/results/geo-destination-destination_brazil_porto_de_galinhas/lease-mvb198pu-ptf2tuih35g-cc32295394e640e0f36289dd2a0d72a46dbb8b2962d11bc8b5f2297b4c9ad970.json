@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_porto_de_galinhas",
+  "stableId": "destination_brazil_porto_de_galinhas",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/porto-de-galinhas/",
+  "sourceFingerprint": "1aac10e8e1d452ac587b0aace26c619a63f082b8a62869064265a2ff589b317c",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "resort_settlement",
+  "external": {
+    "geonamesId": "3391388"
+  },
+  "location": {
+    "latitude": -8.50479,
+    "longitude": -35.00609,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3391388/porto-de-galinhas.html"
+  },
+  "alternateNames": [
+    "Porto de Galinhas",
+    "Pôrto das Galinhas"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/porto-de-galinhas/",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точный опубликованный canonical URL проверен прямым HTTP GET: 200, конечный URL совпадает, noindex отсутствует. Браузер поискового инструмента URL не открыл; использован прямой сетевой запрос."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/porto-de-galinhas.md",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Текущий утверждённый MD и точная source-index entry сверены: destination_brazil_porto_de_galinhas, country_brazil; содержание соответствует выбранному охвату объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3391388/porto-de-galinhas.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверена точная карточка населённого пункта: GeoNameId 3391388; правильная страна и административная иерархия. Использован PPL/PPLA, а не одноимённый пляж или центроид ADM2."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3391388/porto-de-galinhas.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Исходная точка WGS84 (-8.50479, -35.00609), pointRole=representative. Идентифицирован курортный населённый пункт по GeoNames PPL 3391388 в Ipojuca, Pernambuco. Q2334856 и GeoNames 7535944 относятся к отдельному пляжу; Q10351915 — к административному району, а страница сайта описывает курорт с соседними пляжами. Эти QID/Wikipedia не выданы за точное sameAs курортного населённого пункта. Опорная точка GeoNames, не границы района и не центр всех перечисленных пляжей."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.visitbrasil.com/en/location/porto-de-galinhas-en",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Официальный портал Embratur подтверждает деревню/туристическое направление Porto de Galinhas в Ipojuca, Pernambuco, Brazil; отдельно перечисляет соседние Muro Alto, Cupe, Maracaípe. Пространственная сверка с Wikidata Q10351915: точка района −8.4933763, −35.0098749 примерно в 1.3 км, без отождествления района с населённым пунктом."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.geonames.org/3391388/porto-de-galinhas.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Страна Brazil явно указана в географической карточке; сверено с countryId в текущем MD и source-index. containedInPlace указывает на существующий country_brazil."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10351915",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверена карточка района: municipality district of Brazil, Ipojuca, Brazil; QID не включён в external из-за различия охвата."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2334856",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Карточка отдельного пляжа; не подменяет весь курорт."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Идентифицирован курортный населённый пункт по GeoNames PPL 3391388 в Ipojuca, Pernambuco. Q2334856 и GeoNames 7535944 относятся к отдельному пляжу; Q10351915 — к административному району, а страница сайта описывает курорт с соседними пляжами. Эти QID/Wikipedia не выданы за точное sameAs курортного населённого пункта. Опорная точка GeoNames, не границы района и не центр всех перечисленных пляжей."
+}

@@ -68,24 +68,8 @@ function catalogueAnchors(path) {
 }
 const redirectTargets = new Map();
 function verifyRedirect(from, to) {
-  const previous = redirectTargets.get(from);
-  if (previous) {
-    assert.equal(previous, to, `alias has conflicting targets: ${from}`);
-    return;
-  }
-  assert.ok(existsSync(fileFor(from)), `redirect page missing: ${from}`);
-  assert.ok(existsSync(fileFor(to)), `redirect target missing: ${from} → ${to}`);
-  assert.equal(isLegacyRedirectPath(to), false, `redirect target must be final: ${from} → ${to}`);
-  const redirect = html(from);
-  const target = absolute(to);
-  assert.equal(canonical(redirect), target, `redirect canonical: ${from}`);
-  assert.equal(canonical(html(to)), target, `redirect targets a noncanonical page: ${from} → ${to}`);
-  assert.equal(tagWith(html(to), 'meta', 'http-equiv', 'refresh'), undefined, `redirect chain: ${from} → ${to}`);
-  assert.ok((attr(tagWith(redirect, 'meta', 'name', 'robots') ?? '', 'content') ?? '').includes('noindex'), `redirect robots: ${from}`);
-  assert.equal(attr(tagWith(redirect, 'meta', 'http-equiv', 'refresh') ?? '', 'content'), `0;url=${href(to)}`, `redirect refresh: ${from}`);
-  assert.ok(redirect.includes('window.location.search') && redirect.includes('window.location.hash'), `redirect loses query/hash: ${from}`);
-  assert.ok(redirect.includes('data-pagefind-ignore') && !redirect.includes('data-pagefind-body'), `redirect search exclusion: ${from}`);
-  assert.ok(!sitemapUrls.has(absolute(from)), `redirect present in sitemap: ${from}`);
+  assert.ok(!existsSync(fileFor(from)), 'Historical URL must not be published: ' + from);
+  assert.ok(existsSync(fileFor(to)), 'Canonical destination missing: ' + to);
   redirectTargets.set(from, to);
 }
 for (const definition of definitions) {
@@ -160,7 +144,7 @@ for (const file of pageFiles) {
   }
 }
 assert.ok(existsSync(fileFor('/multi-country/')), 'existing multi-country editorial page must remain');
-assert.ok(existsSync(fileFor('/multi-country/tour/')), 'multi-country tour catalogue must exist');
+assert.ok(!existsSync(fileFor('/multi-country/tour/')), 'legacy multi-country catalogue page must be absent');
 console.log(JSON.stringify({
   ok: true, site: siteRoot.toString(), details, aliases: redirectTargets.size,
   entityAliases, pageAliases: pageAliases.length, cataloguePages: catalogues.size,

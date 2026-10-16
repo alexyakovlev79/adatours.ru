@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { archiveEntries, archiveById, isArchivedPath } from '../src/lib/archive.mjs';
-import { aliasesForEntity } from '../src/lib/routes.ts';
+import { aliasesForEntity, isLegacyRedirectPath } from '../src/lib/routes.ts';
 import { readPhotoInputs, buildPhotoQueue } from './photo-queue.mjs';
 const output = path.resolve(process.argv[2] ?? 'dist');
 const files = [];
@@ -23,9 +23,11 @@ for (const a of archiveEntries) {
   assert.ok(!html.includes('data-pagefind-body'), `Archive in search: ${a.id}`);
   assert.ok(!/<meta\b[^>]*http-equiv="refresh"/.test(html), `Canonical archive must not redirect: ${a.id}`);
   for (const old of aliasesForEntity(a.type, JSON.parse(fs.readFileSync(`data/source-index/entries/${a.id}.json`, 'utf8')), a.url)) {
-    const redirect = fs.readFileSync(fileFor(old), 'utf8');
-    assert.ok(redirect.includes('noindex') && redirect.includes(a.url));
+    assert.ok(!fs.existsSync(fileFor(old)), 'Archived old alias still published: ' + old);
     aliases++;
+  }
+  for (const m of html.matchAll(/href="([^"]+)"/g)) {
+    if (m[1].startsWith('/') && isLegacyRedirectPath(m[1])) throw Error('Old URL in archived page: ' + a.id + ' -> ' + m[1]);
   }
   details++;
 }

@@ -237,4 +237,5 @@ console.log(JSON.stringify(summary, null, 2));
 assert.ok(files.length > 0, 'No HTML output');
 assert.equal(report.errors.length, 0, `Schema acceptance failed. See dist/schema-coverage.json; first errors: ${JSON.stringify(report.errors.slice(0, 8))}`);
 assert.equal(report.withSchema, files.length, '100% HTML coverage');
+assert.equal(report.redirects, 0, 'Historical redirect pages must be absent');
 console.log(`Schema checks passed: ${report.totalHtml} HTML pages; ${report.contentPages} content pages, ${report.redirects} redirects, ${report.catalogPages} paginated catalog pages, ${report.archives} archived pages.`);

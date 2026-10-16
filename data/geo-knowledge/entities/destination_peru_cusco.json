@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_cusco",
+  "stableId": "destination_peru_cusco",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/cusco/",
+  "sourceFingerprint": "b97eb9a9fe1d8ae7b93b49cb7e4e400e497371fb18359ce6395656e189811ee4",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q5582862",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cusco",
+      "es": "https://es.wikipedia.org/wiki/Cusco"
+    },
+    "geonamesId": "3941584"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "confidence": "high",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/stories/a-tour-around-the-city-of-cusco",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Город Cusco, историческая столица инков и административный центр департамента. Не департамент, провинция или отдельный район Cusco."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/cusco/",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Прямой HTTPS GET: 200; H1 и canonical совпадают с очередью. Точные MD (approved), stable ID и source-index entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/stories/a-tour-around-the-city-of-cusco",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Город Cusco, историческая столица инков и административный центр департамента. Не департамент, провинция или отдельный район Cusco."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5582862",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Город Cusco, историческая столица инков и административный центр департамента. Не департамент, провинция или отдельный район Cusco."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5582862",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Имя точного объекта и принятая орфография совпадают с sitelinks/MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5582862",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Sitelinks подтверждённого QID. Не страница одноимённого региона/района."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5582862",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "P1566 точного географического объекта; имя, класс и страна сверены. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5582862",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "P625 — точка в городской застройке, не центр одноимённого административного региона."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.peru.travel/stories/a-tour-around-the-city-of-cusco",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Независимая сверка географического контекста точки: Город Cusco, историческая столица инков и административный центр департамента. Не департамент, провинция или отдельный район Cusco."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/stories/a-tour-around-the-city-of-cusco",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Страна подтверждена MD, entry, внешним описанием и P17 Wikidata."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Cusco, историческая столица инков и административный центр департамента. Не департамент, провинция или отдельный район Cusco.",
+      "selected": "Куско"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Город Cusco, историческая столица инков и административный центр департамента. Не департамент, провинция или отдельный район Cusco.",
+      "selected": "city"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Город Cusco, историческая столица инков и административный центр департамента. Не департамент, провинция или отдельный район Cusco.",
+      "selected": "Q5582862"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "reason": "Имя точного объекта и принятая орфография совпадают с sitelinks/MD.",
+      "selected": "Cusco; Cuzco"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Sitelinks подтверждённого QID. Не страница одноимённого региона/района.",
+      "selected": "https://en.wikipedia.org/wiki/Cusco; https://es.wikipedia.org/wiki/Cusco"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "reason": "P1566 точного географического объекта; имя, класс и страна сверены. ",
+      "selected": "3941584"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "P625 — точка в городской застройке, не центр одноимённого административного региона.",
+      "selected": "-13.516944444444444, -71.9786111111111"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна подтверждена MD, entry, внешним описанием и P17 Wikidata.",
+      "selected": "country_peru"
+    }
+  ],
+  "reviewNote": "Город Cusco, историческая столица инков и административный центр департамента. Не департамент, провинция или отдельный район Cusco. Точка GeoNames3941584 (-13.53188,-71.96701) отличается от P625 городского исторического ядра; сохранён исходный P625, без усреднения.",
+  "alternateNames": [
+    "Cusco",
+    "Cuzco"
+  ],
+  "location": {
+    "latitude": -13.516944444444444,
+    "longitude": -71.9786111111111,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5582862"
+  }
+}

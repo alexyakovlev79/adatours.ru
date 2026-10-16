@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_arekipa",
+  "stableId": "destination_peru_arekipa",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/arequipa/",
+  "sourceFingerprint": "84071256ac79faa1408b69fcb7527471e598b86f31f24395e441c267ec0b91f3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q159273",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Arequipa",
+      "es": "https://es.wikipedia.org/wiki/Arequipa"
+    },
+    "geonamesId": "3947322"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "confidence": "high",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/destinations/arequipa",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Город Арекипа, Белый город у вулкана Misti, с Plaza de Armas и монастырём Santa Catalina. Не департамент и не отдельный монастырь."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/arequipa/",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Прямой HTTPS GET: 200; H1 и canonical совпадают с очередью. Точные MD (approved), stable ID и source-index entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/destinations/arequipa",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Город Арекипа, Белый город у вулкана Misti, с Plaza de Armas и монастырём Santa Catalina. Не департамент и не отдельный монастырь."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q159273",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Город Арекипа, Белый город у вулкана Misti, с Plaza de Armas и монастырём Santa Catalina. Не департамент и не отдельный монастырь."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q159273",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Имя точного объекта и принятая орфография совпадают с sitelinks/MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q159273",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Sitelinks подтверждённого QID. Не страница одноимённого региона/района."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q159273",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "P1566 точного географического объекта; имя, класс и страна сверены. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q159273",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "P625 — точка в городской застройке, не центр одноимённого административного региона."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.peru.travel/destinations/arequipa",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Независимая сверка географического контекста точки: Город Арекипа, Белый город у вулкана Misti, с Plaza de Armas и монастырём Santa Catalina. Не департамент и не отдельный монастырь."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/destinations/arequipa",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Страна подтверждена MD, entry, внешним описанием и P17 Wikidata."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Арекипа, Белый город у вулкана Misti, с Plaza de Armas и монастырём Santa Catalina. Не департамент и не отдельный монастырь.",
+      "selected": "Арекипа"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Город Арекипа, Белый город у вулкана Misti, с Plaza de Armas и монастырём Santa Catalina. Не департамент и не отдельный монастырь.",
+      "selected": "city"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Город Арекипа, Белый город у вулкана Misti, с Plaza de Armas и монастырём Santa Catalina. Не департамент и не отдельный монастырь.",
+      "selected": "Q159273"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "reason": "Имя точного объекта и принятая орфография совпадают с sitelinks/MD.",
+      "selected": "Arequipa"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Sitelinks подтверждённого QID. Не страница одноимённого региона/района.",
+      "selected": "https://en.wikipedia.org/wiki/Arequipa; https://es.wikipedia.org/wiki/Arequipa"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "reason": "P1566 точного географического объекта; имя, класс и страна сверены. ",
+      "selected": "3947322"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "P625 — точка в городской застройке, не центр одноимённого административного региона.",
+      "selected": "-16.398888888888887, -71.53694444444444"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна подтверждена MD, entry, внешним описанием и P17 Wikidata.",
+      "selected": "country_peru"
+    }
+  ],
+  "reviewNote": "Город Арекипа, Белый город у вулкана Misti, с Plaza de Armas и монастырём Santa Catalina. Не департамент и не отдельный монастырь.",
+  "alternateNames": [
+    "Arequipa"
+  ],
+  "location": {
+    "latitude": -16.398888888888887,
+    "longitude": -71.53694444444444,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q159273"
+  }
+}

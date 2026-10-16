@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_mankora",
+  "stableId": "destination_peru_mankora",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/mancora/",
+  "sourceFingerprint": "84de7c49489082fd65a6ce5de19803fe43e09390a5b242d04b444dd8c14d7937",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "external": {
+    "wikidataQid": "Q529807",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/M%C3%A1ncora",
+      "es": "https://es.wikipedia.org/wiki/M%C3%A1ncora"
+    },
+    "geonamesId": "3695000"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "confidence": "high",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/attractions/vichayito-mancora-organos",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Прибрежный курортный город Máncora в Piura, Peru; не административный район Máncora и не вся прибрежная группа Vichayito/Los Órganos."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/mancora/",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Прямой HTTPS GET: 200; H1 и canonical совпадают с очередью. Точные MD (approved), stable ID и source-index entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/attractions/vichayito-mancora-organos",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Прибрежный курортный город Máncora в Piura, Peru; не административный район Máncora и не вся прибрежная группа Vichayito/Los Órganos."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q529807",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Прибрежный курортный город Máncora в Piura, Peru; не административный район Máncora и не вся прибрежная группа Vichayito/Los Órganos."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q529807",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Имя точного объекта и принятая орфография совпадают с sitelinks/MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q529807",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Sitelinks подтверждённого QID. Не страница одноимённого региона/района."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q529807",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "P1566 точного географического объекта; имя, класс и страна сверены. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q529807",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "P625 — точка в городской застройке, не центр одноимённого административного региона."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.peru.travel/attractions/vichayito-mancora-organos",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Независимая сверка географического контекста точки: Прибрежный курортный город Máncora в Piura, Peru; не административный район Máncora и не вся прибрежная группа Vichayito/Los Órganos."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/attractions/vichayito-mancora-organos",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Страна подтверждена MD, entry, внешним описанием и P17 Wikidata."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Прибрежный курортный город Máncora в Piura, Peru; не административный район Máncora и не вся прибрежная группа Vichayito/Los Órganos.",
+      "selected": "Манкора"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Прибрежный курортный город Máncora в Piura, Peru; не административный район Máncora и не вся прибрежная группа Vichayito/Los Órganos.",
+      "selected": "settlement"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Прибрежный курортный город Máncora в Piura, Peru; не административный район Máncora и не вся прибрежная группа Vichayito/Los Órganos.",
+      "selected": "Q529807"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "reason": "Имя точного объекта и принятая орфография совпадают с sitelinks/MD.",
+      "selected": "Máncora"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Sitelinks подтверждённого QID. Не страница одноимённого региона/района.",
+      "selected": "https://en.wikipedia.org/wiki/M%C3%A1ncora; https://es.wikipedia.org/wiki/M%C3%A1ncora"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "reason": "P1566 точного географического объекта; имя, класс и страна сверены. ",
+      "selected": "3695000"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "P625 — точка в городской застройке, не центр одноимённого административного региона.",
+      "selected": "-4.10722222, -81.04722222"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна подтверждена MD, entry, внешним описанием и P17 Wikidata.",
+      "selected": "country_peru"
+    }
+  ],
+  "reviewNote": "Прибрежный курортный город Máncora в Piura, Peru; не административный район Máncora и не вся прибрежная группа Vichayito/Los Órganos.",
+  "alternateNames": [
+    "Máncora"
+  ],
+  "location": {
+    "latitude": -4.10722222,
+    "longitude": -81.04722222,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q529807"
+  }
+}

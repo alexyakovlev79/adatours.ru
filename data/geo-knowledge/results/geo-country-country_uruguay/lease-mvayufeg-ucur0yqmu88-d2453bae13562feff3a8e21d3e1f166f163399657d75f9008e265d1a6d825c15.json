@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_uruguay",
+  "stableId": "country_uruguay",
+  "kind": "country",
+  "canonicalPath": "/uruguay/",
+  "sourceFingerprint": "5df7e4ff5be58ca8b2a07abcda39ee3a55d6696653d55a26ec8e7e3c1659872c",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign_state",
+  "alternateNames": [
+    "Uruguay",
+    "República Oriental del Uruguay"
+  ],
+  "external": {
+    "wikidataQid": "Q77",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Uruguay"
+    },
+    "geonamesId": "3439705"
+  },
+  "relationships": [],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4cc87a3ce804507fd60bb0de42258363a3b77b75/src/content/countries/uruguay.md",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Approved MD: stable ID, русское название и slug совпали с точной source-index entry; SHA MD совпал с claim."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/uruguay/",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Точная публичная HTML-страница открыта 16.10.2026, заголовок соответствует стране; это активная страна."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q77",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта точная карточка государства; название и география совпали с MD и записью GeoNames PCLI."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.geonames.org/3439705/oriental-republic-of-uruguay.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "GeoNames указывает A PCLI, Independent political entity, а не населенный пункт, реку или туристический объект."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3439705/oriental-republic-of-uruguay.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта запись 3439705; название страны и код PCLI совпали. Тот же ID указан в Wikidata P1566."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Uruguay",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта статья о государстве; не страница неоднозначностей и не одноименный город/река."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.geonames.org/3439705/oriental-republic-of-uruguay.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Краткое и полное имена сопоставлены с формами в географических справочниках и статье страны."
+    },
+    {
+      "field": "location.review",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q77",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Точная страна, не река Уругвай. Координаты -33,-56 совпадают в GeoNames и Wikidata P625 (в последнем указан центр и GND), однако независимая проверка методики выбора опорной точки не выполнена; location исключен. Кандидат OSM relation 287072 указан в Wikidata P402, но прямое открытие relation/API завершилось ошибкой; external.osm исключен до проверки."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точная страна, не река Уругвай. Координаты -33,-56 совпадают в GeoNames и Wikidata P625 (в последнем указан центр и GND), однако независимая проверка методики выбора опорной точки не выполнена; location исключен. Кандидат OSM relation 287072 указан в Wikidata P402, но прямое открытие relation/API завершилось ошибкой; external.osm исключен до проверки."
+}

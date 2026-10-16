@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_praia_de_pipa",
+  "stableId": "destination_brazil_praia_de_pipa",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/praia-de-pipa/",
+  "sourceFingerprint": "0607a53e2fec5536e6d9c095cf28a791b8cff93dd97a4a6b9eef6d2b5f7b5261",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "resort_settlement_and_beach",
+  "external": {
+    "wikidataQid": "Q3178225",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pipa_Beach"
+    }
+  },
+  "location": {
+    "latitude": -6.226111111111111,
+    "longitude": -35.04333333333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3178225"
+  },
+  "alternateNames": [
+    "Praia de Pipa",
+    "Praia da Pipa",
+    "Pipa Beach",
+    "Pipa"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/praia-de-pipa/",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точный опубликованный canonical URL проверен прямым HTTP GET: 200, конечный URL совпадает, noindex отсутствует. Браузер поискового инструмента URL не открыл; использован прямой сетевой запрос."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/praia-de-pipa.md",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Текущий утверждённый MD и точная source-index entry сверены: destination_brazil_praia_de_pipa, country_brazil; содержание соответствует выбранному охвату объекта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3178225",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверены название, P31 и P17/P131: resort_settlement_and_beach, Brazil; Страница описывает курорт Пипа у Tibau do Sul, а не отдельный гостиничный комплекс. Q3178225 явно имеет классы human settlement и beach; это именованная местность с поселением и городским пляжем. Выбрана опорная точка Wikidata, не центр всех пляжей/курортной зоны. GeoNames 8199057 переклассифицирован PPL→BCH и относится к пляжу: как точный ID поселения не включён. Различные близкие точки не усреднялись."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pipa_Beach",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точная статья о выбранном именованном объекте, проверена содержательно и по sitelink Wikidata; охват и обнаруженные координатные расхождения отражены в reviewNote."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3178225",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Исходная точка WGS84 (-6.226111111111111, -35.04333333333333), pointRole=representative. Страница описывает курорт Пипа у Tibau do Sul, а не отдельный гостиничный комплекс. Q3178225 явно имеет классы human settlement и beach; это именованная местность с поселением и городским пляжем. Выбрана опорная точка Wikidata, не центр всех пляжей/курортной зоны. GeoNames 8199057 переклассифицирован PPL→BCH и относится к пляжу: как точный ID поселения не включён. Различные близкие точки не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/8199057/praia-da-pipa.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "GeoNames BCH −6.23359, −35.04512 в Tibau do Sul/Rio Grande do Norte и Wikipedia точка деревни −6.227582, −35.047647 подтверждают ту же прибрежную местность. Разброс менее 1 км; сверка назначения representative, а не доказательство единого центра и не равенство пляжа поселению."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3178225",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Страна Brazil явно указана в географической карточке; сверено с countryId в текущем MD и source-index. containedInPlace указывает на существующий country_brazil."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Страница описывает курорт Пипа у Tibau do Sul, а не отдельный гостиничный комплекс. Q3178225 явно имеет классы human settlement и beach; это именованная местность с поселением и городским пляжем. Выбрана опорная точка Wikidata, не центр всех пляжей/курортной зоны. GeoNames 8199057 переклассифицирован PPL→BCH и относится к пляжу: как точный ID поселения не включён. Различные близкие точки не усреднялись."
+}

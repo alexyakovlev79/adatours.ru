@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_ozero_akazhatuba",
+  "stableId": "destination_brazil_ozero_akazhatuba",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/lake-acajatuba/",
+  "sourceFingerprint": "6310003bf2f2cff6d55c565fef54c9e1f39a9cab27b55bad79838315cb2c6064",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/lake-acajatuba.md",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный approved MD прочитан на фиксированном main SHA; stable ID, страна и предмет страницы совпадают с entry. Тип страницы destination не подменяется типом внешнего геообъекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/lake-acajatuba/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP GET: 200; rel=canonical точно совпадает с этим URL; noindex отсутствует; заголовок соответствует объекту."
+    },
+    {
+      "field": "identity.candidate",
+      "sourceUrl": "https://www.geonames.org/7535658",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Карточка Lago de Acajatuba, H LK, Brazil/Amazonas; координата-кандидат -3.11995,-60.49896. Только кандидат до независимой идентификации водоёма."
+    },
+    {
+      "field": "identity.ambiguity",
+      "sourceUrl": "https://mapcarta.com/27416994",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Найдены соседние именования Lago Acajituba и Enseada do Acajituba. Mapcarta производна от GeoNames, поэтому её точка не является независимым подтверждением."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.geonames.org/7535658",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Географический контекст Amazonas, Brazil совпадает с MD, но точные границы и выбор одноимённой водной сущности остаются неразрешенными."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/lake-acajatuba/"
+    ],
+    "findings": [
+      "HTTP 200, canonical совпадает, noindex отсутствует; approved content MD и точная source-index entry сверены."
+    ]
+  },
+  "entityClass": "lake",
+  "alternateNames": [
+    "Lago de Acajatuba",
+    "Озеро Акажатуба"
+  ],
+  "reviewNote": "Нужна независимая картографическая сверка: Lago de Acajatuba (GeoNames 7535658) против соседних Lago Acajituba и Enseada do Acajituba. Публичный текст не задаёт границ. Кандидат координат -3.11995,-60.49896 и ID не внесены в подтвержденные external/location; не использовать координаты деревни, лоджа или плавучей платформы."
+}

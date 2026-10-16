@@ -38,10 +38,18 @@ jobs:
           git fetch --no-tags --depth=1 origin main
           git checkout --detach origin/main
           git rev-parse HEAD > /tmp/catalog-dev/base-main-sha
-          git apply --check /tmp/catalog-dev/source.patch
-          git apply --index /tmp/catalog-dev/source.patch
+          git apply --check --exclude=package.json /tmp/catalog-dev/source.patch
+          git apply --index --exclude=package.json /tmp/catalog-dev/source.patch
           python3 - <<'PY'
           from pathlib import Path
+          import json
+          p=Path('package.json');data=json.loads(p.read_text());s=data['scripts']['build']
+          assert 'tests/multi-country-combinations.test.mjs' in s and 'node scripts/check-multi-country-menu.mjs' in s
+          s=s.replace('tests/multi-country-combinations.test.mjs','tests/multi-country-combinations.test.mjs tests/multi-country-catalog.test.mjs')
+          s=s.replace('node scripts/check-multi-country-menu.mjs','node scripts/check-multi-country-menu.mjs && node scripts/check-multi-country-interests.mjs')
+          data['scripts']['build']='npm run sync:multi-country && '+s
+          data['scripts']['sync:multi-country']='node scripts/sync-multi-country-registries.mjs --write'
+          p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
           for p in Path('src').rglob('*.astro'):
               s=p.read_text(); t=s.replace("/multi-country-catalog'", "/multi-country-catalog.ts'")
               if s!=t:p.write_text(t)
@@ -56,7 +64,7 @@ jobs:
           p=Path('scripts/check-multi-country-menu.mjs');s=p.read_text().replace("assert.ok(expected.size > 0, 'Expected real multi-country combinations');\n",'').replace("const combinationHtml = readFileSync(join(root, names[0], 'index.html'), 'utf8');", "if (names.length) {\nconst combinationHtml = readFileSync(join(root, names[0], 'index.html'), 'utf8');").replace("console.log('Multi-country menu:","}\nconsole.log('Multi-country menu:");p.write_text(s)
           PY
           python3 /tmp/catalog-dev/payload/repair.py
-          git add src scripts tests docs/workflows
+          git add package.json src scripts tests docs/workflows
       - uses: actions/setup-node@v6
         with:
           node-version: 24

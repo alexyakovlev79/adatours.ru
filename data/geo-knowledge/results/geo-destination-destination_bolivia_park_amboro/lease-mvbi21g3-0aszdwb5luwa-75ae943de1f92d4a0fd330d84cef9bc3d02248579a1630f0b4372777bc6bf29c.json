@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_park_amboro",
+  "stableId": "destination_bolivia_park_amboro",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/amboro-national-park/",
+  "sourceFingerprint": "7332a5eaea84be64808f9e4982f50dd82f9a8d2b2192d3819d59fc19ca3f31d9",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "national_park",
+  "external": {
+    "wikidataQid": "Q1631766",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ambor%C3%B3_National_Park"
+    }
+  },
+  "location": {
+    "latitude": -17.7833333333,
+    "longitude": -63.9833333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1631766"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/amboro-national-park/",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прямая HTTP-проверка: 200; H1 совпадает с названием, canonical точно совпадает, noindex отсутствует. Парк Амборо в западной части департамента Санта-Крус соответствует лесной остановке маршрутов через Самаипату."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/amboro-national-park.md",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прочитаны текущие MD и source-index entry; stable ID, status: approved, country_bolivia и смысл страницы совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1631766",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Парк Амборо в западной части департамента Санта-Крус соответствует лесной остановке маршрутов через Самаипату."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1631766",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Парк Амборо в западной части департамента Санта-Крус соответствует лесной остановке маршрутов через Самаипату."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1631766",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Опорная точка парка 17°47′S 63°59′W из P625 и Wikipedia совпадает; не обозначает вход или всю границу парка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ambor%C3%B3_National_Park",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географическая сверка. Опорная точка парка 17°47′S 63°59′W из P625 и Wikipedia совпадает; не обозначает вход или всю границу парка."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1631766",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географические источники относят объект к Боливии; совпадает с countryId MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1631766",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Парк Амборо в западной части департамента Санта-Крус соответствует лесной остановке маршрутов через Самаипату."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ambor%C3%B3_National_Park",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Точная статья о выбранном географическом объекте. Парк Амборо в западной части департамента Санта-Крус соответствует лесной остановке маршрутов через Самаипату."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Парк Амборо в западной части департамента Санта-Крус соответствует лесной остановке маршрутов через Самаипату."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "reason": "Парк Амборо в западной части департамента Санта-Крус соответствует лесной остановке маршрутов через Самаипату.",
+      "selected": "national_park"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Опорная точка парка 17°47′S 63°59′W из P625 и Wikipedia совпадает; не обозначает вход или всю границу парка.",
+      "selected": "-17.7833333333, -63.9833333333"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "Проверенный countryId и внешний источник согласованы.",
+      "selected": "country_bolivia"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Парк Амборо в западной части департамента Санта-Крус соответствует лесной остановке маршрутов через Самаипату.",
+      "selected": "Q1631766"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Парк Амборо в западной части департамента Санта-Крус соответствует лесной остановке маршрутов через Самаипату.",
+      "selected": "https://en.wikipedia.org/wiki/Ambor%C3%B3_National_Park"
+    }
+  ],
+  "reviewNote": null
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_santo_domingo_lima",
+  "stableId": "destination_peru_santo_domingo_lima",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/santo-domingo-lima/",
+  "sourceFingerprint": "67469ae23a84b2361877737d2791e4793ee799d69d0b601710029fe7a6b6a9a0",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q5722131",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Basilica_and_Convent_of_Santo_Domingo,_Lima"
+    },
+    "officialUrl": "https://museoconventosantodomingolima.org/"
+  },
+  "location": {
+    "latitude": -12.044086111111111,
+    "longitude": -77.03192777777778,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5722131"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_peru_lima"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Комплекс Santo Domingo / Nuestra Señora del Rosario в Лиме. Не одноименный монастырь Куско. GeoNames населенных пунктов Santo Domingo отклонены; точный GN и OSM всего комплекса не подтверждены.",
+  "decisionPolicy": "probability-70-v1",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5722131",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Комплекс Santo Domingo / Nuestra Señora del Rosario в Лиме. Не одноименный монастырь Куско. GeoNames населенных пунктов Santo Domingo отклонены; точный GN и OSM всего комплекса не подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5722131",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Точное имя, тип и география совпадают с текущим MD; QID относится к самому объекту."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Basilica_and_Convent_of_Santo_Domingo,_Lima",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Статья о том же объекте в согласованной географии."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://museoconventosantodomingolima.org/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Официальный сайт/раздел самого учреждения, название и местонахождение совпадают."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5722131",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Комплекс Santo Domingo / Nuestra Señora del Rosario в Лиме. Не одноименный монастырь Куско. GeoNames населенных пунктов Santo Domingo отклонены; точный GN и OSM всего комплекса не подтверждены."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5722131",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Объект расположен в Перу."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "sourceUrl": "https://museoconventosantodomingolima.org/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Расположен в городе Лима; stable ID города проверен в source-index."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/santo-domingo-lima/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Публичная страница HTTP 200, точный canonical совпадает. ID, approved, страна, тип и смысл проверены по текущим MD и source-index entry на фиксированном SHA main 829696675d32833cf18ebb696ee714747a28f04b."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Монастырь Санто-Доминго в Лиме",
+      "reason": "Комплекс Santo Domingo / Nuestra Señora del Rosario в Лиме. Не одноименный монастырь Куско. GeoNames населенных пунктов Santo Domingo отклонены; точный GN и OSM всего комплекса не подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5722131",
+      "reason": "Точное имя, тип и география совпадают с текущим MD; QID относится к самому объекту."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "Basilica_and_Convent_of_Santo_Domingo,_Lima",
+      "reason": "Статья о том же объекте в согласованной географии."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "selected": "https://museoconventosantodomingolima.org/",
+      "reason": "Официальный сайт/раздел самого учреждения, название и местонахождение совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-12.044086111111111,-77.03192777777778",
+      "reason": "Комплекс Santo Domingo / Nuestra Señora del Rosario в Лиме. Не одноименный монастырь Куско. GeoNames населенных пунктов Santo Domingo отклонены; точный GN и OSM всего комплекса не подтверждены."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Объект расположен в Перу."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "probability": 99,
+      "selected": "destination_peru_lima",
+      "reason": "Расположен в городе Лима; stable ID города проверен в source-index."
+    }
+  ]
+}

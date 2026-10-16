@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_kuyaba",
+  "stableId": "destination_brazil_kuyaba",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/cuiaba/",
+  "sourceFingerprint": "611a42bb303a06d3b6682c6c5c1dbfe16f8977816efe30e41f2053bcf33809c6",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "external": {
+    "wikidataQid": "Q22067339",
+    "geonamesId": "3465038"
+  },
+  "alternateNames": [
+    "Cuiabá",
+    "Куиаба"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/cuiaba/",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямой HTTP GET: 200, final URL совпадает, HTML canonical совпадает, title соответствует объекту. Stable ID, approved MD, countryId и точная source-index entry сверены в main."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22067339",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Cuiabá: human settlement, Brazil; P131 Cuiabá municipality, P1566 3465038. Имя, тип и страна совпадают с MD."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3465038/cuiaba.html",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Cuiabá, BR, Mato Grosso, P.PPLA; населённый пункт, не ADM2 6323820."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3465038/cuiaba.html",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "WGS84 -15.59611,-56.09667, точка населённого пункта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q170762",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Независимая сверка городской области по P625: 15°35′45″S 56°5′49″W, примерно 43 м от выбранной точки GeoNames. QID муниципалитета не назначается sameAs городскому объекту."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/cuiaba.md",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "В актуальном approved MD countryId=country_brazil; страна согласуется с внешними географическими источниками."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбран Q22067339 (населённый пункт), а не Q170762 (муниципалитет). Координаты GeoNames — опорная точка города, не геометрический центр муниципалитета; P625 муниципалитета (-15.5958333,-56.0969444) отличается примерно на 43 м, без усреднения.",
+  "location": {
+    "latitude": -15.59611,
+    "longitude": -56.09667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3465038/cuiaba.html"
+  }
+}

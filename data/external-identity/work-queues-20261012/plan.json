@@ -47,10 +47,10 @@
     "retries_per_url_in_same_step": 0
   },
   "first_next_task": {
-    "id": "adatours-com-identity-043",
+    "id": "adatours-com-identity-045",
     "step": 3,
     "domain": "adatours.com",
-    "action": "Next 50 objects after cursor 2100, starting https://adatours.ru/brazil/foz-do-iguacu/rafain-dinner-show/tour/; preserve completed batches 001–042.",
+    "action": "Next 50 frozen objects after cursor 2200, starting https://adatours.ru/brazil/place/porto-jofre/tour/; preserve completed batches 001–044 and out-of-order batch 046.",
     "status": "pending",
     "object_limit": 50,
     "queue": "adatours.com.json",
@@ -79,13 +79,14 @@
   "last_checkpoint": {
     "step": 3,
     "domain": "adatours.com",
-    "batch_id": "adatours-com-identity-042",
+    "batch_id": "adatours-com-identity-044",
     "processed_in_batch": 50,
     "confirmed_in_batch": 0,
     "checked_no_confirmed_pair": 50,
-    "verification_cursor": 2100,
-    "report": "adatours-com-identity-042.json",
-    "saved_at": "2026-10-16T15:36:11.669Z"
+    "verification_cursor": 2200,
+    "report": "adatours-com-identity-044.json",
+    "saved_at": "2026-10-16T15:55:18.367Z",
+    "integrated_gap_batch": "adatours-com-identity-043"
   },
   "step_1": {
     "status": "completed",
@@ -132,7 +133,7 @@
       "unconfirmed_elsewhere": 36
     }
   ],
-  "updated_at": "2026-10-16T15:48:09.901Z",
+  "updated_at": "2026-10-16T15:55:18.367Z",
   "completed_reports_pending_sync": [
     {
       "batch_id": "adatours-com-identity-011",

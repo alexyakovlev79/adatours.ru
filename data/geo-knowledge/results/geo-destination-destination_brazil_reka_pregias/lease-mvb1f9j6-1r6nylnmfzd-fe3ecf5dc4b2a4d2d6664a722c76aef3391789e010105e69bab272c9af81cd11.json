@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_reka_pregias",
+  "stableId": "destination_brazil_reka_pregias",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/preguicas-river/",
+  "sourceFingerprint": "ab58796349df4aa0ac57ccec441610614fd80dc6e94385f120d77cf2f89312e3",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "river",
+  "external": {
+    "wikidataQid": "Q3432618",
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Rio_Pregui%C3%A7as",
+      "en": "https://en.wikipedia.org/wiki/Pregui%C3%A7as_River"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/preguicas-river/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Прямой HTTP GET: 200; HTML title соответствует объекту; rel=canonical совпадает с URL задачи. Веб-поисковый opener не смог открыть сайт; доступность проверена прямым запросом."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/preguicas-river.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точный approved MD: stable ID и countryId=country_brazil совпали с claim; тип и описание сверены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/preguicas-river.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Класс выбран по содержанию места, без изменения production MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3432618",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Река штата Maranhão, Brazil, точная карточка Preguiças River."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Rio_Pregui%C3%A7as",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Описана река комплекса Lençóis Maranhenses, течение через Barreirinhas к Атлантике; точные языковые статьи связаны Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3432618",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Официальное португальское написание и английское название."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=-42.906,-2.882,-42.886,-2.862",
+      "checkedAt": "2026-10-16T14:12:56.634Z",
+      "note": "Прямой OSM API: node4278716700 лежит на named waterway Rio Preguiças way76355548, source=Yahoo & Bing. Выбрана точка русла у Barreirinhas, не устье/вход/центр всей реки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3432618",
+      "checkedAt": "2026-10-16T14:12:56.634Z",
+      "note": "Независимая от OSM/Yahoo/Bing точка P625 из GNS: −2.8719444,−42.8966667, примерно 65 м от выбранной точки OSM. Это допустимая сверка положения в русле, а не усреднение."
+    }
+  ],
+  "alternateNames": [
+    "Rio Preguiças",
+    "Preguiças River"
+  ],
+  "reviewNote": "Идентичность реки подтверждена; location — явно выбранная feature_point на русле у Barreirinhas, независимо сопоставленная с GNS/P625. Два GeoNames ID в QID не перенесены без отдельной проверки.",
+  "location": {
+    "latitude": -2.8720273,
+    "longitude": -42.8972481,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/4278716700"
+  }
+}

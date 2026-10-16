@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_aquiraz",
+  "stableId": "destination_brazil_aquiraz",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/aquiraz/",
+  "sourceFingerprint": "a2a1b97eb0ad3bbcfa700b355df5eb7b75ba91ed44418f62482c5a97c58bd31f",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1794121",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Aquiraz"
+    },
+    "geonamesId": "6320042",
+    "osm": {
+      "type": "relation",
+      "id": 302563
+    },
+    "officialUrl": "https://www.aquiraz.ce.gov.br/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/aquiraz.md",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный approved MD прочитан на фиксированном main SHA; stable ID, страна и предмет страницы совпадают с entry. Тип страницы destination не подменяется типом внешнего геообъекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/aquiraz/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP GET: 200; rel=canonical точно совпадает с этим URL; noindex отсутствует; заголовок соответствует объекту."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1794121",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "P31 municipality of Brazil; P17 Brazil; P131 Ceará. Страница курортного направления охватывает муниципалитет с пляжными районами, не отдельный Beach Park или пляж."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Aquiraz",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точная статья Aquiraz, Ceará, Brazil, с муниципальным сайтом. Не Aiquara в Баии."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/6320042/aquiraz.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP 200 GeoNames: A ADM2 Aquiraz, Ceará, административный код 2301000; JSON-LD latitude=-3.90157, longitude=-38.39127."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/302563/full.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Граница Aquiraz admin_level=8, place=municipality, IBGE:GEOCODIGO=2301000, wikidata=Q1794121, source=IBGE."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.aquiraz.ce.gov.br/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Официальный портал Prefeitura de Aquiraz; совпадает с муниципалитетом, не туркомпания."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1794121",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "P17 Brazil, P131 Ceará; страна и административный код согласуются с GN и OSM."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/6320042/aquiraz.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точка точной карточки ADM2 -3.90157,-38.39127 выбрана как representative территории; не центр пляжной полосы и не координаты аквапарка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/302563/full.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Независимая сверка: точка GN находится внутри единственного замкнутого outer муниципального полигона OSM, источник границы IBGE. Принадлежность подтверждена, точность геодезического центра не утверждается."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/aquiraz/"
+    ],
+    "findings": [
+      "HTTP 200, canonical совпадает, noindex отсутствует; approved content MD и точная source-index entry сверены."
+    ]
+  },
+  "entityClass": "municipality",
+  "alternateNames": [
+    "Aquiraz"
+  ],
+  "reviewNote": "Aquiraz здесь муниципальное курортное направление. Опорная точка внутри муниципалитета; не обещает конкретный отель или берег. P625 Wikidata и координата English Wikipedia отличаются; они не усреднялись.",
+  "location": {
+    "latitude": -3.90157,
+    "longitude": -38.39127,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/6320042/aquiraz.html"
+  }
+}

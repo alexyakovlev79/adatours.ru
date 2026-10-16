@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_kapitolio",
+  "stableId": "destination_brazil_kapitolio",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/capitolio/",
+  "sourceFingerprint": "5bf137540ee2a72a5f24744fca040cb29cd8c787b1d0bf3f6b8c111802b61256",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "composite",
+  "entityClass": "tourism_area",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/capitolio/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTTP GET: 200, canonical совпадает, H1 соответствует сущности, noindex отсутствует. Текущие production MD и source-index entry проверены; stable ID, страна Brazil и approved совпадают."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/capitolio.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Текущий production MD: countryId country_brazil; назначение объекта сверено с внешними источниками."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/capitolio.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Существующий production MD: destinationType region; описание каньонов, водопадов и озера Furnas, без утверждения границ муниципалитета."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1257195",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Кандидат Capitólio — municipality Minas Gerais, Brazil, P625 20°36′54″S,46°3′0″W. Не доказано тождество с редакционным туристическим районом."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://www.capitolio.mg.gov.br/portal/servicos/1005/a-historia-da-cidade/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Официальный муниципальный источник описывает город/муниципалитет Capitólio, не фиксирует границы более широкой подборки каньонов Ada Tours."
+    }
+  ],
+  "reviewNote": "Production destinationType=region, текст о водных поездках по каньонам Фурнаш и окрестностям. Q1257195 обозначает муниципалитет Capitólio; весь туристический район/каньоны не доказаны как тождественные ему. Не присвоен QID муниципалитета, озера или каньона вместо всей страницы. Определить границы паспорта: муниципалитет либо редакционная туристическая область с отдельными компонентами. Единая координата не назначена."
+}

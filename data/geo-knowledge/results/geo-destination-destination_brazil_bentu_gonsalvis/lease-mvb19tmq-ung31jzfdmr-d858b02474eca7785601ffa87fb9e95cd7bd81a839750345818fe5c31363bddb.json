@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_bentu_gonsalvis",
+  "stableId": "destination_brazil_bentu_gonsalvis",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/bento-goncalves/",
+  "sourceFingerprint": "81a1f93ae500e1b45cc27e101391cf2e3e14965b46ab8ac4ae901b334f516aac",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/bento-goncalves.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Проверены approved MD, stable ID, страна и тип; Git blob 7afeaa826e2177bdbef371b4240e65c39e4411a9; соответствующая source-index entry имеет тот же ID/canonical URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/bento-goncalves/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прямой HTTP-запрос: 200, конечный URL и link rel=canonical совпадают, noindex в head отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q548652",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Q548652: Bento Gonçalves, город/муниципалитет Rio Grande do Sul, Brazil; совпадают страна и объект. Город/муниципалитет, не человек Bento Gonçalves da Silva (Q1789375), не аэропорт и не отдельная винодельня."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bento_Gon%C3%A7alves,_Rio_Grande_do_Sul",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Точная статья о Bento Gonçalves в Rio Grande do Sul, Brazil. Проверена идентичность; координаты статьи не используются автоматически."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3470073/bento-goncalves.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames 3470073: населенный пункт/городская административная резиденция Bento Gonçalves, Rio Grande do Sul, Brazil. Отделен от одноименного ADM2. SHA-256 прочитанного HTML cf54221c69f9e1df637612cab46f5cc1bdc07582a84b2680e6145144a1f04986."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3470073/bento-goncalves.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "WGS84: latitude -29.17139, longitude -51.51917; городская опорная точка записи PPL/PPLA/PPLA2, не границы и не адрес входа. SHA-256 HTML cf54221c69f9e1df637612cab46f5cc1bdc07582a84b2680e6145144a1f04986."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q548652",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Независимая сверка с P625 -29.170833333333334, -51.51888888888889: расстояние 68 м, тот же населенный пункт. Точки не усреднялись. Город/муниципалитет, не человек Bento Gonçalves da Silva (Q1789375), не аэропорт и не отдельная винодельня."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.geonames.org/3470073/bento-goncalves.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames hierarchy: Brazil > Rio Grande do Sul > одноименный муниципалитет > населенный пункт."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/bento-goncalves/"
+    ],
+    "findings": [
+      "HTTP 200; canonical совпадает; статус MD approved.",
+      "Город/муниципалитет, не человек Bento Gonçalves da Silva (Q1789375), не аэропорт и не отдельная винодельня.",
+      "GeoNames/Wikidata: 68 м между опорными точками."
+    ]
+  },
+  "entityClass": "city_and_municipality",
+  "external": {
+    "wikidataQid": "Q548652",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Bento_Gon%C3%A7alves,_Rio_Grande_do_Sul"
+    },
+    "geonamesId": "3470073"
+  },
+  "alternateNames": [
+    "Bento Gonçalves"
+  ],
+  "location": {
+    "latitude": -29.17139,
+    "longitude": -51.51917,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3470073/bento-goncalves.html"
+  },
+  "reviewNote": "Город/муниципалитет, не человек Bento Gonçalves da Silva (Q1789375), не аэропорт и не отдельная винодельня. Координата обозначает городскую опорную точку из GeoNames, не вычисленный центроид муниципальных границ."
+}

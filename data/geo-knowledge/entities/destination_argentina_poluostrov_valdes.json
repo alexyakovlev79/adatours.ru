@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_poluostrov_valdes",
+  "stableId": "destination_argentina_poluostrov_valdes",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/valdes-peninsula/",
+  "sourceFingerprint": "4c52675e15b277d67f296975bdb79f30abbadcc0d9fd4b3ed9d7ca7e2443674f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "alternateNames": [
+    "Península Valdés"
+  ],
+  "external": {
+    "wikidataQid": "Q213237",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Valdes_Peninsula"
+    }
+  },
+  "location": {
+    "latitude": -42.5,
+    "longitude": -64,
+    "pointRole": "representative",
+    "coordinateSource": "https://whc.unesco.org/en/list/937/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/cdd8b523a809da44458be6d763aa2c89541d2141/src/content/destinations/valdes-peninsula.md",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Полуостров Вальдес в Чубуте, а не одноименная бухта Калета-Вальдес или отдельная колония животных."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/valdes-peninsula/",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Проверено прямым HTTP GET: 200, self-canonical, заголовок совпадает с объектом; stable ID/contentPath/source-index сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q213237",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Полуостров Вальдес в Чубуте, а не одноименная бухта Калета-Вальдес или отдельная колония животных."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Valdes_Peninsula",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Полуостров Вальдес в Чубуте, а не одноименная бухта Калета-Вальдес или отдельная колония животных."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://whc.unesco.org/en/list/937/",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Выбрана опорная точка UNESCO S42 30 0 W64 0 0; P625 Q213237 (-42.5,-63.933331) и карта номинации подтверждают тот же полуостров. Это не въезд и не расчетный центроид."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q213237",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Полуостров Вальдес в Чубуте, а не одноименная бухта Калета-Вальдес или отдельная колония животных."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Valdes_Peninsula",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Полуостров Вальдес в Чубуте, а не одноименная бухта Калета-Вальдес или отдельная колония животных."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Valdes_Peninsula",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Независимая сверка географического контекста; Выбрана опорная точка UNESCO S42 30 0 W64 0 0; P625 Q213237 (-42.5,-63.933331) и карта номинации подтверждают тот же полуостров. Это не въезд и не расчетный центроид."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Valdes_Peninsula",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Страна подтверждена точным объектом и MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Península Valdés",
+      "reason": "Полуостров Вальдес в Чубуте, а не одноименная бухта Калета-Вальдес или отдельная колония животных."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Península Valdés",
+      "reason": "Местное/английское название точно установленного объекта."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-42.5, -64; representative",
+      "reason": "Выбрана опорная точка UNESCO S42 30 0 W64 0 0; P625 Q213237 (-42.5,-63.933331) и карта номинации подтверждают тот же полуостров. Это не въезд и не расчетный центроид."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q213237",
+      "reason": "Полуостров Вальдес в Чубуте, а не одноименная бухта Калета-Вальдес или отдельная колония животных."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Valdes_Peninsula",
+      "reason": "Точная статья об установленном основном референте, не disambiguation."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Страна/содержащий полуостров установлены по географии объекта."
+    }
+  ],
+  "reviewNote": null
+}

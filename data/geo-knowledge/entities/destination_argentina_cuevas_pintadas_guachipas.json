@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_cuevas_pintadas_guachipas",
+  "stableId": "destination_argentina_cuevas_pintadas_guachipas",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/cuevas-pintadas-guachipas/",
+  "sourceFingerprint": "24129bbf2f75a340e322c7d7330d0cad79107b87e5df6fdbe4619c069a668bfd",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://www.argentina.gob.ar/node/404285"
+  },
+  "location": {
+    "latitude": -25.7005556,
+    "longitude": -65.5069444,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.montero.org.mx/cavernas/prospeccion_en_los_andes"
+  },
+  "alternateNames": [
+    "Cuevas Pintadas de Guachipas",
+    "Cerro Cuevas Pintadas"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_argentina_guachipas"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/cuevas-pintadas-guachipas/",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "HTTP 200, canonical совпадает. MD approved и точная entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed. Археологический комплекс скальных укрытий Cerro Cuevas Pintadas в Лас-Хунтас, Сальта. Совпадают название, порода скал и характер рисунков. Не поселок Гуачипас, его центр интерпретации или Cerro Colorado."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.argentina.gob.ar/node/404285",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Археологический комплекс скальных укрытий Cerro Cuevas Pintadas в Лас-Хунтас, Сальта. Совпадают название, порода скал и характер рисунков. Не поселок Гуачипас, его центр интерпретации или Cerro Colorado."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.argentina.gob.ar/node/404285",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Специальная карточка объекта на официальном туристическом/государственном портале. Хранится как officialUrl, а не безусловный sameAs портала."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.argentina.gob.ar/node/404285",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Проверенные именования: Cuevas Pintadas de Guachipas; Cerro Cuevas Pintadas."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.montero.org.mx/cavernas/prospeccion_en_los_andes",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Полевой отчет Montero указывает вершину Cerro Cuevas Pintadas: 25°42′02″S 65°30′25″W. Она выбрана как representative комплекса, не вход и не отдельный алеро. Декрет 349/1999 дает грубую точку 25°42′S 65°29′W, примерно в 2,4 км восточнее; не усредняется. Координаты около 25°28′S относятся к иному положению и отклонены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.argentina.gob.ar/normativa/nacional/decreto-349-1999-57084/texto",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Статья 2(d) локализует памятник в Лас-Хунтас, Сальта, 25°42′S 65°29′W. Выбрана точка вершины из полевого отчета, расхождение сохранено."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.argentina.gob.ar/node/404285",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Аргентина подтверждается географией внешнего источника и countryId MD."
+    },
+    {
+      "field": "relationships.destination_argentina_guachipas",
+      "sourceUrl": "https://www.argentina.gob.ar/node/404285",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Подтвержденная пространственная/экскурсионная связь; relatedPlace не означает нахождение внутри поселка или площади."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Археологический комплекс скальных укрытий Cerro Cuevas Pintadas в Лас-Хунтас, Сальта. Совпадают название, порода скал и характер рисунков. Не поселок Гуачипас, его центр интерпретации или Cerro Colorado. Полевой отчет Montero указывает вершину Cerro Cuevas Pintadas: 25°42′02″S 65°30′25″W. Она выбрана как representative комплекса, не вход и не отдельный алеро. Декрет 349/1999 дает грубую точку 25°42′S 65°29′W, примерно в 2,4 км восточнее; не усредняется. Координаты около 25°28′S относятся к иному положению и отклонены. Точный Wikidata/GeoNames для комплекса после поиска не установлен. Q1016088 относится к поселку; статьи Q141318781/Q141268228 — научные публикации, не сам памятник.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Cuevas Pintadas de Guachipas",
+      "reason": "Археологический комплекс скальных укрытий Cerro Cuevas Pintadas в Лас-Хунтас, Сальта. Совпадают название, порода скал и характер рисунков. Не поселок Гуачипас, его центр интерпретации или Cerro Colorado."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 96,
+      "selected": "https://www.argentina.gob.ar/node/404285",
+      "reason": "Точное название и местоположение в официальной карточке."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Cuevas Pintadas de Guachipas; Cerro Cuevas Pintadas",
+      "reason": "Именования взяты из точных карточек и описаний."
+    },
+    {
+      "field": "location",
+      "probability": 88,
+      "selected": "-25.700555555555553, -65.50694444444444 (representative)",
+      "reason": "Полевой отчет Montero указывает вершину Cerro Cuevas Pintadas: 25°42′02″S 65°30′25″W. Она выбрана как representative комплекса, не вход и не отдельный алеро. Декрет 349/1999 дает грубую точку 25°42′S 65°29′W, примерно в 2,4 км восточнее; не усредняется. Координаты около 25°28′S относятся к иному положению и отклонены."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 97,
+      "selected": "country_argentina",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    },
+    {
+      "field": "relationships.destination_argentina_guachipas",
+      "probability": 97,
+      "selected": "destination_argentina_guachipas",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 0,
+      "selected": "omitted",
+      "reason": "Точный Wikidata/GeoNames для комплекса после поиска не установлен. Q1016088 относится к поселку; статьи Q141318781/Q141268228 — научные публикации, не сам памятник."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 0,
+      "selected": "omitted",
+      "reason": "Точный ID для самого комплекса не найден; поле пропущено."
+    }
+  ]
+}

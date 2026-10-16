@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_arrayanes_forest",
+  "stableId": "destination_argentina_arrayanes_forest",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/arrayanes-forest/",
+  "sourceFingerprint": "22136a742015271eaf2b27724a1ff66ea1812db3f9b2814e7f367ff2a6d8bc11",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "forest",
+  "alternateNames": [
+    "Bosque de Arrayanes",
+    "Arrayan forest"
+  ],
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 257361197
+    }
+  },
+  "location": {
+    "latitude": -40.8595,
+    "longitude": -71.6193,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/es/W257361197"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "OSM way 257361197 natural=wood/name=Bosque de Arrayanes подтверждён API. Координата из карты контура — опорная точка леса, не юридический центр парка. Q829012 относится к охраняемой территории, поэтому не присвоен лесу.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://nahuelhuapi.gov.ar/istmo-de-quetrihue-al-bosque-de-arrayanes/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Лес миртов на южной оконечности полуострова Кетриуэ; контекст озёрной поездки с островом Виктория. Это лес внутри Los Arrayanes, не весь национальный парк и не небольшой лес у Playa Moreno."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/arrayanes-forest/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Прямой HTTPS GET: 200; H1 совпадает с названием, canonical совпадает с job URL. Точный MD approved и source-index entry сверены на SHA cdd8b523a809da44458be6d763aa2c89541d2141."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://nahuelhuapi.gov.ar/istmo-de-quetrihue-al-bosque-de-arrayanes/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Лес миртов на южной оконечности полуострова Кетриуэ; контекст озёрной поездки с островом Виктория. Это лес внутри Los Arrayanes, не весь национальный парк и не небольшой лес у Playa Moreno."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://nahuelhuapi.gov.ar/istmo-de-quetrihue-al-bosque-de-arrayanes/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/257361197.json",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Лес миртов на южной оконечности полуострова Кетриуэ; контекст озёрной поездки с островом Виктория. Это лес внутри Los Arrayanes, не весь национальный парк и не небольшой лес у Playa Moreno."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/es/W257361197",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "OSM way 257361197 natural=wood/name=Bosque de Arrayanes подтверждён API. Координата из карты контура — опорная точка леса, не юридический центр парка. Q829012 относится к охраняемой территории, поэтому не присвоен лесу."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://nahuelhuapi.gov.ar/istmo-de-quetrihue-al-bosque-de-arrayanes/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Независимая сверка географического контекста и роли точки: Лес миртов на южной оконечности полуострова Кетриуэ; контекст озёрной поездки с островом Виктория. Это лес внутри Los Arrayanes, не весь национальный парк и не небольшой лес у Playa Moreno."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://nahuelhuapi.gov.ar/istmo-de-quetrihue-al-bosque-de-arrayanes/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Миртовый лес Арраянес",
+      "reason": "Лес миртов на южной оконечности полуострова Кетриуэ; контекст озёрной поездки с островом Виктория. Это лес внутри Los Arrayanes, не весь национальный парк и не небольшой лес у Playa Moreno."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "forest",
+      "reason": "Лес миртов на южной оконечности полуострова Кетриуэ; контекст озёрной поездки с островом Виктория. Это лес внутри Los Arrayanes, не весь национальный парк и не небольшой лес у Playa Moreno."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Bosque de Arrayanes; Arrayan forest",
+      "reason": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "selected": "way/257361197",
+      "reason": "Лес миртов на южной оконечности полуострова Кетриуэ; контекст озёрной поездки с островом Виктория. Это лес внутри Los Arrayanes, не весь национальный парк и не небольшой лес у Playa Moreno."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-40.8595, -71.6193",
+      "reason": "OSM way 257361197 natural=wood/name=Bosque de Arrayanes подтверждён API. Координата из карты контура — опорная точка леса, не юридический центр парка. Q829012 относится к охраняемой территории, поэтому не присвоен лесу."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    },
+    {
+      "field": "candidate.wikidataQid",
+      "probability": 45,
+      "selected": "Q829012",
+      "reason": "Национальный парк шире конкретного миртового леса; точный OSM-контур предпочтительнее. QID парка опущен."
+    }
+  ]
+}

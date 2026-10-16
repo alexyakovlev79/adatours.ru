@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_nacionalnyj_park_los_kardones",
+  "stableId": "destination_argentina_nacionalnyj_park_los_kardones",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/los-cardones-national-park/",
+  "sourceFingerprint": "be19a30cdcfb9bad01bb07f459296c4ba0f66805f3e7409e378fd4c37e1a4202",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "NationalPark",
+  "alternateNames": [
+    "Parque Nacional Los Cardones"
+  ],
+  "external": {
+    "wikidataQid": "Q829474",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Los_Cardones_National_Park",
+      "es": "https://es.wikipedia.org/wiki/Parque_nacional_Los_Cardones"
+    },
+    "officialUrl": "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-los-cardones"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/los-cardones-national-park/",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "HTTP 200; H1 совпадает. Сверены stable ID, canonical URL, approved MD и точная source-index запись. Национальный парк Лос-Кардонес в Сальте с высокогорными кактусами, подтвержден официальной APN."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q829474",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "NationalPark соответствует основному объекту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q829474",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Местное имя основного объекта: Parque Nacional Los Cardones."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q829474",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Страна объекта/выбранного аргентинского туристического референта — Аргентина; соответствует countryId в MD и source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q829474",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Национальный парк Лос-Кардонес в Сальте с высокогорными кактусами, подтвержден официальной APN."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q829474",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Точные enwiki/eswiki sitelinks выбранного QID."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q829474",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "P625 выбранной географической сущности. Опорная точка с ролью representative, без заявления о точном центре площадного объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-los-cardones",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Точная официальная карточка объекта, проверены заголовок и география."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Parque Nacional Los Cardones",
+      "reason": "Национальный парк Лос-Кардонес в Сальте с высокогорными кактусами, подтвержден официальной APN."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "NationalPark",
+      "reason": "Тип установлен по MD и географической карточке."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Parque Nacional Los Cardones",
+      "reason": "Каноническое местное название подтверждено внешним источником."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Согласованы страна текущей страницы и внешний географический источник."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q829474",
+      "reason": "Национальный парк Лос-Кардонес в Сальте с высокогорными кактусами, подтвержден официальной APN."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Los_Cardones_National_Park\",\"es\":\"https://es.wikipedia.org/wiki/Parque_nacional_Los_Cardones\"}",
+      "reason": "Sitelinks относятся к тому же объекту."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "{\"latitude\":-25.12533333,\"longitude\":-66.18166667,\"pointRole\":\"representative\",\"coordinateSource\":\"https://www.wikidata.org/wiki/Q829474\"}",
+      "reason": "Выбрана точка с указанной ролью и источником; альтернативные координаты не усреднялись."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.argentina.gob.ar/parquesnacionales/region-noroeste/parque-nacional-los-cardones",
+      "reason": "Карточка национальной парковой службы/официального туристического ведомства."
+    }
+  ],
+  "reviewNote": null,
+  "location": {
+    "latitude": -25.12533333,
+    "longitude": -66.18166667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q829474"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_walichu_caves",
+  "stableId": "destination_argentina_walichu_caves",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/walichu-caves/",
+  "sourceFingerprint": "859e3526e67b660ec50474ca1705168ae4f26a8f014b38ca5219eb1b23ec4716",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://puntawalichu.com/",
+    "osm": {
+      "type": "node",
+      "id": 6240102285
+    }
+  },
+  "location": {
+    "latitude": -50.29483,
+    "longitude": -72.20257,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/N6240102285"
+  },
+  "alternateNames": [
+    "Punta Walichu",
+    "Cuevas de Walichu",
+    "Cuevas de Gualicho"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/walichu-caves/",
+      "checkedAt": "2026-10-16T20:35:46.897Z",
+      "note": "HTTP 200, точный canonical совпал; approved MD/stable ID проверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed. Археологический комплекс Punta Walichu (Cuevas de Gualicho) на берегу Lago Argentino у El Calafate, Santa Cruz; не иная пещера Гуаличо."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://puntawalichu.com/",
+      "checkedAt": "2026-10-16T20:35:46.897Z",
+      "note": "Археологический комплекс Punta Walichu (Cuevas de Gualicho) на берегу Lago Argentino у El Calafate, Santa Cruz; не иная пещера Гуаличо."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.elcalafate.tur.ar/in-the-city-of-el-calafate/punta-walichu-en.htm",
+      "checkedAt": "2026-10-16T20:35:46.897Z",
+      "note": "Археологический комплекс Punta Walichu (Cuevas de Gualicho) на берегу Lago Argentino у El Calafate, Santa Cruz; не иная пещера Гуаличо."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://puntawalichu.com/",
+      "checkedAt": "2026-10-16T20:35:46.897Z",
+      "note": "Официальная страница именно выбранного места. Не автоматический sameAs."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/N6240102285",
+      "checkedAt": "2026-10-16T20:35:46.897Z",
+      "note": "OSM node 6240102285 именован Punta Walichu (Cuevas de Gualicho), tourism=museum, Santa Cruz. Картографическая точка OSM обозначает туристический/музейный комплекс Punta Walichu. Роль representative: не координата каждого скального укрытия и не граница заповедника. Официальный сайт и муниципальный туристический портал подтверждают археологическое место; точный QID после поиска не подтвержден."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/N6240102285",
+      "checkedAt": "2026-10-16T20:35:46.897Z",
+      "note": "Картографическая точка OSM обозначает туристический/музейный комплекс Punta Walichu. Роль representative: не координата каждого скального укрытия и не граница заповедника. Официальный сайт и муниципальный туристический портал подтверждают археологическое место; точный QID после поиска не подтвержден."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.elcalafate.tur.ar/in-the-city-of-el-calafate/punta-walichu-en.htm",
+      "checkedAt": "2026-10-16T20:35:46.897Z",
+      "note": "Археологический комплекс Punta Walichu (Cuevas de Gualicho) на берегу Lago Argentino у El Calafate, Santa Cruz; не иная пещера Гуаличо. Картографическая точка OSM обозначает туристический/музейный комплекс Punta Walichu. Роль representative: не координата каждого скального укрытия и не граница заповедника. Официальный сайт и муниципальный туристический портал подтверждают археологическое место; точный QID после поиска не подтвержден."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://puntawalichu.com/",
+      "checkedAt": "2026-10-16T20:35:46.897Z",
+      "note": "Местные названия объекта: Punta Walichu; Cuevas de Walichu; Cuevas de Gualicho."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.elcalafate.tur.ar/in-the-city-of-el-calafate/punta-walichu-en.htm",
+      "checkedAt": "2026-10-16T20:35:46.897Z",
+      "note": "Подтверждена географическая связь containedInPlace с country_argentina. Археологический комплекс Punta Walichu (Cuevas de Gualicho) на берегу Lago Argentino у El Calafate, Santa Cruz; не иная пещера Гуаличо."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Punta Walichu",
+      "reason": "Археологический комплекс Punta Walichu (Cuevas de Gualicho) на берегу Lago Argentino у El Calafate, Santa Cruz; не иная пещера Гуаличо."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 20,
+      "reason": "Точная карточка археологических пещер Punta Walichu не подтверждена при интернет-поиске; QID соседнего города/озера не подставляется."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://puntawalichu.com/",
+      "reason": "Сайт самого комплекса либо точная карточка официального городского туристического портала."
+    },
+    {
+      "field": "external.osm",
+      "probability": 92,
+      "selected": "node/6240102285",
+      "reason": "Основной референт — археологический туристический комплекс, обозначенный узлом OSM; не отдельное природное укрытие."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "-50.29483, -72.20257; representative",
+      "reason": "Картографическая точка OSM обозначает туристический/музейный комплекс Punta Walichu. Роль representative: не координата каждого скального укрытия и не граница заповедника. Официальный сайт и муниципальный туристический портал подтверждают археологическое место; точный QID после поиска не подтвержден."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Punta Walichu; Cuevas de Walichu; Cuevas de Gualicho",
+      "reason": "Названия установлены из прочитанного источника."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Географическое положение подтверждено MD и внешним источником; containedInPlace."
+    }
+  ],
+  "reviewNote": "Картографическая точка OSM обозначает туристический/музейный комплекс Punta Walichu. Роль representative: не координата каждого скального укрытия и не граница заповедника. Официальный сайт и муниципальный туристический портал подтверждают археологическое место; точный QID после поиска не подтвержден."
+}

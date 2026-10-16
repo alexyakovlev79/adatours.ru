@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_puerto_madrin",
+  "stableId": "destination_argentina_puerto_madrin",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/puerto-madryn/",
+  "sourceFingerprint": "4b22a91feb10b667f1e8aa5dfdbd7fbfdd18f27bcf050d458dfc3f60c2debc43",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q748028",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Puerto_Madryn"
+    },
+    "geonamesId": "3840092",
+    "officialUrl": "https://madryn.travel/"
+  },
+  "location": {
+    "latitude": -42.76848,
+    "longitude": -65.03827,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3840092/"
+  },
+  "alternateNames": [
+    "Puerto Madryn"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/puerto-madryn/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен живой URL: HTTP 200, совпадающий canonical, название и доступность; MD approved, stable ID и countryId сверены с точной entry на main cdd8b523a809da44458be6d763aa2c89541d2141. Город у залива Нуэво в Чубуте; Вальдес и Пунта-Томбо — выезды. Основная идентичность — Пуэрто-Мадрин, не полуостров и не объект UNESCO."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://madryn.travel/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Город у залива Нуэво в Чубуте; Вальдес и Пунта-Томбо — выезды. Основная идентичность — Пуэрто-Мадрин, не полуостров и не объект UNESCO."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q748028",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверены название, страна и тип выбранного объекта. Город у залива Нуэво в Чубуте; Вальдес и Пунта-Томбо — выезды. Основная идентичность — Пуэрто-Мадрин, не полуостров и не объект UNESCO."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Puerto_Madryn",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная статья о выбранной горе/городе; соответствует заголовку и географии страницы, не статья неоднозначностей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3840092/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная карточка населенного пункта и его страна; ID сверяется с Wikidata P1566. Для Барилоче выбран PPLA3 7647007, а не ADM3."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://madryn.travel/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен официальный муниципальный/туристический сайт выбранного направления. Это информационный officialUrl; не доказательство тождества домена и природного/городского объекта для sameAs."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q748028",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверенные локальные и английские названия выбранной карточки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3840092/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata (-42.77297,-65.03661) отличается в пределах городской территории; ADM-данные Wikidata не импортируются."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q748028",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Страна выбранного объекта в Wikidata P17 совпадает с countryId точного MD/entry."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Город у залива Нуэво в Чубуте; Вальдес и Пунта-Томбо — выезды. Основная идентичность — Пуэрто-Мадрин, не полуостров и не объект UNESCO. Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata (-42.77297,-65.03661) отличается в пределах городской территории; ADM-данные Wikidata не импортируются.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Puerto Madryn",
+      "reason": "Город у залива Нуэво в Чубуте; Вальдес и Пунта-Томбо — выезды. Основная идентичность — Пуэрто-Мадрин, не полуостров и не объект UNESCO."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q748028",
+      "reason": "Город у залива Нуэво в Чубуте; Вальдес и Пунта-Томбо — выезды. Основная идентичность — Пуэрто-Мадрин, не полуостров и не объект UNESCO."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Puerto_Madryn",
+      "reason": "Статья соответствует основному именованному референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3840092",
+      "reason": "Совпадают имя, страна и основной референт; идентификатор приведен точной карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "selected": "https://madryn.travel/",
+      "reason": "Портал прямо представляет выбранный объект или его официальный туризм."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Puerto Madryn",
+      "reason": "Названия совпадают в точной внешней карточке и/или на официальном портале."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-42.76848, -65.03827 (settlement_center)",
+      "reason": "Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata (-42.77297,-65.03661) отличается в пределах городской территории; ADM-данные Wikidata не импортируются."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна подтверждена внешней карточкой и текущим сайтом."
+    }
+  ]
+}

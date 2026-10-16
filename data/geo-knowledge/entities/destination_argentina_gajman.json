@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_gajman",
+  "stableId": "destination_argentina_gajman",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/gaiman/",
+  "sourceFingerprint": "3c5bb2ab0909514e93fd83a26359900fb46f1a2ffe54ac424eac57a7ed306e35",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q106055",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Gaiman"
+    },
+    "geonamesId": "3855284"
+  },
+  "location": {
+    "latitude": -43.2909,
+    "longitude": -65.4977,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3855284/gaiman.html"
+  },
+  "alternateNames": [
+    "Gaiman"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/gaiman/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "HTTP 200; точный canonical совпал с очередью, stable ID и approved MD сверены на main cdd8b523a809da44458be6d763aa2c89541d2141. Город Гайман в нижней долине Чубута с валлийским наследием; не административный департамент и не железнодорожная станция как отдельный объект."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Gaiman",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Город Гайман в нижней долине Чубута с валлийским наследием; не административный департамент и не железнодорожная станция как отдельный объект."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q106055",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Город Гайман в нижней долине Чубута с валлийским наследием; не административный департамент и не железнодорожная станция как отдельный объект."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Gaiman",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Город Гайман в нижней долине Чубута с валлийским наследием; не административный департамент и не железнодорожная станция как отдельный объект."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q106055",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "GeoNames ID 3855284 связан с точной сущностью в Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3855284/gaiman.html",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Прочитаны имя, код объекта и административная иерархия GeoNames."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3855284/gaiman.html",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Выбрана точка населенного пункта GeoNames. Минутная P625 (-43.283333,-65.483333) примерно на 1,5 км северо-восточнее; это справочные точки одного города, не усреднены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Gaiman",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Сверка географического контекста: Город Гайман в нижней долине Чубута с валлийским наследием; не административный департамент и не железнодорожная станция как отдельный объект. Выбрана точка населенного пункта GeoNames. Минутная P625 (-43.283333,-65.483333) примерно на 1,5 км северо-восточнее; это справочные точки одного города, не усреднены."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Gaiman",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Местное название: Gaiman."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Gaiman",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Место находится в Аргентине; соответствует country_argentina в актуальном MD."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Gaiman",
+      "reason": "Город Гайман в нижней долине Чубута с валлийским наследием; не административный департамент и не железнодорожная станция как отдельный объект."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q106055",
+      "reason": "Название, страна, география и референт страницы совпали; конкурирующие одноименные сущности исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Gaiman",
+      "reason": "Точная статья о выбранном месте, согласуется с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3855284",
+      "reason": "Идентификатор относится к выбранному месту, а не к одноименной административной территории."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-43.2909, -65.4977; settlement_center",
+      "reason": "Выбрана точка населенного пункта GeoNames. Минутная P625 (-43.283333,-65.483333) примерно на 1,5 км северо-восточнее; это справочные точки одного города, не усреднены."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Gaiman",
+      "reason": "Название прямо используется в прочитанном внешнем источнике."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна совпадает в MD и внешнем источнике."
+    }
+  ],
+  "reviewNote": "Выбрана точка населенного пункта GeoNames. Минутная P625 (-43.283333,-65.483333) примерно на 1,5 км северо-восточнее; это справочные точки одного города, не усреднены."
+}

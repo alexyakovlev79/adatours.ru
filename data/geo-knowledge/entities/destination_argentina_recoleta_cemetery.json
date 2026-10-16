@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_recoleta_cemetery",
+  "stableId": "destination_argentina_recoleta_cemetery",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/recoleta-cemetery/",
+  "sourceFingerprint": "7b8947f7c65a282cfa308c611fc0301119e3b52890087cc0e9bf422d96d9adc3",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 183842128
+    },
+    "wikidataQid": "Q831322",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/La_Recoleta_Cemetery"
+    },
+    "geonamesId": "7576103"
+  },
+  "alternateNames": [
+    "Cementerio de la Recoleta"
+  ],
+  "location": {
+    "latitude": -34.588055555555556,
+    "longitude": -58.393055555555556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q831322"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_argentina_recoleta"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_argentina_basilica_del_pilar"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/20a7fd65b9538b8fefe6ab3881997fe22206a1ed/src/content/destinations/recoleta-cemetery.md",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Кладбище Реколета на Junín 1760, Буэнос-Айрес; отдельный объект внутри района Реколета, не весь район и не соседняя базилика."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-recoleta",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Кладбище Реколета на Junín 1760, Буэнос-Айрес; отдельный объект внутри района Реколета, не весь район и не соседняя базилика."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/recoleta-cemetery/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Прямой HTTP GET 200; self-canonical и заголовок соответствуют объекту. Stable ID, текущий MD и точная source-index entry сверены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/183842128.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первичный OSM API прочитан; имя, класс, контекст совпадают: Кладбище Реколета на Junín 1760, Буэнос-Айрес; отдельный объект внутри района Реколета, не весь район и не соседняя базилика."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q831322",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Местное/английское название объекта подтверждено карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q831322",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "P625 дает точку территории кладбища; контур OSM имеет landuse=cemetery и тот же QID. Роль representative, не адрес конкретной могилы или входа."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-recoleta",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Независимая сверка объекта и географического положения; не утверждается совпадение координат до последнего знака."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q831322",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Кладбище Реколета на Junín 1760, Буэнос-Айрес; отдельный объект внутри района Реколета, не весь район и не соседняя базилика."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/La_Recoleta_Cemetery",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Кладбище Реколета на Junín 1760, Буэнос-Айрес; отдельный объект внутри района Реколета, не весь район и не соседняя базилика."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q831322",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "GeoNames ID точного объекта; не соседней достопримечательности."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-recoleta",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Объект находится в Аргентине."
+    },
+    {
+      "field": "relationships.destination_argentina_recoleta",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/cementerio-de-la-recoleta",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Кладбище/базилика находятся в районе Реколета."
+    },
+    {
+      "field": "relationships.destination_argentina_basilica_del_pilar",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q831322",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Базилика — соседний самостоятельный объект."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Cementerio de la Recoleta",
+      "reason": "Кладбище Реколета на Junín 1760, Буэнос-Айрес; отдельный объект внутри района Реколета, не весь район и не соседняя базилика."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/183842128",
+      "reason": "Кладбище Реколета на Junín 1760, Буэнос-Айрес; отдельный объект внутри района Реколета, не весь район и не соседняя базилика."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Cementerio de la Recoleta",
+      "reason": "Название основного референта из точной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-34.588055555555556, -58.393055555555556; representative",
+      "reason": "P625 дает точку территории кладбища; контур OSM имеет landuse=cemetery и тот же QID. Роль representative, не адрес конкретной могилы или входа."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q831322",
+      "reason": "Кладбище Реколета на Junín 1760, Буэнос-Айрес; отдельный объект внутри района Реколета, не весь район и не соседняя базилика."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/La_Recoleta_Cemetery",
+      "reason": "Точная Wikipedia-статья об основном референте."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "7576103",
+      "reason": "Кладбище Реколета на Junín 1760, Буэнос-Айрес; отдельный объект внутри района Реколета, не весь район и не соседняя базилика."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Объект находится в Аргентине."
+    },
+    {
+      "field": "relationships.destination_argentina_recoleta",
+      "probability": 99,
+      "selected": "containedInPlace destination_argentina_recoleta",
+      "reason": "Кладбище/базилика находятся в районе Реколета."
+    },
+    {
+      "field": "relationships.destination_argentina_basilica_del_pilar",
+      "probability": 99,
+      "selected": "relatedPlace destination_argentina_basilica_del_pilar",
+      "reason": "Базилика — соседний самостоятельный объект."
+    }
+  ],
+  "reviewNote": null
+}

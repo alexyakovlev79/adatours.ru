@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_plaza_san_martin",
+  "stableId": "destination_argentina_plaza_san_martin",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/plaza-san-martin/",
+  "sourceFingerprint": "2560519cfa141c77f93262defd47db790f159f889cae41efab12cffcf8661782",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "square",
+  "external": {
+    "wikidataQid": "Q2099124",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Plaza_San_Mart%C3%ADn_(Buenos_Aires)",
+      "es": "https://es.wikipedia.org/wiki/Plaza_General_San_Mart%C3%ADn_(Buenos_Aires)"
+    },
+    "geonamesId": "6957105"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_argentina_buenos_aires"
+    }
+  ],
+  "confidence": "high",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://buenosaires.gob.ar/gcaba_historico/eje-retiro/plaza-san-martin",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Площадь/парк в Retiro, Buenos Aires с монументом генералу San Martín и планировкой Carlos Thays. Не площадь в Лиме, Ла-Плате и не Plaza San Martín de Tours."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/plaza-san-martin/",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Прямой HTTPS GET: 200; H1 и canonical совпадают с очередью. Точные MD (approved), stable ID и source-index entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://buenosaires.gob.ar/gcaba_historico/eje-retiro/plaza-san-martin",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Площадь/парк в Retiro, Buenos Aires с монументом генералу San Martín и планировкой Carlos Thays. Не площадь в Лиме, Ла-Плате и не Plaza San Martín de Tours."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2099124",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Площадь/парк в Retiro, Buenos Aires с монументом генералу San Martín и планировкой Carlos Thays. Не площадь в Лиме, Ла-Плате и не Plaza San Martín de Tours."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2099124",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Имя точного объекта и принятая орфография совпадают с sitelinks/MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2099124",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Sitelinks подтверждённого QID. Не страница одноимённого региона/района."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2099124",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "P1566 точного географического объекта; имя, класс и страна сверены. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2099124",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "P625 — точка площади, не точка конной статуи как отдельного объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://buenosaires.gob.ar/gcaba_historico/eje-retiro/plaza-san-martin",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Независимая сверка географического контекста точки: Площадь/парк в Retiro, Buenos Aires с монументом генералу San Martín и планировкой Carlos Thays. Не площадь в Лиме, Ла-Плате и не Plaza San Martín de Tours."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://buenosaires.gob.ar/gcaba_historico/eje-retiro/plaza-san-martin",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Страна подтверждена MD, entry, внешним описанием и P17 Wikidata."
+    },
+    {
+      "field": "relationships.destination_argentina_buenos_aires",
+      "sourceUrl": "https://buenosaires.gob.ar/gcaba_historico/eje-retiro/plaza-san-martin",
+      "checkedAt": "2026-10-16T20:38:55.371Z",
+      "note": "Городская площадь Retiro в Buenos Aires; stable ID города существует в очереди."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Площадь/парк в Retiro, Buenos Aires с монументом генералу San Martín и планировкой Carlos Thays. Не площадь в Лиме, Ла-Плате и не Plaza San Martín de Tours.",
+      "selected": "Площадь Сан-Мартин"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Площадь/парк в Retiro, Buenos Aires с монументом генералу San Martín и планировкой Carlos Thays. Не площадь в Лиме, Ла-Плате и не Plaza San Martín de Tours.",
+      "selected": "square"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Площадь/парк в Retiro, Buenos Aires с монументом генералу San Martín и планировкой Carlos Thays. Не площадь в Лиме, Ла-Плате и не Plaza San Martín de Tours.",
+      "selected": "Q2099124"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "reason": "Имя точного объекта и принятая орфография совпадают с sitelinks/MD.",
+      "selected": "Plaza San Martín"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Sitelinks подтверждённого QID. Не страница одноимённого региона/района.",
+      "selected": "https://en.wikipedia.org/wiki/Plaza_San_Mart%C3%ADn_(Buenos_Aires); https://es.wikipedia.org/wiki/Plaza_General_San_Mart%C3%ADn_(Buenos_Aires)"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "reason": "P1566 точного географического объекта; имя, класс и страна сверены. ",
+      "selected": "6957105"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "P625 — точка площади, не точка конной статуи как отдельного объекта.",
+      "selected": "-34.594444444444, -58.375"
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "reason": "Страна подтверждена MD, entry, внешним описанием и P17 Wikidata.",
+      "selected": "country_argentina"
+    },
+    {
+      "field": "relationships.destination_argentina_buenos_aires",
+      "probability": 99,
+      "reason": "Городская площадь Retiro в Buenos Aires; stable ID города существует в очереди.",
+      "selected": "destination_argentina_buenos_aires"
+    }
+  ],
+  "reviewNote": "Площадь/парк в Retiro, Buenos Aires с монументом генералу San Martín и планировкой Carlos Thays. Не площадь в Лиме, Ла-Плате и не Plaza San Martín de Tours.",
+  "alternateNames": [
+    "Plaza San Martín"
+  ],
+  "location": {
+    "latitude": -34.594444444444,
+    "longitude": -58.375,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2099124"
+  }
+}

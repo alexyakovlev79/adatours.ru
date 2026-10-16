@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_vodopady_reki_mimozo",
+  "stableId": "destination_brazil_vodopady_reki_mimozo",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/mimoso-river-waterfalls/",
+  "sourceFingerprint": "046447dfe4cca6e64125189694a36ed89703a96f52b538f10a81a0e0c93137ae",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "Place",
+  "external": {
+    "officialUrl": "https://www.estanciamimosa.eco.br/trilha-e-cachoeiras/"
+  },
+  "location": {
+    "latitude": -20.9801825,
+    "longitude": -56.5087897,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.imasul.ms.gov.br/wp-content/uploads/2022/04/Diagnostico-Ambiental-e-Plano-de-Manejo-RPPN-Estancia-Mimosa_corrigido_cercamento.pdf"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.estanciamimosa.eco.br/trilha-e-cachoeiras/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "MD прямо называет маршрут Estância Mimosa; официальный оператор описывает тропу по mata ciliar Rio Mimoso и последовательность 10 водопадов. Это группа каскадов одного комплекса, не вся одноименная река."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/brazil/place/mimoso-river-waterfalls/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Проверен live HTML: HTTP 200, H1 и canonical совпадают с текущими MD/source-index. Страница доступна, noindex отсутствует."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.estanciamimosa.eco.br/trilha-e-cachoeiras/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "MD прямо называет маршрут Estância Mimosa; официальный оператор описывает тропу по mata ciliar Rio Mimoso и последовательность 10 водопадов. Это группа каскадов одного комплекса, не вся одноименная река."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.imasul.ms.gov.br/wp-content/uploads/2022/04/Diagnostico-Ambiental-e-Plano-de-Manejo-RPPN-Estancia-Mimosa_corrigido_cercamento.pdf",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "План управления IMASUL даёт 20°58′48.657″S 56°30′31.643″W у sede da fazenda. Это опорная точка комплекса/начала посещения, не координаты каждого каскада. Независимая работа о туристических объектах Bonito подтверждает sede 20°58′49″S 56°30′32″W; другие исследовательские точки внутри RPPN не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.estanciamimosa.eco.br/trilha-e-cachoeiras/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "MD прямо называет маршрут Estância Mimosa; официальный оператор описывает тропу по mata ciliar Rio Mimoso и последовательность 10 водопадов. Это группа каскадов одного комплекса, не вся одноименная река."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.estanciamimosa.eco.br/trilha-e-cachoeiras/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "MD прямо называет маршрут Estância Mimosa; официальный оператор описывает тропу по mata ciliar Rio Mimoso и последовательность 10 водопадов. Это группа каскадов одного комплекса, не вся одноименная река."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.estanciamimosa.eco.br/trilha-e-cachoeiras/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Подтверждена география: объект находится в Бразилии."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://livros01.livrosgratis.com.br/cp128038.pdf",
+      "checkedAt": "2026-10-16T20:27:33.638Z",
+      "note": "Независимый текст указывает sede Estância Mimosa: 20°58′49″S 56°30′32″W. Роль сохраняется representative для комплекса каскадов, не отдельный водопад."
+    }
+  ],
+  "confidence": "medium",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Водопады реки Мимозо",
+      "reason": "MD прямо называет маршрут Estância Mimosa; официальный оператор описывает тропу по mata ciliar Rio Mimoso и последовательность 10 водопадов. Это группа каскадов одного комплекса, не вся одноименная река."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.estanciamimosa.eco.br/trilha-e-cachoeiras/",
+      "reason": "Официальная предметная страница/веб-сайт оператора объекта; не автоматическое sameAs организации."
+    },
+    {
+      "field": "location",
+      "probability": 83,
+      "selected": "{\"latitude\":-20.980182499999998,\"longitude\":-56.508789722222225,\"pointRole\":\"representative\",\"coordinateSource\":\"https://www.imasul.ms.gov.br/wp-content/uploads/2022/04/Diagnostico-Ambiental-e-Plano-de-Manejo-RPPN-Estancia-Mimosa_corrigido_cercamento.pdf\"}",
+      "reason": "План управления IMASUL даёт 20°58′48.657″S 56°30′31.643″W у sede da fazenda. Это опорная точка комплекса/начала посещения, не координаты каждого каскада. Независимая работа о туристических объектах Bonito подтверждает sede 20°58′49″S 56°30′32″W; другие исследовательские точки внутри RPPN не усреднялись."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "Place",
+      "reason": "MD прямо называет маршрут Estância Mimosa; официальный оператор описывает тропу по mata ciliar Rio Mimoso и последовательность 10 водопадов. Это группа каскадов одного комплекса, не вся одноименная река."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Бразилия подтверждена MD, source-index и внешним источником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 35,
+      "reason": "После адресного поиска надежная точная карточка QID не установлена; поле пропущено, идентичность самого объекта подтверждена."
+    }
+  ],
+  "reviewNote": "План управления IMASUL даёт 20°58′48.657″S 56°30′31.643″W у sede da fazenda. Это опорная точка комплекса/начала посещения, не координаты каждого каскада. Независимая работа о туристических объектах Bonito подтверждает sede 20°58′49″S 56°30′32″W; другие исследовательские точки внутри RPPN не усреднялись."
+}

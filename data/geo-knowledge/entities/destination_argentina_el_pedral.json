@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_el_pedral",
+  "stableId": "destination_argentina_el_pedral",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/el-pedral/",
+  "sourceFingerprint": "5b17acc72e90d9c4b3484322992c306efb281244d2b93aacce0593ebbbe48360",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "alternateNames": [
+    "Estancia El Pedral"
+  ],
+  "external": {
+    "officialUrl": "https://estanciaelpedral.com.ar/es"
+  },
+  "location": {
+    "latitude": -42.965006,
+    "longitude": -64.394487,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.qietut.com/es/establecimiento/el-pedral/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/cdd8b523a809da44458be6d763aa2c89541d2141/src/content/destinations/el-pedral.md",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Именованная эстансия El Pedral и ее природная территория с пингвинами у Punta Ninfas. Официальный сайт и Global Penguin Society подтверждают объект."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/el-pedral/",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Проверено прямым HTTP GET: 200, self-canonical, заголовок совпадает с объектом; stable ID/contentPath/source-index сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://estanciaelpedral.com.ar/es",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Именованная эстансия El Pedral и ее природная территория с пингвинами у Punta Ninfas. Официальный сайт и Global Penguin Society подтверждают объект."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://estanciaelpedral.com.ar/es",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Именованная эстансия El Pedral и ее природная территория с пингвинами у Punta Ninfas. Официальный сайт и Global Penguin Society подтверждают объект."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.qietut.com/es/establecimiento/el-pedral/",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Координаты карточки эстансии QiETUT, независимо согласуются с официальной локализацией у Punta Ninfas и Golfo Nuevo. Это точка эстансии, не координата гнездовья и не границы заповедной территории."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://estanciaelpedral.com.ar/es",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Официальный сайт самой эстансии, не агрегатор и не общий туристический портал."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.globalpenguinsociety.org/que-hacemos.html",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Профильная организация подтверждает El Pedral как место колонии и охраны магеллановых пингвинов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://estanciaelpedral.com.ar/es/como-llegar",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Официальное расположение Punta Ninfas у Golfo Nuevo; координата карточки QiETUT принята как опорная точка эстансии."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://estanciaelpedral.com.ar/es",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Страна подтверждена точным объектом и MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Estancia El Pedral",
+      "reason": "Именованная эстансия El Pedral и ее природная территория с пингвинами у Punta Ninfas. Официальный сайт и Global Penguin Society подтверждают объект."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Estancia El Pedral",
+      "reason": "Местное/английское название точно установленного объекта."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "-42.965006, -64.394487; representative",
+      "reason": "Координаты карточки эстансии QiETUT, независимо согласуются с официальной локализацией у Punta Ninfas и Golfo Nuevo. Это точка эстансии, не координата гнездовья и не границы заповедной территории."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://estanciaelpedral.com.ar/es",
+      "reason": "Сайт владельца именованного места подтверждает расположение у Punta Ninfas."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Страна/содержащий полуостров установлены по географии объекта."
+    }
+  ],
+  "reviewNote": "QID/GeoNames/OSM не назначены: точная внешняя карточка всей эстансии не установлена. Официальный сайт достаточен для READY; место не подменено маяком Punta Ninfas."
+}

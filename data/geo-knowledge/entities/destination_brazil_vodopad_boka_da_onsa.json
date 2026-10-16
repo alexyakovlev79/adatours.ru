@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_vodopad_boka_da_onsa",
+  "stableId": "destination_brazil_vodopad_boka_da_onsa",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/boca-da-onca-waterfall/",
+  "sourceFingerprint": "e66263204efbf740385aa744ab4c45b66c5b0b21abf2c655c8e9b5e269a28b3e",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Waterfall",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 2382055155
+    },
+    "officialUrl": "https://www.bocadaonca.com.br/"
+  },
+  "location": {
+    "latitude": -20.7399853,
+    "longitude": -56.7345818,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/2382055155.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.bocadaonca.com.br/blog/por-que-boca-da-onca-se-chama-assim/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Именно Cachoeira Boca da Onça в Bodoquena/MS, в каньоне Salobra; официальный оператор подтверждает название и скальную форму. Населенный пункт Boca da Onça в Pará исключен."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/brazil/place/boca-da-onca-waterfall/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Проверен live HTML: HTTP 200, H1 и canonical совпадают с текущими MD/source-index. Страница доступна, noindex отсутствует."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/2382055155.json",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Идентификатор конкретного node выбранного объекта; соседний район/комплекс не подменяет его."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.bocadaonca.com.br/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Официальный оператор территории и водопада; URL указывает на комплекс, не отдельное юридическое sameAs водопада."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/2382055155.json",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Прочитан первичный OSM JSON: name Cachoeira Boca da Onça, waterway=waterfall. Выбрана точка водопада, а не tourism=attraction node 3022691626 у комплекса в 3 км; Outdooractive даёт близкую, но иную точку −20.740375, −56.736227. Не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.bocadaonca.com.br/blog/por-que-boca-da-onca-se-chama-assim/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Именно Cachoeira Boca da Onça в Bodoquena/MS, в каньоне Salobra; официальный оператор подтверждает название и скальную форму. Населенный пункт Boca da Onça в Pará исключен."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.bocadaonca.com.br/blog/por-que-boca-da-onca-se-chama-assim/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Именно Cachoeira Boca da Onça в Bodoquena/MS, в каньоне Salobra; официальный оператор подтверждает название и скальную форму. Населенный пункт Boca da Onça в Pará исключен."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.bocadaonca.com.br/blog/por-que-boca-da-onca-se-chama-assim/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Подтверждена география: объект находится в Бразилии."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Водопад Бока-да-Онса",
+      "reason": "Именно Cachoeira Boca da Onça в Bodoquena/MS, в каньоне Salobra; официальный оператор подтверждает название и скальную форму. Населенный пункт Boca da Onça в Pará исключен."
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "selected": "node/2382055155",
+      "reason": "Именно Cachoeira Boca da Onça в Bodoquena/MS, в каньоне Salobra; официальный оператор подтверждает название и скальную форму. Населенный пункт Boca da Onça в Pará исключен."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.bocadaonca.com.br/",
+      "reason": "Официальная предметная страница/веб-сайт оператора объекта; не автоматическое sameAs организации."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "{\"latitude\":-20.7399853,\"longitude\":-56.7345818,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://api.openstreetmap.org/api/0.6/node/2382055155.json\"}",
+      "reason": "Прочитан первичный OSM JSON: name Cachoeira Boca da Onça, waterway=waterfall. Выбрана точка водопада, а не tourism=attraction node 3022691626 у комплекса в 3 км; Outdooractive даёт близкую, но иную точку −20.740375, −56.736227. Не усреднялись."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "Waterfall",
+      "reason": "Именно Cachoeira Boca da Onça в Bodoquena/MS, в каньоне Salobra; официальный оператор подтверждает название и скальную форму. Населенный пункт Boca da Onça в Pará исключен."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Бразилия подтверждена MD, source-index и внешним источником."
+    }
+  ],
+  "reviewNote": "Прочитан первичный OSM JSON: name Cachoeira Boca da Onça, waterway=waterfall. Выбрана точка водопада, а не tourism=attraction node 3022691626 у комплекса в 3 км; Outdooractive даёт близкую, но иную точку −20.740375, −56.736227. Не усреднялись."
+}

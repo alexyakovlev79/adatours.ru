@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_tigre",
+  "stableId": "destination_argentina_tigre",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/tigre/",
+  "sourceFingerprint": "2add1f72f3fb6ea4285807af88224ca3ece3dbc0377f28a7193c2c125292ba64",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "alternateNames": [
+    "Tigre"
+  ],
+  "external": {
+    "wikidataQid": "Q54106",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tigre,_Buenos_Aires"
+    },
+    "geonamesId": "3427761"
+  },
+  "location": {
+    "latitude": -34.42603,
+    "longitude": -58.57962,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3427761/tigre.html"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/cdd8b523a809da44458be6d763aa2c89541d2141/src/content/destinations/tigre.md",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Город Тигре провинции Буэнос-Айрес у дельты Параны. Не Tigre Partido (Q1906802), не El Tigre в Венесуэле, не вся дельта Параны."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/tigre/",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Проверено прямым HTTP GET: 200, self-canonical, заголовок совпадает с объектом; stable ID/contentPath/source-index сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54106",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Город Тигре провинции Буэнос-Айрес у дельты Параны. Не Tigre Partido (Q1906802), не El Tigre в Венесуэле, не вся дельта Параны."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tigre,_Buenos_Aires",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Город Тигре провинции Буэнос-Айрес у дельты Параны. Не Tigre Partido (Q1906802), не El Tigre в Венесуэле, не вся дельта Параны."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3427761/tigre.html",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "GeoNames PPL — опорная точка населенного пункта. P625 Q54106 (-34.416667,-58.583333) отличается в пределах города; не усреднялись."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54106",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Город Тигре провинции Буэнос-Айрес у дельты Параны. Не Tigre Partido (Q1906802), не El Tigre в Венесуэле, не вся дельта Параны."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tigre,_Buenos_Aires",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Город Тигре провинции Буэнос-Айрес у дельты Параны. Не Tigre Partido (Q1906802), не El Tigre в Венесуэле, не вся дельта Параны."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tigre,_Buenos_Aires",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Независимая сверка географического контекста; GeoNames PPL — опорная точка населенного пункта. P625 Q54106 (-34.416667,-58.583333) отличается в пределах города; не усреднялись."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3427761/tigre.html",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Точная карточка GeoNames этого объекта; Город Тигре провинции Буэнос-Айрес у дельты Параны. Не Tigre Partido (Q1906802), не El Tigre в Венесуэле, не вся дельта Параны."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tigre,_Buenos_Aires",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Страна подтверждена точным объектом и MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Tigre",
+      "reason": "Город Тигре провинции Буэнос-Айрес у дельты Параны. Не Tigre Partido (Q1906802), не El Tigre в Венесуэле, не вся дельта Параны."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Tigre",
+      "reason": "Местное/английское название точно установленного объекта."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-34.42603, -58.57962; settlement_center",
+      "reason": "GeoNames PPL — опорная точка населенного пункта. P625 Q54106 (-34.416667,-58.583333) отличается в пределах города; не усреднялись."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q54106",
+      "reason": "Город Тигре провинции Буэнос-Айрес у дельты Параны. Не Tigre Partido (Q1906802), не El Tigre в Венесуэле, не вся дельта Параны."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Tigre,_Buenos_Aires",
+      "reason": "Точная статья об установленном основном референте, не disambiguation."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3427761",
+      "reason": "Город Тигре провинции Буэнос-Айрес у дельты Параны. Не Tigre Partido (Q1906802), не El Tigre в Венесуэле, не вся дельта Параны."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Страна/содержащий полуостров установлены по географии объекта."
+    }
+  ],
+  "reviewNote": null
+}

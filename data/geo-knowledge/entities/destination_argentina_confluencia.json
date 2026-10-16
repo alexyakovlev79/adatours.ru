@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_confluencia",
+  "stableId": "destination_argentina_confluencia",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/confluencia/",
+  "sourceFingerprint": "fb12d253834be3b67776bab66a42d604acdce6b90d343d8de3a8c2bbdfa3d6f5",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 656097801
+    }
+  },
+  "alternateNames": [
+    "Campamento Confluencia"
+  ],
+  "location": {
+    "latitude": -32.75825,
+    "longitude": -69.96723,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/W656097801"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/20a7fd65b9538b8fefe6ab3881997fe22206a1ed/src/content/destinations/confluencia.md",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первый подходный лагерь Аконкагуа в долине Хорконес, провинция Мендоса; не департамент Confluencia в Неукене и не кемпинг Эль-Чалтена."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mendoza.gov.ar/wp-content/uploads/sites/71/2020/12/Trekking-ENG.pdf",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первый подходный лагерь Аконкагуа в долине Хорконес, провинция Мендоса; не департамент Confluencia в Неукене и не кемпинг Эль-Чалтена."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/confluencia/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Прямой HTTP GET 200; self-canonical и заголовок соответствуют объекту. Stable ID, текущий MD и точная source-index entry сверены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/656097801.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первичный OSM API прочитан; имя, класс, контекст совпадают: Первый подходный лагерь Аконкагуа в долине Хорконес, провинция Мендоса; не департамент Confluencia в Неукене и не кемпинг Эль-Чалтена."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/656097801.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Местное/английское название объекта подтверждено карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W656097801",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Точка Mapcarta внутри проверенного контура OSM 656097801. GPS экспедиции (-32.759333,-69.9715) примерно на 420 м западнее: выбрана точка современного контура, без усреднения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.adventurealternative.com/argentina/climb-mount-aconcagua/horcones-route-trek/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Независимая сверка объекта и географического положения; не утверждается совпадение координат до последнего знака."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://outdoormendoza.com/en/aconcagua/aconcagua-confluencia-camp/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первый подходный лагерь Аконкагуа в долине Хорконес, провинция Мендоса; не департамент Confluencia в Неукене и не кемпинг Эль-Чалтена."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.mendoza.gov.ar/wp-content/uploads/sites/71/2020/12/Trekking-ENG.pdf",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Объект находится в Аргентине."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Campamento Confluencia",
+      "reason": "Первый подходный лагерь Аконкагуа в долине Хорконес, провинция Мендоса; не департамент Confluencia в Неукене и не кемпинг Эль-Чалтена."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/656097801",
+      "reason": "Первый подходный лагерь Аконкагуа в долине Хорконес, провинция Мендоса; не департамент Confluencia в Неукене и не кемпинг Эль-Чалтена."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Campamento Confluencia",
+      "reason": "Название основного референта из точной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-32.75825, -69.96723; representative",
+      "reason": "Точка Mapcarta внутри проверенного контура OSM 656097801. GPS экспедиции (-32.759333,-69.9715) примерно на 420 м западнее: выбрана точка современного контура, без усреднения."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Объект находится в Аргентине."
+    }
+  ],
+  "reviewNote": null
+}

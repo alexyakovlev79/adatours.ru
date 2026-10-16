@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_lednik_perito_moreno",
+  "stableId": "destination_argentina_lednik_perito_moreno",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/perito-moreno-glacier/",
+  "sourceFingerprint": "3017e6a8ccb812cb218351940d9379f50e0d0945b5810fff94eeb82016240f5a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "Glacier",
+  "alternateNames": [
+    "Glaciar Perito Moreno"
+  ],
+  "external": {
+    "wikidataQid": "Q367943",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Perito_Moreno_Glacier",
+      "es": "https://es.wikipedia.org/wiki/Glaciar_Perito_Moreno"
+    },
+    "geonamesId": "6942216"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_argentina_nacionalnyj_park_los_glasyares"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/perito-moreno-glacier/",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "HTTP 200; H1 совпадает. Сверены stable ID, canonical URL, approved MD и точная source-index запись. Именно ледник у Lago Argentino; город Perito Moreno и одноименный национальный парк исключены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q367943",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Glacier соответствует основному объекту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q367943",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Местное имя основного объекта: Glaciar Perito Moreno."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q367943",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Страна объекта/выбранного аргентинского туристического референта — Аргентина; соответствует countryId в MD и source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q367943",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Именно ледник у Lago Argentino; город Perito Moreno и одноименный национальный парк исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q367943",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Точные enwiki/eswiki sitelinks выбранного QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q367943",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "GeoNames ID из P1566 выбранной карточки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q367943",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Точка относится к восточному аргентинскому ледниковому фронту у Lago Argentino; не центр ледника. QID описывает весь ледник, имеющий трансграничный контекст. Связь со страной не утверждает исключительную принадлежность всей ледниковой системы."
+    },
+    {
+      "field": "relationships.destination_argentina_nacionalnyj_park_los_glasyares",
+      "sourceUrl": "https://iugs-geoheritage.org/geoheritage_sites/perito-moreno-glacier/",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "IUGS подтверждает связь ледника с Los Glaciares. relatedPlace не утверждает, что весь трансграничный ледник ограничен границами парка."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Glaciar Perito Moreno",
+      "reason": "Именно ледник у Lago Argentino; город Perito Moreno и одноименный национальный парк исключены."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "Glacier",
+      "reason": "Тип установлен по MD и географической карточке."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Glaciar Perito Moreno",
+      "reason": "Каноническое местное название подтверждено внешним источником."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Согласованы страна текущей страницы и внешний географический источник."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q367943",
+      "reason": "Именно ледник у Lago Argentino; город Perito Moreno и одноименный национальный парк исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Perito_Moreno_Glacier\",\"es\":\"https://es.wikipedia.org/wiki/Glaciar_Perito_Moreno\"}",
+      "reason": "Sitelinks относятся к тому же объекту."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "6942216",
+      "reason": "Идентификатор относится к выбранному объекту, а не одноименному городу/району."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "{\"latitude\":-50.49321938689202,\"longitude\":-73.12798244937426,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://www.wikidata.org/wiki/Q367943\"}",
+      "reason": "Выбрана точка с указанной ролью и источником; альтернативные координаты не усреднялись."
+    },
+    {
+      "field": "relationships.destination_argentina_nacionalnyj_park_los_glasyares",
+      "probability": 99,
+      "selected": "destination_argentina_nacionalnyj_park_los_glasyares",
+      "reason": "Ледник — основной природный объект туристического посещения в парке."
+    }
+  ],
+  "reviewNote": "Точка относится к восточному аргентинскому ледниковому фронту у Lago Argentino; не центр ледника. QID описывает весь ледник, имеющий трансграничный контекст. Связь со страной не утверждает исключительную принадлежность всей ледниковой системы.",
+  "location": {
+    "latitude": -50.49321938689202,
+    "longitude": -73.12798244937426,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q367943"
+  }
+}

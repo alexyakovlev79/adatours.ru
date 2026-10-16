@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_san_telmo",
+  "stableId": "destination_argentina_san_telmo",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/san-telmo/",
+  "sourceFingerprint": "90f320f6fe54ccd3721c93590f0967490e5ba84fbbcd8668f39719050ebd558b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1026688",
+    "geonamesId": "3428113",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Telmo,_Buenos_Aires"
+    },
+    "officialUrl": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/santelmo",
+    "osm": {
+      "type": "relation",
+      "id": 2223069
+    }
+  },
+  "location": {
+    "latitude": -34.6205556,
+    "longitude": -58.3716667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1026688"
+  },
+  "alternateNames": [
+    "San Telmo",
+    "San Telmo, Buenos Aires"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_argentina_buenos_aires"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/san-telmo/",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "HTTP 200, canonical совпадает. MD approved и точная entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed. Исторический район Сан-Тельмо в Буэнос-Айресе; Пласа-Доррего является его ориентиром, но не всей сущностью. natural_area в MD — обобщенная метка, не описание реального типа."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/santelmo",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Исторический район Сан-Тельмо в Буэнос-Айресе; Пласа-Доррего является его ориентиром, но не всей сущностью. natural_area в MD — обобщенная метка, не описание реального типа."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1026688",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Точная карточка: совпадают объект, местоположение и смысл страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1026688",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "P1566 точной карточки Wikidata связывает идентификатор с выбранным объектом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Telmo,_Buenos_Aires",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Точная статья о выбранном объекте, не страница неоднозначностей."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/santelmo",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Специальная карточка объекта на официальном туристическом/государственном портале. Хранится как officialUrl, а не безусловный sameAs портала."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1026688",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Идентификатор OSM указан в точной карточке Wikidata; дополнительные теги не импортируются."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1026688",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Проверенные именования: San Telmo; San Telmo, Buenos Aires."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1026688",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Wikidata P625: 34°37′14″S 58°22′18″W. Опорная точка района, совпадающая с Пласа-Доррего; это не геометрический центр и не объединение объектов."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1026688",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Аргентина подтверждается географией внешнего источника и countryId MD."
+    },
+    {
+      "field": "relationships.destination_argentina_buenos_aires",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1026688",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Источник прямо помещает объект внутри данного района/города; stable ID сопоставлен с текущим сайтом."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Исторический район Сан-Тельмо в Буэнос-Айресе; Пласа-Доррего является его ориентиром, но не всей сущностью. natural_area в MD — обобщенная метка, не описание реального типа. Wikidata P625: 34°37′14″S 58°22′18″W. Опорная точка района, совпадающая с Пласа-Доррего; это не геометрический центр и не объединение объектов.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "San Telmo",
+      "reason": "Исторический район Сан-Тельмо в Буэнос-Айресе; Пласа-Доррего является его ориентиром, но не всей сущностью. natural_area в MD — обобщенная метка, не описание реального типа."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1026688",
+      "reason": "Исторический район Сан-Тельмо в Буэнос-Айресе; Пласа-Доррего является его ориентиром, но не всей сущностью. natural_area в MD — обобщенная метка, не описание реального типа."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3428113",
+      "reason": "Соответствие имени и типа подтверждено точной карточкой."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/San_Telmo,_Buenos_Aires",
+      "reason": "Точный референт и страна совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 96,
+      "selected": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/santelmo",
+      "reason": "Точное название и местоположение в официальной карточке."
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "selected": "relation/2223069",
+      "reason": "Соответствует выбранному основному объекту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "San Telmo; San Telmo, Buenos Aires",
+      "reason": "Именования взяты из точных карточек и описаний."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-34.620555555555555, -58.37166666666667 (representative)",
+      "reason": "Wikidata P625: 34°37′14″S 58°22′18″W. Опорная точка района, совпадающая с Пласа-Доррего; это не геометрический центр и не объединение объектов."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 97,
+      "selected": "country_argentina",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    },
+    {
+      "field": "relationships.destination_argentina_buenos_aires",
+      "probability": 97,
+      "selected": "destination_argentina_buenos_aires",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_basilica_del_pilar",
+  "stableId": "destination_argentina_basilica_del_pilar",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/basilica-del-pilar/",
+  "sourceFingerprint": "c9b89c54848d0cdab078ed33d1eddb778e85943fb63c846221f09819cc8aaeeb",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 176335924
+    },
+    "wikidataQid": "Q2886930",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_the_Pillar,_Buenos_Aires"
+    }
+  },
+  "alternateNames": [
+    "Basílica de Nuestra Señora del Pilar (Buenos Aires)"
+  ],
+  "location": {
+    "latitude": -34.59,
+    "longitude": -58.39,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2886930"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_argentina_recoleta"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_argentina_recoleta_cemetery"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/20a7fd65b9538b8fefe6ab3881997fe22206a1ed/src/content/destinations/basilica-del-pilar.md",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Католическая базилика в районе Реколета рядом с кладбищем, Буэнос-Айрес. Исключена базилика Эль-Пилар в Сарагосе (Испания)."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/basilica-del-pilar",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Католическая базилика в районе Реколета рядом с кладбищем, Буэнос-Айрес. Исключена базилика Эль-Пилар в Сарагосе (Испания)."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/basilica-del-pilar/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Прямой HTTP GET 200; self-canonical и заголовок соответствуют объекту. Stable ID, текущий MD и точная source-index entry сверены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/176335924.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первичный OSM API прочитан; имя, класс, контекст совпадают: Католическая базилика в районе Реколета рядом с кладбищем, Буэнос-Айрес. Исключена базилика Эль-Пилар в Сарагосе (Испания)."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2886930",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Местное/английское название объекта подтверждено карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2886930",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Точка здания P625 Q2886930; OSM 176335924 с тем же QID и национальная карточка памятника подтверждают объект."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/basilica-del-pilar",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Независимая сверка объекта и географического положения; не утверждается совпадение координат до последнего знака."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2886930",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Католическая базилика в районе Реколета рядом с кладбищем, Буэнос-Айрес. Исключена базилика Эль-Пилар в Сарагосе (Испания)."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_the_Pillar,_Buenos_Aires",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Католическая базилика в районе Реколета рядом с кладбищем, Буэнос-Айрес. Исключена базилика Эль-Пилар в Сарагосе (Испания)."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/basilica-del-pilar",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Объект находится в Аргентине."
+    },
+    {
+      "field": "relationships.destination_argentina_recoleta",
+      "sourceUrl": "https://www.argentina.gob.ar/capital-humano/cultura/monumentos/basilica-del-pilar",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Кладбище/базилика находятся в районе Реколета."
+    },
+    {
+      "field": "relationships.destination_argentina_recoleta_cemetery",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2886930",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Кладбище — соседний самостоятельный объект."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Basílica de Nuestra Señora del Pilar (Buenos Aires)",
+      "reason": "Католическая базилика в районе Реколета рядом с кладбищем, Буэнос-Айрес. Исключена базилика Эль-Пилар в Сарагосе (Испания)."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/176335924",
+      "reason": "Католическая базилика в районе Реколета рядом с кладбищем, Буэнос-Айрес. Исключена базилика Эль-Пилар в Сарагосе (Испания)."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Basílica de Nuestra Señora del Pilar (Buenos Aires)",
+      "reason": "Название основного референта из точной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-34.59, -58.39; feature_point",
+      "reason": "Точка здания P625 Q2886930; OSM 176335924 с тем же QID и национальная карточка памятника подтверждают объект."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2886930",
+      "reason": "Католическая базилика в районе Реколета рядом с кладбищем, Буэнос-Айрес. Исключена базилика Эль-Пилар в Сарагосе (Испания)."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_the_Pillar,_Buenos_Aires",
+      "reason": "Точная Wikipedia-статья об основном референте."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Объект находится в Аргентине."
+    },
+    {
+      "field": "relationships.destination_argentina_recoleta",
+      "probability": 99,
+      "selected": "containedInPlace destination_argentina_recoleta",
+      "reason": "Кладбище/базилика находятся в районе Реколета."
+    },
+    {
+      "field": "relationships.destination_argentina_recoleta_cemetery",
+      "probability": 99,
+      "selected": "relatedPlace destination_argentina_recoleta_cemetery",
+      "reason": "Кладбище — соседний самостоятельный объект."
+    }
+  ],
+  "reviewNote": null
+}

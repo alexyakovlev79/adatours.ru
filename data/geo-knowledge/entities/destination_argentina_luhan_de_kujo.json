@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_luhan_de_kujo",
+  "stableId": "destination_argentina_luhan_de_kujo",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/lujan-de-cuyo/",
+  "sourceFingerprint": "ab8abb15e4b8b8287538387ebaf2e3316f808cf2b45f6d7539ebae818017a605",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "composite",
+  "entityClass": "AdministrativeArea",
+  "alternateNames": [
+    "Departamento de Luján de Cuyo"
+  ],
+  "external": {
+    "wikidataQid": "Q972194",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Luj%C3%A1n_de_Cuyo_Department",
+      "es": "https://es.wikipedia.org/wiki/Departamento_de_Luj%C3%A1n_de_Cuyo"
+    },
+    "geonamesId": "3845397",
+    "osm": {
+      "type": "relation",
+      "id": 2989830
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/lujan-de-cuyo/",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "HTTP 200; H1 совпадает. Сверены stable ID, canonical URL, approved MD и точная source-index запись. MD имеет тип region и описывает виноградники, Cacheuta и Potrerillos, поэтому выбран департамент, а не только город Q583524. Принадлежность районов подтверждена официальным порталом Мендосы."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q972194",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "AdministrativeArea соответствует основному объекту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q972194",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Местное имя основного объекта: Departamento de Luján de Cuyo."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q972194",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Страна объекта/выбранного аргентинского туристического референта — Аргентина; соответствует countryId в MD и source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q972194",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "MD имеет тип region и описывает виноградники, Cacheuta и Potrerillos, поэтому выбран департамент, а не только город Q583524. Принадлежность районов подтверждена официальным порталом Мендосы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q972194",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Точные enwiki/eswiki sitelinks выбранного QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3845397/departamento-de-lujan.html",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "GeoNames ID из P1566 выбранной карточки; непосредственно проверены ADM2, Mendoza, и название департамента."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/2989830",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "OSM API: boundary=administrative, admin_level=5, name=Departamento Luján de Cuyo, wikidata=Q972194."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3845397/departamento-de-lujan.html",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Ошибочная P625 Wikidata −33.5, −62.966666666667 отклонена: долгота не соответствует Мендосе. Принята опорная точка GeoNames −33, −69.33333, не столица департамента и не утверждение о геометрическом центре."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mendoza.edu.ar/recursos/departamento-de-lujan-de-cuyo/",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Официальная DGE Mendoza: Cacheuta и Potrerillos входят в департамент, что соответствует региональному охвату MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Departamento de Luján de Cuyo",
+      "reason": "MD имеет тип region и описывает виноградники, Cacheuta и Potrerillos, поэтому выбран департамент, а не только город Q583524. Принадлежность районов подтверждена официальным порталом Мендосы."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "AdministrativeArea",
+      "reason": "Тип установлен по MD и географической карточке."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Departamento de Luján de Cuyo",
+      "reason": "Каноническое местное название подтверждено внешним источником."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Согласованы страна текущей страницы и внешний географический источник."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q972194",
+      "reason": "MD имеет тип region и описывает виноградники, Cacheuta и Potrerillos, поэтому выбран департамент, а не только город Q583524. Принадлежность районов подтверждена официальным порталом Мендосы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Luj%C3%A1n_de_Cuyo_Department\",\"es\":\"https://es.wikipedia.org/wiki/Departamento_de_Luj%C3%A1n_de_Cuyo\"}",
+      "reason": "Sitelinks относятся к тому же объекту."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3845397",
+      "reason": "Идентификатор относится к выбранному объекту, а не одноименному городу/району."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "{\"type\":\"relation\",\"id\":2989830}",
+      "reason": "Прочитаны теги точной OSM-геометрии; совпадают название, тип и регион."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "{\"latitude\":-33,\"longitude\":-69.33333,\"coordinateSource\":\"https://www.geonames.org/3845397/departamento-de-lujan.html\",\"pointRole\":\"representative\"}",
+      "reason": "Выбрана точка с указанной ролью и источником; альтернативные координаты не усреднялись."
+    },
+    {
+      "field": "candidate.location.wikidata",
+      "probability": 5,
+      "selected": "-33.5,-62.966666666667",
+      "reason": "Отклонено: долгота вне Mendoza; вместо нее проверена точка GeoNames."
+    }
+  ],
+  "reviewNote": "Ошибочная P625 Wikidata −33.5, −62.966666666667 отклонена: долгота не соответствует Мендосе. Принята опорная точка GeoNames −33, −69.33333, не столица департамента и не утверждение о геометрическом центре.",
+  "location": {
+    "latitude": -33,
+    "longitude": -69.33333,
+    "coordinateSource": "https://www.geonames.org/3845397/departamento-de-lujan.html",
+    "pointRole": "representative"
+  }
+}

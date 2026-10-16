@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_san_huan",
+  "stableId": "destination_argentina_san_huan",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/san-juan/",
+  "sourceFingerprint": "f635329cc78d9bdb48afb7729c3b0e2304e422fb9fcb83d24b0a26009d387774",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q44241",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/San_Juan_(Argentina)"
+    },
+    "geonamesId": "3837213"
+  },
+  "location": {
+    "latitude": -31.53726,
+    "longitude": -68.52568,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3837213/san-juan.html"
+  },
+  "alternateNames": [
+    "San Juan"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/san-juan/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "HTTP 200; точный canonical совпал с очередью, stable ID и approved MD сверены на main cdd8b523a809da44458be6d763aa2c89541d2141. Город — столица провинции Сан-Хуан в Аргентине; городской центр и наследие Сармьенто, а не провинция и не Сан-Хуан в Пуэрто-Рико."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Juan_(Argentina)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Город — столица провинции Сан-Хуан в Аргентине; городской центр и наследие Сармьенто, а не провинция и не Сан-Хуан в Пуэрто-Рико."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q44241",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Город — столица провинции Сан-Хуан в Аргентине; городской центр и наследие Сармьенто, а не провинция и не Сан-Хуан в Пуэрто-Рико."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Juan_(Argentina)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Город — столица провинции Сан-Хуан в Аргентине; городской центр и наследие Сармьенто, а не провинция и не Сан-Хуан в Пуэрто-Рико."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q44241",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "GeoNames ID 3837213 связан с точной сущностью в Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3837213/san-juan.html",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Прочитаны имя, код объекта и административная иерархия GeoNames."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3837213/san-juan.html",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Выбрана актуальная точка города GeoNames. P625 (-31.5375,-68.536389) расположен западнее приблизительно на 1 км; это разные городские опорные точки, не среднее."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Juan_(Argentina)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Сверка географического контекста: Город — столица провинции Сан-Хуан в Аргентине; городской центр и наследие Сармьенто, а не провинция и не Сан-Хуан в Пуэрто-Рико. Выбрана актуальная точка города GeoNames. P625 (-31.5375,-68.536389) расположен западнее приблизительно на 1 км; это разные городские опорные точки, не среднее."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Juan_(Argentina)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Местное название: San Juan."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Juan_(Argentina)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Место находится в Аргентине; соответствует country_argentina в актуальном MD."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "San Juan",
+      "reason": "Город — столица провинции Сан-Хуан в Аргентине; городской центр и наследие Сармьенто, а не провинция и не Сан-Хуан в Пуэрто-Рико."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q44241",
+      "reason": "Название, страна, география и референт страницы совпали; конкурирующие одноименные сущности исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/San_Juan_(Argentina)",
+      "reason": "Точная статья о выбранном месте, согласуется с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3837213",
+      "reason": "Идентификатор относится к выбранному месту, а не к одноименной административной территории."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-31.53726, -68.52568; settlement_center",
+      "reason": "Выбрана актуальная точка города GeoNames. P625 (-31.5375,-68.536389) расположен западнее приблизительно на 1 км; это разные городские опорные точки, не среднее."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "San Juan",
+      "reason": "Название прямо используется в прочитанном внешнем источнике."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна совпадает в MD и внешнем источнике."
+    }
+  ],
+  "reviewNote": "Выбрана актуальная точка города GeoNames. P625 (-31.5375,-68.536389) расположен западнее приблизительно на 1 км; это разные городские опорные точки, не среднее."
+}

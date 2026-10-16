@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_los_penitentes",
+  "stableId": "destination_argentina_los_penitentes",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/los-penitentes/",
+  "sourceFingerprint": "42cdae4b88fb6b12800c3f5518ad3610b0cd86e9c38026bf71761e806295f325",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q3259759",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Los_Penitentes"
+    }
+  },
+  "location": {
+    "latitude": -32.8419451,
+    "longitude": -69.840979,
+    "pointRole": "representative",
+    "coordinateSource": "https://es.wikipedia.org/wiki/Los_Penitentes"
+  },
+  "alternateNames": [
+    "Los Penitentes"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/los-penitentes/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "HTTP 200; точный canonical совпал с очередью, stable ID и approved MD сверены на main cdd8b523a809da44458be6d763aa2c89541d2141. Лос-Пенитентес — населенный пункт и горнолыжная местность Mendoza на RN7. Смысл страницы — именованная горная остановка/центр, не ледяные образования вообще и не местность La Rioja."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Los_Penitentes",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Лос-Пенитентес — населенный пункт и горнолыжная местность Mendoza на RN7. Смысл страницы — именованная горная остановка/центр, не ледяные образования вообще и не местность La Rioja."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3259759",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Лос-Пенитентес — населенный пункт и горнолыжная местность Mendoza на RN7. Смысл страницы — именованная горная остановка/центр, не ледяные образования вообще и не местность La Rioja."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Los_Penitentes",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Лос-Пенитентес — населенный пункт и горнолыжная местность Mendoza на RN7. Смысл страницы — именованная горная остановка/центр, не ледяные образования вообще и не местность La Rioja."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Los_Penitentes",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Выбрана точка именованного поселения/курортной местности в испанской статье; P625 совпадает. Английская статья содержит конфликтующую верхнюю точку (-32.85667,-69.75), а в infobox — близкую точку склонов (-32.841624,-69.837752). Не усредняли, вершине координаты не приписаны."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Los_Penitentes",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Сверка географического контекста: Лос-Пенитентес — населенный пункт и горнолыжная местность Mendoza на RN7. Смысл страницы — именованная горная остановка/центр, не ледяные образования вообще и не местность La Rioja. Выбрана точка именованного поселения/курортной местности в испанской статье; P625 совпадает. Английская статья содержит конфликтующую верхнюю точку (-32.85667,-69.75), а в infobox — близкую точку склонов (-32.841624,-69.837752). Не усредняли, вершине координаты не приписаны."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Los_Penitentes",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Местное название: Los Penitentes."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Los_Penitentes",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Место находится в Аргентине; соответствует country_argentina в актуальном MD."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Los Penitentes",
+      "reason": "Лос-Пенитентес — населенный пункт и горнолыжная местность Mendoza на RN7. Смысл страницы — именованная горная остановка/центр, не ледяные образования вообще и не местность La Rioja."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q3259759",
+      "reason": "Название, страна, география и референт страницы совпали; конкурирующие одноименные сущности исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Los_Penitentes",
+      "reason": "Точная статья о выбранном месте, согласуется с MD и Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-32.8419451, -69.840979; representative",
+      "reason": "Выбрана точка именованного поселения/курортной местности в испанской статье; P625 совпадает. Английская статья содержит конфликтующую верхнюю точку (-32.85667,-69.75), а в infobox — близкую точку склонов (-32.841624,-69.837752). Не усредняли, вершине координаты не приписаны."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Los Penitentes",
+      "reason": "Название прямо используется в прочитанном внешнем источнике."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна совпадает в MD и внешнем источнике."
+    }
+  ],
+  "reviewNote": "Выбрана точка именованного поселения/курортной местности в испанской статье; P625 совпадает. Английская статья содержит конфликтующую верхнюю точку (-32.85667,-69.75), а в infobox — близкую точку склонов (-32.841624,-69.837752). Не усредняли, вершине координаты не приписаны."
+}

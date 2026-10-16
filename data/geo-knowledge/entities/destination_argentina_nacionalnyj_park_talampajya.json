@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_nacionalnyj_park_talampajya",
+  "stableId": "destination_argentina_nacionalnyj_park_talampajya",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/talampaya-national-park/",
+  "sourceFingerprint": "be4c180f448377dc0a3219fe912f431e00c0ca53694fd75b0ceecc6b92922430",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q398108",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Talampaya"
+    },
+    "officialUrl": "https://www.argentina.gob.ar/parquesnacionales/talampaya"
+  },
+  "location": {
+    "latitude": -29.79575,
+    "longitude": -67.81119389,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q398108"
+  },
+  "alternateNames": [
+    "Parque Nacional Talampaya"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/talampaya-national-park/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "HTTP 200; точный canonical совпал с очередью, stable ID и approved MD сверены на main cdd8b523a809da44458be6d763aa2c89541d2141. Национальный парк Талампайя в провинции Ла-Риоха; главный референт страницы — весь парк, не только каньон и не совокупный объект ЮНЕСКО."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Talampaya",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Национальный парк Талампайя в провинции Ла-Риоха; главный референт страницы — весь парк, не только каньон и не совокупный объект ЮНЕСКО."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q398108",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Национальный парк Талампайя в провинции Ла-Риоха; главный референт страницы — весь парк, не только каньон и не совокупный объект ЮНЕСКО."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Talampaya",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Национальный парк Талампайя в провинции Ла-Риоха; главный референт страницы — весь парк, не только каньон и не совокупный объект ЮНЕСКО."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.argentina.gob.ar/parquesnacionales/talampaya",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Прочитан официальный сайт конкретного парка/заповедника. Не автоматический sameAs."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q398108",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Выбрана справочная точка P625 для парка, совпадающая с испанской статьей в пределах округления. Не геометрический центр и не вход. UNESCO 966 не присвоен отдельному парку."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Talampaya",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Сверка географического контекста: Национальный парк Талампайя в провинции Ла-Риоха; главный референт страницы — весь парк, не только каньон и не совокупный объект ЮНЕСКО. Выбрана справочная точка P625 для парка, совпадающая с испанской статьей в пределах округления. Не геометрический центр и не вход. UNESCO 966 не присвоен отдельному парку."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Talampaya",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Местное название: Parque Nacional Talampaya."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Talampaya",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Место находится в Аргентине; соответствует country_argentina в актуальном MD."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Parque Nacional Talampaya",
+      "reason": "Национальный парк Талампайя в провинции Ла-Риоха; главный референт страницы — весь парк, не только каньон и не совокупный объект ЮНЕСКО."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q398108",
+      "reason": "Название, страна, география и референт страницы совпали; конкурирующие одноименные сущности исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Talampaya",
+      "reason": "Точная статья о выбранном месте, согласуется с MD и Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.argentina.gob.ar/parquesnacionales/talampaya",
+      "reason": "Официальная страница объекта, а не главная туристическая страница всего региона."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-29.79575, -67.81119388888888; representative",
+      "reason": "Выбрана справочная точка P625 для парка, совпадающая с испанской статьей в пределах округления. Не геометрический центр и не вход. UNESCO 966 не присвоен отдельному парку."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Parque Nacional Talampaya",
+      "reason": "Название прямо используется в прочитанном внешнем источнике."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна совпадает в MD и внешнем источнике."
+    }
+  ],
+  "reviewNote": "Выбрана справочная точка P625 для парка, совпадающая с испанской статьей в пределах округления. Не геометрический центр и не вход. UNESCO 966 не присвоен отдельному парку."
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_kordoba",
+  "stableId": "destination_argentina_kordoba",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/cordoba/",
+  "sourceFingerprint": "38e778620ebde9d2ce6ed599c4fb265900d20503ae8cebec9266117ecce14d0d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q44210",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/C%C3%B3rdoba,_Argentina"
+    },
+    "geonamesId": "3860259",
+    "officialUrl": "https://cordoba.gob.ar/"
+  },
+  "location": {
+    "latitude": -31.40648,
+    "longitude": -64.18853,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3860259/"
+  },
+  "alternateNames": [
+    "Córdoba",
+    "Córdoba, Argentina"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/cordoba/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен живой URL: HTTP 200, совпадающий canonical, название и доступность; MD approved, stable ID и countryId сверены с точной entry на main cdd8b523a809da44458be6d763aa2c89541d2141. Кордоба в Аргентине, колониальные памятники и университет: основной объект — город, а не одноименная провинция или Кордова в Испании. Объект UNESCO Manzana Jesuitica не тождествен всему городу."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://cordoba.gob.ar/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Кордоба в Аргентине, колониальные памятники и университет: основной объект — город, а не одноименная провинция или Кордова в Испании. Объект UNESCO Manzana Jesuitica не тождествен всему городу."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q44210",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверены название, страна и тип выбранного объекта. Кордоба в Аргентине, колониальные памятники и университет: основной объект — город, а не одноименная провинция или Кордова в Испании. Объект UNESCO Manzana Jesuitica не тождествен всему городу."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/C%C3%B3rdoba,_Argentina",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная статья о выбранной горе/городе; соответствует заголовку и географии страницы, не статья неоднозначностей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3860259/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная карточка населенного пункта и его страна; ID сверяется с Wikidata P1566. Для Барилоче выбран PPLA3 7647007, а не ADM3."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://cordoba.gob.ar/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен официальный муниципальный/туристический сайт выбранного направления. Это информационный officialUrl; не доказательство тождества домена и природного/городского объекта для sameAs."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q44210",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверенные локальные и английские названия выбранной карточки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3860259/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q44210",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Страна выбранного объекта в Wikidata P17 совпадает с countryId точного MD/entry."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Кордоба в Аргентине, колониальные памятники и университет: основной объект — город, а не одноименная провинция или Кордова в Испании. Объект UNESCO Manzana Jesuitica не тождествен всему городу. Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Córdoba",
+      "reason": "Кордоба в Аргентине, колониальные памятники и университет: основной объект — город, а не одноименная провинция или Кордова в Испании. Объект UNESCO Manzana Jesuitica не тождествен всему городу."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q44210",
+      "reason": "Кордоба в Аргентине, колониальные памятники и университет: основной объект — город, а не одноименная провинция или Кордова в Испании. Объект UNESCO Manzana Jesuitica не тождествен всему городу."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/C%C3%B3rdoba,_Argentina",
+      "reason": "Статья соответствует основному именованному референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3860259",
+      "reason": "Совпадают имя, страна и основной референт; идентификатор приведен точной карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "selected": "https://cordoba.gob.ar/",
+      "reason": "Портал прямо представляет выбранный объект или его официальный туризм."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Córdoba; Córdoba, Argentina",
+      "reason": "Названия совпадают в точной внешней карточке и/или на официальном портале."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-31.40648, -64.18853 (settlement_center)",
+      "reason": "Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна подтверждена внешней карточкой и текущим сайтом."
+    }
+  ]
+}

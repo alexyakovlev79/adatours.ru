@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_plaza_francia",
+  "stableId": "destination_argentina_plaza_francia",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/plaza-francia/",
+  "sourceFingerprint": "c2865aceb392963666158ee996f37361a785f32e755d7624985fd8ae6788107f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 1504741402
+    }
+  },
+  "alternateNames": [
+    "Plaza Francia (Aconcagua)"
+  ],
+  "location": {
+    "latitude": -32.6772064,
+    "longitude": -69.974442,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/1504741402.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_argentina_confluencia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/20a7fd65b9538b8fefe6ab3881997fe22206a1ed/src/content/destinations/plaza-francia.md",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Горная местность Пласа-Франсия у Южной стены Аконкагуа; MD описывает акклиматизационный выход из Конфлуэнсии. Не площадь в Буэнос-Айресе."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mendoza.gov.ar/wp-content/uploads/sites/71/2020/12/Trekking-ENG.pdf",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Горная местность Пласа-Франсия у Южной стены Аконкагуа; MD описывает акклиматизационный выход из Конфлуэнсии. Не площадь в Буэнос-Айресе."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/plaza-francia/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Прямой HTTP GET 200; self-canonical и заголовок соответствуют объекту. Stable ID, текущий MD и точная source-index entry сверены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/1504741402.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первичный OSM API прочитан; имя, класс, контекст совпадают: Горная местность Пласа-Франсия у Южной стены Аконкагуа; MD описывает акклиматизационный выход из Конфлуэнсии. Не площадь в Буэнос-Айресе."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/1504741402.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Местное/английское название объекта подтверждено карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/1504741402.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Выбрана survey-точка именованной местности OSM, рядом с viewpoint 1504741855. Это опорная точка Plaza Francia, а не гарантированная конечная точка каждой прогулки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.mendoza.gov.ar/wp-content/uploads/sites/71/2020/12/Trekking-ENG.pdf",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Независимая сверка объекта и географического положения; не утверждается совпадение координат до последнего знака."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://outdoormendoza.com/en/aconcagua/trekking-plaza-francia-aconcagua/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Горная местность Пласа-Франсия у Южной стены Аконкагуа; MD описывает акклиматизационный выход из Конфлуэнсии. Не площадь в Буэнос-Айресе."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.mendoza.gov.ar/wp-content/uploads/sites/71/2020/12/Trekking-ENG.pdf",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Объект находится в Аргентине."
+    },
+    {
+      "field": "relationships.destination_argentina_confluencia",
+      "sourceUrl": "https://www.mendoza.gov.ar/wp-content/uploads/sites/71/2020/12/Trekking-ENG.pdf",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Акклиматизационный выход к Plaza Francia начинается из Confluencia."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "selected": "Plaza Francia (Aconcagua)",
+      "reason": "Горная местность Пласа-Франсия у Южной стены Аконкагуа; MD описывает акклиматизационный выход из Конфлуэнсии. Не площадь в Буэнос-Айресе."
+    },
+    {
+      "field": "external.osm",
+      "probability": 85,
+      "selected": "node/1504741402",
+      "reason": "Горная местность Пласа-Франсия у Южной стены Аконкагуа; MD описывает акклиматизационный выход из Конфлуэнсии. Не площадь в Буэнос-Айресе."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Plaza Francia (Aconcagua)",
+      "reason": "Название основного референта из точной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "selected": "-32.6772064, -69.974442; representative",
+      "reason": "Выбрана survey-точка именованной местности OSM, рядом с viewpoint 1504741855. Это опорная точка Plaza Francia, а не гарантированная конечная точка каждой прогулки."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Объект находится в Аргентине."
+    },
+    {
+      "field": "relationships.destination_argentina_confluencia",
+      "probability": 99,
+      "selected": "relatedPlace destination_argentina_confluencia",
+      "reason": "Акклиматизационный выход к Plaza Francia начинается из Confluencia."
+    }
+  ],
+  "reviewNote": "Различены именованная Plaza Francia и смотровые точки подхода. Программа может завершаться у более раннего mirador; координата имеет роль representative и не задает маршрут или доступность."
+}

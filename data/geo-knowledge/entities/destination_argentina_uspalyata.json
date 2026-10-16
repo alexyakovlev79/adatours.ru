@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_uspalyata",
+  "stableId": "destination_argentina_uspalyata",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/uspallata/",
+  "sourceFingerprint": "b510446044065eaf276c8d8783fd7b2dc755300f8ce2d8d855fb7ba9c41c9223",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q54127",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Uspallata"
+    },
+    "geonamesId": "3833358",
+    "osm": {
+      "type": "node",
+      "id": 198432129
+    }
+  },
+  "location": {
+    "latitude": -32.59093,
+    "longitude": -69.34796,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://mapcarta.com/20012394"
+  },
+  "alternateNames": [
+    "Uspallata"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/uspallata/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "HTTP 200; точный canonical совпал с очередью, stable ID и approved MD сверены на main cdd8b523a809da44458be6d763aa2c89541d2141. Населенный пункт Успальята на RN7 в Las Heras, Mendoza; не перевал, долина, аэропорт или бывшая железнодорожная станция."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://de.wikipedia.org/wiki/Uspallata",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Населенный пункт Успальята на RN7 в Las Heras, Mendoza; не перевал, долина, аэропорт или бывшая железнодорожная станция."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54127",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Населенный пункт Успальята на RN7 в Las Heras, Mendoza; не перевал, долина, аэропорт или бывшая железнодорожная станция."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Uspallata",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Населенный пункт Успальята на RN7 в Las Heras, Mendoza; не перевал, долина, аэропорт или бывшая железнодорожная станция."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54127",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "GeoNames ID 3833358 связан с точной сущностью в Wikidata."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/20012394",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Карточка на основе OSM указывает точный node 198432129; P625 и испанская Wikipedia дают (-32.566667,-69.316667), северо-восточнее застройки. Выбрана точка OSM населенного пункта через Mapcarta, согласующаяся с немецкой Wikipedia (32°35′28″S 69°20′52″W) и геопривязанными городскими фотографиями."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/20012394",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "P625 и испанская Wikipedia дают (-32.566667,-69.316667), северо-восточнее застройки. Выбрана точка OSM населенного пункта через Mapcarta, согласующаяся с немецкой Wikipedia (32°35′28″S 69°20′52″W) и геопривязанными городскими фотографиями."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://de.wikipedia.org/wiki/Uspallata",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Сверка географического контекста: Населенный пункт Успальята на RN7 в Las Heras, Mendoza; не перевал, долина, аэропорт или бывшая железнодорожная станция. P625 и испанская Wikipedia дают (-32.566667,-69.316667), северо-восточнее застройки. Выбрана точка OSM населенного пункта через Mapcarta, согласующаяся с немецкой Wikipedia (32°35′28″S 69°20′52″W) и геопривязанными городскими фотографиями."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Uspallata",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Местное название: Uspallata."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Uspallata",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Место находится в Аргентине; соответствует country_argentina в актуальном MD."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Uspallata",
+      "reason": "Населенный пункт Успальята на RN7 в Las Heras, Mendoza; не перевал, долина, аэропорт или бывшая железнодорожная станция."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q54127",
+      "reason": "Название, страна, география и референт страницы совпали; конкурирующие одноименные сущности исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Uspallata",
+      "reason": "Точная статья о выбранном месте, согласуется с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3833358",
+      "reason": "Идентификатор относится к выбранному месту, а не к одноименной административной территории."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "node/198432129",
+      "reason": "Точный place=village для Успальяты; в карточке также Q54127 и GeoNames 3833358."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-32.59093, -69.34796; settlement_center",
+      "reason": "P625 и испанская Wikipedia дают (-32.566667,-69.316667), северо-восточнее застройки. Выбрана точка OSM населенного пункта через Mapcarta, согласующаяся с немецкой Wikipedia (32°35′28″S 69°20′52″W) и геопривязанными городскими фотографиями."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Uspallata",
+      "reason": "Название прямо используется в прочитанном внешнем источнике."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна совпадает в MD и внешнем источнике."
+    }
+  ],
+  "reviewNote": "P625 и испанская Wikipedia дают (-32.566667,-69.316667), северо-восточнее застройки. Выбрана точка OSM населенного пункта через Mapcarta, согласующаяся с немецкой Wikipedia (32°35′28″S 69°20′52″W) и геопривязанными городскими фотографиями."
+}

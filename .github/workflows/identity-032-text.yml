@@ -1,0 +1,42 @@
+name: Identity 032 compact source texts
+on:
+  push:
+    branches: [automation/identity-032-20261016]
+    paths: [.github/workflows/identity-032-text.yml]
+permissions:
+  contents: write
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: automation/identity-032-20261016
+          sparse-checkout: data/external-identity/working-032
+      - shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,re
+          from pathlib import Path
+          root=Path('data/external-identity/working-032')
+          keep={'id','title','slug','status','country','destination','destinationName','duration','format','language','priceFrom','currency','priceNote','route','lead','included','notIncluded','notes'}
+          for p in sorted(root.glob('inputs-*.json')):
+              out=[]
+              for row in json.loads(p.read_text()):
+                  raw=row['raw_md']; parts=raw.split('---',2)
+                  front=parts[1];body=parts[2]
+                  lines=[];active=False
+                  for line in front.splitlines():
+                      m=re.match(r'^([A-Za-z][A-Za-z0-9]*):',line)
+                      if m: active=m.group(1) in keep
+                      if active: lines.append(line)
+                  out += ['# '+row['key'],row['ru_url'],'SOURCE: '+row['source_path'],'\n'.join(lines),body,'\n']
+              (root/(p.stem.replace('inputs','texts')+'.md')).write_text('\n'.join(out))
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/external-identity/working-032/texts-*.md
+          git diff --cached --quiet || git commit -m 'audit(identity): compact batch 032 source text [skip ci]'
+          git push origin HEAD:automation/identity-032-20261016

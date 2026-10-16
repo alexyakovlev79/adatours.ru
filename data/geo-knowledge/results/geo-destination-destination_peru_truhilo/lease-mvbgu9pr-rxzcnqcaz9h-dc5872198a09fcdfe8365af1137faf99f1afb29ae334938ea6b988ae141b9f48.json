@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_truhilo",
+  "stableId": "destination_peru_truhilo",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/trujillo/",
+  "sourceFingerprint": "3f451d6cf7788702e9c5da18b8b47d879847c112c19ae39c570e0d97fdf910cd",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q214173",
+    "geonamesId": "3691175",
+    "osm": {
+      "type": "node",
+      "id": 272377981
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Trujillo_(Per%C3%BA)"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/829696675d32833cf18ebb696ee714747a28f04b/src/content/destinations/truhilo.md",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD описывает перуанский Трухильо у Чан-Чана и Уанчако в Ла-Либертад. Исключены города Испании/Венесуэлы, провинция и соседние достопримечательности."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/trujillo/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Проверен опубликованный точный URL: HTTP 200, H1 и canonical совпадают с задачей, noindex отсутствует."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q214173",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD описывает перуанский Трухильо у Чан-Чана и Уанчако в Ла-Либертад. Исключены города Испании/Венесуэлы, провинция и соседние достопримечательности."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.geonames.org/3691175/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Источник явно помещает выбранный объект в Перу; страна совпадает с countryId исходного MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q214173",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD описывает перуанский Трухильо у Чан-Чана и Уанчако в Ла-Либертад. Исключены города Испании/Венесуэлы, провинция и соседние достопримечательности."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3691175/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Trujillo (Seat of a first-order administrative division). Population 1,067,700. Located in South America, Peru, La Libertad, Provincia de Trujillo, Trujillo Province, Trujillo. Coordinates -8.1160, -79.0300."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/272377981",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Прямое OSM API: place=city, name=Trujillo, wikidata=Q214173; совпадает с выбранным городом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.openstreetmap.org/node/272377981",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная ссылка на статью о выбранном объекте, связанная из OSM/Wikidata; URL открыт, не страница неоднозначностей."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3691175/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная WGS84-точка из JSON-LD выбранной GeoNames-карточки. Репрезентативная точка объекта, не утверждение о единственном центре."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q214173",
+      "reason": "MD описывает перуанский Трухильо у Чан-Чана и Уанчако в Ла-Либертад. Исключены города Испании/Венесуэлы, провинция и соседние достопримечательности."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "City",
+      "reason": "MD описывает перуанский Трухильо у Чан-Чана и Уанчако в Ла-Либертад. Исключены города Испании/Венесуэлы, провинция и соседние достопримечательности."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "География исходного MD совпадает с внешней точной карточкой/национальным туристическим порталом."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q214173",
+      "reason": "MD описывает перуанский Трухильо у Чан-Чана и Уанчако в Ла-Либертад. Исключены города Испании/Венесуэлы, провинция и соседние достопримечательности."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3691175",
+      "reason": "Точная GeoNames-карточка совпадает по названию, типу объекта и административной географии. "
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/272377981",
+      "reason": "Проверены тип, имя и перекрёстный идентификатор/оператор непосредственно в OSM API."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Trujillo_(Per%C3%BA)",
+      "reason": "MD описывает перуанский Трухильо у Чан-Чана и Уанчако в Ла-Либертад. Исключены города Испании/Венесуэлы, провинция и соседние достопримечательности."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-8.11599,-79.02998",
+      "reason": "Точка выбранного объекта из указанного первичного геосправочника с явной ролью representative."
+    }
+  ],
+  "reviewNote": "Выбран город, не одноимённая административная единица. Точка GeoNames репрезентативная; отличается от точки OSM города, не усреднялась и не заявлена единственным центром.",
+  "location": {
+    "latitude": -8.11599,
+    "longitude": -79.02998,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3691175/"
+  }
+}

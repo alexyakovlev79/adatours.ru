@@ -1,0 +1,76 @@
+name: Identity 032 bounded EN evidence
+on:
+  push:
+    branches: [automation/identity-032-20261016]
+    paths: [.github/workflows/identity-032-evidence.yml]
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: automation/identity-032-20261016
+          sparse-checkout: data/external-identity
+      - shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json,re,hashlib,urllib.request,urllib.parse,urllib.error
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from datetime import datetime,timezone
+          root=Path('data/external-identity'); out=root/'working-032'
+          q=json.loads((root/'work-queues-20261012/adatours.com.json').read_text())
+          (out/'queue-shapes.json').write_text(json.dumps({'confirmed_pair_example':q['confirmed_pairs'][0],'confirmed_pair_last':q['confirmed_pairs'][-1]},ensure_ascii=False,indent=2)+'\n')
+          class Reader(HTMLParser):
+              def __init__(self):super().__init__();self.skip=0;self.parts=[];self.links=[];self.href=None;self.label=[]
+              def handle_starttag(self,tag,attrs):
+                  a=dict(attrs)
+                  if tag in ('script','style'):self.skip+=1
+                  if tag=='a':self.href=a.get('href');self.label=[]
+                  if tag=='link' and a.get('rel')=='canonical':self.links.append({'rel':'canonical','href':a.get('href')})
+              def handle_endtag(self,tag):
+                  if tag in ('script','style') and self.skip:self.skip-=1
+                  if tag=='a' and self.href:self.links.append({'href':self.href,'label':' '.join(self.label)});self.href=None
+              def handle_data(self,text):
+                  t=' '.join(text.split())
+                  if not self.skip and t:
+                      self.parts.append(t)
+                      if self.href:self.label.append(t)
+          urls=['https://adatours.com/plazas-island','https://adatours.com/north-seymour-island']
+          records=[]
+          for n,u in enumerate(urls,1):
+              if n>4:break
+              now=datetime.now(timezone.utc).isoformat()
+              try:
+                  req=urllib.request.Request(u,headers={'User-Agent':'Mozilla/5.0 (compatible; AdaToursIdentityAudit/1.0)'})
+                  with urllib.request.urlopen(req,timeout=20) as r:
+                      body=r.read(2000000);code=r.status;final=r.geturl()
+                  p=Reader();p.feed(body.decode('utf-8','replace'))
+                  text='\n'.join(p.parts)
+                  pos=text.find('Duration');stop=text.find('Popular with tourists',pos)
+                  chosen=text[max(0,pos-160):] if stop<0 else text[max(0,pos-160):stop]
+                  # Keep service conditions after the common recommendations section as well.
+                  a=text.find('Excursion composition');b=text.find('You might be interested',a)
+                  if a>=0:chosen+='\n'+text[a:b if b>=0 else a+7000]
+                  (out/('en-direct-%02d.md'%n)).write_text(u+'\nObserved: '+now+'\n'+chosen+'\n')
+                  rec={'url':u,'final_url':final,'http_status':code,'checked_at':now,'sha256':hashlib.sha256(body).hexdigest(),'text_file':'en-direct-%02d.md'%n}
+                  records.append(rec)
+                  for link in p.links:
+                      if 'Highlands with turtles' in link.get('label',''):
+                          candidate=urllib.parse.urljoin(final,link['href'])
+                          if urllib.parse.urlparse(candidate).hostname=='adatours.com' and candidate not in urls:urls.append(candidate)
+              except Exception as e:
+                  records.append({'url':u,'checked_at':now,'error':str(e)})
+                  if isinstance(e,urllib.error.HTTPError) and e.code in (403,429):break
+          (out/'direct-evidence-index.json').write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps(records,ensure_ascii=False))
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/external-identity/working-032
+          git diff --cached --quiet || git commit -m 'audit(identity): save limited direct EN evidence [skip ci]'
+          git push origin HEAD:automation/identity-032-20261016

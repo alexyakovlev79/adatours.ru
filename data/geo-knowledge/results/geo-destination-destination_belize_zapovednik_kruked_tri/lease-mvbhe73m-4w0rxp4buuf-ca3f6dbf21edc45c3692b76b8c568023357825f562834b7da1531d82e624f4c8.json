@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_zapovednik_kruked_tri",
+  "stableId": "destination_belize_zapovednik_kruked_tri",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/crooked-tree-wildlife-sanctuary/",
+  "sourceFingerprint": "344bf5658c8a58f4e5cc09b176f67c5d666cb670faeb5bb0070acf6c607b459b",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "wildlife sanctuary",
+  "external": {
+    "wikidataQid": "Q5187869",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Crooked_Tree_Wildlife_Sanctuary"
+    },
+    "geonamesId": "6942297"
+  },
+  "location": {
+    "latitude": 17.733333333333334,
+    "longitude": -88.48305555555555,
+    "pointRole": "representative",
+    "coordinateSource": "https://rsis.ramsar.org/ris/946"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/crooked-tree-wildlife-sanctuary/",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP-проверка: 200; canonical совпадает; H1 и stable ID соответствуют approved MD и source-index. Точное имя охраняемого комплекса лагун и контекст наблюдения птиц совпадают с MD; не деревня Crooked Tree."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5187869",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Проверены живой Special:EntityData JSON, имя, P31 и P17. Точное имя охраняемого комплекса лагун и контекст наблюдения птиц совпадают с MD; не деревня Crooked Tree."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5187869",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Точная enwiki sitelink этого QID: https://en.wikipedia.org/wiki/Crooked_Tree_Wildlife_Sanctuary"
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5187869",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P31 и описание соответствуют классу wildlife sanctuary."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5187869",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P17: Q242 Belize; совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://rsis.ramsar.org/ris/946",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Выбрана representative-точка Ramsar 946: 17°44′N 88°28′59″W. Wikidata P625 17.724,-88.543 и GeoNames 17.79420,-88.53390 отличаются; точки не усреднялись. Реестр Ramsar описывает несколько групп водно-болотных угодий, точка не вход и не геометрический центр."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/6942297/crooked-tree-wildlife-sanctuary.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP 200; имя, страна и feature class проверены. Точное имя охраняемого комплекса лагун и контекст наблюдения птиц совпадают с MD; не деревня Crooked Tree."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/6942297/crooked-tree-wildlife-sanctuary.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Независимая сверка географического контекста и опубликованной точки; расхождение и выбранная роль отражены в reviewNote. Выбрана representative-точка Ramsar 946: 17°44′N 88°28′59″W. Wikidata P625 17.724,-88.543 и GeoNames 17.79420,-88.53390 отличаются; точки не усреднялись. Реестр Ramsar описывает несколько групп водно-болотных угодий, точка не вход и не геометрический центр."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://rsis.ramsar.org/ris/946",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Первичный реестр Ramsar: Crooked Tree Wildlife Sanctuary, Belize; комплекс лагун, отдельные участки водно-болотных угодий."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Crooked Tree Wildlife Sanctuary",
+      "reason": "Точное имя охраняемого комплекса лагун и контекст наблюдения птиц совпадают с MD; не деревня Crooked Tree."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5187869",
+      "reason": "Точное имя охраняемого комплекса лагун и контекст наблюдения птиц совпадают с MD; не деревня Crooked Tree."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Crooked_Tree_Wildlife_Sanctuary",
+      "reason": "Точная статья enwiki из проверенной карточки Wikidata выбранного объекта."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "wildlife sanctuary",
+      "reason": "Класс объекта подтвержден MD и P31 выбранного QID."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна совпадает в текущем MD, entry и P17."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "17.733333333333334, -88.48305555555555",
+      "reason": "Выбрана representative-точка Ramsar 946: 17°44′N 88°28′59″W. Wikidata P625 17.724,-88.543 и GeoNames 17.79420,-88.53390 отличаются; точки не усреднялись. Реестр Ramsar описывает несколько групп водно-болотных угодий, точка не вход и не геометрический центр."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "6942297",
+      "reason": "Карточка GeoNames соответствует имени, стране и географическому типу; идентификатор не выбирался только по близости точки."
+    }
+  ],
+  "reviewNote": "Выбрана representative-точка Ramsar 946: 17°44′N 88°28′59″W. Wikidata P625 17.724,-88.543 и GeoNames 17.79420,-88.53390 отличаются; точки не усреднялись. Реестр Ramsar описывает несколько групп водно-болотных угодий, точка не вход и не геометрический центр."
+}

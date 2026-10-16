@@ -27,18 +27,18 @@
     "Только 2026 — сверить позже": 69,
     "Нет подтверждённых соответствий": 119,
     "Только 2027 — не менять": 61,
-    "siteCatalogRows": 392,
+    "siteCatalogRows": 393,
     "publishedTourPages": 387,
     "files2026": 433,
     "subfolders2026": 52,
     "programRecords2026": 327,
-    "matchedProgramRecords2026": 235,
-    "unresolvedProgramRecords2026": 92,
+    "matchedProgramRecords2026": 236,
+    "unresolvedProgramRecords2026": 91,
     "excludedFiles2026": 26,
-    "matchedFiles2026": 303,
-    "unresolvedFiles2026": 104,
-    "matchedSiteTours2026": 212,
-    "Только 2026 — сверено": 23
+    "matchedFiles2026": 305,
+    "unresolvedFiles2026": 102,
+    "matchedSiteTours2026": 213,
+    "Только 2026 — сверено": 24
   },
   "folders": [
     {
@@ -729,11 +729,13 @@
           "header": "6 стран Латинской Америки\nБразилия ∙ Аргентина ∙ Уругвай- Чили ∙ Боливия - Перу\n23.10-11.11.2026\n23.10 Рио-де-Жанейрo\nТрансфер в аэропорт . Перелет в Рио-де-Жанейро. Трансфер в отель. \n24.10  Рио-де-Жанейро\nЗавтрак. Встреча в холле отеля с гидом \nЭкскурсия на гору Корковадо к статуе Христа (4 часа) в группе, с  русскоговорящим гидом.\nПрибытие на ст"
         }
       ],
-      "status": "unresolved",
-      "entityIds": [],
+      "status": "matched",
+      "entityIds": [
+        "tour_latin_america_six_countries_20_days_2026"
+      ],
       "linked2027ProgramKey": null,
-      "method": null,
-      "note": "Точное соответствие не установлено: названия, длительность или состав маршрута не дают однозначной пары. Новый тур не создавался.",
+      "method": "exact_word_full_route_comparison_new_product",
+      "note": "Отдельный тур на 20 дней: включенный Монтевидео и отдельная обзорная Лима. Word 2026 полностью перенесен; 2027 соответствия нет. Публикация разрешена пользователем 16.10.2026; ожидаются deploy и таблицы.",
       "candidates": [
         {
           "entityId": "tour_source_karnaval_5_stran",
@@ -761,8 +763,9 @@
         }
       ],
       "work": {
-        "state": "not_requested",
-        "note": "Только инвентаризация. Не означает сверку содержания, актуализацию или публикацию."
+        "state": "in_progress",
+        "updatedAt": "2026-10-16",
+        "note": "Full Word verified; places/excursions/ready enhanced images linked. User authorized public main publication on 16.10.2026. Pending deploy and Sheets sync."
       }
     },
     {
@@ -18264,7 +18267,6 @@
       ],
       "unconfirmed2026Candidates": [
         "Y26-007: 8 countries 22.10-22.11.2026 500 USD (1).docx",
-        "Y26-008: 6 countries 23.10-11.11.2026 500 USD (1).docx",
         "Y26-017: Great South America VIP 2025 20_.docx",
         "Y26-030: 5 Countries Latin America Deluxe.docx",
         "Y26-037: Patagonia Argentina 2025 +Chile, Bolivia Peru.docx",
@@ -19816,9 +19818,7 @@
       "programKeys2026": [],
       "sources2026": [],
       "notes": [],
-      "unconfirmed2026Candidates": [
-        "Y26-008: 6 countries 23.10-11.11.2026 500 USD (1).docx"
-      ],
+      "unconfirmed2026Candidates": [],
       "action": "Уточнить источник / наличие продукта",
       "contentCompared": false
     },
@@ -21717,7 +21717,6 @@
         "Установлена только идентичность программы; цены, услуги и даты не сверялись. Содержание подлежит отдельной последующей сверке с Word 2026."
       ],
       "unconfirmed2026Candidates": [
-        "Y26-008: 6 countries 23.10-11.11.2026 500 USD (1).docx",
         "Y26-158: Brazil, Argentina, Chile, Bolivia & Peru 22d21n RUS com 20%.docx"
       ],
       "action": "Позже выверить с 2026",
@@ -25649,9 +25648,7 @@
       "notes": [
         "Установлена только идентичность программы; цены, услуги и даты не сверялись. Содержание подлежит отдельной последующей сверке с Word 2026."
       ],
-      "unconfirmed2026Candidates": [
-        "Y26-008: 6 countries 23.10-11.11.2026 500 USD (1).docx"
-      ],
+      "unconfirmed2026Candidates": [],
       "action": "Позже выверить с 2026",
       "contentCompared": false
     },
@@ -29811,6 +29808,55 @@
       ],
       "unconfirmed2026Candidates": [],
       "action": "Создано и опубликовано по Word 2026",
+      "contentCompared": true
+    },
+    {
+      "entityId": "tour_latin_america_six_countries_20_days_2026",
+      "name": "6 стран Латинской Америки за 20 дней: от Рио до Мачу-Пикчу",
+      "url": "https://adatours.ru/multi-country/tour/latin-america-6-countries-20-days/",
+      "contentPath": "src/content/tours/latin-america-6-countries-20-days.md",
+      "hasPublishedPage": false,
+      "status": "pending_deploy",
+      "sheetRow": null,
+      "group": "Только 2026 — сверено",
+      "sources2027": [],
+      "sheet2027Label": "",
+      "programKeys2026": [
+        "Y26-008"
+      ],
+      "sources2026": [
+        {
+          "driveId": "1ADQQeg93JexEivjnmM120229N1Z6NFBk",
+          "name": "6 countries 23.10-11.11.2026 500 USD (1).docx",
+          "url": "https://docs.google.com/document/d/1ADQQeg93JexEivjnmM120229N1Z6NFBk/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+          "folderId": "1zGWUcbfNkbn4_C1p7fNecoh8mD4J5sDt",
+          "path": "8 countries tour October november/6 countries 23.10-11.11.2026 500 USD (1).docx",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "modifiedTime": "2026-08-13T20:35:05.000Z",
+          "bytes": "4456503",
+          "identityRead": "document_text",
+          "textSha256": "4f6d96e8f27b6470ffd2016591916b8522a0c4db5914fe581c8a3ce74723ac68",
+          "header": "6 стран Латинской Америки\nБразилия ∙ Аргентина ∙ Уругвай- Чили ∙ Боливия - Перу\n23.10-11.11.2026\n23.10 Рио-де-Жанейрo\nТрансфер в аэропорт . Перелет в Рио-де-Жанейро. Трансфер в отель. \n24.10  Рио-де-Жанейро\nЗавтрак. Встреча в холле отеля с гидом \nЭкскурсия на гору Корковадо к статуе Христа (4 часа) в группе, с  русскоговорящим гидом.\nПрибытие на ст"
+        },
+        {
+          "driveId": "1Bu0vgPjrWLiNfQ3daFBou8Uj2EHOpu0K",
+          "name": "6 countries 23.10-11.11.2026 500 USD.docx",
+          "url": "https://docs.google.com/document/d/1Bu0vgPjrWLiNfQ3daFBou8Uj2EHOpu0K/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+          "folderId": "1GtgCNBI9NDIdWWc9QSt9_pTag03C8g0W",
+          "path": "Multi countries 2026/6 countries 23.10-11.11.2026 500 USD.docx",
+          "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "modifiedTime": "2026-06-26T17:32:54.000Z",
+          "bytes": "4456503",
+          "identityRead": "document_text",
+          "textSha256": "4f6d96e8f27b6470ffd2016591916b8522a0c4db5914fe581c8a3ce74723ac68",
+          "header": "6 стран Латинской Америки\nБразилия ∙ Аргентина ∙ Уругвай- Чили ∙ Боливия - Перу\n23.10-11.11.2026\n23.10 Рио-де-Жанейрo\nТрансфер в аэропорт . Перелет в Рио-де-Жанейро. Трансфер в отель. \n24.10  Рио-де-Жанейро\nЗавтрак. Встреча в холле отеля с гидом \nЭкскурсия на гору Корковадо к статуе Христа (4 часа) в группе, с  русскоговорящим гидом.\nПрибытие на ст"
+        }
+      ],
+      "notes": [
+        "Отдельный тур на 20 дней: включенный Монтевидео и отдельная обзорная Лима. Word 2026 полностью перенесен; 2027 соответствия нет. Публикация разрешена пользователем 16.10.2026; ожидаются deploy и таблицы."
+      ],
+      "unconfirmed2026Candidates": [],
+      "action": "Ожидается публикация нового тура",
       "contentCompared": true
     }
   ],

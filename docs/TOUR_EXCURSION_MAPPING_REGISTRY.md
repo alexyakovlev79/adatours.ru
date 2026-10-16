@@ -1701,3 +1701,31 @@ Tour: `tour_chile_marble_caves_san_rafael_three_days`. Word Анны: https://do
 | 29 (19.11.2026) | `excursion_source_siti_tur_po_kartakhene` | Включено по Word |
 | 30 (20.11.2026) | `excursion_source_siti_tur_v_bogote` | Включено по Word |
 | 31 (21.11.2026) | `excursion_colombia_zipaquira_salt_cathedral_5_hours` | Включено по Word |
+
+
+## 16.10.2026 — Y26-008: 6 стран за 20 дней
+
+Tour `tour_latin_america_six_countries_20_days_2026`; источник https://docs.google.com/document/d/1ADQQeg93JexEivjnmM120229N1Z6NFBk/edit. Все 20 дней и 20 экскурсионных модулей сохранены. Использованы существующие canonical Excursion; варианты условий сохранены в contentBlocks[].text. Публикация ожидает Actions.
+
+| День | Excursion ID |
+|---|---|
+| 2 | `excursion_rio_corcovado_train_christ` |
+| 3 | `excursion_rio_sugarloaf_city_four_hours` |
+| 5 | `excursion_iguazu_brazil_group_russian_program` |
+| 5 | `excursion_source_park_jekzoticheskih_ptic_v_iguasu` |
+| 5 | `excursion_source_makuko_safari` |
+| 6 | `excursion_iguazu_argentina_group_russian_program` |
+| 7 | `excursion_source_buenos_ajres_sochetanie_istorii_i_iskusstva` |
+| 7 | `excursion_buenos_aires_tango_show_dinner` |
+| 8 | `excursion_source_ekskursiya_po_montevideo` |
+| 10 | `excursion_santiago_historic_east_russian_group` |
+| 10 | `excursion_santiago_maipo_wine_tour` |
+| 11 | `excursion_atacama_astronomy_telescope_evening` |
+| 12 | `excursion_source_uyuni_na_2_dnya` |
+| 14 | `excursion_la_paz_city_moon_valley_four_hours` |
+| 15 | `excursion_source_la_pas_tiuanako_i_desaguadero_tur` |
+| 15 | `excursion_puno_uros_reed_islands_afternoon` |
+| 16 | `excursion_puno_cusco_andes_tourist_bus` |
+| 17 | `excursion_source_ekskursiya_v_zateryannyj_gorod_machu_pikchu` |
+| 18 | `excursion_cusco_archaeological_sites_russian_guide` |
+| 19 | `excursion_lima_huallamarca_cathedral_santo_domingo` |

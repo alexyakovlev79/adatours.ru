@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_zoopark_beliza",
+  "stableId": "destination_belize_zoopark_beliza",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/belize-zoo/",
+  "sourceFingerprint": "ec152ec77b32b2224bf4d7b1b83eb1d2db34f5b8ce79633b4f82fb58477a75e9",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "zoo",
+  "external": {
+    "wikidataQid": "Q260740",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Belize_Zoo"
+    },
+    "officialUrl": "https://www.belizezoo.org/"
+  },
+  "location": {
+    "latitude": 17.3511504,
+    "longitude": -88.5523581,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.belizezoo.org/plan-your-visit/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/belize-zoo/",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP-проверка: 200; canonical совпадает; H1 и stable ID соответствуют approved MD и source-index. Зоопарк на George Price Highway между Белиз-Сити и Бельмопаном соответствует описанию MD и собственному сайту."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q260740",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Проверены живой Special:EntityData JSON, имя, P31 и P17. Зоопарк на George Price Highway между Белиз-Сити и Бельмопаном соответствует описанию MD и собственному сайту."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q260740",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Точная enwiki sitelink этого QID: https://en.wikipedia.org/wiki/Belize_Zoo"
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q260740",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P31 и описание соответствуют классу zoo."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q260740",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P17: Q242 Belize; совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.belizezoo.org/plan-your-visit/",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Координаты — place pin из ссылки Google Maps на официальной странице Plan Your Visit (3d17.3511504!4d-88.5523581); representative, не подтвержденный вход. P625 Wikidata 17.35361111,-88.54972222 отличается примерно на 0.4 км; не усреднена. Геометрия OSM way 542003754 охватывает малый участок, поэтому OSM не добавлен. Почтовый адрес Belmopan не является доказательством физического нахождения в городе."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.belizezoo.org/",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Официальная страница учреждения/уполномоченной лесной службы точно об объекте; не автоматический sameAs страны или города."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/way/542003754",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Независимая сверка: объект Belize Zoo, tourism=zoo, wikidata=Q260740, в непосредственной окрестности официального place pin; геометрия малого участка не принята за границы всего зоопарка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://maps.app.goo.gl/m4cmPKRTjsDAPpie6",
+      "checkedAt": "2026-10-16T21:35:15.176Z",
+      "note": "Ссылка Google Maps непосредственно с официального сайта зоопарка раскрывается в /maps/place/The+Belize+Zoo+and+Tropical+Education+Center/ с координатой place pin !3d17.3511504!4d-88.5523581. Для location выбрана эта точка, а не viewport @17.3511555,-88.554933."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Belize Zoo",
+      "reason": "Зоопарк на George Price Highway между Белиз-Сити и Бельмопаном соответствует описанию MD и собственному сайту."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q260740",
+      "reason": "Зоопарк на George Price Highway между Белиз-Сити и Бельмопаном соответствует описанию MD и собственному сайту."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Belize_Zoo",
+      "reason": "Точная статья enwiki из проверенной карточки Wikidata выбранного объекта."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "zoo",
+      "reason": "Класс объекта подтвержден MD и P31 выбранного QID."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна совпадает в текущем MD, entry и P17."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "17.3511504, -88.5523581",
+      "reason": "Координаты — place pin из ссылки Google Maps на официальной странице Plan Your Visit (3d17.3511504!4d-88.5523581); representative, не подтвержденный вход. P625 Wikidata 17.35361111,-88.54972222 отличается примерно на 0.4 км; не усреднена. Геометрия OSM way 542003754 охватывает малый участок, поэтому OSM не добавлен. Почтовый адрес Belmopan не является доказательством физического нахождения в городе."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.belizezoo.org/",
+      "reason": "Собственный сайт зоопарка / государственная лесная служба, точная страница объекта."
+    },
+    {
+      "field": "external.osm",
+      "probability": 65,
+      "selected": "way/542003754",
+      "reason": "Имя и QID совпадают, но маленькая геометрия может описывать только часть комплекса; поле опущено."
+    }
+  ],
+  "reviewNote": "Координаты — place pin из ссылки Google Maps на официальной странице Plan Your Visit (3d17.3511504!4d-88.5523581); representative, не подтвержденный вход. P625 Wikidata 17.35361111,-88.54972222 отличается примерно на 0.4 км; не усреднена. Геометрия OSM way 542003754 охватывает малый участок, поэтому OSM не добавлен. Почтовый адрес Belmopan не является доказательством физического нахождения в городе."
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_veu_de_noiva_chapada",
+  "stableId": "destination_brazil_veu_de_noiva_chapada",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/veu-de-noiva-chapada/",
+  "sourceFingerprint": "d4d3904ed1d65d9628a84d477dafb96b40bc5fe771990db7af62a89e65908899",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "entityClass": "waterfall",
+  "alternateNames": [
+    "Cachoeira Véu de Noiva",
+    "Véu de Noiva — Chapada dos Guimarães"
+  ],
+  "external": {
+    "officialUrl": "https://turismo.chapadadosguimaraes.mt.gov.br/Pontos-Turisticos/Veu-de-noiva-17"
+  },
+  "reviewNote": "Точная идентичность водопада в Parque Nacional da Chapada dos Guimarães подтверждена официальной муниципальной карточкой. Координаты конфликтуют: SGB geosite 2191 WGS84 (-15.414999962,-55.825000763); карта из официальной туристической карточки ведёт на POI (-15.4088695,-55.8322346), примерно 1 км от SGB. Wikipedia содержит одновременно 15°24′31″S 55°49′55″W и 15°41′27″S 56°23′20″W; P625 Q1754208=(-15.69083333,-56.38888889), а P131 указывает Nossa Senhora do Livramento, далеко от нужного водопада. location, QID и Wikipedia не присвоены. Требуется адресная проверка физической точки/роли (водопад, смотровая, вход, геосайт); нельзя усреднять или автоматически брать P625.",
+  "evidence": [
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://turismo.chapadadosguimaraes.mt.gov.br/Pontos-Turisticos/Veu-de-noiva-17",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Exact municipal tourist page titled VÉU DE NOIVA explicitly identifies the waterfall in Chapada dos Guimarães National Park and its viewing platform. Retained as official descriptive page, not asserted as a separate geographic object."
+    },
+    {
+      "field": "location.conflict",
+      "sourceUrl": "https://www.sgb.gov.br/geossit/geossitios/ver/2191",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "SGB records named geosite at latitude -15.414999962, longitude -55.825000763, datum WGS84; classifies location municipality Cuiabá. No coordinates accepted pending reconciliation with exact visitor/physical point."
+    },
+    {
+      "field": "location.conflict",
+      "sourceUrl": "https://maps.app.goo.gl/Eo21tm7k1SVhhVrm6",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Link actually followed from the municipality's 'Clique aqui para ver rotas'; resolved destination includes !3d-15.4088695!4d-55.8322346. This is a visitor-map POI, not proof of the waterfall's surveyed position."
+    },
+    {
+      "field": "external.wikidataQid.rejected",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1754208.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Exact ptwiki sitelink exists, but P625 and P131 conflict materially with intended Chapada waterfall. QID withheld rather than silently importing wrong coordinates."
+    },
+    {
+      "field": "external.wikipedia.rejected",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Cachoeira_Véu_de_Noiva_(Mato_Grosso)",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Article has two incompatible coordinate sets and the infobox location Nossa Senhora do Livramento while prose describes Chapada dos Guimarães. Exact page inspected; not accepted as clean external identity."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/veu-de-noiva-chapada.md",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Current approved MD stable ID, countryId=country_brazil and canonical entry were inspected; external identity evidence also places the object in Brazil."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/veu-de-noiva-chapada/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Direct HTTP GET returned 200 at the exact canonical URL with matching title and rel=canonical. Search-service fetch could not access the site; direct network verification succeeded."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/veu-de-noiva-chapada/"
+    ],
+    "findings": [
+      "Live page HTTP 200; final URL and HTML canonical match the claimed path.",
+      "Current production MD and source-index entry inspected; approved entity in Brazil.",
+      "External identity scope and coordinate point role checked; no public JSON-LD authored by collector."
+    ]
+  }
+}

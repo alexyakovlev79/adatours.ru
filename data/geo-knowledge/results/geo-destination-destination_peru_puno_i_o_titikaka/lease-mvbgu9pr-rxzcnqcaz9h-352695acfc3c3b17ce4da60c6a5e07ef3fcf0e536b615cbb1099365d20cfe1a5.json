@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_puno_i_o_titikaka",
+  "stableId": "destination_peru_puno_i_o_titikaka",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/puno-and-lake-titicaca/",
+  "sourceFingerprint": "000f9aaef1969f0c6ed1e0b8024bc338638ed6b9462cbb88103faa07f1addce0",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "Place",
+  "external": {
+    "wikidataQid": "Q232842",
+    "geonamesId": "3931276",
+    "osm": {
+      "type": "node",
+      "id": 59043304
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Puno"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/829696675d32833cf18ebb696ee714747a28f04b/src/content/destinations/puno-i-o-titikaka.md",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Первый именованный референт H1 — Пуно; подзаголовок прямо называет город на озере, большинство иллюстраций — город Пуно. Выбран город Пуно как основной объект и отправная точка к Урос; официальная PROMPERU подтверждает этот туристический контекст. Вся составная страница не отождествляется с трансграничным озером."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/puno-and-lake-titicaca/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Проверен опубликованный точный URL: HTTP 200, H1 и canonical совпадают с задачей, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/destinations/puno",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Первый именованный референт H1 — Пуно; подзаголовок прямо называет город на озере, большинство иллюстраций — город Пуно. Выбран город Пуно как основной объект и отправная точка к Урос; официальная PROMPERU подтверждает этот туристический контекст. Вся составная страница не отождествляется с трансграничным озером."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/destinations/puno",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Первый именованный референт H1 — Пуно; подзаголовок прямо называет город на озере, большинство иллюстраций — город Пуно. Выбран город Пуно как основной объект и отправная точка к Урос; официальная PROMPERU подтверждает этот туристический контекст. Вся составная страница не отождествляется с трансграничным озером."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/destinations/puno",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Источник явно помещает выбранный объект в Перу; страна совпадает с countryId исходного MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q232842",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Первый именованный референт H1 — Пуно; подзаголовок прямо называет город на озере, большинство иллюстраций — город Пуно. Выбран город Пуно как основной объект и отправная точка к Урос; официальная PROMPERU подтверждает этот туристический контекст. Вся составная страница не отождествляется с трансграничным озером."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3931276/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Puno (Seat of a first-order administrative division). Population 128,637. Located in South America, Peru, Puno, Puno Province, Puno, Puno. Coordinates -15.8400, -70.0220."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/59043304",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Прямое OSM API: place=city, name=Puno, wikidata=Q232842; совпадает с выбранным городом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.openstreetmap.org/node/59043304",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная ссылка на статью о выбранном объекте, связанная из OSM/Wikidata; URL открыт, не страница неоднозначностей."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3931276/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная WGS84-точка из JSON-LD выбранной GeoNames-карточки. Репрезентативная точка объекта, не утверждение о единственном центре."
+    }
+  ],
+  "confidence": "medium",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 86,
+      "selected": "Q232842",
+      "reason": "Первый именованный референт H1 — Пуно; подзаголовок прямо называет город на озере, большинство иллюстраций — город Пуно. Выбран город Пуно как основной объект и отправная точка к Урос; официальная PROMPERU подтверждает этот туристический контекст. Вся составная страница не отождествляется с трансграничным озером."
+    },
+    {
+      "field": "entityClass",
+      "probability": 90,
+      "selected": "Place",
+      "reason": "Первый именованный референт H1 — Пуно; подзаголовок прямо называет город на озере, большинство иллюстраций — город Пуно. Выбран город Пуно как основной объект и отправная точка к Урос; официальная PROMPERU подтверждает этот туристический контекст. Вся составная страница не отождествляется с трансграничным озером."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "География исходного MD совпадает с внешней точной карточкой/национальным туристическим порталом."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 86,
+      "selected": "Q232842",
+      "reason": "Первый именованный референт H1 — Пуно; подзаголовок прямо называет город на озере, большинство иллюстраций — город Пуно. Выбран город Пуно как основной объект и отправная точка к Урос; официальная PROMPERU подтверждает этот туристический контекст. Вся составная страница не отождествляется с трансграничным озером."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 86,
+      "selected": "3931276",
+      "reason": "Точная GeoNames-карточка совпадает по названию, типу объекта и административной географии. Основной референт — город Пуно."
+    },
+    {
+      "field": "external.osm",
+      "probability": 86,
+      "selected": "node/59043304",
+      "reason": "Проверены тип, имя и перекрёстный идентификатор/оператор непосредственно в OSM API."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 86,
+      "selected": "https://es.wikipedia.org/wiki/Puno",
+      "reason": "Первый именованный референт H1 — Пуно; подзаголовок прямо называет город на озере, большинство иллюстраций — город Пуно. Выбран город Пуно как основной объект и отправная точка к Урос; официальная PROMPERU подтверждает этот туристический контекст. Вся составная страница не отождествляется с трансграничным озером."
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "selected": "-15.84003,-70.02198",
+      "reason": "Точка выбранного объекта из указанного первичного геосправочника с явной ролью representative."
+    }
+  ],
+  "reviewNote": "Составное редакционное направление «Пуно и озеро Титикака»: основной референт — город Пуно (86%). QID/OSM/GN и координаты относятся к городу, а не ко всему озеру или островам Урос. Титикака и Урос не сведены к одной географической сущности.",
+  "location": {
+    "latitude": -15.84003,
+    "longitude": -70.02198,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3931276/"
+  }
+}

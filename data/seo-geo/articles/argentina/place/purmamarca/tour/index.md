@@ -90,7 +90,7 @@ lead: >-
 
 {{catalog.tourTable:tour_source_udivitelnaya_salta,tour_source_buenos_ajres_salta_iguasu,tour_source_vlyubites_v_argentinu,tour_source_vsya_argentina,tour_source_chili_i_argentina_vip,tour_argentina_grand_tour_15_days_2027}}
 
-Для других вариантов по стране можно открыть [каталог туров по Аргентине](/argentina/tour/), а для сочетания Аргентины с соседними странами — [каталог многострановых маршрутов](/multi-country/tour/). Подробный рассказ о самом поселке, его истории и достопримечательностях размещен на странице [Пурмамарки](/argentina/place/purmamarca/).
+Для других вариантов по стране можно открыть [каталог туров по Аргентине](/argentina/tour/), а для сочетания Аргентины с соседними странами — [каталог многострановых маршрутов](/multi-country/). Подробный рассказ о самом поселке, его истории и достопримечательностях размещен на странице [Пурмамарки](/argentina/place/purmamarca/).
 
 ## Частые вопросы о турах через Пурмамарку
 

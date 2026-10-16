@@ -22,7 +22,7 @@ lead: >-
 
 {{catalog.tourTable:tour_source_mir_majya,tour_source_gvatemala_gonduras_i_beliz,tour_source_gvatemala_gonduras_el_salvador_beliz,tour_source_luchshee_v_tsentralnoj_amerike}}
 
-Если важнее подробно познакомиться с Гватемалой, начните с [каталога туров по стране](/guatemala/tour/). Для поездки по нескольким государствам подойдут [маршруты Центральной Америки](/multi-country/tour/). А если главная цель — археология, полезно сравнить программы в [подборке культурно-исторических туров по Гватемале](/interests/culture-and-history/tours/guatemala/).
+Если важнее подробно познакомиться с Гватемалой, начните с [каталога туров по стране](/guatemala/tour/). Для поездки по нескольким государствам подойдут [маршруты Центральной Америки](/multi-country/). А если главная цель — археология, полезно сравнить программы в [подборке культурно-исторических туров по Гватемале](/interests/culture-and-history/tours/guatemala/).
 
 ## Почему Киригуа выделяется среди городов майя
 

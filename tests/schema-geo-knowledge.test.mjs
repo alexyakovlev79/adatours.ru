@@ -82,6 +82,13 @@ test('cannot abort a committed publication, even after a publisher restart',()=>
  c.recordCommit(state,{batchId:'b1',ownerId:'geo-master',commit:'a'.repeat(40),now:args.now});
  assert.throws(()=>c.abortUncommittedPublication(state,{batchId:'b1',ownerId:'geo-master'}),/Cannot abort/);
 });
+import {receiptMatchesPublication} from '../scripts/schema-geo-autoconfirm.mjs';
+test('autoconfirm uses the immutable exact release receipt and deploy SHA',()=>{
+ const p={batchId:'geo-full',status:'DEPLOYING',commit:'b'.repeat(40),jobs:[{jobId:'geo-job-a',resultHash:'hash1'}]};
+ assert.equal(receiptMatchesPublication(p,{batchId:p.batchId,jobs:p.jobs},p.commit),true);
+ assert.equal(receiptMatchesPublication(p,{batchId:p.batchId,jobs:[{...p.jobs[0],resultHash:'changed'}]},p.commit),false);
+ assert.equal(receiptMatchesPublication(p,{batchId:p.batchId,jobs:p.jobs},'c'.repeat(40)),false);
+});
 import {runSchemaGeo} from '../scripts/schema-geo-remote.mjs';
 function mockGithub({dropReply=false,queueData=queue,manifestData={maxStage:1,batchSize:10}}={}) {
  let head='0'.repeat(40),serial=0,dropped=false;

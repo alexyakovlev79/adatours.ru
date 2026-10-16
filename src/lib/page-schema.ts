@@ -7,8 +7,23 @@ import { buildStructuredData } from './structured-data.mjs';
 import { inspectHtml } from './structured-data-html.mjs';
 import { inspectSeoGeoArticle } from './seo-geo-schema.mjs';
 import externalProfiles from '../../data/external-identity/external-profiles.json';
+import confirmedEnglishPairs from '../../data/external-identity/adatours-com-correspondences.json';
 import { collectSeoPagePrices, enrichSeoPriceMetadata, formatSeoMoney } from './seo-price-meta.mjs';
 
+// The external audit distinguishes confirmed identity from similar offers,
+// theme catalogues, near-duplicates and candidates. Only the exact pair may
+// become sameAs; never make assumptions from matching names or country.
+const confirmedById = new Map<string, Array<{ kind: string; ru: string; en: string }>>();
+for (const row of confirmedEnglishPairs.rows) {
+  const [entityId, kind, , ru, en, status] = row;
+  if (status !== 'confirmed' || !['country', 'destination', 'tour', 'excursion'].includes(kind)) continue;
+  try {
+    if (new URL(ru).origin !== new URL(SITE.url).origin || new URL(en).origin !== 'https://adatours.com') continue;
+    const pairs = confirmedById.get(entityId) || [];
+    pairs.push({ kind, ru, en });
+    confirmedById.set(entityId, pairs);
+  } catch { /* Malformed registry rows never create identity assertions. */ }
+}
 let recordsPromise: Promise<any[]> | undefined;
 async function loadRecords() {
   const groups = await Promise.all([
@@ -20,7 +35,15 @@ async function loadRecords() {
     (d: any) => `/team/${d.slug}/`, (d: any) => `/cases/${d.slug}/`, (d: any) => `/articles/${d.slug}/`];
   return groups.flatMap((group, i) => group.filter(({ data }) => data.locale === 'ru'
     && (isActiveEntity(data) || ['tour', 'excursion'].includes(kinds[i]) && isArchivedEntity(data)))
-    .map(({ data }) => ({ kind: kinds[i], data, path: paths[i](data as any), archived: isArchivedEntity(data) })));
+    .map(({ data }) => {
+      const path = paths[i](data as any);
+      const url = new URL(path, SITE.url).href;
+      const verifiedSameAs = [...new Set((confirmedById.get(data.id) || [])
+        .filter((pair) => pair.kind === kinds[i] && pair.ru === url)
+        .map((pair) => pair.en))];
+      return { kind: kinds[i], path, archived: isArchivedEntity(data),
+        data: verifiedSameAs.length ? { ...data, verifiedSameAs } : data };
+    }));
 }
 export async function pageStructuredData(input: {
   root: string; html: string; path: string; url: string; title: string; description: string; lang: string; image?: string;

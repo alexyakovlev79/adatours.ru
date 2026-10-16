@@ -125,3 +125,17 @@ test('organization uses only confirmed independent article as subjectOf', () => 
   assert.equal(external['@type'], 'Article');
   assert.equal(node(graph, 'Organization').subjectOf[0]['@id'], external['@id']);
 });
+
+test('only explicitly verified cross-language canonical pairs become entity sameAs', () => {
+  const identified = { ...pantanal, data: { ...pantanal.data,
+    verifiedSameAs: ['https://adatours.com/pantanal'] } };
+  const graph = buildStructuredData({ root, organization: org, records: [brazil, identified],
+    page: { path: identified.path, url: root + 'brazil/place/pantanal/',
+      title: 'Пантанал', description: 'Природа', lang: 'ru' } });
+  const place = id(graph, root + 'brazil/place/pantanal/#place');
+  assert.deepEqual(place.sameAs, ['https://adatours.com/pantanal']);
+  const without = buildStructuredData({ root, organization: org, records: [brazil, pantanal],
+    page: { path: pantanal.path, url: root + 'brazil/place/pantanal/',
+      title: 'Пантанал', description: 'Природа', lang: 'ru' } });
+  assert.equal(id(without, root + 'brazil/place/pantanal/#place').sameAs, undefined);
+});

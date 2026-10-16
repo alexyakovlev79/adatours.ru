@@ -158,6 +158,7 @@ export function buildStructuredData({ root, organization, records, page, documen
     const url = absoluteUrl(record.path, root);
     const node = { '@type': publicType(record), '@id': id, name: recordName(record), url,
       identifier: d.id, description: full ? cleanText(d.lead || d.summary || d.description) || undefined : undefined,
+      sameAs: d.verifiedSameAs?.filter((source) => /^https:\/\/adatours\.com\//.test(source)),
       mainEntityOfPage: ref(`${url}#webpage`) };
     // Detailed images belong on their detail page, not on a card with a different cover.
     if (full && imageRef) node.image = imageRef;

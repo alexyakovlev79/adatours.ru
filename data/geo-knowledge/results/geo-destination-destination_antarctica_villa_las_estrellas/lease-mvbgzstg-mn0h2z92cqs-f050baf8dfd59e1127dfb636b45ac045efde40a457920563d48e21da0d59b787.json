@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_villa_las_estrellas",
+  "stableId": "destination_antarctica_villa_las_estrellas",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/villa-las-estrellas/",
+  "sourceFingerprint": "06150192eea2fc5c99f1c10650b7c06469c34be4de8e8c97448b94a34fd77f19",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q2745332",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Villa_Las_Estrellas"
+    },
+    "geonamesId": "9072762"
+  },
+  "location": {
+    "latitude": -62.200417,
+    "longitude": -58.965278,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Villa_Las_Estrellas"
+  },
+  "alternateNames": [
+    "Villa Las Estrellas"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_antarctica_ostrov_king_dzhordzh"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_antarctica_stanciya_frej"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/villa-las-estrellas/",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Проверено напрямую HTTP 200, конечный URL и canonical совпадают с задачей, H1 совпадает с названием. MD approved и stable ID/source-index entry сверены на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Гражданское поселение Villa Las Estrellas на Кинг-Джордже в составе комплекса базы Фрей. Поселению присвоен собственный QID, не QID всей станции."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Villa_Las_Estrellas",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Гражданское поселение Villa Las Estrellas на Кинг-Джордже в составе комплекса базы Фрей. Поселению присвоен собственный QID, не QID всей станции."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2745332",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Точная карточка Q2745332: совпадают название, тип объекта и антарктическая география. Гражданское поселение Villa Las Estrellas на Кинг-Джордже в составе комплекса базы Фрей. Поселению присвоен собственный QID, не QID всей станции."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2745332",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Sitelink enwiki ведет к статье именно выбранного объекта Villa Las Estrellas."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2745332",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "GeoNames ID 9072762 явно указан в карточке Q2745332. Связь подтверждена cross-reference Wikidata; чтение GeoNames не используется как источник координат."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Villa_Las_Estrellas",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Выбрана актуальная точка английской статьи 62°12′02″S 58°57′55″W. P625 дает 62°12′0.7″S 58°57′50.8″W, примерно на 70 м в стороне; не усреднено. Это опорная точка поселения, не въезд."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2745332",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Независимая сверка идентичности точки и положения по P625. Выбрана актуальная точка английской статьи 62°12′02″S 58°57′55″W. P625 дает 62°12′0.7″S 58°57′50.8″W, примерно на 70 м в стороне; не усреднено. Это опорная точка поселения, не въезд."
+    },
+    {
+      "field": "relationships.destination_antarctica_ostrov_king_dzhordzh",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2745332",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Расположение на острове Кинг-Джордж (King George Island); stable ID целевого места найден в GEO очереди."
+    },
+    {
+      "field": "relationships.destination_antarctica_stanciya_frej",
+      "sourceUrl": "https://fach.mil.cl/personal-de-la-iv-brigada-aerea-resguardo-locales-de-votacion-en-la-region",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "FACH прямо связывает Villa Las Estrellas с базой Presidente Eduardo Frei Montalva; при этом это отдельные идентичности."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2745332",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Английское название точной карточки выбранного объекта."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Villa Las Estrellas",
+      "reason": "Проверено напрямую HTTP 200, конечный URL и canonical совпадают с задачей, H1 совпадает с названием. MD approved и stable ID/source-index entry сверены на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Гражданское поселение Villa Las Estrellas на Кинг-Джордже в составе комплекса базы Фрей. Поселению присвоен собственный QID, не QID всей станции."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2745332",
+      "reason": "Точная карточка Q2745332: совпадают название, тип объекта и антарктическая география. Гражданское поселение Villa Las Estrellas на Кинг-Джордже в составе комплекса базы Фрей. Поселению присвоен собственный QID, не QID всей станции."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Villa_Las_Estrellas",
+      "reason": "Sitelink enwiki ведет к статье именно выбранного объекта Villa Las Estrellas."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "9072762",
+      "reason": "GeoNames ID 9072762 явно указан в карточке Q2745332. Связь подтверждена cross-reference Wikidata; чтение GeoNames не используется как источник координат."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-62.200417, -58.965278 (settlement_center)",
+      "reason": "Выбрана актуальная точка английской статьи 62°12′02″S 58°57′55″W. P625 дает 62°12′0.7″S 58°57′50.8″W, примерно на 70 м в стороне; не усреднено. Это опорная точка поселения, не въезд."
+    },
+    {
+      "field": "relationships.destination_antarctica_ostrov_king_dzhordzh",
+      "probability": 99,
+      "selected": "destination_antarctica_ostrov_king_dzhordzh",
+      "reason": "Расположение на острове Кинг-Джордж (King George Island); stable ID целевого места найден в GEO очереди."
+    },
+    {
+      "field": "relationships.destination_antarctica_stanciya_frej",
+      "probability": 99,
+      "selected": "destination_antarctica_stanciya_frej",
+      "reason": "FACH прямо связывает Villa Las Estrellas с базой Presidente Eduardo Frei Montalva; при этом это отдельные идентичности."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Villa Las Estrellas",
+      "reason": "Английское название точной карточки выбранного объекта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Гражданское поселение Villa Las Estrellas на Кинг-Джордже в составе комплекса базы Фрей. Поселению присвоен собственный QID, не QID всей станции. Выбрана актуальная точка английской статьи 62°12′02″S 58°57′55″W. P625 дает 62°12′0.7″S 58°57′50.8″W, примерно на 70 м в стороне; не усреднено. Это опорная точка поселения, не въезд."
+}

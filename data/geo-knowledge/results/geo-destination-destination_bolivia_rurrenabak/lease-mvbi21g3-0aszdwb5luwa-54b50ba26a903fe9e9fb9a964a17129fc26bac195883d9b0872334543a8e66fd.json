@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_rurrenabak",
+  "stableId": "destination_bolivia_rurrenabak",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/rurrenabaque/",
+  "sourceFingerprint": "64ba85026bebcc3ab2f943ee6042921e74008fbce6f0873b0b14bdfc0be37cd6",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "town",
+  "external": {
+    "wikidataQid": "Q749372",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Rurrenabaque"
+    }
+  },
+  "location": {
+    "latitude": -14.4422222222,
+    "longitude": -67.5283333333,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q749372"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/rurrenabaque/",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прямая HTTP-проверка: 200; H1 совпадает с названием, canonical точно совпадает, noindex отсутствует. Город Рурренабак на реке Бени в департаменте Бени, отправная точка водных поездок в Мадиди. Не одноименный муниципалитет Q1516809."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/rurrenabaque.md",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прочитаны текущие MD и source-index entry; stable ID, status: approved, country_bolivia и смысл страницы совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q749372",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Город Рурренабак на реке Бени в департаменте Бени, отправная точка водных поездок в Мадиди. Не одноименный муниципалитет Q1516809."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q749372",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Город Рурренабак на реке Бени в департаменте Бени, отправная точка водных поездок в Мадиди. Не одноименный муниципалитет Q1516809."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q749372",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Центральная точка населенного пункта 14°26′32″S 67°31′42″W совпадает в Wikidata и Wikipedia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rurrenabaque",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географическая сверка. Центральная точка населенного пункта 14°26′32″S 67°31′42″W совпадает в Wikidata и Wikipedia."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q749372",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географические источники относят объект к Боливии; совпадает с countryId MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q749372",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Город Рурренабак на реке Бени в департаменте Бени, отправная точка водных поездок в Мадиди. Не одноименный муниципалитет Q1516809."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rurrenabaque",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Точная статья о выбранном географическом объекте. Город Рурренабак на реке Бени в департаменте Бени, отправная точка водных поездок в Мадиди. Не одноименный муниципалитет Q1516809."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Рурренабак на реке Бени в департаменте Бени, отправная точка водных поездок в Мадиди. Не одноименный муниципалитет Q1516809."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "reason": "Город Рурренабак на реке Бени в департаменте Бени, отправная точка водных поездок в Мадиди. Не одноименный муниципалитет Q1516809.",
+      "selected": "town"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Центральная точка населенного пункта 14°26′32″S 67°31′42″W совпадает в Wikidata и Wikipedia.",
+      "selected": "-14.4422222222, -67.5283333333"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "Проверенный countryId и внешний источник согласованы.",
+      "selected": "country_bolivia"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Город Рурренабак на реке Бени в департаменте Бени, отправная точка водных поездок в Мадиди. Не одноименный муниципалитет Q1516809.",
+      "selected": "Q749372"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Город Рурренабак на реке Бени в департаменте Бени, отправная точка водных поездок в Мадиди. Не одноименный муниципалитет Q1516809.",
+      "selected": "https://en.wikipedia.org/wiki/Rurrenabaque"
+    }
+  ],
+  "reviewNote": null
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_tumbes",
+  "stableId": "destination_peru_tumbes",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/tumbes/",
+  "sourceFingerprint": "48296def5efafef6820492d96d59a29b33b05529e132c8353a22b5c8a8116eb9",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q827640",
+    "geonamesId": "3691148",
+    "osm": {
+      "type": "node",
+      "id": 338539511
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Tumbes"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/829696675d32833cf18ebb696ee714747a28f04b/src/content/destinations/tumbes.md",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Город Тумбес назван основным объектом summary/текста; пляжи и природа региона описаны как окружение. Не одноимённый департамент или провинция."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/tumbes/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Проверен опубликованный точный URL: HTTP 200, H1 и canonical совпадают с задачей, noindex отсутствует."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q827640",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Город Тумбес назван основным объектом summary/текста; пляжи и природа региона описаны как окружение. Не одноимённый департамент или провинция."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.geonames.org/3691148/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Источник явно помещает выбранный объект в Перу; страна совпадает с countryId исходного MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q827640",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Город Тумбес назван основным объектом summary/текста; пляжи и природа региона описаны как окружение. Не одноимённый департамент или провинция."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3691148/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Tumbes (Seat of a first-order administrative division). Population 96,946. Located in South America, Peru, Tumbes, Provincia de Tumbes, Tumbes Province, Tumbes. Coordinates -3.5559, -80.4426."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/338539511",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Прямое OSM API: place=city, name=Tumbes, wikidata=Q827640; совпадает с выбранным городом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.openstreetmap.org/node/338539511",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная ссылка на статью о выбранном объекте, связанная из OSM/Wikidata; URL открыт, не страница неоднозначностей."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3691148/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная WGS84-точка из JSON-LD выбранной GeoNames-карточки. Репрезентативная точка объекта, не утверждение о единственном центре."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Q827640",
+      "reason": "Город Тумбес назван основным объектом summary/текста; пляжи и природа региона описаны как окружение. Не одноимённый департамент или провинция."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "City",
+      "reason": "Город Тумбес назван основным объектом summary/текста; пляжи и природа региона описаны как окружение. Не одноимённый департамент или провинция."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "География исходного MD совпадает с внешней точной карточкой/национальным туристическим порталом."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q827640",
+      "reason": "Город Тумбес назван основным объектом summary/текста; пляжи и природа региона описаны как окружение. Не одноимённый департамент или провинция."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3691148",
+      "reason": "Точная GeoNames-карточка совпадает по названию, типу объекта и административной географии. "
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/338539511",
+      "reason": "Проверены тип, имя и перекрёстный идентификатор/оператор непосредственно в OSM API."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://es.wikipedia.org/wiki/Tumbes",
+      "reason": "Город Тумбес назван основным объектом summary/текста; пляжи и природа региона описаны как окружение. Не одноимённый департамент или провинция."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-3.55592,-80.44258",
+      "reason": "Точка выбранного объекта из указанного первичного геосправочника с явной ролью representative."
+    }
+  ],
+  "reviewNote": "Выбран город, не одноимённая административная единица. Точка GeoNames репрезентативная; отличается от точки OSM города, не усреднялась и не заявлена единственным центром.",
+  "location": {
+    "latitude": -3.55592,
+    "longitude": -80.44258,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3691148/"
+  }
+}

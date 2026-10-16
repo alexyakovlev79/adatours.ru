@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_bonito",
+  "stableId": "destination_brazil_bonito",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/bonito/",
+  "sourceFingerprint": "ab91547e87bf36f890d86d8f271967bd549224712778cb3818dbb5b2616769d1",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "composite",
+  "entityClass": "town and surrounding ecotourism area",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/bonito.md",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "В production MD destinationType=natural_area, текст прямо объединяет Бонито и окрестности, включая Рио-да-Прата. Q768535 относится к муниципалитету Бонито, а не всему туристическому региону; официальный туристический портал Бонито относит фотоматериалы Rio da Prata к Jardim MS. Сначала определить границы/компоненты географической сущности, затем назначать точную идентичность. Координаты города и QID муниципалитета не подставлены вместо составной территории."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_bonito.json",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "ID, countryIds и canonicalPath соответствуют текущей точной source-index entry."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/bonito/",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Прямой HTTPS GET 16.10.2026 14:00:06 UTC: HTTP 200, точный rel=canonical подтверждён."
+    },
+    {
+      "field": "audit.identityScope",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q768535",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Кандидат Q768535 — муниципалитет Bonito в Mato Grosso do Sul; не выделенная natural_area."
+    },
+    {
+      "field": "audit.identityScope",
+      "sourceUrl": "https://www.turismo.bonito.ms.gov.br/galeria-de-fotos/rio-da-prata",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Официальный туристический портал публикует Rio da Prata среди туристических окрестностей; имена материалов включают Jardim MS."
+    }
+  ],
+  "reviewNote": "В production MD destinationType=natural_area, текст прямо объединяет Бонито и окрестности, включая Рио-да-Прата. Q768535 относится к муниципалитету Бонито, а не всему туристическому региону; официальный туристический портал Бонито относит фотоматериалы Rio da Prata к Jardim MS. Сначала определить границы/компоненты географической сущности, затем назначать точную идентичность. Координаты города и QID муниципалитета не подставлены вместо составной территории.",
+  "audit": {
+    "checkedUrls": [
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/bonito.md",
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_bonito.json",
+      "https://adatours.ru/brazil/place/bonito/",
+      "https://www.wikidata.org/wiki/Q768535",
+      "https://www.turismo.bonito.ms.gov.br/galeria-de-fotos/rio-da-prata"
+    ],
+    "findings": [
+      "В production MD destinationType=natural_area, текст прямо объединяет Бонито и окрестности, включая Рио-да-Прата. Q768535 относится к муниципалитету Бонито, а не всему туристическому региону; официальный туристический портал Бонито относит фотоматериалы Rio da Prata к Jardim MS. Сначала определить границы/компоненты географической сущности, затем назначать точную идентичность. Координаты города и QID муниципалитета не подставлены вместо составной территории."
+    ],
+    "proposedChanges": [
+      "Уточнить географический охват без смены stable ID и URL; внешние идентификаторы частей хранить отдельно и не выдавать за sameAs целой страницы."
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_belo_horizonte",
+  "stableId": "destination_brazil_belo_horizonte",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/belo-horizonte/",
+  "sourceFingerprint": "2c360ad77a0afcfbc2a8e68e92537a6c0b81d89dab9b9c2d3bc5ce0495b15abf",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "city; state capital",
+  "external": {
+    "wikidataQid": "Q42800",
+    "geonamesId": "3470127"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://adatours.ru/brazil/place/belo-horizonte/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "HTTP 200; exact self canonical; H1 Белу-Оризонти; no noindex. Current main MD id/countryId/status and source-index id/URL agree; observed content Git blob a064238d5396c8fc23637345c97014e8f47fb3b1."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://adatours.ru/brazil/place/belo-horizonte/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Published place corresponds to current approved MD with countryId country_brazil; entry countryIds [country_brazil]."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42800",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Belo Horizonte; exact geographical identity in Minas Gerais, Brazil. Class matches the published city's/settlement's scope; not a homonymous microregion, lighthouse or individual attraction."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3470127/belo-horizonte.html",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Exact named populated place Belo Horizonte in Minas Gerais, Brazil; selected populated-place record, not an administrative-area centroid."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3470127/belo-horizonte.html",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "WGS84 named-settlement representative point copied from GeoNames exact populated-place record. Not asserted as geometric centroid, administrative boundary, hotel entrance or individual attraction. No averaged coordinates."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42800",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Independent-source comparison with Wikidata P625 -19.9280556, -43.9419444: separation approximately 914 m. Both identify the same named city/settlement and administrative region. P625 used for identity/location cross-check only; retained GeoNames representative point unchanged, with different reference points recorded rather than averaged."
+    }
+  ],
+  "alternateNames": [
+    "Belo Horizonte"
+  ],
+  "location": {
+    "latitude": -19.92083,
+    "longitude": -43.93778,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3470127/belo-horizonte.html"
+  },
+  "reviewNote": "Роль координат — representative, не единственный центр города. Разница с P625 914 м зафиксирована в evidence; точки не усреднялись."
+}

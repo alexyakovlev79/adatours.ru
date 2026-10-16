@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_las_kuevas",
+  "stableId": "destination_argentina_las_kuevas",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/las-cuevas/",
+  "sourceFingerprint": "dbea6e7ebe74a4c46c6a9b73505bf4ad40bde77a8d3881ac61ea1e6a84d5e787",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1000523",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Las_Cuevas_(Mendoza)"
+    }
+  },
+  "location": {
+    "latitude": -32.81388889,
+    "longitude": -70.04972222,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1000523"
+  },
+  "alternateNames": [
+    "Las Cuevas"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/las-cuevas/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "HTTP 200; точный canonical совпал с очередью, stable ID и approved MD сверены на main cdd8b523a809da44458be6d763aa2c89541d2141. Высокогорный поселок Лас-Куэвас на RN7 в Mendoza у границы Чили. Не одноименные поселения других провинций и не пограничный перевал."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Las_Cuevas_(Mendoza)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Высокогорный поселок Лас-Куэвас на RN7 в Mendoza у границы Чили. Не одноименные поселения других провинций и не пограничный перевал."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1000523",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Высокогорный поселок Лас-Куэвас на RN7 в Mendoza у границы Чили. Не одноименные поселения других провинций и не пограничный перевал."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Las_Cuevas_(Mendoza)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Высокогорный поселок Лас-Куэвас на RN7 в Mendoza у границы Чили. Не одноименные поселения других провинций и не пограничный перевал."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1000523",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "P625 совпадает с точкой населенного пункта в испанской статье; роль — точка поселения, не погранпереход."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Las_Cuevas_(Mendoza)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Сверка географического контекста: Высокогорный поселок Лас-Куэвас на RN7 в Mendoza у границы Чили. Не одноименные поселения других провинций и не пограничный перевал. P625 совпадает с точкой населенного пункта в испанской статье; роль — точка поселения, не погранпереход."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Las_Cuevas_(Mendoza)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Местное название: Las Cuevas."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Las_Cuevas_(Mendoza)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Место находится в Аргентине; соответствует country_argentina в актуальном MD."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Las Cuevas",
+      "reason": "Высокогорный поселок Лас-Куэвас на RN7 в Mendoza у границы Чили. Не одноименные поселения других провинций и не пограничный перевал."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1000523",
+      "reason": "Название, страна, география и референт страницы совпали; конкурирующие одноименные сущности исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Las_Cuevas_(Mendoza)",
+      "reason": "Точная статья о выбранном месте, согласуется с MD и Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-32.81388888888888, -70.04972222222221; settlement_center",
+      "reason": "P625 совпадает с точкой населенного пункта в испанской статье; роль — точка поселения, не погранпереход."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Las Cuevas",
+      "reason": "Название прямо используется в прочитанном внешнем источнике."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна совпадает в MD и внешнем источнике."
+    }
+  ],
+  "reviewNote": "P625 совпадает с точкой населенного пункта в испанской статье; роль — точка поселения, не погранпереход."
+}

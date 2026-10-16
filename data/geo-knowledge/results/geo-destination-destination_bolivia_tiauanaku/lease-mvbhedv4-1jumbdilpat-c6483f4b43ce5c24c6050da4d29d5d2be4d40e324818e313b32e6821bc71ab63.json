@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_tiauanaku",
+  "stableId": "destination_bolivia_tiauanaku",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/tiwanaku/",
+  "sourceFingerprint": "58a6581e7bfac5a1dbaf8602e8b1744f87e3de85a561f284c61affb033aecd7d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "archaeological_site",
+  "external": {
+    "wikidataQid": "Q61750",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tiwanaku"
+    }
+  },
+  "location": {
+    "latitude": -16.5550030556,
+    "longitude": -68.6732780556,
+    "pointRole": "representative",
+    "coordinateSource": "https://whc.unesco.org/en/list/567/maps/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Руины с Воротами Солнца, Акапана и Каласасайя; не современный муниципалитет и не вся цивилизация.",
+      "selected": "Q61750"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Руины с Воротами Солнца, Акапана и Каласасайя; не современный муниципалитет и не вся цивилизация.",
+      "selected": "archaeological_site"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Руины с Воротами Солнца, Акапана и Каласасайя; не современный муниципалитет и не вся цивилизация.",
+      "selected": "Q61750"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Руины с Воротами Солнца, Акапана и Каласасайя; не современный муниципалитет и не вся цивилизация.",
+      "selected": "https://en.wikipedia.org/wiki/Tiwanaku"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Опорная точка UNESCO 16°33′18.011″S 68°40′23.801″W; P625 16°33′17″S 68°40′24″W отличается примерно на 32 м. Выбрана UNESCO, без усреднения.",
+      "selected": "-16.5550030556, -68.6732780556; representative"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "countryId в текущем approved MD и внешние географические источники совпадают.",
+      "selected": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/tiwanaku/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точный канонический URL открыт и доступен; заголовок и смысл опубликованной страницы сверены с approved MD на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Руины с Воротами Солнца, Акапана и Каласасайя; не современный муниципалитет и не вся цивилизация."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/tiauanaku.md",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Проверены stable ID, status: approved, country_bolivia и основной референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q61750",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Руины с Воротами Солнца, Акапана и Каласасайя; не современный муниципалитет и не вся цивилизация."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tiwanaku",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точная статья о выбранном объекте; сопоставлены название, страна, класс и географический контекст."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tiwanaku",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Руины с Воротами Солнца, Акапана и Каласасайя; не современный муниципалитет и не вся цивилизация."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://whc.unesco.org/en/list/567/maps/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Опорная точка UNESCO 16°33′18.011″S 68°40′23.801″W; P625 16°33′17″S 68°40′24″W отличается примерно на 32 м. Выбрана UNESCO, без усреднения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tiwanaku",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Сверка с другим представлением географического объекта. Опорная точка UNESCO 16°33′18.011″S 68°40′23.801″W; P625 16°33′17″S 68°40′24″W отличается примерно на 32 м. Выбрана UNESCO, без усреднения."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tiwanaku",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Объект расположен в Боливии, что согласуется с countryId текущего контента."
+    }
+  ],
+  "reviewNote": null
+}

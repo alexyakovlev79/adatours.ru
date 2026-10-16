@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_nacionalnyj_park_shapada_dus_gimarajns",
+  "stableId": "destination_brazil_nacionalnyj_park_shapada_dus_gimarajns",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/chapada-dos-guimaraes-national-park/",
+  "sourceFingerprint": "ca3b2fc639aaa6fc99e6bfbfb77806098b15869605420408a447e22df50ef3ba",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "national_park",
+  "external": {
+    "wikidataQid": "Q5072892",
+    "osm": {
+      "type": "relation",
+      "id": 10329722
+    },
+    "officialUrl": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/cerrado/lista-de-ucs/parna-da-chapada-dos-guimaraes/informacoes-sobre-visitacao-parna-chapada-dos-guimaraes/informacoes-sobre-visitacao-parna-chapada-dos-guimaraes"
+  },
+  "alternateNames": [
+    "Parque Nacional da Chapada dos Guimarães"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/chapada-dos-guimaraes-national-park/",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямой HTTP GET: 200, final URL совпадает, HTML canonical совпадает, title соответствует объекту. Stable ID, approved MD, countryId и точная source-index entry сверены в main."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5072892",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "National park in Mato Grosso, Brazil, P31 national park, P131 Chapada dos Guimarães/Cuiabá."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/10329722/full",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямое чтение: boundary=protected_area, protect_class=2, operator ICMBio, source ICMBio, wikidata=Q5072892, CNUC 00.0000.0138."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/cerrado/lista-de-ucs/parna-da-chapada-dos-guimaraes/informacoes-sobre-visitacao-parna-chapada-dos-guimaraes/informacoes-sobre-visitacao-parna-chapada-dos-guimaraes",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Точная страница ICMBio подтверждает национальный парк на территории Cuiabá и Chapada dos Guimarães, Mato Grosso."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5072892",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "P625 15°18′14.6″S 55°52′0.7″W; representative."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/10329722/full",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Независимый контур OSM sourced ICMBio: point-in-polygon true, 1 outer, 0 inner. Не утверждается центр или туристическая доступность."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/chapada-dos-guimaraes-national-park.md",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "В актуальном approved MD countryId=country_brazil; страна согласуется с внешними географическими источниками."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Это национальный парк, не муниципалитет Chapada dos Guimarães, не плато и не один водопад Véu de Noiva. P625 — опорная точка территории; подтверждено попадание в независимый контур ICMBio через OSM (1 outer, 0 inner). Не обозначает главный вход.",
+  "location": {
+    "latitude": -15.304055555555557,
+    "longitude": -55.86686111111111,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5072892"
+  }
+}

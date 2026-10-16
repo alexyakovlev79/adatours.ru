@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_laguna_kanyapa",
+  "stableId": "destination_bolivia_laguna_kanyapa",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/laguna-canapa/",
+  "sourceFingerprint": "f00710af8bf744cd183f91e25a486d250e368c97b5181b7cbb0a05c955050552",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "salt_lake",
+  "external": {
+    "wikidataQid": "Q3064882",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Laguna_Ca%C3%B1apa"
+    }
+  },
+  "location": {
+    "latitude": -21.505,
+    "longitude": -68.0138888889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3064882"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Соленая лагуна Каньяпа в Потоси рядом с Хедиондой; не гора Cerro Cañapa и не смотровая площадка.",
+      "selected": "Q3064882"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Соленая лагуна Каньяпа в Потоси рядом с Хедиондой; не гора Cerro Cañapa и не смотровая площадка.",
+      "selected": "salt_lake"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Соленая лагуна Каньяпа в Потоси рядом с Хедиондой; не гора Cerro Cañapa и не смотровая площадка.",
+      "selected": "Q3064882"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Соленая лагуна Каньяпа в Потоси рядом с Хедиондой; не гора Cerro Cañapa и не смотровая площадка.",
+      "selected": "https://es.wikipedia.org/wiki/Laguna_Ca%C3%B1apa"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Координаты Wikidata 21°30′18″S 68°00′50″W, подтверждены испанской Wikipedia с округлением; опорная точка озера.",
+      "selected": "-21.505, -68.0138888889; representative"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "countryId в текущем approved MD и внешние географические источники совпадают.",
+      "selected": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/laguna-canapa/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точный канонический URL открыт и доступен; заголовок и смысл опубликованной страницы сверены с approved MD на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Соленая лагуна Каньяпа в Потоси рядом с Хедиондой; не гора Cerro Cañapa и не смотровая площадка."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/laguna-canapa.md",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Проверены stable ID, status: approved, country_bolivia и основной референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3064882",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Соленая лагуна Каньяпа в Потоси рядом с Хедиондой; не гора Cerro Cañapa и не смотровая площадка."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_Ca%C3%B1apa",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точная статья о выбранном объекте; сопоставлены название, страна, класс и географический контекст."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_Ca%C3%B1apa",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Соленая лагуна Каньяпа в Потоси рядом с Хедиондой; не гора Cerro Cañapa и не смотровая площадка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3064882",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Координаты Wikidata 21°30′18″S 68°00′50″W, подтверждены испанской Wikipedia с округлением; опорная точка озера."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_Ca%C3%B1apa",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Сверка с другим представлением географического объекта. Координаты Wikidata 21°30′18″S 68°00′50″W, подтверждены испанской Wikipedia с округлением; опорная точка озера."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_Ca%C3%B1apa",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Объект расположен в Боливии, что согласуется с countryId текущего контента."
+    }
+  ],
+  "reviewNote": null
+}

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_fazenda_ponte_alta",
+  "stableId": "destination_brazil_fazenda_ponte_alta",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/fazenda-ponte-alta/",
+  "sourceFingerprint": "0e3ec4234ff4446638e0f6ce8e17d74990248721138103eb3853bf88653a615f",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "historic_farm",
+  "external": {
+    "wikidataQid": "Q18477413",
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Fazenda_Ponte_Alta_(Barra_do_Pira%C3%AD)"
+    },
+    "officialUrl": "https://pousadapontealta.com.br/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/fazenda-ponte-alta.md",
+      "checkedAt": "2026-10-16T15:46:28.769Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Точная история барона, музейно-гостиничная усадьба и Barra do Piraí совпали. Другие Fazenda Ponte Alta в São Paulo и иных штатах исключены."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/fazenda-ponte-alta/",
+      "checkedAt": "2026-10-16T15:40:23.220263+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://pousadapontealta.com.br/",
+      "checkedAt": "2026-10-16T15:46:28.769Z",
+      "note": "Новый прямой GET собственного сайта исторической усадьбы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Fazenda_Ponte_Alta_(Barra_do_Pira%C3%AD)",
+      "checkedAt": "2026-10-16T15:46:28.769Z",
+      "note": "Точная статья и её Wikidata mainEntity Q18477413 прочитаны повторно."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://pousadapontealta.com.br/",
+      "checkedAt": "2026-10-16T15:46:28.769Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Fazenda_Ponte_Alta_(Barra_do_Pira%C3%AD)",
+      "checkedAt": "2026-10-16T15:46:28.769Z",
+      "note": "Точная историческая усадьба Barra do Piraí по связанной статье; не Q67123779 São Paulo."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Fazenda_Ponte_Alta_(Barra_do_Pira%C3%AD)",
+      "checkedAt": "2026-10-16T15:46:28.769Z",
+      "note": "Статья о той же усадьбе и её истории."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://pousadapontealta.com.br/",
+      "checkedAt": "2026-10-16T15:46:28.769Z",
+      "note": "Собственный сайт усадьбы, не карточка бронирования."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://pousadapontealta.com.br/",
+      "checkedAt": "2026-10-16T15:46:28.769Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Историческая Fazenda Ponte Alta в Barra do Piraí, связанная с бароном Мамбукаба",
+      "reason": "Точная история барона, музейно-гостиничная усадьба и Barra do Piraí совпали. Другие Fazenda Ponte Alta в São Paulo и иных штатах исключены."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "historic_farm",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q18477413",
+      "reason": "Точная историческая усадьба Barra do Piraí по связанной статье; не Q67123779 São Paulo."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"pt\":\"https://pt.wikipedia.org/wiki/Fazenda_Ponte_Alta_(Barra_do_Pira%C3%AD)\"}",
+      "reason": "Статья о той же усадьбе и её истории."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://pousadapontealta.com.br/",
+      "reason": "Собственный сайт усадьбы, не карточка бронирования."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 65,
+      "reason": "WD/статья и гостиничная точка расходятся около2.2км; собственный сайт не дал точной геопривязки. Выбор конкретной точки пока ниже70%."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/fazenda-ponte-alta/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  }
+}

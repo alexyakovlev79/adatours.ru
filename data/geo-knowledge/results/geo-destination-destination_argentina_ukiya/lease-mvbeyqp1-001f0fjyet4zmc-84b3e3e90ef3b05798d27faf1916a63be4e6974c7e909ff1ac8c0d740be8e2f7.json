@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_ukiya",
+  "stableId": "destination_argentina_ukiya",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/uquia/",
+  "sourceFingerprint": "094dd22445ff3c126ec6ae70ce84c2d6fba0f358482064b6f0ae187ed2990930",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "alternateNames": [
+    "Uquía"
+  ],
+  "external": {
+    "wikidataQid": "Q3552109",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Uqu%C3%ADa"
+    },
+    "geonamesId": "3835384"
+  },
+  "location": {
+    "latitude": -23.30423,
+    "longitude": -65.35657,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3835384/senador-perez.html"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/cdd8b523a809da44458be6d763aa2c89541d2141/src/content/destinations/uquia.md",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Поселение Укия в Quebrada de Humahuaca, а не только церковь. Senador Pérez — историческое имя этой же локации, подтверждаемое GeoNames и Wikipedia."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/uquia/",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Проверено прямым HTTP GET: 200, self-canonical, заголовок совпадает с объектом; stable ID/contentPath/source-index сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3552109",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Поселение Укия в Quebrada de Humahuaca, а не только церковь. Senador Pérez — историческое имя этой же локации, подтверждаемое GeoNames и Wikipedia."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Uqu%C3%ADa",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Поселение Укия в Quebrada de Humahuaca, а не только церковь. Senador Pérez — историческое имя этой же локации, подтверждаемое GeoNames и Wikipedia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3835384/senador-perez.html",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Точка поселения GeoNames; P625 Q3552109 (-23.303611,-65.356111) находится рядом в пределах поселения. Не использована точка отдельной церкви."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3552109",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Поселение Укия в Quebrada de Humahuaca, а не только церковь. Senador Pérez — историческое имя этой же локации, подтверждаемое GeoNames и Wikipedia."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Uqu%C3%ADa",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Поселение Укия в Quebrada de Humahuaca, а не только церковь. Senador Pérez — историческое имя этой же локации, подтверждаемое GeoNames и Wikipedia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Uqu%C3%ADa",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Независимая сверка географического контекста; Точка поселения GeoNames; P625 Q3552109 (-23.303611,-65.356111) находится рядом в пределах поселения. Не использована точка отдельной церкви."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3835384/senador-perez.html",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Точная карточка GeoNames этого объекта; Поселение Укия в Quebrada de Humahuaca, а не только церковь. Senador Pérez — историческое имя этой же локации, подтверждаемое GeoNames и Wikipedia."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Uqu%C3%ADa",
+      "checkedAt": "2026-10-16T20:26:42.743Z",
+      "note": "Страна подтверждена точным объектом и MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Uquía",
+      "reason": "Поселение Укия в Quebrada de Humahuaca, а не только церковь. Senador Pérez — историческое имя этой же локации, подтверждаемое GeoNames и Wikipedia."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Uquía",
+      "reason": "Местное/английское название точно установленного объекта."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-23.30423, -65.35657; settlement_center",
+      "reason": "Точка поселения GeoNames; P625 Q3552109 (-23.303611,-65.356111) находится рядом в пределах поселения. Не использована точка отдельной церкви."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3552109",
+      "reason": "Поселение Укия в Quebrada de Humahuaca, а не только церковь. Senador Pérez — историческое имя этой же локации, подтверждаемое GeoNames и Wikipedia."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Uqu%C3%ADa",
+      "reason": "Точная статья об установленном основном референте, не disambiguation."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3835384",
+      "reason": "Поселение Укия в Quebrada de Humahuaca, а не только церковь. Senador Pérez — историческое имя этой же локации, подтверждаемое GeoNames и Wikipedia."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Страна/содержащий полуостров установлены по географии объекта."
+    }
+  ],
+  "reviewNote": null
+}

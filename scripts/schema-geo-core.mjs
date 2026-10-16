@@ -147,17 +147,28 @@ export function complete(queue,state,{ownerId,token,result,now}){
   state.jobs[j.jobId]={...previous,status:result.status,resultHash:hash,resultPath:path,completedToken:token,completedBy:ownerId,completedAt:new Date(now).toISOString()};delete state.leases[j.jobId];
   return {hash,path};
 }
-export function beginPublication(queue,state,{batchId,ownerId,now,limit=20}){
+export function beginPublication(queue,state,{batchId,ownerId,now}){
   const active=state.publication;
   if(active&&!['PUBLISHED','FAILED'].includes(active.status)){
     if(active.ownerId===ownerId&&active.batchId===batchId)return active;
     throw Error('Publication already in progress; reconcile commit/deploy before taking over');
   }
-  const jobs=queue.jobs.filter(j=>statusOf(state,j)==='READY').sort((a,b)=>a.stage-b.stage||a.sourceOrder-b.sourceOrder).slice(0,Math.min(20,Math.max(1,limit)));
+  // The publisher takes every READY result from this fixed snapshot. Collector batchSize is separate.
+  const jobs=queue.jobs.filter(j=>statusOf(state,j)==='READY')
+    .sort((a,b)=>a.stage-b.stage||a.sourceOrder-b.sourceOrder||a.jobId.localeCompare(b.jobId));
   if(!jobs.length)return null;
   state.publication={batchId,ownerId,status:'PUBLISHING',startedAt:new Date(now).toISOString(),jobs:jobs.map(j=>({jobId:j.jobId,resultHash:state.jobs[j.jobId].resultHash,resultPath:state.jobs[j.jobId].resultPath,sourceFingerprint:j.sourceFingerprint}))};
   for(const j of jobs)state.jobs[j.jobId].status='PUBLISHING';
   return state.publication;
+}
+export function abortUncommittedPublication(state,{batchId,ownerId}){
+  const p=state.publication;
+  if(!p||p.batchId!==batchId||p.ownerId!==ownerId||p.status!=='PUBLISHING'||p.commit)
+    throw Error('Cannot abort committed or foreign publication');
+  for(const j of p.jobs)if(state.jobs[j.jobId]?.status==='PUBLISHING')
+    state.jobs[j.jobId]={...state.jobs[j.jobId],status:'READY'};
+  state.publication=null;
+  return {batchId,restored:p.jobs.length};
 }
 export function recordCommit(state,{batchId,ownerId,commit,now}){
   const p=state.publication;if(!p||p.batchId!==batchId||p.ownerId!==ownerId||!['PUBLISHING','DEPLOYING'].includes(p.status))throw Error('Publication owner mismatch');

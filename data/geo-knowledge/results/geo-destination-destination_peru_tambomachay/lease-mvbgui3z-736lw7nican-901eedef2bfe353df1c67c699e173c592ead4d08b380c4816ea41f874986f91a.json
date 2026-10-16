@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_tambomachay",
+  "stableId": "destination_peru_tambomachay",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/tambomachay/",
+  "sourceFingerprint": "3a5d2a11ad6f87b239a80d1530c59d95d56d019970f65cde0609d5513f223c1d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "alternateNames": [
+    "Tambomachay"
+  ],
+  "external": {
+    "wikidataQid": "Q1360456",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tambomachay"
+    }
+  },
+  "location": {
+    "latitude": -13.480833,
+    "longitude": -71.964722,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1360456"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/tambomachay/",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Тамбомачай — археологический комплекс с каналами и церемониальными источниками у Куско; MD и COSITUC описывают тот же самостоятельный памятник."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://cosituccusco.pe/destinos/4/detalle/",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Тамбомачай — археологический комплекс с каналами и церемониальными источниками у Куско; MD и COSITUC описывают тот же самостоятельный памятник."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1360456",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Тамбомачай — археологический комплекс с каналами и церемониальными источниками у Куско; MD и COSITUC описывают тот же самостоятельный памятник."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tambomachay",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Проверена точная статья об этом памятнике/поселении; тип, страна и географический контекст совпадают с MD и соответствующей карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1360456",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "P625 Q1360456 задаёт точку выбранного археологического памятника в соответствующем районе Перу. Роль representative; координата не является входом или центром административного района."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1360456",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Проверены страна Peru в карточке выбранного объекта и перуанский контекст исходной страницы; связь с существующим stable ID country_peru."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tambomachay",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Местное латинское название и подтверждённые варианты именно выбранного объекта; название страны или соседнего объекта не добавлено."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "destination_peru_tambomachay",
+      "reason": "Тамбомачай — археологический комплекс с каналами и церемониальными источниками у Куско; MD и COSITUC описывают тот же самостоятельный памятник."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1360456",
+      "reason": "Тамбомачай — археологический комплекс с каналами и церемониальными источниками у Куско; MD и COSITUC описывают тот же самостоятельный памятник."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Tambomachay\"}",
+      "reason": "Проверена точная статья об этом памятнике/поселении; тип, страна и географический контекст совпадают с MD и соответствующей карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "-13.480833,-71.964722",
+      "reason": "P625 Q1360456 задаёт точку выбранного археологического памятника в соответствующем районе Перу. Роль representative; координата не является входом или центром административного района."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Проверены страна Peru в карточке выбранного объекта и перуанский контекст исходной страницы; связь с существующим stable ID country_peru."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Tambomachay",
+      "reason": "Местное латинское название и подтверждённые варианты именно выбранного объекта; название страны или соседнего объекта не добавлено."
+    }
+  ],
+  "reviewNote": null
+}

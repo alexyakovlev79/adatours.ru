@@ -23,15 +23,26 @@ export async function publishSchemaGeoAll(tools, core, remote, options={}) {
  if(recovery.status==='publication_requires_recovery')return {status:'previous_publication_requires_recovery',...recovery};
  // If an older batch just completed, recover it first. New claims arriving later wait for the next invocation.
  const active=(await json('data/geo-knowledge/state.json','schema-geo/staging')).publication;
- if(active&&active.status==='PUBLISHING'&&active.batchId!==batchId)
-  return {status:'existing_uncommitted_publication',batchId:active.batchId,ownerId:active.ownerId};
+ if(active&&active.status==='PUBLISHING'){
+  // Reconcile a main receipt from a previous, interrupted attempt before committing again.
+  const commits=await fetch(api+'/commits?path='+encodeURIComponent('data/geo-knowledge/releases/'+active.batchId+'.json')+'&per_page=5');
+  for(const c of commits){
+   const receipt=await json('data/geo-knowledge/releases/'+active.batchId+'.json',c.sha);
+   if(receipt.batchId===active.batchId&&core.stable(receipt.jobs)===core.stable(active.jobs)){
+    const recovered=await remote(tools,core,{action:'recordCommit',batchId:active.batchId,ownerId:active.ownerId,commit:c.sha});
+    return {status:'recovered_existing_main_release',batchId:active.batchId,commit:c.sha,stagingCommit:recovered.commit};
+   }
+  }
+  if(active.batchId!==batchId||active.ownerId!==ownerId)
+   return {status:'existing_uncommitted_publication',batchId:active.batchId,ownerId:active.ownerId};
+ }
  let begin;
  try{begin=await remote(tools,core,{action:'beginPublication',batchId,ownerId});}
  catch(e){return {status:'publication_locked',reason:String(e)};}
  if(begin.status==='empty_or_gated')return {status:'nothing_ready'};
  if(begin.status!=='saved'||!begin.output?.jobs?.length)throw Error('Unable to lock READY publication');
  const p=begin.output, stagingSha=begin.commit, unique=new Map();
- let pushedCommit=null;
+ let pushedCommit=null,unknownMainCAS=false;
  try {
   // Use an immutable staging commit. Bounded parallelism avoids 100 sequential network calls.
   const queue=await json('data/geo-knowledge/queue.json',stagingSha);
@@ -117,7 +128,17 @@ export async function publishSchemaGeoAll(tools, core, remote, options={}) {
    }catch(e){
     const observed=(await fetch(api+'/git/ref/heads/main')).object.sha;
     if(observed===created){pushedCommit=created;break;}
-    if(tries===2)throw Error('main raced three times; content prepared, staging claim intact: '+String(e));
+    // A lost CAS response may precede another author's later commits.
+    let walker=observed,found=false,reachedOldHead=false;
+    for(let k=0;k<30&&walker;k++){
+     if(walker===created){found=true;break;}
+     if(walker===mainSha){reachedOldHead=true;break;}
+     const parent=await fetch(api+'/git/commits/'+walker);
+     walker=parent.parents?.[0]?.sha;
+    }
+    if(found){pushedCommit=created;break;}
+    if(!reachedOldHead){unknownMainCAS=true;throw Error('Cannot prove whether main contains '+created);}
+    if(tries===2)throw Error('main raced three times; locked results preserved: '+String(e));
    }
   }
   if(!pushedCommit)throw Error('No main commit');
@@ -127,6 +148,8 @@ export async function publishSchemaGeoAll(tools, core, remote, options={}) {
    results:p.jobs.length,uniquePassports:unique.size,treeChunks:parts.length,
    note:'One main commit; automatic workflow_run confirmation after successful deploy'};
  }catch(e){
+  if(unknownMainCAS)return {status:'unknown_main_CAS_keep_locked',batchId,error:String(e),
+   note:'Do not republish before checking existing main release'};
   if(pushedCommit)return {status:'main_commit_exists_reconcile',batchId,commit:pushedCommit,
    error:String(e),note:'Do not publish again; recover recordCommit on the existing receipt'};
   try{await remote(tools,core,{action:'abortPublication',batchId,ownerId});}

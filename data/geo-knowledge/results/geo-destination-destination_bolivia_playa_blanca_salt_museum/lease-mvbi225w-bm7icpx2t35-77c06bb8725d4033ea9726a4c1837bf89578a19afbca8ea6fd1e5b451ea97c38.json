@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_playa_blanca_salt_museum",
+  "stableId": "destination_bolivia_playa_blanca_salt_museum",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/playa-blanca-salt-museum/",
+  "sourceFingerprint": "2f51c3c174ce67c0c148cc0740cea86c3d5b1577991d38c8841893ab78b8c58c",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4279235181
+    }
+  },
+  "alternateNames": [
+    "Hotel de Sal Playa Blanca",
+    "Museo de Sal Playa Blanca"
+  ],
+  "location": {
+    "latitude": -20.3305929,
+    "longitude": -67.0468625,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/4279235181"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.awanatravelbo.com/salar.php",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Бывший Hotel de Sal Playa Blanca внутри Salar de Uyuni, ныне музей соли и остановка у флагов/памятника Дакару. MD и entry называют именно бывшее здание, а не музей в поселке Кольчани."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/playa-blanca-salt-museum/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Проверены прямой GET HTTP 200, конечный URL, canonical и H1; noindex отсутствует. Сверены актуальные approved MD и точная source-index entry stableId/countryId/URL."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4279235181",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Точный именованный объект бывшего Hotel de Sal Playa Blanca. Исторический tourism=hotel в карте не используется как обещание размещения. Идентичность здания/музея сверена с маршрутом Awana."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.awanatravelbo.com/salar.php",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4279235181",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Именованный OSM node 4279235181 того же здания; картографическая отметка survey 2018, tourism=hotel — исторический тип. Координаты 20°19′50.15″S,67°2′48.85″W на фотографическом первоисточнике совпадают с точкой с погрешностью в несколько метров. Назначение feature_point здания, не вход."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20170809_Bolivia_1518_Uyuni_sRGB_(37926742846).jpg",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Адресная сверка географического контекста и выбранного объекта/точки. Именованный OSM node 4279235181 того же здания; картографическая отметка survey 2018, tourism=hotel — исторический тип. Координаты 20°19′50.15″S,67°2′48.85″W на фотографическом первоисточнике совпадают с точкой с погрешностью в несколько метров. Назначение feature_point здания, не вход."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.awanatravelbo.com/salar.php",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Отвергнуты Museo de la Sal в Кольчани (OSM 5896704954, -20.30248,-66.93846) и Q7126315 Palacio de Sal с иной точкой (-20.514319,-67.627892), где смешана история старого и нового отеля. QID не переносится. Физическое здание Playa Blanca соответствует OSM 4279235181, хотя старый hotel-тег не подтверждает современное размещение.",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Музей соли Плайя-Бланка",
+      "reason": "Бывший Hotel de Sal Playa Blanca внутри Salar de Uyuni, ныне музей соли и остановка у флагов/памятника Дакару. MD и entry называют именно бывшее здание, а не музей в поселке Кольчани."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "node/4279235181",
+      "reason": "Точный именованный объект бывшего Hotel de Sal Playa Blanca. Исторический tourism=hotel в карте не используется как обещание размещения. Идентичность здания/музея сверена с маршрутом Awana."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Hotel de Sal Playa Blanca; Museo de Sal Playa Blanca",
+      "reason": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "-20.3305929, -67.0468625; feature_point",
+      "reason": "Именованный OSM node 4279235181 того же здания; картографическая отметка survey 2018, tourism=hotel — исторический тип. Координаты 20°19′50.15″S,67°2′48.85″W на фотографическом первоисточнике совпадают с точкой с погрешностью в несколько метров. Назначение feature_point здания, не вход."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 40,
+      "reason": "Q7126315 смешивает Palacio de Sal и прежнее Playa Blanca; его координаты и современный отель не совпадают с музейным зданием страницы. После адресного поиска QID пропущен."
+    }
+  ]
+}

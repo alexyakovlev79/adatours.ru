@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_inhotim",
+  "stableId": "destination_brazil_inhotim",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/inhotim/",
+  "sourceFingerprint": "6dcb2d8f69d5ebe28fdd1f2482ed276ab819f7415d0b434a892e5ab5108ad6c2",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "art_museum_and_botanical_garden",
+  "external": {
+    "wikidataQid": "Q478245",
+    "officialUrl": "https://www.inhotim.org.br/",
+    "osm": {
+      "type": "node",
+      "id": 964260249
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/inhotim/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTTP GET: 200, canonical совпадает, H1 соответствует сущности, noindex отсутствует. Текущие production MD и source-index entry проверены; stable ID, страна Brazil и approved совпадают."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/inhotim.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Текущий production MD: countryId country_brazil; назначение объекта сверено с внешними источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q478245",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Art museum, botanical garden, Brumadinho, Minas Gerais, Brazil. P625 20°7′26.86″S,44°13′7.63″W находится на территории комплекса."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.inhotim.org.br/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Официальный сайт Instituto Inhotim, разделы искусства и природы и адрес Brumadinho."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/964260249.json",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой OSM API: Instituto Inhotim, tourism museum, description Centro de Arte Contemporânea e Jardim Botânico, Brumadinho."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.inhotim.org.br/visite/como-chegar/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTML официальной страницы: data-latitude −20.1242111, data-longitude −44.2196121; те же значения в ссылке Google Maps !3d/!4d именно Instituto Inhotim."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/964260249.json",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Независимая сверка OSM museum node −20.1243324,−44.2186738, около 99 м от официальной точки; оба обозначают один музейный комплекс. Не усреднялись."
+    }
+  ],
+  "alternateNames": [
+    "Inhotim",
+    "Instituto Inhotim"
+  ],
+  "location": {
+    "latitude": -20.1242111,
+    "longitude": -44.2196121,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.inhotim.org.br/visite/como-chegar/"
+  },
+  "reviewNote": "Музей и ботанический сад — единый комплекс. Выбрана точка самого комплекса из официальной карты, не ошибочные −20.0728,−44.1309 из некоторых вторичных копий Wikipedia. Точка representative; не обещается точное положение входной кассы."
+}

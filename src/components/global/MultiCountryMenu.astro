@@ -53,9 +53,6 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     {items.map((row) => (
       <div
         class="mc-menu__combination"
-        data-mc-menu-combination
-        data-mc-menu-slugs={row.slugs.join('_')}
-        data-mc-menu-more={row.hasMore ? '' : undefined}
       >
         <a href={withBase(row.path)}>{formatMultiCountryNames(row.names)}</a>
 
@@ -68,7 +65,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
   import '../../scripts/multi-country-menu';
 </script>
 
-<style>
+<style is:global>
   .mc-menu {
     --mc-item-size: .72rem;
     --mc-item-weight: 600;

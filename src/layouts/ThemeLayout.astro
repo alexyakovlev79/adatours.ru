@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import MultiCountryRelated from '../components/catalog/MultiCountryRelated.astro';
 import { seoThemeHubTitle } from '../lib/seo-page.mjs';
 import BaseLayout from './BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
@@ -109,6 +110,7 @@ const experienceCatalogs = [
     </div>}
     <section class="section--tight theme-copy"><div class="container prose"><slot /></div></section>
   </div>
+  <MultiCountryRelated themeId={d.id} />
 </BaseLayout>
 <style>
   .theme-hub { background: var(--color-bg); }

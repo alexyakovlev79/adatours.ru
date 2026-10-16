@@ -26,7 +26,8 @@
     "seoWriterUnlimitedDuration": true,
     "seoClaimRenewal": "60-minute rolling lease, explicit CAS refresh while writing",
     "seoPublicationRole": "Только мастер-чат: собирай SEO / публикуй SEO",
-    "seoWriterBuildForbidden": true
+    "seoWriterBuildForbidden": true,
+    "multiCountryInterests": "After all multi-country combinations; nonempty main-country + primary/secondary-interest intersections; automatically reconciled without replacing editorial history."
   },
   "statusKeys": {
     "queued": "В очереди",
@@ -76,28 +77,28 @@
       "phase": 5,
       "name": "Туры",
       "path": "data/seo-geo/registry/05-tours.json",
-      "rows": 2012,
+      "rows": 3118,
       "orderFirst": 278,
-      "orderLast": 2289
+      "orderLast": 3395
     },
     {
       "phase": 6,
       "name": "Места",
       "path": "data/seo-geo/registry/06-places.json",
       "rows": 1018,
-      "orderFirst": 2290,
-      "orderLast": 3307
+      "orderFirst": 3396,
+      "orderLast": 4413
     },
     {
       "phase": 7,
       "name": "Экскурсии",
       "path": "data/seo-geo/registry/07-excursions.json",
       "rows": 818,
-      "orderFirst": 3308,
-      "orderLast": 4125
+      "orderFirst": 4414,
+      "orderLast": 5231
     }
   ],
-  "totalRows": 4125,
+  "totalRows": 5231,
   "excludedPagination": true,
   "snapshotSources": [
     "data/external-identity/index.json",
@@ -105,5 +106,6 @@
     "data/source-index/catalogs/",
     "src/data/interest-registry.json",
     "Google Sheet: Страницы"
-  ]
+  ],
+  "multiCountryFingerprint": "ad599f971ce0d904692e4eede7469a79b3add355696313cec0b5819ec64e278b"
 }

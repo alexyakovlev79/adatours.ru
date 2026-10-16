@@ -1,50 +1,34 @@
 ---
 import { createHash } from 'node:crypto';
-import { getCollection } from 'astro:content';
-import { isActiveEntity } from '../../lib/archive.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../../components/catalog/CatalogPagination.astro';
 import MultiCountrySelector from '../../components/catalog/MultiCountrySelector.astro';
-import { buildMultiCountryCombinations, formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
+import { getMultiCountryCatalog } from '../../lib/multi-country-catalog.ts';
+import { multiCountryCatalogPath } from '../../lib/multi-country-catalog.mjs';
+import MultiCountryRelated from '../../components/catalog/MultiCountryRelated.astro';
+import { formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
 import { multiCountrySeoMetadata } from '../../lib/multi-country-seo.mjs';
 import combinationCovers from '../../data/media/multi-country-heroes.json';
 import destinationCatalog from '../../data/catalog/destinations.json';
 import { paginateCatalog } from '../../lib/catalog-pagination';
-import { compareToursBySalesFit } from '../../lib/tour-ranking';
 import { mainTourCountries, tourPath } from '../../lib/routes';
 import { countLabel } from '../../lib/interest-model.mjs';
 import { withBase } from '../../lib/paths';
 
 export async function getStaticPaths() {
-  const tours = (await getCollection('tours', ({ data }) => data.locale === 'ru' && isActiveEntity(data)))
-    .filter((entry) => mainTourCountries(entry.data).length >= 2)
-    .sort(compareToursBySalesFit);
-  const combinations = buildMultiCountryCombinations(tours, (entry) => mainTourCountries(entry.data));
-  const pickerCountries = [...new Map(tours.flatMap((entry) => mainTourCountries(entry.data))
-    .map((country) => [country.slug, { slug: country.slug, name: country.name }])).values()]
-    .sort((a, b) => a.slug.localeCompare(b.slug, 'en'));
-  const pickerCombinations = combinations.map((row) => ({
-    slugs: row.slugs, path: row.path, count: row.tours.length,
-  }));
-  return combinations.flatMap((row) => {
+  const index = await getMultiCountryCatalog();
+  return index.filter((row) => row.path !== '/multi-country/').flatMap((row) => {
     const version = createHash('sha256')
       .update(JSON.stringify(row.tours.map((entry) => entry.data.id))).digest('hex').slice(0, 20);
-    const cover = row.tours.find((entry) => Boolean(entry.data.hero?.src));
-    const seoMeta = multiCountrySeoMetadata({
-      countries: row.countries, tours: row.tours, destinations: destinationCatalog,
-    });
+    const seoMeta = multiCountrySeoMetadata({ countries: row.countries, tours: row.tours,
+      destinations: destinationCatalog, theme: row.theme });
     return paginateCatalog(row.tours, row.path).map(({ entries, pagination }) => ({
-      params: {
-        selection: row.slugs.join('_') + (pagination.currentPage > 1
-          ? '/page/' + pagination.currentPage : ''),
-      },
-      props: {
-        entries, pagination, catalogVersion: version,
-        slugs: row.slugs, comboCountries: row.countries, seoMeta,
-        pickerCountries, pickerCombinations,
-        hero: combinationCovers.covers[row.slugs.join('_')]?.src ?? cover?.data.hero?.src,
+      params: { selection: pagination.canonical.replace(/^\/multi-country\/|\/$/g, '') },
+      props: { entries, pagination, catalogVersion: version, slugs: row.slugs,
+        comboCountries: row.countries, seoMeta, theme: row.theme, catalogId: row.id,
+        hero: combinationCovers.covers[row.key]?.src ?? row.theme?.hero?.src ?? row.tours[0]?.data.hero?.src,
       },
     }));
   });
@@ -52,12 +36,20 @@ export async function getStaticPaths() {
 
 const {
   entries, pagination, catalogVersion, slugs, comboCountries,
-  pickerCountries, pickerCombinations, hero, seoMeta,
+  hero, seoMeta, theme, catalogId,
 } = Astro.props;
 const names = comboCountries.map((country) => country.name);
 // Page titles always use the canonical alphabetical country order.
-const countriesText = formatMultiCountryNames(names);
-const heading = 'Туры: ' + countriesText;
+const countriesText = names.length ? formatMultiCountryNames(names) : 'Несколько стран';
+const heading = theme ? theme.name + ': ' + countriesText : 'Туры: ' + countriesText;
+const parentCombination = multiCountryCatalogPath(slugs);
+const pageBreadcrumbs = [
+  { label: 'Главная', href: '/' },
+  { label: 'Multi-country', href: '/multi-country/' },
+  ...(slugs.length ? [{ label: countriesText, href: parentCombination }] : []),
+  ...(theme ? [{ label: theme.name, href: pagination.rootPath }] : []),
+  ...(pagination.currentPage > 1 ? [{ label: 'Страница ' + pagination.currentPage, href: pagination.canonical }] : []),
+];
 const baseTitle = seoMeta.title;
 const pageSuffix = pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage + ' из ' + pagination.totalPages : '';
 const matchingTourPhrase = countLabel(pagination.totalItems,
@@ -84,22 +76,18 @@ const itemList = {
 
 <BaseLayout
   leadTitle={'Собрать маршрут: ' + countriesText}
-  leadEntityId="multi_country"
+  leadEntityId={catalogId}
   title={baseTitle + pageSuffix}
   description={description}
   canonical={pagination.canonical}
   image={hero}
   pageSchema={itemList}
-  breadcrumbs={[
-    { label: 'Главная', href: '/' },
-    { label: 'Multi-country', href: '/multi-country/' },
-    { label: countriesText, href: pagination.rootPath },
-  ]}
+  breadcrumbs={pageBreadcrumbs}
 >
   <Hero
     eyebrow="Multi-country"
     title={heading + (pagination.currentPage > 1 ? ' — страница ' + pagination.currentPage : '')}
-    intro={'Выберите маршрут, включающий страны: ' + countriesText + '. Сравните длительность и формат готовых программ.'}
+    intro={(theme ? theme.name + '. ' : '') + (slugs.length ? 'Выберите маршрут, включающий страны: ' + countriesText + '. ' : 'Выберите путешествие по нескольким странам. ') + 'Сравните длительность и формат готовых программ.'}
     image={hero}
     compact
     ctaHref="#request"
@@ -109,11 +97,11 @@ const itemList = {
   <section class="combination-tours section" aria-labelledby="combination-tours-title">
     <div class="container combination-tours__head">
       <p class="eyebrow">Выбрать путешествие</p>
-      <h2 id="combination-tours-title">{countriesText}</h2>
-      <p>{matchingTourPhrase}, {matchingTourAgreement} посещение этих стран.</p>
+      <h2 id="combination-tours-title">{theme ? countriesText + ': ' + theme.name : countriesText}</h2>
+      <p>{matchingTourPhrase}, {matchingTourAgreement} {slugs.length ? 'посещение этих стран' : 'несколько стран в одной поездке'}.</p>
     </div>
 
-    <MultiCountrySelector countries={pickerCountries} combinations={pickerCombinations} selected={slugs} />
+    <MultiCountrySelector selected={slugs} themeId={theme?.id} />
 
     {pagination.currentPage > 1 && (
       <div class="container combination-tours__back">
@@ -152,7 +140,7 @@ const itemList = {
                 mediaStatus={data.hero?.status}
                 replacementReason={data.hero?.replacementReason}
                 href={tourPath(data)}
-                align={index % 2 === 1 ? 'right' : 'left'}
+                align={(pagination.offset + index) % 2 === 1 ? 'right' : 'left'}
               />
             </div>
           );
@@ -161,6 +149,8 @@ const itemList = {
       <CatalogPagination pagination={pagination} />
     </div>
   </section>
+  <MultiCountryRelated slugs={slugs} themeId={theme?.id} currentPath={pagination.rootPath}
+    showAll={!slugs.length} />
 </BaseLayout>
 
 <script>

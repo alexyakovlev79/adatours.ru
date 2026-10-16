@@ -1,0 +1,61 @@
+---
+import { countLabel } from '../../lib/interest-model.mjs';
+import { withBase } from '../../lib/paths';
+interface Props {
+  label: string; placeholder: string; selected?: string;
+  options: Array<{ id: string; label: string; href: string; count: number }>;
+  reset?: string; resetHref?: string; context?: string;
+}
+const { label, placeholder, selected, options, reset, resetHref, context } = Astro.props;
+---
+<div class="tour-filters__field" data-catalog-filter-menu data-filter-context={context}>
+  <span class="tour-filters__label">{label}</span>
+  <details class="tour-filters__menu">
+    <summary>
+      <span>{options.find((option) => option.id === selected)?.label ?? placeholder}</span>
+      <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
+    </summary>
+    <ul aria-label={label}>
+      {resetHref && <li><a href={withBase(resetHref)} aria-current={!selected ? 'page' : undefined} data-filter-reset>{reset}</a></li>}
+      {options.map((option) => (
+        <li data-filter-option={option.id}><a href={withBase(option.href)} aria-current={option.id === selected ? 'page' : undefined}>
+          <span>{option.label}</span><small>{countLabel(option.count)}</small>
+        </a></li>
+      ))}
+    </ul>
+  </details>
+</div>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-catalog-filter-menu]').forEach((root) => {
+    const menu = root.querySelector<HTMLDetailsElement>('details')!;
+    menu.addEventListener('toggle', () => {
+      if (menu.open) document.querySelectorAll<HTMLDetailsElement>('[data-catalog-filter-menu] details').forEach((other) => {
+        if (other !== menu) other.open = false;
+      });
+    });
+    menu.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') { menu.open = false; menu.querySelector('summary')?.focus(); }
+    });
+    document.addEventListener('click', (event) => {
+      if (event.target instanceof Node && !root.contains(event.target)) menu.open = false;
+    });
+  });
+</script>
+<style>
+  .tour-filters__field { min-width: 0; }
+  .tour-filters__label { display: block; margin-bottom: 10px; font-size: .78rem; line-height: 1.5; letter-spacing: .12em; text-transform: uppercase; }
+  .tour-filters__menu { position: relative; }
+  summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; padding: 14px 18px; border: 1px solid var(--color-line); border-radius: 4px; background: var(--color-surface); color: var(--color-ink); cursor: pointer; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  summary svg { flex-shrink: 0; transition: transform .18s ease; }
+  details[open] summary { border-color: var(--color-gold-deep); }
+  details[open] summary svg { transform: rotate(180deg); }
+  summary:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
+  ul { position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 30; max-height: min(360px, 55vh); overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 6px; list-style: none; background: var(--color-surface); border: 1px solid var(--color-line); border-radius: 4px; box-shadow: 0 12px 32px rgb(0 0 0 / .12); }
+  ul a { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; min-height: 44px; padding: 12px; color: var(--color-ink); text-decoration: none; line-height: 1.35; }
+  ul a:hover, ul a[aria-current="page"] { background: var(--color-gold-soft); }
+  small { color: color-mix(in srgb, var(--color-ink) 65%, transparent); }
+  ul small { flex-shrink: 0; }
+  li[hidden] { display: none; }
+</style>

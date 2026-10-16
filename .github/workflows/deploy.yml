@@ -133,3 +133,24 @@ jobs:
           gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
             -f state="$status" -f context="ada/pages-deploy" -f description="$note" \
             -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
+  catalog-registries:
+    name: Persist multi-country catalogue registries
+    needs: [media, build, deploy]
+    if: ${{ needs.media.result == 'success' && needs.build.result == 'success' && needs.deploy.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - run: npm install --no-audit --no-fund
+      - name: Recalculate the exact deployed source snapshot
+        run: npm run sync:multi-country
+      - name: Preserve independent editorial state on main and staging
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CATALOG_SOURCE_SHA: ${{ github.sha }}
+        run: node scripts/persist-multi-country-registries.mjs

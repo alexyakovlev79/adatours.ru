@@ -8,7 +8,11 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
   const countries = JSON.parse(picker.dataset.countries ?? '[]') as CountryOption[];
   const known = new Set(JSON.parse(picker.dataset.combinations ?? '[]') as string[]);
   const rootHref = picker.dataset.rootHref ?? '/multi-country/';
-  const rootPath = new URL(rootHref, window.location.origin).pathname;
+  const theme = picker.dataset.theme ?? '';
+  const currentRootHref = picker.dataset.currentRootHref ?? rootHref;
+  const rootPath = new URL(currentRootHref, window.location.origin).pathname;
+  const interestOptions = JSON.parse(picker.dataset.interestOptions ?? '[]') as Array<{ id: string; countries: string[] }>;
+  const interestMenu = picker.querySelector<HTMLElement>('[data-filter-context="multi-country"]');
   const fields = [...picker.querySelectorAll<HTMLElement>('[data-mc-field]')];
   const selects = [...picker.querySelectorAll<HTMLSelectElement>('[data-mc-select]')];
   const removeButtons = [...picker.querySelectorAll<HTMLButtonElement>('[data-mc-remove]')];
@@ -65,6 +69,14 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
   };
 
   const render = () => {
+    // Before a pair has been completed, show only interests that can include
+    // the first country. Counts continue to describe each destination catalogue.
+    interestMenu?.querySelectorAll<HTMLElement>('[data-filter-option]').forEach((item) => {
+      const option = interestOptions.find((row) => row.id === item.dataset.filterOption);
+      item.hidden = selected.length === 1 && !option?.countries.includes(selected[0]);
+    });
+    const reset = picker.querySelector<HTMLElement>('[data-mc-reset]');
+    if (reset) reset.hidden = !selected.length && !theme;
     for (let index = 0; index < selects.length; index++) {
       const options = index === 0
         ? countries
@@ -91,7 +103,7 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
     if (next.length >= 2) {
       const key = [...next].sort().join('_');
       if (!known.has(key)) return false;
-      const target = new URL(rootHref + key + '/', window.location.origin);
+      const target = new URL(rootHref + key + '/' + (theme ? 'interests/' + theme + '/' : ''), window.location.origin);
       if (window.location.pathname !== target.pathname) navigateKeepingPicker(target);
       else {
         selected = next;
@@ -105,7 +117,7 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
       else window.sessionStorage.removeItem(firstCountryState);
     } catch { /* Storage may be disabled. */ }
     if (window.location.pathname !== rootPath) {
-      navigateKeepingPicker(new URL(rootHref, window.location.origin));
+      navigateKeepingPicker(new URL(currentRootHref, window.location.origin));
     } else {
       selected = next;
       render();
@@ -141,6 +153,15 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
       if (!selected[index]) return;
       navigate(removeMultiCountrySelection(selected, index));
     });
+  });
+
+  interestMenu?.addEventListener('click', (event) => {
+    const link = event.target instanceof Element ? event.target.closest('a') : null;
+    if (!link || event instanceof MouseEvent && (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey)) return;
+    try {
+      if (selected.length === 1) window.sessionStorage.setItem(firstCountryState, selected[0]);
+      window.sessionStorage.setItem(pickerScrollState, '1');
+    } catch { /* Ordinary links work without storage or JavaScript. */ }
   });
 
   picker.querySelector<HTMLAnchorElement>('[data-mc-reset]')?.addEventListener('click', () => {

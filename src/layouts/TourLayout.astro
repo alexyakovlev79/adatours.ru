@@ -1,4 +1,5 @@
 ---
+import MultiCountryRelated from '../components/catalog/MultiCountryRelated.astro';
 import { themeIds } from '../lib/interest-model.mjs';
 import { getVipTourPaths } from '../lib/vip-catalog';
 import { seoTourTitle, seoAttractionsDescription } from '../lib/seo-page.mjs';
@@ -253,6 +254,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   {(d.included.length > 0 || d.notIncluded.length > 0 || d.notes.length > 0) && (
     <IncludedExcluded included={d.included} notIncluded={d.notIncluded} notes={d.notes} />
   )}
+  {!archived && <MultiCountryRelated tourId={d.id} />}
 </BaseLayout>
 
 <script>

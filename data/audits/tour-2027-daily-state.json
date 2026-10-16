@@ -20,11 +20,12 @@
       "observedModifiedTime": "2026-10-15T13:45:50.525Z",
       "previousModifiedTime": "2026-09-18T10:21:05.000Z",
       "reason": "modified_since_inventory",
-      "stage": "actions_deployed_awaiting_sheets",
+      "stage": "sheets_synced",
       "tourId": "tour_source_chili_argentina",
       "auditedAt": "2026-10-16",
       "auditPath": "data/audits/word-tour-updates-20261016.json",
-      "deployRun": 38861687413
+      "deployRun": 38861687413,
+      "sheetRowsVerified": true
     },
     {
       "programKey": "P153",
@@ -33,9 +34,11 @@
       "observedModifiedTime": "2026-10-12T14:29:36.043Z",
       "previousModifiedTime": "2026-08-17T00:36:40.605Z",
       "reason": "modified_since_inventory",
-      "stage": "content_prepared",
+      "stage": "content_committed_awaiting_deploy",
       "tourId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
-      "auditPath": "data/audits/word-tour-updates-20261016.json"
+      "auditPath": "data/audits/word-tour-updates-20261016.json",
+      "contentCommit": "3713d3d7062066f360de8d57ad2d4422e1b274be",
+      "deployRun": 38872208050
     },
     {
       "programKey": "P171",
@@ -43,9 +46,10 @@
       "name": "Amazing Peru, Bolivia, Solar de Uyuni and National reservation 2027 15d14n RUS 20%.docx",
       "observedModifiedTime": "2026-10-12T19:30:44.089Z",
       "reason": "word_not_in_inventory",
-      "stage": "source_compared_no_public_change_awaiting_sheets",
+      "stage": "sheets_synced",
       "tourId": "tour_peru_bolivia_uyuni_lakes_15_days",
-      "auditPath": "data/audits/word-tour-updates-20261016.json"
+      "auditPath": "data/audits/word-tour-updates-20261016.json",
+      "sheetRowsVerified": true
     },
     {
       "programKey": "P170",
@@ -53,9 +57,10 @@
       "name": "Amazing Peru, Bolivia and Solar de Uyuni 2027 12d11n RUS 20%.docx",
       "observedModifiedTime": "2026-10-12T18:40:12.623Z",
       "reason": "word_not_in_inventory",
-      "stage": "source_compared_no_public_change_awaiting_sheets",
+      "stage": "sheets_synced",
       "tourId": "tour_peru_bolivia_uyuni_12_days",
-      "auditPath": "data/audits/word-tour-updates-20261016.json"
+      "auditPath": "data/audits/word-tour-updates-20261016.json",
+      "sheetRowsVerified": true
     }
   ],
   "runs": [
@@ -137,8 +142,17 @@
         "P170",
         "P171"
       ],
-      "publicationStatus": "P153_content_prepared",
-      "auditPath": "data/audits/word-tour-updates-20261016.json"
+      "publicationStatus": "content_committed_awaiting_deploy",
+      "auditPath": "data/audits/word-tour-updates-20261016.json",
+      "contentCommit": "3713d3d7062066f360de8d57ad2d4422e1b274be",
+      "deployRun": 38872208050,
+      "sheetsSyncedPrograms": [
+        "P117",
+        "P122",
+        "P111",
+        "P170",
+        "P171"
+      ]
     }
   ],
   "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items."

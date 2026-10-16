@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_svyaschennaya_dolina_inkov",
+  "stableId": "destination_peru_svyaschennaya_dolina_inkov",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/sacred-valley-of-the-incas/",
+  "sourceFingerprint": "aea09440cf78e353b40c5b729e4f73ea7a2398bdbe58140cc243e914b2701d27",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "valley",
+  "external": {
+    "wikidataQid": "Q2237464",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Valle_Sagrado_de_los_Incas",
+      "en": "https://en.wikipedia.org/wiki/Sacred_Valley"
+    },
+    "geonamesId": "7626670"
+  },
+  "alternateNames": [
+    "Sacred Valley",
+    "Valle Sagrado de los Incas",
+    "Sacred Valley of the Incas"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_peru_pisak"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_peru_chinchero"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_peru_olyantajtambo"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Священная долина инков — культурно-географическая долина Вильканоты/Урубамбы у Куско, а не город или река Урубамба."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/sacred-valley-of-the-incas/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "HTTPS GET 200. H1/canonical совпадают с job. MD approved и entry проверены на main 829696675d32833cf18ebb696ee714747a28f04b."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2237464",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Имя, страна, класс и фактический смысл QID согласованы с MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Тип выбран по фактическому объекту и контексту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2237464",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Варианты имени подтверждены карточкой и предметным контекстом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2237464",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Sitelinks ведут к выбранному географическому референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2237464",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "P1566 точной Wikidata-карточки; альтернативные одноимённые объекты исключены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2237464",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "P625 — опорная точка протяжённой культурной долины, не вычисленный центр."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Независимая сверка географического контекста выбранной точки."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Страна совпадает с MD/entry и P17 Wikidata."
+    },
+    {
+      "field": "relationships.destination_peru_pisak",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Место прямо названо в MD и официальном описании долины."
+    },
+    {
+      "field": "relationships.destination_peru_chinchero",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Место прямо названо в MD и официальном описании долины."
+    },
+    {
+      "field": "relationships.destination_peru_olyantajtambo",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Место прямо названо в MD и официальном описании долины."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Священная долина инков — культурно-географическая долина Вильканоты/Урубамбы у Куско, а не город или река Урубамба.",
+      "selected": "Священная долина инков"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Имя, страна, класс и фактический смысл QID согласованы с MD.",
+      "selected": "Q2237464"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Тип выбран по фактическому объекту и контексту страницы.",
+      "selected": "valley"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "reason": "Варианты имени подтверждены карточкой и предметным контекстом.",
+      "selected": "Sacred Valley; Valle Sagrado de los Incas; Sacred Valley of the Incas"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Sitelinks ведут к выбранному географическому референту.",
+      "selected": "https://es.wikipedia.org/wiki/Valle_Sagrado_de_los_Incas; https://en.wikipedia.org/wiki/Sacred_Valley"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "reason": "P1566 точной Wikidata-карточки; альтернативные одноимённые объекты исключены.",
+      "selected": "7626670"
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "reason": "P625 — опорная точка протяжённой культурной долины, не вычисленный центр.",
+      "selected": "-13.333333333333, -72.083333333333"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна совпадает с MD/entry и P17 Wikidata.",
+      "selected": "country_peru"
+    },
+    {
+      "field": "relationships.destination_peru_pisak",
+      "probability": 99,
+      "reason": "Место прямо названо в MD и официальном описании долины.",
+      "selected": "destination_peru_pisak"
+    },
+    {
+      "field": "relationships.destination_peru_chinchero",
+      "probability": 99,
+      "reason": "Место прямо названо в MD и официальном описании долины.",
+      "selected": "destination_peru_chinchero"
+    },
+    {
+      "field": "relationships.destination_peru_olyantajtambo",
+      "probability": 99,
+      "reason": "Место прямо названо в MD и официальном описании долины.",
+      "selected": "destination_peru_olyantajtambo"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Священная долина инков — культурно-географическая долина Вильканоты/Урубамбы у Куско, а не город или река Урубамба.",
+  "location": {
+    "latitude": -13.333333333333,
+    "longitude": -72.083333333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2237464"
+  }
+}

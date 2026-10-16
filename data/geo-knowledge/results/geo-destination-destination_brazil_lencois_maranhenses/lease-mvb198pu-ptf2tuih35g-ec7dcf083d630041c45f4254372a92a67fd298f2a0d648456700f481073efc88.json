@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_lencois_maranhenses",
+  "stableId": "destination_brazil_lencois_maranhenses",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/lencois-maranhenses/",
+  "sourceFingerprint": "8349a293e6489febfee7d3fab685b785cdf80a673d474e8decb8761939f8a9da",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "national_park",
+  "external": {
+    "wikidataQid": "Q647777",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Len%C3%A7%C3%B3is_Maranhenses_National_Park"
+    },
+    "unescoSiteIds": [
+      "1611"
+    ]
+  },
+  "location": {
+    "latitude": -2.5366666666666666,
+    "longitude": -43.06361111111111,
+    "pointRole": "representative",
+    "coordinateSource": "https://whc.unesco.org/en/list/1611/"
+  },
+  "alternateNames": [
+    "Parque Nacional dos Lençóis Maranhenses",
+    "Lençóis Maranhenses National Park"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/lencois-maranhenses/",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точный опубликованный canonical URL проверен прямым HTTP GET: 200, конечный URL совпадает, noindex отсутствует. Браузер поискового инструмента URL не открыл; использован прямой сетевой запрос."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/lencois-maranhenses.md",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Текущий утверждённый MD и точная source-index entry сверены: destination_brazil_lencois_maranhenses, country_brazil; содержание соответствует выбранному охвату объекта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q647777",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверены название, P31 и P17/P131: national_park, Brazil; Паспорт национального парка, а не города Ленсойс. UNESCO 1611 описывает точно этот парк. Выбрана опубликованная UNESCO опорная точка S2 32 12 W43 3 49, без утверждения о центре или входе. GeoNames 6942257 — ландшафтная AREA с точкой −2.53333, −43.11667; она не доказывает совпадение границ с парком, поэтому GeoNames ID не включён. Wikidata P625 −2.483333, −43.133333 — другая опорная точка; координаты не усреднялись."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Len%C3%A7%C3%B3is_Maranhenses_National_Park",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точная статья о выбранном именованном объекте, проверена содержательно и по sitelink Wikidata; охват и обнаруженные координатные расхождения отражены в reviewNote."
+    },
+    {
+      "field": "external.unescoSiteIds",
+      "sourceUrl": "https://whc.unesco.org/en/list/1611/",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "UNESCO 1611: Lençóis Maranhenses National Park, Brazil; тот же национальный парк, не соседний город и не серийный объект с дополнительными территориями."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://whc.unesco.org/en/list/1611/",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Исходная точка WGS84 (-2.5366666666666666, -43.06361111111111), pointRole=representative. Паспорт национального парка, а не города Ленсойс. UNESCO 1611 описывает точно этот парк. Выбрана опубликованная UNESCO опорная точка S2 32 12 W43 3 49, без утверждения о центре или входе. GeoNames 6942257 — ландшафтная AREA с точкой −2.53333, −43.11667; она не доказывает совпадение границ с парком, поэтому GeoNames ID не включён. Wikidata P625 −2.483333, −43.133333 — другая опорная точка; координаты не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/6942257/lencois-maranhenses.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Независимый географический справочник относит ландшафт к Maranhão, Brazil; точка −2.53333, −43.11667 примерно в 6 км от выбранной точки UNESCO. Сверка региональной согласованности, не сантиметровой точности и не равенства границ."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q647777",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Страна Brazil явно указана в географической карточке; сверено с countryId в текущем MD и source-index. containedInPlace указывает на существующий country_brazil."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Паспорт национального парка, а не города Ленсойс. UNESCO 1611 описывает точно этот парк. Выбрана опубликованная UNESCO опорная точка S2 32 12 W43 3 49, без утверждения о центре или входе. GeoNames 6942257 — ландшафтная AREA с точкой −2.53333, −43.11667; она не доказывает совпадение границ с парком, поэтому GeoNames ID не включён. Wikidata P625 −2.483333, −43.133333 — другая опорная точка; координаты не усреднялись."
+}

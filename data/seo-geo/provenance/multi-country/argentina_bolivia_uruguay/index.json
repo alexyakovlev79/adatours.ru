@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "targetPath": "/multi-country/argentina_bolivia_uruguay/",
+  "articlePath": "data/seo-geo/articles/multi-country/argentina_bolivia_uruguay/index.md",
+  "researchedAt": "2026-10-16",
+  "purpose": "Практическая организация Аргентины, Уругвая и Боливии в одной поездке; однодневный паром, повторный аргентинский въезд и удаленный высокогорный этап через Чили. Страница посвящена сочетанию стран, а не самостоятельным путеводителям.",
+  "repositorySources": [
+    "src/content/tours/south-america-eight-countries-32-days.md",
+    "data/source-index/catalogs/tours.json",
+    "src/data/catalog/destinations.json",
+    "src/pages/multi-country/[...selection].astro",
+    "src/lib/multi-country-combinations.mjs"
+  ],
+  "externalSources": [
+    {
+      "url": "https://www.gub.uy/ministerio-interior/comunicacion/publicaciones/regimen-visas-admision",
+      "supports": "Официальная таблица визового режима Уругвая, строка Rusia, обычный паспорт"
+    },
+    {
+      "url": "https://cancilleria.gob.bo/mre/servicios/",
+      "supports": "Визовые группы и консульские требования Боливии"
+    },
+    {
+      "url": "https://www.argentina.gob.ar/servicio/obtener-visa-de-turista-para-ingresar-la-argentina",
+      "supports": "Порядок проверки и оформления туристической визы для требующих ее гражданств"
+    },
+    {
+      "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/Bolivia",
+      "supports": "Высотные и территориальные различия риска желтой лихорадки, требования к вакцинации"
+    },
+    {
+      "url": "https://www.cdc.gov/yellow-book/hcp/travel-associated-infections-diseases/yellow-fever.html",
+      "supports": "Международные сертификаты и срок действия прививки"
+    }
+  ],
+  "factBoundary": "Фактические даты, маршрут восьми стран, паромная поездка из Буэнос-Айреса и высота свыше 4000 м взяты из активного Tour MD. Доступность лишь одного полного тура подтверждена source catalog. Ни одна третья страна не объявлена прямым участком между Уругваем и Боливией, цены самостоятельного маршрута не выдуманы. Внешних ссылок в публичном Markdown нет."
+}

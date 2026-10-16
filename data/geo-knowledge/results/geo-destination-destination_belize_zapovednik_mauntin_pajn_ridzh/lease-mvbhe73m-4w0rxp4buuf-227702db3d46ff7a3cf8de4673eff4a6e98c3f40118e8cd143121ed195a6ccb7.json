@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_zapovednik_mauntin_pajn_ridzh",
+  "stableId": "destination_belize_zapovednik_mauntin_pajn_ridzh",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/mountain-pine-ridge-forest-reserve/",
+  "sourceFingerprint": "b7a96b52202babe0921cd955b6498e0b15526b8a9176650a3b024848fa3b0e0b",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "forest reserve",
+  "external": {
+    "wikidataQid": "Q6925163",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Mountain_Pine_Ridge_Forest_Reserve"
+    },
+    "geonamesId": "8695454",
+    "officialUrl": "https://forest.gov.bz/recreation-in-the-mountain-pine-ridge/"
+  },
+  "location": {
+    "latitude": 16.96444,
+    "longitude": -88.93869,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/8695454/mountain-pine-ridge.html"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/mountain-pine-ridge-forest-reserve/",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP-проверка: 200; canonical совпадает; H1 и stable ID соответствуют approved MD и source-index. MD указывает лесной заповедник и Rio Frio/Rio On; национальная лесная служба подтверждает тот же лесной резерват Кайо."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6925163",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Проверены живой Special:EntityData JSON, имя, P31 и P17. MD указывает лесной заповедник и Rio Frio/Rio On; национальная лесная служба подтверждает тот же лесной резерват Кайо."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6925163",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Точная enwiki sitelink этого QID: https://en.wikipedia.org/wiki/Mountain_Pine_Ridge_Forest_Reserve"
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6925163",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P31 и описание соответствуют классу forest reserve."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6925163",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P17: Q242 Belize; совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/8695454/mountain-pine-ridge.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Выбрана representative-точка GeoNames 8695454, тип RESN; близка ко второй P625 в Wikidata. Первая P625/Wikipedia 16.965,-88.911 находится восточнее примерно на 3 км; не усреднять. Не присвоен QID отдельной пещеры или водопада."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/8695454/mountain-pine-ridge.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP 200; имя, страна и feature class проверены. MD указывает лесной заповедник и Rio Frio/Rio On; национальная лесная служба подтверждает тот же лесной резерват Кайо."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/8695454/mountain-pine-ridge.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Независимая сверка географического контекста и опубликованной точки; расхождение и выбранная роль отражены в reviewNote. Выбрана representative-точка GeoNames 8695454, тип RESN; близка ко второй P625 в Wikidata. Первая P625/Wikipedia 16.965,-88.911 находится восточнее примерно на 3 км; не усреднять. Не присвоен QID отдельной пещеры или водопада."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://forest.gov.bz/recreation-in-the-mountain-pine-ridge/",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Официальная страница учреждения/уполномоченной лесной службы точно об объекте; не автоматический sameAs страны или города."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://forest.gov.bz/recreation-in-the-mountain-pine-ridge/",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Государственная лесная служба: лесной резерват Кайо с Rio On и Rio Frio; независимая сверка географии точки."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Mountain Pine Ridge Forest Reserve",
+      "reason": "MD указывает лесной заповедник и Rio Frio/Rio On; национальная лесная служба подтверждает тот же лесной резерват Кайо."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q6925163",
+      "reason": "MD указывает лесной заповедник и Rio Frio/Rio On; национальная лесная служба подтверждает тот же лесной резерват Кайо."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Mountain_Pine_Ridge_Forest_Reserve",
+      "reason": "Точная статья enwiki из проверенной карточки Wikidata выбранного объекта."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "forest reserve",
+      "reason": "Класс объекта подтвержден MD и P31 выбранного QID."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна совпадает в текущем MD, entry и P17."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "16.96444, -88.93869",
+      "reason": "Выбрана representative-точка GeoNames 8695454, тип RESN; близка ко второй P625 в Wikidata. Первая P625/Wikipedia 16.965,-88.911 находится восточнее примерно на 3 км; не усреднять. Не присвоен QID отдельной пещеры или водопада."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "8695454",
+      "reason": "Карточка GeoNames соответствует имени, стране и географическому типу; идентификатор не выбирался только по близости точки."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://forest.gov.bz/recreation-in-the-mountain-pine-ridge/",
+      "reason": "Собственный сайт зоопарка / государственная лесная служба, точная страница объекта."
+    }
+  ],
+  "reviewNote": "Выбрана representative-точка GeoNames 8695454, тип RESN; близка ко второй P625 в Wikidata. Первая P625/Wikipedia 16.965,-88.911 находится восточнее примерно на 3 км; не усреднять. Не присвоен QID отдельной пещеры или водопада."
+}

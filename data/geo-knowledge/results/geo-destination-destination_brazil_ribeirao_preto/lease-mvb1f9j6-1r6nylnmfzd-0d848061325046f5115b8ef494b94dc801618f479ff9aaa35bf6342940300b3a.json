@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_ribeirao_preto",
+  "stableId": "destination_brazil_ribeirao_preto",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/ribeirao-preto/",
+  "sourceFingerprint": "ddf42236aedc706d0b1311d38630548446129bde361184bb26b89176c54cb132",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "external": {
+    "wikidataQid": "Q188892",
+    "geonamesId": "3451328",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ribeir%C3%A3o_Preto",
+      "pt": "https://pt.wikipedia.org/wiki/Ribeir%C3%A3o_Preto"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/ribeirao-preto/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Прямой HTTP GET: 200; HTML title соответствует объекту; rel=canonical совпадает с URL задачи. Веб-поисковый opener не смог открыть сайт; доступность проверена прямым запросом."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ribeirao-preto.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точный approved MD: stable ID и countryId=country_brazil совпали с claim; тип и описание сверены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ribeirao-preto.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Класс выбран по содержанию места, без изменения production MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q188892",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Город/муниципалитет São Paulo, Brazil; совпадает источник тура об агробизнесе."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3451328/ribeirao-preto.html",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "P PPLA2, городской центр Ribeirão Preto; не ADM2 GeoNames 6322515."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q188892",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точные английский и португальский sitelinks Ribeirão Preto."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q188892",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Ribeirão Preto и Ribeirao Preto подтверждены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3451328/ribeirao-preto.html",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "WGS84 точка PPLA2 — городской центр."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q188892",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Независимый по отношению к GeoNames P625 со ссылкой на OSM: −21.1776315, −47.8100983, около 24 м от выбранной точки; не усреднять."
+    }
+  ],
+  "alternateNames": [
+    "Ribeirão Preto",
+    "Ribeirao Preto"
+  ],
+  "location": {
+    "latitude": -21.1775,
+    "longitude": -47.81028,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3451328/ribeirao-preto.html"
+  },
+  "reviewNote": "Точка относится к городу, не к муниципальному центроиду или выставочной площадке Agrishow."
+}

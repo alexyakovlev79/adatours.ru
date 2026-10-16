@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_la_boca",
+  "stableId": "destination_argentina_la_boca",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/la-boca/",
+  "sourceFingerprint": "717d21205d1ab87a05c9052ee1cf648382cc31696e983bc08030f9b3ae552eeb",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "relation",
+      "id": 2223879
+    },
+    "wikidataQid": "Q690649",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/La_Boca"
+    },
+    "geonamesId": "3436004"
+  },
+  "alternateNames": [
+    "La Boca, Buenos Aires"
+  ],
+  "location": {
+    "latitude": -34.635555555555555,
+    "longitude": -58.36472222222223,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q690649"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/20a7fd65b9538b8fefe6ab3881997fe22206a1ed/src/content/destinations/la-boca.md",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Портовый район Ла-Бока в Буэнос-Айресе. Не отдельная улица Каминито, стадион Ла-Бомбонера или другой одноименный населенный пункт."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/barrios/la-boca",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Портовый район Ла-Бока в Буэнос-Айресе. Не отдельная улица Каминито, стадион Ла-Бомбонера или другой одноименный населенный пункт."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/la-boca/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Прямой HTTP GET 200; self-canonical и заголовок соответствуют объекту. Stable ID, текущий MD и точная source-index entry сверены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/2223879.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первичный OSM API прочитан; имя, класс, контекст совпадают: Портовый район Ла-Бока в Буэнос-Айресе. Не отдельная улица Каминито, стадион Ла-Бомбонера или другой одноименный населенный пункт."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q690649",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Местное/английское название объекта подтверждено карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q690649",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Опорная точка района P625; административная relation OSM с тем же QID и официальный портал подтверждают район. Не центроид и не точка Каминито."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/barrios/la-boca",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Независимая сверка объекта и географического положения; не утверждается совпадение координат до последнего знака."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q690649",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Портовый район Ла-Бока в Буэнос-Айресе. Не отдельная улица Каминито, стадион Ла-Бомбонера или другой одноименный населенный пункт."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/La_Boca",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Портовый район Ла-Бока в Буэнос-Айресе. Не отдельная улица Каминито, стадион Ла-Бомбонера или другой одноименный населенный пункт."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q690649",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "GeoNames ID точного объекта; не соседней достопримечательности."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/barrios/la-boca",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Объект находится в Аргентине."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "La Boca, Buenos Aires",
+      "reason": "Портовый район Ла-Бока в Буэнос-Айресе. Не отдельная улица Каминито, стадион Ла-Бомбонера или другой одноименный населенный пункт."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "relation/2223879",
+      "reason": "Портовый район Ла-Бока в Буэнос-Айресе. Не отдельная улица Каминито, стадион Ла-Бомбонера или другой одноименный населенный пункт."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "La Boca, Buenos Aires",
+      "reason": "Название основного референта из точной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-34.635555555555555, -58.36472222222223; representative",
+      "reason": "Опорная точка района P625; административная relation OSM с тем же QID и официальный портал подтверждают район. Не центроид и не точка Каминито."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q690649",
+      "reason": "Портовый район Ла-Бока в Буэнос-Айресе. Не отдельная улица Каминито, стадион Ла-Бомбонера или другой одноименный населенный пункт."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/La_Boca",
+      "reason": "Точная Wikipedia-статья об основном референте."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3436004",
+      "reason": "Портовый район Ла-Бока в Буэнос-Айресе. Не отдельная улица Каминито, стадион Ла-Бомбонера или другой одноименный населенный пункт."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Объект находится в Аргентине."
+    }
+  ],
+  "reviewNote": null
+}

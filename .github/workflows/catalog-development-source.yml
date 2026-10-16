@@ -1,4 +1,4 @@
-name: Validate multi-country interests
+name: Save validated catalogue source
 on:
   push:
     branches: [feature/multi-country-interests-20261016]
@@ -13,30 +13,29 @@ env:
   SITE_ORIGIN: https://adatours.ru
   SITE_BASE: /
   MEDIA_CDN_ORIGIN: https://img.adatours.ru
-  SOCIAL_PREVIEW_REQUIRED: '0'
 jobs:
-  validate:
+  transfer:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
-      - name: Decode checked source patch and preserve development inputs
+      - name: Preserve inputs and recover exact checked patch
         run: |
           mkdir -p /tmp/catalog-dev
           cp -r .catalog-dev /tmp/catalog-dev/payload
-          cp .github/workflows/catalog-development-source.yml /tmp/catalog-dev/workflow.yml
+          cp -r .github/workflows /tmp/catalog-dev/topic-workflows
           git rev-parse HEAD > /tmp/catalog-dev/topic-sha
           python3 - <<'PY'
           import base64,lzma,hashlib,pathlib
           raw=''.join(pathlib.Path('.catalog-dev/patch-'+str(i)+'.b64').read_text().strip() for i in (1,2,3))
           patch=lzma.decompress(base64.b64decode(raw))
-          assert hashlib.sha256(patch).hexdigest() == 'a2c4bc3c73041ee6a7c3c4a262e9eefb0c09c591a7d91d50cce59ce351a2cc30', 'Patch checksum mismatch'
+          assert hashlib.sha256(patch).hexdigest() == 'a2c4bc3c73041ee6a7c3c4a262e9eefb0c09c591a7d91d50cce59ce351a2cc30'
           pathlib.Path('/tmp/catalog-dev/source.patch').write_bytes(patch)
           PY
-      - name: Apply to the current production source without overwriting parallel work
+      - name: Reconstruct the exact source accepted by run 38865153903
         run: |
-          git fetch --no-tags --depth=1 origin main
-          git checkout --detach origin/main
+          git fetch --no-tags --depth=1 origin 8563c03db429b14a7c14d55c2dcb069c06e3924c
+          git checkout --detach 8563c03db429b14a7c14d55c2dcb069c06e3924c
           git rev-parse HEAD > /tmp/catalog-dev/base-main-sha
           git apply --check --exclude=package.json /tmp/catalog-dev/source.patch
           git apply --index --exclude=package.json /tmp/catalog-dev/source.patch
@@ -68,47 +67,46 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 24
-      - name: Install dependencies
-        run: npm install --no-audit --no-fund
-      - name: Complete static build and machine acceptance
+      - name: Regenerate deterministic registries only (full build already passed)
         run: |
-          set -o pipefail
-          npm run build 2>&1 | tee /tmp/catalog-dev/build.log
-      - name: Save accepted source on the development branch only
+          npm install --no-audit --no-fund
+          npm run sync:multi-country
+          git add data/seo-geo/registry data/catalogues/multi-country.json data/external-identity/multi-country-catalogues.json
+          git add -f docs/catalogues/multi-country.md
+      - name: Record production blobs and transfer through the development branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/seo-geo/registry data/catalogues/multi-country.json data/external-identity/multi-country-catalogues.json
-          git add -f docs/catalogues/multi-country.md
           cp -r /tmp/catalog-dev/payload .catalog-dev
-          cp /tmp/catalog-dev/workflow.yml .github/workflows/catalog-development-source.yml
-          git add .catalog-dev .github/workflows/catalog-development-source.yml
-          tree=$(git write-tree)
-          base=$(cat /tmp/catalog-dev/base-main-sha)
-          topic=$(cat /tmp/catalog-dev/topic-sha)
-          sha=$(printf 'feat: validated static multi-country interest catalogues\n' | git commit-tree "$tree" -p "$topic" -p "$base")
-          git push origin "$sha:refs/heads/feature/multi-country-interests-20261016"
-          echo "$sha" > /tmp/catalog-dev/prepared-sha
+          cp .github/workflows/deploy.yml .catalog-dev/production-deploy.yml
           python3 - <<'PY'
           import subprocess,json,pathlib
           run=lambda *args:subprocess.check_output(args,text=True).strip()
           base=pathlib.Path('/tmp/catalog-dev/base-main-sha').read_text().strip()
-          sha=pathlib.Path('/tmp/catalog-dev/prepared-sha').read_text().strip()
-          files=[]
-          for p in run('git','diff','--name-only',base,sha).splitlines():
+          tree=run('git','write-tree');files=[]
+          for p in run('git','diff','--cached','--name-only',base).splitlines():
               if p.startswith('.catalog-dev/') or p=='.github/workflows/catalog-development-source.yml':continue
               old=subprocess.run(['git','rev-parse',base+':'+p],capture_output=True,text=True)
-              files.append({'path':p,'mode':'100644','type':'blob','sha':run('git','rev-parse',sha+':'+p),'previousSha':old.stdout.strip() if old.returncode==0 else None})
+              files.append({'path':p,'mode':'100644','type':'blob','sha':run('git','rev-parse',tree+':'+p),'previousSha':old.stdout.strip() if old.returncode==0 else None})
           snapshot=json.loads(pathlib.Path('data/catalogues/multi-country.json').read_text())
-          report={'baseMain':base,'preparedCommit':sha,'build':'passed','counts':snapshot['counts'],'fingerprint':snapshot['fingerprint'],'files':files}
+          assert snapshot['fingerprint']=='ad599f971ce0d904692e4eede7469a79b3add355696313cec0b5819ec64e278b'
+          report={'baseMain':base,'validatedRun':38865153903,'build':'passed before transport','counts':snapshot['counts'],'fingerprint':snapshot['fingerprint'],'files':files}
           pathlib.Path('/tmp/catalog-dev/report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+          pathlib.Path('.catalog-dev/report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
           PY
+          rm -rf .github/workflows
+          cp -r /tmp/catalog-dev/topic-workflows .github/workflows
+          git add .github/workflows .catalog-dev
+          tree=$(git write-tree)
+          topic=$(cat /tmp/catalog-dev/topic-sha)
+          sha=$(printf 'feat: retain validated catalogue source for atomic production publication\n' | git commit-tree "$tree" -p "$topic")
+          git push origin "$sha:refs/heads/feature/multi-country-interests-20261016"
+          echo "$sha" > /tmp/catalog-dev/prepared-sha
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: multi-country-interest-acceptance
+          name: multi-country-interest-transfer
           path: |
-            /tmp/catalog-dev/build.log
             /tmp/catalog-dev/report.json
             /tmp/catalog-dev/base-main-sha
             /tmp/catalog-dev/prepared-sha

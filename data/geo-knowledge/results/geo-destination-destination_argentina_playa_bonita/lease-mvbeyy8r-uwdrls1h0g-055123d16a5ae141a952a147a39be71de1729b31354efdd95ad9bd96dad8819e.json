@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_playa_bonita",
+  "stableId": "destination_argentina_playa_bonita",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/playa-bonita/",
+  "sourceFingerprint": "73cf8b85d22fb95a311091a9ce9dfc21372cf90f9b0831a81b8325812a1481a6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "beach",
+  "alternateNames": [
+    "Playa Bonita",
+    "Пляж Бонита"
+  ],
+  "external": {
+    "wikidataQid": "Q21846732",
+    "geonamesId": "3863959"
+  },
+  "location": {
+    "latitude": -41.11716,
+    "longitude": -71.40335,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3863959/playa-bonita.html"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Опорная точка BCH из GeoNames, не вход. Q21846732 подтверждён прямым EntityData JSON (P31 beach, P17 Argentina, P1566 3863959); P625 близок к точке GeoNames.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://barilocheturismo.gob.ar/en/lake-nahuel-huapi",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Пляж на озере Науэль-Уапи у км 8 Bustillo, с видом на остров Уемуль; не одноимённый жилой район или ресторан."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/playa-bonita/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Прямой HTTPS GET: 200; H1 совпадает с названием, canonical совпадает с job URL. Точный MD approved и source-index entry сверены на SHA cdd8b523a809da44458be6d763aa2c89541d2141."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://barilocheturismo.gob.ar/en/lake-nahuel-huapi",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Пляж на озере Науэль-Уапи у км 8 Bustillo, с видом на остров Уемуль; не одноимённый жилой район или ресторан."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21846732",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21846732",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Пляж на озере Науэль-Уапи у км 8 Bustillo, с видом на остров Уемуль; не одноимённый жилой район или ресторан."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21846732",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "GeoNames ID точного географического объекта; класс и география согласуются с MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3863959/playa-bonita.html",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Опорная точка BCH из GeoNames, не вход. Q21846732 подтверждён прямым EntityData JSON (P31 beach, P17 Argentina, P1566 3863959); P625 близок к точке GeoNames."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://barilocheturismo.gob.ar/en/lake-nahuel-huapi",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Независимая сверка географического контекста и роли точки: Пляж на озере Науэль-Уапи у км 8 Bustillo, с видом на остров Уемуль; не одноимённый жилой район или ресторан."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://barilocheturismo.gob.ar/en/lake-nahuel-huapi",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Плайя-Бонита",
+      "reason": "Пляж на озере Науэль-Уапи у км 8 Bustillo, с видом на остров Уемуль; не одноимённый жилой район или ресторан."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "beach",
+      "reason": "Пляж на озере Науэль-Уапи у км 8 Bustillo, с видом на остров Уемуль; не одноимённый жилой район или ресторан."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Playa Bonita; Пляж Бонита",
+      "reason": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q21846732",
+      "reason": "Пляж на озере Науэль-Уапи у км 8 Bustillo, с видом на остров Уемуль; не одноимённый жилой район или ресторан."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3863959",
+      "reason": "GeoNames ID точного географического объекта; класс и география согласуются с MD."
+    },
+    {
+      "field": "location",
+      "probability": 88,
+      "selected": "-41.11716, -71.40335",
+      "reason": "Опорная точка BCH из GeoNames, не вход. Q21846732 подтверждён прямым EntityData JSON (P31 beach, P17 Argentina, P1566 3863959); P625 близок к точке GeoNames."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ]
+}

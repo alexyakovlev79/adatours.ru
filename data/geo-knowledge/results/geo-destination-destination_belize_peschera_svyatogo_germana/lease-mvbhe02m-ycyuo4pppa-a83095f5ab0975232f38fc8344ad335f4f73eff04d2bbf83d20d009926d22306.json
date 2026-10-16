@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_peschera_svyatogo_germana",
+  "stableId": "destination_belize_peschera_svyatogo_germana",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/st-hermans-cave/",
+  "sourceFingerprint": "b293a693dd61de7f06f6647233be046642a71ff5f44b4e2a93f4f1b6a29571f4",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4035829289
+    }
+  },
+  "location": {
+    "latitude": 17.1437652,
+    "longitude": -88.6925887,
+    "pointRole": "entrance",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/4035829289"
+  },
+  "alternateNames": [
+    "St. Herman's Cave"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_belize_nacionalnyj_park_inland_blue_hole"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.travelbelize.org/attraction/st-hermans-cave/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "St. Herman's Cave внутри St. Herman's Blue Hole National Park; отдельная пещера, не парк/водоем. Travel Belize и управляющая организация подтверждают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/st-hermans-cave/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Прямой HTTP GET 200, конечный URL и canonical совпадают с очередью; H1 совпадает с названием, noindex отсутствует. Сверены текущие MD и source-index entry stableId/country/status."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/4035829289",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Точное имя и тип объекта карты подтверждают соответствие основному референту страницы. St. Herman's Cave внутри St. Herman's Blue Hole National Park; отдельная пещера, не парк/водоем. Travel Belize и управляющая организация подтверждают."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4035829289",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "OSM natural=cave_entrance, name=St. Herman's Cave. Выбран восточный вход; другой node 9506330980, 17.1430391,-88.6970203, прямо описан как exit и не усреднялся. Парк и Travel Belize подтверждают саму пещеру и маршрут от visitor centre."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://belizeaudubon.org/shbh/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Адресная сверка географического контекста и назначения выбранной точки. OSM natural=cave_entrance, name=St. Herman's Cave. Выбран восточный вход; другой node 9506330980, 17.1430391,-88.6970203, прямо описан как exit и не усреднялся. Парк и Travel Belize подтверждают саму пещеру и маршрут от visitor centre."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.travelbelize.org/attraction/st-hermans-cave/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.travelbelize.org/attraction/st-hermans-cave/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    },
+    {
+      "field": "relationships.destination_belize_nacionalnyj_park_inland_blue_hole",
+      "sourceUrl": "https://www.travelbelize.org/attraction/st-hermans-cave/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Travel Belize и BAS прямо помещают пещеру внутрь St. Herman's Blue Hole National Park."
+    }
+  ],
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Пещера Святого Германа",
+      "reason": "St. Herman's Cave внутри St. Herman's Blue Hole National Park; отдельная пещера, не парк/водоем. Travel Belize и управляющая организация подтверждают."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "node/4035829289",
+      "reason": "Точное имя и тип объекта карты подтверждают соответствие основному референту страницы. St. Herman's Cave внутри St. Herman's Blue Hole National Park; отдельная пещера, не парк/водоем. Travel Belize и управляющая организация подтверждают."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "17.1437652, -88.6925887; entrance",
+      "reason": "OSM natural=cave_entrance, name=St. Herman's Cave. Выбран восточный вход; другой node 9506330980, 17.1430391,-88.6970203, прямо описан как exit и не усреднялся. Парк и Travel Belize подтверждают саму пещеру и маршрут от visitor centre."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "St. Herman's Cave",
+      "reason": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    },
+    {
+      "field": "relationships.destination_belize_nacionalnyj_park_inland_blue_hole",
+      "probability": 99,
+      "selected": "destination_belize_nacionalnyj_park_inland_blue_hole",
+      "reason": "Travel Belize и BAS прямо помещают пещеру внутрь St. Herman's Blue Hole National Park."
+    }
+  ],
+  "reviewNote": "Q7588335 относится к национальному парку и не присвоен пещере. OSM идентичность и координаты — восточный вход, не западный выход из системы."
+}

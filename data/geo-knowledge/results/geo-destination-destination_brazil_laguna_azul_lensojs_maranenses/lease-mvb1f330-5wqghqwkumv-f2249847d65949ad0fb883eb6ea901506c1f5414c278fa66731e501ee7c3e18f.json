@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_laguna_azul_lensojs_maranenses",
+  "stableId": "destination_brazil_laguna_azul_lensojs_maranenses",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/lagoa-azul-lencois-maranhenses/",
+  "sourceFingerprint": "71b8507ac9b2ac0d916f0cbbdb1534639551834b7b615ca9b103782cb819af62",
+  "status": "REVIEW",
+  "identityScope": "single",
+  "entityClass": "seasonal_lagoon",
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 14436547
+    }
+  },
+  "alternateNames": [
+    "Lagoa Azul"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/lagoa-azul-lencois-maranhenses/",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямой HTTP GET: 200, final URL совпадает, HTML canonical совпадает, title соответствует объекту. Stable ID, approved MD, countryId и точная source-index entry сверены в main."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/14436547/full",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямое чтение OSM: именованная Lagoa Azul, сезонный водоём среди дюн; bounds [-42.8631538,-2.6680371,-42.8574085,-2.65807]."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://turismo.ma.gov.br/programas-ou-campanhas/parques-nacionais-patrimonio-natural",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Туристическое ведомство Maranhão подтверждает Lagoa Azul как самостоятельную цель из Barreirinhas внутри Lençóis Maranhenses."
+    },
+    {
+      "field": "location.candidate",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lagoa_Azul_no_Len%C3%A7%C3%B3is_Maranhenses2.jpg",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Первичный авторский снимок: object location -2.664528,-42.855611 (20.06.2021). Проверка попадания в OSM way отрицательна; точку в location не записываем."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/lagoa-azul-lencois-maranhenses.md",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "В актуальном approved MD countryId=country_brazil; страна согласуется с внешними географическими источниками."
+    }
+  ],
+  "confidence": "medium",
+  "reviewNote": "Точная сезонная Lagoa Azul найдена в OSM way 14436547 (natural=water, water=pond, intermittent=yes) в районе Баррейриньяса. Но Commons даёт object location -2.664528,-42.855611 восточнее полигона OSM (его восточная граница -42.8574085). Другие метаданные того же автора отличаются; фото 2015 года содержит далёкую camera location. Координаты НЕ утверждены; QID всего парка не присваивается лагуне. Нужна сверка актуального контура/точки лагуны, не туристического Circuito Lagoa Azul."
+}

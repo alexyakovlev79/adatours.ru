@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_argentine_islands",
+  "stableId": "destination_antarctica_argentine_islands",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/argentine-islands/",
+  "sourceFingerprint": "e5fa282abd20fc734c51c380ece8f4b69ceac58ddd6c63876570131996ce1795",
+  "status": "READY",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q645941",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Argentine_Islands"
+    },
+    "geonamesId": "6633427"
+  },
+  "location": {
+    "latitude": -65.25,
+    "longitude": -64.28333,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=107561"
+  },
+  "alternateNames": [
+    "Argentine Islands"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/argentine-islands/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точный URL проверен HTTP 200, canonical совпадает, noindex отсутствует; актуальный MD/source-index ID, страна и тип сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=107561",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Группа островов у Пенола в Антарктиде; название не означает расположение в Аргентине."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q645941",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Совпадают именованный объект, тип и география: Argentine Islands."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q645941",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная английская Wikipedia взята из enwiki sitelink соответствующего QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q645941",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная географическая карточка 6633427; P1566 соответствует именованному объекту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=107561",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Опорная точка группы из AADC. Альтернативные P625 Wikidata −65.25, −64.26667 и −65.15, −64.16 не усреднялись; выбран официальный газеттер."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q645941",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Английское название выбранного геообъекта."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=107561",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Географически в Антарктиде; не утверждает суверенитет государства."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Группа островов у Пенола в Антарктиде; название не означает расположение в Аргентине. Опорная точка группы из AADC. Альтернативные P625 Wikidata −65.25, −64.26667 и −65.15, −64.16 не усреднялись; выбран официальный газеттер.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Argentine Islands",
+      "reason": "Группа островов у Пенола в Антарктиде; название не означает расположение в Аргентине."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q645941",
+      "reason": "Соответствие по имени, географии и типу после проверки конкурирующих объектов."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Argentine_Islands",
+      "reason": "Подтверждённый enwiki sitelink выбранного QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "6633427",
+      "reason": "Точная связь GeoNames с выбранным геообъектом; не туристический функциональный аналог."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-65.25, -64.28333",
+      "reason": "Опорная точка группы из AADC. Альтернативные P625 Wikidata −65.25, −64.26667 и −65.15, −64.16 не усреднялись; выбран официальный газеттер."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Argentine Islands",
+      "reason": "Английское название в выбранной Wikidata-карточке."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Географический регион Антарктида, без признания территориальных претензий."
+    }
+  ]
+}

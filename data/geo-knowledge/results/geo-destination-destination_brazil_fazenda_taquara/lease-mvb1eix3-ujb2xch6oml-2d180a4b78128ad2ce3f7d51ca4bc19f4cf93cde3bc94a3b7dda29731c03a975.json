@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_fazenda_taquara",
+  "stableId": "destination_brazil_fazenda_taquara",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/fazenda-taquara/",
+  "sourceFingerprint": "268d38a2e86fa15f5db05d195e4c1e2eaca64475c038cd34e62a75737dd46d65",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "entityClass": "historic_coffee_estate",
+  "external": {
+    "wikidataQid": "Q104907357",
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Fazenda_da_Taquara_(Barra_do_Pira%C3%AD)"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/fazenda-taquara/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTTP GET: 200, canonical совпадает, H1 соответствует сущности, noindex отсутствует. Текущие production MD и source-index entry проверены; stable ID, страна Brazil и approved совпадают."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/fazenda-taquara.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Текущий production MD: countryId country_brazil; назначение объекта сверено с внешними источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q104907357",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Fazenda da Taquara (Barra do Piraí), casa grande, Brazil; нужная усадьба, не одноименное поместье Rio de Janeiro."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Fazenda_da_Taquara_(Barra_do_Pira%C3%AD)",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "История Pereira da Silva, название Nova Prosperidade, предположительно 1830-е; соответствует MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.turismo.rj.gov.br/cidades/barra-do-pirai/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Официальный портал штата: Fazenda da Taquara, RJ-145 km 2, Belvedere, Barra do Piraí."
+    },
+    {
+      "field": "location.candidates",
+      "sourceUrl": "https://www.portalvaledocafe.com.br/fazendadataquara/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Точный адрес и история; iframe карты дает лишь центр обзора, не координату здания. Не переносить viewport в location."
+    }
+  ],
+  "alternateNames": [
+    "Fazenda da Taquara",
+    "Fazenda da Nova Prosperidade"
+  ],
+  "reviewNote": "Точная кофейная усадьба в Barra do Piraí, RJ-145 km 2; не Fazenda da Baronesa в Jacarepaguá, Rio de Janeiro. WD дает −22.4519261,−43.8381961. Портал Vale do Café содержит карту с центром viewport −22.4503030,−43.8385301, но центр карты не доказывает точку здания. Независимая точная сверка координат не завершена, location не назначено; исторический PDF инвентаря недоступен."
+}

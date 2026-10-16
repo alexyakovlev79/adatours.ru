@@ -60,6 +60,35 @@ test('policy requires scored accepted coordinates and relationships',()=>{
 });
 test('stage gate and unavailable pages are skipped',()=>{assert.deepEqual(c.claim({jobs:[{...job,stage:2}]},fresh(),args),[]);assert.deepEqual(c.claim({jobs:[{...job,available:false}]},fresh(),args),[]);});
 test('publishing is serialized and PUBLISHED requires exact deployment commit',()=>{const s=fresh();c.claim(queue,s,args);c.complete(queue,s,{...args,result});const p=c.beginPublication(queue,s,{ownerId:'master',batchId:'batch1',now:args.now});assert.equal(p.jobs.length,1);assert.throws(()=>c.beginPublication(queue,s,{ownerId:'other',batchId:'batch2',now:args.now}));c.recordCommit(s,{ownerId:'master',batchId:'batch1',commit:'a'.repeat(40),now:args.now});assert.equal(s.jobs[job.jobId].status,'DEPLOYING');assert.throws(()=>c.confirmDeploy(s,{ownerId:'master',batchId:'batch1',commit:'b'.repeat(40),now:args.now}));c.confirmDeploy(s,{ownerId:'master',batchId:'batch1',commit:'a'.repeat(40),runUrl:'https://github.com/run/1',now:args.now});assert.equal(s.jobs[job.jobId].status,'PUBLISHED');});
+test('publishes every READY passport in one batch regardless of legacy limit 20',()=>{
+ const list=Array.from({length:103},(_,i)=>({...job,jobId:'bulk_'+i,stableId:'entity_'+i,stage:2,sourceOrder:i}));
+ const state=fresh();
+ for(const j of list)state.jobs[j.jobId]={status:'READY',resultHash:'sha_'+j.jobId,resultPath:'results/'+j.jobId};
+ state.jobs[list[3].jobId].status='REVIEW';
+ state.jobs[list[9].jobId].status='PUBLISHED';
+ const p=c.beginPublication({jobs:list},state,{batchId:'all-ready',ownerId:'geo-master',now:args.now,limit:20});
+ assert.equal(p.jobs.length,101);
+ assert.equal(state.jobs[list[3].jobId].status,'REVIEW');
+ assert.throws(()=>c.beginPublication({jobs:list},state,{batchId:'other',ownerId:'another',now:args.now}),/already in progress/);
+ assert.deepEqual(c.abortUncommittedPublication(state,{batchId:'all-ready',ownerId:'geo-master'}),{batchId:'all-ready',restored:101});
+ assert.equal(state.publication,null);
+ assert.equal(state.jobs[list[3].jobId].status,'REVIEW');
+ assert.equal(state.jobs[list[9].jobId].status,'PUBLISHED');
+ assert.equal(list.filter(j=>state.jobs[j.jobId].status==='READY').length,101);
+});
+test('cannot abort a committed publication, even after a publisher restart',()=>{
+ const state=fresh();state.jobs[job.jobId]={status:'READY',resultHash:'hash',resultPath:'result'};
+ c.beginPublication({jobs:[job]},state,{batchId:'b1',ownerId:'geo-master',now:args.now});
+ c.recordCommit(state,{batchId:'b1',ownerId:'geo-master',commit:'a'.repeat(40),now:args.now});
+ assert.throws(()=>c.abortUncommittedPublication(state,{batchId:'b1',ownerId:'geo-master'}),/Cannot abort/);
+});
+import {receiptMatchesPublication} from '../scripts/schema-geo-autoconfirm.mjs';
+test('autoconfirm uses the immutable exact release receipt and deploy SHA',()=>{
+ const p={batchId:'geo-full',status:'DEPLOYING',commit:'b'.repeat(40),jobs:[{jobId:'geo-job-a',resultHash:'hash1'}]};
+ assert.equal(receiptMatchesPublication(p,{batchId:p.batchId,jobs:p.jobs},p.commit),true);
+ assert.equal(receiptMatchesPublication(p,{batchId:p.batchId,jobs:[{...p.jobs[0],resultHash:'changed'}]},p.commit),false);
+ assert.equal(receiptMatchesPublication(p,{batchId:p.batchId,jobs:p.jobs},'c'.repeat(40)),false);
+});
 import {runSchemaGeo} from '../scripts/schema-geo-remote.mjs';
 function mockGithub({dropReply=false,queueData=queue,manifestData={maxStage:1,batchSize:10}}={}) {
  let head='0'.repeat(40),serial=0,dropped=false;

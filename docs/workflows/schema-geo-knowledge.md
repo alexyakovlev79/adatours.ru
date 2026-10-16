@@ -1,6 +1,6 @@
 # Ada Tours — Schema.org / GEO: сбор данных и публикация
 
-Версия 2.1 · 16.10.2026. Репозиторий `alexyakovlev79/adatours.ru`.
+Версия 2.2 · 16.10.2026 (ускоренный мастер, все READY одним релизом). Репозиторий `alexyakovlev79/adatours.ru`.
 Команды: **«собирай данные»** (один сборщик) и **«публикуй данные»** (единственный мастер).
 
 ## 1. Что исправлено относительно стратегии 1.0
@@ -44,11 +44,11 @@
 
 ```javascript
 const repo = 'alexyakovlev79/adatours.ru';
-const un = r => { if (r.isError) throw Error(JSON.stringify(r)); return r.structuredContent || r.result || r; };
-const head = JSON.parse(un(await tools.mcp__codex_apps__github_fetch({url:`https://api.github.com/repos/${repo}/git/ref/heads/main`})).content).object.sha;
+const un = r => { if (r.isError) throw Error(JSON.stringify(r)); return r.result || r.structuredContent || r; };
+const head = JSON.parse(un(await tools.mcp__GitHub__fetch({url:`https://api.github.com/repos/${repo}/git/ref/heads/main`})).content).object.sha;
 async function code(path) {
-  const f=un(await tools.mcp__codex_apps__github_fetch_file({repository_full_name:repo,path,ref:head}));
-  return f.content || un(await tools.mcp__codex_apps__github_fetch_blob({repository_full_name:repo,blob_sha:f.sha})).content;
+  const f=un(await tools.mcp__GitHub__fetch_file({repository_full_name:repo,path,ref:head}));
+  return f.content || un(await tools.mcp__GitHub__fetch_blob({repository_full_name:repo,blob_sha:f.sha})).content;
 }
 const [coreSource,remoteSource]=await Promise.all([code('scripts/schema-geo-core.mjs'),code('scripts/schema-geo-remote.mjs')]);
 store('geoCoreSource',coreSource);store('geoRemoteSource',remoteSource);
@@ -112,16 +112,52 @@ text(r);
 
 После Git-коммита обновить строки зеркала по jobId, не по физическому номеру строки. Ошибку Sheets сообщить вместе с успешным SHA, а не повторять сбор/публикацию. Сборщик не запускает build/deploy, не пишет main и не вносит результат в source content MD.
 
-## 4. «Публикуй данные»: единственный мастер
+## 4. «Публикуй данные»: один полный пакет без лимита
 
-1. `action:'beginPublication', batchId, ownerId, limit:20` атомарно фиксирует точные result hashes. Другая публикация запрещена до разрешения этой. При остановке продолжить **тот же batchId/ownerId**. Старый PUBLISHING/DEPLOYING нельзя просто снять по таймеру: commit мог уже попасть в main.
-2. На фиксированном SHA staging прочитать resultPath, проверить hash, активную сущность и свежий contentBlobSHA main. Запустить `node --test tests/schema-geo-knowledge.test.mjs` и `node scripts/check-geo-knowledge.mjs`. REVIEW/BLOCKED/STALE/UNAVAILABLE не включать. Межсущностные проверки: коллизии QID, тип, страна, циклы containedInPlace, существующие targets, itinerary только подтвержденные посещения и правильный порядок.
-3. При первой реальной партии создать адаптер `geo-knowledge` в существующий renderer, с fixture/HTML-тестами. Публичный паспорт содержит только проверенные утверждения и provenance; не owner/token. `recordId` остается действующим: `#country`, `#place`, `#tour`, `#excursion`, `#topic`. Antarctica — Place, French Guiana — административная территория Франции, а не самостоятельное государство. Никакого массового расширения sameAs компании или изменения текущего EN-реестра.
-4. Дополнения рендерить на подходящем узле существующего `@graph`; не создавать второй Country/Place с другим ID. Schema.org domain/range проверять по официальному словарю. Для новых паспортов `sameAs` и Wikidata QID принимать при экспертной вероятности соответствия **от 70%**, включая основной референт составной страницы; валидатор и renderer применяют этот порог. `identifier` — внешние ID; `hasMap` — карта; `subjectOf` — материал об объекте. Официальный URL автоматически не равен sameAs. Координаты — GeoCoordinates при вероятности от 70% и установленной роли точки. Собственные поля в JSON-LD не добавлять.
-5. На **текущем** main собрать адресный tree/commit только production-паспортов/адаптера/тестов и `releases/<batchId>.json`. В receipt: `{schemaVersion:2,batchId,jobs:[...точный массив state.publication.jobs...]}`. Не merge всей staging-ветки и не переносить state, results и чужие SEO-статьи. Перед commit еще раз проверить hashes/свежесть. CAS main, без force. При конфликте — перечитать main и пересобрать адресный патч.
-6. После подтвержденного main SHA вызвать `action:'recordCommit', batchId, ownerId, commit`. Диспетчер проверит release receipt, список hashes и принадлежность SHA main; статус DEPLOYING. В случае потери ответа main-коммита сначала найти release receipt в main, восстановить его SHA, **не делать повторный commit**.
-7. Дождаться одного штатного build/deploy. Подтвердить успешный `.github/workflows/deploy.yml` **для этого SHA**. `action:'confirmDeploy', batchId,ownerId,commit,runId` перепроверяет run через GitHub и лишь тогда ставит PUBLISHED. Если CI упал, сохранить DEPLOYING, устранить адресный сбой/согласовать новый receipt, не выдавать данные за опубликованные.
-8. Обновить обе строки зеркала (очередь/результат) и журнал публикаций из подтвержденного state. Не публиковать служебные JSON в public/.
+**За одну команду публиковать ВСЕ `READY` на фиксированном SHA `schema-geo/staging`.** Нет ограничения 20, нет циклов по 20. `manifest.batchSize: 10` ограничивает только работу отдельных **сборщиков**. Мастер только переносит проверенные готовые паспорта: ни новых интернет-исследований, ни текста от себя, ни перегенерации неизменяемых результатов.
+
+### 4.1. Самый быстрый запуск: один Code Mode вызов
+
+Считать `scripts/schema-geo-core.mjs`, `scripts/schema-geo-remote.mjs` и `scripts/schema-geo-publisher.mjs` с **одного точного `main` SHA**. Актуальные имена Github tools: `mcp__GitHub__fetch`, `fetch_file`, `create_tree`, `create_commit`, `update_ref`; действующий remote-код также поддерживает старые алиасы.
+
+~~~javascript
+const repo='alexyakovlev79/adatours.ru';
+const un=r=>{if(r.isError)throw Error(JSON.stringify(r));return r.result||r.structuredContent||r;};
+const head=JSON.parse(un(await tools.mcp__GitHub__fetch({
+ url:'https://api.github.com/repos/'+repo+'/git/ref/heads/main'
+})).content).object.sha;
+const paths=['scripts/schema-geo-core.mjs','scripts/schema-geo-remote.mjs','scripts/schema-geo-publisher.mjs'];
+const src=await Promise.all(paths.map(async path=>un(await tools.mcp__GitHub__fetch_file({
+ repository_full_name:repo,path,ref:head
+})).content));
+const core=new Function(src[0].replace(/^export /gm,'')+
+ ';return {statusOf,digest,validateResult,claim,renew,release,complete,beginPublication,abortUncommittedPublication,recordCommit,confirmDeploy,stable};')();
+const remote=new Function(src[1].replace(/^export /gm,'')+';return runSchemaGeo;')();
+const publish=new Function(src[2].replace(/^export /gm,'')+';return publishSchemaGeoAll;')();
+text(await publish(tools,core,remote));
+~~~
+
+Этот вызов:
+1. Автоматически восстанавливает прежний `DEPLOYING`, если уже существует успешный exact Actions run. При прежнем `PUBLISHING` ищет подтвержденный release receipt в `main` прежде, чем делать новый commit. Чужую незакрытую блокировку не перезаписывает.
+2. Одним CAS захватывает **весь** текущий `READY`. На одном зафиксированном staging SHA читает immutable `resultPath` параллельно (до 12 запросов одновременно), проверяет hashes, формат, готовность и `sourceBlobSha` через Git trees (без отдельного чтения каждого production MD).
+3. В `main` переносит только `entities/<stableId>.json` и один `releases/<batchId>.json`, оставляя чужие staging-данные, `REVIEW`, `claims`, `state` и SEO вне изменений. Технические Git tree могут загружаться несколькими порциями, **но создается ровно один content-коммит, одно продвижение `main` и один штатный деплой**. При сдвиге `main` повторно используется уже скачанный набор JSON; никаких новых исследований.
+4. После успешного content-коммита однократно выполняет `recordCommit`. Если ответ GitHub потерян, опирается на существующий receipt и не создает второй релиз. При сбое до записи `main` может снять только свою незакоммиченную блокировку; при неясном исходе CAS блокировку сохраняет до адресного восстановления.
+
+Перед публикацией **не запускать повторно** `node --test`, локальный `npm run build`, отдельный `check-geo-knowledge.mjs` для всей базы, браузерный обход каждой страницы, полную сверку Google Sheets или повторное исследование внешних GEO-источников. Узкая валидация входных паспортов выполняется при сборке общего пакета; единственный штатный `npm run build` в GitHub Actions проверяет рендеринг Schema.org и весь релиз. Отдельные диагностические команды допускаются только при конкретном сбое штатной проверки.
+
+### 4.2. Автоматическое закрытие после деплоя — без ожидания мастера
+
+Статус `deployed_pending` означает успешный commit/запуск штатного deploy, но еще **не `PUBLISHED`**. Мастер **не ждет** 10–20 минут завершения Pages и не опрашивает Actions в цикле.
+
+`.github/workflows/geo-finalize.yml` срабатывает на `workflow_run: completed` после **успеха всего** `Deploy to GitHub Pages`. Скрипт `scripts/schema-geo-autoconfirm.mjs` проверяет успешный точный Pages SHA, одноименный release receipt и полный массив job/result hashes, после чего атомарно переводит `PUBLISHING`/`DEPLOYING` в `PUBLISHED` в `schema-geo/staging`. Он умеет восстановить потерянный `recordCommit`, сохраняет параллельные обновления worker-ов через fast-forward CAS, не трогает `main` и не инициирует второй деплой. Неподтвержденный, ошибочный или чужой SHA не помечается опубликованным. Повторы идемпотентны.
+
+Если автоматическая запись в staging не удалась (например, у `github.token` нет доступа), безопасный резервный путь — `remote(tools,core,{action:'resumePublication'})`: он ищет только успешный exact Pages run и закрывает текущую публикацию. `confirmDeploy` с явным `runId` оставлен для адресного расследования. Не повторять релиз ради статуса.
+
+### 4.3. Внешняя таблица — только зеркало
+
+После подтвержденного `PUBLISHED` обновить затронутые строки листов `GEO очередь` и `GEO результаты` и одну запись в `GEO публикации` **одним пакетным запросом Sheets**, по stable `jobId` и `batchId`. Сохранять историю и immutable URI; если таблица недоступна, повторяется только зеркалирование, без Git-коммита или повторного деплоя. Следующая GEO-публикация не должна ждать Sheets.
+
+Отчет: число уникальных паспортов и отдельных amendment job, SHA единого релиза, ссылка на один Actions run и фактический `DEPLOYING`/`PUBLISHED`, адресные исключения. Новые `READY`, появившиеся после захвата снимка, относятся к следующему запуску, без изменений лимитов.
 
 ## 5. Этапы и gates
 

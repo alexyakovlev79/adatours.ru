@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_vulkan_tunupa",
+  "stableId": "destination_bolivia_vulkan_tunupa",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/tunupa-volcano/",
+  "sourceFingerprint": "8f1ca1283041deac8e6164dde03209b035207ae827dbf0848a9da23d183543bc",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "volcano",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/tunupa-volcano/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая проверка HTTP 200, canonical, H1 и stable ID; совпадают с текущими approved MD и source-index. Вулкан на северной стороне солончака Уюни в MD соответствует Tunupa Q849364; название Thunupa/Cerro Tunupa, страна и географический контекст совпадают."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q849364",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Класс volcano установлен по смыслу MD и исследованным источникам. Вулкан на северной стороне солончака Уюни в MD соответствует Tunupa Q849364; название Thunupa/Cerro Tunupa, страна и географический контекст совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/tunupa-volcano-bolivia-150047/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "NASA описывает конус Тунупы на полуострове между солончаками, подтверждая географический контекст MD и справочников."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q849364",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прочитан живой Special:EntityData JSON; имя, P31, P17 и смысл объекта совпадают. Вулкан на северной стороне солончака Уюни в MD соответствует Tunupa Q849364; название Thunupa/Cerro Tunupa, страна и географический контекст совпадают."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q849364",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Точные Wikipedia sitelinks выбранного QID; не тематические статьи соседнего объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3902212/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая карточка GeoNames прочитана с HTTP 200: точное название и класс совпадают. Representative-точка горного массива из GeoNames 3902212; не точка входа на маршрут и не обещание координаты высшей вершины. Wikidata -19.83,-67.64 находится примерно в 1 км восточнее; координаты не усреднялись. Название божества Tunupa не присваивается географической странице."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3902212/cerro-tunupa.html",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Representative-точка горного массива из GeoNames 3902212; не точка входа на маршрут и не обещание координаты высшей вершины. Wikidata -19.83,-67.64 находится примерно в 1 км восточнее; координаты не усреднялись. Название божества Tunupa не присваивается географической странице."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/tunupa-volcano-bolivia-150047/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "NASA подтверждает расположение вулканического массива у северного края Уюни, между солончаками."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q849364",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Вулкан на северной стороне солончака Уюни в MD соответствует Tunupa Q849364; название Thunupa/Cerro Tunupa, страна и географический контекст совпадают. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Вулкан Тунупа",
+      "reason": "Вулкан на северной стороне солончака Уюни в MD соответствует Tunupa Q849364; название Thunupa/Cerro Tunupa, страна и географический контекст совпадают."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "volcano",
+      "reason": "Вулкан на северной стороне солончака Уюни в MD соответствует Tunupa Q849364; название Thunupa/Cerro Tunupa, страна и географический контекст совпадают."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q849364",
+      "reason": "Вулкан на северной стороне солончака Уюни в MD соответствует Tunupa Q849364; название Thunupa/Cerro Tunupa, страна и географический контекст совпадают."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Tunupa\",\"es\":\"https://es.wikipedia.org/wiki/Volc%C3%A1n_Tunupa\"}",
+      "reason": "Sitelinks из проверенной карточки конкретного объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3902212",
+      "reason": "Имя и класс проверены в GeoNames; география уточнена независимыми источниками. "
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-19.83467, -67.64786",
+      "reason": "Representative-точка горного массива из GeoNames 3902212; не точка входа на маршрут и не обещание координаты высшей вершины. Wikidata -19.83,-67.64 находится примерно в 1 км восточнее; координаты не усреднялись. Название божества Tunupa не присваивается географической странице."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 98,
+      "selected": "country_bolivia",
+      "reason": "Вулкан на северной стороне солончака Уюни в MD соответствует Tunupa Q849364; название Thunupa/Cerro Tunupa, страна и географический контекст совпадают."
+    }
+  ],
+  "reviewNote": "Representative-точка горного массива из GeoNames 3902212; не точка входа на маршрут и не обещание координаты высшей вершины. Wikidata -19.83,-67.64 находится примерно в 1 км восточнее; координаты не усреднялись. Название божества Tunupa не присваивается географической странице.",
+  "external": {
+    "wikidataQid": "Q849364",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tunupa",
+      "es": "https://es.wikipedia.org/wiki/Volc%C3%A1n_Tunupa"
+    },
+    "geonamesId": "3902212"
+  },
+  "location": {
+    "latitude": -19.83467,
+    "longitude": -67.64786,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3902212/cerro-tunupa.html"
+  }
+}

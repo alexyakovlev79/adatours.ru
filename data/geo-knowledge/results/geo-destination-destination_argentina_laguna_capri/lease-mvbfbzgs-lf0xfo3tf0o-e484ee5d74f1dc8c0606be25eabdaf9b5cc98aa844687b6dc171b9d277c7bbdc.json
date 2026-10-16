@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_laguna_capri",
+  "stableId": "destination_argentina_laguna_capri",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/laguna-capri/",
+  "sourceFingerprint": "9743f75bffd9b198df54e6701a30a8c66ca7e8dba9733e47c32eb76b0ea6b558",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "LakeBodyOfWater",
+  "external": {
+    "wikidataQid": "Q124360343",
+    "osm": {
+      "type": "relation",
+      "id": 2760678
+    }
+  },
+  "location": {
+    "latitude": -49.3049,
+    "longitude": -72.936,
+    "pointRole": "representative",
+    "coordinateSource": "https://commons.wikimedia.org/wiki/Category:Laguna_Capri"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/hacer-trekking-en-el-chalten",
+      "checkedAt": "2026-10-16T20:36:55.250Z",
+      "note": "Озеро Laguna Capri у El Chaltén, Los Glaciares, с видами Fitz Roy. Первичный OSM relation 2760678: natural=water, name=Laguna Capri, wikidata=Q124360343; Commons подтверждает lake и тот же QID. Не одноименные кемпинг или смотровая площадка."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/laguna-capri/",
+      "checkedAt": "2026-10-16T20:36:55.250Z",
+      "note": "Live HTML проверен: HTTP 200, H1, canonical и ID текущих MD/source-index согласованы; noindex отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/2760678.json",
+      "checkedAt": "2026-10-16T20:36:55.250Z",
+      "note": "Озеро Laguna Capri у El Chaltén, Los Glaciares, с видами Fitz Roy. Первичный OSM relation 2760678: natural=water, name=Laguna Capri, wikidata=Q124360343; Commons подтверждает lake и тот же QID. Не одноименные кемпинг или смотровая площадка."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Laguna_Capri",
+      "checkedAt": "2026-10-16T20:36:55.250Z",
+      "note": "Authority file Q124360343, тип lake, Los Glaciares; не категория абстрактного маршрута."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/2760678.json",
+      "checkedAt": "2026-10-16T20:36:55.250Z",
+      "note": "Первичный OSM JSON прочитан: точный природный объект с именем и wikidata Q124360343."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Laguna_Capri",
+      "checkedAt": "2026-10-16T20:36:55.250Z",
+      "note": "Опорная точка озера 49°18′17.64″S 72°56′09.6″W из карточки Commons/Wikidata; точная идентичность водоема подтверждена primary OSM multipolygon. Туристический node12697849001, GN12493912, campsite5298100987 и viewpoint598214635 не подменяют озеро. Точка не является началом трека."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/hacer-trekking-en-el-chalten",
+      "checkedAt": "2026-10-16T20:36:55.250Z",
+      "note": "Озеро Laguna Capri у El Chaltén, Los Glaciares, с видами Fitz Roy. Первичный OSM relation 2760678: natural=water, name=Laguna Capri, wikidata=Q124360343; Commons подтверждает lake и тот же QID. Не одноименные кемпинг или смотровая площадка."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/hacer-trekking-en-el-chalten",
+      "checkedAt": "2026-10-16T20:36:55.250Z",
+      "note": "Озеро Laguna Capri у El Chaltén, Los Glaciares, с видами Fitz Roy. Первичный OSM relation 2760678: natural=water, name=Laguna Capri, wikidata=Q124360343; Commons подтверждает lake и тот же QID. Не одноименные кемпинг или смотровая площадка."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.argentina.gob.ar/jefatura/turismo/viaja-por-argentina/hacer-trekking-en-el-chalten",
+      "checkedAt": "2026-10-16T20:36:55.250Z",
+      "note": "Подтверждено расположение выбранного объекта в Аргентине."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Лагуна-Капри",
+      "reason": "Озеро Laguna Capri у El Chaltén, Los Glaciares, с видами Fitz Roy. Первичный OSM relation 2760678: natural=water, name=Laguna Capri, wikidata=Q124360343; Commons подтверждает lake и тот же QID. Не одноименные кемпинг или смотровая площадка."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q124360343",
+      "reason": "Озеро Laguna Capri у El Chaltén, Los Glaciares, с видами Fitz Roy. Первичный OSM relation 2760678: natural=water, name=Laguna Capri, wikidata=Q124360343; Commons подтверждает lake и тот же QID. Не одноименные кемпинг или смотровая площадка."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "relation/2760678",
+      "reason": "Озеро Laguna Capri у El Chaltén, Los Glaciares, с видами Fitz Roy. Первичный OSM relation 2760678: natural=water, name=Laguna Capri, wikidata=Q124360343; Commons подтверждает lake и тот же QID. Не одноименные кемпинг или смотровая площадка."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "{\"latitude\":-49.3049,\"longitude\":-72.936,\"pointRole\":\"representative\",\"coordinateSource\":\"https://commons.wikimedia.org/wiki/Category:Laguna_Capri\"}",
+      "reason": "Опорная точка озера 49°18′17.64″S 72°56′09.6″W из карточки Commons/Wikidata; точная идентичность водоема подтверждена primary OSM multipolygon. Туристический node12697849001, GN12493912, campsite5298100987 и viewpoint598214635 не подменяют озеро. Точка не является началом трека."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "LakeBodyOfWater",
+      "reason": "Озеро Laguna Capri у El Chaltén, Los Glaciares, с видами Fitz Roy. Первичный OSM relation 2760678: natural=water, name=Laguna Capri, wikidata=Q124360343; Commons подтверждает lake и тот же QID. Не одноименные кемпинг или смотровая площадка."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "География Argentina подтверждена MD и внешними источниками."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 50,
+      "reason": "GN12493912 привязан к tourism attraction, не подтвержден как точный водоем; первичный natural=water multipolygon использован вместо него."
+    }
+  ],
+  "reviewNote": "Опорная точка озера 49°18′17.64″S 72°56′09.6″W из карточки Commons/Wikidata; точная идентичность водоема подтверждена primary OSM multipolygon. Туристический node12697849001, GN12493912, campsite5298100987 и viewpoint598214635 не подменяют озеро. Точка не является началом трека."
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_cerro_campanario",
+  "stableId": "destination_argentina_cerro_campanario",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/cerro-campanario/",
+  "sourceFingerprint": "a7710fe4b61337320827b6505f57c1b19a47735ecc46b7a2f1147fae37031310",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "mountain",
+  "alternateNames": [
+    "Cerro Campanario",
+    "Cerro Campanario Bariloche"
+  ],
+  "external": {
+    "wikidataQid": "Q21847950",
+    "geonamesId": "7932642",
+    "osm": {
+      "type": "node",
+      "id": 342182428
+    }
+  },
+  "location": {
+    "latitude": -41.0745,
+    "longitude": -71.4768,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q21847950"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "P625 точной горы; официальный портал подтверждает положение у км 17,5 Bustillo и виды на озёрный район. OSM node 342182428 приведён в точном QID, не node верхней станции 342182420.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.barilocheturismo.gob.ar/es/actividades-cerro-campanario",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Гора и панорамная вершина у Барилоче на Circuito Chico; не канатная станция и не одноимённая гора на границе Чили."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/cerro-campanario/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Прямой HTTPS GET: 200; H1 совпадает с названием, canonical совпадает с job URL. Точный MD approved и source-index entry сверены на SHA cdd8b523a809da44458be6d763aa2c89541d2141."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.barilocheturismo.gob.ar/es/actividades-cerro-campanario",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Гора и панорамная вершина у Барилоче на Circuito Chico; не канатная станция и не одноимённая гора на границе Чили."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21847950",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21847950",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Гора и панорамная вершина у Барилоче на Circuito Chico; не канатная станция и не одноимённая гора на границе Чили."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21847950",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "GeoNames ID точного географического объекта; класс и география согласуются с MD."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21847950",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Гора и панорамная вершина у Барилоче на Circuito Chico; не канатная станция и не одноимённая гора на границе Чили."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21847950",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "P625 точной горы; официальный портал подтверждает положение у км 17,5 Bustillo и виды на озёрный район. OSM node 342182428 приведён в точном QID, не node верхней станции 342182420."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.barilocheturismo.gob.ar/es/actividades-cerro-campanario",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Независимая сверка географического контекста и роли точки: Гора и панорамная вершина у Барилоче на Circuito Chico; не канатная станция и не одноимённая гора на границе Чили."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.barilocheturismo.gob.ar/es/actividades-cerro-campanario",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Серро-Кампанарио",
+      "reason": "Гора и панорамная вершина у Барилоче на Circuito Chico; не канатная станция и не одноимённая гора на границе Чили."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "mountain",
+      "reason": "Гора и панорамная вершина у Барилоче на Circuito Chico; не канатная станция и не одноимённая гора на границе Чили."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Cerro Campanario; Cerro Campanario Bariloche",
+      "reason": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q21847950",
+      "reason": "Гора и панорамная вершина у Барилоче на Circuito Chico; не канатная станция и не одноимённая гора на границе Чили."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "7932642",
+      "reason": "GeoNames ID точного географического объекта; класс и география согласуются с MD."
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "selected": "node/342182428",
+      "reason": "Гора и панорамная вершина у Барилоче на Circuito Chico; не канатная станция и не одноимённая гора на границе Чили."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-41.0745, -71.4768",
+      "reason": "P625 точной горы; официальный портал подтверждает положение у км 17,5 Bustillo и виды на озёрный район. OSM node 342182428 приведён в точном QID, не node верхней станции 342182420."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ]
+}

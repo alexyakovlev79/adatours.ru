@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://adatours.ru/internal/geo-result-v2",
+  "title": "Ada Tours verified GEO result v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "jobId",
+    "stableId",
+    "kind",
+    "canonicalPath",
+    "sourceFingerprint",
+    "status",
+    "evidence",
+    "confidence"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "jobId": {
+      "type": "string",
+      "pattern": "^geo-[A-Za-z0-9_-]+$"
+    },
+    "stableId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "country",
+        "destination",
+        "tour",
+        "excursion",
+        "template"
+      ]
+    },
+    "canonicalPath": {
+      "type": "string",
+      "pattern": "^/.*$"
+    },
+    "sourceFingerprint": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "enum": [
+        "READY",
+        "REVIEW",
+        "BLOCKED"
+      ]
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "identityScope": {
+      "enum": [
+        "single",
+        "composite"
+      ]
+    },
+    "entityClass": {
+      "type": "string"
+    },
+    "reviewNote": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alternateNames": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "external": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "wikidataQid": {
+          "type": "string",
+          "pattern": "^Q[1-9][0-9]*$"
+        },
+        "wikipedia": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^https://",
+            "format": "uri"
+          }
+        },
+        "geonamesId": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]*$"
+        },
+        "osm": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "id"
+          ],
+          "properties": {
+            "type": {
+              "enum": [
+                "node",
+                "way",
+                "relation"
+              ]
+            },
+            "id": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "officialUrl": {
+          "type": "string",
+          "pattern": "^https://",
+          "format": "uri"
+        },
+        "unescoSiteIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "wdpaIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "latitude",
+        "longitude",
+        "pointRole",
+        "coordinateSource"
+      ],
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "pointRole": {
+          "enum": [
+            "centroid",
+            "entrance",
+            "settlement_center",
+            "feature_point",
+            "representative"
+          ]
+        },
+        "coordinateSource": {
+          "type": "string",
+          "pattern": "^https://",
+          "format": "uri"
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "targetId"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "containedInPlace",
+              "visits",
+              "relatedPlace"
+            ]
+          },
+          "targetId": {
+            "type": "string"
+          },
+          "position": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "day": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "optional": {
+            "type": "boolean"
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "visits"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "position"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "field",
+          "sourceUrl",
+          "checkedAt",
+          "note"
+        ],
+        "properties": {
+          "field": {
+            "type": "string"
+          },
+          "sourceUrl": {
+            "type": "string",
+            "pattern": "^https://",
+            "format": "uri"
+          },
+          "checkedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "checkedUrls",
+        "findings"
+      ],
+      "properties": {
+        "checkedUrls": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^https://",
+            "format": "uri"
+          }
+        },
+        "findings": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "proposedChanges": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "READY"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "confidence": {
+            "const": "high"
+          },
+          "evidence": {
+            "minItems": 1
+          }
+        }
+      },
+      "else": {
+        "required": [
+          "reviewNote"
+        ],
+        "properties": {
+          "reviewNote": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

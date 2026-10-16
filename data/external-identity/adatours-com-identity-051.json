@@ -1945,12 +1945,12 @@
       "optional_destination_tours": 1
     },
     "with_en_candidates": 50,
-    "status": "completed_pending_registry_sync",
-    "queue_and_correspondences_synced": false,
+    "status": "completed_integrated",
+    "queue_and_correspondences_synced": true,
     "contiguous_cursor": 2200,
     "next_batch": "adatours-com-identity-052",
     "next_first_key": "https://adatours.ru/colombia/place/el-penon-de-guatape/tour/",
-    "notes": "50 URLs verified, no new sameAs. Full 051 evidence saved; queue and crosswalk integration is deferred because the GitHub connector rejected writing the multi-megabyte source file. The continuous queue cursor remains 2200. Do not redo the 50 checks.",
+    "notes": "50 URL checks completed. All 50 results synchronized into the queue, JSON and CSV crosswalk; contiguous verification cursor remains 2200 because earlier batches still await integration. Next new batch 052.",
     "next_contiguous_unchecked_batch": "adatours-com-identity-045",
     "next_new_batch": "adatours-com-identity-052",
     "pending_sync_previous_batches": [
@@ -1958,6 +1958,7 @@
       "047",
       "048",
       "050 (17 missing rows)"
-    ]
+    ],
+    "synced_at": "2026-10-16T20:35:00Z"
   }
 }

@@ -133,7 +133,7 @@
       "unconfirmed_elsewhere": 36
     }
   ],
-  "updated_at": "2026-10-16T19:47:58.943Z",
+  "updated_at": "2026-10-16T20:35:00Z",
   "completed_reports_pending_sync": [
     {
       "batch_id": "adatours-com-identity-011",
@@ -186,9 +186,10 @@
       "batch_id": "adatours-com-identity-051",
       "report": "adatours-com-identity-051.json",
       "research_status": "completed",
-      "queue_sync": "pending",
-      "correspondences_table_sync": "pending",
-      "note": "Do not re-verify existing checked URLs."
+      "queue_sync": "completed",
+      "correspondences_table_sync": "completed",
+      "note": "Do not re-verify existing checked URLs.",
+      "resolved_at": "2026-10-16T20:35:00Z"
     }
   ],
   "completed_ahead_of_cursor": [
@@ -243,10 +244,9 @@
       "positions": "2501–2550",
       "checked": 50,
       "confirmed": 0,
-      "integrated_queue": false,
-      "integrated_correspondences": false,
-      "saved_at": "2026-10-16T19:47:58.943Z",
-      "reason": "Research complete, multi-megabyte queue file write rejected; do not repeat checks."
+      "integrated_queue": true,
+      "integrated_correspondences": true,
+      "saved_at": "2026-10-16T19:47:58.943Z"
     }
   ],
   "latest_out_of_order_research": {
@@ -257,6 +257,7 @@
     "next_new_batch": "adatours-com-identity-052",
     "next_new_first_key": "https://adatours.ru/colombia/place/el-penon-de-guatape/tour/",
     "continuing_cursor": 2200,
-    "sync_pending": true
+    "sync_pending": false,
+    "sync_completed_at": "2026-10-16T20:35:00Z"
   }
 }

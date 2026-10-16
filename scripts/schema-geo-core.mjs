@@ -53,7 +53,15 @@ export function validateResult(r, job) {
   if(!['READY','REVIEW','BLOCKED'].includes(r.status))errors.push('Invalid result status');
   if(!Array.isArray(r.evidence))errors.push('Evidence array required');
   const evidence=r.evidence||[];
-  const https=u=>{try{const x=new URL(u);return x.protocol==='https:'&&!x.username&&!x.password;}catch{return false;}};
+  // Code Mode is a plain V8 isolate and may not expose the WHATWG URL global.
+  // This validator only needs HTTPS source URLs and exact Wikipedia hosts/paths.
+  const parseHttps=u=>{
+    if(typeof u!=='string'||/[\s\\\u0000-\u001f\u007f]/.test(u))return null;
+    const m=u.match(/^https:\/\/([a-z0-9](?:[a-z0-9.-]*[a-z0-9])?)(?::([0-9]{1,5}))?(\/[^?#]*)?(?:\?[^#]*)?(?:#.*)?$/i);
+    if(!m||m[1].includes('..')||m[2]&&Number(m[2])>65535)return null;
+    return {hostname:m[1].toLowerCase(),pathname:m[3]||'/'};
+  };
+  const https=u=>Boolean(parseHttps(u));
   for(const e of evidence)if(!e.field||!https(e.sourceUrl)||!Number.isFinite(Date.parse(e.checkedAt))||!e.note)errors.push('Incomplete evidence');
   const hasEvidence=field=>evidence.some(e=>e.field===field);
   if(r.status==='READY'){
@@ -70,7 +78,7 @@ export function validateResult(r, job) {
     if(x.geonamesId&&!/^[1-9]\d*$/.test(String(x.geonamesId)))errors.push('Invalid GeoNames ID');
     if(x.osm&&(!['node','way','relation'].includes(x.osm.type)||!Number.isSafeInteger(x.osm.id)||x.osm.id<=0))errors.push('Invalid OSM identity');
     if(x.officialUrl&&!https(x.officialUrl))errors.push('Invalid official URL');
-    for(const [lang,url] of Object.entries(x.wikipedia||{}))if(!https(url)||new URL(url).hostname!==lang+'.wikipedia.org'||!new URL(url).pathname.startsWith('/wiki/'))errors.push('Invalid Wikipedia URL');
+    for(const [lang,url] of Object.entries(x.wikipedia||{}))if(!https(url)||parseHttps(url).hostname!==lang+'.wikipedia.org'||!parseHttps(url).pathname.startsWith('/wiki/'))errors.push('Invalid Wikipedia URL');
     for(const [k,v] of Object.entries(x))if(v&&(!Array.isArray(v)||v.length)&&!hasEvidence('external.'+k))errors.push('Missing evidence: external.'+k);
   }
   if(r.location){const l=r.location;if(!Number.isFinite(l.latitude)||!Number.isFinite(l.longitude)||Math.abs(l.latitude)>90||Math.abs(l.longitude)>180||!['centroid','entrance','settlement_center','feature_point','representative'].includes(l.pointRole)||!https(l.coordinateSource)||!hasEvidence('location'))errors.push('Invalid/unproven coordinates');}

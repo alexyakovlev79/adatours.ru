@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_vodopady_kuevas",
+  "stableId": "destination_bolivia_vodopady_kuevas",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/cuevas-waterfalls/",
+  "sourceFingerprint": "2022560e6d8c20bc9c440c9b81e0fa12a1ed319ae5b10811d4c336b9e27cb36d",
+  "status": "READY",
+  "confidence": "medium",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "waterfall complex",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_bolivia_samaipata"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/cuevas-waterfalls/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая проверка HTTP 200, canonical, H1 и stable ID; совпадают с текущими approved MD и source-index. Название, район Самаипаты и природная остановка в MD соответствуют трём Cascadas de Cuevas у Centro Ecoturístico Cuevas; местный оператор описывает поездку к трём водопадам в 20 км от Самаипаты."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://samaytrip.com/detalle-cuevas/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Класс waterfall complex установлен по смыслу MD и исследованным источникам. Название, район Самаипаты и природная остановка в MD соответствуют трём Cascadas de Cuevas у Centro Ecoturístico Cuevas; местный оператор описывает поездку к трём водопадам в 20 км от Самаипаты."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://samaytrip.com/detalle-cuevas/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Местный организатор описывает собственную экскурсию в Centro Ecoturístico Cuevas с тремя водопадами."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://files.uagrm.edu.bo/entidad/62/file/2008_14_Turismo_en_Samaipata_y_su_impacto_en_el_Desarrollo_Local..pdf",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Университетский материал подтверждает Cascadas de Cuevas в 20 км от Самаипаты и три водопада."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/4543905918",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Страница представляет комплекс из трёх водопадов. Выбрана representative-точка Cascada 1 OSM node 4543905918; остальные водопады node 876536294 и 876545805 подтверждают серию по соседству. Не координаты города Самаипата (-18.17992,-63.87587), ошибочно выдаваемые одной из карточек. OSM отдельного водопада и экологического центра не объявлены sameAs всего комплекса; точный QID не найден."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://samaytrip.com/detalle-cuevas/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Независимое подтверждение серии из трёх водопадов в 20 км от Самаипаты; точка OSM представляет Cascada 1 этой серии."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://adatours.ru/bolivia/place/cuevas-waterfalls/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Название, район Самаипаты и природная остановка в MD соответствуют трём Cascadas de Cuevas у Centro Ecoturístico Cuevas; местный оператор описывает поездку к трём водопадам в 20 км от Самаипаты. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    },
+    {
+      "field": "relationships.destination_bolivia_samaipata",
+      "sourceUrl": "https://adatours.ru/bolivia/place/cuevas-waterfalls/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Название, район Самаипаты и природная остановка в MD соответствуют трём Cascadas de Cuevas у Centro Ecoturístico Cuevas; местный оператор описывает поездку к трём водопадам в 20 км от Самаипаты. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Водопады Куэвас",
+      "reason": "Название, район Самаипаты и природная остановка в MD соответствуют трём Cascadas de Cuevas у Centro Ecoturístico Cuevas; местный оператор описывает поездку к трём водопадам в 20 км от Самаипаты."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "waterfall complex",
+      "reason": "Название, район Самаипаты и природная остановка в MD соответствуют трём Cascadas de Cuevas у Centro Ecoturístico Cuevas; местный оператор описывает поездку к трём водопадам в 20 км от Самаипаты."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 20,
+      "reason": "После адресного поиска точная отдельная карточка выбранного объекта не установлена; поле опущено, подтверждённая идентичность страницы сохраняет READY."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-18.1907526, -63.727249",
+      "reason": "Страница представляет комплекс из трёх водопадов. Выбрана representative-точка Cascada 1 OSM node 4543905918; остальные водопады node 876536294 и 876545805 подтверждают серию по соседству. Не координаты города Самаипата (-18.17992,-63.87587), ошибочно выдаваемые одной из карточек. OSM отдельного водопада и экологического центра не объявлены sameAs всего комплекса; точный QID не найден."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 98,
+      "selected": "country_bolivia",
+      "reason": "Название, район Самаипаты и природная остановка в MD соответствуют трём Cascadas de Cuevas у Centro Ecoturístico Cuevas; местный оператор описывает поездку к трём водопадам в 20 км от Самаипаты."
+    },
+    {
+      "field": "relationships.destination_bolivia_samaipata",
+      "probability": 98,
+      "selected": "destination_bolivia_samaipata",
+      "reason": "Название, район Самаипаты и природная остановка в MD соответствуют трём Cascadas de Cuevas у Centro Ecoturístico Cuevas; местный оператор описывает поездку к трём водопадам в 20 км от Самаипаты."
+    }
+  ],
+  "reviewNote": "Страница представляет комплекс из трёх водопадов. Выбрана representative-точка Cascada 1 OSM node 4543905918; остальные водопады node 876536294 и 876545805 подтверждают серию по соседству. Не координаты города Самаипата (-18.17992,-63.87587), ошибочно выдаваемые одной из карточек. OSM отдельного водопада и экологического центра не объявлены sameAs всего комплекса; точный QID не найден.",
+  "location": {
+    "latitude": -18.1907526,
+    "longitude": -63.727249,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/node/4543905918"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_el_chalten",
+  "stableId": "destination_argentina_el_chalten",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/el-chalten/",
+  "sourceFingerprint": "e13a556ee8fc873d637df47080f55b9a7a253a30b21b4a17ac3f4a955fa1d616",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "alternateNames": [
+    "El Chaltén",
+    "Эль-Чальтен"
+  ],
+  "external": {
+    "wikidataQid": "Q1323978",
+    "geonamesId": "6690180",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/El_Chalt%C3%A9n",
+      "es": "https://es.wikipedia.org/wiki/El_Chalt%C3%A9n"
+    },
+    "officialUrl": "https://www.elchalten.gob.ar/el-chalten/"
+  },
+  "location": {
+    "latitude": -49.3299,
+    "longitude": -72.88605,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/6690180/el-chalten.html"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбрана точка населённого пункта GeoNames PPL; P625 Wikidata (-49.331408,-72.886129) примерно в 170 м, в том же поселении. Не усреднялись.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.elchalten.gob.ar/el-chalten/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Посёлок El Chaltén в Santa Cruz у рек De las Vueltas/Fitz Roy, не гора Fitz Roy, историческое имя которой Chaltén."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/el-chalten/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Прямой HTTPS GET: 200; H1 совпадает с названием, canonical совпадает с job URL. Точный MD approved и source-index entry сверены на SHA cdd8b523a809da44458be6d763aa2c89541d2141."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.elchalten.gob.ar/el-chalten/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Посёлок El Chaltén в Santa Cruz у рек De las Vueltas/Fitz Roy, не гора Fitz Roy, историческое имя которой Chaltén."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1323978",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1323978",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Посёлок El Chaltén в Santa Cruz у рек De las Vueltas/Fitz Roy, не гора Fitz Roy, историческое имя которой Chaltén."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1323978",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "GeoNames ID точного географического объекта; класс и география согласуются с MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1323978",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Sitelinks точного QID ведут к статьям об основном референте страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.elchalten.gob.ar/el-chalten/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Официальная страница самого объекта: Посёлок El Chaltén в Santa Cruz у рек De las Vueltas/Fitz Roy, не гора Fitz Roy, историческое имя которой Chaltén."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/6690180/el-chalten.html",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Выбрана точка населённого пункта GeoNames PPL; P625 Wikidata (-49.331408,-72.886129) примерно в 170 м, в том же поселении. Не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.elchalten.gob.ar/el-chalten/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Независимая сверка географического контекста и роли точки: Посёлок El Chaltén в Santa Cruz у рек De las Vueltas/Fitz Roy, не гора Fitz Roy, историческое имя которой Chaltén."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.elchalten.gob.ar/el-chalten/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Эль-Чалтен",
+      "reason": "Посёлок El Chaltén в Santa Cruz у рек De las Vueltas/Fitz Roy, не гора Fitz Roy, историческое имя которой Chaltén."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "settlement",
+      "reason": "Посёлок El Chaltén в Santa Cruz у рек De las Vueltas/Fitz Roy, не гора Fitz Roy, историческое имя которой Chaltén."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "El Chaltén; Эль-Чальтен",
+      "reason": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1323978",
+      "reason": "Посёлок El Chaltén в Santa Cruz у рек De las Vueltas/Fitz Roy, не гора Fitz Roy, историческое имя которой Chaltén."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "6690180",
+      "reason": "GeoNames ID точного географического объекта; класс и география согласуются с MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/El_Chalt%C3%A9n; https://es.wikipedia.org/wiki/El_Chalt%C3%A9n",
+      "reason": "Sitelinks точного QID ведут к статьям об основном референте страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.elchalten.gob.ar/el-chalten/",
+      "reason": "Официальная страница самого объекта: Посёлок El Chaltén в Santa Cruz у рек De las Vueltas/Fitz Roy, не гора Fitz Roy, историческое имя которой Chaltén."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "-49.3299, -72.88605",
+      "reason": "Выбрана точка населённого пункта GeoNames PPL; P625 Wikidata (-49.331408,-72.886129) примерно в 170 м, в том же поселении. Не усреднялись."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ]
+}

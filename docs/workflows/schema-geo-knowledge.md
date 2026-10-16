@@ -1,6 +1,6 @@
 # Ada Tours — Schema.org / GEO: сбор данных и публикация
 
-Версия 2.3 · 16.10.2026 (автовосстановление и исправление dispatch). Репозиторий `alexyakovlev79/adatours.ru`.
+Версия 2.4 · 16.10.2026 (сбор нового объекта и немедленные GEO-таблицы). Репозиторий `alexyakovlev79/adatours.ru`.
 Команды: **«собирай данные»** (один сборщик) и **«публикуй данные»** (единственный мастер).
 
 ## 1. Что исправлено относительно стратегии 1.0
@@ -111,6 +111,55 @@ text(r);
 Для продления: `action:'renew', jobId, ownerId, token`; для добровольного возврата незавершенной задачи: `action:'release'` с теми же полями. Просроченный резерв не продлевается. Все CAS-конфликты — максимум два повтора после первой попытки. Нет force, нет слепого `update_file`.
 
 После Git-коммита обновить строки зеркала по jobId, не по физическому номеру строки. Ошибку Sheets сообщить вместе с успешным SHA, а не повторять сбор/публикацию. Сборщик не запускает build/deploy, не пишет main и не вносит результат в source content MD.
+
+### 3.4. Новый объект сайта: «собирай данные» в том же рабочем цикле
+
+**Обязательное исключение из массовой очереди.** При первоначальном создании полноценной активной страницы Country, Destination, Tour или Excursion чат-создатель **сам** выполняет весь GEO-сбор для этого объекта. Не ждать отдельной команды «собирай данные» и тем более «публикуй данные». Это касается и новых самостоятельных Excursion/Destination внутри импортируемого тура. Пустой резерв Destination без MD, архивная/черновая запись, производный каталог, фотография и редактура уже существующего объекта не являются новым GEO-объектом.
+
+**Порядок одной операции создания:**
+1. Создать MD, закрепить stable ID, точный canonical URL, source-index entry и компактный каталог **одним content commit в main**. Сохранить SHA именно этого коммита. Запустить только штатный Pages build/deploy. Если MD уже существовал до коммита, использовать обычное обновление/адресную ревизию GEO, а не выдавать его за новый объект.
+2. Пока идет штатный deploy, открыть §3.2 и провести адресное интернет-исследование **ровно этого объекта**: страна/место — внешние идентичности, \`sameAs\`/Wikidata при оценке от 70%, координаты, география и связи; тур/экскурсия — реальный порядок посещений и отношения к уже закрепленным местам, **без** выдуманного внешнего QID турпродукта. Оценить идентичность и поля раздельно; спорное поле ниже 70% опустить. Правила текстового импорта «без нового исследования источника» не запрещают это отдельное проверочное GEO-исследование.
+3. Через \`scripts/schema-geo-new-object.mjs\` подтвердить новый MD по **его original creation commit** (существует в main, отсутствовал в родителе, совпадает с текущим MD, зарегистрирован в entry и каталоге), получить канонический GEO job и его \`sourceFingerprint\`. Этот путь не ограничен \`manifest.maxStage\`: индивидуальный новый Tour/Excursion обслуживается немедленно, даже когда их **массовый** этап закрыт. Существующий/чужой lease или ранее сохраненный конфликтующий результат менять запрещено.
+4. Заполнить валидный v2 result из \`result.schema.json\`: \`schemaVersion\`, \`jobId\`, \`stableId\`, \`kind\`, \`canonicalPath\`, \`sourceFingerprint\`, \`status\`, \`confidence\`, \`decisionPolicy: probability-70-v1\`, \`assessments\`, \`evidence\`, применимые \`external\`/\`location\`/\`relationships\`. Применять §3.2.1. \`REVIEW\` только при действительно неустановленной идентичности после уточнения; отсутствие отдельного QID/координат не делает подтвержденный объект \`REVIEW\`.
+5. В том **же** чате вызвать \`collectNewGeoObject\`: единый CAS в \`schema-geo/staging\` добавит/обновит ровно один job в \`queue.json\`, исходник в \`source-inventory.json\`, статус и hash в \`state.json\` и immutable \`results/<jobId>/inline-<creationSHA>-<hash>.json\`. Служебный статус \`geoSheetSync: PENDING\` сохраняется до подтверждения таблиц. Затем **одним Google Sheets \`batch_update_spreadsheet\`** добавить/обновить по точному \`jobId\` обе строки: \`GEO очередь\` (17 колонок) и \`GEO результаты\` (10 колонок); duplicate-check перед записью. Успешное подтверждение ставит \`geoSheetSync: SYNCED\` в staging. **Не откладывать эти две записи до будущего мастера.**
+6. При сбое Google Sheets immutable результат **сохраняется**, \`geoSheetSync\` остается \`PENDING\`. В том же рабочем проходе повторить с неизмененными \`result\`, \`stableId\` и \`creationCommit\`; не собирать факты, не создавать job и не запрашивать новый lease повторно. Если связка Google Sheets недоступна, отразить явный незакрытый этап, а не сообщать «готово». При нескольких новых сущностях из одной Word-программы пройти каждый **новый активный MD** один раз по собственному stable ID.
+7. \`READY\` — **факты собраны, не опубликованы на сайте в JSON-LD**. Лист \`GEO публикации\` **не заполнять при создании объекта** и не писать \`PUBLISHED\` без отдельного мастер-прохода и подтвержденного Pages deploy. Мастер позже опубликует все накопившиеся READY обычной пачкой; новых объектов он повторно не исследует. Строки обычных листов \`Страницы\`/\`Фото\` и очереди Анны заполняются по исходным content-workflows.
+
+**Рабочий Code Mode — точное выполнение по одному объекту:**
+
+~~~javascript
+const repo='alexyakovlev79/adatours.ru';
+const stableId='ВЗЯТЬ_ТОЧНЫЙ_STABLE_ID_ИЗ_ENTRY';
+const creationCommit='40_HEX_SHA_CONTENT_COMMIT';
+const ownerId='geo-inline-'+Date.now().toString(36);
+const unwrap=r=>r.result||r.structuredContent||r;
+const head=JSON.parse(unwrap(await tools.mcp__GitHub__fetch({
+  url:'https://api.github.com/repos/'+repo+'/git/ref/heads/main'
+})).content).object.sha;
+async function load(path){
+ const f=unwrap(await tools.mcp__GitHub__fetch_file({repository_full_name:repo,path,ref:head}));
+ return f.content||unwrap(await tools.mcp__GitHub__fetch_blob({
+   repository_full_name:repo,blob_sha:f.sha
+ })).content;
+}
+const [coreSrc,inlineSrc]=await Promise.all([
+ load('scripts/schema-geo-core.mjs'),load('scripts/schema-geo-new-object.mjs')
+]);
+const core=new Function(coreSrc.replace(/^export /gm,'')+
+ ';return {digest,validateResult};')();
+const inline=new Function(inlineSrc.replace(/^export /gm,'')+
+ ';return {inspectNewGeoObject,collectNewGeoObject};')();
+const inspected=await inline.inspectNewGeoObject(tools,core,{stableId,creationCommit});
+text(inspected.job); // Research this exact job according to §3.2, then compose 'result'.
+// const result={schemaVersion:2,jobId:inspected.job.jobId,...};
+const saved=await inline.collectNewGeoObject(tools,core,{
+ stableId,creationCommit,ownerId,result
+});
+text({status:saved.status,jobId:stableId,
+ hash:saved.saved.resultHash,sheet:saved.sheet?.status});
+~~~
+
+Для нового объекта **не вызывать** общий \`claim(limit:10)\`, \`beginPublication\` или \`dispatchPublication\`; не брать соседние задания и не менять \`manifest.maxStage\`. \`collectNewGeoObject\` делает адресную фиксацию и запись обеих таблиц после исследования. Встроенный результат имеет токен \`inline-<creationSHA>\` вместо lease; активные чужие leases сохраняются. Два независимых хранилища (GitHub и Sheets) не могут образовывать одну техническую транзакцию; точное состояние \`PENDING\`/\`SYNCED\` и идемпотентный повтор обеспечивают **одну логическую операцию с одним объектом**.
 
 ## 4. «Публикуй данные»: все READY, один логический пакет
 

@@ -40,6 +40,13 @@ jobs:
           git rev-parse HEAD > /tmp/catalog-dev/base-main-sha
           git apply --check /tmp/catalog-dev/source.patch
           git apply --index /tmp/catalog-dev/source.patch
+          python3 - <<'PY'
+          from pathlib import Path
+          for p in Path('src').rglob('*.astro'):
+              s=p.read_text(); t=s.replace("/multi-country-catalog'", "/multi-country-catalog.ts'")
+              if s!=t:p.write_text(t)
+          PY
+          git add src
       - uses: actions/setup-node@v6
         with:
           node-version: 24

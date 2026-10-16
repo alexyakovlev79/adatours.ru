@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_sugarloaf_mountain",
+  "stableId": "destination_brazil_sugarloaf_mountain",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/sugarloaf-mountain/",
+  "sourceFingerprint": "e75d0cf1340859266324aecaf8d817102f05b2c5934db3e27ecc071ced1015a5",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q210722",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Sugarloaf_Mountain"
+    },
+    "geonamesId": "3455217",
+    "officialUrl": "https://www.bondinho.com.br/en",
+    "osm": {
+      "type": "node",
+      "id": 34582421
+    }
+  },
+  "location": {
+    "latitude": -22.9494444,
+    "longitude": -43.1566667,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q210722"
+  },
+  "alternateNames": [
+    "Pão de Açúcar",
+    "Sugarloaf Mountain"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_brazil_rio"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/brazil/place/sugarloaf-mountain/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен живой URL: HTTP 200, совпадающий canonical, название и доступность; MD approved, stable ID и countryId сверены с точной entry на main cdd8b523a809da44458be6d763aa2c89541d2141. Заголовок, гранитная вершина у Гуанабары, Урка и две очереди канатной дороги однозначно указывают на Pão de Açúcar в Рио. Не канатная дорога Q1134683 и не весь памятник природы Q28450649."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://riotur.rio/que_fazer/paodeacucar/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Заголовок, гранитная вершина у Гуанабары, Урка и две очереди канатной дороги однозначно указывают на Pão de Açúcar в Рио. Не канатная дорога Q1134683 и не весь памятник природы Q28450649."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q210722",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверены название, страна и тип выбранного объекта. Заголовок, гранитная вершина у Гуанабары, Урка и две очереди канатной дороги однозначно указывают на Pão de Açúcar в Рио. Не канатная дорога Q1134683 и не весь памятник природы Q28450649."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sugarloaf_Mountain",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная статья о выбранной горе/городе; соответствует заголовку и географии страницы, не статья неоднозначностей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q210722",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Wikidata Q210722 явно связывает GeoNames 3455217 с горой в Рио; карточка GeoNames отдает оболочку без записи, поэтому координаты из нее не извлекаются."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.bondinho.com.br/en",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен официальный муниципальный/туристический сайт выбранного направления и оператор посещения вершины. Это информационный officialUrl; не доказательство тождества домена и природного/городского объекта для sameAs."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q210722",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверенные локальные и английские названия выбранной карточки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q210722",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "P625: 22°56′58″S 43°09′24″W; точка самой вершины, не нижняя станция канатной дороги."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q210722",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Страна выбранного объекта в Wikidata P17 совпадает с countryId точного MD/entry."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "sourceUrl": "https://riotur.rio/que_fazer/paodeacucar/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Riotur описывает гору в Рио; current MD содержит relatedDestinations destination_brazil_rio, Wikidata P131 Rio de Janeiro."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q210722",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная карточка Wikidata содержит OSM node 34582421 для выбранного основного референта. Прямое чтение OSM не использовалось для дополнительных свойств."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Заголовок, гранитная вершина у Гуанабары, Урка и две очереди канатной дороги однозначно указывают на Pão de Açúcar в Рио. Не канатная дорога Q1134683 и не весь памятник природы Q28450649. P625: 22°56′58″S 43°09′24″W; точка самой вершины, не нижняя станция канатной дороги.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Pão de Açúcar",
+      "reason": "Заголовок, гранитная вершина у Гуанабары, Урка и две очереди канатной дороги однозначно указывают на Pão de Açúcar в Рио. Не канатная дорога Q1134683 и не весь памятник природы Q28450649."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q210722",
+      "reason": "Заголовок, гранитная вершина у Гуанабары, Урка и две очереди канатной дороги однозначно указывают на Pão de Açúcar в Рио. Не канатная дорога Q1134683 и не весь памятник природы Q28450649."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Sugarloaf_Mountain",
+      "reason": "Статья соответствует основному именованному референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3455217",
+      "reason": "Совпадают имя, страна и основной референт; идентификатор приведен точной карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "selected": "https://www.bondinho.com.br/en",
+      "reason": "Портал прямо представляет выбранный объект или его официальный туризм."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Pão de Açúcar; Sugarloaf Mountain",
+      "reason": "Названия совпадают в точной внешней карточке и/или на официальном портале."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-22.949444444444445, -43.156666666666666 (feature_point)",
+      "reason": "P625: 22°56′58″S 43°09′24″W; точка самой вершины, не нижняя станция канатной дороги."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна подтверждена внешней карточкой и текущим сайтом."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "probability": 99,
+      "selected": "destination_brazil_rio",
+      "reason": "Гора находится в Рио-де-Жанейро."
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "selected": "node/34582421",
+      "reason": "Идентификатор картографического объекта из точной карточки Wikidata, без расширения географического объема."
+    }
+  ]
+}

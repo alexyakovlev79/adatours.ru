@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_pantanal",
+  "stableId": "destination_brazil_pantanal",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/pantanal/",
+  "sourceFingerprint": "1328439634b3b53daf371f62ff6eafe57d5935307a60f829df0cf198235e1b6a",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "entityClass": "wetland with unresolved page scope",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/pantanal.md",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Текст описывает поездки по бразильскому Пантаналу, страна закреплена как country_brazil, исторический sourceUrl называет национальный заповедник. Q157603 относится ко всему трансграничному Пантаналу (Бразилия, Боливия, Парагвай); UNESCO 999 — отдельная охраняемая область. Нужно зафиксировать, что именно обозначает страница: весь природный регион или его бразильская туристическая часть. До этого внешние ID и единственная координата не назначаются; весь Пантанал нельзя поместить внутрь одной Бразилии."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_pantanal.json",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "ID, countryIds и canonicalPath соответствуют текущей точной source-index entry."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/pantanal/",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Прямой HTTPS GET 16.10.2026 14:00:06 UTC: HTTP 200, точный rel=canonical подтверждён."
+    },
+    {
+      "field": "audit.identityScope",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q157603",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Кандидат Q157603: весь трансграничный природный регион; P625 -17.4,-57.5 не переносится на неуточнённый бразильский фрагмент."
+    },
+    {
+      "field": "audit.identityScope",
+      "sourceUrl": "https://www.gov.br/inpp/pt-br/o-pantanal/pantanal-maior-planicie-alagavel-e-patrimonio-natural-da-humanidade",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Официальный INPP подтверждает продолжение биома в Боливии и Парагвае."
+    },
+    {
+      "field": "audit.identityScope",
+      "sourceUrl": "https://whc.unesco.org/en/list/999/",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "UNESCO описывает конкретную охраняемую область Pantanal Conservation Area; это не вся природная область."
+    }
+  ],
+  "reviewNote": "Текст описывает поездки по бразильскому Пантаналу, страна закреплена как country_brazil, исторический sourceUrl называет национальный заповедник. Q157603 относится ко всему трансграничному Пантаналу (Бразилия, Боливия, Парагвай); UNESCO 999 — отдельная охраняемая область. Нужно зафиксировать, что именно обозначает страница: весь природный регион или его бразильская туристическая часть. До этого внешние ID и единственная координата не назначаются; весь Пантанал нельзя поместить внутрь одной Бразилии.",
+  "audit": {
+    "checkedUrls": [
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/pantanal.md",
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_pantanal.json",
+      "https://adatours.ru/brazil/place/pantanal/",
+      "https://www.wikidata.org/wiki/Q157603",
+      "https://www.gov.br/inpp/pt-br/o-pantanal/pantanal-maior-planicie-alagavel-e-patrimonio-natural-da-humanidade",
+      "https://whc.unesco.org/en/list/999/"
+    ],
+    "findings": [
+      "Текст описывает поездки по бразильскому Пантаналу, страна закреплена как country_brazil, исторический sourceUrl называет национальный заповедник. Q157603 относится ко всему трансграничному Пантаналу (Бразилия, Боливия, Парагвай); UNESCO 999 — отдельная охраняемая область. Нужно зафиксировать, что именно обозначает страница: весь природный регион или его бразильская туристическая часть. До этого внешние ID и единственная координата не назначаются; весь Пантанал нельзя поместить внутрь одной Бразилии."
+    ],
+    "proposedChanges": [
+      "Уточнить географический охват без смены stable ID и URL; внешние идентификаторы частей хранить отдельно и не выдавать за sameAs целой страницы."
+    ]
+  }
+}

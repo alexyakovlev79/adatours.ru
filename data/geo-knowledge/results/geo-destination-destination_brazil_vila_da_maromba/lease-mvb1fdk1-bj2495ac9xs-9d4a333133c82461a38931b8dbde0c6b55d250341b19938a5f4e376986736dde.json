@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_vila_da_maromba",
+  "stableId": "destination_brazil_vila_da_maromba",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/vila-da-maromba/",
+  "sourceFingerprint": "8a7f3f5692f1b8f51fb1a5c54ac38f13c72efd99c1053bf3f305644c5119ca46",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "mountain village",
+  "alternateNames": [
+    "Maromba",
+    "Vila da Maromba",
+    "Vila de Maromba"
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 1368553759
+    }
+  },
+  "location": {
+    "latitude": -22.32449,
+    "longitude": -44.5970335,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/1368553759.json"
+  },
+  "evidence": [
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/1368553759.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "OSM name=Maromba, place=village; geographic match to Itatiaia, Visconde de Mauá visitor region. Not the homonymous locality in Santo Antônio de Pádua, peak, river or Piscina da Maromba."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/1368553759.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "WGS84 named village-center label; not waterfall entrance or the park's distant Piscina da Maromba."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://itatiaia.rj.gov.br/noticias/jogue-limpo-com-o-rio-preto-mobiliza-comunidade-para-acao-de-limpeza-em-maringa-e-maromba",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Independent municipality source places Maromba and Maringá along the Rio Preto visitor region. Confirms geographic context and distinct community; it is not a coordinate survey."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://repositorio.unipampa.edu.br/bitstream/riu/7516/1/Bianca%20Merces%20Leite%20Pessoa%20Carre%C3%B1o%20-%202022.pdf",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Independent university fieldwork table identifies attractions in Vila da Maromba, Itatiaia, e.g. water site at 22°20′16.3″S,44°37′03.0″W, about 2.4 km southwest of the village label. Nearby attraction coordinates are not reused as the settlement point."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/vila-da-maromba.md",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Current approved MD stable ID, countryId=country_brazil and canonical entry were inspected; external identity evidence also places the object in Brazil."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/vila-da-maromba/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Direct HTTP GET returned 200 at the exact canonical URL with matching title and rel=canonical. Search-service fetch could not access the site; direct network verification succeeded."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/vila-da-maromba/"
+    ],
+    "findings": [
+      "Live page HTTP 200; final URL and HTML canonical match the claimed path.",
+      "Current production MD and source-index entry inspected; approved entity in Brazil.",
+      "External identity scope and coordinate point role checked; no public JSON-LD authored by collector."
+    ]
+  }
+}

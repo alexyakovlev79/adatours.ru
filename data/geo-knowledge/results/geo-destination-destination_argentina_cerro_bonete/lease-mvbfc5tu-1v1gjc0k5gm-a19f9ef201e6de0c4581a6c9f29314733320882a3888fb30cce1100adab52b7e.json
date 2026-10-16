@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_cerro_bonete",
+  "stableId": "destination_argentina_cerro_bonete",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/cerro-bonete/",
+  "sourceFingerprint": "e6b70d9f36002acf71684735ab1169b96a289270a75ded48e09331160a090bdf",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4706129489
+    }
+  },
+  "alternateNames": [
+    "Cerro Bonete (Aconcagua)"
+  ],
+  "location": {
+    "latitude": -32.6589547,
+    "longitude": -70.0884739,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/4706129489.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_argentina_plaza_de_mulas"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/20a7fd65b9538b8fefe6ab3881997fe22206a1ed/src/content/destinations/cerro-bonete.md",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Вершина около 5000 м к западу от Пласа-де-Мулас в районе Аконкагуа. Исключены Bonete Chico/Grande в Ла-Риохе и Бонете Огненной Земли."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.summitpost.org/bonete/151471",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Вершина около 5000 м к западу от Пласа-де-Мулас в районе Аконкагуа. Исключены Bonete Chico/Grande в Ла-Риохе и Бонете Огненной Земли."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/cerro-bonete/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Прямой HTTP GET 200; self-canonical и заголовок соответствуют объекту. Stable ID, текущий MD и точная source-index entry сверены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4706129489.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первичный OSM API прочитан; имя, класс, контекст совпадают: Вершина около 5000 м к западу от Пласа-де-Мулас в районе Аконкагуа. Исключены Bonete Chico/Grande в Ла-Риохе и Бонете Огненной Земли."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4706129489.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Местное/английское название объекта подтверждено карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4706129489.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Точка natural=peak OSM; полевой профиль SummitPost дает -32.65891,-70.08866 рядом. Выбрана OSM-точка вершины; не усреднялась."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.summitpost.org/bonete/151471",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Независимая сверка объекта и географического положения; не утверждается совпадение координат до последнего знака."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.summitpost.org/bonete/151471",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Объект находится в Аргентине."
+    },
+    {
+      "field": "relationships.destination_argentina_plaza_de_mulas",
+      "sourceUrl": "https://www.summitpost.org/bonete/151471",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Лагерь/вершина связаны с выходами из базового лагеря Plaza de Mulas."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Cerro Bonete (Aconcagua)",
+      "reason": "Вершина около 5000 м к западу от Пласа-де-Мулас в районе Аконкагуа. Исключены Bonete Chico/Grande в Ла-Риохе и Бонете Огненной Земли."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/4706129489",
+      "reason": "Вершина около 5000 м к западу от Пласа-де-Мулас в районе Аконкагуа. Исключены Bonete Chico/Grande в Ла-Риохе и Бонете Огненной Земли."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Cerro Bonete (Aconcagua)",
+      "reason": "Название основного референта из точной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-32.6589547, -70.0884739; feature_point",
+      "reason": "Точка natural=peak OSM; полевой профиль SummitPost дает -32.65891,-70.08866 рядом. Выбрана OSM-точка вершины; не усреднялась."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Объект находится в Аргентине."
+    },
+    {
+      "field": "relationships.destination_argentina_plaza_de_mulas",
+      "probability": 99,
+      "selected": "relatedPlace destination_argentina_plaza_de_mulas",
+      "reason": "Лагерь/вершина связаны с выходами из базового лагеря Plaza de Mulas."
+    }
+  ],
+  "reviewNote": "QID других вершин Bonete не присвоены. В MDA обнаружена ошибочная строка Cumbre с координатой Аконкагуа (-32.653167,-70.012); она отклонена, выбран согласующийся с SummitPost пик OSM."
+}

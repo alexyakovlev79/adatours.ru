@@ -58,6 +58,40 @@
         "low"
       ]
     },
+    "decisionPolicy": {
+      "const": "probability-70-v1"
+    },
+    "assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "field",
+          "probability",
+          "reason"
+        ],
+        "properties": {
+          "field": {
+            "type": "string",
+            "minLength": 1
+          },
+          "probability": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "selected": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
     "identityScope": {
       "enum": [
         "single",
@@ -301,13 +335,41 @@
       },
       "then": {
         "properties": {
-          "confidence": {
-            "const": "high"
-          },
           "evidence": {
             "minItems": 1
           }
-        }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "decisionPolicy": {
+                  "const": "probability-70-v1"
+                }
+              },
+              "required": [
+                "decisionPolicy"
+              ]
+            },
+            "then": {
+              "required": [
+                "assessments"
+              ],
+              "properties": {
+                "assessments": {
+                  "minItems": 1
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "confidence": {
+                  "const": "high"
+                }
+              }
+            }
+          }
+        ]
       },
       "else": {
         "required": [

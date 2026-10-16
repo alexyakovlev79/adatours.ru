@@ -55,3 +55,17 @@ for(const id of finalCountryIds) test('final verified GEO country passport '+id,
    assert.ok(!n['@type'].includes('Country'));
  } else assert.ok(n['@type'].includes('Country'));
 });
+
+
+test('70% probabilistic identity produces sameAs for composite object; 69.9% does not',()=>{
+ const r=records[0],base=passports[0], node={name:'Бразилия'};
+ const p={...base,status:'READY',confidence:'medium',identityScope:'composite',decisionPolicy:'probability-70-v1',
+ assessments:[{field:'identity',probability:70,reason:'Page referent'},{field:'external.wikidataQid',probability:70,reason:'Most probable correspondence'}]};
+ const input=new Map([[r.data.id,p]]);
+ const merged=mergeGeoPassport(node,r,input);
+ assert.ok(merged.sameAs.includes('https://www.wikidata.org/wiki/'+p.external.wikidataQid));
+ const bad={...p,assessments:[{field:'identity',probability:70,reason:'Page referent'},{field:'external.wikidataQid',probability:69.9,reason:'Below limit'}]};
+ assert.ok(!(mergeGeoPassport(node,r,new Map([[r.data.id,bad]])).sameAs||[]).includes('https://www.wikidata.org/wiki/'+p.external.wikidataQid));
+ const unknown={...p,assessments:[{field:'identity',probability:69.9,reason:'Unresolved main object'}]};
+ assert.deepEqual(mergeGeoPassport(node,r,new Map([[r.data.id,unknown]])),node);
+});

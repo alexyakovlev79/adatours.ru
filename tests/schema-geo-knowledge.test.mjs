@@ -31,6 +31,33 @@ test('invalid or unproven coordinates cannot be READY',()=>{assert.ok(c.validate
 test('source drift fences completion',()=>{const s=fresh();c.claim(queue,s,args);assert.throws(()=>c.complete({jobs:[{...job,sourceFingerprint:'changed'}]},s,{...args,result}),/Source changed/);});
 test('source and evidence fields must match exactly',()=>{assert.ok(c.validateResult({...result,external:{wikidataQid:'Q155',osm:{type:'way',id:1}}},job).some(e=>e.includes('Missing evidence')));});
 test('composite identity is REVIEW, cannot assign one constituent QID',()=>{assert.ok(c.validateResult({...result,identityScope:'composite'},job).length);});
+
+test('probability policy accepts exactly 70% object and Wikidata sameAs, including composite destinations',()=>{
+ const assessed={...result,identityScope:'composite',confidence:'medium',decisionPolicy:'probability-70-v1',
+  assessments:[{field:'identity',probability:70,selected:'main named destination',reason:'Page and travel context'},
+               {field:'external.wikidataQid',probability:70,selected:'Q155',reason:'Best researched matching entity'}]};
+ assert.deepEqual(c.validateResult(assessed,job),[]);
+ assert.equal(c.geoAccepted(assessed,'identity'),true);
+ assert.equal(c.geoAccepted(assessed,'external.wikidataQid'),true);
+ const tooLow={...assessed,assessments:[assessed.assessments[0],{...assessed.assessments[1],probability:69.9}]};
+ assert.ok(c.validateResult(tooLow,job).some(s=>s.includes('70%')));
+ assert.ok(c.validateResult({...assessed,assessments:[{...assessed.assessments[0],probability:69.9},assessed.assessments[1]]},job).some(s=>s.includes('identity')));
+});
+test('READY may omit unresolvable optional external fields with policy 70%',()=>{
+ const p={...result,external:{},confidence:'medium',decisionPolicy:'probability-70-v1',
+ assessments:[{field:'identity',probability:81,selected:'named geographic destination',reason:'Own page and independent geographic context'},
+              {field:'external.wikidataQid',probability:45,selected:'Q155',reason:'Candidate refers only to a different scope'}]};
+ assert.deepEqual(c.validateResult(p,job),[]);
+ assert.ok(c.validateResult({...p,external:{wikidataQid:'Q155'}} ,job).some(s=>s.includes('70%')));
+});
+test('policy requires scored accepted coordinates and relationships',()=>{
+ const p={...result,confidence:'medium',decisionPolicy:'probability-70-v1',
+  assessments:[{field:'identity',probability:84,reason:'Matched geography'},{field:'external.wikidataQid',probability:77,reason:'Matched Wikidata'}]};
+ const l={latitude:-23.1,longitude:-46.1,pointRole:'representative',coordinateSource:'https://www.geonames.org/12345'};
+ const e=[...result.evidence,{field:'location',sourceUrl:l.coordinateSource,checkedAt:'2026-10-16T11:00:00Z',note:'Representative point'}];
+ assert.ok(c.validateResult({...p,location:l,evidence:e},job).some(s=>s.includes('location')));
+ assert.deepEqual(c.validateResult({...p,location:l,evidence:e,assessments:[...p.assessments,{field:'location',probability:72,reason:'Representative position'}]},job),[]);
+});
 test('stage gate and unavailable pages are skipped',()=>{assert.deepEqual(c.claim({jobs:[{...job,stage:2}]},fresh(),args),[]);assert.deepEqual(c.claim({jobs:[{...job,available:false}]},fresh(),args),[]);});
 test('publishing is serialized and PUBLISHED requires exact deployment commit',()=>{const s=fresh();c.claim(queue,s,args);c.complete(queue,s,{...args,result});const p=c.beginPublication(queue,s,{ownerId:'master',batchId:'batch1',now:args.now});assert.equal(p.jobs.length,1);assert.throws(()=>c.beginPublication(queue,s,{ownerId:'other',batchId:'batch2',now:args.now}));c.recordCommit(s,{ownerId:'master',batchId:'batch1',commit:'a'.repeat(40),now:args.now});assert.equal(s.jobs[job.jobId].status,'DEPLOYING');assert.throws(()=>c.confirmDeploy(s,{ownerId:'master',batchId:'batch1',commit:'b'.repeat(40),now:args.now}));c.confirmDeploy(s,{ownerId:'master',batchId:'batch1',commit:'a'.repeat(40),runUrl:'https://github.com/run/1',now:args.now});assert.equal(s.jobs[job.jobId].status,'PUBLISHED');});
 import {runSchemaGeo} from '../scripts/schema-geo-remote.mjs';

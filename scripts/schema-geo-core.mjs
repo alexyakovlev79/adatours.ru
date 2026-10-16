@@ -25,6 +25,19 @@ export function sha256(text) {
   return H.map(n=>(n>>>0).toString(16).padStart(8,'0')).join('');
 }
 export const digest = value => sha256(stable(value));
+
+export const GEO_DECISION_POLICY = 'probability-70-v1';
+export const GEO_ACCEPT_PROBABILITY = 70;
+export function geoAssessment(r, field) {
+  const records=Array.isArray(r?.assessments)?r.assessments:[];
+  return records.find(a=>a&&a.field===field);
+}
+export function geoAccepted(r, field) {
+  if(r?.decisionPolicy!==GEO_DECISION_POLICY)return true; // Preserve immutable legacy v2 records.
+  const a=geoAssessment(r,field);
+  return !!a&&Number.isFinite(a.probability)&&a.probability>=GEO_ACCEPT_PROBABILITY;
+}
+
 export const statusOf = (state, job) => !job.available ? 'UNAVAILABLE' : state.jobs[job.jobId]?.status || 'QUEUED';
 export function claim(queue, state, {ownerId, token, now, limit=10, maxStage=1, batchSize=10}) {
   if(!/^[a-zA-Z0-9_-]{8,120}$/.test(ownerId)||!/^[a-zA-Z0-9_-]{16,160}$/.test(token))throw Error('Invalid owner or token');
@@ -47,11 +60,25 @@ export function renew(state,{jobId,ownerId,token,now}){const l=owned(state,jobId
 export function release(state,{jobId,ownerId,token,now}){owned(state,jobId,ownerId,token,now);delete state.leases[jobId];state.jobs[jobId]={...state.jobs[jobId],status:'QUEUED'};}
 export function validateResult(r, job) {
   const errors=[];
-  const allowedTop=['schemaVersion','jobId','stableId','kind','canonicalPath','sourceFingerprint','status','external','location','alternateNames','relationships','evidence','confidence','reviewNote','identityScope','entityClass','audit'];
+  const allowedTop=['schemaVersion','jobId','stableId','kind','canonicalPath','sourceFingerprint','status','external','location','alternateNames','relationships','evidence','confidence','reviewNote','identityScope','entityClass','audit','decisionPolicy','assessments'];
   for(const k of Object.keys(r))if(!allowedTop.includes(k))errors.push('Unsupported result field: '+k);
   if(r.schemaVersion!==2||r.jobId!==job.jobId||r.stableId!==job.stableId||r.kind!==job.kind||r.canonicalPath!==job.url||r.sourceFingerprint!==job.sourceFingerprint)errors.push('Identity/version/source mismatch');
   if(!['READY','REVIEW','BLOCKED'].includes(r.status))errors.push('Invalid result status');
   if(!Array.isArray(r.evidence))errors.push('Evidence array required');
+  const probabilityMode=r.decisionPolicy===GEO_DECISION_POLICY;
+  if(r.decisionPolicy!==undefined&&!probabilityMode)errors.push('Unsupported GEO decision policy');
+  if(r.assessments!==undefined&&!Array.isArray(r.assessments))errors.push('Assessments array required');
+  const seenAssessments=new Set();
+  for(const a of Array.isArray(r.assessments)?r.assessments:[]){
+    if(!a||typeof a.field!=='string'||!a.field.trim()||!Number.isFinite(a.probability)||a.probability<0||a.probability>100
+      ||typeof a.reason!=='string'||!a.reason.trim()
+      ||a.selected!==undefined&&(typeof a.selected!=='string'||!a.selected.trim())
+      ||Object.keys(a).some(k=>!['field','probability','selected','reason'].includes(k)))
+      errors.push('Invalid GEO probability assessment');
+    if(seenAssessments.has(a?.field))errors.push('Duplicate GEO probability assessment: '+a.field);
+    seenAssessments.add(a?.field);
+  }
+  if(probabilityMode&&!Array.isArray(r.assessments))errors.push('Decision policy requires assessments');
   const evidence=r.evidence||[];
   // Code Mode is a plain V8 isolate and may not expose the WHATWG URL global.
   // This validator only needs HTTPS source URLs and exact Wikipedia hosts/paths.
@@ -65,9 +92,15 @@ export function validateResult(r, job) {
   for(const e of evidence)if(!e.field||!https(e.sourceUrl)||!Number.isFinite(Date.parse(e.checkedAt))||!e.note)errors.push('Incomplete evidence');
   const hasEvidence=field=>evidence.some(e=>e.field===field);
   if(r.status==='READY'){
-    if(r.confidence!=='high'||!evidence.length)errors.push('READY requires high confidence and evidence');
-    if(['country','destination'].includes(job.kind)&&!r.external?.wikidataQid&&!r.external?.officialUrl&&!r.external?.osm&&!r.external?.geonamesId)errors.push('Geography READY needs an exact external identity');
-    if(r.identityScope==='composite'&&r.external&&Object.values(r.external).some(v=>v&&(!Array.isArray(v)||v.length)))errors.push('Composite cannot receive single-object identity');
+    if(!evidence.length)errors.push('READY requires evidence');
+    if(probabilityMode){
+      if(r.confidence==='low')errors.push('READY with 70% policy needs medium/high confidence');
+      if(!geoAccepted(r,'identity'))errors.push('READY identity probability must be at least 70%');
+    } else {
+      if(r.confidence!=='high')errors.push('Legacy READY requires high confidence');
+      if(['country','destination'].includes(job.kind)&&!r.external?.wikidataQid&&!r.external?.officialUrl&&!r.external?.osm&&!r.external?.geonamesId)errors.push('Legacy geography READY needs an exact external identity');
+      if(r.identityScope==='composite'&&r.external&&Object.values(r.external).some(v=>v&&(!Array.isArray(v)||v.length)))errors.push('Legacy composite cannot receive single-object identity');
+    }
   }
   if(r.external){
     const x=r.external;
@@ -82,6 +115,18 @@ export function validateResult(r, job) {
     for(const [k,v] of Object.entries(x))if(v&&(!Array.isArray(v)||v.length)&&!hasEvidence('external.'+k))errors.push('Missing evidence: external.'+k);
   }
   if(r.location){const l=r.location;if(!Number.isFinite(l.latitude)||!Number.isFinite(l.longitude)||Math.abs(l.latitude)>90||Math.abs(l.longitude)>180||!['centroid','entrance','settlement_center','feature_point','representative'].includes(l.pointRole)||!https(l.coordinateSource)||!hasEvidence('location'))errors.push('Invalid/unproven coordinates');}
+  if(probabilityMode&&r.status==='READY'){
+    const x=r.external||{},present=v=>Array.isArray(v)?v.length>0:!!v;
+    for(const field of ['wikidataQid','geonamesId','osm','officialUrl','wikipedia','unescoSiteIds','wdpaIds'])
+      if(present(x[field])&&!geoAccepted(r,'external.'+field))
+        errors.push('GEO external.'+field+' requires at least 70% probability');
+    if(r.location&&!geoAccepted(r,'location'))errors.push('GEO location requires at least 70% probability');
+    for(const rel of r.relationships||[])
+      if(rel?.targetId&&!geoAccepted(r,'relationships.'+rel.targetId))
+        errors.push('GEO relationships.'+rel.targetId+' requires at least 70% probability');
+    if(r.entityClass&&!geoAccepted(r,'entityClass'))errors.push('GEO entityClass requires at least 70% probability');
+    if(r.alternateNames?.length&&!geoAccepted(r,'alternateNames'))errors.push('GEO alternateNames requires at least 70% probability');
+  }
   if(r.status!=='READY'&&!r.reviewNote)errors.push('REVIEW/BLOCKED requires explanation');
   const forbidden=['@id','@type','sameAs','aggregateRating','offers'];for(const k of forbidden)if(k in r)errors.push('Worker must not author Schema.org: '+k);
   const positions=new Set();

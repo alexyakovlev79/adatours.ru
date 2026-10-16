@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_stanciya_frej",
+  "stableId": "destination_antarctica_stanciya_frej",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/frei-station/",
+  "sourceFingerprint": "a6579da6efc11f116c1cdcc902c1778c820e7d9f75450ac6f5309f03d88a0ef2",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1928160",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Base_Presidente_Eduardo_Frei_Montalva"
+    },
+    "geonamesId": "6620750"
+  },
+  "location": {
+    "latitude": -62.20023194444445,
+    "longitude": -58.962626944444445,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1928160"
+  },
+  "alternateNames": [
+    "Base Presidente Eduardo Frei Montalva"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_antarctica_ostrov_king_dzhordzh"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/frei-station/",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Проверено напрямую HTTP 200, конечный URL и canonical совпадают с задачей, H1 совпадает с названием. MD approved и stable ID/source-index entry сверены на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Чилийская база Presidente Eduardo Frei Montalva на Кинг-Джордже. Отделена от гражданского поселения Villa Las Estrellas и от аэропорта Teniente R. Marsh."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1928160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Чилийская база Presidente Eduardo Frei Montalva на Кинг-Джордже. Отделена от гражданского поселения Villa Las Estrellas и от аэропорта Teniente R. Marsh."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1928160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Точная карточка Q1928160: совпадают название, тип объекта и антарктическая география. Чилийская база Presidente Eduardo Frei Montalva на Кинг-Джордже. Отделена от гражданского поселения Villa Las Estrellas и от аэропорта Teniente R. Marsh."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1928160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Sitelink enwiki ведет к статье именно выбранного объекта Base Presidente Eduardo Frei Montalva."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1928160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "GeoNames ID 6620750 явно указан в карточке Q1928160. Связь подтверждена cross-reference Wikidata; чтение GeoNames не используется как источник координат."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1928160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Выбрана точка станции из COMNAP/P625 62°12′0.835″S 58°57′45.457″W, английская статья дает ту же точку с округлением. Не координата аэродрома или поселения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Base_Presidente_Eduardo_Frei_Montalva",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Координаты станции совпадают с COMNAP/P625 после округления."
+    },
+    {
+      "field": "relationships.destination_antarctica_ostrov_king_dzhordzh",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1928160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Расположение на острове Кинг-Джордж (King George Island); stable ID целевого места найден в GEO очереди."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1928160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Английское название точной карточки выбранного объекта."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Base Presidente Eduardo Frei Montalva",
+      "reason": "Проверено напрямую HTTP 200, конечный URL и canonical совпадают с задачей, H1 совпадает с названием. MD approved и stable ID/source-index entry сверены на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Чилийская база Presidente Eduardo Frei Montalva на Кинг-Джордже. Отделена от гражданского поселения Villa Las Estrellas и от аэропорта Teniente R. Marsh."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1928160",
+      "reason": "Точная карточка Q1928160: совпадают название, тип объекта и антарктическая география. Чилийская база Presidente Eduardo Frei Montalva на Кинг-Джордже. Отделена от гражданского поселения Villa Las Estrellas и от аэропорта Teniente R. Marsh."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Base_Presidente_Eduardo_Frei_Montalva",
+      "reason": "Sitelink enwiki ведет к статье именно выбранного объекта Base Presidente Eduardo Frei Montalva."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "6620750",
+      "reason": "GeoNames ID 6620750 явно указан в карточке Q1928160. Связь подтверждена cross-reference Wikidata; чтение GeoNames не используется как источник координат."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-62.20023194444445, -58.962626944444445 (feature_point)",
+      "reason": "Выбрана точка станции из COMNAP/P625 62°12′0.835″S 58°57′45.457″W, английская статья дает ту же точку с округлением. Не координата аэродрома или поселения."
+    },
+    {
+      "field": "relationships.destination_antarctica_ostrov_king_dzhordzh",
+      "probability": 99,
+      "selected": "destination_antarctica_ostrov_king_dzhordzh",
+      "reason": "Расположение на острове Кинг-Джордж (King George Island); stable ID целевого места найден в GEO очереди."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Base Presidente Eduardo Frei Montalva",
+      "reason": "Английское название точной карточки выбранного объекта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Чилийская база Presidente Eduardo Frei Montalva на Кинг-Джордже. Отделена от гражданского поселения Villa Las Estrellas и от аэропорта Teniente R. Marsh. Выбрана точка станции из COMNAP/P625 62°12′0.835″S 58°57′45.457″W, английская статья дает ту же точку с округлением. Не координата аэродрома или поселения."
+}

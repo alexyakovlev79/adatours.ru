@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_ozero_tres_chimbadas",
+  "stableId": "destination_peru_ozero_tres_chimbadas",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/tres-chimbadas-lake/",
+  "sourceFingerprint": "24d1099dc31a29f46e43b64d09241a56ded9710fbe3a919ebe679f726ac57f97",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=724",
+    "osm": {
+      "type": "way",
+      "id": 73678528
+    }
+  },
+  "location": {
+    "latitude": -12.7852,
+    "longitude": -69.3415,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/W73678528"
+  },
+  "alternateNames": [
+    "Lago Tres Chimbadas",
+    "Tres Chimbadas Lake"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/tres-chimbadas-lake/",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "HTTP 200, точный canonical, approved MD и stable ID сверены на main 829696675d32833cf18ebb696ee714747a28f04b. Озеро-старица Tres Chimbadas в Madre de Dios/Tambopata, посещаемое из Puerto Maldonado через общину Infierno. Не Sandoval, Valencia или одноименный лодж."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=724",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Озеро-старица Tres Chimbadas в Madre de Dios/Tambopata, посещаемое из Puerto Maldonado через общину Infierno. Не Sandoval, Valencia или одноименный лодж."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=724",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Точная официальная карточка места, не общий портал региона. Не автоматический sameAs."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/W73678528",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Точный OSM way/73678528 для выбранного объекта. Официальная карточка MINCETUR 724 подтверждает имя, тип, Tambopata и маршрут через Infierno. Именованный OSM water=oxbow way 73678528 соответствует этому озеру. Координата representative картографического объекта, не геометрический центр и не вход на тропу. Точный Wikidata QID после целевого поиска не подтвержден и пропущен."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W73678528",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Официальная карточка MINCETUR 724 подтверждает имя, тип, Tambopata и маршрут через Infierno. Именованный OSM water=oxbow way 73678528 соответствует этому озеру. Координата representative картографического объекта, не геометрический центр и не вход на тропу. Точный Wikidata QID после целевого поиска не подтвержден и пропущен."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=724",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Озеро-старица Tres Chimbadas в Madre de Dios/Tambopata, посещаемое из Puerto Maldonado через общину Infierno. Не Sandoval, Valencia или одноименный лодж. Официальная карточка MINCETUR 724 подтверждает имя, тип, Tambopata и маршрут через Infierno. Именованный OSM water=oxbow way 73678528 соответствует этому озеру. Координата representative картографического объекта, не геометрический центр и не вход на тропу. Точный Wikidata QID после целевого поиска не подтвержден и пропущен."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=724",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Местные/международные названия: Lago Tres Chimbadas; Tres Chimbadas Lake."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=724",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Озеро-старица Tres Chimbadas в Madre de Dios/Tambopata, посещаемое из Puerto Maldonado через общину Infierno. Не Sandoval, Valencia или одноименный лодж."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Lago Tres Chimbadas",
+      "reason": "Озеро-старица Tres Chimbadas в Madre de Dios/Tambopata, посещаемое из Puerto Maldonado через общину Infierno. Не Sandoval, Valencia или одноименный лодж."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 20,
+      "reason": "Целевой поиск не подтвердил точный QID озера Tres Chimbadas; соседние озера и лодж не подставляются."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=724",
+      "reason": "Государственный реестр MINCETUR, SERNANP или официальное представление объекта PROMPERU."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "way/73678528",
+      "reason": "Совпадают имя, география и класс картографического объекта."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-12.7852, -69.3415; representative",
+      "reason": "Официальная карточка MINCETUR 724 подтверждает имя, тип, Tambopata и маршрут через Infierno. Именованный OSM water=oxbow way 73678528 соответствует этому озеру. Координата representative картографического объекта, не геометрический центр и не вход на тропу. Точный Wikidata QID после целевого поиска не подтвержден и пропущен."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Lago Tres Chimbadas; Tres Chimbadas Lake",
+      "reason": "Названия из прочитанного точного источника."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Страна совпадает в MD и проверенном внешнем источнике."
+    }
+  ],
+  "reviewNote": "Официальная карточка MINCETUR 724 подтверждает имя, тип, Tambopata и маршрут через Infierno. Именованный OSM water=oxbow way 73678528 соответствует этому озеру. Координата representative картографического объекта, не геометрический центр и не вход на тропу. Точный Wikidata QID после целевого поиска не подтвержден и пропущен."
+}

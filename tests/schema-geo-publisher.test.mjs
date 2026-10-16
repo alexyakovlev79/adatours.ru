@@ -24,7 +24,7 @@ test('GEO master can dispatch an existing PUBLISHING lock without creating anoth
  const calls=[];
  const remote=async(_tools,_core,request)=>{
   calls.push(request.action);
-  if(request.action==='resumePublication')return {status:'publication_requires_recovery',phase:'PUBLISHING',batchId:'batch-stuck'};
+  if(request.action==='resumePublication')return {status:'publication_requires_recovery',phase:'PUBLISHING',batchId:'batch-stuck',ownerId:'original-owner'};
   if(request.action==='dispatchPublication')return {status:'saved',commit:'b'.repeat(40),output:{count:80}};
   throw Error('Unexpected request '+request.action);
  };

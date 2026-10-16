@@ -65,7 +65,10 @@ export async function getStaticPaths() {
   const heroForCountry = (countryId: string) => countryEntryById.get(countryId)?.data.hero?.src;
 
   const routes: Array<{ params: { path: string }; props: Props }> = [];
-  const addRaw = (path: string, props: Props) => routes.push({ params: { path: path.replace(/^\/|\/$/g, '') }, props });
+  const addRaw = (path: string, props: Props) => {
+    if (props.mode === 'redirect') return; // Historical aliases are not public pages.
+    routes.push({ params: { path: path.replace(/^\/|\/$/g, '') }, props });
+  };
   const add = (path: string, props: DetailProps | CatalogInput | RedirectProps) => {
     if (props.mode !== 'catalog') return addRaw(path, props);
     // Every catalogue, including a new relation catalogue, uses the same static pagination.

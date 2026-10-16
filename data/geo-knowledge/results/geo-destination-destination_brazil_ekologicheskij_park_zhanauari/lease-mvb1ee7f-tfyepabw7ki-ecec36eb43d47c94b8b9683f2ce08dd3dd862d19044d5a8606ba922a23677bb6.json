@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_ekologicheskij_park_zhanauari",
+  "stableId": "destination_brazil_ekologicheskij_park_zhanauari",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/janauari-ecological-park/",
+  "sourceFingerprint": "1dc74677c9b40ce0b19892ab724c71bd64a2f11e291bfbd78c0f8f3de878dc69",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/janauari-ecological-park/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямая HTTP-проверка urllib: 200, canonical совпадает с целевым URL; опубликованная страница и актуальный approved MD имеют нужный stable ID."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/janauari-ecological-park.md",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Актуальный MD: countryId=country_brazil; stable ID, имя, тип и статус approved сверены."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://www.iranduba.am.gov.br/o-que-ver-e-fazer-em-iranduba/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Муниципальная страница содержит отдельный раздел Parque Ecológico Janauary и описание затопленного леса; это коллективный путеводитель, не уникальная карточка/официальный сайт парка."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22057366",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Кандидат относится к Lago Janauari — озеру в Amazonas, не парку. QID сознательно не присвоен."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://www.amazonastur.am.gov.br/municipios/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Amazonastur описывает общины озера Janauari в Iranduba; это подтверждение района, не границ или идентификатора парка."
+    }
+  ],
+  "entityClass": "ecological_park",
+  "alternateNames": [
+    "Parque Ecológico Janauary",
+    "Parque Ecológico do Lago Janauari"
+  ],
+  "reviewNote": "Муниципальный портал Iranduba подтверждает отдельный Parque Ecológico Janauary. Найденный Q22057366 относится к Lago Janauari (озеру), OSM 4029584179 — к деревне Janauari; это не доказанные идентичности парка. Точные границы/вход/парк-ID не установлены; координаты озера/деревни и статус иной охраняемой территории не перенесены. Нужен точный объект на карте или официальный паспорт территории."
+}

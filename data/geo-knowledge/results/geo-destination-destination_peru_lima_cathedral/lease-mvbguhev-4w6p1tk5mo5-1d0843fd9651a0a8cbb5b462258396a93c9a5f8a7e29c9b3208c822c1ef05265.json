@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_lima_cathedral",
+  "stableId": "destination_peru_lima_cathedral",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/lima-cathedral/",
+  "sourceFingerprint": "bb1d26e7f45ac830441f42b68f48389bdd442d4bcf2832893775e13dc949e612",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q2446793",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Metropolitan_Cathedral_of_Lima"
+    },
+    "officialUrl": "https://catedraldelima.org.pe/",
+    "geonamesId": "12237733",
+    "osm": {
+      "type": "relation",
+      "id": 8531715
+    }
+  },
+  "location": {
+    "latitude": -12.046472222222222,
+    "longitude": -77.03003611111112,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2446793"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_peru_lima"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Кафедральный собор на Plaza Mayor; запись не относится к соседнему архиепископскому дворцу. MD route_cluster используется как редакционный тип, основной референт — сам храм.",
+  "decisionPolicy": "probability-70-v1",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2446793",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Кафедральный собор на Plaza Mayor; запись не относится к соседнему архиепископскому дворцу. MD route_cluster используется как редакционный тип, основной референт — сам храм."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2446793",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Точное имя, тип и география совпадают с текущим MD; QID относится к самому объекту."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Metropolitan_Cathedral_of_Lima",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Статья о том же объекте в согласованной географии."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://catedraldelima.org.pe/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Официальный сайт/раздел самого учреждения, название и местонахождение совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/12237733/catedral-de-lima.html",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Точный GeoNames ID выбранного объекта; не населенного пункта/административного региона с тем же именем."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2446793",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Прямое внешнее соответствие OSM в Wikidata; тип и ID сохранены. Прямое открытие OSM ограничено, поэтому не используется для извлечения координат."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2446793",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Кафедральный собор на Plaza Mayor; запись не относится к соседнему архиепископскому дворцу. MD route_cluster используется как редакционный тип, основной референт — сам храм."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2446793",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Объект расположен в Перу."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "sourceUrl": "https://catedraldelima.org.pe/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Расположен в городе Лима; stable ID города проверен в source-index."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/lima-cathedral/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Публичная страница HTTP 200, точный canonical совпадает. ID, approved, страна, тип и смысл проверены по текущим MD и source-index entry на фиксированном SHA main 829696675d32833cf18ebb696ee714747a28f04b."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Кафедральный собор Лимы",
+      "reason": "Кафедральный собор на Plaza Mayor; запись не относится к соседнему архиепископскому дворцу. MD route_cluster используется как редакционный тип, основной референт — сам храм."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2446793",
+      "reason": "Точное имя, тип и география совпадают с текущим MD; QID относится к самому объекту."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "Metropolitan_Cathedral_of_Lima",
+      "reason": "Статья о том же объекте в согласованной географии."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://catedraldelima.org.pe/",
+      "reason": "Официальный сайт/раздел самого учреждения, название и местонахождение совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "12237733",
+      "reason": "Точный GeoNames ID выбранного объекта; не населенного пункта/административного региона с тем же именем."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "relation/8531715",
+      "reason": "Прямое внешнее соответствие OSM в Wikidata; тип и ID сохранены. Прямое открытие OSM ограничено, поэтому не используется для извлечения координат."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-12.046472222222222,-77.03003611111112",
+      "reason": "Кафедральный собор на Plaza Mayor; запись не относится к соседнему архиепископскому дворцу. MD route_cluster используется как редакционный тип, основной референт — сам храм."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Объект расположен в Перу."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "probability": 99,
+      "selected": "destination_peru_lima",
+      "reason": "Расположен в городе Лима; stable ID города проверен в source-index."
+    }
+  ]
+}

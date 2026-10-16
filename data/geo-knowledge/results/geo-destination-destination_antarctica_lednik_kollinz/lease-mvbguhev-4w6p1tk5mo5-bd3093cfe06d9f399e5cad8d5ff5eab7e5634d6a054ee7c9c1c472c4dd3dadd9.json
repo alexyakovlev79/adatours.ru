@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_lednik_kollinz",
+  "stableId": "destination_antarctica_lednik_kollinz",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/collins-glacier/",
+  "sourceFingerprint": "ec2ca942c0534c44e4e7257eb92acc25f27d89bddba52cb3230ec1d625c390ea",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q50319861",
+    "geonamesId": "6638611"
+  },
+  "location": {
+    "latitude": -62.165,
+    "longitude": -58.888,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=135205"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_antarctica_ostrov_king_dzhordzh"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Основной референт MD — Collins у Fildes Peninsula на King George Island. SCAR прямо связывает названия Glaciar Collins/Collins Glacier с Bellingshausen Dome; выбран Q50319861 и GeoNames этого купола. Восточноантарктический Collins Glacier у Mellor (~73.7S,65.9E) и станция Collins исключены. Точка купола representative, не место лагеря. Отдельная EN/ES Wikipedia точной сущности не подтверждена.",
+  "decisionPolicy": "probability-70-v1",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=135205",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Основной референт MD — Collins у Fildes Peninsula на King George Island. SCAR прямо связывает названия Glaciar Collins/Collins Glacier с Bellingshausen Dome; выбран Q50319861 и GeoNames этого купола. Восточноантарктический Collins Glacier у Mellor (~73.7S,65.9E) и станция Collins исключены. Точка купола representative, не место лагеря. Отдельная EN/ES Wikipedia точной сущности не подтверждена."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q50319861",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "SCAR aliases Collins Glacier и положение на King George подтверждают соответствие Q50319861 (Bellingshausen Dome)."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=135205",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "SCAR перечисляет Glaciar Collins и Collins Glacier как названия Bellingshausen Dome на King George Island."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q50319861",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Точный GeoNames ID выбранного объекта; не населенного пункта/административного региона с тем же именем."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=135205",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Основной референт MD — Collins у Fildes Peninsula на King George Island. SCAR прямо связывает названия Glaciar Collins/Collins Glacier с Bellingshausen Dome; выбран Q50319861 и GeoNames этого купола. Восточноантарктический Collins Glacier у Mellor (~73.7S,65.9E) и станция Collins исключены. Точка купола representative, не место лагеря. Отдельная EN/ES Wikipedia точной сущности не подтверждена."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=135205",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Географическая принадлежность к Антарктиде; country_antarctica — контейнер сайта, не утверждение суверенитета."
+    },
+    {
+      "field": "relationships.destination_antarctica_ostrov_king_dzhordzh",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=135205",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Ледяной купол расположен на King George Island согласно SCAR."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/collins-glacier/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Публичная страница HTTP 200, точный canonical совпадает. ID, approved, страна, тип и смысл проверены по текущим MD и source-index entry на фиксированном SHA main 829696675d32833cf18ebb696ee714747a28f04b."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Ледник Коллинз",
+      "reason": "Основной референт MD — Collins у Fildes Peninsula на King George Island. SCAR прямо связывает названия Glaciar Collins/Collins Glacier с Bellingshausen Dome; выбран Q50319861 и GeoNames этого купола. Восточноантарктический Collins Glacier у Mellor (~73.7S,65.9E) и станция Collins исключены. Точка купола representative, не место лагеря. Отдельная EN/ES Wikipedia точной сущности не подтверждена."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q50319861",
+      "reason": "SCAR aliases Collins Glacier и положение на King George подтверждают соответствие Q50319861 (Bellingshausen Dome)."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 94,
+      "selected": "6638611",
+      "reason": "Точный GeoNames ID выбранного объекта; не населенного пункта/административного региона с тем же именем."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-62.165,-58.888",
+      "reason": "Основной референт MD — Collins у Fildes Peninsula на King George Island. SCAR прямо связывает названия Glaciar Collins/Collins Glacier с Bellingshausen Dome; выбран Q50319861 и GeoNames этого купола. Восточноантарктический Collins Glacier у Mellor (~73.7S,65.9E) и станция Collins исключены. Точка купола representative, не место лагеря. Отдельная EN/ES Wikipedia точной сущности не подтверждена."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Географическая принадлежность к Антарктиде; country_antarctica — контейнер сайта, не утверждение суверенитета."
+    },
+    {
+      "field": "relationships.destination_antarctica_ostrov_king_dzhordzh",
+      "probability": 99,
+      "selected": "destination_antarctica_ostrov_king_dzhordzh",
+      "reason": "Ледяной купол расположен на King George Island согласно SCAR."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_ostrov_ardli",
+  "stableId": "destination_antarctica_ostrov_ardli",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/ardley-island/",
+  "sourceFingerprint": "b7de36266a4ca802d6654f5152a7c93322d122f5950ab323ce3bb05a59f90763",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q4788175",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ardley_Island"
+    },
+    "geonamesId": "6633282"
+  },
+  "location": {
+    "latitude": -62.21666666666667,
+    "longitude": -58.93333333333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q4788175"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_antarctica_ostrov_king_dzhordzh"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Остров Ardley у Fildes Peninsula. Выбрана обзорная P625 острова, не маяк и не границы охраняемой территории ASPA 150. Отдельный остров не объявляется частью King George; связь relatedPlace отражает соседство.",
+  "decisionPolicy": "probability-70-v1",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4788175",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Остров Ardley у Fildes Peninsula. Выбрана обзорная P625 острова, не маяк и не границы охраняемой территории ASPA 150. Отдельный остров не объявляется частью King George; связь relatedPlace отражает соседство."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4788175",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Точное имя, тип и география совпадают с текущим MD; QID относится к самому объекту."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ardley_Island",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Статья о том же объекте в согласованной географии."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4788175",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Точный GeoNames ID выбранного объекта; не населенного пункта/административного региона с тем же именем."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4788175",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Остров Ardley у Fildes Peninsula. Выбрана обзорная P625 острова, не маяк и не границы охраняемой территории ASPA 150. Отдельный остров не объявляется частью King George; связь relatedPlace отражает соседство."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4788175",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Географическая принадлежность к Антарктиде; country_antarctica — контейнер сайта, не утверждение суверенитета."
+    },
+    {
+      "field": "relationships.destination_antarctica_ostrov_king_dzhordzh",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ardley_Island",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Географическое соседство; самостоятельные остров/пролив не объединяются с соседним объектом."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/ardley-island/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Публичная страница HTTP 200, точный canonical совпадает. ID, approved, страна, тип и смысл проверены по текущим MD и source-index entry на фиксированном SHA main 829696675d32833cf18ebb696ee714747a28f04b."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Остров Ардли",
+      "reason": "Остров Ardley у Fildes Peninsula. Выбрана обзорная P625 острова, не маяк и не границы охраняемой территории ASPA 150. Отдельный остров не объявляется частью King George; связь relatedPlace отражает соседство."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q4788175",
+      "reason": "Точное имя, тип и география совпадают с текущим MD; QID относится к самому объекту."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "Ardley_Island",
+      "reason": "Статья о том же объекте в согласованной географии."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "6633282",
+      "reason": "Точный GeoNames ID выбранного объекта; не населенного пункта/административного региона с тем же именем."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-62.21666666666667,-58.93333333333333",
+      "reason": "Остров Ardley у Fildes Peninsula. Выбрана обзорная P625 острова, не маяк и не границы охраняемой территории ASPA 150. Отдельный остров не объявляется частью King George; связь relatedPlace отражает соседство."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Географическая принадлежность к Антарктиде; country_antarctica — контейнер сайта, не утверждение суверенитета."
+    },
+    {
+      "field": "relationships.destination_antarctica_ostrov_king_dzhordzh",
+      "probability": 99,
+      "selected": "destination_antarctica_ostrov_king_dzhordzh",
+      "reason": "Географическое соседство; самостоятельные остров/пролив не объединяются с соседним объектом."
+    }
+  ]
+}

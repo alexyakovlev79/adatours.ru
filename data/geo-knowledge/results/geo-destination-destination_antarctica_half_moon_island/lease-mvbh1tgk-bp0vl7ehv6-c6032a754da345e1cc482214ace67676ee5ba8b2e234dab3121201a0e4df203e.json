@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_half_moon_island",
+  "stableId": "destination_antarctica_half_moon_island",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/half-moon-island/",
+  "sourceFingerprint": "1cc371612ed51f1ca3c4e404adf538d92c57b8359859ca113edfb9151a42d6e3",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "island",
+  "external": {
+    "wikidataQid": "Q1570949",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Half_Moon_Island"
+    }
+  },
+  "location": {
+    "latitude": -62.59008,
+    "longitude": -59.92033,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109171"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/half-moon-island/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверен точный live URL: HTTP 200, H1 «Остров Хаф-Мун», canonical совпадает. Current main MD имеет ожидаемый stable ID, approved и соответствующую географию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1570949",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Основной референт — Half Moon Island в Южных Шетландских островах, не арктический Halvmåneøya. Выбрана опорная точка британской записи SCAR; небольшое расхождение с P625 и Wikipedia не усреднялось."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109171",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Основной референт — Half Moon Island в Южных Шетландских островах, не арктический Halvmåneøya. Выбрана опорная точка британской записи SCAR; небольшое расхождение с P625 и Wikipedia не усреднялось. Роль точки: representative; не навигационная координата."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109171",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Тип объекта сверяется с точной записью и собственным MD: island."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://adatours.ru/antarctica/place/half-moon-island/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Географическое нахождение в country_antarctica подтверждено описанием и внешним источником; это не утверждение суверенитета."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Half_Moon_Island",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверена точная статья о соответствующем объекте, имя и география согласованы с Wikidata и MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q1570949",
+      "reason": "Основной референт — Half Moon Island в Южных Шетландских островах, не арктический Halvmåneøya. Выбрана опорная точка британской записи SCAR; небольшое расхождение с P625 и Wikipedia не усреднялось."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1570949",
+      "reason": "Совпадают имя, тип и антарктическая география; исключены конкурирующие одноименные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-62.59008,-59.92033",
+      "reason": "Основной референт — Half Moon Island в Южных Шетландских островах, не арктический Halvmåneøya. Выбрана опорная точка британской записи SCAR; небольшое расхождение с P625 и Wikipedia не усреднялось."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "island",
+      "reason": "Тип подтверждается географическим справочником/карточкой и смыслом страницы."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Согласованная географическая иерархия по MD и справочнику."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Half_Moon_Island",
+      "reason": "Точная статья соответствует выбранному референту."
+    }
+  ],
+  "reviewNote": null
+}

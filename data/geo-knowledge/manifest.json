@@ -6,7 +6,7 @@
   "leaseMinutes": 90,
   "batchSize": 10,
   "pilotBatchSize": 3,
-  "maxStage": 1,
+  "maxStage": 2,
   "pilotGate": "Open stage 2 only after 3–5 country passports have a successful production deployment and a checked renderer adapter",
   "snapshotCommit": "bb2f0956868fc102382d7ff2f55824bea325f016",
   "createdAt": "2026-10-16",
@@ -16,7 +16,7 @@
     "resultsSheetId": 16001611,
     "publicationsSheetId": 16001612
   },
-  "rendererIntegration": "pending_real_pilot_data",
+  "rendererIntegration": "verified_pilot_20261016",
   "publicationCommand": "публикуй данные",
   "collectionCommand": "собирай данные",
   "states": [
@@ -30,5 +30,12 @@
     "PUBLISHING",
     "DEPLOYING",
     "PUBLISHED"
-  ]
+  ],
+  "stage2Gate": {
+    "evidence": "Successful country pilot and generated-HTML Schema.org verification",
+    "pilotRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38905331423",
+    "fullRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/38908552080",
+    "rendererTest": "https://github.com/alexyakovlev79/adatours.ru/blob/5ef4adfbfa3b3e583e4f843b06654983ff6c3ed9/tests/geo-knowledge-renderer.test.mjs",
+    "htmlChecker": "https://github.com/alexyakovlev79/adatours.ru/blob/5ef4adfbfa3b3e583e4f843b06654983ff6c3ed9/scripts/check-schema.mjs"
+  }
 }

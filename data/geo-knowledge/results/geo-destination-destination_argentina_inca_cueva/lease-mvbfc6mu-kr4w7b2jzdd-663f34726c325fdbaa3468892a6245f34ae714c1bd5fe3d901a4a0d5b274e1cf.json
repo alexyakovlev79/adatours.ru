@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_inca_cueva",
+  "stableId": "destination_argentina_inca_cueva",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/inca-cueva/",
+  "sourceFingerprint": "688b7e98b94adcfff52ad49f0e5ec9ce50662d488454b099d14b037a2bc1ae9b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 3058198904
+    }
+  },
+  "location": {
+    "latitude": -23.002001,
+    "longitude": -65.461978,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.showcaves.com/english/ar/showcaves/IncaCueva.html"
+  },
+  "alternateNames": [
+    "Inca Cueva",
+    "Quebrada de Inca Cueva"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/inca-cueva/",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "HTTP 200, canonical совпадает. MD approved и точная entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed. Ущелье и археологические скальные укрытия Inca Cueva в провинции Хухуй, район Трес-Крусес/Умауака. Не весь объект UNESCO Quebrada de Humahuaca и не отдельный артефакт или статья о пещере."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://prensa.jujuy.gob.ar/inca-cueva/inscripciones-el-trekking-inca-cueva-tres-cruces-n34128",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Ущелье и археологические скальные укрытия Inca Cueva в провинции Хухуй, район Трес-Крусес/Умауака. Не весь объект UNESCO Quebrada de Humahuaca и не отдельный артефакт или статья о пещере."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/N3058198904",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "OSM node археологического объекта показан Mapcarta; тип historic=archaeological_site, положение подтверждает Showcaves. Прямой API OSM недоступен."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://prensa.jujuy.gob.ar/inca-cueva/inscripciones-el-trekking-inca-cueva-tres-cruces-n34128",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Проверенные именования: Inca Cueva; Quebrada de Inca Cueva."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.showcaves.com/english/ar/showcaves/IncaCueva.html",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Showcaves локализует весь посещаемый комплекс: -23.002001,-65.461978. Карта OSM node 3058198904 через Mapcarta дает близкую точку -23.0019,-65.4622. Выбрана первая как representative, не вход, парковка или все археологические пещеры. Опубликованные около 23°05′S координаты отдельных исследованных укрытий не переносятся на весь комплекс."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/N3058198904",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "OSM-карта комплекса показывает -23.0019,-65.4622 — близко к выбранной точке Showcaves."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://prensa.jujuy.gob.ar/inca-cueva/inscripciones-el-trekking-inca-cueva-tres-cruces-n34128",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Аргентина подтверждается географией внешнего источника и countryId MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Ущелье и археологические скальные укрытия Inca Cueva в провинции Хухуй, район Трес-Крусес/Умауака. Не весь объект UNESCO Quebrada de Humahuaca и не отдельный артефакт или статья о пещере. Showcaves локализует весь посещаемый комплекс: -23.002001,-65.461978. Карта OSM node 3058198904 через Mapcarta дает близкую точку -23.0019,-65.4622. Выбрана первая как representative, не вход, парковка или все археологические пещеры. Опубликованные около 23°05′S координаты отдельных исследованных укрытий не переносятся на весь комплекс. Точного QID/GeoNames или точной статьи Wikipedia после адресного поиска не установлено. Чужие научные статьи и вся Quebrada de Humahuaca не используются как sameAs.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Inca Cueva",
+      "reason": "Ущелье и археологические скальные укрытия Inca Cueva в провинции Хухуй, район Трес-Крусес/Умауака. Не весь объект UNESCO Quebrada de Humahuaca и не отдельный артефакт или статья о пещере."
+    },
+    {
+      "field": "external.osm",
+      "probability": 90,
+      "selected": "node/3058198904",
+      "reason": "Соответствует выбранному основному объекту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Inca Cueva; Quebrada de Inca Cueva",
+      "reason": "Именования взяты из точных карточек и описаний."
+    },
+    {
+      "field": "location",
+      "probability": 91,
+      "selected": "-23.002001, -65.461978 (representative)",
+      "reason": "Showcaves локализует весь посещаемый комплекс: -23.002001,-65.461978. Карта OSM node 3058198904 через Mapcarta дает близкую точку -23.0019,-65.4622. Выбрана первая как representative, не вход, парковка или все археологические пещеры. Опубликованные около 23°05′S координаты отдельных исследованных укрытий не переносятся на весь комплекс."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 97,
+      "selected": "country_argentina",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 0,
+      "selected": "omitted",
+      "reason": "Точного QID/GeoNames или точной статьи Wikipedia после адресного поиска не установлено. Чужие научные статьи и вся Quebrada de Humahuaca не используются как sameAs."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 0,
+      "selected": "omitted",
+      "reason": "Точный ID для самого комплекса не найден; поле пропущено."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_guachipas",
+  "stableId": "destination_argentina_guachipas",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/guachipas/",
+  "sourceFingerprint": "4f687e83ec9d9c778fa057e5d793765179c2c594a4a053a7bc13e0d2b8ae5b8c",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1016088",
+    "geonamesId": "3854677",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Guachipas"
+    },
+    "osm": {
+      "type": "relation",
+      "id": 7268458
+    }
+  },
+  "location": {
+    "latitude": -25.52247,
+    "longitude": -65.50932,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3854677/guachipas.html"
+  },
+  "alternateNames": [
+    "Guachipas"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_argentina_cuevas_pintadas_guachipas"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/guachipas/",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "HTTP 200, canonical совпадает. MD approved и точная entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed. Посёлок Гуачипас в Сальте, главный пункт одноименного департамента. Не департамент и не пещерный памятник в Лас-Хунтас."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.argentina.gob.ar/viaja-por-argentina/que-hacer/apreciar-el-arte-rupestre",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Посёлок Гуачипас в Сальте, главный пункт одноименного департамента. Не департамент и не пещерный памятник в Лас-Хунтас."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1016088",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Точная карточка: совпадают объект, местоположение и смысл страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1016088",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "P1566 точной карточки Wikidata связывает идентификатор с выбранным объектом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Guachipas",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Точная статья о выбранном объекте, не страница неоднозначностей."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1016088",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Идентификатор OSM указан в точной карточке Wikidata; дополнительные теги не импортируются."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1016088",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Проверенные именования: Guachipas."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3854677/guachipas.html",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "GeoNames PPLA2 3854677: -25.52247,-65.50932 — точка поселка. Wikidata/Wikipedia дают более грубую (-25.51667,-65.53333), она не усредняется."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1016088",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Аргентина подтверждается географией внешнего источника и countryId MD."
+    },
+    {
+      "field": "relationships.destination_argentina_cuevas_pintadas_guachipas",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1016088",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Подтвержденная пространственная/экскурсионная связь; relatedPlace не означает нахождение внутри поселка или площади."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Посёлок Гуачипас в Сальте, главный пункт одноименного департамента. Не департамент и не пещерный памятник в Лас-Хунтас. GeoNames PPLA2 3854677: -25.52247,-65.50932 — точка поселка. Wikidata/Wikipedia дают более грубую (-25.51667,-65.53333), она не усредняется.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Guachipas",
+      "reason": "Посёлок Гуачипас в Сальте, главный пункт одноименного департамента. Не департамент и не пещерный памятник в Лас-Хунтас."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1016088",
+      "reason": "Посёлок Гуачипас в Сальте, главный пункт одноименного департамента. Не департамент и не пещерный памятник в Лас-Хунтас."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3854677",
+      "reason": "Соответствие имени и типа подтверждено точной карточкой."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Guachipas",
+      "reason": "Точный референт и страна совпадают."
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "selected": "relation/7268458",
+      "reason": "Соответствует выбранному основному объекту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Guachipas",
+      "reason": "Именования взяты из точных карточек и описаний."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-25.52247, -65.50932 (settlement_center)",
+      "reason": "GeoNames PPLA2 3854677: -25.52247,-65.50932 — точка поселка. Wikidata/Wikipedia дают более грубую (-25.51667,-65.53333), она не усредняется."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 97,
+      "selected": "country_argentina",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    },
+    {
+      "field": "relationships.destination_argentina_cuevas_pintadas_guachipas",
+      "probability": 97,
+      "selected": "destination_argentina_cuevas_pintadas_guachipas",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    }
+  ]
+}

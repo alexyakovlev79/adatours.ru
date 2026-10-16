@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_casa_rosada",
+  "stableId": "destination_argentina_casa_rosada",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/casa-rosada/",
+  "sourceFingerprint": "4de2512e3b1844eefe383c97d6bb8c044025faecbcaf269b8e22ad70a117d3bd",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q478926",
+    "geonamesId": "6285782",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Casa_Rosada"
+    },
+    "officialUrl": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/casa-de-gobierno-casa-rosada"
+  },
+  "location": {
+    "latitude": -34.6080556,
+    "longitude": -58.3702778,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q478926"
+  },
+  "alternateNames": [
+    "Casa Rosada",
+    "Casa de Gobierno"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_argentina_buenos_aires"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_argentina_plaza_de_mayo"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/casa-rosada/",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "HTTP 200, canonical совпадает. MD approved и точная entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed. Розовое здание Casa de Gobierno на Balcarce 50 в Буэнос-Айресе. Не музей Casa Rosada, не резиденция Quinta de Olivos и не орган исполнительной власти."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/casa-de-gobierno-casa-rosada",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Розовое здание Casa de Gobierno на Balcarce 50 в Буэнос-Айресе. Не музей Casa Rosada, не резиденция Quinta de Olivos и не орган исполнительной власти."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q478926",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Точная карточка: совпадают объект, местоположение и смысл страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q478926",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "P1566 точной карточки Wikidata связывает идентификатор с выбранным объектом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Casa_Rosada",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Точная статья о выбранном объекте, не страница неоднозначностей."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/casa-de-gobierno-casa-rosada",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Специальная карточка объекта на официальном туристическом/государственном портале. Хранится как officialUrl, а не безусловный sameAs портала."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q478926",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Проверенные именования: Casa Rosada; Casa de Gobierno."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q478926",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "P625 здания: 34°36′29″S 58°22′13″W. feature_point здания; не координаты музея или входа."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q478926",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Аргентина подтверждается географией внешнего источника и countryId MD."
+    },
+    {
+      "field": "relationships.destination_argentina_buenos_aires",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q478926",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Источник прямо помещает объект внутри данного района/города; stable ID сопоставлен с текущим сайтом."
+    },
+    {
+      "field": "relationships.destination_argentina_plaza_de_mayo",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q478926",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Подтвержденная пространственная/экскурсионная связь; relatedPlace не означает нахождение внутри поселка или площади."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Розовое здание Casa de Gobierno на Balcarce 50 в Буэнос-Айресе. Не музей Casa Rosada, не резиденция Quinta de Olivos и не орган исполнительной власти. P625 здания: 34°36′29″S 58°22′13″W. feature_point здания; не координаты музея или входа.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Casa Rosada",
+      "reason": "Розовое здание Casa de Gobierno на Balcarce 50 в Буэнос-Айресе. Не музей Casa Rosada, не резиденция Quinta de Olivos и не орган исполнительной власти."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q478926",
+      "reason": "Розовое здание Casa de Gobierno на Balcarce 50 в Буэнос-Айресе. Не музей Casa Rosada, не резиденция Quinta de Olivos и не орган исполнительной власти."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "6285782",
+      "reason": "Соответствие имени и типа подтверждено точной карточкой."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Casa_Rosada",
+      "reason": "Точный референт и страна совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 96,
+      "selected": "https://turismo.buenosaires.gob.ar/es/otros-establecimientos/casa-de-gobierno-casa-rosada",
+      "reason": "Точное название и местоположение в официальной карточке."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Casa Rosada; Casa de Gobierno",
+      "reason": "Именования взяты из точных карточек и описаний."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-34.60805555555556, -58.37027777777778 (feature_point)",
+      "reason": "P625 здания: 34°36′29″S 58°22′13″W. feature_point здания; не координаты музея или входа."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 97,
+      "selected": "country_argentina",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    },
+    {
+      "field": "relationships.destination_argentina_buenos_aires",
+      "probability": 97,
+      "selected": "destination_argentina_buenos_aires",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    },
+    {
+      "field": "relationships.destination_argentina_plaza_de_mayo",
+      "probability": 97,
+      "selected": "destination_argentina_plaza_de_mayo",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    }
+  ]
+}

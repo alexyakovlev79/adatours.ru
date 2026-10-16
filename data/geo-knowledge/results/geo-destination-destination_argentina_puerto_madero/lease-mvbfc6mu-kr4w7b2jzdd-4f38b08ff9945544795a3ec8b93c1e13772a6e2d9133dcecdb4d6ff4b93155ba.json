@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_puerto_madero",
+  "stableId": "destination_argentina_puerto_madero",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/puerto-madero/",
+  "sourceFingerprint": "7cfe19655ae836a42a189c34c74527a5efc03598b759b94865449326b712eb91",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q781553",
+    "geonamesId": "3429760",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Puerto_Madero"
+    },
+    "officialUrl": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/puerto-madero"
+  },
+  "location": {
+    "latitude": -34.60944,
+    "longitude": -58.36186,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3429760/puerto-madero.html"
+  },
+  "alternateNames": [
+    "Puerto Madero"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_argentina_buenos_aires"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/puerto-madero/",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "HTTP 200, canonical совпадает. MD approved и точная entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed. Район Пуэрто-Мадеро с бывшими доками и современной застройкой; мост Пуэнте-де-ла-Мухер — ориентир внутри района, не сам референт страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/puerto-madero",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Район Пуэрто-Мадеро с бывшими доками и современной застройкой; мост Пуэнте-де-ла-Мухер — ориентир внутри района, не сам референт страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q781553",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Точная карточка: совпадают объект, местоположение и смысл страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q781553",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "P1566 точной карточки Wikidata связывает идентификатор с выбранным объектом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Puerto_Madero",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Точная статья о выбранном объекте, не страница неоднозначностей."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/puerto-madero",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Специальная карточка объекта на официальном туристическом/государственном портале. Хранится как officialUrl, а не безусловный sameAs портала."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q781553",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Проверенные именования: Puerto Madero."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3429760/puerto-madero.html",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "GeoNames PPLX 3429760: -34.60944, -58.36186. P625 (-34.61194,-58.36472) — другая точка того же района; выбран GeoNames, без усреднения."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q781553",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Аргентина подтверждается географией внешнего источника и countryId MD."
+    },
+    {
+      "field": "relationships.destination_argentina_buenos_aires",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q781553",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Источник прямо помещает объект внутри данного района/города; stable ID сопоставлен с текущим сайтом."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Район Пуэрто-Мадеро с бывшими доками и современной застройкой; мост Пуэнте-де-ла-Мухер — ориентир внутри района, не сам референт страницы. GeoNames PPLX 3429760: -34.60944, -58.36186. P625 (-34.61194,-58.36472) — другая точка того же района; выбран GeoNames, без усреднения.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Puerto Madero",
+      "reason": "Район Пуэрто-Мадеро с бывшими доками и современной застройкой; мост Пуэнте-де-ла-Мухер — ориентир внутри района, не сам референт страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q781553",
+      "reason": "Район Пуэрто-Мадеро с бывшими доками и современной застройкой; мост Пуэнте-де-ла-Мухер — ориентир внутри района, не сам референт страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3429760",
+      "reason": "Соответствие имени и типа подтверждено точной карточкой."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Puerto_Madero",
+      "reason": "Точный референт и страна совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 96,
+      "selected": "https://buenosaires.gob.ar/gcaba_historico/laciudad/barrios/puerto-madero",
+      "reason": "Точное название и местоположение в официальной карточке."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Puerto Madero",
+      "reason": "Именования взяты из точных карточек и описаний."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-34.60944, -58.36186 (representative)",
+      "reason": "GeoNames PPLX 3429760: -34.60944, -58.36186. P625 (-34.61194,-58.36472) — другая точка того же района; выбран GeoNames, без усреднения."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 97,
+      "selected": "country_argentina",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    },
+    {
+      "field": "relationships.destination_argentina_buenos_aires",
+      "probability": 97,
+      "selected": "destination_argentina_buenos_aires",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    }
+  ]
+}

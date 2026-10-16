@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_cachi",
+  "stableId": "destination_argentina_cachi",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/cachi/",
+  "sourceFingerprint": "57ae8e660762f3b656170e0c118ba1c9e54315ecafaf36e98c6a506713c77e5a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q520684",
+    "geonamesId": "3863557",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cachi,_Argentina"
+    },
+    "officialUrl": "https://visit.turismosalta.gov.ar/valles-calchaquies/cachi-en/"
+  },
+  "location": {
+    "latitude": -25.12083,
+    "longitude": -66.1627,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3863557/cachi.html"
+  },
+  "alternateNames": [
+    "Cachi",
+    "Cachí"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/cachi/",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "HTTP 200, canonical совпадает. MD approved и точная entry сверены на main 20a7fd65b9538b8fefe6ab3881997fe22206a1ed. Поселок Качи в долине Кальчаки, Сальта, с церковью Сан-Хосе. Не департамент Q1190296, не гора Nevado de Cachi и не Качи в Коста-Рике."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://visit.turismosalta.gov.ar/valles-calchaquies/cachi-en/",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Поселок Качи в долине Кальчаки, Сальта, с церковью Сан-Хосе. Не департамент Q1190296, не гора Nevado de Cachi и не Качи в Коста-Рике."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q520684",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Точная карточка: совпадают объект, местоположение и смысл страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q520684",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "P1566 точной карточки Wikidata связывает идентификатор с выбранным объектом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cachi,_Argentina",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Точная статья о выбранном объекте, не страница неоднозначностей."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://visit.turismosalta.gov.ar/valles-calchaquies/cachi-en/",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Специальная карточка объекта на официальном туристическом/государственном портале. Хранится как officialUrl, а не безусловный sameAs портала."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q520684",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Проверенные именования: Cachi; Cachí."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3863557/cachi.html",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "GeoNames PPLA2 3863557: -25.12083,-66.16270. Wikidata P625 25°7′10″S 66°9′43″W — близкая точка поселка; выбран GeoNames. Высота и население не собираются."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q520684",
+      "checkedAt": "2026-10-16T20:37:05.556Z",
+      "note": "Аргентина подтверждается географией внешнего источника и countryId MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Поселок Качи в долине Кальчаки, Сальта, с церковью Сан-Хосе. Не департамент Q1190296, не гора Nevado de Cachi и не Качи в Коста-Рике. GeoNames PPLA2 3863557: -25.12083,-66.16270. Wikidata P625 25°7′10″S 66°9′43″W — близкая точка поселка; выбран GeoNames. Высота и население не собираются.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Cachi",
+      "reason": "Поселок Качи в долине Кальчаки, Сальта, с церковью Сан-Хосе. Не департамент Q1190296, не гора Nevado de Cachi и не Качи в Коста-Рике."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q520684",
+      "reason": "Поселок Качи в долине Кальчаки, Сальта, с церковью Сан-Хосе. Не департамент Q1190296, не гора Nevado de Cachi и не Качи в Коста-Рике."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3863557",
+      "reason": "Соответствие имени и типа подтверждено точной карточкой."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Cachi,_Argentina",
+      "reason": "Точный референт и страна совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 96,
+      "selected": "https://visit.turismosalta.gov.ar/valles-calchaquies/cachi-en/",
+      "reason": "Точное название и местоположение в официальной карточке."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Cachi; Cachí",
+      "reason": "Именования взяты из точных карточек и описаний."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-25.12083, -66.1627 (settlement_center)",
+      "reason": "GeoNames PPLA2 3863557: -25.12083,-66.16270. Wikidata P625 25°7′10″S 66°9′43″W — близкая точка поселка; выбран GeoNames. Высота и население не собираются."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 97,
+      "selected": "country_argentina",
+      "reason": "Подтвержденная связь соответствующих канонических объектов."
+    }
+  ]
+}

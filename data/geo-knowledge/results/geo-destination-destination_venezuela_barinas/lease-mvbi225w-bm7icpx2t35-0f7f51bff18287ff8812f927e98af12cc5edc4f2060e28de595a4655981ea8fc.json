@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_barinas",
+  "stableId": "destination_venezuela_barinas",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/barinas/",
+  "sourceFingerprint": "7c857eb95a16d8598f9b139e2cce61ab0634a115bac15e0d4090be1583e1387e",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q43271",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Barinas_(state)"
+    }
+  },
+  "alternateNames": [
+    "Estado Barinas",
+    "Barinas State"
+  ],
+  "location": {
+    "latitude": 8.133333333333333,
+    "longitude": -69.41666666666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q43271.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.venezuelatuya.com/estados/barinas.htm",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Штат/регион Баринас между предгорьями Анд и Льяносом: destinationType=region, summary и весь текст MD говорят о территории, а исходный источник прямо описывает Estado Barinas. Не одноименный город/муниципалитет."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/barinas/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Проверены прямой GET HTTP 200, конечный URL, canonical и H1; noindex отсутствует. Сверены актуальные approved MD и точная source-index entry stableId/countryId/URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q43271.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Штат/регион Баринас между предгорьями Анд и Льяносом: destinationType=region, summary и весь текст MD говорят о территории, а исходный источник прямо описывает Estado Barinas. Не одноименный город/муниципалитет. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q43271.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.venezuelatuya.com/estados/barinas.htm",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q43271.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Выбрана P625 штата как representative равнинной части территории. Wikipedia 8.633,-70.200 и OSM/Mapcarta 8.1451,-69.8567 — другие справочные точки большого штата, не усреднялись. Не центр/координаты города Баринас."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.venezuelatuya.com/estados/barinas.htm",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Адресная сверка географического контекста и выбранного объекта/точки. Выбрана P625 штата как representative равнинной части территории. Wikipedia 8.633,-70.200 и OSM/Mapcarta 8.1451,-69.8567 — другие справочные точки большого штата, не усреднялись. Не центр/координаты города Баринас."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://www.venezuelatuya.com/estados/barinas.htm",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Основной референт — штат Barinas Q43271 (98%), подтвержден entry/source и географией MD. Не одноименный город и не муниципалитет. Разные точки штата не усреднялись; location — только опорная территориальная точка.",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Баринас",
+      "reason": "Штат/регион Баринас между предгорьями Анд и Льяносом: destinationType=region, summary и весь текст MD говорят о территории, а исходный источник прямо описывает Estado Barinas. Не одноименный город/муниципалитет."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q43271",
+      "reason": "Штат/регион Баринас между предгорьями Анд и Льяносом: destinationType=region, summary и весь текст MD говорят о территории, а исходный источник прямо описывает Estado Barinas. Не одноименный город/муниципалитет. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Barinas_(state)",
+      "reason": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Estado Barinas; Barinas State",
+      "reason": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "8.133333333333333, -69.41666666666667; representative",
+      "reason": "Выбрана P625 штата как representative равнинной части территории. Wikipedia 8.633,-70.200 и OSM/Mapcarta 8.1451,-69.8567 — другие справочные точки большого штата, не усреднялись. Не центр/координаты города Баринас."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ]
+}

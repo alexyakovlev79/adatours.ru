@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_kanon_atuel",
+  "stableId": "destination_argentina_kanon_atuel",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/atuel-canyon/",
+  "sourceFingerprint": "9e7865cfe09b9d638c8cc0244dc274546ecb06f933ab0855505a408c31be1e00",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "canyon",
+  "alternateNames": [
+    "Cañón del Atuel",
+    "Atuel Canyon"
+  ],
+  "external": {
+    "wikidataQid": "Q5759658",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Ca%C3%B1%C3%B3n_del_Atuel",
+      "en": "https://en.wikipedia.org/wiki/Atuel_Canyon"
+    }
+  },
+  "location": {
+    "latitude": -34.88333333,
+    "longitude": -68.58333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5759658"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точка P625 — опорная точка протяжённого каньона, не вход и не вычисленный центр.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.argentina.travel/actividades/canon-del-atuel",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Каньон реки Атуэль в районе Сан-Рафаэль, Мендоса; не река и не водохранилище Valle Grande."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/atuel-canyon/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Прямой HTTPS GET: 200; H1 совпадает с названием, canonical совпадает с job URL. Точный MD approved и source-index entry сверены на SHA cdd8b523a809da44458be6d763aa2c89541d2141."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.argentina.travel/actividades/canon-del-atuel",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Каньон реки Атуэль в районе Сан-Рафаэль, Мендоса; не река и не водохранилище Valle Grande."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5759658",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5759658",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Каньон реки Атуэль в районе Сан-Рафаэль, Мендоса; не река и не водохранилище Valle Grande."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5759658",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Sitelinks точного QID ведут к статьям об основном референте страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5759658",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Точка P625 — опорная точка протяжённого каньона, не вход и не вычисленный центр."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.argentina.travel/actividades/canon-del-atuel",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Независимая сверка географического контекста и роли точки: Каньон реки Атуэль в районе Сан-Рафаэль, Мендоса; не река и не водохранилище Valle Grande."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.argentina.travel/actividades/canon-del-atuel",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Каньон Атуэль",
+      "reason": "Каньон реки Атуэль в районе Сан-Рафаэль, Мендоса; не река и не водохранилище Valle Grande."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "canyon",
+      "reason": "Каньон реки Атуэль в районе Сан-Рафаэль, Мендоса; не река и не водохранилище Valle Grande."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Cañón del Atuel; Atuel Canyon",
+      "reason": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5759658",
+      "reason": "Каньон реки Атуэль в районе Сан-Рафаэль, Мендоса; не река и не водохранилище Valle Grande."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Ca%C3%B1%C3%B3n_del_Atuel; https://en.wikipedia.org/wiki/Atuel_Canyon",
+      "reason": "Sitelinks точного QID ведут к статьям об основном референте страницы."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-34.88333333, -68.58333333",
+      "reason": "Точка P625 — опорная точка протяжённого каньона, не вход и не вычисленный центр."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ]
+}

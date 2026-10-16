@@ -11,14 +11,19 @@ export async function publishSchemaGeoAll(tools,core,remote,options={}){
  if(previous.status==='awaiting_deploy')
   return {status:'awaiting_existing_deploy',batchId:previous.batchId,commit:previous.commit};
  if(previous.status==='publication_requires_recovery'){
-  // A legacy publisher may have reserved everything but been interrupted before main commit.
-  if(previous.phase==='PUBLISHING'&&previous.batchId===batchId){
-   const fired=await remote(tools,core,{action:'dispatchPublication',batchId,ownerId});
-   return {status:'queued_for_github_actions',batchId,jobs:fired.output?.count,
+  // Recover the exact existing publication, even if another chat owns the frozen batch.
+  // No new claim, no second content publication and no attempt to steal a worker lease.
+  if(previous.phase==='PUBLISHING'&&previous.batchId&&previous.ownerId){
+   const fired=await remote(tools,core,{
+    action:'dispatchPublication',batchId:previous.batchId,ownerId:previous.ownerId
+   });
+   if(fired.status!=='saved')return {status:'recovery_not_dispatched',detail:fired};
+   return {status:'queued_for_github_actions',batchId:previous.batchId,
+    ownerId:previous.ownerId,jobs:fired.output?.count,
     stagingCommit:fired.commit,recoveredPriorClaim:true};
   }
   return {status:'existing_uncommitted_publication',batchId:previous.batchId,
-   phase:previous.phase,note:'Resume using the original batchId and ownerId; do not take another claim'};
+   phase:previous.phase,note:'Unknown original batch or owner; do not take another claim'};
  }
  const locked=await remote(tools,core,{action:'beginPublication',batchId,ownerId});
  if(locked.status==='empty_or_gated')return {status:'nothing_ready'};

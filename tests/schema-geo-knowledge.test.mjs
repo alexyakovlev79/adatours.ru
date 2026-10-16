@@ -166,3 +166,30 @@ test('successful descendant may finalize unchanged GEO release but not mutated e
  assert.equal(descendantKeepsGeoRelease({...clean,files:Array(300).fill({filename:'safe'})}),false);
  assert.equal(descendantKeepsGeoRelease({...clean,total_commits:251}),false);
 });
+
+
+import {geoRemoteCommitMessage} from '../scripts/schema-geo-remote.mjs';
+import {publishSchemaGeoAll} from '../scripts/schema-geo-publisher.mjs';
+test('GEO dispatch commits trigger Actions while worker updates keep skip-ci',()=>{
+ assert.equal(geoRemoteCommitMessage('beginPublication','owner'),'geo: beginPublication owner');
+ assert.equal(geoRemoteCommitMessage('dispatchPublication','owner'),'geo: dispatchPublication owner');
+ assert.ok(geoRemoteCommitMessage('complete','worker').includes('[skip ci]'));
+ assert.ok(geoRemoteCommitMessage('recordCommit','owner').includes('[skip ci]'));
+});
+test('master resumes frozen PUBLISHING batch across sessions without a second claim',async()=>{
+ const seen=[];
+ const fake=async(_t,_c,r)=>{
+  seen.push(r);
+  if(r.action==='resumePublication')return {status:'publication_requires_recovery',phase:'PUBLISHING',
+   batchId:'geo-ready-20261016-all-80',ownerId:'geo-master-fast-batch-20261016'};
+  if(r.action==='dispatchPublication')return {status:'saved',commit:'existing',output:{count:80}};
+  throw Error('Unexpected duplicate claim '+r.action);
+ };
+ const answer=await publishSchemaGeoAll({}, {},fake,{batchId:'unrelated-new-batch',ownerId:'different-owner'});
+ assert.deepEqual(seen.map(x=>x.action),['resumePublication','dispatchPublication']);
+ assert.equal(seen[1].batchId,'geo-ready-20261016-all-80');
+ assert.equal(seen[1].ownerId,'geo-master-fast-batch-20261016');
+ assert.equal(answer.batchId,'geo-ready-20261016-all-80');
+ assert.equal(answer.jobs,80);
+ assert.equal(answer.recoveredPriorClaim,true);
+});

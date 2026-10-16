@@ -1705,7 +1705,7 @@ Tour: `tour_chile_marble_caves_san_rafael_three_days`. Word Анны: https://do
 
 ## 16.10.2026 — Y26-008: 6 стран за 20 дней
 
-Tour `tour_latin_america_six_countries_20_days_2026`; источник https://docs.google.com/document/d/1ADQQeg93JexEivjnmM120229N1Z6NFBk/edit. Все 20 дней и 20 экскурсионных модулей сохранены. Использованы существующие canonical Excursion; варианты условий сохранены в contentBlocks[].text. Публикация ожидает Actions.
+Tour `tour_latin_america_six_countries_20_days_2026`; источник https://docs.google.com/document/d/1ADQQeg93JexEivjnmM120229N1Z6NFBk/edit. Все 20 дней и 20 экскурсионных модулей сохранены. Использованы существующие canonical Excursion; варианты условий сохранены в contentBlocks[].text. Опубликовано: content `ded0b89be0f96e2d7246f556770c3203605a7cbb`, Actions 38857238477 — success; таблицы синхронизированы.
 
 | День | Excursion ID |
 |---|---|

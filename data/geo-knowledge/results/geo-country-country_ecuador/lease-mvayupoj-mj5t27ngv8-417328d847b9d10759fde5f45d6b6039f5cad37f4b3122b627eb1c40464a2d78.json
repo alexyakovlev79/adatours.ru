@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_ecuador",
+  "stableId": "country_ecuador",
+  "kind": "country",
+  "canonicalPath": "/ecuador/",
+  "sourceFingerprint": "5026de991549476d8bc4f738ff711e7ca6813e5213b104f8a423cd3fa387df32",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign state",
+  "alternateNames": [
+    "Ecuador",
+    "Republic of Ecuador",
+    "República del Ecuador",
+    "Республика Эквадор"
+  ],
+  "external": {
+    "wikidataQid": "Q736",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ecuador"
+    },
+    "geonamesId": "3658394",
+    "osm": {
+      "type": "relation",
+      "id": 108089
+    },
+    "officialUrl": "https://www.presidencia.gob.ec/"
+  },
+  "relationships": [],
+  "confidence": "high",
+  "reviewNote": "Сопоставлена Республика Эквадор, включая Галапагосы, не экватор Q2353 и не только материковая часть. OSM name:etymology:wikidata=Q2353 — происхождение имени, а точный wikidata=Q736. Координаты расходятся: Wikidata P625 −1,−78; GeoNames −1.25,−78.25; English Wikipedia −2,−77.5. Location опущен; P5140 и столицу не подставлять. URL президентской администрации — officialUrl, не sameAs географической сущности.",
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/ecuador/",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямое HTTP-открытие: 200, без смены URL; H1 совпадает с названием, canonical совпадает с этим URL; robots=index,follow."
+    },
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/countries/ekvador.md",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Текущий main: country_ecuador, status=approved; slug и contentPath совпадают с source-index entry. Blob 2878575b677452632ac08cce344c56bbe3ba24ec."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q736",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Точная географическая сущность Q736; название, территория и класс sovereign state соответствуют странице сайта."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q736",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "P31: sovereign state/country; паспорт страны целиком."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q736",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Названия проверены по меткам/официальным именам этой сущности и точной странице; другие города/исторические образования исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ecuador",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Открыта точная статья об этой территории/стране; не страница неоднозначностей и не отдельный город."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3658394/republic-of-ecuador.html",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямое открытие HTTP 200: ID 3658394, Republic of Ecuador, A.PCLI Independent political entity. Сверено с P1566 Q736."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/108089",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Открыта OSM relation 108089: Ecuador, type=boundary, wikidata=Q736, wikipedia=es:Ecuador, official_name:ru=Республика Эквадор; сверено с P402 Q736."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q736",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "P625: −1,−78, тогда как English Wikipedia дает −2,−77.5. Location не включен."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://www.geonames.org/3658394/republic-of-ecuador.html",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Проверенные координаты GeoNames: −1.25,−78.25. Несогласованные/не подтвержденные независимо точки не усреднять."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ecuador",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Координатный заголовок открыт и сопоставлен с Wikidata/GeoNames; причины исключения location сохранены в reviewNote."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.presidencia.gob.ec/",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямой HTTP 200; заголовок/содержание подтверждают официальный орган этой территории/государства. Институциональный URL не трактовать автоматически как sameAs географического объекта."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/ecuador/",
+      "https://www.wikidata.org/wiki/Q736",
+      "https://en.wikipedia.org/wiki/Ecuador",
+      "https://www.geonames.org/3658394/republic-of-ecuador.html",
+      "https://www.openstreetmap.org/relation/108089",
+      "https://www.presidencia.gob.ec/"
+    ],
+    "findings": [
+      "Точные stable ID, канонический URL и активный опубликованный HTML подтверждены.",
+      "QID, GeoNames и OSM согласованы по имени, территории и классу объекта.",
+      "Location отложен: независимая проверка роли точки не завершена. Готовы только подтвержденные поля."
+    ]
+  }
+}

@@ -12,7 +12,13 @@ export async function publishSchemaGeoAll(tools, core, remote, options={}) {
  if(Object.values(gh).some(x=>!x))throw Error('Connected GitHub read/write tools required');
  const unwrap=r=>{if(r.isError)throw Error(JSON.stringify(r));return r.result||r.structuredContent||r;};
  const fetch=async url=>JSON.parse(unwrap(await gh.fetch({url})).content);
- const read=async(path,ref)=>unwrap(await gh.file({repository_full_name:repo,path,ref})).content;
+ const read=async(path,ref)=>{
+  const f=unwrap(await gh.file({repository_full_name:repo,path,ref}));
+  if(f.content)return f.content;
+  const blob=tools.mcp__GitHub__fetch_blob||tools.mcp__codex_apps__github_fetch_blob;
+  if(!f.sha||!blob)throw Error('Large GitHub JSON requires blob retrieval: '+path);
+  return unwrap(await blob({repository_full_name:repo,blob_sha:f.sha})).content;
+ };
  const json=async(path,ref)=>JSON.parse(await read(path,ref));
  const ownerId=options.ownerId||'geo-all-publisher';
  const batchId=options.batchId||('geo-all-'+new Date().toISOString().replace(/[^0-9]/g,'').slice(0,14));

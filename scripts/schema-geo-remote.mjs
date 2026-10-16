@@ -16,7 +16,7 @@ export async function runSchemaGeo(tools, core, request) {
  const fetch=async url=>JSON.parse(unwrap(await gh.fetch({url})).content);
  const file=async(path,ref)=>{
   const r=unwrap(await gh.file({repository_full_name:repo,path,ref}));
-  return r.content ?? (gh.blob ? unwrap(await gh.blob({repository_full_name:repo,blob_sha:r.sha})).content : '');
+  return r.content || (gh.blob ? unwrap(await gh.blob({repository_full_name:repo,blob_sha:r.sha})).content : '');
  };
  const json=async(path,ref)=>JSON.parse(await file(path,ref));
  for(let attempt=0;attempt<3;attempt++){

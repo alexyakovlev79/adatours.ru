@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_bolshaya_golubaya_dyra",
+  "stableId": "destination_belize_bolshaya_golubaya_dyra",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/great-blue-hole/",
+  "sourceFingerprint": "ae3ef6e4d31a5eee3c22e33afd3e22ea5370f6a16dc7ae4324ec8caa64713a1e",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q86486",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Great_Blue_Hole"
+    },
+    "geonamesId": "6941985"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/great-blue-hole.md",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Морская карстовая воронка Great Blue Hole на Lighthouse Reef, Белиз. Не материковый St Herman’s Blue Hole и не весь Belize Barrier Reef Reserve System."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.travelbelize.org/attraction/blue-hole/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Морская карстовая воронка Great Blue Hole на Lighthouse Reef, Белиз. Не материковый St Herman’s Blue Hole и не весь Belize Barrier Reef Reserve System."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/belize/place/great-blue-hole/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прямой GET, HTTP 200; H1=Большая голубая дыра; rel=canonical соответствует URL; stable ID найден в HTML."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.travelbelize.org/attraction/blue-hole/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают страна Белиз и географический контекст объекта; countryId=country_belize в текущем MD и entry."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q86486",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают имя, страна Белиз и тип/смысл объекта; P17=Q242. Морская карстовая воронка Great Blue Hole на Lighthouse Reef, Белиз. Не материковый St Herman’s Blue Hole и не весь Belize Barrier Reef Reserve System."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q86486",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Английский sitelink относится к выбранному референту; название/география проверены по статье и первоисточнику."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q86486",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "P1566=6941985; независимо прочитана запись Great Blue Hole в текущем BZ.zip GeoNames, country=BZ, класс U/HOLU."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Запись 6941985: Great Blue Hole, 17.31528, -87.53444, страна BZ."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/6941985/great-blue-hole.html",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Точка записи GeoNames 6941985 (U/HOLU) в WGS84, прочитана из текущего BZ.zip: 17.31528, -87.53444. Роль: feature_point."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прочитан исходный файл BZ.txt, точная строка 6941985. Координаты не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q86486",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Сверка с P625: 17.31556, -87.53444. Точки совпадают или близки для выбранного объекта. Роль не означает единственный географический центр."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Морская карстовая воронка Great Blue Hole на Lighthouse Reef, Белиз. Не материковый St Herman’s Blue Hole и не весь Belize Barrier Reef Reserve System.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Большая голубая дыра",
+      "reason": "Морская карстовая воронка Great Blue Hole на Lighthouse Reef, Белиз. Не материковый St Herman’s Blue Hole и не весь Belize Barrier Reef Reserve System."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна подтверждена MD, source-index и внешней карточкой/первоисточником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q86486",
+      "reason": "Морская карстовая воронка Great Blue Hole на Lighthouse Reef, Белиз. Не материковый St Herman’s Blue Hole и не весь Belize Barrier Reef Reserve System."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Great_Blue_Hole",
+      "reason": "Статья выбранного геообъекта; для составного редакционного места используется основной референт."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "6941985",
+      "reason": "Совпадают точное имя, страна, тип и P1566 выбранной записи."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "17.31528, -87.53444",
+      "reason": "Выбрана одна именованная точка GeoNames с установленной ролью; проверена по P625 и географическому контексту."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/belize/place/great-blue-hole/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; конечный URL и rel=canonical совпадают с canonicalPath; H1 и stable ID подтверждены в HTML.",
+      "Проверены точные content MD и source-index entry из main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065."
+    ]
+  },
+  "location": {
+    "latitude": 17.31528,
+    "longitude": -87.53444,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.geonames.org/6941985/great-blue-hole.html"
+  }
+}

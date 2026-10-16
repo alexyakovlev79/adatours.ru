@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_anaconda_lake_jardim_amazonia",
+  "stableId": "destination_brazil_anaconda_lake_jardim_amazonia",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/anaconda-lake-jardim-amazonia/",
+  "sourceFingerprint": "bb8140f55c4e6ce9f7c6bf3e4d4b02e73e3cee0fcc1ae78dac1bb1546675c9ca",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/anaconda-lake-jardim-amazonia.md",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный approved MD прочитан на фиксированном main SHA; stable ID, страна и предмет страницы совпадают с entry. Тип страницы destination не подменяется типом внешнего геообъекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/anaconda-lake-jardim-amazonia/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP GET: 200; rel=canonical точно совпадает с этим URL; noindex отсутствует; заголовок соответствует объекту."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://araraslodge.com.br/amazonia-cerrado-e-pantanal-08-dias-e-07-noites/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Первичный источник программы оператора: день 2, после ночи в Pousada Jardim da Amazônia в São José do Rio Claro, каноэ к lago Anaconda и по rio Claro. Это именно контекст нашего MD."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://araraslodge.com.br/amazonia-cerrado-e-pantanal-08-dias-e-07-noites/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Программа трёх экосистем штата Mato Grosso подтверждает бразильский контекст. Не озеро с названием Anaconda в другой стране."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/anaconda-lake-jardim-amazonia/"
+    ],
+    "findings": [
+      "HTTP 200, canonical совпадает, noindex отсутствует; approved content MD и точная source-index entry сверены."
+    ]
+  },
+  "entityClass": "lake",
+  "alternateNames": [
+    "Lago Anaconda",
+    "Anaconda Lake — Jardim da Amazônia"
+  ],
+  "reviewNote": "Оператор подтверждает название и контекст озера у Jardim da Amazônia, но точные границы, отдельный QID/GeoNames/OSM и координаты водоёма не установлены. Страница тура — материал об озере, не officialUrl/sameAs самого озера. Координаты лоджа и Rio Claro не переносились."
+}

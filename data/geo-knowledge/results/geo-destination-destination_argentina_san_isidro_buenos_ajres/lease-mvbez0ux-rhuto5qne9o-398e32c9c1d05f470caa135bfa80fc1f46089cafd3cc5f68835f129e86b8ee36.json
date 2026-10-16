@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_san_isidro_buenos_ajres",
+  "stableId": "destination_argentina_san_isidro_buenos_ajres",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/san-isidro-buenos-aires/",
+  "sourceFingerprint": "7264e5320596b3ff5caccb90bd58bf921f2e7bb9ebdf0fcaf66e821b118ef8ed",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q2164117",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/San_Isidro_(Buenos_Aires)"
+    },
+    "geonamesId": "3428992"
+  },
+  "location": {
+    "latitude": -34.46971,
+    "longitude": -58.52111,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3428992/san-isidro.html"
+  },
+  "alternateNames": [
+    "San Isidro"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/san-isidro-buenos-aires/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "HTTP 200; точный canonical совпал с очередью, stable ID и approved MD сверены на main cdd8b523a809da44458be6d763aa2c89541d2141. Город Сан-Исидро, исторический центр северного пригорода Буэнос-Айреса с собором и Quinta Los Ombúes. Не весь одноименный partido и не собор."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Isidro_(Buenos_Aires)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Город Сан-Исидро, исторический центр северного пригорода Буэнос-Айреса с собором и Quinta Los Ombúes. Не весь одноименный partido и не собор."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2164117",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Город Сан-Исидро, исторический центр северного пригорода Буэнос-Айреса с собором и Quinta Los Ombúes. Не весь одноименный partido и не собор."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Isidro_(Buenos_Aires)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Город Сан-Исидро, исторический центр северного пригорода Буэнос-Айреса с собором и Quinta Los Ombúes. Не весь одноименный partido и не собор."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2164117",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "GeoNames ID 3428992 связан с точной сущностью в Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3428992/san-isidro.html",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Прочитаны имя, код объекта и административная иерархия GeoNames."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3428992/san-isidro.html",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Выбрана точка населенного пункта GeoNames; P625 (-34.466667,-58.516667) отличается примерно на 0,5 км. Не усредняли."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Isidro_(Buenos_Aires)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Сверка географического контекста: Город Сан-Исидро, исторический центр северного пригорода Буэнос-Айреса с собором и Quinta Los Ombúes. Не весь одноименный partido и не собор. Выбрана точка населенного пункта GeoNames; P625 (-34.466667,-58.516667) отличается примерно на 0,5 км. Не усредняли."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Isidro_(Buenos_Aires)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Местное название: San Isidro."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Isidro_(Buenos_Aires)",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Место находится в Аргентине; соответствует country_argentina в актуальном MD."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "San Isidro",
+      "reason": "Город Сан-Исидро, исторический центр северного пригорода Буэнос-Айреса с собором и Quinta Los Ombúes. Не весь одноименный partido и не собор."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2164117",
+      "reason": "Название, страна, география и референт страницы совпали; конкурирующие одноименные сущности исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/San_Isidro_(Buenos_Aires)",
+      "reason": "Точная статья о выбранном месте, согласуется с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3428992",
+      "reason": "Идентификатор относится к выбранному месту, а не к одноименной административной территории."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-34.46971, -58.52111; settlement_center",
+      "reason": "Выбрана точка населенного пункта GeoNames; P625 (-34.466667,-58.516667) отличается примерно на 0,5 км. Не усредняли."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "San Isidro",
+      "reason": "Название прямо используется в прочитанном внешнем источнике."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна совпадает в MD и внешнем источнике."
+    }
+  ],
+  "reviewNote": "Выбрана точка населенного пункта GeoNames; P625 (-34.466667,-58.516667) отличается примерно на 0,5 км. Не усредняли."
+}

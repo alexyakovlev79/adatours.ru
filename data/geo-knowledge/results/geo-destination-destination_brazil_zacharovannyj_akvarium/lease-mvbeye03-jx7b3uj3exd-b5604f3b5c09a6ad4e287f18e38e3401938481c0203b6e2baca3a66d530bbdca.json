@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_zacharovannyj_akvarium",
+  "stableId": "destination_brazil_zacharovannyj_akvarium",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/aquario-encantado/",
+  "sourceFingerprint": "4a5f7a88502b038c08176855b3e7e6b23a49e5277c044c42fad511223ad726d6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Place",
+  "external": {},
+  "location": {
+    "latitude": -14.5958942,
+    "longitude": -55.9628112,
+    "pointRole": "entrance",
+    "coordinateSource": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Муниципальный туристический портал: Aquário Encantado = Recanto Ecológico da Lagoa Azul, nascente у Bom Jardim/Nobres, с дальнейшей флуктуацией по Salobra. Это природный водоем MD, не городской аквариум и не соседний Reino Encantado."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/brazil/place/aquario-encantado/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Проверен live HTML: HTTP 200, H1 и canonical совпадают с текущими MD/source-index. Страница доступна, noindex отсутствует."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "В текущем HTML муниципальной страницы ссылка Google Maps dir содержит целевое место Aquário Encantado (CID 0xe2e7a7c5e15f4ad8), !1d−55.9628112!2d−14.5958942. Взята целевая точка подъезда/доступа, не центр карты embed −14.5959203,−55.965432. Ненадежные camera-location Commons в другом районе не использованы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Муниципальный туристический портал: Aquário Encantado = Recanto Ecológico da Lagoa Azul, nascente у Bom Jardim/Nobres, с дальнейшей флуктуацией по Salobra. Это природный водоем MD, не городской аквариум и не соседний Reino Encantado."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Муниципальный туристический портал: Aquário Encantado = Recanto Ecológico da Lagoa Azul, nascente у Bom Jardim/Nobres, с дальнейшей флуктуацией по Salobra. Это природный водоем MD, не городской аквариум и не соседний Reino Encantado."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Подтверждена география: объект находится в Бразилии."
+    }
+  ],
+  "confidence": "medium",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Зачарованный Аквариум",
+      "reason": "Муниципальный туристический портал: Aquário Encantado = Recanto Ecológico da Lagoa Azul, nascente у Bom Jardim/Nobres, с дальнейшей флуктуацией по Salobra. Это природный водоем MD, не городской аквариум и не соседний Reino Encantado."
+    },
+    {
+      "field": "location",
+      "probability": 88,
+      "selected": "{\"latitude\":-14.5958942,\"longitude\":-55.9628112,\"pointRole\":\"entrance\",\"coordinateSource\":\"https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/\"}",
+      "reason": "В текущем HTML муниципальной страницы ссылка Google Maps dir содержит целевое место Aquário Encantado (CID 0xe2e7a7c5e15f4ad8), !1d−55.9628112!2d−14.5958942. Взята целевая точка подъезда/доступа, не центр карты embed −14.5959203,−55.965432. Ненадежные camera-location Commons в другом районе не использованы."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "Place",
+      "reason": "Муниципальный туристический портал: Aquário Encantado = Recanto Ecológico da Lagoa Azul, nascente у Bom Jardim/Nobres, с дальнейшей флуктуацией по Salobra. Это природный водоем MD, не городской аквариум и не соседний Reino Encantado."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Бразилия подтверждена MD, source-index и внешним источником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 35,
+      "reason": "После адресного поиска надежная точная карточка QID не установлена; поле пропущено, идентичность самого объекта подтверждена."
+    }
+  ],
+  "reviewNote": "В текущем HTML муниципальной страницы ссылка Google Maps dir содержит целевое место Aquário Encantado (CID 0xe2e7a7c5e15f4ad8), !1d−55.9628112!2d−14.5958942. Взята целевая точка подъезда/доступа, не центр карты embed −14.5959203,−55.965432. Ненадежные camera-location Commons в другом районе не использованы."
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_antarctica",
+  "stableId": "country_antarctica",
+  "kind": "country",
+  "canonicalPath": "/antarctica/",
+  "sourceFingerprint": "42917f1cca7a06d094c1d7803614c9cc3e16f6bb406e598ea7f5a943c6e1894d",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "continent",
+  "external": {
+    "wikidataQid": "Q51",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Antarctica",
+      "ru": "https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%B0%D1%80%D0%BA%D1%82%D0%B8%D0%B4%D0%B0"
+    },
+    "geonamesId": "6255152"
+  },
+  "alternateNames": [
+    "Antarctica"
+  ],
+  "relationships": [],
+  "evidence": [
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Exact continent identity Q51; name, geography and class agree with current Ada Tours page and source-index stable ID."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Antarctica",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "The article explicitly distinguishes the continent from the Antarctic region."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Antarctica",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Names are contemporary names of this exact entity; historical states and broad regional aliases are excluded."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Antarctica",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the exact English article, not a category or disambiguation page."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%B0%D1%80%D0%BA%D1%82%D0%B8%D0%B4%D0%B0",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the exact Russian article; title matches the Russian entity name."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "GeoNames identifier property explicitly gives 6255152."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/antarctica/",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Exact canonical page opened successfully through web retrieval; content is a live country/direction page with the expected name. Current approved source MD and exact source-index entry agree on ID, slug and path."
+    },
+    {
+      "field": "sourceFingerprint",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/d0e3cb468621d09c3af48366152057c74cb0f4b8/src/content/countries/antarctica.md",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Read approved MD at fixed main SHA; blob 6e9a395d7cadbccde1d98a50ced874de891b9894. Completion dispatcher separately checks the current main blob."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Location intentionally omitted; candidate values and validation limitations are recorded in reviewNote. No centroid, entrance or representative point is asserted."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Это континент Q51, не государство и не вся Антарктика. Source-index alias «Антарктика» не переносится в паспорт как точный синоним. Публичный тип при внедрении — Place; stableId и URL сохраняются. GeoNames 6255152 (континент) подтвержден свойством Wikidata; прямое открытие GeoNames недоступно. Не подменять его территориальной записью 6697173. OSM relation 2186646 — кандидат из Wikidata, но текущая доступность/границы не подтверждены, поэтому поле osm исключено. −90,0 в Wikidata/Wikipedia — Южный полюс, не автоматически центр континента или точка круизных высадок; GeoNames индекс дает −78.15856,16.40626. Location и officialUrl исключены.",
+  "audit": {
+    "checkedUrls": [
+      "https://www.wikidata.org/wiki/Q51",
+      "https://en.wikipedia.org/wiki/Antarctica",
+      "https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%B0%D1%80%D0%BA%D1%82%D0%B8%D0%B4%D0%B0",
+      "https://adatours.ru/antarctica/"
+    ],
+    "findings": [
+      "Stable ID, canonical URL, approved MD and source-index entry match.",
+      "Exact external identities verified; READY applies only to the included assertions.",
+      "No coordinates are approved in this payload; limitations are explicit in reviewNote.",
+      "Это континент Q51, не государство и не вся Антарктика. Source-index alias «Антарктика» не переносится в паспорт как точный синоним. Публичный тип при внедрении — Place; stableId и URL сохраняются. GeoNames 6255152 (континент) подтвержден свойством Wikidata; прямое открытие GeoNames недоступно. Не подменять его территориальной записью 6697173. OSM relation 2186646 — кандидат из Wikidata, но текущая доступность/границы не подтверждены, поэтому поле osm исключено. −90,0 в Wikidata/Wikipedia — Южный полюс, не автоматически центр континента или точка круизных высадок; GeoNames индекс дает −78.15856,16.40626. Location и officialUrl исключены."
+    ]
+  }
+}

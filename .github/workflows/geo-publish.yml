@@ -1,0 +1,31 @@
+name: Publish all READY GEO passports
+
+on:
+  push:
+    branches:
+      - schema-geo/staging
+    paths:
+      - data/geo-knowledge/dispatch.json
+
+concurrency:
+  group: geo-publish-all-ready
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  publisher:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Publish frozen GEO batch as one main commit and dispatch one Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/schema-geo-ci-publisher.mjs

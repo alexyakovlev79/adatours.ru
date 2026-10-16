@@ -9,6 +9,8 @@ import { inspectSeoGeoArticle } from './seo-geo-schema.mjs';
 import externalProfiles from '../../data/external-identity/external-profiles.json';
 import confirmedEnglishPairs from '../../data/external-identity/adatours-com-correspondences.json';
 import { collectSeoPagePrices, enrichSeoPriceMetadata, formatSeoMoney } from './seo-price-meta.mjs';
+const geoModules = import.meta.glob('../../data/geo-knowledge/entities/*.json', { eager: true, import: 'default' });
+const geoKnowledge = new Map<string, any>(Object.values(geoModules).map((v: any) => [v.stableId, v]));
 
 // The external audit distinguishes confirmed identity from similar offers,
 // theme catalogues, near-duplicates and candidates. Only the exact pair may
@@ -90,7 +92,7 @@ export async function pageStructuredData(input: {
   const graph = buildStructuredData({ root: input.root, organization, records,
       page: { path: input.path, url: input.url, title: input.title, description: input.description, lang: input.lang, image: input.image },
       document: { ...inspected.facts, editorial }, breadcrumbs: input.breadcrumbs || [],
-      extra: [...[input.extra || []].flat(), ...inspected.legacy] });
+      extra: [...[input.extra || []].flat(), ...inspected.legacy], geoKnowledge });
   const current = records.find((record) => record.path === input.path);
   const prices = collectSeoPagePrices({
     records, root: input.root, path: input.path,

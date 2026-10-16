@@ -1,4 +1,5 @@
 import { selectVipTours } from './vip-tours.mjs';
+import { mergeGeoPassport } from './geo-knowledge.mjs';
 
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
  * Facts come from the content model and the rendered page, never SEO inventions.
@@ -97,7 +98,7 @@ const publicType = (record) => {
   return { tour: 'TouristTrip', excursion: 'TouristTrip', theme: 'DefinedTerm', person: 'Person', case: 'Article', article: 'Article' }[record.kind];
 };
 /** Create a new context per page; records/indexes can be shared by the caller. */
-export function buildStructuredData({ root, organization, records, page, document = {}, breadcrumbs = [], extra = [] }) {
+export function buildStructuredData({ root, organization, records, page, document = {}, breadcrumbs = [], extra = [], geoKnowledge = null }) {
   const byPath = new Map(records.map((r) => [r.path, r]));
   const byId = new Map(records.map((r) => [r.data.id, r]));
   const current = byPath.get(page.path);
@@ -251,7 +252,7 @@ export function buildStructuredData({ root, organization, records, page, documen
         if (publicRecord(author) && document.text?.includes(recordName(author))) node.author = ensureRecord(author);
       }
     }
-    return add(node);
+    return add(mergeGeoPassport(node, record, geoKnowledge));
   }
   const founder = byId.get('person_anna');
   if (publicRecord(founder) && founder.kind === 'person') {

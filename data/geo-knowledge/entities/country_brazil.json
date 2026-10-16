@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_brazil",
+  "stableId": "country_brazil",
+  "kind": "country",
+  "canonicalPath": "/brazil/",
+  "sourceFingerprint": "b043fe7ebd39690e50c115291a8b279e63f9cad8929bfd172ab337f5f0ee9b71",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign_state",
+  "external": {
+    "wikidataQid": "Q155",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Brazil",
+      "ru": "https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D0%B7%D0%B8%D0%BB%D0%B8%D1%8F"
+    },
+    "geonamesId": "3469034",
+    "osm": {
+      "type": "relation",
+      "id": 59470
+    },
+    "officialUrl": "https://www.gov.br/pt-br"
+  },
+  "alternateNames": [
+    "Brazil",
+    "Brasil",
+    "Federative Republic of Brazil",
+    "República Federativa do Brasil"
+  ],
+  "relationships": [],
+  "evidence": [
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q155",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Exact sovereign_state identity Q155; name, geography and class agree with current Ada Tours page and source-index stable ID."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brazil",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "The article describes the country, not a namesake settlement or administrative subdivision."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brazil",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Names are contemporary names of this exact entity; historical states and broad regional aliases are excluded."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Brazil",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the exact English article, not a category or disambiguation page."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D0%B7%D0%B8%D0%BB%D0%B8%D1%8F",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the exact Russian article; title matches the Russian entity name."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q155",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "GeoNames identifier property explicitly gives 3469034."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Exact canonical page opened successfully through web retrieval; content is a live country/direction page with the expected name. Current approved source MD and exact source-index entry agree on ID, slug and path."
+    },
+    {
+      "field": "sourceFingerprint",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/d0e3cb468621d09c3af48366152057c74cb0f4b8/src/content/countries/brazil.md",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Read approved MD at fixed main SHA; blob 20d439895dbcbcb63db955e4a734be5b240b249c. Completion dispatcher separately checks the current main blob."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3469034",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened GeoNames feature card; feature code A.PCLI and country name confirm the same independent political entity."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q155",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "OpenStreetMap relation identifier is 59470; distinguish from any label node."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/59470",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the relation and verified its wikidata=Q155 tag and country name; this is a boundary relation."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.gov.br/pt-br",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the national government portal. Stored as an official information URL; this does not authorize treating the government portal as exact sameAs of the geographical country."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q155",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Location intentionally omitted; candidate values and validation limitations are recorded in reviewNote. No centroid, entrance or representative point is asserted."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Координаты не включены: Wikidata P625 −14, −53; GeoNames −10, −55; Wikipedia −10, −52. Это разные опорные точки; географический центр P5140 также не равен P625. Не усреднять и не выдавать одну из них за подтвержденный центр. Правительственный портал — officialUrl, не автоматический sameAs страны.",
+  "audit": {
+    "checkedUrls": [
+      "https://www.wikidata.org/wiki/Q155",
+      "https://en.wikipedia.org/wiki/Brazil",
+      "https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D0%B7%D0%B8%D0%BB%D0%B8%D1%8F",
+      "https://adatours.ru/brazil/",
+      "https://www.geonames.org/3469034",
+      "https://www.openstreetmap.org/relation/59470",
+      "https://www.gov.br/pt-br"
+    ],
+    "findings": [
+      "Stable ID, canonical URL, approved MD and source-index entry match.",
+      "Exact external identities verified; READY applies only to the included assertions.",
+      "No coordinates are approved in this payload; limitations are explicit in reviewNote.",
+      "Координаты не включены: Wikidata P625 −14, −53; GeoNames −10, −55; Wikipedia −10, −52. Это разные опорные точки; географический центр P5140 также не равен P625. Не усреднять и не выдавать одну из них за подтвержденный центр. Правительственный портал — officialUrl, не автоматический sameAs страны."
+    ]
+  }
+}

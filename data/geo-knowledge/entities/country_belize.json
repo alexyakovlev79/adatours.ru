@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_belize",
+  "stableId": "country_belize",
+  "kind": "country",
+  "canonicalPath": "/belize/",
+  "sourceFingerprint": "5964c2d9a2eb71f283223d50229af263c29920a7e514618bdafabded6819ca74",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign_state",
+  "external": {
+    "wikidataQid": "Q242",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Belize",
+      "ru": "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%B8%D0%B7"
+    },
+    "geonamesId": "3582678",
+    "osm": {
+      "type": "relation",
+      "id": 287827
+    }
+  },
+  "alternateNames": [
+    "Belize",
+    "Belice"
+  ],
+  "relationships": [],
+  "evidence": [
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q242",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Exact sovereign_state identity Q242; name, geography and class agree with current Ada Tours page and source-index stable ID."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Belize",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "The article describes the country, not a namesake settlement or administrative subdivision."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Belize",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Names are contemporary names of this exact entity; historical states and broad regional aliases are excluded."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Belize",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the exact English article, not a category or disambiguation page."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%B8%D0%B7",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the exact Russian article; title matches the Russian entity name."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q242",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "GeoNames identifier property explicitly gives 3582678."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/belize/",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Exact canonical page opened successfully through web retrieval; content is a live country/direction page with the expected name. Current approved source MD and exact source-index entry agree on ID, slug and path."
+    },
+    {
+      "field": "sourceFingerprint",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/d0e3cb468621d09c3af48366152057c74cb0f4b8/src/content/countries/belize.md",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Read approved MD at fixed main SHA; blob 370eab627722f797008c8a1cf8bcc98a2af983ba. Completion dispatcher separately checks the current main blob."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3582678",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened GeoNames feature card; feature code A.PCLI and country name confirm the same independent political entity."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q242",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "OpenStreetMap relation identifier is 287827; distinguish from any label node."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://wiki.openstreetmap.org/wiki/Power_networks/Belize",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "OSM Wiki country information explicitly pairs relation 287827 with Q242. Direct relation/API unavailable in this session; no geometry or map extent is asserted."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q242",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Location intentionally omitted; candidate values and validation limitations are recorded in reviewNote. No centroid, entrance or representative point is asserted."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Сопоставлена страна Q242, не город Белиз и не округ Белиз. OSM relation 287827 подтвержден Wikidata и страницей OSM Wiki Power networks/Belize с тем же Q242; прямое открытие relation/API недоступно. Координаты исключены: Wikidata 17.1,−88.7; GeoNames 17.25,−88.75; Wikipedia 17.067,−88.700. Не подменять их координатами столицы Бельмопан. Предполагаемый правительственный портал не открылся, поэтому officialUrl исключен.",
+  "audit": {
+    "checkedUrls": [
+      "https://www.wikidata.org/wiki/Q242",
+      "https://en.wikipedia.org/wiki/Belize",
+      "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%B8%D0%B7",
+      "https://adatours.ru/belize/",
+      "https://www.geonames.org/3582678",
+      "https://wiki.openstreetmap.org/wiki/Power_networks/Belize"
+    ],
+    "findings": [
+      "Stable ID, canonical URL, approved MD and source-index entry match.",
+      "Exact external identities verified; READY applies only to the included assertions.",
+      "No coordinates are approved in this payload; limitations are explicit in reviewNote.",
+      "Сопоставлена страна Q242, не город Белиз и не округ Белиз. OSM relation 287827 подтвержден Wikidata и страницей OSM Wiki Power networks/Belize с тем же Q242; прямое открытие relation/API недоступно. Координаты исключены: Wikidata 17.1,−88.7; GeoNames 17.25,−88.75; Wikipedia 17.067,−88.700. Не подменять их координатами столицы Бельмопан. Предполагаемый правительственный портал не открылся, поэтому officialUrl исключен."
+    ]
+  }
+}

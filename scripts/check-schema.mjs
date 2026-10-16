@@ -23,8 +23,8 @@ function* objects(value) {
   else if (value && typeof value === 'object') { yield value; for (const v of Object.values(value)) yield* objects(v); }
 }
 const pageTypes = new Set(['WebPage', 'CollectionPage', 'AboutPage', 'ContactPage', 'ProfilePage', 'FAQPage']);
-const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'Country', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'AggregateOffer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'Review', 'AggregateRating', 'WebPageElement', 'Question', 'Answer']);
-const report = { schemaVersion: SCHEMA_VERSION, root, totalHtml: 0, contentPages: 0, redirects: 0, archives: 0, withSchema: 0, catalogPages: 0, faqPages: 0, offerPages: 0, pageTypes: {}, mainEntityTypes: {}, errors: [], pages: [] };
+const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'Country', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'AggregateOffer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'Review', 'AggregateRating', 'WebPageElement', 'Table', 'Question', 'Answer']);
+const report = { schemaVersion: SCHEMA_VERSION, root, totalHtml: 0, contentPages: 0, redirects: 0, archives: 0, withSchema: 0, catalogPages: 0, faqPages: 0, offerPages: 0, editorialArticles: 0, editorialSections: 0, editorialTables: 0, subjectOfLinks: 0, pageTypes: {}, mainEntityTypes: {}, errors: [], pages: [] };
 const definitions = new Set();
 const references = [];
 const urlsChecked = new Set();
@@ -127,6 +127,24 @@ for (const file of files.sort()) {
       }
       report.contentPages++;
     }
+    const hasSeoGeo = html.includes('data-seo-geo-target=');
+    if (hasSeoGeo && !inspected.metadata.redirect) {
+      const article = byId.get(canonical + '#seo-geo-article');
+      assert.ok(article && hasType(article, 'Article'), 'SEO/GEO block has a connected Article');
+      assert.equal(article.isPartOf?.['@id'], page['@id'], 'SEO/GEO Article belongs to current WebPage');
+      assert.ok(page.hasPart?.some((item) => item['@id'] === article['@id']),
+        'WebPage.hasPart points to the editorial Article');
+      assert.ok(article.headline && inspected.facts.text.includes(article.headline), 'Editorial headline is visible');
+      assert.ok(article.hasPart?.length, 'Editorial Article has named sections');
+      report.editorialArticles++;
+      report.editorialSections += nodes.filter((item) => hasType(item, 'WebPageElement')
+        && item['@id']?.startsWith(canonical + '#seo-geo-section-')).length;
+      report.editorialTables += nodes.filter((item) => hasType(item, 'Table')
+        && item['@id']?.startsWith(canonical + '#seo-geo-table-')).length;
+    } else if (!hasSeoGeo && !inspected.metadata.redirect) {
+      assert.ok(!byId.has(canonical + '#seo-geo-article'), 'No invisible editorial article');
+    }
+    report.subjectOfLinks += nodes.reduce((count, item) => count + (item.subjectOf || []).length, 0);
     for (const node of objects(graph)) {
       for (const type of types(node)) assert.ok(allowedTypes.has(type), `Unknown type ${type}`);
       if (node['@id']) {

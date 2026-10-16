@@ -3,7 +3,7 @@ import { selectVipTours } from './vip-tours.mjs';
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
  * Facts come from the content model and the rendered page, never SEO inventions.
  */
-export const SCHEMA_VERSION = '2026-10-14.1';
+export const SCHEMA_VERSION = '2026-10-16.1';
 export const types = (node) => [node?.['@type'] ?? []].flat();
 export const hasType = (node, type) => types(node).includes(type);
 export const ref = (id) => ({ '@id': id });
@@ -125,6 +125,14 @@ export function buildStructuredData({ root, organization, records, page, documen
       telephone: organization.telephone, availableLanguage: organization.languages?.map(languageCode),
       areaServed: organization.areaServed },
   });
+  // Only exact, approved independent coverage is a subjectOf relation. A directory
+  // profile is a sameAs identity, not an editorial article or a rating source.
+  const independentWorks = (organization.externalMentions || []).filter((item) =>
+    /^https:\/\//.test(item.url || '') && item.name).map((item) =>
+    add({ '@type': 'Article', '@id': item.url + '#article', url: item.url,
+      headline: cleanText(item.name), about: ref(orgId) }));
+  if (independentWorks.length) add({ '@type': ['Organization', 'TravelAgency'], '@id': orgId,
+    subjectOf: independentWorks });
   add({ '@type': 'WebSite', '@id': siteId, url: root, name: organization.name, inLanguage: page.lang, publisher: ref(orgId) });
   const imageUrl = absoluteUrl(page.image || current?.data.hero?.src || current?.data.photo?.src || document.primaryImage?.src, root);
   const visibleImage = imageUrl && document.images?.find((img) => absoluteUrl(img.src, root) === imageUrl);
@@ -200,7 +208,17 @@ export function buildStructuredData({ root, organization, records, page, documen
           return add({ '@type': 'Trip', '@id': `${url}#day-${day.day}-${index + 1}`,
             name: cleanText(`День ${day.day}${day.title ? `: ${day.title}` : ''}`),
             description: texts.filter(Boolean).map(cleanText).join(' ').slice(0, 1800) || undefined,
-            partOfTrip: ref(id), itinerary: day.places?.filter(Boolean).map((name) => ({ '@type': 'Place', name: cleanText(name) })) });
+            partOfTrip: ref(id), itinerary: day.places?.filter(Boolean).map((name) => {
+              // Names in authored programme days are resolved only against the
+              // tour's explicitly registered destinations. Ambiguous/unpublished
+              // names remain ordinary Place labels, never guessed entity IDs.
+              const term = cleanText(name).toLocaleLowerCase('ru').replace(/ё/g, 'е');
+              const matches = (d.destinations || []).map((key) => byId.get(key))
+                .filter((place) => publicRecord(place) && place.kind === 'destination')
+                .filter((place) => [recordName(place), ...(place.data.searchAliases || [])]
+                  .some((alias) => cleanText(alias).toLocaleLowerCase('ru').replace(/ё/g, 'е') === term));
+              return matches.length === 1 ? ensureRecord(matches[0]) : { '@type': 'Place', name: cleanText(name) };
+            }) });
         });
         const price = typeof d.priceFrom === 'number' && Number.isFinite(d.priceFrom) ? Math.round(d.priceFrom) : 0;
         // UI renders 0/null/missing as "По запросу"; never turn it into a free offer.
@@ -246,7 +264,8 @@ export function buildStructuredData({ root, organization, records, page, documen
     webPage.mainEntity = ensureRecord(current, true);
     webPage.about = webPage.mainEntity;
     const countryIds = current.kind === 'tour' ? (current.data.routeCountries || current.data.countries || [])
-      : current.kind === 'excursion' ? [current.data.country] : current.kind === 'destination' ? [current.data.countryId] : [];
+      : current.kind === 'excursion' ? [current.data.country] : current.kind === 'destination' ? [current.data.countryId]
+      : current.kind === 'country' ? [current.data.id] : [];
     webPage.spatialCoverage = [...new Set(countryIds)].map((id) => byId.get(id)).filter(publicRecord).map((r) => ensureRecord(r));
     if (current.archived) webPage.description = `${webPage.description} Архивная программа; не предлагается к бронированию.`;
   } else if (isMultiCountryCatalog) {
@@ -274,6 +293,45 @@ export function buildStructuredData({ root, organization, records, page, documen
       url: serviceUrl, provider: ref(orgId), areaServed: coverage.length ? coverage : organization.areaServed });
     webPage.about = service;
     if (coverage.length) webPage.spatialCoverage = coverage;
+  } else if (/^\/multi-country\/[a-z0-9-]+(?:_[a-z0-9-]+)+(?:\/interests\/[a-z0-9-]+)?\/(?:page\/[2-9][0-9]*\/)?$/.test(page.path)) {
+    // Exact combinations are independent, statically generated selection pages.
+    // Derive their geography from their canonical slugs, not any unrelated tour.
+    const selectionPath = page.path.replace(/page\/[2-9][0-9]*\/$/, '');
+    const parts = selectionPath.split('/').filter(Boolean);
+    const slugs = parts[1].split('_');
+    const foundCountries = slugs.map((slug) => records.find((record) =>
+      record.kind === 'country' && publicRecord(record) && record.data.slug === slug));
+    if (foundCountries.length >= 2 && foundCountries.every(Boolean)) {
+      const coverage = foundCountries.map((record) => ensureRecord(record));
+      const interestSlug = parts[2] === 'interests' ? parts[3] : undefined;
+      const theme = interestSlug ? records.find((record) =>
+        record.kind === 'theme' && publicRecord(record) && record.data.slug === interestSlug) : undefined;
+      const canonicalRoot = absoluteUrl(selectionPath, root);
+      const service = add({ '@type': 'Service', '@id': canonicalRoot + '#service',
+        url: canonicalRoot, name: cleanText(page.title).replace(/\s*[—-]\s*страница\s+\d+.*$/i, ''),
+        serviceType: 'Организация путешествий по выбранным странам',
+        category: theme ? recordName(theme) : 'Multi-country',
+        provider: ref(orgId), areaServed: coverage, about: theme ? ensureRecord(theme) : undefined });
+      webPage.about = service;
+      webPage.spatialCoverage = coverage;
+    }
+  } else if (/^\/vip\/[a-z0-9-]+(?:\/interests\/[a-z0-9-]+)?\/(?:page\/[2-9][0-9]*\/)?$/.test(page.path)) {
+    const selectionPath = page.path.replace(/page\/[2-9][0-9]*\/$/, '');
+    const parts = selectionPath.split('/').filter(Boolean);
+    const country = records.find((record) => record.kind === 'country'
+      && publicRecord(record) && record.data.slug === parts[1]);
+    const theme = parts[2] === 'interests' ? records.find((record) =>
+      record.kind === 'theme' && publicRecord(record) && record.data.slug === parts[3]) : undefined;
+    if (country) {
+      const serviceUrl = absoluteUrl(selectionPath, root);
+      const coverage = [ensureRecord(country)];
+      const service = add({ '@type': 'Service', '@id': serviceUrl + '#service',
+        url: serviceUrl, name: cleanText(page.title).replace(/\s*[—-]\s*страница\s+\d+.*$/i, ''),
+        serviceType: 'Организация VIP и Luxury путешествий',
+        category: theme ? recordName(theme) : 'VIP / Luxury',
+        provider: ref(orgId), areaServed: coverage, about: theme ? ensureRecord(theme) : undefined });
+      webPage.about = service; webPage.spatialCoverage = coverage;
+    }
   } else if (serviceConfig) {
     const service = add({ '@type': 'Service', '@id': `${page.url}#service`, name: cleanText(document.h1 || page.title),
       description: cleanText(page.description), serviceType: serviceConfig.serviceType, category: serviceConfig.category,
@@ -453,15 +511,151 @@ export function buildStructuredData({ root, organization, records, page, documen
       }));
     }
   }
+
+  // The approved SEO/GEO article is visibly rendered in SeoGeoSection on THIS
+  // canonical page. It is a contained Article, not another canonical page or
+  // a duplicate mainEntity. References resolve to the site's stable entity IDs.
+  const editorial = !current?.archived && !/\/page\/[2-9][0-9]*\/$/.test(page.path)
+    ? document.editorial : null;
+  const editorialFaq = [];
+  if (editorial?.headline && editorial.sections?.length) {
+    const normalizeLabel = (value) => cleanText(value).toLocaleLowerCase('ru')
+      .replace(/ё/g, 'е').replace(/[^a-zа-я0-9]+/giu, ' ').trim();
+    const editorialUrl = (value) => {
+      const url = absoluteUrl(value, root);
+      if (!url) return null;
+      try {
+        const uri = new URL(url);
+        if (uri.origin !== new URL(root).origin || uri.search || uri.hash) return null;
+        return uri.href;
+      } catch { return null; }
+    };
+    const linkedRecord = (url) => {
+      const linked = editorialUrl(url);
+      if (!linked) return null;
+      const record = byPath.get(logicalPath(linked, root));
+      return publicRecord(record) && record?.path !== page.path ? record : null;
+    };
+    const linkedRef = (url) => {
+      const linked = editorialUrl(url);
+      if (!linked || linked === page.url) return undefined;
+      const record = linkedRecord(linked);
+      if (record) return ensureRecord(record);
+      if (byPath.has(logicalPath(linked, root))) return undefined; // archived/draft direct object
+      // A linked, canonical selection/catalogue is a WebPage, not a fabricated
+      // Tour, Place or Product. Its existence is validated against built HTML.
+      return add({ '@type': 'WebPage', '@id': linked + '#webpage',
+        url: linked, isPartOf: ref(siteId) });
+    };
+    const refsFor = (urls, limit = 32) => [...new Map((urls || [])
+      .slice(0, 160).map(linkedRef).filter(Boolean)
+      .map((item) => [item['@id'], item])).values()].slice(0, limit);
+    const topicRecords = (section) => {
+      const title = ' ' + normalizeLabel(section.name) + ' ';
+      return [...new Map((section.links || []).map(linkedRecord).filter(Boolean)
+        .filter((record) => [recordName(record), ...(record.data.searchAliases || [])]
+          .some((alias) => {
+            const name = normalizeLabel(alias);
+            return name.length >= 4 && title.includes(' ' + name + ' ');
+          }))
+        .map((record) => [record.data.id, record])).values()].slice(0, 5);
+    };
+    const addSubjectOf = (record, work) => {
+      const id = recordId(record, root), entity = nodes.get(id);
+      const previous = entity?.subjectOf || [];
+      const subjects = [...new Map([...previous, work].map((item) => [item['@id'], item])).values()];
+      add({ '@type': publicType(record), '@id': id, subjectOf: subjects.slice(0, 15) });
+    };
+    const articleId = page.url + '#seo-geo-article';
+    const articleRef = ref(articleId);
+    const sectionRefs = new Map();
+    const childSections = new Map();
+    const articleMentions = refsFor(editorial.links, 80);
+    for (const section of editorial.sections.slice(0, 32)) {
+      const id = page.url + '#seo-geo-' + section.key;
+      const sectionRef = ref(id);
+      sectionRefs.set(section.key, sectionRef);
+      const parent = section.parentKey && sectionRefs.get(section.parentKey);
+      if (parent) {
+        if (!childSections.has(parent['@id'])) childSections.set(parent['@id'], []);
+        childSections.get(parent['@id']).push(sectionRef);
+      }
+      const mainTopics = topicRecords(section);
+      const about = mainTopics.length ? mainTopics.map((record) => ensureRecord(record))
+        : webPage.about ? [webPage.about].flat() : [];
+      add({ '@type': 'WebPageElement', '@id': id,
+        name: cleanText(section.name),
+        description: cleanText(section.description).slice(0, 360) || undefined,
+        url: section.headingId ? page.url + '#' + encodeURIComponent(section.headingId) : undefined,
+        isPartOf: parent || articleRef,
+        about, mentions: refsFor(section.links, 28),
+      });
+      for (const record of mainTopics) addSubjectOf(record, sectionRef);
+    }
+    const roots = [];
+    for (const section of editorial.sections.slice(0, 32)) {
+      const item = sectionRefs.get(section.key);
+      if (item && !section.parentKey) roots.push(item);
+    }
+    for (const [parentId, children] of childSections) {
+      const parent = nodes.get(parentId);
+      if (parent) add({ ...parent, hasPart: children });
+    }
+    for (const table of (editorial.tables || []).slice(0, 16)) {
+      const id = page.url + '#seo-geo-' + table.key;
+      const tableRef = add({ '@type': 'Table', '@id': id,
+        name: cleanText(table.name), headline: table.columns?.join(' / ') || undefined,
+        text: cleanText(table.text).slice(0, 900) || undefined,
+        isPartOf: sectionRefs.get(table.sectionKey) || articleRef,
+        mentions: refsFor(table.links, 28) });
+      const parentId = sectionRefs.get(table.sectionKey)?.['@id'];
+      if (parentId && nodes.has(parentId)) {
+        const parent = nodes.get(parentId);
+        add({ ...parent, hasPart: [...(parent.hasPart || []), tableRef] });
+      } else roots.push(tableRef);
+    }
+    const article = add({ '@type': 'Article', '@id': articleId,
+      url: page.url + '#seo-geo-content-' + (editorial.targetPath || page.path).split('/').filter(Boolean).join('-'),
+      headline: cleanText(editorial.headline),
+      description: cleanText(editorial.lead).slice(0, 1000) || undefined,
+      inLanguage: page.lang, publisher: ref(orgId),
+      isPartOf: ref(pageId),
+      about: webPage.about,
+      mentions: articleMentions, hasPart: roots });
+    webPage.hasPart.push(article);
+    // Linked URLs are already real HTML anchors; do not invent keyword links.
+    const important = [...new Set((editorial.links || []).map(editorialUrl).filter((url) =>
+      url && url !== page.url && (!byPath.has(logicalPath(url, root)) || linkedRecord(url))))];
+    if (important.length) webPage.significantLink = important.slice(0, 36);
+    if (current && publicRecord(current)) addSubjectOf(current, article);
+    if (current?.kind === 'country' && publicRecord(current)) {
+      const places = [...new Map((editorial.links || []).map(linkedRecord)
+        .filter((record) => record?.kind === 'destination' && record.data.countryId === current.data.id)
+        .map((record) => [record.data.id, record])).values()].slice(0, 40);
+      if (places.length) {
+        add({ '@type': publicType(current), '@id': recordId(current, root),
+          containsPlace: places.map((place) => ensureRecord(place)) });
+      }
+    }
+    for (const row of editorial.faq || []) editorialFaq.push(row);
+  }
   // FAQ is extracted from actual readable questions/answers, not unused frontmatter fields.
   const extraFaq = authored.filter((n) => hasType(n, 'FAQPage')).flatMap((n) => n.mainEntity || [])
     .filter((n) => document.text?.includes(cleanText(n.name)) && cleanText(n.acceptedAnswer?.text) && document.text?.includes(cleanText(n.acceptedAnswer.text)))
     .map((n) => ({ question: cleanText(n.name), answer: cleanText(n.acceptedAnswer.text) }));
-  const faq = [...new Map([...(document.faq || []), ...extraFaq].map((q) => [q.question, q])).values()];
+  const faq = [...new Map([...(document.faq || []), ...editorialFaq, ...extraFaq].map((q) => [q.question, q])).values()];
   if (faq.length) {
     const faqRef = add({ '@type': 'FAQPage', '@id': `${page.url}#faq`, url: page.url, name: 'Вопросы и ответы', inLanguage: page.lang,
       isPartOf: ref(pageId), mainEntity: faq.map((q, i) => ({ '@type': 'Question', '@id': `${page.url}#question-${i + 1}`,
-        name: cleanText(q.question), acceptedAnswer: { '@type': 'Answer', text: cleanText(q.answer) } })) });
+        name: cleanText(q.question),
+        url: q.headingId ? page.url + '#' + encodeURIComponent(q.headingId) : undefined,
+        acceptedAnswer: { '@type': 'Answer', text: cleanText(q.answer),
+          mentions: (q.links || []).map((url) => {
+            const target = absoluteUrl(url, root);
+            if (!target || new URL(target).origin !== new URL(root).origin) return undefined;
+            const record = byPath.get(logicalPath(target, root));
+            return publicRecord(record) ? ensureRecord(record) : undefined;
+          }).filter(Boolean) } })) });
     webPage.hasPart.push(faqRef);
   }
   add(webPage);

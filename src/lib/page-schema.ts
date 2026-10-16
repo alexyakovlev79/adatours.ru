@@ -5,6 +5,8 @@ import { countryPath, destinationPath, tourPath, excursionPath, themePath } from
 import { isActiveEntity, isArchivedEntity } from './archive.mjs';
 import { buildStructuredData } from './structured-data.mjs';
 import { inspectHtml } from './structured-data-html.mjs';
+import { inspectSeoGeoArticle } from './seo-geo-schema.mjs';
+import externalProfiles from '../../data/external-identity/external-profiles.json';
 import { collectSeoPagePrices, enrichSeoPriceMetadata, formatSeoMoney } from './seo-price-meta.mjs';
 
 let recordsPromise: Promise<any[]> | undefined;
@@ -23,17 +25,35 @@ async function loadRecords() {
 export async function pageStructuredData(input: {
   root: string; html: string; path: string; url: string; title: string; description: string; lang: string; image?: string;
   breadcrumbs?: any[]; extra?: any;
+  seoGeoArticle?: { targetPath: string; headingHtml: string; bodyHtml: string; lead: string } | null;
 }) {
   // In dev, avoid a stale graph after content edits. Production loads the content index once.
   const records = await (import.meta.env.DEV ? loadRecords() : (recordsPromise ??= loadRecords()));
   const inspected = inspectHtml(input.html, { root: input.root, pageUrl: input.url });
+  const editorial = input.seoGeoArticle
+    ? inspectSeoGeoArticle(input.seoGeoArticle, { root: input.root, pageUrl: input.url })
+    : null;
+  // Identity requires explicit confirmation and an exact organization-profile match.
+  // Historical, candidate, directory-analogue and unrelated Ada Tours names never qualify.
+  const confirmedProfiles = externalProfiles.rows.filter((row: string[]) =>
+    row[0] === 'https://adatours.ru/#organization' && row[5] === 'ПОДТВЕРЖДЕНО'
+    && (row[6] === 'sameAs' || row[6].startsWith('sameAs; memberOf'))
+    && row[7] === 'Высокая' && /^https:\/\//.test(row[3] || ''));
+  const verifiedSameAs = [...new Set(confirmedProfiles.map((row: string[]) => row[3]))];
+  const confirmedMentions = externalProfiles.rows.filter((row: string[]) =>
+    row[0] === 'https://adatours.ru/#organization' && row[5] === 'ПОДТВЕРЖДЕНО'
+    && row[6] === 'subjectOf' && row[7] === 'Высокая'
+    && /^https:\/\//.test(row[3] || ''))
+    .map((row: string[]) => ({ name: row[2], url: row[3] }));
   const organization = {
     name: ORG.brand, url: SITE.url, legalName: ORG.legal.name, cnpj: ORG.legal.cnpj,
     description: SITE.defaultDescription,
     email: ORG.contacts.email, telephone: ORG.contacts.phoneHref.replace(/^tel:/, ''),
     logo: '/brand/adatours-logo-black.svg', languages: [...ORG.service.languages],
     // Only exact, verified identity URLs belong in sameAs. Evintra is a country directory.
-    sameAs: [ORG.externalProfiles.officialInternationalSite, ORG.externalProfiles.abavRio],
+    sameAs: [...new Set([ORG.externalProfiles.officialInternationalSite, ORG.externalProfiles.abavRio,
+      ...verifiedSameAs].filter(Boolean))],
+    externalMentions: confirmedMentions,
     areaServed: [
       { '@type': 'Country', name: 'Бразилия' },
       { '@type': 'Country', name: 'Аргентина' },
@@ -46,7 +66,7 @@ export async function pageStructuredData(input: {
   };
   const graph = buildStructuredData({ root: input.root, organization, records,
       page: { path: input.path, url: input.url, title: input.title, description: input.description, lang: input.lang, image: input.image },
-      document: inspected.facts, breadcrumbs: input.breadcrumbs || [],
+      document: { ...inspected.facts, editorial }, breadcrumbs: input.breadcrumbs || [],
       extra: [...[input.extra || []].flat(), ...inspected.legacy] });
   const current = records.find((record) => record.path === input.path);
   const prices = collectSeoPagePrices({

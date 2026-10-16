@@ -132,7 +132,7 @@ const breadcrumbSchemas = !noindex && showBreadcrumbs && (segments.length > 0 ||
 const schema = await pageStructuredData({
   root: rootUrl, html: renderedBody, path: logicalPath,
   url: canonicalUrl, title: fullTitle, description, lang, image: ogImageUrl,
-  breadcrumbs: breadcrumbSchemas, extra: pageSchema,
+  breadcrumbs: breadcrumbSchemas, extra: pageSchema, seoGeoArticle,
 });
 const metaTitle = schema.metaTitle;
 const metaDescription = schema.metaDescription;

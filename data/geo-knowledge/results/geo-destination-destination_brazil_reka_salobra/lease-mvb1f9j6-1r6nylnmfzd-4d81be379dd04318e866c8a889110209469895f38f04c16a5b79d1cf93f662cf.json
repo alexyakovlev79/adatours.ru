@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_reka_salobra",
+  "stableId": "destination_brazil_reka_salobra",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/salobra-river/",
+  "sourceFingerprint": "f20b279deb3a9191098e2264dc97fe412f142d71235c45f4536d6182705ab5b4",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "river",
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 295538570
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/salobra-river/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Прямой HTTP GET: 200; HTML title соответствует объекту; rel=canonical совпадает с URL задачи. Веб-поисковый opener не смог открыть сайт; доступность проверена прямым запросом."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/salobra-river.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точный approved MD: stable ID и countryId=country_brazil совпали с claim; тип и описание сверены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/salobra-river.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Класс выбран по содержанию места, без изменения production MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Муниципальная карточка: источник Aquário Encantado в Bom Jardim, Nobres, MT; прогулка продолжается вниз по Rio Salobra. Подтверждает конкретную реку в содержании Ada Tours."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Refugio-das-aguas-14",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Независимая муниципальная карточка другого объекта в Bom Jardim также указывает Rio Salobra; не sameAs самой реки."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Португальское название Rio Salobra."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/way/295538570/full",
+      "checkedAt": "2026-10-16T14:10:46.324Z",
+      "note": "Прямой API: name=Rio Salobra, waterway=river, 40 узлов от −14.5878809/−55.9613148 до −14.6674572/−55.9897459. География совпадает с Bom Jardim/Nobres; не с Bodoquena."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.ni.bio.br/1982-0224-2021-0127/",
+      "checkedAt": "2026-10-16T14:10:46.324Z",
+      "note": "Первичная научная статья: Rio Salobra у Recanto Ecológico Lagoa Azul, Bom Jardim, Nobres/MT, типовая местность Astyanax nobre. Независимо подтверждает точную реку."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://www.ni.bio.br/1982-0224-2021-0127/",
+      "checkedAt": "2026-10-16T14:10:46.324Z",
+      "note": "Научная точка 14°35′43.2″S 55°58′09.6″W близка к геометрии OSM, но ближайшая вершина редкой линии на расстоянии около 385 м. Без проверки ортоснимка location не включён."
+    }
+  ],
+  "alternateNames": [
+    "Rio Salobra"
+  ],
+  "reviewNote": "Подтверждён named waterway OSM именно у Bom Jardim/Nobres. Это идентификатор речной линии, не территории комплекса Aquário Encantado. Координату центра/входа не придумывать; научная точка сохранена в evidence для адресной картографической сверки."
+}

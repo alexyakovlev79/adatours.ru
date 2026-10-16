@@ -39,3 +39,35 @@ function mockGithub({dropReply=false}={}) {
 }
 test('real remote CAS retries simultaneous claims without overwriting a worker',async()=>{const {tools,getState}=mockGithub();const [a,b]=await Promise.all([runSchemaGeo(tools,c,{action:'claim',...args}),runSchemaGeo(tools,c,{action:'claim',...args,ownerId:'worker_234567',token:'token_2345678901234567'})]);assert.notEqual(a.output[0].jobId,b.output[0].jobId);assert.equal(Object.keys(getState().leases).length,2);});
 test('lost response after successful CAS does not reserve twice',async()=>{const {tools,getState}=mockGithub({dropReply:true});const a=await runSchemaGeo(tools,c,{action:'claim',...args});assert.equal(a.status,'saved');assert.equal(Object.keys(getState().leases).length,1);});
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+test('result validation also works in Code Mode without a URL global',()=>{
+ const source=fs.readFileSync(new URL('../scripts/schema-geo-core.mjs',import.meta.url),'utf8');
+ const validate=new Function('URL',source.replace(/^export /gm,'')+';return validateResult;')(undefined);
+ assert.deepEqual(validate(result,job),[]);
+ assert.ok(validate({...result,external:{...result.external,officialUrl:'https://user:secret@example.org/'}},job).length);
+ assert.ok(validate({...result,external:{...result.external,officialUrl:'https://example.org/ bad'}},job).length);
+});
+test('queue refresh preserves scoped coordinate amendments and fences source drift',()=>{
+ const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'geo-amendment-'));
+ const write=(p,d)=>{fs.mkdirSync(path.dirname(path.join(tmp,p)),{recursive:true});fs.writeFileSync(path.join(tmp,p),JSON.stringify(d));};
+ try{
+  const e={id:'country_brazil',type:'country',name:'Бразилия',url:'/brazil/',contentPath:'src/content/countries/brazil.md',entryPath:'entry.json',countryIds:['country_brazil'],destinationIds:[],sourceBlobSha:'blob-a'};
+  const fingerprint=c.digest({stableId:e.id,kind:e.type,url:e.url,sourceBlobSha:e.sourceBlobSha,countryIds:e.countryIds,destinationIds:e.destinationIds});
+  const parent={...job,sourceFingerprint:fingerprint};const amendment={...parent,jobId:job.jobId+'-coordinates',amendmentOf:job.jobId,reworkScope:'coordinates'};
+  write('data/geo-knowledge/queue.json',{jobs:[parent,amendment]});
+  write('data/geo-knowledge/state.json',{jobs:{[amendment.jobId]:{status:'READY',resultHash:'kept'}},leases:{},publications:[]});
+  write('data/seo-geo/registry/index.json',{phases:[{path:'phase.json'}]});
+  write('phase.json',{entries:[{id:e.id,kind:'country',phase:1,url:e.url,order:5}]});
+  write('data/geo-knowledge/source-inventory.json',{snapshotCommit:'main',entities:[e]});write('data/catalog-archive.json',{entries:[]});
+  const script=new URL('../scripts/sync-geo-knowledge-queue.mjs',import.meta.url).pathname;
+  execFileSync(process.execPath,[script,'--write'],{cwd:tmp});
+  let q=JSON.parse(fs.readFileSync(path.join(tmp,'data/geo-knowledge/queue.json')));let s=JSON.parse(fs.readFileSync(path.join(tmp,'data/geo-knowledge/state.json')));
+  assert.equal(q.jobs.find(j=>j.jobId===amendment.jobId).available,true);assert.equal(s.jobs[amendment.jobId].status,'READY');assert.equal(s.jobs[amendment.jobId].resultHash,'kept');
+  write('data/geo-knowledge/source-inventory.json',{snapshotCommit:'new-main',entities:[{...e,sourceBlobSha:'blob-b'}]});
+  execFileSync(process.execPath,[script,'--write'],{cwd:tmp});s=JSON.parse(fs.readFileSync(path.join(tmp,'data/geo-knowledge/state.json')));
+  assert.equal(s.jobs[amendment.jobId].status,'STALE');assert.equal(s.jobs[amendment.jobId].resultHash,'kept');
+ }finally{fs.rmSync(tmp,{recursive:true,force:true});}
+});

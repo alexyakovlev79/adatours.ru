@@ -26,7 +26,17 @@ for(const [family,test]of Object.entries(families)){
  coverage.push({jobId,family,pages});
 }
 jobs.push({jobId:'geo-template-editorial-services',stage:6,sourceOrder:200000,kind:'template',stableId:'geo-template-editorial-services',url:'/',name:'Адресная проверка Article/about/mentions и Service.areaServed',available:true,sourceFingerprint:digest({files:['src/lib/page-schema.ts','src/lib/structured-data.mjs'],snapshot:inventory.snapshotCommit}),contentPath:null,entryPath:null});
-const current=new Set(jobs.map(j=>j.jobId));for(const old of previous.jobs)if(!current.has(old.jobId))jobs.push({...old,available:false,reason:'no_longer_in_inventory'});
+const current=new Set(jobs.map(j=>j.jobId));
+for(const old of previous.jobs)if(!current.has(old.jobId)){
+ const parent=old.amendmentOf&&jobs.find(j=>j.jobId===old.amendmentOf);
+ if(parent){
+  // A scoped follow-up keeps its own state/result while inheriting current identity.
+  jobs.push({...old,available:parent.available,reason:parent.reason||'',stage:parent.stage,
+   sourceOrder:parent.sourceOrder,url:parent.url,contentPath:parent.contentPath,entryPath:parent.entryPath,
+   countryIds:parent.countryIds,destinationIds:parent.destinationIds,
+   sourceBlobSha:parent.sourceBlobSha,sourceFingerprint:parent.sourceFingerprint});
+ }else jobs.push({...old,available:false,reason:'no_longer_in_inventory'});
+}
 jobs.sort((a,b)=>a.stage-b.stage||a.sourceOrder-b.sourceOrder||a.jobId.localeCompare(b.jobId));
 const queue={schemaVersion:2,snapshotCommit:inventory.snapshotCommit,sourceRegistryRows:records.length,generatedAt:process.env.GEO_SNAPSHOT_AT||new Date().toISOString(),jobs};
 const report={sourceRegistryRows:records.length,totalJobs:jobs.length,availableJobs:jobs.filter(j=>j.available).length,byStage:Object.fromEntries([1,2,3,4,5,6].map(s=>[s,{total:jobs.filter(j=>j.stage===s).length,available:jobs.filter(j=>j.stage===s&&j.available).length}]))};

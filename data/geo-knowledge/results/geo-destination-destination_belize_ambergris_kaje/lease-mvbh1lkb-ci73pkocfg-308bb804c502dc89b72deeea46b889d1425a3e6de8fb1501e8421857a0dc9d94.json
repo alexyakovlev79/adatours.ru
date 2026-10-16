@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_ambergris_kaje",
+  "stableId": "destination_belize_ambergris_kaje",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/ambergris-caye/",
+  "sourceFingerprint": "1726843e644e185d4a69ede322e7cfee38d962fdaa6a3bd174557b6a6ecf430c",
+  "status": "READY",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q457186",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ambergris_Caye"
+    },
+    "geonamesId": "3582758"
+  },
+  "location": {
+    "latitude": 18.04762,
+    "longitude": -87.9229,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3582758/"
+  },
+  "alternateNames": [
+    "Ambergris Caye"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/ambergris-caye/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точный URL проверен HTTP 200, canonical совпадает, noindex отсутствует; актуальный MD/source-index ID, страна и тип сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.coastalzonebelize.org/wp-content/uploads/2021/01/Ambergris-Caye-Coastal-Zone-Management-Guidelines.pdf",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Остров Ambergris Caye в Белизе, не город San Pedro и не одноимённый объект иных стран."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q457186",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Совпадают именованный объект, тип и география: Ambergris Caye."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q457186",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная английская Wikipedia взята из enwiki sitelink соответствующего QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q457186",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная географическая карточка 3582758; P1566 соответствует именованному объекту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3582758/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Опорная точка острова GeoNames ISL 3582758; P625 Wikidata 18.013947, −87.931039 — другая точка острова. Не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q457186",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Английское название выбранного геообъекта."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.coastalzonebelize.org/wp-content/uploads/2021/01/Ambergris-Caye-Coastal-Zone-Management-Guidelines.pdf",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Географический объект Белиза, согласуется с countryId текущего MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Остров Ambergris Caye в Белизе, не город San Pedro и не одноимённый объект иных стран. Опорная точка острова GeoNames ISL 3582758; P625 Wikidata 18.013947, −87.931039 — другая точка острова. Не усреднялись.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Ambergris Caye",
+      "reason": "Остров Ambergris Caye в Белизе, не город San Pedro и не одноимённый объект иных стран."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q457186",
+      "reason": "Соответствие по имени, географии и типу после проверки конкурирующих объектов."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Ambergris_Caye",
+      "reason": "Подтверждённый enwiki sitelink выбранного QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3582758",
+      "reason": "Точная связь GeoNames с выбранным геообъектом; не туристический функциональный аналог."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "18.04762, -87.9229",
+      "reason": "Опорная точка острова GeoNames ISL 3582758; P625 Wikidata 18.013947, −87.931039 — другая точка острова. Не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Ambergris Caye",
+      "reason": "Английское название в выбранной Wikidata-карточке."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна текущего MD и точного внешнего объекта совпадает."
+    }
+  ]
+}

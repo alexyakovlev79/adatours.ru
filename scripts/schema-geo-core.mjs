@@ -26,7 +26,7 @@ export function sha256(text) {
 }
 export const digest = value => sha256(stable(value));
 export const statusOf = (state, job) => !job.available ? 'UNAVAILABLE' : state.jobs[job.jobId]?.status || 'QUEUED';
-export function claim(queue, state, {ownerId, token, now, limit=5, maxStage=1}) {
+export function claim(queue, state, {ownerId, token, now, limit=10, maxStage=1, batchSize=10}) {
   if(!/^[a-zA-Z0-9_-]{8,120}$/.test(ownerId)||!/^[a-zA-Z0-9_-]{16,160}$/.test(token))throw Error('Invalid owner or token');
   const existing=Object.values(state.leases).filter(l=>l.ownerId===ownerId&&l.token===token&&Date.parse(l.until)>now);
   if(existing.length)return existing.map(l=>({...queue.jobs.find(j=>j.jobId===l.jobId),lease:l}));
@@ -34,7 +34,7 @@ export function claim(queue, state, {ownerId, token, now, limit=5, maxStage=1}) 
     statusOf(state,j)==='QUEUED'||statusOf(state,j)==='LEASED'&&Date.parse(state.leases[j.jobId]?.until)<=now));
   eligible.sort((a,b)=>a.stage-b.stage||a.sourceOrder-b.sourceOrder||a.jobId.localeCompare(b.jobId));
   const stage=eligible[0]?.stage;
-  const picked=eligible.filter(j=>j.stage===stage).slice(0,Math.min(5,Math.max(1,limit)));
+  const picked=eligible.filter(j=>j.stage===stage).slice(0,Math.min(10,Math.max(1,batchSize),Math.max(1,limit)));
   for(const j of picked){const old=state.leases[j.jobId];const lease={jobId:j.jobId,ownerId,token,generation:(old?.generation||state.jobs[j.jobId]?.attempt||0)+1,startedAt:new Date(now).toISOString(),until:new Date(now+90*60000).toISOString(),sourceFingerprint:j.sourceFingerprint};state.leases[j.jobId]=lease;state.jobs[j.jobId]={...state.jobs[j.jobId],status:'LEASED',attempt:lease.generation};}
   return picked.map(j=>({...j,lease:state.leases[j.jobId]}));
 }

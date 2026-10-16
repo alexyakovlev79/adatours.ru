@@ -1,0 +1,52 @@
+---
+import { getMultiCountryCatalog } from '../../lib/multi-country-catalog.ts';
+import { multiCountryCatalogPath, multiCountryCatalogName, compareMultiCountryCatalogs } from '../../lib/multi-country-catalog.mjs';
+import { formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
+import { countLabel } from '../../lib/interest-model.mjs';
+import { withBase } from '../../lib/paths';
+interface Props { slugs?: string[]; themeId?: string; countryId?: string; tourId?: string; currentPath?: string; showAll?: boolean; }
+const { slugs = [], themeId, countryId, tourId, currentPath, showAll = false } = Astro.props;
+const rows = await getMultiCountryCatalog();
+const current = rows.find((row) => row.path === currentPath);
+const theme = rows.find((row) => row.themeId === themeId)?.theme;
+const portal = theme ? rows.find((row) => !row.slugs.length && row.themeId === themeId) : undefined;
+const links = [];
+if (current?.theme) {
+  links.push({ label: 'Все туры: ' + current.theme.name, path: '/interests/' + current.theme.slug + '/tours/' });
+  links.push({ label: 'Об интересе: ' + current.theme.name, path: '/interests/' + current.theme.slug + '/' });
+  for (const country of current.countries) links.push({ label: country.name + ': ' + current.theme.name,
+    path: '/interests/' + current.theme.slug + '/tours/' + country.slug + '/' });
+  if (current.slugs.length) links.push({ label: 'Все интересы: ' + formatMultiCountryNames(current.countries.map((country) => country.name)),
+    path: multiCountryCatalogPath(current.slugs) });
+}
+if (portal && portal.path !== currentPath) links.push({ label: 'Все сочетания стран: ' + theme.name, path: portal.path });
+const matching = rows.filter((row) => row.slugs.length && row.path !== currentPath
+  && (themeId ? row.themeId === themeId : Boolean(row.themeId))
+  && (!countryId || row.countryIds.includes(countryId))
+  && (!tourId || row.tours.some((entry) => entry.data.id === tourId))
+  && (!slugs.length || row.slugs.every((slug) => slugs.includes(slug)) || slugs.every((slug) => row.slugs.includes(slug))))
+  .sort(compareMultiCountryCatalogs);
+const visible = showAll ? matching : matching.slice(0, 12);
+---
+{(visible.length > 0 || links.length > 0) && <section class="mc-related container section--tight" data-multi-country-related>
+  <h2>{theme ? 'По нескольким странам: ' + theme.name : 'Путешествия по странам и интересам'}</h2>
+  {links.length > 0 && <nav aria-label="Связанные каталоги"><ul>
+    {links.map((link) => <li><a href={withBase(link.path)}>{link.label}</a></li>)}
+  </ul></nav>}
+  {visible.length > 0 && <details open={!showAll || visible.length <= 12}>
+    <summary>Сочетания стран{theme ? ': ' + theme.name : ''}</summary>
+    <ul>{visible.map((row) => <li><a href={withBase(row.path)}>{multiCountryCatalogName(row)} <span>· {countLabel(row.count)}</span></a></li>)}</ul>
+  </details>}
+  {!themeId && !showAll && <a href={withBase('/multi-country/')}>Все мультистрановые туры</a>}
+</section>}
+<style>
+  .mc-related { padding-block: 40px; }
+  .mc-related h2 { margin: 0 0 24px; font-size: clamp(1.6rem, 3vw, 2.6rem); }
+  ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; margin: 18px 0 24px; padding: 0; list-style: none; }
+  a { color: var(--color-ink); text-underline-offset: .2em; overflow-wrap: anywhere; }
+  a:hover { color: var(--color-gold-deep); }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
+  li span { white-space: nowrap; font-size: .9em; }
+  summary { cursor: pointer; padding-block: 12px; }
+  @media(max-width: 600px) { ul { grid-template-columns: 1fr; } }
+</style>

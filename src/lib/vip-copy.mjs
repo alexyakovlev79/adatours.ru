@@ -90,3 +90,8 @@ export function vipFilterDescription(country, theme, count) {
 export function tourFilterDescription(country, theme, count) {
   return catalogDescription(country, theme, count, false);
 }
+
+/** Shared introductory wording for combined catalogues; never infer a new service. */
+export function tourFilterIntro(theme) {
+  return copy[dataOf(theme)?.id]?.intro ?? 'Сравните программы, длительность и стоимость поездок.';
+}

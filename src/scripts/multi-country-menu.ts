@@ -21,14 +21,20 @@ for (const menu of menuInstances) {
   }
   const heading = menu.querySelector<HTMLElement>('[data-mc-menu-heading]');
   const back = menu.querySelector<HTMLButtonElement>('[data-mc-menu-back]');
-  const combinations = [...menu.querySelectorAll<HTMLElement>('[data-mc-menu-combination]')]
-    .map((element) => ({ element, slugs: (element.dataset.mcMenuSlugs ?? '').split('_') }));
+  // The canonical SSR href already contains the country key. Do not serialize
+  // it a second time on every catalogue link on every page of the website.
+  const combinations = [...menu.querySelectorAll<HTMLElement>('.mc-menu__combination')]
+    .map((element) => ({ element, slugs: (element.querySelector('a')?.getAttribute('href') ?? '')
+      .split('/').filter(Boolean).at(-1)?.split('_') ?? [] }));
+  const availableKeys = new Set(combinations.map((item) => item.slugs.join('_')));
   if (!countryGrid || !links || !heading || !back) continue;
   // Keep each canonical anchor in SSR, but clone the shared scoped button
   // only in the browser instead of repeating its markup on every page.
   const expandTemplate = menu.querySelector<HTMLTemplateElement>('[data-mc-menu-expand-template]');
   for (const { element, slugs } of combinations) {
-    if (!element.hasAttribute('data-mc-menu-more') || element.querySelector('[data-mc-menu-expand]')) continue;
+    if (slugs.length >= 4 || element.querySelector('[data-mc-menu-expand]')
+      || ![...names.keys()].some((slug) => !slugs.includes(slug)
+        && availableKeys.has([...slugs, slug].sort().join('_')))) continue;
     const expand = expandTemplate?.content.querySelector('button')?.cloneNode(true) as HTMLButtonElement | undefined;
     if (!expand) continue;
     expand.dataset.mcMenuExpand = slugs.join('_');

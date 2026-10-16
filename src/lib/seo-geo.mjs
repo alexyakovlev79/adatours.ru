@@ -1,3 +1,4 @@
+import { checkSeoGeoFaqFormat } from './seo-geo-faq-format.mjs';
 import yaml from 'js-yaml';
 import { parseFragment } from 'parse5';
 
@@ -63,6 +64,8 @@ export function validateSeoGeoMarkdown(markdown, file = 'article.md') {
     throw new Error('SEO/GEO body cannot contain HTML, external links or images: ' + file);
   }
   if (/^#\s+\S/m.test(markdown)) throw new Error('H1 is not allowed inside SEO/GEO article: ' + file);
+  const faqErrors = checkSeoGeoFaqFormat(markdown, file);
+  if (faqErrors.length) throw new Error('Invalid SEO/GEO FAQ: ' + faqErrors[0]);
 }
 
 export function seoGeoValue(context, key, allowMissing = false) {

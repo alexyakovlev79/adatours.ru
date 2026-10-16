@@ -9,7 +9,8 @@ import EditorialStatement from '../../components/editorial/EditorialStatement.as
 import DestinationBand from '../../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../../components/catalog/CatalogPagination.astro';
 import MultiCountrySelector from '../../components/catalog/MultiCountrySelector.astro';
-import { buildMultiCountryCombinations, formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
+import { getMultiCountryCatalog } from '../../lib/multi-country-catalog.ts';
+import { formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
@@ -23,12 +24,7 @@ const [tourEntries, countryEntries] = await Promise.all([
   getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
 ]);
 const allTours = [...tourEntries].sort(compareToursBySalesFit);
-const multiCountryTours = allTours.filter((entry) => mainTourCountries(entry.data).length > 1);
-const combinationRows = buildMultiCountryCombinations(multiCountryTours, (entry) => mainTourCountries(entry.data));
-const combinationOptions = combinationRows.map((row) => ({ slugs: row.slugs, path: row.path, count: row.tours.length }));
-const selectorCountries = [...new Map(multiCountryTours.flatMap((entry) => mainTourCountries(entry.data))
-  .map((country) => [country.slug, { slug: country.slug, name: country.name }])).values()]
-  .sort((a, b) => a.slug.localeCompare(b.slug, 'en'));
+const multiCountryTours = (await getMultiCountryCatalog()).find((row) => row.path === '/multi-country/')?.tours ?? [];
 const countryEntryById = new Map(countryEntries.map((entry) => [entry.data.id, entry]));
 
 const catalogPages = paginateCatalog(multiCountryTours, '/multi-country/');
@@ -37,12 +33,7 @@ const visibleTours = firstCatalogPage?.entries ?? [];
 const pagination = firstCatalogPage?.pagination;
 const pageHeroTour = multiCountryTours[pagination?.to ?? 0];
 const proofCoverTour = multiCountryTours[(pagination?.to ?? 0) + 1];
-if (!pageHeroTour?.data.hero?.src || !proofCoverTour?.data.hero?.src) {
-  throw new Error('Multi-country page requires two off-page tour hero images');
-}
-if (pageHeroTour.data.hero.src === proofCoverTour.data.hero.src) {
-  throw new Error('Multi-country off-page tours must have different hero images');
-}
+const fallbackHero = countryEntries.find((entry) => entry.data.id === 'country_brazil')?.data.hero?.src;
 const catalogVersion = createHash('sha256')
   .update(JSON.stringify(multiCountryTours.map((entry) => entry.data.id)))
   .digest('hex')
@@ -60,13 +51,13 @@ const popularCountries = [...countryCounts.values()]
 
 const usedBackdropTourIds = new Set([
   ...visibleTours.map((entry) => entry.data.id),
-  pageHeroTour.data.id,
-  proofCoverTour.data.id,
+  pageHeroTour?.data.id,
+  proofCoverTour?.data.id,
 ]);
 const usedBackdropImages = new Set([
   ...visibleTours.map((entry) => entry.data.hero?.src).filter(Boolean),
-  pageHeroTour.data.hero.src,
-  proofCoverTour.data.hero.src,
+  pageHeroTour?.data.hero?.src ?? fallbackHero,
+  proofCoverTour?.data.hero?.src ?? fallbackHero,
 ]);
 const countryBackdropExclusions = new Map([
   ['country_chile', new Set(['tour_source_fordy_ognennoj_zemli'])],
@@ -84,16 +75,12 @@ const countryBands = popularCountries.map(({ country, count }) => {
     coverTour = candidate;
     break;
   }
-  if (!coverTour?.data.hero?.src) {
-    throw new Error(`No unique off-page multi-country cover found for ${country.name}`);
-  }
-  usedBackdropTourIds.add(coverTour.data.id);
-  usedBackdropImages.add(coverTour.data.hero.src);
+  if (coverTour) { usedBackdropTourIds.add(coverTour.data.id); usedBackdropImages.add(coverTour.data.hero.src); }
   return {
     country,
     count,
-    image: coverTour.data.hero.src,
-    coverTourId: coverTour.data.id,
+    image: coverTour?.data.hero?.src ?? countryEntryById.get(country.id)?.data.hero?.src,
+    coverTourId: coverTour?.data.id,
     imageTextAlign: countryEntryById.get(country.id)?.data.imageTextAlign,
   };
 });
@@ -102,8 +89,7 @@ const allToursCover = allTours.find((entry) => {
   const image = entry.data.hero?.src;
   return mainTourCountries(entry.data).length === 1 && Boolean(image) && !usedBackdropImages.has(image);
 });
-if (!allToursCover?.data.hero?.src) throw new Error('No unique single-country cover found for the all-tours band');
-usedBackdropImages.add(allToursCover.data.hero.src);
+
 
 const durations = multiCountryTours
   .map((entry) => entry.data.durationDays)
@@ -114,8 +100,8 @@ const durationValue = minDuration && maxDuration
   ? minDuration === maxDuration ? countLabel(minDuration, ['день', 'дня', 'дней']) : `${minDuration}–${maxDuration} дней`
   : 'Гибко';
 
-const hero = pageHeroTour.data.hero.src;
-const proofImage = proofCoverTour.data.hero.src;
+const hero = pageHeroTour?.data.hero?.src ?? fallbackHero;
+const proofImage = proofCoverTour?.data.hero?.src ?? fallbackHero;
 const countryExamples = popularCountries.map(({ country }) => country.name);
 const countryExampleText = `${countryExamples.join(', ')}${countryCounts.size > countryExamples.length ? ' и другие' : ''}`;
 const seoTitle = seoFill(SEO.multiCountry.title, { numbers: [multiCountryTours.length] });
@@ -165,8 +151,9 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
       <p>Сравните страны, длительность и формат. Любой готовый маршрут можно адаптировать под ваши даты, отели и состав поездки.</p>
     </div>
 
-    <MultiCountrySelector countries={selectorCountries} combinations={combinationOptions} />
+    <MultiCountrySelector />
 
+    {!pagination && <p class="container">Сейчас готовых мультистрановых программ нет. Обсудите с нами индивидуальный маршрут.</p>}
     {pagination && (
       <div
         data-catalog-root
@@ -267,13 +254,13 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
       </div>
     ))}
 
-    <div data-all-tours-cover={allToursCover.data.id}>
+    <div data-all-tours-cover={allToursCover?.data.id}>
       <DestinationBand
         headingTag="h3"
         eyebrow="Полный каталог"
         title="Все туры Ada Tours"
         text="Все готовые маршруты по Латинской Америке"
-        image={allToursCover.data.hero.src}
+        image={allToursCover?.data.hero?.src ?? fallbackHero}
         href="/tours/"
         align={countryBands.length % 2 === 1 ? 'right' : 'left'}
       />

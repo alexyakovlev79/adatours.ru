@@ -10,8 +10,19 @@ countries:
 - country_brazil
 destinations:
 - destination_chile_santyago_de_chili
+- destination_chile_santiago_plaza_de_armas
+- destination_chile_la_moneda_palace
+- destination_chile_santa_lucia_hill
 - destination_chile_valparaiso_i_vinya_del_mar
+- destination_chile_navy_headquarters_valparaiso
 - destination_chile_puerto_natales_torres_del_pajne
+- destination_chile_peschera_milodona
+- destination_chile_vodopad_salto_grande
+- destination_chile_ozero_nordensheld
+- destination_chile_ozero_pehoe
+- destination_chile_rio_serrano
+- destination_chile_lake_toro
+- destination_chile_lake_porteno
 - destination_argentina_el_calafate
 - destination_argentina_ozero_argentino
 - destination_argentina_nacionalnyj_park_los_glasyares
@@ -21,8 +32,11 @@ destinations:
 - destination_argentina_vilya_traful
 - destination_argentina_vilya_la_angostura
 - destination_brazil_iguacu
+- destination_brazil_parque_das_aves
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
+- destination_argentina_plaza_dorrego
+- destination_argentina_plaza_de_mayo
 audiences: []
 route:
 - Сантьяго-де-Чили (3 ночи)
@@ -75,26 +89,13 @@ itinerary:
   title: Вальпараисо и Винья-дель-Мар
   places:
   - Вальпараисо и Винья дель Мар
-  text: 'После завтрака начинается экскурсия на целый день к Тихому океану.
-
-
-    Дорога из Сантьяго проходит через долины Куракави и Касабланка, где вдоль трассы тянутся оливковые плантации, фруктовые сады и виноградники. Расстояние до побережья составляет около 120 км.
-
-
-    Первая остановка - Вальпараисо. Город расположен на 42 холмах и известен необычной многоуровневой застройкой. Его историческая часть признана ЮНЕСКО объектом культурного наследия. Разные уровни Вальпараисо соединяют старые фуникулеры, лестницы и пешеходные дорожки.
-
-
-    Вы посетите площадь Сотомайор и увидите здание морского ведомства, имеющее статус национального памятника. Затем подниметесь в район холма Консепсьон и пройдете по бульварам Гервасони и Аткинсон. Отсюда хорошо виден порт, один из главных символов города.
-
-
-    После Вальпараисо поездка продолжается в Винья-дель-Мар, который называют «городом-садом». Его береговая линия сочетает пляжи и скалистые участки. Вы увидите цветочные часы, пляж Реньяка, набережную и музей Фонк. Также предусмотрено посещение дома Пабло Неруды «Ла-Себастьяна».
-
-
-    После экскурсии возвращение в Сантьяго.'
+  text: 'После завтрака вы отправитесь на целый день к Тихому океану: в Вальпараисо и Винья-дель-Мар. Дорога проходит через долины Куракави и Касабланка. После осмотра приморских городов и дома Пабло Неруды «Ла-Себастьяна» вы вернетесь в Сантьяго.'
   images:
   - src: /media/tours/chili-argentina/itinerary-day-3-enhanced-20261006.webp
     hover: "Вальпараисо: разноцветные фасады и церковный шпиль на закате"
     alt: "Цветные дома на склоне Вальпараисо под розовым вечерним небом, Чили"
+- excursionRef: excursion_valparaiso_vina_neruda_full_day
+  places: []
 - day: 4
   title: Сантьяго - Пуэрто-Наталес
   places:
@@ -140,28 +141,15 @@ itinerary:
   places:
   - Эль-Калафате
   - Пуэрто Наталес & Торрес дель Пайне
-  text: 'После завтрака трансфер из Чили в аргентинский Эль-Калафате. Дорога проходит среди горных вершин и открытой степи. По пути можно увидеть представителей местной фауны: лам, зайцев, лис и альпак.
+  text: 'После завтрака вас ждет трансфер из Пуэрто-Наталеса в аргентинский Эль-Калафате через патагонские горы и степи. По прибытии — трансфер в отель.
 
 
-    Прибытие в Эль-Калафате и трансфер в отель.
-
-
-    Эль-Калафате расположен в Патагонии у больших ледниковых озер. Главная природная достопримечательность региона - национальный парк Лос-Гласиарес и ледник Перито-Морено. Около 40% территории парка покрыто гигантскими ледяными полями. Здесь насчитывается 47 крупных ледников, 13 из которых движутся на восток и питают 2 больших озера: Вьедма на севере и Аргентино на юге. Кроме них, в регионе есть около 190 меньших ледников, не связанных с основными ледовыми полями.
-
-
-    Национальный парк Лос-Гласиарес был включен в список Всемирного наследия ЮНЕСКО в 1987 году.
-
-
-    Вечером вас ждет экскурсия на джипе **Nativo Experience** с гидом и ужином в пещере. Маршрут проходит вдоль берега озера Лаго-Аргентино. Экскурсия посвящена заселению этих земель индейскими племенами, а позднее колонизаторами.
-
-
-    Вы доберетесь до пещер, где тысячи лет назад люди оставили рисунки. Эти изображения были обнаружены исследователями значительно позднее. В финале поездки ужин пройдет прямо в пещере, среди мест, связанных с древней историей Патагонии.
-
-
-    Эль-Калафате сам по себе остается небольшим и спокойным городом. После большого дня в дороге здесь приятно пройтись по набережной, заглянуть в небольшие магазины и рестораны. Озеро и открытый патагонский горизонт постоянно напоминают, что город возник рядом с огромным ледниковым районом. Вечерняя Nativo Experience добавляет к природной теме человеческую историю: наскальные следы, рассказы о первых жителях, колонизации и ужин в необычном месте.'
+    Эль-Калафате расположен у озера Аргентино и национального парка Лос-Гласиарес, внесенного в список Всемирного наследия ЮНЕСКО в 1987 году. Вечером запланирована Nativo Experience с гидом и ужином в пещере.'
   images:
   - src: /media/tours/antarktida-ekspress-vozdushnyj-kruiz/itinerary-day-5-enhanced-20261006.webp
     alt: Пуэрто-Наталес
+- excursionRef: excursion_el_calafate_nativo_experience
+  places: []
 - day: 7
   title: Ледник Перито-Морено
   places:
@@ -347,9 +335,9 @@ notes:
 - При необходимости Ada Tours может заменить указанные отели на другие отели той же категории.
 - Порядок экскурсий может меняться при сохранении всей программы тура.
 - Ada Tours не несет ответственности за пропущенные завтраки в отелях при раннем выселении из-за раннего перелета или экскурсии.
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-16'
 sourceUrl: https://brasiltours.ru/chili-argentina
-sourceSnapshot: https://drive.google.com/file/d/1ij6DyIOzE7i2Uly5MmUPpk6DZKEJRsdO/view?usp=drivesdk
+sourceSnapshot: https://docs.google.com/document/d/1CjiOSoQOYw57N_BEWBLto6w4aEU5KJDB/edit
 durationDays: 14
 durationNights: 13
 priceFrom: 10548
@@ -362,10 +350,22 @@ hero:
 routeCountries:
 - country_chile
 - country_argentina
+- country_brazil
 routeDestinations:
 - destination_chile_santyago_de_chili
+- destination_chile_santiago_plaza_de_armas
+- destination_chile_la_moneda_palace
+- destination_chile_santa_lucia_hill
 - destination_chile_valparaiso_i_vinya_del_mar
+- destination_chile_navy_headquarters_valparaiso
 - destination_chile_puerto_natales_torres_del_pajne
+- destination_chile_peschera_milodona
+- destination_chile_vodopad_salto_grande
+- destination_chile_ozero_nordensheld
+- destination_chile_ozero_pehoe
+- destination_chile_rio_serrano
+- destination_chile_lake_toro
+- destination_chile_lake_porteno
 - destination_argentina_el_calafate
 - destination_argentina_ozero_argentino
 - destination_argentina_nacionalnyj_park_los_glasyares
@@ -375,8 +375,11 @@ routeDestinations:
 - destination_argentina_vilya_traful
 - destination_argentina_vilya_la_angostura
 - destination_brazil_iguacu
+- destination_brazil_parque_das_aves
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
+- destination_argentina_plaza_dorrego
+- destination_argentina_plaza_de_mayo
 primaryThemes: ["theme_wildlife","theme_culture"]
 themes: []
 ---

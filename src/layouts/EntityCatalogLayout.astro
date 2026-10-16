@@ -10,6 +10,8 @@ import EditorialStatement from '../components/editorial/EditorialStatement.astro
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogPagination from '../components/catalog/CatalogPagination.astro';
 import TourFilters from '../components/catalog/TourFilters.astro';
+import MultiCountrySelector from '../components/catalog/MultiCountrySelector.astro';
+import MultiCountryRelated from '../components/catalog/MultiCountryRelated.astro';
 import { countryRoute, destinationPath, excursionPath, mainTourCountries, tourPath, themePath, type BreadcrumbItem } from '../lib/routes';
 import { withBase } from '../lib/paths';
 import { vipTourPriceLabel } from '../lib/vip-tours.mjs';
@@ -160,6 +162,7 @@ const listSchema = {
     compactCta={isThemeCountryCatalog}
     compact={p.currentPage > 1 || (variant !== 'global-tours' && variant !== 'global-places')}
   />
+  {variant === 'multi-country-tours' && <MultiCountrySelector />}
   {showTourFilters && <TourFilters countryId={countryContextId} themeId={themeContextId} vip={isVipCatalog} />}
   {navigationLinks.length > 0 && (
     <nav class="catalog-navigation container" aria-label={navigationLabel ?? 'Связанные разделы'}>
@@ -228,6 +231,7 @@ const listSchema = {
     </div>
     <CatalogPagination pagination={p} />
   </div>
+  {kind === 'tour' && !isVipCatalog && themeContextId && <MultiCountryRelated themeId={themeContextId} countryId={countryContextId} currentPath={p.rootPath} />}
 </BaseLayout>
 
 <script>

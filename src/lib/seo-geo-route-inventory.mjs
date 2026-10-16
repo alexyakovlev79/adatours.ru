@@ -1,7 +1,7 @@
 import { buildTourFilterIndex } from './tour-filters.mjs';
 import { buildVipFilterIndex } from './vip-filters.mjs';
 import { buildInterestHub, interestDestinationCatalogPath, interestExcursionCatalogPath, relatedInterestCatalogPath } from './interest-model.mjs';
-import { buildMultiCountryCombinations } from './multi-country-combinations.mjs';
+import { buildMultiCountryCatalog } from './multi-country-catalog.mjs';
 import { isActiveEntity, isArchivedPath } from './archive.mjs';
 
 const data = (entry) => entry?.data ?? entry;
@@ -63,7 +63,6 @@ export function buildSeoGeoCanonicalPaths({ countries = [], destinations = [], t
     if (hub.allExperiences.some((row) => row.kind === 'excursion')) add(interestExcursionCatalogPath(theme));
     if (hub.allRelatedThemes.length) add(relatedInterestCatalogPath(theme));
   }
-  for (const row of buildMultiCountryCombinations(tourRows, (tour) =>
-    mainCountries(tour).map((id) => countryById.get(id)).filter(Boolean))) add(row.path);
+  for (const row of buildMultiCountryCatalog(tourRows, countryRows, themeRows)) add(row.path);
   return routes;
 }

@@ -1,0 +1,156 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - data/media/upload-session-request.json
+  workflow_dispatch:
+  schedule:
+    # December 31 at 21:05 UTC = January 1 at 00:05 Moscow time.
+    - cron: '5 21 31 12 *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  # Finish the current publication; keep subsequent main updates queued.
+  cancel-in-progress: false
+
+env:
+  ASTRO_TELEMETRY_DISABLED: '1'
+  SITE_ORIGIN: https://adatours.ru
+  SITE_BASE: /
+  MEDIA_CDN_ORIGIN: https://img.adatours.ru
+  SOCIAL_PREVIEW_REQUIRED: '1'
+
+jobs:
+  media:
+    name: Verify S3 receipts and enforce no new Git media
+    runs-on: ubuntu-latest
+    env:
+      MEDIA_LEGACY_CUTOFF: b09b6ba01316e888e871eac399d98eb9915d2bf7
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Load frozen Git media tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! git cat-file -e "${MEDIA_LEGACY_CUTOFF}^{tree}" 2>/dev/null; then
+            git fetch --no-tags --filter=blob:none --depth=1 origin "${MEDIA_LEGACY_CUTOFF}"
+          fi
+      - name: Verify no binary media was added to Git
+        run: node scripts/guard-no-new-git-media.mjs
+      - name: Verify every new direct-S3 object is present and matches its receipt
+        run: node scripts/verify-direct-s3-assets.mjs
+
+  build:
+    needs: media
+    runs-on: ubuntu-latest
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Obtain short-lived IAM token for social preview S3 uploads
+        id: social_auth
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${YC_SA_ID:-}" || { echo "::error::Missing YC_MEDIA_SA_ID"; exit 1; }
+          oidc_json="$(curl --fail --silent --show-error --get \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            --data-urlencode "audience=https://github.com/alexyakovlev79" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
+          oidc_token="$(jq -er '.value' <<< "${oidc_json}")"
+          echo "::add-mask::${oidc_token}"
+          iam_json="$(curl --fail --silent --show-error --retry 2 --retry-all-errors --retry-delay 2 --connect-timeout 10 --max-time 30 \
+            -X POST 'https://auth.yandex.cloud/oauth/token' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
+            --data-urlencode "audience=${YC_SA_ID}" \
+            --data-urlencode "subject_token=${oidc_token}" \
+            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          iam_token="$(jq -er '.access_token' <<< "${iam_json}")"
+          echo "::add-mask::${iam_token}"
+          echo "YC_IAM_TOKEN=${iam_token}" >> "${GITHUB_ENV}"
+      - name: Warn when social previews use strict reuse-only mode
+        if: steps.social_auth.outcome == 'failure'
+        run: echo "::warning::Yandex Cloud IAM unavailable; verify only existing S3 social previews; fail build if any is missing."
+      - name: Install, build, and upload Astro site
+        uses: withastro/action@v6
+        with:
+          node-version: 24
+          package-manager: npm@latest
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
+        with:
+          # Allow the ~860 MB static site to finish updating Pages before cancellation.
+          timeout: 1200000
+
+  report:
+    name: Publish deployment result as commit status
+    if: always()
+    needs: [media, build, deploy]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      statuses: write
+    steps:
+      - name: Record media, build and Pages result
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MEDIA_RESULT: ${{ needs.media.result }}
+          BUILD_RESULT: ${{ needs.build.result }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
+        run: |
+          if [[ "$MEDIA_RESULT" == "success" && "$BUILD_RESULT" == "success" && "$DEPLOY_RESULT" == "success" ]]; then
+            status="success"
+            note="S3 verification, Astro build and Pages deploy succeeded"
+          else
+            status="failure"
+            note="S3=$MEDIA_RESULT, build=$BUILD_RESULT, Pages=$DEPLOY_RESULT"
+          fi
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+            -f state="$status" -f context="ada/pages-deploy" -f description="$note" \
+            -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
+  catalog-registries:
+    name: Persist multi-country catalogue registries
+    needs: [media, build, deploy]
+    if: ${{ needs.media.result == 'success' && needs.build.result == 'success' && needs.deploy.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - run: npm install --no-audit --no-fund
+      - name: Recalculate the exact deployed source snapshot
+        run: npm run sync:multi-country
+      - name: Preserve independent editorial state on main and staging
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CATALOG_SOURCE_SHA: ${{ github.sha }}
+        run: node scripts/persist-multi-country-registries.mjs

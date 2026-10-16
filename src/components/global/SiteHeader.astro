@@ -4,7 +4,7 @@ import PrimaryCTA from './PrimaryCTA.astro';
 import SearchTrigger from './SearchTrigger.astro';
 import ContactActions from './ContactActions.astro';
 import MultiCountryMenu from './MultiCountryMenu.astro';
-import { buildMultiCountryCombinations } from '../../lib/multi-country-combinations.mjs';
+import { getMultiCountryCatalog } from '../../lib/multi-country-catalog.ts';
 import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, MICE_NAV_LINKS, NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
 import { countryPath, themePath, mainTourCountries } from '../../lib/routes';
@@ -53,8 +53,9 @@ const dmcChildLinks: NavChild[] = DMC_NAV_LINKS.slice(1).map(({ href, label }) =
 const aboutChildLinks: NavChild[] = ABOUT_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 
 // Build the full index once per static render, from active routes only.
-const multiCountryTours = tourEntries.filter((entry) => mainTourCountries(entry.data).length >= 2);
-const multiCountryRows = buildMultiCountryCombinations(multiCountryTours, (entry) => mainTourCountries(entry.data));
+const multiCountryIndex = await getMultiCountryCatalog();
+const multiCountryTours = multiCountryIndex.find((row) => row.path === '/multi-country/')?.tours ?? [];
+const multiCountryRows = multiCountryIndex.filter((row) => !row.themeId && row.slugs.length);
 const multiCountryCombinations = multiCountryRows.map((row) => ({
   slugs: row.slugs, path: row.path, count: row.tours.length,
 }));

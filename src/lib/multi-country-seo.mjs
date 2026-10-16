@@ -2,10 +2,11 @@
 import { seoCountLabel, seoYearRange } from './seo-meta.mjs';
 import { seoCountryCase } from './seo-grammar.mjs';
 import { formatSeoMoney } from './seo-price-meta.mjs';
+import { tourFilterIntro } from './vip-copy.mjs';
 import { formatMultiCountryNames } from './multi-country-combinations.mjs';
 
-export function multiCountrySeoMetadata({ countries, tours, destinations = [], date = new Date() }) {
-  const nameList = formatMultiCountryNames(countries.map((country) => country.name));
+export function multiCountrySeoMetadata({ countries, tours, destinations = [], theme, date = new Date() }) {
+  const nameList = countries.length ? formatMultiCountryNames(countries.map((country) => country.name)) : 'Туры по нескольким странам';
   const genitiveList = formatMultiCountryNames(countries.map((country) => seoCountryCase(country.id, 'genitive')));
   const prices = tours.map((entry) => entry.data ?? entry)
     .filter((tour) => typeof tour.priceFrom === 'number' && Number.isFinite(tour.priceFrom)
@@ -15,7 +16,7 @@ export function multiCountrySeoMetadata({ countries, tours, destinations = [], d
   const minUsdPrice = prices.length > 0 && prices.every((tour) => tour.currency === 'USD')
     ? Math.min(...prices.map((tour) => Math.round(tour.priceFrom))) : null;
   const priceLabel = minUsdPrice !== null ? 'от ' + formatSeoMoney(minUsdPrice, 'USD') : '';
-  const title = nameList + ': Каталог ' + seoYearRange(date) + ': '
+  const title = nameList + (theme ? ', ' + theme.name : '') + ': Каталог ' + seoYearRange(date) + ': '
     + seoCountLabel(tours.length, ['тур', 'тура', 'туров'])
     + (priceLabel ? ' и цены ' + priceLabel : '') + ' туроператора Ada Tours';
 
@@ -36,9 +37,11 @@ export function multiCountrySeoMetadata({ countries, tours, destinations = [], d
   }
   const placeText = places.length ? 'В программах: ' + formatMultiCountryNames(places.slice(0, 3)) + '. ' : '';
   const description = (priceLabel ? 'Цены туров: ' + priceLabel + '. ' : '')
-    + 'Достопримечательности ' + genitiveList + '. '
+    + (genitiveList ? 'Достопримечательности ' + genitiveList + '. ' : '')
     + placeText + seoCountLabel(tours.length, ['маршрут', 'маршрута', 'маршрутов'])
     + ' с выбранными странами. В отдельных поездках могут быть и другие страны. '
     + 'Даты и отели можно адаптировать.';
-  return { title, description, minUsdPrice };
+  return { title,
+    description: theme ? theme.name + '. ' + tourFilterIntro(theme) + ' ' + description : description,
+    minUsdPrice };
 }

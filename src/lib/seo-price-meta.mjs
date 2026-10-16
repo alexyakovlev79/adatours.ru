@@ -1,4 +1,6 @@
 import { absoluteUrl, logicalPath } from './structured-data.mjs';
+import { buildMultiCountryCatalog } from './multi-country-catalog.mjs';
+const multiCountryPriceCache = new WeakMap();
 import { selectVipTours } from './vip-tours.mjs';
 
 const CURRENCY_PREFIX = { USD: '$', EUR: '€', BRL: 'R$', ARS: 'ARS ' };
@@ -54,7 +56,11 @@ export function collectSeoPagePrices({ records, root, path, groups = [], priceVi
   else if (canonical === '/excursions/') fullSelection = excursions;
   else if (canonical === '/vip/') fullSelection = selectVipTours(tours).entries;
   else if (canonical === '/multi-country/') fullSelection = tours.filter((r) => mainCountries(r).length > 1);
-  else if ((m = canonical.match(/^\/multi-country\/([a-z0-9-]+(?:_[a-z0-9-]+){1,3})\/$/))) {
+  else if (/^\/multi-country\/(?:[a-z0-9_-]+\/)?interests\/[a-z0-9-]+\/$/.test(canonical)) {
+    if (!multiCountryPriceCache.has(records)) multiCountryPriceCache.set(records,
+      new Map(buildMultiCountryCatalog(tours, countries, themes).map((row) => [row.path, row.tours])));
+    fullSelection = multiCountryPriceCache.get(records).get(canonical) ?? [];
+  } else if ((m = canonical.match(/^\/multi-country\/([a-z0-9-]+(?:_[a-z0-9-]+){1,3})\/$/))) {
     // The price belongs to the FULL selection of main route countries, not
     // an optional visit or the first ten cards on a paginated catalogue.
     const ids = m[1].split('_').map((slug) => countryBySlug(slug)?.data.id);

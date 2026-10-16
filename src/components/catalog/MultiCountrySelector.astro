@@ -2,14 +2,16 @@
 import { withBase } from '../../lib/paths';
 import { nextMultiCountryOptions } from '../../lib/multi-country-combinations.mjs';
 
+import { getMultiCountryCatalog } from '../../lib/multi-country-catalog.ts';
+import { multiCountryPickerOptions, multiCountryCatalogPath } from '../../lib/multi-country-catalog.mjs';
+import CatalogFilterMenu from './CatalogFilterMenu.astro';
+
 interface CountryOption { slug: string; name: string; }
-interface CombinationOption { slugs: string[]; path: string; count: number; }
-interface Props {
-  countries: CountryOption[];
-  combinations: CombinationOption[];
-  selected?: string[];
-}
-const { countries, combinations, selected = [] } = Astro.props;
+interface Props { selected?: string[]; themeId?: string; }
+const { selected = [], themeId } = Astro.props;
+const index = await getMultiCountryCatalog();
+const { countries, combinations, interests, allInterestsHref } = multiCountryPickerOptions(index, selected, themeId);
+const themeSlug = interests.find((option) => option.id === themeId)?.slug;
 const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
 const nextOptions = (prefix: string[]): CountryOption[] =>
   nextMultiCountryOptions(combinations, prefix)
@@ -31,6 +33,9 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   data-countries={JSON.stringify(countries)}
   data-combinations={JSON.stringify(combinations.map((row) => row.slugs.join('_')))}
   data-selected={JSON.stringify(selected)}
+  data-theme={themeSlug ?? ''}
+  data-interest-options={JSON.stringify(interests.map((option) => ({ id: option.id, countries: option.countries })))}
+  data-current-root-href={withBase(multiCountryCatalogPath([], themeSlug))}
 >
   <div class="mc-picker__intro">
     <p class="eyebrow">Страны маршрута</p>
@@ -70,11 +75,13 @@ const descriptions = ['Первая страна', 'Вторая страна', 
       </div>
     ))}
   </div>
-  {selected.length > 0 && (
-    <a class="mc-picker__reset" href={withBase('/multi-country/')} data-mc-reset>
+  <div class="mc-picker__interest">
+    <CatalogFilterMenu label="Интерес" placeholder="Выбрать интерес" selected={themeId}
+      options={interests} reset="Все интересы" resetHref={allInterestsHref} context="multi-country" />
+  </div>
+    <a class="mc-picker__reset" href={withBase('/multi-country/')} data-mc-reset hidden={!selected.length && !themeId}>
       Сбросить и показать все мультистрановые туры
     </a>
-  )}
 
 </section>
 
@@ -84,6 +91,8 @@ const descriptions = ['Первая страна', 'Вторая страна', 
 
 <style>
   .mc-picker { padding-block: 0 38px; scroll-margin-top: 100px; }
+  .mc-picker__interest { width: min(100%, 560px); margin-top: 24px; }
+  .mc-picker__reset[hidden] { display: none; }
   .mc-picker__intro { max-width: 700px; }
   .mc-picker__intro .eyebrow { margin-bottom: 8px; }
   .mc-picker__intro h3 {

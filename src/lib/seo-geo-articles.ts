@@ -1,6 +1,7 @@
 import { getCollection } from 'astro:content';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 import { isActiveEntity } from './archive.mjs';
+import { buildMultiCountryCatalog } from './multi-country-catalog.mjs';
 import { buildTourFilterIndex } from './tour-filters.mjs';
 import { buildVipFilterIndex } from './vip-filters.mjs';
 import { countryMembership, themeIds } from './interest-model.mjs';
@@ -33,6 +34,7 @@ async function getData() {
       getCollection('excursions', activeRu),
     ]).then(([tours, countries, themes, destinations, excursions]) => ({
       tours, countries, themes, destinations, excursions,
+      multi: buildMultiCountryCatalog(tours, countries, themes),
       regular: buildTourFilterIndex(tours, countries, themes),
       vip: buildVipFilterIndex(tours, countries, themes),
     }));
@@ -57,50 +59,36 @@ export function seoGeoScope(path, data) {
     ?? path.match(/^\/vip\/(?:[a-z0-9-]+\/)?interests\/([a-z0-9-]+)\//);
   const selectedRegular = regular.find((row) => row.href === path);
   const selectedVip = vip.find((row) => row.href === path);
-  const theme = selectedVip?.theme?.data ?? selectedRegular?.theme?.data
+  const selectedMulti = (data.multi ?? buildMultiCountryCatalog(tours, countries, themes)).find((row) => row.path === path);
+  const theme = selectedMulti?.theme ?? selectedVip?.theme?.data ?? selectedRegular?.theme?.data
     ?? (themeMatch ? themeBySlug.get(themeMatch[1]) : undefined);
   const country = selectedVip?.country?.data ?? selectedRegular?.country?.data
     ?? countryBySlug.get(path.match(/^\/interests\/[a-z0-9-]+\/tours\/([a-z0-9-]+)\/$/)?.[1]
       ?? (countryMatch?.[1] === 'vip' ? '' : countryMatch?.[1]));
 
-  let scopedTours = selectedVip?.entries ?? selectedRegular?.entries ?? [];
+  let scopedTours = selectedMulti?.tours ?? selectedVip?.entries ?? selectedRegular?.entries ?? [];
   let scopedPlaces = destinations;
   let scopedExcursions = excursions;
 
   // On filtered tour catalogues, these counters describe places and excursions
   // actually linked to the complete selected tour set, not all country objects.
-  if (selectedVip || selectedRegular) {
+  if (selectedMulti || selectedVip || selectedRegular) {
     const visited = new Set(scopedTours.flatMap((tour) => tour.data.destinations ?? []));
     const referenced = new Set(scopedTours.flatMap((tour) => [...excursionIdsForTour(tour)]));
     scopedPlaces = destinations.filter((place) => visited.has(place.data.id));
     scopedExcursions = excursions.filter((exc) => referenced.has(exc.data.id));
   }
 
-  if (path === '/multi-country/') scopedTours = tours.filter((tour) =>
-    new Set(tour.data.routeCountries ?? tour.data.countries).size > 1);
-  const multiComboMatch = path.match(/^\/multi-country\/([a-z0-9-]+(?:_[a-z0-9-]+){0,3})\/$/);
-  if (multiComboMatch) {
-    const slugs = multiComboMatch[1].split('_');
-    const ids = slugs.map((slug) => countryBySlug.get(slug)?.id);
-    if (ids.every(Boolean) && new Set(slugs).size === slugs.length) {
-      scopedTours = tours.filter((tour) => ids.every((id) => isMainCountry(tour.data, id))
-        && new Set(tour.data.routeCountries ?? tour.data.countries).size > 1);
-      const visited = new Set(scopedTours.flatMap((tour) => tour.data.destinations ?? []));
-      const refs = new Set(scopedTours.flatMap((tour) => [...excursionIdsForTour(tour)]));
-      scopedPlaces = destinations.filter((place) => visited.has(place.data.id));
-      scopedExcursions = excursions.filter((exc) => refs.has(exc.data.id));
-    }
-  }
   if (path === '/country/' || path === '/places/' || path === '/excursions/' || path === '/interests/') {
     if (!scopedTours.length) scopedTours = tours;
   }
 
-  if (theme && !selectedVip && !selectedRegular) {
+  if (theme && !selectedMulti && !selectedVip && !selectedRegular) {
     scopedTours = tours.filter((tour) => themeIds(tour.data).includes(theme.id));
     scopedPlaces = destinations.filter((place) => place.data.themes.includes(theme.id));
     scopedExcursions = excursions.filter((exc) => exc.data.themes.includes(theme.id));
   }
-  if (country && !selectedVip && !selectedRegular) {
+  if (country && !selectedMulti && !selectedVip && !selectedRegular) {
     scopedTours = tours.filter((tour) => isMainCountry(tour.data, country.id));
   }
   if (country) {
@@ -108,7 +96,7 @@ export function seoGeoScope(path, data) {
     scopedExcursions = scopedExcursions.filter((exc) =>
       countryOfExcursion(exc.data, destinationById) === country.id);
   }
-  if (theme && country && !selectedVip && !selectedRegular) {
+  if (theme && country && !selectedMulti && !selectedVip && !selectedRegular) {
     scopedTours = tours.filter((tour) =>
       themeIds(tour.data).includes(theme.id) && countryMembership(tour.data, country.id) > 0);
   }

@@ -55,6 +55,7 @@ jobs:
           p.write_text(p.read_text().replace('по 10;', 'с общим `CATALOG_PAGE_SIZE` (сейчас 30);').replace('ItemList видимой десятки','ItemList видимой части'))
           p=Path('scripts/check-multi-country-menu.mjs');s=p.read_text().replace("assert.ok(expected.size > 0, 'Expected real multi-country combinations');\n",'').replace("const combinationHtml = readFileSync(join(root, names[0], 'index.html'), 'utf8');", "if (names.length) {\nconst combinationHtml = readFileSync(join(root, names[0], 'index.html'), 'utf8');").replace("console.log('Multi-country menu:","}\nconsole.log('Multi-country menu:");p.write_text(s)
           PY
+          python3 /tmp/catalog-dev/payload/repair.py
           git add src scripts tests docs/workflows
       - uses: actions/setup-node@v6
         with:

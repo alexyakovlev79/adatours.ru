@@ -63,8 +63,8 @@
   "P122": "New Word version changes descriptions only; 13 days and six published tariffs retained.",
   "P111": "New Word version changes descriptions only; 26 days and 13707 USD retained.",
   "materials": "P117 new exact Word snapshot saved; P122/P111 previous Oct14 text snapshots preserved as historical editorial revisions; latest DOCX remains authoritative.",
-  "publicationStatus": "first three deployed; P153 content prepared for Actions",
-  "sheetStatus": "P117 P122 P111 P170 P171 synced and read back; P153 awaiting deployment",
+  "publicationStatus": "deployed",
+  "sheetStatus": "synced and read back",
   "firstThreeDeployment": {
     "contentCommit": "fa44fe99",
     "relationsFixCommit": "6eb930b08b090836c2488f9b94199ebc79e2b9ee",
@@ -77,17 +77,20 @@
     {
       "programKey": "P153",
       "tourId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
-      "result": "16.10.2026: сверены все 18 дней и 17 ночей текущего Word; добавлены 6 тарифов 4★/5★ SGL/DBL/TPL, год заезда, сектор 9 или аналогичный, условия цены/SGL-трансфера и высокогорья. Сохранены фото и ID; дополнены географические связи, альтернативы собор/MALI и платные места не объявлены обязательными. Перелет Уюни–Ла-Пас требует подтверждения включения. Подготовлено к публикации."
+      "result": "16.10.2026: сверены все 18 дней и 17 ночей текущего Word; добавлены 6 тарифов 4★/5★ SGL/DBL/TPL, год заезда, сектор 9 или аналогичный, условия цены/SGL-трансфера и высокогорья. Сохранены фото и ID; дополнены географические связи, альтернативы собор/MALI и платные места не объявлены обязательными. Перелет Уюни–Ла-Пас требует подтверждения включения. Подготовлено к публикации.",
+      "completed": true
     },
     {
       "programKey": "P171",
       "tourId": "tour_peru_bolivia_uyuni_lakes_15_days",
-      "result": "16.10.2026: дополнительный Word Bolivia 2027 сопоставлен с P171; полный извлеченный текст идентичен основному Word Peru 2027. Копия зарегистрирована; второй тур не создается, содержание опубликованной программы сохранено."
+      "result": "16.10.2026: дополнительный Word Bolivia 2027 сопоставлен с P171; полный извлеченный текст идентичен основному Word Peru 2027. Копия зарегистрирована; второй тур не создается, содержание опубликованной программы сохранено.",
+      "completed": true
     },
     {
       "programKey": "P170",
       "tourId": "tour_peru_bolivia_uyuni_12_days",
-      "result": "16.10.2026: дополнительный Word Bolivia 2027 от 12.10 18:40 UTC сопоставлен с P170. В нем «переводчик» вместо «гид» и редакторские отличия; основной Word Peru 2027 от 19:37 UTC более свежий и сохранен. Маршрут, 34 даты и 6 тарифов совпадают. Откат публичной версии к более ранней копии не требуется."
+      "result": "16.10.2026: дополнительный Word Bolivia 2027 от 12.10 18:40 UTC сопоставлен с P170. В нем «переводчик» вместо «гид» и редакторские отличия; основной Word Peru 2027 от 19:37 UTC более свежий и сохранен. Маршрут, 34 даты и 6 тарифов совпадают. Откат публичной версии к более ранней копии не требуется.",
+      "completed": true
     }
   ],
   "sheetCheckpoint": {
@@ -113,5 +116,71 @@
       390
     ],
     "sourceHyperlinksVerified": true
+  },
+  "deploymentAttempts": [
+    {
+      "runId": 38872208050,
+      "attempt": 1,
+      "result": "media_check_failed",
+      "reason": "62 previously uploaded objects returned transient fetch failed; no new media in this batch"
+    },
+    {
+      "runId": 38872208050,
+      "attempt": 2,
+      "result": "relations_index_check_failed",
+      "reason": "P153 global source index had 38 destinations vs 70 in updated MD, entry and compact catalog; fixed in 90f2b578"
+    },
+    {
+      "runId": 38874668209,
+      "attempt": 1,
+      "result": "success"
+    }
+  ],
+  "completion": {
+    "at": "2026-10-16T08:45:18.639748+00:00",
+    "contentCommit": "90f2b578b87f4f714b09a5851acd03ae0d6ffa9c",
+    "runId": 38874668209,
+    "media": "success",
+    "build": "success",
+    "deploy": "success",
+    "pagesRows": [
+      324,
+      379,
+      302,
+      463,
+      1644,
+      1651
+    ],
+    "wordConfirmationRows": [
+      51,
+      106,
+      29,
+      190,
+      389,
+      390
+    ],
+    "remainingCandidates": 0,
+    "sourceTextHashes": {
+      "1CjiOSoQOYw57N_BEWBLto6w4aEU5KJDB": "0ffab813a4f9fd3489bef170f8c17ac036548e263a5a999db5e631f843d7ef8e",
+      "1wxd4Fq4-rEaL2TE50dJMhgNl4EzuJJNX": "b4353021254c34e4c94c78f51f529e8bf07dd4b389dfceef4cb048d79ddf141e",
+      "1-ppkM_nl815BdOJUUHwIsC868DfzI8mJ": "5e63b63f2f5708f30318a71603671549b1c9a4b461215cbb393f081c7506518c",
+      "1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX": "5113e6c01dbc9b9f938ca5cb97166b77e2d1a30b2262a97991a22dc84e569821",
+      "1msC4CsEWXaPWNYTbe1xnDv_-AgdTgsLV": "0a386370b3967b8171e6d05ec946589c42b696247400218d77c441024a9d9f7c",
+      "1iBdizUjv-VcTa8NA4RomlGK-dwqh-SaK": "db7d1cb883c37367209b49ce1704879ac836bd63b3369793fd2ddc2da920cef9",
+      "1FO7BcjDJgArdLqmabhS5L9LW5Y4VmK0i": "db7d1cb883c37367209b49ce1704879ac836bd63b3369793fd2ddc2da920cef9",
+      "1S8O23p3rfd15P5ihSppvW2C-1cYmM57S": "53cab786d5b45f2ef0202a3f38ff291a74f805a7b047e12e7d94876c5a35e789"
+    },
+    "P153": {
+      "days": 18,
+      "nights": 17,
+      "tariffs": 6,
+      "destinations": 70,
+      "routeDestinations": 66,
+      "newDestinations": 0,
+      "mediaChanged": false
+    },
+    "testsPassed": 187,
+    "testsFailed": 0,
+    "relationSourcesVerified": 4
   }
 }

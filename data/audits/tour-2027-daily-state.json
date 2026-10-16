@@ -5,64 +5,14 @@
   "driveRootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
   "inventoryPath": "data/audits/tour-inventory-drive-20261009.json",
   "lastAttempt": {
-    "at": "2026-10-15T17:13:12Z",
-    "kind": "manual_integration_control_scan",
-    "status": "completed_detection_only",
-    "note": "No content or media publication attempted in this control scan."
+    "at": "2026-10-16T08:45:18.639748+00:00",
+    "kind": "targeted_six_word_completion",
+    "status": "deployed_and_sheets_synced",
+    "note": "Only the six known candidates were reviewed; lastCompleteScanAt deliberately remains unchanged."
   },
   "lastCompleteScanAt": "2026-10-15T17:13:12Z",
-  "lastSuccessfulBatchAt": null,
-  "openQueue": [
-    {
-      "programKey": "P117",
-      "driveFileId": "1CjiOSoQOYw57N_BEWBLto6w4aEU5KJDB",
-      "name": "Chile Argentina Deluxe 14d13n 2027 RUS com 20%.docx",
-      "observedModifiedTime": "2026-10-15T13:45:50.525Z",
-      "previousModifiedTime": "2026-09-18T10:21:05.000Z",
-      "reason": "modified_since_inventory",
-      "stage": "sheets_synced",
-      "tourId": "tour_source_chili_argentina",
-      "auditedAt": "2026-10-16",
-      "auditPath": "data/audits/word-tour-updates-20261016.json",
-      "deployRun": 38861687413,
-      "sheetRowsVerified": true
-    },
-    {
-      "programKey": "P153",
-      "driveFileId": "1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX",
-      "name": "5 countries Carnival Champion 18d17n 2027 RUS 500.docx",
-      "observedModifiedTime": "2026-10-12T14:29:36.043Z",
-      "previousModifiedTime": "2026-08-17T00:36:40.605Z",
-      "reason": "modified_since_inventory",
-      "stage": "content_committed_awaiting_deploy",
-      "tourId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
-      "auditPath": "data/audits/word-tour-updates-20261016.json",
-      "contentCommit": "3713d3d7062066f360de8d57ad2d4422e1b274be",
-      "deployRun": 38872208050
-    },
-    {
-      "programKey": "P171",
-      "driveFileId": "1FO7BcjDJgArdLqmabhS5L9LW5Y4VmK0i",
-      "name": "Amazing Peru, Bolivia, Solar de Uyuni and National reservation 2027 15d14n RUS 20%.docx",
-      "observedModifiedTime": "2026-10-12T19:30:44.089Z",
-      "reason": "word_not_in_inventory",
-      "stage": "sheets_synced",
-      "tourId": "tour_peru_bolivia_uyuni_lakes_15_days",
-      "auditPath": "data/audits/word-tour-updates-20261016.json",
-      "sheetRowsVerified": true
-    },
-    {
-      "programKey": "P170",
-      "driveFileId": "1S8O23p3rfd15P5ihSppvW2C-1cYmM57S",
-      "name": "Amazing Peru, Bolivia and Solar de Uyuni 2027 12d11n RUS 20%.docx",
-      "observedModifiedTime": "2026-10-12T18:40:12.623Z",
-      "reason": "word_not_in_inventory",
-      "stage": "sheets_synced",
-      "tourId": "tour_peru_bolivia_uyuni_12_days",
-      "auditPath": "data/audits/word-tour-updates-20261016.json",
-      "sheetRowsVerified": true
-    }
-  ],
+  "lastSuccessfulBatchAt": "2026-10-16T08:45:18.639748+00:00",
+  "openQueue": [],
   "runs": [
     {
       "id": "manual-control-2026-10-15",
@@ -127,8 +77,10 @@
         "P122",
         "P111"
       ],
-      "publicationStatus": "content_commit_pending_deploy",
-      "auditPath": "data/audits/word-tour-updates-20261016.json"
+      "publicationStatus": "deployed",
+      "auditPath": "data/audits/word-tour-updates-20261016.json",
+      "deployRun": 38861687413,
+      "sheetStatus": "synced"
     },
     {
       "id": "manual-six-word-completion-2026-10-16",
@@ -142,18 +94,81 @@
         "P170",
         "P171"
       ],
-      "publicationStatus": "content_committed_awaiting_deploy",
+      "publicationStatus": "deployed",
       "auditPath": "data/audits/word-tour-updates-20261016.json",
-      "contentCommit": "3713d3d7062066f360de8d57ad2d4422e1b274be",
-      "deployRun": 38872208050,
+      "contentCommit": "90f2b578b87f4f714b09a5851acd03ae0d6ffa9c",
+      "deployRun": 38874668209,
       "sheetsSyncedPrograms": [
         "P117",
         "P122",
         "P111",
         "P170",
         "P171"
-      ]
+      ],
+      "sheetStatus": "synced",
+      "finishedAt": "2026-10-16T08:45:18.639748+00:00",
+      "remainingCandidates": 0
     }
   ],
-  "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items."
+  "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items.",
+  "completedQueue": [
+    {
+      "programKey": "P117",
+      "driveFileId": "1CjiOSoQOYw57N_BEWBLto6w4aEU5KJDB",
+      "name": "Chile Argentina Deluxe 14d13n 2027 RUS com 20%.docx",
+      "observedModifiedTime": "2026-10-15T13:45:50.525Z",
+      "previousModifiedTime": "2026-09-18T10:21:05.000Z",
+      "reason": "modified_since_inventory",
+      "stage": "sheets_synced",
+      "tourId": "tour_source_chili_argentina",
+      "auditedAt": "2026-10-16",
+      "auditPath": "data/audits/word-tour-updates-20261016.json",
+      "deployRun": 38874668209,
+      "sheetRowsVerified": true,
+      "contentCommit": "90f2b578b87f4f714b09a5851acd03ae0d6ffa9c",
+      "completedAt": "2026-10-16T08:45:18.639748+00:00"
+    },
+    {
+      "programKey": "P153",
+      "driveFileId": "1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX",
+      "name": "5 countries Carnival Champion 18d17n 2027 RUS 500.docx",
+      "observedModifiedTime": "2026-10-12T14:29:36.043Z",
+      "previousModifiedTime": "2026-08-17T00:36:40.605Z",
+      "reason": "modified_since_inventory",
+      "stage": "sheets_synced",
+      "tourId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+      "auditPath": "data/audits/word-tour-updates-20261016.json",
+      "contentCommit": "90f2b578b87f4f714b09a5851acd03ae0d6ffa9c",
+      "deployRun": 38874668209,
+      "completedAt": "2026-10-16T08:45:18.639748+00:00"
+    },
+    {
+      "programKey": "P171",
+      "driveFileId": "1FO7BcjDJgArdLqmabhS5L9LW5Y4VmK0i",
+      "name": "Amazing Peru, Bolivia, Solar de Uyuni and National reservation 2027 15d14n RUS 20%.docx",
+      "observedModifiedTime": "2026-10-12T19:30:44.089Z",
+      "reason": "word_not_in_inventory",
+      "stage": "sheets_synced",
+      "tourId": "tour_peru_bolivia_uyuni_lakes_15_days",
+      "auditPath": "data/audits/word-tour-updates-20261016.json",
+      "sheetRowsVerified": true,
+      "contentCommit": "90f2b578b87f4f714b09a5851acd03ae0d6ffa9c",
+      "deployRun": 38874668209,
+      "completedAt": "2026-10-16T08:45:18.639748+00:00"
+    },
+    {
+      "programKey": "P170",
+      "driveFileId": "1S8O23p3rfd15P5ihSppvW2C-1cYmM57S",
+      "name": "Amazing Peru, Bolivia and Solar de Uyuni 2027 12d11n RUS 20%.docx",
+      "observedModifiedTime": "2026-10-12T18:40:12.623Z",
+      "reason": "word_not_in_inventory",
+      "stage": "sheets_synced",
+      "tourId": "tour_peru_bolivia_uyuni_12_days",
+      "auditPath": "data/audits/word-tour-updates-20261016.json",
+      "sheetRowsVerified": true,
+      "contentCommit": "90f2b578b87f4f714b09a5851acd03ae0d6ffa9c",
+      "deployRun": 38874668209,
+      "completedAt": "2026-10-16T08:45:18.639748+00:00"
+    }
+  ]
 }

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_danco_island",
+  "stableId": "destination_antarctica_danco_island",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/danco-island/",
+  "sourceFingerprint": "efc57d928f7a28840acfc65ba5451c419dd9d59309c5afc32d2f81c1896185cb",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "island",
+  "external": {
+    "wikidataQid": "Q5215630",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Danco_Island"
+    },
+    "geonamesId": "6631807"
+  },
+  "location": {
+    "latitude": -64.73333,
+    "longitude": -62.61667,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=124080"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "reviewNote": "Опорная точка острова Данко, не бывшей Station O (которая имеет иную долготу). Согласуется с Wikidata и EN Wikipedia до округления.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/danco-island/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "HTTP 200, canonical совпадает, H1 Остров Данко, noindex отсутствует. Текущие MD/entry approved; ID/страна/описание совпадают с определением очереди."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/danco-island.md",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "MD blob a5735ab4f7c97973756648f684c42c7516393e4d; stable ID и география сверены с точной source-index entry."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=124080",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Опорная точка острова Данко, не бывшей Station O (которая имеет иную долготу). Согласуется с Wikidata и EN Wikipedia до округления."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=124080",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Класс объекта установлен по географическому описанию; Антарктида — географическая область, без утверждения суверенной принадлежности."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5215630",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Карточка Q5215630 соответствует Остров Данко; проверены label, описание, P31, P30/P131 и enwiki; спорные P17/территориальные притязания не импортировались."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Danco_Island",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Точная EN-статья; связь enwiki проверена в карточке Wikidata. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=124080",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Опорная точка острова Данко, не бывшей Station O (которая имеет иную долготу). Согласуется с Wikidata и EN Wikipedia до округления."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Danco_Island",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Независимо сверены положение и смысл точки: в точной EN-статье. Опорная точка острова Данко, не бывшей Station O (которая имеет иную долготу). Согласуется с Wikidata и EN Wikipedia до округления."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=124080",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Объект находится в антарктической географической области; country_antarctica используется как существующий stable ID области, а не суверенного государства."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5215630",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "P1566 точной карточки Q5215630 = 6631807. Связь проверена через Wikidata; координаты GeoNames не импортировались автоматически."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Остров Данко",
+      "reason": "Совпали собственное название, класс, контекст MD и источников; Опорная точка острова Данко, не бывшей Station O (которая имеет иную долготу). Согласуется с Wikidata и EN Wikipedia до округления."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "island",
+      "reason": "Именованный тип соответствует MD и внешним источникам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5215630",
+      "reason": "Точная именованная сущность; Совпадают география и класс."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Danco_Island",
+      "reason": "Sitelink, название и географическое описание совпали с выбранной сущностью."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-64.73333, -62.61667; representative",
+      "reason": "Выбран один именованный источник, без усреднения; роль точки указана. Опорная точка острова Данко, не бывшей Station O (которая имеет иную долготу). Согласуется с Wikidata и EN Wikipedia до округления."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Антарктическое положение подтверждено MD и географическим источником."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 94,
+      "selected": "6631807",
+      "reason": "P1566 точного объекта с совпадающим контекстом; независимая проверка самой страницы GeoNames не заявляется."
+    }
+  ]
+}

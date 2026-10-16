@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_paradise_bay",
+  "stableId": "destination_antarctica_paradise_bay",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/paradise-bay/",
+  "sourceFingerprint": "482c05e03a7e662bbb77a34dba41493a395b7710468bda74ab8f7d1b0e619561",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "bay",
+  "external": {
+    "wikidataQid": "Q141643",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Paradise_Harbour"
+    },
+    "geonamesId": "6622894",
+    "osm": {
+      "type": "node",
+      "id": 828810869
+    }
+  },
+  "location": {
+    "latitude": -64.85,
+    "longitude": -62.9,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110496"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "reviewNote": "Выбрана опорная точка UK gazetteer, совпадает с одним из P625. Второй P625 (-64.8167,-62.8667), текущая EN Wikipedia и OSM (-64.9112924,-62.8575924) обозначают другие точки акватории; координаты не усреднялись. Не точка станции Браун.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/paradise-bay/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "HTTP 200, canonical совпадает, H1 Бухта Парадайз, noindex отсутствует. Текущие MD/entry approved; ID/страна/описание совпадают с определением очереди."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/paradise-bay.md",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "MD blob dd97c64a6c95b113f8d0c15ac33a17cb8fac3321; stable ID и география сверены с точной source-index entry."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110496",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Выбрана опорная точка UK gazetteer, совпадает с одним из P625. Второй P625 (-64.8167,-62.8667), текущая EN Wikipedia и OSM (-64.9112924,-62.8575924) обозначают другие точки акватории; координаты не усреднялись. Не точка станции Браун."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110496",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Класс объекта установлен по географическому описанию; Антарктида — географическая область, без утверждения суверенной принадлежности."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q141643",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Карточка Q141643 соответствует Бухта Парадайз; проверены label, описание, P31, P30/P131 и enwiki; спорные P17/территориальные притязания не импортировались."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Paradise_Harbour",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Точная EN-статья; связь enwiki проверена в карточке Wikidata. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110496",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Выбрана опорная точка UK gazetteer, совпадает с одним из P625. Второй P625 (-64.8167,-62.8667), текущая EN Wikipedia и OSM (-64.9112924,-62.8575924) обозначают другие точки акватории; координаты не усреднялись. Не точка станции Браун."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Paradise_Harbour",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Независимо сверены положение и смысл точки: в точной EN-статье. Выбрана опорная точка UK gazetteer, совпадает с одним из P625. Второй P625 (-64.8167,-62.8667), текущая EN Wikipedia и OSM (-64.9112924,-62.8575924) обозначают другие точки акватории; координаты не усреднялись. Не точка станции Браун."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110496",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Объект находится в антарктической географической области; country_antarctica используется как существующий stable ID области, а не суверенного государства."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q141643",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "P1566 точной карточки Q141643 = 6622894. Связь проверена через Wikidata; координаты GeoNames не импортировались автоматически."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/828810869.json",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "API 200: name, тип и wikidata=Q141643 совпадают. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Бухта Парадайз",
+      "reason": "Совпали собственное название, класс, контекст MD и источников; Выбрана опорная точка UK gazetteer, совпадает с одним из P625. Второй P625 (-64.8167,-62.8667), текущая EN Wikipedia и OSM (-64.9112924,-62.8575924) обозначают другие точки акватории; координаты не усреднялись. Не точка станции Браун."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "bay",
+      "reason": "Именованный тип соответствует MD и внешним источникам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q141643",
+      "reason": "Точная именованная сущность; Совпадают география и класс."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Paradise_Harbour",
+      "reason": "Sitelink, название и географическое описание совпали с выбранной сущностью."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-64.85, -62.9; representative",
+      "reason": "Выбран один именованный источник, без усреднения; роль точки указана. Выбрана опорная точка UK gazetteer, совпадает с одним из P625. Второй P625 (-64.8167,-62.8667), текущая EN Wikipedia и OSM (-64.9112924,-62.8575924) обозначают другие точки акватории; координаты не усреднялись. Не точка станции Браун."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Антарктическое положение подтверждено MD и географическим источником."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 94,
+      "selected": "6622894",
+      "reason": "P1566 точного объекта с совпадающим контекстом; независимая проверка самой страницы GeoNames не заявляется."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "node/828810869",
+      "reason": "Прямая API-карточка и точный Wikidata cross-reference совпали."
+    }
+  ]
+}

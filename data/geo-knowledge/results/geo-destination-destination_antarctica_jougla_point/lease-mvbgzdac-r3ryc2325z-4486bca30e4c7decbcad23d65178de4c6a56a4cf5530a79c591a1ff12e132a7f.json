@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_jougla_point",
+  "stableId": "destination_antarctica_jougla_point",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/jougla-point/",
+  "sourceFingerprint": "633d581d187f4fd46d269d0029eb26e0191de6692d2984a653c19529c53dae8c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "headland",
+  "external": {
+    "wikidataQid": "Q881498",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Jougla_Point"
+    },
+    "geonamesId": "6635785"
+  },
+  "location": {
+    "latitude": -64.82639,
+    "longitude": -63.49361,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109556"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "reviewNote": "Выбрана точка UK gazetteer 64°49′35″S 63°29′37″W у западного входа в Alice Creek. Wikidata, ATS и EN Wikipedia дают округленную (-64.8333,-63.5), совпадающую с грубой точкой Гудье; для раздельных объектов оставлена более детальная официальная точка.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/jougla-point/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "HTTP 200, canonical совпадает, H1 Мыс Жугла, noindex отсутствует. Текущие MD/entry approved; ID/страна/описание совпадают с определением очереди."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/jougla-point.md",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "MD blob 32f19207bdfbc0a3a720e881904c0b92a8f0e7b2; stable ID и география сверены с точной source-index entry."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109556",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Выбрана точка UK gazetteer 64°49′35″S 63°29′37″W у западного входа в Alice Creek. Wikidata, ATS и EN Wikipedia дают округленную (-64.8333,-63.5), совпадающую с грубой точкой Гудье; для раздельных объектов оставлена более детальная официальная точка."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109556",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Класс объекта установлен по географическому описанию; Антарктида — географическая область, без утверждения суверенной принадлежности."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q881498",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Карточка Q881498 соответствует Мыс Жугла; проверены label, описание, P31, P30/P131 и enwiki; спорные P17/территориальные притязания не импортировались."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jougla_Point",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Точная EN-статья; связь enwiki проверена в карточке Wikidata. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109556",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Выбрана точка UK gazetteer 64°49′35″S 63°29′37″W у западного входа в Alice Creek. Wikidata, ATS и EN Wikipedia дают округленную (-64.8333,-63.5), совпадающую с грубой точкой Гудье; для раздельных объектов оставлена более детальная официальная точка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.ats.aq/devAS/Ats/Guideline/168cbdd8-56ae-45ad-8682-cdb7196f754e",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Независимо сверены положение и смысл точки: официальное описание соответствующего места. Выбрана точка UK gazetteer 64°49′35″S 63°29′37″W у западного входа в Alice Creek. Wikidata, ATS и EN Wikipedia дают округленную (-64.8333,-63.5), совпадающую с грубой точкой Гудье; для раздельных объектов оставлена более детальная официальная точка."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109556",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Объект находится в антарктической географической области; country_antarctica используется как существующий stable ID области, а не суверенного государства."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q881498",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "P1566 точной карточки Q881498 = 6635785. Связь проверена через Wikidata; координаты GeoNames не импортировались автоматически."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Мыс Жугла",
+      "reason": "Совпали собственное название, класс, контекст MD и источников; Выбрана точка UK gazetteer 64°49′35″S 63°29′37″W у западного входа в Alice Creek. Wikidata, ATS и EN Wikipedia дают округленную (-64.8333,-63.5), совпадающую с грубой точкой Гудье; для раздельных объектов оставлена более детальная официальная точка."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "headland",
+      "reason": "Именованный тип соответствует MD и внешним источникам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q881498",
+      "reason": "Точная именованная сущность; Совпадают география и класс."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Jougla_Point",
+      "reason": "Sitelink, название и географическое описание совпали с выбранной сущностью."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-64.82639, -63.49361; feature_point",
+      "reason": "Выбран один именованный источник, без усреднения; роль точки указана. Выбрана точка UK gazetteer 64°49′35″S 63°29′37″W у западного входа в Alice Creek. Wikidata, ATS и EN Wikipedia дают округленную (-64.8333,-63.5), совпадающую с грубой точкой Гудье; для раздельных объектов оставлена более детальная официальная точка."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Антарктическое положение подтверждено MD и географическим источником."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 94,
+      "selected": "6635785",
+      "reason": "P1566 точного объекта с совпадающим контекстом; независимая проверка самой страницы GeoNames не заявляется."
+    }
+  ]
+}

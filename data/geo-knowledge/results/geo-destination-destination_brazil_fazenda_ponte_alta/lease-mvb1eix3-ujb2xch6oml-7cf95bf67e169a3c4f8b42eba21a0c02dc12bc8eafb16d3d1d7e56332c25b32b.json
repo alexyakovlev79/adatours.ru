@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_fazenda_ponte_alta",
+  "stableId": "destination_brazil_fazenda_ponte_alta",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/fazenda-ponte-alta/",
+  "sourceFingerprint": "0e3ec4234ff4446638e0f6ce8e17d74990248721138103eb3853bf88653a615f",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "entityClass": "historic_coffee_estate",
+  "external": {
+    "wikidataQid": "Q18477413",
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Fazenda_Ponte_Alta_(Barra_do_Pira%C3%AD)"
+    },
+    "officialUrl": "https://pousadapontealta.com.br/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/fazenda-ponte-alta/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTTP GET: 200, canonical совпадает, H1 соответствует сущности, noindex отсутствует. Текущие production MD и source-index entry проверены; stable ID, страна Brazil и approved совпадают."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/fazenda-ponte-alta.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Текущий production MD: countryId country_brazil; назначение объекта сверено с внешними источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q18477413",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Карточка Fazenda Ponte Alta: farm, Barra do Piraí, Brazil, адрес Silas Pereira da Mota 880."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Fazenda_Ponte_Alta_(Barra_do_Pira%C3%AD)",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Точная усадьба в Barra do Piraí; основатель Barão de Mambucaba совпадает с Ada Tours."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://pousadapontealta.com.br/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Официальный сайт самого объекта, история барона Мамбукаба и адрес 880; сайт представляет усадьбу, а не только бронирование."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.turismo.rj.gov.br/cidades/barra-do-pirai/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Правительственный туристический портал независимо подтверждает Fazenda Ponte Alta, адрес 880, Barra do Piraí."
+    },
+    {
+      "field": "location.candidates",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q18477413",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "P625 22°30′4.2167″S 43°47′9.4409″W конфликтует с независимыми записями отеля; location намеренно отсутствует."
+    },
+    {
+      "field": "location.candidates",
+      "sourceUrl": "https://www.travelmyth.ie/Barra-do-Pirai/Hotels/Hotel-Fazenda-Ponte-Alta_tmid9482814",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "В поисковом извлечении источник указывает −22.513396,−43.802402 при том же адресе. Это кандидат для последующей точной проверки, не подтвержденная точка."
+    }
+  ],
+  "alternateNames": [
+    "Fazenda Ponte Alta",
+    "Hotel Fazenda Ponte Alta"
+  ],
+  "reviewNote": "Усадьба идентифицирована по барону Мамбукаба и адресу Silas Pereira da Mota 880, Barra do Piraí. Координаты не назначены: WD/Wikipedia −22.5011713, −43.7859558, независимые гостиничные записи около −22.513396, −43.802402 (примерно 2.2 км). Не усреднять. Уточнить точку главного исторического здания по независимой карте/реестру; не подменять точкой другого одноименного хозяйства."
+}

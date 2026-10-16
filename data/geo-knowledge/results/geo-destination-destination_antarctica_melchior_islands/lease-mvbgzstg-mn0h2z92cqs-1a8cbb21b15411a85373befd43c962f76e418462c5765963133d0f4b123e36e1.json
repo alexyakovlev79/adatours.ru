@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_melchior_islands",
+  "stableId": "destination_antarctica_melchior_islands",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/melchior-islands/",
+  "sourceFingerprint": "914f6b98aef6296eb19f402c3c19a61883ea2272b4ba20fbd045c13ba306d983",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1919137",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Melchior_Islands"
+    },
+    "geonamesId": "6637952"
+  },
+  "location": {
+    "latitude": -64.31667,
+    "longitude": -62.95,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110104"
+  },
+  "alternateNames": [
+    "Melchior Islands"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/melchior-islands/",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Проверено напрямую HTTP 200, конечный URL и canonical совпадают с задачей, H1 совпадает с названием. MD approved и stable ID/source-index entry сверены на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Именованная островная группа Мельхиор в Dallmann Bay архипелага Палмер; не отдельный остров Gamma и не база Melchior."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110104",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Именованная островная группа Мельхиор в Dallmann Bay архипелага Палмер; не отдельный остров Gamma и не база Melchior."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1919137",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Точная карточка Q1919137: совпадают название, тип объекта и антарктическая география. Именованная островная группа Мельхиор в Dallmann Bay архипелага Палмер; не отдельный остров Gamma и не база Melchior."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1919137",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Sitelink enwiki ведет к статье именно выбранного объекта Melchior Islands."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1919137",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "GeoNames ID 6637952 явно указан в карточке Q1919137. Связь подтверждена cross-reference Wikidata; чтение GeoNames не используется как источник координат."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110104",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Выбрана точка группы из UK Gazetteer/SCAR 64°19′S 62°57′W; совпадает с P625. Опорная точка архипелага, не станция или причал."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1919137",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Независимая сверка идентичности точки и положения по P625. Выбрана точка группы из UK Gazetteer/SCAR 64°19′S 62°57′W; совпадает с P625. Опорная точка архипелага, не станция или причал."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1919137",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Объект в антарктическом регионе; country_antarctica — географический узел проекта. Суверенитет отдельного государства не утверждается."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1919137",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Английское название точной карточки выбранного объекта."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Melchior Islands",
+      "reason": "Проверено напрямую HTTP 200, конечный URL и canonical совпадают с задачей, H1 совпадает с названием. MD approved и stable ID/source-index entry сверены на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Именованная островная группа Мельхиор в Dallmann Bay архипелага Палмер; не отдельный остров Gamma и не база Melchior."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1919137",
+      "reason": "Точная карточка Q1919137: совпадают название, тип объекта и антарктическая география. Именованная островная группа Мельхиор в Dallmann Bay архипелага Палмер; не отдельный остров Gamma и не база Melchior."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Melchior_Islands",
+      "reason": "Sitelink enwiki ведет к статье именно выбранного объекта Melchior Islands."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "6637952",
+      "reason": "GeoNames ID 6637952 явно указан в карточке Q1919137. Связь подтверждена cross-reference Wikidata; чтение GeoNames не используется как источник координат."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-64.31667, -62.95 (representative)",
+      "reason": "Выбрана точка группы из UK Gazetteer/SCAR 64°19′S 62°57′W; совпадает с P625. Опорная точка архипелага, не станция или причал."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Объект в антарктическом регионе; country_antarctica — географический узел проекта. Суверенитет отдельного государства не утверждается."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Melchior Islands",
+      "reason": "Английское название точной карточки выбранного объекта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Именованная островная группа Мельхиор в Dallmann Bay архипелага Палмер; не отдельный остров Gamma и не база Melchior. Выбрана точка группы из UK Gazetteer/SCAR 64°19′S 62°57′W; совпадает с P625. Опорная точка архипелага, не станция или причал."
+}

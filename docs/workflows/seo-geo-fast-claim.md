@@ -1,4 +1,4 @@
-# Ada Tours — быстрый атомарный резерв трех SEO/GEO-статей
+# Ada Tours — быстрый атомарный резерв пяти SEO/GEO-статей
 
 Версия 1.0, 16.10.2026. Дополнение к разделу 8 `docs/workflows/seo-geo-registry.md`, а не самостоятельная очередь.
 
@@ -6,10 +6,10 @@
 
 Резервирование — отдельная операция от написания статей и публикации. **К работе над статьей приступать только после результата `status: reserved` с `commit`**. При `status: empty` работа закончена; при ошибке нельзя считать URL занятыми. При `previousWork: draft` после резервирования открыть только точный существующий `articlePath` и переиспользовать полный `approved` MD, если он уже готов; это не повод писать его снова.
 
-Реестр остается источником порядка, `claims.json` — блокировок; код не создает дополнительного кеша или индекса, который мог бы устареть. Срок резерва — 60 минут; продление и завершение статьи — по основному §8. При CAS-конфликте внутри этого же вызова автоматически читается новый HEAD, максимум два повтора, без force push. Если `functions.exec` или GitHub Git Data действия недоступны, использовать эквивалентную атомарную процедуру §8.1, а не раздельные незащищенные `update_file`.
+Реестр остается источником порядка, `claims.json` — блокировок; код не создает дополнительного кеша или индекса, который мог бы устареть. Срок резерва — 90 минут; продление и завершение статьи — по основному §8. При CAS-конфликте внутри этого же вызова автоматически читается новый HEAD, максимум два повтора, без force push. Если `functions.exec` или GitHub Git Data действия недоступны, использовать эквивалентную атомарную процедуру §8.1, а не раздельные незащищенные `update_file`.
 
 ```javascript
-async function fastClaimSeoTriple({ dryRun = false } = {}) {
+async function fastClaimSeoBatch({ dryRun = false } = {}) {
   const repo = "alexyakovlev79/adatours.ru";
   const branch = "seo-geo/staging";
   const api = `https://api.github.com/repos/${repo}`;
@@ -50,12 +50,12 @@ async function fastClaimSeoTriple({ dryRun = false } = {}) {
       (a.record.work === "draft" ? 0 : 1) - (b.record.work === "draft" ? 0 : 1) ||
       a.record.order - b.record.order
     );
-    const picked = possible.slice(0, 3);
+    const picked = possible.slice(0, 5);
     if (!picked.length) return { status: "empty", head, elapsedMs: Date.now() - begun };
     const selected = picked.map(({ record }) => ({ order: record.order, url: record.url, previousWork: record.work }));
     if (dryRun) return { status: "dry_run", head, selected, elapsedMs: Date.now() - begun };
     const stamp = new Date(now).toISOString();
-    const expiresAt = new Date(now + 60 * 60 * 1000).toISOString();
+    const expiresAt = new Date(now + 90 * 60 * 1000).toISOString();
     const changed = new Set();
     for (const { record, phaseIndex } of picked) {
       const previousClaim = claimMap[record.url];
@@ -100,7 +100,7 @@ async function fastClaimSeoTriple({ dryRun = false } = {}) {
   }
 }
 
-text(JSON.stringify(await fastClaimSeoTriple()));
+text(JSON.stringify(await fastClaimSeoBatch()));
 ```
 
-Для диагностики допустим **только без записи** вариант `await fastClaimSeoTriple({dryRun:true})`. Не включать `dryRun` в реальном запросе «пиши SEO». Показатель `elapsedMs` — время инструментального захвата, а не время размышления модели или подготовки статьи.
+Для диагностики допустим **только без записи** вариант `await fastClaimSeoBatch({dryRun:true})`. Не включать `dryRun` в реальном запросе «пиши SEO». Показатель `elapsedMs` — время инструментального захвата, а не время размышления модели или подготовки статьи.

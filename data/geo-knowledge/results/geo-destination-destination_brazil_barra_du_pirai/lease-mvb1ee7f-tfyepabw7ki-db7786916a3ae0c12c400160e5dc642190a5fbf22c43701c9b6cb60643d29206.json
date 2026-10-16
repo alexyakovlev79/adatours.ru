@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_barra_du_pirai",
+  "stableId": "destination_brazil_barra_du_pirai",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/barra-do-pirai/",
+  "sourceFingerprint": "6a8061404a523ca77eccc6f7ba8ad58cc9ba4561ed9125577722171f90141d0e",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q22064937",
+    "geonamesId": "3470691"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/barra-do-pirai/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямая HTTP-проверка urllib: 200, canonical совпадает с целевым URL; опубликованная страница и актуальный approved MD имеют нужный stable ID."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/barra-do-pirai.md",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Актуальный MD: countryId=country_brazil; stable ID, имя, тип и статус approved сверены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22064937",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Human settlement, Brazil, within Barra do Piraí municipality; GeoNames 3470691."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3470691/barra-do-pirai.html",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "PPL в штате Rio de Janeiro, муниципалитет 3300308; именно населённый пункт."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3470691/barra-do-pirai.html",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Опорная точка населённого пункта -22.47000,-43.82556; не центроид муниципального полигона."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/338515526.json",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Независимая картографическая сверка: place=town, Barra do Piraí, -22.4703403,-43.8263256; около 87 м от GeoNames. OSM указывает source=IBGE; новая геодезическая съёмка не утверждается. Координаты не усреднялись."
+    }
+  ],
+  "entityClass": "settlement",
+  "alternateNames": [
+    "Barra do Piraí"
+  ],
+  "location": {
+    "latitude": -22.47,
+    "longitude": -43.82556,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3470691/barra-do-pirai.html"
+  },
+  "reviewNote": "Идентичность города: Q22064937. Муниципалитет Q1750175 и GeoNames 6322005 не присвоены. OSM 338515526 подтверждает городскую точку, но его тег wikidata=Q1750175 относится к муниципалитету и не перенесён."
+}

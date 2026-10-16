@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_san_kristobal",
+  "stableId": "destination_bolivia_san_kristobal",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/san-cristobal/",
+  "sourceFingerprint": "dd0923c86934de6607a6a48c43f936c970a4346d1ab4b757679d54750921383e",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "village",
+  "external": {
+    "wikidataQid": "Q2219402",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/San_Crist%C3%B3bal_de_L%C3%ADpez"
+    }
+  },
+  "location": {
+    "latitude": -21.1538888889,
+    "longitude": -67.1658333333,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2219402"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/san-cristobal/",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прямая HTTP-проверка: 200; H1 совпадает с названием, canonical точно совпадает, noindex отсутствует. Поселение San Cristóbal de Lípez в муниципалитете Colcha K, Nor Lípez, Потоси, на высокогорном маршруте от Уюни. Не шахта и не квартал в городе Потоси."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/san-cristobal.md",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прочитаны текущие MD и source-index entry; stable ID, status: approved, country_bolivia и смысл страницы совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2219402",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Поселение San Cristóbal de Lípez в муниципалитете Colcha K, Nor Lípez, Потоси, на высокогорном маршруте от Уюни. Не шахта и не квартал в городе Потоси."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2219402",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Поселение San Cristóbal de Lípez в муниципалитете Colcha K, Nor Lípez, Потоси, на высокогорном маршруте от Уюни. Не шахта и не квартал в городе Потоси."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2219402",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Точка поселения 21°09′14″S 67°09′57″W совпадает в Wikipedia и Wikidata; не координаты горнодобывающего карьера."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Crist%C3%B3bal_de_L%C3%ADpez",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географическая сверка. Точка поселения 21°09′14″S 67°09′57″W совпадает в Wikipedia и Wikidata; не координаты горнодобывающего карьера."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2219402",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географические источники относят объект к Боливии; совпадает с countryId MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2219402",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Поселение San Cristóbal de Lípez в муниципалитете Colcha K, Nor Lípez, Потоси, на высокогорном маршруте от Уюни. Не шахта и не квартал в городе Потоси."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Crist%C3%B3bal_de_L%C3%ADpez",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Точная статья о выбранном географическом объекте. Поселение San Cristóbal de Lípez в муниципалитете Colcha K, Nor Lípez, Потоси, на высокогорном маршруте от Уюни. Не шахта и не квартал в городе Потоси."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Поселение San Cristóbal de Lípez в муниципалитете Colcha K, Nor Lípez, Потоси, на высокогорном маршруте от Уюни. Не шахта и не квартал в городе Потоси."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "reason": "Поселение San Cristóbal de Lípez в муниципалитете Colcha K, Nor Lípez, Потоси, на высокогорном маршруте от Уюни. Не шахта и не квартал в городе Потоси.",
+      "selected": "village"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Точка поселения 21°09′14″S 67°09′57″W совпадает в Wikipedia и Wikidata; не координаты горнодобывающего карьера.",
+      "selected": "-21.1538888889, -67.1658333333"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "Проверенный countryId и внешний источник согласованы.",
+      "selected": "country_bolivia"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Поселение San Cristóbal de Lípez в муниципалитете Colcha K, Nor Lípez, Потоси, на высокогорном маршруте от Уюни. Не шахта и не квартал в городе Потоси.",
+      "selected": "Q2219402"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Поселение San Cristóbal de Lípez в муниципалитете Colcha K, Nor Lípez, Потоси, на высокогорном маршруте от Уюни. Не шахта и не квартал в городе Потоси.",
+      "selected": "https://es.wikipedia.org/wiki/San_Crist%C3%B3bal_de_L%C3%ADpez"
+    }
+  ],
+  "reviewNote": null
+}

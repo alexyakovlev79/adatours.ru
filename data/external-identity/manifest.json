@@ -329,7 +329,7 @@
     {
       "table": "adatours-com-correspondences",
       "original_sheet": "adatours.com: подтверждённые соответствия и проверки",
-      "row_count": 2160,
+      "row_count": 2343,
       "json": "adatours-com-correspondences.json",
       "csv": "adatours-com-correspondences.csv",
       "columns": [
@@ -346,10 +346,10 @@
         "notes"
       ],
       "sha256": {
-        "json": "2eb344b02fcf9536263c9673a0339ded888d8ff293d4ef6ec24dd19dfae34465",
-        "csv": "86f246f934272f487959b54ab51b3318cddceb810e3a9bacb21bd5598a6c0731"
+        "json": "fff83f38b6416768decb1d56580c16d684d4983cf2c4ff389e79561f8edcc76b",
+        "csv": "70f7057bd29d1cc071ae9b414347e410a24ac2a332bb5aad615e9eaeb68807a0"
       },
-      "updated_at": "2026-10-16T15:43:12.044Z"
+      "updated_at": "2026-10-16T16:36:32.640Z"
     }
   ],
   "index": {
@@ -483,12 +483,12 @@
     "step1_confirmed_geography": 10,
     "coffee_related_checked": 50,
     "coffee_confirmed_programmes": 8,
-    "record_count": 2260,
+    "record_count": 2343,
     "confirmed_exact": 331,
-    "unconfirmed_exact": 1929,
+    "unconfirmed_exact": 2012,
     "next": "adatours-com-identity-045",
     "report": "adatours-com-identity-044.json",
-    "note": "Batch 043 inserted in frozen order. Saved 044 and 046 retained. Cursor advanced to 2200. No new confirmed exact EN catalogue equivalences; no Schema.org changes."
+    "note": "Batch 049 complete with 33 new keys and 17 reused from preexisting 050 evidence. Batch 050 overlaps 049 on 17 keys and needs 17 missing frozen keys reconciled. Contiguous cursor unchanged. Schema.org unchanged."
   },
   "adatours_com_identity_pending_sync": {
     "batch_id": "adatours-com-identity-011",
@@ -527,6 +527,21 @@
       "queue_and_crosswalk_integrated": true,
       "contiguous_cursor": 2100,
       "registered_at": "2026-10-16T15:49:15.169Z"
+    }
+  ],
+  "adatours_com_identity_completed_out_of_order": [
+    {
+      "batch_id": "adatours-com-identity-049",
+      "report": "adatours-com-identity-049.json",
+      "positions": "2401–2450",
+      "checked_at": "2026-10-16T16:29:26.883Z",
+      "integrated_at": "2026-10-16T16:36:32.640Z",
+      "confirmed_exact": 0,
+      "newly_recorded": 33,
+      "reused_from_batch_050": 17,
+      "record_count_after": 2343,
+      "contiguous_cursor": 2200,
+      "downstream_050_reconciliation_pending": 17
     }
   ]
 }

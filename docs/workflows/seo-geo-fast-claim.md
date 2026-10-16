@@ -1,12 +1,14 @@
 # Ada Tours — быстрый атомарный резерв пяти SEO/GEO-статей
 
-Версия 1.3 · 16.10.2026. Рабочий код для команды **«пиши SEO»**. Использовать **один вызов `functions.exec`** вместо последовательных ручных проверок.
+Версия 1.4 · 16.10.2026. Рабочий код для команды **«пиши SEO»**. Запускать одним вызовом `functions.exec`.
 
-1. Фазы 01–04 (277 уже опубликованных страниц) в обычном случае вообще не загружаются: сравниваются только четыре закрепленных blob SHA с метаданными каталога на текущем SHA `seo-geo/staging`. Если содержимое фазы изменилось, она автоматически вернется в отбор, чтобы новые страницы не потерялись.
-2. Затем просматривается только `05-tours.json`. При менее чем пяти свободных `draft`/`queued` заданиях остаток добирается из `06-places.json` и `07-excursions.json` по очереди. Каждая новая пятерка снова начинает с первого доступного этапа. Внутри фазы свободные/просроченные `draft` приоритетнее `queued`; `prepared` и `published` не перехватываются.
-3. Ровно одно атомарное резервирование: общий Git tree, один commit и CAS-обновление staging. Пишущий чат не проверяет `main`, Sheets, Actions и другие чаты до захвата. Не перезаписывать чужие резервы, не делать force. Срок — 90 минут, пакет — до 5 URL. При сбое максимум два повтора; если GitHub успел принять запись до ошибки ответа, собственные токены подтверждаются по свежему `claims.json`.
-4. Предыдущие редакторские заметки сохраняются, но длинные служебные отметки о каждом резервировании больше не дописываются в `record.note`: информация уже есть в `claims.json` и истории Git. Это предотвращает постепенное разрастание фазовых JSON. После `status: reserved` немедленно писать статью 1/5; для восстановленного `draft` переиспользовать готовый `approved` MD при наличии.
-5. При публикации `main` меняет только мастер-чат. Полные массивы JSON не выводятся в разговор. Пример ниже запускается без `dryRun`; для диагностики поменять только последнюю строку на `text(JSON.stringify(await fastClaimSeoBatch({dryRun:true})))`.
+Вначале на одном SHA staging читаются `claims.json`, компактный каталог blob SHA и этап 05. Этапы 01–04 пропускаются при неизмененных подтвержденных SHA; при изменении читаются и вновь участвуют в очереди. Если на этапе 05 осталось меньше пяти свободных задач, сразу добрать их из 06, затем 07. **Не ждать чужих резервов.** Внутри этапа `draft` без чужой действующей аренды имеет приоритет перед `queued`. Каждый новый запуск снова начинает с ранней доступной фазы.
+
+**Быстрое резервирование:** одна запись **только `data/seo-geo/claims.json`** через `GitHub.update_file` с ожидаемым blob SHA этого файла. Не переписывать мегабайтный `05-tours.json`, не делать отдельные `create_tree`/`create_commit`/`update_ref`: обычные коммиты других авторов не должны конфликтовать с самим резервом. При изменении `claims.json` повторить чтение и выбор не более двух раз. Для неопределенного ответа проверить собственные токены на удаленной ветке, не резервировать вслепую.
+
+`work: queued` с **собственным действующим claim** уже означает «Пишется». При резерве менять статус в фазовом JSON не нужно; при готовой статье одним CAS content-коммитом записать `approved` MD, `work: prepared`, `articlePath` и снять **только свой claim**. Старые чаты с одновременным переводом `draft` и записью claim остаются совместимыми. Claims другого владельца не изменять; отдельную ветку или новую систему резервов не создавать.
+
+Пакет: **до пяти статей**. Аренда каждого URL: **90 минут**, с продлением во время длительного написания; общего ограничения на время подготовки пяти статей нет. После подтвержденного `reserved` немедленно писать первую статью. Проверка Google Sheets, `main`, Actions, исторических коммитов и соседних статей в захват не входит. При `Too many requests` не считать резерв успешным, а повторить только быстрый вызов после восстановления доступа.
 
 ```javascript
 function selectSeoRows(file, claims, now, limit) {
@@ -49,21 +51,23 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
       const f = (await tools.mcp__GitHub__fetch_file({
         repository_full_name: repository, path, ref: head
       })).result;
-      return JSON.parse(f.content || (await tools.mcp__GitHub__fetch_blob({
+      const parsed = JSON.parse(f.content || (await tools.mcp__GitHub__fetch_blob({
         repository_full_name: repository, blob_sha: f.sha
       })).result.content);
+      if (path === "data/seo-geo/claims.json")
+        Object.defineProperty(parsed, "__blobSha", {value: f.sha, enumerable: false});
+      return parsed;
     };
-    const [commitResponse, claimFile, directory, phase05] = await Promise.all([
-      tools.mcp__GitHub__fetch({ url: `${api}/git/commits/${head}` }),
+    const [claimFile, directory, phase05] = await Promise.all([
       readJson("data/seo-geo/claims.json"),
       tools.mcp__GitHub__fetch({ url: `${api}/contents/data/seo-geo/registry?ref=${head}` }),
       readJson(registryPath("05-tours"))
     ]);
-    const baseTree = JSON.parse(commitResponse.result.content).tree.sha;
+    if (claimFile.claimTimeoutMinutes !== 90 || claimFile.writerBatchSize !== 5)
+      throw new Error("SEO/GEO staging settings must be 5 articles / 90 minutes");
     const fileShas = new Map(JSON.parse(directory.result.content).map(row => [row.name, row.sha]));
     const now = Date.now();
     const picked = [];
-    const altered = new Map();
     const checkedPhases = [];
     const skippedPublished = [];
     const size = 5;
@@ -80,7 +84,6 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
       checkedPhases.push(phase);
       const candidates = selectSeoRows(file, claimFile.claims, now, size - picked.length);
       if (!candidates.length) continue;
-      altered.set(name, file);
       for (const record of candidates) picked.push({record, phase});
     }
     if (!picked.length) return {
@@ -99,53 +102,37 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
     const expiresAt = new Date(now + 90*60*1000).toISOString();
     for (const {record} of picked) {
       const old = claimFile.claims[record.url];
-      record.work = "draft";
-      // Existing editor notes remain untouched; reservation audit lives in
-      // claims.json and the atomic Git commit, not in repeated note appends.
+      // Ownership is recorded in claims; work stays queued until prepared.
       claimFile.claims[record.url] = {
         ownerId,batchId,order:record.order,claimedAt:stamp,
         lastHeartbeatAt:stamp,expiresAt,generation:(old?.generation||0)+1
       };
     }
-    const elements = [...altered].map(([name,file]) => ({
-      path:registryPath(name),mode:"100644",type:"blob",
-      content:JSON.stringify(file,null,2)+"\n"
-    }));
-    elements.push({
-      path:"data/seo-geo/claims.json",mode:"100644",type:"blob",
-      content:JSON.stringify(claimFile,null,2)+"\n"
-    });
-    const tree=(await tools.mcp__GitHub__create_tree({
-      repository_full_name:repository,base_tree_sha:baseTree,tree_elements:elements
-    })).result.sha;
-    const commit=(await tools.mcp__GitHub__create_commit({
-      repository_full_name:repository,tree_sha:tree,parent_sha:head,
-      message:`seo: reserve batch ${selected.map(x=>x.order).join("-")}`
-    })).result.sha;
     try {
-      const updated=await tools.mcp__GitHub__update_ref({
-        repository_full_name:repository,branch_name:branch,sha:commit,
-        expected_sha:head,force:false
-      });
-      if(updated.result.success===false) throw new Error("CAS update rejected");
-      return {status:"reserved",commit,selected,checkedPhases,elapsedMs:Date.now()-begun};
+      const written = (await tools.mcp__GitHub__update_file({
+        repository_full_name: repository, path: "data/seo-geo/claims.json",
+        branch, sha: claimFile.__blobSha,
+        content: JSON.stringify(claimFile, null, 2) + "\n",
+        message: `seo: reserve ${selected.map(x => x.order).join("-")} (claims CAS)`
+      })).result;
+      if (!written.commit_sha) throw new Error("No commit SHA returned");
+      return {status:"reserved",commit:written.commit_sha,selected,
+        checkedPhases,skippedPublished,elapsedMs:Date.now()-begun};
     } catch (error) {
-      const observed = await getHead();
-      if (observed === commit) return {
-        status:"reserved",commit,selected,checkedPhases,elapsedMs:Date.now()-begun
-      };
-      if (observed !== head) {
-        const f=(await tools.mcp__GitHub__fetch_file({
-          repository_full_name:repository,path:"data/seo-geo/claims.json",ref:observed
-        })).result;
-        const observedClaims=JSON.parse(f.content||(await tools.mcp__GitHub__fetch_blob({
-          repository_full_name:repository,blob_sha:f.sha
-        })).result.content).claims;
-        if (selected.every(s=>observedClaims[s.url]?.ownerId === ownerId))
-          return {status:"reserved",commit,selected,verifiedAtHead:observed,
-            checkedPhases,elapsedMs:Date.now()-begun};
-      }
-      if (attempt===2) throw new Error(`CAS conflict after 3 attempts: ${String(error)}`);
+      const observedHead = await getHead();
+      const f = (await tools.mcp__GitHub__fetch_file({
+        repository_full_name: repository, path:"data/seo-geo/claims.json",ref:observedHead
+      })).result;
+      const latest = JSON.parse(f.content || (await tools.mcp__GitHub__fetch_blob({
+        repository_full_name:repository,blob_sha:f.sha
+      })).result.content).claims;
+      if (selected.every(x => latest[x.url]?.ownerId === ownerId &&
+        latest[x.url]?.batchId === batchId))
+        return {status:"reserved",verifiedAtHead:observedHead,selected,
+          checkedPhases,skippedPublished,elapsedMs:Date.now()-begun};
+      if (/too many requests|rate limit|resource.exhausted/i.test(String(error)))
+        throw error;
+      if (attempt === 2) throw new Error(`Claim SHA contention: ${String(error)}`);
     }
   }
 }
@@ -153,4 +140,4 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
 text(JSON.stringify(await fastClaimSeoBatch()));
 ```
 
-При выводе `elapsedMs` показывает только фактическое время инструментального резервирования. GitHub может отвечать дольше нескольких секунд при активной конкуренции; обещанного жесткого лимита на 2 секунды здесь нет.
+Для диагностики без записи использовать `fastClaimSeoBatch({dryRun:true})` вместо обычного вызова. `selected[].phase` и `checkedPhases` показывают этапы, `elapsedMs` — только инструментальное время.

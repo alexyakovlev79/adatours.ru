@@ -61,12 +61,13 @@ jobs:
 
       - name: Obtain short-lived IAM token for social preview S3 uploads
         id: social_auth
+        timeout-minutes: 3
         continue-on-error: true
         shell: bash
         run: |
           set -euo pipefail
           test -n "${YC_SA_ID:-}" || { echo "::error::Missing YC_MEDIA_SA_ID"; exit 1; }
-          oidc_json="$(curl --fail --silent --show-error --get \
+          oidc_json="$(curl --fail --silent --show-error --connect-timeout 10 --max-time 30 --retry 1 --retry-delay 2 --get \
             -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
             --data-urlencode "audience=https://github.com/alexyakovlev79" \
             "${ACTIONS_ID_TOKEN_REQUEST_URL}")"

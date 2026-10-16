@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_chile",
+  "stableId": "country_chile",
+  "kind": "country",
+  "canonicalPath": "/chile/",
+  "sourceFingerprint": "355e87077002c864d18742dfa99376630b06d81b86b9ad48f0a5534ce31d7add",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign state",
+  "alternateNames": [
+    "Chile",
+    "Republic of Chile",
+    "República de Chile"
+  ],
+  "external": {
+    "wikidataQid": "Q298",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Chile"
+    },
+    "geonamesId": "3895114",
+    "osm": {
+      "type": "relation",
+      "id": 167454
+    }
+  },
+  "relationships": [],
+  "confidence": "high",
+  "reviewNote": "Сопоставлена страна Чили, включая островные территории, не отдельный город/регион. Не переносить Dependencies: Antarctica из GeoNames как утверждение о принадлежности всего континента Чили. Координаты расходятся: Wikidata P625 −33,−71; GeoNames −30,−71; English Wikipedia −34,−71. P5140 обозначает отдельную точку географического центра; location опущен, без усреднения. gob.cl вернул HTTP 403, officialUrl не включен.",
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямое HTTP-открытие: 200, без смены URL; H1 совпадает с названием, canonical совпадает с этим URL; robots=index,follow."
+    },
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/countries/chile.md",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Текущий main: country_chile, status=approved; slug и contentPath совпадают с source-index entry. Blob 7383936a41ce28d06ff2ab18df0fd0fa85b15760."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q298",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Точная географическая сущность Q298; название, территория и класс sovereign state соответствуют странице сайта."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q298",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "P31: sovereign state/country; паспорт страны целиком."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q298",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Названия проверены по меткам/официальным именам этой сущности и точной странице; другие города/исторические образования исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chile",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Открыта точная статья об этой территории/стране; не страница неоднозначностей и не отдельный город."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3895114/republic-of-chile.html",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямое открытие HTTP 200: ID 3895114, Republic of Chile, A.PCLI Independent political entity. Сверено с P1566 Q298."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/167454",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Открыта OSM relation 167454: Chile, type=boundary, wikidata=Q298, wikipedia=es:Chile; сверено с P402 Q298."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q298",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "P625: −33,−71, тогда как English Wikipedia дает −34,−71. P5140 — отдельная точка. Location не включен."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://www.geonames.org/3895114/republic-of-chile.html",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Проверенные координаты GeoNames: −30,−71. Несогласованные/не подтвержденные независимо точки не усреднять."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chile",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Координатный заголовок открыт и сопоставлен с Wikidata/GeoNames; причины исключения location сохранены в reviewNote."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/chile/",
+      "https://www.wikidata.org/wiki/Q298",
+      "https://en.wikipedia.org/wiki/Chile",
+      "https://www.geonames.org/3895114/republic-of-chile.html",
+      "https://www.openstreetmap.org/relation/167454"
+    ],
+    "findings": [
+      "Точные stable ID, канонический URL и активный опубликованный HTML подтверждены.",
+      "QID, GeoNames и OSM согласованы по имени, территории и классу объекта.",
+      "Location отложен: независимая проверка роли точки не завершена. Готовы только подтвержденные поля."
+    ]
+  }
+}

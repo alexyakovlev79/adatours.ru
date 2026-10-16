@@ -31,3 +31,27 @@ test('pre-approved English sameAs is preserved and government URL excluded',()=>
  assert.deepEqual(n.sameAs,['https://adatours.com/brazil/','https://www.wikidata.org/wiki/Q155']);
  assert.ok(n.subjectOf.some(x=>x.url==='https://en.wikipedia.org/wiki/Brazil'));
 });
+
+const finalCountryIds = ['country_french_guiana','country_chile','country_ecuador','country_el_salvador'];
+for(const id of finalCountryIds) test('final verified GEO country passport '+id,()=>{
+ const passport=JSON.parse(readFileSync('data/geo-knowledge/entities/'+id+'.json','utf8'));
+ const record={kind:'country',path:passport.canonicalPath,archived:false,
+   data:{id:passport.stableId,slug:passport.canonicalPath.split('/')[1],name:id,status:'approved',summary:'Путешествия'}};
+ const graph=buildStructuredData({root,organization,records:[record],
+   geoKnowledge:new Map([[id,passport]]),
+   page:{path:record.path,url:new URL(record.path,root).href,title:'Страна',description:'Путешествия',lang:'ru'}});
+ const nodes=graph['@graph'].filter(node=>node['@id']===new URL(record.path,root).href+'#country');
+ assert.equal(nodes.length,1);
+ const n=nodes[0];
+ assert.ok(n.sameAs.includes('https://www.wikidata.org/wiki/'+passport.external.wikidataQid));
+ assert.ok(n.identifier.some(x=>x.propertyID==='GeoNames'&&x.value===passport.external.geonamesId));
+ assert.equal(n.hasMap,'https://www.openstreetmap.org/'+passport.external.osm.type+'/'+passport.external.osm.id);
+ assert.equal(n.subjectOf.length,Object.keys(passport.external.wikipedia||{}).length);
+ assert.equal(n.geo,undefined,'Unverified coordinate candidates are never emitted');
+ assert.ok(!n.sameAs.includes(passport.external.officialUrl),'Government portal is not geographical sameAs');
+ if(id==='country_french_guiana'){
+   assert.ok(n['@type'].includes('AdministrativeArea'));
+   assert.ok(n['@type'].includes('Place'));
+   assert.ok(!n['@type'].includes('Country'));
+ } else assert.ok(n['@type'].includes('Country'));
+});

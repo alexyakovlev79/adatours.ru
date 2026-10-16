@@ -93,7 +93,12 @@ const languageCode = (value) => {
   return languageCodes.get(text.toLocaleLowerCase('ru')) || text;
 };
 const publicType = (record) => {
-  if (record.kind === 'country') return record.data.slug === 'antarctica' ? ['Place', 'TouristDestination'] : ['Country', 'TouristDestination'];
+  if (record.kind === 'country') {
+    if (record.data.slug === 'antarctica') return ['Place', 'TouristDestination'];
+    // French Guiana is an overseas French administrative territory, not a sovereign Country.
+    if (record.data.id === 'country_french_guiana') return ['AdministrativeArea', 'Place', 'TouristDestination'];
+    return ['Country', 'TouristDestination'];
+  }
   if (record.kind === 'destination') return record.data.destinationType === 'city' ? ['City', 'TouristDestination'] : 'TouristDestination';
   return { tour: 'TouristTrip', excursion: 'TouristTrip', theme: 'DefinedTerm', person: 'Person', case: 'Article', article: 'Article' }[record.kind];
 };

@@ -1,9 +1,18 @@
-// Finalizes only a matching successful Pages run. Does not republish content.
+// Finalizes only a matching successful Pages run or a proven descendant with unchanged GEO entities and receipt.
 import {recordCommit,confirmDeploy,stable} from './schema-geo-core.mjs';
 export function receiptMatchesPublication(p,r,sha){
  return !!p&&!!r&&p.batchId===r.batchId&&
  ['PUBLISHING','DEPLOYING','PUBLISHED'].includes(p.status)&&
  (!p.commit||p.commit===sha)&&stable(p.jobs)===stable(r.jobs);
+}
+export function descendantKeepsGeoRelease(compare) {
+ // GitHub compare lists at most 300 files; fail closed on truncated proofs.
+ if(!compare||!['ahead','identical'].includes(compare.status)||
+    !Array.isArray(compare.files)||compare.files.length>=300||
+    !Number.isSafeInteger(compare.total_commits)||compare.total_commits>250) return false;
+ const protectedPath = name => typeof name==='string'&&
+  (/^data\/geo-knowledge\/entities\//.test(name)||/^data\/geo-knowledge\/releases\//.test(name));
+ return compare.files.every(f=>!protectedPath(f.filename)&&!protectedPath(f.previous_filename));
 }
 export async function autoConfirmGeoRelease({token,repository,runId,runSha,log=console.log}){
  if(!token||!repository||!Number.isSafeInteger(runId)||!/^[a-f0-9]{40}$/.test(runSha))throw Error('Invalid workflow_run arguments');
@@ -30,15 +39,23 @@ export async function autoConfirmGeoRelease({token,repository,runId,runSha,log=c
   const head=(await request('/git/ref/heads/'+branch)).object.sha;
   const state=await jsonFile(path,head),p=state.publication;
   if(!p||!['PUBLISHING','DEPLOYING','PUBLISHED'].includes(p.status))return {status:'no_pending'};
-  if(p.status==='PUBLISHED'&&p.commit===runSha)return {status:'already_confirmed'};
-  if(p.commit&&p.commit!==runSha)return {status:'different_release'};
+  if(p.status==='PUBLISHED')return {status:'already_confirmed'};
+  const releaseSha=p.commit||runSha;
+  if(releaseSha!==runSha){
+   const comparison=await request('/compare/'+releaseSha+'...'+runSha);
+   if(!descendantKeepsGeoRelease(comparison))return {status:'different_or_modified_release'};
+  }
   let receipt;
-  try{receipt=await jsonFile('data/geo-knowledge/releases/'+p.batchId+'.json',runSha);}
+  try{receipt=await jsonFile('data/geo-knowledge/releases/'+p.batchId+'.json',releaseSha);}
   catch(e){if(String(e).includes('HTTP 404'))return {status:'no_matching_receipt'};throw e;}
-  if(!receiptMatchesPublication(p,receipt,runSha))throw Error('Immutable receipt does not match locked results');
+  if(!receiptMatchesPublication(p,receipt,releaseSha))throw Error('Immutable receipt does not match locked results');
+  if(releaseSha!==runSha){
+   const deployedReceipt=await jsonFile('data/geo-knowledge/releases/'+p.batchId+'.json',runSha);
+   if(stable(deployedReceipt)!==stable(receipt))throw Error('Descendant release receipt differs');
+  }
   const now=Date.now();
-  if(p.status==='PUBLISHING')recordCommit(state,{batchId:p.batchId,ownerId:p.ownerId,commit:runSha,now});
-  confirmDeploy(state,{batchId:p.batchId,ownerId:p.ownerId,commit:runSha,runUrl:run.html_url,now});
+  if(p.status==='PUBLISHING')recordCommit(state,{batchId:p.batchId,ownerId:p.ownerId,commit:releaseSha,now});
+  confirmDeploy(state,{batchId:p.batchId,ownerId:p.ownerId,commit:releaseSha,runUrl:run.html_url,now});
   const blob=await request('/git/blobs','POST',{content:JSON.stringify(state,null,2)+'\n',encoding:'utf-8'});
   const parent=await request('/git/commits/'+head);
   const tree=await request('/git/trees','POST',{base_tree:parent.tree.sha,
@@ -47,7 +64,7 @@ export async function autoConfirmGeoRelease({token,repository,runId,runSha,log=c
    parents:[head],tree:tree.sha});
   try{
    await request('/git/refs/heads/'+branch,'PATCH',{sha:commit.sha,force:false});
-   log('GEO '+receipt.jobs.length+' jobs finalized');
+   log('GEO '+receipt.jobs.length+' jobs finalized using successful Pages '+runSha.slice(0,12)+' for immutable release '+releaseSha.slice(0,12));
    return {status:'confirmed',count:receipt.jobs.length,batchId:p.batchId,commit:commit.sha};
   }catch(e){
    const observed=(await request('/git/ref/heads/'+branch)).object.sha;

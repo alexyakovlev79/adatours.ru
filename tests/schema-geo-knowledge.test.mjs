@@ -152,3 +152,17 @@ test('queue refresh preserves scoped coordinate amendments and fences source dri
   assert.equal(s.jobs[amendment.jobId].status,'STALE');assert.equal(s.jobs[amendment.jobId].resultHash,'kept');
  }finally{fs.rmSync(tmp,{recursive:true,force:true});}
 });
+
+import {descendantKeepsGeoRelease} from '../scripts/schema-geo-autoconfirm.mjs';
+test('successful descendant may finalize unchanged GEO release but not mutated entities or receipts',()=>{
+ const clean={status:'ahead',total_commits:1,files:[
+  {filename:'data/seo-geo/articles/multi-country/brazil_paraguay_uruguay/interests/beach-holidays/index.md',status:'modified'},
+  {filename:'data/seo-geo/articles/multi-country/brazil_paraguay_uruguay/interests/culture-and-history/index.md',status:'modified'}]};
+ assert.equal(descendantKeepsGeoRelease(clean),true);
+ assert.equal(descendantKeepsGeoRelease({...clean,status:'diverged'}),false);
+ assert.equal(descendantKeepsGeoRelease({...clean,files:[{filename:'data/geo-knowledge/entities/destination_brazil_bonito.json'}]}),false);
+ assert.equal(descendantKeepsGeoRelease({...clean,files:[{filename:'data/geo-knowledge/releases/geo-ready-20261016-all-80.json'}]}),false);
+ assert.equal(descendantKeepsGeoRelease({...clean,files:[{filename:'other',previous_filename:'data/geo-knowledge/entities/country_brazil.json'}]}),false);
+ assert.equal(descendantKeepsGeoRelease({...clean,files:Array(300).fill({filename:'safe'})}),false);
+ assert.equal(descendantKeepsGeoRelease({...clean,total_commits:251}),false);
+});

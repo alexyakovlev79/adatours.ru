@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_whalers_bay",
+  "stableId": "destination_antarctica_whalers_bay",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/whalers-bay/",
+  "sourceFingerprint": "09661018663e1501a9724ac3780321baad7f15d3e44b333b89207b6a608c4a13",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "bay",
+  "external": {
+    "wikidataQid": "Q11655044",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Whalers_Bay"
+    }
+  },
+  "location": {
+    "latitude": -62.98333,
+    "longitude": -60.56667,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=133607"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_antarctica_deception_island"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/whalers-bay/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверен точный live URL: HTTP 200, H1 «Бухта Уэйлерс», canonical совпадает. Current main MD имеет ожидаемый stable ID, approved и соответствующую географию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q11655044",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Именно бухта у Port Foster на Deception Island с китобойными остатками, исключены одноименные бухты Австралии/Новой Зеландии."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=133607",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Именно бухта у Port Foster на Deception Island с китобойными остатками, исключены одноименные бухты Австралии/Новой Зеландии. Роль точки: representative; не навигационная координата."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=133607",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Тип объекта сверяется с точной записью и собственным MD: bay."
+    },
+    {
+      "field": "relationships.destination_antarctica_deception_island",
+      "sourceUrl": "https://adatours.ru/antarctica/place/whalers-bay/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Географическое нахождение в destination_antarctica_deception_island подтверждено описанием и внешним источником; это не утверждение суверенитета."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Whalers_Bay",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверена точная статья о соответствующем объекте, имя и география согласованы с Wikidata и MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q11655044",
+      "reason": "Именно бухта у Port Foster на Deception Island с китобойными остатками, исключены одноименные бухты Австралии/Новой Зеландии."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q11655044",
+      "reason": "Совпадают имя, тип и антарктическая география; исключены конкурирующие одноименные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-62.98333,-60.56667",
+      "reason": "Именно бухта у Port Foster на Deception Island с китобойными остатками, исключены одноименные бухты Австралии/Новой Зеландии."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "bay",
+      "reason": "Тип подтверждается географическим справочником/карточкой и смыслом страницы."
+    },
+    {
+      "field": "relationships.destination_antarctica_deception_island",
+      "probability": 99,
+      "selected": "destination_antarctica_deception_island",
+      "reason": "Согласованная географическая иерархия по MD и справочнику."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Whalers_Bay",
+      "reason": "Точная статья соответствует выбранному референту."
+    }
+  ],
+  "reviewNote": null
+}

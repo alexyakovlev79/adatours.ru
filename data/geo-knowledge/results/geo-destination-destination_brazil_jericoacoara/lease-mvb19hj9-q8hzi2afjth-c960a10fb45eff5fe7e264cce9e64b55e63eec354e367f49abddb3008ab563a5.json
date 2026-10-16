@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_jericoacoara",
+  "stableId": "destination_brazil_jericoacoara",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/jericoacoara/",
+  "sourceFingerprint": "5d5e54da63032274e4cecc6ce8b8b4b5118c718b3d9670cb4b2c8fcd12ca3ff4",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "coastal settlement and resort village",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 415524310
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://adatours.ru/brazil/place/jericoacoara/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "HTTP 200; exact self canonical; H1 Жерикоакоара; no noindex. Current main MD id/countryId/status and source-index id/URL agree; observed content Git blob 1e656e601e12dcdc3d00913b2575dc6e2c7b99e6."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://adatours.ru/brazil/place/jericoacoara/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Published place corresponds to current approved MD with countryId country_brazil; entry countryIds [country_brazil]."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/415524310.json",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Direct OSM API HTTP 200: name=Vila de Jericoacoara; place=suburb; denotes Vila de Jericoacoara settlement, not national park, beach, or whole municipality. The IBGE:GEOCODIGO tag is municipal district code, not used as separate village identity."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/415524310.json",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "WGS84 named-settlement representative point copied from OSM named settlement node. Not asserted as geometric centroid, administrative boundary, hotel entrance or individual attraction. No averaged coordinates."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://www.jijocadejericoacoara.ce.gov.br/omunicipio.php",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Official municipality page explicitly distinguishes Vila de Jericoacoara, beach and national park; published MD describes village as base for surrounding trips. OSM node is the settlement, no national-park/beach/municipality QID assigned."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.climate-data.org/south-america/brazil/ceara/vila-de-jericoacoara-44114/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Independent publisher's named-settlement point (-2.7933,-40.5127), Brazil/Ceará, lies approximately 349 m from OSM village node. Corroborates locality only, not survey accuracy; no weather/climate assertions are collected."
+    },
+    {
+      "field": "identityCandidates",
+      "sourceUrl": "https://servicodados.ibge.gov.br/api/v1/localidades/distritos/230725405",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Direct IBGE API HTTP 200 returns Jijoca de Jericoacoara district/municipality Ceará. OSM IBGE code does not distinguish Vila de Jericoacoara, so not stored as a village identifier."
+    }
+  ],
+  "alternateNames": [
+    "Vila de Jericoacoara"
+  ],
+  "location": {
+    "latitude": -2.7951681,
+    "longitude": -40.5152301,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/415524310.json"
+  },
+  "reviewNote": "Жерикоакоара сопоставлена только с Vila de Jericoacoara (OSM node). QID парка Q10345241, пляжа Q10352810 и муниципалитета не присваиваются. Координата representative; независимая сверка named locality ~350 м, не точность геодезической съемки."
+}

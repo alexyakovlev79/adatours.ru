@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_uyuni_tahua_stone_formations",
+  "stableId": "destination_bolivia_uyuni_tahua_stone_formations",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/uyuni-tahua-stone-formations/",
+  "sourceFingerprint": "8eee9b41209f9e935b65f06f0a31249cbbe7752b4cbec363ccd2fd094f81a4b0",
+  "status": "READY",
+  "confidence": "medium",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "editorial route area",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_bolivia_uyuni"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_bolivia_tahua"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/uyuni-tahua-stone-formations/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая проверка HTTP 200, canonical, H1 и stable ID; совпадают с текущими approved MD и source-index. Сама страница однозначно определена как редакционная остановка «Лес камней» в программе Уюни — Инкауаси — Тахуа; MD специально не заявляет отдельного местного имени. Географическая привязка маршрута подтверждена, конкретный единичный каменный объект не установлен."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://adatours.com/great-south-america",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Класс editorial route area установлен по смыслу MD и исследованным источникам. Сама страница однозначно определена как редакционная остановка «Лес камней» в программе Уюни — Инкауаси — Тахуа; MD специально не заявляет отдельного местного имени. Географическая привязка маршрута подтверждена, конкретный единичный каменный объект не установлен."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.com/great-south-america",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Публичная программа того же туроператора упоминает Stone Forest в день Уюни и Тахуа, но также не дает отдельного местного названия и координат."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://adatours.ru/bolivia/place/uyuni-tahua-stone-formations/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Сама страница однозначно определена как редакционная остановка «Лес камней» в программе Уюни — Инкауаси — Тахуа; MD специально не заявляет отдельного местного имени. Географическая привязка маршрута подтверждена, конкретный единичный каменный объект не установлен. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    },
+    {
+      "field": "relationships.destination_bolivia_uyuni",
+      "sourceUrl": "https://adatours.ru/bolivia/place/uyuni-tahua-stone-formations/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Сама страница однозначно определена как редакционная остановка «Лес камней» в программе Уюни — Инкауаси — Тахуа; MD специально не заявляет отдельного местного имени. Географическая привязка маршрута подтверждена, конкретный единичный каменный объект не установлен. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    },
+    {
+      "field": "relationships.destination_bolivia_tahua",
+      "sourceUrl": "https://adatours.ru/bolivia/place/uyuni-tahua-stone-formations/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Сама страница однозначно определена как редакционная остановка «Лес камней» в программе Уюни — Инкауаси — Тахуа; MD специально не заявляет отдельного местного имени. Географическая привязка маршрута подтверждена, конкретный единичный каменный объект не установлен. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Каменные образования на маршруте Уюни — Тахуа",
+      "reason": "Сама страница однозначно определена как редакционная остановка «Лес камней» в программе Уюни — Инкауаси — Тахуа; MD специально не заявляет отдельного местного имени. Географическая привязка маршрута подтверждена, конкретный единичный каменный объект не установлен."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "editorial route area",
+      "reason": "Сама страница однозначно определена как редакционная остановка «Лес камней» в программе Уюни — Инкауаси — Тахуа; MD специально не заявляет отдельного местного имени. Географическая привязка маршрута подтверждена, конкретный единичный каменный объект не установлен."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 20,
+      "reason": "После адресного поиска точная отдельная карточка выбранного объекта не установлена; поле опущено, подтверждённая идентичность страницы сохраняет READY."
+    },
+    {
+      "field": "location",
+      "probability": 30,
+      "reason": "Нет местного топонима и подтвержденной отдельной точки. Координаты и точка соседнего объекта опущены."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 98,
+      "selected": "country_bolivia",
+      "reason": "Сама страница однозначно определена как редакционная остановка «Лес камней» в программе Уюни — Инкауаси — Тахуа; MD специально не заявляет отдельного местного имени. Географическая привязка маршрута подтверждена, конкретный единичный каменный объект не установлен."
+    },
+    {
+      "field": "relationships.destination_bolivia_uyuni",
+      "probability": 98,
+      "selected": "destination_bolivia_uyuni",
+      "reason": "Сама страница однозначно определена как редакционная остановка «Лес камней» в программе Уюни — Инкауаси — Тахуа; MD специально не заявляет отдельного местного имени. Географическая привязка маршрута подтверждена, конкретный единичный каменный объект не установлен."
+    },
+    {
+      "field": "relationships.destination_bolivia_tahua",
+      "probability": 98,
+      "selected": "destination_bolivia_tahua",
+      "reason": "Сама страница однозначно определена как редакционная остановка «Лес камней» в программе Уюни — Инкауаси — Тахуа; MD специально не заявляет отдельного местного имени. Географическая привязка маршрута подтверждена, конкретный единичный каменный объект не установлен."
+    }
+  ],
+  "reviewNote": "READY относится к подтверждённому редакционному участку маршрута. Точный отдельный геообъект установить с вероятностью 70% не удалось. Не присвоены QID/OSM/GeoNames/координаты другого «Леса камней», Valle de Rocas у Алоты или музея Чантани. Иллюстрация GPT Images не является источником географии."
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_reka_aruau",
+  "stableId": "destination_brazil_reka_aruau",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/aruau-river/",
+  "sourceFingerprint": "6dec0e207e07adc311c7452d5743bc97e9e92451d82c1b6a307c97e9fb594739",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "entityClass": "river",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/aruau-river/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Прямой HTTP GET: 200; HTML title соответствует объекту; rel=canonical совпадает с URL задачи. Веб-поисковый opener не смог открыть сайт; доступность проверена прямым запросом."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/aruau-river.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точный approved MD: stable ID и countryId=country_brazil совпали с claim; тип и описание сверены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/aruau-river.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Класс выбран по содержанию места, без изменения production MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.manaus.am.gov.br/semsa/comunidades-atendidas/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Муниципальная SEMSA упоминает Comunidade Nova Canaã/Rio Aruaú в риу-негрской группе населённых пунктов."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.manaus.am.gov.br/wp-content/uploads/2024/05/PLANO-DE-CONTINGENCIA-OFICIAL-2024-UNIFICADO.pdf",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Муниципальный план содержит São Francisco do Aruaú и Nova Canaã do Aruaú с Rio Aruaú (Rio Negro)."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/tours/amazoniya-kruiz-tukano.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Исходный связанный тур: день «Прибрежная деревня и река Аруау», прогулка на каноэ после обеда. Не содержит достаточной координатной привязки."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.manaus.am.gov.br/semsa/comunidades-atendidas/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Подтверждено написание Rio Aruaú; Ariaú не принят как alias."
+    }
+  ],
+  "alternateNames": [
+    "Rio Aruaú"
+  ],
+  "reviewNote": "Река Аруау подтверждается программой круиза Tucano и муниципальными документами Манауса (Rio Aruaú, бассейн Rio Negro). Точный QID/GeoNames/OSM и независимая координата не установлены. Не подменять Rio Ariaú (другая река), Arauá/Arauã либо посёлком Aruaú у −0.34, −66.33. Нужна точная картографическая привязка русла по маршруту; внешние identity и location намеренно пусты."
+}

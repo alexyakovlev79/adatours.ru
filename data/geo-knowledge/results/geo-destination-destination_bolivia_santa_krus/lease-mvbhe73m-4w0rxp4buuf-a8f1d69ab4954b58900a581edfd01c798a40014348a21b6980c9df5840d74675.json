@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_santa_krus",
+  "stableId": "destination_bolivia_santa_krus",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/santa-cruz/",
+  "sourceFingerprint": "86c86871e993c4fa95d757fb088fbf8112f407b8a6dcb2173c9ed609913f7a6c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q170688",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Santa_Cruz_de_la_Sierra"
+    },
+    "geonamesId": "3904906"
+  },
+  "location": {
+    "latitude": -17.789166666667,
+    "longitude": -63.1975,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q170688"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/santa-cruz/",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP-проверка: 200; canonical совпадает; H1 и stable ID соответствуют approved MD и source-index. Название и MD прямо указывают Santa Cruz de la Sierra на востоке Боливии с площадью 24 сентября, не Испанию и не департамент."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q170688",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Проверены живой Special:EntityData JSON, имя, P31 и P17. Название и MD прямо указывают Santa Cruz de la Sierra на востоке Боливии с площадью 24 сентября, не Испанию и не департамент."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q170688",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Точная enwiki sitelink этого QID: https://en.wikipedia.org/wiki/Santa_Cruz_de_la_Sierra"
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q170688",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P31 и описание соответствуют классу city."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q170688",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P17: Q750 Bolivia; совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q170688",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Q170688 — город Santa Cruz de la Sierra, основной именованный референт страницы с окрестностями. Не присвоены идентичности департамента или национальных парков Amboró/Noel Kempff Mercado. P625 — representative; GeoNames -17.78629,-63.18117 восточнее примерно на 1.8 км."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3904906/santa-cruz-de-la-sierra.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP 200; имя, страна и feature class проверены. Название и MD прямо указывают Santa Cruz de la Sierra на востоке Боливии с площадью 24 сентября, не Испанию и не департамент."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3904906/santa-cruz-de-la-sierra.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Независимая сверка географического контекста и опубликованной точки; расхождение и выбранная роль отражены в reviewNote. Q170688 — город Santa Cruz de la Sierra, основной именованный референт страницы с окрестностями. Не присвоены идентичности департамента или национальных парков Amboró/Noel Kempff Mercado. P625 — representative; GeoNames -17.78629,-63.18117 восточнее примерно на 1.8 км."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Santa Cruz de la Sierra",
+      "reason": "Название и MD прямо указывают Santa Cruz de la Sierra на востоке Боливии с площадью 24 сентября, не Испанию и не департамент."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q170688",
+      "reason": "Название и MD прямо указывают Santa Cruz de la Sierra на востоке Боливии с площадью 24 сентября, не Испанию и не департамент."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Santa_Cruz_de_la_Sierra",
+      "reason": "Точная статья enwiki из проверенной карточки Wikidata выбранного объекта."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Класс объекта подтвержден MD и P31 выбранного QID."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Страна совпадает в текущем MD, entry и P17."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-17.789166666667, -63.1975",
+      "reason": "Q170688 — город Santa Cruz de la Sierra, основной именованный референт страницы с окрестностями. Не присвоены идентичности департамента или национальных парков Amboró/Noel Kempff Mercado. P625 — representative; GeoNames -17.78629,-63.18117 восточнее примерно на 1.8 км."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3904906",
+      "reason": "Карточка GeoNames соответствует имени, стране и географическому типу; идентификатор не выбирался только по близости точки."
+    }
+  ],
+  "reviewNote": "Q170688 — город Santa Cruz de la Sierra, основной именованный референт страницы с окрестностями. Не присвоены идентичности департамента или национальных парков Amboró/Noel Kempff Mercado. P625 — representative; GeoNames -17.78629,-63.18117 восточнее примерно на 1.8 км."
+}

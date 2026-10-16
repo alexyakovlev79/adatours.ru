@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_ojo_de_perdiz",
+  "stableId": "destination_bolivia_ojo_de_perdiz",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/ojo-de-perdiz/",
+  "sourceFingerprint": "b4f139a70e50983c5f1097492c3e8817718c041a781fda729ac69a453db66e79",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "medium",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/ojo-de-perdiz.md",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Охо-де-Пердис (Ojo/Ojito de Perdiz) — район ночевки и природная остановка в пустыне Силоли, юго-запад Боливии. Собственный сайт Tayka del Desierto подтверждает название, источник воды и местный контекст. Паспорт относится к местности, не к юридическому лицу отеля и не ко всей пустыне Силоли."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://tayka-hoteles.com/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Охо-де-Пердис (Ojo/Ojito de Perdiz) — район ночевки и природная остановка в пустыне Силоли, юго-запад Боливии. Собственный сайт Tayka del Desierto подтверждает название, источник воды и местный контекст. Паспорт относится к местности, не к юридическому лицу отеля и не ко всей пустыне Силоли."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/bolivia/place/ojo-de-perdiz/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прямой HTTP GET 200, совпадают H1=Охо-де-Пердис, canonicalPath и stableId."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://tayka-hoteles.com/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбранный объект находится в Боливии; подтверждены страна и географический контекст, в MD/entry countryId=country_bolivia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/1515950098",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прочитана именованная точка Hotel Tayka El Desierto, -21.8443952, -68.0401644. Используется только как опорная точка района Охо-де-Пердис, не центр/граница местности."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://tayka-hoteles.com/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Собственный сайт подтверждает точное имя Hotel Tayka del Desierto Ojo de Perdiz / Ojito de Perdiz, источник воды и положение в Desierto de Siloli; контакты совпадают с OSM."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/tours/velikij-tur-po-yuzhnoj-amerike.md",
+      "checkedAt": "2026-10-16T21:53:01.309Z",
+      "note": "Проверены именованные посещения и порядок лагун/остановок в фактической программе; география согласуется с выбранным объектом."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Охо-де-Пердис",
+      "reason": "Охо-де-Пердис (Ojo/Ojito de Perdiz) — район ночевки и природная остановка в пустыне Силоли, юго-запад Боливии. Собственный сайт Tayka del Desierto подтверждает название, источник воды и местный контекст. Паспорт относится к местности, не к юридическому лицу отеля и не ко всей пустыне Силоли."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Совпадают MD, source-index и внешние географические сведения; P17=Q750 у выбранных QID."
+    },
+    {
+      "field": "location",
+      "probability": 86,
+      "selected": "-21.8443952, -68.0401644",
+      "reason": "Именованный отель в районе из программы; официальное описание подтверждает связь. Роль representative, не точная граница района."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "reason": "Адресный поиск не выявил точного QID местности. QID всей пустыни Силоли, отеля или объекта Ojo de Perdiz в Колумбии не присваивается."
+    },
+    {
+      "field": "external.osm",
+      "probability": 55,
+      "reason": "Найденный OSM node1515950098 обозначает отель; он используется лишь как представительская координата местности, не как ее sameAs."
+    }
+  ],
+  "reviewNote": "Охо-де-Пердис (Ojo/Ojito de Perdiz) — район ночевки и природная остановка в пустыне Силоли, юго-запад Боливии. Собственный сайт Tayka del Desierto подтверждает название, источник воды и местный контекст. Паспорт относится к местности, не к юридическому лицу отеля и не ко всей пустыне Силоли.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/bolivia/place/ojo-de-perdiz/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; rel=canonical и конечный URL совпадают с canonicalPath; H1 и stable ID совпадают с задачей.",
+      "Проверены approved MD и точная source-index entry из main 94bfad1c7d0ba066ad25027a25d53a8589fc1e59."
+    ]
+  },
+  "location": {
+    "latitude": -21.8443952,
+    "longitude": -68.0401644,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/node/1515950098"
+  }
+}

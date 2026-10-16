@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_porto_seguro",
+  "stableId": "destination_brazil_porto_seguro",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/porto-seguro/",
+  "sourceFingerprint": "5951566d252882c84377229a9cf2e4475c94e9631e0c51c4f8140702feb33ebc",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "city; municipal seat",
+  "external": {
+    "wikidataQid": "Q499922",
+    "geonamesId": "3452640"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://adatours.ru/brazil/place/porto-seguro/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "HTTP 200; exact self canonical; H1 Порту-Сегуру; no noindex. Current main MD id/countryId/status and source-index id/URL agree; observed content Git blob 7f094091f5e354d4e2ec5426915513352db662ad."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://adatours.ru/brazil/place/porto-seguro/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Published place corresponds to current approved MD with countryId country_brazil; entry countryIds [country_brazil]."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q499922",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Porto Seguro; exact geographical identity in Bahia, Brazil. Class matches the published city's/settlement's scope; not a homonymous microregion, lighthouse or individual attraction."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3452640/porto-seguro.html",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Exact named populated place Porto Seguro in Bahia, Brazil; selected populated-place record, not an administrative-area centroid."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3452640/porto-seguro.html",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "WGS84 named-settlement representative point copied from GeoNames exact populated-place record. Not asserted as geometric centroid, administrative boundary, hotel entrance or individual attraction. No averaged coordinates."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q499922",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Independent-source comparison with Wikidata P625 -16.4500000, -39.0650000: separation approximately 43 m. Both identify the same named city/settlement and administrative region. P625 used for identity/location cross-check only; retained GeoNames representative point unchanged, with different reference points recorded rather than averaged."
+    }
+  ],
+  "alternateNames": [
+    "Porto Seguro"
+  ],
+  "location": {
+    "latitude": -16.44972,
+    "longitude": -39.06472,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3452640/porto-seguro.html"
+  },
+  "reviewNote": "Роль координат — representative, не единственный центр города. Разница с P625 43 м зафиксирована в evidence; точки не усреднялись."
+}

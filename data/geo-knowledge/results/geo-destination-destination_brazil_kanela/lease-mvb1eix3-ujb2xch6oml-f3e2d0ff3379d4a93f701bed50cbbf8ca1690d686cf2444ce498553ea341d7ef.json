@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_kanela",
+  "stableId": "destination_brazil_kanela",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/canela/",
+  "sourceFingerprint": "7d340d895e40bb1c3528942456aaedf2504ef1003922db25fb8205c153e54ba3",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "town",
+  "external": {
+    "wikidataQid": "Q995318",
+    "geonamesId": "3467530",
+    "osm": {
+      "type": "node",
+      "id": 415523951
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/canela/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTTP GET: 200, canonical совпадает, H1 соответствует сущности, noindex отсутствует. Текущие production MD и source-index entry проверены; stable ID, страна Brazil и approved совпадают."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/canela.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Текущий production MD: countryId country_brazil; назначение объекта сверено с внешними источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q995318",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Canela, municipality Rio Grande do Sul, Brazil; GN/OSM явно связывают тот же Q995318 с поселением."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3467530/canela.html",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTML и JSON-LD: GeoNames 3467530, Canela PPL, Brazil/Rio Grande do Sul/Canela; latitude −29.35622 longitude −50.81357; alternate Wikidata Q995318."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/415523951.json",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой OSM API: Canela, place town, wikidata Q995318, source IBGE."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3467530/canela.html",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "WGS84 representative −29.35622,−50.81357, точка карточки населенного пункта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/415523951.json",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Независимый OSM town −29.3636094,−50.8096844 находится в том же населенном пункте примерно в 0.90 км; различие ролей точек зафиксировано, не усреднялось."
+    }
+  ],
+  "alternateNames": [
+    "Canela",
+    "Canela, Rio Grande do Sul"
+  ],
+  "location": {
+    "latitude": -29.35622,
+    "longitude": -50.81357,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3467530/canela.html"
+  },
+  "reviewNote": "Canela в Rio Grande do Sul/Serra Gaúcha, не чилийская Canela. Опорная точка GeoNames PPL. OSM town point южнее примерно на 0.85 км, P625 около 0.8 км; это различные городские опорные точки, не усреднялись и не названы единственным центром."
+}

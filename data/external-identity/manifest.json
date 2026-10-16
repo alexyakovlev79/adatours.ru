@@ -329,7 +329,7 @@
     {
       "table": "adatours-com-correspondences",
       "original_sheet": "adatours.com: подтверждённые соответствия и проверки",
-      "row_count": 2343,
+      "row_count": 2493,
       "json": "adatours-com-correspondences.json",
       "csv": "adatours-com-correspondences.csv",
       "columns": [
@@ -346,10 +346,10 @@
         "notes"
       ],
       "sha256": {
-        "json": "fff83f38b6416768decb1d56580c16d684d4983cf2c4ff389e79561f8edcc76b",
-        "csv": "70f7057bd29d1cc071ae9b414347e410a24ac2a332bb5aad615e9eaeb68807a0"
+        "json": "4c673ccf58be0bcc4c2563644ae29adb71fd435db59765fd6c947a51e83d5be4",
+        "csv": "1d517e9cf2db3f8327cd71f9fd6cda80ba6173a73eae5336f16fa0718914e212"
       },
-      "updated_at": "2026-10-16T16:36:32.640Z"
+      "updated_at": "2026-10-16T21:59:44.113Z"
     }
   ],
   "index": {
@@ -557,22 +557,37 @@
       "note": "Batch 051 integrated with 50 rows; 045,047,048,050 still have legacy sync work. Next fresh batch 052.",
       "queue_and_correspondences_synced": true,
       "synced_at": "2026-10-16T20:35:00Z"
+    },
+    {
+      "batch_id": "adatours-com-identity-053",
+      "checked_at": "2026-10-16T21:59:44.113Z",
+      "processed": 50,
+      "confirmed_exact": 0,
+      "first_key": "https://adatours.ru/costa-rica/place/el-tigre-waterfalls/tour/",
+      "last_key": "https://adatours.ru/ecuador/cuenca/",
+      "report": "adatours-com-identity-053.json",
+      "status": "completed_integrated",
+      "queue_and_correspondences_synced": true,
+      "contiguous_cursor": 2200,
+      "next_new_batch": "adatours-com-identity-054",
+      "next_first_key": "https://adatours.ru/ecuador/cuenca/cuenca-city-and-panama-hats/tour/",
+      "note": "50 new frozen keys; 17-index offset from 049/050 overlap preserved without skipping URLs."
     }
   ],
   "adatours_com_identity_latest_out_of_order": {
-    "batch_id": "adatours-com-identity-052",
-    "checked_at": "2026-10-16T20:45:00Z",
+    "batch_id": "adatours-com-identity-053",
+    "checked_at": "2026-10-16T21:59:44.113Z",
     "processed": 50,
-    "confirmed": 0,
-    "first_key": "https://adatours.ru/colombia/place/el-penon-de-guatape/tour/",
-    "last_key": "https://adatours.ru/costa-rica/place/drake-bay/tour/",
-    "report": "adatours-com-identity-052.json",
+    "confirmed_exact": 0,
+    "first_key": "https://adatours.ru/costa-rica/place/el-tigre-waterfalls/tour/",
+    "last_key": "https://adatours.ru/ecuador/cuenca/",
+    "report": "adatours-com-identity-053.json",
     "status": "completed_integrated",
     "queue_and_correspondences_synced": true,
     "contiguous_cursor": 2200,
-    "next_new_batch": "adatours-com-identity-053",
-    "next_first_key": "https://adatours.ru/costa-rica/place/el-tigre-waterfalls/tour/",
-    "note": "Research and exact URL evidence fully recorded in report; 50 queue and crosswalk records integrated. Earlier batches 045,047,048,050 still pending sync."
+    "next_new_batch": "adatours-com-identity-054",
+    "next_first_key": "https://adatours.ru/ecuador/cuenca/cuenca-city-and-panama-hats/tour/",
+    "note": "50 new frozen keys; 17-index offset from 049/050 overlap preserved without skipping URLs."
   },
-  "updated_at": "2026-10-16T20:45:00Z"
+  "updated_at": "2026-10-16T21:59:44.113Z"
 }

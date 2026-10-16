@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_laguna_azul_lensojs_maranenses",
+  "stableId": "destination_brazil_laguna_azul_lensojs_maranenses",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/lagoa-azul-lencois-maranhenses/",
+  "sourceFingerprint": "71b8507ac9b2ac0d916f0cbbdb1534639551834b7b615ca9b103782cb819af62",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "lake",
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 14436547
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/lagoa-azul-lencois-maranhenses.md",
+      "checkedAt": "2026-10-16T15:46:28.771Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. ICMBio выделяет Lagoa Azul как конкретную остановку внутри одноимённого Circuito. MD описывает лагуну, а не весь парк/маршрут; OSM именованный водоём находится в этом районе."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/lagoa-azul-lencois-maranhenses/",
+      "checkedAt": "2026-10-16T15:40:23.177820+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/parna-dos-lencois-maranhenses/paginas-site-parna-dos-lencois-maranhenses-ma/barreirinhas",
+      "checkedAt": "2026-10-16T15:46:28.771Z",
+      "note": "Официальный управляющий парком различает Circuito и Lagoa Azul, отмечает подвижность дюн/сезонных водоёмов."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/14436547/full",
+      "checkedAt": "2026-10-16T15:46:28.771Z",
+      "note": "Новый GET точного именованного сезонного водоёма Lagoa Azul."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/parna-dos-lencois-maranhenses/paginas-site-parna-dos-lencois-maranhenses-ma/barreirinhas",
+      "checkedAt": "2026-10-16T15:46:28.771Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/14436547/full",
+      "checkedAt": "2026-10-16T15:46:28.771Z",
+      "note": "Совпадают имя, тип сезонного водоёма и география; контур не объявляется постоянной береговой линией."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lagoa_Azul_no_Len%C3%A7%C3%B3is_Maranhenses2.jpg",
+      "checkedAt": "2026-10-16T15:46:28.771Z",
+      "note": "Авторский object location2021 точной лагуны, не camera location. На~200м восточнее OSM-контура2017; для подвижного сезонного водоёма это снижает оценку до78%, но не опровергает опорную точку. Не усредняем и не утверждаем surveyed entrance."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/marinho/lista-de-ucs/parna-dos-lencois-maranhenses/paginas-site-parna-dos-lencois-maranhenses-ma/barreirinhas",
+      "checkedAt": "2026-10-16T15:46:28.771Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Lagoa Azul — сезонная лагуна Lençóis Maranhenses на маршруте из Barreirinhas",
+      "reason": "ICMBio выделяет Lagoa Azul как конкретную остановку внутри одноимённого Circuito. MD описывает лагуну, а не весь парк/маршрут; OSM именованный водоём находится в этом районе."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "lake",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "selected": "{\"type\":\"way\",\"id\":14436547}",
+      "reason": "Совпадают имя, тип сезонного водоёма и география; контур не объявляется постоянной береговой линией."
+    },
+    {
+      "field": "location",
+      "probability": 78,
+      "selected": "-2.664528,-42.855611 (representative)",
+      "reason": "Авторский object location2021 точной лагуны, не camera location. На~200м восточнее OSM-контура2017; для подвижного сезонного водоёма это снижает оценку до78%, но не опровергает опорную точку. Не усредняем и не утверждаем surveyed entrance."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/lagoa-azul-lencois-maranhenses/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  },
+  "location": {
+    "latitude": -2.664528,
+    "longitude": -42.855611,
+    "pointRole": "representative",
+    "coordinateSource": "https://commons.wikimedia.org/wiki/File:Lagoa_Azul_no_Len%C3%A7%C3%B3is_Maranhenses2.jpg"
+  }
+}

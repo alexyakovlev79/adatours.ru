@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_parque_das_aves",
+  "stableId": "destination_brazil_parque_das_aves",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/parque-das-aves/",
+  "sourceFingerprint": "cfc10005695150ce6814258c482c49217117c41afd7ee1af2b0a74ea1c76aaeb",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1894779",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Parque_das_Aves"
+    },
+    "osm": {
+      "type": "way",
+      "id": 201172980
+    },
+    "officialUrl": "https://www.parquedasaves.com.br/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/parque-das-aves.md",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный approved MD прочитан на фиксированном main SHA; stable ID, страна и предмет страницы совпадают с entry. Тип страницы destination не подменяется типом внешнего геообъекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/parque-das-aves/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP GET: 200; rel=canonical точно совпадает с этим URL; noindex отсутствует; заголовок соответствует объекту."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1894779",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный Parque das Aves, zoo, Foz do Iguaçu, Brazil. Не одноимённый парк в Бразилиа."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Parque_das_Aves",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точная статья о птичьем парке Фос-ду-Игуасу."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/201172980/full.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точная замкнутая территория с name=Parque das Aves, tourism=zoo, zoo=birds, addr:city=Foz do Iguaçu, Rodovia das Cataratas km 17.1, wikidata=Q1894779."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.parquedasaves.com.br/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Официальный сайт природоохранного учреждения и точный адрес в Foz do Iguaçu, Paraná, Brasil."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.parquedasaves.com.br/planeje-sua-visita/como-chegar/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Официальный адрес: Rodovia das Cataratas, km 17.1 nº 12.450, Foz do Iguaçu/PR, Brasil; соседство с национальным парком не означает вхождение в него."
+    },
+    {
+      "field": "location.excluded",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1894779",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Кандидат P625 -25.6127777778,-54.4830555556 не попадает в точный OSM way 201172980; точка севернее bbox парка. Не перенесена в location."
+    },
+    {
+      "field": "location.excluded",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/201172980/full.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Проверены замкнутая геометрия и bbox [-25.6168607,-54.4862366,-25.6134977,-54.4819872]. Не подставлять центр bbox/случайную точку фотографии вместо независимо подтвержденной точки учреждения."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/parque-das-aves/"
+    ],
+    "findings": [
+      "HTTP 200, canonical совпадает, noindex отсутствует; approved content MD и точная source-index entry сверены."
+    ]
+  },
+  "entityClass": "zoo",
+  "alternateNames": [
+    "Parque das Aves"
+  ],
+  "reviewNote": "Идентичность зоопарка и официальный сайт подтверждены. Координата P625 находится вне его OSM-территории, поэтому нужна независимая точка входа/представительная точка из официальной карты; location исключена. Автоматическая подпись Mapcarta «Misiones, Argentina» ошибочна для объекта с подтвержденным официальным адресом в Бразилии."
+}

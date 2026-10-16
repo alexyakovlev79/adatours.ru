@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_reka_sukuri",
+  "stableId": "destination_brazil_reka_sukuri",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/sucuri-river/",
+  "sourceFingerprint": "ae0660e4b53b3e6e9aa05dd77ba7d7d6e152898630158967388caf542b25d0ba",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "entityClass": "river",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/sucuri-river/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Прямой HTTP GET: 200; HTML title соответствует объекту; rel=canonical совпадает с URL задачи. Веб-поисковый opener не смог открыть сайт; доступность проверена прямым запросом."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/sucuri-river.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точный approved MD: stable ID и countryId=country_brazil совпали с claim; тип и описание сверены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/sucuri-river.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Класс выбран по содержанию места, без изменения production MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.turismo.bonito.ms.gov.br/rio-sucuri-em-bonito",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Официальная муниципальная страница Rio Sucuri: прозрачная река с флотацией в Bonito/MS. Страница об аттракционе не объявлена sameAs водотока."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.turismo.bonito.ms.gov.br/barra-do-sucuri-em-bonito",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Муниципальное описание Barra do Sucuri подтверждает впадение Sucuri в Formoso и короткое русло."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.turismo.bonito.ms.gov.br/rio-sucuri-em-bonito",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Название Rio Sucuri; не Sucuriú."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://revista.fct.unesp.br/index.php/formacao/article/download/3151/3088",
+      "checkedAt": "2026-10-16T14:10:46.324Z",
+      "note": "Таблица 11, печатная с.297/PDF19: Nascente do Rio Sucuri, Ponto 1 — 21°15′59.9″S, 56°33′35.1″W. Осознанная точка полевого исследования на реке, не центр/вход."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/way/229638185/full",
+      "checkedAt": "2026-10-16T14:10:46.324Z",
+      "note": "Независимая геометрия OSM: начальная вершина node2382063678 −21.2664611, −56.5595592 около 29 м от научной точки. Координатный участок подтверждён; вся way не принимается как exact identity."
+    },
+    {
+      "field": "identity_conflict",
+      "sourceUrl": "https://revista.fct.unesp.br/index.php/formacao/article/download/3151/3088",
+      "checkedAt": "2026-10-16T14:10:46.324Z",
+      "note": "В таблице 12 точка 4 уже подписана Formoso: 21°15′29.3″S,56°32′55.8″W; OSM way229638185 с name=Rio Sucuri продолжается значительно дальше до −21.1955306/−56.4595622. Признак ошибочного охвата русла в OSM; не выдавать всю way за точную идентичность короткой Sucuri."
+    }
+  ],
+  "alternateNames": [
+    "Rio Sucuri"
+  ],
+  "reviewNote": "Координата исследовательской точки на нужной Rio Sucuri подтверждена независимо (29 м от OSM). REVIEW сохраняется из-за неопределённого exact ID: way229638185, вероятно, включает продолжение Formoso; официальная Sectur описывает короткую Sucuri около 1.8 км. Не подменять рекой Sucuriú Q7633210/Goiás. Нужна сверка границ/сегментов, а не повторный поиск координаты.",
+  "location": {
+    "latitude": -21.266638888888888,
+    "longitude": -56.559749999999994,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://revista.fct.unesp.br/index.php/formacao/article/download/3151/3088"
+  }
+}

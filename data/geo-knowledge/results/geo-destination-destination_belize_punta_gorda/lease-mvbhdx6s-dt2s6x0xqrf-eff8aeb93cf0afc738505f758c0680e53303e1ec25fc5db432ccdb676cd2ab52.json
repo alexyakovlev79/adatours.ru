@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_punta_gorda",
+  "stableId": "destination_belize_punta_gorda",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/punta-gorda/",
+  "sourceFingerprint": "7a56635433af01f4ee96ee2641cd1f96ff665620a150fcc6dc99a3695d69a656",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q883362",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Punta_Gorda,_Belize"
+    },
+    "geonamesId": "3581398"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/punta-gorda.md",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Город Punta Gorda в Toledo, южный Белиз, на Карибском побережье. Контекст Ним-Ли-Пунит и Лубаантуна исключает одноименные города других стран."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Punta_Gorda,_Belize",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Город Punta Gorda в Toledo, южный Белиз, на Карибском побережье. Контекст Ним-Ли-Пунит и Лубаантуна исключает одноименные города других стран."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/belize/place/punta-gorda/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прямой GET, HTTP 200; H1=Пунта Горда; rel=canonical соответствует URL; stable ID найден в HTML."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Punta_Gorda,_Belize",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают страна Белиз и географический контекст объекта; countryId=country_belize в текущем MD и entry."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q883362",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают имя, страна Белиз и тип/смысл объекта; P17=Q242. Город Punta Gorda в Toledo, южный Белиз, на Карибском побережье. Контекст Ним-Ли-Пунит и Лубаантуна исключает одноименные города других стран."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q883362",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Английский sitelink относится к выбранному референту; название/география проверены по статье и первоисточнику."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q883362",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "P1566=3581398; независимо прочитана запись Punta Gorda в текущем BZ.zip GeoNames, country=BZ, класс P/PPLA."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Запись 3581398: Punta Gorda, 16.09835, -88.8097, страна BZ."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3581398/punta-gorda.html",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Точка записи GeoNames 3581398 (P/PPLA) в WGS84, прочитана из текущего BZ.zip: 16.09835, -88.8097. Роль: settlement_center."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прочитан исходный файл BZ.txt, точная строка 3581398. Координаты не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q883362",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Сверка с P625: 16.1, -88.8. P625 грубо округлен; выбрана более конкретная городская точка GeoNames. Роль не означает единственный географический центр."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Город Punta Gorda в Toledo, южный Белиз, на Карибском побережье. Контекст Ним-Ли-Пунит и Лубаантуна исключает одноименные города других стран.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Пунта Горда",
+      "reason": "Город Punta Gorda в Toledo, южный Белиз, на Карибском побережье. Контекст Ним-Ли-Пунит и Лубаантуна исключает одноименные города других стран."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна подтверждена MD, source-index и внешней карточкой/первоисточником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q883362",
+      "reason": "Город Punta Gorda в Toledo, южный Белиз, на Карибском побережье. Контекст Ним-Ли-Пунит и Лубаантуна исключает одноименные города других стран."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Punta_Gorda,_Belize",
+      "reason": "Статья выбранного геообъекта; для составного редакционного места используется основной референт."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3581398",
+      "reason": "Совпадают точное имя, страна, тип и P1566 выбранной записи."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "16.09835, -88.8097",
+      "reason": "Выбрана одна именованная точка GeoNames с установленной ролью; проверена по P625 и географическому контексту."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/belize/place/punta-gorda/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; конечный URL и rel=canonical совпадают с canonicalPath; H1 и stable ID подтверждены в HTML.",
+      "Проверены точные content MD и source-index entry из main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065."
+    ]
+  },
+  "location": {
+    "latitude": 16.09835,
+    "longitude": -88.8097,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3581398/punta-gorda.html"
+  }
+}

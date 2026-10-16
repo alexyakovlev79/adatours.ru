@@ -53,7 +53,25 @@ export async function runSchemaGeo(tools, core, request) {
    if(output.idempotent)return {status:'already_saved',head,...output};
    extra.push({path:output.path,mode:'100644',type:'blob',content:JSON.stringify(request.result,null,2)+'\n'});
   }
-  else if(request.action==='beginPublication')output=core.beginPublication(queue,state,args);
+  else if(request.action==='beginPublication'){
+   const already=state.publication?.status==='PUBLISHING'&&state.publication.batchId===request.batchId
+     &&state.publication.ownerId===request.ownerId;
+   output=core.beginPublication(queue,state,args);
+   if(output&&!already)extra.push({
+    path:'data/geo-knowledge/dispatch.json',mode:'100644',type:'blob',
+    content:JSON.stringify({schemaVersion:1,batchId:output.batchId,ownerId:output.ownerId,
+     count:output.jobs.length,createdAt:new Date(now).toISOString()},null,2)+'\n'
+   });
+  }
+  else if(request.action==='dispatchPublication'){
+   const p=state.publication;
+   if(!p||p.status!=='PUBLISHING'||p.commit||p.batchId!==request.batchId||p.ownerId!==request.ownerId)
+    throw Error('Cannot dispatch a foreign or already committed publication');
+   output={batchId:p.batchId,count:p.jobs.length,status:'dispatched'};
+   extra.push({path:'data/geo-knowledge/dispatch.json',mode:'100644',type:'blob',
+    content:JSON.stringify({schemaVersion:1,batchId:p.batchId,ownerId:p.ownerId,
+     count:p.jobs.length,createdAt:new Date(now).toISOString()},null,2)+'\n'});
+  }
   else if(request.action==='abortPublication')output=core.abortUncommittedPublication(state,args);
   else if(request.action==='recordCommit'){
    // Reading a 100+ file GitHub REST commit diff is slow and unnecessary: inspect exact receipt instead.

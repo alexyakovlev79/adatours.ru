@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_morro_da_urca",
+  "stableId": "destination_brazil_morro_da_urca",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/morro-da-urca/",
+  "sourceFingerprint": "7f758cfc34e92d7c9bb9281e4bcfc7191ac732a7eaff0c57ccb3edb56ed5b990",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Mountain",
+  "external": {
+    "wikidataQid": "Q22030730",
+    "geonamesId": "3445725",
+    "osm": {
+      "type": "node",
+      "id": 146396315
+    }
+  },
+  "location": {
+    "latitude": -22.9508198,
+    "longitude": -43.1639861,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/146396315.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://riotur.rio/que_fazer/morro-da-urca/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Morro da Urca — отдельная первая вершина канатной дороги в Rio, перед Pão de Açúcar; Riotur подтверждает маршрут с Praia Vermelha. Не район Urca и не весь природный монумент двух гор."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/brazil/place/morro-da-urca/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Проверен live HTML: HTTP 200, H1 и canonical совпадают с текущими MD/source-index. Страница доступна, noindex отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22030730",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Morro da Urca — отдельная первая вершина канатной дороги в Rio, перед Pão de Açúcar; Riotur подтверждает маршрут с Praia Vermelha. Не район Urca и не весь природный монумент двух гор."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22030730",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "GeoNames ID относится к выбранному геообъекту; тип и география сверены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22030730",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Идентификатор конкретного node выбранного объекта; соседний район/комплекс не подменяет его."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22030730",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "P625 вершины Morro da Urca 22°57′03.38″S 43°09′52.96″W. Сверка с Riotur: конец пешего маршрута и панорама Guanabara, не нижняя станция или соседняя Сахарная голова."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://riotur.rio/que_fazer/morro-da-urca/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Morro da Urca — отдельная первая вершина канатной дороги в Rio, перед Pão de Açúcar; Riotur подтверждает маршрут с Praia Vermelha. Не район Urca и не весь природный монумент двух гор."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://riotur.rio/que_fazer/morro-da-urca/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Morro da Urca — отдельная первая вершина канатной дороги в Rio, перед Pão de Açúcar; Riotur подтверждает маршрут с Praia Vermelha. Не район Urca и не весь природный монумент двух гор."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://riotur.rio/que_fazer/morro-da-urca/",
+      "checkedAt": "2026-10-16T20:27:10.290Z",
+      "note": "Подтверждена география: объект находится в Бразилии."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/146396315.json",
+      "checkedAt": "2026-10-16T20:27:33.638Z",
+      "note": "Выбрана текущая точка natural=peak OSM node 146396315 (Morro da Urca, source=IPP, wikidata=Q22030730): −22.9508198,−43.1639861. P625 Wikidata −22.9509389,−43.1647111 смещена примерно на 75 м; не усреднена."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/146396315.json",
+      "checkedAt": "2026-10-16T20:27:33.638Z",
+      "note": "Прочитан первичный OSM JSON: name Morro da Urca, natural peak, wikidata Q22030730, source IPP."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Гора Урка",
+      "reason": "Morro da Urca — отдельная первая вершина канатной дороги в Rio, перед Pão de Açúcar; Riotur подтверждает маршрут с Praia Vermelha. Не район Urca и не весь природный монумент двух гор."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q22030730",
+      "reason": "Morro da Urca — отдельная первая вершина канатной дороги в Rio, перед Pão de Açúcar; Riotur подтверждает маршрут с Praia Vermelha. Не район Urca и не весь природный монумент двух гор."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3445725",
+      "reason": "Morro da Urca — отдельная первая вершина канатной дороги в Rio, перед Pão de Açúcar; Riotur подтверждает маршрут с Praia Vermelha. Не район Urca и не весь природный монумент двух гор."
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "selected": "node/146396315",
+      "reason": "Morro da Urca — отдельная первая вершина канатной дороги в Rio, перед Pão de Açúcar; Riotur подтверждает маршрут с Praia Vermelha. Не район Urca и не весь природный монумент двух гор."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "{\"latitude\":-22.9508198,\"longitude\":-43.1639861,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://api.openstreetmap.org/api/0.6/node/146396315.json\"}",
+      "reason": "Выбрана текущая точка natural=peak OSM node 146396315 (Morro da Urca, source=IPP, wikidata=Q22030730): −22.9508198,−43.1639861. P625 Wikidata −22.9509389,−43.1647111 смещена примерно на 75 м; не усреднена."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "Mountain",
+      "reason": "Morro da Urca — отдельная первая вершина канатной дороги в Rio, перед Pão de Açúcar; Riotur подтверждает маршрут с Praia Vermelha. Не район Urca и не весь природный монумент двух гор."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Бразилия подтверждена MD, source-index и внешним источником."
+    }
+  ],
+  "reviewNote": "Выбрана текущая точка natural=peak OSM node 146396315 (Morro da Urca, source=IPP, wikidata=Q22030730): −22.9508198,−43.1639861. P625 Wikidata −22.9509389,−43.1647111 смещена примерно на 75 м; не усреднена."
+}

@@ -50,6 +50,38 @@ destinations:
 - destination_peru_lima
 - destination_chile_dolina_majpo
 - destination_brazil_praia_vermelha
+- destination_brazil_sugarloaf_mountain
+- destination_brazil_morro_da_urca
+- destination_brazil_corcovado_christ_the_redeemer
+- destination_brazil_tijuca_national_park
+- destination_argentina_la_boca
+- destination_argentina_san_telmo
+- destination_argentina_plaza_dorrego
+- destination_argentina_plaza_de_mayo
+- destination_argentina_casa_rosada
+- destination_argentina_recoleta
+- destination_argentina_recoleta_cemetery
+- destination_argentina_basilica_del_pilar
+- destination_argentina_puerto_madero
+- destination_argentina_parque_lezama
+- destination_argentina_parque_tres_de_febrero
+- destination_chile_la_moneda_palace
+- destination_chile_santiago_plaza_de_armas
+- destination_chile_santa_lucia_hill
+- destination_bolivia_laguna_honda
+- destination_bolivia_laguna_chiarkota
+- destination_bolivia_laguna_hedionda
+- destination_bolivia_laguna_kanyapa
+- destination_bolivia_la_paz_witches_market
+- destination_peru_lima_miraflores
+- destination_peru_lima_parque_del_amor
+- destination_peru_huaca_huallamarca
+- destination_peru_lima_plaza_mayor
+- destination_peru_lima_cathedral
+- destination_peru_mali_lima
+- destination_peru_santo_domingo_lima
+- destination_peru_larco_museum
+- destination_brazil_parque_das_aves
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
@@ -88,6 +120,35 @@ routeDestinations:
 - destination_peru_sacsayhuaman
 - destination_peru_lima
 - destination_brazil_praia_vermelha
+- destination_brazil_sugarloaf_mountain
+- destination_brazil_morro_da_urca
+- destination_brazil_corcovado_christ_the_redeemer
+- destination_brazil_tijuca_national_park
+- destination_argentina_la_boca
+- destination_argentina_san_telmo
+- destination_argentina_plaza_dorrego
+- destination_argentina_plaza_de_mayo
+- destination_argentina_casa_rosada
+- destination_argentina_recoleta
+- destination_argentina_recoleta_cemetery
+- destination_argentina_basilica_del_pilar
+- destination_argentina_puerto_madero
+- destination_argentina_parque_lezama
+- destination_argentina_parque_tres_de_febrero
+- destination_chile_la_moneda_palace
+- destination_chile_santiago_plaza_de_armas
+- destination_chile_santa_lucia_hill
+- destination_bolivia_laguna_honda
+- destination_bolivia_laguna_chiarkota
+- destination_bolivia_laguna_hedionda
+- destination_bolivia_laguna_kanyapa
+- destination_bolivia_la_paz_witches_market
+- destination_peru_lima_miraflores
+- destination_peru_lima_parque_del_amor
+- destination_peru_huaca_huallamarca
+- destination_peru_lima_plaza_mayor
+- destination_peru_santo_domingo_lima
+- destination_peru_larco_museum
 primaryThemes:
 - theme_events
 - theme_culture
@@ -110,12 +171,12 @@ route:
 - Пуно, 1 ночь
 - Куско, 2 ночи
 - Лима, 1 ночь
-priceFrom: 9562.0
+priceFrom: 9562
 currency: USD
 hero:
   src: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/itinerary-day-11-enhanced-20261006.webp
-  alt: "Участница карнавала в зеленом перьевом уборе, Рио-де-Жанейро, Бразилия"
-  hover: "Карнавал в Рио: длинные зеленые перья и украшенный камнями головной убор"
+  alt: Участница карнавала в зеленом перьевом уборе, Рио-де-Жанейро, Бразилия
+  hover: 'Карнавал в Рио: длинные зеленые перья и украшенный камнями головной убор'
 lead: Этот маршрут объединяет Парад Чемпионов Карнавала в Рио и большое путешествие через Бразилию, Аргентину, Чили,
   Боливию и Перу. За 18 дней вы пройдете от Атлантики и водопадов Игуасу к Буэнос-Айресу, Сантьяго и пустыне Атакама,
   затем подниметесь на боливийское Альтиплано, пересечете Уюни и завершите поездку у Титикаки, в Куско, Мачу-Пикчу
@@ -140,12 +201,12 @@ itinerary:
     Рио.'
   images:
   - src: /media/catalog/tury/hero-enhanced-20260930.webp
-    alt: "Панорама Рио-де-Жанейро с заливом, горой Сахарная Голова и городской застройкой, Бразилия"
+    alt: Панорама Рио-де-Жанейро с заливом, горой Сахарная Голова и городской застройкой, Бразилия
 - day: 2
   title: Рио, Сахарная голова и Парад Чемпионов
   places:
   - Рио-де-Жанейро
-  text: 'После завтрака встреча с русскоговорящим гидом.
+  text: 'После завтрака встреча с русскоговорящим гидом. Сити-тур и экскурсия на Сахарную Голову занимают 4 часа.
 
 
     От Прайя-Вермелья канатная дорога поднимается сначала на Урку, затем на Сахарную голову. Сверху видны Копакабана,
@@ -166,15 +227,16 @@ itinerary:
     танцорами и костюмами, которые готовились в течение года.
 
 
-    После парада трансфер в отель.'
+    После парада трансфер в отель; можно уехать раньше окончания парада.'
   images:
   - src: /media/destinations/destination_brazil_rio/rio-free-street-generated-20261008.webp
-    alt: "Тенистая улица с деревьями и столиками кафе в Рио-де-Жанейро, Бразилия"
+    alt: Тенистая улица с деревьями и столиками кафе в Рио-де-Жанейро, Бразилия
 - day: 3
   title: Корковадо и Христос Искупитель
   places:
   - Рио-де-Жанейро
-  text: 'После завтрака встреча с русскоговорящим гидом и поездка к станции Корковадо.
+  text: 'После завтрака встреча с русскоговорящим гидом и поездка к станции Корковадо. Продолжительность экскурсии
+    — 4 часа.
 
 
     Зеленый паровозик поднимается через лес Тижука. По мере набора высоты город исчезает за деревьями, между стволами
@@ -190,7 +252,7 @@ itinerary:
     внутри мегаполиса.'
   images:
   - src: /media/destinations/destination_brazil_rio/rio-free-beach-v2-generated-20261008.webp
-    alt: "Мозаичная набережная и пляж Копакабаны с пальмами в золотом свете, Рио-де-Жанейро, Бразилия"
+    alt: Мозаичная набережная и пляж Копакабаны с пальмами в золотом свете, Рио-де-Жанейро, Бразилия
 - day: 4
   title: Рио - Фоз-ду-Игуасу
   places:
@@ -212,7 +274,7 @@ itinerary:
     По прилете встреча и трансфер в отель.'
   images:
   - src: /media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp
-    alt: "Водопады Игуасу и радуга над рекой в окружении тропического леса, Бразилия"
+    alt: Водопады Игуасу и радуга над рекой в окружении тропического леса, Бразилия
 - day: 5
   title: Бразильская сторона Игуасу
   places:
@@ -234,7 +296,7 @@ itinerary:
     Дополнительные экскурсии: Парк птиц — USD 50 на человека; Макуко-Сафари — USD 130 на человека.'
   images:
   - src: /media/tours/luxury-brazil-11d/itinerary/day-07-enhanced-20260930.webp
-    alt: "Посетители на смотровом мостике среди водопадов Игуасу"
+    alt: Посетители на смотровом мостике среди водопадов Игуасу
 - excursionRef: excursion_source_park_jekzoticheskih_ptic_v_iguasu
   places:
   - Фоз-ду-Игуасу
@@ -260,7 +322,7 @@ itinerary:
     После экскурсии трансфер в аэропорт и перелет в Буэнос-Айрес. По прибытии встреча и трансфер в отель.'
   images:
   - src: /media/destinations/puerto-iguasu/gallery-1-enhanced-20261002.webp
-    alt: "Мощные каскады Игуасу среди скал и зелени, Аргентина"
+    alt: Мощные каскады Игуасу среди скал и зелени, Аргентина
 - day: 7
   title: Буэнос-Айрес и танго-шоу
   places:
@@ -269,17 +331,18 @@ itinerary:
 
 
     На Пласа-де-Майо находится Каса-Росада. Затем маршрут идет через старые районы Ла-Бока и Сан-Тельмо, далее в
-    Реколету и современный Пуэрто-Мадеро.
+    Реколету со знаменитым кладбищем и базиликой Эль-Пилар и современный Пуэрто-Мадеро. Вы также увидите Пласа-Доррего
+    и парки Лезама и Трес-де-Фебреро.
 
 
     Город меняется буквально за несколько кварталов: мощеные улицы и старые дома уступают место широким проспектам
     и новым зданиям.
 
 
-    Вечером танго-шоу с ужином. Живой оркестр, аргентинская кухня, вино и танец завершают день.'
+    Вечером танго-шоу с ужином, без гида. Живой оркестр, аргентинская кухня, вино и танец завершают день.'
   images:
   - src: /media/home/buenos-aires-enhanced-20260930.webp
-    alt: "Розовое здание Каса-Росада за цветочной клумбой в Буэнос-Айресе, Аргентина"
+    alt: Розовое здание Каса-Росада за цветочной клумбой в Буэнос-Айресе, Аргентина
 - day: 8
   title: Буэнос-Айрес - Сантьяго
   places:
@@ -295,7 +358,7 @@ itinerary:
     По прилете встреча и трансфер в отель.'
   images:
   - src: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
-    alt: "Буэнос-Айрес, Аргентина"
+    alt: Буэнос-Айрес, Аргентина
 - day: 9
   title: Сантьяго-де-Чили
   places:
@@ -322,7 +385,7 @@ itinerary:
     **Стоимость:** USD 230 с человека, минимум 2 участника.'
   images:
   - src: /media/destinations/santyago-de-chili/gallery-1-enhanced-20261006.webp
-    alt: "Исторические здания с башнями и пешеходы на улице Сантьяго, Чили"
+    alt: Исторические здания с башнями и пешеходы на улице Сантьяго, Чили
 - excursionRef: excursion_santiago_maipo_wine_tour
   places:
   - Долина Майпо
@@ -352,8 +415,8 @@ itinerary:
     **Стоимость:** USD 350 с человека, минимум 2 участника.'
   images:
   - src: /media/destinations/calama/hero-generated-20261008.webp
-    hover: "Калама: зеленая площадь среди городской застройки и пустынных склонов"
-    alt: "Площадь с пальмами и церковью в Каламе на фоне сухих гор, Чили"
+    hover: 'Калама: зеленая площадь среди городской застройки и пустынных склонов'
+    alt: Площадь с пальмами и церковью в Каламе на фоне сухих гор, Чили
 - excursionRef: excursion_chile_atacama_astronomy_tour
   places:
   - Сан-Педро-де-Атакама
@@ -388,8 +451,8 @@ itinerary:
     Ночь в отеле в пустыне, по формату близком к экспедиционному размещению.'
   images:
   - src: /media/destinations/laguna-verde/hero-generated-20261008.webp
-    hover: "Лагуна Верде: бирюзовое озеро под конической вершиной Ликанкабура"
-    alt: "Зеленая вода Лагуны Верде у вулкана Ликанкабур, Боливия"
+    hover: 'Лагуна Верде: бирюзовое озеро под конической вершиной Ликанкабура'
+    alt: Зеленая вода Лагуны Верде у вулкана Ликанкабур, Боливия
 - day: 12
   title: Солончак Уюни
   places:
@@ -399,7 +462,8 @@ itinerary:
   - Глаза воды
   - Остров Инка-Хуаси
   - Уюни
-  text: 'После завтрака джип-маршрут продолжается через высокогорные лагуны и смотровую площадку у вулкана Олагуэ.
+  text: 'После завтрака джип-маршрут продолжается через высокогорные лагуны Хонда, Чиаркота, Хедионда и Каньяпа
+    и смотровую площадку у вулкана Олагуэ.
 
 
     Дальше вы пересечете солончак Чигуана, а затем выйдете на Уюни.
@@ -424,8 +488,8 @@ itinerary:
     Вечером прибытие в город Уюни и размещение в отеле.'
   images:
   - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/ollague-volcano-place-generated-20261009-v1.webp
-    alt: "Склоны вулкана Оллагуэ над сухим Альтиплано, Боливия"
-    hover: "Оллагуэ в Боливии: каменистый вулканический массив и светлое высокогорное плато"
+    alt: Склоны вулкана Оллагуэ над сухим Альтиплано, Боливия
+    hover: 'Оллагуэ в Боливии: каменистый вулканический массив и светлое высокогорное плато'
 - day: 13
   title: Уюни - Ла-Пас
   places:
@@ -447,7 +511,7 @@ itinerary:
     После этого поездка в Лунную долину. Вода и ветер сформировали мягкую породу в узкие проходы, гребни и башни.'
   images:
   - src: /media/destinations/la-pas/gallery-1-enhanced-20261003.webp
-    alt: "Пешеходы на площади перед каменной церковью в Ла-Пасе, Боливия"
+    alt: Пешеходы на площади перед каменной церковью в Ла-Пасе, Боливия
 - day: 14
   title: Тиванаку - Пуно - острова Урос
   places:
@@ -473,7 +537,7 @@ itinerary:
     Вы увидите лодки из тоторы, дома и изделия ручной работы.'
   images:
   - src: /media/excursions/la-pas-tiuanako-i-desaguadero-tur/gallery-2-src-enhanced-20261007.webp
-    alt: "Каменные стены, лестницы и прямоугольный проход в Тиуанако, Боливия"
+    alt: Каменные стены, лестницы и прямоугольный проход в Тиуанако, Боливия
 - day: 15
   title: Пуно - Куско
   places:
@@ -496,8 +560,8 @@ itinerary:
     Далее Ракчи с храмом Виракочи.
 
 
-    После обеда в Сикуани автобус поднимается на перевал Ла-Райя. Воздух становится заметно холоднее, вокруг открываются
-    горные хребты.
+    После обеда в Сикуани автобус поднимается на перевал Ла-Райя (4400 м). Воздух становится заметно холоднее, вокруг
+    открываются горные хребты.
 
 
     Последняя остановка - Пукара, связанная с культурой, существовавшей до инков.
@@ -506,8 +570,8 @@ itinerary:
     Вечером прибытие в Куско и трансфер в отель.'
   images:
   - src: /media/tours/tur-v-peru-i-braziliyu/andahuaylillas-place-generated-20261008.webp
-    hover: "Андагуаилильяс: белая церковь с колокольней и деревьями перед фасадом"
-    alt: "Церковь Сан-Педро у мощеной площади Андагуаилильяса на фоне гор, Перу"
+    hover: 'Андагуаилильяс: белая церковь с колокольней и деревьями перед фасадом'
+    alt: Церковь Сан-Педро у мощеной площади Андагуаилильяса на фоне гор, Перу
 - day: 16
   title: Мачу-Пикчу
   places:
@@ -529,7 +593,7 @@ itinerary:
     Возвращение на поезде в Куско. Встреча и трансфер в отель.'
   images:
   - src: /media/tours/peru-8d/itinerary/day-03-enhanced-20261001.webp
-    alt: "Каменные стены Мачу-Пикчу на фоне зелёных горных склонов, Перу"
+    alt: Каменные стены Мачу-Пикчу на фоне зелёных горных склонов, Перу
 - day: 17
   title: Куско - Лима
   places:
@@ -555,7 +619,9 @@ itinerary:
 
     По прибытии встреча и трансфер в отель.'
   images:
-  - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp","alt":"Старинная церковь и черепичные крыши вокруг площади с высоты, Куско, Перу","hover":"Куско, Перу: старинная церковь и черепичные крыши вокруг площади с высоты"}
+  - src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/itinerary-10-images-0-src-enhanced-20261007.webp
+    alt: Старинная церковь и черепичные крыши вокруг площади с высоты, Куско, Перу
+    hover: 'Куско, Перу: старинная церковь и черепичные крыши вокруг площади с высоты'
 - day: 18
   title: Лима, музей Ларко и вылет домой
   places:
@@ -597,14 +663,15 @@ itinerary:
     океану, с последовательной сменой климата, городов и природных зон.'
   images:
   - src: /media/tours/braziliya-i-peru-na-novyj-god/lima-departure-generated-20261008.webp
-    alt: "Дорога к аэропорту с терминалом и диспетчерской башней в Лиме, Перу"
+    alt: Дорога к аэропорту с терминалом и диспетчерской башней в Лиме, Перу
 included:
 - Проживание в отелях по программе.
 - Экскурсии по программе в группе.
+- Услуги гида на протяжении всей программы; языки сопровождения указаны по участкам маршрута.
 - Русскоговорящие гиды в Рио, Игуасу, Буэнос-Айресе, Сантьяго-де-Чили, Ла-Пасе, на сити-туре в Куско и в Лиме.
 - Англоговорящие гиды в Уюни, на Титикаке и в Мачу-Пикчу.
 - Трансферы по программе с водителем в группе.
-- Билеты на Парад Чемпионов Карнавала.
+- 'Билеты на Парад Чемпионов Карнавала: сектор 9 или аналогичный.'
 - Трансфер отель - Самбадром - отель.
 - Внутренние перелеты Rio - Iguazu - Buenos Aires - Santiago - Calama - La Paz - Cuzco - Lima.
 notIncluded:
@@ -618,11 +685,20 @@ notes:
 - Ada Tours может изменить порядок экскурсий при сохранении программы тура.
 - Ada Tours не несет ответственности за пропущенные завтраки в отелях при раннем выселении, если оно связано с ранним
   перелетом или экскурсией.
+- На высокогорном участке Боливии возможны проявления горной болезни; маршрут проходит через точки выше 4000 м.
+- Цены могут меняться. Финальная стоимость подтверждается после проверки всех услуг и стоимости перелетов на дату
+  бронирования.
+- Для одного участника при размещении SGL возможна доплата за индивидуальный трансфер, если его рейс отличается
+  от рейсов других участников заезда.
+- Перелет Уюни → Ла-Пас указан в программе дня 13, но отдельно не назван в перечне включенных перелетов. Его включение
+  и итоговая стоимость подтверждаются до оплаты.
 sourceUrl: https://brasiltours.ru/5-stran-latinskoj-ameriki-i-parad-chempionov-karnavala
-sourceSnapshot: https://drive.google.com/file/d/1ZXQdgUQgbvKmj7RFavqjAyoTha17Fplh/view?usp=drivesdk
-updatedAt: '2026-10-09'
+sourceSnapshot: https://docs.google.com/document/d/1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX/edit
+updatedAt: '2026-10-16'
 dates:
-- 12 февраля — 1 марта
+- 12 февраля — 1 марта 2027
+priceNote: На человека при размещении DBL в отелях 4★. Тарифы SGL, DBL и TPL для отелей 4★ и 5★ приведены ниже;
+  итоговая стоимость подтверждается при бронировании.
 ---
 
 Этот маршрут объединяет Парад Чемпионов Карнавала в Рио и большое путешествие через Бразилию, Аргентину, Чили, Боливию и Перу. За 18 дней вы пройдете от Атлантики и водопадов Игуасу к Буэнос-Айресу, Сантьяго и пустыне Атакама, затем подниметесь на боливийское Альтиплано, пересечете Уюни и завершите поездку у Титикаки, в Куско, Мачу-Пикчу и Лиме.
@@ -706,3 +782,25 @@ dates:
 В Сантьяго можно добавить винодельни долины Майпо за USD 230 с человека, минимум 2 участника.
 
 В Атакаме доступен астрономический тур. Стоимость - USD 350 с человека, минимум 2 участника.
+
+## Стоимость на человека, USD
+
+Заезд: **12 февраля — 1 марта 2027 года**, 18 дней / 17 ночей.
+
+### Отели 4★
+
+| Размещение | USD на человека |
+| --- | ---: |
+| SGL — одноместное | 11 848 |
+| DBL — двухместное | 9 562 |
+| TPL — трехместное | 8 980 |
+
+### Отели 5★
+
+| Размещение | USD на человека |
+| --- | ---: |
+| SGL — одноместное | 13 544 |
+| DBL — двухместное | 10 545 |
+| TPL — трехместное | 9 725 |
+
+Цена в карточке рассчитана для DBL в отелях 4★. Итоговая стоимость подтверждается при бронировании всех услуг и перелетов. При отличающемся рейсе одного участника SGL возможна доплата за индивидуальный трансфер.

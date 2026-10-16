@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_clarinho_river",
+  "stableId": "destination_brazil_clarinho_river",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/clarinho-river/",
+  "sourceFingerprint": "8cb375ae5746ec541d72b4dfa47337b0bc9c21d8867eee4e96e9cfe47c65b494",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "river",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/clarinho-river.md",
+      "checkedAt": "2026-10-16T15:46:28.766Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Первичная программа лоджа прямо называет Clarinho River и каноэ/лагерь Sentinela. Название и специфический маршрут совпадают с MD; отдельная геометрия не требуется для установления идентичности страницы."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/clarinho-river/",
+      "checkedAt": "2026-10-16T15:40:17.168441+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://araraslodge.com.br/pantanal-and-savannah-6-days-and-5-nights/?lang=en",
+      "checkedAt": "2026-10-16T15:46:28.766Z",
+      "note": "Повторно получена программа лоджа: выход к Clarinho River на каноэ; контекст Sentinela."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://araraslodge.com.br/pantanal-and-savannah-6-days-and-5-nights/?lang=en",
+      "checkedAt": "2026-10-16T15:46:28.766Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://araraslodge.com.br/pantanal-and-savannah-6-days-and-5-nights/?lang=en",
+      "checkedAt": "2026-10-16T15:46:28.766Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Rio Clarinho — речной маршрут Araras Eco Lodge в Северном Пантанале",
+      "reason": "Первичная программа лоджа прямо называет Clarinho River и каноэ/лагерь Sentinela. Название и специфический маршрут совпадают с MD; отдельная геометрия не требуется для установления идентичности страницы."
+    },
+    {
+      "field": "entityClass",
+      "probability": 96,
+      "selected": "river",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 25,
+      "reason": "Точный ID русла не найден; Fazenda Rio Clarinho и деревня в Espírito Santo исключены."
+    },
+    {
+      "field": "location",
+      "probability": 40,
+      "reason": "Карта конкретного речного участка/точка с ролью не найдены."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/clarinho-river/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  }
+}

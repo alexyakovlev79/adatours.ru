@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_kapitolio",
+  "stableId": "destination_brazil_kapitolio",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/capitolio/",
+  "sourceFingerprint": "5bf137540ee2a72a5f24744fca040cb29cd8c787b1d0bf3f6b8c111802b61256",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "composite",
+  "entityClass": "municipality",
+  "external": {
+    "wikidataQid": "Q1257195"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/capitolio.md",
+      "checkedAt": "2026-10-16T15:46:28.770Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Название Capitólio и Minas Gerais задают основной референт. Каньоны/экскурсии Furnas — контекст окрестностей, не причина запрещать QID муниципалитета по правилу основного объекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/capitolio/",
+      "checkedAt": "2026-10-16T15:40:16.998050+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1257195",
+      "checkedAt": "2026-10-16T15:46:28.770Z",
+      "note": "Capitólio — municipality Minas Gerais, Brazil; P62520°36′54″S46°3′W."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.capitolio.mg.gov.br/portal/secretarias/5/secretaria-de-turismo-e-cultura",
+      "checkedAt": "2026-10-16T15:46:28.770Z",
+      "note": "Муниципалитет представляет Capitólio как туристический центр."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1257195",
+      "checkedAt": "2026-10-16T15:46:28.770Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1257195",
+      "checkedAt": "2026-10-16T15:46:28.770Z",
+      "note": "Наиболее вероятный основной именованный референт; не QID всего водохранилища."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1257195",
+      "checkedAt": "2026-10-16T15:46:28.770Z",
+      "note": "Городская опорная точка Capitólio; не вход в каньоны и не центр водохранилища."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1257195",
+      "checkedAt": "2026-10-16T15:46:28.770Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "selected": "Capitólio, Minas Gerais — основной туристический центр страницы о районе озера Furnas",
+      "reason": "Название Capitólio и Minas Gerais задают основной референт. Каньоны/экскурсии Furnas — контекст окрестностей, не причина запрещать QID муниципалитета по правилу основного объекта."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "municipality",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 93,
+      "selected": "Q1257195",
+      "reason": "Наиболее вероятный основной именованный референт; не QID всего водохранилища."
+    },
+    {
+      "field": "location",
+      "probability": 89,
+      "selected": "-20.615,-46.05 (settlement_center)",
+      "reason": "Городская опорная точка Capitólio; не вход в каньоны и не центр водохранилища."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/capitolio/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  },
+  "location": {
+    "latitude": -20.615,
+    "longitude": -46.05,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1257195"
+  }
+}

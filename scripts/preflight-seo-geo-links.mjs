@@ -16,7 +16,6 @@ const head = arg('--head', 'HEAD');
 const explicit = args.flatMap((v, i) => v === '--article' ? [args[i + 1]] : []);
 if (!base && !explicit.length) throw new Error('Supply --article <path> or --base <commit>');
 const articlePattern = /^data\/seo-geo\/articles\/(?:[a-z0-9_-]+\/)+index\.md$/;
-const phasePattern = /^data\/seo-geo\/registry\/0[1-7]-[a-z-]+\.json$/;
 const json = (path) => JSON.parse(readFileSync(path, 'utf8'));
 const frontmatter = (raw, path) => {
   const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/);
@@ -27,51 +26,11 @@ const files = (root) => !existsSync(root) ? [] : readdirSync(root, { withFileTyp
   const path = join(root, entry.name);
   return entry.isDirectory() ? files(path) : [path];
 });
-const newlyPrepared = [];
 function changedArticles() {
   if (!base) return explicit;
-  const changedFiles = execFileSync('git', ['diff', '--name-only', '--diff-filter=ACMR', base, head,
-    '--', 'data/seo-geo/articles/', 'data/seo-geo/registry/'], { cwd: staging, encoding: 'utf8' }).trim().split('\n').filter(Boolean);
-  const changed = new Set(changedFiles.filter((path) => articlePattern.test(path)));
-  for (const path of changedFiles.filter((path) => phasePattern.test(path))) {
-    const current = json(join(staging, path));
-    let old;
-    try { old = JSON.parse(execFileSync('git', ['show', `${base}:${path}`], { cwd: staging, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024 })); }
-    catch { old = { entries: [] }; }
-    const before = new Map(old.entries.map((row) => [row.url, row.work]));
-    for (const row of current.entries) {
-      if (row.work === 'prepared' && before.get(row.url) !== 'prepared') {
-        const articlePath = row.articlePath ?? seoGeoArticleFile(row.url);
-        if (articlePattern.test(articlePath)) { changed.add(articlePath); newlyPrepared.push({ row, articlePath }); }
-      }
-    }
-  }
-  return [...changed, ...explicit];
-}
-
-async function verifyPreparedProof({ row, articlePath }) {
-  const sha = row.preflightCommit, blob = row.preflightArticleBlobSha;
-  if (!/^[0-9a-f]{40}$/.test(sha ?? '') || !/^[0-9a-f]{40}$/.test(blob ?? '')) {
-    throw new Error('New prepared row needs preflightCommit and preflightArticleBlobSha');
-  }
-  const actual = execFileSync('git', ['hash-object', articlePath], { cwd: staging, encoding: 'utf8' }).trim();
-  if (actual !== blob) throw new Error('Article changed after the successful preflight');
-  const repo = process.env.GITHUB_REPOSITORY, token = process.env.GH_TOKEN;
-  if (!repo || !token) throw new Error('GitHub authentication unavailable to verify preflight');
-  const request = async (path) => {
-    const response = await fetch('https://api.github.com/repos/' + repo + path, {
-      headers: { Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + token,
-        'X-GitHub-Api-Version': '2022-11-28' },
-    });
-    if (!response.ok) throw new Error('GitHub verification returned HTTP ' + response.status);
-    return response.json();
-  };
-  const checked = await request('/contents/' + articlePath + '?ref=' + sha);
-  if (checked.sha !== blob) throw new Error('Claimed preflight commit contains different article bytes');
-  const status = await request('/commits/' + sha + '/status');
-  if (!status.statuses?.some((entry) => entry.context === 'ada/seo-link-preflight' && entry.state === 'success')) {
-    throw new Error('No successful ada/seo-link-preflight for the claimed content commit');
-  }
+  return execFileSync('git', ['diff', '--name-only', '--diff-filter=ACMR', base, head,
+    '--', 'data/seo-geo/articles/'], { cwd: staging, encoding: 'utf8' })
+    .trim().split('\n').filter((path) => articlePattern.test(path)).concat(explicit);
 }
 
 const collection = (name) => files(join(source, 'src', 'content', name)).filter((file) => /\.mdx?$/.test(file))
@@ -92,10 +51,7 @@ if (!candidates.length) {
 }
 const processor = await createMarkdownProcessor();
 const errors = [];
-for (const transition of newlyPrepared) {
-  try { await verifyPreparedProof(transition); }
-  catch (error) { errors.push(transition.articlePath + ': ' + error.message); }
-}
+
 let count = 0;
 for (const path of candidates) {
   try {

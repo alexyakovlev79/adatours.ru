@@ -1,0 +1,93 @@
+name: Identity 032 bounded input export
+on:
+  push:
+    branches: [automation/identity-032-20261016]
+    paths: [.github/workflows/identity-032-export.yml]
+permissions:
+  contents: write
+concurrency:
+  group: identity-032-export
+  cancel-in-progress: false
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: automation/identity-032-20261016
+          persist-credentials: true
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /data/external-identity/
+            /data/source-index/entries/
+            /data/catalog-archive.json
+            /src/content/excursions/
+      - name: Export only the next fifty frozen objects and their exact RU sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, hashlib, subprocess
+          from pathlib import Path
+          root = Path('data/external-identity')
+          queue = json.loads((root/'work-queues-20261012/adatours.com.json').read_text())
+          plan = json.loads((root/'work-queues-20261012/plan.json').read_text())
+          assert queue['verification_cursor'] == 1550, 'Queue advanced: do not reprocess'
+          assert queue['last_completed_batch'] == 'adatours-com-identity-031'
+          assert plan['first_next_task']['id'] == 'adatours-com-identity-032'
+          order = ['country','destination','tour','excursion','theme','webpage','case','catalog','pagination','person']
+          ordered = [key for kind in order for key in queue['verification_keys_by_type'].get(kind, [])]
+          completed = {key for batch in queue['verification_batches'] if batch['status'] == 'completed' for key in batch['keys']}
+          last = queue['verification_batches'][-1]['keys'][-1]
+          future = [key for key in ordered[ordered.index(last)+1:] if key not in completed]
+          assert future[0] == 'excursion_source_morskaya_ekskursiya_na_ostrov_isabela_na_skorostnom_katere'
+          archived = {r['id'] for r in json.loads(Path('data/catalog-archive.json').read_text())['entries']}
+          objects = json.loads((root/'work-queues-20261012/objects.json').read_text())['objects']
+          by_id = {r['key']:r for r in objects}
+          selected, skipped = [], []
+          next_key = None
+          for key in future:
+              if key in archived:
+                  skipped.append(key)
+                  continue
+              entry_path = Path('data/source-index/entries')/(key+'.json')
+              entry = json.loads(entry_path.read_text())
+              path = Path(entry['contentPath'])
+              raw = path.read_text()
+              if entry.get('status') in ['archived','draft']:
+                  skipped.append(key)
+                  continue
+              if len(selected) == 50:
+                  next_key = key
+                  break
+              old = by_id[key]
+              selected.append({'key':key,'type':old['type'],'name':entry.get('name',old['name']),
+                  'ru_url':'https://adatours.ru'+entry['url'] if entry['url'].startswith('/') else entry['url'],
+                  'frozen_ru_url':old['ru_url'],'source_path':str(path),
+                  'source_sha256':hashlib.sha256(raw.encode()).hexdigest(),
+                  'source_entry_sha256':hashlib.sha256(entry_path.read_bytes()).hexdigest(),
+                  'source_url':entry.get('sourceUrl'), 'raw_md':raw})
+          assert len(selected)==50 and next_key
+          out = root/'working-032'
+          out.mkdir(exist_ok=True)
+          snapshot = subprocess.check_output(['git','rev-parse','HEAD'], text=True).strip()
+          summary={'batch_id':'adatours-com-identity-032','source_commit':snapshot,'cursor_before':1550,
+                   'selected':[{k:v for k,v in r.items() if k!='raw_md'} for r in selected],
+                   'next_key':next_key,'skipped_archived':skipped}
+          (out/'selection.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
+          for start in range(0,50,5):
+              (out/('inputs-%02d.json'%(start//5+1))).write_text(json.dumps(selected[start:start+5],ensure_ascii=False,indent=2)+'\n')
+          inv=json.loads((root/'adatours-com-url-inventory-20261012.json').read_text())
+          (out/'en-inventory-compact.json').write_text(json.dumps(inv['rows'],ensure_ascii=False,indent=2)+'\n')
+          print('SELECTED', len(selected), 'FIRST', selected[0]['key'], 'LAST', selected[-1]['key'], 'NEXT', next_key)
+          for i,r in enumerate(selected,1551):
+              print(i,r['key'],r['name'],r['ru_url'])
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/external-identity/working-032
+          if ! git diff --cached --quiet; then
+            git commit -m 'audit(identity): preserve exact fifty batch 032 research inputs [skip ci]'
+            git push origin HEAD:automation/identity-032-20261016
+          fi

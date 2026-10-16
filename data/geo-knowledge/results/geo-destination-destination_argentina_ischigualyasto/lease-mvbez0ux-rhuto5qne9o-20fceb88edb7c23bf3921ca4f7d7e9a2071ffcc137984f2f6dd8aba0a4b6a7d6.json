@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_ischigualyasto",
+  "stableId": "destination_argentina_ischigualyasto",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/ischigualasto/",
+  "sourceFingerprint": "7861d8c6c82350044475f4c94de804a24ae76f1465fdd4df46710f3108a765d2",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q639503",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Ischigualasto"
+    },
+    "geonamesId": "6942006"
+  },
+  "location": {
+    "latitude": -30.11677806,
+    "longitude": -67.91180611,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q639503"
+  },
+  "alternateNames": [
+    "Parque Provincial Ischigualasto"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/ischigualasto/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "HTTP 200; точный canonical совпал с очередью, stable ID и approved MD сверены на main cdd8b523a809da44458be6d763aa2c89541d2141. Провинциальный природный парк Исчигуалясто (Valle de la Luna), San Juan. Не геологическая формация и не совместный объект ЮНЕСКО с Талампайей."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Ischigualasto",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Провинциальный природный парк Исчигуалясто (Valle de la Luna), San Juan. Не геологическая формация и не совместный объект ЮНЕСКО с Талампайей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q639503",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Провинциальный природный парк Исчигуалясто (Valle de la Luna), San Juan. Не геологическая формация и не совместный объект ЮНЕСКО с Талампайей."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Ischigualasto",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Провинциальный природный парк Исчигуалясто (Valle de la Luna), San Juan. Не геологическая формация и не совместный объект ЮНЕСКО с Талампайей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q639503",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "GeoNames ID 6942006 связан с точной сущностью в Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q639503",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Выбрана справочная точка P625 парка (источник национальный реестр monumentos.cultura.gob.ar), сверена с координатами испанской статьи. Не вход (-30.16333,-67.84222). UNESCO 966 относится к совокупности двух парков и не добавлен как точная идентичность."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Ischigualasto",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Сверка географического контекста: Провинциальный природный парк Исчигуалясто (Valle de la Luna), San Juan. Не геологическая формация и не совместный объект ЮНЕСКО с Талампайей. Выбрана справочная точка P625 парка (источник национальный реестр monumentos.cultura.gob.ar), сверена с координатами испанской статьи. Не вход (-30.16333,-67.84222). UNESCO 966 относится к совокупности двух парков и не добавлен как точная идентичность."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Ischigualasto",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Местное название: Parque Provincial Ischigualasto."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Ischigualasto",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Место находится в Аргентине; соответствует country_argentina в актуальном MD."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Parque Provincial Ischigualasto",
+      "reason": "Провинциальный природный парк Исчигуалясто (Valle de la Luna), San Juan. Не геологическая формация и не совместный объект ЮНЕСКО с Талампайей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q639503",
+      "reason": "Название, страна, география и референт страницы совпали; конкурирующие одноименные сущности исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Ischigualasto",
+      "reason": "Точная статья о выбранном месте, согласуется с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "6942006",
+      "reason": "Идентификатор относится к выбранному месту, а не к одноименной административной территории."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-30.116778055555557, -67.91180611111112; representative",
+      "reason": "Выбрана справочная точка P625 парка (источник национальный реестр monumentos.cultura.gob.ar), сверена с координатами испанской статьи. Не вход (-30.16333,-67.84222). UNESCO 966 относится к совокупности двух парков и не добавлен как точная идентичность."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Parque Provincial Ischigualasto",
+      "reason": "Название прямо используется в прочитанном внешнем источнике."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна совпадает в MD и внешнем источнике."
+    }
+  ],
+  "reviewNote": "Выбрана справочная точка P625 парка (источник национальный реестр monumentos.cultura.gob.ar), сверена с координатами испанской статьи. Не вход (-30.16333,-67.84222). UNESCO 966 относится к совокупности двух парков и не добавлен как точная идентичность."
+}
